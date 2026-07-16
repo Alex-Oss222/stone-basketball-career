@@ -50,6 +50,9 @@ function validate(
     readonly constraints?: Parameters<
       typeof validateLeagueSchedule
     >[0]['constraints']
+    readonly opponentRequirementValidationMode?: Parameters<
+      typeof validateLeagueSchedule
+    >[0]['opponentRequirementValidationMode']
   } = {},
 ) {
   return validateLeagueSchedule({
@@ -61,6 +64,8 @@ function validate(
     regularSeasonStartDate,
     calendarDaySpacing,
     constraints: options.constraints,
+    opponentRequirementValidationMode:
+      options.opponentRequirementValidationMode,
   })
 }
 
@@ -79,6 +84,18 @@ function replaceGame(
       gameIndex === index ? { ...game, ...replacement } : game,
     ),
   }
+}
+
+function validateStoredRequirements(schedule: LeagueSchedule) {
+  return validate(schedule, {
+    opponentRequirementValidationMode: 'validate_stored',
+  })
+}
+
+function opponentRequirementMessages(schedule: LeagueSchedule): readonly string[] {
+  return validateStoredRequirements(schedule).hardViolations
+    .filter(({ code }) => code === 'opponent_requirement_mismatch')
+    .map(({ message }) => message)
 }
 
 describe('validateLeagueSchedule', () => {
@@ -497,5 +514,126 @@ describe('validateLeagueSchedule', () => {
     expect(issueCodes).toContain('self_matchup')
     expect(issueCodes).toContain('completed_game_missing_actual_date')
     expect(issueCodes.size).toBeGreaterThanOrEqual(5)
+  })
+})
+
+describe('validateLeagueSchedule stored opponent requirements', () => {
+  it('accepts the valid persisted matrix without changing the default mode', () => {
+    const schedule = createSchedule()
+
+    expect(validateStoredRequirements(schedule)).toEqual({
+      valid: true,
+      hardViolations: [],
+      softWarnings: [],
+    })
+    expect(validate(schedule)).toEqual(
+      validate(schedule, {
+        opponentRequirementValidationMode: 'derive_from_rule_set',
+      }),
+    )
+  })
+
+  it('reports malformed stored meeting totals', () => {
+    const baseline = createSchedule()
+    const malformed: LeagueSchedule = {
+      ...baseline,
+      opponentRequirements: baseline.opponentRequirements.map(
+        (requirement, index) =>
+          index === 0
+            ? {
+                ...requirement,
+                totalMeetings: 3,
+                homeGamesForFirstTeam: 2,
+                homeGamesForSecondTeam: 2,
+              }
+            : requirement,
+      ),
+    }
+
+    expect(opponentRequirementMessages(malformed)).toEqual(
+      expect.arrayContaining([
+        expect.stringContaining('invalid meeting totals'),
+      ]),
+    )
+  })
+
+  it('reports stored requirements that reference an unknown team', () => {
+    const baseline = createSchedule()
+    const unknownTeamId = parseTeamId('team_validator_unknown_requirement')
+    const malformed: LeagueSchedule = {
+      ...baseline,
+      opponentRequirements: baseline.opponentRequirements.map(
+        (requirement, index) =>
+          index === 0
+            ? { ...requirement, firstTeamId: unknownTeamId }
+            : requirement,
+      ),
+    }
+
+    expect(opponentRequirementMessages(malformed)).toEqual(
+      expect.arrayContaining([
+        expect.stringContaining('two different league teams'),
+      ]),
+    )
+  })
+
+  it('reports duplicate and missing stored pairs', () => {
+    const baseline = createSchedule()
+    const duplicate: LeagueSchedule = {
+      ...baseline,
+      opponentRequirements: baseline.opponentRequirements.map(
+        (requirement, index) =>
+          index === 1 ? baseline.opponentRequirements[0] : requirement,
+      ),
+    }
+    const missing: LeagueSchedule = {
+      ...baseline,
+      opponentRequirements: baseline.opponentRequirements.slice(1),
+    }
+
+    expect(opponentRequirementMessages(duplicate)).toEqual(
+      expect.arrayContaining([expect.stringContaining('duplicated')]),
+    )
+    expect(opponentRequirementMessages(missing)).toEqual(
+      expect.arrayContaining([expect.stringContaining('is missing')]),
+    )
+  })
+
+  it('reports source-tag and uniform-policy mismatches', () => {
+    const baseline = createSchedule()
+    const wrongSourceTag: LeagueSchedule = {
+      ...baseline,
+      opponentRequirements: baseline.opponentRequirements.map(
+        (requirement, index) =>
+          index === 0
+            ? { ...requirement, sourceTag: 'different_source' }
+            : requirement,
+      ),
+    }
+    const wrongPolicyValues: LeagueSchedule = {
+      ...baseline,
+      opponentRequirements: baseline.opponentRequirements.map(
+        (requirement, index) =>
+          index === 0
+            ? {
+                ...requirement,
+                totalMeetings: 6,
+                homeGamesForFirstTeam: 3,
+                homeGamesForSecondTeam: 3,
+              }
+            : requirement,
+      ),
+    }
+
+    expect(opponentRequirementMessages(wrongSourceTag)).toEqual(
+      expect.arrayContaining([
+        expect.stringContaining('uniform rule-set policy'),
+      ]),
+    )
+    expect(opponentRequirementMessages(wrongPolicyValues)).toEqual(
+      expect.arrayContaining([
+        expect.stringContaining('uniform rule-set policy'),
+      ]),
+    )
   })
 })

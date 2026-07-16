@@ -135,6 +135,22 @@ real-world dates is active in Milestone 1.
 - Reject JSON files larger than 50 MiB before parsing.
 - If browser storage is full, preserve the last confirmed state and report the quota failure clearly. Offer export and explicit manual-save management; never silently delete a named manual save to make space.
 
+The current technical persistence work is intentionally split at the storage
+boundary. `LeagueSnapshotV1` remains the independently parseable league-only
+snapshot. `LeagueSnapshotV2` defines a strict JSON-safe DTO for the complete
+regular-season foundation plus its explicit creation metadata. A valid V2 load
+uses the stored league, season, calendar, team-season records, opponent matrix,
+game days, and games exactly as validated; it does not regenerate them or
+derive replacement dates and identities.
+
+The pure V1-to-V2 migration requires the user or a later application workflow
+to supply the season year, opening `LocalDate`, game-day spacing, and canonical
+schedule seed. The migration may call the existing creation coordinator because
+V1 has no season data, but it performs no IndexedDB operation and chooses no
+default input. V2 parsing and migration are not yet repository read precedence,
+atomic browser-storage migration, autosave revision handling, or React
+integration; those remain later persistence work.
+
 ## Product behavior and boundaries
 
 - The app works after its static assets load, with no calls required to external services.

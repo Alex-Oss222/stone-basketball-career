@@ -194,6 +194,17 @@ Work:
 - establish the migration registry and version-1 fixtures; and
 - test 19/20/21-autosave retention boundaries, named-manual-save survival, failed writes, quota errors, 50 MiB import boundaries, corrupt JSON, invalid references, future versions, and round trips.
 
+The active-league schema foundation is a deliberately smaller prerequisite to
+this phase. V1 remains the league-only snapshot; V2 is a strict JSON-safe DTO
+containing the regular-season foundation and creation metadata. Its parser
+validates exact shape, domain entities, references, stored schedule invariants,
+exact supported rule-set versions, and JSON round trips without regeneration.
+The pure V1-to-V2 migration requires explicit season inputs and performs no
+storage operation. This foundation does not implement IndexedDB V2 keys, read
+precedence, atomic storage migration, stale-write handling, autosave retention,
+or application-state integration, so it does not by itself satisfy the Phase 6
+exit gate.
+
 Exit gate:
 
 - a failed save/import cannot alter the prior head;

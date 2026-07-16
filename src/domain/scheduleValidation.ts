@@ -38,6 +38,14 @@ export interface ScheduleValidationTeamReference {
   readonly id: TeamId
 }
 
+export const OPPONENT_REQUIREMENT_VALIDATION_MODES = [
+  'derive_from_rule_set',
+  'validate_stored',
+] as const
+
+export type OpponentRequirementValidationMode =
+  (typeof OPPONENT_REQUIREMENT_VALIDATION_MODES)[number]
+
 export interface ValidateLeagueScheduleInput {
   readonly schedule: LeagueSchedule
   readonly leagueId: LeagueId
@@ -46,6 +54,11 @@ export interface ValidateLeagueScheduleInput {
   readonly ruleSet: ScheduleRuleSet
   readonly regularSeasonStartDate: LocalDate
   readonly calendarDaySpacing: number
+  /**
+   * Restoration validates the persisted matrix in place and must not rebuild
+   * it. Generation retains the existing derived-rule-set default.
+   */
+  readonly opponentRequirementValidationMode?: OpponentRequirementValidationMode
   readonly constraints?: readonly ScheduleConstraint[]
 }
 
@@ -176,12 +189,18 @@ export function validateLeagueSchedule(
   validateScheduleNumbers(input, report)
   validateConstraints(input.constraints ?? [], report)
 
-  const expectedRequirements = getExpectedRequirements(input, report)
-  validateOpponentRequirements(
-    input.schedule.opponentRequirements,
-    expectedRequirements,
-    report,
-  )
+  const validatesStoredRequirements =
+    input.opponentRequirementValidationMode === 'validate_stored'
+  const expectedRequirements = validatesStoredRequirements
+    ? validateStoredOpponentRequirements(input, report)
+    : getExpectedRequirements(input, report)
+  if (!validatesStoredRequirements) {
+    validateOpponentRequirements(
+      input.schedule.opponentRequirements,
+      expectedRequirements,
+      report,
+    )
+  }
 
   if (input.schedule.gameDays.length !== input.ruleSet.gameDayCount) {
     report(
@@ -401,6 +420,201 @@ function getExpectedRequirements(
   }
 }
 
+/**
+ * Validates a persisted opponent inventory against its registered rule policy
+ * without constructing a replacement matrix. The returned records retain the
+ * stored order and become the expected inventory for placed-game validation.
+ */
+function validateStoredOpponentRequirements(
+  input: ValidateLeagueScheduleInput,
+  report: ReportIssue,
+): readonly OpponentRequirement[] {
+  const stored = input.schedule.opponentRequirements
+  const validTeamIds = input.teams
+    .map(({ id }) => id)
+    .filter((teamId) => isTeamId(teamId))
+  const validTeamIdSet = new Set(validTeamIds)
+  const seenPairKeys = new Set<string>()
+  const usableRequirements: OpponentRequirement[] = []
+
+  for (const requirement of stored) {
+    if (
+      !isTeamId(requirement.firstTeamId) ||
+      !isTeamId(requirement.secondTeamId) ||
+      !validTeamIdSet.has(requirement.firstTeamId) ||
+      !validTeamIdSet.has(requirement.secondTeamId) ||
+      requirement.firstTeamId === requirement.secondTeamId
+    ) {
+      report(
+        'hard',
+        'opponent_requirement_mismatch',
+        'A stored opponent requirement must reference two different league teams',
+      )
+      continue
+    }
+
+    const pairKey = getTeamPairKey(
+      requirement.firstTeamId,
+      requirement.secondTeamId,
+    )
+    if (
+      requirement.firstTeamId >= requirement.secondTeamId ||
+      seenPairKeys.has(pairKey)
+    ) {
+      report(
+        'hard',
+        'opponent_requirement_mismatch',
+        `Stored opponent requirement ${pairKey} is duplicated or not canonically ordered`,
+      )
+      continue
+    }
+    seenPairKeys.add(pairKey)
+
+    if (
+      !isNonNegativeSafeInteger(requirement.totalMeetings) ||
+      !isNonNegativeSafeInteger(requirement.homeGamesForFirstTeam) ||
+      !isNonNegativeSafeInteger(requirement.homeGamesForSecondTeam) ||
+      requirement.homeGamesForFirstTeam +
+        requirement.homeGamesForSecondTeam !==
+        requirement.totalMeetings
+    ) {
+      report(
+        'hard',
+        'opponent_requirement_mismatch',
+        `Stored opponent requirement ${pairKey} has invalid meeting totals`,
+      )
+    }
+    if (requirement.stage !== input.ruleSet.stage) {
+      report(
+        'hard',
+        'opponent_requirement_mismatch',
+        `Stored opponent requirement ${pairKey} uses the wrong schedule stage`,
+      )
+    }
+
+    validateStoredRequirementAgainstPolicy(
+      requirement,
+      pairKey,
+      input.ruleSet,
+      report,
+    )
+    usableRequirements.push(requirement)
+  }
+
+  validateStoredRequirementCoverage(
+    input.ruleSet,
+    validTeamIds,
+    stored,
+    seenPairKeys,
+    report,
+  )
+  return usableRequirements
+}
+
+function validateStoredRequirementAgainstPolicy(
+  requirement: OpponentRequirement,
+  pairKey: string,
+  ruleSet: ScheduleRuleSet,
+  report: ReportIssue,
+): void {
+  const policy = ruleSet.opponentPolicy
+  if (policy.kind === 'uniform_round_robin') {
+    if (
+      requirement.totalMeetings !== policy.meetingsPerOpponent ||
+      requirement.homeGamesForFirstTeam !== policy.homeGamesPerOpponent ||
+      requirement.homeGamesForSecondTeam !== policy.awayGamesPerOpponent ||
+      requirement.sourceTag !== policy.sourceTag
+    ) {
+      report(
+        'hard',
+        'opponent_requirement_mismatch',
+        `Stored opponent requirement ${pairKey} does not match the uniform rule-set policy`,
+      )
+    }
+    return
+  }
+
+  const expected = policy.requirements.find(
+    (candidate) =>
+      candidate.firstTeamId === requirement.firstTeamId &&
+      candidate.secondTeamId === requirement.secondTeamId,
+  )
+  const expectedSourceTag = expected?.sourceTag ?? policy.sourceTag
+  if (
+    expected === undefined ||
+    requirement.totalMeetings !== expected.totalMeetings ||
+    requirement.homeGamesForFirstTeam !== expected.homeGamesForFirstTeam ||
+    requirement.homeGamesForSecondTeam !== expected.homeGamesForSecondTeam ||
+    requirement.stage !== expected.stage ||
+    requirement.sourceTag !== expectedSourceTag
+  ) {
+    report(
+      'hard',
+      'opponent_requirement_mismatch',
+      `Stored opponent requirement ${pairKey} does not match the explicit rule-set policy`,
+    )
+  }
+}
+
+function validateStoredRequirementCoverage(
+  ruleSet: ScheduleRuleSet,
+  teamIds: readonly TeamId[],
+  stored: readonly OpponentRequirement[],
+  seenPairKeys: ReadonlySet<string>,
+  report: ReportIssue,
+): void {
+  if (ruleSet.opponentPolicy.kind === 'explicit_matrix') {
+    if (stored.length !== ruleSet.opponentPolicy.requirements.length) {
+      report(
+        'hard',
+        'opponent_requirement_mismatch',
+        'Stored opponent requirement count does not match the explicit rule-set policy',
+      )
+    }
+    for (const requirement of ruleSet.opponentPolicy.requirements) {
+      const pairKey = getTeamPairKey(
+        requirement.firstTeamId,
+        requirement.secondTeamId,
+      )
+      if (!seenPairKeys.has(pairKey)) {
+        report(
+          'hard',
+          'opponent_requirement_mismatch',
+          `Stored opponent requirement ${pairKey} is missing`,
+        )
+      }
+    }
+    return
+  }
+
+  const sortedTeamIds = [...teamIds].sort()
+  const expectedPairCount =
+    (sortedTeamIds.length * (sortedTeamIds.length - 1)) / 2
+  if (stored.length !== expectedPairCount) {
+    report(
+      'hard',
+      'opponent_requirement_mismatch',
+      `Stored opponent matrix has ${stored.length} pairs; expected ${expectedPairCount}`,
+    )
+  }
+  for (let firstIndex = 0; firstIndex < sortedTeamIds.length; firstIndex += 1) {
+    for (
+      let secondIndex = firstIndex + 1;
+      secondIndex < sortedTeamIds.length;
+      secondIndex += 1
+    ) {
+      const pairKey = `${sortedTeamIds[firstIndex]}:${sortedTeamIds[secondIndex]}`
+      if (!seenPairKeys.has(pairKey)) {
+        report(
+          'hard',
+          'opponent_requirement_mismatch',
+          `Stored opponent requirement ${pairKey} is missing`,
+        )
+      }
+    }
+  }
+}
+
 function validateOpponentRequirements(
   actual: readonly OpponentRequirement[],
   expected: readonly OpponentRequirement[],
@@ -448,7 +662,8 @@ function validateOpponentRequirements(
         expectedRequirement.homeGamesForFirstTeam ||
       requirement.homeGamesForSecondTeam !==
         expectedRequirement.homeGamesForSecondTeam ||
-      requirement.stage !== expectedRequirement.stage
+      requirement.stage !== expectedRequirement.stage ||
+      requirement.sourceTag !== expectedRequirement.sourceTag
     ) {
       report(
         'hard',
@@ -467,6 +682,10 @@ function validateOpponentRequirements(
       )
     }
   }
+}
+
+function isNonNegativeSafeInteger(value: unknown): value is number {
+  return Number.isSafeInteger(value) && (value as number) >= 0
 }
 
 function validateGameDays(

@@ -109,6 +109,66 @@ requires the pristine deterministic generator output. Later publication,
 postponement, completion, and persistence validation belong to lifecycle-aware
 validators rather than this initial-package contract.
 
+## Serialized foundation and restoration
+
+`LeagueSnapshotV2` serializes this regular-season foundation as a JSON-safe DTO,
+not as an assertion that untrusted records are already live domain entities. It
+stores the complete `League`, `Season`, `SeasonCalendar`, ordered
+`TeamSeason` collection, `LeagueSchedule`, and the explicit creation metadata:
+starting year, regular-season start `LocalDate`, game-day spacing, canonical
+schedule seed, rule-set ID, and rule-set version. All schedule IDs, opponent
+requirements, game days, games, statuses, meeting numbers, and separate
+original/current/actual dates are authoritative stored values.
+
+The DTO boundary uses exact plain records, dense arrays, JSON primitives,
+canonical identifier and `LocalDate` strings, and explicit nulls. Parsing first
+checks that serialized boundary, then reconstructs detached values through the
+existing domain parsers and runs lifecycle-aware component and cross-object
+validation. Additional or missing properties, non-plain values, invalid dates,
+foreign references, unsupported statuses, and inconsistent audit metadata are
+rejected rather than discarded or repaired.
+
+Creation metadata is explanatory but not trusted. Validation proves that its
+starting year matches the season; the ending year and display label follow the
+existing two-year rules; its opening date matches the calendar; its seed and
+spacing match the schedule; its rule identity matches the schedule and season
+rules version; each game-day date follows the stored start and spacing; and the
+conclusion event matches the latest scheduled regular-season date. It also
+rechecks the coordinator-owned season, calendar, team-season, and calendar-event
+identity dependencies and the generator-owned schedule identity without
+introducing a persistence-specific ID formula.
+
+Regular-season opening and conclusion remain league-scoped. They are the only
+dated event kinds supported by this V2 foundation; other recognized future
+events may be preserved only as pending, undated TBA records. An unresolved
+postponed game therefore keeps the current conclusion date null, while a
+cancelled game cannot extend the conclusion.
+
+Normal V2 restoration treats the stored foundation as authoritative. It never
+calls `createSeasonFoundation`, the schedule generator, league generation,
+opponent-requirement construction, or seeded randomization. The stored opponent
+matrix is validated in place against the exact registered rule policy, while
+the stored game and game-day arrays retain their order. Therefore later schedule
+publication or date-status state is not reset to pristine generator output.
+
+V1-to-V2 migration is deliberately different: V1 has no season foundation, so
+the pure migration requires all season-creation inputs explicitly and calls the
+existing coordinator once. It stores exactly that result and its actual rule-set
+identity, starts at revision 1, validates the V2 DTO, and verifies a
+stringify/parse/reparse round trip. It chooses no default season year, date,
+spacing, or seed and performs no storage or UI work.
+
+Restoration resolves rule compatibility by exact `(ScheduleRuleSetId, version)`
+rather than a “current” alias. Every genuinely registered historical version may
+restore with its own immutable rules. Unknown IDs and known IDs with unsupported
+versions are structured recovery errors; no schedule is regenerated or
+reinterpreted with a newer pack. At present the only registered restoration
+rule is the shipped Milestone 1 regular-season rule set version 1.
+
+This serialization and migration boundary does not change IndexedDB keys,
+repository read precedence, application state, or React behavior. Those remain
+separate integration work.
+
 ## Rule sets and opponent requirements
 
 The generic `ScheduleRuleSet` identifies its rule-set ID, version, stage,

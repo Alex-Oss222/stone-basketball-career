@@ -393,9 +393,10 @@ interface SeasonStateV1 {
 }
 ```
 
-This combined persistence shape is still a future Milestone 1 target. The
-generic season and schedule foundation is deliberately not wired into the
-current league snapshot or IndexedDB schema yet.
+This combined simulation persistence shape is still a future Milestone 1
+target. The narrower active-league snapshot now has a version-2 serialization
+and migration boundary for the existing season foundation, described below,
+but it is not yet wired into the IndexedDB repository or React state.
 
 Generated team names, cities, colors, marks, player names, IDs, ratings, ages, positions, assignments, tendencies, rules, and rotations are snapshotted into a new season. A later application or generator update cannot silently change the competitive inputs of an existing save.
 
@@ -462,7 +463,151 @@ Derived standings and season totals may be memoized in memory. If cached in a sa
 
 ## Save format and local storage
 
-### Version 1 envelope
+### Current active-league snapshot DTOs
+
+The active-league snapshot and the planned full-season save envelope are
+different versioned contracts. The current `LeagueSnapshotV1` remains the
+independently parseable league-only format:
+
+```ts
+interface LeagueSnapshotV1 {
+  readonly kind: 'stone-basketball-gm-league-snapshot'
+  readonly snapshotVersion: 1
+  readonly rootSeed: string
+  readonly league: League
+  readonly managedTeamId: TeamId | null
+}
+```
+
+`LeagueSnapshotV2` is the serialized regular-season-foundation DTO. Its top
+level is closed and contains exactly:
+
+```ts
+interface LeagueSnapshotV2 {
+  readonly kind: 'stone-basketball-gm-league-snapshot'
+  readonly snapshotVersion: 2
+  readonly revision: number
+  readonly rootSeed: string
+  readonly managedTeamId: TeamId | null
+  readonly league: LeagueSnapshotV2LeagueDto
+  readonly season: LeagueSnapshotV2SeasonDto
+  readonly seasonCalendar: LeagueSnapshotV2SeasonCalendarDto
+  readonly teamSeasons: readonly LeagueSnapshotV2TeamSeasonDto[]
+  readonly leagueSchedule: LeagueSnapshotV2LeagueScheduleDto
+  readonly creationMetadata: LeagueSnapshotV2CreationMetadata
+}
+
+interface LeagueSnapshotV2CreationMetadata {
+  readonly startingYear: number
+  readonly regularSeasonStartDate: LocalDate
+  readonly gameDaySpacing: number
+  readonly scheduleSeed: string
+  readonly scheduleRuleSetId: ScheduleRuleSetId
+  readonly scheduleRuleSetVersion: number
+}
+```
+
+A newly serialized or migrated V2 snapshot starts at revision 1. Revision is a
+positive safe integer and is the only DTO revision field; it is not a timestamp.
+Repository update and stale-write behavior remain a later integration task.
+
+V2 stores the complete authoritative generated league, season, calendar event
+records, one team-season record per league team, opponent requirements, game
+days, and scheduled games. Stable identifiers, every original/current/actual
+date, statuses, meeting numbers, and public array order are serialized. Optional
+serialized values use explicit `null`: for example a league-scoped calendar
+event has `teamId: null`, an uncompleted scheduled game has `actualDate: null`,
+and an absent opponent-requirement source tag is `null`. Domain unions may omit
+those properties after the DTO has been parsed and validated.
+
+Letter grades, dashboard or navigation state, view models, derived summaries,
+standings, records, scores, winners, statistics, and unknown event dates are not
+serialized. Numeric ratings remain authoritative, and grades continue to be
+derived. The rule-set definition itself is also not copied into the snapshot;
+the snapshot stores its exact ID and version and resolves that pair through the
+supported rule-set registry.
+
+### DTO and live-domain boundary
+
+A persistence DTO is not assumed to be a live domain object. It contains only
+JSON primitives, dense arrays, plain records, canonical serialized identifier
+strings, canonical `LocalDate` strings, and explicit nulls. It cannot contain
+`Date`, `Map`, `Set`, functions, symbols, `undefined`, accessors, sparse arrays,
+array custom properties, class instances, non-finite numbers, negative zero, or
+other values that change under a JSON round trip.
+
+`parseLeagueSnapshotV2` accepts `unknown`, verifies every exact record key set
+and property descriptor before reading it, parses every nested primitive and
+branded value, reconstructs detached live domain values for semantic
+validation, and returns a detached validated DTO. Missing and additional fields
+are errors; the parser never clamps, trims, drops, repairs, or regenerates
+stored data.
+
+Validation proceeds through four layers:
+
+1. JSON-safe primitive, record, descriptor, and dense-array shape;
+2. league, season, calendar, team-season, and schedule entity rules;
+3. cross-object identity, ownership, season, schedule, team, event, and date
+   references; and
+4. creation-metadata, stored opponent-matrix, game-day spacing, boundary-event,
+   and supported-rule-set consistency.
+
+The stored `managedTeamId` is always present and is either null or resolves to
+exactly one stored team. Season years and label must agree with creation
+metadata; season and schedule IDs must agree; each league team must have exactly
+one correctly identified team-season record; and calendar opening/conclusion
+dates must agree with the stored schedule and creation inputs. Schedule seed,
+spacing, rule-set ID, and rule-set version are duplicated audit facts and must
+agree with the stored entities rather than being trusted or repaired.
+
+In this V2 foundation, opening and conclusion are league-scoped and are the only
+events whose dates are currently supported. Other recognized future event kinds
+may be retained only as pending TBA records with null dates. A postponed game
+with no current date keeps the conclusion unknown rather than moving it earlier;
+cancelled games do not extend the current conclusion date.
+
+Normal V2 restoration never calls league generation,
+`createSeasonFoundation`, schedule generation, opponent-requirement generation,
+or seeded randomization. The stored opponent matrix is validated in place and
+the stored games, IDs, dates, and ordering remain authoritative. A rule set is
+restorable only when its exact `(ScheduleRuleSetId, version)` registration is
+available. An unknown ID or unsupported version produces a structured recovery
+error; restoration never substitutes the newest rule version or reinterprets a
+schedule using a different pack.
+
+A valid DTO guarantees this round trip without losing, regenerating,
+reordering, or changing an authoritative field:
+
+```ts
+const serialized = JSON.stringify(snapshotV2)
+const restored = parseLeagueSnapshotV2(JSON.parse(serialized))
+```
+
+### Pure V1-to-V2 migration
+
+`migrateLeagueSnapshotV1ToV2(snapshotV1, explicitSeasonCreationInputs)` is the
+only Task A path that creates the missing season foundation. It first parses V1
+without modifying it, requires an explicit starting year, regular-season start
+`LocalDate`, positive game-day spacing, and canonical schedule seed, and then
+calls the authoritative `createSeasonFoundation` coordinator. It does not choose
+defaults or accept caller-provided rule-set metadata.
+
+The pure in-memory migration stages are `parse-v1`, `validate-inputs`,
+`create-season-foundation`, `construct-v2`, `validate-v2`, and
+`serialize-round-trip`. Failures identify the stage, a stable code, a readable
+message, and safe nested validation issues. Success preserves the V1 league and
+managed team, stores the actual rule-set identity used by the coordinator, sets
+revision 1, validates the completed V2 DTO, and verifies its JSON round trip.
+For the same explicit inputs, migrated season entities must equal a direct
+coordinator result; persistence does not introduce separate identity rules.
+
+Migration performs no storage reads, writes, deletes, repository selection, or
+React-state updates and mutates neither input. V1 remains parseable on its own,
+and neither parser accepts the other version. Choosing V1/V2 read precedence,
+performing an atomic IndexedDB migration, and implementing stale-write behavior
+belong to the later repository integration task.
+
+### Planned full-season save envelope
 
 ```ts
 interface SaveEnvelopeV1 {
@@ -493,7 +638,7 @@ An autosave transaction adds a new immutable revision, advances the head, and de
 
 Creating a named manual save always adds a new `manualSaves` record. It never updates a same-name record. Named manual saves are never pruned; deletion requires the user to select a specific manual save and confirm. Storage quota failures leave the prior state intact and produce a clear persistent error with export and explicit save-management options.
 
-### Import and export
+### Planned import and export
 
 Export serializes an already validated revision and downloads it locally. Import follows this sequence:
 
@@ -509,7 +654,7 @@ Export serializes an already validated revision and downloads it locally. Import
 
 Import never changes or deletes the currently loaded revision or a named manual save as a side effect. A confirmed import is retained as a named manual save unless the user explicitly chooses to begin using it as the active season.
 
-## Versioning and migrations
+## Full-season versioning and migrations
 
 `saveVersion`, `simulationVersion`, `rngVersion`, `leagueDataVersion`, `leagueGeneratorVersion`, and `ratingGenerationVersion` serve different purposes:
 
@@ -520,7 +665,8 @@ Import never changes or deletes the currently loaded revision or a named manual 
 - `leagueGeneratorVersion` identifies the exact initial team/player generation behavior.
 - `ratingGenerationVersion` identifies the stored-rating formula, position biases, field-seed label, and rating RNG behavior used for each player.
 
-Future migrations are named, pure functions such as `migrateV1ToV2(input: SaveEnvelopeV1): SaveEnvelopeV2`. They:
+Future full-season-envelope migrations are named, pure functions such as
+`migrateV1ToV2(input: SaveEnvelopeV1): SaveEnvelopeV2`. They:
 
 - never mutate the input;
 - never consume randomness;
@@ -544,7 +690,10 @@ Validation has four layers:
 
 Validators return structured issues with a stable code and JSON-style path. They do not coerce strings to numbers, clamp bad ratings, drop unknown records, or repair corrupt statistics silently.
 
-A handwritten narrow validator is proposed for version 1, avoiding a new production dependency. If the schema becomes too complex, a production validation package requires a written rationale before it is added.
+The current league snapshot versions use handwritten narrow validators and no
+new production dependency. If the future full-season schema becomes too
+complex, a production validation package requires a written rationale before
+it is added.
 
 ## Required statistical invariants
 

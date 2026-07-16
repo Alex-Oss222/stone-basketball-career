@@ -84,6 +84,18 @@ export interface CreateSeasonFoundationInput {
   readonly scheduleSeed: string
 }
 
+export type SeasonFoundationConfigurationInput = Omit<
+  CreateSeasonFoundationInput,
+  'league'
+>
+
+export interface SeasonFoundationConfiguration {
+  readonly startingYear: number
+  readonly regularSeasonStartDate: LocalDate
+  readonly calendarDaySpacing: number
+  readonly scheduleSeed: string
+}
+
 export interface SeasonFoundation {
   readonly season: Season
   readonly calendar: SeasonCalendar
@@ -132,7 +144,7 @@ export class InvalidSeasonFoundationError extends Error {
 export function createSeasonFoundation(
   input: CreateSeasonFoundationInput,
 ): SeasonFoundation {
-  const configuration = parseConfiguration(input)
+  const configuration = parseSeasonFoundationConfiguration(input)
   assertValidLeague(input.league)
 
   const seasonId = deriveSeasonFoundationSeasonId(
@@ -298,7 +310,7 @@ function collectSeasonFoundationValidationIssues(
   const { foundation, league } = input
 
   try {
-    parseConfiguration(input)
+    parseSeasonFoundationConfiguration(input)
   } catch (error) {
     addIssue(
       issues,
@@ -379,12 +391,14 @@ export function assertValidSeasonFoundation(
   }
 }
 
-function parseConfiguration(input: CreateSeasonFoundationInput): {
-  readonly startingYear: number
-  readonly regularSeasonStartDate: LocalDate
-  readonly calendarDaySpacing: number
-  readonly scheduleSeed: string
-} {
+/**
+ * Parses the coordinator's authoritative primitive configuration without
+ * creating a league, schedule, or season. Persistence migration reuses this
+ * boundary rather than restating its normalization and range rules.
+ */
+export function parseSeasonFoundationConfiguration(
+  input: SeasonFoundationConfigurationInput,
+): SeasonFoundationConfiguration {
   const endingYear = input.startingYear + 1
   formatSeasonLabel(input.startingYear, endingYear)
   const regularSeasonStartDate = parseLocalDate(
@@ -818,7 +832,7 @@ function validateCanonicalScheduleOutput(
 ): void {
   let expectedSchedule: LeagueSchedule
   try {
-    const configuration = parseConfiguration(input)
+    const configuration = parseSeasonFoundationConfiguration(input)
     expectedSchedule = generateRegularSeasonSchedule({
       leagueId: input.league.id,
       seasonId: input.foundation.season.id,
