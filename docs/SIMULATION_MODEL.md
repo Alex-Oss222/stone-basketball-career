@@ -90,15 +90,19 @@ Golden-vector tests pin seed normalization, derived seeds, the first outputs of 
 
 ## Schedule generation
 
-The schedule generator is pure and receives eight validated team IDs plus the schedule RNG.
+The schedule generator is pure and receives a season ID, eight validated team
+IDs, a versioned rule set, a schedule seed, a timezone-free starting
+`LocalDate`, and whole-calendar-day spacing. The complete generic model and
+date-certainty rules are defined in `SEASON_AND_SCHEDULING.md`.
 
-1. Sort IDs, then apply a seeded Fisher–Yates shuffle.
-2. Use the circle method to produce seven base rounds of four games. Every team appears once per round and every pairing appears once.
-3. Produce four cycles of the base round robin.
-4. Reverse home court for the paired second cycle and again for the paired fourth cycle, giving every matchup two home games per team.
-5. Apply fixed cycle-specific round rotations so the four meetings are spread through the season.
-6. Assign game days 1–28 and derive stable game IDs and per-game seeds.
-7. Validate the complete schedule before returning it.
+1. Sort IDs and construct the 28 canonical opponent requirements without dates.
+2. Apply a seeded Fisher–Yates team permutation from its own derived label.
+3. Use the circle method to produce seven base rounds of four games. Every team appears once per round and every pairing appears once.
+4. Produce four cycles and reverse paired cycle orientations, giving every matchup two home games per team.
+5. Vary cycle and round ordering through separately derived labeled streams.
+6. Assign game days 1–28 and calendar dates from the configured spacing.
+7. Derive stable schedule, game-day, and game IDs without using final array indexes as game identity.
+8. Validate the complete schedule and all detectable violations before returning it.
 
 Required output properties:
 
@@ -110,7 +114,10 @@ Required output properties:
 - no team appearing twice on one game day; and
 - every reference resolving to one of the eight teams.
 
-Schedule generation consumes no browser date or timezone. “Game day” is a league sequence number, not a real-world calendar date.
+Schedule generation consumes no browser date, wall clock, locale, or timezone.
+`LocalDate` is a pure `YYYY-MM-DD` calendar value, and a game-day sequence
+number remains a separate league ordering concept. Real professional-league
+dates and formulas are not embedded in the engine.
 
 ## Pregame setup
 

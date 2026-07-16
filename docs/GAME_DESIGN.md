@@ -94,6 +94,14 @@ The 240 figure describes team regulation court time: five players multiplied by 
 - Simulate non-user games deterministically when their game day is advanced.
 - Open the box score for every completed game.
 
+The domain foundation behind this screen is specified in
+`SEASON_AND_SCHEDULING.md`. The current fictional league uses an explicit
+versioned rule pack and a pre-date opponent matrix. Scheduled, original,
+postponed, actual, and TBA dates remain distinct. Future NBA-style or custom
+rule packs, Cup windows, Play-In dates, playoff dates, venues, travel, and
+showcase preferences are extension points only; none of their behavior or
+real-world dates is active in Milestone 1.
+
 ### Game result and box score
 
 - Show final score, quarter and overtime scoring, winner, and game seed/replay metadata.

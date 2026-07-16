@@ -114,7 +114,11 @@ type Id<Value extends string> = string & {
 type TeamId = Id<'TeamId'>
 type PlayerId = Id<'PlayerId'>
 type SeasonId = Id<'SeasonId'>
+type ScheduleId = Id<'ScheduleId'>
 type GameId = Id<'GameId'>
+type GameDayId = Id<'GameDayId'>
+type CalendarEventId = Id<'CalendarEventId'>
+type ScheduleRuleSetId = Id<'ScheduleRuleSetId'>
 type SaveId = Id<'SaveId'>
 type SnapshotId = Id<'SnapshotId'>
 ```
@@ -289,24 +293,15 @@ A valid regulation plan has:
 
 ### Schedule and results
 
+The authoritative generic season, event-calendar, opponent-requirement, and
+schedule-placement model is defined in `SEASON_AND_SCHEDULING.md`. It replaces
+the earlier result-oriented scheduled-game sketch with separate versioned
+`Season`, `SeasonCalendar`, `TeamSeason`, `ScheduleRuleSet`,
+`OpponentRequirement`, `LeagueSchedule`, `GameDay`, and `ScheduledGame`
+records. The box-score shapes below remain planned simulation outputs; they are
+not part of the scheduling implementation.
+
 ```ts
-interface ScheduledGameBase {
-  readonly id: GameId
-  readonly gameDay: number
-  readonly homeTeamId: TeamId
-  readonly awayTeamId: TeamId
-  readonly derivedSeed: string
-}
-
-type ScheduledGame =
-  | (ScheduledGameBase & {
-      readonly status: 'scheduled'
-    })
-  | (ScheduledGameBase & {
-      readonly status: 'completed'
-      readonly resultId: GameId
-    })
-
 interface PlayerBoxScore {
   readonly playerId: PlayerId
   readonly teamId: TeamId
@@ -388,6 +383,10 @@ interface SeasonStateV1 {
   readonly resultsByGameId: Readonly<Partial<Record<GameId, GameResult>>>
 }
 ```
+
+This combined persistence shape is still a future Milestone 1 target. The
+generic season and schedule foundation is deliberately not wired into the
+current league snapshot or IndexedDB schema yet.
 
 Generated team names, cities, colors, marks, player names, IDs, ratings, ages, positions, assignments, tendencies, rules, and rotations are snapshotted into a new season. A later application or generator update cannot silently change the competitive inputs of an existing save.
 

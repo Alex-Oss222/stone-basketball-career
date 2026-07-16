@@ -1,21 +1,36 @@
 import { describe, expect, expectTypeOf, it } from 'vitest'
 import {
+  isCalendarEventId,
   isGameId,
+  isGameDayId,
   isLeagueId,
   isPlayerId,
   isSaveId,
+  isScheduleId,
+  isScheduleRuleSetId,
+  isSeasonId,
   isTeamId,
+  parseCalendarEventId,
   parseGameId,
+  parseGameDayId,
   parseLeagueId,
   parsePlayerId,
   parseSaveId,
+  parseScheduleId,
+  parseScheduleRuleSetId,
+  parseSeasonId,
   parseTeamId,
 } from '../../src/domain/ids'
 import type {
+  CalendarEventId,
   GameId,
+  GameDayId,
   LeagueId,
   PlayerId,
   SaveId,
+  ScheduleId,
+  ScheduleRuleSetId,
+  SeasonId,
   TeamId,
 } from '../../src/domain/ids'
 
@@ -31,6 +46,19 @@ const RUNTIME_ID_CASES: readonly RuntimeIdCase[] = [
   { name: 'PlayerId', isValid: isPlayerId, parse: parsePlayerId },
   { name: 'GameId', isValid: isGameId, parse: parseGameId },
   { name: 'SaveId', isValid: isSaveId, parse: parseSaveId },
+  { name: 'SeasonId', isValid: isSeasonId, parse: parseSeasonId },
+  { name: 'ScheduleId', isValid: isScheduleId, parse: parseScheduleId },
+  {
+    name: 'CalendarEventId',
+    isValid: isCalendarEventId,
+    parse: parseCalendarEventId,
+  },
+  { name: 'GameDayId', isValid: isGameDayId, parse: parseGameDayId },
+  {
+    name: 'ScheduleRuleSetId',
+    isValid: isScheduleRuleSetId,
+    parse: parseScheduleRuleSetId,
+  },
 ]
 
 const VALID_IDS = ['a', 'valid_id_123', '0', '_'] as const
@@ -67,4 +95,9 @@ it('keeps stable entity ID types distinct', () => {
   expectTypeOf<TeamId>().not.toEqualTypeOf<PlayerId>()
   expectTypeOf<PlayerId>().not.toEqualTypeOf<GameId>()
   expectTypeOf<GameId>().not.toEqualTypeOf<SaveId>()
+  expectTypeOf<SaveId>().not.toEqualTypeOf<SeasonId>()
+  expectTypeOf<SeasonId>().not.toEqualTypeOf<ScheduleId>()
+  expectTypeOf<ScheduleId>().not.toEqualTypeOf<CalendarEventId>()
+  expectTypeOf<CalendarEventId>().not.toEqualTypeOf<GameDayId>()
+  expectTypeOf<GameDayId>().not.toEqualTypeOf<ScheduleRuleSetId>()
 })

@@ -2,7 +2,11 @@
 
 ## Scope
 
-This roadmap ends with Milestone 1. It does not schedule, scaffold, or reserve architecture for later gameplay systems.
+This roadmap ends with Milestone 1. Generic season and scheduling contracts
+include explicit versioned rule-pack, event, constraint, and diagnostic
+boundaries so the current engine is not tied to one league formula. Those
+boundaries are not delivery commitments or placeholder behavior for later
+gameplay systems.
 
 Milestone 1 delivers:
 
@@ -110,6 +114,12 @@ Work:
 - implement and version seed normalization, derivation, and `xoshiro128**`;
 - pin golden vectors;
 - implement the seeded circle-method schedule;
+- add timezone-free `LocalDate`, generic season lifecycle, event-calendar, and
+  team-season records;
+- construct a canonical opponent-requirement matrix before placing games;
+- represent the fictional eight-team format as an explicit versioned rule set;
+- separate original, current scheduled, and actual dates;
+- add typed hard/soft constraint and whole-report diagnostic boundaries;
 - derive stable game IDs and game seeds; and
 - validate all schedule invariants.
 
@@ -118,6 +128,9 @@ Exit gate:
 - identical root seeds produce identical schedules;
 - different labeled streams are independent in golden tests;
 - every schedule has 112 games and exact pairing/home-away counts;
+- every schedule has 28 ordered, correctly spaced game days with four games
+  and one appearance per team on each day;
+- unsupported optimizer constraints are reported rather than ignored;
 - every game references valid distinct teams; and
 - strict checking, tests, lint, and build pass.
 

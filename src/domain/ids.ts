@@ -9,6 +9,11 @@ export type TeamId = StableId<'TeamId'>
 export type PlayerId = StableId<'PlayerId'>
 export type GameId = StableId<'GameId'>
 export type SaveId = StableId<'SaveId'>
+export type SeasonId = StableId<'SeasonId'>
+export type ScheduleId = StableId<'ScheduleId'>
+export type CalendarEventId = StableId<'CalendarEventId'>
+export type GameDayId = StableId<'GameDayId'>
+export type ScheduleRuleSetId = StableId<'ScheduleRuleSetId'>
 
 const INVALID_ID_CHARACTER = /[^a-z0-9_]/
 
@@ -32,6 +37,26 @@ export function isSaveId(value: unknown): value is SaveId {
   return isStableId(value)
 }
 
+export function isSeasonId(value: unknown): value is SeasonId {
+  return isStableId(value)
+}
+
+export function isScheduleId(value: unknown): value is ScheduleId {
+  return isStableId(value)
+}
+
+export function isCalendarEventId(value: unknown): value is CalendarEventId {
+  return isStableId(value)
+}
+
+export function isGameDayId(value: unknown): value is GameDayId {
+  return isStableId(value)
+}
+
+export function isScheduleRuleSetId(value: unknown): value is ScheduleRuleSetId {
+  return isStableId(value)
+}
+
 export function parseLeagueId(value: unknown): LeagueId {
   return parseStableId(value, 'LeagueId')
 }
@@ -50,6 +75,26 @@ export function parseGameId(value: unknown): GameId {
 
 export function parseSaveId(value: unknown): SaveId {
   return parseStableId(value, 'SaveId')
+}
+
+export function parseSeasonId(value: unknown): SeasonId {
+  return parseStableId(value, 'SeasonId')
+}
+
+export function parseScheduleId(value: unknown): ScheduleId {
+  return parseStableId(value, 'ScheduleId')
+}
+
+export function parseCalendarEventId(value: unknown): CalendarEventId {
+  return parseStableId(value, 'CalendarEventId')
+}
+
+export function parseGameDayId(value: unknown): GameDayId {
+  return parseStableId(value, 'GameDayId')
+}
+
+export function parseScheduleRuleSetId(value: unknown): ScheduleRuleSetId {
+  return parseStableId(value, 'ScheduleRuleSetId')
 }
 
 function isStableId(value: unknown): value is string {
