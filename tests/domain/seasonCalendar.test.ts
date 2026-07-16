@@ -257,11 +257,13 @@ describe('CalendarEvent', () => {
 describe('SeasonCalendar', () => {
   it('parses a versioned immutable event collection for one season', () => {
     const calendar = parseSeasonCalendar({
+      id: 'season_calendar_stone_01',
       version: 1,
       seasonId: BASE_EVENT.seasonId,
       events: [BASE_EVENT],
     })
 
+    expect(calendar.id).toBe('season_calendar_stone_01')
     expect(calendar.version).toBe(1)
     expect(calendar.events).toHaveLength(1)
     expect(Object.isFrozen(calendar)).toBe(true)
@@ -270,6 +272,7 @@ describe('SeasonCalendar', () => {
 
   it('rejects duplicate event IDs and wrong season references', () => {
     const issues = validateSeasonCalendar({
+      id: 'season_calendar_stone_01',
       version: 1,
       seasonId: BASE_EVENT.seasonId,
       events: [
@@ -291,6 +294,7 @@ describe('SeasonCalendar', () => {
     )
     expect(() =>
       parseSeasonCalendar({
+        id: 'season_calendar_stone_01',
         version: 1,
         seasonId: BASE_EVENT.seasonId,
         events: [BASE_EVENT, BASE_EVENT],
@@ -301,12 +305,26 @@ describe('SeasonCalendar', () => {
   it('rejects unsupported calendar versions explicitly', () => {
     expect(
       validateSeasonCalendar({
+        id: 'season_calendar_stone_01',
         version: 2,
         seasonId: BASE_EVENT.seasonId,
         events: [],
       }),
     ).toContainEqual(
       expect.objectContaining({ code: 'calendar.version.invalid' }),
+    )
+  })
+
+  it('rejects an invalid SeasonCalendarId', () => {
+    expect(
+      validateSeasonCalendar({
+        id: 'Season Calendar Bad',
+        version: 1,
+        seasonId: BASE_EVENT.seasonId,
+        events: [],
+      }),
+    ).toContainEqual(
+      expect.objectContaining({ code: 'calendar.id.invalid' }),
     )
   })
 })

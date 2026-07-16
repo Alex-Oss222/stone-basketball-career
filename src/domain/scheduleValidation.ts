@@ -1,10 +1,17 @@
 import {
   isGameDayId,
   isGameId,
+  isLeagueId,
   isScheduleId,
   isTeamId,
 } from './ids'
-import type { GameDayId, GameId, SeasonId, TeamId } from './ids'
+import type {
+  GameDayId,
+  GameId,
+  LeagueId,
+  SeasonId,
+  TeamId,
+} from './ids'
 import { addDays, isLocalDate } from './localDate'
 import type { LocalDate } from './localDate'
 import {
@@ -33,6 +40,7 @@ export interface ScheduleValidationTeamReference {
 
 export interface ValidateLeagueScheduleInput {
   readonly schedule: LeagueSchedule
+  readonly leagueId: LeagueId
   readonly seasonId: SeasonId
   readonly teams: readonly ScheduleValidationTeamReference[]
   readonly ruleSet: ScheduleRuleSet
@@ -121,6 +129,17 @@ export function validateLeagueSchedule(
       'hard',
       'wrong_season',
       `Schedule belongs to ${input.schedule.seasonId}, not ${input.seasonId}`,
+    )
+  }
+  if (
+    !isLeagueId(input.leagueId) ||
+    !isLeagueId(input.schedule.leagueId) ||
+    input.schedule.leagueId !== input.leagueId
+  ) {
+    report(
+      'hard',
+      'wrong_league',
+      `Schedule belongs to ${String(input.schedule.leagueId)}, not ${String(input.leagueId)}`,
     )
   }
   if (!isScheduleId(input.schedule.id)) {

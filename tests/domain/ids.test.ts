@@ -8,8 +8,10 @@ import {
   isSaveId,
   isScheduleId,
   isScheduleRuleSetId,
+  isSeasonCalendarId,
   isSeasonId,
   isTeamId,
+  isTeamSeasonId,
   parseCalendarEventId,
   parseGameId,
   parseGameDayId,
@@ -18,8 +20,10 @@ import {
   parseSaveId,
   parseScheduleId,
   parseScheduleRuleSetId,
+  parseSeasonCalendarId,
   parseSeasonId,
   parseTeamId,
+  parseTeamSeasonId,
 } from '../../src/domain/ids'
 import type {
   CalendarEventId,
@@ -30,8 +34,10 @@ import type {
   SaveId,
   ScheduleId,
   ScheduleRuleSetId,
+  SeasonCalendarId,
   SeasonId,
   TeamId,
+  TeamSeasonId,
 } from '../../src/domain/ids'
 
 interface RuntimeIdCase {
@@ -58,6 +64,16 @@ const RUNTIME_ID_CASES: readonly RuntimeIdCase[] = [
     name: 'ScheduleRuleSetId',
     isValid: isScheduleRuleSetId,
     parse: parseScheduleRuleSetId,
+  },
+  {
+    name: 'SeasonCalendarId',
+    isValid: isSeasonCalendarId,
+    parse: parseSeasonCalendarId,
+  },
+  {
+    name: 'TeamSeasonId',
+    isValid: isTeamSeasonId,
+    parse: parseTeamSeasonId,
   },
 ]
 
@@ -100,4 +116,6 @@ it('keeps stable entity ID types distinct', () => {
   expectTypeOf<ScheduleId>().not.toEqualTypeOf<CalendarEventId>()
   expectTypeOf<CalendarEventId>().not.toEqualTypeOf<GameDayId>()
   expectTypeOf<GameDayId>().not.toEqualTypeOf<ScheduleRuleSetId>()
+  expectTypeOf<ScheduleRuleSetId>().not.toEqualTypeOf<SeasonCalendarId>()
+  expectTypeOf<SeasonCalendarId>().not.toEqualTypeOf<TeamSeasonId>()
 })

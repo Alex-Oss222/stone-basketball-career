@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest'
 import {
   parseGameDayId,
   parseGameId,
+  parseLeagueId,
   parseScheduleRuleSetId,
   parseSeasonId,
   parseTeamId,
@@ -20,6 +21,7 @@ import type {
 import { validateLeagueSchedule } from '../../src/domain/scheduleValidation'
 import { generateRegularSeasonSchedule } from '../../src/generation/generateSchedule'
 
+const leagueId = parseLeagueId('league_validator_test')
 const seasonId = parseSeasonId('season_validator_test')
 const teams = Array.from({ length: 8 }, (_, index) => ({
   id: parseTeamId(`team_validator_${String(index + 1).padStart(2, '0')}`),
@@ -29,6 +31,7 @@ const calendarDaySpacing = 2
 
 function createSchedule(): LeagueSchedule {
   return generateRegularSeasonSchedule({
+    leagueId,
     seasonId,
     teams,
     scheduleSeed: 'validator-fixture',
@@ -42,6 +45,7 @@ function validate(
   schedule: LeagueSchedule,
   options: {
     readonly validationTeams?: typeof teams
+    readonly validationLeagueId?: typeof leagueId
     readonly validationSeasonId?: typeof seasonId
     readonly constraints?: Parameters<
       typeof validateLeagueSchedule
@@ -50,6 +54,7 @@ function validate(
 ) {
   return validateLeagueSchedule({
     schedule,
+    leagueId: options.validationLeagueId ?? leagueId,
     seasonId: options.validationSeasonId ?? seasonId,
     teams: options.validationTeams ?? teams,
     ruleSet: MILESTONE_1_REGULAR_SEASON_RULE_SET,
@@ -97,6 +102,7 @@ describe('validateLeagueSchedule', () => {
 
     const shortReport = validateLeagueSchedule({
       schedule: createSchedule(),
+      leagueId,
       seasonId,
       teams: teams.slice(0, 7),
       ruleSet: MILESTONE_1_REGULAR_SEASON_RULE_SET,
@@ -316,6 +322,20 @@ describe('validateLeagueSchedule', () => {
       .toHaveLength(0)
   })
 
+  it('rejects a schedule assigned to the wrong league', () => {
+    const wrongLeagueId = parseLeagueId('league_validator_wrong')
+    const schedule: LeagueSchedule = {
+      ...createSchedule(),
+      leagueId: wrongLeagueId,
+    }
+
+    expect(codes(schedule)).toContain('wrong_league')
+    expect(
+      validate(createSchedule(), { validationLeagueId: wrongLeagueId })
+        .hardViolations.map(({ code }) => code),
+    ).toContain('wrong_league')
+  })
+
   it('rejects the wrong rule-set identity explicitly', () => {
     const schedule: LeagueSchedule = {
       ...createSchedule(),
@@ -394,6 +414,7 @@ describe('validateLeagueSchedule', () => {
     const runValidation = () =>
       validateLeagueSchedule({
         schedule,
+        leagueId,
         seasonId,
         teams,
         ruleSet: MILESTONE_1_REGULAR_SEASON_RULE_SET,

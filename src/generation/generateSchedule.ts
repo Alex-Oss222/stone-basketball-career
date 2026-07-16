@@ -1,11 +1,19 @@
 import {
+  isLeagueId,
   isSeasonId,
   isTeamId,
   parseGameDayId,
   parseGameId,
   parseScheduleId,
 } from '../domain/ids'
-import type { GameDayId, GameId, SeasonId, TeamId } from '../domain/ids'
+import type {
+  GameDayId,
+  GameId,
+  LeagueId,
+  ScheduleId,
+  SeasonId,
+  TeamId,
+} from '../domain/ids'
 import { addDays, parseLocalDate } from '../domain/localDate'
 import type { LocalDate } from '../domain/localDate'
 import {
@@ -49,6 +57,7 @@ export interface ScheduleTeamReference {
 }
 
 export interface GenerateRegularSeasonScheduleInput {
+  readonly leagueId: LeagueId
   readonly seasonId: SeasonId
   readonly teams: readonly ScheduleTeamReference[]
   readonly scheduleSeed: string
@@ -56,6 +65,13 @@ export interface GenerateRegularSeasonScheduleInput {
   readonly calendarDaySpacing: number
   readonly ruleSet: ScheduleRuleSet
   readonly constraints?: readonly ScheduleConstraint[]
+}
+
+export interface StableScheduleIdInput {
+  readonly seasonId: SeasonId
+  readonly teams: readonly ScheduleTeamReference[]
+  readonly scheduleSeed: string
+  readonly ruleSet: ScheduleRuleSet
 }
 
 export interface StableScheduledGameIdInput {
@@ -120,13 +136,12 @@ export function generateRegularSeasonSchedule(
     seedNamespace,
     sortedTeamIds,
   )
-  const scheduleIdentitySeed = deriveSeed(
-    seedNamespace,
-    `${SCHEDULE_RANDOM_STREAM_LABELS.scheduleIdentity}/participants_${participantFingerprint}`,
-  )
-  const scheduleId = parseScheduleId(
-    `schedule_${fingerprint(scheduleIdentitySeed)}`,
-  )
+  const scheduleId = deriveStableScheduleId({
+    seasonId: input.seasonId,
+    teams: input.teams,
+    scheduleSeed: normalizedScheduleSeed,
+    ruleSet: input.ruleSet,
+  })
   const teamPermutation = shuffledWithSeed(
     sortedTeamIds,
     deriveSeed(seedNamespace, SCHEDULE_RANDOM_STREAM_LABELS.teamPermutation),
@@ -189,6 +204,7 @@ export function generateRegularSeasonSchedule(
 
   const schedule: LeagueSchedule = Object.freeze({
     id: scheduleId,
+    leagueId: input.leagueId,
     seasonId: input.seasonId,
     ruleSetId: input.ruleSet.id,
     generationVersion: SCHEDULE_GENERATION_VERSION,
@@ -201,6 +217,7 @@ export function generateRegularSeasonSchedule(
   })
   const report = validateLeagueSchedule({
     schedule,
+    leagueId: input.leagueId,
     seasonId: input.seasonId,
     teams: input.teams,
     ruleSet: input.ruleSet,
@@ -221,6 +238,31 @@ export function generateRegularSeasonSchedule(
 
 /** Concise alias for callers that already know the configured schedule stage. */
 export const generateSchedule = generateRegularSeasonSchedule
+
+/**
+ * Derives the generator's authoritative schedule identity from stable season,
+ * rule, seed, and canonical participant inputs. LeagueId is intentionally
+ * omitted because a valid SeasonId already belongs to exactly one league.
+ */
+export function deriveStableScheduleId(input: StableScheduleIdInput): ScheduleId {
+  assertStableScheduleIdentityInput(input)
+  const scheduleSeed = normalizeSeed(input.scheduleSeed)
+  const sortedTeamIds = input.teams.map(({ id }) => id).sort(compareIds)
+  const seedNamespace = createSeedNamespace(
+    scheduleSeed,
+    input.seasonId,
+    input.ruleSet,
+  )
+  const participantFingerprint = createParticipantFingerprint(
+    seedNamespace,
+    sortedTeamIds,
+  )
+  const scheduleIdentitySeed = deriveSeed(
+    seedNamespace,
+    `${SCHEDULE_RANDOM_STREAM_LABELS.scheduleIdentity}/participants_${participantFingerprint}`,
+  )
+  return parseScheduleId(`schedule_${fingerprint(scheduleIdentitySeed)}`)
+}
 
 /**
  * Derives a game identity only from stable schedule identity inputs. Placement
@@ -259,6 +301,9 @@ export function deriveStableScheduledGameId(
 }
 
 function assertSupportedInput(input: GenerateRegularSeasonScheduleInput): void {
+  if (!isLeagueId(input.leagueId)) {
+    throw new TypeError('Schedule generation requires a valid LeagueId')
+  }
   if (!isSeasonId(input.seasonId)) {
     throw new TypeError('Schedule generation requires a valid SeasonId')
   }
@@ -300,6 +345,32 @@ function assertSupportedInput(input: GenerateRegularSeasonScheduleInput): void {
   if (classification.unsupported.length > 0) {
     throw new UnsupportedScheduleConstraintsError(classification.unsupported)
   }
+}
+
+function assertStableScheduleIdentityInput(input: StableScheduleIdInput): void {
+  if (!isSeasonId(input.seasonId)) {
+    throw new TypeError('Stable schedule identity requires a valid SeasonId')
+  }
+  if (!isExactMilestoneOneRuleSet(input.ruleSet)) {
+    throw new RangeError(
+      'Stable schedule identity supports only the Milestone 1 regular-season rule set v1',
+    )
+  }
+  if (!supportsTeamCount(input.teams.length, input.ruleSet.teamCountPolicy)) {
+    throw new RangeError(
+      `Team count ${input.teams.length} is not supported by this schedule rule set`,
+    )
+  }
+  const teamIds = input.teams.map(({ id }) => id)
+  if (teamIds.some((teamId) => !isTeamId(teamId))) {
+    throw new TypeError('Stable schedule identity requires valid TeamIds')
+  }
+  if (new Set(teamIds).size !== teamIds.length) {
+    throw new RangeError(
+      'Stable schedule identity requires unique TeamIds',
+    )
+  }
+  normalizeSeed(input.scheduleSeed)
 }
 
 function isExactMilestoneOneRuleSet(ruleSet: ScheduleRuleSet): boolean {

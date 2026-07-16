@@ -83,6 +83,32 @@ It does not contain wins, losses, statistics, payroll, qualification state, or
 financial data. A team's offseason may begin before the league-wide offseason
 event without changing another team's state.
 
+## Initial regular-season composition
+
+The pure application command `createSeasonFoundation` accepts an existing
+validated generated league plus an explicit starting year, regular-season
+starting `LocalDate`, positive game-day spacing, and canonical schedule seed.
+It returns one validated package containing the season, calendar, one active
+team-season record per league team, and the generated league schedule. The
+command performs no I/O, persistence, clock access, UI work, or league-data
+mutation.
+
+The initial calendar contains exactly two events whose dates are known:
+
+- regular-season opening on the supplied start date; and
+- regular-season conclusion on the latest date found in the generated games.
+
+Schedule release and every unsupported future milestone remain absent because
+their dates are not inputs. The conclusion is read from the generated schedule
+rather than reconstructed from a duplicated game-count formula. A derived
+conclusion after the season's stored ending year makes the package inconsistent
+and is rejected.
+
+The aggregate validator in this command is deliberately creation-time-only: it
+requires the pristine deterministic generator output. Later publication,
+postponement, completion, and persistence validation belong to lifecycle-aware
+validators rather than this initial-package contract.
+
 ## Rule sets and opponent requirements
 
 The generic `ScheduleRuleSet` identifies its rule-set ID, version, stage,
@@ -135,6 +161,16 @@ scheduling operation with a new seed label cannot consume a shared random
 stream and shift existing identity derivation. Equal validated inputs and seed
 deep-compare equal; a different seed may reorder the placed games but cannot
 change the opponent requirement totals.
+
+Initial-package identities use a separate versioned namespace. `SeasonId`
+depends on league identity and starting year. `SeasonCalendarId` depends only
+on `SeasonId`; each `TeamSeasonId` depends only on `SeasonId` and `TeamId`; and
+each singleton boundary `CalendarEventId` depends only on `SeasonId` and event
+kind. Schedule seed and event dates are deliberately excluded from those
+identities. `ScheduleId` remains owned by the schedule generator and depends on
+the season, canonical participants, canonical schedule seed, and rule-set
+identity/version. `LeagueSchedule` also carries its owning `LeagueId` as an
+explicit cross-object reference.
 
 ## Constraints, optimization, and diagnostics
 

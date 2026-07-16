@@ -1,6 +1,7 @@
 import type {
   GameDayId,
   GameId,
+  LeagueId,
   ScheduleId,
   ScheduleRuleSetId,
   SeasonId,
@@ -334,6 +335,7 @@ function assertNonNegativeSafeInteger(value: number, label: string): void {
 
 export interface LeagueSchedule {
   readonly id: ScheduleId
+  readonly leagueId: LeagueId
   readonly seasonId: SeasonId
   readonly ruleSetId: ScheduleRuleSetId
   readonly generationVersion: number
@@ -519,6 +521,7 @@ export const SCHEDULE_INVARIANT_CODES = [
   'invalid_schedule_id',
   'invalid_schedule_seed',
   'invalid_schedule_status',
+  'wrong_league',
   'wrong_season',
   'wrong_rule_set',
   'wrong_team_count',

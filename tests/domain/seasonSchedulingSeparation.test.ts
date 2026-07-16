@@ -1,5 +1,9 @@
 import { describe, expect, it } from 'vitest'
-import { parseSeasonId, parseTeamId } from '../../src/domain/ids'
+import {
+  parseLeagueId,
+  parseSeasonId,
+  parseTeamId,
+} from '../../src/domain/ids'
 import { parseLocalDate } from '../../src/domain/localDate'
 import { MILESTONE_1_REGULAR_SEASON_RULE_SET } from '../../src/domain/schedule'
 import {
@@ -10,12 +14,14 @@ import { parseTeamSeason } from '../../src/domain/teamSeason'
 import { generateRegularSeasonSchedule } from '../../src/generation/generateSchedule'
 
 const seasonId = parseSeasonId('season_separation_test_01')
+const leagueId = parseLeagueId('league_separation_test_01')
 const teams = Array.from({ length: 8 }, (_, index) => ({
   id: parseTeamId(`team_separation_${String(index + 1).padStart(2, '0')}`),
 }))
 
 function generateSchedule() {
   return generateRegularSeasonSchedule({
+    leagueId,
     seasonId,
     teams,
     scheduleSeed: 'calendar-separation-seed',
@@ -42,6 +48,7 @@ describe('season, calendar, and schedule separation', () => {
       completionStatus: 'pending',
     })
     const calendar = parseSeasonCalendar({
+      id: 'season_calendar_separation_test_01',
       version: 1,
       seasonId,
       events: [tbaEvent],
@@ -57,6 +64,7 @@ describe('season, calendar, and schedule separation', () => {
 
   it('keeps a team offseason start independent from the league offseason event', () => {
     const teamSeason = parseTeamSeason({
+      id: 'team_season_separation_test_01',
       version: 1,
       seasonId,
       teamId: teams[0].id,
@@ -79,6 +87,7 @@ describe('season, calendar, and schedule separation', () => {
       completionStatus: 'pending',
     })
     const calendar = parseSeasonCalendar({
+      id: 'season_calendar_separation_test_01',
       version: 1,
       seasonId,
       events: [leagueOffseasonEvent],

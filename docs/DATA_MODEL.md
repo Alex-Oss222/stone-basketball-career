@@ -114,6 +114,8 @@ type Id<Value extends string> = string & {
 type TeamId = Id<'TeamId'>
 type PlayerId = Id<'PlayerId'>
 type SeasonId = Id<'SeasonId'>
+type SeasonCalendarId = Id<'SeasonCalendarId'>
+type TeamSeasonId = Id<'TeamSeasonId'>
 type ScheduleId = Id<'ScheduleId'>
 type GameId = Id<'GameId'>
 type GameDayId = Id<'GameDayId'>
@@ -127,8 +129,9 @@ Milestone 1 IDs use lowercase ASCII, digits, and underscores and are never displ
 
 - Team IDs are deterministically derived from the league seed fingerprint and a stable ordinal, such as `team_a1b2c3d4_01`.
 - Player IDs are deterministically derived from that fingerprint, team ordinal, and roster ordinal, such as `player_a1b2c3d4_01_01`.
-- A season ID is deterministically derived from the normalized root seed and league-data version, plus a local ordinal when needed.
-- A game ID is deterministically derived from season ID, game day, home team ID, and away team ID.
+- The initial season ID is deterministically derived from the league ID and starting year in a versioned identity namespace; schedule seed and dates are excluded.
+- The initial season-calendar ID depends only on its season ID, and each team-season ID depends only on its season ID and team ID.
+- A generated regular-season game ID depends on the season ID, rule-set identity/version, canonical schedule seed, canonical opponent pair, and semantic cycle slot; it excludes array position and scheduled date.
 - Simulation entity IDs never come from `Math.random`, timestamps, array indexes that may be reordered, or display names.
 - Save IDs are storage identities, not simulation inputs. They may be created with the browser's local `crypto.randomUUID()` outside simulation code; copying or importing a save never changes season, team, player, or game IDs.
 
@@ -300,6 +303,12 @@ the earlier result-oriented scheduled-game sketch with separate versioned
 `OpponentRequirement`, `LeagueSchedule`, `GameDay`, and `ScheduledGame`
 records. The box-score shapes below remain planned simulation outputs; they are
 not part of the scheduling implementation.
+
+The pure application command `createSeasonFoundation` composes an already
+validated generated `League` into the initial `Season`, `SeasonCalendar`, one
+`TeamSeason` per league team, and `LeagueSchedule`. It performs no persistence
+or UI work and returns the package only after component and cross-object
+validation succeeds.
 
 ```ts
 interface PlayerBoxScore {

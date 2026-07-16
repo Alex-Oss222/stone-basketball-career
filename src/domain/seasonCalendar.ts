@@ -1,12 +1,19 @@
 import {
   isCalendarEventId,
+  isSeasonCalendarId,
   isSeasonId,
   isTeamId,
   parseCalendarEventId,
+  parseSeasonCalendarId,
   parseSeasonId,
   parseTeamId,
 } from './ids'
-import type { CalendarEventId, SeasonId, TeamId } from './ids'
+import type {
+  CalendarEventId,
+  SeasonCalendarId,
+  SeasonId,
+  TeamId,
+} from './ids'
 import { isLocalDate, parseLocalDate } from './localDate'
 import type { LocalDate } from './localDate'
 
@@ -87,6 +94,7 @@ export type CalendarEvent = CalendarEventBase &
   )
 
 export interface SeasonCalendar {
+  readonly id: SeasonCalendarId
   readonly version: typeof SEASON_CALENDAR_VERSION
   readonly seasonId: SeasonId
   readonly events: readonly CalendarEvent[]
@@ -168,6 +176,14 @@ export function validateSeasonCalendar(
     return issues
   }
 
+  if (!isSeasonCalendarId(value.id)) {
+    addIssue(
+      issues,
+      'calendar.id.invalid',
+      '$.id',
+      'Season calendar ID is invalid',
+    )
+  }
   if (value.version !== SEASON_CALENDAR_VERSION) {
     addIssue(
       issues,
@@ -237,6 +253,7 @@ export function parseSeasonCalendar(value: unknown): SeasonCalendar {
     parseCalendarEvent(event),
   )
   return Object.freeze({
+    id: parseSeasonCalendarId(source.id),
     version: SEASON_CALENDAR_VERSION,
     seasonId: parseSeasonId(source.seasonId),
     events: Object.freeze(events),

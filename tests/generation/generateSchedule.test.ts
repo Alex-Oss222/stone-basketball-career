@@ -1,6 +1,10 @@
 import { describe, expect, it } from 'vitest'
 
-import { parseSeasonId, parseTeamId } from '../../src/domain/ids'
+import {
+  parseLeagueId,
+  parseSeasonId,
+  parseTeamId,
+} from '../../src/domain/ids'
 import { addDays, parseLocalDate } from '../../src/domain/localDate'
 import {
   MILESTONE_1_REGULAR_SEASON_RULE_SET,
@@ -10,10 +14,12 @@ import {
 import { validateLeagueSchedule } from '../../src/domain/scheduleValidation'
 import {
   UnsupportedScheduleConstraintsError,
+  deriveStableScheduleId,
   deriveStableScheduledGameId,
   generateRegularSeasonSchedule,
 } from '../../src/generation/generateSchedule'
 
+const leagueId = parseLeagueId('league_schedule_test')
 const seasonId = parseSeasonId('season_schedule_test_01')
 const teams = Array.from({ length: 8 }, (_, index) => ({
   id: parseTeamId(`team_schedule_test_${String(index + 1).padStart(2, '0')}`),
@@ -23,6 +29,7 @@ const calendarDaySpacing = 3
 
 function generate(seed = 'schedule-seed-one') {
   return generateRegularSeasonSchedule({
+    leagueId,
     seasonId,
     teams,
     scheduleSeed: seed,
@@ -37,6 +44,7 @@ describe('generateRegularSeasonSchedule', () => {
     const schedule = generate()
     const report = validateLeagueSchedule({
       schedule,
+      leagueId,
       seasonId,
       teams,
       ruleSet: MILESTONE_1_REGULAR_SEASON_RULE_SET,
@@ -49,6 +57,7 @@ describe('generateRegularSeasonSchedule', () => {
       hardViolations: [],
       softWarnings: [],
     })
+    expect(schedule.leagueId).toBe(leagueId)
     expect(schedule.gameDays).toHaveLength(28)
     expect(schedule.games).toHaveLength(112)
     expect(schedule.gameDays.every((gameDay) => gameDay.gameIds.length === 4)).toBe(
@@ -147,6 +156,7 @@ describe('generateRegularSeasonSchedule', () => {
     const first = generate()
     const second = generate()
     const reversedTeams = generateRegularSeasonSchedule({
+      leagueId,
       seasonId,
       teams: [...teams].reverse(),
       scheduleSeed: 'schedule-seed-one',
@@ -166,6 +176,7 @@ describe('generateRegularSeasonSchedule', () => {
       { id: parseTeamId('team_schedule_test_replacement') },
     ]
     const changed = generateRegularSeasonSchedule({
+      leagueId,
       seasonId,
       teams: changedParticipants,
       scheduleSeed: 'schedule-seed-one',
@@ -190,6 +201,25 @@ describe('generateRegularSeasonSchedule', () => {
     expect(schedule.gameDays[0].gameIds[0]).toBe(
       'game_cbd856da2af74dc4d1fdc587',
     )
+  })
+
+  it('derives ScheduleId directly from canonical participants regardless of input order', () => {
+    const direct = deriveStableScheduleId({
+      seasonId,
+      teams,
+      scheduleSeed: 'schedule-seed-one',
+      ruleSet: MILESTONE_1_REGULAR_SEASON_RULE_SET,
+    })
+    const reversed = deriveStableScheduleId({
+      seasonId,
+      teams: [...teams].reverse(),
+      scheduleSeed: 'schedule-seed-one',
+      ruleSet: MILESTONE_1_REGULAR_SEASON_RULE_SET,
+    })
+
+    expect(direct).toBe(generate().id)
+    expect(direct).toBe('schedule_cc00d4b97d634c3d5c739209')
+    expect(reversed).toBe(direct)
   })
 
   it('lets different seeds alter placement without changing opponent totals', () => {
@@ -224,6 +254,7 @@ describe('generateRegularSeasonSchedule', () => {
     )
     const first = generate()
     const moved = generateRegularSeasonSchedule({
+      leagueId,
       seasonId,
       teams,
       scheduleSeed: 'schedule-seed-one',
@@ -287,6 +318,7 @@ describe('generateRegularSeasonSchedule', () => {
   it('rejects a wrong team count and duplicate team IDs', () => {
     expect(() =>
       generateRegularSeasonSchedule({
+        leagueId,
         seasonId,
         teams: teams.slice(0, 7),
         scheduleSeed: 'wrong-count',
@@ -297,6 +329,7 @@ describe('generateRegularSeasonSchedule', () => {
     ).toThrow(/team count/i)
     expect(() =>
       generateRegularSeasonSchedule({
+        leagueId,
         seasonId,
         teams: [...teams.slice(0, 7), teams[0]],
         scheduleSeed: 'duplicate-team',
@@ -307,6 +340,20 @@ describe('generateRegularSeasonSchedule', () => {
     ).toThrow(/unique TeamIds/i)
   })
 
+  it('rejects an invalid league reference', () => {
+    expect(() =>
+      generateRegularSeasonSchedule({
+        leagueId: 'League Invalid' as never,
+        seasonId,
+        teams,
+        scheduleSeed: 'invalid-league',
+        regularSeasonStartDate,
+        calendarDaySpacing,
+        ruleSet: MILESTONE_1_REGULAR_SEASON_RULE_SET,
+      }),
+    ).toThrow(/valid LeagueId/i)
+  })
+
   it('rejects a structurally mutated rule set that spoofs the current ID and version', () => {
     const spoofedRuleSet = {
       ...MILESTONE_1_REGULAR_SEASON_RULE_SET,
@@ -315,6 +362,7 @@ describe('generateRegularSeasonSchedule', () => {
 
     expect(() =>
       generateRegularSeasonSchedule({
+        leagueId,
         seasonId,
         teams,
         scheduleSeed: 'spoofed-rules',
@@ -328,6 +376,7 @@ describe('generateRegularSeasonSchedule', () => {
   it('rejects malformed dates, invalid spacing, and unsupported constraints', () => {
     expect(() =>
       generateRegularSeasonSchedule({
+        leagueId,
         seasonId,
         teams,
         scheduleSeed: 'bad-date',
@@ -338,6 +387,7 @@ describe('generateRegularSeasonSchedule', () => {
     ).toThrow(/valid calendar date/i)
     expect(() =>
       generateRegularSeasonSchedule({
+        leagueId,
         seasonId,
         teams,
         scheduleSeed: 'bad-spacing',
@@ -348,6 +398,7 @@ describe('generateRegularSeasonSchedule', () => {
     ).toThrow(/spacing/i)
     expect(() =>
       generateRegularSeasonSchedule({
+        leagueId,
         seasonId,
         teams,
         scheduleSeed: 'constraint',

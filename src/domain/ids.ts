@@ -14,6 +14,8 @@ export type ScheduleId = StableId<'ScheduleId'>
 export type CalendarEventId = StableId<'CalendarEventId'>
 export type GameDayId = StableId<'GameDayId'>
 export type ScheduleRuleSetId = StableId<'ScheduleRuleSetId'>
+export type SeasonCalendarId = StableId<'SeasonCalendarId'>
+export type TeamSeasonId = StableId<'TeamSeasonId'>
 
 const INVALID_ID_CHARACTER = /[^a-z0-9_]/
 
@@ -57,6 +59,14 @@ export function isScheduleRuleSetId(value: unknown): value is ScheduleRuleSetId 
   return isStableId(value)
 }
 
+export function isSeasonCalendarId(value: unknown): value is SeasonCalendarId {
+  return isStableId(value)
+}
+
+export function isTeamSeasonId(value: unknown): value is TeamSeasonId {
+  return isStableId(value)
+}
+
 export function parseLeagueId(value: unknown): LeagueId {
   return parseStableId(value, 'LeagueId')
 }
@@ -95,6 +105,14 @@ export function parseGameDayId(value: unknown): GameDayId {
 
 export function parseScheduleRuleSetId(value: unknown): ScheduleRuleSetId {
   return parseStableId(value, 'ScheduleRuleSetId')
+}
+
+export function parseSeasonCalendarId(value: unknown): SeasonCalendarId {
+  return parseStableId(value, 'SeasonCalendarId')
+}
+
+export function parseTeamSeasonId(value: unknown): TeamSeasonId {
+  return parseStableId(value, 'TeamSeasonId')
 }
 
 function isStableId(value: unknown): value is string {

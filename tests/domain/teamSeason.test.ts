@@ -7,6 +7,7 @@ import {
 } from '../../src/domain/teamSeason'
 
 const ACTIVE_TEAM_SEASON = {
+  id: 'team_season_stone_01',
   version: 1,
   seasonId: 'season_stone_01',
   teamId: 'team_stone_01',
@@ -39,6 +40,7 @@ describe('TeamSeason', () => {
       postseasonSeed: 1,
     })
 
+    expect(active.id).toBe('team_season_stone_01')
     expect(active.competitiveStatus).toBe('active')
     expect(eliminated.eliminationDate).toBe('2027-04-20')
     expect(completed.competitiveStatus).toBe('season_complete')
@@ -54,6 +56,7 @@ describe('TeamSeason', () => {
     })
     const second = parseTeamSeason({
       ...ACTIVE_TEAM_SEASON,
+      id: 'team_season_stone_02',
       teamId: 'team_stone_02',
       competitiveStatus: 'season_complete',
       teamOffseasonStartDate: '2027-06-20',
@@ -64,6 +67,7 @@ describe('TeamSeason', () => {
   })
 
   it.each([
+    ['id', 'Team Season Bad'],
     ['version', 0],
     ['version', 2],
     ['version', 1.5],

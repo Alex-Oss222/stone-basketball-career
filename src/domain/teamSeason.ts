@@ -1,10 +1,12 @@
 import {
   isSeasonId,
   isTeamId,
+  isTeamSeasonId,
   parseSeasonId,
   parseTeamId,
+  parseTeamSeasonId,
 } from './ids'
-import type { SeasonId, TeamId } from './ids'
+import type { SeasonId, TeamId, TeamSeasonId } from './ids'
 import {
   compareLocalDates,
   isLocalDate,
@@ -23,6 +25,7 @@ export type TeamCompetitiveStatus =
   (typeof TEAM_COMPETITIVE_STATUSES)[number]
 
 export interface TeamSeason {
+  readonly id: TeamSeasonId
   readonly version: typeof TEAM_SEASON_VERSION
   readonly seasonId: SeasonId
   readonly teamId: TeamId
@@ -67,6 +70,14 @@ export function validateTeamSeason(
     return issues
   }
 
+  if (!isTeamSeasonId(value.id)) {
+    addIssue(
+      issues,
+      'team_season.id.invalid',
+      '$.id',
+      'Team-season ID is invalid',
+    )
+  }
   if (value.version !== TEAM_SEASON_VERSION) {
     addIssue(
       issues,
@@ -155,6 +166,7 @@ export function parseTeamSeason(value: unknown): TeamSeason {
 
   const source = value as Record<string, unknown>
   return Object.freeze({
+    id: parseTeamSeasonId(source.id),
     version: TEAM_SEASON_VERSION,
     seasonId: parseSeasonId(source.seasonId),
     teamId: parseTeamId(source.teamId),
