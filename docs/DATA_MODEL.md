@@ -36,7 +36,8 @@ src/
     generateRotation.ts       # deterministic CPU defaults
   domain/
     ids.ts                    # branded ID types and parsers
-    league.ts                 # team/player/rating types
+    ratings.ts                # canonical stored ratings and derived grades
+    league.ts                 # team/player entity types
     rotation.ts               # depth-chart types and validation
     schedule.ts               # schedule and game-status types
     boxScore.ts               # game result and stat-line types
@@ -158,22 +159,27 @@ interface Team {
   readonly mark: TeamMark
 }
 
-interface PlayerRatings {
-  readonly finishing: number
-  readonly midrange: number
-  readonly threePoint: number
-  readonly freeThrow: number
-  readonly passing: number
-  readonly ballHandling: number
-  readonly offensiveRebounding: number
-  readonly defensiveRebounding: number
-  readonly perimeterDefense: number
-  readonly interiorDefense: number
-  readonly stealing: number
-  readonly shotBlocking: number
-  readonly foulDiscipline: number
-  readonly stamina: number
-}
+const RATING_KEYS = [
+  'insideScoring',
+  'midRangeShooting',
+  'threePointShooting',
+  'freeThrowShooting',
+  'passing',
+  'ballHandling',
+  'offensiveRebounding',
+  'defensiveRebounding',
+  'perimeterDefense',
+  'interiorDefense',
+  'stealing',
+  'blocking',
+  'speed',
+  'strength',
+  'endurance',
+  'basketballIQ',
+] as const
+
+type RatingKey = (typeof RATING_KEYS)[number]
+type PlayerRatings = Readonly<Record<RatingKey, number>>
 
 interface PlayerTendencies {
   readonly usage: number
@@ -193,6 +199,7 @@ interface Player {
   readonly jerseyNumber: number
   readonly primaryPosition: Position
   readonly secondaryPosition: Position | null
+  readonly ratingGenerationVersion: 1
   readonly ratings: PlayerRatings
   readonly tendencies: PlayerTendencies
 }
@@ -214,14 +221,14 @@ interface GeneratedLeague {
 }
 ```
 
-Generation uses a dedicated `derive(rootSeed, "league/v1")` stream so schedule or game changes cannot shift initial league data. IDs come from stable ordinals rather than random-call position. The generator:
+Generation uses a dedicated `derive(rootSeed, "league/v1")` stream so schedule or game changes cannot shift initial league data. IDs come from stable ordinals rather than random-call position. Each stored player rating uses its own fresh random source derived from the full league seed and the label `player-rating/v{ratingGenerationVersion}/{playerId}/{ratingKey}`. Rating fields never consume the shared league stream, so adding another canonical rating cannot shift any existing rating value. The generator:
 
 1. creates eight unique fictional city/name combinations and non-conflicting color palettes;
 2. creates a short initials mark for each team;
 3. creates 12 players per team with a position-balanced roster;
 4. creates unique fictional names from bundled components;
 5. assigns integer ages from 19 through 36;
-6. generates ratings and tendencies within their validated ranges;
+6. generates all 16 canonical ratings through versioned field-specific streams and generates tendencies within their validated ranges;
 7. assigns unique jersey numbers within each team; and
 8. creates five starters and a valid 240-minute default rotation.
 
@@ -229,17 +236,9 @@ Team generation must avoid real professional team identities. The component list
 
 ### Rating and tendency ranges
 
-Every rating is a finite integer from 25 through 99 inclusive:
+Every stored rating is a finite integer from 0 through 100 inclusive. A valid `PlayerRatings` object has exactly the 16 keys in `RATING_KEYS`; missing keys, additional keys, non-numbers, `NaN`, infinity, decimals, and out-of-range values are invalid and are never coerced or clamped.
 
-| Band | Meaning |
-| --- | --- |
-| 90–99 | exceptional; rare even as a single skill |
-| 80–89 | high-end strength |
-| 70–79 | clear strength |
-| 60–69 | playable/average |
-| 50–59 | below average |
-| 40–49 | meaningful weakness |
-| 25–39 | severe weakness |
+Letter grades are derived rather than stored: A+ begins at 95, then each boundary descends in five-point steps through D- at 40; values below 40 are F. Derived category values may contain decimals, but grade inputs must remain finite and inside 0 through 100.
 
 No persisted “overall” rating drives simulation. If displayed, overall is a versioned, position-weighted selector derived from component ratings. This keeps simulation decisions traceable to individual skills.
 
@@ -251,6 +250,7 @@ Generated-league validation requires:
 - exactly 96 unique players;
 - exactly 12 players owned by each team;
 - every age to be an integer from 19 through 36;
+- every player to carry the supported rating-generation version and exactly the canonical ratings;
 - unique jersey numbers within a team;
 - every position and numeric field in range;
 - every team mark to contain only its saved text initials;
@@ -503,13 +503,14 @@ Import never changes or deletes the currently loaded revision or a named manual 
 
 ## Versioning and migrations
 
-`saveVersion`, `simulationVersion`, `rngVersion`, `leagueDataVersion`, and `leagueGeneratorVersion` serve different purposes:
+`saveVersion`, `simulationVersion`, `rngVersion`, `leagueDataVersion`, `leagueGeneratorVersion`, and `ratingGenerationVersion` serve different purposes:
 
 - `saveVersion` describes envelope and payload shape.
 - `simulationVersion` describes game-resolution behavior.
 - `rngVersion` identifies exact seed and random-number behavior.
 - `leagueDataVersion` identifies the bundled fictional generation components.
 - `leagueGeneratorVersion` identifies the exact initial team/player generation behavior.
+- `ratingGenerationVersion` identifies the stored-rating formula, position biases, field-seed label, and rating RNG behavior used for each player.
 
 Future migrations are named, pure functions such as `migrateV1ToV2(input: SaveEnvelopeV1): SaveEnvelopeV2`. They:
 

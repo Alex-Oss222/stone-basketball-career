@@ -20,5 +20,11 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/domain/**/*.ts", "src/random/**/*.ts", "tests/**/*.ts"]
+  "include": [
+    "src/data/**/*.ts",
+    "src/domain/**/*.ts",
+    "src/generation/**/*.ts",
+    "src/random/**/*.ts",
+    "tests/**/*.ts"
+  ]
 }

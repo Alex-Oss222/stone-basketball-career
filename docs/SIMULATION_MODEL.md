@@ -167,7 +167,7 @@ The turnover check occurs before shot resolution. If no turnover occurs, a bound
 
 Choose shooter and one of three shot zones: rim, midrange, or three-point. Zone weights begin with player tendencies and are adjusted for:
 
-- zone scoring rating;
+- the canonical zone rating (`insideScoring`, `midRangeShooting`, or `threePointShooting`);
 - position and role;
 - creator passing quality;
 - lineup spacing;
@@ -200,11 +200,11 @@ make probability =
 
 Proposed zone bases are 0.56 at the rim, 0.41 from midrange, and 0.34 from three. Skill adjustments begin near `(rating - 60) × 0.004`; defense uses a smaller opposing coefficient. Final probabilities are clamped to plausible fictional-league bounds per zone. These constants are tuning inputs under `simulationVersion: 1`, not hidden player data.
 
-On a missed field goal, block attribution is checked against the matched/help defender's shot-blocking rating and the shot zone. A block is an attribution on an already missed attempt, not a second independent way to subtract a made basket.
+On a missed field goal, block attribution is checked against the matched/help defender's `blocking` rating and the shot zone. A block is an attribution on an already missed attempt, not a second independent way to subtract a made basket.
 
 ### 7. Resolve free throws
 
-Free-throw probability uses the shooter's free-throw rating and fatigue and is clamped to `[0.35, 0.97]`. Each attempt consumes one random outcome.
+Free-throw probability uses the shooter's `freeThrowShooting` rating and fatigue and is clamped to `[0.35, 0.97]`. Each attempt consumes one random outcome.
 
 - Made free throws add one point to the shooter and team.
 - A miss on the final free throw is reboundable.
@@ -235,9 +235,9 @@ Defense is represented through observable player skills rather than a single hid
 - perimeter defense reduces three-point and perimeter-creation quality;
 - interior defense reduces rim quality and increases difficult midrange outcomes;
 - stealing raises live-ball turnover and steal attribution probability;
-- shot blocking raises block attribution on eligible misses;
+- `blocking` raises block attribution on eligible misses;
 - defensive rebounding controls possession completion; and
-- foul discipline lowers shooting and non-shooting foul likelihood.
+- no separate foul-discipline rating is stored; foul likelihood remains a versioned simulation rule rather than player data.
 
 Matchups favor natural position coverage. Help defense is a weighted contribution from the best relevant non-matched defenders, reduced when the offensive lineup has strong three-point spacing. This creates a tradeoff between rim help and leaving shooters without introducing chemistry or coaching systems.
 
@@ -262,7 +262,7 @@ Some turnovers are steals; others are violations, bad passes without a defender 
 
 The foul model tracks personal fouls and defensive team fouls by period.
 
-- Shooting-foul chance depends on shot zone, defender foul discipline, shooter draw-foul tendency, and fatigue.
+- Shooting-foul chance depends on shot zone, shooter draw-foul tendency, fatigue, and a versioned simulation rule; no stored foul-discipline rating is used.
 - Non-shooting defensive fouls below the bonus retain possession.
 - Beginning with the fifth defensive team foul in a regulation quarter, a non-shooting defensive foul produces two free throws.
 - Offensive fouls are turnovers and do not count toward the defensive bonus.
@@ -296,13 +296,13 @@ Overtime has no editable minute allocation. It begins with the best eligible lin
 Fatigue uses integer energy units to avoid drift:
 
 - every player starts at 10,000;
-- active players lose a deterministic amount based on elapsed seconds and stamina;
+- active players lose a deterministic amount based on elapsed seconds and `endurance`;
 - bench players recover a deterministic amount over the same elapsed seconds;
 - period breaks add a small fixed recovery, with a larger halftime recovery;
 - energy is clamped to `[0, 10_000]`; and
 - effective-rating penalties begin below 7,500 and are capped.
 
-A proposed active drain is `round(seconds × (140 - stamina) / 80)`; a proposed bench recovery is `round(seconds × 1.25)`. The effective-rating penalty is at most 12 points. Tuning tests should verify that normal rotations matter without turning late games into implausible collapse.
+A proposed active drain is `round(seconds × (140 - endurance) / 80)`; a proposed bench recovery is `round(seconds × 1.25)`. The effective-rating penalty is at most 12 points. Tuning tests should verify that normal rotations matter without turning late games into implausible collapse.
 
 Fatigue resets before each game in Milestone 1. There is no cross-game condition or injury model.
 

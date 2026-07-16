@@ -1,5 +1,8 @@
 export const STORED_RATING_MIN = 0
 export const STORED_RATING_MAX = 100
+export const RATING_GENERATION_VERSION = 1 as const
+
+export type RatingGenerationVersion = typeof RATING_GENERATION_VERSION
 
 export const RATING_KEYS = [
   'insideScoring',
@@ -41,6 +44,10 @@ export type Grade =
 
 const RATING_KEY_SET: ReadonlySet<string> = new Set(RATING_KEYS)
 
+export function isRatingKey(value: unknown): value is RatingKey {
+  return typeof value === 'string' && RATING_KEY_SET.has(value)
+}
+
 export function isStoredRating(value: unknown): value is number {
   return (
     typeof value === 'number' &&
@@ -73,7 +80,7 @@ export function parsePlayerRatings(value: unknown): PlayerRatings {
   const ownKeys = Reflect.ownKeys(value)
   if (
     ownKeys.length !== RATING_KEYS.length ||
-    ownKeys.some((key) => typeof key !== 'string' || !RATING_KEY_SET.has(key))
+    ownKeys.some((key) => !isRatingKey(key))
   ) {
     throw new TypeError('Player ratings must contain exactly the stored rating keys')
   }

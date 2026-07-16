@@ -24,7 +24,7 @@ A new season deterministically generates exactly eight fictional team records fr
 
 Team IDs are derived from the league seed fingerprint and stable team ordinal, not from the display name. Milestone 1 uses text initials or simple CSS-based marks made from the saved abbreviation and colors. Finished logo assets are not required.
 
-Each generated team receives exactly 12 generated fictional players, for 96 league players. Initial player IDs, names, ages, positions, team assignments, ratings, and tendencies are produced deterministically from a dedicated league-generation RNG stream and persisted in full. Reloading reads the saved snapshot; it does not regenerate the roster. Names are constructed from bundled fictional components and do not use real-world or scraped data.
+Each generated team receives exactly 12 generated fictional players, for 96 league players. Initial player IDs, names, ages, positions, team assignments, and tendencies are produced deterministically from a dedicated league-generation RNG stream. Every stored rating instead uses an independent field-specific stream derived from the league seed, player ID, rating-generation version, and canonical rating key, so adding a future rating cannot shift existing values. All generated player data is persisted in full. Reloading reads the saved snapshot; it does not regenerate the roster. Names are constructed from bundled fictional components and do not use real-world or scraped data.
 
 ### Proposed league rules
 

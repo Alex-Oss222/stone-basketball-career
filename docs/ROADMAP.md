@@ -87,7 +87,7 @@ Work:
 
 - add branded stable IDs and narrow runtime parsing helpers;
 - add team, player, ratings, tendencies, rotation, schedule, box-score, and season types;
-- implement deterministic generation of eight fictional placeholder teams and exactly 96 fictional players from a dedicated league seed stream;
+- implement deterministic generation of eight fictional placeholder teams and exactly 96 fictional players from a dedicated league seed, with an independent versioned field stream for every stored player rating;
 - generate and persist player names, IDs, ratings, ages, positions, team assignments, and tendencies;
 - generate valid deterministic CPU starters and 240-minute rotations;
 - implement league-data and rotation validators; and

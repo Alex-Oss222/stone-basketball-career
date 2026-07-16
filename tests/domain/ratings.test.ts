@@ -1,6 +1,8 @@
 import { describe, expect, expectTypeOf, it } from 'vitest'
 import {
+  RATING_GENERATION_VERSION,
   RATING_KEYS,
+  isRatingKey,
   isStoredRating,
   parsePlayerRatings,
   parseStoredRating,
@@ -53,6 +55,12 @@ describe('stored rating keys and types', () => {
     ])
     expect(RATING_KEYS).toHaveLength(16)
     expect(new Set(RATING_KEYS).size).toBe(16)
+    expect(RATING_KEYS.every(isRatingKey)).toBe(true)
+    expect(isRatingKey('finishing')).toBe(false)
+  })
+
+  it('pins the initial rating generation version', () => {
+    expect(RATING_GENERATION_VERSION).toBe(1)
   })
 
   it('defines PlayerRatings as a closed readonly record', () => {
