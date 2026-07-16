@@ -1,8 +1,18 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import type { FormEvent } from 'react'
 import type { PlayerId, TeamId } from './domain/ids'
 import type { League, Player, Team } from './domain/league'
 import { generateLeague } from './generation/generateLeague'
+import {
+  InvalidLeagueSnapshotError,
+  createLeagueSnapshot,
+} from './persistence/leagueSnapshot'
+import type { LeagueSnapshotV1 } from './persistence/leagueSnapshot'
+import {
+  LeagueSnapshotConflictError,
+  LeagueSnapshotQuotaError,
+  createIndexedDbLeagueSnapshotRepository,
+} from './persistence/indexedDbLeagueSnapshotStorage'
 import { normalizeSeed } from './random/seed'
 import {
   createRatingDisplayRows,
@@ -13,16 +23,36 @@ import {
 import './App.css'
 
 const DEFAULT_LEAGUE_SEED = 'stone-league-1'
+const leagueSnapshotRepository = createIndexedDbLeagueSnapshotRepository()
+
+let initialRestorePromise: Promise<LeagueSnapshotV1 | null> | null = null
+
+type BootState = 'restoring' | 'ready' | 'invalid-save' | 'storage-error'
+type PendingOperation = 'idle' | 'creating' | 'selecting-team' | 'clearing'
+
+function restoreInitialSnapshot(): Promise<LeagueSnapshotV1 | null> {
+  initialRestorePromise ??= leagueSnapshotRepository.restore().finally(() => {
+    initialRestorePromise = null
+  })
+  return initialRestorePromise
+}
 
 function App() {
   const [seed, setSeed] = useState(DEFAULT_LEAGUE_SEED)
-  const [league, setLeague] = useState<League | null>(null)
-  const [selectedTeamId, setSelectedTeamId] = useState<TeamId | null>(null)
+  const [snapshot, setSnapshot] = useState<LeagueSnapshotV1 | null>(null)
+  const [viewedTeamId, setViewedTeamId] = useState<TeamId | null>(null)
   const [selectedPlayerId, setSelectedPlayerId] = useState<PlayerId | null>(null)
   const [seedError, setSeedError] = useState<string | null>(null)
+  const [bootState, setBootState] = useState<BootState>('restoring')
+  const [restoreError, setRestoreError] = useState<string | null>(null)
+  const [persistenceError, setPersistenceError] = useState<string | null>(null)
+  const [pendingOperation, setPendingOperation] =
+    useState<PendingOperation>('idle')
+
+  const league = snapshot?.league ?? null
 
   const selectedTeam =
-    league?.teams.find((team) => team.id === selectedTeamId) ?? null
+    league?.teams.find((team) => team.id === viewedTeamId) ?? null
   const roster =
     league !== null && selectedTeam !== null
       ? getTeamRoster(league, selectedTeam.id)
@@ -30,23 +60,116 @@ function App() {
   const selectedPlayer =
     roster.find((player) => player.id === selectedPlayerId) ?? roster[0] ?? null
 
-  function handleGenerate(event: FormEvent<HTMLFormElement>): void {
+  const restoreFromStorage = useCallback(
+    async (
+      useInitialRestore: boolean,
+      isCancelled: () => boolean = () => false,
+    ): Promise<void> => {
+      setBootState('restoring')
+      setRestoreError(null)
+      setPersistenceError(null)
+
+      try {
+        const restoredSnapshot = await (useInitialRestore
+          ? restoreInitialSnapshot()
+          : leagueSnapshotRepository.restore())
+
+        if (isCancelled()) return
+
+        if (restoredSnapshot === null) {
+          setSnapshot(null)
+          setSeed(DEFAULT_LEAGUE_SEED)
+          setViewedTeamId(null)
+          setSelectedPlayerId(null)
+          setBootState('ready')
+          return
+        }
+
+        setSnapshot(restoredSnapshot)
+        setSeed(restoredSnapshot.rootSeed)
+        setViewedTeamId(restoredSnapshot.managedTeamId)
+        setSelectedPlayerId(
+          restoredSnapshot.managedTeamId === null
+            ? null
+            : getTeamRoster(
+                restoredSnapshot.league,
+                restoredSnapshot.managedTeamId,
+              )[0]?.id ?? null,
+        )
+        setBootState('ready')
+      } catch (error) {
+        if (isCancelled()) return
+
+        setSnapshot(null)
+        setViewedTeamId(null)
+        setSelectedPlayerId(null)
+
+        if (hasInvalidSnapshotCause(error)) {
+          setRestoreError(
+            'The saved league is invalid or unsupported. It was left unchanged.',
+          )
+          setBootState('invalid-save')
+        } else {
+          setRestoreError(
+            'Local browser storage could not be read. Your saved league was left unchanged.',
+          )
+          setBootState('storage-error')
+        }
+      }
+    },
+    [],
+  )
+
+  useEffect(() => {
+    let cancelled = false
+    void restoreFromStorage(true, () => cancelled)
+
+    return () => {
+      cancelled = true
+    }
+  }, [restoreFromStorage])
+
+  async function handleGenerate(
+    event: FormEvent<HTMLFormElement>,
+  ): Promise<void> {
     event.preventDefault()
 
+    if (pendingOperation !== 'idle') return
+
+    let nextSnapshot: LeagueSnapshotV1
+    let normalizedSeed: string
+
     try {
-      const normalizedSeed = normalizeSeed(seed)
+      normalizedSeed = normalizeSeed(seed)
       const generatedLeague = generateLeague(normalizedSeed)
-      setSeed(normalizedSeed)
-      setLeague(generatedLeague)
-      setSelectedTeamId(null)
-      setSelectedPlayerId(null)
-      setSeedError(null)
+      nextSnapshot = createLeagueSnapshot(
+        normalizedSeed,
+        generatedLeague,
+        null,
+      )
     } catch (error) {
       setSeedError(
         error instanceof Error
           ? error.message
           : 'The league could not be generated from that seed.',
       )
+      return
+    }
+
+    setPendingOperation('creating')
+    setPersistenceError(null)
+
+    try {
+      await leagueSnapshotRepository.create(nextSnapshot)
+      setSeed(normalizedSeed)
+      setSnapshot(nextSnapshot)
+      setViewedTeamId(null)
+      setSelectedPlayerId(null)
+      setSeedError(null)
+    } catch (error) {
+      setPersistenceError(storageWriteMessage(error, 'created'))
+    } finally {
+      setPendingOperation('idle')
     }
   }
 
@@ -55,18 +178,105 @@ function App() {
     setSeedError(null)
   }
 
-  function handleTeamSelection(team: Team): void {
-    if (league === null) return
+  async function handleTeamSelection(team: Team): Promise<void> {
+    if (snapshot === null || pendingOperation !== 'idle') return
 
-    const teamRoster = getTeamRoster(league, team.id)
-    setSelectedTeamId(team.id)
-    setSelectedPlayerId(teamRoster[0]?.id ?? null)
+    const teamRoster = getTeamRoster(snapshot.league, team.id)
+
+    if (snapshot.managedTeamId === team.id) {
+      setViewedTeamId(team.id)
+      setSelectedPlayerId(teamRoster[0]?.id ?? null)
+      setPersistenceError(null)
+      return
+    }
+
+    const nextSnapshot = createLeagueSnapshot(
+      snapshot.rootSeed,
+      snapshot.league,
+      team.id,
+    )
+
+    setPendingOperation('selecting-team')
+    setPersistenceError(null)
+
+    try {
+      await leagueSnapshotRepository.update(nextSnapshot, snapshot.league.id)
+      setSnapshot(nextSnapshot)
+      setViewedTeamId(team.id)
+      setSelectedPlayerId(teamRoster[0]?.id ?? null)
+    } catch (error) {
+      setPersistenceError(storageWriteMessage(error, 'updated'))
+    } finally {
+      setPendingOperation('idle')
+    }
   }
 
   function handleBackToTeams(): void {
-    setSelectedTeamId(null)
+    setViewedTeamId(null)
     setSelectedPlayerId(null)
+    setPersistenceError(null)
   }
+
+  async function handleNewLeague(): Promise<void> {
+    if (snapshot === null || pendingOperation !== 'idle') return
+
+    const confirmed = window.confirm(
+      'Start a new league? The active league saved in this browser will be removed.',
+    )
+    if (!confirmed) return
+
+    setPendingOperation('clearing')
+    setPersistenceError(null)
+
+    try {
+      await leagueSnapshotRepository.clear(snapshot.league.id)
+      resetToLeagueCreation()
+    } catch (error) {
+      setPersistenceError(storageWriteMessage(error, 'removed'))
+    } finally {
+      setPendingOperation('idle')
+    }
+  }
+
+  async function handleDiscardInvalidSave(): Promise<void> {
+    if (pendingOperation !== 'idle') return
+
+    const confirmed = window.confirm(
+      'Discard the unreadable saved league and start a new league? This cannot be undone.',
+    )
+    if (!confirmed) return
+
+    setPendingOperation('clearing')
+    setPersistenceError(null)
+
+    try {
+      await leagueSnapshotRepository.clear()
+      resetToLeagueCreation()
+    } catch (error) {
+      setPersistenceError(storageWriteMessage(error, 'removed'))
+    } finally {
+      setPendingOperation('idle')
+    }
+  }
+
+  function resetToLeagueCreation(): void {
+    setSnapshot(null)
+    setSeed(DEFAULT_LEAGUE_SEED)
+    setViewedTeamId(null)
+    setSelectedPlayerId(null)
+    setSeedError(null)
+    setRestoreError(null)
+    setPersistenceError(null)
+    setBootState('ready')
+  }
+
+  const isBusy = bootState === 'restoring' || pendingOperation !== 'idle'
+  const saveStatus = describeSaveStatus(
+    bootState,
+    pendingOperation,
+    snapshot,
+    persistenceError,
+  )
 
   return (
     <div className="app-shell">
@@ -80,14 +290,58 @@ function App() {
             <span className="brand-subtitle">Fictional league workshop</span>
           </span>
         </div>
-        <span className="mode-badge">Read-only preview</span>
+        <div className="header-actions">
+          <span className="mode-badge">Read-only preview</span>
+          {snapshot !== null && (
+            <button
+              type="button"
+              className="new-league-button"
+              onClick={() => void handleNewLeague()}
+              disabled={isBusy}
+            >
+              New league
+            </button>
+          )}
+        </div>
       </header>
 
-      <main>
-        {league === null ? (
+      <main aria-busy={isBusy}>
+        {persistenceError !== null && bootState === 'ready' && (
+          <div className="app-error" role="alert">
+            {persistenceError}
+          </div>
+        )}
+
+        {bootState === 'restoring' ? (
+          <RestoreLoadingScreen />
+        ) : bootState === 'invalid-save' ? (
+          <RestoreRecoveryScreen
+            kind="invalid-save"
+            message={
+              restoreError ??
+              'The saved league is invalid or unsupported. It was left unchanged.'
+            }
+            actionError={persistenceError}
+            isBusy={isBusy}
+            onTryAgain={() => void restoreFromStorage(false)}
+            onDiscard={() => void handleDiscardInvalidSave()}
+          />
+        ) : bootState === 'storage-error' ? (
+          <RestoreRecoveryScreen
+            kind="storage-error"
+            message={
+              restoreError ??
+              'Local browser storage could not be read. Your saved league was left unchanged.'
+            }
+            actionError={persistenceError}
+            isBusy={isBusy}
+            onTryAgain={() => void restoreFromStorage(false)}
+          />
+        ) : league === null ? (
           <LeagueCreationScreen
             seed={seed}
             seedError={seedError}
+            isBusy={isBusy}
             onSeedChange={handleSeedChange}
             onSubmit={handleGenerate}
           />
@@ -95,6 +349,7 @@ function App() {
           <TeamSelectionScreen
             league={league}
             seed={seed}
+            isBusy={isBusy}
             onSelectTeam={handleTeamSelection}
           />
         ) : (
@@ -102,22 +357,111 @@ function App() {
             team={selectedTeam}
             roster={roster}
             selectedPlayer={selectedPlayer}
+            isBusy={isBusy}
             onSelectPlayer={setSelectedPlayerId}
             onBack={handleBackToTeams}
           />
         )}
       </main>
 
-      <footer className="site-footer">
-        Generated locally from a deterministic seed. Nothing is saved yet.
+      <footer
+        className="site-footer"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        {saveStatus}
       </footer>
     </div>
+  )
+}
+
+function RestoreLoadingScreen() {
+  return (
+    <section className="state-layout" aria-labelledby="restore-loading-heading">
+      <div className="state-panel">
+        <p className="eyebrow">Local league</p>
+        <h1 id="restore-loading-heading">Opening your league.</h1>
+        <p className="lede">Checking this browser for a saved league…</p>
+      </div>
+    </section>
+  )
+}
+
+interface RestoreRecoveryScreenProps {
+  readonly kind: 'invalid-save' | 'storage-error'
+  readonly message: string
+  readonly actionError: string | null
+  readonly isBusy: boolean
+  readonly onTryAgain: () => void
+  readonly onDiscard?: () => void
+}
+
+function RestoreRecoveryScreen({
+  kind,
+  message,
+  actionError,
+  isBusy,
+  onTryAgain,
+  onDiscard,
+}: RestoreRecoveryScreenProps) {
+  const headingRef = useFocusOnMount()
+  const isInvalidSave = kind === 'invalid-save'
+
+  return (
+    <section
+      className="state-layout"
+      aria-labelledby="restore-recovery-heading"
+      aria-busy={isBusy}
+    >
+      <div className="state-panel recovery-panel">
+        <p className="eyebrow">Local save needs attention</p>
+        <h1 id="restore-recovery-heading" ref={headingRef} tabIndex={-1}>
+          {isInvalidSave
+            ? 'We could not open your saved league.'
+            : 'Local storage is not available.'}
+        </h1>
+        <p className="lede">{message}</p>
+        {actionError !== null && (
+          <p className="recovery-error" role="alert">
+            {actionError}
+          </p>
+        )}
+        <div className="recovery-actions">
+          <button
+            type="button"
+            className="primary-button"
+            onClick={onTryAgain}
+            disabled={isBusy}
+          >
+            Try again
+          </button>
+          {isInvalidSave && onDiscard !== undefined && (
+            <button
+              type="button"
+              className="secondary-button danger-button"
+              onClick={onDiscard}
+              disabled={isBusy}
+            >
+              {isBusy ? 'Removing saved league…' : 'Discard save and start new league'}
+            </button>
+          )}
+        </div>
+        {isInvalidSave && (
+          <p className="recovery-note">
+            The unreadable save will remain untouched unless you explicitly
+            discard it.
+          </p>
+        )}
+      </div>
+    </section>
   )
 }
 
 interface LeagueCreationScreenProps {
   readonly seed: string
   readonly seedError: string | null
+  readonly isBusy: boolean
   readonly onSeedChange: (seed: string) => void
   readonly onSubmit: (event: FormEvent<HTMLFormElement>) => void
 }
@@ -125,22 +469,31 @@ interface LeagueCreationScreenProps {
 function LeagueCreationScreen({
   seed,
   seedError,
+  isBusy,
   onSeedChange,
   onSubmit,
 }: LeagueCreationScreenProps) {
+  const headingRef = useFocusOnMount()
   const seedDescriptionId = seedError === null ? 'seed-help' : 'seed-help seed-error'
 
   return (
     <section className="creation-layout" aria-labelledby="creation-heading">
       <div className="creation-copy">
         <p className="eyebrow">Milestone 1 · League lab</p>
-        <h1 id="creation-heading">Build a league worth scouting.</h1>
+        <h1 id="creation-heading" ref={headingRef} tabIndex={-1}>
+          Build a league worth scouting.
+        </h1>
         <p className="lede">
           One seed creates eight fictional clubs and 96 players. Reuse the seed
           whenever you want the exact same league again.
         </p>
 
-        <form className="seed-form" onSubmit={onSubmit} noValidate>
+        <form
+          className="seed-form"
+          onSubmit={onSubmit}
+          aria-busy={isBusy}
+          noValidate
+        >
           <label htmlFor="league-seed">League seed</label>
           <div className="seed-controls">
             <input
@@ -153,9 +506,10 @@ function LeagueCreationScreen({
               aria-invalid={seedError !== null}
               autoComplete="off"
               spellCheck={false}
+              disabled={isBusy}
             />
-            <button type="submit" className="primary-button">
-              Generate league
+            <button type="submit" className="primary-button" disabled={isBusy}>
+              {isBusy ? 'Saving league…' : 'Generate league'}
             </button>
           </div>
           <p id="seed-help" className="field-help">
@@ -196,18 +550,24 @@ function LeagueCreationScreen({
 interface TeamSelectionScreenProps {
   readonly league: League
   readonly seed: string
+  readonly isBusy: boolean
   readonly onSelectTeam: (team: Team) => void
 }
 
 function TeamSelectionScreen({
   league,
   seed,
+  isBusy,
   onSelectTeam,
 }: TeamSelectionScreenProps) {
   const headingRef = useFocusOnMount()
 
   return (
-    <section className="content-section" aria-labelledby="team-selection-heading">
+    <section
+      className="content-section"
+      aria-labelledby="team-selection-heading"
+      aria-busy={isBusy}
+    >
       <div className="section-heading-row">
         <div>
           <p className="eyebrow">League generated · {league.seedFingerprint}</p>
@@ -228,9 +588,10 @@ function TeamSelectionScreen({
             <button
               type="button"
               className="team-card"
-              onClick={() => onSelectTeam(team)}
+              onClick={() => void onSelectTeam(team)}
               aria-label={`Manage ${formatTeamName(team)}`}
               style={{ borderTopColor: team.colors.secondary }}
+              disabled={isBusy}
             >
               <span
                 className="team-card-mark"
@@ -261,6 +622,7 @@ interface RosterScreenProps {
   readonly team: Team
   readonly roster: readonly Player[]
   readonly selectedPlayer: Player | null
+  readonly isBusy: boolean
   readonly onSelectPlayer: (playerId: PlayerId) => void
   readonly onBack: () => void
 }
@@ -269,14 +631,24 @@ function RosterScreen({
   team,
   roster,
   selectedPlayer,
+  isBusy,
   onSelectPlayer,
   onBack,
 }: RosterScreenProps) {
   const headingRef = useFocusOnMount()
 
   return (
-    <section className="content-section roster-section" aria-labelledby="roster-heading">
-      <button type="button" className="back-button" onClick={onBack}>
+    <section
+      className="content-section roster-section"
+      aria-labelledby="roster-heading"
+      aria-busy={isBusy}
+    >
+      <button
+        type="button"
+        className="back-button"
+        onClick={onBack}
+        disabled={isBusy}
+      >
         ← Back to team selection
       </button>
 
@@ -346,6 +718,7 @@ function RosterScreen({
                           onClick={() => onSelectPlayer(player.id)}
                           aria-pressed={isSelected}
                           aria-controls="player-details"
+                          disabled={isBusy}
                         >
                           {isSelected ? 'Viewing' : 'View ratings'}
                           <span className="visually-hidden"> for {playerName}</span>
@@ -433,6 +806,61 @@ function useFocusOnMount() {
   }, [])
 
   return headingRef
+}
+
+function hasInvalidSnapshotCause(error: unknown): boolean {
+  const seen = new Set<unknown>()
+  let current = error
+
+  while (current instanceof Error && !seen.has(current)) {
+    if (current instanceof InvalidLeagueSnapshotError) return true
+    seen.add(current)
+    current = current.cause
+  }
+
+  return false
+}
+
+function storageWriteMessage(error: unknown, action: string): string {
+  if (error instanceof LeagueSnapshotConflictError) {
+    return 'The active league changed in another tab. Nothing was overwritten. Reload and try again.'
+  }
+
+  if (error instanceof LeagueSnapshotQuotaError) {
+    return `Browser storage is full, so the league could not be ${action}. The last confirmed league was kept.`
+  }
+
+  return `The league could not be ${action} in local browser storage. The last confirmed league was kept.`
+}
+
+function describeSaveStatus(
+  bootState: BootState,
+  pendingOperation: PendingOperation,
+  snapshot: LeagueSnapshotV1 | null,
+  persistenceError: string | null,
+): string {
+  if (bootState === 'restoring') {
+    return 'Checking this browser for a saved league…'
+  }
+  if (pendingOperation === 'creating' || pendingOperation === 'selecting-team') {
+    return 'Saving league locally…'
+  }
+  if (pendingOperation === 'clearing') {
+    return 'Removing the active saved league…'
+  }
+  if (bootState === 'invalid-save') {
+    return 'The saved league needs attention and was left unchanged.'
+  }
+  if (bootState === 'storage-error') {
+    return 'Local browser storage is unavailable.'
+  }
+  if (persistenceError !== null) {
+    return 'The latest change was not saved. The last confirmed league was kept.'
+  }
+  if (snapshot !== null) {
+    return 'League saved locally in this browser.'
+  }
+  return 'No league is currently saved in this browser.'
 }
 
 export default App

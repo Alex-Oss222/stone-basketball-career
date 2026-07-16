@@ -3,7 +3,7 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.test.tsbuildinfo",
     "strict": true,
     "target": "es2023",
-    "lib": ["ES2023"],
+    "lib": ["ES2023", "DOM"],
     "types": ["node"],
     "skipLibCheck": true,
 
@@ -24,6 +24,7 @@
     "src/data/**/*.ts",
     "src/domain/**/*.ts",
     "src/generation/**/*.ts",
+    "src/persistence/**/*.ts",
     "src/random/**/*.ts",
     "tests/**/*.ts"
   ]

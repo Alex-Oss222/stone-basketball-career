@@ -16,6 +16,12 @@
   border-bottom: 1px solid var(--line);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .brand-lockup {
   display: flex;
   align-items: center;
@@ -76,8 +82,104 @@
   border: 1px solid #bfd0c4;
 }
 
+.new-league-button {
+  min-height: 38px;
+  padding: 6px 12px;
+  color: var(--accent-dark);
+  background: var(--surface);
+  border: 1px solid #d7b9aa;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.new-league-button:hover:not(:disabled) {
+  color: #fff;
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
 main {
   min-height: calc(100vh - 136px);
+}
+
+.app-error {
+  margin: 22px clamp(20px, 5vw, 72px) 0;
+  padding: 13px 16px;
+  color: #6f1818;
+  background: #fff2f0;
+  border: 1px solid #d9a19b;
+  border-radius: 10px;
+  font-weight: 750;
+}
+
+.state-layout {
+  display: grid;
+  min-height: calc(100vh - 136px);
+  padding: clamp(52px, 8vw, 112px) clamp(24px, 7vw, 104px);
+  place-items: center;
+}
+
+.state-panel {
+  width: min(760px, 100%);
+  padding: clamp(28px, 5vw, 52px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: var(--shadow-soft);
+}
+
+.state-panel h1 {
+  margin-bottom: 18px;
+  font-size: clamp(38px, 6vw, 64px);
+  letter-spacing: -0.045em;
+}
+
+.recovery-panel .lede {
+  max-width: 620px;
+}
+
+.recovery-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.secondary-button {
+  min-height: 50px;
+  padding: 0 18px;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.secondary-button:hover:not(:disabled) {
+  background: var(--surface-soft);
+  border-color: var(--ink-soft);
+}
+
+.danger-button {
+  color: #7a1f1f;
+  border-color: #d9a19b;
+}
+
+.recovery-error {
+  margin: 20px 0 0;
+  padding: 12px 14px;
+  color: #6f1818;
+  background: #fff2f0;
+  border: 1px solid #d9a19b;
+  border-radius: 9px;
+  font-weight: 750;
+}
+
+.recovery-note {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .creation-layout {
@@ -174,9 +276,19 @@ main {
   transition: background-color 160ms ease, transform 160ms ease;
 }
 
-.primary-button:hover {
+.primary-button:hover:not(:disabled) {
   background: #69230f;
   transform: translateY(-1px);
+}
+
+.primary-button:disabled,
+.secondary-button:disabled,
+.new-league-button:disabled,
+.back-button:disabled,
+.player-detail-button:disabled,
+.team-card:disabled {
+  cursor: wait;
+  opacity: 0.68;
 }
 
 .field-help,
@@ -321,7 +433,7 @@ main {
   transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
-.team-card:hover {
+.team-card:hover:not(:disabled) {
   border-color: var(--line-strong);
   box-shadow: 0 16px 32px rgba(29, 43, 35, 0.13);
   transform: translateY(-3px);
@@ -408,7 +520,7 @@ main {
   font-weight: 800;
 }
 
-.back-button:hover {
+.back-button:hover:not(:disabled) {
   background: #f5e9df;
   border-color: #e4c7b8;
 }
@@ -552,7 +664,7 @@ tbody tr:last-child td {
   white-space: nowrap;
 }
 
-.player-detail-button:hover,
+.player-detail-button:hover:not(:disabled),
 .player-detail-button[aria-pressed='true'] {
   color: #fff;
   background: var(--accent-dark);
