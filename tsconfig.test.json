@@ -13,6 +13,7 @@
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noEmit": true,
+    "jsx": "react-jsx",
 
     /* Linting */
     "noUnusedLocals": true,
@@ -21,11 +22,15 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
+    "src/app/**/*.ts",
     "src/data/**/*.ts",
     "src/domain/**/*.ts",
     "src/generation/**/*.ts",
     "src/persistence/**/*.ts",
     "src/random/**/*.ts",
-    "tests/**/*.ts"
+    "src/ui/**/*.ts",
+    "src/ui/**/*.tsx",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
   ]
 }
