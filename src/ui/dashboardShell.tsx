@@ -37,6 +37,7 @@ export interface ApplicationShellProps {
   readonly controlledTeam: Team | null
   readonly saveState: SaveIndicatorState | null
   readonly dashboardAction: DashboardAction
+  readonly progress?: LeagueProgressPresentation
   readonly busy: boolean
   readonly onNavigate: (pageId: NavigationPageId) => void
   readonly onMainMenu: () => void
@@ -51,6 +52,7 @@ export function ApplicationShell({
   controlledTeam,
   saveState,
   dashboardAction,
+  progress,
   busy,
   onNavigate,
   onMainMenu,
@@ -69,6 +71,7 @@ export function ApplicationShell({
         controlledTeam={controlledTeam}
         saveState={saveState}
         dashboardAction={dashboardAction}
+        progress={progress}
         busy={busy}
         onMainMenu={onMainMenu}
         onAuthoritativeAction={onAuthoritativeAction}
@@ -103,16 +106,23 @@ export interface AppHeaderProps {
   readonly controlledTeam: Team | null
   readonly saveState: SaveIndicatorState | null
   readonly dashboardAction: DashboardAction
+  readonly progress?: LeagueProgressPresentation
   readonly busy: boolean
   readonly onMainMenu: () => void
   readonly onAuthoritativeAction: (action: DashboardAction) => void
   readonly onNewLeague?: () => void
 }
 
+export interface LeagueProgressPresentation {
+  readonly primary: string
+  readonly secondary: string
+}
+
 export function AppHeader({
   controlledTeam,
   saveState,
   dashboardAction,
+  progress,
   busy,
   onMainMenu,
   onAuthoritativeAction,
@@ -126,6 +136,10 @@ export function AppHeader({
     controlledTeam === null
       ? 'Choose a team to establish your front office.'
       : controlledTeam.abbreviation
+  const displayedProgress = progress ?? {
+    primary: LEAGUE_SETUP_PROGRESS_LABEL,
+    secondary: NO_SEASON_STARTED_LABEL,
+  }
 
   return (
     <header className="application-header">
@@ -145,8 +159,8 @@ export function AppHeader({
       </div>
 
       <div className="application-progress" aria-label="League progression">
-        <span>{LEAGUE_SETUP_PROGRESS_LABEL}</span>
-        <span>{NO_SEASON_STARTED_LABEL}</span>
+        <span>{displayedProgress.primary}</span>
+        <span>{displayedProgress.secondary}</span>
       </div>
 
       <div className="application-header-actions">

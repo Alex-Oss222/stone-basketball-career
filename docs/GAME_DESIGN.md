@@ -135,21 +135,39 @@ real-world dates is active in Milestone 1.
 - Reject JSON files larger than 50 MiB before parsing.
 - If browser storage is full, preserve the last confirmed state and report the quota failure clearly. Offer export and explicit manual-save management; never silently delete a named manual save to make space.
 
-The current technical persistence work is intentionally split at the storage
-boundary. `LeagueSnapshotV1` remains the independently parseable league-only
-snapshot. `LeagueSnapshotV2` defines a strict JSON-safe DTO for the complete
-regular-season foundation plus its explicit creation metadata. A valid V2 load
-uses the stored league, season, calendar, team-season records, opponent matrix,
-game days, and games exactly as validated; it does not regenerate them or
-derive replacement dates and identities.
+The active-league persistence bridge keeps `LeagueSnapshotV1` independently
+parseable for existing local leagues and uses `LeagueSnapshotV2` as the current
+strict JSON-safe DTO. V2 contains the complete regular-season foundation plus
+its explicit creation metadata. A valid V2 load uses the stored league, season,
+calendar, team-season records, opponent matrix, game days, and games exactly as
+validated; it does not regenerate them or derive replacement dates and
+identities.
 
-The pure V1-to-V2 migration requires the user or a later application workflow
-to supply the season year, opening `LocalDate`, game-day spacing, and canonical
-schedule seed. The migration may call the existing creation coordinator because
-V1 has no season data, but it performs no IndexedDB operation and chooses no
-default input. V2 parsing and migration are not yet repository read precedence,
-atomic browser-storage migration, autosave revision handling, or React
-integration; those remain later persistence work.
+The pure V1-to-V2 migration requires the application to supply the user-visible
+season year, opening `LocalDate`, game-day spacing, and canonical schedule seed.
+It may call the existing creation coordinator because V1 has no season data,
+but it performs no IndexedDB operation and chooses no default input. The
+repository runs that pure migration inside one transaction, writes V2 to its
+own versioned key, rereads and validates it before commit, and leaves V1
+unchanged. V2 has authoritative read precedence; an invalid V2 is surfaced for
+recovery and never falls back to V1. React receives only a fully validated,
+committed V2 value.
+
+The active V2 revision protects managed-team changes and clears from stale
+tabs. Each successful managed-team update advances the positive safe-integer
+revision exactly once. Clearing requires the observed revision and removes both
+versioned active-league records atomically so retained V1 cannot reappear. This
+single-active-league bridge does not yet implement the later 20-revision
+autosave history, named manual saves, or JSON import/export.
+
+Corrupt-storage recovery uses a different, explicitly destructive operation.
+If an authoritative record cannot be parsed well enough to supply the normal
+clear preconditions, the recovery screen may offer a permanently-delete action
+after explicit confirmation. That purge does not parse either version or claim
+revision protection: it atomically deletes both active V1 and V2 records,
+verifies both are absent before commit, and reports failure without changing
+the active state when the transaction aborts. It is never shown for an empty,
+migration-required, or healthy restored league.
 
 ## Product behavior and boundaries
 

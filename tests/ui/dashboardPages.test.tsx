@@ -24,6 +24,24 @@ describe('dashboard page rendering', () => {
     expect(markup).not.toContain('Saved locally')
   })
 
+  it('renders supplied schedule-ready progress without inventing results', () => {
+    const markup = renderToStaticMarkup(
+      <DashboardOverviewContent
+        summary={null}
+        saveState={null}
+        seasonProgress={{
+          primary: 'Schedule ready',
+          secondary:
+            '2026–27 regular-season schedule stored locally. No games have been played.',
+        }}
+      />,
+    )
+
+    expect(markup).toContain('Schedule ready')
+    expect(markup).toContain('No games have been played')
+    expect(markup).not.toContain('No season started')
+  })
+
   it('keeps the complete real roster and rating details in keyboard-scrollable regions', () => {
     const markup = renderToStaticMarkup(
       <TeamRosterContent

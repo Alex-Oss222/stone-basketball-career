@@ -1,5 +1,11 @@
 import { useCallback, useEffect, useState } from 'react'
 import type { FormEvent } from 'react'
+import { createNewLeagueSnapshotV2 } from './app/commands/createNewLeagueSnapshotV2'
+import {
+  parseSeasonFoundationConfiguration,
+} from './app/commands/createSeasonFoundation'
+import type { SeasonFoundationConfiguration } from './app/commands/createSeasonFoundation'
+import { requestCorruptLeagueStoragePurge } from './app/commands/requestCorruptLeagueStoragePurge'
 import {
   SAVE_INDICATOR_LABELS,
   createSavedLeagueDashboardSummary,
@@ -14,21 +20,21 @@ import {
   getPageById,
   getSectionForPage,
 } from './app/navigation'
-import type { NavigationPageId } from './app/navigation'
 import type { AvailableNavigationPageId } from './app/navigation'
-import type { PlayerId } from './domain/ids'
+import type { NavigationPageId } from './app/navigation'
+import type { LeagueId, PlayerId } from './domain/ids'
 import type { Team } from './domain/league'
-import { generateLeague } from './generation/generateLeague'
-import {
-  InvalidLeagueSnapshotError,
-  createLeagueSnapshot,
-} from './persistence/leagueSnapshot'
-import type { LeagueSnapshotV1 } from './persistence/leagueSnapshot'
+import { parseLocalDate } from './domain/localDate'
 import {
   LeagueSnapshotConflictError,
   LeagueSnapshotQuotaError,
   createIndexedDbLeagueSnapshotRepository,
 } from './persistence/indexedDbLeagueSnapshotStorage'
+import {
+  LeagueSnapshotRepositoryMigrationError,
+} from './persistence/leagueSnapshotRepository'
+import type { LeagueSnapshotRestorationResult } from './persistence/leagueSnapshotRepository'
+import type { LeagueSnapshotV2 } from './persistence/leagueSnapshotV2'
 import { normalizeSeed } from './random/seed'
 import {
   DashboardOverviewContent,
@@ -44,22 +50,45 @@ import {
 import { getTeamRoster } from './ui/leagueViewModel'
 import {
   LeagueCreationScreen,
+  MigrationRequiredScreen,
   RestoreLoadingScreen,
   RestoreRecoveryScreen,
   TeamSelectionScreen,
 } from './ui/setupPages'
+import type {
+  SeasonSetupFormField,
+  SeasonSetupFormValues,
+} from './ui/setupPages'
 import './App.css'
 
 const DEFAULT_LEAGUE_SEED = 'stone-league-1'
+const DEFAULT_SEASON_SETUP_VALUES = Object.freeze({
+  startingYear: '2026',
+  regularSeasonStartDate: '2026-10-06',
+  calendarDaySpacing: '3',
+  scheduleSeed: 'stone-league-1-schedule',
+}) satisfies SeasonSetupFormValues
+
 const leagueSnapshotRepository = createIndexedDbLeagueSnapshotRepository()
 
-let initialRestorePromise: Promise<LeagueSnapshotV1 | null> | null = null
+let initialRestorePromise: Promise<LeagueSnapshotRestorationResult> | null = null
 
-type BootState = 'restoring' | 'ready' | 'invalid-save' | 'storage-error'
-type PendingOperation = 'idle' | 'creating' | 'selecting-team' | 'clearing'
+type BootState =
+  | 'restoring'
+  | 'ready'
+  | 'migration-required'
+  | 'recovery-required'
+type PendingOperation =
+  | 'idle'
+  | 'creating'
+  | 'migrating'
+  | 'selecting-team'
+  | 'clearing'
+  | 'purging-corrupt-storage'
 type SetupView = 'create-league' | 'choose-team' | null
+type RecoveryKind = 'invalid-save' | 'storage-error'
 
-function restoreInitialSnapshot(): Promise<LeagueSnapshotV1 | null> {
+function restoreInitialSnapshot(): Promise<LeagueSnapshotRestorationResult> {
   initialRestorePromise ??= leagueSnapshotRepository.restore().finally(() => {
     initialRestorePromise = null
   })
@@ -68,11 +97,19 @@ function restoreInitialSnapshot(): Promise<LeagueSnapshotV1 | null> {
 
 function App() {
   const [seed, setSeed] = useState(DEFAULT_LEAGUE_SEED)
-  const [snapshot, setSnapshot] = useState<LeagueSnapshotV1 | null>(null)
+  const [seasonValues, setSeasonValues] = useState<SeasonSetupFormValues>(() =>
+    createDefaultSeasonValues(),
+  )
+  const [snapshot, setSnapshot] = useState<LeagueSnapshotV2 | null>(null)
+  const [migrationLeagueId, setMigrationLeagueId] =
+    useState<LeagueId | null>(null)
   const [selectedPlayerId, setSelectedPlayerId] =
     useState<PlayerId | null>(null)
   const [seedError, setSeedError] = useState<string | null>(null)
+  const [seasonError, setSeasonError] = useState<string | null>(null)
   const [bootState, setBootState] = useState<BootState>('restoring')
+  const [recoveryKind, setRecoveryKind] =
+    useState<RecoveryKind>('invalid-save')
   const [restoreError, setRestoreError] = useState<string | null>(null)
   const [persistenceError, setPersistenceError] = useState<string | null>(null)
   const [pendingOperation, setPendingOperation] =
@@ -102,6 +139,56 @@ function App() {
     dashboardState === null
       ? null
       : createSavedLeagueDashboardSummary(dashboardState)
+  const leagueProgress =
+    snapshot === null
+      ? undefined
+      : {
+          primary: snapshot.season.displayLabel,
+          secondary: 'Schedule ready',
+        }
+
+  const resetToLeagueCreation = useCallback((): void => {
+    setSnapshot(null)
+    setMigrationLeagueId(null)
+    setSeed(DEFAULT_LEAGUE_SEED)
+    setSeasonValues(createDefaultSeasonValues())
+    setSelectedPlayerId(null)
+    setSeedError(null)
+    setSeasonError(null)
+    setRestoreError(null)
+    setPersistenceError(null)
+    setActivePageId(DEFAULT_PAGE_ID)
+    setSetupView('create-league')
+    setBootState('ready')
+  }, [])
+
+  const installSnapshot = useCallback((next: LeagueSnapshotV2): void => {
+    const restoredTeam =
+      next.managedTeamId === null
+        ? null
+        : next.league.teams.find(
+            (team) => team.id === next.managedTeamId,
+          ) ?? null
+
+    setSnapshot(next)
+    setMigrationLeagueId(null)
+    setSeed(next.rootSeed)
+    setSeasonValues(seasonValuesFromSnapshot(next))
+    setSelectedPlayerId(
+      restoredTeam === null
+        ? null
+        : getTeamRoster(next.league, restoredTeam.id)[0]?.id ?? null,
+    )
+    setSeedError(null)
+    setSeasonError(null)
+    setRestoreError(null)
+    setPersistenceError(null)
+    setActivePageId(
+      restoredTeam === null ? DEFAULT_PAGE_ID : 'team-roster',
+    )
+    setSetupView(restoredTeam === null ? 'choose-team' : null)
+    setBootState('ready')
+  }, [])
 
   const restoreFromStorage = useCallback(
     async (
@@ -112,59 +199,43 @@ function App() {
       setRestoreError(null)
       setPersistenceError(null)
 
-      try {
-        const restoredSnapshot = await (useInitialRestore
-          ? restoreInitialSnapshot()
-          : leagueSnapshotRepository.restore())
+      const result = await (useInitialRestore
+        ? restoreInitialSnapshot()
+        : leagueSnapshotRepository.restore())
 
-        if (isCancelled()) return
+      if (isCancelled()) return
 
-        if (restoredSnapshot === null) {
+      switch (result.kind) {
+        case 'empty':
           resetToLeagueCreation()
           return
-        }
-
-        const restoredTeam =
-          restoredSnapshot.managedTeamId === null
-            ? null
-            : restoredSnapshot.league.teams.find(
-                (team) => team.id === restoredSnapshot.managedTeamId,
-              ) ?? null
-
-        setSnapshot(restoredSnapshot)
-        setSeed(restoredSnapshot.rootSeed)
-        setSelectedPlayerId(
-          restoredTeam === null
-            ? null
-            : getTeamRoster(restoredSnapshot.league, restoredTeam.id)[0]?.id ??
-                null,
-        )
-        setActivePageId(
-          restoredTeam === null ? DEFAULT_PAGE_ID : 'team-roster',
-        )
-        setSetupView(restoredTeam === null ? 'choose-team' : null)
-        setBootState('ready')
-      } catch (error) {
-        if (isCancelled()) return
-
-        setSnapshot(null)
-        setSelectedPlayerId(null)
-        setSetupView(null)
-
-        if (hasInvalidSnapshotCause(error)) {
-          setRestoreError(
-            'The saved league is invalid or unsupported. It was left unchanged.',
+        case 'restored-v2':
+          installSnapshot(result.snapshot)
+          return
+        case 'migration-required':
+          setSnapshot(null)
+          setMigrationLeagueId(result.leagueId)
+          setSelectedPlayerId(null)
+          setSetupView(null)
+          setSeasonError(null)
+          setBootState('migration-required')
+          return
+        case 'recovery-required':
+          setSnapshot(null)
+          setMigrationLeagueId(null)
+          setSelectedPlayerId(null)
+          setSetupView(null)
+          setRecoveryKind(
+            result.source === 'storage' ? 'storage-error' : 'invalid-save',
           )
-          setBootState('invalid-save')
-        } else {
-          setRestoreError(
-            'Local browser storage could not be read. Your saved league was left unchanged.',
-          )
-          setBootState('storage-error')
-        }
+          setRestoreError(result.message)
+          setBootState('recovery-required')
+          return
+        default:
+          assertNever(result)
       }
     },
-    [],
+    [installSnapshot, resetToLeagueCreation],
   )
 
   useEffect(() => {
@@ -182,21 +253,36 @@ function App() {
     event.preventDefault()
     if (pendingOperation !== 'idle') return
 
-    let normalizedSeed: string
-    let nextSnapshot: LeagueSnapshotV1
-
+    let creationInputs: SeasonFoundationConfiguration
     try {
-      normalizedSeed = normalizeSeed(seed)
-      nextSnapshot = createLeagueSnapshot(
-        normalizedSeed,
-        generateLeague(normalizedSeed),
-        null,
-      )
+      creationInputs = parseSeasonSetupValues(seasonValues)
+      setSeasonError(null)
     } catch (error) {
-      setSeedError(
-        error instanceof Error
-          ? error.message
-          : 'The league could not be generated from that seed.',
+      setSeasonError(readableError(error, 'The season setup is invalid.'))
+      return
+    }
+
+    let rootSeed: string
+    try {
+      rootSeed = normalizeSeed(seed)
+      setSeedError(null)
+    } catch (error) {
+      setSeedError(readableError(error, 'The league seed is invalid.'))
+      return
+    }
+
+    let nextSnapshot: LeagueSnapshotV2
+    try {
+      nextSnapshot = createNewLeagueSnapshotV2({
+        rootSeed,
+        ...creationInputs,
+      })
+    } catch (error) {
+      setSeasonError(
+        readableError(
+          error,
+          'The league and season foundation could not be created from those inputs.',
+        ),
       )
       return
     }
@@ -205,15 +291,41 @@ function App() {
     setPersistenceError(null)
 
     try {
-      await leagueSnapshotRepository.create(nextSnapshot)
-      setSeed(normalizedSeed)
-      setSnapshot(nextSnapshot)
-      setSelectedPlayerId(null)
-      setSeedError(null)
-      setActivePageId(DEFAULT_PAGE_ID)
-      setSetupView('choose-team')
+      const stored = await leagueSnapshotRepository.createV2(nextSnapshot)
+      installSnapshot(stored)
     } catch (error) {
       setPersistenceError(storageWriteMessage(error, 'created'))
+    } finally {
+      setPendingOperation('idle')
+    }
+  }
+
+  async function handleMigrate(
+    event: FormEvent<HTMLFormElement>,
+  ): Promise<void> {
+    event.preventDefault()
+    if (pendingOperation !== 'idle' || migrationLeagueId === null) return
+
+    let creationInputs: SeasonFoundationConfiguration
+    try {
+      creationInputs = parseSeasonSetupValues(seasonValues)
+      setSeasonError(null)
+    } catch (error) {
+      setSeasonError(readableError(error, 'The season setup is invalid.'))
+      return
+    }
+
+    setPendingOperation('migrating')
+    setPersistenceError(null)
+
+    try {
+      const migrated = await leagueSnapshotRepository.migrateV1ToV2({
+        expectedV1LeagueId: migrationLeagueId,
+        seasonCreationInputs: creationInputs,
+      })
+      installSnapshot(migrated)
+    } catch (error) {
+      setPersistenceError(migrationFailureMessage(error))
     } finally {
       setPendingOperation('idle')
     }
@@ -232,18 +344,16 @@ function App() {
       return
     }
 
-    const nextSnapshot = createLeagueSnapshot(
-      snapshot.rootSeed,
-      snapshot.league,
-      team.id,
-    )
-
     setPendingOperation('selecting-team')
     setPersistenceError(null)
 
     try {
-      await leagueSnapshotRepository.update(nextSnapshot, snapshot.league.id)
-      setSnapshot(nextSnapshot)
+      const updated = await leagueSnapshotRepository.updateManagedTeam({
+        expectedLeagueId: snapshot.league.id,
+        expectedRevision: snapshot.revision,
+        managedTeamId: team.id,
+      })
+      setSnapshot(updated)
       setSelectedPlayerId(teamRoster[0]?.id ?? null)
       setActivePageId('team-roster')
       setSetupView(null)
@@ -266,7 +376,9 @@ function App() {
       controlledTeam !== null &&
       selectedPlayerId === null
     ) {
-      setSelectedPlayerId(getTeamRoster(league, controlledTeam.id)[0]?.id ?? null)
+      setSelectedPlayerId(
+        getTeamRoster(league, controlledTeam.id)[0]?.id ?? null,
+      )
     }
   }
 
@@ -323,7 +435,7 @@ function App() {
     if (snapshot === null || pendingOperation !== 'idle') return
 
     const confirmed = window.confirm(
-      'Start a new league? The active league saved in this browser will be removed.',
+      'Start a new league? Both active local snapshot versions will be removed.',
     )
     if (!confirmed) return
 
@@ -331,7 +443,11 @@ function App() {
     setPersistenceError(null)
 
     try {
-      await leagueSnapshotRepository.clear(snapshot.league.id)
+      await leagueSnapshotRepository.clear({
+        kind: 'v2',
+        expectedLeagueId: snapshot.league.id,
+        expectedRevision: snapshot.revision,
+      })
       resetToLeagueCreation()
     } catch (error) {
       setPersistenceError(storageWriteMessage(error, 'removed'))
@@ -340,11 +456,11 @@ function App() {
     }
   }
 
-  async function handleDiscardInvalidSave(): Promise<void> {
-    if (pendingOperation !== 'idle') return
+  async function handleDiscardV1(): Promise<void> {
+    if (migrationLeagueId === null || pendingOperation !== 'idle') return
 
     const confirmed = window.confirm(
-      'Discard the unreadable saved league and start a new league? This cannot be undone.',
+      'Discard the version 1 saved league and start a new league? This cannot be undone.',
     )
     if (!confirmed) return
 
@@ -352,7 +468,10 @@ function App() {
     setPersistenceError(null)
 
     try {
-      await leagueSnapshotRepository.clear()
+      await leagueSnapshotRepository.clear({
+        kind: 'v1',
+        expectedLeagueId: migrationLeagueId,
+      })
       resetToLeagueCreation()
     } catch (error) {
       setPersistenceError(storageWriteMessage(error, 'removed'))
@@ -361,49 +480,78 @@ function App() {
     }
   }
 
-  function resetToLeagueCreation(): void {
-    setSnapshot(null)
-    setSeed(DEFAULT_LEAGUE_SEED)
-    setSelectedPlayerId(null)
-    setSeedError(null)
-    setRestoreError(null)
+  async function handlePurgeCorruptLeagueStorage(): Promise<void> {
+    if (
+      bootState !== 'recovery-required' ||
+      pendingOperation !== 'idle'
+    ) {
+      return
+    }
+
+    try {
+      const result = await requestCorruptLeagueStoragePurge({
+        confirm: (message) => window.confirm(message),
+        purge: async () => {
+          setPendingOperation('purging-corrupt-storage')
+          setPersistenceError(null)
+          await leagueSnapshotRepository.purgeCorruptLeagueStorage()
+        },
+      })
+
+      if (result === 'purged') {
+        resetToLeagueCreation()
+      }
+    } catch {
+      setPersistenceError(
+        'The local league save could not be permanently deleted. Existing records remain, and you can retry.',
+      )
+    } finally {
+      setPendingOperation('idle')
+    }
+  }
+
+  function handleSeasonValueChange(
+    field: SeasonSetupFormField,
+    value: string,
+  ): void {
+    setSeasonValues((current) => ({ ...current, [field]: value }))
+    setSeasonError(null)
     setPersistenceError(null)
-    setActivePageId(DEFAULT_PAGE_ID)
-    setSetupView('create-league')
-    setBootState('ready')
   }
 
   if (bootState === 'restoring') {
     return <RestoreLoadingScreen />
   }
 
-  if (bootState === 'invalid-save') {
+  if (bootState === 'migration-required') {
     return (
-      <RestoreRecoveryScreen
-        kind="invalid-save"
-        message={
-          restoreError ??
-          'The saved league is invalid or unsupported. It was left unchanged.'
-        }
+      <MigrationRequiredScreen
+        seasonValues={seasonValues}
+        seasonError={seasonError}
         actionError={persistenceError}
         isBusy={isBusy}
+        onSeasonValueChange={handleSeasonValueChange}
+        onMigrate={(event) => void handleMigrate(event)}
         onTryAgain={() => void restoreFromStorage(false)}
-        onDiscard={() => void handleDiscardInvalidSave()}
+        onDiscard={() => void handleDiscardV1()}
       />
     )
   }
 
-  if (bootState === 'storage-error') {
+  if (bootState === 'recovery-required') {
     return (
       <RestoreRecoveryScreen
-        kind="storage-error"
+        kind={recoveryKind}
         message={
           restoreError ??
-          'Local browser storage could not be read. Your saved league was left unchanged.'
+          'The saved league could not be restored and was left unchanged.'
         }
         actionError={persistenceError}
         isBusy={isBusy}
         onTryAgain={() => void restoreFromStorage(false)}
+        onPurgeCorruptStorage={() =>
+          void handlePurgeCorruptLeagueStorage()
+        }
       />
     )
   }
@@ -421,6 +569,7 @@ function App() {
       controlledTeam={controlledTeam}
       saveState={saveState}
       dashboardAction={dashboardAction}
+      progress={leagueProgress}
       busy={isBusy}
       onNavigate={handleNavigate}
       onMainMenu={handleMainMenu}
@@ -437,11 +586,14 @@ function App() {
         <LeagueCreationScreen
           seed={seed}
           seedError={seedError}
+          seasonValues={seasonValues}
+          seasonError={seasonError}
           isBusy={isBusy}
           onSeedChange={(nextSeed) => {
             setSeed(nextSeed)
             setSeedError(null)
           }}
+          onSeasonValueChange={handleSeasonValueChange}
           onSubmit={(event) => void handleGenerate(event)}
           onMainMenu={handleMainMenu}
         />
@@ -478,7 +630,7 @@ function App() {
 
 function renderAvailablePage(
   pageId: AvailableNavigationPageId,
-  snapshot: LeagueSnapshotV1 | null,
+  snapshot: LeagueSnapshotV2 | null,
   controlledTeam: Team | null,
   selectedPlayerId: PlayerId | null,
   isBusy: boolean,
@@ -493,6 +645,14 @@ function renderAvailablePage(
       return (
         <DashboardOverviewContent
           summary={dashboardSummary}
+          seasonProgress={
+            snapshot === null
+              ? undefined
+              : {
+                  primary: 'Schedule ready',
+                  secondary: `${snapshot.season.displayLabel} regular-season schedule stored locally. No games have been played.`,
+                }
+          }
           saveState={
             saveState === null
               ? null
@@ -527,21 +687,65 @@ function renderAvailablePage(
   }
 }
 
-function assertNever(value: never): never {
-  throw new RangeError(`Available navigation page ${String(value)} has no view`)
+function createDefaultSeasonValues(): SeasonSetupFormValues {
+  return { ...DEFAULT_SEASON_SETUP_VALUES }
 }
 
-function hasInvalidSnapshotCause(error: unknown): boolean {
-  const seen = new Set<unknown>()
-  let current = error
-
-  while (current instanceof Error && !seen.has(current)) {
-    if (current instanceof InvalidLeagueSnapshotError) return true
-    seen.add(current)
-    current = current.cause
+function seasonValuesFromSnapshot(
+  snapshot: LeagueSnapshotV2,
+): SeasonSetupFormValues {
+  return {
+    startingYear: String(snapshot.creationMetadata.startingYear),
+    regularSeasonStartDate: snapshot.creationMetadata.regularSeasonStartDate,
+    calendarDaySpacing: String(snapshot.creationMetadata.gameDaySpacing),
+    scheduleSeed: snapshot.creationMetadata.scheduleSeed,
   }
+}
 
-  return false
+function parseSeasonSetupValues(
+  values: SeasonSetupFormValues,
+): SeasonFoundationConfiguration {
+  return parseSeasonFoundationConfiguration({
+    startingYear: parseCanonicalFormInteger(
+      values.startingYear,
+      'Starting year',
+      true,
+    ),
+    regularSeasonStartDate: parseLocalDate(values.regularSeasonStartDate),
+    calendarDaySpacing: parseCanonicalFormInteger(
+      values.calendarDaySpacing,
+      'Days between game days',
+      false,
+    ),
+    scheduleSeed: values.scheduleSeed,
+  })
+}
+
+function parseCanonicalFormInteger(
+  value: string,
+  label: string,
+  allowZero: boolean,
+): number {
+  const pattern = allowZero ? /^(?:0|[1-9]\d*)$/ : /^[1-9]\d*$/
+  if (!pattern.test(value)) {
+    throw new RangeError(`${label} must be a canonical integer`)
+  }
+  const parsed = Number(value)
+  if (!Number.isSafeInteger(parsed)) {
+    throw new RangeError(`${label} must be a safe integer`)
+  }
+  return parsed
+}
+
+function migrationFailureMessage(error: unknown): string {
+  if (error instanceof LeagueSnapshotRepositoryMigrationError) {
+    return `Migration stopped during ${error.stage.replaceAll('-', ' ')}. The version 1 save was kept unchanged. ${error.message}`
+  }
+  return storageWriteMessage(error, 'migrated')
+}
+
+function readableError(error: unknown, fallback: string): string {
+  return error instanceof Error ? error.message : fallback
 }
 
 function storageWriteMessage(error: unknown, action: string): string {
@@ -554,6 +758,10 @@ function storageWriteMessage(error: unknown, action: string): string {
   }
 
   return `The league could not be ${action} in local browser storage. The last confirmed league was kept.`
+}
+
+function assertNever(value: never): never {
+  throw new RangeError(`Unexpected value: ${String(value)}`)
 }
 
 export default App

@@ -395,8 +395,9 @@ interface SeasonStateV1 {
 
 This combined simulation persistence shape is still a future Milestone 1
 target. The narrower active-league snapshot now has a version-2 serialization
-and migration boundary for the existing season foundation, described below,
-but it is not yet wired into the IndexedDB repository or React state.
+and migration boundary for the existing season foundation, described below.
+The active-league repository and React state now use the complete V2 value;
+this remains distinct from the future autosave-history envelope.
 
 Generated team names, cities, colors, marks, player names, IDs, ratings, ages, positions, assignments, tendencies, rules, and rotations are snapshotted into a new season. A later application or generator update cannot silently change the competitive inputs of an existing save.
 
@@ -509,7 +510,9 @@ interface LeagueSnapshotV2CreationMetadata {
 
 A newly serialized or migrated V2 snapshot starts at revision 1. Revision is a
 positive safe integer and is the only DTO revision field; it is not a timestamp.
-Repository update and stale-write behavior remain a later integration task.
+Every successful repository update increments it by exactly one. Callers must
+supply the revision they observed; a mismatch is a structured stale-write
+failure and cannot overwrite the current value.
 
 V2 stores the complete authoritative generated league, season, calendar event
 records, one team-season record per league team, opponent requirements, game
@@ -603,9 +606,70 @@ coordinator result; persistence does not introduce separate identity rules.
 
 Migration performs no storage reads, writes, deletes, repository selection, or
 React-state updates and mutates neither input. V1 remains parseable on its own,
-and neither parser accepts the other version. Choosing V1/V2 read precedence,
-performing an atomic IndexedDB migration, and implementing stale-write behavior
-belong to the later repository integration task.
+and neither parser accepts the other version. The repository composes this pure
+operation with its storage transaction; the migration function itself remains
+independent of IndexedDB.
+
+### Active-league IndexedDB repository
+
+The current single-active-league bridge retains database version 1 and the
+existing `activeLeague` object store. Versioned records occupy separate keys in
+that one store:
+
+- `current` is the shipped V1 location and is never renamed or rewritten by a
+  migration; and
+- `current-v2` stores one complete V2 DTO and is authoritative whenever it
+  exists.
+
+Each value is one structured-cloned `{ leagueId, snapshot }` record. Version is
+not duplicated in the wrapper: the key is the storage-location discriminator
+and the DTO's exact `snapshotVersion` remains the data discriminator. Both raw
+locations are read in one readonly transaction before parsing. Restoration has
+four explicit results: `empty`, `restored-v2`, `migration-required`, and
+`recovery-required`. A valid V2 wins even if a retained V1 is invalid. An
+invalid or unsupported V2 produces recovery instead of falling back to V1,
+because fallback could silently resurrect stale state. A V1 is parsed only
+when no V2 record exists, and it is never installed as partial active React
+state. Storage tracks key presence separately from its raw value, so a corrupt
+record containing literal `null` or `undefined` is rejected as present data and
+cannot masquerade as an absent version.
+
+Stored V1-to-V2 migration executes in one read-write transaction. It rereads
+and validates V1, validates the user's explicit season inputs, invokes the pure
+migration, validates the complete revision-1 V2, adds V2 at `current-v2`,
+rereads both records, revalidates V2, and compares both reread values before
+commit. Success is reported only from transaction completion. Any read,
+generation, write, reread, revalidation, comparison, or commit failure aborts
+the transaction, leaves no V2, and preserves V1 unchanged.
+
+The only current V2 update changes `managedTeamId`. It validates the complete
+stored snapshot inside the transaction, requires the expected league identity
+and revision, increments revision once, reparses the complete candidate, then
+rereads and compares the stored result before commit. Revision overflow,
+foreign teams, stale callers, quota failures, and commit failures publish no
+state. Clearing likewise requires the current V2 league identity and revision
+(or the known V1 league identity when V1 is the only record), deletes both keys
+in one transaction, and verifies both are absent. Deleting only V2 is forbidden
+because it would reactivate retained V1.
+
+Normal clearing and corrupt-storage recovery are deliberately separate
+operations. Healthy V2 clearing continues to require the observed league
+identity and revision, and a stale normal clear publishes no mutation. When a
+`recovery-required` record is too malformed to yield a trusted identity or
+revision, the application may instead offer the explicitly destructive
+`purgeCorruptLeagueStorage` action. It appears only in recovery, requires a
+separate permanent-deletion confirmation, parses neither record, and deletes
+both `current` and `current-v2` in one read-write transaction. The transaction
+rereads both locations and reports success only after both are absent and the
+commit completes. A deletion, verification, or commit failure rolls back the
+transaction, reports a structured storage error, preserves the prior records,
+and never activates V1 as fallback.
+
+New leagues are created directly as complete V2 snapshots from visible,
+explicit season inputs. The application generates the league once, calls
+`createSeasonFoundation` once, validates the DTO, writes only `current-v2`, and
+places it into React state only after the repository confirms commit. Normal V2
+restore remains parse-and-validate only and never calls any generator.
 
 ### Planned full-season save envelope
 

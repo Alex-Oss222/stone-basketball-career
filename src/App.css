@@ -881,7 +881,8 @@ tbody tr:last-child td {
 }
 
 .filter-field label,
-.seed-form label {
+.seed-form label,
+.season-setup-fields legend {
   color: var(--text-soft);
   font-size: 11px;
   font-weight: 850;
@@ -891,7 +892,7 @@ tbody tr:last-child td {
 
 .filter-field input,
 .filter-field select,
-.seed-controls input {
+.setup-field input {
   width: 100%;
   min-height: 44px;
   padding: 8px 11px;
@@ -934,24 +935,51 @@ tbody tr:last-child td {
   border-radius: 12px;
 }
 
-.seed-form label {
+.setup-field label {
   display: block;
   margin-bottom: 7px;
 }
 
-.seed-controls {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 9px;
+.season-setup-fields {
+  min-width: 0;
+  margin: 22px 0 0;
+  padding: 20px 0 0;
+  border: 0;
+  border-top: 1px solid var(--line);
 }
 
-.seed-controls input {
+.season-setup-fields legend {
+  padding: 0;
+}
+
+.season-setup-fields > .field-help {
+  margin-top: 8px;
+}
+
+.season-setup-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.setup-field {
+  min-width: 0;
+}
+
+.setup-field input {
   font-family: var(--mono);
 }
 
-.seed-controls input[aria-invalid='true'] {
+.setup-field input[aria-invalid='true'] {
   border-color: var(--danger);
   box-shadow: inset 0 0 0 1px var(--danger);
+}
+
+.setup-submit-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 22px;
 }
 
 .field-help,
@@ -1199,6 +1227,29 @@ tbody tr:last-child td {
   font-size: 12px;
 }
 
+.migration-panel {
+  width: min(860px, 100%);
+}
+
+.migration-copy {
+  margin: 16px 0 0;
+  color: var(--text-soft);
+}
+
+.migration-form {
+  margin-top: 24px;
+  padding: 20px;
+  background: #111318;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.migration-form .season-setup-fields {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
@@ -1372,8 +1423,12 @@ tbody tr:last-child td {
     font-size: 20px;
   }
 
-  .seed-controls {
+  .season-setup-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .setup-submit-row .form-submit-button {
+    width: 100%;
   }
 
   .team-grid {

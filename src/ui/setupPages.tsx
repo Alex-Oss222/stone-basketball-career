@@ -24,7 +24,7 @@ export interface RestoreRecoveryScreenProps {
   readonly actionError: string | null
   readonly isBusy: boolean
   readonly onTryAgain: () => void
-  readonly onDiscard?: () => void
+  readonly onPurgeCorruptStorage: () => void
 }
 
 export function RestoreRecoveryScreen({
@@ -33,7 +33,7 @@ export function RestoreRecoveryScreen({
   actionError,
   isBusy,
   onTryAgain,
-  onDiscard,
+  onPurgeCorruptStorage,
 }: RestoreRecoveryScreenProps) {
   const headingRef = useFocusOnMount()
   const isInvalidSave = kind === 'invalid-save'
@@ -65,35 +65,55 @@ export function RestoreRecoveryScreen({
           >
             Try again
           </button>
-          {isInvalidSave && onDiscard !== undefined && (
-            <button
-              type="button"
-              className="danger-button"
-              onClick={onDiscard}
-              disabled={isBusy}
-            >
-              {isBusy
-                ? 'Removing saved league…'
-                : 'Discard save and start new league'}
-            </button>
-          )}
+          <button
+            type="button"
+            className="danger-button"
+            onClick={onPurgeCorruptStorage}
+            disabled={isBusy}
+          >
+            {isBusy
+              ? 'Deleting local league save…'
+              : 'Permanently delete local league save'}
+          </button>
         </div>
-        {isInvalidSave && (
-          <p className="recovery-note">
-            The unreadable save remains untouched unless you explicitly discard
-            it.
-          </p>
-        )}
+        <p className="recovery-note">
+          This destructive recovery action permanently removes every active
+          version 1 and version 2 local league record. It cannot be undone and
+          never falls back to an older save.
+        </p>
       </section>
     </main>
   )
 }
 
+export interface SeasonSetupFormValues {
+  readonly startingYear: string
+  readonly regularSeasonStartDate: string
+  readonly calendarDaySpacing: string
+  readonly scheduleSeed: string
+}
+
+export type SeasonSetupFormField = keyof SeasonSetupFormValues
+
+interface SeasonSetupFieldsProps {
+  readonly idPrefix: string
+  readonly values: SeasonSetupFormValues
+  readonly error: string | null
+  readonly isBusy: boolean
+  readonly onChange: (field: SeasonSetupFormField, value: string) => void
+}
+
 export interface LeagueCreationScreenProps {
   readonly seed: string
   readonly seedError: string | null
+  readonly seasonValues: SeasonSetupFormValues
+  readonly seasonError: string | null
   readonly isBusy: boolean
   readonly onSeedChange: (seed: string) => void
+  readonly onSeasonValueChange: (
+    field: SeasonSetupFormField,
+    value: string,
+  ) => void
   readonly onSubmit: (event: FormEvent<HTMLFormElement>) => void
   readonly onMainMenu: () => void
 }
@@ -101,8 +121,11 @@ export interface LeagueCreationScreenProps {
 export function LeagueCreationScreen({
   seed,
   seedError,
+  seasonValues,
+  seasonError,
   isBusy,
   onSeedChange,
+  onSeasonValueChange,
   onSubmit,
   onMainMenu,
 }: LeagueCreationScreenProps) {
@@ -126,8 +149,9 @@ export function LeagueCreationScreen({
           Create a fictional league
         </h1>
         <p className="lede">
-          One seed creates eight fictional clubs and 96 explicit players. The
-          generated league is saved locally before team selection begins.
+          One seed creates eight fictional clubs and 96 explicit players. You
+          also approve the exact inputs used to create the initial regular
+          season before anything is saved.
         </p>
 
         <form
@@ -137,8 +161,8 @@ export function LeagueCreationScreen({
           aria-busy={isBusy}
           noValidate
         >
-          <label htmlFor="league-seed">League seed</label>
-          <div className="seed-controls">
+          <div className="setup-field">
+            <label htmlFor="league-seed">League seed</label>
             <input
               id="league-seed"
               name="leagueSeed"
@@ -151,6 +175,26 @@ export function LeagueCreationScreen({
               spellCheck={false}
               disabled={isBusy}
             />
+            <p id="seed-help" className="field-help">
+              The displayed seed deterministically creates the fictional league.
+              No account or internet connection is used.
+            </p>
+            {seedError !== null && (
+              <p id="seed-error" className="field-error" role="alert">
+                {seedError}
+              </p>
+            )}
+          </div>
+
+          <SeasonSetupFields
+            idPrefix="new-league-season"
+            values={seasonValues}
+            error={seasonError}
+            isBusy={isBusy}
+            onChange={onSeasonValueChange}
+          />
+
+          <div className="setup-submit-row">
             <button
               type="submit"
               className="form-submit-button"
@@ -159,14 +203,6 @@ export function LeagueCreationScreen({
               {isBusy ? 'Saving league…' : 'Generate league'}
             </button>
           </div>
-          <p id="seed-help" className="field-help">
-            Seeds are case-sensitive. No account or internet connection is used.
-          </p>
-          {seedError !== null && (
-            <p id="seed-error" className="field-error" role="alert">
-              {seedError}
-            </p>
-          )}
         </form>
       </div>
 
@@ -191,6 +227,209 @@ export function LeagueCreationScreen({
         </dl>
       </aside>
     </section>
+  )
+}
+
+export interface MigrationRequiredScreenProps {
+  readonly seasonValues: SeasonSetupFormValues
+  readonly seasonError: string | null
+  readonly actionError: string | null
+  readonly isBusy: boolean
+  readonly onSeasonValueChange: (
+    field: SeasonSetupFormField,
+    value: string,
+  ) => void
+  readonly onMigrate: (event: FormEvent<HTMLFormElement>) => void
+  readonly onTryAgain: () => void
+  readonly onDiscard: () => void
+}
+
+export function MigrationRequiredScreen({
+  seasonValues,
+  seasonError,
+  actionError,
+  isBusy,
+  onSeasonValueChange,
+  onMigrate,
+  onTryAgain,
+  onDiscard,
+}: MigrationRequiredScreenProps) {
+  const headingRef = useFocusOnMount()
+
+  return (
+    <main className="standalone-state" aria-busy={isBusy}>
+      <section
+        className="state-panel migration-panel"
+        aria-labelledby="migration-required-heading"
+      >
+        <p className="eyebrow">Local save update required</p>
+        <h1
+          id="migration-required-heading"
+          ref={headingRef}
+          tabIndex={-1}
+        >
+          Complete the season foundation
+        </h1>
+        <p className="lede">
+          A valid version 1 league save is present. Migration leaves it
+          untouched; it is deleted only if you explicitly discard it.
+        </p>
+        <p className="migration-copy">
+          Review and approve all four displayed season inputs. No year, date,
+          spacing, or schedule seed is chosen silently.
+        </p>
+
+        <form
+          className="migration-form"
+          onSubmit={onMigrate}
+          aria-busy={isBusy}
+          noValidate
+        >
+          <SeasonSetupFields
+            idPrefix="migration-season"
+            values={seasonValues}
+            error={seasonError}
+            isBusy={isBusy}
+            onChange={onSeasonValueChange}
+          />
+          <div className="setup-submit-row">
+            <button
+              type="submit"
+              className="form-submit-button"
+              disabled={isBusy}
+            >
+              {isBusy ? 'Migrating saved league…' : 'Migrate saved league'}
+            </button>
+          </div>
+        </form>
+
+        {actionError !== null && (
+          <p className="recovery-error" role="alert">
+            {actionError}
+          </p>
+        )}
+
+        <div className="recovery-actions">
+          <button
+            type="button"
+            className="secondary-button"
+            onClick={onTryAgain}
+            disabled={isBusy}
+          >
+            Try reading save again
+          </button>
+          <button
+            type="button"
+            className="danger-button"
+            onClick={onDiscard}
+            disabled={isBusy}
+          >
+            Discard version 1 save and start new league
+          </button>
+        </div>
+        <p className="recovery-note">
+          Migration creates a separate version 2 record. It does not overwrite
+          or delete the version 1 save.
+        </p>
+      </section>
+    </main>
+  )
+}
+
+function SeasonSetupFields({
+  idPrefix,
+  values,
+  error,
+  isBusy,
+  onChange,
+}: SeasonSetupFieldsProps) {
+  const helpId = `${idPrefix}-help`
+  const errorId = `${idPrefix}-error`
+  const describedBy = error === null ? helpId : `${helpId} ${errorId}`
+
+  return (
+    <fieldset className="season-setup-fields" disabled={isBusy}>
+      <legend>Regular-season setup</legend>
+      <p id={helpId} className="field-help">
+        These visible values become authoritative season creation metadata.
+      </p>
+      <div className="season-setup-grid">
+        <div className="setup-field">
+          <label htmlFor={`${idPrefix}-starting-year`}>Starting year</label>
+          <input
+            id={`${idPrefix}-starting-year`}
+            name="startingYear"
+            type="number"
+            min="0"
+            max="9998"
+            step="1"
+            inputMode="numeric"
+            value={values.startingYear}
+            onChange={(event) =>
+              onChange('startingYear', event.currentTarget.value)
+            }
+            aria-describedby={describedBy}
+            aria-invalid={error !== null}
+          />
+        </div>
+        <div className="setup-field">
+          <label htmlFor={`${idPrefix}-start-date`}>
+            Regular-season start date
+          </label>
+          <input
+            id={`${idPrefix}-start-date`}
+            name="regularSeasonStartDate"
+            type="date"
+            value={values.regularSeasonStartDate}
+            onChange={(event) =>
+              onChange('regularSeasonStartDate', event.currentTarget.value)
+            }
+            aria-describedby={describedBy}
+            aria-invalid={error !== null}
+          />
+        </div>
+        <div className="setup-field">
+          <label htmlFor={`${idPrefix}-day-spacing`}>
+            Days between game days
+          </label>
+          <input
+            id={`${idPrefix}-day-spacing`}
+            name="calendarDaySpacing"
+            type="number"
+            min="1"
+            step="1"
+            inputMode="numeric"
+            value={values.calendarDaySpacing}
+            onChange={(event) =>
+              onChange('calendarDaySpacing', event.currentTarget.value)
+            }
+            aria-describedby={describedBy}
+            aria-invalid={error !== null}
+          />
+        </div>
+        <div className="setup-field">
+          <label htmlFor={`${idPrefix}-schedule-seed`}>Schedule seed</label>
+          <input
+            id={`${idPrefix}-schedule-seed`}
+            name="scheduleSeed"
+            type="text"
+            value={values.scheduleSeed}
+            onChange={(event) =>
+              onChange('scheduleSeed', event.currentTarget.value)
+            }
+            aria-describedby={describedBy}
+            aria-invalid={error !== null}
+            autoComplete="off"
+            spellCheck={false}
+          />
+        </div>
+      </div>
+      {error !== null && (
+        <p id={errorId} className="field-error" role="alert">
+          {error}
+        </p>
+      )}
+    </fieldset>
   )
 }
 

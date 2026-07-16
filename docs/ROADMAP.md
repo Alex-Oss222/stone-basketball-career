@@ -200,10 +200,16 @@ containing the regular-season foundation and creation metadata. Its parser
 validates exact shape, domain entities, references, stored schedule invariants,
 exact supported rule-set versions, and JSON round trips without regeneration.
 The pure V1-to-V2 migration requires explicit season inputs and performs no
-storage operation. This foundation does not implement IndexedDB V2 keys, read
-precedence, atomic storage migration, stale-write handling, autosave retention,
-or application-state integration, so it does not by itself satisfy the Phase 6
-exit gate.
+storage operation itself. The active-league repository now composes it with a
+single IndexedDB transaction: V1 remains at `current`, V2 is written at
+`current-v2`, V2 has authoritative read precedence, and reread validation must
+pass before commit. Managed-team updates and clearing use the V2 revision for
+stale-write protection, while new leagues are constructed directly as V2 from
+explicit season inputs. A separately confirmed corrupt-storage recovery purge
+can delete both active versioned records without parsing malformed data; it is
+not the normal clear path. This bridge still does not implement autosave-history
+retention, named manual saves, full-season envelopes, or import/export, so it
+does not by itself satisfy the Phase 6 exit gate.
 
 Exit gate:
 

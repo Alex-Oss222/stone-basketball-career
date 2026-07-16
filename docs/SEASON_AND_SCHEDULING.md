@@ -165,9 +165,16 @@ versions are structured recovery errors; no schedule is regenerated or
 reinterpreted with a newer pack. At present the only registered restoration
 rule is the shipped Milestone 1 regular-season rule set version 1.
 
-This serialization and migration boundary does not change IndexedDB keys,
-repository read precedence, application state, or React behavior. Those remain
-separate integration work.
+The active-league repository composes this boundary without moving season rules
+into persistence. Existing V1 data remains at `activeLeague/current`; complete
+V2 data is stored at `activeLeague/current-v2` and is authoritative when
+present. A valid V2 is restored by parsing its stored entities only. A V1 is
+reported as requiring migration and receives explicit season inputs before the
+pure migration is invoked inside an atomic storage transaction. New leagues
+call this coordinator once and are stored directly as V2. Repository revisions,
+read precedence, and transaction rollback belong to persistence; season
+identity, calendar construction, opponent requirements, and schedule generation
+remain owned here by the existing domain and coordinator boundaries.
 
 ## Rule sets and opponent requirements
 

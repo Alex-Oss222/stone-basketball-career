@@ -18,6 +18,7 @@ import {
   getTeamRoster,
 } from './leagueViewModel'
 import { DashboardCard } from './dashboardShell'
+import type { LeagueProgressPresentation } from './dashboardShell'
 
 export interface DashboardSaveState {
   readonly label: string
@@ -27,13 +28,19 @@ export interface DashboardSaveState {
 export interface DashboardOverviewContentProps {
   readonly summary: SavedLeagueDashboardSummary | null
   readonly saveState: DashboardSaveState | null
+  readonly seasonProgress?: LeagueProgressPresentation
 }
 
 export function DashboardOverviewContent({
   summary,
   saveState,
+  seasonProgress,
 }: DashboardOverviewContentProps) {
   const managedTeam = summary?.managedTeam ?? null
+  const displayedProgress = seasonProgress ?? {
+    primary: NO_SEASON_STARTED_LABEL,
+    secondary: 'No games have been played or recorded.',
+  }
 
   return (
     <div className="dashboard-overview-content">
@@ -105,8 +112,8 @@ export function DashboardOverviewContent({
 
       <DashboardCard title="Competitive season">
         <p className="season-status-copy">
-          <strong>{NO_SEASON_STARTED_LABEL}</strong>
-          <span>A season calendar does not exist yet.</span>
+          <strong>{displayedProgress.primary}</strong>
+          <span>{displayedProgress.secondary}</span>
         </p>
       </DashboardCard>
     </div>

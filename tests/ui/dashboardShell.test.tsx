@@ -60,6 +60,27 @@ describe('AppHeader', () => {
     expect(markup).not.toContain('save-state-indicator')
     expect(markup).toContain('Create League')
   })
+
+  it('renders explicit schedule-ready progression for a V2-backed view', () => {
+    const markup = renderToStaticMarkup(
+      <AppHeader
+        controlledTeam={controlledTeam}
+        saveState="saved"
+        dashboardAction={deriveDashboardAction({
+          league,
+          managedTeamId: controlledTeam.id,
+        })}
+        progress={{ primary: '2026–27', secondary: 'Schedule ready' }}
+        busy={false}
+        onMainMenu={() => undefined}
+        onAuthoritativeAction={() => undefined}
+      />,
+    )
+
+    expect(markup).toContain('2026–27')
+    expect(markup).toContain('Schedule ready')
+    expect(markup).not.toContain('No season started')
+  })
 })
 
 describe('SaveStateIndicator', () => {
@@ -101,6 +122,9 @@ describe('ApplicationShell navigation semantics', () => {
     )
 
     expect(pageMarkup.match(/aria-current="page"/g)).toHaveLength(2)
+    expect(pageMarkup).not.toContain(
+      'Permanently delete local league save',
+    )
     expect(setupMarkup).not.toContain('aria-current="page"')
     expect(setupMarkup).toContain('href="#workspace-content"')
     expect(setupMarkup).toContain('id="workspace-content"')
