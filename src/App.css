@@ -124,13 +124,13 @@
   text-align: center;
 }
 
-.application-progress span:first-child {
+.application-progress-primary {
   color: var(--text);
   font-size: 13px;
   font-weight: 850;
 }
 
-.application-progress span:last-child {
+.application-progress-detail {
   color: var(--muted);
   font-size: 11px;
 }
@@ -536,6 +536,43 @@
   color: var(--muted);
 }
 
+.dashboard-upcoming-games {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dashboard-upcoming-games li + li {
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.dashboard-scheduled-game {
+  display: grid;
+  gap: 5px;
+}
+
+.dashboard-scheduled-game p {
+  margin: 0;
+  color: var(--accent-hover);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+
+.dashboard-scheduled-game strong {
+  color: var(--text);
+  font-size: 15px;
+}
+
+.dashboard-scheduled-game span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
 .empty-state {
   padding: 30px;
   color: var(--text-soft);
@@ -721,6 +758,39 @@ tbody tr:last-child td {
 
 .league-players-table {
   min-width: 720px;
+}
+
+.team-schedule-content caption,
+.schedule-calendar-content caption {
+  padding: 12px 14px;
+  color: var(--text-soft);
+  background: var(--surface-raised);
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+  font-weight: 750;
+  text-align: left;
+}
+
+.schedule-calendar-content {
+  display: grid;
+  gap: 18px;
+}
+
+.schedule-calendar-content > section {
+  min-width: 0;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.schedule-calendar-content > section > h2 {
+  margin: 0;
+  padding: 16px 18px;
+  color: var(--text);
+  background: var(--surface-raised);
+  border-bottom: 1px solid var(--line);
+  font-size: 17px;
 }
 
 .roster-table tbody tr:hover,
@@ -1269,7 +1339,7 @@ tbody tr:last-child td {
   .application-progress {
     order: 3;
     grid-column: 1 / -1;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 12px;
     min-height: 25px;

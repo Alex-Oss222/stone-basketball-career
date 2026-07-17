@@ -1,5 +1,6 @@
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
+import { parseLocalDate } from '../../src/domain/localDate'
 import { generateLeague } from '../../src/generation/generateLeague'
 import {
   DashboardOverviewContent,
@@ -8,6 +9,7 @@ import {
   TeamRosterContent,
 } from '../../src/ui/dashboardPages'
 import { getTeamRoster } from '../../src/ui/leagueViewModel'
+import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
 
 const league = generateLeague('dashboard-pages-fixture')
 const controlledTeam = league.teams[0]
@@ -16,7 +18,10 @@ const roster = getTeamRoster(league, controlledTeam.id)
 describe('dashboard page rendering', () => {
   it('describes the empty local state without a false saved status', () => {
     const markup = renderToStaticMarkup(
-      <DashboardOverviewContent summary={null} saveState={null} />,
+      <DashboardOverviewContent
+        snapshot={null}
+        saveState={null}
+      />,
     )
 
     expect(markup).toContain('No league is currently saved.')
@@ -24,22 +29,50 @@ describe('dashboard page rendering', () => {
     expect(markup).not.toContain('Saved locally')
   })
 
-  it('renders supplied schedule-ready progress without inventing results', () => {
+  it('renders the managed team schedule summary and upcoming stored games without fabricated results', () => {
+    const snapshot = createLeagueSnapshotV2Fixture()
     const markup = renderToStaticMarkup(
       <DashboardOverviewContent
-        summary={null}
-        saveState={null}
-        seasonProgress={{
-          primary: 'Schedule ready',
-          secondary:
-            '2026–27 regular-season schedule stored locally. No games have been played.',
-        }}
+        snapshot={snapshot}
+        saveState={{ label: 'Saved locally', state: 'saved' }}
       />,
     )
 
-    expect(markup).toContain('Schedule ready')
-    expect(markup).toContain('No games have been played')
+    expect(markup).toContain(snapshot.season.displayLabel)
+    expect(markup).toContain('October 5, 2026')
+    expect(markup).toContain('Regular season')
+    expect(markup).toContain('<dt>Total games</dt><dd>28</dd>')
+    expect(markup).toContain('<dt>Home</dt><dd>14</dd>')
+    expect(markup).toContain('<dt>Away</dt><dd>14</dd>')
+    expect(markup.match(/class="dashboard-scheduled-game"/g)).toHaveLength(4)
     expect(markup).not.toContain('No season started')
+    expect(markup).not.toContain('Score')
+    expect(markup).not.toContain('Record')
+    expect(markup).not.toContain('Standings')
+  })
+
+  it('shows an honest empty state when the stored current date has no future game', () => {
+    const snapshot = createLeagueSnapshotV2Fixture()
+    const afterSchedule = {
+      ...snapshot,
+      season: {
+        ...snapshot.season,
+        currentDate: parseLocalDate('2027-12-31'),
+      },
+    }
+    const markup = renderToStaticMarkup(
+      <DashboardOverviewContent
+        snapshot={afterSchedule}
+        saveState={{ label: 'Saved locally', state: 'saved' }}
+      />,
+    )
+
+    expect(markup).toContain(
+      'No future scheduled game exists on or after the stored current date.',
+    )
+    expect(markup).toContain(
+      'No additional future scheduled games are available.',
+    )
   })
 
   it('keeps the complete real roster and rating details in keyboard-scrollable regions', () => {

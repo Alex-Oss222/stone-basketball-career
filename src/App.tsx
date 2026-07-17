@@ -8,7 +8,6 @@ import type { SeasonFoundationConfiguration } from './app/commands/createSeasonF
 import { requestCorruptLeagueStoragePurge } from './app/commands/requestCorruptLeagueStoragePurge'
 import {
   SAVE_INDICATOR_LABELS,
-  createSavedLeagueDashboardSummary,
   deriveDashboardAction,
 } from './app/dashboardViewModel'
 import type {
@@ -48,6 +47,11 @@ import {
   ComingLaterPage,
 } from './ui/dashboardShell'
 import { getTeamRoster } from './ui/leagueViewModel'
+import {
+  LeagueScheduleOverviewContent,
+  ScheduleCalendarContent,
+  TeamScheduleContent,
+} from './ui/schedulePages'
 import {
   LeagueCreationScreen,
   MigrationRequiredScreen,
@@ -134,17 +138,18 @@ function App() {
     snapshot === null
       ? null
       : { league: snapshot.league, managedTeamId: snapshot.managedTeamId }
-  const dashboardAction = deriveDashboardAction(dashboardState)
-  const dashboardSummary =
+  const dashboardAction = deriveDashboardAction(
     dashboardState === null
       ? null
-      : createSavedLeagueDashboardSummary(dashboardState)
+      : { ...dashboardState, hasSchedule: true },
+  )
   const leagueProgress =
     snapshot === null
       ? undefined
       : {
-          primary: snapshot.season.displayLabel,
-          secondary: 'Schedule ready',
+          seasonLabel: snapshot.season.displayLabel,
+          currentDate: snapshot.season.currentDate,
+          currentPhase: snapshot.season.currentPhase,
         }
 
   const resetToLeagueCreation = useCallback((): void => {
@@ -414,12 +419,12 @@ function App() {
       return
     }
 
-    if (setupView === null && activePageId === 'team-roster') {
-      document.getElementById('page-team-roster-heading')?.focus()
+    if (setupView === null && activePageId === 'schedule-team-schedule') {
+      document.getElementById('page-schedule-team-schedule-heading')?.focus()
       return
     }
 
-    handleNavigate('team-roster')
+    handleNavigate('schedule-team-schedule')
   }
 
   function handleChangeTeam(): void {
@@ -617,7 +622,6 @@ function App() {
             selectedPlayerId,
             isBusy,
             saveState,
-            dashboardSummary,
             handleNavigate,
             handleChangeTeam,
             setSelectedPlayerId,
@@ -635,7 +639,6 @@ function renderAvailablePage(
   selectedPlayerId: PlayerId | null,
   isBusy: boolean,
   saveState: SaveIndicatorState | null,
-  dashboardSummary: ReturnType<typeof createSavedLeagueDashboardSummary> | null,
   onNavigate: (pageId: NavigationPageId) => void,
   onChangeTeam: () => void,
   onSelectPlayer: (playerId: PlayerId) => void,
@@ -644,15 +647,7 @@ function renderAvailablePage(
     case 'dashboard-overview':
       return (
         <DashboardOverviewContent
-          summary={dashboardSummary}
-          seasonProgress={
-            snapshot === null
-              ? undefined
-              : {
-                  primary: 'Schedule ready',
-                  secondary: `${snapshot.season.displayLabel} regular-season schedule stored locally. No games have been played.`,
-                }
-          }
+          snapshot={snapshot}
           saveState={
             saveState === null
               ? null
@@ -671,6 +666,12 @@ function renderAvailablePage(
           onChangeTeam={onChangeTeam}
         />
       )
+    case 'schedule-team-schedule':
+      return <TeamScheduleContent snapshot={snapshot} />
+    case 'schedule-calendar':
+      return <ScheduleCalendarContent snapshot={snapshot} />
+    case 'league-overview':
+      return <LeagueScheduleOverviewContent snapshot={snapshot} />
     case 'league-teams':
       return (
         <LeagueTeamsContent

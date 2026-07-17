@@ -169,6 +169,15 @@ verifies both are absent before commit, and reports failure without changing
 the active state when the transaction aborts. It is never shown for an empty,
 migration-required, or healthy restored league.
 
+Once a valid V2 is restored, the application shell presents its stored season
+label, current `LocalDate`, broad phase, and schedule without regenerating the
+foundation. The dashboard shows only stored or directly selected schedule
+facts; Team Schedule shows the managed team's 28 games; Calendar groups the
+stored league games by their 28 `GameDay` records; and League Overview reports
+the stored team, game, game-day, publication, and season values. Opponent and
+home/away labels are pure projections. Scores, records, standings, results,
+postseason qualification, and simulation actions remain absent.
+
 ## Product behavior and boundaries
 
 - The app works after its static assets load, with no calls required to external services.

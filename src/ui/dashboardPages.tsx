@@ -4,13 +4,26 @@ import { POSITIONS, isPosition } from '../domain/league'
 import type { League, Player, Team } from '../domain/league'
 import {
   NO_SEASON_STARTED_LABEL,
+  createSavedLeagueDashboardSummary,
   filterLeaguePlayers,
 } from '../app/dashboardViewModel'
 import type {
   PlayerPositionFilter,
   SaveIndicatorState,
-  SavedLeagueDashboardSummary,
 } from '../app/dashboardViewModel'
+import {
+  calculateTeamScheduleTotals,
+  findNextScheduledGame,
+  formatLocalDateForDisplay,
+  formatSeasonPhaseForDisplay,
+  getTeamLocation,
+  getUpcomingScheduledGames,
+  resolveOpponent,
+} from '../app/scheduleViewModel'
+import type {
+  LeagueSnapshotV2,
+  LeagueSnapshotV2ScheduledGameDto,
+} from '../persistence/leagueSnapshotV2'
 import {
   createRatingDisplayRows,
   formatPlayerName,
@@ -18,7 +31,6 @@ import {
   getTeamRoster,
 } from './leagueViewModel'
 import { DashboardCard } from './dashboardShell'
-import type { LeagueProgressPresentation } from './dashboardShell'
 
 export interface DashboardSaveState {
   readonly label: string
@@ -26,21 +38,45 @@ export interface DashboardSaveState {
 }
 
 export interface DashboardOverviewContentProps {
-  readonly summary: SavedLeagueDashboardSummary | null
   readonly saveState: DashboardSaveState | null
-  readonly seasonProgress?: LeagueProgressPresentation
+  readonly snapshot: LeagueSnapshotV2 | null
 }
 
 export function DashboardOverviewContent({
-  summary,
   saveState,
-  seasonProgress,
+  snapshot,
 }: DashboardOverviewContentProps) {
+  const summary =
+    snapshot === null
+      ? null
+      : createSavedLeagueDashboardSummary({
+          league: snapshot.league,
+          managedTeamId: snapshot.managedTeamId,
+        })
   const managedTeam = summary?.managedTeam ?? null
-  const displayedProgress = seasonProgress ?? {
-    primary: NO_SEASON_STARTED_LABEL,
-    secondary: 'No games have been played or recorded.',
-  }
+  const managedTeamId = snapshot?.managedTeamId ?? null
+  const scheduleTotals =
+    snapshot === null || managedTeamId === null
+      ? null
+      : calculateTeamScheduleTotals(snapshot.leagueSchedule, managedTeamId)
+  const nextGame =
+    snapshot === null || managedTeamId === null
+      ? null
+      : findNextScheduledGame(
+          snapshot.leagueSchedule,
+          managedTeamId,
+          snapshot.season.currentDate,
+        )
+  const followingGames =
+    snapshot === null || managedTeamId === null
+      ? []
+      : getUpcomingScheduledGames(
+          snapshot.leagueSchedule,
+          managedTeamId,
+          snapshot.season.currentDate,
+        )
+          .filter((game) => game.id !== nextGame?.id)
+          .slice(0, 3)
 
   return (
     <div className="dashboard-overview-content">
@@ -111,12 +147,130 @@ export function DashboardOverviewContent({
       )}
 
       <DashboardCard title="Competitive season">
-        <p className="season-status-copy">
-          <strong>{displayedProgress.primary}</strong>
-          <span>{displayedProgress.secondary}</span>
-        </p>
+        {snapshot === null ? (
+          <p className="season-status-copy">
+            <strong>{NO_SEASON_STARTED_LABEL}</strong>
+            <span>Create a league to establish its season foundation.</span>
+          </p>
+        ) : (
+          <dl className="dashboard-facts" aria-label="Stored season summary">
+            <div>
+              <dt>Season</dt>
+              <dd>{snapshot.season.displayLabel}</dd>
+            </div>
+            <div>
+              <dt>Current date</dt>
+              <dd>
+                <time dateTime={snapshot.season.currentDate}>
+                  {formatLocalDateForDisplay(snapshot.season.currentDate)}
+                </time>
+              </dd>
+            </div>
+            <div>
+              <dt>Phase</dt>
+              <dd>
+                {formatSeasonPhaseForDisplay(snapshot.season.currentPhase)}
+              </dd>
+            </div>
+          </dl>
+        )}
       </DashboardCard>
+
+      {snapshot !== null && managedTeamId !== null && scheduleTotals !== null && (
+        <>
+          <DashboardCard title="Team schedule">
+            <dl
+              className="dashboard-facts"
+              aria-label="Managed-team schedule totals"
+            >
+              <div>
+                <dt>Total games</dt>
+                <dd>{scheduleTotals.totalGames}</dd>
+              </div>
+              <div>
+                <dt>Home</dt>
+                <dd>{scheduleTotals.homeGames}</dd>
+              </div>
+              <div>
+                <dt>Away</dt>
+                <dd>{scheduleTotals.awayGames}</dd>
+              </div>
+            </dl>
+          </DashboardCard>
+
+          <DashboardCard title="Next scheduled game">
+            {nextGame === null ? (
+              <p>
+                No future scheduled game exists on or after the stored current
+                date.
+              </p>
+            ) : (
+              <DashboardScheduledGame
+                snapshot={snapshot}
+                game={nextGame}
+                managedTeamId={managedTeamId}
+              />
+            )}
+          </DashboardCard>
+
+          <DashboardCard title="Following games">
+            {followingGames.length === 0 ? (
+              <p>No additional future scheduled games are available.</p>
+            ) : (
+              <ol className="dashboard-upcoming-games">
+                {followingGames.map((game) => (
+                  <li key={game.id}>
+                    <DashboardScheduledGame
+                      snapshot={snapshot}
+                      game={game}
+                      managedTeamId={managedTeamId}
+                    />
+                  </li>
+                ))}
+              </ol>
+            )}
+          </DashboardCard>
+        </>
+      )}
     </div>
+  )
+}
+
+const GAME_STATUS_LABELS = {
+  scheduled: 'Scheduled',
+  postponed: 'Postponed',
+  completed: 'Completed',
+  cancelled: 'Cancelled',
+} as const
+
+function DashboardScheduledGame({
+  snapshot,
+  game,
+  managedTeamId,
+}: {
+  readonly snapshot: LeagueSnapshotV2
+  readonly game: LeagueSnapshotV2ScheduledGameDto
+  readonly managedTeamId: TeamId
+}) {
+  const opponent = resolveOpponent(snapshot.league, game, managedTeamId)
+  const location = getTeamLocation(game, managedTeamId)
+
+  return (
+    <article className="dashboard-scheduled-game">
+      <p>
+        {game.currentScheduledDate === null ? (
+          'TBA'
+        ) : (
+          <time dateTime={game.currentScheduledDate}>
+            {formatLocalDateForDisplay(game.currentScheduledDate)}
+          </time>
+        )}
+      </p>
+      <strong>
+        {location === 'home' ? 'Home vs' : 'Away at'} {formatTeamName(opponent)}
+      </strong>
+      <span>{GAME_STATUS_LABELS[game.status]}</span>
+    </article>
   )
 }
 

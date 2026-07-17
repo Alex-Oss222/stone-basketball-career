@@ -11,6 +11,10 @@ import type {
 } from '../app/dashboardViewModel'
 export type { SaveIndicatorState } from '../app/dashboardViewModel'
 import {
+  formatLocalDateForDisplay,
+  formatSeasonPhaseForDisplay,
+} from '../app/scheduleViewModel'
+import {
   NAVIGATION_SECTIONS,
   getSectionForPage,
 } from '../app/navigation'
@@ -20,6 +24,8 @@ import type {
   NavigationSection,
 } from '../app/navigation'
 import type { Team } from '../domain/league'
+import type { LocalDate } from '../domain/localDate'
+import type { SeasonPhase } from '../domain/season'
 
 type AvailableNavigationPage = Extract<
   NavigationPage,
@@ -114,8 +120,9 @@ export interface AppHeaderProps {
 }
 
 export interface LeagueProgressPresentation {
-  readonly primary: string
-  readonly secondary: string
+  readonly seasonLabel: string
+  readonly currentDate: LocalDate
+  readonly currentPhase: SeasonPhase
 }
 
 export function AppHeader({
@@ -136,10 +143,6 @@ export function AppHeader({
     controlledTeam === null
       ? 'Choose a team to establish your front office.'
       : controlledTeam.abbreviation
-  const displayedProgress = progress ?? {
-    primary: LEAGUE_SETUP_PROGRESS_LABEL,
-    secondary: NO_SEASON_STARTED_LABEL,
-  }
 
   return (
     <header className="application-header">
@@ -159,8 +162,30 @@ export function AppHeader({
       </div>
 
       <div className="application-progress" aria-label="League progression">
-        <span>{displayedProgress.primary}</span>
-        <span>{displayedProgress.secondary}</span>
+        {progress === undefined ? (
+          <>
+            <span className="application-progress-primary">
+              {LEAGUE_SETUP_PROGRESS_LABEL}
+            </span>
+            <span className="application-progress-detail">
+              {NO_SEASON_STARTED_LABEL}
+            </span>
+          </>
+        ) : (
+          <>
+            <span className="application-progress-primary">
+              {progress.seasonLabel}
+            </span>
+            <span className="application-progress-detail">
+              <span className="visually-hidden">Current date: </span>
+              {formatLocalDateForDisplay(progress.currentDate)}
+            </span>
+            <span className="application-progress-detail">
+              <span className="visually-hidden">Current phase: </span>
+              {formatSeasonPhaseForDisplay(progress.currentPhase)}
+            </span>
+          </>
+        )}
       </div>
 
       <div className="application-header-actions">

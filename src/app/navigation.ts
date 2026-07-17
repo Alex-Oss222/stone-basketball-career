@@ -137,26 +137,24 @@ export const NAVIGATION_SECTIONS = [
       {
         id: 'schedule-team-schedule',
         label: 'Team Schedule',
-        availability: 'planned',
-        requiredSystem: 'Requires schedule generation and season state.',
+        availability: 'available',
       },
       {
         id: 'schedule-calendar',
         label: 'Calendar',
-        availability: 'planned',
-        requiredSystem: 'Requires a league calendar system.',
+        availability: 'available',
       },
       {
         id: 'schedule-results',
         label: 'Results',
         availability: 'planned',
-        requiredSystem: 'Requires game simulation and saved results.',
+        requiredSystem: 'Requires game simulation and completed game results.',
       },
       {
         id: 'schedule-postseason',
         label: 'Postseason',
         availability: 'planned',
-        requiredSystem: 'Requires a postseason system.',
+        requiredSystem: 'Requires qualification and playoff bracket systems.',
       },
     ],
   },
@@ -191,8 +189,7 @@ export const NAVIGATION_SECTIONS = [
       {
         id: 'league-overview',
         label: 'Overview',
-        availability: 'planned',
-        requiredSystem: 'Requires league summary data.',
+        availability: 'available',
       },
       {
         id: 'league-standings',

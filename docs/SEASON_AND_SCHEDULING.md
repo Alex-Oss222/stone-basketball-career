@@ -151,6 +151,16 @@ matrix is validated in place against the exact registered rule policy, while
 the stored game and game-day arrays retain their order. Therefore later schedule
 publication or date-status state is not reset to pristine generator output.
 
+The current React integration is deliberately read-only. It receives the
+validated V2 snapshot as a single value and selects the stored season header,
+managed-team schedule, upcoming games, GameDay groups, and publication summary
+without rebuilding any domain object. Visible dates are formatted directly
+from `LocalDate` components without JavaScript `Date`, UTC, locale, or timezone
+conversion. Returning to the main menu changes navigation only; stored season,
+calendar, team-season, schedule, game, and game-day identities remain intact.
+Results and postseason pages remain unavailable until their domain systems
+exist.
+
 V1-to-V2 migration is deliberately different: V1 has no season foundation, so
 the pure migration requires all season-creation inputs explicitly and calls the
 existing coordinator once. It stores exactly that result and its actual rule-set

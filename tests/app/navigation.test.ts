@@ -112,6 +112,9 @@ const EXPECTED_PAGE_IDS = EXPECTED_HIERARCHY.flatMap((section) =>
 const AVAILABLE_PAGE_IDS = [
   'dashboard-overview',
   'team-roster',
+  'schedule-team-schedule',
+  'schedule-calendar',
+  'league-overview',
   'league-teams',
   'league-players',
 ] as const
@@ -139,7 +142,7 @@ describe('central navigation registry', () => {
     }
   })
 
-  it('marks exactly the four implemented pages available', () => {
+  it('marks exactly the seven implemented pages available', () => {
     const pages = allPages()
 
     expect(
@@ -156,6 +159,21 @@ describe('central navigation registry', () => {
         (pageId) => !AVAILABLE_PAGE_IDS.some((available) => available === pageId),
       ),
     )
+  })
+
+  it('keeps results and postseason planned with honest dependency explanations', () => {
+    expect(getPageById('schedule-results')).toEqual({
+      id: 'schedule-results',
+      label: 'Results',
+      availability: 'planned',
+      requiredSystem: 'Requires game simulation and completed game results.',
+    })
+    expect(getPageById('schedule-postseason')).toEqual({
+      id: 'schedule-postseason',
+      label: 'Postseason',
+      availability: 'planned',
+      requiredSystem: 'Requires qualification and playoff bracket systems.',
+    })
   })
 
   it('gives every planned page a short required-system explanation only', () => {

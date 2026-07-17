@@ -41,16 +41,26 @@ describe('dashboard header and action models', () => {
     ],
     [
       'league without a managed team',
-      { league, managedTeamId: null },
+      { league, managedTeamId: null, hasSchedule: true },
       { label: 'Choose Team', target: 'choose-team' },
     ],
     [
-      'managed league',
-      { league, managedTeamId: league.teams[0].id },
-      { label: 'View Roster', target: 'view-roster' },
+      'managed league with a schedule',
+      { league, managedTeamId: league.teams[0].id, hasSchedule: true },
+      { label: 'View Schedule', target: 'view-schedule' },
     ],
   ])('derives the authoritative action for %s', (_name, state, expected) => {
     expect(deriveDashboardAction(state)).toEqual(expected)
+  })
+
+  it('does not imply a schedule action when a managed league has no schedule', () => {
+    expect(() =>
+      deriveDashboardAction({
+        league,
+        managedTeamId: league.teams[0].id,
+        hasSchedule: false,
+      }),
+    ).toThrow('A managed league must have a schedule')
   })
 })
 

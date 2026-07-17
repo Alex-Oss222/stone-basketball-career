@@ -24,6 +24,10 @@ export interface DashboardLeagueState {
   readonly managedTeamId: TeamId | null
 }
 
+export interface DashboardActionLeagueState extends DashboardLeagueState {
+  readonly hasSchedule: boolean
+}
+
 export type DashboardAction =
   | {
       readonly label: 'Create League'
@@ -34,8 +38,8 @@ export type DashboardAction =
       readonly target: 'choose-team'
     }
   | {
-      readonly label: 'View Roster'
-      readonly target: 'view-roster'
+      readonly label: 'View Schedule'
+      readonly target: 'view-schedule'
     }
 
 export interface ManagedTeamDashboardSummary {
@@ -65,7 +69,7 @@ export interface LeaguePlayerFilterResult {
 
 /** Returns the one action justified by the currently stored league state. */
 export function deriveDashboardAction(
-  state: DashboardLeagueState | null,
+  state: DashboardActionLeagueState | null,
 ): DashboardAction {
   if (state === null) {
     return { label: 'Create League', target: 'create-league' }
@@ -75,7 +79,11 @@ export function deriveDashboardAction(
   }
 
   requireTeam(state.league, state.managedTeamId)
-  return { label: 'View Roster', target: 'view-roster' }
+  if (!state.hasSchedule) {
+    throw new RangeError('A managed league must have a schedule')
+  }
+
+  return { label: 'View Schedule', target: 'view-schedule' }
 }
 
 /** Builds only facts that exist in the generated league snapshot. */

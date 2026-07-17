@@ -26,19 +26,29 @@ describe('ComingLaterPage', () => {
     )
   })
 
-  it('contains no data table, definition list, or fabricated numeric content', () => {
-    const section = getSectionById('schedule')
-    const page = getPageById('schedule-results')
-    if (section === undefined || page?.availability !== 'planned') {
-      throw new Error('Expected the planned schedule results page')
-    }
+  it.each([
+    ['schedule-results', 'game simulation and completed game results'],
+    ['schedule-postseason', 'qualification and playoff bracket systems'],
+  ] as const)(
+    '%s contains only its honest dependency explanation',
+    (pageId, requiredCopy) => {
+      const section = getSectionById('schedule')
+      const page = getPageById(pageId)
+      if (section === undefined || page?.availability !== 'planned') {
+        throw new Error(`Expected the planned ${pageId} page`)
+      }
 
-    const markup = renderToStaticMarkup(
-      <ComingLaterPage section={section} page={page} />,
-    )
-    const visibleText = markup.replace(/<[^>]*>/g, ' ')
+      const markup = renderToStaticMarkup(
+        <ComingLaterPage section={section} page={page} />,
+      )
+      const visibleText = markup.replace(/<[^>]*>/g, ' ')
 
-    expect(markup).not.toMatch(/<(?:table|dl)(?:\s|>)/i)
-    expect(visibleText).not.toMatch(/\d/)
-  })
+      expect(markup).not.toMatch(/<(?:table|dl)(?:\s|>)/i)
+      expect(visibleText).not.toMatch(/\d/)
+      expect(markup).toContain(requiredCopy)
+      expect(markup).not.toContain('Score')
+      expect(markup).not.toContain('Record')
+      expect(markup).not.toContain('Standings')
+    },
+  )
 })

@@ -4,14 +4,15 @@ import {
   SAVE_INDICATOR_LABELS,
   deriveDashboardAction,
 } from '../../src/app/dashboardViewModel'
-import { generateLeague } from '../../src/generation/generateLeague'
+import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
 import {
   AppHeader,
   ApplicationShell,
   SaveStateIndicator,
 } from '../../src/ui/dashboardShell'
 
-const league = generateLeague('dashboard-shell-fixture')
+const snapshot = createLeagueSnapshotV2Fixture()
+const league = snapshot.league
 const controlledTeam = league.teams[0]
 
 describe('AppHeader', () => {
@@ -19,6 +20,7 @@ describe('AppHeader', () => {
     const action = deriveDashboardAction({
       league,
       managedTeamId: controlledTeam.id,
+      hasSchedule: true,
     })
     const markup = renderToStaticMarkup(
       <AppHeader
@@ -39,7 +41,7 @@ describe('AppHeader', () => {
     expect(markup).toContain('No season started')
     expect(markup).toContain('Tools / Settings')
     expect(markup).toContain('Coming later')
-    expect(markup).toContain('View Roster')
+    expect(markup).toContain('View Schedule')
     expect(markup.match(/class="authoritative-action"/g)).toHaveLength(1)
     expect(markup).not.toContain('Sim Next Game')
   })
@@ -69,16 +71,22 @@ describe('AppHeader', () => {
         dashboardAction={deriveDashboardAction({
           league,
           managedTeamId: controlledTeam.id,
+          hasSchedule: true,
         })}
-        progress={{ primary: '2026–27', secondary: 'Schedule ready' }}
+        progress={{
+          seasonLabel: snapshot.season.displayLabel,
+          currentDate: snapshot.season.currentDate,
+          currentPhase: snapshot.season.currentPhase,
+        }}
         busy={false}
         onMainMenu={() => undefined}
         onAuthoritativeAction={() => undefined}
       />,
     )
 
-    expect(markup).toContain('2026–27')
-    expect(markup).toContain('Schedule ready')
+    expect(markup).toContain(snapshot.season.displayLabel)
+    expect(markup).toContain('October 5, 2026')
+    expect(markup).toContain('Regular season')
     expect(markup).not.toContain('No season started')
   })
 })

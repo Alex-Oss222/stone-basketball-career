@@ -671,6 +671,15 @@ explicit season inputs. The application generates the league once, calls
 places it into React state only after the repository confirms commit. Normal V2
 restore remains parse-and-validate only and never calls any generator.
 
+The read-only application layer keeps that validated V2 value as one atomic
+React state object. Header progression, dashboard schedule cards, the managed
+team's 28-game schedule, the 28-day league calendar, and the league schedule
+overview are projections of the stored `Season` and `LeagueSchedule`. Pure
+selectors preserve stored game and game-day ordering while resolving opponents,
+home/away roles, future games, and display-only `LocalDate` labels. These view
+models are not serialized, do not write lifecycle state, and do not call league,
+season, opponent, calendar, schedule, ID, or random generation.
+
 ### Planned full-season save envelope
 
 ```ts
