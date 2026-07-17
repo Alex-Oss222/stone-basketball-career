@@ -14,7 +14,7 @@ rule, changeable in a versioned task — this is that task.
 
 ## Proven foundations already landed (green, committed)
 
-Pass 1 and pass 3a are done as pure, tested modules that break nothing:
+All four pure engines are done as tested modules that break nothing:
 
 - **`src/domain/seasonTimeline.ts`** — anchor-rule NBA dates from the starting
   year (Tuesday opening in Oct 18–24, 174-day season, All-Star = 3rd Sunday of
@@ -23,11 +23,30 @@ Pass 1 and pass 3a are done as pure, tested modules that break nothing:
   real 2025-26 calendar (`tests/domain/seasonTimeline.test.ts`).
 - **`src/generation/scheduleMatrix.ts`** — `buildBalancedMeetingMatrix` yields a
   deterministic, perfectly balanced meeting set: 30 teams × 82 games = 1230
-  meetings, 41 home / 41 away each, 24 opponents played 3× and 5 played 2×
-  (`tests/generation/scheduleMatrix.test.ts`).
+  meetings, 41 home / 41 away each, 24 opponents played 3× and 5 played 2×.
+- **`src/generation/scheduleDatePlacement.ts`** — `placeMeetingsAcrossDates`
+  places all 1230 meetings across the 174-day window so no team plays twice in a
+  day, spread across the window, deterministic.
+- **`src/domain/leagueStructure.ts`** — `alignTeamIndex` maps 30 team indexes to
+  two conferences of three five-team divisions each. Ready for standings and the
+  per-conference play-in / playoffs.
 
-These are the two hard parts (the dates and the balanced matchups). What remains
-is mechanical wiring plus coordinated test updates.
+The genuinely hard, novel parts (the dates, the balanced matchups, conflict-free
+placement, the alignment) are all solved. What remains is mechanical wiring plus
+coordinated test updates.
+
+## Generator note (important)
+
+`generateRegularSeasonSchedule` is a **circle-method round-robin** with stable
+game-day and game IDs derived from the round/cycle position. It cannot produce
+82 games for 30 teams (uniform round robins give 58 or 87, never 82), so this is
+**not a config swap**. Build a NEW additive generator —
+`generateNbaRegularSeasonSchedule` — that consumes `buildBalancedMeetingMatrix`
++ `placeMeetingsAcrossDates`, derives stable IDs from `(seasonId, ruleSet, seed,
+home, away, meetingNumber)`, and emits the same `LeagueSchedule` shape (game-days
+by placed date, games, opponent requirements). Test it in isolation (existing
+8-team path stays green), then flip `createSeasonFoundation` + the app config to
+it in the final coordinated commit.
 
 ## Why the rest is one coordinated commit
 
