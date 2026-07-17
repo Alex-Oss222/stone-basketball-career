@@ -309,12 +309,15 @@ export function SecondaryTabNavigation({
 export interface AvailablePageProps {
   readonly page: AvailableNavigationPage
   readonly section: NavigationSection
+  /** Overrides the page label as the h1 — Home shows the controlled team name. */
+  readonly heading?: string
   readonly children: ReactNode
 }
 
 export function AvailablePage({
   page,
   section,
+  heading,
   children,
 }: AvailablePageProps) {
   const headingId = `page-${page.id}-heading`
@@ -325,7 +328,7 @@ export function AvailablePage({
       <header className="page-heading">
         <p className="page-status">{section.label}</p>
         <h1 id={headingId} ref={headingRef} tabIndex={-1}>
-          {page.label}
+          {heading ?? page.label}
         </h1>
       </header>
       {children}

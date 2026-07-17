@@ -5,7 +5,6 @@ import {
   DASHBOARD_HEADER_MODEL,
   LEAGUE_SETUP_PROGRESS_LABEL,
   NO_SEASON_STARTED_LABEL,
-  createSavedLeagueDashboardSummary,
   deriveDashboardAction,
   filterLeaguePlayers,
 } from '../../src/app/dashboardViewModel'
@@ -61,53 +60,6 @@ describe('dashboard header and action models', () => {
         hasSchedule: false,
       }),
     ).toThrow('A managed league must have a schedule')
-  })
-})
-
-describe('saved league dashboard summary', () => {
-  it('reports only real saved league and managed-roster facts', () => {
-    const team = league.teams[3]
-    const roster = league.players.filter((player) => player.teamId === team.id)
-    const summary = createSavedLeagueDashboardSummary({
-      league,
-      managedTeamId: team.id,
-    })
-
-    expect(Object.keys(summary)).toEqual([
-      'leagueId',
-      'teamCount',
-      'managedTeam',
-    ])
-    expect(summary.leagueId).toBe(league.id)
-    expect(summary.teamCount).toBe(league.teams.length)
-    expect(summary.managedTeam).toEqual({
-      teamId: team.id,
-      teamName: formatTeamName(team),
-      abbreviation: team.abbreviation,
-      rosterSize: roster.length,
-      averageAge:
-        roster.reduce((total, player) => total + player.age, 0) / roster.length,
-      positionBreakdown: {
-        PG: countPosition(roster, 'PG'),
-        SG: countPosition(roster, 'SG'),
-        SF: countPosition(roster, 'SF'),
-        PF: countPosition(roster, 'PF'),
-        C: countPosition(roster, 'C'),
-      },
-    })
-    expect(Object.keys(summary.managedTeam ?? {})).not.toEqual(
-      expect.arrayContaining(['record', 'date', 'wins', 'losses', 'statistics']),
-    )
-  })
-
-  it('does not invent managed-team facts before team selection', () => {
-    expect(
-      createSavedLeagueDashboardSummary({ league, managedTeamId: null }),
-    ).toEqual({
-      leagueId: league.id,
-      teamCount: league.teams.length,
-      managedTeam: null,
-    })
   })
 })
 
@@ -170,10 +122,3 @@ describe('league-wide player filtering', () => {
     expectTypeOf<PlayerPositionFilter>().toEqualTypeOf<Position | 'ALL'>()
   })
 })
-
-function countPosition(
-  players: typeof league.players,
-  position: Position,
-): number {
-  return players.filter((player) => player.primaryPosition === position).length
-}

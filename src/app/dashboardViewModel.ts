@@ -1,4 +1,4 @@
-import type { LeagueId, TeamId } from '../domain/ids'
+import type { TeamId } from '../domain/ids'
 import type { League, Player, Position, Team } from '../domain/league'
 
 export const LEAGUE_SETUP_PROGRESS_LABEL = 'League setup' as const
@@ -42,21 +42,6 @@ export type DashboardAction =
       readonly target: 'view-schedule'
     }
 
-export interface ManagedTeamDashboardSummary {
-  readonly teamId: TeamId
-  readonly teamName: string
-  readonly abbreviation: string
-  readonly rosterSize: number
-  readonly averageAge: number
-  readonly positionBreakdown: Readonly<Record<Position, number>>
-}
-
-export interface SavedLeagueDashboardSummary {
-  readonly leagueId: LeagueId
-  readonly teamCount: number
-  readonly managedTeam: ManagedTeamDashboardSummary | null
-}
-
 export type PlayerPositionFilter = Position | 'ALL'
 
 export interface LeaguePlayerFilterResult {
@@ -84,42 +69,6 @@ export function deriveDashboardAction(
   }
 
   return { label: 'View Schedule', target: 'view-schedule' }
-}
-
-/** Builds only facts that exist in the generated league snapshot. */
-export function createSavedLeagueDashboardSummary(
-  state: DashboardLeagueState,
-): SavedLeagueDashboardSummary {
-  if (state.managedTeamId === null) {
-    return {
-      leagueId: state.league.id,
-      teamCount: state.league.teams.length,
-      managedTeam: null,
-    }
-  }
-
-  const team = requireTeam(state.league, state.managedTeamId)
-  const roster = state.league.players.filter(
-    (player) => player.teamId === team.id,
-  )
-  if (roster.length === 0) {
-    throw new RangeError('Managed team must have at least one player')
-  }
-
-  const totalAge = roster.reduce((total, player) => total + player.age, 0)
-
-  return {
-    leagueId: state.league.id,
-    teamCount: state.league.teams.length,
-    managedTeam: {
-      teamId: team.id,
-      teamName: `${team.city} ${team.nickname}`,
-      abbreviation: team.abbreviation,
-      rosterSize: roster.length,
-      averageAge: totalAge / roster.length,
-      positionBreakdown: countPrimaryPositions(roster),
-    },
-  }
 }
 
 /**
@@ -172,22 +121,4 @@ function requireTeam(league: League, teamId: TeamId): Team {
     throw new RangeError('Managed team ID does not reference a league team')
   }
   return team
-}
-
-function countPrimaryPositions(
-  players: readonly Player[],
-): Readonly<Record<Position, number>> {
-  const counts: Record<Position, number> = {
-    PG: 0,
-    SG: 0,
-    SF: 0,
-    PF: 0,
-    C: 0,
-  }
-
-  for (const player of players) {
-    counts[player.primaryPosition] += 1
-  }
-
-  return counts
 }

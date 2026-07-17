@@ -110,7 +110,7 @@ describe('SaveStateIndicator', () => {
 describe('ApplicationShell navigation semantics', () => {
   it('marks the active section and page only for a configured page view', () => {
     const baseProps = {
-      activePageId: 'dashboard-overview' as const,
+      activePageId: 'home-today' as const,
       controlledTeam: null,
       saveState: null,
       dashboardAction: deriveDashboardAction(null),

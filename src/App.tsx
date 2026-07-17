@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react'
 import type { FormEvent } from 'react'
 import { createNewLeagueSnapshotV2 } from './app/commands/createNewLeagueSnapshotV2'
 import {
@@ -42,11 +42,11 @@ import type { LeagueSnapshotRestorationResult } from './persistence/leagueSnapsh
 import type { LeagueSnapshotV2 } from './persistence/leagueSnapshotV2'
 import { normalizeSeed } from './random/seed'
 import {
-  DashboardOverviewContent,
   LeaguePlayersContent,
   LeagueTeamsContent,
   TeamRosterContent,
 } from './ui/dashboardPages'
+import { HomeTodayContent } from './ui/homePage'
 import {
   ApplicationShell,
   AvailablePage,
@@ -80,6 +80,15 @@ const DEFAULT_SEASON_SETUP_VALUES = Object.freeze({
 }) satisfies SeasonSetupFormValues
 
 const leagueSnapshotRepository = createIndexedDbLeagueSnapshotRepository()
+
+/**
+ * DEV only: the fixture-driven post-game design preview (roadmap §6). The
+ * ternary folds to null in production builds, so the lazy chunk — and the
+ * fixture inside it — is unreachable and dropped from the bundle.
+ */
+const DevGameResultPreview = import.meta.env.DEV
+  ? lazy(() => import('./ui/devGameResultPreview'))
+  : null
 
 let initialRestorePromise: Promise<LeagueSnapshotRestorationResult> | null = null
 
@@ -124,6 +133,7 @@ function App() {
   const [persistenceError, setPersistenceError] = useState<string | null>(null)
   const [pendingOperation, setPendingOperation] =
     useState<PendingOperation>('idle')
+  const [devPreviewOpen, setDevPreviewOpen] = useState(false)
   const [activePageId, setActivePageId] =
     useState<NavigationPageId>(DEFAULT_PAGE_ID)
   const [setupView, setSetupView] = useState<SetupView>(null)
@@ -567,6 +577,14 @@ function App() {
     )
   }
 
+  if (DevGameResultPreview !== null && devPreviewOpen) {
+    return (
+      <Suspense fallback={<p className="dev-preview-loading">Loading preview…</p>}>
+        <DevGameResultPreview onBack={() => setDevPreviewOpen(false)} />
+      </Suspense>
+    )
+  }
+
   const activePage = getPageById(activePageId)
   const activeSection = getSectionForPage(activePageId)
   if (activePage === undefined || activeSection === undefined) {
@@ -620,7 +638,15 @@ function App() {
       ) : activePage.availability === 'planned' ? (
         <ComingLaterPage page={activePage} section={activeSection} />
       ) : (
-        <AvailablePage page={activePage} section={activeSection}>
+        <AvailablePage
+          page={activePage}
+          section={activeSection}
+          heading={
+            activePage.id === 'home-today' && controlledTeam !== null
+              ? `${controlledTeam.city} ${controlledTeam.nickname}`
+              : undefined
+          }
+        >
           <AvailableWorkspacePage
             pageId={activePage.id}
             snapshot={snapshot}
@@ -631,6 +657,11 @@ function App() {
             onNavigate={handleNavigate}
             onChangeTeam={handleChangeTeam}
             onSelectPlayer={setSelectedPlayerId}
+            onOpenGameResultPreview={
+              DevGameResultPreview === null
+                ? undefined
+                : () => setDevPreviewOpen(true)
+            }
           />
         </AvailablePage>
       )}
@@ -648,6 +679,7 @@ interface AvailableWorkspacePageProps {
   readonly onNavigate: (pageId: NavigationPageId) => void
   readonly onChangeTeam: () => void
   readonly onSelectPlayer: (playerId: PlayerId) => void
+  readonly onOpenGameResultPreview?: () => void
 }
 
 /**
@@ -665,6 +697,7 @@ function AvailableWorkspacePage({
   onNavigate,
   onChangeTeam,
   onSelectPlayer,
+  onOpenGameResultPreview,
 }: AvailableWorkspacePageProps) {
   const presentation = useMemo(
     () =>
@@ -685,6 +718,7 @@ function AvailableWorkspacePage({
     onNavigate,
     onChangeTeam,
     onSelectPlayer,
+    onOpenGameResultPreview,
   )
 }
 
@@ -699,17 +733,20 @@ function renderAvailablePage(
   onNavigate: (pageId: NavigationPageId) => void,
   onChangeTeam: () => void,
   onSelectPlayer: (playerId: PlayerId) => void,
+  onOpenGameResultPreview?: () => void,
 ) {
   switch (pageId) {
-    case 'dashboard-overview':
+    case 'home-today':
       return (
-        <DashboardOverviewContent
+        <HomeTodayContent
           snapshot={snapshot}
           saveState={
             saveState === null
               ? null
               : { label: SAVE_INDICATOR_LABELS[saveState], state: saveState }
           }
+          onNavigate={onNavigate}
+          onOpenGameResultPreview={onOpenGameResultPreview}
         />
       )
     case 'team-roster':

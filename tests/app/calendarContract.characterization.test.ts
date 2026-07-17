@@ -108,7 +108,7 @@ describe('M2.1 calendar contract characterization', () => {
     } as const
 
     activePageId = DEFAULT_PAGE_ID
-    expect(activePageId).toBe('dashboard-overview')
+    expect(activePageId).toBe('home-today')
     activePageId = 'schedule-calendar'
     expect(activePageId).toBe('schedule-calendar')
     expect(calendarPreferences.inspectedTeamId).not.toBe(

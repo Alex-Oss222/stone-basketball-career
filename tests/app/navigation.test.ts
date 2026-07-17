@@ -14,9 +14,12 @@ import type {
 
 const EXPECTED_HIERARCHY = [
   {
-    id: 'dashboard',
-    label: 'Dashboard',
-    pages: [{ id: 'dashboard-overview', label: 'Overview' }],
+    id: 'home',
+    label: 'Home',
+    pages: [
+      { id: 'home-today', label: 'Home' },
+      { id: 'home-my-view', label: 'My' },
+    ],
   },
   {
     id: 'organization',
@@ -108,7 +111,7 @@ const EXPECTED_PAGE_IDS = EXPECTED_HIERARCHY.flatMap((section) =>
 )
 
 const AVAILABLE_PAGE_IDS = [
-  'dashboard-overview',
+  'home-today',
   'team-roster',
   'schedule-team-schedule',
   'schedule-calendar',
@@ -173,9 +176,9 @@ describe('central navigation registry', () => {
     }
   })
 
-  it('exposes the overview as the stable default page', () => {
-    expect(DEFAULT_PAGE_ID).toBe('dashboard-overview')
-    expect(getPageById(DEFAULT_PAGE_ID)?.label).toBe('Overview')
+  it('exposes Home as the stable default page', () => {
+    expect(DEFAULT_PAGE_ID).toBe('home-today')
+    expect(getPageById(DEFAULT_PAGE_ID)?.label).toBe('Home')
   })
 
   it('looks up sections, pages, and page ownership from one registry', () => {

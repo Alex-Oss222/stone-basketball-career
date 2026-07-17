@@ -25,13 +25,19 @@ interface NavigationSectionDefinition {
 
 export const NAVIGATION_SECTIONS = [
   {
-    id: 'dashboard',
-    label: 'Dashboard',
+    id: 'home',
+    label: 'Home',
     pages: [
       {
-        id: 'dashboard-overview',
-        label: 'Overview',
+        id: 'home-today',
+        label: 'Home',
         availability: 'available',
+      },
+      {
+        id: 'home-my-view',
+        label: 'My',
+        availability: 'planned',
+        requiredSystem: 'Requires customizable dashboard widgets and layouts.',
       },
     ],
   },
@@ -274,7 +280,7 @@ export type AvailableNavigationPageId = Extract<
   { readonly availability: 'available' }
 >['id']
 
-export const DEFAULT_PAGE_ID: NavigationPageId = 'dashboard-overview'
+export const DEFAULT_PAGE_ID: NavigationPageId = 'home-today'
 
 const NAVIGATION_PAGES: readonly NavigationPage[] =
   NAVIGATION_SECTIONS.flatMap(

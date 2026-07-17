@@ -117,9 +117,7 @@ describe('read-only V2 season and schedule identity preservation', () => {
     const { createLeaguePresentationBundle } = await import(
       '../../src/app/leagueSnapshotDomainAdapter'
     )
-    const { DashboardOverviewContent } = await import(
-      '../../src/ui/dashboardPages'
-    )
+    const { HomeTodayContent } = await import('../../src/ui/homePage')
     const { AppHeader } = await import('../../src/ui/dashboardShell')
 
     const presentation = createLeaguePresentationBundle(persistedSnapshot)
@@ -135,7 +133,7 @@ describe('read-only V2 season and schedule identity preservation', () => {
       }),
     )
     const dashboardMarkup = renderToStaticMarkup(
-      createElement(DashboardOverviewContent, {
+      createElement(HomeTodayContent, {
         snapshot: persistedSnapshot,
         saveState: { label: 'Saved locally', state: 'saved' },
       }),
@@ -168,7 +166,7 @@ describe('read-only V2 season and schedule identity preservation', () => {
     expect(teamScheduleMarkup).toContain('Inspected team schedule')
     expect(calendarMarkup).toContain('league calendar')
     expect(overviewMarkup).toContain(persistedSnapshot.season.displayLabel)
-    expect(dashboardMarkup).toContain('Next scheduled game')
+    expect(dashboardMarkup).toContain('Next Game')
     expect(headerMarkup).toContain(persistedSnapshot.season.displayLabel)
     expect(foundationImport).not.toHaveBeenCalled()
     expect(leagueGeneratorImport).not.toHaveBeenCalled()
