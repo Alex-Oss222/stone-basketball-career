@@ -44,6 +44,7 @@ import type { SegmentedTabOption } from './segmentedTabs'
 import { ComingLaterPanel } from './comingLaterPanel'
 import {
   BROADCAST_TABS,
+  POSTSEASON_BROADCAST_TABS,
   broadcastFilterLabel,
 } from './broadcastFilter'
 
@@ -110,6 +111,8 @@ export function TeamSchedulePage({
       }),
   )
   const returnFocusRef = useRef<HTMLButtonElement | null>(null)
+  const isRegularSeason = uiState.stage === 'regular_season'
+  const isPostseason = uiState.stage === 'postseason'
 
   const range = useMemo(
     () => createLeagueYearDisplayRange(season),
@@ -266,28 +269,47 @@ export function TeamSchedulePage({
         onSelectTeam={handleTeamSelection}
       />
 
-      <TeamScheduleSiteFilter
-        filter={uiState.siteFilter}
-        onFilter={(filter) => dispatch({ type: 'set_site_filter', filter })}
-      />
+      {isRegularSeason && (
+        <TeamScheduleSiteFilter
+          filter={uiState.siteFilter}
+          onFilter={(filter) => dispatch({ type: 'set_site_filter', filter })}
+        />
+      )}
 
-      <SegmentedTabs
-        legend="View"
-        name="team-schedule-view"
-        value={uiState.viewMode}
-        options={VIEW_TABS}
-        onChange={(viewMode) => dispatch({ type: 'set_view_mode', viewMode })}
-      />
+      {isRegularSeason && (
+        <SegmentedTabs
+          legend="View"
+          name="team-schedule-view"
+          value={uiState.viewMode}
+          options={VIEW_TABS}
+          onChange={(viewMode) => dispatch({ type: 'set_view_mode', viewMode })}
+        />
+      )}
 
-      <SegmentedTabs
-        legend="Broadcast"
-        name="team-schedule-broadcast"
-        value={uiState.broadcast}
-        options={BROADCAST_TABS}
-        onChange={(broadcast) => dispatch({ type: 'set_broadcast', broadcast })}
-      />
+      {isRegularSeason && (
+        <SegmentedTabs
+          legend="Broadcast"
+          name="team-schedule-broadcast"
+          value={uiState.broadcast}
+          options={BROADCAST_TABS}
+          onChange={(broadcast) =>
+            dispatch({ type: 'set_broadcast', broadcast })
+          }
+        />
+      )}
+      {isPostseason && (
+        <SegmentedTabs
+          legend="Broadcast"
+          name="team-schedule-broadcast"
+          value={uiState.broadcast === 'local' ? 'local' : 'national'}
+          options={POSTSEASON_BROADCAST_TABS}
+          onChange={(broadcast) =>
+            dispatch({ type: 'set_broadcast', broadcast })
+          }
+        />
+      )}
 
-      <TeamScheduleSummary viewModel={viewModel} />
+      {isRegularSeason && <TeamScheduleSummary viewModel={viewModel} />}
 
       {uiState.broadcast !== 'all' ? (
         <ComingLaterPanel

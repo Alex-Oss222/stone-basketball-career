@@ -10,6 +10,12 @@ export const BROADCAST_TABS = [
   { value: 'national', label: 'National TV', comingLater: true },
 ] as const satisfies readonly SegmentedTabOption<BroadcastFilter>[]
 
+/** Postseason games are always televised, so only these two apply. */
+export const POSTSEASON_BROADCAST_TABS = [
+  { value: 'national', label: 'National TV', comingLater: true },
+  { value: 'local', label: 'Local TV', comingLater: true },
+] as const satisfies readonly SegmentedTabOption<BroadcastFilter>[]
+
 export function parseBroadcastFilter(value: unknown): BroadcastFilter {
   switch (value) {
     case 'all':
