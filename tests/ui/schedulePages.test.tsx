@@ -350,16 +350,30 @@ describe('LeagueCalendarContent', () => {
     expect(markup).toContain('Today')
   })
 
-  it('renders a day-by-day list when the list view is selected', () => {
+  it('renders a scrollable date-grouped list of full-name games', () => {
     const presentation = createLeaguePresentationBundle(
       createLeagueSnapshotV2Fixture(),
     )
+    const managedTeam = presentation.league.teams.find(
+      (team) => team.id === presentation.managedTeamId,
+    )
+    if (managedTeam === undefined) throw new Error('Fixture managed team missing')
+
     const markup = renderToStaticMarkup(
       <LeagueCalendarContent presentation={presentation} initialViewMode="list" />,
     )
 
-    expect(markup).toContain('league-calendar-list')
+    expect(markup).toContain('league-calendar-daylist')
+    expect(markup).toContain('league-calendar-daygroup-header')
+    expect(markup).toContain('league-calendar-daygame')
     expect(markup).toContain('games by day')
+    // Full weekday-and-date headings, not abbreviations.
+    expect(markup).toMatch(/(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday), October/)
+    // Full team names on a game row, and the managed team is marked.
+    expect(markup).toContain(
+      `${managedTeam.city} ${managedTeam.nickname}`,
+    )
+    expect(markup).toContain('is-managed')
     expect(markup).not.toContain('role="grid"')
   })
 

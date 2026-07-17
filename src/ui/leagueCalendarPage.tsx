@@ -38,6 +38,7 @@ import {
 } from './broadcastFilter'
 import type { BroadcastFilter } from './broadcastFilter'
 import {
+  formatScheduleDateHeading,
   formatScheduleDateLong,
   formatScheduleDateShort,
   formatScheduleMonthHeading,
@@ -540,38 +541,61 @@ function CalendarMonthList({
   }
 
   return (
-    <ol className="league-calendar-list" aria-label={`${heading} games by day`}>
+    <div
+      className="league-calendar-daylist"
+      role="region"
+      aria-label={`${heading} games by day`}
+      tabIndex={0}
+    >
       {dayGroups.map((day) => (
-        <li key={day.date} className="league-calendar-list-day">
+        <section
+          key={day.date}
+          className={
+            day.isSelectedDate
+              ? 'league-calendar-daygroup is-selected'
+              : 'league-calendar-daygroup'
+          }
+        >
           <button
             type="button"
-            className={
-              day.isSelectedDate
-                ? 'league-calendar-list-daybutton is-selected'
-                : 'league-calendar-list-daybutton'
-            }
+            className="league-calendar-daygroup-header"
             aria-pressed={day.isSelectedDate}
             onClick={() => onSelectDate(day.date)}
           >
-            <time dateTime={day.date}>{formatScheduleDateShort(day.date)}</time>
+            <time dateTime={day.date}>
+              {formatScheduleDateHeading(day.date)}
+            </time>
             {day.isCurrentDate && (
               <span className="league-calendar-today">Today</span>
             )}
-            <span className="league-calendar-list-count">
-              {day.entries.length}{' '}
-              {day.entries.length === 1 ? 'entry' : 'entries'}
-            </span>
           </button>
-          <ul className="league-calendar-list-entries">
+          <ul className="league-calendar-daygroup-games">
             {day.entries.map((entry) => (
-              <li key={entry.entryId}>
-                <CalendarEntryChip entry={entry} />
+              <li
+                key={entry.entryId}
+                className={
+                  entry.isManagedTeamEntry
+                    ? 'league-calendar-daygame is-managed'
+                    : 'league-calendar-daygame'
+                }
+              >
+                {entry.isManagedTeamEntry && (
+                  <span className="managed-star" aria-hidden="true">
+                    ★
+                  </span>
+                )}
+                <span className="league-calendar-daygame-title">
+                  {entry.title}
+                </span>
+                {entry.kind !== 'game' && (
+                  <span className="league-calendar-daygame-tag">Event</span>
+                )}
               </li>
             ))}
           </ul>
-        </li>
+        </section>
       ))}
-    </ol>
+    </div>
   )
 }
 

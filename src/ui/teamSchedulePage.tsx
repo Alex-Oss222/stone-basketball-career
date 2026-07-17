@@ -865,7 +865,7 @@ function TeamScheduleTableRow({
           onClick={(event) => onOpenGame(row.gameId, event)}
           aria-label={`Open game ${row.scheduleSequence} details: ${row.opponentName}, ${row.site}, ${dateLabel}`}
         >
-          <span>Schedule #{row.scheduleSequence}</span>
+          <span>Game {row.scheduleSequence}</span>
           {row.isNextScheduledGame && (
             <strong className="next-game-marker">Next game</strong>
           )}

@@ -47,6 +47,16 @@ const SHORT_WEEKDAY_NAMES = [
   'Sat',
 ] as const
 
+const WEEKDAY_NAMES = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+] as const
+
 export function formatScheduleMonthHeading(month: YearMonth): string {
   const parsed = parseYearMonth(month)
   const year = parsed.slice(0, 4)
@@ -60,6 +70,15 @@ export function formatScheduleDateShort(date: LocalDate): string {
   const day = Number(parsed.slice(8, 10))
   const weekday = SHORT_WEEKDAY_NAMES[getSundayFirstWeekdayIndex(parsed)]
   return `${weekday}, ${SHORT_MONTH_NAMES[monthNumber - 1]} ${day}`
+}
+
+export function formatScheduleDateHeading(date: LocalDate): string {
+  const parsed = parseLocalDate(date)
+  const year = parsed.slice(0, 4)
+  const monthNumber = Number(parsed.slice(5, 7))
+  const day = Number(parsed.slice(8, 10))
+  const weekday = WEEKDAY_NAMES[getSundayFirstWeekdayIndex(parsed)]
+  return `${weekday}, ${MONTH_NAMES[monthNumber - 1]} ${day}, ${year}`
 }
 
 export function formatScheduleDateLong(date: LocalDate): string {
