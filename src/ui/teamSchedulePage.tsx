@@ -307,44 +307,41 @@ export function TeamSchedulePage({
       )}
 
       {isRegularSeason && (
-        <TeamScheduleSiteFilter
-          filter={uiState.siteFilter}
-          onFilter={(filter) => dispatch({ type: 'set_site_filter', filter })}
-        />
-      )}
-
-      {isRegularSeason && (
-        <SegmentedTabs
-          legend="View"
-          name="team-schedule-view"
-          value={uiState.viewMode}
-          options={VIEW_TABS}
-          onChange={(viewMode) => dispatch({ type: 'set_view_mode', viewMode })}
-        />
-      )}
-
-      {isRegularSeason && uiState.viewMode === 'list' && (
-        <SegmentedTabs
-          legend="Results"
-          name="team-schedule-results"
-          value={uiState.resultFilter}
-          options={RESULT_FILTER_TABS}
-          onChange={(resultFilter) =>
-            dispatch({ type: 'set_result_filter', resultFilter })
-          }
-        />
-      )}
-
-      {isRegularSeason && (
-        <SegmentedTabs
-          legend="Broadcast"
-          name="team-schedule-broadcast"
-          value={uiState.broadcast}
-          options={BROADCAST_TABS}
-          onChange={(broadcast) =>
-            dispatch({ type: 'set_broadcast', broadcast })
-          }
-        />
+        <div className="team-schedule-controls-row">
+          <TeamScheduleSiteFilter
+            filter={uiState.siteFilter}
+            onFilter={(filter) => dispatch({ type: 'set_site_filter', filter })}
+          />
+          <SegmentedTabs
+            legend="View"
+            name="team-schedule-view"
+            value={uiState.viewMode}
+            options={VIEW_TABS}
+            onChange={(viewMode) =>
+              dispatch({ type: 'set_view_mode', viewMode })
+            }
+          />
+          {uiState.viewMode === 'list' && (
+            <SegmentedTabs
+              legend="Results"
+              name="team-schedule-results"
+              value={uiState.resultFilter}
+              options={RESULT_FILTER_TABS}
+              onChange={(resultFilter) =>
+                dispatch({ type: 'set_result_filter', resultFilter })
+              }
+            />
+          )}
+          <SegmentedTabs
+            legend="Broadcast"
+            name="team-schedule-broadcast"
+            value={uiState.broadcast}
+            options={BROADCAST_TABS}
+            onChange={(broadcast) =>
+              dispatch({ type: 'set_broadcast', broadcast })
+            }
+          />
+        </div>
       )}
       {isPostseason && (
         <SegmentedTabs
