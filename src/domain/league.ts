@@ -44,6 +44,11 @@ export interface Team {
   readonly mark: TeamMark
 }
 
+/** Canonical full team name shared by every application and UI read model. */
+export function formatTeamName(team: Team): string {
+  return `${team.city} ${team.nickname}`
+}
+
 export interface Player {
   readonly id: PlayerId
   readonly teamId: TeamId

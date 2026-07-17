@@ -11,6 +11,7 @@ import type {
   GameId,
   TeamId,
 } from '../domain/ids'
+import { formatTeamName } from '../domain/league'
 import type { League, Team } from '../domain/league'
 import { assertValidLeague } from '../domain/leagueValidation'
 import {
@@ -1281,10 +1282,6 @@ function createTeamIdentity(team: Team): GameDetailsTeamViewModel {
     name: formatTeamName(team),
     abbreviation: team.abbreviation,
   })
-}
-
-function formatTeamName(team: Team): string {
-  return `${team.city} ${team.nickname}`
 }
 
 function gameContainsTeam(game: ScheduledGame, teamId: TeamId): boolean {

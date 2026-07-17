@@ -26,6 +26,7 @@ import type {
 import type { Team } from '../domain/league'
 import type { LocalDate } from '../domain/localDate'
 import type { SeasonPhase } from '../domain/season'
+import { WorkspaceErrorBoundary } from './workspaceErrorBoundary'
 
 type AvailableNavigationPage = Extract<
   NavigationPage,
@@ -102,7 +103,9 @@ export function ApplicationShell({
         aria-busy={busy}
         tabIndex={-1}
       >
-        {children}
+        <WorkspaceErrorBoundary key={activePageId}>
+          {children}
+        </WorkspaceErrorBoundary>
       </main>
     </div>
   )

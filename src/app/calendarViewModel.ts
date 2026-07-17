@@ -13,6 +13,7 @@ import type {
   GameId,
   TeamId,
 } from '../domain/ids'
+import { formatTeamName } from '../domain/league'
 import type { League, Team } from '../domain/league'
 import { assertValidLeague } from '../domain/leagueValidation'
 import { parseLocalDate } from '../domain/localDate'
@@ -613,10 +614,6 @@ function validateScheduleStage(stage: ScheduleStage): ScheduleStage {
     default:
       return assertNever(stage, 'Schedule stage')
   }
-}
-
-function formatTeamName(team: Team): string {
-  return `${team.city} ${team.nickname}`
 }
 
 /**

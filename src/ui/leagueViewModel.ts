@@ -1,5 +1,6 @@
 import type { TeamId } from '../domain/ids'
-import type { League, Player, Team } from '../domain/league'
+import type { League, Player } from '../domain/league'
+export { formatTeamName } from '../domain/league'
 import { RATING_KEYS, ratingToGrade } from '../domain/ratings'
 import type {
   Grade,
@@ -53,8 +54,4 @@ export function getTeamRoster(
 
 export function formatPlayerName(player: Player): string {
   return `${player.firstName} ${player.lastName}`
-}
-
-export function formatTeamName(team: Team): string {
-  return `${team.city} ${team.nickname}`
 }
