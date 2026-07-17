@@ -51,23 +51,32 @@ schedule side blocks the sim. Checklist, all satisfied:
 
 ## What's left before / for the next step (simulation)
 
-The next step is a **new system**, not more schedule work. To go "sim 1 game →
-sim a season → sim 5 seasons" at 8 teams:
+The next step is a **new system**, not more schedule work. Approach it
+**interface-first** and as a **thin walking skeleton** — get one game to Final
+end-to-end with a minimal sim, then deepen — rather than building the full
+possession engine before anything is visible. To go "sim 1 game → sim a season →
+sim 5 seasons" at 8 teams:
 
-1. **Game simulation kernel** — pure, seeded, possession-based (or a simpler
-   result model first), producing a final score, winner, and box score for one
-   game from two rosters. No React / no `Math.random`.
-2. **Results persistence (needs a snapshot version bump → V3)** — completed
-   games must store score / winner / box score. V2 has no result fields, so this
-   is the first real use of the **V3** decision: define `LeagueSnapshotV3` with
-   game results + box scores and a V2→V3 migration.
-3. **Season advancement** — advance `currentDate` game-day by game-day, sim the
-   day's games, mark them `completed`, and write results. This is what turns
-   "sim 1 game" into "sim a season."
-4. **Standings & season stats** — fold completed results into standings and
-   player/team season totals (recompute-verified).
-5. **Multi-season loop** — roll a completed season into the next (new schedule,
-   aged rosters as far as current systems allow) to reach "sim 5 seasons."
+1. **Result / box-score interface + V3 (do this FIRST — it is the contract).**
+   Decide the `LeagueSnapshotV3` result and box-score field shape (score, winner,
+   per-player line) + a V2→V3 migration. Everything downstream depends on these
+   names — record them in this file and `CLAUDE.md` the moment they are settled.
+2. **Minimal deterministic game sim (walking skeleton, not the deep engine).**
+   Pure, injected-seed only, no `Math.random` / React. Produce a *structurally
+   valid* box score for one game from two rosters: one winner, team points equal
+   the sum of player points, minutes reconcile. The basketball model can be
+   simple now; it lives behind the box-score interface and gets deepened later.
+3. **Thin end-to-end slice to Final (ChatGPT's pipeline, one slice).**
+   `currentDate` → detect the day's scheduled game(s) → validate roster and
+   rotation (rotation validation already exists) → simulate deterministically →
+   save result + box score (V3) → derive standings/statistics → flip that game to
+   **Final** in the Calendar and Team Schedule. This proves the whole loop works.
+4. **Deepen the possession engine** behind the box-score interface (the
+   Milestone 1 Phase 4 slices). The box score stays the source of truth for
+   standings, so deepening changes internals, not the contract.
+5. **Full season + multi-season loop** — advance every game-day to sim a full
+   8-team season (standings equal the completed results), then roll season to
+   season to reach "sim ~5 seasons."
 
 Once results exist, the **derived** league-events timeline and the **Results =
 Final** filter light up with real data, and the Team Schedule badges gain W/L
