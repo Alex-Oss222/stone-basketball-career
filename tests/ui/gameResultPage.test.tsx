@@ -42,13 +42,21 @@ describe('post-game workspace rendering', () => {
     expect(markup).toContain('DMN')
   })
 
-  it('defaults to an overview with top performers and the full box score', () => {
+  it('defaults to an overview: performers, panel row, then the full box score', () => {
     const markup = renderPage()
 
     expect(markup).toContain('Top Performers')
     expect(markup).toContain('Dorian Vale')
     expect(markup).toContain('Lucan Merrow')
     expect(markup).toContain('27 PTS')
+
+    // The panel row sits between performers and the box score:
+    // Game Flow | Four Factors | Key Moments | Game Info.
+    expect(markup).toContain('Game Flow')
+    expect(markup).toContain('Four Factors')
+    expect(markup).toContain('Effective FG%')
+    expect(markup).toContain('Key Moments')
+    expect(markup).toContain('Game Info')
 
     // The box score lives on Overview, not behind a separate tab.
     expect(markup).not.toContain('Box Score')
@@ -64,14 +72,14 @@ describe('post-game workspace rendering', () => {
   it('marks event-log features as coming later instead of inventing them', () => {
     const markup = renderPage()
 
-    expect(markup).toContain('Game summary')
     expect(markup).toContain('Coming later')
     expect(markup).toContain('Play-by-Play')
-    expect(markup).toContain('Charts')
+    // Charts was removed as a tab — Game Flow lives on Overview instead.
+    expect(markup).not.toContain('Charts')
     // Lineups was removed — the box score already shows who played.
     expect(markup).not.toContain('Lineups')
-    // The mockup's venue, attendance, and referee slots have no backing
-    // system; nothing may render a fabricated value for them.
+    // The Game Info panel is an honest slot; nothing may render a fabricated
+    // venue, attendance, referee, or game-time value.
     expect(markup).not.toContain('Attendance')
     expect(markup).not.toContain('Referees')
   })

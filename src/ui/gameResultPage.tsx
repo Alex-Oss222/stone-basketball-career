@@ -37,13 +37,12 @@ export interface GameResultPageProps {
   readonly onBack?: () => void
 }
 
-type GameResultTab = 'overview' | 'team_stats' | 'play_by_play' | 'charts'
+type GameResultTab = 'overview' | 'team_stats' | 'play_by_play'
 
 const GAME_RESULT_TABS: readonly SegmentedTabOption<GameResultTab>[] = [
   { value: 'overview', label: 'Overview' },
   { value: 'team_stats', label: 'Team Stats' },
   { value: 'play_by_play', label: 'Play-by-Play', comingLater: true },
-  { value: 'charts', label: 'Charts', comingLater: true },
 ]
 
 type BoxScoreView = 'both' | 'home' | 'away'
@@ -56,12 +55,12 @@ type BoxScoreView = 'both' | 'home' | 'away'
  *
  * DEFERRED(§11): team records next to the score header fill from standings.
  * DEFERRED(§14): the possession event log unlocks, all at once — the Game
- * summary panel, the Play-by-Play tab (including key moments), the Charts tab
- * (game flow line, shot chart), and largest lead / lead changes / times tied
- * / points off turnovers / points in paint on Team Stats.
- * DEFERRED(later): the Game Info layer (venue, attendance, referees, game
+ * Flow and Key Moments panels on Overview, the Play-by-Play tab (which also
+ * carries the game summary), and largest lead / lead changes / times tied /
+ * points off turnovers / points in paint on Team Stats.
+ * DEFERRED(later): the Game Info panel (venue, attendance, referees, game
  * time) needs venue/officials systems not yet on the roadmap — schedule them
- * or consciously cut at §19. Nothing renders for them until then.
+ * or consciously cut at §19. No fabricated value renders there until then.
  */
 export function GameResultPage({
   result,
@@ -149,6 +148,57 @@ export function GameResultPage({
             </div>
           </section>
 
+          <div className="game-result-panel-row">
+            <ComingLaterPanel
+              title="Game Flow"
+              requirement="Requires the scoring-run timeline from the simulation's event log."
+            />
+            <section className="game-result-panel" aria-label="Four factors">
+              <h3>Four Factors</h3>
+              <table className="league-table game-result-factors">
+                <caption className="visually-hidden">
+                  Four-factor comparison
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Factor</th>
+                    <th scope="col">{awayTeam.abbreviation}</th>
+                    <th scope="col">{homeTeam.abbreviation}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {deriveFourFactors(homeTotals, awayTotals).map((row) => (
+                    <tr key={row.label}>
+                      <th scope="row">{row.label}</th>
+                      <td
+                        className={
+                          row.leader === 'away' ? 'is-factor-leader' : undefined
+                        }
+                      >
+                        {row.away}
+                      </td>
+                      <td
+                        className={
+                          row.leader === 'home' ? 'is-factor-leader' : undefined
+                        }
+                      >
+                        {row.home}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </section>
+            <ComingLaterPanel
+              title="Key Moments"
+              requirement="Requires the simulation's play-by-play event log."
+            />
+            <ComingLaterPanel
+              title="Game Info"
+              requirement="Requires venue and officials systems."
+            />
+          </div>
+
           <section className="game-result-box-scores" aria-label="Box score">
             <SegmentedTabs
               legend="Box score teams"
@@ -172,71 +222,22 @@ export function GameResultPage({
               />
             )}
           </section>
-
-          <ComingLaterPanel
-            title="Game summary"
-            requirement="Requires the simulation's play-by-play event log."
-          />
         </div>
       )}
 
       {activeTab === 'team_stats' && (
-        <div className="game-result-overview">
-          <TeamStatsComparison
-            homeTeam={homeTeam}
-            awayTeam={awayTeam}
-            homeTotals={homeTotals}
-            awayTotals={awayTotals}
-          />
-          <section className="game-result-panel" aria-label="Four factors">
-            <h3>Four Factors</h3>
-            <table className="league-table game-result-factors">
-              <caption className="visually-hidden">
-                Four-factor comparison
-              </caption>
-              <thead>
-                <tr>
-                  <th scope="col">Factor</th>
-                  <th scope="col">{awayTeam.abbreviation}</th>
-                  <th scope="col">{homeTeam.abbreviation}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {deriveFourFactors(homeTotals, awayTotals).map((row) => (
-                  <tr key={row.label}>
-                    <th scope="row">{row.label}</th>
-                    <td
-                      className={
-                        row.leader === 'away' ? 'is-factor-leader' : undefined
-                      }
-                    >
-                      {row.away}
-                    </td>
-                    <td
-                      className={
-                        row.leader === 'home' ? 'is-factor-leader' : undefined
-                      }
-                    >
-                      {row.home}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </section>
-        </div>
+        <TeamStatsComparison
+          homeTeam={homeTeam}
+          awayTeam={awayTeam}
+          homeTotals={homeTotals}
+          awayTotals={awayTotals}
+        />
       )}
 
       {activeTab === 'play_by_play' && (
         <ComingLaterPanel
-          title="Play-by-Play and key moments"
+          title="Play-by-Play, key moments, and game summary"
           requirement="Requires the simulation's possession event log."
-        />
-      )}
-      {activeTab === 'charts' && (
-        <ComingLaterPanel
-          title="Charts"
-          requirement="Requires game-flow and shot-location data from the simulation."
         />
       )}
     </div>
