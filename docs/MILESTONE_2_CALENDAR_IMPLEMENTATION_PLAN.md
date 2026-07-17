@@ -52,9 +52,33 @@ Weekday indexes use the fixed Sunday-first convention: Sunday is `0`, Monday
 is `1`, through Saturday as `6`. The calculation is independent of JavaScript
 `Date`, timestamps, locale, timezone, and the system clock.
 
-M2.3 will consume these primitives to build the explicit
-`LeagueYearDisplayRange` and complete pure month-grid models. It will not move
-range or grid state into `LeagueSnapshotV2`.
+## M2.3 League-year range and structural month grids
+
+M2.3 consumes the YearMonth primitives in two pure application read-model
+modules:
+
+- `LeagueYearDisplayRange` derives the authoritative Season's July 1 through
+  June 30 display boundary and all twelve ordered months.
+- `CalendarMonthGridModel` supplies complete Sunday-first week rows with seven
+  real `LocalDate` cells each, including leading and trailing adjacent-month
+  dates.
+
+The earliest supported complete league year is July 0000 through June 0001.
+The latest is July 9998 through June 9999. A grid can be requested only for a
+month contained in its supplied valid league-year range; this keeps complete
+Sunday-through-Saturday padding inside the existing `LocalDate` bounds.
+
+Month grids contain four, five, or six weeks as required by the first weekday
+and month length. `belongsToMonth` means the cell's actual `YearMonth` equals
+the grid's requested month. Independently, `isWithinLeagueYear` means the
+cell's date lies inclusively between the range's July 1 and June 30 dates.
+Consequently, an adjacent-month padding cell may be inside the league year
+without belonging to the displayed month.
+
+All range, month, week, tuple, and cell records and collections are frozen.
+The full range always retains all twelve months, including months with no
+future games or events. These derived structures are not stored in
+`LeagueSnapshotV2`.
 
 ## Ordered implementation steps
 
@@ -70,22 +94,33 @@ JavaScript `Date` or locale APIs.
 
 ### 2. Explicit LeagueYearDisplayRange and month-grid models (M2.3)
 
-Add a pure `LeagueYearDisplayRange` projection, preferably in
-`src/app/leagueYearDisplayRange.ts`, with focused tests. Derive July 1 through
-June 30 solely from stored season years and enumerate every included month.
-Prove independence from games, events, schedule seed, and schedule endpoints.
-Reject invalid inputs rather than clamping them. Build complete pure
-month-grid structures from `YearMonth`, including ordered week rows and
-leading/trailing cells, without yet merging games or events and without React.
+The pure `src/app/leagueYearDisplayRange.ts` projection derives July 1 through
+June 30 solely from the validated Season years and preserves the Season's
+authoritative label. It requires adjacent years, enumerates exactly twelve
+months, supports league years `0000–01` through `9998–99`, freezes its output,
+and remains independent from games, events, schedule seed, and schedule
+endpoints.
 
-### 3. Shared normalized CalendarEntry
+The pure `src/app/calendarMonthGrid.ts` module builds Sunday-first structural
+month grids. Every week contains exactly seven increasing real dates; every
+in-month date appears once; leading and trailing cells retain their actual
+adjacent `YearMonth`; and the separate `belongsToMonth` and
+`isWithinLeagueYear` flags describe month membership and inclusive range
+membership. Grids contain four, five, or six weeks, and the full builder
+returns all twelve July-through-June grids even when they contain no entries.
+No calendar entry, schedule, persistence, browser, or React concern is part of
+these models.
+
+### 3. Shared normalized CalendarEntry (M2.4)
 
 Add `src/app/calendarViewModel.ts` and tests. Normalize scheduled games and
 season-calendar events into a stable discriminated `CalendarEntry` without
 losing source identity, original/current/actual date history, status, scope,
 participants, or GameDay metadata. Include future-tolerant uncertain variants
 from ADR 0006, while ensuring the current adapter emits only authoritative V2
-facts. Do not duplicate or rerun generation.
+facts. Add pure selectors that merge authoritative `ScheduledGame` and
+`SeasonCalendar` records without React UI, persistence changes, or generation.
+Do not duplicate or rerun generation.
 
 ### 4. Selectors grouped by date and month
 
