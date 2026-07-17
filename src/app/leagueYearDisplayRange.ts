@@ -1,5 +1,6 @@
 import {
   compareLocalDates,
+  formatSeasonLabel,
 } from '../domain/localDate'
 import type { LocalDate } from '../domain/localDate'
 import { parseSeason } from '../domain/season'
@@ -55,28 +56,7 @@ export function createLeagueYearDisplayRange(
   const endDate = lastDateOfMonth(endMonth)
   const months = iterateYearMonthsInclusive(startMonth, endMonth)
 
-  if (compareLocalDates(startDate, endDate) > 0) {
-    throw new RangeError(
-      'League-year display start date must not be later than its end date',
-    )
-  }
-  if (months.length !== EXPECTED_MONTH_COUNT) {
-    throw new RangeError(
-      `League-year display range must contain exactly ${EXPECTED_MONTH_COUNT} months`,
-    )
-  }
-  if (
-    months[0] !== startMonth ||
-    months[months.length - 1] !== endMonth ||
-    yearMonthFromLocalDate(startDate) !== startMonth ||
-    yearMonthFromLocalDate(endDate) !== endMonth
-  ) {
-    throw new RangeError(
-      'League-year display month boundaries must match its date boundaries',
-    )
-  }
-
-  return Object.freeze({
+  const range = Object.freeze({
     startingYear: validSeason.startingYear,
     endingYear: validSeason.endingYear,
     startDate,
@@ -86,6 +66,89 @@ export function createLeagueYearDisplayRange(
     seasonLabel: validSeason.displayLabel,
     months: Object.freeze([...months]),
   })
+
+  assertValidLeagueYearDisplayRange(range)
+  return range
+}
+
+/**
+ * Revalidates every semantic invariant owned by the July-through-June
+ * league-year projection without repairing the supplied value.
+ */
+export function assertValidLeagueYearDisplayRange(
+  range: LeagueYearDisplayRange,
+): void {
+  const authoritativeLabel = formatSeasonLabel(
+    range.startingYear,
+    range.endingYear,
+  )
+
+  if (range.endingYear !== range.startingYear + 1) {
+    throw new RangeError(
+      'League-year display range requires adjacent starting and ending years',
+    )
+  }
+
+  const expectedStartMonth = parseYearMonth(
+    `${formatYear(range.startingYear)}-07`,
+  )
+  const expectedEndMonth = parseYearMonth(
+    `${formatYear(range.endingYear)}-06`,
+  )
+  const expectedStartDate = firstDateOfMonth(expectedStartMonth)
+  const expectedEndDate = lastDateOfMonth(expectedEndMonth)
+  const expectedMonths = iterateYearMonthsInclusive(
+    expectedStartMonth,
+    expectedEndMonth,
+  )
+  const validStartMonth = parseYearMonth(range.startMonth)
+  const validEndMonth = parseYearMonth(range.endMonth)
+
+  if (compareLocalDates(range.startDate, range.endDate) > 0) {
+    throw new RangeError(
+      'League-year display start date must not be later than its end date',
+    )
+  }
+  if (
+    range.startDate !== expectedStartDate ||
+    range.endDate !== expectedEndDate
+  ) {
+    throw new RangeError(
+      'League-year display dates must span July 1 through June 30',
+    )
+  }
+  if (
+    validStartMonth !== expectedStartMonth ||
+    validEndMonth !== expectedEndMonth ||
+    yearMonthFromLocalDate(range.startDate) !== validStartMonth ||
+    yearMonthFromLocalDate(range.endDate) !== validEndMonth
+  ) {
+    throw new RangeError(
+      'League-year display month boundaries must match its date boundaries',
+    )
+  }
+  if (
+    range.months.length !== EXPECTED_MONTH_COUNT ||
+    expectedMonths.length !== EXPECTED_MONTH_COUNT
+  ) {
+    throw new RangeError(
+      `League-year display range must contain exactly ${EXPECTED_MONTH_COUNT} months`,
+    )
+  }
+
+  for (let index = 0; index < expectedMonths.length; index += 1) {
+    if (parseYearMonth(range.months[index]) !== expectedMonths[index]) {
+      throw new RangeError(
+        'League-year display months must be canonical and chronologically ordered',
+      )
+    }
+  }
+
+  if (range.seasonLabel !== authoritativeLabel) {
+    throw new RangeError(
+      'League-year display label must match its authoritative season years',
+    )
+  }
 }
 
 function formatYear(year: number): string {

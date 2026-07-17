@@ -138,6 +138,44 @@ CalendarEntry data is derived application data. It is not part of
 `LeagueSnapshotV2`, does not increment league revision, and imports no React,
 persistence, generation, browser, or random source.
 
+## M2.5 enriched calendar-grid and selected-day agenda models
+
+M2.5 combines the twelve structural month grids with normalized calendar
+entries and explicit transient presentation inputs. The enriched immutable
+day, week, month, and league-year models preserve every M2.3 date and weekday
+while attaching entries only by their M2.4 placement `LocalDate`.
+
+Calendar scope is closed to `managed_team` and `all_teams`. `all_teams`
+retains every normalized entry. `managed_team` retains managed-team entries
+and league-wide events while excluding unrelated games and team events; it is
+rejected when no managed-team context exists and never falls back to
+`all_teams`.
+
+Every enriched day compares its real date with the supplied authoritative
+`currentDate`, so exactly one of current, past, or future is true without
+consulting the system clock. A nullable explicit `selectedDate` controls the
+single owning-month selected cell and its full selected-day agenda; the
+builder never selects the current date implicitly.
+
+An explicit positive safe-integer visible-entry limit splits each day's
+ordered entries into a visible prefix and an exact overflow remainder. The two
+frozen collections partition the full day without loss, duplication, or
+truncation. Month summaries count only entries on cells belonging to that
+displayed month, so adjacent-month padding cannot inflate either month.
+
+Undated entries remain in a separate honest model with game, league-event,
+team-event, and managed-team projections; no synthetic date is assigned.
+Dated entries outside the July-through-June display range remain in a
+separate immutable out-of-range collection. An exact-date padding cell may
+show such an entry for continuity, but authoritative completeness counts come
+from the disjoint in-range, undated, and out-of-range collections rather than
+from repeated padding cells.
+
+All enriched records, tuples, collections, agenda partitions, and entry
+projections are frozen. They are derived application data, are never stored in
+`LeagueSnapshotV2`, and do not change league revision or authoritative source
+entities.
+
 ## Ordered implementation steps
 
 ### 1. YearMonth arithmetic (M2.2)
@@ -186,17 +224,25 @@ do not import or rerun generation.
 
 ### 4. Enriched month-grid read models (M2.5)
 
-Attach normalized CalendarEntry values to the existing M2.3 structural day
-cells without mutating either source. Add pure enriched month-grid models,
-stored-current and past-date markers, deterministic overflow calculations,
-selected-day agenda models, and an explicit honest TBA collection. Preserve
-all twelve months, zero/variable entries per date, multiple GameDays on one
-date, event/game coexistence, and the absence of a four-game assumption.
+The pure enriched models implement the M2.5 contract above without mutating
+the range, structural grids, or normalized entries. They preserve all twelve
+months, zero or variable entries per date, multiple GameDays on one date,
+event/game coexistence, selected-day completeness, explicit overflow, and
+honest undated and out-of-range entries without a four-game assumption.
 
 M2.5 remains application-only: no React rendering, routing, persistence,
 schedule generation, results, or simulation.
 
-### 5. Continuous month-grid Calendar
+### 5. Team Schedule and game-details read models (M2.6)
+
+Implement only pure Team Schedule month-grouping and shared game-details read
+models. Introduce explicit inspected-team context that remains distinct from
+the managed team, preserve normalized entry identity, ordering, status, and
+date history, and derive schedule-only details without scores or results.
+M2.6 remains React-free and does not add routing, persistence, simulation, or
+authoritative schedule changes.
+
+### 6. Continuous month-grid Calendar
 
 Refactor `ScheduleCalendarContent`, optionally behind a re-export from the
 existing schedule-pages module. Render every July-through-June month, including
@@ -205,7 +251,7 @@ buttons show concise authoritative entry counts and accessible managed-team
 markers. TBA entries are not forced into a date cell. Keep the existing page
 ID and do not display results.
 
-### 6. Selected-day Agenda using the slate
+### 7. Selected-day Agenda using the slate
 
 Add Calendar/Agenda presentation using the same selected date and complete
 `CalendarDaySlate`. Initialize selection explicitly from stored
@@ -215,7 +261,7 @@ selection is UI state only and never advances the stored season. Test native
 button selection, accessible selected-state text, full and empty slates, TBA
 handling, managed-team markers, and event/game coexistence.
 
-### 7. Month-grouped Team Schedule
+### 8. Month-grouped Team Schedule
 
 Refactor `TeamScheduleContent` to consume the shared normalized entries and
 display range. Preserve all/home/away filters and current 28/14/14 totals while
@@ -223,7 +269,7 @@ grouping visible games by month. Omit empty month tables on the team page; keep
 them on the continuous league calendar. Put future undated team games in an
 explicit TBA section. Preserve stable order, status, and date history.
 
-### 8. Shared game-details surface
+### 9. Shared game-details surface
 
 Add one schedule-only details component used by both the Agenda and Team
 Schedule, with its pure selector in the calendar view model. Show GameId,
@@ -232,7 +278,7 @@ separate original/current/actual dates with honest null/TBA labels. Show no
 score, winner, or box score. Choose and test an accessible inline region or a
 complete dialog focus model; do not add partial dialog semantics.
 
-### 9. UI-preference separation
+### 10. UI-preference separation
 
 Define a pure UI state type/reducer, preferably in
 `src/ui/scheduleUiState.ts`, for Calendar/Agenda mode, scope, density, selected
@@ -241,7 +287,7 @@ mutate the snapshot. Do not add DTO fields, repository calls, revision changes,
 or preference persistence. Keep inspected and managed team identities
 distinct.
 
-### 10. Accessibility and responsive verification
+### 11. Accessibility and responsive verification
 
 Automate checks for headings, captions, scoped headers, native controls,
 selected/current date labels, visible non-color markers, TBA and empty states,
@@ -251,7 +297,7 @@ windows, zoom/reflow, high contrast, reduced motion, and table overflow or
 semantic narrow-screen alternatives. Add no dependency unless separately
 approved.
 
-### 11. Definition of Done
+### 12. Definition of Done
 
 Milestone 2 calendar work is complete only when:
 
