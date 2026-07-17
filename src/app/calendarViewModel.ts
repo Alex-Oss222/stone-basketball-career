@@ -21,6 +21,7 @@ import type {
   LeagueSchedule,
   ScheduleStage,
   ScheduledGame,
+  ScheduledGameStatus,
 } from '../domain/schedule'
 import { parseSeasonCalendar } from '../domain/seasonCalendar'
 import type {
@@ -39,6 +40,14 @@ export type CalendarEntryKind = 'game' | 'league_event' | 'team_event'
 
 /** Calendar events already define the complete shared presentation vocabulary. */
 export type CalendarEntryStatus = CalendarDateStatus
+
+export interface ScheduledGameCalendarProjection {
+  readonly status: ScheduledGameStatus
+  readonly placementDate: LocalDate | null
+  readonly originalScheduledDate: LocalDate
+  readonly currentScheduledDate: LocalDate | null
+  readonly actualDate: LocalDate | null
+}
 
 export interface CalendarEntryViewModel {
   /** Namespaced source identity, never an array index. */
@@ -407,25 +416,14 @@ function createGameEntry(
   }
 
   const competitionStage = validateScheduleStage(game.stage)
-  const originalDate = parseLocalDate(game.originalScheduledDate)
-  const currentScheduledDate =
-    game.currentScheduledDate === null
-      ? null
-      : parseLocalDate(game.currentScheduledDate)
-  const actualDate =
-    game.actualDate === undefined ? null : parseLocalDate(game.actualDate)
-  const status = validateGameLifecycle(
-    game,
-    originalDate,
-    currentScheduledDate,
-    actualDate,
-  )
-  const date = getGamePlacementDate(
+  const dateProjection = createScheduledGameCalendarProjection(game)
+  const {
     status,
-    originalDate,
+    placementDate: date,
+    originalScheduledDate: originalDate,
     currentScheduledDate,
     actualDate,
-  )
+  } = dateProjection
   const teamIds = Object.freeze([homeTeamId, awayTeamId])
   const isManagedTeamEntry =
     context.managedTeamId !== null &&
@@ -495,72 +493,70 @@ function createEventEntry(
   })
 }
 
-function validateGameLifecycle(
+/**
+ * Validates all authoritative game-date fields and returns the single shared
+ * calendar placement used by normalized game read models.
+ */
+export function createScheduledGameCalendarProjection(
   game: ScheduledGame,
-  originalDate: LocalDate,
-  currentScheduledDate: LocalDate | null,
-  actualDate: LocalDate | null,
-): CalendarEntryStatus {
+): ScheduledGameCalendarProjection {
+  const originalScheduledDate = parseLocalDate(game.originalScheduledDate)
+  const currentScheduledDate =
+    game.currentScheduledDate === null
+      ? null
+      : parseLocalDate(game.currentScheduledDate)
+  const actualDate =
+    game.actualDate === undefined ? null : parseLocalDate(game.actualDate)
+  let placementDate: LocalDate | null
+
   switch (game.status) {
     case 'scheduled':
       if (
         currentScheduledDate === null ||
-        currentScheduledDate !== originalDate ||
+        currentScheduledDate !== originalScheduledDate ||
         actualDate !== null
       ) {
         throw new RangeError(
           `Scheduled game ${game.id} has inconsistent lifecycle dates`,
         )
       }
-      return 'scheduled'
+      placementDate = currentScheduledDate
+      break
     case 'postponed':
       if (actualDate !== null) {
         throw new RangeError(
           `Postponed game ${game.id} cannot contain an actual date`,
         )
       }
-      return 'postponed'
+      placementDate = currentScheduledDate
+      break
     case 'completed':
       if (currentScheduledDate === null || actualDate === null) {
         throw new RangeError(
           `Completed game ${game.id} requires current and actual dates`,
         )
       }
-      return 'completed'
+      placementDate = actualDate
+      break
     case 'cancelled':
       if (actualDate !== null) {
         throw new RangeError(
           `Cancelled game ${game.id} cannot contain an actual date`,
         )
       }
-      return 'cancelled'
+      placementDate = currentScheduledDate ?? originalScheduledDate
+      break
     default:
       return assertNever(game.status, 'ScheduledGame status')
   }
-}
 
-function getGamePlacementDate(
-  status: CalendarEntryStatus,
-  originalDate: LocalDate,
-  currentScheduledDate: LocalDate | null,
-  actualDate: LocalDate | null,
-): LocalDate | null {
-  switch (status) {
-    case 'scheduled':
-      return requireDate(currentScheduledDate, 'Scheduled game')
-    case 'postponed':
-      return currentScheduledDate
-    case 'completed':
-      return requireDate(actualDate, 'Completed game')
-    case 'cancelled':
-      return currentScheduledDate ?? originalDate
-    case 'tba':
-    case 'estimated':
-    case 'announced':
-      throw new RangeError(`Status ${status} is not a ScheduledGame status`)
-    default:
-      return assertNever(status, 'Calendar entry status')
-  }
+  return Object.freeze({
+    status: game.status,
+    placementDate,
+    originalScheduledDate,
+    currentScheduledDate,
+    actualDate,
+  })
 }
 
 function validateEventStatus(event: CalendarEvent): CalendarEntryStatus {

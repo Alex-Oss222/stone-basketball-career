@@ -176,6 +176,59 @@ projections are frozen. They are derived application data, are never stored in
 `LeagueSnapshotV2`, and do not change league revision or authoritative source
 entities.
 
+## M2.6 Team Schedule and shared game-details read models
+
+M2.6 defines a pure immutable `TeamScheduleViewModel` for one explicit
+inspected TeamId. The inspected team is transient presentation context and
+remains independent from the nullable managed TeamId. Inspecting another team
+does not change the controlled team, rewrite normalized managed-team markers,
+mutate league data, or create a save revision.
+
+The authoritative complete game sequence is obtained by flattening the
+schedule's stored GameDay array in order and, within each GameDay, following
+its ordered `gameIds`. The resulting one-based `scheduleSequence` is a global
+display ordinal derived from the `(GameDay array position, gameIds slot)`
+tuple; it never replaces GameId identity. Team Schedule rows retain their
+GameId, GameDayId, authoritative sequence, normalized placement and date
+fields, status, home/away assignment, opponent identity, and managed-team
+marker.
+
+Every dated row is grouped by the `YearMonth` of its normalized placement
+date. Groups cover every represented placement month, remain chronologically
+ordered, contain no empty placeholders, and retain authoritative team-game
+sequence within each group. Undated games remain in one explicit frozen group
+in the same authoritative sequence and never receive a synthetic month or
+date.
+
+Temporal state is derived only from the row's placement date and the supplied
+authoritative current `LocalDate`. A next-game candidate must have a
+scheduled or postponed status, have a concrete placement date on or after the
+current date, and remain otherwise eligible under the stored schedule facts.
+The earliest eligible placement date wins; equal-date candidates are resolved
+by authoritative team-game sequence, not array-sort stability.
+
+The separate pure All/Home/Away row filter evaluates location relative to the
+inspected team and preserves its input row order. It does not alter totals,
+managed-team markers, source entries, or the complete team sequence.
+
+The shared immutable `GameDetailsViewModel` joins one authoritative game,
+GameDay, normalized game entry, and the two real league teams. It exposes the
+required GameId and GameDayId, sequence, stage, meeting number, status,
+distinct original/current/actual/placement dates, participants, and honest
+home/away context. A null perspective produces neutral league details. A
+non-null participating team perspective derives that team's home/away role
+and opponent without changing managed-team identity.
+
+When a participating perspective is supplied, previous and next references
+come from that team's complete authoritative game sequence, independent of
+the active row filter, month group, date movement, or status. A neutral
+perspective has no team-relative previous or next references.
+
+Team Schedule rows, groups, details, identities, and collections are derived
+and frozen. They are never persisted in `LeagueSnapshotV2`. They contain no
+score, winner, result, standing, statistic, simulation, venue, tipoff, or
+broadcast claim.
+
 ## Ordered implementation steps
 
 ### 1. YearMonth arithmetic (M2.2)
@@ -235,14 +288,28 @@ schedule generation, results, or simulation.
 
 ### 5. Team Schedule and game-details read models (M2.6)
 
-Implement only pure Team Schedule month-grouping and shared game-details read
-models. Introduce explicit inspected-team context that remains distinct from
-the managed team, preserve normalized entry identity, ordering, status, and
-date history, and derive schedule-only details without scores or results.
-M2.6 remains React-free and does not add routing, persistence, simulation, or
-authoritative schedule changes.
+The pure Team Schedule and shared game-details modules implement the M2.6
+contract above. They validate the stored GameDay/game reference sequence,
+preserve normalized placement and date-history semantics, retain inspected and
+managed team separation, group every dated placement month without empty
+groups, keep undated games explicit, and expose deterministic temporal,
+filtering, next-game, and previous/next-detail projections.
 
-### 6. Continuous month-grid Calendar
+M2.6 remains React-free and does not add routing, persistence, simulation,
+results, or authoritative schedule changes.
+
+### 6. Team Schedule React slice (M2.7)
+
+Build the first React integration slice from the completed pure read models:
+render the month-grouped Team Schedule with All/Home/Away controls, add an
+inspected-team selector that never changes the managed team, and use one
+shared accessible game-details surface. Preserve honest undated handling,
+authoritative sequence, keyboard access, table semantics, and visible focus.
+
+M2.7 still excludes simulation, scores, winners, standings, results, schedule
+editing, persistence changes, and the Calendar month-grid interface.
+
+### 7. Continuous month-grid Calendar
 
 Refactor `ScheduleCalendarContent`, optionally behind a re-export from the
 existing schedule-pages module. Render every July-through-June month, including
@@ -251,7 +318,7 @@ buttons show concise authoritative entry counts and accessible managed-team
 markers. TBA entries are not forced into a date cell. Keep the existing page
 ID and do not display results.
 
-### 7. Selected-day Agenda using the slate
+### 8. Selected-day Agenda using the slate
 
 Add Calendar/Agenda presentation using the same selected date and complete
 `CalendarDaySlate`. Initialize selection explicitly from stored
@@ -261,24 +328,7 @@ selection is UI state only and never advances the stored season. Test native
 button selection, accessible selected-state text, full and empty slates, TBA
 handling, managed-team markers, and event/game coexistence.
 
-### 8. Month-grouped Team Schedule
-
-Refactor `TeamScheduleContent` to consume the shared normalized entries and
-display range. Preserve all/home/away filters and current 28/14/14 totals while
-grouping visible games by month. Omit empty month tables on the team page; keep
-them on the continuous league calendar. Put future undated team games in an
-explicit TBA section. Preserve stable order, status, and date history.
-
-### 9. Shared game-details surface
-
-Add one schedule-only details component used by both the Agenda and Team
-Schedule, with its pure selector in the calendar view model. Show GameId,
-participants and location, season/GameDay context, meeting and status, and
-separate original/current/actual dates with honest null/TBA labels. Show no
-score, winner, or box score. Choose and test an accessible inline region or a
-complete dialog focus model; do not add partial dialog semantics.
-
-### 10. UI-preference separation
+### 9. UI-preference separation
 
 Define a pure UI state type/reducer, preferably in
 `src/ui/scheduleUiState.ts`, for Calendar/Agenda mode, scope, density, selected
@@ -287,7 +337,7 @@ mutate the snapshot. Do not add DTO fields, repository calls, revision changes,
 or preference persistence. Keep inspected and managed team identities
 distinct.
 
-### 11. Accessibility and responsive verification
+### 10. Accessibility and responsive verification
 
 Automate checks for headings, captions, scoped headers, native controls,
 selected/current date labels, visible non-color markers, TBA and empty states,
@@ -297,7 +347,7 @@ windows, zoom/reflow, high contrast, reduced motion, and table overflow or
 semantic narrow-screen alternatives. Add no dependency unless separately
 approved.
 
-### 12. Definition of Done
+### 11. Definition of Done
 
 Milestone 2 calendar work is complete only when:
 
