@@ -364,6 +364,23 @@ describe('LeagueCalendarContent', () => {
     expect(markup).toContain('league-calendar-grid')
   })
 
+  it('shows a derived league-events timeline with the next milestone', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
+    )
+    const markup = renderToStaticMarkup(
+      <LeagueCalendarContent presentation={presentation} />,
+    )
+
+    expect(markup).toContain('League events')
+    expect(markup).toContain('Trade deadline')
+    expect(markup).toContain('All-Star break')
+    expect(markup).toContain('Draft')
+    // The first milestone on or after the current date is flagged.
+    expect(markup).toContain('league-timeline-item is-next')
+    expect(markup).toContain('Next:')
+  })
+
   it('shows the derived schedule overview and swaps the complementary panel', () => {
     const presentation = createLeaguePresentationBundle(
       createLeagueSnapshotV2Fixture(),

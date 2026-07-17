@@ -20,6 +20,11 @@ import type {
   ScheduleRun,
   TeamScheduleInsights,
 } from '../app/scheduleInsights'
+import {
+  deriveLeagueMilestones,
+  nextLeagueMilestone,
+} from '../app/leagueMilestones'
+import type { LeagueMilestone } from '../app/leagueMilestones'
 import type { LocalDate } from '../domain/localDate'
 import { yearMonthFromLocalDate } from '../domain/yearMonth'
 import {
@@ -147,6 +152,19 @@ export function LeagueCalendarPage({
     return computeTeamScheduleInsights(games, season.currentDate)
   }, [calendarEntries, managedTeamId, season.currentDate])
 
+  const milestones = useMemo(() => {
+    const findDate = (kind: string): LocalDate | null =>
+      calendarEntries.find(
+        (entry) => entry.calendarEventKind === kind && entry.date !== null,
+      )?.date ?? null
+    const opening = findDate('regular_season_opening')
+    const conclusion = findDate('regular_season_conclusion')
+    return opening !== null && conclusion !== null
+      ? deriveLeagueMilestones(opening, conclusion)
+      : []
+  }, [calendarEntries])
+  const upcomingMilestone = nextLeagueMilestone(milestones, season.currentDate)
+
   const visibleMonthIndex = Math.max(
     0,
     range.months.findIndex((month) => month === uiState.visibleMonth),
@@ -255,6 +273,13 @@ export function LeagueCalendarPage({
             <MonthSummary month={visibleMonth} scope={uiState.scope} />
           ) : (
             <ScheduleOverviewPanel insights={managedInsights} />
+          )}
+
+          {milestones.length > 0 && (
+            <LeagueTimelinePanel
+              milestones={milestones}
+              upcoming={upcomingMilestone}
+            />
           )}
 
           <CalendarLegend />
@@ -771,6 +796,48 @@ function runLabel(run: ScheduleRun | null): string {
   if (run === null) return '—'
   if (run.startDate === run.endDate) return '1 game'
   return `${run.games} games · ${formatScheduleDateShort(run.startDate)}–${formatScheduleDateShort(run.endDate)}`
+}
+
+function LeagueTimelinePanel({
+  milestones,
+  upcoming,
+}: {
+  readonly milestones: readonly LeagueMilestone[]
+  readonly upcoming: LeagueMilestone | null
+}) {
+  return (
+    <section
+      className="league-timeline"
+      aria-labelledby="league-timeline-heading"
+    >
+      <h3 id="league-timeline-heading">League events</h3>
+      {upcoming !== null && (
+        <p className="league-timeline-next">
+          Next: {upcoming.title} ·{' '}
+          <time dateTime={upcoming.date}>
+            {formatScheduleDateShort(upcoming.date)}
+          </time>
+        </p>
+      )}
+      <ol className="league-timeline-list">
+        {milestones.map((milestone) => (
+          <li
+            key={milestone.kind}
+            className={
+              milestone === upcoming
+                ? 'league-timeline-item is-next'
+                : 'league-timeline-item'
+            }
+          >
+            <time dateTime={milestone.date}>
+              {formatScheduleDateShort(milestone.date)}
+            </time>
+            <span>{milestone.title}</span>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
 }
 
 function MonthSummary({

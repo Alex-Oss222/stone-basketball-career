@@ -2648,7 +2648,8 @@ tbody tr:last-child td {
 .league-calendar-agenda,
 .league-calendar-legend,
 .league-calendar-mini,
-.league-calendar-overview {
+.league-calendar-overview,
+.league-timeline {
   padding: 14px 16px;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -2659,7 +2660,8 @@ tbody tr:last-child td {
 .league-calendar-agenda h3,
 .league-calendar-legend h3,
 .league-calendar-mini h3,
-.league-calendar-overview h3 {
+.league-calendar-overview h3,
+.league-timeline h3 {
   margin: 0 0 10px;
   font-size: 1rem;
 }
@@ -2886,6 +2888,42 @@ tbody tr:last-child td {
   margin: 0;
   text-align: right;
   font-weight: 600;
+}
+
+/* League timeline (derived milestone events) */
+
+.league-timeline-next {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  color: var(--accent-hover);
+}
+
+.league-timeline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.league-timeline-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-left: 10px;
+  border-left: 2px solid var(--line-strong);
+}
+
+.league-timeline-item.is-next {
+  border-left-color: var(--accent);
+}
+
+.league-timeline-item time {
+  min-width: 8ch;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
 }
 
 @media (max-width: 900px) {
