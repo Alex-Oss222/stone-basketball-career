@@ -3054,3 +3054,107 @@ tbody tr:last-child td {
   flex-direction: column;
   gap: 16px;
 }
+
+/* Next-game command bar */
+
+.next-game-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  background:
+    linear-gradient(120deg, rgba(245, 158, 11, 0.12), transparent 46%),
+    var(--surface-raised);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.next-game-info h2 {
+  margin: 2px 0 4px;
+  font-size: 1.3rem;
+}
+
+.next-game-info h2 span {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.next-game-meta {
+  margin: 0;
+  color: var(--text-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.next-game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.next-game-actions button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-soft);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+}
+
+.next-game-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Schedule-pressure badges */
+
+.schedule-badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.league-calendar-chips + .schedule-badges,
+.team-calendar-cell-inner .schedule-badges {
+  margin-left: 0;
+  margin-top: 2px;
+}
+
+.schedule-badge {
+  padding: 1px 6px;
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-soft);
+  background: var(--surface-soft);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.schedule-today-button {
+  margin-left: 6px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--surface-raised);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.schedule-today-button:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent-hover);
+}
+
+.schedule-today-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

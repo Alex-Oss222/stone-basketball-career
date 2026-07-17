@@ -19,6 +19,8 @@ import type { LeaguePresentationBundle } from '../app/leagueSnapshotDomainAdapte
 import { buildLeagueYearMonthGrids } from '../app/calendarMonthGrid'
 import type { CalendarDayCellModel, CalendarMonthGridModel } from '../app/calendarMonthGrid'
 import { createLeagueYearDisplayRange } from '../app/leagueYearDisplayRange'
+import { annotateTeamScheduleGames } from '../app/scheduleInsights'
+import type { AnnotatedTeamGame } from '../app/scheduleInsights'
 import { parseTeamId } from '../domain/ids'
 import type { GameId, TeamId } from '../domain/ids'
 import { compareLocalDates } from '../domain/localDate'
@@ -34,6 +36,7 @@ import type {
   TeamScheduleViewMode,
 } from './teamScheduleUiState'
 import {
+  formatScheduleDateLong,
   formatScheduleDateShort,
   formatScheduleMonthHeading,
   formatScheduledGameStatus,
@@ -185,7 +188,27 @@ export function TeamSchedulePage({
     ],
   )
 
+  const annotationsByDate = useMemo(() => {
+    const games = viewModel.rows.flatMap((row) =>
+      row.placementDate === null
+        ? []
+        : [{ date: row.placementDate, site: row.site }],
+    )
+    return new Map(
+      annotateTeamScheduleGames(games).map((game) => [game.date, game]),
+    )
+  }, [viewModel.rows])
+
+  const nextGame = viewModel.rows.find((row) => row.isNextScheduledGame) ?? null
+  const nextGameRest =
+    nextGame !== null && nextGame.placementDate !== null
+      ? annotationsByDate.get(nextGame.placementDate)?.restDays ?? null
+      : null
+
   const currentMonth = yearMonthFromLocalDate(season.currentDate)
+  const currentMonthInRange = range.months.some(
+    (month) => month === currentMonth,
+  )
   const defaultMonth = range.months.some((month) => month === currentMonth)
     ? currentMonth
     : viewModel.monthGroups[0]?.month ?? range.startMonth
@@ -270,6 +293,10 @@ export function TeamSchedulePage({
       />
 
       {isRegularSeason && (
+        <NextGameCommandBar nextGame={nextGame} restDays={nextGameRest} />
+      )}
+
+      {isRegularSeason && (
         <TeamScheduleSiteFilter
           filter={uiState.siteFilter}
           onFilter={(filter) => dispatch({ type: 'set_site_filter', filter })}
@@ -345,6 +372,12 @@ export function TeamSchedulePage({
                 : () =>
                     dispatch({ type: 'set_visible_month', month: nextMonth })
             }
+            onToday={
+              currentMonthInRange && effectiveMonth !== currentMonth
+                ? () =>
+                    dispatch({ type: 'set_visible_month', month: currentMonth })
+                : null
+            }
           />
 
           {uiState.viewMode === 'calendar' ? (
@@ -362,6 +395,7 @@ export function TeamSchedulePage({
                 <TeamCalendarMonth
                   grid={visibleGrid}
                   rowsByDate={rowsByDate}
+                  annotationsByDate={annotationsByDate}
                   currentDate={season.currentDate}
                   inspectedTeamName={viewModel.inspectedTeamName}
                   onOpenGame={openGame}
@@ -375,6 +409,7 @@ export function TeamSchedulePage({
               upcomingRows={upcomingMonthRows}
               recentRows={recentRows}
               undatedRows={visibleUndatedRows}
+              annotationsByDate={annotationsByDate}
               onOpenGame={openGame}
             />
           )}
@@ -395,10 +430,12 @@ function MonthNavBar({
   monthHeading,
   onPreviousMonth,
   onNextMonth,
+  onToday,
 }: {
   readonly monthHeading: string
   readonly onPreviousMonth: (() => void) | null
   readonly onNextMonth: (() => void) | null
+  readonly onToday: (() => void) | null
 }) {
   return (
     <div className="team-schedule-month-nav">
@@ -423,6 +460,14 @@ function MonthNavBar({
       >
         <span aria-hidden="true">›</span>
       </button>
+      <button
+        type="button"
+        className="schedule-today-button"
+        onClick={onToday ?? undefined}
+        disabled={onToday === null}
+      >
+        Today
+      </button>
     </div>
   )
 }
@@ -430,12 +475,14 @@ function MonthNavBar({
 function TeamCalendarMonth({
   grid,
   rowsByDate,
+  annotationsByDate,
   currentDate,
   inspectedTeamName,
   onOpenGame,
 }: {
   readonly grid: CalendarMonthGridModel
   readonly rowsByDate: ReadonlyMap<LocalDate, readonly TeamScheduleRowViewModel[]>
+  readonly annotationsByDate: ReadonlyMap<LocalDate, AnnotatedTeamGame>
   readonly currentDate: LocalDate
   readonly inspectedTeamName: string
   readonly onOpenGame: (
@@ -468,6 +515,7 @@ function TeamCalendarMonth({
                   key={day.date}
                   day={day}
                   rows={rowsByDate.get(day.date) ?? []}
+                  annotation={annotationsByDate.get(day.date) ?? null}
                   isCurrent={day.date === currentDate}
                   onOpenGame={onOpenGame}
                 />
@@ -483,11 +531,13 @@ function TeamCalendarMonth({
 function TeamCalendarDayCell({
   day,
   rows,
+  annotation,
   isCurrent,
   onOpenGame,
 }: {
   readonly day: CalendarDayCellModel
   readonly rows: readonly TeamScheduleRowViewModel[]
+  readonly annotation: AnnotatedTeamGame | null
   readonly isCurrent: boolean
   readonly onOpenGame: (
     gameId: GameId,
@@ -533,6 +583,7 @@ function TeamCalendarDayCell({
             </button>
           ))}
         </div>
+        {rows.length > 0 && <ScheduleBadges annotation={annotation} />}
       </div>
     </td>
   )
@@ -716,10 +767,12 @@ function UndatedTeamScheduleSection({
 function TeamScheduleTable({
   rows,
   caption,
+  annotationsByDate,
   onOpenGame,
 }: {
   readonly rows: readonly TeamScheduleRowViewModel[]
   readonly caption: string
+  readonly annotationsByDate?: ReadonlyMap<LocalDate, AnnotatedTeamGame>
   readonly onOpenGame: (
     gameId: GameId,
     event: MouseEvent<HTMLButtonElement>,
@@ -746,6 +799,11 @@ function TeamScheduleTable({
             <TeamScheduleTableRow
               key={row.gameId}
               row={row}
+              annotation={
+                row.placementDate === null
+                  ? null
+                  : annotationsByDate?.get(row.placementDate) ?? null
+              }
               onOpenGame={onOpenGame}
             />
           ))}
@@ -757,9 +815,11 @@ function TeamScheduleTable({
 
 function TeamScheduleTableRow({
   row,
+  annotation,
   onOpenGame,
 }: {
   readonly row: TeamScheduleRowViewModel
+  readonly annotation: AnnotatedTeamGame | null
   readonly onOpenGame: (
     gameId: GameId,
     event: MouseEvent<HTMLButtonElement>,
@@ -808,6 +868,7 @@ function TeamScheduleTableRow({
       <td data-label="Opponent">
         <strong>{row.opponentName}</strong>{' '}
         <span>({row.opponentAbbreviation})</span>
+        <ScheduleBadges annotation={annotation} />
       </td>
       <td data-label="Site">{row.site === 'home' ? 'Home' : 'Away'}</td>
       <td data-label="Status">{status}</td>
@@ -821,6 +882,7 @@ function TeamScheduleListView({
   upcomingRows,
   recentRows,
   undatedRows,
+  annotationsByDate,
   onOpenGame,
 }: {
   readonly monthHeading: string
@@ -828,6 +890,7 @@ function TeamScheduleListView({
   readonly upcomingRows: readonly TeamScheduleRowViewModel[]
   readonly recentRows: readonly TeamScheduleRowViewModel[]
   readonly undatedRows: readonly TeamScheduleRowViewModel[]
+  readonly annotationsByDate: ReadonlyMap<LocalDate, AnnotatedTeamGame>
   readonly onOpenGame: (
     gameId: GameId,
     event: MouseEvent<HTMLButtonElement>,
@@ -850,6 +913,7 @@ function TeamScheduleListView({
           subtitle={`${monthHeading} · ${upcomingRows.length} ${upcomingRows.length === 1 ? 'game' : 'games'}`}
           rows={upcomingRows}
           caption={`Upcoming ${monthHeading} games for ${inspectedTeamName}`}
+          annotationsByDate={annotationsByDate}
           onOpenGame={onOpenGame}
         />
       )}
@@ -860,6 +924,7 @@ function TeamScheduleListView({
           subtitle={`Last ${recentRows.length}`}
           rows={recentRows}
           caption={`Recent games for ${inspectedTeamName}`}
+          annotationsByDate={annotationsByDate}
           onOpenGame={onOpenGame}
         />
       )}
@@ -880,6 +945,7 @@ function ScheduleGamesSection({
   subtitle,
   rows,
   caption,
+  annotationsByDate,
   onOpenGame,
 }: {
   readonly headingId: string
@@ -887,6 +953,7 @@ function ScheduleGamesSection({
   readonly subtitle: string
   readonly rows: readonly TeamScheduleRowViewModel[]
   readonly caption: string
+  readonly annotationsByDate: ReadonlyMap<LocalDate, AnnotatedTeamGame>
   readonly onOpenGame: (
     gameId: GameId,
     event: MouseEvent<HTMLButtonElement>,
@@ -902,6 +969,7 @@ function ScheduleGamesSection({
       </header>
       <TeamScheduleTable
         rows={rows}
+        annotationsByDate={annotationsByDate}
         caption={caption}
         onOpenGame={onOpenGame}
       />
@@ -919,6 +987,100 @@ function EmptyMonthState({
       <h3 id="team-schedule-empty-month">No games in {monthHeading}</h3>
       <p>Use the month controls to move to a month with scheduled games.</p>
     </section>
+  )
+}
+
+const COMMAND_ACTIONS = ['Preview', 'Set Lineup', 'Play', 'Sim Day'] as const
+
+function NextGameCommandBar({
+  nextGame,
+  restDays,
+}: {
+  readonly nextGame: TeamScheduleRowViewModel | null
+  readonly restDays: number | null
+}) {
+  if (nextGame === null) {
+    return (
+      <section className="next-game-bar" aria-labelledby="next-game-heading">
+        <div className="next-game-info">
+          <p className="page-status">Next game</p>
+          <h2 id="next-game-heading">No upcoming scheduled games</h2>
+        </div>
+      </section>
+    )
+  }
+
+  const isHome = nextGame.site === 'home'
+
+  return (
+    <section className="next-game-bar" aria-labelledby="next-game-heading">
+      <div className="next-game-info">
+        <p className="page-status">Next game</p>
+        <h2 id="next-game-heading">
+          {isHome ? 'vs' : '@'} {nextGame.opponentName}{' '}
+          <span>({nextGame.opponentAbbreviation})</span>
+        </h2>
+        <p className="next-game-meta">
+          {nextGame.placementDate === null ? (
+            'Date to be announced'
+          ) : (
+            <time dateTime={nextGame.placementDate}>
+              {formatScheduleDateLong(nextGame.placementDate)}
+            </time>
+          )}
+          {' · '}
+          {isHome ? 'Home' : 'Away'}
+          {restDays !== null && (
+            <>
+              {' · '}
+              {restDays === 0
+                ? 'Back-to-back'
+                : `${restDays} ${restDays === 1 ? 'day' : 'days'} rest`}
+            </>
+          )}
+        </p>
+      </div>
+      <div className="next-game-actions">
+        {COMMAND_ACTIONS.map((action) => (
+          <button
+            key={action}
+            type="button"
+            disabled
+            title="Coming later"
+          >
+            {action}
+          </button>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+function ScheduleBadges({
+  annotation,
+}: {
+  readonly annotation: AnnotatedTeamGame | null
+}) {
+  if (annotation === null) return null
+
+  const badges: string[] = []
+  if (annotation.isBackToBack) badges.push('B2B')
+  if (annotation.isThreeInFour) badges.push('3-in-4')
+  if (annotation.runLength > 1) {
+    badges.push(
+      `${annotation.site === 'away' ? 'Road' : 'Home'} ${annotation.runIndex}/${annotation.runLength}`,
+    )
+  }
+  if (badges.length === 0) return null
+
+  return (
+    <span className="schedule-badges">
+      {badges.map((badge) => (
+        <span key={badge} className="schedule-badge">
+          {badge}
+        </span>
+      ))}
+    </span>
   )
 }
 

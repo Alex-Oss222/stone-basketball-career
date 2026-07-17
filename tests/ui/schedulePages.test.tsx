@@ -65,6 +65,28 @@ describe('TeamScheduleContent', () => {
     expect(markup).not.toContain('Recent games')
   })
 
+  it('renders the next-game command bar, derived badges, and Today control', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
+    )
+    const calendar = renderToStaticMarkup(
+      <TeamScheduleContent presentation={presentation} />,
+    )
+    const list = renderToStaticMarkup(
+      <TeamScheduleContent presentation={presentation} initialViewMode="list" />,
+    )
+
+    // Next-game command bar with disabled (coming-later) actions.
+    expect(calendar).toContain('next-game-bar')
+    expect(calendar).toContain('Next game')
+    expect(calendar).toContain('Sim Day')
+    expect(calendar).toContain('title="Coming later"')
+    expect(calendar).toContain('schedule-today-button')
+    // Derived schedule-pressure badges appear on games (a road trip in October).
+    expect(list).toMatch(/schedule-badge/)
+    expect(list).toContain('Road')
+  })
+
   it('renders the inspected team calendar view when selected', () => {
     const presentation = createLeaguePresentationBundle(
       createLeagueSnapshotV2Fixture(),

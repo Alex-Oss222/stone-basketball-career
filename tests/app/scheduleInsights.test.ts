@@ -1,7 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import { differenceInDays, parseLocalDate } from '../../src/domain/localDate'
 import type { LocalDate } from '../../src/domain/localDate'
-import { computeTeamScheduleInsights } from '../../src/app/scheduleInsights'
+import {
+  annotateTeamScheduleGames,
+  computeTeamScheduleInsights,
+} from '../../src/app/scheduleInsights'
 import type {
   GameSite,
   TeamScheduleGame,
@@ -87,6 +90,41 @@ describe('computeTeamScheduleInsights', () => {
       games: 3,
       startDate: '2026-10-05',
       endDate: '2026-10-07',
+    })
+  })
+
+  it('annotates rest, back-to-backs, three-in-four, and run position', () => {
+    const annotated = annotateTeamScheduleGames(SAMPLE_GAMES)
+
+    expect(annotated).toHaveLength(7)
+    // Oct 1: first away game of a three-game road trip.
+    expect(annotated[0]).toMatchObject({
+      restDays: null,
+      isBackToBack: false,
+      isThreeInFour: false,
+      runIndex: 1,
+      runLength: 3,
+    })
+    // Oct 2: zero rest → back-to-back, second of the road trip.
+    expect(annotated[1]).toMatchObject({
+      restDays: 0,
+      isBackToBack: true,
+      runIndex: 2,
+      runLength: 3,
+    })
+    // Oct 3: three games (Oct 1-3) within four days.
+    expect(annotated[2]).toMatchObject({
+      isThreeInFour: true,
+      runIndex: 3,
+      runLength: 3,
+    })
+    // Oct 5: one rest day, first of the home stand.
+    expect(annotated[3]).toMatchObject({
+      site: 'home',
+      restDays: 1,
+      isBackToBack: false,
+      runIndex: 1,
+      runLength: 3,
     })
   })
 
