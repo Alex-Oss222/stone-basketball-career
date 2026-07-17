@@ -86,6 +86,14 @@ export function getCalendarYear(date: LocalDate): number {
   return getDateParts(parseLocalDate(date)).year
 }
 
+/** Signed whole-day count from `from` to `to` in the proleptic calendar. */
+export function differenceInDays(from: LocalDate, to: LocalDate): number {
+  return (
+    toOrdinal(getDateParts(parseLocalDate(to))) -
+    toOrdinal(getDateParts(parseLocalDate(from)))
+  )
+}
+
 /**
  * Formats a season range with an abbreviated ending year only when both years
  * are in the same century. An en dash separates the stored numeric years.
