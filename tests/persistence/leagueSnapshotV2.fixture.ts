@@ -1,6 +1,10 @@
 import { createSeasonFoundation } from '../../src/app/commands/createSeasonFoundation'
-import type { SeasonFoundationConfiguration } from '../../src/app/commands/createSeasonFoundation'
+import type {
+  SeasonFoundation,
+  SeasonFoundationConfiguration,
+} from '../../src/app/commands/createSeasonFoundation'
 import type { TeamId } from '../../src/domain/ids'
+import type { League } from '../../src/domain/league'
 import { parseLocalDate } from '../../src/domain/localDate'
 import { generateLeague } from '../../src/generation/generateLeague'
 import { serializeLeagueSnapshotV2 } from '../../src/persistence/leagueSnapshotV2'
@@ -26,6 +30,12 @@ const fixtureFoundation = createSeasonFoundation({
 
 export const V2_FIXTURE_MANAGED_TEAM_ID = fixtureLeague.teams[0].id
 
+export interface LeagueSeasonDomainFixture {
+  readonly league: League
+  readonly foundation: SeasonFoundation
+  readonly managedTeamId: TeamId | null
+}
+
 const selectedSnapshot = serializeLeagueSnapshotV2({
   rootSeed: V2_FIXTURE_ROOT_SEED,
   managedTeamId: V2_FIXTURE_MANAGED_TEAM_ID,
@@ -47,6 +57,21 @@ export function createLeagueSnapshotV2Fixture(
     ...structuredClone(selectedSnapshot),
     managedTeamId,
   }
+}
+
+/**
+ * Returns detached live-domain inputs from the same authoritative source as
+ * the serialized V2 fixture. Pure application tests can use these without
+ * importing persistence DTO types into production read models.
+ */
+export function createLeagueSeasonDomainFixture(
+  managedTeamId: TeamId | null = V2_FIXTURE_MANAGED_TEAM_ID,
+): LeagueSeasonDomainFixture {
+  return structuredClone({
+    league: fixtureLeague,
+    foundation: fixtureFoundation,
+    managedTeamId,
+  })
 }
 
 export function createLeagueSnapshotV1Fixture(): LeagueSnapshotV1 {

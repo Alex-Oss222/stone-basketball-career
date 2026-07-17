@@ -80,6 +80,64 @@ The full range always retains all twelve months, including months with no
 future games or events. These derived structures are not stored in
 `LeagueSnapshotV2`.
 
+## M2.4 normalized CalendarEntry read model
+
+M2.4 defines one immutable `CalendarEntryViewModel` projection for every
+authoritative `ScheduledGame` and `SeasonCalendar` event. The model preserves
+namespaced entry identity, exact source identity, source kind, status-aware
+placement date, original/current/actual date history, competition stage,
+GameDay or calendar-event metadata, real team associations, complete labels,
+managed-team context, and a deterministic sort key.
+
+Source mapping is explicit:
+
+- a game becomes `kind: game`, retains its GameId, GameDayId, home/away
+  TeamIds, and schedule stage, and uses an `away at home` title plus
+  `AWAY @ HOME` abbreviations;
+- a league-scoped event becomes `kind: league_event` with no team association;
+  and
+- a team-scoped event becomes `kind: team_event` with exactly its stored
+  TeamId.
+
+Game entry IDs use `game:<GameId>` and event entry IDs use
+`calendar-event:<CalendarEventId>`, so equal serialized source text cannot
+collide across kinds. Stored event titles are preserved without truncation.
+Managed-team markers are true only when a non-null managed TeamId appears in
+the authoritative entry team IDs; inspected-team filtering does not change
+them.
+
+Placement is status-aware:
+
+- scheduled games use `currentScheduledDate`;
+- completed games use `actualDate`;
+- postponed games use a replacement/current date or remain undated;
+- cancelled games use a retained current date or fall back to their required
+  original date;
+- estimated, announced, and scheduled events use `scheduledDate`;
+- completed events use `actualDate`;
+- postponed events use a replacement/current date or remain undated;
+- TBA events remain undated; and
+- cancelled events use a retained scheduled date, then an authoritative
+  original date, or remain undated.
+
+No placement rule overwrites the separately retained original, current
+scheduled, or actual dates. Status is mapped exhaustively from the source and
+is never inferred from date presence.
+
+The deterministic order is dated before undated, then canonical LocalDate,
+then league event, managed-team game, other game, managed-team team event,
+other team event, and finally namespaced entry ID. The final unique tie-breaker
+means ordering never depends on input indexes or sort stability.
+
+Pure selectors partition dated and undated entries; select by LocalDate,
+YearMonth, or TeamId; select managed-team entries; group dated entries by
+LocalDate; and create an ordered day agenda. All return new frozen
+collections. Undated entries are never assigned to a placeholder date.
+
+CalendarEntry data is derived application data. It is not part of
+`LeagueSnapshotV2`, does not increment league revision, and imports no React,
+persistence, generation, browser, or random source.
+
 ## Ordered implementation steps
 
 ### 1. YearMonth arithmetic (M2.2)
@@ -113,24 +171,30 @@ these models.
 
 ### 3. Shared normalized CalendarEntry (M2.4)
 
-Add `src/app/calendarViewModel.ts` and tests. Normalize scheduled games and
-season-calendar events into a stable discriminated `CalendarEntry` without
-losing source identity, original/current/actual date history, status, scope,
-participants, or GameDay metadata. Include future-tolerant uncertain variants
-from ADR 0006, while ensuring the current adapter emits only authoritative V2
-facts. Add pure selectors that merge authoritative `ScheduledGame` and
-`SeasonCalendar` records without React UI, persistence changes, or generation.
-Do not duplicate or rerun generation.
+The pure `src/app/calendarViewModel.ts` module normalizes validated live-domain
+League, LeagueSchedule, and SeasonCalendar entities without losing source
+identity, original/current/actual date history, status, scope, participants,
+calendar-event kind, or GameDay metadata. It exposes the frozen entry builder,
+dated/undated, date, month, team, and managed-team selectors, chronological
+date grouping, and day-agenda selection described above.
 
-### 4. Selectors grouped by date and month
+Cross-reference checks reject foreign teams, wrong league or season
+references, self-matchups, duplicate source IDs, invalid GameDay membership,
+and merged entry-ID collisions. Current sources never manufacture TBD
+opponents, date windows, or neutral-site claims. Normalization and selection
+do not import or rerun generation.
 
-In the calendar view model, add pure selectors that partition dated and TBA
-entries, group concrete current scheduled dates, group those date slates by
-calendar month, return empty display months, and filter league/managed-team/
-inspected-team scopes. Define an explicit deterministic tie order. Test
-multiple GameDays on one date, zero or variable games per date, postponement
-with original date retained, event/game coexistence, range boundaries,
-uncertain entries, non-mutation, and the absence of a four-game assumption.
+### 4. Enriched month-grid read models (M2.5)
+
+Attach normalized CalendarEntry values to the existing M2.3 structural day
+cells without mutating either source. Add pure enriched month-grid models,
+stored-current and past-date markers, deterministic overflow calculations,
+selected-day agenda models, and an explicit honest TBA collection. Preserve
+all twelve months, zero/variable entries per date, multiple GameDays on one
+date, event/game coexistence, and the absence of a four-game assumption.
+
+M2.5 remains application-only: no React rendering, routing, persistence,
+schedule generation, results, or simulation.
 
 ### 5. Continuous month-grid Calendar
 
@@ -193,8 +257,8 @@ Milestone 2 calendar work is complete only when:
 
 - the explicit July 1–June 30 range is independent of schedule endpoints;
 - all twelve current-season months render continuously;
-- date slates group by current scheduled `LocalDate`, not GameDay or
-  `actualDate`, and never assume four games;
+- date slates use the documented status-aware placement `LocalDate`, never
+  GameDay grouping, and never assume four games;
 - Agenda and Team Schedule share normalized entries and game details;
 - the current snapshot still exposes 8 teams, 28 managed-team games split
   14/14, 28 GameDays, and 112 games with identities, order, and date history

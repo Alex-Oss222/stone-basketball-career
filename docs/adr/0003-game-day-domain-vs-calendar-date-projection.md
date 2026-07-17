@@ -17,10 +17,19 @@ original placement date, and its ordered game-ID references. Do not change its
 identity or its relationship to `ScheduledGame`.
 
 Presentation normalizes authoritative records and groups them by a concrete
-`LocalDate`, not by `GameDay`. For schedule views, a game's presentation date
-is its non-null `currentScheduledDate`. This wording does not mean the separate
-`actualDate`, which remains preserved for future historical and result views.
-A calendar event uses its current `scheduledDate`.
+status-aware placement `LocalDate`, not by `GameDay`:
+
+- a scheduled game or event uses its current scheduled date;
+- a completed game or event uses its authoritative actual date while retaining
+  original and current scheduled dates separately;
+- a postponed game or event uses its replacement/current date when one exists
+  and otherwise remains undated; and
+- a cancelled game or event uses a retained current date, otherwise its
+  authoritative original date when the domain retains one.
+
+This M2.4 refinement never treats an actual date as scheduled-date history.
+Every original, current scheduled, and actual date remains independently
+available in the normalized entry.
 
 Entries on the same date are merged into one date slate even when they came
 from different GameDays. No presentation selector may assume four games on a
