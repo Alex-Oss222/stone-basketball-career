@@ -39,7 +39,6 @@ describe('TeamScheduleContent', () => {
     expect(markup).toContain('Postseason')
     expect(markup).toContain('<span>List</span>')
     expect(markup).toContain('<span>Calendar</span>')
-    expect(markup).toContain('<span>Results</span>')
     expect(markup).toContain('Soon')
     expect(markup).toContain('Show previous month')
     expect(markup).toContain('Show next month')
@@ -102,23 +101,35 @@ describe('TeamScheduleContent', () => {
     expect(markup).not.toContain('role="grid"')
   })
 
-  it('shows an honest placeholder for scaffolded stages and views', () => {
+  it('shows an honest placeholder for a scaffolded stage', () => {
     const presentation = createLeaguePresentationBundle(
       createLeagueSnapshotV2Fixture(),
     )
     const postseason = renderToStaticMarkup(
       <TeamScheduleContent presentation={presentation} initialStage="postseason" />,
     )
-    const results = renderToStaticMarkup(
-      <TeamScheduleContent presentation={presentation} initialViewMode="results" />,
-    )
 
     expect(postseason).toContain('Coming later')
     expect(postseason).toContain('Postseason schedule')
     expect(postseason).not.toContain('data-schedule-game')
-    expect(results).toContain('Coming later')
-    expect(results).toContain('game simulation and completed game results')
-    expect(results).not.toContain('data-schedule-game')
+  })
+
+  it('filters the list timeline by All, Upcoming, and Final', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
+    )
+    const list = renderToStaticMarkup(
+      <TeamScheduleContent presentation={presentation} initialViewMode="list" />,
+    )
+
+    // The Results filter replaces the old Results view tab.
+    expect(list).toContain('name="team-schedule-results"')
+    expect(list).toContain('All games')
+    expect(list).toContain('Upcoming')
+    expect(list).toContain('Final')
+    expect(list).toContain('Upcoming games')
+    // No games have been played, so the season opens with no finals.
+    expect(list).not.toContain('Final games')
   })
 
   it('provides all eight inspected teams without changing managed ownership', () => {

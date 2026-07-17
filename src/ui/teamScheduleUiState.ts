@@ -14,13 +14,16 @@ export type TeamScheduleStage =
   | 'postseason'
   | 'offseason'
 
-/** Scaffolded view tabs. Results has no game-result data until simulation. */
-export type TeamScheduleViewMode = 'list' | 'calendar' | 'results'
+export type TeamScheduleViewMode = 'list' | 'calendar'
+
+/** Timeline filter. "final" has no completed games until simulation exists. */
+export type TeamScheduleResultFilter = 'all' | 'upcoming' | 'final'
 
 export interface TeamScheduleUiState {
   readonly inspectedTeamId: TeamId
   readonly stage: TeamScheduleStage
   readonly viewMode: TeamScheduleViewMode
+  readonly resultFilter: TeamScheduleResultFilter
   readonly siteFilter: TeamScheduleSiteFilter
   readonly broadcast: BroadcastFilter
   /** Null means "auto-select" the current or first available month. */
@@ -50,6 +53,10 @@ export type TeamScheduleUiAction =
   | {
       readonly type: 'set_view_mode'
       readonly viewMode: TeamScheduleViewMode
+    }
+  | {
+      readonly type: 'set_result_filter'
+      readonly resultFilter: TeamScheduleResultFilter
     }
   | {
       readonly type: 'set_site_filter'
@@ -104,6 +111,7 @@ export function createTeamScheduleUiState({
     inspectedTeamId,
     stage: parseTeamScheduleStage(initialStage),
     viewMode: parseTeamScheduleViewMode(initialViewMode),
+    resultFilter: 'all',
     siteFilter: parseTeamScheduleSiteFilter(initialFilter),
     broadcast: 'all',
     visibleMonth: null,
@@ -138,6 +146,11 @@ export function reduceTeamScheduleUiState(
       return Object.freeze({
         ...state,
         viewMode: parseTeamScheduleViewMode(action.viewMode),
+      })
+    case 'set_result_filter':
+      return Object.freeze({
+        ...state,
+        resultFilter: parseTeamScheduleResultFilter(action.resultFilter),
       })
     case 'set_site_filter':
       return Object.freeze({
@@ -189,11 +202,25 @@ export function parseTeamScheduleViewMode(
   switch (value) {
     case 'list':
     case 'calendar':
-    case 'results':
       return value
     default:
       throw new RangeError(
         `Team Schedule view mode is unsupported: ${String(value)}`,
+      )
+  }
+}
+
+export function parseTeamScheduleResultFilter(
+  value: unknown,
+): TeamScheduleResultFilter {
+  switch (value) {
+    case 'all':
+    case 'upcoming':
+    case 'final':
+      return value
+    default:
+      throw new RangeError(
+        `Team Schedule result filter is unsupported: ${String(value)}`,
       )
   }
 }

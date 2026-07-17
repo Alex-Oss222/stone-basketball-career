@@ -32,6 +32,7 @@ import {
   reduceTeamScheduleUiState,
 } from './teamScheduleUiState'
 import type {
+  TeamScheduleResultFilter,
   TeamScheduleStage,
   TeamScheduleViewMode,
 } from './teamScheduleUiState'
@@ -74,8 +75,13 @@ const GM_NAME_PLACEHOLDER = 'Your GM'
 const VIEW_TABS = [
   { value: 'calendar', label: 'Calendar' },
   { value: 'list', label: 'List' },
-  { value: 'results', label: 'Results', comingLater: true },
 ] as const satisfies readonly SegmentedTabOption<TeamScheduleViewMode>[]
+
+const RESULT_FILTER_TABS = [
+  { value: 'all', label: 'All games' },
+  { value: 'upcoming', label: 'Upcoming' },
+  { value: 'final', label: 'Final' },
+] as const satisfies readonly SegmentedTabOption<TeamScheduleResultFilter>[]
 
 const RECENT_GAME_LIMIT = 5
 
@@ -248,6 +254,10 @@ export function TeamSchedulePage({
     )
     .slice(-RECENT_GAME_LIMIT)
     .reverse()
+  // Final: completed games (none until simulation exists), most recent first.
+  const finalRows = filteredRows
+    .filter((row) => row.status === 'completed')
+    .reverse()
 
   function inspectTeam(teamId: TeamId): void {
     dispatch({ type: 'inspect_team', teamId })
@@ -313,6 +323,18 @@ export function TeamSchedulePage({
         />
       )}
 
+      {isRegularSeason && uiState.viewMode === 'list' && (
+        <SegmentedTabs
+          legend="Results"
+          name="team-schedule-results"
+          value={uiState.resultFilter}
+          options={RESULT_FILTER_TABS}
+          onChange={(resultFilter) =>
+            dispatch({ type: 'set_result_filter', resultFilter })
+          }
+        />
+      )}
+
       {isRegularSeason && (
         <SegmentedTabs
           legend="Broadcast"
@@ -347,11 +369,6 @@ export function TeamSchedulePage({
         <ComingLaterPanel
           title={`${stageLabel(uiState.stage)} schedule`}
           requirement={stageRequirement(uiState.stage)}
-        />
-      ) : uiState.viewMode === 'results' ? (
-        <ComingLaterPanel
-          title="Results"
-          requirement="Requires game simulation and completed game results."
         />
       ) : (
         <section
@@ -406,8 +423,10 @@ export function TeamSchedulePage({
             <TeamScheduleListView
               monthHeading={formatScheduleMonthHeading(effectiveMonth)}
               inspectedTeamName={viewModel.inspectedTeamName}
+              resultFilter={uiState.resultFilter}
               upcomingRows={upcomingMonthRows}
               recentRows={recentRows}
+              finalRows={finalRows}
               undatedRows={visibleUndatedRows}
               annotationsByDate={annotationsByDate}
               onOpenGame={openGame}
@@ -879,16 +898,20 @@ function TeamScheduleTableRow({
 function TeamScheduleListView({
   monthHeading,
   inspectedTeamName,
+  resultFilter,
   upcomingRows,
   recentRows,
+  finalRows,
   undatedRows,
   annotationsByDate,
   onOpenGame,
 }: {
   readonly monthHeading: string
   readonly inspectedTeamName: string
+  readonly resultFilter: TeamScheduleResultFilter
   readonly upcomingRows: readonly TeamScheduleRowViewModel[]
   readonly recentRows: readonly TeamScheduleRowViewModel[]
+  readonly finalRows: readonly TeamScheduleRowViewModel[]
   readonly undatedRows: readonly TeamScheduleRowViewModel[]
   readonly annotationsByDate: ReadonlyMap<LocalDate, AnnotatedTeamGame>
   readonly onOpenGame: (
@@ -896,9 +919,38 @@ function TeamScheduleListView({
     event: MouseEvent<HTMLButtonElement>,
   ) => void
 }) {
+  if (resultFilter === 'final') {
+    if (finalRows.length === 0) {
+      return (
+        <section
+          className="empty-state"
+          aria-labelledby="team-schedule-final-empty"
+        >
+          <h3 id="team-schedule-final-empty">No completed games yet</h3>
+          <p>Final scores appear here once games have been played.</p>
+        </section>
+      )
+    }
+    return (
+      <div className="team-schedule-list-view">
+        <ScheduleGamesSection
+          headingId="team-schedule-final"
+          title="Final games"
+          subtitle={`${finalRows.length} completed`}
+          rows={finalRows}
+          caption={`Completed games for ${inspectedTeamName}`}
+          annotationsByDate={annotationsByDate}
+          onOpenGame={onOpenGame}
+        />
+      </div>
+    )
+  }
+
+  const showRecent = resultFilter === 'all'
+
   if (
     upcomingRows.length === 0 &&
-    recentRows.length === 0 &&
+    (!showRecent || recentRows.length === 0) &&
     undatedRows.length === 0
   ) {
     return <EmptyMonthState monthHeading={monthHeading} />
@@ -917,7 +969,7 @@ function TeamScheduleListView({
           onOpenGame={onOpenGame}
         />
       )}
-      {recentRows.length > 0 && (
+      {showRecent && recentRows.length > 0 && (
         <ScheduleGamesSection
           headingId="team-schedule-recent"
           title="Recent games"
