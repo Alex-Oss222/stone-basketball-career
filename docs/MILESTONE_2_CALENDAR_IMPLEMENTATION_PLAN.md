@@ -17,6 +17,7 @@ The governing decisions are:
 - [ADR 0004](adr/0004-league-truth-vs-ui-preferences.md)
 - [ADR 0005](adr/0005-scheduled-game-vs-game-result.md)
 - [ADR 0006](adr/0006-future-uncertain-schedule-slots.md)
+- [ADR 0007](adr/0007-snapshot-domain-adapter-and-memoized-derivation.md)
 
 This plan does not implement season advancement, schedule editing,
 postponement rescheduling, simulation, results, scores, standings, statistics,
