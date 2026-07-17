@@ -21,6 +21,7 @@ import type {
   TeamScheduleInsights,
 } from '../app/scheduleInsights'
 import type { LocalDate } from '../domain/localDate'
+import { yearMonthFromLocalDate } from '../domain/yearMonth'
 import {
   createLeagueCalendarUiState,
   reduceLeagueCalendarUiState,
@@ -158,6 +159,11 @@ export function LeagueCalendarPage({
     throw new RangeError('League Calendar has no month to display')
   }
 
+  const currentMonth = yearMonthFromLocalDate(season.currentDate)
+  const canJumpToToday =
+    range.months.some((month) => month === currentMonth) &&
+    visibleMonth.month !== currentMonth
+
   return (
     <div className="league-calendar-page">
       <LeagueCalendarToolbar
@@ -176,6 +182,11 @@ export function LeagueCalendarPage({
           nextMonth === null
             ? null
             : () => dispatch({ type: 'show_month', month: nextMonth })
+        }
+        onToday={
+          canJumpToToday
+            ? () => dispatch({ type: 'show_month', month: currentMonth })
+            : null
         }
         onViewMode={(viewMode) =>
           dispatch({ type: 'set_view_mode', viewMode })
@@ -262,6 +273,7 @@ function LeagueCalendarToolbar({
   canManagedScope,
   onPreviousMonth,
   onNextMonth,
+  onToday,
   onViewMode,
   onBroadcast,
   onScope,
@@ -274,6 +286,7 @@ function LeagueCalendarToolbar({
   readonly canManagedScope: boolean
   readonly onPreviousMonth: (() => void) | null
   readonly onNextMonth: (() => void) | null
+  readonly onToday: (() => void) | null
   readonly onViewMode: (viewMode: LeagueCalendarViewMode) => void
   readonly onBroadcast: (broadcast: BroadcastFilter) => void
   readonly onScope: (scope: CalendarScope) => void
@@ -306,6 +319,14 @@ function LeagueCalendarToolbar({
             aria-label="Show next month"
           >
             <span aria-hidden="true">›</span>
+          </button>
+          <button
+            type="button"
+            className="schedule-today-button"
+            onClick={onToday ?? undefined}
+            disabled={onToday === null}
+          >
+            Today
           </button>
         </div>
       </div>
