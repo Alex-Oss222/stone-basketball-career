@@ -78,12 +78,23 @@ Two things make this safe rather than reckless:
 
 ## Status
 
-**Current section: §6 — Results UI (discover the contract).** The first build
-of all three screens is green (see "Accomplished so far" in §6); what remains
-is iterating on them and freezing the types.
+**Current section: §8 — League rules and rotation plans (rotation half).**
 
-Sections 1–5 are shipped. 1,162 tests pass across 57 files; typecheck, lint,
-and build are clean.
+Sections 1–7 are shipped. §7 closed 2026-07-17: the save format is collapsed to
+one monotonic version (`LEAGUE_SNAPSHOT_VERSION = 3`); the V1 DTO and the whole
+migration module are deleted; an old record now surfaces a "start a new league"
+version-mismatch screen instead of a migration. Verified by the full gate
+(tsc / oxlint / 1,079 tests / build), bundle-purity, and a five-dimension
+adversarial review — zero findings. Not committed yet.
+
+§8's rule-pack half (`src/domain/leagueRules.ts`) also landed early by request.
+The rotation half is what §8 now covers: `RotationPlanV1`, its structured-issue
+validator, deterministic per-team CPU generation, and the functional Adjust
+Rotation editor that clears `DEFERRED(§8)`.
+
+Open §6 polish, deliberately deferred: Alex dislikes how the empty Standings
+card sits in the Home layout — revisit when its data lands (tagged on the
+card's `DEFERRED(§11)` note).
 
 ---
 
@@ -148,7 +159,7 @@ The goal of Part II is the whole loop: design the screens → one game → a ful
 season → several seasons, all deterministic and persisted. The basketball model
 stays simple throughout; depth is §14.
 
-### 6. Results UI — discover the contract ← **CURRENT**
+### 6. Results UI — discover the contract ✅
 
 **Goal.** Build the result, box score, and dashboard screens against hand-written
 fixtures, and move things around until they feel right. **The fields those
@@ -261,7 +272,7 @@ move things, then freeze the types.
   Continue becomes real (§10). Card-level phase-awareness (Next Event becoming
   draft/free-agency/playoffs) needs those phases to exist.
 
-### 7. Collapse the save format to one version
+### 7. Collapse the save format to one version ✅
 
 **Goal.** Stop paying a migration tax for saves that do not exist, so that every
 later section can change the snapshot shape freely.
@@ -309,26 +320,288 @@ repository rules hold. Real migrations begin at §17, when saves start mattering
 - Roughly 1,570 lines of V1/migration code and tests are gone.
 - All four gates green.
 
+**Accomplished (2026-07-17).** Done as planned, in the shape the code revealed.
+`leagueSnapshotV2.ts` became the sole `leagueSnapshot.ts`
+(`LEAGUE_SNAPSHOT_VERSION = 3`, monotonic), absorbing the V1 closed parsers it
+used to delegate to; the V1 DTO, the `migrations/` directory, and their tests
+are deleted. `restore()` now returns `empty | restored | version-mismatch |
+recovery-required`, and the mismatch and recovery paths never touch stored data.
+The IndexedDB adapter keeps a single `current` slot but still *reads* the legacy
+`current-v2` key (active wins; legacy surfaces only when `current` is empty), so
+an old save is refused as a version-mismatch rather than mistaken for empty.
+`App.tsx` / `setupPages.tsx` replaced the migration flow with a
+`VersionMismatchScreen` whose only destructive action is a user-confirmed,
+version-guarded `clear()` → new league. Net −1,949 lines. Verified beyond the
+gate by bundle-purity checks and a five-dimension adversarial review
+(save-integrity, restore contract, parser preservation, version consistency,
+absence-test tripwires — zero findings). Not committed yet.
+
 ### 8. League rules and rotation plans
 
-**Goal.** Build the two sim inputs that do not exist. `SIMULATION_MODEL.md`
-specifies `simulateGame` as taking `LeagueRulesV1` and `RotationPlan` (home and
-away) — neither of which exists today.
+**Goal.** Build the two sim inputs that do not exist, on one organizing
+principle (Alex's spec, 2026-07-17):
 
-**Work.**
-- `LeagueRulesV1`: four 12-minute quarters, 24/14-second clocks, six personal
-  fouls, five-minute overtime. Versioned; the sim reads rules, never constants.
-- `RotationPlan`: five starters plus planned minutes. Whole minutes at the edges,
-  integer seconds internally.
-- Deterministic CPU rotation generation for all 8 teams from the league seed.
-- `validateRotationPlan`: five distinct eligible starters, no player on two
-  teams, 240 planned regulation minutes per team.
+> **`LeagueRulesV1` determines what is legal. `RotationPlan` describes what
+> the coach intends. The live rotation engine (§9/§14) decides what actually
+> happens.** Never combine these three responsibilities in one object, and
+> never put CPU strategy fields inside the rules.
+
+**Rules half done (2026-07-17, by request — no coupling to §7):**
+`src/domain/leagueRules.ts` ships the nested `LeagueRulesV1` contract and the
+frozen `MILESTONE_1_LEAGUE_RULES` pack: 4×720s quarters; 300s unlimited
+overtime with the 20-OT termination guard; 24/14/8-second clocks; 6 personal
+fouls with unlimited re-entry; team-foul penalty on the **5th regulation** /
+**4th overtime** team foul plus the **final-2:00 single-foul rule**; offensive
+fouls never count toward the bonus; shooting-foul free throws 2 (missed two) /
+3 (missed three) / 1 (and-one) and 2 in the penalty; dead-ball-only
+substitutions. Regulation player-minutes are **derived**
+(`deriveRegulationTeamSeconds` = 4 × 720 × 5 = 14,400s = 240 min), never a
+stored magic number; tests prove agreement with the frozen result contract.
+
+**Remaining: the rotation half.**
+
+- `RotationPlanV1`: `teamId`, exactly five `starters`, `minuteTargets`
+  (whole minutes at the UI edge, integer seconds internally), `benchOrder`,
+  `source: 'cpu-generated' | 'user-edited'`, generator version. No wall-clock
+  timestamps in deterministic data.
+- `validateRotationPlan` returning **structured issue codes** (starter count,
+  duplicate starter, ineligible player, minute total, per-player minutes) so
+  the editor can show exact errors. A valid regulation plan: five unique
+  eligible starters, all targeted players on the team, minutes 0–48 whole,
+  ≥5 players and all starters with positive minutes, total exactly the
+  derived 240, bench order duplicate-free. Position balance is a **soft CPU
+  preference, not a validator rule** — the rules require five legal players,
+  not one per named position.
+- Deterministic CPU generation per team from its own labeled stream
+  (`deriveSeed(leagueSeed, 'rotation/v1/<teamId>')`): filter eligible →
+  deterministic rotation score → sort with playerId tie-break → five starters
+  with soft balance → 8–10-player rotation → minute template (default
+  nine-man 34/33/32/31/28/24/22/20/16 = 240) adjusted by quality and
+  endurance → normalize to exactly 240 → validate → save only if valid. Team
+  processing order must not change any team's output.
+- **User-edited plans are never overwritten** by CPU regeneration.
+- **Roster-change reconciliation**: when a player becomes unavailable, remove
+  from starters, zero their minutes, preserve unaffected targets, fill
+  starters deterministically, redistribute and normalize to 240, re-validate,
+  and mark the plan as auto-repaired.
+- **Adjust Rotation becomes a functional editor** (this clears
+  `DEFERRED(§8)`; a visual mockup does not): 240/240 header, five starter
+  slots (role labels are suggestions), player table with starter toggle and
+  minute steppers, Auto Rotation / Reset / Save / Cancel. Save validates,
+  blocks invalid plans with the exact issues, persists, and the next
+  simulation consumes the updated plan.
+
+**Runtime behavior — §9/§14, not §8:** the engine compiles the plan at legal
+dead-ball opportunities (plans are workload targets, not scripted
+timestamps); quarter breaks are guaranteed checkpoints; foul-outs, injuries,
+and ejections override immediately; overtime allocates its extra 25
+player-minutes at runtime — **the saved plan stays 240**; foul-trouble
+sitting policy is coaching AI, not a league rule.
+
+**Deliberately out of scope** (implement coherently later or not at all —
+never half-implement): challenges, replay, flagrant/clear-path/take fouls,
+technicals, defensive three seconds, timeouts.
 
 **Exit gate.**
-- Identical seeds produce deeply-equal rotations.
-- All eight default rotations validate.
-- Invalid rotations are rejected with actionable, typed errors.
-- All four gates green.
+- Identical league seed + roster produce deeply-equal plans; save/load and
+  team processing order change nothing; streams are per-team. **Amended by §8A:**
+  the full deterministic input also includes coach profile ID + version and the
+  generator version — see §8A's combined exit gate, which supersedes this bullet.
+- All eight default rotations validate; every plan totals exactly the derived
+  240 with five unique eligible starters.
+- Invalid plans cannot be saved; errors are specific, typed issues.
+- User edits persist and survive CPU regeneration; roster changes repair
+  plans deterministically.
+- The Adjust Rotation editor works end-to-end and the simulator reads the
+  saved plan.
+- `grep -rn "DEFERRED(§8)" src/` returns nothing. All four gates green.
+
+### 8A. Coach rotation profiles
+
+**Goal.** Add deterministic coaching archetypes that shape CPU rotation
+generation now and live substitutions later, **without** putting strategy in
+`LeagueRulesV1` or turning `RotationPlanV1` into a substitution script. This
+extends the §8 organizing principle to four responsibilities (Alex's spec,
+2026-07-17):
+
+> `LeagueRulesV1` — what is legal.
+> `RotationPlanV1` — the intended regulation workload (starters, minutes, bench).
+> `CoachRotationProfileV1` — how a coach *generates and interprets* that workload.
+> Live rotation engine (§9/§14) — what actually happens at each legal sub.
+
+The profile is a **policy input**: its `planning` half feeds §8 generation and
+repair; its `runtime` half is consumed only by §9/§14. Legality and the
+rotation-plan validator never depend on coaching style.
+
+**Fictional-only.** Persisted data uses generic archetype IDs only. The
+real-coach inspirations in the pack table below are design documentation —
+never stored, never in game logic — so the labels can't rot as real coaches
+change teams or roles.
+
+**Contract** (planning consumed by §8; runtime is a validated data husk until
+§9/§14). Every `RotationTendency` is a whole number 0–100 — sim tuning
+constants, not measurements of real people:
+
+```ts
+type CoachRotationProfileId =
+  | 'adaptive-matchup' | 'balanced-system' | 'workhorse-core'
+  | 'development-lab'  | 'meritocratic-flex' | 'star-stagger'
+  | 'deep-collective'  | 'veteran-hierarchy'
+
+interface CoachRotationProfileV1 {
+  version: 1
+  profileId: CoachRotationProfileId
+  planning: {                 // §8 CPU generation + deterministic repair
+    targetRotationSize: 8 | 9 | 10
+    // length = targetRotationSize, sums to exactly 10_000; SHARES, not stored
+    // minutes — applied to deriveRegulationTeamSeconds(rules)
+    workloadSharesBps: readonly number[]
+    selectionWeights: { currentAbility; endurance; development; experience }
+    incumbentStarterBias; softRoleBalance; hierarchyRigidity; exploration
+  }
+  runtime: {                  // §9/§14 only
+    planAdherence; longStintPreference; fatigueConservatism; foulTroubleConservatism
+    matchupResponsiveness; hotHandResponsiveness; primaryCreatorStagger
+    unitContinuity; closingLineupFlexibility; garbageTimeBenchUse; playoffCompression
+  }
+}
+interface CoachRotationAssignmentV1 {
+  version: 1; coachId: string; profileId: CoachRotationProfileId
+}
+```
+
+The profile belongs to the **coach**, not the franchise — it travels when a
+coach changes teams. If Milestone 1 has no coach entities yet, a team-level
+assignment is an acceptable temporary adapter, but persist around a stable
+`coachId`.
+
+**`RotationPlanV1` gains generation/repair metadata** (policy identity, not the
+policy itself; no timestamps in deterministic data):
+
+```ts
+generation?: { generatorVersion: 'rotation-generator-v1'; coachProfileId; coachProfileVersion: 1 }
+autoRepair?:  { repairVersion: 'rotation-repair-v1';
+                reason: 'player-unavailable' | 'player-removed' | 'starter-ineligible' }
+```
+
+**The eight-profile pack.** The baseline curves are documentation/fixtures; the
+implementation stores equivalent basis-point shares and applies them to the
+derived regulation total. Every curve below totals 240 under the Milestone 1
+pack — a documentation convenience, not the allocation mechanism:
+
+| Profile | Design inspiration (doc only) | Players | Baseline workload | Character |
+|---|---|--:|---|---|
+| `adaptive-matchup`  | Spoelstra-like    |  9 | 34/33/31/30/28/24/22/20/18      | matchup-flexible, balanced, flexible closers |
+| `balanced-system`   | Stevens-era       | 10 | 32/31/30/29/27/23/21/18/16/13   | broad trust, stable roles (safest default) |
+| `workhorse-core`    | Thibodeau-like    |  8 | 38/37/36/35/32/24/20/18         | short rotation, heavy starters, rigid |
+| `development-lab`   | Hardy-like        | 10 | 31/30/29/28/27/24/21/19/17/14   | young-player minutes, experimentation |
+| `meritocratic-flex` | Mazzulla-like     | 10 | 33/32/31/30/28/23/20/17/14/12   | performance-driven roles, low rigidity |
+| `star-stagger`      | Redick-like       |  9 | 36/35/33/31/28/23/21/18/15      | heavy creators, strong staggering |
+| `deep-collective`   | generic depth     | 10 | 30/29/28/27/26/24/23/20/18/15   | egalitarian, frequent subs, fatigue-protective |
+| `veteran-hierarchy` | generic veteran   |  9 | 35/34/32/31/28/24/21/19/16      | experience-first, stable bench, predictable closers |
+
+Example stored shares (`workhorse-core`):
+`[1583, 1542, 1500, 1458, 1333, 1000, 834, 750]` (Σ = 10,000 bps), applied to
+whatever regulation team-seconds the active rules derive.
+
+**Deterministic assignment.** For the default eight-team league, assign one of
+each preset so coaching differences are visible instead of six near-identical
+coaches: sort stable coach IDs, then
+`deterministicShuffle(sortedProfileIds, deriveSeed(leagueSeed, 'coach-profile/v1/default-eight'))`.
+Save the assignments (loading never silently reassigns); never depend on object
+iteration order; never reuse team-generation RNG; a coach keeps their profile
+across team changes. Adding coaches/teams later needs a *versioned* assignment
+policy, not a silent remap. Beyond eight teams (§15) duplicate archetypes are
+fine via a per-coach stream `deriveSeed(leagueSeed, 'coach-profile/v1/<coachId>')`.
+
+**How planning shapes generation** (extends §8's sequence). Resolve coach +
+profile → filter eligible → score
+`currentAbility·w + endurance·w + development·w + experience·w + incumbentBonus + boundedExploration`
+→ sort with playerId tie-break → pick `targetRotationSize` → five starters with
+soft role balance → apply the workload-share curve → adjust for quality /
+endurance / development → normalize to the derived regulation minutes → bench
+order → validate → save only if valid. Team processing order changes no team's
+output.
+- `developmentValue` is the value of *investing minutes* in a player, not raw
+  age — a 21-year-old with no upside must not auto-outrank a productive veteran.
+- **Exploration is per-player-seeded** (`deriveSeed(teamRotationSeed, 'player/<id>')`)
+  so adding/removing one player doesn't shift everyone's draw. Tightly bounded:
+  may reorder comparable players and the last 1–2 rotation slots; may never make
+  an ineligible player eligible or lift a clearly inferior player over a star
+  (≈ one tier at most).
+- **Whole-minute normalization** is a deterministic capped largest-remainder
+  allocator in 60-second units (`deriveRegulationTeamSeconds(rules) / 60` = 240):
+  floor each share → cap each player at 48 → redistribute overflow → hand out the
+  remainder by descending fractional part → playerId final tie-break → convert to
+  integer seconds. Never float-accumulate and patch the last player.
+- `softRoleBalance` may reward ballhandling / size / shooting / defensive
+  coverage, but **must never make `validateRotationPlan` reject an otherwise-legal
+  five** — position balance is a soft CPU preference, not a validator rule.
+
+**Roster-change reconciliation** honors the profile without erasing intent:
+- *CPU plan* — remove the player, zero their minutes, let the profile pick a
+  replacement, redistribute by shares + headroom, rebuild bench order, normalize
+  to the derived total, validate, mark auto-repaired.
+- *User-edited plan* (conservative) — preserve every unaffected target, fill a
+  starter vacancy from the saved bench order first (profile only as a final
+  tie-break), redistribute only the orphaned minutes, never a full regeneration,
+  keep `source: 'user-edited'`, mark auto-repaired. A coach change may regenerate
+  a CPU plan but must **preserve a user-edited plan** until the user chooses Auto
+  Rotation.
+
+**Runtime (§9/§14, data-only in §8).** At each legal dead ball: eliminate illegal
+candidates first, then score legal lineups by
+`planAdherence·deficit + fatigueConservatism·relief + foulTroubleConservatism·risk + matchupResponsiveness + hotHandResponsiveness + primaryCreatorStagger·coverage + unitContinuity + closingLineupFlexibility`.
+Hard requirements always win (five legal players; no fouled-out / injured /
+ejected; legal opportunity only; OT's extra ~25 player-minutes allocated at
+runtime while the saved plan stays 240). Preferences choose among legal options;
+they never legalize one. **Adherence floor:** user-edited plans use
+`max(planAdherence, 85)` so coach personality can't make the Adjust Rotation
+feature feel fake — forced injuries / foul-outs / ejections still override.
+
+**Adjust Rotation editor** gains a **read-only** coach-style panel (archetype +
+one-line character). Auto Rotation previews using the current coach's *planning*
+profile; Reset restores the last *persisted* plan (not a fresh CPU plan); Save
+validates → persists → marks `source: 'user-edited'` (even when it began from
+Auto Rotation — that explicit save is what protects the plan from future
+background CPU regeneration); Cancel discards. Coach style is changed on the
+coach-management / hiring screen, never in the rotation editor.
+
+**Separate coach-profile validator** with structured issues — `UNKNOWN_PROFILE_ID`,
+`ROTATION_SIZE`, `WORKLOAD_SHARE_COUNT`, `WORKLOAD_SHARE_TOTAL` (= 10,000),
+`WORKLOAD_SHARE_VALUE`, `TENDENCY_RANGE`: known ID; size ∈ {8,9,10}; share count =
+size; each share a positive whole number; shares sum to exactly 10,000; every
+tendency a whole 0–100; no team/player IDs embedded in a preset.
+**`validateRotationPlan(plan, roster, rules)` takes no profile** — a plan's
+legality never depends on coaching style.
+
+**Hard type-level cutoff:** §8 may read only `profile.planning`; §9/§14 may read
+only `profile.runtime`. Enforce it with the function signatures, not comments.
+
+**Combined §8 + §8A exit gate** (supersedes §8's determinism bullet):
+- Deep-equal plans from identical **league seed + roster/availability snapshot +
+  coach profile ID/version + generator version**; save/load and coach/team
+  processing order change nothing; streams are per-team and per-coach.
+- All eight presets validate; the eight default coaches receive deterministic
+  assignments that loading never silently changes.
+- Changing only *runtime* tendencies does not change §8 generation; changing
+  *planning* tendencies changes a controlled roster's plan while it stays valid.
+- Every generated plan totals exactly the derived regulation minutes with five
+  unique eligible starters and ≥ 5 positive-minute players; invalid plans cannot
+  be saved (specific, typed issues).
+- The `workhorse-core` fixture has fewer positive-minute players and a higher
+  top-five minute share than `deep-collective`; the `development-lab` fixture
+  gives a qualified prospect more planned minutes than `veteran-hierarchy`; the
+  `star-stagger` runtime fixture keeps an eligible primary creator on court when
+  a legal substitution allows.
+- No profile can legalize an unavailable or disqualified player.
+- User-edited plans survive CPU regeneration and coach-profile changes; roster
+  repair preserves unaffected user targets and uses the profile only for the
+  necessary replacement/redistribution decisions.
+- Auto Rotation uses the current coach's planning profile; saving from the editor
+  marks the plan `user-edited`; the simulator reads the saved plan and the
+  assigned runtime profile.
+- `grep -rn "DEFERRED(§8)" src/` returns nothing. All four gates green.
 
 ### 9. Simulation kernel — one game
 
@@ -350,11 +623,19 @@ fixtures become test data.
 
 **Work.**
 - Create `src/simulation/`. Implement `SimulateGameInput` and `simulateGame`
-  against the frozen §6 types.
+  against the frozen §6 types, consuming `MILESTONE_1_LEAGUE_RULES` and the
+  §8 rotation plans — the sim reads the rule pack, never constants.
+- The live rotation engine compiles the saved plan into decisions at legal
+  dead-ball opportunities: compare actual vs expected minutes, swap
+  over-target and tired players for under-target eligible ones, keep five
+  legal players always. The plan is a workload target, not a script — never
+  stop live play because a planned substitution second arrived. Overtime
+  allocates its extra 25 player-minutes at runtime; the saved 240 is never
+  edited. Foul-outs force legal replacement.
 - Build the box-score builder and its invariant assertions **from the first
   slice**, so an invalid result can never be constructed.
-- Record `SIMULATION_VERSION`, RNG version, derived game seed, and an input
-  fingerprint on every result.
+- Record `SIMULATION_VERSION`, RNG version, rules version, derived game seed,
+  and an input fingerprint on every result.
 
 **Exit gate.**
 - Exactly one winner per game; no ties survive.
@@ -543,11 +824,10 @@ ceiling; collision-safe "keep both"; a real migration registry and fixtures.
 
 ### 18. Remaining screens
 
-Roster; depth chart and the 240-minute rotation editor; standings; season player
-statistics; save management, export, import preview, and confirmations. (Result
-and box score are already done — §6.) Components dispatch commands — they never
-contain possession formulas, mutate season state, or reinterpret statistical
-rules.
+Roster; depth chart; standings; season player statistics; save management,
+export, import preview, and confirmations. (Result and box score are §6; the
+rotation editor is §8.) Components dispatch commands — they never contain
+possession formulas, mutate season state, or reinterpret statistical rules.
 
 Build these the §6 way: screens first against fixtures, then the data.
 

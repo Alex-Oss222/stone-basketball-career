@@ -23,10 +23,57 @@
 > score interface, not the engine described here. The roadmap decides what gets
 > built and when; this file only describes the target.
 >
-> **The result contract is not decided here.** It is decided by the box score
-> screen in §6 and recorded in this file once frozen. The kernel implements
-> against whatever that screen needs — this document does not get to invent the
-> shape.
+> **The result contract is frozen** — decided by the §6 screens on 2026-07-17
+> and recorded in "Frozen result contract" below. The kernel implements
+> exactly `src/domain/gameResult.ts`; this document does not get to invent a
+> different shape.
+
+## Frozen result contract (decided by the §6 screens, 2026-07-17)
+
+The source of truth is **`src/domain/gameResult.ts`** — the §9 kernel must
+produce these types verbatim, and `assertValidGameResult` is its finalization
+gate. Summary of what was frozen:
+
+- `GameResult`: `gameId`, `seasonId`, `homeTeamId`, `awayTeamId`,
+  `overtimePeriods`, `home` / `away` (`TeamPeriodScoring`), `winnerTeamId`,
+  `playerLines`.
+- `TeamPeriodScoring`: `teamId`, `periodPoints[]` (4 regulation entries plus
+  one per overtime), `totalPoints`.
+- `PlayerBoxScoreLine`: `playerId`, `teamId`, `started`, `secondsPlayed`
+  (integer seconds), `fieldGoalsMade/Attempted`,
+  `threePointersMade/Attempted`, `freeThrowsMade/Attempted`,
+  `offensiveRebounds`, `defensiveRebounds`, `assists`, `steals`, `blocks`,
+  `turnovers`, `personalFouls`, `plusMinus`, `points`, `dnpReason`
+  (`'coachs_decision' | 'injury' | 'inactive' | null`; non-null exactly when
+  the player did not play).
+- Derived, never stored: total rebounds (OREB + DREB), shooting percentages
+  (null at zero attempts, never NaN), team stat totals, four factors, top
+  performers, minutes display.
+- Enforced invariants (see `collectGameResultIssues`): points arithmetic per
+  line; team points = player points = period points; player seconds sum to
+  exactly 14,400 per team plus 1,500 per overtime; makes ≤ attempts; threes ⊆
+  field goals; exactly five starters; plus/minus sums to five times the
+  margin; one winner, no ties; DNP lines carry no activity.
+- Reproducibility metadata (`SIMULATION_VERSION`, RNG version, derived game
+  seed, input fingerprint) is **not** part of the frozen §6 shape — the §9
+  kernel adds it when it exists, per the Determinism section.
+
+Where the screens still show slots the contract cannot fill (game flow, key
+moments, play-by-play, game info), those need the §14 event log or later
+systems — tracked by `DEFERRED(…)` tags and the roadmap ledger, not by
+widening this contract early.
+
+The rule pack the kernel consumes is `src/domain/leagueRules.ts`
+(`MILESTONE_1_LEAGUE_RULES`, `LEAGUE_RULES_VERSION = 1`), a nested contract:
+4×720s quarters; 300s unlimited overtime with the 20-OT termination guard;
+24-second shot clock, 14 after an offensive rebound, 8-second backcourt; 6
+personal fouls, unlimited re-entry; team-foul penalty on the 5th regulation /
+4th overtime team foul plus the final-2:00 single-foul rule, offensive fouls
+never counting toward the bonus; shooting-foul free throws 2/3/1 and 2 in the
+penalty; substitutions at dead balls only. Regulation player-minutes are
+derived from the pack (`deriveRegulationTeamSeconds` = 240 minutes), never
+stored. The pack defines only legality — coaching intent lives in
+`RotationPlan` (§8) and actual behavior in the live rotation engine here.
 
 ## Simulation contract
 
