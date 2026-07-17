@@ -141,20 +141,8 @@ export const NAVIGATION_SECTIONS = [
       },
       {
         id: 'schedule-calendar',
-        label: 'Calendar',
+        label: 'League Calendar',
         availability: 'available',
-      },
-      {
-        id: 'schedule-results',
-        label: 'Results',
-        availability: 'planned',
-        requiredSystem: 'Requires game simulation and completed game results.',
-      },
-      {
-        id: 'schedule-postseason',
-        label: 'Postseason',
-        availability: 'planned',
-        requiredSystem: 'Requires qualification and playoff bracket systems.',
       },
     ],
   },

@@ -27,12 +27,12 @@ describe('ComingLaterPage', () => {
   })
 
   it.each([
-    ['schedule-results', 'game simulation and completed game results'],
-    ['schedule-postseason', 'qualification and playoff bracket systems'],
+    ['front-office-draft', 'front-office', 'a player draft system'],
+    ['history-championships', 'history', 'postseason and championship history'],
   ] as const)(
     '%s contains only its honest dependency explanation',
-    (pageId, requiredCopy) => {
-      const section = getSectionById('schedule')
+    (pageId, sectionId, requiredCopy) => {
+      const section = getSectionById(sectionId)
       const page = getPageById(pageId)
       if (section === undefined || page?.availability !== 'planned') {
         throw new Error(`Expected the planned ${pageId} page`)

@@ -57,9 +57,7 @@ const EXPECTED_HIERARCHY = [
     label: 'Schedule',
     pages: [
       { id: 'schedule-team-schedule', label: 'Team Schedule' },
-      { id: 'schedule-calendar', label: 'Calendar' },
-      { id: 'schedule-results', label: 'Results' },
-      { id: 'schedule-postseason', label: 'Postseason' },
+      { id: 'schedule-calendar', label: 'League Calendar' },
     ],
   },
   {
@@ -159,21 +157,6 @@ describe('central navigation registry', () => {
         (pageId) => !AVAILABLE_PAGE_IDS.some((available) => available === pageId),
       ),
     )
-  })
-
-  it('keeps results and postseason planned with honest dependency explanations', () => {
-    expect(getPageById('schedule-results')).toEqual({
-      id: 'schedule-results',
-      label: 'Results',
-      availability: 'planned',
-      requiredSystem: 'Requires game simulation and completed game results.',
-    })
-    expect(getPageById('schedule-postseason')).toEqual({
-      id: 'schedule-postseason',
-      label: 'Postseason',
-      availability: 'planned',
-      requiredSystem: 'Requires qualification and playoff bracket systems.',
-    })
   })
 
   it('gives every planned page a short required-system explanation only', () => {
