@@ -341,6 +341,30 @@ describe('LeagueCalendarContent', () => {
     expect(markup).not.toContain('name="league-calendar-scope"')
     expect(markup).toContain('league-calendar-grid')
   })
+
+  it('shows the derived schedule overview and swaps the complementary panel', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
+    )
+    const calendar = renderToStaticMarkup(
+      <LeagueCalendarContent presentation={presentation} />,
+    )
+    const list = renderToStaticMarkup(
+      <LeagueCalendarContent presentation={presentation} initialViewMode="list" />,
+    )
+
+    // Managed team → derived, no-simulation overview panel.
+    expect(calendar).toContain('Schedule overview')
+    expect(calendar).toContain('Games remaining')
+    expect(calendar).toContain('Back-to-backs')
+    expect(calendar).toContain('Longest road trip')
+    expect(calendar).toContain('Broadcast')
+    // Calendar view shows the day agenda; list view swaps in the mini calendar.
+    expect(calendar).toContain('league-calendar-agenda')
+    expect(calendar).not.toContain('league-calendar-mini')
+    expect(list).toContain('league-calendar-mini')
+    expect(list).not.toContain('league-calendar-agenda')
+  })
 })
 
 describe('LeagueScheduleOverviewContent', () => {

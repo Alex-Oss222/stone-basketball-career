@@ -2646,7 +2646,9 @@ tbody tr:last-child td {
 
 .league-calendar-summary,
 .league-calendar-agenda,
-.league-calendar-legend {
+.league-calendar-legend,
+.league-calendar-mini,
+.league-calendar-overview {
   padding: 14px 16px;
   background: var(--surface);
   border: 1px solid var(--line);
@@ -2655,7 +2657,9 @@ tbody tr:last-child td {
 
 .league-calendar-summary h3,
 .league-calendar-agenda h3,
-.league-calendar-legend h3 {
+.league-calendar-legend h3,
+.league-calendar-mini h3,
+.league-calendar-overview h3 {
   margin: 0 0 10px;
   font-size: 1rem;
 }
@@ -2762,6 +2766,126 @@ tbody tr:last-child td {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+}
+
+/* Mini calendar (list-view complementary panel) */
+
+.league-calendar-mini-grid {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.league-calendar-mini-grid th {
+  padding: 2px 0;
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
+}
+
+.league-calendar-mini-cell {
+  padding: 1px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-soft);
+}
+
+.league-calendar-mini-cell.is-adjacent {
+  color: var(--muted);
+  opacity: 0.45;
+}
+
+.league-calendar-mini-cell button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  width: 100%;
+  padding: 4px 0;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.league-calendar-mini-cell button:hover {
+  background: var(--surface-raised);
+}
+
+.league-calendar-mini-cell.is-current button {
+  outline: 1px solid var(--accent);
+}
+
+.league-calendar-mini-cell.is-selected button {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.league-calendar-mini-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.league-calendar-mini-cell.is-selected .league-calendar-mini-dot {
+  background: var(--accent-ink);
+}
+
+/* Schedule overview (managed-team derivation) */
+
+.league-calendar-overview-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.league-calendar-overview-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.league-calendar-overview-value {
+  font-size: 1.35rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.league-calendar-overview-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.league-calendar-overview-runs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.league-calendar-overview-runs > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.league-calendar-overview-runs dt {
+  color: var(--muted);
+}
+
+.league-calendar-overview-runs dd {
+  margin: 0;
+  text-align: right;
+  font-weight: 600;
 }
 
 @media (max-width: 900px) {

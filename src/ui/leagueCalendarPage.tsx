@@ -15,6 +15,11 @@ import type {
 } from '../app/enrichedCalendarViewModel'
 import { createLeagueYearDisplayRange } from '../app/leagueYearDisplayRange'
 import type { LeaguePresentationBundle } from '../app/leagueSnapshotDomainAdapter'
+import { computeTeamScheduleInsights } from '../app/scheduleInsights'
+import type {
+  ScheduleRun,
+  TeamScheduleInsights,
+} from '../app/scheduleInsights'
 import type { LocalDate } from '../domain/localDate'
 import {
   createLeagueCalendarUiState,
@@ -121,6 +126,26 @@ export function LeagueCalendarPage({
     ],
   )
 
+  const managedInsights = useMemo(() => {
+    if (managedTeamId === null) return null
+    const games = calendarEntries.flatMap((entry) =>
+      entry.kind === 'game' &&
+      entry.date !== null &&
+      entry.teamIds.includes(managedTeamId)
+        ? [
+            {
+              date: entry.date,
+              site:
+                entry.homeTeamId === managedTeamId
+                  ? ('home' as const)
+                  : ('away' as const),
+            },
+          ]
+        : [],
+    )
+    return computeTeamScheduleInsights(games, season.currentDate)
+  }, [calendarEntries, managedTeamId, season.currentDate])
+
   const visibleMonthIndex = Math.max(
     0,
     range.months.findIndex((month) => month === uiState.visibleMonth),
@@ -200,11 +225,27 @@ export function LeagueCalendarPage({
         </div>
 
         <aside className="league-calendar-aside">
-          <MonthSummary month={visibleMonth} scope={uiState.scope} />
-          <SelectedDayAgenda
-            agenda={calendarModel.selectedDayAgenda}
-            onClear={() => dispatch({ type: 'clear_selection' })}
-          />
+          {uiState.broadcast === 'all' && uiState.viewMode === 'list' && (
+            <MiniMonthCalendar
+              month={visibleMonth}
+              onSelectDate={(date) =>
+                dispatch({ type: 'select_date', date })
+              }
+            />
+          )}
+          {uiState.broadcast === 'all' && uiState.viewMode !== 'list' && (
+            <SelectedDayAgenda
+              agenda={calendarModel.selectedDayAgenda}
+              onClear={() => dispatch({ type: 'clear_selection' })}
+            />
+          )}
+
+          {managedInsights === null ? (
+            <MonthSummary month={visibleMonth} scope={uiState.scope} />
+          ) : (
+            <ScheduleOverviewPanel insights={managedInsights} />
+          )}
+
           <CalendarLegend />
         </aside>
       </div>
@@ -545,6 +586,170 @@ function SelectedDayAgenda({
       )}
     </section>
   )
+}
+
+function MiniMonthCalendar({
+  month,
+  onSelectDate,
+}: {
+  readonly month: EnrichedCalendarMonthModel
+  readonly onSelectDate: (date: LocalDate) => void
+}) {
+  const heading = formatScheduleMonthHeading(month.month)
+
+  return (
+    <section
+      className="league-calendar-mini"
+      aria-labelledby="league-calendar-mini-heading"
+    >
+      <h3 id="league-calendar-mini-heading">{heading}</h3>
+      <table className="league-calendar-mini-grid">
+        <caption className="visually-hidden">{heading} mini calendar</caption>
+        <thead>
+          <tr>
+            {WEEKDAY_SHORT_LABELS.map((label, index) => (
+              <th key={label} scope="col">
+                <span aria-hidden="true">{label.slice(0, 1)}</span>
+                <span className="visually-hidden">{WEEKDAY_LABELS[index]}</span>
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {month.weeks.map((week) => (
+            <tr key={week.days[0].date}>
+              {week.days.map((day) => (
+                <MiniDayCell
+                  key={day.date}
+                  day={day}
+                  onSelectDate={onSelectDate}
+                />
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  )
+}
+
+function MiniDayCell({
+  day,
+  onSelectDate,
+}: {
+  readonly day: EnrichedCalendarDayCellModel
+  readonly onSelectDate: (date: LocalDate) => void
+}) {
+  const dayNumber = Number(day.date.slice(8, 10))
+
+  if (!day.belongsToMonth) {
+    return (
+      <td className="league-calendar-mini-cell is-adjacent" aria-hidden="true">
+        {dayNumber}
+      </td>
+    )
+  }
+
+  const className = [
+    'league-calendar-mini-cell',
+    day.isCurrentDate ? 'is-current' : '',
+    day.isSelectedDate ? 'is-selected' : '',
+  ]
+    .filter(Boolean)
+    .join(' ')
+
+  return (
+    <td className={className}>
+      <button
+        type="button"
+        aria-pressed={day.isSelectedDate}
+        aria-label={`${formatScheduleDateLong(day.date)}, ${day.entries.length} ${day.entries.length === 1 ? 'entry' : 'entries'}`}
+        onClick={() => onSelectDate(day.date)}
+      >
+        <span>{dayNumber}</span>
+        {day.entries.length > 0 && (
+          <span className="league-calendar-mini-dot" aria-hidden="true" />
+        )}
+      </button>
+    </td>
+  )
+}
+
+function ScheduleOverviewPanel({
+  insights,
+}: {
+  readonly insights: TeamScheduleInsights
+}) {
+  const homePercent =
+    insights.totalGames === 0
+      ? 0
+      : Math.round((insights.homeGames / insights.totalGames) * 100)
+
+  return (
+    <section
+      className="league-calendar-overview"
+      aria-labelledby="league-calendar-overview-heading"
+    >
+      <h3 id="league-calendar-overview-heading">Schedule overview</h3>
+      <div className="league-calendar-overview-stats">
+        <OverviewStat label="Games remaining" value={insights.remainingGames} />
+        <OverviewStat label="Home games" value={insights.homeGames} />
+        <OverviewStat label="Away games" value={insights.awayGames} />
+        <OverviewStat label="Back-to-backs" value={insights.backToBacks} />
+        <OverviewStat
+          label="5-in-7 stretches"
+          value={insights.fiveInSevenStretches}
+        />
+        <OverviewStat label="National TV" value="—" />
+      </div>
+      <dl className="league-calendar-overview-runs">
+        <div>
+          <dt>Home / Away</dt>
+          <dd>
+            {insights.homeGames} ({homePercent}%) · {insights.awayGames} (
+            {100 - homePercent}%)
+          </dd>
+        </div>
+        <div>
+          <dt>Average rest</dt>
+          <dd>
+            {insights.averageRestDays === null
+              ? '—'
+              : `${insights.averageRestDays.toFixed(1)} days`}
+          </dd>
+        </div>
+        <div>
+          <dt>Longest road trip</dt>
+          <dd>{runLabel(insights.longestRoadTrip)}</dd>
+        </div>
+        <div>
+          <dt>Longest homestand</dt>
+          <dd>{runLabel(insights.longestHomestand)}</dd>
+        </div>
+      </dl>
+    </section>
+  )
+}
+
+function OverviewStat({
+  label,
+  value,
+}: {
+  readonly label: string
+  readonly value: number | string
+}) {
+  return (
+    <div className="league-calendar-overview-stat">
+      <span className="league-calendar-overview-value">{value}</span>
+      <span className="league-calendar-overview-label">{label}</span>
+    </div>
+  )
+}
+
+function runLabel(run: ScheduleRun | null): string {
+  if (run === null) return '—'
+  if (run.startDate === run.endDate) return '1 game'
+  return `${run.games} games · ${formatScheduleDateShort(run.startDate)}–${formatScheduleDateShort(run.endDate)}`
 }
 
 function MonthSummary({
