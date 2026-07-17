@@ -41,7 +41,8 @@ describe('TeamScheduleContent', () => {
     expect(markup).toContain('Show previous month')
     expect(markup).toContain('Show next month')
     expect(markup).toContain(`${managedTeam.city} ${managedTeam.nickname}`)
-    expect(markup).toContain('Managed team')
+    expect(markup).toContain('Your GM')
+    expect(markup).toContain('Off-season')
     expect(markup).not.toContain('Date to be announced')
   })
 
@@ -99,7 +100,7 @@ describe('TeamScheduleContent', () => {
         `${team.city} ${team.nickname} (${team.abbreviation})`,
       )
     }
-    expect(markup).toContain('Return to managed team')
+    expect(markup).toContain('Return to my team')
     expect(markup).not.toContain('class="managed-team-label"')
     expect(snapshot.managedTeamId).toBe(managedTeamBefore)
     expect(snapshot.revision).toBe(revisionBefore)
@@ -116,7 +117,7 @@ describe('TeamScheduleContent', () => {
 
     expect(markup.match(/data-schedule-game=/g)).toHaveLength(9)
     expect(markup).toContain(`${firstTeam.city} ${firstTeam.nickname}`)
-    expect(markup).not.toContain('Return to managed team')
+    expect(markup).not.toContain('Return to my team')
     expect(markup).not.toContain('class="managed-team-label"')
   })
 
@@ -196,7 +197,7 @@ describe('TeamScheduleContent', () => {
     )
 
     expect(markup).toContain('<label for="')
-    expect(markup).toContain('>Inspect team</label>')
+    expect(markup).toContain('>Team</label>')
     expect(markup).toContain('<fieldset class="team-schedule-site-filters">')
     expect(markup).toContain('<legend>Game site</legend>')
     expect(markup).toContain('type="radio"')

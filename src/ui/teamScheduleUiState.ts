@@ -6,7 +6,11 @@ import type { YearMonth } from '../domain/yearMonth'
 import type { TeamScheduleSiteFilter } from '../app/teamScheduleViewModel'
 
 /** Scaffolded stage tabs. Only regular_season has authoritative games today. */
-export type TeamScheduleStage = 'preseason' | 'regular_season' | 'postseason'
+export type TeamScheduleStage =
+  | 'preseason'
+  | 'regular_season'
+  | 'postseason'
+  | 'offseason'
 
 /** Scaffolded view tabs. Results has no game-result data until simulation. */
 export type TeamScheduleViewMode = 'list' | 'calendar' | 'results'
@@ -157,6 +161,7 @@ export function parseTeamScheduleStage(value: unknown): TeamScheduleStage {
     case 'preseason':
     case 'regular_season':
     case 'postseason':
+    case 'offseason':
       return value
     default:
       throw new RangeError(

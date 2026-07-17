@@ -22,6 +22,7 @@ import { createLeagueYearDisplayRange } from '../app/leagueYearDisplayRange'
 import { parseTeamId } from '../domain/ids'
 import type { GameId, TeamId } from '../domain/ids'
 import type { LocalDate } from '../domain/localDate'
+import type { SeasonPhase } from '../domain/season'
 import { yearMonthFromLocalDate } from '../domain/yearMonth'
 import {
   createTeamScheduleUiState,
@@ -55,7 +56,11 @@ const STAGE_TABS = [
   { value: 'preseason', label: 'Preseason', comingLater: true },
   { value: 'regular_season', label: 'Regular season' },
   { value: 'postseason', label: 'Postseason', comingLater: true },
+  { value: 'offseason', label: 'Off-season', comingLater: true },
 ] as const satisfies readonly SegmentedTabOption<TeamScheduleStage>[]
+
+/** Placeholder for a future stored GM identity; swap in a real name later. */
+const GM_NAME_PLACEHOLDER = 'Your GM'
 
 const VIEW_TABS = [
   { value: 'list', label: 'List' },
@@ -91,7 +96,7 @@ export function TeamSchedulePage({
         league,
         managedTeamId,
         initialInspectedTeamId,
-        initialStage,
+        initialStage: initialStage ?? mapPhaseToStage(season.currentPhase),
         initialViewMode,
         initialFilter,
         initialSelectedGameId,
@@ -218,18 +223,7 @@ export function TeamSchedulePage({
 
   return (
     <div className="team-schedule-page">
-      <TeamScheduleToolbar
-        league={league}
-        viewModel={viewModel}
-        filter={uiState.siteFilter}
-        onInspectTeam={inspectTeam}
-        onSelectTeam={handleTeamSelection}
-        onFilter={(filter) =>
-          dispatch({ type: 'set_site_filter', filter })
-        }
-      />
-
-      <div className="team-schedule-tabs">
+      <div className="team-schedule-stage-tabs">
         <SegmentedTabs
           legend="Stage"
           name="team-schedule-stage"
@@ -237,23 +231,38 @@ export function TeamSchedulePage({
           options={STAGE_TABS}
           onChange={(stage) => dispatch({ type: 'set_stage', stage })}
         />
-        <SegmentedTabs
-          legend="View"
-          name="team-schedule-view"
-          value={uiState.viewMode}
-          options={VIEW_TABS}
-          onChange={(viewMode) =>
-            dispatch({ type: 'set_view_mode', viewMode })
-          }
-        />
+        <p className="schedule-stage-note">
+          The selected stage follows the season phase. Preseason, postseason,
+          and the off-season calendar fill in as the season reaches them.
+        </p>
       </div>
+
+      <TeamScheduleIdentity
+        league={league}
+        viewModel={viewModel}
+        onInspectTeam={inspectTeam}
+        onSelectTeam={handleTeamSelection}
+      />
+
+      <TeamScheduleSiteFilter
+        filter={uiState.siteFilter}
+        onFilter={(filter) => dispatch({ type: 'set_site_filter', filter })}
+      />
+
+      <SegmentedTabs
+        legend="View"
+        name="team-schedule-view"
+        value={uiState.viewMode}
+        options={VIEW_TABS}
+        onChange={(viewMode) => dispatch({ type: 'set_view_mode', viewMode })}
+      />
 
       <TeamScheduleSummary viewModel={viewModel} />
 
       {uiState.stage !== 'regular_season' ? (
         <ComingLaterPanel
           title={`${stageLabel(uiState.stage)} schedule`}
-          requirement={`Requires ${stageLabel(uiState.stage).toLowerCase()} scheduling for this rule pack.`}
+          requirement={stageRequirement(uiState.stage)}
         />
       ) : uiState.viewMode === 'results' ? (
         <ComingLaterPanel
@@ -480,20 +489,16 @@ function TeamCalendarDayCell({
   )
 }
 
-function TeamScheduleToolbar({
+function TeamScheduleIdentity({
   league,
   viewModel,
-  filter,
   onInspectTeam,
   onSelectTeam,
-  onFilter,
 }: {
   readonly league: LeaguePresentationBundle['league']
   readonly viewModel: TeamScheduleViewModel
-  readonly filter: TeamScheduleSiteFilter
   readonly onInspectTeam: (teamId: TeamId) => void
   readonly onSelectTeam: (event: ChangeEvent<HTMLSelectElement>) => void
-  readonly onFilter: (filter: TeamScheduleSiteFilter) => void
 }) {
   const selectorId = useId()
   const isInspectingManagedTeam = viewModel.isManagedTeamSchedule
@@ -512,61 +517,71 @@ function TeamScheduleToolbar({
         </h2>
         {isInspectingManagedTeam && (
           <p className="managed-team-label">
-            <span aria-hidden="true">★</span> Managed team
+            <span aria-hidden="true">★</span> {GM_NAME_PLACEHOLDER}
           </p>
         )}
       </div>
 
-      <div className="team-schedule-controls">
-        <div className="team-schedule-team-selector">
-          <label htmlFor={selectorId}>Inspect team</label>
-          <select
-            id={selectorId}
-            value={viewModel.inspectedTeamId}
-            onChange={onSelectTeam}
-          >
-            {league.teams.map((team) => (
-              <option key={team.id} value={team.id}>
-                {team.city} {team.nickname} ({team.abbreviation})
-                {team.id === viewModel.managedTeamId ? ' — Managed team' : ''}
-              </option>
-            ))}
-          </select>
-          {!isInspectingManagedTeam && controlledTeamId !== null && (
-            <button
-              type="button"
-              className="return-managed-team-button"
-              onClick={() => onInspectTeam(controlledTeamId)}
-            >
-              Return to managed team
-            </button>
-          )}
-        </div>
-
-        <fieldset className="team-schedule-site-filters">
-          <legend>Game site</legend>
-          {(['all', 'home', 'away'] as const).map((value) => (
-            <label
-              key={value}
-              className={
-                filter === value
-                  ? 'team-schedule-filter is-active'
-                  : 'team-schedule-filter'
-              }
-            >
-              <input
-                type="radio"
-                name="team-schedule-site"
-                value={value}
-                checked={filter === value}
-                onChange={() => onFilter(value)}
-              />
-              {filterLabel(value)}
-            </label>
+      <div className="team-schedule-team-selector">
+        <label htmlFor={selectorId}>Team</label>
+        <select
+          id={selectorId}
+          value={viewModel.inspectedTeamId}
+          onChange={onSelectTeam}
+        >
+          {league.teams.map((team) => (
+            <option key={team.id} value={team.id}>
+              {team.city} {team.nickname} ({team.abbreviation})
+              {team.id === viewModel.managedTeamId
+                ? ` — ${GM_NAME_PLACEHOLDER}`
+                : ''}
+            </option>
           ))}
-        </fieldset>
+        </select>
+        {!isInspectingManagedTeam && controlledTeamId !== null && (
+          <button
+            type="button"
+            className="return-managed-team-button"
+            onClick={() => onInspectTeam(controlledTeamId)}
+          >
+            Return to my team
+          </button>
+        )}
       </div>
     </section>
+  )
+}
+
+function TeamScheduleSiteFilter({
+  filter,
+  onFilter,
+}: {
+  readonly filter: TeamScheduleSiteFilter
+  readonly onFilter: (filter: TeamScheduleSiteFilter) => void
+}) {
+  return (
+    <fieldset className="team-schedule-site-filters">
+      <legend>Game site</legend>
+      {(['all', 'home', 'away'] as const).map((value) => (
+        <label
+          key={value}
+          className={
+            filter === value
+              ? 'team-schedule-filter is-active'
+              : 'team-schedule-filter'
+          }
+        >
+          <input
+            type="radio"
+            name="team-schedule-site"
+            value={value}
+            checked={filter === value}
+            onChange={() => onFilter(value)}
+          />
+          {filterLabel(value)}
+        </label>
+      ))}
+    </fieldset>
   )
 }
 
@@ -772,8 +787,43 @@ function stageLabel(stage: TeamScheduleStage): string {
       return 'Regular season'
     case 'postseason':
       return 'Postseason'
+    case 'offseason':
+      return 'Off-season'
     default:
       return assertNever(stage)
+  }
+}
+
+function stageRequirement(stage: TeamScheduleStage): string {
+  switch (stage) {
+    case 'preseason':
+      return 'Requires preseason scheduling for this rule pack.'
+    case 'regular_season':
+      return 'Regular-season games are available now.'
+    case 'postseason':
+      return 'Requires postseason qualification and a playoff bracket.'
+    case 'offseason':
+      return 'A fourth off-season calendar tied to the season timeline (draft, free agency, summer). It activates when the season reaches the off-season.'
+    default:
+      return assertNever(stage)
+  }
+}
+
+/** Selects the stage tab that matches where the stored season currently is. */
+function mapPhaseToStage(phase: SeasonPhase): TeamScheduleStage {
+  switch (phase) {
+    case 'offseason':
+    case 'complete':
+      return 'offseason'
+    case 'training_camp':
+    case 'preseason':
+      return 'preseason'
+    case 'regular_season':
+      return 'regular_season'
+    case 'postseason':
+      return 'postseason'
+    default:
+      return assertNever(phase)
   }
 }
 

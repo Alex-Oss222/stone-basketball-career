@@ -886,10 +886,10 @@ tbody tr:last-child td {
 
 .team-schedule-site-filters {
   display: grid;
-  grid-template-columns: repeat(3, minmax(72px, 1fr));
-  flex: 0 1 auto;
-  gap: 4px;
-  min-width: 250px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: stretch;
+  gap: 6px;
+  width: 100%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -2892,4 +2892,16 @@ tbody tr:last-child td {
 
 .team-calendar-chip.site-away {
   border-left-color: #6ea8fe;
+}
+
+.team-schedule-stage-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.schedule-stage-note {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
 }
