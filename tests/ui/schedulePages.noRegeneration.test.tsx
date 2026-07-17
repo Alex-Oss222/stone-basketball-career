@@ -110,8 +110,8 @@ describe('read-only V2 season and schedule identity preservation', () => {
     const { createElement } = await import('react')
     const { renderToStaticMarkup } = await import('react-dom/server')
     const {
+      LeagueCalendarContent,
       LeagueScheduleOverviewContent,
-      ScheduleCalendarContent,
       TeamScheduleContent,
     } = await import('../../src/ui/schedulePages')
     const { createLeaguePresentationBundle } = await import(
@@ -127,7 +127,7 @@ describe('read-only V2 season and schedule identity preservation', () => {
       createElement(TeamScheduleContent, { presentation }),
     )
     const calendarMarkup = renderToStaticMarkup(
-      createElement(ScheduleCalendarContent, { snapshot: persistedSnapshot }),
+      createElement(LeagueCalendarContent, { presentation }),
     )
     const overviewMarkup = renderToStaticMarkup(
       createElement(LeagueScheduleOverviewContent, {
@@ -166,7 +166,7 @@ describe('read-only V2 season and schedule identity preservation', () => {
     )
 
     expect(teamScheduleMarkup).toContain('Inspected team schedule')
-    expect(calendarMarkup).toContain('Game day 1')
+    expect(calendarMarkup).toContain('league calendar')
     expect(overviewMarkup).toContain(persistedSnapshot.season.displayLabel)
     expect(dashboardMarkup).toContain('Next scheduled game')
     expect(headerMarkup).toContain(persistedSnapshot.season.displayLabel)

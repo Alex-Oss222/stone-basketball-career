@@ -2,8 +2,8 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import { createLeaguePresentationBundle } from '../../src/app/leagueSnapshotDomainAdapter'
 import {
+  LeagueCalendarContent,
   LeagueScheduleOverviewContent,
-  ScheduleCalendarContent,
   TeamScheduleContent,
 } from '../../src/ui/schedulePages'
 import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
@@ -202,47 +202,77 @@ describe('TeamScheduleContent', () => {
       renderToStaticMarkup(
         <TeamScheduleContent presentation={null} />,
       ),
-      renderToStaticMarkup(<ScheduleCalendarContent snapshot={null} />),
+      renderToStaticMarkup(<LeagueCalendarContent presentation={null} />),
       renderToStaticMarkup(<LeagueScheduleOverviewContent snapshot={null} />),
     ]
 
     for (const markup of markups) {
       expect(markup).toContain('No league schedule available')
       expect(markup).not.toContain('data-schedule-game')
-      expect(markup).not.toContain('data-calendar-game')
+      expect(markup).not.toContain('league-calendar-grid')
     }
   })
 })
 
-describe('ScheduleCalendarContent', () => {
-  it('renders 28 stored game-day groups with all four matchups in each group', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
-    const markup = renderToStaticMarkup(
-      <ScheduleCalendarContent snapshot={snapshot} />,
+describe('LeagueCalendarContent', () => {
+  it('renders the current month as an accessible table without a grid role', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
     )
-    const gameDaySections = markup
-      .split('<section')
-      .filter((section) => section.includes('data-game-day='))
+    const markup = renderToStaticMarkup(
+      <LeagueCalendarContent presentation={presentation} />,
+    )
 
-    expect(gameDaySections).toHaveLength(28)
-    expect(markup.match(/data-calendar-game=/g)).toHaveLength(112)
-    for (const section of gameDaySections) {
-      expect(section.match(/data-calendar-game=/g)).toHaveLength(4)
-      expect(section).toContain('<caption>')
-      expect(section).toContain('<th scope="col">Away team</th>')
-      expect(section).toContain('<th scope="col">Home team</th>')
-      expect(section).toContain('<th scope="row">')
-    }
+    // Season current date is 2026-10-05, so October 2026 is shown by default.
+    expect(markup).toContain('October 2026')
+    expect(markup).toContain('league calendar')
+    expect(markup).toContain('league-calendar-grid')
+    expect(markup).toContain('<caption')
+    expect(markup).toContain('Sunday')
+    expect(markup).toContain('Saturday')
+    expect(markup).toContain('name="league-calendar-view"')
+    expect(markup).not.toContain('role="grid"')
   })
 
-  it('marks every managed-team matchup with visible text, not color alone', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+  it('shows managed-team game chips and the scope toggle by default', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
+    )
     const markup = renderToStaticMarkup(
-      <ScheduleCalendarContent snapshot={snapshot} />,
+      <LeagueCalendarContent presentation={presentation} />,
     )
 
-    expect(markup.match(/aria-label="Managed team"/g)).toHaveLength(28)
-    expect(markup.match(/· Managed team/g)).toHaveLength(28)
+    // The default managed-team scope marks every visible game with a star.
+    expect(markup).toContain('league-calendar-chip')
+    expect(markup).toContain('managed-star')
+    expect(markup).toContain('All teams')
+    expect(markup).toContain('My team')
+    expect(markup).toContain('Today')
+  })
+
+  it('renders a day-by-day list when the list view is selected', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
+    )
+    const markup = renderToStaticMarkup(
+      <LeagueCalendarContent presentation={presentation} initialViewMode="list" />,
+    )
+
+    expect(markup).toContain('league-calendar-list')
+    expect(markup).toContain('games by day')
+    expect(markup).not.toContain('role="grid"')
+  })
+
+  it('omits the scope toggle when no managed team exists', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(null),
+    )
+    const markup = renderToStaticMarkup(
+      <LeagueCalendarContent presentation={presentation} />,
+    )
+
+    expect(markup).not.toContain('name="league-calendar-scope"')
+    expect(markup).toContain('league-calendar-grid')
   })
 })
 

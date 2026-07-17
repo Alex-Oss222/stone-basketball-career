@@ -2325,3 +2325,428 @@ tbody tr:last-child td {
     padding: 14px;
   }
 }
+
+/* ── League Calendar ─────────────────────────────────────────────── */
+
+.league-calendar-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.league-calendar-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.league-calendar-month-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.league-calendar-month-nav h2 {
+  margin: 0;
+  min-width: 12ch;
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+.league-calendar-month-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-size: 1.4rem;
+  color: var(--text);
+  background: var(--surface-raised);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.league-calendar-month-step:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent-hover);
+}
+
+.league-calendar-month-step:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.league-calendar-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.league-calendar-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.league-calendar-toggle legend {
+  float: left;
+  padding: 0 8px 0 4px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.league-calendar-choice {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 7px;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.league-calendar-choice input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.league-calendar-choice.is-active {
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+
+.league-calendar-choice:focus-within {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+}
+
+.league-calendar-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 18px;
+  align-items: start;
+}
+
+.league-calendar-primary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.league-calendar-grid-wrap {
+  overflow-x: auto;
+}
+
+.league-calendar-grid {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 6px;
+  table-layout: fixed;
+}
+
+.league-calendar-grid caption {
+  text-align: left;
+}
+
+.league-calendar-grid thead th {
+  padding: 6px 4px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  text-align: center;
+  font-weight: 600;
+}
+
+.league-calendar-cell {
+  vertical-align: top;
+  height: 108px;
+  padding: 0;
+  border-radius: 9px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.league-calendar-cell.is-adjacent {
+  background: transparent;
+  border-color: transparent;
+  opacity: 0.4;
+  padding: 6px;
+}
+
+.league-calendar-cell.is-current {
+  border-color: var(--accent);
+}
+
+.league-calendar-cell.is-selected {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.league-calendar-daybutton {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 7px 7px 9px;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.league-calendar-daybutton:hover {
+  background: var(--surface-raised);
+}
+
+.league-calendar-daynumber {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.league-calendar-today {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 1px 7px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-ink);
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+.league-calendar-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.league-calendar-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  max-width: 100%;
+  padding: 2px 6px;
+  font-size: 0.74rem;
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: var(--surface-soft);
+  color: var(--text-soft);
+  border-left: 3px solid var(--line-strong);
+}
+
+.league-calendar-chip.is-game {
+  border-left-color: #6ea8fe;
+}
+
+.league-calendar-chip.is-event {
+  border-left-color: var(--success);
+}
+
+.league-calendar-chip.is-managed {
+  border-left-color: var(--accent);
+  color: var(--text);
+}
+
+.managed-star {
+  color: var(--accent);
+}
+
+.league-calendar-overflow {
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+/* List view */
+
+.league-calendar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.league-calendar-list-day {
+  padding: 10px 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+
+.league-calendar-list-daybutton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 0 0 8px;
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.league-calendar-list-daybutton.is-selected {
+  color: var(--accent-hover);
+}
+
+.league-calendar-list-count {
+  margin-left: auto;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.league-calendar-list-entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Aside panels */
+
+.league-calendar-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.league-calendar-summary,
+.league-calendar-agenda,
+.league-calendar-legend {
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.league-calendar-summary h3,
+.league-calendar-agenda h3,
+.league-calendar-legend h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.league-calendar-summary dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px 12px;
+  margin: 0;
+}
+
+.league-calendar-summary dt {
+  color: var(--muted);
+}
+
+.league-calendar-summary dd {
+  margin: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.league-calendar-agenda-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.league-calendar-agenda-header button {
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  background: var(--surface-raised);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.league-calendar-agenda-entries {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.league-calendar-agenda-entry {
+  padding: 8px 10px;
+  background: var(--surface-raised);
+  border-radius: 8px;
+}
+
+.league-calendar-agenda-title {
+  font-weight: 600;
+}
+
+.league-calendar-agenda-meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.league-calendar-legend ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+}
+
+.league-calendar-undated {
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px dashed var(--line-strong);
+  border-radius: 10px;
+}
+
+.league-calendar-undated h3 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+}
+
+.league-calendar-undated-entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+@media (max-width: 900px) {
+  .league-calendar-body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

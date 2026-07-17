@@ -54,8 +54,8 @@ import {
 } from './ui/dashboardShell'
 import { getTeamRoster } from './ui/leagueViewModel'
 import {
+  LeagueCalendarContent,
   LeagueScheduleOverviewContent,
-  ScheduleCalendarContent,
   TeamScheduleContent,
 } from './ui/schedulePages'
 import {
@@ -726,7 +726,7 @@ function renderAvailablePage(
     case 'schedule-team-schedule':
       return <TeamScheduleContent presentation={presentation} />
     case 'schedule-calendar':
-      return <ScheduleCalendarContent snapshot={snapshot} />
+      return <LeagueCalendarContent presentation={presentation} />
     case 'league-overview':
       return <LeagueScheduleOverviewContent snapshot={snapshot} />
     case 'league-teams':
