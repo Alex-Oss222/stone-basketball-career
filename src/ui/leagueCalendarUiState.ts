@@ -9,7 +9,11 @@ import type { YearMonth } from '../domain/yearMonth'
 import type { CalendarScope } from '../app/enrichedCalendarViewModel'
 import type { LeagueYearDisplayRange } from '../app/leagueYearDisplayRange'
 
-export type LeagueCalendarViewMode = 'calendar' | 'list'
+export type LeagueCalendarViewMode =
+  | 'calendar'
+  | 'list'
+  | 'by_team'
+  | 'national_tv'
 
 /**
  * Transient League Calendar presentation preferences. Per ADR 0004 these never
@@ -105,6 +109,8 @@ export function parseViewMode(value: unknown): LeagueCalendarViewMode {
   switch (value) {
     case 'calendar':
     case 'list':
+    case 'by_team':
+    case 'national_tv':
       return value
     default:
       throw new RangeError(

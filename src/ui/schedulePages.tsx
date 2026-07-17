@@ -6,6 +6,10 @@ import { DashboardCard } from './dashboardShell'
 import { LeagueCalendarPage } from './leagueCalendarPage'
 import type { LeagueCalendarViewMode } from './leagueCalendarUiState'
 import { TeamSchedulePage } from './teamSchedulePage'
+import type {
+  TeamScheduleStage,
+  TeamScheduleViewMode,
+} from './teamScheduleUiState'
 
 export type { TeamScheduleSiteFilter } from '../app/teamScheduleViewModel'
 
@@ -16,6 +20,8 @@ export interface SchedulePageProps {
 export interface TeamScheduleContentProps {
   readonly presentation: LeaguePresentationBundle | null
   readonly initialInspectedTeamId?: TeamId
+  readonly initialStage?: TeamScheduleStage
+  readonly initialViewMode?: TeamScheduleViewMode
   readonly initialFilter?: TeamScheduleSiteFilter
   readonly initialSelectedGameId?: GameId | null
 }
@@ -30,6 +36,8 @@ const PUBLICATION_STATUS_LABELS = Object.freeze({
 export function TeamScheduleContent({
   presentation,
   initialInspectedTeamId,
+  initialStage,
+  initialViewMode,
   initialFilter,
   initialSelectedGameId,
 }: TeamScheduleContentProps) {
@@ -39,6 +47,8 @@ export function TeamScheduleContent({
     <TeamSchedulePage
       {...presentation}
       initialInspectedTeamId={initialInspectedTeamId}
+      initialStage={initialStage}
+      initialViewMode={initialViewMode}
       initialFilter={initialFilter}
       initialSelectedGameId={initialSelectedGameId}
     />

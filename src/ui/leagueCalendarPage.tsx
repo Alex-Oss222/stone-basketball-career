@@ -28,6 +28,9 @@ import {
   formatScheduleDateShort,
   formatScheduleMonthHeading,
 } from './scheduleFormatting'
+import { SegmentedTabs } from './segmentedTabs'
+import type { SegmentedTabOption } from './segmentedTabs'
+import { ComingLaterPanel } from './comingLaterPanel'
 
 const MAX_VISIBLE_ENTRIES_PER_DAY = 4
 
@@ -50,6 +53,18 @@ const WEEKDAY_SHORT_LABELS = [
   'Fri',
   'Sat',
 ] as const
+
+const VIEW_TABS = [
+  { value: 'calendar', label: 'Calendar' },
+  { value: 'list', label: 'By date' },
+  { value: 'by_team', label: 'By team', comingLater: true },
+  { value: 'national_tv', label: 'National TV', comingLater: true },
+] as const satisfies readonly SegmentedTabOption<LeagueCalendarViewMode>[]
+
+const SCOPE_TABS = [
+  { value: 'all_teams', label: 'All teams' },
+  { value: 'managed_team', label: 'My team' },
+] as const satisfies readonly SegmentedTabOption<CalendarScope>[]
 
 export interface LeagueCalendarPageProps extends LeaguePresentationBundle {
   readonly initialViewMode?: LeagueCalendarViewMode
@@ -149,20 +164,32 @@ export function LeagueCalendarPage({
                 dispatch({ type: 'select_date', date })
               }
             />
-          ) : (
+          ) : uiState.viewMode === 'list' ? (
             <CalendarMonthList
               month={visibleMonth}
               onSelectDate={(date) =>
                 dispatch({ type: 'select_date', date })
               }
             />
-          )}
-
-          {calendarModel.undatedEntries.count > 0 && (
-            <UndatedEntriesSection
-              entries={calendarModel.undatedEntries.entries}
+          ) : uiState.viewMode === 'by_team' ? (
+            <ComingLaterPanel
+              title="By team"
+              requirement="Requires a per-team league calendar filter."
+            />
+          ) : (
+            <ComingLaterPanel
+              title="National TV"
+              requirement="Requires national TV broadcast scheduling."
             />
           )}
+
+          {(uiState.viewMode === 'calendar' ||
+            uiState.viewMode === 'list') &&
+            calendarModel.undatedEntries.count > 0 && (
+              <UndatedEntriesSection
+                entries={calendarModel.undatedEntries.entries}
+              />
+            )}
         </div>
 
         <aside className="league-calendar-aside">
@@ -232,52 +259,21 @@ function LeagueCalendarToolbar({
       </div>
 
       <div className="league-calendar-controls">
-        <fieldset className="league-calendar-toggle">
-          <legend>View</legend>
-          {(['calendar', 'list'] as const).map((value) => (
-            <label
-              key={value}
-              className={
-                viewMode === value
-                  ? 'league-calendar-choice is-active'
-                  : 'league-calendar-choice'
-              }
-            >
-              <input
-                type="radio"
-                name="league-calendar-view"
-                value={value}
-                checked={viewMode === value}
-                onChange={() => onViewMode(value)}
-              />
-              {value === 'calendar' ? 'Calendar' : 'List'}
-            </label>
-          ))}
-        </fieldset>
-
+        <SegmentedTabs
+          legend="View"
+          name="league-calendar-view"
+          value={viewMode}
+          options={VIEW_TABS}
+          onChange={onViewMode}
+        />
         {canManagedScope && (
-          <fieldset className="league-calendar-toggle">
-            <legend>Teams</legend>
-            {(['all_teams', 'managed_team'] as const).map((value) => (
-              <label
-                key={value}
-                className={
-                  scope === value
-                    ? 'league-calendar-choice is-active'
-                    : 'league-calendar-choice'
-                }
-              >
-                <input
-                  type="radio"
-                  name="league-calendar-scope"
-                  value={value}
-                  checked={scope === value}
-                  onChange={() => onScope(value)}
-                />
-                {value === 'all_teams' ? 'All teams' : 'My team'}
-              </label>
-            ))}
-          </fieldset>
+          <SegmentedTabs
+            legend="Teams"
+            name="league-calendar-scope"
+            value={scope}
+            options={SCOPE_TABS}
+            onChange={onScope}
+          />
         )}
       </div>
     </section>

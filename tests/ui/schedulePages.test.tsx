@@ -9,7 +9,7 @@ import {
 import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
 
 describe('TeamScheduleContent', () => {
-  it('renders all 28 managed-team games in chronological month sections', () => {
+  it('renders one month of managed-team games with stage and view tabs', () => {
     const snapshot = createLeagueSnapshotV2Fixture()
     const presentation = createLeaguePresentationBundle(snapshot)
     const managedTeam = presentation.league.teams.find(
@@ -21,19 +21,62 @@ describe('TeamScheduleContent', () => {
       <TeamScheduleContent presentation={presentation} />,
     )
 
-    expect(markup.match(/data-schedule-game=/g)).toHaveLength(28)
-    expect(markup).toContain('Showing 28 of 28 games')
+    // Season current date is 2026-10-05, so October 2026 shows by default.
+    expect(markup).toContain('October 2026')
+    expect(markup).not.toContain('December 2026')
+    expect(markup.match(/data-schedule-game=/g)).toHaveLength(9)
+    expect(markup).toContain('9 games in October 2026')
+    // Season totals still appear in the summary.
     expect(markup).toContain('<dt>Total games</dt><dd>28</dd>')
     expect(markup).toContain('<dt>Home games</dt><dd>14</dd>')
     expect(markup).toContain('<dt>Away games</dt><dd>14</dd>')
-    expect(markup).toContain('October 2026')
-    expect(markup).toContain('December 2026')
+    // Stage and view tab rows are scaffolded.
+    expect(markup).toContain('Regular season')
+    expect(markup).toContain('Preseason')
+    expect(markup).toContain('Postseason')
+    expect(markup).toContain('<span>List</span>')
+    expect(markup).toContain('<span>Calendar</span>')
+    expect(markup).toContain('<span>Results</span>')
+    expect(markup).toContain('Soon')
+    expect(markup).toContain('Show previous month')
+    expect(markup).toContain('Show next month')
     expect(markup).toContain(`${managedTeam.city} ${managedTeam.nickname}`)
-    expect(markup).toContain(`(${managedTeam.abbreviation})`)
     expect(markup).toContain('Managed team')
-    expect(markup).toContain('Contains next game')
-    expect(markup).toContain('Next game')
     expect(markup).not.toContain('Date to be announced')
+  })
+
+  it('renders the inspected team calendar view when selected', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
+    )
+    const markup = renderToStaticMarkup(
+      <TeamScheduleContent presentation={presentation} initialViewMode="calendar" />,
+    )
+
+    expect(markup).toContain('team-calendar-grid')
+    expect(markup).toContain('October 2026')
+    expect(markup).toContain('Today')
+    expect(markup).toMatch(/team-calendar-chip/)
+    expect(markup).not.toContain('role="grid"')
+  })
+
+  it('shows an honest placeholder for scaffolded stages and views', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
+    )
+    const postseason = renderToStaticMarkup(
+      <TeamScheduleContent presentation={presentation} initialStage="postseason" />,
+    )
+    const results = renderToStaticMarkup(
+      <TeamScheduleContent presentation={presentation} initialViewMode="results" />,
+    )
+
+    expect(postseason).toContain('Coming later')
+    expect(postseason).toContain('Postseason schedule')
+    expect(postseason).not.toContain('data-schedule-game')
+    expect(results).toContain('Coming later')
+    expect(results).toContain('game simulation and completed game results')
+    expect(results).not.toContain('data-schedule-game')
   })
 
   it('provides all eight inspected teams without changing managed ownership', () => {
@@ -71,13 +114,13 @@ describe('TeamScheduleContent', () => {
       <TeamScheduleContent presentation={presentation} />,
     )
 
-    expect(markup.match(/data-schedule-game=/g)).toHaveLength(28)
+    expect(markup.match(/data-schedule-game=/g)).toHaveLength(9)
     expect(markup).toContain(`${firstTeam.city} ${firstTeam.nickname}`)
     expect(markup).not.toContain('Return to managed team')
     expect(markup).not.toContain('class="managed-team-label"')
   })
 
-  it('renders exactly 14 rows for either initial site filter in stored order', () => {
+  it('applies the site filter within the visible month', () => {
     const presentation = createLeaguePresentationBundle(
       createLeagueSnapshotV2Fixture(),
     )
@@ -94,13 +137,16 @@ describe('TeamScheduleContent', () => {
       />,
     )
 
-    expect(homeMarkup.match(/data-schedule-game=/g)).toHaveLength(14)
-    expect(homeMarkup).toContain('Showing 14 of 28 games')
+    const homeCount = (homeMarkup.match(/data-schedule-game=/g) ?? []).length
+    const awayCount = (awayMarkup.match(/data-schedule-game=/g) ?? []).length
+
+    // Every October game is home or away, so the split covers the month total.
+    expect(homeCount + awayCount).toBe(9)
+    expect(homeCount).toBeGreaterThan(0)
+    expect(awayCount).toBeGreaterThan(0)
     expect(homeMarkup).toMatch(
       /checked="" value="home"|value="home" checked=""/,
     )
-    expect(awayMarkup.match(/data-schedule-game=/g)).toHaveLength(14)
-    expect(awayMarkup).toContain('Showing 14 of 28 games')
     expect(awayMarkup).toMatch(
       /checked="" value="away"|value="away" checked=""/,
     )
@@ -139,7 +185,6 @@ describe('TeamScheduleContent', () => {
     expect(markup).toContain('Undated schedule games')
     expect(markup).toContain('TBA')
     expect(markup).toContain('Postponed')
-    expect(markup.match(/data-schedule-game=/g)).toHaveLength(28)
   })
 
   it('renders semantic filters, tables, and focusable game controls', () => {
