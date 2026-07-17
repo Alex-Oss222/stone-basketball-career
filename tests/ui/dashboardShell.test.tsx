@@ -10,6 +10,7 @@ import {
   ApplicationShell,
   SaveStateIndicator,
 } from '../../src/ui/dashboardShell'
+import { WorkspaceErrorBoundary } from '../../src/ui/workspaceErrorBoundary'
 
 const snapshot = createLeagueSnapshotV2Fixture()
 const league = snapshot.league
@@ -137,5 +138,34 @@ describe('ApplicationShell navigation semantics', () => {
     expect(setupMarkup).toContain('href="#workspace-content"')
     expect(setupMarkup).toContain('id="workspace-content"')
     expect(setupMarkup).toContain('tabindex="-1"')
+  })
+
+  it('resets workspace failures by navigation key without keying the boundary', () => {
+    const failedState = {
+      failed: true,
+      resetKey: 'schedule-team-schedule',
+    }
+
+    expect(
+      WorkspaceErrorBoundary.getDerivedStateFromProps(
+        {
+          children: null,
+          resetKey: 'schedule-team-schedule',
+        },
+        failedState,
+      ),
+    ).toBeNull()
+    expect(
+      WorkspaceErrorBoundary.getDerivedStateFromProps(
+        {
+          children: null,
+          resetKey: 'schedule-calendar',
+        },
+        failedState,
+      ),
+    ).toEqual({
+      failed: false,
+      resetKey: 'schedule-calendar',
+    })
   })
 })

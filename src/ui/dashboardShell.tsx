@@ -103,7 +103,7 @@ export function ApplicationShell({
         aria-busy={busy}
         tabIndex={-1}
       >
-        <WorkspaceErrorBoundary key={activePageId}>
+        <WorkspaceErrorBoundary resetKey={activePageId}>
           {children}
         </WorkspaceErrorBoundary>
       </main>

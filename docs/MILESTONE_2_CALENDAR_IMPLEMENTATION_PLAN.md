@@ -230,6 +230,84 @@ and frozen. They are never persisted in `LeagueSnapshotV2`. They contain no
 score, winner, result, standing, statistic, simulation, venue, tipoff, or
 broadcast claim.
 
+## M2.7 Team Schedule React integration
+
+M2.7 replaces the flat DTO-backed Team Schedule with a React presentation
+powered by the M2.6 read models. The page renders the inspected team's real
+identity and schedule totals, followed by chronological non-empty `YearMonth`
+sections. Each section presents its game, home, and away counts and its
+next-game state, then renders semantic schedule rows with authoritative game
+identity, placement date or TBA, opponent, home/away site, and explicit
+lifecycle status. The complete unfiltered current schedule accounts for all
+28 team games. Games without a placement date remain in a separate TBA
+section, which is omitted when empty.
+
+The inspected team is transient presentation context and remains distinct from
+the managed team. The native labeled selector contains every canonical league
+team, initially chooses the managed team when one exists and otherwise the
+first canonical team, identifies the managed option, and provides a direct
+return-to-managed-team action. Inspecting another team never changes
+`managedTeamId`, writes a snapshot, or increments the repository revision.
+
+The All/Home/Away control uses the closed M2.6 site-filter contract. It
+preserves authoritative row order and does not mutate the read model. Changing
+the inspected team resets the site filter to All and closes any open game
+details; this prevents a preference selected for one team from being presented
+as the other team's context. An empty filtered projection shows honest
+filter-specific copy and a Clear Filter action rather than inventing games.
+
+One shared schedule-only game-details dialog is opened by real buttons in both
+table rows and the narrow-layout schedule presentation. It consumes
+`GameDetailsViewModel` and shows only authoritative identity, stage, status,
+team, perspective, and date-history fields. Null dates are omitted except for
+an honest TBA placement. Previous and next actions follow the complete
+inspected-team schedule sequence and update the same surface. The dialog uses
+modal dialog semantics, has an accessible name and labeled close control,
+closes with Escape, traps focus while open, and restores focus to the game
+control that opened it.
+
+ADR 0007 governs the React data boundary. A single named adapter converts the
+already-validated `LeagueSnapshotV2` DTO into validated live-domain League,
+Season, SeasonCalendar, and LeagueSchedule values, including explicit
+null-to-optional mappings. Snapshot hydration and normalized
+`CalendarEntryViewModel` construction are memoized by authoritative snapshot
+reference. Inspected-team, filter, and selected-game changes reselect from that
+stable normalized entry collection; they do not parse, hydrate, normalize, or
+generate the complete snapshot again. Any projection failure is handled by the
+existing workspace error boundary rather than by a competing page-level
+recovery system.
+
+The inspected TeamId, active site filter, and selected GameId remain React-only
+state. They are absent from `LeagueSnapshotV2`, trigger no repository
+operation, and may reset after returning to the main menu or reopening the
+workspace. No navigation or persistence schema change is part of M2.7.
+
+The accessibility interaction model uses a visible page heading, a labeled
+native team selector, a semantically named and keyboard-operable site-filter
+group, logical month headings, table captions, scoped headers, real game
+buttons, visible focus indication, and textual Managed team, Next game,
+current-date, site, status, and TBA markers. The schedule remains a semantic
+table rather than an ARIA grid. Dialog motion respects the existing
+reduced-motion rule.
+
+Responsive verification for M2.7 uses this manual checklist:
+
+- `1440×900`: toolbar, summary, month hierarchy, schedule columns, and dialog
+  use the available desktop width without excessive line length;
+- `1366×768`: the complete toolbar and primary row actions remain visible and
+  the dialog fits within the viewport;
+- `1024×768`: selector and filter controls wrap without overlap, month
+  hierarchy remains clear, and no action is clipped;
+- `768×1024`: the schedule remains usable in portrait layout with every
+  required field and keyboard action available; and
+- `390×844`: date, opponent, Home/Away, status, month context, game activation,
+  close, and previous/next actions remain available without hover or required
+  horizontal scrolling.
+
+M2.7 does not add the Calendar month grid, Calendar/Agenda state, scores,
+results, standings, simulation, season advancement, schedule editing, venues,
+tipoff times, broadcasts, or persistence changes.
+
 ## Ordered implementation steps
 
 ### 1. YearMonth arithmetic (M2.2)
@@ -301,35 +379,32 @@ results, or authoritative schedule changes.
 
 ### 6. Team Schedule React slice (M2.7)
 
-Build the first React integration slice from the completed pure read models:
-render the month-grouped Team Schedule with All/Home/Away controls, add an
-inspected-team selector that never changes the managed team, and use one
-shared accessible game-details surface. Preserve honest undated handling,
-authoritative sequence, keyboard access, table semantics, and visible focus.
+The first React integration slice implements the M2.7 contract above from the
+completed pure read models. It renders the chronological month-grouped Team
+Schedule and honest conditional TBA section, supplies the transient
+managed-versus-inspected team selector and reset-to-All site filters, and uses
+one reusable accessible game-details dialog with schedule-order previous/next
+navigation.
 
-M2.7 still excludes simulation, scores, winners, standings, results, schedule
-editing, persistence changes, and the Calendar month-grid interface.
+The V2-to-domain adapter and snapshot-reference memo are the only hydration and
+base-normalization boundary. Page preference changes neither call generation
+nor mutate, persist, revise, or rehydrate league truth.
 
-### 7. Continuous month-grid Calendar
+### 7. First Calendar React slice (M2.8)
 
-Refactor `ScheduleCalendarContent`, optionally behind a re-export from the
-existing schedule-pages module. Render every July-through-June month, including
-empty months, as the semantic sections and tables required by ADR 0002. Date
-buttons show concise authoritative entry counts and accessible managed-team
-markers. TBA entries are not forced into a date cell. Keep the existing page
-ID and do not display results.
+M2.8 is the first Calendar React slice. It should render the continuous
+July-through-June range, including empty months, as the semantic month
+tables/sections required by ADR 0002. It should add Calendar/Agenda mode,
+managed-team/all-team scope, deterministic navigation to the authoritative
+current date, selected-day agenda presentation, explicit visible-entry
+overflow, and a separate honest undated/TBA area. Date cells and agendas use
+the existing normalized and enriched models and the shared M2.7 game-details
+surface; they do not regroup by GameDay or rebuild snapshot presentation.
 
-### 8. Selected-day Agenda using the slate
+M2.8 continues to exclude simulation, scores, winners, results, standings,
+schedule editing, date advancement, and persistence-schema changes.
 
-Add Calendar/Agenda presentation using the same selected date and complete
-`CalendarDaySlate`. Initialize selection explicitly from stored
-`Season.currentDate` when it is in range, otherwise from the range start.
-Render all events and games for that date, or honest empty-day copy. Date
-selection is UI state only and never advances the stored season. Test native
-button selection, accessible selected-state text, full and empty slates, TBA
-handling, managed-team markers, and event/game coexistence.
-
-### 9. UI-preference separation
+### 8. UI-preference separation
 
 Define a pure UI state type/reducer, preferably in
 `src/ui/scheduleUiState.ts`, for Calendar/Agenda mode, scope, density, selected
@@ -338,7 +413,7 @@ mutate the snapshot. Do not add DTO fields, repository calls, revision changes,
 or preference persistence. Keep inspected and managed team identities
 distinct.
 
-### 10. Accessibility and responsive verification
+### 9. Accessibility and responsive verification
 
 Automate checks for headings, captions, scoped headers, native controls,
 selected/current date labels, visible non-color markers, TBA and empty states,
@@ -348,7 +423,7 @@ windows, zoom/reflow, high contrast, reduced motion, and table overflow or
 semantic narrow-screen alternatives. Add no dependency unless separately
 approved.
 
-### 11. Definition of Done
+### 10. Definition of Done
 
 Milestone 2 calendar work is complete only when:
 

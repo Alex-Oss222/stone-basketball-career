@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import type { LeagueSnapshotV2 } from '../../src/persistence/leagueSnapshotV2'
 import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
@@ -113,13 +114,17 @@ describe('read-only V2 season and schedule identity preservation', () => {
       ScheduleCalendarContent,
       TeamScheduleContent,
     } = await import('../../src/ui/schedulePages')
+    const { createLeaguePresentationBundle } = await import(
+      '../../src/app/leagueSnapshotDomainAdapter'
+    )
     const { DashboardOverviewContent } = await import(
       '../../src/ui/dashboardPages'
     )
     const { AppHeader } = await import('../../src/ui/dashboardShell')
 
+    const presentation = createLeaguePresentationBundle(persistedSnapshot)
     const teamScheduleMarkup = renderToStaticMarkup(
-      createElement(TeamScheduleContent, { snapshot: persistedSnapshot }),
+      createElement(TeamScheduleContent, { presentation }),
     )
     const calendarMarkup = renderToStaticMarkup(
       createElement(ScheduleCalendarContent, { snapshot: persistedSnapshot }),
@@ -160,7 +165,7 @@ describe('read-only V2 season and schedule identity preservation', () => {
       }),
     )
 
-    expect(teamScheduleMarkup).toContain('regular-season schedule')
+    expect(teamScheduleMarkup).toContain('Inspected team schedule')
     expect(calendarMarkup).toContain('Game day 1')
     expect(overviewMarkup).toContain(persistedSnapshot.season.displayLabel)
     expect(dashboardMarkup).toContain('Next scheduled game')
@@ -170,6 +175,39 @@ describe('read-only V2 season and schedule identity preservation', () => {
     expect(scheduleGeneratorImport).not.toHaveBeenCalled()
     expect(opponentGeneratorImport).not.toHaveBeenCalled()
     expect(randomSourceImport).not.toHaveBeenCalled()
+  })
+
+  it('keeps Team Schedule hydration snapshot-memoized and preferences downstream', () => {
+    const appSource = readFileSync(
+      new URL('../../src/App.tsx', import.meta.url),
+      'utf8',
+    )
+    const pageSource = readFileSync(
+      new URL('../../src/ui/teamSchedulePage.tsx', import.meta.url),
+      'utf8',
+    )
+    const dialogSource = readFileSync(
+      new URL('../../src/ui/gameDetailsDialog.tsx', import.meta.url),
+      'utf8',
+    )
+
+    expect(appSource).toMatch(
+      /useMemo\([\s\S]*createLeaguePresentationBundle\(snapshot\)[\s\S]*\[snapshot\]/,
+    )
+    expect(pageSource).not.toMatch(
+      /LeagueSnapshotV2|createLeaguePresentationBundle|createCalendarEntries/,
+    )
+    expect(pageSource).not.toMatch(
+      /repository|IndexedDB|createSeasonFoundation|generateRegularSeasonSchedule|generateLeague|Math\.random|new Date/i,
+    )
+    expect(dialogSource).not.toMatch(
+      /repository|LeagueSnapshotV2|generate|Math\.random|new Date/i,
+    )
+    expect(dialogSource).toContain('dialog.showModal()')
+    expect(dialogSource).toContain('onCancel={(event) =>')
+    expect(dialogSource).toContain('event.preventDefault()')
+    expect(dialogSource).toContain('onRequestClose()')
+    expect(dialogSource).toContain('returnTarget?.focus()')
   })
 })
 

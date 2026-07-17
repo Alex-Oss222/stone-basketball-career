@@ -1,30 +1,28 @@
-import { useId, useState } from 'react'
 import {
-  calculateTeamScheduleTotals,
-  filterTeamScheduleGames,
   formatLocalDateForDisplay,
-  getTeamLocation,
-  getTeamScheduleGames,
   groupGamesByGameDay,
   isManagedTeamGame,
   resolveOpponent,
 } from '../app/scheduleViewModel'
-import type { TeamScheduleFilter } from '../app/scheduleViewModel'
-import type {
-  LeagueSnapshotV2,
-  LeagueSnapshotV2ScheduledGameDto,
-} from '../persistence/leagueSnapshotV2'
+import type { LeaguePresentationBundle } from '../app/leagueSnapshotDomainAdapter'
+import type { TeamScheduleSiteFilter } from '../app/teamScheduleViewModel'
+import type { GameId, TeamId } from '../domain/ids'
+import type { LeagueSnapshotV2 } from '../persistence/leagueSnapshotV2'
 import { DashboardCard } from './dashboardShell'
 import { formatTeamName } from './leagueViewModel'
+import { TeamSchedulePage } from './teamSchedulePage'
 
-export type { TeamScheduleFilter } from '../app/scheduleViewModel'
+export type { TeamScheduleSiteFilter } from '../app/teamScheduleViewModel'
 
 export interface SchedulePageProps {
   readonly snapshot: LeagueSnapshotV2 | null
 }
 
-export interface TeamScheduleContentProps extends SchedulePageProps {
-  readonly initialFilter?: TeamScheduleFilter
+export interface TeamScheduleContentProps {
+  readonly presentation: LeaguePresentationBundle | null
+  readonly initialInspectedTeamId?: TeamId
+  readonly initialFilter?: TeamScheduleSiteFilter
+  readonly initialSelectedGameId?: GameId | null
 }
 
 const GAME_STATUS_LABELS = Object.freeze({
@@ -42,132 +40,20 @@ const PUBLICATION_STATUS_LABELS = Object.freeze({
 })
 
 export function TeamScheduleContent({
-  snapshot,
-  initialFilter = 'all',
+  presentation,
+  initialInspectedTeamId,
+  initialFilter,
+  initialSelectedGameId,
 }: TeamScheduleContentProps) {
-  const [filter, setFilter] = useState<TeamScheduleFilter>(initialFilter)
-  const filterId = useId()
-
-  if (snapshot === null) return <NoLeagueScheduleAvailable />
-
-  const managedTeam =
-    snapshot.managedTeamId === null
-      ? null
-      : snapshot.league.teams.find(
-          (team) => team.id === snapshot.managedTeamId,
-        ) ?? null
-
-  if (managedTeam === null) {
-    return (
-      <section
-        className="empty-state"
-        aria-labelledby="team-schedule-no-team-heading"
-      >
-        <h2 id="team-schedule-no-team-heading">No managed team selected</h2>
-        <p>Choose a team before opening its regular-season schedule.</p>
-      </section>
-    )
-  }
-
-  const allGames = getTeamScheduleGames(
-    snapshot.leagueSchedule,
-    managedTeam.id,
-  )
-  const games = filterTeamScheduleGames(
-    snapshot.leagueSchedule,
-    managedTeam.id,
-    filter,
-  )
-  const totals = calculateTeamScheduleTotals(
-    snapshot.leagueSchedule,
-    managedTeam.id,
-  )
-  const gameDayGroups = groupGamesByGameDay(snapshot.leagueSchedule)
-  const gameDaysByGameId = new Map(
-    gameDayGroups.flatMap(({ gameDay, games: groupedGames }) =>
-      groupedGames.map((game) => [game.id, gameDay] as const),
-    ),
-  )
+  if (presentation === null) return <NoLeagueScheduleAvailable />
 
   return (
-    <div className="team-schedule-content league-players-content">
-      <p className="content-count" role="status" aria-live="polite">
-        {games.length} {filter === 'all' ? 'scheduled games' : `${filter} games`}
-      </p>
-
-      <form
-        className="player-filter-form"
-        onSubmit={(event) => event.preventDefault()}
-      >
-        <div className="filter-field">
-          <label htmlFor={filterId}>Schedule view</label>
-          <select
-            id={filterId}
-            value={filter}
-            onChange={(event) => {
-              const nextFilter = event.currentTarget.value
-              if (isTeamScheduleFilter(nextFilter)) setFilter(nextFilter)
-            }}
-          >
-            <option value="all">All games ({allGames.length})</option>
-            <option value="home">Home games ({totals.homeGames})</option>
-            <option value="away">Away games ({totals.awayGames})</option>
-          </select>
-        </div>
-      </form>
-
-      <div
-        className="table-scroll"
-        role="region"
-        aria-label={`${formatTeamName(managedTeam)} schedule table`}
-        tabIndex={0}
-      >
-        <table className="league-table">
-          <caption>
-            {snapshot.season.displayLabel} regular-season schedule for{' '}
-            {formatTeamName(managedTeam)}
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Game day</th>
-              <th scope="col">Scheduled date</th>
-              <th scope="col">Location</th>
-              <th scope="col">Opponent</th>
-              <th scope="col">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            {games.map((game) => {
-              const gameDay = gameDaysByGameId.get(game.id)
-              if (gameDay === undefined) {
-                throw new RangeError(
-                  `Scheduled game is not assigned to a game day: ${game.id}`,
-                )
-              }
-              const location = getTeamLocation(game, managedTeam.id)
-              const opponent = resolveOpponent(
-                snapshot.league,
-                game,
-                managedTeam.id,
-              )
-
-              return (
-                <tr key={game.id} data-schedule-game={game.id}>
-                  <th scope="row">{gameDay.sequenceNumber}</th>
-                  <td>{renderCurrentGameDate(game)}</td>
-                  <td>{location === 'home' ? 'Home' : 'Away'}</td>
-                  <td>
-                    {location === 'home' ? 'vs ' : 'at '}
-                    {formatTeamName(opponent)} ({opponent.abbreviation})
-                  </td>
-                  <td>{GAME_STATUS_LABELS[game.status]}</td>
-                </tr>
-              )
-            })}
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <TeamSchedulePage
+      {...presentation}
+      initialInspectedTeamId={initialInspectedTeamId}
+      initialFilter={initialFilter}
+      initialSelectedGameId={initialSelectedGameId}
+    />
   )
 }
 
@@ -314,28 +200,4 @@ function NoLeagueScheduleAvailable() {
       <p>Create or restore a league before opening its season schedule.</p>
     </section>
   )
-}
-
-function renderCurrentGameDate(game: LeagueSnapshotV2ScheduledGameDto) {
-  if (game.currentScheduledDate === null) {
-    return (
-      <>
-        TBA
-        <span className="visually-hidden">
-          {' '}
-          (originally {formatLocalDateForDisplay(game.originalScheduledDate)})
-        </span>
-      </>
-    )
-  }
-
-  return (
-    <time dateTime={game.currentScheduledDate}>
-      {formatLocalDateForDisplay(game.currentScheduledDate)}
-    </time>
-  )
-}
-
-function isTeamScheduleFilter(value: string): value is TeamScheduleFilter {
-  return value === 'all' || value === 'home' || value === 'away'
 }

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import type { FormEvent } from 'react'
 import { createNewLeagueSnapshotV2 } from './app/commands/createNewLeagueSnapshotV2'
 import {
@@ -21,6 +21,12 @@ import {
 } from './app/navigation'
 import type { AvailableNavigationPageId } from './app/navigation'
 import type { NavigationPageId } from './app/navigation'
+import {
+  createLeaguePresentationBundle,
+} from './app/leagueSnapshotDomainAdapter'
+import type {
+  LeaguePresentationBundle,
+} from './app/leagueSnapshotDomainAdapter'
 import type { LeagueId, PlayerId } from './domain/ids'
 import type { Team } from './domain/league'
 import { parseLocalDate } from './domain/localDate'
@@ -615,26 +621,77 @@ function App() {
         <ComingLaterPage page={activePage} section={activeSection} />
       ) : (
         <AvailablePage page={activePage} section={activeSection}>
-          {renderAvailablePage(
-            activePage.id,
-            snapshot,
-            controlledTeam,
-            selectedPlayerId,
-            isBusy,
-            saveState,
-            handleNavigate,
-            handleChangeTeam,
-            setSelectedPlayerId,
-          )}
+          <AvailableWorkspacePage
+            pageId={activePage.id}
+            snapshot={snapshot}
+            controlledTeam={controlledTeam}
+            selectedPlayerId={selectedPlayerId}
+            isBusy={isBusy}
+            saveState={saveState}
+            onNavigate={handleNavigate}
+            onChangeTeam={handleChangeTeam}
+            onSelectPlayer={setSelectedPlayerId}
+          />
         </AvailablePage>
       )}
     </ApplicationShell>
   )
 }
 
+interface AvailableWorkspacePageProps {
+  readonly pageId: AvailableNavigationPageId
+  readonly snapshot: LeagueSnapshotV2 | null
+  readonly controlledTeam: Team | null
+  readonly selectedPlayerId: PlayerId | null
+  readonly isBusy: boolean
+  readonly saveState: SaveIndicatorState | null
+  readonly onNavigate: (pageId: NavigationPageId) => void
+  readonly onChangeTeam: () => void
+  readonly onSelectPlayer: (playerId: PlayerId) => void
+}
+
+/**
+ * Lives beneath the shared WorkspaceErrorBoundary. The authoritative DTO is
+ * hydrated and normalized once per snapshot reference, while Team Schedule
+ * inspection, filtering, and game selection remain downstream UI state.
+ */
+function AvailableWorkspacePage({
+  pageId,
+  snapshot,
+  controlledTeam,
+  selectedPlayerId,
+  isBusy,
+  saveState,
+  onNavigate,
+  onChangeTeam,
+  onSelectPlayer,
+}: AvailableWorkspacePageProps) {
+  const presentation = useMemo(
+    () =>
+      snapshot === null
+        ? null
+        : createLeaguePresentationBundle(snapshot),
+    [snapshot],
+  )
+
+  return renderAvailablePage(
+    pageId,
+    snapshot,
+    presentation,
+    controlledTeam,
+    selectedPlayerId,
+    isBusy,
+    saveState,
+    onNavigate,
+    onChangeTeam,
+    onSelectPlayer,
+  )
+}
+
 function renderAvailablePage(
   pageId: AvailableNavigationPageId,
   snapshot: LeagueSnapshotV2 | null,
+  presentation: LeaguePresentationBundle | null,
   controlledTeam: Team | null,
   selectedPlayerId: PlayerId | null,
   isBusy: boolean,
@@ -667,7 +724,7 @@ function renderAvailablePage(
         />
       )
     case 'schedule-team-schedule':
-      return <TeamScheduleContent snapshot={snapshot} />
+      return <TeamScheduleContent presentation={presentation} />
     case 'schedule-calendar':
       return <ScheduleCalendarContent snapshot={snapshot} />
     case 'league-overview':

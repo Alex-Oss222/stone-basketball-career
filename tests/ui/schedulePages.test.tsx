@@ -1,64 +1,112 @@
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
-import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
+import { createLeaguePresentationBundle } from '../../src/app/leagueSnapshotDomainAdapter'
 import {
   LeagueScheduleOverviewContent,
   ScheduleCalendarContent,
   TeamScheduleContent,
 } from '../../src/ui/schedulePages'
+import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
 
 describe('TeamScheduleContent', () => {
-  it('renders all 28 stored managed-team games with accessible filters and headers', () => {
+  it('renders all 28 managed-team games in chronological month sections', () => {
     const snapshot = createLeagueSnapshotV2Fixture()
-    const managedTeam = snapshot.league.teams.find(
-      (team) => team.id === snapshot.managedTeamId,
+    const presentation = createLeaguePresentationBundle(snapshot)
+    const managedTeam = presentation.league.teams.find(
+      (team) => team.id === presentation.managedTeamId,
     )
     if (managedTeam === undefined) throw new Error('Fixture managed team missing')
 
     const markup = renderToStaticMarkup(
-      <TeamScheduleContent snapshot={snapshot} />,
+      <TeamScheduleContent presentation={presentation} />,
     )
 
     expect(markup.match(/data-schedule-game=/g)).toHaveLength(28)
-    expect(markup).toContain('All games (28)')
-    expect(markup).toContain('Home games (14)')
-    expect(markup).toContain('Away games (14)')
-    expect(markup).toContain('Schedule view')
-    expect(markup).toContain('<caption>')
-    expect(markup).toContain(snapshot.season.displayLabel)
+    expect(markup).toContain('Showing 28 of 28 games')
+    expect(markup).toContain('<dt>Total games</dt><dd>28</dd>')
+    expect(markup).toContain('<dt>Home games</dt><dd>14</dd>')
+    expect(markup).toContain('<dt>Away games</dt><dd>14</dd>')
+    expect(markup).toContain('October 2026')
+    expect(markup).toContain('December 2026')
     expect(markup).toContain(`${managedTeam.city} ${managedTeam.nickname}`)
-    expect(markup).toContain('<th scope="col">Scheduled date</th>')
-    expect(markup).toContain('<th scope="row">')
-    expect(markup).not.toContain('Score')
-    expect(markup).not.toContain('Winner')
+    expect(markup).toContain(`(${managedTeam.abbreviation})`)
+    expect(markup).toContain('Managed team')
+    expect(markup).toContain('Contains next game')
+    expect(markup).toContain('Next game')
+    expect(markup).not.toContain('Date to be announced')
   })
 
-  it('shows exactly 14 rows for either initial location filter', () => {
+  it('provides all eight inspected teams without changing managed ownership', () => {
     const snapshot = createLeagueSnapshotV2Fixture()
+    const presentation = createLeaguePresentationBundle(snapshot)
+    const inspectedTeamId = presentation.league.teams[3].id
+    const revisionBefore = snapshot.revision
+    const managedTeamBefore = snapshot.managedTeamId
+
+    const markup = renderToStaticMarkup(
+      <TeamScheduleContent
+        presentation={presentation}
+        initialInspectedTeamId={inspectedTeamId}
+      />,
+    )
+
+    expect(markup.match(/<option/g)).toHaveLength(8)
+    for (const team of presentation.league.teams) {
+      expect(markup).toContain(
+        `${team.city} ${team.nickname} (${team.abbreviation})`,
+      )
+    }
+    expect(markup).toContain('Return to managed team')
+    expect(markup).not.toContain('class="managed-team-label"')
+    expect(snapshot.managedTeamId).toBe(managedTeamBefore)
+    expect(snapshot.revision).toBe(revisionBefore)
+  })
+
+  it('permits first-canonical-team inspection when no managed team exists', () => {
+    const snapshot = createLeagueSnapshotV2Fixture(null)
+    const presentation = createLeaguePresentationBundle(snapshot)
+    const firstTeam = presentation.league.teams[0]
+
+    const markup = renderToStaticMarkup(
+      <TeamScheduleContent presentation={presentation} />,
+    )
+
+    expect(markup.match(/data-schedule-game=/g)).toHaveLength(28)
+    expect(markup).toContain(`${firstTeam.city} ${firstTeam.nickname}`)
+    expect(markup).not.toContain('Return to managed team')
+    expect(markup).not.toContain('class="managed-team-label"')
+  })
+
+  it('renders exactly 14 rows for either initial site filter in stored order', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
+    )
     const homeMarkup = renderToStaticMarkup(
-      <TeamScheduleContent snapshot={snapshot} initialFilter="home" />,
+      <TeamScheduleContent
+        presentation={presentation}
+        initialFilter="home"
+      />,
     )
     const awayMarkup = renderToStaticMarkup(
-      <TeamScheduleContent snapshot={snapshot} initialFilter="away" />,
+      <TeamScheduleContent
+        presentation={presentation}
+        initialFilter="away"
+      />,
     )
 
     expect(homeMarkup.match(/data-schedule-game=/g)).toHaveLength(14)
-    expect(homeMarkup).toContain('14 home games')
-    expect(awayMarkup.match(/data-schedule-game=/g)).toHaveLength(14)
-    expect(awayMarkup).toContain('14 away games')
-  })
-
-  it('requires a managed team instead of inventing a team schedule', () => {
-    const snapshot = createLeagueSnapshotV2Fixture(null)
-    const markup = renderToStaticMarkup(
-      <TeamScheduleContent snapshot={snapshot} />,
+    expect(homeMarkup).toContain('Showing 14 of 28 games')
+    expect(homeMarkup).toMatch(
+      /checked="" value="home"|value="home" checked=""/,
     )
-
-    expect(markup).toContain('No managed team selected')
-    expect(markup).not.toContain('data-schedule-game')
+    expect(awayMarkup.match(/data-schedule-game=/g)).toHaveLength(14)
+    expect(awayMarkup).toContain('Showing 14 of 28 games')
+    expect(awayMarkup).toMatch(
+      /checked="" value="away"|value="away" checked=""/,
+    )
   })
 
-  it('keeps an unresolved postponed date visibly TBA', () => {
+  it('keeps an unresolved postponed game in the explicit TBA section', () => {
     const snapshot = createLeagueSnapshotV2Fixture()
     const firstGame = snapshot.leagueSchedule.games.find(
       (game) =>
@@ -73,23 +121,87 @@ describe('TeamScheduleContent', () => {
         ...snapshot.leagueSchedule,
         games: snapshot.leagueSchedule.games.map((game) =>
           game.id === firstGame.id
-            ? { ...game, status: 'postponed' as const, currentScheduledDate: null }
+            ? {
+                ...game,
+                status: 'postponed' as const,
+                currentScheduledDate: null,
+              }
             : game,
         ),
       },
     }
+    const presentation = createLeaguePresentationBundle(postponedSnapshot)
     const markup = renderToStaticMarkup(
-      <TeamScheduleContent snapshot={postponedSnapshot} />,
+      <TeamScheduleContent presentation={presentation} />,
     )
 
+    expect(markup).toContain('Date to be announced')
+    expect(markup).toContain('Undated schedule games')
     expect(markup).toContain('TBA')
-    expect(markup).toContain('originally October')
     expect(markup).toContain('Postponed')
+    expect(markup.match(/data-schedule-game=/g)).toHaveLength(28)
   })
 
-  it('shows an honest empty state on every page when no V2 schedule exists', () => {
+  it('renders semantic filters, tables, and focusable game controls', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
+    )
+    const markup = renderToStaticMarkup(
+      <TeamScheduleContent presentation={presentation} />,
+    )
+
+    expect(markup).toContain('<label for="')
+    expect(markup).toContain('>Inspect team</label>')
+    expect(markup).toContain('<fieldset class="team-schedule-site-filters">')
+    expect(markup).toContain('<legend>Game site</legend>')
+    expect(markup).toContain('type="radio"')
+    expect(markup).toContain('<caption>')
+    expect(markup).toContain('<th scope="col">Game</th>')
+    expect(markup).toContain('<th scope="col">Date</th>')
+    expect(markup).toContain('<th scope="row"')
+    expect(markup).toContain('class="team-schedule-game-button"')
+    expect(markup).toContain('aria-label="Open game ')
+    expect(markup).not.toContain('role="grid"')
+  })
+
+  it('renders the shared details surface from the selected game view model', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
+    )
+    const managedGames = presentation.schedule.games.filter(
+      (game) =>
+        game.homeTeamId === presentation.managedTeamId ||
+        game.awayTeamId === presentation.managedTeamId,
+    )
+    const selectedGame = managedGames[13]
+    if (selectedGame === undefined) throw new Error('Middle team game missing')
+
+    const markup = renderToStaticMarkup(
+      <TeamScheduleContent
+        presentation={presentation}
+        initialSelectedGameId={selectedGame.id}
+      />,
+    )
+
+    expect(markup).toContain(`data-game-details="${selectedGame.id}"`)
+    expect(markup).toContain('aria-modal="true"')
+    expect(markup).toContain('Game details')
+    expect(markup).toContain('Away team')
+    expect(markup).toContain('Home team')
+    expect(markup).toContain('Competition stage')
+    expect(markup).toContain('Original scheduled date')
+    expect(markup).toContain('Previous inspected-team game')
+    expect(markup).toContain('Next inspected-team game')
+    expect(markup).toContain('aria-label="Close game details"')
+    expect(markup).not.toContain('<dt>Actual date</dt>')
+    expect(markup).not.toMatch(/Score|Winner|Standings|Venue|Tipoff|Box score/)
+  })
+
+  it('shows an honest empty state when no hydrated V2 schedule exists', () => {
     const markups = [
-      renderToStaticMarkup(<TeamScheduleContent snapshot={null} />),
+      renderToStaticMarkup(
+        <TeamScheduleContent presentation={null} />,
+      ),
       renderToStaticMarkup(<ScheduleCalendarContent snapshot={null} />),
       renderToStaticMarkup(<LeagueScheduleOverviewContent snapshot={null} />),
     ]

@@ -3,17 +3,20 @@ import type { ErrorInfo, ReactNode } from 'react'
 
 export interface WorkspaceErrorBoundaryProps {
   readonly children: ReactNode
+  readonly resetKey: string
 }
 
 interface WorkspaceErrorBoundaryState {
   readonly failed: boolean
+  readonly resetKey: string
 }
 
 /**
  * Contains render-time failures raised by derived read models so that an
  * invariant violation degrades to an in-place message instead of blanking the
  * whole application. The surrounding shell, navigation, and save controls stay
- * interactive, and switching pages remounts the boundary to clear the error.
+ * interactive. A navigation-key change clears the local failure without
+ * remounting healthy snapshot-keyed presentation derivation on every page.
  */
 export class WorkspaceErrorBoundary extends Component<
   WorkspaceErrorBoundaryProps,
@@ -21,11 +24,23 @@ export class WorkspaceErrorBoundary extends Component<
 > {
   constructor(props: WorkspaceErrorBoundaryProps) {
     super(props)
-    this.state = { failed: false }
+    this.state = { failed: false, resetKey: props.resetKey }
   }
 
-  static getDerivedStateFromError(): WorkspaceErrorBoundaryState {
+  static getDerivedStateFromError(): Pick<
+    WorkspaceErrorBoundaryState,
+    'failed'
+  > {
     return { failed: true }
+  }
+
+  static getDerivedStateFromProps(
+    props: WorkspaceErrorBoundaryProps,
+    state: WorkspaceErrorBoundaryState,
+  ): WorkspaceErrorBoundaryState | null {
+    return props.resetKey === state.resetKey
+      ? null
+      : { failed: false, resetKey: props.resetKey }
   }
 
   componentDidCatch(error: Error, info: ErrorInfo): void {
