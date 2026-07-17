@@ -2381,8 +2381,9 @@ tbody tr:last-child td {
 
 .league-calendar-controls {
   display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .league-calendar-toggle {
@@ -2655,10 +2656,24 @@ tbody tr:last-child td {
 }
 
 .league-calendar-summary dl {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 6px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin: 0;
+}
+
+.league-calendar-summary dl > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+
+.league-calendar-summary dl > div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
 }
 
 .league-calendar-summary dt {
@@ -2667,7 +2682,6 @@ tbody tr:last-child td {
 
 .league-calendar-summary dd {
   margin: 0;
-  text-align: right;
   font-variant-numeric: tabular-nums;
   font-weight: 600;
 }

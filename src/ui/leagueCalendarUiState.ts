@@ -9,11 +9,14 @@ import type { YearMonth } from '../domain/yearMonth'
 import type { CalendarScope } from '../app/enrichedCalendarViewModel'
 import type { LeagueYearDisplayRange } from '../app/leagueYearDisplayRange'
 
-export type LeagueCalendarViewMode =
-  | 'calendar'
-  | 'list'
-  | 'by_team'
-  | 'national_tv'
+export type LeagueCalendarViewMode = 'calendar' | 'list' | 'by_team'
+
+/** Broadcast filter. Only "all" has data until TV scheduling exists. */
+export type LeagueCalendarBroadcast =
+  | 'all'
+  | 'non_televised'
+  | 'local'
+  | 'national'
 
 /**
  * Transient League Calendar presentation preferences. Per ADR 0004 these never
@@ -22,6 +25,7 @@ export type LeagueCalendarViewMode =
 export interface LeagueCalendarUiState {
   readonly viewMode: LeagueCalendarViewMode
   readonly scope: CalendarScope
+  readonly broadcast: LeagueCalendarBroadcast
   readonly visibleMonth: YearMonth
   readonly selectedDate: LocalDate | null
 }
@@ -41,6 +45,10 @@ export type LeagueCalendarUiAction =
   | {
       readonly type: 'set_scope'
       readonly scope: CalendarScope
+    }
+  | {
+      readonly type: 'set_broadcast'
+      readonly broadcast: LeagueCalendarBroadcast
     }
   | {
       readonly type: 'show_month'
@@ -71,6 +79,7 @@ export function createLeagueCalendarUiState({
   return Object.freeze({
     viewMode: parseViewMode(initialViewMode),
     scope: managedTeamId === null ? 'all_teams' : 'managed_team',
+    broadcast: 'all',
     visibleMonth: currentInRange ? currentMonth : range.startMonth,
     selectedDate: currentInRange ? validCurrentDate : range.startDate,
   })
@@ -88,6 +97,11 @@ export function reduceLeagueCalendarUiState(
       })
     case 'set_scope':
       return Object.freeze({ ...state, scope: parseScope(action.scope) })
+    case 'set_broadcast':
+      return Object.freeze({
+        ...state,
+        broadcast: parseBroadcast(action.broadcast),
+      })
     case 'show_month':
       return Object.freeze({
         ...state,
@@ -110,11 +124,24 @@ export function parseViewMode(value: unknown): LeagueCalendarViewMode {
     case 'calendar':
     case 'list':
     case 'by_team':
-    case 'national_tv':
       return value
     default:
       throw new RangeError(
         `League Calendar view mode is unsupported: ${String(value)}`,
+      )
+  }
+}
+
+function parseBroadcast(value: unknown): LeagueCalendarBroadcast {
+  switch (value) {
+    case 'all':
+    case 'non_televised':
+    case 'local':
+    case 'national':
+      return value
+    default:
+      throw new RangeError(
+        `League Calendar broadcast is unsupported: ${String(value)}`,
       )
   }
 }

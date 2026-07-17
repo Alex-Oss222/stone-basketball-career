@@ -21,6 +21,7 @@ import {
   reduceLeagueCalendarUiState,
 } from './leagueCalendarUiState'
 import type {
+  LeagueCalendarBroadcast,
   LeagueCalendarViewMode,
 } from './leagueCalendarUiState'
 import {
@@ -58,8 +59,14 @@ const VIEW_TABS = [
   { value: 'calendar', label: 'Calendar' },
   { value: 'list', label: 'By date' },
   { value: 'by_team', label: 'By team', comingLater: true },
-  { value: 'national_tv', label: 'National TV', comingLater: true },
 ] as const satisfies readonly SegmentedTabOption<LeagueCalendarViewMode>[]
+
+const BROADCAST_TABS = [
+  { value: 'all', label: 'All' },
+  { value: 'non_televised', label: 'Non-televised', comingLater: true },
+  { value: 'local', label: 'Local TV', comingLater: true },
+  { value: 'national', label: 'National TV', comingLater: true },
+] as const satisfies readonly SegmentedTabOption<LeagueCalendarBroadcast>[]
 
 const SCOPE_TABS = [
   { value: 'all_teams', label: 'All teams' },
@@ -138,6 +145,7 @@ export function LeagueCalendarPage({
         monthHeading={formatScheduleMonthHeading(visibleMonth.month)}
         viewMode={uiState.viewMode}
         scope={uiState.scope}
+        broadcast={uiState.broadcast}
         canManagedScope={managedTeamId !== null}
         onPreviousMonth={
           previousMonth === null
@@ -152,39 +160,43 @@ export function LeagueCalendarPage({
         onViewMode={(viewMode) =>
           dispatch({ type: 'set_view_mode', viewMode })
         }
+        onBroadcast={(broadcast) =>
+          dispatch({ type: 'set_broadcast', broadcast })
+        }
         onScope={(scope) => dispatch({ type: 'set_scope', scope })}
       />
 
       <div className="league-calendar-body">
         <div className="league-calendar-primary">
-          {uiState.viewMode === 'calendar' ? (
-            <CalendarMonthTable
-              month={visibleMonth}
-              onSelectDate={(date) =>
-                dispatch({ type: 'select_date', date })
-              }
-            />
-          ) : uiState.viewMode === 'list' ? (
-            <CalendarMonthList
-              month={visibleMonth}
-              onSelectDate={(date) =>
-                dispatch({ type: 'select_date', date })
-              }
+          {uiState.broadcast !== 'all' ? (
+            <ComingLaterPanel
+              title={`${broadcastLabel(uiState.broadcast)} games`}
+              requirement="Requires TV broadcast scheduling for this rule pack."
             />
           ) : uiState.viewMode === 'by_team' ? (
             <ComingLaterPanel
               title="By team"
               requirement="Requires a per-team league calendar filter."
             />
+          ) : uiState.viewMode === 'calendar' ? (
+            <CalendarMonthTable
+              month={visibleMonth}
+              onSelectDate={(date) =>
+                dispatch({ type: 'select_date', date })
+              }
+            />
           ) : (
-            <ComingLaterPanel
-              title="National TV"
-              requirement="Requires national TV broadcast scheduling."
+            <CalendarMonthList
+              month={visibleMonth}
+              onSelectDate={(date) =>
+                dispatch({ type: 'select_date', date })
+              }
             />
           )}
 
-          {(uiState.viewMode === 'calendar' ||
-            uiState.viewMode === 'list') &&
+          {uiState.broadcast === 'all' &&
+            (uiState.viewMode === 'calendar' ||
+              uiState.viewMode === 'list') &&
             calendarModel.undatedEntries.count > 0 && (
               <UndatedEntriesSection
                 entries={calendarModel.undatedEntries.entries}
@@ -210,20 +222,24 @@ function LeagueCalendarToolbar({
   monthHeading,
   viewMode,
   scope,
+  broadcast,
   canManagedScope,
   onPreviousMonth,
   onNextMonth,
   onViewMode,
+  onBroadcast,
   onScope,
 }: {
   readonly seasonLabel: string
   readonly monthHeading: string
   readonly viewMode: LeagueCalendarViewMode
   readonly scope: CalendarScope
+  readonly broadcast: LeagueCalendarBroadcast
   readonly canManagedScope: boolean
   readonly onPreviousMonth: (() => void) | null
   readonly onNextMonth: (() => void) | null
   readonly onViewMode: (viewMode: LeagueCalendarViewMode) => void
+  readonly onBroadcast: (broadcast: LeagueCalendarBroadcast) => void
   readonly onScope: (scope: CalendarScope) => void
 }) {
   return (
@@ -265,6 +281,13 @@ function LeagueCalendarToolbar({
           value={viewMode}
           options={VIEW_TABS}
           onChange={onViewMode}
+        />
+        <SegmentedTabs
+          legend="Broadcast"
+          name="league-calendar-broadcast"
+          value={broadcast}
+          options={BROADCAST_TABS}
+          onChange={onBroadcast}
         />
         {canManagedScope && (
           <SegmentedTabs
@@ -613,8 +636,23 @@ function formatEntryStatus(status: CalendarEntryStatus): string {
   }
 }
 
+function broadcastLabel(broadcast: LeagueCalendarBroadcast): string {
+  switch (broadcast) {
+    case 'all':
+      return 'All'
+    case 'non_televised':
+      return 'Non-televised'
+    case 'local':
+      return 'Local TV'
+    case 'national':
+      return 'National TV'
+    default:
+      return assertNever(broadcast)
+  }
+}
+
 function assertNever(value: never): never {
-  throw new RangeError(`Unsupported calendar entry status: ${String(value)}`)
+  throw new RangeError(`Unsupported calendar value: ${String(value)}`)
 }
 
 function CalendarLegend() {
