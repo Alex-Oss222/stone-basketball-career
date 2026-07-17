@@ -1,11 +1,11 @@
 import { readFileSync } from 'node:fs'
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import type { LeagueSnapshotV2 } from '../../src/persistence/leagueSnapshotV2'
-import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
+import type { LeagueSnapshot } from '../../src/persistence/leagueSnapshot'
+import { createLeagueSnapshotFixture } from '../persistence/leagueSnapshot.fixture'
 
 const persistedSnapshot = JSON.parse(
-  JSON.stringify(createLeagueSnapshotV2Fixture()),
-) as LeagueSnapshotV2
+  JSON.stringify(createLeagueSnapshotFixture()),
+) as LeagueSnapshot
 
 describe('read-only V2 season and schedule identity preservation', () => {
   afterEach(() => {
@@ -23,14 +23,11 @@ describe('read-only V2 season and schedule identity preservation', () => {
     )
     const storage = {
       read: vi.fn(async () => ({
-        v1: { present: false, value: undefined },
-        v2: {
-          present: true,
-          value: structuredClone({
-            leagueId: persistedSnapshot.league.id,
-            snapshot: persistedSnapshot,
-          }),
-        },
+        present: true,
+        value: structuredClone({
+          leagueId: persistedSnapshot.league.id,
+          snapshot: persistedSnapshot,
+        }),
       })),
       transact: vi.fn(() => {
         throw new Error('Read-only restoration must not write storage')
@@ -40,9 +37,9 @@ describe('read-only V2 season and schedule identity preservation', () => {
 
     const result = await repository.restore()
 
-    expect(result.kind).toBe('restored-v2')
-    if (result.kind !== 'restored-v2') {
-      throw new Error('Expected the persisted V2 fixture to restore')
+    expect(result.kind).toBe('restored')
+    if (result.kind !== 'restored') {
+      throw new Error('Expected the persisted fixture to restore')
     }
 
     const restored = result.snapshot
@@ -193,13 +190,13 @@ describe('read-only V2 season and schedule identity preservation', () => {
       /useMemo\([\s\S]*createLeaguePresentationBundle\(snapshot\)[\s\S]*\[snapshot\]/,
     )
     expect(pageSource).not.toMatch(
-      /LeagueSnapshotV2|createLeaguePresentationBundle|createCalendarEntries/,
+      /LeagueSnapshot|createLeaguePresentationBundle|createCalendarEntries/,
     )
     expect(pageSource).not.toMatch(
       /repository|IndexedDB|createSeasonFoundation|generateRegularSeasonSchedule|generateLeague|Math\.random|new Date/i,
     )
     expect(dialogSource).not.toMatch(
-      /repository|LeagueSnapshotV2|generate|Math\.random|new Date/i,
+      /repository|LeagueSnapshot|generate|Math\.random|new Date/i,
     )
     expect(dialogSource).toContain('dialog.showModal()')
     expect(dialogSource).toContain('onCancel={(event) =>')
@@ -209,7 +206,7 @@ describe('read-only V2 season and schedule identity preservation', () => {
   })
 })
 
-function projectGameDays(snapshot: LeagueSnapshotV2) {
+function projectGameDays(snapshot: LeagueSnapshot) {
   return snapshot.leagueSchedule.gameDays.map((gameDay) => ({
     id: gameDay.id,
     seasonId: gameDay.seasonId,
@@ -219,7 +216,7 @@ function projectGameDays(snapshot: LeagueSnapshotV2) {
   }))
 }
 
-function projectGames(snapshot: LeagueSnapshotV2) {
+function projectGames(snapshot: LeagueSnapshot) {
   return snapshot.leagueSchedule.games.map((game) => ({
     id: game.id,
     seasonId: game.seasonId,

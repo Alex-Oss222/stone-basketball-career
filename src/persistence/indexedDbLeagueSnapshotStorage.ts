@@ -8,9 +8,8 @@ import type {
   LeagueSnapshotRepository,
   LeagueSnapshotStorage,
   LeagueSnapshotStoragePhase,
+  LeagueSnapshotStorageSlot,
   LeagueSnapshotStorageTransactionPlan,
-  VersionedLeagueSnapshotStorageSlot,
-  VersionedLeagueSnapshotStorageState,
 } from './leagueSnapshotRepository'
 
 export {
@@ -23,18 +22,21 @@ export const LEAGUE_SNAPSHOT_DATABASE_NAME = 'stone-basketball-gm'
 export const LEAGUE_SNAPSHOT_DATABASE_VERSION = 1
 export const LEAGUE_SNAPSHOT_OBJECT_STORE_NAME = 'activeLeague'
 
-/** The shipped legacy V1 location. It must never be renamed during migration. */
-export const ACTIVE_LEAGUE_SNAPSHOT_V1_KEY = 'current'
-/** The complete authoritative V2 snapshot is stored as one value here. */
-export const ACTIVE_LEAGUE_SNAPSHOT_V2_KEY = 'current-v2'
-/** Backward-compatible name for the original V1 key. */
-export const ACTIVE_LEAGUE_SNAPSHOT_KEY = ACTIVE_LEAGUE_SNAPSHOT_V1_KEY
+/** The one active-league location. Current-version snapshots live here. */
+export const ACTIVE_LEAGUE_SNAPSHOT_KEY = 'current'
+/**
+ * The pre-collapse V2 location. Never written anymore, but still read so a
+ * record left by an older build surfaces as a version mismatch instead of
+ * silently looking like an empty save, and still cleared so it can never
+ * resurface after the player starts over.
+ */
+export const ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY = 'current-v2'
 
 type PrepareTransaction<Result> = (
-  state: VersionedLeagueSnapshotStorageState,
+  slot: LeagueSnapshotStorageSlot,
 ) => LeagueSnapshotStorageTransactionPlan<Result>
 
-/** Native IndexedDB storage for the versioned active-league records. */
+/** Native IndexedDB storage for the single active-league slot. */
 export class IndexedDbLeagueSnapshotStorage implements LeagueSnapshotStorage {
   private readonly indexedDb: IDBFactory | undefined
 
@@ -42,15 +44,15 @@ export class IndexedDbLeagueSnapshotStorage implements LeagueSnapshotStorage {
     this.indexedDb = indexedDb
   }
 
-  async read(): Promise<VersionedLeagueSnapshotStorageState> {
-    return this.withDatabase((database) => readVersionedRecords(database))
+  async read(): Promise<LeagueSnapshotStorageSlot> {
+    return this.withDatabase((database) => readActiveSlot(database))
   }
 
   async transact<Result>(
     prepare: PrepareTransaction<Result>,
   ): Promise<Result> {
     return this.withDatabase((database) =>
-      executeVersionedTransaction(database, prepare),
+      executeSlotTransaction(database, prepare),
     )
   }
 
@@ -157,14 +159,14 @@ function openDatabase(indexedDb: IDBFactory): Promise<IDBDatabase> {
   })
 }
 
-function readVersionedRecords(
+function readActiveSlot(
   database: IDBDatabase,
-): Promise<VersionedLeagueSnapshotStorageState> {
+): Promise<LeagueSnapshotStorageSlot> {
   return new Promise((resolve, reject) => {
     let transaction: IDBTransaction
     let store: IDBObjectStore
-    let v1 = absentStorageSlot()
-    let v2 = absentStorageSlot()
+    let active = absentStorageSlot()
+    let legacy = absentStorageSlot()
     let failure: unknown
 
     try {
@@ -185,7 +187,7 @@ function readVersionedRecords(
       reject(normalizeStorageError(failure ?? transaction.error, 'read'))
     }
     transaction.oncomplete = () => {
-      resolve({ v1, v2 })
+      resolve(mergeSlots(active, legacy))
     }
 
     const rememberReadFailure = (error: unknown): void => {
@@ -194,17 +196,17 @@ function readVersionedRecords(
     try {
       requestStorageSlot(
         store,
-        ACTIVE_LEAGUE_SNAPSHOT_V1_KEY,
+        ACTIVE_LEAGUE_SNAPSHOT_KEY,
         (slot) => {
-          v1 = slot
+          active = slot
         },
         rememberReadFailure,
       )
       requestStorageSlot(
         store,
-        ACTIVE_LEAGUE_SNAPSHOT_V2_KEY,
+        ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY,
         (slot) => {
-          v2 = slot
+          legacy = slot
         },
         rememberReadFailure,
       )
@@ -219,7 +221,7 @@ function readVersionedRecords(
   })
 }
 
-function executeVersionedTransaction<Result>(
+function executeSlotTransaction<Result>(
   database: IDBDatabase,
   prepare: PrepareTransaction<Result>,
 ): Promise<Result> {
@@ -232,8 +234,8 @@ function executeVersionedTransaction<Result>(
     let settled = false
     let verified = false
     let verifiedResult: Result
-    let initialV1 = absentStorageSlot()
-    let initialV2 = absentStorageSlot()
+    let initialActive = absentStorageSlot()
+    let initialLegacy = absentStorageSlot()
     let initialReadsRemaining = 2
     let plan: LeagueSnapshotStorageTransactionPlan<Result> | null = null
 
@@ -275,8 +277,8 @@ function executeVersionedTransaction<Result>(
     }
 
     const verifyReread = (
-      v1: VersionedLeagueSnapshotStorageSlot,
-      v2: VersionedLeagueSnapshotStorageSlot,
+      active: LeagueSnapshotStorageSlot,
+      legacy: LeagueSnapshotStorageSlot,
     ): void => {
       if (plan === null) {
         abort(
@@ -291,7 +293,7 @@ function executeVersionedTransaction<Result>(
       }
 
       try {
-        verifiedResult = plan.verify({ v1, v2 })
+        verifiedResult = plan.verify(mergeSlots(active, legacy))
         verified = true
         phase = 'commit'
       } catch (error) {
@@ -301,23 +303,23 @@ function executeVersionedTransaction<Result>(
 
     const scheduleReread = (): void => {
       phase = 'reread'
-      let v1 = absentStorageSlot()
-      let v2 = absentStorageSlot()
+      let active = absentStorageSlot()
+      let legacy = absentStorageSlot()
       let readsRemaining = 2
 
       const completeRead = (): void => {
         readsRemaining -= 1
         if (readsRemaining === 0) {
-          verifyReread(v1, v2)
+          verifyReread(active, legacy)
         }
       }
 
       try {
         requestStorageSlot(
           store,
-          ACTIVE_LEAGUE_SNAPSHOT_V1_KEY,
+          ACTIVE_LEAGUE_SNAPSHOT_KEY,
           (slot) => {
-            v1 = slot
+            active = slot
             completeRead()
           },
           (error) => {
@@ -326,9 +328,9 @@ function executeVersionedTransaction<Result>(
         )
         requestStorageSlot(
           store,
-          ACTIVE_LEAGUE_SNAPSHOT_V2_KEY,
+          ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY,
           (slot) => {
-            v2 = slot
+            legacy = slot
             completeRead()
           },
           (error) => {
@@ -348,63 +350,60 @@ function executeVersionedTransaction<Result>(
         if (deletesRemaining === 0) scheduleReread()
       }
 
-      let v1Delete: IDBRequest<undefined>
-      let v2Delete: IDBRequest<undefined>
+      let activeDelete: IDBRequest<undefined>
+      let legacyDelete: IDBRequest<undefined>
       try {
-        v1Delete = store.delete(ACTIVE_LEAGUE_SNAPSHOT_V1_KEY)
-        v2Delete = store.delete(ACTIVE_LEAGUE_SNAPSHOT_V2_KEY)
+        activeDelete = store.delete(ACTIVE_LEAGUE_SNAPSHOT_KEY)
+        legacyDelete = store.delete(ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY)
       } catch (error) {
         abort(error, 'clear')
         return
       }
 
-      v1Delete.onsuccess = completeDelete
-      v2Delete.onsuccess = completeDelete
-      v1Delete.onerror = () => {
-        handleRequestError(v1Delete, 'clear')
+      activeDelete.onsuccess = completeDelete
+      legacyDelete.onsuccess = completeDelete
+      activeDelete.onerror = () => {
+        handleRequestError(activeDelete, 'clear')
       }
-      v2Delete.onerror = () => {
-        handleRequestError(v2Delete, 'clear')
+      legacyDelete.onerror = () => {
+        handleRequestError(legacyDelete, 'clear')
       }
     }
 
-    const applyV2Write = (
+    const applyWrite = (
       mutation: Extract<
         LeagueSnapshotStorageTransactionPlan<Result>['mutation'],
-        { kind: 'write-v2' }
+        { kind: 'write' }
       >,
     ): void => {
-      phase = 'write-v2'
+      phase = 'write'
       let request: IDBRequest<IDBValidKey>
       try {
         request =
           mutation.mode === 'add'
-            ? store.add(mutation.record, ACTIVE_LEAGUE_SNAPSHOT_V2_KEY)
-            : store.put(mutation.record, ACTIVE_LEAGUE_SNAPSHOT_V2_KEY)
+            ? store.add(mutation.record, ACTIVE_LEAGUE_SNAPSHOT_KEY)
+            : store.put(mutation.record, ACTIVE_LEAGUE_SNAPSHOT_KEY)
       } catch (error) {
-        abort(error, 'write-v2')
+        abort(error, 'write')
         return
       }
 
       request.onsuccess = scheduleReread
       request.onerror = () => {
-        handleRequestError(request, 'write-v2')
+        handleRequestError(request, 'write')
       }
     }
 
     const prepareMutation = (): void => {
       try {
-        plan = prepare({
-          v1: initialV1,
-          v2: initialV2,
-        })
+        plan = prepare(mergeSlots(initialActive, initialLegacy))
       } catch (error) {
         abort(error, 'read', true)
         return
       }
 
-      if (plan.mutation.kind === 'write-v2') {
-        applyV2Write(plan.mutation)
+      if (plan.mutation.kind === 'write') {
+        applyWrite(plan.mutation)
       } else {
         applyClear()
       }
@@ -457,9 +456,9 @@ function executeVersionedTransaction<Result>(
     try {
       requestStorageSlot(
         store,
-        ACTIVE_LEAGUE_SNAPSHOT_V1_KEY,
+        ACTIVE_LEAGUE_SNAPSHOT_KEY,
         (slot) => {
-          initialV1 = slot
+          initialActive = slot
           completeInitialRead()
         },
         (error) => {
@@ -468,9 +467,9 @@ function executeVersionedTransaction<Result>(
       )
       requestStorageSlot(
         store,
-        ACTIVE_LEAGUE_SNAPSHOT_V2_KEY,
+        ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY,
         (slot) => {
-          initialV2 = slot
+          initialLegacy = slot
           completeInitialRead()
         },
         (error) => {
@@ -483,14 +482,22 @@ function executeVersionedTransaction<Result>(
   })
 }
 
-function absentStorageSlot(): VersionedLeagueSnapshotStorageSlot {
+/** The active key always wins; the legacy key only surfaces when it is alone. */
+function mergeSlots(
+  active: LeagueSnapshotStorageSlot,
+  legacy: LeagueSnapshotStorageSlot,
+): LeagueSnapshotStorageSlot {
+  return active.present ? active : legacy
+}
+
+function absentStorageSlot(): LeagueSnapshotStorageSlot {
   return { present: false, value: undefined }
 }
 
 function requestStorageSlot(
   store: IDBObjectStore,
   key: IDBValidKey,
-  onSuccess: (slot: VersionedLeagueSnapshotStorageSlot) => void,
+  onSuccess: (slot: LeagueSnapshotStorageSlot) => void,
   onError: (error: unknown) => void,
 ): void {
   const valueRequest = store.get(key)

@@ -31,16 +31,16 @@ import {
 } from '../../src/domain/localDate'
 import type { LocalDate } from '../../src/domain/localDate'
 import {
-  V2_FIXTURE_MANAGED_TEAM_ID,
+  FIXTURE_MANAGED_TEAM_ID,
   createLeagueSeasonDomainFixture,
-} from '../persistence/leagueSnapshotV2.fixture'
+} from '../persistence/leagueSnapshot.fixture'
 
 type EnrichedDayCell =
   LeagueYearCalendarModel['months'][number]['weeks'][number]['days'][number]
 
 function createFixtureInput(
   scope: CalendarScope = 'all_teams',
-  managedTeamId: TeamId | null = V2_FIXTURE_MANAGED_TEAM_ID,
+  managedTeamId: TeamId | null = FIXTURE_MANAGED_TEAM_ID,
 ) {
   const fixture = createLeagueSeasonDomainFixture(managedTeamId)
   const range = createLeagueYearDisplayRange(fixture.foundation.season)

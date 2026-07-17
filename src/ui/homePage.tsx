@@ -17,9 +17,9 @@ import {
 } from '../app/scheduleViewModel'
 import { formatTeamName } from '../domain/league'
 import type {
-  LeagueSnapshotV2,
-  LeagueSnapshotV2ScheduledGameDto,
-} from '../persistence/leagueSnapshotV2'
+  LeagueSnapshot,
+  LeagueSnapshotScheduledGameDto,
+} from '../persistence/leagueSnapshot'
 import { DashboardCard } from './dashboardShell'
 
 export interface HomeSaveState {
@@ -28,7 +28,7 @@ export interface HomeSaveState {
 }
 
 export interface HomeTodayContentProps {
-  readonly snapshot: LeagueSnapshotV2 | null
+  readonly snapshot: LeagueSnapshot | null
   readonly saveState: HomeSaveState | null
   /**
    * Navigates to another page. Card actions (Adjust Rotation, View Free
@@ -147,7 +147,7 @@ function HomeCommandBar({
   snapshot,
   header,
 }: {
-  readonly snapshot: LeagueSnapshotV2
+  readonly snapshot: LeagueSnapshot
   readonly header: ReturnType<typeof createHomeHeaderSummary>
 }) {
   return (
@@ -215,9 +215,9 @@ function NeedsAttentionCard({
   nextGame,
   onNavigate,
 }: {
-  readonly snapshot: LeagueSnapshotV2
+  readonly snapshot: LeagueSnapshot
   readonly managedTeamId: TeamId | null
-  readonly nextGame: LeagueSnapshotV2ScheduledGameDto | null
+  readonly nextGame: LeagueSnapshotScheduledGameDto | null
   readonly onNavigate?: (pageId: NavigationPageId) => void
 }) {
   const opponent =
@@ -278,9 +278,9 @@ function NextGameCard({
   managedTeamId,
   nextGame,
 }: {
-  readonly snapshot: LeagueSnapshotV2
+  readonly snapshot: LeagueSnapshot
   readonly managedTeamId: TeamId | null
-  readonly nextGame: LeagueSnapshotV2ScheduledGameDto | null
+  readonly nextGame: LeagueSnapshotScheduledGameDto | null
 }) {
   return (
     <DashboardCard title="Next Game">
@@ -313,8 +313,8 @@ function NextGameDetails({
   game,
   managedTeamId,
 }: {
-  readonly snapshot: LeagueSnapshotV2
-  readonly game: LeagueSnapshotV2ScheduledGameDto
+  readonly snapshot: LeagueSnapshot
+  readonly game: LeagueSnapshotScheduledGameDto
   readonly managedTeamId: TeamId
 }) {
   const opponent = resolveOpponent(snapshot.league, game, managedTeamId)
@@ -382,8 +382,9 @@ function SeasonPulseCard() {
 }
 
 /*
- * DEFERRED(§8): Adjust Rotation -> 'team-rotation-gameplan' lands on a real
- * rotation editor once RotationPlan exists (full editor UI is §18).
+ * DEFERRED(§8): Adjust Rotation -> 'team-rotation-gameplan' must land on the
+ * functional §8 rotation editor (validate, block invalid saves, persist; a
+ * visual mockup does not clear this tag).
  * DEFERRED(later): injuries, fatigue, and availability need player-health
  * systems not yet on the roadmap.
  */
@@ -499,9 +500,9 @@ function UpcomingGamesCard({
   games,
   onNavigate,
 }: {
-  readonly snapshot: LeagueSnapshotV2
+  readonly snapshot: LeagueSnapshot
   readonly managedTeamId: TeamId | null
-  readonly games: readonly LeagueSnapshotV2ScheduledGameDto[]
+  readonly games: readonly LeagueSnapshotScheduledGameDto[]
   readonly onNavigate?: (pageId: NavigationPageId) => void
 }) {
   return (
@@ -556,7 +557,9 @@ function UpcomingGamesCard({
  * Two sections, one card — division and conference standings, per the spec.
  *
  * DEFERRED(§11): standings values fill from the standings fold (8-team league
- * standings can show here before divisions exist).
+ * standings can show here before divisions exist). Alex dislikes how this
+ * card sits in the layout while empty — revisit its placement/format when the
+ * real data lands.
  * DEFERRED(§15): the division/conference split needs the 30-team alignment.
  */
 function StandingsCard() {

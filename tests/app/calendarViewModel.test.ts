@@ -32,12 +32,12 @@ import { parseSeasonCalendar } from '../../src/domain/seasonCalendar'
 import type { SeasonCalendar } from '../../src/domain/seasonCalendar'
 import { parseYearMonth } from '../../src/domain/yearMonth'
 import {
-  V2_FIXTURE_MANAGED_TEAM_ID,
+  FIXTURE_MANAGED_TEAM_ID,
   createLeagueSeasonDomainFixture,
-} from '../persistence/leagueSnapshotV2.fixture'
+} from '../persistence/leagueSnapshot.fixture'
 
 function createInput(
-  managedTeamId: TeamId | null = V2_FIXTURE_MANAGED_TEAM_ID,
+  managedTeamId: TeamId | null = FIXTURE_MANAGED_TEAM_ID,
 ): CreateCalendarEntriesInput {
   const fixture = createLeagueSeasonDomainFixture(managedTeamId)
   return {

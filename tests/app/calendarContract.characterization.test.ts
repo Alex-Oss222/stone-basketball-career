@@ -7,17 +7,17 @@ import {
 import { DEFAULT_PAGE_ID } from '../../src/app/navigation'
 import type { NavigationPageId } from '../../src/app/navigation'
 import {
-  parseLeagueSnapshotV2,
-} from '../../src/persistence/leagueSnapshotV2'
+  parseLeagueSnapshot,
+} from '../../src/persistence/leagueSnapshot'
 import type {
-  LeagueSnapshotV2,
-  LeagueSnapshotV2ScheduledGameDto,
-} from '../../src/persistence/leagueSnapshotV2'
-import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
+  LeagueSnapshot,
+  LeagueSnapshotScheduledGameDto,
+} from '../../src/persistence/leagueSnapshot'
+import { createLeagueSnapshotFixture } from '../persistence/leagueSnapshot.fixture'
 
 describe('M2.1 calendar contract characterization', () => {
   it('preserves complete team-game identities and allows inspection independently of the managed team', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const before = structuredClone(snapshot)
     const inspectedTeamId = snapshot.league.teams[1].id
 
@@ -52,7 +52,7 @@ describe('M2.1 calendar contract characterization', () => {
   })
 
   it('projects every stored game into one GameDay slate without changing identity or date history', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const before = structuredClone(snapshot)
     const groups = groupGamesByGameDay(snapshot.leagueSchedule)
     const groupedGames = groups.flatMap((group) => group.games)
@@ -79,7 +79,7 @@ describe('M2.1 calendar contract characterization', () => {
       expect(storedGame).toBeDefined()
       expect(game).toBe(storedGame)
       expect(projectGameLifecycle(game)).toEqual(
-        projectGameLifecycle(storedGame as LeagueSnapshotV2ScheduledGameDto),
+        projectGameLifecycle(storedGame as LeagueSnapshotScheduledGameDto),
       )
     }
 
@@ -92,7 +92,7 @@ describe('M2.1 calendar contract characterization', () => {
   })
 
   it('keeps Calendar preferences and navigation outside the serialized V2 league truth', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const serialized = JSON.stringify(snapshot)
     const identityBefore = projectPersistedIdentity(snapshot)
     const revisionBefore = snapshot.revision
@@ -115,7 +115,7 @@ describe('M2.1 calendar contract characterization', () => {
       snapshot.managedTeamId,
     )
 
-    const restored = parseLeagueSnapshotV2(JSON.parse(serialized))
+    const restored = parseLeagueSnapshot(JSON.parse(serialized))
     for (const preferenceKey of [
       'activePageId',
       'calendarView',
@@ -135,14 +135,14 @@ describe('M2.1 calendar contract characterization', () => {
   })
 })
 
-function projectGameReference(game: LeagueSnapshotV2ScheduledGameDto) {
+function projectGameReference(game: LeagueSnapshotScheduledGameDto) {
   return {
     id: game.id,
     gameDayId: game.gameDayId,
   }
 }
 
-function projectGameLifecycle(game: LeagueSnapshotV2ScheduledGameDto) {
+function projectGameLifecycle(game: LeagueSnapshotScheduledGameDto) {
   return {
     id: game.id,
     gameDayId: game.gameDayId,
@@ -152,7 +152,7 @@ function projectGameLifecycle(game: LeagueSnapshotV2ScheduledGameDto) {
   }
 }
 
-function projectPersistedIdentity(snapshot: LeagueSnapshotV2) {
+function projectPersistedIdentity(snapshot: LeagueSnapshot) {
   return {
     seasonId: snapshot.season.id,
     seasonScheduleId: snapshot.season.scheduleId,

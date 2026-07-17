@@ -2,7 +2,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import { parseLocalDate } from '../../src/domain/localDate'
 import { HomeTodayContent } from '../../src/ui/homePage'
-import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
+import { createLeagueSnapshotFixture } from '../persistence/leagueSnapshot.fixture'
 
 describe('Home rendering', () => {
   it('describes the empty local state without a false saved status', () => {
@@ -15,7 +15,7 @@ describe('Home rendering', () => {
   })
 
   it('renders the command bar and the full card grid', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const markup = renderToStaticMarkup(
       <HomeTodayContent
         snapshot={snapshot}
@@ -41,7 +41,7 @@ describe('Home rendering', () => {
   })
 
   it('shows the caught-up state naming the real next event', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const markup = renderToStaticMarkup(
       <HomeTodayContent snapshot={snapshot} saveState={null} />,
     )
@@ -51,7 +51,7 @@ describe('Home rendering', () => {
   })
 
   it('splits Standings into division and conference sections', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const markup = renderToStaticMarkup(
       <HomeTodayContent snapshot={snapshot} saveState={null} />,
     )
@@ -63,7 +63,7 @@ describe('Home rendering', () => {
   })
 
   it('compares real average ratings in Next Game and defers results-era context', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const markup = renderToStaticMarkup(
       <HomeTodayContent snapshot={snapshot} saveState={null} />,
     )
@@ -75,7 +75,7 @@ describe('Home rendering', () => {
   })
 
   it('fabricates no score or record values anywhere', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const markup = renderToStaticMarkup(
       <HomeTodayContent
         snapshot={snapshot}
@@ -94,7 +94,7 @@ describe('Home rendering', () => {
   })
 
   it('keeps simulation-era actions visibly disabled: Continue, Sim, Watch', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const markup = renderToStaticMarkup(
       <HomeTodayContent snapshot={snapshot} saveState={null} />,
     )
@@ -110,7 +110,7 @@ describe('Home rendering', () => {
   })
 
   it('renders live navigation entry points only when onNavigate is provided', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const withNavigate = renderToStaticMarkup(
       <HomeTodayContent
         snapshot={snapshot}
@@ -135,7 +135,7 @@ describe('Home rendering', () => {
   })
 
   it('renders the dev preview entry only when a handler is provided', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const withHandler = renderToStaticMarkup(
       <HomeTodayContent
         snapshot={snapshot}
@@ -152,7 +152,7 @@ describe('Home rendering', () => {
   })
 
   it('shows honest empty schedule states past the end of the season', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const afterSchedule = {
       ...snapshot,
       season: {

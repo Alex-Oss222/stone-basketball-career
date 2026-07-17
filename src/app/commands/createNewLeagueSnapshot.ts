@@ -5,25 +5,25 @@ import {
 import type { SeasonFoundationConfigurationInput } from './createSeasonFoundation'
 import { generateLeague } from '../../generation/generateLeague'
 import {
-  parseLeagueSnapshotV2,
-  serializeLeagueSnapshotV2,
-} from '../../persistence/leagueSnapshotV2'
-import type { LeagueSnapshotV2 } from '../../persistence/leagueSnapshotV2'
+  parseLeagueSnapshot,
+  serializeLeagueSnapshot,
+} from '../../persistence/leagueSnapshot'
+import type { LeagueSnapshot } from '../../persistence/leagueSnapshot'
 import { normalizeSeed } from '../../random/seed'
 
-export interface CreateNewLeagueSnapshotV2Input
+export interface CreateNewLeagueSnapshotInput
   extends SeasonFoundationConfigurationInput {
   readonly rootSeed: string
 }
 
 /**
- * Creates one complete initial V2 application snapshot without performing I/O.
+ * Creates one complete initial application snapshot without performing I/O.
  * The visible league seed uses the existing trusted creation normalization,
  * while season configuration follows the coordinator's stricter contract.
  */
-export function createNewLeagueSnapshotV2(
-  input: CreateNewLeagueSnapshotV2Input,
-): LeagueSnapshotV2 {
+export function createNewLeagueSnapshot(
+  input: CreateNewLeagueSnapshotInput,
+): LeagueSnapshot {
   const rootSeed = normalizeSeed(input.rootSeed)
   const creationInputs = parseSeasonFoundationConfiguration(input)
   const league = generateLeague(rootSeed)
@@ -32,8 +32,8 @@ export function createNewLeagueSnapshotV2(
     ...creationInputs,
   })
 
-  return parseLeagueSnapshotV2(
-    serializeLeagueSnapshotV2({
+  return parseLeagueSnapshot(
+    serializeLeagueSnapshot({
       rootSeed,
       managedTeamId: null,
       league,

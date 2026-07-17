@@ -1,7 +1,7 @@
 import type { LeaguePresentationBundle } from '../app/leagueSnapshotDomainAdapter'
 import type { TeamScheduleSiteFilter } from '../app/teamScheduleViewModel'
 import type { GameId, TeamId } from '../domain/ids'
-import type { LeagueSnapshotV2 } from '../persistence/leagueSnapshotV2'
+import type { LeagueSnapshot } from '../persistence/leagueSnapshot'
 import { DashboardCard } from './dashboardShell'
 import { LeagueCalendarPage } from './leagueCalendarPage'
 import type { LeagueCalendarViewMode } from './leagueCalendarUiState'
@@ -14,7 +14,7 @@ import type {
 export type { TeamScheduleSiteFilter } from '../app/teamScheduleViewModel'
 
 export interface SchedulePageProps {
-  readonly snapshot: LeagueSnapshotV2 | null
+  readonly snapshot: LeagueSnapshot | null
 }
 
 export interface TeamScheduleContentProps {

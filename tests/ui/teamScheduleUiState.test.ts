@@ -9,11 +9,11 @@ import type {
   TeamScheduleUiAction,
   TeamScheduleUiState,
 } from '../../src/ui/teamScheduleUiState'
-import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
+import { createLeagueSnapshotFixture } from '../persistence/leagueSnapshot.fixture'
 
 describe('Team Schedule transient UI state initialization', () => {
   it('starts with the managed team when one exists', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
 
     const state = createTeamScheduleUiState({
       league: snapshot.league,
@@ -34,7 +34,7 @@ describe('Team Schedule transient UI state initialization', () => {
   })
 
   it('starts with the first canonical league team without a managed team', () => {
-    const snapshot = createLeagueSnapshotV2Fixture(null)
+    const snapshot = createLeagueSnapshotFixture(null)
 
     const state = createTeamScheduleUiState({
       league: snapshot.league,
@@ -47,7 +47,7 @@ describe('Team Schedule transient UI state initialization', () => {
   })
 
   it('accepts explicit valid initial presentation preferences', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const inspectedTeamId = snapshot.league.teams[3].id
     const selectedGameId = snapshot.leagueSchedule.games[4].id
 
@@ -72,7 +72,7 @@ describe('Team Schedule transient UI state initialization', () => {
   })
 
   it('rejects empty leagues and foreign inspected or managed teams', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const emptyLeague = {
       ...snapshot.league,
       teams: [],
@@ -103,7 +103,7 @@ describe('Team Schedule transient UI state initialization', () => {
 
 describe('Team Schedule transient UI state reducer', () => {
   it('changes inspected team while resetting filter and selected game', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const initial = createTeamScheduleUiState({
       league: snapshot.league,
       managedTeamId: snapshot.managedTeamId,
@@ -133,7 +133,7 @@ describe('Team Schedule transient UI state reducer', () => {
   })
 
   it('sets All/Home/Away without changing inspected or selected context', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const initial = createTeamScheduleUiState({
       league: snapshot.league,
       managedTeamId: snapshot.managedTeamId,
@@ -151,7 +151,7 @@ describe('Team Schedule transient UI state reducer', () => {
   })
 
   it('opens and closes one canonical game without changing other UI state', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const initial = createTeamScheduleUiState({
       league: snapshot.league,
       managedTeamId: snapshot.managedTeamId,
@@ -172,7 +172,7 @@ describe('Team Schedule transient UI state reducer', () => {
   })
 
   it('rejects unsupported filter values, malformed game IDs, and unknown actions', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const initial = createTeamScheduleUiState({
       league: snapshot.league,
       managedTeamId: snapshot.managedTeamId,
@@ -199,7 +199,7 @@ describe('Team Schedule transient UI state reducer', () => {
   })
 
   it('never mutates or persists transient inspected, filter, and selected state', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const serializedBefore = JSON.stringify(snapshot)
     const revisionBefore = snapshot.revision
     const managedTeamBefore = snapshot.managedTeamId

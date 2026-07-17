@@ -393,7 +393,7 @@ export function assertValidSeasonFoundation(
 
 /**
  * Parses the coordinator's authoritative primitive configuration without
- * creating a league, schedule, or season. Persistence migration reuses this
+ * creating a league, schedule, or season. Snapshot restoration reuses this
  * boundary rather than restating its normalization and range rules.
  */
 export function parseSeasonFoundationConfiguration(

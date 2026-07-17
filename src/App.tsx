@@ -1,6 +1,6 @@
 import { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react'
 import type { FormEvent } from 'react'
-import { createNewLeagueSnapshotV2 } from './app/commands/createNewLeagueSnapshotV2'
+import { createNewLeagueSnapshot } from './app/commands/createNewLeagueSnapshot'
 import {
   parseSeasonFoundationConfiguration,
 } from './app/commands/createSeasonFoundation'
@@ -27,7 +27,7 @@ import {
 import type {
   LeaguePresentationBundle,
 } from './app/leagueSnapshotDomainAdapter'
-import type { LeagueId, PlayerId } from './domain/ids'
+import type { PlayerId } from './domain/ids'
 import type { Team } from './domain/league'
 import { parseLocalDate } from './domain/localDate'
 import {
@@ -35,11 +35,8 @@ import {
   LeagueSnapshotQuotaError,
   createIndexedDbLeagueSnapshotRepository,
 } from './persistence/indexedDbLeagueSnapshotStorage'
-import {
-  LeagueSnapshotRepositoryMigrationError,
-} from './persistence/leagueSnapshotRepository'
 import type { LeagueSnapshotRestorationResult } from './persistence/leagueSnapshotRepository'
-import type { LeagueSnapshotV2 } from './persistence/leagueSnapshotV2'
+import type { LeagueSnapshot } from './persistence/leagueSnapshot'
 import { normalizeSeed } from './random/seed'
 import {
   LeaguePlayersContent,
@@ -60,10 +57,10 @@ import {
 } from './ui/schedulePages'
 import {
   LeagueCreationScreen,
-  MigrationRequiredScreen,
   RestoreLoadingScreen,
   RestoreRecoveryScreen,
   TeamSelectionScreen,
+  VersionMismatchScreen,
 } from './ui/setupPages'
 import type {
   SeasonSetupFormField,
@@ -95,12 +92,11 @@ let initialRestorePromise: Promise<LeagueSnapshotRestorationResult> | null = nul
 type BootState =
   | 'restoring'
   | 'ready'
-  | 'migration-required'
+  | 'version-mismatch'
   | 'recovery-required'
 type PendingOperation =
   | 'idle'
   | 'creating'
-  | 'migrating'
   | 'selecting-team'
   | 'clearing'
   | 'purging-corrupt-storage'
@@ -119,9 +115,9 @@ function App() {
   const [seasonValues, setSeasonValues] = useState<SeasonSetupFormValues>(() =>
     createDefaultSeasonValues(),
   )
-  const [snapshot, setSnapshot] = useState<LeagueSnapshotV2 | null>(null)
-  const [migrationLeagueId, setMigrationLeagueId] =
-    useState<LeagueId | null>(null)
+  const [snapshot, setSnapshot] = useState<LeagueSnapshot | null>(null)
+  const [mismatchStoredVersion, setMismatchStoredVersion] =
+    useState<number | null>(null)
   const [selectedPlayerId, setSelectedPlayerId] =
     useState<PlayerId | null>(null)
   const [seedError, setSeedError] = useState<string | null>(null)
@@ -170,7 +166,7 @@ function App() {
 
   const resetToLeagueCreation = useCallback((): void => {
     setSnapshot(null)
-    setMigrationLeagueId(null)
+    setMismatchStoredVersion(null)
     setSeed(DEFAULT_LEAGUE_SEED)
     setSeasonValues(createDefaultSeasonValues())
     setSelectedPlayerId(null)
@@ -183,7 +179,7 @@ function App() {
     setBootState('ready')
   }, [])
 
-  const installSnapshot = useCallback((next: LeagueSnapshotV2): void => {
+  const installSnapshot = useCallback((next: LeagueSnapshot): void => {
     const restoredTeam =
       next.managedTeamId === null
         ? null
@@ -192,7 +188,7 @@ function App() {
           ) ?? null
 
     setSnapshot(next)
-    setMigrationLeagueId(null)
+    setMismatchStoredVersion(null)
     setSeed(next.rootSeed)
     setSeasonValues(seasonValuesFromSnapshot(next))
     setSelectedPlayerId(
@@ -230,20 +226,19 @@ function App() {
         case 'empty':
           resetToLeagueCreation()
           return
-        case 'restored-v2':
+        case 'restored':
           installSnapshot(result.snapshot)
           return
-        case 'migration-required':
+        case 'version-mismatch':
           setSnapshot(null)
-          setMigrationLeagueId(result.leagueId)
+          setMismatchStoredVersion(result.storedVersion)
           setSelectedPlayerId(null)
           setSetupView(null)
-          setSeasonError(null)
-          setBootState('migration-required')
+          setBootState('version-mismatch')
           return
         case 'recovery-required':
           setSnapshot(null)
-          setMigrationLeagueId(null)
+          setMismatchStoredVersion(null)
           setSelectedPlayerId(null)
           setSetupView(null)
           setRecoveryKind(
@@ -292,9 +287,9 @@ function App() {
       return
     }
 
-    let nextSnapshot: LeagueSnapshotV2
+    let nextSnapshot: LeagueSnapshot
     try {
-      nextSnapshot = createNewLeagueSnapshotV2({
+      nextSnapshot = createNewLeagueSnapshot({
         rootSeed,
         ...creationInputs,
       })
@@ -312,41 +307,10 @@ function App() {
     setPersistenceError(null)
 
     try {
-      const stored = await leagueSnapshotRepository.createV2(nextSnapshot)
+      const stored = await leagueSnapshotRepository.create(nextSnapshot)
       installSnapshot(stored)
     } catch (error) {
       setPersistenceError(storageWriteMessage(error, 'created'))
-    } finally {
-      setPendingOperation('idle')
-    }
-  }
-
-  async function handleMigrate(
-    event: FormEvent<HTMLFormElement>,
-  ): Promise<void> {
-    event.preventDefault()
-    if (pendingOperation !== 'idle' || migrationLeagueId === null) return
-
-    let creationInputs: SeasonFoundationConfiguration
-    try {
-      creationInputs = parseSeasonSetupValues(seasonValues)
-      setSeasonError(null)
-    } catch (error) {
-      setSeasonError(readableError(error, 'The season setup is invalid.'))
-      return
-    }
-
-    setPendingOperation('migrating')
-    setPersistenceError(null)
-
-    try {
-      const migrated = await leagueSnapshotRepository.migrateV1ToV2({
-        expectedV1LeagueId: migrationLeagueId,
-        seasonCreationInputs: creationInputs,
-      })
-      installSnapshot(migrated)
-    } catch (error) {
-      setPersistenceError(migrationFailureMessage(error))
     } finally {
       setPendingOperation('idle')
     }
@@ -456,7 +420,7 @@ function App() {
     if (snapshot === null || pendingOperation !== 'idle') return
 
     const confirmed = window.confirm(
-      'Start a new league? Both active local snapshot versions will be removed.',
+      'Start a new league? The active local league will be removed.',
     )
     if (!confirmed) return
 
@@ -465,7 +429,7 @@ function App() {
 
     try {
       await leagueSnapshotRepository.clear({
-        kind: 'v2',
+        kind: 'snapshot',
         expectedLeagueId: snapshot.league.id,
         expectedRevision: snapshot.revision,
       })
@@ -477,21 +441,16 @@ function App() {
     }
   }
 
-  async function handleDiscardV1(): Promise<void> {
-    if (migrationLeagueId === null || pendingOperation !== 'idle') return
-
-    const confirmed = window.confirm(
-      'Discard the version 1 saved league and start a new league? This cannot be undone.',
-    )
-    if (!confirmed) return
+  async function handleStartOverFromVersionMismatch(): Promise<void> {
+    if (mismatchStoredVersion === null || pendingOperation !== 'idle') return
 
     setPendingOperation('clearing')
     setPersistenceError(null)
 
     try {
       await leagueSnapshotRepository.clear({
-        kind: 'v1',
-        expectedLeagueId: migrationLeagueId,
+        kind: 'version-mismatch',
+        expectedStoredVersion: mismatchStoredVersion,
       })
       resetToLeagueCreation()
     } catch (error) {
@@ -544,17 +503,12 @@ function App() {
     return <RestoreLoadingScreen />
   }
 
-  if (bootState === 'migration-required') {
+  if (bootState === 'version-mismatch') {
     return (
-      <MigrationRequiredScreen
-        seasonValues={seasonValues}
-        seasonError={seasonError}
+      <VersionMismatchScreen
         actionError={persistenceError}
         isBusy={isBusy}
-        onSeasonValueChange={handleSeasonValueChange}
-        onMigrate={(event) => void handleMigrate(event)}
-        onTryAgain={() => void restoreFromStorage(false)}
-        onDiscard={() => void handleDiscardV1()}
+        onStartNewLeague={() => void handleStartOverFromVersionMismatch()}
       />
     )
   }
@@ -671,7 +625,7 @@ function App() {
 
 interface AvailableWorkspacePageProps {
   readonly pageId: AvailableNavigationPageId
-  readonly snapshot: LeagueSnapshotV2 | null
+  readonly snapshot: LeagueSnapshot | null
   readonly controlledTeam: Team | null
   readonly selectedPlayerId: PlayerId | null
   readonly isBusy: boolean
@@ -724,7 +678,7 @@ function AvailableWorkspacePage({
 
 function renderAvailablePage(
   pageId: AvailableNavigationPageId,
-  snapshot: LeagueSnapshotV2 | null,
+  snapshot: LeagueSnapshot | null,
   presentation: LeaguePresentationBundle | null,
   controlledTeam: Team | null,
   selectedPlayerId: PlayerId | null,
@@ -787,7 +741,7 @@ function createDefaultSeasonValues(): SeasonSetupFormValues {
 }
 
 function seasonValuesFromSnapshot(
-  snapshot: LeagueSnapshotV2,
+  snapshot: LeagueSnapshot,
 ): SeasonSetupFormValues {
   return {
     startingYear: String(snapshot.creationMetadata.startingYear),
@@ -830,13 +784,6 @@ function parseCanonicalFormInteger(
     throw new RangeError(`${label} must be a safe integer`)
   }
   return parsed
-}
-
-function migrationFailureMessage(error: unknown): string {
-  if (error instanceof LeagueSnapshotRepositoryMigrationError) {
-    return `Migration stopped during ${error.stage.replaceAll('-', ' ')}. The version 1 save was kept unchanged. ${error.message}`
-  }
-  return storageWriteMessage(error, 'migrated')
 }
 
 function readableError(error: unknown, fallback: string): string {

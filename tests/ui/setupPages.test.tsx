@@ -2,8 +2,8 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import {
   LeagueCreationScreen,
-  MigrationRequiredScreen,
   RestoreRecoveryScreen,
+  VersionMismatchScreen,
 } from '../../src/ui/setupPages'
 import type { SeasonSetupFormValues } from '../../src/ui/setupPages'
 
@@ -67,36 +67,42 @@ describe('LeagueCreationScreen season setup', () => {
   })
 })
 
-describe('MigrationRequiredScreen', () => {
-  it('requests explicit inputs while promising to preserve V1', () => {
+describe('VersionMismatchScreen', () => {
+  it('offers only an explicit start-new-league action for an older-build save', () => {
     const markup = renderToStaticMarkup(
-      <MigrationRequiredScreen
-        seasonValues={SEASON_VALUES}
-        seasonError={null}
+      <VersionMismatchScreen
         actionError={null}
         isBusy={false}
-        onSeasonValueChange={() => undefined}
-        onMigrate={() => undefined}
-        onTryAgain={() => undefined}
-        onDiscard={() => undefined}
+        onStartNewLeague={() => undefined}
       />,
     )
 
-    expect(markup).toContain('Complete the season foundation')
-    expect(markup).toContain('valid version 1 league save')
-    expect(markup).toContain('No year, date, spacing, or schedule seed')
-    expect(markup).toContain('value="2026"')
-    expect(markup).toContain('value="2026-10-06"')
-    expect(markup).toContain('value="3"')
-    expect(markup).toContain('value="visible-schedule-seed"')
-    expect(markup).toContain('Migrate saved league')
-    expect(markup).toContain('Try reading save again')
+    expect(markup).toContain('This league can')
     expect(markup).toContain(
-      'Discard version 1 save and start new league',
+      'This league was saved by an older build and can',
     )
-    expect(markup).toContain('does not overwrite or delete the version 1 save')
+    expect(markup).toContain('Start a new league')
+    expect(markup).toContain('danger-button')
+    expect(markup).toContain('permanently removes the incompatible saved')
+    expect(markup).not.toContain('Migrate')
     expect(markup).not.toContain('leagueId')
     expect(markup).not.toContain('managedTeamId')
+  })
+
+  it('surfaces an action error and does not expose the corrupt-storage purge', () => {
+    const markup = renderToStaticMarkup(
+      <VersionMismatchScreen
+        actionError="The league could not be removed in local browser storage. The last confirmed league was kept."
+        isBusy={false}
+        onStartNewLeague={() => undefined}
+      />,
+    )
+
+    expect(markup).toContain('role="alert"')
+    expect(markup).toContain(
+      'The league could not be removed in local browser storage. The last confirmed league was kept.',
+    )
+    expect(markup).not.toContain('Permanently delete local league save')
   })
 })
 
@@ -117,7 +123,7 @@ describe('RestoreRecoveryScreen', () => {
     expect(markup).toContain('Try again')
     expect(markup).toContain('Permanently delete local league save')
     expect(markup).toContain('danger-button')
-    expect(markup).toContain('version 1 and version 2')
+    expect(markup).toContain('the active local league record')
     expect(markup).toContain('cannot be undone')
     expect(markup).toContain('never falls back to an older save')
     expect(markup).toContain(
@@ -140,23 +146,18 @@ describe('RestoreRecoveryScreen', () => {
         onMainMenu={() => undefined}
       />,
     )
-    const migrationMarkup = renderToStaticMarkup(
-      <MigrationRequiredScreen
-        seasonValues={SEASON_VALUES}
-        seasonError={null}
+    const mismatchMarkup = renderToStaticMarkup(
+      <VersionMismatchScreen
         actionError={null}
         isBusy={false}
-        onSeasonValueChange={() => undefined}
-        onMigrate={() => undefined}
-        onTryAgain={() => undefined}
-        onDiscard={() => undefined}
+        onStartNewLeague={() => undefined}
       />,
     )
 
     expect(creationMarkup).not.toContain(
       'Permanently delete local league save',
     )
-    expect(migrationMarkup).not.toContain(
+    expect(mismatchMarkup).not.toContain(
       'Permanently delete local league save',
     )
   })

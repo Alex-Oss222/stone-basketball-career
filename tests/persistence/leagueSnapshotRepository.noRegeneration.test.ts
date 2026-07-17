@@ -1,18 +1,17 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { createLeagueSnapshotV2Fixture } from './leagueSnapshotV2.fixture'
+import { createLeagueSnapshotFixture } from './leagueSnapshot.fixture'
 
 const snapshotFixture = JSON.parse(
-  JSON.stringify(createLeagueSnapshotV2Fixture()),
-) as ReturnType<typeof createLeagueSnapshotV2Fixture>
+  JSON.stringify(createLeagueSnapshotFixture()),
+) as ReturnType<typeof createLeagueSnapshotFixture>
 const storedRecordFixture = {
   leagueId: snapshotFixture.league.id,
   snapshot: snapshotFixture,
 }
 
-describe('LeagueSnapshot V2 repository restoration architecture', () => {
+describe('LeagueSnapshot repository restoration architecture', () => {
   afterEach(() => {
     vi.doUnmock('../../src/app/commands/createSeasonFoundation')
-    vi.doUnmock('../../src/persistence/migrations/migrateLeagueSnapshotV1ToV2')
     vi.doUnmock('../../src/generation/generateSchedule')
     vi.doUnmock('../../src/generation/generateLeague')
     vi.doUnmock('../../src/domain/schedule')
@@ -20,12 +19,9 @@ describe('LeagueSnapshot V2 repository restoration architecture', () => {
     vi.resetModules()
   })
 
-  it('restores authoritative V2 storage without migration or regeneration', async () => {
+  it('restores stored snapshot storage without regeneration', async () => {
     const createSeasonFoundation = throwingSpy(
       'createSeasonFoundation must not run during repository restoration',
-    )
-    const migrateLeagueSnapshotV1ToV2 = throwingSpy(
-      'V1 migration must not run during V2 repository restoration',
     )
     const generateSchedule = throwingSpy(
       'schedule generation must not run during repository restoration',
@@ -47,15 +43,6 @@ describe('LeagueSnapshot V2 repository restoration architecture', () => {
       >('../../src/app/commands/createSeasonFoundation')
       return { ...actual, createSeasonFoundation }
     })
-    vi.doMock(
-      '../../src/persistence/migrations/migrateLeagueSnapshotV1ToV2',
-      async () => {
-        const actual = await vi.importActual<
-          typeof import('../../src/persistence/migrations/migrateLeagueSnapshotV1ToV2')
-        >('../../src/persistence/migrations/migrateLeagueSnapshotV1ToV2')
-        return { ...actual, migrateLeagueSnapshotV1ToV2 }
-      },
-    )
     vi.doMock('../../src/generation/generateSchedule', async () => {
       const actual = await vi.importActual<
         typeof import('../../src/generation/generateSchedule')
@@ -90,11 +77,8 @@ describe('LeagueSnapshot V2 repository restoration architecture', () => {
     )
     const storage = {
       read: vi.fn(async () => ({
-        v1: { present: false, value: undefined },
-        v2: {
-          present: true,
-          value: structuredClone(storedRecordFixture),
-        },
+        present: true,
+        value: structuredClone(storedRecordFixture),
       })),
       transact: vi.fn(() => {
         throw new Error('A read-only restore must not open a write transaction')
@@ -105,13 +89,12 @@ describe('LeagueSnapshot V2 repository restoration architecture', () => {
     const restored = await repository.restore()
 
     expect(restored).toEqual({
-      kind: 'restored-v2',
+      kind: 'restored',
       snapshot: snapshotFixture,
     })
     expect(storage.read).toHaveBeenCalledOnce()
     expect(storage.transact).not.toHaveBeenCalled()
     expect(createSeasonFoundation).not.toHaveBeenCalled()
-    expect(migrateLeagueSnapshotV1ToV2).not.toHaveBeenCalled()
     expect(generateSchedule).not.toHaveBeenCalled()
     expect(generateLeague).not.toHaveBeenCalled()
     expect(buildOpponentRequirementMatrix).not.toHaveBeenCalled()

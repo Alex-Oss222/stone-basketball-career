@@ -39,9 +39,9 @@ import type {
 } from '../../src/domain/schedule'
 import type { YearMonth } from '../../src/domain/yearMonth'
 import {
-  V2_FIXTURE_MANAGED_TEAM_ID,
+  FIXTURE_MANAGED_TEAM_ID,
   createLeagueSeasonDomainFixture,
-} from '../persistence/leagueSnapshotV2.fixture'
+} from '../persistence/leagueSnapshot.fixture'
 
 interface TeamScheduleTestContext {
   readonly league: League
@@ -57,7 +57,7 @@ const GWN_SEQUENCE_VECTOR = [
 ] as const
 
 function createContext(
-  managedTeamId: TeamId | null = V2_FIXTURE_MANAGED_TEAM_ID,
+  managedTeamId: TeamId | null = FIXTURE_MANAGED_TEAM_ID,
 ): TeamScheduleTestContext {
   const fixture = createLeagueSeasonDomainFixture(managedTeamId)
   return createContextFromSchedule(
@@ -172,7 +172,7 @@ function replaceScheduleGames(
 
 function createPatchedContext(
   patches: ReadonlyMap<GameId, Partial<ScheduledGame>>,
-  managedTeamId: TeamId | null = V2_FIXTURE_MANAGED_TEAM_ID,
+  managedTeamId: TeamId | null = FIXTURE_MANAGED_TEAM_ID,
 ): TeamScheduleTestContext {
   const fixture = createLeagueSeasonDomainFixture(managedTeamId)
   const schedule = replaceScheduleGames(
@@ -210,7 +210,7 @@ describe('Team Schedule authoritative projection', () => {
       inspectedTeamId,
       inspectedTeamName: 'Glasswater Navigators',
       inspectedTeamAbbreviation: 'GWN',
-      managedTeamId: V2_FIXTURE_MANAGED_TEAM_ID,
+      managedTeamId: FIXTURE_MANAGED_TEAM_ID,
       isManagedTeamSchedule: false,
       totalGameCount: 28,
       datedGameCount: 28,

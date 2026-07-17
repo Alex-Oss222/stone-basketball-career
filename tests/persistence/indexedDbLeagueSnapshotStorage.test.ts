@@ -1,134 +1,152 @@
 import { describe, expect, it } from 'vitest'
 import {
   ACTIVE_LEAGUE_SNAPSHOT_KEY,
-  ACTIVE_LEAGUE_SNAPSHOT_V1_KEY,
-  ACTIVE_LEAGUE_SNAPSHOT_V2_KEY,
+  ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY,
   IndexedDbLeagueSnapshotStorage,
   LEAGUE_SNAPSHOT_DATABASE_NAME,
   LEAGUE_SNAPSHOT_DATABASE_VERSION,
   LEAGUE_SNAPSHOT_OBJECT_STORE_NAME,
+  createIndexedDbLeagueSnapshotRepository,
 } from '../../src/persistence/indexedDbLeagueSnapshotStorage'
+import { LEAGUE_SNAPSHOT_VERSION } from '../../src/persistence/leagueSnapshot'
+import { createLegacyVersionSnapshotFixture } from './leagueSnapshot.fixture'
 
-describe('IndexedDbLeagueSnapshotStorage versioned locations', () => {
-  it('keeps V1 at the shipped key and V2 at a distinct key in the existing store', () => {
+describe('IndexedDbLeagueSnapshotStorage single active-league slot', () => {
+  it('keeps the active key and reads the legacy V2 key in the existing store', () => {
     expect(LEAGUE_SNAPSHOT_DATABASE_NAME).toBe('stone-basketball-gm')
     expect(LEAGUE_SNAPSHOT_DATABASE_VERSION).toBe(1)
     expect(LEAGUE_SNAPSHOT_OBJECT_STORE_NAME).toBe('activeLeague')
-    expect(ACTIVE_LEAGUE_SNAPSHOT_V1_KEY).toBe('current')
-    expect(ACTIVE_LEAGUE_SNAPSHOT_KEY).toBe(ACTIVE_LEAGUE_SNAPSHOT_V1_KEY)
-    expect(ACTIVE_LEAGUE_SNAPSHOT_V2_KEY).toBe('current-v2')
-    expect(ACTIVE_LEAGUE_SNAPSHOT_V2_KEY).not.toBe(
-      ACTIVE_LEAGUE_SNAPSHOT_V1_KEY,
+    expect(ACTIVE_LEAGUE_SNAPSHOT_KEY).toBe('current')
+    expect(ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY).toBe('current-v2')
+    expect(ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY).not.toBe(
+      ACTIVE_LEAGUE_SNAPSHOT_KEY,
     )
   })
 
-  it('dual-reads presence separately from null and undefined values', async () => {
-    const factory = new MemoryIdbFactory()
-    factory.seed(ACTIVE_LEAGUE_SNAPSHOT_V1_KEY, null)
-    factory.seed(ACTIVE_LEAGUE_SNAPSHOT_V2_KEY, undefined)
-    const storage = createStorage(factory)
+  it('reads the active key as one present slot, distinguishing null from absence', async () => {
+    const present = new MemoryIdbFactory()
+    present.seed(ACTIVE_LEAGUE_SNAPSHOT_KEY, null)
+    await expect(createStorage(present).read()).resolves.toEqual({
+      present: true,
+      value: null,
+    })
 
-    await expect(storage.read()).resolves.toEqual({
-      v1: { present: true, value: null },
-      v2: { present: true, value: undefined },
+    const absent = new MemoryIdbFactory()
+    absent.createStore(LEAGUE_SNAPSHOT_OBJECT_STORE_NAME)
+    await expect(createStorage(absent).read()).resolves.toEqual({
+      present: false,
+      value: undefined,
     })
   })
 
-  it('adds and replaces only the complete V2 location', async () => {
+  it('falls back to the legacy V2 key only when the active key is empty', async () => {
+    const legacyOnly = new MemoryIdbFactory()
+    legacyOnly.seed(ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY, { version: 2 })
+    await expect(createStorage(legacyOnly).read()).resolves.toEqual({
+      present: true,
+      value: { version: 2 },
+    })
+
+    const both = new MemoryIdbFactory()
+    both.seed(ACTIVE_LEAGUE_SNAPSHOT_KEY, { version: 'current' })
+    both.seed(ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY, { version: 2 })
+    await expect(createStorage(both).read()).resolves.toEqual({
+      present: true,
+      value: { version: 'current' },
+    })
+  })
+
+  it('adds and replaces only the active key', async () => {
     const factory = new MemoryIdbFactory()
     const storage = createStorage(factory)
 
-    const added = await storage.transact((state) => {
-      expect(state.v1.present).toBe(false)
-      expect(state.v2.present).toBe(false)
+    const added = await storage.transact((slot) => {
+      expect(slot.present).toBe(false)
       return {
-        mutation: {
-          kind: 'write-v2',
-          mode: 'add',
-          record: { revision: 1 },
-        },
+        mutation: { kind: 'write', mode: 'add', record: { revision: 1 } },
         verify: (reread) => reread,
       }
     })
 
-    expect(added).toEqual({
-      v1: { present: false, value: undefined },
-      v2: { present: true, value: { revision: 1 } },
-    })
-    expect(factory.has(ACTIVE_LEAGUE_SNAPSHOT_V1_KEY)).toBe(false)
-    expect(factory.inspect(ACTIVE_LEAGUE_SNAPSHOT_V2_KEY)).toEqual({
-      revision: 1,
-    })
+    expect(added).toEqual({ present: true, value: { revision: 1 } })
+    expect(factory.has(ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY)).toBe(false)
+    expect(factory.inspect(ACTIVE_LEAGUE_SNAPSHOT_KEY)).toEqual({ revision: 1 })
 
-    await storage.transact((state) => ({
-      mutation: {
-        kind: 'write-v2',
-        mode: 'put',
-        record: { revision: 2 },
-      },
+    await storage.transact((slot) => ({
+      mutation: { kind: 'write', mode: 'put', record: { revision: 2 } },
       verify: (reread) => {
-        expect(state.v2.value).toEqual({ revision: 1 })
-        expect(reread.v2.value).toEqual({ revision: 2 })
+        expect(slot.value).toEqual({ revision: 1 })
+        expect(reread.value).toEqual({ revision: 2 })
       },
     }))
 
-    expect(factory.has(ACTIVE_LEAGUE_SNAPSHOT_V1_KEY)).toBe(false)
-    expect(factory.inspect(ACTIVE_LEAGUE_SNAPSHOT_V2_KEY)).toEqual({
-      revision: 2,
-    })
+    expect(factory.inspect(ACTIVE_LEAGUE_SNAPSHOT_KEY)).toEqual({ revision: 2 })
   })
 
-  it('clears V1 and V2 together and verifies before commit', async () => {
+  it('clears the active and legacy keys together and verifies before commit', async () => {
     const events: string[] = []
     const factory = new MemoryIdbFactory(events)
-    factory.seed(ACTIVE_LEAGUE_SNAPSHOT_V1_KEY, { version: 1 })
-    factory.seed(ACTIVE_LEAGUE_SNAPSHOT_V2_KEY, { version: 2 })
+    factory.seed(ACTIVE_LEAGUE_SNAPSHOT_KEY, { version: 'current' })
+    factory.seed(ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY, { version: 2 })
     const storage = createStorage(factory)
 
-    await storage.transact((state) => {
-      expect(state.v1.present).toBe(true)
-      expect(state.v2.present).toBe(true)
+    await storage.transact((slot) => {
+      expect(slot.present).toBe(true)
       return {
-        mutation: { kind: 'clear-both' },
+        mutation: { kind: 'clear' },
         verify: (reread) => {
           events.push('verify')
-          expect(reread.v1.present).toBe(false)
-          expect(reread.v2.present).toBe(false)
+          expect(reread.present).toBe(false)
         },
       }
     })
 
     expect(events).toEqual(['verify', 'commit'])
-    expect(factory.has(ACTIVE_LEAGUE_SNAPSHOT_V1_KEY)).toBe(false)
-    expect(factory.has(ACTIVE_LEAGUE_SNAPSHOT_V2_KEY)).toBe(false)
+    expect(factory.has(ACTIVE_LEAGUE_SNAPSHOT_KEY)).toBe(false)
+    expect(factory.has(ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY)).toBe(false)
   })
 
-  it('aborts and rolls back a staged V2 write when verification fails', async () => {
+  it('aborts and rolls back a staged write when verification fails', async () => {
     const events: string[] = []
     const factory = new MemoryIdbFactory(events)
-    factory.seed(ACTIVE_LEAGUE_SNAPSHOT_V2_KEY, { revision: 1 })
+    factory.seed(ACTIVE_LEAGUE_SNAPSHOT_KEY, { revision: 1 })
     const storage = createStorage(factory)
     const verificationFailure = new Error('deliberate verification failure')
 
     await expect(
       storage.transact(() => ({
-        mutation: {
-          kind: 'write-v2',
-          mode: 'put',
-          record: { revision: 2 },
-        },
+        mutation: { kind: 'write', mode: 'put', record: { revision: 2 } },
         verify: (reread) => {
           events.push('verify')
-          expect(reread.v2.value).toEqual({ revision: 2 })
+          expect(reread.value).toEqual({ revision: 2 })
           throw verificationFailure
         },
       })),
     ).rejects.toBe(verificationFailure)
 
     expect(events).toEqual(['verify', 'abort'])
-    expect(factory.inspect(ACTIVE_LEAGUE_SNAPSHOT_V2_KEY)).toEqual({
-      revision: 1,
+    expect(factory.inspect(ACTIVE_LEAGUE_SNAPSHOT_KEY)).toEqual({ revision: 1 })
+  })
+
+  it('surfaces a legacy V2 record left under current-v2 as a version mismatch', async () => {
+    const legacyDto = createLegacyVersionSnapshotFixture(2) as {
+      readonly league: { readonly id: unknown }
+    }
+    const factory = new MemoryIdbFactory()
+    factory.seed(ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY, {
+      leagueId: legacyDto.league.id,
+      snapshot: legacyDto,
     })
+    const repository = createIndexedDbLeagueSnapshotRepository(
+      factory.asIdbFactory(),
+    )
+
+    await expect(repository.restore()).resolves.toEqual({
+      kind: 'version-mismatch',
+      storedVersion: 2,
+      supportedVersion: LEAGUE_SNAPSHOT_VERSION,
+    })
+    expect(factory.has(ACTIVE_LEAGUE_SNAPSHOT_LEGACY_V2_KEY)).toBe(true)
   })
 })
 

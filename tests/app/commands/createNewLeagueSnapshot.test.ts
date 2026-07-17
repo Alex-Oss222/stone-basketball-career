@@ -1,16 +1,15 @@
 import { describe, expect, it, vi } from 'vitest'
 import * as seasonFoundationModule from '../../../src/app/commands/createSeasonFoundation'
 import {
-  createNewLeagueSnapshotV2,
-} from '../../../src/app/commands/createNewLeagueSnapshotV2'
-import type { CreateNewLeagueSnapshotV2Input } from '../../../src/app/commands/createNewLeagueSnapshotV2'
+  createNewLeagueSnapshot,
+} from '../../../src/app/commands/createNewLeagueSnapshot'
+import type { CreateNewLeagueSnapshotInput } from '../../../src/app/commands/createNewLeagueSnapshot'
 import { parseLocalDate } from '../../../src/domain/localDate'
 import { MILESTONE_1_REGULAR_SEASON_RULE_SET } from '../../../src/domain/schedule'
 import {
-  LEAGUE_SNAPSHOT_V2_VERSION,
-  parseLeagueSnapshotV2,
-} from '../../../src/persistence/leagueSnapshotV2'
-import * as leagueSnapshotV1Module from '../../../src/persistence/leagueSnapshot'
+  LEAGUE_SNAPSHOT_VERSION,
+  parseLeagueSnapshot,
+} from '../../../src/persistence/leagueSnapshot'
 
 const INPUT = Object.freeze({
   rootSeed: 'new-league-v2-fixture',
@@ -18,14 +17,14 @@ const INPUT = Object.freeze({
   regularSeasonStartDate: parseLocalDate('2026-10-06'),
   calendarDaySpacing: 3,
   scheduleSeed: 'new-league-v2-schedule',
-}) satisfies CreateNewLeagueSnapshotV2Input
+}) satisfies CreateNewLeagueSnapshotInput
 
-describe('createNewLeagueSnapshotV2', () => {
+describe('createNewLeagueSnapshot', () => {
   it('creates one strict initial V2 snapshot directly from explicit inputs', () => {
-    const snapshot = createNewLeagueSnapshotV2(INPUT)
+    const snapshot = createNewLeagueSnapshot(INPUT)
 
     expect(snapshot).toMatchObject({
-      snapshotVersion: LEAGUE_SNAPSHOT_V2_VERSION,
+      snapshotVersion: LEAGUE_SNAPSHOT_VERSION,
       revision: 1,
       rootSeed: INPUT.rootSeed,
       managedTeamId: null,
@@ -48,41 +47,35 @@ describe('createNewLeagueSnapshotV2', () => {
     })
     expect(snapshot.season.scheduleId).toBe(snapshot.leagueSchedule.id)
     expect(snapshot.teamSeasons).toHaveLength(snapshot.league.teams.length)
-    expect(parseLeagueSnapshotV2(snapshot)).toEqual(snapshot)
+    expect(parseLeagueSnapshot(snapshot)).toEqual(snapshot)
   })
 
   it('is deeply deterministic for identical explicit inputs', () => {
-    expect(createNewLeagueSnapshotV2({ ...INPUT })).toEqual(
-      createNewLeagueSnapshotV2({ ...INPUT }),
+    expect(createNewLeagueSnapshot({ ...INPUT })).toEqual(
+      createNewLeagueSnapshot({ ...INPUT }),
     )
   })
 
-  it('coordinates one season foundation without constructing an intermediate V1 snapshot', () => {
+  it('coordinates exactly one season foundation for the snapshot', () => {
     const foundationSpy = vi.spyOn(
       seasonFoundationModule,
       'createSeasonFoundation',
     )
-    const v1CreationSpy = vi.spyOn(
-      leagueSnapshotV1Module,
-      'createLeagueSnapshot',
-    )
 
-    createNewLeagueSnapshotV2(INPUT)
+    createNewLeagueSnapshot(INPUT)
 
     expect(foundationSpy).toHaveBeenCalledOnce()
-    expect(v1CreationSpy).not.toHaveBeenCalled()
     foundationSpy.mockRestore()
-    v1CreationSpy.mockRestore()
   })
 
   it('normalizes the league seed only through its existing creation contract', () => {
-    const snapshot = createNewLeagueSnapshotV2({
+    const snapshot = createNewLeagueSnapshot({
       ...INPUT,
       rootSeed: `  ${INPUT.rootSeed}  `,
     })
 
     expect(snapshot.rootSeed).toBe(INPUT.rootSeed)
-    expect(snapshot.league).toEqual(createNewLeagueSnapshotV2(INPUT).league)
+    expect(snapshot.league).toEqual(createNewLeagueSnapshot(INPUT).league)
   })
 
   it.each([
@@ -101,16 +94,16 @@ describe('createNewLeagueSnapshotV2', () => {
     const candidate = {
       ...INPUT,
       ...overrides,
-    } as unknown as CreateNewLeagueSnapshotV2Input
+    } as unknown as CreateNewLeagueSnapshotInput
     const before = structuredClone(candidate)
 
-    expect(() => createNewLeagueSnapshotV2(candidate)).toThrow()
+    expect(() => createNewLeagueSnapshot(candidate)).toThrow()
     expect(candidate).toEqual(before)
   })
 
   it('does not mutate a deeply frozen input or retain its object identity', () => {
     const input = deepFreeze({ ...INPUT })
-    const snapshot = createNewLeagueSnapshotV2(input)
+    const snapshot = createNewLeagueSnapshot(input)
 
     expect(input).toEqual(INPUT)
     expect(snapshot.creationMetadata).not.toBe(input)

@@ -4,7 +4,7 @@ import {
   SAVE_INDICATOR_LABELS,
   deriveDashboardAction,
 } from '../../src/app/dashboardViewModel'
-import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
+import { createLeagueSnapshotFixture } from '../persistence/leagueSnapshot.fixture'
 import {
   AppHeader,
   ApplicationShell,
@@ -12,7 +12,7 @@ import {
 } from '../../src/ui/dashboardShell'
 import { WorkspaceErrorBoundary } from '../../src/ui/workspaceErrorBoundary'
 
-const snapshot = createLeagueSnapshotV2Fixture()
+const snapshot = createLeagueSnapshotFixture()
 const league = snapshot.league
 const controlledTeam = league.teams[0]
 

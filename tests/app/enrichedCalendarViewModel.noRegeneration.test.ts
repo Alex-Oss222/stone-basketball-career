@@ -8,7 +8,7 @@ import {
 import {
   createLeagueYearDisplayRange,
 } from '../../src/app/leagueYearDisplayRange'
-import { createLeagueSeasonDomainFixture } from '../persistence/leagueSnapshotV2.fixture'
+import { createLeagueSeasonDomainFixture } from '../persistence/leagueSnapshot.fixture'
 
 const domainFixture = createLeagueSeasonDomainFixture()
 const range = createLeagueYearDisplayRange(domainFixture.foundation.season)

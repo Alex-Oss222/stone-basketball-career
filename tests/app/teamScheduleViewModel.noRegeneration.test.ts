@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import {
   createCalendarEntries,
 } from '../../src/app/calendarViewModel'
-import { createLeagueSeasonDomainFixture } from '../persistence/leagueSnapshotV2.fixture'
+import { createLeagueSeasonDomainFixture } from '../persistence/leagueSnapshot.fixture'
 
 const domainFixture = createLeagueSeasonDomainFixture()
 const inspectedTeamId = domainFixture.league.teams[1].id

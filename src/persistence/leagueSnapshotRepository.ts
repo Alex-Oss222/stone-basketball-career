@@ -1,61 +1,43 @@
 import { parseLeagueId, parseTeamId } from '../domain/ids'
 import type { LeagueId, TeamId } from '../domain/ids'
-import type { SeasonFoundationConfigurationInput } from '../app/commands/createSeasonFoundation'
 import {
   InvalidLeagueSnapshotError,
   LEAGUE_SNAPSHOT_VERSION,
   parseLeagueSnapshot,
 } from './leagueSnapshot'
-import type { LeagueSnapshotV1 } from './leagueSnapshot'
-import {
-  InvalidLeagueSnapshotV2Error,
-  LEAGUE_SNAPSHOT_V2_VERSION,
-  parseLeagueSnapshotV2,
-} from './leagueSnapshotV2'
-import type { LeagueSnapshotV2 } from './leagueSnapshotV2'
-import {
-  LeagueSnapshotV1ToV2MigrationError,
-  migrateLeagueSnapshotV1ToV2,
-} from './migrations/migrateLeagueSnapshotV1ToV2'
+import type { LeagueSnapshot } from './leagueSnapshot'
 
-export interface VersionedLeagueSnapshotStorageSlot {
+export interface LeagueSnapshotStorageSlot {
   readonly present: boolean
   readonly value: unknown
 }
 
-export interface VersionedLeagueSnapshotStorageState {
-  /** Raw structured-cloned record stored at the authoritative V1 location. */
-  readonly v1: VersionedLeagueSnapshotStorageSlot
-  /** Raw structured-cloned record stored at the authoritative V2 location. */
-  readonly v2: VersionedLeagueSnapshotStorageSlot
-}
-
 export type LeagueSnapshotStorageMutation =
   | {
-      readonly kind: 'write-v2'
+      readonly kind: 'write'
       readonly mode: 'add' | 'put'
       readonly record: unknown
     }
   | {
-      readonly kind: 'clear-both'
+      readonly kind: 'clear'
     }
 
 export interface LeagueSnapshotStorageTransactionPlan<Result> {
   readonly mutation: LeagueSnapshotStorageMutation
-  /** Runs against values re-read after the staged mutation and before commit. */
-  readonly verify: (state: VersionedLeagueSnapshotStorageState) => Result
+  /** Runs against the slot re-read after the staged mutation, before commit. */
+  readonly verify: (slot: LeagueSnapshotStorageSlot) => Result
 }
 
 /**
- * Browser-independent transaction boundary. A storage implementation must
- * publish no mutation unless prepare, mutation, re-read, verify, and commit all
- * succeed.
+ * Browser-independent transaction boundary over the one active-league slot.
+ * A storage implementation must publish no mutation unless prepare, mutation,
+ * re-read, verify, and commit all succeed.
  */
 export interface LeagueSnapshotStorage {
-  read(): Promise<VersionedLeagueSnapshotStorageState>
+  read(): Promise<LeagueSnapshotStorageSlot>
   transact<Result>(
     prepare: (
-      state: VersionedLeagueSnapshotStorageState,
+      slot: LeagueSnapshotStorageSlot,
     ) => LeagueSnapshotStorageTransactionPlan<Result>,
   ): Promise<Result>
 }
@@ -63,7 +45,7 @@ export interface LeagueSnapshotStorage {
 export const LEAGUE_SNAPSHOT_STORAGE_PHASES = [
   'open',
   'read',
-  'write-v2',
+  'write',
   'clear',
   'reread',
   'commit',
@@ -136,20 +118,15 @@ export class LeagueSnapshotRevisionError extends LeagueSnapshotConflictError {
   }
 }
 
-export const LEAGUE_SNAPSHOT_REPOSITORY_MIGRATION_STAGES = [
-  'read-v1-storage',
-  'parse-v1',
-  'pure-migration',
-  'validate-v2',
-  'write-v2',
-  'reread-v2',
-  'revalidate-v2',
-  'compare-v2',
-  'commit-transaction',
+export const LEAGUE_SNAPSHOT_RECOVERY_REASONS = [
+  'storage-failure',
+  'parsing-failure',
+  'validation-failure',
+  'unsupported-rule-set-version',
 ] as const
 
-export type LeagueSnapshotRepositoryMigrationStage =
-  (typeof LEAGUE_SNAPSHOT_REPOSITORY_MIGRATION_STAGES)[number]
+export type LeagueSnapshotRecoveryReason =
+  (typeof LEAGUE_SNAPSHOT_RECOVERY_REASONS)[number]
 
 export interface LeagueSnapshotRepositoryIssue {
   readonly code: string
@@ -157,69 +134,32 @@ export interface LeagueSnapshotRepositoryIssue {
   readonly message: string
 }
 
-export class LeagueSnapshotRepositoryMigrationError extends LeagueSnapshotStorageError {
-  readonly stage: LeagueSnapshotRepositoryMigrationStage
-  readonly code: string
-  readonly issues: readonly LeagueSnapshotRepositoryIssue[]
-
-  constructor(
-    stage: LeagueSnapshotRepositoryMigrationStage,
-    code: string,
-    message: string,
-    issues: readonly LeagueSnapshotRepositoryIssue[] = [],
-    cause?: unknown,
-  ) {
-    super(message, cause)
-    this.name = 'LeagueSnapshotRepositoryMigrationError'
-    this.stage = stage
-    this.code = code
-    this.issues = Object.freeze(
-      issues.map((issue) => Object.freeze({ ...issue })),
-    )
-  }
-}
-
-export const LEAGUE_SNAPSHOT_RECOVERY_REASONS = [
-  'storage-failure',
-  'parsing-failure',
-  'validation-failure',
-  'unsupported-snapshot-version',
-  'unsupported-rule-set-version',
-] as const
-
-export type LeagueSnapshotRecoveryReason =
-  (typeof LEAGUE_SNAPSHOT_RECOVERY_REASONS)[number]
-
 export type LeagueSnapshotRestorationResult =
   | {
       readonly kind: 'empty'
     }
   | {
-      readonly kind: 'restored-v2'
-      readonly snapshot: LeagueSnapshotV2
+      readonly kind: 'restored'
+      readonly snapshot: LeagueSnapshot
     }
   | {
-      readonly kind: 'migration-required'
-      readonly snapshotVersion: typeof LEAGUE_SNAPSHOT_VERSION
-      readonly leagueId: LeagueId
+      /**
+       * The stored record declares a numeric snapshot version other than the
+       * one this build supports. There are no migrations before 1.0: the
+       * record is refused untouched and the player starts a new league.
+       */
+      readonly kind: 'version-mismatch'
+      readonly storedVersion: number
+      readonly supportedVersion: typeof LEAGUE_SNAPSHOT_VERSION
     }
   | {
       readonly kind: 'recovery-required'
-      readonly source: 'storage' | 'v1' | 'v2'
+      readonly source: 'storage' | 'snapshot'
       readonly reason: LeagueSnapshotRecoveryReason
       readonly code: string
       readonly message: string
       readonly issues: readonly LeagueSnapshotRepositoryIssue[]
-      readonly v1Present: boolean
-      readonly v2Present: boolean
-      /** True means an invalid authoritative V2 prevented V1 fallback. */
-      readonly v1FallbackBlocked: boolean
     }
-
-export interface MigrateStoredLeagueSnapshotInput {
-  readonly expectedV1LeagueId: LeagueId
-  readonly seasonCreationInputs: SeasonFoundationConfigurationInput
-}
 
 export interface UpdateManagedTeamInput {
   readonly expectedLeagueId: LeagueId
@@ -229,25 +169,27 @@ export interface UpdateManagedTeamInput {
 
 export type ClearActiveLeagueExpectation =
   | {
-      readonly kind: 'v2'
+      readonly kind: 'snapshot'
       readonly expectedLeagueId: LeagueId
       readonly expectedRevision: number
     }
   | {
-      readonly kind: 'v1'
-      readonly expectedLeagueId: LeagueId
+      /**
+       * Clears a refused older-version record without ever parsing it. The
+       * expected stored version guards against deleting a record that another
+       * tab replaced with a valid current-version snapshot in the meantime.
+       */
+      readonly kind: 'version-mismatch'
+      readonly expectedStoredVersion: number
     }
 
 /** Application-facing access to the one atomic active-league snapshot. */
 export interface LeagueSnapshotRepository {
   restore(): Promise<LeagueSnapshotRestorationResult>
-  createV2(snapshot: LeagueSnapshotV2): Promise<LeagueSnapshotV2>
-  migrateV1ToV2(
-    input: MigrateStoredLeagueSnapshotInput,
-  ): Promise<LeagueSnapshotV2>
+  create(snapshot: LeagueSnapshot): Promise<LeagueSnapshot>
   updateManagedTeam(
     input: UpdateManagedTeamInput,
-  ): Promise<LeagueSnapshotV2>
+  ): Promise<LeagueSnapshot>
   clear(expectation: ClearActiveLeagueExpectation): Promise<void>
   /**
    * Explicit destructive recovery for storage that cannot be parsed well
@@ -262,208 +204,68 @@ interface StoredLeagueSnapshotRecord {
 }
 
 /**
- * Adds validation, precedence, revisions, and rollback-safe decisions to an
- * injected transaction-capable storage adapter.
+ * Adds validation, revisions, and rollback-safe decisions to an injected
+ * transaction-capable storage adapter.
  */
 export function createLeagueSnapshotRepository(
   storage: LeagueSnapshotStorage,
 ): LeagueSnapshotRepository {
   return {
     async restore() {
-      let state: VersionedLeagueSnapshotStorageState
+      let slot: LeagueSnapshotStorageSlot
       try {
-        state = await storage.read()
+        slot = await storage.read()
       } catch (error) {
         return createStorageRecoveryResult(error)
       }
 
-      if (state.v2.present) {
-        try {
-          const record = parseStoredRecord(state.v2.value, 'v2')
-          return {
-            kind: 'restored-v2',
-            snapshot: parseLeagueSnapshotV2(record.snapshot),
-          }
-        } catch (error) {
-          return createSnapshotRecoveryResult('v2', error, state)
+      if (!slot.present) {
+        return { kind: 'empty' }
+      }
+
+      const storedVersion = readStoredSnapshotVersion(slot.value)
+      if (
+        storedVersion !== null &&
+        storedVersion !== LEAGUE_SNAPSHOT_VERSION
+      ) {
+        return {
+          kind: 'version-mismatch',
+          storedVersion,
+          supportedVersion: LEAGUE_SNAPSHOT_VERSION,
         }
       }
 
-      if (state.v1.present) {
-        try {
-          const record = parseStoredRecord(state.v1.value, 'v1')
-          const snapshot = parseLeagueSnapshot(record.snapshot)
-          return {
-            kind: 'migration-required',
-            snapshotVersion: LEAGUE_SNAPSHOT_VERSION,
-            leagueId: snapshot.league.id,
-          }
-        } catch (error) {
-          return createSnapshotRecoveryResult('v1', error, state)
+      try {
+        const record = parseStoredRecord(slot.value)
+        return {
+          kind: 'restored',
+          snapshot: parseLeagueSnapshot(record.snapshot),
         }
+      } catch (error) {
+        return createSnapshotRecoveryResult(error)
       }
-
-      return { kind: 'empty' }
     },
 
-    async createV2(snapshot) {
-      const parsedSnapshot = parseLeagueSnapshotV2(snapshot)
+    async create(snapshot) {
+      const parsedSnapshot = parseLeagueSnapshot(snapshot)
       if (parsedSnapshot.revision !== 1) {
         throw new LeagueSnapshotRevisionError(
-          'A newly created V2 snapshot must start at revision 1',
+          'A newly created snapshot must start at revision 1',
         )
       }
       const record = createStoredRecord(parsedSnapshot)
 
-      return storage.transact((state) => {
-        if (state.v1.present || state.v2.present) {
+      return storage.transact((slot) => {
+        if (slot.present) {
           throw new LeagueSnapshotConflictError(
             'An active league snapshot already exists',
           )
         }
         return {
-          mutation: { kind: 'write-v2', mode: 'add', record },
-          verify: (reread) =>
-            verifyStoredV2Write(parsedSnapshot, state.v1, reread),
+          mutation: { kind: 'write', mode: 'add', record },
+          verify: (reread) => verifyStoredWrite(parsedSnapshot, reread),
         }
       })
-    },
-
-    async migrateV1ToV2(input) {
-      let expectedLeagueId: LeagueId
-      try {
-        expectedLeagueId = parseLeagueId(input.expectedV1LeagueId)
-      } catch (error) {
-        throw migrationErrorFrom(
-          'parse-v1',
-          'league_snapshot_repository.migration.v1_identity_invalid',
-          'The expected V1 league identity is invalid',
-          error,
-        )
-      }
-      try {
-        return await storage.transact((state) => {
-          if (state.v2.present) {
-            throw migrationError(
-              'read-v1-storage',
-              'league_snapshot_repository.migration.v2_exists',
-              'Migration cannot replace an existing authoritative V2 snapshot',
-            )
-          }
-          if (!state.v1.present) {
-            throw migrationError(
-              'read-v1-storage',
-              'league_snapshot_repository.migration.v1_missing',
-              'The stored V1 snapshot no longer exists',
-            )
-          }
-
-          const originalV1Record = state.v1.value
-          let v1Snapshot: LeagueSnapshotV1
-          try {
-            const record = parseStoredRecord(originalV1Record, 'v1')
-            v1Snapshot = parseLeagueSnapshot(record.snapshot)
-          } catch (error) {
-            throw migrationErrorFrom(
-              'parse-v1',
-              'league_snapshot_repository.migration.v1_invalid',
-              'The stored V1 snapshot is invalid',
-              error,
-            )
-          }
-          if (v1Snapshot.league.id !== expectedLeagueId) {
-            throw migrationError(
-              'parse-v1',
-              'league_snapshot_repository.migration.v1_identity_changed',
-              'The stored V1 league changed before migration began',
-            )
-          }
-
-          let migrated: LeagueSnapshotV2
-          try {
-            migrated = migrateLeagueSnapshotV1ToV2(
-              v1Snapshot,
-              input.seasonCreationInputs,
-            )
-          } catch (error) {
-            throw migrationErrorFrom(
-              'pure-migration',
-              'league_snapshot_repository.migration.pure_failed',
-              'The pure V1-to-V2 migration failed',
-              error,
-            )
-          }
-
-          let validatedV2: LeagueSnapshotV2
-          try {
-            validatedV2 = parseLeagueSnapshotV2(migrated)
-          } catch (error) {
-            throw migrationErrorFrom(
-              'validate-v2',
-              'league_snapshot_repository.migration.v2_invalid',
-              'The migrated V2 snapshot failed validation',
-              error,
-            )
-          }
-
-          return {
-            mutation: {
-              kind: 'write-v2',
-              mode: 'add',
-              record: createStoredRecord(validatedV2),
-            },
-            verify: (reread) => {
-              if (!reread.v1.present) {
-                throw migrationError(
-                  'compare-v2',
-                  'league_snapshot_repository.migration.v1_removed',
-                  'The original V1 record was not preserved',
-                )
-              }
-              if (!areStructurallyEqual(originalV1Record, reread.v1.value)) {
-                throw migrationError(
-                  'compare-v2',
-                  'league_snapshot_repository.migration.v1_changed',
-                  'The original V1 record changed during migration',
-                )
-              }
-              if (!reread.v2.present) {
-                throw migrationError(
-                  'reread-v2',
-                  'league_snapshot_repository.migration.v2_missing',
-                  'The written V2 record could not be re-read',
-                )
-              }
-
-              let restored: LeagueSnapshotV2
-              try {
-                const rereadRecord = parseStoredRecord(reread.v2.value, 'v2')
-                restored = parseLeagueSnapshotV2(rereadRecord.snapshot)
-              } catch (error) {
-                throw migrationErrorFrom(
-                  'revalidate-v2',
-                  'league_snapshot_repository.migration.v2_reread_invalid',
-                  'The re-read V2 snapshot failed validation',
-                  error,
-                )
-              }
-              if (!areStructurallyEqual(validatedV2, restored)) {
-                throw migrationError(
-                  'compare-v2',
-                  'league_snapshot_repository.migration.v2_changed',
-                  'The re-read V2 snapshot differs from the validated value written',
-                )
-              }
-              return restored
-            },
-          }
-        })
-      } catch (error) {
-        if (error instanceof LeagueSnapshotRepositoryMigrationError) {
-          throw error
-        }
-        throw mapStorageMigrationError(error)
-      }
     },
 
     async updateManagedTeam(input) {
@@ -474,17 +276,17 @@ export function createLeagueSnapshotRepository(
           ? null
           : parseTeamId(input.managedTeamId)
 
-      return storage.transact((state) => {
-        if (!state.v2.present) {
+      return storage.transact((slot) => {
+        if (!slot.present) {
           throw new LeagueSnapshotStaleWriteError(
             'update',
             expectedRevision,
             null,
-            'The authoritative V2 snapshot no longer exists',
+            'The active league snapshot no longer exists',
           )
         }
-        const currentRecord = parseStoredRecord(state.v2.value, 'v2')
-        const current = parseLeagueSnapshotV2(currentRecord.snapshot)
+        const currentRecord = parseStoredRecord(slot.value)
+        const current = parseLeagueSnapshot(currentRecord.snapshot)
         if (current.league.id !== expectedLeagueId) {
           throw new LeagueSnapshotConflictError(
             'A managed-team update cannot replace a different league',
@@ -504,37 +306,60 @@ export function createLeagueSnapshotRepository(
           )
         }
 
-        const next = parseLeagueSnapshotV2({
+        const next = parseLeagueSnapshot({
           ...current,
           revision: current.revision + 1,
           managedTeamId,
         })
         return {
           mutation: {
-            kind: 'write-v2',
+            kind: 'write',
             mode: 'put',
             record: createStoredRecord(next),
           },
-          verify: (reread) =>
-            verifyStoredV2Write(next, state.v1, reread),
+          verify: (reread) => verifyStoredWrite(next, reread),
         }
       })
     },
 
     async clear(expectation) {
       const parsedExpectation = parseClearExpectation(expectation)
-      await storage.transact((state) => {
-        if (state.v2.present) {
-          const currentRecord = parseStoredRecord(state.v2.value, 'v2')
-          const current = parseLeagueSnapshotV2(currentRecord.snapshot)
-          if (parsedExpectation.kind !== 'v2') {
-            throw new LeagueSnapshotStaleWriteError(
-              'clear',
-              null,
-              current.revision,
-              'A V1 clear request cannot remove an authoritative V2 snapshot',
+      await storage.transact((slot) => {
+        if (!slot.present) {
+          throw new LeagueSnapshotConflictError(
+            'The active league snapshot no longer exists',
+          )
+        }
+
+        const storedVersion = readStoredSnapshotVersion(slot.value)
+        if (parsedExpectation.kind === 'version-mismatch') {
+          if (
+            storedVersion === null ||
+            storedVersion === LEAGUE_SNAPSHOT_VERSION
+          ) {
+            throw new LeagueSnapshotConflictError(
+              'The stored league record is no longer a refused older-version snapshot',
             )
           }
+          if (storedVersion !== parsedExpectation.expectedStoredVersion) {
+            throw new LeagueSnapshotConflictError(
+              'The stored league record changed before it could be cleared',
+            )
+          }
+        } else {
+          if (
+            storedVersion !== null &&
+            storedVersion !== LEAGUE_SNAPSHOT_VERSION
+          ) {
+            throw new LeagueSnapshotStaleWriteError(
+              'clear',
+              parsedExpectation.expectedRevision,
+              null,
+              'The expected active league snapshot no longer exists',
+            )
+          }
+          const currentRecord = parseStoredRecord(slot.value)
+          const current = parseLeagueSnapshot(currentRecord.snapshot)
           if (current.league.id !== parsedExpectation.expectedLeagueId) {
             throw new LeagueSnapshotConflictError(
               'The active league changed before it could be cleared',
@@ -548,32 +373,12 @@ export function createLeagueSnapshotRepository(
               'The active league revision changed before it could be cleared',
             )
           }
-        } else if (state.v1.present) {
-          if (parsedExpectation.kind !== 'v1') {
-            throw new LeagueSnapshotStaleWriteError(
-              'clear',
-              parsedExpectation.expectedRevision,
-              null,
-              'The expected V2 snapshot no longer exists',
-            )
-          }
-          const currentRecord = parseStoredRecord(state.v1.value, 'v1')
-          const current = parseLeagueSnapshot(currentRecord.snapshot)
-          if (current.league.id !== parsedExpectation.expectedLeagueId) {
-            throw new LeagueSnapshotConflictError(
-              'The stored V1 league changed before it could be cleared',
-            )
-          }
-        } else {
-          throw new LeagueSnapshotConflictError(
-            'The active league snapshot no longer exists',
-          )
         }
 
         return {
-          mutation: { kind: 'clear-both' },
+          mutation: { kind: 'clear' },
           verify: (reread) => {
-            if (reread.v1.present || reread.v2.present) {
+            if (reread.present) {
               throw new LeagueSnapshotStorageError(
                 'The active league records remained after clear verification',
                 undefined,
@@ -587,9 +392,9 @@ export function createLeagueSnapshotRepository(
 
     async purgeCorruptLeagueStorage() {
       await storage.transact(() => ({
-        mutation: { kind: 'clear-both' },
+        mutation: { kind: 'clear' },
         verify: (reread) => {
-          if (reread.v1.present || reread.v2.present) {
+          if (reread.present) {
             throw new LeagueSnapshotStorageError(
               'The corrupt active league records remained after recovery purge verification',
               undefined,
@@ -603,23 +408,20 @@ export function createLeagueSnapshotRepository(
 }
 
 export function createStoredLeagueSnapshotRecord(
-  snapshot: LeagueSnapshotV1 | LeagueSnapshotV2,
+  snapshot: LeagueSnapshot,
 ): unknown {
   return createStoredRecord(snapshot)
 }
 
 function createStoredRecord(
-  snapshot: LeagueSnapshotV1 | LeagueSnapshotV2,
+  snapshot: LeagueSnapshot,
 ): StoredLeagueSnapshotRecord {
   return { leagueId: snapshot.league.id, snapshot }
 }
 
-function parseStoredRecord(
-  value: unknown,
-  version: 'v1' | 'v2',
-): StoredLeagueSnapshotRecord {
+function parseStoredRecord(value: unknown): StoredLeagueSnapshotRecord {
   if (value === null || typeof value !== 'object' || Array.isArray(value)) {
-    throw invalidStoredRecord(version)
+    throw invalidStoredRecord()
   }
   const prototype = Object.getPrototypeOf(value)
   const keys = Reflect.ownKeys(value)
@@ -629,11 +431,11 @@ function parseStoredRecord(
     !Object.prototype.hasOwnProperty.call(value, 'leagueId') ||
     !Object.prototype.hasOwnProperty.call(value, 'snapshot')
   ) {
-    throw invalidStoredRecord(version)
+    throw invalidStoredRecord()
   }
   for (const key of keys) {
     if (typeof key !== 'string' || (key !== 'leagueId' && key !== 'snapshot')) {
-      throw invalidStoredRecord(version)
+      throw invalidStoredRecord()
     }
     const descriptor = Object.getOwnPropertyDescriptor(value, key)
     if (
@@ -641,14 +443,14 @@ function parseStoredRecord(
       !descriptor.enumerable ||
       !Object.prototype.hasOwnProperty.call(descriptor, 'value')
     ) {
-      throw invalidStoredRecord(version)
+      throw invalidStoredRecord()
     }
   }
 
   const source = value as Record<string, unknown>
   const leagueId = parseLeagueId(source.leagueId)
   if (!hasMatchingSnapshotLeagueId(source.snapshot, leagueId)) {
-    throw invalidStoredRecord(version)
+    throw invalidStoredRecord()
   }
   return { leagueId, snapshot: source.snapshot }
 }
@@ -685,33 +487,22 @@ function hasMatchingSnapshotLeagueId(
   )
 }
 
-function verifyStoredV2Write(
-  expected: LeagueSnapshotV2,
-  expectedV1: VersionedLeagueSnapshotStorageSlot,
-  reread: VersionedLeagueSnapshotStorageState,
-): LeagueSnapshotV2 {
-  if (
-    expectedV1.present !== reread.v1.present ||
-    !areStructurallyEqual(expectedV1.value, reread.v1.value)
-  ) {
+function verifyStoredWrite(
+  expected: LeagueSnapshot,
+  reread: LeagueSnapshotStorageSlot,
+): LeagueSnapshot {
+  if (!reread.present) {
     throw new LeagueSnapshotStorageError(
-      'The V1 storage location changed during the V2 write',
+      'The written snapshot could not be re-read',
       undefined,
       'reread',
     )
   }
-  if (!reread.v2.present) {
-    throw new LeagueSnapshotStorageError(
-      'The written V2 snapshot could not be re-read',
-      undefined,
-      'reread',
-    )
-  }
-  const record = parseStoredRecord(reread.v2.value, 'v2')
-  const restored = parseLeagueSnapshotV2(record.snapshot)
+  const record = parseStoredRecord(reread.value)
+  const restored = parseLeagueSnapshot(record.snapshot)
   if (!areStructurallyEqual(expected, restored)) {
     throw new LeagueSnapshotStorageError(
-      'The re-read V2 snapshot differs from the value written',
+      'The re-read snapshot differs from the value written',
       undefined,
       'reread',
     )
@@ -731,14 +522,20 @@ function parseExpectedRevision(value: number): number {
 function parseClearExpectation(
   expectation: ClearActiveLeagueExpectation,
 ): ClearActiveLeagueExpectation {
-  if (expectation.kind === 'v1') {
-    return {
-      kind: 'v1',
-      expectedLeagueId: parseLeagueId(expectation.expectedLeagueId),
+  if (expectation.kind === 'version-mismatch') {
+    const { expectedStoredVersion } = expectation
+    if (
+      !Number.isSafeInteger(expectedStoredVersion) ||
+      expectedStoredVersion === LEAGUE_SNAPSHOT_VERSION
+    ) {
+      throw new LeagueSnapshotConflictError(
+        'A version-mismatch clear requires the refused stored snapshot version',
+      )
     }
+    return { kind: 'version-mismatch', expectedStoredVersion }
   }
   return {
-    kind: 'v2',
+    kind: 'snapshot',
     expectedLeagueId: parseLeagueId(expectation.expectedLeagueId),
     expectedRevision: parseExpectedRevision(expectation.expectedRevision),
   }
@@ -757,51 +554,33 @@ function createStorageRecoveryResult(
         ? error.message
         : 'Local league storage could not be read',
     issues: [],
-    v1Present: false,
-    v2Present: false,
-    v1FallbackBlocked: false,
   }
 }
 
 function createSnapshotRecoveryResult(
-  source: 'v1' | 'v2',
   error: unknown,
-  state: VersionedLeagueSnapshotStorageState,
 ): Extract<LeagueSnapshotRestorationResult, { kind: 'recovery-required' }> {
   const issues = extractIssues(error)
-  const rawRecord = source === 'v2' ? state.v2.value : state.v1.value
-  const expectedVersion =
-    source === 'v2' ? LEAGUE_SNAPSHOT_V2_VERSION : LEAGUE_SNAPSHOT_VERSION
-  const storedVersion = readStoredSnapshotVersion(rawRecord)
-  const unsupportedVersion =
-    storedVersion !== null && storedVersion !== expectedVersion
   const unsupportedRuleSet = issues.some(({ code }) =>
     code.includes('rule_set.unsupported_version') ||
     code.includes('rule_set.unknown_id'),
   )
-  const reason: LeagueSnapshotRecoveryReason = unsupportedVersion
-    ? 'unsupported-snapshot-version'
-    : unsupportedRuleSet
-      ? 'unsupported-rule-set-version'
-      : isParsingFailure(error, issues)
-        ? 'parsing-failure'
-        : 'validation-failure'
+  const reason: LeagueSnapshotRecoveryReason = unsupportedRuleSet
+    ? 'unsupported-rule-set-version'
+    : isParsingFailure(error, issues)
+      ? 'parsing-failure'
+      : 'validation-failure'
 
   return {
     kind: 'recovery-required',
-    source,
+    source: 'snapshot',
     reason,
     code:
       issues[0]?.code ??
-      `league_snapshot_repository.${source}_${reason.replaceAll('-', '_')}`,
+      `league_snapshot_repository.snapshot_${reason.replaceAll('-', '_')}`,
     message:
-      source === 'v2'
-        ? 'The authoritative V2 league snapshot is invalid or unsupported; no V1 fallback was attempted.'
-        : 'The stored V1 league snapshot is invalid or unsupported.',
+      'The stored league snapshot is invalid or unsupported and was left unchanged.',
     issues,
-    v1Present: state.v1.present,
-    v2Present: state.v2.present,
-    v1FallbackBlocked: source === 'v2' && state.v1.present,
   }
 }
 
@@ -847,66 +626,10 @@ function isParsingFailure(
 function extractIssues(
   error: unknown,
 ): readonly LeagueSnapshotRepositoryIssue[] {
-  if (error instanceof InvalidLeagueSnapshotV2Error) {
-    return error.issues
-  }
   if (error instanceof InvalidLeagueSnapshotError) {
-    return [
-      {
-        code: 'league_snapshot_v1.invalid',
-        path: error.path,
-        message: stripLeadingPath(error.message, error.path),
-      },
-    ]
-  }
-  if (error instanceof LeagueSnapshotV1ToV2MigrationError) {
     return error.issues
   }
   return []
-}
-
-function migrationError(
-  stage: LeagueSnapshotRepositoryMigrationStage,
-  code: string,
-  message: string,
-): LeagueSnapshotRepositoryMigrationError {
-  return new LeagueSnapshotRepositoryMigrationError(stage, code, message)
-}
-
-function migrationErrorFrom(
-  stage: LeagueSnapshotRepositoryMigrationStage,
-  code: string,
-  message: string,
-  cause: unknown,
-): LeagueSnapshotRepositoryMigrationError {
-  return new LeagueSnapshotRepositoryMigrationError(
-    stage,
-    code,
-    `${message}: ${errorMessage(cause)}`,
-    extractIssues(cause),
-    cause,
-  )
-}
-
-function mapStorageMigrationError(
-  error: unknown,
-): LeagueSnapshotRepositoryMigrationError {
-  const phase =
-    error instanceof LeagueSnapshotStorageError ? error.phase : null
-  const stage: LeagueSnapshotRepositoryMigrationStage =
-    phase === 'write-v2'
-      ? 'write-v2'
-      : phase === 'reread'
-        ? 'reread-v2'
-        : phase === 'commit'
-          ? 'commit-transaction'
-          : 'read-v1-storage'
-  return migrationErrorFrom(
-    stage,
-    `league_snapshot_repository.migration.${stage.replaceAll('-', '_')}_failed`,
-    `Stored migration failed during ${stage}`,
-    error,
-  )
 }
 
 function areStructurallyEqual(left: unknown, right: unknown): boolean {
@@ -936,18 +659,12 @@ function isRecord(value: unknown): value is Readonly<Record<string, unknown>> {
   return value !== null && typeof value === 'object' && !Array.isArray(value)
 }
 
-function invalidStoredRecord(version: 'v1' | 'v2'): InvalidLeagueSnapshotError {
-  return new InvalidLeagueSnapshotError(
-    '$',
-    `The stored ${version.toUpperCase()} active-league record is invalid`,
-  )
-}
-
-function stripLeadingPath(message: string, path: string): string {
-  const prefix = `${path}: `
-  return message.startsWith(prefix) ? message.slice(prefix.length) : message
-}
-
-function errorMessage(error: unknown): string {
-  return error instanceof Error ? error.message : 'Unknown persistence failure'
+function invalidStoredRecord(): InvalidLeagueSnapshotError {
+  return new InvalidLeagueSnapshotError([
+    {
+      code: 'league_snapshot_repository.stored_record.invalid',
+      path: '$',
+      message: 'The stored active-league record is invalid',
+    },
+  ])
 }

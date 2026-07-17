@@ -77,9 +77,9 @@ export function RestoreRecoveryScreen({
           </button>
         </div>
         <p className="recovery-note">
-          This destructive recovery action permanently removes every active
-          version 1 and version 2 local league record. It cannot be undone and
-          never falls back to an older save.
+          This destructive recovery action permanently removes the active local
+          league record. It cannot be undone and never falls back to an older
+          save.
         </p>
       </section>
     </main>
@@ -230,106 +230,59 @@ export function LeagueCreationScreen({
   )
 }
 
-export interface MigrationRequiredScreenProps {
-  readonly seasonValues: SeasonSetupFormValues
-  readonly seasonError: string | null
+export interface VersionMismatchScreenProps {
   readonly actionError: string | null
   readonly isBusy: boolean
-  readonly onSeasonValueChange: (
-    field: SeasonSetupFormField,
-    value: string,
-  ) => void
-  readonly onMigrate: (event: FormEvent<HTMLFormElement>) => void
-  readonly onTryAgain: () => void
-  readonly onDiscard: () => void
+  readonly onStartNewLeague: () => void
 }
 
-export function MigrationRequiredScreen({
-  seasonValues,
-  seasonError,
+/**
+ * Shown when local storage holds a league written by an older build. There are
+ * no migrations before 1.0, so the only path forward is an explicit,
+ * confirmed clear followed by the normal create-league flow. The stale record
+ * is never overwritten silently — the player must click the button.
+ */
+export function VersionMismatchScreen({
   actionError,
   isBusy,
-  onSeasonValueChange,
-  onMigrate,
-  onTryAgain,
-  onDiscard,
-}: MigrationRequiredScreenProps) {
+  onStartNewLeague,
+}: VersionMismatchScreenProps) {
   const headingRef = useFocusOnMount()
 
   return (
     <main className="standalone-state" aria-busy={isBusy}>
       <section
-        className="state-panel migration-panel"
-        aria-labelledby="migration-required-heading"
+        className="state-panel version-mismatch-panel"
+        aria-labelledby="version-mismatch-heading"
       >
-        <p className="eyebrow">Local save update required</p>
-        <h1
-          id="migration-required-heading"
-          ref={headingRef}
-          tabIndex={-1}
-        >
-          Complete the season foundation
+        <p className="eyebrow">Local save incompatible</p>
+        <h1 id="version-mismatch-heading" ref={headingRef} tabIndex={-1}>
+          This league can&rsquo;t be opened
         </h1>
         <p className="lede">
-          A valid version 1 league save is present. Migration leaves it
-          untouched; it is deleted only if you explicitly discard it.
+          This league was saved by an older build and can&rsquo;t be opened.
+          Start a new league to continue.
         </p>
-        <p className="migration-copy">
-          Review and approve all four displayed season inputs. No year, date,
-          spacing, or schedule seed is chosen silently.
-        </p>
-
-        <form
-          className="migration-form"
-          onSubmit={onMigrate}
-          aria-busy={isBusy}
-          noValidate
-        >
-          <SeasonSetupFields
-            idPrefix="migration-season"
-            values={seasonValues}
-            error={seasonError}
-            isBusy={isBusy}
-            onChange={onSeasonValueChange}
-          />
-          <div className="setup-submit-row">
-            <button
-              type="submit"
-              className="form-submit-button"
-              disabled={isBusy}
-            >
-              {isBusy ? 'Migrating saved league…' : 'Migrate saved league'}
-            </button>
-          </div>
-        </form>
-
         {actionError !== null && (
           <p className="recovery-error" role="alert">
             {actionError}
           </p>
         )}
-
         <div className="recovery-actions">
           <button
             type="button"
-            className="secondary-button"
-            onClick={onTryAgain}
-            disabled={isBusy}
-          >
-            Try reading save again
-          </button>
-          <button
-            type="button"
             className="danger-button"
-            onClick={onDiscard}
+            onClick={onStartNewLeague}
             disabled={isBusy}
           >
-            Discard version 1 save and start new league
+            {isBusy
+              ? 'Removing the old league…'
+              : 'Start a new league'}
           </button>
         </div>
         <p className="recovery-note">
-          Migration creates a separate version 2 record. It does not overwrite
-          or delete the version 1 save.
+          Starting a new league permanently removes the incompatible saved
+          record. It cannot be undone.
         </p>
       </section>
     </main>

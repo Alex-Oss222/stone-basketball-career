@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { createLeagueSeasonDomainFixture } from '../persistence/leagueSnapshotV2.fixture'
+import { createLeagueSeasonDomainFixture } from '../persistence/leagueSnapshot.fixture'
 
 const domainFixture = createLeagueSeasonDomainFixture()
 

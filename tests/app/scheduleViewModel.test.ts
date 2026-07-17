@@ -28,12 +28,12 @@ import {
 } from '../../src/domain/ids'
 import { parseLocalDate } from '../../src/domain/localDate'
 import type {
-  LeagueSnapshotV2GameDayDto,
-  LeagueSnapshotV2LeagueDto,
-  LeagueSnapshotV2LeagueScheduleDto,
-  LeagueSnapshotV2ScheduledGameDto,
-  LeagueSnapshotV2TeamDto,
-} from '../../src/persistence/leagueSnapshotV2'
+  LeagueSnapshotGameDayDto,
+  LeagueSnapshotLeagueDto,
+  LeagueSnapshotLeagueScheduleDto,
+  LeagueSnapshotScheduledGameDto,
+  LeagueSnapshotTeamDto,
+} from '../../src/persistence/leagueSnapshot'
 
 const TEAM_A_ID = parseTeamId('team_schedule_view_a')
 const TEAM_B_ID = parseTeamId('team_schedule_view_b')
@@ -66,7 +66,7 @@ const gameDays = Object.freeze([
   gameDay(5),
 ])
 
-const schedule: LeagueSnapshotV2LeagueScheduleDto = Object.freeze({
+const schedule: LeagueSnapshotLeagueScheduleDto = Object.freeze({
   id: parseScheduleId('schedule_view_model_fixture'),
   leagueId: parseLeagueId('league_schedule_view_model'),
   seasonId: SEASON_ID,
@@ -80,7 +80,7 @@ const schedule: LeagueSnapshotV2LeagueScheduleDto = Object.freeze({
   games,
 })
 
-const league: LeagueSnapshotV2LeagueDto = Object.freeze({
+const league: LeagueSnapshotLeagueDto = Object.freeze({
   id: schedule.leagueId,
   generatorVersion: 1,
   seedFingerprint: 'scheduleview',
@@ -267,7 +267,7 @@ describe('deterministic schedule display formatting', () => {
       'all' | TeamScheduleLocation
     >()
     expectTypeOf<ScheduleGameDayGroup['games']>().toEqualTypeOf<
-      readonly LeagueSnapshotV2ScheduledGameDto[]
+      readonly LeagueSnapshotScheduledGameDto[]
     >()
   })
 })
@@ -278,8 +278,8 @@ function game(
   homeTeamId: typeof TEAM_A_ID,
   awayTeamId: typeof TEAM_A_ID,
   currentScheduledDate: string,
-  status: LeagueSnapshotV2ScheduledGameDto['status'],
-): LeagueSnapshotV2ScheduledGameDto {
+  status: LeagueSnapshotScheduledGameDto['status'],
+): LeagueSnapshotScheduledGameDto {
   const date = parseLocalDate(currentScheduledDate)
   return Object.freeze({
     id: GAME_IDS[index],
@@ -296,7 +296,7 @@ function game(
   })
 }
 
-function gameDay(index: number): LeagueSnapshotV2GameDayDto {
+function gameDay(index: number): LeagueSnapshotGameDayDto {
   return Object.freeze({
     id: GAME_DAY_IDS[index],
     seasonId: SEASON_ID,
@@ -311,7 +311,7 @@ function team(
   city: string,
   nickname: string,
   abbreviation: string,
-): LeagueSnapshotV2TeamDto {
+): LeagueSnapshotTeamDto {
   return Object.freeze({
     id,
     city,

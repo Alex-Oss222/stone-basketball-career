@@ -6,11 +6,11 @@ import {
   LeagueScheduleOverviewContent,
   TeamScheduleContent,
 } from '../../src/ui/schedulePages'
-import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
+import { createLeagueSnapshotFixture } from '../persistence/leagueSnapshot.fixture'
 
 describe('TeamScheduleContent', () => {
   it('renders one month of managed-team games with stage and view tabs', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const presentation = createLeaguePresentationBundle(snapshot)
     const managedTeam = presentation.league.teams.find(
       (team) => team.id === presentation.managedTeamId,
@@ -50,7 +50,7 @@ describe('TeamScheduleContent', () => {
 
   it('splits the list view into upcoming and recent games', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const markup = renderToStaticMarkup(
       <TeamScheduleContent presentation={presentation} initialViewMode="list" />,
@@ -66,7 +66,7 @@ describe('TeamScheduleContent', () => {
 
   it('renders the next-game command bar, derived badges, and Today control', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const calendar = renderToStaticMarkup(
       <TeamScheduleContent presentation={presentation} />,
@@ -88,7 +88,7 @@ describe('TeamScheduleContent', () => {
 
   it('renders the inspected team calendar view when selected', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const markup = renderToStaticMarkup(
       <TeamScheduleContent presentation={presentation} initialViewMode="calendar" />,
@@ -103,7 +103,7 @@ describe('TeamScheduleContent', () => {
 
   it('shows an honest placeholder for a scaffolded stage', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const postseason = renderToStaticMarkup(
       <TeamScheduleContent presentation={presentation} initialStage="postseason" />,
@@ -116,7 +116,7 @@ describe('TeamScheduleContent', () => {
 
   it('filters the list timeline by All, Upcoming, and Final', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const list = renderToStaticMarkup(
       <TeamScheduleContent presentation={presentation} initialViewMode="list" />,
@@ -133,7 +133,7 @@ describe('TeamScheduleContent', () => {
   })
 
   it('provides all eight inspected teams without changing managed ownership', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const presentation = createLeaguePresentationBundle(snapshot)
     const inspectedTeamId = presentation.league.teams[3].id
     const revisionBefore = snapshot.revision
@@ -159,7 +159,7 @@ describe('TeamScheduleContent', () => {
   })
 
   it('permits first-canonical-team inspection when no managed team exists', () => {
-    const snapshot = createLeagueSnapshotV2Fixture(null)
+    const snapshot = createLeagueSnapshotFixture(null)
     const presentation = createLeaguePresentationBundle(snapshot)
     const firstTeam = presentation.league.teams[0]
 
@@ -175,7 +175,7 @@ describe('TeamScheduleContent', () => {
 
   it('applies the site filter within the visible month', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const homeMarkup = renderToStaticMarkup(
       <TeamScheduleContent
@@ -208,7 +208,7 @@ describe('TeamScheduleContent', () => {
   })
 
   it('keeps an unresolved postponed game in the explicit TBA section', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const firstGame = snapshot.leagueSchedule.games.find(
       (game) =>
         game.homeTeamId === snapshot.managedTeamId ||
@@ -244,7 +244,7 @@ describe('TeamScheduleContent', () => {
 
   it('renders semantic filters, tables, and focusable game controls', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const markup = renderToStaticMarkup(
       <TeamScheduleContent presentation={presentation} initialViewMode="list" />,
@@ -266,7 +266,7 @@ describe('TeamScheduleContent', () => {
 
   it('renders the shared details surface from the selected game view model', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const managedGames = presentation.schedule.games.filter(
       (game) =>
@@ -317,7 +317,7 @@ describe('TeamScheduleContent', () => {
 describe('LeagueCalendarContent', () => {
   it('renders the current month as an accessible table without a grid role', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const markup = renderToStaticMarkup(
       <LeagueCalendarContent presentation={presentation} />,
@@ -336,7 +336,7 @@ describe('LeagueCalendarContent', () => {
 
   it('shows managed-team game chips and the scope toggle by default', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const markup = renderToStaticMarkup(
       <LeagueCalendarContent presentation={presentation} />,
@@ -352,7 +352,7 @@ describe('LeagueCalendarContent', () => {
 
   it('renders a scrollable date-grouped list of full-name games', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const managedTeam = presentation.league.teams.find(
       (team) => team.id === presentation.managedTeamId,
@@ -379,7 +379,7 @@ describe('LeagueCalendarContent', () => {
 
   it('omits the scope toggle when no managed team exists', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(null),
+      createLeagueSnapshotFixture(null),
     )
     const markup = renderToStaticMarkup(
       <LeagueCalendarContent presentation={presentation} />,
@@ -391,7 +391,7 @@ describe('LeagueCalendarContent', () => {
 
   it('shows a derived league-events timeline with the next milestone', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const markup = renderToStaticMarkup(
       <LeagueCalendarContent presentation={presentation} />,
@@ -408,7 +408,7 @@ describe('LeagueCalendarContent', () => {
 
   it('shows the derived schedule overview and swaps the complementary panel', () => {
     const presentation = createLeaguePresentationBundle(
-      createLeagueSnapshotV2Fixture(),
+      createLeagueSnapshotFixture(),
     )
     const calendar = renderToStaticMarkup(
       <LeagueCalendarContent presentation={presentation} />,
@@ -433,7 +433,7 @@ describe('LeagueCalendarContent', () => {
 
 describe('LeagueScheduleOverviewContent', () => {
   it('summarizes only authoritative season and schedule values', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const markup = renderToStaticMarkup(
       <LeagueScheduleOverviewContent snapshot={snapshot} />,
     )

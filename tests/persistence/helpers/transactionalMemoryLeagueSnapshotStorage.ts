@@ -6,86 +6,80 @@ import type {
   LeagueSnapshotStorage,
   LeagueSnapshotStorageMutation,
   LeagueSnapshotStoragePhase,
-  VersionedLeagueSnapshotStorageState,
+  LeagueSnapshotStorageSlot,
 } from '../../../src/persistence/leagueSnapshotRepository'
 
 export type MemoryStorageOperation =
-  | 'read-v1'
-  | 'read-v2'
-  | 'write-v2:add'
-  | 'write-v2:put'
-  | 'clear-v1'
-  | 'clear-v2'
-  | 'reread-v1'
-  | 'reread-v2'
+  | 'read'
+  | 'write:add'
+  | 'write:put'
+  | 'clear'
+  | 'reread'
   | 'commit'
 
 export interface TransactionalMemoryStorageOptions {
   readonly failPhase?: LeagueSnapshotStoragePhase
   readonly transformReread?: (
-    state: VersionedLeagueSnapshotStorageState,
-  ) => VersionedLeagueSnapshotStorageState
+    slot: LeagueSnapshotStorageSlot,
+  ) => LeagueSnapshotStorageSlot
 }
 
 /**
  * A structured-cloning, rollback-capable test double for the repository's
- * transaction boundary. Mutations remain private until verification and the
- * simulated commit have both succeeded.
+ * single-slot transaction boundary. The mutation remains private until
+ * verification and the simulated commit have both succeeded.
  */
 export class TransactionalMemoryLeagueSnapshotStorage
   implements LeagueSnapshotStorage
 {
   readonly operations: MemoryStorageOperation[] = []
 
-  private committed: MutableVersionedState
+  private committed: MutableStorageSlot
   private failPhase: LeagueSnapshotStoragePhase | undefined
   private transformReread:
     | TransactionalMemoryStorageOptions['transformReread']
     | undefined
 
   constructor(
-    initial: VersionedLeagueSnapshotStorageState = {
-      v1: absentStorageSlot(),
-      v2: absentStorageSlot(),
-    },
+    initial: LeagueSnapshotStorageSlot = absentStorageSlot(),
     options: TransactionalMemoryStorageOptions = {},
   ) {
-    this.committed = cloneState(initial)
+    this.committed = cloneSlot(initial)
     this.failPhase = options.failPhase
     this.transformReread = options.transformReread
   }
 
-  async read(): Promise<VersionedLeagueSnapshotStorageState> {
-    this.operations.push('read-v1', 'read-v2')
+  async read(): Promise<LeagueSnapshotStorageSlot> {
+    this.operations.push('read')
     this.throwIfConfigured('read')
-    return cloneState(this.committed)
+    return cloneSlot(this.committed)
   }
 
   async transact<Result>(
     prepare: Parameters<LeagueSnapshotStorage['transact']>[0],
   ): Promise<Result> {
-    const draft = cloneState(this.committed)
-    const plan = prepare(cloneState(draft)) as ReturnType<typeof prepare>
+    const draft = cloneSlot(this.committed)
+    const plan = prepare(cloneSlot(draft)) as ReturnType<typeof prepare>
 
     applyMutation(draft, plan.mutation, this.operations, () => {
       this.throwIfConfigured(
-        plan.mutation.kind === 'write-v2' ? 'write-v2' : 'clear',
+        plan.mutation.kind === 'write' ? 'write' : 'clear',
       )
     })
 
     this.throwIfConfigured('reread')
-    this.operations.push('reread-v1', 'reread-v2')
-    const reread = this.transformReread?.(cloneState(draft)) ?? draft
-    const result = plan.verify(cloneState(reread))
+    this.operations.push('reread')
+    const reread = this.transformReread?.(cloneSlot(draft)) ?? draft
+    const result = plan.verify(cloneSlot(reread))
 
     this.throwIfConfigured('commit')
     this.operations.push('commit')
-    this.committed = cloneState(draft)
+    this.committed = cloneSlot(draft)
     return result as Result
   }
 
-  inspect(): VersionedLeagueSnapshotStorageState {
-    return cloneState(this.committed)
+  inspect(): LeagueSnapshotStorageSlot {
+    return cloneSlot(this.committed)
   }
 
   setFailure(phase: LeagueSnapshotStoragePhase | undefined): void {
@@ -108,52 +102,40 @@ export class TransactionalMemoryLeagueSnapshotStorage
   }
 }
 
-interface MutableVersionedState {
-  v1: MutableStorageSlot
-  v2: MutableStorageSlot
-}
-
 interface MutableStorageSlot {
   present: boolean
   value: unknown
 }
 
 function applyMutation(
-  state: MutableVersionedState,
+  slot: MutableStorageSlot,
   mutation: LeagueSnapshotStorageMutation,
   operations: MemoryStorageOperation[],
   beforeMutation: () => void,
 ): void {
   beforeMutation()
 
-  if (mutation.kind === 'clear-both') {
-    operations.push('clear-v1', 'clear-v2')
-    state.v1 = absentStorageSlot()
-    state.v2 = absentStorageSlot()
+  if (mutation.kind === 'clear') {
+    operations.push('clear')
+    slot.present = false
+    slot.value = undefined
     return
   }
 
-  operations.push(`write-v2:${mutation.mode}`)
-  if (mutation.mode === 'add' && state.v2.present) {
+  operations.push(`write:${mutation.mode}`)
+  if (mutation.mode === 'add' && slot.present) {
     throw new LeagueSnapshotConflictError(
-      'The V2 storage location already contains a record',
+      'The active league location already contains a record',
     )
   }
-  state.v2 = presentStorageSlot(clone(mutation.record))
+  slot.present = true
+  slot.value = clone(mutation.record)
 }
 
-function cloneState(
-  state: VersionedLeagueSnapshotStorageState,
-): MutableVersionedState {
+function cloneSlot(slot: LeagueSnapshotStorageSlot): MutableStorageSlot {
   return {
-    v1: {
-      present: state.v1.present,
-      value: clone(state.v1.value),
-    },
-    v2: {
-      present: state.v2.present,
-      value: clone(state.v2.value),
-    },
+    present: slot.present,
+    value: clone(slot.value),
   }
 }
 

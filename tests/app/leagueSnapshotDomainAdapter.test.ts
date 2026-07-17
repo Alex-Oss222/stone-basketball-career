@@ -1,18 +1,18 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import {
-  adaptLeagueSnapshotV2ToDomain,
+  adaptLeagueSnapshotToDomain,
   createLeaguePresentationBundle,
 } from '../../src/app/leagueSnapshotDomainAdapter'
 import { parseTeamId } from '../../src/domain/ids'
-import { createLeagueSnapshotV2Fixture } from '../persistence/leagueSnapshotV2.fixture'
+import { createLeagueSnapshotFixture } from '../persistence/leagueSnapshot.fixture'
 
-describe('LeagueSnapshotV2 domain adapter', () => {
+describe('LeagueSnapshot domain adapter', () => {
   it('hydrates one detached, validated live-domain projection', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const before = JSON.stringify(snapshot)
 
-    const domain = adaptLeagueSnapshotV2ToDomain(snapshot)
+    const domain = adaptLeagueSnapshotToDomain(snapshot)
 
     expect(domain.league.id).toBe(snapshot.league.id)
     expect(domain.season.id).toBe(snapshot.season.id)
@@ -36,11 +36,11 @@ describe('LeagueSnapshotV2 domain adapter', () => {
   })
 
   it('normalizes nullable DTO actual dates to the optional domain contract', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const sourceGame = snapshot.leagueSchedule.games[0]
     expect(sourceGame.actualDate).toBeNull()
 
-    const domain = adaptLeagueSnapshotV2ToDomain(snapshot)
+    const domain = adaptLeagueSnapshotToDomain(snapshot)
     const game = domain.schedule.games.find(
       (candidate) => candidate.id === sourceGame.id,
     )
@@ -52,7 +52,7 @@ describe('LeagueSnapshotV2 domain adapter', () => {
   })
 
   it('creates exactly one normalized entry per stored game and calendar event', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
 
     const bundle = createLeaguePresentationBundle(snapshot)
     const expectedCount =
@@ -82,7 +82,7 @@ describe('LeagueSnapshotV2 domain adapter', () => {
   })
 
   it('preserves explicit null managed-team context without managed entries', () => {
-    const snapshot = createLeagueSnapshotV2Fixture(null)
+    const snapshot = createLeagueSnapshotFixture(null)
 
     const bundle = createLeaguePresentationBundle(snapshot)
 
@@ -93,20 +93,20 @@ describe('LeagueSnapshotV2 domain adapter', () => {
   })
 
   it('rejects a managed team that is not in the hydrated league', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
+    const snapshot = createLeagueSnapshotFixture()
     const malformed = {
       ...snapshot,
       managedTeamId: parseTeamId('team_foreign_adapter_test'),
     }
 
-    expect(() => adaptLeagueSnapshotV2ToDomain(malformed)).toThrow(
+    expect(() => adaptLeagueSnapshotToDomain(malformed)).toThrow(
       /must reference exactly one hydrated league team/,
     )
   })
 
   it('freezes the public projection and normalized presentation foundation', () => {
-    const snapshot = createLeagueSnapshotV2Fixture()
-    const projection = adaptLeagueSnapshotV2ToDomain(snapshot)
+    const snapshot = createLeagueSnapshotFixture()
+    const projection = adaptLeagueSnapshotToDomain(snapshot)
     const bundle = createLeaguePresentationBundle(snapshot)
 
     expect(Object.isFrozen(projection)).toBe(true)
@@ -123,7 +123,7 @@ describe('LeagueSnapshotV2 domain adapter', () => {
   })
 })
 
-describe('LeagueSnapshotV2 adapter architecture', () => {
+describe('LeagueSnapshot adapter architecture', () => {
   const source = readFileSync(
     new URL('../../src/app/leagueSnapshotDomainAdapter.ts', import.meta.url),
     'utf8',

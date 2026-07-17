@@ -3,12 +3,12 @@ import { compareLocalDates, parseLocalDate } from '../domain/localDate'
 import type { LocalDate } from '../domain/localDate'
 import type { SeasonPhase } from '../domain/season'
 import type {
-  LeagueSnapshotV2GameDayDto,
-  LeagueSnapshotV2LeagueDto,
-  LeagueSnapshotV2LeagueScheduleDto,
-  LeagueSnapshotV2ScheduledGameDto,
-  LeagueSnapshotV2TeamDto,
-} from '../persistence/leagueSnapshotV2'
+  LeagueSnapshotGameDayDto,
+  LeagueSnapshotLeagueDto,
+  LeagueSnapshotLeagueScheduleDto,
+  LeagueSnapshotScheduledGameDto,
+  LeagueSnapshotTeamDto,
+} from '../persistence/leagueSnapshot'
 
 export type TeamScheduleLocation = 'home' | 'away'
 export type TeamScheduleFilter = 'all' | TeamScheduleLocation
@@ -20,8 +20,8 @@ export interface TeamScheduleTotals {
 }
 
 export interface ScheduleGameDayGroup {
-  readonly gameDay: LeagueSnapshotV2GameDayDto
-  readonly games: readonly LeagueSnapshotV2ScheduledGameDto[]
+  readonly gameDay: LeagueSnapshotGameDayDto
+  readonly games: readonly LeagueSnapshotScheduledGameDto[]
 }
 
 const MONTH_NAMES = [
@@ -50,18 +50,18 @@ const SEASON_PHASE_LABELS = {
 
 /** Returns a team's games in their authoritative stored schedule order. */
 export function getTeamScheduleGames(
-  schedule: LeagueSnapshotV2LeagueScheduleDto,
+  schedule: LeagueSnapshotLeagueScheduleDto,
   teamId: TeamId,
-): readonly LeagueSnapshotV2ScheduledGameDto[] {
+): readonly LeagueSnapshotScheduledGameDto[] {
   return schedule.games.filter((game) => isTeamInGame(game, teamId))
 }
 
 /** Resolves the opposing stored team without creating substitute display data. */
 export function resolveOpponent(
-  league: LeagueSnapshotV2LeagueDto,
-  game: LeagueSnapshotV2ScheduledGameDto,
+  league: LeagueSnapshotLeagueDto,
+  game: LeagueSnapshotScheduledGameDto,
   teamId: TeamId,
-): LeagueSnapshotV2TeamDto {
+): LeagueSnapshotTeamDto {
   const opponentTeamId = getOpponentTeamId(game, teamId)
   const opponent = league.teams.find((team) => team.id === opponentTeamId)
 
@@ -76,7 +76,7 @@ export function resolveOpponent(
 
 /** Returns the selected team's home/away role in one stored matchup. */
 export function getTeamLocation(
-  game: LeagueSnapshotV2ScheduledGameDto,
+  game: LeagueSnapshotScheduledGameDto,
   teamId: TeamId,
 ): TeamScheduleLocation {
   assertDistinctMatchup(game)
@@ -91,12 +91,12 @@ export function getTeamLocation(
  * Equal-date ties retain authoritative stored game order.
  */
 export function findNextScheduledGame(
-  schedule: LeagueSnapshotV2LeagueScheduleDto,
+  schedule: LeagueSnapshotLeagueScheduleDto,
   teamId: TeamId,
   currentDate: LocalDate,
-): LeagueSnapshotV2ScheduledGameDto | null {
+): LeagueSnapshotScheduledGameDto | null {
   const parsedCurrentDate = parseLocalDate(currentDate)
-  let nextGame: LeagueSnapshotV2ScheduledGameDto | null = null
+  let nextGame: LeagueSnapshotScheduledGameDto | null = null
 
   for (const game of schedule.games) {
     if (!isUpcomingTeamGame(game, teamId, parsedCurrentDate)) continue
@@ -113,10 +113,10 @@ export function findNextScheduledGame(
 
 /** Filters upcoming games without sorting or mutating their stored order. */
 export function getUpcomingScheduledGames(
-  schedule: LeagueSnapshotV2LeagueScheduleDto,
+  schedule: LeagueSnapshotLeagueScheduleDto,
   teamId: TeamId,
   currentDate: LocalDate,
-): readonly LeagueSnapshotV2ScheduledGameDto[] {
+): readonly LeagueSnapshotScheduledGameDto[] {
   const parsedCurrentDate = parseLocalDate(currentDate)
   return schedule.games.filter((game) =>
     isUpcomingTeamGame(game, teamId, parsedCurrentDate),
@@ -128,7 +128,7 @@ export function getUpcomingScheduledGames(
  * order. Valid snapshots make every reference resolvable and unambiguous.
  */
 export function groupGamesByGameDay(
-  schedule: LeagueSnapshotV2LeagueScheduleDto,
+  schedule: LeagueSnapshotLeagueScheduleDto,
 ): readonly ScheduleGameDayGroup[] {
   const gamesById = new Map(
     schedule.games.map((game) => [game.id, game] as const),
@@ -167,7 +167,7 @@ export function formatLocalDateForDisplay(date: LocalDate): string {
 
 /** Counts every stored team matchup, independent of game status. */
 export function calculateTeamScheduleTotals(
-  schedule: LeagueSnapshotV2LeagueScheduleDto,
+  schedule: LeagueSnapshotLeagueScheduleDto,
   teamId: TeamId,
 ): TeamScheduleTotals {
   let homeGames = 0
@@ -191,10 +191,10 @@ export function calculateTeamScheduleTotals(
 
 /** Applies a home/away filter while retaining authoritative game order. */
 export function filterTeamScheduleGames(
-  schedule: LeagueSnapshotV2LeagueScheduleDto,
+  schedule: LeagueSnapshotLeagueScheduleDto,
   teamId: TeamId,
   filter: TeamScheduleFilter,
-): readonly LeagueSnapshotV2ScheduledGameDto[] {
+): readonly LeagueSnapshotScheduledGameDto[] {
   const teamGames = getTeamScheduleGames(schedule, teamId)
   if (filter === 'all') return teamGames
   return teamGames.filter((game) => getTeamLocation(game, teamId) === filter)
@@ -202,7 +202,7 @@ export function filterTeamScheduleGames(
 
 /** Identifies whether a matchup contains the selected managed team. */
 export function isManagedTeamGame(
-  game: LeagueSnapshotV2ScheduledGameDto,
+  game: LeagueSnapshotScheduledGameDto,
   managedTeamId: TeamId | null,
 ): boolean {
   return managedTeamId !== null && isTeamInGame(game, managedTeamId)
@@ -213,14 +213,14 @@ export function formatSeasonPhaseForDisplay(phase: SeasonPhase): string {
 }
 
 function isTeamInGame(
-  game: LeagueSnapshotV2ScheduledGameDto,
+  game: LeagueSnapshotScheduledGameDto,
   teamId: TeamId,
 ): boolean {
   return game.homeTeamId === teamId || game.awayTeamId === teamId
 }
 
 function getOpponentTeamId(
-  game: LeagueSnapshotV2ScheduledGameDto,
+  game: LeagueSnapshotScheduledGameDto,
   teamId: TeamId,
 ): TeamId {
   assertDistinctMatchup(game)
@@ -230,14 +230,14 @@ function getOpponentTeamId(
   throw new RangeError(`Team ${teamId} does not participate in game ${game.id}`)
 }
 
-function assertDistinctMatchup(game: LeagueSnapshotV2ScheduledGameDto): void {
+function assertDistinctMatchup(game: LeagueSnapshotScheduledGameDto): void {
   if (game.homeTeamId === game.awayTeamId) {
     throw new RangeError(`Game ${game.id} does not contain distinct teams`)
   }
 }
 
 function isUpcomingTeamGame(
-  game: LeagueSnapshotV2ScheduledGameDto,
+  game: LeagueSnapshotScheduledGameDto,
   teamId: TeamId,
   currentDate: LocalDate,
 ): boolean {
@@ -250,8 +250,8 @@ function isUpcomingTeamGame(
 }
 
 function compareKnownScheduledDates(
-  left: LeagueSnapshotV2ScheduledGameDto,
-  right: LeagueSnapshotV2ScheduledGameDto,
+  left: LeagueSnapshotScheduledGameDto,
+  right: LeagueSnapshotScheduledGameDto,
 ): -1 | 0 | 1 {
   if (
     left.currentScheduledDate === null ||

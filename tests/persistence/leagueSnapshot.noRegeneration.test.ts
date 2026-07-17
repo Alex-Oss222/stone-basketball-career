@@ -1,14 +1,14 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
-import { createLeagueSnapshotV2Fixture } from './leagueSnapshotV2.fixture'
+import { createLeagueSnapshotFixture } from './leagueSnapshot.fixture'
 
 // This DTO is fully materialized before the test resets and mocks the module
 // graph. Normal restoration therefore has no reason to create domain content.
 const serializedFixture = JSON.parse(
-  JSON.stringify(createLeagueSnapshotV2Fixture()),
+  JSON.stringify(createLeagueSnapshotFixture()),
 ) as unknown
 
-describe('LeagueSnapshotV2 restoration architecture', () => {
+describe('LeagueSnapshot restoration architecture', () => {
   afterEach(() => {
     vi.doUnmock('../../src/app/commands/createSeasonFoundation')
     vi.doUnmock('../../src/generation/generateSchedule')
@@ -74,10 +74,10 @@ describe('LeagueSnapshotV2 restoration architecture', () => {
       return { ...actual, createRandomSource }
     })
 
-    const { parseLeagueSnapshotV2 } = await import(
-      '../../src/persistence/leagueSnapshotV2'
+    const { parseLeagueSnapshot } = await import(
+      '../../src/persistence/leagueSnapshot'
     )
-    const restored = parseLeagueSnapshotV2(serializedFixture)
+    const restored = parseLeagueSnapshot(serializedFixture)
 
     expect(restored).toEqual(serializedFixture)
     expect(createSeasonFoundation).not.toHaveBeenCalled()

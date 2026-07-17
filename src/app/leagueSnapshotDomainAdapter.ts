@@ -32,19 +32,19 @@ import type {
 import type { CalendarEntryViewModel } from './calendarViewModel'
 import { createCalendarEntries } from './calendarViewModel'
 import type {
-  LeagueSnapshotV2,
-  LeagueSnapshotV2CalendarEventDto,
-  LeagueSnapshotV2GameDayDto,
-  LeagueSnapshotV2LeagueDto,
-  LeagueSnapshotV2LeagueScheduleDto,
-  LeagueSnapshotV2OpponentRequirementDto,
-  LeagueSnapshotV2PlayerDto,
-  LeagueSnapshotV2ScheduledGameDto,
-  LeagueSnapshotV2TeamDto,
-} from '../persistence/leagueSnapshotV2'
+  LeagueSnapshot,
+  LeagueSnapshotCalendarEventDto,
+  LeagueSnapshotGameDayDto,
+  LeagueSnapshotLeagueDto,
+  LeagueSnapshotLeagueScheduleDto,
+  LeagueSnapshotOpponentRequirementDto,
+  LeagueSnapshotPlayerDto,
+  LeagueSnapshotScheduledGameDto,
+  LeagueSnapshotTeamDto,
+} from '../persistence/leagueSnapshot'
 
 /**
- * Validated live-domain values projected from one authoritative V2 snapshot.
+ * Validated live-domain values projected from one authoritative snapshot.
  * This is the only DTO-to-domain hydration seam used by Milestone 2 UI.
  */
 export interface LeagueSnapshotDomainProjection {
@@ -64,8 +64,8 @@ export interface LeaguePresentationBundle
   readonly calendarEntries: readonly CalendarEntryViewModel[]
 }
 
-export function adaptLeagueSnapshotV2ToDomain(
-  snapshot: LeagueSnapshotV2,
+export function adaptLeagueSnapshotToDomain(
+  snapshot: LeagueSnapshot,
 ): LeagueSnapshotDomainProjection {
   const league = adaptLeague(snapshot.league)
   const season = parseSeason(snapshot.season)
@@ -103,9 +103,9 @@ export function adaptLeagueSnapshotV2ToDomain(
 }
 
 export function createLeaguePresentationBundle(
-  snapshot: LeagueSnapshotV2,
+  snapshot: LeagueSnapshot,
 ): LeaguePresentationBundle {
-  const domain = adaptLeagueSnapshotV2ToDomain(snapshot)
+  const domain = adaptLeagueSnapshotToDomain(snapshot)
   const calendarEntries = createCalendarEntries({
     league: domain.league,
     schedule: domain.schedule,
@@ -119,7 +119,7 @@ export function createLeaguePresentationBundle(
   })
 }
 
-function adaptLeague(source: LeagueSnapshotV2LeagueDto): League {
+function adaptLeague(source: LeagueSnapshotLeagueDto): League {
   const league = Object.freeze({
     id: parseLeagueId(source.id),
     generatorVersion: source.generatorVersion,
@@ -132,7 +132,7 @@ function adaptLeague(source: LeagueSnapshotV2LeagueDto): League {
   return league
 }
 
-function adaptTeam(source: LeagueSnapshotV2TeamDto): Team {
+function adaptTeam(source: LeagueSnapshotTeamDto): Team {
   return Object.freeze({
     id: parseTeamId(source.id),
     city: source.city,
@@ -143,7 +143,7 @@ function adaptTeam(source: LeagueSnapshotV2TeamDto): Team {
   })
 }
 
-function adaptPlayer(source: LeagueSnapshotV2PlayerDto): Player {
+function adaptPlayer(source: LeagueSnapshotPlayerDto): Player {
   return Object.freeze({
     id: parsePlayerId(source.id),
     teamId: parseTeamId(source.teamId),
@@ -160,7 +160,7 @@ function adaptPlayer(source: LeagueSnapshotV2PlayerDto): Player {
 }
 
 function adaptCalendarEvent(
-  source: LeagueSnapshotV2CalendarEventDto,
+  source: LeagueSnapshotCalendarEventDto,
 ): CalendarEvent {
   const base = {
     id: source.id,
@@ -190,7 +190,7 @@ function adaptCalendarEvent(
 }
 
 function adaptLeagueSchedule(
-  source: LeagueSnapshotV2LeagueScheduleDto,
+  source: LeagueSnapshotLeagueScheduleDto,
 ): LeagueSchedule {
   return Object.freeze({
     id: parseScheduleId(source.id),
@@ -210,7 +210,7 @@ function adaptLeagueSchedule(
 }
 
 function adaptOpponentRequirement(
-  source: LeagueSnapshotV2OpponentRequirementDto,
+  source: LeagueSnapshotOpponentRequirementDto,
 ): OpponentRequirement {
   return Object.freeze({
     firstTeamId: parseTeamId(source.firstTeamId),
@@ -223,7 +223,7 @@ function adaptOpponentRequirement(
   })
 }
 
-function adaptGameDay(source: LeagueSnapshotV2GameDayDto): GameDay {
+function adaptGameDay(source: LeagueSnapshotGameDayDto): GameDay {
   return Object.freeze({
     id: parseGameDayId(source.id),
     seasonId: parseSeasonId(source.seasonId),
@@ -234,7 +234,7 @@ function adaptGameDay(source: LeagueSnapshotV2GameDayDto): GameDay {
 }
 
 function adaptScheduledGame(
-  source: LeagueSnapshotV2ScheduledGameDto,
+  source: LeagueSnapshotScheduledGameDto,
 ): ScheduledGame {
   return Object.freeze({
     id: parseGameId(source.id),
