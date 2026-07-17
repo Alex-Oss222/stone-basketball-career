@@ -78,19 +78,25 @@ Two things make this safe rather than reckless:
 
 ## Status
 
-**Current section: §8 — League rules and rotation plans (rotation half).**
+**Current section: §8B — Detailed player ratings and category drilldown.**
 
 Sections 1–7 are shipped. §7 closed 2026-07-17: the save format is collapsed to
 one monotonic version (`LEAGUE_SNAPSHOT_VERSION = 3`); the V1 DTO and the whole
 migration module are deleted; an old record now surfaces a "start a new league"
-version-mismatch screen instead of a migration. Verified by the full gate
-(tsc / oxlint / 1,079 tests / build), bundle-purity, and a five-dimension
-adversarial review — zero findings. Not committed yet.
+version-mismatch screen instead of a migration.
 
-§8's rule-pack half (`src/domain/leagueRules.ts`) also landed early by request.
-The rotation half is what §8 now covers: `RotationPlanV1`, its structured-issue
-validator, deterministic per-team CPU generation, and the functional Adjust
-Rotation editor that clears `DEFERRED(§8)`.
+**Re-sequenced 2026-07-17:** §8B (detailed ratings) runs **before** the §8
+rotation half, §8A, and §9. The rotation ability-selector and every §9 event
+formula must read the detailed sub-ratings, so the ratings model is built once,
+up front. §8's rule-pack half (`src/domain/leagueRules.ts`) is done; its rotation
+half — `RotationPlanV1`, the validator, deterministic CPU generation, and the
+functional Adjust Rotation editor — now follows §8B and consumes §8B's versioned
+ability selector. **R1 is done** — the taxonomy is frozen in ADR 0008 (Accepted):
+18 categories, 67 sub-ratings. Next is **R2** (the pure detailed-rating domain).
+
+Open §6 polish, deliberately deferred: Alex dislikes how the empty Standings
+card sits in the Home layout — revisit when its data lands (tagged on the
+card's `DEFERRED(§11)` note).
 
 Open §6 polish, deliberately deferred: Alex dislikes how the empty Standings
 card sits in the Home layout — revisit when its data lands (tagged on the
@@ -603,6 +609,118 @@ only `profile.runtime`. Enforce it with the function signatures, not comments.
   assigned runtime profile.
 - `grep -rn "DEFERRED(§8)" src/` returns nothing. All four gates green.
 
+### 8B. Detailed player ratings and category drilldown
+
+**Decision (2026-07-17).** The authoritative player-skill model becomes the
+**67 numeric sub-ratings**; the existing **16 categories become derived
+letter-grade headings**, joined by two new derived categories — **Durability**
+and **Intangibles** — for **18 total**. This reverses today's model, where the 16
+categories are themselves the stored numbers (`src/domain/ratings.ts`). The full
+taxonomy, weights, and grade boundaries are frozen in **ADR 0008** (Accepted
+2026-07-17).
+
+Single source of truth:
+
+> Stored sub-ratings → derived category score → derived letter grade.
+
+Never store both layers — a stored parent could disagree with its derived
+children. Grades, category scores, offense/defense summaries, position fit, and
+**Overall are all derived, never stored**.
+
+- **Overall is derived + displayed only** — shown on cards and the player quick
+  view, never written to the save, never read by the simulation. **Potential is
+  removed entirely** (not stored, not shown, not a rating). Development is its
+  own system (§12) and never surfaces a potential-ceiling number.
+- **Simulation reads sub-ratings** through *versioned event selectors* (driving
+  finish, catch-and-shoot three, pass, turnover, rebound, fatigue, …), never the
+  letter grade and never the category weighted score as a shortcut. Display-
+  category weights and simulation-event weights carry **separate versions** —
+  changing a UI weight must not change a game outcome.
+
+**Sequencing (decided 2026-07-17).** §8B lands **before** the §8 rotation half,
+§8A, and §9. The rotation generator's `currentAbility` becomes a *versioned,
+position/role-aware ability selector over sub-ratings* (never a hidden overall),
+and every §9 event formula reads sub-ratings — so the model is built once and
+everything downstream consumes it from day one.
+
+**Sub-steps.**
+- **R1 — Freeze the taxonomy (ADR 0008). ✅ done 2026-07-17.** 18 categories, 67
+  sub-ratings; names and structure locked (basis-point weights, each category
+  totals 100%). Weights are V1 pending simulation calibration. Review trimmed
+  Pass Versatility, Situational Awareness, and Adaptability; merged the two
+  rebound-read skills into a shared Rebound Reading; and added the Durability and
+  Intangibles categories.
+- **R2 — Pure detailed-rating domain.** Exact sub-rating key constant; closed
+  strict record type + parser (reject missing/extra/non-integer/out-of-range);
+  category-definition registry; weighted category selector; existing grade
+  selector; version constants. Grades and scores are never stored.
+- **R3 — Detailed generation V2.** Player-quality baseline + category aptitude +
+  position bias (+ optional archetype bias) + field-specific variation → clamp to
+  a 0–100 integer. Labeled seed hierarchy `player-quality/v1/{id}`,
+  `player-category/v1/{id}/{cat}`, `player-skill/v1/{id}/{sub}` so adding a future
+  field shifts nothing. Golden vectors; distribution reports.
+- **R4 — League validation + snapshot bump.** Replace the stored macro ratings
+  with the detailed model; add schema/generation/definition versions; **monotonic
+  snapshot bump** — clean version break, no migration (per §7), a new league is
+  required. No-regeneration restore preserved.
+- **R5 — Rating view models.** Category rows, grade derivation, child rows,
+  calculation disclosure, grouping; memoized by (player reference, definition
+  version).
+- **R6 — Player-details UI.** The quick view + player page (see below). Accordion
+  category grades; click a category to reveal its numeric children; keyboard +
+  `aria-expanded`/`aria-controls`; grade as text, not colour alone; mobile stacks
+  vertically; expansion is transient React state — never persisted, never a save
+  revision.
+- **R7 — Integrate with §8 rotation.** Define the versioned rotation-ability
+  selector (position/role-weighted over categories); rotation legality stays
+  rating-independent; pin CPU-plan golden vectors.
+- **R8 — Freeze before §9.** Document each event → sub-rating usage; confirm
+  grades are presentation only; §9 consumes the detailed model from its first
+  line.
+
+**Ratings vs tendencies.** Ratings = *how well* (derived, letter-graded);
+tendencies (usage / rim / mid / three / pass / draw-foul) = *how often*
+(numeric or bars, never graded, high ≠ good). They stay separate sections.
+
+**Scouting (later).** True sub-ratings always drive the sim; scouting is a
+separate knowledge layer that shows owned players exactly and outside players as
+ranges + confidence — never the true number plus a cosmetic band.
+
+**Player quick view (hover) — full-width stacked sections:**
+1. Identity + key stats — name, jersey, primary/secondary position, weight, age,
+   team; **Overall** to the right; stats (PTS/REB/AST…) beneath.
+2. Target Role — spread edge-to-edge (target vs actual role, MPG, usage, skills).
+3. Contract — years left, guaranteed, total value, contract value (the one
+   contract summary that stays on the player surface; detailed contracts →
+   Finance).
+4. Health — status, morale, fatigue.
+5. Position & Role Coverage — the fit-by-position table.
+
+Hover shows the quick view; **click opens the full player page** (no separate
+"player card"). Trade Block → **Trade Center**.
+
+**Cross-screen UI notes (2026-07-17), captured so they aren't lost:**
+- Team Overview: Recent Transactions / News moved flush-left into the gap beside
+  Team Metrics; Age Breakdown removed — age distribution is background-only, never
+  shown. *(Done 2026-07-17.)*
+- Roster screen (later, §18): reuse the depth-chart panel; delete the roster-
+  composition block; salary tiers and contract expirations → Finance.
+- Training camp ↔ preseason: relationship **TBD** — decide later.
+- G-League affiliate development: **autonomous background** system that emits
+  player news; not a manual screen.
+
+**Exit gate.**
+- Every player stores all approved sub-ratings and **no** grade, category score,
+  overall, or potential.
+- All 16 grades derive from the versioned definition; clicking a category reveals
+  its numeric children (keyboard accessible, mobile-friendly, no persistence
+  write).
+- Identical seed reproduces identical detailed players; adding a field shifts
+  nothing; restore never regenerates.
+- CPU rotation selection uses the versioned ability selector; simulation has an
+  approved sub-rating → event mapping and display weights cannot change outcomes.
+- Snapshot version bumped. All four gates green.
+
 ### 9. Simulation kernel — one game
 
 **Goal.** `simulateGame(input, random): GameResult` producing a **real** instance
@@ -868,9 +986,9 @@ Current index (2026-07-17):
 
 | Unblocks at | Slot | Where |
 | --- | --- | --- |
-| §8 | Adjust Rotation button becomes a real editor destination | `homePage.tsx` |
+| §8 | Adjust Rotation button becomes a real editor destination; Team Overview Starting Five / Rotation panel + Review/View Rotation buttons | `homePage.tsx`, `teamOverviewPage.tsx` |
 | §10 | Continue (advance game day); Sim Game; Recent Results fills with real Finals; retire the dev-preview entry | `homePage.tsx` |
-| §11 | Record · Seed · Streak (command bar); Records · Ranks · Last 10 (Next Game); Season Pulse (all of it); Standings values; Team Stats ranks; team records in the post-game header | `homePage.tsx`, `gameResultPage.tsx` |
+| §11 | Record · Seed · Streak (command bar); Records · Ranks · Last 10 (Next Game); Season Pulse (all of it); Standings values; Team Stats ranks; team records in the post-game header; Team Overview header ranks/record/streak, Team Strengths & Weaknesses, Team Metrics | `homePage.tsx`, `gameResultPage.tsx`, `teamOverviewPage.tsx` |
 | §12 | Sim to Next Event (multi-day advance) | `homePage.tsx` |
 | §14 | Watch Game; and the event log unlocks at once: Game summary, Play-by-Play + key moments, Charts (game flow, shot chart), largest lead / lead changes / points off turnovers / points in paint | `homePage.tsx`, `gameResultPage.tsx` |
 | §15 | Division/Conference standings split (needs the 30-team alignment) | `homePage.tsx` |
@@ -887,12 +1005,17 @@ evaporate:
 | Front Office card (payroll, cap, tax, contracts) | financial model |
 | Important Headlines | league news system |
 | Post-game Game Info layer (venue, attendance, referees, game time) | venue/officials systems |
+| Team Overview: Needs Attention alerts, Health Summary, Development Watch | injury / contract / development systems |
+| Team Overview: Recent Transactions / News | transaction + news systems |
+| Team Overview: Cap Status + Team Direction header chips | financial model + ownership objectives |
 
 Clickable destinations already wired (live now; they land on honest planned
 pages until those pages are built): Review Offers → `front-office-market`,
 View Free Agents → `front-office-free-agency`, Adjust Rotation →
 `team-rotation-gameplan`, View Finances → `finances-overview`, View Full
-Schedule → `schedule-team-schedule`.
+Schedule → `schedule-team-schedule`. Team Overview adds: Review Rotation →
+`team-rotation-gameplan`, Medical Department / View Health → `team-health`,
+Front Office → `front-office-overview`, View Development → `team-development`.
 
 ## Risks
 
