@@ -37,25 +37,46 @@ postseason, or a V2 schema/repository migration.
 - Stable page IDs `schedule-calendar`, `schedule-team-schedule`, and
   `league-overview` remain unchanged.
 
+## M2.2 YearMonth foundation
+
+M2.2 defines a branded, immutable `YearMonth` string in exact `YYYY-MM`
+format. Its supported range is `0000-01` through `9999-12`, matching
+`LocalDate` years. Parsing never trims, pads, clamps, or corrects input.
+
+Pure month arithmetic accepts only safe integer offsets, supports movement in
+either direction, and rejects any result before `0000-01` or after
+`9999-12`. Month lengths and boundary dates remain governed by the existing
+proleptic-Gregorian `LocalDate` rules, including leap year `0000`.
+
+Weekday indexes use the fixed Sunday-first convention: Sunday is `0`, Monday
+is `1`, through Saturday as `6`. The calculation is independent of JavaScript
+`Date`, timestamps, locale, timezone, and the system clock.
+
+M2.3 will consume these primitives to build the explicit
+`LeagueYearDisplayRange` and complete pure month-grid models. It will not move
+range or grid state into `LeagueSnapshotV2`.
+
 ## Ordered implementation steps
 
-### 1. Calendar-month arithmetic
+### 1. YearMonth arithmetic (M2.2)
 
-Add pure calendar-month values and helpers, preferably in
-`src/domain/calendarMonth.ts`, with tests in
-`tests/domain/calendarMonth.test.ts`. Support month derivation, comparison,
-whole-month addition, first/last `LocalDate`, month length, Sunday-first weekday
-offset, and inclusive month enumeration. Test leap years, year and century
-crossings, supported bounds, invalid offsets, and deterministic behavior.
-Never expose or construct a JavaScript `Date`.
+The pure `src/domain/yearMonth.ts` module and
+`tests/domain/yearMonth.test.ts` implement the contract above: strict parsing,
+month derivation and comparison, bounded whole-month addition, first/last
+`LocalDate`, month length, Sunday-first weekday index, and inclusive month
+enumeration. They cover leap years, year and century crossings, supported
+bounds, invalid offsets, deterministic behavior, and the absence of
+JavaScript `Date` or locale APIs.
 
-### 2. Explicit LeagueYearDisplayRange
+### 2. Explicit LeagueYearDisplayRange and month-grid models (M2.3)
 
 Add a pure `LeagueYearDisplayRange` projection, preferably in
 `src/app/leagueYearDisplayRange.ts`, with focused tests. Derive July 1 through
 June 30 solely from stored season years and enumerate every included month.
 Prove independence from games, events, schedule seed, and schedule endpoints.
-Reject invalid inputs rather than clamping them.
+Reject invalid inputs rather than clamping them. Build complete pure
+month-grid structures from `YearMonth`, including ordered week rows and
+leading/trailing cells, without yet merging games or events and without React.
 
 ### 3. Shared normalized CalendarEntry
 
