@@ -44,6 +44,7 @@ import {
   TeamRosterContent,
 } from './ui/dashboardPages'
 import { HomeTodayContent } from './ui/homePage'
+import { TeamOverviewContent } from './ui/teamOverviewPage'
 import {
   ApplicationShell,
   AvailablePage,
@@ -701,6 +702,14 @@ function renderAvailablePage(
           }
           onNavigate={onNavigate}
           onOpenGameResultPreview={onOpenGameResultPreview}
+        />
+      )
+    case 'team-overview':
+      return (
+        <TeamOverviewContent
+          snapshot={snapshot}
+          team={controlledTeam}
+          onNavigate={onNavigate}
         />
       )
     case 'team-roster':

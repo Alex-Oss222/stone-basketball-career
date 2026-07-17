@@ -37,10 +37,11 @@ const EXPECTED_HIERARCHY = [
     id: 'team',
     label: 'Team',
     pages: [
+      { id: 'team-overview', label: 'Overview' },
       { id: 'team-roster', label: 'Roster' },
       { id: 'team-rotation-gameplan', label: 'Rotation & Gameplan' },
-      { id: 'team-health', label: 'Health' },
-      { id: 'team-development', label: 'Development' },
+      { id: 'team-health', label: 'Medical Department' },
+      { id: 'team-development', label: 'Coaching & Development' },
     ],
   },
   {
@@ -112,6 +113,7 @@ const EXPECTED_PAGE_IDS = EXPECTED_HIERARCHY.flatMap((section) =>
 
 const AVAILABLE_PAGE_IDS = [
   'home-today',
+  'team-overview',
   'team-roster',
   'schedule-team-schedule',
   'schedule-calendar',
@@ -143,7 +145,7 @@ describe('central navigation registry', () => {
     }
   })
 
-  it('marks exactly the seven implemented pages available', () => {
+  it('marks exactly the eight implemented pages available', () => {
     const pages = allPages()
 
     expect(

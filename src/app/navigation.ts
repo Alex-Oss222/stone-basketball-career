@@ -70,6 +70,11 @@ export const NAVIGATION_SECTIONS = [
     label: 'Team',
     pages: [
       {
+        id: 'team-overview',
+        label: 'Overview',
+        availability: 'available',
+      },
+      {
         id: 'team-roster',
         label: 'Roster',
         availability: 'available',
@@ -82,13 +87,13 @@ export const NAVIGATION_SECTIONS = [
       },
       {
         id: 'team-health',
-        label: 'Health',
+        label: 'Medical Department',
         availability: 'planned',
         requiredSystem: 'Requires player health and injury systems.',
       },
       {
         id: 'team-development',
-        label: 'Development',
+        label: 'Coaching & Development',
         availability: 'planned',
         requiredSystem: 'Requires player development systems.',
       },
