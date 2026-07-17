@@ -8,15 +8,10 @@ import {
 import type { YearMonth } from '../domain/yearMonth'
 import type { CalendarScope } from '../app/enrichedCalendarViewModel'
 import type { LeagueYearDisplayRange } from '../app/leagueYearDisplayRange'
+import { parseBroadcastFilter } from './broadcastFilter'
+import type { BroadcastFilter } from './broadcastFilter'
 
 export type LeagueCalendarViewMode = 'calendar' | 'list' | 'by_team'
-
-/** Broadcast filter. Only "all" has data until TV scheduling exists. */
-export type LeagueCalendarBroadcast =
-  | 'all'
-  | 'non_televised'
-  | 'local'
-  | 'national'
 
 /**
  * Transient League Calendar presentation preferences. Per ADR 0004 these never
@@ -25,7 +20,7 @@ export type LeagueCalendarBroadcast =
 export interface LeagueCalendarUiState {
   readonly viewMode: LeagueCalendarViewMode
   readonly scope: CalendarScope
-  readonly broadcast: LeagueCalendarBroadcast
+  readonly broadcast: BroadcastFilter
   readonly visibleMonth: YearMonth
   readonly selectedDate: LocalDate | null
 }
@@ -48,7 +43,7 @@ export type LeagueCalendarUiAction =
     }
   | {
       readonly type: 'set_broadcast'
-      readonly broadcast: LeagueCalendarBroadcast
+      readonly broadcast: BroadcastFilter
     }
   | {
       readonly type: 'show_month'
@@ -100,7 +95,7 @@ export function reduceLeagueCalendarUiState(
     case 'set_broadcast':
       return Object.freeze({
         ...state,
-        broadcast: parseBroadcast(action.broadcast),
+        broadcast: parseBroadcastFilter(action.broadcast),
       })
     case 'show_month':
       return Object.freeze({
@@ -128,20 +123,6 @@ export function parseViewMode(value: unknown): LeagueCalendarViewMode {
     default:
       throw new RangeError(
         `League Calendar view mode is unsupported: ${String(value)}`,
-      )
-  }
-}
-
-function parseBroadcast(value: unknown): LeagueCalendarBroadcast {
-  switch (value) {
-    case 'all':
-    case 'non_televised':
-    case 'local':
-    case 'national':
-      return value
-    default:
-      throw new RangeError(
-        `League Calendar broadcast is unsupported: ${String(value)}`,
       )
   }
 }

@@ -20,10 +20,12 @@ import {
   createLeagueCalendarUiState,
   reduceLeagueCalendarUiState,
 } from './leagueCalendarUiState'
-import type {
-  LeagueCalendarBroadcast,
-  LeagueCalendarViewMode,
-} from './leagueCalendarUiState'
+import type { LeagueCalendarViewMode } from './leagueCalendarUiState'
+import {
+  BROADCAST_TABS,
+  broadcastFilterLabel,
+} from './broadcastFilter'
+import type { BroadcastFilter } from './broadcastFilter'
 import {
   formatScheduleDateLong,
   formatScheduleDateShort,
@@ -60,13 +62,6 @@ const VIEW_TABS = [
   { value: 'list', label: 'By date' },
   { value: 'by_team', label: 'By team', comingLater: true },
 ] as const satisfies readonly SegmentedTabOption<LeagueCalendarViewMode>[]
-
-const BROADCAST_TABS = [
-  { value: 'all', label: 'All' },
-  { value: 'non_televised', label: 'Non-televised', comingLater: true },
-  { value: 'local', label: 'Local TV', comingLater: true },
-  { value: 'national', label: 'National TV', comingLater: true },
-] as const satisfies readonly SegmentedTabOption<LeagueCalendarBroadcast>[]
 
 const SCOPE_TABS = [
   { value: 'all_teams', label: 'All teams' },
@@ -170,7 +165,7 @@ export function LeagueCalendarPage({
         <div className="league-calendar-primary">
           {uiState.broadcast !== 'all' ? (
             <ComingLaterPanel
-              title={`${broadcastLabel(uiState.broadcast)} games`}
+              title={`${broadcastFilterLabel(uiState.broadcast)} games`}
               requirement="Requires TV broadcast scheduling for this rule pack."
             />
           ) : uiState.viewMode === 'by_team' ? (
@@ -234,12 +229,12 @@ function LeagueCalendarToolbar({
   readonly monthHeading: string
   readonly viewMode: LeagueCalendarViewMode
   readonly scope: CalendarScope
-  readonly broadcast: LeagueCalendarBroadcast
+  readonly broadcast: BroadcastFilter
   readonly canManagedScope: boolean
   readonly onPreviousMonth: (() => void) | null
   readonly onNextMonth: (() => void) | null
   readonly onViewMode: (viewMode: LeagueCalendarViewMode) => void
-  readonly onBroadcast: (broadcast: LeagueCalendarBroadcast) => void
+  readonly onBroadcast: (broadcast: BroadcastFilter) => void
   readonly onScope: (scope: CalendarScope) => void
 }) {
   return (
@@ -633,21 +628,6 @@ function formatEntryStatus(status: CalendarEntryStatus): string {
       return 'Announced'
     default:
       return assertNever(status)
-  }
-}
-
-function broadcastLabel(broadcast: LeagueCalendarBroadcast): string {
-  switch (broadcast) {
-    case 'all':
-      return 'All'
-    case 'non_televised':
-      return 'Non-televised'
-    case 'local':
-      return 'Local TV'
-    case 'national':
-      return 'National TV'
-    default:
-      return assertNever(broadcast)
   }
 }
 

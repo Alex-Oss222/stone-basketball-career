@@ -25,6 +25,7 @@ describe('Team Schedule transient UI state initialization', () => {
       stage: 'regular_season',
       viewMode: 'calendar',
       siteFilter: 'all',
+      broadcast: 'all',
       visibleMonth: null,
       selectedGameId: null,
     })
@@ -62,6 +63,7 @@ describe('Team Schedule transient UI state initialization', () => {
       stage: 'regular_season',
       viewMode: 'calendar',
       siteFilter: 'away',
+      broadcast: 'all',
       visibleMonth: null,
       selectedGameId,
     })
@@ -118,6 +120,7 @@ describe('Team Schedule transient UI state reducer', () => {
       stage: 'regular_season',
       viewMode: 'calendar',
       siteFilter: 'all',
+      broadcast: 'all',
       visibleMonth: null,
       selectedGameId: null,
     })
@@ -241,6 +244,7 @@ describe('Team Schedule UI state closed contracts', () => {
       stage: 'regular_season',
       viewMode: 'calendar',
       siteFilter: 'all',
+      broadcast: 'all',
       visibleMonth: null,
       selectedGameId: gameId,
     })

@@ -42,6 +42,10 @@ import { GameDetailsDialog } from './gameDetailsDialog'
 import { SegmentedTabs } from './segmentedTabs'
 import type { SegmentedTabOption } from './segmentedTabs'
 import { ComingLaterPanel } from './comingLaterPanel'
+import {
+  BROADCAST_TABS,
+  broadcastFilterLabel,
+} from './broadcastFilter'
 
 const WEEKDAY_SHORT_LABELS = [
   'Sun',
@@ -275,9 +279,22 @@ export function TeamSchedulePage({
         onChange={(viewMode) => dispatch({ type: 'set_view_mode', viewMode })}
       />
 
+      <SegmentedTabs
+        legend="Broadcast"
+        name="team-schedule-broadcast"
+        value={uiState.broadcast}
+        options={BROADCAST_TABS}
+        onChange={(broadcast) => dispatch({ type: 'set_broadcast', broadcast })}
+      />
+
       <TeamScheduleSummary viewModel={viewModel} />
 
-      {uiState.stage !== 'regular_season' ? (
+      {uiState.broadcast !== 'all' ? (
+        <ComingLaterPanel
+          title={`${broadcastFilterLabel(uiState.broadcast)} games`}
+          requirement="Requires TV broadcast scheduling for this rule pack."
+        />
+      ) : uiState.stage !== 'regular_season' ? (
         <ComingLaterPanel
           title={`${stageLabel(uiState.stage)} schedule`}
           requirement={stageRequirement(uiState.stage)}

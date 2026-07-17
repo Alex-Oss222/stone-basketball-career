@@ -4,6 +4,8 @@ import type { League } from '../domain/league'
 import { parseYearMonth } from '../domain/yearMonth'
 import type { YearMonth } from '../domain/yearMonth'
 import type { TeamScheduleSiteFilter } from '../app/teamScheduleViewModel'
+import { parseBroadcastFilter } from './broadcastFilter'
+import type { BroadcastFilter } from './broadcastFilter'
 
 /** Scaffolded stage tabs. Only regular_season has authoritative games today. */
 export type TeamScheduleStage =
@@ -20,6 +22,7 @@ export interface TeamScheduleUiState {
   readonly stage: TeamScheduleStage
   readonly viewMode: TeamScheduleViewMode
   readonly siteFilter: TeamScheduleSiteFilter
+  readonly broadcast: BroadcastFilter
   /** Null means "auto-select" the current or first available month. */
   readonly visibleMonth: YearMonth | null
   readonly selectedGameId: GameId | null
@@ -51,6 +54,10 @@ export type TeamScheduleUiAction =
   | {
       readonly type: 'set_site_filter'
       readonly filter: TeamScheduleSiteFilter
+    }
+  | {
+      readonly type: 'set_broadcast'
+      readonly broadcast: BroadcastFilter
     }
   | {
       readonly type: 'set_visible_month'
@@ -98,6 +105,7 @@ export function createTeamScheduleUiState({
     stage: parseTeamScheduleStage(initialStage),
     viewMode: parseTeamScheduleViewMode(initialViewMode),
     siteFilter: parseTeamScheduleSiteFilter(initialFilter),
+    broadcast: 'all',
     visibleMonth: null,
     selectedGameId:
       initialSelectedGameId === null
@@ -135,6 +143,11 @@ export function reduceTeamScheduleUiState(
       return Object.freeze({
         ...state,
         siteFilter: parseTeamScheduleSiteFilter(action.filter),
+      })
+    case 'set_broadcast':
+      return Object.freeze({
+        ...state,
+        broadcast: parseBroadcastFilter(action.broadcast),
       })
     case 'set_visible_month':
       return Object.freeze({
