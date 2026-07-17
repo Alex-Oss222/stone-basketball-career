@@ -1,5 +1,13 @@
 # Stone Basketball GM — Milestone 1 Roadmap
 
+> **Status banner (read first).** This is the original Milestone 1 plan and is
+> partly historical. Milestones 1 and 2 shipped. For current, living planning
+> read **`/CLAUDE.md`** and **`docs/SCHEDULE_FOUNDATION_ROADMAP.md`**; the
+> schedule/calendar area and the active work (the simulation kernel) are tracked
+> there, not here. The league is intentionally kept at **8 teams**; the 30-team
+> expansion is deferred (`docs/MILESTONE_3_NBA_SCALE_PLAN.md`). Where this file
+> disagrees with those, they win.
+
 ## Scope
 
 This roadmap ends with Milestone 1. Generic season and scheduling contracts
@@ -107,6 +115,10 @@ Exit gate:
 - strict checking, tests, lint, and build pass.
 
 ## Phase 3 — RNG and schedule
+
+> Superseded for day-to-day planning by `docs/SCHEDULE_FOUNDATION_ROADMAP.md`.
+> The 8-team schedule facts below remain current; the calendar UI (Milestone 2)
+> and the shelved NBA-scale engines (Milestone 3) are tracked in the living doc.
 
 Work:
 

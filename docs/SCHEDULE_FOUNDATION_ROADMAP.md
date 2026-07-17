@@ -79,6 +79,17 @@ and records.
 - Several seasons sim in a loop without drift or corruption.
 - All of it deterministic from seed, and persisted/restored across V3 saves.
 
+## V3 result schema — DECIDE IN STEP 2, RECORD HERE IMMEDIATELY
+
+Once step 2 settles the `LeagueSnapshotV3` result shape, write the decided field
+names here (and in `CLAUDE.md`) **before** clearing the session — every later
+step (season advancement, standings, multi-season) depends on these exact names.
+
+- Game result: `score` (home/away points), `winner`, ... — **TBD**
+- Box score: player line fields (points, rebounds, assists, minutes, ...) — **TBD**
+- Migration: `migrateLeagueSnapshotV2ToV3` back-fills completed=false / no
+  results for existing V2 saves — **TBD**
+
 ## Deferred: 30-team NBA expansion (unblocked, engines ready)
 
 When the sim is proven at 8 teams, the flip is mechanical because the hard parts
