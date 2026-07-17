@@ -11,13 +11,13 @@ The frozen implementation baseline is recorded in the
 
 The governing decisions are:
 
-- [ADR 0001](adr/0001-league-year-display-range.md)
-- [ADR 0002](adr/0002-calendar-accessibility-semantics.md)
-- [ADR 0003](adr/0003-game-day-domain-vs-calendar-date-projection.md)
-- [ADR 0004](adr/0004-league-truth-vs-ui-preferences.md)
-- [ADR 0005](adr/0005-scheduled-game-vs-game-result.md)
-- [ADR 0006](adr/0006-future-uncertain-schedule-slots.md)
-- [ADR 0007](adr/0007-snapshot-domain-adapter-and-memoized-derivation.md)
+- [ADR 0001](../adr/0001-league-year-display-range.md)
+- [ADR 0002](../adr/0002-calendar-accessibility-semantics.md)
+- [ADR 0003](../adr/0003-game-day-domain-vs-calendar-date-projection.md)
+- [ADR 0004](../adr/0004-league-truth-vs-ui-preferences.md)
+- [ADR 0005](../adr/0005-scheduled-game-vs-game-result.md)
+- [ADR 0006](../adr/0006-future-uncertain-schedule-slots.md)
+- [ADR 0007](../adr/0007-snapshot-domain-adapter-and-memoized-derivation.md)
 
 This plan does not implement season advancement, schedule editing,
 postponement rescheduling, simulation, results, scores, standings, statistics,

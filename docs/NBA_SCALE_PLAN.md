@@ -1,4 +1,12 @@
-# Milestone 3 — NBA-scale league (execution plan)
+# NBA scale — 30-team step detail
+
+> **Reference spec for [`ROADMAP.md`](ROADMAP.md) §15. Deferred, not current.**
+> This is *how* to scale to 30 teams when the time comes; the roadmap decides
+> *when*. That gate is §13 — the sim proven at 8 teams across ~5 seasons. Do not
+> start this work, and do not wire the shelf engines, before §13 passes.
+>
+> This file is design detail plus reference data (the 18 identities and the
+> conference/division split). It carries no status.
 
 ## Decision (approved)
 
@@ -6,11 +14,11 @@
   174-day October→April regular season, play-in, four best-of-seven playoff
   rounds, NBA Cup, and the full off-season timeline.
 - **Authoritative dates**: the milestone/phase events are generated into the
-  `SeasonCalendar` (V2 snapshot content), not merely derived in the UI.
+  `SeasonCalendar` (snapshot content), not merely derived in the UI.
 
-This intentionally replaces the frozen Milestone 2 contracts of "8 teams, 28
-games per team, 112 games". Those numbers were always described as the *current*
-rule, changeable in a versioned task — this is that task.
+This intentionally replaces the current "8 teams, 28 games per team, 112 games"
+rule. Those numbers were always described as the *current* rule, changeable in a
+versioned task — this is that task.
 
 ## Proven foundations already landed (green, committed)
 
@@ -64,7 +72,8 @@ updates must land together in a single green commit — never half-migrated.
 2. **Counts.** `src/domain/league.ts`: `LEAGUE_TEAM_COUNT = 30`. Confirm
    `LEAGUE_PLAYER_COUNT` (360) and generation scale; keep `PLAYERS_PER_TEAM = 12`.
 3. **Conferences / divisions.** Add `conference` (`east` | `west`) and `division`
-   (6 divisions, 5 teams each) to the `Team` domain model + V2 DTO + validation.
+   (6 divisions, 5 teams each) to the `Team` domain model + the snapshot DTO +
+   validation.
    Assign the 30 identities to 2 conferences × 3 divisions. Needed for standings
    and the per-conference play-in / playoffs.
 4. **Schedule generation.** Replace the uniform round-robin with the balanced
@@ -82,7 +91,7 @@ updates must land together in a single green commit — never half-migrated.
    `regular_season_conclusion`, `play_in_event`, `playoffs_start`, `finals_start`,
    `draft_event`, `free_agency_event`, etc.). Update `validateSeasonFoundation`
    expected-kinds accordingly.
-6. **V2 + fixtures + tests.** Update `leagueSnapshotV2.fixture.ts` and every
+6. **Snapshot + fixtures + tests.** Update the snapshot fixture and every
    characterization assertion pinning 8/28/112 to the new invariants (30 teams,
    360 players, 82 games/team, 1230 games, expanded calendar). Files to touch
    (from the current blast-radius scan): `tests/generation/generateLeague.test.ts`,

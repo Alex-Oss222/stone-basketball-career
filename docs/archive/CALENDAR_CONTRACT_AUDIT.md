@@ -1,6 +1,26 @@
 # M2.1 Calendar Contract Audit and Characterization
 
-- Status: Complete
+> ## ⚠ ARCHIVED — historical. Do not trust any claim in this file.
+>
+> This was a point-in-time audit, accurate on 2026-07-16 and **stale since**. Its
+> "Status: Complete" header below refers to the audit being finished, **not** to
+> the work it describes. Roughly 35 commits landed after it was written.
+>
+> **Four of the five gaps it identifies have since shipped.** It states there is
+> no calendar-event rendering, no shared calendar-entry selector, no league-year
+> display range, and no inspected-team UI state. All four now exist and are
+> tested. Only its fifth point — no URL/router state — is still true.
+>
+> It is the most actively misleading document in the archive, because unlike the
+> design specs it makes falsifiable "there is no X" claims that are now wrong.
+>
+> The contract facts worth keeping were extracted into
+> [`../adr/`](../adr/) 0001–0007 and
+> [`../SEASON_AND_SCHEDULING.md`](../SEASON_AND_SCHEDULING.md). Current status is
+> [`../ROADMAP.md`](../ROADMAP.md). Nothing here is uniquely load-bearing; this
+> file is kept only to show how the calendar contracts were reasoned out.
+
+- Status: Complete *(audit finished — not a status claim about the code)*
 - Audit date: 2026-07-16
 - Scope: authoritative contracts and read-only presentation behavior only
 

@@ -1,27 +1,58 @@
 # Stone Basketball GM — working agreement
 
-Base repository rules live in **AGENTS.md**. This file adds the cross-session
-decisions a fresh session must not violate, plus where to pick up.
+Base repository rules live in **AGENTS.md**. This file adds the standing
+constraints a fresh session must not violate, and points at the plan.
 
-## Current state
+**The plan is `docs/ROADMAP.md`. It is the only source of truth for what is done
+and what is next.** Read its Status line first. Do not restate the plan here —
+two copies of a plan drift, and that is exactly how a false claim ("rotation
+validation already exists") survived long enough to be planned against.
 
-Active section: **simulation kernel — sim one game**, at 8 teams.
-See `docs/SCHEDULE_FOUNDATION_ROADMAP.md` for the step sequence, exit criteria,
-and the specific inputs each step consumes (for the kernel: the roster/rating
-types and the V2 snapshot types).
+## How this project works: UI first
 
-## Durable constraints (do not violate)
+**The UI is a design tool, not just an output.** Alex works by seeing a screen,
+getting ideas, and moving things around — the interface is where requirements
+come from, so **the data model follows the UI, not the reverse.** The order is:
+build the screen → learn what data it needs → make the data → make it real.
+
+Do not treat a UI-heavy tree with little engine as work done backwards. It isn't.
+Do not propose "design the data contract first" — that has stalled this project
+repeatedly, because you cannot know what a box score needs by thinking about it.
+The screen decides it.
+
+This is safe here for two reasons, and it stops being safe if either breaks:
+
+1. **Version bumps are cheap** (see saves, below), so letting the UI move the
+   data shape costs nothing.
+2. **Fixtures never reach the real app.** Designing against fake data is fine;
+   showing fake data to a player is not — see "Never fabricate results" below.
+
+## Standing constraints (do not violate)
+
+### Never fabricate results
+Per `docs/adr/0005-scheduled-game-vs-game-result.md`, a game result is a separate
+immutable aggregate keyed to one `GameId` — never fields on `ScheduledGame`,
+never inferred from `status: 'completed'`. Until a result is really simulated, the
+app shows an honest absence of one.
+
+Fixtures used to design UI are **dev/test only** and must never reach a real
+game. The tripwire is the ring of tests asserting no score/winner/record appears
+in the real app (`tests/ui/schedulePages.test.tsx:297`,
+`tests/app/teamScheduleViewModel.test.ts:844`,
+`tests/app/dashboardViewModel.test.ts:99`). **If one goes red during UI work, a
+fixture has leaked.** They are rewritten in roadmap §10 when results become real
+— deliberately, into their positive counterparts, never by deletion.
 
 ### 8 teams first — do NOT scale to 30 yet
-The league stays at **8 teams** (`LEAGUE_TEAM_COUNT = 8`) until the simulation is
-proven at 8 teams: sim one game → sim a full season → sim ~5 seasons.
+`LEAGUE_TEAM_COUNT = 8` holds until the simulation is proven at 8 teams: one
+game → a full season → ~5 seasons (roadmap §13).
 
-**Do NOT wire up the shelf engines yet** — `generation/generateNbaSchedule.ts`,
+**Do NOT wire up the shelf engines** — `generation/generateNbaSchedule.ts`,
 `generation/scheduleMatrix.ts`, `generation/scheduleDatePlacement.ts`,
 `domain/seasonTimeline.ts`, `domain/leagueStructure.ts`. They are built, tested,
-and green, but deliberately **unwired**. Because they exist and pass tests, an
-eager session may try to integrate them early — don't. The 30-team flip is
-gated on the sim and specified in `docs/MILESTONE_3_NBA_SCALE_PLAN.md`.
+and green, but deliberately **unwired**. Because they exist and pass, an eager
+session may try to integrate them early — don't. The 30-team flip is roadmap §15
+and must land as one coordinated commit.
 
 ### Determinism (domain + generation + simulation)
 All domain, generation, and simulation code is pure and deterministic: an
@@ -30,26 +61,50 @@ persistence / network imports; identical seeds and versions produce deeply-equal
 output. AGENTS.md states this for simulation code; it applies equally to domain
 and generation code.
 
-### Snapshot versioning — results require V3
-The V2 snapshot has **no result / score / box-score fields**. The first sim step
-that persists a result must add a new `LeagueSnapshotV3` plus a V2→V3 migration —
-do not push results into V2. Version and validate saves; never silently
-overwrite (AGENTS.md).
+Changing a formula, random call order, seed derivation, or RNG algorithm requires
+a version bump and new golden tests.
 
-**When the V3 result shape is decided** (field names for score, winner, box
-score), record it in this file and in `SCHEDULE_FOUNDATION_ROADMAP.md`
-immediately — every later sim step depends on those names.
+### Saves: one version, no migrations before 1.0
+**Decided 2026-07-17. This reverses the earlier "results require a V3 snapshot
+plus a V2→V3 migration" rule — do not reinstate it.**
+
+There are zero real saves in the world: the app has never shipped
+(`"private": true`; publishing is forbidden by AGENTS.md). So there is **one
+current snapshot type and one version constant**. When the shape changes, bump
+the number; on mismatch, refuse to load and offer "start a new league."
+
+- **Never reset the version number.** It stays monotonic (3, 4, 5…) so records
+  from older builds are refused rather than mis-parsed.
+- **Do not write a migration.** Real migrations begin at roadmap §17, when saves
+  start belonging to players.
+- This still versions, still validates, and still never silently overwrites, so
+  the AGENTS.md save rules hold.
+
+Because bumps are cheap, **do not design the snapshot shape ahead of the code**.
+Build the system, learn the real shape, then bump. Per
+`docs/adr/0005-scheduled-game-vs-game-result.md`, a game result is still a
+separate immutable aggregate keyed to one `GameId` — never fields on
+`ScheduledGame`, and never inferred from `status: 'completed'`.
+
+### Docs: one plan, everything else is design or history
+`docs/ROADMAP.md` is the plan. `/CLAUDE.md` is the pointer. The other `docs/*.md`
+are reference specs describing *intended* design, much of it unbuilt — when a
+spec disagrees with the code, **the code wins and the spec is a bug**.
+`docs/archive/` is dead; never cite it as current. `docs/adr/` records decisions;
+supersede, never edit.
+
+Do not add a fifth planning document. Add a roadmap section.
 
 ## Working loop (per session)
-Finish one roadmap step → update the sequence and checkboxes in
-`SCHEDULE_FOUNDATION_ROADMAP.md` → update the "Current state" line above → keep
-`main` green → `/clear` → open the next session by pointing it at that roadmap
-file and the inputs the next step consumes.
+Finish one roadmap section → **sweep its deferred slots**: `grep -rn
+"DEFERRED(§N)" src/` for that section's number and fill every hit (see the
+Deferred-slot ledger in `docs/ROADMAP.md` — UI ships ahead of its data on
+purpose, and this grep is how those slots get finished instead of forgotten) →
+tick it and move the Status line in `docs/ROADMAP.md` → keep `main` green
+(tests, typecheck, lint, build) → `/clear` → open the next session by pointing
+it at `docs/ROADMAP.md`.
 
-## Pointers
-- `docs/SCHEDULE_FOUNDATION_ROADMAP.md` — living status, the 5-step sim
-  sequence, exit criteria, per-step inputs.
-- `docs/MILESTONE_3_NBA_SCALE_PLAN.md` — the deferred 30-team expansion
-  (engines, identities, flip steps).
-- `AGENTS.md` — base repository rules (fictional data, IndexedDB, testing gate,
-  task-handoff format).
+When building new UI ahead of its data: mark every empty slot with a
+`DEFERRED(§N)` comment at the exact place to change (or `DEFERRED(later)` if no
+roadmap section provides the data yet), and add it to the roadmap ledger. The
+code tags are canonical; the ledger is the index.

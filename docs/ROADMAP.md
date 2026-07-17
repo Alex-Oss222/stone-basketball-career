@@ -1,319 +1,630 @@
-# Stone Basketball GM — Milestone 1 Roadmap
+# Stone Basketball GM — Roadmap
 
-> **Status banner (read first).** This is the original Milestone 1 plan and is
-> partly historical. Milestones 1 and 2 shipped. For current, living planning
-> read **`/CLAUDE.md`** and **`docs/SCHEDULE_FOUNDATION_ROADMAP.md`**; the
-> schedule/calendar area and the active work (the simulation kernel) are tracked
-> there, not here. The league is intentionally kept at **8 teams**; the 30-team
-> expansion is deferred (`docs/MILESTONE_3_NBA_SCALE_PLAN.md`). Where this file
-> disagrees with those, they win.
+The single authoritative plan. If any other document disagrees with this one
+about *what is done* or *what is next*, this file wins and the other file is a
+bug to be fixed.
 
-## Scope
+## How to use this file
 
-This roadmap ends with Milestone 1. Generic season and scheduling contracts
-include explicit versioned rule-pack, event, constraint, and diagnostic
-boundaries so the current engine is not tied to one league formula. Those
-boundaries are not delivery commitments or placeholder behavior for later
-gameplay systems.
+- **One sequence.** Sections are ordered. Finish one, then start the next. Do not
+  work ahead into a later section because its inputs happen to exist.
+- **Each section has a Goal, Work, and an Exit gate.** A section is done when its
+  exit gate passes — not when the code looks finished.
+- **Status lives only here.** `/CLAUDE.md` points at the current section and
+  restates the standing rules; it does not duplicate the plan.
+- **Reference specs are not status.** They describe *intended design*, much of it
+  unbuilt. When a spec disagrees with the code, the code wins.
+- **Every section ends green:** `npm test`, `npm run typecheck`, `npm run lint`,
+  `npm run build`. No section is done with a red gate.
+- **Every section's exit gate implicitly includes the deferred-slot sweep:**
+  run `grep -rn "DEFERRED(§N)" src/` for the section's number and fill every
+  hit before calling the section done. See "Deferred-slot ledger" below —
+  this is how UI built ahead of its data gets finished instead of forgotten.
 
-Milestone 1 delivers:
+## Document map
 
-- eight fictional teams with 12 fictional players each;
-- team selection;
-- roster and depth-chart/rotation screens;
-- five starters and a valid 240-minute regulation plan;
-- a deterministic generated regular-season schedule;
-- possession-based simulation with player/team box scores;
-- standings and season player statistics;
-- IndexedDB autosave with the latest 20 revisions plus retained named manual saves; and
-- validated, versioned JSON export/import.
+| File | Kind | Answers |
+| --- | --- | --- |
+| `ROADMAP.md` (this file) | **plan** | What is done, what is next, when a section is finished |
+| `/CLAUDE.md` | **pointer** | Standing rules and which section is current |
+| `GAME_DESIGN.md` | reference | What the game is and its acceptance criteria |
+| `DATA_MODEL.md` | reference | Entity shapes and invariants (incl. unbuilt ones) |
+| `SEASON_AND_SCHEDULING.md` | reference | Season / calendar / schedule architecture (built) |
+| `SIMULATION_MODEL.md` | reference | The intended sim contract and possession model (**unbuilt** — §9, §14) |
+| `NBA_SCALE_PLAN.md` | reference | 30-team step detail and the 18 identities (deferred — §15) |
+| `adr/` | decisions | Why a boundary is where it is; supersede, never edit |
+| `archive/` | dead | Superseded plans, kept for history. **Never cite as current.** |
 
-Excluded systems remain excluded rather than being represented by inactive fields or placeholder screens.
+Only the plan and the pointer carry status. Everything else is design or history.
 
-## Current repository baseline
+## How this project works: UI first
 
-As inspected on 2026-07-16:
+**The UI is a design tool, not just an output.** Seeing a screen generates ideas
+and requirements that no amount of specification produces. So the order here is
+deliberately: *build the screen → learn what data it needs → make the data → make
+it real.* The data model follows the interface, not the reverse.
 
-- the repository is a minimal React 19 + Vite 8 TypeScript starter;
-- `package.json` has `dev`, `build`, `lint`, and `preview` scripts;
-- there is no automated test script or test source;
-- TypeScript project references cover the browser app and Vite configuration;
-- neither TypeScript configuration explicitly enables `strict`;
-- Oxlint enables React hooks and component-export rules;
-- the current application source is only the starter counter/documentation screen;
-- React and React DOM are the only production dependencies;
-- the lockfile is version 3 and the installed top-level dependency tree is valid; and
-- Git branch `milestone-1` was clean before the planning files were created.
+This is why §6 comes before the simulation. The result contract has blocked this
+project across several sessions precisely because it was treated as something to
+decide by thinking. It is not. **The box score screen decides it:** whatever
+fields the screen shows are the contract.
 
-No dependency or application-source change is part of this planning task.
+Two things make this safe rather than reckless:
 
-## Delivery principles
+1. **Version bumps are cheap** (§7), so letting the UI move the data shape costs
+   nothing. This only works *because* of the no-migrations decision.
+2. **Fixtures never reach the real app.** Designing against fake data is fine;
+   showing fake data to a player is not. See the guardrails in §6.
 
-- Explicitly set `"strict": true` in every TypeScript configuration before introducing domain types.
-- Build and test pure domain/simulation modules before connecting React.
-- Generate fictional league data deterministically from the league seed, persist the generated snapshot, and validate it as part of tests.
-- Treat box scores as the source of truth for standings and season statistics.
-- Treat every simulation result and save revision as immutable after commitment.
-- Add persistence through an adapter so browser APIs never enter simulation code.
-- Prefer platform capabilities and existing dependencies; justify any proposed production dependency before adding it.
-- Complete each phase with automated tests, TypeScript checking, linting, and a production build.
+## Standing rules (do not violate)
 
-## Phase 0 — Record the approved baseline
+- **Fictional data only.** No real teams, players, or logos.
+- **Local only.** No backend, accounts, analytics, telemetry, or runtime network
+  requirements. IndexedDB for persistence.
+- **Determinism.** All domain, generation, and simulation code is pure: an
+  injected seeded `RandomSource` only, never `Math.random`; no React, DOM,
+  persistence, or network imports. Identical seeds and versions produce
+  deeply-equal output.
+- **Never fabricate results.** Per
+  [ADR 0005](adr/0005-scheduled-game-vs-game-result.md), a game result is a
+  separate immutable aggregate keyed to one `GameId` — never fields on
+  `ScheduledGame`, never inferred from `status: 'completed'`. Until a result is
+  really simulated, the app shows an honest absence.
+- **Versioned formulas.** Changing a formula, random call order, seed derivation,
+  or RNG algorithm requires a version bump and new golden tests.
+- **Eight teams until the sim is proven.** `LEAGUE_TEAM_COUNT = 8` holds until
+  §13 passes. The NBA-scale engines are built and green but deliberately
+  **unwired** — see §15. Do not wire them early.
 
-The approved baseline is:
+## Status
 
-1. eight deterministically generated fictional placeholder teams using initials/CSS marks;
-2. 12 deterministically generated fictional players per team, persisted with all identity and basketball fields;
-3. 28 games per team in a four-round-robin schedule;
-4. four 12-minute quarters, 24/14-second clocks, six personal fouls, and five-minute overtime;
-5. whole-minute rotation editing with internal seconds;
-6. chronological game-day advancement;
-7. IndexedDB with the latest 20 autosave revisions and all named manual saves retained until explicit deletion;
-8. deterministic extreme-overtime and insufficient-player continuation guards;
-9. a 50 MiB JSON import ceiling; and
-10. Vitest as a future development-only test dependency.
+**Current section: §6 — Results UI (discover the contract).** The first build
+of all three screens is green (see "Accomplished so far" in §6); what remains
+is iterating on them and freezing the types.
 
-Exit gate: these decisions remain consistent across all Milestone 1 design documents before implementation begins.
+Sections 1–5 are shipped. 1,162 tests pass across 57 files; typecheck, lint,
+and build are clean.
 
-## Phase 1 — Strict TypeScript and test foundation
+---
 
-Work:
+# Part I — Shipped
 
-- explicitly enable TypeScript strict mode for app, tooling, and tests;
-- add a standalone `typecheck` script;
-- add Vitest as a development dependency;
-- add cross-platform `test` and extended fixed-seed test scripts;
-- add architecture checks that forbid React imports and `Math.random` in simulation code; and
-- keep React starter behavior unchanged during the foundation step.
+These are done. They are recorded here for sequence only; do not re-plan them.
 
-Exit gate:
+### 1. Strict TypeScript and test foundation ✅
 
-- strict type checking passes;
-- the single test runs on the supported local command;
-- lint and production build pass; and
-- Vitest is development-only and no production dependency is added.
+Strict mode across app, tooling, and tests. Vitest as a dev-only dependency.
+`typecheck` script. Branded `StableId<Kind>` types with runtime guards. Seeded
+RNG: `xoshiro128**` (`RANDOM_SOURCE_VERSION = 'xoshiro128ss-v1'`) behind the
+injected `RandomSource` interface, with labeled seed derivation
+(`deriveSeed(rootSeed, label)`, `SEED_DERIVATION_VERSION = 'seed-derivation-v1'`)
+so every independent decision draws its own stream.
 
-## Phase 2 — Domain model and fictional league data
+### 2. Domain model and deterministic league generation ✅
 
-Work:
+8 teams × 12 players = 96 players, generated deterministically from a root seed.
+16 rating keys (0–100 integers, exact set enforced), 6 tendencies, positions,
+ages, jersey numbers. Every stored rating draws from its own labeled stream.
+League validation over identity, ownership, counts, ranges, and uniqueness.
 
-- add branded stable IDs and narrow runtime parsing helpers;
-- add team, player, ratings, tendencies, rotation, schedule, box-score, and season types;
-- implement deterministic generation of eight fictional placeholder teams and exactly 96 fictional players from a dedicated league seed, with an independent versioned field stream for every stored player rating;
-- generate and persist player names, IDs, ratings, ages, positions, team assignments, and tendencies;
-- generate valid deterministic CPU starters and 240-minute rotations;
-- implement league-data and rotation validators; and
-- add tests for identity, ownership, counts, ranges, uniqueness, and rotation totals.
+**Not built here, despite what the old roadmap claimed:** rotations. There is no
+`RotationPlan`, no rotation generation, and no rotation validator anywhere in the
+tree. That work is §8.
 
-Exit gate:
+### 3. Season, schedule, and calendar ✅
 
-- identical league seeds and generator versions produce deeply equal teams, players, and rotations;
-- every player belongs to exactly one team;
-- every team has exactly 12 players;
-- all identifiers, fictional placeholder components, colors, and initials/CSS marks are local and unique;
-- all eight default rotations are valid; and
-- strict checking, tests, lint, and build pass.
+Timezone-free `LocalDate` / `YearMonth`. Seeded circle-method regular season: 28
+games per team, 112 games, 28 ordered game days, 14 home / 14 away. Stable game
+and game-day IDs. Separate original / current / actual dates. Typed hard/soft
+constraints and whole-report diagnostics. `Season` lifecycle, `SeasonCalendar`
+(20 event kinds; only opening and conclusion are currently generated), and
+`TeamSeason` records. `createSeasonFoundation` self-checks by regenerating the
+schedule and comparing structurally.
 
-## Phase 3 — RNG and schedule
+### 4. Calendar and schedule UI ✅
 
-> Superseded for day-to-day planning by `docs/SCHEDULE_FOUNDATION_ROADMAP.md`.
-> The 8-team schedule facts below remain current; the calendar UI (Milestone 2)
-> and the shelved NBA-scale engines (Milestone 3) are tracked in the living doc.
+Month-grid League Calendar (two-pane, list ↔ calendar swap, by-date list). Team
+Schedule command center: next-game bar, rest / back-to-back / road-trip /
+homestand badges, Today, stage and broadcast tabs, All/Upcoming/Final filter.
+Derived schedule-pressure overview and a derived league-events timeline. All of
+it is a pure projection of the snapshot; none of it invents results.
 
-Work:
+### 5. Local persistence bridge ✅
 
-- implement the injected `RandomSource` abstraction;
-- implement and version seed normalization, derivation, and `xoshiro128**`;
-- pin golden vectors;
-- implement the seeded circle-method schedule;
-- add timezone-free `LocalDate`, generic season lifecycle, event-calendar, and
-  team-season records;
-- construct a canonical opponent-requirement matrix before placing games;
-- represent the fictional eight-team format as an explicit versioned rule set;
-- separate original, current scheduled, and actual dates;
-- add typed hard/soft constraint and whole-report diagnostic boundaries;
-- derive stable game IDs and game seeds; and
-- validate all schedule invariants.
+`LeagueSnapshotV1` (league only) and `LeagueSnapshotV2` (adds season, calendar,
+team-seasons, schedule, creation metadata). Strict *closed* parsers — every DTO
+rejects unknown keys. Cross-object consistency validation. Revision-guarded
+writes with stale-write detection. IndexedDB adapter. Confirmed corrupt-storage
+purge.
 
-Exit gate:
+This is a bridge, not the final save system. It has no autosave history, no named
+manual saves, and no export/import — that is §17.
 
-- identical root seeds produce identical schedules;
-- different labeled streams are independent in golden tests;
-- every schedule has 112 games and exact pairing/home-away counts;
-- every schedule has 28 ordered, correctly spaced game days with four games
-  and one appearance per team on each day;
-- unsupported optimizer constraints are reported rather than ignored;
-- every game references valid distinct teams; and
-- strict checking, tests, lint, and build pass.
+---
 
-## Phase 4 — Game simulation kernel
+# Part II — Simulation
 
-Build in narrow vertical slices, keeping the box-score builder and assertions active from the first slice:
+The goal of Part II is the whole loop: design the screens → one game → a full
+season → several seasons, all deterministic and persisted. The basketball model
+stays simple throughout; depth is §14.
 
-1. period clock, possession switching, and exact player seconds;
-2. valid lineups, dead-ball substitutions, and planned-minute targeting;
+### 6. Results UI — discover the contract ← **CURRENT**
+
+**Goal.** Build the result, box score, and dashboard screens against hand-written
+fixtures, and move things around until they feel right. **The fields those
+screens end up consuming are the result contract** that §9 must produce.
+
+**Why this is first.** See "How this project works" above. The contract cannot be
+decided in the abstract — it has stalled repeatedly when tried. The screen
+decides it. And because §7 makes bumps cheap, letting the UI drive the shape is
+now nearly free.
+
+**Nothing here is simulated and nothing is persisted.** This section touches no
+snapshot and needs no RNG.
+
+**Work.**
+- Draft the result types in `src/domain/gameResult.ts`: score, winner, period
+  totals, team and player box-score lines. Domain — not `src/simulation/` — so
+  the UI can consume them without importing the sim, and the sim produces them
+  without owning them. Treat these as **disposable drafts**; the screens are in
+  charge.
+- Hand-write fixtures (`tests/fixtures/` or a dev module). See the guardrails.
+- Build components as **pure functions of their props**:
+  - game result view — score, winner, period totals;
+  - player box-score table;
+  - home dashboard — result tiles, recent/next, and the buttons and nav that tie
+    them together.
+- Add a **dev-only preview route** rendering those components against fixtures,
+  guarded by `import.meta.env.DEV` so it is tree-shaken out of the production
+  build. No new dependency.
+- Iterate. Move things, add and drop fields, change the layout. The types follow
+  the screens.
+
+**Guardrails.**
+- **Fixtures must obey the invariants** — team points equal the sum of player
+  points, minutes total 240, makes never exceed attempts. Designing against
+  producible data means the screen cannot quietly ask for something the sim can
+  never make.
+- **Fixtures are dev/test only.** No fixture may reach a real game. The real
+  Calendar and Team Schedule keep showing an honest absence of results.
+- **The absence tests must stay green.**
+  `tests/ui/schedulePages.test.tsx:297`,
+  `tests/app/teamScheduleViewModel.test.ts:844`, and
+  `tests/app/dashboardViewModel.test.ts:99` assert that no score, winner, or
+  record appears in the real app. Through this whole section they should keep
+  passing — **if one goes red, a fixture has leaked into the real app.** They get
+  rewritten in §10, when results become real, and not before.
+
+**Exit gate.**
+- The three screens look right to you. This is a **judgement gate, not a metric** —
+  it passes when you are happy with them.
+- `GameResult` and the box-score types are frozen, and recorded in
+  `SIMULATION_MODEL.md` as the target §9 implements against.
+- Every new component is a pure function of its props — no simulation, no
+  persistence, no RNG.
+- The dev preview route is absent from the production build.
+- The absence tests still pass.
+- All four gates green.
+
+**Accomplished so far (first build, 2026-07-17).** The screens exist and are
+green — what remains for the gate is the iterate-and-freeze loop: look at them,
+move things, then freeze the types.
+
+- **Draft contract**: `src/domain/gameResult.ts` — `GameResult`,
+  `PlayerBoxScoreLine` (14 counting stats + started/DNP reason, integer
+  seconds), `TeamPeriodScoring`, and `collectGameResultIssues` /
+  `assertValidGameResult` enforcing every structural invariant (points
+  arithmetic, 240-minute + overtime reconciliation, makes ≤ attempts, exactly
+  five starters, plus/minus = 5 × margin, one winner). These validators are the
+  seed of §9's finalization checks.
+- **Fixture**: `src/dev/exhibitionGameResult.ts` — Emberlyn Forgekeepers 118,
+  Duskmere Nightjars 112 (OT), 12 players per side incl. DNPs, every number
+  reconciling; proven against the validator in `tests/domain/gameResult.test.ts`.
+- **Home** (`src/ui/homePage.tsx` + `src/app/homeViewModel.ts`), iterated
+  twice in-session and settled on: **the mockup's card grid without the
+  duplicate Home subtab row** (Home's nav pages are just Home + planned
+  **My**, the future user-customized dashboard; the sidebar owns
+  Team/League/Front Office). Command bar shows identity once (the page h1 is
+  the team name) with season · phase · date, avg rating, roster count, and
+  disabled Continue / Sim to Next Event. Cards: **Needs Attention** (real
+  caught-up state naming the next event — no injury/trade systems exist — with
+  live Review Offers / View Free Agents entry points), **Roster Health** (real
+  count + positions, health deferred, live Adjust Rotation), **Front Office**
+  (deferred, live View Finances), **Next Game** (real matchup + real
+  avg-rating comparison of both rosters; disabled **Watch Game** / Sim Game —
+  watching needs the event log), **Recent Results** (honest none; hosts the
+  dev preview), **Upcoming Games** (≤5 real compact rows, live View Full
+  Schedule), **Standings** (one card, two sections: Division and Conference,
+  both deferred — divisions/conferences arrive with §15), **Season Pulse /
+  Important Headlines / Team Stats** (deferred). Card buttons navigate to
+  their real sidebar destinations — a planned page honestly states its
+  requirement. Three-way honesty split throughout; nothing fabricates a value.
+- **Post-game workspace** (`src/ui/gameResultPage.tsx` +
+  `src/app/gameResultViewModel.ts`): score header, quarter/OT line; tabs are
+  **Overview | Team Stats | Play-by-Play | Charts**. Overview carries top
+  performers **and the full classic-order box score** (Both Teams | EFK | DMN
+  toggle; starters/bench/DNP, totals + shooting rows) — there is no separate
+  Box Score tab. Team Stats carries the comparison table **plus the Four
+  Factors**. Key moments fold into the Play-by-Play coming-later tab; Lineups
+  was removed (the box score already shows who played). Records/venue,
+  summary, and both deferred tabs need the sim's event log or standings.
+  Percentages are null-safe (zero attempts render "—", never NaN).
+- **Dev preview**: DEV-only lazy route from the Recent Results card
+  ("Preview the post-game screen"); verified absent from the production bundle
+  along with the fixture and workspace code.
+- Gate: 1,162 tests green across 57 files; typecheck, lint, build clean. The
+  three absence tests pass untouched, and the fixture/workspace remain
+  verified absent from the production bundle.
+- **Known deferred polish**: the global app header still shows the team name
+  in its chrome and still carries the derived "View Schedule" action — the
+  spec wants Continue as the one primary action there, which lands when
+  Continue becomes real (§10). Card-level phase-awareness (Next Event becoming
+  draft/free-agency/playoffs) needs those phases to exist.
+
+### 7. Collapse the save format to one version
+
+**Goal.** Stop paying a migration tax for saves that do not exist, so that every
+later section can change the snapshot shape freely.
+
+**Why.** The app has never shipped (`"private": true`; publishing is forbidden),
+so there are zero real saves in the world. Yet V1 exists only to be migrated:
+nothing in `src/app` or `src/ui` imports it — its only readers are its own
+migration and its own tests. The V1→V2 migration cannot even run alone, because
+V1 has no season and the caller must hand it synthetic season inputs. Meanwhile
+the storage version axis is *enumerated, not parameterized*: two fixed slots
+(`{ v1, v2 }`), a mutation union that hardcodes `write-v2`, and a hardcoded
+`restore()` precedence ladder. Left alone, every future shape change costs a new
+slot, a new rung, a new migration, and a new closed key list.
+
+**Decision (approved 2026-07-17).** One current snapshot, no migrations before
+1.0. On version mismatch, refuse to load and offer "start a new league." This
+still versions, still validates, and still never silently overwrites — so the
+repository rules hold. Real migrations begin at §17, when saves start mattering.
+
+**Work.**
+- Rename `LeagueSnapshotV2` → `LeagueSnapshot`; `SNAPSHOT_VERSION = 3`.
+  **Keep the number monotonic — never reset to 1** — so pre-existing browser
+  records written as 1 or 2 are correctly refused rather than mis-parsed.
+- Delete `src/persistence/leagueSnapshot.ts` (V1 DTO + parser, 484 lines).
+- Delete `src/persistence/migrations/migrateLeagueSnapshotV1ToV2.ts` (305 lines)
+  and the `migrateV1ToV2` orchestration + stage list in
+  `leagueSnapshotRepository.ts`.
+- Delete `tests/persistence/leagueSnapshot.test.ts` and
+  `tests/persistence/migrateLeagueSnapshotV1ToV2.test.ts`; drop the V1 import in
+  `tests/app/commands/createNewLeagueSnapshotV2.test.ts`.
+- Collapse `VersionedLeagueSnapshotStorageState { v1, v2 }` to a single slot and
+  drop the hardcoded `write-v2` mutation kind.
+- Reduce `restore()` from a precedence ladder to three outcomes: parsed |
+  version mismatch | empty. Add the mismatch variant to
+  `LeagueSnapshotRestorationResult` and surface it in the UI as a clear "this
+  league came from an older build — start a new league" path.
+- Keep untouched: the strict closed parsers, cross-object validation,
+  revision-guarded writes, and the corrupt-storage purge.
+
+**Exit gate.**
+- Exactly one snapshot type, one version constant, one storage slot.
+- Restoring a record whose version ≠ `SNAPSHOT_VERSION` returns the mismatch
+  result, reports it clearly, and never mutates or overwrites the stored record.
+- No migration code remains in the tree.
+- Roughly 1,570 lines of V1/migration code and tests are gone.
+- All four gates green.
+
+### 8. League rules and rotation plans
+
+**Goal.** Build the two sim inputs that do not exist. `SIMULATION_MODEL.md`
+specifies `simulateGame` as taking `LeagueRulesV1` and `RotationPlan` (home and
+away) — neither of which exists today.
+
+**Work.**
+- `LeagueRulesV1`: four 12-minute quarters, 24/14-second clocks, six personal
+  fouls, five-minute overtime. Versioned; the sim reads rules, never constants.
+- `RotationPlan`: five starters plus planned minutes. Whole minutes at the edges,
+  integer seconds internally.
+- Deterministic CPU rotation generation for all 8 teams from the league seed.
+- `validateRotationPlan`: five distinct eligible starters, no player on two
+  teams, 240 planned regulation minutes per team.
+
+**Exit gate.**
+- Identical seeds produce deeply-equal rotations.
+- All eight default rotations validate.
+- Invalid rotations are rejected with actionable, typed errors.
+- All four gates green.
+
+### 9. Simulation kernel — one game
+
+**Goal.** `simulateGame(input, random): GameResult` producing a **real** instance
+of the contract §6 froze. Pure and in-memory — this section persists nothing and
+changes no snapshot.
+
+**Keep the basketball model simple.** This is a walking skeleton behind the box
+score interface. Depth is §14; hitting the §6 contract is what matters here. When
+this lands, the §6 screens render simulated data instead of fixtures, and the
+fixtures become test data.
+
+**Decide and record in `SIMULATION_MODEL.md`:**
+- **Tendency normalization.** `rim`, `midrange`, and `threePoint` are
+  independent 0–100 values that do **not** sum to 100. How they become a shot
+  distribution is a versioned formula — choose deliberately and write it down.
+- **Game seed derivation:** `deriveSeed(rootSeed, 'game/v1/<gameId>')`, using the
+  existing labeled-derivation machinery.
+
+**Work.**
+- Create `src/simulation/`. Implement `SimulateGameInput` and `simulateGame`
+  against the frozen §6 types.
+- Build the box-score builder and its invariant assertions **from the first
+  slice**, so an invalid result can never be constructed.
+- Record `SIMULATION_VERSION`, RNG version, derived game seed, and an input
+  fingerprint on every result.
+
+**Exit gate.**
+- Exactly one winner per game; no ties survive.
+- Team points = summed player points = summed period points.
+- Regulation player time totals exactly 240 minutes per team; overtime exact.
+- Made shots never exceed attempts; no statistic negative, fractional where
+  integral, infinite, or `NaN`.
+- Identical inputs + seed deep-compare equal across a large fixed seed set.
+- The §6 screens render a simulated result with no shape changes — if they need
+  changes, the contract was wrong and that is worth knowing here.
+- Nothing under `src/simulation/` imports React, DOM, persistence, or network,
+  and `Math.random` appears nowhere.
+- All four gates green.
+
+### 10. Commit a result and advance the clock
+
+**Goal.** One game reaches **Final** end-to-end: `currentDate` → find the day's
+games → validate rosters and rotations → simulate → commit → the real Calendar
+and Team Schedule show a real result.
+
+**This is the first snapshot bump** — cheap now, thanks to §7. The shape is
+whatever §6 designed and §9 produced; do not redesign it here.
+
+**Work.**
+- Add results to `LeagueSnapshot`; bump `SNAPSHOT_VERSION` to 4. Per
+  [ADR 0005](adr/0005-scheduled-game-vs-game-result.md), `GameResult` stays a
+  **separate immutable aggregate keyed to one `GameId`**.
+- `commitGameResult`: revision-guarded and atomic — validate, store the result,
+  and update schedule lifecycle together. Copy the `updateManagedTeam` pattern
+  (`expectedRevision` → re-parse → `LeagueSnapshotStaleWriteError` → write →
+  verify by re-read).
+- `advanceToNextGameDay`: move `Season.currentDate`.
+- **Unpin the clock.** `createSeasonFoundation.ts:551` currently *asserts* that
+  `currentDate` differing from `regularSeasonStartDate` is an error. Its own
+  comment concedes it "is not a validator for later published, postponed, or
+  completed season state." It must be narrowed to creation-time only.
+- **Now rewrite the absence tests — deliberately, not by deletion.** The ring
+  that held through §6 (`tests/ui/schedulePages.test.tsx:297`,
+  `tests/app/teamScheduleViewModel.test.ts:844`,
+  `tests/app/dashboardViewModel.test.ts:99`) asserts results cannot exist. That
+  was correct and honest. **This is the section where it stops being true.** Turn
+  each into its positive counterpart — asserting results *do* render — rather
+  than quietly removing it.
+
+**Exit gate.**
+- One scheduled game goes from `scheduled` to `completed` with a committed
+  result, persisted and restored across a reload.
+- The real League Calendar and Team Schedule show that game as Final with a real
+  score; the Final filter returns it.
+- A stale-revision commit is rejected, not applied.
+- Re-simulating identical inputs reproduces a deeply-equal result.
+- All four gates green.
+
+### 11. Standings and season statistics
+
+**Goal.** Derive standings and season totals as a **pure fold over committed box
+scores**. Box scores stay the source of truth; nothing is stored that cannot be
+recomputed.
+
+**Work.**
+- Fold completed results into standings; deterministic tiebreakers.
+- Fold player box scores into season totals; derive per-game values and nullable
+  percentages.
+- Note: `TeamSeason` has no win/loss fields today. Prefer deriving the record
+  over storing it; if it is stored, it must be verified by recomputation.
+- Aggregation consumes no randomness and is re-runnable.
+- The standings and season-stat **screens** are §18 — but if you want to design
+  them first, do it the §6 way: fixtures, dev preview, absence tests green.
+
+**Exit gate.**
+- Wins + losses = games played; league wins = league losses = completed games.
+- Standings match every committed result exactly.
+- Season player totals match the sum of game rows.
+- Zero-attempt percentages are null, never `NaN`.
+- All four gates green.
+
+### 12. Full season
+
+**Goal.** Sim all 112 games across 28 game days at 8 teams.
+
+**Work.** Advance game-day by game-day to the season's end. Handle the season
+lifecycle transition at conclusion. Add a fixed-seed full-season fixture.
+
+**Exit gate.**
+- A full season sims from opening to conclusion with no invalid state.
+- Standings equal the completed results.
+- Identical seeds reproduce a deeply-equal season.
+- All four gates green.
+
+### 13. Multi-season loop
+
+**Goal.** Roll season to season and sim ~5 seasons without drift or corruption.
+**This is the gate that unlocks §15.**
+
+**Work.** Season rollover: new season, new schedule, carried league state.
+Player aging is *out of scope* unless it is explicitly added as its own section.
+
+**Exit gate.**
+- ~5 consecutive seasons sim cleanly in a loop.
+- No drift, corruption, or ID collision across seasons.
+- Every season deterministic and persisted/restored.
+- All four gates green.
+
+---
+
+# Part III — Depth
+
+### 14. Deepen the possession engine
+
+**Goal.** Make the basketball good. Because the box score is the interface, this
+changes internals only — the §6 screens, standings, and persistence are
+unaffected.
+
+**May start any time after §9**, since it lives behind the box-score interface.
+Sequenced here so the loop is proven first.
+
+Narrow vertical slices, box-score assertions active throughout:
+
+1. period clock, possession switching, exact player seconds;
+2. valid lineups, dead-ball substitutions, planned-minute targeting;
 3. shot selection and two-/three-point make/miss;
 4. turnovers and steals;
-5. fouls, bonus, foul-outs, and free throws;
+5. fouls, bonus, foul-outs, free throws;
 6. rebounds and offensive-rebound continuation;
-7. assists, blocks, and defense effects;
+7. assists, blocks, defensive effects;
 8. fatigue;
-9. overtime and termination guards; and
+9. overtime and termination guards;
 10. final box-score validation and reproducibility metadata.
 
 Each slice adds forced-path tests plus deterministic seed-loop invariant tests.
 
-Exit gate:
+**Exit gate.**
+- Every slice's forced paths are covered.
+- Invariants hold over a large fixed seed set.
+- Fixed-seed distribution reports fall in documented broad bands.
+- Any formula change carries a `SIMULATION_VERSION` bump and new golden tests.
+- All four gates green.
 
-- every completed game has exactly one winner;
-- all required minute and statistical invariants pass over a large fixed seed set;
-- identical inputs and game seeds deep-compare equal;
-- simulation code contains no React, DOM, persistence, network, or `Math.random` usage; and
-- strict checking, tests, lint, and build pass.
+---
 
-## Phase 5 — Standings and season statistics
+# Part IV — Scale
 
-Work:
+### 15. Thirty teams
 
-- fold immutable completed games into standings;
-- implement deterministic tiebreakers;
-- fold player box scores into season totals;
-- derive per-game values and nullable percentages;
-- simulate fixed full-season fixtures; and
-- verify cached or displayed values by recomputation.
+**Gated on §13.** The hard parts are already solved and green on the shelf: NBA
+date anchors, the balanced 30×82 meeting matrix, conflict-free date placement,
+conference/division alignment, and the additive 1230-game generator. What remains
+is wiring plus coordinated test updates.
 
-Exit gate:
+**This must land as one coordinated commit.** `generateLeague` seed-*selects*
+teams from `FICTIONAL_TEAM_IDENTITIES`, so merely appending identities changes
+which 8 teams today's league draws and breaks pinned fingerprints. Team count,
+schedule generation, and the fixture/test updates cannot be half-migrated.
 
-- wins plus losses match games played;
-- total league wins equal completed games and total league losses;
-- standings match every completed result;
-- season player totals match game rows;
-- zero-attempt percentages never become `NaN`; and
-- strict checking, tests, lint, and build pass.
+Step detail and the 18 ready-to-paste identities: **`NBA_SCALE_PLAN.md`**.
 
-## Phase 6 — Versioned local persistence
+**Exit gate.**
+- 30 teams, 360 players, 82 games each (41/41), 1230 games over the 174-day
+  window; no team twice in a day.
+- Calendar events are authoritative rather than derived.
+- All characterization tests updated together; the suite is green in one commit.
 
-Work:
+### 16. Postseason and NBA Cup
 
-- define save envelope version 1 and structured validation errors;
-- implement whole-season semantic validation;
-- implement IndexedDB autosave-revision, autosave-head, and named-manual-save stores;
-- autosave at approved state boundaries;
-- atomically retain the newest 20 autosave revisions and prune only older autosaves;
-- retain every named manual save until explicit confirmed deletion;
-- implement staged JSON export/import;
-- implement collision-safe “keep both” behavior;
-- establish the migration registry and version-1 fixtures; and
-- test 19/20/21-autosave retention boundaries, named-manual-save survival, failed writes, quota errors, 50 MiB import boundaries, corrupt JSON, invalid references, future versions, and round trips.
+Play-in, four best-of-seven rounds seeded per conference, and the Cup group /
+knockout. New domain, generation, and UI.
 
-The active-league schema foundation is a deliberately smaller prerequisite to
-this phase. V1 remains the league-only snapshot; V2 is a strict JSON-safe DTO
-containing the regular-season foundation and creation metadata. Its parser
-validates exact shape, domain entities, references, stored schedule invariants,
-exact supported rule-set versions, and JSON round trips without regeneration.
-The pure V1-to-V2 migration requires explicit season inputs and performs no
-storage operation itself. The active-league repository now composes it with a
-single IndexedDB transaction: V1 remains at `current`, V2 is written at
-`current-v2`, V2 has authoritative read precedence, and reread validation must
-pass before commit. Managed-team updates and clearing use the V2 revision for
-stale-write protection, while new leagues are constructed directly as V2 from
-explicit season inputs. A separately confirmed corrupt-storage recovery purge
-can delete both active versioned records without parsing malformed data; it is
-not the normal clear path. This bridge still does not implement autosave-history
-retention, named manual saves, full-season envelopes, or import/export, so it
-does not by itself satisfy the Phase 6 exit gate.
+---
 
-Exit gate:
+# Part V — Product
 
-- a failed save/import cannot alter the prior head;
-- no retained autosave revision is overwritten;
-- only autosaves outside the newest-20 window are pruned;
-- no named manual save is overwritten or deleted without explicit confirmation;
-- storage quota failures preserve prior state and are reported clearly;
-- valid round trips preserve domain state;
-- corrupt or unsupported files are rejected with actionable errors;
-- the app remains fully local and offline at runtime; and
-- strict checking, tests, lint, and build pass.
+### 17. Full save system
 
-## Phase 7 — React application screens
+**Migrations become real here.** From this section on, saves belong to players and
+must survive. Autosave with the latest 20 revisions; named manual saves retained
+until explicit confirmed deletion; staged JSON export/import with a 50 MiB
+ceiling; collision-safe "keep both"; a real migration registry and fixtures.
 
-Integrate already tested domain commands and selectors:
+**Exit gate.**
+- A failed save or import cannot alter the prior head.
+- Only autosaves outside the newest-20 window are pruned; no named save is ever
+  overwritten or deleted without explicit confirmation.
+- Quota failures preserve prior state and are reported clearly.
+- Corrupt or unsupported files are rejected with actionable errors.
+- Round trips preserve domain state.
 
-1. new season and team selection;
-2. application shell/navigation and autosave status;
-3. roster;
-4. depth chart and 240-minute rotation editor;
-5. schedule and game-day advancement;
-6. game result and box score;
-7. standings;
-8. season player statistics; and
-9. save management, export, import preview, and confirmations.
+### 18. Remaining screens
 
-React components dispatch application commands. They do not contain possession formulas, directly mutate season state, or reinterpret statistical rules.
+Roster; depth chart and the 240-minute rotation editor; standings; season player
+statistics; save management, export, import preview, and confirmations. (Result
+and box score are already done — §6.) Components dispatch commands — they never
+contain possession formulas, mutate season state, or reinterpret statistical
+rules.
 
-Exit gate:
+Build these the §6 way: screens first against fixtures, then the data.
 
-- the complete core player loop works from new season through game day 28;
-- invalid rotations and invalid imports are visibly blocked;
-- every completed game remains inspectable;
-- autosave state and failures are visible;
-- keyboard and semantic-table/form checks pass; and
-- strict checking, tests, lint, and build pass.
+**Exit gate.** The full player loop works from new league through a completed
+season. Invalid rotations and imports are visibly blocked. Every completed game
+stays inspectable. Keyboard and semantic-table/form checks pass.
 
-## Phase 8 — Milestone 1 stabilization
+### 19. Release gate
 
-Work:
+Deterministic full-season suites over fixed seed sets. Storage quota and
+interrupted-write behavior. Export/import across fresh browser storage. Verify no
+runtime request leaves the app. Audit all generated identities for fictional,
+local-only compliance. Accessibility audit. Remove unused starter assets and the
+dev preview route if it is no longer wanted.
 
-- run deterministic full-season suites over fixed seed sets;
-- tune only versioned simulation constants within documented broad guardrails;
-- test storage quota and interrupted-write behavior;
-- test export/import across fresh browser storage;
-- verify no runtime request leaves the app;
-- audit generated team/player names, initials/CSS marks, colors, and component data for fictional/local-only compliance and avoidance of real professional team identities;
-- audit accessible labels, focus order, validation messages, and responsive tables; and
-- remove starter-only assets/content that are no longer used.
+**Release gate.** Acceptance criteria in `GAME_DESIGN.md` pass; invariants in
+`DATA_MODEL.md` pass; all four gates pass from a clean checkout; known
+limitations documented. **`grep -rn "DEFERRED(" src/` returns nothing** — every
+numbered tag was filled by its section, and every `DEFERRED(later)` item was
+either given a section and built, or consciously cut and recorded here.
 
-Release gate:
+---
 
-- all Milestone 1 acceptance criteria in `GAME_DESIGN.md` pass;
-- every invariant in `DATA_MODEL.md` passes;
-- automated tests, strict TypeScript checking, linting, and production build pass from a clean checkout with already installed dependencies;
-- known limitations are documented; and
-- deployment and publishing remain outside the task.
+## Deferred-slot ledger (plug in as we go)
 
-## Test matrix
+UI-first means screens ship with slots their data can't fill yet. Each such
+slot carries a **`DEFERRED(§N)` comment in the code at the exact place to
+change**, naming the roadmap section that unblocks it. The code tags are
+canonical — this table is the human index and may lag them; when in doubt,
+grep.
 
-| Area | Unit | Forced branch | Seed loop/property | Full integration |
-| --- | --- | --- | --- | --- |
-| IDs/data/rotations | yes | invalid ownership | generated invalid cases | league load |
-| RNG | golden vectors | boundary values | many seeds/ranges | replay |
-| Schedule | round construction | malformed teams | many seeds | full season |
-| Possessions | formulas/events | every result branch | thousands of games | game result |
-| Minutes/substitutions | lineup solver | foul-out/emergency | extreme rotations | full game |
-| Box scores | event builder | every stat event | all simulations | season fold |
-| Standings/stats | tiebreak/percentages | zero games/attempts | result permutations | full season |
-| Saves | validators/migrations | corruption/quota/collision | JSON round trips | fresh import |
-| React | selectors/forms | invalid rotation/import | not applicable | core player loop |
+**The rule:** finishing section N means sweeping its tags. `grep -rn
+"DEFERRED(§N)" src/` → fill every hit → the tag comes out with the fix. A
+section with surviving tags is not done. That is the whole system: nothing to
+remember, only a grep that must come back empty.
 
-Tests use fixed seeds and print replay information on failure. Statistical calibration uses broad fixed-seed bands; exact accounting uses hard assertions.
+Current index (2026-07-17):
 
-## Risks and unresolved details
-
-| Item | Risk | Proposed handling |
+| Unblocks at | Slot | Where |
 | --- | --- | --- |
-| Generated league identities | a generated combination could resemble a real professional identity | use deliberately fictional local components, deterministic uniqueness checks, and a content audit |
-| Rotation plan versus actual minutes | users may expect exact individual minutes | label values “planned”; show actual box-score seconds/minutes |
-| Autosave retention and quota | 20 autosaves plus unlimited named manual saves can consume browser quota | atomically prune only autosaves beyond 20, never prune manual saves, and report quota errors clearly |
-| Browser storage availability | private modes or policies may restrict IndexedDB | detect failure before relying on autosave and prominently offer JSON export |
-| Simulation balance | deterministic formulas can be correct but unfun | use fixed-seed distribution reports and version constants intentionally |
-| Test runtime | thousands of games may slow the normal loop | separate fast required tests from a deterministic extended simulation suite |
-| Vitest setup | adding a runner expands development tooling | add Vitest only as a development dependency and keep production output independent of it |
-| Overtime/foul guards | rare continuation behavior is a product rule | approve and test explicit deterministic guards |
-| Save evolution | future formula changes cannot reproduce old results automatically | preserve completed results and record all engine/data versions |
+| §8 | Adjust Rotation button becomes a real editor destination | `homePage.tsx` |
+| §10 | Continue (advance game day); Sim Game; Recent Results fills with real Finals; retire the dev-preview entry | `homePage.tsx` |
+| §11 | Record · Seed · Streak (command bar); Records · Ranks · Last 10 (Next Game); Season Pulse (all of it); Standings values; Team Stats ranks; team records in the post-game header | `homePage.tsx`, `gameResultPage.tsx` |
+| §12 | Sim to Next Event (multi-day advance) | `homePage.tsx` |
+| §14 | Watch Game; and the event log unlocks at once: Game summary, Play-by-Play + key moments, Charts (game flow, shot chart), largest lead / lead changes / points off turnovers / points in paint | `homePage.tsx`, `gameResultPage.tsx` |
+| §15 | Division/Conference standings split (needs the 30-team alignment) | `homePage.tsx` |
+
+**`DEFERRED(later)` — needs systems not yet on the roadmap.** These must each
+either get a roadmap section or be consciously cut at §19; they may not just
+evaporate:
+
+| Slot | Needs |
+| --- | --- |
+| Needs Attention actionable items (injuries, trade offers, deadlines, roster problems) | injury, trade, contract systems |
+| Next Game availability report | injury system |
+| Roster Health (injuries, fatigue, availability) | player-health systems |
+| Front Office card (payroll, cap, tax, contracts) | financial model |
+| Important Headlines | league news system |
+| Post-game Game Info layer (venue, attendance, referees, game time) | venue/officials systems |
+
+Clickable destinations already wired (live now; they land on honest planned
+pages until those pages are built): Review Offers → `front-office-market`,
+View Free Agents → `front-office-free-agency`, Adjust Rotation →
+`team-rotation-gameplan`, View Finances → `finances-overview`, View Full
+Schedule → `schedule-team-schedule`.
+
+## Risks
+
+| Item | Risk | Handling |
+| --- | --- | --- |
+| Docs drifting ahead of code | specs describe unbuilt systems as though they exist; a false claim survived long enough to reach a plan | this file is the only status; specs are explicitly design-only and lose to the code |
+| Fixtures leaking into the real app | a designed-against-fake screen ships showing invented results, violating ADR 0005 | fixtures are dev/test only; the absence tests stay green through §6 and are the tripwire |
+| UI-first drifting into endless polish | the screens keep improving and no basketball is ever played | §6 exits when the types freeze; §9 follows immediately |
+| A screen that cannot be simulated | the box score asks for data the engine can't plausibly produce | fixtures must obey the invariants, so the design is always against producible data |
+| Generated identities | a combination could resemble a real professional identity | deliberately fictional components, uniqueness checks, content audit at §19 |
+| Simulation balance | deterministic formulas can be correct but unfun | fixed-seed distribution reports; version constants intentionally |
+| Test runtime | thousands of games slow the normal loop | keep the fast required suite separate from an extended deterministic suite |
+| Save evolution after 1.0 | formula changes cannot reproduce old results | preserve completed results; record engine and data versions on every result |
 | Import safety | structurally valid JSON can still be semantically corrupt | stage as `unknown`, validate whole-season invariants, then write atomically |
-
-## Smallest proposed implementation task
-
-Enable `"strict": true` in the existing app and Node TypeScript configurations, add a standalone no-emit `typecheck` package script, and run type checking, linting, and the production build without changing application behavior or adding dependencies.
-
-This is intentionally smaller than creating domain entities or installing the already selected Vitest runner. It closes the known configuration gap and gives every later type a strict baseline.
+| Rotation plan vs actual minutes | users expect exact individual minutes | label values "planned"; show actual box-score minutes |

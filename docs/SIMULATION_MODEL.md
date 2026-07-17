@@ -1,4 +1,32 @@
-# Stone Basketball GM — Milestone 1 Simulation Model
+# Stone Basketball GM — Simulation Model
+
+> ## ⚠ Nothing in this document is implemented.
+>
+> **This is a design spec, not a description of the code.** There is no
+> `src/simulation/` directory. No `simulateGame`, `GameResult`, `BoxScore`,
+> `RotationPlan`, or `LeagueRulesV1` exists anywhere in the tree.
+>
+> It is written in the present tense throughout ("The simulation is…",
+> "Finalization rejects…"). **Read every such sentence as "will".** That framing
+> is the single most misleading thing in these docs, and it is why this banner
+> exists.
+>
+> What actually exists today, and is safe to rely on:
+> - `RandomSource` (`src/random/randomSource.ts`) — matches the interface below
+>   exactly.
+> - `xoshiro128**` (`RANDOM_SOURCE_VERSION = 'xoshiro128ss-v1'`) and labeled seed
+>   derivation.
+> - The schedule generator described under "Schedule generation".
+>
+> Building this is [`ROADMAP.md`](ROADMAP.md) §9 (the kernel) and §14 (depth).
+> **Keep the first version simple** — §9 is a walking skeleton behind the box
+> score interface, not the engine described here. The roadmap decides what gets
+> built and when; this file only describes the target.
+>
+> **The result contract is not decided here.** It is decided by the box score
+> screen in §6 and recorded in this file once frozen. The kernel implements
+> against whatever that screen needs — this document does not get to invent the
+> shape.
 
 ## Simulation contract
 
@@ -84,7 +112,9 @@ schedule seed = derive(rootSeed, "schedule/v1")
 game seed     = derive(rootSeed, "game/v1/" + stableGameId)
 ```
 
-Initial teams and players are generated once from the league stream and then persisted in full; save loading never regenerates them. Game simulation is atomic, so Milestone 1 does not need to persist mid-game RNG state. The exact derived seed is stored with the scheduled game and result.
+Initial teams and players are generated once from the league stream and then persisted in full; save loading never regenerates them. Game simulation is atomic, so no mid-game RNG state needs to be persisted. The exact derived seed will be stored **with the result**.
+
+> **Correction.** An earlier version of this line claimed the derived seed "is stored with the scheduled game and result." It is not: `ScheduledGame` (`src/domain/schedule.ts:359`) has no seed field, and no result type exists yet. Per [ADR 0005](adr/0005-scheduled-game-vs-game-result.md) the seed belongs to the `GameResult` aggregate, never to `ScheduledGame`. The game seed derives on demand via `deriveSeed(rootSeed, 'game/v1/<gameId>')`.
 
 Golden-vector tests pin seed normalization, derived seeds, the first outputs of `nextUint32`, floating range, integer range, and weighted choices.
 
@@ -363,7 +393,9 @@ Season-level validation additionally proves standings and player totals against 
 
 ## Automated testing strategy
 
-Vitest is the approved primary test runner. It may be added during implementation as a development dependency, with a `test` script for the fast deterministic suite and a separate script for longer fixed-seed simulation runs. It is not a production dependency. Node's built-in test runner is not the primary plan.
+Vitest is the primary test runner. It **is already installed** as a dev-only dependency (`vitest ^4.1.10`) with `"test": "vitest run"`; 1124 tests pass today. It is not a production dependency. Node's built-in test runner is not the plan.
+
+Still to add when the simulation lands: a **separate** script for the longer fixed-seed simulation runs, kept out of the fast required suite so the normal loop stays quick.
 
 ### Unit tests
 

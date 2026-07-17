@@ -1,4 +1,26 @@
-# Stone Basketball GM — Milestone 1 Data Model
+# Stone Basketball GM — Data Model
+
+> **Part design spec, part description of shipped code — read the tense
+> carefully.** Sections labelled "proposed" or "planned" are design. But several
+> unlabelled sections are also design written in the present tense, and describe
+> things that do not exist. When this file disagrees with the code, **the code
+> wins.** Status lives only in [`ROADMAP.md`](ROADMAP.md).
+>
+> **Accurate today** (verified): the `Team` / `Player` / `PlayerTendencies`
+> shapes, the 16 `RATING_KEYS` and their grade boundaries, the V1/V2 snapshot
+> DTOs, the IndexedDB store and key names, and the handwritten-validator
+> approach.
+>
+> **Not built, despite present-tense phrasing here:** anything involving
+> simulation, results, box scores, standings, season statistics, rotations, or
+> `LeagueRulesV1`. Also note `SeasonStateV1` and `defaultRotationsByTeamId` do
+> not exist — the real persisted shape is `LeagueSnapshotV2` and the real
+> `League` is `{ id, generatorVersion, seedFingerprint, teams, players }`.
+>
+> **Tendencies are not normalized.** `rim` / `midrange` / `threePoint` are
+> independent 0–100 values that do not sum to 100. Any claim here that "the
+> simulation normalizes the weights" describes an intended formula that has not
+> been written or chosen yet (roadmap §9).
 
 ## Goals
 
@@ -768,9 +790,15 @@ new production dependency. If the future full-season schema becomes too
 complex, a production validation package requires a written rationale before
 it is added.
 
-## Required statistical invariants
+## Planned required statistical invariants
 
-These are checked after every simulated game and during save import:
+**None of these are checked today** — nothing simulates, and no save import
+exists. This is the target list for roadmap §9 (kernel), §11 (standings), and
+§17 (import). It is reproduced in `SIMULATION_MODEL.md`; that file is the one the
+kernel implements against.
+
+Once built, these will be checked after every simulated game and during save
+import:
 
 - each team has exactly 14,400 regulation player-seconds, equivalent to 240 regulation minutes;
 - each team has exactly `overtimePeriods × 1,500` overtime player-seconds;

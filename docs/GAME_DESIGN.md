@@ -42,7 +42,12 @@ Each generated team receives exactly 12 generated fictional players, for 96 leag
 | Games per team | 28 |
 | Total league games | 112 across 28 game days |
 
-Overtime minutes are not part of the 240-minute regulation rotation plan. The simulation selects overtime lineups from eligible players using the approved rotation order, current fatigue, and foul status.
+Overtime minutes are not part of the 240-minute regulation rotation plan. The simulation will select overtime lineups from eligible players using the approved rotation order, current fatigue, and foul status.
+
+Overtime is unbounded as a *product* rule, but termination must be a software
+guarantee. Item 10 of the approved baseline below covers this: `SIMULATION_MODEL.md`
+caps it at 20 tied periods and then resolves a deterministic sudden-death
+free throw. That guard should be unreachable in normal play.
 
 ## Core player loop
 
@@ -55,7 +60,11 @@ Overtime minutes are not part of the 240-minute regulation rotation plan. The si
 7. Repeat through the 28-game regular season.
 8. Continue viewing the completed season or export the save.
 
-The user manages only the selected team. Other teams use deterministic default starters and rotations stored with league data. No excluded management systems are implied by the roster screen.
+The user manages only the selected team. Other teams will use deterministic default starters and rotations generated from the league seed. No excluded management systems are implied by the roster screen.
+
+> **Not built yet.** No starters or rotations are stored with league data, or
+> anywhere else — `League` holds only `teams` and `players`. Rotations are
+> roadmap §8.
 
 ## Screens
 
