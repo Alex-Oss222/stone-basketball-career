@@ -24,7 +24,10 @@ describe('TeamScheduleContent', () => {
     // Season current date is 2026-10-05, so October 2026 shows by default.
     expect(markup).toContain('October 2026')
     expect(markup).not.toContain('December 2026')
-    expect(markup.match(/data-schedule-game=/g)).toHaveLength(9)
+    // Calendar is the default view.
+    expect(markup).toContain('team-calendar-grid')
+    expect(markup).toMatch(/team-calendar-chip/)
+    expect(markup).not.toContain('data-schedule-game')
     expect(markup).toContain('9 games in October 2026')
     // Season totals still appear in the summary.
     expect(markup).toContain('<dt>Total games</dt><dd>28</dd>')
@@ -44,6 +47,22 @@ describe('TeamScheduleContent', () => {
     expect(markup).toContain('Your GM')
     expect(markup).toContain('Off-season')
     expect(markup).not.toContain('Date to be announced')
+  })
+
+  it('splits the list view into upcoming and recent games', () => {
+    const presentation = createLeaguePresentationBundle(
+      createLeagueSnapshotV2Fixture(),
+    )
+    const markup = renderToStaticMarkup(
+      <TeamScheduleContent presentation={presentation} initialViewMode="list" />,
+    )
+
+    // Season opens on 2026-10-05, so every October game is still upcoming.
+    expect(markup).toContain('Upcoming games')
+    expect(markup).toContain('October 2026 · 9 games')
+    expect(markup.match(/data-schedule-game=/g)).toHaveLength(9)
+    // No games have been played yet, so there is no recent-games section.
+    expect(markup).not.toContain('Recent games')
   })
 
   it('renders the inspected team calendar view when selected', () => {
@@ -112,7 +131,7 @@ describe('TeamScheduleContent', () => {
     const firstTeam = presentation.league.teams[0]
 
     const markup = renderToStaticMarkup(
-      <TeamScheduleContent presentation={presentation} />,
+      <TeamScheduleContent presentation={presentation} initialViewMode="list" />,
     )
 
     expect(markup.match(/data-schedule-game=/g)).toHaveLength(9)
@@ -128,12 +147,14 @@ describe('TeamScheduleContent', () => {
     const homeMarkup = renderToStaticMarkup(
       <TeamScheduleContent
         presentation={presentation}
+        initialViewMode="list"
         initialFilter="home"
       />,
     )
     const awayMarkup = renderToStaticMarkup(
       <TeamScheduleContent
         presentation={presentation}
+        initialViewMode="list"
         initialFilter="away"
       />,
     )
@@ -179,7 +200,7 @@ describe('TeamScheduleContent', () => {
     }
     const presentation = createLeaguePresentationBundle(postponedSnapshot)
     const markup = renderToStaticMarkup(
-      <TeamScheduleContent presentation={presentation} />,
+      <TeamScheduleContent presentation={presentation} initialViewMode="list" />,
     )
 
     expect(markup).toContain('Date to be announced')
@@ -193,7 +214,7 @@ describe('TeamScheduleContent', () => {
       createLeagueSnapshotV2Fixture(),
     )
     const markup = renderToStaticMarkup(
-      <TeamScheduleContent presentation={presentation} />,
+      <TeamScheduleContent presentation={presentation} initialViewMode="list" />,
     )
 
     expect(markup).toContain('<label for="')

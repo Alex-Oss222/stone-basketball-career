@@ -23,7 +23,7 @@ describe('Team Schedule transient UI state initialization', () => {
     expect(state).toEqual({
       inspectedTeamId: snapshot.managedTeamId,
       stage: 'regular_season',
-      viewMode: 'list',
+      viewMode: 'calendar',
       siteFilter: 'all',
       visibleMonth: null,
       selectedGameId: null,
@@ -60,7 +60,7 @@ describe('Team Schedule transient UI state initialization', () => {
     expect(state).toEqual({
       inspectedTeamId,
       stage: 'regular_season',
-      viewMode: 'list',
+      viewMode: 'calendar',
       siteFilter: 'away',
       visibleMonth: null,
       selectedGameId,
@@ -116,7 +116,7 @@ describe('Team Schedule transient UI state reducer', () => {
     expect(next).toEqual({
       inspectedTeamId,
       stage: 'regular_season',
-      viewMode: 'list',
+      viewMode: 'calendar',
       siteFilter: 'all',
       visibleMonth: null,
       selectedGameId: null,
@@ -239,7 +239,7 @@ describe('Team Schedule UI state closed contracts', () => {
     const state: TeamScheduleUiState = Object.freeze({
       inspectedTeamId: teamId,
       stage: 'regular_season',
-      viewMode: 'list',
+      viewMode: 'calendar',
       siteFilter: 'all',
       visibleMonth: null,
       selectedGameId: gameId,

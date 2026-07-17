@@ -2905,3 +2905,9 @@ tbody tr:last-child td {
   font-size: 0.8rem;
   color: var(--muted);
 }
+
+.team-schedule-list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

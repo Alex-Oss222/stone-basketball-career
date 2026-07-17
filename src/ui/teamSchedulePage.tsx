@@ -21,6 +21,7 @@ import type { CalendarDayCellModel, CalendarMonthGridModel } from '../app/calend
 import { createLeagueYearDisplayRange } from '../app/leagueYearDisplayRange'
 import { parseTeamId } from '../domain/ids'
 import type { GameId, TeamId } from '../domain/ids'
+import { compareLocalDates } from '../domain/localDate'
 import type { LocalDate } from '../domain/localDate'
 import type { SeasonPhase } from '../domain/season'
 import { yearMonthFromLocalDate } from '../domain/yearMonth'
@@ -63,10 +64,12 @@ const STAGE_TABS = [
 const GM_NAME_PLACEHOLDER = 'Your GM'
 
 const VIEW_TABS = [
-  { value: 'list', label: 'List' },
   { value: 'calendar', label: 'Calendar' },
+  { value: 'list', label: 'List' },
   { value: 'results', label: 'Results', comingLater: true },
 ] as const satisfies readonly SegmentedTabOption<TeamScheduleViewMode>[]
+
+const RECENT_GAME_LIMIT = 5
 
 export interface TeamSchedulePageProps extends LeaguePresentationBundle {
   readonly initialInspectedTeamId?: TeamId
@@ -200,6 +203,21 @@ export function TeamSchedulePage({
     viewModel.undatedGroup.rows,
     uiState.siteFilter,
   )
+  // Upcoming: the visible month's dated games from the current date forward.
+  const upcomingMonthRows = monthRows.filter(
+    (row) =>
+      row.placementDate !== null &&
+      compareLocalDates(row.placementDate, season.currentDate) >= 0,
+  )
+  // Recent: the last few dated games across the season before the current date.
+  const recentRows = filteredRows
+    .filter(
+      (row) =>
+        row.placementDate !== null &&
+        compareLocalDates(row.placementDate, season.currentDate) < 0,
+    )
+    .slice(-RECENT_GAME_LIMIT)
+    .reverse()
 
   function inspectTeam(teamId: TeamId): void {
     dispatch({ type: 'inspect_team', teamId })
@@ -290,42 +308,34 @@ export function TeamSchedulePage({
             }
           />
 
-          <p
-            className="team-schedule-result-count"
-            role="status"
-            aria-live="polite"
-          >
-            {monthRows.length}{' '}
-            {monthRows.length === 1 ? 'game' : 'games'} in{' '}
-            {formatScheduleMonthHeading(effectiveMonth)}
-          </p>
-
           {uiState.viewMode === 'calendar' ? (
-            visibleGrid === null ? null : (
-              <TeamCalendarMonth
-                grid={visibleGrid}
-                rowsByDate={rowsByDate}
-                currentDate={season.currentDate}
-                inspectedTeamName={viewModel.inspectedTeamName}
-                onOpenGame={openGame}
-              />
-            )
-          ) : monthRows.length === 0 ? (
-            <EmptyMonthState
-              monthHeading={formatScheduleMonthHeading(effectiveMonth)}
-            />
+            <>
+              <p
+                className="team-schedule-result-count"
+                role="status"
+                aria-live="polite"
+              >
+                {monthRows.length}{' '}
+                {monthRows.length === 1 ? 'game' : 'games'} in{' '}
+                {formatScheduleMonthHeading(effectiveMonth)}
+              </p>
+              {visibleGrid !== null && (
+                <TeamCalendarMonth
+                  grid={visibleGrid}
+                  rowsByDate={rowsByDate}
+                  currentDate={season.currentDate}
+                  inspectedTeamName={viewModel.inspectedTeamName}
+                  onOpenGame={openGame}
+                />
+              )}
+            </>
           ) : (
-            <TeamScheduleTable
-              rows={monthRows}
-              caption={`${formatScheduleMonthHeading(effectiveMonth)} schedule for ${viewModel.inspectedTeamName}`}
-              onOpenGame={openGame}
-            />
-          )}
-
-          {uiState.viewMode === 'list' && visibleUndatedRows.length > 0 && (
-            <UndatedTeamScheduleSection
-              rows={visibleUndatedRows}
+            <TeamScheduleListView
+              monthHeading={formatScheduleMonthHeading(effectiveMonth)}
               inspectedTeamName={viewModel.inspectedTeamName}
+              upcomingRows={upcomingMonthRows}
+              recentRows={recentRows}
+              undatedRows={visibleUndatedRows}
               onOpenGame={openGame}
             />
           )}
@@ -763,6 +773,100 @@ function TeamScheduleTableRow({
       <td data-label="Site">{row.site === 'home' ? 'Home' : 'Away'}</td>
       <td data-label="Status">{status}</td>
     </tr>
+  )
+}
+
+function TeamScheduleListView({
+  monthHeading,
+  inspectedTeamName,
+  upcomingRows,
+  recentRows,
+  undatedRows,
+  onOpenGame,
+}: {
+  readonly monthHeading: string
+  readonly inspectedTeamName: string
+  readonly upcomingRows: readonly TeamScheduleRowViewModel[]
+  readonly recentRows: readonly TeamScheduleRowViewModel[]
+  readonly undatedRows: readonly TeamScheduleRowViewModel[]
+  readonly onOpenGame: (
+    gameId: GameId,
+    event: MouseEvent<HTMLButtonElement>,
+  ) => void
+}) {
+  if (
+    upcomingRows.length === 0 &&
+    recentRows.length === 0 &&
+    undatedRows.length === 0
+  ) {
+    return <EmptyMonthState monthHeading={monthHeading} />
+  }
+
+  return (
+    <div className="team-schedule-list-view">
+      {upcomingRows.length > 0 && (
+        <ScheduleGamesSection
+          headingId="team-schedule-upcoming"
+          title="Upcoming games"
+          subtitle={`${monthHeading} · ${upcomingRows.length} ${upcomingRows.length === 1 ? 'game' : 'games'}`}
+          rows={upcomingRows}
+          caption={`Upcoming ${monthHeading} games for ${inspectedTeamName}`}
+          onOpenGame={onOpenGame}
+        />
+      )}
+      {recentRows.length > 0 && (
+        <ScheduleGamesSection
+          headingId="team-schedule-recent"
+          title="Recent games"
+          subtitle={`Last ${recentRows.length}`}
+          rows={recentRows}
+          caption={`Recent games for ${inspectedTeamName}`}
+          onOpenGame={onOpenGame}
+        />
+      )}
+      {undatedRows.length > 0 && (
+        <UndatedTeamScheduleSection
+          rows={undatedRows}
+          inspectedTeamName={inspectedTeamName}
+          onOpenGame={onOpenGame}
+        />
+      )}
+    </div>
+  )
+}
+
+function ScheduleGamesSection({
+  headingId,
+  title,
+  subtitle,
+  rows,
+  caption,
+  onOpenGame,
+}: {
+  readonly headingId: string
+  readonly title: string
+  readonly subtitle: string
+  readonly rows: readonly TeamScheduleRowViewModel[]
+  readonly caption: string
+  readonly onOpenGame: (
+    gameId: GameId,
+    event: MouseEvent<HTMLButtonElement>,
+  ) => void
+}) {
+  return (
+    <section className="team-schedule-month" aria-labelledby={headingId}>
+      <header className="team-schedule-month-header">
+        <div>
+          <h2 id={headingId}>{title}</h2>
+          <span>{subtitle}</span>
+        </div>
+      </header>
+      <TeamScheduleTable
+        rows={rows}
+        caption={caption}
+        onOpenGame={onOpenGame}
+      />
+    </section>
   )
 }
 

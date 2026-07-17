@@ -69,7 +69,7 @@ export function createTeamScheduleUiState({
   managedTeamId,
   initialInspectedTeamId,
   initialStage = 'regular_season',
-  initialViewMode = 'list',
+  initialViewMode = 'calendar',
   initialFilter = 'all',
   initialSelectedGameId = null,
 }: CreateTeamScheduleUiStateInput): TeamScheduleUiState {
