@@ -1,5 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { createLeagueSnapshotFixture } from './leagueSnapshot.fixture'
+import { removeGenerationTripwires } from '../helpers/noRegenerationTripwire'
 
 const snapshotFixture = JSON.parse(
   JSON.stringify(createLeagueSnapshotFixture()),
@@ -11,12 +12,7 @@ const storedRecordFixture = {
 
 describe('LeagueSnapshot repository restoration architecture', () => {
   afterEach(() => {
-    vi.doUnmock('../../src/app/commands/createSeasonFoundation')
-    vi.doUnmock('../../src/generation/generateSchedule')
-    vi.doUnmock('../../src/generation/generateLeague')
-    vi.doUnmock('../../src/domain/schedule')
-    vi.doUnmock('../../src/random/xoshiro128ss')
-    vi.resetModules()
+    removeGenerationTripwires()
   })
 
   it('restores stored snapshot storage without regeneration', async () => {

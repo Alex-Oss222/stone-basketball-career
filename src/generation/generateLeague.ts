@@ -28,7 +28,11 @@ import {
   DETAILED_RATINGS_SCHEMA_VERSION,
 } from '../domain/detailedRatings'
 import type { RandomSource } from '../random/randomSource'
-import { deriveSeed, normalizeSeed } from '../random/seed'
+import {
+  deriveSeed,
+  fingerprintDerivedSeed,
+  normalizeSeed,
+} from '../random/seed'
 import { createRandomSource } from '../random/xoshiro128ss'
 import { generateDetailedPlayerRatings } from './generateDetailedRatings'
 
@@ -94,7 +98,10 @@ export function generateLeagueWithRandomSource(
 ): League {
   const normalizedSeed = normalizeSeed(rootSeed)
   const leagueSeed = deriveSeed(normalizedSeed, LEAGUE_RANDOM_STREAM_LABEL)
-  const seedFingerprint = fingerprintFromDerivedSeed(leagueSeed)
+  const seedFingerprint = fingerprintDerivedSeed(
+    leagueSeed,
+    SEED_FINGERPRINT_LENGTH,
+  )
   const selectedIdentities = shuffled(FICTIONAL_TEAM_IDENTITIES, random).slice(
     0,
     LEAGUE_TEAM_COUNT,
@@ -266,17 +273,6 @@ function shuffled<T>(items: readonly T[], random: RandomSource): T[] {
     result[swapIndex] = current
   }
   return result
-}
-
-function fingerprintFromDerivedSeed(derivedSeed: string): string {
-  const separatorIndex = derivedSeed.lastIndexOf(':')
-  const digest = derivedSeed.slice(separatorIndex + 1)
-
-  if (digest.length < SEED_FINGERPRINT_LENGTH) {
-    throw new Error('Derived seed digest is too short for a league fingerprint')
-  }
-
-  return digest.slice(0, SEED_FINGERPRINT_LENGTH)
 }
 
 function formatOrdinal(ordinal: number): string {

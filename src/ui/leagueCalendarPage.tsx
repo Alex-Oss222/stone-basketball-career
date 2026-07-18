@@ -27,6 +27,7 @@ import {
 import type { LeagueMilestone } from '../app/leagueMilestones'
 import type { LocalDate } from '../domain/localDate'
 import { yearMonthFromLocalDate } from '../domain/yearMonth'
+import { assertNever } from '../shared/assertNever'
 import {
   createLeagueCalendarUiState,
   reduceLeagueCalendarUiState,
@@ -38,6 +39,8 @@ import {
 } from './broadcastFilter'
 import type { BroadcastFilter } from './broadcastFilter'
 import {
+  SHORT_WEEKDAY_NAMES,
+  WEEKDAY_NAMES,
   formatScheduleDateHeading,
   formatScheduleDateLong,
   formatScheduleDateShort,
@@ -48,26 +51,6 @@ import type { SegmentedTabOption } from './segmentedTabs'
 import { ComingLaterPanel } from './comingLaterPanel'
 
 const MAX_VISIBLE_ENTRIES_PER_DAY = 4
-
-const WEEKDAY_LABELS = [
-  'Sunday',
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thursday',
-  'Friday',
-  'Saturday',
-] as const
-
-const WEEKDAY_SHORT_LABELS = [
-  'Sun',
-  'Mon',
-  'Tue',
-  'Wed',
-  'Thu',
-  'Fri',
-  'Sat',
-] as const
 
 const VIEW_TABS = [
   { value: 'calendar', label: 'Calendar' },
@@ -403,10 +386,10 @@ function CalendarMonthTable({
         </caption>
         <thead>
           <tr>
-            {WEEKDAY_SHORT_LABELS.map((label, index) => (
+            {SHORT_WEEKDAY_NAMES.map((label, index) => (
               <th key={label} scope="col">
                 <span aria-hidden="true">{label}</span>
-                <span className="visually-hidden">{WEEKDAY_LABELS[index]}</span>
+                <span className="visually-hidden">{WEEKDAY_NAMES[index]}</span>
               </th>
             ))}
           </tr>
@@ -677,10 +660,10 @@ function MiniMonthCalendar({
         <caption className="visually-hidden">{heading} mini calendar</caption>
         <thead>
           <tr>
-            {WEEKDAY_SHORT_LABELS.map((label, index) => (
+            {SHORT_WEEKDAY_NAMES.map((label, index) => (
               <th key={label} scope="col">
                 <span aria-hidden="true">{label.slice(0, 1)}</span>
-                <span className="visually-hidden">{WEEKDAY_LABELS[index]}</span>
+                <span className="visually-hidden">{WEEKDAY_NAMES[index]}</span>
               </th>
             ))}
           </tr>
@@ -944,12 +927,8 @@ function formatEntryStatus(status: CalendarEntryStatus): string {
     case 'announced':
       return 'Announced'
     default:
-      return assertNever(status)
+      return assertNever(status, 'Calendar date status')
   }
-}
-
-function assertNever(value: never): never {
-  throw new RangeError(`Unsupported calendar value: ${String(value)}`)
 }
 
 function CalendarLegend() {

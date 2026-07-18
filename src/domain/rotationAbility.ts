@@ -1,9 +1,10 @@
 import {
+  DETAILED_CATEGORY_GROUPS,
   DETAILED_CATEGORY_DEFINITIONS,
   deriveAllCategoryScores,
-  deriveCategoryScore,
 } from './detailedRatings'
 import type {
+  DetailedCategoryKey,
   DetailedCategoryGroup,
   DetailedPlayerRatings,
 } from './detailedRatings'
@@ -28,7 +29,7 @@ type GroupWeights = Readonly<Record<DetailedCategoryGroup, number>>
 /** Per-position group weights in basis points; each column sums to 10 000. */
 export const ROTATION_ABILITY_GROUP_WEIGHTS_BPS: Readonly<
   Record<Position, GroupWeights>
-> = {
+> = freezeGroupWeights({
   PG: {
     scoring: 2400,
     creation: 2600,
@@ -69,7 +70,26 @@ export const ROTATION_ABILITY_GROUP_WEIGHTS_BPS: Readonly<
     physical: 1800,
     mental: 900,
   },
+})
+
+interface CategoryGroupMetadata {
+  readonly group: DetailedCategoryGroup
+  readonly categoryKeys: readonly DetailedCategoryKey[]
 }
+
+const CATEGORY_GROUP_METADATA: readonly CategoryGroupMetadata[] =
+  Object.freeze(
+    DETAILED_CATEGORY_GROUPS.map((group) =>
+      Object.freeze({
+        group,
+        categoryKeys: Object.freeze(
+          DETAILED_CATEGORY_DEFINITIONS.filter(
+            (definition) => definition.group === group,
+          ).map((definition) => definition.key),
+        ),
+      }),
+    ),
+  )
 
 export interface RotationAbility {
   /** Weighted planning ability at the position, full precision. */
@@ -90,27 +110,26 @@ export function selectRotationAbility(
   const scores = deriveAllCategoryScores(ratings)
   const weights = ROTATION_ABILITY_GROUP_WEIGHTS_BPS[position]
 
-  const groupMeans = new Map<DetailedCategoryGroup, number>()
-  const groupCounts = new Map<DetailedCategoryGroup, number>()
-  for (const definition of DETAILED_CATEGORY_DEFINITIONS) {
-    groupMeans.set(
-      definition.group,
-      (groupMeans.get(definition.group) ?? 0) + scores[definition.key],
-    )
-    groupCounts.set(
-      definition.group,
-      (groupCounts.get(definition.group) ?? 0) + 1,
-    )
-  }
-
   let ability = 0
-  for (const [group, total] of groupMeans) {
-    const count = groupCounts.get(group) ?? 1
-    ability += (total / count) * weights[group]
+  for (const { group, categoryKeys } of CATEGORY_GROUP_METADATA) {
+    const total = categoryKeys.reduce(
+      (sum, categoryKey) => sum + scores[categoryKey],
+      0,
+    )
+    ability += (total / categoryKeys.length) * weights[group]
   }
 
-  return {
+  return Object.freeze({
     ability: ability / ROTATION_ABILITY_WEIGHT_TOTAL_BPS,
-    endurance: deriveCategoryScore(ratings, 'endurance'),
+    endurance: scores.endurance,
+  })
+}
+
+function freezeGroupWeights(
+  weights: Record<Position, GroupWeights>,
+): Readonly<Record<Position, GroupWeights>> {
+  for (const groupWeights of Object.values(weights)) {
+    Object.freeze(groupWeights)
   }
+  return Object.freeze(weights)
 }

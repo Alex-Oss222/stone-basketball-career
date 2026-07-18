@@ -294,6 +294,9 @@ function PeriodLineTable({
   readonly awayTeam: Team
 }) {
   const periodCount = result.home.periodPoints.length
+  const periodLabels = Array.from({ length: periodCount }, (_, index) =>
+    formatPeriodLabel(index),
+  )
 
   return (
     <table className="league-table game-result-period-line">
@@ -301,9 +304,9 @@ function PeriodLineTable({
       <thead>
         <tr>
           <th scope="col">Team</th>
-          {Array.from({ length: periodCount }, (_, index) => (
-            <th scope="col" key={index}>
-              {formatPeriodLabel(index)}
+          {periodLabels.map((periodLabel) => (
+            <th scope="col" key={periodLabel}>
+              {periodLabel}
             </th>
           ))}
           <th scope="col">T</th>
@@ -319,7 +322,7 @@ function PeriodLineTable({
           <tr key={team.id}>
             <th scope="row">{team.abbreviation}</th>
             {scoring.periodPoints.map((points, index) => (
-              <td key={index}>{points}</td>
+              <td key={formatPeriodLabel(index)}>{points}</td>
             ))}
             <td className="game-result-period-total">{scoring.totalPoints}</td>
           </tr>

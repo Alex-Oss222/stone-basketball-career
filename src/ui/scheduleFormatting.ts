@@ -6,6 +6,7 @@ import {
   parseYearMonth,
 } from '../domain/yearMonth'
 import type { YearMonth } from '../domain/yearMonth'
+import { assertNever } from '../shared/assertNever'
 
 const MONTH_NAMES = [
   'January',
@@ -22,7 +23,7 @@ const MONTH_NAMES = [
   'December',
 ] as const
 
-const SHORT_MONTH_NAMES = [
+export const SHORT_MONTH_NAMES = [
   'Jan',
   'Feb',
   'Mar',
@@ -37,7 +38,7 @@ const SHORT_MONTH_NAMES = [
   'Dec',
 ] as const
 
-const SHORT_WEEKDAY_NAMES = [
+export const SHORT_WEEKDAY_NAMES = [
   'Sun',
   'Mon',
   'Tue',
@@ -47,7 +48,7 @@ const SHORT_WEEKDAY_NAMES = [
   'Sat',
 ] as const
 
-const WEEKDAY_NAMES = [
+export const WEEKDAY_NAMES = [
   'Sunday',
   'Monday',
   'Tuesday',
@@ -70,6 +71,14 @@ export function formatScheduleDateShort(date: LocalDate): string {
   const day = Number(parsed.slice(8, 10))
   const weekday = SHORT_WEEKDAY_NAMES[getSundayFirstWeekdayIndex(parsed)]
   return `${weekday}, ${SHORT_MONTH_NAMES[monthNumber - 1]} ${day}`
+}
+
+/** "2026-10-09" → "Oct 9" for compact schedule rows. */
+export function formatScheduleDateCompact(date: LocalDate): string {
+  const parsed = parseLocalDate(date)
+  const monthNumber = Number(parsed.slice(5, 7))
+  const day = Number(parsed.slice(8, 10))
+  return `${SHORT_MONTH_NAMES[monthNumber - 1]} ${day}`
 }
 
 export function formatScheduleDateHeading(date: LocalDate): string {
@@ -121,8 +130,4 @@ export function formatScheduleStage(stage: ScheduleStage): string {
     default:
       return assertNever(stage, 'Schedule stage')
   }
-}
-
-function assertNever(value: never, label: string): never {
-  throw new RangeError(`${label} is unsupported: ${String(value)}`)
 }

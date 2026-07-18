@@ -178,6 +178,15 @@ export function collectLeagueRulesIssues(
       report('non_negative_integer', `${label} must be a non-negative integer`)
     }
   }
+  const requireLiteral = (
+    label: string,
+    value: boolean,
+    expected: boolean,
+  ) => {
+    if (value !== expected) {
+      report('literal_value', `${label} must be ${String(expected)}`)
+    }
+  }
 
   if (rules.rulesVersion !== LEAGUE_RULES_VERSION) {
     report(
@@ -185,6 +194,27 @@ export function collectLeagueRulesIssues(
       `rulesVersion must be ${LEAGUE_RULES_VERSION}; got ${rules.rulesVersion}`,
     )
   }
+
+  requireLiteral(
+    'overtime.repeatUntilWinner',
+    rules.overtime.repeatUntilWinner,
+    true,
+  )
+  requireLiteral(
+    'lineup.unlimitedReentry',
+    rules.lineup.unlimitedReentry,
+    true,
+  )
+  requireLiteral(
+    'teamFouls.offensiveFoulsCountTowardBonus',
+    rules.teamFouls.offensiveFoulsCountTowardBonus,
+    false,
+  )
+  requireLiteral(
+    'substitutions.requireDeadBall',
+    rules.substitutions.requireDeadBall,
+    true,
+  )
 
   requirePositiveInteger('regulation.periodCount', rules.regulation.periodCount)
   requirePositiveInteger(

@@ -3,7 +3,6 @@ import { compareLocalDates, parseLocalDate } from '../domain/localDate'
 import type { LocalDate } from '../domain/localDate'
 import type { SeasonPhase } from '../domain/season'
 import type {
-  LeagueSnapshotGameDayDto,
   LeagueSnapshotLeagueDto,
   LeagueSnapshotLeagueScheduleDto,
   LeagueSnapshotScheduledGameDto,
@@ -11,33 +10,6 @@ import type {
 } from '../persistence/leagueSnapshot'
 
 export type TeamScheduleLocation = 'home' | 'away'
-export type TeamScheduleFilter = 'all' | TeamScheduleLocation
-
-export interface TeamScheduleTotals {
-  readonly totalGames: number
-  readonly homeGames: number
-  readonly awayGames: number
-}
-
-export interface ScheduleGameDayGroup {
-  readonly gameDay: LeagueSnapshotGameDayDto
-  readonly games: readonly LeagueSnapshotScheduledGameDto[]
-}
-
-const MONTH_NAMES = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
-] as const
 
 const SEASON_PHASE_LABELS = {
   offseason: 'Offseason',
@@ -47,14 +19,6 @@ const SEASON_PHASE_LABELS = {
   postseason: 'Postseason',
   complete: 'Complete',
 } as const satisfies Readonly<Record<SeasonPhase, string>>
-
-/** Returns a team's games in their authoritative stored schedule order. */
-export function getTeamScheduleGames(
-  schedule: LeagueSnapshotLeagueScheduleDto,
-  teamId: TeamId,
-): readonly LeagueSnapshotScheduledGameDto[] {
-  return schedule.games.filter((game) => isTeamInGame(game, teamId))
-}
 
 /** Resolves the opposing stored team without creating substitute display data. */
 export function resolveOpponent(
@@ -123,100 +87,8 @@ export function getUpcomingScheduledGames(
   )
 }
 
-/**
- * Groups games in stored game-day order and uses each game day's stored game-ID
- * order. Valid snapshots make every reference resolvable and unambiguous.
- */
-export function groupGamesByGameDay(
-  schedule: LeagueSnapshotLeagueScheduleDto,
-): readonly ScheduleGameDayGroup[] {
-  const gamesById = new Map(
-    schedule.games.map((game) => [game.id, game] as const),
-  )
-  if (gamesById.size !== schedule.games.length) {
-    throw new RangeError('A schedule cannot group duplicate game IDs')
-  }
-
-  return schedule.gameDays.map((gameDay) => ({
-    gameDay,
-    games: gameDay.gameIds.map((gameId) => {
-      const game = gamesById.get(gameId)
-      if (game === undefined) {
-        throw new RangeError(
-          `Game day ${gameDay.id} references unknown game ${gameId}`,
-        )
-      }
-      if (game.gameDayId !== gameDay.id) {
-        throw new RangeError(
-          `Game ${game.id} does not reference game day ${gameDay.id}`,
-        )
-      }
-      return game
-    }),
-  }))
-}
-
-/** Fixed English display formatting with no Date, locale, or timezone APIs. */
-export function formatLocalDateForDisplay(date: LocalDate): string {
-  const parsed = parseLocalDate(date)
-  const year = parsed.slice(0, 4)
-  const month = Number(parsed.slice(5, 7))
-  const day = Number(parsed.slice(8, 10))
-  return `${MONTH_NAMES[month - 1]} ${day}, ${year}`
-}
-
-/** Counts every stored team matchup, independent of game status. */
-export function calculateTeamScheduleTotals(
-  schedule: LeagueSnapshotLeagueScheduleDto,
-  teamId: TeamId,
-): TeamScheduleTotals {
-  let homeGames = 0
-  let awayGames = 0
-
-  for (const game of schedule.games) {
-    if (!isTeamInGame(game, teamId)) continue
-    if (getTeamLocation(game, teamId) === 'home') {
-      homeGames += 1
-    } else {
-      awayGames += 1
-    }
-  }
-
-  return {
-    totalGames: homeGames + awayGames,
-    homeGames,
-    awayGames,
-  }
-}
-
-/** Applies a home/away filter while retaining authoritative game order. */
-export function filterTeamScheduleGames(
-  schedule: LeagueSnapshotLeagueScheduleDto,
-  teamId: TeamId,
-  filter: TeamScheduleFilter,
-): readonly LeagueSnapshotScheduledGameDto[] {
-  const teamGames = getTeamScheduleGames(schedule, teamId)
-  if (filter === 'all') return teamGames
-  return teamGames.filter((game) => getTeamLocation(game, teamId) === filter)
-}
-
-/** Identifies whether a matchup contains the selected managed team. */
-export function isManagedTeamGame(
-  game: LeagueSnapshotScheduledGameDto,
-  managedTeamId: TeamId | null,
-): boolean {
-  return managedTeamId !== null && isTeamInGame(game, managedTeamId)
-}
-
 export function formatSeasonPhaseForDisplay(phase: SeasonPhase): string {
   return SEASON_PHASE_LABELS[phase]
-}
-
-function isTeamInGame(
-  game: LeagueSnapshotScheduledGameDto,
-  teamId: TeamId,
-): boolean {
-  return game.homeTeamId === teamId || game.awayTeamId === teamId
 }
 
 function getOpponentTeamId(
@@ -242,7 +114,7 @@ function isUpcomingTeamGame(
   currentDate: LocalDate,
 ): boolean {
   return (
-    isTeamInGame(game, teamId) &&
+    (game.homeTeamId === teamId || game.awayTeamId === teamId) &&
     (game.status === 'scheduled' || game.status === 'postponed') &&
     game.currentScheduledDate !== null &&
     compareLocalDates(game.currentScheduledDate, currentDate) >= 0

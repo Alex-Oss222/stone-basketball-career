@@ -1,7 +1,7 @@
 import type { League, Position } from '../domain/league'
-import { PLAYERS_PER_TEAM, POSITIONS, formatTeamName } from '../domain/league'
+import { PLAYERS_PER_TEAM, formatTeamName } from '../domain/league'
 import type { TeamId } from '../domain/ids'
-import { deriveTeamAverageRating } from './homeViewModel'
+import { createTeamRosterFacts } from './teamRosterFacts'
 
 /**
  * Team Overview facts derived only from data that exists today: team identity,
@@ -29,28 +29,18 @@ export function createTeamOverviewSummary(input: {
   if (managedTeamId === null) {
     return null
   }
-  const team = league.teams.find((candidate) => candidate.id === managedTeamId)
-  if (team === undefined) {
+  const facts = createTeamRosterFacts(league, managedTeamId)
+  if (facts === null) {
     return null
   }
-  const roster = league.players.filter(
-    (player) => player.teamId === managedTeamId,
-  )
-
-  const positionCounts = Object.fromEntries(
-    POSITIONS.map((position) => [
-      position,
-      roster.filter((player) => player.primaryPosition === position).length,
-    ]),
-  ) as Record<Position, number>
 
   return {
-    teamName: formatTeamName(team),
-    abbreviation: team.abbreviation,
-    rosterSize: roster.length,
+    teamName: formatTeamName(facts.team),
+    abbreviation: facts.team.abbreviation,
+    rosterSize: facts.roster.length,
     rosterCapacity: PLAYERS_PER_TEAM,
-    openSpots: Math.max(0, PLAYERS_PER_TEAM - roster.length),
-    averageRating: deriveTeamAverageRating(league, managedTeamId),
-    positionCounts,
+    openSpots: Math.max(0, PLAYERS_PER_TEAM - facts.roster.length),
+    averageRating: facts.averageRating,
+    positionCounts: facts.positionCounts,
   }
 }

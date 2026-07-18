@@ -52,40 +52,16 @@ export function parseDenseArray<T>(
   parseItem: (item: unknown, itemPath: string) => T,
   reject: RejectSerializedValue,
 ): readonly T[] {
-  if (!Array.isArray(value) || Object.getPrototypeOf(value) !== Array.prototype) {
-    reject(path, 'Expected a plain array')
-  }
-
-  const actualKeys = Reflect.ownKeys(value)
-  if (actualKeys.length !== value.length + 1) {
-    reject(path, 'Array must be dense and contain no custom properties')
-  }
-  for (const key of actualKeys) {
-    if (typeof key !== 'string') {
-      reject(path, 'Array symbol properties are not allowed')
-    }
-    if (key === 'length') {
-      continue
-    }
-    const index = Number(key)
-    if (
-      !Number.isInteger(index) ||
-      index < 0 ||
-      index >= value.length ||
-      String(index) !== key
-    ) {
-      reject(path, 'Array contains a custom property')
-    }
-  }
+  const denseArray = expectDensePlainArray(value, path, reject)
 
   const parsed: T[] = []
-  for (let index = 0; index < value.length; index += 1) {
+  for (let index = 0; index < denseArray.length; index += 1) {
     const itemPath = `${path}[${index}]`
-    if (!Object.prototype.hasOwnProperty.call(value, index)) {
+    if (!Object.prototype.hasOwnProperty.call(denseArray, index)) {
       reject(itemPath, 'Array item is missing')
     }
     const descriptor = expectEnumerableDataDescriptor(
-      value,
+      denseArray,
       String(index),
       itemPath,
       reject,
@@ -223,9 +199,36 @@ function assertJsonSafeArray(
   reject: RejectSerializedValue,
   ancestors: Set<object>,
 ): void {
-  if (Object.getPrototypeOf(value) !== Array.prototype) {
+  const denseArray = expectDensePlainArray(value, path, reject)
+  for (let index = 0; index < denseArray.length; index += 1) {
+    const itemPath = `${path}[${index}]`
+    if (!Object.prototype.hasOwnProperty.call(denseArray, index)) {
+      reject(itemPath, 'Array item is missing')
+    }
+    const descriptor = expectEnumerableDataDescriptor(
+      denseArray,
+      String(index),
+      itemPath,
+      reject,
+    )
+    assertJsonSafeValueWithAncestors(
+      descriptor.value,
+      itemPath,
+      reject,
+      ancestors,
+    )
+  }
+}
+
+function expectDensePlainArray(
+  value: unknown,
+  path: string,
+  reject: RejectSerializedValue,
+): unknown[] {
+  if (!Array.isArray(value) || Object.getPrototypeOf(value) !== Array.prototype) {
     reject(path, 'Expected a plain array')
   }
+
   const keys = Reflect.ownKeys(value)
   if (keys.length !== value.length + 1) {
     reject(path, 'Array must be dense and contain no custom properties')
@@ -247,24 +250,7 @@ function assertJsonSafeArray(
       reject(path, 'Array contains a custom property')
     }
   }
-  for (let index = 0; index < value.length; index += 1) {
-    const itemPath = `${path}[${index}]`
-    if (!Object.prototype.hasOwnProperty.call(value, index)) {
-      reject(itemPath, 'Array item is missing')
-    }
-    const descriptor = expectEnumerableDataDescriptor(
-      value,
-      String(index),
-      itemPath,
-      reject,
-    )
-    assertJsonSafeValueWithAncestors(
-      descriptor.value,
-      itemPath,
-      reject,
-      ancestors,
-    )
-  }
+  return value
 }
 
 function isPlainRecord(value: unknown): value is SerializedRecord {

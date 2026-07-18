@@ -1,4 +1,5 @@
 import type { SegmentedTabOption } from './segmentedTabs'
+import { assertNever } from '../shared/assertNever'
 
 /** Broadcast filter shared by the schedule surfaces. Only "all" has data now. */
 export type BroadcastFilter = 'all' | 'non_televised' | 'local' | 'national'
@@ -39,10 +40,6 @@ export function broadcastFilterLabel(broadcast: BroadcastFilter): string {
     case 'national':
       return 'National TV'
     default:
-      return assertNever(broadcast)
+      return assertNever(broadcast, 'Broadcast filter')
   }
-}
-
-function assertNever(value: never): never {
-  throw new RangeError(`Unsupported broadcast filter: ${String(value)}`)
 }

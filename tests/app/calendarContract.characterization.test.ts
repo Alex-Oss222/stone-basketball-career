@@ -1,11 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import {
-  getTeamScheduleGames,
-  groupGamesByGameDay,
-  resolveOpponent,
-} from '../../src/app/scheduleViewModel'
+import { resolveOpponent } from '../../src/app/scheduleViewModel'
 import { DEFAULT_PAGE_ID } from '../../src/app/navigation'
-import type { NavigationPageId } from '../../src/app/navigation'
 import {
   parseLeagueSnapshot,
 } from '../../src/persistence/leagueSnapshot'
@@ -23,19 +18,12 @@ describe('M2.1 calendar contract characterization', () => {
 
     expect(inspectedTeamId).not.toBe(snapshot.managedTeamId)
 
-    const expectedGames = snapshot.leagueSchedule.games.filter(
+    const inspectedGames = snapshot.leagueSchedule.games.filter(
       (game) =>
         game.homeTeamId === inspectedTeamId ||
         game.awayTeamId === inspectedTeamId,
     )
-    const inspectedGames = getTeamScheduleGames(
-      snapshot.leagueSchedule,
-      inspectedTeamId,
-    )
-
-    expect(inspectedGames.map(projectGameReference)).toEqual(
-      expectedGames.map(projectGameReference),
-    )
+    expect(inspectedGames.length).toBeGreaterThan(0)
 
     for (const game of inspectedGames) {
       const expectedOpponentId =
@@ -54,13 +42,23 @@ describe('M2.1 calendar contract characterization', () => {
   it('projects every stored game into one GameDay slate without changing identity or date history', () => {
     const snapshot = createLeagueSnapshotFixture()
     const before = structuredClone(snapshot)
-    const groups = groupGamesByGameDay(snapshot.leagueSchedule)
+    const storedGamesById = new Map(
+      snapshot.leagueSchedule.games.map((game) => [game.id, game] as const),
+    )
+    const groups = snapshot.leagueSchedule.gameDays.map((gameDay) => ({
+      gameDay,
+      games: gameDay.gameIds.map((gameId) => {
+        const game = storedGamesById.get(gameId)
+        expect(game).toBeDefined()
+        expect((game as LeagueSnapshotScheduledGameDto).gameDayId).toBe(
+          gameDay.id,
+        )
+        return game as LeagueSnapshotScheduledGameDto
+      }),
+    }))
     const groupedGames = groups.flatMap((group) => group.games)
     const declaredGameIds = snapshot.leagueSchedule.gameDays.flatMap(
       (gameDay) => gameDay.gameIds,
-    )
-    const storedGamesById = new Map(
-      snapshot.leagueSchedule.games.map((game) => [game.id, game] as const),
     )
 
     expect(groups.map(({ gameDay }) => gameDay.id)).toEqual(
@@ -91,13 +89,12 @@ describe('M2.1 calendar contract characterization', () => {
     expect(snapshot).toEqual(before)
   })
 
-  it('keeps Calendar preferences and navigation outside the serialized V2 league truth', () => {
+  it('keeps Calendar preferences and navigation outside the serialized league truth', () => {
     const snapshot = createLeagueSnapshotFixture()
     const serialized = JSON.stringify(snapshot)
     const identityBefore = projectPersistedIdentity(snapshot)
     const revisionBefore = snapshot.revision
 
-    let activePageId: NavigationPageId = 'schedule-calendar'
     const calendarPreferences = {
       view: 'calendar',
       scope: 'league',
@@ -107,10 +104,7 @@ describe('M2.1 calendar contract characterization', () => {
       teamScheduleFilter: 'away',
     } as const
 
-    activePageId = DEFAULT_PAGE_ID
-    expect(activePageId).toBe('home-today')
-    activePageId = 'schedule-calendar'
-    expect(activePageId).toBe('schedule-calendar')
+    expect(DEFAULT_PAGE_ID).toBe('home-today')
     expect(calendarPreferences.inspectedTeamId).not.toBe(
       snapshot.managedTeamId,
     )
@@ -134,13 +128,6 @@ describe('M2.1 calendar contract characterization', () => {
     expect(JSON.stringify(snapshot)).toBe(serialized)
   })
 })
-
-function projectGameReference(game: LeagueSnapshotScheduledGameDto) {
-  return {
-    id: game.id,
-    gameDayId: game.gameDayId,
-  }
-}
 
 function projectGameLifecycle(game: LeagueSnapshotScheduledGameDto) {
   return {

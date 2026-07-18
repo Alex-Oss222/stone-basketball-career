@@ -10,6 +10,7 @@ import type { CalendarScope } from '../app/enrichedCalendarViewModel'
 import type { LeagueYearDisplayRange } from '../app/leagueYearDisplayRange'
 import { parseBroadcastFilter } from './broadcastFilter'
 import type { BroadcastFilter } from './broadcastFilter'
+import { assertNever } from '../shared/assertNever'
 
 export type LeagueCalendarViewMode = 'calendar' | 'list' | 'by_team'
 
@@ -110,7 +111,7 @@ export function reduceLeagueCalendarUiState(
     case 'clear_selection':
       return Object.freeze({ ...state, selectedDate: null })
     default:
-      return assertNever(action)
+      return assertNever(action, 'League Calendar UI action')
   }
 }
 
@@ -139,8 +140,3 @@ function parseScope(value: unknown): CalendarScope {
   }
 }
 
-function assertNever(value: never): never {
-  throw new RangeError(
-    `Unsupported League Calendar UI action: ${String(value)}`,
-  )
-}

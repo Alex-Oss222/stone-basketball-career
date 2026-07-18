@@ -2,6 +2,11 @@ import { readFileSync } from 'node:fs'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import type { LeagueSnapshot } from '../../src/persistence/leagueSnapshot'
 import { createLeagueSnapshotFixture } from '../persistence/leagueSnapshot.fixture'
+import {
+  expectNoGenerationImports,
+  installGenerationTripwires,
+  removeGenerationTripwires,
+} from '../helpers/noRegenerationTripwire'
 
 const persistedSnapshot = JSON.parse(
   JSON.stringify(createLeagueSnapshotFixture()),
@@ -9,12 +14,7 @@ const persistedSnapshot = JSON.parse(
 
 describe('read-only V2 season and schedule identity preservation', () => {
   afterEach(() => {
-    vi.doUnmock('../../src/app/commands/createSeasonFoundation')
-    vi.doUnmock('../../src/generation/generateLeague')
-    vi.doUnmock('../../src/generation/generateSchedule')
-    vi.doUnmock('../../src/domain/schedule')
-    vi.doUnmock('../../src/random/xoshiro128ss')
-    vi.resetModules()
+    removeGenerationTripwires()
   })
 
   it('restores schedule identities, ordering, and dates exactly as stored', async () => {
@@ -76,33 +76,7 @@ describe('read-only V2 season and schedule identity preservation', () => {
   })
 
   it('renders every schedule view without importing generation modules', async () => {
-    const foundationImport = vi.fn()
-    const leagueGeneratorImport = vi.fn()
-    const scheduleGeneratorImport = vi.fn()
-    const opponentGeneratorImport = vi.fn()
-    const randomSourceImport = vi.fn()
-
-    vi.resetModules()
-    vi.doMock('../../src/app/commands/createSeasonFoundation', () => {
-      foundationImport()
-      throw new Error('Presentation imported createSeasonFoundation')
-    })
-    vi.doMock('../../src/generation/generateLeague', () => {
-      leagueGeneratorImport()
-      throw new Error('Presentation imported league generation')
-    })
-    vi.doMock('../../src/generation/generateSchedule', () => {
-      scheduleGeneratorImport()
-      throw new Error('Presentation imported schedule generation')
-    })
-    vi.doMock('../../src/domain/schedule', () => {
-      opponentGeneratorImport()
-      throw new Error('Presentation imported opponent generation')
-    })
-    vi.doMock('../../src/random/xoshiro128ss', () => {
-      randomSourceImport()
-      throw new Error('Presentation imported seeded randomization')
-    })
+    const spies = installGenerationTripwires('Presentation')
 
     const { createElement } = await import('react')
     const { renderToStaticMarkup } = await import('react-dom/server')
@@ -165,11 +139,7 @@ describe('read-only V2 season and schedule identity preservation', () => {
     expect(overviewMarkup).toContain(persistedSnapshot.season.displayLabel)
     expect(dashboardMarkup).toContain('Next Game')
     expect(headerMarkup).toContain(persistedSnapshot.season.displayLabel)
-    expect(foundationImport).not.toHaveBeenCalled()
-    expect(leagueGeneratorImport).not.toHaveBeenCalled()
-    expect(scheduleGeneratorImport).not.toHaveBeenCalled()
-    expect(opponentGeneratorImport).not.toHaveBeenCalled()
-    expect(randomSourceImport).not.toHaveBeenCalled()
+    expectNoGenerationImports(spies)
   })
 
   it('keeps Team Schedule hydration snapshot-memoized and preferences downstream', () => {

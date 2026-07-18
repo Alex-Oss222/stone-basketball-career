@@ -1,5 +1,4 @@
 import type { TeamId } from '../domain/ids'
-import type { LocalDate } from '../domain/localDate'
 import { POSITIONS } from '../domain/league'
 import type { NavigationPageId } from '../app/navigation'
 import {
@@ -9,12 +8,15 @@ import {
 import type { SaveIndicatorState } from '../app/dashboardViewModel'
 import {
   findNextScheduledGame,
-  formatLocalDateForDisplay,
   formatSeasonPhaseForDisplay,
   getTeamLocation,
   getUpcomingScheduledGames,
   resolveOpponent,
 } from '../app/scheduleViewModel'
+import {
+  formatScheduleDateCompact,
+  formatScheduleDateLong,
+} from './scheduleFormatting'
 import { formatTeamName } from '../domain/league'
 import type {
   LeagueSnapshot,
@@ -156,7 +158,7 @@ function HomeCommandBar({
         {snapshot.season.displayLabel} ·{' '}
         {formatSeasonPhaseForDisplay(snapshot.season.currentPhase)} ·{' '}
         <time dateTime={snapshot.season.currentDate}>
-          {formatLocalDateForDisplay(snapshot.season.currentDate)}
+          {formatScheduleDateLong(snapshot.season.currentDate)}
         </time>
       </p>
 
@@ -330,7 +332,7 @@ function NextGameDetails({
           'Date to be announced'
         ) : (
           <time dateTime={game.currentScheduledDate}>
-            {formatLocalDateForDisplay(game.currentScheduledDate)}
+            {formatScheduleDateLong(game.currentScheduledDate)}
           </time>
         )}
       </p>
@@ -525,7 +527,7 @@ function UpcomingGamesCard({
                     'TBA'
                   ) : (
                     <time dateTime={game.currentScheduledDate}>
-                      {formatShortDate(game.currentScheduledDate)}
+                      {formatScheduleDateCompact(game.currentScheduledDate)}
                     </time>
                   )}
                 </span>
@@ -616,28 +618,6 @@ function TeamStatsCard() {
       </p>
     </DashboardCard>
   )
-}
-
-const SHORT_MONTH_LABELS = [
-  'Jan',
-  'Feb',
-  'Mar',
-  'Apr',
-  'May',
-  'Jun',
-  'Jul',
-  'Aug',
-  'Sep',
-  'Oct',
-  'Nov',
-  'Dec',
-] as const
-
-/** "2026-10-09" → "Oct 9" for compact schedule rows. */
-function formatShortDate(date: LocalDate): string {
-  const month = Number(date.slice(5, 7))
-  const day = Number(date.slice(8, 10))
-  return `${SHORT_MONTH_LABELS[month - 1]} ${day}`
 }
 
 function ComingLaterButton({

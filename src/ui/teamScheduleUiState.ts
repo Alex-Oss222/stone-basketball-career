@@ -6,6 +6,7 @@ import type { YearMonth } from '../domain/yearMonth'
 import type { TeamScheduleSiteFilter } from '../app/teamScheduleViewModel'
 import { parseBroadcastFilter } from './broadcastFilter'
 import type { BroadcastFilter } from './broadcastFilter'
+import { assertNever } from '../shared/assertNever'
 
 /** Scaffolded stage tabs. Only regular_season has authoritative games today. */
 export type TeamScheduleStage =
@@ -178,7 +179,7 @@ export function reduceTeamScheduleUiState(
         selectedGameId: null,
       })
     default:
-      return assertNever(action)
+      return assertNever(action, 'Team Schedule UI action')
   }
 }
 
@@ -240,6 +241,3 @@ export function parseTeamScheduleSiteFilter(
   }
 }
 
-function assertNever(value: never): never {
-  throw new RangeError(`Unsupported Team Schedule UI action: ${String(value)}`)
-}

@@ -18,6 +18,9 @@
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUncheckedSideEffectImports": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },

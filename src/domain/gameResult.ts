@@ -1,4 +1,9 @@
 import type { GameId, PlayerId, SeasonId, TeamId } from './ids'
+import {
+  MILESTONE_1_LEAGUE_RULES,
+  deriveOvertimeTeamSeconds,
+  deriveRegulationTeamSeconds,
+} from './leagueRules'
 
 /**
  * DRAFT result contract (roadmap §6). These shapes are being discovered by the
@@ -11,20 +16,37 @@ import type { GameId, PlayerId, SeasonId, TeamId } from './ids'
  */
 export const GAME_RESULT_DRAFT_VERSION = 1
 
-export const REGULATION_PERIODS = 4
-export const REGULATION_PERIOD_SECONDS = 12 * 60
-export const OVERTIME_PERIOD_SECONDS = 5 * 60
-export const PLAYERS_ON_COURT = 5
+export const REGULATION_PERIODS =
+  MILESTONE_1_LEAGUE_RULES.regulation.periodCount
+export const REGULATION_PERIOD_SECONDS =
+  MILESTONE_1_LEAGUE_RULES.regulation.secondsPerPeriod
+export const OVERTIME_PERIOD_SECONDS =
+  MILESTONE_1_LEAGUE_RULES.overtime.secondsPerPeriod
+export const PLAYERS_ON_COURT =
+  MILESTONE_1_LEAGUE_RULES.lineup.playersOnCourt
 
 /** Total player-seconds one team must account for in regulation. */
-export const REGULATION_TEAM_SECONDS =
-  REGULATION_PERIODS * REGULATION_PERIOD_SECONDS * PLAYERS_ON_COURT
+export const REGULATION_TEAM_SECONDS = deriveRegulationTeamSeconds(
+  MILESTONE_1_LEAGUE_RULES,
+)
 
 /** Additional player-seconds one team must account for per overtime period. */
-export const OVERTIME_TEAM_SECONDS = OVERTIME_PERIOD_SECONDS * PLAYERS_ON_COURT
+export const OVERTIME_TEAM_SECONDS = deriveOvertimeTeamSeconds(
+  MILESTONE_1_LEAGUE_RULES,
+)
 
-export const DNP_REASONS = ['coachs_decision', 'injury', 'inactive'] as const
+export const DNP_REASONS = Object.freeze([
+  'coachs_decision',
+  'injury',
+  'inactive',
+] as const)
 export type DnpReason = (typeof DNP_REASONS)[number]
+
+const DNP_REASON_SET: ReadonlySet<string> = new Set(DNP_REASONS)
+
+export function isDnpReason(value: unknown): value is DnpReason {
+  return typeof value === 'string' && DNP_REASON_SET.has(value)
+}
 
 /** One player's line. Everything is integer counting stats or integer seconds. */
 export interface PlayerBoxScoreLine {
@@ -200,6 +222,10 @@ export function collectGameResultIssues(
       report('duplicate_player', `${label} appears twice`)
     }
     seenPlayerIds.add(line.playerId)
+
+    if (line.dnpReason !== null && !isDnpReason(line.dnpReason)) {
+      report('invalid_dnp_reason', `${label} has an unsupported DNP reason`)
+    }
 
     const team = perTeam.get(line.teamId)
     if (team === undefined) {

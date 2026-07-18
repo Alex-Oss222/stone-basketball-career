@@ -8,6 +8,7 @@ import { parseLocalDate } from '../../src/domain/localDate'
 import { parseYearMonth } from '../../src/domain/yearMonth'
 import {
   formatScheduledGameStatus,
+  formatScheduleDateCompact,
   formatScheduleDateLong,
   formatScheduleDateShort,
   formatScheduleMonthHeading,
@@ -30,16 +31,17 @@ describe('Team Schedule English formatting', () => {
   })
 
   it.each([
-    ['1970-01-01', 'Thu, Jan 1', 'January 1, 1970'],
-    ['2024-02-29', 'Thu, Feb 29', 'February 29, 2024'],
-    ['2026-10-06', 'Tue, Oct 6', 'October 6, 2026'],
-    ['2026-12-25', 'Fri, Dec 25', 'December 25, 2026'],
+    ['1970-01-01', 'Thu, Jan 1', 'January 1, 1970', 'Jan 1'],
+    ['2024-02-29', 'Thu, Feb 29', 'February 29, 2024', 'Feb 29'],
+    ['2026-10-06', 'Tue, Oct 6', 'October 6, 2026', 'Oct 6'],
+    ['2026-12-25', 'Fri, Dec 25', 'December 25, 2026', 'Dec 25'],
   ])(
     'formats %s deterministically',
-    (date, expectedShort, expectedLong) => {
+    (date, expectedShort, expectedLong, expectedCompact) => {
       const parsed = parseLocalDate(date)
       expect(formatScheduleDateShort(parsed)).toBe(expectedShort)
       expect(formatScheduleDateLong(parsed)).toBe(expectedLong)
+      expect(formatScheduleDateCompact(parsed)).toBe(expectedCompact)
     },
   )
 

@@ -1,22 +1,12 @@
 import { describe, expect, expectTypeOf, it } from 'vitest'
 import {
-  calculateTeamScheduleTotals,
-  filterTeamScheduleGames,
   findNextScheduledGame,
-  formatLocalDateForDisplay,
   formatSeasonPhaseForDisplay,
   getTeamLocation,
-  getTeamScheduleGames,
   getUpcomingScheduledGames,
-  groupGamesByGameDay,
-  isManagedTeamGame,
   resolveOpponent,
 } from '../../src/app/scheduleViewModel'
-import type {
-  ScheduleGameDayGroup,
-  TeamScheduleFilter,
-  TeamScheduleLocation,
-} from '../../src/app/scheduleViewModel'
+import type { TeamScheduleLocation } from '../../src/app/scheduleViewModel'
 import {
   parseGameDayId,
   parseGameId,
@@ -94,22 +84,7 @@ const league: LeagueSnapshotLeagueDto = Object.freeze({
   players: Object.freeze([]),
 })
 
-describe('authoritative team schedule selection', () => {
-  it('returns team games in stored order without mutating the schedule', () => {
-    const before = structuredClone(schedule)
-    const result = getTeamScheduleGames(schedule, TEAM_A_ID)
-
-    expect(result.map(({ id }) => id)).toEqual([
-      GAME_IDS[0],
-      GAME_IDS[1],
-      GAME_IDS[2],
-      GAME_IDS[4],
-      GAME_IDS[5],
-    ])
-    expect(schedule).toEqual(before)
-    expect(result).not.toBe(schedule.games)
-  })
-
+describe('stored matchup opponent and location resolution', () => {
   it('resolves the real opponent and selected-team location', () => {
     expect(resolveOpponent(league, games[0], TEAM_A_ID)).toBe(league.teams[1])
     expect(resolveOpponent(league, games[2], TEAM_A_ID)).toBe(league.teams[1])
@@ -135,32 +110,9 @@ describe('authoritative team schedule selection', () => {
       /distinct teams/,
     )
   })
-
-  it('calculates stored home/away totals and filters without reordering', () => {
-    expect(calculateTeamScheduleTotals(schedule, TEAM_A_ID)).toEqual({
-      totalGames: 5,
-      homeGames: 3,
-      awayGames: 2,
-    })
-    expect(
-      filterTeamScheduleGames(schedule, TEAM_A_ID, 'home').map(({ id }) => id),
-    ).toEqual([GAME_IDS[0], GAME_IDS[1], GAME_IDS[5]])
-    expect(
-      filterTeamScheduleGames(schedule, TEAM_A_ID, 'away').map(({ id }) => id),
-    ).toEqual([GAME_IDS[2], GAME_IDS[4]])
-    expect(
-      filterTeamScheduleGames(schedule, TEAM_A_ID, 'all').map(({ id }) => id),
-    ).toEqual(getTeamScheduleGames(schedule, TEAM_A_ID).map(({ id }) => id))
-  })
-
-  it('identifies only matchups containing a non-null managed team', () => {
-    expect(isManagedTeamGame(games[0], TEAM_A_ID)).toBe(true)
-    expect(isManagedTeamGame(games[3], TEAM_A_ID)).toBe(false)
-    expect(isManagedTeamGame(games[0], null)).toBe(false)
-  })
 })
 
-describe('upcoming and game-day schedule selection', () => {
+describe('upcoming schedule selection', () => {
   const currentDate = parseLocalDate('2026-10-06')
 
   it('preserves stored order for upcoming games while excluding completed and cancelled games', () => {
@@ -198,53 +150,9 @@ describe('upcoming and game-day schedule selection', () => {
       GAME_IDS[0],
     )
   })
-
-  it('groups by stored game-day order and each stored game-ID list', () => {
-    const groups = groupGamesByGameDay(schedule)
-
-    expect(groups.map(({ gameDay }) => gameDay.id)).toEqual([
-      GAME_DAY_IDS[1],
-      GAME_DAY_IDS[0],
-      GAME_DAY_IDS[2],
-      GAME_DAY_IDS[3],
-      GAME_DAY_IDS[4],
-      GAME_DAY_IDS[5],
-    ])
-    expect(groups.flatMap(({ games: groupedGames }) => groupedGames.map(({ id }) => id))).toEqual([
-      GAME_IDS[1],
-      GAME_IDS[0],
-      GAME_IDS[2],
-      GAME_IDS[3],
-      GAME_IDS[4],
-      GAME_IDS[5],
-    ])
-    expect(groups[0].games[0]).toBe(games[1])
-  })
-
-  it('rejects unknown or mismatched game-day references instead of inventing groups', () => {
-    const unknownGame = {
-      ...schedule,
-      gameDays: [{ ...gameDays[0], gameIds: [parseGameId('game_unknown_view')] }],
-    }
-    expect(() => groupGamesByGameDay(unknownGame)).toThrow(/unknown game/)
-
-    const wrongDay = {
-      ...schedule,
-      gameDays: [{ ...gameDays[0], gameIds: [games[0].id] }],
-    }
-    expect(() => groupGamesByGameDay(wrongDay)).toThrow(/does not reference/)
-  })
 })
 
 describe('deterministic schedule display formatting', () => {
-  it.each([
-    ['2026-01-01', 'January 1, 2026'],
-    ['2026-10-09', 'October 9, 2026'],
-    ['2099-12-31', 'December 31, 2099'],
-  ] as const)('formats %s without locale or timezone conversion', (date, expected) => {
-    expect(formatLocalDateForDisplay(parseLocalDate(date))).toBe(expected)
-  })
-
   it('uses explicit labels for every broad season phase', () => {
     expect([
       formatSeasonPhaseForDisplay('offseason'),
@@ -263,14 +171,8 @@ describe('deterministic schedule display formatting', () => {
     ])
   })
 
-  it('exports narrow view-model types', () => {
+  it('exports the narrow team-location type', () => {
     expectTypeOf<TeamScheduleLocation>().toEqualTypeOf<'home' | 'away'>()
-    expectTypeOf<TeamScheduleFilter>().toEqualTypeOf<
-      'all' | TeamScheduleLocation
-    >()
-    expectTypeOf<ScheduleGameDayGroup['games']>().toEqualTypeOf<
-      readonly LeagueSnapshotScheduledGameDto[]
-    >()
   })
 })
 

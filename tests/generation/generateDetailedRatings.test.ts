@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
+  DETAILED_CATEGORY_DEFINITIONS,
   DETAILED_CATEGORY_KEYS,
   SUB_RATING_KEYS,
   deriveCategoryScore,
@@ -26,6 +27,7 @@ import {
   generateQualityBaseline,
 } from '../../src/generation/generateDetailedRatings'
 import { deriveSeed } from '../../src/random/seed'
+import { createRandomSource } from '../../src/random/xoshiro128ss'
 
 const LEAGUE_SEED = 'r3-golden-league-seed'
 
@@ -230,6 +232,39 @@ describe('labeled stream isolation (ADR 0008 §5)', () => {
     }
   })
 
+  it('preserves the injected source-factory invocation contract', () => {
+    const playerId = GOLDEN_PLAYER_IDS.PG
+    const observedSeeds: string[] = []
+    const ratings = generateDetailedPlayerRatings(
+      LEAGUE_SEED,
+      playerId,
+      'PG',
+      (seed) => {
+        observedSeeds.push(seed)
+        return createRandomSource(seed)
+      },
+    )
+    const expectedSeeds = SUB_RATING_KEYS.flatMap((subRatingKey) => [
+      deriveDetailedQualitySeed(LEAGUE_SEED, playerId),
+      ...DETAILED_CATEGORY_DEFINITIONS.filter((definition) =>
+        definition.subRatings.some(
+          (subRating) => subRating.key === subRatingKey,
+        ),
+      ).map((definition) =>
+        deriveDetailedCategorySeed(
+          LEAGUE_SEED,
+          playerId,
+          definition.key,
+        ),
+      ),
+      deriveDetailedSkillSeed(LEAGUE_SEED, playerId, subRatingKey),
+    ])
+
+    expect(ratings).toEqual(GOLDEN_VECTORS.PG)
+    expect(observedSeeds).toHaveLength(202)
+    expect(observedSeeds).toEqual(expectedSeeds)
+  })
+
   it('recomposes a value exactly from its term streams', () => {
     const playerId = GOLDEN_PLAYER_IDS.SF
     const quality = generateQualityBaseline(LEAGUE_SEED, playerId)
@@ -320,6 +355,11 @@ describe('labeled stream isolation (ADR 0008 §5)', () => {
   })
 
   it('term draws stay inside their calibration ranges', () => {
+    expect(Object.isFrozen(POSITION_CATEGORY_BIASES)).toBe(true)
+    for (const position of POSITIONS) {
+      expect(Object.isFrozen(POSITION_CATEGORY_BIASES[position])).toBe(true)
+    }
+
     for (let index = 0; index < 25; index += 1) {
       const playerId = parsePlayerId(`player_r3range_${index}`)
       const quality = generateQualityBaseline(LEAGUE_SEED, playerId)

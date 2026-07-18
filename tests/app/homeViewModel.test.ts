@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { parseTeamId } from '../../src/domain/ids'
 import { deriveVersionedOverall } from '../../src/domain/playerDerivations'
 import type { Player } from '../../src/domain/league'
 import { generateLeague } from '../../src/generation/generateLeague'
@@ -91,5 +92,14 @@ describe('team average rating', () => {
     expect(summary?.averageRating).toBe(
       deriveTeamAverageRating(league, team.id),
     )
+  })
+
+  it('preserves a zero average when no roster matches the team ID', () => {
+    expect(
+      deriveTeamAverageRating(
+        league,
+        parseTeamId('team_home_view_model_foreign'),
+      ),
+    ).toBe(0)
   })
 })

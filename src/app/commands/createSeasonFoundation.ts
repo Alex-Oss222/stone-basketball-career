@@ -1,14 +1,5 @@
-import {
-  isLeagueId,
-  isSeasonId,
-  isTeamId,
-  parseCalendarEventId,
-  parseSeasonCalendarId,
-  parseSeasonId,
-  parseTeamSeasonId,
-} from '../../domain/ids'
+import { isSeasonId } from '../../domain/ids'
 import type {
-  CalendarEventId,
   GameDayId,
   GameId,
   SeasonCalendarId,
@@ -23,10 +14,8 @@ import {
 } from '../../domain/leagueValidation'
 import {
   compareLocalDates,
-  formatSeasonLabel,
   getCalendarYear,
   isLocalDate,
-  parseLocalDate,
 } from '../../domain/localDate'
 import type { LocalDate } from '../../domain/localDate'
 import {
@@ -47,60 +36,55 @@ import type {
   SeasonCalendar,
 } from '../../domain/seasonCalendar'
 import { createSeason, validateSeason } from '../../domain/season'
-import type { Season } from '../../domain/season'
 import {
   TEAM_SEASON_VERSION,
   createTeamSeason,
   validateTeamSeason,
 } from '../../domain/teamSeason'
-import type { TeamSeason } from '../../domain/teamSeason'
 import {
   SCHEDULE_GENERATION_VERSION,
   deriveStableScheduleId,
   generateRegularSeasonSchedule,
 } from '../../generation/generateSchedule'
-import { deriveSeed, normalizeSeed } from '../../random/seed'
+import { normalizeSeed } from '../../random/seed'
+import { areJsonValuesEqual } from '../../shared/areJsonValuesEqual'
+import {
+  FOUNDATION_CALENDAR_EVENT_KINDS,
+  deriveSeasonFoundationCalendarEventId,
+  deriveSeasonFoundationCalendarId,
+  deriveSeasonFoundationSeasonId,
+  deriveSeasonFoundationTeamSeasonId,
+  parseSeasonFoundationConfiguration,
+} from '../../domain/seasonFoundation'
+import type {
+  FoundationCalendarEventKind,
+  SeasonFoundation,
+  SeasonFoundationConfiguration,
+  SeasonFoundationConfigurationInput,
+} from '../../domain/seasonFoundation'
 
-export const SEASON_FOUNDATION_IDENTITY_VERSION = 1 as const
+// The season-foundation identity and configuration surface now lives in the
+// pure domain layer (so persistence can depend on it without importing this
+// command). Re-exported here so existing app-layer importers are unchanged.
+export {
+  deriveSeasonFoundationCalendarEventId,
+  deriveSeasonFoundationCalendarId,
+  deriveSeasonFoundationSeasonId,
+  deriveSeasonFoundationTeamSeasonId,
+  parseSeasonFoundationConfiguration,
+}
+export type {
+  SeasonFoundation,
+  SeasonFoundationConfiguration,
+  SeasonFoundationConfigurationInput,
+}
+export { SEASON_FOUNDATION_IDENTITY_VERSION } from '../../domain/seasonFoundation'
 
-const IDENTITY_NAMESPACE =
-  `season_foundation_identity/v${SEASON_FOUNDATION_IDENTITY_VERSION}` as const
-const ID_FINGERPRINT_LENGTH = 24
 const SEASON_NUMBER = 1
 
-const FOUNDATION_CALENDAR_EVENT_KINDS = [
-  'regular_season_opening',
-  'regular_season_conclusion',
-] as const satisfies readonly CalendarEventKind[]
-
-type FoundationCalendarEventKind =
-  (typeof FOUNDATION_CALENDAR_EVENT_KINDS)[number]
-
-export interface CreateSeasonFoundationInput {
+export interface CreateSeasonFoundationInput
+  extends SeasonFoundationConfigurationInput {
   readonly league: League
-  readonly startingYear: number
-  readonly regularSeasonStartDate: LocalDate
-  readonly calendarDaySpacing: number
-  readonly scheduleSeed: string
-}
-
-export type SeasonFoundationConfigurationInput = Omit<
-  CreateSeasonFoundationInput,
-  'league'
->
-
-export interface SeasonFoundationConfiguration {
-  readonly startingYear: number
-  readonly regularSeasonStartDate: LocalDate
-  readonly calendarDaySpacing: number
-  readonly scheduleSeed: string
-}
-
-export interface SeasonFoundation {
-  readonly season: Season
-  readonly calendar: SeasonCalendar
-  readonly teamSeasons: readonly TeamSeason[]
-  readonly schedule: LeagueSchedule
 }
 
 export interface ValidateSeasonFoundationInput
@@ -208,76 +192,6 @@ export function createSeasonFoundation(
     foundation,
   })
   return foundation
-}
-
-/** Season identity depends only on league identity, starting year, and formula version. */
-export function deriveSeasonFoundationSeasonId(
-  leagueId: League['id'],
-  startingYear: number,
-): SeasonId {
-  if (!isLeagueId(leagueId)) {
-    throw new TypeError('Season identity requires a valid LeagueId')
-  }
-  const endingYear = startingYear + 1
-  formatSeasonLabel(startingYear, endingYear)
-  return parseSeasonId(
-    `season_${deriveIdentityFingerprint(
-      leagueId,
-      `${IDENTITY_NAMESPACE}/season/starting_year_${startingYear}`,
-    )}`,
-  )
-}
-
-/** Calendar identity deliberately excludes schedule seed and event dates. */
-export function deriveSeasonFoundationCalendarId(
-  seasonId: SeasonId,
-): SeasonCalendarId {
-  if (!isSeasonId(seasonId)) {
-    throw new TypeError('Season calendar identity requires a valid SeasonId')
-  }
-  return parseSeasonCalendarId(
-    `season_calendar_${deriveIdentityFingerprint(
-      seasonId,
-      `${IDENTITY_NAMESPACE}/calendar`,
-    )}`,
-  )
-}
-
-/** Team-season identity deliberately excludes schedule seed and lifecycle state. */
-export function deriveSeasonFoundationTeamSeasonId(
-  seasonId: SeasonId,
-  teamId: TeamId,
-): TeamSeasonId {
-  if (!isSeasonId(seasonId) || !isTeamId(teamId)) {
-    throw new TypeError(
-      'Team-season identity requires valid SeasonId and TeamId values',
-    )
-  }
-  return parseTeamSeasonId(
-    `team_season_${deriveIdentityFingerprint(
-      seasonId,
-      `${IDENTITY_NAMESPACE}/team_season/${teamId.length}:${teamId}`,
-    )}`,
-  )
-}
-
-/** Event identity uses semantic kind, never title, array position, or date. */
-export function deriveSeasonFoundationCalendarEventId(
-  seasonId: SeasonId,
-  kind: FoundationCalendarEventKind,
-): CalendarEventId {
-  if (!isSeasonId(seasonId)) {
-    throw new TypeError('Calendar-event identity requires a valid SeasonId')
-  }
-  if (!FOUNDATION_CALENDAR_EVENT_KINDS.includes(kind)) {
-    throw new TypeError('Calendar-event kind is not part of this foundation')
-  }
-  return parseCalendarEventId(
-    `calendar_event_${deriveIdentityFingerprint(
-      seasonId,
-      `${IDENTITY_NAMESPACE}/calendar_event/${kind}`,
-    )}`,
-  )
 }
 
 /**
@@ -388,48 +302,6 @@ export function assertValidSeasonFoundation(
   const issues = validateSeasonFoundation(input)
   if (issues.length > 0) {
     throw new InvalidSeasonFoundationError(issues)
-  }
-}
-
-/**
- * Parses the coordinator's authoritative primitive configuration without
- * creating a league, schedule, or season. Snapshot restoration reuses this
- * boundary rather than restating its normalization and range rules.
- */
-export function parseSeasonFoundationConfiguration(
-  input: SeasonFoundationConfigurationInput,
-): SeasonFoundationConfiguration {
-  const endingYear = input.startingYear + 1
-  formatSeasonLabel(input.startingYear, endingYear)
-  const regularSeasonStartDate = parseLocalDate(
-    input.regularSeasonStartDate,
-  )
-  if (getCalendarYear(regularSeasonStartDate) !== input.startingYear) {
-    throw new RangeError(
-      'Regular-season start date must fall in the supplied starting year',
-    )
-  }
-  if (
-    !Number.isSafeInteger(input.calendarDaySpacing) ||
-    input.calendarDaySpacing <= 0
-  ) {
-    throw new RangeError(
-      'Calendar-day spacing must be a positive safe integer',
-    )
-  }
-
-  const scheduleSeed = normalizeSeed(input.scheduleSeed)
-  if (scheduleSeed !== input.scheduleSeed) {
-    throw new RangeError(
-      'Schedule seed must already be canonical, trimmed, and NFC-normalized',
-    )
-  }
-
-  return {
-    startingYear: input.startingYear,
-    regularSeasonStartDate,
-    calendarDaySpacing: input.calendarDaySpacing,
-    scheduleSeed,
   }
 }
 
@@ -853,7 +725,7 @@ function validateCanonicalScheduleOutput(
     return
   }
 
-  if (!areStructurallyEqual(input.foundation.schedule, expectedSchedule)) {
+  if (!areJsonValuesEqual(input.foundation.schedule, expectedSchedule)) {
     addIssue(
       issues,
       'foundation',
@@ -1043,47 +915,6 @@ function compareCalendarEvents(left: CalendarEvent, right: CalendarEvent): numbe
   }
 
   return left.kind < right.kind ? -1 : left.kind > right.kind ? 1 : 0
-}
-
-function deriveIdentityFingerprint(root: string, label: string): string {
-  const derivedSeed = deriveSeed(root, label)
-  const digest = derivedSeed.slice(derivedSeed.lastIndexOf(':') + 1)
-  if (digest.length < ID_FINGERPRINT_LENGTH) {
-    throw new Error('Derived seed digest is too short for a stable identity')
-  }
-  return digest.slice(0, ID_FINGERPRINT_LENGTH)
-}
-
-function areStructurallyEqual(left: unknown, right: unknown): boolean {
-  if (Object.is(left, right)) {
-    return true
-  }
-  if (Array.isArray(left) || Array.isArray(right)) {
-    return (
-      Array.isArray(left) &&
-      Array.isArray(right) &&
-      left.length === right.length &&
-      left.every((value, index) => areStructurallyEqual(value, right[index]))
-    )
-  }
-  if (!isRecord(left) || !isRecord(right)) {
-    return false
-  }
-
-  const leftKeys = Object.keys(left).sort()
-  const rightKeys = Object.keys(right).sort()
-  return (
-    leftKeys.length === rightKeys.length &&
-    leftKeys.every(
-      (key, index) =>
-        key === rightKeys[index] &&
-        areStructurallyEqual(left[key], right[key]),
-    )
-  )
-}
-
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return typeof value === 'object' && value !== null
 }
 
 function adaptEntityIssues(

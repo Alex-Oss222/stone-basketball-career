@@ -25,7 +25,7 @@ describe('requestCorruptLeagueStoragePurge', () => {
       'Permanently delete',
     )
     expect(CORRUPT_LEAGUE_STORAGE_PURGE_CONFIRMATION).toContain(
-      'version 1 and version 2',
+      'current and legacy active-league snapshots',
     )
     expect(CORRUPT_LEAGUE_STORAGE_PURGE_CONFIRMATION).toContain(
       'cannot be undone',

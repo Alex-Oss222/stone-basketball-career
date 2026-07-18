@@ -367,13 +367,14 @@ describe('createSeasonFoundation', () => {
     )
   })
 
-  it('does not mutate or freeze the supplied league or any nested league data', () => {
+  it('does not mutate or change immutability of supplied league data', () => {
     const leagueUnderTest = generateLeague('non-mutating-foundation-league')
     const teamsReference = leagueUnderTest.teams
     const playersReference = leagueUnderTest.players
     const firstTeamReference = leagueUnderTest.teams[0]
     const firstPlayerReference = leagueUnderTest.players[0]
     const ratingsReference = firstPlayerReference.ratings
+    const ratingsWereFrozen = Object.isFrozen(ratingsReference)
     const before = JSON.parse(JSON.stringify(leagueUnderTest)) as unknown
 
     createSeasonFoundation(input({ league: leagueUnderTest }))
@@ -389,7 +390,7 @@ describe('createSeasonFoundation', () => {
     expect(Object.isFrozen(leagueUnderTest.players)).toBe(false)
     expect(Object.isFrozen(firstTeamReference)).toBe(false)
     expect(Object.isFrozen(firstPlayerReference)).toBe(false)
-    expect(Object.isFrozen(ratingsReference)).toBe(false)
+    expect(Object.isFrozen(ratingsReference)).toBe(ratingsWereFrozen)
   })
 
   it('deeply freezes every newly created aggregate collection and entity', () => {

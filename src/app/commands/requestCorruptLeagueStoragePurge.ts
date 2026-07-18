@@ -1,5 +1,5 @@
 export const CORRUPT_LEAGUE_STORAGE_PURGE_CONFIRMATION =
-  'Permanently delete the local league save from this browser? This removes every active version 1 and version 2 league snapshot and cannot be undone.'
+  'Permanently delete the active local league save from this browser? This removes the current and legacy active-league snapshots and cannot be undone.'
 
 export interface CorruptLeagueStoragePurgeRequest {
   readonly confirm: (message: string) => boolean

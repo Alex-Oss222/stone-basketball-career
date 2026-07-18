@@ -1,8 +1,13 @@
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import {
   createCalendarEntries,
 } from '../../src/app/calendarViewModel'
 import { createLeagueSeasonDomainFixture } from '../persistence/leagueSnapshot.fixture'
+import {
+  expectNoGenerationImports,
+  installGenerationTripwires,
+  removeGenerationTripwires,
+} from '../helpers/noRegenerationTripwire'
 
 const domainFixture = createLeagueSeasonDomainFixture()
 const inspectedTeamId = domainFixture.league.teams[1].id
@@ -24,42 +29,11 @@ if (inspectedGame === undefined) {
 
 describe('Team Schedule and game-details no-regeneration architecture', () => {
   afterEach(() => {
-    vi.doUnmock('../../src/app/commands/createSeasonFoundation')
-    vi.doUnmock('../../src/generation/generateSchedule')
-    vi.doUnmock('../../src/generation/generateLeague')
-    vi.doUnmock('../../src/domain/schedule')
-    vi.doUnmock('../../src/random/xoshiro128ss')
-    vi.resetModules()
+    removeGenerationTripwires()
   })
 
   it('builds both read models and filters rows without generation or randomness', async () => {
-    const foundationImport = vi.fn()
-    const scheduleGeneratorImport = vi.fn()
-    const leagueGeneratorImport = vi.fn()
-    const opponentGeneratorImport = vi.fn()
-    const randomSourceImport = vi.fn()
-
-    vi.resetModules()
-    vi.doMock('../../src/app/commands/createSeasonFoundation', () => {
-      foundationImport()
-      throw new Error('Team Schedule imported season creation')
-    })
-    vi.doMock('../../src/generation/generateSchedule', () => {
-      scheduleGeneratorImport()
-      throw new Error('Team Schedule imported schedule generation')
-    })
-    vi.doMock('../../src/generation/generateLeague', () => {
-      leagueGeneratorImport()
-      throw new Error('Team Schedule imported league generation')
-    })
-    vi.doMock('../../src/domain/schedule', () => {
-      opponentGeneratorImport()
-      throw new Error('Team Schedule imported opponent generation')
-    })
-    vi.doMock('../../src/random/xoshiro128ss', () => {
-      randomSourceImport()
-      throw new Error('Team Schedule imported seeded randomization')
-    })
+    const spies = installGenerationTripwires('Team Schedule')
 
     const {
       createGameDetailsViewModel,
@@ -88,10 +62,6 @@ describe('Team Schedule and game-details no-regeneration architecture', () => {
     expect(teamSchedule).toBeDefined()
     expect(details).toBeDefined()
     expect(filtered).toHaveLength(teamSchedule.rows.length)
-    expect(foundationImport).not.toHaveBeenCalled()
-    expect(scheduleGeneratorImport).not.toHaveBeenCalled()
-    expect(leagueGeneratorImport).not.toHaveBeenCalled()
-    expect(opponentGeneratorImport).not.toHaveBeenCalled()
-    expect(randomSourceImport).not.toHaveBeenCalled()
+    expectNoGenerationImports(spies)
   })
 })

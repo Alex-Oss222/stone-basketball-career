@@ -1,10 +1,10 @@
 import type { Team } from '../domain/league'
 import { formatTeamName } from '../domain/league'
+import { differenceInDays } from '../domain/localDate'
 import type { NavigationPageId } from '../app/navigation'
 import { createTeamOverviewSummary } from '../app/teamOverviewViewModel'
 import {
   findNextScheduledGame,
-  formatLocalDateForDisplay,
   getTeamLocation,
   getUpcomingScheduledGames,
   resolveOpponent,
@@ -14,6 +14,7 @@ import type {
   LeagueSnapshotScheduledGameDto,
 } from '../persistence/leagueSnapshot'
 import { DashboardCard } from './dashboardShell'
+import { formatScheduleDateLong } from './scheduleFormatting'
 
 export interface TeamOverviewContentProps {
   readonly snapshot: LeagueSnapshot | null
@@ -273,7 +274,7 @@ function OpponentPrepCard({
               <>
                 {' · '}
                 <time dateTime={nextGame.currentScheduledDate}>
-                  {formatLocalDateForDisplay(nextGame.currentScheduledDate)}
+                  {formatScheduleDateLong(nextGame.currentScheduledDate)}
                 </time>
               </>
             )}
@@ -364,7 +365,7 @@ function SchedulePressureCard({
             const restDays =
               game.currentScheduledDate === null || previousDate === null
                 ? null
-                : daysBetweenIsoDates(previousDate, game.currentScheduledDate) - 1
+                : differenceInDays(previousDate, game.currentScheduledDate) - 1
 
             return (
               <li key={game.id} className="schedule-pressure-day">
@@ -373,7 +374,7 @@ function SchedulePressureCard({
                     'TBA'
                   ) : (
                     <time dateTime={game.currentScheduledDate}>
-                      {formatLocalDateForDisplay(game.currentScheduledDate)}
+                      {formatScheduleDateLong(game.currentScheduledDate)}
                     </time>
                   )}
                 </p>
@@ -545,16 +546,5 @@ function RecentTransactionsCard() {
         systems.
       </p>
     </DashboardCard>
-  )
-}
-
-/** Whole calendar days between two ISO local dates (display math only). */
-function daysBetweenIsoDates(from: string, to: string): number {
-  const [fromYear, fromMonth, fromDay] = from.split('-').map(Number)
-  const [toYear, toMonth, toDay] = to.split('-').map(Number)
-  return Math.round(
-    (Date.UTC(toYear, toMonth - 1, toDay) -
-      Date.UTC(fromYear, fromMonth - 1, fromDay)) /
-      86_400_000,
   )
 }

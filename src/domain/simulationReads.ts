@@ -15,16 +15,17 @@ export const SIM_RATING_READ_VERSION = 1 as const
 export type SimRatingReadVersion = typeof SIM_RATING_READ_VERSION
 
 /** Sub-ratings possession events may never read. */
-export const FORBIDDEN_SIM_SUB_RATINGS: readonly SubRatingKey[] = [
-  'injuryResistance',
-  'loadDurability',
-  'competitiveness',
-  'coachability',
-  'composure',
-  'workEthic',
-]
+export const FORBIDDEN_SIM_SUB_RATINGS: readonly SubRatingKey[] =
+  Object.freeze([
+    'injuryResistance',
+    'loadDurability',
+    'competitiveness',
+    'coachability',
+    'composure',
+    'workEthic',
+  ])
 
-export const SIM_EVENT_RATING_READS = {
+export const SIM_EVENT_RATING_READS = freezeEventRatingReads({
   shotSelection: ['decisionMaking', 'offensiveAwareness'],
   rimShotResolution: [
     'standingFinish',
@@ -111,13 +112,20 @@ export const SIM_EVENT_RATING_READS = {
     'physicalLeverage',
   ],
   defensiveAwarenessRead: ['defensiveAwareness'],
-} as const satisfies Readonly<Record<string, readonly SubRatingKey[]>>
+} as const satisfies Readonly<Record<string, readonly SubRatingKey[]>>)
 
 export type SimEventKey = keyof typeof SIM_EVENT_RATING_READS
 
-export const SIM_EVENT_KEYS = Object.keys(
-  SIM_EVENT_RATING_READS,
-) as readonly SimEventKey[]
+export const SIM_EVENT_KEYS: readonly SimEventKey[] = Object.freeze(
+  Object.keys(SIM_EVENT_RATING_READS) as SimEventKey[],
+)
+
+const FORBIDDEN_SIM_SUB_RATING_SET = new Set<SubRatingKey>(
+  FORBIDDEN_SIM_SUB_RATINGS,
+)
+const READABLE_SIM_SUB_RATINGS: readonly SubRatingKey[] = Object.freeze(
+  SUB_RATING_KEYS.filter((key) => !FORBIDDEN_SIM_SUB_RATING_SET.has(key)),
+)
 
 /**
  * The one read path for §9: the unweighted mean of the event's frozen
@@ -139,6 +147,14 @@ export function selectSimEventFactor(
 
 /** Every possession-relevant sub-rating; the forbidden six are excluded. */
 export function listReadableSubRatings(): readonly SubRatingKey[] {
-  const forbidden = new Set<SubRatingKey>(FORBIDDEN_SIM_SUB_RATINGS)
-  return SUB_RATING_KEYS.filter((key) => !forbidden.has(key))
+  return READABLE_SIM_SUB_RATINGS
+}
+
+function freezeEventRatingReads<
+  const Reads extends Readonly<Record<string, readonly SubRatingKey[]>>,
+>(reads: Reads): Reads {
+  for (const dependencies of Object.values(reads)) {
+    Object.freeze(dependencies)
+  }
+  return Object.freeze(reads)
 }

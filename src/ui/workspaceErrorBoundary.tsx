@@ -43,12 +43,12 @@ export class WorkspaceErrorBoundary extends Component<
       : { failed: false, resetKey: props.resetKey }
   }
 
-  componentDidCatch(error: Error, info: ErrorInfo): void {
+  override componentDidCatch(error: Error, info: ErrorInfo): void {
     // No telemetry by product rule; surface locally for developer diagnosis.
     console.error('Workspace content failed to render', error, info)
   }
 
-  render(): ReactNode {
+  override render(): ReactNode {
     if (this.state.failed) {
       return (
         <section

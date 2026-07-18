@@ -937,6 +937,7 @@ describe('CalendarEntry architecture', () => {
         '../domain/schedule',
         '../domain/seasonCalendar',
         '../domain/yearMonth',
+        '../shared/assertNever',
       ]),
     )
     expect(importSources).not.toEqual(

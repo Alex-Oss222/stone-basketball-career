@@ -33,8 +33,10 @@ function makeRatings(value: number) {
 describe('rotation-ability selector (R7)', () => {
   it('pins the version and weight totals', () => {
     expect(ROTATION_ABILITY_VERSION).toBe(1)
+    expect(Object.isFrozen(ROTATION_ABILITY_GROUP_WEIGHTS_BPS)).toBe(true)
     for (const position of POSITIONS) {
       const weights = ROTATION_ABILITY_GROUP_WEIGHTS_BPS[position]
+      expect(Object.isFrozen(weights)).toBe(true)
       const total = Object.values(weights).reduce(
         (sum, weight) => sum + weight,
         0,
@@ -50,7 +52,9 @@ describe('rotation-ability selector (R7)', () => {
   it('a uniform record scores that value at every position', () => {
     const ratings = makeRatings(58)
     for (const position of POSITIONS) {
-      const { ability, endurance } = selectRotationAbility(ratings, position)
+      const result = selectRotationAbility(ratings, position)
+      const { ability, endurance } = result
+      expect(Object.isFrozen(result)).toBe(true)
       expect(ability).toBeCloseTo(58, 10)
       expect(endurance).toBe(58)
     }
@@ -95,9 +99,12 @@ describe('simulation rating-read registry (R8)', () => {
   })
 
   it('every event dependency is a valid stored sub-rating', () => {
+    expect(Object.isFrozen(SIM_EVENT_RATING_READS)).toBe(true)
+    expect(Object.isFrozen(SIM_EVENT_KEYS)).toBe(true)
     const valid = new Set<string>(SUB_RATING_KEYS)
     for (const event of SIM_EVENT_KEYS) {
       const reads = SIM_EVENT_RATING_READS[event]
+      expect(Object.isFrozen(reads)).toBe(true)
       expect(reads.length).toBeGreaterThan(0)
       expect(new Set(reads).size).toBe(reads.length)
       for (const key of reads) {
@@ -107,6 +114,7 @@ describe('simulation rating-read registry (R8)', () => {
   })
 
   it('possession events never read Durability or Intangibles', () => {
+    expect(Object.isFrozen(FORBIDDEN_SIM_SUB_RATINGS)).toBe(true)
     const forbidden = new Set<string>(FORBIDDEN_SIM_SUB_RATINGS)
     for (const event of SIM_EVENT_KEYS) {
       for (const key of SIM_EVENT_RATING_READS[event]) {
@@ -118,6 +126,8 @@ describe('simulation rating-read registry (R8)', () => {
   it('covers exactly the 61 possession-relevant sub-ratings', () => {
     const readable = listReadableSubRatings()
     expect(readable).toHaveLength(61)
+    expect(Object.isFrozen(readable)).toBe(true)
+    expect(listReadableSubRatings()).toBe(readable)
 
     const covered = new Set<string>(
       SIM_EVENT_KEYS.flatMap((event) => [...SIM_EVENT_RATING_READS[event]]),

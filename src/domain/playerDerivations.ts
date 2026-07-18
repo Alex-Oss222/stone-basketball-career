@@ -30,7 +30,7 @@ type PositionWeights = Readonly<Record<DetailedCategoryKey, number>>
  */
 export const POSITION_OVERALL_WEIGHTS_BPS: Readonly<
   Record<Position, PositionWeights>
-> = {
+> = freezePositionWeights({
   PG: {
     insideScoring: 500,
     midRangeShooting: 700,
@@ -131,27 +131,29 @@ export const POSITION_OVERALL_WEIGHTS_BPS: Readonly<
     basketballIQ: 400,
     intangibles: 200,
   },
-}
+})
 
 /** Categories that count toward the offense half of a position profile. */
-export const OFFENSE_CATEGORY_KEYS: readonly DetailedCategoryKey[] = [
-  'insideScoring',
-  'midRangeShooting',
-  'threePointShooting',
-  'freeThrowShooting',
-  'passing',
-  'ballHandling',
-  'offensiveRebounding',
-]
+export const OFFENSE_CATEGORY_KEYS: readonly DetailedCategoryKey[] =
+  Object.freeze([
+    'insideScoring',
+    'midRangeShooting',
+    'threePointShooting',
+    'freeThrowShooting',
+    'passing',
+    'ballHandling',
+    'offensiveRebounding',
+  ])
 
 /** Categories that count toward the defense half of a position profile. */
-export const DEFENSE_CATEGORY_KEYS: readonly DetailedCategoryKey[] = [
-  'perimeterDefense',
-  'interiorDefense',
-  'stealing',
-  'blocking',
-  'defensiveRebounding',
-]
+export const DEFENSE_CATEGORY_KEYS: readonly DetailedCategoryKey[] =
+  Object.freeze([
+    'perimeterDefense',
+    'interiorDefense',
+    'stealing',
+    'blocking',
+    'defensiveRebounding',
+  ])
 
 export interface PositionProfile {
   /** Weighted offense score at this position, full precision. */
@@ -202,7 +204,7 @@ export function derivePositionProfile(
   const offense = weightedSubset(scores, weights, OFFENSE_CATEGORY_KEYS)
   const defense = weightedSubset(scores, weights, DEFENSE_CATEGORY_KEYS)
 
-  const profile: PositionProfile = { offense, defense, overall }
+  const profile: PositionProfile = Object.freeze({ offense, defense, overall })
   const byPosition =
     profileCache.get(ratings) ?? new Map<Position, PositionProfile>()
   byPosition.set(position, profile)
@@ -221,4 +223,13 @@ function weightedSubset(
     0,
   )
   return weighted / weightTotal
+}
+
+function freezePositionWeights(
+  weights: Record<Position, PositionWeights>,
+): Readonly<Record<Position, PositionWeights>> {
+  for (const positionWeights of Object.values(weights)) {
+    Object.freeze(positionWeights)
+  }
+  return Object.freeze(weights)
 }

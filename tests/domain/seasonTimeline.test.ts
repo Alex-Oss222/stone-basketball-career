@@ -46,6 +46,14 @@ describe('buildSeasonTimeline', () => {
     ).toBe(173)
   })
 
+  it('supports the latest timeline that remains inside calendar year 9999', () => {
+    const timeline = buildSeasonTimeline(9998)
+
+    expect(timeline.startingYear).toBe(9998)
+    expect(timeline.endingYear).toBe(9999)
+    expect(timeline.summerLeagueStart).toBe('9999-07-08')
+  })
+
   it('keeps the whole timeline in chronological order', () => {
     const timeline = buildSeasonTimeline(2030)
     const order = [

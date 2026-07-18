@@ -1,5 +1,6 @@
 import { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react'
 import type { FormEvent } from 'react'
+import { assertNever } from './shared/assertNever'
 import { createNewLeagueSnapshot } from './app/commands/createNewLeagueSnapshot'
 import {
   parseSeasonFoundationConfiguration,
@@ -259,7 +260,7 @@ function App() {
           setBootState('recovery-required')
           return
         default:
-          assertNever(result)
+          assertNever(result, 'Storage purge result')
       }
     },
     [installSnapshot, resetToLeagueCreation],
@@ -770,7 +771,7 @@ function renderAvailablePage(
     case 'league-players':
       return <LeaguePlayersContent league={snapshot?.league ?? null} />
     default:
-      return assertNever(pageId)
+      return assertNever(pageId, 'Navigation page')
   }
 }
 
@@ -838,10 +839,6 @@ function storageWriteMessage(error: unknown, action: string): string {
   }
 
   return `The league could not be ${action} in local browser storage. The last confirmed league was kept.`
-}
-
-function assertNever(value: never): never {
-  throw new RangeError(`Unexpected value: ${String(value)}`)
 }
 
 export default App

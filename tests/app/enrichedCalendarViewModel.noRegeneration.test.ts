@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import {
   buildLeagueYearMonthGrids,
 } from '../../src/app/calendarMonthGrid'
@@ -9,6 +9,11 @@ import {
   createLeagueYearDisplayRange,
 } from '../../src/app/leagueYearDisplayRange'
 import { createLeagueSeasonDomainFixture } from '../persistence/leagueSnapshot.fixture'
+import {
+  expectNoGenerationImports,
+  installGenerationTripwires,
+  removeGenerationTripwires,
+} from '../helpers/noRegenerationTripwire'
 
 const domainFixture = createLeagueSeasonDomainFixture()
 const range = createLeagueYearDisplayRange(domainFixture.foundation.season)
@@ -22,42 +27,11 @@ const entries = createCalendarEntries({
 
 describe('enriched calendar no-regeneration architecture', () => {
   afterEach(() => {
-    vi.doUnmock('../../src/app/commands/createSeasonFoundation')
-    vi.doUnmock('../../src/generation/generateSchedule')
-    vi.doUnmock('../../src/generation/generateLeague')
-    vi.doUnmock('../../src/domain/schedule')
-    vi.doUnmock('../../src/random/xoshiro128ss')
-    vi.resetModules()
+    removeGenerationTripwires()
   })
 
   it('enriches normalized entries without generation or seeded randomness', async () => {
-    const foundationImport = vi.fn()
-    const scheduleGeneratorImport = vi.fn()
-    const leagueGeneratorImport = vi.fn()
-    const opponentGeneratorImport = vi.fn()
-    const randomSourceImport = vi.fn()
-
-    vi.resetModules()
-    vi.doMock('../../src/app/commands/createSeasonFoundation', () => {
-      foundationImport()
-      throw new Error('Calendar enrichment imported season creation')
-    })
-    vi.doMock('../../src/generation/generateSchedule', () => {
-      scheduleGeneratorImport()
-      throw new Error('Calendar enrichment imported schedule generation')
-    })
-    vi.doMock('../../src/generation/generateLeague', () => {
-      leagueGeneratorImport()
-      throw new Error('Calendar enrichment imported league generation')
-    })
-    vi.doMock('../../src/domain/schedule', () => {
-      opponentGeneratorImport()
-      throw new Error('Calendar enrichment imported opponent generation')
-    })
-    vi.doMock('../../src/random/xoshiro128ss', () => {
-      randomSourceImport()
-      throw new Error('Calendar enrichment imported seeded randomization')
-    })
+    const spies = installGenerationTripwires('Calendar enrichment')
 
     const { createLeagueYearCalendarModel } = await import(
       '../../src/app/enrichedCalendarViewModel'
@@ -75,10 +49,6 @@ describe('enriched calendar no-regeneration architecture', () => {
 
     expect(model.months).toHaveLength(12)
     expect(model.totalEntryCount).toBe(114)
-    expect(foundationImport).not.toHaveBeenCalled()
-    expect(scheduleGeneratorImport).not.toHaveBeenCalled()
-    expect(leagueGeneratorImport).not.toHaveBeenCalled()
-    expect(opponentGeneratorImport).not.toHaveBeenCalled()
-    expect(randomSourceImport).not.toHaveBeenCalled()
+    expectNoGenerationImports(spies)
   })
 })

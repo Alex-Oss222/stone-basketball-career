@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
   InvalidGameResultError,
+  DNP_REASONS,
   assertValidGameResult,
   collectGameResultIssues,
   totalPointsFromLine,
@@ -140,6 +141,22 @@ describe('game-result invariant validation', () => {
       withReplacedLine({ ...dnp, assists: 2 }),
     ).map((issue) => issue.code)
     expect(codes).toContain('dnp_with_stats')
+  })
+
+  it('rejects a DNP reason outside the runtime contract', () => {
+    const dnp = base.playerLines.find((line) => line.dnpReason !== null)
+    if (dnp === undefined) {
+      throw new Error('Fixture has no DNP line')
+    }
+    const codes = collectGameResultIssues(
+      withReplacedLine({
+        ...dnp,
+        dnpReason: 'suspension' as never,
+      }),
+    ).map((issue) => issue.code)
+
+    expect(Object.isFrozen(DNP_REASONS)).toBe(true)
+    expect(codes).toContain('invalid_dnp_reason')
   })
 
   it('rejects plus/minus that does not sum to five times the margin', () => {

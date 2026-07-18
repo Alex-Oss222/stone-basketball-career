@@ -1,5 +1,6 @@
 import { parseLeagueId, parseTeamId } from '../domain/ids'
 import type { LeagueId, TeamId } from '../domain/ids'
+import { areJsonValuesEqual } from '../shared/areJsonValuesEqual'
 import {
   InvalidLeagueSnapshotError,
   LEAGUE_SNAPSHOT_VERSION,
@@ -500,7 +501,7 @@ function verifyStoredWrite(
   }
   const record = parseStoredRecord(reread.value)
   const restored = parseLeagueSnapshot(record.snapshot)
-  if (!areStructurallyEqual(expected, restored)) {
+  if (!areJsonValuesEqual(expected, restored)) {
     throw new LeagueSnapshotStorageError(
       'The re-read snapshot differs from the value written',
       undefined,
@@ -630,33 +631,6 @@ function extractIssues(
     return error.issues
   }
   return []
-}
-
-function areStructurallyEqual(left: unknown, right: unknown): boolean {
-  if (Object.is(left, right)) return true
-  if (Array.isArray(left) || Array.isArray(right)) {
-    return (
-      Array.isArray(left) &&
-      Array.isArray(right) &&
-      left.length === right.length &&
-      left.every((item, index) => areStructurallyEqual(item, right[index]))
-    )
-  }
-  if (!isRecord(left) || !isRecord(right)) return false
-  const leftKeys = Object.keys(left).sort()
-  const rightKeys = Object.keys(right).sort()
-  return (
-    leftKeys.length === rightKeys.length &&
-    leftKeys.every(
-      (key, index) =>
-        key === rightKeys[index] &&
-        areStructurallyEqual(left[key], right[key]),
-    )
-  )
-}
-
-function isRecord(value: unknown): value is Readonly<Record<string, unknown>> {
-  return value !== null && typeof value === 'object' && !Array.isArray(value)
 }
 
 function invalidStoredRecord(): InvalidLeagueSnapshotError {

@@ -49,9 +49,8 @@ const REGULAR_SEASON_INCLUSIVE_DAYS = 174
  * calendar year). The result is frozen.
  */
 export function buildSeasonTimeline(startingYear: number): SeasonTimeline {
-  assertYear(startingYear)
+  assertStartingYear(startingYear)
   const endingYear = startingYear + 1
-  assertYear(endingYear)
 
   // Opening Night: the Tuesday within October 18-24 of the starting year.
   const openingNight = firstWeekdayOnOrAfter(
@@ -152,7 +151,7 @@ function firstWeekdayOnOrAfter(date: LocalDate, weekday: number): LocalDate {
   return addDays(date, offset)
 }
 
-function assertYear(year: number): void {
+function assertStartingYear(year: number): void {
   if (!Number.isSafeInteger(year) || year < 0 || year > 9998) {
     throw new RangeError(
       `Season starting year must be an integer from 0 through 9998: ${String(year)}`,

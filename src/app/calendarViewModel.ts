@@ -36,6 +36,7 @@ import {
   yearMonthFromLocalDate,
 } from '../domain/yearMonth'
 import type { YearMonth } from '../domain/yearMonth'
+import { assertNever } from '../shared/assertNever'
 
 export type CalendarEntryKind = 'game' | 'league_event' | 'team_event'
 
@@ -675,8 +676,4 @@ function requireDate(
     throw new RangeError(`${label} requires an authoritative date`)
   }
   return date
-}
-
-function assertNever(value: never, label: string): never {
-  throw new RangeError(`${label} is unsupported: ${String(value)}`)
 }

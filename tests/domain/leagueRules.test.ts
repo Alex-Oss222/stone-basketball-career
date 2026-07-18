@@ -126,6 +126,45 @@ describe('rule-pack validation', () => {
     )
   })
 
+  it('rejects changes to required literal rules at runtime', () => {
+    const brokenPacks = [
+      withOverrides((rules) => ({
+        ...rules,
+        overtime: {
+          ...rules.overtime,
+          repeatUntilWinner: false as unknown as true,
+        },
+      })),
+      withOverrides((rules) => ({
+        ...rules,
+        lineup: {
+          ...rules.lineup,
+          unlimitedReentry: false as unknown as true,
+        },
+      })),
+      withOverrides((rules) => ({
+        ...rules,
+        teamFouls: {
+          ...rules.teamFouls,
+          offensiveFoulsCountTowardBonus: true as unknown as false,
+        },
+      })),
+      withOverrides((rules) => ({
+        ...rules,
+        substitutions: {
+          ...rules.substitutions,
+          requireDeadBall: false as unknown as true,
+        },
+      })),
+    ]
+
+    for (const broken of brokenPacks) {
+      expect(collectLeagueRulesIssues(broken).map((issue) => issue.code)).toContain(
+        'literal_value',
+      )
+    }
+  })
+
   it('rejects an offensive-rebound reset longer than the full clock', () => {
     const broken = withOverrides((rules) => ({
       ...rules,

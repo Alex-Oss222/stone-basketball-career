@@ -17,6 +17,7 @@ const HASH_MULTIPLIERS: RandomState = [
 ]
 
 const UINT32_HEX_LENGTH = 8
+const DERIVED_SEED_DIGEST_LENGTH = UINT32_HEX_LENGTH * 4
 
 /**
  * Normalizes a visible root seed without changing its case or interior spacing.
@@ -51,6 +52,42 @@ export function deriveSeed(rootSeed: string, label: string): string {
   ].join(':')
 
   return `${SEED_DERIVATION_VERSION}:${formatState(hashUtf8ToState(input))}`
+}
+
+/**
+ * Extracts a stable hexadecimal prefix from a versioned seed produced by
+ * `deriveSeed`. Keeping this format check beside seed derivation prevents
+ * identity helpers from silently accepting arbitrary colon-delimited strings.
+ */
+export function fingerprintDerivedSeed(
+  derivedSeed: string,
+  length: number,
+): string {
+  if (!Number.isSafeInteger(length) || length <= 0) {
+    throw new RangeError('Derived-seed fingerprint length must be positive')
+  }
+
+  const prefix = `${SEED_DERIVATION_VERSION}:`
+  if (typeof derivedSeed !== 'string' || !derivedSeed.startsWith(prefix)) {
+    throw new TypeError(
+      `Derived seed must use the ${SEED_DERIVATION_VERSION} format`,
+    )
+  }
+
+  const digest = derivedSeed.slice(prefix.length)
+  if (
+    digest.length !== DERIVED_SEED_DIGEST_LENGTH ||
+    /[^0-9a-f]/.test(digest)
+  ) {
+    throw new TypeError(
+      `Derived seed must contain exactly ${DERIVED_SEED_DIGEST_LENGTH} lowercase hexadecimal digits`,
+    )
+  }
+  if (length > digest.length) {
+    throw new RangeError('Derived-seed fingerprint exceeds the digest length')
+  }
+
+  return digest.slice(0, length)
 }
 
 /**

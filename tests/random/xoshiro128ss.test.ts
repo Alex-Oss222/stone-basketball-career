@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest'
-import { deriveSeed } from '../../src/random/seed'
+import {
+  deriveSeed,
+  fingerprintDerivedSeed,
+} from '../../src/random/seed'
 import { Xoshiro128StarStar } from '../../src/random/xoshiro128ss'
 
 const UINT32_MAX = 0xffff_ffff
@@ -87,5 +90,24 @@ describe('deriveSeed', () => {
     expect(deriveSeed('Stone League', 'league/v1')).not.toBe(
       deriveSeed('Stone League', 'schedule/v1'),
     )
+  })
+
+  it('extracts validated deterministic fingerprint prefixes', () => {
+    const derived = deriveSeed('  Stone League  ', 'league/v1')
+
+    expect(fingerprintDerivedSeed(derived, 8)).toBe('2783cf12')
+    expect(fingerprintDerivedSeed(derived, 24)).toBe(
+      '2783cf12fe7e11af6952f796',
+    )
+  })
+
+  it.each([
+    ['wrong-version:2783cf12fe7e11af6952f796ca1f4f8a', 8],
+    ['seed-derivation-v1:2783cf12', 8],
+    ['seed-derivation-v1:2783CF12FE7E11AF6952F796CA1F4F8A', 8],
+    ['seed-derivation-v1:2783cf12fe7e11af6952f796ca1f4f8a', 33],
+    ['seed-derivation-v1:2783cf12fe7e11af6952f796ca1f4f8a', 0],
+  ] as const)('rejects malformed fingerprint input %#', (seed, length) => {
+    expect(() => fingerprintDerivedSeed(seed, length)).toThrow()
   })
 })

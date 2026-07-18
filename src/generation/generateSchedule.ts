@@ -33,8 +33,13 @@ import type {
   UnsupportedScheduleConstraint,
 } from '../domain/schedule'
 import type { RandomSource } from '../random/randomSource'
-import { deriveSeed, normalizeSeed } from '../random/seed'
+import {
+  deriveSeed,
+  fingerprintDerivedSeed,
+  normalizeSeed,
+} from '../random/seed'
 import { createRandomSource } from '../random/xoshiro128ss'
+import { areJsonValuesEqual } from '../shared/areJsonValuesEqual'
 import { validateLeagueSchedule } from '../domain/scheduleValidation'
 
 export const SCHEDULE_GENERATION_VERSION = 1 as const
@@ -261,7 +266,9 @@ export function deriveStableScheduleId(input: StableScheduleIdInput): ScheduleId
     seedNamespace,
     `${SCHEDULE_RANDOM_STREAM_LABELS.scheduleIdentity}/participants_${participantFingerprint}`,
   )
-  return parseScheduleId(`schedule_${fingerprint(scheduleIdentitySeed)}`)
+  return parseScheduleId(
+    `schedule_${fingerprintDerivedSeed(scheduleIdentitySeed, ID_FINGERPRINT_LENGTH)}`,
+  )
 }
 
 /**
@@ -297,7 +304,9 @@ export function deriveStableScheduledGameId(
     seedNamespace,
     `${SCHEDULE_RANDOM_STREAM_LABELS.gameIdentity}/${pairKey}/cycle_${input.cycleSlot}`,
   )
-  return parseGameId(`game_${fingerprint(identitySeed)}`)
+  return parseGameId(
+    `game_${fingerprintDerivedSeed(identitySeed, ID_FINGERPRINT_LENGTH)}`,
+  )
 }
 
 function assertSupportedInput(input: GenerateRegularSeasonScheduleInput): void {
@@ -374,40 +383,9 @@ function assertStableScheduleIdentityInput(input: StableScheduleIdInput): void {
 }
 
 function isExactMilestoneOneRuleSet(ruleSet: ScheduleRuleSet): boolean {
-  return structurallyEqual(ruleSet, MILESTONE_1_REGULAR_SEASON_RULE_SET)
-}
-
-function structurallyEqual(left: unknown, right: unknown): boolean {
-  if (Object.is(left, right)) {
-    return true
-  }
-  if (
-    left === null ||
-    right === null ||
-    typeof left !== 'object' ||
-    typeof right !== 'object' ||
-    Array.isArray(left) !== Array.isArray(right)
-  ) {
-    return false
-  }
-  if (Array.isArray(left) && Array.isArray(right)) {
-    return (
-      left.length === right.length &&
-      left.every((value, index) => structurallyEqual(value, right[index]))
-    )
-  }
-
-  const leftRecord = left as Readonly<Record<string, unknown>>
-  const rightRecord = right as Readonly<Record<string, unknown>>
-  const leftKeys = Object.keys(leftRecord).sort()
-  const rightKeys = Object.keys(rightRecord).sort()
-  return (
-    leftKeys.length === rightKeys.length &&
-    leftKeys.every(
-      (key, index) =>
-        key === rightKeys[index] &&
-        structurallyEqual(leftRecord[key], rightRecord[key]),
-    )
+  return areJsonValuesEqual(
+    ruleSet,
+    MILESTONE_1_REGULAR_SEASON_RULE_SET,
   )
 }
 
@@ -489,7 +467,9 @@ function createStableGameDayId(
     seedNamespace,
     `${SCHEDULE_RANDOM_STREAM_LABELS.gameDayIdentity}/participants_${participantFingerprint}/cycle_${cycleSlot}/round_${baseRoundIndex}`,
   )
-  return parseGameDayId(`game_day_${fingerprint(identitySeed)}`)
+  return parseGameDayId(
+    `game_day_${fingerprintDerivedSeed(identitySeed, ID_FINGERPRINT_LENGTH)}`,
+  )
 }
 
 function createParticipantFingerprint(
@@ -499,11 +479,12 @@ function createParticipantFingerprint(
   const unambiguousParticipantSet = sortedTeamIds
     .map((teamId) => `${teamId.length}:${teamId}`)
     .join('/')
-  return fingerprint(
+  return fingerprintDerivedSeed(
     deriveSeed(
       seedNamespace,
       `schedule/v${SCHEDULE_GENERATION_VERSION}/participants/${unambiguousParticipantSet}`,
     ),
+    ID_FINGERPRINT_LENGTH,
   )
 }
 
@@ -567,14 +548,6 @@ function shuffled<T>(items: readonly T[], random: RandomSource): T[] {
     result[swapIndex] = current
   }
   return result
-}
-
-function fingerprint(derivedSeed: string): string {
-  const digest = derivedSeed.slice(derivedSeed.lastIndexOf(':') + 1)
-  if (digest.length < ID_FINGERPRINT_LENGTH) {
-    throw new Error('Derived seed digest is too short for a stable schedule ID')
-  }
-  return digest.slice(0, ID_FINGERPRINT_LENGTH)
 }
 
 function compareIds(left: TeamId, right: TeamId): number {

@@ -14,7 +14,11 @@ import type {
   ScheduledGame,
   ScheduleRuleSet,
 } from '../domain/schedule'
-import { deriveSeed, normalizeSeed } from '../random/seed'
+import {
+  deriveSeed,
+  fingerprintDerivedSeed,
+  normalizeSeed,
+} from '../random/seed'
 import { buildBalancedMeetingMatrix } from './scheduleMatrix'
 import { placeMeetingsAcrossDates } from './scheduleDatePlacement'
 import {
@@ -104,7 +108,10 @@ export function generateNbaRegularSeasonSchedule(
     gameDayIdByDate.set(
       dateIndex,
       parseGameDayId(
-        `game_day_${digest(deriveSeed(seedNamespace, `nba_game_day/date_${dateIndex}`))}`,
+        `game_day_${fingerprintDerivedSeed(
+          deriveSeed(seedNamespace, `nba_game_day/date_${dateIndex}`),
+          ID_FINGERPRINT_LENGTH,
+        )}`,
       ),
     )
   })
@@ -161,7 +168,10 @@ export function generateNbaRegularSeasonSchedule(
   )
 
   const scheduleId = parseScheduleId(
-    `schedule_${digest(deriveSeed(seedNamespace, 'nba_schedule_identity'))}`,
+    `schedule_${fingerprintDerivedSeed(
+      deriveSeed(seedNamespace, 'nba_schedule_identity'),
+      ID_FINGERPRINT_LENGTH,
+    )}`,
   )
 
   return Object.freeze({
@@ -230,12 +240,4 @@ function buildOpponentRequirementsFromGames(
           : 1,
       ),
   )
-}
-
-function digest(seed: string): string {
-  const value = seed.slice(seed.lastIndexOf(':') + 1)
-  if (value.length < ID_FINGERPRINT_LENGTH) {
-    throw new Error('Derived seed digest is too short for a stable identity')
-  }
-  return value.slice(0, ID_FINGERPRINT_LENGTH)
 }

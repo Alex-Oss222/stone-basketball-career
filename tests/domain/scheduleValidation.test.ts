@@ -503,11 +503,6 @@ describe('validateLeagueSchedule', () => {
     }
     const issueCodes = codes(schedule)
 
-    expect(issueCodes).toEqual(
-      expect.objectContaining({
-        size: expect.any(Number),
-      }),
-    )
     expect(issueCodes).toContain('invalid_numeric_value')
     expect(issueCodes).toContain('wrong_game_day_count')
     expect(issueCodes).toContain('duplicate_game_id')

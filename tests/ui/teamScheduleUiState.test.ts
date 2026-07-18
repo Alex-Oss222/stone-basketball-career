@@ -195,7 +195,7 @@ describe('Team Schedule transient UI state reducer', () => {
       reduceTeamScheduleUiState(initial, {
         type: 'unsupported',
       } as never),
-    ).toThrow(/Unsupported Team Schedule UI action/)
+    ).toThrow(/Team Schedule UI action is unsupported/)
   })
 
   it('never mutates or persists transient inspected, filter, and selected state', () => {

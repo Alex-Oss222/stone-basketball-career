@@ -1,7 +1,8 @@
 import type { League, Position } from '../domain/league'
-import { PLAYERS_PER_TEAM, POSITIONS, formatTeamName } from '../domain/league'
+import { PLAYERS_PER_TEAM, formatTeamName } from '../domain/league'
 import type { TeamId } from '../domain/ids'
-import { deriveVersionedOverall } from '../domain/playerDerivations'
+import { createTeamRosterFacts } from './teamRosterFacts'
+export { deriveTeamAverageRating } from './teamRosterFacts'
 
 /**
  * Header and roster facts for the Home page (§6), derived only from data that
@@ -20,28 +21,6 @@ export interface HomeHeaderSummary {
   readonly positionCounts: Readonly<Record<Position, number>>
 }
 
-/**
- * Rounded mean of each roster player's versioned position-weighted overall
- * (OVERALL_MODEL_VERSION) — presentation data, derived only, never read by
- * the simulation.
- */
-export function deriveTeamAverageRating(
-  league: League,
-  teamId: TeamId,
-): number {
-  const roster = league.players.filter((player) => player.teamId === teamId)
-  if (roster.length === 0) {
-    return 0
-  }
-  const overallSum = roster.reduce(
-    (total, player) =>
-      total +
-      deriveVersionedOverall(player.ratings, player.primaryPosition),
-    0,
-  )
-  return Math.round(overallSum / roster.length)
-}
-
 export function createHomeHeaderSummary(input: {
   readonly league: League
   readonly managedTeamId: TeamId | null
@@ -50,27 +29,17 @@ export function createHomeHeaderSummary(input: {
   if (managedTeamId === null) {
     return null
   }
-  const team = league.teams.find((candidate) => candidate.id === managedTeamId)
-  if (team === undefined) {
+  const facts = createTeamRosterFacts(league, managedTeamId)
+  if (facts === null) {
     return null
   }
-  const roster = league.players.filter(
-    (player) => player.teamId === managedTeamId,
-  )
-
-  const positionCounts = Object.fromEntries(
-    POSITIONS.map((position) => [
-      position,
-      roster.filter((player) => player.primaryPosition === position).length,
-    ]),
-  ) as Record<Position, number>
 
   return {
-    teamName: formatTeamName(team),
-    abbreviation: team.abbreviation,
-    rosterSize: roster.length,
+    teamName: formatTeamName(facts.team),
+    abbreviation: facts.team.abbreviation,
+    rosterSize: facts.roster.length,
     rosterCapacity: PLAYERS_PER_TEAM,
-    averageRating: deriveTeamAverageRating(league, managedTeamId),
-    positionCounts,
+    averageRating: facts.averageRating,
+    positionCounts: facts.positionCounts,
   }
 }

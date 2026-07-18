@@ -5,6 +5,7 @@ import {
   useRef,
 } from 'react'
 import type { ChangeEvent, MouseEvent } from 'react'
+import { assertNever } from '../shared/assertNever'
 import {
   createGameDetailsViewModel,
   createTeamScheduleViewModel,
@@ -37,6 +38,7 @@ import type {
   TeamScheduleViewMode,
 } from './teamScheduleUiState'
 import {
+  SHORT_WEEKDAY_NAMES,
   formatScheduleDateLong,
   formatScheduleDateShort,
   formatScheduleMonthHeading,
@@ -51,16 +53,6 @@ import {
   POSTSEASON_BROADCAST_TABS,
   broadcastFilterLabel,
 } from './broadcastFilter'
-
-const WEEKDAY_SHORT_LABELS = [
-  'Sun',
-  'Mon',
-  'Tue',
-  'Wed',
-  'Thu',
-  'Fri',
-  'Sat',
-] as const
 
 const STAGE_TABS = [
   { value: 'preseason', label: 'Preseason', comingLater: true },
@@ -516,7 +508,7 @@ function TeamCalendarMonth({
         </caption>
         <thead>
           <tr>
-            {WEEKDAY_SHORT_LABELS.map((label) => (
+            {SHORT_WEEKDAY_NAMES.map((label) => (
               <th key={label} scope="col">
                 {label}
               </th>
@@ -1144,7 +1136,7 @@ function stageLabel(stage: TeamScheduleStage): string {
     case 'offseason':
       return 'Off-season'
     default:
-      return assertNever(stage)
+      return assertNever(stage, 'Team schedule stage')
   }
 }
 
@@ -1159,7 +1151,7 @@ function stageRequirement(stage: TeamScheduleStage): string {
     case 'offseason':
       return 'A fourth off-season calendar tied to the season timeline (draft, free agency, summer). It activates when the season reaches the off-season.'
     default:
-      return assertNever(stage)
+      return assertNever(stage, 'Team schedule stage')
   }
 }
 
@@ -1177,7 +1169,7 @@ function mapPhaseToStage(phase: SeasonPhase): TeamScheduleStage {
     case 'postseason':
       return 'postseason'
     default:
-      return assertNever(phase)
+      return assertNever(phase, 'Season phase')
   }
 }
 
@@ -1190,10 +1182,7 @@ function filterLabel(filter: TeamScheduleSiteFilter): string {
     case 'away':
       return 'Away'
     default:
-      return assertNever(filter)
+      return assertNever(filter, 'Team schedule site filter')
   }
 }
 
-function assertNever(value: never): never {
-  throw new RangeError(`Unsupported Team Schedule value: ${String(value)}`)
-}

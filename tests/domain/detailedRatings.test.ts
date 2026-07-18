@@ -134,6 +134,9 @@ describe('detailed-rating registry integrity (ADR 0008)', () => {
   })
 
   it('is deeply frozen so no consumer can mutate the taxonomy', () => {
+    expect(Object.isFrozen(SUB_RATING_KEYS)).toBe(true)
+    expect(Object.isFrozen(DETAILED_CATEGORY_KEYS)).toBe(true)
+    expect(Object.isFrozen(DETAILED_CATEGORY_GROUPS)).toBe(true)
     expect(Object.isFrozen(DETAILED_CATEGORY_DEFINITIONS)).toBe(true)
     for (const definition of DETAILED_CATEGORY_DEFINITIONS) {
       expect(Object.isFrozen(definition)).toBe(true)
@@ -503,6 +506,9 @@ describe('parseDetailedPlayerRatings', () => {
 
     expect(parsed).toEqual(input)
     expect(parsed).not.toBe(input)
+    expect(Object.isFrozen(parsed)).toBe(true)
+    expect(Reflect.set(parsed, 'standingFinish', 99)).toBe(false)
+    expect(parsed.standingFinish).toBe(50)
     expect(Reflect.ownKeys(parsed)).toHaveLength(67)
     expect(input.standingFinish).toBe(50)
   })
@@ -646,6 +652,8 @@ describe('derived category scores and grades', () => {
       parseDetailedPlayerRatings(makeRatings(75)),
     )
     expect(Object.keys(scores)).toEqual([...DETAILED_CATEGORY_KEYS])
+    expect(Object.isFrozen(scores)).toBe(true)
+    expect(Reflect.set(scores, 'insideScoring', 0)).toBe(false)
     for (const categoryKey of DETAILED_CATEGORY_KEYS) {
       expect(scores[categoryKey]).toBe(75)
     }

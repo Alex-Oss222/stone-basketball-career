@@ -10,10 +10,8 @@ import type {
   SaveIndicatorState,
 } from '../app/dashboardViewModel'
 export type { SaveIndicatorState } from '../app/dashboardViewModel'
-import {
-  formatLocalDateForDisplay,
-  formatSeasonPhaseForDisplay,
-} from '../app/scheduleViewModel'
+import { formatSeasonPhaseForDisplay } from '../app/scheduleViewModel'
+import { formatScheduleDateLong } from './scheduleFormatting'
 import {
   NAVIGATION_SECTIONS,
   getSectionForPage,
@@ -181,7 +179,7 @@ export function AppHeader({
             </span>
             <span className="application-progress-detail">
               <span className="visually-hidden">Current date: </span>
-              {formatLocalDateForDisplay(progress.currentDate)}
+              {formatScheduleDateLong(progress.currentDate)}
             </span>
             <span className="application-progress-detail">
               <span className="visually-hidden">Current phase: </span>

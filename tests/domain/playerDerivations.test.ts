@@ -29,8 +29,10 @@ describe('position overall weight tables', () => {
   })
 
   it('gives every position positive integer weights totalling exactly 10 000 bps', () => {
+    expect(Object.isFrozen(POSITION_OVERALL_WEIGHTS_BPS)).toBe(true)
     for (const position of POSITIONS) {
       const weights = POSITION_OVERALL_WEIGHTS_BPS[position]
+      expect(Object.isFrozen(weights)).toBe(true)
       let total = 0
       for (const weight of Object.values(weights)) {
         expect(Number.isInteger(weight)).toBe(true)
@@ -125,6 +127,10 @@ describe('derived overall and position profile', () => {
     const first = derivePositionProfile(ratings, 'SF')
     const second = derivePositionProfile(ratings, 'SF')
     expect(second).toBe(first)
+    expect(Object.isFrozen(first)).toBe(true)
+    expect(Reflect.set(first, 'overall', 0)).toBe(false)
+    expect(derivePositionProfile(ratings, 'SF')).toBe(first)
+    expect(first.overall).toBe(71)
 
     const equalButDistinct = makeRatings(71)
     const third = derivePositionProfile(equalButDistinct, 'SF')

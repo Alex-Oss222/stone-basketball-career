@@ -59,7 +59,7 @@ type CategoryBiasProfile = Readonly<Record<DetailedCategoryKey, number>>
  */
 export const POSITION_CATEGORY_BIASES: Readonly<
   Record<Position, CategoryBiasProfile>
-> = {
+> = freezePositionCategoryBiases({
   PG: {
     insideScoring: 0,
     midRangeShooting: 3,
@@ -160,7 +160,7 @@ export const POSITION_CATEGORY_BIASES: Readonly<
     basketballIQ: 0,
     intangibles: 0,
   },
-}
+})
 
 /** The categories that weight each stored sub-rating (two for the shared one). */
 const CATEGORIES_BY_SUB_RATING: ReadonlyMap<
@@ -252,25 +252,18 @@ export function generateDetailedRating(
   subRatingKey: SubRatingKey,
   createSource: RandomSourceFactory = createRandomSource,
 ): number {
-  const owningCategories = CATEGORIES_BY_SUB_RATING.get(subRatingKey)
-  if (owningCategories === undefined) {
-    throw new RangeError(`Unknown sub-rating: ${String(subRatingKey)}`)
-  }
-
+  const owningCategories = getOwningCategories(subRatingKey)
   const quality = generateQualityBaseline(leagueSeed, playerId, createSource)
-  const categoryTerm = Math.round(
-    owningCategories.reduce(
-      (total, categoryKey) =>
-        total +
-        generateCategoryAptitude(
-          leagueSeed,
-          playerId,
-          categoryKey,
-          createSource,
-        ) +
-        POSITION_CATEGORY_BIASES[primaryPosition][categoryKey],
-      0,
-    ) / owningCategories.length,
+  const categoryTerm = deriveCategoryTerm(
+    owningCategories,
+    primaryPosition,
+    (categoryKey) =>
+      generateCategoryAptitude(
+        leagueSeed,
+        playerId,
+        categoryKey,
+        createSource,
+      ),
   )
   const variation = generateFieldVariation(
     leagueSeed,
@@ -279,11 +272,7 @@ export function generateDetailedRating(
     createSource,
   )
 
-  return clamp(
-    quality + categoryTerm + variation,
-    DETAILED_RATING_MIN,
-    DETAILED_RATING_MAX,
-  )
+  return composeDetailedRating(quality, categoryTerm, variation)
 }
 
 /** Generates and validates the complete 67-field detailed record. */
@@ -309,6 +298,44 @@ export function generateDetailedPlayerRatings(
   )
 }
 
+function getOwningCategories(
+  subRatingKey: SubRatingKey,
+): readonly DetailedCategoryKey[] {
+  const owningCategories = CATEGORIES_BY_SUB_RATING.get(subRatingKey)
+  if (owningCategories === undefined) {
+    throw new RangeError(`Unknown sub-rating: ${String(subRatingKey)}`)
+  }
+  return owningCategories
+}
+
+function deriveCategoryTerm(
+  owningCategories: readonly DetailedCategoryKey[],
+  primaryPosition: Position,
+  getAptitude: (categoryKey: DetailedCategoryKey) => number,
+): number {
+  return Math.round(
+    owningCategories.reduce(
+      (total, categoryKey) =>
+        total +
+        getAptitude(categoryKey) +
+        POSITION_CATEGORY_BIASES[primaryPosition][categoryKey],
+      0,
+    ) / owningCategories.length,
+  )
+}
+
+function composeDetailedRating(
+  quality: number,
+  categoryTerm: number,
+  variation: number,
+): number {
+  return clamp(
+    quality + categoryTerm + variation,
+    DETAILED_RATING_MIN,
+    DETAILED_RATING_MAX,
+  )
+}
+
 function buildCategoriesBySubRating(): ReadonlyMap<
   SubRatingKey,
   readonly DetailedCategoryKey[]
@@ -324,7 +351,19 @@ function buildCategoriesBySubRating(): ReadonlyMap<
       }
     }
   }
+  for (const categories of mapping.values()) {
+    Object.freeze(categories)
+  }
   return mapping
+}
+
+function freezePositionCategoryBiases(
+  biases: Record<Position, CategoryBiasProfile>,
+): Readonly<Record<Position, CategoryBiasProfile>> {
+  for (const profile of Object.values(biases)) {
+    Object.freeze(profile)
+  }
+  return Object.freeze(biases)
 }
 
 function randomInteger(

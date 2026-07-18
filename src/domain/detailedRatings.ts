@@ -46,7 +46,7 @@ export const CATEGORY_WEIGHT_TOTAL_BPS = 10_000
  * iteration. `reboundReading` is stored once and weighted into both
  * rebounding categories (the sole documented sharing exception).
  */
-export const SUB_RATING_KEYS = [
+export const SUB_RATING_KEYS = Object.freeze([
   // Scoring — Inside Scoring
   'standingFinish',
   'drivingLayup',
@@ -132,7 +132,7 @@ export const SUB_RATING_KEYS = [
   'coachability',
   'composure',
   'workEthic',
-] as const
+] as const)
 
 export type SubRatingKey = (typeof SUB_RATING_KEYS)[number]
 
@@ -142,7 +142,7 @@ export const SHARED_SUB_RATING_KEY = 'reboundReading' satisfies SubRatingKey
 /** The stored record: exactly the 67 sub-ratings, integers 0–100. */
 export type DetailedPlayerRatings = Readonly<Record<SubRatingKey, number>>
 
-export const DETAILED_CATEGORY_KEYS = [
+export const DETAILED_CATEGORY_KEYS = Object.freeze([
   'insideScoring',
   'midRangeShooting',
   'threePointShooting',
@@ -161,18 +161,18 @@ export const DETAILED_CATEGORY_KEYS = [
   'durability',
   'basketballIQ',
   'intangibles',
-] as const
+] as const)
 
 export type DetailedCategoryKey = (typeof DETAILED_CATEGORY_KEYS)[number]
 
-export const DETAILED_CATEGORY_GROUPS = [
+export const DETAILED_CATEGORY_GROUPS = Object.freeze([
   'scoring',
   'creation',
   'rebounding',
   'defense',
   'physical',
   'mental',
-] as const
+] as const)
 
 export type DetailedCategoryGroup = (typeof DETAILED_CATEGORY_GROUPS)[number]
 
@@ -500,8 +500,10 @@ export function parseDetailedPlayerRatings(
   }
 
   const source = value as Record<SubRatingKey, unknown>
-  return Object.fromEntries(
-    SUB_RATING_KEYS.map((key) => [key, parseDetailedRating(source[key])]),
+  return Object.freeze(
+    Object.fromEntries(
+      SUB_RATING_KEYS.map((key) => [key, parseDetailedRating(source[key])]),
+    ),
   ) as DetailedPlayerRatings
 }
 
@@ -524,12 +526,14 @@ export function deriveCategoryScore(
 export function deriveAllCategoryScores(
   ratings: DetailedPlayerRatings,
 ): Readonly<Record<DetailedCategoryKey, number>> {
-  return Object.fromEntries(
-    DETAILED_CATEGORY_KEYS.map((categoryKey) => [
-      categoryKey,
-      deriveCategoryScore(ratings, categoryKey),
-    ]),
-  ) as Record<DetailedCategoryKey, number>
+  return Object.freeze(
+    Object.fromEntries(
+      DETAILED_CATEGORY_KEYS.map((categoryKey) => [
+        categoryKey,
+        deriveCategoryScore(ratings, categoryKey),
+      ]),
+    ),
+  ) as Readonly<Record<DetailedCategoryKey, number>>
 }
 
 /** Letter grade from the unrounded category score, via the one grade scale. */
