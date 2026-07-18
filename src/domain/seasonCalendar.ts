@@ -16,6 +16,12 @@ import type {
 } from './ids'
 import { isLocalDate, parseLocalDate } from './localDate'
 import type { LocalDate } from './localDate'
+import {
+  addIssue,
+  isRecord,
+  validateNullableLocalDate,
+} from './validationIssue'
+import type { ValidationIssue } from './validationIssue'
 
 export const SEASON_CALENDAR_VERSION = 1 as const
 export const CALENDAR_EVENT_VERSION = 1 as const
@@ -100,11 +106,7 @@ export interface SeasonCalendar {
   readonly events: readonly CalendarEvent[]
 }
 
-export interface CalendarValidationIssue {
-  readonly code: string
-  readonly path: string
-  readonly message: string
-}
+export type CalendarValidationIssue = ValidationIssue
 
 export class InvalidCalendarEventError extends Error {
   readonly issues: readonly CalendarValidationIssue[]
@@ -511,14 +513,13 @@ function validateNullableDate(
   path: string,
   issues: CalendarValidationIssue[],
 ): void {
-  if (value !== null && !isLocalDate(value)) {
-    addIssue(
-      issues,
-      'calendar_event.date.invalid',
-      path,
-      'Calendar event date must be a valid LocalDate or null',
-    )
-  }
+  validateNullableLocalDate(
+    value,
+    path,
+    issues,
+    'calendar_event.date.invalid',
+    'Calendar event date must be a valid LocalDate or null',
+  )
 }
 
 function freezeCalendarEvent(source: Record<string, unknown>): CalendarEvent {
@@ -551,15 +552,3 @@ function freezeCalendarEvent(source: Record<string, unknown>): CalendarEvent {
   return Object.freeze({ ...base, scope: 'league' })
 }
 
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return value !== null && typeof value === 'object' && !Array.isArray(value)
-}
-
-function addIssue(
-  issues: CalendarValidationIssue[],
-  code: string,
-  path: string,
-  message: string,
-): void {
-  issues.push({ code, path, message })
-}

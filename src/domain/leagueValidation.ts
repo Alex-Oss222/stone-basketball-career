@@ -20,12 +20,10 @@ import {
   isDetailedRating,
   isSubRatingKey,
 } from './detailedRatings'
+import { addIssue } from './validationIssue'
+import type { ValidationIssue } from './validationIssue'
 
-export interface LeagueValidationIssue {
-  readonly code: string
-  readonly path: string
-  readonly message: string
-}
+export type LeagueValidationIssue = ValidationIssue
 
 export class InvalidLeagueError extends Error {
   readonly issues: readonly LeagueValidationIssue[]
@@ -454,15 +452,6 @@ function registerUniqueValue(
     addIssue(issues, code, path, message)
   }
   values.add(value)
-}
-
-function addIssue(
-  issues: LeagueValidationIssue[],
-  code: string,
-  path: string,
-  message: string,
-): void {
-  issues.push({ code, path, message })
 }
 
 function isNonEmptyString(value: unknown): value is string {

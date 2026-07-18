@@ -13,6 +13,8 @@ import {
   parseLocalDate,
 } from './localDate'
 import type { LocalDate } from './localDate'
+import { addIssue, isPositiveSafeInteger, isRecord } from './validationIssue'
+import type { ValidationIssue } from './validationIssue'
 
 export const SEASON_PHASES = [
   'offseason',
@@ -48,11 +50,7 @@ export interface Season {
 
 export type CreateSeasonInput = Omit<Season, 'displayLabel'>
 
-export interface SeasonValidationIssue {
-  readonly code: string
-  readonly path: string
-  readonly message: string
-}
+export type SeasonValidationIssue = ValidationIssue
 
 export class InvalidSeasonError extends Error {
   readonly issues: readonly SeasonValidationIssue[]
@@ -215,23 +213,6 @@ export function parseSeason(value: unknown): Season {
   })
 }
 
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return value !== null && typeof value === 'object' && !Array.isArray(value)
-}
-
-function isPositiveSafeInteger(value: unknown): value is number {
-  return Number.isSafeInteger(value) && (value as number) > 0
-}
-
 function isCalendarYear(value: unknown): value is number {
   return Number.isSafeInteger(value) && (value as number) >= 0 && (value as number) <= 9999
-}
-
-function addIssue(
-  issues: SeasonValidationIssue[],
-  code: string,
-  path: string,
-  message: string,
-): void {
-  issues.push({ code, path, message })
 }

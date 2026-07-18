@@ -13,6 +13,13 @@ import {
   parseLocalDate,
 } from './localDate'
 import type { LocalDate } from './localDate'
+import {
+  addIssue,
+  isPositiveSafeInteger,
+  isRecord,
+  validateNullableLocalDate,
+} from './validationIssue'
+import type { ValidationIssue } from './validationIssue'
 
 export const TEAM_SEASON_VERSION = 1 as const
 
@@ -35,11 +42,7 @@ export interface TeamSeason {
   readonly postseasonSeed: number | null
 }
 
-export interface TeamSeasonValidationIssue {
-  readonly code: string
-  readonly path: string
-  readonly message: string
-}
+export type TeamSeasonValidationIssue = ValidationIssue
 
 export class InvalidTeamSeasonError extends Error {
   readonly issues: readonly TeamSeasonValidationIssue[]
@@ -188,29 +191,11 @@ function validateNullableDate(
   path: string,
   issues: TeamSeasonValidationIssue[],
 ): void {
-  if (value !== null && !isLocalDate(value)) {
-    addIssue(
-      issues,
-      'team_season.date.invalid',
-      path,
-      'Team-season date must be a valid LocalDate or null',
-    )
-  }
-}
-
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return value !== null && typeof value === 'object' && !Array.isArray(value)
-}
-
-function isPositiveSafeInteger(value: unknown): value is number {
-  return Number.isSafeInteger(value) && (value as number) > 0
-}
-
-function addIssue(
-  issues: TeamSeasonValidationIssue[],
-  code: string,
-  path: string,
-  message: string,
-): void {
-  issues.push({ code, path, message })
+  validateNullableLocalDate(
+    value,
+    path,
+    issues,
+    'team_season.date.invalid',
+    'Team-season date must be a valid LocalDate or null',
+  )
 }
