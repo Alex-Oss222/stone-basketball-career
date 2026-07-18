@@ -1,6 +1,6 @@
 import { describe, expect, expectTypeOf, it } from 'vitest'
 
-import { RATING_KEYS } from '../../src/domain/ratings'
+import { SUB_RATING_KEYS } from '../../src/domain/detailedRatings'
 import {
   InvalidLeagueSnapshotError,
   LEAGUE_SNAPSHOT_VERSION,
@@ -47,7 +47,7 @@ describe('LeagueSnapshot DTO contract', () => {
       CREATION_METADATA_KEYS,
     )
     expect(snapshot.snapshotVersion).toBe(LEAGUE_SNAPSHOT_VERSION)
-    expect(snapshot.snapshotVersion).toBe(3)
+    expect(snapshot.snapshotVersion).toBe(4)
     expect(snapshot.revision).toBe(1)
     expect(snapshot.creationMetadata).toMatchObject({
       startingYear: FIXTURE_CREATION_INPUTS.startingYear,
@@ -412,10 +412,12 @@ describe('LeagueSnapshot restoration and cross-object validation', () => {
     )
 
     expect(Object.keys(snapshot.league.players[0].ratings)).toEqual(
-      RATING_KEYS,
+      SUB_RATING_KEYS,
     )
     expect(collectPropertyNames(snapshot)).not.toContain('grade')
     expect(collectPropertyNames(snapshot)).not.toContain('letterGrade')
+    expect(collectPropertyNames(snapshot)).not.toContain('overall')
+    expect(collectPropertyNames(snapshot)).not.toContain('potential')
   })
 
   it('rejects a foreign managed team', () => {

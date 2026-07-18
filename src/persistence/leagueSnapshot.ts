@@ -57,11 +57,13 @@ import {
 } from '../domain/localDate'
 import type { LocalDate } from '../domain/localDate'
 import {
-  RATING_GENERATION_VERSION,
-  RATING_KEYS,
-  parsePlayerRatings,
-} from '../domain/ratings'
-import type { PlayerRatings } from '../domain/ratings'
+  CATEGORY_DEFINITION_VERSION,
+  DETAILED_RATING_GENERATION_VERSION,
+  DETAILED_RATINGS_SCHEMA_VERSION,
+  SUB_RATING_KEYS,
+  parseDetailedPlayerRatings,
+} from '../domain/detailedRatings'
+import type { DetailedPlayerRatings } from '../domain/detailedRatings'
 import {
   SCHEDULED_GAME_STATUSES,
   SCHEDULE_PUBLICATION_STATUSES,
@@ -132,11 +134,13 @@ export const LEAGUE_SNAPSHOT_KIND =
   'stone-basketball-gm-league-snapshot' as const
 
 /**
- * The one current snapshot version. Deliberately monotonic — versions 1 and 2
+ * The one current snapshot version. Deliberately monotonic — versions 1–3
  * shipped to local browser storage during development and must be refused,
- * never mis-parsed, so this constant never resets.
+ * never mis-parsed, so this constant never resets. Version 4 replaced the
+ * stored 16 macro ratings with the 67-sub-rating detailed model (§8B R4);
+ * per §7 there is no migration — an old record offers "start a new league."
  */
-export const LEAGUE_SNAPSHOT_VERSION = 3 as const
+export const LEAGUE_SNAPSHOT_VERSION = 4 as const
 
 export interface LeagueSnapshotTeamDto {
   readonly id: TeamId
@@ -156,14 +160,16 @@ export interface LeagueSnapshotPlayerDto {
   readonly jerseyNumber: number
   readonly primaryPosition: Position
   readonly secondaryPosition: Position | null
-  readonly ratingGenerationVersion: 1
-  readonly ratings: PlayerRatings
+  readonly ratingGenerationVersion: typeof DETAILED_RATING_GENERATION_VERSION
+  readonly ratings: DetailedPlayerRatings
   readonly tendencies: PlayerTendencies
 }
 
 export interface LeagueSnapshotLeagueDto {
   readonly id: LeagueId
   readonly generatorVersion: 1
+  readonly detailedRatingsSchemaVersion: typeof DETAILED_RATINGS_SCHEMA_VERSION
+  readonly categoryDefinitionVersion: typeof CATEGORY_DEFINITION_VERSION
   readonly seedFingerprint: string
   readonly teams: readonly LeagueSnapshotTeamDto[]
   readonly players: readonly LeagueSnapshotPlayerDto[]
@@ -345,6 +351,8 @@ const TOP_LEVEL_KEYS = [
 const LEAGUE_KEYS = [
   'id',
   'generatorVersion',
+  'detailedRatingsSchemaVersion',
+  'categoryDefinitionVersion',
   'seedFingerprint',
   'teams',
   'players',
@@ -611,9 +619,23 @@ function parseLeagueDto(value: unknown, path: string): League {
     `${path}.generatorVersion`,
     rejectStructure,
   )
+  expectLiteral(
+    source.detailedRatingsSchemaVersion,
+    DETAILED_RATINGS_SCHEMA_VERSION,
+    `${path}.detailedRatingsSchemaVersion`,
+    rejectStructure,
+  )
+  expectLiteral(
+    source.categoryDefinitionVersion,
+    CATEGORY_DEFINITION_VERSION,
+    `${path}.categoryDefinitionVersion`,
+    rejectStructure,
+  )
   const league: League = {
     id: parseAtPath(`${path}.id`, source.id, parseLeagueId),
     generatorVersion: 1,
+    detailedRatingsSchemaVersion: DETAILED_RATINGS_SCHEMA_VERSION,
+    categoryDefinitionVersion: CATEGORY_DEFINITION_VERSION,
     seedFingerprint: expectString(
       source.seedFingerprint,
       `${path}.seedFingerprint`,
@@ -689,7 +711,7 @@ function parsePlayerDto(value: unknown, path: string): Player {
   const source = expectExactRecord(value, PLAYER_KEYS, path, rejectStructure)
   expectLiteral(
     source.ratingGenerationVersion,
-    RATING_GENERATION_VERSION,
+    DETAILED_RATING_GENERATION_VERSION,
     `${path}.ratingGenerationVersion`,
     rejectStructure,
   )
@@ -723,15 +745,15 @@ function parsePlayerDto(value: unknown, path: string): Player {
             source.secondaryPosition,
             `${path}.secondaryPosition`,
           ),
-    ratingGenerationVersion: RATING_GENERATION_VERSION,
+    ratingGenerationVersion: DETAILED_RATING_GENERATION_VERSION,
     ratings: parseRatingsDto(source.ratings, `${path}.ratings`),
     tendencies: parseTendenciesDto(source.tendencies, `${path}.tendencies`),
   }
 }
 
-function parseRatingsDto(value: unknown, path: string): PlayerRatings {
-  expectExactRecord(value, RATING_KEYS, path, rejectStructure)
-  return parseAtPath(path, value, parsePlayerRatings)
+function parseRatingsDto(value: unknown, path: string): DetailedPlayerRatings {
+  expectExactRecord(value, SUB_RATING_KEYS, path, rejectStructure)
+  return parseAtPath(path, value, parseDetailedPlayerRatings)
 }
 
 function parseTendenciesDto(value: unknown, path: string): PlayerTendencies {
@@ -1888,6 +1910,8 @@ function serializeLeague(league: League): LeagueSnapshotLeagueDto {
   return {
     id: league.id,
     generatorVersion: league.generatorVersion,
+    detailedRatingsSchemaVersion: league.detailedRatingsSchemaVersion,
+    categoryDefinitionVersion: league.categoryDefinitionVersion,
     seedFingerprint: league.seedFingerprint,
     teams: league.teams.map((team) => ({
       id: team.id,

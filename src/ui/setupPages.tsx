@@ -222,7 +222,7 @@ export function LeagueCreationScreen({
           </div>
           <div>
             <dt>Ratings</dt>
-            <dd>16 stored skills</dd>
+            <dd>67 stored skills</dd>
           </div>
         </dl>
       </aside>

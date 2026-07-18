@@ -1,7 +1,7 @@
 import type { League, Position } from '../domain/league'
 import { PLAYERS_PER_TEAM, POSITIONS, formatTeamName } from '../domain/league'
 import type { TeamId } from '../domain/ids'
-import { RATING_KEYS } from '../domain/ratings'
+import { deriveVersionedOverall } from '../domain/playerDerivations'
 
 /**
  * Header and roster facts for the Home page (§6), derived only from data that
@@ -15,32 +15,31 @@ export interface HomeHeaderSummary {
   readonly abbreviation: string
   readonly rosterSize: number
   readonly rosterCapacity: number
-  /** Plain mean of every stored rating on the roster, rounded. Labeled as an average, not an "overall". */
+  /** Rounded mean of the roster's versioned position-weighted overalls (derived, never stored). */
   readonly averageRating: number
   readonly positionCounts: Readonly<Record<Position, number>>
 }
 
 /**
- * Plain mean of every stored rating on one team's roster, rounded. A
- * transparent presentation average — deliberately not an "overall" formula,
- * which is a versioned simulation decision (§9).
+ * Rounded mean of each roster player's versioned position-weighted overall
+ * (OVERALL_MODEL_VERSION) — presentation data, derived only, never read by
+ * the simulation.
  */
 export function deriveTeamAverageRating(
   league: League,
   teamId: TeamId,
 ): number {
   const roster = league.players.filter((player) => player.teamId === teamId)
-  const ratingCount = roster.length * RATING_KEYS.length
-  if (ratingCount === 0) {
+  if (roster.length === 0) {
     return 0
   }
-  const ratingSum = roster.reduce(
+  const overallSum = roster.reduce(
     (total, player) =>
       total +
-      RATING_KEYS.reduce((sum, key) => sum + player.ratings[key], 0),
+      deriveVersionedOverall(player.ratings, player.primaryPosition),
     0,
   )
-  return Math.round(ratingSum / ratingCount)
+  return Math.round(overallSum / roster.length)
 }
 
 export function createHomeHeaderSummary(input: {

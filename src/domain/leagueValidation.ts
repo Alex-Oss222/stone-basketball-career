@@ -11,13 +11,15 @@ import {
 } from './league'
 import type { League, PlayerTendencies, TeamColors } from './league'
 import {
-  RATING_GENERATION_VERSION,
-  RATING_KEYS,
-  STORED_RATING_MAX,
-  STORED_RATING_MIN,
-  isRatingKey,
-  isStoredRating,
-} from './ratings'
+  CATEGORY_DEFINITION_VERSION,
+  DETAILED_RATING_GENERATION_VERSION,
+  DETAILED_RATING_MAX,
+  DETAILED_RATING_MIN,
+  DETAILED_RATINGS_SCHEMA_VERSION,
+  SUB_RATING_KEYS,
+  isDetailedRating,
+  isSubRatingKey,
+} from './detailedRatings'
 
 export interface LeagueValidationIssue {
   readonly code: string
@@ -62,6 +64,24 @@ export function validateLeague(league: League): readonly LeagueValidationIssue[]
       'league.generator_version.invalid',
       '$.generatorVersion',
       'Generator version must equal 1',
+    )
+  }
+
+  if (league.detailedRatingsSchemaVersion !== DETAILED_RATINGS_SCHEMA_VERSION) {
+    addIssue(
+      issues,
+      'league.detailed_ratings_schema_version.invalid',
+      '$.detailedRatingsSchemaVersion',
+      `Detailed ratings schema version must equal ${DETAILED_RATINGS_SCHEMA_VERSION}`,
+    )
+  }
+
+  if (league.categoryDefinitionVersion !== CATEGORY_DEFINITION_VERSION) {
+    addIssue(
+      issues,
+      'league.category_definition_version.invalid',
+      '$.categoryDefinitionVersion',
+      `Category definition version must equal ${CATEGORY_DEFINITION_VERSION}`,
     )
   }
 
@@ -271,12 +291,12 @@ export function validateLeague(league: League): readonly LeagueValidationIssue[]
       )
     }
 
-    if (player.ratingGenerationVersion !== RATING_GENERATION_VERSION) {
+    if (player.ratingGenerationVersion !== DETAILED_RATING_GENERATION_VERSION) {
       addIssue(
         issues,
         'player.rating_generation_version.invalid',
         `${path}.ratingGenerationVersion`,
-        `Rating generation version must equal ${RATING_GENERATION_VERSION}`,
+        `Rating generation version must equal ${DETAILED_RATING_GENERATION_VERSION}`,
       )
     }
 
@@ -377,7 +397,7 @@ function validateRatings(
 
   const source = ratings as Record<string, unknown>
 
-  for (const ratingKey of RATING_KEYS) {
+  for (const ratingKey of SUB_RATING_KEYS) {
     if (!Object.prototype.hasOwnProperty.call(source, ratingKey)) {
       addIssue(
         issues,
@@ -388,18 +408,18 @@ function validateRatings(
       continue
     }
 
-    if (!isStoredRating(source[ratingKey])) {
+    if (!isDetailedRating(source[ratingKey])) {
       addIssue(
         issues,
         'player.rating.invalid',
         `${path}.${ratingKey}`,
-        `Rating must be a finite integer from ${STORED_RATING_MIN} through ${STORED_RATING_MAX}`,
+        `Rating must be a finite integer from ${DETAILED_RATING_MIN} through ${DETAILED_RATING_MAX}`,
       )
     }
   }
 
   for (const key of Reflect.ownKeys(ratings)) {
-    if (!isRatingKey(key)) {
+    if (!isSubRatingKey(key)) {
       addIssue(
         issues,
         'player.rating.unexpected',

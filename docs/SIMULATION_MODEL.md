@@ -28,6 +28,59 @@
 > exactly `src/domain/gameResult.ts`; this document does not get to invent a
 > different shape.
 
+## §8B R8 — frozen rating reads (IMPLEMENTED, 2026-07-18)
+
+Unlike the rest of this document, this section describes **shipping code**:
+`SIM_RATING_READ_VERSION = 1` in `src/domain/simulationReads.ts`. The
+simulation may read player sub-ratings **only** through these versioned event
+selectors — never letter grades, derived category scores, the display
+Overall, rotation ability, or the raw stored record. A test
+(`tests/domain/simulationReadsAndAbility.test.ts`) keeps this table and the
+registry in exact agreement, and an architecture guard forbids
+`src/simulation/` from importing the rating domain directly.
+
+Rules, frozen at R8:
+
+- **Durability and Intangibles never enter possession events** (ADR 0008
+  review decisions). `injuryResistance` and `loadDurability` feed only the
+  future injury system; `competitiveness`, `coachability`, `composure`, and
+  `workEthic` feed only development, coach-fit, and morale/clutch systems.
+- Display weights (`CATEGORY_DEFINITION_VERSION`, `OVERALL_MODEL_VERSION`),
+  planning weights (`ROTATION_ABILITY_VERSION`), and these simulation reads
+  (`SIM_RATING_READ_VERSION`) are **independent version axes** — changing one
+  can never change the others' outputs.
+- The v1 factor per event is the **unweighted mean** of its dependency list at
+  full precision. Per-dependency weighting inside an event is a §9 formula
+  decision and bumps `SIM_RATING_READ_VERSION`.
+- Changing any dependency list bumps the version and requires new golden
+  simulations (§9).
+
+### Event → sub-rating dependency table
+
+| Event | Sub-ratings read |
+| --- | --- |
+| `shotSelection` | `decisionMaking`, `offensiveAwareness` |
+| `rimShotResolution` | `standingFinish`, `drivingLayup`, `contactFinishing`, `dunking`, `postFinishing` |
+| `midRangeShotResolution` | `catchAndShootMid`, `pullUpMid`, `contestedMid`, `postFadeaway` |
+| `threePointShotResolution` | `catchAndShootThree`, `pullUpThree`, `movementThree`, `contestedThree` |
+| `freeThrowResolution` | `freeThrowAccuracy`, `freeThrowConsistency`, `pressureFreeThrows` |
+| `passResolution` | `passAccuracy`, `courtVision`, `passTiming` |
+| `turnoverResolution` | `ballSecurity`, `pressureHandling`, `dribbleControl`, `changeOfDirection`, `decisionMaking` |
+| `stealResolution` | `onBallSteal`, `passingLaneAnticipation`, `deflectionTiming`, `stripTechnique` |
+| `blockResolution` | `blockTiming`, `verticalContest`, `helpSideBlocking`, `recoveryBlocking` |
+| `offensiveReboundResolution` | `offensivePositioning`, `reboundPursuit`, `reboundReading`, `secondJump` |
+| `defensiveReboundResolution` | `defensivePositioning`, `boxOutTechnique`, `reboundReading`, `reboundSecurity` |
+| `interiorDefenseResolution` | `postContainment`, `rimDeterrence`, `helpRotation`, `paintPositioning` |
+| `perimeterDefenseResolution` | `onBallContainment`, `lateralRecovery`, `screenNavigation`, `closeoutControl` |
+| `fatigueResolution` | `stamina`, `recoveryRate`, `workloadCapacity`, `lateGameConditioning` |
+| `physicalMatchup` | `acceleration`, `topSpeed`, `lateralQuickness`, `agility`, `lowerBodyStrength`, `upperBodyStrength`, `contactBalance`, `physicalLeverage` |
+| `defensiveAwarenessRead` | `defensiveAwareness` |
+
+Coverage: the sixteen events read exactly the 61 possession-relevant
+sub-ratings (67 stored minus the six forbidden), each at least once. The
+tendency-normalization formula and game-seed derivation remain §9 decisions,
+recorded here when the kernel lands.
+
 ## Frozen result contract (decided by the §6 screens, 2026-07-17)
 
 The source of truth is **`src/domain/gameResult.ts`** — the §9 kernel must

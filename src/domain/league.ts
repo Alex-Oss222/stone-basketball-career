@@ -1,8 +1,10 @@
 import type { LeagueId, PlayerId, TeamId } from './ids'
 import type {
-  PlayerRatings,
-  RatingGenerationVersion,
-} from './ratings'
+  CategoryDefinitionVersion,
+  DetailedPlayerRatings,
+  DetailedRatingGenerationVersion,
+  DetailedRatingsSchemaVersion,
+} from './detailedRatings'
 
 export const POSITIONS = ['PG', 'SG', 'SF', 'PF', 'C'] as const
 export type Position = (typeof POSITIONS)[number]
@@ -58,15 +60,23 @@ export interface Player {
   readonly jerseyNumber: number
   readonly primaryPosition: Position
   readonly secondaryPosition: Position | null
-  readonly ratingGenerationVersion: RatingGenerationVersion
-  readonly ratings: PlayerRatings
+  /** Version of the deterministic detailed-rating generation that produced `ratings`. */
+  readonly ratingGenerationVersion: DetailedRatingGenerationVersion
+  /** The 67 authoritative sub-ratings (ADR 0008); everything else is derived. */
+  readonly ratings: DetailedPlayerRatings
   readonly tendencies: PlayerTendencies
 }
 
-/** A complete generated league snapshot; player records are stored explicitly. */
+/**
+ * A complete generated league snapshot; player records are stored explicitly.
+ * The save carries the detailed skill-schema and category-definition versions
+ * (ADR 0008) alongside each player's generation version.
+ */
 export interface League {
   readonly id: LeagueId
   readonly generatorVersion: 1
+  readonly detailedRatingsSchemaVersion: DetailedRatingsSchemaVersion
+  readonly categoryDefinitionVersion: CategoryDefinitionVersion
   readonly seedFingerprint: string
   readonly teams: readonly Team[]
   readonly players: readonly Player[]

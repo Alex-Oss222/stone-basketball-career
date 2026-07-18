@@ -43,14 +43,18 @@ import {
   LeagueTeamsContent,
   TeamRosterContent,
 } from './ui/dashboardPages'
+import { CoachingDevelopmentContent } from './ui/developmentPage'
 import { HomeTodayContent } from './ui/homePage'
+import { getTeamRoster } from './ui/leagueViewModel'
+import { MedicalDepartmentContent } from './ui/medicalPage'
+import { PlayerPageContent } from './ui/playerPage'
+import { RotationGameplanContent } from './ui/rotationGameplanPage'
 import { TeamOverviewContent } from './ui/teamOverviewPage'
 import {
   ApplicationShell,
   AvailablePage,
   ComingLaterPage,
 } from './ui/dashboardShell'
-import { getTeamRoster } from './ui/leagueViewModel'
 import {
   LeagueCalendarContent,
   LeagueScheduleOverviewContent,
@@ -119,7 +123,7 @@ function App() {
   const [snapshot, setSnapshot] = useState<LeagueSnapshot | null>(null)
   const [mismatchStoredVersion, setMismatchStoredVersion] =
     useState<number | null>(null)
-  const [selectedPlayerId, setSelectedPlayerId] =
+  const [viewedPlayerId, setViewedPlayerId] =
     useState<PlayerId | null>(null)
   const [seedError, setSeedError] = useState<string | null>(null)
   const [seasonError, setSeasonError] = useState<string | null>(null)
@@ -138,6 +142,16 @@ function App() {
   const league = snapshot?.league ?? null
   const controlledTeam =
     league?.teams.find((team) => team.id === snapshot?.managedTeamId) ?? null
+  const viewedPlayer =
+    league?.players.find((player) => player.id === viewedPlayerId) ?? null
+  const viewedPlayerTeam =
+    viewedPlayer === null
+      ? null
+      : league?.teams.find((team) => team.id === viewedPlayer.teamId) ?? null
+  const viewedPlayerRoster =
+    league === null || viewedPlayerTeam === null
+      ? []
+      : getTeamRoster(league, viewedPlayerTeam.id)
   const isBusy = pendingOperation !== 'idle'
   const saveState: SaveIndicatorState | null =
     persistenceError !== null
@@ -170,7 +184,7 @@ function App() {
     setMismatchStoredVersion(null)
     setSeed(DEFAULT_LEAGUE_SEED)
     setSeasonValues(createDefaultSeasonValues())
-    setSelectedPlayerId(null)
+    setViewedPlayerId(null)
     setSeedError(null)
     setSeasonError(null)
     setRestoreError(null)
@@ -192,11 +206,7 @@ function App() {
     setMismatchStoredVersion(null)
     setSeed(next.rootSeed)
     setSeasonValues(seasonValuesFromSnapshot(next))
-    setSelectedPlayerId(
-      restoredTeam === null
-        ? null
-        : getTeamRoster(next.league, restoredTeam.id)[0]?.id ?? null,
-    )
+    setViewedPlayerId(null)
     setSeedError(null)
     setSeasonError(null)
     setRestoreError(null)
@@ -233,14 +243,14 @@ function App() {
         case 'version-mismatch':
           setSnapshot(null)
           setMismatchStoredVersion(result.storedVersion)
-          setSelectedPlayerId(null)
+          setViewedPlayerId(null)
           setSetupView(null)
           setBootState('version-mismatch')
           return
         case 'recovery-required':
           setSnapshot(null)
           setMismatchStoredVersion(null)
-          setSelectedPlayerId(null)
+          setViewedPlayerId(null)
           setSetupView(null)
           setRecoveryKind(
             result.source === 'storage' ? 'storage-error' : 'invalid-save',
@@ -320,10 +330,8 @@ function App() {
   async function handleTeamSelection(team: Team): Promise<void> {
     if (snapshot === null || pendingOperation !== 'idle') return
 
-    const teamRoster = getTeamRoster(snapshot.league, team.id)
-
     if (snapshot.managedTeamId === team.id) {
-      setSelectedPlayerId(teamRoster[0]?.id ?? null)
+      setViewedPlayerId(null)
       setPersistenceError(null)
       setActivePageId('team-roster')
       setSetupView(null)
@@ -340,7 +348,7 @@ function App() {
         managedTeamId: team.id,
       })
       setSnapshot(updated)
-      setSelectedPlayerId(teamRoster[0]?.id ?? null)
+      setViewedPlayerId(null)
       setActivePageId('team-roster')
       setSetupView(null)
     } catch (error) {
@@ -355,17 +363,13 @@ function App() {
 
     setActivePageId(pageId)
     setSetupView(null)
+    setViewedPlayerId(null)
+  }
 
-    if (
-      pageId === 'team-roster' &&
-      league !== null &&
-      controlledTeam !== null &&
-      selectedPlayerId === null
-    ) {
-      setSelectedPlayerId(
-        getTeamRoster(league, controlledTeam.id)[0]?.id ?? null,
-      )
-    }
+  function handleOpenPlayer(playerId: PlayerId): void {
+    if (pendingOperation !== 'idle') return
+
+    setViewedPlayerId(playerId)
   }
 
   function handleMainMenu(): void {
@@ -373,6 +377,7 @@ function App() {
 
     setActivePageId(DEFAULT_PAGE_ID)
     setSetupView(null)
+    setViewedPlayerId(null)
   }
 
   function handleAuthoritativeAction(action: DashboardAction): void {
@@ -411,7 +416,7 @@ function App() {
   function handleChangeTeam(): void {
     if (pendingOperation !== 'idle') return
 
-    setSelectedPlayerId(null)
+    setViewedPlayerId(null)
     setActivePageId('team-roster')
     setSetupView('choose-team')
     setPersistenceError(null)
@@ -590,6 +595,15 @@ function App() {
           onSelectTeam={(team) => void handleTeamSelection(team)}
           onMainMenu={handleMainMenu}
         />
+      ) : viewedPlayer !== null && viewedPlayerTeam !== null ? (
+        <PlayerPageContent
+          player={viewedPlayer}
+          team={viewedPlayerTeam}
+          roster={viewedPlayerRoster}
+          busy={isBusy}
+          onBack={() => setViewedPlayerId(null)}
+          onSelectPlayer={setViewedPlayerId}
+        />
       ) : activePage.availability === 'planned' ? (
         <ComingLaterPage page={activePage} section={activeSection} />
       ) : (
@@ -606,12 +620,11 @@ function App() {
             pageId={activePage.id}
             snapshot={snapshot}
             controlledTeam={controlledTeam}
-            selectedPlayerId={selectedPlayerId}
             isBusy={isBusy}
             saveState={saveState}
             onNavigate={handleNavigate}
             onChangeTeam={handleChangeTeam}
-            onSelectPlayer={setSelectedPlayerId}
+            onOpenPlayer={handleOpenPlayer}
             onOpenGameResultPreview={
               DevGameResultPreview === null
                 ? undefined
@@ -628,12 +641,11 @@ interface AvailableWorkspacePageProps {
   readonly pageId: AvailableNavigationPageId
   readonly snapshot: LeagueSnapshot | null
   readonly controlledTeam: Team | null
-  readonly selectedPlayerId: PlayerId | null
   readonly isBusy: boolean
   readonly saveState: SaveIndicatorState | null
   readonly onNavigate: (pageId: NavigationPageId) => void
   readonly onChangeTeam: () => void
-  readonly onSelectPlayer: (playerId: PlayerId) => void
+  readonly onOpenPlayer: (playerId: PlayerId) => void
   readonly onOpenGameResultPreview?: () => void
 }
 
@@ -646,12 +658,11 @@ function AvailableWorkspacePage({
   pageId,
   snapshot,
   controlledTeam,
-  selectedPlayerId,
   isBusy,
   saveState,
   onNavigate,
   onChangeTeam,
-  onSelectPlayer,
+  onOpenPlayer,
   onOpenGameResultPreview,
 }: AvailableWorkspacePageProps) {
   const presentation = useMemo(
@@ -667,12 +678,11 @@ function AvailableWorkspacePage({
     snapshot,
     presentation,
     controlledTeam,
-    selectedPlayerId,
     isBusy,
     saveState,
     onNavigate,
     onChangeTeam,
-    onSelectPlayer,
+    onOpenPlayer,
     onOpenGameResultPreview,
   )
 }
@@ -682,12 +692,11 @@ function renderAvailablePage(
   snapshot: LeagueSnapshot | null,
   presentation: LeaguePresentationBundle | null,
   controlledTeam: Team | null,
-  selectedPlayerId: PlayerId | null,
   isBusy: boolean,
   saveState: SaveIndicatorState | null,
   onNavigate: (pageId: NavigationPageId) => void,
   onChangeTeam: () => void,
-  onSelectPlayer: (playerId: PlayerId) => void,
+  onOpenPlayer: (playerId: PlayerId) => void,
   onOpenGameResultPreview?: () => void,
 ) {
   switch (pageId) {
@@ -717,10 +726,30 @@ function renderAvailablePage(
         <TeamRosterContent
           league={snapshot?.league ?? null}
           team={controlledTeam}
-          selectedPlayerId={selectedPlayerId}
           busy={isBusy}
-          onSelectPlayer={onSelectPlayer}
+          onOpenPlayer={onOpenPlayer}
           onChangeTeam={onChangeTeam}
+        />
+      )
+    case 'team-rotation-gameplan':
+      return (
+        <RotationGameplanContent
+          league={snapshot?.league ?? null}
+          team={controlledTeam}
+        />
+      )
+    case 'team-health':
+      return (
+        <MedicalDepartmentContent
+          league={snapshot?.league ?? null}
+          team={controlledTeam}
+        />
+      )
+    case 'team-development':
+      return (
+        <CoachingDevelopmentContent
+          league={snapshot?.league ?? null}
+          team={controlledTeam}
         />
       )
     case 'schedule-team-schedule':

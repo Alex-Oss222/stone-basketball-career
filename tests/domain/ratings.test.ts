@@ -1,78 +1,14 @@
 import { describe, expect, expectTypeOf, it } from 'vitest'
-import {
-  RATING_GENERATION_VERSION,
-  RATING_KEYS,
-  isRatingKey,
-  isStoredRating,
-  parsePlayerRatings,
-  parseStoredRating,
-  ratingToGrade,
-} from '../../src/domain/ratings'
-import type {
-  Grade,
-  PlayerRatings,
-  RatingKey,
-} from '../../src/domain/ratings'
+import { ratingToGrade } from '../../src/domain/ratings'
+import type { Grade } from '../../src/domain/ratings'
 
-const VALID_PLAYER_RATINGS = {
-  insideScoring: 0,
-  midRangeShooting: 7,
-  threePointShooting: 14,
-  freeThrowShooting: 21,
-  passing: 28,
-  ballHandling: 35,
-  offensiveRebounding: 42,
-  defensiveRebounding: 49,
-  perimeterDefense: 56,
-  interiorDefense: 63,
-  stealing: 70,
-  blocking: 77,
-  speed: 84,
-  strength: 91,
-  endurance: 98,
-  basketballIQ: 100,
-} satisfies PlayerRatings
-
-describe('stored rating keys and types', () => {
-  it('exports the exact sixteen unique stored rating keys', () => {
-    expect(RATING_KEYS).toEqual([
-      'insideScoring',
-      'midRangeShooting',
-      'threePointShooting',
-      'freeThrowShooting',
-      'passing',
-      'ballHandling',
-      'offensiveRebounding',
-      'defensiveRebounding',
-      'perimeterDefense',
-      'interiorDefense',
-      'stealing',
-      'blocking',
-      'speed',
-      'strength',
-      'endurance',
-      'basketballIQ',
-    ])
-    expect(RATING_KEYS).toHaveLength(16)
-    expect(new Set(RATING_KEYS).size).toBe(16)
-    expect(RATING_KEYS.every(isRatingKey)).toBe(true)
-    expect(isRatingKey('finishing')).toBe(false)
-  })
-
-  it('pins the initial rating generation version', () => {
-    expect(RATING_GENERATION_VERSION).toBe(1)
-  })
-
-  it('defines PlayerRatings as a closed readonly record', () => {
-    expectTypeOf<RatingKey>().toEqualTypeOf<keyof PlayerRatings>()
-    expectTypeOf<
-      string extends keyof PlayerRatings ? true : false
-    >().toEqualTypeOf<false>()
-    expectTypeOf<PlayerRatings>().toEqualTypeOf<
-      Readonly<Record<RatingKey, number>>
-    >()
-  })
-
+/**
+ * The legacy 16-macro-rating model was removed with the §8B R4 version break;
+ * the stored model and its strict parser live in detailedRatings.ts and are
+ * covered by tests/domain/detailedRatings.test.ts. This file pins what
+ * remains here: the shared grade scale.
+ */
+describe('grade union', () => {
   it('defines the exact grade union', () => {
     expectTypeOf<Grade>().toEqualTypeOf<
       | 'A+'
@@ -89,56 +25,6 @@ describe('stored rating keys and types', () => {
       | 'D-'
       | 'F'
     >()
-  })
-})
-
-describe('stored rating parsing', () => {
-  it.each([0, 1, 50, 99, 100])('accepts integer rating %s unchanged', (rating) => {
-    expect(isStoredRating(rating)).toBe(true)
-    expect(parseStoredRating(rating)).toBe(rating)
-  })
-
-  it.each([
-    '50',
-    null,
-    undefined,
-    {},
-    [],
-    Number.NaN,
-    Number.POSITIVE_INFINITY,
-    Number.NEGATIVE_INFINITY,
-    50.5,
-    -1,
-    101,
-  ])('rejects invalid stored rating %#', (rating) => {
-    expect(isStoredRating(rating)).toBe(false)
-    expect(() => parseStoredRating(rating)).toThrow()
-  })
-
-  it('accepts a complete rating record in canonical key order', () => {
-    const parsed = parsePlayerRatings(VALID_PLAYER_RATINGS)
-
-    expect(parsed).toEqual(VALID_PLAYER_RATINGS)
-    expect(Object.keys(parsed)).toEqual(RATING_KEYS)
-  })
-
-  it.each(RATING_KEYS)('rejects a record missing %s', (missingKey) => {
-    const incomplete: Record<string, unknown> = { ...VALID_PLAYER_RATINGS }
-    delete incomplete[missingKey]
-
-    expect(() => parsePlayerRatings(incomplete)).toThrow(TypeError)
-  })
-
-  it('rejects extra fields, including a stored letter grade', () => {
-    expect(() =>
-      parsePlayerRatings({ ...VALID_PLAYER_RATINGS, grade: 'A' }),
-    ).toThrow(TypeError)
-  })
-
-  it('rejects an invalid value inside an otherwise complete record', () => {
-    expect(() =>
-      parsePlayerRatings({ ...VALID_PLAYER_RATINGS, speed: 72.5 }),
-    ).toThrow(RangeError)
   })
 })
 

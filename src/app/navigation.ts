@@ -71,7 +71,7 @@ export const NAVIGATION_SECTIONS = [
     pages: [
       {
         id: 'team-overview',
-        label: 'Overview',
+        label: "Coach's Chair",
         availability: 'available',
       },
       {
@@ -82,20 +82,17 @@ export const NAVIGATION_SECTIONS = [
       {
         id: 'team-rotation-gameplan',
         label: 'Rotation & Gameplan',
-        availability: 'planned',
-        requiredSystem: 'Requires rotation and gameplan systems.',
+        availability: 'available',
       },
       {
         id: 'team-health',
         label: 'Medical Department',
-        availability: 'planned',
-        requiredSystem: 'Requires player health and injury systems.',
+        availability: 'available',
       },
       {
         id: 'team-development',
         label: 'Coaching & Development',
-        availability: 'planned',
-        requiredSystem: 'Requires player development systems.',
+        availability: 'available',
       },
     ],
   },

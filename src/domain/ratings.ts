@@ -1,31 +1,11 @@
+/**
+ * The shared rating scale and derived letter-grade boundaries. The stored
+ * player model itself is the detailed 67-sub-rating record in
+ * `detailedRatings.ts` (ADR 0008) — the legacy 16-macro-rating model was
+ * removed with the §8B R4 version break.
+ */
 export const STORED_RATING_MIN = 0
 export const STORED_RATING_MAX = 100
-export const RATING_GENERATION_VERSION = 1 as const
-
-export type RatingGenerationVersion = typeof RATING_GENERATION_VERSION
-
-export const RATING_KEYS = [
-  'insideScoring',
-  'midRangeShooting',
-  'threePointShooting',
-  'freeThrowShooting',
-  'passing',
-  'ballHandling',
-  'offensiveRebounding',
-  'defensiveRebounding',
-  'perimeterDefense',
-  'interiorDefense',
-  'stealing',
-  'blocking',
-  'speed',
-  'strength',
-  'endurance',
-  'basketballIQ',
-] as const
-
-export type RatingKey = (typeof RATING_KEYS)[number]
-
-export type PlayerRatings = Readonly<Record<RatingKey, number>>
 
 export type Grade =
   | 'A+'
@@ -42,56 +22,7 @@ export type Grade =
   | 'D-'
   | 'F'
 
-const RATING_KEY_SET: ReadonlySet<string> = new Set(RATING_KEYS)
-
-export function isRatingKey(value: unknown): value is RatingKey {
-  return typeof value === 'string' && RATING_KEY_SET.has(value)
-}
-
-export function isStoredRating(value: unknown): value is number {
-  return (
-    typeof value === 'number' &&
-    Number.isFinite(value) &&
-    Number.isInteger(value) &&
-    value >= STORED_RATING_MIN &&
-    value <= STORED_RATING_MAX
-  )
-}
-
-/** Validates one persisted rating without coercing or clamping it. */
-export function parseStoredRating(value: unknown): number {
-  if (typeof value !== 'number') {
-    throw new TypeError('Stored rating must be a number')
-  }
-  if (!isStoredRating(value)) {
-    throw new RangeError(
-      `Stored rating must be a finite integer from ${STORED_RATING_MIN} through ${STORED_RATING_MAX}`,
-    )
-  }
-  return value
-}
-
-/** Validates the exact persisted 16-rating record and rejects extra fields. */
-export function parsePlayerRatings(value: unknown): PlayerRatings {
-  if (value === null || typeof value !== 'object' || Array.isArray(value)) {
-    throw new TypeError('Player ratings must be an object')
-  }
-
-  const ownKeys = Reflect.ownKeys(value)
-  if (
-    ownKeys.length !== RATING_KEYS.length ||
-    ownKeys.some((key) => !isRatingKey(key))
-  ) {
-    throw new TypeError('Player ratings must contain exactly the stored rating keys')
-  }
-
-  const source = value as Record<RatingKey, unknown>
-  return Object.fromEntries(
-    RATING_KEYS.map((key) => [key, parseStoredRating(source[key])]),
-  ) as PlayerRatings
-}
-
-/** Converts a numeric rating or future decimal category score to a derived grade. */
+/** Converts a numeric rating or decimal derived category score to a grade. */
 export function ratingToGrade(rating: number): Grade {
   if (typeof rating !== 'number' || !Number.isFinite(rating)) {
     throw new TypeError('Rating must be a finite number')

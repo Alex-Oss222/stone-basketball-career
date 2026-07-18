@@ -123,6 +123,8 @@ function adaptLeague(source: LeagueSnapshotLeagueDto): League {
   const league = Object.freeze({
     id: parseLeagueId(source.id),
     generatorVersion: source.generatorVersion,
+    detailedRatingsSchemaVersion: source.detailedRatingsSchemaVersion,
+    categoryDefinitionVersion: source.categoryDefinitionVersion,
     seedFingerprint: source.seedFingerprint,
     teams: Object.freeze(source.teams.map(adaptTeam)),
     players: Object.freeze(source.players.map(adaptPlayer)),

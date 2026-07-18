@@ -1,48 +1,57 @@
 import type { TeamId } from '../domain/ids'
 import type { League, Player } from '../domain/league'
 export { formatTeamName } from '../domain/league'
-import { RATING_KEYS, ratingToGrade } from '../domain/ratings'
+import {
+  DETAILED_CATEGORY_DEFINITIONS,
+  deriveCategoryScore,
+} from '../domain/detailedRatings'
 import type {
-  Grade,
-  PlayerRatings,
-  RatingKey,
-} from '../domain/ratings'
-
-export const RATING_LABELS = {
-  insideScoring: 'Inside scoring',
-  midRangeShooting: 'Mid-range shooting',
-  threePointShooting: 'Three-point shooting',
-  freeThrowShooting: 'Free-throw shooting',
-  passing: 'Passing',
-  ballHandling: 'Ball handling',
-  offensiveRebounding: 'Offensive rebounding',
-  defensiveRebounding: 'Defensive rebounding',
-  perimeterDefense: 'Perimeter defense',
-  interiorDefense: 'Interior defense',
-  stealing: 'Stealing',
-  blocking: 'Blocking',
-  speed: 'Speed',
-  strength: 'Strength',
-  endurance: 'Endurance',
-  basketballIQ: 'Basketball IQ',
-} as const satisfies Readonly<Record<RatingKey, string>>
+  DetailedCategoryGroup,
+  DetailedCategoryKey,
+  DetailedPlayerRatings,
+} from '../domain/detailedRatings'
+import { ratingToGrade } from '../domain/ratings'
+import type { Grade } from '../domain/ratings'
 
 export interface RatingDisplayRow {
-  readonly key: RatingKey
+  readonly key: DetailedCategoryKey
   readonly label: string
+  readonly group: DetailedCategoryGroup
+  /** Rounded for display only; the grade derives from the unrounded score. */
   readonly value: number
   readonly grade: Grade
 }
 
+const displayRowCache = new WeakMap<
+  DetailedPlayerRatings,
+  readonly RatingDisplayRow[]
+>()
+
+/**
+ * The 18 derived category rows in registry order — display data, never
+ * stored. Memoized per ratings reference; the cache is implicitly keyed by
+ * CATEGORY_DEFINITION_VERSION because a definition change ships new code.
+ */
 export function createRatingDisplayRows(
-  ratings: PlayerRatings,
+  ratings: DetailedPlayerRatings,
 ): readonly RatingDisplayRow[] {
-  return RATING_KEYS.map((key) => ({
-    key,
-    label: RATING_LABELS[key],
-    value: ratings[key],
-    grade: ratingToGrade(ratings[key]),
-  }))
+  const cached = displayRowCache.get(ratings)
+  if (cached !== undefined) {
+    return cached
+  }
+
+  const rows = DETAILED_CATEGORY_DEFINITIONS.map((definition) => {
+    const score = deriveCategoryScore(ratings, definition.key)
+    return {
+      key: definition.key,
+      label: definition.label,
+      group: definition.group,
+      value: Math.round(score),
+      grade: ratingToGrade(score),
+    }
+  })
+  displayRowCache.set(ratings, rows)
+  return rows
 }
 
 export function getTeamRoster(

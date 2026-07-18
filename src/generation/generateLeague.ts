@@ -5,7 +5,6 @@ import {
 import { FICTIONAL_TEAM_IDENTITIES } from '../data/fictional/teamIdentities'
 import type { FictionalTeamIdentity } from '../data/fictional/teamIdentities'
 import { parseLeagueId, parsePlayerId, parseTeamId } from '../domain/ids'
-import type { PlayerId } from '../domain/ids'
 import {
   JERSEY_NUMBER_MAX,
   JERSEY_NUMBER_MIN,
@@ -24,126 +23,25 @@ import type {
 } from '../domain/league'
 import { assertValidLeague } from '../domain/leagueValidation'
 import {
-  RATING_GENERATION_VERSION,
-  RATING_KEYS,
-  STORED_RATING_MAX,
-  STORED_RATING_MIN,
-  parsePlayerRatings,
-  parseStoredRating,
-} from '../domain/ratings'
-import type { PlayerRatings, RatingKey } from '../domain/ratings'
+  CATEGORY_DEFINITION_VERSION,
+  DETAILED_RATING_GENERATION_VERSION,
+  DETAILED_RATINGS_SCHEMA_VERSION,
+} from '../domain/detailedRatings'
 import type { RandomSource } from '../random/randomSource'
 import { deriveSeed, normalizeSeed } from '../random/seed'
 import { createRandomSource } from '../random/xoshiro128ss'
+import { generateDetailedPlayerRatings } from './generateDetailedRatings'
 
 export const LEAGUE_GENERATOR_VERSION = 1 as const
 export const LEAGUE_RANDOM_STREAM_LABEL = 'league/v1' as const
-export const RATING_RANDOM_STREAM_NAMESPACE = 'player-rating' as const
 
 const SEED_FINGERPRINT_LENGTH = 8
-const BASE_TALENT_MIN = 45
-const BASE_TALENT_MAX = 82
-const RATING_JITTER = 10
 
-type RatingProfile = Readonly<Record<RatingKey, number>>
 type RandomSourceFactory = (seed: string) => RandomSource
 
 interface FictionalPlayerName {
   readonly firstName: string
   readonly lastName: string
-}
-
-const POSITION_RATING_BIASES: Readonly<Record<Position, RatingProfile>> = {
-  PG: {
-    insideScoring: 0,
-    midRangeShooting: 3,
-    threePointShooting: 4,
-    freeThrowShooting: 4,
-    passing: 10,
-    ballHandling: 10,
-    offensiveRebounding: -9,
-    defensiveRebounding: -6,
-    perimeterDefense: 6,
-    interiorDefense: -10,
-    stealing: 6,
-    blocking: -10,
-    speed: 9,
-    strength: -7,
-    endurance: 3,
-    basketballIQ: 6,
-  },
-  SG: {
-    insideScoring: 2,
-    midRangeShooting: 5,
-    threePointShooting: 8,
-    freeThrowShooting: 5,
-    passing: 2,
-    ballHandling: 5,
-    offensiveRebounding: -7,
-    defensiveRebounding: -3,
-    perimeterDefense: 4,
-    interiorDefense: -7,
-    stealing: 3,
-    blocking: -7,
-    speed: 7,
-    strength: -4,
-    endurance: 3,
-    basketballIQ: 3,
-  },
-  SF: {
-    insideScoring: 4,
-    midRangeShooting: 3,
-    threePointShooting: 3,
-    freeThrowShooting: 2,
-    passing: 0,
-    ballHandling: 0,
-    offensiveRebounding: 0,
-    defensiveRebounding: 2,
-    perimeterDefense: 2,
-    interiorDefense: 0,
-    stealing: 1,
-    blocking: 0,
-    speed: 3,
-    strength: 2,
-    endurance: 2,
-    basketballIQ: 1,
-  },
-  PF: {
-    insideScoring: 7,
-    midRangeShooting: 0,
-    threePointShooting: -4,
-    freeThrowShooting: -1,
-    passing: -3,
-    ballHandling: -5,
-    offensiveRebounding: 7,
-    defensiveRebounding: 8,
-    perimeterDefense: -2,
-    interiorDefense: 7,
-    stealing: -2,
-    blocking: 5,
-    speed: -3,
-    strength: 8,
-    endurance: 1,
-    basketballIQ: 0,
-  },
-  C: {
-    insideScoring: 9,
-    midRangeShooting: -5,
-    threePointShooting: -10,
-    freeThrowShooting: -4,
-    passing: -6,
-    ballHandling: -10,
-    offensiveRebounding: 11,
-    defensiveRebounding: 12,
-    perimeterDefense: -8,
-    interiorDefense: 12,
-    stealing: -5,
-    blocking: 12,
-    speed: -7,
-    strength: 11,
-    endurance: 0,
-    basketballIQ: 0,
-  },
 }
 
 const SECONDARY_POSITION_OPTIONS: Readonly<
@@ -218,6 +116,8 @@ export function generateLeagueWithRandomSource(
   const league: League = {
     id: parseLeagueId(`league_${seedFingerprint}`),
     generatorVersion: LEAGUE_GENERATOR_VERSION,
+    detailedRatingsSchemaVersion: DETAILED_RATINGS_SCHEMA_VERSION,
+    categoryDefinitionVersion: CATEGORY_DEFINITION_VERSION,
     seedFingerprint,
     teams,
     players,
@@ -280,8 +180,8 @@ function createPlayers(
         jerseyNumber: jerseyNumbers[rosterIndex],
         primaryPosition,
         secondaryPosition,
-        ratingGenerationVersion: RATING_GENERATION_VERSION,
-        ratings: createRatings(
+        ratingGenerationVersion: DETAILED_RATING_GENERATION_VERSION,
+        ratings: generateDetailedPlayerRatings(
           leagueSeed,
           playerId,
           primaryPosition,
@@ -315,57 +215,6 @@ function createSecondaryPosition(
 
   const options = SECONDARY_POSITION_OPTIONS[primaryPosition]
   return options[random.nextInt(options.length)]
-}
-
-function createRatings(
-  leagueSeed: string,
-  playerId: PlayerId,
-  position: Position,
-  createRatingRandomSource: RandomSourceFactory,
-): PlayerRatings {
-  return parsePlayerRatings(
-    Object.fromEntries(
-      RATING_KEYS.map((ratingKey) => [
-        ratingKey,
-        generatePlayerRating(
-          leagueSeed,
-          playerId,
-          position,
-          ratingKey,
-          createRatingRandomSource,
-        ),
-      ]),
-    ),
-  )
-}
-
-export function derivePlayerRatingSeed(
-  leagueSeed: string,
-  playerId: PlayerId,
-  ratingKey: RatingKey,
-): string {
-  const label = `${RATING_RANDOM_STREAM_NAMESPACE}/v${RATING_GENERATION_VERSION}/${playerId}/${ratingKey}`
-  return deriveSeed(leagueSeed, label)
-}
-
-export function generatePlayerRating(
-  leagueSeed: string,
-  playerId: PlayerId,
-  position: Position,
-  ratingKey: RatingKey,
-  createRatingRandomSource: RandomSourceFactory = createRandomSource,
-): number {
-  const random = createRatingRandomSource(
-    derivePlayerRatingSeed(leagueSeed, playerId, ratingKey),
-  )
-  const value =
-    randomInteger(BASE_TALENT_MIN, BASE_TALENT_MAX, random) +
-    POSITION_RATING_BIASES[position][ratingKey] +
-    randomInteger(-RATING_JITTER, RATING_JITTER, random)
-
-  return parseStoredRating(
-    clamp(value, STORED_RATING_MIN, STORED_RATING_MAX),
-  )
 }
 
 function createTendencies(

@@ -7,9 +7,9 @@ import {
   validateLeague,
 } from '../../src/domain/leagueValidation'
 import {
-  RATING_GENERATION_VERSION,
-  RATING_KEYS,
-} from '../../src/domain/ratings'
+  DETAILED_RATING_GENERATION_VERSION,
+  SUB_RATING_KEYS,
+} from '../../src/domain/detailedRatings'
 import { generateLeague } from '../../src/generation/generateLeague'
 
 const validLeague = generateLeague('league-validation-fixture')
@@ -98,9 +98,28 @@ describe('validateLeague', () => {
     expect(
       validLeague.players.every(
         (player) =>
-          player.ratingGenerationVersion === RATING_GENERATION_VERSION,
+          player.ratingGenerationVersion === DETAILED_RATING_GENERATION_VERSION,
       ),
     ).toBe(true)
+  })
+
+  it('rejects invalid league-level detailed-rating versions', () => {
+    const wrongSchema: League = {
+      ...validLeague,
+      detailedRatingsSchemaVersion:
+        2 as League['detailedRatingsSchemaVersion'],
+    }
+    const wrongDefinition: League = {
+      ...validLeague,
+      categoryDefinitionVersion: 0 as League['categoryDefinitionVersion'],
+    }
+
+    expect(issueCodes(wrongSchema)).toContain(
+      'league.detailed_ratings_schema_version.invalid',
+    )
+    expect(issueCodes(wrongDefinition)).toContain(
+      'league.category_definition_version.invalid',
+    )
   })
 
   it.each([undefined, 0, 2, 1.5, '1', Number.NaN])(
@@ -117,7 +136,7 @@ describe('validateLeague', () => {
     },
   )
 
-  it.each(RATING_KEYS)('rejects ratings missing %s', (ratingKey) => {
+  it.each(SUB_RATING_KEYS)('rejects ratings missing %s', (ratingKey) => {
     const invalid = replaceRatings(validLeague, (ratings) => {
       delete ratings[ratingKey]
     })
@@ -143,7 +162,7 @@ describe('validateLeague', () => {
     { name: 'a value above one hundred', value: 101 },
   ])('rejects $name stored rating', ({ value }) => {
     const invalid = replaceRatings(validLeague, (ratings) => {
-      ratings.insideScoring = value
+      ratings.standingFinish = value
     })
 
     expect(issueCodes(invalid)).toContain('player.rating.invalid')

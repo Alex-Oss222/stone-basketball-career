@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { RATING_KEYS } from '../../src/domain/ratings'
+import { deriveVersionedOverall } from '../../src/domain/playerDerivations'
+import type { Player } from '../../src/domain/league'
 import { generateLeague } from '../../src/generation/generateLeague'
 import {
   createHomeHeaderSummary,
@@ -8,6 +9,16 @@ import {
 import { formatTeamName } from '../../src/domain/league'
 
 const league = generateLeague('home-view-model-fixture')
+
+/** The documented formula: rounded mean of versioned position-weighted overalls. */
+function expectedTeamAverage(roster: readonly Player[]): number {
+  const overallSum = roster.reduce(
+    (total, player) =>
+      total + deriveVersionedOverall(player.ratings, player.primaryPosition),
+    0,
+  )
+  return Math.round(overallSum / roster.length)
+}
 
 describe('home header summary', () => {
   it('derives only facts that exist today: identity, roster, stored ratings', () => {
@@ -24,15 +35,7 @@ describe('home header summary', () => {
     expect(summary?.rosterSize).toBe(12)
     expect(summary?.rosterCapacity).toBe(12)
 
-    const expectedAverage = Math.round(
-      roster.reduce(
-        (total, player) =>
-          total + RATING_KEYS.reduce((sum, key) => sum + player.ratings[key], 0),
-        0,
-      ) /
-        (roster.length * RATING_KEYS.length),
-    )
-    expect(summary?.averageRating).toBe(expectedAverage)
+    expect(summary?.averageRating).toBe(expectedTeamAverage(roster))
     expect(
       Object.values(summary?.positionCounts ?? {}).reduce(
         (total, count) => total + count,
@@ -71,21 +74,14 @@ describe('home header summary', () => {
 })
 
 describe('team average rating', () => {
-  it('is a transparent rounded mean over every stored rating, per team', () => {
+  it('is a transparent rounded mean of derived category scores, per team', () => {
     for (const team of league.teams) {
       const roster = league.players.filter(
         (player) => player.teamId === team.id,
       )
-      const expected = Math.round(
-        roster.reduce(
-          (total, player) =>
-            total +
-            RATING_KEYS.reduce((sum, key) => sum + player.ratings[key], 0),
-          0,
-        ) /
-          (roster.length * RATING_KEYS.length),
+      expect(deriveTeamAverageRating(league, team.id)).toBe(
+        expectedTeamAverage(roster),
       )
-      expect(deriveTeamAverageRating(league, team.id)).toBe(expected)
     }
   })
 

@@ -20,18 +20,22 @@ import {
 } from '../../src/domain/league'
 import { validateLeague } from '../../src/domain/leagueValidation'
 import {
-  RATING_GENERATION_VERSION,
-  RATING_KEYS,
-  STORED_RATING_MAX,
-  STORED_RATING_MIN,
-} from '../../src/domain/ratings'
+  DETAILED_CATEGORY_KEYS,
+  DETAILED_RATING_GENERATION_VERSION,
+  DETAILED_RATING_MAX,
+  DETAILED_RATING_MIN,
+  SUB_RATING_KEYS,
+} from '../../src/domain/detailedRatings'
+import {
+  deriveDetailedCategorySeed,
+  deriveDetailedQualitySeed,
+  deriveDetailedSkillSeed,
+  generateDetailedRating,
+} from '../../src/generation/generateDetailedRatings'
 import {
   LEAGUE_RANDOM_STREAM_LABEL,
-  RATING_RANDOM_STREAM_NAMESPACE,
-  derivePlayerRatingSeed,
   generateLeague,
   generateLeagueWithRandomSource,
-  generatePlayerRating,
 } from '../../src/generation/generateLeague'
 import { deriveSeed, normalizeSeed } from '../../src/random/seed'
 import { createRandomSource } from '../../src/random/xoshiro128ss'
@@ -58,7 +62,7 @@ describe('generateLeague determinism', () => {
     expect(generateLeagueWithRandomSource(normalizedSeed, random)).toEqual(league)
   })
 
-  it('derives one unique versioned stream for every player rating field', () => {
+  it('draws every rating from the three labeled detailed streams only', () => {
     const normalizedSeed = normalizeSeed(FIXTURE_SEED)
     const leagueSeed = deriveSeed(normalizedSeed, LEAGUE_RANDOM_STREAM_LABEL)
     const random = createRandomSource(leagueSeed)
@@ -71,22 +75,22 @@ describe('generateLeague determinism', () => {
         return createRandomSource(ratingSeed)
       },
     )
-    const expectedRatingSeeds = generated.players.flatMap((player) =>
-      RATING_KEYS.map((ratingKey) =>
-        derivePlayerRatingSeed(leagueSeed, player.id, ratingKey),
-      ),
+    const expectedSeeds = new Set(
+      generated.players.flatMap((player) => [
+        deriveDetailedQualitySeed(leagueSeed, player.id),
+        ...DETAILED_CATEGORY_KEYS.map((categoryKey) =>
+          deriveDetailedCategorySeed(leagueSeed, player.id, categoryKey),
+        ),
+        ...SUB_RATING_KEYS.map((subRatingKey) =>
+          deriveDetailedSkillSeed(leagueSeed, player.id, subRatingKey),
+        ),
+      ]),
     )
 
-    expect(observedRatingSeeds).toEqual(expectedRatingSeeds)
-    expect(observedRatingSeeds).toHaveLength(
-      LEAGUE_PLAYER_COUNT * RATING_KEYS.length,
-    )
-    expect(new Set(observedRatingSeeds).size).toBe(observedRatingSeeds.length)
-    expect(observedRatingSeeds[0]).toBe(
-      deriveSeed(
-        leagueSeed,
-        `${RATING_RANDOM_STREAM_NAMESPACE}/v${RATING_GENERATION_VERSION}/${generated.players[0].id}/${RATING_KEYS[0]}`,
-      ),
+    // Quality + 18 category + 67 skill streams per player, nothing else.
+    expect(new Set(observedRatingSeeds)).toEqual(expectedSeeds)
+    expect(expectedSeeds.size).toBe(
+      LEAGUE_PLAYER_COUNT * (1 + DETAILED_CATEGORY_KEYS.length + SUB_RATING_KEYS.length),
     )
   })
 
@@ -97,24 +101,24 @@ describe('generateLeague determinism', () => {
     )
     const player = league.players[0]
     const forward = Object.fromEntries(
-      RATING_KEYS.map((ratingKey) => [
-        ratingKey,
-        generatePlayerRating(
+      SUB_RATING_KEYS.map((subRatingKey) => [
+        subRatingKey,
+        generateDetailedRating(
           leagueSeed,
           player.id,
           player.primaryPosition,
-          ratingKey,
+          subRatingKey,
         ),
       ]),
     )
     const reverse = Object.fromEntries(
-      [...RATING_KEYS].reverse().map((ratingKey) => [
-        ratingKey,
-        generatePlayerRating(
+      [...SUB_RATING_KEYS].reverse().map((subRatingKey) => [
+        subRatingKey,
+        generateDetailedRating(
           leagueSeed,
           player.id,
           player.primaryPosition,
-          ratingKey,
+          subRatingKey,
         ),
       ]),
     )
@@ -155,22 +159,29 @@ describe('generateLeague determinism', () => {
         secondaryPosition: null,
         ratingGenerationVersion: 1,
         ratings: {
-          insideScoring: 98,
-          midRangeShooting: 48,
-          threePointShooting: 41,
-          freeThrowShooting: 46,
-          passing: 42,
-          ballHandling: 55,
-          offensiveRebounding: 86,
-          defensiveRebounding: 55,
-          perimeterDefense: 55,
-          interiorDefense: 79,
-          stealing: 55,
-          blocking: 92,
-          speed: 53,
-          strength: 91,
-          endurance: 62,
-          basketballIQ: 52,
+          standingFinish: 93, drivingLayup: 98, contactFinishing: 96,
+          dunking: 89, postFinishing: 89, catchAndShootMid: 71, pullUpMid: 65,
+          contestedMid: 69, postFadeaway: 67, catchAndShootThree: 62,
+          pullUpThree: 68, movementThree: 69, contestedThree: 70,
+          freeThrowAccuracy: 78, freeThrowConsistency: 84,
+          pressureFreeThrows: 76, passAccuracy: 70, courtVision: 70,
+          passTiming: 71, dribbleControl: 79, ballSecurity: 76,
+          changeOfDirection: 80, pressureHandling: 75,
+          offensivePositioning: 83, reboundPursuit: 86, reboundReading: 98,
+          secondJump: 83, defensivePositioning: 97, boxOutTechnique: 92,
+          reboundSecurity: 92, onBallContainment: 82, lateralRecovery: 83,
+          screenNavigation: 82, closeoutControl: 78, postContainment: 87,
+          rimDeterrence: 94, helpRotation: 87, paintPositioning: 95,
+          onBallSteal: 82, passingLaneAnticipation: 85, deflectionTiming: 81,
+          stripTechnique: 85, blockTiming: 96, verticalContest: 98,
+          helpSideBlocking: 92, recoveryBlocking: 99, acceleration: 81,
+          topSpeed: 71, lateralQuickness: 81, agility: 72,
+          lowerBodyStrength: 89, upperBodyStrength: 100, contactBalance: 95,
+          physicalLeverage: 89, stamina: 84, recoveryRate: 86,
+          workloadCapacity: 85, lateGameConditioning: 82,
+          injuryResistance: 70, loadDurability: 74, offensiveAwareness: 79,
+          defensiveAwareness: 79, decisionMaking: 86, competitiveness: 84,
+          coachability: 82, composure: 82, workEthic: 75,
         },
         tendencies: {
           usage: 47,
@@ -310,13 +321,15 @@ describe('generated player rules', () => {
       ).toBe(true)
 
       expect(Object.keys(player.ratings).sort()).toEqual(
-        [...RATING_KEYS].sort(),
+        [...SUB_RATING_KEYS].sort(),
       )
-      expect(player.ratingGenerationVersion).toBe(RATING_GENERATION_VERSION)
+      expect(player.ratingGenerationVersion).toBe(
+        DETAILED_RATING_GENERATION_VERSION,
+      )
       for (const rating of Object.values(player.ratings)) {
         expect(Number.isInteger(rating)).toBe(true)
-        expect(rating).toBeGreaterThanOrEqual(STORED_RATING_MIN)
-        expect(rating).toBeLessThanOrEqual(STORED_RATING_MAX)
+        expect(rating).toBeGreaterThanOrEqual(DETAILED_RATING_MIN)
+        expect(rating).toBeLessThanOrEqual(DETAILED_RATING_MAX)
       }
 
       expect(player.tendencies.usage).toBeGreaterThanOrEqual(1)

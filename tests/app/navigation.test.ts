@@ -37,7 +37,7 @@ const EXPECTED_HIERARCHY = [
     id: 'team',
     label: 'Team',
     pages: [
-      { id: 'team-overview', label: 'Overview' },
+      { id: 'team-overview', label: "Coach's Chair" },
       { id: 'team-roster', label: 'Roster' },
       { id: 'team-rotation-gameplan', label: 'Rotation & Gameplan' },
       { id: 'team-health', label: 'Medical Department' },
@@ -115,6 +115,9 @@ const AVAILABLE_PAGE_IDS = [
   'home-today',
   'team-overview',
   'team-roster',
+  'team-rotation-gameplan',
+  'team-health',
+  'team-development',
   'schedule-team-schedule',
   'schedule-calendar',
   'league-overview',
@@ -145,7 +148,7 @@ describe('central navigation registry', () => {
     }
   })
 
-  it('marks exactly the eight implemented pages available', () => {
+  it('marks exactly the eleven implemented pages available', () => {
     const pages = allPages()
 
     expect(

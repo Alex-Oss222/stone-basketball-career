@@ -16,7 +16,7 @@ function managedTeam(snapshot: LeagueSnapshot): Team {
   return team
 }
 
-describe('Team Overview rendering', () => {
+describe("Coach's Chair rendering", () => {
   it('describes the empty state with no team', () => {
     const markup = renderToStaticMarkup(
       <TeamOverviewContent snapshot={null} team={null} />,
@@ -24,32 +24,28 @@ describe('Team Overview rendering', () => {
     expect(markup).toContain('No team selected')
   })
 
-  it('renders the Evergreens panel set with the two swapped panels', () => {
+  it('renders the command-center panel set', () => {
     const snapshot = createLeagueSnapshotFixture()
     const markup = renderToStaticMarkup(
       <TeamOverviewContent snapshot={snapshot} team={managedTeam(snapshot)} />,
     )
 
     for (const panel of [
-      'Needs Attention',
-      'Starting Five / Rotation',
-      'Team Strengths', // '&' is HTML-escaped in static markup
-      'Health Summary',
-      'Development Watch',
-      'Roster Breakdown', // swapped into the Recent Form slot
-      'Team Metrics', // swapped into the Cap & Asset slot
-      'Upcoming Games',
+      'Next Decision Point',
+      'Opponent Prep',
+      'Decision Stack',
+      'Workload context, not a game list',
+      'Team Pulse',
+      'Lineup Reality',
+      'Last 10 Games',
+      'Cross-Department Conflicts',
       'Recent Transactions / News',
     ]) {
       expect(markup).toContain(panel)
     }
-
-    // The two removed panels must not appear.
-    expect(markup).not.toContain('Recent Form')
-    expect(markup).not.toContain('Asset')
   })
 
-  it('shows real identity, rating, and roster-composition data', () => {
+  it('shows real identity, rating, and real schedule pressure', () => {
     const snapshot = createLeagueSnapshotFixture()
     const team = managedTeam(snapshot)
     const markup = renderToStaticMarkup(
@@ -58,8 +54,8 @@ describe('Team Overview rendering', () => {
 
     expect(markup).toContain(formatTeamName(team))
     expect(markup).toContain('Team Rating')
-    // Roster-breakdown donut labels its real total.
-    expect(markup).toContain('Players')
+    // Schedule pressure renders real upcoming games with honest workload slots.
+    expect(markup).toContain('Workload —')
   })
 
   it('renders live navigation entry points only when onNavigate is provided', () => {
@@ -77,9 +73,10 @@ describe('Team Overview rendering', () => {
     )
 
     for (const action of [
-      'Review Rotation',
-      'View Development',
-      'View Health',
+      'Open Rotation',
+      'Open Medical',
+      'Open Development',
+      'View Rotation',
       'View Full Schedule',
     ]) {
       expect(withNavigate).toContain(action)

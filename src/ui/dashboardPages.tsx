@@ -1,33 +1,95 @@
-import { useId, useState } from 'react'
+import { useEffect, useId, useRef, useState } from 'react'
 import type { PlayerId, TeamId } from '../domain/ids'
 import { POSITIONS, isPosition } from '../domain/league'
-import type { League, Player, Team } from '../domain/league'
+import type { League, Team } from '../domain/league'
 import { filterLeaguePlayers } from '../app/dashboardViewModel'
 import type { PlayerPositionFilter } from '../app/dashboardViewModel'
+import { deriveVersionedOverall } from '../domain/playerDerivations'
 import {
-  createRatingDisplayRows,
   formatPlayerName,
   formatTeamName,
   getTeamRoster,
 } from './leagueViewModel'
+import { PlayerQuickView } from './playerQuickView'
+import { RosterDepthChart } from './rosterDepthChart'
 
 export interface TeamRosterContentProps {
   readonly league: League | null
   readonly team: Team | null
-  readonly selectedPlayerId: PlayerId | null
   readonly busy: boolean
-  readonly onSelectPlayer: (playerId: PlayerId) => void
+  /** Clicking a player opens the full player page. */
+  readonly onOpenPlayer: (playerId: PlayerId) => void
   readonly onChangeTeam: () => void
+  /** Dev/test convenience only; the tab is transient UI state. */
+  readonly initialTab?: 'players' | 'depth'
 }
 
 export function TeamRosterContent({
   league,
   team,
-  selectedPlayerId,
   busy,
-  onSelectPlayer,
+  onOpenPlayer,
   onChangeTeam,
+  initialTab = 'players',
 }: TeamRosterContentProps) {
+  /** Hover/focus preview — transient UI state, never persisted. The popover
+   * anchors to the hovered row so it appears beside the cursor, clamped so it
+   * never runs past the bottom of the roster panel. Dwelling for a few
+   * seconds pins it: it stays put, becomes interactive, and gains the Health
+   * and Development tabs. */
+  const [preview, setPreview] = useState<{
+    readonly playerId: PlayerId
+    readonly top: number
+  } | null>(null)
+  const [isPinned, setIsPinned] = useState(false)
+  const [rosterTab, setRosterTab] = useState<'players' | 'depth'>(initialTab)
+  const rosterPanelRef = useRef<HTMLDivElement>(null)
+  const previewPlayerId = preview?.playerId ?? null
+
+  useEffect(() => {
+    if (previewPlayerId === null) {
+      setIsPinned(false)
+      return
+    }
+    const timer = window.setTimeout(
+      () => setIsPinned(true),
+      QUICK_VIEW_PIN_DELAY_MS,
+    )
+    return () => window.clearTimeout(timer)
+  }, [previewPlayerId])
+
+  useEffect(() => {
+    if (!isPinned) return
+    function onKeyDown(event: KeyboardEvent): void {
+      if (event.key === 'Escape') {
+        setIsPinned(false)
+        setPreview(null)
+      }
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [isPinned])
+
+  function showPreview(playerId: PlayerId, anchor: HTMLElement): void {
+    const panel = rosterPanelRef.current
+    if (panel === null) {
+      setPreview({ playerId, top: 0 })
+      return
+    }
+    // Track the hovered row, but shift up as needed so the whole popover
+    // stays inside the visible viewport.
+    const panelTop = panel.getBoundingClientRect().top
+    const rowTop = anchor.getBoundingClientRect().top
+    const highestVisibleTop = window.innerHeight - POPOVER_CLEARANCE
+    const top = Math.max(8, Math.min(rowTop, highestVisibleTop) - panelTop)
+    setPreview({ playerId, top })
+  }
+
+  function closeQuickView(): void {
+    setIsPinned(false)
+    setPreview(null)
+  }
+
   if (league === null) {
     return (
       <section
@@ -61,8 +123,8 @@ export function TeamRosterContent({
   }
 
   const roster = getTeamRoster(league, team.id)
-  const selectedPlayer =
-    roster.find((player) => player.id === selectedPlayerId) ?? null
+  const previewPlayer =
+    roster.find((player) => player.id === preview?.playerId) ?? null
 
   return (
     <div
@@ -94,14 +156,60 @@ export function TeamRosterContent({
           <p className="eyebrow">Controlled team · {team.abbreviation}</p>
           <h2 id="team-roster-heading">{formatTeamName(team)}</h2>
           <p className="section-intro">
-            Select a player to inspect every stored rating and its derived
-            grade.
+            Hover a player to preview them; click a player to open their full
+            page.
           </p>
         </div>
       </div>
 
-      <div className="roster-layout">
-        <div className="roster-panel">
+      <nav className="player-page-tabs roster-tabs" aria-label="Roster sections">
+        <button
+          type="button"
+          className="player-tab"
+          aria-current={rosterTab === 'players'}
+          onClick={() => setRosterTab('players')}
+        >
+          Players
+        </button>
+        <button
+          type="button"
+          className="player-tab"
+          aria-current={rosterTab === 'depth'}
+          onClick={() => setRosterTab('depth')}
+        >
+          Depth &amp; Roles
+        </button>
+        {/* DEFERRED(later): Contracts and Compare need their systems. */}
+        <button
+          type="button"
+          className="player-tab"
+          disabled
+          title="Contract details arrive with the financial model."
+        >
+          Contracts <span className="coming-later-marker">Coming later</span>
+        </button>
+        <button
+          type="button"
+          className="player-tab"
+          disabled
+          title="Player comparison arrives later."
+        >
+          Compare <span className="coming-later-marker">Coming later</span>
+        </button>
+      </nav>
+
+      {rosterTab === 'depth' ? (
+        <div className="roster-depth-tab">
+          <RosterDepthChart roster={roster} />
+        </div>
+      ) : (
+        <div
+          className="roster-panel"
+          ref={rosterPanelRef}
+          onMouseLeave={() => {
+            if (!isPinned) setPreview(null)
+          }}
+        >
           <div className="panel-heading">
             <div>
               <p className="panel-kicker">Active roster</p>
@@ -123,70 +231,121 @@ export function TeamRosterContent({
               <thead>
                 <tr>
                   <th scope="col">Player</th>
-                  <th scope="col">Position</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Pos / Role</th>
                   <th scope="col">Age</th>
-                  <th scope="col">Details</th>
+                  <th scope="col">OVR</th>
+                  <th scope="col">Target</th>
+                  <th scope="col">Actual</th>
+                  <th scope="col">USG%</th>
+                  <th scope="col">Form</th>
+                  <th scope="col">Impact</th>
+                  <th scope="col">Contract</th>
+                  <th scope="col">Dev</th>
                 </tr>
               </thead>
               <tbody>
                 {roster.map((player) => {
-                  const isSelected = player.id === selectedPlayerId
+                  const isPreviewed = player.id === preview?.playerId
                   const playerName = formatPlayerName(player)
 
                   return (
                     <tr
                       key={player.id}
-                      className={isSelected ? 'is-selected' : undefined}
+                      className={isPreviewed ? 'is-selected' : undefined}
+                      onMouseEnter={(event) => {
+                        if (!isPinned) {
+                          showPreview(player.id, event.currentTarget)
+                        }
+                      }}
                     >
                       <th scope="row">
-                        <span className="player-name">{playerName}</span>
-                        <span className="jersey-number">
-                          #{player.jerseyNumber}
-                        </span>
-                      </th>
-                      <td>{player.primaryPosition}</td>
-                      <td>{player.age}</td>
-                      <td>
                         <button
                           type="button"
-                          className="player-detail-button"
-                          onClick={() => onSelectPlayer(player.id)}
-                          aria-pressed={isSelected}
-                          aria-controls="player-details"
+                          className="player-name-button"
+                          onClick={() => onOpenPlayer(player.id)}
+                          onFocus={(event) => {
+                            if (!isPinned) {
+                              showPreview(player.id, event.currentTarget)
+                            }
+                          }}
+                          onBlur={() => {
+                            if (!isPinned) setPreview(null)
+                          }}
                           disabled={busy}
                         >
-                          {isSelected ? 'Viewing' : 'View ratings'}
+                          <span className="player-name">{playerName}</span>
+                          <span className="jersey-number">
+                            #{player.jerseyNumber}
+                          </span>
                           <span className="visually-hidden">
-                            {' '}
-                            for {playerName}
+                            Open the full player page
                           </span>
                         </button>
+                      </th>
+                      {/* DEFERRED(later): availability status needs the medical system. */}
+                      <td className="deferred-cell">—</td>
+                      <td>
+                        <span className="pos-role-position">
+                          {player.primaryPosition}
+                        </span>
+                        {/* DEFERRED(§8): the role badge comes from the rotation plan. */}
+                        <span className="pos-role-role">—</span>
                       </td>
+                      <td>{player.age}</td>
+                      <td className="rating-value">
+                        {deriveVersionedOverall(
+                          player.ratings,
+                          player.primaryPosition,
+                        )}
+                      </td>
+                      {/* DEFERRED(§8): target minutes come from the rotation plan. */}
+                      <td className="deferred-cell">—</td>
+                      {/* DEFERRED(§11): actual minutes, usage, and form need real statistics. */}
+                      <td className="deferred-cell">—</td>
+                      <td className="deferred-cell">—</td>
+                      <td className="deferred-cell">—</td>
+                      {/* DEFERRED(§11): impact needs real per-game statistics. */}
+                      <td className="deferred-cell">—</td>
+                      {/* DEFERRED(later): contract years need the financial model. */}
+                      <td className="deferred-cell">—</td>
+                      {/* DEFERRED(later): development trend needs the development system. */}
+                      <td className="deferred-cell">—</td>
                     </tr>
                   )
                 })}
               </tbody>
             </table>
           </div>
-        </div>
 
-        {selectedPlayer === null ? (
-          <aside
-            id="player-details"
-            className="player-details player-details-empty"
-            aria-label="Player details"
-          >
-            <div className="empty-state">
-              <p>Select a player to view all 16 stored ratings.</p>
+          {previewPlayer !== null && preview !== null && (
+            <div
+              className={
+                isPinned
+                  ? 'player-quick-view-popover is-pinned'
+                  : 'player-quick-view-popover'
+              }
+              style={{ top: preview.top }}
+            >
+              <PlayerQuickView
+                player={previewPlayer}
+                team={team}
+                pinned={isPinned}
+                onClose={closeQuickView}
+              />
             </div>
-          </aside>
-        ) : (
-          <PlayerDetails player={selectedPlayer} />
-        )}
-      </div>
+          )}
+        </div>
+      )}
     </div>
   )
 }
+
+/** Dwell time before the hover quick view pins and becomes interactive. */
+const QUICK_VIEW_PIN_DELAY_MS = 5000
+
+/** Popover height (plus margin) used to keep it fully inside the viewport. */
+const POPOVER_CLEARANCE = 580
 
 export interface LeagueTeamsContentProps {
   readonly league: League | null
@@ -382,68 +541,3 @@ export function LeaguePlayersContent({ league }: LeaguePlayersContentProps) {
   )
 }
 
-function PlayerDetails({ player }: { readonly player: Player }) {
-  const ratingRows = createRatingDisplayRows(player.ratings)
-  const playerName = formatPlayerName(player)
-
-  return (
-    <aside
-      id="player-details"
-      className="player-details"
-      aria-labelledby="player-details-heading"
-    >
-      <p className="visually-hidden" aria-live="polite" aria-atomic="true">
-        Showing ratings for {playerName}
-      </p>
-      <div className="player-details-header">
-        <div>
-          <p className="panel-kicker">Player ratings</p>
-          <h3 id="player-details-heading">{playerName}</h3>
-          <p>
-            #{player.jerseyNumber} · {player.primaryPosition} · Age {player.age}
-          </p>
-        </div>
-        <span className="rating-scale">0–100</span>
-      </div>
-
-      <div
-        className="table-scroll"
-        role="region"
-        aria-label={`Ratings for ${playerName}`}
-        tabIndex={0}
-      >
-        <table className="ratings-table">
-          <caption className="visually-hidden">
-            All stored ratings for {playerName}
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Rating</th>
-              <th scope="col">Value</th>
-              <th scope="col">Grade</th>
-            </tr>
-          </thead>
-          <tbody>
-            {ratingRows.map((rating) => (
-              <tr key={rating.key}>
-                <th scope="row">{rating.label}</th>
-                <td className="rating-value">{rating.value}</td>
-                <td>
-                  <span
-                    className={`grade-badge grade-${rating.grade.charAt(0).toLowerCase()}`}
-                    aria-label={`Letter grade ${rating.grade}`}
-                  >
-                    {rating.grade}
-                  </span>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <p className="derived-note">
-        Letter grades are derived from the numeric rating and are never stored.
-      </p>
-    </aside>
-  )
-}

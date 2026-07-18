@@ -16,7 +16,7 @@ export interface TeamOverviewSummary {
   readonly rosterSize: number
   readonly rosterCapacity: number
   readonly openSpots: number
-  /** Plain mean of every stored rating on the roster, rounded — an average, not an "overall". */
+  /** Rounded mean of the roster's versioned position-weighted overalls (derived, never stored). */
   readonly averageRating: number
   readonly positionCounts: Readonly<Record<Position, number>>
 }

@@ -1,4 +1,4 @@
-# Stone Basketball GM — Roadmap
+﻿# Stone Basketball GM — Roadmap
 
 The single authoritative plan. If any other document disagrees with this one
 about *what is done* or *what is next*, this file wins and the other file is a
@@ -78,7 +78,7 @@ Two things make this safe rather than reckless:
 
 ## Status
 
-**Current section: §8B — Detailed player ratings and category drilldown.**
+**Current section: §8 rotation half + §8A coach profiles (§8B is complete).**
 
 Sections 1–7 are shipped. §7 closed 2026-07-17: the save format is collapsed to
 one monotonic version (`LEAGUE_SNAPSHOT_VERSION = 3`); the V1 DTO and the whole
@@ -92,11 +92,94 @@ up front. §8's rule-pack half (`src/domain/leagueRules.ts`) is done; its rotati
 half — `RotationPlanV1`, the validator, deterministic CPU generation, and the
 functional Adjust Rotation editor — now follows §8B and consumes §8B's versioned
 ability selector. **R1 is done** — the taxonomy is frozen in ADR 0008 (Accepted):
-18 categories, 67 sub-ratings. Next is **R2** (the pure detailed-rating domain).
+18 categories, 67 sub-ratings. **R2 is done (2026-07-18)** —
+`src/domain/detailedRatings.ts`, the pure detailed-rating domain, taxonomy
+pinned by an independent test manifest. **R3 is done (2026-07-18)** —
+`src/generation/generateDetailedRatings.ts`, deterministic generation under the
+labeled three-stream hierarchy, five 67-value golden vectors + distribution
+lock; adversarial verification independently recomputed every golden value
+from the ADR with zero deviations. **R4 is done (2026-07-18)** — the stored
+model IS the detailed model: `generateLeague` produces 67-sub-rating players,
+`LEAGUE_SNAPSHOT_VERSION` bumped 3 → 4 (clean break, no migration, old records
+offer a new league), league stores the schema + category-definition versions,
+validation checks all 67 keys, and the view models derive 18 category rows —
+the Skills accordion now drops down real sub-ratings. **R5 + R6 are done
+(2026-07-18)** — memoized view models; the versioned position-weighted Overall
+(`playerDerivations.ts`, OVERALL_MODEL_VERSION 1) replaced the transparent
+mean everywhere (quick view, player page, rail, roster, depth chart, team
+averages); Position Profiles Off/Def/Ovr letters and quick-view numeric fit
+are real; `grep -rn "DEFERRED(§8B)" src/` is empty. **R7 + R8 are done
+(2026-07-18)** — `rotationAbility.ts` (ROTATION_ABILITY_VERSION 1, the one
+CPU-planning evaluation) and `simulationReads.ts`
+(SIM_RATING_READ_VERSION 1): sixteen frozen event selectors covering exactly
+the 61 possession-relevant sub-ratings, Durability/Intangibles excluded,
+documented in SIMULATION_MODEL.md with a code↔doc agreement test and an
+architecture guard on `src/simulation/`. **§8B is COMPLETE.** Next: the §8
+rotation domain + §8A profiles (Path-to-§9 milestone 6), then the functional
+editor (milestone 7), then §9.
 
-Open §6 polish, deliberately deferred: Alex dislikes how the empty Standings
-card sits in the Home layout — revisit when its data lands (tagged on the
-card's `DEFERRED(§11)` note).
+**UI-first head start (2026-07-17):** the §8B R6 screens already exist with
+their results-era slots deferred — the rebuilt roster (tabs: Players / Depth &
+Roles / Contracts / Compare), the hover-only quick view (a 5-second dwell pins
+it and unlocks its Health / Development tabs), and the full player page. The
+whole **Team section** is also imposed from Alex's references (2026-07-17):
+**Coach's Chair** (the command-center rework of Team Overview, with the roomy
+real-schedule Schedule Pressure strip), and UI-first shells for **Rotation &
+Gameplan** (the §8 editor's screen — board + 48-minute map, non-functional
+until §8), **Medical Department**, and **Coaching & Development**. Health is
+always plain words, never invented risk scores. See the deferred-slot ledger.
+(2026-07-18: the §8B data landed underneath these screens — ratings, grades,
+overalls, and fits are now real; the remaining dashes are §8/§11/later slots.)
+
+**Path to §9 (sequenced 2026-07-18).** One milestone ≈ one session: finish it
+→ sweep the tags it clears → gates green → `/clear`. The specs live in the
+sections named; this list is only the order. (An external "engine buildout"
+runbook was reviewed 2026-07-18 and its surviving content folded in here — it
+is not a second plan. Its migration-based approach was rejected outright: the
+§7 rule stands, version breaks offer a new league, no migrations before §17.)
+
+1. **§8B R2 ✅ done 2026-07-18** — the pure detailed-rating domain
+   (`src/domain/detailedRatings.ts`): 18/67 registry, strict parser,
+   selectors; taxonomy pinned twice (module + independent test manifest);
+   adversarially verified against ADR 0008 with zero mismatches.
+2. **§8B R3 ✅ done 2026-07-18** — deterministic generation
+   (`src/generation/generateDetailedRatings.ts`) under the three labeled
+   streams; five 67-value golden vectors + distribution lock; verification
+   independently recomputed every golden value from the ADR text.
+3. **§8B R4 ✅ done 2026-07-18** — stored model swapped to detailed;
+   `LEAGUE_SNAPSHOT_VERSION` 3 → 4, clean break, no migration; legacy macro
+   model deleted; restore parses exactly and never regenerates.
+4. **§8B R5 + R6 ✅ done 2026-07-18** — memoized view models; versioned
+   position-weighted Overall (`playerDerivations.ts`, model v1) live in
+   quick view / player page / rail / roster / depth chart / team averages;
+   Position Profiles Off/Def/Ovr letters + quick-view numeric fit real;
+   Skills accordion shows real sub-ratings; `DEFERRED(§8B)` sweep empty.
+5. **§8B R7 + R8 ✅ done 2026-07-18** — `rotationAbility.ts` (v1) is the one
+   CPU-planning evaluation; `simulationReads.ts` (v1) freezes sixteen event
+   selectors covering exactly the 61 possession-relevant sub-ratings
+   (Durability/Intangibles excluded), with a SIMULATION_MODEL.md ↔ code
+   agreement test and an architecture guard on `src/simulation/`. **§8B
+   complete.**
+6. **§8 + §8A domain — NEXT.** `RotationPlanV1` exactly as specced above (no
+   situational lineups, no field-level ownership — `source` is the
+   ownership), the typed-issue validator, the eight §8A profiles (contract
+   as written), deterministic CPU generation consuming R7 + the planning
+   halves. Golden plans for all eight profiles; plans persist behind another
+   monotonic bump (4 → 5). **Resolved 2026-07-18:** the board's "Close"
+   toggle is removed from the V1 plan — closing behavior is §8A *runtime*
+   (§9); the column becomes a read-only later slot.
+7. **§8 editor functional** — the built Rotation & Gameplan board becomes
+   the real editor: edit → typed issues → save blocked until valid →
+   persists; user-edited plans survive regeneration; roster changes repair
+   deterministically. Sweep `DEFERRED(§8)`; tick §8 + §8A.
+8. **§9 kernel** — record the tendency-normalization and game-seed decisions
+   in SIMULATION_MODEL.md, then `simulateGame`: walking-skeleton basketball
+   model behind the frozen §6 contract, live rotation at dead balls,
+   box-score invariants from the first slice, ties resolved by the rules
+   pack's real overtime (saved plans stay 240), golden games, and the §6
+   screens render a simulated result with zero shape changes. Tick §9 —
+   simming exists. §10 then makes it playable (commit, advance, tripwires
+   rewritten positive).
 
 Open §6 polish, deliberately deferred: Alex dislikes how the empty Standings
 card sits in the Home layout — revisit when its data lands (tagged on the
@@ -366,10 +449,18 @@ stored magic number; tests prove agreement with the frozen result contract.
 
 **Remaining: the rotation half.**
 
-- `RotationPlanV1`: `teamId`, exactly five `starters`, `minuteTargets`
-  (whole minutes at the UI edge, integer seconds internally), `benchOrder`,
-  `source: 'cpu-generated' | 'user-edited'`, generator version. No wall-clock
-  timestamps in deterministic data.
+- `RotationPlanV1` (concrete contract, decided 2026-07-18): `version: 1`,
+  `teamId`, exactly five `starters`, `minuteTargetsSeconds:
+  Readonly<Record<PlayerId, number>>` (whole minutes at the editor edge,
+  integer seconds in domain state), `benchOrder`, `source: 'cpu-generated' |
+  'user-edited'`, plus the §8A `generation?`/`autoRepair?` metadata. No
+  wall-clock timestamps in deterministic data. **V1 has no scripted
+  substitution timeline, situational lineups, closing-lineup field, or
+  field-level ownership — `source` is the ownership boundary.**
+- **Resolved (2026-07-18): the board's editable "Close" toggle is removed
+  from V1.** Closing behavior belongs to the coach *runtime* profile and §9;
+  the plan contract does not grow to satisfy a visual shell. The board's
+  Close column becomes a read-only later slot.
 - `validateRotationPlan` returning **structured issue codes** (starter count,
   duplicate starter, ineligible player, minute total, per-player minutes) so
   the editor can show exact errors. A valid regulation plan: five unique
@@ -418,8 +509,11 @@ technicals, defensive three seconds, timeouts.
 - Invalid plans cannot be saved; errors are specific, typed issues.
 - User edits persist and survive CPU regeneration; roster changes repair
   plans deterministically.
-- The Adjust Rotation editor works end-to-end and the simulator reads the
-  saved plan.
+- The Adjust Rotation editor works end-to-end. (**That the simulator consumes
+  the saved plan is §9's integration gate, not §8's** — no simulator exists
+  at §8; corrected 2026-07-18.)
+- Plans and coach assignments persist behind the next monotonic snapshot bump
+  (4 → 5), no migration.
 - `grep -rn "DEFERRED(§8)" src/` returns nothing. All four gates green.
 
 ### 8A. Coach rotation profiles
@@ -650,31 +744,43 @@ everything downstream consumes it from day one.
   Pass Versatility, Situational Awareness, and Adaptability; merged the two
   rebound-read skills into a shared Rebound Reading; and added the Durability and
   Intangibles categories.
-- **R2 — Pure detailed-rating domain.** Exact sub-rating key constant; closed
-  strict record type + parser (reject missing/extra/non-integer/out-of-range);
-  category-definition registry; weighted category selector; existing grade
-  selector; version constants. Grades and scores are never stored.
-- **R3 — Detailed generation V2.** Player-quality baseline + category aptitude +
-  position bias (+ optional archetype bias) + field-specific variation → clamp to
-  a 0–100 integer. Labeled seed hierarchy `player-quality/v1/{id}`,
-  `player-category/v1/{id}/{cat}`, `player-skill/v1/{id}/{sub}` so adding a future
-  field shifts nothing. Golden vectors; distribution reports.
-- **R4 — League validation + snapshot bump.** Replace the stored macro ratings
-  with the detailed model; add schema/generation/definition versions; **monotonic
-  snapshot bump** — clean version break, no migration (per §7), a new league is
-  required. No-regeneration restore preserved.
-- **R5 — Rating view models.** Category rows, grade derivation, child rows,
+- **R2 — Pure detailed-rating domain. ✅ done 2026-07-18.** Exact sub-rating key
+  constant; closed strict record type + parser (reject
+  missing/extra/non-integer/out-of-range); category-definition registry;
+  weighted category selector; existing grade selector; version constants.
+  Grades and scores are never stored. Shipped as
+  `src/domain/detailedRatings.ts` with the full taxonomy pinned twice — module
+  registry + an independent manifest in the tests — so silent drift on either
+  side fails. Adversarially verified against ADR 0008 field-by-field (zero
+  transcription mismatches). Note: ADR 0008's H1 and one Compatibility line
+  still carry the stale pre-review "16/65" counts; the decided body (18/67) is
+  what the code implements — ADRs are superseded, never edited.
+- **R3 — Detailed generation V2. ✅ done 2026-07-18.** Player-quality baseline +
+  category aptitude + position bias (+ optional archetype bias) +
+  field-specific variation → clamp to a 0–100 integer. Labeled seed hierarchy
+  `player-quality/v1/{id}`, `player-category/v1/{id}/{cat}`,
+  `player-skill/v1/{id}/{sub}` so adding a future field shifts nothing. Golden
+  vectors; distribution reports. Shared Rebound Reading takes the rounded mean
+  of its two categories' aptitude + bias terms.
+- **R4 — League validation + snapshot bump. ✅ done 2026-07-18.** Replace the
+  stored macro ratings with the detailed model; add
+  schema/generation/definition versions; **monotonic snapshot bump** (3 → 4) —
+  clean version break, no migration (per §7), a new league is required.
+  No-regeneration restore preserved. The legacy 16-macro model was deleted
+  (`ratings.ts` keeps only the grade scale); the view models bridge to 18
+  derived category rows and the Skills accordion shows real sub-ratings.
+- **R5 — Rating view models. ✅ done 2026-07-18.** Category rows, grade derivation, child rows,
   calculation disclosure, grouping; memoized by (player reference, definition
   version).
-- **R6 — Player-details UI.** The quick view + player page (see below). Accordion
+- **R6 — Player-details UI. ✅ done 2026-07-18 (built UI-first, wired at R5).** The quick view + player page (see below). Accordion
   category grades; click a category to reveal its numeric children; keyboard +
   `aria-expanded`/`aria-controls`; grade as text, not colour alone; mobile stacks
   vertically; expansion is transient React state — never persisted, never a save
   revision.
-- **R7 — Integrate with §8 rotation.** Define the versioned rotation-ability
+- **R7 — Integrate with §8 rotation. ✅ done 2026-07-18 (selector shipped; §8 consumes it next).** Define the versioned rotation-ability
   selector (position/role-weighted over categories); rotation legality stays
   rating-independent; pin CPU-plan golden vectors.
-- **R8 — Freeze before §9.** Document each event → sub-rating usage; confirm
+- **R8 — Freeze before §9. ✅ done 2026-07-18.** Document each event → sub-rating usage; confirm
   grades are presentation only; §9 consumes the detailed model from its first
   line.
 
@@ -686,18 +792,64 @@ tendencies (usage / rim / mid / three / pass / draw-foul) = *how often*
 separate knowledge layer that shows owned players exactly and outside players as
 ranges + confidence — never the true number plus a cosmetic band.
 
-**Player quick view (hover) — full-width stacked sections:**
-1. Identity + key stats — name, jersey, primary/secondary position, weight, age,
-   team; **Overall** to the right; stats (PTS/REB/AST…) beneath.
-2. Target Role — spread edge-to-edge (target vs actual role, MPG, usage, skills).
-3. Contract — years left, guaranteed, total value, contract value (the one
-   contract summary that stays on the player surface; detailed contracts →
-   Finance).
-4. Health — status, morale, fatigue.
-5. Position & Role Coverage — the fit-by-position table.
+**Player quick view (hover-only preview) — built UI-first 2026-07-17
+(`playerQuickView.tsx` + shared `playerSections.tsx`):**
+1. Identity — name, jersey, primary/secondary position, age, team; **Overall**
+   to the right; the left-to-right Key Stats row
+   (PTS/REB/AST/STL/BLK/FG%/3P%/TS%) beneath.
+2. Target Role — one full-width block, label left / value right: target role,
+   actual role, target MPG, actual MPG, usage rate.
+3. Contract — same label/value rows: contract, years left, guaranteed, total
+   value, contract type (the one contract summary that stays on the player
+   surface; detailed contracts → Finance).
+4. Position & Role Coverage — same label/value rows, last.
+
+Nothing else on the preview: no Health, no grades, no action buttons — and it
+renders **only while a roster row is hovered or keyboard-focused** (Alex:
+never visible otherwise).
 
 Hover shows the quick view; **click opens the full player page** (no separate
-"player card"). Trade Block → **Trade Center**.
+"player card") — built UI-first 2026-07-17 (`playerPage.tsx`), in the quick
+view's visual language (Alex: "keep that texture"). Alex's Court Dynasty
+reference is **imposed whole**, with exactly three deltas: **no badges** (we
+don't use badges — the Shooting Zones court spans that entire area), **no
+Potential anywhere**, and every panel whose system doesn't exist shows an
+honest Coming-later absence:
+- **Roster rail (left, real)** — the team's players with position, OVR
+  number + letter; clicking switches the open player. Team Chemistry panel
+  beneath it is a later slot (morale system).
+- **Hero band** — jersey number, name, team · positions · age (real);
+  height/weight/wingspan/handedness and the Status / Team Status / Draft /
+  College / Agent / Personality / Work Ethic profile list are later slots
+  (player bio + personality systems); Quick Summary top-right is a later
+  slot (scouting).
+- **Stat-card row, left-aligned** — OVR (real: number + letter), then
+  Contract (format: years · total value), Health, Morale, Fatigue as honest
+  Coming-later cards.
+- **Tabs** — Overview and Skills live; Performance (§11), Role (§8),
+  Contract and Career (later).
+- **Overview, three columns like the reference, letters only**: Position
+  Profiles (fit real; per-position Offense/Defense/Overall letters are §8B)
+  + Physicals + Mental | Season Stats grid
+  (MIN/PTS/REB/AST/STL/BLK/FG%/3P%/FT%/TS%/USG%/PER, §11) + Shooting Zones
+  court (zone FG% from shot locations, §14) | Skill Breakdown + derived
+  **Concerns / Strengths** (real: worst/best four graded categories,
+  display-only).
+- **Skills tab** — the complete breakdown as a letter accordion (grouped
+  Skills / Physicals / Mental); clicking a letter drops its stored number
+  down; the §8B sub-ratings replace that single number. Expansion is
+  transient React state, never persisted.
+- **Bottom action bar** — Compare Player · Trade Center · Watch Player ·
+  Edit Player, all Coming later (comparison / trade / watchlist / editor).
+Trade Block → **Trade Center**.
+
+**Roster screen (rebuilt 2026-07-17, references captured):** table columns
+Player · Status · Pos/Role · Age · OVR · Impact · Contract (years) · Dev — no
+Potential and no Skills columns anywhere; the right rail holds the half-court
+**Depth Chart** panel (`rosterDepthChart.tsx`, natural players ordered by the
+derived Overall until §8 supplies real depth). The quick view floats as a
+compact popover anchored beside the hovered row, clamped to the viewport so it
+is always fully visible.
 
 **Cross-screen UI notes (2026-07-17), captured so they aren't lost:**
 - Team Overview: Recent Transactions / News moved flush-left into the gap beside
@@ -778,7 +930,8 @@ and Team Schedule show a real result.
 whatever §6 designed and §9 produced; do not redesign it here.
 
 **Work.**
-- Add results to `LeagueSnapshot`; bump `SNAPSHOT_VERSION` to 4. Per
+- Add results to `LeagueSnapshot`; bump to the next monotonic version
+  (**6** — §8 takes 5 for rotation plans; numbers assigned when they land). Per
   [ADR 0005](adr/0005-scheduled-game-vs-game-result.md), `GameResult` stays a
   **separate immutable aggregate keyed to one `GameId`**.
 - `commitGameResult`: revision-guarded and atomic — validate, store the result,
@@ -986,11 +1139,11 @@ Current index (2026-07-17):
 
 | Unblocks at | Slot | Where |
 | --- | --- | --- |
-| §8 | Adjust Rotation button becomes a real editor destination; Team Overview Starting Five / Rotation panel + Review/View Rotation buttons | `homePage.tsx`, `teamOverviewPage.tsx` |
+| §8 | The Rotation & Gameplan board + 48-minute map become the functional editor (a visual mockup does not clear this); Coach's Chair Rotation chip/pulse tile + Lineup Reality; quick-view Target Role rows; player-page Role tab; roster Role column; roster Target column; depth-chart depth ordering (OVR-order placeholder) | `rotationGameplanPage.tsx`, `homePage.tsx`, `teamOverviewPage.tsx`, `playerSections.tsx`, `playerPage.tsx`, `dashboardPages.tsx`, `rosterDepthChart.tsx` |
 | §10 | Continue (advance game day); Sim Game; Recent Results fills with real Finals; retire the dev-preview entry | `homePage.tsx` |
-| §11 | Record · Seed · Streak (command bar); Records · Ranks · Last 10 (Next Game); Season Pulse (all of it); Standings values; Team Stats ranks; team records in the post-game header; Team Overview header ranks/record/streak, Team Strengths & Weaknesses, Team Metrics | `homePage.tsx`, `gameResultPage.tsx`, `teamOverviewPage.tsx` |
+| §11 | Record · Seed · Streak (command bar); Records · Ranks · Last 10 (Next Game); Season Pulse (all of it); Standings values; Team Stats ranks; team records in the post-game header; Coach's Chair Record chip, Opponent Prep matchup stats, Performance pulse tile, Last 10 Games; quick-view Key Stats row; player-page Season Stats grid + Performance tab; roster Impact / Actual / USG% / Form columns | `homePage.tsx`, `gameResultPage.tsx`, `teamOverviewPage.tsx`, `playerSections.tsx`, `playerPage.tsx`, `dashboardPages.tsx` |
 | §12 | Sim to Next Event (multi-day advance) | `homePage.tsx` |
-| §14 | Watch Game; and the event log unlocks at once: Game summary, Play-by-Play + key moments, Charts (game flow, shot chart), largest lead / lead changes / points off turnovers / points in paint | `homePage.tsx`, `gameResultPage.tsx` |
+| §14 | Watch Game; and the event log unlocks at once: Game summary, Play-by-Play + key moments, Charts (game flow, shot chart), largest lead / lead changes / points off turnovers / points in paint; player-page Shooting Zones court | `homePage.tsx`, `gameResultPage.tsx`, `playerPage.tsx` |
 | §15 | Division/Conference standings split (needs the 30-team alignment) | `homePage.tsx` |
 
 **`DEFERRED(later)` — needs systems not yet on the roadmap.** These must each
@@ -1005,9 +1158,13 @@ evaporate:
 | Front Office card (payroll, cap, tax, contracts) | financial model |
 | Important Headlines | league news system |
 | Post-game Game Info layer (venue, attendance, referees, game time) | venue/officials systems |
-| Team Overview: Needs Attention alerts, Health Summary, Development Watch | injury / contract / development systems |
-| Team Overview: Recent Transactions / News | transaction + news systems |
-| Team Overview: Cap Status + Team Direction header chips | financial model + ownership objectives |
+| Coach's Chair: Next Decision Point, Decision Stack, Cross-Department Conflicts, header chips (Availability / Team Readiness / Chemistry / Cap Room), Schedule Pressure workload flags, Health + Development pulse tiles | decision / medical / morale / financial / development systems |
+| Coach's Chair: Recent Transactions / News | transaction + news systems |
+| Medical Department: availability board, workload, injuries & rehab, return-to-play stages | medical system |
+| Coaching & Development: player plans, staff, weekly plan, progress, mentorship | development + staff systems |
+| Quick view (pinned): Health and Development tabs | medical / development systems |
+| Roster: Contracts and Compare tabs | financial / comparison systems |
+| Player surfaces: Contract / Health / Morale / Fatigue stat cards; hero bio (height/weight/wingspan/handedness) + profile list (status, team status, draft, college, agent, personality, work ethic); Team Chemistry rail panel; Contract + Career tabs; scouting Quick Summary; quick-view Contract rows; roster Status / Contract / Dev columns; Compare Player, Trade Center, Watch Player, Edit Player | financial / medical / morale / development / scouting / player-bio / watchlist / player-editor / trade systems |
 
 Clickable destinations already wired (live now; they land on honest planned
 pages until those pages are built): Review Offers → `front-office-market`,
