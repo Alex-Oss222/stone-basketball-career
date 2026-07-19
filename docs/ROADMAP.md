@@ -78,30 +78,81 @@ Two things make this safe rather than reckless:
 
 ## Status
 
-**Current section: §8 rotation half + §8A coach profiles, then §9. §8C (ratings rehaul) is COMPLETE — landed 2026-07-19 in commit `2cda18d`, all four gates green (1223 tests).**
+**Current section: §8 rotation half — the core SHIPPED 2026-07-19 (session 2).
+Remaining before §8 is done: sweep the 8 `DEFERRED(§8)` display slots + §8A coach
+profiles. Running in parallel (Alex's order): (a) the player-profile engine, then
+(b) the tactical-tag off/def redesign. Then §9 (the sim). All four gates green
+(1257 tests) at the last push.**
 
-**Session handoff (2026-07-19).** Tonight closed §8C: the full 91-rating rehaul,
-the Role Fit / reward-peaks Headline OVR split, the quick-view fixes (3s pin,
-always-on Health/Development, row-wide keep-alive), and "Trade Center → Trade
-Player" all shipped and were independently verified green. **Pick up here next
-session** — see [reference/DESIGN_OVERVIEW.md](reference/DESIGN_OVERVIEW.md) for
-the master pick-up map:
-- **Next build step:** §8 rotation half (`RotationPlanV1` + validator +
-  deterministic CPU generation + the functional Adjust Rotation editor) re-derived
-  on the 91-key `rotationAbility.ts`, then §8A coach profiles, then §9 (the sim).
-- **Queued, needs Alex's written go-ahead (not started — checkpoint rule):**
-  (1) **build the impact-based Headline OVR ("Path A")** — CONFIRMED 2026-07-19
-  as *the* headline target (the "which path" question is closed); reward-peaks
-  stays a **frozen cosmetic interim, no hand-tuning**, until the sim exists, then
-  Path A is promoted and reward-peaks demoted to Path B (DESIGN_OVERVIEW §6d);
-  (2) retune measurement height generation to the normal per-position ranges
-  (PG 71–78", SG 74–79", SF 77–81", PF 79–83", C 81–86" — never exceed the top),
-  DESIGN_OVERVIEW §6b;
-  (3) the larger org expansion (per-team GM / coaches / staff / medical /
-  development / scouting + the ~138-profile role-matching engine), deliberately
-  sequenced **after** the first sim (DESIGN_OVERVIEW §2).
-- **One standing risk:** the repo is committed **locally only** — no offsite
-  backup / remote yet. Worth pushing somewhere private early next session.
+**Session handoff (2026-07-19, session 2) — DETAILED PICK-UP.** This session built
+the §8 rotation half's core and the first UI ahead of profiles/roles. Everything
+below is committed and pushed to `origin/milestone-1`
+(`github.com/Alex-Oss222/stone-basketball-gm`, private). Three commits:
+`33f8a85` (rotation editor + player popup + tag scaffolding), `01482ef`
+(Depth & Roles screen), `2b25e4e` (board drag-and-drop).
+
+**What shipped (all green):**
+- **Domain** `src/domain/rotationPlan.ts` — `RotationPlanV1`, `validateRotationPlan`
+  (blocking **errors** + non-blocking **warnings** tier), deterministic
+  ability-ranked `generateRotationPlan`, `repairRotationPlan`, capped
+  largest-remainder allocator. Pure, no RNG (seeded exploration is the §8A hook).
+- **Persistence** — snapshot **5→6** with stored `rotationPlans` (DTO↔domain
+  converters, revision-guarded `updateRotationPlan`, stored plans domain-validated
+  on parse, no migration). Round-trip tested.
+- **UI** — the functional **Adjust Rotation editor** (`rotationGameplanPage.tsx`):
+  a depth chart (top five = starters, **drag-and-drop** to reorder), inline minute
+  steppers, live validation, Auto/Reset/Save of a protected `user-edited` plan.
+  Tabs: **Rotation Board · Depth & Roles · 48-Minute Map (by quarter) · 6-Minute
+  Splits (two grey boxes/quarter)**. Rotation-tier + display-only tactical-tag
+  badges + OVR column. The **Depth & Roles** screen (`depthRolesPage.tsx` +
+  `depthRolesViewModel.ts`): per-position depth grid, drag-and-drop, **clickable
+  position eligibility** (natural = gold, added = light gold), selected-player
+  panel, coverage KPI + depth alerts + role balance. The player page is now a
+  **dismissible modal popup** (✕ centered top) with a "Player Type — Coming later"
+  slot.
+- **Docs/memory** — banked §9/§14 rotation-runtime + **play-by-play** notes (in §9
+  below); the authored **player-profile workbook** is captured at
+  `docs/reference/PLAYER_PROFILES_WORKBOOK.md` (19 sheets); five memories written
+  (org-ratings-expansion, staff-org-layer, player-profile-system,
+  tactical-tag-system, depth-and-roles-screen).
+
+**Key rules that held / decisions:** tactical tags + the player-type profile are
+**display-only, never read by the sim** (a tag summarizes ratings; it does not
+change ratings, and later *drives AI behavior* not ratings — §9). Player type
+comes from **Alex's authored Excel profiles + position-weighted threshold
+matching**, NOT an invented scheme — see [[player-profile-system]] memory and the
+workbook. Path A (impact OVR) remains the confirmed headline target for after the
+sim; reward-peaks stays a frozen cosmetic interim (DESIGN_OVERVIEW §6d).
+
+**NEXT, in Alex's agreed order (each its own focused pass):**
+1. **(a) Player-profile engine** — build the position-weighted threshold matcher
+   from `docs/reference/PLAYER_PROFILES_WORKBOOK.md` (production sheets: Production
+   Profiles, By Position, Profile Thresholds, Morph Neighbors, Attribute
+   Framework, Design Method; **Research Crosswalk = internal, never ship**).
+   Extract profiles + per-position thresholds into a clean versioned repo data
+   file; matcher weighs actual position, profile breadth, weighted match score,
+   mature-core-targets-met (→ Advanced/Complete stage), and real function (not the
+   raw highest match — narrow profiles hit 100 too easily → those become secondary
+   affinities). Output currentProfile + positionAlternative + secondaryAffinities;
+   match score ≠ OVR. Fill the "Player Type — Coming later" slots (player modal +
+   Depth & Roles). See [[player-profile-system]].
+2. **(b) Tactical-tag redesign** — replace the broad tags in
+   `src/domain/playerArchetype.ts` with **two lineup assignments (offensive +
+   defensive)** from sub-rating tag-fit (~8 off + 6 def to start), featured tag
+   shown; see [[tactical-tag-system]]. Behavior-driving + lineup-need warnings are
+   §9.
+3. **(c)** sweep the **8 remaining `DEFERRED(§8)`** display slots
+   (`grep -rn "DEFERRED(§8)" src/`): teamOverview tiles, dashboard/roster columns,
+   player Role tab, depth-chart ordering.
+4. **(d) §8A** coach profiles (spec is in §8A below — build on the shipped
+   `rotationPlan.ts`).
+5. **Then the main path to simming:** §9 (the game kernel) and the per-team
+   **org/staff layer** (GM/coaches/staff/medical/development/scouting) — see
+   [[staff-org-layer]] and `reference/AI_STAFF_MASTER_SPEC.md`.
+
+**Deferred/queued (need Alex's go, checkpoint rule):** impact-OVR "Path A" (after
+the sim); height-range retune (DESIGN_OVERVIEW §6b); Depth & Roles refinements
+(persist the depth plan, exact 3-column cards, richer right panel as a/b land).
 
 **Ratings rehaul (§8C), decided 2026-07-19 — see [ADR 0009](adr/0009-player-ratings-rehaul.md) and [reference/DESIGN_OVERVIEW.md](reference/DESIGN_OVERVIEW.md).** §8B's 18-category / 67-sub-rating model **was replaced (2026-07-19, commit `2cda18d`)** by the deeper, implementation-ready model Alex authored: **26 categories / 91 base ratings** across 4 pillars, a measurements layer, a derived-ratings layer, a new 4-pillar per-role-max OVR, **16 tendencies**, and Durability split out as a separate Availability grade. Hidden development, hidden health, and **Potential** (reinstated, reversing ADR 0008, as a derived *68th-percentile-of-simulated-peak* computed only once the career-sim exists) are **reserved** for later sections. This landed before the §8 rotation half and §9, so `rotationAbility.ts` and `simulationReads.ts` are now re-derived on the 91-key model. The exact change-list and all 8 version bumps are in DESIGN_OVERVIEW §4. **A larger scope expansion is also captured** — per-team GMs / coaches / staff / medical / development / scouting + a role-matching engine, in `reference/AI_STAFF_MASTER_SPEC.md` — deliberately sequenced *after* the first sim (DESIGN_OVERVIEW §2). The prior status (below) is retained as history.
 
