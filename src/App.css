@@ -5313,6 +5313,34 @@ tbody tr:last-child td {
   cursor: not-allowed;
 }
 
+.drag-handle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  cursor: grab;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1;
+  user-select: none;
+}
+
+.drag-handle:hover {
+  color: var(--text);
+  background: var(--surface-soft);
+}
+
+.drag-handle:active {
+  cursor: grabbing;
+}
+
+.drag-handle:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+}
+
 .rotation-row-starter {
   background: color-mix(in srgb, var(--accent) 7%, transparent);
 }

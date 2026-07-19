@@ -148,6 +148,23 @@ export function reorder(
   return next
 }
 
+/** Move a player to an absolute index in the depth chart (drag-and-drop). */
+export function moveToIndex(
+  order: readonly PlayerId[],
+  playerId: PlayerId,
+  toIndex: number,
+): readonly PlayerId[] {
+  const from = order.indexOf(playerId)
+  if (from < 0) {
+    return order
+  }
+  const next = [...order]
+  next.splice(from, 1)
+  const clamped = Math.max(0, Math.min(toIndex, next.length))
+  next.splice(clamped, 0, playerId)
+  return next
+}
+
 export const ROTATION_TIERS = [
   'Starter',
   'Sixth Man',

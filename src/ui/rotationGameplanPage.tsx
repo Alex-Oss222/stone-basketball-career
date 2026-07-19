@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
+import type { DragEvent } from 'react'
 import type { League, Player, Team } from '../domain/league'
 import { POSITIONS, formatTeamName } from '../domain/league'
 import type { PlayerId } from '../domain/ids'
@@ -20,8 +21,8 @@ import {
   draftFromPlan,
   draftsEqual,
   minutesByPeriod,
+  moveToIndex,
   planFromDraft,
-  reorder,
   resolveRotationPlan,
   rotationPlanSignature,
   rotationPlayerCount,
@@ -149,10 +150,10 @@ function RotationEditor({
     }))
   }
 
-  const movePlayer = (playerId: PlayerId, direction: -1 | 1): void => {
+  const reorderTo = (playerId: PlayerId, toIndex: number): void => {
     setDraft((current) => ({
       ...current,
-      order: reorder(current.order, playerId, direction),
+      order: moveToIndex(current.order, playerId, toIndex),
     }))
   }
 
@@ -306,7 +307,7 @@ function RotationEditor({
           overallByPlayer={overallByPlayer}
           busy={busy}
           onSetMinutes={setMinutes}
-          onMovePlayer={movePlayer}
+          onReorder={reorderTo}
         />
       ) : activeTab === 'depth' ? (
         <DepthRolesContent team={team} roster={roster} />
@@ -342,7 +343,7 @@ function RotationBoard({
   overallByPlayer,
   busy,
   onSetMinutes,
-  onMovePlayer,
+  onReorder,
 }: {
   readonly team: Team
   readonly orderedRoster: readonly Player[]
@@ -351,8 +352,9 @@ function RotationBoard({
   readonly overallByPlayer: ReadonlyMap<PlayerId, number>
   readonly busy: boolean
   readonly onSetMinutes: (playerId: PlayerId, next: number) => void
-  readonly onMovePlayer: (playerId: PlayerId, direction: -1 | 1) => void
+  readonly onReorder: (playerId: PlayerId, toIndex: number) => void
 }) {
+  const draggedId = useRef<PlayerId | null>(null)
   return (
     <section
       className="player-page-card rotation-board"
@@ -394,28 +396,45 @@ function RotationBoard({
                 <tr
                   key={player.id}
                   className={isStarter ? 'rotation-row-starter' : undefined}
+                  onDragOver={(event) => event.preventDefault()}
+                  onDrop={(event) => {
+                    event.preventDefault()
+                    const sourceId = draggedId.current
+                    draggedId.current = null
+                    if (sourceId !== null && sourceId !== player.id) {
+                      onReorder(sourceId, index)
+                    }
+                  }}
                 >
                   <td>
-                    <div className="reorder-controls">
-                      <button
-                        type="button"
-                        className="reorder-button"
-                        aria-label={`Move ${formatPlayerName(player)} up`}
-                        onClick={() => onMovePlayer(player.id, -1)}
-                        disabled={busy || index === 0}
-                      >
-                        ▲
-                      </button>
-                      <button
-                        type="button"
-                        className="reorder-button"
-                        aria-label={`Move ${formatPlayerName(player)} down`}
-                        onClick={() => onMovePlayer(player.id, 1)}
-                        disabled={busy || index === orderedRoster.length - 1}
-                      >
-                        ▼
-                      </button>
-                    </div>
+                    <span
+                      className="drag-handle"
+                      role="button"
+                      tabIndex={busy ? -1 : 0}
+                      aria-label={`Reorder ${formatPlayerName(player)} — drag, or use arrow keys`}
+                      draggable={!busy}
+                      onDragStart={(event: DragEvent) => {
+                        draggedId.current = player.id
+                        event.dataTransfer.effectAllowed = 'move'
+                      }}
+                      onDragEnd={() => {
+                        draggedId.current = null
+                      }}
+                      onKeyDown={(event) => {
+                        if (event.key === 'ArrowUp' && index > 0) {
+                          event.preventDefault()
+                          onReorder(player.id, index - 1)
+                        } else if (
+                          event.key === 'ArrowDown' &&
+                          index < orderedRoster.length - 1
+                        ) {
+                          event.preventDefault()
+                          onReorder(player.id, index + 1)
+                        }
+                      }}
+                    >
+                      ⠿
+                    </span>
                   </td>
                   <th scope="row">
                     <span className="player-name">
