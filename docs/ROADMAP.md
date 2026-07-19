@@ -454,6 +454,23 @@ absence-test tripwires — zero findings). Not committed yet.
 
 ### 8. League rules and rotation plans
 
+**Progress (2026-07-19) — the rotation half's core has LANDED and is green
+(lint / typecheck / 1247 tests / build).** Built: `src/domain/rotationPlan.ts`
+(`RotationPlanV1`; `validateRotationPlan` with the two-tier **errors + warnings**
+from `rotation.txt` §7; deterministic ability-ranked CPU `generateRotationPlan`;
+`repairRotationPlan`; the capped largest-remainder `allocateWholeMinutes`) — all
+pure/deterministic, no RNG (the seeded exploration stream is §8A's extension
+point); persistence (snapshot **5 → 6**, `rotationPlans` stored, DTO↔domain
+converters, revision-guarded `updateRotationPlan`, stored plans domain-validated
+on parse, no migration); the app layer (`rotationGameplanViewModel.ts`, App save
+handler) and the **functional Adjust Rotation editor** (`rotationGameplanPage.tsx`:
+generate → edit starters/minutes → live validate → Auto/Reset/Save, persists a
+protected `user-edited` plan; 48-minute map shows planned minutes). **Still open
+before §8 is done:** the remaining `DEFERRED(§8)` display slots on
+teamOverview/dashboard/playerPage/rosterDepthChart/playerSections (grep is not yet
+empty), then **§8A coach profiles**. NOT built: the live substitution engine
+(§9). Determinism goldens + a persistence round-trip test are in place.
+
 **Goal.** Build the two sim inputs that do not exist, on one organizing
 principle (Alex's spec, 2026-07-17):
 
@@ -1010,6 +1027,50 @@ fixtures become test data.
   and `Math.random` appears nowhere.
 - All four gates green.
 
+**Banked design inputs — rotation runtime + play-by-play (captured 2026-07-19; do
+NOT build before this section).** From Alex's `rotation.txt` design pass and the §8
+build. §8 stores none of this — it is the *runtime* half that only makes sense once
+games are simulated. Held here so it is not lost:
+
+- **Temporary availability overlay — keep it separate from plan repair.** A
+  *permanent* roster change (trade / release / retire) repairs the saved
+  `RotationPlanV1` (that is §8). A *temporary* absence (one-game injury, rest,
+  suspension, ejection, foul-out) must NOT touch the saved plan — build a
+  throwaway per-game overlay (`{ basePlanVersion, unavailablePlayers,
+  redistributedMinutes, reasons }`); when the player returns, the saved plan
+  resumes untouched. Conflating the two lets one bad night permanently wreck a
+  hand-built rotation.
+- **Make adherence observable, not a hidden number.** Contract for a user-edited
+  plan in a normal game (no forced events): selected starters start; zero-minute
+  players stay DNP; every other player finishes within **±2 minutes** of target.
+  CPU plans get looser tolerance (±4). Forced events may exceed it, and the game
+  record logs the reason (`{ playerId, targetMinutes, actualMinutes,
+  deviationReason }`). A testable exit-gate line, stronger than storing
+  `adherence = 0.9`.
+- **Authority order at every substitution:** (1) forced event → (2) user-saved
+  plan → (3) coach adjustments (timing, staggering, matchups, closing, who
+  absorbs orphaned minutes) → (4) small seeded randomness. Preferences choose
+  among *legal* lineups; they never legalize one. User-edited plans use
+  `max(planAdherence, floor)`.
+- **Coach-reaction math (mostly §14 depth):** anti-churn substitution threshold +
+  minimum stint length; a fatigue curve (`comfortableMinutes` from stamina /
+  durability, quadratic cost past it); foul-risk weighted by how early the foul
+  came; hot-hand with **sample-size shrinkage capped at ±0.10** (never overreact
+  to two makes); matchup fit; late-and-close-game urgency. Implement all of it as
+  **integers / basis points on a seeded stream** — `rotation.txt`'s 0–1 floats are
+  illustrative only; the determinism rule forbids float weights in the engine.
+- **`GameRotationSnapshot` at tip-off** (plan version + coach-profile version +
+  active roster + overlay) so each game is reproducible and debuggable, and the
+  committed result records which plan version it used.
+- **Play-by-play is a §9 output, not only a §14 tab.** The kernel must emit a
+  **deterministic play-by-play event stream** (possession / scoring / substitution
+  / foul events), not just the final box score — otherwise §6's Play-by-Play tab
+  and §14's event log / charts have nothing real to render. Treat the event log as
+  a first-class result artifact keyed to the `GameId` (same immutability as the box
+  score, [ADR 0005](adr/0005-scheduled-game-vs-game-result.md)). Decide its shape
+  when §6's Play-by-Play tab becomes real; surface and deepen it (key moments, game
+  flow, shot chart) in §14.
+
 ### 10. Commit a result and advance the clock
 
 **Goal.** One game reaches **Final** end-to-end: `currentDate` → find the day's
@@ -1229,12 +1290,18 @@ Current index (2026-07-17):
 
 | Unblocks at | Slot | Where |
 | --- | --- | --- |
-| §8 | The Rotation & Gameplan board + 48-minute map become the functional editor (a visual mockup does not clear this); Coach's Chair Rotation chip/pulse tile + Lineup Reality; quick-view Target Role rows; player-page Role tab; roster Role column; roster Target column; depth-chart depth ordering (OVR-order placeholder) | `rotationGameplanPage.tsx`, `homePage.tsx`, `teamOverviewPage.tsx`, `playerSections.tsx`, `playerPage.tsx`, `dashboardPages.tsx`, `rosterDepthChart.tsx` |
+| §8 | **DONE (2026-07-19):** the Rotation & Gameplan board + 48-minute map are the functional editor (generate / edit / validate errors+warnings / save+persist); the homePage Adjust-Rotation slot is swept. **Remaining §8 display slots (read the resolved plan):** Coach's Chair Rotation chip/pulse tile + Lineup Reality; player-page Role tab; roster Target column + depth-chart depth ordering; quick-view / playerSections target-minute rows | `teamOverviewPage.tsx`, `playerSections.tsx`, `playerPage.tsx`, `dashboardPages.tsx`, `rosterDepthChart.tsx` |
 | §10 | Continue (advance game day); Sim Game; Recent Results fills with real Finals; retire the dev-preview entry | `homePage.tsx` |
 | §11 | Record · Seed · Streak (command bar); Records · Ranks · Last 10 (Next Game); Season Pulse (all of it); Standings values; Team Stats ranks; team records in the post-game header; Coach's Chair Record chip, Opponent Prep matchup stats, Performance pulse tile, Last 10 Games; quick-view Key Stats row; player-page Season Stats grid + Performance tab; roster Impact / Actual / USG% / Form columns | `homePage.tsx`, `gameResultPage.tsx`, `teamOverviewPage.tsx`, `playerSections.tsx`, `playerPage.tsx`, `dashboardPages.tsx` |
 | §12 | Sim to Next Event (multi-day advance) | `homePage.tsx` |
 | §14 | Watch Game; and the event log unlocks at once: Game summary, Play-by-Play + key moments, Charts (game flow, shot chart), largest lead / lead changes / points off turnovers / points in paint; player-page Shooting Zones court | `homePage.tsx`, `gameResultPage.tsx`, `playerPage.tsx` |
 | §15 | Division/Conference standings split (needs the 30-team alignment) | `homePage.tsx` |
+
+**Reclassified during §8 (2026-07-19):** two slots the §8 board exposed belong
+later, so their tags moved — the rotation board's **target-role** cell now carries
+`DEFERRED(§8A)` (a role comes from the coach profile), and the 48-minute map's
+**live per-block lineups** now carry `DEFERRED(§9)` (the game engine produces which
+five are on court each block; the map shows planned minute *amounts* today).
 
 **`DEFERRED(later)` — needs systems not yet on the roadmap.** These must each
 either get a roadmap section or be consciously cut at §19; they may not just

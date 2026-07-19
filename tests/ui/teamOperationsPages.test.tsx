@@ -21,31 +21,46 @@ function expectHonest(markup: string): void {
 }
 
 describe('Rotation & Gameplan', () => {
-  it('renders the real roster, the real 240 target, and honest §8 slots', () => {
+  const noop = (): void => {}
+
+  it('renders a functional §8 editor with real minutes and a 240 target', () => {
     const markup = renderToStaticMarkup(
-      <RotationGameplanContent league={league} team={team} />,
+      <RotationGameplanContent
+        league={league}
+        team={team}
+        savedPlan={null}
+        busy={false}
+        onSaveRotationPlan={noop}
+      />,
     )
 
-    expect(markup).toContain('— / 240')
+    expect(markup).toContain('/ 240')
     expect(markup).toContain(formatPlayerName(roster[0]))
     for (const label of [
       'Rotation Board',
       '48-Minute Map',
-      'Lineup Lab',
-      'Situations',
-      'Gameplan',
-      'Auto-balance',
-      'Apply rotation',
+      '6-Minute Splits',
+      'Auto Rotation',
+      'Reset',
+      'Save Rotation',
+      'Target Minutes',
+      'OVR',
+      'Starter',
       'Allowed Positions',
     ]) {
       expect(markup).toContain(label)
     }
-    expectHonest(markup)
   })
 
   it('shows the empty state without a team', () => {
     const markup = renderToStaticMarkup(
-      <RotationGameplanContent league={null} team={null} />,
+      <RotationGameplanContent
+        league={null}
+        team={null}
+        savedPlan={null}
+        busy={false}
+        onSaveRotationPlan={noop}
+      />,
     )
     expect(markup).toContain('No team selected')
   })

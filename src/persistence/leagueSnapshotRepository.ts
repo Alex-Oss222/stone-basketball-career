@@ -6,7 +6,10 @@ import {
   LEAGUE_SNAPSHOT_VERSION,
   parseLeagueSnapshot,
 } from './leagueSnapshot'
-import type { LeagueSnapshot } from './leagueSnapshot'
+import type {
+  LeagueSnapshot,
+  LeagueSnapshotRotationPlanDto,
+} from './leagueSnapshot'
 
 export interface LeagueSnapshotStorageSlot {
   readonly present: boolean
@@ -168,6 +171,12 @@ export interface UpdateManagedTeamInput {
   readonly managedTeamId: TeamId | null
 }
 
+export interface UpsertRotationPlanInput {
+  readonly expectedLeagueId: LeagueId
+  readonly expectedRevision: number
+  readonly plan: LeagueSnapshotRotationPlanDto
+}
+
 export type ClearActiveLeagueExpectation =
   | {
       readonly kind: 'snapshot'
@@ -190,6 +199,10 @@ export interface LeagueSnapshotRepository {
   create(snapshot: LeagueSnapshot): Promise<LeagueSnapshot>
   updateManagedTeam(
     input: UpdateManagedTeamInput,
+  ): Promise<LeagueSnapshot>
+  /** Saves (inserts or replaces) the rotation plan for one team, revision-guarded. */
+  updateRotationPlan(
+    input: UpsertRotationPlanInput,
   ): Promise<LeagueSnapshot>
   clear(expectation: ClearActiveLeagueExpectation): Promise<void>
   /**
@@ -311,6 +324,63 @@ export function createLeagueSnapshotRepository(
           ...current,
           revision: current.revision + 1,
           managedTeamId,
+        })
+        return {
+          mutation: {
+            kind: 'write',
+            mode: 'put',
+            record: createStoredRecord(next),
+          },
+          verify: (reread) => verifyStoredWrite(next, reread),
+        }
+      })
+    },
+
+    async updateRotationPlan(input) {
+      const expectedLeagueId = parseLeagueId(input.expectedLeagueId)
+      const expectedRevision = parseExpectedRevision(input.expectedRevision)
+      const teamId = parseTeamId(input.plan.teamId)
+
+      return storage.transact((slot) => {
+        if (!slot.present) {
+          throw new LeagueSnapshotStaleWriteError(
+            'update',
+            expectedRevision,
+            null,
+            'The active league snapshot no longer exists',
+          )
+        }
+        const currentRecord = parseStoredRecord(slot.value)
+        const current = parseLeagueSnapshot(currentRecord.snapshot)
+        if (current.league.id !== expectedLeagueId) {
+          throw new LeagueSnapshotConflictError(
+            'A rotation-plan update cannot replace a different league',
+          )
+        }
+        if (current.revision !== expectedRevision) {
+          throw new LeagueSnapshotStaleWriteError(
+            'update',
+            expectedRevision,
+            current.revision,
+            'The active league changed before the rotation plan could be saved',
+          )
+        }
+        if (current.revision === Number.MAX_SAFE_INTEGER) {
+          throw new LeagueSnapshotRevisionError(
+            'The active league revision cannot be incremented safely',
+          )
+        }
+
+        // Upsert by team, then re-parse so the stored plan is structurally and
+        // domain-validated before it is ever written.
+        const rotationPlans = [
+          ...current.rotationPlans.filter((plan) => plan.teamId !== teamId),
+          input.plan,
+        ]
+        const next = parseLeagueSnapshot({
+          ...current,
+          revision: current.revision + 1,
+          rotationPlans,
         })
         return {
           mutation: {

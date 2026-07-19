@@ -18,7 +18,7 @@ import {
   parseTeamId,
   parseTeamSeasonId,
 } from '../domain/ids'
-import type { TeamId } from '../domain/ids'
+import type { PlayerId, TeamId } from '../domain/ids'
 import {
   LEAGUE_PLAYER_COUNT,
   LEAGUE_TEAM_COUNT,
@@ -79,6 +79,15 @@ import {
   parseTeamSeason,
 } from '../domain/teamSeason'
 import type { TeamSeason } from '../domain/teamSeason'
+import { MILESTONE_1_LEAGUE_RULES } from '../domain/leagueRules'
+import {
+  ROTATION_GENERATOR_VERSION,
+  ROTATION_PLAN_SOURCES,
+  ROTATION_REPAIR_REASONS,
+  ROTATION_REPAIR_VERSION,
+  validateRotationPlan,
+} from '../domain/rotationPlan'
+import type { RotationPlanV1 } from '../domain/rotationPlan'
 import { normalizeSeed } from '../random/seed'
 import {
   findSupportedScheduleRuleSet,
@@ -112,6 +121,7 @@ import type {
   LeagueSnapshotCreationMetadata,
   LeagueSnapshotLeagueDto,
   LeagueSnapshotLeagueScheduleDto,
+  LeagueSnapshotRotationPlanDto,
   LeagueSnapshotSeasonCalendarDto,
   LeagueSnapshotSeasonDto,
   LeagueSnapshotTeamSeasonDto,
@@ -132,6 +142,7 @@ export type {
   LeagueSnapshotLeagueScheduleDto,
   LeagueSnapshotOpponentRequirementDto,
   LeagueSnapshotPlayerDto,
+  LeagueSnapshotRotationPlanDto,
   LeagueSnapshotScheduledGameDto,
   LeagueSnapshotSeasonCalendarDto,
   LeagueSnapshotSeasonDto,
@@ -165,7 +176,21 @@ const TOP_LEVEL_KEYS = [
   'teamSeasons',
   'leagueSchedule',
   'creationMetadata',
+  'rotationPlans',
 ] as const
+
+const ROTATION_PLAN_KEYS = [
+  'version',
+  'teamId',
+  'starters',
+  'minuteTargetsSeconds',
+  'benchOrder',
+  'source',
+  'generation',
+  'autoRepair',
+] as const
+const ROTATION_GENERATION_KEYS = ['generatorVersion'] as const
+const ROTATION_AUTO_REPAIR_KEYS = ['repairVersion', 'reason'] as const
 
 const LEAGUE_KEYS = [
   'id',
@@ -379,6 +404,11 @@ export function parseLeagueSnapshot(value: unknown): LeagueSnapshot {
     '$.creationMetadata',
   )
   const registration = resolveRuleSet(creationMetadata)
+  const rotationPlans = parseRotationPlansDto(
+    source.rotationPlans,
+    '$.rotationPlans',
+    leagueFields.league,
+  )
 
   validateSnapshotCrossObjectConsistency(
     leagueFields.league,
@@ -402,6 +432,7 @@ export function parseLeagueSnapshot(value: unknown): LeagueSnapshot {
     teamSeasons: teamSeasons.map(serializeTeamSeason),
     leagueSchedule: parsedSchedule.dto,
     creationMetadata,
+    rotationPlans,
   }
 }
 
@@ -434,6 +465,53 @@ export function serializeLeagueSnapshot(
       scheduleRuleSetId: foundation.schedule.ruleSetId,
       scheduleRuleSetVersion: foundation.season.rulesVersion,
     },
+    // A new league saves no rotation plans; the editor generates a default on
+    // demand and persists only what the user saves.
+    rotationPlans: [],
+  }
+}
+
+/**
+ * Converts a domain rotation plan to its stored DTO (optional metadata becomes
+ * an explicit null key, since a stored record has an exact key set).
+ */
+export function rotationPlanToSnapshotDto(
+  plan: RotationPlanV1,
+): LeagueSnapshotRotationPlanDto {
+  return {
+    version: 1,
+    teamId: plan.teamId,
+    starters: [...plan.starters],
+    minuteTargetsSeconds: { ...plan.minuteTargetsSeconds },
+    benchOrder: [...plan.benchOrder],
+    source: plan.source,
+    generation:
+      plan.generation === undefined
+        ? null
+        : { generatorVersion: plan.generation.generatorVersion },
+    autoRepair:
+      plan.autoRepair === undefined
+        ? null
+        : {
+            repairVersion: plan.autoRepair.repairVersion,
+            reason: plan.autoRepair.reason,
+          },
+  }
+}
+
+/** Converts a stored rotation-plan DTO back to the domain shape (null → absent). */
+export function rotationPlanFromSnapshotDto(
+  dto: LeagueSnapshotRotationPlanDto,
+): RotationPlanV1 {
+  return {
+    version: 1,
+    teamId: dto.teamId,
+    starters: dto.starters,
+    minuteTargetsSeconds: dto.minuteTargetsSeconds,
+    benchOrder: dto.benchOrder,
+    source: dto.source,
+    ...(dto.generation === null ? {} : { generation: dto.generation }),
+    ...(dto.autoRepair === null ? {} : { autoRepair: dto.autoRepair }),
   }
 }
 
@@ -1249,6 +1327,182 @@ function resolveRuleSet(
     '$.creationMetadata.scheduleRuleSetId',
     `Schedule rule set ${metadata.scheduleRuleSetId} is unknown to this application version`,
   )
+}
+
+function parseRotationPlansDto(
+  value: unknown,
+  path: string,
+  league: League,
+): readonly LeagueSnapshotRotationPlanDto[] {
+  const plans = parseDenseArray(
+    value,
+    path,
+    (item, itemPath) => parseRotationPlanDto(item, itemPath, league),
+    rejectStructure,
+  )
+  const seenTeams = new Set<string>()
+  plans.forEach((plan, index) => {
+    if (seenTeams.has(plan.teamId)) {
+      throw invalid(
+        'league_snapshot.rotation_plan.duplicate_team',
+        `${path}[${index}].teamId`,
+        'Only one rotation plan is allowed per team',
+      )
+    }
+    seenTeams.add(plan.teamId)
+  })
+  return plans
+}
+
+function parseRotationPlanDto(
+  value: unknown,
+  path: string,
+  league: League,
+): LeagueSnapshotRotationPlanDto {
+  const source = expectExactRecord(
+    value,
+    ROTATION_PLAN_KEYS,
+    path,
+    rejectStructure,
+  )
+  expectLiteral(source.version, 1, `${path}.version`, rejectStructure)
+  const teamId = parseAtPath(`${path}.teamId`, source.teamId, parseTeamId)
+  if (!league.teams.some((team) => team.id === teamId)) {
+    throw invalid(
+      'league_snapshot.rotation_plan.unknown_team',
+      `${path}.teamId`,
+      'A rotation plan must reference a team in the league',
+    )
+  }
+
+  const dto: LeagueSnapshotRotationPlanDto = {
+    version: 1,
+    teamId,
+    starters: parseDenseArray(
+      source.starters,
+      `${path}.starters`,
+      (id, idPath) => parseAtPath(idPath, id, parsePlayerId),
+      rejectStructure,
+    ),
+    minuteTargetsSeconds: parseMinuteTargetsRecord(
+      source.minuteTargetsSeconds,
+      `${path}.minuteTargetsSeconds`,
+    ),
+    benchOrder: parseDenseArray(
+      source.benchOrder,
+      `${path}.benchOrder`,
+      (id, idPath) => parseAtPath(idPath, id, parsePlayerId),
+      rejectStructure,
+    ),
+    source: expectOneOf(
+      source.source,
+      ROTATION_PLAN_SOURCES,
+      `${path}.source`,
+      rejectStructure,
+    ),
+    generation: parseRotationGenerationDto(
+      source.generation,
+      `${path}.generation`,
+    ),
+    autoRepair: parseRotationAutoRepairDto(
+      source.autoRepair,
+      `${path}.autoRepair`,
+    ),
+  }
+
+  const teamPlayers = league.players.filter(
+    (player) => player.teamId === teamId,
+  )
+  const { errors } = validateRotationPlan(
+    rotationPlanFromSnapshotDto(dto),
+    teamPlayers,
+    MILESTONE_1_LEAGUE_RULES,
+  )
+  const firstError = errors[0]
+  if (firstError !== undefined) {
+    throw invalid(
+      'league_snapshot.rotation_plan.invalid',
+      `${path}.${firstError.path}`,
+      firstError.message,
+    )
+  }
+  return dto
+}
+
+function parseMinuteTargetsRecord(
+  value: unknown,
+  path: string,
+): Readonly<Record<PlayerId, number>> {
+  if (value === null || typeof value !== 'object' || Array.isArray(value)) {
+    throw invalid(
+      'league_snapshot.structure.invalid',
+      path,
+      'Expected a minute-targets record',
+    )
+  }
+  const record: Record<string, number> = {}
+  for (const key of Object.keys(value)) {
+    const keyPath = `${path}.${key}`
+    const playerId = parseAtPath(keyPath, key, parsePlayerId)
+    record[playerId] = expectSafeInteger(
+      (value as Record<string, unknown>)[key],
+      keyPath,
+      rejectStructure,
+    )
+  }
+  return record as Readonly<Record<PlayerId, number>>
+}
+
+function parseRotationGenerationDto(
+  value: unknown,
+  path: string,
+): LeagueSnapshotRotationPlanDto['generation'] {
+  if (value === null) {
+    return null
+  }
+  const source = expectExactRecord(
+    value,
+    ROTATION_GENERATION_KEYS,
+    path,
+    rejectStructure,
+  )
+  return {
+    generatorVersion: expectLiteral(
+      source.generatorVersion,
+      ROTATION_GENERATOR_VERSION,
+      `${path}.generatorVersion`,
+      rejectStructure,
+    ),
+  }
+}
+
+function parseRotationAutoRepairDto(
+  value: unknown,
+  path: string,
+): LeagueSnapshotRotationPlanDto['autoRepair'] {
+  if (value === null) {
+    return null
+  }
+  const source = expectExactRecord(
+    value,
+    ROTATION_AUTO_REPAIR_KEYS,
+    path,
+    rejectStructure,
+  )
+  return {
+    repairVersion: expectLiteral(
+      source.repairVersion,
+      ROTATION_REPAIR_VERSION,
+      `${path}.repairVersion`,
+      rejectStructure,
+    ),
+    reason: expectOneOf(
+      source.reason,
+      ROTATION_REPAIR_REASONS,
+      `${path}.reason`,
+      rejectStructure,
+    ),
+  }
 }
 
 function serializeLeague(league: League): LeagueSnapshotLeagueDto {

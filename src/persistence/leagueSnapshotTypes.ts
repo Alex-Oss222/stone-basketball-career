@@ -40,20 +40,25 @@ import type {
   SeasonPhase,
   SeasonStatus,
 } from '../domain/season'
+import type {
+  RotationPlanSource,
+  RotationRepairReason,
+  ROTATION_GENERATOR_VERSION,
+  ROTATION_REPAIR_VERSION,
+} from '../domain/rotationPlan'
 import type { TeamCompetitiveStatus } from '../domain/teamSeason'
 
 export const LEAGUE_SNAPSHOT_KIND =
   'stone-basketball-gm-league-snapshot' as const
 
 /**
- * The one current snapshot version. Deliberately monotonic — versions 1–4
+ * The one current snapshot version. Deliberately monotonic — versions 1–5
  * shipped to local browser storage during development and must be refused,
- * never mis-parsed, so this constant never resets. Version 5 is the ADR 0009
- * ratings rehaul: the stored 91 base ratings plus the measurements and 16
- * tendency families (§8C). Per §7 there is no migration — an old record offers
- * "start a new league."
+ * never mis-parsed, so this constant never resets. Version 5 was the ADR 0009
+ * ratings rehaul; version 6 (§8) adds the stored per-team `rotationPlans`. Per
+ * §7 there is no migration — an old record offers "start a new league."
  */
-export const LEAGUE_SNAPSHOT_VERSION = 5 as const
+export const LEAGUE_SNAPSHOT_VERSION = 6 as const
 
 export interface LeagueSnapshotTeamDto {
   readonly id: TeamId
@@ -192,6 +197,28 @@ export interface LeagueSnapshotCreationMetadata {
   readonly scheduleRuleSetVersion: number
 }
 
+/**
+ * A stored §8 rotation plan (one per team, at most). Mirrors the domain
+ * `RotationPlanV1` but keeps the optional generation/repair metadata as
+ * always-present nullable keys, since a stored record has an exact key set and
+ * JSON cannot carry `undefined`. Minutes are integer seconds keyed by player.
+ */
+export interface LeagueSnapshotRotationPlanDto {
+  readonly version: 1
+  readonly teamId: TeamId
+  readonly starters: readonly PlayerId[]
+  readonly minuteTargetsSeconds: Readonly<Record<PlayerId, number>>
+  readonly benchOrder: readonly PlayerId[]
+  readonly source: RotationPlanSource
+  readonly generation: {
+    readonly generatorVersion: typeof ROTATION_GENERATOR_VERSION
+  } | null
+  readonly autoRepair: {
+    readonly repairVersion: typeof ROTATION_REPAIR_VERSION
+    readonly reason: RotationRepairReason
+  } | null
+}
+
 export interface LeagueSnapshot {
   readonly kind: typeof LEAGUE_SNAPSHOT_KIND
   readonly snapshotVersion: typeof LEAGUE_SNAPSHOT_VERSION
@@ -204,6 +231,8 @@ export interface LeagueSnapshot {
   readonly teamSeasons: readonly LeagueSnapshotTeamSeasonDto[]
   readonly leagueSchedule: LeagueSnapshotLeagueScheduleDto
   readonly creationMetadata: LeagueSnapshotCreationMetadata
+  /** Saved per-team rotation plans (§8); empty until a plan is saved. */
+  readonly rotationPlans: readonly LeagueSnapshotRotationPlanDto[]
 }
 
 export interface LeagueSnapshotValidationIssue {

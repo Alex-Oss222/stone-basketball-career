@@ -384,11 +384,9 @@ function SeasonPulseCard() {
 }
 
 /*
- * DEFERRED(§8): Adjust Rotation -> 'team-rotation-gameplan' must land on the
- * functional §8 rotation editor (validate, block invalid saves, persist; a
- * visual mockup does not clear this tag).
  * DEFERRED(later): injuries, fatigue, and availability need player-health
- * systems not yet on the roadmap.
+ * systems not yet on the roadmap. (Adjust Rotation now lands on the functional
+ * §8 rotation editor — that slot is cleared.)
  */
 function RosterHealthCard({
   header,

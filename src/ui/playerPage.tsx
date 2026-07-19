@@ -27,7 +27,10 @@ export interface PlayerPageContentProps {
   /** The player's team roster, for the left rail; clicking switches player. */
   readonly roster: readonly Player[]
   readonly busy: boolean
-  readonly onBack: () => void
+  /** Optional page-mode "Back to roster" affordance; omitted in modal mode. */
+  readonly onBack?: () => void
+  /** When true the page renders inside the profile popup (no Back button). */
+  readonly modal?: boolean
   readonly onSelectPlayer: (playerId: PlayerId) => void
   /** Dev/test convenience only; the tab is transient UI state. */
   readonly initialTab?: PlayerPageTab
@@ -58,6 +61,7 @@ export function PlayerPageContent({
   roster,
   busy,
   onBack,
+  modal = false,
   onSelectPlayer,
   initialTab = 'overview',
 }: PlayerPageContentProps) {
@@ -89,14 +93,16 @@ export function PlayerPageContent({
         aria-labelledby="player-page-heading"
         aria-busy={busy}
       >
-        <button
-          type="button"
-          className="back-button"
-          onClick={onBack}
-          disabled={busy}
-        >
-          Back to roster
-        </button>
+        {onBack !== undefined && !modal && (
+          <button
+            type="button"
+            className="back-button"
+            onClick={onBack}
+            disabled={busy}
+          >
+            Back to roster
+          </button>
+        )}
 
         <header className="player-page-hero">
           <div className="player-hero-identity">
@@ -117,6 +123,12 @@ export function PlayerPageContent({
                 {formatHeight(player.measurements.wingspanInches)} · Reach{' '}
                 {formatHeight(player.measurements.standingReachInches)} · Hand{' '}
                 {player.measurements.handSizeInches}″
+              </p>
+              {/* DEFERRED(later): the player type is an authored profile (Excel
+                  profiles + position-weighted matching), not yet in the repo. */}
+              <p className="player-hero-type">
+                Player Type{' '}
+                <span className="coming-later-marker">Coming later</span>
               </p>
             </div>
           </div>

@@ -38,6 +38,11 @@ import {
 } from './persistence/indexedDbLeagueSnapshotStorage'
 import type { LeagueSnapshotRestorationResult } from './persistence/leagueSnapshotRepository'
 import type { LeagueSnapshot } from './persistence/leagueSnapshot'
+import {
+  rotationPlanFromSnapshotDto,
+  rotationPlanToSnapshotDto,
+} from './persistence/leagueSnapshot'
+import type { RotationPlanV1 } from './domain/rotationPlan'
 import { normalizeSeed } from './random/seed'
 import {
   LeaguePlayersContent,
@@ -49,6 +54,7 @@ import { HomeTodayContent } from './ui/homePage'
 import { getTeamRoster } from './ui/leagueViewModel'
 import { MedicalDepartmentContent } from './ui/medicalPage'
 import { PlayerPageContent } from './ui/playerPage'
+import { PlayerProfileModal } from './ui/playerProfileModal'
 import { RotationGameplanContent } from './ui/rotationGameplanPage'
 import { TeamOverviewContent } from './ui/teamOverviewPage'
 import {
@@ -106,6 +112,7 @@ type PendingOperation =
   | 'selecting-team'
   | 'clearing'
   | 'purging-corrupt-storage'
+  | 'saving-rotation'
 type SetupView = 'create-league' | 'choose-team' | null
 type RecoveryKind = 'invalid-save' | 'storage-error'
 
@@ -359,6 +366,26 @@ function App() {
     }
   }
 
+  async function handleSaveRotationPlan(plan: RotationPlanV1): Promise<void> {
+    if (snapshot === null || pendingOperation !== 'idle') return
+
+    setPendingOperation('saving-rotation')
+    setPersistenceError(null)
+
+    try {
+      const updated = await leagueSnapshotRepository.updateRotationPlan({
+        expectedLeagueId: snapshot.league.id,
+        expectedRevision: snapshot.revision,
+        plan: rotationPlanToSnapshotDto(plan),
+      })
+      setSnapshot(updated)
+    } catch (error) {
+      setPersistenceError(storageWriteMessage(error, 'saved'))
+    } finally {
+      setPendingOperation('idle')
+    }
+  }
+
   function handleNavigate(pageId: NavigationPageId): void {
     if (pendingOperation !== 'idle') return
 
@@ -596,15 +623,6 @@ function App() {
           onSelectTeam={(team) => void handleTeamSelection(team)}
           onMainMenu={handleMainMenu}
         />
-      ) : viewedPlayer !== null && viewedPlayerTeam !== null ? (
-        <PlayerPageContent
-          player={viewedPlayer}
-          team={viewedPlayerTeam}
-          roster={viewedPlayerRoster}
-          busy={isBusy}
-          onBack={() => setViewedPlayerId(null)}
-          onSelectPlayer={setViewedPlayerId}
-        />
       ) : activePage.availability === 'planned' ? (
         <ComingLaterPage page={activePage} section={activeSection} />
       ) : (
@@ -626,6 +644,7 @@ function App() {
             onNavigate={handleNavigate}
             onChangeTeam={handleChangeTeam}
             onOpenPlayer={handleOpenPlayer}
+            onSaveRotationPlan={(plan) => void handleSaveRotationPlan(plan)}
             onOpenGameResultPreview={
               DevGameResultPreview === null
                 ? undefined
@@ -634,6 +653,21 @@ function App() {
           />
         </AvailablePage>
       )}
+
+      {setupView === null &&
+        viewedPlayer !== null &&
+        viewedPlayerTeam !== null && (
+          <PlayerProfileModal onClose={() => setViewedPlayerId(null)}>
+            <PlayerPageContent
+              player={viewedPlayer}
+              team={viewedPlayerTeam}
+              roster={viewedPlayerRoster}
+              busy={isBusy}
+              modal
+              onSelectPlayer={setViewedPlayerId}
+            />
+          </PlayerProfileModal>
+        )}
     </ApplicationShell>
   )
 }
@@ -647,6 +681,7 @@ interface AvailableWorkspacePageProps {
   readonly onNavigate: (pageId: NavigationPageId) => void
   readonly onChangeTeam: () => void
   readonly onOpenPlayer: (playerId: PlayerId) => void
+  readonly onSaveRotationPlan: (plan: RotationPlanV1) => void
   readonly onOpenGameResultPreview?: () => void
 }
 
@@ -664,6 +699,7 @@ function AvailableWorkspacePage({
   onNavigate,
   onChangeTeam,
   onOpenPlayer,
+  onSaveRotationPlan,
   onOpenGameResultPreview,
 }: AvailableWorkspacePageProps) {
   const presentation = useMemo(
@@ -684,6 +720,7 @@ function AvailableWorkspacePage({
     onNavigate,
     onChangeTeam,
     onOpenPlayer,
+    onSaveRotationPlan,
     onOpenGameResultPreview,
   )
 }
@@ -698,6 +735,7 @@ function renderAvailablePage(
   onNavigate: (pageId: NavigationPageId) => void,
   onChangeTeam: () => void,
   onOpenPlayer: (playerId: PlayerId) => void,
+  onSaveRotationPlan: (plan: RotationPlanV1) => void,
   onOpenGameResultPreview?: () => void,
 ) {
   switch (pageId) {
@@ -732,13 +770,27 @@ function renderAvailablePage(
           onChangeTeam={onChangeTeam}
         />
       )
-    case 'team-rotation-gameplan':
+    case 'team-rotation-gameplan': {
+      const savedPlanDto =
+        snapshot === null || controlledTeam === null
+          ? undefined
+          : snapshot.rotationPlans.find(
+              (plan) => plan.teamId === controlledTeam.id,
+            )
       return (
         <RotationGameplanContent
           league={snapshot?.league ?? null}
           team={controlledTeam}
+          savedPlan={
+            savedPlanDto === undefined
+              ? null
+              : rotationPlanFromSnapshotDto(savedPlanDto)
+          }
+          busy={isBusy}
+          onSaveRotationPlan={onSaveRotationPlan}
         />
       )
+    }
     case 'team-health':
       return (
         <MedicalDepartmentContent
