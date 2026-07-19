@@ -5396,6 +5396,235 @@ tbody tr:last-child td {
   color: var(--accent-hover);
 }
 
+/* Depth & Roles (§8) */
+.depth-coverage-detail {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.depth-roles-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 1080px) {
+  .depth-roles-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.depth-grid-rows {
+  display: grid;
+  gap: 10px;
+}
+
+.depth-grid-row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+}
+
+.depth-grid-position-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--surface-soft);
+  border: 1px solid var(--line-strong);
+  font-weight: 850;
+  margin-right: 8px;
+}
+
+.depth-grid-position-name {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+}
+
+.depth-grid-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 58px;
+  align-content: center;
+}
+
+.depth-grid-empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.depth-card {
+  min-width: 150px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface-raised);
+  cursor: grab;
+  display: grid;
+  gap: 2px;
+}
+
+.depth-card:active {
+  cursor: grabbing;
+}
+
+.depth-card-selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.depth-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.depth-card-rank {
+  font-size: 0.62rem;
+  font-weight: 800;
+  color: var(--muted);
+}
+
+.depth-card-ovr {
+  font-weight: 850;
+  color: var(--accent-hover);
+  font-variant-numeric: tabular-nums;
+}
+
+.depth-card-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.depth-card-tier {
+  font-size: 0.66rem;
+  color: var(--text-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.depth-card-tag {
+  font-size: 0.62rem;
+  font-weight: 750;
+  color: var(--muted);
+}
+
+.depth-player-panel {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.depth-panel-empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+.depth-panel-identity h3 {
+  margin: 0 0 2px;
+}
+
+.depth-panel-section .panel-kicker {
+  margin-bottom: 6px;
+}
+
+.depth-panel-hint {
+  margin: 6px 0 0;
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+
+.depth-panel-role {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.depth-role-label {
+  font-size: 0.72rem;
+  color: var(--text-soft);
+}
+
+.depth-eligibility .position-chip {
+  cursor: pointer;
+  border: 1px solid var(--line-strong);
+}
+
+.depth-chip-natural {
+  border-color: var(--accent) !important;
+  color: var(--accent-ink) !important;
+  background: var(--accent) !important;
+  font-weight: 800;
+}
+
+.depth-chip-added {
+  border-color: var(--accent) !important;
+  color: var(--accent-hover) !important;
+  background: color-mix(in srgb, var(--accent) 22%, transparent) !important;
+  font-weight: 750;
+}
+
+.depth-chip-off {
+  opacity: 0.5;
+}
+
+.depth-roles-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 720px) {
+  .depth-roles-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+.depth-alert-ok {
+  margin: 6px 0 0;
+  color: var(--success);
+  font-size: 0.84rem;
+}
+
+.depth-alert-list {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  font-size: 0.82rem;
+  color: var(--text-soft);
+  display: grid;
+  gap: 3px;
+}
+
+.depth-role-balance {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.depth-role-balance li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+}
+
+.depth-role-count {
+  font-weight: 800;
+  color: var(--accent-hover);
+}
+
 .rotation-badges {
   display: flex;
   flex-wrap: wrap;

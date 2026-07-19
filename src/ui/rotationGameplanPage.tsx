@@ -28,6 +28,7 @@ import {
   totalDraftMinutes,
 } from '../app/rotationGameplanViewModel'
 import type { RotationDraft, RotationTier } from '../app/rotationGameplanViewModel'
+import { DepthRolesContent } from './depthRolesPage'
 import { formatPlayerName, getTeamRoster } from './leagueViewModel'
 
 const RULES = MILESTONE_1_LEAGUE_RULES
@@ -82,7 +83,7 @@ export function RotationGameplanContent({
   )
 }
 
-type RotationTab = 'board' | 'quarter' | 'splits'
+type RotationTab = 'board' | 'depth' | 'quarter' | 'splits'
 
 interface RotationEditorProps {
   readonly league: League
@@ -273,6 +274,14 @@ function RotationEditor({
         <button
           type="button"
           className="player-tab"
+          aria-current={activeTab === 'depth'}
+          onClick={() => setActiveTab('depth')}
+        >
+          Depth &amp; Roles
+        </button>
+        <button
+          type="button"
+          className="player-tab"
           aria-current={activeTab === 'quarter'}
           onClick={() => setActiveTab('quarter')}
         >
@@ -299,6 +308,8 @@ function RotationEditor({
           onSetMinutes={setMinutes}
           onMovePlayer={movePlayer}
         />
+      ) : activeTab === 'depth' ? (
+        <DepthRolesContent team={team} roster={roster} />
       ) : activeTab === 'quarter' ? (
         <RotationMinuteMap
           orderedRoster={orderedRoster}
