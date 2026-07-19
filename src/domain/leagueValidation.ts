@@ -7,9 +7,15 @@ import {
   PLAYER_AGE_MAX,
   PLAYER_AGE_MIN,
   PLAYERS_PER_TEAM,
+  TENDENCY_KEYS,
   isPosition,
 } from './league'
-import type { League, PlayerTendencies, TeamColors } from './league'
+import type {
+  League,
+  PlayerMeasurements,
+  PlayerTendencies,
+  TeamColors,
+} from './league'
 import {
   CATEGORY_DEFINITION_VERSION,
   DETAILED_RATING_GENERATION_VERSION,
@@ -56,12 +62,12 @@ export function validateLeague(league: League): readonly LeagueValidationIssue[]
     registerId(league.id, '$.id', issues, allIds)
   }
 
-  if (league.generatorVersion !== 1) {
+  if (league.generatorVersion !== 2) {
     addIssue(
       issues,
       'league.generator_version.invalid',
       '$.generatorVersion',
-      'Generator version must equal 1',
+      'Generator version must equal 2',
     )
   }
 
@@ -300,6 +306,8 @@ export function validateLeague(league: League): readonly LeagueValidationIssue[]
 
     validateRatings(player.ratings, `${path}.ratings`, issues)
 
+    validateMeasurements(player.measurements, `${path}.measurements`, issues)
+
     validateTendencies(player.tendencies, `${path}.tendencies`, issues)
   }
 
@@ -342,11 +350,82 @@ function validateColors(
   }
 }
 
+/** Closed-key/range block for the five raw measurements (integers). */
+const MEASUREMENT_RANGES: Readonly<
+  Record<keyof PlayerMeasurements, readonly [number, number]>
+> = {
+  heightInches: [60, 96],
+  weightPounds: [120, 400],
+  wingspanInches: [60, 100],
+  standingReachInches: [80, 130],
+  handSizeInches: [6, 13],
+}
+
+function validateMeasurements(
+  measurements: PlayerMeasurements,
+  path: string,
+  issues: LeagueValidationIssue[],
+): void {
+  if (
+    measurements === null ||
+    typeof measurements !== 'object' ||
+    Array.isArray(measurements)
+  ) {
+    addIssue(
+      issues,
+      'player.measurements.invalid',
+      path,
+      'Player measurements must be an object',
+    )
+    return
+  }
+
+  for (const key of Object.keys(MEASUREMENT_RANGES) as readonly (keyof PlayerMeasurements)[]) {
+    const [minimum, maximum] = MEASUREMENT_RANGES[key]
+    if (!isIntegerInRange(measurements[key], minimum, maximum)) {
+      addIssue(
+        issues,
+        'player.measurement.invalid',
+        `${path}.${key}`,
+        `Measurement must be an integer from ${minimum} through ${maximum}`,
+      )
+    }
+  }
+
+  for (const key of Reflect.ownKeys(measurements)) {
+    if (
+      typeof key !== 'string' ||
+      !Object.prototype.hasOwnProperty.call(MEASUREMENT_RANGES, key)
+    ) {
+      addIssue(
+        issues,
+        'player.measurement.unexpected',
+        typeof key === 'string' ? `${path}.${key}` : path,
+        'Player measurements must not contain additional keys',
+      )
+    }
+  }
+}
+
 function validateTendencies(
   tendencies: PlayerTendencies,
   path: string,
   issues: LeagueValidationIssue[],
 ): void {
+  if (
+    tendencies === null ||
+    typeof tendencies !== 'object' ||
+    Array.isArray(tendencies)
+  ) {
+    addIssue(
+      issues,
+      'player.tendencies.invalid',
+      path,
+      'Player tendencies must be an object',
+    )
+    return
+  }
+
   if (!isIntegerInRange(tendencies.usage, 1, 100)) {
     addIssue(
       issues,
@@ -356,14 +435,28 @@ function validateTendencies(
     )
   }
 
-  const otherKeys = ['rim', 'midrange', 'threePoint', 'pass', 'drawFoul'] as const
-  for (const key of otherKeys) {
+  for (const key of TENDENCY_KEYS) {
+    if (key === 'usage') continue
     if (!isIntegerInRange(tendencies[key], 0, 100)) {
       addIssue(
         issues,
         'player.tendency.invalid',
         `${path}.${key}`,
         'Tendency must be an integer from 0 through 100',
+      )
+    }
+  }
+
+  for (const key of Reflect.ownKeys(tendencies)) {
+    if (
+      typeof key !== 'string' ||
+      !(TENDENCY_KEYS as readonly string[]).includes(key)
+    ) {
+      addIssue(
+        issues,
+        'player.tendency.unexpected',
+        typeof key === 'string' ? `${path}.${key}` : path,
+        'Player tendencies must not contain additional keys',
       )
     }
   }

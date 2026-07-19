@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { parseTeamId } from '../../src/domain/ids'
-import { deriveVersionedOverall } from '../../src/domain/playerDerivations'
+import { deriveOverall } from '../../src/domain/playerDerivations'
 import type { Player } from '../../src/domain/league'
 import { generateLeague } from '../../src/generation/generateLeague'
 import {
@@ -11,11 +11,10 @@ import { formatTeamName } from '../../src/domain/league'
 
 const league = generateLeague('home-view-model-fixture')
 
-/** The documented formula: rounded mean of versioned position-weighted overalls. */
+/** The documented formula: rounded mean of the per-role-max derived overalls. */
 function expectedTeamAverage(roster: readonly Player[]): number {
   const overallSum = roster.reduce(
-    (total, player) =>
-      total + deriveVersionedOverall(player.ratings, player.primaryPosition),
+    (total, player) => total + deriveOverall(player),
     0,
   )
   return Math.round(overallSum / roster.length)

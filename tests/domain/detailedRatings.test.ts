@@ -9,6 +9,7 @@ import {
   DETAILED_RATING_MIN,
   DETAILED_RATINGS_SCHEMA_VERSION,
   SHARED_SUB_RATING_KEY,
+  SUB_RATING_CODE_BY_KEY,
   SUB_RATING_KEYS,
   deriveAllCategoryScores,
   deriveCategoryGrade,
@@ -30,13 +31,13 @@ function makeRatings(value: number): DetailedPlayerRatings {
   ) as Record<SubRatingKey, number>
 }
 
-describe('detailed-rating registry integrity (ADR 0008)', () => {
-  it('locks exactly 18 categories and 67 stored sub-ratings', () => {
-    expect(DETAILED_CATEGORY_KEYS).toHaveLength(18)
-    expect(DETAILED_CATEGORY_DEFINITIONS).toHaveLength(18)
-    expect(SUB_RATING_KEYS).toHaveLength(67)
-    expect(new Set(SUB_RATING_KEYS).size).toBe(67)
-    expect(new Set(DETAILED_CATEGORY_KEYS).size).toBe(18)
+describe('detailed-rating registry integrity (ADR 0009)', () => {
+  it('locks exactly 26 categories and 91 stored base ratings', () => {
+    expect(DETAILED_CATEGORY_KEYS).toHaveLength(26)
+    expect(DETAILED_CATEGORY_DEFINITIONS).toHaveLength(26)
+    expect(SUB_RATING_KEYS).toHaveLength(91)
+    expect(new Set(SUB_RATING_KEYS).size).toBe(91)
+    expect(new Set(DETAILED_CATEGORY_KEYS).size).toBe(26)
   })
 
   it('keeps the definition order identical to the canonical key order', () => {
@@ -45,11 +46,11 @@ describe('detailed-rating registry integrity (ADR 0008)', () => {
     ])
   })
 
-  it('references 68 weight slots: every stored key once, reboundReading twice', () => {
+  it('references 92 weight slots: every stored key once, reboundReading twice', () => {
     const references = DETAILED_CATEGORY_DEFINITIONS.flatMap((definition) =>
       definition.subRatings.map((subRating) => subRating.key),
     )
-    expect(references).toHaveLength(68)
+    expect(references).toHaveLength(92)
 
     const counts = new Map<string, number>()
     for (const key of references) {
@@ -83,7 +84,13 @@ describe('detailed-rating registry integrity (ADR 0008)', () => {
     }
   })
 
-  it('assigns every category a valid group with the ADR group sizes', () => {
+  it('assigns every category to one of four pillars with the ADR group sizes', () => {
+    expect([...DETAILED_CATEGORY_GROUPS]).toEqual([
+      'offense',
+      'defense',
+      'physical',
+      'mental',
+    ])
     const groupCounts = new Map<string, number>()
     for (const definition of DETAILED_CATEGORY_DEFINITIONS) {
       expect(DETAILED_CATEGORY_GROUPS).toContain(definition.group)
@@ -93,18 +100,16 @@ describe('detailed-rating registry integrity (ADR 0008)', () => {
       )
     }
     expect(Object.fromEntries(groupCounts)).toEqual({
-      scoring: 4,
-      creation: 2,
-      rebounding: 2,
-      defense: 4,
-      physical: 4,
-      mental: 2,
+      offense: 10,
+      defense: 6,
+      physical: 6,
+      mental: 4,
     })
   })
 
   it('keeps labels present and unique (Rebound Reading shared aside)', () => {
     const categoryLabels = DETAILED_CATEGORY_DEFINITIONS.map((d) => d.label)
-    expect(new Set(categoryLabels).size).toBe(18)
+    expect(new Set(categoryLabels).size).toBe(26)
 
     const subRatingLabels = DETAILED_CATEGORY_DEFINITIONS.flatMap((d) =>
       d.subRatings.map((s) => s.label),
@@ -113,8 +118,10 @@ describe('detailed-rating registry integrity (ADR 0008)', () => {
       expect(label.trim().length).toBeGreaterThan(0)
     }
     const uniqueLabels = new Set(subRatingLabels)
-    // 68 references, one duplicated label pair (Rebound Reading).
-    expect(uniqueLabels.size).toBe(67)
+    // 92 references minus two label collisions: Rebound Reading (the shared
+    // key, twice) and "Change of Direction" (Ball Handling and Agility both use
+    // that label for distinct keys).
+    expect(uniqueLabels.size).toBe(90)
   })
 
   it('spot-checks the distinctive ADR weights exactly', () => {
@@ -122,15 +129,34 @@ describe('detailed-rating registry integrity (ADR 0008)', () => {
       DETAILED_CATEGORY_DEFINITIONS.find((d) => d.key === category)
         ?.subRatings.find((s) => s.key === key)?.weightBps
 
-    expect(weightOf('freeThrowShooting', 'freeThrowAccuracy')).toBe(7000)
-    expect(weightOf('freeThrowShooting', 'pressureFreeThrows')).toBe(1000)
+    expect(weightOf('freeThrowShooting', 'freeThrowAccuracy')).toBe(8500)
+    expect(weightOf('freeThrowShooting', 'freeThrowConsistency')).toBe(1500)
     expect(weightOf('offensiveRebounding', 'reboundReading')).toBe(2500)
     expect(weightOf('defensiveRebounding', 'reboundReading')).toBe(2000)
-    expect(weightOf('durability', 'injuryResistance')).toBe(6000)
-    expect(weightOf('durability', 'loadDurability')).toBe(4000)
-    expect(weightOf('endurance', 'stamina')).toBe(4000)
-    expect(weightOf('passing', 'courtVision')).toBe(4000)
-    expect(weightOf('basketballIQ', 'decisionMaking')).toBe(3000)
+    expect(weightOf('durability', 'injuryResistance')).toBe(5500)
+    expect(weightOf('durability', 'loadTolerance')).toBe(4500)
+    expect(weightOf('conditioning', 'stamina')).toBe(4500)
+    expect(weightOf('passing', 'passAccuracy')).toBe(4000)
+    expect(weightOf('offensiveIQ', 'decisionMaking')).toBe(3000)
+  })
+
+  it('maps every stored key to a unique canonical attribute code (bijection)', () => {
+    const codes = SUB_RATING_KEYS.map((key) => SUB_RATING_CODE_BY_KEY[key])
+    expect(codes).toHaveLength(91)
+    expect(new Set(codes).size).toBe(91)
+    for (const code of codes) {
+      expect(typeof code).toBe('string')
+      expect(code.length).toBeGreaterThan(0)
+    }
+    // Every registry sub-rating's code matches the registry entry (first-wins
+    // for the shared key → its offensive code).
+    for (const definition of DETAILED_CATEGORY_DEFINITIONS) {
+      for (const subRating of definition.subRatings) {
+        if (subRating.key === SHARED_SUB_RATING_KEY) continue
+        expect(SUB_RATING_CODE_BY_KEY[subRating.key]).toBe(subRating.code)
+      }
+    }
+    expect(SUB_RATING_CODE_BY_KEY[SHARED_SUB_RATING_KEY]).toBe('OFF_OREB_READING')
   })
 
   it('is deeply frozen so no consumer can mutate the taxonomy', () => {
@@ -148,8 +174,8 @@ describe('detailed-rating registry integrity (ADR 0008)', () => {
   })
 
   it('pins the R2 version constants and rating bounds', () => {
-    expect(DETAILED_RATINGS_SCHEMA_VERSION).toBe(1)
-    expect(CATEGORY_DEFINITION_VERSION).toBe(1)
+    expect(DETAILED_RATINGS_SCHEMA_VERSION).toBe(2)
+    expect(CATEGORY_DEFINITION_VERSION).toBe(2)
     expect(DETAILED_RATING_MIN).toBe(0)
     expect(DETAILED_RATING_MAX).toBe(100)
     expect(CATEGORY_WEIGHT_TOTAL_BPS).toBe(10_000)
@@ -157,315 +183,145 @@ describe('detailed-rating registry integrity (ADR 0008)', () => {
 })
 
 /**
- * Independent transcription of ADR 0008 §2 — deliberately duplicated here so
- * a silent edit to the module registry (weights, labels, groups, keys, order)
- * fails against this manifest instead of the code asserting itself. Changing
- * either side is a deliberate act that bumps CATEGORY_DEFINITION_VERSION.
+ * Independent transcription of ADR 0009 §2 — deliberately duplicated here so a
+ * silent edit to the module registry (keys, order, groups) fails against this
+ * manifest instead of the code asserting itself. Changing either side is a
+ * deliberate act that bumps CATEGORY_DEFINITION_VERSION.
  */
 const EXPECTED_SUB_RATING_KEYS = [
+  // Offense
   'standingFinish',
   'drivingLayup',
   'contactFinishing',
   'dunking',
+  'foulDrawing',
+  'postControlFootwork',
   'postFinishing',
+  'postHookTouch',
+  'postFadeaway',
   'catchAndShootMid',
   'pullUpMid',
+  'movementMid',
   'contestedMid',
-  'postFadeaway',
   'catchAndShootThree',
   'pullUpThree',
   'movementThree',
   'contestedThree',
   'freeThrowAccuracy',
   'freeThrowConsistency',
-  'pressureFreeThrows',
   'passAccuracy',
   'courtVision',
   'passTiming',
   'dribbleControl',
   'ballSecurity',
   'changeOfDirection',
-  'pressureHandling',
+  'paceControl',
+  'cutTiming',
+  'relocation',
+  'screenUse',
+  'catchSecurity',
+  'screenAngle',
+  'screenTiming',
+  'rollPopTiming',
   'offensivePositioning',
-  'reboundPursuit',
   'reboundReading',
-  'secondJump',
-  'defensivePositioning',
-  'boxOutTechnique',
-  'reboundSecurity',
+  'reboundPursuit',
+  'boxOutEscape',
+  // Defense
   'onBallContainment',
   'lateralRecovery',
   'screenNavigation',
   'closeoutControl',
+  'denial',
+  'cutterTracking',
+  'offBallScreenNavigation',
   'postContainment',
-  'rimDeterrence',
-  'helpRotation',
   'paintPositioning',
+  'verticality',
+  'interiorRecovery',
   'onBallSteal',
-  'passingLaneAnticipation',
-  'deflectionTiming',
   'stripTechnique',
+  'deflectionTiming',
   'blockTiming',
-  'verticalContest',
   'helpSideBlocking',
-  'recoveryBlocking',
+  'recoveryChaseDownBlocking',
+  'defensivePositioning',
+  'boxOutTechnique',
+  'reboundSecurity',
+  // Physical
   'acceleration',
   'topSpeed',
   'lateralQuickness',
-  'agility',
+  'agilityChangeOfDirection',
+  'reactiveAgility',
+  'firstStepBurst',
+  'verticalLeap',
+  'secondJump',
+  'bodyControl',
   'lowerBodyStrength',
   'upperBodyStrength',
   'contactBalance',
-  'physicalLeverage',
   'stamina',
   'recoveryRate',
   'workloadCapacity',
-  'lateGameConditioning',
   'injuryResistance',
-  'loadDurability',
+  'loadTolerance',
+  // Mental
   'offensiveAwareness',
-  'defensiveAwareness',
+  'shotSelection',
   'decisionMaking',
+  'spacingReadReact',
+  'defensiveAwareness',
+  'anticipation',
+  'helpRecognition',
+  'rotationDiscipline',
+  'foulDiscipline',
   'competitiveness',
-  'coachability',
   'composure',
-  'workEthic',
+  'motor',
+  'focus',
+  'resilience',
+  'communication',
+  'teamwork',
+  'leadership',
 ] as const
 
-const EXPECTED_REGISTRY = [
-  {
-    key: 'insideScoring',
-    label: 'Inside Scoring',
-    group: 'scoring',
-    subRatings: [
-      { key: 'standingFinish', label: 'Standing Finish', weightBps: 1500 },
-      { key: 'drivingLayup', label: 'Driving Layup', weightBps: 2500 },
-      { key: 'contactFinishing', label: 'Contact Finishing', weightBps: 2500 },
-      { key: 'dunking', label: 'Dunking', weightBps: 1500 },
-      { key: 'postFinishing', label: 'Post Finishing', weightBps: 2000 },
-    ],
-  },
-  {
-    key: 'midRangeShooting',
-    label: 'Mid-Range Shooting',
-    group: 'scoring',
-    subRatings: [
-      { key: 'catchAndShootMid', label: 'Catch-and-Shoot Mid', weightBps: 2500 },
-      { key: 'pullUpMid', label: 'Pull-Up Mid', weightBps: 3000 },
-      { key: 'contestedMid', label: 'Contested Mid', weightBps: 2500 },
-      { key: 'postFadeaway', label: 'Post Fadeaway', weightBps: 2000 },
-    ],
-  },
-  {
-    key: 'threePointShooting',
-    label: 'Three-Point Shooting',
-    group: 'scoring',
-    subRatings: [
-      {
-        key: 'catchAndShootThree',
-        label: 'Catch-and-Shoot Three',
-        weightBps: 3000,
-      },
-      { key: 'pullUpThree', label: 'Pull-Up Three', weightBps: 2500 },
-      { key: 'movementThree', label: 'Movement Three', weightBps: 2000 },
-      { key: 'contestedThree', label: 'Contested Three', weightBps: 2500 },
-    ],
-  },
-  {
-    key: 'freeThrowShooting',
-    label: 'Free-Throw Shooting',
-    group: 'scoring',
-    subRatings: [
-      { key: 'freeThrowAccuracy', label: 'Free-Throw Accuracy', weightBps: 7000 },
-      {
-        key: 'freeThrowConsistency',
-        label: 'Free-Throw Consistency',
-        weightBps: 2000,
-      },
-      { key: 'pressureFreeThrows', label: 'Pressure Free Throws', weightBps: 1000 },
-    ],
-  },
-  {
-    key: 'passing',
-    label: 'Passing',
-    group: 'creation',
-    subRatings: [
-      { key: 'passAccuracy', label: 'Pass Accuracy', weightBps: 3500 },
-      { key: 'courtVision', label: 'Court Vision', weightBps: 4000 },
-      { key: 'passTiming', label: 'Pass Timing', weightBps: 2500 },
-    ],
-  },
-  {
-    key: 'ballHandling',
-    label: 'Ball Handling',
-    group: 'creation',
-    subRatings: [
-      { key: 'dribbleControl', label: 'Dribble Control', weightBps: 2500 },
-      { key: 'ballSecurity', label: 'Ball Security', weightBps: 3000 },
-      { key: 'changeOfDirection', label: 'Change of Direction', weightBps: 2000 },
-      { key: 'pressureHandling', label: 'Pressure Handling', weightBps: 2500 },
-    ],
-  },
-  {
-    key: 'offensiveRebounding',
-    label: 'Offensive Rebounding',
-    group: 'rebounding',
-    subRatings: [
-      {
-        key: 'offensivePositioning',
-        label: 'Offensive Positioning',
-        weightBps: 3000,
-      },
-      { key: 'reboundPursuit', label: 'Rebound Pursuit', weightBps: 2500 },
-      { key: 'reboundReading', label: 'Rebound Reading', weightBps: 2500 },
-      { key: 'secondJump', label: 'Second Jump', weightBps: 2000 },
-    ],
-  },
-  {
-    key: 'defensiveRebounding',
-    label: 'Defensive Rebounding',
-    group: 'rebounding',
-    subRatings: [
-      {
-        key: 'defensivePositioning',
-        label: 'Defensive Positioning',
-        weightBps: 2500,
-      },
-      { key: 'boxOutTechnique', label: 'Box-Out Technique', weightBps: 3000 },
-      { key: 'reboundReading', label: 'Rebound Reading', weightBps: 2000 },
-      { key: 'reboundSecurity', label: 'Rebound Security', weightBps: 2500 },
-    ],
-  },
-  {
-    key: 'perimeterDefense',
-    label: 'Perimeter Defense',
-    group: 'defense',
-    subRatings: [
-      { key: 'onBallContainment', label: 'On-Ball Containment', weightBps: 3000 },
-      { key: 'lateralRecovery', label: 'Lateral Recovery', weightBps: 2500 },
-      { key: 'screenNavigation', label: 'Screen Navigation', weightBps: 2000 },
-      { key: 'closeoutControl', label: 'Closeout Control', weightBps: 2500 },
-    ],
-  },
-  {
-    key: 'interiorDefense',
-    label: 'Interior Defense',
-    group: 'defense',
-    subRatings: [
-      { key: 'postContainment', label: 'Post Containment', weightBps: 2500 },
-      { key: 'rimDeterrence', label: 'Rim Deterrence', weightBps: 3000 },
-      { key: 'helpRotation', label: 'Help Rotation', weightBps: 2500 },
-      { key: 'paintPositioning', label: 'Paint Positioning', weightBps: 2000 },
-    ],
-  },
-  {
-    key: 'stealing',
-    label: 'Stealing',
-    group: 'defense',
-    subRatings: [
-      { key: 'onBallSteal', label: 'On-Ball Steal', weightBps: 2500 },
-      {
-        key: 'passingLaneAnticipation',
-        label: 'Passing-Lane Anticipation',
-        weightBps: 3000,
-      },
-      { key: 'deflectionTiming', label: 'Deflection Timing', weightBps: 2500 },
-      { key: 'stripTechnique', label: 'Strip Technique', weightBps: 2000 },
-    ],
-  },
-  {
-    key: 'blocking',
-    label: 'Blocking',
-    group: 'defense',
-    subRatings: [
-      { key: 'blockTiming', label: 'Block Timing', weightBps: 3000 },
-      { key: 'verticalContest', label: 'Vertical Contest', weightBps: 2500 },
-      { key: 'helpSideBlocking', label: 'Help-Side Blocking', weightBps: 2500 },
-      { key: 'recoveryBlocking', label: 'Recovery Blocking', weightBps: 2000 },
-    ],
-  },
-  {
-    key: 'speed',
-    label: 'Speed',
-    group: 'physical',
-    subRatings: [
-      { key: 'acceleration', label: 'Acceleration', weightBps: 3000 },
-      { key: 'topSpeed', label: 'Top Speed', weightBps: 2500 },
-      { key: 'lateralQuickness', label: 'Lateral Quickness', weightBps: 2500 },
-      { key: 'agility', label: 'Agility', weightBps: 2000 },
-    ],
-  },
-  {
-    key: 'strength',
-    label: 'Strength',
-    group: 'physical',
-    subRatings: [
-      { key: 'lowerBodyStrength', label: 'Lower-Body Strength', weightBps: 2500 },
-      { key: 'upperBodyStrength', label: 'Upper-Body Strength', weightBps: 2000 },
-      { key: 'contactBalance', label: 'Contact Balance', weightBps: 3000 },
-      { key: 'physicalLeverage', label: 'Physical Leverage', weightBps: 2500 },
-    ],
-  },
-  {
-    key: 'endurance',
-    label: 'Endurance',
-    group: 'physical',
-    subRatings: [
-      { key: 'stamina', label: 'Stamina', weightBps: 4000 },
-      { key: 'recoveryRate', label: 'Recovery Rate', weightBps: 2500 },
-      { key: 'workloadCapacity', label: 'Workload Capacity', weightBps: 2000 },
-      {
-        key: 'lateGameConditioning',
-        label: 'Late-Game Conditioning',
-        weightBps: 1500,
-      },
-    ],
-  },
-  {
-    key: 'durability',
-    label: 'Durability',
-    group: 'physical',
-    subRatings: [
-      { key: 'injuryResistance', label: 'Injury Resistance', weightBps: 6000 },
-      { key: 'loadDurability', label: 'Load Durability', weightBps: 4000 },
-    ],
-  },
-  {
-    key: 'basketballIQ',
-    label: 'Basketball IQ',
-    group: 'mental',
-    subRatings: [
-      { key: 'offensiveAwareness', label: 'Offensive Awareness', weightBps: 3500 },
-      { key: 'defensiveAwareness', label: 'Defensive Awareness', weightBps: 3500 },
-      { key: 'decisionMaking', label: 'Decision-Making', weightBps: 3000 },
-    ],
-  },
-  {
-    key: 'intangibles',
-    label: 'Intangibles',
-    group: 'mental',
-    subRatings: [
-      { key: 'competitiveness', label: 'Competitiveness', weightBps: 3000 },
-      { key: 'coachability', label: 'Coachability', weightBps: 2500 },
-      { key: 'composure', label: 'Composure', weightBps: 2500 },
-      { key: 'workEthic', label: 'Work Ethic', weightBps: 2000 },
-    ],
-  },
+const EXPECTED_CATEGORY_KEYS = [
+  'rimFinishing',
+  'postScoring',
+  'midRangeShooting',
+  'threePointShooting',
+  'freeThrowShooting',
+  'passing',
+  'ballHandling',
+  'offBallOffense',
+  'screening',
+  'offensiveRebounding',
+  'perimeterDefense',
+  'offBallDefense',
+  'interiorDefense',
+  'stealing',
+  'blocking',
+  'defensiveRebounding',
+  'speed',
+  'agility',
+  'explosiveness',
+  'strength',
+  'conditioning',
+  'durability',
+  'offensiveIQ',
+  'defensiveIQ',
+  'competitiveMakeup',
+  'teamLeadership',
 ] as const
 
-describe('frozen taxonomy manifest (independent ADR 0008 transcription)', () => {
-  it('pins the 67 stored keys, names and order alike', () => {
+describe('frozen taxonomy manifest (independent ADR 0009 transcription)', () => {
+  it('pins the 91 stored keys, names and order alike', () => {
     expect([...SUB_RATING_KEYS]).toEqual([...EXPECTED_SUB_RATING_KEYS])
   })
 
-  it('pins the 18 category keys in canonical order', () => {
-    expect([...DETAILED_CATEGORY_KEYS]).toEqual(
-      EXPECTED_REGISTRY.map((category) => category.key),
-    )
-  })
-
-  it('pins the entire registry — every key, label, group, and weight', () => {
-    expect(DETAILED_CATEGORY_DEFINITIONS).toEqual(EXPECTED_REGISTRY)
+  it('pins the 26 category keys in canonical order', () => {
+    expect([...DETAILED_CATEGORY_KEYS]).toEqual([...EXPECTED_CATEGORY_KEYS])
   })
 
   it('wires the definition lookup to the matching definition object', () => {
@@ -486,7 +342,7 @@ describe('detailed-rating key guards', () => {
     for (const key of DETAILED_CATEGORY_KEYS) {
       expect(isDetailedCategoryKey(key)).toBe(true)
     }
-    expect(isSubRatingKey('insideScoring')).toBe(false) // category, not sub-rating
+    expect(isSubRatingKey('rimFinishing')).toBe(false) // category, not sub-rating
     expect(isDetailedCategoryKey('standingFinish')).toBe(false)
     expect(isSubRatingKey(42)).toBe(false)
     expect(isDetailedCategoryKey(null)).toBe(false)
@@ -500,7 +356,7 @@ describe('detailed-rating key guards', () => {
 })
 
 describe('parseDetailedPlayerRatings', () => {
-  it('accepts the exact 67-key integer record without mutating it', () => {
+  it('accepts the exact 91-key integer record without mutating it', () => {
     const input = { ...makeRatings(50) }
     const parsed = parseDetailedPlayerRatings(input)
 
@@ -509,7 +365,7 @@ describe('parseDetailedPlayerRatings', () => {
     expect(Object.isFrozen(parsed)).toBe(true)
     expect(Reflect.set(parsed, 'standingFinish', 99)).toBe(false)
     expect(parsed.standingFinish).toBe(50)
-    expect(Reflect.ownKeys(parsed)).toHaveLength(67)
+    expect(Reflect.ownKeys(parsed)).toHaveLength(91)
     expect(input.standingFinish).toBe(50)
   })
 
@@ -526,7 +382,7 @@ describe('parseDetailedPlayerRatings', () => {
 
   it('rejects a missing sub-rating', () => {
     const incomplete: Record<string, number> = { ...makeRatings(50) }
-    delete incomplete.workEthic
+    delete incomplete.leadership
     expect(() => parseDetailedPlayerRatings(incomplete)).toThrowError(
       TypeError,
     )
@@ -537,10 +393,10 @@ describe('parseDetailedPlayerRatings', () => {
     expect(() => parseDetailedPlayerRatings(extra)).toThrowError(TypeError)
   })
 
-  it('rejects a legacy macro key smuggled in place of a sub-rating', () => {
+  it('rejects a legacy sub-rating smuggled in place of a current one', () => {
     const renamed: Record<string, number> = { ...makeRatings(50) }
-    delete renamed.standingFinish
-    renamed.insideScoring = 50
+    delete renamed.loadTolerance
+    renamed.loadDurability = 50
     expect(() => parseDetailedPlayerRatings(renamed)).toThrowError(TypeError)
   })
 
@@ -559,7 +415,7 @@ describe('parseDetailedPlayerRatings', () => {
     )
   })
 
-  it('round-trips a record with 67 distinct values exactly', () => {
+  it('round-trips a record with 91 distinct values exactly', () => {
     const distinct = Object.fromEntries(
       SUB_RATING_KEYS.map((key, index) => [key, index]),
     ) as Record<SubRatingKey, number>
@@ -610,21 +466,19 @@ describe('derived category scores and grades', () => {
     const ratings = parseDetailedPlayerRatings({
       ...makeRatings(50),
       freeThrowAccuracy: 90,
-      freeThrowConsistency: 90,
-      pressureFreeThrows: 89,
+      freeThrowConsistency: 89,
     })
-    // (90·7000 + 90·2000 + 89·1000) / 10000 = 89.9 — never rounded to 90.
-    expect(deriveCategoryScore(ratings, 'freeThrowShooting')).toBe(89.9)
+    // (90·8500 + 89·1500) / 10000 = 89.85 — never rounded.
+    expect(deriveCategoryScore(ratings, 'freeThrowShooting')).toBe(89.85)
   })
 
   it('grades from the unrounded score, never the rounded one', () => {
     const ratings = parseDetailedPlayerRatings({
       ...makeRatings(50),
       freeThrowAccuracy: 90,
-      freeThrowConsistency: 90,
-      pressureFreeThrows: 89,
+      freeThrowConsistency: 89,
     })
-    // 89.9 is A-; grading a rounded 90 would wrongly award A.
+    // 89.85 is A-; grading a rounded 90 would wrongly award A.
     expect(deriveCategoryGrade(ratings, 'freeThrowShooting')).toBe('A-')
   })
 
@@ -644,16 +498,16 @@ describe('derived category scores and grades', () => {
         deriveCategoryScore(base, 'defensiveRebounding'),
     ).toBeCloseTo(2, 10)
     // And nothing outside rebounding moves.
-    expect(deriveCategoryScore(better, 'insideScoring')).toBe(50)
+    expect(deriveCategoryScore(better, 'rimFinishing')).toBe(50)
   })
 
-  it('deriveAllCategoryScores covers all 18 categories in canonical order', () => {
+  it('deriveAllCategoryScores covers all 26 categories in canonical order', () => {
     const scores = deriveAllCategoryScores(
       parseDetailedPlayerRatings(makeRatings(75)),
     )
     expect(Object.keys(scores)).toEqual([...DETAILED_CATEGORY_KEYS])
     expect(Object.isFrozen(scores)).toBe(true)
-    expect(Reflect.set(scores, 'insideScoring', 0)).toBe(false)
+    expect(Reflect.set(scores, 'rimFinishing', 0)).toBe(false)
     for (const categoryKey of DETAILED_CATEGORY_KEYS) {
       expect(scores[categoryKey]).toBe(75)
     }

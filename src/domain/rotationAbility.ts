@@ -11,65 +11,31 @@ import type {
 import type { Position } from './league'
 
 /**
- * §8B R7 — the versioned rotation-ability selector: the one player evaluation
- * the §8 CPU rotation generator consumes. Weighted over the six category
- * groups per position. Versioned separately from the display Overall
+ * §8C R7 — the versioned rotation-ability selector: the one player evaluation
+ * the §8 CPU rotation generator consumes. Weighted over the four pillar groups
+ * (offense / defense / physical / mental) per position, rekeyed from the old
+ * six-group taxonomy (ADR 0009). Versioned separately from the display Overall
  * (playerDerivations.ts) so a UI recalibration can never change a CPU plan,
  * and separately from the simulation event reads (simulationReads.ts) so
  * planning weights can never change a game outcome. Derived only — never
  * stored.
  */
-export const ROTATION_ABILITY_VERSION = 1 as const
+export const ROTATION_ABILITY_VERSION = 2 as const
 export type RotationAbilityVersion = typeof ROTATION_ABILITY_VERSION
 
 export const ROTATION_ABILITY_WEIGHT_TOTAL_BPS = 10_000
 
 type GroupWeights = Readonly<Record<DetailedCategoryGroup, number>>
 
-/** Per-position group weights in basis points; each column sums to 10 000. */
+/** Per-position pillar weights in basis points; each column sums to 10 000. */
 export const ROTATION_ABILITY_GROUP_WEIGHTS_BPS: Readonly<
   Record<Position, GroupWeights>
 > = freezeGroupWeights({
-  PG: {
-    scoring: 2400,
-    creation: 2600,
-    rebounding: 400,
-    defense: 1900,
-    physical: 1500,
-    mental: 1200,
-  },
-  SG: {
-    scoring: 3000,
-    creation: 1800,
-    rebounding: 500,
-    defense: 2000,
-    physical: 1500,
-    mental: 1200,
-  },
-  SF: {
-    scoring: 2700,
-    creation: 1300,
-    rebounding: 900,
-    defense: 2200,
-    physical: 1700,
-    mental: 1200,
-  },
-  PF: {
-    scoring: 2500,
-    creation: 800,
-    rebounding: 1600,
-    defense: 2300,
-    physical: 1800,
-    mental: 1000,
-  },
-  C: {
-    scoring: 2400,
-    creation: 600,
-    rebounding: 1800,
-    defense: 2500,
-    physical: 1800,
-    mental: 900,
-  },
+  PG: { offense: 5000, defense: 2000, physical: 1500, mental: 1500 },
+  SG: { offense: 4800, defense: 2200, physical: 1500, mental: 1500 },
+  SF: { offense: 4200, defense: 2800, physical: 1600, mental: 1400 },
+  PF: { offense: 3600, defense: 3200, physical: 1800, mental: 1400 },
+  C: { offense: 3200, defense: 3600, physical: 1800, mental: 1400 },
 })
 
 interface CategoryGroupMetadata {
@@ -94,8 +60,8 @@ const CATEGORY_GROUP_METADATA: readonly CategoryGroupMetadata[] =
 export interface RotationAbility {
   /** Weighted planning ability at the position, full precision. */
   readonly ability: number
-  /** The endurance category score — minute-allocation input, full precision. */
-  readonly endurance: number
+  /** The conditioning category score — minute-allocation input, full precision. */
+  readonly conditioning: number
 }
 
 /**
@@ -121,7 +87,7 @@ export function selectRotationAbility(
 
   return Object.freeze({
     ability: ability / ROTATION_ABILITY_WEIGHT_TOTAL_BPS,
-    endurance: scores.endurance,
+    conditioning: scores.conditioning,
   })
 }
 

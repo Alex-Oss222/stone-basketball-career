@@ -27,6 +27,7 @@ import {
 import type {
   League,
   Player,
+  PlayerMeasurements,
   PlayerTendencies,
   Position,
   Team,
@@ -196,15 +197,39 @@ const PLAYER_KEYS = [
   'secondaryPosition',
   'ratingGenerationVersion',
   'ratings',
+  'measurements',
   'tendencies',
+] as const
+const MEASUREMENT_KEYS = [
+  'heightInches',
+  'weightPounds',
+  'wingspanInches',
+  'standingReachInches',
+  'handSizeInches',
 ] as const
 const TENDENCY_KEYS = [
   'usage',
   'rim',
   'midrange',
   'threePoint',
+  'catchAndShoot',
+  'pullUp',
+  'movement',
+  'drive',
+  'shoot',
   'pass',
-  'drawFoul',
+  'isolation',
+  'pickAndRoll',
+  'rollPop',
+  'postUp',
+  'cutRelocate',
+  'transition',
+  'contactSeeking',
+  'offensiveReboundCrash',
+  'stealAggression',
+  'blockAggression',
+  'passingRisk',
+  'pacePreference',
 ] as const
 
 const SEASON_KEYS = [
@@ -433,7 +458,7 @@ function parseLeagueDto(value: unknown, path: string): League {
   const source = expectExactRecord(value, LEAGUE_KEYS, path, rejectStructure)
   expectLiteral(
     source.generatorVersion,
-    1,
+    2,
     `${path}.generatorVersion`,
     rejectStructure,
   )
@@ -451,7 +476,7 @@ function parseLeagueDto(value: unknown, path: string): League {
   )
   const league: League = {
     id: parseAtPath(`${path}.id`, source.id, parseLeagueId),
-    generatorVersion: 1,
+    generatorVersion: 2,
     detailedRatingsSchemaVersion: DETAILED_RATINGS_SCHEMA_VERSION,
     categoryDefinitionVersion: CATEGORY_DEFINITION_VERSION,
     seedFingerprint: expectString(
@@ -565,6 +590,10 @@ function parsePlayerDto(value: unknown, path: string): Player {
           ),
     ratingGenerationVersion: DETAILED_RATING_GENERATION_VERSION,
     ratings: parseRatingsDto(source.ratings, `${path}.ratings`),
+    measurements: parseMeasurementsDto(
+      source.measurements,
+      `${path}.measurements`,
+    ),
     tendencies: parseTendenciesDto(source.tendencies, `${path}.tendencies`),
   }
 }
@@ -574,27 +603,69 @@ function parseRatingsDto(value: unknown, path: string): DetailedPlayerRatings {
   return parseAtPath(path, value, parseDetailedPlayerRatings)
 }
 
+function parseMeasurementsDto(value: unknown, path: string): PlayerMeasurements {
+  const source = expectExactRecord(
+    value,
+    MEASUREMENT_KEYS,
+    path,
+    rejectStructure,
+  )
+  return {
+    heightInches: expectSafeInteger(
+      source.heightInches,
+      `${path}.heightInches`,
+      rejectStructure,
+    ),
+    weightPounds: expectSafeInteger(
+      source.weightPounds,
+      `${path}.weightPounds`,
+      rejectStructure,
+    ),
+    wingspanInches: expectSafeInteger(
+      source.wingspanInches,
+      `${path}.wingspanInches`,
+      rejectStructure,
+    ),
+    standingReachInches: expectSafeInteger(
+      source.standingReachInches,
+      `${path}.standingReachInches`,
+      rejectStructure,
+    ),
+    handSizeInches: expectSafeInteger(
+      source.handSizeInches,
+      `${path}.handSizeInches`,
+      rejectStructure,
+    ),
+  }
+}
+
 function parseTendenciesDto(value: unknown, path: string): PlayerTendencies {
   const source = expectExactRecord(value, TENDENCY_KEYS, path, rejectStructure)
+  const tendency = (key: (typeof TENDENCY_KEYS)[number]): number =>
+    expectSafeInteger(source[key], `${path}.${key}`, rejectStructure)
   return {
-    usage: expectSafeInteger(source.usage, `${path}.usage`, rejectStructure),
-    rim: expectSafeInteger(source.rim, `${path}.rim`, rejectStructure),
-    midrange: expectSafeInteger(
-      source.midrange,
-      `${path}.midrange`,
-      rejectStructure,
-    ),
-    threePoint: expectSafeInteger(
-      source.threePoint,
-      `${path}.threePoint`,
-      rejectStructure,
-    ),
-    pass: expectSafeInteger(source.pass, `${path}.pass`, rejectStructure),
-    drawFoul: expectSafeInteger(
-      source.drawFoul,
-      `${path}.drawFoul`,
-      rejectStructure,
-    ),
+    usage: tendency('usage'),
+    rim: tendency('rim'),
+    midrange: tendency('midrange'),
+    threePoint: tendency('threePoint'),
+    catchAndShoot: tendency('catchAndShoot'),
+    pullUp: tendency('pullUp'),
+    movement: tendency('movement'),
+    drive: tendency('drive'),
+    shoot: tendency('shoot'),
+    pass: tendency('pass'),
+    isolation: tendency('isolation'),
+    pickAndRoll: tendency('pickAndRoll'),
+    rollPop: tendency('rollPop'),
+    postUp: tendency('postUp'),
+    cutRelocate: tendency('cutRelocate'),
+    transition: tendency('transition'),
+    contactSeeking: tendency('contactSeeking'),
+    offensiveReboundCrash: tendency('offensiveReboundCrash'),
+    stealAggression: tendency('stealAggression'),
+    blockAggression: tendency('blockAggression'),
+    passingRisk: tendency('passingRisk'),
+    pacePreference: tendency('pacePreference'),
   }
 }
 
@@ -1210,6 +1281,7 @@ function serializeLeague(league: League): LeagueSnapshotLeagueDto {
       secondaryPosition: player.secondaryPosition,
       ratingGenerationVersion: player.ratingGenerationVersion,
       ratings: { ...player.ratings },
+      measurements: { ...player.measurements },
       tendencies: { ...player.tendencies },
     })),
   }

@@ -28,28 +28,33 @@
 > exactly `src/domain/gameResult.ts`; this document does not get to invent a
 > different shape.
 
-## §8B R8 — frozen rating reads (IMPLEMENTED, 2026-07-18)
+## §8C R8 — frozen rating reads (IMPLEMENTED, 2026-07-19)
 
 Unlike the rest of this document, this section describes **shipping code**:
-`SIM_RATING_READ_VERSION = 1` in `src/domain/simulationReads.ts`. The
-simulation may read player sub-ratings **only** through these versioned event
-selectors — never letter grades, derived category scores, the display
-Overall, rotation ability, or the raw stored record. A test
+`SIM_RATING_READ_VERSION = 2` in `src/domain/simulationReads.ts`, re-derived
+over the 91 base ratings of ADR 0009. The simulation may read player
+sub-ratings **only** through these versioned event selectors — never letter
+grades, derived category scores, the display Overall, rotation ability, or the
+raw stored record. Each event reads **base** ratings only, never a
+removed-derived shortcut. A test
 (`tests/domain/simulationReadsAndAbility.test.ts`) keeps this table and the
 registry in exact agreement, and an architecture guard forbids
 `src/simulation/` from importing the rating domain directly.
 
-Rules, frozen at R8:
+Rules, frozen at R8 (ADR 0009):
 
-- **Durability and Intangibles never enter possession events** (ADR 0008
-  review decisions). `injuryResistance` and `loadDurability` feed only the
-  future injury system; `competitiveness`, `coachability`, `composure`, and
-  `workEthic` feed only development, coach-fit, and morale/clutch systems.
+- **Eight sub-ratings never enter possession events.** The two Durability keys
+  (`injuryResistance`, `loadTolerance`) feed Availability and the injury system
+  only; the three Team & Leadership keys (`communication`, `teamwork`,
+  `leadership`) and the development/morale-facing Competitive Makeup keys
+  (`competitiveness`, `focus`, `resilience`) feed morale and development, not
+  shot-making. Composure and Motor stay readable (pressure/late-game and
+  hustle/rebounding respectively).
 - Display weights (`CATEGORY_DEFINITION_VERSION`, `OVERALL_MODEL_VERSION`),
   planning weights (`ROTATION_ABILITY_VERSION`), and these simulation reads
   (`SIM_RATING_READ_VERSION`) are **independent version axes** — changing one
   can never change the others' outputs.
-- The v1 factor per event is the **unweighted mean** of its dependency list at
+- The factor per event is the **unweighted mean** of its dependency list at
   full precision. Per-dependency weighting inside an event is a §9 formula
   decision and bumps `SIM_RATING_READ_VERSION`.
 - Changing any dependency list bumps the version and requires new golden
@@ -59,25 +64,30 @@ Rules, frozen at R8:
 
 | Event | Sub-ratings read |
 | --- | --- |
-| `shotSelection` | `decisionMaking`, `offensiveAwareness` |
-| `rimShotResolution` | `standingFinish`, `drivingLayup`, `contactFinishing`, `dunking`, `postFinishing` |
-| `midRangeShotResolution` | `catchAndShootMid`, `pullUpMid`, `contestedMid`, `postFadeaway` |
+| `shotSelection` | `shotSelection`, `decisionMaking`, `offensiveAwareness`, `spacingReadReact` |
+| `rimShotResolution` | `standingFinish`, `drivingLayup`, `contactFinishing`, `dunking` |
+| `postScoringResolution` | `postControlFootwork`, `postFinishing`, `postHookTouch`, `postFadeaway` |
+| `midRangeShotResolution` | `catchAndShootMid`, `pullUpMid`, `movementMid`, `contestedMid` |
 | `threePointShotResolution` | `catchAndShootThree`, `pullUpThree`, `movementThree`, `contestedThree` |
-| `freeThrowResolution` | `freeThrowAccuracy`, `freeThrowConsistency`, `pressureFreeThrows` |
+| `freeThrowResolution` | `freeThrowAccuracy`, `freeThrowConsistency` |
+| `foulDrawingResolution` | `foulDrawing` |
 | `passResolution` | `passAccuracy`, `courtVision`, `passTiming` |
-| `turnoverResolution` | `ballSecurity`, `pressureHandling`, `dribbleControl`, `changeOfDirection`, `decisionMaking` |
-| `stealResolution` | `onBallSteal`, `passingLaneAnticipation`, `deflectionTiming`, `stripTechnique` |
-| `blockResolution` | `blockTiming`, `verticalContest`, `helpSideBlocking`, `recoveryBlocking` |
-| `offensiveReboundResolution` | `offensivePositioning`, `reboundPursuit`, `reboundReading`, `secondJump` |
+| `turnoverResolution` | `ballSecurity`, `dribbleControl`, `changeOfDirection`, `paceControl`, `decisionMaking` |
+| `offBallOffenseResolution` | `cutTiming`, `relocation`, `screenUse`, `catchSecurity` |
+| `screeningResolution` | `screenAngle`, `screenTiming`, `rollPopTiming` |
+| `stealResolution` | `onBallSteal`, `anticipation`, `deflectionTiming`, `stripTechnique` |
+| `blockResolution` | `blockTiming`, `verticality`, `helpSideBlocking`, `recoveryChaseDownBlocking` |
+| `offensiveReboundResolution` | `offensivePositioning`, `reboundPursuit`, `reboundReading`, `boxOutEscape`, `secondJump`, `motor` |
 | `defensiveReboundResolution` | `defensivePositioning`, `boxOutTechnique`, `reboundReading`, `reboundSecurity` |
-| `interiorDefenseResolution` | `postContainment`, `rimDeterrence`, `helpRotation`, `paintPositioning` |
+| `interiorDefenseResolution` | `postContainment`, `paintPositioning`, `verticality`, `interiorRecovery` |
 | `perimeterDefenseResolution` | `onBallContainment`, `lateralRecovery`, `screenNavigation`, `closeoutControl` |
-| `fatigueResolution` | `stamina`, `recoveryRate`, `workloadCapacity`, `lateGameConditioning` |
-| `physicalMatchup` | `acceleration`, `topSpeed`, `lateralQuickness`, `agility`, `lowerBodyStrength`, `upperBodyStrength`, `contactBalance`, `physicalLeverage` |
-| `defensiveAwarenessRead` | `defensiveAwareness` |
+| `offBallDefenseResolution` | `denial`, `cutterTracking`, `offBallScreenNavigation` |
+| `defensiveIQRead` | `defensiveAwareness`, `helpRecognition`, `rotationDiscipline`, `foulDiscipline` |
+| `fatigueResolution` | `stamina`, `recoveryRate`, `workloadCapacity`, `composure` |
+| `physicalMatchup` | `acceleration`, `topSpeed`, `lateralQuickness`, `agilityChangeOfDirection`, `reactiveAgility`, `firstStepBurst`, `verticalLeap`, `bodyControl`, `lowerBodyStrength`, `upperBodyStrength`, `contactBalance` |
 
-Coverage: the sixteen events read exactly the 61 possession-relevant
-sub-ratings (67 stored minus the six forbidden), each at least once. The
+Coverage: the twenty-one events read exactly the 83 possession-relevant
+sub-ratings (91 stored minus the eight forbidden), each at least once. The
 tendency-normalization formula and game-seed derivation remain §9 decisions,
 recorded here when the kernel lands.
 

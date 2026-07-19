@@ -1,7 +1,7 @@
 import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import { generateLeague } from '../../src/generation/generateLeague'
-import { deriveVersionedOverall } from '../../src/domain/playerDerivations'
+import { deriveOverall } from '../../src/domain/playerDerivations'
 import { getTeamRoster } from '../../src/ui/leagueViewModel'
 import { PlayerQuickView } from '../../src/ui/playerQuickView'
 
@@ -16,9 +16,7 @@ describe('Player Quick View', () => {
   it('shows real identity and the derived Overall', () => {
     expect(markup).toContain(`${player.firstName} ${player.lastName}`)
     expect(markup).toContain('OVR')
-    expect(markup).toContain(
-      String(deriveVersionedOverall(player.ratings, player.primaryPosition)),
-    )
+    expect(markup).toContain(String(deriveOverall(player)))
     // The player's primary position is marked as a natural fit.
     expect(markup).toContain('Natural')
   })
@@ -58,14 +56,21 @@ describe('Player Quick View', () => {
     expect(markup.match(/class="pqv-field-rows"/g)).toHaveLength(3)
   })
 
-  it('is a pure hover preview: no grades, no health, no actions, no potential', () => {
+  it('always shows the Overview/Health/Development tab strip, but no grades, action buttons, or potential', () => {
+    // The tab strip is always present (not pin-gated).
+    for (const tab of ['Overview', 'Health', 'Development']) {
+      expect(markup).toContain(tab)
+    }
+    // The only buttons are the three tabs — no action buttons, no close button
+    // (that arrives only when pinned).
+    expect(markup.match(/<button/g)).toHaveLength(3)
+    expect(markup).not.toContain('Close quick view')
+    // Still a display-only preview: no grades, no Potential.
     expect(markup).not.toContain('grade-badge')
-    expect(markup).not.toContain('Health')
-    expect(markup).not.toContain('<button')
     expect(markup).not.toContain('Potential')
   })
 
-  it('pinned mode adds the tab strip, close button, and Health/Development slots', () => {
+  it('pinned mode keeps the tab strip and adds the close button and Health/Development slots', () => {
     const pinnedMarkup = renderToStaticMarkup(
       <PlayerQuickView
         player={player}

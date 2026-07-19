@@ -34,6 +34,7 @@ import {
 } from '../../src/generation/generateDetailedRatings'
 import {
   LEAGUE_RANDOM_STREAM_LABEL,
+  deriveMeasurementSeed,
   generateLeague,
   generateLeagueWithRandomSource,
 } from '../../src/generation/generateLeague'
@@ -62,7 +63,7 @@ describe('generateLeague determinism', () => {
     expect(generateLeagueWithRandomSource(normalizedSeed, random)).toEqual(league)
   })
 
-  it('draws every rating from the three labeled detailed streams only', () => {
+  it('draws every rating and measurement from the labeled per-player streams only', () => {
     const normalizedSeed = normalizeSeed(FIXTURE_SEED)
     const leagueSeed = deriveSeed(normalizedSeed, LEAGUE_RANDOM_STREAM_LABEL)
     const random = createRandomSource(leagueSeed)
@@ -84,13 +85,15 @@ describe('generateLeague determinism', () => {
         ...SUB_RATING_KEYS.map((subRatingKey) =>
           deriveDetailedSkillSeed(leagueSeed, player.id, subRatingKey),
         ),
+        deriveMeasurementSeed(leagueSeed, player.id),
       ]),
     )
 
-    // Quality + 18 category + 67 skill streams per player, nothing else.
+    // Quality + 26 category + 91 skill + 1 measurement stream per player.
     expect(new Set(observedRatingSeeds)).toEqual(expectedSeeds)
     expect(expectedSeeds.size).toBe(
-      LEAGUE_PLAYER_COUNT * (1 + DETAILED_CATEGORY_KEYS.length + SUB_RATING_KEYS.length),
+      LEAGUE_PLAYER_COUNT *
+        (1 + DETAILED_CATEGORY_KEYS.length + SUB_RATING_KEYS.length + 1),
     )
   })
 
@@ -127,14 +130,16 @@ describe('generateLeague determinism', () => {
     expect(reverse).toEqual(forward)
   })
 
-  it('pins the version 1 fingerprint and first generated records', () => {
+  it('pins the version 2 fingerprint and first generated records', () => {
     expect({
       id: league.id,
+      generatorVersion: league.generatorVersion,
       seedFingerprint: league.seedFingerprint,
       team: league.teams[0],
       player: league.players[0],
     }).toEqual({
       id: 'league_43879753',
+      generatorVersion: 2,
       seedFingerprint: '43879753',
       team: {
         id: 'team_43879753_01',
@@ -157,39 +162,54 @@ describe('generateLeague determinism', () => {
         jerseyNumber: 83,
         primaryPosition: 'C',
         secondaryPosition: null,
-        ratingGenerationVersion: 1,
+        ratingGenerationVersion: 2,
         ratings: {
-          standingFinish: 93, drivingLayup: 98, contactFinishing: 96,
-          dunking: 89, postFinishing: 89, catchAndShootMid: 71, pullUpMid: 65,
-          contestedMid: 69, postFadeaway: 67, catchAndShootThree: 62,
-          pullUpThree: 68, movementThree: 69, contestedThree: 70,
-          freeThrowAccuracy: 78, freeThrowConsistency: 84,
-          pressureFreeThrows: 76, passAccuracy: 70, courtVision: 70,
-          passTiming: 71, dribbleControl: 79, ballSecurity: 76,
-          changeOfDirection: 80, pressureHandling: 75,
-          offensivePositioning: 83, reboundPursuit: 86, reboundReading: 98,
-          secondJump: 83, defensivePositioning: 97, boxOutTechnique: 92,
-          reboundSecurity: 92, onBallContainment: 82, lateralRecovery: 83,
-          screenNavigation: 82, closeoutControl: 78, postContainment: 87,
-          rimDeterrence: 94, helpRotation: 87, paintPositioning: 95,
-          onBallSteal: 82, passingLaneAnticipation: 85, deflectionTiming: 81,
-          stripTechnique: 85, blockTiming: 96, verticalContest: 98,
-          helpSideBlocking: 92, recoveryBlocking: 99, acceleration: 81,
-          topSpeed: 71, lateralQuickness: 81, agility: 72,
-          lowerBodyStrength: 89, upperBodyStrength: 100, contactBalance: 95,
-          physicalLeverage: 89, stamina: 84, recoveryRate: 86,
-          workloadCapacity: 85, lateGameConditioning: 82,
-          injuryResistance: 70, loadDurability: 74, offensiveAwareness: 79,
-          defensiveAwareness: 79, decisionMaking: 86, competitiveness: 84,
-          coachability: 82, composure: 82, workEthic: 75,
+          standingFinish: 78, drivingLayup: 85, contactFinishing: 80,
+          dunking: 85, foulDrawing: 88, postControlFootwork: 97,
+          postFinishing: 98, postHookTouch: 94, postFadeaway: 100,
+          catchAndShootMid: 78, pullUpMid: 81, movementMid: 79,
+          contestedMid: 80, catchAndShootThree: 66, pullUpThree: 57,
+          movementThree: 65, contestedThree: 58, freeThrowAccuracy: 72,
+          freeThrowConsistency: 76, passAccuracy: 64, courtVision: 76,
+          passTiming: 71, dribbleControl: 56, ballSecurity: 56,
+          changeOfDirection: 60, paceControl: 62, cutTiming: 71,
+          relocation: 77, screenUse: 81, catchSecurity: 69, screenAngle: 95,
+          screenTiming: 99, rollPopTiming: 94, offensivePositioning: 93,
+          reboundReading: 97, reboundPursuit: 91, boxOutEscape: 99,
+          onBallContainment: 71, lateralRecovery: 69, screenNavigation: 67,
+          closeoutControl: 72, denial: 78, cutterTracking: 70,
+          offBallScreenNavigation: 72, postContainment: 89,
+          paintPositioning: 80, verticality: 83, interiorRecovery: 77,
+          onBallSteal: 70, stripTechnique: 73, deflectionTiming: 71,
+          blockTiming: 85, helpSideBlocking: 84,
+          recoveryChaseDownBlocking: 92, defensivePositioning: 92,
+          boxOutTechnique: 99, reboundSecurity: 98, acceleration: 74,
+          topSpeed: 79, lateralQuickness: 81, agilityChangeOfDirection: 78,
+          reactiveAgility: 73, firstStepBurst: 73, verticalLeap: 77,
+          secondJump: 72, bodyControl: 76, lowerBodyStrength: 86,
+          upperBodyStrength: 86, contactBalance: 88, stamina: 82,
+          recoveryRate: 83, workloadCapacity: 71, injuryResistance: 73,
+          loadTolerance: 75, offensiveAwareness: 75, shotSelection: 69,
+          decisionMaking: 74, spacingReadReact: 73, defensiveAwareness: 83,
+          anticipation: 86, helpRecognition: 89, rotationDiscipline: 79,
+          foulDiscipline: 82, competitiveness: 75, composure: 80, motor: 69,
+          focus: 68, resilience: 75, communication: 70, teamwork: 72,
+          leadership: 80,
+        },
+        measurements: {
+          heightInches: 84,
+          weightPounds: 269,
+          wingspanInches: 90,
+          standingReachInches: 115,
+          handSizeInches: 10,
         },
         tendencies: {
-          usage: 47,
-          rim: 67,
-          midrange: 18,
-          threePoint: 12,
-          pass: 30,
-          drawFoul: 73,
+          usage: 47, rim: 67, midrange: 18, threePoint: 12,
+          catchAndShoot: 37, pullUp: 73, movement: 20, drive: 22, shoot: 22,
+          pass: 26, isolation: 30, pickAndRoll: 14, rollPop: 78, postUp: 27,
+          cutRelocate: 60, transition: 30, contactSeeking: 36,
+          offensiveReboundCrash: 59, stealAggression: 51, blockAggression: 19,
+          passingRisk: 47, pacePreference: 55,
         },
       },
     })

@@ -40,132 +40,107 @@ const GOLDEN_PLAYER_IDS = {
 } as const
 
 /**
- * Golden vectors — full 67-value outputs pinned for one player per position
- * under DETAILED_RATING_GENERATION_VERSION 1. An intentional generator change
+ * Golden vectors — full 91-value outputs pinned for one player per position
+ * under DETAILED_RATING_GENERATION_VERSION 2. An intentional generator change
  * must bump the version and deliberately regenerate these; an accidental
  * change fails here.
  */
 const GOLDEN_VECTORS: Readonly<Record<Position, DetailedPlayerRatings>> = {
   PG: {
-    standingFinish: 53, drivingLayup: 57, contactFinishing: 58, dunking: 64,
-    postFinishing: 62, catchAndShootMid: 66, pullUpMid: 65, contestedMid: 64,
-    postFadeaway: 60, catchAndShootThree: 65, pullUpThree: 69,
-    movementThree: 62, contestedThree: 67, freeThrowAccuracy: 57,
-    freeThrowConsistency: 46, pressureFreeThrows: 49, passAccuracy: 62,
-    courtVision: 64, passTiming: 59, dribbleControl: 65, ballSecurity: 71,
-    changeOfDirection: 72, pressureHandling: 73, offensivePositioning: 47,
-    reboundPursuit: 52, reboundReading: 51, secondJump: 44,
-    defensivePositioning: 42, boxOutTechnique: 42, reboundSecurity: 37,
-    onBallContainment: 64, lateralRecovery: 68, screenNavigation: 67,
-    closeoutControl: 72, postContainment: 41, rimDeterrence: 39,
-    helpRotation: 44, paintPositioning: 47, onBallSteal: 57,
-    passingLaneAnticipation: 63, deflectionTiming: 60, stripTechnique: 58,
-    blockTiming: 37, verticalContest: 35, helpSideBlocking: 41,
-    recoveryBlocking: 44, acceleration: 71, topSpeed: 61,
-    lateralQuickness: 65, agility: 69, lowerBodyStrength: 50,
-    upperBodyStrength: 56, contactBalance: 56, physicalLeverage: 55,
-    stamina: 63, recoveryRate: 55, workloadCapacity: 61,
-    lateGameConditioning: 64, injuryResistance: 49, loadDurability: 51,
-    offensiveAwareness: 61, defensiveAwareness: 62, decisionMaking: 64,
-    competitiveness: 50, coachability: 52, composure: 50, workEthic: 57,
+    standingFinish: 63, drivingLayup: 65, contactFinishing: 71, dunking: 61, foulDrawing: 72, postControlFootwork: 45,
+    postFinishing: 56, postHookTouch: 56, postFadeaway: 55, catchAndShootMid: 71, pullUpMid: 73, movementMid: 74,
+    contestedMid: 77, catchAndShootThree: 78, pullUpThree: 68, movementThree: 70, contestedThree: 78, freeThrowAccuracy: 73,
+    freeThrowConsistency: 64, passAccuracy: 78, courtVision: 85, passTiming: 85, dribbleControl: 86, ballSecurity: 81,
+    changeOfDirection: 89, paceControl: 93, cutTiming: 62, relocation: 66, screenUse: 64, catchSecurity: 68,
+    screenAngle: 58, screenTiming: 57, rollPopTiming: 53, offensivePositioning: 69, reboundReading: 68, reboundPursuit: 61,
+    boxOutEscape: 65, onBallContainment: 76, lateralRecovery: 85, screenNavigation: 86, closeoutControl: 78, denial: 65,
+    cutterTracking: 71, offBallScreenNavigation: 72, postContainment: 52, paintPositioning: 57, verticality: 55, interiorRecovery: 58,
+    onBallSteal: 74, stripTechnique: 66, deflectionTiming: 77, blockTiming: 64, helpSideBlocking: 64, recoveryChaseDownBlocking: 63,
+    defensivePositioning: 66, boxOutTechnique: 76, reboundSecurity: 68, acceleration: 79, topSpeed: 77, lateralQuickness: 81,
+    agilityChangeOfDirection: 86, reactiveAgility: 85, firstStepBurst: 74, verticalLeap: 71, secondJump: 77, bodyControl: 71,
+    lowerBodyStrength: 54, upperBodyStrength: 59, contactBalance: 56, stamina: 76, recoveryRate: 78, workloadCapacity: 82,
+    injuryResistance: 58, loadTolerance: 61, offensiveAwareness: 83, shotSelection: 82, decisionMaking: 80, spacingReadReact: 74,
+    defensiveAwareness: 64, anticipation: 64, helpRecognition: 75, rotationDiscipline: 73, foulDiscipline: 71, competitiveness: 70,
+    composure: 67, motor: 62, focus: 62, resilience: 61, communication: 77, teamwork: 78,
+    leadership: 80,
   },
   SG: {
-    standingFinish: 83, drivingLayup: 72, contactFinishing: 79, dunking: 83,
-    postFinishing: 77, catchAndShootMid: 76, pullUpMid: 71, contestedMid: 78,
-    postFadeaway: 76, catchAndShootThree: 68, pullUpThree: 79,
-    movementThree: 77, contestedThree: 71, freeThrowAccuracy: 82,
-    freeThrowConsistency: 74, pressureFreeThrows: 80, passAccuracy: 74,
-    courtVision: 69, passTiming: 74, dribbleControl: 71, ballSecurity: 66,
-    changeOfDirection: 74, pressureHandling: 72, offensivePositioning: 63,
-    reboundPursuit: 56, reboundReading: 67, secondJump: 61,
-    defensivePositioning: 63, boxOutTechnique: 63, reboundSecurity: 75,
-    onBallContainment: 63, lateralRecovery: 63, screenNavigation: 61,
-    closeoutControl: 64, postContainment: 75, rimDeterrence: 72,
-    helpRotation: 69, paintPositioning: 74, onBallSteal: 59,
-    passingLaneAnticipation: 61, deflectionTiming: 70, stripTechnique: 59,
-    blockTiming: 58, verticalContest: 62, helpSideBlocking: 64,
-    recoveryBlocking: 54, acceleration: 74, topSpeed: 63,
-    lateralQuickness: 75, agility: 72, lowerBodyStrength: 68,
-    upperBodyStrength: 68, contactBalance: 71, physicalLeverage: 69,
-    stamina: 75, recoveryRate: 77, workloadCapacity: 71,
-    lateGameConditioning: 73, injuryResistance: 69, loadDurability: 63,
-    offensiveAwareness: 84, defensiveAwareness: 81, decisionMaking: 76,
-    competitiveness: 68, coachability: 60, composure: 67, workEthic: 60,
+    standingFinish: 66, drivingLayup: 60, contactFinishing: 67, dunking: 61, foulDrawing: 67, postControlFootwork: 40,
+    postFinishing: 41, postHookTouch: 41, postFadeaway: 40, catchAndShootMid: 59, pullUpMid: 61, movementMid: 60,
+    contestedMid: 59, catchAndShootThree: 66, pullUpThree: 63, movementThree: 70, contestedThree: 66, freeThrowAccuracy: 59,
+    freeThrowConsistency: 57, passAccuracy: 71, courtVision: 69, passTiming: 63, dribbleControl: 57, ballSecurity: 50,
+    changeOfDirection: 47, paceControl: 52, cutTiming: 53, relocation: 52, screenUse: 52, catchSecurity: 55,
+    screenAngle: 45, screenTiming: 50, rollPopTiming: 48, offensivePositioning: 41, reboundReading: 49, reboundPursuit: 38,
+    boxOutEscape: 42, onBallContainment: 62, lateralRecovery: 61, screenNavigation: 65, closeoutControl: 58, denial: 48,
+    cutterTracking: 45, offBallScreenNavigation: 50, postContainment: 50, paintPositioning: 58, verticality: 51, interiorRecovery: 55,
+    onBallSteal: 61, stripTechnique: 56, deflectionTiming: 61, blockTiming: 45, helpSideBlocking: 45, recoveryChaseDownBlocking: 47,
+    defensivePositioning: 55, boxOutTechnique: 57, reboundSecurity: 57, acceleration: 54, topSpeed: 61, lateralQuickness: 63,
+    agilityChangeOfDirection: 53, reactiveAgility: 57, firstStepBurst: 64, verticalLeap: 55, secondJump: 61, bodyControl: 53,
+    lowerBodyStrength: 61, upperBodyStrength: 60, contactBalance: 51, stamina: 54, recoveryRate: 51, workloadCapacity: 49,
+    injuryResistance: 65, loadTolerance: 63, offensiveAwareness: 67, shotSelection: 65, decisionMaking: 65, spacingReadReact: 60,
+    defensiveAwareness: 57, anticipation: 61, helpRecognition: 61, rotationDiscipline: 63, foulDiscipline: 57, competitiveness: 63,
+    composure: 63, motor: 55, focus: 57, resilience: 57, communication: 45, teamwork: 45,
+    leadership: 44,
   },
   SF: {
-    standingFinish: 68, drivingLayup: 76, contactFinishing: 71, dunking: 65,
-    postFinishing: 72, catchAndShootMid: 70, pullUpMid: 66, contestedMid: 75,
-    postFadeaway: 75, catchAndShootThree: 70, pullUpThree: 66,
-    movementThree: 69, contestedThree: 70, freeThrowAccuracy: 60,
-    freeThrowConsistency: 57, pressureFreeThrows: 68, passAccuracy: 57,
-    courtVision: 59, passTiming: 61, dribbleControl: 47, ballSecurity: 49,
-    changeOfDirection: 56, pressureHandling: 47, offensivePositioning: 64,
-    reboundPursuit: 63, reboundReading: 55, secondJump: 53,
-    defensivePositioning: 58, boxOutTechnique: 53, reboundSecurity: 53,
-    onBallContainment: 62, lateralRecovery: 63, screenNavigation: 55,
-    closeoutControl: 56, postContainment: 67, rimDeterrence: 63,
-    helpRotation: 72, paintPositioning: 65, onBallSteal: 48,
-    passingLaneAnticipation: 59, deflectionTiming: 47, stripTechnique: 50,
-    blockTiming: 66, verticalContest: 68, helpSideBlocking: 67,
-    recoveryBlocking: 56, acceleration: 52, topSpeed: 57,
-    lateralQuickness: 64, agility: 58, lowerBodyStrength: 54,
-    upperBodyStrength: 62, contactBalance: 63, physicalLeverage: 55,
-    stamina: 52, recoveryRate: 60, workloadCapacity: 60,
-    lateGameConditioning: 57, injuryResistance: 59, loadDurability: 51,
-    offensiveAwareness: 49, defensiveAwareness: 60, decisionMaking: 57,
-    competitiveness: 54, coachability: 53, composure: 46, workEthic: 58,
+    standingFinish: 60, drivingLayup: 52, contactFinishing: 57, dunking: 55, foulDrawing: 58, postControlFootwork: 54,
+    postFinishing: 59, postHookTouch: 56, postFadeaway: 50, catchAndShootMid: 51, pullUpMid: 49, movementMid: 44,
+    contestedMid: 47, catchAndShootThree: 54, pullUpThree: 54, movementThree: 57, contestedThree: 58, freeThrowAccuracy: 52,
+    freeThrowConsistency: 52, passAccuracy: 49, courtVision: 45, passTiming: 48, dribbleControl: 46, ballSecurity: 40,
+    changeOfDirection: 40, paceControl: 45, cutTiming: 52, relocation: 52, screenUse: 52, catchSecurity: 48,
+    screenAngle: 63, screenTiming: 61, rollPopTiming: 59, offensivePositioning: 60, reboundReading: 56, reboundPursuit: 61,
+    boxOutEscape: 53, onBallContainment: 47, lateralRecovery: 50, screenNavigation: 56, closeoutControl: 47, denial: 50,
+    cutterTracking: 53, offBallScreenNavigation: 58, postContainment: 54, paintPositioning: 47, verticality: 54, interiorRecovery: 55,
+    onBallSteal: 49, stripTechnique: 50, deflectionTiming: 48, blockTiming: 45, helpSideBlocking: 47, recoveryChaseDownBlocking: 41,
+    defensivePositioning: 44, boxOutTechnique: 48, reboundSecurity: 54, acceleration: 64, topSpeed: 62, lateralQuickness: 58,
+    agilityChangeOfDirection: 55, reactiveAgility: 58, firstStepBurst: 45, verticalLeap: 50, secondJump: 55, bodyControl: 55,
+    lowerBodyStrength: 41, upperBodyStrength: 43, contactBalance: 41, stamina: 49, recoveryRate: 53, workloadCapacity: 44,
+    injuryResistance: 53, loadTolerance: 49, offensiveAwareness: 56, shotSelection: 61, decisionMaking: 56, spacingReadReact: 65,
+    defensiveAwareness: 63, anticipation: 57, helpRecognition: 52, rotationDiscipline: 62, foulDiscipline: 62, competitiveness: 62,
+    composure: 60, motor: 58, focus: 63, resilience: 53, communication: 53, teamwork: 49,
+    leadership: 56,
   },
   PF: {
-    standingFinish: 53, drivingLayup: 55, contactFinishing: 57, dunking: 62,
-    postFinishing: 58, catchAndShootMid: 48, pullUpMid: 54, contestedMid: 54,
-    postFadeaway: 48, catchAndShootThree: 44, pullUpThree: 46,
-    movementThree: 46, contestedThree: 46, freeThrowAccuracy: 45,
-    freeThrowConsistency: 45, pressureFreeThrows: 46, passAccuracy: 47,
-    courtVision: 45, passTiming: 46, dribbleControl: 43, ballSecurity: 39,
-    changeOfDirection: 42, pressureHandling: 38, offensivePositioning: 59,
-    reboundPursuit: 49, reboundReading: 56, secondJump: 48,
-    defensivePositioning: 54, boxOutTechnique: 57, reboundSecurity: 58,
-    onBallContainment: 47, lateralRecovery: 41, screenNavigation: 45,
-    closeoutControl: 46, postContainment: 55, rimDeterrence: 63,
-    helpRotation: 60, paintPositioning: 64, onBallSteal: 48,
-    passingLaneAnticipation: 44, deflectionTiming: 55, stripTechnique: 48,
-    blockTiming: 50, verticalContest: 45, helpSideBlocking: 51,
-    recoveryBlocking: 50, acceleration: 48, topSpeed: 49,
-    lateralQuickness: 49, agility: 41, lowerBodyStrength: 60,
-    upperBodyStrength: 58, contactBalance: 63, physicalLeverage: 60,
-    stamina: 42, recoveryRate: 44, workloadCapacity: 49,
-    lateGameConditioning: 40, injuryResistance: 44, loadDurability: 39,
-    offensiveAwareness: 51, defensiveAwareness: 51, decisionMaking: 42,
-    competitiveness: 46, coachability: 49, composure: 57, workEthic: 47,
+    standingFinish: 80, drivingLayup: 76, contactFinishing: 82, dunking: 75, foulDrawing: 75, postControlFootwork: 77,
+    postFinishing: 86, postHookTouch: 81, postFadeaway: 82, catchAndShootMid: 64, pullUpMid: 69, movementMid: 60,
+    contestedMid: 62, catchAndShootThree: 65, pullUpThree: 61, movementThree: 59, contestedThree: 65, freeThrowAccuracy: 68,
+    freeThrowConsistency: 70, passAccuracy: 69, courtVision: 62, passTiming: 59, dribbleControl: 64, ballSecurity: 60,
+    changeOfDirection: 67, paceControl: 61, cutTiming: 63, relocation: 54, screenUse: 63, catchSecurity: 57,
+    screenAngle: 82, screenTiming: 76, rollPopTiming: 70, offensivePositioning: 82, reboundReading: 81, reboundPursuit: 76,
+    boxOutEscape: 72, onBallContainment: 61, lateralRecovery: 62, screenNavigation: 66, closeoutControl: 62, denial: 78,
+    cutterTracking: 74, offBallScreenNavigation: 73, postContainment: 89, paintPositioning: 80, verticality: 82, interiorRecovery: 84,
+    onBallSteal: 63, stripTechnique: 65, deflectionTiming: 68, blockTiming: 66, helpSideBlocking: 68, recoveryChaseDownBlocking: 68,
+    defensivePositioning: 88, boxOutTechnique: 86, reboundSecurity: 77, acceleration: 69, topSpeed: 70, lateralQuickness: 62,
+    agilityChangeOfDirection: 72, reactiveAgility: 71, firstStepBurst: 79, verticalLeap: 79, secondJump: 81, bodyControl: 72,
+    lowerBodyStrength: 73, upperBodyStrength: 72, contactBalance: 77, stamina: 78, recoveryRate: 79, workloadCapacity: 79,
+    injuryResistance: 77, loadTolerance: 73, offensiveAwareness: 69, shotSelection: 68, decisionMaking: 67, spacingReadReact: 71,
+    defensiveAwareness: 71, anticipation: 65, helpRecognition: 69, rotationDiscipline: 67, foulDiscipline: 71, competitiveness: 62,
+    composure: 62, motor: 63, focus: 59, resilience: 67, communication: 73, teamwork: 71,
+    leadership: 80,
   },
   C: {
-    standingFinish: 76, drivingLayup: 88, contactFinishing: 80, dunking: 88,
-    postFinishing: 85, catchAndShootMid: 64, pullUpMid: 63, contestedMid: 63,
-    postFadeaway: 69, catchAndShootThree: 49, pullUpThree: 59,
-    movementThree: 49, contestedThree: 56, freeThrowAccuracy: 70,
-    freeThrowConsistency: 74, pressureFreeThrows: 72, passAccuracy: 63,
-    courtVision: 71, passTiming: 71, dribbleControl: 52, ballSecurity: 49,
-    changeOfDirection: 53, pressureHandling: 56, offensivePositioning: 81,
-    reboundPursuit: 86, reboundReading: 83, secondJump: 84,
-    defensivePositioning: 82, boxOutTechnique: 89, reboundSecurity: 89,
-    onBallContainment: 77, lateralRecovery: 66, screenNavigation: 67,
-    closeoutControl: 67, postContainment: 71, rimDeterrence: 75,
-    helpRotation: 78, paintPositioning: 75, onBallSteal: 59,
-    passingLaneAnticipation: 61, deflectionTiming: 61, stripTechnique: 64,
-    blockTiming: 85, verticalContest: 90, helpSideBlocking: 80,
-    recoveryBlocking: 81, acceleration: 59, topSpeed: 60,
-    lateralQuickness: 54, agility: 60, lowerBodyStrength: 79,
-    upperBodyStrength: 80, contactBalance: 84, physicalLeverage: 76,
-    stamina: 81, recoveryRate: 81, workloadCapacity: 81,
-    lateGameConditioning: 74, injuryResistance: 78, loadDurability: 72,
-    offensiveAwareness: 67, defensiveAwareness: 72, decisionMaking: 75,
-    competitiveness: 71, coachability: 67, composure: 66, workEthic: 76,
+    standingFinish: 90, drivingLayup: 93, contactFinishing: 91, dunking: 86, foulDrawing: 88, postControlFootwork: 84,
+    postFinishing: 88, postHookTouch: 81, postFadeaway: 79, catchAndShootMid: 71, pullUpMid: 69, movementMid: 70,
+    contestedMid: 68, catchAndShootThree: 63, pullUpThree: 68, movementThree: 59, contestedThree: 63, freeThrowAccuracy: 74,
+    freeThrowConsistency: 72, passAccuracy: 59, courtVision: 69, passTiming: 61, dribbleControl: 81, ballSecurity: 80,
+    changeOfDirection: 78, paceControl: 72, cutTiming: 80, relocation: 71, screenUse: 81, catchSecurity: 72,
+    screenAngle: 92, screenTiming: 96, rollPopTiming: 100, offensivePositioning: 79, reboundReading: 78, reboundPursuit: 76,
+    boxOutEscape: 84, onBallContainment: 64, lateralRecovery: 72, screenNavigation: 70, closeoutControl: 70, denial: 69,
+    cutterTracking: 69, offBallScreenNavigation: 72, postContainment: 89, paintPositioning: 90, verticality: 85, interiorRecovery: 95,
+    onBallSteal: 82, stripTechnique: 73, deflectionTiming: 80, blockTiming: 81, helpSideBlocking: 78, recoveryChaseDownBlocking: 83,
+    defensivePositioning: 84, boxOutTechnique: 81, reboundSecurity: 83, acceleration: 69, topSpeed: 75, lateralQuickness: 74,
+    agilityChangeOfDirection: 81, reactiveAgility: 79, firstStepBurst: 80, verticalLeap: 72, secondJump: 68, bodyControl: 73,
+    lowerBodyStrength: 86, upperBodyStrength: 92, contactBalance: 93, stamina: 87, recoveryRate: 84, workloadCapacity: 79,
+    injuryResistance: 85, loadTolerance: 84, offensiveAwareness: 80, shotSelection: 76, decisionMaking: 76, spacingReadReact: 86,
+    defensiveAwareness: 86, anticipation: 82, helpRecognition: 81, rotationDiscipline: 89, foulDiscipline: 87, competitiveness: 72,
+    composure: 71, motor: 65, focus: 77, resilience: 70, communication: 82, teamwork: 90,
+    leadership: 80,
   },
 }
 
-describe('detailed generation golden vectors (generation v1)', () => {
-  it('reproduces every pinned 67-value record exactly', () => {
-    expect(DETAILED_RATING_GENERATION_VERSION).toBe(1)
+describe('detailed generation golden vectors (generation v2)', () => {
+  it('reproduces every pinned 91-value record exactly', () => {
+    expect(DETAILED_RATING_GENERATION_VERSION).toBe(2)
     for (const position of POSITIONS) {
       const generated = generateDetailedPlayerRatings(
         LEAGUE_SEED,
@@ -198,18 +173,18 @@ describe('detailed generation golden vectors (generation v1)', () => {
   })
 })
 
-describe('labeled stream isolation (ADR 0008 §5)', () => {
-  it('pins the exact three seed-label formats', () => {
+describe('labeled stream isolation (ADR 0009 §5)', () => {
+  it('pins the exact three seed-label formats (v2)', () => {
     const playerId = GOLDEN_PLAYER_IDS.PG
     expect(deriveDetailedQualitySeed(LEAGUE_SEED, playerId)).toBe(
-      deriveSeed(LEAGUE_SEED, `player-quality/v1/${playerId}`),
+      deriveSeed(LEAGUE_SEED, `player-quality/v2/${playerId}`),
     )
     expect(
-      deriveDetailedCategorySeed(LEAGUE_SEED, playerId, 'insideScoring'),
-    ).toBe(deriveSeed(LEAGUE_SEED, `player-category/v1/${playerId}/insideScoring`))
+      deriveDetailedCategorySeed(LEAGUE_SEED, playerId, 'rimFinishing'),
+    ).toBe(deriveSeed(LEAGUE_SEED, `player-category/v2/${playerId}/rimFinishing`))
     expect(
       deriveDetailedSkillSeed(LEAGUE_SEED, playerId, 'standingFinish'),
-    ).toBe(deriveSeed(LEAGUE_SEED, `player-skill/v1/${playerId}/standingFinish`))
+    ).toBe(deriveSeed(LEAGUE_SEED, `player-skill/v2/${playerId}/standingFinish`))
   })
 
   it('every field of the full record equals its independent single-field generation', () => {
@@ -261,7 +236,8 @@ describe('labeled stream isolation (ADR 0008 §5)', () => {
     ])
 
     expect(ratings).toEqual(GOLDEN_VECTORS.PG)
-    expect(observedSeeds).toHaveLength(202)
+    // 91 keys: each draws quality + its categories (reboundReading twice) + skill.
+    expect(observedSeeds).toHaveLength(274)
     expect(observedSeeds).toEqual(expectedSeeds)
   })
 
@@ -436,9 +412,6 @@ describe('generated record validity and distribution report', () => {
     if (pg === undefined || c === undefined) throw new Error('missing means')
 
     // Directional biases: centers protect the rim, guards run the offense.
-    // Margins sit well below the expected bias gaps (22 / 16 / 14) so a
-    // legitimate future reseed of the fixture stays green while a lost or
-    // inverted bias still fails.
     expect(c.interiorDefense - pg.interiorDefense).toBeGreaterThan(10)
     expect(pg.passing - c.passing).toBeGreaterThan(7)
     expect(pg.three - c.three).toBeGreaterThan(5)

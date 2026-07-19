@@ -4,7 +4,7 @@ import { POSITIONS, isPosition } from '../domain/league'
 import type { League, Team } from '../domain/league'
 import { filterLeaguePlayers } from '../app/dashboardViewModel'
 import type { PlayerPositionFilter } from '../app/dashboardViewModel'
-import { deriveVersionedOverall } from '../domain/playerDerivations'
+import { deriveOverall } from '../domain/playerDerivations'
 import {
   formatPlayerName,
   formatTeamName,
@@ -34,9 +34,10 @@ export function TeamRosterContent({
 }: TeamRosterContentProps) {
   /** Hover/focus preview — transient UI state, never persisted. The popover
    * anchors to the hovered row so it appears beside the cursor, clamped so it
-   * never runs past the bottom of the roster panel. Dwelling for a few
-   * seconds pins it: it stays put, becomes interactive, and gains the Health
-   * and Development tabs. */
+   * never runs past the bottom of the roster panel. It stays open while the
+   * cursor is anywhere within the player's row; dwelling (QUICK_VIEW_PIN_DELAY_MS)
+   * pins it so it stays put and becomes interactive. The Overview / Health /
+   * Development tabs are always present, not pin-gated. */
   const [preview, setPreview] = useState<{
     readonly playerId: PlayerId
     readonly top: number
@@ -253,10 +254,16 @@ export function TeamRosterContent({
                     <tr
                       key={player.id}
                       className={isPreviewed ? 'is-selected' : undefined}
+                      // Keep-alive is scoped to the whole row (name → stats):
+                      // the quick view stays open while the cursor is anywhere
+                      // in the row and dismisses when it leaves (unless pinned).
                       onMouseEnter={(event) => {
                         if (!isPinned) {
                           showPreview(player.id, event.currentTarget)
                         }
+                      }}
+                      onMouseLeave={() => {
+                        if (!isPinned) setPreview(null)
                       }}
                     >
                       <th scope="row">
@@ -293,12 +300,7 @@ export function TeamRosterContent({
                         <span className="pos-role-role">—</span>
                       </td>
                       <td>{player.age}</td>
-                      <td className="rating-value">
-                        {deriveVersionedOverall(
-                          player.ratings,
-                          player.primaryPosition,
-                        )}
-                      </td>
+                      <td className="rating-value">{deriveOverall(player)}</td>
                       {/* DEFERRED(§8): target minutes come from the rotation plan. */}
                       <td className="deferred-cell">—</td>
                       {/* DEFERRED(§11): actual minutes, usage, and form need real statistics. */}
@@ -342,7 +344,7 @@ export function TeamRosterContent({
 }
 
 /** Dwell time before the hover quick view pins and becomes interactive. */
-const QUICK_VIEW_PIN_DELAY_MS = 5000
+const QUICK_VIEW_PIN_DELAY_MS = 3000
 
 /** Popover height (plus margin) used to keep it fully inside the viewport. */
 const POPOVER_CLEARANCE = 580

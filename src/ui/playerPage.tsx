@@ -9,8 +9,8 @@ import type {
 } from '../domain/detailedRatings'
 import { ratingToGrade } from '../domain/ratings'
 import {
+  deriveOverall,
   derivePositionProfile,
-  deriveVersionedOverall,
 } from '../domain/playerDerivations'
 import {
   createRatingDisplayRows,
@@ -34,16 +34,11 @@ export interface PlayerPageContentProps {
 }
 
 /**
- * Display grouping of the 18 derived categories, from the taxonomy registry.
- * Overview shows letters only; the Skills tab is the letter accordion whose
- * real sub-ratings drop down on click.
+ * Display grouping of the 26 derived categories, from the taxonomy registry's
+ * four pillars. Overview shows letters only; the Skills tab is the letter
+ * accordion whose real sub-ratings drop down on click.
  */
-const SKILL_GROUPS: readonly DetailedCategoryGroup[] = [
-  'scoring',
-  'creation',
-  'rebounding',
-  'defense',
-]
+const SKILL_GROUPS: readonly DetailedCategoryGroup[] = ['offense', 'defense']
 const PHYSICAL_GROUPS: readonly DetailedCategoryGroup[] = ['physical']
 const MENTAL_GROUPS: readonly DetailedCategoryGroup[] = ['mental']
 
@@ -54,8 +49,8 @@ const MENTAL_GROUPS: readonly DetailedCategoryGroup[] = ['mental']
  * spans that whole area), **no Potential anywhere** (the stat cards shift
  * left), and every panel whose system doesn't exist yet shows an honest
  * "Coming later" absence instead of invented values. Real today: identity,
- * the roster rail, derived OVR + letter, the 18 letter grades, position fit,
- * and the derived Strengths/Concerns.
+ * measurements, the roster rail, derived OVR + letter, the 26 letter grades,
+ * position fit, and the derived Strengths/Concerns.
  */
 export function PlayerPageContent({
   player,
@@ -68,7 +63,7 @@ export function PlayerPageContent({
 }: PlayerPageContentProps) {
   const [activeTab, setActiveTab] = useState<PlayerPageTab>(initialTab)
   const name = formatPlayerName(player)
-  const overall = deriveVersionedOverall(player.ratings, player.primaryPosition)
+  const overall = deriveOverall(player)
   const headingRef = useRef<HTMLHeadingElement>(null)
   const positionLabel =
     player.secondaryPosition === null
@@ -116,10 +111,12 @@ export function PlayerPageContent({
               <p className="pqv-meta">
                 {formatTeamName(team)} · {positionLabel} · Age {player.age}
               </p>
-              {/* DEFERRED(later): height/weight/wingspan/handedness need player bio fields. */}
               <p className="pqv-meta player-hero-bio">
-                Height — · Weight — · Wingspan — · Handedness —{' '}
-                <span className="coming-later-marker">Coming later</span>
+                Height {formatHeight(player.measurements.heightInches)} · Weight{' '}
+                {player.measurements.weightPounds} lb · Wingspan{' '}
+                {formatHeight(player.measurements.wingspanInches)} · Reach{' '}
+                {formatHeight(player.measurements.standingReachInches)} · Hand{' '}
+                {player.measurements.handSizeInches}″
               </p>
             </div>
           </div>
@@ -249,14 +246,14 @@ export function PlayerPageContent({
           <SkillsBreakdownTab player={player} />
         )}
 
-        {/* DEFERRED(later): Compare / Trade Center / Watch / Edit need their systems. */}
+        {/* DEFERRED(later): Compare / Trade Player / Watch / Edit need their systems. */}
         <div className="pqv-actions player-page-actions">
           <ComingLaterAction
             label="Compare Player"
             requirement="Player comparison arrives later."
           />
           <ComingLaterAction
-            label="Trade Center"
+            label="Trade Player"
             requirement="Trades arrive with the transaction system."
           />
           <ComingLaterAction
@@ -294,10 +291,7 @@ function PlayerPageRail({
         <h4>Roster</h4>
         <ul className="player-rail-list">
           {roster.map((rosterPlayer) => {
-            const overall = deriveVersionedOverall(
-              rosterPlayer.ratings,
-              rosterPlayer.primaryPosition,
-            )
+            const overall = deriveOverall(rosterPlayer)
             const isCurrent = rosterPlayer.id === currentPlayerId
 
             return (
@@ -375,7 +369,7 @@ function DisabledTab({
 
 /**
  * Position Profiles — all real (§8B R5): per-position Offense / Defense /
- * Overall letters derive from the versioned position-profile model; the fit
+ * Role Fit letters derive from the versioned position-profile model; the fit
  * label comes from the player's natural/secondary positions. Letters only;
  * exact numbers live in each cell's title.
  */
@@ -405,7 +399,7 @@ function PositionProfilesSection({ player }: { readonly player: Player }) {
               <th scope="col" title="Defense">
                 Def
               </th>
-              <th scope="col" title="Overall">
+              <th scope="col" title="Role Fit">
                 Ovr
               </th>
               <th scope="col">Fit</th>
@@ -413,13 +407,17 @@ function PositionProfilesSection({ player }: { readonly player: Player }) {
           </thead>
           <tbody>
             {POSITIONS.map((position) => {
-              const profile = derivePositionProfile(player.ratings, position)
+              const profile = derivePositionProfile(
+                player.ratings,
+                player.measurements,
+                position,
+              )
               return (
                 <tr key={position}>
                   <th scope="row">{position}</th>
                   <ProfileGradeCell score={profile.offense} />
                   <ProfileGradeCell score={profile.defense} />
-                  <ProfileGradeCell score={profile.overall} />
+                  <ProfileGradeCell score={profile.roleFit} />
                   <td>{fitLabel(player, position)}</td>
                 </tr>
               )
@@ -428,8 +426,8 @@ function PositionProfilesSection({ player }: { readonly player: Player }) {
         </table>
       </div>
       <p className="derived-note">
-        Profiles derive from the versioned position-weight model (v1); never
-        stored.
+        Per-position Role Fit from the versioned 4-pillar position-weight model
+        (v3); never stored.
       </p>
     </section>
   )
@@ -612,8 +610,8 @@ function ConcernsStrengthsSection({ player }: { readonly player: Player }) {
 /**
  * The complete breakdown: every derived category as a letter; clicking a
  * letter drops its real stored sub-ratings down (the shared Rebound Reading
- * appears under both rebounding categories — 68 display slots for 67 stored
- * fields, per ADR 0008). Expansion is transient React state — never
+ * appears under both rebounding categories — 92 display slots for 91 stored
+ * fields, per ADR 0009). Expansion is transient React state — never
  * persisted, never a save revision.
  */
 function SkillsBreakdownTab({ player }: { readonly player: Player }) {
@@ -696,7 +694,7 @@ function SkillsBreakdownTab({ player }: { readonly player: Player }) {
         </section>
       ))}
       <p className="derived-note">
-        Grades and category scores derive from the 67 stored sub-ratings and
+        Grades and category scores derive from the 91 stored base ratings and
         are never stored themselves.
       </p>
     </div>
@@ -715,6 +713,13 @@ function gradeRows(
 
 function gradeClass(rating: number): string {
   return ratingToGrade(rating).charAt(0).toLowerCase()
+}
+
+/** Formats a length in whole inches as feet and inches (e.g. 79 → 6'7"). */
+function formatHeight(inches: number): string {
+  const feet = Math.floor(inches / 12)
+  const remainder = inches % 12
+  return `${feet}'${remainder}"`
 }
 
 function fitLabel(player: Player, position: Position): string {

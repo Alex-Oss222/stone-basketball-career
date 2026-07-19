@@ -47,7 +47,7 @@ describe('LeagueSnapshot DTO contract', () => {
       CREATION_METADATA_KEYS,
     )
     expect(snapshot.snapshotVersion).toBe(LEAGUE_SNAPSHOT_VERSION)
-    expect(snapshot.snapshotVersion).toBe(4)
+    expect(snapshot.snapshotVersion).toBe(5)
     expect(snapshot.revision).toBe(1)
     expect(snapshot.creationMetadata).toMatchObject({
       startingYear: FIXTURE_CREATION_INPUTS.startingYear,

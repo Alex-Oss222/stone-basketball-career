@@ -17,6 +17,7 @@ import {
 import type {
   League,
   Player,
+  PlayerMeasurements,
   PlayerTendencies,
   Position,
   Team,
@@ -36,8 +37,17 @@ import {
 import { createRandomSource } from '../random/xoshiro128ss'
 import { generateDetailedPlayerRatings } from './generateDetailedRatings'
 
-export const LEAGUE_GENERATOR_VERSION = 1 as const
+export const LEAGUE_GENERATOR_VERSION = 2 as const
 export const LEAGUE_RANDOM_STREAM_LABEL = 'league/v1' as const
+
+/**
+ * Measurements draw from their own labeled per-player stream (ADR 0009 §7): the
+ * seed hierarchy keeps them independent of the rating streams and of the
+ * reserved hidden layers added later, so adding those layers shifts no existing
+ * draw.
+ */
+export const PLAYER_MEASUREMENT_STREAM_NAMESPACE =
+  'player-measurement' as const
 
 const SEED_FINGERPRINT_LENGTH = 8
 
@@ -74,6 +84,26 @@ const PASS_TENDENCY_BASES: Readonly<Record<Position, number>> = {
   SF: 40,
   PF: 30,
   C: 25,
+}
+
+/**
+ * Position-appropriate measurement bases (inches / pounds). Bigs are taller,
+ * longer, and heavier. These are calibration inputs, not frozen constants;
+ * changing them bumps LEAGUE_GENERATOR_VERSION and regenerates goldens.
+ */
+interface MeasurementBase {
+  readonly heightInches: number
+  readonly weightPounds: number
+  readonly wingspanInches: number
+  readonly standingReachInches: number
+}
+
+const MEASUREMENT_BASES: Readonly<Record<Position, MeasurementBase>> = {
+  PG: { heightInches: 75, weightPounds: 185, wingspanInches: 78, standingReachInches: 99 },
+  SG: { heightInches: 78, weightPounds: 205, wingspanInches: 81, standingReachInches: 103 },
+  SF: { heightInches: 80, weightPounds: 220, wingspanInches: 84, standingReachInches: 106 },
+  PF: { heightInches: 82, weightPounds: 240, wingspanInches: 87, standingReachInches: 109 },
+  C: { heightInches: 84, weightPounds: 255, wingspanInches: 90, standingReachInches: 113 },
 }
 
 export function generateLeague(rootSeed: string): League {
@@ -194,6 +224,12 @@ function createPlayers(
           primaryPosition,
           createRatingRandomSource,
         ),
+        measurements: generateMeasurements(
+          leagueSeed,
+          playerId,
+          primaryPosition,
+          createRatingRandomSource,
+        ),
         tendencies: createTendencies(primaryPosition, random),
       })
     }
@@ -234,12 +270,65 @@ function createTendencies(
     rim: clamp(rim + randomInteger(-10, 10, random), 0, 100),
     midrange: clamp(midrange + randomInteger(-10, 10, random), 0, 100),
     threePoint: clamp(threePoint + randomInteger(-10, 10, random), 0, 100),
+    catchAndShoot: randomInteger(20, 80, random),
+    pullUp: randomInteger(20, 80, random),
+    movement: randomInteger(20, 80, random),
+    drive: randomInteger(20, 80, random),
+    shoot: randomInteger(20, 80, random),
     pass: clamp(
       PASS_TENDENCY_BASES[position] + randomInteger(-10, 10, random),
       0,
       100,
     ),
-    drawFoul: randomInteger(20, 80, random),
+    isolation: randomInteger(10, 70, random),
+    pickAndRoll: randomInteger(10, 80, random),
+    rollPop: randomInteger(10, 80, random),
+    postUp: randomInteger(5, 80, random),
+    cutRelocate: randomInteger(20, 80, random),
+    transition: randomInteger(20, 90, random),
+    contactSeeking: randomInteger(20, 80, random),
+    offensiveReboundCrash: randomInteger(10, 80, random),
+    stealAggression: randomInteger(10, 80, random),
+    blockAggression: randomInteger(5, 80, random),
+    passingRisk: randomInteger(10, 80, random),
+    pacePreference: randomInteger(20, 90, random),
+  }
+}
+
+/**
+ * The labeled per-player measurement seed (ADR 0009 §7). The label interpolates
+ * LEAGUE_GENERATOR_VERSION so a generator bump re-derives it in lockstep.
+ */
+export function deriveMeasurementSeed(
+  leagueSeed: string,
+  playerId: string,
+): string {
+  return deriveSeed(
+    leagueSeed,
+    `${PLAYER_MEASUREMENT_STREAM_NAMESPACE}/v${LEAGUE_GENERATOR_VERSION}/${playerId}`,
+  )
+}
+
+/**
+ * Generates the five raw measurements from the labeled measurement stream, in
+ * the fixed draw order height → weight → wingspan → standing reach → hand size.
+ * Position-appropriate: bigs are taller, longer, and heavier. Never a hard gate.
+ */
+export function generateMeasurements(
+  leagueSeed: string,
+  playerId: string,
+  primaryPosition: Position,
+  createSource: RandomSourceFactory = createRandomSource,
+): PlayerMeasurements {
+  const base = MEASUREMENT_BASES[primaryPosition]
+  const random = createSource(deriveMeasurementSeed(leagueSeed, playerId))
+  return {
+    heightInches: base.heightInches + randomInteger(-2, 2, random),
+    weightPounds: base.weightPounds + randomInteger(-15, 15, random),
+    wingspanInches: base.wingspanInches + randomInteger(-2, 3, random),
+    standingReachInches:
+      base.standingReachInches + randomInteger(-2, 3, random),
+    handSizeInches: 9 + randomInteger(-1, 1, random),
   }
 }
 

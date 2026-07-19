@@ -30,7 +30,7 @@ describe('league roster view-model helpers', () => {
     const rows = createRatingDisplayRows(ratings)
 
     expect(rows.map((row) => row.key)).toEqual([...DETAILED_CATEGORY_KEYS])
-    expect(rows).toHaveLength(18)
+    expect(rows).toHaveLength(26)
     for (const [index, row] of rows.entries()) {
       const definition = DETAILED_CATEGORY_DEFINITIONS[index]
       expect(row.label).toBe(definition.label)
@@ -44,14 +44,13 @@ describe('league roster view-model helpers', () => {
     const ratings = parseDetailedPlayerRatings({
       ...makeRatings(50),
       freeThrowAccuracy: 90,
-      freeThrowConsistency: 90,
-      pressureFreeThrows: 89,
+      freeThrowConsistency: 89,
     })
     const row = createRatingDisplayRows(ratings).find(
       (candidate) => candidate.key === 'freeThrowShooting',
     )
 
-    // Score is 89.9: displays as 90, but grades as A- from the unrounded value.
+    // Score is 89.85: displays as 90, but grades as A- from the unrounded value.
     expect(row?.value).toBe(90)
     expect(row?.grade).toBe('A-')
     expect(row?.grade).toBe(

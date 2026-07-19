@@ -1,6 +1,6 @@
 import type { Player, Position } from '../domain/league'
 import { POSITIONS } from '../domain/league'
-import { deriveVersionedOverall } from '../domain/playerDerivations'
+import { deriveRoleFit } from '../domain/playerDerivations'
 
 /**
  * Shared sections for the Player Quick View (hover preview on the roster) and
@@ -54,9 +54,9 @@ export function ContractSection() {
 }
 
 /**
- * Position & Role Coverage — all real (§8B R5): the numeric fit is the
- * versioned position-weighted overall at each position; natural/secondary
- * labels come from the player's positions.
+ * Position & Role Coverage — all real (§8B R5): the numeric fit is the Role Fit
+ * (position-weighted score) at each position; natural/secondary labels come
+ * from the player's positions.
  */
 export function PositionCoverageSection({ player }: { readonly player: Player }) {
   return (
@@ -64,7 +64,11 @@ export function PositionCoverageSection({ player }: { readonly player: Player })
       <h4>Position &amp; Role Coverage</h4>
       <dl className="pqv-field-rows">
         {POSITIONS.map((position) => {
-          const fit = deriveVersionedOverall(player.ratings, position)
+          const fit = deriveRoleFit(
+            player.ratings,
+            player.measurements,
+            position,
+          )
           const label = coverageLabel(player, position)
           return (
             <div key={position}>

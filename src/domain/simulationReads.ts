@@ -2,43 +2,70 @@ import { SUB_RATING_KEYS } from './detailedRatings'
 import type { DetailedPlayerRatings, SubRatingKey } from './detailedRatings'
 
 /**
- * §8B R8 — the frozen simulation rating-read registry. The §9 simulation may
- * read player sub-ratings ONLY through these versioned event selectors; it
- * never reads grades, category scores, the display Overall, or the raw
- * record. Durability and Intangibles never enter possession events (ADR 0008
- * review decisions) — they feed only the injury and
- * development/coach-fit/morale systems. Changing any dependency list bumps
- * SIM_RATING_READ_VERSION and is a golden-simulation event. Documented in
- * docs/SIMULATION_MODEL.md; a test keeps code and document in agreement.
+ * §8C R8 — the frozen simulation rating-read registry (re-derived over the 91
+ * base ratings, ADR 0009). The §9 simulation may read player sub-ratings ONLY
+ * through these versioned event selectors; it never reads grades, category
+ * scores, the display Overall, or the raw record. Each event reads BASE ratings
+ * only — never a removed-derived shortcut (interior defense reads
+ * verticality/interiorRecovery/paintPositioning/postContainment, never a
+ * derived Rim Deterrence; free throws read freeThrowAccuracy/freeThrow
+ * Consistency, never a derived Pressure Free Throws). Offensive IQ and
+ * Defensive IQ sub-ratings DO enter possession events. Changing any dependency
+ * list bumps SIM_RATING_READ_VERSION and is a golden-simulation event.
+ * Documented in docs/SIMULATION_MODEL.md; a test keeps code and document in
+ * agreement.
  */
-export const SIM_RATING_READ_VERSION = 1 as const
+export const SIM_RATING_READ_VERSION = 2 as const
 export type SimRatingReadVersion = typeof SIM_RATING_READ_VERSION
 
-/** Sub-ratings possession events may never read. */
+/**
+ * Sub-ratings possession events may never read (ADR 0009 §10):
+ * - the two Durability keys — they feed Availability and the injury system only;
+ * - the three Team & Leadership keys — they feed morale/development, not shots;
+ * - the development/morale-facing Competitive Makeup keys (Competitiveness,
+ *   Focus, Resilience) — they feed morale/development, not shot-making.
+ * Composure and Motor stay readable: composure enters pressure/late-game
+ * events, motor enters hustle/rebounding events.
+ */
 export const FORBIDDEN_SIM_SUB_RATINGS: readonly SubRatingKey[] =
   Object.freeze([
+    // Durability → Availability only
     'injuryResistance',
-    'loadDurability',
+    'loadTolerance',
+    // Team & Leadership → morale/development
+    'communication',
+    'teamwork',
+    'leadership',
+    // Development/morale-facing Competitive Makeup
     'competitiveness',
-    'coachability',
-    'composure',
-    'workEthic',
+    'focus',
+    'resilience',
   ])
 
 export const SIM_EVENT_RATING_READS = freezeEventRatingReads({
-  shotSelection: ['decisionMaking', 'offensiveAwareness'],
+  shotSelection: [
+    'shotSelection',
+    'decisionMaking',
+    'offensiveAwareness',
+    'spacingReadReact',
+  ],
   rimShotResolution: [
     'standingFinish',
     'drivingLayup',
     'contactFinishing',
     'dunking',
+  ],
+  postScoringResolution: [
+    'postControlFootwork',
     'postFinishing',
+    'postHookTouch',
+    'postFadeaway',
   ],
   midRangeShotResolution: [
     'catchAndShootMid',
     'pullUpMid',
+    'movementMid',
     'contestedMid',
-    'postFadeaway',
   ],
   threePointShotResolution: [
     'catchAndShootThree',
@@ -46,36 +73,42 @@ export const SIM_EVENT_RATING_READS = freezeEventRatingReads({
     'movementThree',
     'contestedThree',
   ],
-  freeThrowResolution: [
-    'freeThrowAccuracy',
-    'freeThrowConsistency',
-    'pressureFreeThrows',
-  ],
+  freeThrowResolution: ['freeThrowAccuracy', 'freeThrowConsistency'],
+  foulDrawingResolution: ['foulDrawing'],
   passResolution: ['passAccuracy', 'courtVision', 'passTiming'],
   turnoverResolution: [
     'ballSecurity',
-    'pressureHandling',
     'dribbleControl',
     'changeOfDirection',
+    'paceControl',
     'decisionMaking',
   ],
+  offBallOffenseResolution: [
+    'cutTiming',
+    'relocation',
+    'screenUse',
+    'catchSecurity',
+  ],
+  screeningResolution: ['screenAngle', 'screenTiming', 'rollPopTiming'],
   stealResolution: [
     'onBallSteal',
-    'passingLaneAnticipation',
+    'anticipation',
     'deflectionTiming',
     'stripTechnique',
   ],
   blockResolution: [
     'blockTiming',
-    'verticalContest',
+    'verticality',
     'helpSideBlocking',
-    'recoveryBlocking',
+    'recoveryChaseDownBlocking',
   ],
   offensiveReboundResolution: [
     'offensivePositioning',
     'reboundPursuit',
     'reboundReading',
+    'boxOutEscape',
     'secondJump',
+    'motor',
   ],
   defensiveReboundResolution: [
     'defensivePositioning',
@@ -85,9 +118,9 @@ export const SIM_EVENT_RATING_READS = freezeEventRatingReads({
   ],
   interiorDefenseResolution: [
     'postContainment',
-    'rimDeterrence',
-    'helpRotation',
     'paintPositioning',
+    'verticality',
+    'interiorRecovery',
   ],
   perimeterDefenseResolution: [
     'onBallContainment',
@@ -95,23 +128,36 @@ export const SIM_EVENT_RATING_READS = freezeEventRatingReads({
     'screenNavigation',
     'closeoutControl',
   ],
+  offBallDefenseResolution: [
+    'denial',
+    'cutterTracking',
+    'offBallScreenNavigation',
+  ],
+  defensiveIQRead: [
+    'defensiveAwareness',
+    'helpRecognition',
+    'rotationDiscipline',
+    'foulDiscipline',
+  ],
   fatigueResolution: [
     'stamina',
     'recoveryRate',
     'workloadCapacity',
-    'lateGameConditioning',
+    'composure',
   ],
   physicalMatchup: [
     'acceleration',
     'topSpeed',
     'lateralQuickness',
-    'agility',
+    'agilityChangeOfDirection',
+    'reactiveAgility',
+    'firstStepBurst',
+    'verticalLeap',
+    'bodyControl',
     'lowerBodyStrength',
     'upperBodyStrength',
     'contactBalance',
-    'physicalLeverage',
   ],
-  defensiveAwarenessRead: ['defensiveAwareness'],
 } as const satisfies Readonly<Record<string, readonly SubRatingKey[]>>)
 
 export type SimEventKey = keyof typeof SIM_EVENT_RATING_READS
@@ -145,7 +191,7 @@ export function selectSimEventFactor(
   return total / dependencies.length
 }
 
-/** Every possession-relevant sub-rating; the forbidden six are excluded. */
+/** Every possession-relevant sub-rating; the forbidden eight are excluded. */
 export function listReadableSubRatings(): readonly SubRatingKey[] {
   return READABLE_SIM_SUB_RATINGS
 }

@@ -2,7 +2,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
 import { generateLeague } from '../../src/generation/generateLeague'
 import { ratingToGrade } from '../../src/domain/ratings'
-import { deriveVersionedOverall } from '../../src/domain/playerDerivations'
+import { deriveOverall } from '../../src/domain/playerDerivations'
 import { getTeamRoster } from '../../src/ui/leagueViewModel'
 import { PlayerPageContent } from '../../src/ui/playerPage'
 import type { PlayerPageTab } from '../../src/ui/playerPage'
@@ -31,10 +31,7 @@ function renderPage(options?: {
 describe('Player page', () => {
   it('shows real identity and the derived Overall with its letter — no Potential, no badges', () => {
     const markup = renderPage()
-    const overall = deriveVersionedOverall(
-      player.ratings,
-      player.primaryPosition,
-    )
+    const overall = deriveOverall(player)
 
     expect(markup).toContain(`${player.firstName} ${player.lastName}`)
     expect(markup).toContain('OVR')
@@ -96,17 +93,19 @@ describe('Player page', () => {
       expect(markup).toContain(zone)
     }
     expect(markup).toContain('Natural')
-    // 18 category letters + 8 derived concern/strength letters.
-    expect(markup.match(/class="grade-list-label"/g)).toHaveLength(26)
-    // The two new detailed categories surface on the page.
+    // 26 category letters + 8 derived concern/strength letters.
+    expect(markup.match(/class="grade-list-label"/g)).toHaveLength(34)
+    // New detailed categories from the rehaul surface on the page.
     expect(markup).toContain('Durability')
-    expect(markup).toContain('Intangibles')
+    expect(markup).toContain('Post Scoring')
+    expect(markup).toContain('Off-Ball Offense')
+    expect(markup).toContain('Competitive Makeup')
   })
 
   it('skills tab is a collapsed letter accordion — sub-ratings only drop down on click', () => {
     const markup = renderPage({ initialTab: 'skills' })
 
-    expect(markup.match(/aria-expanded="false"/g)).toHaveLength(18)
+    expect(markup.match(/aria-expanded="false"/g)).toHaveLength(26)
     expect(markup).not.toContain('aria-expanded="true"')
     expect(markup).not.toContain('grade-accordion-panel')
     // Collapsed: no sub-rating labels leak out.
@@ -121,7 +120,7 @@ describe('Player page', () => {
     }
     for (const action of [
       'Compare Player',
-      'Trade Center',
+      'Trade Player',
       'Watch Player',
       'Edit Player',
     ]) {
@@ -129,6 +128,7 @@ describe('Player page', () => {
     }
     expect(markup).toContain('Back to roster')
     expect(markup).not.toContain('Trade Block')
+    expect(markup).not.toContain('Trade Center')
   })
 
   it('fabricates no stat, record, streak, or dollar figure', () => {

@@ -107,11 +107,15 @@ describe('validateLeague', () => {
     const wrongSchema: League = {
       ...validLeague,
       detailedRatingsSchemaVersion:
-        2 as League['detailedRatingsSchemaVersion'],
+        3 as League['detailedRatingsSchemaVersion'],
     }
     const wrongDefinition: League = {
       ...validLeague,
       categoryDefinitionVersion: 0 as League['categoryDefinitionVersion'],
+    }
+    const wrongGenerator: League = {
+      ...validLeague,
+      generatorVersion: 1 as League['generatorVersion'],
     }
 
     expect(issueCodes(wrongSchema)).toContain(
@@ -120,9 +124,48 @@ describe('validateLeague', () => {
     expect(issueCodes(wrongDefinition)).toContain(
       'league.category_definition_version.invalid',
     )
+    expect(issueCodes(wrongGenerator)).toContain(
+      'league.generator_version.invalid',
+    )
   })
 
-  it.each([undefined, 0, 2, 1.5, '1', Number.NaN])(
+  it('rejects an out-of-range or unexpected measurement', () => {
+    const outOfRange = replacePlayer(validLeague, 0, {
+      measurements: {
+        ...validLeague.players[0].measurements,
+        heightInches: 200,
+      },
+    })
+    expect(issueCodes(outOfRange)).toContain('player.measurement.invalid')
+
+    const extra = replacePlayer(validLeague, 0, {
+      measurements: {
+        ...validLeague.players[0].measurements,
+        verticalInches: 30,
+      } as Player['measurements'],
+    })
+    expect(issueCodes(extra)).toContain('player.measurement.unexpected')
+  })
+
+  it('rejects an out-of-range or unexpected tendency', () => {
+    const outOfRange = replacePlayer(validLeague, 0, {
+      tendencies: {
+        ...validLeague.players[0].tendencies,
+        contactSeeking: 101,
+      },
+    })
+    expect(issueCodes(outOfRange)).toContain('player.tendency.invalid')
+
+    const extra = replacePlayer(validLeague, 0, {
+      tendencies: {
+        ...validLeague.players[0].tendencies,
+        drawFoul: 50,
+      } as Player['tendencies'],
+    })
+    expect(issueCodes(extra)).toContain('player.tendency.unexpected')
+  })
+
+  it.each([undefined, 0, 3, 1.5, '1', Number.NaN])(
     'rejects invalid rating generation version %#',
     (ratingGenerationVersion) => {
       const invalid = replacePlayer(validLeague, 0, {

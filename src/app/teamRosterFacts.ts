@@ -1,6 +1,6 @@
 import type { TeamId } from '../domain/ids'
 import type { League, Player, Position, Team } from '../domain/league'
-import { deriveVersionedOverall } from '../domain/playerDerivations'
+import { deriveOverall } from '../domain/playerDerivations'
 
 export interface TeamRosterFacts {
   readonly team: Team
@@ -17,9 +17,7 @@ export function deriveRosterAverageRating(
   }
 
   const overallSum = roster.reduce(
-    (total, player) =>
-      total +
-      deriveVersionedOverall(player.ratings, player.primaryPosition),
+    (total, player) => total + deriveOverall(player),
     0,
   )
   return Math.round(overallSum / roster.length)

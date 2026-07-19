@@ -78,7 +78,11 @@ Two things make this safe rather than reckless:
 
 ## Status
 
-**Current section: §8 rotation half + §8A coach profiles (§8B is complete).**
+**Current section: §8C ratings rehaul — supersedes §8B's model. Then the §8 rotation half + §8A, then §9.**
+
+**Ratings rehaul (§8C), decided 2026-07-19 — see [ADR 0009](adr/0009-player-ratings-rehaul.md) and [reference/DESIGN_OVERVIEW.md](reference/DESIGN_OVERVIEW.md).** §8B's 18-category / 67-sub-rating model is being replaced by the deeper, implementation-ready model Alex authored: **26 categories / 91 base ratings** across 4 pillars, a measurements layer, a derived-ratings layer, a new 4-pillar per-role-max OVR, **16 tendencies**, and Durability split out as a separate Availability grade. Hidden development, hidden health, and **Potential** (reinstated, reversing ADR 0008, as a derived *68th-percentile-of-simulated-peak* computed only once the career-sim exists) are **reserved** for later sections. This must land before the §8 rotation half and §9, because `rotationAbility.ts` and `simulationReads.ts` must be re-derived on the 91-key model first. The exact change-list and all 8 version bumps are in DESIGN_OVERVIEW §4. **A larger scope expansion is also captured** — per-team GMs / coaches / staff / medical / development / scouting + a role-matching engine, in `reference/AI_STAFF_MASTER_SPEC.md` — deliberately sequenced *after* the first sim (DESIGN_OVERVIEW §2). The prior status (below) is retained as history.
+
+**Prior status (pre-rehaul, retained as history): §8 rotation half + §8A coach profiles (§8B was complete).**
 
 Sections 1–7 are shipped. §7 closed 2026-07-17: the save format is collapsed to
 one monotonic version (`LEAGUE_SNAPSHOT_VERSION = 3`); the V1 DTO and the whole
@@ -872,6 +876,57 @@ is always fully visible.
 - CPU rotation selection uses the versioned ability selector; simulation has an
   approved sub-rating → event mapping and display weights cannot change outcomes.
 - Snapshot version bumped. All four gates green.
+
+### 8C. Ratings rehaul — the 91-rating model (supersedes §8B)
+
+**Decided 2026-07-19. Recorded in [ADR 0009](adr/0009-player-ratings-rehaul.md)
+(supersedes ADR 0008). Execution map: [reference/DESIGN_OVERVIEW.md](reference/DESIGN_OVERVIEW.md).**
+
+**Goal.** Replace §8B's 18-category / 67-sub-rating model with the deeper,
+implementation-ready model: 26 categories / 91 base ratings across 4 pillars, a
+measurements layer, a derived-ratings layer, a new 4-pillar per-role-max OVR, 16
+tendencies, and Durability split out as a separate Availability grade. Hidden
+development, hidden health, and Potential are **reserved** (generated later, when
+their systems exist); Potential is a derived 68th-percentile-of-simulated-peak,
+not computed until the career-sim exists.
+
+**Why now.** The sim reads ratings, and the two versioned consumers the §8
+rotation generator and the §9 kernel read — `rotationAbility.ts` and
+`simulationReads.ts` — are built on the old taxonomy. Re-derive the model once,
+before §8/§9 depend on it, rather than build the rotation generator twice.
+
+**Work.** Full file-by-file change-list, the 8 version bumps, and the tests to
+regenerate are in DESIGN_OVERVIEW §4. In short: rewrite `detailedRatings.ts`
+(registry 67→91, 18→26 categories, 6→4 pillar groups, attribute-`code` field,
+derived catalog); re-architect `playerDerivations.ts` (4-pillar per-role-max OVR
++ Availability + derived Functional Size from fixed reference μ/σ); regenerate
+`generateDetailedRatings.ts` + `generateLeague.ts` (measurements + 16 tendencies
++ reserved seed streams); re-freeze `simulationReads.ts` and `rotationAbility.ts`
+over the 91 keys; widen the `Player` type + validation + snapshot DTO; and update
+the player UI (26 category rows, real measurements, Potential/Availability
+display — the Potential reversal) and the `SIMULATION_MODEL.md` R8 table.
+
+**Snapshot numbering.** This rehaul consumes `LEAGUE_SNAPSHOT_VERSION` **5**;
+§8's rotation plans and §10's results therefore shift up to **6** and **7**
+(the earlier "§8 takes 5 / §10 takes 6" text below is superseded).
+
+**Exit gate.**
+- Every player stores exactly the 91 base ratings + 5 measurements + 16
+  tendencies; no grade, category score, overall, availability, potential,
+  archetype, or derived rating is stored. Reserved hidden layers are absent, not
+  null placeholders.
+- All 8 version constants bumped; snapshot 4→5; old records refused → new league.
+- OVR is the 4-pillar per-role max; Durability is out of OVR (Availability
+  separate); Potential is absent until the career-sim exists.
+- Simulation reads re-frozen over the 91 keys; the code↔doc agreement test and
+  the `src/simulation/` architecture guard stay green; display-weight versions
+  stay independent of the sim-read version.
+- The ~138-profile role-matching engine is **not** built here (deferred past §9);
+  archetype stays a derived label.
+- The three dev-fixture absence tripwires stay green. All four gates green.
+
+**Then:** the §8 rotation half + §8A, then §9. The larger organization expansion
+is sequenced after the first sim.
 
 ### 9. Simulation kernel — one game
 

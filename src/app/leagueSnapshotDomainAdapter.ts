@@ -157,6 +157,7 @@ function adaptPlayer(source: LeagueSnapshotPlayerDto): Player {
     secondaryPosition: source.secondaryPosition,
     ratingGenerationVersion: source.ratingGenerationVersion,
     ratings: Object.freeze({ ...source.ratings }),
+    measurements: Object.freeze({ ...source.measurements }),
     tendencies: Object.freeze({ ...source.tendencies }),
   })
 }

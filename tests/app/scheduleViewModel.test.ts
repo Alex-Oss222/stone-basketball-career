@@ -72,9 +72,9 @@ const schedule: LeagueSnapshotLeagueScheduleDto = Object.freeze({
 
 const league: LeagueSnapshotLeagueDto = Object.freeze({
   id: schedule.leagueId,
-  generatorVersion: 1,
-  detailedRatingsSchemaVersion: 1,
-  categoryDefinitionVersion: 1,
+  generatorVersion: 2,
+  detailedRatingsSchemaVersion: 2,
+  categoryDefinitionVersion: 2,
   seedFingerprint: 'scheduleview',
   teams: Object.freeze([
     team(TEAM_A_ID, 'Amber', 'Arches', 'AMA'),

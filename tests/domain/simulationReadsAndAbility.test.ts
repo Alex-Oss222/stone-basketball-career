@@ -31,12 +31,18 @@ function makeRatings(value: number) {
 }
 
 describe('rotation-ability selector (R7)', () => {
-  it('pins the version and weight totals', () => {
-    expect(ROTATION_ABILITY_VERSION).toBe(1)
+  it('pins the version and the four-pillar weight totals', () => {
+    expect(ROTATION_ABILITY_VERSION).toBe(2)
     expect(Object.isFrozen(ROTATION_ABILITY_GROUP_WEIGHTS_BPS)).toBe(true)
     for (const position of POSITIONS) {
       const weights = ROTATION_ABILITY_GROUP_WEIGHTS_BPS[position]
       expect(Object.isFrozen(weights)).toBe(true)
+      expect(Object.keys(weights).sort()).toEqual([
+        'defense',
+        'mental',
+        'offense',
+        'physical',
+      ])
       const total = Object.values(weights).reduce(
         (sum, weight) => sum + weight,
         0,
@@ -53,10 +59,10 @@ describe('rotation-ability selector (R7)', () => {
     const ratings = makeRatings(58)
     for (const position of POSITIONS) {
       const result = selectRotationAbility(ratings, position)
-      const { ability, endurance } = result
+      const { ability, conditioning } = result
       expect(Object.isFrozen(result)).toBe(true)
       expect(ability).toBeCloseTo(58, 10)
-      expect(endurance).toBe(58)
+      expect(conditioning).toBe(58)
     }
   })
 
@@ -69,7 +75,7 @@ describe('rotation-ability selector (R7)', () => {
       dribbleControl: 90,
       ballSecurity: 90,
       changeOfDirection: 90,
-      pressureHandling: 90,
+      paceControl: 90,
     })
     expect(
       selectRotationAbility(playmaker, 'PG').ability,
@@ -80,7 +86,7 @@ describe('rotation-ability selector (R7)', () => {
     const base = makeRatings(50)
     const better = parseDetailedPlayerRatings({
       ...makeRatings(50),
-      rimDeterrence: 90,
+      blockTiming: 90,
     })
     for (const position of POSITIONS) {
       expect(selectRotationAbility(base, position)).toEqual(
@@ -95,7 +101,7 @@ describe('rotation-ability selector (R7)', () => {
 
 describe('simulation rating-read registry (R8)', () => {
   it('pins the read version', () => {
-    expect(SIM_RATING_READ_VERSION).toBe(1)
+    expect(SIM_RATING_READ_VERSION).toBe(2)
   })
 
   it('every event dependency is a valid stored sub-rating', () => {
@@ -113,8 +119,21 @@ describe('simulation rating-read registry (R8)', () => {
     }
   })
 
-  it('possession events never read Durability or Intangibles', () => {
+  it('possession events never read a forbidden sub-rating', () => {
     expect(Object.isFrozen(FORBIDDEN_SIM_SUB_RATINGS)).toBe(true)
+    expect(FORBIDDEN_SIM_SUB_RATINGS).toHaveLength(8)
+    expect([...FORBIDDEN_SIM_SUB_RATINGS].sort()).toEqual(
+      [
+        'communication',
+        'competitiveness',
+        'focus',
+        'injuryResistance',
+        'leadership',
+        'loadTolerance',
+        'resilience',
+        'teamwork',
+      ].sort(),
+    )
     const forbidden = new Set<string>(FORBIDDEN_SIM_SUB_RATINGS)
     for (const event of SIM_EVENT_KEYS) {
       for (const key of SIM_EVENT_RATING_READS[event]) {
@@ -123,9 +142,9 @@ describe('simulation rating-read registry (R8)', () => {
     }
   })
 
-  it('covers exactly the 61 possession-relevant sub-ratings', () => {
+  it('covers exactly the 83 possession-relevant sub-ratings', () => {
     const readable = listReadableSubRatings()
-    expect(readable).toHaveLength(61)
+    expect(readable).toHaveLength(83)
     expect(Object.isFrozen(readable)).toBe(true)
     expect(listReadableSubRatings()).toBe(readable)
 
@@ -135,7 +154,7 @@ describe('simulation rating-read registry (R8)', () => {
     for (const key of readable) {
       expect(covered.has(key), key).toBe(true)
     }
-    expect(covered.size).toBe(61)
+    expect(covered.size).toBe(83)
   })
 
   it('the event factor is the unweighted mean of the frozen reads', () => {
@@ -143,9 +162,8 @@ describe('simulation rating-read registry (R8)', () => {
       ...makeRatings(40),
       freeThrowAccuracy: 90,
       freeThrowConsistency: 60,
-      pressureFreeThrows: 30,
     })
-    expect(selectSimEventFactor('freeThrowResolution', ratings)).toBe(60)
+    expect(selectSimEventFactor('freeThrowResolution', ratings)).toBe(75)
     expect(selectSimEventFactor('passResolution', makeRatings(72))).toBe(72)
   })
 

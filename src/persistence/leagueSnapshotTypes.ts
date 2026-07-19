@@ -12,6 +12,7 @@ import type {
   TeamSeasonId,
 } from '../domain/ids'
 import type {
+  PlayerMeasurements,
   PlayerTendencies,
   Position,
   TeamColors,
@@ -45,13 +46,14 @@ export const LEAGUE_SNAPSHOT_KIND =
   'stone-basketball-gm-league-snapshot' as const
 
 /**
- * The one current snapshot version. Deliberately monotonic — versions 1–3
+ * The one current snapshot version. Deliberately monotonic — versions 1–4
  * shipped to local browser storage during development and must be refused,
- * never mis-parsed, so this constant never resets. Version 4 replaced the
- * stored 16 macro ratings with the 67-sub-rating detailed model (§8B R4);
- * per §7 there is no migration — an old record offers "start a new league."
+ * never mis-parsed, so this constant never resets. Version 5 is the ADR 0009
+ * ratings rehaul: the stored 91 base ratings plus the measurements and 16
+ * tendency families (§8C). Per §7 there is no migration — an old record offers
+ * "start a new league."
  */
-export const LEAGUE_SNAPSHOT_VERSION = 4 as const
+export const LEAGUE_SNAPSHOT_VERSION = 5 as const
 
 export interface LeagueSnapshotTeamDto {
   readonly id: TeamId
@@ -73,12 +75,13 @@ export interface LeagueSnapshotPlayerDto {
   readonly secondaryPosition: Position | null
   readonly ratingGenerationVersion: typeof DETAILED_RATING_GENERATION_VERSION
   readonly ratings: DetailedPlayerRatings
+  readonly measurements: PlayerMeasurements
   readonly tendencies: PlayerTendencies
 }
 
 export interface LeagueSnapshotLeagueDto {
   readonly id: LeagueId
-  readonly generatorVersion: 1
+  readonly generatorVersion: 2
   readonly detailedRatingsSchemaVersion: typeof DETAILED_RATINGS_SCHEMA_VERSION
   readonly categoryDefinitionVersion: typeof CATEGORY_DEFINITION_VERSION
   readonly seedFingerprint: string

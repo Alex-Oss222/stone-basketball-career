@@ -28,7 +28,7 @@ const displayRowCache = new WeakMap<
 >()
 
 /**
- * The 18 derived category rows in registry order — display data, never
+ * The 26 derived category rows in registry order — display data, never
  * stored. Memoized per ratings reference; the cache is implicitly keyed by
  * CATEGORY_DEFINITION_VERSION because a definition change ships new code.
  */

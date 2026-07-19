@@ -6,7 +6,7 @@ import {
   LeagueTeamsContent,
   TeamRosterContent,
 } from '../../src/ui/dashboardPages'
-import { deriveVersionedOverall } from '../../src/domain/playerDerivations'
+import { deriveOverall } from '../../src/domain/playerDerivations'
 import { getTeamRoster } from '../../src/ui/leagueViewModel'
 
 const league = generateLeague('dashboard-pages-fixture')
@@ -41,9 +41,7 @@ describe('dashboard page rendering', () => {
     }
     // Real values: every derived Overall appears.
     for (const player of roster) {
-      expect(markup).toContain(
-        String(deriveVersionedOverall(player.ratings, player.primaryPosition)),
-      )
+      expect(markup).toContain(String(deriveOverall(player)))
     }
     // No skill grades or Potential on the roster screen.
     expect(markup).not.toContain('grade-badge')

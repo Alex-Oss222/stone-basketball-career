@@ -1,6 +1,6 @@
 import type { Player, Position } from '../domain/league'
 import { POSITIONS } from '../domain/league'
-import { deriveVersionedOverall } from '../domain/playerDerivations'
+import { deriveOverall } from '../domain/playerDerivations'
 
 export interface RosterDepthChartProps {
   readonly roster: readonly Player[]
@@ -9,8 +9,8 @@ export interface RosterDepthChartProps {
 /**
  * Depth Chart — the half-court panel at the top right of the roster screen.
  * Each position zone lists its natural players. The numbers shown are the
- * derived display Overall (real, ratings-based), not simulated results.
- * DEFERRED(§8): today the order within a zone is by derived Overall; the
+ * player's Headline OVR (real, ratings-based), not simulated results.
+ * DEFERRED(§8): today the order within a zone is by Headline OVR; the
  * rotation plan replaces it with real depth ordering when §8 lands.
  */
 export function RosterDepthChart({ roster }: RosterDepthChartProps) {
@@ -38,7 +38,7 @@ export function RosterDepthChart({ roster }: RosterDepthChartProps) {
                     {abbreviatePlayerName(player)}
                   </span>{' '}
                   <span className="depth-player-overall">
-                    ({deriveVersionedOverall(player.ratings, position)})
+                    ({deriveOverall(player)})
                   </span>
                 </li>
               ))}
@@ -62,11 +62,7 @@ function naturalPlayersByOverall(
   return roster
     .filter((player) => player.primaryPosition === position)
     .slice()
-    .sort(
-      (first, second) =>
-        deriveVersionedOverall(second.ratings, position) -
-        deriveVersionedOverall(first.ratings, position),
-    )
+    .sort((first, second) => deriveOverall(second) - deriveOverall(first))
 }
 
 function abbreviatePlayerName(player: Player): string {
