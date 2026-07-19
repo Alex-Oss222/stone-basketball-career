@@ -90,8 +90,10 @@ the master pick-up map:
   deterministic CPU generation + the functional Adjust Rotation editor) re-derived
   on the 91-key `rotationAbility.ts`, then §8A coach profiles, then §9 (the sim).
 - **Queued, needs Alex's written go-ahead (not started — checkpoint rule):**
-  (1) the impact-based Headline OVR **"Path A"** — reward-peaks is the interim
-  Path A and becomes Path B once the sim exists (DESIGN_OVERVIEW §6d);
+  (1) **build the impact-based Headline OVR ("Path A")** — CONFIRMED 2026-07-19
+  as *the* headline target (the "which path" question is closed); reward-peaks
+  stays a **frozen cosmetic interim, no hand-tuning**, until the sim exists, then
+  Path A is promoted and reward-peaks demoted to Path B (DESIGN_OVERVIEW §6d);
   (2) retune measurement height generation to the normal per-position ranges
   (PG 71–78", SG 74–79", SF 77–81", PF 79–83", C 81–86" — never exceed the top),
   DESIGN_OVERVIEW §6b;

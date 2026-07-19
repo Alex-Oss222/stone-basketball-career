@@ -163,6 +163,34 @@ engine — NOT built now). Captured so it isn't lost:
 
 ## 6d. OVR architecture — Role Fit vs impact-based Headline OVR (Path A / Path B)
 
+**Confirmed 2026-07-19 (Alex) — the OVR direction is settled. Three decisions:**
+
+1. **Path A (impact-based) is *the* Headline OVR target.** The choice of path is
+   closed — no longer an open "which path". The future Headline OVR is the
+   with-vs-without-a-fixed-replacement impact number (below), promoted to the
+   headline the moment the sim can produce it (§9 kernel; §14 depth before the
+   numbers are trustworthy). Reward-peaks is then demoted to Path B.
+2. **Reward-peaks is FROZEN as a *cosmetic* interim.** Before the sim, the
+   headline OVR is decoration — nothing reads it (no trade, rotation, or sim
+   outcome), so its imperfection costs nothing today. Leave it exactly as shipped
+   (`OVERALL_MODEL_VERSION 3`, `PEAK_BLEND 0.35`). Do not re-open it.
+3. **No hand-tuning to fake the target.** Do NOT add synergy/interaction bonuses
+   or fudge factors to make reward-peaks reproduce the intended board before the
+   sim exists. That is throwaway work the impact model deletes, and it is exactly
+   the "guess the weights by feel" trap the impact approach exists to escape. If
+   the interim's wrongness ever bothers us, the honest move is to show the four
+   pillars + Role Fit and *hide* a single headline number — never fabricate one.
+
+**Evidence (why the interim can't simply be tuned).** Running the shipped v3
+formula on six calibrated star profiles — Shai / Jokić / Luka / Giannis /
+Brunson / Cade, intended OVRs **99 / 99 / 98 / 97 / 95 / 93** — returns
+reward-peaks **93 / 92 / 89 / 94 / 88 / 89**. It compresses the whole top tier
+into an ~88–94 band (targets span 93–99) *and* reorders it: Giannis climbs to #1,
+while Luka (intended #2) drops to 89 — level with Cade, the intended #6. The
+failure is structural to pillar-averaging, not a weight that can be nudged. This
+is the Bam-over-LeBron/Durant diagnosis at six-player scale; only the impact
+system fixes it.
+
 **Decided direction 2026-07-19.** The current position-weighted 4-pillar Overall
 (`playerDerivations.ts`) is really a **Role Fit** score — "how well does this
 player satisfy the attributes we value *at this position*" — not a cross-position
