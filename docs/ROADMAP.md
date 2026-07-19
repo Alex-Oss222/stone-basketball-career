@@ -78,9 +78,30 @@ Two things make this safe rather than reckless:
 
 ## Status
 
-**Current section: §8C ratings rehaul — supersedes §8B's model. Then the §8 rotation half + §8A, then §9.**
+**Current section: §8 rotation half + §8A coach profiles, then §9. §8C (ratings rehaul) is COMPLETE — landed 2026-07-19 in commit `2cda18d`, all four gates green (1223 tests).**
 
-**Ratings rehaul (§8C), decided 2026-07-19 — see [ADR 0009](adr/0009-player-ratings-rehaul.md) and [reference/DESIGN_OVERVIEW.md](reference/DESIGN_OVERVIEW.md).** §8B's 18-category / 67-sub-rating model is being replaced by the deeper, implementation-ready model Alex authored: **26 categories / 91 base ratings** across 4 pillars, a measurements layer, a derived-ratings layer, a new 4-pillar per-role-max OVR, **16 tendencies**, and Durability split out as a separate Availability grade. Hidden development, hidden health, and **Potential** (reinstated, reversing ADR 0008, as a derived *68th-percentile-of-simulated-peak* computed only once the career-sim exists) are **reserved** for later sections. This must land before the §8 rotation half and §9, because `rotationAbility.ts` and `simulationReads.ts` must be re-derived on the 91-key model first. The exact change-list and all 8 version bumps are in DESIGN_OVERVIEW §4. **A larger scope expansion is also captured** — per-team GMs / coaches / staff / medical / development / scouting + a role-matching engine, in `reference/AI_STAFF_MASTER_SPEC.md` — deliberately sequenced *after* the first sim (DESIGN_OVERVIEW §2). The prior status (below) is retained as history.
+**Session handoff (2026-07-19).** Tonight closed §8C: the full 91-rating rehaul,
+the Role Fit / reward-peaks Headline OVR split, the quick-view fixes (3s pin,
+always-on Health/Development, row-wide keep-alive), and "Trade Center → Trade
+Player" all shipped and were independently verified green. **Pick up here next
+session** — see [reference/DESIGN_OVERVIEW.md](reference/DESIGN_OVERVIEW.md) for
+the master pick-up map:
+- **Next build step:** §8 rotation half (`RotationPlanV1` + validator +
+  deterministic CPU generation + the functional Adjust Rotation editor) re-derived
+  on the 91-key `rotationAbility.ts`, then §8A coach profiles, then §9 (the sim).
+- **Queued, needs Alex's written go-ahead (not started — checkpoint rule):**
+  (1) the impact-based Headline OVR **"Path A"** — reward-peaks is the interim
+  Path A and becomes Path B once the sim exists (DESIGN_OVERVIEW §6d);
+  (2) retune measurement height generation to the normal per-position ranges
+  (PG 71–78", SG 74–79", SF 77–81", PF 79–83", C 81–86" — never exceed the top),
+  DESIGN_OVERVIEW §6b;
+  (3) the larger org expansion (per-team GM / coaches / staff / medical /
+  development / scouting + the ~138-profile role-matching engine), deliberately
+  sequenced **after** the first sim (DESIGN_OVERVIEW §2).
+- **One standing risk:** the repo is committed **locally only** — no offsite
+  backup / remote yet. Worth pushing somewhere private early next session.
+
+**Ratings rehaul (§8C), decided 2026-07-19 — see [ADR 0009](adr/0009-player-ratings-rehaul.md) and [reference/DESIGN_OVERVIEW.md](reference/DESIGN_OVERVIEW.md).** §8B's 18-category / 67-sub-rating model **was replaced (2026-07-19, commit `2cda18d`)** by the deeper, implementation-ready model Alex authored: **26 categories / 91 base ratings** across 4 pillars, a measurements layer, a derived-ratings layer, a new 4-pillar per-role-max OVR, **16 tendencies**, and Durability split out as a separate Availability grade. Hidden development, hidden health, and **Potential** (reinstated, reversing ADR 0008, as a derived *68th-percentile-of-simulated-peak* computed only once the career-sim exists) are **reserved** for later sections. This landed before the §8 rotation half and §9, so `rotationAbility.ts` and `simulationReads.ts` are now re-derived on the 91-key model. The exact change-list and all 8 version bumps are in DESIGN_OVERVIEW §4. **A larger scope expansion is also captured** — per-team GMs / coaches / staff / medical / development / scouting + a role-matching engine, in `reference/AI_STAFF_MASTER_SPEC.md` — deliberately sequenced *after* the first sim (DESIGN_OVERVIEW §2). The prior status (below) is retained as history.
 
 **Prior status (pre-rehaul, retained as history): §8 rotation half + §8A coach profiles (§8B was complete).**
 
@@ -924,6 +945,18 @@ display — the Potential reversal) and the `SIMULATION_MODEL.md` R8 table.
 - The ~138-profile role-matching engine is **not** built here (deferred past §9);
   archetype stays a derived label.
 - The three dev-fixture absence tripwires stay green. All four gates green.
+
+**§8C is COMPLETE (2026-07-19, commit `2cda18d`).** All exit-gate items met and
+independently verified: the stored model is exactly 91 base ratings + 5
+measurements + 16 tendencies (no derived value stored, reserved layers absent);
+all 8 version constants bumped and snapshot 4→5; OVR is the 4-pillar per-role max
+(Role Fit) with a reward-peaks Headline blend on top, Durability out of OVR and
+shown as a separate Availability grade, Potential absent until the career-sim;
+sim reads re-frozen over the 91 keys with the code↔doc agreement test and the
+`src/simulation/` guard green; the role-matching engine deferred past §9; the
+three dev-fixture tripwires and all four gates green (1223 tests). `grep -rn
+"DEFERRED(§8C)" src/` is empty. Sample Headline OVRs under the new model:
+LeBron 86, Durant 86, Adebayo 89.
 
 **Then:** the §8 rotation half + §8A, then §9. The larger organization expansion
 is sequenced after the first sim.
