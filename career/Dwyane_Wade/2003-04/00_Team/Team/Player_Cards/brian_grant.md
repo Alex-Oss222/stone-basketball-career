@@ -1,82 +1,80 @@
-# Brian Grant — 2003-04 Basketball Player Card
+# Brian Grant | 2003-04 Player Profile
 
-<!-- photo: pending user-provided image -->
+**Team:** Miami Heat · **League:** NBA · **Position:** C / PF  
+**Age at assessment:** 31 · **Height:** 6-9 · **Weight:** 254 lb  
+**Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Team:** Miami Heat  
-**As of:** June 26, 2003  
-**Roster/control status:** under_contract  
-**Primary position:** C  
-**Secondary position:** PF  
-**Height:** 6-9  
-**Weight:** 254 lb  
-**Date of birth:** 1972-03-05  
-**College / prior program:** Xavier  
-**Contract/control:** Contract signed through 2004-05.  
-**Working depth role:** 2002-03 C1
+## Scouting report
 
-## Current basketball assessment
+**Role:** 2002-03 C1 is the carried 2002-03 baseline; Miami has not finalized the 2003-04 role.
 
-| Trait | Grade |
-|---|---:|
-| Overall | Unassessed |
-| Athleticism | Unassessed |
-| Speed / quickness | Unassessed |
-| Strength | Unassessed |
-| Vertical / explosiveness | Unassessed |
-| Ball handling | Unassessed |
-| Passing / playmaking | Unassessed |
-| Rim finishing | Unassessed |
-| Mid-range shooting | Unassessed |
-| Three-point shooting | Unassessed |
-| Free throws | Unassessed |
-| Perimeter defense | Unassessed |
-| Interior defense | Unassessed |
-| Rebounding | Unassessed |
-| Basketball IQ | Unassessed |
-| Stamina | Unassessed |
+**Offense:** Not assessed from the current repository evidence beyond the carried roster and depth role.
 
-## Established player state
+**Defense:** Not assessed from the current repository evidence beyond position and depth assignment.
 
-- Previous working role: 2002-03 C1.
+**Best traits:** Not assessed.
 
-## Working role
+**Main weaknesses:** Not assessed.
 
-- Position eligibility: C / PF
-- Depth role: 2002-03 C1
-- Minute target: Unassigned for 2003-04
-- Closing status: Unassigned for 2003-04
+## Player grades
 
-## Contract/control note
+**Overall:** Not assessed. The current repository does not contain enough dated staff evidence for an opening NBA grade.
 
-Contract signed through 2004-05.
+Staff estimates against NBA rotation players at the assessment date. Scale: 1–2 very weak; 3–4 below average; 5–6 average; 7–8 above average; 9–10 elite. Use “Not assessed” when evidence is insufficient.
 
-## Evidence and uncertainty
+| Skill | Grade /10 | Evidence or limitation |
+| --- | ---: | --- |
+| Physical tools | Not assessed | No dated Miami staff grade in current evidence. |
+| Ball handling | Not assessed | No dated Miami staff grade in current evidence. |
+| Passing and decisions | Not assessed | No dated Miami staff grade in current evidence. |
+| Shot creation | Not assessed | No dated Miami staff grade in current evidence. |
+| Rim finishing | Not assessed | No dated Miami staff grade in current evidence. |
+| Shooting | Not assessed | No dated Miami staff grade in current evidence. |
+| Off-ball offense | Not assessed | No dated Miami staff grade in current evidence. |
+| Rebounding | Not assessed | No dated Miami staff grade in current evidence. |
+| On-ball defense | Not assessed | No dated Miami staff grade in current evidence. |
+| Screen navigation | Not assessed | No dated Miami staff grade in current evidence. |
+| Help defense | Not assessed | No dated Miami staff grade in current evidence. |
+| Rim protection | Not assessed | No dated Miami staff grade in current evidence. |
 
-**Primary evidence**
+## Changes and coaching notes
 
-- https://www.basketball-reference.com/teams/MIA/2003.html
-- https://www.basketball-reference.com/teams/MIA/2003_depth.html
+| Date | Finding and effect on role or grade | Evidence |
+| --- | --- | --- |
+| June 26, 2003 | No material change established. Opening Miami offseason card created from the current control/depth baseline. | [Roster/control register](../Roster/roster.json) and [league baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json) |
 
-**Current limits**
+## Sources and uncertainty
 
-- The 2003-04 roster and rotation are not finalized.
-- No July transaction or later-season result is imported into this June 26 card.
-- Subjective 2003-04 staff grades remain unassessed until the simulation produces current evidence.
+- **Assessment evidence:**  
+  - [Miami roster/control register](../Roster/roster.json)
+  - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
+  - https://www.basketball-reference.com/players/g/grantbr01.html
+- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades; current control status: Contract signed through 2004-05.
 
-## Dated updates
-
-### June 26, 2003 | Opening team-control snapshot
-
-Card opened from the current Miami roster/control register.
+<!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
-| Season | Team | Status |
-|---|---|---|
-| 2003-04 | Miami Heat | Not played |
+G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
+
+**Coverage:** 2003-04 has not started. Prior NBA statistical history has not yet been imported into this card.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2003-04 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+Source: [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json) for roster status; detailed historical statistical lines have not yet been imported.
 
 ## Playoff statistics by year
 
-| Season | Team | Status |
-|---|---|---|
-| 2003-04 | Miami Heat | Not played |
+**Coverage:** 2003-04 playoffs have not started. Prior playoff statistical history has not yet been imported into this card.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2003-04 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+<!-- yearly-statistics:end -->
+
+## Awards and honors
+
+No verified awards or honors have been imported into this card through June 26, 2003.

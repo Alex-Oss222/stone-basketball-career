@@ -1,82 +1,86 @@
-# Jerome Beasley — 2003-04 Basketball Player Card
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jerome_Beasley.jpg?width=500" alt="Jerome Beasley" width="160">
 
-<!-- photo: pending user-provided image -->
+*Photo: Jos @ FPS-Groningen from Ten Boer, Netherlands, CC BY 2.0.*
+<!-- /photo -->
 
-**Team:** Miami Heat  
-**As of:** June 26, 2003  
-**Roster/control status:** draft_rights_unsigned  
-**Primary position:** PF  
-**Secondary position:** C  
-**Height:** 6-10  
-**Weight:** 237 lb  
-**Date of birth:** 1980-05-17  
-**College / prior program:** North Dakota  
-**Contract/control:** Selected No. 33 overall by Miami on June 26, 2003; unsigned draft rights.  
-**Working depth role:** Unassigned rookie
+# Jerome Beasley | 2003-04 Player Profile
 
-## Current basketball assessment
+**Team:** Miami Heat · **League:** NBA · **Position:** PF / C  
+**Age at assessment:** 23 · **Height:** 6-10 · **Weight:** 237 lb  
+**Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-| Trait | Grade |
-|---|---:|
-| Overall | Unassessed |
-| Athleticism | Unassessed |
-| Speed / quickness | Unassessed |
-| Strength | Unassessed |
-| Vertical / explosiveness | Unassessed |
-| Ball handling | Unassessed |
-| Passing / playmaking | Unassessed |
-| Rim finishing | Unassessed |
-| Mid-range shooting | Unassessed |
-| Three-point shooting | Unassessed |
-| Free throws | Unassessed |
-| Perimeter defense | Unassessed |
-| Interior defense | Unassessed |
-| Rebounding | Unassessed |
-| Basketball IQ | Unassessed |
-| Stamina | Unassessed |
+## Scouting report
 
-## Established player state
+**Role:** Unassigned rookie; Miami has not assigned a 2003-04 rotation role yet.
 
-- No NBA season yet.
+**Offense:** Not assessed from the current repository evidence beyond the carried roster and depth role.
 
-## Working role
+**Defense:** Not assessed from the current repository evidence beyond position and depth assignment.
 
-- Position eligibility: PF / C
-- Depth role: Unassigned rookie
-- Minute target: Unassigned for 2003-04
-- Closing status: Unassigned for 2003-04
+**Best traits:** Not assessed.
 
-## Contract/control note
+**Main weaknesses:** Not assessed.
 
-Selected No. 33 overall by Miami on June 26, 2003; unsigned draft rights.
+## Player grades
 
-## Evidence and uncertainty
+**Overall:** Not assessed. The current repository does not contain enough dated staff evidence for an opening NBA grade.
 
-**Primary evidence**
+Staff estimates against NBA rotation players at the assessment date. Scale: 1–2 very weak; 3–4 below average; 5–6 average; 7–8 above average; 9–10 elite. Use “Not assessed” when evidence is insufficient.
 
-- https://www.nba.com/player/2602/jerome-beasley
-- https://www.basketball-reference.com/teams/MIA/2003_transactions.html
+| Skill | Grade /10 | Evidence or limitation |
+| --- | ---: | --- |
+| Physical tools | Not assessed | No dated Miami staff grade in current evidence. |
+| Ball handling | Not assessed | No dated Miami staff grade in current evidence. |
+| Passing and decisions | Not assessed | No dated Miami staff grade in current evidence. |
+| Shot creation | Not assessed | No dated Miami staff grade in current evidence. |
+| Rim finishing | Not assessed | No dated Miami staff grade in current evidence. |
+| Shooting | Not assessed | No dated Miami staff grade in current evidence. |
+| Off-ball offense | Not assessed | No dated Miami staff grade in current evidence. |
+| Rebounding | Not assessed | No dated Miami staff grade in current evidence. |
+| On-ball defense | Not assessed | No dated Miami staff grade in current evidence. |
+| Screen navigation | Not assessed | No dated Miami staff grade in current evidence. |
+| Help defense | Not assessed | No dated Miami staff grade in current evidence. |
+| Rim protection | Not assessed | No dated Miami staff grade in current evidence. |
 
-**Current limits**
+## Changes and coaching notes
 
-- The 2003-04 roster and rotation are not finalized.
-- No July transaction or later-season result is imported into this June 26 card.
-- Subjective 2003-04 staff grades remain unassessed until the simulation produces current evidence.
+| Date | Finding and effect on role or grade | Evidence |
+| --- | --- | --- |
+| June 26, 2003 | No material change established. Miami has acquired the player's draft rights; role and grades remain unassigned. | [Roster/control register](../Roster/roster.json) and [league baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json) |
 
-## Dated updates
+## Sources and uncertainty
 
-### June 26, 2003 | Opening team-control snapshot
+- **Assessment evidence:**  
+  - [Miami roster/control register](../Roster/roster.json)
+  - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
+  - https://www.basketball-reference.com/players/b/beaslje01.html
+- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades; current control status: Selected No. 33 overall by Miami on June 26, 2003; unsigned draft rights.
 
-Card opened from the current Miami roster/control register.
+<!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
-| Season | Team | Status |
-|---|---|---|
-| 2003-04 | Miami Heat | Not played |
+G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
+
+**Coverage:** 2003-04 has not started. No prior NBA season is recorded for this player in the current card.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2003-04 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+Source: [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json) for roster status; detailed historical statistical lines have not yet been imported.
 
 ## Playoff statistics by year
 
-| Season | Team | Status |
-|---|---|---|
-| 2003-04 | Miami Heat | Not played |
+**Coverage:** 2003-04 playoffs have not started. Prior playoff statistical history has not yet been imported into this card.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2003-04 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+<!-- yearly-statistics:end -->
+
+## Awards and honors
+
+No verified awards or honors have been imported into this card through June 26, 2003.

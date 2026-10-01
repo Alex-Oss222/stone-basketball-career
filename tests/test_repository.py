@@ -45,6 +45,23 @@ class InitializedCareerTests(unittest.TestCase):
         for player in roster["players"]:
             self.assertTrue((TEAM/"Team/Player_Cards"/f"{player['id']}.md").is_file())
 
+    def test_player_cards_follow_current_template(self):
+        roster=json.loads((TEAM/"Team/Roster/roster.json").read_text(encoding="utf-8"))
+        sections=[
+            "## Scouting report",
+            "## Player grades",
+            "## Changes and coaching notes",
+            "## Sources and uncertainty",
+            "## Regular-season statistics by year",
+            "## Playoff statistics by year",
+            "## Awards and honors",
+        ]
+        for player in roster["players"]:
+            text=(TEAM/"Team/Player_Cards"/f"{player['id']}.md").read_text(encoding="utf-8")
+            positions=[text.index(section) for section in sections]
+            self.assertEqual(positions,sorted(positions))
+            self.assertEqual(text.rfind("## Awards and honors"),positions[-1])
+
     def test_depth_chart_is_holding_chart(self):
         depth=json.loads((TEAM/"Team/Depth_Chart/depth_chart.json").read_text(encoding="utf-8"))
         self.assertFalse(depth["game_ready"])

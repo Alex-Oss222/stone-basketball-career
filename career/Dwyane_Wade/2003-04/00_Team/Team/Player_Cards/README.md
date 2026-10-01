@@ -2,8 +2,11 @@
 
 Snapshot date: June 26, 2003.
 
-There is one card for every player in the team-control register. User-supplied pictures can be attached later without changing the personnel facts.
+Every player in the team-control register has a card using [TEMPLATE.md](TEMPLATE.md) as the canonical format.
 
-The cards deliberately leave subjective grades unassessed unless current evidence supports them. The detailed Dwyane Wade simulation profile remains the primary owner of Wade's pre-draft scouting and biography.
+The template's section order is enforced by repository validation: scouting report, player grades, changes/coaching notes, sources/uncertainty, regular-season statistics, playoff statistics, then awards and honors last.
 
-Template: [TEMPLATE.md](TEMPLATE.md)
+Headshots and license/credit metadata come from the league source files when available. Subjective grades remain `Not assessed` until dated Miami staff evidence supports them.
+
+- [2002-03 league baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json)
+- [2003 draft class](../../../../../../library/2003/league/nba_2003_draft_class.json)

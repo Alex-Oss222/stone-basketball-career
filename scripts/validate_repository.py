@@ -170,9 +170,25 @@ def validate():
         ids=[p.get("id") for p in players]
         require(errors,len(ids)==len(set(ids)),"roster player ids must be unique")
         require(errors,{"dwyane_wade","jerome_beasley"} <= set(ids),"draft picks missing from roster/control register")
+        required_card_sections=[
+            "## Scouting report",
+            "## Player grades",
+            "## Changes and coaching notes",
+            "## Sources and uncertainty",
+            "## Regular-season statistics by year",
+            "## Playoff statistics by year",
+            "## Awards and honors",
+        ]
         for p in players:
             card=team/"Team/Player_Cards"/f"{p.get('id')}.md"
             require(errors,card.is_file(),f"missing player card for {p.get('name')}")
+            if card.is_file():
+                text=card.read_text(encoding="utf-8")
+                positions=[text.find(section) for section in required_card_sections]
+                require(errors,all(pos >= 0 for pos in positions),f"{card.relative_to(ROOT)}: missing canonical template section")
+                if all(pos >= 0 for pos in positions):
+                    require(errors,positions==sorted(positions),f"{card.relative_to(ROOT)}: template section order changed")
+                    require(errors,text.rstrip().endswith("No verified awards or honors have been imported into this card through June 26, 2003.") or "## Awards and honors" in text[text.rfind("## Awards and honors"):],f"{card.relative_to(ROOT)}: awards section must remain last")
 
     finance_path=team/"Finances/finance.json"
     if finance_path.is_file():

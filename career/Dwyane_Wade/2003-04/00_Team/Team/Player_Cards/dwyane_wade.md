@@ -1,82 +1,86 @@
-# Dwyane Wade — 2003-04 Basketball Player Card
+<!-- photo -->
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dwyane_Wade_e1.jpg?width=500" alt="Dwyane Wade" width="160">
 
-<!-- photo: pending user-provided image -->
+*Photo: Flickr user Keith Allison, CC BY-SA 2.0.*
+<!-- /photo -->
 
-**Team:** Miami Heat  
-**As of:** June 26, 2003  
-**Roster/control status:** draft_rights_unsigned  
-**Primary position:** SG  
-**Secondary position:** PG  
-**Height:** 6-6 in shoes  
-**Weight:** 220 lb  
-**Date of birth:** 1984-01-17  
-**College / prior program:** UConn (simulation canon)  
-**Contract/control:** Selected No. 5 overall by Miami on June 26, 2003; unsigned draft rights.  
-**Working depth role:** Unassigned rookie
+# Dwyane Wade | 2003-04 Player Profile
 
-## Current basketball assessment
+**Team:** Miami Heat · **League:** NBA · **Position:** SG / PG  
+**Age at assessment:** 19 · **Height:** 6-6 in shoes · **Weight:** 220 lb  
+**Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-| Trait | Grade |
-|---|---:|
-| Overall | Unassessed |
-| Athleticism | Unassessed |
-| Speed / quickness | Unassessed |
-| Strength | Unassessed |
-| Vertical / explosiveness | Unassessed |
-| Ball handling | Unassessed |
-| Passing / playmaking | Unassessed |
-| Rim finishing | Unassessed |
-| Mid-range shooting | Unassessed |
-| Three-point shooting | Unassessed |
-| Free throws | Unassessed |
-| Perimeter defense | Unassessed |
-| Interior defense | Unassessed |
-| Rebounding | Unassessed |
-| Basketball IQ | Unassessed |
-| Stamina | Unassessed |
+## Scouting report
 
-## Established player state
+**Role:** Unassigned rookie; Miami has not assigned a 2003-04 rotation role yet.
 
-- See the career-wide player profile for the established simulation scouting record. Do not replace it with the real-world Wade biography or college history.
+**Offense:** Attacks closeouts and ball screens, gets to the paint, finishes through guard contact and can create passes when help commits.
 
-## Working role
+**Defense:** Best suited initially to guard matchups; length and strength help, while screen navigation and help-position discipline remain development questions.
 
-- Position eligibility: SG / PG
-- Depth role: Unassigned rookie
-- Minute target: Unassigned for 2003-04
-- Closing status: Unassigned for 2003-04
+**Best traits:** Paint pressure; finishing through contact.
 
-## Contract/control note
+**Main weaknesses:** Late reads against the second defender; screen navigation and off-ball positioning.
 
-Selected No. 5 overall by Miami on June 26, 2003; unsigned draft rights.
+## Player grades
 
-## Evidence and uncertainty
+**Overall:** Not assessed. Miami has not yet established a post-draft NBA staff grade for Wade.
 
-**Primary evidence**
+Staff estimates against NBA rotation players at the assessment date. Scale: 1–2 very weak; 3–4 below average; 5–6 average; 7–8 above average; 9–10 elite. Use “Not assessed” when evidence is insufficient.
 
-- Simulation canon: [Dwyane Wade player profile](../../../../Dwyane_Wade_Player_Profile.md)
-- Draft result: https://www.basketball-reference.com/teams/MIA/2003_transactions.html
+| Skill | Grade /10 | Evidence or limitation |
+| --- | ---: | --- |
+| Physical tools | Not assessed | Predraft measurements and testing exist in the career profile, but no Miami staff grade is recorded. |
+| Ball handling | Not assessed | Profile documents secondary ball-handling work and pressure-related limitations; no Miami grade yet. |
+| Passing and decisions | Not assessed | Profile records drive-and-kick creation and late second-defender reads; no Miami grade yet. |
+| Shot creation | Not assessed | Profile establishes self-created paint and pull-up offense; no Miami grade yet. |
+| Rim finishing | Not assessed | Profile establishes contact finishing and either-hand finishes; no Miami grade yet. |
+| Shooting | Not assessed | Profile records improved college shooting and NBA-range uncertainty; no Miami grade yet. |
+| Off-ball offense | Not assessed | Profile records cutting and secondary-side use; no Miami grade yet. |
+| Rebounding | Not assessed | Profile records guard rebounding activity; no Miami grade yet. |
+| On-ball defense | Not assessed | Profile supports guard matchups with unresolved quickest-guard limitations; no Miami grade yet. |
+| Screen navigation | Not assessed | Profile identifies screen navigation as a current limitation; no Miami grade yet. |
+| Help defense | Not assessed | Profile records deflections plus premature help and cutter-loss errors; no Miami grade yet. |
+| Rim protection | Not assessed | Weak-side blocks are documented, but no NBA staff grade exists. |
 
-**Current limits**
+## Changes and coaching notes
 
-- The 2003-04 roster and rotation are not finalized.
-- No July transaction or later-season result is imported into this June 26 card.
-- Subjective 2003-04 staff grades remain unassessed until the simulation produces current evidence.
+| Date | Finding and effect on role or grade | Evidence |
+| --- | --- | --- |
+| June 26, 2003 | No material change established. Miami has acquired the player's draft rights; role and grades remain unassigned. | [Career profile](../../../../Dwyane_Wade_Player_Profile.md) and [draft source](../../../../../../library/2003/league/nba_2003_draft_class.json) |
 
-## Dated updates
+## Sources and uncertainty
 
-### June 26, 2003 | Opening team-control snapshot
+- **Assessment evidence:**  
+  - [Dwyane Wade career profile](../../../../Dwyane_Wade_Player_Profile.md)
+  - [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json)
+  - https://www.basketball-reference.com/players/w/wadedw01.html
+- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades; current control status: Selected No. 5 overall by Miami on June 26, 2003; unsigned draft rights.
 
-Card opened from the current Miami roster/control register.
+<!-- yearly-statistics:start -->
 
 ## Regular-season statistics by year
 
-| Season | Team | Status |
-|---|---|---|
-| 2003-04 | Miami Heat | Not played |
+G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
+
+**Coverage:** 2003-04 has not started. No prior NBA season is recorded for this player in the current card.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2003-04 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+Source: [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json) for roster status; detailed historical statistical lines have not yet been imported.
 
 ## Playoff statistics by year
 
-| Season | Team | Status |
-|---|---|---|
-| 2003-04 | Miami Heat | Not played |
+**Coverage:** 2003-04 playoffs have not started. Prior playoff statistical history has not yet been imported into this card.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2003-04 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+<!-- yearly-statistics:end -->
+
+## Awards and honors
+
+No verified awards or honors have been imported into this card through June 26, 2003.
