@@ -1,38 +1,24 @@
 # Update workflow
 
-## Before an event
+## Before advancing
 
-Read current state, player profile, season structure, and the current owning note. Confirm that the event is actually due and that the player has a real decision to make.
+Read the player profile, current state, team config, and the current phase/week/game.
 
-## When an event is scheduled
+Read roster and rotation for games. Read finance state only when a financial or transaction question requires it.
 
-For play-in or playoff games, use:
+## Team state
 
-```sh
-python scripts/create_game_note.py ...
-```
+The AI/GM owns `00_Team`. Update it only after an actual simulated team decision or verified team-state change.
 
-A scheduled game requires a date and opponent. Do not use a blank file as a placeholder.
+A user preference does not directly rewrite the rotation, roster, cap sheet or team strategy.
 
-Regular-season and phase notes already exist as empty state containers. Change `status` from `not_started` to `active` only when the period begins.
+## External games
 
-## When an event closes
+If Relay or another runner produces a game, record the matchup in the correct game file and then write the result there. Do not treat raw external output as canonical before it is attached to the career.
 
-Record the result in the owning note, then update only the current-state fields affected by that result. Do not manufacture unrelated changes.
-
-For a played game, change the game-note status to `played` and record a result.
-
-If a best-of-seven series ends before Game 5, 6, or 7, leave unscheduled files absent or create explicit `not_played` notes with a reason.
-
-For Play-In Game 1, update `next_game_required` after the result. Do not create Game 2 unless that value is true.
-
-## Validate
-
-Run:
+## Validation
 
 ```sh
 python scripts/validate_repository.py
 python -m unittest discover -s tests -v
 ```
-
-A structural failure means the repository should not be treated as a valid advanced state.

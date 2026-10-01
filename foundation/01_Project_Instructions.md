@@ -2,44 +2,44 @@
 
 ## Purpose
 
-Maintain a coherent basketball career centered on one player. The repository is intentionally empty until a player and season are established.
+Maintain one coherent basketball player career.
+
+The user is the player. Team and league actors are independent.
+
+## Minimal repository rule
+
+Do not copy systems from the football project merely because they exist there. Add a record only when the basketball career needs it.
+
+The retained team systems are limited to roster, rotation, player cards, team configuration and finance state.
 
 ## Source hierarchy
 
-1. Explicit user-established player facts and decisions.
-2. Closed simulation event notes.
-3. Current state derived from those closed events.
-4. Year-specific sourced league facts, if later added.
-5. General basketball assumptions only when they do not conflict with a higher source.
+1. Explicit player facts and player decisions established by the user.
+2. Closed simulation event/game notes.
+3. AI/GM team state derived from simulated team decisions.
+4. Current state derived from those records.
+5. Verified year-specific league rules and dates when later added.
 
-Never treat a template or future folder as evidence that an event happened.
+Templates and empty files are never evidence that an event happened.
 
-## Player authority boundary
+## Team ownership
 
-The user's role is the player. Team and league actors remain independent. The player may influence but does not directly control roster construction, rotations, coaching decisions, trades, officiating, medical clearance, league discipline, awards, opponent behavior, or game results.
+`00_Team` is controlled by the simulation's AI/GM. The player may receive offers, role information and team decisions, but does not directly author the team's roster, rotation, financial or tactical outcome.
 
 ## State transitions
 
-A phase/week note begins as `not_started`, may become `active`, and becomes `complete` only after its relevant work is actually closed.
+Phase/week notes: `not_started`, `active`, `complete`.
 
-Game notes use `scheduled`, `played`, or `not_played`. These statuses are deliberately separate from phase statuses.
+Game notes: `scheduled`, `played`, `not_played`.
 
-Current state is a compact pointer, not a second event history.
+Unknown is not zero. Planned is not completed.
 
-## Conditional postseason records
+## Postseason
 
-Play-In Game 2 is conditional on the first play-in result.
+Play-In Game 2 exists only when Game 1 requires it.
 
-Every playoff round is best of seven. Games 1 to 4 are necessary only after a series exists. Games 5 to 7 are conditional on the series still being alive.
+Every playoff series is best of seven. Games 5, 6 and 7 are conditional. A conditional game may remain absent if never scheduled, or be marked `not_played` with a reason.
 
-Do not pre-create blank game files. A missing conditional game means no record exists yet. If an unused conditional slot needs explicit closure, use a `not_played` note with a reason.
+## External game runner
 
-## Year-specific league rules
-
-The supplied calendar is a structural template. Exact season dates, trade-deadline dates, guarantee dates, tournament dates, eligibility dates, schedule, and league rules can vary by season. When a real season is chosen, verify and record the applicable dates before treating them as authoritative.
-
-## Consistency
-
-One fact has one primary owner. Derived state may summarize it but should point back to the owner when the project later gains links or identifiers.
-
-Unknown is not zero, false, waived, healthy, unsigned, eliminated, or completed.
+A game may be simulated in Relay or another runner. The external output becomes part of the career only after it is written into the correct game record and passes repository validation.

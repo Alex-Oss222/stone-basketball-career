@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "owner": "ai_gm",
+  "season": null,
+  "team": null,
+  "as_of": null,
+  "thresholds": {
+    "salary_cap": null,
+    "luxury_tax": null,
+    "first_apron": null,
+    "second_apron": null
+  },
+  "totals": {
+    "team_salary": null,
+    "cap_space": null,
+    "tax_room": null,
+    "first_apron_room": null,
+    "second_apron_room": null
+  },
+  "exceptions": [],
+  "contracts": [],
+  "dead_money": [],
+  "notes": []
+}

@@ -1,83 +1,83 @@
 # Agent operating rules
 
-This repository is a player-career simulation, not a coaching or front-office simulation.
+This is a player-career simulation.
 
-## Authority
+## Player authority
 
-The user controls the player only: contract choices presented to the player, representation choices, training choices, public or private responses, participation choices when legitimately available, and other decisions a real player could make.
+The user controls only decisions a real player can control, such as accepting or rejecting offers when the player has that choice, representation, training choices, responses, and other player-level decisions.
 
-The simulator controls everything outside that authority: coaches, front offices, teammates, opponents, agents when not directly instructed, media, league decisions, schedules, game outcomes, awards, injuries, transactions initiated by other actors, and market interest.
+The user does not directly control coaching, rotations, roster construction, trades initiated by teams, salary-cap accounting, medical clearance, officiating, league actions, opponents, teammates, awards, or game results.
 
-Never silently give the player coach, general manager, owner, doctor, referee, or league powers.
+## AI/GM-owned team state
+
+Everything under `career/<player>/<year>/00_Team` is simulation-owned.
+
+The AI/GM maintains:
+- `team_config.json`
+- `Team/roster.json`
+- `Team/rotation.json`
+- team player cards
+- `Finances/finance.json`
+
+A player decision may cause the AI/GM to react, but do not rewrite team state merely because the user asks for a preferred rotation, transaction, contract accounting result, or roster move.
 
 ## Read order
 
-Before advancing anything:
+Before advancing the career:
 
-1. `state/career_state.json`
-2. `state/player_profile.md`
-3. `config/season_structure.json`
-4. the current phase/week/game note
-5. any directly linked prior event note needed for continuity
+1. `career/<player>/player_profile.md`
+2. `career/<player>/<year>/current_state.json`
+3. `career/<player>/<year>/00_Team/team_config.json`
+4. roster and rotation when a game or team decision needs them
+5. the current phase/week/game note
 
-Do not infer a completed event from an empty file, folder name, or future placeholder.
+Read finance data only when contracts, cap rules, transactions, or team-building consequences require it.
 
-## Empty-state rule
+## Empty means unknown
 
-This repository starts with no career facts. Blank profile fields and null state values are intentional. Do not fill them unless the user establishes the fact or the simulation legitimately resolves it.
+The skeleton contains no real player, team, season, schedule, contract, injury, statistic, result, or transaction.
 
-## Clock and chronology
+Null, blank and empty values are not zeroes and are not completed events.
 
-The numbered season route is navigation, not proof of date order. Actual dated events control the career clock.
+## Chronology
 
-Month-week buckets are fixed:
+Month week buckets are fixed:
 - Week 1: days 1 to 7
 - Week 2: days 8 to 14
 - Week 3: days 15 to 21
-- Week 4: day 22 through the end of the month
+- Week 4: day 22 through month end
 
-Do not create a fifth monthly week.
+Folder numbering is navigation. Actual dates control chronology. The draft can overlap the playoffs on the real calendar.
+
+## Game records
+
+Game execution may be performed by Relay or another game runner. A game result is not canonical until it is written to the correct career game note.
+
+Game-note statuses:
+- `scheduled`: date and opponent required, no result yet
+- `played`: date, opponent and result required
+- `not_played`: reason required, no result
+
+Never use an empty game file as a placeholder.
+
+Play-In Game 2 may exist only after Game 1 is played and says `next_game_required: true`.
+
+Every playoff round is best of seven. Games 5, 6 and 7 are conditional. Create them only when scheduled, or explicitly mark an unused slot `not_played` if the simulation needs a closure record.
 
 ## Event ownership
 
-Write a factual event once, in the most specific owning note. Update `state/career_state.json` only for current-state consequences.
+Write an event once in its most specific note. Update `current_state.json` only for current-state consequences.
 
-Do not duplicate the same game result, transaction, injury, or decision as separate competing narratives.
-
-Plans are not results. Scheduled games are not played games. Rumors are not transactions.
-
-## Game-note protocol
-
-A game note may have only one of these statuses:
-
-- `scheduled`: the game is actually scheduled; date and opponent are required.
-- `played`: the game occurred; date, opponent, and result are required.
-- `not_played`: the slot is explicitly unused; a reason is required.
-
-Never create a blank game note.
-
-Play-In Game 2 does not exist unless Game 1 was played and its metadata says `next_game_required: true`.
-
-Every playoff series is best of seven. Games 5, 6, and 7 are conditional. Create one when it is scheduled. After a series ends, an unused conditional game may remain absent or may be recorded as `not_played`. Absence is not a game result.
-
-## Player perspective
-
-Keep player knowledge separate from omniscient simulation state. The player can learn only what has been communicated, observed, published, or otherwise made available to the player.
-
-Do not expose hidden team deliberations as known facts unless the simulation has a legitimate information channel.
+Plans are not results. Rumors are not transactions. Scheduled games are not played games.
 
 ## No hindsight
 
-Do not use future real-world outcomes to steer an earlier simulated decision. If historical data is later added, label its information date and do not leak later results backward.
+Do not use later real-world outcomes to steer earlier simulated choices. Year-specific real rules and dates must be verified for the season before they are treated as authoritative.
 
-## Update discipline
+## After an event
 
-After a completed event:
-
-1. update the owning note;
-2. update current state only if the event changes current state;
-3. preserve unresolved choices as unresolved;
-4. validate the repository;
+1. write the event owner;
+2. update affected current state;
+3. update AI/GM team state only when the simulated team actually changed;
+4. run repository validation;
 5. run tests.
-
-If validation fails, do not treat the career as advanced.

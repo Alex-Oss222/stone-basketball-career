@@ -1,4 +1,4 @@
-"""Small deterministic rules shared by validation and tests."""
+"""Deterministic basketball season structure rules."""
 
 
 def month_week(day: int) -> int:
@@ -27,8 +27,7 @@ def series_over(player_team_wins: int, opponent_wins: int) -> bool:
 def next_series_game_number(player_team_wins: int, opponent_wins: int):
     if series_over(player_team_wins, opponent_wins):
         return None
-    games_played = player_team_wins + opponent_wins
-    number = games_played + 1
-    if number > 7:
+    game_number = player_team_wins + opponent_wins + 1
+    if game_number > 7:
         raise ValueError("invalid best-of-seven state")
-    return number
+    return game_number
