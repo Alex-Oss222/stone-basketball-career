@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "active_season": null,
+  "current_date": null,
+  "current_area": null,
+  "current_note": null,
+  "team": null,
+  "contract_status": null,
+  "roster_status": null,
+  "last_closed_event": null,
+  "pending_player_decisions": []
+}
