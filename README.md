@@ -49,3 +49,7 @@ library/
 The end-of-season file is the pre-offseason league baseline. The draft-class file is the post-draft June 26 rights snapshot. Miami's live team files may derive from these sources, but the full NBA data is not duplicated inside `00_Team`.
 
 Game execution may be performed externally, including Relay. A game becomes canonical only after its result is written into the appropriate career game record and the repository validates.
+
+## Game engine
+
+Games are resolved by an era-calibrated possession engine whose randomness comes from a private service deployed on Railway. See [runtime/README.md](runtime/README.md) for how it works and how to deploy it.
