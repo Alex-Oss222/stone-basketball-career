@@ -96,6 +96,27 @@ def validate():
     require(errors, season.name == "2003-04", "active season directory must be 2003-04")
     require(errors, (player/"Dwyane_Wade_Player_Profile.md").is_file(), "missing Dwyane Wade player profile")
 
+    league_dir=ROOT/"library/2003/league"
+    draft_library=league_dir/"nba_2003_draft_class.json"
+    end_library=league_dir/"nba_2003_end_of_season.json"
+    require(errors,draft_library.is_file(),"missing 2003 draft-class league source")
+    require(errors,end_library.is_file(),"missing 2003 end-of-season league source")
+    require(errors,not (season/"nba_2003_draft_class.json").exists(),"league draft source must not live in season root")
+    require(errors,not (season/"nba_2003_end_of_season.json").exists(),"league roster source must not live in season root")
+    for source_path, expected_as_of in (
+        (draft_library,"2003 NBA draft (June 26, 2003), after draft-night trades"),
+        (end_library,"end of 2002-03 season (each club's final game)"),
+    ):
+        if source_path.is_file():
+            try:
+                source=json.loads(source_path.read_text(encoding="utf-8"))
+                require(errors,source.get("league")=="NBA",f"{source_path.relative_to(ROOT)}: league must be NBA")
+                require(errors,source.get("season")==2003,f"{source_path.relative_to(ROOT)}: season must be 2003")
+                require(errors,source.get("as_of")==expected_as_of,f"{source_path.relative_to(ROOT)}: as_of mismatch")
+                require(errors,isinstance(source.get("clubs"),dict) and len(source["clubs"])>=29,f"{source_path.relative_to(ROOT)}: incomplete club map")
+            except json.JSONDecodeError as exc:
+                errors.append(f"{source_path.relative_to(ROOT)}: invalid JSON: {exc}")
+
     state_path=season/"current_state.json"
     require(errors,state_path.is_file(),"missing season current state")
     if state_path.is_file():

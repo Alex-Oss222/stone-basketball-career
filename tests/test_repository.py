@@ -79,6 +79,17 @@ class InitializedCareerTests(unittest.TestCase):
         wade=next(x for x in schedules["players"] if x["player"]=="Dwyane Wade")
         self.assertEqual(wade["current_cap_hold"],2197000)
 
+    def test_league_sources_are_in_library(self):
+        league=ROOT/"library/2003/league"
+        draft=json.loads((league/"nba_2003_draft_class.json").read_text(encoding="utf-8"))
+        end=json.loads((league/"nba_2003_end_of_season.json").read_text(encoding="utf-8"))
+        self.assertEqual(draft["league"],"NBA")
+        self.assertEqual(end["league"],"NBA")
+        self.assertEqual(draft["season"],2003)
+        self.assertEqual(end["season"],2003)
+        self.assertFalse((SEASON/"nba_2003_draft_class.json").exists())
+        self.assertFalse((SEASON/"nba_2003_end_of_season.json").exists())
+
     def test_no_empty_postseason_placeholders(self):
         self.assertFalse(any((SEASON/"07_Play_In_Tournament").glob("Game_*.md")))
         for folder in ("First_Round","Conference_Semifinals","Conference_Finals","Finals"):

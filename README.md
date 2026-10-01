@@ -12,7 +12,7 @@ The simulation is centered on Wade as the user-controlled player. Team basketbal
 ```text
 career/
   Dwyane_Wade/
-    Dwyane Wade: Player Profile.md
+    Dwyane_Wade_Player_Profile.md
     2003-04/
       00_Team/
         Organization/
@@ -33,5 +33,19 @@ career/
 ```
 
 The June 26 team snapshot intentionally stops at the draft. July free-agency moves, later coaching changes and later cap outcomes are not imported early.
+
+## League source library
+
+Raw league-wide historical datasets live outside the career state:
+
+```text
+library/
+  2003/
+    league/
+      nba_2003_end_of_season.json
+      nba_2003_draft_class.json
+```
+
+The end-of-season file is the pre-offseason league baseline. The draft-class file is the post-draft June 26 rights snapshot. Miami's live team files may derive from these sources, but the full NBA data is not duplicated inside `00_Team`.
 
 Game execution may be performed externally, including Relay. A game becomes canonical only after its result is written into the appropriate career game record and the repository validates.

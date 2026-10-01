@@ -52,6 +52,16 @@ A later source may be used to reconstruct a contract term that already existed, 
 
 `00_Team/Finances/league_cap_history.json` intentionally stores the real six-season cap sequence for continuity. Treat only a cap that has reached its season/publication gate as live front-office knowledge. Never use a future row to influence an earlier contract, trade or free-agency decision.
 
+## League source data
+
+League-wide historical data belongs under `library/<year>/league/`, not inside a player's season root or Miami's `00_Team`.
+
+For the 2003 cycle:
+- `library/2003/league/nba_2003_end_of_season.json` is the end-of-2002-03 league roster/depth baseline.
+- `library/2003/league/nba_2003_draft_class.json` is the June 26, 2003 post-draft rights snapshot.
+
+Use those files as source evidence for opponents, league rosters, player identity, depth baselines and image metadata. Derive Miami's current state from them when appropriate, but do not copy the entire league dataset into the career folder.
+
 ## Player cards
 
 Every player in the team-control register has a player card.
