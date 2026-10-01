@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "league": "NBA",
+  "season": "2002-03",
+  "kind": "league_environment",
+  "purpose": "Calibration baseline for the 2003-04 game engine. A season is simulated on the environment of the last completed season, never on its own final averages.",
+  "published_after": "2003-04-16",
+  "unit": "per team per game",
+  "verification": {
+    "status": "provisional",
+    "method": "Entered from recollection of Basketball-Reference league averages; not yet checked line by line.",
+    "verify_against": "https://www.basketball-reference.com/leagues/NBA_2003.html (League Averages and Miscellaneous Stats tables)",
+    "rule": "Correct any value that differs from the source and record the correction here; the kernel reads these numbers directly."
+  },
+  "averages": {
+    "pace": 91.0,
+    "points": 95.0,
+    "fga": 80.8,
+    "fg_pct": 0.442,
+    "three_pa": 14.7,
+    "three_pct": 0.349,
+    "fta": 24.5,
+    "ft_pct": 0.757,
+    "orb": 11.9,
+    "drb": 29.7,
+    "ast": 21.7,
+    "stl": 7.8,
+    "blk": 5.1,
+    "tov": 14.4,
+    "pf": 21.5
+  },
+  "engine_assumptions": {
+    "status": "provisional structural assumptions, not sourced league data",
+    "home_edge_points_per_game": 3.0,
+    "and_one_share_of_fta": 0.12
+  }
+}

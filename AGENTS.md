@@ -78,6 +78,10 @@ Never create a blank game placeholder. Play-In Game 2 is conditional. Playoff Ga
 
 Relay or another runner may simulate a game, but raw external output is not canonical until written into the correct career record.
 
+## Game engine
+
+Every game, Wade's or a background game, goes through `runtime.game_runner.run_game`. Never pass a seed, never resolve a game with the kernel directly, and never edit a closed game's inputs to get a different result. Do not use a season's own final averages to calibrate it. Engine output is canonical only after it is written into the game record. See `runtime/README.md`.
+
 ## After an event
 
 1. write the owning event note;
