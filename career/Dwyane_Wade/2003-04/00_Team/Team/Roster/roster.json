@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "owner": "ai_gm",
+  "as_of": "2003-06-26",
+  "season": "2003-04",
+  "team": "Miami Heat",
+  "roster_kind": "team_control_register",
+  "finalized_active_roster": false,
+  "players": [
+    {
+      "id": "alonzo_mourning",
+      "name": "Alonzo Mourning",
+      "positions": [
+        "C"
+      ],
+      "height": "6-10",
+      "weight_lb": 240,
+      "date_of_birth": "1970-02-08",
+      "college": "Georgetown",
+      "status": "expiring_contract_medically_unavailable",
+      "control": "Contract through 2002-03; no 2002-03 games due illness; expires June 30 unless a new transaction occurs.",
+      "working_role": "Unavailable",
+      "player_card": "../Player_Cards/alonzo_mourning.md"
+    },
+    {
+      "id": "malik_allen",
+      "name": "Malik Allen",
+      "positions": [
+        "PF"
+      ],
+      "height": "6-10",
+      "weight_lb": 255,
+      "date_of_birth": "1978-06-27",
+      "college": "Villanova",
+      "status": "expiring_contract",
+      "control": "2002-03 contract reaches June 30; future qualifying-offer/free-agency action not yet recorded.",
+      "working_role": "2002-03 PF1",
+      "player_card": "../Player_Cards/malik_allen.md"
+    },
+    {
+      "id": "travis_best",
+      "name": "Travis Best",
+      "positions": [
+        "PG"
+      ],
+      "height": "5-11",
+      "weight_lb": 182,
+      "date_of_birth": "1972-07-12",
+      "college": "Georgia Tech",
+      "status": "expiring_contract",
+      "control": "One-year 2002-03 contract reaches June 30.",
+      "working_role": "2002-03 PG1",
+      "player_card": "../Player_Cards/travis_best.md"
+    },
+    {
+      "id": "caron_butler",
+      "name": "Caron Butler",
+      "positions": [
+        "SF"
+      ],
+      "height": "6-7",
+      "weight_lb": 228,
+      "date_of_birth": "1980-03-13",
+      "college": "UConn",
+      "status": "under_contract",
+      "control": "Rookie contract signed through 2004-05.",
+      "working_role": "2002-03 SF1",
+      "player_card": "../Player_Cards/caron_butler.md"
+    },
+    {
+      "id": "rasual_butler",
+      "name": "Rasual Butler",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "height": "6-7",
+      "weight_lb": 215,
+      "date_of_birth": "1979-05-23",
+      "college": "La Salle",
+      "status": "team_option_pending",
+      "control": "2003-04 team-option decision has not yet been recorded at this June 26 checkpoint.",
+      "working_role": "2002-03 SG2",
+      "player_card": "../Player_Cards/rasual_butler.md"
+    },
+    {
+      "id": "anthony_carter",
+      "name": "Anthony Carter",
+      "positions": [
+        "PG"
+      ],
+      "height": "6-1",
+      "weight_lb": 190,
+      "date_of_birth": "1975-06-16",
+      "college": "Hawaii",
+      "status": "player_option_pending",
+      "control": "$4.1M 2003-04 player option with June 30 notification deadline; outcome is not yet known to the simulation.",
+      "working_role": "2002-03 PG3",
+      "player_card": "../Player_Cards/anthony_carter.md"
+    },
+    {
+      "id": "laphonso_ellis",
+      "name": "LaPhonso Ellis",
+      "positions": [
+        "PF"
+      ],
+      "height": "6-8",
+      "weight_lb": 240,
+      "date_of_birth": "1970-05-05",
+      "college": "Notre Dame",
+      "status": "expiring_contract",
+      "control": "2002-03 contract reaches June 30; no later waiver/free-agency outcome is imported.",
+      "working_role": "2002-03 PF2",
+      "player_card": "../Player_Cards/laphonso_ellis.md"
+    },
+    {
+      "id": "brian_grant",
+      "name": "Brian Grant",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "height": "6-9",
+      "weight_lb": 254,
+      "date_of_birth": "1972-03-05",
+      "college": "Xavier",
+      "status": "under_contract",
+      "control": "Contract signed through 2004-05.",
+      "working_role": "2002-03 C1",
+      "player_card": "../Player_Cards/brian_grant.md"
+    },
+    {
+      "id": "eddie_house",
+      "name": "Eddie House",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "height": "6-1",
+      "weight_lb": 180,
+      "date_of_birth": "1978-05-14",
+      "college": "Arizona State",
+      "status": "expiring_contract",
+      "control": "2002-03 contract reaches June 30.",
+      "working_role": "2002-03 SG3",
+      "player_card": "../Player_Cards/eddie_house.md"
+    },
+    {
+      "id": "mike_james",
+      "name": "Mike James",
+      "positions": [
+        "PG"
+      ],
+      "height": "6-2",
+      "weight_lb": 188,
+      "date_of_birth": "1975-06-23",
+      "college": "Duquesne",
+      "status": "expiring_contract",
+      "control": "2002-03 contract reaches June 30.",
+      "working_role": "2002-03 PG2",
+      "player_card": "../Player_Cards/mike_james.md"
+    },
+    {
+      "id": "ken_johnson",
+      "name": "Ken Johnson",
+      "positions": [
+        "C"
+      ],
+      "height": "6-11",
+      "weight_lb": 240,
+      "date_of_birth": "1978-02-01",
+      "college": "Ohio State",
+      "status": "expiring_contract",
+      "control": "2002-03 contract reaches June 30.",
+      "working_role": "2002-03 C3",
+      "player_card": "../Player_Cards/ken_johnson.md"
+    },
+    {
+      "id": "eddie_jones",
+      "name": "Eddie Jones",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "height": "6-6",
+      "weight_lb": 190,
+      "date_of_birth": "1971-10-20",
+      "college": "Temple",
+      "status": "under_contract",
+      "control": "Contract signed through 2004-05.",
+      "working_role": "2002-03 SG1",
+      "player_card": "../Player_Cards/eddie_jones.md"
+    },
+    {
+      "id": "sean_lampley",
+      "name": "Sean Lampley",
+      "positions": [
+        "SF"
+      ],
+      "height": "6-7",
+      "weight_lb": 227,
+      "date_of_birth": "1979-09-03",
+      "college": "California",
+      "status": "team_option_pending",
+      "control": "2003-04 team-option/control decision has not yet been recorded at this June 26 checkpoint.",
+      "working_role": "2002-03 SF2",
+      "player_card": "../Player_Cards/sean_lampley.md"
+    },
+    {
+      "id": "sean_marks",
+      "name": "Sean Marks",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "height": "6-10",
+      "weight_lb": 250,
+      "date_of_birth": "1975-08-23",
+      "college": "California",
+      "status": "expiring_contract",
+      "control": "2002-03 contract reaches June 30.",
+      "working_role": "2002-03 PF3",
+      "player_card": "../Player_Cards/sean_marks.md"
+    },
+    {
+      "id": "vladimir_stepania",
+      "name": "Vladimir Stepania",
+      "positions": [
+        "C"
+      ],
+      "height": "7-0",
+      "weight_lb": 236,
+      "date_of_birth": "1976-05-08",
+      "college": null,
+      "status": "expiring_contract",
+      "control": "One-year 2002-03 contract reaches June 30.",
+      "working_role": "2002-03 C2",
+      "player_card": "../Player_Cards/vladimir_stepania.md"
+    },
+    {
+      "id": "dwyane_wade",
+      "name": "Dwyane Wade",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "height": "6-6 in shoes",
+      "weight_lb": 220,
+      "date_of_birth": "1984-01-17",
+      "college": "UConn (simulation canon)",
+      "status": "draft_rights_unsigned",
+      "control": "Selected No. 5 overall by Miami on June 26, 2003; unsigned draft rights.",
+      "working_role": "Unassigned rookie",
+      "player_card": "../Player_Cards/dwyane_wade.md"
+    },
+    {
+      "id": "jerome_beasley",
+      "name": "Jerome Beasley",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "height": "6-10",
+      "weight_lb": 237,
+      "date_of_birth": "1980-05-17",
+      "college": "North Dakota",
+      "status": "draft_rights_unsigned",
+      "control": "Selected No. 33 overall by Miami on June 26, 2003; unsigned draft rights.",
+      "working_role": "Unassigned rookie",
+      "player_card": "../Player_Cards/jerome_beasley.md"
+    }
+  ],
+  "sources": [
+    "https://www.basketball-reference.com/teams/MIA/2003.html",
+    "https://www.basketball-reference.com/teams/MIA/2003_transactions.html",
+    "https://leadersgroup-sbj-prod.web.arc-cdn.net/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+    "https://www.nba.com/player/2602/jerome-beasley"
+  ]
+}

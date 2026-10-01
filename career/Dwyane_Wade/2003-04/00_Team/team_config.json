@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "owner": "ai_gm",
+  "as_of": "2003-06-26",
+  "season": "2003-04",
+  "team_id": "MIA",
+  "team_name": "Miami Heat",
+  "abbreviation": "MIA",
+  "conference": "Eastern Conference",
+  "division": "Atlantic Division",
+  "arena": "AmericanAirlines Arena",
+  "managing_general_partner": "Micky Arison",
+  "president": "Pat Riley",
+  "president_and_general_manager_basketball_operations": "Randy Pfund",
+  "senior_vp_basketball_operations": "Andy Elisburg",
+  "director_player_personnel": "Chet Kammerer",
+  "head_coach": "Pat Riley",
+  "offense": null,
+  "defense": null,
+  "roster_file": "Team/Roster/roster.json",
+  "depth_chart_file": "Team/Depth_Chart/depth_chart.json",
+  "finances_file": "Finances/finance.json",
+  "organization_file": "Organization/organization.json",
+  "notes": [
+    "Pat Riley remains the live head coach at this June 26 checkpoint.",
+    "Do not import the later 2003 coaching change before its event date."
+  ]
+}

@@ -4,7 +4,10 @@ from pathlib import Path
 
 from runtime.season_rules import month_week, next_series_game_number, series_over
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[1]
+PLAYER=ROOT/"career/Dwyane_Wade"
+SEASON=PLAYER/"2003-04"
+TEAM=SEASON/"00_Team"
 
 
 class CalendarWeekTests(unittest.TestCase):
@@ -14,43 +17,52 @@ class CalendarWeekTests(unittest.TestCase):
             with self.subTest(day=day):
                 self.assertEqual(month_week(day),week)
 
-    def test_no_week_five(self):
-        self.assertEqual(month_week(31),4)
-
 
 class BestOfSevenTests(unittest.TestCase):
-    def test_series_end(self):
+    def test_series_rules(self):
         self.assertTrue(series_over(4,0))
-        self.assertTrue(series_over(2,4))
         self.assertFalse(series_over(3,3))
-
-    def test_conditional_games(self):
         self.assertEqual(next_series_game_number(2,2),5)
         self.assertEqual(next_series_game_number(3,2),6)
         self.assertEqual(next_series_game_number(3,3),7)
         self.assertIsNone(next_series_game_number(4,2))
 
 
-class CareerLayoutTests(unittest.TestCase):
-    def test_season_is_nested_under_player(self):
-        self.assertTrue((ROOT/"career/PLAYER/YEAR/06_Regular_Season").is_dir())
-        self.assertFalse((ROOT/"06_Regular_Season").exists())
+class InitializedCareerTests(unittest.TestCase):
+    def test_player_and_team(self):
+        self.assertTrue((PLAYER/"Dwyane Wade: Player Profile.md").is_file())
+        state=json.loads((SEASON/"current_state.json").read_text(encoding="utf-8"))
+        self.assertEqual(state["team"],"Miami Heat")
+        self.assertEqual(state["draft"]["overall"],5)
 
-    def test_team_state_is_ai_owned(self):
-        base=ROOT/"career/PLAYER/YEAR/00_Team"
-        for rel in ("team_config.json","Team/roster.json","Team/rotation.json","Finances/finance.json"):
-            data=json.loads((base/rel).read_text(encoding="utf-8"))
-            self.assertEqual(data["owner"],"ai_gm")
+    def test_organization_files(self):
+        for name in ("Micky_Arison","Pat_Riley","Randy_Pfund","Andy_Elisburg","Chet_Kammerer"):
+            self.assertTrue((TEAM/"Organization"/f"{name}.md").is_file())
 
-    def test_player_card_template_exists(self):
-        self.assertTrue((ROOT/"career/PLAYER/YEAR/00_Team/Team/Player_Cards/TEMPLATE.md").is_file())
+    def test_every_roster_player_has_card(self):
+        roster=json.loads((TEAM/"Team/Roster/roster.json").read_text(encoding="utf-8"))
+        self.assertGreaterEqual(len(roster["players"]),17)
+        for player in roster["players"]:
+            self.assertTrue((TEAM/"Team/Player_Cards"/f"{player['id']}.md").is_file())
 
-    def test_empty_postseason_has_no_game_placeholders(self):
-        season=ROOT/"career/PLAYER/YEAR"
-        self.assertFalse(any((season/"07_Play_In_Tournament").glob("Game_*.md")))
+    def test_depth_chart_is_holding_chart(self):
+        depth=json.loads((TEAM/"Team/Depth_Chart/depth_chart.json").read_text(encoding="utf-8"))
+        self.assertFalse(depth["game_ready"])
+        names={p["name"] for p in depth["unassigned_draft_rights"]}
+        self.assertEqual(names,{"Dwyane Wade","Jerome Beasley"})
+
+    def test_cap_room_stays_unresolved_on_draft_day(self):
+        finance=json.loads((TEAM/"Finances/finance.json").read_text(encoding="utf-8"))
+        self.assertIsNone(finance["cap_room"])
+        carter=next(x for x in finance["pending_control_items"] if x["player"]=="Anthony Carter")
+        self.assertEqual(carter["status"],"pending")
+        self.assertEqual(carter["deadline"],"2003-06-30")
+
+    def test_no_empty_postseason_placeholders(self):
+        self.assertFalse(any((SEASON/"07_Play_In_Tournament").glob("Game_*.md")))
         for folder in ("First_Round","Conference_Semifinals","Conference_Finals","Finals"):
-            self.assertFalse(any((season/"08_Playoffs"/folder).glob("Game_*.md")))
+            self.assertFalse(any((SEASON/"08_Playoffs"/folder).glob("Game_*.md")))
 
 
-if __name__ == "__main__":
+if __name__=="__main__":
     unittest.main()

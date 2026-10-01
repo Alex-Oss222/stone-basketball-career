@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "owner": "ai_gm",
+  "as_of": "2003-06-26",
+  "season": "2003-04",
+  "team": "Miami Heat",
+  "cap_status": "provisional_pre_league_year",
+  "official_salary_cap": null,
+  "cap_space": null,
+  "cap_room": null,
+  "cap_room_reason": [
+    "2003-04 league salary cap not yet finalized at this simulation date",
+    "Anthony Carter $4.1M player option remains unresolved until June 30",
+    "team-option, qualifying-offer and expiring-contract decisions remain unresolved",
+    "draft picks are unsigned and cap accounting must be reconciled"
+  ],
+  "known_longer_term_contracts": [
+    {
+      "player": "Eddie Jones",
+      "signed_through": "2004-05"
+    },
+    {
+      "player": "Brian Grant",
+      "signed_through": "2004-05"
+    },
+    {
+      "player": "Caron Butler",
+      "signed_through": "2004-05"
+    }
+  ],
+  "pending_control_items": [
+    {
+      "player": "Anthony Carter",
+      "type": "player_option",
+      "season": "2003-04",
+      "amount": 4100000,
+      "deadline": "2003-06-30",
+      "status": "pending"
+    },
+    {
+      "player": "Rasual Butler",
+      "type": "team_option_or_control_decision",
+      "season": "2003-04",
+      "amount": null,
+      "deadline": "2003-06-30",
+      "status": "pending"
+    },
+    {
+      "player": "Sean Lampley",
+      "type": "team_option_or_control_decision",
+      "season": "2003-04",
+      "amount": null,
+      "deadline": "2003-06-30",
+      "status": "pending"
+    }
+  ],
+  "draft_rights": [
+    {
+      "player": "Dwyane Wade",
+      "pick": 5,
+      "first_year_rookie_scale": 2197000,
+      "permitted_percent_of_scale": {
+        "min": 80,
+        "max": 120
+      },
+      "permitted_first_year_range": {
+        "min": 1757600,
+        "max": 2636400
+      },
+      "contract_status": "unsigned"
+    },
+    {
+      "player": "Jerome Beasley",
+      "pick": 33,
+      "first_round_rookie_scale": null,
+      "contract_status": "unsigned"
+    }
+  ],
+  "sources": [
+    "https://leadersgroup-sbj-prod.web.arc-cdn.net/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+    "https://basketball.realgm.com/nba/info/rookie_scale/2004",
+    "https://www.espn.com/nba/columns/stein_marc/1577692.html"
+  ],
+  "source_gates": [
+    {
+      "source": "ESPN Anthony Carter report",
+      "publication_date": "2003-07-07",
+      "allowed_pre_deadline_use": "contract option amount and June 30 deadline only",
+      "prohibited_pre_deadline_use": "do not import the missed-deadline outcome or resulting cap-room figure before the career reaches it"
+    }
+  ]
+}

@@ -1,15 +1,26 @@
 # Basketball Player Career Simulation
 
-An empty basketball career framework centered on one player.
+Player career: **Dwyane Wade**  
+Current season: **2003-04**  
+Current date: **June 26, 2003**  
+Draft team: **Miami Heat, No. 5 overall**
 
-The repository is organized like this:
+The simulation is centered on Wade as the user-controlled player. Team basketball operations are controlled by the AI/GM.
+
+## Career
 
 ```text
 career/
-  <player>/
-    player_profile.md
-    <year>/
+  Dwyane_Wade/
+    Dwyane Wade: Player Profile.md
+    2003-04/
       00_Team/
+        Organization/
+        Team/
+          Roster/
+          Depth_Chart/
+          Player_Cards/
+        Finances/
       01_Free_Agency/
       02_Summer_League/
       03_Offseason/
@@ -21,19 +32,6 @@ career/
       09_Draft/
 ```
 
-The committed `career/PLAYER/YEAR` path is an empty skeleton. Rename `PLAYER` and `YEAR` when the career is initialized. It does not establish a real player or season.
+The June 26 team snapshot intentionally stops at the draft. July free-agency moves, later coaching changes and later cap outcomes are not imported early.
 
-## Ownership
-
-The user controls the player.
-
-`00_Team` is AI/GM controlled. Its team configuration, roster, rotation and finance records are maintained by the simulation, not chosen directly by the player.
-
-Game execution may happen outside this repository, including Relay. The repository owns the stable career state, game records and continuity checks.
-
-## Checks
-
-```sh
-python scripts/validate_repository.py
-python -m unittest discover -s tests -v
-```
+Game execution may be performed externally, including Relay. A game becomes canonical only after its result is written into the appropriate career game record and the repository validates.

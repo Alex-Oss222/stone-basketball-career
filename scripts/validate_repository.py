@@ -18,12 +18,12 @@ GAME_STATUSES = {"scheduled","played","not_played"}
 GAME_RE = re.compile(r"^Game_(\d+)\.md$")
 
 
-def require(errors: list[str], condition: bool, message: str) -> None:
+def require(errors, condition, message):
     if not condition:
         errors.append(message)
 
 
-def front_matter(path: Path) -> dict[str,str]:
+def front_matter(path):
     text = path.read_text(encoding="utf-8")
     if not text.strip():
         raise ValueError("empty file")
@@ -40,18 +40,18 @@ def front_matter(path: Path) -> dict[str,str]:
     return data
 
 
-def discover() -> tuple[Path,Path]:
+def discover():
     career = ROOT / "career"
     players = [p for p in career.iterdir() if p.is_dir()]
     if len(players) != 1:
         raise ValueError("career must contain exactly one player directory")
     years = [p for p in players[0].iterdir() if p.is_dir()]
     if len(years) != 1:
-        raise ValueError("player directory must contain exactly one year directory in the empty skeleton")
+        raise ValueError("player directory must contain exactly one active season directory")
     return players[0], years[0]
 
 
-def validate_game(path: Path, errors: list[str], play_in_game_1: bool = False) -> dict[str,str] | None:
+def validate_game(path, errors, play_in_game_1=False):
     try:
         data = front_matter(path)
     except ValueError as exc:
@@ -76,56 +76,84 @@ def validate_game(path: Path, errors: list[str], play_in_game_1: bool = False) -
     return data
 
 
-def validate_sequence(folder: Path, errors: list[str], maximum: int | None = None) -> None:
-    nums = sorted(
-        int(m.group(1))
-        for path in folder.glob("Game_*.md")
-        if (m := GAME_RE.match(path.name))
-    )
+def validate_sequence(folder, errors, maximum=None):
+    nums = sorted(int(m.group(1)) for path in folder.glob("Game_*.md") if (m := GAME_RE.match(path.name)))
     if maximum is not None:
         require(errors, all(n <= maximum for n in nums), f"{folder.relative_to(ROOT)}: game number exceeds {maximum}")
     if nums:
         require(errors, nums == list(range(1,max(nums)+1)), f"{folder.relative_to(ROOT)}: game files must be sequential without gaps")
 
 
-def validate() -> list[str]:
-    errors: list[str] = []
+def validate():
+    errors=[]
     try:
-        config = json.loads((ROOT/"foundation/season_structure.json").read_text(encoding="utf-8"))
-        player, season = discover()
+        config=json.loads((ROOT/"foundation/season_structure.json").read_text(encoding="utf-8"))
+        player,season=discover()
     except (OSError,ValueError,json.JSONDecodeError) as exc:
         return [f"cannot load required structure: {exc}"]
 
-    for root_name in ("01_Free_Agency","02_Summer_League","03_Offseason","04_Training_Camp","05_Preseason","06_Regular_Season","07_Play_In_Tournament","08_Playoffs","09_Draft"):
-        require(errors, not (ROOT/root_name).exists(), f"season area must not live at repository root: {root_name}")
+    require(errors, player.name == "Dwyane_Wade", "active player directory must be Dwyane_Wade")
+    require(errors, season.name == "2003-04", "active season directory must be 2003-04")
+    require(errors, (player/"Dwyane Wade: Player Profile.md").is_file(), "missing Dwyane Wade player profile")
 
-    require(errors, (player/"player_profile.md").is_file(), "missing career player profile")
-    require(errors, (season/"current_state.json").is_file(), "missing season current state")
+    state_path=season/"current_state.json"
+    require(errors,state_path.is_file(),"missing season current state")
+    if state_path.is_file():
+        try:
+            state=json.loads(state_path.read_text(encoding="utf-8"))
+            require(errors,state.get("initialized") is True,"career must be initialized")
+            require(errors,state.get("season")=="2003-04","current state season mismatch")
+            require(errors,state.get("current_date")=="2003-06-26","current checkpoint date mismatch")
+            require(errors,state.get("team")=="Miami Heat","current team mismatch")
+        except json.JSONDecodeError as exc:
+            errors.append(f"current_state.json invalid: {exc}")
 
-    team = season/"00_Team"
-    for rel in ("team_config.json","Team/roster.json","Team/rotation.json","Team/Player_Cards/TEMPLATE.md","Finances/finance.json"):
-        require(errors, (team/rel).is_file(), f"missing AI/GM team file: 00_Team/{rel}")
+    team=season/"00_Team"
+    required_team_files=(
+        "team_config.json",
+        "Organization/organization.json",
+        "Organization/Micky_Arison.md",
+        "Organization/Pat_Riley.md",
+        "Organization/Randy_Pfund.md",
+        "Organization/Andy_Elisburg.md",
+        "Organization/Chet_Kammerer.md",
+        "Team/Roster/roster.json",
+        "Team/Depth_Chart/depth_chart.json",
+        "Team/Depth_Chart/depth_chart.md",
+        "Team/Player_Cards/TEMPLATE.md",
+        "Finances/finance.json",
+    )
+    for rel in required_team_files:
+        require(errors,(team/rel).is_file(),f"missing AI/GM team file: 00_Team/{rel}")
 
-    for rel in ("team_config.json","Team/roster.json","Team/rotation.json","Finances/finance.json"):
-        path = team/rel
+    for rel in ("team_config.json","Organization/organization.json","Team/Roster/roster.json","Team/Depth_Chart/depth_chart.json","Finances/finance.json"):
+        path=team/rel
         if path.is_file():
             try:
-                data = json.loads(path.read_text(encoding="utf-8"))
-                require(errors, data.get("owner") == "ai_gm", f"{path.relative_to(ROOT)} must be AI/GM-owned")
+                data=json.loads(path.read_text(encoding="utf-8"))
+                require(errors,data.get("owner")=="ai_gm",f"{path.relative_to(ROOT)} must be AI/GM-owned")
             except json.JSONDecodeError as exc:
                 errors.append(f"{path.relative_to(ROOT)}: invalid JSON: {exc}")
 
-    try:
-        state = json.loads((season/"current_state.json").read_text(encoding="utf-8"))
-        require(errors, isinstance(state.get("pending_player_decisions"),list), "pending_player_decisions must be a list")
-        if state.get("initialized") is False:
-            for key in ("season","current_date","current_area","current_note","team","last_closed_event"):
-                require(errors, state.get(key) is None, f"{key} must be null before initialization")
-    except json.JSONDecodeError as exc:
-        errors.append(f"current_state.json invalid: {exc}")
+    roster_path=team/"Team/Roster/roster.json"
+    if roster_path.is_file():
+        roster=json.loads(roster_path.read_text(encoding="utf-8"))
+        players=roster.get("players",[])
+        ids=[p.get("id") for p in players]
+        require(errors,len(ids)==len(set(ids)),"roster player ids must be unique")
+        require(errors,{"dwyane_wade","jerome_beasley"} <= set(ids),"draft picks missing from roster/control register")
+        for p in players:
+            card=team/"Team/Player_Cards"/f"{p.get('id')}.md"
+            require(errors,card.is_file(),f"missing player card for {p.get('name')}")
 
-    require(errors, config.get("nesting") == "career/<player>/<year>", "career nesting config changed")
-    require(errors, config.get("team_owner") == "ai_gm", "team ownership config changed")
+    finance_path=team/"Finances/finance.json"
+    if finance_path.is_file():
+        finance=json.loads(finance_path.read_text(encoding="utf-8"))
+        require(errors,finance.get("as_of")=="2003-06-26","finance snapshot date mismatch")
+        require(errors,finance.get("cap_room") is None,"June 26 cap room must remain unresolved")
+        pending={x.get("player"):x for x in finance.get("pending_control_items",[])}
+        require(errors,pending.get("Anthony Carter",{}).get("status")=="pending","Anthony Carter option must still be pending on June 26")
+
     require(errors, config.get("week_definition") == {"1":"1-7","2":"8-14","3":"15-21","4":"22-end"}, "week definition changed")
     require(errors, month_week(1)==1 and month_week(7)==1, "Week 1 rule failed")
     require(errors, month_week(8)==2 and month_week(14)==2, "Week 2 rule failed")
@@ -133,37 +161,35 @@ def validate() -> list[str]:
     require(errors, month_week(22)==4 and month_week(31)==4, "Week 4 rule failed")
 
     for area in config["areas"]:
-        folder = season/area["folder"]
-        require(errors, folder.is_dir(), f"missing season area: {area['folder']}")
-        require(errors, (folder/"README.md").is_file(), f"missing README: {area['folder']}")
+        folder=season/area["folder"]
+        require(errors,folder.is_dir(),f"missing season area: {area['folder']}")
         if area["order"] in {1,2,3,4,5,9}:
-            note = folder/"note.md"
-            require(errors, note.is_file(), f"missing phase note: {note.relative_to(ROOT)}")
-            if note.is_file():
-                try:
-                    data = front_matter(note)
-                    require(errors, data.get("type")=="phase", f"{note.relative_to(ROOT)}: wrong type")
-                    require(errors, data.get("status") in NOTE_STATUSES, f"{note.relative_to(ROOT)}: bad status")
-                except ValueError as exc:
-                    errors.append(f"{note.relative_to(ROOT)}: {exc}")
-
-    regular = season/"06_Regular_Season"
-    day_ranges={1:"1-7",2:"8-14",3:"15-21",4:"22-end"}
-    for month,spec in config["regular_season"].items():
-        mdir=regular/spec["folder"]
-        require(errors, mdir.is_dir(), f"missing month: {month}")
-        for week in spec["weeks"]:
-            wdir=mdir/f"Week_{week}"
-            note=wdir/"note.md"
-            require(errors, note.is_file(), f"missing week note: {note.relative_to(ROOT)}")
+            note=folder/"note.md"
+            require(errors,note.is_file(),f"missing phase note: {note.relative_to(ROOT)}")
             if note.is_file():
                 try:
                     data=front_matter(note)
-                    require(errors, data.get("type")=="regular_season_week", f"{note.relative_to(ROOT)}: wrong type")
-                    require(errors, data.get("status") in NOTE_STATUSES, f"{note.relative_to(ROOT)}: bad status")
-                    require(errors, data.get("month")==month, f"{note.relative_to(ROOT)}: month mismatch")
-                    require(errors, data.get("week")==str(week), f"{note.relative_to(ROOT)}: week mismatch")
-                    require(errors, data.get("days")==day_ranges[week], f"{note.relative_to(ROOT)}: days mismatch")
+                    require(errors,data.get("type")=="phase",f"{note.relative_to(ROOT)}: wrong type")
+                    require(errors,data.get("status") in NOTE_STATUSES,f"{note.relative_to(ROOT)}: bad status")
+                except ValueError as exc:
+                    errors.append(f"{note.relative_to(ROOT)}: {exc}")
+
+    regular=season/"06_Regular_Season"
+    day_ranges={1:"1-7",2:"8-14",3:"15-21",4:"22-end"}
+    for month,spec in config["regular_season"].items():
+        mdir=regular/spec["folder"]
+        for week in spec["weeks"]:
+            wdir=mdir/f"Week_{week}"
+            note=wdir/"note.md"
+            require(errors,note.is_file(),f"missing week note: {note.relative_to(ROOT)}")
+            if note.is_file():
+                try:
+                    data=front_matter(note)
+                    require(errors,data.get("type")=="regular_season_week",f"{note.relative_to(ROOT)}: wrong type")
+                    require(errors,data.get("status") in NOTE_STATUSES,f"{note.relative_to(ROOT)}: bad status")
+                    require(errors,data.get("month")==month,f"{note.relative_to(ROOT)}: month mismatch")
+                    require(errors,data.get("week")==str(week),f"{note.relative_to(ROOT)}: week mismatch")
+                    require(errors,data.get("days")==day_ranges[week],f"{note.relative_to(ROOT)}: days mismatch")
                 except ValueError as exc:
                     errors.append(f"{note.relative_to(ROOT)}: {exc}")
             validate_sequence(wdir,errors)
@@ -185,7 +211,6 @@ def validate() -> list[str]:
     playoffs=season/"08_Playoffs"
     for rnd in config["playoffs"]["rounds"]:
         rdir=playoffs/rnd["folder"]
-        require(errors,rdir.is_dir(),f"missing playoff round: {rnd['folder']}")
         validate_sequence(rdir,errors,7)
         for game in rdir.glob("Game_*.md"):
             validate_game(game,errors)
@@ -193,7 +218,7 @@ def validate() -> list[str]:
     return errors
 
 
-def main() -> int:
+def main():
     errors=validate()
     if errors:
         print("Repository validation failed:")

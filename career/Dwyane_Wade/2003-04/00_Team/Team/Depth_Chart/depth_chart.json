@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "owner": "ai_gm",
+  "as_of": "2003-06-26",
+  "team": "Miami Heat",
+  "status": "offseason_holding_chart",
+  "game_ready": false,
+  "basis": "final 2002-03 usage-based positional order",
+  "positions": {
+    "PG": [
+      "Travis Best",
+      "Mike James",
+      "Anthony Carter"
+    ],
+    "SG": [
+      "Eddie Jones",
+      "Rasual Butler",
+      "Eddie House"
+    ],
+    "SF": [
+      "Caron Butler",
+      "Sean Lampley"
+    ],
+    "PF": [
+      "Malik Allen",
+      "LaPhonso Ellis",
+      "Sean Marks"
+    ],
+    "C": [
+      "Brian Grant",
+      "Vladimir Stepania",
+      "Ken Johnson"
+    ]
+  },
+  "unassigned_draft_rights": [
+    {
+      "name": "Dwyane Wade",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "status": "draft_rights_unsigned"
+    },
+    {
+      "name": "Jerome Beasley",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "status": "draft_rights_unsigned"
+    }
+  ],
+  "unavailable": [
+    {
+      "name": "Alonzo Mourning",
+      "positions": [
+        "C"
+      ],
+      "reason": "did not play in 2002-03 due illness; contract expires June 30"
+    }
+  ],
+  "source": "https://www.basketball-reference.com/teams/MIA/2003_depth.html"
+}

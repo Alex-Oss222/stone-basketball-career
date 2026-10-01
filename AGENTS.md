@@ -1,83 +1,75 @@
 # Agent operating rules
 
-This is a player-career simulation.
+This is a player-career simulation centered on Dwyane Wade.
 
-## Player authority
+## Authority
 
-The user controls only decisions a real player can control, such as accepting or rejecting offers when the player has that choice, representation, training choices, responses, and other player-level decisions.
+The user controls Wade's legitimate player decisions.
 
-The user does not directly control coaching, rotations, roster construction, trades initiated by teams, salary-cap accounting, medical clearance, officiating, league actions, opponents, teammates, awards, or game results.
+The AI/GM controls Miami's organization, roster construction, cap accounting, contracts offered by the club, depth chart, rotation, tactics, staff decisions and transactions. The user can react to those decisions as Wade but cannot directly author them.
 
-## AI/GM-owned team state
+## Current checkpoint
 
-Everything under `career/<player>/<year>/00_Team` is simulation-owned.
+- Date: June 26, 2003
+- Event: 2003 NBA Draft
+- Team: Miami Heat
+- Selection: No. 5 overall
+- Contract state: Miami owns Wade's draft rights; he is not yet signed.
 
-The AI/GM maintains:
-- `team_config.json`
-- `Team/roster.json`
-- `Team/rotation.json`
-- team player cards
-- `Finances/finance.json`
-
-A player decision may cause the AI/GM to react, but do not rewrite team state merely because the user asks for a preferred rotation, transaction, contract accounting result, or roster move.
+Do not import a later 2003 event before the career clock reaches it.
 
 ## Read order
 
-Before advancing the career:
+1. `career/Dwyane_Wade/Dwyane Wade: Player Profile.md`
+2. `career/Dwyane_Wade/2003-04/current_state.json`
+3. `career/Dwyane_Wade/2003-04/00_Team/Organization/README.md`
+4. `career/Dwyane_Wade/2003-04/00_Team/team_config.json`
+5. roster and depth chart
+6. player cards needed for the current event
+7. finances only when contract, cap or transaction consequences matter
+8. current phase/week/game note
 
-1. `career/<player>/player_profile.md`
-2. `career/<player>/<year>/current_state.json`
-3. `career/<player>/<year>/00_Team/team_config.json`
-4. roster and rotation when a game or team decision needs them
-5. the current phase/week/game note
+## Team state
 
-Read finance data only when contracts, cap rules, transactions, or team-building consequences require it.
+Everything under `00_Team` is simulation-owned.
 
-## Empty means unknown
+Organization files record basketball decision makers only. Business-side staff are excluded unless a future basketball event actually requires them.
 
-The skeleton contains no real player, team, season, schedule, contract, injury, statistic, result, or transaction.
+Roster means the current team-control register at the stated date. Expiring contracts, pending options, draft rights and unavailable players must be labeled rather than silently treated as guaranteed active players.
 
-Null, blank and empty values are not zeroes and are not completed events.
-
-## Chronology
-
-Month week buckets are fixed:
-- Week 1: days 1 to 7
-- Week 2: days 8 to 14
-- Week 3: days 15 to 21
-- Week 4: day 22 through month end
-
-Folder numbering is navigation. Actual dates control chronology. The draft can overlap the playoffs on the real calendar.
-
-## Game records
-
-Game execution may be performed by Relay or another game runner. A game result is not canonical until it is written to the correct career game note.
-
-Game-note statuses:
-- `scheduled`: date and opponent required, no result yet
-- `played`: date, opponent and result required
-- `not_played`: reason required, no result
-
-Never use an empty game file as a placeholder.
-
-Play-In Game 2 may exist only after Game 1 is played and says `next_game_required: true`.
-
-Every playoff round is best of seven. Games 5, 6 and 7 are conditional. Create them only when scheduled, or explicitly mark an unused slot `not_played` if the simulation needs a closure record.
-
-## Event ownership
-
-Write an event once in its most specific note. Update `current_state.json` only for current-state consequences.
-
-Plans are not results. Rumors are not transactions. Scheduled games are not played games.
+Depth chart is a working basketball view, not a user choice and not a promise of minutes. At the June 26 checkpoint it carries the just-completed 2002-03 positional order and leaves the two new draft picks unassigned until the coaching staff makes a new decision.
 
 ## No hindsight
 
-Do not use later real-world outcomes to steer earlier simulated choices. Year-specific real rules and dates must be verified for the season before they are treated as authoritative.
+Do not import:
+- Anthony Carter's June 30 option outcome before June 30.
+- June 30 team-option, qualifying-offer or waiver decisions before June 30.
+- July free-agent signings before their dates.
+- the later 2003 head-coaching change before it occurs.
+- final 2003-04 standings, statistics, awards or transactions.
+
+A later source may be used to reconstruct a contract term that already existed, but not to reveal a future choice or result to the simulation.
+
+## Player cards
+
+Every player in the team-control register has a player card.
+
+Cards are personnel records, not automatic game-engine ratings. Objective identity, contract/control and prior production may be entered when sourced. Subjective grades remain `Unassessed` until the simulation has an evidence basis.
+
+User-supplied player photos can be linked later. Do not invent image URLs.
+
+## Game records
+
+Game-note statuses are `scheduled`, `played`, or `not_played`.
+
+Never create a blank game placeholder. Play-In Game 2 is conditional. Playoff Games 5, 6 and 7 are conditional.
+
+Relay or another runner may simulate a game, but raw external output is not canonical until written into the correct career record.
 
 ## After an event
 
-1. write the event owner;
-2. update affected current state;
-3. update AI/GM team state only when the simulated team actually changed;
+1. write the owning event note;
+2. update current state;
+3. update affected AI/GM team records only when Miami actually changed;
 4. run repository validation;
 5. run tests.
