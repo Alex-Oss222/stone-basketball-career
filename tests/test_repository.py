@@ -58,6 +58,27 @@ class InitializedCareerTests(unittest.TestCase):
         self.assertEqual(carter["status"],"pending")
         self.assertEqual(carter["deadline"],"2003-06-30")
 
+    def test_six_year_cap_reference(self):
+        history=json.loads((TEAM/"Finances/league_cap_history.json").read_text(encoding="utf-8"))
+        caps={row["season"]:row["salary_cap"] for row in history["seasons"]}
+        self.assertEqual(caps,{
+            "2003-04":43840000,
+            "2004-05":43870000,
+            "2005-06":49500000,
+            "2006-07":53135000,
+            "2007-08":55630000,
+            "2008-09":58680000,
+        })
+
+    def test_draft_day_finance_baseline(self):
+        finance=json.loads((TEAM/"Finances/finance.json").read_text(encoding="utf-8"))
+        self.assertIsNone(finance["live_official_salary_cap"])
+        self.assertEqual(finance["historical_actual_salary_cap"],43840000)
+        self.assertEqual(finance["known_counted_salary_before_free_agent_holds"],28466078)
+        schedules=json.loads((TEAM/"Finances/contract_schedules.json").read_text(encoding="utf-8"))
+        wade=next(x for x in schedules["players"] if x["player"]=="Dwyane Wade")
+        self.assertEqual(wade["current_cap_hold"],2197000)
+
     def test_no_empty_postseason_placeholders(self):
         self.assertFalse(any((SEASON/"07_Play_In_Tournament").glob("Game_*.md")))
         for folder in ("First_Round","Conference_Semifinals","Conference_Finals","Finals"):

@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "owner": "ai_gm",
+  "as_of": "2003-06-26",
+  "team": "Miami Heat",
+  "horizon": [
+    "2003-04",
+    "2004-05",
+    "2005-06",
+    "2006-07",
+    "2007-08",
+    "2008-09"
+  ],
+  "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
+  "known_baseline": {
+    "2003-04": 28466078,
+    "2004-05": 28619114,
+    "2005-06": 28912470,
+    "2006-07": 15697500,
+    "2007-08": 0,
+    "2008-09": 0
+  },
+  "conditional_known_amounts": {
+    "2003-04": 4663679,
+    "2004-05": 0,
+    "2005-06": 2461617,
+    "2006-07": 15439006,
+    "2007-08": 0,
+    "2008-09": 0
+  },
+  "conditional_unknown_count": {
+    "2003-04": 1,
+    "2004-05": 0,
+    "2005-06": 0,
+    "2006-07": 0,
+    "2007-08": 0,
+    "2008-09": 0
+  },
+  "players": [
+    {
+      "player": "Eddie Jones",
+      "status": "under_contract",
+      "schedule": {
+        "2003-04": 12333750,
+        "2004-05": 13455000,
+        "2005-06": 14576250,
+        "2006-07": 15697500
+      },
+      "notes": "Existing seven-year veteran contract. The 2004-05 and 2005-06 figures follow the documented contract salary progression; ESPN later identified the original 2006-07 contract salary as $15,697,500 before a later buyout adjustment.",
+      "sources": [
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+        "https://www.espn.com/nba/dailydime?page=dailydime_070210-11"
+      ]
+    },
+    {
+      "player": "Brian Grant",
+      "status": "under_contract",
+      "schedule": {
+        "2003-04": 12130648,
+        "2004-05": 13233434,
+        "2005-06": 14336220,
+        "2006-07": 15439006
+      },
+      "conditions": {
+        "2006-07": "Existing contract year subject to Brian Grant's early-termination option after 2005-06."
+      },
+      "sources": [
+        "https://www.shamsports.com/players/brian-grant",
+        "https://www.latimes.com/archives/la-xpm-2005-jun-15-sp-roster15-story.html"
+      ]
+    },
+    {
+      "player": "Caron Butler",
+      "status": "under_rookie_contract",
+      "schedule": {
+        "2003-04": 1804680,
+        "2004-05": 1930680,
+        "2005-06": 2461617
+      },
+      "conditions": {
+        "2005-06": "Fourth-year team option, not an unconditional June 26, 2003 commitment."
+      },
+      "sources": [
+        "https://www.shamsports.com/players/caron-butler",
+        "https://www.latimes.com/archives/la-xpm-2005-jun-15-sp-roster15-story.html"
+      ]
+    },
+    {
+      "player": "Anthony Carter",
+      "status": "player_option_pending",
+      "schedule": {
+        "2003-04": 4100000
+      },
+      "conditions": {
+        "2003-04": "Player option; June 30, 2003 notification deadline. Outcome remains pending at this checkpoint."
+      },
+      "sources": [
+        "https://www.espn.com/nba/columns/stein_marc/1577692.html"
+      ]
+    },
+    {
+      "player": "Rasual Butler",
+      "status": "team_option_pending",
+      "schedule": {
+        "2003-04": 563679
+      },
+      "conditions": {
+        "2003-04": "2003-04 team option exists but has not yet been exercised at the June 26 checkpoint."
+      },
+      "sources": [
+        "https://www.shamsports.com/players/rasual-butler",
+        "https://basketball.realgm.com/nba/info/salary_cap"
+      ]
+    },
+    {
+      "player": "Sean Lampley",
+      "status": "team_option_pending",
+      "schedule": {
+        "2003-04": null
+      },
+      "conditions": {
+        "2003-04": "2003-04 team option exists. Exact option salary is left unresolved rather than guessed."
+      },
+      "sources": [
+        "https://www.shamsports.com/players/sean-lampley"
+      ]
+    },
+    {
+      "player": "Dwyane Wade",
+      "status": "unsigned_first_round_draft_rights",
+      "current_cap_hold": 2197000,
+      "schedule": {
+        "2003-04": 2197000
+      },
+      "rookie_scale_reference": {
+        "2003-04": 2197000,
+        "2004-05": 2361800,
+        "2005-06": 2526600,
+        "2006-07_option_increase_over_2005-06_percent": 26.7,
+        "allowed_signing_percent_of_scale": {
+          "min": 80,
+          "max": 120
+        }
+      },
+      "notes": "The current cap charge is 100% of rookie scale because an unsigned first-round pick counts at scale immediately after selection under the 1999 CBA. Future rookie-scale figures are reference terms, not signed Miami commitments until Wade signs.",
+      "sources": [
+        "https://basketball.realgm.com/nba/info/rookie_scale/2004",
+        "https://www.cbafaq.com/salarycap99.htm",
+        "https://www.cbafaq.com/scale99.htm"
+      ]
+    },
+    {
+      "player": "Jerome Beasley",
+      "status": "unsigned_second_round_draft_rights",
+      "schedule": {
+        "2003-04": null
+      },
+      "notes": "No signed contract or verified current cap charge is recorded on June 26. No amount is invented."
+    }
+  ],
+  "expiring_or_unresolved_without_scheduled_2003_04_salary": [
+    "Alonzo Mourning",
+    "Malik Allen",
+    "Travis Best",
+    "LaPhonso Ellis",
+    "Eddie House",
+    "Mike James",
+    "Ken Johnson",
+    "Sean Marks",
+    "Vladimir Stepania"
+  ],
+  "sources": [
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+    "https://www.espn.com/nba/columns/stein_marc/1577692.html",
+    "https://www.shamsports.com/players/rasual-butler",
+    "https://www.shamsports.com/players/sean-lampley",
+    "https://basketball.realgm.com/nba/info/rookie_scale/2004",
+    "https://www.cbafaq.com/salarycap99.htm"
+  ]
+}

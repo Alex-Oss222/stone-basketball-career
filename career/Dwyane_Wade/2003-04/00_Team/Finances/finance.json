@@ -1,31 +1,48 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "owner": "ai_gm",
   "as_of": "2003-06-26",
   "season": "2003-04",
   "team": "Miami Heat",
-  "cap_status": "provisional_pre_league_year",
-  "official_salary_cap": null,
+  "cap_status": "pre_publication_and_pre_free_agency_reconciliation",
+  "live_official_salary_cap": null,
+  "historical_actual_salary_cap": 43840000,
+  "historical_actual_salary_cap_publication_date": "2003-07-15",
+  "league_cap_history_file": "league_cap_history.json",
+  "cap_tracker_file": "cap_tracker.md",
+  "contract_schedules_file": "contract_schedules.json",
+  "known_counted_salary_before_free_agent_holds": 28466078,
+  "reference_difference_to_historical_actual_cap_before_free_agent_holds": 15373922,
   "cap_space": null,
   "cap_room": null,
   "cap_room_reason": [
-    "2003-04 league salary cap not yet finalized at this simulation date",
-    "Anthony Carter $4.1M player option remains unresolved until June 30",
-    "team-option, qualifying-offer and expiring-contract decisions remain unresolved",
-    "draft picks are unsigned and cap accounting must be reconciled"
+    "The $43.84M 2003-04 cap is historical actual but was not announced until July 15, after the June 26 live checkpoint.",
+    "Free-agent cap holds and renouncements have not been reconciled.",
+    "Anthony Carter's $4.1M player option remains unresolved until June 30.",
+    "Rasual Butler and Sean Lampley have pending 2003-04 team options at this checkpoint.",
+    "June 30 qualifying-offer, waiver and option decisions have not occurred.",
+    "Jerome Beasley is unsigned and no unsupported second-round charge is invented."
   ],
-  "known_longer_term_contracts": [
+  "known_current_components": [
     {
       "player": "Eddie Jones",
-      "signed_through": "2004-05"
+      "kind": "contract_salary",
+      "amount": 12333750
     },
     {
       "player": "Brian Grant",
-      "signed_through": "2004-05"
+      "kind": "contract_salary",
+      "amount": 12130648
     },
     {
       "player": "Caron Butler",
-      "signed_through": "2004-05"
+      "kind": "contract_salary",
+      "amount": 1804680
+    },
+    {
+      "player": "Dwyane Wade",
+      "kind": "unsigned_first_round_scale_cap_hold",
+      "amount": 2197000
     }
   ],
   "pending_control_items": [
@@ -39,15 +56,15 @@
     },
     {
       "player": "Rasual Butler",
-      "type": "team_option_or_control_decision",
+      "type": "team_option",
       "season": "2003-04",
-      "amount": null,
+      "amount": 563679,
       "deadline": "2003-06-30",
       "status": "pending"
     },
     {
       "player": "Sean Lampley",
-      "type": "team_option_or_control_decision",
+      "type": "team_option",
       "season": "2003-04",
       "amount": null,
       "deadline": "2003-06-30",
@@ -59,34 +76,27 @@
       "player": "Dwyane Wade",
       "pick": 5,
       "first_year_rookie_scale": 2197000,
+      "current_cap_hold": 2197000,
       "permitted_percent_of_scale": {
         "min": 80,
         "max": 120
-      },
-      "permitted_first_year_range": {
-        "min": 1757600,
-        "max": 2636400
       },
       "contract_status": "unsigned"
     },
     {
       "player": "Jerome Beasley",
       "pick": 33,
-      "first_round_rookie_scale": null,
+      "current_cap_hold": null,
       "contract_status": "unsigned"
     }
   ],
+  "future_cap_policy": "Historical actual league caps are stored for six-season continuity, but future rows are not decision-authoritative before their season's publication point.",
   "sources": [
-    "https://leadersgroup-sbj-prod.web.arc-cdn.net/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+    "https://www.espn.com/nba/news/2003/0715/1581132.html",
+    "https://basketball.realgm.com/nba/info/salary_cap",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
     "https://basketball.realgm.com/nba/info/rookie_scale/2004",
+    "https://www.cbafaq.com/salarycap99.htm",
     "https://www.espn.com/nba/columns/stein_marc/1577692.html"
-  ],
-  "source_gates": [
-    {
-      "source": "ESPN Anthony Carter report",
-      "publication_date": "2003-07-07",
-      "allowed_pre_deadline_use": "contract option amount and June 30 deadline only",
-      "prohibited_pre_deadline_use": "do not import the missed-deadline outcome or resulting cap-room figure before the career reaches it"
-    }
   ]
 }

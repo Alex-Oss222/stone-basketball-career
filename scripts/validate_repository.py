@@ -122,6 +122,9 @@ def validate():
         "Team/Depth_Chart/depth_chart.md",
         "Team/Player_Cards/TEMPLATE.md",
         "Finances/finance.json",
+        "Finances/cap_tracker.md",
+        "Finances/contract_schedules.json",
+        "Finances/league_cap_history.json",
     )
     for rel in required_team_files:
         require(errors,(team/rel).is_file(),f"missing AI/GM team file: 00_Team/{rel}")
@@ -153,6 +156,30 @@ def validate():
         require(errors,finance.get("cap_room") is None,"June 26 cap room must remain unresolved")
         pending={x.get("player"):x for x in finance.get("pending_control_items",[])}
         require(errors,pending.get("Anthony Carter",{}).get("status")=="pending","Anthony Carter option must still be pending on June 26")
+        require(errors,finance.get("live_official_salary_cap") is None,"June 26 live official cap must remain unpublished")
+        require(errors,finance.get("historical_actual_salary_cap")==43840000,"2003-04 historical actual cap must be $43.84M")
+        require(errors,finance.get("known_counted_salary_before_free_agent_holds")==28466078,"known June 26 counted baseline changed")
+
+    history_path=team/"Finances/league_cap_history.json"
+    if history_path.is_file():
+        history=json.loads(history_path.read_text(encoding="utf-8"))
+        expected_caps={
+            "2003-04":43840000,
+            "2004-05":43870000,
+            "2005-06":49500000,
+            "2006-07":53135000,
+            "2007-08":55630000,
+            "2008-09":58680000,
+        }
+        actual={row.get("season"):row.get("salary_cap") for row in history.get("seasons",[])}
+        require(errors,actual==expected_caps,"six-season historical cap reference changed")
+
+    schedules_path=team/"Finances/contract_schedules.json"
+    if schedules_path.is_file():
+        schedules=json.loads(schedules_path.read_text(encoding="utf-8"))
+        require(errors,schedules.get("known_baseline",{}).get("2003-04")==28466078,"contract schedule baseline mismatch")
+        wade=next((x for x in schedules.get("players",[]) if x.get("player")=="Dwyane Wade"),{})
+        require(errors,wade.get("current_cap_hold")==2197000,"Wade unsigned rookie-scale cap hold must be $2.197M")
 
     require(errors, config.get("week_definition") == {"1":"1-7","2":"8-14","3":"15-21","4":"22-end"}, "week definition changed")
     require(errors, month_week(1)==1 and month_week(7)==1, "Week 1 rule failed")

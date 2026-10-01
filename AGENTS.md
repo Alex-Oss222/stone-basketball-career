@@ -50,6 +50,8 @@ Do not import:
 
 A later source may be used to reconstruct a contract term that already existed, but not to reveal a future choice or result to the simulation.
 
+`00_Team/Finances/league_cap_history.json` intentionally stores the real six-season cap sequence for continuity. Treat only a cap that has reached its season/publication gate as live front-office knowledge. Never use a future row to influence an earlier contract, trade or free-agency decision.
+
 ## Player cards
 
 Every player in the team-control register has a player card.

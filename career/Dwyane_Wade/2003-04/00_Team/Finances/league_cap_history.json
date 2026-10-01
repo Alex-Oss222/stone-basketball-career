@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "purpose": "six-season historical salary-cap continuity reference",
+  "live_use_policy": "A season's historical actual cap may become decision-authoritative only when the simulation reaches the league's publication/activation point for that season. Future rows are reference data and must not influence earlier decisions.",
+  "seasons": [
+    {
+      "season": "2003-04",
+      "salary_cap": 43840000,
+      "status": "historical_actual",
+      "published_date": "2003-07-15",
+      "live_at_checkpoint": false
+    },
+    {
+      "season": "2004-05",
+      "salary_cap": 43870000,
+      "status": "historical_actual",
+      "published_date": null,
+      "live_at_checkpoint": false
+    },
+    {
+      "season": "2005-06",
+      "salary_cap": 49500000,
+      "status": "historical_actual",
+      "published_date": null,
+      "live_at_checkpoint": false
+    },
+    {
+      "season": "2006-07",
+      "salary_cap": 53135000,
+      "status": "historical_actual",
+      "published_date": "2006-07-11",
+      "live_at_checkpoint": false
+    },
+    {
+      "season": "2007-08",
+      "salary_cap": 55630000,
+      "status": "historical_actual",
+      "published_date": "2007-07-10",
+      "live_at_checkpoint": false
+    },
+    {
+      "season": "2008-09",
+      "salary_cap": 58680000,
+      "status": "historical_actual",
+      "published_date": null,
+      "live_at_checkpoint": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://basketball.realgm.com/nba/info/salary_cap",
+      "use": "six-season historical cap series"
+    },
+    {
+      "url": "https://www.espn.com/nba/news/2003/0715/1581132.html",
+      "use": "2003-04 cap and July 15, 2003 publication"
+    },
+    {
+      "url": "https://www.espn.com/nba/story/_/id/41300098/what-nba-expansion-draft-look-future",
+      "use": "2004-05 league cap retrospective"
+    },
+    {
+      "url": "https://basketball.realgm.com/wiretap/178830/NBA-Sets-Salary-Cap-At-%2453135-Million",
+      "use": "2006-07 cap and publication"
+    },
+    {
+      "url": "https://www.espn.com/nba/news/story/_/id/2932279",
+      "use": "2007-08 cap and publication"
+    },
+    {
+      "url": "https://www.nba.com/lakers/news/0910_nba_salarycap.html",
+      "use": "official NBA retrospective confirming 2008-09 cap"
+    }
+  ]
+}
