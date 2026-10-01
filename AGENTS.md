@@ -20,7 +20,7 @@ Do not import a later 2003 event before the career clock reaches it.
 
 ## Read order
 
-1. `career/Dwyane_Wade/Dwyane Wade: Player Profile.md`
+1. `career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md`
 2. `career/Dwyane_Wade/2003-04/current_state.json`
 3. `career/Dwyane_Wade/2003-04/00_Team/Organization/README.md`
 4. `career/Dwyane_Wade/2003-04/00_Team/team_config.json`

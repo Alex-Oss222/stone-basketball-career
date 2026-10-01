@@ -30,7 +30,7 @@ class BestOfSevenTests(unittest.TestCase):
 
 class InitializedCareerTests(unittest.TestCase):
     def test_player_and_team(self):
-        self.assertTrue((PLAYER/"Dwyane Wade: Player Profile.md").is_file())
+        self.assertTrue((PLAYER/"Dwyane_Wade_Player_Profile.md").is_file())
         state=json.loads((SEASON/"current_state.json").read_text(encoding="utf-8"))
         self.assertEqual(state["team"],"Miami Heat")
         self.assertEqual(state["draft"]["overall"],5)

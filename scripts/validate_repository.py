@@ -94,7 +94,7 @@ def validate():
 
     require(errors, player.name == "Dwyane_Wade", "active player directory must be Dwyane_Wade")
     require(errors, season.name == "2003-04", "active season directory must be 2003-04")
-    require(errors, (player/"Dwyane Wade: Player Profile.md").is_file(), "missing Dwyane Wade player profile")
+    require(errors, (player/"Dwyane_Wade_Player_Profile.md").is_file(), "missing Dwyane Wade player profile")
 
     state_path=season/"current_state.json"
     require(errors,state_path.is_file(),"missing season current state")

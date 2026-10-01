@@ -54,7 +54,7 @@ Selected No. 5 overall by Miami on June 26, 2003; unsigned draft rights.
 
 **Primary evidence**
 
-- Simulation canon: [Dwyane Wade player profile](../../../../Dwyane%20Wade:%20Player%20Profile.md)
+- Simulation canon: [Dwyane Wade player profile](../../../../Dwyane_Wade_Player_Profile.md)
 - Draft result: https://www.basketball-reference.com/teams/MIA/2003_transactions.html
 
 **Current limits**
