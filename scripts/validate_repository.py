@@ -103,9 +103,9 @@ def validate():
     require(errors,end_library.is_file(),"missing 2003 end-of-season league source")
     require(errors,not (season/"nba_2003_draft_class.json").exists(),"league draft source must not live in season root")
     require(errors,not (season/"nba_2003_end_of_season.json").exists(),"league roster source must not live in season root")
-    for source_path, expected_as_of in (
-        (draft_library,"2003 NBA draft (June 26, 2003), after draft-night trades"),
-        (end_library,"end of 2002-03 season (each club's final game)"),
+    for source_path, expected_as_of, expected_clubs, expected_players in (
+        (draft_library,"2003 NBA draft (June 26, 2003), after draft-night trades",27,58),
+        (end_library,"end of 2002-03 season (each club's final game)",29,350),
     ):
         if source_path.is_file():
             try:
@@ -113,7 +113,11 @@ def validate():
                 require(errors,source.get("league")=="NBA",f"{source_path.relative_to(ROOT)}: league must be NBA")
                 require(errors,source.get("season")==2003,f"{source_path.relative_to(ROOT)}: season must be 2003")
                 require(errors,source.get("as_of")==expected_as_of,f"{source_path.relative_to(ROOT)}: as_of mismatch")
-                require(errors,isinstance(source.get("clubs"),dict) and len(source["clubs"])>=29,f"{source_path.relative_to(ROOT)}: incomplete club map")
+                clubs=source.get("clubs")
+                require(errors,isinstance(clubs,dict) and len(clubs)==expected_clubs,f"{source_path.relative_to(ROOT)}: club count mismatch")
+                if isinstance(clubs,dict):
+                    player_count=sum(len(club.get("players",[])) for club in clubs.values() if isinstance(club,dict))
+                    require(errors,player_count==expected_players,f"{source_path.relative_to(ROOT)}: player count mismatch")
             except json.JSONDecodeError as exc:
                 errors.append(f"{source_path.relative_to(ROOT)}: invalid JSON: {exc}")
 
