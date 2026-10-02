@@ -9,8 +9,8 @@ Status: `done`, `next`, `blocked: <what is missing>`, `later`.
 | # | Item | Why it is needed | Status |
 |---|---|---|---|
 | 1 | League contracts and cap ledger | Every team's payroll and cap position | done (stage 1, `runtime/contracts.py`) |
-| 2 | Free-agent cap holds under the 1999 agreement, for Miami | Miami's real cap room depends on them | blocked: sourced cap-hold rules |
-| 3 | Bird-rights tenure for Miami's expiring players | Decides whom Miami can re-sign over the cap | blocked: years-with-team data for Miami's seven expiring players |
+| 2 | Free-agent cap holds under the 1999 agreement, for Miami | Miami's real cap room depends on them | blocked: sourced cap-hold rules; instructions in `library/incoming/MIAMI_CAP_DATA_INSTRUCTIONS.md` |
+| 3 | Bird-rights tenure for Miami's expiring players | Decides whom Miami can re-sign over the cap | blocked: years-with-team data for Miami's seven expiring players; instructions in `library/incoming/MIAMI_CAP_DATA_INSTRUCTIONS.md` |
 | 4 | Miami's June 30 decisions: team options, Carter's player option, qualifying offers | First events on the clock | next |
 | 5 | Wade's rookie contract, with a negotiation log | Wade is unsigned; first user decision | next |
 | 6 | Miami's free agency (July 1 to 14 talks, signings from July 15), against a market of real clubs | Decides Miami's roster | after 2-5 |
