@@ -47,4 +47,4 @@ The [build roadmap](../../ROADMAP.md) retains ownership of unfinished mechanics.
 
 ### One rule inconsistency to resolve before using a deadline
 
-The current `runtime/rookie_contract.py` returns a fourth-year option deadline of `2004-10-31`. The repository's 1999 FAQ extract describes October 31 after the player's second season, which appears inconsistent for a 2003 entrant. This template collection deliberately does not choose or publish a live deadline from those conflicting records. Verify the exact applicable rule before an option deadline is activated; this template change does not amend the contract engine.
+Resolved October 2, 2026: `runtime/rookie_contract.py` now returns `2005-10-31`, October 31 after Wade's second season (1999 FAQ Q38), recorded in `library/2003/league/nba_2003_04_calendar.json`.

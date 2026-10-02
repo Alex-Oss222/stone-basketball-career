@@ -79,6 +79,8 @@ Wade's ability: his rookie season uses the college estimate (`runtime/prospects.
 
 ## Wade's voice in the front office
 
+The front office's free agency, contract, trade and offseason model is designed in `docs/front_office_design.md`; the research behind it is in `docs/research/` and `library/2003/league/nba_2003_offseason_market_research.md` (world data, hindsight about other clubs).
+
 Wade may tell Miami's front office what he wants: a trade he opposes or wants, a free agent to pursue, his role or minutes. Each request is logged with its date in the phase note it belongs to. The AI/GM weighs it and decides; a request never forces a decision. The weight grows with Wade's standing at that date (his simulated production, awards and contract status), and a front office can say no. Where the answer depends on chance, the engine draws it like a game result so it cannot be re-rolled. Decisions that went against Wade's request may affect his later choices, such as free agency, but only through his own decisions. Request format, standing weights and the front office's rules: `docs/front_office.md`.
 
 ## League source data

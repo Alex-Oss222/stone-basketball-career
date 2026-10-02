@@ -282,5 +282,7 @@
    "url": "https://basketball.realgm.com/nba/info/rookie_scale/2004",
    "use": "2003-04 rookie scale"
   }
- ]
+ ],
+ "luxury_tax_line_note": "After-season actual. Not knowable during 2003-04: the July 2003 projection was about $57,000,000 (ESPN, July 15, 2003). The front office plans against the projection until the computation date (nba_2003_04_calendar.json).",
+ "luxury_tax_line_projection_july_2003": 57000000
 }
