@@ -1,36 +1,46 @@
-# Dwyane Wade | December 2003 · Week 1
+# Dwyane Wade | December 2003 | Week 1
 
-[December summary](../README.md) · [2003-04 season](../../README.md)
+[Stats hub](../../../README.md) · [December 2003](../README.md) · [Miami](../../../Team/2003-04/12_December/Week_1/Team_Stats.md) · [NBA players](../../../League/2003-04/12_December/Week_1/League_Stats.md) · [NBA awards](../../../League/2003-04/12_December/Week_1/League_Awards.md)
 
-**Calendar bucket:** December 1-7, 2003  
-**Team:** Miami Heat  
-**Status:** Not started
+NBA regular season · Miami Heat · December 1-7, 2003
+
+As of June 26, 2003: not started. No closed games or NBA appearances.
+
+## Per-game line
+
+| G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+G and GS are counts. Other figures are per appearance; N/A means there is no qualifying denominator or the field is unavailable.
+
+## Shooting
+
+| FG | FG% | 3P | 3P% | FT | FT% | eFG% | TS% |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | N/A | N/A |
+
+FG, 3P and FT show total makes/attempts. Percentages are calculated from those totals.
+
+<details>
+<summary>Counting totals</summary>
+
+| MIN | PTS | OREB | DREB | REB | AST | STL | BLK | TOV | PF |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+</details>
 
 ## Game log
 
-No games recorded.
+No closed games in this calendar bucket. DNPs and scheduled games do not count as appearances.
 
-| Date | Opponent | Result | MIN | PTS | REB | AST | STL | BLK | TOV | FG | 3P | FT | PF |
-|---|---|---|---:|---:|---:|---:|---:|---:|---:|---|---|---|---:|
+<!-- When played: Date | Opponent | Result | MIN | PTS | REB | AST | STL | BLK | TOV. Link each row to its closed game note. Keep game shooting detail in a separate table. -->
 
-## Week line
+[Game records](../../../../2003-04/06_Regular_Season/12_December/Week_1/note.md) · [Units and update rules](../../../README.md)
 
-| G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+[Previous week](../../11_November/Week_4/README.md) · [Next week](../Week_2/README.md)
 
-### Shooting and possession totals
+## Awards and honors
 
-| FGM | FGA | 3PM | 3PA | FTM | FTA | ORB | DRB | PF |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-
-## Weekly awards
-
-NBA Player of the Week uses the league's official award window, which can cross this repository's calendar bucket.
-
-| Award | Official period | Result | Source |
-|---|---|---|---|
-| NBA Player of the Week | Not announced | Not determined | — |
-
-Stats source when played: closed simulation game results for this bucket.
+No NBA honors recorded for this period. [Conference and league award record](../../../League/2003-04/12_December/Week_1/League_Awards.md).

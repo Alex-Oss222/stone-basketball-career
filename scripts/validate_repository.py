@@ -5,7 +5,9 @@ from __future__ import annotations
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -17,11 +19,137 @@ from runtime.player_stats import repository_rating_errors
 NOTE_STATUSES = {"not_started","active","complete"}
 GAME_STATUSES = {"scheduled","played","not_played"}
 GAME_RE = re.compile(r"^Game_(\d+)\.md$")
+CAP_SEASONS = [f"{year}-{(year+1)%100:02d}" for year in range(2003,2011)]
 
 
 def require(errors, condition, message):
     if not condition:
         errors.append(message)
+
+
+def finance_errors(finance, schedules, history):
+    """Reconcile the commitment inventory without treating missing costs as zero."""
+    errors=[]
+    for label, actual in (("finance",finance.get("planning_horizon")),
+                          ("contracts",schedules.get("horizon")),
+                          ("cap archive",history.get("horizon"))):
+        require(errors,actual==CAP_SEASONS,f"{label}: expected eight seasons, 2003-04 through 2010-11")
+    projections=schedules.get("projection",[])
+    require(errors,[r.get("season") for r in projections]==CAP_SEASONS,"projection must contain every season once, in order")
+    option_kinds={"player_option","team_option","early_termination_option"}
+    totals={year:{"contract_salary":0,"draft_hold":0,"options":0,"unknown_options":0} for year in CAP_SEASONS}
+    for player in schedules.get("players",[]):
+        amounts=player.get("schedule",{})
+        kinds=player.get("amount_kind",{})
+        require(errors,set(amounts)==set(kinds),f"{player.get('player')}: every scheduled amount needs an accounting kind")
+        for year,amount in amounts.items():
+            kind=kinds.get(year)
+            require(errors,year in totals,f"{player.get('player')}: scheduled year outside horizon")
+            require(errors,kind in option_kinds|{"contract_salary","draft_hold","unsigned_rights"},f"{player.get('player')}: unsupported accounting kind")
+            require(errors,amount is None or type(amount) is int and amount>=0,f"{player.get('player')}: salary must be whole nonnegative dollars or null")
+            if year not in totals:
+                continue
+            if kind in option_kinds and amount is None:
+                totals[year]["unknown_options"]+=1
+            elif type(amount) is int and kind in option_kinds:
+                totals[year]["options"]+=amount
+            elif type(amount) is int and kind in {"contract_salary","draft_hold"}:
+                totals[year][kind]+=amount
+            elif kind=="unsigned_rights":
+                require(errors,amount is None,f"{player.get('player')}: unsigned rights cannot silently book a salary")
+    for row in projections:
+        year=row.get("season")
+        if year not in totals:
+            continue
+        t=totals[year]
+        base=t["contract_salary"]+t["draft_hold"]
+        expected={"scheduled_contract_salary":t["contract_salary"],"unsigned_first_round_holds":t["draft_hold"],
+                  "known_conditional_salary":t["options"],"unpriced_option_count":t["unknown_options"],
+                  "known_base_allocations":base,"base_plus_priced_options":base+t["options"]}
+        for key,value in expected.items():
+            require(errors,row.get(key)==value,f"{year}: {key} does not reconcile to contract inventory")
+        for key,value in (("known_baseline",base),("conditional_known_amounts",t["options"]),("conditional_unknown_count",t["unknown_options"])):
+            require(errors,schedules.get(key,{}).get(year)==value,f"{year}: {key} does not reconcile")
+        # This is an existing-obligation projection. Future roster costs remain unassessed.
+        for key in ("free_agent_holds","other_cap_charges","total_team_salary","cap_space"):
+            require(errors,key in row and row[key] is None,f"{year}: unresolved {key} must remain null")
+    current=totals[CAP_SEASONS[0]]
+    expected_current={"scheduled_contract_salary_subtotal":current["contract_salary"],
+                      "known_counted_salary_before_free_agent_holds":current["contract_salary"]+current["draft_hold"],
+                      "known_pending_option_salary":current["options"],
+                      "known_base_plus_priced_options":current["contract_salary"]+current["draft_hold"]+current["options"]}
+    for key,value in expected_current.items():
+        require(errors,finance.get(key)==value,f"finance: {key} does not reconcile to contracts")
+    components=finance.get("known_current_components",[])
+    require(errors,sum(c.get("amount",0) for c in components)==expected_current["known_counted_salary_before_free_agent_holds"],"finance: current component subtotal mismatch")
+    holds=finance.get("free_agent_holds",[])
+    require(errors,Counter(h.get("player") for h in holds)==Counter(schedules.get("expiring_or_unresolved_without_scheduled_2003_04_salary",[])),"finance: free-agent hold review is incomplete or duplicated")
+    for key in ("live_official_salary_cap","live_official_tax_threshold","cap_space","cap_room","tax_payroll","luxury_tax_bill"):
+        require(errors,key in finance and finance[key] is None,f"June 26: {key} must remain unresolved")
+    expected_caps=dict(zip(CAP_SEASONS,(43840000,43870000,49500000,53135000,55630000,58680000,57700000,58044000)))
+    archive=history.get("seasons",[])
+    require(errors,[r.get("season") for r in archive]==CAP_SEASONS,"cap archive must contain each season once, in order")
+    require(errors,{r.get("season"):r.get("salary_cap") for r in archive}==expected_caps,"eight-season historical cap reference changed")
+    for row in archive:
+        publication=row.get("published_date")
+        effective=row.get("effective_date")
+        live=bool(publication and publication<=finance["as_of"] and (not effective or effective<=finance["as_of"]))
+        require(errors,row.get("live_at_checkpoint")==live,f"{row.get('season')}: publication/activation gate mismatch")
+    return errors
+
+
+def markdown_tables(text):
+    """Yield headers and data rows from the reports' simple pipe tables."""
+    for block in re.findall(r"(?:^\|[^\n]*\|\n)+",text,re.M):
+        rows=[[cell.strip() for cell in line.strip().strip('|').split('|')] for line in block.splitlines()]
+        if len(rows)>=2 and all(re.fullmatch(r":?-+:?",cell) for cell in rows[1]):
+            yield rows[0],rows[2:]
+
+
+def report_errors(root, player, team):
+    """Check navigation and player coverage across every existing period."""
+    errors=[]
+    stats=player/"Stats_and_Awards"
+    pages=[root/"README.md",*(team/"Finances").glob("*.md"),*stats.rglob("*.md")]
+    registry=json.loads((stats/"League/player_registry.json").read_text(encoding="utf-8"))["players"]
+    roster=json.loads((team/"Team/Roster/roster.json").read_text(encoding="utf-8"))["players"]
+    expected_league=Counter(p["name"] for p in registry)
+    expected_team=Counter(p["name"] for p in roster)
+    for page in pages:
+        text=page.read_text(encoding="utf-8")
+        label=str(page.relative_to(root))
+        require(errors,text.count("<details>")==text.count("</details>"),f"{label}: unbalanced detail sections")
+        for href in re.findall(r"\[[^\]\n]+\]\(([^)\s]+)\)",text):
+            target=urlsplit(href)
+            if not target.scheme and target.path:
+                require(errors,(page.parent/unquote(target.path)).exists(),f"{label}: broken link {href}")
+        tables=list(markdown_tables(text))
+        for header,rows in tables:
+            require(errors,all(len(row)==len(header) for row in rows),f"{label}: table column mismatch")
+        if page.name in {"League_Stats.md","Team_Stats.md"}:
+            production=[row for header,rows in tables if header[:1]==["Player"] and "PPG" in header for row in rows]
+            actual=Counter(row[0] for row in production)
+            require(errors,all(count==1 for count in actual.values()),f"{label}: duplicate player production rows")
+            # Completed Miami periods retain former players; today's roster is not their source.
+            if page.name=="League_Stats.md":
+                require(errors,actual==expected_league,f"{label}: player production rows missing or duplicated")
+            elif "As of June 26, 2003: not started." in text:
+                require(errors,actual==expected_team,f"{label}: initial Miami control-register coverage mismatch")
+        if page.name=="League_Stats.md":
+            for pos in {p["position"] for p in registry}:
+                group=re.search(rf"<summary>{pos} ·.*?</summary>(.*?)</details>",text,re.S)
+                require(errors,group is not None,f"{label}: missing {pos} position group")
+                if group:
+                    names=Counter(row[0] for header,rows in markdown_tables(group[1]) if "PPG" in header for row in rows)
+                    require(errors,names==Counter(p["name"] for p in registry if p["position"]==pos),f"{label}: {pos} membership mismatch")
+        if page.name=="League_Awards.md" and page.parent.name!="2003-04":
+            shortlists=[rows for header,rows in tables if header[:2]==["Conference","Rank slot"]]
+            expected_count=1 if page.parent.name.startswith("Week_") else 2
+            require(errors,len(shortlists)==expected_count,f"{label}: conference award shortlists missing")
+            for rows in shortlists:
+                require(errors,Counter((r[0],r[1]) for r in rows)==Counter((conference,str(rank)) for conference in ("East","West") for rank in (1,2,3)),f"{label}: each conference needs three shortlist slots")
+            require(errors,not any("First-place votes" in header or "Points" in header for header,_ in tables),f"{label}: weekly/monthly shortlists must not invent vote totals")
+    return errors
 
 
 def front_matter(path):
@@ -203,25 +331,13 @@ def validate():
         require(errors,finance.get("known_counted_salary_before_free_agent_holds")==28466078,"known June 26 counted baseline changed")
 
     history_path=team/"Finances/league_cap_history.json"
-    if history_path.is_file():
-        history=json.loads(history_path.read_text(encoding="utf-8"))
-        expected_caps={
-            "2003-04":43840000,
-            "2004-05":43870000,
-            "2005-06":49500000,
-            "2006-07":53135000,
-            "2007-08":55630000,
-            "2008-09":58680000,
-        }
-        actual={row.get("season"):row.get("salary_cap") for row in history.get("seasons",[])}
-        require(errors,actual==expected_caps,"six-season historical cap reference changed")
 
     cap_sheet_path=team/"Finances/cap_sheet.md"
     if cap_sheet_path.is_file():
         cap_sheet=cap_sheet_path.read_text(encoding="utf-8")
-        for heading in ("## Current cap position","## Active contracts","## Options and draft holds","## Free-agent holds still to reconcile","## Six-year summary"):
+        for heading in ("## Current cap position","## Eight-season commitments","## Signed contract schedules","## Options and draft rights","## Cap reconciliation"):
             require(errors,heading in cap_sheet,f"Finances/cap_sheet.md missing {heading}")
-        require(errors,"2003-04" in cap_sheet and "2008-09" in cap_sheet,"cap sheet must show the six-year window")
+        require(errors,all(year in cap_sheet for year in CAP_SEASONS),"cap sheet must show the eight-season window")
 
     schedules_path=team/"Finances/contract_schedules.json"
     if schedules_path.is_file():
@@ -229,6 +345,9 @@ def validate():
         require(errors,schedules.get("known_baseline",{}).get("2003-04")==28466078,"contract schedule baseline mismatch")
         wade=next((x for x in schedules.get("players",[]) if x.get("player")=="Dwyane Wade"),{})
         require(errors,wade.get("current_cap_hold")==2197000,"Wade unsigned rookie-scale cap hold must be $2.197M")
+        if history_path.is_file() and finance_path.is_file():
+            history=json.loads(history_path.read_text(encoding="utf-8"))
+            errors.extend(finance_errors(finance,schedules,history))
 
     require(errors, config.get("week_definition") == {"1":"1-7","2":"8-14","3":"15-21","4":"22-end"}, "week definition changed")
     require(errors, month_week(1)==1 and month_week(7)==1, "Week 1 rule failed")
@@ -344,6 +463,7 @@ def validate():
         note=request.with_name(request.name.replace(".request.json",".md"))
         require(errors,note.is_file(),f"{request.relative_to(ROOT)}: no matching game note {note.name}")
 
+    errors.extend(report_errors(ROOT,player,team))
     return errors
 
 

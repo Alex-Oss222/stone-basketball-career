@@ -1,61 +1,70 @@
-# Dwyane Wade | 2003-04 Stats & Awards
+# Dwyane Wade | 2003-04
 
-[Career stats & awards](../README.md)
+[Stats hub](../README.md) · [Miami](../Team/2003-04/Team_Stats.md) · [NBA players](../League/2003-04/League_Stats.md) · [NBA awards](../League/2003-04/League_Awards.md)
 
-**Team:** Miami Heat  
-**Season status:** Not started
+NBA regular season · Miami Heat · 2003-04
 
-[October](10_October/README.md) · [November](11_November/README.md) · [December](12_December/README.md) · [January](01_January/README.md) · [February](02_February/README.md) · [March](03_March/README.md) · [April](04_April/README.md)
+As of June 26, 2003: not started. No closed games or NBA appearances.
 
-## Regular-season line
+## Per-game line
 
-| G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+G and GS are counts. Other figures are per appearance; N/A means there is no qualifying denominator or the field is unavailable.
+
+## Shooting
+
+| FG | FG% | 3P | 3P% | FT | FT% | eFG% | TS% |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | N/A | N/A |
+
+FG, 3P and FT show total makes/attempts. Percentages are calculated from those totals.
+
+<details>
+<summary>Counting totals</summary>
+
+| MIN | PTS | OREB | DREB | REB | AST | STL | BLK | TOV | PF |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+</details>
 
 ## Monthly rollup
 
-| Month | G | PTS | REB | AST | STL | Player of Month | Rookie of Month |
-|---|---:|---:|---:|---:|---:|---|---|
-| [October](10_October/README.md) | 0 | N/A | N/A | N/A | N/A | Not determined | Not determined |
-| [November](11_November/README.md) | 0 | N/A | N/A | N/A | N/A | Not determined | Not determined |
-| [December](12_December/README.md) | 0 | N/A | N/A | N/A | N/A | Not determined | Not determined |
-| [January](01_January/README.md) | 0 | N/A | N/A | N/A | N/A | Not determined | Not determined |
-| [February](02_February/README.md) | 0 | N/A | N/A | N/A | N/A | Not determined | Not determined |
-| [March](03_March/README.md) | 0 | N/A | N/A | N/A | N/A | Not determined | Not determined |
-| [April](04_April/README.md) | 0 | N/A | N/A | N/A | N/A | Not determined | Not determined |
-
-## Regular-season shooting totals
-
-| FGM | FGA | FG% | 3PM | 3PA | 3P% | FTM | FTA | FT% | ORB | DRB | TOV | PF |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 0 | 0 | N/A | 0 | 0 | N/A | 0 | 0 | N/A | 0 | 0 | 0 | 0 |
+| Period | G | MPG | PPG | RPG | APG |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| [October 2003](10_October/README.md) | 0 | N/A | N/A | N/A | N/A |
+| [November 2003](11_November/README.md) | 0 | N/A | N/A | N/A | N/A |
+| [December 2003](12_December/README.md) | 0 | N/A | N/A | N/A | N/A |
+| [January 2004](01_January/README.md) | 0 | N/A | N/A | N/A | N/A |
+| [February 2004](02_February/README.md) | 0 | N/A | N/A | N/A | N/A |
+| [March 2004](03_March/README.md) | 0 | N/A | N/A | N/A | N/A |
+| [April 2004](04_April/README.md) | 0 | N/A | N/A | N/A | N/A |
 
 ## Playoffs
 
-No playoff games recorded.
+No playoff games recorded. Keep playoff totals separate from the regular-season line.
 
-| G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+[Game records](../../2003-04/06_Regular_Season/README.md) · [Units and update rules](../README.md)
 
 ## Awards and honors
 
-### Weekly and monthly
+No NBA honors recorded for this period. [Conference and league award record](../League/2003-04/League_Awards.md).
 
-No NBA weekly or monthly honors recorded.
+<details>
+<summary>Season honor register</summary>
 
-### Season honors
+| Honor | Result | Decision record |
+| --- | --- | --- |
+| Most Valuable Player | Not awarded | Not available |
+| Rookie of the Year | Not awarded | Not available |
+| All-NBA | Not awarded | Not available |
+| All-Defensive | Not awarded | Not available |
+| All-Rookie | Not awarded | Not available |
+| All-Star | Not awarded | Not available |
+| NBA Championship | Not awarded | Not available |
+| Finals MVP | Not awarded | Not available |
 
-| Honor | Result | Source |
-|---|---|---|
-| NBA Most Valuable Player | Not determined | — |
-| NBA Rookie of the Year | Not determined | — |
-| All-NBA | Not determined | — |
-| All-Defensive | Not determined | — |
-| All-Rookie | Not determined | — |
-| NBA All-Star | Not determined | — |
-| NBA Championship | Not determined | — |
-| NBA Finals MVP | Not determined | — |
-
-Results come from this simulated branch only.
+</details>

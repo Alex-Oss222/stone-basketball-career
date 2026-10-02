@@ -1,8 +1,10 @@
 import json
 import unittest
+from copy import deepcopy
 from pathlib import Path
 
 from runtime.season_rules import month_week, next_series_game_number, series_over
+from scripts.validate_repository import finance_errors
 
 ROOT=Path(__file__).resolve().parents[1]
 PLAYER=ROOT/"career/Dwyane_Wade"
@@ -77,10 +79,10 @@ class InitializedCareerTests(unittest.TestCase):
 
     def test_cap_sheet_structure(self):
         cap=(TEAM/"Finances/cap_sheet.md").read_text(encoding="utf-8")
-        for heading in ("## Current cap position","## Active contracts","## Options and draft holds","## Free-agent holds still to reconcile","## Six-year summary"):
+        for heading in ("## Current cap position","## Eight-season commitments","## Signed contract schedules","## Options and draft rights","## Cap reconciliation"):
             self.assertIn(heading,cap)
         self.assertIn("2003-04",cap)
-        self.assertIn("2008-09",cap)
+        self.assertIn("2010-11",cap)
         self.assertFalse((TEAM/"Finances/cap_tracker.md").exists())
 
     def test_stats_awards_hierarchy(self):
@@ -148,7 +150,7 @@ class InitializedCareerTests(unittest.TestCase):
             self.assertIn(f"| {player['name']} |",text)
         self.assertNotIn("| LeBron James |",text)
 
-    def test_six_year_cap_reference(self):
+    def test_eight_year_cap_reference(self):
         history=json.loads((TEAM/"Finances/league_cap_history.json").read_text(encoding="utf-8"))
         caps={row["season"]:row["salary_cap"] for row in history["seasons"]}
         self.assertEqual(caps,{
@@ -158,6 +160,8 @@ class InitializedCareerTests(unittest.TestCase):
             "2006-07":53135000,
             "2007-08":55630000,
             "2008-09":58680000,
+            "2009-10":57700000,
+            "2010-11":58044000,
         })
 
     def test_draft_day_finance_baseline(self):
@@ -184,6 +188,49 @@ class InitializedCareerTests(unittest.TestCase):
         self.assertFalse(any((SEASON/"07_Play_In_Tournament").glob("Game_*.md")))
         for folder in ("First_Round","Conference_Semifinals","Conference_Finals","Finals"):
             self.assertFalse(any((SEASON/"08_Playoffs"/folder).glob("Game_*.md")))
+
+
+class FinanceProjectionTests(unittest.TestCase):
+    def setUp(self):
+        folder=TEAM/"Finances"
+        self.finance=json.loads((folder/"finance.json").read_text(encoding="utf-8"))
+        self.schedules=json.loads((folder/"contract_schedules.json").read_text(encoding="utf-8"))
+        self.history=json.loads((folder/"league_cap_history.json").read_text(encoding="utf-8"))
+
+    def errors(self):
+        return finance_errors(self.finance,self.schedules,self.history)
+
+    def test_existing_commitments_reconcile(self):
+        self.assertEqual(self.errors(),[])
+
+    def test_draft_hold_cannot_be_counted_twice_as_salary(self):
+        self.schedules["projection"][0]["scheduled_contract_salary"]+=2197000
+        self.assertTrue(any("scheduled_contract_salary" in e for e in self.errors()))
+
+    def test_option_year_cannot_become_unconditional_silently(self):
+        grant=next(p for p in self.schedules["players"] if p["player"]=="Brian Grant")
+        grant["amount_kind"]["2006-07"]="contract_salary"
+        self.assertTrue(any("2006-07" in e and "reconcile" in e for e in self.errors()))
+
+    def test_no_commitments_does_not_mean_zero_payroll_or_known_cap_space(self):
+        original=deepcopy(self.schedules)
+        for key in ("total_team_salary","cap_space","free_agent_holds","other_cap_charges"):
+            with self.subTest(field=key):
+                self.schedules=deepcopy(original)
+                self.schedules["projection"][-1][key]=0
+                self.assertTrue(any(f"unresolved {key}" in e for e in self.errors()))
+
+    def test_archive_without_publication_date_is_not_live(self):
+        self.history["seasons"][1]["live_at_checkpoint"]=True
+        self.assertTrue(any("publication/activation gate" in e for e in self.errors()))
+
+    def test_partial_inventory_cannot_report_cap_room(self):
+        self.finance["cap_room"]=15373922
+        self.assertTrue(any("cap_room must remain unresolved" in e for e in self.errors()))
+
+    def test_unpriced_option_must_remain_visible(self):
+        self.schedules["projection"][0]["unpriced_option_count"]=0
+        self.assertTrue(any("unpriced_option_count" in e for e in self.errors()))
 
 
 if __name__=="__main__":

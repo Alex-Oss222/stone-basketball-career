@@ -1,34 +1,47 @@
-# Dwyane Wade | April 2004 Stats & Awards
+# Dwyane Wade | April 2004
 
-[2003-04 season](../README.md) · [Week 1](Week_1/README.md) · [Week 2](Week_2/README.md)
+[Stats hub](../../README.md) · [Season](../README.md) · [Miami](../../Team/2003-04/04_April/Team_Stats.md) · [NBA players](../../League/2003-04/04_April/League_Stats.md) · [NBA awards](../../League/2003-04/04_April/League_Awards.md)
 
-**Team:** Miami Heat  
-**Status:** Not started
+NBA regular season · Miami Heat · April 1-30, 2004
 
-## Monthly line
+As of June 26, 2003: not started. No closed games or NBA appearances.
 
-| G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+## Per-game line
+
+| G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+G and GS are counts. Other figures are per appearance; N/A means there is no qualifying denominator or the field is unavailable.
+
+## Shooting
+
+| FG | FG% | 3P | 3P% | FT | FT% | eFG% | TS% |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | N/A | N/A |
+
+FG, 3P and FT show total makes/attempts. Percentages are calculated from those totals.
+
+<details>
+<summary>Counting totals</summary>
+
+| MIN | PTS | OREB | DREB | REB | AST | STL | BLK | TOV | PF |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+</details>
 
 ## Week-by-week
 
-| Week | Dates | G | PTS | REB | AST | STL | Weekly honor |
-|---|---|---:|---:|---:|---:|---:|---|
-| [Week 1](Week_1/README.md) | April 1-7 | 0 | N/A | N/A | N/A | N/A | Not determined |
-| [Week 2](Week_2/README.md) | April 8-14 | 0 | N/A | N/A | N/A | N/A | Not determined |
+| Period | G | MPG | PPG | RPG | APG |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| [Week 1](Week_1/README.md) | 0 | N/A | N/A | N/A | N/A |
+| [Week 2](Week_2/README.md) | 0 | N/A | N/A | N/A | N/A |
 
-## Monthly shooting totals
+[Game records](../../../2003-04/06_Regular_Season/04_April/README.md) · [Units and update rules](../../README.md)
 
-| FGM | FGA | FG% | 3PM | 3PA | 3P% | FTM | FTA | FT% | ORB | DRB | TOV | PF |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 0 | 0 | N/A | 0 | 0 | N/A | 0 | 0 | N/A | 0 | 0 | 0 | 0 |
+[Previous month](../03_March/README.md)
 
-## Monthly awards
+## Awards and honors
 
-| Award | Result | Source |
-|---|---|---|
-| NBA Player of the Month | Not determined | — |
-| NBA Rookie of the Month | Not determined | — |
-
-Weekly honors are counted here only after their official NBA award window closes.
+No NBA honors recorded for this period. [Conference and league award record](../../League/2003-04/04_April/League_Awards.md).

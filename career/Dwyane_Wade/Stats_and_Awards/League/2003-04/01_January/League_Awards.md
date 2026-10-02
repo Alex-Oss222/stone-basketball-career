@@ -1,47 +1,50 @@
-# January 2004 | NBA Awards
+# NBA awards | January 2004
 
-**Season:** 2003-04  
-**Scope:** January 2004  
-**Status:** Not determined
+[Stats hub](../../../README.md) · [Season](../League_Awards.md) · [Wade](../../../2003-04/01_January/README.md) · [Miami](../../../Team/2003-04/01_January/Team_Stats.md) · [NBA players](League_Stats.md)
 
-### Player of the Month · Eastern Conference
+2003-04 · Calendar coverage: January 1-31, 2004
 
-| Rank | Player | Team | First-place votes | Points | Status |
-|---:|---|---|---:|---:|---|
-| 1 | Not determined | — | — | — | Winner pending |
-| 2 | Not determined | — | — | — | Finalist pending |
-| 3 | Not determined | — | — | — | Finalist pending |
+As of June 26, 2003: no award decisions closed.
 
-### Player of the Month · Western Conference
+Official award window: not recorded. Announcement date: not recorded.
 
-| Rank | Player | Team | First-place votes | Points | Status |
-|---:|---|---|---:|---:|---|
-| 1 | Not determined | — | — | — | Winner pending |
-| 2 | Not determined | — | — | — | Finalist pending |
-| 3 | Not determined | — | — | — | Finalist pending |
+The rows below are an internal shortlist, not published NBA vote totals. A calendar bucket can contain no award decision; file a decision where its official period ends.
 
-### Rookie of the Month · Eastern Conference
+## Player of the Month
 
-| Rank | Player | Team | First-place votes | Points | Status |
-|---:|---|---|---:|---:|---|
-| 1 | Not determined | — | — | — | Winner pending |
-| 2 | Not determined | — | — | — | Finalist pending |
-| 3 | Not determined | — | — | — | Finalist pending |
+| Conference | Rank slot | Player | Team | Evidence | Result |
+| --- | ---: | --- | --- | --- | --- |
+| East | 1 | Not shortlisted | N/A | No closed period | Pending |
+| East | 2 | Not shortlisted | N/A | No closed period | Pending |
+| East | 3 | Not shortlisted | N/A | No closed period | Pending |
+| West | 1 | Not shortlisted | N/A | No closed period | Pending |
+| West | 2 | Not shortlisted | N/A | No closed period | Pending |
+| West | 3 | Not shortlisted | N/A | No closed period | Pending |
 
-### Rookie of the Month · Western Conference
+## Rookie of the Month
 
-| Rank | Player | Team | First-place votes | Points | Status |
-|---:|---|---|---:|---:|---|
-| 1 | Not determined | — | — | — | Winner pending |
-| 2 | Not determined | — | — | — | Finalist pending |
-| 3 | Not determined | — | — | — | Finalist pending |
+| Conference | Rank slot | Player | Team | Evidence | Result |
+| --- | ---: | --- | --- | --- | --- |
+| East | 1 | Not shortlisted | N/A | No closed period | Pending |
+| East | 2 | Not shortlisted | N/A | No closed period | Pending |
+| East | 3 | Not shortlisted | N/A | No closed period | Pending |
+| West | 1 | Not shortlisted | N/A | No closed period | Pending |
+| West | 2 | Not shortlisted | N/A | No closed period | Pending |
+| West | 3 | Not shortlisted | N/A | No closed period | Pending |
 
-## Selection record
+## Decision record
 
-The NBA publicly names Eastern and Western conference Players of the Week, and 2003-04 Rookie of the Month awards were also conference-specific. For this simulation, the page preserves a top-three internal shortlist so the winner is not selected without visible alternatives. The winner is the No. 1 row and is labeled **WINNER** when the award closes.
+No award closed. When settled, record the exact period, announcement date and linked branch evidence; mark the selected No. 1 row **WINNER**. Do not invent first-place votes or ballot points.
 
-The shortlist is simulation bookkeeping, not a claim that the NBA published weekly or monthly vote totals. Historical NBA releases generally publish the winners and other nominees rather than a full ballot.
+## By week
 
-## Evidence
+| Period | Calendar dates | Closed decisions | Status |
+| --- | --- | ---: | --- |
+| [Week 1](Week_1/League_Awards.md) | January 1-7, 2004 | 0 | Not started |
+| [Week 2](Week_2/League_Awards.md) | January 8-14, 2004 | 0 | Not started |
+| [Week 3](Week_3/League_Awards.md) | January 15-21, 2004 | 0 | Not started |
+| [Week 4](Week_4/League_Awards.md) | January 22-31, 2004 | 0 | Not started |
 
-Use only games completed inside the official NBA award period. Record the exact award dates even when they cross this repository's calendar-week buckets.
+[Awards procedure and research](../../README.md) · [Player evidence for this calendar period](League_Stats.md)
+
+[Previous month](../12_December/League_Awards.md) · [Next month](../02_February/League_Awards.md)

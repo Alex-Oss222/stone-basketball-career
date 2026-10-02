@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "league": "NBA",
   "season": "2003-04",
   "as_of": "2003-06-26",
@@ -4899,5 +4899,23 @@
       "birth_date": "1975-06-05",
       "registry_id": "ilgauzy01"
     }
-  ]
+  ],
+  "coverage": {
+    "status": "tracking_pool_not_final_active_rosters",
+    "source_counts": {
+      "end_2002_03_roster": 349,
+      "2003_draft_rights": 58
+    },
+    "population_policy": "Retain all 407 original registry entries. Historical veteran-rating records are a separate 428-player dataset, not new roster assignments.",
+    "changes_policy": "Use dated branch transactions; preserve completed-period team stints."
+  },
+  "display_policy": {
+    "group_by": "primary_position",
+    "within_group": "player_name_alphabetical",
+    "unknown": "N/A",
+    "zero_games": "Keep the row with G = 0; do not turn it into a ranked zero average.",
+    "production_units": "G is a count; MPG, PPG, RPG, APG, SPG, BPG and TOV/G are per appearance.",
+    "shooting_units": "GS is a count when known; percentages use total makes divided by attempts.",
+    "leaders": "Show G and denominator; use period labels and verified era qualification rules."
+  }
 }

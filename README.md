@@ -1,59 +1,34 @@
-# Basketball Player Career Simulation
+# Stone Basketball Career
 
-Player career: **Dwyane Wade**  
-Current season: **2003-04**  
-Current date: **June 26, 2003**  
-Draft team: **Miami Heat, No. 5 overall**
+Dwyane Wade · Miami Heat · June 26, 2003
 
-The simulation is centered on Wade as the user-controlled player. Team basketball operations are controlled by the AI/GM.
+No. 5 draft pick. Miami owns Wade's rights; his contract is unsigned. The 2003-04 NBA season has not started.
 
-## Career
+## Open the career
 
-```text
-career/
-  Dwyane_Wade/
-    Dwyane_Wade_Player_Profile.md
-    2003-04/
-      00_Team/
-        Organization/
-        Team/
-          Roster/
-          Depth_Chart/
-          Player_Cards/
-        Finances/
-      01_Free_Agency/
-      02_Summer_League/
-      03_Offseason/
-      04_Training_Camp/
-      05_Preseason/
-      06_Regular_Season/
-      07_Play_In_Tournament/
-      08_Playoffs/
-      09_Draft/
-```
+| Record | What is here |
+| --- | --- |
+| [Current checkpoint](career/Dwyane_Wade/2003-04/current_state.json) | Career date, phase and pending player decisions |
+| [Wade's profile](career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md) | Established alternate-history background and abilities |
+| [Miami team desk](career/Dwyane_Wade/2003-04/00_Team/README.md) | Organization, roster, player cards and rotation |
+| [Eight-season cap sheet](career/Dwyane_Wade/2003-04/00_Team/Finances/cap_sheet.md) | Existing obligations from 2003-04 through 2010-11 |
+| [Stats and awards](career/Dwyane_Wade/Stats_and_Awards/README.md) | Wade, Miami, league players and award records |
+| [Current draft note](career/Dwyane_Wade/2003-04/09_Draft/note.md) | The event that established this checkpoint |
 
-The June 26 team snapshot intentionally stops at the draft. July free-agency moves, later coaching changes and later cap outcomes are not imported early.
+Wade's legitimate player decisions belong to the user. Miami's basketball operations belong to the AI/GM. Contracts, roster moves, games and honors enter the record when they occur in this branch.
 
-## League source library
+## Statistics and player grades
 
-Raw league-wide historical datasets live outside the career state:
+The [2003 source library](library/2003/league/README.md) holds league evidence separately from career results. All 428 players in the supplied 2002-03 veteran dataset have dated engine profiles; 14 Miami veteran cards show statistical estimates and supporting production. The draft class is outside that rating import.
 
-```text
-library/
-  2003/
-    league/
-      nba_2003_end_of_season.json
-      nba_2003_draft_class.json
-      nba_2002_03_player_stats.json
-      nba_2003_veteran_ratings.json
-```
+[Rating method](docs/statistical_ratings.md) · [Miami player cards](career/Dwyane_Wade/2003-04/00_Team/Team/Player_Cards/README.md)
 
-The end-of-season file is the pre-offseason league baseline. The draft-class file is the post-draft June 26 rights snapshot. Miami's live team files may derive from these sources, but the full NBA data is not duplicated inside `00_Team`.
+The stats hub follows the existing season, month and week folders. Historical rating inputs do not count as current-season results. The cap sheet rolls forward existing obligations; its separate historical cap archive cannot guide decisions before the relevant publication date.
 
-The veteran dataset covers all 428 players who appeared in 2002-03. Generated statistical rates drive eligible veterans in the engine; 14 Miami cards also show evidence-backed 20–80 estimates and prior-season stat lines. See [the method and import checks](docs/statistical_ratings.md). The supplied `docs/nba_veteran_stats.json` has moved unchanged into the league source folder.
+## Running and maintaining the simulation
 
-Game execution may be performed externally, including Relay. A game becomes canonical only after its result is written into the appropriate career game record and the repository validates.
+[Game engine](runtime/README.md) · [Update workflow](docs/update_workflow.md) · [Season structure](docs/season_structure.md) · [Operating rules](AGENTS.md)
 
-## Game engine
+Games run on Railway from validated request files. A result becomes canonical only after it is written into the owning game note. Do not edit a closed game's request to obtain another result.
 
-Games are played by an era-calibrated possession engine on Railway: commit a game request, push, and the result appears at `/games/<event_id>/box` on the engine's domain. See [runtime/README.md](runtime/README.md).
+After a record change, run `python scripts/validate_repository.py` and `python -m unittest discover -s tests -q`. Veteran-source changes also require `python scripts/import_veteran_stats.py --check`.

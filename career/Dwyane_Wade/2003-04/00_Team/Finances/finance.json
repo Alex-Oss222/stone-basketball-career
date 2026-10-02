@@ -1,5 +1,5 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "owner": "ai_gm",
   "as_of": "2003-06-26",
   "season": "2003-04",
@@ -89,7 +89,7 @@
       "contract_status": "unsigned"
     }
   ],
-  "future_cap_policy": "Historical actual league caps are stored for six-season continuity, but future rows are not decision-authoritative before their season's publication point.",
+  "future_cap_policy": "The eight-season archive is gated historical reference. The commitment projection includes only terms already existing on June 26, 2003. Future signings, roster costs and usable cap room remain unprojected.",
   "sources": [
     "https://www.espn.com/nba/news/2003/0715/1581132.html",
     "https://basketball.realgm.com/nba/info/salary_cap",
@@ -98,5 +98,115 @@
     "https://www.cbafaq.com/salarycap99.htm",
     "https://www.espn.com/nba/columns/stein_marc/1577692.html"
   ],
-  "cap_sheet_file": "cap_sheet.md"
+  "cap_sheet_file": "cap_sheet.md",
+  "planning_horizon": [
+    "2003-04",
+    "2004-05",
+    "2005-06",
+    "2006-07",
+    "2007-08",
+    "2008-09",
+    "2009-10",
+    "2010-11"
+  ],
+  "currency": "USD",
+  "known_counted_salary_definition": "Scheduled non-option contract salary plus the recorded unsigned first-round hold. This is a partial subtotal, not certified team salary.",
+  "scheduled_contract_salary_subtotal": 26269078,
+  "known_pending_option_salary": 4663679,
+  "known_base_plus_priced_options": 33129757,
+  "live_official_tax_threshold": null,
+  "tax_payroll": null,
+  "luxury_tax_bill": null,
+  "free_agent_holds": [
+    {
+      "player": "Alonzo Mourning",
+      "amount": null,
+      "rights_type": "unreconciled",
+      "renouncement_status": "not_recorded"
+    },
+    {
+      "player": "Malik Allen",
+      "amount": null,
+      "rights_type": "unreconciled",
+      "renouncement_status": "not_recorded"
+    },
+    {
+      "player": "Travis Best",
+      "amount": null,
+      "rights_type": "unreconciled",
+      "renouncement_status": "not_recorded"
+    },
+    {
+      "player": "LaPhonso Ellis",
+      "amount": null,
+      "rights_type": "unreconciled",
+      "renouncement_status": "not_recorded"
+    },
+    {
+      "player": "Eddie House",
+      "amount": null,
+      "rights_type": "unreconciled",
+      "renouncement_status": "not_recorded"
+    },
+    {
+      "player": "Mike James",
+      "amount": null,
+      "rights_type": "unreconciled",
+      "renouncement_status": "not_recorded"
+    },
+    {
+      "player": "Ken Johnson",
+      "amount": null,
+      "rights_type": "unreconciled",
+      "renouncement_status": "not_recorded"
+    },
+    {
+      "player": "Sean Marks",
+      "amount": null,
+      "rights_type": "unreconciled",
+      "renouncement_status": "not_recorded"
+    },
+    {
+      "player": "Vladimir Stepania",
+      "amount": null,
+      "rights_type": "unreconciled",
+      "renouncement_status": "not_recorded"
+    }
+  ],
+  "other_cap_items": [
+    {
+      "item": "incomplete_roster_charges",
+      "amount": null,
+      "status": "unreconciled"
+    },
+    {
+      "item": "unused_exceptions",
+      "amount": null,
+      "status": "unreconciled"
+    },
+    {
+      "item": "waived_or_dead_salary",
+      "amount": null,
+      "status": "unreconciled"
+    },
+    {
+      "item": "bonuses_and_other_adjustments",
+      "amount": null,
+      "status": "unreconciled"
+    }
+  ],
+  "cap_room_calculation": {
+    "status": "blocked",
+    "formula": "published_salary_cap - reconciled_total_team_salary",
+    "required_inputs": [
+      "published_salary_cap",
+      "option_resolutions",
+      "free_agent_holds_and_renouncements",
+      "incomplete_roster_charges",
+      "unused_exceptions",
+      "waived_salary_and_other_adjustments"
+    ],
+    "rule": "Missing inputs propagate null. Cap holds are accounting allocations, not signed cash salary. Do not subtract only the known base subtotal and call the difference cap room."
+  },
+  "reference_difference_to_historical_actual_cap_note": "Arithmetic reference only, not usable cap room; excludes priced/unpriced options and unreconciled accounting items."
 }

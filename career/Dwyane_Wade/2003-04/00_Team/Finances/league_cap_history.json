@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
-  "purpose": "six-season historical salary-cap continuity reference",
-  "live_use_policy": "A season's historical actual cap may become decision-authoritative only when the simulation reaches the league's publication/activation point for that season. Future rows are reference data and must not influence earlier decisions.",
+  "schema_version": 2,
+  "purpose": "eight-season historical salary-cap continuity reference, not a June 2003 forecast",
+  "live_use_policy": "Historical actuals remain reference-only before a verified publication date. A null publication date blocks live use until researched. Effective dates, when recorded, additionally gate transaction accounting. Never infer projected cap room from this archive.",
   "seasons": [
     {
       "season": "2003-04",
@@ -44,12 +44,30 @@
       "status": "historical_actual",
       "published_date": null,
       "live_at_checkpoint": false
+    },
+    {
+      "season": "2009-10",
+      "salary_cap": 57700000,
+      "status": "historical_actual",
+      "published_date": null,
+      "live_at_checkpoint": false,
+      "source_url": "https://pr.nba.com/nba-salary-cap-for-2010-11-season-set-at-58-044-million/",
+      "publication_note": "The official 2010 release verifies this prior-season amount; the 2009 publication date remains unverified here."
+    },
+    {
+      "season": "2010-11",
+      "salary_cap": 58044000,
+      "status": "historical_actual",
+      "published_date": "2010-07-07",
+      "effective_date": "2010-07-08",
+      "live_at_checkpoint": false,
+      "source_url": "https://pr.nba.com/nba-salary-cap-for-2010-11-season-set-at-58-044-million/"
     }
   ],
   "sources": [
     {
       "url": "https://basketball.realgm.com/nba/info/salary_cap",
-      "use": "six-season historical cap series"
+      "use": "historical cap series; archive only"
     },
     {
       "url": "https://www.espn.com/nba/news/2003/0715/1581132.html",
@@ -70,6 +88,21 @@
     {
       "url": "https://www.nba.com/lakers/news/0910_nba_salarycap.html",
       "use": "official NBA retrospective confirming 2008-09 cap"
+    },
+    {
+      "url": "https://pr.nba.com/nba-salary-cap-for-2010-11-season-set-at-58-044-million/",
+      "use": "Official 2010-11 cap and July 7 announcement / July 8 activation; also confirms the 2009-10 cap."
     }
+  ],
+  "as_of_checkpoint": "2003-06-26",
+  "horizon": [
+    "2003-04",
+    "2004-05",
+    "2005-06",
+    "2006-07",
+    "2007-08",
+    "2008-09",
+    "2009-10",
+    "2010-11"
   ]
 }

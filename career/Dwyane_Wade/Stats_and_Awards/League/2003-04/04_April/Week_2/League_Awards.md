@@ -1,31 +1,30 @@
-# April 2004 · Week 2 | NBA Awards
+# NBA awards | April 2004 | Week 2
 
-**Season:** 2003-04  
-**Scope:** April 8-14, 2004  
-**Status:** Not determined
+[Stats hub](../../../../README.md) · [April 2004](../League_Awards.md) · [Wade](../../../../2003-04/04_April/Week_2/README.md) · [Miami](../../../../Team/2003-04/04_April/Week_2/Team_Stats.md) · [NBA players](League_Stats.md)
 
-### Player of the Week · Eastern Conference
+2003-04 · Calendar coverage: April 8-14, 2004
 
-| Rank | Player | Team | First-place votes | Points | Status |
-|---:|---|---|---:|---:|---|
-| 1 | Not determined | — | — | — | Winner pending |
-| 2 | Not determined | — | — | — | Finalist pending |
-| 3 | Not determined | — | — | — | Finalist pending |
+As of June 26, 2003: no award decisions closed.
 
-### Player of the Week · Western Conference
+Official award window: not recorded. Announcement date: not recorded.
 
-| Rank | Player | Team | First-place votes | Points | Status |
-|---:|---|---|---:|---:|---|
-| 1 | Not determined | — | — | — | Winner pending |
-| 2 | Not determined | — | — | — | Finalist pending |
-| 3 | Not determined | — | — | — | Finalist pending |
+The rows below are an internal shortlist, not published NBA vote totals. A calendar bucket can contain no award decision; file a decision where its official period ends.
 
-## Selection record
+## Player of the Week
 
-The NBA publicly names Eastern and Western conference Players of the Week, and 2003-04 Rookie of the Month awards were also conference-specific. For this simulation, the page preserves a top-three internal shortlist so the winner is not selected without visible alternatives. The winner is the No. 1 row and is labeled **WINNER** when the award closes.
+| Conference | Rank slot | Player | Team | Evidence | Result |
+| --- | ---: | --- | --- | --- | --- |
+| East | 1 | Not shortlisted | N/A | No closed period | Pending |
+| East | 2 | Not shortlisted | N/A | No closed period | Pending |
+| East | 3 | Not shortlisted | N/A | No closed period | Pending |
+| West | 1 | Not shortlisted | N/A | No closed period | Pending |
+| West | 2 | Not shortlisted | N/A | No closed period | Pending |
+| West | 3 | Not shortlisted | N/A | No closed period | Pending |
 
-The shortlist is simulation bookkeeping, not a claim that the NBA published weekly or monthly vote totals. Historical NBA releases generally publish the winners and other nominees rather than a full ballot.
+## Decision record
 
-## Evidence
+No award closed. When settled, record the exact period, announcement date and linked branch evidence; mark the selected No. 1 row **WINNER**. Do not invent first-place votes or ballot points.
 
-Use only games completed inside the official NBA award period. Record the exact award dates even when they cross this repository's calendar-week buckets.
+[Awards procedure and research](../../../README.md) · [Player evidence for this calendar period](League_Stats.md)
+
+[Previous week](../Week_1/League_Awards.md)

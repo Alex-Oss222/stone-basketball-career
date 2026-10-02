@@ -1,36 +1,49 @@
-# Dwyane Wade | January 2004 Stats & Awards
+# Dwyane Wade | January 2004
 
-[2003-04 season](../README.md) · [Week 1](Week_1/README.md) · [Week 2](Week_2/README.md) · [Week 3](Week_3/README.md) · [Week 4](Week_4/README.md)
+[Stats hub](../../README.md) · [Season](../README.md) · [Miami](../../Team/2003-04/01_January/Team_Stats.md) · [NBA players](../../League/2003-04/01_January/League_Stats.md) · [NBA awards](../../League/2003-04/01_January/League_Awards.md)
 
-**Team:** Miami Heat  
-**Status:** Not started
+NBA regular season · Miami Heat · January 1-31, 2004
 
-## Monthly line
+As of June 26, 2003: not started. No closed games or NBA appearances.
 
-| G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+## Per-game line
+
+| G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+G and GS are counts. Other figures are per appearance; N/A means there is no qualifying denominator or the field is unavailable.
+
+## Shooting
+
+| FG | FG% | 3P | 3P% | FT | FT% | eFG% | TS% |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | N/A | N/A |
+
+FG, 3P and FT show total makes/attempts. Percentages are calculated from those totals.
+
+<details>
+<summary>Counting totals</summary>
+
+| MIN | PTS | OREB | DREB | REB | AST | STL | BLK | TOV | PF |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+</details>
 
 ## Week-by-week
 
-| Week | Dates | G | PTS | REB | AST | STL | Weekly honor |
-|---|---|---:|---:|---:|---:|---:|---|
-| [Week 1](Week_1/README.md) | January 1-7 | 0 | N/A | N/A | N/A | N/A | Not determined |
-| [Week 2](Week_2/README.md) | January 8-14 | 0 | N/A | N/A | N/A | N/A | Not determined |
-| [Week 3](Week_3/README.md) | January 15-21 | 0 | N/A | N/A | N/A | N/A | Not determined |
-| [Week 4](Week_4/README.md) | January 22-31 | 0 | N/A | N/A | N/A | N/A | Not determined |
+| Period | G | MPG | PPG | RPG | APG |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| [Week 1](Week_1/README.md) | 0 | N/A | N/A | N/A | N/A |
+| [Week 2](Week_2/README.md) | 0 | N/A | N/A | N/A | N/A |
+| [Week 3](Week_3/README.md) | 0 | N/A | N/A | N/A | N/A |
+| [Week 4](Week_4/README.md) | 0 | N/A | N/A | N/A | N/A |
 
-## Monthly shooting totals
+[Game records](../../../2003-04/06_Regular_Season/01_January/README.md) · [Units and update rules](../../README.md)
 
-| FGM | FGA | FG% | 3PM | 3PA | 3P% | FTM | FTA | FT% | ORB | DRB | TOV | PF |
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 0 | 0 | N/A | 0 | 0 | N/A | 0 | 0 | N/A | 0 | 0 | 0 | 0 |
+[Previous month](../12_December/README.md) · [Next month](../02_February/README.md)
 
-## Monthly awards
+## Awards and honors
 
-| Award | Result | Source |
-|---|---|---|
-| NBA Player of the Month | Not determined | — |
-| NBA Rookie of the Month | Not determined | — |
-
-Weekly honors are counted here only after their official NBA award window closes.
+No NBA honors recorded for this period. [Conference and league award record](../../League/2003-04/01_January/League_Awards.md).

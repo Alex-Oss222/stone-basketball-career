@@ -50,7 +50,7 @@ Do not import:
 
 A later source may be used to reconstruct a contract term that already existed, but not to reveal a future choice or result to the simulation.
 
-`00_Team/Finances/league_cap_history.json` intentionally stores the real six-season cap sequence for continuity. Treat only a cap that has reached its season/publication gate as live front-office knowledge. Never use a future row to influence an earlier contract, trade or free-agency decision.
+`00_Team/Finances/league_cap_history.json` intentionally stores the real eight-season cap sequence, 2003-04 through 2010-11, for continuity. Treat only a cap that has reached its verified publication/activation gate as live front-office knowledge; a missing publication date blocks live use. Never use a future row to influence an earlier contract, trade or free-agency decision. The cap sheet projects existing obligations only. Keep signed salary, draft holds, conditional options and unresolved charges distinct; a zero scheduled commitment is not a zero-cost future roster or usable cap room.
 
 ## League source data
 
@@ -78,6 +78,8 @@ The player's statistical record lives at `career/Dwyane_Wade/Stats_and_Awards/<s
 
 Closed game results are the evidence. Week pages summarize their games, month pages summarize the completed weeks, and the year page summarizes the months. Never import real-world Wade statistics or awards as branch results.
 
+Keep the existing paths and the cross-links between the same period's Wade, Miami, league-player and award records. Production tables use labeled per-game columns; shooting/possession detail uses totals. Recompute percentages from summed makes and attempts, not averages of percentages. G = 0 is an empty appearance record; missing feed coverage is not zero. Preserve source-game links and separate playoff totals.
+
 Official NBA weekly award windows can cross this repository's fixed calendar buckets. Preserve the official award dates and file the honor on the week page containing the award period's end date.
 
 ## League stats and awards
@@ -85,6 +87,8 @@ Official NBA weekly award windows can cross this repository's fixed calendar buc
 League-wide tracking lives under `career/Dwyane_Wade/Stats_and_Awards/League/`. The player registry is the source roster for league stat pages. Every period page keeps all tracked players grouped by primary position.
 
 Weekly and monthly NBA awards remain conference-specific. Their pages keep a visible top-three shortlist but do not pretend the NBA published vote totals where it did not. Season individual awards publish the top three vote-getters. The No. 1 row is labeled WINNER only after the vote closes.
+
+Weekly/monthly shortlist tables use evidence and result columns, not first-place-vote or points columns. Season voting records retain the electorate, scoring rule, close date and complete tally reference. Keep all 407 registry entries accessible by position; a source club or draft-rights label does not establish current active status.
 
 ## Team stats
 
