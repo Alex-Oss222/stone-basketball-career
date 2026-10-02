@@ -1,0 +1,191 @@
+{
+ "training": {
+  "2013": {
+   "snap_rows_without_player_id": 3,
+   "snap_rows_not_joined_to_a_chart_or_stat_row": 0,
+   "rows": 27538
+  },
+  "2014": {
+   "snap_rows_without_player_id": 7,
+   "snap_rows_not_joined_to_a_chart_or_stat_row": 7,
+   "rows": 27144
+  }
+ },
+ "team_snap_proxy": {
+  "offense": {
+   "slope": 1.021009355318566,
+   "intercept": 1.4244929601502572,
+   "mae": 1.447901809245256
+  },
+  "defense": {
+   "slope": 1.0178942867646616,
+   "intercept": 1.4184840198284958,
+   "mae": 1.6085529677331993
+  }
+ },
+ "validation": {
+  "2013_to_2014": {
+   "fit_on": 2013,
+   "tested_on": 2014,
+   "player_games": 27144,
+   "game_mae_pct_points": {
+    "offense": 4.22,
+    "defense": 4.99,
+    "special_teams": 10.54
+   },
+   "baseline_game_mae_pct_points": {
+    "offense": 8.41,
+    "defense": 9.64
+   },
+   "season": {
+    "players": 2609,
+    "corr_actual_vs_estimate": 0.9834,
+    "mae_snaps": 37.4,
+    "players_200_plus_snaps": 1134,
+    "median_abs_pct_error_200_plus": 8.5,
+    "share_within_15_pct_200_plus": 65.9
+   },
+   "season_by_group_200_plus": {
+    "CB": {
+     "players": 124,
+     "median_abs_pct_error": 8.0,
+     "share_within_15_pct": 71.8
+    },
+    "DL": {
+     "players": 202,
+     "median_abs_pct_error": 14.8,
+     "share_within_15_pct": 50.5
+    },
+    "LB": {
+     "players": 159,
+     "median_abs_pct_error": 11.4,
+     "share_within_15_pct": 57.9
+    },
+    "OL": {
+     "players": 219,
+     "median_abs_pct_error": 4.7,
+     "share_within_15_pct": 77.6
+    },
+    "QB": {
+     "players": 42,
+     "median_abs_pct_error": 1.4,
+     "share_within_15_pct": 90.5
+    },
+    "RB": {
+     "players": 67,
+     "median_abs_pct_error": 11.8,
+     "share_within_15_pct": 67.2
+    },
+    "S": {
+     "players": 98,
+     "median_abs_pct_error": 6.4,
+     "share_within_15_pct": 74.5
+    },
+    "TE": {
+     "players": 75,
+     "median_abs_pct_error": 13.6,
+     "share_within_15_pct": 54.7
+    },
+    "WR": {
+     "players": 125,
+     "median_abs_pct_error": 7.4,
+     "share_within_15_pct": 71.2
+    }
+   }
+  },
+  "2014_to_2013": {
+   "fit_on": 2014,
+   "tested_on": 2013,
+   "player_games": 27538,
+   "game_mae_pct_points": {
+    "offense": 4.24,
+    "defense": 4.95,
+    "special_teams": 10.37
+   },
+   "baseline_game_mae_pct_points": {
+    "offense": 8.88,
+    "defense": 10.08
+   },
+   "season": {
+    "players": 2586,
+    "corr_actual_vs_estimate": 0.9834,
+    "mae_snaps": 38.6,
+    "players_200_plus_snaps": 1072,
+    "median_abs_pct_error_200_plus": 8.2,
+    "share_within_15_pct_200_plus": 66.5
+   },
+   "season_by_group_200_plus": {
+    "CB": {
+     "players": 117,
+     "median_abs_pct_error": 7.6,
+     "share_within_15_pct": 70.9
+    },
+    "DL": {
+     "players": 192,
+     "median_abs_pct_error": 13.4,
+     "share_within_15_pct": 53.1
+    },
+    "FB": {
+     "players": 18,
+     "median_abs_pct_error": 26.7,
+     "share_within_15_pct": 11.1
+    },
+    "LB": {
+     "players": 144,
+     "median_abs_pct_error": 12.0,
+     "share_within_15_pct": 55.6
+    },
+    "OL": {
+     "players": 207,
+     "median_abs_pct_error": 3.7,
+     "share_within_15_pct": 74.4
+    },
+    "QB": {
+     "players": 44,
+     "median_abs_pct_error": 1.9,
+     "share_within_15_pct": 95.5
+    },
+    "RB": {
+     "players": 58,
+     "median_abs_pct_error": 6.2,
+     "share_within_15_pct": 72.4
+    },
+    "S": {
+     "players": 95,
+     "median_abs_pct_error": 5.3,
+     "share_within_15_pct": 81.1
+    },
+    "TE": {
+     "players": 68,
+     "median_abs_pct_error": 11.9,
+     "share_within_15_pct": 61.8
+    },
+    "WR": {
+     "players": 126,
+     "median_abs_pct_error": 10.0,
+     "share_within_15_pct": 69.0
+    }
+   }
+  }
+ },
+ "files": {
+  "2010": {
+   "rows": 27567,
+   "players": 2032,
+   "team_games": 512,
+   "sha256": "f4cb8abb780a6e66bc039c6a6094ac79178cea7e3bc4cef7f92f7a242612ca60"
+  },
+  "2011": {
+   "rows": 27502,
+   "players": 2015,
+   "team_games": 512,
+   "sha256": "7e705d697a75906039ce797b35531ce8ecf3d56f29cce82d5b4292e0c119a38b"
+  },
+  "2012": {
+   "rows": 27539,
+   "players": 2027,
+   "team_games": 512,
+   "sha256": "c8bd7e5abf2d059b1bb066cc7dfc4502394c6b4439146849a8bf88333e717d8e"
+  }
+ }
+}
