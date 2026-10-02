@@ -17,7 +17,8 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 GAME_FIELDS = {"game_id", "date", "away", "home"}
-SCHEDULE_RE = re.compile(r"^nba_(\d{4})_(\d{2})_schedule\.json$")
+SCHEDULE_RE = re.compile(r"^nba_(\d{4})_(\d{2})_(preseason_)?schedule\.json$")
+KINDS = {"regular_season_schedule": "schedule", "preseason_schedule": "preseason_schedule"}
 
 # Abbreviations used by common sources (Basketball-Reference, ESPN, NBA.com) in
 # the mid-2000s, mapped to the club names used in the league library.
@@ -44,9 +45,9 @@ def team_count(season):
     return 29 if int(season[:4]) <= 2003 else 30
 
 
-def schedule_path(season, root=ROOT):
+def schedule_path(season, root=ROOT, kind="regular_season_schedule"):
     start = int(season[:4])
-    return Path(root) / "library" / str(start) / "league" / f"nba_{start}_{season[-2:]}_schedule.json"
+    return Path(root) / "library" / str(start) / "league" / f"nba_{start}_{season[-2:]}_{KINDS[kind]}.json"
 
 
 def season_of_date(d):
@@ -140,6 +141,15 @@ def _column(header, keys, used=()):
     raise ValueError(f"no column for {keys[0]!r} in header {header}")
 
 
+def source_header(path):
+    """(kind, source) declared by a JSON export, when it declares them."""
+    if Path(path).suffix.lower() == ".json":
+        data = json.loads(Path(path).read_text(encoding="utf-8-sig"))
+        if isinstance(data, dict):
+            return data.get("kind", "regular_season_schedule"), data.get("source")
+    return "regular_season_schedule", None
+
+
 def read_games(path, known=None):
     """Return (games, stripped_columns) from a CSV/TSV/JSON/XLSX schedule export."""
     rows = [r for r in _rows(path) if any(str(c).strip() for c in r)]
@@ -171,10 +181,11 @@ def known_teams(season, root=ROOT):
     return None
 
 
-def validate_schedule(data, season, root=ROOT):
+def validate_schedule(data, season, root=ROOT, kind="regular_season_schedule"):
+    """Regular seasons must be complete (82 per team); preseasons only need clean games."""
     errors = []
-    if data.get("league") != "NBA" or data.get("season") != season or data.get("kind") != "regular_season_schedule":
-        errors.append("header must be league NBA, matching season, kind regular_season_schedule")
+    if data.get("league") != "NBA" or data.get("season") != season or data.get("kind") != kind:
+        errors.append(f"header must be league NBA, matching season, kind {kind}")
     games = data.get("games")
     if not isinstance(games, list) or not games:
         return errors + ["games must be a nonempty list"]
@@ -186,7 +197,8 @@ def validate_schedule(data, season, root=ROOT):
             errors.append(f"game fields must be exactly {sorted(GAME_FIELDS)} (no results): {g}")
             continue
         day = date.fromisoformat(g["date"])
-        if not date(start, 10, 1) <= day <= date(start + 1, 4, 30):
+        window = (date(start, 10, 1), date(start + 1, 4, 30)) if kind == "regular_season_schedule" else (date(start, 9, 15), date(start, 10, 31))
+        if not window[0] <= day <= window[1]:
             errors.append(f"{g['game_id']}: date outside the regular-season window")
         if g["away"] == g["home"]:
             errors.append(f"{g['game_id']}: team plays itself")
@@ -200,6 +212,8 @@ def validate_schedule(data, season, root=ROOT):
                 errors.append(f"{team} plays twice on {g['date']}")
             per_day.add((team, g["date"]))
             counts[team] = counts.get(team, 0) + 1
+    if kind != "regular_season_schedule":
+        return errors
     expected = team_count(season)
     if len(counts) != expected:
         errors.append(f"{len(counts)} teams; {season} has {expected}")
@@ -220,10 +234,11 @@ def schedule_errors(root=ROOT):
             errors.append(f"{rel}: must be library/<start year>/league/nba_<YYYY>_<YY>_schedule.json")
             continue
         season = f"{m.group(1)}-{m.group(2)}"
+        kind = "preseason_schedule" if m.group(3) else "regular_season_schedule"
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
         except json.JSONDecodeError as exc:
             errors.append(f"{rel}: invalid JSON: {exc}")
             continue
-        errors += [f"{rel}: {e}" for e in validate_schedule(data, season, root)]
+        errors += [f"{rel}: {e}" for e in validate_schedule(data, season, root, kind)]
     return errors
