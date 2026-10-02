@@ -212,3 +212,26 @@ def real_rotation(club_name, club, season_games, rating_index=None, *, fraction,
     # Rotation order: who plays the most when he plays.
     players.sort(key=lambda item: (-item[0], -item[1], item[2].player_id))
     return TeamInput(club_name, tuple(p for _, _, p in players), pace)
+
+
+def departures_path(season):
+    return Path(f"career/Dwyane_Wade/{season}/00_Team/Team/Roster/departures.json")
+
+
+def miami_departures(season, club_name, game_date, root=ROOT):
+    """Arrivals at a real club from simulated Miami on `game_date` (rule 3), as roster-shaped entries.
+
+    `departures.json` records each player Miami sent to a real club: the club, the dates, and his
+    previous minute share (minutes and games of his last real season), which rule 3 lets him keep
+    up to the departing minutes. The window starts at the season fraction of his arrival."""
+    path = Path(root) / departures_path(season)
+    if not path.exists():
+        return ()
+    out = []
+    for e in json.loads(path.read_text(encoding="utf-8"))["entries"]:
+        if e["club"] != club_name or not (e["from"] <= game_date and (e["until"] is None or game_date < e["until"])):
+            continue
+        start = season_fraction(season, e["from"], root) if e["from"] >= f"{season[:4]}-10-01" else 0.0
+        out.append({"player_id": e["player"], "bbr_id": e["bbr_id"], "position": e.get("position") or "SF",
+                    "games": e["games"], "minutes": e["minutes"], "span": [0.0, 1.0], "window": [start, 1.0]})
+    return tuple(out)

@@ -521,3 +521,81 @@ def sign_rookie(writer, log, terms, day):
     set_state(writer, day, last_event=f"{day}-wade-signs-rookie-contract", contract_status="rookie_scale_contract", roster_status="under_contract",
               pending_player_decisions=[])
     return entry
+
+
+# -- trades ---------------------------------------------------------------------------------------
+TRADES = TEAM / "Transactions/Trades"
+DEPARTURES = TEAM / "Team/Roster/departures.json"
+
+
+def phase_note_for(state):
+    return Path(f"career/Dwyane_Wade/{SEASON}") / state.get("current_note", "01_Free_Agency/note.md")
+
+
+def apply_trade(writer, record, day):
+    """Write an accepted trade: Miami's side into every record, the partner's side into the departures ledger."""
+    trade = record["trade"]
+    club = trade["partner"]
+    sheet, roster, holdings = writer.load(TEAM / "Finances/contract_schedules.json"), writer.load(TEAM / "Team/Roster/roster.json"), writer.load(TEAM / "Team/Roster/holdings.json")
+    depth, picks = writer.load(TEAM / "Team/Depth_Chart/depth_chart.json"), writer.load(TEAM / "Finances/draft_picks.json")
+    departures = writer.load(DEPARTURES) if (writer.root / DEPARTURES).exists() else None
+    if departures is None:
+        departures = {"schema_version": 1, "owner": "ai_gm", "kind": "miami_departures", "season": SEASON,
+                      "purpose": ("Players simulated Miami sent to real clubs (conflict rule 3): the club, the dates and the previous minute "
+                                  "share (last real season) rule 3 lets him keep up to the departing minutes. Read by runtime/rotations.py."),
+                      "entries": []}
+        writer.files[DEPARTURES] = departures
+    stats = {r["bbr_id"]: r for r in read("library/2003/league/nba_2002_03_player_stats.json", writer.root)["records"]}
+    inventory = read("library/2003/league/nba_2003_contracts.json", writer.root)["clubs"][club]
+    record_rel = f"00_Team/Transactions/Trades/{record['trade_id']}.json"
+    # Miami's outgoing players
+    for name in trade.get("miami_out", []):
+        entry = next(p for p in sheet["players"] if p["player"] == name)
+        bbr = entry.get("bbr_id") or next((r.get("bbr_id") for r in roster["players"] if r["name"] == name), None)
+        depart(writer, name, day, "traded", f"traded to {club} ({record['trade_id']})")
+        for e in holdings["entries"]:
+            if e["player"] == name and e["until"] is None:
+                e["until"] = day
+        prior = stats.get(bbr, {}).get("totals", {})
+        identity = league_identity(writer.root, bbr)
+        departures["entries"].append({"player": name, "bbr_id": bbr, "club": club, "from": day, "until": None,
+                                      "position": (identity.get("position") or "SF").split("-")[0],
+                                      "games": prior.get("games", 0), "minutes": prior.get("minutes", 0),
+                                      "basis": f"traded {day} ({record['trade_id']}); previous share from 2002-03 totals"})
+    # Miami's incoming players
+    for name in trade.get("miami_in", []):
+        p = next(p for p in inventory["players"] if p["player"] == name)
+        bbr = p.get("bbr_id")
+        entry = {"player": name, "bbr_id": bbr, "status": "under_contract", "schedule": dict(p["schedule"]), "amount_kind": dict(p.get("amount_kind", {})),
+                 "acquired": {"how": "trade", "date": day, "from": club, "record": record_rel},
+                 "notes": f"Acquired from {club} on {long_date(day)} by trade ({record['trade_id']}); contract carried as the inventory records it ({p['status']}).",
+                 "sources": [record_rel] + list(p.get("sources", []))}
+        if p.get("prior_season_salary"):
+            entry["prior_season_salary"] = p["prior_season_salary"]
+        sheet["players"] = [x for x in sheet["players"] if x["player"] != name] + [entry]
+        identity = league_identity(writer.root, bbr)
+        salary = p["schedule"].get(SEASON) or 0
+        control = f"Acquired by trade from {club} on {long_date(day)}: ${salary:,} in 2003-04; contract through {max(s for s, v in p['schedule'].items() if v)}."
+        roster["players"].append({"id": slug(name), "name": name, "positions": [x for x in (identity.get("position") or "SF").replace("/", "-").split("-")],
+                                 "date_of_birth": identity.get("birth_date"), "status": "under_contract", "control": control,
+                                 "working_role": "Unassigned arrival", "player_card": f"../Player_Cards/{slug(name)}.md", "bbr_id": bbr})
+        writer.text(TEAM / f"Team/Player_Cards/{slug(name)}.md", player_card(name, identity, day, control, f"../../../{record_rel}", stats.get(bbr)))
+        depth.setdefault("unassigned_arrivals", []).append({"name": name, "positions": roster["players"][-1]["positions"], "status": "under_contract", "date": day})
+        holdings["entries"].append({"player": name, "bbr_id": bbr, "from": day, "until": None, "basis": f"acquired by trade from {club} ({record['trade_id']})"})
+    # Picks
+    for pick in trade.get("picks_out", []):
+        for own in picks["picks"]:
+            if own["year"] == pick["year"] and own["round"] == pick["round"] and own["owned"]:
+                own["owned"] = False
+                own["history"].append({"date": day, "to": club, "trade": record["trade_id"]})
+    for pick in trade.get("picks_in", []):
+        picks["picks"].append({"year": pick["year"], "round": pick["round"], "owned": True, "original_club": club,
+                               "history": [{"date": day, "from": club, "trade": record["trade_id"]}]})
+    sheet["as_of"] = roster["as_of"] = depth["as_of"] = picks["as_of"] = day
+    outs = ", ".join(trade.get("miami_out", []) + [f"{x['year']} round {x['round']} pick" for x in trade.get("picks_out", [])]) or "nothing"
+    ins = ", ".join(trade.get("miami_in", []) + [f"{x['year']} round {x['round']} pick" for x in trade.get("picks_in", [])]) or "nothing"
+    state = writer.load(STATE)
+    note_event(writer, phase_note_for(state), day, f"Trade with {club}: Miami sends {outs} for {ins} (accepted by engine draw {record['decision_event']}). Record: `{record_rel}`.")
+    set_state(writer, day, area=state.get("current_area", "01_Free_Agency"), note=state.get("current_note", "01_Free_Agency/note.md"),
+              last_event=f"{day}-trade-{record['trade_id']}")
+    return record_rel
