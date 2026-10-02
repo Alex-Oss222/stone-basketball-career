@@ -1,0 +1,134 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "minimum_salary_scale",
+ "agreement": "1999 NBA/NBPA collective bargaining agreement",
+ "unit": "whole dollars",
+ "key": "years of NBA experience before the season; 10_plus means ten or more",
+ "seasons": {
+  "1998-99": {
+   "0": 287500,
+   "1": 350000,
+   "2": 425000,
+   "3": 450000,
+   "4": 475000,
+   "5": 537500,
+   "6": 600000,
+   "7": 662500,
+   "8": 725000,
+   "9": 850000,
+   "10_plus": 1000000
+  },
+  "1999-00": {
+   "0": 301875,
+   "1": 385000,
+   "2": 460000,
+   "3": 485000,
+   "4": 510000,
+   "5": 572500,
+   "6": 635000,
+   "7": 697500,
+   "8": 760000,
+   "9": 885000,
+   "10_plus": 1000000
+  },
+  "2000-01": {
+   "0": 316969,
+   "1": 423500,
+   "2": 498500,
+   "3": 523500,
+   "4": 548500,
+   "5": 611000,
+   "6": 673500,
+   "7": 736000,
+   "8": 798500,
+   "9": 923500,
+   "10_plus": 1000000
+  },
+  "2001-02": {
+   "0": 332817,
+   "1": 465850,
+   "2": 540850,
+   "3": 565850,
+   "4": 590850,
+   "5": 653350,
+   "6": 715850,
+   "7": 778350,
+   "8": 840850,
+   "9": 965850,
+   "10_plus": 1000000
+  },
+  "2002-03": {
+   "0": 349458,
+   "1": 512435,
+   "2": 587435,
+   "3": 612435,
+   "4": 637435,
+   "5": 699935,
+   "6": 762435,
+   "7": 824935,
+   "8": 887435,
+   "9": 1000000,
+   "10_plus": 1030000
+  },
+  "2003-04": {
+   "0": 366931,
+   "1": 563679,
+   "2": 638679,
+   "3": 663679,
+   "4": 688679,
+   "5": 751179,
+   "6": 813679,
+   "7": 876179,
+   "8": 938679,
+   "9": 1000000,
+   "10_plus": 1070000
+  },
+  "2004-05": {
+   "0": 385277,
+   "1": 620046,
+   "2": 695046,
+   "3": 720046,
+   "4": 745046,
+   "5": 807546,
+   "6": 870046,
+   "7": 932546,
+   "8": 995046,
+   "9": 1000000,
+   "10_plus": 1100000
+  }
+ },
+ "cap_treatment": {
+  "rule": "For a player with five or more seasons on a one-year, ten-day or rest-of-season minimum contract, the league pays part of the salary and only the four-year veteran minimum is included in team salary.",
+  "amount_counted": {
+   "1998-99": 475000,
+   "1999-00": 510000,
+   "2000-01": 548500,
+   "2001-02": 590850,
+   "2002-03": 637435,
+   "2003-04": 688679,
+   "2004-05": 745046
+  },
+  "source_question": 9
+ },
+ "sources": [
+  {
+   "url": "http://www.cbafaq.com/salarycap99.htm",
+   "use": "Question 9 table and reimbursement rule, read by an automated page reader",
+   "retrieved_on": "2026-10-02"
+  },
+  {
+   "url": "https://basketball.realgm.com/nba/info/salary_cap",
+   "use": "Cross-check: the 0, 1, 2 and 10-plus year figures for 2002-03, 2003-04 and 2004-05 agree"
+  },
+  {
+   "url": "https://www.eskimo.com/~pbender/misc/salaries04.txt",
+   "use": "Cross-check: states that five-year veterans on one-year minimum contracts count $688,679 in 2003-04, the four-year figure here"
+  }
+ ],
+ "verification": {
+  "cells": 77,
+  "cross_checked_against_second_source": 13,
+  "note": "The other 64 cells rest on one reading of one page. Years 1 to 8 rise by the same dollar step from each season to the next, which is the pattern the table should have."
+ }
+}

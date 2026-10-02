@@ -1,0 +1,4597 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "free_agent_rights",
+ "as_of": "2003-06-26",
+ "agreement": "1999 NBA/NBPA collective bargaining agreement",
+ "scope": "Every player on the 2003-07-01 published free agent list, plus one found by contract history, for all 29 clubs. Facts and rule arithmetic only: no qualifying offer decisions, renouncements or signings are recorded.",
+ "rules_applied": {
+  "bird_class": "Seasons without being waived or changing teams as a free agent: three or more is bird, two is early_bird, one is non_bird. A trade keeps the count.",
+  "qualifying_offer": "Fourth-year rookie scale player: 2002-03 salary plus the scale percentage for his draft pick. Other restricted players: the greater of 125% of 2002-03 salary and the 2003-04 minimum for his years of service plus $150,000.",
+  "cap_hold": "Bird 150% (prior salary at least the average) or 200% (below); Bird off a rookie scale contract 250% or 300%; Early Bird 130%; Non-Bird 120%; not above the player's maximum salary; two-year average used when the last-year raise exceeded $4 million.",
+  "source": "http://www.cbafaq.com/salarycap99.htm, Questions 9, 10, 17, 22, 23, 28 and 34"
+ },
+ "assumptions": [
+  "Average salary threshold set at $4,917,000, the 2003-04 mid-level exception, which the FAQ says equals the average salary. The FAQ does not print the average itself; players whose salary falls between $4,546,000 and $4,917,000 are flagged.",
+  "Maximum salary taken as the greater of the 2003-04 maximum for the player's years of service ($10,960,000, $13,152,000 or $15,344,000) and 105% of his 2002-03 salary.",
+  "Years of service counted as seasons with at least one NBA game before 2003-04. A season spent under contract without playing is not counted and could add one.",
+  "A season counts toward the Bird clock from the season in which the player signed."
+ ],
+ "unverified": [
+  "The cap hold rule for players coming off minimum-salary contracts. The FAQ has no separate rule and the agreement text could not be read; standard percentages are used and each affected player is flagged.",
+  "Transaction facts were read from Basketball-Reference season transaction pages by an automated reader, in batches. Dates and types were used; trade directions were not. 117 of 131 listed signings match a club the player then played for, and the other 14 look like training-camp signings.",
+  "Re-signings with the same club are not listed on those pages and do not reset the count, so none are recorded."
+ ],
+ "coverage": {
+  "players": 129,
+  "by_bird_class": {
+   "bird": 55,
+   "non_bird": 53,
+   "early_bird": 21
+  },
+  "by_bird_basis": {
+   "seasons_with_club": 25,
+   "no_signing_or_waiver_since_july_2000": 24,
+   "last_free_agent_signing_or_waiver": 75,
+   "entered_league_in_window_no_signing_listed": 5
+  },
+  "qualifying_offers_priced": 32,
+  "holds_priced": 125,
+  "flagged_minimum_contract_hold": 55
+ },
+ "clubs": {
+  "Atlanta Hawks": {
+   "code": "ATL",
+   "free_agents": [
+    {
+     "player": "DerMarr Johnson",
+     "bbr_id": "johnsde03",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 2423280,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 4846560,
+     "transactions_2000_07_to_2003_06": [],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Mikki Moore",
+     "bbr_id": "mooremi01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 2412500,
+     "nba_seasons_before_2003_04": 5,
+     "minimum_salary_2003_04": 751179,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 2895000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-08-05",
+       "type": "WAIVED",
+       "teams": "Detroit Pistons"
+      },
+      {
+       "date": "2002-09-30",
+       "type": "SIGNED",
+       "teams": "San Antonio Spurs"
+      },
+      {
+       "date": "2002-10-24",
+       "type": "WAIVED",
+       "teams": "San Antonio Spurs"
+      },
+      {
+       "date": "2003-01-06",
+       "type": "SIGNED",
+       "teams": "Boston Celtics"
+      },
+      {
+       "date": "2003-04-14",
+       "type": "SIGNED",
+       "teams": "Atlanta Hawks"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Jason Terry",
+     "bbr_id": "terryja01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 2153934,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 4,
+     "bird_clock_seasons": 4,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": true,
+     "qualifying_offer_amount": 2933658,
+     "qualifying_offer_basis": "rookie scale: 2002-03 salary plus 36.2% (1999 pick No. 10)",
+     "cap_hold_percent": 300.0,
+     "cap_hold_amount": 6461802,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Dion Glover",
+     "bbr_id": "glovedi01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 1584312,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 4,
+     "bird_clock_seasons": 4,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": true,
+     "qualifying_offer_amount": 2270319,
+     "qualifying_offer_basis": "rookie scale: 2002-03 salary plus 43.3% (1999 pick No. 20)",
+     "cap_hold_percent": 300.0,
+     "cap_hold_amount": 4752936,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Emanual Davis",
+     "bbr_id": "davisem01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 824935,
+     "nba_seasons_before_2003_04": 6,
+     "minimum_salary_2003_04": 813679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 1072416,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-09-20",
+       "type": "TRADED",
+       "teams": "Seattle SuperSonics -> Los Angeles Lakers"
+      },
+      {
+       "date": "2000-10-25",
+       "type": "WAIVED",
+       "teams": "Los Angeles Lakers"
+      },
+      {
+       "date": "2000-10-27",
+       "type": "SIGNED",
+       "teams": "Seattle SuperSonics"
+      },
+      {
+       "date": "2001-07-27",
+       "type": "SIGNED",
+       "teams": "Atlanta Hawks"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Darvin Ham",
+     "bbr_id": "hamda01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 699935,
+     "nba_seasons_before_2003_04": 6,
+     "minimum_salary_2003_04": 813679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 839922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-09-17",
+       "type": "SIGNED",
+       "teams": "Atlanta Hawks"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Ira Newble",
+     "bbr_id": "newblir01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 587435,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 763666,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-11",
+       "type": "SIGNED",
+       "teams": "San Antonio Spurs"
+      },
+      {
+       "date": "2000-08-12",
+       "type": "SIGNED",
+       "teams": "San Antonio Spurs"
+      },
+      {
+       "date": "2001-10-01",
+       "type": "SIGNED",
+       "teams": "Atlanta Hawks"
+      },
+      {
+       "date": "2001-10-24",
+       "type": "WAIVED",
+       "teams": "Atlanta Hawks"
+      },
+      {
+       "date": "2002-01-23",
+       "type": "SIGNED",
+       "teams": "Atlanta Hawks"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Jermaine Jackson",
+     "bbr_id": "jacksje01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 171932,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 206318,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-17",
+       "type": "SIGNED",
+       "teams": "Philadelphia 76ers"
+      },
+      {
+       "date": "2002-01-10",
+       "type": "SIGNED",
+       "teams": "Toronto Raptors"
+      },
+      {
+       "date": "2002-10-25",
+       "type": "WAIVED",
+       "teams": "Toronto Raptors"
+      },
+      {
+       "date": "2002-10-30",
+       "type": "SIGNED",
+       "teams": "New York Knicks"
+      },
+      {
+       "date": "2003-01-07",
+       "type": "WAIVED",
+       "teams": "Toronto Raptors"
+      },
+      {
+       "date": "2003-01-30",
+       "type": "SIGNED",
+       "teams": "Atlanta Hawks"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 21838620,
+   "unpriced_holds": 0
+  },
+  "Boston Celtics": {
+   "code": "BOS",
+   "free_agents": [
+    {
+     "player": "Bimbo Coles",
+     "bbr_id": "colesbi01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 2400000,
+     "nba_seasons_before_2003_04": 13,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 2880000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-12",
+       "type": "SIGNED",
+       "teams": "Cleveland Cavaliers"
+      },
+      {
+       "date": "2003-02-28",
+       "type": "WAIVED",
+       "teams": "Cleveland Cavaliers"
+      },
+      {
+       "date": "2003-03-08",
+       "type": "SIGNED",
+       "teams": "Boston Celtics"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Mark Bryant",
+     "bbr_id": "bryanma01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1030000,
+     "nba_seasons_before_2003_04": 15,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 1339000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-11-15",
+       "type": "WAIVED",
+       "teams": "Cleveland Cavaliers"
+      },
+      {
+       "date": "2000-11-28",
+       "type": "SIGNED",
+       "teams": "Dallas Mavericks"
+      },
+      {
+       "date": "2001-08-01",
+       "type": "SIGNED",
+       "teams": "San Antonio Spurs"
+      },
+      {
+       "date": "2002-06-26",
+       "type": "TRADED",
+       "teams": "San Antonio Spurs -> Philadelphia 76ers"
+      },
+      {
+       "date": "2002-12-18",
+       "type": "TRADED",
+       "teams": "Philadelphia 76ers -> Denver Nuggets"
+      },
+      {
+       "date": "2003-02-20",
+       "type": "TRADED",
+       "teams": "Denver Nuggets -> Boston Celtics"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Walter McCarty",
+     "bbr_id": "mccarwa01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 762435,
+     "nba_seasons_before_2003_04": 7,
+     "minimum_salary_2003_04": 876179,
+     "seasons_with_club": 6,
+     "bird_clock_seasons": 6,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 1524870,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Mark Blount",
+     "bbr_id": "blounma01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 762435,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 914922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-01",
+       "type": "SIGNED",
+       "teams": "Boston Celtics"
+      },
+      {
+       "date": "2002-08-08",
+       "type": "SIGNED",
+       "teams": "Denver Nuggets"
+      },
+      {
+       "date": "2003-02-20",
+       "type": "TRADED",
+       "teams": "Boston Celtics -> Denver Nuggets"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Grant Long",
+     "bbr_id": "longgr01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": null,
+     "nba_seasons_before_2003_04": 15,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": null,
+     "cap_hold_amount": null,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2003-01-16",
+       "type": "SIGNED",
+       "teams": "Boston Celtics"
+      }
+     ],
+     "flags": [
+      "No 2002-03 salary found; hold not computed."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 6658792,
+   "unpriced_holds": 1
+  },
+  "Chicago Bulls": {
+   "code": "CHI",
+   "free_agents": [
+    {
+     "player": "Corie Blount",
+     "bbr_id": "blounco01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1400000,
+     "nba_seasons_before_2003_04": 10,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1680000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-01-26",
+       "type": "TRADED",
+       "teams": "Phoenix Suns -> Golden State Warriors"
+      },
+      {
+       "date": "2001-10-25",
+       "type": "TRADED",
+       "teams": "Golden State Warriors -> Philadelphia 76ers"
+      },
+      {
+       "date": "2002-07-31",
+       "type": "SIGNED",
+       "teams": "Chicago Bulls"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Fred Hoiberg",
+     "bbr_id": "hoibefr01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1400000,
+     "nba_seasons_before_2003_04": 8,
+     "minimum_salary_2003_04": 938679,
+     "seasons_with_club": 4,
+     "bird_clock_seasons": 4,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 2800000,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Rick Brunson",
+     "bbr_id": "brunsri01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 699935,
+     "nba_seasons_before_2003_04": 6,
+     "minimum_salary_2003_04": 813679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 839922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-09-28",
+       "type": "SIGNED",
+       "teams": "Miami Heat"
+      },
+      {
+       "date": "2000-10-20",
+       "type": "WAIVED",
+       "teams": "Miami Heat"
+      },
+      {
+       "date": "2000-11-06",
+       "type": "SIGNED",
+       "teams": "Boston Celtics"
+      },
+      {
+       "date": "2000-11-27",
+       "type": "CLAIMED",
+       "teams": "New York Knicks"
+      },
+      {
+       "date": "2001-12-21",
+       "type": "SIGNED",
+       "teams": "Portland Trail Blazers"
+      },
+      {
+       "date": "2002-09-18",
+       "type": "SIGNED",
+       "teams": "Chicago Bulls"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 5319922,
+   "unpriced_holds": 0
+  },
+  "Cleveland Cavaliers": {
+   "code": "CLE",
+   "free_agents": [
+    {
+     "player": "Jumaine Jones",
+     "bbr_id": "jonesju01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 1419026,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": true,
+     "qualifying_offer_amount": 2104416,
+     "qualifying_offer_basis": "rookie scale: 2002-03 salary plus 48.3% (1999 pick No. 27)",
+     "cap_hold_percent": 300.0,
+     "cap_hold_amount": 4257078,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-08-03",
+       "type": "TRADED",
+       "teams": "Cleveland -> Philadelphia 76ers"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Milt Palacio",
+     "bbr_id": "palacmi01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 750000,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 1500000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-12-06",
+       "type": "SIGNED",
+       "teams": "Boston Celtics"
+      },
+      {
+       "date": "2001-01-05",
+       "type": "WAIVED",
+       "teams": "Boston Celtics"
+      },
+      {
+       "date": "2001-01-10",
+       "type": "SIGNED",
+       "teams": "Boston Celtics"
+      },
+      {
+       "date": "2002-02-20",
+       "type": "TRADED",
+       "teams": "Boston Celtics -> Phoenix Suns"
+      },
+      {
+       "date": "2002-09-17",
+       "type": "TRADED",
+       "teams": "Phoenix Suns -> Cleveland Cavaliers"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Smush Parker",
+     "bbr_id": "parkesm01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 349458,
+     "nba_seasons_before_2003_04": 1,
+     "minimum_salary_2003_04": 563679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 419350,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-09-26",
+       "type": "SIGNED",
+       "teams": "Cleveland Cavaliers"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Tierre Brown",
+     "bbr_id": "brownti01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": null,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": null,
+     "cap_hold_amount": null,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-09-26",
+       "type": "SIGNED",
+       "teams": "Houston Rockets"
+      },
+      {
+       "date": "2003-03-03",
+       "type": "SIGNED",
+       "teams": "Cleveland Cavaliers"
+      }
+     ],
+     "flags": [
+      "No 2002-03 salary found; hold not computed."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 6176428,
+   "unpriced_holds": 1
+  },
+  "Dallas Mavericks": {
+   "code": "DAL",
+   "free_agents": [
+    {
+     "player": "Popeye Jones",
+     "bbr_id": "jonespo01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1030000,
+     "nba_seasons_before_2003_04": 10,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1236000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-09-25",
+       "type": "TRADED",
+       "teams": "Denver Nuggets -> Washington Wizards"
+      },
+      {
+       "date": "2002-09-20",
+       "type": "SIGNED",
+       "teams": "Dallas Mavericks"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Walt Williams",
+     "bbr_id": "williwa02",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1030000,
+     "nba_seasons_before_2003_04": 11,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1236000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-10-18",
+       "type": "SIGNED",
+       "teams": "Dallas Mavericks"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Adrian Griffin",
+     "bbr_id": "griffad01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 637435,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 828666,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-07-27",
+       "type": "SIGNED",
+       "teams": "Dallas Mavericks"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Raja Bell",
+     "bbr_id": "bellra01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 612435,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 734922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-02",
+       "type": "SIGNED",
+       "teams": "San Antonio Spurs"
+      },
+      {
+       "date": "2001-04-06",
+       "type": "SIGNED",
+       "teams": "Philadelphia 76ers"
+      },
+      {
+       "date": "2002-10-01",
+       "type": "SIGNED",
+       "teams": "Dallas Mavericks"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 4035588,
+   "unpriced_holds": 0
+  },
+  "Denver Nuggets": {
+   "code": "DEN",
+   "free_agents": [
+    {
+     "player": "Juwan Howard",
+     "bbr_id": "howarju01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 20625000,
+     "nba_seasons_before_2003_04": 9,
+     "minimum_salary_2003_04": 1000000,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 21656250,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-02-22",
+       "type": "TRADED",
+       "teams": "Washington Wizards -> Dallas Mavericks"
+      },
+      {
+       "date": "2002-02-21",
+       "type": "TRADED",
+       "teams": "Dallas Mavericks -> Denver Nuggets"
+      }
+     ],
+     "flags": [
+      "Limited to the maximum salary for his years of service."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Shammond Williams",
+     "bbr_id": "willish01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 2000000,
+     "nba_seasons_before_2003_04": 5,
+     "minimum_salary_2003_04": 751179,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 4000000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-07-22",
+       "type": "TRADED",
+       "teams": "Seattle SuperSonics -> Boston Celtics"
+      },
+      {
+       "date": "2003-02-20",
+       "type": "TRADED",
+       "teams": "Boston Celtics -> Denver Nuggets"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Donnell Harvey",
+     "bbr_id": "harvedo01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 992040,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 1984080,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-02-21",
+       "type": "TRADED",
+       "teams": "Dallas -> Denver"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Chris Andersen",
+     "bbr_id": "anderch01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 512435,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 788679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 666166,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-11-21",
+       "type": "SIGNED",
+       "teams": "Denver Nuggets"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Adam Harrington",
+     "bbr_id": "harriad01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 140636,
+     "nba_seasons_before_2003_04": 1,
+     "minimum_salary_2003_04": 563679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 713679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 168763,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-10-10",
+       "type": "SIGNED",
+       "teams": "Dallas Mavericks"
+      },
+      {
+       "date": "2003-01-07",
+       "type": "WAIVED",
+       "teams": "Dallas Mavericks"
+      },
+      {
+       "date": "2003-03-23",
+       "type": "SIGNED",
+       "teams": "Denver Nuggets"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 28475259,
+   "unpriced_holds": 0
+  },
+  "Detroit Pistons": {
+   "code": "DET",
+   "free_agents": [
+    {
+     "player": "Jon Barry",
+     "bbr_id": "barryjo01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 3175000,
+     "nba_seasons_before_2003_04": 11,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 6350000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-09-07",
+       "type": "TRADED",
+       "teams": "Sacramento Kings -> Detroit Pistons"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Richard Hamilton",
+     "bbr_id": "hamilri01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 2681783,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": true,
+     "qualifying_offer_amount": 3596271,
+     "qualifying_offer_basis": "rookie scale: 2002-03 salary plus 34.1% (1999 pick No. 7)",
+     "cap_hold_percent": 300.0,
+     "cap_hold_amount": 8045349,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-09-11",
+       "type": "TRADED",
+       "teams": "Washington Wizards -> Detroit Pistons"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Don Reid",
+     "bbr_id": "reiddo01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1100000,
+     "nba_seasons_before_2003_04": 8,
+     "minimum_salary_2003_04": 938679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 2200000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-15",
+       "type": "SIGNED",
+       "teams": "Orlando Magic"
+      },
+      {
+       "date": "2002-08-01",
+       "type": "TRADED",
+       "teams": "Denver Nuggets -> Orlando Magic"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Danny Manning",
+     "bbr_id": "mannida01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 900000,
+     "nba_seasons_before_2003_04": 15,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1080000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-02",
+       "type": "WAIVED",
+       "teams": "Milwaukee Bucks"
+      },
+      {
+       "date": "2000-08-12",
+       "type": "SIGNED",
+       "teams": "Utah Jazz"
+      },
+      {
+       "date": "2001-08-02",
+       "type": "SIGNED",
+       "teams": "Dallas Mavericks"
+      },
+      {
+       "date": "2002-06-25",
+       "type": "WAIVED",
+       "teams": "Dallas Mavericks"
+      },
+      {
+       "date": "2003-02-05",
+       "type": "SIGNED",
+       "teams": "Detroit Pistons"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 17675349,
+   "unpriced_holds": 0
+  },
+  "Golden State Warriors": {
+   "code": "GS",
+   "free_agents": [
+    {
+     "player": "Earl Boykins",
+     "bbr_id": "boykiea01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 528605,
+     "nba_seasons_before_2003_04": 5,
+     "minimum_salary_2003_04": 751179,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 634326,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-09-29",
+       "type": "SIGNED",
+       "teams": "Los Angeles Clippers"
+      },
+      {
+       "date": "2002-06-28",
+       "type": "WAIVED",
+       "teams": "Los Angeles Clippers"
+      },
+      {
+       "date": "2002-11-27",
+       "type": "SIGNED",
+       "teams": "Golden State Warriors"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Gilbert Arenas",
+     "bbr_id": "arenagi01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 512435,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "entered_league_in_window_no_signing_listed",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 788679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 666166,
+     "transactions_2000_07_to_2003_06": [],
+     "flags": [
+      "Entered the NBA after 2000-01 with no signing listed; seasons counted from his first season.",
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 1300492,
+   "unpriced_holds": 0
+  },
+  "Houston Rockets": {
+   "code": "HOU",
+   "free_agents": [
+    {
+     "player": "James Posey",
+     "bbr_id": "poseyja01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 1723606,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": true,
+     "qualifying_offer_amount": 2445797,
+     "qualifying_offer_basis": "rookie scale: 2002-03 salary plus 41.9% (1999 pick No. 18)",
+     "cap_hold_percent": 300.0,
+     "cap_hold_amount": 5170818,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-12-18",
+       "type": "TRADED",
+       "teams": "Denver Nuggets -> Houston Rockets"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Jason Collier",
+     "bbr_id": "collija02",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1369440,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 3,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 2738880,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Juaquin Hawkins",
+     "bbr_id": "hawkiju01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 587435,
+     "nba_seasons_before_2003_04": 1,
+     "minimum_salary_2003_04": 563679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 704922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-09-30",
+       "type": "SIGNED",
+       "teams": "Houston Rockets"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 8614620,
+   "unpriced_holds": 0
+  },
+  "Indiana Pacers": {
+   "code": "IND",
+   "free_agents": [
+    {
+     "player": "Reggie Miller",
+     "bbr_id": "millere01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 12046473,
+     "nba_seasons_before_2003_04": 16,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 16,
+     "bird_clock_seasons": 16,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 15344000,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
+      "Limited to the maximum salary for his years of service."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Jermaine O'Neal",
+     "bbr_id": "onealje01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 6900000,
+     "nba_seasons_before_2003_04": 7,
+     "minimum_salary_2003_04": 876179,
+     "seasons_with_club": 3,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 10350000,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Brad Miller",
+     "bbr_id": "millebr01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 4800000,
+     "nba_seasons_before_2003_04": 5,
+     "minimum_salary_2003_04": 751179,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 9600000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-09-07",
+       "type": "SIGNED",
+       "teams": "Chicago Bulls"
+      },
+      {
+       "date": "2002-02-19",
+       "type": "TRADED",
+       "teams": "Chicago Bulls -> Indiana Pacers"
+      }
+     ],
+     "flags": [
+      "Prior salary lies between the two candidate average-salary figures ($4,546,000 and $4,917,000); the percentage depends on which applies."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Tim Hardaway",
+     "bbr_id": "hardati01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1000000,
+     "nba_seasons_before_2003_04": 13,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1200000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-08-22",
+       "type": "TRADED",
+       "teams": "Miami Heat -> Dallas Mavericks"
+      },
+      {
+       "date": "2002-02-21",
+       "type": "TRADED",
+       "teams": "Dallas Mavericks -> Denver Nuggets"
+      },
+      {
+       "date": "2002-06-25",
+       "type": "WAIVED",
+       "teams": "Denver Nuggets"
+      },
+      {
+       "date": "2003-03-27",
+       "type": "SIGNED",
+       "teams": "Indiana Pacers"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Erick Strickland",
+     "bbr_id": "stricer01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 762435,
+     "nba_seasons_before_2003_04": 7,
+     "minimum_salary_2003_04": 876179,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 914922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-01-30",
+       "type": "TRADED",
+       "teams": "New York Knicks -> Vancouver Grizzlies"
+      },
+      {
+       "date": "2001-11-01",
+       "type": "SIGNED",
+       "teams": "Boston Celtics"
+      },
+      {
+       "date": "2002-09-05",
+       "type": "SIGNED",
+       "teams": "Indiana Pacers"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 37408922,
+   "unpriced_holds": 0
+  },
+  "Los Angeles Clippers": {
+   "code": "LAC",
+   "free_agents": [
+    {
+     "player": "Michael Olowokandi",
+     "bbr_id": "olowomi01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 6061213,
+     "nba_seasons_before_2003_04": 5,
+     "minimum_salary_2003_04": 751179,
+     "seasons_with_club": 5,
+     "bird_clock_seasons": 5,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 9091820,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Elton Brand",
+     "bbr_id": "brandel01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 4895656,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": true,
+     "qualifying_offer_amount": 6364353,
+     "qualifying_offer_basis": "rookie scale: 2002-03 salary plus 30.0% (1999 pick No. 1)",
+     "cap_hold_percent": 300.0,
+     "cap_hold_amount": 10960000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-06-27",
+       "type": "TRADED",
+       "teams": "Chicago Bulls -> Los Angeles Clippers"
+      }
+     ],
+     "flags": [
+      "Limited to the maximum salary for his years of service.",
+      "Prior salary lies between the two candidate average-salary figures ($4,546,000 and $4,917,000); the percentage depends on which applies."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html"
+     ]
+    },
+    {
+     "player": "Lamar Odom",
+     "bbr_id": "odomla01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 3557585,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 4,
+     "bird_clock_seasons": 4,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": true,
+     "qualifying_offer_amount": 4692455,
+     "qualifying_offer_basis": "rookie scale: 2002-03 salary plus 31.9% (1999 pick No. 4)",
+     "cap_hold_percent": 300.0,
+     "cap_hold_amount": 10672755,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Eric Piatkowski",
+     "bbr_id": "piatker01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 3000000,
+     "nba_seasons_before_2003_04": 9,
+     "minimum_salary_2003_04": 1000000,
+     "seasons_with_club": 9,
+     "bird_clock_seasons": 9,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 6000000,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Sean Rooks",
+     "bbr_id": "rooksse01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 2640000,
+     "nba_seasons_before_2003_04": 11,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 3,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 5280000,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Andre Miller",
+     "bbr_id": "millean02",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 2460709,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": true,
+     "qualifying_offer_amount": 3317036,
+     "qualifying_offer_basis": "rookie scale: 2002-03 salary plus 34.8% (1999 pick No. 8)",
+     "cap_hold_percent": 300.0,
+     "cap_hold_amount": 7382127,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-07-30",
+       "type": "TRADED",
+       "teams": "Cleveland Cavaliers -> Los Angeles Clippers"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Corey Maggette",
+     "bbr_id": "maggeco01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 2069764,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 3,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": true,
+     "qualifying_offer_amount": 2862484,
+     "qualifying_offer_basis": "rookie scale: 2002-03 salary plus 38.3% (1999 pick No. 13)",
+     "cap_hold_percent": 300.0,
+     "cap_hold_amount": 6209292,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Cherokee Parks",
+     "bbr_id": "parksch02",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 824935,
+     "nba_seasons_before_2003_04": 8,
+     "minimum_salary_2003_04": 938679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 989922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-22",
+       "type": "TRADED",
+       "teams": "Vancouver Grizzlies -> Washington Wizards"
+      },
+      {
+       "date": "2000-11-28",
+       "type": "TRADED",
+       "teams": "Washington Wizards -> Los Angeles Clippers"
+      },
+      {
+       "date": "2001-08-03",
+       "type": "SIGNED",
+       "teams": "San Antonio Spurs"
+      },
+      {
+       "date": "2002-09-27",
+       "type": "SIGNED",
+       "teams": "Los Angeles Clippers"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 56585916,
+   "unpriced_holds": 0
+  },
+  "Los Angeles Lakers": {
+   "code": "LAL",
+   "free_agents": [
+    {
+     "player": "Tracy Murray",
+     "bbr_id": "murratr01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 3740000,
+     "nba_seasons_before_2003_04": 11,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 7480000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-09-25",
+       "type": "SIGNED",
+       "teams": "Washington Wizards"
+      },
+      {
+       "date": "2001-01-12",
+       "type": "TRADED",
+       "teams": "Denver Nuggets -> Toronto Raptors"
+      },
+      {
+       "date": "2002-06-26",
+       "type": "TRADED",
+       "teams": "Toronto Raptors -> Los Angeles Lakers"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Samaki Walker",
+     "bbr_id": "walkesa01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1540000,
+     "nba_seasons_before_2003_04": 7,
+     "minimum_salary_2003_04": 876179,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 2002000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-06-29",
+       "type": "WAIVED",
+       "teams": "San Antonio Spurs"
+      },
+      {
+       "date": "2001-07-20",
+       "type": "SIGNED",
+       "teams": "Los Angeles Lakers"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Brian Shaw",
+     "bbr_id": "shawbr01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1030000,
+     "nba_seasons_before_2003_04": 14,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 4,
+     "bird_clock_seasons": 4,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 2060000,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Mark Madsen",
+     "bbr_id": "madsema01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 813000,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 3,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 1626000,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    }
+   ],
+   "total_cap_holds": 13168000,
+   "unpriced_holds": 0
+  },
+  "Memphis Grizzlies": {
+   "code": "MEM",
+   "free_agents": [
+    {
+     "player": "Mike Batiste",
+     "bbr_id": "batismi01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 349458,
+     "nba_seasons_before_2003_04": 1,
+     "minimum_salary_2003_04": 563679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 713679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 419350,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-09-30",
+       "type": "SIGNED",
+       "teams": "Los Angeles Clippers"
+      },
+      {
+       "date": "2002-10-28",
+       "type": "WAIVED",
+       "teams": "Los Angeles Clippers"
+      },
+      {
+       "date": "2002-10-30",
+       "type": "SIGNED",
+       "teams": "Memphis Grizzlies"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 419350,
+   "unpriced_holds": 0
+  },
+  "Miami Heat": {
+   "code": "MIA",
+   "free_agents": [
+    {
+     "player": "Alonzo Mourning",
+     "bbr_id": "mournal01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 20629800,
+     "nba_seasons_before_2003_04": 10,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 7,
+     "bird_clock_seasons": 7,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 21661290,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
+      "Limited to the maximum salary for his years of service."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Travis Best",
+     "bbr_id": "besttr01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1400000,
+     "nba_seasons_before_2003_04": 8,
+     "minimum_salary_2003_04": 938679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1680000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-02-19",
+       "type": "TRADED",
+       "teams": "Indiana Pacers -> Chicago Bulls"
+      },
+      {
+       "date": "2002-09-05",
+       "type": "SIGNED",
+       "teams": "Miami Heat"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Vladimir Stepania",
+     "bbr_id": "stepavl01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1350000,
+     "nba_seasons_before_2003_04": 5,
+     "minimum_salary_2003_04": 751179,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 1755000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-10-20",
+       "type": "WAIVED",
+       "teams": "New York Knicks"
+      },
+      {
+       "date": "2000-10-25",
+       "type": "SIGNED",
+       "teams": "Toronto Raptors"
+      },
+      {
+       "date": "2000-10-30",
+       "type": "WAIVED",
+       "teams": "Toronto Raptors"
+      },
+      {
+       "date": "2000-12-15",
+       "type": "SIGNED",
+       "teams": "New Jersey Nets"
+      },
+      {
+       "date": "2001-10-02",
+       "type": "SIGNED",
+       "teams": "Miami Heat"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Eddie House",
+     "bbr_id": "houseed01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 637435,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 3,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 813679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 1274870,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Sean Marks",
+     "bbr_id": "marksse01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 612435,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 796166,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-01-18",
+       "type": "SIGNED",
+       "teams": "Seattle SuperSonics"
+      },
+      {
+       "date": "2001-10-01",
+       "type": "SIGNED",
+       "teams": "Miami Heat"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Malik Allen",
+     "bbr_id": "allenma01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 512435,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 788679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 666166,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-07-20",
+       "type": "SIGNED",
+       "teams": "Miami Heat"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Mike James",
+     "bbr_id": "jamesmi01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 512435,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 788679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 666166,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-07-20",
+       "type": "SIGNED",
+       "teams": "Miami Heat"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 28499658,
+   "unpriced_holds": 0
+  },
+  "Milwaukee Bucks": {
+   "code": "MIL",
+   "free_agents": [
+    {
+     "player": "Gary Payton",
+     "bbr_id": "paytoga01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 12636117,
+     "nba_seasons_before_2003_04": 13,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 15344000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2003-02-20",
+       "type": "TRADED",
+       "teams": "Seattle SuperSonics -> Milwaukee Bucks"
+      }
+     ],
+     "flags": [
+      "Limited to the maximum salary for his years of service."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Rafer Alston",
+     "bbr_id": "alstora01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 37344,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 0,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 44813,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-09-06",
+       "type": "SIGNED",
+       "teams": "Golden State Warriors"
+      },
+      {
+       "date": "2002-10-23",
+       "type": "WAIVED",
+       "teams": "Golden State Warriors"
+      },
+      {
+       "date": "2003-01-17",
+       "type": "SIGNED",
+       "teams": "Toronto Raptors"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 15388813,
+   "unpriced_holds": 0
+  },
+  "Minnesota Timberwolves": {
+   "code": "MIN",
+   "free_agents": [
+    {
+     "player": "Radoslav Nesterovic",
+     "bbr_id": "nestera01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 2436813,
+     "nba_seasons_before_2003_04": 5,
+     "minimum_salary_2003_04": 751179,
+     "seasons_with_club": 5,
+     "bird_clock_seasons": 5,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 4873626,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Kendall Gill",
+     "bbr_id": "gillke01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1030000,
+     "nba_seasons_before_2003_04": 13,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1236000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-08-05",
+       "type": "SIGNED",
+       "teams": "Miami Heat"
+      },
+      {
+       "date": "2002-09-25",
+       "type": "SIGNED",
+       "teams": "Minnesota Timberwolves"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Rod Strickland",
+     "bbr_id": "stricro02",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1030000,
+     "nba_seasons_before_2003_04": 15,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1236000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-03-01",
+       "type": "WAIVED",
+       "teams": "Washington Wizards"
+      },
+      {
+       "date": "2001-03-05",
+       "type": "SIGNED",
+       "teams": "Portland Trail Blazers"
+      },
+      {
+       "date": "2001-10-22",
+       "type": "SIGNED",
+       "teams": "Miami Heat"
+      },
+      {
+       "date": "2002-10-27",
+       "type": "SIGNED",
+       "teams": "Minnesota Timberwolves"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Gary Trent",
+     "bbr_id": "trentga01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 824935,
+     "nba_seasons_before_2003_04": 8,
+     "minimum_salary_2003_04": 938679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 1072416,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-10-02",
+       "type": "SIGNED",
+       "teams": "Minnesota Timberwolves"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Loren Woods",
+     "bbr_id": "woodslo01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 662435,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "entered_league_in_window_no_signing_listed",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 828044,
+     "qualifying_offer_basis": "125% of 2002-03 salary",
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 861166,
+     "transactions_2000_07_to_2003_06": [],
+     "flags": [
+      "Entered the NBA after 2000-01 with no signing listed; seasons counted from his first season."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Felipe Lopez",
+     "bbr_id": "lopezfe01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 637435,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 1274870,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-22",
+       "type": "TRADED",
+       "teams": "Vancouver Grizzlies -> Washington Wizards"
+      },
+      {
+       "date": "2001-02-22",
+       "type": "WAIVED",
+       "teams": "Washington Wizards"
+      },
+      {
+       "date": "2001-02-28",
+       "type": "SIGNED",
+       "teams": "Minnesota Timberwolves"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html"
+     ]
+    },
+    {
+     "player": "Mike Wilks",
+     "bbr_id": "wilksmi01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 29832,
+     "nba_seasons_before_2003_04": 1,
+     "minimum_salary_2003_04": 563679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 713679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 35798,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-10-01",
+       "type": "SIGNED",
+       "teams": "Sacramento Kings"
+      },
+      {
+       "date": "2001-10-10",
+       "type": "WAIVED",
+       "teams": "Sacramento Kings"
+      },
+      {
+       "date": "2002-08-23",
+       "type": "SIGNED",
+       "teams": "Milwaukee Bucks"
+      },
+      {
+       "date": "2002-09-20",
+       "type": "WAIVED",
+       "teams": "Milwaukee Bucks"
+      },
+      {
+       "date": "2002-12-24",
+       "type": "SIGNED",
+       "teams": "Atlanta Hawks"
+      },
+      {
+       "date": "2003-01-07",
+       "type": "WAIVED",
+       "teams": "Atlanta Hawks"
+      },
+      {
+       "date": "2003-01-09",
+       "type": "SIGNED",
+       "teams": "Atlanta Hawks"
+      },
+      {
+       "date": "2003-02-12",
+       "type": "SIGNED",
+       "teams": "Minnesota Timberwolves"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 10589876,
+   "unpriced_holds": 0
+  },
+  "New Jersey Nets": {
+   "code": "NJ",
+   "free_agents": [
+    {
+     "player": "Jason Kidd",
+     "bbr_id": "kiddja01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 9265000,
+     "nba_seasons_before_2003_04": 9,
+     "minimum_salary_2003_04": 1000000,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 13152000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-07-18",
+       "type": "TRADED",
+       "teams": "New Jersey -> Phoenix"
+      }
+     ],
+     "flags": [
+      "Limited to the maximum salary for his years of service."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Lucious Harris",
+     "bbr_id": "harrilu01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 2640000,
+     "nba_seasons_before_2003_04": 10,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 6,
+     "bird_clock_seasons": 6,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 5280000,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Anthony Johnson",
+     "bbr_id": "johnsan02",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 699935,
+     "nba_seasons_before_2003_04": 6,
+     "minimum_salary_2003_04": 813679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 839922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-21",
+       "type": "SIGNED",
+       "teams": "Atlanta Hawks"
+      },
+      {
+       "date": "2002-01-07",
+       "type": "SIGNED",
+       "teams": "New Jersey Nets"
+      },
+      {
+       "date": "2002-09-30",
+       "type": "SIGNED",
+       "teams": "Cleveland Cavaliers"
+      },
+      {
+       "date": "2002-10-23",
+       "type": "WAIVED",
+       "teams": "Cleveland Cavaliers"
+      },
+      {
+       "date": "2002-10-25",
+       "type": "SIGNED",
+       "teams": "New Jersey Nets"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Brian Scalabrine",
+     "bbr_id": "scalabr01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 512435,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "entered_league_in_window_no_signing_listed",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 788679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 666166,
+     "transactions_2000_07_to_2003_06": [],
+     "flags": [
+      "Entered the NBA after 2000-01 with no signing listed; seasons counted from his first season.",
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Donny Marshall",
+     "bbr_id": "marshdo02",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": null,
+     "nba_seasons_before_2003_04": 5,
+     "minimum_salary_2003_04": 751179,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": null,
+     "cap_hold_amount": null,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-10-02",
+       "type": "SIGNED",
+       "teams": "New Jersey Nets"
+      },
+      {
+       "date": "2001-10-25",
+       "type": "WAIVED",
+       "teams": "New Jersey Nets"
+      },
+      {
+       "date": "2002-01-07",
+       "type": "SIGNED",
+       "teams": "New Jersey Nets"
+      },
+      {
+       "date": "2002-10-28",
+       "type": "WAIVED",
+       "teams": "New Jersey Nets"
+      },
+      {
+       "date": "2003-03-11",
+       "type": "SIGNED",
+       "teams": "New Jersey Nets"
+      }
+     ],
+     "flags": [
+      "No 2002-03 salary found; hold not computed."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 19938088,
+   "unpriced_holds": 1
+  },
+  "New Orleans Hornets": {
+   "code": "NO",
+   "free_agents": [
+    {
+     "player": "Kenny Anderson",
+     "bbr_id": "anderke01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 9185000,
+     "nba_seasons_before_2003_04": 12,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 13777500,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-07-22",
+       "type": "TRADED",
+       "teams": "Boston Celtics -> Seattle SuperSonics"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "P.J. Brown",
+     "bbr_id": "brownpj01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 7044800,
+     "nba_seasons_before_2003_04": 10,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 3,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 10567200,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
+      "2002-03 salary taken from Basketball-Reference salary data; not found under this name in the January 2003 salary list."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Jerome Moiso",
+     "bbr_id": "moisoje01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1681200,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 3362400,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-08-03",
+       "type": "TRADED",
+       "teams": "Boston Celtics -> Philadelphia 76ers"
+      },
+      {
+       "date": "2001-10-25",
+       "type": "TRADED",
+       "teams": "Philadelphia 76ers -> Charlotte Hornets"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Robert Pack",
+     "bbr_id": "packro01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": null,
+     "nba_seasons_before_2003_04": 12,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": null,
+     "cap_hold_amount": null,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-16",
+       "type": "TRADED",
+       "teams": "Dallas Mavericks -> Boston Celtics"
+      },
+      {
+       "date": "2002-03-18",
+       "type": "SIGNED",
+       "teams": "Minnesota Timberwolves"
+      },
+      {
+       "date": "2003-01-30",
+       "type": "SIGNED",
+       "teams": "New Orleans Hornets"
+      }
+     ],
+     "flags": [
+      "No 2002-03 salary found; hold not computed."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 27707100,
+   "unpriced_holds": 1
+  },
+  "New York Knicks": {
+   "code": "NY",
+   "free_agents": [
+    {
+     "player": "Mark Pope",
+     "bbr_id": "popema01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 637435,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 0,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 764922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-09-27",
+       "type": "SIGNED",
+       "teams": "Milwaukee Bucks"
+      },
+      {
+       "date": "2002-09-30",
+       "type": "SIGNED",
+       "teams": "New York Knicks"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Lee Nailon",
+     "bbr_id": "nailole01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 587435,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 813679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 704922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-10-23",
+       "type": "WAIVED",
+       "teams": "New Orleans Hornets"
+      },
+      {
+       "date": "2002-10-30",
+       "type": "SIGNED",
+       "teams": "New York Knicks"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Lavor Postell",
+     "bbr_id": "postela01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 587435,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 3,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 813679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 1174870,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": []
+    }
+   ],
+   "total_cap_holds": 2644714,
+   "unpriced_holds": 0
+  },
+  "Orlando Magic": {
+   "code": "ORL",
+   "free_agents": [
+    {
+     "player": "Darrell Armstrong",
+     "bbr_id": "armstda01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 4010000,
+     "nba_seasons_before_2003_04": 9,
+     "minimum_salary_2003_04": 1000000,
+     "seasons_with_club": 9,
+     "bird_clock_seasons": 9,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 8020000,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Chris Whitney",
+     "bbr_id": "whitnch01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 3000000,
+     "nba_seasons_before_2003_04": 10,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 6000000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-10-24",
+       "type": "TRADED",
+       "teams": "Denver Nuggets -> Washington Wizards"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Shawn Kemp",
+     "bbr_id": "kempsh01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1030000,
+     "nba_seasons_before_2003_04": 14,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1236000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-30",
+       "type": "TRADED",
+       "teams": "Cleveland Cavaliers -> Portland Trail Blazers"
+      },
+      {
+       "date": "2002-09-05",
+       "type": "SIGNED",
+       "teams": "Orlando Magic"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Jacque Vaughn",
+     "bbr_id": "vaughja01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 699935,
+     "nba_seasons_before_2003_04": 6,
+     "minimum_salary_2003_04": 813679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 839922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-07-30",
+       "type": "SIGNED",
+       "teams": "Atlanta Hawks"
+      },
+      {
+       "date": "2002-07-17",
+       "type": "SIGNED",
+       "teams": "Orlando Magic"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Olumide Oyedeji",
+     "bbr_id": "oyedeol01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 587435,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 813679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 704922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-07-21",
+       "type": "SIGNED",
+       "teams": "Orlando Magic"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Pat Burke",
+     "bbr_id": "burkepa01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 349458,
+     "nba_seasons_before_2003_04": 1,
+     "minimum_salary_2003_04": 563679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 713679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 419350,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-09-25",
+       "type": "SIGNED",
+       "teams": "Orlando Magic"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 17220194,
+   "unpriced_holds": 0
+  },
+  "Philadelphia 76ers": {
+   "code": "PHI",
+   "free_agents": [
+    {
+     "player": "Derrick Coleman",
+     "bbr_id": "colemde01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 9380000,
+     "nba_seasons_before_2003_04": 13,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 14070000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-10-25",
+       "type": "TRADED",
+       "teams": "Charlotte Hornets -> Philadelphia 76ers"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Tyrone Hill",
+     "bbr_id": "hillty01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 6600000,
+     "nba_seasons_before_2003_04": 13,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 7920000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-08-03",
+       "type": "TRADED",
+       "teams": "Philadelphia 76ers -> Cleveland Cavaliers"
+      },
+      {
+       "date": "2003-02-27",
+       "type": "WAIVED",
+       "teams": "Cleveland Cavaliers"
+      },
+      {
+       "date": "2003-03-03",
+       "type": "SIGNED",
+       "teams": "Philadelphia 76ers"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Kenny Thomas",
+     "bbr_id": "thomake01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 1557684,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": true,
+     "qualifying_offer_amount": 2255526,
+     "qualifying_offer_basis": "rookie scale: 2002-03 salary plus 44.8% (1999 pick No. 22)",
+     "cap_hold_percent": 300.0,
+     "cap_hold_amount": 4673052,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-12-18",
+       "type": "TRADED",
+       "teams": "Houston Rockets -> Philadelphia 76ers"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Brian Skinner",
+     "bbr_id": "skinnbr01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 637435,
+     "nba_seasons_before_2003_04": 5,
+     "minimum_salary_2003_04": 751179,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 764922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-06-27",
+       "type": "TRADED",
+       "teams": "Los Angeles Clippers -> Chicago Bulls"
+      },
+      {
+       "date": "2001-07-18",
+       "type": "TRADED",
+       "teams": "Chicago -> Toronto"
+      },
+      {
+       "date": "2002-08-27",
+       "type": "SIGNED",
+       "teams": "Philadelphia 76ers"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 27427974,
+   "unpriced_holds": 0
+  },
+  "Phoenix Suns": {
+   "code": "PHX",
+   "free_agents": [
+    {
+     "player": "Randy Brown",
+     "bbr_id": "brownra02",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 2700000,
+     "nba_seasons_before_2003_04": 12,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 3375000,
+     "qualifying_offer_basis": "125% of 2002-03 salary",
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 5400000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-03",
+       "type": "SIGNED",
+       "teams": "Boston Celtics"
+      },
+      {
+       "date": "2002-02-20",
+       "type": "TRADED",
+       "teams": "Boston Celtics -> Phoenix Suns"
+      }
+     ],
+     "flags": [
+      "Listed as restricted, but the FAQ limits restricted free agency to fourth-year rookie scale players and veterans with three or fewer seasons. The published list may be wrong for this player."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Scott Williams",
+     "bbr_id": "willisc01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1030000,
+     "nba_seasons_before_2003_04": 13,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1236000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-10-22",
+       "type": "TRADED",
+       "teams": "Denver Nuggets -> Milwaukee Bucks"
+      },
+      {
+       "date": "2002-07-19",
+       "type": "SIGNED",
+       "teams": "Phoenix Suns"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Dan Langhi",
+     "bbr_id": "langhda01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 587435,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 813679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 704922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-09-27",
+       "type": "SIGNED",
+       "teams": "Phoenix Suns"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Jake Voskuhl",
+     "bbr_id": "voskuja01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 587435,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 813679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 1174870,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-10-29",
+       "type": "TRADED",
+       "teams": "Chicago Bulls -> Phoenix Suns"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Alton Ford",
+     "bbr_id": "fordal02",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 512435,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "entered_league_in_window_no_signing_listed",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 788679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 666166,
+     "transactions_2000_07_to_2003_06": [],
+     "flags": [
+      "Entered the NBA after 2000-01 with no signing listed; seasons counted from his first season.",
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 9181958,
+   "unpriced_holds": 0
+  },
+  "Portland Trail Blazers": {
+   "code": "POR",
+   "free_agents": [
+    {
+     "player": "Scottie Pippen",
+     "bbr_id": "pippesc01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 19727524,
+     "nba_seasons_before_2003_04": 16,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 4,
+     "bird_clock_seasons": 4,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 20713900,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
+      "Limited to the maximum salary for his years of service."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Antonio Daniels",
+     "bbr_id": "daniean01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 3375000,
+     "nba_seasons_before_2003_04": 6,
+     "minimum_salary_2003_04": 813679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 6750000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-08-05",
+       "type": "TRADED",
+       "teams": "San Antonio Spurs -> Portland Trail Blazers"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Chris Dudley",
+     "bbr_id": "dudlech02",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1030000,
+     "nba_seasons_before_2003_04": 16,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 1339000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-09-20",
+       "type": "TRADED",
+       "teams": "New York Knicks -> Phoenix Suns"
+      },
+      {
+       "date": "2001-07-18",
+       "type": "TRADED",
+       "teams": "New Jersey Nets -> Phoenix Suns"
+      },
+      {
+       "date": "2001-08-15",
+       "type": "WAIVED",
+       "teams": "New Jersey Nets"
+      },
+      {
+       "date": "2001-09-21",
+       "type": "SIGNED",
+       "teams": "Portland Trail Blazers"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Charles Smith",
+     "bbr_id": "smithch04",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 637435,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 828666,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-08-02",
+       "type": "SIGNED",
+       "teams": "San Antonio Spurs"
+      },
+      {
+       "date": "2002-08-05",
+       "type": "TRADED",
+       "teams": "San Antonio Spurs -> Portland Trail Blazers"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown.",
+      "2002-03 salary taken from Basketball-Reference salary data; not found under this name in the January 2003 salary list."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 29631566,
+   "unpriced_holds": 0
+  },
+  "Sacramento Kings": {
+   "code": "SAC",
+   "free_agents": [
+    {
+     "player": "Keon Clark",
+     "bbr_id": "clarkke01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 4546000,
+     "nba_seasons_before_2003_04": 5,
+     "minimum_salary_2003_04": 751179,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 5455200,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-01-12",
+       "type": "TRADED",
+       "teams": "Denver Nuggets -> Toronto Raptors"
+      },
+      {
+       "date": "2002-08-14",
+       "type": "SIGNED",
+       "teams": "Sacramento Kings"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Brent Price",
+     "bbr_id": "pricebr01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 4048000,
+     "nba_seasons_before_2003_04": 9,
+     "minimum_salary_2003_04": 1000000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 8096000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-06-27",
+       "type": "TRADED",
+       "teams": "Vancouver Grizzlies -> Sacramento Kings"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html"
+     ]
+    },
+    {
+     "player": "Mateen Cleaves",
+     "bbr_id": "cleavma01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1441440,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 2882880,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-09-07",
+       "type": "TRADED",
+       "teams": "Detroit Pistons -> Sacramento Kings"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Jim Jackson",
+     "bbr_id": "jacksji01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 791341,
+     "nba_seasons_before_2003_04": 11,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 949609,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-01-02",
+       "type": "TRADED",
+       "teams": "Atlanta Hawks -> Cleveland Cavaliers"
+      },
+      {
+       "date": "2001-12-02",
+       "type": "SIGNED",
+       "teams": "Miami Heat"
+      },
+      {
+       "date": "2002-11-30",
+       "type": "SIGNED",
+       "teams": "Sacramento Kings"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Damon Jones",
+     "bbr_id": "jonesda01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 637435,
+     "nba_seasons_before_2003_04": 5,
+     "minimum_salary_2003_04": 751179,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 764922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-08",
+       "type": "SIGNED",
+       "teams": "Vancouver Grizzlies"
+      },
+      {
+       "date": "2001-10-01",
+       "type": "SIGNED",
+       "teams": "Houston Rockets"
+      },
+      {
+       "date": "2002-10-18",
+       "type": "SIGNED",
+       "teams": "Sacramento Kings"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 18148611,
+   "unpriced_holds": 0
+  },
+  "San Antonio Spurs": {
+   "code": "SA",
+   "free_agents": [
+    {
+     "player": "Steve Smith",
+     "bbr_id": "smithst01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 9900000,
+     "nba_seasons_before_2003_04": 12,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 14850000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-07-25",
+       "type": "TRADED",
+       "teams": "Portland Trail Blazers -> San Antonio Spurs"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Steve Kerr",
+     "bbr_id": "kerrst01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 2625000,
+     "nba_seasons_before_2003_04": 15,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 5250000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-07-25",
+       "type": "TRADED",
+       "teams": "San Antonio -> Portland"
+      },
+      {
+       "date": "2002-08-05",
+       "type": "TRADED",
+       "teams": "Portland Trail Blazers -> San Antonio Spurs"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Speedy Claxton",
+     "bbr_id": "claxtsp01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1076400,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "entered_league_in_window_no_signing_listed",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 1399320,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-06-26",
+       "type": "TRADED",
+       "teams": "Philadelphia 76ers -> San Antonio Spurs"
+      }
+     ],
+     "flags": [
+      "Entered the NBA after 2000-01 with no signing listed; seasons counted from his first season."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Kevin Willis",
+     "bbr_id": "willike02",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1030000,
+     "nba_seasons_before_2003_04": 18,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1236000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-01-12",
+       "type": "TRADED",
+       "teams": "Toronto Raptors -> Denver Nuggets"
+      },
+      {
+       "date": "2001-10-22",
+       "type": "TRADED",
+       "teams": "Denver Nuggets -> Milwaukee Bucks"
+      },
+      {
+       "date": "2002-08-26",
+       "type": "SIGNED",
+       "teams": "San Antonio Spurs"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Stephen Jackson",
+     "bbr_id": "jacksst02",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 699935,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 909916,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-10-02",
+       "type": "SIGNED",
+       "teams": "New Jersey Nets"
+      },
+      {
+       "date": "2001-08-02",
+       "type": "SIGNED",
+       "teams": "San Antonio Spurs"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Mengke Bateer",
+     "bbr_id": "bateeme01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 512453,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 788679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 666189,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-10-03",
+       "type": "SIGNED",
+       "teams": "Denver Nuggets"
+      },
+      {
+       "date": "2002-10-01",
+       "type": "TRADED",
+       "teams": "Denver Nuggets -> Detroit Pistons"
+      },
+      {
+       "date": "2002-10-03",
+       "type": "TRADED",
+       "teams": "Detroit Pistons -> San Antonio Spurs"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 24311425,
+   "unpriced_holds": 0
+  },
+  "Seattle SuperSonics": {
+   "code": "SEA",
+   "free_agents": [
+    {
+     "player": "Elden Campbell",
+     "bbr_id": "campbel01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 8050000,
+     "nba_seasons_before_2003_04": 13,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "no_signing_or_waiver_since_july_2000",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 12075000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2003-02-20",
+       "type": "TRADED",
+       "teams": "New Orleans Hornets -> Seattle SuperSonics"
+      }
+     ],
+     "flags": [
+      "Not found in every season page that was read; the event list may be incomplete."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Kevin Ollie",
+     "bbr_id": "ollieke01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1000000,
+     "nba_seasons_before_2003_04": 6,
+     "minimum_salary_2003_04": 813679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1200000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-10-03",
+       "type": "SIGNED",
+       "teams": "New Jersey Nets"
+      },
+      {
+       "date": "2000-12-15",
+       "type": "WAIVED",
+       "teams": "New Jersey Nets"
+      },
+      {
+       "date": "2000-12-22",
+       "type": "SIGNED",
+       "teams": "Philadelphia 76ers"
+      },
+      {
+       "date": "2001-09-24",
+       "type": "SIGNED",
+       "teams": "Chicago Bulls"
+      },
+      {
+       "date": "2002-09-06",
+       "type": "SIGNED",
+       "teams": "Milwaukee Bucks"
+      },
+      {
+       "date": "2003-02-20",
+       "type": "TRADED",
+       "teams": "Milwaukee Bucks -> Seattle SuperSonics"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Reggie Evans",
+     "bbr_id": "evansre01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 349458,
+     "nba_seasons_before_2003_04": 1,
+     "minimum_salary_2003_04": 563679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 713679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 419350,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-09-30",
+       "type": "SIGNED",
+       "teams": "Seattle SuperSonics"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 13694350,
+   "unpriced_holds": 0
+  },
+  "Toronto Raptors": {
+   "code": "TOR",
+   "free_agents": [
+    {
+     "player": "Mamadou N'diaye",
+     "bbr_id": "ndiayma02",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 848520,
+     "nba_seasons_before_2003_04": 3,
+     "minimum_salary_2003_04": 663679,
+     "seasons_with_club": 3,
+     "bird_clock_seasons": 3,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 200.0,
+     "cap_hold_amount": 1697040,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Voshon Lenard",
+     "bbr_id": "lenarvo01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 824935,
+     "nba_seasons_before_2003_04": 8,
+     "minimum_salary_2003_04": 938679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 989922,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-10-21",
+       "type": "SIGNED",
+       "teams": "Toronto Raptors"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 2686962,
+   "unpriced_holds": 0
+  },
+  "Utah Jazz": {
+   "code": "UTAH",
+   "free_agents": [
+    {
+     "player": "Karl Malone",
+     "bbr_id": "malonka01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 19250000,
+     "nba_seasons_before_2003_04": 18,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 18,
+     "bird_clock_seasons": 18,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 150.0,
+     "cap_hold_amount": 20212500,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
+      "Limited to the maximum salary for his years of service."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Mark Jackson",
+     "bbr_id": "jacksma01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1030000,
+     "nba_seasons_before_2003_04": 16,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1236000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-08-11",
+       "type": "SIGNED",
+       "teams": "Toronto Raptors"
+      },
+      {
+       "date": "2002-06-26",
+       "type": "TRADED",
+       "teams": "New York Knicks -> Denver Nuggets"
+      },
+      {
+       "date": "2002-09-27",
+       "type": "WAIVED",
+       "teams": "Denver Nuggets"
+      },
+      {
+       "date": "2002-10-02",
+       "type": "SIGNED",
+       "teams": "Utah Jazz"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Calbert Cheaney",
+     "bbr_id": "cheanca01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1000000,
+     "nba_seasons_before_2003_04": 10,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1200000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2000-10-16",
+       "type": "TRADED",
+       "teams": "Boston Celtics -> Denver Nuggets"
+      },
+      {
+       "date": "2002-07-25",
+       "type": "SIGNED",
+       "teams": "Utah Jazz"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Tony Massenburg",
+     "bbr_id": "masseto01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 741098,
+     "nba_seasons_before_2003_04": 11,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 889318,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-12-15",
+       "type": "SIGNED",
+       "teams": "Utah Jazz"
+      }
+     ],
+     "flags": [
+      "Not found in every season page that was read; the event list may be incomplete."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Scott Padgett",
+     "bbr_id": "padgesc01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 612435,
+     "nba_seasons_before_2003_04": 4,
+     "minimum_salary_2003_04": 688679,
+     "seasons_with_club": 4,
+     "bird_clock_seasons": 4,
+     "bird_class": "bird",
+     "bird_basis": "seasons_with_club",
+     "rookie_scale_fourth_year": true,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 300.0,
+     "cap_hold_amount": 1837305,
+     "transactions_2000_07_to_2003_06": null,
+     "flags": [
+      "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": []
+    },
+    {
+     "player": "Carlos Arroyo",
+     "bbr_id": "arroyca01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 546000,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 788679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 655200,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-09-28",
+       "type": "SIGNED",
+       "teams": "Toronto Raptors"
+      },
+      {
+       "date": "2002-01-08",
+       "type": "WAIVED",
+       "teams": "Toronto Raptors"
+      },
+      {
+       "date": "2002-03-07",
+       "type": "SIGNED",
+       "teams": "Denver Nuggets"
+      },
+      {
+       "date": "2002-09-10",
+       "type": "SIGNED",
+       "teams": "Utah Jazz"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 26030323,
+   "unpriced_holds": 0
+  },
+  "Washington Wizards": {
+   "code": "WSH",
+   "free_agents": [
+    {
+     "player": "Tyronn Lue",
+     "bbr_id": "luety01",
+     "status": "free_agent_unlisted",
+     "prior_salary_2002_03": 1870000,
+     "nba_seasons_before_2003_04": 5,
+     "minimum_salary_2003_04": 751179,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 2,
+     "bird_class": "early_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 130.0,
+     "cap_hold_amount": 2431000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-07-18",
+       "type": "SIGNED",
+       "teams": "Washington Wizards"
+      }
+     ],
+     "flags": [
+      "Not on the published free agent list; found from his contract history."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
+     ]
+    },
+    {
+     "player": "Bryon Russell",
+     "bbr_id": "russebr01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1400000,
+     "nba_seasons_before_2003_04": 10,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1680000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2002-09-10",
+       "type": "SIGNED",
+       "teams": "Washington Wizards"
+      }
+     ],
+     "flags": [
+      "Not found in every season page that was read; the event list may be incomplete."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Charles Oakley",
+     "bbr_id": "oaklech01",
+     "status": "free_agent_unrestricted",
+     "prior_salary_2002_03": 1030000,
+     "nba_seasons_before_2003_04": 18,
+     "minimum_salary_2003_04": 1070000,
+     "seasons_with_club": 1,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": null,
+     "qualifying_offer_basis": null,
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 1236000,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-07-18",
+       "type": "TRADED",
+       "teams": "Toronto Raptors -> Chicago Bulls"
+      },
+      {
+       "date": "2002-10-11",
+       "type": "SIGNED",
+       "teams": "Washington Wizards"
+      }
+     ],
+     "flags": [
+      "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
+     ],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    },
+    {
+     "player": "Bobby Simmons",
+     "bbr_id": "simmobo01",
+     "status": "free_agent_restricted",
+     "prior_salary_2002_03": 337457,
+     "nba_seasons_before_2003_04": 2,
+     "minimum_salary_2003_04": 638679,
+     "seasons_with_club": 2,
+     "bird_clock_seasons": 1,
+     "bird_class": "non_bird",
+     "bird_basis": "last_free_agent_signing_or_waiver",
+     "rookie_scale_fourth_year": false,
+     "qualifying_offer_amount": 788679,
+     "qualifying_offer_basis": "2003-04 minimum for his years of service plus $150,000",
+     "cap_hold_percent": 120.0,
+     "cap_hold_amount": 404948,
+     "transactions_2000_07_to_2003_06": [
+      {
+       "date": "2001-06-27",
+       "type": "TRADED",
+       "teams": "Seattle SuperSonics -> Washington Wizards"
+      },
+      {
+       "date": "2002-09-11",
+       "type": "TRADED",
+       "teams": "Detroit Pistons -> Washington Wizards"
+      },
+      {
+       "date": "2002-09-24",
+       "type": "WAIVED",
+       "teams": "Detroit Pistons"
+      },
+      {
+       "date": "2002-10-01",
+       "type": "SIGNED",
+       "teams": "Washington Wizards"
+      },
+      {
+       "date": "2002-10-28",
+       "type": "WAIVED",
+       "teams": "Washington Wizards"
+      },
+      {
+       "date": "2002-12-27",
+       "type": "SIGNED",
+       "teams": "Washington Wizards"
+      }
+     ],
+     "flags": [],
+     "sources": [
+      "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
+      "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
+     ]
+    }
+   ],
+   "total_cap_holds": 5751948,
+   "unpriced_holds": 0
+  }
+ }
+}
