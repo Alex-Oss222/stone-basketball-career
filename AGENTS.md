@@ -118,7 +118,7 @@ Relay or another runner may simulate a game, but raw external output is not cano
 
 ## Game engine
 
-Games are played by the engine on Railway. To play a game, write `Game_N.request.json` next to the scheduled `Game_N.md` (format in `runtime/game_requests.py`), validate, commit and push to the branch Railway tracks. Read the result from `/games/<event_id>/box` and write it into the game note; it is canonical only then. Never pass a seed, never resolve a game with the kernel directly, and never edit a played game's request to get a different result. Do not use a season's own final averages to calibrate it. See `runtime/README.md`.
+Games are played by the engine on Railway. To play a game, write `Game_N.request.json` next to the scheduled `Game_N.md` (format in `runtime/game_requests.py`), validate, commit and push to the branch Railway tracks. Read the result from `/games/<event_id>/box` and write it into the game note; it is canonical only then. Never pass a seed, never resolve a game with the kernel directly, and never edit a played game's request to get a different result. Do not use a season's own final averages to calibrate it. League environment policy (chosen by the user): each season is calibrated on the **real** league averages of the season before it, stored as `library/<year>/league/nba_<YYYY>_<YY>_league_environment.json`, not on the simulated league's averages. These describe the era's style of play, not any team's results. See `runtime/README.md`.
 
 ## After an event
 
