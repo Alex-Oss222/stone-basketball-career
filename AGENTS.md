@@ -50,6 +50,16 @@ Do not import:
 
 A later source may be used to reconstruct a contract term that already existed, but not to reveal a future choice or result to the simulation.
 
+### Talent-trajectory exception (option C, chosen by the user)
+
+Real players' on-court ability may follow their real careers. The engine may read a real player's season rates from `library/careers/nba_player_careers.json` as his expected ability for that season, with a development swing drawn by the engine around it (`runtime/trajectories.py`). This exception covers ability rates only, and only inside the engine:
+
+- never results, standings, statistics totals, awards, injuries, suspensions, contracts, trades, signings, coaching changes or any team decision;
+- never shown on player cards, scouting notes or anything the AI/GM or the user reads before the season is played; cards keep using evidence available on their date;
+- never applied to Wade, whose career is alternate history.
+
+Every season's development swing is journaled by the engine like a game draw and cannot be chosen or re-rolled.
+
 `00_Team/Finances/league_cap_history.json` intentionally stores the real eight-season cap sequence, 2003-04 through 2010-11, for continuity. Treat only a cap that has reached its verified publication/activation gate as live front-office knowledge; a missing publication date blocks live use. Never use a future row to influence an earlier contract, trade or free-agency decision. The cap sheet projects existing obligations only. Keep signed salary, draft holds, conditional options and unresolved charges distinct; a zero scheduled commitment is not a zero-cost future roster or usable cap room.
 
 ## League source data

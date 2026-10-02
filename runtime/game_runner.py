@@ -6,6 +6,8 @@ from . import KERNEL_VERSION
 from .era import allowed_game_types, environment_for, rules_for, season_for_date
 from .kernel import resolve_game, team_errors, team_packet, validate_result
 from .player_stats import ROOT, MODEL_VERSION, load_rating_index
+from .trajectories import (FIRST_SEASON, TRAJECTORY_MODEL_VERSION, develop, development_refs, season_list)
+from dataclasses import replace
 
 ENTROPY_DOMAIN = b"stone-basketball-career/event-entropy/v1\0"
 VENUES = ("home", "neutral")
@@ -35,7 +37,14 @@ def build_game_packet(home, away, *, event_id, game_date, game_type="regular", v
             raise ValueError("duplicate Basketball-Reference IDs in game inputs")
         index = load_rating_index(game_date, season, root)
         for profile in profiles:
-            if index is None or profile != index.engine_profile(profile["bbr_id"]):
+            expected = index.engine_profile(profile["bbr_id"]) if index is not None else None
+            if expected and "development" in profile:
+                # A developed trajectory must equal the expected path moved by its journaled draws.
+                refs = profile["development"]
+                if sorted(refs) != season_list(FIRST_SEASON, season):
+                    raise ValueError("trajectory profile lacks its journaled development draws")
+                expected = dict(expected, rates=develop(expected["rates"], refs), development=refs)
+            if profile != expected:
                 raise ValueError("statistical profile differs from the dated, generated source")
         if environment.get("player_rating_model") != MODEL_VERSION or environment.get("player_rate_baselines") != index.data["rate_baselines"]:
             raise ValueError("league environment and player rating model do not match")
@@ -62,8 +71,11 @@ def run_game(home, away, *, event_id, game_date, journal, game_type="regular", v
     inputs reproduces the same game; the same event with changed inputs is
     refused by the journal.
     """
-    packet, rules, environment = build_game_packet(
-        home, away, event_id=event_id, game_date=game_date, game_type=game_type, venue=venue, root=root)
+    home, away, packet, rules, environment = freeze_inputs(
+        home, away, journal, event_id=event_id, game_date=game_date, game_type=game_type, venue=venue, root=root)
+    if any(p.stat_profile.get("model_version") == TRAJECTORY_MODEL_VERSION and "development" not in p.stat_profile
+           for team in (home, away) for p in team.players):
+        raise RuntimeError("trajectory player reached the journal without a development draw")
     result_ref = journal.close_event(packet)  # durable closure precedes the draw
     result = resolve_game(home, away, entropy=entropy_from_ref(result_ref), event_id=event_id,
                           rules=rules, environment=environment, game_type=game_type, venue=venue)
@@ -73,6 +85,31 @@ def run_game(home, away, *, event_id, game_date, journal, game_type="regular", v
     result["game_date"] = game_date
     result["kernel"] = KERNEL_VERSION
     return result
+
+
+def freeze_inputs(home, away, journal, **kwargs):
+    """Apply journaled development draws, then build the packet exactly as it is journaled.
+
+    Shared by run_game and the service's replay check, so a redeploy recomputes
+    the same packet digest for a game that is already played.
+    """
+    season = season_for_date(kwargs["game_date"])
+    # Option C: real-career players get this season's journaled development swing before inputs freeze.
+    home, away = (_developed(team, season, journal) for team in (home, away))
+    packet, rules, environment = build_game_packet(home, away, **kwargs)
+    return home, away, packet, rules, environment
+
+
+def _developed(team, season, journal):
+    players = []
+    for p in team.players:
+        profile = p.stat_profile
+        if profile.get("model_version") == TRAJECTORY_MODEL_VERSION and "development" not in profile:
+            refs = development_refs(journal, profile["bbr_id"], season)
+            profile = dict(profile, rates=develop(profile["rates"], refs), development=refs)
+            p = replace(p, stat_profile=profile)
+        players.append(p)
+    return replace(team, players=tuple(players))
 
 
 def architecture_errors():

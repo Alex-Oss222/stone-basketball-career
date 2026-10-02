@@ -140,7 +140,7 @@ class Store:
 def play_requests(store, root):
     """Play every game request in the repository. Returns {event_id or path: status}."""
     from .game_requests import find_requests, load_request
-    from .game_runner import build_game_packet, run_game
+    from .game_runner import freeze_inputs, run_game
 
     status = {}
     for path in find_requests(root):
@@ -148,7 +148,7 @@ def play_requests(store, root):
         try:
             home, away, kwargs = load_request(path, root)
             event_id = kwargs["event_id"]
-            packet_hash = hashlib.sha256(canonical(build_game_packet(home, away, **kwargs)[0])).hexdigest()
+            packet_hash = hashlib.sha256(canonical(freeze_inputs(home, away, store, **kwargs)[2])).hexdigest()
             existing = store.result(event_id)
             if existing is None:
                 result = run_game(home, away, journal=store, **kwargs)

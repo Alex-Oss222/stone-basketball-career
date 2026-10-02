@@ -233,8 +233,9 @@ def build_ratings(data, data_hash):
 class RatingIndex:
     """Veteran profiles, plus rookie estimates when supplied (same rate keys and baselines)."""
 
-    def __init__(self, data, rookies=None):
+    def __init__(self, data, rookies=None, trajectories=None, season=None):
         self.data = data
+        self.trajectories, self.season = trajectories, season
         self.players = {pid: dict(p, model_version=data["model_version"], as_of=data["as_of"],
                                   source_sha256=data["source_sha256"]) for pid, p in data["players"].items()}
         for pid, p in ((rookies or {}).get("players") or {}).items():
@@ -242,6 +243,10 @@ class RatingIndex:
                 raise ValueError(f"{p['player_name']} has both a veteran and a rookie profile")
             self.players[pid] = dict(p, model_version=rookies["model_version"], as_of=rookies["as_of"],
                                      source_sha256=rookies["source_sha256"])
+        if trajectories is not None:
+            # Players known only from real careers (later draftees) still need a name lookup.
+            for pid, p in trajectories.data["players"].items():
+                self.players.setdefault(pid, {"player_name": p["player_name"], "bbr_id": pid, "trajectory_only": True})
         self.aliases = {}
         for pid, p in self.players.items():
             self.aliases.setdefault(alias(p["player_name"]), set()).add(pid)
@@ -261,6 +266,10 @@ class RatingIndex:
     def engine_profile(self, player_id, bbr_id=None):
         p = self.lookup(player_id, bbr_id)
         if p is None:
+            return {}
+        if self.trajectories is not None and self.trajectories.has(p["bbr_id"], self.season):
+            return self.trajectories.expected_profile(p["bbr_id"], self.season, self.data["rate_baselines"])
+        if p.get("trajectory_only"):
             return {}
         return {"bbr_id": p["bbr_id"], "model_version": p["model_version"],
                 "as_of": p["as_of"], "season_end_year": p["season_end_year"],
@@ -288,7 +297,8 @@ def load_rating_index(game_date, season, root=ROOT):
                 or rookies["veteran_model_version"] != MODEL_VERSION
                 or rookies["source_sha256"] != sha256(Path(root)/PROSPECTS_PATH)):
             raise ValueError("rookie estimates are stale or not yet available; rebuild from the current source")
-    return RatingIndex(data, rookies)
+    from .trajectories import load_trajectories
+    return RatingIndex(data, rookies, load_trajectories(root), season)
 
 
 def repository_rating_errors(root=ROOT):

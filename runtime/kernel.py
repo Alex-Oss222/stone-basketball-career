@@ -18,6 +18,7 @@ import random
 from .packets import canonical
 from .player_stats import MODEL_VERSION, RATE_KEYS
 from .prospects import ROOKIE_MODEL_VERSION
+from .trajectories import TRAJECTORY_MODEL_VERSION
 
 POSITIONS = ("PG", "SG", "SF", "PF", "C")
 RATING_KEYS = (
@@ -79,9 +80,12 @@ def team_errors(team, rules):
                 errors.append(f"{p.player_id}: rating {key} must be an integer {RATING_MIN}-{RATING_MAX}")
         if p.stat_profile:
             profile = p.stat_profile
-            if (set(profile) != {"bbr_id", "model_version", "as_of", "season_end_year", "source_sha256", "rates"}
-                    or profile.get("model_version") not in (MODEL_VERSION, ROOKIE_MODEL_VERSION)
-                    or profile.get("season_end_year") != 2003):
+            base_keys = {"bbr_id", "model_version", "as_of", "season_end_year", "source_sha256", "rates"}
+            trajectory = profile.get("model_version") == TRAJECTORY_MODEL_VERSION
+            if (set(profile) - {"development"} != base_keys or ("development" in profile and not trajectory)
+                    or profile.get("model_version") not in (MODEL_VERSION, ROOKIE_MODEL_VERSION, TRAJECTORY_MODEL_VERSION)
+                    or (not trajectory and profile.get("season_end_year") != 2003)
+                    or (trajectory and profile.get("season_end_year") != int(rules["season"][:4]) + 1)):
                 errors.append(f"{p.player_id}: invalid statistical profile metadata")
             rates = profile.get("rates", {})
             if not isinstance(rates, dict) or set(rates) != set(RATE_KEYS):

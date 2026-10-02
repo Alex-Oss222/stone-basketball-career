@@ -28,11 +28,21 @@ class RookieEstimateTests(unittest.TestCase):
         self.assertEqual(rookie_errors(ROOT), [])
 
     def test_wade_record_matches_profile_totals(self):
+        """The prospect record must follow the career profile whenever the profile is revised."""
+        import re
+        profile = (ROOT / "career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md").read_text(encoding="utf-8")
+        line = re.search(r"College totals: ([\d,]+) points, ([\d,]+) rebounds, ([\d,]+) assists, ([\d,]+) steals, "
+                         r"([\d,]+) blocks and ([\d,]+) turnovers.*?plays ([\d,]+) minutes", profile)
+        stated = dict(zip(("points", "rebounds", "assists", "steals", "blocks", "turnovers", "minutes"),
+                          (int(x.replace(",", "")) for x in line.groups())))
         seasons = self.prospects["records"][0]["seasons"]
-        totals = {k: sum(s[k] for s in seasons) for k in ("games", "minutes", "points", "rebounds", "assists",
-                                                           "steals", "blocks", "turnovers")}
-        self.assertEqual(totals, {"games": 98, "minutes": 3178, "points": 1753, "rebounds": 539,
-                                  "assists": 467, "steals": 173, "blocks": 99, "turnovers": 276})
+        self.assertEqual({k: sum(s[k] for s in seasons) for k in stated}, stated)
+        for season in seasons:
+            row = re.search(rf"\| {season['season']} \| (\d+)/(\d+) \| [\d.]+ \| (\d+)/(\d+) \| [\d.]+ \| (\d+)/(\d+) \| [\d.]+ \| (\d+) \|", profile)
+            self.assertEqual([int(x) for x in row.groups()],
+                             [season[k] for k in ("field_goals_made", "field_goals_attempted", "three_pointers_made",
+                                                  "three_pointers_attempted", "free_throws_made",
+                                                  "free_throws_attempted", "points")])
 
     def test_estimates_sit_between_translation_and_baseline(self):
         wade = build_rookie_estimates(self.prospects, "x", self.veterans)["players"]["wadedw01"]
