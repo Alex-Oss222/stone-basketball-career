@@ -40,6 +40,10 @@ class FrontOfficeTests(unittest.TestCase):
     def test_june30_package_fails_closed_without_years_of_service(self):
         tmp, root = copy_repo()
         self.addCleanup(tmp.cleanup)
+        sheet_path = root / "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+        sheet = json.loads(sheet_path.read_text())
+        next(p for p in sheet["players"] if p["player"] == "Anthony Carter").pop("years_of_service", None)
+        sheet_path.write_text(json.dumps(sheet))
         with self.assertRaisesRegex(ValueError, "years_of_service"):
             run_june30.build(root)
 
