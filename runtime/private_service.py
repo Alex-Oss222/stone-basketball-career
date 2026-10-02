@@ -63,8 +63,14 @@ class Store:
                 c.execute("INSERT INTO meta VALUES('seed', ?)", (secrets.token_bytes(32),))
             stored = c.execute("SELECT value FROM meta WHERE key='kernel'").fetchone()
             if stored and stored[0].decode() != KERNEL_VERSION:
-                c.execute("INSERT INTO kernel_transitions(previous_kernel, next_kernel, created) VALUES(?,?,?)",
-                          (stored[0].decode(), KERNEL_VERSION, int(time.time())))
+                # A store created by the first engine version has a required `snapshot` column here.
+                columns = {row[1] for row in c.execute("PRAGMA table_info(kernel_transitions)")}
+                if "snapshot" in columns:
+                    c.execute("INSERT INTO kernel_transitions(previous_kernel, next_kernel, snapshot, created) "
+                              "VALUES(?,?,?,?)", (stored[0].decode(), KERNEL_VERSION, "", int(time.time())))
+                else:
+                    c.execute("INSERT INTO kernel_transitions(previous_kernel, next_kernel, created) VALUES(?,?,?)",
+                              (stored[0].decode(), KERNEL_VERSION, int(time.time())))
             c.execute("INSERT OR REPLACE INTO meta VALUES('kernel', ?)", (KERNEL_VERSION.encode(),))
             c.execute("INSERT OR REPLACE INTO meta VALUES('schema', ?)", (SCHEMA_VERSION.encode(),))
 
