@@ -1,4 +1,4 @@
-# Engine model and calibration (kernel 2003.3)
+# Engine model and calibration (kernel 2003.4)
 
 What the possession engine does beyond the per-play rates, why, and how it was checked. Code: `runtime/kernel.py`, `runtime/rotations.py`. Check: `python scripts/engine_diagnostics.py 4`, plus `--defense-test` and `--home-test` (analysis only: made-up entropy, nothing written to the career; its output names clubs and players and is not to be committed).
 
@@ -42,6 +42,10 @@ In the 4th quarter and overtime:
 
 League averages already contain late-game fouls and threes. Measured on 2003-04 rosters, this logic adds about 1.4 free-throw attempts, 0.7 fouls and 0.5 three-point attempts per team per game, so the regular rates leave those amounts out: the environment's trip, foul and three-point rates, and real players' free-throw and three-point rates (`regular_trip_share`, `regular_three_share`).
 
+## Team pace (problem E6)
+
+Each real club plays at its pace from the season before, relative to that season's league mean (`library/<year>/league/nba_<season>_team_pace.json`, built by `scripts/import_team_pace.py` from the Basketball-Reference team tables; only pace is kept, never results). A game runs at the average of the two clubs' paces, which scales the length of a regular possession and the expected margin. In 2003-04 the clubs range from 0.95 to 1.05 of the league pace. A club with no season before (Charlotte in 2004-05) and Miami, until its coaches set a pace, play at the league pace.
+
 ## Score effect
 
 Independent possessions alone give a game-to-game spread of about 15 points. Real NBA results vary about 12 points around the betting line, because a team that gets ahead of the game relaxes and one that falls behind presses. Before the tip the engine estimates the margin the two rosters should produce, from the same per-play rates, minute targets, defense, rebounding and home edge it plays with (`_expected_points`). During the game the offense's make probability moves by 0.0022 for every point it is ahead of that par line at the time (gained when behind), up to 25 points.
@@ -69,4 +73,4 @@ Four seasons of the real 2003-04 schedule without Miami's games (4,428 games, 79
 
 Box totals per team: FGA 81.1 (80.8), FTA 24.8 (24.4), turnovers 15.2 (14.9), offensive rebounds 12.1 (12.0), assists 21.7 (21.5), fouls 22.1 (21.8); environment values in brackets. Three-point attempts run at 15.1 against 14.7: the 2003-04 players' own three-point rates, weighted by their attempts, are about 3% above the 2002-03 environment.
 
-Known gaps: team pace is uniform (problem E6); there are no injuries or fatigue (problem E7, roadmap item 12); from 2004-05, players real Miami traded away between seasons still follow history, because the season tables cannot tell a trade from a free-agent move (roadmap item 8).
+Known gaps (the record above was measured on kernel 2003.3; with team pace, three seasons give margin SD 13.1, overtime 5.0%, home win 59.7%, foul-outs 0.24 and club spread 4.3): there are no injuries or fatigue (problem E7, roadmap item 12); from 2004-05, players real Miami traded away between seasons still follow history, because the season tables cannot tell a trade from a free-agent move (roadmap item 8).

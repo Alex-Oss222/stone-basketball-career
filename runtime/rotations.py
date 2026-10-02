@@ -48,6 +48,45 @@ def load_rosters(season, root=ROOT):
     return json.loads((Path(root) / rosters_path(season)).read_text(encoding="utf-8"))["clubs"]
 
 
+PACE_LIMITS = (0.85, 1.15)      # relative club pace; real clubs of this era sit well inside it
+
+
+def pace_path(season):
+    start = int(season[:4])
+    return Path(f"library/{start}/league/nba_{start}_{str(start + 1)[-2:]}_team_pace.json")
+
+
+def club_pace(season, club_name, root=ROOT):
+    """A real club's pace relative to the league, from the season before (1.0 without a pace file)."""
+    path = Path(root) / pace_path(season)
+    if not path.exists():
+        return 1.0
+    return json.loads(path.read_text(encoding="utf-8"))["clubs"][club_name]["relative_pace"]
+
+
+def pace_errors(root=ROOT):
+    errors = []
+    for path in sorted((Path(root) / "library").glob("*/league/nba_*_team_pace.json")):
+        rel = path.relative_to(root)
+        data = json.loads(path.read_text(encoding="utf-8"))
+        season = data.get("season", "")
+        try:
+            clubs = set(load_rosters(season, root))
+        except (OSError, ValueError):
+            errors.append(f"{rel}: no real rosters for {season!r}")
+            continue
+        if data.get("kind") != "team_pace" or set(data.get("clubs", {})) != clubs:
+            errors.append(f"{rel}: must be kind team_pace and cover exactly the season's real clubs")
+            continue
+        if int(data["source_season"][:4]) != int(season[:4]) - 1:
+            errors.append(f"{rel}: pace must come from the season before")
+        for club, entry in data["clubs"].items():
+            value = entry.get("relative_pace")
+            if isinstance(value, bool) or not isinstance(value, (int, float)) or not PACE_LIMITS[0] <= value <= PACE_LIMITS[1]:
+                errors.append(f"{rel}: {club}: relative pace out of range")
+    return errors
+
+
 def season_fraction(season, game_date, root=ROOT):
     """Where a date falls in the regular season, 0 at the first game and 1 at the last."""
     from .schedule import schedule_path
@@ -139,7 +178,7 @@ def _share(p, season_games):
     return p["minutes"] / p["games"] * _availability(p, season_games)
 
 
-def real_rotation(club_name, club, season_games, rating_index=None, *, fraction, exclude=(), arrivals=()):
+def real_rotation(club_name, club, season_games, rating_index=None, *, fraction, exclude=(), arrivals=(), pace=1.0):
     """TeamInput for a real club on the date at `fraction` of the season, rotation order first.
 
     `club` is the roster file entry; `season_games` the club's regular-season games.
@@ -172,4 +211,4 @@ def real_rotation(club_name, club, season_games, rating_index=None, *, fraction,
                                                             round(availability, 4))))
     # Rotation order: who plays the most when he plays.
     players.sort(key=lambda item: (-item[0], -item[1], item[2].player_id))
-    return TeamInput(club_name, tuple(p for _, _, p in players))
+    return TeamInput(club_name, tuple(p for _, _, p in players), pace)

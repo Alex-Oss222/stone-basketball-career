@@ -1,0 +1,157 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2012-13",
+ "kind": "team_pace",
+ "source_season": "2011-12",
+ "source": "Basketball-Reference season pages, Advanced Stats team table (https://www.basketball-reference.com/leagues/NBA_<year>.html)",
+ "source_league_mean_pace": 91.28,
+ "usage": "Each real club's pace from the season before, relative to that season's mean; a club's style of play for the engine, not a result. Miami is simulated and excluded.",
+ "clubs": {
+  "Atlanta Hawks": {
+   "relative_pace": 0.9882,
+   "source_club": "Atlanta Hawks",
+   "source_pace": 90.2
+  },
+  "Boston Celtics": {
+   "relative_pace": 0.9904,
+   "source_club": "Boston Celtics",
+   "source_pace": 90.4
+  },
+  "Brooklyn Nets": {
+   "relative_pace": 0.9871,
+   "source_club": "New Jersey Nets",
+   "source_pace": 90.1
+  },
+  "Charlotte Bobcats": {
+   "relative_pace": 0.9981,
+   "source_club": "Charlotte Bobcats",
+   "source_pace": 91.1
+  },
+  "Chicago Bulls": {
+   "relative_pace": 0.9762,
+   "source_club": "Chicago Bulls",
+   "source_pace": 89.1
+  },
+  "Cleveland Cavaliers": {
+   "relative_pace": 1.0003,
+   "source_club": "Cleveland Cavaliers",
+   "source_pace": 91.3
+  },
+  "Dallas Mavericks": {
+   "relative_pace": 1.0014,
+   "source_club": "Dallas Mavericks",
+   "source_pace": 91.4
+  },
+  "Denver Nuggets": {
+   "relative_pace": 1.032,
+   "source_club": "Denver Nuggets",
+   "source_pace": 94.2
+  },
+  "Detroit Pistons": {
+   "relative_pace": 0.9773,
+   "source_club": "Detroit Pistons",
+   "source_pace": 89.2
+  },
+  "Golden State Warriors": {
+   "relative_pace": 1.0112,
+   "source_club": "Golden State Warriors",
+   "source_pace": 92.3
+  },
+  "Houston Rockets": {
+   "relative_pace": 1.0046,
+   "source_club": "Houston Rockets",
+   "source_pace": 91.7
+  },
+  "Indiana Pacers": {
+   "relative_pace": 0.9937,
+   "source_club": "Indiana Pacers",
+   "source_pace": 90.7
+  },
+  "Los Angeles Clippers": {
+   "relative_pace": 0.9773,
+   "source_club": "Los Angeles Clippers",
+   "source_pace": 89.2
+  },
+  "Los Angeles Lakers": {
+   "relative_pace": 0.9915,
+   "source_club": "Los Angeles Lakers",
+   "source_pace": 90.5
+  },
+  "Memphis Grizzlies": {
+   "relative_pace": 0.9948,
+   "source_club": "Memphis Grizzlies",
+   "source_pace": 90.8
+  },
+  "Milwaukee Bucks": {
+   "relative_pace": 1.0266,
+   "source_club": "Milwaukee Bucks",
+   "source_pace": 93.7
+  },
+  "Minnesota Timberwolves": {
+   "relative_pace": 1.0222,
+   "source_club": "Minnesota Timberwolves",
+   "source_pace": 93.3
+  },
+  "New Orleans Hornets": {
+   "relative_pace": 0.9674,
+   "source_club": "New Orleans Hornets",
+   "source_pace": 88.3
+  },
+  "New York Knicks": {
+   "relative_pace": 1.0211,
+   "source_club": "New York Knicks",
+   "source_pace": 93.2
+  },
+  "Oklahoma City Thunder": {
+   "relative_pace": 1.0189,
+   "source_club": "Oklahoma City Thunder",
+   "source_pace": 93.0
+  },
+  "Orlando Magic": {
+   "relative_pace": 0.9751,
+   "source_club": "Orlando Magic",
+   "source_pace": 89.0
+  },
+  "Philadelphia 76ers": {
+   "relative_pace": 0.9827,
+   "source_club": "Philadelphia 76ers",
+   "source_pace": 89.7
+  },
+  "Phoenix Suns": {
+   "relative_pace": 1.0145,
+   "source_club": "Phoenix Suns",
+   "source_pace": 92.6
+  },
+  "Portland Trail Blazers": {
+   "relative_pace": 0.9992,
+   "source_club": "Portland Trail Blazers",
+   "source_pace": 91.2
+  },
+  "Sacramento Kings": {
+   "relative_pace": 1.0375,
+   "source_club": "Sacramento Kings",
+   "source_pace": 94.7
+  },
+  "San Antonio Spurs": {
+   "relative_pace": 1.0178,
+   "source_club": "San Antonio Spurs",
+   "source_pace": 92.9
+  },
+  "Toronto Raptors": {
+   "relative_pace": 0.9784,
+   "source_club": "Toronto Raptors",
+   "source_pace": 89.3
+  },
+  "Utah Jazz": {
+   "relative_pace": 1.0014,
+   "source_club": "Utah Jazz",
+   "source_pace": 91.4
+  },
+  "Washington Wizards": {
+   "relative_pace": 1.0134,
+   "source_club": "Washington Wizards",
+   "source_pace": 92.5
+  }
+ }
+}

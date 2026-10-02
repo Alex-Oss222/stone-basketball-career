@@ -33,7 +33,7 @@ from .game_runner import build_game_packet
 from .kernel import PlayerInput, TeamInput
 from .league import baseline_team, load_clubs
 from .player_stats import load_rating_index
-from .rotations import load_rosters, miami_holds, real_rotation, season_fraction
+from .rotations import club_pace, load_rosters, miami_holds, real_rotation, season_fraction
 from .schedule import games_per_team
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -58,7 +58,7 @@ def _club(spec, actives, root, rating_index, season=None, game_date=None):
         # Rule 2: players simulated Miami holds are not with their real club.
         return real_rotation(spec["team"], rosters[spec["team"]], games_per_team(season, spec["team"]), rating_index,
                              fraction=season_fraction(season, game_date, root),
-                             exclude=miami_holds(season, game_date, root))
+                             exclude=miami_holds(season, game_date, root), pace=club_pace(season, spec["team"], root))
     if "baseline" in spec:
         clubs = load_clubs(Path(root) / spec["baseline"])
         if spec["team"] not in clubs:

@@ -1,0 +1,157 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2005-06",
+ "kind": "team_pace",
+ "source_season": "2004-05",
+ "source": "Basketball-Reference season pages, Advanced Stats team table (https://www.basketball-reference.com/leagues/NBA_<year>.html)",
+ "source_league_mean_pace": 90.93,
+ "usage": "Each real club's pace from the season before, relative to that season's mean; a club's style of play for the engine, not a result. Miami is simulated and excluded.",
+ "clubs": {
+  "Atlanta Hawks": {
+   "relative_pace": 1.0052,
+   "source_club": "Atlanta Hawks",
+   "source_pace": 91.4
+  },
+  "Boston Celtics": {
+   "relative_pace": 1.0261,
+   "source_club": "Boston Celtics",
+   "source_pace": 93.3
+  },
+  "Charlotte Bobcats": {
+   "relative_pace": 1.0151,
+   "source_club": "Charlotte Bobcats",
+   "source_pace": 92.3
+  },
+  "Chicago Bulls": {
+   "relative_pace": 1.0162,
+   "source_club": "Chicago Bulls",
+   "source_pace": 92.4
+  },
+  "Cleveland Cavaliers": {
+   "relative_pace": 0.9865,
+   "source_club": "Cleveland Cavaliers",
+   "source_pace": 89.7
+  },
+  "Dallas Mavericks": {
+   "relative_pace": 1.0195,
+   "source_club": "Dallas Mavericks",
+   "source_pace": 92.7
+  },
+  "Denver Nuggets": {
+   "relative_pace": 1.0283,
+   "source_club": "Denver Nuggets",
+   "source_pace": 93.5
+  },
+  "Detroit Pistons": {
+   "relative_pace": 0.959,
+   "source_club": "Detroit Pistons",
+   "source_pace": 87.2
+  },
+  "Golden State Warriors": {
+   "relative_pace": 1.0261,
+   "source_club": "Golden State Warriors",
+   "source_pace": 93.3
+  },
+  "Houston Rockets": {
+   "relative_pace": 0.9766,
+   "source_club": "Houston Rockets",
+   "source_pace": 88.8
+  },
+  "Indiana Pacers": {
+   "relative_pace": 0.959,
+   "source_club": "Indiana Pacers",
+   "source_pace": 87.2
+  },
+  "Los Angeles Clippers": {
+   "relative_pace": 0.9799,
+   "source_club": "Los Angeles Clippers",
+   "source_pace": 89.1
+  },
+  "Los Angeles Lakers": {
+   "relative_pace": 0.9986,
+   "source_club": "Los Angeles Lakers",
+   "source_pace": 90.8
+  },
+  "Memphis Grizzlies": {
+   "relative_pace": 0.9733,
+   "source_club": "Memphis Grizzlies",
+   "source_pace": 88.5
+  },
+  "Milwaukee Bucks": {
+   "relative_pace": 0.9986,
+   "source_club": "Milwaukee Bucks",
+   "source_pace": 90.8
+  },
+  "Minnesota Timberwolves": {
+   "relative_pace": 0.9799,
+   "source_club": "Minnesota Timberwolves",
+   "source_pace": 89.1
+  },
+  "New Jersey Nets": {
+   "relative_pace": 0.9799,
+   "source_club": "New Jersey Nets",
+   "source_pace": 89.1
+  },
+  "New Orleans/Oklahoma City Hornets": {
+   "relative_pace": 0.9634,
+   "source_club": "New Orleans Hornets",
+   "source_pace": 87.6
+  },
+  "New York Knicks": {
+   "relative_pace": 0.9975,
+   "source_club": "New York Knicks",
+   "source_pace": 90.7
+  },
+  "Orlando Magic": {
+   "relative_pace": 1.0414,
+   "source_club": "Orlando Magic",
+   "source_pace": 94.7
+  },
+  "Philadelphia 76ers": {
+   "relative_pace": 1.0436,
+   "source_club": "Philadelphia 76ers",
+   "source_pace": 94.9
+  },
+  "Phoenix Suns": {
+   "relative_pace": 1.0546,
+   "source_club": "Phoenix Suns",
+   "source_pace": 95.9
+  },
+  "Portland Trail Blazers": {
+   "relative_pace": 0.9876,
+   "source_club": "Portland Trail Blazers",
+   "source_pace": 89.8
+  },
+  "Sacramento Kings": {
+   "relative_pace": 1.0228,
+   "source_club": "Sacramento Kings",
+   "source_pace": 93.0
+  },
+  "San Antonio Spurs": {
+   "relative_pace": 0.9777,
+   "source_club": "San Antonio Spurs",
+   "source_pace": 88.9
+  },
+  "Seattle SuperSonics": {
+   "relative_pace": 0.9667,
+   "source_club": "Seattle SuperSonics",
+   "source_pace": 87.9
+  },
+  "Toronto Raptors": {
+   "relative_pace": 1.0195,
+   "source_club": "Toronto Raptors",
+   "source_pace": 92.7
+  },
+  "Utah Jazz": {
+   "relative_pace": 0.9722,
+   "source_club": "Utah Jazz",
+   "source_pace": 88.4
+  },
+  "Washington Wizards": {
+   "relative_pace": 1.0261,
+   "source_club": "Washington Wizards",
+   "source_pace": 93.3
+  }
+ }
+}

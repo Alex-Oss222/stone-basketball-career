@@ -95,11 +95,14 @@ class PlayerInput:
 class TeamInput:
     team_id: str
     players: tuple
+    pace: float = 1.0               # the club's pace relative to the league (problem E6)
 
 
 def team_errors(team, rules):
     errors = []
     players = list(team.players)
+    if isinstance(team.pace, bool) or not isinstance(team.pace, (int, float)) or not 0.85 <= team.pace <= 1.15:
+        errors.append("club pace must be between 0.85 and 1.15 of the league's")
     ids = [p.player_id for p in players]
     if len(ids) != len(set(ids)):
         errors.append("duplicate player ids")
@@ -439,7 +442,8 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
     possessions = {"home": 0, "away": 0}
     state = {"period": 1, "clock": quarter_seconds, "elapsed": 0.0}
     # The margin these rosters should produce over regulation, home side positive (score effect centre).
-    expected_margin = EXPECTED_MARGIN_SCALE * cal["box_possessions"] * (
+    game_pace = (home.pace + away.pace) / 2     # a game is played between the two clubs' paces
+    expected_margin = EXPECTED_MARGIN_SCALE * cal["box_possessions"] * game_pace * (
         _expected_points(clubs["home"], clubs["away"], cal) - _expected_points(clubs["away"], clubs["home"], cal))
     if venue == "home":
         expected_margin += cal["home_points"]
@@ -685,7 +689,7 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
             elif late and lead > 0 and clock <= LATE_SECONDS:
                 drawn = max(14.0, min(float(shot_clock), rng.gauss(20.0, 2.0)))   # run the clock
             else:
-                drawn = max(4.0, min(float(shot_clock), rng.gauss(cal["possession_seconds"], 4.5)))
+                drawn = max(4.0, min(float(shot_clock), rng.gauss(cal["possession_seconds"] / game_pace, 4.5)))
             if clock < HEAVE_SECONDS:
                 # A heave with almost no time left gets a shot off only in proportion to the time it had.
                 run(clock)

@@ -1,5 +1,7 @@
 # How to collect the team pace data (engine problem E6)
 
+**Done:** the twelve tables (2002-03 to 2013-14) were imported on October 2, 2026 into `library/<year>/league/nba_<season>_team_pace.json` by `scripts/import_team_pace.py`. Keep these instructions for a later season's table.
+
 Today every club plays at the league's average pace. Real clubs played faster or slower, and that changes possessions, scoring and how much a good team's edge adds up over a game. One team table per season fixes it.
 
 Not needed before opening night. Upload it whenever convenient; the importer is built when the files arrive.
