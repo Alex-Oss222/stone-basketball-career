@@ -11,8 +11,8 @@ Status: `done`, `next`, `blocked: <what is missing>`, `later`.
 | 1 | League contracts and cap ledger | Every team's payroll and cap position | done (stage 1, `runtime/contracts.py`) |
 | 2 | Free-agent cap holds under the 1999 agreement, for Miami | Miami's real cap room depends on them | done: `library/2003/league/nba_1999_cba_rules.json`, minimum scale, league rights file, `runtime/cba.py`; open: the minimum-contract hold rule (unverified) and the FAQ text for Questions 10 and 22 |
 | 3 | Bird-rights tenure for Miami's expiring players | Decides whom Miami can re-sign over the cap | done: `00_Team/Finances/free_agent_rights.json` (built by `scripts/build_miami_free_agent_rights.py`) |
-| 4 | Miami's June 30 decisions: team options, Carter's player option, qualifying offers | First events on the clock | next |
-| 5 | Wade's rookie contract, with a negotiation log | Wade is unsigned; first user decision | next |
+| 4 | Miami's June 30 decisions: team options, Carter's player option, qualifying offers | First events on the clock | built (`runtime/front_office.py`, `scripts/run_june30.py`, engine-drawn `*.decision.json`); runs when the clock reaches June 30; needs Carter's years of service on `contract_schedules.json` |
+| 5 | Wade's rookie contract, with a negotiation log | Wade is unsigned; first user decision | built (`runtime/rookie_contract.py`, `scripts/open_rookie_negotiation.py`); opens on the offer date |
 | 6 | Miami's free agency (July 1 to 14 talks, signings from July 15), against a market of real clubs | Decides Miami's roster | after 2-5 |
 | 7 | Careers data: player season rates (option C) and real team rosters and minutes (option D) | Every opponent's lineup and every real player's ability | done: `library/careers/nba_player_careers.json` (1,185 players) and `library/<year>/league/nba_<season>_team_rosters.json`, 2003-04 to 2013-14 |
 | 8 | Rotations: real minute shares for other clubs (from item 7), Miami's from its own depth chart, plus the conflict rules in `AGENTS.md` | Games need real lineups | after 6 and 7 |
@@ -21,7 +21,7 @@ Status: `done`, `next`, `blocked: <what is missing>`, `later`.
 | 11 | League slate: Railway plays every non-Miami game from the schedule | Standings need all 1,189 games | before October 28 |
 | 12 | Injuries and availability | 82 games with no injuries is not a season | before October 28 |
 | 13 | Write-back: results into game notes, Wade, Miami and league stat pages | Results count only once written into the career record | before October 28 |
-| 13a | Wade's requests to the front office: logged, weighed by his standing, engine-drawn where uncertain | Wade's influence on Miami | with item 4 |
+| 13a | Wade's requests to the front office: logged, weighed by his standing, engine-drawn where uncertain | Wade's influence on Miami | built for June 30 decisions (`wade_requests.json`, `docs/front_office.md`); extend to later decisions as they are built |
 
 ## During and after 2003-04
 

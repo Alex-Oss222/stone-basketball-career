@@ -517,6 +517,16 @@ def validate():
     except (OSError, ValueError, KeyError) as exc:
         errors.append(f"cannot validate Miami free-agent rights: {exc}")
 
+    from runtime.decisions import decision_errors, find_decisions
+    for path in find_decisions(ROOT):
+        try:
+            errors.extend(f"{path.relative_to(ROOT)}: {e}" for e in decision_errors(json.loads(path.read_text(encoding="utf-8"))))
+        except ValueError as exc:
+            errors.append(f"{path.relative_to(ROOT)}: {exc}")
+    from runtime.rookie_contract import log_errors
+    for path in (ROOT / "career").rglob("negotiation_log.json"):
+        errors.extend(f"{path.relative_to(ROOT)}: {e}" for e in log_errors(json.loads(path.read_text(encoding="utf-8")), ROOT))
+
     from runtime.rosters import roster_errors
     errors.extend(roster_errors(ROOT))
 
