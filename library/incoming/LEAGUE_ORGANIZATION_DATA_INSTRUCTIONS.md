@@ -1,5 +1,7 @@
 # How to collect the league organization data (head coaches)
 
+**Done:** the 12 tables were uploaded and imported on October 2, 2026, with every club's assistants and executives from the Basketball-Reference team pages, into `library/<year>/league/nba_<season>_staffs.json` (`scripts/import_staffs.py`). Keep these instructions for a later season.
+
 This gives every club's head coach, season by season: who coaches the opponents and who is eligible for Coach of the Year. The other 28 clubs follow history (world model D), so this is reference data. They make no simulated decisions, and Miami's own coaches stay in its organization records.
 
 ## What to download
