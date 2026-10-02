@@ -11,8 +11,10 @@ from pathlib import Path
 from runtime.game_requests import load_request
 from runtime.game_runner import build_game_packet, run_game
 from runtime.player_stats import RATE_KEYS, read_json
-from runtime.trajectories import (CAREERS_PATH, SPREAD, TRAJECTORY_MODEL_VERSION, careers_errors, develop,
-                                  swings, trajectory_errors)
+from runtime.trajectories import (CAREERS_PATH, DEFENSE_SPREAD, FEEDBACK_SHARE, SPREAD, TRAJECTORY_MODEL_VERSION,
+                                  apply_feedback, careers_errors, develop, develop_profile, feedback_adjustments,
+                                  feedback_errors, feedback_path, load_trajectories, season_feedback, swings,
+                                  trajectory_errors)
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = read_json(ROOT / "library/2003/league/nba_2003_veteran_ratings.json")["rate_baselines"]
@@ -32,7 +34,7 @@ class Journal:
 def star_row(minutes=3100):
     rates = {k: BASE[k] for k in RATE_KEYS}
     rates.update(usage_pct=0.28, assist_pct=0.27, two_point_pct=0.44)
-    return {"minutes": minutes, "rates": rates}
+    return {"minutes": minutes, "rates": rates, "dbpm": 1.2}
 
 
 class TrajectoryTests(unittest.TestCase):
@@ -124,6 +126,92 @@ class TrajectoryTests(unittest.TestCase):
         self.assertNotIn("wadedw01", careers["players"])
         self.assertNotIn("wadedw01", json.dumps(careers))
         self.assertEqual(len(careers["players"]["jamesle01"]["seasons"]), 11)
+
+    def test_defense_is_shrunk_dbpm_moved_by_the_swing(self):
+        trajectories = load_trajectories(self.root, "2003-04")
+        profile = trajectories.expected_profile("jamesle01", "2003-04", BASE)
+        self.assertAlmostEqual(profile["defense"], 1.2 * 3100 / 3400)
+        ref = hashlib.sha256(b"d").hexdigest()
+        moved = develop_profile(profile, {"2003-04": ref})
+        self.assertAlmostEqual(moved["defense"] - profile["defense"], DEFENSE_SPREAD * swings({"2003-04": ref})["defense"])
+        self.assertEqual(moved["rates"], develop(profile["rates"], {"2003-04": ref}))   # rate draws unchanged
+
+    def test_tampered_defense_is_refused(self):
+        home, away, kwargs = self.request()
+        journal = Journal()
+        players = []
+        for p in home.players:
+            if p.player_id == "LeBron James":
+                refs = {"2003-04": journal.close_event({"event_id": "development:2003-04:jamesle01",
+                                                        "procedure": TRAJECTORY_MODEL_VERSION,
+                                                        "bbr_id": "jamesle01", "season": "2003-04"})}
+                p = replace(p, stat_profile=dict(develop_profile(p.stat_profile, refs), defense=5.0))
+            players.append(p)
+        with self.assertRaises(ValueError):
+            build_game_packet(replace(home, players=tuple(players)), away, **kwargs)
+
+    def test_careers_rows_need_a_valid_dbpm(self):
+        for bad in ("1.0", 99, float("nan")):
+            row = dict(star_row(), dbpm=bad)
+            data = {"kind": "player_career_rates", "players": {"jamesle01": {"seasons": {"2003-04": row}}}}
+            self.assertTrue(careers_errors(data), bad)
+        careers = read_json(ROOT / CAREERS_PATH)
+        self.assertTrue(all("dbpm" in row for p in careers["players"].values() for row in p["seasons"].values()))
+
+
+class FeedbackTests(unittest.TestCase):
+    expected = {k: BASE[k] for k in RATE_KEYS}
+
+    def test_feedback_is_a_capped_share_of_the_shrunk_surprise(self):
+        doubled = {k: 2 * v for k, v in self.expected.items()}
+        big = feedback_adjustments(self.expected, doubled, {k: 100000 for k in RATE_KEYS})
+        for key in RATE_KEYS:
+            self.assertAlmostEqual(big[key], min(SPREAD[key], FEEDBACK_SHARE * math.log(2)), places=3)
+        small = feedback_adjustments(self.expected, doubled, {k: 5 for k in RATE_KEYS})
+        self.assertTrue(all(abs(small[k]) <= abs(big[k]) for k in RATE_KEYS))
+        self.assertLess(sum(map(abs, small.values())), sum(map(abs, big.values())))
+        missing = feedback_adjustments(self.expected, {k: None for k in RATE_KEYS}, {k: 0 for k in RATE_KEYS})
+        self.assertEqual(set(missing.values()), {0.0})
+        zero = feedback_adjustments(self.expected, {k: 0.0 for k in RATE_KEYS}, {k: 100000 for k in RATE_KEYS})
+        self.assertTrue(all(-SPREAD[k] - 1e-12 <= zero[k] < 0 for k in RATE_KEYS))
+
+    def test_feedback_cannot_spiral(self):
+        """A player who keeps beating his real path settles; the adjustment never accumulates past the cap."""
+        adjust = {k: 0.0 for k in RATE_KEYS}
+        for _ in range(12):
+            used = apply_feedback(self.expected, adjust)
+            observed = {k: v * 1.5 for k, v in self.expected.items()}
+            adjust = feedback_adjustments(used, observed, {k: 100000 for k in RATE_KEYS})
+            self.assertTrue(all(abs(adjust[k]) <= SPREAD[k] + 1e-12 for k in RATE_KEYS))
+
+    def test_season_feedback_file_applies_to_the_next_season_only(self):
+        line = {"seconds": 2160, "fgm": 9, "fga": 18, "tpm": 1, "tpa": 3, "ftm": 6, "fta": 8, "orb": 1, "drb": 5,
+                "ast": 7, "stl": 2, "blk": 1, "tov": 3, "pf": 2}
+        bench = dict(line, fgm=3, fga=8, ast=1, ftm=1, fta=2)
+        data = season_feedback({"jamesle01": [line] * 70, "wadedw01": [line] * 70, "benchxx01": [bench] * 70},
+                               {"jamesle01": self.expected, "benchxx01": self.expected, "wadedw01": self.expected},
+                               BASE, "2003-04", "2004-05")
+        self.assertNotIn("wadedw01", data["players"])
+        self.assertEqual(feedback_errors(data), [])
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / CAREERS_PATH).parent.mkdir(parents=True)
+            careers = {"schema_version": 1, "kind": "player_career_rates", "source": "synthetic test data",
+                       "players": {"jamesle01": {"player_name": "LeBron James",
+                                                 "seasons": {"2003-04": star_row(), "2004-05": star_row()}}}}
+            (root / CAREERS_PATH).write_text(json.dumps(careers))
+            (root / feedback_path("2004-05")).parent.mkdir(parents=True)
+            (root / feedback_path("2004-05")).write_text(json.dumps(data))
+            plain = load_trajectories(root, "2003-04").expected_profile("jamesle01", "2003-04", BASE)
+            self.assertNotIn("feedback_sha256", plain)
+            fed = load_trajectories(root, "2004-05").expected_profile("jamesle01", "2004-05", BASE)
+            self.assertIn("feedback_sha256", fed)
+            unfed = load_trajectories(root, None).expected_profile("jamesle01", "2004-05", BASE)
+            self.assertEqual(fed["rates"], apply_feedback(unfed["rates"], data["players"]["jamesle01"]["adjust"]))
+            (root / feedback_path("2004-05")).write_text(json.dumps(dict(data, from_season="2002-03")))
+            with self.assertRaises(ValueError):
+                load_trajectories(root, "2004-05")
+
 
 if __name__ == "__main__":
     unittest.main()

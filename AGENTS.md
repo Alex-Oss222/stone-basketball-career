@@ -52,7 +52,7 @@ A later source may be used to reconstruct a contract term that already existed, 
 
 ### Talent-trajectory exception (option C, chosen by the user)
 
-Real players' on-court ability may follow their real careers. The engine may read a real player's season rates from `library/careers/nba_player_careers.json` as his expected ability for that season, with a development swing drawn by the engine around it (`runtime/trajectories.py`). This exception covers ability rates only, and only inside the engine:
+Real players' on-court ability may follow their real careers. The engine may read a real player's season rates and defensive rating (DBPM) from `library/careers/nba_player_careers.json` as his expected ability for that season, with a development swing drawn by the engine around it (`runtime/trajectories.py`). From the second simulated season on, 20% of his last simulated season's surprise against that expectation, shrunk by sample and capped at one season's swing spread, carries into his next expected season; it reads closed simulated results only and is written at rollover. This exception covers ability rates only, and only inside the engine:
 
 - never results, standings, statistics totals, awards, injuries, suspensions, contracts, trades, signings, coaching changes or any team decision;
 - never shown on player cards, scouting notes or anything the AI/GM or the user reads before the season is played; cards keep using evidence available on their date;
@@ -72,6 +72,7 @@ Wade's ability: his rookie season uses the college estimate (`runtime/prospects.
   1. A real transaction that involves Miami is skipped. Every player in it stays with the club that had him before the transaction.
   2. A player simulated Miami acquires leaves his real club from that date. A player simulated Miami holds stays with Miami even if history moved him elsewhere.
   3. When rule 1 or 2 changes a real club's roster, the departing players' real minutes go to the arriving players up to their own previous minute share, and any remainder is spread over the club's rotation in proportion to real minutes.
+- A real club's game input is its real season roster: each player's minutes per game played and the share of the club's games he played, never game dates (`runtime/rotations.py`). The engine draws availability per game.
 - If Wade joins another club, that club becomes the simulated club from that date with its own career folder; earlier folders stay as history.
 - Real rosters are hindsight about other clubs, accepted by the user for the world only. They never decide what simulated Miami knows or plans: the AI/GM sees other clubs only as they stand on the current career date.
 
@@ -133,7 +134,7 @@ Relay or another runner may simulate a game, but raw external output is not cano
 
 ## Game engine
 
-Games are played by the engine on Railway. To play a game, write `Game_N.request.json` next to the scheduled `Game_N.md` (format in `runtime/game_requests.py`), validate, commit and push to the branch Railway tracks. Read the result from `/games/<event_id>/box` and write it into the game note; it is canonical only then. Never pass a seed, never resolve a game with the kernel directly, and never edit a played game's request to get a different result. Do not use a season's own final averages to calibrate it. League environment policy (chosen by the user): each season is calibrated on the **real** league averages of the season before it, stored as `library/<year>/league/nba_<YYYY>_<YY>_league_environment.json`, not on the simulated league's averages. These describe the era's style of play, not any team's results. See `runtime/README.md`.
+Games are played by the engine on Railway. To play a game, write `Game_N.request.json` next to the scheduled `Game_N.md` (format in `runtime/game_requests.py`), validate, commit and push to the branch Railway tracks. Read the result from `/games/<event_id>/box` and write it into the game note; it is canonical only then. Never pass a seed, never resolve a game with the kernel directly, and never edit a played game's request to get a different result. Do not use a season's own final averages to calibrate it. The engine's defense, rotation, late-game, foul-trouble and score-effect model and its calibration record are in `docs/engine_model.md`. League environment policy (chosen by the user): each season is calibrated on the **real** league averages of the season before it, stored as `library/<year>/league/nba_<YYYY>_<YY>_league_environment.json`, not on the simulated league's averages. These describe the era's style of play, not any team's results. See `runtime/README.md`.
 
 ## Build roadmap
 

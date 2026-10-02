@@ -298,7 +298,7 @@ def load_rating_index(game_date, season, root=ROOT):
                 or rookies["source_sha256"] != sha256(Path(root)/PROSPECTS_PATH)):
             raise ValueError("rookie estimates are stale or not yet available; rebuild from the current source")
     from .trajectories import load_trajectories
-    return RatingIndex(data, rookies, load_trajectories(root), season)
+    return RatingIndex(data, rookies, load_trajectories(root, season), season)
 
 
 def repository_rating_errors(root=ROOT):

@@ -16,9 +16,13 @@ identically; a request whose inputs were edited after it was played is refused.
       "away": {"team": "Orlando Magic", "baseline": "library/2003/league/nba_2003_end_of_season.json"}
     }
 
-A club is either an explicit `players` list (minutes summing to 240) or a
-`baseline` library file, from which `runtime.league.baseline_team` builds the
-default rotation for a background club.
+A club is one of:
+* an explicit `players` list (minutes summing to 240), which is how Miami's
+  AI/GM states its rotation from the depth chart;
+* `"rotation": "real"`: a real club's real season roster for the game's season,
+  with minutes per game and availability (`runtime/rotations.py`, world model D);
+* a `baseline` library file, from which `runtime.league.baseline_team` builds a
+  conventional rotation (the older end-of-2002-03 default).
 """
 import json
 from pathlib import Path
@@ -28,6 +32,8 @@ from .game_runner import build_game_packet
 from .kernel import PlayerInput, TeamInput
 from .league import baseline_team, load_clubs
 from .player_stats import load_rating_index
+from .rotations import load_rosters, real_rotation
+from .schedule import games_per_team
 
 ROOT = Path(__file__).resolve().parents[1]
 FIELDS = {"event_id", "game_date", "game_type", "venue", "home", "away"}
@@ -37,11 +43,18 @@ def find_requests(root=ROOT):
     return sorted((Path(root) / "career").rglob("*.request.json"))
 
 
-def _club(spec, actives, root, rating_index):
+def _club(spec, actives, root, rating_index, season=None):
     if not isinstance(spec, dict) or not isinstance(spec.get("team"), str):
         raise ValueError("each club needs a team name")
-    if ("players" in spec) == ("baseline" in spec):
-        raise ValueError(f"{spec['team']}: give exactly one of players or baseline")
+    if sum(key in spec for key in ("players", "baseline", "rotation")) != 1:
+        raise ValueError(f"{spec['team']}: give exactly one of players, baseline or rotation")
+    if "rotation" in spec:
+        if spec["rotation"] != "real" or set(spec) != {"team", "rotation"}:
+            raise ValueError(f"{spec['team']}: the only rotation is \"real\"")
+        rosters = load_rosters(season, root)
+        if spec["team"] not in rosters:
+            raise ValueError(f"{spec['team']} has no real {season} roster (Miami is simulated)")
+        return real_rotation(spec["team"], rosters[spec["team"]], games_per_team(season, spec["team"]), rating_index)
     if "baseline" in spec:
         clubs = load_clubs(Path(root) / spec["baseline"])
         if spec["team"] not in clubs:
@@ -64,8 +77,8 @@ def load_request(path, root=ROOT):
     season = season_for_date(data["game_date"])
     actives = rules_for(season)["game_day_actives"]
     index = load_rating_index(data["game_date"], season, root)
-    home = _club(data["home"], actives, root, index)
-    away = _club(data["away"], actives, root, index)
+    home = _club(data["home"], actives, root, index, season)
+    away = _club(data["away"], actives, root, index, season)
     kwargs = {k: data[k] for k in ("event_id", "game_date", "game_type", "venue")}
     kwargs["root"] = root
     build_game_packet(home, away, **kwargs)  # full validation, nothing journaled

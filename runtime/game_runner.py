@@ -6,7 +6,7 @@ from . import KERNEL_VERSION
 from .era import allowed_game_types, environment_for, rules_for, season_for_date
 from .kernel import resolve_game, team_errors, team_packet, validate_result
 from .player_stats import ROOT, MODEL_VERSION, load_rating_index
-from .trajectories import develop, development_refs, development_seasons, needs_development
+from .trajectories import develop_profile, development_refs, development_seasons, needs_development
 from dataclasses import replace
 
 ENTROPY_DOMAIN = b"stone-basketball-career/event-entropy/v1\0"
@@ -43,7 +43,7 @@ def build_game_packet(home, away, *, event_id, game_date, game_type="regular", v
                 refs = profile["development"]
                 if sorted(refs) != development_seasons(profile["bbr_id"], season):
                     raise ValueError("profile lacks its journaled development draws")
-                expected = dict(expected, rates=develop(expected["rates"], refs), development=refs)
+                expected = develop_profile(expected, refs)
             if profile != expected:
                 raise ValueError("statistical profile differs from the dated, generated source")
         if environment.get("player_rating_model") != MODEL_VERSION or environment.get("player_rate_baselines") != index.data["rate_baselines"]:
@@ -106,7 +106,7 @@ def _developed(team, season, journal):
         profile = p.stat_profile
         if needs_development(profile) and "development" not in profile:
             refs = development_refs(journal, profile["bbr_id"], season)
-            profile = dict(profile, rates=develop(profile["rates"], refs), development=refs)
+            profile = develop_profile(profile, refs)
             p = replace(p, stat_profile=profile)
         players.append(p)
     return replace(team, players=tuple(players))

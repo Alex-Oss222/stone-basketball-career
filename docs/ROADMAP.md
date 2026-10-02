@@ -15,13 +15,27 @@ Status: `done`, `next`, `blocked: <what is missing>`, `later`.
 | 5 | Wade's rookie contract, with a negotiation log | Wade is unsigned; first user decision | built (`runtime/rookie_contract.py`, `scripts/open_rookie_negotiation.py`); opens on the offer date |
 | 6 | Miami's free agency (July 1 to 14 talks, signings from July 15), against a market of real clubs | Decides Miami's roster | after 2-5 |
 | 7 | Careers data: player season rates (option C) and real team rosters and minutes (option D) | Every opponent's lineup and every real player's ability | done: `library/careers/nba_player_careers.json` (1,185 players) and `library/<year>/league/nba_<season>_team_rosters.json`, 2003-04 to 2013-14 |
-| 8 | Rotations: real minute shares for other clubs (from item 7), Miami's from its own depth chart, plus the conflict rules in `AGENTS.md` | Games need real lineups | after 6 and 7 |
-| 9 | Miami's perimeter-defense grade for Wade at camp | Agreed rating decision | at training camp |
+| 8 | Rotations: real minute shares for other clubs (from item 7), Miami's from its own depth chart, plus the conflict rules in `AGENTS.md` | Games need real lineups | done for real clubs: `runtime/rotations.py`, request `"rotation": "real"` (minutes per game and availability, conflict rule 3); Miami states its rotation as an explicit `players` list, which the game builder (item 10) will write from the depth chart |
+| 9 | Miami's perimeter-defense grade for Wade at camp | Agreed rating decision; until then Wade counts as an average defender (defensive value 0) | at training camp; the grade must also be mapped to the defensive value scale (`docs/engine_model.md`) |
 | 10 | Game builder: Miami game notes and requests from the schedule, on their dates | No hand-written requests | before October 5 |
 | 11 | League slate: Railway plays every non-Miami game from the schedule | Standings need all 1,189 games | before October 28 |
 | 12 | Injuries and availability | 82 games with no injuries is not a season | before October 28 |
 | 13 | Write-back: results into game notes, Wade, Miami and league stat pages | Results count only once written into the career record | before October 28 |
 | 13a | Wade's requests to the front office: logged, weighed by his standing, engine-drawn where uncertain | Wade's influence on Miami | built for June 30 decisions (`wade_requests.json`, `docs/front_office.md`); extend to later decisions as they are built |
+
+## Engine problems, worst first
+
+Found in the engine review on real 2003-04 rosters. Model and numbers: `docs/engine_model.md`; re-check with `python scripts/engine_diagnostics.py 6000`.
+
+| # | Problem | Fix | Status |
+|---|---|---|---|
+| E1 | Defense barely existed: only legacy grades, steals and blocks | Real DBPM in the careers data; the five defenders on the floor move the opponent's shooting and turnovers | done (kernel 2003.3): +5 on the floor allows 5.3 fewer points per 100 |
+| E2 | Team quality compressed | Mostly E1 | done: spread of team average margins 4.0 over an 82-game season (benchmark 4-5) |
+| E3 | Stars overplayed (season shares over a top-12 list) | Minutes per game and availability, with caps (together with item 8) | done: stars play their real minutes per game |
+| E4 | Results too random, no late-game logic | Foul when trailing, run the clock when leading, hold for the last shot, closing lineups, garbage time, and a score effect | done: margin SD 13.7, overtime 5.4% |
+| E5 | Too many foul-outs | Sit players in foul trouble, bring them back later | done: 0.23 per game |
+| E6 | Every club plays at the league pace | Team pace from each season's team table | later: needs one upload per season, see `library/incoming/TEAM_PACE_DATA_INSTRUCTIONS.md` |
+| E7 | No injuries or fatigue | Roadmap item 12 | before October 28 |
 
 ## During and after 2003-04
 
@@ -31,7 +45,7 @@ Status: `done`, `next`, `blocked: <what is missing>`, `later`.
 | 15 | Season awards voting (shortlists exist; winners must be decided) | Awards pages need results | before April 2004 |
 | 16 | Miami's trades, including the February deadline, with a simple acceptance rule for the real club on the other side | Miami's roster moves during a season | later (2003-04 season) |
 | 17 | Miami's draft picks on draft-night evidence; other clubs' picks follow history unless Miami's moves conflict | 2004 draft | before June 2004 |
-| 18 | Season rollover: 2004-05 era rules (hand-check, 30 teams), real 2003-04 league averages, Wade's year-end update (`runtime/protagonist.py`), contracts and cap rollover, 2004 cap publication date | Next season cannot start without them | before July 2004 |
+| 18 | Season rollover: 2004-05 era rules (hand-check, 30 teams), real 2003-04 league averages, Wade's year-end update (`runtime/protagonist.py`), real players' capped 20% feedback file (`runtime/trajectories.season_feedback`), contracts and cap rollover, 2004 cap publication date | Next season cannot start without them | before July 2004 |
 | 19 | Structural rules for each agreement (raise limits, lengths, extension windows): 1999, then 2005 | Every contract after 2003-04 | 1999 now with item 2; 2005 before summer 2005 |
 
 ## Far ahead

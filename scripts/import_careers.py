@@ -4,8 +4,9 @@
 Writes two kinds of library files:
 
 * library/careers/nba_player_careers.json: every real player's season rates for
-  the engine (option C). One row per player-season, from the combined row of a
-  traded player.
+  the engine (option C), plus his Defensive Box Plus/Minus (DBPM, points per
+  100 possessions against a league-average defender) for the engine's defense.
+  One row per player-season, from the combined row of a traded player.
 * library/<year>/league/nba_<YYYY>_<YY>_team_rosters.json: every non-Miami
   club's real roster and minutes for that season (option D).
 
@@ -107,8 +108,9 @@ def main(folder):
             combined = [r for r in player_rows if MULTI.match(r["Team"])]
             row = combined[0] if combined else player_rows[0]
             entry = careers["players"].setdefault(bbr_id, {"player_name": row["Player"], "seasons": {}})
+            adv = advanced[(bbr_id, row["Team"])]
             entry["seasons"][season] = {"minutes": int(num(row["MP"]) or 0),
-                                        "rates": rates(row, advanced[(bbr_id, row["Team"])])}
+                                        "rates": rates(row, adv), "dbpm": num(adv.get("DBPM"))}
         clubs = {}
         for r in totals:
             if MULTI.match(r["Team"]) or r["Team"] == SIMULATED_CLUB:
