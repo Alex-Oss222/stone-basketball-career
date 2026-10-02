@@ -254,6 +254,21 @@ class RotationTests(unittest.TestCase):
             self.assertTrue(kinds & {"PG", "SG"} and kinds & {"PF", "C"}, (mode, lineup))
 
 
+class PaceTests(unittest.TestCase):
+    def test_each_club_plays_at_its_previous_season_pace(self):
+        from runtime.rotations import club_pace, pace_errors
+        self.assertEqual(pace_errors(), [])
+        self.assertGreater(club_pace("2003-04", "Sacramento Kings"), club_pace("2003-04", "Detroit Pistons"))
+        self.assertEqual(club_pace("2004-05", "Charlotte Bobcats"), 1.0)          # no season before
+        fast, slow = (TeamInput(t.team_id, t.players, p) for t, p in ((team("H"), 1.1), (team("H"), 0.9)))
+        possessions = {}
+        for label, club in (("fast", fast), ("slow", slow)):
+            possessions[label] = statistics.mean(g["team_stats"]["home"]["possessions"]
+                                                 for g in games(club, TeamInput("A", team("A").players, club.pace), 60, tag="pace"))
+        self.assertGreater(possessions["fast"], possessions["slow"] * 1.15)
+        self.assertTrue(any("pace" in e for e in team_errors(TeamInput("H", team("H").players, 1.5), RULES)))
+
+
 class ImportTests(unittest.TestCase):
     def test_a_returned_player_follows_his_franchise(self):
         import importlib.util

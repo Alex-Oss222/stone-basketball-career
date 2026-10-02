@@ -32,7 +32,7 @@ sys.path.insert(0, str(ROOT))
 from runtime.era import environment_for, rules_for
 from runtime.kernel import resolve_game, validate_result
 from runtime.player_stats import load_rating_index
-from runtime.rotations import load_rosters, miami_holds, real_rotation, season_fraction
+from runtime.rotations import club_pace, load_rosters, miami_holds, real_rotation, season_fraction
 from runtime.schedule import games_per_team, schedule_path
 from runtime.trajectories import develop_profile, needs_development
 
@@ -62,7 +62,7 @@ class League:
     def team(self, name, game_date, shift=None):
         fraction = season_fraction(SEASON, game_date, ROOT)
         team = real_rotation(name, self.rosters[name], games_per_team(SEASON, name), self.index,
-                             fraction=fraction, exclude=miami_holds(SEASON, game_date, ROOT))
+                             fraction=fraction, exclude=miami_holds(SEASON, game_date, ROOT), pace=club_pace(SEASON, name, ROOT))
         key = (name, tuple(p.player_id for p in team.players), tuple(p.availability for p in team.players), shift)
         if key not in self.cache:
             players = []

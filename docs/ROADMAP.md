@@ -34,7 +34,7 @@ Found in the engine review on real 2003-04 rosters. Model and numbers: `docs/eng
 | E3 | Stars overplayed (season shares over a top-12 list) | Minutes per game and availability on the game's date, with caps (together with item 8) | done: players with 30+ minutes play 35.3 against an input of 35.3 |
 | E4 | Results too random, no late-game logic | Foul when trailing, run the clock when leading, hold for the last shot, closing lineups, garbage time, and the score effect | done: margin SD 13.4, overtime 5.4% |
 | E5 | Too many foul-outs | Sit players in foul trouble, bring them back later | done: 0.22 per game |
-| E6 | Every club plays at the league pace | Each club's pace from the season before (the same rule as the league averages) | later: needs one upload per season, see `library/incoming/TEAM_PACE_DATA_INSTRUCTIONS.md` |
+| E6 | Every club plays at the league pace | Each club's pace from the season before (the same rule as the league averages) | done (kernel 2003.4): `library/<year>/league/nba_<season>_team_pace.json` from `scripts/import_team_pace.py`; a game runs at the average of the two clubs' paces; Miami at the league pace until its coaches set one |
 | E7 | No injuries or fatigue | Roadmap item 12 | before October 28 |
 
 ## During and after 2003-04
