@@ -1,0 +1,693 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2003-04",
+ "kind": "preseason_schedule",
+ "source": "NBA.com game data via the Kaggle \"NBA games data\" set (nathanlauga/nba-games), read from a public GitHub copy (bnafack/NBA_GAMES, data/games.csv). Schedule as played; result fields removed. Dates are US Eastern. Games against non-NBA opponents and neutral-site venues are not recorded in the source.",
+ "games": [
+  {
+   "game_id": "2003-10-05-dallas-mavericks-at-utah-jazz",
+   "date": "2003-10-05",
+   "away": "Dallas Mavericks",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2003-10-06-milwaukee-bucks-at-memphis-grizzlies",
+   "date": "2003-10-06",
+   "away": "Milwaukee Bucks",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2003-10-07-orlando-magic-at-dallas-mavericks",
+   "date": "2003-10-07",
+   "away": "Orlando Magic",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2003-10-07-cleveland-cavaliers-at-detroit-pistons",
+   "date": "2003-10-07",
+   "away": "Cleveland Cavaliers",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2003-10-07-golden-state-warriors-at-los-angeles-lakers",
+   "date": "2003-10-07",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2003-10-07-philadelphia-76ers-at-miami-heat",
+   "date": "2003-10-07",
+   "away": "Philadelphia 76ers",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2003-10-07-new-jersey-nets-at-phoenix-suns",
+   "date": "2003-10-07",
+   "away": "New Jersey Nets",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2003-10-07-houston-rockets-at-portland-trail-blazers",
+   "date": "2003-10-07",
+   "away": "Houston Rockets",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2003-10-07-los-angeles-clippers-at-sacramento-kings",
+   "date": "2003-10-07",
+   "away": "Los Angeles Clippers",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2003-10-07-new-york-knicks-at-washington-wizards",
+   "date": "2003-10-07",
+   "away": "New York Knicks",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2003-10-08-cleveland-cavaliers-at-atlanta-hawks",
+   "date": "2003-10-08",
+   "away": "Cleveland Cavaliers",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2003-10-08-detroit-pistons-at-boston-celtics",
+   "date": "2003-10-08",
+   "away": "Detroit Pistons",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2003-10-08-chicago-bulls-at-indiana-pacers",
+   "date": "2003-10-08",
+   "away": "Chicago Bulls",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2003-10-08-golden-state-warriors-at-los-angeles-lakers",
+   "date": "2003-10-08",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2003-10-08-orlando-magic-at-new-orleans-hornets",
+   "date": "2003-10-08",
+   "away": "Orlando Magic",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2003-10-08-memphis-grizzlies-at-san-antonio-spurs",
+   "date": "2003-10-08",
+   "away": "Memphis Grizzlies",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2003-10-08-houston-rockets-at-seattle-supersonics",
+   "date": "2003-10-08",
+   "away": "Houston Rockets",
+   "home": "Seattle SuperSonics"
+  },
+  {
+   "game_id": "2003-10-08-washington-wizards-at-toronto-raptors",
+   "date": "2003-10-08",
+   "away": "Washington Wizards",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2003-10-09-phoenix-suns-at-denver-nuggets",
+   "date": "2003-10-09",
+   "away": "Phoenix Suns",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2003-10-09-minnesota-timberwolves-at-milwaukee-bucks",
+   "date": "2003-10-09",
+   "away": "Minnesota Timberwolves",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2003-10-09-new-jersey-nets-at-new-york-knicks",
+   "date": "2003-10-09",
+   "away": "New Jersey Nets",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2003-10-09-sacramento-kings-at-portland-trail-blazers",
+   "date": "2003-10-09",
+   "away": "Sacramento Kings",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2003-10-10-boston-celtics-at-chicago-bulls",
+   "date": "2003-10-10",
+   "away": "Boston Celtics",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2003-10-10-seattle-supersonics-at-houston-rockets",
+   "date": "2003-10-10",
+   "away": "Seattle SuperSonics",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2003-10-10-portland-trail-blazers-at-los-angeles-clippers",
+   "date": "2003-10-10",
+   "away": "Portland Trail Blazers",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2003-10-10-atlanta-hawks-at-miami-heat",
+   "date": "2003-10-10",
+   "away": "Atlanta Hawks",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2003-10-10-philadelphia-76ers-at-washington-wizards",
+   "date": "2003-10-10",
+   "away": "Philadelphia 76ers",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2003-10-11-new-orleans-hornets-at-dallas-mavericks",
+   "date": "2003-10-11",
+   "away": "New Orleans Hornets",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2003-10-11-sacramento-kings-at-golden-state-warriors",
+   "date": "2003-10-11",
+   "away": "Sacramento Kings",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2003-10-11-boston-celtics-at-indiana-pacers",
+   "date": "2003-10-11",
+   "away": "Boston Celtics",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2003-10-11-chicago-bulls-at-milwaukee-bucks",
+   "date": "2003-10-11",
+   "away": "Chicago Bulls",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2003-10-11-minnesota-timberwolves-at-new-york-knicks",
+   "date": "2003-10-11",
+   "away": "Minnesota Timberwolves",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2003-10-11-miami-heat-at-orlando-magic",
+   "date": "2003-10-11",
+   "away": "Miami Heat",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2003-10-11-san-antonio-spurs-at-philadelphia-76ers",
+   "date": "2003-10-11",
+   "away": "San Antonio Spurs",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2003-10-11-denver-nuggets-at-phoenix-suns",
+   "date": "2003-10-11",
+   "away": "Denver Nuggets",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2003-10-11-seattle-supersonics-at-utah-jazz",
+   "date": "2003-10-11",
+   "away": "Seattle SuperSonics",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2003-10-12-toronto-raptors-at-detroit-pistons",
+   "date": "2003-10-12",
+   "away": "Toronto Raptors",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2003-10-12-new-orleans-hornets-at-houston-rockets",
+   "date": "2003-10-12",
+   "away": "New Orleans Hornets",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2003-10-12-san-antonio-spurs-at-new-york-knicks",
+   "date": "2003-10-12",
+   "away": "San Antonio Spurs",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2003-10-13-milwaukee-bucks-at-cleveland-cavaliers",
+   "date": "2003-10-13",
+   "away": "Milwaukee Bucks",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2003-10-13-atlanta-hawks-at-minnesota-timberwolves",
+   "date": "2003-10-13",
+   "away": "Atlanta Hawks",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2003-10-14-indiana-pacers-at-chicago-bulls",
+   "date": "2003-10-14",
+   "away": "Indiana Pacers",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2003-10-14-dallas-mavericks-at-los-angeles-clippers",
+   "date": "2003-10-14",
+   "away": "Dallas Mavericks",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2003-10-14-phoenix-suns-at-los-angeles-lakers",
+   "date": "2003-10-14",
+   "away": "Phoenix Suns",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2003-10-14-washington-wizards-at-memphis-grizzlies",
+   "date": "2003-10-14",
+   "away": "Washington Wizards",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2003-10-14-san-antonio-spurs-at-miami-heat",
+   "date": "2003-10-14",
+   "away": "San Antonio Spurs",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2003-10-14-philadelphia-76ers-at-new-jersey-nets",
+   "date": "2003-10-14",
+   "away": "Philadelphia 76ers",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2003-10-14-new-orleans-hornets-at-orlando-magic",
+   "date": "2003-10-14",
+   "away": "New Orleans Hornets",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2003-10-14-seattle-supersonics-at-portland-trail-blazers",
+   "date": "2003-10-14",
+   "away": "Seattle SuperSonics",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2003-10-14-houston-rockets-at-sacramento-kings",
+   "date": "2003-10-14",
+   "away": "Houston Rockets",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2003-10-14-new-york-knicks-at-utah-jazz",
+   "date": "2003-10-14",
+   "away": "New York Knicks",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2003-10-15-boston-celtics-at-detroit-pistons",
+   "date": "2003-10-15",
+   "away": "Boston Celtics",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2003-10-15-seattle-supersonics-at-golden-state-warriors",
+   "date": "2003-10-15",
+   "away": "Seattle SuperSonics",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2003-10-15-denver-nuggets-at-indiana-pacers",
+   "date": "2003-10-15",
+   "away": "Denver Nuggets",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2003-10-15-toronto-raptors-at-minnesota-timberwolves",
+   "date": "2003-10-15",
+   "away": "Toronto Raptors",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2003-10-16-miami-heat-at-atlanta-hawks",
+   "date": "2003-10-16",
+   "away": "Miami Heat",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2003-10-16-sacramento-kings-at-houston-rockets",
+   "date": "2003-10-16",
+   "away": "Sacramento Kings",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2003-10-16-phoenix-suns-at-los-angeles-clippers",
+   "date": "2003-10-16",
+   "away": "Phoenix Suns",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2003-10-16-cleveland-cavaliers-at-los-angeles-lakers",
+   "date": "2003-10-16",
+   "away": "Cleveland Cavaliers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2003-10-16-chicago-bulls-at-new-orleans-hornets",
+   "date": "2003-10-16",
+   "away": "Chicago Bulls",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2003-10-16-orlando-magic-at-utah-jazz",
+   "date": "2003-10-16",
+   "away": "Orlando Magic",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2003-10-17-miami-heat-at-detroit-pistons",
+   "date": "2003-10-17",
+   "away": "Miami Heat",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2003-10-17-minnesota-timberwolves-at-indiana-pacers",
+   "date": "2003-10-17",
+   "away": "Minnesota Timberwolves",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2003-10-17-cleveland-cavaliers-at-los-angeles-clippers",
+   "date": "2003-10-17",
+   "away": "Cleveland Cavaliers",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2003-10-17-phoenix-suns-at-los-angeles-lakers",
+   "date": "2003-10-17",
+   "away": "Phoenix Suns",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2003-10-17-orlando-magic-at-memphis-grizzlies",
+   "date": "2003-10-17",
+   "away": "Orlando Magic",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2003-10-17-boston-celtics-at-new-jersey-nets",
+   "date": "2003-10-17",
+   "away": "Boston Celtics",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2003-10-17-new-york-knicks-at-san-antonio-spurs",
+   "date": "2003-10-17",
+   "away": "New York Knicks",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2003-10-17-denver-nuggets-at-toronto-raptors",
+   "date": "2003-10-17",
+   "away": "Denver Nuggets",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2003-10-17-philadelphia-76ers-at-utah-jazz",
+   "date": "2003-10-17",
+   "away": "Philadelphia 76ers",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2003-10-18-indiana-pacers-at-boston-celtics",
+   "date": "2003-10-18",
+   "away": "Indiana Pacers",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2003-10-18-milwaukee-bucks-at-chicago-bulls",
+   "date": "2003-10-18",
+   "away": "Milwaukee Bucks",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2003-10-18-philadelphia-76ers-at-dallas-mavericks",
+   "date": "2003-10-18",
+   "away": "Philadelphia 76ers",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2003-10-18-atlanta-hawks-at-memphis-grizzlies",
+   "date": "2003-10-18",
+   "away": "Atlanta Hawks",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2003-10-18-toronto-raptors-at-new-jersey-nets",
+   "date": "2003-10-18",
+   "away": "Toronto Raptors",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2003-10-18-washington-wizards-at-new-orleans-hornets",
+   "date": "2003-10-18",
+   "away": "Washington Wizards",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2003-10-18-portland-trail-blazers-at-seattle-supersonics",
+   "date": "2003-10-18",
+   "away": "Portland Trail Blazers",
+   "home": "Seattle SuperSonics"
+  },
+  {
+   "game_id": "2003-10-19-denver-nuggets-at-detroit-pistons",
+   "date": "2003-10-19",
+   "away": "Denver Nuggets",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2003-10-19-los-angeles-clippers-at-golden-state-warriors",
+   "date": "2003-10-19",
+   "away": "Los Angeles Clippers",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2003-10-19-cleveland-cavaliers-at-los-angeles-lakers",
+   "date": "2003-10-19",
+   "away": "Cleveland Cavaliers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2003-10-19-seattle-supersonics-at-sacramento-kings",
+   "date": "2003-10-19",
+   "away": "Seattle SuperSonics",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2003-10-19-dallas-mavericks-at-san-antonio-spurs",
+   "date": "2003-10-19",
+   "away": "Dallas Mavericks",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2003-10-20-milwaukee-bucks-at-minnesota-timberwolves",
+   "date": "2003-10-20",
+   "away": "Milwaukee Bucks",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2003-10-20-new-orleans-hornets-at-philadelphia-76ers",
+   "date": "2003-10-20",
+   "away": "New Orleans Hornets",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2003-10-20-denver-nuggets-at-portland-trail-blazers",
+   "date": "2003-10-20",
+   "away": "Denver Nuggets",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2003-10-20-atlanta-hawks-at-washington-wizards",
+   "date": "2003-10-20",
+   "away": "Atlanta Hawks",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2003-10-21-utah-jazz-at-dallas-mavericks",
+   "date": "2003-10-21",
+   "away": "Utah Jazz",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2003-10-21-milwaukee-bucks-at-detroit-pistons",
+   "date": "2003-10-21",
+   "away": "Milwaukee Bucks",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2003-10-21-memphis-grizzlies-at-miami-heat",
+   "date": "2003-10-21",
+   "away": "Memphis Grizzlies",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2003-10-21-new-york-knicks-at-new-jersey-nets",
+   "date": "2003-10-21",
+   "away": "New York Knicks",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2003-10-21-chicago-bulls-at-toronto-raptors",
+   "date": "2003-10-21",
+   "away": "Chicago Bulls",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2003-10-22-minnesota-timberwolves-at-boston-celtics",
+   "date": "2003-10-22",
+   "away": "Minnesota Timberwolves",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2003-10-22-washington-wizards-at-cleveland-cavaliers",
+   "date": "2003-10-22",
+   "away": "Washington Wizards",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2003-10-22-denver-nuggets-at-houston-rockets",
+   "date": "2003-10-22",
+   "away": "Denver Nuggets",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2003-10-22-atlanta-hawks-at-orlando-magic",
+   "date": "2003-10-22",
+   "away": "Atlanta Hawks",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2003-10-22-phoenix-suns-at-portland-trail-blazers",
+   "date": "2003-10-22",
+   "away": "Phoenix Suns",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2003-10-22-dallas-mavericks-at-sacramento-kings",
+   "date": "2003-10-22",
+   "away": "Dallas Mavericks",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2003-10-22-new-orleans-hornets-at-san-antonio-spurs",
+   "date": "2003-10-22",
+   "away": "New Orleans Hornets",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2003-10-22-golden-state-warriors-at-seattle-supersonics",
+   "date": "2003-10-22",
+   "away": "Golden State Warriors",
+   "home": "Seattle SuperSonics"
+  },
+  {
+   "game_id": "2003-10-23-memphis-grizzlies-at-chicago-bulls",
+   "date": "2003-10-23",
+   "away": "Memphis Grizzlies",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2003-10-23-los-angeles-clippers-at-los-angeles-lakers",
+   "date": "2003-10-23",
+   "away": "Los Angeles Clippers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2003-10-23-indiana-pacers-at-minnesota-timberwolves",
+   "date": "2003-10-23",
+   "away": "Indiana Pacers",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2003-10-23-utah-jazz-at-new-york-knicks",
+   "date": "2003-10-23",
+   "away": "Utah Jazz",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2003-10-23-new-jersey-nets-at-philadelphia-76ers",
+   "date": "2003-10-23",
+   "away": "New Jersey Nets",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2003-10-23-cleveland-cavaliers-at-toronto-raptors",
+   "date": "2003-10-23",
+   "away": "Cleveland Cavaliers",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2003-10-24-washington-wizards-at-atlanta-hawks",
+   "date": "2003-10-24",
+   "away": "Washington Wizards",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2003-10-24-new-jersey-nets-at-boston-celtics",
+   "date": "2003-10-24",
+   "away": "New Jersey Nets",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2003-10-24-indiana-pacers-at-denver-nuggets",
+   "date": "2003-10-24",
+   "away": "Indiana Pacers",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2003-10-24-golden-state-warriors-at-los-angeles-clippers",
+   "date": "2003-10-24",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2003-10-24-sacramento-kings-at-los-angeles-lakers",
+   "date": "2003-10-24",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2003-10-24-detroit-pistons-at-milwaukee-bucks",
+   "date": "2003-10-24",
+   "away": "Detroit Pistons",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2003-10-24-utah-jazz-at-orlando-magic",
+   "date": "2003-10-24",
+   "away": "Utah Jazz",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2003-10-24-portland-trail-blazers-at-phoenix-suns",
+   "date": "2003-10-24",
+   "away": "Portland Trail Blazers",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2003-10-24-houston-rockets-at-san-antonio-spurs",
+   "date": "2003-10-24",
+   "away": "Houston Rockets",
+   "home": "San Antonio Spurs"
+  }
+ ]
+}

@@ -90,5 +90,17 @@ class ScheduleImportTests(unittest.TestCase):
             read_games(path, set(CLUBS))
 
 
+class RepositorySchedules(unittest.TestCase):
+    def test_2003_04_schedules(self):
+        self.assertEqual(schedule_errors(ROOT), [])
+        regular = json.loads((ROOT / "library/2003/league/nba_2003_04_schedule.json").read_text())
+        miami = [g for g in regular["games"] if "Miami Heat" in (g["home"], g["away"])]
+        self.assertEqual((len(regular["games"]), len(miami)), (1189, 82))
+        self.assertEqual(miami[0]["game_id"], "2003-10-28-miami-heat-at-philadelphia-76ers")
+        preseason = json.loads((ROOT / "library/2003/league/nba_2003_04_preseason_schedule.json").read_text())
+        self.assertEqual(preseason["kind"], "preseason_schedule")
+        self.assertEqual(len(preseason["games"]), 114)
+
+
 if __name__ == "__main__":
     unittest.main()
