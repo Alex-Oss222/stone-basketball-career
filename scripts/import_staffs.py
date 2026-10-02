@@ -19,8 +19,13 @@ real club only on dates the career clock has reached, and once simulated Miami
 hires him he leaves his real club from that date (as AGENTS.md rule 2 does for
 players).
 
+Head coaches' games coached and IDs come from the uploaded Basketball-Reference
+season coaches tables (library/incoming/nba_coaches_2003_2014/); the club
+pages give their order within a season.
+
 Usage: python scripts/import_staffs.py <raw.json>
 """
+import csv
 import json
 from pathlib import Path
 import re
@@ -31,6 +36,8 @@ sys.path.insert(0, str(ROOT))
 
 SOURCE = "Basketball-Reference team season pages (https://www.basketball-reference.com/teams/<code>/<year>.html)"
 SIMULATED = "MIA"
+# The end-of-2002-03 baseline uses ESPN-style codes; Basketball-Reference's differ for these clubs.
+BBR_CODES = {"GS": "GSW", "NJ": "NJN", "NO": "NOH", "NY": "NYK", "PHX": "PHO", "SA": "SAS", "UTAH": "UTA", "WSH": "WAS"}
 ROLE_WORDS = ("Assistant", "Associate", "Head", "Lead", "Trainer", "Athletic", "Strength", "Player", "Scout",
               "Advance", "Director", "Video", "Coach", "Consultant", "Special", "Shooting", "Development",
               "Equipment", "Team", "General", "Vice", "President", "Physical", "Massage", "Manager", "Coordinator")
@@ -55,7 +62,7 @@ def head_coaches(text):
 
 
 def club_names():
-    names = {c["code"]: n for n, c in json.loads(
+    names = {BBR_CODES.get(c["code"], c["code"]): n for n, c in json.loads(
         (ROOT / "library/2003/league/nba_2003_end_of_season.json").read_text(encoding="utf-8"))["clubs"].items()}
     by_season = {2003: dict(names)}
     for path in (ROOT / "library").glob("*/league/*_team_rosters.json"):
@@ -66,8 +73,23 @@ def club_names():
     return by_season
 
 
-def main(raw_path):
+def coach_tables(folder):
+    """(season end year, club code) -> [(coach, games, bbr coach id)] from the uploaded coaches tables."""
+    out = {}
+    for path in sorted(Path(folder).glob("nba_*_coaches.csv")):
+        year = int(re.search(r"nba_(\d{4})_coaches", path.name).group(1))
+        rows = list(csv.reader(path.open(encoding="utf-8-sig")))
+        header = next(r for r in rows if r and r[0] == "Coach")
+        team, games, ident = header.index("Tm"), header.index("G"), header.index("Coach-additional")
+        for r in rows:
+            if len(r) == len(header) and r[0] and r[0] != "Coach" and r[team]:
+                out.setdefault((year, r[team]), []).append((r[0], int(r[games] or 0), r[ident]))
+    return out
+
+
+def main(raw_path, coaches_folder=ROOT / "library/incoming/nba_coaches_2003_2014"):
     raw = json.loads(Path(raw_path).read_text(encoding="utf-8"))
+    tables = coach_tables(coaches_folder)
     names = club_names()
     seasons = {}
     for key, page in raw.items():
@@ -76,11 +98,17 @@ def main(raw_path):
             raise SystemExit(f"{key}: page was not fetched")
         if code == SIMULATED and year > 2003:
             continue
-        coaches = head_coaches(page.get("coach"))
-        total = sum(g for _, g in coaches) or 1
+        # Order from the club's page; games and IDs from the coaches table (records are dropped).
+        table = {name: (games, ident) for name, games, ident in tables.get((year, code), [])}
+        order = [name for name, _ in head_coaches(page.get("coach"))]
+        if set(order) != set(table):
+            raise SystemExit(f"{key}: club page coaches {order} differ from the coaches table {sorted(table)}")
+        total = sum(g for g, _ in table.values()) or 1
         done, head = 0, []
-        for name, games in coaches:
-            head.append({"name": name, "window": [round(done / total, 4), round((done + games) / total, 4)]})
+        for name in order:
+            games, ident = table[name]
+            head.append({"name": name, "bbr_id": ident or None,
+                         "window": [round(done / total, 4), round((done + games) / total, 4)]})
             done += games
         if head:
             head[-1]["window"][1] = 1.0
