@@ -58,15 +58,15 @@ Six seasons of the real 2003-04 schedule without Miami's games (6,642 games, 79 
 
 | Measure | Kernel 2003.2 | Kernel 2003.3 | Benchmark |
 | --- | ---: | ---: | --- |
-| Points per team per game | 95.2 | 95.3 | 95.1 (2002-03 environment) |
-| Final-margin SD | 15.8 | 13.1 | 13-14 |
-| Overtime games | 2.8% | 5.0% | 5-7% |
+| Points per team per game | 95.2 | 95.1 | 95.1 (2002-03 environment) |
+| Final-margin SD | 15.8 | 13.4 | 13-14 |
+| Overtime games | 2.8% | 5.1% | 5-7% |
 | Home win rate | 59.5% | 59.9% | 57-63% |
-| Home edge, home minus neutral on the same games | not measured | +3.1 ± 0.2 | 3.0 (environment assumption) |
+| Home edge, home minus neutral on the same games | not measured | +3.0 ± 0.2 | 3.0 (environment assumption) |
 | Foul-outs per game | 0.75 | 0.22 | 0.2-0.3 |
-| Spread of club average margins within a season | about 3.3 | 4.6 | 4-5 |
-| Players with 30+ input minutes: simulated vs input minutes per game | not measured | 35.9 vs 35.3 | their input |
+| Spread of club average margins within a season | about 3.3 | 4.7 | 4-5 |
+| Players with 30+ input minutes: simulated vs input minutes per game | not measured | 35.6 vs 35.3 | their input |
 
-Box totals per team: FGA 81.1 (80.8), FTA 24.9 (24.4), turnovers 15.2 (14.9), offensive rebounds 12.1 (12.0), assists 21.7 (21.5), fouls 22.2 (21.8); environment values in brackets. Three-point attempts run at 15.2 against 14.7: the 2003-04 players' own three-point rates, weighted by their attempts, are about 3% above the 2002-03 environment.
+Box totals per team: FGA 81.1 (80.8), FTA 24.9 (24.4), turnovers 15.2 (14.9), offensive rebounds 12.1 (12.0), assists 21.7 (21.5), fouls 22.1 (21.8); environment values in brackets. Three-point attempts run at 15.1 against 14.7: the 2003-04 players' own three-point rates, weighted by their attempts, are about 3% above the 2002-03 environment.
 
 Known gaps: team pace is uniform (problem E6); there are no injuries or fatigue (problem E7, roadmap item 12); from 2004-05, players real Miami traded away between seasons still follow history, because the season tables cannot tell a trade from a free-agent move (roadmap item 8).

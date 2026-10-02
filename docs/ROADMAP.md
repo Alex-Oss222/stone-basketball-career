@@ -30,9 +30,9 @@ Found in the engine review on real 2003-04 rosters. Model and numbers: `docs/eng
 | # | Problem | Fix | Status |
 |---|---|---|---|
 | E1 | Defense barely existed: only legacy grades, steals and blocks | Real DBPM in the careers data; the five defenders on the floor move the opponent's shooting and turnovers | done (kernel 2003.3): +5 on the floor allows 5.1 fewer points per 100 |
-| E2 | Team quality compressed | E1, plus a score effect centred on the margin the rosters should produce, so it removes random swings but not quality | done: spread of club average margins 4.6 within a season (benchmark 4-5) |
-| E3 | Stars overplayed (season shares over a top-12 list) | Minutes per game and availability on the game's date, with caps (together with item 8) | done: players with 30+ minutes play 35.9 against an input of 35.3 |
-| E4 | Results too random, no late-game logic | Foul when trailing, run the clock when leading, hold for the last shot, closing lineups, garbage time, and the score effect | done: margin SD 13.1, overtime 5.0% |
+| E2 | Team quality compressed | E1, plus a score effect centred on the margin the rosters should produce, so it removes random swings but not quality | done: spread of club average margins 4.7 within a season (benchmark 4-5) |
+| E3 | Stars overplayed (season shares over a top-12 list) | Minutes per game and availability on the game's date, with caps (together with item 8) | done: players with 30+ minutes play 35.6 against an input of 35.3 |
+| E4 | Results too random, no late-game logic | Foul when trailing, run the clock when leading, hold for the last shot, closing lineups, garbage time, and the score effect | done: margin SD 13.4, overtime 5.1% |
 | E5 | Too many foul-outs | Sit players in foul trouble, bring them back later | done: 0.22 per game |
 | E6 | Every club plays at the league pace | Each club's pace from the season before (the same rule as the league averages) | later: needs one upload per season, see `library/incoming/TEAM_PACE_DATA_INSTRUCTIONS.md` |
 | E7 | No injuries or fatigue | Roadmap item 12 | before October 28 |
