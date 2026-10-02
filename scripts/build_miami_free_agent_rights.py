@@ -16,16 +16,14 @@ sys.path.insert(0, str(ROOT))
 from runtime.cba import bird_seasons, bird_status, cap_hold, first_season_with_team, qualifying_offer, rfa_eligible, rules
 
 OUT = Path("career/Dwyane_Wade/2003-04/00_Team/Finances/free_agent_rights.json")
-MIN_KEYS = {0: "0_years", 1: "1_year", 2: "2_years"}
 
 
 def build(root=ROOT):
     cba = rules(root)
     inventory = json.loads((root / "library/2003/league/nba_2003_contracts.json").read_text())
     cap = json.loads((root / "library/2003/league/nba_2003_04_cap_rules.json").read_text())
-    priors = [p["prior_season_salary"]["amount"] for c in inventory["clubs"].values() for p in c["players"]
-              if (p.get("prior_season_salary") or {}).get("amount")]
-    average = sum(priors) / len(priors)
+    average = cba["average_salary"]["2003-04_threshold"]
+    minimums = json.loads((root / "library/2003/league/nba_1999_cba_minimum_salary_scale.json").read_text())["seasons"]["2003-04"]
     miami = {p["bbr_id"]: p for p in inventory["clubs"]["Miami Heat"]["players"] if p["status"] == "free_agent_expiring"}
     tenure = list(csv.DictReader((root / "library/2003/league/miami_expiring_tenure.csv").open(encoding="utf-8")))
     players = []
@@ -37,15 +35,18 @@ def build(root=ROOT):
         with_team = bird_seasons(row["join_date"])
         status = bird_status(with_team)
         max_key = "10_plus_years" if nba_seasons >= 10 else "7_to_9_years" if nba_seasons >= 7 else "0_to_6_years"
+        # Maximum salary: the greater of the service-tier maximum and 105% of previous salary (FAQ Q22).
+        max_salary = max(cap["maximum_salary"][max_key], round(prior * 1.05))
         hold, percent, notes = cap_hold(prior, status, rookie_scale=False, above_average=prior >= average,
-                                        max_salary=cap["maximum_salary"][max_key], cba=cba)
-        if prior <= cap["minimum_salary"].get("2_years", 0) + 150000:
+                                        max_salary=max_salary, cba=cba)
+        minimum = minimums["10_plus" if nba_seasons >= 10 else str(nba_seasons)]
+        if prior <= minimum + 150000:
             notes.append("previous salary is minimum-level; a separate minimum-contract hold rule is unverified (rules file, unverified[0])")
         entered = min(r["season"] for r in seasons_played)
         eligible = rfa_eligible(entered, nba_seasons, cba)
         qo, qo_basis = (None, "not eligible for restricted free agency")
         if eligible:
-            qo, qo_basis = qualifying_offer(prior, cap["minimum_salary"].get(MIN_KEYS.get(nba_seasons, ""), None), cba)
+            qo, qo_basis = qualifying_offer(prior, minimum, cba)
         players.append({
             "player": row["player"], "bbr_id": row["bbr_id"], "previous_salary": prior,
             "joined_miami": {"how": row["how_joined_miami"], "date": row["join_date"],
@@ -61,8 +62,8 @@ def build(root=ROOT):
         "purpose": "Rights and cap holds for Miami's expiring contracts. Facts and rule computations only; no decision is recorded here.",
         "rules": str(Path("library/2003/league/nba_1999_cba_rules.json")),
         "tenure_source": "library/2003/league/miami_expiring_tenure.csv",
-        "derived_2002_03_average_salary": round(average),
-        "average_salary_note": f"Mean of {len(priors)} 2002-03 salaries in the league contract inventory; used only to decide above or below average.",
+        "average_salary_threshold": average,
+        "average_salary_note": "2003-04 mid-level exception, which equals the average salary under the 1999 agreement (rules file, average_salary).",
         "special_cases": {
             "Mike James": "Waived 2001-10-25 and re-signed 2001-12-18; a waiver restarts the Bird clock, so 2001-02 counts from the re-signing.",
             "Alonzo Mourning": "Under contract through 2002-03 although he missed the season; his Bird clock continues.",

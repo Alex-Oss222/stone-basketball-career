@@ -503,6 +503,17 @@ def validate():
     try:
         if json.loads((ROOT / RIGHTS_PATH).read_text(encoding="utf-8")) != json.loads(json.dumps(build_rights(ROOT))):
             errors.append("Miami free-agent rights are stale; run scripts/build_miami_free_agent_rights.py")
+        league_rights = json.loads((ROOT / "library/2003/league/nba_2003_free_agent_rights.json").read_text(encoding="utf-8"))
+        if any(p["status"] in ("free_agent_restricted", "free_agent_unrestricted")
+               for c in league_rights["clubs"].values() for p in c["free_agents"]):
+            errors.append("league free-agent rights must not carry restricted/unrestricted marks (qualifying offers are June 30 decisions)")
+        bird_names = {"bird": "larry_bird", "early_bird": "early_bird", "non_bird": "non_bird"}
+        league_miami = {p["bbr_id"]: p for p in league_rights["clubs"]["Miami Heat"]["free_agents"]}
+        for p in json.loads((ROOT / RIGHTS_PATH).read_text(encoding="utf-8"))["players"]:
+            other = league_miami.get(p["bbr_id"], {})
+            if (bird_names.get(other.get("bird_class")), other.get("cap_hold_amount"), other.get("qualifying_offer_amount")) != \
+                    (p["bird_status"], p["cap_hold"], p["qualifying_offer"]):
+                errors.append(f"Miami free-agent rights disagree with the league rights file for {p['player']}")
     except (OSError, ValueError, KeyError) as exc:
         errors.append(f"cannot validate Miami free-agent rights: {exc}")
 

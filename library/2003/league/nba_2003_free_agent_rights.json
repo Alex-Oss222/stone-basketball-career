@@ -46,7 +46,7 @@
     {
      "player": "DerMarr Johnson",
      "bbr_id": "johnsde03",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2423280,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -63,12 +63,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Mikki Moore",
      "bbr_id": "mooremi01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2412500,
      "nba_seasons_before_2003_04": 5,
      "minimum_salary_2003_04": 751179,
@@ -111,12 +112,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Jason Terry",
      "bbr_id": "terryja01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2153934,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -133,12 +135,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": true
     },
     {
      "player": "Dion Glover",
      "bbr_id": "glovedi01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1584312,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -155,12 +158,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": true
     },
     {
      "player": "Emanual Davis",
      "bbr_id": "davisem01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 824935,
      "nba_seasons_before_2003_04": 6,
      "minimum_salary_2003_04": 813679,
@@ -201,12 +205,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Darvin Ham",
      "bbr_id": "hamda01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 699935,
      "nba_seasons_before_2003_04": 6,
      "minimum_salary_2003_04": 813679,
@@ -231,12 +236,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Ira Newble",
      "bbr_id": "newblir01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 587435,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -282,12 +288,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Jermaine Jackson",
      "bbr_id": "jacksje01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 171932,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -337,7 +344,8 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 21838620,
@@ -349,7 +357,7 @@
     {
      "player": "Bimbo Coles",
      "bbr_id": "colesbi01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2400000,
      "nba_seasons_before_2003_04": 13,
      "minimum_salary_2003_04": 1070000,
@@ -383,12 +391,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Mark Bryant",
      "bbr_id": "bryanma01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1030000,
      "nba_seasons_before_2003_04": 15,
      "minimum_salary_2003_04": 1070000,
@@ -440,12 +449,13 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Walter McCarty",
      "bbr_id": "mccarwa01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 762435,
      "nba_seasons_before_2003_04": 7,
      "minimum_salary_2003_04": 876179,
@@ -463,12 +473,13 @@
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
       "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Mark Blount",
      "bbr_id": "blounma01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 762435,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -504,12 +515,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Grant Long",
      "bbr_id": "longgr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": null,
      "nba_seasons_before_2003_04": 15,
      "minimum_salary_2003_04": 1070000,
@@ -534,7 +546,8 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 6658792,
@@ -546,7 +559,7 @@
     {
      "player": "Corie Blount",
      "bbr_id": "blounco01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1400000,
      "nba_seasons_before_2003_04": 10,
      "minimum_salary_2003_04": 1070000,
@@ -581,12 +594,13 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Fred Hoiberg",
      "bbr_id": "hoibefr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1400000,
      "nba_seasons_before_2003_04": 8,
      "minimum_salary_2003_04": 938679,
@@ -603,12 +617,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Rick Brunson",
      "bbr_id": "brunsri01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 699935,
      "nba_seasons_before_2003_04": 6,
      "minimum_salary_2003_04": 813679,
@@ -660,7 +675,8 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 5319922,
@@ -672,7 +688,7 @@
     {
      "player": "Jumaine Jones",
      "bbr_id": "jonesju01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1419026,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -695,12 +711,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Milt Palacio",
      "bbr_id": "palacmi01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 750000,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -745,12 +762,13 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Smush Parker",
      "bbr_id": "parkesm01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 349458,
      "nba_seasons_before_2003_04": 1,
      "minimum_salary_2003_04": 563679,
@@ -775,12 +793,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Tierre Brown",
      "bbr_id": "brownti01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": null,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -811,7 +830,8 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 6176428,
@@ -823,7 +843,7 @@
     {
      "player": "Popeye Jones",
      "bbr_id": "jonespo01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1030000,
      "nba_seasons_before_2003_04": 10,
      "minimum_salary_2003_04": 1070000,
@@ -854,12 +874,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Walt Williams",
      "bbr_id": "williwa02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1030000,
      "nba_seasons_before_2003_04": 11,
      "minimum_salary_2003_04": 1070000,
@@ -884,12 +905,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Adrian Griffin",
      "bbr_id": "griffad01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 637435,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -914,12 +936,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Raja Bell",
      "bbr_id": "bellra01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 612435,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -955,7 +978,8 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 4035588,
@@ -967,7 +991,7 @@
     {
      "player": "Juwan Howard",
      "bbr_id": "howarju01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 20625000,
      "nba_seasons_before_2003_04": 9,
      "minimum_salary_2003_04": 1000000,
@@ -998,12 +1022,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Shammond Williams",
      "bbr_id": "willish01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2000000,
      "nba_seasons_before_2003_04": 5,
      "minimum_salary_2003_04": 751179,
@@ -1031,12 +1056,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Donnell Harvey",
      "bbr_id": "harvedo01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 992040,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -1059,12 +1085,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Chris Andersen",
      "bbr_id": "anderch01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 512435,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -1089,12 +1116,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Adam Harrington",
      "bbr_id": "harriad01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 140636,
      "nba_seasons_before_2003_04": 1,
      "minimum_salary_2003_04": 563679,
@@ -1127,7 +1155,8 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 28475259,
@@ -1139,7 +1168,7 @@
     {
      "player": "Jon Barry",
      "bbr_id": "barryjo01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 3175000,
      "nba_seasons_before_2003_04": 11,
      "minimum_salary_2003_04": 1070000,
@@ -1162,12 +1191,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Richard Hamilton",
      "bbr_id": "hamilri01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2681783,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -1190,12 +1220,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Don Reid",
      "bbr_id": "reiddo01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1100000,
      "nba_seasons_before_2003_04": 8,
      "minimum_salary_2003_04": 938679,
@@ -1224,12 +1255,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Danny Manning",
      "bbr_id": "mannida01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 900000,
      "nba_seasons_before_2003_04": 15,
      "minimum_salary_2003_04": 1070000,
@@ -1274,7 +1306,8 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 17675349,
@@ -1286,7 +1319,7 @@
     {
      "player": "Earl Boykins",
      "bbr_id": "boykiea01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 528605,
      "nba_seasons_before_2003_04": 5,
      "minimum_salary_2003_04": 751179,
@@ -1321,12 +1354,13 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Gilbert Arenas",
      "bbr_id": "arenagi01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 512435,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -1346,7 +1380,8 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 1300492,
@@ -1358,7 +1393,7 @@
     {
      "player": "James Posey",
      "bbr_id": "poseyja01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1723606,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -1381,12 +1416,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Jason Collier",
      "bbr_id": "collija02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1369440,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -1403,12 +1439,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Juaquin Hawkins",
      "bbr_id": "hawkiju01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 587435,
      "nba_seasons_before_2003_04": 1,
      "minimum_salary_2003_04": 563679,
@@ -1433,7 +1470,8 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 8614620,
@@ -1445,7 +1483,7 @@
     {
      "player": "Reggie Miller",
      "bbr_id": "millere01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 12046473,
      "nba_seasons_before_2003_04": 16,
      "minimum_salary_2003_04": 1070000,
@@ -1463,12 +1501,13 @@
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
       "Limited to the maximum salary for his years of service."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Jermaine O'Neal",
      "bbr_id": "onealje01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 6900000,
      "nba_seasons_before_2003_04": 7,
      "minimum_salary_2003_04": 876179,
@@ -1485,12 +1524,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Brad Miller",
      "bbr_id": "millebr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 4800000,
      "nba_seasons_before_2003_04": 5,
      "minimum_salary_2003_04": 751179,
@@ -1521,12 +1561,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Tim Hardaway",
      "bbr_id": "hardati01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1000000,
      "nba_seasons_before_2003_04": 13,
      "minimum_salary_2003_04": 1070000,
@@ -1567,12 +1608,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Erick Strickland",
      "bbr_id": "stricer01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 762435,
      "nba_seasons_before_2003_04": 7,
      "minimum_salary_2003_04": 876179,
@@ -1609,7 +1651,8 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 37408922,
@@ -1621,7 +1664,7 @@
     {
      "player": "Michael Olowokandi",
      "bbr_id": "olowomi01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 6061213,
      "nba_seasons_before_2003_04": 5,
      "minimum_salary_2003_04": 751179,
@@ -1638,12 +1681,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Elton Brand",
      "bbr_id": "brandel01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 4895656,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -1669,12 +1713,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Lamar Odom",
      "bbr_id": "odomla01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 3557585,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -1691,12 +1736,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": true
     },
     {
      "player": "Eric Piatkowski",
      "bbr_id": "piatker01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 3000000,
      "nba_seasons_before_2003_04": 9,
      "minimum_salary_2003_04": 1000000,
@@ -1713,12 +1759,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Sean Rooks",
      "bbr_id": "rooksse01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2640000,
      "nba_seasons_before_2003_04": 11,
      "minimum_salary_2003_04": 1070000,
@@ -1735,12 +1782,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Andre Miller",
      "bbr_id": "millean02",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2460709,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -1763,12 +1811,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Corey Maggette",
      "bbr_id": "maggeco01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2069764,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -1785,12 +1834,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": true
     },
     {
      "player": "Cherokee Parks",
      "bbr_id": "parksch02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 824935,
      "nba_seasons_before_2003_04": 8,
      "minimum_salary_2003_04": 938679,
@@ -1832,7 +1882,8 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 56585916,
@@ -1844,7 +1895,7 @@
     {
      "player": "Tracy Murray",
      "bbr_id": "murratr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 3740000,
      "nba_seasons_before_2003_04": 11,
      "minimum_salary_2003_04": 1070000,
@@ -1878,12 +1929,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Samaki Walker",
      "bbr_id": "walkesa01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1540000,
      "nba_seasons_before_2003_04": 7,
      "minimum_salary_2003_04": 876179,
@@ -1912,12 +1964,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Brian Shaw",
      "bbr_id": "shawbr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1030000,
      "nba_seasons_before_2003_04": 14,
      "minimum_salary_2003_04": 1070000,
@@ -1935,12 +1988,13 @@
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
       "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Mark Madsen",
      "bbr_id": "madsema01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 813000,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -1957,7 +2011,8 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 13168000,
@@ -1969,7 +2024,7 @@
     {
      "player": "Mike Batiste",
      "bbr_id": "batismi01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 349458,
      "nba_seasons_before_2003_04": 1,
      "minimum_salary_2003_04": 563679,
@@ -2004,7 +2059,8 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 419350,
@@ -2016,7 +2072,7 @@
     {
      "player": "Alonzo Mourning",
      "bbr_id": "mournal01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 20629800,
      "nba_seasons_before_2003_04": 10,
      "minimum_salary_2003_04": 1070000,
@@ -2034,12 +2090,13 @@
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
       "Limited to the maximum salary for his years of service."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Travis Best",
      "bbr_id": "besttr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1400000,
      "nba_seasons_before_2003_04": 8,
      "minimum_salary_2003_04": 938679,
@@ -2068,12 +2125,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Vladimir Stepania",
      "bbr_id": "stepavl01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1350000,
      "nba_seasons_before_2003_04": 5,
      "minimum_salary_2003_04": 751179,
@@ -2117,12 +2175,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Eddie House",
      "bbr_id": "houseed01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 637435,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -2140,12 +2199,13 @@
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
       "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": true
     },
     {
      "player": "Sean Marks",
      "bbr_id": "marksse01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 612435,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -2176,12 +2236,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Malik Allen",
      "bbr_id": "allenma01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 512435,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -2206,12 +2267,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Mike James",
      "bbr_id": "jamesmi01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 512435,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -2236,7 +2298,8 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 28499658,
@@ -2248,7 +2311,7 @@
     {
      "player": "Gary Payton",
      "bbr_id": "paytoga01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 12636117,
      "nba_seasons_before_2003_04": 13,
      "minimum_salary_2003_04": 1070000,
@@ -2273,12 +2336,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Rafer Alston",
      "bbr_id": "alstora01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 37344,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -2311,7 +2375,8 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 15388813,
@@ -2323,7 +2388,7 @@
     {
      "player": "Radoslav Nesterovic",
      "bbr_id": "nestera01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2436813,
      "nba_seasons_before_2003_04": 5,
      "minimum_salary_2003_04": 751179,
@@ -2340,12 +2405,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Kendall Gill",
      "bbr_id": "gillke01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1030000,
      "nba_seasons_before_2003_04": 13,
      "minimum_salary_2003_04": 1070000,
@@ -2376,12 +2442,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Rod Strickland",
      "bbr_id": "stricro02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1030000,
      "nba_seasons_before_2003_04": 15,
      "minimum_salary_2003_04": 1070000,
@@ -2423,12 +2490,13 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Gary Trent",
      "bbr_id": "trentga01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 824935,
      "nba_seasons_before_2003_04": 8,
      "minimum_salary_2003_04": 938679,
@@ -2453,12 +2521,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Loren Woods",
      "bbr_id": "woodslo01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 662435,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -2477,12 +2546,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Felipe Lopez",
      "bbr_id": "lopezfe01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 637435,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -2517,12 +2587,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Mike Wilks",
      "bbr_id": "wilksmi01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 29832,
      "nba_seasons_before_2003_04": 1,
      "minimum_salary_2003_04": 563679,
@@ -2581,7 +2652,8 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 10589876,
@@ -2593,7 +2665,7 @@
     {
      "player": "Jason Kidd",
      "bbr_id": "kiddja01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 9265000,
      "nba_seasons_before_2003_04": 9,
      "minimum_salary_2003_04": 1000000,
@@ -2618,12 +2690,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Lucious Harris",
      "bbr_id": "harrilu01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2640000,
      "nba_seasons_before_2003_04": 10,
      "minimum_salary_2003_04": 1070000,
@@ -2640,12 +2713,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Anthony Johnson",
      "bbr_id": "johnsan02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 699935,
      "nba_seasons_before_2003_04": 6,
      "minimum_salary_2003_04": 813679,
@@ -2692,12 +2766,13 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Brian Scalabrine",
      "bbr_id": "scalabr01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 512435,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -2717,12 +2792,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Donny Marshall",
      "bbr_id": "marshdo02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": null,
      "nba_seasons_before_2003_04": 5,
      "minimum_salary_2003_04": 751179,
@@ -2768,7 +2844,8 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 19938088,
@@ -2780,7 +2857,7 @@
     {
      "player": "Kenny Anderson",
      "bbr_id": "anderke01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 9185000,
      "nba_seasons_before_2003_04": 12,
      "minimum_salary_2003_04": 1070000,
@@ -2803,12 +2880,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "P.J. Brown",
      "bbr_id": "brownpj01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 7044800,
      "nba_seasons_before_2003_04": 10,
      "minimum_salary_2003_04": 1070000,
@@ -2826,12 +2904,13 @@
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
       "2002-03 salary taken from Basketball-Reference salary data; not found under this name in the January 2003 salary list."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Jerome Moiso",
      "bbr_id": "moisoje01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1681200,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -2859,12 +2938,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Robert Pack",
      "bbr_id": "packro01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": null,
      "nba_seasons_before_2003_04": 12,
      "minimum_salary_2003_04": 1070000,
@@ -2901,7 +2981,8 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 27707100,
@@ -2913,7 +2994,7 @@
     {
      "player": "Mark Pope",
      "bbr_id": "popema01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 637435,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -2944,12 +3025,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Lee Nailon",
      "bbr_id": "nailole01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 587435,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -2979,12 +3061,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Lavor Postell",
      "bbr_id": "postela01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 587435,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -3002,7 +3085,8 @@
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
       "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 2644714,
@@ -3014,7 +3098,7 @@
     {
      "player": "Darrell Armstrong",
      "bbr_id": "armstda01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 4010000,
      "nba_seasons_before_2003_04": 9,
      "minimum_salary_2003_04": 1000000,
@@ -3031,12 +3115,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Chris Whitney",
      "bbr_id": "whitnch01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 3000000,
      "nba_seasons_before_2003_04": 10,
      "minimum_salary_2003_04": 1070000,
@@ -3059,12 +3144,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Shawn Kemp",
      "bbr_id": "kempsh01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1030000,
      "nba_seasons_before_2003_04": 14,
      "minimum_salary_2003_04": 1070000,
@@ -3095,12 +3181,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Jacque Vaughn",
      "bbr_id": "vaughja01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 699935,
      "nba_seasons_before_2003_04": 6,
      "minimum_salary_2003_04": 813679,
@@ -3131,12 +3218,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Olumide Oyedeji",
      "bbr_id": "oyedeol01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 587435,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -3161,12 +3249,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Pat Burke",
      "bbr_id": "burkepa01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 349458,
      "nba_seasons_before_2003_04": 1,
      "minimum_salary_2003_04": 563679,
@@ -3191,7 +3280,8 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 17220194,
@@ -3203,7 +3293,7 @@
     {
      "player": "Derrick Coleman",
      "bbr_id": "colemde01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 9380000,
      "nba_seasons_before_2003_04": 13,
      "minimum_salary_2003_04": 1070000,
@@ -3226,12 +3316,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Tyrone Hill",
      "bbr_id": "hillty01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 6600000,
      "nba_seasons_before_2003_04": 13,
      "minimum_salary_2003_04": 1070000,
@@ -3265,12 +3356,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Kenny Thomas",
      "bbr_id": "thomake01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1557684,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -3293,12 +3385,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Brian Skinner",
      "bbr_id": "skinnbr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 637435,
      "nba_seasons_before_2003_04": 5,
      "minimum_salary_2003_04": 751179,
@@ -3335,7 +3428,8 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 27427974,
@@ -3347,7 +3441,7 @@
     {
      "player": "Randy Brown",
      "bbr_id": "brownra02",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2700000,
      "nba_seasons_before_2003_04": 12,
      "minimum_salary_2003_04": 1070000,
@@ -3378,12 +3472,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Scott Williams",
      "bbr_id": "willisc01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1030000,
      "nba_seasons_before_2003_04": 13,
      "minimum_salary_2003_04": 1070000,
@@ -3414,12 +3509,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Dan Langhi",
      "bbr_id": "langhda01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 587435,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -3444,12 +3540,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Jake Voskuhl",
      "bbr_id": "voskuja01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 587435,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -3474,12 +3571,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     },
     {
      "player": "Alton Ford",
      "bbr_id": "fordal02",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 512435,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -3499,7 +3597,8 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 9181958,
@@ -3511,7 +3610,7 @@
     {
      "player": "Scottie Pippen",
      "bbr_id": "pippesc01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 19727524,
      "nba_seasons_before_2003_04": 16,
      "minimum_salary_2003_04": 1070000,
@@ -3529,12 +3628,13 @@
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
       "Limited to the maximum salary for his years of service."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Antonio Daniels",
      "bbr_id": "daniean01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 3375000,
      "nba_seasons_before_2003_04": 6,
      "minimum_salary_2003_04": 813679,
@@ -3557,12 +3657,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Chris Dudley",
      "bbr_id": "dudlech02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1030000,
      "nba_seasons_before_2003_04": 16,
      "minimum_salary_2003_04": 1070000,
@@ -3603,12 +3704,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Charles Smith",
      "bbr_id": "smithch04",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 637435,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -3640,7 +3742,8 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 29631566,
@@ -3652,7 +3755,7 @@
     {
      "player": "Keon Clark",
      "bbr_id": "clarkke01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 4546000,
      "nba_seasons_before_2003_04": 5,
      "minimum_salary_2003_04": 751179,
@@ -3681,12 +3784,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Brent Price",
      "bbr_id": "pricebr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 4048000,
      "nba_seasons_before_2003_04": 9,
      "minimum_salary_2003_04": 1000000,
@@ -3709,12 +3813,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Mateen Cleaves",
      "bbr_id": "cleavma01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1441440,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -3737,12 +3842,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Jim Jackson",
      "bbr_id": "jacksji01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 791341,
      "nba_seasons_before_2003_04": 11,
      "minimum_salary_2003_04": 1070000,
@@ -3777,12 +3883,13 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Damon Jones",
      "bbr_id": "jonesda01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 637435,
      "nba_seasons_before_2003_04": 5,
      "minimum_salary_2003_04": 751179,
@@ -3819,7 +3926,8 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 18148611,
@@ -3831,7 +3939,7 @@
     {
      "player": "Steve Smith",
      "bbr_id": "smithst01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 9900000,
      "nba_seasons_before_2003_04": 12,
      "minimum_salary_2003_04": 1070000,
@@ -3854,12 +3962,13 @@
      "flags": [],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Steve Kerr",
      "bbr_id": "kerrst01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 2625000,
      "nba_seasons_before_2003_04": 15,
      "minimum_salary_2003_04": 1070000,
@@ -3888,12 +3997,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Speedy Claxton",
      "bbr_id": "claxtsp01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1076400,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -3918,12 +4028,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Kevin Willis",
      "bbr_id": "willike02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1030000,
      "nba_seasons_before_2003_04": 18,
      "minimum_salary_2003_04": 1070000,
@@ -3960,12 +4071,13 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Stephen Jackson",
      "bbr_id": "jacksst02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 699935,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -3996,12 +4108,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Mengke Bateer",
      "bbr_id": "bateeme01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 512453,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -4037,7 +4150,8 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 24311425,
@@ -4049,7 +4163,7 @@
     {
      "player": "Elden Campbell",
      "bbr_id": "campbel01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 8050000,
      "nba_seasons_before_2003_04": 13,
      "minimum_salary_2003_04": 1070000,
@@ -4074,12 +4188,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Kevin Ollie",
      "bbr_id": "ollieke01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1000000,
      "nba_seasons_before_2003_04": 6,
      "minimum_salary_2003_04": 813679,
@@ -4131,12 +4246,13 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Reggie Evans",
      "bbr_id": "evansre01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 349458,
      "nba_seasons_before_2003_04": 1,
      "minimum_salary_2003_04": 563679,
@@ -4161,7 +4277,8 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 13694350,
@@ -4173,7 +4290,7 @@
     {
      "player": "Mamadou N'diaye",
      "bbr_id": "ndiayma02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 848520,
      "nba_seasons_before_2003_04": 3,
      "minimum_salary_2003_04": 663679,
@@ -4190,12 +4307,13 @@
      "flags": [
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Voshon Lenard",
      "bbr_id": "lenarvo01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 824935,
      "nba_seasons_before_2003_04": 8,
      "minimum_salary_2003_04": 938679,
@@ -4220,7 +4338,8 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     }
    ],
    "total_cap_holds": 2686962,
@@ -4232,7 +4351,7 @@
     {
      "player": "Karl Malone",
      "bbr_id": "malonka01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 19250000,
      "nba_seasons_before_2003_04": 18,
      "minimum_salary_2003_04": 1070000,
@@ -4250,12 +4369,13 @@
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
       "Limited to the maximum salary for his years of service."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Mark Jackson",
      "bbr_id": "jacksma01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1030000,
      "nba_seasons_before_2003_04": 16,
      "minimum_salary_2003_04": 1070000,
@@ -4297,12 +4417,13 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Calbert Cheaney",
      "bbr_id": "cheanca01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1000000,
      "nba_seasons_before_2003_04": 10,
      "minimum_salary_2003_04": 1070000,
@@ -4333,12 +4454,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Tony Massenburg",
      "bbr_id": "masseto01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 741098,
      "nba_seasons_before_2003_04": 11,
      "minimum_salary_2003_04": 1070000,
@@ -4363,12 +4485,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Scott Padgett",
      "bbr_id": "padgesc01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 612435,
      "nba_seasons_before_2003_04": 4,
      "minimum_salary_2003_04": 688679,
@@ -4386,12 +4509,13 @@
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between.",
       "Coming off a minimum-salary contract: the hold rule for these players is unverified; standard percentage shown."
      ],
-     "sources": []
+     "sources": [],
+     "rfa_eligible": null
     },
     {
      "player": "Carlos Arroyo",
      "bbr_id": "arroyca01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 546000,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -4430,7 +4554,8 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 26030323,
@@ -4472,7 +4597,7 @@
     {
      "player": "Bryon Russell",
      "bbr_id": "russebr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1400000,
      "nba_seasons_before_2003_04": 10,
      "minimum_salary_2003_04": 1070000,
@@ -4497,12 +4622,13 @@
      ],
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Charles Oakley",
      "bbr_id": "oaklech01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 1030000,
      "nba_seasons_before_2003_04": 18,
      "minimum_salary_2003_04": 1070000,
@@ -4533,12 +4659,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": null
     },
     {
      "player": "Bobby Simmons",
      "bbr_id": "simmobo01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "prior_salary_2002_03": 337457,
      "nba_seasons_before_2003_04": 2,
      "minimum_salary_2003_04": 638679,
@@ -4587,11 +4714,13 @@
      "sources": [
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
-     ]
+     ],
+     "rfa_eligible": true
     }
    ],
    "total_cap_holds": 5751948,
    "unpriced_holds": 0
   }
- }
+ },
+ "status_note": "free_agent_expiring: contract ends June 30, 2003. rfa_eligible true means the published list marked the player restricted, read only as eligibility; whether his club tenders the qualifying offer is a simulated June 30 decision (Miami) or follows history (other clubs, world model D). Qualifying-offer amounts are rule arithmetic, not offers."
 }
