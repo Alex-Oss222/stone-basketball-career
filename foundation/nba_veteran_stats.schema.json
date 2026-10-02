@@ -1,0 +1,532 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NBA veteran statistics for the June 26, 2003 career checkpoint",
+  "description": "Data collection format for statistical player ratings. Start with 2002-03 regular-season Totals and Advanced tables for all players, including low-minute players. Earlier completed seasons and shooting-distance splits are optional. NBA only; exclude the incoming 2003 draft class, college statistics, playoffs, and all 2003-04 or later results. Provide observed statistics, not assigned ratings. Nullable fields allow partial submissions; passing this schema does not mean every player is ready to rate.",
+  "$comment": "Collection rules: (1) season_end_year 2003 means 2002-03; 2002 means 2001-02. (2) All totals are season totals, never per-game or per-36. (3) All percentage fields are fractions: 55%=0.55 and 24.5%=0.245. FTr is FTA/FGA and may exceed 1; TS% can also exceed 1. (4) Null means unavailable or undefined, never zero. Missing from a table does not prove zero appearances. Explain missing data in notes. (5) One combined season row per verified player; do not include both combined and team-stint rows. (6) Do not estimate missing data or use later performance. (7) Full league exports are preferred to qualified-player leaderboards. (8) Sources: https://www.basketball-reference.com/leagues/NBA_2003_totals.html ; https://www.basketball-reference.com/leagues/NBA_2003_advanced.html ; optional https://www.basketball-reference.com/leagues/NBA_2003_shooting.html ; optional league averages https://www.basketball-reference.com/leagues/NBA_2003.html . Import checks beyond JSON Schema: verify identities and unique player/season keys, source dates and definitions, makes <= attempts, starts <= games, PTS = 2*(FG-3P)+3*3P+FT, valid zero-game rows, and numerical agreement between totals and rates. A low-sample estimate remains an estimate. Reference definitions: https://www.basketball-reference.com/about/glossary.html .",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dataset_kind",
+    "as_of_date",
+    "league",
+    "season_type",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "dataset_kind": {
+      "enum": [
+        "collection_template",
+        "collected_stats"
+      ],
+      "description": "Change to collected_stats when submitting real records. Templates are not rating inputs."
+    },
+    "as_of_date": {
+      "const": "2003-06-26",
+      "description": "Career knowledge cutoff. This is not the retrieval date."
+    },
+    "league": {
+      "const": "NBA"
+    },
+    "season_type": {
+      "const": "regular"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      },
+      "minItems": 1
+    },
+    "league_averages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/league_averages"
+      },
+      "description": "Optional. One entry for each completed season whose league averages were collected."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "dataset_kind": {
+            "const": "collected_stats"
+          }
+        },
+        "required": [
+          "dataset_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "records": {
+            "items": {
+              "properties": {
+                "sources": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "nonnegative": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "estimated_rate": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "An estimated rate expressed as a fraction. Usually between 0 and 1. Preserve and flag an unusual source estimate rather than clipping it; tiny samples and estimated denominators can produce outliers. Do not confuse 24.5% with the number 24.5: enter 0.245."
+    },
+    "fraction": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "A fraction, not percentage points: 24.5% is 0.245. Null if unknown or undefined."
+    },
+    "true_shooting": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1.5
+    },
+    "season_end_year": {
+      "type": "integer",
+      "minimum": 1947,
+      "maximum": 2003,
+      "description": "Ending calendar year of the completed season. 2003 = 2002-03. Collect 2003 first; 2002 and 2001 are useful additional history. Do not substitute future seasons."
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "table",
+        "url",
+        "provider"
+      ],
+      "properties": {
+        "table": {
+          "enum": [
+            "totals",
+            "advanced",
+            "shooting",
+            "league_averages",
+            "other"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://",
+          "description": "Exact source page or downloadable file URL. Do not invent a URL."
+        },
+        "provider": {
+          "type": "string",
+          "minLength": 1,
+          "examples": [
+            "Basketball-Reference"
+          ]
+        },
+        "retrieved_on": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date",
+          "description": "Optional retrieval date. Modern retrieval is allowed; the statistics must describe seasons completed before the career cutoff."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional table location, alternate definitions, or source limitations."
+        }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "games",
+        "games_started",
+        "minutes",
+        "points",
+        "field_goals_made",
+        "field_goals_attempted",
+        "three_pointers_made",
+        "three_pointers_attempted",
+        "free_throws_made",
+        "free_throws_attempted",
+        "offensive_rebounds",
+        "defensive_rebounds",
+        "assists",
+        "steals",
+        "blocks",
+        "turnovers",
+        "personal_fouls"
+      ],
+      "properties": {
+        "games": {
+          "$ref": "#/$defs/count",
+          "description": "G. Games played in this regular season. Zero means confirmed no appearances."
+        },
+        "games_started": {
+          "$ref": "#/$defs/count",
+          "description": "GS. Games started."
+        },
+        "minutes": {
+          "$ref": "#/$defs/nonnegative",
+          "description": "MP. TOTAL minutes played, not minutes per game. Preserve source precision."
+        },
+        "points": {
+          "$ref": "#/$defs/count",
+          "description": "PTS. Total points."
+        },
+        "field_goals_made": {
+          "$ref": "#/$defs/count",
+          "description": "FG. Total field goals made, including three-pointers."
+        },
+        "field_goals_attempted": {
+          "$ref": "#/$defs/count",
+          "description": "FGA. Total field goal attempts, including three-pointers."
+        },
+        "three_pointers_made": {
+          "$ref": "#/$defs/count",
+          "description": "3P. Total three-pointers made."
+        },
+        "three_pointers_attempted": {
+          "$ref": "#/$defs/count",
+          "description": "3PA. Total three-point attempts."
+        },
+        "free_throws_made": {
+          "$ref": "#/$defs/count",
+          "description": "FT. Total free throws made."
+        },
+        "free_throws_attempted": {
+          "$ref": "#/$defs/count",
+          "description": "FTA. Total free throw attempts."
+        },
+        "offensive_rebounds": {
+          "$ref": "#/$defs/count",
+          "description": "ORB. Total offensive rebounds."
+        },
+        "defensive_rebounds": {
+          "$ref": "#/$defs/count",
+          "description": "DRB. Total defensive rebounds."
+        },
+        "assists": {
+          "$ref": "#/$defs/count",
+          "description": "AST. Total assists."
+        },
+        "steals": {
+          "$ref": "#/$defs/count",
+          "description": "STL. Total steals."
+        },
+        "blocks": {
+          "$ref": "#/$defs/count",
+          "description": "BLK. Total blocked shots."
+        },
+        "turnovers": {
+          "$ref": "#/$defs/count",
+          "description": "TOV. Total turnovers."
+        },
+        "personal_fouls": {
+          "$ref": "#/$defs/count",
+          "description": "PF. Total personal fouls."
+        }
+      },
+      "description": "Raw regular-season totals. Keep all keys; use null where unavailable. Shooting percentages and per-game averages can be calculated later from these totals."
+    },
+    "advanced": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "true_shooting_pct",
+        "usage_pct",
+        "assist_pct",
+        "offensive_rebound_pct",
+        "defensive_rebound_pct",
+        "steal_pct",
+        "block_pct",
+        "turnover_pct",
+        "three_point_attempt_rate",
+        "free_throw_attempt_rate"
+      ],
+      "properties": {
+        "true_shooting_pct": {
+          "$ref": "#/$defs/true_shooting",
+          "description": "TS%. Copy a source decimal such as .550 as 0.550. Can exceed 1 in unusual small samples."
+        },
+        "usage_pct": {
+          "$ref": "#/$defs/estimated_rate",
+          "description": "USG%. Convert source percentage points to a fraction: 24.5 becomes 0.245. This measures plays used, not touches or overall ability."
+        },
+        "assist_pct": {
+          "$ref": "#/$defs/estimated_rate",
+          "description": "AST%. Convert 20.0 to 0.200."
+        },
+        "offensive_rebound_pct": {
+          "$ref": "#/$defs/estimated_rate",
+          "description": "ORB%. Convert 8.0 to 0.080."
+        },
+        "defensive_rebound_pct": {
+          "$ref": "#/$defs/estimated_rate",
+          "description": "DRB%. Convert 20.0 to 0.200."
+        },
+        "steal_pct": {
+          "$ref": "#/$defs/estimated_rate",
+          "description": "STL%. Convert 1.5 to 0.015."
+        },
+        "block_pct": {
+          "$ref": "#/$defs/estimated_rate",
+          "description": "BLK%. Convert 3.0 to 0.030. Use the Basketball-Reference definition, based on opponent two-point attempts."
+        },
+        "turnover_pct": {
+          "$ref": "#/$defs/estimated_rate",
+          "description": "TOV%. Convert 12.0 to 0.120."
+        },
+        "three_point_attempt_rate": {
+          "$ref": "#/$defs/fraction",
+          "description": "3PAr = 3PA / FGA. Copy a source decimal such as .250 as 0.250. This is shot frequency, not shooting accuracy."
+        },
+        "free_throw_attempt_rate": {
+          "$ref": "#/$defs/nonnegative",
+          "description": "FTr = FTA / FGA. Copy the source decimal. This ratio may exceed 1. It is not FT%, and is not FTM / FGA."
+        }
+      },
+      "description": "Copy sourced advanced rates, using the field-specific unit instructions. Basketball-Reference displays USG%, AST%, ORB%, DRB%, STL%, BLK%, and TOV% as percentage points; divide those by 100. TS%, 3PAr and FTr are already displayed as decimals. If another provider uses different definitions, identify them in source notes."
+    },
+    "shooting_zone": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "zone",
+        "fga_share",
+        "fg_pct"
+      ],
+      "properties": {
+        "zone": {
+          "enum": [
+            "0-3_ft",
+            "3-10_ft",
+            "10-16_ft",
+            "16_ft_to_3pt",
+            "3pt"
+          ],
+          "description": "Use the source shooting-distance buckets. Do not combine rim attempts with other two-pointers."
+        },
+        "fga_share": {
+          "$ref": "#/$defs/fraction",
+          "description": "Share of ALL field goal attempts taken from this zone. Copy the source decimal."
+        },
+        "fg_pct": {
+          "$ref": "#/$defs/fraction",
+          "description": "Field goal percentage within this zone, as a fraction. Null if no attempts or unavailable."
+        },
+        "attempts": {
+          "$ref": "#/$defs/count",
+          "description": "Optional exact attempt count, if directly available. Do not reconstruct an integer from a rounded share."
+        },
+        "makes": {
+          "$ref": "#/$defs/count",
+          "description": "Optional exact made-shot count, if directly available."
+        }
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "player_name",
+        "bbr_id",
+        "season_end_year",
+        "team_codes",
+        "totals",
+        "advanced",
+        "sources"
+      ],
+      "properties": {
+        "player_name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Full name as shown in the source."
+        },
+        "bbr_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-z]+[0-9]{2}$",
+          "description": "Verified Basketball-Reference player ID from the player URL, without .html. Null if unresolved; never guess from the name."
+        },
+        "season_end_year": {
+          "$ref": "#/$defs/season_end_year"
+        },
+        "team_codes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^(?!TOT$)[A-Z]{2,3}$"
+          },
+          "uniqueItems": true,
+          "description": "Teams represented by these season statistics, such as [\"SEA\", \"MIL\"]. Use [] when unknown or there were no appearances. Never put TOT or 2TM here."
+        },
+        "totals": {
+          "$ref": "#/$defs/totals"
+        },
+        "advanced": {
+          "$ref": "#/$defs/advanced"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          },
+          "description": "Sources for this record. Use the table field to identify what each URL supports. Empty is allowed only in the blank collection template."
+        },
+        "shooting_by_distance": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/shooting_zone"
+          },
+          "maxItems": 5,
+          "description": "Optional. Include only sourced zones. Add a shooting source to this record. Do not fill missing zones with estimates."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Explain unavailable fields, no appearances, incomplete source coverage, or identity uncertainty. Do not add ratings, inferred development, or future career facts."
+        }
+      },
+      "description": "Exactly one combined regular-season row per player per season. For traded players, use the source aggregate season row, often labelled TOT or 2TM; do not also submit the individual team stints. Do not average team percentages."
+    },
+    "league_averages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "season_end_year",
+        "averages",
+        "sources"
+      ],
+      "properties": {
+        "season_end_year": {
+          "$ref": "#/$defs/season_end_year"
+        },
+        "averages": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "pace",
+            "points",
+            "fga",
+            "fg_pct",
+            "three_pa",
+            "three_pct",
+            "fta",
+            "ft_pct",
+            "orb",
+            "drb",
+            "ast",
+            "stl",
+            "blk",
+            "tov",
+            "pf"
+          ],
+          "properties": {
+            "pace": {
+              "$ref": "#/$defs/nonnegative",
+              "description": "Pace. Team possessions per 48 minutes, using the source definition."
+            },
+            "points": {
+              "$ref": "#/$defs/nonnegative",
+              "description": "PTS per team per game."
+            },
+            "fga": {
+              "$ref": "#/$defs/nonnegative",
+              "description": "FGA per team per game."
+            },
+            "fg_pct": {
+              "$ref": "#/$defs/fraction",
+              "description": "League FG% as a fraction, calculated from league makes and attempts."
+            },
+            "three_pa": {
+              "$ref": "#/$defs/nonnegative",
+              "description": "3PA per team per game."
+            },
+            "three_pct": {
+              "$ref": "#/$defs/fraction",
+              "description": "League 3P% as a fraction, calculated from league makes and attempts."
+            },
+            "fta": {
+              "$ref": "#/$defs/nonnegative",
+              "description": "FTA per team per game."
+            },
+            "ft_pct": {
+              "$ref": "#/$defs/fraction",
+              "description": "League FT% as a fraction, calculated from league makes and attempts."
+            },
+            "orb": {
+              "$ref": "#/$defs/nonnegative",
+              "description": "ORB per team per game."
+            },
+            "drb": {
+              "$ref": "#/$defs/nonnegative",
+              "description": "DRB per team per game."
+            },
+            "ast": {
+              "$ref": "#/$defs/nonnegative",
+              "description": "AST per team per game."
+            },
+            "stl": {
+              "$ref": "#/$defs/nonnegative",
+              "description": "STL per team per game."
+            },
+            "blk": {
+              "$ref": "#/$defs/nonnegative",
+              "description": "BLK per team per game."
+            },
+            "tov": {
+              "$ref": "#/$defs/nonnegative",
+              "description": "TOV per team per game."
+            },
+            "pf": {
+              "$ref": "#/$defs/nonnegative",
+              "description": "PF per team per game."
+            }
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          },
+          "minItems": 1
+        }
+      },
+      "description": "Optional league calibration data. Use league aggregates for that season, not an unweighted average of player rates. All counting averages here are per TEAM per GAME; pace is per 48 minutes."
+    }
+  }
+}

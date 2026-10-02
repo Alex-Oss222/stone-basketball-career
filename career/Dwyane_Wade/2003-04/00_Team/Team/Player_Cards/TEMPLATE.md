@@ -1,11 +1,11 @@
 <!--
 AUTHORING RULES
 - Keep the section order. Regular-season statistics, playoff statistics, and awards form the final block. Awards is always the last section; add any other historical records before it.
-- Use only evidence available on the assessment date for the opening report. Carry forward established abilities unless evidence supports a change. Grades are staff judgments, not exact measurements or game-engine inputs.
+- Use only evidence available on the assessment date for the opening report. Keep recorded statistics, statistical estimates and staff judgments distinct. Card grades do not directly drive the engine; dated generated rates do.
 - Preserve the opening report and grades. Append dated changes with evidence; show old and new grades when relevant. Write the final season assessment separately and retain previous annual profiles.
 - Update statistics after each completed game. The statistics date can be later than the opening assessment date. Retain every prior season.
 - Write specific basketball actions and limitations. Cite the observation or statistic behind a claim. Do not invent film, practice reports, quotes, sources, or improvement.
-- Keep the scouting report under 100 words. Give each grade one short explanation. Remove unused placeholders and optional fields when filling the card.
+- Keep the scouting report under 100 words. Give each grade its statistical evidence or one short staff explanation. Omit unsupported strengths/weaknesses, unused placeholders and empty detail tables.
 - Keep additional statistics when available; omit empty detail tables. Use N/A for unavailable data, not zero. For no appearances, record G = 0 and N/A for averages. For zero shot attempts, use N/A for that percentage.
 -->
 
@@ -36,24 +36,30 @@ AUTHORING RULES
 
 ## Player grades
 
-**Overall:** {{OVERALL_GRADE}} /10. {{ONE_SENTENCE_REASON}}
+<!-- For eligible NBA veterans, copy the generated grades by verified bbr_id. Do not rank by hand. Omit this table if no eligible statistical record exists. Keep any staff assessment in a separate, dated paragraph or table. -->
 
-Staff estimates against {{LEAGUE}} rotation players at the assessment date. Scale: 1–2 very weak; 3–4 below average; 5–6 average; 7–8 above average; 9–10 elite. Use “Not assessed” when evidence is insufficient.
+**Statistical estimates, 20–80.** 50 is the median of players with at least 500 minutes; higher is better for the named statistic. These are estimates from prior production, not staff scouting grades.
 
-| Skill | Grade /10 | Evidence or limitation |
+**Sample:** {{GAMES}} games, {{MINUTES}} minutes in {{SOURCE_SEASON}}. Small samples are pulled toward the league baseline; label fewer than 100 minutes “Very small sample.”
+
+| Statistic | Grade | Recorded evidence |
 | --- | ---: | --- |
-| Physical tools | {{GRADE}} | {{SPEED_STRENGTH_OR_AGILITY_THAT_AFFECTS_PLAY}} |
-| Ball handling | {{GRADE}} | {{CONTROL_UNDER_PRESSURE_AND_WEAK_HAND}} |
-| Passing and decisions | {{GRADE}} | {{READS_TIMING_AND_TURNOVER_RISK}} |
-| Shot creation | {{GRADE}} | {{SHOTS_THE_PLAYER_CAN_CREATE}} |
-| Rim finishing | {{GRADE}} | {{TOUCH_CONTACT_AND_FINISHING_HAND}} |
-| Shooting | {{GRADE}} | {{DISTINGUISH_THREES_MIDRANGE_AND_FREE_THROWS_WITH_VOLUME}} |
-| Off-ball offense | {{GRADE}} | {{CUTTING_SPACING_SCREENING_OR_ROLL_POP_PLAY}} |
-| Rebounding | {{GRADE}} | {{DISTINGUISH_OFFENSIVE_AND_DEFENSIVE_REBOUNDING}} |
-| On-ball defense | {{GRADE}} | {{CONTAINMENT_AND_MATCHUPS}} |
-| Screen navigation | {{GRADE}} | {{ABILITY_TO_GET_THROUGH_OR_AROUND_SCREENS}} |
-| Help defense | {{GRADE}} | {{POSITIONING_ROTATIONS_AND_RECOVERY}} |
-| Rim protection | {{GRADE}} | {{CONTESTS_POSITIONING_AND_FOUL_DISCIPLINE}} |
+| Two-point scoring | {{GRADE}} | {{TWO_PCT_AND_MAKES_ATTEMPTS}} |
+| Three-point shooting | {{GRADE}} | {{THREE_PCT_AND_MAKES_ATTEMPTS}} |
+| Free throws | {{GRADE}} | {{FT_PCT_AND_MAKES_ATTEMPTS}} |
+| Scoring efficiency | {{GRADE}} | {{TS_PCT}} |
+| Assist production | {{GRADE}} | {{AST_PCT}} |
+| Turnover control | {{GRADE}} | {{TOV_PCT}}; lower is better |
+| Offensive rebounding | {{GRADE}} | {{ORB_PCT}} |
+| Defensive rebounding | {{GRADE}} | {{DRB_PCT}} |
+| Steal production | {{GRADE}} | {{STL_PCT}} |
+| Block production | {{GRADE}} | {{BLK_PCT}} |
+
+**Tendencies:** usage {{USG_PCT}}; threes {{THREE_PAR}} of field-goal attempts; {{FTR}} free-throw attempts per field-goal attempt.
+
+**Not assessed:** {{UNSUPPORTED_TRAITS_OR_MISSING_STATISTICAL_RECORD}}. Do not infer overall ability, rim/midrange splits, decision quality or matchup defense from these grades. A missing value or zero attempts receives “Not assessed,” not a zero grade.
+
+**Source and method:** {{STATS_SOURCE_AND_MODEL_VERSION}} · [Statistical rating method](../../../../../../docs/statistical_ratings.md) · BRef ID: `{{BBR_ID}}`.
 
 ## Changes and coaching notes
 

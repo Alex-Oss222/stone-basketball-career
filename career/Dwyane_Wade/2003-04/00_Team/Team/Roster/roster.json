@@ -35,7 +35,8 @@
       "status": "expiring_contract",
       "control": "2002-03 contract reaches June 30; future qualifying-offer/free-agency action not yet recorded.",
       "working_role": "2002-03 PF1",
-      "player_card": "../Player_Cards/malik_allen.md"
+      "player_card": "../Player_Cards/malik_allen.md",
+      "bbr_id": "allenma01"
     },
     {
       "id": "travis_best",
@@ -50,7 +51,8 @@
       "status": "expiring_contract",
       "control": "One-year 2002-03 contract reaches June 30.",
       "working_role": "2002-03 PG1",
-      "player_card": "../Player_Cards/travis_best.md"
+      "player_card": "../Player_Cards/travis_best.md",
+      "bbr_id": "besttr01"
     },
     {
       "id": "caron_butler",
@@ -65,7 +67,8 @@
       "status": "under_contract",
       "control": "Rookie contract signed through 2004-05.",
       "working_role": "2002-03 SF1",
-      "player_card": "../Player_Cards/caron_butler.md"
+      "player_card": "../Player_Cards/caron_butler.md",
+      "bbr_id": "butleca01"
     },
     {
       "id": "rasual_butler",
@@ -81,7 +84,8 @@
       "status": "team_option_pending",
       "control": "2003-04 team-option decision has not yet been recorded at this June 26 checkpoint.",
       "working_role": "2002-03 SG2",
-      "player_card": "../Player_Cards/rasual_butler.md"
+      "player_card": "../Player_Cards/rasual_butler.md",
+      "bbr_id": "butlera01"
     },
     {
       "id": "anthony_carter",
@@ -96,7 +100,8 @@
       "status": "player_option_pending",
       "control": "$4.1M 2003-04 player option with June 30 notification deadline; outcome is not yet known to the simulation.",
       "working_role": "2002-03 PG3",
-      "player_card": "../Player_Cards/anthony_carter.md"
+      "player_card": "../Player_Cards/anthony_carter.md",
+      "bbr_id": "cartean01"
     },
     {
       "id": "laphonso_ellis",
@@ -111,7 +116,8 @@
       "status": "expiring_contract",
       "control": "2002-03 contract reaches June 30; no later waiver/free-agency outcome is imported.",
       "working_role": "2002-03 PF2",
-      "player_card": "../Player_Cards/laphonso_ellis.md"
+      "player_card": "../Player_Cards/laphonso_ellis.md",
+      "bbr_id": "ellisla01"
     },
     {
       "id": "brian_grant",
@@ -127,7 +133,8 @@
       "status": "under_contract",
       "control": "Contract signed through 2004-05.",
       "working_role": "2002-03 C1",
-      "player_card": "../Player_Cards/brian_grant.md"
+      "player_card": "../Player_Cards/brian_grant.md",
+      "bbr_id": "grantbr01"
     },
     {
       "id": "eddie_house",
@@ -143,7 +150,8 @@
       "status": "expiring_contract",
       "control": "2002-03 contract reaches June 30.",
       "working_role": "2002-03 SG3",
-      "player_card": "../Player_Cards/eddie_house.md"
+      "player_card": "../Player_Cards/eddie_house.md",
+      "bbr_id": "houseed01"
     },
     {
       "id": "mike_james",
@@ -158,7 +166,8 @@
       "status": "expiring_contract",
       "control": "2002-03 contract reaches June 30.",
       "working_role": "2002-03 PG2",
-      "player_card": "../Player_Cards/mike_james.md"
+      "player_card": "../Player_Cards/mike_james.md",
+      "bbr_id": "jamesmi01"
     },
     {
       "id": "ken_johnson",
@@ -173,7 +182,8 @@
       "status": "expiring_contract",
       "control": "2002-03 contract reaches June 30.",
       "working_role": "2002-03 C3",
-      "player_card": "../Player_Cards/ken_johnson.md"
+      "player_card": "../Player_Cards/ken_johnson.md",
+      "bbr_id": "johnske03"
     },
     {
       "id": "eddie_jones",
@@ -189,7 +199,8 @@
       "status": "under_contract",
       "control": "Contract signed through 2004-05.",
       "working_role": "2002-03 SG1",
-      "player_card": "../Player_Cards/eddie_jones.md"
+      "player_card": "../Player_Cards/eddie_jones.md",
+      "bbr_id": "jonesed02"
     },
     {
       "id": "sean_lampley",
@@ -204,7 +215,8 @@
       "status": "team_option_pending",
       "control": "2003-04 team-option/control decision has not yet been recorded at this June 26 checkpoint.",
       "working_role": "2002-03 SF2",
-      "player_card": "../Player_Cards/sean_lampley.md"
+      "player_card": "../Player_Cards/sean_lampley.md",
+      "bbr_id": "lamplse01"
     },
     {
       "id": "sean_marks",
@@ -220,7 +232,8 @@
       "status": "expiring_contract",
       "control": "2002-03 contract reaches June 30.",
       "working_role": "2002-03 PF3",
-      "player_card": "../Player_Cards/sean_marks.md"
+      "player_card": "../Player_Cards/sean_marks.md",
+      "bbr_id": "marksse01"
     },
     {
       "id": "vladimir_stepania",
@@ -235,7 +248,8 @@
       "status": "expiring_contract",
       "control": "One-year 2002-03 contract reaches June 30.",
       "working_role": "2002-03 C2",
-      "player_card": "../Player_Cards/vladimir_stepania.md"
+      "player_card": "../Player_Cards/vladimir_stepania.md",
+      "bbr_id": "stepavl01"
     },
     {
       "id": "dwyane_wade",

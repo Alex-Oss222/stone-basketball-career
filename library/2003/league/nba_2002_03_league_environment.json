@@ -7,31 +7,68 @@
   "published_after": "2003-04-16",
   "unit": "per team per game",
   "verification": {
-    "status": "provisional",
-    "method": "Entered from recollection of Basketball-Reference league averages; not yet checked line by line.",
-    "verify_against": "https://www.basketball-reference.com/leagues/NBA_2003.html (League Averages and Miscellaneous Stats tables)",
-    "rule": "Correct any value that differs from the source and record the correction here; the kernel reads these numbers directly."
+    "status": "imported_source",
+    "method": "Supplied Basketball-Reference league averages and pinned mirror provenance; player totals and recomputable rates validated locally. External ESPN cross-check was reported by the data collector, not independently repeated by this importer.",
+    "source_file": "library/2003/league/nba_2002_03_player_stats.json",
+    "source_sha256": "9602b0e89cc759895cb75f3c5d17176fcfd52388f3f68f135e409e216495e931",
+    "sources": [
+      {
+        "table": "league_averages",
+        "url": "https://www.basketball-reference.com/leagues/NBA_2003.html",
+        "provider": "Basketball-Reference",
+        "retrieved_on": "2026-10-01",
+        "notes": "League Average row of the Per Game Stats team table. Read from the page by an automated reader, then checked against sums of the player totals in this file."
+      },
+      {
+        "table": "league_averages",
+        "url": "https://raw.githubusercontent.com/sumitrodatta/nba-alt-awards/7f9b3375439b79cb4e62f66ae7d12160275c2863/2026/Data/Team%20Summaries.csv",
+        "provider": "Basketball-Reference, via the sumitrodatta/nba-alt-awards GitHub copy",
+        "retrieved_on": "2026-10-01",
+        "notes": "Pace only: League Average row for season 2003."
+      }
+    ]
   },
   "averages": {
     "pace": 91.0,
-    "points": 95.0,
+    "points": 95.1,
     "fga": 80.8,
     "fg_pct": 0.442,
     "three_pa": 14.7,
     "three_pct": 0.349,
-    "fta": 24.5,
-    "ft_pct": 0.757,
-    "orb": 11.9,
-    "drb": 29.7,
-    "ast": 21.7,
-    "stl": 7.8,
-    "blk": 5.1,
-    "tov": 14.4,
-    "pf": 21.5
+    "fta": 24.4,
+    "ft_pct": 0.758,
+    "orb": 12.0,
+    "drb": 30.3,
+    "ast": 21.5,
+    "stl": 7.9,
+    "blk": 5.0,
+    "tov": 14.9,
+    "pf": 21.8
   },
   "engine_assumptions": {
     "status": "provisional structural assumptions, not sourced league data",
     "home_edge_points_per_game": 3.0,
     "and_one_share_of_fta": 0.12
+  },
+  "team_turnovers_per_game": 0.6304457527333902,
+  "team_turnover_note": "Inferred residual: published team TOV minus summed individual TOV / (29 * 82). Includes source rounding; treated as unassigned team turnovers, not player turnovers.",
+  "player_turnovers_per_game": 14.26955424726661,
+  "player_rating_model": "veteran-2003.1",
+  "player_rate_baselines": {
+    "true_shooting_pct": 0.5193584617606707,
+    "usage_pct": 0.19881464495498938,
+    "assist_pct": 0.15227645024503839,
+    "offensive_rebound_pct": 0.05699677974349171,
+    "defensive_rebound_pct": 0.1431247679955511,
+    "steal_pct": 0.01732835667859998,
+    "block_pct": 0.015122731222411458,
+    "turnover_pct": 0.1348649156948216,
+    "three_point_attempt_rate": 0.18173016360503672,
+    "free_throw_attempt_rate": 0.30244808936593287,
+    "two_point_pct": 0.46271239273014114,
+    "three_point_pct": 0.3494500458295142,
+    "free_throw_pct": 0.7577577749858011,
+    "turnovers_per_fga": 0.17663409835041566,
+    "fouls_per_minute": 0.08989955163185152
   }
 }

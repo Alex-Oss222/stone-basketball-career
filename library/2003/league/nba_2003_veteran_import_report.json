@@ -1,0 +1,75 @@
+{
+  "as_of": "2003-06-26",
+  "model_version": "veteran-2003.1",
+  "source_file": "library/2003/league/nba_2002_03_player_stats.json",
+  "source_sha256": "9602b0e89cc759895cb75f3c5d17176fcfd52388f3f68f135e409e216495e931",
+  "record_count": 428,
+  "under_100_minutes": 46,
+  "combined_traded_player_rows": 27,
+  "null_advanced_fields": {
+    "ruckegu01": [
+      "true_shooting_pct",
+      "turnover_pct",
+      "three_point_attempt_rate",
+      "free_throw_attempt_rate"
+    ]
+  },
+  "checks_passed": [
+    "unique player and season",
+    "completed 2002-03 season only",
+    "count consistency",
+    "points reconcile",
+    "TS%, 3PAr, FTr and TOV% agree with totals within source rounding",
+    "source URLs present",
+    "all grades and rates reproducible"
+  ],
+  "miami_card_matches": {
+    "malik_allen": "allenma01",
+    "travis_best": "besttr01",
+    "caron_butler": "butleca01",
+    "rasual_butler": "butlera01",
+    "anthony_carter": "cartean01",
+    "laphonso_ellis": "ellisla01",
+    "brian_grant": "grantbr01",
+    "eddie_house": "houseed01",
+    "mike_james": "jamesmi01",
+    "ken_johnson": "johnske03",
+    "eddie_jones": "jonesed02",
+    "sean_lampley": "lamplse01",
+    "sean_marks": "marksse01",
+    "vladimir_stepania": "stepavl01"
+  },
+  "miami_without_2002_03_record": [
+    "Alonzo Mourning",
+    "Dwyane Wade",
+    "Jerome Beasley"
+  ],
+  "league_roster_rows": 350,
+  "league_rows_without_verified_id_match": [
+    {
+      "player_id": "Ken Johnson",
+      "bbr_id": null
+    }
+  ],
+  "coverage_note": "All 428 source players get profiles, including veterans absent from the end-of-season roster snapshot. The duplicate Ken Johnson row with no BRef ID is not a new player; baseline rotations already deduplicate names. Roster membership and the 407-player current-season tracking registry are not expanded by this import.",
+  "excluded": "2003 draft class; later-season statistics; unsourced shot-location skills and awards",
+  "source_totals": {
+    "games": 23939,
+    "games_started": 11890,
+    "minutes": 575420,
+    "points": 226102,
+    "field_goals_made": 84937,
+    "field_goals_attempted": 192109,
+    "three_pointers_made": 12200,
+    "three_pointers_attempted": 34912,
+    "free_throws_made": 44028,
+    "free_throws_attempted": 58103,
+    "offensive_rebounds": 28654,
+    "defensive_rebounds": 71950,
+    "assists": 51133,
+    "steals": 18884,
+    "blocks": 11928,
+    "turnovers": 33933,
+    "personal_fouls": 51730
+  }
+}

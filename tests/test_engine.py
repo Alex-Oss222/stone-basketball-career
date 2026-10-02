@@ -85,7 +85,9 @@ class KernelTests(unittest.TestCase):
                 self.assertAlmostEqual(statistics.mean(totals[key]) / target, 1, delta=tolerance)
 
     def test_minutes_follow_targets(self):
-        result = self.play(b"m" * 32)
+        # Isolate the target rotation: foul trouble can legitimately activate a DNP.
+        with mock.patch.dict(self.rules, {"foul_out_limit": 100}):
+            result = self.play(b"m" * 32)
         rows = {r["player_id"]: r for r in result["player_stats"]["home"]}
         self.assertEqual(rows["H_11"]["seconds"], 0)
         self.assertGreater(rows["H_0"]["minutes"], rows["H_9"]["minutes"])
@@ -123,7 +125,8 @@ class EngineHarness(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.root = Path(self.tmp.name)
         (self.root / "library/2003/league").mkdir(parents=True)
-        for name in ("nba_2003_end_of_season.json", "nba_2002_03_league_environment.json"):
+        for name in ("nba_2003_end_of_season.json", "nba_2002_03_league_environment.json",
+                     "nba_2002_03_player_stats.json", "nba_2003_veteran_ratings.json"):
             (self.root / "library/2003/league" / name).write_bytes((ROOT / "library/2003/league" / name).read_bytes())
         self.week = self.root / "career/Dwyane_Wade/2003-04/06_Regular_Season/10_October/Week_4"
         self.week.mkdir(parents=True)
@@ -206,9 +209,9 @@ class PushToPlayTests(EngineHarness):
         self.assertEqual(restarted.close_digest("g", "0" * 64), ref)
 
     def test_kernel_change_is_journaled(self):
-        with mock.patch.object(private_service, "KERNEL_VERSION", "2003.2"):
+        with mock.patch.object(private_service, "KERNEL_VERSION", "test-next-version"):
             Store(self.root / "data/engine.sqlite3").initialize()
-        self.assertEqual(self.store.kernel_history(), [(KERNEL_VERSION, "2003.2")])
+        self.assertEqual(self.store.kernel_history(), [(KERNEL_VERSION, "test-next-version")])
 
     def test_box_score_renders(self):
         play_requests(self.store, self.root)

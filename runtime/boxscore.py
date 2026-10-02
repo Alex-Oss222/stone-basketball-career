@@ -28,4 +28,6 @@ def render(result):
                 lines.append(_row(r["player_id"] + (" (DQ)" if r["fouled_out"] else ""), r))
         team = dict(result["team_stats"][side], minutes=result["game_seconds"] * 5 / 60)
         lines.append(_row("TEAM", team))
+        if team.get("team_turnovers", 0):
+            lines.append(f"  Includes {team['team_turnovers']} team turnover(s) not charged to an individual.")
     return "\n".join(lines) + "\n"

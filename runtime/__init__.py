@@ -6,7 +6,7 @@ the private engine-state service (deployed on Railway) after the game packet
 has been journaled there.
 """
 
-KERNEL_VERSION = "2003.1"
+KERNEL_VERSION = "2003.2"
 SCHEMA_VERSION = "1"
 
 

@@ -68,6 +68,8 @@ Every player in the team-control register has a player card.
 
 Cards are personnel records, not automatic game-engine ratings. Objective identity, contract/control and prior production may be entered when sourced. Subjective grades remain `Unassessed` until the simulation has an evidence basis.
 
+The 2003 veteran import adds a separate statistical estimate layer, documented in `docs/statistical_ratings.md`. The engine reads generated prior-season rates by `bbr_id`; the cards display 20–80 descriptive grades with observed evidence and sample sizes. Do not copy those grades into legacy engine ratings, infer overall defense from steals/blocks, or infer rim/midrange splits without shot-location data. Rebuild and check with `scripts/import_veteran_stats.py`; keep raw statistics in `library/2003/league`. Incoming draft-class cards are outside this import. Regular-season history, playoff history and awards must remain the final three card sections, with awards last.
+
 User-supplied player photos can be linked later. Do not invent image URLs.
 
 ## Stats and awards

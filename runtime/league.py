@@ -19,7 +19,7 @@ def load_clubs(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))["clubs"]
 
 
-def baseline_team(club_name, club, actives):
+def baseline_team(club_name, club, actives, rating_index=None):
     seen, players = set(), []
     for p in sorted(club["players"], key=lambda p: (p["depth"], POSITIONS.index(p["position"]))):
         if p["player_id"] not in seen:
@@ -36,5 +36,6 @@ def baseline_team(club_name, club, actives):
     scale = 240 / sum(minutes)
     minutes = [round(m * scale, 2) for m in minutes]
     minutes[0] = round(minutes[0] + 240 - sum(minutes), 2)
-    return TeamInput(club_name, tuple(PlayerInput(p["player_id"], p["position"], m)
+    return TeamInput(club_name, tuple(PlayerInput(p["player_id"], p["position"], m,
+                                      stat_profile=rating_index.engine_profile(p["player_id"], p.get("bbr_id")) if rating_index else {})
                                       for p, m in zip(starters + bench, minutes)))

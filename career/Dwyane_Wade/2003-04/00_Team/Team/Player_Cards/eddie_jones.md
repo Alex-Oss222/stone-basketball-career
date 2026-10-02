@@ -8,40 +8,45 @@
 
 **Role:** 2002-03 SG1 is the carried 2002-03 baseline; Miami has not finalized the 2003-04 role.
 
-**Offense:** Not assessed from the current repository evidence beyond the carried roster and depth role.
+**Offense:** In 2002-03: 18.5 points and 3.7 assists per game; 55.1% true shooting at 23.0% usage.
 
-**Defense:** Not assessed from the current repository evidence beyond position and depth assignment.
-
-**Best traits:** Not assessed.
-
-**Main weaknesses:** Not assessed.
+**Defense:** In 2002-03: 1.4 steals and 0.7 blocks per game. Matchup defense and coverage execution are unassessed.
 
 ## Player grades
 
-**Overall:** Not assessed. The current repository does not contain enough dated staff evidence for an opening NBA grade.
+<!-- veteran-grades:start -->
 
-Staff estimates against NBA rotation players at the assessment date. Scale: 1–2 very weak; 3–4 below average; 5–6 average; 7–8 above average; 9–10 elite. Use “Not assessed” when evidence is insufficient.
+**Statistical estimates, 20–80.** 50 is the median of players with at least 500 minutes; higher is better for the named statistic. These are estimates from prior production, not staff scouting grades.
 
-| Skill | Grade /10 | Evidence or limitation |
+**Sample:** 47 games, 1,789 minutes in 2002-03. Small samples are pulled toward the league baseline.
+
+| Statistic | Grade | Recorded 2002-03 evidence |
 | --- | ---: | --- |
-| Physical tools | Not assessed | No dated Miami staff grade in current evidence. |
-| Ball handling | Not assessed | No dated Miami staff grade in current evidence. |
-| Passing and decisions | Not assessed | No dated Miami staff grade in current evidence. |
-| Shot creation | Not assessed | No dated Miami staff grade in current evidence. |
-| Rim finishing | Not assessed | No dated Miami staff grade in current evidence. |
-| Shooting | Not assessed | No dated Miami staff grade in current evidence. |
-| Off-ball offense | Not assessed | No dated Miami staff grade in current evidence. |
-| Rebounding | Not assessed | No dated Miami staff grade in current evidence. |
-| On-ball defense | Not assessed | No dated Miami staff grade in current evidence. |
-| Screen navigation | Not assessed | No dated Miami staff grade in current evidence. |
-| Help defense | Not assessed | No dated Miami staff grade in current evidence. |
-| Rim protection | Not assessed | No dated Miami staff grade in current evidence. |
+| Two-point scoring | 35 | 43.2% (193/447) |
+| Three-point shooting | 78 | 40.7% (98/241) |
+| Free throws | 70 | 82.2% (189/230) |
+| Scoring efficiency | 68 | TS 55.1% |
+| Assist production | 64 | AST 18.8% |
+| Turnover control | 75 | TOV 9.7%; lower is better |
+| Offensive rebounding | 28 | ORB 2.2% |
+| Defensive rebounding | 47 | DRB 12.7% |
+| Steal production | 62 | STL 2.0% |
+| Block production | 56 | BLK 1.4% |
+
+**Tendencies:** usage 23.0%; threes 35.0% of field-goal attempts; 0.334 free-throw attempts per field-goal attempt.
+
+**Not assessed:** overall ability, physical tools, shot creation, rim versus midrange finishing, passing decisions, off-ball play, on-ball defense, screen navigation, help defense and rim protection. Steals and blocks alone do not establish defensive ability.
+
+[Source totals and rates](../../../../../../library/2003/league/nba_2002_03_player_stats.json) · [How grades and engine estimates are calculated](../../../../../../docs/statistical_ratings.md) · BRef ID: `jonesed02`.
+
+<!-- veteran-grades:end -->
 
 ## Changes and coaching notes
 
 | Date | Finding and effect on role or grade | Evidence |
 | --- | --- | --- |
 | June 26, 2003 | No material change established. Opening Miami offseason card created from the current control/depth baseline. | [Roster/control register](../Roster/roster.json) and [league baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json) |
+| June 26, 2003 | Added 2002-03 statistical estimates; no change to role or availability. | [Prior-season record](../../../../../../library/2003/league/nba_2002_03_player_stats.json) |
 
 ## Sources and uncertainty
 
@@ -56,13 +61,22 @@ Staff estimates against NBA rotation players at the assessment date. Scale: 1–
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2003-04 has not started. Prior NBA statistical history has not yet been imported into this card.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04 has not started.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2002-03 | MIA | 47 | 47 | 38.1 | 18.5 | 4.8 | 3.7 | 1.4 | 0.7 | 1.8 | 42.3% | 40.7% | 82.2% |
 | 2003-04 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
-Source: [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json) for roster status; detailed historical statistical lines have not yet been imported.
+<!-- veteran-details:start -->
+### Additional statistics
+
+| Season | FGM | FGA | 3PM | 3PA | FTM | FTA | ORB | DRB | PF |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2002-03 | 6.2 | 14.6 | 2.1 | 5.1 | 4.0 | 4.9 | 0.7 | 4.1 | 2.9 |
+<!-- veteran-details:end -->
+
+Source: [2002-03 totals and advanced rates](../../../../../../library/2003/league/nba_2002_03_player_stats.json), `jonesed02`. Team codes are Basketball-Reference codes.
 
 ## Playoff statistics by year
 

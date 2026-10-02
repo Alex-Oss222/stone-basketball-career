@@ -27,6 +27,7 @@ from .era import rules_for, season_for_date
 from .game_runner import build_game_packet
 from .kernel import PlayerInput, TeamInput
 from .league import baseline_team, load_clubs
+from .player_stats import load_rating_index
 
 ROOT = Path(__file__).resolve().parents[1]
 FIELDS = {"event_id", "game_date", "game_type", "venue", "home", "away"}
@@ -36,7 +37,7 @@ def find_requests(root=ROOT):
     return sorted((Path(root) / "career").rglob("*.request.json"))
 
 
-def _club(spec, actives, root):
+def _club(spec, actives, root, rating_index):
     if not isinstance(spec, dict) or not isinstance(spec.get("team"), str):
         raise ValueError("each club needs a team name")
     if ("players" in spec) == ("baseline" in spec):
@@ -45,13 +46,14 @@ def _club(spec, actives, root):
         clubs = load_clubs(Path(root) / spec["baseline"])
         if spec["team"] not in clubs:
             raise ValueError(f"{spec['team']} is not in {spec['baseline']}")
-        return baseline_team(spec["team"], clubs[spec["team"]], actives)
+        return baseline_team(spec["team"], clubs[spec["team"]], actives, rating_index)
     players = []
     for p in spec["players"]:
-        unknown = set(p) - {"player_id", "position", "minutes", "ratings"}
+        unknown = set(p) - {"player_id", "bbr_id", "position", "minutes", "ratings"}
         if unknown:
             raise ValueError(f"{spec['team']}: unknown player fields {sorted(unknown)}")
-        players.append(PlayerInput(p["player_id"], p["position"], p["minutes"], dict(p.get("ratings", {}))))
+        profile = rating_index.engine_profile(p["player_id"], p.get("bbr_id")) if rating_index else {}
+        players.append(PlayerInput(p["player_id"], p["position"], p["minutes"], dict(p.get("ratings", {})), profile))
     return TeamInput(spec["team"], tuple(players))
 
 
@@ -59,10 +61,13 @@ def load_request(path, root=ROOT):
     data = json.loads(Path(path).read_text(encoding="utf-8"))
     if not isinstance(data, dict) or set(data) != FIELDS:
         raise ValueError(f"request fields must be exactly {sorted(FIELDS)}")
-    actives = rules_for(season_for_date(data["game_date"]))["game_day_actives"]
-    home = _club(data["home"], actives, root)
-    away = _club(data["away"], actives, root)
+    season = season_for_date(data["game_date"])
+    actives = rules_for(season)["game_day_actives"]
+    index = load_rating_index(data["game_date"], season, root)
+    home = _club(data["home"], actives, root, index)
+    away = _club(data["away"], actives, root, index)
     kwargs = {k: data[k] for k in ("event_id", "game_date", "game_type", "venue")}
+    kwargs["root"] = root
     build_game_packet(home, away, **kwargs)  # full validation, nothing journaled
     return home, away, kwargs
 

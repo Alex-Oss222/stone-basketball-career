@@ -18,24 +18,7 @@
 
 ## Player grades
 
-**Overall:** Not assessed. The current repository does not contain enough dated staff evidence for an opening NBA grade.
-
-Staff estimates against NBA rotation players at the assessment date. Scale: 1–2 very weak; 3–4 below average; 5–6 average; 7–8 above average; 9–10 elite. Use “Not assessed” when evidence is insufficient.
-
-| Skill | Grade /10 | Evidence or limitation |
-| --- | ---: | --- |
-| Physical tools | Not assessed | No dated Miami staff grade in current evidence. |
-| Ball handling | Not assessed | No dated Miami staff grade in current evidence. |
-| Passing and decisions | Not assessed | No dated Miami staff grade in current evidence. |
-| Shot creation | Not assessed | No dated Miami staff grade in current evidence. |
-| Rim finishing | Not assessed | No dated Miami staff grade in current evidence. |
-| Shooting | Not assessed | No dated Miami staff grade in current evidence. |
-| Off-ball offense | Not assessed | No dated Miami staff grade in current evidence. |
-| Rebounding | Not assessed | No dated Miami staff grade in current evidence. |
-| On-ball defense | Not assessed | No dated Miami staff grade in current evidence. |
-| Screen navigation | Not assessed | No dated Miami staff grade in current evidence. |
-| Help defense | Not assessed | No dated Miami staff grade in current evidence. |
-| Rim protection | Not assessed | No dated Miami staff grade in current evidence. |
+**Not assessed.** Mourning did not appear in 2002-03 and has no record in the [imported veteran dataset](../../../../../../library/2003/league/nba_2002_03_player_stats.json). An earlier completed season and dated availability evidence are needed before assigning a statistical baseline. No average grade is presented as his ability.
 
 ## Changes and coaching notes
 

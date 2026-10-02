@@ -12,9 +12,11 @@ scoring. Player ratings, when present, tilt those rates around the era mean.
 """
 from dataclasses import asdict, dataclass, field
 import hashlib
+import math
 import random
 
 from .packets import canonical
+from .player_stats import MODEL_VERSION, RATE_KEYS
 
 POSITIONS = ("PG", "SG", "SF", "PF", "C")
 RATING_KEYS = (
@@ -45,6 +47,7 @@ class PlayerInput:
     position: str
     minutes: float
     ratings: dict = field(default_factory=dict)
+    stat_profile: dict = field(default_factory=dict)
 
 
 @dataclass(frozen=True)
@@ -66,13 +69,30 @@ def team_errors(team, rules):
     for p in players:
         if p.position not in POSITIONS:
             errors.append(f"{p.player_id}: unknown position {p.position!r}")
-        if isinstance(p.minutes, bool) or not isinstance(p.minutes, (int, float)) or p.minutes < 0 or p.minutes > 48:
+        if isinstance(p.minutes, bool) or not isinstance(p.minutes, (int, float)) or not math.isfinite(p.minutes) or p.minutes < 0 or p.minutes > 48:
             errors.append(f"{p.player_id}: minutes target must be 0-48")
         for key, value in p.ratings.items():
             if key not in RATING_KEYS:
                 errors.append(f"{p.player_id}: unknown rating {key!r}")
             elif isinstance(value, bool) or not isinstance(value, int) or not RATING_MIN <= value <= RATING_MAX:
                 errors.append(f"{p.player_id}: rating {key} must be an integer {RATING_MIN}-{RATING_MAX}")
+        if p.stat_profile:
+            profile = p.stat_profile
+            if (set(profile) != {"bbr_id", "model_version", "as_of", "season_end_year", "source_sha256", "rates"}
+                    or profile.get("model_version") != MODEL_VERSION
+                    or profile.get("season_end_year") != 2003):
+                errors.append(f"{p.player_id}: invalid statistical profile metadata")
+            rates = profile.get("rates", {})
+            if not isinstance(rates, dict) or set(rates) != set(RATE_KEYS):
+                errors.append(f"{p.player_id}: incomplete statistical rates")
+            else:
+                for key, value in rates.items():
+                    limit = 10 if key in ("free_throw_attempt_rate", "turnovers_per_fga", "fouls_per_minute") else 1
+                    if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or not 0 <= value <= limit:
+                        errors.append(f"{p.player_id}: invalid rate {key}")
+            # Avoid silently ignoring a supplied grade or double-counting a rate.
+            if set(p.ratings) - {"perimeter_defense", "interior_defense"}:
+                errors.append(f"{p.player_id}: statistical rates replace overlapping legacy ratings")
     total = sum(p.minutes for p in players if isinstance(p.minutes, (int, float)))
     regulation = rules["players_on_floor"] * rules["quarters"] * rules["quarter_minutes"]
     if abs(total - regulation) > 1:
@@ -95,6 +115,8 @@ def calibrate(environment):
     and_one_fta = a["fta"] * assumptions["and_one_share_of_fta"]
     trips = (a["fta"] - and_one_fta) / 2
     plays = a["fga"] + a["tov"] + trips
+    team_tov = environment.get("team_turnovers_per_game", 0)
+    player_tov = a["tov"] - team_tov
     misses = a["fga"] - fgm
     box_possessions = plays - a["orb"]
     return {
@@ -103,19 +125,23 @@ def calibrate(environment):
         # little above the published pace, whose estimator differs; the box
         # totals are what a game record shows, so they take priority.
         "possession_seconds": 2880 / (2 * box_possessions) - ORB_CONTINUATION_SECONDS * a["orb"] / box_possessions,
-        "p_tov": a["tov"] / plays,
-        "p_trip": trips / plays,
+        "p_team_tov": team_tov / plays,
+        "p_tov": player_tov / (plays - team_tov),
+        "p_trip": trips / (plays - team_tov),
         "three_share": a["three_pa"] / a["fga"],
         "p_two": (fgm - three_m) / two_a,
         "p_three": a["three_pct"],
         "p_ft": a["ft_pct"],
         "p_and_one": and_one_fta / fgm,
         "p_orb": a["orb"] / misses,
+        "p_player_drb": min(1.0, a["drb"] / (misses - a["orb"])),
         "p_ast": a["ast"] / fgm,
-        "p_stl": a["stl"] / a["tov"],
+        "p_stl": a["stl"] / player_tov,
         "p_blk": a["blk"] / misses,
         "p_extra_foul": max(0.0, a["pf"] - trips - and_one_fta) / (a["pace"]),
         "home_edge": assumptions["home_edge_points_per_game"] / (2 * 2.2 * a["fga"]),
+        "and_one_share_of_fta": assumptions["and_one_share_of_fta"],
+        "rate_baselines": environment.get("player_rate_baselines", {}),
     }
 
 
@@ -143,6 +169,7 @@ class _Club:
         self.fouled_out = set()
         self.points = 0
         self.period_points = []
+        self.team_turnovers = 0
 
 
 def _weighted(rng, items, weights):
@@ -183,6 +210,11 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         if errors:
             raise ValueError(f"{team.team_id}: " + "; ".join(errors))
     cal = calibrate(environment)
+    if any(p.stat_profile for team in (home, away) for p in team.players):
+        if any(not isinstance(cal["rate_baselines"].get(k), (int, float)) or
+               not math.isfinite(cal["rate_baselines"][k]) or cal["rate_baselines"][k] <= 0
+               for k in RATE_KEYS):
+            raise ValueError("statistical profiles require a complete positive rate baseline")
     seed_material = entropy + canonical({"event_id": event_id, "home": team_packet(home),
                                          "away": team_packet(away), "game_type": game_type})
     rng = random.Random(int.from_bytes(hashlib.sha256(seed_material).digest(), "big"))
@@ -204,7 +236,8 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
 
     def foul(defense, kind):
         club = clubs[defense]
-        weights = [POSITION_PROFILE[club.players[pid].position][6] * (1.25 if kind == "shooting" and club.players[pid].position in ("PF", "C") else 1.0)
+        weights = [rate_weight(club.players[pid], "fouls_per_minute", 6) *
+                   (1.25 if not club.players[pid].stat_profile and kind == "shooting" and club.players[pid].position in ("PF", "C") else 1)
                    for pid in club.on_floor]
         pid = _weighted(rng, club.on_floor, weights)
         club.lines[pid]["pf"] += 1
@@ -215,7 +248,9 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
 
     def free_throws(offense, shooter, attempts):
         club = clubs[offense]
-        p = _clamp(cal["p_ft"] + RATING_SLOPE * _rating(club.players[shooter], "free_throws"), 0.3, 0.97)
+        player = club.players[shooter]
+        p = (player.stat_profile["rates"]["free_throw_pct"] if player.stat_profile else
+             _clamp(cal["p_ft"] + RATING_SLOPE * _rating(player, "free_throws"), 0.3, 0.97))
         made = 0
         for _ in range(attempts):
             club.lines[shooter]["fta"] += 1
@@ -226,14 +261,27 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         club.points += made
         return made
 
+    def rate_weight(player, key, position_index, legacy_key=None):
+        if player.stat_profile:
+            return player.stat_profile["rates"][key] / cal["rate_baselines"][key]
+        return POSITION_PROFILE[player.position][position_index] * (1 + 0.02 * _rating(player, legacy_key))
+
+    def weights_for(club, key, position_index, legacy_key=None, players=None):
+        return [rate_weight(club.players[pid], key, position_index, legacy_key)
+                for pid in (club.on_floor if players is None else players)]
+
     def rebound(offense, defense):
         o, d = clubs[offense], clubs[defense]
-        o_reb = sum(POSITION_PROFILE[o.players[pid].position][2] * (1 + 0.01 * _rating(o.players[pid], "rebounding")) for pid in o.on_floor)
-        d_reb = sum(POSITION_PROFILE[d.players[pid].position][2] * (1 + 0.01 * _rating(d.players[pid], "rebounding")) for pid in d.on_floor)
-        p = _clamp(cal["p_orb"] * (o_reb / d_reb) ** 0.5, 0.05, 0.6)
+        o_weights = weights_for(o, "offensive_rebound_pct", 2, "rebounding")
+        d_weights = weights_for(d, "defensive_rebound_pct", 2, "rebounding")
+        p = _clamp(cal["p_orb"] * (sum(o_weights) / max(.01, sum(d_weights))) ** 0.5, 0.05, 0.6)
         side = offense if rng.random() < p else defense
+        # Not every missed field goal produces an individual rebound (dead ball,
+        # out of bounds, etc.). Do not credit those to a made-up player.
+        if side == defense and rng.random() >= cal["p_player_drb"]:
+            return False
         club = clubs[side]
-        weights = [POSITION_PROFILE[club.players[pid].position][2] * (1 + 0.02 * _rating(club.players[pid], "rebounding")) for pid in club.on_floor]
+        weights = o_weights if side == offense else d_weights
         pid = _weighted(rng, club.on_floor, weights)
         club.lines[pid]["orb" if side == offense else "drb"] += 1
         return side == offense
@@ -242,35 +290,54 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         """Resolve one possession; return True when the offense keeps the ball (offensive rebound)."""
         defense = other(offense)
         o, d = clubs[offense], clubs[defense]
-        handlers = [POSITION_PROFILE[o.players[pid].position][0] * (1 + 0.02 * _rating(o.players[pid], "usage")) for pid in o.on_floor]
+        if rng.random() < cal["p_team_tov"]:
+            o.team_turnovers += 1
+            return False
+        handlers = weights_for(o, "usage_pct", 0, "usage")
         shooter = _weighted(rng, o.on_floor, handlers)
         player = o.players[shooter]
         roll = rng.random()
         p_tov = _clamp(cal["p_tov"] - RATING_SLOPE * _rating(player, "ball_handling"), 0.03, 0.4)
+        p_trip, p_and_one = cal["p_trip"], cal["p_and_one"]
+        rates = player.stat_profile.get("rates")
+        if rates:
+            trips_per_fga = rates["free_throw_attempt_rate"] * (1-cal["and_one_share_of_fta"]) / 2
+            plays_per_fga = 1 + rates["turnovers_per_fga"] + trips_per_fga
+            p_tov = rates["turnovers_per_fga"] / plays_per_fga
+            p_trip = trips_per_fga / plays_per_fga
+            fg_pct = rates["three_point_attempt_rate"]*rates["three_point_pct"] + (1-rates["three_point_attempt_rate"])*rates["two_point_pct"]
+            p_and_one = _clamp(rates["free_throw_attempt_rate"] * cal["and_one_share_of_fta"] / max(.01, fg_pct), 0, 1)
         if roll < p_tov:
             o.lines[shooter]["tov"] += 1
-            if rng.random() < cal["p_stl"]:
-                weights = [POSITION_PROFILE[d.players[pid].position][4] * (1 + 0.02 * _rating(d.players[pid], "perimeter_defense")) for pid in d.on_floor]
+            weights = weights_for(d, "steal_pct", 4, "perimeter_defense")
+            p_stl = cal["p_stl"] * sum(weights)/5 if any(d.players[pid].stat_profile for pid in d.on_floor) else cal["p_stl"]
+            if rng.random() < _clamp(p_stl, 0, .98):
                 d.lines[_weighted(rng, d.on_floor, weights)]["stl"] += 1
             return False
-        if roll < p_tov + cal["p_trip"]:
+        if roll < p_tov + p_trip:
             fouler = foul(defense, "shooting")
             free_throws(offense, shooter, 2)
             if fouler:
                 d.on_floor[d.on_floor.index(fouler)] = _replacement(d, fouler)
             return False
-        three_weight = POSITION_PROFILE[player.position][1] * (1 + 0.02 * _rating(player, "three_point_shooting"))
-        # Rescale by the usage-weighted mean so the team's three-point share stays on the era rate.
-        mean_three = sum(h * POSITION_PROFILE[o.players[pid].position][1] for pid, h in zip(o.on_floor, handlers)) / sum(handlers)
-        is_three = rng.random() < _clamp(cal["three_share"] * three_weight / mean_three, 0.0, 0.8)
+        if rates:
+            three_share = rates["three_point_attempt_rate"]
+        else:
+            three_weight = POSITION_PROFILE[player.position][1] * (1 + 0.02 * _rating(player, "three_point_shooting"))
+            # Keep the old positional frequency fallback for unrated players.
+            mean_three = sum(h * POSITION_PROFILE[o.players[pid].position][1] for pid, h in zip(o.on_floor, handlers)) / max(.01, sum(handlers))
+            three_share = _clamp(cal["three_share"] * three_weight / max(.01, mean_three), 0.0, 0.8)
+        is_three = rng.random() < three_share
         defense_key = "perimeter_defense" if is_three else "interior_defense"
         def_rating = sum(_rating(d.players[pid], defense_key) for pid in d.on_floor) / 5
-        if is_three:
+        if rates:
+            p_make = rates["three_point_pct" if is_three else "two_point_pct"]
+        elif is_three:
             p_make = cal["p_three"] + RATING_SLOPE * _rating(player, "three_point_shooting")
         else:
             finish = (_rating(player, "rim_finishing") + _rating(player, "mid_range_shooting")) / 2
             p_make = cal["p_two"] + RATING_SLOPE * finish
-        p_make = _clamp(p_make - RATING_SLOPE * def_rating + edge[offense], 0.1, 0.8)
+        p_make = _clamp(p_make - RATING_SLOPE * def_rating + edge[offense], 0.0, 1.0)
         line = o.lines[shooter]
         line["fga"] += 1
         if is_three:
@@ -281,18 +348,20 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
             line["tpm"] += int(is_three)
             line["pts"] += value
             o.points += value
-            if rng.random() < cal["p_ast"]:
-                mates = [pid for pid in o.on_floor if pid != shooter]
-                weights = [POSITION_PROFILE[o.players[pid].position][3] * (1 + 0.02 * _rating(o.players[pid], "passing")) for pid in mates]
+            mates = [pid for pid in o.on_floor if pid != shooter]
+            weights = weights_for(o, "assist_pct", 3, "passing", mates)
+            p_ast = cal["p_ast"] * sum(weights)/4 if any(o.players[pid].stat_profile for pid in mates) else cal["p_ast"]
+            if rng.random() < _clamp(p_ast, 0, .98):
                 o.lines[_weighted(rng, mates, weights)]["ast"] += 1
-            if rng.random() < cal["p_and_one"]:
+            if rng.random() < p_and_one:
                 fouler = foul(defense, "shooting")
                 free_throws(offense, shooter, 1)
                 if fouler:
                     d.on_floor[d.on_floor.index(fouler)] = _replacement(d, fouler)
             return False
-        if rng.random() < cal["p_blk"]:
-            weights = [POSITION_PROFILE[d.players[pid].position][5] * (1 + 0.02 * _rating(d.players[pid], "interior_defense")) for pid in d.on_floor]
+        weights = weights_for(d, "block_pct", 5, "interior_defense")
+        p_blk = cal["p_blk"] * sum(weights)/5 if any(d.players[pid].stat_profile for pid in d.on_floor) else cal["p_blk"]
+        if rng.random() < _clamp(p_blk, 0, .98):
             d.lines[_weighted(rng, d.on_floor, weights)]["blk"] += 1
         return rebound(offense, defense)
 
@@ -354,6 +423,8 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
             for key in totals:
                 totals[key] += line[key]
         totals["possessions"] = possessions[club.side]
+        totals["team_turnovers"] = club.team_turnovers
+        totals["tov"] += club.team_turnovers
         return totals
 
     def box(club):
@@ -406,6 +477,8 @@ def validate_result(result):
         team = result["team_stats"][side]
         if sum(r["pts"] for r in rows) != result["final_score"][side]:
             errors.append(f"{side}: player points do not sum to score")
+        if sum(r["tov"] for r in rows) + team.get("team_turnovers", 0) != team["tov"]:
+            errors.append(f"{side}: individual and team turnovers do not reconcile")
         if sum(result["period_scores"][side]) != result["final_score"][side]:
             errors.append(f"{side}: period scores do not sum to score")
         if 2 * (team["fgm"] - team["tpm"]) + 3 * team["tpm"] + team["ftm"] != team["pts"]:

@@ -12,6 +12,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime.season_rules import month_week
+from runtime.player_stats import repository_rating_errors
 
 NOTE_STATUSES = {"not_started","active","complete"}
 GAME_STATUSES = {"scheduled","played","not_played"}
@@ -85,7 +86,7 @@ def validate_sequence(folder, errors, maximum=None):
 
 
 def validate():
-    errors=[]
+    errors=repository_rating_errors(ROOT)
     try:
         config=json.loads((ROOT/"foundation/season_structure.json").read_text(encoding="utf-8"))
         player,season=discover()
@@ -188,7 +189,7 @@ def validate():
                 require(errors,all(pos >= 0 for pos in positions),f"{card.relative_to(ROOT)}: missing canonical template section")
                 if all(pos >= 0 for pos in positions):
                     require(errors,positions==sorted(positions),f"{card.relative_to(ROOT)}: template section order changed")
-                    require(errors,text.rstrip().endswith("No verified awards or honors have been imported into this card through June 26, 2003.") or "## Awards and honors" in text[text.rfind("## Awards and honors"):],f"{card.relative_to(ROOT)}: awards section must remain last")
+                    require(errors,re.findall(r"^## .+$",text,re.M)[-3:]==required_card_sections[-3:],f"{card.relative_to(ROOT)}: regular-season stats, playoffs and awards must remain the final sections")
 
     finance_path=team/"Finances/finance.json"
     if finance_path.is_file():

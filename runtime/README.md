@@ -1,6 +1,6 @@
 # Game engine
 
-Kernel `2003.1`, schema `1`.
+Kernel `2003.2`, schema `1`.
 
 ## How a game gets played
 
@@ -18,13 +18,15 @@ Before a game is drawn, its event id and the SHA-256 of its inputs are journaled
 - **Rules by season** (`SEASON_RULES`): 12 game-day actives, injured list, zone defense legal with defensive three seconds, no hand-check emphasis yet (that begins 2004-05), no play-in (begins 2020-21), best-of-seven first round. A season without a row fails closed; add the next season's row before the career clock enters it.
 - **League environment**: a season is calibrated on the last *completed* season, read from `library/<year>/league/nba_<season>_league_environment.json`, and only once that file's `published_after` date has passed for the game date. 2003-04 games run on the 2002-03 environment. A season's own final averages are never used to play it.
 
-The 2002-03 environment is marked `provisional`: its values were entered from recollection of Basketball-Reference league averages and need a line-by-line check against the source named in the file.
+The 2002-03 environment now uses the supplied Basketball-Reference averages and retains their provenance. Statistical estimates and structural modeling assumptions remain provisional; see [the veteran rating method](../docs/statistical_ratings.md).
 
 ## Kernel
 
-Per-play probabilities (turnover, free-throw trip, field-goal attempt, three-point share, make rates, and-one, offensive rebound, assist, steal, block, non-shooting fouls) are derived from the environment's per-game averages. Two neutral clubs reproduce the era's scoring, shot volume, threes, free throws, turnovers and offensive rebounds within a few percent (`tests/test_engine.py`). Defensive rebounds run high because team rebounds are credited to players.
+Per-play probabilities (turnover, free-throw trip, field-goal attempt, three-point share, make rates, and-one, offensive rebound, assist, steal, block, non-shooting fouls) start from the environment's per-game averages. Isolated neutral-club tests check era totals. Unassigned team turnovers are separated from individual turnovers; not every missed field goal is credited as an individual rebound.
 
-Players carry optional ratings on a 20-80 scale (`three_point_shooting`, `mid_range_shooting`, `rim_finishing`, `free_throws`, `ball_handling`, `passing`, `rebounding`, `perimeter_defense`, `interior_defense`, `usage`). A missing rating is league average (50). Player cards are `Unassessed`, so every player currently plays as league average until the simulation grades them. The position profiles and the home edge are provisional structural assumptions, not sourced league data.
+Requests automatically attach 2002-03 statistical profiles to matched veterans. Use a verified `bbr_id` on explicit player entries; recognized names/IDs also work. Shooting frequency and accuracy, free-throw drawing and accuracy, and offensive/defensive rebounding are separate inputs. The complete environment, source hash, model version and selected rates are frozen in the game packet.
+
+Unmatched players retain optional legacy ratings on a 20–80 scale (`three_point_shooting`, `mid_range_shooting`, `rim_finishing`, `free_throws`, `ball_handling`, `passing`, `rebounding`, `perimeter_defense`, `interior_defense`, `usage`), defaulting to neutral 50. That fallback is not a scouting assessment. For matched veterans, statistical inputs replace overlapping legacy ratings; only independently assessed perimeter/interior defense grades may be supplied alongside them. Display grades on cards are not engine inputs. Position fallbacks, home edge and other structural assumptions remain provisional.
 
 Rotation follows each player's minute target (sum 240). Six fouls disqualify. Overtime is five minutes.
 

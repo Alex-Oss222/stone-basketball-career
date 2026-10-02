@@ -6,7 +6,10 @@ These files are source evidence, not live career state.
 |---|---|---|
 | `nba_2003_end_of_season.json` | Each club at the end of its 2002-03 season | League roster baseline, depth slots, player IDs, birth dates and image metadata |
 | `nba_2003_draft_class.json` | June 26, 2003 after draft-night trades | Draft-rights destinations, rookie identity data and image metadata |
-| `nba_2002_03_league_environment.json` | 2002-03 league averages (provisional) | Engine calibration baseline for 2003-04 |
+| `nba_2002_03_player_stats.json` | All 428 players who appeared in the 2002-03 regular season | Original totals, advanced rates and source provenance |
+| `nba_2003_veteran_ratings.json` | June 26, 2003; based only on 2002-03 | Generated statistical estimates, display grades and sample sizes |
+| `nba_2003_veteran_import_report.json` | June 26, 2003 import coverage | Validation and roster matches |
+| `nba_2002_03_league_environment.json` | Supplied 2002-03 league averages | Engine calibration baseline for 2003-04 |
 | `nba_2003_04_schedule.json` | 2003-04 regular season, 1,189 games | Dates and matchups only; source: ESPN via SportsDataverse, as played |
 | `nba_2003_04_preseason_schedule.json` | 2003-04 preseason, 114 NBA-vs-NBA games | Dates and matchups only; source: NBA.com via Kaggle, as played |
 
