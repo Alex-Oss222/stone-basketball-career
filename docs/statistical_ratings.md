@@ -107,3 +107,35 @@ All of these are provisional judgement constants, not fitted values. Replacing t
 Coverage at June 26, 2003: Wade only. The other 57 players in the [draft-class file](../library/2003/league/nba_2003_draft_class.json) have identity data but no pre-draft statistics or pick numbers, so they play on the neutral fallback until their records are added. A level without a factor table (high school, international) is refused rather than guessed; LeBron James (high school) and Darko Milicic (international) need their own approach.
 
 New draft classes follow the same path: a `library/<year>/league/nba_<year>_prospect_stats.json` with draft-night evidence, gated by the draft date.
+
+## Talent trajectories (option C)
+
+The user chose the hybrid model: real players' ability follows their real careers, with simulated development around it. Model `trajectory-hybrid.1`, `runtime/trajectories.py`. The scope rules are in `AGENTS.md` under "Talent-trajectory exception".
+
+- **Expected path.** For each player and season in `library/careers/nba_player_careers.json`, his real rates for that season, shrunk toward the league baseline with the same 300-minute prior as veterans. A low-minute real season therefore says little.
+- **Development swing.** Each rate is multiplied by `exp(spread × z)`. `z` follows a stationary AR(1) per player: full spread in the first season, then half of last season's swing carries over (`PERSISTENCE = 0.5`). Spreads are judgement constants: 2-5% for shooting accuracy, 6-12% for volume and production rates.
+- **Who decides the draw.** The engine journals one `development:<season>:<bbr_id>` event per player and season, exactly like a game, so a swing cannot be chosen or re-rolled. Replays are identical; the developed rates and the draws travel in the frozen game packet and are re-checked.
+- **Priority.** A trajectory replaces the veteran or rookie estimate for that player and season. Players without a trajectory keep their existing estimate. Wade never has one; validation rejects a careers file that includes him.
+- **What it does not cover.** Injuries, minutes and roles are not taken from history; who plays and how much stays a simulated decision. Real careers cut short by injury still describe ability, not availability.
+
+### Careers file
+
+`library/careers/nba_player_careers.json` does not exist yet, so no trajectory is active. Format:
+
+```json
+{
+  "schema_version": 1,
+  "kind": "player_career_rates",
+  "source": "where the numbers came from",
+  "players": {
+    "jamesle01": {
+      "player_name": "LeBron James",
+      "seasons": {
+        "2003-04": {"minutes": 3122, "rates": {"two_point_pct": 0.0, "...": "all 13 engine rate keys"}}
+      }
+    }
+  }
+}
+```
+
+The 13 rate keys are those in `RATE_KEYS` (`runtime/player_stats.py`): two-, three- and free-throw accuracy, three-point and free-throw attempt rates, turnovers per FGA, usage, assist, offensive and defensive rebound, steal and block percentages, and fouls per minute. A rate may be `null` when the source lacks it. Basketball-Reference season tables supply all of them.

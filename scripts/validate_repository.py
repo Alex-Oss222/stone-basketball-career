@@ -451,6 +451,9 @@ def validate():
         for game in rdir.glob("Game_*.md"):
             validate_game(game,errors)
 
+    from runtime.trajectories import trajectory_errors
+    errors.extend(trajectory_errors(ROOT))
+
     from runtime.prospects import rookie_errors
     errors.extend(rookie_errors(ROOT))
 
