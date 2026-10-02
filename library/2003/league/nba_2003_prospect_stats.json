@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "league": "NBA",
+  "draft_year": 2003,
+  "kind": "draft_prospect_statistics",
+  "as_of": "2003-06-26",
+  "note": "Pre-draft statistics for drafted players. Only evidence available on draft night belongs here.",
+  "records": [
+    {
+      "player_id": "Dwyane Wade",
+      "bbr_id": "wadedw01",
+      "level": "ncaa",
+      "school": "Connecticut",
+      "birth_date": "1984-01-17",
+      "draft_pick": 5,
+      "draft_team": "Miami Heat",
+      "source": "career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md, section 13 (alternate-history simulation record; not the historical Wade). Shooting and points are profile totals; other counting stats are per-game x games where the profile gives no total. Personal fouls are not recorded. Per-season minutes (2000-01), turnovers (2000-01) and blocks (2002-03) are adjusted by one from the rounded per-game product so career totals equal the profile's stated totals (3,178 minutes, 276 turnovers, 99 blocks).",
+      "seasons": [
+        {
+          "season": "2000-01",
+          "age": 17,
+          "games": 34,
+          "minutes": 965,
+          "points": 439,
+          "field_goals_made": 163,
+          "field_goals_attempted": 341,
+          "three_pointers_made": 35,
+          "three_pointers_attempted": 91,
+          "free_throws_made": 78,
+          "free_throws_attempted": 96,
+          "rebounds": 156,
+          "assists": 122,
+          "steals": 44,
+          "blocks": 24,
+          "turnovers": 81,
+          "personal_fouls": null
+        },
+        {
+          "season": "2001-02",
+          "age": 18,
+          "games": 30,
+          "minutes": 1023,
+          "points": 495,
+          "field_goals_made": 177,
+          "field_goals_attempted": 360,
+          "three_pointers_made": 40,
+          "three_pointers_attempted": 106,
+          "free_throws_made": 101,
+          "free_throws_attempted": 117,
+          "rebounds": 162,
+          "assists": 144,
+          "steals": 54,
+          "blocks": 30,
+          "turnovers": 87,
+          "personal_fouls": null
+        },
+        {
+          "season": "2002-03",
+          "age": 19,
+          "games": 34,
+          "minutes": 1190,
+          "points": 819,
+          "field_goals_made": 275,
+          "field_goals_attempted": 534,
+          "three_pointers_made": 76,
+          "three_pointers_attempted": 184,
+          "free_throws_made": 193,
+          "free_throws_attempted": 215,
+          "rebounds": 221,
+          "assists": 201,
+          "steals": 75,
+          "blocks": 45,
+          "turnovers": 108,
+          "personal_fouls": null
+        }
+      ]
+    }
+  ]
+}

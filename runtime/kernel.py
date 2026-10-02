@@ -17,6 +17,7 @@ import random
 
 from .packets import canonical
 from .player_stats import MODEL_VERSION, RATE_KEYS
+from .prospects import ROOKIE_MODEL_VERSION
 
 POSITIONS = ("PG", "SG", "SF", "PF", "C")
 RATING_KEYS = (
@@ -79,7 +80,7 @@ def team_errors(team, rules):
         if p.stat_profile:
             profile = p.stat_profile
             if (set(profile) != {"bbr_id", "model_version", "as_of", "season_end_year", "source_sha256", "rates"}
-                    or profile.get("model_version") != MODEL_VERSION
+                    or profile.get("model_version") not in (MODEL_VERSION, ROOKIE_MODEL_VERSION)
                     or profile.get("season_end_year") != 2003):
                 errors.append(f"{p.player_id}: invalid statistical profile metadata")
             rates = profile.get("rates", {})

@@ -77,3 +77,33 @@ The source SHA-256 and model version travel with every game profile. The complet
 Checks cover the import's arithmetic and joins, generated-file consistency, independent shot frequency and accuracy, FT range, rebounding allocation, sample shrinkage, date gates, and packet immutability. Isolated kernel calibration tests check aggregate behavior against the 2002-03 environment. They are not a historical replay or a fitted prediction of every player's next season. The priors and structural assumptions remain provisional.
 
 The data collector reported an ESPN cross-check for 423 players and live Basketball-Reference spot checks. The repository retains that provenance in the original records; this implementation does not claim to have independently repeated those external checks. Games started remain the supplied Basketball-Reference values.
+
+## Rookie estimates
+
+Draftees have no NBA record, so they get an estimate from pre-draft statistics instead (model `rookie-2003.1`, `runtime/prospects.py`).
+
+- [Pre-draft statistics](../library/2003/league/nba_2003_prospect_stats.json): one record per draftee, with only evidence available on draft night. Wade's record is copied from his [career profile](../career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md), section 13. That profile is alternate history (UConn, born 1984), so it is the canonical source and the historical Wade's college numbers are not used.
+- [Generated estimates](../library/2003/league/nba_2003_rookie_estimates.json): rebuilt with `python scripts/import_prospect_stats.py`; `--update-card` refreshes the estimate block on Wade's card. Validation fails if the file is stale.
+
+Method, per rate:
+
+1. Combine pre-draft seasons with recency weights 3, 2, 1 (most recent first).
+2. Translate. Shooting percentages and attempt tendencies are the observed rate times a level factor. Production rates (usage, assists, rebounds, steals, blocks) are the NBA baseline times the player's per-minute production relative to the NBA per-minute average, times a level factor. Pre-draft records give total rebounds only, so offensive and defensive rebounding share one relative rate. Fouls are not recorded, so the NBA baseline is used.
+3. Shrink toward the NBA baseline with the veteran priors above, counting each college attempt or minute as half of an NBA one.
+
+| NCAA level factor | Value | Reason |
+| --- | ---: | --- |
+| Two-point accuracy | 0.92 | Longer, faster interior defense |
+| Three-point accuracy | 0.90 | 19'9" college line; NBA 22' to 23'9" |
+| Free-throw accuracy | 1.00 | Same distance |
+| Three-point attempt share | 0.75 | Fewer threes at the longer line |
+| Free-throw attempt rate | 0.85 | |
+| Turnovers per FGA | 1.15 | More pressure and length |
+| Usage, assists, rebounds | 0.85 | Stronger teammates and opponents |
+| Steals, blocks | 0.80 | |
+
+All of these are provisional judgement constants, not fitted values. Replacing them with factors fitted on pre-2003 drafts (college season against rookie season) is the obvious upgrade once that data is in the library. They must never be tuned to make a 2003 draftee match his real NBA career.
+
+Coverage at June 26, 2003: Wade only. The other 57 players in the [draft-class file](../library/2003/league/nba_2003_draft_class.json) have identity data but no pre-draft statistics or pick numbers, so they play on the neutral fallback until their records are added. A level without a factor table (high school, international) is refused rather than guessed; LeBron James (high school) and Darko Milicic (international) need their own approach.
+
+New draft classes follow the same path: a `library/<year>/league/nba_<year>_prospect_stats.json` with draft-night evidence, gated by the draft date.

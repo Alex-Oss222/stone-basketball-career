@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "model_version": "rookie-2003.1",
+  "as_of": "2003-06-26",
+  "baseline_season": "2002-03",
+  "source_file": "library/2003/league/nba_2003_prospect_stats.json",
+  "source_sha256": "adf3121884f972961179b94d0f37f6c17c2072110b05770376e832795f654c07",
+  "veteran_model_version": "veteran-2003.1",
+  "method": {
+    "recency_weights": [
+      3,
+      2,
+      1
+    ],
+    "evidence_weight": {
+      "ncaa": 0.5
+    },
+    "level_factors": {
+      "ncaa": {
+        "two_point_pct": 0.92,
+        "three_point_pct": 0.9,
+        "free_throw_pct": 1.0,
+        "three_point_attempt_rate": 0.75,
+        "free_throw_attempt_rate": 0.85,
+        "turnovers_per_fga": 1.15,
+        "usage_pct": 0.85,
+        "assist_pct": 0.85,
+        "offensive_rebound_pct": 0.85,
+        "defensive_rebound_pct": 0.85,
+        "steal_pct": 0.8,
+        "block_pct": 0.8
+      }
+    },
+    "prior_minutes": 300,
+    "prior_attempts": {
+      "two_point_pct": 100,
+      "three_point_pct": 50,
+      "free_throw_pct": 25,
+      "three_point_attempt_rate": 20,
+      "free_throw_attempt_rate": 50,
+      "turnovers_per_fga": 100,
+      "true_shooting_pct": 100
+    },
+    "status": "provisional judgement constants; see docs/statistical_ratings.md"
+  },
+  "players": {
+    "wadedw01": {
+      "player_name": "Dwyane Wade",
+      "bbr_id": "wadedw01",
+      "level": "ncaa",
+      "school": "Connecticut",
+      "season_end_year": 2003,
+      "sample": {
+        "games": 98,
+        "minutes": 3178,
+        "seasons": 3
+      },
+      "translated": {
+        "two_point_pct": 0.5083407079646017,
+        "three_point_pct": 0.36105263157894735,
+        "free_throw_pct": 0.8810256410256411,
+        "three_point_attempt_rate": 0.240799849793466,
+        "free_throw_attempt_rate": 0.31120916259857306,
+        "turnovers_per_fga": 0.25003755163349606,
+        "usage_pct": 0.2155864554702676,
+        "assist_pct": 0.22420892867203696,
+        "offensive_rebound_pct": 0.04812749844434526,
+        "defensive_rebound_pct": 0.12085309170189931,
+        "steal_pct": 0.024198463222113976,
+        "block_pct": 0.019421812931990974,
+        "fouls_per_minute": null
+      },
+      "estimated": {
+        "two_point_pct": 0.499682583631687,
+        "three_point_pct": 0.35864045158946023,
+        "free_throw_pct": 0.8681315127787959,
+        "usage_pct": 0.2129228540120445,
+        "assist_pct": 0.21278503056293183,
+        "offensive_rebound_pct": 0.04953606614669779,
+        "defensive_rebound_pct": 0.12439014987452797,
+        "steal_pct": 0.023107392834049285,
+        "block_pct": 0.018739057763714713,
+        "three_point_attempt_rate": 0.23894668316794668,
+        "free_throw_attempt_rate": 0.3105529024313341,
+        "turnovers_per_fga": 0.23980710518289253,
+        "fouls_per_minute": 0.08989955163185152
+      },
+      "status": "estimate from pre-draft statistics; not NBA evidence"
+    }
+  }
+}
