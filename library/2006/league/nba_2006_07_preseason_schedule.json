@@ -1,0 +1,669 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2006-07",
+ "kind": "preseason_schedule",
+ "source": "NBA.com game data via the Kaggle \"NBA games data\" set (nathanlauga/nba-games), read from a public GitHub copy (bnafack/NBA_GAMES, data/games.csv). Schedule as played; result fields removed. Dates are US Eastern. Games against non-NBA opponents and neutral-site venues are not recorded in the source.",
+ "games": [
+  {
+   "game_id": "2006-10-09-toronto-raptors-at-washington-wizards",
+   "date": "2006-10-09",
+   "away": "Toronto Raptors",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2006-10-10-orlando-magic-at-charlotte-bobcats",
+   "date": "2006-10-10",
+   "away": "Orlando Magic",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2006-10-10-boston-celtics-at-cleveland-cavaliers",
+   "date": "2006-10-10",
+   "away": "Boston Celtics",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2006-10-10-memphis-grizzlies-at-houston-rockets",
+   "date": "2006-10-10",
+   "away": "Memphis Grizzlies",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2006-10-10-utah-jazz-at-los-angeles-lakers",
+   "date": "2006-10-10",
+   "away": "Utah Jazz",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2006-10-10-detroit-pistons-at-miami-heat",
+   "date": "2006-10-10",
+   "away": "Detroit Pistons",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2006-10-10-dallas-mavericks-at-new-orleans-oklahoma-city-hornets",
+   "date": "2006-10-10",
+   "away": "Dallas Mavericks",
+   "home": "New Orleans/Oklahoma City Hornets"
+  },
+  {
+   "game_id": "2006-10-10-phoenix-suns-at-philadelphia-76ers",
+   "date": "2006-10-10",
+   "away": "Phoenix Suns",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2006-10-11-washington-wizards-at-chicago-bulls",
+   "date": "2006-10-11",
+   "away": "Washington Wizards",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2006-10-11-new-jersey-nets-at-indiana-pacers",
+   "date": "2006-10-11",
+   "away": "New Jersey Nets",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2006-10-11-atlanta-hawks-at-memphis-grizzlies",
+   "date": "2006-10-11",
+   "away": "Atlanta Hawks",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2006-10-11-milwaukee-bucks-at-minnesota-timberwolves",
+   "date": "2006-10-11",
+   "away": "Milwaukee Bucks",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2006-10-11-seattle-supersonics-at-portland-trail-blazers",
+   "date": "2006-10-11",
+   "away": "Seattle SuperSonics",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2006-10-11-boston-celtics-at-toronto-raptors",
+   "date": "2006-10-11",
+   "away": "Boston Celtics",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2006-10-12-sacramento-kings-at-dallas-mavericks",
+   "date": "2006-10-12",
+   "away": "Sacramento Kings",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2006-10-12-seattle-supersonics-at-los-angeles-lakers",
+   "date": "2006-10-12",
+   "away": "Seattle SuperSonics",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2006-10-13-cleveland-cavaliers-at-boston-celtics",
+   "date": "2006-10-13",
+   "away": "Cleveland Cavaliers",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2006-10-13-milwaukee-bucks-at-charlotte-bobcats",
+   "date": "2006-10-13",
+   "away": "Milwaukee Bucks",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2006-10-13-atlanta-hawks-at-houston-rockets",
+   "date": "2006-10-13",
+   "away": "Atlanta Hawks",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2006-10-13-detroit-pistons-at-minnesota-timberwolves",
+   "date": "2006-10-13",
+   "away": "Detroit Pistons",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2006-10-13-orlando-magic-at-new-orleans-oklahoma-city-hornets",
+   "date": "2006-10-13",
+   "away": "Orlando Magic",
+   "home": "New Orleans/Oklahoma City Hornets"
+  },
+  {
+   "game_id": "2006-10-13-new-jersey-nets-at-new-york-knicks",
+   "date": "2006-10-13",
+   "away": "New Jersey Nets",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2006-10-14-miami-heat-at-atlanta-hawks",
+   "date": "2006-10-14",
+   "away": "Miami Heat",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2006-10-14-washington-wizards-at-cleveland-cavaliers",
+   "date": "2006-10-14",
+   "away": "Washington Wizards",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2006-10-14-golden-state-warriors-at-denver-nuggets",
+   "date": "2006-10-14",
+   "away": "Golden State Warriors",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2006-10-14-utah-jazz-at-indiana-pacers",
+   "date": "2006-10-14",
+   "away": "Utah Jazz",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2006-10-14-detroit-pistons-at-memphis-grizzlies",
+   "date": "2006-10-14",
+   "away": "Detroit Pistons",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2006-10-14-dallas-mavericks-at-milwaukee-bucks",
+   "date": "2006-10-14",
+   "away": "Dallas Mavericks",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2006-10-14-new-york-knicks-at-philadelphia-76ers",
+   "date": "2006-10-14",
+   "away": "New York Knicks",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2006-10-14-orlando-magic-at-san-antonio-spurs",
+   "date": "2006-10-14",
+   "away": "Orlando Magic",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2006-10-15-seattle-supersonics-at-chicago-bulls",
+   "date": "2006-10-15",
+   "away": "Seattle SuperSonics",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2006-10-15-phoenix-suns-at-los-angeles-lakers",
+   "date": "2006-10-15",
+   "away": "Phoenix Suns",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2006-10-15-new-jersey-nets-at-toronto-raptors",
+   "date": "2006-10-15",
+   "away": "New Jersey Nets",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2006-10-16-washington-wizards-at-charlotte-bobcats",
+   "date": "2006-10-16",
+   "away": "Washington Wizards",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2006-10-16-utah-jazz-at-detroit-pistons",
+   "date": "2006-10-16",
+   "away": "Utah Jazz",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2006-10-16-minnesota-timberwolves-at-indiana-pacers",
+   "date": "2006-10-16",
+   "away": "Minnesota Timberwolves",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2006-10-16-chicago-bulls-at-memphis-grizzlies",
+   "date": "2006-10-16",
+   "away": "Chicago Bulls",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2006-10-17-washington-wizards-at-charlotte-bobcats",
+   "date": "2006-10-17",
+   "away": "Washington Wizards",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2006-10-17-houston-rockets-at-dallas-mavericks",
+   "date": "2006-10-17",
+   "away": "Houston Rockets",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2006-10-17-sacramento-kings-at-los-angeles-lakers",
+   "date": "2006-10-17",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2006-10-17-new-orleans-oklahoma-city-hornets-at-miami-heat",
+   "date": "2006-10-17",
+   "away": "New Orleans/Oklahoma City Hornets",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2006-10-17-boston-celtics-at-new-york-knicks",
+   "date": "2006-10-17",
+   "away": "Boston Celtics",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2006-10-17-atlanta-hawks-at-orlando-magic",
+   "date": "2006-10-17",
+   "away": "Atlanta Hawks",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2006-10-17-los-angeles-clippers-at-phoenix-suns",
+   "date": "2006-10-17",
+   "away": "Los Angeles Clippers",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2006-10-17-golden-state-warriors-at-portland-trail-blazers",
+   "date": "2006-10-17",
+   "away": "Golden State Warriors",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2006-10-18-new-jersey-nets-at-boston-celtics",
+   "date": "2006-10-18",
+   "away": "New Jersey Nets",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2006-10-18-toronto-raptors-at-cleveland-cavaliers",
+   "date": "2006-10-18",
+   "away": "Toronto Raptors",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2006-10-18-indiana-pacers-at-denver-nuggets",
+   "date": "2006-10-18",
+   "away": "Indiana Pacers",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2006-10-18-minnesota-timberwolves-at-detroit-pistons",
+   "date": "2006-10-18",
+   "away": "Minnesota Timberwolves",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2006-10-18-milwaukee-bucks-at-houston-rockets",
+   "date": "2006-10-18",
+   "away": "Milwaukee Bucks",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2006-10-19-orlando-magic-at-atlanta-hawks",
+   "date": "2006-10-19",
+   "away": "Orlando Magic",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2006-10-19-milwaukee-bucks-at-dallas-mavericks",
+   "date": "2006-10-19",
+   "away": "Milwaukee Bucks",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2006-10-19-new-orleans-oklahoma-city-hornets-at-golden-state-warriors",
+   "date": "2006-10-19",
+   "away": "New Orleans/Oklahoma City Hornets",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2006-10-19-charlotte-bobcats-at-indiana-pacers",
+   "date": "2006-10-19",
+   "away": "Charlotte Bobcats",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2006-10-19-los-angeles-clippers-at-los-angeles-lakers",
+   "date": "2006-10-19",
+   "away": "Los Angeles Clippers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2006-10-19-sacramento-kings-at-phoenix-suns",
+   "date": "2006-10-19",
+   "away": "Sacramento Kings",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2006-10-19-chicago-bulls-at-san-antonio-spurs",
+   "date": "2006-10-19",
+   "away": "Chicago Bulls",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2006-10-19-portland-trail-blazers-at-utah-jazz",
+   "date": "2006-10-19",
+   "away": "Portland Trail Blazers",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2006-10-20-minnesota-timberwolves-at-chicago-bulls",
+   "date": "2006-10-20",
+   "away": "Minnesota Timberwolves",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2006-10-20-golden-state-warriors-at-los-angeles-clippers",
+   "date": "2006-10-20",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2006-10-20-new-orleans-oklahoma-city-hornets-at-los-angeles-lakers",
+   "date": "2006-10-20",
+   "away": "New Orleans/Oklahoma City Hornets",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2006-10-20-miami-heat-at-memphis-grizzlies",
+   "date": "2006-10-20",
+   "away": "Miami Heat",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2006-10-20-philadelphia-76ers-at-new-jersey-nets",
+   "date": "2006-10-20",
+   "away": "Philadelphia 76ers",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2006-10-20-utah-jazz-at-sacramento-kings",
+   "date": "2006-10-20",
+   "away": "Utah Jazz",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2006-10-20-portland-trail-blazers-at-seattle-supersonics",
+   "date": "2006-10-20",
+   "away": "Portland Trail Blazers",
+   "home": "Seattle SuperSonics"
+  },
+  {
+   "game_id": "2006-10-21-new-york-knicks-at-boston-celtics",
+   "date": "2006-10-21",
+   "away": "New York Knicks",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2006-10-21-atlanta-hawks-at-cleveland-cavaliers",
+   "date": "2006-10-21",
+   "away": "Atlanta Hawks",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2006-10-21-washington-wizards-at-dallas-mavericks",
+   "date": "2006-10-21",
+   "away": "Washington Wizards",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2006-10-21-seattle-supersonics-at-los-angeles-clippers",
+   "date": "2006-10-21",
+   "away": "Seattle SuperSonics",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2006-10-21-denver-nuggets-at-milwaukee-bucks",
+   "date": "2006-10-21",
+   "away": "Denver Nuggets",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2006-10-21-indiana-pacers-at-minnesota-timberwolves",
+   "date": "2006-10-21",
+   "away": "Indiana Pacers",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2006-10-21-memphis-grizzlies-at-orlando-magic",
+   "date": "2006-10-21",
+   "away": "Memphis Grizzlies",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2006-10-21-miami-heat-at-san-antonio-spurs",
+   "date": "2006-10-21",
+   "away": "Miami Heat",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2006-10-22-denver-nuggets-at-detroit-pistons",
+   "date": "2006-10-22",
+   "away": "Denver Nuggets",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2006-10-22-san-antonio-spurs-at-houston-rockets",
+   "date": "2006-10-22",
+   "away": "San Antonio Spurs",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2006-10-22-phoenix-suns-at-los-angeles-lakers",
+   "date": "2006-10-22",
+   "away": "Phoenix Suns",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2006-10-22-new-orleans-oklahoma-city-hornets-at-sacramento-kings",
+   "date": "2006-10-22",
+   "away": "New Orleans/Oklahoma City Hornets",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2006-10-22-cleveland-cavaliers-at-toronto-raptors",
+   "date": "2006-10-22",
+   "away": "Cleveland Cavaliers",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2006-10-23-washington-wizards-at-atlanta-hawks",
+   "date": "2006-10-23",
+   "away": "Washington Wizards",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2006-10-23-seattle-supersonics-at-phoenix-suns",
+   "date": "2006-10-23",
+   "away": "Seattle SuperSonics",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2006-10-23-utah-jazz-at-portland-trail-blazers",
+   "date": "2006-10-23",
+   "away": "Utah Jazz",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2006-10-24-indiana-pacers-at-charlotte-bobcats",
+   "date": "2006-10-24",
+   "away": "Indiana Pacers",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2006-10-24-memphis-grizzlies-at-chicago-bulls",
+   "date": "2006-10-24",
+   "away": "Memphis Grizzlies",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2006-10-24-utah-jazz-at-denver-nuggets",
+   "date": "2006-10-24",
+   "away": "Utah Jazz",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2006-10-24-washington-wizards-at-detroit-pistons",
+   "date": "2006-10-24",
+   "away": "Washington Wizards",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2006-10-24-portland-trail-blazers-at-golden-state-warriors",
+   "date": "2006-10-24",
+   "away": "Portland Trail Blazers",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2006-10-24-boston-celtics-at-new-jersey-nets",
+   "date": "2006-10-24",
+   "away": "Boston Celtics",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2006-10-24-philadelphia-76ers-at-new-york-knicks",
+   "date": "2006-10-24",
+   "away": "Philadelphia 76ers",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2006-10-24-miami-heat-at-orlando-magic",
+   "date": "2006-10-24",
+   "away": "Miami Heat",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2006-10-24-new-orleans-oklahoma-city-hornets-at-sacramento-kings",
+   "date": "2006-10-24",
+   "away": "New Orleans/Oklahoma City Hornets",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2006-10-25-toronto-raptors-at-boston-celtics",
+   "date": "2006-10-25",
+   "away": "Toronto Raptors",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2006-10-25-dallas-mavericks-at-cleveland-cavaliers",
+   "date": "2006-10-25",
+   "away": "Dallas Mavericks",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2006-10-25-memphis-grizzlies-at-detroit-pistons",
+   "date": "2006-10-25",
+   "away": "Memphis Grizzlies",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2006-10-25-portland-trail-blazers-at-los-angeles-clippers",
+   "date": "2006-10-25",
+   "away": "Portland Trail Blazers",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2006-10-25-houston-rockets-at-miami-heat",
+   "date": "2006-10-25",
+   "away": "Houston Rockets",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2006-10-25-chicago-bulls-at-minnesota-timberwolves",
+   "date": "2006-10-25",
+   "away": "Chicago Bulls",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2006-10-25-new-jersey-nets-at-philadelphia-76ers",
+   "date": "2006-10-25",
+   "away": "New Jersey Nets",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2006-10-25-sacramento-kings-at-seattle-supersonics",
+   "date": "2006-10-25",
+   "away": "Sacramento Kings",
+   "home": "Seattle SuperSonics"
+  },
+  {
+   "game_id": "2006-10-26-denver-nuggets-at-los-angeles-lakers",
+   "date": "2006-10-26",
+   "away": "Denver Nuggets",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2006-10-26-charlotte-bobcats-at-milwaukee-bucks",
+   "date": "2006-10-26",
+   "away": "Charlotte Bobcats",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2006-10-26-houston-rockets-at-orlando-magic",
+   "date": "2006-10-26",
+   "away": "Houston Rockets",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2006-10-26-golden-state-warriors-at-seattle-supersonics",
+   "date": "2006-10-26",
+   "away": "Golden State Warriors",
+   "home": "Seattle SuperSonics"
+  },
+  {
+   "game_id": "2006-10-26-indiana-pacers-at-utah-jazz",
+   "date": "2006-10-26",
+   "away": "Indiana Pacers",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2006-10-27-charlotte-bobcats-at-atlanta-hawks",
+   "date": "2006-10-27",
+   "away": "Charlotte Bobcats",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2006-10-27-toronto-raptors-at-chicago-bulls",
+   "date": "2006-10-27",
+   "away": "Toronto Raptors",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2006-10-27-denver-nuggets-at-los-angeles-clippers",
+   "date": "2006-10-27",
+   "away": "Denver Nuggets",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2006-10-27-minnesota-timberwolves-at-milwaukee-bucks",
+   "date": "2006-10-27",
+   "away": "Minnesota Timberwolves",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2006-10-27-new-york-knicks-at-new-jersey-nets",
+   "date": "2006-10-27",
+   "away": "New York Knicks",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2006-10-27-portland-trail-blazers-at-sacramento-kings",
+   "date": "2006-10-27",
+   "away": "Portland Trail Blazers",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2006-10-27-dallas-mavericks-at-san-antonio-spurs",
+   "date": "2006-10-27",
+   "away": "Dallas Mavericks",
+   "home": "San Antonio Spurs"
+  }
+ ]
+}

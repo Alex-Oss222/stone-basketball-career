@@ -102,5 +102,14 @@ class RepositorySchedules(unittest.TestCase):
         self.assertEqual(len(preseason["games"]), 114)
 
 
+    def test_eleven_seasons_on_file_with_real_exceptions(self):
+        regular = sorted((ROOT / "library").glob("*/league/nba_*_??_schedule.json"))
+        self.assertEqual(len(regular), 11)
+        counts = {p.name[4:11]: len(json.loads(p.read_text())["games"]) for p in regular}
+        self.assertEqual(counts["2011_12"], 990)
+        self.assertEqual(counts["2012_13"], 1229)
+        self.assertEqual(counts["2004_05"], 1230)
+
+
 if __name__ == "__main__":
     unittest.main()

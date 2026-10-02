@@ -1,0 +1,645 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2012-13",
+ "kind": "preseason_schedule",
+ "source": "NBA.com game data via the Kaggle \"NBA games data\" set (nathanlauga/nba-games), read from a public GitHub copy (bnafack/NBA_GAMES, data/games.csv). Schedule as played; result fields removed. Dates are US Eastern. Games against non-NBA opponents and neutral-site venues are not recorded in the source.",
+ "games": [
+  {
+   "game_id": "2012-10-06-denver-nuggets-at-los-angeles-clippers",
+   "date": "2012-10-06",
+   "away": "Denver Nuggets",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2012-10-07-miami-heat-at-atlanta-hawks",
+   "date": "2012-10-07",
+   "away": "Miami Heat",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2012-10-07-washington-wizards-at-charlotte-bobcats",
+   "date": "2012-10-07",
+   "away": "Washington Wizards",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2012-10-07-golden-state-warriors-at-los-angeles-lakers",
+   "date": "2012-10-07",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2012-10-07-orlando-magic-at-new-orleans-hornets",
+   "date": "2012-10-07",
+   "away": "Orlando Magic",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2012-10-08-utah-jazz-at-golden-state-warriors",
+   "date": "2012-10-08",
+   "away": "Utah Jazz",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2012-10-09-memphis-grizzlies-at-chicago-bulls",
+   "date": "2012-10-09",
+   "away": "Memphis Grizzlies",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2012-10-09-milwaukee-bucks-at-cleveland-cavaliers",
+   "date": "2012-10-09",
+   "away": "Milwaukee Bucks",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2012-10-09-charlotte-bobcats-at-new-orleans-hornets",
+   "date": "2012-10-09",
+   "away": "Charlotte Bobcats",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2012-10-10-toronto-raptors-at-detroit-pistons",
+   "date": "2012-10-10",
+   "away": "Toronto Raptors",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2012-10-10-oklahoma-city-thunder-at-houston-rockets",
+   "date": "2012-10-10",
+   "away": "Oklahoma City Thunder",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2012-10-10-portland-trail-blazers-at-los-angeles-lakers",
+   "date": "2012-10-10",
+   "away": "Portland Trail Blazers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2012-10-10-indiana-pacers-at-minnesota-timberwolves",
+   "date": "2012-10-10",
+   "away": "Indiana Pacers",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2012-10-10-phoenix-suns-at-sacramento-kings",
+   "date": "2012-10-10",
+   "away": "Phoenix Suns",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2012-10-10-atlanta-hawks-at-san-antonio-spurs",
+   "date": "2012-10-10",
+   "away": "Atlanta Hawks",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2012-10-11-new-orleans-hornets-at-charlotte-bobcats",
+   "date": "2012-10-11",
+   "away": "New Orleans Hornets",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2012-10-11-miami-heat-at-los-angeles-clippers",
+   "date": "2012-10-11",
+   "away": "Miami Heat",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2012-10-11-philadelphia-76ers-at-orlando-magic",
+   "date": "2012-10-11",
+   "away": "Philadelphia 76ers",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2012-10-11-new-york-knicks-at-washington-wizards",
+   "date": "2012-10-11",
+   "away": "New York Knicks",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2012-10-12-cleveland-cavaliers-at-chicago-bulls",
+   "date": "2012-10-12",
+   "away": "Cleveland Cavaliers",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2012-10-12-new-orleans-hornets-at-houston-rockets",
+   "date": "2012-10-12",
+   "away": "New Orleans Hornets",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2012-10-12-minnesota-timberwolves-at-indiana-pacers",
+   "date": "2012-10-12",
+   "away": "Minnesota Timberwolves",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2012-10-12-portland-trail-blazers-at-phoenix-suns",
+   "date": "2012-10-12",
+   "away": "Portland Trail Blazers",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2012-10-12-denver-nuggets-at-san-antonio-spurs",
+   "date": "2012-10-12",
+   "away": "Denver Nuggets",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2012-10-12-detroit-pistons-at-toronto-raptors",
+   "date": "2012-10-12",
+   "away": "Detroit Pistons",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2012-10-12-oklahoma-city-thunder-at-utah-jazz",
+   "date": "2012-10-12",
+   "away": "Oklahoma City Thunder",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2012-10-13-new-york-knicks-at-boston-celtics",
+   "date": "2012-10-13",
+   "away": "New York Knicks",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2012-10-13-washington-wizards-at-cleveland-cavaliers",
+   "date": "2012-10-13",
+   "away": "Washington Wizards",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2012-10-13-utah-jazz-at-los-angeles-lakers",
+   "date": "2012-10-13",
+   "away": "Utah Jazz",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2012-10-13-detroit-pistons-at-milwaukee-bucks",
+   "date": "2012-10-13",
+   "away": "Detroit Pistons",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2012-10-13-chicago-bulls-at-minnesota-timberwolves",
+   "date": "2012-10-13",
+   "away": "Chicago Bulls",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2012-10-13-brooklyn-nets-at-philadelphia-76ers",
+   "date": "2012-10-13",
+   "away": "Brooklyn Nets",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2012-10-14-san-antonio-spurs-at-houston-rockets",
+   "date": "2012-10-14",
+   "away": "San Antonio Spurs",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2012-10-14-atlanta-hawks-at-memphis-grizzlies",
+   "date": "2012-10-14",
+   "away": "Atlanta Hawks",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2012-10-14-los-angeles-clippers-at-miami-heat",
+   "date": "2012-10-14",
+   "away": "Los Angeles Clippers",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2012-10-15-washington-wizards-at-brooklyn-nets",
+   "date": "2012-10-15",
+   "away": "Washington Wizards",
+   "home": "Brooklyn Nets"
+  },
+  {
+   "game_id": "2012-10-15-orlando-magic-at-cleveland-cavaliers",
+   "date": "2012-10-15",
+   "away": "Orlando Magic",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2012-10-15-houston-rockets-at-dallas-mavericks",
+   "date": "2012-10-15",
+   "away": "Houston Rockets",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2012-10-15-golden-state-warriors-at-denver-nuggets",
+   "date": "2012-10-15",
+   "away": "Golden State Warriors",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2012-10-15-boston-celtics-at-philadelphia-76ers",
+   "date": "2012-10-15",
+   "away": "Boston Celtics",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2012-10-15-portland-trail-blazers-at-sacramento-kings",
+   "date": "2012-10-15",
+   "away": "Portland Trail Blazers",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2012-10-16-brooklyn-nets-at-boston-celtics",
+   "date": "2012-10-16",
+   "away": "Brooklyn Nets",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2012-10-16-milwaukee-bucks-at-chicago-bulls",
+   "date": "2012-10-16",
+   "away": "Milwaukee Bucks",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2012-10-16-orlando-magic-at-detroit-pistons",
+   "date": "2012-10-16",
+   "away": "Orlando Magic",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2012-10-16-atlanta-hawks-at-indiana-pacers",
+   "date": "2012-10-16",
+   "away": "Atlanta Hawks",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2012-10-16-utah-jazz-at-los-angeles-lakers",
+   "date": "2012-10-16",
+   "away": "Utah Jazz",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2012-10-16-charlotte-bobcats-at-oklahoma-city-thunder",
+   "date": "2012-10-16",
+   "away": "Charlotte Bobcats",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "game_id": "2012-10-17-phoenix-suns-at-dallas-mavericks",
+   "date": "2012-10-17",
+   "away": "Phoenix Suns",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2012-10-17-memphis-grizzlies-at-houston-rockets",
+   "date": "2012-10-17",
+   "away": "Memphis Grizzlies",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2012-10-17-utah-jazz-at-los-angeles-clippers",
+   "date": "2012-10-17",
+   "away": "Utah Jazz",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2012-10-17-cleveland-cavaliers-at-philadelphia-76ers",
+   "date": "2012-10-17",
+   "away": "Cleveland Cavaliers",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2012-10-17-denver-nuggets-at-portland-trail-blazers",
+   "date": "2012-10-17",
+   "away": "Denver Nuggets",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2012-10-17-golden-state-warriors-at-sacramento-kings",
+   "date": "2012-10-17",
+   "away": "Golden State Warriors",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2012-10-17-washington-wizards-at-toronto-raptors",
+   "date": "2012-10-17",
+   "away": "Washington Wizards",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2012-10-18-new-orleans-hornets-at-atlanta-hawks",
+   "date": "2012-10-18",
+   "away": "New Orleans Hornets",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2012-10-18-boston-celtics-at-brooklyn-nets",
+   "date": "2012-10-18",
+   "away": "Boston Celtics",
+   "home": "Brooklyn Nets"
+  },
+  {
+   "game_id": "2012-10-18-detroit-pistons-at-miami-heat",
+   "date": "2012-10-18",
+   "away": "Detroit Pistons",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2012-10-18-memphis-grizzlies-at-milwaukee-bucks",
+   "date": "2012-10-18",
+   "away": "Memphis Grizzlies",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2012-10-19-philadelphia-76ers-at-brooklyn-nets",
+   "date": "2012-10-19",
+   "away": "Philadelphia 76ers",
+   "home": "Brooklyn Nets"
+  },
+  {
+   "game_id": "2012-10-19-minnesota-timberwolves-at-chicago-bulls",
+   "date": "2012-10-19",
+   "away": "Minnesota Timberwolves",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2012-10-19-sacramento-kings-at-los-angeles-lakers",
+   "date": "2012-10-19",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2012-10-19-phoenix-suns-at-oklahoma-city-thunder",
+   "date": "2012-10-19",
+   "away": "Phoenix Suns",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "game_id": "2012-10-19-indiana-pacers-at-orlando-magic",
+   "date": "2012-10-19",
+   "away": "Indiana Pacers",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2012-10-19-golden-state-warriors-at-portland-trail-blazers",
+   "date": "2012-10-19",
+   "away": "Golden State Warriors",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2012-10-19-new-york-knicks-at-toronto-raptors",
+   "date": "2012-10-19",
+   "away": "New York Knicks",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2012-10-20-dallas-mavericks-at-atlanta-hawks",
+   "date": "2012-10-20",
+   "away": "Dallas Mavericks",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2012-10-20-new-york-knicks-at-boston-celtics",
+   "date": "2012-10-20",
+   "away": "New York Knicks",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2012-10-20-charlotte-bobcats-at-detroit-pistons",
+   "date": "2012-10-20",
+   "away": "Charlotte Bobcats",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2012-10-20-memphis-grizzlies-at-indiana-pacers",
+   "date": "2012-10-20",
+   "away": "Memphis Grizzlies",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2012-10-20-san-antonio-spurs-at-miami-heat",
+   "date": "2012-10-20",
+   "away": "San Antonio Spurs",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2012-10-20-washington-wizards-at-milwaukee-bucks",
+   "date": "2012-10-20",
+   "away": "Washington Wizards",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2012-10-20-los-angeles-clippers-at-utah-jazz",
+   "date": "2012-10-20",
+   "away": "Los Angeles Clippers",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2012-10-21-philadelphia-76ers-at-boston-celtics",
+   "date": "2012-10-21",
+   "away": "Philadelphia 76ers",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2012-10-21-sacramento-kings-at-los-angeles-lakers",
+   "date": "2012-10-21",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2012-10-21-denver-nuggets-at-oklahoma-city-thunder",
+   "date": "2012-10-21",
+   "away": "Denver Nuggets",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "game_id": "2012-10-21-san-antonio-spurs-at-orlando-magic",
+   "date": "2012-10-21",
+   "away": "San Antonio Spurs",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2012-10-22-new-orleans-hornets-at-dallas-mavericks",
+   "date": "2012-10-22",
+   "away": "New Orleans Hornets",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2012-10-22-golden-state-warriors-at-los-angeles-clippers",
+   "date": "2012-10-22",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2012-10-22-new-york-knicks-at-philadelphia-76ers",
+   "date": "2012-10-22",
+   "away": "New York Knicks",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2012-10-22-sacramento-kings-at-phoenix-suns",
+   "date": "2012-10-22",
+   "away": "Sacramento Kings",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2012-10-22-utah-jazz-at-portland-trail-blazers",
+   "date": "2012-10-22",
+   "away": "Utah Jazz",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2012-10-22-milwaukee-bucks-at-toronto-raptors",
+   "date": "2012-10-22",
+   "away": "Milwaukee Bucks",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2012-10-23-miami-heat-at-charlotte-bobcats",
+   "date": "2012-10-23",
+   "away": "Miami Heat",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2012-10-23-oklahoma-city-thunder-at-chicago-bulls",
+   "date": "2012-10-23",
+   "away": "Oklahoma City Thunder",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2012-10-23-indiana-pacers-at-cleveland-cavaliers",
+   "date": "2012-10-23",
+   "away": "Indiana Pacers",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2012-10-23-phoenix-suns-at-golden-state-warriors",
+   "date": "2012-10-23",
+   "away": "Phoenix Suns",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2012-10-24-new-york-knicks-at-brooklyn-nets",
+   "date": "2012-10-24",
+   "away": "New York Knicks",
+   "home": "Brooklyn Nets"
+  },
+  {
+   "game_id": "2012-10-24-los-angeles-lakers-at-los-angeles-clippers",
+   "date": "2012-10-24",
+   "away": "Los Angeles Lakers",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2012-10-24-orlando-magic-at-memphis-grizzlies",
+   "date": "2012-10-24",
+   "away": "Orlando Magic",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2012-10-24-washington-wizards-at-miami-heat",
+   "date": "2012-10-24",
+   "away": "Washington Wizards",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2012-10-24-detroit-pistons-at-minnesota-timberwolves",
+   "date": "2012-10-24",
+   "away": "Detroit Pistons",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2012-10-24-houston-rockets-at-new-orleans-hornets",
+   "date": "2012-10-24",
+   "away": "Houston Rockets",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2012-10-24-dallas-mavericks-at-oklahoma-city-thunder",
+   "date": "2012-10-24",
+   "away": "Dallas Mavericks",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "game_id": "2012-10-25-milwaukee-bucks-at-charlotte-bobcats",
+   "date": "2012-10-25",
+   "away": "Milwaukee Bucks",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2012-10-25-los-angeles-clippers-at-denver-nuggets",
+   "date": "2012-10-25",
+   "away": "Los Angeles Clippers",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2012-10-25-sacramento-kings-at-los-angeles-lakers",
+   "date": "2012-10-25",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2012-10-25-portland-trail-blazers-at-utah-jazz",
+   "date": "2012-10-25",
+   "away": "Portland Trail Blazers",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2012-10-26-indiana-pacers-at-chicago-bulls",
+   "date": "2012-10-26",
+   "away": "Indiana Pacers",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2012-10-26-charlotte-bobcats-at-dallas-mavericks",
+   "date": "2012-10-26",
+   "away": "Charlotte Bobcats",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2012-10-26-atlanta-hawks-at-detroit-pistons",
+   "date": "2012-10-26",
+   "away": "Atlanta Hawks",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2012-10-26-toronto-raptors-at-memphis-grizzlies",
+   "date": "2012-10-26",
+   "away": "Toronto Raptors",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2012-10-26-new-orleans-hornets-at-miami-heat",
+   "date": "2012-10-26",
+   "away": "New Orleans Hornets",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2012-10-26-minnesota-timberwolves-at-milwaukee-bucks",
+   "date": "2012-10-26",
+   "away": "Minnesota Timberwolves",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2012-10-26-houston-rockets-at-orlando-magic",
+   "date": "2012-10-26",
+   "away": "Houston Rockets",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2012-10-26-denver-nuggets-at-phoenix-suns",
+   "date": "2012-10-26",
+   "away": "Denver Nuggets",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2012-10-26-washington-wizards-at-san-antonio-spurs",
+   "date": "2012-10-26",
+   "away": "Washington Wizards",
+   "home": "San Antonio Spurs"
+  }
+ ]
+}

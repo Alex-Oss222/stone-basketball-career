@@ -1,0 +1,669 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2008-09",
+ "kind": "preseason_schedule",
+ "source": "NBA.com game data via the Kaggle \"NBA games data\" set (nathanlauga/nba-games), read from a public GitHub copy (bnafack/NBA_GAMES, data/games.csv). Schedule as played; result fields removed. Dates are US Eastern. Games against non-NBA opponents and neutral-site venues are not recorded in the source.",
+ "games": [
+  {
+   "game_id": "2008-10-05-detroit-pistons-at-miami-heat",
+   "date": "2008-10-05",
+   "away": "Detroit Pistons",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2008-10-05-golden-state-warriors-at-new-orleans-hornets",
+   "date": "2008-10-05",
+   "away": "Golden State Warriors",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2008-10-06-minnesota-timberwolves-at-milwaukee-bucks",
+   "date": "2008-10-06",
+   "away": "Minnesota Timberwolves",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2008-10-06-atlanta-hawks-at-orlando-magic",
+   "date": "2008-10-06",
+   "away": "Atlanta Hawks",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2008-10-07-toronto-raptors-at-cleveland-cavaliers",
+   "date": "2008-10-07",
+   "away": "Toronto Raptors",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2008-10-07-washington-wizards-at-dallas-mavericks",
+   "date": "2008-10-07",
+   "away": "Washington Wizards",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2008-10-07-memphis-grizzlies-at-houston-rockets",
+   "date": "2008-10-07",
+   "away": "Memphis Grizzlies",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2008-10-07-utah-jazz-at-los-angeles-lakers",
+   "date": "2008-10-07",
+   "away": "Utah Jazz",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2008-10-07-sacramento-kings-at-portland-trail-blazers",
+   "date": "2008-10-07",
+   "away": "Sacramento Kings",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2008-10-08-milwaukee-bucks-at-detroit-pistons",
+   "date": "2008-10-08",
+   "away": "Milwaukee Bucks",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2008-10-08-new-orleans-hornets-at-indiana-pacers",
+   "date": "2008-10-08",
+   "away": "New Orleans Hornets",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2008-10-08-washington-wizards-at-memphis-grizzlies",
+   "date": "2008-10-08",
+   "away": "Washington Wizards",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2008-10-08-oklahoma-city-thunder-at-minnesota-timberwolves",
+   "date": "2008-10-08",
+   "away": "Oklahoma City Thunder",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2008-10-08-charlotte-bobcats-at-orlando-magic",
+   "date": "2008-10-08",
+   "away": "Charlotte Bobcats",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2008-10-08-boston-celtics-at-philadelphia-76ers",
+   "date": "2008-10-08",
+   "away": "Boston Celtics",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2008-10-08-atlanta-hawks-at-phoenix-suns",
+   "date": "2008-10-08",
+   "away": "Atlanta Hawks",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2008-10-08-golden-state-warriors-at-portland-trail-blazers",
+   "date": "2008-10-08",
+   "away": "Golden State Warriors",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2008-10-08-new-york-knicks-at-toronto-raptors",
+   "date": "2008-10-08",
+   "away": "New York Knicks",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2008-10-09-dallas-mavericks-at-chicago-bulls",
+   "date": "2008-10-09",
+   "away": "Dallas Mavericks",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2008-10-09-san-antonio-spurs-at-houston-rockets",
+   "date": "2008-10-09",
+   "away": "San Antonio Spurs",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2008-10-09-los-angeles-clippers-at-los-angeles-lakers",
+   "date": "2008-10-09",
+   "away": "Los Angeles Clippers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2008-10-09-new-jersey-nets-at-miami-heat",
+   "date": "2008-10-09",
+   "away": "New Jersey Nets",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2008-10-09-phoenix-suns-at-utah-jazz",
+   "date": "2008-10-09",
+   "away": "Phoenix Suns",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2008-10-10-cleveland-cavaliers-at-boston-celtics",
+   "date": "2008-10-10",
+   "away": "Cleveland Cavaliers",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2008-10-10-minnesota-timberwolves-at-denver-nuggets",
+   "date": "2008-10-10",
+   "away": "Minnesota Timberwolves",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2008-10-10-chicago-bulls-at-indiana-pacers",
+   "date": "2008-10-10",
+   "away": "Chicago Bulls",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2008-10-10-charlotte-bobcats-at-memphis-grizzlies",
+   "date": "2008-10-10",
+   "away": "Charlotte Bobcats",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2008-10-10-dallas-mavericks-at-milwaukee-bucks",
+   "date": "2008-10-10",
+   "away": "Dallas Mavericks",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2008-10-10-new-york-knicks-at-philadelphia-76ers",
+   "date": "2008-10-10",
+   "away": "New York Knicks",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2008-10-10-atlanta-hawks-at-portland-trail-blazers",
+   "date": "2008-10-10",
+   "away": "Atlanta Hawks",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2008-10-10-oklahoma-city-thunder-at-sacramento-kings",
+   "date": "2008-10-10",
+   "away": "Oklahoma City Thunder",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2008-10-10-new-orleans-hornets-at-san-antonio-spurs",
+   "date": "2008-10-10",
+   "away": "New Orleans Hornets",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2008-10-10-detroit-pistons-at-washington-wizards",
+   "date": "2008-10-10",
+   "away": "Detroit Pistons",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2008-10-11-houston-rockets-at-boston-celtics",
+   "date": "2008-10-11",
+   "away": "Houston Rockets",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2008-10-11-oklahoma-city-thunder-at-golden-state-warriors",
+   "date": "2008-10-11",
+   "away": "Oklahoma City Thunder",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2008-10-11-detroit-pistons-at-milwaukee-bucks",
+   "date": "2008-10-11",
+   "away": "Detroit Pistons",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2008-10-11-denver-nuggets-at-phoenix-suns",
+   "date": "2008-10-11",
+   "away": "Denver Nuggets",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2008-10-12-sacramento-kings-at-los-angeles-lakers",
+   "date": "2008-10-12",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2008-10-12-miami-heat-at-new-jersey-nets",
+   "date": "2008-10-12",
+   "away": "Miami Heat",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2008-10-12-utah-jazz-at-portland-trail-blazers",
+   "date": "2008-10-12",
+   "away": "Utah Jazz",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2008-10-12-philadelphia-76ers-at-toronto-raptors",
+   "date": "2008-10-12",
+   "away": "Philadelphia 76ers",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2008-10-13-charlotte-bobcats-at-atlanta-hawks",
+   "date": "2008-10-13",
+   "away": "Charlotte Bobcats",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2008-10-13-oklahoma-city-thunder-at-houston-rockets",
+   "date": "2008-10-13",
+   "away": "Oklahoma City Thunder",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2008-10-13-indiana-pacers-at-memphis-grizzlies",
+   "date": "2008-10-13",
+   "away": "Indiana Pacers",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2008-10-14-minnesota-timberwolves-at-chicago-bulls",
+   "date": "2008-10-14",
+   "away": "Minnesota Timberwolves",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2008-10-14-boston-celtics-at-cleveland-cavaliers",
+   "date": "2008-10-14",
+   "away": "Boston Celtics",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2008-10-14-san-antonio-spurs-at-detroit-pistons",
+   "date": "2008-10-14",
+   "away": "San Antonio Spurs",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2008-10-14-washington-wizards-at-new-orleans-hornets",
+   "date": "2008-10-14",
+   "away": "Washington Wizards",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2008-10-14-philadelphia-76ers-at-new-york-knicks",
+   "date": "2008-10-14",
+   "away": "Philadelphia 76ers",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2008-10-14-los-angeles-clippers-at-oklahoma-city-thunder",
+   "date": "2008-10-14",
+   "away": "Los Angeles Clippers",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "game_id": "2008-10-15-phoenix-suns-at-atlanta-hawks",
+   "date": "2008-10-15",
+   "away": "Phoenix Suns",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2008-10-15-utah-jazz-at-denver-nuggets",
+   "date": "2008-10-15",
+   "away": "Utah Jazz",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2008-10-15-dallas-mavericks-at-indiana-pacers",
+   "date": "2008-10-15",
+   "away": "Dallas Mavericks",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2008-10-15-houston-rockets-at-memphis-grizzlies",
+   "date": "2008-10-15",
+   "away": "Houston Rockets",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2008-10-15-golden-state-warriors-at-milwaukee-bucks",
+   "date": "2008-10-15",
+   "away": "Golden State Warriors",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2008-10-15-los-angeles-clippers-at-sacramento-kings",
+   "date": "2008-10-15",
+   "away": "Los Angeles Clippers",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2008-10-16-orlando-magic-at-charlotte-bobcats",
+   "date": "2008-10-16",
+   "away": "Orlando Magic",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2008-10-16-san-antonio-spurs-at-cleveland-cavaliers",
+   "date": "2008-10-16",
+   "away": "San Antonio Spurs",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2008-10-16-dallas-mavericks-at-detroit-pistons",
+   "date": "2008-10-16",
+   "away": "Dallas Mavericks",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2008-10-16-boston-celtics-at-new-jersey-nets",
+   "date": "2008-10-16",
+   "away": "Boston Celtics",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2008-10-16-minnesota-timberwolves-at-toronto-raptors",
+   "date": "2008-10-16",
+   "away": "Minnesota Timberwolves",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2008-10-17-new-york-knicks-at-boston-celtics",
+   "date": "2008-10-17",
+   "away": "New York Knicks",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2008-10-17-utah-jazz-at-chicago-bulls",
+   "date": "2008-10-17",
+   "away": "Utah Jazz",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2008-10-17-phoenix-suns-at-denver-nuggets",
+   "date": "2008-10-17",
+   "away": "Phoenix Suns",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2008-10-17-milwaukee-bucks-at-golden-state-warriors",
+   "date": "2008-10-17",
+   "away": "Milwaukee Bucks",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2008-10-17-sacramento-kings-at-houston-rockets",
+   "date": "2008-10-17",
+   "away": "Sacramento Kings",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2008-10-17-memphis-grizzlies-at-indiana-pacers",
+   "date": "2008-10-17",
+   "away": "Memphis Grizzlies",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2008-10-17-new-orleans-hornets-at-washington-wizards",
+   "date": "2008-10-17",
+   "away": "New Orleans Hornets",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2008-10-18-atlanta-hawks-at-charlotte-bobcats",
+   "date": "2008-10-18",
+   "away": "Atlanta Hawks",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2008-10-18-utah-jazz-at-chicago-bulls",
+   "date": "2008-10-18",
+   "away": "Utah Jazz",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2008-10-18-philadelphia-76ers-at-cleveland-cavaliers",
+   "date": "2008-10-18",
+   "away": "Philadelphia 76ers",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2008-10-18-sacramento-kings-at-dallas-mavericks",
+   "date": "2008-10-18",
+   "away": "Sacramento Kings",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2008-10-18-toronto-raptors-at-los-angeles-clippers",
+   "date": "2008-10-18",
+   "away": "Toronto Raptors",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2008-10-18-orlando-magic-at-miami-heat",
+   "date": "2008-10-18",
+   "away": "Orlando Magic",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2008-10-18-indiana-pacers-at-san-antonio-spurs",
+   "date": "2008-10-18",
+   "away": "Indiana Pacers",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2008-10-19-new-jersey-nets-at-boston-celtics",
+   "date": "2008-10-19",
+   "away": "New Jersey Nets",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2008-10-19-toronto-raptors-at-los-angeles-lakers",
+   "date": "2008-10-19",
+   "away": "Toronto Raptors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2008-10-19-denver-nuggets-at-minnesota-timberwolves",
+   "date": "2008-10-19",
+   "away": "Denver Nuggets",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2008-10-20-orlando-magic-at-atlanta-hawks",
+   "date": "2008-10-20",
+   "away": "Orlando Magic",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2008-10-20-new-york-knicks-at-new-jersey-nets",
+   "date": "2008-10-20",
+   "away": "New York Knicks",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2008-10-20-charlotte-bobcats-at-phoenix-suns",
+   "date": "2008-10-20",
+   "away": "Charlotte Bobcats",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2008-10-20-portland-trail-blazers-at-sacramento-kings",
+   "date": "2008-10-20",
+   "away": "Portland Trail Blazers",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2008-10-21-chicago-bulls-at-dallas-mavericks",
+   "date": "2008-10-21",
+   "away": "Chicago Bulls",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2008-10-21-phoenix-suns-at-los-angeles-clippers",
+   "date": "2008-10-21",
+   "away": "Phoenix Suns",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2008-10-21-charlotte-bobcats-at-los-angeles-lakers",
+   "date": "2008-10-21",
+   "away": "Charlotte Bobcats",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2008-10-21-memphis-grizzlies-at-miami-heat",
+   "date": "2008-10-21",
+   "away": "Memphis Grizzlies",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2008-10-21-indiana-pacers-at-new-orleans-hornets",
+   "date": "2008-10-21",
+   "away": "Indiana Pacers",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2008-10-21-boston-celtics-at-new-york-knicks",
+   "date": "2008-10-21",
+   "away": "Boston Celtics",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2008-10-21-cleveland-cavaliers-at-philadelphia-76ers",
+   "date": "2008-10-21",
+   "away": "Cleveland Cavaliers",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2008-10-21-denver-nuggets-at-toronto-raptors",
+   "date": "2008-10-21",
+   "away": "Denver Nuggets",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2008-10-22-cleveland-cavaliers-at-detroit-pistons",
+   "date": "2008-10-22",
+   "away": "Cleveland Cavaliers",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2008-10-22-portland-trail-blazers-at-los-angeles-clippers",
+   "date": "2008-10-22",
+   "away": "Portland Trail Blazers",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2008-10-22-chicago-bulls-at-minnesota-timberwolves",
+   "date": "2008-10-22",
+   "away": "Chicago Bulls",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2008-10-22-philadelphia-76ers-at-new-jersey-nets",
+   "date": "2008-10-22",
+   "away": "Philadelphia 76ers",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2008-10-22-memphis-grizzlies-at-orlando-magic",
+   "date": "2008-10-22",
+   "away": "Memphis Grizzlies",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2008-10-22-washington-wizards-at-san-antonio-spurs",
+   "date": "2008-10-22",
+   "away": "Washington Wizards",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2008-10-23-indiana-pacers-at-dallas-mavericks",
+   "date": "2008-10-23",
+   "away": "Indiana Pacers",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2008-10-23-atlanta-hawks-at-detroit-pistons",
+   "date": "2008-10-23",
+   "away": "Atlanta Hawks",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2008-10-23-charlotte-bobcats-at-los-angeles-lakers",
+   "date": "2008-10-23",
+   "away": "Charlotte Bobcats",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2008-10-23-milwaukee-bucks-at-minnesota-timberwolves",
+   "date": "2008-10-23",
+   "away": "Milwaukee Bucks",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2008-10-23-miami-heat-at-new-orleans-hornets",
+   "date": "2008-10-23",
+   "away": "Miami Heat",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2008-10-23-oklahoma-city-thunder-at-phoenix-suns",
+   "date": "2008-10-23",
+   "away": "Oklahoma City Thunder",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2008-10-23-houston-rockets-at-sacramento-kings",
+   "date": "2008-10-23",
+   "away": "Houston Rockets",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2008-10-23-portland-trail-blazers-at-utah-jazz",
+   "date": "2008-10-23",
+   "away": "Portland Trail Blazers",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2008-10-24-milwaukee-bucks-at-chicago-bulls",
+   "date": "2008-10-24",
+   "away": "Milwaukee Bucks",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2008-10-24-washington-wizards-at-cleveland-cavaliers",
+   "date": "2008-10-24",
+   "away": "Washington Wizards",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2008-10-24-denver-nuggets-at-los-angeles-clippers",
+   "date": "2008-10-24",
+   "away": "Denver Nuggets",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2008-10-24-oklahoma-city-thunder-at-los-angeles-lakers",
+   "date": "2008-10-24",
+   "away": "Oklahoma City Thunder",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2008-10-24-new-jersey-nets-at-new-york-knicks",
+   "date": "2008-10-24",
+   "away": "New Jersey Nets",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2008-10-24-miami-heat-at-san-antonio-spurs",
+   "date": "2008-10-24",
+   "away": "Miami Heat",
+   "home": "San Antonio Spurs"
+  }
+ ]
+}

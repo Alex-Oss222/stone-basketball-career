@@ -40,6 +40,21 @@ AWAY_KEYS = ("visitor/neutral", "visitor", "away", "away team", "away_team", "ro
 HOME_KEYS = ("home/neutral", "home", "home team", "home_team")
 
 
+# Seasons that legitimately differ from 82 games per club. Each entry records why.
+SEASON_EXCEPTIONS = {
+    "2011-12": {"games_per_team": {"*": 66}, "preseason_window": ((2011, 12, 1), (2011, 12, 24)),
+                "note": "Lockout-shortened season: 66 games per club from December 25, 2011."},
+    "2012-13": {"games_per_team": {"Boston Celtics": 81, "Indiana Pacers": 81},
+                "note": "Indiana at Boston on April 16, 2013 was cancelled after the Boston Marathon "
+                        "bombing and not made up."},
+}
+
+
+def games_per_team(season, team):
+    rule = SEASON_EXCEPTIONS.get(season, {}).get("games_per_team", {})
+    return rule.get(team, rule.get("*", 82))
+
+
 def team_count(season):
     """29 clubs through 2003-04; the Charlotte Bobcats made 30 from 2004-05."""
     return 29 if int(season[:4]) <= 2003 else 30
@@ -197,7 +212,11 @@ def validate_schedule(data, season, root=ROOT, kind="regular_season_schedule"):
             errors.append(f"game fields must be exactly {sorted(GAME_FIELDS)} (no results): {g}")
             continue
         day = date.fromisoformat(g["date"])
-        window = (date(start, 10, 1), date(start + 1, 4, 30)) if kind == "regular_season_schedule" else (date(start, 9, 15), date(start, 10, 31))
+        if kind == "regular_season_schedule":
+            window = (date(start, 10, 1), date(start + 1, 4, 30))
+        else:
+            custom = SEASON_EXCEPTIONS.get(season, {}).get("preseason_window")
+            window = tuple(date(*d) for d in custom) if custom else (date(start, 9, 15), date(start, 10, 31))
         if not window[0] <= day <= window[1]:
             errors.append(f"{g['game_id']}: date outside the regular-season window")
         if g["away"] == g["home"]:
@@ -218,10 +237,11 @@ def validate_schedule(data, season, root=ROOT, kind="regular_season_schedule"):
     if len(counts) != expected:
         errors.append(f"{len(counts)} teams; {season} has {expected}")
     for team, n in sorted(counts.items()):
-        if n != 82:
-            errors.append(f"{team} has {n} games, expected 82")
-    if len(games) != expected * 41:
-        errors.append(f"{len(games)} games, expected {expected * 41}")
+        if n != games_per_team(season, team):
+            errors.append(f"{team} has {n} games, expected {games_per_team(season, team)}")
+    total = sum(games_per_team(season, team) for team in counts) // 2
+    if len(games) != total:
+        errors.append(f"{len(games)} games, expected {total}")
     return errors
 
 

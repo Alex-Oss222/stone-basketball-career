@@ -1,0 +1,189 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2011-12",
+ "kind": "preseason_schedule",
+ "source": "NBA.com game data via the Kaggle \"NBA games data\" set (nathanlauga/nba-games), read from a public GitHub copy (bnafack/NBA_GAMES, data/games.csv). Schedule as played; result fields removed. Dates are US Eastern. Games against non-NBA opponents and neutral-site venues are not recorded in the source.",
+ "games": [
+  {
+   "game_id": "2011-12-16-cleveland-cavaliers-at-detroit-pistons",
+   "date": "2011-12-16",
+   "away": "Cleveland Cavaliers",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2011-12-16-chicago-bulls-at-indiana-pacers",
+   "date": "2011-12-16",
+   "away": "Chicago Bulls",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2011-12-16-new-orleans-hornets-at-memphis-grizzlies",
+   "date": "2011-12-16",
+   "away": "New Orleans Hornets",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2011-12-16-philadelphia-76ers-at-washington-wizards",
+   "date": "2011-12-16",
+   "away": "Philadelphia 76ers",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2011-12-17-sacramento-kings-at-golden-state-warriors",
+   "date": "2011-12-17",
+   "away": "Sacramento Kings",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2011-12-17-san-antonio-spurs-at-houston-rockets",
+   "date": "2011-12-17",
+   "away": "San Antonio Spurs",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2011-12-17-milwaukee-bucks-at-minnesota-timberwolves",
+   "date": "2011-12-17",
+   "away": "Milwaukee Bucks",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2011-12-17-new-york-knicks-at-new-jersey-nets",
+   "date": "2011-12-17",
+   "away": "New York Knicks",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2011-12-18-oklahoma-city-thunder-at-dallas-mavericks",
+   "date": "2011-12-18",
+   "away": "Oklahoma City Thunder",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2011-12-18-orlando-magic-at-miami-heat",
+   "date": "2011-12-18",
+   "away": "Orlando Magic",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2011-12-18-boston-celtics-at-toronto-raptors",
+   "date": "2011-12-18",
+   "away": "Boston Celtics",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2011-12-19-atlanta-hawks-at-charlotte-bobcats",
+   "date": "2011-12-19",
+   "away": "Atlanta Hawks",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2011-12-19-los-angeles-clippers-at-los-angeles-lakers",
+   "date": "2011-12-19",
+   "away": "Los Angeles Clippers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2011-12-19-utah-jazz-at-portland-trail-blazers",
+   "date": "2011-12-19",
+   "away": "Utah Jazz",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2011-12-20-indiana-pacers-at-chicago-bulls",
+   "date": "2011-12-20",
+   "away": "Indiana Pacers",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2011-12-20-detroit-pistons-at-cleveland-cavaliers",
+   "date": "2011-12-20",
+   "away": "Detroit Pistons",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2011-12-20-phoenix-suns-at-denver-nuggets",
+   "date": "2011-12-20",
+   "away": "Phoenix Suns",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2011-12-20-dallas-mavericks-at-oklahoma-city-thunder",
+   "date": "2011-12-20",
+   "away": "Dallas Mavericks",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "game_id": "2011-12-20-washington-wizards-at-philadelphia-76ers",
+   "date": "2011-12-20",
+   "away": "Washington Wizards",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2011-12-20-golden-state-warriors-at-sacramento-kings",
+   "date": "2011-12-20",
+   "away": "Golden State Warriors",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2011-12-21-toronto-raptors-at-boston-celtics",
+   "date": "2011-12-21",
+   "away": "Toronto Raptors",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2011-12-21-los-angeles-lakers-at-los-angeles-clippers",
+   "date": "2011-12-21",
+   "away": "Los Angeles Lakers",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2011-12-21-minnesota-timberwolves-at-milwaukee-bucks",
+   "date": "2011-12-21",
+   "away": "Minnesota Timberwolves",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2011-12-21-memphis-grizzlies-at-new-orleans-hornets",
+   "date": "2011-12-21",
+   "away": "Memphis Grizzlies",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2011-12-21-new-jersey-nets-at-new-york-knicks",
+   "date": "2011-12-21",
+   "away": "New Jersey Nets",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2011-12-21-miami-heat-at-orlando-magic",
+   "date": "2011-12-21",
+   "away": "Miami Heat",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2011-12-21-houston-rockets-at-san-antonio-spurs",
+   "date": "2011-12-21",
+   "away": "Houston Rockets",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2011-12-21-portland-trail-blazers-at-utah-jazz",
+   "date": "2011-12-21",
+   "away": "Portland Trail Blazers",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2011-12-22-charlotte-bobcats-at-atlanta-hawks",
+   "date": "2011-12-22",
+   "away": "Charlotte Bobcats",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2011-12-22-denver-nuggets-at-phoenix-suns",
+   "date": "2011-12-22",
+   "away": "Denver Nuggets",
+   "home": "Phoenix Suns"
+  }
+ ]
+}

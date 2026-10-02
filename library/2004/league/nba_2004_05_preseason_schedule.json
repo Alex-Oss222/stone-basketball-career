@@ -1,0 +1,297 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2004-05",
+ "kind": "preseason_schedule",
+ "source": "NBA.com game data via the Kaggle \"NBA games data\" set (nathanlauga/nba-games), read from a public GitHub copy (bnafack/NBA_GAMES, data/games.csv). Schedule as played; result fields removed. Dates are US Eastern. Games against non-NBA opponents and neutral-site venues are not recorded in the source.",
+ "games": [
+  {
+   "game_id": "2004-10-22-miami-heat-at-atlanta-hawks",
+   "date": "2004-10-22",
+   "away": "Miami Heat",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2004-10-22-new-jersey-nets-at-boston-celtics",
+   "date": "2004-10-22",
+   "away": "New Jersey Nets",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2004-10-22-portland-trail-blazers-at-charlotte-bobcats",
+   "date": "2004-10-22",
+   "away": "Portland Trail Blazers",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2004-10-22-washington-wizards-at-detroit-pistons",
+   "date": "2004-10-22",
+   "away": "Washington Wizards",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2004-10-22-denver-nuggets-at-golden-state-warriors",
+   "date": "2004-10-22",
+   "away": "Denver Nuggets",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2004-10-22-los-angeles-clippers-at-los-angeles-lakers",
+   "date": "2004-10-22",
+   "away": "Los Angeles Clippers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2004-10-22-new-york-knicks-at-minnesota-timberwolves",
+   "date": "2004-10-22",
+   "away": "New York Knicks",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2004-10-22-sacramento-kings-at-utah-jazz",
+   "date": "2004-10-22",
+   "away": "Sacramento Kings",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2004-10-23-cleveland-cavaliers-at-boston-celtics",
+   "date": "2004-10-23",
+   "away": "Cleveland Cavaliers",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2004-10-23-toronto-raptors-at-chicago-bulls",
+   "date": "2004-10-23",
+   "away": "Toronto Raptors",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2004-10-23-atlanta-hawks-at-memphis-grizzlies",
+   "date": "2004-10-23",
+   "away": "Atlanta Hawks",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2004-10-23-dallas-mavericks-at-milwaukee-bucks",
+   "date": "2004-10-23",
+   "away": "Dallas Mavericks",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2004-10-23-indiana-pacers-at-minnesota-timberwolves",
+   "date": "2004-10-23",
+   "away": "Indiana Pacers",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2004-10-23-houston-rockets-at-orlando-magic",
+   "date": "2004-10-23",
+   "away": "Houston Rockets",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2004-10-23-new-jersey-nets-at-philadelphia-76ers",
+   "date": "2004-10-23",
+   "away": "New Jersey Nets",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2004-10-23-new-orleans-hornets-at-sacramento-kings",
+   "date": "2004-10-23",
+   "away": "New Orleans Hornets",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2004-10-23-seattle-supersonics-at-san-antonio-spurs",
+   "date": "2004-10-23",
+   "away": "Seattle SuperSonics",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2004-10-24-indiana-pacers-at-denver-nuggets",
+   "date": "2004-10-24",
+   "away": "Indiana Pacers",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2004-10-24-utah-jazz-at-detroit-pistons",
+   "date": "2004-10-24",
+   "away": "Utah Jazz",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2004-10-24-new-orleans-hornets-at-los-angeles-clippers",
+   "date": "2004-10-24",
+   "away": "New Orleans Hornets",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2004-10-24-dallas-mavericks-at-new-york-knicks",
+   "date": "2004-10-24",
+   "away": "Dallas Mavericks",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2004-10-24-charlotte-bobcats-at-washington-wizards",
+   "date": "2004-10-24",
+   "away": "Charlotte Bobcats",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2004-10-25-washington-wizards-at-chicago-bulls",
+   "date": "2004-10-25",
+   "away": "Washington Wizards",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2004-10-25-golden-state-warriors-at-portland-trail-blazers",
+   "date": "2004-10-25",
+   "away": "Golden State Warriors",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2004-10-26-miami-heat-at-charlotte-bobcats",
+   "date": "2004-10-26",
+   "away": "Miami Heat",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2004-10-26-san-antonio-spurs-at-dallas-mavericks",
+   "date": "2004-10-26",
+   "away": "San Antonio Spurs",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2004-10-26-toronto-raptors-at-denver-nuggets",
+   "date": "2004-10-26",
+   "away": "Toronto Raptors",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2004-10-26-memphis-grizzlies-at-indiana-pacers",
+   "date": "2004-10-26",
+   "away": "Memphis Grizzlies",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2004-10-26-new-york-knicks-at-new-jersey-nets",
+   "date": "2004-10-26",
+   "away": "New York Knicks",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2004-10-26-utah-jazz-at-philadelphia-76ers",
+   "date": "2004-10-26",
+   "away": "Utah Jazz",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2004-10-26-seattle-supersonics-at-phoenix-suns",
+   "date": "2004-10-26",
+   "away": "Seattle SuperSonics",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2004-10-27-detroit-pistons-at-boston-celtics",
+   "date": "2004-10-27",
+   "away": "Detroit Pistons",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2004-10-27-los-angeles-clippers-at-golden-state-warriors",
+   "date": "2004-10-27",
+   "away": "Los Angeles Clippers",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2004-10-27-chicago-bulls-at-indiana-pacers",
+   "date": "2004-10-27",
+   "away": "Chicago Bulls",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2004-10-27-milwaukee-bucks-at-minnesota-timberwolves",
+   "date": "2004-10-27",
+   "away": "Milwaukee Bucks",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2004-10-27-miami-heat-at-orlando-magic",
+   "date": "2004-10-27",
+   "away": "Miami Heat",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2004-10-27-toronto-raptors-at-portland-trail-blazers",
+   "date": "2004-10-27",
+   "away": "Toronto Raptors",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2004-10-28-sacramento-kings-at-dallas-mavericks",
+   "date": "2004-10-28",
+   "away": "Sacramento Kings",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2004-10-28-denver-nuggets-at-houston-rockets",
+   "date": "2004-10-28",
+   "away": "Denver Nuggets",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2004-10-28-phoenix-suns-at-los-angeles-clippers",
+   "date": "2004-10-28",
+   "away": "Phoenix Suns",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2004-10-28-philadelphia-76ers-at-new-jersey-nets",
+   "date": "2004-10-28",
+   "away": "Philadelphia 76ers",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2004-10-28-utah-jazz-at-new-york-knicks",
+   "date": "2004-10-28",
+   "away": "Utah Jazz",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2004-10-29-denver-nuggets-at-indiana-pacers",
+   "date": "2004-10-29",
+   "away": "Denver Nuggets",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2004-10-29-detroit-pistons-at-minnesota-timberwolves",
+   "date": "2004-10-29",
+   "away": "Detroit Pistons",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2004-10-29-phoenix-suns-at-sacramento-kings",
+   "date": "2004-10-29",
+   "away": "Phoenix Suns",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2004-10-29-new-orleans-hornets-at-san-antonio-spurs",
+   "date": "2004-10-29",
+   "away": "New Orleans Hornets",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2004-10-29-portland-trail-blazers-at-seattle-supersonics",
+   "date": "2004-10-29",
+   "away": "Portland Trail Blazers",
+   "home": "Seattle SuperSonics"
+  },
+  {
+   "game_id": "2004-10-29-cleveland-cavaliers-at-toronto-raptors",
+   "date": "2004-10-29",
+   "away": "Cleveland Cavaliers",
+   "home": "Toronto Raptors"
+  }
+ ]
+}

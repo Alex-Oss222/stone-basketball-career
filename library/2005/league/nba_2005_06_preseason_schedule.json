@@ -1,0 +1,687 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2005-06",
+ "kind": "preseason_schedule",
+ "source": "NBA.com game data via the Kaggle \"NBA games data\" set (nathanlauga/nba-games), read from a public GitHub copy (bnafack/NBA_GAMES, data/games.csv). Schedule as played; result fields removed. Dates are US Eastern. Games against non-NBA opponents and neutral-site venues are not recorded in the source.",
+ "games": [
+  {
+   "game_id": "2005-10-10-san-antonio-spurs-at-miami-heat",
+   "date": "2005-10-10",
+   "away": "San Antonio Spurs",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2005-10-10-cleveland-cavaliers-at-washington-wizards",
+   "date": "2005-10-10",
+   "away": "Cleveland Cavaliers",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2005-10-11-orlando-magic-at-atlanta-hawks",
+   "date": "2005-10-11",
+   "away": "Orlando Magic",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2005-10-11-boston-celtics-at-cleveland-cavaliers",
+   "date": "2005-10-11",
+   "away": "Boston Celtics",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2005-10-11-chicago-bulls-at-detroit-pistons",
+   "date": "2005-10-11",
+   "away": "Chicago Bulls",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2005-10-11-golden-state-warriors-at-los-angeles-lakers",
+   "date": "2005-10-11",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2005-10-11-indiana-pacers-at-new-jersey-nets",
+   "date": "2005-10-11",
+   "away": "Indiana Pacers",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2005-10-11-houston-rockets-at-philadelphia-76ers",
+   "date": "2005-10-11",
+   "away": "Houston Rockets",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2005-10-11-dallas-mavericks-at-sacramento-kings",
+   "date": "2005-10-11",
+   "away": "Dallas Mavericks",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2005-10-12-charlotte-bobcats-at-atlanta-hawks",
+   "date": "2005-10-12",
+   "away": "Charlotte Bobcats",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2005-10-12-orlando-magic-at-houston-rockets",
+   "date": "2005-10-12",
+   "away": "Orlando Magic",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2005-10-12-dallas-mavericks-at-los-angeles-clippers",
+   "date": "2005-10-12",
+   "away": "Dallas Mavericks",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2005-10-12-golden-state-warriors-at-los-angeles-lakers",
+   "date": "2005-10-12",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2005-10-12-chicago-bulls-at-memphis-grizzlies",
+   "date": "2005-10-12",
+   "away": "Chicago Bulls",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2005-10-12-milwaukee-bucks-at-minnesota-timberwolves",
+   "date": "2005-10-12",
+   "away": "Milwaukee Bucks",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2005-10-12-san-antonio-spurs-at-philadelphia-76ers",
+   "date": "2005-10-12",
+   "away": "San Antonio Spurs",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2005-10-12-seattle-supersonics-at-portland-trail-blazers",
+   "date": "2005-10-12",
+   "away": "Seattle SuperSonics",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2005-10-12-utah-jazz-at-toronto-raptors",
+   "date": "2005-10-12",
+   "away": "Utah Jazz",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2005-10-13-new-jersey-nets-at-charlotte-bobcats",
+   "date": "2005-10-13",
+   "away": "New Jersey Nets",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2005-10-13-new-orleans-oklahoma-city-hornets-at-denver-nuggets",
+   "date": "2005-10-13",
+   "away": "New Orleans/Oklahoma City Hornets",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2005-10-13-milwaukee-bucks-at-detroit-pistons",
+   "date": "2005-10-13",
+   "away": "Milwaukee Bucks",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2005-10-13-utah-jazz-at-indiana-pacers",
+   "date": "2005-10-13",
+   "away": "Utah Jazz",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2005-10-13-washington-wizards-at-san-antonio-spurs",
+   "date": "2005-10-13",
+   "away": "Washington Wizards",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2005-10-14-toronto-raptors-at-boston-celtics",
+   "date": "2005-10-14",
+   "away": "Toronto Raptors",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2005-10-14-philadelphia-76ers-at-cleveland-cavaliers",
+   "date": "2005-10-14",
+   "away": "Philadelphia 76ers",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2005-10-14-minnesota-timberwolves-at-indiana-pacers",
+   "date": "2005-10-14",
+   "away": "Minnesota Timberwolves",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2005-10-14-sacramento-kings-at-los-angeles-clippers",
+   "date": "2005-10-14",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2005-10-14-memphis-grizzlies-at-miami-heat",
+   "date": "2005-10-14",
+   "away": "Memphis Grizzlies",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2005-10-14-phoenix-suns-at-seattle-supersonics",
+   "date": "2005-10-14",
+   "away": "Phoenix Suns",
+   "home": "Seattle SuperSonics"
+  },
+  {
+   "game_id": "2005-10-15-boston-celtics-at-chicago-bulls",
+   "date": "2005-10-15",
+   "away": "Boston Celtics",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2005-10-15-portland-trail-blazers-at-denver-nuggets",
+   "date": "2005-10-15",
+   "away": "Portland Trail Blazers",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2005-10-15-washington-wizards-at-memphis-grizzlies",
+   "date": "2005-10-15",
+   "away": "Washington Wizards",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2005-10-15-charlotte-bobcats-at-miami-heat",
+   "date": "2005-10-15",
+   "away": "Charlotte Bobcats",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2005-10-15-cleveland-cavaliers-at-milwaukee-bucks",
+   "date": "2005-10-15",
+   "away": "Cleveland Cavaliers",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2005-10-15-new-york-knicks-at-new-jersey-nets",
+   "date": "2005-10-15",
+   "away": "New York Knicks",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2005-10-15-new-orleans-oklahoma-city-hornets-at-orlando-magic",
+   "date": "2005-10-15",
+   "away": "New Orleans/Oklahoma City Hornets",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2005-10-15-los-angeles-clippers-at-phoenix-suns",
+   "date": "2005-10-15",
+   "away": "Los Angeles Clippers",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2005-10-15-houston-rockets-at-san-antonio-spurs",
+   "date": "2005-10-15",
+   "away": "Houston Rockets",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2005-10-16-minnesota-timberwolves-at-detroit-pistons",
+   "date": "2005-10-16",
+   "away": "Minnesota Timberwolves",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2005-10-16-dallas-mavericks-at-new-york-knicks",
+   "date": "2005-10-16",
+   "away": "Dallas Mavericks",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2005-10-16-golden-state-warriors-at-sacramento-kings",
+   "date": "2005-10-16",
+   "away": "Golden State Warriors",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2005-10-17-atlanta-hawks-at-charlotte-bobcats",
+   "date": "2005-10-17",
+   "away": "Atlanta Hawks",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2005-10-17-minnesota-timberwolves-at-chicago-bulls",
+   "date": "2005-10-17",
+   "away": "Minnesota Timberwolves",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2005-10-17-seattle-supersonics-at-houston-rockets",
+   "date": "2005-10-17",
+   "away": "Seattle SuperSonics",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2005-10-17-phoenix-suns-at-utah-jazz",
+   "date": "2005-10-17",
+   "away": "Phoenix Suns",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2005-10-18-dallas-mavericks-at-detroit-pistons",
+   "date": "2005-10-18",
+   "away": "Dallas Mavericks",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2005-10-18-san-antonio-spurs-at-indiana-pacers",
+   "date": "2005-10-18",
+   "away": "San Antonio Spurs",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2005-10-18-washington-wizards-at-los-angeles-lakers",
+   "date": "2005-10-18",
+   "away": "Washington Wizards",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2005-10-18-orlando-magic-at-miami-heat",
+   "date": "2005-10-18",
+   "away": "Orlando Magic",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2005-10-18-atlanta-hawks-at-new-orleans-oklahoma-city-hornets",
+   "date": "2005-10-18",
+   "away": "Atlanta Hawks",
+   "home": "New Orleans/Oklahoma City Hornets"
+  },
+  {
+   "game_id": "2005-10-18-philadelphia-76ers-at-new-york-knicks",
+   "date": "2005-10-18",
+   "away": "Philadelphia 76ers",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2005-10-18-los-angeles-clippers-at-portland-trail-blazers",
+   "date": "2005-10-18",
+   "away": "Los Angeles Clippers",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2005-10-18-denver-nuggets-at-sacramento-kings",
+   "date": "2005-10-18",
+   "away": "Denver Nuggets",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2005-10-19-chicago-bulls-at-boston-celtics",
+   "date": "2005-10-19",
+   "away": "Chicago Bulls",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2005-10-19-memphis-grizzlies-at-cleveland-cavaliers",
+   "date": "2005-10-19",
+   "away": "Memphis Grizzlies",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2005-10-19-phoenix-suns-at-golden-state-warriors",
+   "date": "2005-10-19",
+   "away": "Phoenix Suns",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2005-10-19-detroit-pistons-at-milwaukee-bucks",
+   "date": "2005-10-19",
+   "away": "Detroit Pistons",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2005-10-19-los-angeles-clippers-at-seattle-supersonics",
+   "date": "2005-10-19",
+   "away": "Los Angeles Clippers",
+   "home": "Seattle SuperSonics"
+  },
+  {
+   "game_id": "2005-10-19-new-jersey-nets-at-toronto-raptors",
+   "date": "2005-10-19",
+   "away": "New Jersey Nets",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2005-10-20-denver-nuggets-at-los-angeles-lakers",
+   "date": "2005-10-20",
+   "away": "Denver Nuggets",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2005-10-20-indiana-pacers-at-minnesota-timberwolves",
+   "date": "2005-10-20",
+   "away": "Indiana Pacers",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2005-10-20-san-antonio-spurs-at-new-orleans-oklahoma-city-hornets",
+   "date": "2005-10-20",
+   "away": "San Antonio Spurs",
+   "home": "New Orleans/Oklahoma City Hornets"
+  },
+  {
+   "game_id": "2005-10-20-cleveland-cavaliers-at-philadelphia-76ers",
+   "date": "2005-10-20",
+   "away": "Cleveland Cavaliers",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2005-10-20-utah-jazz-at-portland-trail-blazers",
+   "date": "2005-10-20",
+   "away": "Utah Jazz",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2005-10-20-charlotte-bobcats-at-washington-wizards",
+   "date": "2005-10-20",
+   "away": "Charlotte Bobcats",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2005-10-21-milwaukee-bucks-at-chicago-bulls",
+   "date": "2005-10-21",
+   "away": "Milwaukee Bucks",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2005-10-21-new-york-knicks-at-dallas-mavericks",
+   "date": "2005-10-21",
+   "away": "New York Knicks",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2005-10-21-washington-wizards-at-denver-nuggets",
+   "date": "2005-10-21",
+   "away": "Washington Wizards",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2005-10-21-charlotte-bobcats-at-los-angeles-lakers",
+   "date": "2005-10-21",
+   "away": "Charlotte Bobcats",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2005-10-21-philadelphia-76ers-at-new-jersey-nets",
+   "date": "2005-10-21",
+   "away": "Philadelphia 76ers",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2005-10-21-seattle-supersonics-at-phoenix-suns",
+   "date": "2005-10-21",
+   "away": "Seattle SuperSonics",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2005-10-21-boston-celtics-at-toronto-raptors",
+   "date": "2005-10-21",
+   "away": "Boston Celtics",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2005-10-22-new-jersey-nets-at-boston-celtics",
+   "date": "2005-10-22",
+   "away": "New Jersey Nets",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2005-10-22-miami-heat-at-detroit-pistons",
+   "date": "2005-10-22",
+   "away": "Miami Heat",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2005-10-22-seattle-supersonics-at-golden-state-warriors",
+   "date": "2005-10-22",
+   "away": "Seattle SuperSonics",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2005-10-22-houston-rockets-at-memphis-grizzlies",
+   "date": "2005-10-22",
+   "away": "Houston Rockets",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2005-10-22-minnesota-timberwolves-at-milwaukee-bucks",
+   "date": "2005-10-22",
+   "away": "Minnesota Timberwolves",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2005-10-22-atlanta-hawks-at-orlando-magic",
+   "date": "2005-10-22",
+   "away": "Atlanta Hawks",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2005-10-22-sacramento-kings-at-portland-trail-blazers",
+   "date": "2005-10-22",
+   "away": "Sacramento Kings",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2005-10-22-new-york-knicks-at-san-antonio-spurs",
+   "date": "2005-10-22",
+   "away": "New York Knicks",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2005-10-23-toronto-raptors-at-cleveland-cavaliers",
+   "date": "2005-10-23",
+   "away": "Toronto Raptors",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2005-10-23-los-angeles-clippers-at-dallas-mavericks",
+   "date": "2005-10-23",
+   "away": "Los Angeles Clippers",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2005-10-23-washington-wizards-at-houston-rockets",
+   "date": "2005-10-23",
+   "away": "Washington Wizards",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2005-10-23-charlotte-bobcats-at-los-angeles-lakers",
+   "date": "2005-10-23",
+   "away": "Charlotte Bobcats",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2005-10-23-denver-nuggets-at-new-orleans-oklahoma-city-hornets",
+   "date": "2005-10-23",
+   "away": "Denver Nuggets",
+   "home": "New Orleans/Oklahoma City Hornets"
+  },
+  {
+   "game_id": "2005-10-23-phoenix-suns-at-sacramento-kings",
+   "date": "2005-10-23",
+   "away": "Phoenix Suns",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2005-10-24-los-angeles-clippers-at-golden-state-warriors",
+   "date": "2005-10-24",
+   "away": "Los Angeles Clippers",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2005-10-24-orlando-magic-at-memphis-grizzlies",
+   "date": "2005-10-24",
+   "away": "Orlando Magic",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2005-10-24-atlanta-hawks-at-miami-heat",
+   "date": "2005-10-24",
+   "away": "Atlanta Hawks",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2005-10-24-portland-trail-blazers-at-toronto-raptors",
+   "date": "2005-10-24",
+   "away": "Portland Trail Blazers",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2005-10-25-memphis-grizzlies-at-chicago-bulls",
+   "date": "2005-10-25",
+   "away": "Memphis Grizzlies",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2005-10-25-milwaukee-bucks-at-dallas-mavericks",
+   "date": "2005-10-25",
+   "away": "Milwaukee Bucks",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2005-10-25-utah-jazz-at-los-angeles-lakers",
+   "date": "2005-10-25",
+   "away": "Utah Jazz",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2005-10-25-boston-celtics-at-new-jersey-nets",
+   "date": "2005-10-25",
+   "away": "Boston Celtics",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2005-10-25-miami-heat-at-new-orleans-oklahoma-city-hornets",
+   "date": "2005-10-25",
+   "away": "Miami Heat",
+   "home": "New Orleans/Oklahoma City Hornets"
+  },
+  {
+   "game_id": "2005-10-25-new-york-knicks-at-philadelphia-76ers",
+   "date": "2005-10-25",
+   "away": "New York Knicks",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2005-10-25-indiana-pacers-at-san-antonio-spurs",
+   "date": "2005-10-25",
+   "away": "Indiana Pacers",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2005-10-26-cleveland-cavaliers-at-boston-celtics",
+   "date": "2005-10-26",
+   "away": "Cleveland Cavaliers",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2005-10-26-indiana-pacers-at-charlotte-bobcats",
+   "date": "2005-10-26",
+   "away": "Indiana Pacers",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2005-10-26-milwaukee-bucks-at-denver-nuggets",
+   "date": "2005-10-26",
+   "away": "Milwaukee Bucks",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2005-10-26-utah-jazz-at-houston-rockets",
+   "date": "2005-10-26",
+   "away": "Utah Jazz",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2005-10-26-chicago-bulls-at-minnesota-timberwolves",
+   "date": "2005-10-26",
+   "away": "Chicago Bulls",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2005-10-26-sacramento-kings-at-phoenix-suns",
+   "date": "2005-10-26",
+   "away": "Sacramento Kings",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2005-10-26-toronto-raptors-at-portland-trail-blazers",
+   "date": "2005-10-26",
+   "away": "Toronto Raptors",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2005-10-27-detroit-pistons-at-dallas-mavericks",
+   "date": "2005-10-27",
+   "away": "Detroit Pistons",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2005-10-27-golden-state-warriors-at-phoenix-suns",
+   "date": "2005-10-27",
+   "away": "Golden State Warriors",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2005-10-28-new-orleans-oklahoma-city-hornets-at-atlanta-hawks",
+   "date": "2005-10-28",
+   "away": "New Orleans/Oklahoma City Hornets",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2005-10-28-washington-wizards-at-indiana-pacers",
+   "date": "2005-10-28",
+   "away": "Washington Wizards",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2005-10-28-sacramento-kings-at-los-angeles-lakers",
+   "date": "2005-10-28",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2005-10-28-detroit-pistons-at-minnesota-timberwolves",
+   "date": "2005-10-28",
+   "away": "Detroit Pistons",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2005-10-28-new-jersey-nets-at-new-york-knicks",
+   "date": "2005-10-28",
+   "away": "New Jersey Nets",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2005-10-28-portland-trail-blazers-at-seattle-supersonics",
+   "date": "2005-10-28",
+   "away": "Portland Trail Blazers",
+   "home": "Seattle SuperSonics"
+  },
+  {
+   "game_id": "2005-10-28-denver-nuggets-at-utah-jazz",
+   "date": "2005-10-28",
+   "away": "Denver Nuggets",
+   "home": "Utah Jazz"
+  }
+ ]
+}
