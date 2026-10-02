@@ -39,7 +39,8 @@ class CbaRuleTests(unittest.TestCase):
         by_name = {p["player"]: p for p in RIGHTS["players"]}
         self.assertEqual(len(by_name), 7)
         self.assertEqual(by_name["Mike James"]["bird_status"], "early_bird")
-        self.assertEqual(by_name["Alonzo Mourning"]["cap_hold"], 15344000)
+        self.assertEqual(by_name["Alonzo Mourning"]["cap_hold"], 21661290)   # 105% of previous salary beats the tier maximum
+        self.assertEqual(by_name["Eddie House"]["qualifying_offer"], 813679)   # 3-year minimum + $150,000
         self.assertEqual(RIGHTS["total_cap_holds"], sum(p["cap_hold"] for p in RIGHTS["players"]))
         self.assertNotIn("decision", json.dumps(RIGHTS).replace("no decision", ""))
 

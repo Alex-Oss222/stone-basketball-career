@@ -14,7 +14,11 @@
   "cap": "Not to exceed the player's maximum salary for his years of service.",
   "last_two_seasons_rule": "If the player's salary differed by more than $4 million between the last two seasons of his contract, the percentage applies to the average of those two seasons."
  },
- "cap_hold_ends_when": ["player re-signs with the team", "player signs with another team", "team renounces him (Q30)"],
+ "cap_hold_ends_when": [
+  "player re-signs with the team",
+  "player signs with another team",
+  "team renounces him (Q30)"
+ ],
  "renouncing": "Renounced players stop counting; the team loses its Bird, Early Bird and Non-Bird exception for him until the following June 30 and may re-sign him only with cap room or another exception (Q31). A renouncement may be undone only when it made room for a restricted free agent whose team matched (Q32).",
  "qualifying_offer": {
   "percent_of_previous_salary": 125,
@@ -26,23 +30,68 @@
  },
  "restricted_free_agency": {
   "rookie_scale": "After the fourth year of a first-round rookie-scale contract.",
-  "veterans": {"entered_from_season": "1998-99", "max_seasons": 3},
+  "veterans": {
+   "entered_from_season": "1998-99",
+   "max_seasons": 3
+  },
   "offer_sheet_min_seasons": 3,
   "match_window_days": 15,
   "rescind": "A rescinded qualifying offer makes the player unrestricted.",
   "source": "Q34"
  },
  "exceptions": {
-  "larry_bird": {"seasons_required": 3, "max_salary": "player maximum", "raise_percent": 12.5, "max_years": 7, "source": "Q17, Q23, Q25"},
-  "early_bird": {"seasons_required": 2, "salary": "greater of 175% of previous salary or the average salary", "raise_percent": 12.5, "min_years": 2, "max_years": 6, "source": "Q17"},
-  "non_bird": {"salary": "greater of 120% of previous salary or 120% of the minimum salary", "raise_percent": 10, "max_years": 6, "source": "Q17"},
-  "minimum": {"max_years": 2, "second_season_salary": "that season's minimum", "source": "Q17"},
+  "larry_bird": {
+   "seasons_required": 3,
+   "max_salary": "player maximum",
+   "raise_percent": 12.5,
+   "max_years": 7,
+   "source": "Q17, Q23, Q25"
+  },
+  "early_bird": {
+   "seasons_required": 2,
+   "salary": "greater of 175% of previous salary or the average salary",
+   "raise_percent": 12.5,
+   "min_years": 2,
+   "max_years": 6,
+   "source": "Q17"
+  },
+  "non_bird": {
+   "salary": "greater of 120% of previous salary or 120% of the minimum salary",
+   "raise_percent": 10,
+   "max_years": 6,
+   "source": "Q17"
+  },
+  "minimum": {
+   "max_years": 2,
+   "second_season_salary": "that season's minimum",
+   "source": "Q17"
+  },
   "bird_clock": "Seasons with the club without being waived or changing teams as a free agent; a trade keeps the clock (Q17, Q23)."
  },
- "rookie_scale": {"signing_range_percent": [80, 120], "raise_percent": 10, "term": "three seasons plus a team option for a fourth, exercised by October 31 after the second season", "unsigned_first_round_hold": "100% of scale unless a verbal agreement is higher", "unsigned_second_round_hold": "none", "source": "Q38, Q41"},
+ "rookie_scale": {
+  "signing_range_percent": [
+   80,
+   120
+  ],
+  "raise_percent": 10,
+  "term": "three seasons plus a team option for a fourth, exercised by October 31 after the second season",
+  "unsigned_first_round_hold": "100% of scale unless a verbal agreement is higher",
+  "unsigned_second_round_hold": "none",
+  "source": "Q38, Q41"
+ },
  "unverified": [
   "A separate cap-hold rule for players coming off minimum-salary contracts (not found in the FAQ; the standard percentages are applied and flagged).",
   "Any rule tying a cap hold to a pending qualifying offer or offer sheet (not found in the FAQ).",
-  "The 2002-03 league average salary is not published in the repository; it is derived from the contract inventory's 2002-03 salaries and used only to decide above or below average."
- ]
+  "The 105% maximum rule and the mid-level-equals-average rule are cited to FAQ Questions 22 and 10 but their text is not in the extract file."
+ ],
+ "maximum_salary": {
+  "rule": "The greater of the maximum for the player's years of service and 105% of his previous salary.",
+  "source": "FAQ Question 22, as cited by library/2003/league/nba_2003_free_agent_rights.json; the quoted FAQ text is not yet in the extract file"
+ },
+ "average_salary": {
+  "2003-04_threshold": 4917000,
+  "rule": "The mid-level exception equals the average salary, so the 2003-04 mid-level ($4,917,000) is the above/below-average line for cap holds. Salaries between $4,546,000 and $4,917,000 are flagged.",
+  "source": "FAQ Question 10, as cited by the rights file; the quoted FAQ text is not yet in the extract file"
+ },
+ "minimum_salary_scale": "library/2003/league/nba_1999_cba_minimum_salary_scale.json (FAQ Question 9)"
 }

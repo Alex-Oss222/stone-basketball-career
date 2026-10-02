@@ -36,3 +36,13 @@ The datasets include Wikimedia image URLs and license metadata when available. P
 
 The raw uploads were imported once with `scripts/import_contracts.py`, which removed everything dated after the checkpoint: eight post-June 30 signing notes, the June 27 trade, and a release dated October 2003. It also recast "restricted" free-agent marks as eligibility, because a qualifying offer is a June 30 club decision the simulation makes. Miami's sheet in `00_Team/Finances` stays authoritative for Miami. Cap figures are usable by a front office only from their recorded publication date (`league_cap_history.json`); 2003-04 becomes live on July 15, 2003, and later seasons stay reference-only until their dates are researched.
 
+## 1999 agreement rules and free-agent rights
+
+| File | Content |
+|---|---|
+| `cba_1999_salary_cap_faq_extract.txt` | Rules extracted from Larry Coon's 1999 Salary Cap FAQ, with question numbers |
+| `nba_1999_cba_rules.json` | The same rules as data (`runtime/cba.py`): cap holds, maximum salary, average-salary line, qualifying offers, Bird exceptions, minimum exception, rookie scale, renouncing |
+| `nba_1999_cba_minimum_salary_scale.json` | Minimum salary by years of service, 1998-99 to 2004-05 |
+| `nba_2003_free_agent_rights.json` | Bird class, cap hold and qualifying-offer amount for all 129 expiring players, every club. Restricted marks are recast as eligibility. |
+| `miami_expiring_tenure.csv` | Tenure facts behind Miami's rights file (`00_Team/Finances/free_agent_rights.json`), which must agree with the league file |
+

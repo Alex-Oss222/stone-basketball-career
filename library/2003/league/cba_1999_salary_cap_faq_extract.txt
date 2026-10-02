@@ -19,7 +19,7 @@ TOPIC: Free agent amounts (cap holds), as a percentage of the player's previous 
 - Non-Bird free agent, any previous salary: 120%.
 - Limit on every row: "Not to exceed the player's maximum salary, based on years of service."
 - Adjustment on every row: if the difference in salary between the last two seasons of the player's contract exceeded $4 million, the percentage is applied to the average salary of those last two seasons.
-- NOT FOUND in the two readings: a separate hold rule for players coming off minimum-salary contracts, and a rule tying the hold to a pending qualifying offer or offer sheet. Treat both as unverified, not as absent from the agreement.
+- NOT ADDRESSED BY THE FAQ (three readings): a separate hold rule for players coming off minimum-salary contracts, a floor at the player's minimum salary, and any use of a qualifying offer amount as the hold. The table has no row or footnote for them. The agreement itself (Article VII, Section 4(d)) could not be read: the public PDF is cut off before that article in the page reader. Treat the minimum-contract hold as UNVERIFIED, not as absent from the agreement.
 
 ----------------------------------------------------------------------
 SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 30
@@ -79,6 +79,25 @@ TOPIC: Minimum salary exception
 - A team over the cap may offer minimum-salary contracts.
 - Length: up to two years. In a two-year contract the second season's salary is the minimum salary for that season.
 - The exception also lets a team acquire minimum-salary players by trade.
+
+----------------------------------------------------------------------
+SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 9
+TOPIC: Minimum salary by years of experience (whole dollars)
+Years,98-99,99-00,00-01,01-02,02-03,03-04,04-05
+0,287500,301875,316969,332817,349458,366931,385277
+1,350000,385000,423500,465850,512435,563679,620046
+2,425000,460000,498500,540850,587435,638679,695046
+3,450000,485000,523500,565850,612435,663679,720046
+4,475000,510000,548500,590850,637435,688679,745046
+5,537500,572500,611000,653350,699935,751179,807546
+6,600000,635000,673500,715850,762435,813679,870046
+7,662500,697500,736000,778350,824935,876179,932546
+8,725000,760000,798500,840850,887435,938679,995046
+9,850000,885000,923500,965850,1000000,1000000,1000000
+10+,1000000,1000000,1000000,1000000,1030000,1070000,1100000
+- For players "who have been in the NBA for five or more seasons and are playing under a one-year, ten-day or rest-of-season contract at the minimum salary", the league pays part of the salary.
+- "Only the four-year minimum is included in the team salary, not the player's full salary." For 2003-04 that amount is 688679.
+- Cross-check: the 0, 1, 2 and 10+ rows for 02-03, 03-04 and 04-05 agree with RealGM's salary cap table. The other cells rest on one reading of this page.
 
 ----------------------------------------------------------------------
 SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 38

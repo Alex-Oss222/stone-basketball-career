@@ -9,7 +9,7 @@ Status: `done`, `next`, `blocked: <what is missing>`, `later`.
 | # | Item | Why it is needed | Status |
 |---|---|---|---|
 | 1 | League contracts and cap ledger | Every team's payroll and cap position | done (stage 1, `runtime/contracts.py`) |
-| 2 | Free-agent cap holds under the 1999 agreement, for Miami | Miami's real cap room depends on them | done: `library/2003/league/nba_1999_cba_rules.json`, `runtime/cba.py`; open: 2003-04 minimum salaries for 3-9 years of service (Eddie House's qualifying offer), and the unverified minimum-contract hold rule |
+| 2 | Free-agent cap holds under the 1999 agreement, for Miami | Miami's real cap room depends on them | done: `library/2003/league/nba_1999_cba_rules.json`, minimum scale, league rights file, `runtime/cba.py`; open: the minimum-contract hold rule (unverified) and the FAQ text for Questions 10 and 22 |
 | 3 | Bird-rights tenure for Miami's expiring players | Decides whom Miami can re-sign over the cap | done: `00_Team/Finances/free_agent_rights.json` (built by `scripts/build_miami_free_agent_rights.py`) |
 | 4 | Miami's June 30 decisions: team options, Carter's player option, qualifying offers | First events on the clock | next |
 | 5 | Wade's rookie contract, with a negotiation log | Wade is unsigned; first user decision | next |
