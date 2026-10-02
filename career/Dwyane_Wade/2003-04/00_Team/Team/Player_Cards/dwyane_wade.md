@@ -52,12 +52,12 @@ Staff estimates against NBA rotation players at the assessment date. Scale: 1–
 | --- | ---: | ---: | ---: |
 | Two-point scoring | 73 | 0.500 | 0.463 |
 | Three-point shooting | 65 | 0.359 | 0.349 |
-| Free throws | 78 | 0.868 | 0.758 |
-| Assist production | 68 | 0.213 | 0.152 |
-| Offensive rebounding | 49 | 0.050 | 0.057 |
-| Defensive rebounding | 44 | 0.124 | 0.143 |
-| Steal production | 72 | 0.023 | 0.017 |
-| Block production | 63 | 0.019 | 0.015 |
+| Free throws | 80 | 0.910 | 0.758 |
+| Assist production | 72 | 0.237 | 0.152 |
+| Offensive rebounding | 50 | 0.052 | 0.057 |
+| Defensive rebounding | 47 | 0.130 | 0.143 |
+| Steal production | 73 | 0.024 | 0.017 |
+| Block production | 66 | 0.021 | 0.015 |
 <!-- rookie-estimate:end -->
 
 ## Changes and coaching notes
