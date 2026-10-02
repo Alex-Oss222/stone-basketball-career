@@ -52,4 +52,4 @@ Game execution may be performed externally, including Relay. A game becomes cano
 
 ## Game engine
 
-Games are resolved by an era-calibrated possession engine whose randomness comes from a private service deployed on Railway. See [runtime/README.md](runtime/README.md) for how it works and how to deploy it.
+Games are played by an era-calibrated possession engine on Railway: commit a game request, push, and the result appears at `/games/<event_id>/box` on the engine's domain. See [runtime/README.md](runtime/README.md).

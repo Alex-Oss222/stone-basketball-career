@@ -4,12 +4,12 @@ ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
 COPY . .
 RUN python scripts/validate_repository.py
 RUN python -m unittest discover -s tests -v
-RUN python scripts/engine_snapshot.py --write engine_snapshot.txt
 
 FROM python:3.12-slim
 WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 ENGINE_BIND_HOST=0.0.0.0
-COPY --from=verify /app/runtime/__init__.py /app/runtime/packets.py /app/runtime/private_service.py runtime/
+COPY --from=verify /app/runtime/ runtime/
 COPY --from=verify /app/scripts/serve_engine.py scripts/serve_engine.py
-COPY --from=verify /app/engine_snapshot.txt engine_snapshot.txt
+COPY --from=verify /app/career/ career/
+COPY --from=verify /app/library/ library/
 CMD ["python", "scripts/serve_engine.py"]
