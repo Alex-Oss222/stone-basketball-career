@@ -4,7 +4,7 @@ June 26, 2003 · 2003-04 through 2010-11 · AI/GM record
 
 [Open the cap sheet](cap_sheet.md) · [Team hub](../README.md) · [Career checkpoint](../../current_state.json)
 
-The cap sheet starts with $26,269,078 in signed salary schedules and Wade's $2,197,000 unsigned draft hold. Their $28,466,078 subtotal is not complete team salary. Options, holds and other charges still need reconciliation, and the next season's cap is unpublished at this checkpoint.
+The cap sheet records approximately $29.87M in scheduled salary, a $2.197M draft hold and $5.791M in pending options. Ellis’s salary is rounded reporting. Five projected free-agent holds are calculated; two remain unresolved. The next season’s cap is unpublished at this checkpoint.
 
 ## Files
 
@@ -17,10 +17,10 @@ The cap sheet starts with $26,269,078 in signed salary schedules and Wade's $2,1
 
 ## Reading the numbers
 
-The main table uses exact dollars, with one player per row and one season per column. Player names link to their cards. Salary, draft-hold and priced-option subtotals sit beneath the players; contract notes follow the table.
+The main table uses source dollar amounts, with one player per row and one season per column. Player names link to their cards. Salary, draft-hold and priced-option subtotals sit beneath the players; contract notes follow the table.
 
-- **Salary** is an existing contract amount. **PO, TO and ETO** mark conditional years; the projection separates them from the base.
-- **H** marks the unsigned first-round hold. **DR** marks unsigned second-round rights, and **FA** marks a free-agent hold requiring review. Holds are cap allocations, not cash spending.
+- **Salary** is an existing contract amount, including any unprotected portion until an actual waiver. It is not a guarantee total. **PO, TO and ETO** mark conditional years; the projection separates them from the base.
+- **H** marks the unsigned first-round hold. **DR** marks unsigned second-round rights, and **FA** marks a projected free-agent hold if expiring rights are retained. **G** marks amended guarantee terms. **≈** marks a rounded report and every affected subtotal. Holds are cap allocations, not cash spending.
 - A **dash** means no player amount is scheduled for that year. **Zero** is a known subtotal with no scheduled dollars. **? / null** means unresolved, including future total team salary and cap room.
 - **Cap room** requires a published limit and a complete reconciliation. Tax payroll and any tax bill require their own accounting.
 
@@ -36,4 +36,8 @@ The eight-season view rolls forward existing obligations. It does not assume lat
 
 ## Research basis
 
-The supplied payroll screenshots informed the player-by-season matrix, inline option markers, totals and contract notes. [Spotrac's multi-year layout](https://www.spotrac.com/nba/los-angeles-lakers/yearly) provides a further reference. [The 1999 CBA FAQ](https://www.cbafaq.com/salarycap99.htm) supplies era-specific accounting context. Individual contract sources remain beside their terms. [The NBA's 2010 cap announcement](https://pr.nba.com/nba-salary-cap-for-2010-11-season-set-at-58-044-million/) supports the two added archive seasons. Source gaps remain named on the cap sheet.
+The contract audit compares contemporary salary reports with contract histories and the [original 1999 NBA/NBPA agreement](https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf). Sources, calculations and conflicts remain beside each record. The [cap sheet](cap_sheet.md#sources-and-maintenance) links the key evidence.
+
+The audit corrects Johnson to a pending team option, prices all three minimum-contract options, restores Ellis’s existing final year, and aligns Jones’s and Grant’s roster terms with their contracts. Ellis’s exact salary and guarantee rider, the minimum deals’ protected amounts, and House’s conflicting salary reports remain explicit gaps. No subsequent option exercise, waiver, signing or trade is imported.
+
+The supplied payroll references continue to determine the layout: player rows, eight season columns, subtotals below, then contract notes. The directory and file structure are unchanged.

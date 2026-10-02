@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "owner": "ai_gm",
   "as_of": "2003-06-26",
   "team": "Miami Heat",
@@ -15,7 +15,7 @@
   ],
   "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
   "known_baseline": {
-    "2003-04": 28466078,
+    "2003-04": 32066078,
     "2004-05": 28619114,
     "2005-06": 28912470,
     "2006-07": 15697500,
@@ -25,7 +25,7 @@
     "2010-11": 0
   },
   "conditional_known_amounts": {
-    "2003-04": 4663679,
+    "2003-04": 5791037,
     "2004-05": 0,
     "2005-06": 2461617,
     "2006-07": 15439006,
@@ -35,7 +35,7 @@
     "2010-11": 0
   },
   "conditional_unknown_count": {
-    "2003-04": 1,
+    "2003-04": 0,
     "2004-05": 0,
     "2005-06": 0,
     "2006-07": 0,
@@ -54,16 +54,30 @@
         "2005-06": 14576250,
         "2006-07": 15697500
       },
-      "notes": "Existing seven-year veteran contract. The 2004-05 and 2005-06 figures follow the documented contract salary progression; ESPN later identified the original 2006-07 contract salary as $15,697,500 before a later buyout adjustment.",
+      "notes": "Existing contract ends in 2006-07. The later report is used only to verify the original final-year amount; subsequent transactions are not applied.",
       "sources": [
         "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
-        "https://www.espn.com/nba/dailydime?page=dailydime_070210-11"
+        "https://www.espn.com/nba/dailydime?page=dailydime_070210-11",
+        "https://www.upi.com/Archives/2000/08/01/Jones-Mashburn-in-9-player-deal/6267965102400/",
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt"
       ],
       "amount_kind": {
         "2003-04": "contract_salary",
         "2004-05": "contract_salary",
         "2005-06": "contract_salary",
         "2006-07": "contract_salary"
+      },
+      "signed_date": "2000-08-01",
+      "original_term_seasons": 7,
+      "salary_reconstruction": {
+        "first_year_salary": 8970000,
+        "annual_dollar_raise": 1121250,
+        "method": "Constant contract progression, anchored by the 2002-03 salary and the original 2006-07 salary."
+      },
+      "prior_season_salary": {
+        "season": "2002-03",
+        "amount": 11212500,
+        "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
       }
     },
     {
@@ -80,13 +94,27 @@
       },
       "sources": [
         "https://www.shamsports.com/players/brian-grant",
-        "https://www.latimes.com/archives/la-xpm-2005-jun-15-sp-roster15-story.html"
+        "https://www.latimes.com/archives/la-xpm-2005-jun-15-sp-roster15-story.html",
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt"
       ],
       "amount_kind": {
         "2003-04": "contract_salary",
         "2004-05": "contract_salary",
         "2005-06": "contract_salary",
         "2006-07": "early_termination_option"
+      },
+      "signed_date": "2000-08-30",
+      "original_term_seasons": 7,
+      "salary_reconstruction": {
+        "anchor_season": "2002-03",
+        "anchor_salary": 11027862,
+        "annual_dollar_raise_in_remaining_schedule": 1102786,
+        "method": "Remaining salary progression from the contemporary 2002-03 amount to the independently published 2005-06 and 2006-07 amounts. The original seven-year total is not used to infer unverified earlier annual salaries."
+      },
+      "prior_season_salary": {
+        "season": "2002-03",
+        "amount": 11027862,
+        "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
       }
     },
     {
@@ -102,12 +130,57 @@
       },
       "sources": [
         "https://www.shamsports.com/players/caron-butler",
-        "https://www.latimes.com/archives/la-xpm-2005-jun-15-sp-roster15-story.html"
+        "https://www.latimes.com/archives/la-xpm-2005-jun-15-sp-roster15-story.html",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf",
+        "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003"
       ],
       "amount_kind": {
         "2003-04": "contract_salary",
         "2004-05": "contract_salary",
         "2005-06": "team_option"
+      },
+      "signed_date": "2002-07-02",
+      "original_term_seasons": 4,
+      "notes": "2002 No. 10 rookie-scale contract at 120%: three signed seasons, followed by a fourth-year team option. No later extension is scheduled.",
+      "prior_season_salary": {
+        "season": "2002-03",
+        "amount": 1678800,
+        "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
+      }
+    },
+    {
+      "player": "LaPhonso Ellis",
+      "status": "under_contract_guarantee_amended",
+      "signed_date": "2001-07-28",
+      "original_term_seasons": 3,
+      "schedule": {
+        "2003-04": 3600000
+      },
+      "amount_kind": {
+        "2003-04": "contract_salary"
+      },
+      "amount_precision": {
+        "2003-04": "reported_rounded"
+      },
+      "guarantee": {
+        "status": "guarantee_trigger_amended",
+        "amendment_report_date": "2003-01-31",
+        "protected_amount_2003_04": null,
+        "note": "Contemporary report describes removal of the February 14 active-roster guarantee trigger. Exact amended protection and waiver deadline require the contract rider."
+      },
+      "conditions": {
+        "2003-04": "Existing final contract year remains scheduled until an actual transaction. Guarantee amendment is not recorded as a formal team option."
+      },
+      "notes": "The published $3.6 million is rounded reporting, not a verified dollar-exact salary. Subtotals containing it inherit that limitation. Not an expired contract or free-agent hold on June 26.",
+      "sources": [
+        "https://www.deseret.com/2001/7/29/19598721/laphonso-ellis-inks-3-year-deal-with-heat/",
+        "https://basketball.realgm.com/wiretap/151255/Likely-dilemma-Zo-or-Grant",
+        "https://www.rotowire.com/basketball/player/laphonso-ellis-1443"
+      ],
+      "prior_season_salary": {
+        "season": "2002-03",
+        "amount": 3100000,
+        "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
       }
     },
     {
@@ -124,6 +197,11 @@
       ],
       "amount_kind": {
         "2003-04": "player_option"
+      },
+      "prior_season_salary": {
+        "season": "2002-03",
+        "amount": 3656250,
+        "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
       }
     },
     {
@@ -133,30 +211,105 @@
         "2003-04": 563679
       },
       "conditions": {
-        "2003-04": "2003-04 team option exists but has not yet been exercised at the June 26 checkpoint."
+        "2003-04": "Team option; June 30 decision pending at this checkpoint. Exercise does not establish a fully guaranteed salary."
       },
       "sources": [
         "https://www.shamsports.com/players/rasual-butler",
-        "https://basketball.realgm.com/nba/info/salary_cap"
+        "https://basketball.realgm.com/nba/info/salary_cap",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
       ],
       "amount_kind": {
         "2003-04": "team_option"
+      },
+      "minimum_salary_basis": {
+        "season": "2003-04",
+        "years_of_service": 1,
+        "amount": 563679,
+        "rule": "1999 NBA/NBPA CBA Exhibit C; second year of an existing minimum-salary contract."
+      },
+      "guarantee": {
+        "status": "partially_guaranteed_contract",
+        "protected_amount_2003_04": null,
+        "note": "Archive identifies a partially guaranteed contract; protection amount and trigger dates are not verified."
+      },
+      "original_term_seasons": 2,
+      "notes": "Option salary derived from the historical minimum scale, not a later signing or an assumed exercise.",
+      "prior_season_salary": {
+        "season": "2002-03",
+        "amount": 349458,
+        "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
       }
     },
     {
       "player": "Sean Lampley",
       "status": "team_option_pending",
       "schedule": {
-        "2003-04": null
+        "2003-04": 563679
       },
       "conditions": {
-        "2003-04": "2003-04 team option exists. Exact option salary is left unresolved rather than guessed."
+        "2003-04": "Team option; June 30 decision pending at this checkpoint. Exercise does not establish a fully guaranteed salary."
       },
       "sources": [
-        "https://www.shamsports.com/players/sean-lampley"
+        "https://www.shamsports.com/players/sean-lampley",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
       ],
       "amount_kind": {
         "2003-04": "team_option"
+      },
+      "minimum_salary_basis": {
+        "season": "2003-04",
+        "years_of_service": 1,
+        "amount": 563679,
+        "rule": "1999 NBA/NBPA CBA Exhibit C; second year of an existing minimum-salary contract."
+      },
+      "guarantee": {
+        "status": "partially_guaranteed_contract",
+        "protected_amount_2003_04": null,
+        "note": "Archive identifies a partially guaranteed contract; protection amount and trigger dates are not verified."
+      },
+      "original_term_seasons": 2,
+      "signed_date": "2002-09-29",
+      "notes": "Option salary derived from the historical minimum scale, not a later signing or an assumed exercise.",
+      "prior_season_salary": {
+        "season": "2002-03",
+        "amount": 349458,
+        "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
+      }
+    },
+    {
+      "player": "Ken Johnson",
+      "status": "team_option_pending",
+      "schedule": {
+        "2003-04": 563679
+      },
+      "conditions": {
+        "2003-04": "Team option; June 30 decision pending at this checkpoint. Exercise does not establish a fully guaranteed salary."
+      },
+      "sources": [
+        "https://www.shamsports.com/players/ken-johnson",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+      ],
+      "amount_kind": {
+        "2003-04": "team_option"
+      },
+      "minimum_salary_basis": {
+        "season": "2003-04",
+        "years_of_service": 1,
+        "amount": 563679,
+        "rule": "1999 NBA/NBPA CBA Exhibit C; second year of an existing minimum-salary contract."
+      },
+      "guarantee": {
+        "status": "partially_guaranteed_contract",
+        "protected_amount_2003_04": null,
+        "note": "Archive identifies a partially guaranteed contract; protection amount and trigger dates are not verified."
+      },
+      "original_term_seasons": 2,
+      "signed_date": "2002-09-25",
+      "notes": "Option salary derived from the historical minimum scale, not a later signing or an assumed exercise.",
+      "prior_season_salary": {
+        "season": "2002-03",
+        "amount": 349458,
+        "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
       }
     },
     {
@@ -180,7 +333,8 @@
       "sources": [
         "https://basketball.realgm.com/nba/info/rookie_scale/2004",
         "https://www.cbafaq.com/salarycap99.htm",
-        "https://www.cbafaq.com/scale99.htm"
+        "https://www.cbafaq.com/scale99.htm",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
       ],
       "amount_kind": {
         "2003-04": "draft_hold"
@@ -192,20 +346,22 @@
       "schedule": {
         "2003-04": null
       },
-      "notes": "No signed contract or verified current cap charge is recorded on June 26. No amount is invented.",
+      "notes": "Unsigned second-round rights carry no individual draft hold under Article VII Section 4. Signed salary is still unknown; any incomplete-roster charge is separate.",
       "amount_kind": {
         "2003-04": "unsigned_rights"
-      }
+      },
+      "current_cap_hold": 0,
+      "sources": [
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+      ]
     }
   ],
   "expiring_or_unresolved_without_scheduled_2003_04_salary": [
     "Alonzo Mourning",
     "Malik Allen",
     "Travis Best",
-    "LaPhonso Ellis",
     "Eddie House",
     "Mike James",
-    "Ken Johnson",
     "Sean Marks",
     "Vladimir Stepania"
   ],
@@ -215,31 +371,42 @@
     "https://www.shamsports.com/players/rasual-butler",
     "https://www.shamsports.com/players/sean-lampley",
     "https://basketball.realgm.com/nba/info/rookie_scale/2004",
-    "https://www.cbafaq.com/salarycap99.htm"
+    "https://www.cbafaq.com/salarycap99.htm",
+    "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf",
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+    "https://basketball.realgm.com/wiretap/151255/Likely-dilemma-Zo-or-Grant",
+    "https://www.rotowire.com/basketball/player/laphonso-ellis-1443"
   ],
   "projection_basis": {
     "kind": "existing_obligations_only",
     "currency": "USD",
     "unit": "whole dollars",
-    "known_baseline_definition": "Scheduled non-option contract salary plus the recorded unsigned first-round hold. This is a partial subtotal, not certified team salary.",
+    "known_baseline_definition": "Non-option contract amounts plus the unsigned first-round hold; includes Ellis at the rounded reported $3.6M. Not a guarantee total or certified team salary.",
     "conditional_definition": "Priced PO, TO and ETO years shown separately; no exercise or termination decision is assumed.",
     "zero_definition": "No scheduled obligation in this contract inventory. Zero does not forecast a zero-cost roster or available cap space.",
     "missing_definition": "Null means unresolved or not yet projected, never zero.",
-    "future_signings_assumed": false
+    "future_signings_assumed": false,
+    "precision_rule": "reported_rounded amounts and every subtotal containing them must be displayed as approximate.",
+    "free_agent_hold_basis": "Projected for the coming cap year if expiring rights are retained; no July transaction is assumed."
   },
   "projection": [
     {
       "season": "2003-04",
-      "scheduled_contract_salary": 26269078,
+      "scheduled_contract_salary": 29869078,
       "unsigned_first_round_holds": 2197000,
-      "known_conditional_salary": 4663679,
-      "unpriced_option_count": 1,
+      "known_conditional_salary": 5791037,
+      "unpriced_option_count": 0,
       "free_agent_holds": null,
       "other_cap_charges": null,
       "total_team_salary": null,
       "cap_space": null,
-      "known_base_allocations": 28466078,
-      "base_plus_priced_options": 33129757
+      "known_base_allocations": 32066078,
+      "base_plus_priced_options": 37857115,
+      "reported_rounded_salary_count": 1,
+      "subtotal_precision": "includes_rounded_report",
+      "known_free_agent_holds": 5401037,
+      "unpriced_free_agent_hold_count": 2
     },
     {
       "season": "2004-05",
@@ -252,7 +419,11 @@
       "total_team_salary": null,
       "cap_space": null,
       "known_base_allocations": 28619114,
-      "base_plus_priced_options": 28619114
+      "base_plus_priced_options": 28619114,
+      "reported_rounded_salary_count": 0,
+      "subtotal_precision": "whole_dollars",
+      "known_free_agent_holds": null,
+      "unpriced_free_agent_hold_count": null
     },
     {
       "season": "2005-06",
@@ -265,7 +436,11 @@
       "total_team_salary": null,
       "cap_space": null,
       "known_base_allocations": 28912470,
-      "base_plus_priced_options": 31374087
+      "base_plus_priced_options": 31374087,
+      "reported_rounded_salary_count": 0,
+      "subtotal_precision": "whole_dollars",
+      "known_free_agent_holds": null,
+      "unpriced_free_agent_hold_count": null
     },
     {
       "season": "2006-07",
@@ -278,7 +453,11 @@
       "total_team_salary": null,
       "cap_space": null,
       "known_base_allocations": 15697500,
-      "base_plus_priced_options": 31136506
+      "base_plus_priced_options": 31136506,
+      "reported_rounded_salary_count": 0,
+      "subtotal_precision": "whole_dollars",
+      "known_free_agent_holds": null,
+      "unpriced_free_agent_hold_count": null
     },
     {
       "season": "2007-08",
@@ -291,7 +470,11 @@
       "total_team_salary": null,
       "cap_space": null,
       "known_base_allocations": 0,
-      "base_plus_priced_options": 0
+      "base_plus_priced_options": 0,
+      "reported_rounded_salary_count": 0,
+      "subtotal_precision": "whole_dollars",
+      "known_free_agent_holds": null,
+      "unpriced_free_agent_hold_count": null
     },
     {
       "season": "2008-09",
@@ -304,7 +487,11 @@
       "total_team_salary": null,
       "cap_space": null,
       "known_base_allocations": 0,
-      "base_plus_priced_options": 0
+      "base_plus_priced_options": 0,
+      "reported_rounded_salary_count": 0,
+      "subtotal_precision": "whole_dollars",
+      "known_free_agent_holds": null,
+      "unpriced_free_agent_hold_count": null
     },
     {
       "season": "2009-10",
@@ -317,7 +504,11 @@
       "total_team_salary": null,
       "cap_space": null,
       "known_base_allocations": 0,
-      "base_plus_priced_options": 0
+      "base_plus_priced_options": 0,
+      "reported_rounded_salary_count": 0,
+      "subtotal_precision": "whole_dollars",
+      "known_free_agent_holds": null,
+      "unpriced_free_agent_hold_count": null
     },
     {
       "season": "2010-11",
@@ -330,7 +521,186 @@
       "total_team_salary": null,
       "cap_space": null,
       "known_base_allocations": 0,
-      "base_plus_priced_options": 0
+      "base_plus_priced_options": 0,
+      "reported_rounded_salary_count": 0,
+      "subtotal_precision": "whole_dollars",
+      "known_free_agent_holds": null,
+      "unpriced_free_agent_hold_count": null
+    }
+  ],
+  "research_date": "2026-10-02",
+  "research_cutoff": "Contract terms existing by 2003-06-26 only. Later sources reconstruct terms, never later decisions.",
+  "prior_season_salaries": [
+    {
+      "player": "Alonzo Mourning",
+      "season": "2002-03",
+      "amount": 20629800,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
+    },
+    {
+      "player": "Eddie Jones",
+      "season": "2002-03",
+      "amount": 11212500,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
+    },
+    {
+      "player": "Brian Grant",
+      "season": "2002-03",
+      "amount": 11027862,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
+    },
+    {
+      "player": "Anthony Carter",
+      "season": "2002-03",
+      "amount": 3656250,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
+    },
+    {
+      "player": "LaPhonso Ellis",
+      "season": "2002-03",
+      "amount": 3100000,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
+    },
+    {
+      "player": "Caron Butler",
+      "season": "2002-03",
+      "amount": 1678800,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
+    },
+    {
+      "player": "Travis Best",
+      "season": "2002-03",
+      "amount": 1400000,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
+    },
+    {
+      "player": "Vladimir Stepania",
+      "season": "2002-03",
+      "amount": 1350000,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
+    },
+    {
+      "player": "Eddie House",
+      "season": "2002-03",
+      "amount": null,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment.",
+      "reported_candidates": [
+        {
+          "amount": 637435,
+          "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
+        },
+        {
+          "amount": 737000,
+          "precision": "rounded",
+          "source": "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+        },
+        {
+          "amount": 737435,
+          "source": "https://realgm.freeservers.com/",
+          "verification": "search-index excerpt only; full archive unavailable"
+        }
+      ],
+      "notes": "The $737,435 candidate is consistent with the reported qualifying-offer acceptance and the CBA minimum-plus-$150,000 formula. The contemporary salary lists conflict; do not certify an exact prior salary or resulting hold."
+    },
+    {
+      "player": "Sean Marks",
+      "season": "2002-03",
+      "amount": 612435,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
+    },
+    {
+      "player": "Malik Allen",
+      "season": "2002-03",
+      "amount": 512435,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
+    },
+    {
+      "player": "Mike James",
+      "season": "2002-03",
+      "amount": 512435,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
+    },
+    {
+      "player": "Rasual Butler",
+      "season": "2002-03",
+      "amount": 349458,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
+    },
+    {
+      "player": "Sean Lampley",
+      "season": "2002-03",
+      "amount": 349458,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+        "https://www.basketball-reference.com/players/l/lamplse01.html",
+        "https://www.shamsports.com/players/sean-lampley",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment.",
+      "notes": "SBJ lists $512,435. Bender and Basketball-Reference list $349,458, consistent with his first NBA season and the documented minimum contract. Use the latter."
+    },
+    {
+      "player": "Ken Johnson",
+      "season": "2002-03",
+      "amount": 349458,
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+      ],
+      "use": "Historical salary evidence, not a 2003-04 commitment."
     }
   ]
 }

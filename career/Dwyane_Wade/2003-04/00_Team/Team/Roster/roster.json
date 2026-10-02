@@ -65,7 +65,7 @@
       "date_of_birth": "1980-03-13",
       "college": "UConn",
       "status": "under_contract",
-      "control": "Rookie contract signed through 2004-05.",
+      "control": "Rookie contract through 2004-05, plus a 2005-06 team option; 2003-04 salary $1,804,680.",
       "working_role": "2002-03 SF1",
       "player_card": "../Player_Cards/caron_butler.md",
       "bbr_id": "butleca01"
@@ -82,7 +82,7 @@
       "date_of_birth": "1979-05-23",
       "college": "La Salle",
       "status": "team_option_pending",
-      "control": "2003-04 team-option decision has not yet been recorded at this June 26 checkpoint.",
+      "control": "Existing 2003-04 team option at the $563,679 minimum; June 30 decision pending. Contract has partial guarantee terms, exact protection unverified.",
       "working_role": "2002-03 SG2",
       "player_card": "../Player_Cards/rasual_butler.md",
       "bbr_id": "butlera01"
@@ -113,8 +113,8 @@
       "weight_lb": 240,
       "date_of_birth": "1970-05-05",
       "college": "Notre Dame",
-      "status": "expiring_contract",
-      "control": "2002-03 contract reaches June 30; no later waiver/free-agency outcome is imported.",
+      "status": "under_contract_guarantee_amended",
+      "control": "Under contract for 2003-04 at a reported approximately $3.6M. Guarantee trigger amended in January; exact protected amount unverified. No waiver decision recorded.",
       "working_role": "2002-03 PF2",
       "player_card": "../Player_Cards/laphonso_ellis.md",
       "bbr_id": "ellisla01"
@@ -131,7 +131,7 @@
       "date_of_birth": "1972-03-05",
       "college": "Xavier",
       "status": "under_contract",
-      "control": "Contract signed through 2004-05.",
+      "control": "Existing contract runs through 2006-07, with an early-termination option after 2005-06; 2003-04 salary $12,130,648.",
       "working_role": "2002-03 C1",
       "player_card": "../Player_Cards/brian_grant.md",
       "bbr_id": "grantbr01"
@@ -148,7 +148,7 @@
       "date_of_birth": "1978-05-14",
       "college": "Arizona State",
       "status": "expiring_contract",
-      "control": "2002-03 contract reaches June 30.",
+      "control": "Contract expires June 30; 2002-03 salary sources conflict. Exact projected Bird hold remains under review.",
       "working_role": "2002-03 SG3",
       "player_card": "../Player_Cards/eddie_house.md",
       "bbr_id": "houseed01"
@@ -179,8 +179,8 @@
       "weight_lb": 240,
       "date_of_birth": "1978-02-01",
       "college": "Ohio State",
-      "status": "expiring_contract",
-      "control": "2002-03 contract reaches June 30.",
+      "status": "team_option_pending",
+      "control": "Existing 2003-04 team option at the $563,679 minimum; June 30 decision pending. Contract has partial guarantee terms, exact protection unverified.",
       "working_role": "2002-03 C3",
       "player_card": "../Player_Cards/ken_johnson.md",
       "bbr_id": "johnske03"
@@ -197,7 +197,7 @@
       "date_of_birth": "1971-10-20",
       "college": "Temple",
       "status": "under_contract",
-      "control": "Contract signed through 2004-05.",
+      "control": "Existing seven-year contract runs through 2006-07; 2003-04 salary $12,333,750.",
       "working_role": "2002-03 SG1",
       "player_card": "../Player_Cards/eddie_jones.md",
       "bbr_id": "jonesed02"
@@ -213,7 +213,7 @@
       "date_of_birth": "1979-09-03",
       "college": "California",
       "status": "team_option_pending",
-      "control": "2003-04 team-option/control decision has not yet been recorded at this June 26 checkpoint.",
+      "control": "Existing 2003-04 team option at the $563,679 minimum; June 30 decision pending. Contract has partial guarantee terms, exact protection unverified.",
       "working_role": "2002-03 SF2",
       "player_card": "../Player_Cards/sean_lampley.md",
       "bbr_id": "lamplse01"
@@ -263,7 +263,7 @@
       "date_of_birth": "1984-01-17",
       "college": "UConn (simulation canon)",
       "status": "draft_rights_unsigned",
-      "control": "Selected No. 5 overall by Miami on June 26, 2003; unsigned draft rights.",
+      "control": "Unsigned No. 5 draft rights; $2,197,000 hold at 100% of rookie scale. No executed salary yet.",
       "working_role": "Unassigned rookie",
       "player_card": "../Player_Cards/dwyane_wade.md"
     },
@@ -279,7 +279,7 @@
       "date_of_birth": "1980-05-17",
       "college": "North Dakota",
       "status": "draft_rights_unsigned",
-      "control": "Selected No. 33 overall by Miami on June 26, 2003; unsigned draft rights.",
+      "control": "Unsigned No. 33 draft rights; no individual draft cap hold. Contract salary is not yet agreed.",
       "working_role": "Unassigned rookie",
       "player_card": "../Player_Cards/jerome_beasley.md"
     }
@@ -288,6 +288,17 @@
     "https://www.basketball-reference.com/teams/MIA/2003.html",
     "https://www.basketball-reference.com/teams/MIA/2003_transactions.html",
     "https://leadersgroup-sbj-prod.web.arc-cdn.net/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
-    "https://www.nba.com/player/2602/jerome-beasley"
+    "https://www.nba.com/player/2602/jerome-beasley",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+    "https://www.espn.com/nba/columns/stein_marc/1577692.html",
+    "https://www.shamsports.com/players/rasual-butler",
+    "https://www.shamsports.com/players/sean-lampley",
+    "https://basketball.realgm.com/nba/info/rookie_scale/2004",
+    "https://www.cbafaq.com/salarycap99.htm",
+    "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf",
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+    "https://basketball.realgm.com/wiretap/151255/Likely-dilemma-Zo-or-Grant",
+    "https://www.rotowire.com/basketball/player/laphonso-ellis-1443"
   ]
 }

@@ -4,6 +4,8 @@
 **Age at assessment:** 33 · **Height:** 6-10 · **Weight:** 240 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
+**Contract/control:** Contract through 2002-03; no 2002-03 games due illness; expires June 30 unless a new transaction occurs. [Finance record](../../Finances/cap_sheet.md).
+
 ## Scouting report
 
 **Role:** Unavailable at the June 26 checkpoint; no 2003-04 playing role is assigned.
@@ -31,7 +33,7 @@
 - **Assessment evidence:**  
   - [Miami roster/control register](../Roster/roster.json)
   - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
-- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades; current control status: Contract through 2002-03; no 2002-03 games due illness; expires June 30 unless a new transaction occurs.
+- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades.
 
 <!-- yearly-statistics:start -->
 

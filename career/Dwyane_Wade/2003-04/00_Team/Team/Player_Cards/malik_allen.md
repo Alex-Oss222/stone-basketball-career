@@ -10,6 +10,8 @@
 **Age at assessment:** 24 · **Height:** 6-10 · **Weight:** 255 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
+**Contract/control:** 2002-03 contract reaches June 30; future qualifying-offer/free-agency action not yet recorded. [Finance record](../../Finances/cap_sheet.md).
+
 ## Scouting report
 
 **Role:** 2002-03 PF1 is the carried 2002-03 baseline; Miami has not finalized the 2003-04 role.
@@ -60,7 +62,7 @@
   - [Miami roster/control register](../Roster/roster.json)
   - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
   - https://www.basketball-reference.com/players/a/allenma01.html
-- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades; current control status: 2002-03 contract reaches June 30; future qualifying-offer/free-agency action not yet recorded.
+- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades.
 
 <!-- yearly-statistics:start -->
 

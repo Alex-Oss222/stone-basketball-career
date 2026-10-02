@@ -37,7 +37,7 @@ def finance_errors(finance, schedules, history):
     projections=schedules.get("projection",[])
     require(errors,[r.get("season") for r in projections]==CAP_SEASONS,"projection must contain every season once, in order")
     option_kinds={"player_option","team_option","early_termination_option"}
-    totals={year:{"contract_salary":0,"draft_hold":0,"options":0,"unknown_options":0} for year in CAP_SEASONS}
+    totals={year:{"contract_salary":0,"draft_hold":0,"options":0,"unknown_options":0,"rounded":0} for year in CAP_SEASONS}
     for player in schedules.get("players",[]):
         amounts=player.get("schedule",{})
         kinds=player.get("amount_kind",{})
@@ -49,6 +49,11 @@ def finance_errors(finance, schedules, history):
             require(errors,amount is None or type(amount) is int and amount>=0,f"{player.get('player')}: salary must be whole nonnegative dollars or null")
             if year not in totals:
                 continue
+            precision=player.get("amount_precision",{}).get(year,"whole_dollars")
+            require(errors,precision in {"whole_dollars","reported_rounded"},f"{player.get('player')}: unsupported source precision")
+            if precision=="reported_rounded":
+                require(errors,kind=="contract_salary" and type(amount) is int,f"{player.get('player')}: rounded report needs a priced contract salary")
+                totals[year]["rounded"]+=1
             if kind in option_kinds and amount is None:
                 totals[year]["unknown_options"]+=1
             elif type(amount) is int and kind in option_kinds:
@@ -65,7 +70,9 @@ def finance_errors(finance, schedules, history):
         base=t["contract_salary"]+t["draft_hold"]
         expected={"scheduled_contract_salary":t["contract_salary"],"unsigned_first_round_holds":t["draft_hold"],
                   "known_conditional_salary":t["options"],"unpriced_option_count":t["unknown_options"],
-                  "known_base_allocations":base,"base_plus_priced_options":base+t["options"]}
+                  "known_base_allocations":base,"base_plus_priced_options":base+t["options"],
+                  "reported_rounded_salary_count":t["rounded"],
+                  "subtotal_precision":"includes_rounded_report" if t["rounded"] else "whole_dollars"}
         for key,value in expected.items():
             require(errors,row.get(key)==value,f"{year}: {key} does not reconcile to contract inventory")
         for key,value in (("known_baseline",base),("conditional_known_amounts",t["options"]),("conditional_unknown_count",t["unknown_options"])):
@@ -77,13 +84,54 @@ def finance_errors(finance, schedules, history):
     expected_current={"scheduled_contract_salary_subtotal":current["contract_salary"],
                       "known_counted_salary_before_free_agent_holds":current["contract_salary"]+current["draft_hold"],
                       "known_pending_option_salary":current["options"],
-                      "known_base_plus_priced_options":current["contract_salary"]+current["draft_hold"]+current["options"]}
+                      "known_base_plus_priced_options":current["contract_salary"]+current["draft_hold"]+current["options"],
+                      "reported_rounded_salary_count":current["rounded"],
+                      "subtotal_precision":"includes_rounded_report" if current["rounded"] else "whole_dollars"}
     for key,value in expected_current.items():
         require(errors,finance.get(key)==value,f"finance: {key} does not reconcile to contracts")
     components=finance.get("known_current_components",[])
     require(errors,sum(c.get("amount",0) for c in components)==expected_current["known_counted_salary_before_free_agent_holds"],"finance: current component subtotal mismatch")
     holds=finance.get("free_agent_holds",[])
     require(errors,Counter(h.get("player") for h in holds)==Counter(schedules.get("expiring_or_unresolved_without_scheduled_2003_04_salary",[])),"finance: free-agent hold review is incomplete or duplicated")
+    scheduled_names={p.get("player") for p in schedules.get("players",[])}
+    require(errors,not scheduled_names.intersection(h.get("player") for h in holds),"finance: contract or pending option also counted as a free-agent hold")
+    for hold in holds:
+        amount=hold.get("amount")
+        require(errors,amount is None or type(amount) is int and amount>=0,"finance: hold must be whole nonnegative dollars or null")
+        status=hold.get("calculation_status")
+        if status in {"prior_salary_disputed","maximum_salary_limit_pending"}:
+            require(errors,amount is None,f"{hold.get('player')}: unresolved hold cannot be booked")
+        elif status=="minimum_salary_override":
+            require(errors,amount==hold.get("applicable_minimum_cap_amount"),f"{hold.get('player')}: minimum hold does not reconcile")
+        elif status=="derived_from_prior_salary":
+            multiplier={"early_bird":130,"non_bird":120}.get(hold.get("rights_type"))
+            prior=hold.get("prior_season_salary")
+            require(errors,multiplier is not None and type(prior) is int and amount==prior*multiplier//100,
+                    f"{hold.get('player')}: hold must use the 1999 CBA multiplier")
+        else:
+            require(errors,False,f"{hold.get('player')}: unsupported hold calculation status")
+        require(errors,hold.get("effective_no_earlier_than")=="2003-07-01","finance: expiring-contract holds must remain upcoming-year projections")
+        require(errors,hold.get("renouncement_status")=="not_recorded","June 26: no later renouncement may be assumed")
+    priced_holds=sum(h["amount"] for h in holds if type(h.get("amount")) is int)
+    unknown_holds=sum(h.get("amount") is None for h in holds)
+    require(errors,finance.get("known_free_agent_holds_subtotal")==priced_holds,"finance: partial free-agent hold subtotal does not reconcile")
+    require(errors,finance.get("unpriced_free_agent_hold_count")==unknown_holds,"finance: unpriced free-agent hold count does not reconcile")
+    require(errors,"free_agent_hold_total" in finance and finance["free_agent_hold_total"] is None,"finance: incomplete free-agent hold total must remain null")
+    for row in projections:
+        current_year=row.get("season")==CAP_SEASONS[0]
+        require(errors,row.get("known_free_agent_holds")== (priced_holds if current_year else None),f"{row.get('season')}: partial hold projection mismatch")
+        require(errors,row.get("unpriced_free_agent_hold_count")== (unknown_holds if current_year else None),f"{row.get('season')}: unpriced hold projection mismatch")
+    option_rows={p["player"]:(p["amount_kind"][CAP_SEASONS[0]],p["schedule"][CAP_SEASONS[0]])
+                 for p in schedules.get("players",[]) if p.get("amount_kind",{}).get(CAP_SEASONS[0]) in option_kinds}
+    pending=finance.get("pending_control_items",[])
+    require(errors,Counter(p.get("player") for p in pending)==Counter(option_rows.keys()),"finance: pending option register does not match contracts")
+    for item in pending:
+        require(errors,(item.get("type"),item.get("amount"))==option_rows.get(item.get("player")),"finance: pending option amount/type mismatch")
+        require(errors,item.get("status")=="pending" and item.get("deadline")=="2003-06-30","June 26: option decision must remain pending")
+    for p in schedules.get("players",[]):
+        if p.get("status")=="unsigned_second_round_draft_rights":
+            require(errors,p.get("current_cap_hold")==0,"1999 CBA: unsigned second-round rights have no individual draft hold")
+    require(errors,finance.get("era_rules",{}).get("early_bird_hold_multiplier")==1.3,"1999 CBA: Early Bird hold multiplier must be 130%")
     for key in ("live_official_salary_cap","live_official_tax_threshold","cap_space","cap_room","tax_payroll","luxury_tax_bill"):
         require(errors,key in finance and finance[key] is None,f"June 26: {key} must remain unresolved")
     expected_caps=dict(zip(CAP_SEASONS,(43840000,43870000,49500000,53135000,55630000,58680000,57700000,58044000)))
@@ -328,7 +376,7 @@ def validate():
         require(errors,pending.get("Anthony Carter",{}).get("status")=="pending","Anthony Carter option must still be pending on June 26")
         require(errors,finance.get("live_official_salary_cap") is None,"June 26 live official cap must remain unpublished")
         require(errors,finance.get("historical_actual_salary_cap")==43840000,"2003-04 historical actual cap must be $43.84M")
-        require(errors,finance.get("known_counted_salary_before_free_agent_holds")==28466078,"known June 26 counted baseline changed")
+        require(errors,finance.get("known_counted_salary_before_free_agent_holds")==32066078,"June 26 reported baseline must include Ellis's existing contract")
 
     history_path=team/"Finances/league_cap_history.json"
 
@@ -342,7 +390,7 @@ def validate():
     schedules_path=team/"Finances/contract_schedules.json"
     if schedules_path.is_file():
         schedules=json.loads(schedules_path.read_text(encoding="utf-8"))
-        require(errors,schedules.get("known_baseline",{}).get("2003-04")==28466078,"contract schedule baseline mismatch")
+        require(errors,schedules.get("known_baseline",{}).get("2003-04")==32066078,"contract schedule baseline mismatch")
         wade=next((x for x in schedules.get("players",[]) if x.get("player")=="Dwyane Wade"),{})
         require(errors,wade.get("current_cap_hold")==2197000,"Wade unsigned rookie-scale cap hold must be $2.197M")
         if history_path.is_file() and finance_path.is_file():

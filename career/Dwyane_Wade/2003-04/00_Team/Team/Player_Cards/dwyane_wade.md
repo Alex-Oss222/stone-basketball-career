@@ -10,6 +10,8 @@
 **Age at assessment:** 19 · **Height:** 6-6 in shoes · **Weight:** 220 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
+**Contract/control:** Unsigned No. 5 draft rights; $2,197,000 hold at 100% of rookie scale. No executed salary yet. [Finance record](../../Finances/cap_sheet.md).
+
 ## Scouting report
 
 **Role:** Unassigned rookie; Miami has not assigned a 2003-04 rotation role yet.
@@ -72,7 +74,7 @@ Staff estimates against NBA rotation players at the assessment date. Scale: 1–
   - [Dwyane Wade career profile](../../../../Dwyane_Wade_Player_Profile.md)
   - [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json)
   - https://www.basketball-reference.com/players/w/wadedw01.html
-- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades; current control status: Selected No. 5 overall by Miami on June 26, 2003; unsigned draft rights.
+- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades.
 
 <!-- yearly-statistics:start -->
 

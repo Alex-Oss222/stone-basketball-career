@@ -10,6 +10,8 @@
 **Age at assessment:** 23 · **Height:** 6-10 · **Weight:** 237 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
+**Contract/control:** Unsigned No. 33 draft rights; no individual draft cap hold. Contract salary is not yet agreed. [Finance record](../../Finances/cap_sheet.md).
+
 ## Scouting report
 
 **Role:** Unassigned rookie; Miami has not assigned a 2003-04 rotation role yet.
@@ -55,7 +57,7 @@ Staff estimates against NBA rotation players at the assessment date. Scale: 1–
   - [Miami roster/control register](../Roster/roster.json)
   - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
   - https://www.basketball-reference.com/players/b/beaslje01.html
-- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades; current control status: Selected No. 33 overall by Miami on June 26, 2003; unsigned draft rights.
+- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades.
 
 <!-- yearly-statistics:start -->
 

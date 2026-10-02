@@ -10,6 +10,8 @@
 **Age at assessment:** 25 · **Height:** 6-11 · **Weight:** 240 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
+**Contract/control:** Existing 2003-04 team option at the $563,679 minimum; June 30 decision pending. Contract has partial guarantee terms, exact protection unverified. [Finance record](../../Finances/cap_sheet.md).
+
 ## Scouting report
 
 **Role:** 2002-03 C3 is the carried 2002-03 baseline; Miami has not finalized the 2003-04 role.
@@ -60,7 +62,7 @@
   - [Miami roster/control register](../Roster/roster.json)
   - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
   - https://www.basketball-reference.com/players/j/johnske03.html
-- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades; current control status: 2002-03 contract reaches June 30.
+- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades.
 
 <!-- yearly-statistics:start -->
 

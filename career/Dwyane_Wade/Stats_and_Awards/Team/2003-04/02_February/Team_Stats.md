@@ -74,11 +74,11 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Caron Butler | Signed | [Card](../../../../2003-04/00_Team/Team/Player_Cards/caron_butler.md) |
 | Rasual Butler | TO pending | [Card](../../../../2003-04/00_Team/Team/Player_Cards/rasual_butler.md) |
 | Anthony Carter | PO pending | [Card](../../../../2003-04/00_Team/Team/Player_Cards/anthony_carter.md) |
-| LaPhonso Ellis | Expiring | [Card](../../../../2003-04/00_Team/Team/Player_Cards/laphonso_ellis.md) |
+| LaPhonso Ellis | Contract; guarantee amended | [Card](../../../../2003-04/00_Team/Team/Player_Cards/laphonso_ellis.md) |
 | Brian Grant | Signed | [Card](../../../../2003-04/00_Team/Team/Player_Cards/brian_grant.md) |
 | Eddie House | Expiring | [Card](../../../../2003-04/00_Team/Team/Player_Cards/eddie_house.md) |
 | Mike James | Expiring | [Card](../../../../2003-04/00_Team/Team/Player_Cards/mike_james.md) |
-| Ken Johnson | Expiring | [Card](../../../../2003-04/00_Team/Team/Player_Cards/ken_johnson.md) |
+| Ken Johnson | Team option pending | [Card](../../../../2003-04/00_Team/Team/Player_Cards/ken_johnson.md) |
 | Eddie Jones | Signed | [Card](../../../../2003-04/00_Team/Team/Player_Cards/eddie_jones.md) |
 | Sean Lampley | TO pending | [Card](../../../../2003-04/00_Team/Team/Player_Cards/sean_lampley.md) |
 | Sean Marks | Expiring | [Card](../../../../2003-04/00_Team/Team/Player_Cards/sean_marks.md) |

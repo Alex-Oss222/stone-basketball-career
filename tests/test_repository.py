@@ -168,7 +168,8 @@ class InitializedCareerTests(unittest.TestCase):
         finance=json.loads((TEAM/"Finances/finance.json").read_text(encoding="utf-8"))
         self.assertIsNone(finance["live_official_salary_cap"])
         self.assertEqual(finance["historical_actual_salary_cap"],43840000)
-        self.assertEqual(finance["known_counted_salary_before_free_agent_holds"],28466078)
+        self.assertEqual(finance["known_counted_salary_before_free_agent_holds"],32066078)
+        self.assertEqual(finance["subtotal_precision"],"includes_rounded_report")
         schedules=json.loads((TEAM/"Finances/contract_schedules.json").read_text(encoding="utf-8"))
         wade=next(x for x in schedules["players"] if x["player"]=="Dwyane Wade")
         self.assertEqual(wade["current_cap_hold"],2197000)
@@ -229,8 +230,46 @@ class FinanceProjectionTests(unittest.TestCase):
         self.assertTrue(any("cap_room must remain unresolved" in e for e in self.errors()))
 
     def test_unpriced_option_must_remain_visible(self):
-        self.schedules["projection"][0]["unpriced_option_count"]=0
+        lampley=next(p for p in self.schedules["players"] if p["player"]=="Sean Lampley")
+        lampley["schedule"]["2003-04"]=None
         self.assertTrue(any("unpriced_option_count" in e for e in self.errors()))
+
+    def test_historical_contract_corrections(self):
+        players={p["player"]:p for p in self.schedules["players"]}
+        roster=json.loads((TEAM/"Team/Roster/roster.json").read_text(encoding="utf-8"))
+        control={p["name"]:p for p in roster["players"]}
+        for name in ("Rasual Butler","Sean Lampley","Ken Johnson"):
+            self.assertEqual(players[name]["schedule"]["2003-04"],563679)
+            self.assertEqual(players[name]["amount_kind"]["2003-04"],"team_option")
+            self.assertEqual(control[name]["status"],"team_option_pending")
+        self.assertEqual(players["LaPhonso Ellis"]["amount_kind"]["2003-04"],"contract_salary")
+        self.assertEqual(players["LaPhonso Ellis"]["amount_precision"]["2003-04"],"reported_rounded")
+        self.assertEqual(control["LaPhonso Ellis"]["status"],"under_contract_guarantee_amended")
+        holds={h["player"]:h["amount"] for h in self.finance["free_agent_holds"]}
+        self.assertEqual(holds,{"Alonzo Mourning":None,"Malik Allen":638679,"Travis Best":1680000,
+            "Eddie House":None,"Mike James":638679,"Sean Marks":688679,"Vladimir Stepania":1755000})
+
+    def test_rounded_salary_cannot_be_presented_as_exact(self):
+        self.schedules["projection"][0]["subtotal_precision"]="whole_dollars"
+        self.assertTrue(any("subtotal_precision" in e for e in self.errors()))
+
+    def test_source_conflict_cannot_silently_become_a_booked_hold(self):
+        house=next(h for h in self.finance["free_agent_holds"] if h["player"]=="Eddie House")
+        house["amount"]=1474870
+        self.assertTrue(any("unresolved hold cannot be booked" in e for e in self.errors()))
+
+    def test_modern_early_bird_multiplier_is_rejected(self):
+        stepania=next(h for h in self.finance["free_agent_holds"] if h["player"]=="Vladimir Stepania")
+        stepania["amount"]=2362500
+        self.assertTrue(any("1999 CBA multiplier" in e for e in self.errors()))
+
+    def test_contract_and_free_agent_hold_cannot_both_count(self):
+        self.finance["free_agent_holds"][0]["player"]="Ken Johnson"
+        self.assertTrue(any("also counted as a free-agent hold" in e for e in self.errors()))
+
+    def test_no_early_option_result(self):
+        self.finance["pending_control_items"][-1]["status"]="declined"
+        self.assertTrue(any("option decision must remain pending" in e for e in self.errors()))
 
 
 if __name__=="__main__":
