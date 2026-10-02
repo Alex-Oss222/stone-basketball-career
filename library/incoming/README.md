@@ -6,3 +6,4 @@ Drop raw league exports here (CSV, TSV, JSON or XLSX), for example season schedu
 
 Careers data (22 Basketball-Reference CSVs): follow [CAREERS_DATA_INSTRUCTIONS.md](CAREERS_DATA_INSTRUCTIONS.md).
 Miami's cap holds and player tenure (roadmap items 2 and 3): follow [MIAMI_CAP_DATA_INSTRUCTIONS.md](MIAMI_CAP_DATA_INSTRUCTIONS.md).
+Team pace (engine problem E6, later): follow [TEAM_PACE_DATA_INSTRUCTIONS.md](TEAM_PACE_DATA_INSTRUCTIONS.md).

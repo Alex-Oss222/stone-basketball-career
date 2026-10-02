@@ -49,7 +49,7 @@ Usage, 3PAr and FTr are tendencies shown separately. True shooting is an efficie
 
 Game requests join on `bbr_id` when supplied. Existing canonical names, normalized snake-case IDs and BRef IDs are also recognized. A known name paired with another player's ID is rejected. Team abbreviations are not used for identity. Explicit player lists may include an optional `bbr_id`; requests cannot supply their own statistical profile.
 
-| Input | Effect in kernel 2003.2 |
+| Input | Effect in kernel 2003.3 |
 | --- | --- |
 | USG% | Relative weight for selecting the player who uses a play |
 | 3PAr | Chance that his field-goal attempt is a three, independent of accuracy |
@@ -61,12 +61,13 @@ Game requests join on `bbr_id` when supplied. Existing canonical names, normaliz
 | ORB%, DRB% | Separate offensive and defensive rebound weights; relative lineup strength changes recovery chances |
 | STL%, BLK% | Relative frequency and allocation of credited steals and blocks |
 | Fouls/minute | Allocation of defensive fouls |
+| DBPM (real careers only) | Defensive value: the five defenders' sum lowers the opponent's make probability and raises its turnovers (`docs/engine_model.md`) |
 
 The engine uses estimated rates, not the 20–80 ranks. For a player with a statistical profile, overlapping legacy skill ratings are rejected to prevent ignored inputs or double counting. Explicit, evidence-based perimeter/interior defense grades remain possible; they are not inferred from steals and blocks. Players without an eligible record retain the existing neutral/explicit-grade fallback, with an empty statistical profile in the frozen packet. A fallback is not evidence that the player is average.
 
-Per-player play weights are `1` for a field-goal attempt, `TOV/FGA` for a turnover, and `FTr * (1 - and_one_share) / 2` for a two-shot trip, normalized by their sum. The and-one share retains the existing provisional 0.12 assumption. Every individual free-throw rate therefore controls volume independently of FT accuracy. This is an approximation: three-shot trips, technical free throws and missed-free-throw rebounds are not explicitly modeled.
+Per-player play weights are `1` for a field-goal attempt, `TOV/FGA` for a turnover, and `FTr * (1 - and_one_share) / 2 * regular_trip_share` for a two-shot trip, normalized by their sum. `regular_trip_share` (0.93 for 2003-04) leaves out the late-game free throws the engine's late-game fouls add back; a player's three-point share is likewise `3PAr * regular_three_share` (0.97), leaving out late-game threes (`docs/engine_model.md`, Late game). The and-one share retains the existing provisional 0.12 assumption. Every individual free-throw rate therefore controls volume independently of FT accuracy. This is an approximation: three-shot trips, technical free throws and missed-free-throw rebounds are not explicitly modeled.
 
-Assists, rebounds, steals and blocks use rates relative to the league baselines. They are opportunity estimates, not literal per-play probabilities: [Basketball-Reference's glossary](https://www.basketball-reference.com/about/glossary.html) defines their different denominators. In this kernel, steals are selected after a turnover, and blocks after a miss. Those production rates do not independently create stops or establish matchup defense. Rebounding is calibrated in aggregate, including a chance of a miss ending without an individual defensive rebound. Fouls affect allocation; total non-shooting foul frequency still comes from the era environment. Pace, lineups and coaching roles can also make simulated averages differ from historical ones.
+Assists, rebounds, steals and blocks use rates relative to the league baselines. They are opportunity estimates, not literal per-play probabilities: [Basketball-Reference's glossary](https://www.basketball-reference.com/about/glossary.html) defines their different denominators. In this kernel, steals are selected after a turnover, and blocks after a miss. Those production rates do not independently create stops or establish matchup defense; team defense comes from the defensive value (DBPM) of real-career profiles, and veteran or rookie estimates without one count as average defenders. Rebounding is calibrated in aggregate, including a chance of a miss ending without an individual defensive rebound. Fouls affect allocation; total non-shooting foul frequency still comes from the era environment. Pace, lineups and coaching roles can also make simulated averages differ from historical ones.
 
 The published 14.9 team turnovers per game exceeds summed individual turnovers, 14.2696 per team game. The 0.6304 gap is treated as **inferred unassigned team turnovers**, including source rounding. It is not charged to individual players. Team totals and box scores identify that difference explicitly.
 
@@ -112,11 +113,12 @@ New draft classes follow the same path: a `library/<year>/league/nba_<year>_pros
 
 The user chose the hybrid model: real players' ability follows their real careers, with simulated development around it. Model `trajectory-hybrid.1`, `runtime/trajectories.py`. The scope rules are in `AGENTS.md` under "Talent-trajectory exception".
 
-- **Expected path.** For each player and season in `library/careers/nba_player_careers.json`, his real rates for that season, shrunk toward the league baseline with the same 300-minute prior as veterans. A low-minute real season therefore says little.
-- **Development swing.** Each rate is multiplied by `exp(spread × z)`. `z` follows a stationary AR(1) per player: full spread in the first season, then half of last season's swing carries over (`PERSISTENCE = 0.5`). Spreads are judgement constants: 2-5% for shooting accuracy, 6-12% for volume and production rates.
+- **Expected path.** For each player and season in `library/careers/nba_player_careers.json`, his real rates for that season, shrunk toward the league baseline with the same 300-minute prior as veterans. A low-minute real season therefore says little. His defensive value is that season's real DBPM shrunk toward 0 (league average) with the same 300-minute prior.
+- **Development swing.** Each rate is multiplied by `exp(spread × z)`. `z` follows a stationary AR(1) per player: full spread in the first season, then half of last season's swing carries over (`PERSISTENCE = 0.5`). Spreads are judgement constants: 2-5% for shooting accuracy, 6-12% for volume and production rates. Defense moves additively, `0.5 × z` points per 100 possessions, drawn last from the same event so the rate draws are unchanged.
+- **Feedback from simulated seasons (capped 20%).** From the second season on, a real player's expected rates are multiplied by `exp(adjust)`, where for each rate `adjust = 0.2 × ln(observed / expected)` from his last simulated season, the observed rate first shrunk toward the expected one with the veteran sample priors, then capped at ± that rate's swing spread. `expected` is what the engine expected for that season before its swing, so a hot or cold simulated season, or a different role, carries a little into the next year. Each season's adjustment replaces the previous one; a player who keeps beating his path settles at about a sixth of the gap, and no adjustment can exceed one season's spread. Every rate is compared relative to the simulated league, so a league-wide level the engine itself adds (late-game threes, say) is nobody's surprise. Because the expectation is taken before the swing, about a sixth of last season's swing also carries through the feedback, on top of the swing's own half. The rollover (roadmap item 18) writes `career/Dwyane_Wade/<season>/trajectory_feedback.json` with `runtime/trajectories.season_feedback` from closed game results; profiles that use it carry its SHA-256 as `feedback_sha256`. There is no feedback for 2003-04, the first simulated season, and none for Wade, whose own update is below. Defense has no feedback because the simulation does not compute DBPM.
 - **Who decides the draw.** The engine journals one `development:<season>:<bbr_id>` event per player and season, exactly like a game, so a swing cannot be chosen or re-rolled. Replays are identical; the developed rates and the draws travel in the frozen game packet and are re-checked.
 - **Priority.** A trajectory replaces the veteran or rookie estimate for that player and season. Players without a trajectory keep their existing estimate. Wade never has one; validation rejects a careers file that includes him.
-- **What it does not cover.** Injuries, minutes and roles are not taken from history; who plays and how much stays a simulated decision. Real careers cut short by injury still describe ability, not availability.
+- **What it does not cover.** Trajectories carry ability only. Minutes and availability of the 28 real clubs come from their real roster on the game's date (world model D, `runtime/rotations.py`): minutes per game played, and games played over the club's games during the player's stint; a traded player is with each club for his stint's part of the season, placed from the order of his stints and his games played, never from transaction dates or results. Miami's minutes and availability are always simulated decisions. Real careers cut short by injury still describe ability, not availability.
 
 ### Careers file
 
@@ -131,14 +133,14 @@ The user chose the hybrid model: real players' ability follows their real career
     "jamesle01": {
       "player_name": "LeBron James",
       "seasons": {
-        "2003-04": {"minutes": 3122, "rates": {"two_point_pct": 0.0, "...": "all 13 engine rate keys"}}
+        "2003-04": {"minutes": 3122, "rates": {"two_point_pct": 0.0, "...": "all 13 engine rate keys"}, "dbpm": -0.9}
       }
     }
   }
 }
 ```
 
-The 13 rate keys are those in `RATE_KEYS` (`runtime/player_stats.py`): two-, three- and free-throw accuracy, three-point and free-throw attempt rates, turnovers per FGA, usage, assist, offensive and defensive rebound, steal and block percentages, and fouls per minute. A rate may be `null` when the source lacks it. Basketball-Reference season tables supply all of them.
+The 13 rate keys are those in `RATE_KEYS` (`runtime/player_stats.py`): two-, three- and free-throw accuracy, three-point and free-throw attempt rates, turnovers per FGA, usage, assist, offensive and defensive rebound, steal and block percentages, and fouls per minute. A rate may be `null` when the source lacks it. Basketball-Reference season tables supply all of them. `dbpm` is the advanced table's Defensive Box Plus/Minus (points per 100 possessions against a league-average defender; `null` when missing, which counts as average).
 
 ## Wade's development
 

@@ -13,12 +13,22 @@ player cards. The protagonist is fictional and never has a trajectory.
 
 The swing draws come from the private engine journal (one event per player and
 season), exactly like game draws, so they cannot be chosen or re-rolled.
+
+Defense: the real season's Defensive Box Plus/Minus (DBPM, points per 100
+possessions against a league-average defender), shrunk toward average by
+minutes, is the expected defensive value; the swing moves it additively.
+
+Feedback: from the second simulated season on, a real player's expected rates
+may carry 20% of his last simulated season's surprise (simulated rates against
+that season's expected rates), shrunk by sample size and capped at one season's
+swing spread. Each season's adjustment replaces the last one, so it cannot
+accumulate. It reads only closed simulated results.
 """
 import hashlib
 import math
 from pathlib import Path
 
-from .player_stats import PRIOR_MINUTES, RATE_KEYS, ROOT, read_json, sha256
+from .player_stats import PRIOR_ATTEMPTS, PRIOR_MINUTES, RATE_KEYS, ROOT, read_json, sha256
 
 TRAJECTORY_MODEL_VERSION = "trajectory-hybrid.1"
 CAREERS_PATH = Path("library/careers/nba_player_careers.json")
@@ -34,6 +44,11 @@ SPREAD = {
     "steal_pct": 0.10, "block_pct": 0.12, "fouls_per_minute": 0.08,
 }
 CAPS = {"free_throw_attempt_rate": 10, "turnovers_per_fga": 10, "fouls_per_minute": 10}
+# Defense (DBPM scale): additive swing in points per 100 possessions, a judgement constant.
+DEFENSE_SPREAD = 0.5
+DBPM_LIMIT = 50                  # raw DBPM of tiny samples can reach about +-30
+FEEDBACK_SHARE = 0.2             # share of last simulated season's surprise carried into the next
+FEEDBACK_KIND = "trajectory_feedback"
 
 
 def season_list(first, last):
@@ -52,9 +67,13 @@ def careers_errors(data):
         if bbr_id in PROTAGONIST_IDS:
             errors.append(f"{bbr_id}: the protagonist is alternate history and cannot have a real trajectory")
         for season, row in player.get("seasons", {}).items():
-            if set(row) != {"minutes", "rates"} or set(row["rates"]) != set(RATE_KEYS):
-                errors.append(f"{bbr_id} {season}: needs minutes and exactly the engine rate keys")
+            if set(row) != {"minutes", "rates", "dbpm"} or set(row["rates"]) != set(RATE_KEYS):
+                errors.append(f"{bbr_id} {season}: needs minutes, dbpm and exactly the engine rate keys")
                 continue
+            dbpm = row["dbpm"]
+            if dbpm is not None and (isinstance(dbpm, bool) or not isinstance(dbpm, (int, float))
+                                     or not math.isfinite(dbpm) or abs(dbpm) > DBPM_LIMIT):
+                errors.append(f"{bbr_id} {season}: invalid dbpm")
             for key, value in row["rates"].items():
                 if value is not None and not (isinstance(value, (int, float)) and 0 <= value <= CAPS.get(key, 1)):
                     errors.append(f"{bbr_id} {season}: invalid {key}")
@@ -69,6 +88,13 @@ def expected_rates(row, baselines):
     return {key: (baselines[key] if value is None else
                   (value * minutes + baselines[key] * PRIOR_MINUTES) / (minutes + PRIOR_MINUTES))
             for key, value in row["rates"].items()}
+
+
+def expected_defense(row):
+    """Real DBPM shrunk toward league average (0) by minutes; a missing value is average."""
+    if row.get("dbpm") is None:
+        return 0.0
+    return row["dbpm"] * row["minutes"] / (row["minutes"] + PRIOR_MINUTES)
 
 
 def _normals(ref, count):
@@ -107,15 +133,18 @@ def development_refs(journal, bbr_id, season):
     return {s: journal.close_event(development_packet(bbr_id, s)) for s in development_seasons(bbr_id, season)}
 
 
+SWING_KEYS = RATE_KEYS + ("defense",)   # appended last, so the rate draws are unchanged
+
+
 def swings(refs):
-    """Persistent log-scale swing per rate for the latest season in `refs`."""
+    """Persistent standard-normal swing per rate (and defense) for the latest season in `refs`."""
     z = None
     for season in sorted(refs):
-        draw = _normals(refs[season], len(RATE_KEYS))
+        draw = _normals(refs[season], len(SWING_KEYS))
         # Stationary AR(1): full spread in the first season, PERSISTENCE carry-over afterwards.
         z = draw if z is None else [PERSISTENCE * old + math.sqrt(1 - PERSISTENCE ** 2) * new
                                     for old, new in zip(z, draw)]
-    return dict(zip(RATE_KEYS, z))
+    return dict(zip(SWING_KEYS, z))
 
 
 def develop(rates, refs):
@@ -127,21 +156,131 @@ def develop(rates, refs):
     return out
 
 
+def develop_profile(profile, refs):
+    """The profile moved by its journaled swings: rates multiplicatively, defense additively."""
+    out = dict(profile, rates=develop(profile["rates"], refs), development=refs)
+    if "defense" in profile:
+        out["defense"] = profile["defense"] + DEFENSE_SPREAD * swings(refs)["defense"]
+    return out
+
+
+def _shrunk(observed, expected, sample, prior):
+    return (observed * sample + expected * prior) / (sample + prior)
+
+
+def feedback_adjustments(expected, observed, samples):
+    """Log-scale shift per rate for a real player's next season.
+
+    `expected` are the rates the engine expected for the simulated season (before
+    its swing), `observed` his simulated rates from closed results, `samples` their
+    sample sizes. The observed rate is first shrunk toward the expectation with
+    the veteran-model priors, so a short season moves him little; 20% of the
+    remaining log surprise is kept, capped at one season's swing spread.
+    """
+    out = {}
+    for key in RATE_KEYS:
+        value, base = observed.get(key), expected[key]
+        if value is None or base <= 0 or not samples.get(key):
+            out[key] = 0.0
+            continue
+        shrunk = _shrunk(value, base, samples[key], PRIOR_ATTEMPTS.get(key, PRIOR_MINUTES))
+        shift = FEEDBACK_SHARE * math.log(max(shrunk, 1e-9) / base)
+        out[key] = max(-SPREAD[key], min(SPREAD[key], shift))
+    return out
+
+
+def apply_feedback(rates, adjustments):
+    return {key: min(value * math.exp(adjustments.get(key, 0.0)), 0.99 if CAPS.get(key, 1) == 1 else CAPS[key])
+            for key, value in rates.items()}
+
+
+RAW_KEYS = ("two_point_pct", "three_point_pct", "free_throw_pct", "three_point_attempt_rate",
+            "free_throw_attempt_rate", "turnovers_per_fga", "fouls_per_minute")
+
+
+def season_feedback(lines_by_player, expected_by_player, baselines, from_season, applies_to):
+    """Feedback file content from a closed simulated season (run at rollover, roadmap item 18).
+
+    `lines_by_player`: bbr_id -> that player's box-score lines from every closed game.
+    `expected_by_player`: bbr_id -> the rates the engine expected for him that season before
+    its swing, i.e. `expected_profile(...)["rates"]` including that season's own feedback.
+    League per-minute rates come from the same simulated games.
+    """
+    from .protagonist import BOX_KEYS, observed_rates, season_totals
+    every = [line for lines in lines_by_player.values() for line in lines]
+    league = {k: sum(line[k] for line in every) for k in BOX_KEYS}
+    minutes = league["seconds"] / 60
+    per_minute = {"usage": (league["fga"] + .44 * league["fta"] + league["tov"]) / minutes,
+                  "assists": league["ast"] / minutes, "offensive_rebounds": league["orb"] / minutes,
+                  "defensive_rebounds": league["drb"] / minutes, "steals": league["stl"] / minutes,
+                  "blocks": league["blk"] / minutes}
+    seen = {}
+    for bbr_id, lines in sorted(lines_by_player.items()):
+        if bbr_id in PROTAGONIST_IDS or bbr_id not in expected_by_player:
+            continue
+        totals = season_totals(lines)
+        seen[bbr_id] = (totals, *observed_rates(totals, baselines, per_minute))
+    # Production rates are already relative to the simulated league. The others are made relative
+    # too: a league-wide level the engine adds (late-game threes and fouls, say) is nobody's surprise.
+    level = {}
+    for key in RAW_KEYS:
+        pairs = [(observed[key], expected_by_player[b][key], samples[key]) for b, (_, observed, samples) in seen.items()
+                 if observed[key] is not None and samples[key]]
+        weight = sum(n for _, _, n in pairs)
+        level[key] = (sum(o * n for o, _, n in pairs) / sum(e * n for _, e, n in pairs)) if weight else 1.0
+    players = {}
+    for bbr_id, (totals, observed, samples) in seen.items():
+        relative = {k: (v / level[k] if k in level and v is not None and level[k] > 0 else v) for k, v in observed.items()}
+        players[bbr_id] = {"minutes": round(totals["seconds"] / 60, 1),
+                           "adjust": feedback_adjustments(expected_by_player[bbr_id], relative, samples)}
+    return {"schema_version": 1, "kind": FEEDBACK_KIND, "from_season": from_season, "applies_to": applies_to,
+            "share": FEEDBACK_SHARE, "source": "closed simulated game results of the from_season",
+            "players": players}
+
+
+def feedback_errors(data):
+    if not isinstance(data, dict):
+        return ["feedback file must be a JSON object"]
+    if data.get("kind") != FEEDBACK_KIND or data.get("share") != FEEDBACK_SHARE or not isinstance(data.get("players"), dict):
+        return ["feedback file must have kind trajectory_feedback, the current share and a players object"]
+    errors = []
+    for bbr_id, entry in data["players"].items():
+        if bbr_id in PROTAGONIST_IDS:
+            errors.append(f"{bbr_id}: the protagonist has his own season update, not real-player feedback")
+        adjust = entry.get("adjust") if isinstance(entry, dict) else None
+        if not isinstance(adjust, dict) or set(adjust) != set(RATE_KEYS) or any(
+                isinstance(v, bool) or not isinstance(v, (int, float)) or not abs(v) <= SPREAD[k] + 1e-12
+                for k, v in adjust.items()):
+            errors.append(f"{bbr_id}: adjustments must cover every rate with finite values within the cap")
+    return errors
+
+
 class Trajectories:
-    def __init__(self, data, data_hash):
+    def __init__(self, data, data_hash, feedback=None, feedback_hash=None):
         self.data, self.hash = data, data_hash
+        self.feedback, self.feedback_hash = feedback, feedback_hash
 
     def has(self, bbr_id, season):
         return season in self.data["players"].get(bbr_id, {}).get("seasons", {})
 
     def expected_profile(self, bbr_id, season, baselines):
         row = self.data["players"][bbr_id]["seasons"][season]
-        return {"bbr_id": bbr_id, "model_version": TRAJECTORY_MODEL_VERSION, "as_of": season,
-                "season_end_year": int(season[:4]) + 1, "source_sha256": self.hash,
-                "rates": expected_rates(row, baselines)}
+        profile = {"bbr_id": bbr_id, "model_version": TRAJECTORY_MODEL_VERSION, "as_of": season,
+                   "season_end_year": int(season[:4]) + 1, "source_sha256": self.hash,
+                   "rates": expected_rates(row, baselines), "defense": expected_defense(row)}
+        entry = (self.feedback or {}).get("players", {}).get(bbr_id)
+        if entry and self.feedback.get("applies_to") == season:
+            profile["rates"] = apply_feedback(profile["rates"], entry["adjust"])
+            profile["feedback_sha256"] = self.feedback_hash
+        return profile
 
 
-def load_trajectories(root=ROOT):
+def feedback_path(season):
+    """Feedback for `season`, written at rollover from the season before (simulation-owned)."""
+    return Path(f"career/Dwyane_Wade/{season}/trajectory_feedback.json")
+
+
+def load_trajectories(root=ROOT, season=None):
     path = Path(root) / CAREERS_PATH
     if not path.exists():
         return None
@@ -149,7 +288,14 @@ def load_trajectories(root=ROOT):
     errors = careers_errors(data)
     if errors:
         raise ValueError("; ".join(errors[:5]))
-    return Trajectories(data, sha256(path))
+    feedback = feedback_hash = None
+    if season is not None and (Path(root) / feedback_path(season)).exists():
+        feedback = read_json(Path(root) / feedback_path(season))
+        errors = feedback_errors(feedback)
+        if errors or feedback.get("applies_to") != season or season_list(FIRST_SEASON, season)[-2:-1] != [feedback.get("from_season")]:
+            raise ValueError(f"{feedback_path(season)}: " + "; ".join(errors or ["wrong seasons"]))
+        feedback_hash = sha256(Path(root) / feedback_path(season))
+    return Trajectories(data, sha256(path), feedback, feedback_hash)
 
 
 def trajectory_errors(root=ROOT):

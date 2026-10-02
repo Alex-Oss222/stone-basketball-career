@@ -1,0 +1,128 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "kind": "miami_holdings",
+ "season": "2003-04",
+ "purpose": "Dated record of the players simulated Miami holds, read by conflict rule 2 (AGENTS.md): a real club's rotation leaves out every player held on the game's date. `from` and `until` are dates; `until` is the first date he is no longer held (null while held). Entries are appended, or given an `until` on or after the career date; dates already passed never change, so played games keep their inputs.",
+ "entries": [
+  {
+   "player": "Alonzo Mourning",
+   "bbr_id": "mournal01",
+   "from": "2003-06-26",
+   "until": "2003-07-01",
+   "basis": "2002-03 contract ends June 30, 2003"
+  },
+  {
+   "player": "Malik Allen",
+   "bbr_id": "allenma01",
+   "from": "2003-06-26",
+   "until": "2003-07-01",
+   "basis": "2002-03 contract ends June 30, 2003"
+  },
+  {
+   "player": "Travis Best",
+   "bbr_id": "besttr01",
+   "from": "2003-06-26",
+   "until": "2003-07-01",
+   "basis": "2002-03 contract ends June 30, 2003"
+  },
+  {
+   "player": "Caron Butler",
+   "bbr_id": "butleca01",
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "under contract"
+  },
+  {
+   "player": "Rasual Butler",
+   "bbr_id": "butlera01",
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "held until the June 30 team-option decision; closed then if declined"
+  },
+  {
+   "player": "Anthony Carter",
+   "bbr_id": "cartean01",
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "held until his June 30 player-option decision; closed then if he declines"
+  },
+  {
+   "player": "LaPhonso Ellis",
+   "bbr_id": "ellisla01",
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "under contract"
+  },
+  {
+   "player": "Brian Grant",
+   "bbr_id": "grantbr01",
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "under contract"
+  },
+  {
+   "player": "Eddie House",
+   "bbr_id": "houseed01",
+   "from": "2003-06-26",
+   "until": "2003-07-01",
+   "basis": "2002-03 contract ends June 30, 2003"
+  },
+  {
+   "player": "Mike James",
+   "bbr_id": "jamesmi01",
+   "from": "2003-06-26",
+   "until": "2003-07-01",
+   "basis": "2002-03 contract ends June 30, 2003"
+  },
+  {
+   "player": "Ken Johnson",
+   "bbr_id": "johnske03",
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "held until the June 30 team-option decision; closed then if declined"
+  },
+  {
+   "player": "Eddie Jones",
+   "bbr_id": "jonesed02",
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "under contract"
+  },
+  {
+   "player": "Sean Lampley",
+   "bbr_id": "lamplse01",
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "held until the June 30 team-option decision; closed then if declined"
+  },
+  {
+   "player": "Sean Marks",
+   "bbr_id": "marksse01",
+   "from": "2003-06-26",
+   "until": "2003-07-01",
+   "basis": "2002-03 contract ends June 30, 2003"
+  },
+  {
+   "player": "Vladimir Stepania",
+   "bbr_id": "stepavl01",
+   "from": "2003-06-26",
+   "until": "2003-07-01",
+   "basis": "2002-03 contract ends June 30, 2003"
+  },
+  {
+   "player": "Dwyane Wade",
+   "bbr_id": null,
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "draft rights"
+  },
+  {
+   "player": "Jerome Beasley",
+   "bbr_id": null,
+   "from": "2003-06-26",
+   "until": null,
+   "basis": "draft rights"
+  }
+ ]
+}
