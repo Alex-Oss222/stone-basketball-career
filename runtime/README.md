@@ -2,13 +2,14 @@
 
 Kernel `2003.1`, schema `1`.
 
-## How a game is resolved
+## How a game gets played
 
-1. `runtime.game_runner.run_game(home, away, event_id=..., game_date=...)` validates both clubs against the season's era rules and freezes a canonical packet. Bad inputs fail here, before anything is journaled.
-2. The packet's SHA-256 and event id go to the private engine-state service on Railway (`/events/close`). The service journals that identity, then returns an opaque reference derived from a secret career seed it never discloses.
-3. The local kernel turns that reference into entropy and plays the game possession by possession.
+1. A game request file, `Game_N.request.json`, is committed next to its `Game_N.md` note (format in `runtime/game_requests.py`). Repository validation checks every request, so a bad one fails the build and never deploys.
+2. Pushing to the branch Railway tracks rebuilds the engine. On startup it plays every request it has not played before and keeps the result on the volume.
+3. The result is public at `https://<railway-domain>/games/<event_id>/box` (box score) and `/games/<event_id>` (full JSON). `/games` lists every request and its status.
+4. The result becomes canonical only when it is written into the game note and committed.
 
-The same event with the same packet always returns the same game. The same event with any changed input is refused (`altered packet refused`), so a result cannot be re-rolled by editing a rotation or a rating after the fact. `run_game` has no seed parameter, and `architecture_errors()` checks that closure always precedes the draw.
+Before a game is drawn, its event id and the SHA-256 of its inputs are journaled with the secret career seed on the Railway volume. Re-deploying replays a played game identically. Editing a played game's request is refused (`altered packet refused`, shown in `/games`) and the original result stays, so a result cannot be re-rolled. `run_game` has no seed parameter, and `architecture_errors()` checks that the journal entry always precedes the draw.
 
 ## Era
 
@@ -31,17 +32,16 @@ Rotation follows each player's minute target (sum 240). Six fouls disqualify. Ov
 
 ## Railway deployment
 
-The service (`runtime/private_service.py`, entry point `scripts/serve_engine.py`) uses only the Python standard library. `railway.json` points Railway at `Dockerfile.engine`, whose first stage runs repository validation and the full test suite, so a failing check blocks the deploy.
+`railway.json` points Railway at `Dockerfile.engine`, whose first stage runs repository validation and the full test suite, so a failing check blocks the deploy. The service uses only the Python standard library.
 
-One-time setup in Railway:
+One-time setup (already done for this repository):
 
-1. New project, deploy from the GitHub repository. The Railway GitHub App must be installed on the repository (not only authorized for login), or auto-deploy from `main` is unavailable.
-2. Add a volume to the service mounted at `/data`. The career seed and journal live there; losing the volume loses the ability to reproduce closed games.
-3. Set the variable `ENGINE_API_TOKEN` to a random string of at least 32 characters, for example `python -c "import secrets; print(secrets.token_urlsafe(48))"`. Optional: `ENGINE_DATABASE_PATH` (default `/data/engine.sqlite3`).
-4. Generate a public domain under the service's networking settings.
+1. Railway project deploying this repository's tracked branch, with the Railway GitHub App installed on the repository.
+2. A volume mounted at `/data`. It holds the career seed and every result; losing it means played games can no longer be reproduced. Turn on volume backups if the plan offers them.
+3. Variable `ENGINE_API_TOKEN`, at least 32 random characters. It protects `/ready` and `/corrections` only; results are public.
+4. Optional: variable `RAILWAY_DOCKERFILE_PATH=Dockerfile.engine`, so Railway never falls back to automatic detection.
+5. A generated public domain.
 
-Locally, export `ENGINE_RUNTIME_URL` (the Railway domain, with `https://`) and `ENGINE_API_TOKEN`, then run `python scripts/check_engine_readiness.py`. No secret belongs in Git.
+After that there is nothing to run locally. The deploy log lists each request as `played`, `already_played` or `error`.
 
-## Snapshot binding
-
-The service binds to the SHA-256 of the live `current_state.json`. The image computes it at build time. When a merged change to the current state reaches Railway, the new image starts **locked**: `/ready` reports `snapshot_advance_pending` and game closure is refused until `python scripts/advance_engine_snapshot.py "<checkpoint>"` is run from a merged `main` checkout. That compare-and-swap is journaled; the stored snapshot is never overwritten at startup. A kernel version change is journaled the same way (`kernel_transitions`) and does not alter the seed or any closed event.
+A kernel version change is journaled in `kernel_transitions` and does not alter the seed or any played game.

@@ -283,6 +283,12 @@ def validate():
         for game in rdir.glob("Game_*.md"):
             validate_game(game,errors)
 
+    from runtime.game_requests import find_requests, request_errors
+    errors.extend(request_errors(ROOT))
+    for request in find_requests(ROOT):
+        note=request.with_name(request.name.replace(".request.json",".md"))
+        require(errors,note.is_file(),f"{request.relative_to(ROOT)}: no matching game note {note.name}")
+
     return errors
 
 

@@ -80,7 +80,7 @@ Relay or another runner may simulate a game, but raw external output is not cano
 
 ## Game engine
 
-Every game, Wade's or a background game, goes through `runtime.game_runner.run_game`. Never pass a seed, never resolve a game with the kernel directly, and never edit a closed game's inputs to get a different result. Do not use a season's own final averages to calibrate it. Engine output is canonical only after it is written into the game record. See `runtime/README.md`.
+Games are played by the engine on Railway. To play a game, write `Game_N.request.json` next to the scheduled `Game_N.md` (format in `runtime/game_requests.py`), validate, commit and push to the branch Railway tracks. Read the result from `/games/<event_id>/box` and write it into the game note; it is canonical only then. Never pass a seed, never resolve a game with the kernel directly, and never edit a played game's request to get a different result. Do not use a season's own final averages to calibrate it. See `runtime/README.md`.
 
 ## After an event
 

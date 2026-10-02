@@ -7,18 +7,20 @@ import unittest
 from http.server import ThreadingHTTPServer
 from pathlib import Path
 from unittest import mock
+from urllib.error import HTTPError
+from urllib.request import Request, urlopen
 
 from runtime import KERNEL_VERSION, private_service
+from runtime.boxscore import render
+from runtime.game_requests import request_errors
 from runtime.era import allowed_game_types, environment_for, rules_for, season_for_date
-from runtime.game_runner import architecture_errors, build_game_packet, run_game
+from runtime.game_runner import architecture_errors, build_game_packet
 from runtime.kernel import PlayerInput, TeamInput, resolve_game, validate_result
 from runtime.league import baseline_team, load_clubs
-from runtime.private_client import Client, EngineUnavailable
-from runtime.private_service import Store, handler
+from runtime.private_service import Store, handler, play_requests
 
 ROOT = Path(__file__).resolve().parents[1]
 TOKEN = "t" * 40
-SNAPSHOT = "a" * 64
 GAME_DATE = "2003-10-28"
 
 
@@ -104,10 +106,31 @@ class KernelTests(unittest.TestCase):
                            statistics.mean(r["final_score"]["home"] for r in base) + 5)
 
 
-class ServiceHarness(unittest.TestCase):
+REQUEST = {
+    "event_id": "2003-10-28-orl-at-mia",
+    "game_date": GAME_DATE,
+    "game_type": "regular",
+    "venue": "home",
+    "home": {"team": "Miami Heat", "baseline": "library/2003/league/nba_2003_end_of_season.json"},
+    "away": {"team": "Orlando Magic", "baseline": "library/2003/league/nba_2003_end_of_season.json"},
+}
+
+
+class EngineHarness(unittest.TestCase):
+    """A throwaway repository with the real library and one game request."""
+
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
-        self.db = Path(self.tmp.name) / "engine.sqlite3"
+        self.root = Path(self.tmp.name)
+        (self.root / "library/2003/league").mkdir(parents=True)
+        for name in ("nba_2003_end_of_season.json", "nba_2002_03_league_environment.json"):
+            (self.root / "library/2003/league" / name).write_bytes((ROOT / "library/2003/league" / name).read_bytes())
+        self.week = self.root / "career/Dwyane_Wade/2003-04/06_Regular_Season/10_October/Week_4"
+        self.week.mkdir(parents=True)
+        (self.week / "Game_1.md").write_text("---\ntype: game\nstatus: scheduled\n---\n")
+        self.write_request(REQUEST)
+        self.store = Store(self.root / "data/engine.sqlite3")
+        self.store.initialize()
         self.servers = []
 
     def tearDown(self):
@@ -116,95 +139,102 @@ class ServiceHarness(unittest.TestCase):
             server.server_close()
         self.tmp.cleanup()
 
-    def serve(self, snapshot=SNAPSHOT):
-        store = Store(self.db)
-        locked = snapshot if store.initialize(snapshot) else None
-        server = ThreadingHTTPServer(("127.0.0.1", 0), handler(store, TOKEN, locked))
+    def write_request(self, data):
+        (self.week / "Game_1.request.json").write_text(json.dumps(data))
+
+    def serve(self, games):
+        server = ThreadingHTTPServer(("127.0.0.1", 0), handler(self.store, TOKEN, games))
         threading.Thread(target=server.serve_forever, daemon=True).start()
         self.servers.append(server)
-        return store, f"http://127.0.0.1:{server.server_address[1]}"
+        return f"http://127.0.0.1:{server.server_address[1]}"
+
+    def get(self, url, token=None):
+        headers = {"Authorization": f"Bearer {token}"} if token else {}
+        try:
+            with urlopen(Request(url, headers=headers)) as response:
+                return response.status, response.read().decode()
+        except HTTPError as exc:
+            return exc.code, exc.read().decode()
 
 
-class PrivateServiceTests(ServiceHarness):
-    def test_readiness_and_auth(self):
-        _, url = self.serve()
-        self.assertTrue(Client(url, TOKEN, SNAPSHOT).readiness()["ready"])
-        with self.assertRaises(EngineUnavailable):
-            Client(url, "wrong" * 10, SNAPSHOT).readiness()
+class PushToPlayTests(EngineHarness):
+    def test_request_is_played_once_and_replayed_identically(self):
+        first = play_requests(self.store, self.root)
+        self.assertEqual(first[REQUEST["event_id"]]["status"], "played")
+        result = self.store.result(REQUEST["event_id"])
+        self.assertEqual(validate_result(result), [])
+        self.assertEqual(result["calibration"]["baseline_season"], "2002-03")
+        second = play_requests(Store(self.root / "data/engine.sqlite3"), self.root)
+        self.assertEqual(second[REQUEST["event_id"]]["status"], "already_played")
+        self.assertEqual(self.store.result(REQUEST["event_id"]), result)
 
-    def test_close_is_idempotent_and_refuses_altered_packets(self):
-        _, url = self.serve()
-        client = Client(url, TOKEN, SNAPSHOT)
-        ref = client.close_event({"event_id": "g1", "x": 1})
-        self.assertEqual(ref, client.close_event({"event_id": "g1", "x": 1}))
-        with self.assertRaisesRegex(EngineUnavailable, "altered packet"):
-            client.close_event({"event_id": "g1", "x": 2})
+    def test_edited_request_is_refused_and_result_kept(self):
+        play_requests(self.store, self.root)
+        original = self.store.result(REQUEST["event_id"])
+        self.write_request(dict(REQUEST, venue="neutral"))
+        status = play_requests(self.store, self.root)
+        entry = next(iter(status.values()))
+        self.assertEqual(entry["status"], "error")
+        self.assertIn("altered packet refused", entry["error"])
+        self.assertEqual(self.store.result(REQUEST["event_id"]), original)
+
+    def test_bad_request_does_not_stop_the_service(self):
+        self.write_request(dict(REQUEST, game_type="play_in"))
+        entry = next(iter(play_requests(self.store, self.root).values()))
+        self.assertEqual(entry["status"], "error")
+        self.assertIn("play_in", entry["error"])
+        self.assertEqual(len(request_errors(self.root)), 1)
+
+    def test_results_are_public_and_seed_endpoints_are_not(self):
+        url = self.serve(play_requests(self.store, self.root))
+        status, body = self.get(url + "/games")
+        self.assertEqual(status, 200)
+        self.assertIn(REQUEST["event_id"], body)
+        status, body = self.get(url + "/games/" + REQUEST["event_id"])
+        self.assertEqual(json.loads(body)["event_id"], REQUEST["event_id"])
+        status, box = self.get(url + "/games/" + REQUEST["event_id"] + "/box")
+        self.assertIn("Orlando Magic", box)
+        self.assertEqual(self.get(url + "/games/missing")[0], 404)
+        self.assertEqual(self.get(url + "/ready")[0], 401)
+        status, body = self.get(url + "/ready", TOKEN)
+        self.assertTrue(json.loads(body)["ready"])
 
     def test_seed_survives_restart(self):
-        store, _ = self.serve()
-        ref = store.close_event("g", "0" * 64)
-        self.assertEqual(Store(self.db).close_event("g", "0" * 64), ref)
-
-    def test_new_image_starts_locked_until_advance(self):
-        store, _ = self.serve()
-        _, url = self.serve("b" * 64)
-        client = Client(url, TOKEN, "b" * 64)
-        with self.assertRaisesRegex(EngineUnavailable, "locked"):
-            client.readiness()
-        with self.assertRaisesRegex(EngineUnavailable, "previous snapshot"):
-            client.advance_snapshot("c" * 64, "b" * 64, "wrong base")
-        client.advance_snapshot(SNAPSHOT, "b" * 64, "draft closed")
-        self.assertEqual(client.advance_snapshot(SNAPSHOT, "b" * 64, "draft closed"), "b" * 64)
-        self.assertTrue(client.readiness()["ready"])
+        ref = self.store.close_digest("g", "0" * 64)
+        restarted = Store(self.root / "data/engine.sqlite3")
+        restarted.initialize()
+        self.assertEqual(restarted.close_digest("g", "0" * 64), ref)
 
     def test_kernel_change_is_journaled(self):
-        store, _ = self.serve()
         with mock.patch.object(private_service, "KERNEL_VERSION", "2003.2"):
-            Store(self.db).initialize(SNAPSHOT)
-        self.assertEqual(store.kernel_history(), [(KERNEL_VERSION, "2003.2", SNAPSHOT)])
+            Store(self.root / "data/engine.sqlite3").initialize()
+        self.assertEqual(self.store.kernel_history(), [(KERNEL_VERSION, "2003.2")])
+
+    def test_box_score_renders(self):
+        play_requests(self.store, self.root)
+        text = render(self.store.result(REQUEST["event_id"]))
+        self.assertIn("Miami Heat", text)
+        self.assertIn("TEAM", text)
 
 
-class GameRunnerTests(ServiceHarness):
-    def library_teams(self):
-        clubs = load_clubs(ROOT / "library/2003/league/nba_2003_end_of_season.json")
-        return (baseline_team("Miami Heat", clubs["Miami Heat"], 12),
-                baseline_team("Orlando Magic", clubs["Orlando Magic"], 12))
-
+class ArchitectureTests(unittest.TestCase):
     def test_architecture(self):
         self.assertEqual(architecture_errors(), [])
 
-    def test_run_game_end_to_end_and_replay(self):
-        _, url = self.serve()
-        client = Client(url, TOKEN, SNAPSHOT)
-        home, away = self.library_teams()
-        result = run_game(home, away, event_id="2003-10-28-orl-at-mia", game_date=GAME_DATE, client=client)
-        self.assertEqual(result["calibration"]["baseline_season"], "2002-03")
-        self.assertEqual(result, run_game(home, away, event_id="2003-10-28-orl-at-mia",
-                                          game_date=GAME_DATE, client=client))
-        changed = TeamInput(home.team_id, home.players[:-1] + (PlayerInput(home.players[-1].player_id,
-                                                                           home.players[-1].position,
-                                                                           home.players[-1].minutes,
-                                                                           {"usage": 80}),))
-        with self.assertRaises(EngineUnavailable):
-            run_game(changed, away, event_id="2003-10-28-orl-at-mia", game_date=GAME_DATE, client=client)
-
-    def test_invalid_inputs_never_reach_the_journal(self):
-        store, url = self.serve()
-        client = Client(url, TOKEN, SNAPSHOT)
-        home, away = self.library_teams()
-        with self.assertRaisesRegex(ValueError, "play_in"):
-            run_game(home, away, event_id="pi", game_date="2004-04-15", game_type="play_in", client=client)
+    def test_invalid_packet_fails_before_journal(self):
+        team = neutral_team("A")
         with self.assertRaises(ValueError):
-            build_game_packet(home, home, event_id="same", snapshot=SNAPSHOT, game_date=GAME_DATE)
-        with self.assertRaisesRegex(ValueError, "altered|unknown"):
-            store.correct("pi", "should not exist")
+            build_game_packet(team, team, event_id="same", game_date=GAME_DATE)
 
-    def test_engine_image_files_exist(self):
+    def test_repository_requests_are_valid(self):
+        self.assertEqual(request_errors(ROOT), [])
+
+    def test_engine_image_files(self):
         railway = json.loads((ROOT / "railway.json").read_text())
         self.assertEqual(railway["build"]["dockerfilePath"], "Dockerfile.engine")
-        self.assertEqual(railway["deploy"]["healthcheckPath"], "/health")
         dockerfile = (ROOT / "Dockerfile.engine").read_text()
         self.assertIn("unittest discover", dockerfile)
+        self.assertIn("COPY --from=verify /app/career/ career/", dockerfile)
         self.assertNotIn("ENGINE_API_TOKEN=", dockerfile)
 
 

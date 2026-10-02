@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-"""Railway entry point for the private engine-state service.
+"""Railway entry point: play any new game requests, then serve results.
 
-Secrets and storage stay outside the repository:
-  ENGINE_API_TOKEN       bearer token (Railway variable, >= 32 characters)
+  ENGINE_API_TOKEN       bearer token for the authenticated endpoints (>= 32 characters)
   ENGINE_DATABASE_PATH   SQLite file on the Railway volume (default /data/engine.sqlite3)
   PORT                   provided by Railway
 """
@@ -14,16 +13,14 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from runtime.private_service import Store, handler
+from runtime.private_service import Store, handler, play_requests
 
-snapshot = os.getenv("ENGINE_SNAPSHOT") or (ROOT / "engine_snapshot.txt").read_text().strip()
 store = Store(os.getenv("ENGINE_DATABASE_PATH", "/data/engine.sqlite3"))
-locked_until = None
-if store.initialize(snapshot):
-    locked_until = snapshot
-    print("engine started LOCKED: stored snapshot differs from this image; "
-          "run scripts/advance_engine_snapshot.py from merged main", flush=True)
+store.initialize()
+games = play_requests(store, ROOT)
+for key, entry in games.items():
+    print(f"{entry['status']:>14}  {key}" + (f"  ({entry['error']})" if "error" in entry else ""), flush=True)
 port = int(os.getenv("PORT", "8765"))
-print(f"basketball engine-state listening on {port}", flush=True)
+print(f"basketball engine listening on {port}; {len(games)} game request(s)", flush=True)
 ThreadingHTTPServer((os.getenv("ENGINE_BIND_HOST", "0.0.0.0"), port),
-                    handler(store, os.environ["ENGINE_API_TOKEN"], locked_until)).serve_forever()
+                    handler(store, os.environ["ENGINE_API_TOKEN"], games)).serve_forever()
