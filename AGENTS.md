@@ -64,6 +64,21 @@ Wade's ability: his rookie season uses the college estimate (`runtime/prospects.
 
 `00_Team/Finances/league_cap_history.json` intentionally stores the real eight-season cap sequence, 2003-04 through 2010-11, for continuity. Treat only a cap that has reached its verified publication/activation gate as live front-office knowledge; a missing publication date blocks live use. Never use a future row to influence an earlier contract, trade or free-agency decision. The cap sheet projects existing obligations only. Keep signed salary, draft holds, conditional options and unresolved charges distinct; a zero scheduled commitment is not a zero-cost future roster or usable cap room.
 
+## World model: real league, simulated Miami (option D, chosen by the user)
+
+- The 28 other clubs follow real history season by season: real rosters and real minute shares from `library/<year>/league/nba_<season>_team_rosters.json`. They have no simulated front office.
+- Miami is fully simulated by the AI/GM. Real transactions involving Miami are never applied.
+- Conflict rules, applied in this order:
+  1. A real transaction that involves Miami is skipped. Every player in it stays with the club that had him before the transaction.
+  2. A player simulated Miami acquires leaves his real club from that date. A player simulated Miami holds stays with Miami even if history moved him elsewhere.
+  3. When rule 1 or 2 changes a real club's roster, the departing players' real minutes go to the arriving players up to their own previous minute share, and any remainder is spread over the club's rotation in proportion to real minutes.
+- If Wade joins another club, that club becomes the simulated club from that date with its own career folder; earlier folders stay as history.
+- Real rosters are hindsight about other clubs, accepted by the user for the world only. They never decide what simulated Miami knows or plans: the AI/GM sees other clubs only as they stand on the current career date.
+
+## Wade's voice in the front office
+
+Wade may tell Miami's front office what he wants: a trade he opposes or wants, a free agent to pursue, his role or minutes. Each request is logged with its date in the phase note it belongs to. The AI/GM weighs it and decides; a request never forces a decision. The weight grows with Wade's standing at that date (his simulated production, awards and contract status), and a front office can say no. Where the answer depends on chance, the engine draws it like a game result so it cannot be re-rolled. Decisions that went against Wade's request may affect his later choices, such as free agency, but only through his own decisions.
+
 ## League source data
 
 League-wide historical data belongs under `library/<year>/league/`, not inside a player's season root or Miami's `00_Team`.
