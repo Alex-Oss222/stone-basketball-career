@@ -1,0 +1,539 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2012-13",
+ "kind": "preseason_schedule",
+ "source": "NBA.com game data via the Kaggle \"NBA games data\" set (nathanlauga/nba-games), read from a public GitHub copy (bnafack/NBA_GAMES, data/games.csv). Schedule as played; result fields removed. Dates are US Eastern. Games against non-NBA opponents and neutral-site venues are not recorded in the source.",
+ "games": [
+  {
+   "date": "2012-10-06",
+   "away": "Denver Nuggets",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "date": "2012-10-07",
+   "away": "Washington Wizards",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "date": "2012-10-07",
+   "away": "Orlando Magic",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "date": "2012-10-07",
+   "away": "Miami Heat",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "date": "2012-10-07",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2012-10-08",
+   "away": "Utah Jazz",
+   "home": "Golden State Warriors"
+  },
+  {
+   "date": "2012-10-09",
+   "away": "Milwaukee Bucks",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "date": "2012-10-09",
+   "away": "Memphis Grizzlies",
+   "home": "Chicago Bulls"
+  },
+  {
+   "date": "2012-10-09",
+   "away": "Charlotte Bobcats",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "date": "2012-10-10",
+   "away": "Oklahoma City Thunder",
+   "home": "Houston Rockets"
+  },
+  {
+   "date": "2012-10-10",
+   "away": "Indiana Pacers",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "date": "2012-10-10",
+   "away": "Phoenix Suns",
+   "home": "Sacramento Kings"
+  },
+  {
+   "date": "2012-10-10",
+   "away": "Portland Trail Blazers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2012-10-10",
+   "away": "Toronto Raptors",
+   "home": "Detroit Pistons"
+  },
+  {
+   "date": "2012-10-10",
+   "away": "Atlanta Hawks",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "date": "2012-10-11",
+   "away": "New York Knicks",
+   "home": "Washington Wizards"
+  },
+  {
+   "date": "2012-10-11",
+   "away": "Philadelphia 76ers",
+   "home": "Orlando Magic"
+  },
+  {
+   "date": "2012-10-11",
+   "away": "New Orleans Hornets",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "date": "2012-10-11",
+   "away": "Miami Heat",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "date": "2012-10-12",
+   "away": "Detroit Pistons",
+   "home": "Toronto Raptors"
+  },
+  {
+   "date": "2012-10-12",
+   "away": "Minnesota Timberwolves",
+   "home": "Indiana Pacers"
+  },
+  {
+   "date": "2012-10-12",
+   "away": "Cleveland Cavaliers",
+   "home": "Chicago Bulls"
+  },
+  {
+   "date": "2012-10-12",
+   "away": "New Orleans Hornets",
+   "home": "Houston Rockets"
+  },
+  {
+   "date": "2012-10-12",
+   "away": "Oklahoma City Thunder",
+   "home": "Utah Jazz"
+  },
+  {
+   "date": "2012-10-12",
+   "away": "Portland Trail Blazers",
+   "home": "Phoenix Suns"
+  },
+  {
+   "date": "2012-10-12",
+   "away": "Denver Nuggets",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "date": "2012-10-13",
+   "away": "Brooklyn Nets",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "date": "2012-10-13",
+   "away": "Chicago Bulls",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "date": "2012-10-13",
+   "away": "New York Knicks",
+   "home": "Boston Celtics"
+  },
+  {
+   "date": "2012-10-13",
+   "away": "Washington Wizards",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "date": "2012-10-13",
+   "away": "Detroit Pistons",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "date": "2012-10-13",
+   "away": "Utah Jazz",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2012-10-14",
+   "away": "Los Angeles Clippers",
+   "home": "Miami Heat"
+  },
+  {
+   "date": "2012-10-14",
+   "away": "San Antonio Spurs",
+   "home": "Houston Rockets"
+  },
+  {
+   "date": "2012-10-14",
+   "away": "Atlanta Hawks",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "date": "2012-10-15",
+   "away": "Boston Celtics",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "date": "2012-10-15",
+   "away": "Orlando Magic",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "date": "2012-10-15",
+   "away": "Golden State Warriors",
+   "home": "Denver Nuggets"
+  },
+  {
+   "date": "2012-10-15",
+   "away": "Portland Trail Blazers",
+   "home": "Sacramento Kings"
+  },
+  {
+   "date": "2012-10-15",
+   "away": "Washington Wizards",
+   "home": "Brooklyn Nets"
+  },
+  {
+   "date": "2012-10-15",
+   "away": "Houston Rockets",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "date": "2012-10-16",
+   "away": "Atlanta Hawks",
+   "home": "Indiana Pacers"
+  },
+  {
+   "date": "2012-10-16",
+   "away": "Milwaukee Bucks",
+   "home": "Chicago Bulls"
+  },
+  {
+   "date": "2012-10-16",
+   "away": "Charlotte Bobcats",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "date": "2012-10-16",
+   "away": "Utah Jazz",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2012-10-16",
+   "away": "Brooklyn Nets",
+   "home": "Boston Celtics"
+  },
+  {
+   "date": "2012-10-16",
+   "away": "Orlando Magic",
+   "home": "Detroit Pistons"
+  },
+  {
+   "date": "2012-10-17",
+   "away": "Washington Wizards",
+   "home": "Toronto Raptors"
+  },
+  {
+   "date": "2012-10-17",
+   "away": "Cleveland Cavaliers",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "date": "2012-10-17",
+   "away": "Memphis Grizzlies",
+   "home": "Houston Rockets"
+  },
+  {
+   "date": "2012-10-17",
+   "away": "Golden State Warriors",
+   "home": "Sacramento Kings"
+  },
+  {
+   "date": "2012-10-17",
+   "away": "Denver Nuggets",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "date": "2012-10-17",
+   "away": "Phoenix Suns",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "date": "2012-10-17",
+   "away": "Utah Jazz",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "date": "2012-10-18",
+   "away": "Memphis Grizzlies",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "date": "2012-10-18",
+   "away": "New Orleans Hornets",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "date": "2012-10-18",
+   "away": "Detroit Pistons",
+   "home": "Miami Heat"
+  },
+  {
+   "date": "2012-10-18",
+   "away": "Boston Celtics",
+   "home": "Brooklyn Nets"
+  },
+  {
+   "date": "2012-10-19",
+   "away": "New York Knicks",
+   "home": "Toronto Raptors"
+  },
+  {
+   "date": "2012-10-19",
+   "away": "Indiana Pacers",
+   "home": "Orlando Magic"
+  },
+  {
+   "date": "2012-10-19",
+   "away": "Minnesota Timberwolves",
+   "home": "Chicago Bulls"
+  },
+  {
+   "date": "2012-10-19",
+   "away": "Phoenix Suns",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "date": "2012-10-19",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2012-10-19",
+   "away": "Golden State Warriors",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "date": "2012-10-19",
+   "away": "Philadelphia 76ers",
+   "home": "Brooklyn Nets"
+  },
+  {
+   "date": "2012-10-20",
+   "away": "Dallas Mavericks",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "date": "2012-10-20",
+   "away": "Memphis Grizzlies",
+   "home": "Indiana Pacers"
+  },
+  {
+   "date": "2012-10-20",
+   "away": "Los Angeles Clippers",
+   "home": "Utah Jazz"
+  },
+  {
+   "date": "2012-10-20",
+   "away": "New York Knicks",
+   "home": "Boston Celtics"
+  },
+  {
+   "date": "2012-10-20",
+   "away": "San Antonio Spurs",
+   "home": "Miami Heat"
+  },
+  {
+   "date": "2012-10-20",
+   "away": "Charlotte Bobcats",
+   "home": "Detroit Pistons"
+  },
+  {
+   "date": "2012-10-20",
+   "away": "Washington Wizards",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "date": "2012-10-21",
+   "away": "San Antonio Spurs",
+   "home": "Orlando Magic"
+  },
+  {
+   "date": "2012-10-21",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2012-10-21",
+   "away": "Denver Nuggets",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "date": "2012-10-21",
+   "away": "Philadelphia 76ers",
+   "home": "Boston Celtics"
+  },
+  {
+   "date": "2012-10-22",
+   "away": "Milwaukee Bucks",
+   "home": "Toronto Raptors"
+  },
+  {
+   "date": "2012-10-22",
+   "away": "Sacramento Kings",
+   "home": "Phoenix Suns"
+  },
+  {
+   "date": "2012-10-22",
+   "away": "Utah Jazz",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "date": "2012-10-22",
+   "away": "New York Knicks",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "date": "2012-10-22",
+   "away": "New Orleans Hornets",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "date": "2012-10-22",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "date": "2012-10-23",
+   "away": "Miami Heat",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "date": "2012-10-23",
+   "away": "Indiana Pacers",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "date": "2012-10-23",
+   "away": "Oklahoma City Thunder",
+   "home": "Chicago Bulls"
+  },
+  {
+   "date": "2012-10-23",
+   "away": "Phoenix Suns",
+   "home": "Golden State Warriors"
+  },
+  {
+   "date": "2012-10-24",
+   "away": "New York Knicks",
+   "home": "Brooklyn Nets"
+  },
+  {
+   "date": "2012-10-24",
+   "away": "Orlando Magic",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "date": "2012-10-24",
+   "away": "Houston Rockets",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "date": "2012-10-24",
+   "away": "Dallas Mavericks",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "date": "2012-10-24",
+   "away": "Detroit Pistons",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "date": "2012-10-24",
+   "away": "Washington Wizards",
+   "home": "Miami Heat"
+  },
+  {
+   "date": "2012-10-24",
+   "away": "Los Angeles Lakers",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "date": "2012-10-25",
+   "away": "Milwaukee Bucks",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "date": "2012-10-25",
+   "away": "Portland Trail Blazers",
+   "home": "Utah Jazz"
+  },
+  {
+   "date": "2012-10-25",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2012-10-25",
+   "away": "Los Angeles Clippers",
+   "home": "Denver Nuggets"
+  },
+  {
+   "date": "2012-10-26",
+   "away": "Toronto Raptors",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "date": "2012-10-26",
+   "away": "Houston Rockets",
+   "home": "Orlando Magic"
+  },
+  {
+   "date": "2012-10-26",
+   "away": "Indiana Pacers",
+   "home": "Chicago Bulls"
+  },
+  {
+   "date": "2012-10-26",
+   "away": "Minnesota Timberwolves",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "date": "2012-10-26",
+   "away": "Atlanta Hawks",
+   "home": "Detroit Pistons"
+  },
+  {
+   "date": "2012-10-26",
+   "away": "Charlotte Bobcats",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "date": "2012-10-26",
+   "away": "Washington Wizards",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "date": "2012-10-26",
+   "away": "Denver Nuggets",
+   "home": "Phoenix Suns"
+  },
+  {
+   "date": "2012-10-26",
+   "away": "New Orleans Hornets",
+   "home": "Miami Heat"
+  }
+ ]
+}

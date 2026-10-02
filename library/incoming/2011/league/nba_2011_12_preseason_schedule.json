@@ -1,0 +1,159 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2011-12",
+ "kind": "preseason_schedule",
+ "source": "NBA.com game data via the Kaggle \"NBA games data\" set (nathanlauga/nba-games), read from a public GitHub copy (bnafack/NBA_GAMES, data/games.csv). Schedule as played; result fields removed. Dates are US Eastern. Games against non-NBA opponents and neutral-site venues are not recorded in the source.",
+ "games": [
+  {
+   "date": "2011-12-16",
+   "away": "Chicago Bulls",
+   "home": "Indiana Pacers"
+  },
+  {
+   "date": "2011-12-16",
+   "away": "New Orleans Hornets",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "date": "2011-12-16",
+   "away": "Philadelphia 76ers",
+   "home": "Washington Wizards"
+  },
+  {
+   "date": "2011-12-16",
+   "away": "Cleveland Cavaliers",
+   "home": "Detroit Pistons"
+  },
+  {
+   "date": "2011-12-17",
+   "away": "New York Knicks",
+   "home": "New Jersey Nets"
+  },
+  {
+   "date": "2011-12-17",
+   "away": "San Antonio Spurs",
+   "home": "Houston Rockets"
+  },
+  {
+   "date": "2011-12-17",
+   "away": "Milwaukee Bucks",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "date": "2011-12-17",
+   "away": "Sacramento Kings",
+   "home": "Golden State Warriors"
+  },
+  {
+   "date": "2011-12-18",
+   "away": "Boston Celtics",
+   "home": "Toronto Raptors"
+  },
+  {
+   "date": "2011-12-18",
+   "away": "Orlando Magic",
+   "home": "Miami Heat"
+  },
+  {
+   "date": "2011-12-18",
+   "away": "Oklahoma City Thunder",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "date": "2011-12-19",
+   "away": "Atlanta Hawks",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "date": "2011-12-19",
+   "away": "Utah Jazz",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "date": "2011-12-19",
+   "away": "Los Angeles Clippers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2011-12-20",
+   "away": "Washington Wizards",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "date": "2011-12-20",
+   "away": "Detroit Pistons",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "date": "2011-12-20",
+   "away": "Indiana Pacers",
+   "home": "Chicago Bulls"
+  },
+  {
+   "date": "2011-12-20",
+   "away": "Phoenix Suns",
+   "home": "Denver Nuggets"
+  },
+  {
+   "date": "2011-12-20",
+   "away": "Dallas Mavericks",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "date": "2011-12-20",
+   "away": "Golden State Warriors",
+   "home": "Sacramento Kings"
+  },
+  {
+   "date": "2011-12-21",
+   "away": "Miami Heat",
+   "home": "Orlando Magic"
+  },
+  {
+   "date": "2011-12-21",
+   "away": "Memphis Grizzlies",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "date": "2011-12-21",
+   "away": "Portland Trail Blazers",
+   "home": "Utah Jazz"
+  },
+  {
+   "date": "2011-12-21",
+   "away": "Toronto Raptors",
+   "home": "Boston Celtics"
+  },
+  {
+   "date": "2011-12-21",
+   "away": "New Jersey Nets",
+   "home": "New York Knicks"
+  },
+  {
+   "date": "2011-12-21",
+   "away": "Minnesota Timberwolves",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "date": "2011-12-21",
+   "away": "Houston Rockets",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "date": "2011-12-21",
+   "away": "Los Angeles Lakers",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "date": "2011-12-22",
+   "away": "Denver Nuggets",
+   "home": "Phoenix Suns"
+  },
+  {
+   "date": "2011-12-22",
+   "away": "Charlotte Bobcats",
+   "home": "Atlanta Hawks"
+  }
+ ]
+}

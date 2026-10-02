@@ -1,0 +1,569 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2009-10",
+ "kind": "preseason_schedule",
+ "source": "NBA.com game data via the Kaggle \"NBA games data\" set (nathanlauga/nba-games), read from a public GitHub copy (bnafack/NBA_GAMES, data/games.csv). Schedule as played; result fields removed. Dates are US Eastern. Games against non-NBA opponents and neutral-site venues are not recorded in the source.",
+ "games": [
+  {
+   "date": "2009-10-01",
+   "away": "Denver Nuggets",
+   "home": "Utah Jazz"
+  },
+  {
+   "date": "2009-10-02",
+   "away": "Chicago Bulls",
+   "home": "Indiana Pacers"
+  },
+  {
+   "date": "2009-10-04",
+   "away": "New Jersey Nets",
+   "home": "New York Knicks"
+  },
+  {
+   "date": "2009-10-04",
+   "away": "Los Angeles Clippers",
+   "home": "Golden State Warriors"
+  },
+  {
+   "date": "2009-10-04",
+   "away": "Milwaukee Bucks",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "date": "2009-10-05",
+   "away": "Miami Heat",
+   "home": "Detroit Pistons"
+  },
+  {
+   "date": "2009-10-05",
+   "away": "Orlando Magic",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "date": "2009-10-06",
+   "away": "Memphis Grizzlies",
+   "home": "Washington Wizards"
+  },
+  {
+   "date": "2009-10-06",
+   "away": "Charlotte Bobcats",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "date": "2009-10-06",
+   "away": "Sacramento Kings",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "date": "2009-10-06",
+   "away": "Toronto Raptors",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "date": "2009-10-06",
+   "away": "Utah Jazz",
+   "home": "Chicago Bulls"
+  },
+  {
+   "date": "2009-10-06",
+   "away": "Houston Rockets",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "date": "2009-10-07",
+   "away": "Philadelphia 76ers",
+   "home": "Toronto Raptors"
+  },
+  {
+   "date": "2009-10-07",
+   "away": "New Orleans Hornets",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "date": "2009-10-07",
+   "away": "Miami Heat",
+   "home": "Orlando Magic"
+  },
+  {
+   "date": "2009-10-07",
+   "away": "Oklahoma City Thunder",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "date": "2009-10-07",
+   "away": "Portland Trail Blazers",
+   "home": "Sacramento Kings"
+  },
+  {
+   "date": "2009-10-07",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2009-10-07",
+   "away": "Milwaukee Bucks",
+   "home": "Detroit Pistons"
+  },
+  {
+   "date": "2009-10-07",
+   "away": "Boston Celtics",
+   "home": "Houston Rockets"
+  },
+  {
+   "date": "2009-10-08",
+   "away": "New Orleans Hornets",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "date": "2009-10-08",
+   "away": "Denver Nuggets",
+   "home": "Indiana Pacers"
+  },
+  {
+   "date": "2009-10-09",
+   "away": "New Jersey Nets",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "date": "2009-10-09",
+   "away": "Dallas Mavericks",
+   "home": "Washington Wizards"
+  },
+  {
+   "date": "2009-10-09",
+   "away": "Houston Rockets",
+   "home": "Orlando Magic"
+  },
+  {
+   "date": "2009-10-09",
+   "away": "Toronto Raptors",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "date": "2009-10-09",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2009-10-09",
+   "away": "New York Knicks",
+   "home": "Boston Celtics"
+  },
+  {
+   "date": "2009-10-09",
+   "away": "Portland Trail Blazers",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "date": "2009-10-10",
+   "away": "Golden State Warriors",
+   "home": "Phoenix Suns"
+  },
+  {
+   "date": "2009-10-10",
+   "away": "Oklahoma City Thunder",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "date": "2009-10-10",
+   "away": "Cleveland Cavaliers",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "date": "2009-10-10",
+   "away": "Chicago Bulls",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "date": "2009-10-11",
+   "away": "Indiana Pacers",
+   "home": "Denver Nuggets"
+  },
+  {
+   "date": "2009-10-11",
+   "away": "New Jersey Nets",
+   "home": "Boston Celtics"
+  },
+  {
+   "date": "2009-10-11",
+   "away": "Washington Wizards",
+   "home": "Toronto Raptors"
+  },
+  {
+   "date": "2009-10-11",
+   "away": "San Antonio Spurs",
+   "home": "Miami Heat"
+  },
+  {
+   "date": "2009-10-11",
+   "away": "Atlanta Hawks",
+   "home": "Detroit Pistons"
+  },
+  {
+   "date": "2009-10-11",
+   "away": "Memphis Grizzlies",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "date": "2009-10-12",
+   "away": "Charlotte Bobcats",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "date": "2009-10-12",
+   "away": "Orlando Magic",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "date": "2009-10-12",
+   "away": "Phoenix Suns",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "date": "2009-10-12",
+   "away": "Milwaukee Bucks",
+   "home": "Houston Rockets"
+  },
+  {
+   "date": "2009-10-12",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "date": "2009-10-13",
+   "away": "Boston Celtics",
+   "home": "New Jersey Nets"
+  },
+  {
+   "date": "2009-10-13",
+   "away": "Washington Wizards",
+   "home": "Detroit Pistons"
+  },
+  {
+   "date": "2009-10-13",
+   "away": "Milwaukee Bucks",
+   "home": "Chicago Bulls"
+  },
+  {
+   "date": "2009-10-13",
+   "away": "Orlando Magic",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "date": "2009-10-13",
+   "away": "Philadelphia 76ers",
+   "home": "New York Knicks"
+  },
+  {
+   "date": "2009-10-14",
+   "away": "Washington Wizards",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "date": "2009-10-14",
+   "away": "Atlanta Hawks",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "date": "2009-10-14",
+   "away": "Chicago Bulls",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "date": "2009-10-14",
+   "away": "Miami Heat",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "date": "2009-10-14",
+   "away": "Phoenix Suns",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "date": "2009-10-14",
+   "away": "Toronto Raptors",
+   "home": "Boston Celtics"
+  },
+  {
+   "date": "2009-10-14",
+   "away": "Los Angeles Clippers",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "date": "2009-10-15",
+   "away": "Houston Rockets",
+   "home": "Toronto Raptors"
+  },
+  {
+   "date": "2009-10-15",
+   "away": "Portland Trail Blazers",
+   "home": "Utah Jazz"
+  },
+  {
+   "date": "2009-10-15",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2009-10-15",
+   "away": "New Orleans Hornets",
+   "home": "Miami Heat"
+  },
+  {
+   "date": "2009-10-15",
+   "away": "Detroit Pistons",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "date": "2009-10-16",
+   "away": "Houston Rockets",
+   "home": "Indiana Pacers"
+  },
+  {
+   "date": "2009-10-16",
+   "away": "Minnesota Timberwolves",
+   "home": "Chicago Bulls"
+  },
+  {
+   "date": "2009-10-16",
+   "away": "Philadelphia 76ers",
+   "home": "Phoenix Suns"
+  },
+  {
+   "date": "2009-10-16",
+   "away": "New Jersey Nets",
+   "home": "New York Knicks"
+  },
+  {
+   "date": "2009-10-16",
+   "away": "Cleveland Cavaliers",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "date": "2009-10-17",
+   "away": "Utah Jazz",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "date": "2009-10-17",
+   "away": "Detroit Pistons",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "date": "2009-10-17",
+   "away": "Indiana Pacers",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "date": "2009-10-17",
+   "away": "Golden State Warriors",
+   "home": "Sacramento Kings"
+  },
+  {
+   "date": "2009-10-17",
+   "away": "Charlotte Bobcats",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2009-10-17",
+   "away": "Minnesota Timberwolves",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "date": "2009-10-17",
+   "away": "Cleveland Cavaliers",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "date": "2009-10-18",
+   "away": "Boston Celtics",
+   "home": "Toronto Raptors"
+  },
+  {
+   "date": "2009-10-18",
+   "away": "Utah Jazz",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "date": "2009-10-18",
+   "away": "Denver Nuggets",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "date": "2009-10-18",
+   "away": "Los Angeles Clippers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2009-10-18",
+   "away": "Philadelphia 76ers",
+   "home": "Phoenix Suns"
+  },
+  {
+   "date": "2009-10-19",
+   "away": "Washington Wizards",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "date": "2009-10-19",
+   "away": "Orlando Magic",
+   "home": "Chicago Bulls"
+  },
+  {
+   "date": "2009-10-19",
+   "away": "Oklahoma City Thunder",
+   "home": "Houston Rockets"
+  },
+  {
+   "date": "2009-10-20",
+   "away": "Washington Wizards",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "date": "2009-10-20",
+   "away": "Milwaukee Bucks",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "date": "2009-10-20",
+   "away": "Minnesota Timberwolves",
+   "home": "Denver Nuggets"
+  },
+  {
+   "date": "2009-10-20",
+   "away": "Sacramento Kings",
+   "home": "Phoenix Suns"
+  },
+  {
+   "date": "2009-10-20",
+   "away": "Utah Jazz",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "date": "2009-10-20",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2009-10-20",
+   "away": "Boston Celtics",
+   "home": "New York Knicks"
+  },
+  {
+   "date": "2009-10-20",
+   "away": "Dallas Mavericks",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "date": "2009-10-20",
+   "away": "San Antonio Spurs",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "date": "2009-10-21",
+   "away": "New York Knicks",
+   "home": "New Jersey Nets"
+  },
+  {
+   "date": "2009-10-21",
+   "away": "Indiana Pacers",
+   "home": "Orlando Magic"
+  },
+  {
+   "date": "2009-10-21",
+   "away": "Boston Celtics",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "date": "2009-10-21",
+   "away": "Memphis Grizzlies",
+   "home": "Miami Heat"
+  },
+  {
+   "date": "2009-10-22",
+   "away": "Atlanta Hawks",
+   "home": "Miami Heat"
+  },
+  {
+   "date": "2009-10-22",
+   "away": "Sacramento Kings",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "date": "2009-10-22",
+   "away": "Denver Nuggets",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2009-10-22",
+   "away": "Portland Trail Blazers",
+   "home": "Phoenix Suns"
+  },
+  {
+   "date": "2009-10-22",
+   "away": "Minnesota Timberwolves",
+   "home": "Detroit Pistons"
+  },
+  {
+   "date": "2009-10-22",
+   "away": "New Orleans Hornets",
+   "home": "Golden State Warriors"
+  },
+  {
+   "date": "2009-10-23",
+   "away": "Memphis Grizzlies",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "date": "2009-10-23",
+   "away": "San Antonio Spurs",
+   "home": "Indiana Pacers"
+  },
+  {
+   "date": "2009-10-23",
+   "away": "Washington Wizards",
+   "home": "Chicago Bulls"
+  },
+  {
+   "date": "2009-10-23",
+   "away": "Toronto Raptors",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "date": "2009-10-23",
+   "away": "Utah Jazz",
+   "home": "Sacramento Kings"
+  },
+  {
+   "date": "2009-10-23",
+   "away": "Detroit Pistons",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "date": "2009-10-23",
+   "away": "Dallas Mavericks",
+   "home": "Houston Rockets"
+  },
+  {
+   "date": "2009-10-23",
+   "away": "New Orleans Hornets",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "date": "2009-10-23",
+   "away": "Denver Nuggets",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "date": "2009-10-23",
+   "away": "Philadelphia 76ers",
+   "home": "New Jersey Nets"
+  },
+  {
+   "date": "2009-10-23",
+   "away": "Atlanta Hawks",
+   "home": "Orlando Magic"
+  }
+ ]
+}
