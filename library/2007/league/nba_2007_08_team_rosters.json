@@ -3604,7 +3604,7 @@
       0.0,
       1.0
      ],
-     "returned": "2006-07"
+     "returned": "2003-04"
     },
     {
      "player_id": "Smush Parker",
@@ -3979,7 +3979,7 @@
       0.0,
       1.0
      ],
-     "returned": "2006-07"
+     "returned": "2004-05"
     },
     {
      "player_id": "Hakim Warrick",
@@ -4944,6 +4944,23 @@
      ]
     },
     {
+     "player_id": "Alonzo Mourning",
+     "bbr_id": "mournal01",
+     "position": "C",
+     "games": 37,
+     "games_started": 17,
+     "minutes": 702,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2004-05"
+    },
+    {
      "player_id": "Jason Collins",
      "bbr_id": "collija04",
      "position": "C",
@@ -4974,23 +4991,6 @@
       0.0,
       1.0
      ]
-    },
-    {
-     "player_id": "Alonzo Mourning",
-     "bbr_id": "mournal01",
-     "position": "C",
-     "games": 18,
-     "games_started": 14,
-     "minutes": 457,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2006-07"
     },
     {
      "player_id": "DeSagana Diop",
@@ -5593,6 +5593,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Anfernee Hardaway",
+     "bbr_id": "hardaan01",
+     "position": "SF",
+     "games": 4,
+     "games_started": 0,
+     "minutes": 72,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2005-06"
     },
     {
      "player_id": "Jerome James",
@@ -7782,9 +7799,9 @@
      "player_id": "Luke Jackson",
      "bbr_id": "jackslu02",
      "position": "SF",
-     "games": 10,
+     "games": 13,
      "games_started": 2,
-     "minutes": 122,
+     "minutes": 138,
      "span": [
       0.0,
       1.0

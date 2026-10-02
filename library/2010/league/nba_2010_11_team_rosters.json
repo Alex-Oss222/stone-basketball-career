@@ -1734,6 +1734,23 @@
      ]
     },
     {
+     "player_id": "Jamaal Magloire",
+     "bbr_id": "magloja01",
+     "position": "C",
+     "games": 31,
+     "games_started": 2,
+     "minutes": 286,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
+    },
+    {
      "player_id": "Sasha Pavlović",
      "bbr_id": "pavloal01",
      "position": "SF",
@@ -1796,23 +1813,6 @@
       0.0,
       0.2941
      ]
-    },
-    {
-     "player_id": "Jamaal Magloire",
-     "bbr_id": "magloja01",
-     "position": "C",
-     "games": 7,
-     "games_started": 0,
-     "minutes": 27,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2009-10"
     },
     {
      "player_id": "Steve Novak",
@@ -5401,6 +5401,23 @@
      ]
     },
     {
+     "player_id": "Eddie House",
+     "bbr_id": "houseed01",
+     "position": "SG",
+     "games": 68,
+     "games_started": 0,
+     "minutes": 1217,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
+    },
+    {
      "player_id": "Ronny Turiaf",
      "bbr_id": "turiaro01",
      "position": "C",
@@ -5495,23 +5512,6 @@
       0.0,
       0.7556
      ]
-    },
-    {
-     "player_id": "Eddie House",
-     "bbr_id": "houseed01",
-     "position": "SG",
-     "games": 18,
-     "games_started": 0,
-     "minutes": 371,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2009-10"
     },
     {
      "player_id": "Roger Mason",
@@ -6034,6 +6034,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Carlos Arroyo",
+     "bbr_id": "arroyca01",
+     "position": "PG",
+     "games": 62,
+     "games_started": 20,
+     "minutes": 1269,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
     },
     {
      "player_id": "Gilbert Arenas",
@@ -6898,7 +6915,7 @@
       0.0,
       1.0
      ],
-     "returned": "2009-10"
+     "returned": "2007-08"
     },
     {
      "player_id": "Dante Cunningham",

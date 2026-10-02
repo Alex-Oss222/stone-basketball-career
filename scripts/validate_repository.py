@@ -529,6 +529,8 @@ def validate():
 
     from runtime.rosters import roster_errors
     errors.extend(roster_errors(ROOT))
+    from runtime.rotations import holdings_errors
+    errors.extend(holdings_errors(ROOT))
 
     from runtime.contracts import contract_errors
     errors.extend(contract_errors(ROOT))

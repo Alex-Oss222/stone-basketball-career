@@ -319,6 +319,23 @@
    "code": "BOS",
    "players": [
     {
+     "player_id": "Antoine Walker",
+     "bbr_id": "walkean02",
+     "position": "PF",
+     "games": 77,
+     "games_started": 77,
+     "minutes": 2955,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2004-05"
+    },
+    {
      "player_id": "Gary Payton",
      "bbr_id": "paytoga01",
      "position": "PG",
@@ -333,7 +350,7 @@
       0.0,
       1.0
      ],
-     "returned": "2005-06"
+     "returned": "2004-05"
     },
     {
      "player_id": "Al Jefferson",
@@ -494,23 +511,6 @@
       0.0,
       1.0
      ]
-    },
-    {
-     "player_id": "Antoine Walker",
-     "bbr_id": "walkean02",
-     "position": "PF",
-     "games": 24,
-     "games_started": 24,
-     "minutes": 827,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2005-06"
     },
     {
      "player_id": "Tony Allen",
@@ -708,7 +708,7 @@
       0.0,
       1.0
      ],
-     "returned": "2005-06"
+     "returned": "2004-05"
     },
     {
      "player_id": "Brevin Knight",
@@ -1819,6 +1819,23 @@
      ]
     },
     {
+     "player_id": "Michael Doleac",
+     "bbr_id": "doleami01",
+     "position": "C",
+     "games": 72,
+     "games_started": 0,
+     "minutes": 1029,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2003-04"
+    },
+    {
      "player_id": "Earl Boykins",
      "bbr_id": "boykiea01",
      "position": "PG",
@@ -1865,23 +1882,6 @@
       0.0,
       1.0
      ]
-    },
-    {
-     "player_id": "Michael Doleac",
-     "bbr_id": "doleami01",
-     "position": "C",
-     "games": 26,
-     "games_started": 0,
-     "minutes": 344,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2005-06"
     },
     {
      "player_id": "Joe Smith",
@@ -3432,7 +3432,7 @@
       0.0,
       1.0
      ],
-     "returned": "2005-06"
+     "returned": "2003-04"
     },
     {
      "player_id": "Smush Parker",
@@ -3742,7 +3742,7 @@
       0.0,
       1.0
      ],
-     "returned": "2005-06"
+     "returned": "2004-05"
     },
     {
      "player_id": "Dahntay Jones",
@@ -3791,7 +3791,7 @@
       0.0,
       1.0
      ],
-     "returned": "2005-06"
+     "returned": "2004-05"
     },
     {
      "player_id": "Stromile Swift",
@@ -4657,6 +4657,23 @@
      ]
     },
     {
+     "player_id": "Alonzo Mourning",
+     "bbr_id": "mournal01",
+     "position": "C",
+     "games": 37,
+     "games_started": 17,
+     "minutes": 702,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2004-05"
+    },
+    {
      "player_id": "Josh Boone",
      "bbr_id": "boonejo01",
      "position": "PF",
@@ -4687,23 +4704,6 @@
       0.0,
       1.0
      ]
-    },
-    {
-     "player_id": "Alonzo Mourning",
-     "bbr_id": "mournal01",
-     "position": "C",
-     "games": 18,
-     "games_started": 14,
-     "minutes": 457,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2005-06"
     },
     {
      "player_id": "Bernard Robinson",

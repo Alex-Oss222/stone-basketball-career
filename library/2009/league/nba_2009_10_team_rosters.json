@@ -1667,6 +1667,23 @@
      ]
     },
     {
+     "player_id": "Jamaal Magloire",
+     "bbr_id": "magloja01",
+     "position": "C",
+     "games": 31,
+     "games_started": 2,
+     "minutes": 286,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
+    },
+    {
      "player_id": "Tim Thomas",
      "bbr_id": "thomati01",
      "position": "SF",
@@ -1729,23 +1746,6 @@
       0.0,
       1.0
      ]
-    },
-    {
-     "player_id": "Jamaal Magloire",
-     "bbr_id": "magloja01",
-     "position": "C",
-     "games": 7,
-     "games_started": 0,
-     "minutes": 27,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2008-09"
     }
    ]
   },
@@ -1927,7 +1927,7 @@
       0.0,
       1.0
      ],
-     "returned": "2008-09"
+     "returned": "2007-08"
     },
     {
      "player_id": "Malik Allen",
@@ -5793,6 +5793,23 @@
      ]
     },
     {
+     "player_id": "Carlos Arroyo",
+     "bbr_id": "arroyca01",
+     "position": "PG",
+     "games": 62,
+     "games_started": 20,
+     "minutes": 1269,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
+    },
+    {
      "player_id": "Marcin Gortat",
      "bbr_id": "gortama01",
      "position": "C",
@@ -6510,7 +6527,7 @@
       0.0,
       1.0
      ],
-     "returned": "2008-09"
+     "returned": "2007-08"
     },
     {
      "player_id": "Nicolas Batum",
@@ -7361,6 +7378,23 @@
      ]
     },
     {
+     "player_id": "Jermaine O'Neal",
+     "bbr_id": "onealje01",
+     "position": "C",
+     "games": 68,
+     "games_started": 61,
+     "minutes": 2027,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2008-09"
+    },
+    {
      "player_id": "José Calderón",
      "bbr_id": "caldejo01",
      "position": "PG",
@@ -7439,23 +7473,6 @@
       0.0,
       1.0
      ]
-    },
-    {
-     "player_id": "Jermaine O'Neal",
-     "bbr_id": "onealje01",
-     "position": "C",
-     "games": 41,
-     "games_started": 34,
-     "minutes": 1216,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2008-09"
     },
     {
      "player_id": "Marco Belinelli",

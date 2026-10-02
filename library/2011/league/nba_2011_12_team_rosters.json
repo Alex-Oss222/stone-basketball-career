@@ -1052,7 +1052,7 @@
       0.0,
       1.0
      ],
-     "returned": "2010-11"
+     "returned": "2009-10"
     },
     {
      "player_id": "Antawn Jamison",
@@ -3612,6 +3612,23 @@
      ]
     },
     {
+     "player_id": "Shane Battier",
+     "bbr_id": "battish01",
+     "position": "SF",
+     "games": 82,
+     "games_started": 59,
+     "minutes": 2375,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2010-11"
+    },
+    {
      "player_id": "Marc Gasol",
      "bbr_id": "gasolma01",
      "position": "C",
@@ -3738,23 +3755,6 @@
       0.0,
       1.0
      ]
-    },
-    {
-     "player_id": "Shane Battier",
-     "bbr_id": "battish01",
-     "position": "SF",
-     "games": 23,
-     "games_started": 0,
-     "minutes": 557,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2010-11"
     },
     {
      "player_id": "Jeremy Pargo",
@@ -5382,6 +5382,23 @@
      ]
     },
     {
+     "player_id": "Eddy Curry",
+     "bbr_id": "curryed01",
+     "position": "C",
+     "games": 7,
+     "games_started": 0,
+     "minutes": 62,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
+    },
+    {
      "player_id": "Dan Gadzuric",
      "bbr_id": "gadzuda01",
      "position": "C",
@@ -6477,7 +6494,7 @@
       0.0,
       1.0
      ],
-     "returned": "2010-11"
+     "returned": "2009-10"
     },
     {
      "player_id": "Jamal Crawford",
@@ -6526,7 +6543,7 @@
       0.0,
       1.0
      ],
-     "returned": "2010-11"
+     "returned": "2007-08"
     },
     {
      "player_id": "Marcus Camby",
@@ -7326,7 +7343,7 @@
       0.0,
       1.0
      ],
-     "returned": "2010-11"
+     "returned": "2009-10"
     },
     {
      "player_id": "DeMar DeRozan",
@@ -7897,7 +7914,7 @@
       0.0,
       1.0
      ],
-     "returned": "2010-11"
+     "returned": "2009-10"
     },
     {
      "player_id": "Jordan Crawford",

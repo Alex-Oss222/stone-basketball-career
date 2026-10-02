@@ -12,7 +12,8 @@ from runtime.game_requests import load_request
 from runtime.kernel import (MINUTES_CAP, SHORT_HANDED_RAISE, PlayerInput, TeamInput, _allocate, _choose_lineup,
                             _Club, _expected_points, calibrate, resolve_game, team_errors, validate_result)
 from runtime.player_stats import CUTOFF, MODEL_VERSION, RATE_KEYS
-from runtime.rotations import load_rosters, miami_holds, primary_position, real_rotation, season_fraction
+from runtime.rotations import (holdings_errors, holdings_path, load_rosters, miami_holds, primary_position,
+                               real_rotation, season_fraction)
 from runtime.schedule import schedule_path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -138,11 +139,10 @@ class RotationTests(unittest.TestCase):
     def test_traded_players_are_with_one_club_on_every_scheduled_date(self):
         rosters = load_rosters("2003-04")
         games = json.loads(schedule_path("2003-04").read_text())["games"]
-        held = miami_holds("2003-04")
         for g in games:
             if "Miami Heat" in (g["home"], g["away"]):
                 continue
-            fraction = season_fraction("2003-04", g["date"])
+            fraction, held = season_fraction("2003-04", g["date"]), miami_holds("2003-04", g["date"])
             ids = [{p.stat_profile.get("bbr_id") or p.player_id for p in real_rotation(
                        name, rosters[name], 82, fraction=fraction, exclude=held).players}
                    for name in (g["home"], g["away"])]
@@ -154,14 +154,54 @@ class RotationTests(unittest.TestCase):
         self.assertFalse(wallace("Detroit Pistons", "2003-11-05"))
         self.assertTrue(wallace("Detroit Pistons", "2004-04-01"))
 
-    def test_miami_register_players_leave_their_real_club(self):
-        held = miami_holds("2003-04")
-        self.assertIn("cartean01", held)                       # player option pending on June 26
+    def test_players_miami_holds_on_the_game_date_leave_their_real_club(self):
+        june, november = miami_holds("2003-04", "2003-06-26"), miami_holds("2003-04", "2003-11-05")
+        self.assertIn("mournal01", june)
+        self.assertNotIn("mournal01", november)                 # his contract ended June 30
+        self.assertIn("cartean01", november)                    # option pending: held until June 30 says otherwise
         rosters = load_rosters("2003-04")
-        spurs = real_rotation("San Antonio Spurs", rosters["San Antonio Spurs"], 82, fraction=0.05, exclude=held)
+        spurs = real_rotation("San Antonio Spurs", rosters["San Antonio Spurs"], 82, fraction=0.05, exclude=november)
         self.assertNotIn("Anthony Carter", {p.player_id for p in spurs.players})
-        nets = real_rotation("New Jersey Nets", rosters["New Jersey Nets"], 82, fraction=0.05, exclude=held)
-        self.assertNotIn("Alonzo Mourning", {p.player_id for p in nets.players})   # matched by name
+        nets = real_rotation("New Jersey Nets", rosters["New Jersey Nets"], 82, fraction=0.05, exclude=november)
+        self.assertIn("Alonzo Mourning", {p.player_id for p in nets.players})
+        self.assertEqual(holdings_errors(), [])
+
+    def test_a_later_holding_never_changes_an_earlier_game(self):
+        import shutil
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            shutil.copytree(ROOT / "library", root / "library")
+            roster_dir = root / holdings_path("2003-04").parent
+            shutil.copytree(ROOT / holdings_path("2003-04").parent, roster_dir)
+            request = {"event_id": "h", "game_date": "2003-11-05", "game_type": "regular", "venue": "home",
+                       "home": {"team": "Dallas Mavericks", "rotation": "real"},
+                       "away": {"team": "Los Angeles Lakers", "rotation": "real"}}
+            path = root / "Game_1.request.json"
+            path.write_text(json.dumps(request))
+            from runtime.game_runner import build_game_packet
+            before = load_request(path, root)
+            holdings = json.loads((root / holdings_path("2003-04")).read_text())
+            holdings["entries"].append({"player": "Dirk Nowitzki", "bbr_id": "nowitdi01", "from": "2004-02-19",
+                                        "until": None, "basis": "test acquisition"})
+            (root / holdings_path("2003-04")).write_text(json.dumps(holdings))
+            after = load_request(path, root)
+            self.assertEqual(build_game_packet(before[0], before[1], **before[2])[0],
+                             build_game_packet(after[0], after[1], **after[2])[0])
+            self.assertIn("nowitdi01", miami_holds("2003-04", "2004-03-01", root))
+
+    def test_a_namesake_stays_with_his_real_club(self):
+        club = {"players": [{"player_id": "Marcus Williams", "bbr_id": "willima04", "position": "SF",
+                             "games": 82, "games_started": 0, "minutes": 1640}]}
+        team = real_rotation("X", club, 82, fraction=0.5, exclude={"willima03"})
+        self.assertEqual([p.player_id for p in team.players], ["Marcus Williams"])
+
+    def test_a_held_returned_player_frees_no_minutes(self):
+        rosters = load_rosters("2003-04")
+        clippers = rosters["Los Angeles Clippers"]
+        without = {"players": [p for p in clippers["players"] if p["bbr_id"] != "odomla01"]}
+        held = real_rotation("Los Angeles Clippers", clippers, 82, fraction=0.5, exclude={"odomla01"})
+        plain = real_rotation("Los Angeles Clippers", without, 82, fraction=0.5)
+        self.assertEqual([(p.player_id, p.minutes) for p in held.players], [(p.player_id, p.minutes) for p in plain.players])
 
     def test_conflict_rule_three_spreads_departed_minutes(self):
         row = lambda pid, minutes: {"player_id": pid, "bbr_id": f"{pid.lower() * 5}01", "position": "PG",
@@ -212,6 +252,20 @@ class RotationTests(unittest.TestCase):
             lineup = _choose_lineup(club, 0, 2880, mode)
             kinds = {club.players[pid].position for pid in lineup}
             self.assertTrue(kinds & {"PG", "SG"} and kinds & {"PF", "C"}, (mode, lineup))
+
+
+class ImportTests(unittest.TestCase):
+    def test_a_returned_player_follows_his_franchise(self):
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("import_careers", ROOT / "scripts/import_careers.py")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        self.assertEqual(module.current_name("New Orleans Hornets", {"New Orleans Pelicans": {}}), "New Orleans Pelicans")
+        self.assertEqual(module.current_name("Seattle SuperSonics", {"Oklahoma City Thunder": {}}), "Oklahoma City Thunder")
+        with self.assertRaises(ValueError):
+            module.current_name("Nowhere", {})
+        pelicans = load_rosters("2013-14")["New Orleans Pelicans"]["players"]
+        self.assertIn("Roger Mason", {p["player_id"] for p in pelicans if "returned" in p})
 
 
 class RealRotationRequestTests(unittest.TestCase):

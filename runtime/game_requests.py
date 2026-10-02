@@ -57,7 +57,8 @@ def _club(spec, actives, root, rating_index, season=None, game_date=None):
             raise ValueError(f"{spec['team']} has no real {season} roster (Miami is simulated)")
         # Rule 2: players simulated Miami holds are not with their real club.
         return real_rotation(spec["team"], rosters[spec["team"]], games_per_team(season, spec["team"]), rating_index,
-                             fraction=season_fraction(season, game_date, root), exclude=miami_holds(season, root))
+                             fraction=season_fraction(season, game_date, root),
+                             exclude=miami_holds(season, game_date, root))
     if "baseline" in spec:
         clubs = load_clubs(Path(root) / spec["baseline"])
         if spec["team"] not in clubs:

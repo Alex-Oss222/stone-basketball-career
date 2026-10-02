@@ -47,7 +47,7 @@ class League:
     def __init__(self):
         self.index = load_rating_index(DATE, SEASON, ROOT)
         self.rosters = load_rosters(SEASON, ROOT)
-        self.held = miami_holds(SEASON, ROOT)
+
         schedule = json.loads(schedule_path(SEASON, ROOT).read_text(encoding="utf-8"))["games"]
         self.games = [g for g in schedule if "Miami Heat" not in (g["home"], g["away"])]
         self.cache, self.profiles = {}, {}
@@ -62,7 +62,7 @@ class League:
     def team(self, name, game_date, shift=None):
         fraction = season_fraction(SEASON, game_date, ROOT)
         team = real_rotation(name, self.rosters[name], games_per_team(SEASON, name), self.index,
-                             fraction=fraction, exclude=self.held)
+                             fraction=fraction, exclude=miami_holds(SEASON, game_date, ROOT))
         key = (name, tuple(p.player_id for p in team.players), tuple(p.availability for p in team.players), shift)
         if key not in self.cache:
             players = []

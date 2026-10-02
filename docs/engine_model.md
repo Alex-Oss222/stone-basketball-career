@@ -1,6 +1,6 @@
 # Engine model and calibration (kernel 2003.3)
 
-What the possession engine does beyond the per-play rates, why, and how it was checked. Code: `runtime/kernel.py`, `runtime/rotations.py`. Check: `python scripts/engine_diagnostics.py 6`, plus `--defense-test` and `--home-test` (analysis only: made-up entropy, nothing written to the career; its output names clubs and players and is not to be committed).
+What the possession engine does beyond the per-play rates, why, and how it was checked. Code: `runtime/kernel.py`, `runtime/rotations.py`. Check: `python scripts/engine_diagnostics.py 4`, plus `--defense-test` and `--home-test` (analysis only: made-up entropy, nothing written to the career; its output names clubs and players and is not to be committed).
 
 All constants below are judgement constants unless a source is named. They describe how basketball is played, not any team's results, and none was fitted to a 2003-04 result. This page reports only league-wide measures; per-club and per-player results of the check stay out of the repository (AGENTS.md, option C).
 
@@ -11,7 +11,7 @@ Each real-career profile carries a defensive value: that season's Defensive Box 
 - two thirds through the opponent's make probability (`make_per_defense`): a make is worth its points and and-one free throws, less the offensive-rebound continuation a miss would have had;
 - one third through the opponent's turnover probability (`tov_per_defense`): a defensive turnover takes the place of a shot and costs its full value.
 
-Rebounding already has its own rates, so it is left out to avoid counting it twice. Check (`--defense-test 3`, the same games with half the clubs' players one point better): +5 on the floor allows 5.1 fewer points per 100.
+Rebounding already has its own rates, so it is left out to avoid counting it twice. Check (`--defense-test 3`, the same games with half the clubs' players one point better): +5 on the floor allows 4.7 to 5.1 fewer points per 100 across the runs made.
 
 Players without DBPM count as average defenders (0): veteran and rookie estimates, and Wade until his camp grade (roadmap item 9). Legacy 20-80 perimeter/interior grades keep their old small effect.
 
@@ -25,8 +25,8 @@ A player input has minutes per game when he plays and an availability, the chanc
 
 Conflict rules (`AGENTS.md`, world model):
 
-1. Real Miami transactions are skipped at import. A stint one began is folded into the player's previous club, whose stint extends over it. A player real Miami brought in between seasons, free agents included (chosen by the user), is back on the club that had him at the end of the season before, for the whole season, with that season's minutes per game and games played. One with no previous NBA club stays a free agent.
-2. Players on simulated Miami's register are taken out of every real club, matched by Basketball-Reference ID or name. So a returned player simulated Miami signs plays for Miami only.
+1. Real Miami transactions are skipped at import. A stint one began is folded into the player's previous club, whose stint extends over it. A player real Miami brought in between seasons, free agents included (chosen by the user), is back on the club he last played for (its successor if the franchise moved or was renamed), for the whole season, with his minutes per game and games played in that last season. One with no previous NBA club stays a free agent.
+2. Players simulated Miami holds on the game's date are taken out of every real club. They come from Miami's dated holdings record (`00_Team/Team/Roster/holdings.json`, next to the register), matched by Basketball-Reference ID (by name only for an entry without one), so a later roster move never changes a game already played. A returned player simulated Miami signs plays for Miami only, and frees no minutes at the club he never really played for.
 3. Departing players' minutes go to arrivals and returned players up to their own previous share; the rest raises the staying players' minutes in proportion to their real minutes. When the arrivals need more than the departing minutes, the difference comes out of the staying players' minutes in the same proportion.
 
 ## Late game (problem E4)
@@ -54,19 +54,19 @@ With six fouls to disqualify, a player sits once he reaches 2 fouls in the 1st q
 
 ## Calibration record
 
-Six seasons of the real 2003-04 schedule without Miami's games (6,642 games, 79 per club per season), real rosters on each date, kernel 2003.3. Kernel 2003.2 was measured before this check existed, on 1,500 random pairings with top-12 season shares. Benchmarks are general figures for the era, not 2003-04 results.
+Four seasons of the real 2003-04 schedule without Miami's games (4,428 games, 79 per club per season), real rosters on each date, kernel 2003.3. Kernel 2003.2 was measured before this check existed, on 1,500 random pairings with top-12 season shares. Benchmarks are general figures for the era, not 2003-04 results.
 
 | Measure | Kernel 2003.2 | Kernel 2003.3 | Benchmark |
 | --- | ---: | ---: | --- |
-| Points per team per game | 95.2 | 95.1 | 95.1 (2002-03 environment) |
+| Points per team per game | 95.2 | 94.8 | 95.1 (2002-03 environment) |
 | Final-margin SD | 15.8 | 13.4 | 13-14 |
-| Overtime games | 2.8% | 5.1% | 5-7% |
-| Home win rate | 59.5% | 59.9% | 57-63% |
-| Home edge, home minus neutral on the same games | not measured | +3.0 ± 0.2 | 3.0 (environment assumption) |
+| Overtime games | 2.8% | 5.4% | 5-7% |
+| Home win rate | 59.5% | 60.6% | 57-63% |
+| Home edge, home minus neutral on the same games | not measured | +3.1 ± 0.2 | 3.0 (environment assumption) |
 | Foul-outs per game | 0.75 | 0.22 | 0.2-0.3 |
-| Spread of club average margins within a season | about 3.3 | 4.7 | 4-5 |
-| Players with 30+ input minutes: simulated vs input minutes per game | not measured | 35.6 vs 35.3 | their input |
+| Spread of club average margins within a season | about 3.3 | 4.6 | 4-5 |
+| Players with 30+ input minutes: simulated vs input minutes per game | not measured | 35.3 vs 35.3 | their input |
 
-Box totals per team: FGA 81.1 (80.8), FTA 24.9 (24.4), turnovers 15.2 (14.9), offensive rebounds 12.1 (12.0), assists 21.7 (21.5), fouls 22.1 (21.8); environment values in brackets. Three-point attempts run at 15.1 against 14.7: the 2003-04 players' own three-point rates, weighted by their attempts, are about 3% above the 2002-03 environment.
+Box totals per team: FGA 81.1 (80.8), FTA 24.8 (24.4), turnovers 15.2 (14.9), offensive rebounds 12.1 (12.0), assists 21.7 (21.5), fouls 22.1 (21.8); environment values in brackets. Three-point attempts run at 15.1 against 14.7: the 2003-04 players' own three-point rates, weighted by their attempts, are about 3% above the 2002-03 environment.
 
 Known gaps: team pace is uniform (problem E6); there are no injuries or fatigue (problem E7, roadmap item 12); from 2004-05, players real Miami traded away between seasons still follow history, because the season tables cannot tell a trade from a free-agent move (roadmap item 8).

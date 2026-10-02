@@ -1474,7 +1474,7 @@
       0.0,
       1.0
      ],
-     "returned": "2011-12"
+     "returned": "2009-10"
     },
     {
      "player_id": "Tristan Thompson",
@@ -4083,6 +4083,23 @@
      ]
     },
     {
+     "player_id": "Shane Battier",
+     "bbr_id": "battish01",
+     "position": "SF",
+     "games": 82,
+     "games_started": 59,
+     "minutes": 2375,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2010-11"
+    },
+    {
      "player_id": "Tony Allen",
      "bbr_id": "allento01",
      "position": "SG",
@@ -4209,23 +4226,6 @@
       0.0,
       0.5063
      ]
-    },
-    {
-     "player_id": "Shane Battier",
-     "bbr_id": "battish01",
-     "position": "SF",
-     "games": 23,
-     "games_started": 0,
-     "minutes": 557,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2011-12"
     },
     {
      "player_id": "Ed Davis",
@@ -6768,7 +6768,7 @@
       0.0,
       1.0
      ],
-     "returned": "2011-12"
+     "returned": "2009-10"
     },
     {
      "player_id": "James Jones",
@@ -6785,7 +6785,7 @@
       0.0,
       1.0
      ],
-     "returned": "2011-12"
+     "returned": "2007-08"
     },
     {
      "player_id": "Meyers Leonard",
@@ -7521,7 +7521,7 @@
       0.0,
       1.0
      ],
-     "returned": "2011-12"
+     "returned": "2009-10"
     },
     {
      "player_id": "Amir Johnson",
@@ -8076,7 +8076,7 @@
       0.0,
       1.0
      ],
-     "returned": "2011-12"
+     "returned": "2009-10"
     },
     {
      "player_id": "Bradley Beal",

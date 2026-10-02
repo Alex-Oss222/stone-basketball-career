@@ -138,6 +138,23 @@
      ]
     },
     {
+     "player_id": "Wesley Person",
+     "bbr_id": "persowe01",
+     "position": "SF",
+     "games": 58,
+     "games_started": 0,
+     "minutes": 1037,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2003-04"
+    },
+    {
      "player_id": "Jason Collier",
      "bbr_id": "collija02",
      "position": "C",
@@ -280,23 +297,6 @@
       0.0,
       1.0
      ]
-    },
-    {
-     "player_id": "Wesley Person",
-     "bbr_id": "persowe01",
-     "position": "SF",
-     "games": 9,
-     "games_started": 0,
-     "minutes": 132,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2003-04"
     },
     {
      "player_id": "Jelani McCoy",
@@ -1785,6 +1785,23 @@
      ]
     },
     {
+     "player_id": "Michael Doleac",
+     "bbr_id": "doleami01",
+     "position": "C",
+     "games": 72,
+     "games_started": 0,
+     "minutes": 1029,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2003-04"
+    },
+    {
      "player_id": "Bryon Russell",
      "bbr_id": "russebr01",
      "position": "SF",
@@ -1847,23 +1864,6 @@
       0.0,
       0.7241
      ]
-    },
-    {
-     "player_id": "Michael Doleac",
-     "bbr_id": "doleami01",
-     "position": "C",
-     "games": 26,
-     "games_started": 0,
-     "minutes": 344,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2003-04"
     },
     {
      "player_id": "Nikoloz Tskitishvili",
@@ -3444,6 +3444,23 @@
      ]
     },
     {
+     "player_id": "Wang Zhizhi",
+     "bbr_id": "zhizhwa01",
+     "position": "C",
+     "games": 16,
+     "games_started": 0,
+     "minutes": 114,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2003-04"
+    },
+    {
      "player_id": "Mamadou N'Diaye",
      "bbr_id": "ndiayma02",
      "position": "C",
@@ -3490,23 +3507,6 @@
       0.0,
       1.0
      ]
-    },
-    {
-     "player_id": "Wang Zhizhi",
-     "bbr_id": "zhizhwa01",
-     "position": "C",
-     "games": 2,
-     "games_started": 0,
-     "minutes": 9,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2003-04"
     },
     {
      "player_id": "Maurice Baker",

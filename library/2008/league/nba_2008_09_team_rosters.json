@@ -1667,6 +1667,23 @@
      ]
     },
     {
+     "player_id": "Jamaal Magloire",
+     "bbr_id": "magloja01",
+     "position": "C",
+     "games": 31,
+     "games_started": 2,
+     "minutes": 286,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
+    },
+    {
      "player_id": "Ryan Hollins",
      "bbr_id": "holliry01",
      "position": "C",
@@ -1729,23 +1746,6 @@
       0.6182,
       1.0
      ]
-    },
-    {
-     "player_id": "Jamaal Magloire",
-     "bbr_id": "magloja01",
-     "position": "C",
-     "games": 7,
-     "games_started": 0,
-     "minutes": 27,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2007-08"
     }
    ]
   },
@@ -3139,6 +3139,23 @@
      ]
     },
     {
+     "player_id": "Shaun Livingston",
+     "bbr_id": "livinsh01",
+     "position": "PG",
+     "games": 54,
+     "games_started": 31,
+     "minutes": 1611,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2006-07"
+    },
+    {
      "player_id": "Fred Jones",
      "bbr_id": "jonesfr01",
      "position": "SF",
@@ -4197,7 +4214,7 @@
       0.0,
       1.0
      ],
-     "returned": "2007-08"
+     "returned": "2006-07"
     },
     {
      "player_id": "Randy Foye",
@@ -6139,6 +6156,23 @@
      ]
     },
     {
+     "player_id": "Shawn Marion",
+     "bbr_id": "mariosh01",
+     "position": "SF",
+     "games": 63,
+     "games_started": 62,
+     "minutes": 2315,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
+    },
+    {
      "player_id": "Shaquille O'Neal",
      "bbr_id": "onealsh01",
      "position": "C",
@@ -6201,23 +6235,6 @@
       0.1944,
       1.0
      ]
-    },
-    {
-     "player_id": "Shawn Marion",
-     "bbr_id": "mariosh01",
-     "position": "SF",
-     "games": 47,
-     "games_started": 47,
-     "minutes": 1713,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2007-08"
     },
     {
      "player_id": "Leandro Barbosa",
@@ -6316,6 +6333,23 @@
      ]
     },
     {
+     "player_id": "Marcus Banks",
+     "bbr_id": "banksma01",
+     "position": "PG",
+     "games": 36,
+     "games_started": 3,
+     "minutes": 569,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
+    },
+    {
      "player_id": "Boris Diaw",
      "bbr_id": "diawbo01",
      "position": "PF",
@@ -6330,23 +6364,6 @@
       0.0,
       0.2716
      ]
-    },
-    {
-     "player_id": "Marcus Banks",
-     "bbr_id": "banksma01",
-     "position": "PG",
-     "games": 24,
-     "games_started": 1,
-     "minutes": 310,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2007-08"
     },
     {
      "player_id": "Alando Tucker",

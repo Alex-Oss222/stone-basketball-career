@@ -381,7 +381,7 @@
       0.0,
       1.0
      ],
-     "returned": "2012-13"
+     "returned": "2011-12"
     },
     {
      "player_id": "Gerald Wallace",
@@ -1570,7 +1570,7 @@
       0.0,
       1.0
      ],
-     "returned": "2012-13"
+     "returned": "2009-10"
     },
     {
      "player_id": "Tristan Thompson",
@@ -2397,7 +2397,7 @@
       0.0,
       1.0
      ],
-     "returned": "2012-13"
+     "returned": "2011-12"
     },
     {
      "player_id": "Jan Veselý",
@@ -4211,6 +4211,23 @@
      ]
     },
     {
+     "player_id": "Shane Battier",
+     "bbr_id": "battish01",
+     "position": "SF",
+     "games": 82,
+     "games_started": 59,
+     "minutes": 2375,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2010-11"
+    },
+    {
      "player_id": "Marc Gasol",
      "bbr_id": "gasolma01",
      "position": "C",
@@ -4385,23 +4402,6 @@
       0.0,
       1.0
      ]
-    },
-    {
-     "player_id": "Shane Battier",
-     "bbr_id": "battish01",
-     "position": "SF",
-     "games": 23,
-     "games_started": 0,
-     "minutes": 557,
-     "span": [
-      0.0,
-      1.0
-     ],
-     "window": [
-      0.0,
-      1.0
-     ],
-     "returned": "2012-13"
     },
     {
      "player_id": "Quincy Pondexter",
@@ -5185,6 +5185,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Roger Mason",
+     "bbr_id": "masonro01",
+     "position": "SG",
+     "games": 69,
+     "games_started": 13,
+     "minutes": 1219,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2012-13"
     },
     {
      "player_id": "Jrue Holiday",
@@ -7025,7 +7042,7 @@
       0.0,
       1.0
      ],
-     "returned": "2012-13"
+     "returned": "2007-08"
     },
     {
      "player_id": "Dorell Wright",
@@ -7074,6 +7091,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Greg Oden",
+     "bbr_id": "odengr01",
+     "position": "C",
+     "games": 21,
+     "games_started": 21,
+     "minutes": 502,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
     },
     {
      "player_id": "CJ McCollum",
@@ -7905,7 +7939,7 @@
       0.0,
       1.0
      ],
-     "returned": "2012-13"
+     "returned": "2009-10"
     },
     {
      "player_id": "Jonas Valančiūnas",
@@ -8604,7 +8638,7 @@
       0.0,
       1.0
      ],
-     "returned": "2012-13"
+     "returned": "2011-12"
     },
     {
      "player_id": "Garrett Temple",

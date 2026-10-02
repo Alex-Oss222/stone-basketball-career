@@ -14,10 +14,11 @@ Writes two kinds of library files:
   played before, during and after the stint), so he is on one club at a time.
   A stint that a real Miami transaction began is skipped (AGENTS.md rule 1):
   the player stays with his previous club, whose window extends over it. A
-  player real Miami brought in between seasons goes back to the club that had
-  him at the end of the season before, for the whole season, with that
-  season's minutes per game and games played (`returned`); one with no
-  previous club (an undrafted or overseas signing) gets no real-club rows.
+  player real Miami brought in between seasons goes back to the club he last
+  played for (its successor if the franchise moved or was renamed), for the
+  whole season, with his minutes per game and games played in that last
+  season (`returned` names it); one with no previous NBA club (an undrafted or
+  overseas signing) gets no real-club rows.
 
 Removed on import:
 * the historical Dwyane Wade (`wadedw01`): the career's Wade is alternate
@@ -132,14 +133,24 @@ def end_of_2002_03():
             record = stats.get(p.get("bbr_id"))
             if record and CODES.get(entry["code"], club) != CODES[SIMULATED_CLUB]:
                 out[p["bbr_id"]] = (club, record["totals"]["games"], round(record["totals"]["minutes"]),
-                                    record["totals"]["games_started"])
+                                    record["totals"]["games_started"], "2002-03")
     return out
 
 
-def end_of_season(clubs):
-    """bbr_id -> (club, games, minutes, games_started) for players with a club when a season ended."""
-    return {p["bbr_id"]: (club, p["games"], p["minutes"], p["games_started"])
-            for club, entry in clubs.items() for p in entry["players"] if p["window"][1] >= 1.0}
+# A franchise that moved or was renamed, and the names it played under next.
+SUCCESSORS = {"New Orleans Hornets": ("New Orleans/Oklahoma City Hornets", "New Orleans Pelicans"),
+              "New Orleans/Oklahoma City Hornets": ("New Orleans Hornets",),
+              "Seattle SuperSonics": ("Oklahoma City Thunder",), "New Jersey Nets": ("Brooklyn Nets",)}
+
+
+def current_name(club, clubs):
+    """The club's name in this season's table, following moves and renames."""
+    if club in clubs:
+        return club
+    for successor in SUCCESSORS.get(club, ()):
+        if successor in clubs:
+            return successor
+    raise ValueError(f"{club} has no club in this season's table")
 
 
 def main(folder):
@@ -174,19 +185,27 @@ def main(folder):
                     "player_id": r["Player"], "bbr_id": bbr_id, "position": r["Pos"],
                     "games": int(num(r["G"]) or 0), "games_started": int(num(r["GS"]) or 0),
                     "minutes": int(num(r["MP"]) or 0), "span": span, "window": window})
-        # Rule 1 between seasons: a player real Miami brought in returns to his previous club.
+        # Rule 1 between seasons: a player real Miami brought in returns to the club he last played for.
         for bbr_id, player_rows in by_player.items():
             team_rows = [r for r in player_rows if not MULTI.match(r["Team"])]
             if team_rows and team_rows[0]["Team"] == SIMULATED_CLUB and bbr_id in previous:
-                club, games, minutes, started = previous[bbr_id]
-                if club in clubs and games and minutes:
-                    clubs[club]["players"].append({
+                club, games, minutes, started, last_season = previous[bbr_id]
+                if games and minutes:
+                    clubs[current_name(club, clubs)]["players"].append({
                         "player_id": team_rows[0]["Player"], "bbr_id": bbr_id, "position": team_rows[0]["Pos"],
                         "games": games, "games_started": started, "minutes": minutes,
-                        "span": [0.0, 1.0], "window": [0.0, 1.0], "returned": season_label(year_end - 1)})
+                        "span": [0.0, 1.0], "window": [0.0, 1.0], "returned": last_season})
         for club in clubs.values():
             club["players"].sort(key=lambda p: -p["minutes"])
-        previous = end_of_season(clubs)
+        # The club each player last played for, with his whole season's games and minutes; kept
+        # across seasons, so a player who sat a season out still goes back to it.
+        for bbr_id, player_rows in by_player.items():
+            last = [name for name, entry in clubs.items() for p in entry["players"]
+                    if p["bbr_id"] == bbr_id and "returned" not in p and p["window"][1] >= 1.0]
+            if last:
+                whole = next((r for r in player_rows if MULTI.match(r["Team"])), player_rows[0])
+                previous[bbr_id] = (last[0], int(num(whole["G"]) or 0), int(num(whole["MP"]) or 0),
+                                    int(num(whole["GS"]) or 0), season)
         start = year_end - 1
         rosters = {"schema_version": 1, "league": "NBA", "season": season, "kind": "team_rosters",
                    "source": SOURCE,

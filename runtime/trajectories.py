@@ -239,6 +239,8 @@ def season_feedback(lines_by_player, expected_by_player, baselines, from_season,
 
 
 def feedback_errors(data):
+    if not isinstance(data, dict):
+        return ["feedback file must be a JSON object"]
     if data.get("kind") != FEEDBACK_KIND or data.get("share") != FEEDBACK_SHARE or not isinstance(data.get("players"), dict):
         return ["feedback file must have kind trajectory_feedback, the current share and a players object"]
     errors = []
@@ -247,8 +249,8 @@ def feedback_errors(data):
             errors.append(f"{bbr_id}: the protagonist has his own season update, not real-player feedback")
         adjust = entry.get("adjust") if isinstance(entry, dict) else None
         if not isinstance(adjust, dict) or set(adjust) != set(RATE_KEYS) or any(
-                isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v)
-                or abs(v) > SPREAD[k] + 1e-12 for k, v in adjust.items()):
+                isinstance(v, bool) or not isinstance(v, (int, float)) or not abs(v) <= SPREAD[k] + 1e-12
+                for k, v in adjust.items()):
             errors.append(f"{bbr_id}: adjustments must cover every rate with finite values within the cap")
     return errors
 

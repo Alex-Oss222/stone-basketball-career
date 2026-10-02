@@ -17,8 +17,9 @@ Conflict rules (AGENTS.md, option D):
    a stint it began is folded into the player's previous club, and a player
    real Miami brought in between seasons is back on the club that had him
    (`returned`), with his previous season's minutes and games played.
-2. Players simulated Miami holds on the game date (its team-control register)
-   are taken out of every real club (`miami_holds`).
+2. Players simulated Miami holds on the game date are taken out of every real
+   club (`miami_holds`, from the dated holdings record next to the register),
+   so a later roster move never changes a game already played.
 3. Departing players' minutes go to arrivals (and returned players) up to
    their own previous share; the rest raises the staying rotation in
    proportion to real minutes. When the arrivals' shares are larger than the
@@ -56,18 +57,61 @@ def season_fraction(season, game_date, root=ROOT):
     return min(1.0, max(0.0, (day - first).days / max(1, (last - first).days)))
 
 
-def miami_holds(season, root=ROOT):
-    """Bbr_ids and name keys of every player on simulated Miami's register who is held (rule 2)."""
-    path = Path(root) / f"career/Dwyane_Wade/{season}/00_Team/Team/Roster/roster.json"
+def holdings_path(season):
+    return Path(f"career/Dwyane_Wade/{season}/00_Team/Team/Roster/holdings.json")
+
+
+def miami_holds(season, game_date, root=ROOT):
+    """Players simulated Miami holds on `game_date` (rule 2), from its dated holdings record.
+
+    Returns Basketball-Reference IDs, plus name keys only for entries without an ID, so a
+    namesake on a real club is never taken for a Miami player."""
+    path = Path(root) / holdings_path(season)
     if not path.exists():
         return frozenset()
     held = set()
-    for p in json.loads(path.read_text(encoding="utf-8"))["players"]:
-        if not any(word in p.get("status", "") for word in NOT_HELD):
-            held.add(alias(p["name"]))
-            if p.get("bbr_id"):
-                held.add(p["bbr_id"])
+    for e in json.loads(path.read_text(encoding="utf-8"))["entries"]:
+        if e["from"] <= game_date and (e["until"] is None or game_date < e["until"]):
+            held.add(e["bbr_id"] or alias(e["player"]))
     return frozenset(held)
+
+
+def holdings_errors(root=ROOT):
+    """Each season's holdings record must be well formed and cover every player the register holds."""
+    errors = []
+    for register in sorted((Path(root) / "career/Dwyane_Wade").glob("*/00_Team/Team/Roster/roster.json")):
+        season = register.parts[-5]
+        path = Path(root) / holdings_path(season)
+        rel = path.relative_to(root)
+        if not path.exists():
+            errors.append(f"{rel}: missing; conflict rule 2 needs Miami's dated holdings")
+            continue
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if data.get("kind") != "miami_holdings" or data.get("owner") != "ai_gm" or not isinstance(data.get("entries"), list):
+            errors.append(f"{rel}: needs kind miami_holdings, owner ai_gm and an entries list")
+            continue
+        for e in data["entries"]:
+            try:
+                start = date.fromisoformat(e["from"])
+                end = None if e["until"] is None else date.fromisoformat(e["until"])
+                if end is not None and end <= start:
+                    errors.append(f"{rel}: {e['player']}: until must be after from")
+                if e["bbr_id"] is not None and not isinstance(e["bbr_id"], str):
+                    errors.append(f"{rel}: {e['player']}: invalid bbr_id")
+            except (KeyError, TypeError, ValueError):
+                errors.append(f"{rel}: entries need player, bbr_id, from and until")
+        roster = json.loads(register.read_text(encoding="utf-8"))
+        as_of = roster["as_of"]
+        open_keys = {e.get("bbr_id") or alias(e.get("player", "")) for e in data["entries"]
+                     if isinstance(e.get("from"), str) and e["from"] <= as_of and (e.get("until") is None or as_of < e["until"])}
+        open_names = {alias(e.get("player", "")) for e in data["entries"]
+                      if isinstance(e.get("from"), str) and e["from"] <= as_of and (e.get("until") is None or as_of < e["until"])}
+        for p in roster["players"]:
+            if any(word in p.get("status", "") for word in NOT_HELD):
+                continue
+            if p.get("bbr_id") not in open_keys and alias(p["name"]) not in open_names:
+                errors.append(f"{rel}: {p['name']} is on the register on {as_of} but not held then")
+    return errors
 
 
 def primary_position(label):
@@ -111,7 +155,8 @@ def real_rotation(club_name, club, season_games, rating_index=None, *, fraction,
         a for a in arrivals if a["games"] >= 1 and a["minutes"] > 0 and not gone(a)]
     # Rule 3: departing minutes go to the incoming players up to their own previous share and the
     # rest raises the staying rotation; a shortfall comes out of it, both in proportion to real minutes.
-    freed = sum(_share(p, season_games) for p in present if gone(p))
+    # A returned player Miami holds never played for this club in the real season, so he frees nothing.
+    freed = sum(_share(p, season_games) for p in present if gone(p) and "returned" not in p)
     wanted = sum(_share(p, season_games) for p in incoming)
     stay_share = sum(_share(p, season_games) for p in staying)
     factor = max(0.25, 1 + (freed - wanted) / stay_share) if stay_share else 1.0

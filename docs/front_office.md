@@ -13,6 +13,10 @@ Miami is the only simulated club (world model D). Its front office uses only evi
 
 Run `python scripts/run_june30.py --write` only when the career clock reaches June 30. It stops if Carter's `years_of_service` is not recorded on `contract_schedules.json` (it sets his minimum salary). It writes the rule decisions with reasons and one `*.decision.json` per chance-based decision; pushing lets Railway draw them, and `/decisions/<event_id>` returns the outcome.
 
+## Miami's holdings (conflict rule 2)
+
+`00_Team/Team/Roster/holdings.json` records, with dates, every player simulated Miami holds: `from` the date Miami holds him, `until` the first date it no longer does (null while held). Real clubs' rotations leave out whoever Miami holds on the game's date. When Miami signs, trades, waives or loses a player, append an entry or set `until` on or after the career date, in the same change as the register; never change a date that has passed, because played games depend on it. On June 26, 2003 the expiring contracts run until July 1, and the pending options stay open until the June 30 decisions close the ones that are declined. Validation checks that every player the register holds is held on its `as_of` date.
+
 ## Wade's requests
 
 Before a decision date, Wade's wishes go in the phase folder's `wade_requests.json`:

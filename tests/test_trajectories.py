@@ -180,8 +180,10 @@ class FeedbackTests(unittest.TestCase):
         good = {"kind": "trajectory_feedback", "share": FEEDBACK_SHARE, "players": {"jamesle01": {"adjust": adjust}}}
         self.assertEqual(feedback_errors(good), [])
         for bad in ({"jamesle01": {"adjust": dict(adjust, usage_pct=float("nan"))}}, {"jamesle01": []},
-                    {"jamesle01": {"adjust": None}}):
+                    {"jamesle01": {"adjust": None}}, {"jamesle01": {"adjust": dict(adjust, usage_pct=10 ** 400)}}):
             self.assertTrue(feedback_errors(dict(good, players=bad)), bad)
+        for bad in ([], "x", 3, None):
+            self.assertEqual(feedback_errors(bad), ["feedback file must be a JSON object"])
 
     def test_a_league_wide_level_is_nobodys_surprise(self):
         """If the engine adds threes for everyone, no player's three-point rate is adjusted for it."""
