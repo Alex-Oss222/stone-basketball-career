@@ -36,7 +36,7 @@ Unknown is not zero. Planned is not completed.
 
 ## Postseason
 
-Play-In Game 2 exists only when Game 1 requires it.
+Play-In is not applicable before 2019-20. Its 2020 restart format differs from 2020-21 onward. Where applicable, Play-In Game 2 exists only when Game 1 requires it.
 
 Every playoff series is best of seven. Games 5, 6 and 7 are conditional. A conditional game may remain absent if never scheduled, or be marked `not_played` with a reason.
 

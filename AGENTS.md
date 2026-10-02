@@ -108,6 +108,10 @@ Closed game results are the evidence. Week pages summarize their games, month pa
 
 Keep the existing paths and the cross-links between the same period's Wade, Miami, league-player and award records. Production tables use labeled per-game columns; shooting/possession detail uses totals. Recompute percentages from summed makes and attempts, not averages of percentages. G = 0 is an empty appearance record; missing feed coverage is not zero. Preserve source-game links and separate playoff totals.
 
+Player reports contain professional identity and statistics. Rebuild with `python scripts/update_player_reports.py`; verify without writes with `--check`. Detailed tables live in `Stat_Detail.md`, and each regular-season month/week has a readable README. Maintain dated status snapshots in `professional_identity.json`; the detailed alternate-history profile remains canon. A played note may point to an adjacent `Game_N.result.json` via `result_file`. Only that declared, closed result feeds reports. The reporter does not run the engine, advance time or invent tracking data. See `docs/player_statistics.md` for the source contract and formulas.
+
+Summer League, preseason, regular season, Play-In, playoffs and national-team events are distinct statistical records. National qualifiers, final tournaments and friendlies stay separate. NBA Cup applies only from 2023-24: group, quarterfinal and semifinal games remain owned by regular-season weeks and are tagged for the Cup view; only the championship is owned by `10_NBA_Cup/Championship`. Never duplicate a game to populate a second report. Play-In is unavailable before 2019-20; that restart format differs from 2020-21 onward. Reporting support never enables an unverified engine era. Examples under `docs/examples/` are illustrative and must not enter canonical career totals.
+
 Official NBA weekly award windows can cross this repository's fixed calendar buckets. Preserve the official award dates and file the honor on the week page containing the award period's end date.
 
 ## League stats and awards

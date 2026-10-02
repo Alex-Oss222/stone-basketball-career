@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "nesting": "career/<player>/<year>",
   "team_folder": "00_Team",
   "team_owner": "ai_gm",
@@ -53,7 +53,8 @@
     {
       "order": 7,
       "folder": "07_Play_In_Tournament",
-      "window": "after regular season"
+      "window": "after regular season",
+      "first_season": "2019-20"
     },
     {
       "order": 8,
@@ -64,6 +65,13 @@
       "order": 9,
       "folder": "09_Draft",
       "window": "lottery/combine in May; draft in late June"
+    },
+    {
+      "order": 10,
+      "folder": "10_NBA_Cup",
+      "window": "season-specific tournament dates",
+      "first_season": "2023-24",
+      "stat_role": "view; only championship games are stored here"
     }
   ],
   "regular_season": {
@@ -85,8 +93,12 @@
         3,
         4
       ],
-      "markers": [
-        "NBA Cup group games"
+      "markers": [],
+      "conditional_markers": [
+        {
+          "label": "NBA Cup group games on the verified season schedule",
+          "first_season": "2023-24"
+        }
       ]
     },
     "December": {
@@ -98,8 +110,13 @@
         4
       ],
       "markers": [
-        "NBA Cup knockout games",
         "December 15 trade eligibility"
+      ],
+      "conditional_markers": [
+        {
+          "label": "NBA Cup knockout games on the verified season schedule",
+          "first_season": "2023-24"
+        }
       ]
     },
     "January": {
@@ -155,7 +172,9 @@
       1,
       2
     ],
-    "game_2_conditional": true
+    "game_2_conditional": true,
+    "first_season": "2019-20",
+    "restart_exception": "2019-20 uses its own conditional 8-versus-9 format; the current 7-10 format starts in 2020-21"
   },
   "playoffs": {
     "best_of": 7,
@@ -183,5 +202,13 @@
         "name": "Finals"
       }
     ]
+  },
+  "nba_cup": {
+    "first_season": "2023-24",
+    "folder": "10_NBA_Cup",
+    "group_quarterfinal_semifinal_bucket": "regular",
+    "championship_bucket": "nba_cup_championship",
+    "championship_folder": "Championship",
+    "source": "https://pr.nba.com/nba-in-season-tournament-2023-24-season/"
   }
 }

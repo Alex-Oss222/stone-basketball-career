@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from runtime.season_rules import month_week
+from runtime.season_rules import month_week, area_available
 from runtime.player_stats import repository_rating_errors
 
 NOTE_STATUSES = {"not_started","active","complete"}
@@ -446,6 +446,9 @@ def validate():
 
     for area in config["areas"]:
         folder=season/area["folder"]
+        if not area_available(area, season.name):
+            require(errors,not any(folder.rglob("Game_*.md")),f"{area['folder']} cannot own games in {season.name}")
+            continue
         require(errors,folder.is_dir(),f"missing season area: {area['folder']}")
         if area["order"] in {1,2,3,4,5,9}:
             note=folder/"note.md"
@@ -551,6 +554,8 @@ def validate():
         require(errors,note.is_file(),f"{request.relative_to(ROOT)}: no matching game note {note.name}")
 
     errors.extend(report_errors(ROOT,player,team))
+    from runtime.player_reports import report_errors as player_report_errors
+    errors.extend(player_report_errors(ROOT,player))
     return errors
 
 

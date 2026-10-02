@@ -20,7 +20,7 @@ Status: `done`, `next`, `blocked: <what is missing>`, `later`.
 | 10 | Game builder: Miami game notes and requests from the schedule, on their dates | No hand-written requests | before October 5 |
 | 11 | League slate: Railway plays every non-Miami game from the schedule | Standings need all 1,189 games | before October 28 |
 | 12 | Injuries and availability | 82 games with no injuries is not a season | done: real clubs by real availability, Miami by engine-drawn injuries in each result (`runtime/injuries.py`), back-to-back fatigue for all; the game builder (item 10) must leave injured Miami players out (`injured_out`) and the write-back (item 13) record injuries |
-| 13 | Write-back: results into game notes, Wade, Miami and league stat pages | Results count only once written into the career record | before October 28 |
+| 13 | Write-back: results into game notes, Wade, Miami and league stat pages | Results count only once written into the career record | partial: player identity and source-based season/month/week/game reports built (`scripts/update_player_reports.py`, `docs/player_statistics.md`); remaining before October 28: automated canonical result write-back, Miami/league aggregation and injury-state updates |
 | 13a | Wade's requests to the front office: logged, weighed by his standing, engine-drawn where uncertain | Wade's influence on Miami | built for June 30 decisions (`wade_requests.json`, `docs/front_office.md`); extend to later decisions as they are built |
 
 ## Engine problems, worst first
