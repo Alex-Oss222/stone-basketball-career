@@ -283,6 +283,9 @@ def validate():
         for game in rdir.glob("Game_*.md"):
             validate_game(game,errors)
 
+    from runtime.schedule import schedule_errors
+    errors.extend(schedule_errors(ROOT))
+
     from runtime.game_requests import find_requests, request_errors
     errors.extend(request_errors(ROOT))
     for request in find_requests(ROOT):
