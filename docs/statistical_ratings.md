@@ -120,7 +120,7 @@ The user chose the hybrid model: real players' ability follows their real career
 
 ### Careers file
 
-`library/careers/nba_player_careers.json` does not exist yet, so no trajectory is active. Format:
+`library/careers/nba_player_careers.json` is imported from Basketball-Reference season tables for 2003-04 through 2013-14 (`scripts/import_careers.py`): 1,185 players, one row per player-season, using a traded player's combined row. The historical Dwyane Wade and the Awards column are removed on import. Trajectories are active. Format:
 
 ```json
 {

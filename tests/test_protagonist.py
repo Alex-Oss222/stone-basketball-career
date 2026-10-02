@@ -45,7 +45,8 @@ class WadeDevelopmentTests(unittest.TestCase):
     def test_rookie_season_gets_one_journaled_swing(self):
         journal = Journal()
         result = wade_game("t-swing", journal)
-        self.assertEqual([k for k in journal.closed if k.startswith("development:")], ["development:2003-04:wadedw01"])
+        wade = [k for k in journal.closed if k.startswith("development:") and k.endswith(":wadedw01")]
+        self.assertEqual(wade, ["development:2003-04:wadedw01"])
         self.assertEqual(development_seasons("wadedw01", "2006-07"), ["2006-07"])
         self.assertTrue(result["terminated"])
 

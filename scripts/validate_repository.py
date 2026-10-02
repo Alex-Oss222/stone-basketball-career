@@ -499,6 +499,9 @@ def validate():
         for game in rdir.glob("Game_*.md"):
             validate_game(game,errors)
 
+    from runtime.rosters import roster_errors
+    errors.extend(roster_errors(ROOT))
+
     from runtime.contracts import contract_errors
     errors.extend(contract_errors(ROOT))
 

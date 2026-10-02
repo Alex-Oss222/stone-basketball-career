@@ -14,7 +14,7 @@ Status: `done`, `next`, `blocked: <what is missing>`, `later`.
 | 4 | Miami's June 30 decisions: team options, Carter's player option, qualifying offers | First events on the clock | next |
 | 5 | Wade's rookie contract, with a negotiation log | Wade is unsigned; first user decision | next |
 | 6 | Miami's free agency (July 1 to 14 talks, signings from July 15), against a market of real clubs | Decides Miami's roster | after 2-5 |
-| 7 | Careers data: player season rates (option C) and real team rosters and minutes (option D), from 22 Basketball-Reference CSVs | Every opponent's lineup and every real player's ability | blocked: data upload; instructions in `library/incoming/CAREERS_DATA_INSTRUCTIONS.md` |
+| 7 | Careers data: player season rates (option C) and real team rosters and minutes (option D) | Every opponent's lineup and every real player's ability | done: `library/careers/nba_player_careers.json` (1,185 players) and `library/<year>/league/nba_<season>_team_rosters.json`, 2003-04 to 2013-14 |
 | 8 | Rotations: real minute shares for other clubs (from item 7), Miami's from its own depth chart, plus the conflict rules in `AGENTS.md` | Games need real lineups | after 6 and 7 |
 | 9 | Miami's perimeter-defense grade for Wade at camp | Agreed rating decision | at training camp |
 | 10 | Game builder: Miami game notes and requests from the schedule, on their dates | No hand-written requests | before October 5 |

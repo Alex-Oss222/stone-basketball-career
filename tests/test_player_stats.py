@@ -97,23 +97,29 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(explicit.players[0].stat_profile["bbr_id"], "jonesed02")
 
     def test_packet_freezes_rates_environment_and_refuses_override(self):
+        # Veteran path only: build packets against a library without the careers file (option C off).
+        import shutil
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        root = Path(tmp.name)
+        shutil.copytree(ROOT / "library", root / "library", ignore=shutil.ignore_patterns("careers"))
         clubs = load_clubs(ROOT / "library/2003/league/nba_2003_end_of_season.json")
         home = baseline_team("Miami Heat", clubs["Miami Heat"], 12, self.index)
         away = baseline_team("Orlando Magic", clubs["Orlando Magic"], 12, self.index)
-        packet, _, env = build_game_packet(home, away, event_id="fixture", game_date="2003-10-28")
+        packet, _, env = build_game_packet(home, away, event_id="fixture", game_date="2003-10-28", root=root)
         self.assertEqual(packet["environment"], env)
         self.assertEqual(packet["home"]["players"][0]["stat_profile"]["source_sha256"], sha256(ROOT/STATS_PATH))
         profile = deepcopy(home.players[0].stat_profile)
         profile["rates"]["free_throw_pct"] = 1
         edited = replace(home, players=(replace(home.players[0], stat_profile=profile),)+home.players[1:])
         with self.assertRaisesRegex(ValueError, "differs"):
-            build_game_packet(edited, away, event_id="fixture", game_date="2003-10-28")
+            build_game_packet(edited, away, event_id="fixture", game_date="2003-10-28", root=root)
         overlap = replace(home, players=(replace(home.players[0], ratings={"usage": 80}),)+home.players[1:])
         with self.assertRaisesRegex(ValueError, "overlapping"):
-            build_game_packet(overlap, away, event_id="fixture", game_date="2003-10-28")
+            build_game_packet(overlap, away, event_id="fixture", game_date="2003-10-28", root=root)
         duplicate = replace(home, players=(home.players[0], replace(home.players[1], stat_profile=home.players[0].stat_profile))+home.players[2:])
         with self.assertRaisesRegex(ValueError, "duplicate Basketball-Reference"):
-            build_game_packet(duplicate, away, event_id="fixture", game_date="2003-10-28")
+            build_game_packet(duplicate, away, event_id="fixture", game_date="2003-10-28", root=root)
 
 
 class StatisticalKernelTests(unittest.TestCase):
