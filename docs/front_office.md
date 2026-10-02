@@ -48,6 +48,21 @@ Records under `01_Free_Agency/`: `June_30/` (rule decisions and draws), `Plans/p
 
 Validation replays every negotiation record on the desk (`negotiation_errors`) and, once the clock has left June 26, reconciles the finance summary to the cap sheet and checks that every signed player has a card, a signed record and an open holding from his signing date (`ledger_errors`).
 
+## Trades (roadmap item 16, phase C of `front_office_design.md`)
+
+`python scripts/run_trade.py --search <date>` ranks the proposals Miami's front office would make on the date; `--propose <date>` writes the top-ranked one to `00_Team/Transactions/Trades/<id>.json` with the real club's acceptance as a decision packet beside it; `--write <date>` applies drawn answers on or after the date. The front office chooses the proposal; the user only triggers the step. Wade's `trade_target` and `trade_opposed` requests in the phase folder's `wade_requests.json` move the ranking by his standing weight.
+
+| Piece | Rule or judgement (named in `runtime/trades.py`) |
+|---|---|
+| Legality | the February 19, 2004 deadline and the July moratorium; a club over the cap after the trade takes back at most 115% of outgoing salary plus $100,000 (reported for 1999); base-year compensation for a Bird or Early Bird re-signing at a raise over 20% (inferred); a newly signed free agent waits three months or until December 15, a signed first-round pick 30 days (inferred); cash at most $3 million; the Stepien rule on Miami's firsts (`Finances/draft_picks.json`); 15 players after the trade; no sign-and-trade; Wade is never traded (it would change the simulated club) |
+| Player value | production value above replacement at a quarter point per efficiency point, plus a contract term (comparables price less salary over up to three seasons, in half mid-levels, capped at two points), expiring relief for a club over the tax projection; a negative asset counts at a twentieth |
+| Picks | chart value `4.0 x exp(-0.0555 x (slot - 1))` (the first pick about five times the thirtieth), slot from the owning club's 2002-03 record (`nba_2002_03_standings.json`), regressed halfway to the middle each year further out, Miami's own picks four slots later; second-rounders 0.1 |
+| Posture | contending (50+ wins) values present players 1.15x and picks 0.7x; rebuilding (30 or fewer) values picks 1.3x and players 30 or older 0.7x |
+| Acceptance | legal for both sides and minutes at the arriving positions (at most two incumbents at depth one and two on the end-of-season baseline); every asset above one point is raised to the seventh power before summing (star premium); the relative change of the partner's sum goes through a logistic with slope 6, floored at 2% and capped at 90%; the same proposal on the same date gives the same packet |
+| Write-back | an accepted trade enters Miami's cap sheet, register, holdings, depth chart (unassigned arrival) and a new card; players Miami sends go to `Team/Roster/departures.json`, which `runtime/rotations.py` reads as arrivals at the real club under conflict rule 3 (their 2002-03 share, up to the departing minutes); pick ownership moves on `Finances/draft_picks.json`; the current phase note gets the line |
+
+Proposals to Miami from real clubs and injuries in the value are not built; the design (section 7) keeps them as later work.
+
 ## Wade's rookie contract (roadmap item 5)
 
 Miami opens with 120% of the No. 5 scale, the customary level for first-round picks: $2,636,400, $2,834,160 and $3,031,920 over 2003-04 to 2005-06, plus a $3,841,443 team option for 2006-07, to be exercised by October 31, 2005 (October 31 after his second season, FAQ Q38). Miami intends to sign him after its July free-agency moves, because until he signs he counts at 100% of scale.

@@ -1,0 +1,127 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2002-03",
+ "kind": "regular_season_standings",
+ "purpose": "Final 2002-03 regular-season records: on-date evidence of each club's strength for the 2003 offseason (trade posture, free-agent alternatives). Not a result of the simulation.",
+ "as_of": "2003-04-16",
+ "source": "https://www.basketball-reference.com/leagues/NBA_2003_standings.html",
+ "clubs": {
+  "Atlanta Hawks": {
+   "wins": 35,
+   "losses": 47
+  },
+  "Boston Celtics": {
+   "wins": 44,
+   "losses": 38
+  },
+  "Chicago Bulls": {
+   "wins": 30,
+   "losses": 52
+  },
+  "Cleveland Cavaliers": {
+   "wins": 17,
+   "losses": 65
+  },
+  "Dallas Mavericks": {
+   "wins": 60,
+   "losses": 22
+  },
+  "Denver Nuggets": {
+   "wins": 17,
+   "losses": 65
+  },
+  "Detroit Pistons": {
+   "wins": 50,
+   "losses": 32
+  },
+  "Golden State Warriors": {
+   "wins": 38,
+   "losses": 44
+  },
+  "Houston Rockets": {
+   "wins": 43,
+   "losses": 39
+  },
+  "Indiana Pacers": {
+   "wins": 48,
+   "losses": 34
+  },
+  "Los Angeles Clippers": {
+   "wins": 27,
+   "losses": 55
+  },
+  "Los Angeles Lakers": {
+   "wins": 50,
+   "losses": 32
+  },
+  "Memphis Grizzlies": {
+   "wins": 28,
+   "losses": 54
+  },
+  "Miami Heat": {
+   "wins": 25,
+   "losses": 57
+  },
+  "Milwaukee Bucks": {
+   "wins": 42,
+   "losses": 40
+  },
+  "Minnesota Timberwolves": {
+   "wins": 51,
+   "losses": 31
+  },
+  "New Jersey Nets": {
+   "wins": 49,
+   "losses": 33
+  },
+  "New Orleans Hornets": {
+   "wins": 47,
+   "losses": 35
+  },
+  "New York Knicks": {
+   "wins": 37,
+   "losses": 45
+  },
+  "Orlando Magic": {
+   "wins": 42,
+   "losses": 40
+  },
+  "Philadelphia 76ers": {
+   "wins": 48,
+   "losses": 34
+  },
+  "Phoenix Suns": {
+   "wins": 44,
+   "losses": 38
+  },
+  "Portland Trail Blazers": {
+   "wins": 50,
+   "losses": 32
+  },
+  "Sacramento Kings": {
+   "wins": 59,
+   "losses": 23
+  },
+  "San Antonio Spurs": {
+   "wins": 60,
+   "losses": 22
+  },
+  "Seattle SuperSonics": {
+   "wins": 40,
+   "losses": 42
+  },
+  "Toronto Raptors": {
+   "wins": 24,
+   "losses": 58
+  },
+  "Utah Jazz": {
+   "wins": 47,
+   "losses": 35
+  },
+  "Washington Wizards": {
+   "wins": 37,
+   "losses": 45
+  }
+ }
+}
