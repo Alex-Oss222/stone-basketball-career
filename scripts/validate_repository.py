@@ -499,6 +499,13 @@ def validate():
         for game in rdir.glob("Game_*.md"):
             validate_game(game,errors)
 
+    from scripts.build_miami_free_agent_rights import OUT as RIGHTS_PATH, build as build_rights
+    try:
+        if json.loads((ROOT / RIGHTS_PATH).read_text(encoding="utf-8")) != json.loads(json.dumps(build_rights(ROOT))):
+            errors.append("Miami free-agent rights are stale; run scripts/build_miami_free_agent_rights.py")
+    except (OSError, ValueError, KeyError) as exc:
+        errors.append(f"cannot validate Miami free-agent rights: {exc}")
+
     from runtime.rosters import roster_errors
     errors.extend(roster_errors(ROOT))
 
