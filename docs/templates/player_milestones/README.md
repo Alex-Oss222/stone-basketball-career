@@ -1,21 +1,30 @@
 # Your career between games
 
-Six reusable player-facing pages for the moments when the calendar changes what you can do.
+Nine reusable player-facing pages for the moments when the calendar changes what you can do. Each has an immediate action, detailed working records and a next checkpoint.
 
-[See the filled examples](../../examples/player_milestones/README.md) · [Research and era rules](research.md) · [How to use these pages](workflow.md)
+[Interactive screen gallery](../../examples/player_milestones/career_milestones_preview.html) · [Filled examples](../../examples/player_milestones/README.md) · [Player-experience research](player_experience_research.md) · [Research and era rules](research.md) · [How to use these pages](workflow.md)
 
 [Detailed contract/free-agency design](contract_negotiation_research.md) · [Interactive contract desk](../../examples/player_milestones/contract_negotiation_preview.html). Compare four ordinary proposals together; the fifth position is reserved for the incumbent's RFA matching record.
 
 | Moment | Open this template | What you get to do |
 | --- | --- | --- |
+| Several milestones or appointments overlap | [Career calendar](career_calendar.md) | See live decisions, commitments, dependencies and conflicts |
+| A contract end, option or qualifying-offer checkpoint approaches | [Contract checkpoint](contract_checkpoint.md) | See whose decision it is, verify its consequence and prepare your response |
 | A contract offer arrives, an extension window opens, or an option deadline approaches | [Contract desk](contract_negotiation.md) | Compare protected money and control; accept, counter, decline, or exercise your own option when eligible |
 | You are eligible to enter the market | [Free-agency board](free_agency.md) | Set priorities, compare actual offers, choose meetings and direct negotiations |
 | Your offseason development block starts | [Training plan](offseason_training.md) | Choose a primary focus, agree a schedule, review practice evidence and adjust |
 | A trade involving you is proposed or confirmed | [Trade update](trade_update.md) | Understand your rights, respond privately, prepare to report and discuss your new role |
 | Your team's season ends | [Exit meeting](exit_meeting.md) | Review your season, state role goals and carry two priorities into summer |
 | Camp opens, or coaches schedule a role review | [Camp review](training_camp.md) | Choose what to ask for, review staff observations and respond to the communicated assignment |
+| A reporting period closes | [Stats review](stats_review.md) | Compare opportunity and production, inspect evidence and choose a concrete basketball question |
 
-These are different working pages: an offer sheet, a market comparison, a training block, a transaction notice, a season review and a coaching conversation. Each ends with a concrete reply and the next event that will bring the page back.
+These are different working pages: a calendar, a contract-status decision, a term sheet, a market board, a training block, a transaction dossier, a season review, a coaching conversation and a statistical check-in. Each ends with a concrete reply and the next event that will bring the page back.
+
+## Status and realistic contract value
+
+The [market profile baseline](../../player_market_profile.md) lets a hypothetical setup select UFA or RFA, while live status is derived from dated control and qualifying-offer evidence. It estimates a first-year salary range from dated production and veteran contracts, exposes the comparables and separates that estimate from service-based legal bounds and a club's verified funding route. A new signed contract requires its own supported negotiation and execution path.
+
+The [gallery](../../examples/player_milestones/career_milestones_preview.html) makes the scenarios reviewable in a browser. Its local actions never sign, send, trade, train or advance the canonical player. The detailed [existing contract desk](../../examples/player_milestones/contract_negotiation_preview.html) remains available for the full four-offer and matching workflow.
 
 ## What brings a page onto the screen?
 

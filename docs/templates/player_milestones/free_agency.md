@@ -29,6 +29,34 @@ Do not produce a countdown from an assumed time. A deadline without reliable rec
 
 Rejecting a current-team extension or proposal does not itself end an existing contract, waive draft rights or make an RFA unrestricted. Show the actual eligibility transition before opening outside signing choices. A fictional preview is never that transition.
 
+## Scenario setup and live rights
+
+**Template/demo selector:** {{UFA / RFA}}. This lets the user explore either market. **Live derived status:** {{status; controlling evidence}}. A live player cannot elect to remove a club's matching rights by changing the selector.
+
+| Status | What the screen opens | What remains unavailable |
+| --- | --- | --- |
+| UFA | Eligible club negotiations and direct signing route | RFA matching controls |
+| RFA with maintained rights | Incumbent negotiation, available QO, eligible outside sheet and matching timeline | Guaranteed choice of the outside destination after a sheet |
+| Draft rights / active contract / unresolved option | Appropriate rookie, extension or checkpoint screen | Open-market signing without the required status transition |
+| Rights evidence missing | Questions, records review and existing proposal inspection | Claims of verified eligibility or signing readiness |
+
+The [market profile baseline](../../player_market_profile.md) supplies this separation and an explainable first-year salary range. It does not turn a hypothetical status into a real contract action.
+
+## What are you worth in this market?
+
+**First-year estimate:** {{low / working target / high}} · **Cap share:** {{percentages}} · **Evidence as of:** {{date}} · **Confidence:** {{label and reason}}.
+
+| Value dossier | Evidence to show | Why it matters |
+| --- | --- | --- |
+| Career production | {{sourced closed totals; minutes and sample}} | Keeps the valuation connected to this simulated player |
+| Comparable contracts | {{players, signing date, age, role, first salary, contemporaneous cap}} | Explains the market anchor and era normalization |
+| Missing information | {{defense/medical/tracking or weak comparable coverage}} | Keeps the range from implying precision the evidence cannot support |
+| Negotiating rights | {{verified status and incumbent rights}} | Determines your alternatives; not an automatic fixed RFA discount |
+| Legal bounds | {{verified minimum, maximum and rule source}} | Separates allowable salary from market judgment |
+| Each bidder's route | {{dated ledger and cap/exception/rights route}} | Shows whether the specific proposed salary can be supported |
+
+If there is no adequate evidence, display **Estimate unavailable**, identify the missing inputs, and keep the actual offers visible. Never fill a gap using historical Wade's future production or contracts. Prefer a range to a false precise prediction. All example numbers must identify whether they are sourced or synthetic.
+
 ## Start with your team's proposal
 
 | Proposal | Your available response | Team response still required |
