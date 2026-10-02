@@ -1,0 +1,1044 @@
+{
+  "schema_version": 1,
+  "league": "NBA",
+  "season": 2003,
+  "week": null,
+  "as_of": "2003 NBA draft (June 26, 2003), after draft-night trades",
+  "clubs": {
+    "Atlanta Hawks": {
+      "code": "ATL",
+      "players": [
+        {
+          "player_id": "Boris Diaw",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": "32",
+          "espn_id": "2167",
+          "bbr_id": "diawbo01",
+          "birth_date": "1982-04-16",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Boris_Diaw%2C_France_-_Canada_July_2011.jpg?width=500",
+          "headshot_license": "CC BY 3.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/3.0",
+          "headshot_credit": "PierreSelim",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Boris_Diaw,_France_-_Canada_July_2011.jpg",
+          "page_url": "https://www.basketball-reference.com/players/d/diawbo01.html"
+        },
+        {
+          "player_id": "Travis Hansen",
+          "position": "SG",
+          "depth": null,
+          "slots": "",
+          "jersey": "6",
+          "espn_id": "2005",
+          "bbr_id": "hansetr01",
+          "birth_date": "1978-04-15",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/TravisHansen2010BCKhimki.JPG?width=500",
+          "headshot_license": "CC BY-SA 3.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "headshot_credit": "Hodyachih",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:TravisHansen2010BCKhimki.JPG",
+          "page_url": "https://www.basketball-reference.com/players/h/hansetr01.html"
+        }
+      ]
+    },
+    "Boston Celtics": {
+      "code": "BOS",
+      "players": [
+        {
+          "player_id": "Marcus Banks",
+          "position": "PG",
+          "depth": null,
+          "slots": "",
+          "jersey": "11",
+          "espn_id": "2165",
+          "bbr_id": "banksma01",
+          "birth_date": "1981-11-19",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marcus_banks.jpg?width=500",
+          "headshot_license": "Public domain",
+          "headshot_license_url": null,
+          "headshot_credit": "Runningboards",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Marcus_banks.jpg",
+          "page_url": "https://www.basketball-reference.com/players/b/banksma01.html"
+        },
+        {
+          "player_id": "Kendrick Perkins",
+          "position": "C",
+          "depth": null,
+          "slots": "",
+          "jersey": "43",
+          "espn_id": "2018",
+          "bbr_id": "perkike01",
+          "birth_date": "1984-11-10",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kendrick_Perkins.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison from Owings Mills, USA",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Kendrick_Perkins.jpg",
+          "page_url": "https://www.basketball-reference.com/players/p/perkike01.html"
+        },
+        {
+          "player_id": "Brandon Hunter",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": "56",
+          "espn_id": "2007",
+          "bbr_id": "huntebr01",
+          "birth_date": "1980-11-24",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Hunter.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.5",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+          "headshot_credit": "No machine-readable author provided. Finizio assumed (based on copyright claims).",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Brandon_Hunter.jpg",
+          "page_url": "https://www.basketball-reference.com/players/h/huntebr01.html"
+        }
+      ]
+    },
+    "Chicago Bulls": {
+      "code": "CHI",
+      "players": [
+        {
+          "player_id": "Kirk Hinrich",
+          "position": "PG",
+          "depth": null,
+          "slots": "",
+          "jersey": "12",
+          "espn_id": "1981",
+          "bbr_id": "hinriki01",
+          "birth_date": "1981-01-02",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kirk_Hinrich_with_ball.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Kirk_Hinrich_with_ball.jpg",
+          "page_url": "https://www.basketball-reference.com/players/h/hinriki01.html"
+        },
+        {
+          "player_id": "Mario Austin",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "1988",
+          "bbr_id": "austima01",
+          "birth_date": "1982-02-26",
+          "headshot_url": null,
+          "page_url": "https://www.basketball-reference.com/players/a/austima01.html"
+        },
+        {
+          "player_id": "Tommy Smith",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "2023",
+          "bbr_id": "smithto03",
+          "birth_date": "1980-12-04",
+          "headshot_url": null,
+          "page_url": "https://www.basketball-reference.com/players/s/smithto03.html"
+        }
+      ]
+    },
+    "Cleveland Cavaliers": {
+      "code": "CLE",
+      "players": [
+        {
+          "player_id": "LeBron James",
+          "position": "SF",
+          "depth": null,
+          "slots": "",
+          "jersey": "23",
+          "espn_id": "1966",
+          "bbr_id": "jamesle01",
+          "birth_date": "1984-12-30",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/LeBron_James_%2851959977144%29_%28cropped2%29.jpg?width=500",
+          "headshot_license": "CC BY 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/2.0",
+          "headshot_credit": "Erik Drost",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:LeBron_James_(51959977144)_(cropped2).jpg",
+          "page_url": "https://www.basketball-reference.com/players/j/jamesle01.html"
+        },
+        {
+          "player_id": "Jason Kapono",
+          "position": "SF",
+          "depth": null,
+          "slots": "",
+          "jersey": "24",
+          "espn_id": "2010",
+          "bbr_id": "kaponja01",
+          "birth_date": "1981-02-04",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jason_Kapono_with_Miami.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Jason_Kapono_with_Miami.jpg",
+          "page_url": "https://www.basketball-reference.com/players/k/kaponja01.html"
+        }
+      ]
+    },
+    "Dallas Mavericks": {
+      "code": "DAL",
+      "players": [
+        {
+          "player_id": "Josh Howard",
+          "position": "SF",
+          "depth": null,
+          "slots": "",
+          "jersey": "5",
+          "espn_id": "2006",
+          "bbr_id": "howarjo01",
+          "birth_date": "1980-04-28",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Howard_Wizards.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison from Owings Mills, USA",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Josh_Howard_Wizards.jpg",
+          "page_url": "https://www.basketball-reference.com/players/h/howarjo01.html"
+        }
+      ]
+    },
+    "Denver Nuggets": {
+      "code": "DEN",
+      "players": [
+        {
+          "player_id": "Carmelo Anthony",
+          "position": "SF",
+          "depth": null,
+          "slots": "",
+          "jersey": "15",
+          "espn_id": "1975",
+          "bbr_id": "anthoca01",
+          "birth_date": "1984-05-29",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carmelo_Anthony_-_51958670372_%28cropped%29.jpg?width=500",
+          "headshot_license": "CC BY 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/2.0",
+          "headshot_credit": "Erik Drost",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Carmelo_Anthony_-_51958670372_(cropped).jpg",
+          "page_url": "https://www.basketball-reference.com/players/a/anthoca01.html"
+        },
+        {
+          "player_id": "Sani Becirovic",
+          "position": "SG",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "1992",
+          "bbr_id": "becirsa01",
+          "birth_date": "1981-05-19",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sani_Be%C4%8Dirovi%C4%87_%40_BC_Zenit_%282026-05-04%29_-_1.jpg?width=500",
+          "headshot_license": "CC BY-SA 4.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "headshot_credit": "Vyacheslav Bukharov",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Sani_Be%C4%8Dirovi%C4%87_@_BC_Zenit_(2026-05-04)_-_1.jpg",
+          "page_url": "https://www.basketball-reference.com/players/b/becirsa01.html"
+        },
+        {
+          "player_id": "Xue Yuyang",
+          "position": "C",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "2179",
+          "bbr_id": "yuyanxu01",
+          "birth_date": "1982-10-04",
+          "headshot_url": null,
+          "page_url": "https://www.basketball-reference.com/players/y/yuyanxu01.html"
+        }
+      ]
+    },
+    "Detroit Pistons": {
+      "code": "DET",
+      "players": [
+        {
+          "player_id": "Darko Milicic",
+          "position": "C",
+          "depth": null,
+          "slots": "",
+          "jersey": "31",
+          "espn_id": "2171",
+          "bbr_id": "milicda01",
+          "birth_date": "1985-06-20",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Darko_Milicic_cropped.jpg?width=500",
+          "headshot_license": "CC BY 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/2.0",
+          "headshot_credit": "k1k0.com",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Darko_Milicic_cropped.jpg",
+          "page_url": "https://www.basketball-reference.com/players/m/milicda01.html"
+        },
+        {
+          "player_id": "Carlos Delfino",
+          "position": "SG",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "1999",
+          "bbr_id": "delfica01",
+          "birth_date": "1982-08-29",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carlos_Delfino.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison from Owings Mills, USA",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Carlos_Delfino.jpg",
+          "page_url": "https://www.basketball-reference.com/players/d/delfica01.html"
+        },
+        {
+          "player_id": "Andreas Glyniadakis",
+          "position": "C",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "2168",
+          "bbr_id": "glynian01",
+          "birth_date": "1981-08-26",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Andreas_Glyniadakis_Greece-Turkey_76-74.jpg?width=500",
+          "headshot_license": "CC BY 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/2.0",
+          "headshot_credit": "Klearchos Kapoutsis from Santorini, Greece",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Andreas_Glyniadakis_Greece-Turkey_76-74.jpg",
+          "page_url": "https://www.basketball-reference.com/players/g/glynian01.html"
+        }
+      ]
+    },
+    "Golden State Warriors": {
+      "code": "GS",
+      "players": [
+        {
+          "player_id": "Mickael Pietrus",
+          "position": "PG",
+          "depth": null,
+          "slots": "",
+          "jersey": "2",
+          "espn_id": "2173",
+          "bbr_id": "pietrmi01",
+          "birth_date": "1982-02-07",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietrus_2.jpg?width=500",
+          "headshot_license": "CC BY 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/2.0",
+          "headshot_credit": "derivative work: Ytoyoda ( talk ) Monta_Ellis_dunking.jpg : Greg Ma",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Pietrus_2.jpg",
+          "page_url": "https://www.basketball-reference.com/players/p/pietrmi01.html"
+        },
+        {
+          "player_id": "Derrick Zimmerman",
+          "position": "PG",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "2180",
+          "bbr_id": "zimmede01",
+          "birth_date": "1981-12-02",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Derrick_Zimmerman_dunk_2011_Ukrainian_Superleague_All-Star.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Александр Осипов",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Derrick_Zimmerman_dunk_2011_Ukrainian_Superleague_All-Star.jpg",
+          "page_url": "https://www.basketball-reference.com/players/z/zimmede01.html"
+        }
+      ]
+    },
+    "Houston Rockets": {
+      "code": "HOU",
+      "players": [
+        {
+          "player_id": "Malick Badiane",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "1989",
+          "bbr_id": "badiama01",
+          "birth_date": "1984-01-01",
+          "headshot_url": null,
+          "page_url": "https://www.basketball-reference.com/players/b/badiama01.html"
+        }
+      ]
+    },
+    "Indiana Pacers": {
+      "code": "IND",
+      "players": [
+        {
+          "player_id": "James Jones",
+          "position": "SF",
+          "depth": null,
+          "slots": "",
+          "jersey": "33",
+          "espn_id": "2009",
+          "bbr_id": "jonesja02",
+          "birth_date": "1980-10-04",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/James_Jones.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:James_Jones.jpg",
+          "page_url": "https://www.basketball-reference.com/players/j/jonesja02.html"
+        }
+      ]
+    },
+    "Los Angeles Clippers": {
+      "code": "LAC",
+      "players": [
+        {
+          "player_id": "Chris Kaman",
+          "position": "C",
+          "depth": null,
+          "slots": "",
+          "jersey": "35",
+          "espn_id": "1982",
+          "bbr_id": "kamanch01",
+          "birth_date": "1982-04-28",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Kaman.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison from Owings Mills, USA",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Chris_Kaman.jpg",
+          "page_url": "https://www.basketball-reference.com/players/k/kamanch01.html"
+        },
+        {
+          "player_id": "Sofoklis Schortsanitis",
+          "position": "C",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "2021",
+          "bbr_id": "schorso01",
+          "birth_date": "1985-06-22",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Schortsanitis_warming_up_in_2011.jpg?width=500",
+          "headshot_license": "CC BY-SA 3.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "headshot_credit": "Sofo_warm_up_2.jpg : Botend derivative work: El cestofilo ( talk )",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Schortsanitis_warming_up_in_2011.jpg",
+          "page_url": "https://www.basketball-reference.com/players/s/schorso01.html"
+        }
+      ]
+    },
+    "Los Angeles Lakers": {
+      "code": "LAL",
+      "players": [
+        {
+          "player_id": "Brian Cook",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": "7",
+          "espn_id": "1998",
+          "bbr_id": "cookbr01",
+          "birth_date": "1980-12-04",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Brian_Cook_Clippers.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison from Owings Mills, USA",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Brian_Cook_Clippers.jpg",
+          "page_url": "https://www.basketball-reference.com/players/c/cookbr01.html"
+        },
+        {
+          "player_id": "Luke Walton",
+          "position": "SF",
+          "depth": null,
+          "slots": "",
+          "jersey": "4",
+          "espn_id": "2027",
+          "bbr_id": "waltolu01",
+          "birth_date": "1980-03-28",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Luke_Walton1_%28cropped%29.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Luke_Walton1_(cropped).jpg",
+          "page_url": "https://www.basketball-reference.com/players/w/waltolu01.html"
+        }
+      ]
+    },
+    "Memphis Grizzlies": {
+      "code": "MEM",
+      "players": [
+        {
+          "player_id": "Troy Bell",
+          "position": "PG",
+          "depth": null,
+          "slots": "",
+          "jersey": "3",
+          "espn_id": "1993",
+          "bbr_id": "belltr01",
+          "birth_date": "1980-11-10",
+          "headshot_url": null,
+          "page_url": "https://www.basketball-reference.com/players/b/belltr01.html"
+        },
+        {
+          "player_id": "Dahntay Jones",
+          "position": "SG",
+          "depth": null,
+          "slots": "",
+          "jersey": "30",
+          "espn_id": "2008",
+          "bbr_id": "jonesda02",
+          "birth_date": "1980-12-27",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dahntay_Jones_%28cropped%29.jpg?width=500",
+          "headshot_license": "CC BY 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/2.0",
+          "headshot_credit": "File:Dahntay Jones.jpg : scott mecum derivative work: Shakeydeal33",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Dahntay_Jones_(cropped).jpg",
+          "page_url": "https://www.basketball-reference.com/players/j/jonesda02.html"
+        }
+      ]
+    },
+    "Miami Heat": {
+      "code": "MIA",
+      "players": [
+        {
+          "player_id": "Dwyane Wade",
+          "position": "SG",
+          "depth": null,
+          "slots": "",
+          "jersey": "3",
+          "espn_id": "1987",
+          "bbr_id": "wadedw01",
+          "birth_date": "1984-01-17",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dwyane_Wade_e1.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Flickr user Keith Allison",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Dwyane_Wade_e1.jpg",
+          "page_url": "https://www.basketball-reference.com/players/w/wadedw01.html"
+        },
+        {
+          "player_id": "Jerome Beasley",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": "24",
+          "espn_id": "1991",
+          "bbr_id": "beaslje01",
+          "birth_date": "1980-05-17",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerome_Beasley.jpg?width=500",
+          "headshot_license": "CC BY 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/2.0",
+          "headshot_credit": "Jos @ FPS-Groningen from Ten Boer, Netherlands",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Jerome_Beasley.jpg",
+          "page_url": "https://www.basketball-reference.com/players/b/beaslje01.html"
+        }
+      ]
+    },
+    "Milwaukee Bucks": {
+      "code": "MIL",
+      "players": [
+        {
+          "player_id": "T.J. Ford",
+          "position": "PG",
+          "depth": null,
+          "slots": "",
+          "jersey": "11",
+          "espn_id": "1979",
+          "bbr_id": "fordtj01",
+          "birth_date": "1983-03-24",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tj_ford_zzz_cropped.jpg?width=500",
+          "headshot_license": "CC BY-SA 3.0",
+          "headshot_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "headshot_credit": "Tj_ford_zzz.jpg : Chensiyuan derivative work: Luxic ( talk )",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Tj_ford_zzz_cropped.jpg",
+          "page_url": "https://www.basketball-reference.com/players/f/fordtj01.html"
+        },
+        {
+          "player_id": "Szymon Szewczyk",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "2024",
+          "bbr_id": "szewcsz01",
+          "birth_date": "1982-12-21",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/20140817_Basketball_%C3%96sterreich_Polen_0656.jpg?width=500",
+          "headshot_license": "CC BY-SA 3.0 at",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+          "headshot_credit": "Ailura",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:20140817_Basketball_%C3%96sterreich_Polen_0656.jpg",
+          "page_url": "https://www.basketball-reference.com/players/s/szewcsz01.html"
+        }
+      ]
+    },
+    "Minnesota Timberwolves": {
+      "code": "MIN",
+      "players": [
+        {
+          "player_id": "Ndudi Ebi",
+          "position": "SF",
+          "depth": null,
+          "slots": "",
+          "jersey": "44",
+          "espn_id": "2001",
+          "bbr_id": "ebind01",
+          "birth_date": "1984-06-18",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ebi_ritaglio_%28cropped%29.jpg?width=500",
+          "headshot_license": "Public domain",
+          "headshot_license_url": null,
+          "headshot_credit": "El cestofilo",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Ebi_ritaglio_(cropped).jpg",
+          "page_url": "https://www.basketball-reference.com/players/e/ebind01.html"
+        },
+        {
+          "player_id": "Rick Rickert",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "2020",
+          "bbr_id": "rickeri01",
+          "birth_date": "1983-02-11",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rick_Rickert.jpg?width=500",
+          "headshot_license": "CC BY-SA 3.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "headshot_credit": "User:STB-1",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Rick_Rickert.jpg",
+          "page_url": "https://www.basketball-reference.com/players/r/rickeri01.html"
+        }
+      ]
+    },
+    "New Jersey Nets": {
+      "code": "NJ",
+      "players": [
+        {
+          "player_id": "Zoran Planinic",
+          "position": "SG",
+          "depth": null,
+          "slots": "",
+          "jersey": "10",
+          "espn_id": "2174",
+          "bbr_id": "planizo01",
+          "birth_date": "1982-09-12",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/ZoranPlaninicBCKhimki.jpg?width=500",
+          "headshot_license": "CC BY-SA 3.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "headshot_credit": "Hodyachih",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:ZoranPlaninicBCKhimki.jpg",
+          "page_url": "https://www.basketball-reference.com/players/p/planizo01.html"
+        }
+      ]
+    },
+    "New Orleans Hornets": {
+      "code": "NO",
+      "players": [
+        {
+          "player_id": "David West",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": "30",
+          "espn_id": "2177",
+          "bbr_id": "westda01",
+          "birth_date": "1980-08-29",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/David_West_2011.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "youssef errami",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:David_West_2011.jpg",
+          "page_url": "https://www.basketball-reference.com/players/w/westda01.html"
+        },
+        {
+          "player_id": "James Lang",
+          "position": "C",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "2170",
+          "bbr_id": "langja01",
+          "birth_date": "1983-10-17",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/James_Lang_of_Arkansas_RimRockers_in_2006.jpg?width=500",
+          "headshot_license": "CC BY 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/2.0",
+          "headshot_credit": "Arkansas_Rimrockers_vs_Austin_Toros_2006-01-27.jpg : Jeff Kramer derivative work: Arbor to SJ",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:James_Lang_of_Arkansas_RimRockers_in_2006.jpg",
+          "page_url": "https://www.basketball-reference.com/players/l/langja01.html"
+        }
+      ]
+    },
+    "New York Knicks": {
+      "code": "NY",
+      "players": [
+        {
+          "player_id": "Michael Sweetney",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": "50",
+          "espn_id": "2175",
+          "bbr_id": "sweetmi01",
+          "birth_date": "1982-10-25",
+          "headshot_url": null,
+          "page_url": "https://www.basketball-reference.com/players/s/sweetmi01.html"
+        },
+        {
+          "player_id": "Maciej Lampe",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "2169",
+          "bbr_id": "lampema01",
+          "birth_date": "1985-02-05",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/20160814_Basketball_%C3%96BV_Vier-Nationen-Turnier_4394.jpg?width=500",
+          "headshot_license": "CC BY-SA 3.0 at",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+          "headshot_credit": "Ailura",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:20160814_Basketball_%C3%96BV_Vier-Nationen-Turnier_4394.jpg",
+          "page_url": "https://www.basketball-reference.com/players/l/lampema01.html"
+        },
+        {
+          "player_id": "Slavko Vranes",
+          "position": "C",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "2176",
+          "bbr_id": "vranesl01",
+          "birth_date": "1983-01-30",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Slavko_Vranes.jpg?width=500",
+          "headshot_license": "CC BY-SA 3.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "headshot_credit": "Zoran Borovac",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Slavko_Vranes.jpg",
+          "page_url": "https://www.basketball-reference.com/players/v/vranesl01.html"
+        }
+      ]
+    },
+    "Orlando Magic": {
+      "code": "ORL",
+      "players": [
+        {
+          "player_id": "Reece Gaines",
+          "position": "PG",
+          "depth": null,
+          "slots": "",
+          "jersey": "22",
+          "espn_id": "2002",
+          "bbr_id": "gainere01",
+          "birth_date": "1981-01-07",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reece_Gaines.jpg?width=500",
+          "headshot_license": "CC BY 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/2.0",
+          "headshot_credit": "Anderson_in_the_Corner.jpg : Jeramey Jannene derivative work: Lpdrew ( talk )",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Reece_Gaines.jpg",
+          "page_url": "https://www.basketball-reference.com/players/g/gainere01.html"
+        },
+        {
+          "player_id": "Zaza Pachulia",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": "27",
+          "espn_id": "2016",
+          "bbr_id": "pachuza01",
+          "birth_date": "1984-02-10",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zaza_Pachulia_driving_to_basket_%28cropped%29.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison from Hanover, MD, USA",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Zaza_Pachulia_driving_to_basket_(cropped).jpg",
+          "page_url": "https://www.basketball-reference.com/players/p/pachuza01.html"
+        },
+        {
+          "player_id": "Keith Bogans",
+          "position": "SG",
+          "depth": null,
+          "slots": "",
+          "jersey": "3",
+          "espn_id": "1995",
+          "bbr_id": "boganke01",
+          "birth_date": "1980-05-12",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Keith_Bogans_Bulls.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison from Owings Mills, USA",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Keith_Bogans_Bulls.jpg",
+          "page_url": "https://www.basketball-reference.com/players/b/boganke01.html"
+        }
+      ]
+    },
+    "Philadelphia 76ers": {
+      "code": "PHI",
+      "players": [
+        {
+          "player_id": "Willie Green",
+          "position": "SG",
+          "depth": null,
+          "slots": "",
+          "jersey": "33",
+          "espn_id": "2004",
+          "bbr_id": "greenwi01",
+          "birth_date": "1981-07-28",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Willie_Green_Clippers.jpg?width=500",
+          "headshot_license": "CC BY-SA 3.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "headshot_credit": "File:Los Angeles Clippers 2013-14 season.jpg : Keith Allison derivative work: Chrishmt0423",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Willie_Green_Clippers.jpg",
+          "page_url": "https://www.basketball-reference.com/players/g/greenwi01.html"
+        },
+        {
+          "player_id": "Kyle Korver",
+          "position": "SG",
+          "depth": null,
+          "slots": "",
+          "jersey": "26",
+          "espn_id": "2011",
+          "bbr_id": "korveky01",
+          "birth_date": "1981-03-17",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyle_Korver_%2825756529437%29_%28cropped%29.jpg?width=500",
+          "headshot_license": "CC BY 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/2.0",
+          "headshot_credit": "Erik Drost",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Kyle_Korver_(25756529437)_(cropped).jpg",
+          "page_url": "https://www.basketball-reference.com/players/k/korveky01.html"
+        }
+      ]
+    },
+    "Phoenix Suns": {
+      "code": "PHX",
+      "players": [
+        {
+          "player_id": "Zarko Cabarkapa",
+          "position": "SF",
+          "depth": null,
+          "slots": "",
+          "jersey": "11",
+          "espn_id": "1997",
+          "bbr_id": "cabarza01",
+          "birth_date": "1981-05-21",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C5%BDarko_%C4%8Cabarkapa_Fenerbah%C3%A7e_Basketball_20210913_%281%29.jpg?width=500",
+          "headshot_license": "CC BY-SA 4.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "headshot_credit": "Sakhalinio",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:%C5%BDarko_%C4%8Cabarkapa_Fenerbah%C3%A7e_Basketball_20210913_(1).jpg",
+          "page_url": "https://www.basketball-reference.com/players/c/cabarza01.html"
+        },
+        {
+          "player_id": "Leandro Barbosa",
+          "position": "SG",
+          "depth": null,
+          "slots": "",
+          "jersey": "10",
+          "espn_id": "2166",
+          "bbr_id": "barbole01",
+          "birth_date": "1982-11-28",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leandro_Barbosa_Rio_2016cr.jpg?width=500",
+          "headshot_license": "CC BY 3.0 br",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+          "headshot_credit": "Fernando Frazão",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Leandro_Barbosa_Rio_2016cr.jpg",
+          "page_url": "https://www.basketball-reference.com/players/b/barbole01.html"
+        }
+      ]
+    },
+    "Portland Trail Blazers": {
+      "code": "POR",
+      "players": [
+        {
+          "player_id": "Travis Outlaw",
+          "position": "SF",
+          "depth": null,
+          "slots": "",
+          "jersey": "25",
+          "espn_id": "2015",
+          "bbr_id": "outlatr01",
+          "birth_date": "1984-09-18",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/T.Outlaw.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:T.Outlaw.jpg",
+          "page_url": "https://www.basketball-reference.com/players/o/outlatr01.html"
+        },
+        {
+          "player_id": "Nedzad Sinanovic",
+          "position": "C",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": null,
+          "bbr_id": "sinanne01",
+          "birth_date": "1983-01-29",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sinanovic.jpg?width=500",
+          "headshot_license": "CC BY 3.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/3.0",
+          "headshot_credit": "Elemaki",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Sinanovic.jpg",
+          "page_url": "https://www.basketball-reference.com/players/s/sinanne01.html"
+        }
+      ]
+    },
+    "Seattle SuperSonics": {
+      "code": "SEA",
+      "players": [
+        {
+          "player_id": "Nick Collison",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "1978",
+          "bbr_id": "collini01",
+          "birth_date": "1980-10-26",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nick_Collison.jpg?width=500",
+          "headshot_license": "CC BY-SA 3.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "headshot_credit": "J.smith",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Nick_Collison.jpg",
+          "page_url": "https://www.basketball-reference.com/players/c/collini01.html"
+        },
+        {
+          "player_id": "Luke Ridnour",
+          "position": "PG",
+          "depth": null,
+          "slots": "",
+          "jersey": "8",
+          "espn_id": "1985",
+          "bbr_id": "ridnolu01",
+          "birth_date": "1981-02-13",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Luke_Ridnour.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison from Owings Mills, USA",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Luke_Ridnour.jpg",
+          "page_url": "https://www.basketball-reference.com/players/r/ridnolu01.html"
+        },
+        {
+          "player_id": "Paccelis Morlende",
+          "position": "PG",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "2014",
+          "bbr_id": "morlepa01",
+          "birth_date": "1981-04-19",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/PaccMorlande.jpg?width=500",
+          "headshot_license": "CC BY-SA 3.0",
+          "headshot_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "headshot_credit": "Sanguinez",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:PaccMorlande.jpg",
+          "page_url": "https://www.basketball-reference.com/players/m/morlepa01.html"
+        }
+      ]
+    },
+    "Toronto Raptors": {
+      "code": "TOR",
+      "players": [
+        {
+          "player_id": "Chris Bosh",
+          "position": "PF",
+          "depth": null,
+          "slots": "",
+          "jersey": "4",
+          "espn_id": "1977",
+          "bbr_id": "boshch01",
+          "birth_date": "1984-03-24",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Bosh_e1.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Flickr user Keith Allison",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Chris_Bosh_e1.jpg",
+          "page_url": "https://www.basketball-reference.com/players/b/boshch01.html"
+        },
+        {
+          "player_id": "Matt Bonner",
+          "position": "F",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "1996",
+          "bbr_id": "bonnema01",
+          "birth_date": "1980-04-05",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Bonner.jpg?width=500",
+          "headshot_license": "CC BY-SA 3.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "headshot_credit": "Alvaromontoro",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Matt_Bonner.jpg",
+          "page_url": "https://www.basketball-reference.com/players/b/bonnema01.html"
+        },
+        {
+          "player_id": "Remon van de Hare",
+          "position": "C",
+          "depth": null,
+          "slots": "",
+          "jersey": null,
+          "espn_id": "2025",
+          "bbr_id": "vandera01",
+          "birth_date": "1982-05-23",
+          "headshot_url": null,
+          "page_url": "https://www.basketball-reference.com/players/v/vandera01.html"
+        }
+      ]
+    },
+    "Utah Jazz": {
+      "code": "UTAH",
+      "players": [
+        {
+          "player_id": "Sasha Pavlovic",
+          "position": "SF",
+          "depth": null,
+          "slots": "",
+          "jersey": "11",
+          "espn_id": "2172",
+          "bbr_id": "pavloal01",
+          "birth_date": "1983-11-15",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sasha_Pavlovic_Celtics.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison from Owings Mills, USA",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Sasha_Pavlovic_Celtics.jpg",
+          "page_url": "https://www.basketball-reference.com/players/p/pavloal01.html"
+        },
+        {
+          "player_id": "Mo Williams",
+          "position": "PG",
+          "depth": null,
+          "slots": "",
+          "jersey": "25",
+          "espn_id": "2178",
+          "bbr_id": "willima01",
+          "birth_date": "1982-12-19",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mo_Williams.jpg?width=500",
+          "headshot_license": "CC BY-SA 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+          "headshot_credit": "Keith Allison from Owings Mills, USA",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Mo_Williams.jpg",
+          "page_url": "https://www.basketball-reference.com/players/w/willima01.html"
+        }
+      ]
+    },
+    "Washington Wizards": {
+      "code": "WSH",
+      "players": [
+        {
+          "player_id": "Jarvis Hayes",
+          "position": "SF",
+          "depth": null,
+          "slots": "",
+          "jersey": "24",
+          "espn_id": "1980",
+          "bbr_id": "hayesja01",
+          "birth_date": "1981-08-09",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maurice_Evans_vs_Jarvis_Hayes.jpg?width=500",
+          "headshot_license": "CC BY 2.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by/2.0",
+          "headshot_credit": "Tom Thai",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Maurice_Evans_vs_Jarvis_Hayes.jpg",
+          "page_url": "https://www.basketball-reference.com/players/h/hayesja01.html"
+        },
+        {
+          "player_id": "Steve Blake",
+          "position": "PG",
+          "depth": null,
+          "slots": "",
+          "jersey": "2",
+          "espn_id": "1994",
+          "bbr_id": "blakest01",
+          "birth_date": "1980-02-26",
+          "headshot_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Steve_Blake_warriors.jpg?width=500",
+          "headshot_license": "CC BY-SA 3.0",
+          "headshot_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "headshot_credit": "Noah Salzman",
+          "headshot_page": "https://commons.wikimedia.org/wiki/File:Steve_Blake_warriors.jpg",
+          "page_url": "https://www.basketball-reference.com/players/b/blakest01.html"
+        }
+      ]
+    }
+  }
+}
