@@ -1,4 +1,4 @@
-# Engine model and calibration (kernel 2003.4)
+# Engine model and calibration (kernel 2003.5)
 
 What the possession engine does beyond the per-play rates, why, and how it was checked. Code: `runtime/kernel.py`, `runtime/rotations.py`. Check: `python scripts/engine_diagnostics.py 4`, plus `--defense-test` and `--home-test` (analysis only: made-up entropy, nothing written to the career; its output names clubs and players and is not to be committed).
 
@@ -46,6 +46,12 @@ League averages already contain late-game fouls and threes. Measured on 2003-04 
 
 Each real club plays at its pace from the season before, relative to that season's league mean (`library/<year>/league/nba_<season>_team_pace.json`, built by `scripts/import_team_pace.py` from the Basketball-Reference team tables; only pace is kept, never results). A game runs at the average of the two clubs' paces, which scales the length of a regular possession and the expected margin. In 2003-04 the clubs range from 0.95 to 1.05 of the league pace. A club with no season before (Charlotte in 2004-05) and Miami, until its coaches set a pace, play at the league pace.
 
+## Fatigue and injuries (problem E7, roadmap item 12)
+
+- **Back-to-backs:** every club's rest comes from the schedule (days off since its previous regular-season game, at most 3). On the second night of a back-to-back a club plays 1.5 points worse, through its own make probability, and the expected margin accounts for it.
+- **Injuries for the simulated club (Miami, Wade included):** after each Miami game, every Miami player who played may be hurt. The chance is 1.6% per 36 minutes, times 0.85 up to age 25, 1.0 to 29, 1.2 to 32 and 1.45 after, and times 1.2 on the second night of a back-to-back. Lengths: 55% day-to-day (1-2 games), 25% short (3-7), 13% medium (8-20), 6% long (21-50), 1% season-ending (51-82). A 34-minute starter averages about 1.3 injuries and 9 to 14 missed games a season. The draw uses the game's journaled entropy and is reported in the result's `injuries`; `runtime/injuries.py` counts down the games still to miss. Real injury histories are never used.
+- **Real clubs** keep missing games at their real season rates through availability (rotations above); they get no extra draws.
+
 ## Score effect
 
 Independent possessions alone give a game-to-game spread of about 15 points. Real NBA results vary about 12 points around the betting line, because a team that gets ahead of the game relaxes and one that falls behind presses. Before the tip the engine estimates the margin the two rosters should produce, from the same per-play rates, minute targets, defense, rebounding and home edge it plays with (`_expected_points`). During the game the offense's make probability moves by 0.0022 for every point it is ahead of that par line at the time (gained when behind), up to 25 points.
@@ -73,4 +79,6 @@ Four seasons of the real 2003-04 schedule without Miami's games (4,428 games, 79
 
 Box totals per team: FGA 81.1 (80.8), FTA 24.8 (24.4), turnovers 15.2 (14.9), offensive rebounds 12.1 (12.0), assists 21.7 (21.5), fouls 22.1 (21.8); environment values in brackets. Three-point attempts run at 15.1 against 14.7: the 2003-04 players' own three-point rates, weighted by their attempts, are about 3% above the 2002-03 environment.
 
-Known gaps (the record above was measured on kernel 2003.3; with team pace, three seasons give margin SD 13.1, overtime 5.0%, home win 59.7%, foul-outs 0.24 and club spread 4.3): there are no injuries or fatigue (problem E7, roadmap item 12); from 2004-05, players real Miami traded away between seasons still follow history, because the season tables cannot tell a trade from a free-agent move (roadmap item 8).
+Later kernels (the record above was measured on 2003.3): with team pace and back-to-backs (2003.5), three seasons give margin SD 13.1, overtime 5.0%, home win 61.2%, foul-outs 0.22 and club spread 4.6.
+
+Known gaps: from 2004-05, players real Miami traded away between seasons still follow history, because the season tables cannot tell a trade from a free-agent move (roadmap item 8).

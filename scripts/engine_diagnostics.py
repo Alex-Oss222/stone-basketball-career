@@ -30,6 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from runtime.era import environment_for, rules_for
+from runtime.injuries import rest_days
 from runtime.kernel import resolve_game, validate_result
 from runtime.player_stats import load_rating_index
 from runtime.rotations import club_pace, load_rosters, miami_holds, real_rotation, season_fraction
@@ -63,7 +64,9 @@ class League:
         fraction = season_fraction(SEASON, game_date, ROOT)
         team = real_rotation(name, self.rosters[name], games_per_team(SEASON, name), self.index,
                              fraction=fraction, exclude=miami_holds(SEASON, game_date, ROOT), pace=club_pace(SEASON, name, ROOT))
-        key = (name, tuple(p.player_id for p in team.players), tuple(p.availability for p in team.players), shift)
+        team = replace(team, rest_days=rest_days(SEASON, name, game_date, ROOT))
+        key = (name, tuple(p.player_id for p in team.players), tuple(p.availability for p in team.players), shift,
+               team.rest_days)
         if key not in self.cache:
             players = []
             for p in team.players:

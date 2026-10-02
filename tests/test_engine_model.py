@@ -1,5 +1,6 @@
 """Engine model: defense (E1), rotations and availability (E3, item 8), late game (E4), foul trouble (E5)."""
 import hashlib
+from datetime import date
 import json
 import statistics
 import tempfile
@@ -269,6 +270,44 @@ class PaceTests(unittest.TestCase):
         self.assertTrue(any("pace" in e for e in team_errors(TeamInput("H", team("H").players, 1.5), RULES)))
 
 
+class FatigueAndInjuryTests(unittest.TestCase):
+    def test_second_night_of_a_back_to_back_costs_about_a_point_and_a_half(self):
+        from dataclasses import replace
+        rested = [g["final_score"]["home"] - g["final_score"]["away"] for g in games(team("H"), team("A"), 300, tag="b2b")]
+        tired = [g["final_score"]["home"] - g["final_score"]["away"]
+                 for g in games(replace(team("H"), rest_days=0), team("A"), 300, tag="b2b")]
+        self.assertGreater(statistics.mean(rested) - statistics.mean(tired), 0.5)
+        self.assertLess(statistics.mean(rested) - statistics.mean(tired), 3.0)
+
+    def test_injuries_only_for_the_simulated_club_at_a_realistic_rate(self):
+        from dataclasses import replace
+        miami = replace(team("H"), injuries=True)
+        results = list(games(miami, team("A"), 500, tag="inj"))
+        injuries = [i for g in results for i in g["injuries"]]
+        self.assertTrue(all(i["side"] == "home" for i in injuries))
+        self.assertTrue(all(1 <= i["games_out"] <= 82 for i in injuries))
+        # A 34-minute starter over an 82-game season: about one to two injuries, roughly 8 games missed.
+        starter = [i for i in injuries if i["player_id"] == "H_0"]
+        per_season = len(starter) / 500 * 82
+        self.assertGreater(per_season, 0.4)
+        self.assertLess(per_season, 3.0)
+        self.assertEqual(results[0], next(games(miami, team("A"), 1, tag="inj")))          # same draw on replay
+
+    def test_rest_days_and_injury_bookkeeping(self):
+        from runtime.injuries import injured_out, rest_days
+        games_ = json.loads(schedule_path("2003-04").read_text())["games"]
+        first = min(g["date"] for g in games_ if "Detroit Pistons" in (g["home"], g["away"]))
+        self.assertEqual(rest_days("2003-04", "Detroit Pistons", first), 3)
+        dates = sorted(g["date"] for g in games_ if "Detroit Pistons" in (g["home"], g["away"]))
+        b2b = next(b for a, b in zip(dates, dates[1:]) if (date.fromisoformat(b) - date.fromisoformat(a)).days == 1)
+        self.assertEqual(rest_days("2003-04", "Detroit Pistons", b2b), 0)
+        played = [{"home": "Miami Heat", "away": "X", "injuries": [{"side": "home", "player_id": "Wade", "games_out": 2}]},
+                  {"home": "Y", "away": "Miami Heat", "injuries": []}]
+        self.assertEqual(injured_out(played[:1]), {"Wade": 2})
+        self.assertEqual(injured_out(played), {"Wade": 1})
+        self.assertEqual(injured_out(played + [{"home": "Miami Heat", "away": "Z", "injuries": []}]), {})
+
+
 class ImportTests(unittest.TestCase):
     def test_a_returned_player_follows_his_franchise(self):
         import importlib.util
@@ -298,6 +337,15 @@ class RealRotationRequestTests(unittest.TestCase):
         self.assertGreater(len(home.players), RULES["game_day_actives"])
         self.assertTrue(all(p.stat_profile for p in home.players))
         self.assertTrue(any(p.availability < 1 for p in away.players))
+
+    def test_miami_players_carry_ages_and_injury_draws(self):
+        miami = {"team": "Miami Heat", "players": [
+            {"player_id": n, "position": pos, "minutes": 48} for n, pos in
+            (("Dwyane Wade", "SG"), ("Eddie Jones", "SF"), ("Caron Butler", "SF"), ("Brian Grant", "PF"), ("Malik Allen", "C"))]}
+        home, away, _ = self.load(miami, {"team": "Detroit Pistons", "rotation": "real"})
+        self.assertTrue(home.injuries)
+        self.assertFalse(away.injuries)
+        self.assertEqual(next(p.age for p in home.players if p.player_id == "Dwyane Wade"), 19)
 
     def test_miami_and_unknown_rotations_are_refused(self):
         for spec in ({"team": "Miami Heat", "rotation": "real"}, {"team": "Detroit Pistons", "rotation": "fantasy"},

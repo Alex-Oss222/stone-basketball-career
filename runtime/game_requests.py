@@ -33,6 +33,11 @@ from .game_runner import build_game_packet
 from .kernel import PlayerInput, TeamInput
 from .league import baseline_team, load_clubs
 from .player_stats import load_rating_index
+from dataclasses import replace
+
+from .injuries import rest_days, simulated_ages
+from .player_stats import alias
+from .rosters import SIMULATED_CLUB
 from .rotations import club_pace, load_rosters, miami_holds, real_rotation, season_fraction
 from .schedule import games_per_team
 
@@ -49,6 +54,7 @@ def _club(spec, actives, root, rating_index, season=None, game_date=None):
         raise ValueError("each club needs a team name")
     if sum(key in spec for key in ("players", "baseline", "rotation")) != 1:
         raise ValueError(f"{spec['team']}: give exactly one of players, baseline or rotation")
+    rest = rest_days(season, spec["team"], game_date, root) if season and game_date else 2
     if "rotation" in spec:
         if spec["rotation"] != "real" or set(spec) != {"team", "rotation"}:
             raise ValueError(f"{spec['team']}: the only rotation is \"real\"")
@@ -56,22 +62,27 @@ def _club(spec, actives, root, rating_index, season=None, game_date=None):
         if spec["team"] not in rosters:
             raise ValueError(f"{spec['team']} has no real {season} roster (Miami is simulated)")
         # Rule 2: players simulated Miami holds are not with their real club.
-        return real_rotation(spec["team"], rosters[spec["team"]], games_per_team(season, spec["team"]), rating_index,
+        team = real_rotation(spec["team"], rosters[spec["team"]], games_per_team(season, spec["team"]), rating_index,
                              fraction=season_fraction(season, game_date, root),
                              exclude=miami_holds(season, game_date, root), pace=club_pace(season, spec["team"], root))
+        return replace(team, rest_days=rest)
     if "baseline" in spec:
         clubs = load_clubs(Path(root) / spec["baseline"])
         if spec["team"] not in clubs:
             raise ValueError(f"{spec['team']} is not in {spec['baseline']}")
-        return baseline_team(spec["team"], clubs[spec["team"]], actives, rating_index)
+        return replace(baseline_team(spec["team"], clubs[spec["team"]], actives, rating_index), rest_days=rest)
+    # The simulated club's players are exposed to the engine's injury draws, with their ages.
+    simulated = spec["team"] == SIMULATED_CLUB
+    ages = simulated_ages(season, game_date, root) if simulated and season and game_date else {}
     players = []
     for p in spec["players"]:
         unknown = set(p) - {"player_id", "bbr_id", "position", "minutes", "ratings"}
         if unknown:
             raise ValueError(f"{spec['team']}: unknown player fields {sorted(unknown)}")
         profile = rating_index.engine_profile(p["player_id"], p.get("bbr_id")) if rating_index else {}
-        players.append(PlayerInput(p["player_id"], p["position"], p["minutes"], dict(p.get("ratings", {})), profile))
-    return TeamInput(spec["team"], tuple(players))
+        players.append(PlayerInput(p["player_id"], p["position"], p["minutes"], dict(p.get("ratings", {})), profile,
+                                   age=ages.get(alias(p["player_id"]))))
+    return TeamInput(spec["team"], tuple(players), rest_days=rest, injuries=simulated)
 
 
 def load_request(path, root=ROOT):
