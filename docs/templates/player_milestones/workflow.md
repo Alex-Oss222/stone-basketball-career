@@ -39,7 +39,9 @@ The user determines Wade's choices. The AI/GM determines club offers and transac
 
 ## What is implemented versus presented
 
-These pages are reusable presentation and recording templates. The existing rookie negotiation log can support a live rookie offer when its date and terms are verified. Free-agent markets, automatic deadline surfacing, trade completion, new-contract write-back and training-driven ability changes are not implemented by these Markdown pages. Use existing supported resolution paths; missing mechanics stay unresolved instead of being improvised as guaranteed results.
+These pages are reusable presentation and recording templates. The existing rookie negotiation log can support a live rookie offer when its date and terms are verified. The [contract/free-agency workflow module](../../contract_negotiation_engine.md) adds isolated, tested transitions for supplied offers and evidence, including the reserved fifth RFA matching record. Its [interactive demonstration](../../examples/player_milestones/contract_negotiation_preview.html) is a separate local preview, not a connection to live career state. Market generation, complete cap/eligibility validation, automatic deadlines, exceptional RFA resolution, trade completion, new-contract write-back and training-driven ability changes still need their supported integration paths. Missing mechanics stay unresolved instead of being improvised as guaranteed results.
+
+Contract and free-agency pages share offer IDs, versions and a history. Declining an incumbent proposal does not create market eligibility. Four comparison slots contain ordinary proposals; the fifth records only the incumbent's matching outcome for the exact signed outside sheet. See the [detailed research and interaction specification](contract_negotiation_research.md).
 
 The [build roadmap](../../ROADMAP.md) retains ownership of unfinished mechanics. No template here advances the clock, runs a draw, creates an offer or signs a deal.
 
