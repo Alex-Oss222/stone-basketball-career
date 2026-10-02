@@ -18,7 +18,7 @@ import random
 from .packets import canonical
 from .player_stats import MODEL_VERSION, RATE_KEYS
 from .prospects import ROOKIE_MODEL_VERSION
-from .trajectories import TRAJECTORY_MODEL_VERSION
+from .trajectories import TRAJECTORY_MODEL_VERSION, needs_development
 
 POSITIONS = ("PG", "SG", "SF", "PF", "C")
 RATING_KEYS = (
@@ -82,7 +82,7 @@ def team_errors(team, rules):
             profile = p.stat_profile
             base_keys = {"bbr_id", "model_version", "as_of", "season_end_year", "source_sha256", "rates"}
             trajectory = profile.get("model_version") == TRAJECTORY_MODEL_VERSION
-            if (set(profile) - {"development"} != base_keys or ("development" in profile and not trajectory)
+            if (set(profile) - {"development"} != base_keys or ("development" in profile and not needs_development(profile))
                     or profile.get("model_version") not in (MODEL_VERSION, ROOKIE_MODEL_VERSION, TRAJECTORY_MODEL_VERSION)
                     or (not trajectory and profile.get("season_end_year") != 2003)
                     or (trajectory and profile.get("season_end_year") != int(rules["season"][:4]) + 1)):

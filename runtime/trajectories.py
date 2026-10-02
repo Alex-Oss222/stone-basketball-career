@@ -90,9 +90,21 @@ def development_packet(bbr_id, season):
             "bbr_id": bbr_id, "season": season}
 
 
+def needs_development(profile):
+    """Real-career players and the protagonist both get an engine-drawn swing each season."""
+    return profile.get("model_version") == TRAJECTORY_MODEL_VERSION or profile.get("bbr_id") in PROTAGONIST_IDS
+
+
+def development_seasons(bbr_id, season):
+    """Real players' swings persist, so their chain starts at FIRST_SEASON. The protagonist's
+    simulated seasons already carry last year's swing into his next estimate, so he gets only
+    the current season's draw; chaining it again would count it twice."""
+    return [season] if bbr_id in PROTAGONIST_IDS else season_list(FIRST_SEASON, season)
+
+
 def development_refs(journal, bbr_id, season):
-    """Journal (idempotently) one development event per season from FIRST_SEASON through `season`."""
-    return {s: journal.close_event(development_packet(bbr_id, s)) for s in season_list(FIRST_SEASON, season)}
+    """Journal (idempotently) one development event per required season."""
+    return {s: journal.close_event(development_packet(bbr_id, s)) for s in development_seasons(bbr_id, season)}
 
 
 def swings(refs):

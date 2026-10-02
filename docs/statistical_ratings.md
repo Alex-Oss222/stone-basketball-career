@@ -139,3 +139,25 @@ The user chose the hybrid model: real players' ability follows their real career
 ```
 
 The 13 rate keys are those in `RATE_KEYS` (`runtime/player_stats.py`): two-, three- and free-throw accuracy, three-point and free-throw attempt rates, turnovers per FGA, usage, assist, offensive and defensive rebound, steal and block percentages, and fouls per minute. A rate may be `null` when the source lacks it. Basketball-Reference season tables supply all of them.
+
+## Wade's development
+
+Wade is alternate history, so he has no real trajectory. He develops on the same terms as everyone else, from simulated evidence only.
+
+- **Every season he gets an engine swing.** The engine journals `development:<season>:wadedw01` and applies the same spreads as for real players. Unlike real players, his swing is drawn fresh each season instead of chaining. His simulated season already carries last year's swing into the next expectation, so chaining it would count it twice.
+- **Rookie season:** college estimate (above) plus that season's swing.
+- **Each later season** (`runtime/protagonist.py`, `next_season_rates`):
+  1. Prior: last season's expected rates.
+  2. Evidence: his simulated season, summed from closed game results' box-score lines. Rates are updated with the same sample priors as veterans (100 two-point attempts, 50 threes, 25 free throws, 300 minutes for production rates), so a short or injured season moves him less. Shooting tendencies come straight from the box score; production rates are per-minute output relative to the league, times the league baseline.
+  3. Age step for his age on February 1 of the new season:
+
+| Age | Production (usage, assists, rebounds, steals, blocks) | Accuracy (2P, 3P, FT) | Turnovers and fouls |
+| --- | ---: | ---: | --- |
+| up to 21 | ×1.05 | ×1.015 | ÷1.05 |
+| 22-24 | ×1.03 | ×1.010 | ÷1.03 |
+| 25-27 | ×1.01 | ×1.005 | ÷1.01 |
+| 28-30 | ×1.00 | ×1.000 | unchanged |
+| 31-33 | ×0.97 | ×0.995 | ÷0.97 |
+| 34+ | ×0.94 | ×0.990 | ÷0.94 |
+
+The age steps are provisional judgement constants for a typical curve, not fitted values. Fitting them on pre-2003 player seasons would be the upgrade. They must never be tuned toward the historical Wade. Run the update at each season's end, after every regular-season and playoff game is closed. Wiring it to the season rollover is part of building the 2004-05 season.

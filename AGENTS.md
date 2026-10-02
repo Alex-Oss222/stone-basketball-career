@@ -60,6 +60,8 @@ Real players' on-court ability may follow their real careers. The engine may rea
 
 Every season's development swing is journaled by the engine like a game draw and cannot be chosen or re-rolled.
 
+Wade's ability: his rookie season uses the college estimate (`runtime/prospects.py`) plus the engine's swing for that season. Each later season's expectation comes only from his previous expectation, his simulated season from closed game results, and a generic age step (`runtime/protagonist.py`), followed by a fresh engine swing. Never use the historical Wade's statistics, and never tune the age steps or translation factors to steer his results.
+
 `00_Team/Finances/league_cap_history.json` intentionally stores the real eight-season cap sequence, 2003-04 through 2010-11, for continuity. Treat only a cap that has reached its verified publication/activation gate as live front-office knowledge; a missing publication date blocks live use. Never use a future row to influence an earlier contract, trade or free-agency decision. The cap sheet projects existing obligations only. Keep signed salary, draft holds, conditional options and unresolved charges distinct; a zero scheduled commitment is not a zero-cost future roster or usable cap room.
 
 ## League source data
