@@ -1,0 +1,1034 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": 2003,
+ "as_of": "2003-07-01",
+ "kind": "free_agents",
+ "source": "Free agent list published by the Deseret News on 2003-07-01 (https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/). Players and clubs are as printed; the list marks restricted free agents only, so all others are recorded as unrestricted. IDs and positions from Basketball-Reference; birth dates from Basketball-Reference team pages and Wikidata. No signing outcomes are included.",
+ "players": [
+  {
+   "player_id": "Mark Blount",
+   "bbr_id": "blounma01",
+   "position": "C",
+   "birth_date": "1975-11-30",
+   "former_club": "Boston Celtics",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Mark Bryant",
+   "bbr_id": "bryanma01",
+   "position": "PF",
+   "birth_date": "1965-04-25",
+   "former_club": "Boston Celtics",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Bimbo Coles",
+   "bbr_id": "colesbi01",
+   "position": "PG",
+   "birth_date": "1968-04-22",
+   "former_club": "Boston Celtics",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Grant Long",
+   "bbr_id": "longgr01",
+   "position": "PF",
+   "birth_date": "1966-03-12",
+   "former_club": "Boston Celtics",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Walter McCarty",
+   "bbr_id": "mccarwa01",
+   "position": "SF",
+   "birth_date": "1974-02-01",
+   "former_club": "Boston Celtics",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Malik Allen",
+   "bbr_id": "allenma01",
+   "position": "PF",
+   "birth_date": "1978-06-27",
+   "former_club": "Miami Heat",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Travis Best",
+   "bbr_id": "besttr01",
+   "position": "PG",
+   "birth_date": "1972-07-12",
+   "former_club": "Miami Heat",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Eddie House",
+   "bbr_id": "houseed01",
+   "position": "SG",
+   "birth_date": "1978-05-14",
+   "former_club": "Miami Heat",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Mike James",
+   "bbr_id": "jamesmi01",
+   "position": "PG",
+   "birth_date": "1975-06-23",
+   "former_club": "Miami Heat",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Sean Marks",
+   "bbr_id": "marksse01",
+   "position": "PF",
+   "birth_date": "1975-08-23",
+   "former_club": "Miami Heat",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Alonzo Mourning",
+   "bbr_id": "mournal01",
+   "position": "C",
+   "birth_date": "1970-02-08",
+   "former_club": "Miami Heat",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Vladimir Stepania",
+   "bbr_id": "stepavl01",
+   "position": "C",
+   "birth_date": "1976-05-08",
+   "former_club": "Miami Heat",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Lucious Harris",
+   "bbr_id": "harrilu01",
+   "position": "SG",
+   "birth_date": "1970-12-18",
+   "former_club": "New Jersey Nets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Anthony Johnson",
+   "bbr_id": "johnsan02",
+   "position": "PG",
+   "birth_date": "1974-10-02",
+   "former_club": "New Jersey Nets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Jason Kidd",
+   "bbr_id": "kiddja01",
+   "position": "PG",
+   "birth_date": "1973-03-23",
+   "former_club": "New Jersey Nets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Donny Marshall",
+   "bbr_id": "marshdo02",
+   "position": "SF",
+   "birth_date": "1972-07-17",
+   "former_club": "New Jersey Nets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Brian Scalabrine",
+   "bbr_id": "scalabr01",
+   "position": "PF",
+   "birth_date": "1978-03-18",
+   "former_club": "New Jersey Nets",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Lee Nailon",
+   "bbr_id": "nailole01",
+   "position": "SF",
+   "birth_date": "1975-02-22",
+   "former_club": "New York Knicks",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Mark Pope",
+   "bbr_id": "popema01",
+   "position": "PF",
+   "birth_date": "1972-09-11",
+   "former_club": "New York Knicks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Lavor Postell",
+   "bbr_id": "postela01",
+   "position": "SG",
+   "birth_date": "1978-02-26",
+   "former_club": "New York Knicks",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Darrell Armstrong",
+   "bbr_id": "armstda01",
+   "position": "PG",
+   "birth_date": "1968-06-22",
+   "former_club": "Orlando Magic",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Pat Burke",
+   "bbr_id": "burkepa01",
+   "position": "C",
+   "birth_date": "1973-12-14",
+   "former_club": "Orlando Magic",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Shawn Kemp",
+   "bbr_id": "kempsh01",
+   "position": "C",
+   "birth_date": "1969-11-26",
+   "former_club": "Orlando Magic",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Olumide Oyedeji",
+   "bbr_id": "oyedeol01",
+   "position": "C",
+   "birth_date": "1981-05-11",
+   "former_club": "Orlando Magic",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Jacque Vaughn",
+   "bbr_id": "vaughja01",
+   "position": "PG",
+   "birth_date": "1975-02-11",
+   "former_club": "Orlando Magic",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Chris Whitney",
+   "bbr_id": "whitnch01",
+   "position": "PG",
+   "birth_date": "1971-10-05",
+   "former_club": "Orlando Magic",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Derrick Coleman",
+   "bbr_id": "colemde01",
+   "position": "C",
+   "birth_date": "1967-06-21",
+   "former_club": "Philadelphia 76ers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Tyrone Hill",
+   "bbr_id": "hillty01",
+   "position": "PF",
+   "birth_date": "1968-03-19",
+   "former_club": "Philadelphia 76ers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Brian Skinner",
+   "bbr_id": "skinnbr01",
+   "position": "PF",
+   "birth_date": "1976-05-19",
+   "former_club": "Philadelphia 76ers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Kenny Thomas",
+   "bbr_id": "thomake01",
+   "position": "PF",
+   "birth_date": "1977-07-25",
+   "former_club": "Philadelphia 76ers",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Charles Oakley",
+   "bbr_id": "oaklech01",
+   "position": "C",
+   "birth_date": "1963-12-18",
+   "former_club": "Washington Wizards",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Bryon Russell",
+   "bbr_id": "russebr01",
+   "position": "SF",
+   "birth_date": "1970-12-31",
+   "former_club": "Washington Wizards",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Bobby Simmons",
+   "bbr_id": "simmobo01",
+   "position": "SG",
+   "birth_date": "1980-06-02",
+   "former_club": "Washington Wizards",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Emanual Davis",
+   "bbr_id": "davisem01",
+   "position": "SG",
+   "birth_date": "1968-08-27",
+   "former_club": "Atlanta Hawks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Dion Glover",
+   "bbr_id": "glovedi01",
+   "position": "SG",
+   "birth_date": "1978-10-22",
+   "former_club": "Atlanta Hawks",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Darvin Ham",
+   "bbr_id": "hamda01",
+   "position": "SG",
+   "birth_date": "1973-07-23",
+   "former_club": "Atlanta Hawks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Jermaine Jackson",
+   "bbr_id": "jacksje01",
+   "position": "SG",
+   "birth_date": "1976-06-07",
+   "former_club": "Atlanta Hawks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "DerMarr Johnson",
+   "bbr_id": "johnsde03",
+   "position": "SF",
+   "birth_date": "1980-05-05",
+   "former_club": "Atlanta Hawks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Mikki Moore",
+   "bbr_id": "mooremi01",
+   "position": "C",
+   "birth_date": "1975-11-04",
+   "former_club": "Atlanta Hawks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Ira Newble",
+   "bbr_id": "newblir01",
+   "position": "SF",
+   "birth_date": "1975-01-20",
+   "former_club": "Atlanta Hawks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Jason Terry",
+   "bbr_id": "terryja01",
+   "position": "PG",
+   "birth_date": "1977-09-15",
+   "former_club": "Atlanta Hawks",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Corie Blount",
+   "bbr_id": "blounco01",
+   "position": "C",
+   "birth_date": "1969-01-04",
+   "former_club": "Chicago Bulls",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "position": "PG",
+   "birth_date": "1972-06-14",
+   "former_club": "Chicago Bulls",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Fred Hoiberg",
+   "bbr_id": "hoibefr01",
+   "position": "SG",
+   "birth_date": "1972-10-15",
+   "former_club": "Chicago Bulls",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Tierre Brown",
+   "bbr_id": "brownti01",
+   "position": "PG",
+   "birth_date": "1979-06-03",
+   "former_club": "Cleveland Cavaliers",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Jumaine Jones",
+   "bbr_id": "jonesju01",
+   "position": "SF",
+   "birth_date": "1979-02-10",
+   "former_club": "Cleveland Cavaliers",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Milt Palacio",
+   "bbr_id": "palacmi01",
+   "position": "PG",
+   "birth_date": "1978-02-07",
+   "former_club": "Cleveland Cavaliers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Smush Parker",
+   "bbr_id": "parkesm01",
+   "position": "PG",
+   "birth_date": "1981-06-01",
+   "former_club": "Cleveland Cavaliers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Jon Barry",
+   "bbr_id": "barryjo01",
+   "position": "SG",
+   "birth_date": "1969-07-25",
+   "former_club": "Detroit Pistons",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Richard Hamilton",
+   "bbr_id": "hamilri01",
+   "position": "SG",
+   "birth_date": "1978-02-14",
+   "former_club": "Detroit Pistons",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Danny Manning",
+   "bbr_id": "mannida01",
+   "position": "PF",
+   "birth_date": "1966-05-17",
+   "former_club": "Detroit Pistons",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Tim Hardaway",
+   "bbr_id": "hardati01",
+   "position": "PG",
+   "birth_date": "1966-09-01",
+   "former_club": "Indiana Pacers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Brad Miller",
+   "bbr_id": "millebr01",
+   "position": "C",
+   "birth_date": "1976-04-12",
+   "former_club": "Indiana Pacers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Reggie Miller",
+   "bbr_id": "millere01",
+   "position": "SG",
+   "birth_date": "1965-08-24",
+   "former_club": "Indiana Pacers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Jermaine O'Neal",
+   "bbr_id": "onealje01",
+   "position": "PF",
+   "birth_date": "1978-10-13",
+   "former_club": "Indiana Pacers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Erick Strickland",
+   "bbr_id": "stricer01",
+   "position": "SG",
+   "birth_date": "1973-11-25",
+   "former_club": "Indiana Pacers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Rafer Alston",
+   "bbr_id": "alstora01",
+   "position": "PG",
+   "birth_date": "1976-07-24",
+   "former_club": "Milwaukee Bucks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Gary Payton",
+   "bbr_id": "paytoga01",
+   "position": "PG",
+   "birth_date": "1968-07-23",
+   "former_club": "Milwaukee Bucks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Don Reid",
+   "bbr_id": "reiddo01",
+   "position": "PF",
+   "birth_date": "1973-12-30",
+   "former_club": "Milwaukee Bucks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Kenny Anderson",
+   "bbr_id": "anderke01",
+   "position": "PG",
+   "birth_date": "1970-10-09",
+   "former_club": "New Orleans Hornets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "P.J. Brown",
+   "bbr_id": "brownpj01",
+   "position": "PF",
+   "birth_date": "1969-10-14",
+   "former_club": "New Orleans Hornets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Jerome Moiso",
+   "bbr_id": "moisoje01",
+   "position": "C",
+   "birth_date": "1978-06-15",
+   "former_club": "New Orleans Hornets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Robert Pack",
+   "bbr_id": "packro01",
+   "position": "PG",
+   "birth_date": "1969-02-03",
+   "former_club": "New Orleans Hornets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Voshon Lenard",
+   "bbr_id": "lenarvo01",
+   "position": "SG",
+   "birth_date": "1973-05-14",
+   "former_club": "Toronto Raptors",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Mamadou N'Diaye",
+   "bbr_id": "ndiayma02",
+   "position": "C",
+   "birth_date": "1975-06-16",
+   "former_club": "Toronto Raptors",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Raja Bell",
+   "bbr_id": "bellra01",
+   "position": "SG",
+   "birth_date": "1976-09-19",
+   "former_club": "Dallas Mavericks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Adrian Griffin",
+   "bbr_id": "griffad01",
+   "position": "SG",
+   "birth_date": "1974-07-04",
+   "former_club": "Dallas Mavericks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Popeye Jones",
+   "bbr_id": "jonespo01",
+   "position": "PF",
+   "birth_date": "1970-06-17",
+   "former_club": "Dallas Mavericks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Walt Williams",
+   "bbr_id": "williwa02",
+   "position": "SF",
+   "birth_date": "1970-04-16",
+   "former_club": "Dallas Mavericks",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Chris Andersen",
+   "bbr_id": "anderch01",
+   "position": "C",
+   "birth_date": "1978-07-07",
+   "former_club": "Denver Nuggets",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Adam Harrington",
+   "bbr_id": "harriad01",
+   "position": "SG",
+   "birth_date": "1980-07-05",
+   "former_club": "Denver Nuggets",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Donnell Harvey",
+   "bbr_id": "harvedo01",
+   "position": "SF",
+   "birth_date": "1980-08-26",
+   "former_club": "Denver Nuggets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Juwan Howard",
+   "bbr_id": "howarju01",
+   "position": "PF",
+   "birth_date": "1973-02-07",
+   "former_club": "Denver Nuggets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Shammond Williams",
+   "bbr_id": "willish01",
+   "position": "PG",
+   "birth_date": "1975-04-05",
+   "former_club": "Denver Nuggets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Jason Collier",
+   "bbr_id": "collija02",
+   "position": "C",
+   "birth_date": "1977-09-08",
+   "former_club": "Houston Rockets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Juaquin Hawkins",
+   "bbr_id": "hawkiju01",
+   "position": "SG",
+   "birth_date": "1973-07-02",
+   "former_club": "Houston Rockets",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "James Posey",
+   "bbr_id": "poseyja01",
+   "position": "SF",
+   "birth_date": "1977-01-13",
+   "former_club": "Houston Rockets",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Mike Batiste",
+   "bbr_id": "batismi01",
+   "position": "PF",
+   "birth_date": "1977-11-21",
+   "former_club": "Memphis Grizzlies",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Kendall Gill",
+   "bbr_id": "gillke01",
+   "position": "SG",
+   "birth_date": "1968-05-25",
+   "former_club": "Minnesota Timberwolves",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Felipe Lopez",
+   "bbr_id": "lopezfe01",
+   "position": "SG",
+   "birth_date": "1974-12-19",
+   "former_club": "Minnesota Timberwolves",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Rasho Nesterovic",
+   "bbr_id": "nestera01",
+   "position": "C",
+   "birth_date": "1976-05-30",
+   "former_club": "Minnesota Timberwolves",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Rod Strickland",
+   "bbr_id": "stricro02",
+   "position": "PG",
+   "birth_date": "1966-07-11",
+   "former_club": "Minnesota Timberwolves",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Gary Trent",
+   "bbr_id": "trentga01",
+   "position": "SF",
+   "birth_date": "1974-09-22",
+   "former_club": "Minnesota Timberwolves",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Mike Wilks",
+   "bbr_id": "wilksmi01",
+   "position": "PG",
+   "birth_date": "1979-05-07",
+   "former_club": "Minnesota Timberwolves",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Loren Woods",
+   "bbr_id": "woodslo01",
+   "position": "C",
+   "birth_date": "1978-06-21",
+   "former_club": "Minnesota Timberwolves",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Mengke Bateer",
+   "bbr_id": "bateeme01",
+   "position": "C",
+   "birth_date": "1975-11-20",
+   "former_club": "San Antonio Spurs",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Speedy Claxton",
+   "bbr_id": "claxtsp01",
+   "position": "PG",
+   "birth_date": "1978-05-08",
+   "former_club": "San Antonio Spurs",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Stephen Jackson",
+   "bbr_id": "jacksst02",
+   "position": "SG",
+   "birth_date": "1978-04-05",
+   "former_club": "San Antonio Spurs",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Steve Kerr",
+   "bbr_id": "kerrst01",
+   "position": "PG",
+   "birth_date": "1965-09-27",
+   "former_club": "San Antonio Spurs",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Steve Smith",
+   "bbr_id": "smithst01",
+   "position": "SG",
+   "birth_date": "1969-03-31",
+   "former_club": "San Antonio Spurs",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Kevin Willis",
+   "bbr_id": "willike02",
+   "position": "C",
+   "birth_date": "1962-09-06",
+   "former_club": "San Antonio Spurs",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Carlos Arroyo",
+   "bbr_id": "arroyca01",
+   "position": "PG",
+   "birth_date": "1979-07-30",
+   "former_club": "Utah Jazz",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Calbert Cheaney",
+   "bbr_id": "cheanca01",
+   "position": "SG",
+   "birth_date": "1971-07-17",
+   "former_club": "Utah Jazz",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Mark Jackson",
+   "bbr_id": "jacksma01",
+   "position": "PG",
+   "birth_date": "1965-04-01",
+   "former_club": "Utah Jazz",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Karl Malone",
+   "bbr_id": "malonka01",
+   "position": "PF",
+   "birth_date": "1963-07-24",
+   "former_club": "Utah Jazz",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Tony Massenburg",
+   "bbr_id": "masseto01",
+   "position": "C",
+   "birth_date": "1967-07-31",
+   "former_club": "Utah Jazz",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Scott Padgett",
+   "bbr_id": "padgesc01",
+   "position": "PF",
+   "birth_date": "1976-04-19",
+   "former_club": "Utah Jazz",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Gilbert Arenas",
+   "bbr_id": "arenagi01",
+   "position": "PG",
+   "birth_date": "1982-01-06",
+   "former_club": "Golden State Warriors",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Earl Boykins",
+   "bbr_id": "boykiea01",
+   "position": "PG",
+   "birth_date": "1976-06-02",
+   "former_club": "Golden State Warriors",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Elton Brand",
+   "bbr_id": "brandel01",
+   "position": "PF",
+   "birth_date": "1979-03-11",
+   "former_club": "Los Angeles Clippers",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Corey Maggette",
+   "bbr_id": "maggeco01",
+   "position": "SG",
+   "birth_date": "1979-11-12",
+   "former_club": "Los Angeles Clippers",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Andre Miller",
+   "bbr_id": "millean02",
+   "position": "PG",
+   "birth_date": "1976-03-19",
+   "former_club": "Los Angeles Clippers",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Lamar Odom",
+   "bbr_id": "odomla01",
+   "position": "SF",
+   "birth_date": "1979-11-06",
+   "former_club": "Los Angeles Clippers",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Michael Olowokandi",
+   "bbr_id": "olowomi01",
+   "position": "C",
+   "birth_date": "1975-04-03",
+   "former_club": "Los Angeles Clippers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Cherokee Parks",
+   "bbr_id": "parksch02",
+   "position": "PF",
+   "birth_date": "1972-10-11",
+   "former_club": "Los Angeles Clippers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Eric Piatkowski",
+   "bbr_id": "piatker01",
+   "position": "SG",
+   "birth_date": "1970-09-30",
+   "former_club": "Los Angeles Clippers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Sean Rooks",
+   "bbr_id": "rooksse01",
+   "position": "C",
+   "birth_date": "1969-09-09",
+   "former_club": "Los Angeles Clippers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Mark Madsen",
+   "bbr_id": "madsema01",
+   "position": "PF",
+   "birth_date": "1976-01-28",
+   "former_club": "Los Angeles Lakers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Tracy Murray",
+   "bbr_id": "murratr01",
+   "position": "SF",
+   "birth_date": "1971-07-25",
+   "former_club": "Los Angeles Lakers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Brian Shaw",
+   "bbr_id": "shawbr01",
+   "position": "PG",
+   "birth_date": "1966-03-22",
+   "former_club": "Los Angeles Lakers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Samaki Walker",
+   "bbr_id": "walkesa01",
+   "position": "C",
+   "birth_date": "1976-02-25",
+   "former_club": "Los Angeles Lakers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Randy Brown",
+   "bbr_id": "brownra02",
+   "position": "PG",
+   "birth_date": "1968-05-22",
+   "former_club": "Phoenix Suns",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Alton Ford",
+   "bbr_id": "fordal02",
+   "position": "PF",
+   "birth_date": "1981-05-29",
+   "former_club": "Phoenix Suns",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Dan Langhi",
+   "bbr_id": "langhda01",
+   "position": "SF",
+   "birth_date": "1977-11-28",
+   "former_club": "Phoenix Suns",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Jake Voskuhl",
+   "bbr_id": "voskuja01",
+   "position": "C",
+   "birth_date": "1977-11-01",
+   "former_club": "Phoenix Suns",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Scott Williams",
+   "bbr_id": "willisc01",
+   "position": "C",
+   "birth_date": "1968-03-21",
+   "former_club": "Phoenix Suns",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Antonio Daniels",
+   "bbr_id": "daniean01",
+   "position": "SG",
+   "birth_date": "1975-03-19",
+   "former_club": "Portland Trail Blazers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Chris Dudley",
+   "bbr_id": "dudlech02",
+   "position": "C",
+   "birth_date": "1965-02-22",
+   "former_club": "Portland Trail Blazers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Scottie Pippen",
+   "bbr_id": "pippesc01",
+   "position": "SF",
+   "birth_date": "1965-09-25",
+   "former_club": "Portland Trail Blazers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Charles Smith",
+   "bbr_id": "smithch04",
+   "position": "SG",
+   "birth_date": "1975-08-22",
+   "former_club": "Portland Trail Blazers",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Keon Clark",
+   "bbr_id": "clarkke01",
+   "position": "C",
+   "birth_date": "1975-04-16",
+   "former_club": "Sacramento Kings",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Mateen Cleaves",
+   "bbr_id": "cleavma01",
+   "position": "PG",
+   "birth_date": "1977-09-07",
+   "former_club": "Sacramento Kings",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Jim Jackson",
+   "bbr_id": "jacksji01",
+   "position": "SF",
+   "birth_date": "1970-10-14",
+   "former_club": "Sacramento Kings",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Damon Jones",
+   "bbr_id": "jonesda01",
+   "position": "PG",
+   "birth_date": "1976-08-25",
+   "former_club": "Sacramento Kings",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Brent Price",
+   "bbr_id": "pricebr01",
+   "position": "PG",
+   "birth_date": "1968-12-09",
+   "former_club": "Sacramento Kings",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Elden Campbell",
+   "bbr_id": "campbel01",
+   "position": "C",
+   "birth_date": "1968-07-23",
+   "former_club": "Seattle SuperSonics",
+   "status": "unrestricted"
+  },
+  {
+   "player_id": "Reggie Evans",
+   "bbr_id": "evansre01",
+   "position": "PF",
+   "birth_date": "1980-05-18",
+   "former_club": "Seattle SuperSonics",
+   "status": "restricted"
+  },
+  {
+   "player_id": "Kevin Ollie",
+   "bbr_id": "ollieke01",
+   "position": "PG",
+   "birth_date": "1972-12-27",
+   "former_club": "Seattle SuperSonics",
+   "status": "unrestricted"
+  }
+ ]
+}
