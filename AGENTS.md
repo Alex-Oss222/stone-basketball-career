@@ -15,6 +15,7 @@ The AI/GM controls Miami's organization, roster construction, cap accounting, co
 - Team: Miami Heat
 - Selection: No. 5 overall
 - Contract state: Miami owns Wade's draft rights; he is not yet signed.
+- Head coach: Erik Spoelstra, promoted from Miami's staff at the start of the career (a premise chosen by the user); Pat Riley remains president.
 
 Do not import a later 2003 event before the career clock reaches it.
 
@@ -45,7 +46,7 @@ Do not import:
 - Anthony Carter's June 30 option outcome before June 30.
 - June 30 team-option, qualifying-offer or waiver decisions before June 30.
 - July free-agent signings before their dates.
-- the later 2003 head-coaching change before it occurs.
+- Miami's real later 2003 head-coaching change: it does not apply, because Spoelstra is head coach by the user's premise and Miami's coach changes only by a simulated decision.
 - final 2003-04 standings, statistics, awards or transactions.
 
 A later source may be used to reconstruct a contract term that already existed, but not to reveal a future choice or result to the simulation.

@@ -2,15 +2,15 @@
 
 **Team:** Miami Heat  
 **As of:** June 26, 2003  
-**Role:** President and Head Coach
+**Role:** President
 
 ## Authority
 
-President of the club and active head coach at the June 26, 2003 checkpoint.
+President of the club. At the start of the career he hands the head-coaching job to Erik Spoelstra (a premise chosen by the user) and remains president.
 
 ## Career-simulation relevance
 
-Final coaching authority and a central basketball decision maker. His later 2003 role change is future information and is not active here.
+A central basketball decision maker as president. Miami's real 2003 coaching change does not apply in this career.
 
 ## Information boundary
 
