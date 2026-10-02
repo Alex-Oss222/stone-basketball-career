@@ -124,6 +124,30 @@ class InitializedCareerTests(unittest.TestCase):
                 self.assertTrue((year/month/f"Week_{week}"/"League_Stats.md").is_file())
                 self.assertTrue((year/month/f"Week_{week}"/"League_Awards.md").is_file())
 
+    def test_team_stats_hierarchy(self):
+        root=PLAYER/"Stats_and_Awards"/"Team"/"2003-04"
+        self.assertTrue((root/"Team_Stats.md").is_file())
+        mapping={
+            "10_October":[3,4],
+            "11_November":[1,2,3,4],
+            "12_December":[1,2,3,4],
+            "01_January":[1,2,3,4],
+            "02_February":[1,2,3,4],
+            "03_March":[1,2,3,4],
+            "04_April":[1,2],
+        }
+        for month,weeks in mapping.items():
+            self.assertTrue((root/month/"Team_Stats.md").is_file())
+            for week in weeks:
+                self.assertTrue((root/month/f"Week_{week}"/"Team_Stats.md").is_file())
+
+    def test_team_stats_only_list_current_team_pool(self):
+        text=(PLAYER/"Stats_and_Awards"/"Team"/"2003-04"/"Team_Stats.md").read_text(encoding="utf-8")
+        roster=json.loads((TEAM/"Team/Roster/roster.json").read_text(encoding="utf-8"))
+        for player in roster["players"]:
+            self.assertIn(f"| {player['name']} |",text)
+        self.assertNotIn("| LeBron James |",text)
+
     def test_six_year_cap_reference(self):
         history=json.loads((TEAM/"Finances/league_cap_history.json").read_text(encoding="utf-8"))
         caps={row["season"]:row["salary_cap"] for row in history["seasons"]}

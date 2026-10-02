@@ -84,6 +84,12 @@ League-wide tracking lives under `career/Dwyane_Wade/Stats_and_Awards/League/`. 
 
 Weekly and monthly NBA awards remain conference-specific. Their pages keep a visible top-three shortlist but do not pretend the NBA published vote totals where it did not. Season individual awards publish the top three vote-getters. The No. 1 row is labeled WINNER only after the vote closes.
 
+## Team stats
+
+Miami-only player statistics live under `career/Dwyane_Wade/Stats_and_Awards/Team/`, using the same year → month → week structure as the other statistical records. Team pages contain only Miami players for that period.
+
+Roster changes are historical: departures stay on completed earlier pages for their Miami games, and arrivals appear from their first applicable period onward.
+
 ## Game records
 
 Game-note statuses are `scheduled`, `played`, or `not_played`.

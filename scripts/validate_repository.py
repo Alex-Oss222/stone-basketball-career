@@ -265,6 +265,17 @@ def validate():
             require(errors,(league_week/"League_Stats.md").is_file(),f"missing weekly league stats page: {month} Week {week}")
             require(errors,(league_week/"League_Awards.md").is_file(),f"missing weekly league awards page: {month} Week {week}")
 
+    team_stats_root=player/"Stats_and_Awards"/"Team"
+    team_stats_year=team_stats_root/season.name
+    require(errors,(team_stats_root/"README.md").is_file(),"missing Team stats index")
+    require(errors,(team_stats_year/"Team_Stats.md").is_file(),"missing yearly team stats page")
+    for month,spec in config["regular_season"].items():
+        team_month=team_stats_year/spec["folder"]
+        require(errors,(team_month/"Team_Stats.md").is_file(),f"missing monthly team stats page: {month}")
+        for week in spec["weeks"]:
+            team_week=team_month/f"Week_{week}"
+            require(errors,(team_week/"Team_Stats.md").is_file(),f"missing weekly team stats page: {month} Week {week}")
+
     for area in config["areas"]:
         folder=season/area["folder"]
         require(errors,folder.is_dir(),f"missing season area: {area['folder']}")
