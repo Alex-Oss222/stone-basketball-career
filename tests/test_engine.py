@@ -212,6 +212,23 @@ class PushToPlayTests(EngineHarness):
         restarted.initialize()
         self.assertEqual(restarted.close_digest("g", "0" * 64), ref)
 
+    def test_store_from_the_first_engine_version_still_starts(self):
+        """Regression: Railway's volume holds a store whose kernel_transitions has a required snapshot column."""
+        import sqlite3
+        path = self.root / "data/legacy.sqlite3"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with sqlite3.connect(path) as c:
+            c.executescript("""CREATE TABLE meta(key TEXT PRIMARY KEY, value BLOB NOT NULL);
+                CREATE TABLE kernel_transitions(id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    previous_kernel TEXT NOT NULL, next_kernel TEXT NOT NULL,
+                    snapshot TEXT NOT NULL, created INTEGER NOT NULL);""")
+            c.execute("INSERT INTO meta VALUES('seed', ?)", (b"s" * 32,))
+            c.execute("INSERT INTO meta VALUES('kernel', ?)", (b"2003.0",))
+        store = Store(path)
+        store.initialize()
+        self.assertEqual(store.kernel_history(), [("2003.0", KERNEL_VERSION)])
+        self.assertTrue(store.ready())
+
     def test_kernel_change_is_journaled(self):
         with mock.patch.object(private_service, "KERNEL_VERSION", "test-next-version"):
             Store(self.root / "data/engine.sqlite3").initialize()
