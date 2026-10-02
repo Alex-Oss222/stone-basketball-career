@@ -335,7 +335,7 @@ def validate():
     cap_sheet_path=team/"Finances/cap_sheet.md"
     if cap_sheet_path.is_file():
         cap_sheet=cap_sheet_path.read_text(encoding="utf-8")
-        for heading in ("## Current cap position","## Eight-season commitments","## Signed contract schedules","## Options and draft rights","## Cap reconciliation"):
+        for heading in ("## Current cap position","## Eight-season commitments","## Payroll notes","## Cap reconciliation"):
             require(errors,heading in cap_sheet,f"Finances/cap_sheet.md missing {heading}")
         require(errors,all(year in cap_sheet for year in CAP_SEASONS),"cap sheet must show the eight-season window")
 

@@ -10,16 +10,18 @@ The cap sheet starts with $26,269,078 in signed salary schedules and Wade's $2,1
 
 | Record | What it answers |
 | --- | --- |
-| [Cap sheet](cap_sheet.md) | What is scheduled over eight seasons, and what remains unresolved? |
+| [Cap sheet](cap_sheet.md) | All 17 player rows across eight seasons, with totals, option markers and payroll notes |
 | [Live finance state](finance.json) | Which amounts and decisions are usable at the current career date? |
 | [Contract schedules](contract_schedules.json) | Which player, season, contract term and source produce each subtotal? |
 | [Cap archive](league_cap_history.json) | What were the later historical league caps, and when may each become live? |
 
 ## Reading the numbers
 
+The main table uses exact dollars, with one player per row and one season per column. Player names link to their cards. Salary, draft-hold and priced-option subtotals sit beneath the players; contract notes follow the table.
+
 - **Salary** is an existing contract amount. **PO, TO and ETO** mark conditional years; the projection separates them from the base.
-- **Holds** reserve cap accounting space. They are not executed salaries or cash spending.
-- **Zero** means no scheduled amount in this inventory. **Null / unresolved** means the amount or decision is not established.
+- **H** marks the unsigned first-round hold. **DR** marks unsigned second-round rights, and **FA** marks a free-agent hold requiring review. Holds are cap allocations, not cash spending.
+- A **dash** means no player amount is scheduled for that year. **Zero** is a known subtotal with no scheduled dollars. **? / null** means unresolved, including future total team salary and cap room.
 - **Cap room** requires a published limit and a complete reconciliation. Tax payroll and any tax bill require their own accounting.
 
 The eight-season view rolls forward existing obligations. It does not assume later signings or use later Miami transactions. Historical cap actuals sit in a separate archive; they are not June 2003 forecasts. The rules in force are the 1999 CBA, without modern apron accounting.
@@ -34,4 +36,4 @@ The eight-season view rolls forward existing obligations. It does not assume lat
 
 ## Research basis
 
-[Spotrac's multi-year layout](https://www.spotrac.com/nba/los-angeles-lakers/yearly) informed the player-by-season schedules and separate allocation categories. [The 1999 CBA FAQ](https://www.cbafaq.com/salarycap99.htm) supplies era-specific accounting context. Individual contract sources remain beside their terms. [The NBA's 2010 cap announcement](https://pr.nba.com/nba-salary-cap-for-2010-11-season-set-at-58-044-million/) supports the two added archive seasons. Source gaps remain named on the cap sheet.
+The supplied payroll screenshots informed the player-by-season matrix, inline option markers, totals and contract notes. [Spotrac's multi-year layout](https://www.spotrac.com/nba/los-angeles-lakers/yearly) provides a further reference. [The 1999 CBA FAQ](https://www.cbafaq.com/salarycap99.htm) supplies era-specific accounting context. Individual contract sources remain beside their terms. [The NBA's 2010 cap announcement](https://pr.nba.com/nba-salary-cap-for-2010-11-season-set-at-58-044-million/) supports the two added archive seasons. Source gaps remain named on the cap sheet.

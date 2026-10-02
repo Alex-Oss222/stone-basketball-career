@@ -79,7 +79,7 @@ class InitializedCareerTests(unittest.TestCase):
 
     def test_cap_sheet_structure(self):
         cap=(TEAM/"Finances/cap_sheet.md").read_text(encoding="utf-8")
-        for heading in ("## Current cap position","## Eight-season commitments","## Signed contract schedules","## Options and draft rights","## Cap reconciliation"):
+        for heading in ("## Current cap position","## Eight-season commitments","## Payroll notes","## Cap reconciliation"):
             self.assertIn(heading,cap)
         self.assertIn("2003-04",cap)
         self.assertIn("2010-11",cap)
