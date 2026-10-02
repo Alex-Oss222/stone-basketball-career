@@ -147,7 +147,7 @@ def validate():
         "Team/Depth_Chart/depth_chart.md",
         "Team/Player_Cards/TEMPLATE.md",
         "Finances/finance.json",
-        "Finances/cap_tracker.md",
+        "Finances/cap_sheet.md",
         "Finances/contract_schedules.json",
         "Finances/league_cap_history.json",
     )
@@ -214,6 +214,13 @@ def validate():
         }
         actual={row.get("season"):row.get("salary_cap") for row in history.get("seasons",[])}
         require(errors,actual==expected_caps,"six-season historical cap reference changed")
+
+    cap_sheet_path=team/"Finances/cap_sheet.md"
+    if cap_sheet_path.is_file():
+        cap_sheet=cap_sheet_path.read_text(encoding="utf-8")
+        for heading in ("## Current cap position","## Active contracts","## Options and draft holds","## Free-agent holds still to reconcile","## Six-year summary"):
+            require(errors,heading in cap_sheet,f"Finances/cap_sheet.md missing {heading}")
+        require(errors,"2003-04" in cap_sheet and "2008-09" in cap_sheet,"cap sheet must show the six-year window")
 
     schedules_path=team/"Finances/contract_schedules.json"
     if schedules_path.is_file():

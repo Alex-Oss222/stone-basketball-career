@@ -75,6 +75,14 @@ class InitializedCareerTests(unittest.TestCase):
         self.assertEqual(carter["status"],"pending")
         self.assertEqual(carter["deadline"],"2003-06-30")
 
+    def test_cap_sheet_structure(self):
+        cap=(TEAM/"Finances/cap_sheet.md").read_text(encoding="utf-8")
+        for heading in ("## Current cap position","## Active contracts","## Options and draft holds","## Free-agent holds still to reconcile","## Six-year summary"):
+            self.assertIn(heading,cap)
+        self.assertIn("2003-04",cap)
+        self.assertIn("2008-09",cap)
+        self.assertFalse((TEAM/"Finances/cap_tracker.md").exists())
+
     def test_six_year_cap_reference(self):
         history=json.loads((TEAM/"Finances/league_cap_history.json").read_text(encoding="utf-8"))
         caps={row["season"]:row["salary_cap"] for row in history["seasons"]}

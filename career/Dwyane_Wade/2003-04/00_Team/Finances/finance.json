@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "owner": "ai_gm",
   "as_of": "2003-06-26",
   "season": "2003-04",
@@ -9,7 +9,6 @@
   "historical_actual_salary_cap": 43840000,
   "historical_actual_salary_cap_publication_date": "2003-07-15",
   "league_cap_history_file": "league_cap_history.json",
-  "cap_tracker_file": "cap_tracker.md",
   "contract_schedules_file": "contract_schedules.json",
   "known_counted_salary_before_free_agent_holds": 28466078,
   "reference_difference_to_historical_actual_cap_before_free_agent_holds": 15373922,
@@ -98,5 +97,6 @@
     "https://basketball.realgm.com/nba/info/rookie_scale/2004",
     "https://www.cbafaq.com/salarycap99.htm",
     "https://www.espn.com/nba/columns/stein_marc/1577692.html"
-  ]
+  ],
+  "cap_sheet_file": "cap_sheet.md"
 }
