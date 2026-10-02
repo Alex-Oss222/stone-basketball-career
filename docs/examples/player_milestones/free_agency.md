@@ -14,6 +14,16 @@
 
 **Signing readiness:** not established. Service history, a dated eligibility determination, each team's legal signing mechanism, full written terms and signing calendar still require verification before a live signing. **Offer expirations:** not supplied. There is no invented countdown and no assumption that an offer lasts indefinitely.
 
+## Try both kinds of market
+
+Open the [career gallery](career_milestones_preview.html) and change **UFA / RFA**. The offer figures remain comparable, but the route changes: direct eligible agreement for the UFA scenario; incumbent negotiation, qualifying-offer review or an eligible outside sheet followed by matching for the RFA scenario. Neither selection changes Wade's live draft-rights status.
+
+The gallery also includes three synthetic production profiles with a dated salary-comparison estimate. Inspect the range and comparison salaries before treating the working target as a negotiating reference. The [baseline documentation](../../player_market_profile.md) distinguishes its scheduled-salary proxy from a calibrated prediction of new free-agent contracts. Legal salary limits and each club's actual funding route remain separate.
+
+**No-offer variation:** leave all offer positions empty, retain the rights and value panels, and show confirmed interest or meetings in the contact register. The player's available work is to set priorities and direct eligible conversations; a meeting does not produce a salary bid automatically.
+
+**Unsigned-late-in-summer variation:** carry forward the actual offer availability and changed roster opportunities. Review shorter or differently protected proposals only when received. Ask how access to facilities and training staff will be arranged. Do not sign a minimum contract or retire the player automatically because camp approaches.
+
 ## Your team's offer comes first
 
 Miami sends written offer **A1**. You can ask for a revision, decline A1, or choose to explore the market if your actual status permits it. You can also keep A1 open while talking to other clubs if Miami has not withdrawn it and its terms permit that.
