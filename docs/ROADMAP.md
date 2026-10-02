@@ -19,7 +19,7 @@ Status: `done`, `next`, `blocked: <what is missing>`, `later`.
 | 9 | Miami's perimeter-defense grade for Wade at camp | Agreed rating decision; until then Wade counts as an average defender (defensive value 0) | at training camp; the grade must also be mapped to the defensive value scale (`docs/engine_model.md`) |
 | 10 | Game builder: Miami game notes and requests from the schedule, on their dates | No hand-written requests | before October 5 |
 | 11 | League slate: Railway plays every non-Miami game from the schedule | Standings need all 1,189 games | before October 28 |
-| 12 | Injuries and availability | 82 games with no injuries is not a season | before October 28 |
+| 12 | Injuries and availability | 82 games with no injuries is not a season | done: real clubs by real availability, Miami by engine-drawn injuries in each result (`runtime/injuries.py`), back-to-back fatigue for all; the game builder (item 10) must leave injured Miami players out (`injured_out`) and the write-back (item 13) record injuries |
 | 13 | Write-back: results into game notes, Wade, Miami and league stat pages | Results count only once written into the career record | before October 28 |
 | 13a | Wade's requests to the front office: logged, weighed by his standing, engine-drawn where uncertain | Wade's influence on Miami | built for June 30 decisions (`wade_requests.json`, `docs/front_office.md`); extend to later decisions as they are built |
 
@@ -35,7 +35,7 @@ Found in the engine review on real 2003-04 rosters. Model and numbers: `docs/eng
 | E4 | Results too random, no late-game logic | Foul when trailing, run the clock when leading, hold for the last shot, closing lineups, garbage time, and the score effect | done: margin SD 13.4, overtime 5.4% |
 | E5 | Too many foul-outs | Sit players in foul trouble, bring them back later | done: 0.22 per game |
 | E6 | Every club plays at the league pace | Each club's pace from the season before (the same rule as the league averages) | done (kernel 2003.4): `library/<year>/league/nba_<season>_team_pace.json` from `scripts/import_team_pace.py`; a game runs at the average of the two clubs' paces; Miami at the league pace until its coaches set one |
-| E7 | No injuries or fatigue | Roadmap item 12 | before October 28 |
+| E7 | No injuries or fatigue | Roadmap item 12 | done (kernel 2003.5): back-to-backs for every club; engine-drawn injuries for Miami |
 
 ## During and after 2003-04
 

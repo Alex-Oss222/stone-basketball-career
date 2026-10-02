@@ -78,6 +78,14 @@ THREE_FLOOR = (0.6, 0.95)       # trailing by 3+ in the last minute: least three
 # engine's own late-game logic adds back (measured on 2003-04 rosters, per team per game).
 LATE_FOUL_FTA, LATE_FOUL_PF, LATE_THREE_PA = 1.4, 0.7, 0.5
 LAST_SHOT = 0.7                # make probability factor on a period's final, fully defended possession
+# Fatigue and injuries (problem E7, roadmap item 12).
+BACK_TO_BACK_POINTS = 1.5       # a club on the second night of a back-to-back plays this much worse
+INJURY_PER_36 = 0.016           # chance of an injury per 36 minutes played
+INJURY_AGE = ((25, 0.85), (29, 1.0), (32, 1.2), (99, 1.45))     # (up to age, risk factor)
+BACK_TO_BACK_INJURY = 1.2       # risk factor on the second night of a back-to-back
+# (share of injuries, fewest and most games missed): day-to-day up to season-ending.
+INJURY_LENGTHS = ((0.55, 1, 2, "day-to-day"), (0.25, 3, 7, "short"), (0.13, 8, 20, "medium"),
+                  (0.06, 21, 50, "long"), (0.01, 51, 82, "season"))
 CAREFUL = 0.25                  # foul weight of a player one foul from disqualification
 
 
@@ -89,6 +97,7 @@ class PlayerInput:
     ratings: dict = field(default_factory=dict)
     stat_profile: dict = field(default_factory=dict)
     availability: float = 1.0       # chance he is available for this game; the engine draws it
+    age: int = None                 # age on the game date; sets injury risk where injuries are drawn
 
 
 @dataclass(frozen=True)
@@ -96,6 +105,8 @@ class TeamInput:
     team_id: str
     players: tuple
     pace: float = 1.0               # the club's pace relative to the league (problem E6)
+    rest_days: int = 2              # days off before this game; 0 is the second night of a back-to-back
+    injuries: bool = False          # draw injuries for this club's players (the simulated club; E7)
 
 
 def team_errors(team, rules):
@@ -103,6 +114,13 @@ def team_errors(team, rules):
     players = list(team.players)
     if isinstance(team.pace, bool) or not isinstance(team.pace, (int, float)) or not 0.85 <= team.pace <= 1.15:
         errors.append("club pace must be between 0.85 and 1.15 of the league's")
+    if isinstance(team.rest_days, bool) or not isinstance(team.rest_days, int) or not 0 <= team.rest_days <= 10:
+        errors.append("rest days must be a whole number from 0 to 10")
+    if not isinstance(team.injuries, bool):
+        errors.append("injuries must be true or false")
+    for p in players:
+        if p.age is not None and (isinstance(p.age, bool) or not isinstance(p.age, int) or not 15 <= p.age <= 50):
+            errors.append(f"{p.player_id}: age must be a whole number from 15 to 50")
     ids = [p.player_id for p in players]
     if len(ids) != len(set(ids)):
         errors.append("duplicate player ids")
@@ -222,6 +240,7 @@ def calibrate(environment):
         "p_extra_foul": max(0.0, a["pf"] - LATE_FOUL_PF - trips - and_one_fta) / box_possessions,
         "home_edge": assumptions["home_edge_points_per_game"] / (2 * a["fga"] * make_value),
         "home_points": assumptions["home_edge_points_per_game"],
+        "edge_per_point": 1 / (a["fga"] * make_value),     # make-probability shift worth one point a game
         "box_possessions": box_possessions,
         "and_one_share_of_fta": assumptions["and_one_share_of_fta"],
         "rate_baselines": environment.get("player_rate_baselines", {}),
@@ -447,6 +466,11 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         _expected_points(clubs["home"], clubs["away"], cal) - _expected_points(clubs["away"], clubs["home"], cal))
     if venue == "home":
         expected_margin += cal["home_points"]
+    # Fatigue: the second night of a back-to-back costs a club about 1.5 points (E7).
+    for side, team in (("home", home), ("away", away)):
+        if team.rest_days == 0:
+            edge[side] -= cal["edge_per_point"] * BACK_TO_BACK_POINTS
+            expected_margin += BACK_TO_BACK_POINTS * (-1 if side == "home" else 1)
 
     def other(side):
         return "away" if side == "home" else "home"
@@ -723,6 +747,23 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
                    "home" if rng.random() < 0.5 else "away", game_seconds, elapsed)
         elapsed += ot_seconds
 
+    # Injuries for the simulated club, drawn after the final whistle from the same entropy (E7).
+    injuries = []
+    for side, club in clubs.items():
+        if not club.team.injuries:
+            continue
+        for pid in club.order:
+            minutes = club.lines[pid]["seconds"] / 60
+            if minutes <= 0:
+                continue
+            age = club.players[pid].age
+            risk = INJURY_PER_36 * minutes / 36 * (next(f for limit, f in INJURY_AGE if age <= limit) if age else 1.0)
+            if club.team.rest_days == 0:
+                risk *= BACK_TO_BACK_INJURY
+            if rng.random() < risk:
+                share, low, high, kind = _weighted(rng, INJURY_LENGTHS, [length[0] for length in INJURY_LENGTHS])
+                injuries.append({"side": side, "player_id": pid, "kind": kind, "games_out": rng.randint(low, high)})
+
     def team_totals(club):
         totals = _blank_line()
         for line in club.lines.values():
@@ -760,6 +801,7 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         "player_stats": {side: box(club) for side, club in clubs.items()},
         "inactive": {side: list(club.inactive) for side, club in clubs.items()},
         "game_seconds": elapsed,
+        "injuries": injuries,
         "terminated": True,
     }
 
