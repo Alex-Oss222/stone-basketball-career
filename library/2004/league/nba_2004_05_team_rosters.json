@@ -282,6 +282,23 @@
      ]
     },
     {
+     "player_id": "Wesley Person",
+     "bbr_id": "persowe01",
+     "position": "SF",
+     "games": 9,
+     "games_started": 0,
+     "minutes": 132,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2003-04"
+    },
+    {
      "player_id": "Jelani McCoy",
      "bbr_id": "mccoyje01",
      "position": "C",
@@ -1832,6 +1849,23 @@
      ]
     },
     {
+     "player_id": "Michael Doleac",
+     "bbr_id": "doleami01",
+     "position": "C",
+     "games": 26,
+     "games_started": 0,
+     "minutes": 344,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2003-04"
+    },
+    {
      "player_id": "Nikoloz Tskitishvili",
      "bbr_id": "tskitni01",
      "position": "PF",
@@ -3297,6 +3331,23 @@
      ]
     },
     {
+     "player_id": "Keyon Dooling",
+     "bbr_id": "doolike01",
+     "position": "PG",
+     "games": 58,
+     "games_started": 24,
+     "minutes": 1137,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2003-04"
+    },
+    {
      "player_id": "Chris Wilcox",
      "bbr_id": "wilcoch01",
      "position": "C",
@@ -3441,6 +3492,23 @@
      ]
     },
     {
+     "player_id": "Wang Zhizhi",
+     "bbr_id": "zhizhwa01",
+     "position": "C",
+     "games": 2,
+     "games_started": 0,
+     "minutes": 9,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2003-04"
+    },
+    {
      "player_id": "Maurice Baker",
      "bbr_id": "bakerma01",
      "position": "PG",
@@ -3508,6 +3576,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Shaquille O'Neal",
+     "bbr_id": "onealsh01",
+     "position": "C",
+     "games": 67,
+     "games_started": 67,
+     "minutes": 2464,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2003-04"
     },
     {
      "player_id": "Lamar Odom",
@@ -4030,6 +4115,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Damon Jones",
+     "bbr_id": "jonesda01",
+     "position": "PG",
+     "games": 82,
+     "games_started": 26,
+     "minutes": 2016,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2003-04"
     },
     {
      "player_id": "Dan Gadzuric",
@@ -6552,6 +6654,23 @@
      ]
     },
     {
+     "player_id": "Qyntel Woods",
+     "bbr_id": "woodsqy01",
+     "position": "SF",
+     "games": 62,
+     "games_started": 8,
+     "minutes": 673,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2003-04"
+    },
+    {
      "player_id": "Viktor Khryapa",
      "bbr_id": "khryavi01",
      "position": "SF",
@@ -8132,6 +8251,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Christian Laettner",
+     "bbr_id": "laettch01",
+     "position": "PF",
+     "games": 48,
+     "games_started": 18,
+     "minutes": 984,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2003-04"
     },
     {
      "player_id": "Etan Thomas",

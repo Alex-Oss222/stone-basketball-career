@@ -25,9 +25,9 @@ A player input has minutes per game when he plays and an availability, the chanc
 
 Conflict rules (`AGENTS.md`, world model):
 
-1. A stint begun by a real Miami transaction is skipped at import: the player stays with his previous club, whose stint extends over it. A player whose season began at Miami belongs to simulated Miami. Not built yet: players a real Miami transaction brought in between seasons (roadmap item 8).
-2. Players on simulated Miami's register are taken out of every real club, matched by Basketball-Reference ID or name.
-3. Departing players' minutes go to arrivals up to their own previous share; the rest raises the staying players' minutes in proportion to their real minutes. Nobody staying loses minutes.
+1. Real Miami transactions are skipped at import. A stint one began is folded into the player's previous club, whose stint extends over it. A player real Miami brought in between seasons, free agents included (chosen by the user), is back on the club that had him at the end of the season before, for the whole season, with that season's minutes per game and games played. One with no previous NBA club stays a free agent.
+2. Players on simulated Miami's register are taken out of every real club, matched by Basketball-Reference ID or name. So a returned player simulated Miami signs plays for Miami only.
+3. Departing players' minutes go to arrivals and returned players up to their own previous share; the rest raises the staying players' minutes in proportion to their real minutes. When the arrivals need more than the departing minutes, the difference comes out of the staying players' minutes in the same proportion.
 
 ## Late game (problem E4)
 
@@ -69,4 +69,4 @@ Six seasons of the real 2003-04 schedule without Miami's games (6,642 games, 79 
 
 Box totals per team: FGA 81.1 (80.8), FTA 24.9 (24.4), turnovers 15.2 (14.9), offensive rebounds 12.1 (12.0), assists 21.7 (21.5), fouls 22.2 (21.8); environment values in brackets. Three-point attempts run at 15.2 against 14.7: the 2003-04 players' own three-point rates, weighted by their attempts, are about 3% above the 2002-03 environment.
 
-Known gaps: team pace is uniform (problem E6); there are no injuries or fatigue (problem E7, roadmap item 12); players a real Miami transaction brought in between seasons are not yet returned to their previous club (conflict rule 1, roadmap item 8).
+Known gaps: team pace is uniform (problem E6); there are no injuries or fatigue (problem E7, roadmap item 12); from 2004-05, players real Miami traded away between seasons still follow history, because the season tables cannot tell a trade from a free-agent move (roadmap item 8).

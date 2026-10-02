@@ -3590,6 +3590,40 @@
      ]
     },
     {
+     "player_id": "Shaquille O'Neal",
+     "bbr_id": "onealsh01",
+     "position": "C",
+     "games": 67,
+     "games_started": 67,
+     "minutes": 2464,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2006-07"
+    },
+    {
+     "player_id": "Smush Parker",
+     "bbr_id": "parkesm01",
+     "position": "PG",
+     "games": 82,
+     "games_started": 80,
+     "minutes": 2457,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2006-07"
+    },
+    {
      "player_id": "Derek Fisher",
      "bbr_id": "fishede01",
      "position": "PG",
@@ -3931,6 +3965,23 @@
      ]
     },
     {
+     "player_id": "Jason Williams",
+     "bbr_id": "willija02",
+     "position": "PG",
+     "games": 71,
+     "games_started": 68,
+     "minutes": 1952,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2006-07"
+    },
+    {
      "player_id": "Hakim Warrick",
      "bbr_id": "warriha01",
      "position": "PF",
@@ -3993,6 +4044,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Alexander Johnson",
+     "bbr_id": "johnsal01",
+     "position": "PF",
+     "games": 59,
+     "games_started": 19,
+     "minutes": 753,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2006-07"
     },
     {
      "player_id": "Damon Stoudamire",
@@ -4405,6 +4473,23 @@
    "code": "MIN",
    "players": [
     {
+     "player_id": "Ricky Davis",
+     "bbr_id": "davisri01",
+     "position": "SF",
+     "games": 81,
+     "games_started": 81,
+     "minutes": 3021,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2006-07"
+    },
+    {
      "player_id": "Al Jefferson",
      "bbr_id": "jeffeal01",
      "position": "C",
@@ -4419,6 +4504,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Mark Blount",
+     "bbr_id": "blounma01",
+     "position": "C",
+     "games": 82,
+     "games_started": 81,
+     "minutes": 2544,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2006-07"
     },
     {
      "player_id": "Ryan Gomes",
@@ -4872,6 +4974,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Alonzo Mourning",
+     "bbr_id": "mournal01",
+     "position": "C",
+     "games": 18,
+     "games_started": 14,
+     "minutes": 457,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2006-07"
     },
     {
      "player_id": "DeSagana Diop",
@@ -7658,6 +7777,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Luke Jackson",
+     "bbr_id": "jackslu02",
+     "position": "SF",
+     "games": 10,
+     "games_started": 2,
+     "minutes": 122,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2006-07"
     },
     {
      "player_id": "Primož Brezec",

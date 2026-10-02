@@ -319,6 +319,23 @@
    "code": "BOS",
    "players": [
     {
+     "player_id": "Gary Payton",
+     "bbr_id": "paytoga01",
+     "position": "PG",
+     "games": 77,
+     "games_started": 77,
+     "minutes": 2541,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2005-06"
+    },
+    {
      "player_id": "Al Jefferson",
      "bbr_id": "jeffeal01",
      "position": "C",
@@ -477,6 +494,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Antoine Walker",
+     "bbr_id": "walkean02",
+     "position": "PF",
+     "games": 24,
+     "games_started": 24,
+     "minutes": 827,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2005-06"
     },
     {
      "player_id": "Tony Allen",
@@ -658,6 +692,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Jason Kapono",
+     "bbr_id": "kaponja01",
+     "position": "SF",
+     "games": 81,
+     "games_started": 14,
+     "minutes": 1491,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2005-06"
     },
     {
      "player_id": "Brevin Knight",
@@ -1814,6 +1865,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Michael Doleac",
+     "bbr_id": "doleami01",
+     "position": "C",
+     "games": 26,
+     "games_started": 0,
+     "minutes": 344,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2005-06"
     },
     {
      "player_id": "Joe Smith",
@@ -3350,6 +3418,23 @@
      ]
     },
     {
+     "player_id": "Shaquille O'Neal",
+     "bbr_id": "onealsh01",
+     "position": "C",
+     "games": 67,
+     "games_started": 67,
+     "minutes": 2464,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2005-06"
+    },
+    {
      "player_id": "Smush Parker",
      "bbr_id": "parkesm01",
      "position": "PG",
@@ -3643,6 +3728,23 @@
      ]
     },
     {
+     "player_id": "Jason Williams",
+     "bbr_id": "willija02",
+     "position": "PG",
+     "games": 71,
+     "games_started": 68,
+     "minutes": 1952,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2005-06"
+    },
+    {
      "player_id": "Dahntay Jones",
      "bbr_id": "jonesda02",
      "position": "SG",
@@ -3673,6 +3775,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "James Posey",
+     "bbr_id": "poseyja01",
+     "position": "SF",
+     "games": 50,
+     "games_started": 18,
+     "minutes": 1382,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2005-06"
     },
     {
      "player_id": "Stromile Swift",
@@ -4568,6 +4687,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Alonzo Mourning",
+     "bbr_id": "mournal01",
+     "position": "C",
+     "games": 18,
+     "games_started": 14,
+     "minutes": 457,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2005-06"
     },
     {
      "player_id": "Bernard Robinson",

@@ -543,6 +543,23 @@
      ]
     },
     {
+     "player_id": "Bimbo Coles",
+     "bbr_id": "colesbi01",
+     "position": "PG",
+     "games": 35,
+     "games_started": 11,
+     "minutes": 691,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2002-03"
+    },
+    {
      "player_id": "Eric Williams",
      "bbr_id": "willier01",
      "position": "SF",
@@ -3020,6 +3037,23 @@
      ]
     },
     {
+     "player_id": "Lamar Odom",
+     "bbr_id": "odomla01",
+     "position": "PF",
+     "games": 49,
+     "games_started": 47,
+     "minutes": 1679,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2002-03"
+    },
+    {
      "player_id": "Bobby Simmons",
      "bbr_id": "simmobo01",
      "position": "SF",
@@ -3343,6 +3377,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Samaki Walker",
+     "bbr_id": "walkesa01",
+     "position": "PF",
+     "games": 67,
+     "games_started": 39,
+     "minutes": 1243,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2002-03"
     },
     {
      "player_id": "Horace Grant",
@@ -4222,6 +4273,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Loren Woods",
+     "bbr_id": "woodslo01",
+     "position": "C",
+     "games": 38,
+     "games_started": 11,
+     "minutes": 353,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2002-03"
     },
     {
      "player_id": "Darrick Martin",
@@ -5655,6 +5723,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Tyrone Hill",
+     "bbr_id": "hillty01",
+     "position": "PF",
+     "games": 56,
+     "games_started": 43,
+     "minutes": 1351,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2002-03"
     },
     {
      "player_id": "Glenn Robinson",
@@ -7333,6 +7418,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Rafer Alston",
+     "bbr_id": "alstora01",
+     "position": "PG",
+     "games": 47,
+     "games_started": 4,
+     "minutes": 980,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2002-03"
     },
     {
      "player_id": "Antonio Davis",

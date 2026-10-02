@@ -1729,6 +1729,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Jamaal Magloire",
+     "bbr_id": "magloja01",
+     "position": "C",
+     "games": 7,
+     "games_started": 0,
+     "minutes": 27,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2008-09"
     }
    ]
   },
@@ -1894,6 +1911,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Yakhouba Diawara",
+     "bbr_id": "diawaya01",
+     "position": "SG",
+     "games": 54,
+     "games_started": 14,
+     "minutes": 542,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2008-09"
     },
     {
      "player_id": "Malik Allen",
@@ -5076,6 +5110,23 @@
      ]
     },
     {
+     "player_id": "Quentin Richardson",
+     "bbr_id": "richaqu01",
+     "position": "SF",
+     "games": 72,
+     "games_started": 51,
+     "minutes": 1894,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2008-09"
+    },
+    {
      "player_id": "Jared Jeffries",
      "bbr_id": "jeffrja01",
      "position": "PF",
@@ -6445,6 +6496,23 @@
      ]
     },
     {
+     "player_id": "James Jones",
+     "bbr_id": "jonesja02",
+     "position": "SF",
+     "games": 58,
+     "games_started": 3,
+     "minutes": 1276,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2008-09"
+    },
+    {
      "player_id": "Nicolas Batum",
      "bbr_id": "batumni01",
      "position": "SF",
@@ -6571,6 +6639,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Shavlik Randolph",
+     "bbr_id": "randosh01",
+     "position": "PF",
+     "games": 10,
+     "games_started": 0,
+     "minutes": 37,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2008-09"
     },
     {
      "player_id": "Travis Diener",
@@ -7354,6 +7439,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Jermaine O'Neal",
+     "bbr_id": "onealje01",
+     "position": "C",
+     "games": 41,
+     "games_started": 34,
+     "minutes": 1216,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2008-09"
     },
     {
      "player_id": "Marco Belinelli",

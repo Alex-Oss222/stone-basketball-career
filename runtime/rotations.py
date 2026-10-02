@@ -13,14 +13,17 @@ the season half his minutes every night; this gives him his real minutes on
 the nights he plays.
 
 Conflict rules (AGENTS.md, option D):
-1. A real stint begun by a Miami transaction is skipped at import: the player
-   stays with his previous club (`scripts/import_careers.py`). Players a real
-   Miami transaction brought in between seasons still need a ledger
-   (ROADMAP item 8).
+1. A real Miami transaction is skipped at import (`scripts/import_careers.py`):
+   a stint it began is folded into the player's previous club, and a player
+   real Miami brought in between seasons is back on the club that had him
+   (`returned`), with his previous season's minutes and games played.
 2. Players simulated Miami holds on the game date (its team-control register)
    are taken out of every real club (`miami_holds`).
-3. Departing players' minutes go to arrivals up to their own previous share;
-   the rest raises the staying rotation in proportion to real minutes.
+3. Departing players' minutes go to arrivals (and returned players) up to
+   their own previous share; the rest raises the staying rotation in
+   proportion to real minutes. When the arrivals' shares are larger than the
+   departing minutes, the difference comes out of the staying rotation in
+   the same proportion.
 Miami's own rotation comes from its depth chart, never from this module.
 """
 from datetime import date
@@ -97,23 +100,23 @@ def real_rotation(club_name, club, season_games, rating_index=None, *, fraction,
 
     `club` is the roster file entry; `season_games` the club's regular-season games.
     `exclude`: bbr_ids or names not with this club in the simulation (rule 2).
-    `arrivals`: roster entries (same shape) for players who joined in the simulation.
+    `arrivals`: roster entries (same shape) for players who joined in the simulation, such as a
+    player simulated Miami trades to this club.
     """
     exclude = set(exclude)
     gone = lambda p: p["bbr_id"] in exclude or alias(p["player_id"]) in exclude
     present = [p for p in club["players"] if _present(p, fraction)]
-    staying = [p for p in present if not gone(p)]
-    arrivals = [a for a in arrivals if a["games"] >= 1 and a["minutes"] > 0 and not gone(a)]
-    # Rule 3: arrivals get the departing minutes up to their own previous share; the rest is
-    # spread over the staying rotation in proportion to real minutes.
+    staying = [p for p in present if not gone(p) and "returned" not in p]
+    incoming = [p for p in present if not gone(p) and "returned" in p] + [
+        a for a in arrivals if a["games"] >= 1 and a["minutes"] > 0 and not gone(a)]
+    # Rule 3: departing minutes go to the incoming players up to their own previous share and the
+    # rest raises the staying rotation; a shortfall comes out of it, both in proportion to real minutes.
     freed = sum(_share(p, season_games) for p in present if gone(p))
-    wanted = sum(_share(a, season_games) for a in arrivals)
-    grant = min(1.0, freed / wanted) if wanted else 0.0
-    remainder = freed - grant * wanted
+    wanted = sum(_share(p, season_games) for p in incoming)
     stay_share = sum(_share(p, season_games) for p in staying)
-    factor = 1 + remainder / stay_share if stay_share and remainder > 0 else 1.0
+    factor = max(0.25, 1 + (freed - wanted) / stay_share) if stay_share else 1.0
     players = []
-    for p, scale in [(p, factor) for p in staying] + [(a, grant) for a in arrivals]:
+    for p, scale in [(p, factor) for p in staying] + [(p, 1.0) for p in incoming]:
         per_game = min(MAX_MINUTES_PER_GAME, p["minutes"] / p["games"] * scale)
         if per_game <= 0:
             continue

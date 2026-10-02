@@ -173,12 +173,26 @@ class RotationTests(unittest.TestCase):
         # The other 16 minutes of A's 36 are spread over B and C in proportion to their minutes.
         self.assertAlmostEqual(minutes["B"] + minutes["C"], 30 + 20 + 16, places=1)
         self.assertAlmostEqual(minutes["B"] / minutes["C"], 30 / 20, places=3)
-        # An arrival never takes more than the departing minutes; nobody staying loses minutes.
+        # An arrival who needs more than the departing minutes still plays his share; the
+        # difference comes out of the staying rotation in proportion to real minutes.
         small = {"players": [row("A", 492), row("B", 2460), row("C", 1640)]}
         moved = real_rotation("X", small, 82, fraction=0.5, exclude={"aaaaa01"}, arrivals=[row("D", 2460)])
         minutes = {p.player_id: p.minutes for p in moved.players}
-        self.assertAlmostEqual(minutes["D"], 6.0, places=2)
-        self.assertEqual((minutes["B"], minutes["C"]), (30.0, 20.0))
+        self.assertEqual(minutes["D"], 30.0)
+        self.assertAlmostEqual(minutes["B"] + minutes["C"], 50 - 24, places=1)
+        self.assertAlmostEqual(minutes["B"] / minutes["C"], 30 / 20, places=3)
+
+    def test_real_miami_signings_return_to_their_previous_club(self):
+        rosters = load_rosters("2003-04")
+        returned = {p["player_id"]: club for club, entry in rosters.items() for p in entry["players"] if "returned" in p}
+        self.assertEqual(returned.get("Lamar Odom"), "Los Angeles Clippers")
+        self.assertEqual(returned.get("Rafer Alston"), "Toronto Raptors")
+        self.assertNotIn("Udonis Haslem", returned)                  # no previous NBA club
+        raptors = real_rotation("Toronto Raptors", rosters["Toronto Raptors"], 82, fraction=0.5)
+        alston = next(p for p in raptors.players if p.player_id == "Rafer Alston")
+        self.assertAlmostEqual(alston.minutes, 980 / 47, places=1)    # his 2002-03 share
+        signed = real_rotation("Toronto Raptors", rosters["Toronto Raptors"], 82, fraction=0.5, exclude={"alstora01"})
+        self.assertNotIn("Rafer Alston", {p.player_id for p in signed.players})   # if simulated Miami signs him
 
     def test_hardship_does_not_override_availability(self):
         import random

@@ -1038,6 +1038,23 @@
    "code": "CLE",
    "players": [
     {
+     "player_id": "LeBron James",
+     "bbr_id": "jamesle01",
+     "position": "SF",
+     "games": 76,
+     "games_started": 76,
+     "minutes": 2966,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2010-11"
+    },
+    {
      "player_id": "Antawn Jamison",
      "bbr_id": "jamisan01",
      "position": "PF",
@@ -3721,6 +3738,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Shane Battier",
+     "bbr_id": "battish01",
+     "position": "SF",
+     "games": 23,
+     "games_started": 0,
+     "minutes": 557,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2010-11"
     },
     {
      "player_id": "Jeremy Pargo",
@@ -6429,6 +6463,23 @@
      ]
     },
     {
+     "player_id": "Juwan Howard",
+     "bbr_id": "howarju01",
+     "position": "PF",
+     "games": 73,
+     "games_started": 27,
+     "minutes": 1632,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2010-11"
+    },
+    {
      "player_id": "Jamal Crawford",
      "bbr_id": "crawfja01",
      "position": "PG",
@@ -6459,6 +6510,23 @@
       0.0,
       0.7241
      ]
+    },
+    {
+     "player_id": "James Jones",
+     "bbr_id": "jonesja02",
+     "position": "SG",
+     "games": 58,
+     "games_started": 3,
+     "minutes": 1276,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2010-11"
     },
     {
      "player_id": "Marcus Camby",
@@ -7244,6 +7312,23 @@
    "code": "TOR",
    "players": [
     {
+     "player_id": "Chris Bosh",
+     "bbr_id": "boshch01",
+     "position": "PF",
+     "games": 70,
+     "games_started": 70,
+     "minutes": 2526,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2010-11"
+    },
+    {
      "player_id": "DeMar DeRozan",
      "bbr_id": "derozde01",
      "position": "SG",
@@ -7796,6 +7881,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Mike Miller",
+     "bbr_id": "millemi01",
+     "position": "SG",
+     "games": 54,
+     "games_started": 50,
+     "minutes": 1805,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2010-11"
     },
     {
      "player_id": "Jordan Crawford",

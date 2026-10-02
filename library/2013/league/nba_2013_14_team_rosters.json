@@ -367,6 +367,23 @@
      ]
     },
     {
+     "player_id": "Ray Allen",
+     "bbr_id": "allenra02",
+     "position": "SG",
+     "games": 46,
+     "games_started": 42,
+     "minutes": 1565,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2012-13"
+    },
+    {
      "player_id": "Gerald Wallace",
      "bbr_id": "wallage01",
      "position": "SF",
@@ -1539,6 +1556,23 @@
    "code": "CLE",
    "players": [
     {
+     "player_id": "LeBron James",
+     "bbr_id": "jamesle01",
+     "position": "PF",
+     "games": 76,
+     "games_started": 76,
+     "minutes": 2966,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2012-13"
+    },
+    {
      "player_id": "Tristan Thompson",
      "bbr_id": "thomptr01",
      "position": "PF",
@@ -2347,6 +2381,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Chris Andersen",
+     "bbr_id": "anderch01",
+     "position": "C",
+     "games": 32,
+     "games_started": 1,
+     "minutes": 486,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2012-13"
     },
     {
      "player_id": "Jan Veselý",
@@ -4336,6 +4387,23 @@
      ]
     },
     {
+     "player_id": "Shane Battier",
+     "bbr_id": "battish01",
+     "position": "SF",
+     "games": 23,
+     "games_started": 0,
+     "minutes": 557,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2012-13"
+    },
+    {
      "player_id": "Quincy Pondexter",
      "bbr_id": "pondequ01",
      "position": "SG",
@@ -5849,6 +5917,23 @@
      ]
     },
     {
+     "player_id": "DeAndre Liggins",
+     "bbr_id": "liggide01",
+     "position": "SG",
+     "games": 39,
+     "games_started": 1,
+     "minutes": 290,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2012-13"
+    },
+    {
      "player_id": "Hasheem Thabeet",
      "bbr_id": "thabeha01",
      "position": "C",
@@ -6680,6 +6765,23 @@
      ]
     },
     {
+     "player_id": "Michael Beasley",
+     "bbr_id": "beaslmi01",
+     "position": "SF",
+     "games": 75,
+     "games_started": 20,
+     "minutes": 1554,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2012-13"
+    },
+    {
      "player_id": "Eric Bledsoe",
      "bbr_id": "bledser01",
      "position": "PG",
@@ -6907,6 +7009,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "James Jones",
+     "bbr_id": "jonesja02",
+     "position": "SF",
+     "games": 58,
+     "games_started": 3,
+     "minutes": 1276,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2012-13"
     },
     {
      "player_id": "Dorell Wright",
@@ -7772,6 +7891,23 @@
      ]
     },
     {
+     "player_id": "Chris Bosh",
+     "bbr_id": "boshch01",
+     "position": "C",
+     "games": 70,
+     "games_started": 70,
+     "minutes": 2526,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2012-13"
+    },
+    {
      "player_id": "Jonas Valančiūnas",
      "bbr_id": "valanjo01",
      "position": "C",
@@ -8452,6 +8588,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Rashard Lewis",
+     "bbr_id": "lewisra02",
+     "position": "SF",
+     "games": 28,
+     "games_started": 15,
+     "minutes": 729,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2012-13"
     },
     {
      "player_id": "Garrett Temple",

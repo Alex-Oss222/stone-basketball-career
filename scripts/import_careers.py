@@ -13,9 +13,11 @@ Writes two kinds of library files:
   season he spent there (`window`, a fraction of the season, from his games
   played before, during and after the stint), so he is on one club at a time.
   A stint that a real Miami transaction began is skipped (AGENTS.md rule 1):
-  the player stays with his previous club, whose window extends over it; a
-  player whose season began at Miami belongs to simulated Miami and gets no
-  real-club rows.
+  the player stays with his previous club, whose window extends over it. A
+  player real Miami brought in between seasons goes back to the club that had
+  him at the end of the season before, for the whole season, with that
+  season's minutes per game and games played (`returned`); one with no
+  previous club (an undrafted or overseas signing) gets no real-club rows.
 
 Removed on import:
 * the historical Dwyane Wade (`wadedw01`): the career's Wade is alternate
@@ -119,8 +121,30 @@ def season_label(year_end):
     return f"{year_end - 1}-{str(year_end)[-2:]}"
 
 
+def end_of_2002_03():
+    """bbr_id -> (club, games, minutes, position) at the end of 2002-03, the season before the career data."""
+    rosters = json.loads((ROOT / "library/2003/league/nba_2003_end_of_season.json").read_text(encoding="utf-8"))["clubs"]
+    stats = {r["bbr_id"]: r for r in json.loads(
+        (ROOT / "library/2003/league/nba_2002_03_player_stats.json").read_text(encoding="utf-8"))["records"]}
+    out = {}
+    for club, entry in rosters.items():
+        for p in entry["players"]:
+            record = stats.get(p.get("bbr_id"))
+            if record and CODES.get(entry["code"], club) != CODES[SIMULATED_CLUB]:
+                out[p["bbr_id"]] = (club, record["totals"]["games"], round(record["totals"]["minutes"]),
+                                    record["totals"]["games_started"])
+    return out
+
+
+def end_of_season(clubs):
+    """bbr_id -> (club, games, minutes, games_started) for players with a club when a season ended."""
+    return {p["bbr_id"]: (club, p["games"], p["minutes"], p["games_started"])
+            for club, entry in clubs.items() for p in entry["players"] if p["window"][1] >= 1.0}
+
+
 def main(folder):
     folder = Path(folder)
+    previous = end_of_2002_03()
     careers = {"schema_version": 1, "kind": "player_career_rates", "source": SOURCE,
                "excluded": ["the alternate-history protagonist (historical Dwyane Wade rows)", "Awards column"], "players": {}}
     written, report = [], []
@@ -150,8 +174,19 @@ def main(folder):
                     "player_id": r["Player"], "bbr_id": bbr_id, "position": r["Pos"],
                     "games": int(num(r["G"]) or 0), "games_started": int(num(r["GS"]) or 0),
                     "minutes": int(num(r["MP"]) or 0), "span": span, "window": window})
+        # Rule 1 between seasons: a player real Miami brought in returns to his previous club.
+        for bbr_id, player_rows in by_player.items():
+            team_rows = [r for r in player_rows if not MULTI.match(r["Team"])]
+            if team_rows and team_rows[0]["Team"] == SIMULATED_CLUB and bbr_id in previous:
+                club, games, minutes, started = previous[bbr_id]
+                if club in clubs and games and minutes:
+                    clubs[club]["players"].append({
+                        "player_id": team_rows[0]["Player"], "bbr_id": bbr_id, "position": team_rows[0]["Pos"],
+                        "games": games, "games_started": started, "minutes": minutes,
+                        "span": [0.0, 1.0], "window": [0.0, 1.0], "returned": season_label(year_end - 1)})
         for club in clubs.values():
             club["players"].sort(key=lambda p: -p["minutes"])
+        previous = end_of_season(clubs)
         start = year_end - 1
         rosters = {"schema_version": 1, "league": "NBA", "season": season, "kind": "team_rosters",
                    "source": SOURCE,

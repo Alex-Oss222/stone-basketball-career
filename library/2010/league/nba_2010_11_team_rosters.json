@@ -1166,6 +1166,23 @@
    "code": "CLE",
    "players": [
     {
+     "player_id": "LeBron James",
+     "bbr_id": "jamesle01",
+     "position": "SF",
+     "games": 76,
+     "games_started": 76,
+     "minutes": 2966,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
+    },
+    {
      "player_id": "J.J. Hickson",
      "bbr_id": "hicksjj01",
      "position": "C",
@@ -1244,6 +1261,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Zydrunas Ilgauskas",
+     "bbr_id": "ilgauzy01",
+     "position": "C",
+     "games": 64,
+     "games_started": 6,
+     "minutes": 1339,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
     },
     {
      "player_id": "Ryan Hollins",
@@ -1587,6 +1621,23 @@
      ]
     },
     {
+     "player_id": "Erick Dampier",
+     "bbr_id": "dampier01",
+     "position": "C",
+     "games": 55,
+     "games_started": 47,
+     "minutes": 1280,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
+    },
+    {
      "player_id": "DeShawn Stevenson",
      "bbr_id": "stevede01",
      "position": "SG",
@@ -1745,6 +1796,23 @@
       0.0,
       0.2941
      ]
+    },
+    {
+     "player_id": "Jamaal Magloire",
+     "bbr_id": "magloja01",
+     "position": "C",
+     "games": 7,
+     "games_started": 0,
+     "minutes": 27,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
     },
     {
      "player_id": "Steve Novak",
@@ -4176,6 +4244,23 @@
      ]
     },
     {
+     "player_id": "Jerry Stackhouse",
+     "bbr_id": "stackje01",
+     "position": "SG",
+     "games": 42,
+     "games_started": 0,
+     "minutes": 855,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
+    },
+    {
      "player_id": "Jon Brockman",
      "bbr_id": "brockjo01",
      "position": "C",
@@ -5410,6 +5495,23 @@
       0.0,
       0.7556
      ]
+    },
+    {
+     "player_id": "Eddie House",
+     "bbr_id": "houseed01",
+     "position": "SG",
+     "games": 18,
+     "games_started": 0,
+     "minutes": 371,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
     },
     {
      "player_id": "Roger Mason",
@@ -6733,6 +6835,23 @@
      ]
     },
     {
+     "player_id": "Juwan Howard",
+     "bbr_id": "howarju01",
+     "position": "PF",
+     "games": 73,
+     "games_started": 27,
+     "minutes": 1632,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
+    },
+    {
      "player_id": "Marcus Camby",
      "bbr_id": "cambyma01",
      "position": "C",
@@ -6763,6 +6882,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "James Jones",
+     "bbr_id": "jonesja02",
+     "position": "SF",
+     "games": 58,
+     "games_started": 3,
+     "minutes": 1276,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
     },
     {
      "player_id": "Dante Cunningham",
@@ -7548,6 +7684,23 @@
      ]
     },
     {
+     "player_id": "Chris Bosh",
+     "bbr_id": "boshch01",
+     "position": "PF",
+     "games": 70,
+     "games_started": 70,
+     "minutes": 2526,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
+    },
+    {
      "player_id": "Andrea Bargnani",
      "bbr_id": "bargnan01",
      "position": "C",
@@ -8228,6 +8381,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Mike Miller",
+     "bbr_id": "millemi01",
+     "position": "SG",
+     "games": 54,
+     "games_started": 50,
+     "minutes": 1805,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2009-10"
     },
     {
      "player_id": "Kirk Hinrich",

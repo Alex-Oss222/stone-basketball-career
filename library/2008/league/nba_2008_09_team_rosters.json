@@ -1729,6 +1729,23 @@
       0.6182,
       1.0
      ]
+    },
+    {
+     "player_id": "Jamaal Magloire",
+     "bbr_id": "magloja01",
+     "position": "C",
+     "games": 7,
+     "games_started": 0,
+     "minutes": 27,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
     }
    ]
   },
@@ -1894,6 +1911,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "Yakhouba Diawara",
+     "bbr_id": "diawaya01",
+     "position": "SF",
+     "games": 54,
+     "games_started": 14,
+     "minutes": 542,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
     },
     {
      "player_id": "Johan Petro",
@@ -4149,6 +4183,23 @@
      ]
     },
     {
+     "player_id": "Mark Blount",
+     "bbr_id": "blounma01",
+     "position": "C",
+     "games": 82,
+     "games_started": 81,
+     "minutes": 2544,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
+    },
+    {
      "player_id": "Randy Foye",
      "bbr_id": "foyera01",
      "position": "SG",
@@ -6152,6 +6203,23 @@
      ]
     },
     {
+     "player_id": "Shawn Marion",
+     "bbr_id": "mariosh01",
+     "position": "SF",
+     "games": 47,
+     "games_started": 47,
+     "minutes": 1713,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
+    },
+    {
      "player_id": "Leandro Barbosa",
      "bbr_id": "barbole01",
      "position": "SG",
@@ -6262,6 +6330,23 @@
       0.0,
       0.2716
      ]
+    },
+    {
+     "player_id": "Marcus Banks",
+     "bbr_id": "banksma01",
+     "position": "PG",
+     "games": 24,
+     "games_started": 1,
+     "minutes": 310,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
     },
     {
      "player_id": "Alando Tucker",
@@ -6475,6 +6560,23 @@
       0.0,
       1.0
      ]
+    },
+    {
+     "player_id": "James Jones",
+     "bbr_id": "jonesja02",
+     "position": "SF",
+     "games": 58,
+     "games_started": 3,
+     "minutes": 1276,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ],
+     "returned": "2007-08"
     },
     {
      "player_id": "Sergio Rodríguez",
