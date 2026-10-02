@@ -186,6 +186,21 @@
     {
       "player": "Anthony Carter",
       "status": "player_option_pending",
+      "years_of_service": 4,
+      "years_of_service_basis": {
+        "seasons": [
+          "1999-00",
+          "2000-01",
+          "2001-02",
+          "2002-03"
+        ],
+        "note": "Seasons played taken as years of service: he appeared in every season from his November 2, 1999 debut (79, 72, 46 and 49 games, all with Miami) and has no NBA record before 1999-00. Sets his 2003-04 minimum salary, $688,679 (nba_1999_cba_minimum_salary_scale.json).",
+        "sources": [
+          "https://www.basketball-reference.com/players/c/cartean01.html",
+          "https://raw.githubusercontent.com/sumitrodatta/nba-alt-awards/7f9b3375439b79cb4e62f66ae7d12160275c2863/2026/Data/Player%20Season%20Info.csv",
+          "http://www.cbafaq.com/salarycap99.htm"
+        ]
+      },
       "schedule": {
         "2003-04": 4100000
       },
