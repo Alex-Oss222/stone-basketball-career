@@ -245,6 +245,26 @@ def validate():
         for week in spec["weeks"]:
             require(errors,(month_dir/f"Week_{week}"/"README.md").is_file(),f"missing weekly stats page: {month} Week {week}")
 
+    league_stats_root=player/"Stats_and_Awards"/"League"
+    league_registry=league_stats_root/"player_registry.json"
+    require(errors,league_registry.is_file(),"missing league player registry")
+    if league_registry.is_file():
+        registry=json.loads(league_registry.read_text(encoding="utf-8"))
+        require(errors,registry.get("player_count")==407,"league player registry count changed")
+        positions=[p.get("position") for p in registry.get("players",[])]
+        require(errors,all(pos in {"PG","SG","SF","F","PF","C"} for pos in positions),"league registry has unsupported position")
+    league_year=league_stats_root/season.name
+    require(errors,(league_year/"League_Stats.md").is_file(),"missing yearly league stats page")
+    require(errors,(league_year/"League_Awards.md").is_file(),"missing yearly league awards page")
+    for month,spec in config["regular_season"].items():
+        league_month=league_year/spec["folder"]
+        require(errors,(league_month/"League_Stats.md").is_file(),f"missing monthly league stats page: {month}")
+        require(errors,(league_month/"League_Awards.md").is_file(),f"missing monthly league awards page: {month}")
+        for week in spec["weeks"]:
+            league_week=league_month/f"Week_{week}"
+            require(errors,(league_week/"League_Stats.md").is_file(),f"missing weekly league stats page: {month} Week {week}")
+            require(errors,(league_week/"League_Awards.md").is_file(),f"missing weekly league awards page: {month} Week {week}")
+
     for area in config["areas"]:
         folder=season/area["folder"]
         require(errors,folder.is_dir(),f"missing season area: {area['folder']}")

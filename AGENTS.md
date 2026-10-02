@@ -78,6 +78,12 @@ Closed game results are the evidence. Week pages summarize their games, month pa
 
 Official NBA weekly award windows can cross this repository's fixed calendar buckets. Preserve the official award dates and file the honor on the week page containing the award period's end date.
 
+## League stats and awards
+
+League-wide tracking lives under `career/Dwyane_Wade/Stats_and_Awards/League/`. The player registry is the source roster for league stat pages. Every period page keeps all tracked players grouped by primary position.
+
+Weekly and monthly NBA awards remain conference-specific. Their pages keep a visible top-three shortlist but do not pretend the NBA published vote totals where it did not. Season individual awards publish the top three vote-getters. The No. 1 row is labeled WINNER only after the vote closes.
+
 ## Game records
 
 Game-note statuses are `scheduled`, `played`, or `not_played`.

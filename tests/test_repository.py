@@ -100,6 +100,30 @@ class InitializedCareerTests(unittest.TestCase):
             for week in weeks:
                 self.assertTrue((root/month/f"Week_{week}"/"README.md").is_file())
 
+    def test_league_stats_and_awards_hierarchy(self):
+        root=PLAYER/"Stats_and_Awards"/"League"
+        registry=json.loads((root/"player_registry.json").read_text(encoding="utf-8"))
+        self.assertEqual(registry["player_count"],407)
+        self.assertEqual(set(registry["positions"]),{"PG","SG","SF","F","PF","C"})
+        year=root/"2003-04"
+        self.assertTrue((year/"League_Stats.md").is_file())
+        self.assertTrue((year/"League_Awards.md").is_file())
+        mapping={
+            "10_October":[3,4],
+            "11_November":[1,2,3,4],
+            "12_December":[1,2,3,4],
+            "01_January":[1,2,3,4],
+            "02_February":[1,2,3,4],
+            "03_March":[1,2,3,4],
+            "04_April":[1,2],
+        }
+        for month,weeks in mapping.items():
+            self.assertTrue((year/month/"League_Stats.md").is_file())
+            self.assertTrue((year/month/"League_Awards.md").is_file())
+            for week in weeks:
+                self.assertTrue((year/month/f"Week_{week}"/"League_Stats.md").is_file())
+                self.assertTrue((year/month/f"Week_{week}"/"League_Awards.md").is_file())
+
     def test_six_year_cap_reference(self):
         history=json.loads((TEAM/"Finances/league_cap_history.json").read_text(encoding="utf-8"))
         caps={row["season"]:row["salary_cap"] for row in history["seasons"]}
