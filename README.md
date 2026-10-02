@@ -32,3 +32,5 @@ The stats hub follows the existing season, month and week folders. Historical ra
 Games run on Railway from validated request files. A result becomes canonical only after it is written into the owning game note. Do not edit a closed game's request to obtain another result.
 
 After a record change, run `python scripts/validate_repository.py` and `python -m unittest discover -s tests -q`. Veteran-source changes also require `python scripts/import_veteran_stats.py --check`.
+
+What still needs building, in career-clock order: [docs/ROADMAP.md](docs/ROADMAP.md).
