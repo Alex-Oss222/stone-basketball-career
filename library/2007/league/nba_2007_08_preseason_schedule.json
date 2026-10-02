@@ -1,0 +1,579 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2007-08",
+ "kind": "preseason_schedule",
+ "source": "NBA.com game data via the Kaggle \"NBA games data\" set (nathanlauga/nba-games), read from a public GitHub copy (bnafack/NBA_GAMES, data/games.csv). Schedule as played; result fields removed. Dates are US Eastern. Games against non-NBA opponents and neutral-site venues are not recorded in the source.",
+ "games": [
+  {
+   "game_id": "2007-10-06-toronto-raptors-at-boston-celtics",
+   "date": "2007-10-06",
+   "away": "Toronto Raptors",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2007-10-08-miami-heat-at-detroit-pistons",
+   "date": "2007-10-08",
+   "away": "Miami Heat",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2007-10-08-atlanta-hawks-at-orlando-magic",
+   "date": "2007-10-08",
+   "away": "Atlanta Hawks",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2007-10-09-washington-wizards-at-cleveland-cavaliers",
+   "date": "2007-10-09",
+   "away": "Washington Wizards",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2007-10-09-san-antonio-spurs-at-dallas-mavericks",
+   "date": "2007-10-09",
+   "away": "San Antonio Spurs",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2007-10-09-los-angeles-clippers-at-denver-nuggets",
+   "date": "2007-10-09",
+   "away": "Los Angeles Clippers",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2007-10-09-golden-state-warriors-at-los-angeles-lakers",
+   "date": "2007-10-09",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2007-10-09-chicago-bulls-at-milwaukee-bucks",
+   "date": "2007-10-09",
+   "away": "Chicago Bulls",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2007-10-09-houston-rockets-at-new-orleans-hornets",
+   "date": "2007-10-09",
+   "away": "Houston Rockets",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2007-10-09-seattle-supersonics-at-sacramento-kings",
+   "date": "2007-10-09",
+   "away": "Seattle SuperSonics",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2007-10-10-new-orleans-hornets-at-indiana-pacers",
+   "date": "2007-10-10",
+   "away": "New Orleans Hornets",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2007-10-10-atlanta-hawks-at-miami-heat",
+   "date": "2007-10-10",
+   "away": "Atlanta Hawks",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2007-10-10-boston-celtics-at-minnesota-timberwolves",
+   "date": "2007-10-10",
+   "away": "Boston Celtics",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2007-10-10-charlotte-bobcats-at-orlando-magic",
+   "date": "2007-10-10",
+   "away": "Charlotte Bobcats",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2007-10-10-los-angeles-clippers-at-portland-trail-blazers",
+   "date": "2007-10-10",
+   "away": "Los Angeles Clippers",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2007-10-10-milwaukee-bucks-at-utah-jazz",
+   "date": "2007-10-10",
+   "away": "Milwaukee Bucks",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2007-10-11-charlotte-bobcats-at-atlanta-hawks",
+   "date": "2007-10-11",
+   "away": "Charlotte Bobcats",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2007-10-11-detroit-pistons-at-cleveland-cavaliers",
+   "date": "2007-10-11",
+   "away": "Detroit Pistons",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2007-10-11-golden-state-warriors-at-los-angeles-lakers",
+   "date": "2007-10-11",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2007-10-11-phoenix-suns-at-sacramento-kings",
+   "date": "2007-10-11",
+   "away": "Phoenix Suns",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2007-10-12-dallas-mavericks-at-chicago-bulls",
+   "date": "2007-10-12",
+   "away": "Dallas Mavericks",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2007-10-12-seattle-supersonics-at-cleveland-cavaliers",
+   "date": "2007-10-12",
+   "away": "Seattle SuperSonics",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2007-10-12-portland-trail-blazers-at-denver-nuggets",
+   "date": "2007-10-12",
+   "away": "Portland Trail Blazers",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2007-10-12-utah-jazz-at-detroit-pistons",
+   "date": "2007-10-12",
+   "away": "Utah Jazz",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2007-10-12-miami-heat-at-orlando-magic",
+   "date": "2007-10-12",
+   "away": "Miami Heat",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2007-10-12-new-jersey-nets-at-philadelphia-76ers",
+   "date": "2007-10-12",
+   "away": "New Jersey Nets",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2007-10-13-miami-heat-at-charlotte-bobcats",
+   "date": "2007-10-13",
+   "away": "Miami Heat",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2007-10-13-seattle-supersonics-at-indiana-pacers",
+   "date": "2007-10-13",
+   "away": "Seattle SuperSonics",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2007-10-13-utah-jazz-at-milwaukee-bucks",
+   "date": "2007-10-13",
+   "away": "Utah Jazz",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2007-10-13-new-orleans-hornets-at-phoenix-suns",
+   "date": "2007-10-13",
+   "away": "New Orleans Hornets",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2007-10-13-dallas-mavericks-at-washington-wizards",
+   "date": "2007-10-13",
+   "away": "Dallas Mavericks",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2007-10-14-portland-trail-blazers-at-atlanta-hawks",
+   "date": "2007-10-14",
+   "away": "Portland Trail Blazers",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2007-10-14-denver-nuggets-at-detroit-pistons",
+   "date": "2007-10-14",
+   "away": "Denver Nuggets",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2007-10-14-los-angeles-clippers-at-golden-state-warriors",
+   "date": "2007-10-14",
+   "away": "Los Angeles Clippers",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2007-10-14-washington-wizards-at-philadelphia-76ers",
+   "date": "2007-10-14",
+   "away": "Washington Wizards",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2007-10-15-new-jersey-nets-at-charlotte-bobcats",
+   "date": "2007-10-15",
+   "away": "New Jersey Nets",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2007-10-15-minnesota-timberwolves-at-memphis-grizzlies",
+   "date": "2007-10-15",
+   "away": "Minnesota Timberwolves",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2007-10-15-indiana-pacers-at-new-orleans-hornets",
+   "date": "2007-10-15",
+   "away": "Indiana Pacers",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2007-10-15-utah-jazz-at-phoenix-suns",
+   "date": "2007-10-15",
+   "away": "Utah Jazz",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2007-10-16-minnesota-timberwolves-at-atlanta-hawks",
+   "date": "2007-10-16",
+   "away": "Minnesota Timberwolves",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2007-10-16-washington-wizards-at-chicago-bulls",
+   "date": "2007-10-16",
+   "away": "Washington Wizards",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2007-10-16-denver-nuggets-at-milwaukee-bucks",
+   "date": "2007-10-16",
+   "away": "Denver Nuggets",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2007-10-16-dallas-mavericks-at-sacramento-kings",
+   "date": "2007-10-16",
+   "away": "Dallas Mavericks",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2007-10-17-new-york-knicks-at-boston-celtics",
+   "date": "2007-10-17",
+   "away": "New York Knicks",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2007-10-17-orlando-magic-at-cleveland-cavaliers",
+   "date": "2007-10-17",
+   "away": "Orlando Magic",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2007-10-17-denver-nuggets-at-detroit-pistons",
+   "date": "2007-10-17",
+   "away": "Denver Nuggets",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2007-10-17-memphis-grizzlies-at-indiana-pacers",
+   "date": "2007-10-17",
+   "away": "Memphis Grizzlies",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2007-10-17-philadelphia-76ers-at-utah-jazz",
+   "date": "2007-10-17",
+   "away": "Philadelphia 76ers",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2007-10-18-atlanta-hawks-at-charlotte-bobcats",
+   "date": "2007-10-18",
+   "away": "Atlanta Hawks",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2007-10-18-dallas-mavericks-at-houston-rockets",
+   "date": "2007-10-18",
+   "away": "Dallas Mavericks",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2007-10-18-phoenix-suns-at-los-angeles-clippers",
+   "date": "2007-10-18",
+   "away": "Phoenix Suns",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2007-10-18-seattle-supersonics-at-los-angeles-lakers",
+   "date": "2007-10-18",
+   "away": "Seattle SuperSonics",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2007-10-18-new-york-knicks-at-new-jersey-nets",
+   "date": "2007-10-18",
+   "away": "New York Knicks",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2007-10-18-golden-state-warriors-at-san-antonio-spurs",
+   "date": "2007-10-18",
+   "away": "Golden State Warriors",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2007-10-18-sacramento-kings-at-utah-jazz",
+   "date": "2007-10-18",
+   "away": "Sacramento Kings",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2007-10-19-new-jersey-nets-at-boston-celtics",
+   "date": "2007-10-19",
+   "away": "New Jersey Nets",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2007-10-19-detroit-pistons-at-dallas-mavericks",
+   "date": "2007-10-19",
+   "away": "Detroit Pistons",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2007-10-19-minnesota-timberwolves-at-indiana-pacers",
+   "date": "2007-10-19",
+   "away": "Minnesota Timberwolves",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2007-10-19-new-orleans-hornets-at-miami-heat",
+   "date": "2007-10-19",
+   "away": "New Orleans Hornets",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2007-10-19-sacramento-kings-at-portland-trail-blazers",
+   "date": "2007-10-19",
+   "away": "Sacramento Kings",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2007-10-19-chicago-bulls-at-toronto-raptors",
+   "date": "2007-10-19",
+   "away": "Chicago Bulls",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2007-10-20-philadelphia-76ers-at-boston-celtics",
+   "date": "2007-10-20",
+   "away": "Philadelphia 76ers",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2007-10-20-indiana-pacers-at-chicago-bulls",
+   "date": "2007-10-20",
+   "away": "Indiana Pacers",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2007-10-20-phoenix-suns-at-los-angeles-clippers",
+   "date": "2007-10-20",
+   "away": "Phoenix Suns",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2007-10-20-charlotte-bobcats-at-los-angeles-lakers",
+   "date": "2007-10-20",
+   "away": "Charlotte Bobcats",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2007-10-20-miami-heat-at-memphis-grizzlies",
+   "date": "2007-10-20",
+   "away": "Miami Heat",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2007-10-20-minnesota-timberwolves-at-milwaukee-bucks",
+   "date": "2007-10-20",
+   "away": "Minnesota Timberwolves",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2007-10-20-cleveland-cavaliers-at-orlando-magic",
+   "date": "2007-10-20",
+   "away": "Cleveland Cavaliers",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2007-10-20-detroit-pistons-at-san-antonio-spurs",
+   "date": "2007-10-20",
+   "away": "Detroit Pistons",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2007-10-20-houston-rockets-at-seattle-supersonics",
+   "date": "2007-10-20",
+   "away": "Houston Rockets",
+   "home": "Seattle SuperSonics"
+  },
+  {
+   "game_id": "2007-10-21-phoenix-suns-at-charlotte-bobcats",
+   "date": "2007-10-21",
+   "away": "Phoenix Suns",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2007-10-21-new-orleans-hornets-at-dallas-mavericks",
+   "date": "2007-10-21",
+   "away": "New Orleans Hornets",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2007-10-21-los-angeles-clippers-at-los-angeles-lakers",
+   "date": "2007-10-21",
+   "away": "Los Angeles Clippers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2007-10-21-portland-trail-blazers-at-sacramento-kings",
+   "date": "2007-10-21",
+   "away": "Portland Trail Blazers",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2007-10-22-washington-wizards-at-atlanta-hawks",
+   "date": "2007-10-22",
+   "away": "Washington Wizards",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2007-10-22-boston-celtics-at-new-york-knicks",
+   "date": "2007-10-22",
+   "away": "Boston Celtics",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2007-10-23-chicago-bulls-at-dallas-mavericks",
+   "date": "2007-10-23",
+   "away": "Chicago Bulls",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2007-10-23-milwaukee-bucks-at-denver-nuggets",
+   "date": "2007-10-23",
+   "away": "Milwaukee Bucks",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2007-10-23-memphis-grizzlies-at-houston-rockets",
+   "date": "2007-10-23",
+   "away": "Memphis Grizzlies",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2007-10-23-utah-jazz-at-los-angeles-lakers",
+   "date": "2007-10-23",
+   "away": "Utah Jazz",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2007-10-23-san-antonio-spurs-at-miami-heat",
+   "date": "2007-10-23",
+   "away": "San Antonio Spurs",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2007-10-23-indiana-pacers-at-minnesota-timberwolves",
+   "date": "2007-10-23",
+   "away": "Indiana Pacers",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2007-10-23-boston-celtics-at-new-jersey-nets",
+   "date": "2007-10-23",
+   "away": "Boston Celtics",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2007-10-23-golden-state-warriors-at-seattle-supersonics",
+   "date": "2007-10-23",
+   "away": "Golden State Warriors",
+   "home": "Seattle SuperSonics"
+  },
+  {
+   "game_id": "2007-10-24-washington-wizards-at-detroit-pistons",
+   "date": "2007-10-24",
+   "away": "Washington Wizards",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2007-10-24-sacramento-kings-at-los-angeles-clippers",
+   "date": "2007-10-24",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2007-10-24-houston-rockets-at-memphis-grizzlies",
+   "date": "2007-10-24",
+   "away": "Houston Rockets",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2007-10-24-atlanta-hawks-at-new-orleans-hornets",
+   "date": "2007-10-24",
+   "away": "Atlanta Hawks",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2007-10-24-philadelphia-76ers-at-new-york-knicks",
+   "date": "2007-10-24",
+   "away": "Philadelphia 76ers",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2007-10-24-seattle-supersonics-at-portland-trail-blazers",
+   "date": "2007-10-24",
+   "away": "Seattle SuperSonics",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2007-10-25-milwaukee-bucks-at-chicago-bulls",
+   "date": "2007-10-25",
+   "away": "Milwaukee Bucks",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2007-10-25-philadelphia-76ers-at-new-jersey-nets",
+   "date": "2007-10-25",
+   "away": "Philadelphia 76ers",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2007-10-25-san-antonio-spurs-at-orlando-magic",
+   "date": "2007-10-25",
+   "away": "San Antonio Spurs",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2007-10-25-denver-nuggets-at-phoenix-suns",
+   "date": "2007-10-25",
+   "away": "Denver Nuggets",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2007-10-25-cleveland-cavaliers-at-toronto-raptors",
+   "date": "2007-10-25",
+   "away": "Cleveland Cavaliers",
+   "home": "Toronto Raptors"
+  }
+ ]
+}

@@ -1,0 +1,681 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2009-10",
+ "kind": "preseason_schedule",
+ "source": "NBA.com game data via the Kaggle \"NBA games data\" set (nathanlauga/nba-games), read from a public GitHub copy (bnafack/NBA_GAMES, data/games.csv). Schedule as played; result fields removed. Dates are US Eastern. Games against non-NBA opponents and neutral-site venues are not recorded in the source.",
+ "games": [
+  {
+   "game_id": "2009-10-01-denver-nuggets-at-utah-jazz",
+   "date": "2009-10-01",
+   "away": "Denver Nuggets",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2009-10-02-chicago-bulls-at-indiana-pacers",
+   "date": "2009-10-02",
+   "away": "Chicago Bulls",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2009-10-04-los-angeles-clippers-at-golden-state-warriors",
+   "date": "2009-10-04",
+   "away": "Los Angeles Clippers",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2009-10-04-milwaukee-bucks-at-minnesota-timberwolves",
+   "date": "2009-10-04",
+   "away": "Milwaukee Bucks",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2009-10-04-new-jersey-nets-at-new-york-knicks",
+   "date": "2009-10-04",
+   "away": "New Jersey Nets",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2009-10-05-orlando-magic-at-dallas-mavericks",
+   "date": "2009-10-05",
+   "away": "Orlando Magic",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2009-10-05-miami-heat-at-detroit-pistons",
+   "date": "2009-10-05",
+   "away": "Miami Heat",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2009-10-06-utah-jazz-at-chicago-bulls",
+   "date": "2009-10-06",
+   "away": "Utah Jazz",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2009-10-06-charlotte-bobcats-at-cleveland-cavaliers",
+   "date": "2009-10-06",
+   "away": "Charlotte Bobcats",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2009-10-06-toronto-raptors-at-philadelphia-76ers",
+   "date": "2009-10-06",
+   "away": "Toronto Raptors",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2009-10-06-sacramento-kings-at-portland-trail-blazers",
+   "date": "2009-10-06",
+   "away": "Sacramento Kings",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2009-10-06-houston-rockets-at-san-antonio-spurs",
+   "date": "2009-10-06",
+   "away": "Houston Rockets",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2009-10-06-memphis-grizzlies-at-washington-wizards",
+   "date": "2009-10-06",
+   "away": "Memphis Grizzlies",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2009-10-07-new-orleans-hornets-at-atlanta-hawks",
+   "date": "2009-10-07",
+   "away": "New Orleans Hornets",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2009-10-07-milwaukee-bucks-at-detroit-pistons",
+   "date": "2009-10-07",
+   "away": "Milwaukee Bucks",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2009-10-07-boston-celtics-at-houston-rockets",
+   "date": "2009-10-07",
+   "away": "Boston Celtics",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2009-10-07-golden-state-warriors-at-los-angeles-lakers",
+   "date": "2009-10-07",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2009-10-07-oklahoma-city-thunder-at-memphis-grizzlies",
+   "date": "2009-10-07",
+   "away": "Oklahoma City Thunder",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2009-10-07-miami-heat-at-orlando-magic",
+   "date": "2009-10-07",
+   "away": "Miami Heat",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2009-10-07-portland-trail-blazers-at-sacramento-kings",
+   "date": "2009-10-07",
+   "away": "Portland Trail Blazers",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2009-10-07-philadelphia-76ers-at-toronto-raptors",
+   "date": "2009-10-07",
+   "away": "Philadelphia 76ers",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2009-10-08-new-orleans-hornets-at-charlotte-bobcats",
+   "date": "2009-10-08",
+   "away": "New Orleans Hornets",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2009-10-08-denver-nuggets-at-indiana-pacers",
+   "date": "2009-10-08",
+   "away": "Denver Nuggets",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2009-10-09-new-york-knicks-at-boston-celtics",
+   "date": "2009-10-09",
+   "away": "New York Knicks",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2009-10-09-portland-trail-blazers-at-los-angeles-clippers",
+   "date": "2009-10-09",
+   "away": "Portland Trail Blazers",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2009-10-09-golden-state-warriors-at-los-angeles-lakers",
+   "date": "2009-10-09",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2009-10-09-toronto-raptors-at-minnesota-timberwolves",
+   "date": "2009-10-09",
+   "away": "Toronto Raptors",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2009-10-09-houston-rockets-at-orlando-magic",
+   "date": "2009-10-09",
+   "away": "Houston Rockets",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2009-10-09-new-jersey-nets-at-philadelphia-76ers",
+   "date": "2009-10-09",
+   "away": "New Jersey Nets",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2009-10-09-dallas-mavericks-at-washington-wizards",
+   "date": "2009-10-09",
+   "away": "Dallas Mavericks",
+   "home": "Washington Wizards"
+  },
+  {
+   "game_id": "2009-10-10-cleveland-cavaliers-at-charlotte-bobcats",
+   "date": "2009-10-10",
+   "away": "Cleveland Cavaliers",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2009-10-10-chicago-bulls-at-milwaukee-bucks",
+   "date": "2009-10-10",
+   "away": "Chicago Bulls",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2009-10-10-oklahoma-city-thunder-at-new-orleans-hornets",
+   "date": "2009-10-10",
+   "away": "Oklahoma City Thunder",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2009-10-10-golden-state-warriors-at-phoenix-suns",
+   "date": "2009-10-10",
+   "away": "Golden State Warriors",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2009-10-11-new-jersey-nets-at-boston-celtics",
+   "date": "2009-10-11",
+   "away": "New Jersey Nets",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2009-10-11-memphis-grizzlies-at-dallas-mavericks",
+   "date": "2009-10-11",
+   "away": "Memphis Grizzlies",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2009-10-11-indiana-pacers-at-denver-nuggets",
+   "date": "2009-10-11",
+   "away": "Indiana Pacers",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2009-10-11-atlanta-hawks-at-detroit-pistons",
+   "date": "2009-10-11",
+   "away": "Atlanta Hawks",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2009-10-11-san-antonio-spurs-at-miami-heat",
+   "date": "2009-10-11",
+   "away": "San Antonio Spurs",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2009-10-11-washington-wizards-at-toronto-raptors",
+   "date": "2009-10-11",
+   "away": "Washington Wizards",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2009-10-12-charlotte-bobcats-at-atlanta-hawks",
+   "date": "2009-10-12",
+   "away": "Charlotte Bobcats",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2009-10-12-milwaukee-bucks-at-houston-rockets",
+   "date": "2009-10-12",
+   "away": "Milwaukee Bucks",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2009-10-12-golden-state-warriors-at-los-angeles-clippers",
+   "date": "2009-10-12",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2009-10-12-orlando-magic-at-memphis-grizzlies",
+   "date": "2009-10-12",
+   "away": "Orlando Magic",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2009-10-12-phoenix-suns-at-oklahoma-city-thunder",
+   "date": "2009-10-12",
+   "away": "Phoenix Suns",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "game_id": "2009-10-13-milwaukee-bucks-at-chicago-bulls",
+   "date": "2009-10-13",
+   "away": "Milwaukee Bucks",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2009-10-13-washington-wizards-at-detroit-pistons",
+   "date": "2009-10-13",
+   "away": "Washington Wizards",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2009-10-13-boston-celtics-at-new-jersey-nets",
+   "date": "2009-10-13",
+   "away": "Boston Celtics",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2009-10-13-orlando-magic-at-new-orleans-hornets",
+   "date": "2009-10-13",
+   "away": "Orlando Magic",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2009-10-13-philadelphia-76ers-at-new-york-knicks",
+   "date": "2009-10-13",
+   "away": "Philadelphia 76ers",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2009-10-14-toronto-raptors-at-boston-celtics",
+   "date": "2009-10-14",
+   "away": "Toronto Raptors",
+   "home": "Boston Celtics"
+  },
+  {
+   "game_id": "2009-10-14-washington-wizards-at-cleveland-cavaliers",
+   "date": "2009-10-14",
+   "away": "Washington Wizards",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2009-10-14-atlanta-hawks-at-memphis-grizzlies",
+   "date": "2009-10-14",
+   "away": "Atlanta Hawks",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2009-10-14-chicago-bulls-at-minnesota-timberwolves",
+   "date": "2009-10-14",
+   "away": "Chicago Bulls",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2009-10-14-miami-heat-at-oklahoma-city-thunder",
+   "date": "2009-10-14",
+   "away": "Miami Heat",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "game_id": "2009-10-14-phoenix-suns-at-portland-trail-blazers",
+   "date": "2009-10-14",
+   "away": "Phoenix Suns",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2009-10-14-los-angeles-clippers-at-san-antonio-spurs",
+   "date": "2009-10-14",
+   "away": "Los Angeles Clippers",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2009-10-15-detroit-pistons-at-dallas-mavericks",
+   "date": "2009-10-15",
+   "away": "Detroit Pistons",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2009-10-15-sacramento-kings-at-los-angeles-lakers",
+   "date": "2009-10-15",
+   "away": "Sacramento Kings",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2009-10-15-new-orleans-hornets-at-miami-heat",
+   "date": "2009-10-15",
+   "away": "New Orleans Hornets",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2009-10-15-houston-rockets-at-toronto-raptors",
+   "date": "2009-10-15",
+   "away": "Houston Rockets",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2009-10-15-portland-trail-blazers-at-utah-jazz",
+   "date": "2009-10-15",
+   "away": "Portland Trail Blazers",
+   "home": "Utah Jazz"
+  },
+  {
+   "game_id": "2009-10-16-minnesota-timberwolves-at-chicago-bulls",
+   "date": "2009-10-16",
+   "away": "Minnesota Timberwolves",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2009-10-16-houston-rockets-at-indiana-pacers",
+   "date": "2009-10-16",
+   "away": "Houston Rockets",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2009-10-16-new-jersey-nets-at-new-york-knicks",
+   "date": "2009-10-16",
+   "away": "New Jersey Nets",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2009-10-16-philadelphia-76ers-at-phoenix-suns",
+   "date": "2009-10-16",
+   "away": "Philadelphia 76ers",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2009-10-16-cleveland-cavaliers-at-san-antonio-spurs",
+   "date": "2009-10-16",
+   "away": "Cleveland Cavaliers",
+   "home": "San Antonio Spurs"
+  },
+  {
+   "game_id": "2009-10-17-cleveland-cavaliers-at-dallas-mavericks",
+   "date": "2009-10-17",
+   "away": "Cleveland Cavaliers",
+   "home": "Dallas Mavericks"
+  },
+  {
+   "game_id": "2009-10-17-utah-jazz-at-los-angeles-clippers",
+   "date": "2009-10-17",
+   "away": "Utah Jazz",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2009-10-17-charlotte-bobcats-at-los-angeles-lakers",
+   "date": "2009-10-17",
+   "away": "Charlotte Bobcats",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2009-10-17-detroit-pistons-at-memphis-grizzlies",
+   "date": "2009-10-17",
+   "away": "Detroit Pistons",
+   "home": "Memphis Grizzlies"
+  },
+  {
+   "game_id": "2009-10-17-minnesota-timberwolves-at-milwaukee-bucks",
+   "date": "2009-10-17",
+   "away": "Minnesota Timberwolves",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2009-10-17-indiana-pacers-at-new-orleans-hornets",
+   "date": "2009-10-17",
+   "away": "Indiana Pacers",
+   "home": "New Orleans Hornets"
+  },
+  {
+   "game_id": "2009-10-17-golden-state-warriors-at-sacramento-kings",
+   "date": "2009-10-17",
+   "away": "Golden State Warriors",
+   "home": "Sacramento Kings"
+  },
+  {
+   "game_id": "2009-10-18-utah-jazz-at-charlotte-bobcats",
+   "date": "2009-10-18",
+   "away": "Utah Jazz",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2009-10-18-los-angeles-clippers-at-los-angeles-lakers",
+   "date": "2009-10-18",
+   "away": "Los Angeles Clippers",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2009-10-18-philadelphia-76ers-at-phoenix-suns",
+   "date": "2009-10-18",
+   "away": "Philadelphia 76ers",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2009-10-18-denver-nuggets-at-portland-trail-blazers",
+   "date": "2009-10-18",
+   "away": "Denver Nuggets",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2009-10-18-boston-celtics-at-toronto-raptors",
+   "date": "2009-10-18",
+   "away": "Boston Celtics",
+   "home": "Toronto Raptors"
+  },
+  {
+   "game_id": "2009-10-19-washington-wizards-at-atlanta-hawks",
+   "date": "2009-10-19",
+   "away": "Washington Wizards",
+   "home": "Atlanta Hawks"
+  },
+  {
+   "game_id": "2009-10-19-orlando-magic-at-chicago-bulls",
+   "date": "2009-10-19",
+   "away": "Orlando Magic",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2009-10-19-oklahoma-city-thunder-at-houston-rockets",
+   "date": "2009-10-19",
+   "away": "Oklahoma City Thunder",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2009-10-20-milwaukee-bucks-at-charlotte-bobcats",
+   "date": "2009-10-20",
+   "away": "Milwaukee Bucks",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2009-10-20-dallas-mavericks-at-cleveland-cavaliers",
+   "date": "2009-10-20",
+   "away": "Dallas Mavericks",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2009-10-20-minnesota-timberwolves-at-denver-nuggets",
+   "date": "2009-10-20",
+   "away": "Minnesota Timberwolves",
+   "home": "Denver Nuggets"
+  },
+  {
+   "game_id": "2009-10-20-golden-state-warriors-at-los-angeles-lakers",
+   "date": "2009-10-20",
+   "away": "Golden State Warriors",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2009-10-20-boston-celtics-at-new-york-knicks",
+   "date": "2009-10-20",
+   "away": "Boston Celtics",
+   "home": "New York Knicks"
+  },
+  {
+   "game_id": "2009-10-20-san-antonio-spurs-at-oklahoma-city-thunder",
+   "date": "2009-10-20",
+   "away": "San Antonio Spurs",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "game_id": "2009-10-20-washington-wizards-at-philadelphia-76ers",
+   "date": "2009-10-20",
+   "away": "Washington Wizards",
+   "home": "Philadelphia 76ers"
+  },
+  {
+   "game_id": "2009-10-20-sacramento-kings-at-phoenix-suns",
+   "date": "2009-10-20",
+   "away": "Sacramento Kings",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2009-10-20-utah-jazz-at-portland-trail-blazers",
+   "date": "2009-10-20",
+   "away": "Utah Jazz",
+   "home": "Portland Trail Blazers"
+  },
+  {
+   "game_id": "2009-10-21-boston-celtics-at-cleveland-cavaliers",
+   "date": "2009-10-21",
+   "away": "Boston Celtics",
+   "home": "Cleveland Cavaliers"
+  },
+  {
+   "game_id": "2009-10-21-memphis-grizzlies-at-miami-heat",
+   "date": "2009-10-21",
+   "away": "Memphis Grizzlies",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2009-10-21-new-york-knicks-at-new-jersey-nets",
+   "date": "2009-10-21",
+   "away": "New York Knicks",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2009-10-21-indiana-pacers-at-orlando-magic",
+   "date": "2009-10-21",
+   "away": "Indiana Pacers",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2009-10-22-minnesota-timberwolves-at-detroit-pistons",
+   "date": "2009-10-22",
+   "away": "Minnesota Timberwolves",
+   "home": "Detroit Pistons"
+  },
+  {
+   "game_id": "2009-10-22-new-orleans-hornets-at-golden-state-warriors",
+   "date": "2009-10-22",
+   "away": "New Orleans Hornets",
+   "home": "Golden State Warriors"
+  },
+  {
+   "game_id": "2009-10-22-denver-nuggets-at-los-angeles-lakers",
+   "date": "2009-10-22",
+   "away": "Denver Nuggets",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2009-10-22-atlanta-hawks-at-miami-heat",
+   "date": "2009-10-22",
+   "away": "Atlanta Hawks",
+   "home": "Miami Heat"
+  },
+  {
+   "game_id": "2009-10-22-sacramento-kings-at-oklahoma-city-thunder",
+   "date": "2009-10-22",
+   "away": "Sacramento Kings",
+   "home": "Oklahoma City Thunder"
+  },
+  {
+   "game_id": "2009-10-22-portland-trail-blazers-at-phoenix-suns",
+   "date": "2009-10-22",
+   "away": "Portland Trail Blazers",
+   "home": "Phoenix Suns"
+  },
+  {
+   "game_id": "2009-10-23-memphis-grizzlies-at-charlotte-bobcats",
+   "date": "2009-10-23",
+   "away": "Memphis Grizzlies",
+   "home": "Charlotte Bobcats"
+  },
+  {
+   "game_id": "2009-10-23-washington-wizards-at-chicago-bulls",
+   "date": "2009-10-23",
+   "away": "Washington Wizards",
+   "home": "Chicago Bulls"
+  },
+  {
+   "game_id": "2009-10-23-dallas-mavericks-at-houston-rockets",
+   "date": "2009-10-23",
+   "away": "Dallas Mavericks",
+   "home": "Houston Rockets"
+  },
+  {
+   "game_id": "2009-10-23-san-antonio-spurs-at-indiana-pacers",
+   "date": "2009-10-23",
+   "away": "San Antonio Spurs",
+   "home": "Indiana Pacers"
+  },
+  {
+   "game_id": "2009-10-23-new-orleans-hornets-at-los-angeles-clippers",
+   "date": "2009-10-23",
+   "away": "New Orleans Hornets",
+   "home": "Los Angeles Clippers"
+  },
+  {
+   "game_id": "2009-10-23-denver-nuggets-at-los-angeles-lakers",
+   "date": "2009-10-23",
+   "away": "Denver Nuggets",
+   "home": "Los Angeles Lakers"
+  },
+  {
+   "game_id": "2009-10-23-detroit-pistons-at-milwaukee-bucks",
+   "date": "2009-10-23",
+   "away": "Detroit Pistons",
+   "home": "Milwaukee Bucks"
+  },
+  {
+   "game_id": "2009-10-23-toronto-raptors-at-minnesota-timberwolves",
+   "date": "2009-10-23",
+   "away": "Toronto Raptors",
+   "home": "Minnesota Timberwolves"
+  },
+  {
+   "game_id": "2009-10-23-philadelphia-76ers-at-new-jersey-nets",
+   "date": "2009-10-23",
+   "away": "Philadelphia 76ers",
+   "home": "New Jersey Nets"
+  },
+  {
+   "game_id": "2009-10-23-atlanta-hawks-at-orlando-magic",
+   "date": "2009-10-23",
+   "away": "Atlanta Hawks",
+   "home": "Orlando Magic"
+  },
+  {
+   "game_id": "2009-10-23-utah-jazz-at-sacramento-kings",
+   "date": "2009-10-23",
+   "away": "Utah Jazz",
+   "home": "Sacramento Kings"
+  }
+ ]
+}
