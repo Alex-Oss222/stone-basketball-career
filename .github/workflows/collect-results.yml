@@ -1,0 +1,46 @@
+name: collect-results
+
+# After every push to the branch Railway tracks, and every hour, fetch played
+# games and drawn decisions from the engine and commit them as result files.
+# GitHub's own token makes the commit, so no engine or repository secret is
+# needed; pushes made with it do not retrigger this workflow.
+on:
+  push:
+    branches: [milestone-1]
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-results
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: milestone-1
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect results from the engine
+        env:
+          COLLECT_WAIT: "1200"
+        run: python scripts/collect_results.py
+      - name: Commit result files
+        run: |
+          git add -A career
+          if git diff --cached --quiet; then
+            echo "no new results"
+            exit 0
+          fi
+          git config user.name "engine-results"
+          git config user.email "engine-results@users.noreply.github.com"
+          git commit -m "Engine results: $(git diff --cached --name-only | wc -l) file(s) collected from Railway [skip ci]"
+          git push origin HEAD:milestone-1
