@@ -2,6 +2,15 @@
 
 # Dwyane Wade | Player career
 
+![Player career overview: professional identity, NBA regular-season statistics and playoff statistics](assets/career_overview.svg)
+
+[Professional identity](Professional_Identity.md) · [Career statistics](Stats_and_Awards/README.md) · [National team / FIBA](National_Team/README.md)
+
+**Season reports:** [2003-04](2003-04/README.md)
+
+<details>
+<summary>Professional identity and career statistics: text version</summary>
+
 ## Professional identity
 
 | Player | Age on report date | Team / league | Position | Number | Status |
@@ -35,3 +44,5 @@ Career cutoff: **2003-06-26**. Club competitions and national-team events have s
 [2003-04 all competitions](2003-04/README.md)
 
 [National team / FIBA](National_Team/README.md) · [Stats definitions](../../docs/player_statistics.md) · [Filled example](../../docs/examples/player_stats_preview.md) · [Miami records](Stats_and_Awards/Team/README.md) · [League records and awards](Stats_and_Awards/League/README.md)
+
+</details>

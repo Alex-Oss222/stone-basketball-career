@@ -20,6 +20,8 @@ Reports contain professional identity and statistical performance. Decisions rem
 
 The established player report path is `Stats_and_Awards/<season>/<month>/Week_N/README.md`. Matching READMEs beside regular-season notes expose the same summary. Deeper tables live in `Stat_Detail.md`. One canonical game feeds all applicable views.
 
+The career folder README opens with a visual overview in the supplied red/dark card style. `assets/career_overview.svg` is generated from the same dated identity and career totals, with separate regular-season and playoff cards. The professional-status card contains entry and roster fields. A collapsible text version retains accessible tables and source navigation. Rebuilding player reports refreshes both versions; the reference screenshot's historical biography and career results are not imported.
+
 Weeks retain the repository's established **days 1-7, 8-14, 15-21 and 22-month end**, with full dates in every title. They are monthly buckets, not Monday-Sunday weeks. Official awards retain their own date windows. January-April belong to the second calendar year of an NBA season. The 2003-04 calendar is not universal: verify lockout, restart and future schedules at rollover.
 
 ## Professional identity

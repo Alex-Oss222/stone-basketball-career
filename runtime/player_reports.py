@@ -9,6 +9,7 @@ from datetime import date
 from pathlib import Path
 
 from .career_stats import NATIONAL_PATHS, aggregate, collect_games, identity_at, select
+from .career_dashboard import career_overview
 from .season_rules import nba_cup_available, play_in_format, season_start
 
 LABELS = {
@@ -417,6 +418,19 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
         outputs[page] += " · ".join(link(page, p, label) for label, p in [("National team / FIBA", np),
             ("Stats definitions", manual), ("Filled example", root / "docs/examples/player_stats_preview.md"),
             ("Miami records", stats / "Team/README.md"), ("League records and awards", stats / "League/README.md")]) + "\n"
+    overview = player / "assets/career_overview.svg"
+    outputs[overview] = career_overview(identity, as_of, aggregate(select(records, competition="regular")),
+                                        aggregate(select(records, competition="playoff")))
+    page = player / "README.md"
+    text_version = outputs[page].split("## Professional identity", 1)[1]
+    navigation = [("Professional identity", profile), ("Career statistics", stats / "README.md"),
+                  ("National team / FIBA", np)]
+    outputs[page] = GENERATED + "\n# Dwyane Wade | Player career\n\n"
+    outputs[page] += "!" + link(page, overview, "Player career overview: professional identity, NBA regular-season statistics and playoff statistics") + "\n\n"
+    outputs[page] += " · ".join(link(page, target, label) for label, target in navigation) + "\n\n"
+    outputs[page] += "**Season reports:** " + " · ".join(link(page, s / "README.md", s.name) for s in seasons) + "\n\n"
+    outputs[page] += "<details>\n<summary>Professional identity and career statistics: text version</summary>\n\n"
+    outputs[page] += "## Professional identity" + text_version.rstrip() + "\n\n</details>\n"
     # Preserve front matter and decisions on existing game notes; own only this block.
     for record in records:
         page = record["note"]
