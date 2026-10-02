@@ -12,6 +12,7 @@ Public (results are not secret; only the seed is):
   GET /games                       every request and its status
   GET /games/<event_id>            result JSON
   GET /games/<event_id>/box        plain-text box score
+  GET /decisions/<event_id>        an engine-drawn decision (same store as games)
 Authenticated with ENGINE_API_TOKEN:
   GET  /ready
   POST /corrections?event_id=&reason=
@@ -160,6 +161,24 @@ def play_requests(store, root):
             status[event_id] = {"status": state, "request": rel}
         except Exception as exc:  # one bad request must not stop the others or the service
             status[rel] = {"status": "error", "request": rel, "error": str(exc)}
+    from .decisions import draw, find_decisions, load_decision, packet
+    for path in find_decisions(root):
+        rel = str(path.relative_to(root))
+        try:
+            data = load_decision(path)
+            packet_hash = hashlib.sha256(canonical(packet(data))).hexdigest()
+            if store.result(data["event_id"]) is None:
+                store.save_result(data["event_id"], packet_hash,
+                                  {"event_id": data["event_id"], "kind": "decision", "date": data["date"],
+                                   "question": data["question"], "decider": data["decider"],
+                                   "options": data["options"], "outcome": draw(data, store)})
+                state = "decided"
+            else:
+                store.close_digest(data["event_id"], packet_hash)  # refuses an edited request
+                state = "already_decided"
+            status[data["event_id"]] = {"status": state, "request": rel}
+        except Exception as exc:
+            status[rel] = {"status": "error", "request": rel, "error": str(exc)}
     return status
 
 
@@ -192,6 +211,11 @@ def handler(store, token, games):
                 return self.send(200, {"service": SERVICE, "schema": SCHEMA_VERSION, "kernel": KERNEL_VERSION})
             if path in ("/", "/games"):
                 return self.send(200, {"kernel": KERNEL_VERSION, "games": games})
+            if path.startswith("/decisions/"):
+                result = store.result(unquote(path[len("/decisions/"):]))
+                if result is None or result.get("kind") != "decision":
+                    return self.send(404, {"error": "no drawn decision with that id"})
+                return self.send(200, result)
             if path.startswith("/games/"):
                 parts = path[len("/games/"):].split("/")
                 event_id = unquote(parts[0])
