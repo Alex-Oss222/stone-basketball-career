@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2013-14",
+ "kind": "cap_rules",
+ "status": "historical_actual",
+ "live_use_policy": "Reference only until the figure's real publication date has passed in the career. Publication dates are tracked in the repo's league_cap_history.json; none are recorded here.",
+ "salary_cap": 58679000,
+ "luxury_tax_line": 71748000,
+ "first_apron": 75748000,
+ "exceptions": {
+  "mid_level": 5150000,
+  "taxpayer_mid_level": 3183000,
+  "room_mid_level": 2652000,
+  "biennial": 2016000
+ },
+ "maximum_salary": {
+  "0_to_6_years": 13701250,
+  "7_to_9_years": 16441500,
+  "10_plus_years": 19181750
+ },
+ "minimum_salary": {
+  "0_years": 490180,
+  "1_year": 788872,
+  "2_years": 884293,
+  "10_plus_years": 1399507,
+  "other_years_of_service": null
+ },
+ "rookie_scale": null,
+ "missing_definition": "Null means not collected or not shown by the source, never zero.",
+ "sources": [
+  {
+   "url": "https://basketball.realgm.com/nba/info/salary_cap",
+   "use": "All figures in this file except the rookie scale"
+  }
+ ],
+ "rookie_scale_note": "Rookie scale for this season not collected."
+}

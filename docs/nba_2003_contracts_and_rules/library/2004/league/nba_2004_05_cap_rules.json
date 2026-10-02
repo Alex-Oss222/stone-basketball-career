@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2004-05",
+ "kind": "cap_rules",
+ "status": "historical_actual",
+ "live_use_policy": "Reference only until the figure's real publication date has passed in the career. Publication dates are tracked in the repo's league_cap_history.json; none are recorded here.",
+ "salary_cap": 43870000,
+ "luxury_tax_line": null,
+ "first_apron": null,
+ "exceptions": {
+  "mid_level": 4903000,
+  "taxpayer_mid_level": null,
+  "room_mid_level": null,
+  "biennial": 1600000,
+  "note": "Under the 1999 agreement the biennial figure is the $1 million exception."
+ },
+ "maximum_salary": {
+  "0_to_6_years": 10968000,
+  "7_to_9_years": 13161000,
+  "10_plus_years": 15355000
+ },
+ "minimum_salary": {
+  "0_years": 385277,
+  "1_year": 620046,
+  "2_years": 695046,
+  "10_plus_years": 1100000,
+  "other_years_of_service": null
+ },
+ "rookie_scale": null,
+ "missing_definition": "Null means not collected or not shown by the source, never zero.",
+ "sources": [
+  {
+   "url": "https://basketball.realgm.com/nba/info/salary_cap",
+   "use": "All figures in this file except the rookie scale"
+  },
+  {
+   "url": "http://www.cbafaq.com/salarycap99.htm",
+   "use": "Cross-check: cap, mid-level, $1 million exception and 10-year minimum agree; tax line given there as a rounded figure"
+  }
+ ],
+ "rookie_scale_note": "Rookie scale for this season not collected."
+}

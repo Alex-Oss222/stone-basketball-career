@@ -1,0 +1,286 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2003-04",
+ "kind": "cap_rules",
+ "status": "historical_actual",
+ "live_use_policy": "Reference only until the figure's real publication date has passed in the career. Publication dates are tracked in the repo's league_cap_history.json; none are recorded here.",
+ "salary_cap": 43840000,
+ "luxury_tax_line": 54556722,
+ "first_apron": null,
+ "exceptions": {
+  "mid_level": 4917000,
+  "taxpayer_mid_level": null,
+  "room_mid_level": null,
+  "biennial": 1500000,
+  "note": "Under the 1999 agreement the biennial figure is the $1 million exception."
+ },
+ "maximum_salary": {
+  "0_to_6_years": 10960000,
+  "7_to_9_years": 13152000,
+  "10_plus_years": 15344000
+ },
+ "minimum_salary": {
+  "0_years": 366931,
+  "1_year": 563679,
+  "2_years": 638679,
+  "10_plus_years": 1070000,
+  "other_years_of_service": null
+ },
+ "rookie_scale": {
+  "draft_year": 2003,
+  "allowed_signing_percent_of_scale": {
+   "min": 80,
+   "max": 120
+  },
+  "picks": [
+   {
+    "pick": 1,
+    "year_1": 3349100,
+    "year_2": 3600300,
+    "year_3": 3851500,
+    "fourth_year_option_increase_percent": 26.1,
+    "qualifying_offer_increase_percent": 30.0
+   },
+   {
+    "pick": 2,
+    "year_1": 2996500,
+    "year_2": 3221200,
+    "year_3": 3446000,
+    "fourth_year_option_increase_percent": 26.2,
+    "qualifying_offer_increase_percent": 30.5
+   },
+   {
+    "pick": 3,
+    "year_1": 2691000,
+    "year_2": 2892800,
+    "year_3": 3094700,
+    "fourth_year_option_increase_percent": 26.4,
+    "qualifying_offer_increase_percent": 31.2
+   },
+   {
+    "pick": 4,
+    "year_1": 2426100,
+    "year_2": 2608100,
+    "year_3": 2790000,
+    "fourth_year_option_increase_percent": 26.5,
+    "qualifying_offer_increase_percent": 31.9
+   },
+   {
+    "pick": 5,
+    "year_1": 2197000,
+    "year_2": 2361800,
+    "year_3": 2526600,
+    "fourth_year_option_increase_percent": 26.7,
+    "qualifying_offer_increase_percent": 32.6
+   },
+   {
+    "pick": 6,
+    "year_1": 1995500,
+    "year_2": 2145200,
+    "year_3": 2294800,
+    "fourth_year_option_increase_percent": 26.8,
+    "qualifying_offer_increase_percent": 33.4
+   },
+   {
+    "pick": 7,
+    "year_1": 1821600,
+    "year_2": 1958200,
+    "year_3": 2094900,
+    "fourth_year_option_increase_percent": 27.0,
+    "qualifying_offer_increase_percent": 34.1
+   },
+   {
+    "pick": 8,
+    "year_1": 1668900,
+    "year_2": 1794000,
+    "year_3": 1919200,
+    "fourth_year_option_increase_percent": 27.2,
+    "qualifying_offer_increase_percent": 34.8
+   },
+   {
+    "pick": 9,
+    "year_1": 1534000,
+    "year_2": 1649100,
+    "year_3": 1764100,
+    "fourth_year_option_increase_percent": 27.4,
+    "qualifying_offer_increase_percent": 35.5
+   },
+   {
+    "pick": 10,
+    "year_1": 1457300,
+    "year_2": 1566600,
+    "year_3": 1675900,
+    "fourth_year_option_increase_percent": 27.5,
+    "qualifying_offer_increase_percent": 36.2
+   },
+   {
+    "pick": 11,
+    "year_1": 1384400,
+    "year_2": 1488300,
+    "year_3": 1592100,
+    "fourth_year_option_increase_percent": 32.7,
+    "qualifying_offer_increase_percent": 36.9
+   },
+   {
+    "pick": 12,
+    "year_1": 1315200,
+    "year_2": 1413900,
+    "year_3": 1512500,
+    "fourth_year_option_increase_percent": 37.8,
+    "qualifying_offer_increase_percent": 37.6
+   },
+   {
+    "pick": 13,
+    "year_1": 1249500,
+    "year_2": 1343200,
+    "year_3": 1436900,
+    "fourth_year_option_increase_percent": 42.9,
+    "qualifying_offer_increase_percent": 38.3
+   },
+   {
+    "pick": 14,
+    "year_1": 1187000,
+    "year_2": 1276000,
+    "year_3": 1365000,
+    "fourth_year_option_increase_percent": 48.1,
+    "qualifying_offer_increase_percent": 39.1
+   },
+   {
+    "pick": 15,
+    "year_1": 1127600,
+    "year_2": 1212200,
+    "year_3": 1296800,
+    "fourth_year_option_increase_percent": 53.3,
+    "qualifying_offer_increase_percent": 39.8
+   },
+   {
+    "pick": 16,
+    "year_1": 1071200,
+    "year_2": 1151600,
+    "year_3": 1231900,
+    "fourth_year_option_increase_percent": 53.4,
+    "qualifying_offer_increase_percent": 40.5
+   },
+   {
+    "pick": 17,
+    "year_1": 1017700,
+    "year_2": 1094000,
+    "year_3": 1170300,
+    "fourth_year_option_increase_percent": 53.6,
+    "qualifying_offer_increase_percent": 41.2
+   },
+   {
+    "pick": 18,
+    "year_1": 966800,
+    "year_2": 1039300,
+    "year_3": 1111800,
+    "fourth_year_option_increase_percent": 53.8,
+    "qualifying_offer_increase_percent": 41.9
+   },
+   {
+    "pick": 19,
+    "year_1": 923300,
+    "year_2": 992500,
+    "year_3": 1061800,
+    "fourth_year_option_increase_percent": 54.0,
+    "qualifying_offer_increase_percent": 42.6
+   },
+   {
+    "pick": 20,
+    "year_1": 886400,
+    "year_2": 952800,
+    "year_3": 1019300,
+    "fourth_year_option_increase_percent": 54.2,
+    "qualifying_offer_increase_percent": 43.3
+   },
+   {
+    "pick": 21,
+    "year_1": 850900,
+    "year_2": 914700,
+    "year_3": 978500,
+    "fourth_year_option_increase_percent": 59.3,
+    "qualifying_offer_increase_percent": 44.1
+   },
+   {
+    "pick": 22,
+    "year_1": 816900,
+    "year_2": 878100,
+    "year_3": 939400,
+    "fourth_year_option_increase_percent": 64.5,
+    "qualifying_offer_increase_percent": 44.8
+   },
+   {
+    "pick": 23,
+    "year_1": 784200,
+    "year_2": 843000,
+    "year_3": 901800,
+    "fourth_year_option_increase_percent": 69.7,
+    "qualifying_offer_increase_percent": 45.5
+   },
+   {
+    "pick": 24,
+    "year_1": 752800,
+    "year_2": 809300,
+    "year_3": 865800,
+    "fourth_year_option_increase_percent": 74.9,
+    "qualifying_offer_increase_percent": 46.2
+   },
+   {
+    "pick": 25,
+    "year_1": 722700,
+    "year_2": 776900,
+    "year_3": 831100,
+    "fourth_year_option_increase_percent": 80.1,
+    "qualifying_offer_increase_percent": 46.9
+   },
+   {
+    "pick": 26,
+    "year_1": 698800,
+    "year_2": 751200,
+    "year_3": 803600,
+    "fourth_year_option_increase_percent": 80.3,
+    "qualifying_offer_increase_percent": 47.6
+   },
+   {
+    "pick": 27,
+    "year_1": 678600,
+    "year_2": 729500,
+    "year_3": 780400,
+    "fourth_year_option_increase_percent": 80.4,
+    "qualifying_offer_increase_percent": 48.3
+   },
+   {
+    "pick": 28,
+    "year_1": 674400,
+    "year_2": 725000,
+    "year_3": 775500,
+    "fourth_year_option_increase_percent": 80.5,
+    "qualifying_offer_increase_percent": 49.0
+   },
+   {
+    "pick": 29,
+    "year_1": 669500,
+    "year_2": 719700,
+    "year_3": 769900,
+    "fourth_year_option_increase_percent": 80.5,
+    "qualifying_offer_increase_percent": 50.0
+   }
+  ]
+ },
+ "missing_definition": "Null means not collected or not shown by the source, never zero.",
+ "sources": [
+  {
+   "url": "https://basketball.realgm.com/nba/info/salary_cap",
+   "use": "All figures in this file except the rookie scale"
+  },
+  {
+   "url": "http://www.cbafaq.com/salarycap99.htm",
+   "use": "Cross-check: cap, mid-level, $1 million exception and 10-year minimum agree; tax line given there as a rounded figure"
+  },
+  {
+   "url": "https://basketball.realgm.com/nba/info/rookie_scale/2004",
+   "use": "2003-04 rookie scale"
+  }
+ ]
+}

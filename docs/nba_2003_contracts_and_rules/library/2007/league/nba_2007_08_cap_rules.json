@@ -1,0 +1,38 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2007-08",
+ "kind": "cap_rules",
+ "status": "historical_actual",
+ "live_use_policy": "Reference only until the figure's real publication date has passed in the career. Publication dates are tracked in the repo's league_cap_history.json; none are recorded here.",
+ "salary_cap": 55630000,
+ "luxury_tax_line": 67865000,
+ "first_apron": null,
+ "exceptions": {
+  "mid_level": 5356000,
+  "taxpayer_mid_level": null,
+  "room_mid_level": null,
+  "biennial": 1830000
+ },
+ "maximum_salary": {
+  "0_to_6_years": 13041250,
+  "7_to_9_years": 15649500,
+  "10_plus_years": 18257750
+ },
+ "minimum_salary": {
+  "0_years": 427163,
+  "1_year": 687456,
+  "2_years": 770610,
+  "10_plus_years": 1219590,
+  "other_years_of_service": null
+ },
+ "rookie_scale": null,
+ "missing_definition": "Null means not collected or not shown by the source, never zero.",
+ "sources": [
+  {
+   "url": "https://basketball.realgm.com/nba/info/salary_cap",
+   "use": "All figures in this file except the rookie scale"
+  }
+ ],
+ "rookie_scale_note": "Rookie scale for this season not collected."
+}
