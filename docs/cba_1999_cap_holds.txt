@@ -1,0 +1,96 @@
+1999 NBA COLLECTIVE BARGAINING AGREEMENT: CAP HOLDS, RENOUNCING, QUALIFYING OFFERS, BIRD EXCEPTIONS, MINIMUM EXCEPTION, ROOKIE SCALE
+
+NOTE ON THIS FILE
+This is an extraction of the rules, not a paste of the full answers. Each block gives the rule in plain sentences with the question number it comes from. Text inside double quotes is a short phrase quoted from the FAQ. Everything else is a restatement. The page was read twice with different questions and the two readings agreed on every figure below. Retrieved 2026-10-02. The FAQ describes the 1999 agreement, which was in force on June 26, 2003.
+
+----------------------------------------------------------------------
+SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 27
+TOPIC: Free agents count against their old team's cap
+- A team's own free agents "continue to count as team salary (against the salary cap)". This limits the cap room the team can use on other players.
+
+----------------------------------------------------------------------
+SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 28
+TOPIC: Free agent amounts (cap holds), as a percentage of the player's previous salary
+- Larry Bird free agent, not coming off a rookie scale contract, previous salary at least the average salary: 150%.
+- Larry Bird free agent, not coming off a rookie scale contract, previous salary below the average salary: 200%.
+- Larry Bird free agent coming off a rookie scale contract, previous salary at least the average salary: "200% in 98-99", "225% in 99-00", "250% in remaining seasons".
+- Larry Bird free agent coming off a rookie scale contract, previous salary below the average salary: 300%.
+- Early Bird free agent, any previous salary: 130%.
+- Non-Bird free agent, any previous salary: 120%.
+- Limit on every row: "Not to exceed the player's maximum salary, based on years of service."
+- Adjustment on every row: if the difference in salary between the last two seasons of the player's contract exceeded $4 million, the percentage is applied to the average salary of those last two seasons.
+- NOT FOUND in the two readings: a separate hold rule for players coming off minimum-salary contracts, and a rule tying the hold to a pending qualifying offer or offer sheet. Treat both as unverified, not as absent from the agreement.
+
+----------------------------------------------------------------------
+SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 30
+TOPIC: When a cap hold ends
+- The hold ends when any one of three things happens: the player signs a new contract with the same team, the player signs with a different team, or the team renounces the player.
+
+----------------------------------------------------------------------
+SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 31
+TOPIC: Renouncing a free agent
+- A renounced player no longer counts toward team salary, so teams renounce players to gain cap room.
+- By renouncing, the team gives up, until "the following June 30", its right to use the Larry Bird, Early Bird or Non-Bird exception for that player.
+- The team may still re-sign the player, but only with cap room or a different exception.
+
+----------------------------------------------------------------------
+SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 32
+TOPIC: Undoing a renouncement
+- Allowed in one case: the team renounced players to make room for a restricted free agent, and that player's original team matched the offer sheet and kept him.
+
+----------------------------------------------------------------------
+SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 34
+TOPIC: Qualifying offers and restricted free agency
+- Who can be a restricted free agent: (1) players "following the fourth year of rookie scale contracts for first-round draft picks"; (2) "all veteran free agents who entered the NBA in 98-99 or later, who have been in the league three or fewer seasons".
+- To make the player restricted, the team "must submit a qualifying offer to the player by June 30".
+- Qualifying offer amount, rookie scale players: "based on the player's draft position" (see Question 38 and the rookie scale table).
+- Qualifying offer amount, other players: "125% of the player's previous salary, or the player's minimum salary plus $150,000, whichever is greater".
+- The qualifying offer "must be for one season".
+- A team over the cap automatically gets an exception for the amount needed to make the qualifying offer.
+- "Teams can rescind their qualifying offer to a restricted free agent, in which case the player becomes unrestricted".
+- Offer sheets from other teams: must be for at least three seasons; cannot include non-cash compensation.
+- Right of first refusal: the original team has 15 days to match "the principal terms" of the offer sheet. If it matches, the player is under contract with the original team. If it does not match within 15 days, the offer sheet becomes a contract with the new team.
+
+----------------------------------------------------------------------
+SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 17 (exceptions) and Question 23 (traded players)
+TOPIC: Larry Bird, Early Bird and Non-Bird exceptions
+Larry Bird exception
+- For a team's own free agent who has played three seasons "without being waived or changing teams as a free agent".
+- The three seasons can be three one-year contracts, one contract of at least three years, or any combination.
+- Salary: up to the player's maximum salary.
+- Raises: 12.5%.
+- Length: up to seven years.
+- Trades keep the rights: "his Bird rights are traded with him" (Question 23).
+- The salary still counts against the cap; the exception only lets the team exceed the cap to sign him (Question 25).
+Early Bird exception
+- For a team's own free agent after two seasons without being waived or changing teams as a free agent.
+- Salary: "175% of his salary the previous season or the average player salary, whichever is greater".
+- Raises: 12.5%.
+- Length: at least two seasons and no more than six.
+Non-Bird exception
+- For "veteran free agents who are neither Qualifying Veteran Free Agents nor Early Qualifying Veteran Free Agents".
+- Salary: "120% of the player's salary in the previous season or 120% of the minimum salary, whichever is greater".
+- Raises: limited to 10%.
+- Length: limited to six years.
+
+----------------------------------------------------------------------
+SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 17
+TOPIC: Minimum salary exception
+- A team over the cap may offer minimum-salary contracts.
+- Length: up to two years. In a two-year contract the second season's salary is the minimum salary for that season.
+- The exception also lets a team acquire minimum-salary players by trade.
+
+----------------------------------------------------------------------
+SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 38
+TOPIC: Rookie scale contracts
+- Salary is set by exact draft position. For 99-00 through 04-05 the scale rises 5% each year, as a simple 5% of the 98-99 figure, not compounded.
+- A team may sign the player for "as little as 80% or as much as 120% of the scale salary figure".
+- Annual raises are limited to 10%.
+- Term: three seasons with a team option for a fourth. "this option must be exercised by October 31 after the player's second season".
+
+----------------------------------------------------------------------
+SOURCE: http://www.cbafaq.com/salarycap99.htm, Question 41
+TOPIC: Cap holds for unsigned draft picks
+- "Unsigned first round picks are included in team salary immediately upon their selection in the draft."
+- They count at 100% of the scale salary for that pick, "unless there is a verbal agreement for a higher salary".
+- "Unsigned second round picks are not included in team salary."
