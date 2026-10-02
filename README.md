@@ -13,6 +13,7 @@ No. 5 draft pick. Miami owns Wade's rights; his contract is unsigned. The 2003-0
 | [Professional identity](career/Dwyane_Wade/Professional_Identity.md) | Player identity and professional status at the report date |
 | [Player season](career/Dwyane_Wade/2003-04/README.md) | Summer League, preseason, regular season and playoff reports |
 | [Filled statistics preview](docs/examples/player_stats_preview.md) | Sample season, month, week and game layouts with illustrative numbers |
+| [Player milestone previews](docs/examples/player_milestones/README.md) | Contract, free agency, training, trade, exit-meeting and camp examples; [reusable templates](docs/templates/player_milestones/README.md) |
 | [National team / FIBA](career/Dwyane_Wade/National_Team/README.md) | Separate World Cup, Olympic, continental and friendly records |
 | [Miami team desk](career/Dwyane_Wade/2003-04/00_Team/README.md) | Organization, roster, player cards and rotation |
 | [Eight-season cap sheet](career/Dwyane_Wade/2003-04/00_Team/Finances/cap_sheet.md) | Existing obligations from 2003-04 through 2010-11 |

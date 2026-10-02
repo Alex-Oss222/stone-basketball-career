@@ -6,6 +6,12 @@ Read Wade's player profile, current state, the Miami organization, team config, 
 
 Read player cards required for the event. Read finances when contract, cap, free-agency or trade consequences matter.
 
+## Player milestones
+
+When a dated event creates a genuine player decision, use the relevant [milestone template](templates/player_milestones/README.md): contract, free agency, training, trade update, exit meeting or camp review. Follow its [recording workflow](templates/player_milestones/workflow.md). Show the available choice and next checkpoint, then record the player's response without deciding it for them.
+
+Club-owned outcomes are notifications unless a verified player right creates a choice. A counteroffer is not an accepted contract, planned training is not completed work, and an expiring contract does not generate a new deal automatically. These templates do not implement the remaining contract, trade or development mechanics.
+
 ## Team changes
 
 The AI/GM owns team changes. A user request as Wade does not directly rewrite Miami's roster, depth chart, organization or cap sheet.

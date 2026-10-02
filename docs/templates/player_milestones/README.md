@@ -1,0 +1,38 @@
+# Your career between games
+
+Six reusable player-facing pages for the moments when the calendar changes what you can do.
+
+[See the filled examples](../../examples/player_milestones/README.md) · [Research and era rules](research.md) · [How to use these pages](workflow.md)
+
+| Moment | Open this template | What you get to do |
+| --- | --- | --- |
+| A contract offer arrives, an extension window opens, or an option deadline approaches | [Contract desk](contract_negotiation.md) | Compare protected money and control; accept, counter, decline, or exercise your own option when eligible |
+| You are eligible to enter the market | [Free-agency board](free_agency.md) | Set priorities, compare actual offers, choose meetings and direct negotiations |
+| Your offseason development block starts | [Training plan](offseason_training.md) | Choose a primary focus, agree a schedule, review practice evidence and adjust |
+| A trade involving you is proposed or confirmed | [Trade update](trade_update.md) | Understand your rights, respond privately, prepare to report and discuss your new role |
+| Your team's season ends | [Exit meeting](exit_meeting.md) | Review your season, state role goals and carry two priorities into summer |
+| Camp opens, or coaches schedule a role review | [Camp review](training_camp.md) | Choose what to ask for, review staff observations and respond to the communicated assignment |
+
+These are different working pages: an offer sheet, a market comparison, a training block, a transaction notice, a season review and a coaching conversation. Each ends with a concrete reply and the next event that will bring the page back.
+
+## What brings a page onto the screen?
+
+| Trigger | Player-facing prompt | What happens next |
+| --- | --- | --- |
+| Final guaranteed season approaching | “What matters most in your next deal?” | Record priorities; monitor the verified extension/option dates |
+| Verified player-option deadline | “Exercise or decline your option?” | Record your decision and its contractual effect |
+| Team-option deadline | “Your club's option decision is due.” | The AI/GM decides; show the outcome and resulting choices |
+| Written offer received | “Here is the offer. What should your representative send back?” | Record your reply; await the club's response |
+| Contract reaches its actual end | “Here is your verified market status.” | Open the eligible free-agency path; expiration alone does not create a new contract |
+| Season closes | “Choose your two summer priorities.” | Exit meeting feeds the development plan |
+| Training block reaches review date | “Continue this focus or change it?” | Compare like-for-like practice evidence and agree the next block |
+| Trade is confirmed | “Here is what changed and where you report.” | Confirm logistics and request a role meeting; consent is a separate branch only when a verified right exists |
+| Camp evaluation communicated | “Here is the role the staff has assigned. What do you want to discuss?” | Record the request and staff response; coaches retain lineup authority |
+
+Dates come from the current season's schedule, signed terms and applicable agreement. Negotiations, training and national-team commitments can overlap; an offseason is not a queue that automatically completes one folder after another.
+
+## At the current checkpoint
+
+On June 26, 2003, Wade is an unsigned draft-rights player. These pages are a template collection, not new offers, completed workouts or pending decisions. A future contract page opens when an actual dated offer or eligible deadline is recorded.
+
+Use `{{field}}` placeholders in the blank pages. Remove inapplicable rows before showing a live page. Keep an unknown value visible as **Not recorded** when it matters to the decision. The full career stats and earned honors remain linked evidence, rather than being repeated on every decision page.

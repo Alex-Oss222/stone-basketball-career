@@ -151,6 +151,8 @@ Games are played by the engine on Railway. To play a game, write `Game_N.request
 
 ## After an event
 
+For player-facing calendar milestones, use `docs/templates/player_milestones/` and its workflow: a compact identity, the actual event, decision-relevant evidence, the player's available response and the next checkpoint. Open a page only from a dated trigger. Ask for Wade's own contract/training/role preference; do not ask the user to approve an ordinary AI/GM trade or a coaching assignment. Verify any actual trade-consent right. Templates and filled previews are not simulation events, live offers, signed contracts or ability gains.
+
 1. write the owning event note;
 2. update current state;
 3. update affected AI/GM team records only when Miami actually changed;
