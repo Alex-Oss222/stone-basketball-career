@@ -271,10 +271,14 @@ class RatingIndex:
             return self.trajectories.expected_profile(p["bbr_id"], self.season, self.data["rate_baselines"])
         if p.get("trajectory_only"):
             return {}
-        return {"bbr_id": p["bbr_id"], "model_version": p["model_version"],
-                "as_of": p["as_of"], "season_end_year": p["season_end_year"],
-                "source_sha256": p["source_sha256"],
-                "rates": {k:p["estimated"][k] for k in RATE_KEYS}}
+        profile = {"bbr_id": p["bbr_id"], "model_version": p["model_version"],
+                   "as_of": p["as_of"], "season_end_year": p["season_end_year"],
+                   "source_sha256": p["source_sha256"],
+                   "rates": {k:p["estimated"][k] for k in RATE_KEYS}}
+        graded = self.grades.get(alias(p["player_name"])) if getattr(self, "grades", None) else None
+        if graded is not None:
+            profile["defense"] = graded      # a dated staff grade (Wade's camp grade, roadmap item 9)
+        return profile
 
 
 def load_rating_index(game_date, season, root=ROOT):
@@ -298,7 +302,24 @@ def load_rating_index(game_date, season, root=ROOT):
                 or rookies["source_sha256"] != sha256(Path(root)/PROSPECTS_PATH)):
             raise ValueError("rookie estimates are stale or not yet available; rebuild from the current source")
     from .trajectories import load_trajectories
-    return RatingIndex(data, rookies, load_trajectories(root, season), season)
+    index = RatingIndex(data, rookies, load_trajectories(root, season), season)
+    index.grades = staff_defensive_grades(game_date, season, root)
+    return index
+
+
+def staff_defensive_grades(game_date, season, root=ROOT):
+    """Name key -> defensive value from the simulated club's dated staff grades in force on the game date.
+
+    A grade applies to games on or after its `from` date; earlier games keep the average fallback,
+    so a grade written at camp never changes a game already played."""
+    path = Path(root) / f"career/Dwyane_Wade/{season}/00_Team/Team/defensive_grades.json"
+    if not path.exists():
+        return {}
+    out = {}
+    for g in read_json(path)["players"]:
+        if g.get("from") and g["from"] <= game_date:
+            out[alias(g["player"])] = g["defense"]
+    return out
 
 
 def repository_rating_errors(root=ROOT):

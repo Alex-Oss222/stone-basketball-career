@@ -63,6 +63,20 @@ Validation replays every negotiation record on the desk (`negotiation_errors`) a
 
 Proposals to Miami from real clubs and injuries in the value are not built; the design (section 7) keeps them as later work.
 
+## Training camp and preseason (roadmap items 9, 10 in part, 12; phase D of `front_office_design.md`)
+
+`python scripts/run_camp.py --write <date>` runs the camp stages due by the date and stops when a draw or a game result is missing: September 30 invites and camp injury draws; October 5 the seven preseason requests; October 24 the staff decision from the box scores; October 27 the cut and the promise check. Records: `04_Training_Camp/camp_roster.json` (participants, contracts, injuries, staff scores, cuts), `Decisions/` (the draws), `05_Preseason/Game_N.md` and `Game_N.request.json` (played by the engine like any game; results are evidence, not statistics that count), `00_Team/Team/Depth_Chart/depth_chart.json` and `rotation.json`, `00_Team/Team/defensive_grades.json`, `04_Training_Camp/Wade_Camp_Review.md` (the camp and role review page for the user to answer) and `promise_log.json`.
+
+| Stage | Rule or judgement (named in `runtime/camp.py`) |
+|---|---|
+| Invites | the unsigned pool, production value at least replacement plus one (or a player of 25 or younger at replacement), best value times fit first, to a camp of twenty, on non-guaranteed minimums that guarantee on January 10, 2004; invitees get a register entry, a card and a holding (rule 2) for the camp |
+| Camp injuries | one draw per participant: 3% plus 0.5% a year over 30; an injured player misses the preseason |
+| Preseason | Miami dresses twelve: the depth chart's first at each position and the first reserves every game, the rest rotating through the camp roster; the opponent plays its real roster |
+| Staff decision | score = 0.6 x prior value (2002-03 production; a rookie's prior by draft slot, top ten 9.0) + 0.4 x preseason efficiency per 30 minutes; the depth chart by score at each position, one evaluation draw when the top two are within 10%; the rotation from the chart (34 for starters, then 20, 16, 12, 10, 8, 4) |
+| Wade's grade | perimeter defense: base 45 from the profile's defensive scouting (sections 6 and 14), moved by at most 5 by his preseason steals and blocks per 36 against 1.6; bounded 35 to 60; written dated to `defensive_grades.json`, which the rating index reads for games on or after that date as his defensive value (one point per 100 possessions per ten grade points) and the request carries as his `perimeter_defense` rating; a played game keeps its inputs |
+| Cut | to fifteen, non-guaranteed contracts first, lowest score times fit; a released camp contract leaves no dead money |
+| Promises | every promised role (from signings) against the rotation: kept at 85% of the promised minutes, else logged as broken for the player's later decisions |
+
 ## Wade's rookie contract (roadmap item 5)
 
 Miami opens with 120% of the No. 5 scale, the customary level for first-round picks: $2,636,400, $2,834,160 and $3,031,920 over 2003-04 to 2005-06, plus a $3,841,443 team option for 2006-07, to be exercised by October 31, 2005 (October 31 after his second season, FAQ Q38). Miami intends to sign him after its July free-agency moves, because until he signs he counts at 100% of scale.
