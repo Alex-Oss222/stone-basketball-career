@@ -110,6 +110,8 @@ Keep the existing paths and the cross-links between the same period's Wade, Miam
 
 Player reports contain professional identity and statistics. Rebuild with `python scripts/update_player_reports.py`; verify without writes with `--check`. Detailed tables live in `Stat_Detail.md`, and each regular-season month/week has a readable README. Maintain dated status snapshots in `professional_identity.json`; the detailed alternate-history profile remains canon. A played note may point to an adjacent `Game_N.result.json` via `result_file`. Only that declared, closed result feeds reports. The reporter does not run the engine, advance time or invent tracking data. See `docs/player_statistics.md` for the source contract and formulas.
 
+Use the shared personal-information header and complete per-game columns across player report levels. Generated gold award badges read `awards.json`: earned honors only, with dates and an existing career decision source. Keep the existing honor and league voting records synchronized when recording an award. The banner is bounded by the page's identity cutoff; table honors are confirmed through the career knowledge date and filed by award period end. Never copy the reference images' biography, trophies or historical totals into the simulation.
+
 Summer League, preseason, regular season, Play-In, playoffs and national-team events are distinct statistical records. National qualifiers, final tournaments and friendlies stay separate. NBA Cup applies only from 2023-24: group, quarterfinal and semifinal games remain owned by regular-season weeks and are tagged for the Cup view; only the championship is owned by `10_NBA_Cup/Championship`. Never duplicate a game to populate a second report. Play-In is unavailable before 2019-20; that restart format differs from 2020-21 onward. Reporting support never enables an unverified engine era. Examples under `docs/examples/` are illustrative and must not enter canonical career totals.
 
 Official NBA weekly award windows can cross this repository's fixed calendar buckets. Preserve the official award dates and file the honor on the week page containing the award period's end date.
@@ -117,6 +119,8 @@ Official NBA weekly award windows can cross this repository's fixed calendar buc
 ## League stats and awards
 
 League-wide tracking lives under `career/Dwyane_Wade/Stats_and_Awards/League/`. The player registry is the source roster for league stat pages. Every period page keeps all tracked players grouped by primary position.
+
+League season/month/week tables share the full per-game column order and red-and-black section styling. Include recorded age, club/rights, league and position without assigning a player banner to a league page. `scripts/format_league_reports.py` migrates presentation while retaining period values; it is not a result aggregator. New unavailable fields stay N/A, and historical rating data must never fill simulated production.
 
 Weekly and monthly NBA awards remain conference-specific. Their pages keep a visible top-three shortlist but do not pretend the NBA published vote totals where it did not. Season individual awards publish the top three vote-getters. The No. 1 row is labeled WINNER only after the vote closes.
 

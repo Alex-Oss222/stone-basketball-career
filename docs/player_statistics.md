@@ -4,6 +4,8 @@
 
 Reports contain professional identity and statistical performance. Decisions remain in their owning notes. Existing team, league and award records retain their paths and links.
 
+League season/month/week pages also use the complete per-game column order, with recorded age, club/rights, league and position. Their shared red-and-black section header needs no player awards banner. `scripts/format_league_reports.py` preserves existing period values when migrating the layout; automated league result aggregation remains a separate roadmap item. Missing attempts and other new columns remain N/A until supported by branch games.
+
 ## Each level has a purpose
 
 | Level | README | Statistical detail |
@@ -21,6 +23,22 @@ Reports contain professional identity and statistical performance. Decisions rem
 The established player report path is `Stats_and_Awards/<season>/<month>/Week_N/README.md`. Matching READMEs beside regular-season notes expose the same summary. Deeper tables live in `Stat_Detail.md`. One canonical game feeds all applicable views.
 
 The career folder README opens with a visual overview in the supplied red/dark card style. `assets/career_overview.svg` is generated from the same dated identity and career totals, with separate regular-season and playoff cards. The professional-status card contains entry and roster fields. A collapsible text version retains accessible tables and source navigation. Rebuilding player reports refreshes both versions; the reference screenshot's historical biography and career results are not imported.
+
+All player report levels now share the red-and-black personal-information header, with position, shooting hand, height, weight, birth date, age, prior program, jersey, roster status and draft entry. Gold badges show confirmed professional honors. The source remains the simulation's identity and results, including on national-team, playoff, month, week and game reports. Existing team/league population tables keep their own records.
+
+Per-game tables follow the supplied reference's column sequence: **Scope, Age, Team, Lg, Pos, G, GS, MP, FG, FGA, FG%, 3P, 3PA, 3P%, 2P, 2PA, 2P%, eFG%, FT, FTA, FT%, ORB, DRB, TRB, AST, STL, BLK, TOV, PF, PTS**, then estimated TS% and earned awards. FG/3P/2P/FT are makes per appearance. Percentages in these tables use the reference's decimal style (.500 means 50.0%); other explicitly percent-formatted detail tables remain readable percentages. G/GS remain counts. The table scrolls horizontally on narrow screens so columns and source links stay selectable. Career rows are seasons, season rows are months or distinct competitions, month rows are weeks, and week logs include individual game boxes. No competition totals are combined.
+
+The SVG header is shared by pages with the same identity cutoff to avoid duplicate assets. Text equivalents retain all personal fields, honors and source links. Career-level regular-season and playoff tables remain visible beneath the overview and award banner.
+
+## Earned-honor banners
+
+`career/Dwyane_Wade/awards.json` supplies earned badges and the Awards column. `Awards.md` is its readable register. The initial register is empty. A nomination, voting placement, unclosed ballot or historical Wade award does not create a badge. Repeated honors are grouped into count badges; full award names and dates remain available in text.
+
+Each entry needs `id`, `name`, `short_name`, `status: earned`, `competition`, `season` (or national edition), `period_start`, `period_end`, `awarded_on` and a `source` path relative to the player folder. The source must be an existing closed award-decision record in the career; a fragment may identify its section. Use the report competition names in this document, or `career` for a lifetime honor. Confirm the decision and keep the existing season/month/week honor registers and league award record synchronized before adding its structured entry. The renderer displays honors; it does not decide award winners or replace the voting workflow.
+
+The loader rejects duplicate honors, nominees, unsupported competitions, future announcements, invalid date order and missing/outside sources. NBA Cup and Play-In season gates also apply to their honors. A banner shows only awards announced by that page's identity cutoff. The table's Awards column uses the current career knowledge date and files each honor into the period containing its **period-end date**, as required by the calendar/award rules. Thus an award announced on Monday can appear in the prior week's table after confirmation; its announcement date is retained in the register, and the table names its knowledge cutoff. It never enters an earlier as-of banner before announcement.
+
+The filled examples include fictional award badges to demonstrate appearance. They are kept outside the career directory and marked as illustrative.
 
 Weeks retain the repository's established **days 1-7, 8-14, 15-21 and 22-month end**, with full dates in every title. They are monthly buckets, not Monday-Sunday weeks. Official awards retain their own date windows. January-April belong to the second calendar year of an NBA season. The 2003-04 calendar is not universal: verify lockout, restart and future schedules at rollover.
 

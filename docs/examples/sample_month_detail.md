@@ -8,11 +8,31 @@
 
 ## Professional identity
 
+![Player personal information and earned career honors through 2003-11-12](assets/personal_2003-11-12.svg)
+
+<details>
+<summary>Personal information and earned honors: text version</summary>
+
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
 | Example Player | 19 | Example Club / NBA | SG / PG | 7 | Active (fictional example) |
 
-Identity as of 2003-11-12; status snapshot dated 2003-10-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+| Birth date | Height (in shoes) | Weight | Shoots | Prior program |
+| --- | --- | --- | --- | --- |
+| 1984-01-17 | 6 ft 6 in | 220 lb | Right | Example University |
+
+NBA entry: Example draft entry: round 1, pick 5.
+
+Identity as of 2003-11-12; status snapshot dated 2003-10-01. Illustrative player identity; not a canonical career record.
+
+### Earned career honors
+
+| Honor | Period | Announced | Decision record |
+| --- | --- | --- | --- |
+| Rookie of the Month | 2003-10-01 to 2003-10-31 | 2003-11-01 | ROTM (example) |
+| Player of the Week | 2003-11-01 to 2003-11-07 | 2003-11-08 | POTW (example) |
+
+</details>
 
 ## Statistics
 
@@ -20,9 +40,17 @@ As of **2003-11-12**: 6 closed games; 6/6 have player participation and box cove
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
-| G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 5 | 5 | 34.8 | 23.4 | 6.2 | 7.8 | 1.8 | 0.8 | 3.2 |
+### Per game
+
+![Per-game player statistics](assets/per_game.svg)
+
+| Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| This scope | 19 | Example Club | NBA | SG / PG | 5 | 5 | 34.8 | 8.6 | 17.4 | .494 | 1.2 | 3.2 | .375 | 7.4 | 14.2 | .521 | .529 | 5.0 | 6.0 | .833 | 1.6 | 4.6 | 6.2 | 7.8 | 1.8 | 0.8 | 3.2 | 2.8 | 23.4 | .584 | POTW (example) |
+
+G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2003-11-12, filed by the honor's period-end date; the banner shows career honors known at the page's identity cutoff.
 
 ### Production
 
@@ -76,14 +104,20 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 ### Splits
 
-| Scope | G | MPG | PPG | RPG | APG | TS% (est.) |
-| --- | --- | --- | --- | --- | --- | --- |
-| Home | 2 | 32.5 | 19.0 | 4.0 | 7.5 | 56.3% |
-| Away | 3 | 36.3 | 26.3 | 7.7 | 8.0 | 59.4% |
-| Neutral | 0 | N/A | N/A | N/A | N/A | N/A |
-| Wins | 3 | 35.0 | 25.0 | 6.7 | 9.0 | 62.1% |
-| Losses | 2 | 34.5 | 21.0 | 5.5 | 6.0 | 52.7% |
-| Team: Example Club | 5 | 34.8 | 23.4 | 6.2 | 7.8 | 58.4% |
+![Per-game player statistics](assets/per_game.svg)
+
+| Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Home | 19 | Example Club | NBA | SG / PG | 2 | 2 | 32.5 | 6.5 | 14.0 | .464 | 0.5 | 2.5 | .200 | 6.0 | 11.5 | .522 | .482 | 5.5 | 6.5 | .846 | 0.5 | 3.5 | 4.0 | 7.5 | 2.0 | 0.5 | 3.5 | 2.5 | 19.0 | .563 | — |
+| Away | 19 | Example Club | NBA | SG / PG | 3 | 3 | 36.3 | 10.0 | 19.7 | .508 | 1.7 | 3.7 | .455 | 8.3 | 16.0 | .521 | .551 | 4.7 | 5.7 | .824 | 2.3 | 5.3 | 7.7 | 8.0 | 1.7 | 1.0 | 3.0 | 3.0 | 26.3 | .594 | — |
+| Neutral | 19 | Example Club | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Wins | 19 | Example Club | NBA | SG / PG | 3 | 3 | 35.0 | 9.3 | 17.3 | .538 | 1.0 | 2.3 | .429 | 8.3 | 15.0 | .556 | .567 | 5.3 | 6.3 | .842 | 2.0 | 4.7 | 6.7 | 9.0 | 2.3 | 1.3 | 2.3 | 2.7 | 25.0 | .621 | — |
+| Losses | 19 | Example Club | NBA | SG / PG | 2 | 2 | 34.5 | 7.5 | 17.5 | .429 | 1.5 | 4.5 | .333 | 6.0 | 13.0 | .462 | .471 | 4.5 | 5.5 | .818 | 1.0 | 4.5 | 5.5 | 6.0 | 1.0 | 0.0 | 4.5 | 3.0 | 21.0 | .527 | — |
+| Team: Example Club | 19 | Example Club | NBA | SG / PG | 5 | 5 | 34.8 | 8.6 | 17.4 | .494 | 1.2 | 3.2 | .375 | 7.4 | 14.2 | .521 | .529 | 5.0 | 6.0 | .833 | 1.6 | 4.6 | 6.2 | 7.8 | 1.8 | 0.8 | 3.2 | 2.8 | 23.4 | .584 | — |
+
+G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2003-11-12, filed by the honor's period-end date; the banner shows career honors known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
@@ -108,6 +142,21 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2003-11-07](sample_dnp.md) | Club E | home | W 90-85 | DNP: inactive (example) | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [2003-11-09](sample_game_5.md) | Club A | home | L 94-100 | Played | 33.0 | 18 | 4 | 5 | 1 | 0 | 5 |
 | [2003-11-12](sample_game_6.md) | Club B | away | W 102-96 | Played | 35.0 | 24 | 6 | 9 | 2 | 1 | 2 |
+
+### Individual game boxes
+
+| Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [2003-11-01](sample_game_2.md) | 19 | Example Club | NBA | SG / PG | 1 | 1 | 36.0 | 9.0 | 20.0 | .450 | 2.0 | 5.0 | .400 | 7.0 | 15.0 | .467 | .500 | 4.0 | 5.0 | .800 | 2.0 | 5.0 | 7.0 | 7.0 | 1.0 | 0.0 | 4.0 | 3.0 | 24.0 | .541 | — |
+| [2003-11-03](sample_game_3.md) | 19 | Example Club | NBA | SG / PG | 1 | 1 | 32.0 | 7.0 | 13.0 | .538 | 0.0 | 1.0 | .000 | 7.0 | 12.0 | .583 | .538 | 6.0 | 7.0 | .857 | 1.0 | 3.0 | 4.0 | 10.0 | 3.0 | 1.0 | 2.0 | 2.0 | 20.0 | .622 | — |
+| [2003-11-05](sample_game_4.md) | 19 | Example Club | NBA | SG / PG | 1 | 1 | 38.0 | 11.0 | 21.0 | .524 | 2.0 | 4.0 | .500 | 9.0 | 17.0 | .529 | .571 | 7.0 | 8.0 | .875 | 3.0 | 7.0 | 10.0 | 8.0 | 2.0 | 2.0 | 3.0 | 4.0 | 31.0 | .632 | — |
+| [2003-11-07](sample_dnp.md) | 19 | Example Club | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [2003-11-09](sample_game_5.md) | 19 | Example Club | NBA | SG / PG | 1 | 1 | 33.0 | 6.0 | 15.0 | .400 | 1.0 | 4.0 | .250 | 5.0 | 11.0 | .455 | .433 | 5.0 | 6.0 | .833 | 0.0 | 4.0 | 4.0 | 5.0 | 1.0 | 0.0 | 5.0 | 3.0 | 18.0 | .510 | — |
+| [2003-11-12](sample_game_6.md) | 19 | Example Club | NBA | SG / PG | 1 | 1 | 35.0 | 10.0 | 18.0 | .556 | 1.0 | 2.0 | .500 | 9.0 | 16.0 | .562 | .583 | 3.0 | 4.0 | .750 | 2.0 | 4.0 | 6.0 | 9.0 | 2.0 | 1.0 | 2.0 | 2.0 | 24.0 | .607 | — |
+
+G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2003-11-12, filed by the honor's period-end date; the banner shows career honors known at the page's identity cutoff.
 
 ### Game shooting detail
 

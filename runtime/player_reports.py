@@ -6,10 +6,13 @@ import json
 import os
 import re
 from datetime import date
+from functools import partial
 from pathlib import Path
 
 from .career_stats import NATIONAL_PATHS, aggregate, collect_games, identity_at, select
 from .career_dashboard import career_overview
+from .award_records import load_awards, honors_in_scope
+from .stat_layout import ReportStyle
 from .season_rules import nba_cup_available, play_in_format, season_start
 
 LABELS = {
@@ -48,12 +51,29 @@ def link(page, target, label):
     return f"[{label}]({Path(os.path.relpath(target, page.parent)).as_posix()})"
 
 
-def identity_block(identity, as_of, profile_link=None, full=False):
+def identity_block(identity, as_of, profile_link=None, full=False, *, style=None, page=None):
+    if style is not None:
+        plain = identity_block(identity, as_of, profile_link, full)
+        honors = honors_in_scope(style.awards, known_on=as_of)
+        plain += "### Earned career honors\n\n"
+        if honors:
+            plain += table(["Honor", "Period", "Announced", "Decision record"], [
+                [a["name"], a["period_start"] + " to " + a["period_end"], a["awarded_on"], style.award_text(page, [a])] for a in honors])
+        else:
+            plain += "No earned professional honors recorded by this page's identity cutoff.\n\n"
+        visual = "## Professional identity\n\n" + style.header(page, as_of)
+        if full:
+            return visual + plain.split("## Professional identity\n\n", 1)[1]
+        return visual + "<details>\n<summary>Personal information and earned honors: text version</summary>\n\n" + plain.split("## Professional identity\n\n", 1)[1] + "</details>\n\n"
     p = identity_at(identity, as_of)
     text = "## Professional identity\n\n"
     text += table(["Player", "Age on report date", "Team / league", "Position", "Number", "Status"], [[
         p["full_name"], p["age"], f'{p["team"]} / {p["league"]}', " / ".join(p["positions"]),
         p["jersey"] if p["jersey"] is not None else "Not assigned", p["roster_status"]]])
+    if not full:
+        text += table(["Birth date", "Height (in shoes)", "Weight", "Shoots", "Prior program"], [[
+            p["date_of_birth"], p["height_in_shoes"], f'{p["weight_lb"]} lb', p["shooting_hand"], p["prior_program"]]])
+        text += f"NBA entry: {p['entry']}.\n\n"
     if full:
         text += table(["Identity field", "Recorded value"], [
             ["Birth date", p["date_of_birth"]], ["NBA entry", p["entry"]],
@@ -65,7 +85,8 @@ def identity_block(identity, as_of, profile_link=None, full=False):
             ["National-team eligibility", p["national_team_eligibility"]], ["Availability", p["availability"]],
             ["Physical measurements recorded", p["physical_profile_as_of"]], ["Professional status effective", p["as_of"]]])
     text += f"Identity as of {as_of}; status snapshot dated {p['as_of']}. "
-    text += "User-established alternate-history player; historical Wade's biography and results are not this record.\n\n"
+    text += ("Illustrative player identity; not a canonical career record.\n\n" if p.get("record_type") == "illustrative"
+             else "User-established alternate-history player; historical Wade's biography and results are not this record.\n\n")
     if profile_link:
         text += profile_link + "\n\n"
     return text
@@ -97,7 +118,9 @@ def coverage(a, as_of):
     return text
 
 
-def rollup(page, groups, heading="Period summary"):
+def rollup(page, groups, heading="Period summary", *, style=None, as_of=None):
+    if style is not None:
+        return style.per_game(page, groups, heading, as_of=as_of)
     rows = []
     for label, records, target in groups:
         a = aggregate(records)
@@ -107,7 +130,7 @@ def rollup(page, groups, heading="Period summary"):
     return f"### {heading}\n\n" + table(["Scope", "G", "MPG", "PPG", "RPG", "APG", "TS% (est.)"], rows)
 
 
-def game_log(page, records, detailed=False):
+def game_log(page, records, detailed=False, *, style=None, as_of=None):
     text = "### Game log\n\n"
     if not records:
         return text + "No game records in this scope.\n\n"
@@ -126,12 +149,16 @@ def game_log(page, records, detailed=False):
                           pct(a["rates"]["efg_pct"]), pct(a["rates"]["ts_pct"]),
                           fmt(line["plus_minus"], 0), line["pf"]])
     text += table(["Date / source", "Opponent", "Venue", "Result", "Participation", "MIN", "PTS", "REB", "AST", "STL", "BLK", "TOV"], rows)
+    if style is not None and len(records) > 1:
+        text += style.per_game(page, [(r["date"] or "Undated game", [r], r["note"],
+            {"start": r["date"] or None, "end": r["date"] or None, "competition": r["competition"], "season": r["season"]}) for r in records],
+            "Individual game boxes", decorate=False, as_of=as_of)
     if detailed and shots:
         text += "### Game shooting detail\n\n" + table(["Date / source", "FG", "2P", "3P", "FT", "eFG%", "TS% (est.)", "+/-", "PF"], shots)
     return text
 
 
-def detail_body(page, records):
+def detail_body(page, records, *, style=None, as_of=None):
     a = aggregate(records)
     rows = [["MIN", fmt(a["minutes"]), fmt(a["pg"]["minutes"]), "36.0" if a["minutes"] else "N/A"]]
     rows += [[label, fmt(a["totals"][key], 0), fmt(a["pg"][key]), fmt(a["per36"][key])] for label, key in METRICS]
@@ -157,13 +184,13 @@ def detail_body(page, records):
         splits += [("Wins", [r for r in closed if r.get("win") is True], None),
                    ("Losses", [r for r in closed if r.get("win") is False], None)]
         splits += [(f'Team: {team}', [r for r in closed if r["team"] == team], None) for team in sorted({r["team"] for r in closed})]
-        text += rollup(page, splits, "Splits")
+        text += rollup(page, splits, "Splits", style=style, as_of=as_of)
         text += "Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.\n\n"
     text += "### Game highs\n\n" + table(["Metric", "High", "Date / opponent (all ties)"], [
         [key.upper(), fmt(a["highs"][key], 0), "; ".join(link(page, r["note"], f'{r["date"]} vs {r["opponent"]}')
          for r in closed if a["highs"][key] is not None and r.get("line") and r["line"]["appeared"] and r["line"][key] == a["highs"][key]) or "N/A"]
         for key in ("pts", "reb", "ast", "stl", "blk", "tov")])
-    text += game_log(page, records, detailed=True)
+    text += game_log(page, records, detailed=True, style=style, as_of=as_of)
     text += "### Additional data needed\n\n"
     text += table(["Statistic family", "Current support", "Required evidence"], [
         ["Starts; plus/minus", "N/A unless supplied in the player box", "Explicit started and plus_minus fields"],
@@ -185,27 +212,28 @@ def honors_tail(page):
     return "### Awards and honors\n" + text[found.end():] if found else ""
 
 
-def report(page, title, identity, as_of, records, *, navigation=(), groups=(), comparison=(), detail=None, full=False, extra="", honors=""):
+def report(page, title, identity, as_of, records, *, navigation=(), groups=(), comparison=(), detail=None, full=False, extra="", honors="", style=None, scope=None):
     text = GENERATED + f"\n# {title}\n\n"
     if navigation:
         text += " · ".join(link(page, target, label) for label, target in navigation) + "\n\n"
-    text += identity_block(identity, as_of)
-    text += "## Statistics\n\n" + coverage(aggregate(records), as_of) + summary_line(aggregate(records))
+    text += identity_block(identity, as_of, style=style, page=page)
+    text += "## Statistics\n\n" + coverage(aggregate(records), as_of)
+    text += style.per_game(page, [("This scope", records, None, scope or {})], as_of=as_of) if style is not None else summary_line(aggregate(records))
     if detail:
         text += link(page, detail, "Full statistical detail: totals, per 36, shooting, efficiency, splits and source games") + "\n\n"
     text += extra
     if groups:
-        text += rollup(page, groups)
+        text += rollup(page, groups, style=style, as_of=as_of)
     if comparison:
-        text += rollup(page, comparison, "Period comparison")
+        text += rollup(page, comparison, "Period comparison", style=style, as_of=as_of)
     if full:
-        text += detail_body(page, records)
+        text += detail_body(page, records, style=style, as_of=as_of)
     else:
         a = aggregate(records)
         text += "### Shooting summary\n\n" + table(["FG%", "2P%", "3P%", "FT%", "eFG%", "TS% (est.)"], [
             [pct(a["rates"][k]) for k in ("fg_pct", "two_pct", "three_pct", "ft_pct", "efg_pct", "ts_pct")]])
         if not groups:
-            text += game_log(page, records)
+            text += game_log(page, records, style=style, as_of=as_of)
     return (text + honors).rstrip() + "\n"
 
 
@@ -223,12 +251,25 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
     as_of = max(s["current_date"] for s in states.values())
     records = collect_games(player, identity, as_of)
     outputs = {}
+    awards = load_awards(player, as_of)
+    style = ReportStyle(identity, awards, as_of, outputs, player / "assets/stat_reports", player)
+    render_report = partial(report, style=style)
+    period_rollup = partial(rollup, style=style)
     stats = player / "Stats_and_Awards"
     profile = player / "Professional_Identity.md"
+    award_page = player / "Awards.md"
     manual = root / "docs/player_statistics.md"
-    nav = [("Career", player / "README.md"), ("Professional identity", profile), ("Stat definitions", manual)]
+    nav = [("Career", player / "README.md"), ("Professional identity", profile), ("Earned honors", award_page), ("Stat definitions", manual)]
     outputs[profile] = GENERATED + "\n# Professional identity\n\n" + identity_block(identity, as_of,
-        link(profile, player / identity["source_profile"], "Established full player profile"), full=True)
+        link(profile, player / identity["source_profile"], "Established full player profile"), full=True, style=style, page=profile)
+    outputs[award_page] = GENERATED + "\n# Earned professional honors\n\n" + identity_block(identity, as_of, style=style, page=award_page)
+    outputs[award_page] += "## Statistics\n\n### Award register\n\n"
+    if awards:
+        outputs[award_page] += table(["Honor", "Competition", "Season / edition", "Period", "Announced", "Source"], [
+            [a["name"], LABELS.get(a["competition"], "Career"), a["season"], a["period_start"] + " to " + a["period_end"], a["awarded_on"], style.award_text(award_page, [a])] for a in awards])
+    else:
+        outputs[award_page] += "No earned professional honors are recorded at this career checkpoint. Nominees, open ballots and historical Wade's achievements are not earned awards in this simulation.\n\n"
+    outputs[award_page] += link(award_page, manual, "Award source and date rules") + "\n"
 
     for season in seasons:
         year = season.name
@@ -262,16 +303,17 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
             period_nav += [("Miami", stats / "Team" / same_period / "Team_Stats.md"),
                            ("NBA players", stats / "League" / same_period / "League_Stats.md"),
                            ("NBA awards", stats / "League" / same_period / "League_Awards.md")]
-            comparison = [(label, scope, None), ("Season through this month", select(regular, end=end), None)]
+            comparison = [(label, scope, None), ("Season through this month", select(regular, end=end), None,
+                {"start": f"{year[:4]}-06-01", "end": end, "competition": "regular", "season": year})]
             if len(months) > 1:
                 comparison.insert(1, months[-2])
             for dest in (month_dir, regular_dir / spec["folder"]):
                 page = dest / "README.md"
-                outputs[page] = report(page, f"{label} | NBA regular season", identity, min(cutoff, end), scope,
+                outputs[page] = render_report(page, f"{label} | NBA regular season", identity, min(cutoff, end), scope,
                     navigation=period_nav, groups=weeks, comparison=comparison, detail=month_dir / "Stat_Detail.md",
                     honors=honors_tail(page) if dest == month_dir else "")
             detail = month_dir / "Stat_Detail.md"
-            outputs[detail] = report(detail, f"{label} | Detailed statistics", identity, min(cutoff, end), scope,
+            outputs[detail] = render_report(detail, f"{label} | Detailed statistics", identity, min(cutoff, end), scope,
                                       navigation=[("Month summary", month_dir / "README.md"), *nav], full=True)
 
         for i, (week_dir, source_dir, title, scope, month_to_date, season_to_date, period_cutoff) in enumerate(weeks_flat):
@@ -284,16 +326,18 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
                 week_nav.append(("Previous week", weeks_flat[i-1][0] / "README.md"))
             if i + 1 < len(weeks_flat):
                 week_nav.append(("Next week", weeks_flat[i+1][0] / "README.md"))
-            comparison = [("This week", scope, None), ("Month through this week", month_to_date, None),
-                          ("Season through this week", season_to_date, None)]
+            comparison = [("This week", scope, None), ("Month through this week", month_to_date, None,
+                {"start": title.split(": ", 1)[1][:8] + "01", "end": title.rsplit(" to ", 1)[1], "competition": "regular", "season": year}),
+                ("Season through this week", season_to_date, None,
+                {"start": f"{year[:4]}-06-01", "end": title.rsplit(" to ", 1)[1], "competition": "regular", "season": year})]
             if i:
                 comparison.insert(1, ("Previous week", weeks_flat[i-1][3], weeks_flat[i-1][0] / "README.md"))
             for dest in (week_dir, source_dir):
                 page = dest / "README.md"
-                outputs[page] = report(page, title, identity, period_cutoff, scope, navigation=week_nav,
+                outputs[page] = render_report(page, title, identity, period_cutoff, scope, navigation=week_nav,
                     comparison=comparison, detail=week_dir / "Stat_Detail.md", honors=honors_tail(page) if dest == week_dir else "")
             detail = week_dir / "Stat_Detail.md"
-            outputs[detail] = report(detail, f"{title} | Detailed statistics", identity, period_cutoff, scope,
+            outputs[detail] = render_report(detail, f"{title} | Detailed statistics", identity, period_cutoff, scope,
                                       navigation=[("Week summary", week_dir / "README.md"), *nav], full=True)
 
         year_nav = nav + [("Season overview", season / "README.md"),
@@ -302,17 +346,17 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
                          ("NBA awards", stats / "League" / year / "League_Awards.md")]
         for dest in (stats_year, regular_dir):
             page = dest / "README.md"
-            outputs[page] = report(page, f"{year} | NBA regular season", identity, cutoff, regular,
+            outputs[page] = render_report(page, f"{year} | NBA regular season", identity, cutoff, regular,
                 navigation=year_nav, groups=months, detail=stats_year / "Stat_Detail.md", honors=honors_tail(page) if dest == stats_year else "")
         detail = stats_year / "Stat_Detail.md"
-        outputs[detail] = report(detail, f"{year} | Regular-season detail", identity, cutoff, regular,
+        outputs[detail] = render_report(detail, f"{year} | Regular-season detail", identity, cutoff, regular,
                                   navigation=year_nav, full=True)
         phases = [("summer_league", "02_Summer_League"), ("preseason", "05_Preseason"), ("playoff", "08_Playoffs")]
         if play_in_format(year):
             phases.append(("play_in", "07_Play_In_Tournament"))
         else:
             page = season / "07_Play_In_Tournament/README.md"
-            outputs[page] = GENERATED + f"\n# {year} | Play-In\n\n" + identity_block(identity, cutoff) + "## Statistics\n\nNot applicable in this season. This retained navigation path owns no games or statistical totals.\n"
+            outputs[page] = GENERATED + f"\n# {year} | Play-In\n\n" + identity_block(identity, cutoff, style=style, page=page) + "## Statistics\n\nNot applicable in this season. This retained navigation path owns no games or statistical totals.\n"
         phase_groups = []
         for kind, folder in phases:
             phase = season / folder
@@ -324,10 +368,10 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
                     rr = [r for r in subset if rd in r["note"].parents]
                     groups.append((rnd["name"], rr, rd / "README.md"))
                     page = rd / "README.md"
-                    outputs[page] = report(page, f"{year} | {rnd['name']}", identity, cutoff, rr,
+                    outputs[page] = render_report(page, f"{year} | {rnd['name']}", identity, cutoff, rr,
                         navigation=[("Playoffs", phase / "README.md"), *nav], detail=rd / "Stat_Detail.md")
                     detail = rd / "Stat_Detail.md"
-                    outputs[detail] = report(detail, f"{year} | {rnd['name']} detail", identity, cutoff, rr,
+                    outputs[detail] = render_report(detail, f"{year} | {rnd['name']} detail", identity, cutoff, rr,
                         navigation=[("Series summary", page), *nav], full=True)
             page = phase / "README.md"
             extra = "National and club exhibitions, preseason, Play-In and playoffs stay outside NBA regular-season totals.\n\n"
@@ -335,10 +379,10 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
                 extra = "Summer League is its own competition. Record the actual event, roster, game length and overtime format from the applicable year; participation is not assumed.\n\n"
             if kind == "play_in" and play_in_format(year) == "2020_restart":
                 extra = "2019-20 restart format: conditional 8-versus-9 games; do not apply the later 7-10 format.\n\n"
-            outputs[page] = report(page, f"{year} | {LABELS[kind]}", identity, cutoff, subset,
+            outputs[page] = render_report(page, f"{year} | {LABELS[kind]}", identity, cutoff, subset,
                 navigation=nav, groups=groups, detail=phase / "Stat_Detail.md", extra=extra)
             detail = phase / "Stat_Detail.md"
-            outputs[detail] = report(detail, f"{year} | {LABELS[kind]} detail", identity, cutoff, subset,
+            outputs[detail] = render_report(detail, f"{year} | {LABELS[kind]} detail", identity, cutoff, subset,
                 navigation=[("Competition summary", page), *nav], full=True)
             phase_groups.append((LABELS[kind], subset, page))
         phase_groups.insert(2, (LABELS["regular"], regular, regular_dir / "README.md"))
@@ -347,18 +391,19 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
             cup_games = [r for r in year_records if r["cup_stage"]]
             championship = select(year_records, competition="nba_cup_championship")
             page = cup / "README.md"
-            outputs[page] = GENERATED + f"\n# {year} | NBA Cup\n\n" + identity_block(identity, cutoff) + "## Statistics\n\n"
+            outputs[page] = GENERATED + f"\n# {year} | NBA Cup\n\n" + identity_block(identity, cutoff, style=style, page=page) + "## Statistics\n\n"
             outputs[page] += "The inaugural event is in 2023-24. Group, quarterfinal and semifinal games reference their original regular-season records. The championship is separate and never enters NBA regular-season or playoff totals.\n\n"
-            groups = [(stage.title(), [r for r in cup_games if r["cup_stage"] == stage], None) for stage in ("group", "quarterfinal", "semifinal", "championship")]
-            outputs[page] += rollup(page, groups, "By stage (overlapping view of regular-season games)") + game_log(page, cup_games, detailed=True)
+            groups = [(stage.title(), [r for r in cup_games if r["cup_stage"] == stage], None,
+                {"competition": "nba_cup_championship" if stage == "championship" else "regular", "honors": stage == "championship"}) for stage in ("group", "quarterfinal", "semifinal", "championship")]
+            outputs[page] += period_rollup(page, groups, "By stage (overlapping view of regular-season games)", as_of=cutoff) + game_log(page, cup_games, detailed=True, style=style, as_of=cutoff)
             cp = cup / "Championship/README.md"
-            outputs[cp] = report(cp, f"{year} | NBA Cup championship", identity, cutoff, championship,
+            outputs[cp] = render_report(cp, f"{year} | NBA Cup championship", identity, cutoff, championship,
                 navigation=[("Cup stages", page), *nav], full=True)
             phase_groups.append(("Cup championship only", championship, cp))
         page = season / "README.md"
-        outputs[page] = GENERATED + f"\n# {year} | Player season\n\n" + identity_block(identity, cutoff, link(page, profile, "Complete professional identity"))
-        outputs[page] += "## Statistics\n\n" + f"Report cutoff: **{cutoff}**. Each row is a separate competition; do not add the rates.\n\n" + rollup(page, phase_groups, "Competition summary")
-        outputs[page] += rollup(page, months, "Regular season by month")
+        outputs[page] = GENERATED + f"\n# {year} | Player season\n\n" + identity_block(identity, cutoff, link(page, profile, "Complete professional identity"), style=style, page=page)
+        outputs[page] += "## Statistics\n\n" + f"Report cutoff: **{cutoff}**. Each row is a separate competition; do not add the rates.\n\n" + period_rollup(page, phase_groups, "Competition summary", as_of=cutoff)
+        outputs[page] += period_rollup(page, months, "Regular season by month", as_of=cutoff)
         outputs[page] += "### Career records\n\n" + " · ".join(link(page, season / folder / "README.md", label) for label, folder in
             (("Team state", "00_Team"), ("Free agency", "01_Free_Agency"), ("Offseason", "03_Offseason"), ("Training camp", "04_Training_Camp"), ("Draft", "09_Draft"))) + "\n"
 
@@ -368,10 +413,10 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
         folder = national / family
         subset = [r for r in national_records if folder in r["note"].parents]
         page = folder / "README.md"
-        outputs[page] = GENERATED + f"\n# {family.replace('_', ' ')} | Player statistics\n\n" + identity_block(identity, as_of) + "## Statistics\n\n"
+        outputs[page] = GENERATED + f"\n# {family.replace('_', ' ')} | Player statistics\n\n" + identity_block(identity, as_of, style=style, page=page) + "## Statistics\n\n"
         outputs[page] += "Five-on-five only. Qualifiers, final tournaments and friendlies remain separate. An empty record does not imply selection or eligibility.\n\n"
-        groups = [(LABELS[k], select(subset, competition=k), None) for (f, _), k in NATIONAL_PATHS.items() if f == family]
-        outputs[page] += rollup(page, groups, "Competition records")
+        groups = [(LABELS[k], select(subset, competition=k), None, {"competition": k}) for (f, _), k in NATIONAL_PATHS.items() if f == family]
+        outputs[page] += period_rollup(page, groups, "Competition records")
         if not subset:
             outputs[page] += "No national-team game or tournament appearance recorded.\n\n"
         for edition in sorted({r["season"] for r in subset}):
@@ -385,58 +430,60 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
                 stage_dir = edition_dir / stage
                 sp = stage_dir / "README.md"
                 edition_rows.append((LABELS[kind], sr, sp))
-                outputs[sp] = report(sp, f"{edition} | {LABELS[kind]}", identity, as_of, sr,
+                outputs[sp] = render_report(sp, f"{edition} | {LABELS[kind]}", identity, as_of, sr,
                     navigation=[("Edition", edition_page), ("National career", national / "README.md"), *nav],
                     detail=stage_dir / "Stat_Detail.md", extra="Representing: " + ", ".join(sorted({r["team"] for r in sr})) + ".\n\n" if sr else "No games recorded for this stage.\n\n")
                 detail = stage_dir / "Stat_Detail.md"
-                outputs[detail] = report(detail, f"{edition} | {LABELS[kind]} detail", identity, as_of, sr,
+                outputs[detail] = render_report(detail, f"{edition} | {LABELS[kind]} detail", identity, as_of, sr,
                     navigation=[("Stage summary", sp), *nav], full=True)
                 # Extra round/window folders get their own local summary when populated.
                 for local in sorted({parent for r in sr for parent in r["note"].parents if stage_dir in parent.parents}):
                     lr = [r for r in sr if local in r["note"].parents]
                     lp = local / "README.md"
-                    outputs[lp] = report(lp, f"{edition} | {local.name.replace('_', ' ')}", identity, as_of, lr,
+                    outputs[lp] = render_report(lp, f"{edition} | {local.name.replace('_', ' ')}", identity, as_of, lr,
                         navigation=[("Tournament stage", sp), *nav], full=True)
-            outputs[edition_page] = GENERATED + f"\n# {edition} | {family.replace('_', ' ')}\n\n" + identity_block(identity, as_of) + "## Statistics\n\n" + rollup(edition_page, edition_rows)
+            outputs[edition_page] = GENERATED + f"\n# {edition} | {family.replace('_', ' ')}\n\n" + identity_block(identity, as_of, style=style, page=edition_page) + "## Statistics\n\n" + period_rollup(edition_page, edition_rows)
             outputs[page] += link(page, edition_page, edition) + "\n\n"
         outputs[page] += link(page, manual, "Event folders, identity and data requirements") + "\n"
     np = national / "README.md"
-    outputs[np] = GENERATED + "\n# National-team career\n\n" + identity_block(identity, as_of) + "## Statistics\n\n"
+    outputs[np] = GENERATED + "\n# National-team career\n\n" + identity_block(identity, as_of, style=style, page=np) + "## Statistics\n\n"
     outputs[np] += "FIBA is the governing body; the World Cup, Olympic tournament, continental events and friendlies are distinct competitions. No national selection is assumed.\n\n"
-    outputs[np] += rollup(np, [(LABELS[k], select(national_records, competition=k), national / f / "README.md") for (f, _), k in NATIONAL_PATHS.items()], "Competition records")
+    outputs[np] += period_rollup(np, [(LABELS[k], select(national_records, competition=k), national / f / "README.md", {"competition": k}) for (f, _), k in NATIONAL_PATHS.items()], "Competition records")
 
     for page in (player / "README.md", stats / "README.md"):
         outputs[page] = GENERATED + "\n# Dwyane Wade | Player career\n\n" + identity_block(identity, as_of,
-            link(page, profile, "Complete professional identity")) + "## Statistics\n\n"
+            link(page, profile, "Complete professional identity"), style=style, page=page) + "## Statistics\n\n"
         outputs[page] += f"Career cutoff: **{as_of}**. Club competitions and national-team events have separate records.\n\n"
         for kind in ("regular", "playoff"):
             groups = [(s.name, select(records, competition=kind, season=s.name),
                        stats / s.name / "README.md" if kind == "regular" else s / "08_Playoffs/README.md") for s in seasons]
             groups.append(("Career total", select(records, competition=kind), None))
-            outputs[page] += rollup(page, groups, LABELS[kind])
+            outputs[page] += period_rollup(page, groups, LABELS[kind])
         outputs[page] += "### Browse\n\n" + " · ".join(link(page, s / "README.md", s.name + " all competitions") for s in seasons) + "\n\n"
-        outputs[page] += " · ".join(link(page, p, label) for label, p in [("National team / FIBA", np),
+        outputs[page] += " · ".join(link(page, p, label) for label, p in [("Earned honors", award_page), ("National team / FIBA", np),
             ("Stats definitions", manual), ("Filled example", root / "docs/examples/player_stats_preview.md"),
             ("Miami records", stats / "Team/README.md"), ("League records and awards", stats / "League/README.md")]) + "\n"
     overview = player / "assets/career_overview.svg"
     outputs[overview] = career_overview(identity, as_of, aggregate(select(records, competition="regular")),
                                         aggregate(select(records, competition="playoff")))
     page = player / "README.md"
-    text_version = outputs[page].split("## Professional identity", 1)[1]
-    navigation = [("Professional identity", profile), ("Career statistics", stats / "README.md"),
+    statistics = outputs[page].split("## Statistics\n\n", 1)[1]
+    navigation = [("Professional identity", profile), ("Career statistics", stats / "README.md"), ("Earned honors", award_page),
                   ("National team / FIBA", np)]
     outputs[page] = GENERATED + "\n# Dwyane Wade | Player career\n\n"
     outputs[page] += "!" + link(page, overview, "Player career overview: professional identity, NBA regular-season statistics and playoff statistics") + "\n\n"
+    outputs[page] += style.banner(page, as_of)
     outputs[page] += " · ".join(link(page, target, label) for label, target in navigation) + "\n\n"
     outputs[page] += "**Season reports:** " + " · ".join(link(page, s / "README.md", s.name) for s in seasons) + "\n\n"
-    outputs[page] += "<details>\n<summary>Professional identity and career statistics: text version</summary>\n\n"
-    outputs[page] += "## Professional identity" + text_version.rstrip() + "\n\n</details>\n"
+    outputs[page] += "<details>\n<summary>Professional identity: text version</summary>\n\n"
+    outputs[page] += identity_block(identity, as_of) + "</details>\n\n## Statistics\n\n" + statistics
     # Preserve front matter and decisions on existing game notes; own only this block.
     for record in records:
         page = record["note"]
         cutoff = min(record["date"] or as_of, as_of)
-        block = "<!-- player-report:start -->\n" + identity_block(identity, cutoff) + "## Statistics\n\n"
-        block += coverage(aggregate([record]), cutoff) + detail_body(page, [record]) + "<!-- player-report:end -->"
+        block = "<!-- player-report:start -->\n" + identity_block(identity, cutoff, style=style, page=page) + "## Statistics\n\n"
+        block += coverage(aggregate([record]), cutoff) + style.per_game(page, [("This game", [record], None)], as_of=cutoff)
+        block += detail_body(page, [record], style=style, as_of=cutoff) + "<!-- player-report:end -->"
         old = page.read_text(encoding="utf-8")
         if "<!-- player-report:start -->" in old:
             outputs[page] = re.sub(r"<!-- player-report:start -->.*?<!-- player-report:end -->", lambda _: block, old, flags=re.S)

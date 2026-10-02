@@ -8,11 +8,31 @@
 
 ## Professional identity
 
+![Player personal information and earned career honors through 2003-11-12](assets/personal_2003-11-12.svg)
+
+<details>
+<summary>Personal information and earned honors: text version</summary>
+
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
 | Example Player | 19 | Example Club / NBA | SG / PG | 7 | Active (fictional example) |
 
-Identity as of 2003-11-12; status snapshot dated 2003-10-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+| Birth date | Height (in shoes) | Weight | Shoots | Prior program |
+| --- | --- | --- | --- | --- |
+| 1984-01-17 | 6 ft 6 in | 220 lb | Right | Example University |
+
+NBA entry: Example draft entry: round 1, pick 5.
+
+Identity as of 2003-11-12; status snapshot dated 2003-10-01. Illustrative player identity; not a canonical career record.
+
+### Earned career honors
+
+| Honor | Period | Announced | Decision record |
+| --- | --- | --- | --- |
+| Rookie of the Month | 2003-10-01 to 2003-10-31 | 2003-11-01 | ROTM (example) |
+| Player of the Week | 2003-11-01 to 2003-11-07 | 2003-11-08 | POTW (example) |
+
+</details>
 
 ## Statistics
 
@@ -20,18 +40,32 @@ As of **2003-11-12**: 7 closed games; 7/7 have player participation and box cove
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
-| G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 6 | 6 | 34.7 | 23.2 | 6.0 | 7.5 | 1.8 | 0.8 | 3.2 |
+### Per game
+
+![Per-game player statistics](assets/per_game.svg)
+
+| Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| This scope | 19 | Example Club | NBA | SG / PG | 6 | 6 | 34.7 | 8.5 | 17.3 | .490 | 1.2 | 3.2 | .368 | 7.3 | 14.2 | .518 | .524 | 5.0 | 6.0 | .833 | 1.5 | 4.5 | 6.0 | 7.5 | 1.8 | 0.8 | 3.2 | 2.7 | 23.2 | .580 | ROTM (example), POTW (example) |
+
+G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2003-11-12, filed by the honor's period-end date; the banner shows career honors known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](sample_season_detail.md)
 
 ### Period summary
 
-| Scope | G | MPG | PPG | RPG | APG | TS% (est.) |
-| --- | --- | --- | --- | --- | --- | --- |
-| October | 1 | 34.0 | 22.0 | 5.0 | 6.0 | 56.0% |
-| [November](sample_month.md) | 5 | 34.8 | 23.4 | 6.2 | 7.8 | 58.4% |
+![Per-game player statistics](assets/per_game.svg)
+
+| Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| October | 19 | Example Club | NBA | SG / PG | 1 | 1 | 34.0 | 8.0 | 17.0 | .471 | 1.0 | 3.0 | .333 | 7.0 | 14.0 | .500 | .500 | 5.0 | 6.0 | .833 | 1.0 | 4.0 | 5.0 | 6.0 | 2.0 | 1.0 | 3.0 | 2.0 | 22.0 | .560 | ROTM (example) |
+| [November](sample_month.md) | 19 | Example Club | NBA | SG / PG | 5 | 5 | 34.8 | 8.6 | 17.4 | .494 | 1.2 | 3.2 | .375 | 7.4 | 14.2 | .521 | .529 | 5.0 | 6.0 | .833 | 1.6 | 4.6 | 6.2 | 7.8 | 1.8 | 0.8 | 3.2 | 2.8 | 23.4 | .584 | POTW (example) |
+
+G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2003-11-12, filed by the honor's period-end date; the banner shows career honors known at the page's identity cutoff.
 
 ### Shooting summary
 

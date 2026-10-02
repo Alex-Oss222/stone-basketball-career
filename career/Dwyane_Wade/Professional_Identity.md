@@ -4,6 +4,8 @@
 
 ## Professional identity
 
+![Player personal information and earned career honors through 2003-06-26](assets/stat_reports/personal_2003-06-26.svg)
+
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
 | Dwyane Tyrone Wade Jr. | 19 | Miami Heat / NBA | SG / PG | Not assigned | Draft rights; unsigned |
@@ -30,3 +32,7 @@
 Identity as of 2003-06-26; status snapshot dated 2003-06-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Established full player profile](Dwyane_Wade_Player_Profile.md)
+
+### Earned career honors
+
+No earned professional honors recorded by this page's identity cutoff.

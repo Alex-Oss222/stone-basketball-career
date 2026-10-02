@@ -4,11 +4,28 @@
 
 ## Professional identity
 
+![Player personal information and earned career honors through 2003-06-26](../../assets/stat_reports/personal_2003-06-26.svg)
+
+<details>
+<summary>Personal information and earned honors: text version</summary>
+
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
 | Dwyane Tyrone Wade Jr. | 19 | Miami Heat / NBA | SG / PG | Not assigned | Draft rights; unsigned |
 
+| Birth date | Height (in shoes) | Weight | Shoots | Prior program |
+| --- | --- | --- | --- | --- |
+| 1984-01-17 | 6 ft 6 in | 220 lb | Right | UConn (simulation canon) |
+
+NBA entry: 2003 draft, round 1, No. 5 overall, Miami Heat.
+
 Identity as of 2003-06-26; status snapshot dated 2003-06-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+
+### Earned career honors
+
+No earned professional honors recorded by this page's identity cutoff.
+
+</details>
 
 ## Statistics
 
@@ -16,10 +33,14 @@ Five-on-five only. Qualifiers, final tournaments and friendlies remain separate.
 
 ### Competition records
 
-| Scope | G | MPG | PPG | RPG | APG | TS% (est.) |
-| --- | --- | --- | --- | --- | --- | --- |
-| Continental qualifiers | 0 | N/A | N/A | N/A | N/A | N/A |
-| Continental final tournament | 0 | N/A | N/A | N/A | N/A | N/A |
+![Per-game player statistics](../../assets/stat_reports/per_game.svg)
+
+| Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Continental qualifiers | 19 | Not selected | FIBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Continental final tournament | 19 | Not selected | FIBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+
+G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
 No national-team game or tournament appearance recorded.
 

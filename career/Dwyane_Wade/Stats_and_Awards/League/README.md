@@ -2,7 +2,13 @@
 
 [Stats hub](../README.md) · [2003-04 players](2003-04/League_Stats.md) · [2003-04 awards](2003-04/League_Awards.md) · [Player registry](player_registry.json)
 
-The league pages cover 407 registered players. All entries remain available in six position groups, with production and shooting shown separately. A closed group keeps the page short; opening it reveals every player in that position, alphabetically.
+The league pages cover 407 registered players. All entries remain available in six position groups, with the complete per-game table in the same order as the player pages. A closed group keeps the page short; opening it reveals every player in that position, alphabetically.
+
+![NBA per-game statistics](assets/per_game.svg)
+
+Season, month and week pages include age, recorded club or draft rights, league, position, games, starts, minutes, all shooting makes and attempts, shooting efficiency, offensive and defensive rebounds, assists, steals, blocks, turnovers, fouls and points. G and GS are counts; the other counting columns are per appearance. Shooting uses .500 = 50.0%. Identity comes from the dated registry; its birth dates are available in the registry link. The red-and-black section header has no awards banner; award decisions remain in their linked records.
+
+An unavailable column stays N/A until closed branch game evidence supplies it. The presentation formatter (`scripts/format_league_reports.py`) preserves existing period values and navigation; it does not collect engine results, reconstruct attempts from rounded averages, or populate leaders. League-wide result aggregation remains on the build roadmap.
 
 ## Coverage and rankings
 

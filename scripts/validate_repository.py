@@ -175,7 +175,7 @@ def report_errors(root, player, team):
         for header,rows in tables:
             require(errors,all(len(row)==len(header) for row in rows),f"{label}: table column mismatch")
         if page.name in {"League_Stats.md","Team_Stats.md"}:
-            production=[row for header,rows in tables if header[:1]==["Player"] and "PPG" in header for row in rows]
+            production=[row for header,rows in tables if header[:1]==["Player"] and ("PPG" in header or "PTS" in header) for row in rows]
             actual=Counter(row[0] for row in production)
             require(errors,all(count==1 for count in actual.values()),f"{label}: duplicate player production rows")
             # Completed Miami periods retain former players; today's roster is not their source.
@@ -188,8 +188,10 @@ def report_errors(root, player, team):
                 group=re.search(rf"<summary>{pos} ·.*?</summary>(.*?)</details>",text,re.S)
                 require(errors,group is not None,f"{label}: missing {pos} position group")
                 if group:
-                    names=Counter(row[0] for header,rows in markdown_tables(group[1]) if "PPG" in header for row in rows)
+                    names=Counter(row[0] for header,rows in markdown_tables(group[1]) if "PPG" in header or "PTS" in header for row in rows)
                     require(errors,names==Counter(p["name"] for p in registry if p["position"]==pos),f"{label}: {pos} membership mismatch")
+                    columns={column for header,_ in markdown_tables(group[1]) for column in header}
+                    require(errors,{"Age","Pos","GS","MP","FG","FGA","3P","3PA","2P","2PA","eFG%","FT","FTA","ORB","DRB","TRB","PF","PTS"}<=columns,f"{label}: incomplete league per-game columns")
         if page.name=="League_Awards.md" and page.parent.name!="2003-04":
             shortlists=[rows for header,rows in tables if header[:2]==["Conference","Rank slot"]]
             expected_count=1 if page.parent.name.startswith("Week_") else 2
