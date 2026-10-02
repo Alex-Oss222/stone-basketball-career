@@ -25,3 +25,11 @@ Regular season and preseason for 2003-04 through 2013-14. Sources: regular seaso
 | 2013-14 | 1,230 | 108 | New Orleans Pelicans |
 
 Hindsight caution: a schedule as played reflects in-season events. The 2012-13 file already lacks the cancelled Indiana at Boston game, and postponed games sit on their played dates. Before the career reaches a season, decide whether the published schedule should be restored for such cases. Season-specific counts are encoded in `runtime/schedule.py` (`SEASON_EXCEPTIONS`).
+
+## Careers and real rosters (options C and D)
+
+- `careers/nba_player_careers.json`: every real player's season rates, 2003-04 to 2013-14 (engine only).
+- `<year>/league/nba_<YYYY>_<YY>_team_rosters.json`: every non-Miami club's real roster, games, starts and minutes for that season (world model D). Miami is simulated and excluded.
+
+Both come from Basketball-Reference totals and advanced tables via `scripts/import_careers.py`, which removes the historical Dwyane Wade and the Awards column. Neither file is read by Miami's front office or shown on cards before its season is played.
+

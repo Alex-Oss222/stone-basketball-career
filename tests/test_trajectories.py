@@ -118,10 +118,12 @@ class TrajectoryTests(unittest.TestCase):
                                                                        "seasons": {"2003-04": star_row()}}}}
         self.assertTrue(any("protagonist" in e for e in careers_errors(data)))
 
-    def test_no_careers_file_means_no_trajectories(self):
+    def test_repository_careers_file_is_valid_and_excludes_wade(self):
         self.assertEqual(trajectory_errors(ROOT), [])
-        self.assertFalse((ROOT / CAREERS_PATH).exists())
-
+        careers = read_json(ROOT / CAREERS_PATH)
+        self.assertNotIn("wadedw01", careers["players"])
+        self.assertNotIn("wadedw01", json.dumps(careers))
+        self.assertEqual(len(careers["players"]["jamesle01"]["seasons"]), 11)
 
 if __name__ == "__main__":
     unittest.main()

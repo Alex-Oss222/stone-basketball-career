@@ -1,0 +1,4355 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2010-11",
+ "kind": "team_rosters",
+ "source": "Basketball-Reference season totals and advanced tables (https://www.basketball-reference.com/leagues/NBA_<year>_totals.html and _advanced.html)",
+ "usage": "Real rosters and minutes of every non-Miami club for this season (world model D). Engine and roster world only: never read by Miami's front office or shown on cards before the season is played. Miami is simulated and excluded.",
+ "clubs": {
+  "Atlanta Hawks": {
+   "code": "ATL",
+   "players": [
+    {
+     "player_id": "Al Horford",
+     "bbr_id": "horfoal01",
+     "position": "C",
+     "games": 77,
+     "games_started": 77,
+     "minutes": 2704
+    },
+    {
+     "player_id": "Josh Smith",
+     "bbr_id": "smithjo03",
+     "position": "PF",
+     "games": 77,
+     "games_started": 77,
+     "minutes": 2645
+    },
+    {
+     "player_id": "Joe Johnson",
+     "bbr_id": "johnsjo02",
+     "position": "SG",
+     "games": 72,
+     "games_started": 72,
+     "minutes": 2554
+    },
+    {
+     "player_id": "Jamal Crawford",
+     "bbr_id": "crawfja01",
+     "position": "SG",
+     "games": 76,
+     "games_started": 0,
+     "minutes": 2297
+    },
+    {
+     "player_id": "Marvin Williams",
+     "bbr_id": "willima02",
+     "position": "SF",
+     "games": 65,
+     "games_started": 52,
+     "minutes": 1865
+    },
+    {
+     "player_id": "Mike Bibby",
+     "bbr_id": "bibbymi01",
+     "position": "PG",
+     "games": 56,
+     "games_started": 56,
+     "minutes": 1674
+    },
+    {
+     "player_id": "Zaza Pachulia",
+     "bbr_id": "pachuza01",
+     "position": "C",
+     "games": 79,
+     "games_started": 7,
+     "minutes": 1244
+    },
+    {
+     "player_id": "Jeff Teague",
+     "bbr_id": "teaguje01",
+     "position": "PG",
+     "games": 70,
+     "games_started": 7,
+     "minutes": 963
+    },
+    {
+     "player_id": "Maurice Evans",
+     "bbr_id": "evansma01",
+     "position": "SF",
+     "games": 47,
+     "games_started": 12,
+     "minutes": 837
+    },
+    {
+     "player_id": "Kirk Hinrich",
+     "bbr_id": "hinriki01",
+     "position": "PG",
+     "games": 24,
+     "games_started": 22,
+     "minutes": 686
+    },
+    {
+     "player_id": "Damien Wilkins",
+     "bbr_id": "wilkida02",
+     "position": "SF",
+     "games": 52,
+     "games_started": 0,
+     "minutes": 676
+    },
+    {
+     "player_id": "Josh Powell",
+     "bbr_id": "poweljo01",
+     "position": "PF",
+     "games": 54,
+     "games_started": 0,
+     "minutes": 653
+    },
+    {
+     "player_id": "Jason Collins",
+     "bbr_id": "collija04",
+     "position": "C",
+     "games": 49,
+     "games_started": 28,
+     "minutes": 593
+    },
+    {
+     "player_id": "Jordan Crawford",
+     "bbr_id": "crawfjo02",
+     "position": "SG",
+     "games": 16,
+     "games_started": 0,
+     "minutes": 160
+    },
+    {
+     "player_id": "Etan Thomas",
+     "bbr_id": "thomaet01",
+     "position": "C",
+     "games": 13,
+     "games_started": 0,
+     "minutes": 82
+    },
+    {
+     "player_id": "Hilton Armstrong",
+     "bbr_id": "armsthi01",
+     "position": "C",
+     "games": 12,
+     "games_started": 0,
+     "minutes": 76
+    },
+    {
+     "player_id": "Pape Sy",
+     "bbr_id": "sypa01",
+     "position": "SF",
+     "games": 3,
+     "games_started": 0,
+     "minutes": 21
+    }
+   ]
+  },
+  "Boston Celtics": {
+   "code": "BOS",
+   "players": [
+    {
+     "player_id": "Ray Allen",
+     "bbr_id": "allenra02",
+     "position": "SG",
+     "games": 80,
+     "games_started": 80,
+     "minutes": 2890
+    },
+    {
+     "player_id": "Paul Pierce",
+     "bbr_id": "piercpa01",
+     "position": "SF",
+     "games": 80,
+     "games_started": 80,
+     "minutes": 2774
+    },
+    {
+     "player_id": "Rajon Rondo",
+     "bbr_id": "rondora01",
+     "position": "PG",
+     "games": 68,
+     "games_started": 68,
+     "minutes": 2527
+    },
+    {
+     "player_id": "Glen Davis",
+     "bbr_id": "davisgl01",
+     "position": "C",
+     "games": 78,
+     "games_started": 13,
+     "minutes": 2298
+    },
+    {
+     "player_id": "Kevin Garnett",
+     "bbr_id": "garneke01",
+     "position": "PF",
+     "games": 71,
+     "games_started": 71,
+     "minutes": 2220
+    },
+    {
+     "player_id": "Nate Robinson",
+     "bbr_id": "robinna01",
+     "position": "PG",
+     "games": 55,
+     "games_started": 11,
+     "minutes": 983
+    },
+    {
+     "player_id": "Marquis Daniels",
+     "bbr_id": "daniema01",
+     "position": "SF",
+     "games": 49,
+     "games_started": 0,
+     "minutes": 938
+    },
+    {
+     "player_id": "Shaquille O'Neal",
+     "bbr_id": "onealsh01",
+     "position": "C",
+     "games": 37,
+     "games_started": 36,
+     "minutes": 752
+    },
+    {
+     "player_id": "Jeff Green",
+     "bbr_id": "greenje02",
+     "position": "SF",
+     "games": 26,
+     "games_started": 2,
+     "minutes": 612
+    },
+    {
+     "player_id": "Nenad Krstić",
+     "bbr_id": "krstine01",
+     "position": "C",
+     "games": 24,
+     "games_started": 20,
+     "minutes": 553
+    },
+    {
+     "player_id": "Von Wafer",
+     "bbr_id": "wafervo01",
+     "position": "SG",
+     "games": 58,
+     "games_started": 2,
+     "minutes": 553
+    },
+    {
+     "player_id": "Semih Erden",
+     "bbr_id": "erdense01",
+     "position": "C",
+     "games": 37,
+     "games_started": 7,
+     "minutes": 531
+    },
+    {
+     "player_id": "Delonte West",
+     "bbr_id": "westde01",
+     "position": "PG",
+     "games": 24,
+     "games_started": 2,
+     "minutes": 453
+    },
+    {
+     "player_id": "Jermaine O'Neal",
+     "bbr_id": "onealje01",
+     "position": "C",
+     "games": 24,
+     "games_started": 10,
+     "minutes": 431
+    },
+    {
+     "player_id": "Kendrick Perkins",
+     "bbr_id": "perkike01",
+     "position": "C",
+     "games": 12,
+     "games_started": 7,
+     "minutes": 313
+    },
+    {
+     "player_id": "Luke Harangody",
+     "bbr_id": "haranlu01",
+     "position": "PF",
+     "games": 28,
+     "games_started": 0,
+     "minutes": 241
+    },
+    {
+     "player_id": "Carlos Arroyo",
+     "bbr_id": "arroyca01",
+     "position": "PG",
+     "games": 15,
+     "games_started": 1,
+     "minutes": 190
+    },
+    {
+     "player_id": "Troy Murphy",
+     "bbr_id": "murphtr01",
+     "position": "PF",
+     "games": 17,
+     "games_started": 0,
+     "minutes": 178
+    },
+    {
+     "player_id": "Avery Bradley",
+     "bbr_id": "bradlav01",
+     "position": "PG",
+     "games": 31,
+     "games_started": 0,
+     "minutes": 162
+    },
+    {
+     "player_id": "Sasha Pavlović",
+     "bbr_id": "pavloal01",
+     "position": "SG",
+     "games": 17,
+     "games_started": 0,
+     "minutes": 149
+    },
+    {
+     "player_id": "Chris Johnson",
+     "bbr_id": "johnsch03",
+     "position": "C",
+     "games": 4,
+     "games_started": 0,
+     "minutes": 32
+    }
+   ]
+  },
+  "Charlotte Bobcats": {
+   "code": "CHA",
+   "players": [
+    {
+     "player_id": "Boris Diaw",
+     "bbr_id": "diawbo01",
+     "position": "PF",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 2778
+    },
+    {
+     "player_id": "D.J. Augustin",
+     "bbr_id": "augusdj01",
+     "position": "PG",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 2757
+    },
+    {
+     "player_id": "Stephen Jackson",
+     "bbr_id": "jacksst02",
+     "position": "SG",
+     "games": 67,
+     "games_started": 67,
+     "minutes": 2405
+    },
+    {
+     "player_id": "Gerald Wallace",
+     "bbr_id": "wallage01",
+     "position": "SF",
+     "games": 48,
+     "games_started": 48,
+     "minutes": 1872
+    },
+    {
+     "player_id": "Kwame Brown",
+     "bbr_id": "brownkw01",
+     "position": "C",
+     "games": 66,
+     "games_started": 50,
+     "minutes": 1714
+    },
+    {
+     "player_id": "Gerald Henderson",
+     "bbr_id": "hendege02",
+     "position": "SG",
+     "games": 68,
+     "games_started": 30,
+     "minutes": 1661
+    },
+    {
+     "player_id": "Shaun Livingston",
+     "bbr_id": "livinsh01",
+     "position": "PG",
+     "games": 73,
+     "games_started": 0,
+     "minutes": 1261
+    },
+    {
+     "player_id": "Tyrus Thomas",
+     "bbr_id": "thomaty01",
+     "position": "C",
+     "games": 41,
+     "games_started": 2,
+     "minutes": 861
+    },
+    {
+     "player_id": "Nazr Mohammed",
+     "bbr_id": "mohamna01",
+     "position": "C",
+     "games": 51,
+     "games_started": 30,
+     "minutes": 851
+    },
+    {
+     "player_id": "Dominic McGuire",
+     "bbr_id": "mcguido01",
+     "position": "SF",
+     "games": 52,
+     "games_started": 8,
+     "minutes": 760
+    },
+    {
+     "player_id": "Matt Carroll",
+     "bbr_id": "carroma01",
+     "position": "SG",
+     "games": 54,
+     "games_started": 1,
+     "minutes": 582
+    },
+    {
+     "player_id": "Dante Cunningham",
+     "bbr_id": "cunnida01",
+     "position": "PF",
+     "games": 22,
+     "games_started": 9,
+     "minutes": 529
+    },
+    {
+     "player_id": "Derrick Brown",
+     "bbr_id": "brownde04",
+     "position": "SF",
+     "games": 41,
+     "games_started": 1,
+     "minutes": 488
+    },
+    {
+     "player_id": "D.J. White",
+     "bbr_id": "whitedj01",
+     "position": "C",
+     "games": 24,
+     "games_started": 0,
+     "minutes": 466
+    },
+    {
+     "player_id": "Eduardo Nájera",
+     "bbr_id": "najered01",
+     "position": "PF",
+     "games": 31,
+     "games_started": 0,
+     "minutes": 372
+    },
+    {
+     "player_id": "DeSagana Diop",
+     "bbr_id": "diopde01",
+     "position": "C",
+     "games": 16,
+     "games_started": 0,
+     "minutes": 181
+    },
+    {
+     "player_id": "Garrett Temple",
+     "bbr_id": "templga01",
+     "position": "PG",
+     "games": 12,
+     "games_started": 0,
+     "minutes": 126
+    },
+    {
+     "player_id": "Joel Przybilla",
+     "bbr_id": "przybjo01",
+     "position": "C",
+     "games": 5,
+     "games_started": 0,
+     "minutes": 74
+    },
+    {
+     "player_id": "Sherron Collins",
+     "bbr_id": "collish01",
+     "position": "PG",
+     "games": 20,
+     "games_started": 0,
+     "minutes": 66
+    }
+   ]
+  },
+  "Chicago Bulls": {
+   "code": "CHI",
+   "players": [
+    {
+     "player_id": "Luol Deng",
+     "bbr_id": "denglu01",
+     "position": "SF",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 3208
+    },
+    {
+     "player_id": "Derrick Rose",
+     "bbr_id": "rosede01",
+     "position": "PG",
+     "games": 81,
+     "games_started": 81,
+     "minutes": 3026
+    },
+    {
+     "player_id": "Carlos Boozer",
+     "bbr_id": "boozeca01",
+     "position": "C",
+     "games": 59,
+     "games_started": 59,
+     "minutes": 1882
+    },
+    {
+     "player_id": "Ronnie Brewer",
+     "bbr_id": "brewero02",
+     "position": "SG",
+     "games": 81,
+     "games_started": 1,
+     "minutes": 1781
+    },
+    {
+     "player_id": "Taj Gibson",
+     "bbr_id": "gibsota01",
+     "position": "PF",
+     "games": 80,
+     "games_started": 19,
+     "minutes": 1742
+    },
+    {
+     "player_id": "Kyle Korver",
+     "bbr_id": "korveky01",
+     "position": "SG",
+     "games": 82,
+     "games_started": 0,
+     "minutes": 1649
+    },
+    {
+     "player_id": "Joakim Noah",
+     "bbr_id": "noahjo01",
+     "position": "C",
+     "games": 48,
+     "games_started": 48,
+     "minutes": 1576
+    },
+    {
+     "player_id": "Keith Bogans",
+     "bbr_id": "boganke01",
+     "position": "SG",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 1461
+    },
+    {
+     "player_id": "Kurt Thomas",
+     "bbr_id": "thomaku01",
+     "position": "PF",
+     "games": 52,
+     "games_started": 37,
+     "minutes": 1178
+    },
+    {
+     "player_id": "C.J. Watson",
+     "bbr_id": "watsocj01",
+     "position": "PG",
+     "games": 82,
+     "games_started": 1,
+     "minutes": 1091
+    },
+    {
+     "player_id": "Ömer Aşık",
+     "bbr_id": "asikom01",
+     "position": "C",
+     "games": 82,
+     "games_started": 0,
+     "minutes": 989
+    },
+    {
+     "player_id": "James Johnson",
+     "bbr_id": "johnsja01",
+     "position": "SF",
+     "games": 13,
+     "games_started": 0,
+     "minutes": 123
+    },
+    {
+     "player_id": "Brian Scalabrine",
+     "bbr_id": "scalabr01",
+     "position": "PF",
+     "games": 18,
+     "games_started": 0,
+     "minutes": 88
+    },
+    {
+     "player_id": "Rasual Butler",
+     "bbr_id": "butlera01",
+     "position": "SG",
+     "games": 6,
+     "games_started": 0,
+     "minutes": 26
+    },
+    {
+     "player_id": "John Lucas III",
+     "bbr_id": "lucasjo02",
+     "position": "PG",
+     "games": 2,
+     "games_started": 0,
+     "minutes": 10
+    }
+   ]
+  },
+  "Cleveland Cavaliers": {
+   "code": "CLE",
+   "players": [
+    {
+     "player_id": "J.J. Hickson",
+     "bbr_id": "hicksjj01",
+     "position": "C",
+     "games": 80,
+     "games_started": 66,
+     "minutes": 2256
+    },
+    {
+     "player_id": "Ramon Sessions",
+     "bbr_id": "sessira01",
+     "position": "PG",
+     "games": 81,
+     "games_started": 38,
+     "minutes": 2133
+    },
+    {
+     "player_id": "Anthony Parker",
+     "bbr_id": "parkean01",
+     "position": "SF",
+     "games": 72,
+     "games_started": 65,
+     "minutes": 2091
+    },
+    {
+     "player_id": "Daniel Gibson",
+     "bbr_id": "gibsoda01",
+     "position": "SG",
+     "games": 67,
+     "games_started": 15,
+     "minutes": 1865
+    },
+    {
+     "player_id": "Antawn Jamison",
+     "bbr_id": "jamisan01",
+     "position": "PF",
+     "games": 56,
+     "games_started": 38,
+     "minutes": 1842
+    },
+    {
+     "player_id": "Ryan Hollins",
+     "bbr_id": "holliry01",
+     "position": "C",
+     "games": 70,
+     "games_started": 16,
+     "minutes": 1182
+    },
+    {
+     "player_id": "Mo Williams",
+     "bbr_id": "willima01",
+     "position": "PG",
+     "games": 36,
+     "games_started": 34,
+     "minutes": 1065
+    },
+    {
+     "player_id": "Anderson Varejão",
+     "bbr_id": "varejan01",
+     "position": "C",
+     "games": 31,
+     "games_started": 31,
+     "minutes": 994
+    },
+    {
+     "player_id": "Alonzo Gee",
+     "bbr_id": "geeal01",
+     "position": "SG",
+     "games": 40,
+     "games_started": 29,
+     "minutes": 973
+    },
+    {
+     "player_id": "Christian Eyenga",
+     "bbr_id": "eyengch01",
+     "position": "SF",
+     "games": 44,
+     "games_started": 18,
+     "minutes": 947
+    },
+    {
+     "player_id": "Manny Harris",
+     "bbr_id": "harrima01",
+     "position": "SG",
+     "games": 54,
+     "games_started": 15,
+     "minutes": 933
+    },
+    {
+     "player_id": "Jamario Moon",
+     "bbr_id": "moonja01",
+     "position": "SF",
+     "games": 40,
+     "games_started": 13,
+     "minutes": 764
+    },
+    {
+     "player_id": "Samardo Samuels",
+     "bbr_id": "samuesa01",
+     "position": "PF",
+     "games": 37,
+     "games_started": 10,
+     "minutes": 701
+    },
+    {
+     "player_id": "Joey Graham",
+     "bbr_id": "grahajo01",
+     "position": "SF",
+     "games": 39,
+     "games_started": 8,
+     "minutes": 586
+    },
+    {
+     "player_id": "Luke Harangody",
+     "bbr_id": "haranlu01",
+     "position": "PF",
+     "games": 21,
+     "games_started": 0,
+     "minutes": 399
+    },
+    {
+     "player_id": "Jawad Williams",
+     "bbr_id": "willija04",
+     "position": "SF",
+     "games": 26,
+     "games_started": 1,
+     "minutes": 391
+    },
+    {
+     "player_id": "Baron Davis",
+     "bbr_id": "davisba01",
+     "position": "PG",
+     "games": 15,
+     "games_started": 9,
+     "minutes": 380
+    },
+    {
+     "player_id": "Leon Powe",
+     "bbr_id": "powele01",
+     "position": "PF",
+     "games": 14,
+     "games_started": 3,
+     "minutes": 187
+    },
+    {
+     "player_id": "Semih Erden",
+     "bbr_id": "erdense01",
+     "position": "C",
+     "games": 4,
+     "games_started": 1,
+     "minutes": 64
+    }
+   ]
+  },
+  "Dallas Mavericks": {
+   "code": "DAL",
+   "players": [
+    {
+     "player_id": "Jason Kidd",
+     "bbr_id": "kiddja01",
+     "position": "PG",
+     "games": 80,
+     "games_started": 80,
+     "minutes": 2653
+    },
+    {
+     "player_id": "Jason Terry",
+     "bbr_id": "terryja01",
+     "position": "SG",
+     "games": 82,
+     "games_started": 10,
+     "minutes": 2564
+    },
+    {
+     "player_id": "Dirk Nowitzki",
+     "bbr_id": "nowitdi01",
+     "position": "PF",
+     "games": 73,
+     "games_started": 73,
+     "minutes": 2504
+    },
+    {
+     "player_id": "Shawn Marion",
+     "bbr_id": "mariosh01",
+     "position": "SF",
+     "games": 80,
+     "games_started": 27,
+     "minutes": 2253
+    },
+    {
+     "player_id": "Tyson Chandler",
+     "bbr_id": "chandty01",
+     "position": "C",
+     "games": 74,
+     "games_started": 74,
+     "minutes": 2059
+    },
+    {
+     "player_id": "J.J. Barea",
+     "bbr_id": "bareajo01",
+     "position": "PG",
+     "games": 81,
+     "games_started": 2,
+     "minutes": 1669
+    },
+    {
+     "player_id": "Brendan Haywood",
+     "bbr_id": "haywobr01",
+     "position": "C",
+     "games": 72,
+     "games_started": 8,
+     "minutes": 1331
+    },
+    {
+     "player_id": "DeShawn Stevenson",
+     "bbr_id": "stevede01",
+     "position": "SG",
+     "games": 72,
+     "games_started": 54,
+     "minutes": 1158
+    },
+    {
+     "player_id": "Caron Butler",
+     "bbr_id": "butleca01",
+     "position": "SF",
+     "games": 29,
+     "games_started": 29,
+     "minutes": 867
+    },
+    {
+     "player_id": "Brian Cardinal",
+     "bbr_id": "cardibr01",
+     "position": "SF",
+     "games": 56,
+     "games_started": 4,
+     "minutes": 618
+    },
+    {
+     "player_id": "Peja Stojaković",
+     "bbr_id": "stojape01",
+     "position": "SF",
+     "games": 25,
+     "games_started": 13,
+     "minutes": 506
+    },
+    {
+     "player_id": "Rodrigue Beaubois",
+     "bbr_id": "beaubro01",
+     "position": "PG",
+     "games": 28,
+     "games_started": 26,
+     "minutes": 496
+    },
+    {
+     "player_id": "Ian Mahinmi",
+     "bbr_id": "mahinia01",
+     "position": "C",
+     "games": 56,
+     "games_started": 0,
+     "minutes": 488
+    },
+    {
+     "player_id": "Sasha Pavlović",
+     "bbr_id": "pavloal01",
+     "position": "SF",
+     "games": 10,
+     "games_started": 6,
+     "minutes": 163
+    },
+    {
+     "player_id": "Corey Brewer",
+     "bbr_id": "breweco01",
+     "position": "SG",
+     "games": 13,
+     "games_started": 2,
+     "minutes": 148
+    },
+    {
+     "player_id": "Dominique Jones",
+     "bbr_id": "jonesdo02",
+     "position": "SG",
+     "games": 18,
+     "games_started": 0,
+     "minutes": 135
+    },
+    {
+     "player_id": "Alexis Ajinça",
+     "bbr_id": "ajincal01",
+     "position": "C",
+     "games": 10,
+     "games_started": 2,
+     "minutes": 75
+    },
+    {
+     "player_id": "Steve Novak",
+     "bbr_id": "novakst01",
+     "position": "SF",
+     "games": 7,
+     "games_started": 0,
+     "minutes": 18
+    }
+   ]
+  },
+  "Denver Nuggets": {
+   "code": "DEN",
+   "players": [
+    {
+     "player_id": "Arron Afflalo",
+     "bbr_id": "afflaar01",
+     "position": "SG",
+     "games": 69,
+     "games_started": 69,
+     "minutes": 2324
+    },
+    {
+     "player_id": "Nenê",
+     "bbr_id": "hilarne01",
+     "position": "C",
+     "games": 75,
+     "games_started": 75,
+     "minutes": 2291
+    },
+    {
+     "player_id": "Ty Lawson",
+     "bbr_id": "lawsoty01",
+     "position": "PG",
+     "games": 80,
+     "games_started": 31,
+     "minutes": 2103
+    },
+    {
+     "player_id": "J.R. Smith",
+     "bbr_id": "smithjr01",
+     "position": "SF",
+     "games": 79,
+     "games_started": 6,
+     "minutes": 1968
+    },
+    {
+     "player_id": "Carmelo Anthony",
+     "bbr_id": "anthoca01",
+     "position": "SF",
+     "games": 50,
+     "games_started": 50,
+     "minutes": 1774
+    },
+    {
+     "player_id": "Al Harrington",
+     "bbr_id": "harrial01",
+     "position": "PF",
+     "games": 73,
+     "games_started": 3,
+     "minutes": 1665
+    },
+    {
+     "player_id": "Chauncey Billups",
+     "bbr_id": "billuch01",
+     "position": "PG",
+     "games": 51,
+     "games_started": 51,
+     "minutes": 1646
+    },
+    {
+     "player_id": "Kenyon Martin",
+     "bbr_id": "martike01",
+     "position": "PF",
+     "games": 48,
+     "games_started": 48,
+     "minutes": 1233
+    },
+    {
+     "player_id": "Gary Forbes",
+     "bbr_id": "forbega01",
+     "position": "SF",
+     "games": 63,
+     "games_started": 11,
+     "minutes": 791
+    },
+    {
+     "player_id": "Chris Andersen",
+     "bbr_id": "anderch01",
+     "position": "C",
+     "games": 45,
+     "games_started": 0,
+     "minutes": 732
+    },
+    {
+     "player_id": "Shelden Williams",
+     "bbr_id": "willish02",
+     "position": "PF",
+     "games": 42,
+     "games_started": 32,
+     "minutes": 713
+    },
+    {
+     "player_id": "Raymond Felton",
+     "bbr_id": "feltora01",
+     "position": "SG",
+     "games": 21,
+     "games_started": 0,
+     "minutes": 663
+    },
+    {
+     "player_id": "Wilson Chandler",
+     "bbr_id": "chandwi01",
+     "position": "SF",
+     "games": 21,
+     "games_started": 19,
+     "minutes": 642
+    },
+    {
+     "player_id": "Danilo Gallinari",
+     "bbr_id": "gallida01",
+     "position": "SF",
+     "games": 14,
+     "games_started": 12,
+     "minutes": 433
+    },
+    {
+     "player_id": "Melvin Ely",
+     "bbr_id": "elyme01",
+     "position": "C",
+     "games": 30,
+     "games_started": 2,
+     "minutes": 366
+    },
+    {
+     "player_id": "Anthony Carter",
+     "bbr_id": "cartean01",
+     "position": "PG",
+     "games": 14,
+     "games_started": 0,
+     "minutes": 153
+    },
+    {
+     "player_id": "Kosta Koufos",
+     "bbr_id": "koufoko01",
+     "position": "C",
+     "games": 11,
+     "games_started": 1,
+     "minutes": 98
+    },
+    {
+     "player_id": "Timofey Mozgov",
+     "bbr_id": "mozgoti01",
+     "position": "C",
+     "games": 11,
+     "games_started": 0,
+     "minutes": 66
+    },
+    {
+     "player_id": "Renaldo Balkman",
+     "bbr_id": "balkmre01",
+     "position": "SF",
+     "games": 5,
+     "games_started": 0,
+     "minutes": 44
+    }
+   ]
+  },
+  "Detroit Pistons": {
+   "code": "DET",
+   "players": [
+    {
+     "player_id": "Tayshaun Prince",
+     "bbr_id": "princta01",
+     "position": "SF",
+     "games": 78,
+     "games_started": 78,
+     "minutes": 2562
+    },
+    {
+     "player_id": "Greg Monroe",
+     "bbr_id": "monrogr01",
+     "position": "C",
+     "games": 80,
+     "games_started": 48,
+     "minutes": 2222
+    },
+    {
+     "player_id": "Rodney Stuckey",
+     "bbr_id": "stuckro01",
+     "position": "PG",
+     "games": 70,
+     "games_started": 54,
+     "minutes": 2183
+    },
+    {
+     "player_id": "Ben Gordon",
+     "bbr_id": "gordobe01",
+     "position": "SG",
+     "games": 82,
+     "games_started": 27,
+     "minutes": 2131
+    },
+    {
+     "player_id": "Tracy McGrady",
+     "bbr_id": "mcgratr01",
+     "position": "SG",
+     "games": 72,
+     "games_started": 39,
+     "minutes": 1686
+    },
+    {
+     "player_id": "Charlie Villanueva",
+     "bbr_id": "villach01",
+     "position": "PF",
+     "games": 76,
+     "games_started": 11,
+     "minutes": 1666
+    },
+    {
+     "player_id": "Richard Hamilton",
+     "bbr_id": "hamilri01",
+     "position": "SG",
+     "games": 55,
+     "games_started": 39,
+     "minutes": 1498
+    },
+    {
+     "player_id": "Austin Daye",
+     "bbr_id": "dayeau01",
+     "position": "SF",
+     "games": 72,
+     "games_started": 16,
+     "minutes": 1446
+    },
+    {
+     "player_id": "Ben Wallace",
+     "bbr_id": "wallabe01",
+     "position": "C",
+     "games": 54,
+     "games_started": 49,
+     "minutes": 1238
+    },
+    {
+     "player_id": "Will Bynum",
+     "bbr_id": "bynumwi01",
+     "position": "PG",
+     "games": 61,
+     "games_started": 5,
+     "minutes": 1125
+    },
+    {
+     "player_id": "Chris Wilcox",
+     "bbr_id": "wilcoch01",
+     "position": "PF",
+     "games": 57,
+     "games_started": 29,
+     "minutes": 995
+    },
+    {
+     "player_id": "Jason Maxiell",
+     "bbr_id": "maxieja01",
+     "position": "PF",
+     "games": 57,
+     "games_started": 14,
+     "minutes": 930
+    },
+    {
+     "player_id": "DaJuan Summers",
+     "bbr_id": "summeda01",
+     "position": "SF",
+     "games": 22,
+     "games_started": 1,
+     "minutes": 199
+    }
+   ]
+  },
+  "Golden State Warriors": {
+   "code": "GSW",
+   "players": [
+    {
+     "player_id": "Monta Ellis",
+     "bbr_id": "ellismo01",
+     "position": "SG",
+     "games": 80,
+     "games_started": 80,
+     "minutes": 3227
+    },
+    {
+     "player_id": "Dorell Wright",
+     "bbr_id": "wrighdo01",
+     "position": "SF",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 3147
+    },
+    {
+     "player_id": "David Lee",
+     "bbr_id": "leeda02",
+     "position": "PF",
+     "games": 73,
+     "games_started": 73,
+     "minutes": 2634
+    },
+    {
+     "player_id": "Stephen Curry",
+     "bbr_id": "curryst01",
+     "position": "PG",
+     "games": 74,
+     "games_started": 74,
+     "minutes": 2489
+    },
+    {
+     "player_id": "Reggie Williams",
+     "bbr_id": "willire02",
+     "position": "SF",
+     "games": 80,
+     "games_started": 9,
+     "minutes": 1626
+    },
+    {
+     "player_id": "Andris Biedriņš",
+     "bbr_id": "biedran01",
+     "position": "C",
+     "games": 59,
+     "games_started": 55,
+     "minutes": 1397
+    },
+    {
+     "player_id": "Vladimir Radmanović",
+     "bbr_id": "radmavl01",
+     "position": "PF",
+     "games": 74,
+     "games_started": 6,
+     "minutes": 1169
+    },
+    {
+     "player_id": "Ekpe Udoh",
+     "bbr_id": "udohek01",
+     "position": "C",
+     "games": 58,
+     "games_started": 18,
+     "minutes": 1030
+    },
+    {
+     "player_id": "Lou Amundson",
+     "bbr_id": "amundlo01",
+     "position": "PF",
+     "games": 46,
+     "games_started": 7,
+     "minutes": 691
+    },
+    {
+     "player_id": "Acie Law",
+     "bbr_id": "lawac01",
+     "position": "PG",
+     "games": 40,
+     "games_started": 0,
+     "minutes": 632
+    },
+    {
+     "player_id": "Rodney Carney",
+     "bbr_id": "carnero01",
+     "position": "SF",
+     "games": 25,
+     "games_started": 1,
+     "minutes": 331
+    },
+    {
+     "player_id": "Al Thornton",
+     "bbr_id": "thornal01",
+     "position": "PF",
+     "games": 22,
+     "games_started": 0,
+     "minutes": 314
+    },
+    {
+     "player_id": "Dan Gadzuric",
+     "bbr_id": "gadzuda01",
+     "position": "C",
+     "games": 28,
+     "games_started": 4,
+     "minutes": 297
+    },
+    {
+     "player_id": "Jeremy Lin",
+     "bbr_id": "linje01",
+     "position": "PG",
+     "games": 29,
+     "games_started": 0,
+     "minutes": 285
+    },
+    {
+     "player_id": "Jeff Adrien",
+     "bbr_id": "adrieje01",
+     "position": "PF",
+     "games": 23,
+     "games_started": 0,
+     "minutes": 196
+    },
+    {
+     "player_id": "Brandan Wright",
+     "bbr_id": "wrighbr03",
+     "position": "PF",
+     "games": 21,
+     "games_started": 1,
+     "minutes": 195
+    },
+    {
+     "player_id": "Charlie Bell",
+     "bbr_id": "bellch01",
+     "position": "SG",
+     "games": 19,
+     "games_started": 0,
+     "minutes": 171
+    }
+   ]
+  },
+  "Houston Rockets": {
+   "code": "HOU",
+   "players": [
+    {
+     "player_id": "Kevin Martin",
+     "bbr_id": "martike02",
+     "position": "SG",
+     "games": 80,
+     "games_started": 80,
+     "minutes": 2603
+    },
+    {
+     "player_id": "Kyle Lowry",
+     "bbr_id": "lowryky01",
+     "position": "PG",
+     "games": 75,
+     "games_started": 71,
+     "minutes": 2563
+    },
+    {
+     "player_id": "Luis Scola",
+     "bbr_id": "scolalu01",
+     "position": "PF",
+     "games": 74,
+     "games_started": 74,
+     "minutes": 2412
+    },
+    {
+     "player_id": "Chuck Hayes",
+     "bbr_id": "hayesch01",
+     "position": "C",
+     "games": 74,
+     "games_started": 63,
+     "minutes": 2079
+    },
+    {
+     "player_id": "Shane Battier",
+     "bbr_id": "battish01",
+     "position": "SF",
+     "games": 59,
+     "games_started": 59,
+     "minutes": 1818
+    },
+    {
+     "player_id": "Chase Budinger",
+     "bbr_id": "budinch01",
+     "position": "SF",
+     "games": 78,
+     "games_started": 22,
+     "minutes": 1738
+    },
+    {
+     "player_id": "Courtney Lee",
+     "bbr_id": "leeco01",
+     "position": "SG",
+     "games": 81,
+     "games_started": 1,
+     "minutes": 1723
+    },
+    {
+     "player_id": "Jordan Hill",
+     "bbr_id": "hilljo01",
+     "position": "C",
+     "games": 72,
+     "games_started": 11,
+     "minutes": 1125
+    },
+    {
+     "player_id": "Brad Miller",
+     "bbr_id": "millebr01",
+     "position": "C",
+     "games": 60,
+     "games_started": 5,
+     "minutes": 1015
+    },
+    {
+     "player_id": "Patrick Patterson",
+     "bbr_id": "pattepa01",
+     "position": "PF",
+     "games": 52,
+     "games_started": 6,
+     "minutes": 868
+    },
+    {
+     "player_id": "Aaron Brooks",
+     "bbr_id": "brookaa01",
+     "position": "PG",
+     "games": 34,
+     "games_started": 7,
+     "minutes": 811
+    },
+    {
+     "player_id": "Goran Dragić",
+     "bbr_id": "dragigo01",
+     "position": "PG",
+     "games": 22,
+     "games_started": 3,
+     "minutes": 378
+    },
+    {
+     "player_id": "Ish Smith",
+     "bbr_id": "smithis01",
+     "position": "PG",
+     "games": 28,
+     "games_started": 3,
+     "minutes": 329
+    },
+    {
+     "player_id": "Jared Jeffries",
+     "bbr_id": "jeffrja01",
+     "position": "PF",
+     "games": 18,
+     "games_started": 0,
+     "minutes": 138
+    },
+    {
+     "player_id": "Yao Ming",
+     "bbr_id": "mingya01",
+     "position": "C",
+     "games": 5,
+     "games_started": 5,
+     "minutes": 91
+    },
+    {
+     "player_id": "Terrence Williams",
+     "bbr_id": "willite01",
+     "position": "SG",
+     "games": 11,
+     "games_started": 0,
+     "minutes": 84
+    },
+    {
+     "player_id": "Jermaine Taylor",
+     "bbr_id": "tayloje02",
+     "position": "SG",
+     "games": 8,
+     "games_started": 0,
+     "minutes": 77
+    },
+    {
+     "player_id": "Mike Harris",
+     "bbr_id": "harrimi01",
+     "position": "PF",
+     "games": 4,
+     "games_started": 0,
+     "minutes": 16
+    },
+    {
+     "player_id": "DeMarre Carroll",
+     "bbr_id": "carrode01",
+     "position": "PF",
+     "games": 5,
+     "games_started": 0,
+     "minutes": 11
+    },
+    {
+     "player_id": "Hasheem Thabeet",
+     "bbr_id": "thabeha01",
+     "position": "C",
+     "games": 2,
+     "games_started": 0,
+     "minutes": 4
+    }
+   ]
+  },
+  "Indiana Pacers": {
+   "code": "IND",
+   "players": [
+    {
+     "player_id": "Danny Granger",
+     "bbr_id": "grangda01",
+     "position": "SF",
+     "games": 79,
+     "games_started": 79,
+     "minutes": 2763
+    },
+    {
+     "player_id": "Darren Collison",
+     "bbr_id": "collida01",
+     "position": "PG",
+     "games": 79,
+     "games_started": 79,
+     "minutes": 2360
+    },
+    {
+     "player_id": "Roy Hibbert",
+     "bbr_id": "hibbero01",
+     "position": "C",
+     "games": 81,
+     "games_started": 80,
+     "minutes": 2244
+    },
+    {
+     "player_id": "Brandon Rush",
+     "bbr_id": "rushbr01",
+     "position": "SG",
+     "games": 67,
+     "games_started": 21,
+     "minutes": 1754
+    },
+    {
+     "player_id": "Mike Dunleavy",
+     "bbr_id": "dunlemi02",
+     "position": "SG",
+     "games": 61,
+     "games_started": 44,
+     "minutes": 1683
+    },
+    {
+     "player_id": "Josh McRoberts",
+     "bbr_id": "mcrobjo01",
+     "position": "PF",
+     "games": 72,
+     "games_started": 51,
+     "minutes": 1597
+    },
+    {
+     "player_id": "Tyler Hansbrough",
+     "bbr_id": "hansbty01",
+     "position": "PF",
+     "games": 70,
+     "games_started": 29,
+     "minutes": 1535
+    },
+    {
+     "player_id": "Paul George",
+     "bbr_id": "georgpa01",
+     "position": "SG",
+     "games": 61,
+     "games_started": 19,
+     "minutes": 1265
+    },
+    {
+     "player_id": "Jeff Foster",
+     "bbr_id": "fosteje01",
+     "position": "C",
+     "games": 56,
+     "games_started": 3,
+     "minutes": 940
+    },
+    {
+     "player_id": "James Posey",
+     "bbr_id": "poseyja01",
+     "position": "SF",
+     "games": 49,
+     "games_started": 0,
+     "minutes": 839
+    },
+    {
+     "player_id": "A.J. Price",
+     "bbr_id": "priceaj01",
+     "position": "PG",
+     "games": 50,
+     "games_started": 0,
+     "minutes": 795
+    },
+    {
+     "player_id": "T.J. Ford",
+     "bbr_id": "fordtj01",
+     "position": "PG",
+     "games": 41,
+     "games_started": 3,
+     "minutes": 773
+    },
+    {
+     "player_id": "Dahntay Jones",
+     "bbr_id": "jonesda02",
+     "position": "SG",
+     "games": 45,
+     "games_started": 2,
+     "minutes": 589
+    },
+    {
+     "player_id": "Solomon Jones",
+     "bbr_id": "jonesso01",
+     "position": "C",
+     "games": 39,
+     "games_started": 0,
+     "minutes": 528
+    },
+    {
+     "player_id": "Lance Stephenson",
+     "bbr_id": "stephla01",
+     "position": "SG",
+     "games": 12,
+     "games_started": 0,
+     "minutes": 115
+    }
+   ]
+  },
+  "Los Angeles Clippers": {
+   "code": "LAC",
+   "players": [
+    {
+     "player_id": "Blake Griffin",
+     "bbr_id": "griffbl01",
+     "position": "PF",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 3112
+    },
+    {
+     "player_id": "Eric Gordon",
+     "bbr_id": "gordoer01",
+     "position": "SG",
+     "games": 56,
+     "games_started": 56,
+     "minutes": 2112
+    },
+    {
+     "player_id": "Ryan Gomes",
+     "bbr_id": "gomesry01",
+     "position": "SF",
+     "games": 76,
+     "games_started": 62,
+     "minutes": 2095
+    },
+    {
+     "player_id": "DeAndre Jordan",
+     "bbr_id": "jordade01",
+     "position": "C",
+     "games": 80,
+     "games_started": 66,
+     "minutes": 2047
+    },
+    {
+     "player_id": "Eric Bledsoe",
+     "bbr_id": "bledser01",
+     "position": "PG",
+     "games": 81,
+     "games_started": 25,
+     "minutes": 1841
+    },
+    {
+     "player_id": "Randy Foye",
+     "bbr_id": "foyera01",
+     "position": "SG",
+     "games": 63,
+     "games_started": 24,
+     "minutes": 1551
+    },
+    {
+     "player_id": "Al-Farouq Aminu",
+     "bbr_id": "aminual01",
+     "position": "SF",
+     "games": 81,
+     "games_started": 14,
+     "minutes": 1452
+    },
+    {
+     "player_id": "Baron Davis",
+     "bbr_id": "davisba01",
+     "position": "PG",
+     "games": 43,
+     "games_started": 35,
+     "minutes": 1269
+    },
+    {
+     "player_id": "Chris Kaman",
+     "bbr_id": "kamanch01",
+     "position": "C",
+     "games": 32,
+     "games_started": 15,
+     "minutes": 838
+    },
+    {
+     "player_id": "Rasual Butler",
+     "bbr_id": "butlera01",
+     "position": "SG",
+     "games": 41,
+     "games_started": 2,
+     "minutes": 744
+    },
+    {
+     "player_id": "Mo Williams",
+     "bbr_id": "willima01",
+     "position": "PG",
+     "games": 22,
+     "games_started": 22,
+     "minutes": 723
+    },
+    {
+     "player_id": "Craig Smith",
+     "bbr_id": "smithcr01",
+     "position": "PF",
+     "games": 48,
+     "games_started": 0,
+     "minutes": 586
+    },
+    {
+     "player_id": "Ike Diogu",
+     "bbr_id": "dioguik01",
+     "position": "PF",
+     "games": 36,
+     "games_started": 0,
+     "minutes": 470
+    },
+    {
+     "player_id": "Brian Cook",
+     "bbr_id": "cookbr01",
+     "position": "PF",
+     "games": 40,
+     "games_started": 0,
+     "minutes": 447
+    },
+    {
+     "player_id": "Jamario Moon",
+     "bbr_id": "moonja01",
+     "position": "SF",
+     "games": 19,
+     "games_started": 7,
+     "minutes": 278
+    },
+    {
+     "player_id": "Jarron Collins",
+     "bbr_id": "collija03",
+     "position": "C",
+     "games": 23,
+     "games_started": 0,
+     "minutes": 157
+    },
+    {
+     "player_id": "Willie Warren",
+     "bbr_id": "warrewi01",
+     "position": "PG",
+     "games": 19,
+     "games_started": 0,
+     "minutes": 134
+    }
+   ]
+  },
+  "Los Angeles Lakers": {
+   "code": "LAL",
+   "players": [
+    {
+     "player_id": "Pau Gasol",
+     "bbr_id": "gasolpa01",
+     "position": "C",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 3037
+    },
+    {
+     "player_id": "Kobe Bryant",
+     "bbr_id": "bryanko01",
+     "position": "SG",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 2779
+    },
+    {
+     "player_id": "Lamar Odom",
+     "bbr_id": "odomla01",
+     "position": "PF",
+     "games": 82,
+     "games_started": 35,
+     "minutes": 2639
+    },
+    {
+     "player_id": "Metta World Peace",
+     "bbr_id": "artesro01",
+     "position": "SF",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 2410
+    },
+    {
+     "player_id": "Derek Fisher",
+     "bbr_id": "fishede01",
+     "position": "PG",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 2297
+    },
+    {
+     "player_id": "Steve Blake",
+     "bbr_id": "blakest01",
+     "position": "PG",
+     "games": 79,
+     "games_started": 0,
+     "minutes": 1581
+    },
+    {
+     "player_id": "Shannon Brown",
+     "bbr_id": "brownsh01",
+     "position": "SG",
+     "games": 82,
+     "games_started": 0,
+     "minutes": 1568
+    },
+    {
+     "player_id": "Andrew Bynum",
+     "bbr_id": "bynuman01",
+     "position": "C",
+     "games": 54,
+     "games_started": 47,
+     "minutes": 1500
+    },
+    {
+     "player_id": "Matt Barnes",
+     "bbr_id": "barnema02",
+     "position": "SF",
+     "games": 53,
+     "games_started": 0,
+     "minutes": 1020
+    },
+    {
+     "player_id": "Luke Walton",
+     "bbr_id": "waltolu01",
+     "position": "SF",
+     "games": 54,
+     "games_started": 0,
+     "minutes": 484
+    },
+    {
+     "player_id": "Derrick Caracter",
+     "bbr_id": "caracde01",
+     "position": "C",
+     "games": 41,
+     "games_started": 0,
+     "minutes": 215
+    },
+    {
+     "player_id": "Devin Ebanks",
+     "bbr_id": "ebankde01",
+     "position": "SG",
+     "games": 20,
+     "games_started": 0,
+     "minutes": 118
+    },
+    {
+     "player_id": "Theo Ratliff",
+     "bbr_id": "ratlith01",
+     "position": "C",
+     "games": 10,
+     "games_started": 0,
+     "minutes": 71
+    },
+    {
+     "player_id": "Sasha Vujačić",
+     "bbr_id": "vujacsa01",
+     "position": "SG",
+     "games": 11,
+     "games_started": 0,
+     "minutes": 54
+    },
+    {
+     "player_id": "Joe Smith",
+     "bbr_id": "smithjo02",
+     "position": "PF",
+     "games": 12,
+     "games_started": 0,
+     "minutes": 44
+    },
+    {
+     "player_id": "Trey Johnson",
+     "bbr_id": "johnstr01",
+     "position": "SG",
+     "games": 1,
+     "games_started": 0,
+     "minutes": 13
+    }
+   ]
+  },
+  "Memphis Grizzlies": {
+   "code": "MEM",
+   "players": [
+    {
+     "player_id": "Mike Conley",
+     "bbr_id": "conlemi01",
+     "position": "PG",
+     "games": 81,
+     "games_started": 81,
+     "minutes": 2872
+    },
+    {
+     "player_id": "Zach Randolph",
+     "bbr_id": "randoza01",
+     "position": "PF",
+     "games": 75,
+     "games_started": 74,
+     "minutes": 2724
+    },
+    {
+     "player_id": "Marc Gasol",
+     "bbr_id": "gasolma01",
+     "position": "C",
+     "games": 81,
+     "games_started": 81,
+     "minutes": 2586
+    },
+    {
+     "player_id": "Rudy Gay",
+     "bbr_id": "gayru01",
+     "position": "SF",
+     "games": 54,
+     "games_started": 54,
+     "minutes": 2152
+    },
+    {
+     "player_id": "O.J. Mayo",
+     "bbr_id": "mayooj01",
+     "position": "SG",
+     "games": 71,
+     "games_started": 17,
+     "minutes": 1869
+    },
+    {
+     "player_id": "Darrell Arthur",
+     "bbr_id": "arthuda01",
+     "position": "PF",
+     "games": 80,
+     "games_started": 9,
+     "minutes": 1609
+    },
+    {
+     "player_id": "Sam Young",
+     "bbr_id": "youngsa01",
+     "position": "SF",
+     "games": 78,
+     "games_started": 46,
+     "minutes": 1577
+    },
+    {
+     "player_id": "Tony Allen",
+     "bbr_id": "allento01",
+     "position": "SG",
+     "games": 72,
+     "games_started": 31,
+     "minutes": 1494
+    },
+    {
+     "player_id": "Greivis Vásquez",
+     "bbr_id": "vasqugr01",
+     "position": "PG",
+     "games": 70,
+     "games_started": 1,
+     "minutes": 860
+    },
+    {
+     "player_id": "Shane Battier",
+     "bbr_id": "battish01",
+     "position": "SF",
+     "games": 23,
+     "games_started": 0,
+     "minutes": 557
+    },
+    {
+     "player_id": "Xavier Henry",
+     "bbr_id": "henryxa01",
+     "position": "SG",
+     "games": 38,
+     "games_started": 16,
+     "minutes": 527
+    },
+    {
+     "player_id": "Hasheem Thabeet",
+     "bbr_id": "thabeha01",
+     "position": "C",
+     "games": 45,
+     "games_started": 0,
+     "minutes": 369
+    },
+    {
+     "player_id": "Hamed Haddadi",
+     "bbr_id": "haddaha01",
+     "position": "C",
+     "games": 31,
+     "games_started": 0,
+     "minutes": 168
+    },
+    {
+     "player_id": "Leon Powe",
+     "bbr_id": "powele01",
+     "position": "C",
+     "games": 16,
+     "games_started": 0,
+     "minutes": 141
+    },
+    {
+     "player_id": "Jason Williams",
+     "bbr_id": "willija02",
+     "position": "PG",
+     "games": 11,
+     "games_started": 0,
+     "minutes": 124
+    },
+    {
+     "player_id": "Ish Smith",
+     "bbr_id": "smithis01",
+     "position": "PG",
+     "games": 15,
+     "games_started": 0,
+     "minutes": 113
+    },
+    {
+     "player_id": "Acie Law",
+     "bbr_id": "lawac01",
+     "position": "PG",
+     "games": 11,
+     "games_started": 0,
+     "minutes": 94
+    },
+    {
+     "player_id": "DeMarre Carroll",
+     "bbr_id": "carrode01",
+     "position": "PF",
+     "games": 7,
+     "games_started": 0,
+     "minutes": 39
+    },
+    {
+     "player_id": "Rodney Carney",
+     "bbr_id": "carnero01",
+     "position": "SF",
+     "games": 2,
+     "games_started": 0,
+     "minutes": 5
+    }
+   ]
+  },
+  "Milwaukee Bucks": {
+   "code": "MIL",
+   "players": [
+    {
+     "player_id": "John Salmons",
+     "bbr_id": "salmojo01",
+     "position": "SG",
+     "games": 73,
+     "games_started": 70,
+     "minutes": 2554
+    },
+    {
+     "player_id": "Andrew Bogut",
+     "bbr_id": "bogutan01",
+     "position": "C",
+     "games": 65,
+     "games_started": 65,
+     "minutes": 2297
+    },
+    {
+     "player_id": "Brandon Jennings",
+     "bbr_id": "jennibr01",
+     "position": "PG",
+     "games": 63,
+     "games_started": 61,
+     "minutes": 2169
+    },
+    {
+     "player_id": "Luc Mbah a Moute",
+     "bbr_id": "mbahalu01",
+     "position": "PF",
+     "games": 79,
+     "games_started": 52,
+     "minutes": 2093
+    },
+    {
+     "player_id": "Keyon Dooling",
+     "bbr_id": "doolike01",
+     "position": "PG",
+     "games": 80,
+     "games_started": 22,
+     "minutes": 1757
+    },
+    {
+     "player_id": "Carlos Delfino",
+     "bbr_id": "delfica01",
+     "position": "SF",
+     "games": 49,
+     "games_started": 40,
+     "minutes": 1590
+    },
+    {
+     "player_id": "Ersan İlyasova",
+     "bbr_id": "ilyaser01",
+     "position": "PF",
+     "games": 60,
+     "games_started": 34,
+     "minutes": 1505
+    },
+    {
+     "player_id": "Corey Maggette",
+     "bbr_id": "maggeco01",
+     "position": "SF",
+     "games": 67,
+     "games_started": 18,
+     "minutes": 1401
+    },
+    {
+     "player_id": "Chris Douglas-Roberts",
+     "bbr_id": "douglch01",
+     "position": "SF",
+     "games": 44,
+     "games_started": 12,
+     "minutes": 884
+    },
+    {
+     "player_id": "Larry Sanders",
+     "bbr_id": "sandela01",
+     "position": "C",
+     "games": 60,
+     "games_started": 12,
+     "minutes": 872
+    },
+    {
+     "player_id": "Earl Boykins",
+     "bbr_id": "boykiea01",
+     "position": "PG",
+     "games": 57,
+     "games_started": 0,
+     "minutes": 862
+    },
+    {
+     "player_id": "Drew Gooden",
+     "bbr_id": "goodedr01",
+     "position": "PF",
+     "games": 35,
+     "games_started": 18,
+     "minutes": 860
+    },
+    {
+     "player_id": "Jon Brockman",
+     "bbr_id": "brockjo01",
+     "position": "C",
+     "games": 63,
+     "games_started": 6,
+     "minutes": 677
+    },
+    {
+     "player_id": "Michael Redd",
+     "bbr_id": "reddmi01",
+     "position": "SG",
+     "games": 10,
+     "games_started": 0,
+     "minutes": 134
+    },
+    {
+     "player_id": "Earl Barron",
+     "bbr_id": "barroea01",
+     "position": "C",
+     "games": 7,
+     "games_started": 0,
+     "minutes": 85
+    },
+    {
+     "player_id": "Garrett Temple",
+     "bbr_id": "templga01",
+     "position": "SG",
+     "games": 9,
+     "games_started": 0,
+     "minutes": 83
+    },
+    {
+     "player_id": "Brian Skinner",
+     "bbr_id": "skinnbr01",
+     "position": "C",
+     "games": 2,
+     "games_started": 0,
+     "minutes": 6
+    }
+   ]
+  },
+  "Minnesota Timberwolves": {
+   "code": "MIN",
+   "players": [
+    {
+     "player_id": "Kevin Love",
+     "bbr_id": "loveke01",
+     "position": "PF",
+     "games": 73,
+     "games_started": 73,
+     "minutes": 2611
+    },
+    {
+     "player_id": "Michael Beasley",
+     "bbr_id": "beaslmi01",
+     "position": "SF",
+     "games": 73,
+     "games_started": 73,
+     "minutes": 2361
+    },
+    {
+     "player_id": "Luke Ridnour",
+     "bbr_id": "ridnolu01",
+     "position": "PG",
+     "games": 71,
+     "games_started": 66,
+     "minutes": 2159
+    },
+    {
+     "player_id": "Wesley Johnson",
+     "bbr_id": "johnswe01",
+     "position": "SG",
+     "games": 79,
+     "games_started": 63,
+     "minutes": 2069
+    },
+    {
+     "player_id": "Darko Miličić",
+     "bbr_id": "milicda01",
+     "position": "C",
+     "games": 69,
+     "games_started": 69,
+     "minutes": 1686
+    },
+    {
+     "player_id": "Corey Brewer",
+     "bbr_id": "breweco01",
+     "position": "SF",
+     "games": 56,
+     "games_started": 22,
+     "minutes": 1362
+    },
+    {
+     "player_id": "Anthony Tolliver",
+     "bbr_id": "tollian01",
+     "position": "SF",
+     "games": 65,
+     "games_started": 4,
+     "minutes": 1362
+    },
+    {
+     "player_id": "Wayne Ellington",
+     "bbr_id": "ellinwa01",
+     "position": "SG",
+     "games": 62,
+     "games_started": 8,
+     "minutes": 1181
+    },
+    {
+     "player_id": "Martell Webster",
+     "bbr_id": "webstma02",
+     "position": "SF",
+     "games": 46,
+     "games_started": 1,
+     "minutes": 1094
+    },
+    {
+     "player_id": "Jonny Flynn",
+     "bbr_id": "flynnjo01",
+     "position": "PG",
+     "games": 53,
+     "games_started": 8,
+     "minutes": 983
+    },
+    {
+     "player_id": "Nikola Peković",
+     "bbr_id": "pekovni01",
+     "position": "C",
+     "games": 65,
+     "games_started": 11,
+     "minutes": 887
+    },
+    {
+     "player_id": "Sebastian Telfair",
+     "bbr_id": "telfase01",
+     "position": "PG",
+     "games": 37,
+     "games_started": 8,
+     "minutes": 711
+    },
+    {
+     "player_id": "Anthony Randolph",
+     "bbr_id": "randoan01",
+     "position": "C",
+     "games": 23,
+     "games_started": 3,
+     "minutes": 463
+    },
+    {
+     "player_id": "Lazar Hayward",
+     "bbr_id": "haywala01",
+     "position": "SF",
+     "games": 42,
+     "games_started": 0,
+     "minutes": 419
+    },
+    {
+     "player_id": "Kosta Koufos",
+     "bbr_id": "koufoko01",
+     "position": "C",
+     "games": 39,
+     "games_started": 1,
+     "minutes": 336
+    },
+    {
+     "player_id": "Sundiata Gaines",
+     "bbr_id": "gainesu01",
+     "position": "PG",
+     "games": 8,
+     "games_started": 0,
+     "minutes": 65
+    },
+    {
+     "player_id": "Maurice Ager",
+     "bbr_id": "agerma01",
+     "position": "SG",
+     "games": 4,
+     "games_started": 0,
+     "minutes": 29
+    }
+   ]
+  },
+  "New Jersey Nets": {
+   "code": "NJN",
+   "players": [
+    {
+     "player_id": "Brook Lopez",
+     "bbr_id": "lopezbr01",
+     "position": "C",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 2889
+    },
+    {
+     "player_id": "Travis Outlaw",
+     "bbr_id": "outlatr01",
+     "position": "SF",
+     "games": 82,
+     "games_started": 55,
+     "minutes": 2358
+    },
+    {
+     "player_id": "Kris Humphries",
+     "bbr_id": "humphkr01",
+     "position": "PF",
+     "games": 74,
+     "games_started": 44,
+     "minutes": 2061
+    },
+    {
+     "player_id": "Anthony Morrow",
+     "bbr_id": "morroan01",
+     "position": "SG",
+     "games": 58,
+     "games_started": 47,
+     "minutes": 1856
+    },
+    {
+     "player_id": "Jordan Farmar",
+     "bbr_id": "farmajo01",
+     "position": "PG",
+     "games": 73,
+     "games_started": 18,
+     "minutes": 1796
+    },
+    {
+     "player_id": "Devin Harris",
+     "bbr_id": "harride01",
+     "position": "PG",
+     "games": 54,
+     "games_started": 54,
+     "minutes": 1724
+    },
+    {
+     "player_id": "Sasha Vujačić",
+     "bbr_id": "vujacsa01",
+     "position": "SG",
+     "games": 56,
+     "games_started": 17,
+     "minutes": 1594
+    },
+    {
+     "player_id": "Derrick Favors",
+     "bbr_id": "favorde01",
+     "position": "PF",
+     "games": 56,
+     "games_started": 23,
+     "minutes": 1091
+    },
+    {
+     "player_id": "Stephen Graham",
+     "bbr_id": "grahast01",
+     "position": "SG",
+     "games": 59,
+     "games_started": 28,
+     "minutes": 959
+    },
+    {
+     "player_id": "Johan Petro",
+     "bbr_id": "petrojo01",
+     "position": "C",
+     "games": 77,
+     "games_started": 1,
+     "minutes": 893
+    },
+    {
+     "player_id": "Deron Williams",
+     "bbr_id": "willide01",
+     "position": "PG",
+     "games": 12,
+     "games_started": 12,
+     "minutes": 456
+    },
+    {
+     "player_id": "Ben Uzoh",
+     "bbr_id": "uzohbe01",
+     "position": "PG",
+     "games": 42,
+     "games_started": 0,
+     "minutes": 438
+    },
+    {
+     "player_id": "Damion James",
+     "bbr_id": "jamesda01",
+     "position": "SF",
+     "games": 25,
+     "games_started": 9,
+     "minutes": 403
+    },
+    {
+     "player_id": "Quinton Ross",
+     "bbr_id": "rossqu01",
+     "position": "SF",
+     "games": 36,
+     "games_started": 4,
+     "minutes": 353
+    },
+    {
+     "player_id": "Troy Murphy",
+     "bbr_id": "murphtr01",
+     "position": "PF",
+     "games": 18,
+     "games_started": 4,
+     "minutes": 288
+    },
+    {
+     "player_id": "Terrence Williams",
+     "bbr_id": "willite01",
+     "position": "SG",
+     "games": 10,
+     "games_started": 0,
+     "minutes": 206
+    },
+    {
+     "player_id": "Brandan Wright",
+     "bbr_id": "wrighbr03",
+     "position": "PF",
+     "games": 16,
+     "games_started": 1,
+     "minutes": 184
+    },
+    {
+     "player_id": "Dan Gadzuric",
+     "bbr_id": "gadzuda01",
+     "position": "PF",
+     "games": 14,
+     "games_started": 5,
+     "minutes": 166
+    },
+    {
+     "player_id": "Sundiata Gaines",
+     "bbr_id": "gainesu01",
+     "position": "PG",
+     "games": 10,
+     "games_started": 0,
+     "minutes": 146
+    },
+    {
+     "player_id": "Mario West",
+     "bbr_id": "westma02",
+     "position": "SG",
+     "games": 6,
+     "games_started": 3,
+     "minutes": 116
+    },
+    {
+     "player_id": "Joe Smith",
+     "bbr_id": "smithjo02",
+     "position": "PF",
+     "games": 4,
+     "games_started": 3,
+     "minutes": 25
+    },
+    {
+     "player_id": "Orien Greene",
+     "bbr_id": "greenor01",
+     "position": "SG",
+     "games": 3,
+     "games_started": 0,
+     "minutes": 5
+    }
+   ]
+  },
+  "New Orleans Hornets": {
+   "code": "NOH",
+   "players": [
+    {
+     "player_id": "Chris Paul",
+     "bbr_id": "paulch01",
+     "position": "PG",
+     "games": 80,
+     "games_started": 80,
+     "minutes": 2880
+    },
+    {
+     "player_id": "Trevor Ariza",
+     "bbr_id": "arizatr01",
+     "position": "SF",
+     "games": 75,
+     "games_started": 75,
+     "minutes": 2600
+    },
+    {
+     "player_id": "David West",
+     "bbr_id": "westda01",
+     "position": "PF",
+     "games": 70,
+     "games_started": 70,
+     "minutes": 2451
+    },
+    {
+     "player_id": "Emeka Okafor",
+     "bbr_id": "okafoem01",
+     "position": "C",
+     "games": 72,
+     "games_started": 72,
+     "minutes": 2287
+    },
+    {
+     "player_id": "Marco Belinelli",
+     "bbr_id": "belinma01",
+     "position": "SG",
+     "games": 80,
+     "games_started": 69,
+     "minutes": 1957
+    },
+    {
+     "player_id": "Willie Green",
+     "bbr_id": "greenwi01",
+     "position": "SG",
+     "games": 77,
+     "games_started": 13,
+     "minutes": 1674
+    },
+    {
+     "player_id": "Jarrett Jack",
+     "bbr_id": "jackja01",
+     "position": "SG",
+     "games": 70,
+     "games_started": 2,
+     "minutes": 1375
+    },
+    {
+     "player_id": "Jason Smith",
+     "bbr_id": "smithja02",
+     "position": "C",
+     "games": 77,
+     "games_started": 6,
+     "minutes": 1102
+    },
+    {
+     "player_id": "Marcus Thornton",
+     "bbr_id": "thornma01",
+     "position": "SG",
+     "games": 46,
+     "games_started": 0,
+     "minutes": 745
+    },
+    {
+     "player_id": "Quincy Pondexter",
+     "bbr_id": "pondequ01",
+     "position": "SF",
+     "games": 66,
+     "games_started": 6,
+     "minutes": 734
+    },
+    {
+     "player_id": "Carl Landry",
+     "bbr_id": "landrca01",
+     "position": "PF",
+     "games": 23,
+     "games_started": 10,
+     "minutes": 602
+    },
+    {
+     "player_id": "Aaron Gray",
+     "bbr_id": "grayaa01",
+     "position": "C",
+     "games": 41,
+     "games_started": 6,
+     "minutes": 531
+    },
+    {
+     "player_id": "D.J. Mbenga",
+     "bbr_id": "mbengdj01",
+     "position": "C",
+     "games": 41,
+     "games_started": 0,
+     "minutes": 330
+    },
+    {
+     "player_id": "David Andersen",
+     "bbr_id": "anderda03",
+     "position": "PF",
+     "games": 29,
+     "games_started": 0,
+     "minutes": 223
+    },
+    {
+     "player_id": "Jerryd Bayless",
+     "bbr_id": "bayleje01",
+     "position": "PG",
+     "games": 11,
+     "games_started": 0,
+     "minutes": 149
+    },
+    {
+     "player_id": "Peja Stojaković",
+     "bbr_id": "stojape01",
+     "position": "SF",
+     "games": 6,
+     "games_started": 0,
+     "minutes": 89
+    },
+    {
+     "player_id": "Sasha Pavlović",
+     "bbr_id": "pavloal01",
+     "position": "SG",
+     "games": 4,
+     "games_started": 1,
+     "minutes": 50
+    },
+    {
+     "player_id": "Pops Mensah-Bonsu",
+     "bbr_id": "mensapo01",
+     "position": "PF",
+     "games": 7,
+     "games_started": 0,
+     "minutes": 35
+    },
+    {
+     "player_id": "Patrick Ewing",
+     "bbr_id": "ewingpa02",
+     "position": "SF",
+     "games": 7,
+     "games_started": 0,
+     "minutes": 19
+    }
+   ]
+  },
+  "New York Knicks": {
+   "code": "NYK",
+   "players": [
+    {
+     "player_id": "Amar'e Stoudemire",
+     "bbr_id": "stoudam01",
+     "position": "C",
+     "games": 78,
+     "games_started": 78,
+     "minutes": 2870
+    },
+    {
+     "player_id": "Landry Fields",
+     "bbr_id": "fieldla01",
+     "position": "SG",
+     "games": 82,
+     "games_started": 81,
+     "minutes": 2541
+    },
+    {
+     "player_id": "Raymond Felton",
+     "bbr_id": "feltora01",
+     "position": "PG",
+     "games": 54,
+     "games_started": 54,
+     "minutes": 2074
+    },
+    {
+     "player_id": "Toney Douglas",
+     "bbr_id": "douglto01",
+     "position": "SG",
+     "games": 81,
+     "games_started": 9,
+     "minutes": 1971
+    },
+    {
+     "player_id": "Wilson Chandler",
+     "bbr_id": "chandwi01",
+     "position": "SF",
+     "games": 51,
+     "games_started": 30,
+     "minutes": 1759
+    },
+    {
+     "player_id": "Danilo Gallinari",
+     "bbr_id": "gallida01",
+     "position": "PF",
+     "games": 48,
+     "games_started": 48,
+     "minutes": 1671
+    },
+    {
+     "player_id": "Shawne Williams",
+     "bbr_id": "willish03",
+     "position": "PF",
+     "games": 64,
+     "games_started": 11,
+     "minutes": 1323
+    },
+    {
+     "player_id": "Ronny Turiaf",
+     "bbr_id": "turiaro01",
+     "position": "C",
+     "games": 64,
+     "games_started": 21,
+     "minutes": 1141
+    },
+    {
+     "player_id": "Carmelo Anthony",
+     "bbr_id": "anthoca01",
+     "position": "SF",
+     "games": 27,
+     "games_started": 27,
+     "minutes": 977
+    },
+    {
+     "player_id": "Henry Walker",
+     "bbr_id": "walkebi01",
+     "position": "SG",
+     "games": 61,
+     "games_started": 1,
+     "minutes": 784
+    },
+    {
+     "player_id": "Chauncey Billups",
+     "bbr_id": "billuch01",
+     "position": "PG",
+     "games": 21,
+     "games_started": 21,
+     "minutes": 664
+    },
+    {
+     "player_id": "Jared Jeffries",
+     "bbr_id": "jeffrja01",
+     "position": "PF",
+     "games": 24,
+     "games_started": 9,
+     "minutes": 463
+    },
+    {
+     "player_id": "Timofey Mozgov",
+     "bbr_id": "mozgoti01",
+     "position": "C",
+     "games": 34,
+     "games_started": 14,
+     "minutes": 458
+    },
+    {
+     "player_id": "Roger Mason",
+     "bbr_id": "masonro01",
+     "position": "SG",
+     "games": 26,
+     "games_started": 0,
+     "minutes": 319
+    },
+    {
+     "player_id": "Anthony Carter",
+     "bbr_id": "cartean01",
+     "position": "PG",
+     "games": 19,
+     "games_started": 0,
+     "minutes": 310
+    },
+    {
+     "player_id": "Shelden Williams",
+     "bbr_id": "willish02",
+     "position": "PF",
+     "games": 17,
+     "games_started": 6,
+     "minutes": 198
+    },
+    {
+     "player_id": "Anthony Randolph",
+     "bbr_id": "randoan01",
+     "position": "PF",
+     "games": 17,
+     "games_started": 0,
+     "minutes": 127
+    },
+    {
+     "player_id": "Derrick Brown",
+     "bbr_id": "brownde04",
+     "position": "SF",
+     "games": 8,
+     "games_started": 0,
+     "minutes": 88
+    },
+    {
+     "player_id": "Andy Rautins",
+     "bbr_id": "rautian01",
+     "position": "SG",
+     "games": 5,
+     "games_started": 0,
+     "minutes": 24
+    },
+    {
+     "player_id": "Renaldo Balkman",
+     "bbr_id": "balkmre01",
+     "position": "SF",
+     "games": 3,
+     "games_started": 0,
+     "minutes": 18
+    }
+   ]
+  },
+  "Oklahoma City Thunder": {
+   "code": "OKC",
+   "players": [
+    {
+     "player_id": "Kevin Durant",
+     "bbr_id": "duranke01",
+     "position": "SF",
+     "games": 78,
+     "games_started": 78,
+     "minutes": 3038
+    },
+    {
+     "player_id": "Russell Westbrook",
+     "bbr_id": "westbru01",
+     "position": "PG",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 2847
+    },
+    {
+     "player_id": "Serge Ibaka",
+     "bbr_id": "ibakase01",
+     "position": "PF",
+     "games": 82,
+     "games_started": 44,
+     "minutes": 2216
+    },
+    {
+     "player_id": "James Harden",
+     "bbr_id": "hardeja01",
+     "position": "SG",
+     "games": 82,
+     "games_started": 5,
+     "minutes": 2189
+    },
+    {
+     "player_id": "Thabo Sefolosha",
+     "bbr_id": "sefolth01",
+     "position": "SG",
+     "games": 79,
+     "games_started": 79,
+     "minutes": 2049
+    },
+    {
+     "player_id": "Jeff Green",
+     "bbr_id": "greenje02",
+     "position": "PF",
+     "games": 49,
+     "games_started": 49,
+     "minutes": 1815
+    },
+    {
+     "player_id": "Nick Collison",
+     "bbr_id": "collini01",
+     "position": "C",
+     "games": 71,
+     "games_started": 2,
+     "minutes": 1524
+    },
+    {
+     "player_id": "Eric Maynor",
+     "bbr_id": "maynoer01",
+     "position": "PG",
+     "games": 82,
+     "games_started": 0,
+     "minutes": 1200
+    },
+    {
+     "player_id": "Nenad Krstić",
+     "bbr_id": "krstine01",
+     "position": "C",
+     "games": 47,
+     "games_started": 47,
+     "minutes": 1018
+    },
+    {
+     "player_id": "Daequan Cook",
+     "bbr_id": "cookda02",
+     "position": "SG",
+     "games": 43,
+     "games_started": 0,
+     "minutes": 598
+    },
+    {
+     "player_id": "Nazr Mohammed",
+     "bbr_id": "mohamna01",
+     "position": "C",
+     "games": 24,
+     "games_started": 7,
+     "minutes": 429
+    },
+    {
+     "player_id": "Kendrick Perkins",
+     "bbr_id": "perkike01",
+     "position": "C",
+     "games": 17,
+     "games_started": 17,
+     "minutes": 429
+    },
+    {
+     "player_id": "D.J. White",
+     "bbr_id": "whitedj01",
+     "position": "PF",
+     "games": 23,
+     "games_started": 0,
+     "minutes": 219
+    },
+    {
+     "player_id": "Royal Ivey",
+     "bbr_id": "iveyro01",
+     "position": "SG",
+     "games": 25,
+     "games_started": 0,
+     "minutes": 155
+    },
+    {
+     "player_id": "Cole Aldrich",
+     "bbr_id": "aldrico01",
+     "position": "C",
+     "games": 18,
+     "games_started": 0,
+     "minutes": 142
+    },
+    {
+     "player_id": "Byron Mullens",
+     "bbr_id": "mulleby01",
+     "position": "PF",
+     "games": 13,
+     "games_started": 0,
+     "minutes": 85
+    },
+    {
+     "player_id": "Nate Robinson",
+     "bbr_id": "robinna01",
+     "position": "PG",
+     "games": 4,
+     "games_started": 0,
+     "minutes": 30
+    },
+    {
+     "player_id": "Morris Peterson",
+     "bbr_id": "petermo01",
+     "position": "SG",
+     "games": 4,
+     "games_started": 0,
+     "minutes": 23
+    }
+   ]
+  },
+  "Orlando Magic": {
+   "code": "ORL",
+   "players": [
+    {
+     "player_id": "Dwight Howard",
+     "bbr_id": "howardw01",
+     "position": "C",
+     "games": 78,
+     "games_started": 78,
+     "minutes": 2935
+    },
+    {
+     "player_id": "Jameer Nelson",
+     "bbr_id": "nelsoja01",
+     "position": "PG",
+     "games": 76,
+     "games_started": 76,
+     "minutes": 2319
+    },
+    {
+     "player_id": "Brandon Bass",
+     "bbr_id": "bassbr01",
+     "position": "PF",
+     "games": 76,
+     "games_started": 51,
+     "minutes": 1980
+    },
+    {
+     "player_id": "Jason Richardson",
+     "bbr_id": "richaja01",
+     "position": "SG",
+     "games": 55,
+     "games_started": 55,
+     "minutes": 1919
+    },
+    {
+     "player_id": "Hedo Türkoğlu",
+     "bbr_id": "turkohe01",
+     "position": "SF",
+     "games": 56,
+     "games_started": 56,
+     "minutes": 1910
+    },
+    {
+     "player_id": "JJ Redick",
+     "bbr_id": "redicjj01",
+     "position": "SG",
+     "games": 59,
+     "games_started": 5,
+     "minutes": 1513
+    },
+    {
+     "player_id": "Ryan Anderson",
+     "bbr_id": "anderry01",
+     "position": "PF",
+     "games": 64,
+     "games_started": 14,
+     "minutes": 1424
+    },
+    {
+     "player_id": "Gilbert Arenas",
+     "bbr_id": "arenagi01",
+     "position": "PG",
+     "games": 49,
+     "games_started": 2,
+     "minutes": 1070
+    },
+    {
+     "player_id": "Quentin Richardson",
+     "bbr_id": "richaqu01",
+     "position": "SF",
+     "games": 57,
+     "games_started": 19,
+     "minutes": 955
+    },
+    {
+     "player_id": "Rashard Lewis",
+     "bbr_id": "lewisra02",
+     "position": "PF",
+     "games": 25,
+     "games_started": 25,
+     "minutes": 810
+    },
+    {
+     "player_id": "Chris Duhon",
+     "bbr_id": "duhonch01",
+     "position": "PG",
+     "games": 51,
+     "games_started": 5,
+     "minutes": 774
+    },
+    {
+     "player_id": "Vince Carter",
+     "bbr_id": "cartevi01",
+     "position": "SG",
+     "games": 22,
+     "games_started": 22,
+     "minutes": 664
+    },
+    {
+     "player_id": "Mickaël Piétrus",
+     "bbr_id": "pietrmi01",
+     "position": "SF",
+     "games": 19,
+     "games_started": 0,
+     "minutes": 418
+    },
+    {
+     "player_id": "Marcin Gortat",
+     "bbr_id": "gortama01",
+     "position": "C",
+     "games": 25,
+     "games_started": 2,
+     "minutes": 396
+    },
+    {
+     "player_id": "Earl Clark",
+     "bbr_id": "clarkea01",
+     "position": "SF",
+     "games": 33,
+     "games_started": 0,
+     "minutes": 392
+    },
+    {
+     "player_id": "Malik Allen",
+     "bbr_id": "allenma01",
+     "position": "PF",
+     "games": 18,
+     "games_started": 0,
+     "minutes": 178
+    },
+    {
+     "player_id": "Jason Williams",
+     "bbr_id": "willija02",
+     "position": "PG",
+     "games": 16,
+     "games_started": 0,
+     "minutes": 171
+    }
+   ]
+  },
+  "Philadelphia 76ers": {
+   "code": "PHI",
+   "players": [
+    {
+     "player_id": "Jrue Holiday",
+     "bbr_id": "holidjr01",
+     "position": "PG",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 2901
+    },
+    {
+     "player_id": "Elton Brand",
+     "bbr_id": "brandel01",
+     "position": "PF",
+     "games": 81,
+     "games_started": 81,
+     "minutes": 2809
+    },
+    {
+     "player_id": "Andre Iguodala",
+     "bbr_id": "iguodan01",
+     "position": "SF",
+     "games": 67,
+     "games_started": 67,
+     "minutes": 2469
+    },
+    {
+     "player_id": "Thaddeus Young",
+     "bbr_id": "youngth01",
+     "position": "PF",
+     "games": 82,
+     "games_started": 1,
+     "minutes": 2135
+    },
+    {
+     "player_id": "Jodie Meeks",
+     "bbr_id": "meeksjo01",
+     "position": "SG",
+     "games": 74,
+     "games_started": 64,
+     "minutes": 2062
+    },
+    {
+     "player_id": "Evan Turner",
+     "bbr_id": "turneev01",
+     "position": "SG",
+     "games": 78,
+     "games_started": 14,
+     "minutes": 1797
+    },
+    {
+     "player_id": "Lou Williams",
+     "bbr_id": "willilo02",
+     "position": "SG",
+     "games": 75,
+     "games_started": 0,
+     "minutes": 1747
+    },
+    {
+     "player_id": "Spencer Hawes",
+     "bbr_id": "hawessp01",
+     "position": "C",
+     "games": 81,
+     "games_started": 81,
+     "minutes": 1718
+    },
+    {
+     "player_id": "Andrés Nocioni",
+     "bbr_id": "nocioan01",
+     "position": "SF",
+     "games": 54,
+     "games_started": 17,
+     "minutes": 931
+    },
+    {
+     "player_id": "Marreese Speights",
+     "bbr_id": "speigma01",
+     "position": "C",
+     "games": 64,
+     "games_started": 1,
+     "minutes": 734
+    },
+    {
+     "player_id": "Tony Battie",
+     "bbr_id": "battito01",
+     "position": "C",
+     "games": 38,
+     "games_started": 0,
+     "minutes": 377
+    },
+    {
+     "player_id": "Jason Kapono",
+     "bbr_id": "kaponja01",
+     "position": "SF",
+     "games": 24,
+     "games_started": 2,
+     "minutes": 112
+    },
+    {
+     "player_id": "Darius Songaila",
+     "bbr_id": "songada01",
+     "position": "C",
+     "games": 10,
+     "games_started": 0,
+     "minutes": 71
+    },
+    {
+     "player_id": "Antonio Daniels",
+     "bbr_id": "daniean01",
+     "position": "PG",
+     "games": 4,
+     "games_started": 0,
+     "minutes": 35
+    },
+    {
+     "player_id": "Craig Brackins",
+     "bbr_id": "brackcr01",
+     "position": "PF",
+     "games": 3,
+     "games_started": 0,
+     "minutes": 33
+    }
+   ]
+  },
+  "Phoenix Suns": {
+   "code": "PHO",
+   "players": [
+    {
+     "player_id": "Channing Frye",
+     "bbr_id": "fryech01",
+     "position": "PF",
+     "games": 77,
+     "games_started": 64,
+     "minutes": 2541
+    },
+    {
+     "player_id": "Steve Nash",
+     "bbr_id": "nashst01",
+     "position": "PG",
+     "games": 75,
+     "games_started": 75,
+     "minutes": 2497
+    },
+    {
+     "player_id": "Grant Hill",
+     "bbr_id": "hillgr01",
+     "position": "SF",
+     "games": 80,
+     "games_started": 80,
+     "minutes": 2409
+    },
+    {
+     "player_id": "Jared Dudley",
+     "bbr_id": "dudleja01",
+     "position": "SF",
+     "games": 82,
+     "games_started": 15,
+     "minutes": 2140
+    },
+    {
+     "player_id": "Marcin Gortat",
+     "bbr_id": "gortama01",
+     "position": "C",
+     "games": 55,
+     "games_started": 12,
+     "minutes": 1636
+    },
+    {
+     "player_id": "Hakim Warrick",
+     "bbr_id": "warriha01",
+     "position": "PF",
+     "games": 80,
+     "games_started": 6,
+     "minutes": 1416
+    },
+    {
+     "player_id": "Vince Carter",
+     "bbr_id": "cartevi01",
+     "position": "SG",
+     "games": 51,
+     "games_started": 41,
+     "minutes": 1387
+    },
+    {
+     "player_id": "Robin Lopez",
+     "bbr_id": "lopezro01",
+     "position": "C",
+     "games": 67,
+     "games_started": 56,
+     "minutes": 991
+    },
+    {
+     "player_id": "Josh Childress",
+     "bbr_id": "childjo01",
+     "position": "SG",
+     "games": 54,
+     "games_started": 3,
+     "minutes": 894
+    },
+    {
+     "player_id": "Goran Dragić",
+     "bbr_id": "dragigo01",
+     "position": "PG",
+     "games": 48,
+     "games_started": 2,
+     "minutes": 856
+    },
+    {
+     "player_id": "Jason Richardson",
+     "bbr_id": "richaja01",
+     "position": "SG",
+     "games": 25,
+     "games_started": 25,
+     "minutes": 796
+    },
+    {
+     "player_id": "Mickaël Piétrus",
+     "bbr_id": "pietrmi01",
+     "position": "SG",
+     "games": 38,
+     "games_started": 4,
+     "minutes": 689
+    },
+    {
+     "player_id": "Hedo Türkoğlu",
+     "bbr_id": "turkohe01",
+     "position": "PF",
+     "games": 25,
+     "games_started": 16,
+     "minutes": 630
+    },
+    {
+     "player_id": "Aaron Brooks",
+     "bbr_id": "brookaa01",
+     "position": "PG",
+     "games": 25,
+     "games_started": 5,
+     "minutes": 473
+    },
+    {
+     "player_id": "Zabian Dowdell",
+     "bbr_id": "dowdeza01",
+     "position": "PG",
+     "games": 24,
+     "games_started": 0,
+     "minutes": 292
+    },
+    {
+     "player_id": "Earl Barron",
+     "bbr_id": "barroea01",
+     "position": "C",
+     "games": 12,
+     "games_started": 6,
+     "minutes": 183
+    },
+    {
+     "player_id": "Garret Siler",
+     "bbr_id": "silerga01",
+     "position": "C",
+     "games": 21,
+     "games_started": 0,
+     "minutes": 101
+    },
+    {
+     "player_id": "Earl Clark",
+     "bbr_id": "clarkea01",
+     "position": "SF",
+     "games": 9,
+     "games_started": 0,
+     "minutes": 72
+    },
+    {
+     "player_id": "Gani Lawal",
+     "bbr_id": "lawalga01",
+     "position": "PF",
+     "games": 1,
+     "games_started": 0,
+     "minutes": 2
+    }
+   ]
+  },
+  "Portland Trail Blazers": {
+   "code": "POR",
+   "players": [
+    {
+     "player_id": "LaMarcus Aldridge",
+     "bbr_id": "aldrila01",
+     "position": "PF",
+     "games": 81,
+     "games_started": 81,
+     "minutes": 3211
+    },
+    {
+     "player_id": "Wesley Matthews",
+     "bbr_id": "matthwe02",
+     "position": "SG",
+     "games": 82,
+     "games_started": 69,
+     "minutes": 2758
+    },
+    {
+     "player_id": "Andre Miller",
+     "bbr_id": "millean02",
+     "position": "PG",
+     "games": 81,
+     "games_started": 81,
+     "minutes": 2650
+    },
+    {
+     "player_id": "Nicolas Batum",
+     "bbr_id": "batumni01",
+     "position": "SF",
+     "games": 80,
+     "games_started": 67,
+     "minutes": 2522
+    },
+    {
+     "player_id": "Rudy Fernández",
+     "bbr_id": "fernaru01",
+     "position": "SG",
+     "games": 78,
+     "games_started": 3,
+     "minutes": 1821
+    },
+    {
+     "player_id": "Marcus Camby",
+     "bbr_id": "cambyma01",
+     "position": "C",
+     "games": 59,
+     "games_started": 51,
+     "minutes": 1540
+    },
+    {
+     "player_id": "Brandon Roy",
+     "bbr_id": "roybr01",
+     "position": "SG",
+     "games": 47,
+     "games_started": 23,
+     "minutes": 1310
+    },
+    {
+     "player_id": "Dante Cunningham",
+     "bbr_id": "cunnida01",
+     "position": "PF",
+     "games": 56,
+     "games_started": 9,
+     "minutes": 1108
+    },
+    {
+     "player_id": "Gerald Wallace",
+     "bbr_id": "wallage01",
+     "position": "PF",
+     "games": 23,
+     "games_started": 15,
+     "minutes": 821
+    },
+    {
+     "player_id": "Patty Mills",
+     "bbr_id": "millspa02",
+     "position": "PG",
+     "games": 64,
+     "games_started": 0,
+     "minutes": 783
+    },
+    {
+     "player_id": "Joel Przybilla",
+     "bbr_id": "przybjo01",
+     "position": "C",
+     "games": 31,
+     "games_started": 9,
+     "minutes": 445
+    },
+    {
+     "player_id": "Armon Johnson",
+     "bbr_id": "johnsar02",
+     "position": "PG",
+     "games": 38,
+     "games_started": 0,
+     "minutes": 277
+    },
+    {
+     "player_id": "Sean Marks",
+     "bbr_id": "marksse01",
+     "position": "C",
+     "games": 29,
+     "games_started": 0,
+     "minutes": 208
+    },
+    {
+     "player_id": "Luke Babbitt",
+     "bbr_id": "babbilu01",
+     "position": "SF",
+     "games": 24,
+     "games_started": 0,
+     "minutes": 137
+    },
+    {
+     "player_id": "Chris Johnson",
+     "bbr_id": "johnsch03",
+     "position": "C",
+     "games": 10,
+     "games_started": 1,
+     "minutes": 106
+    },
+    {
+     "player_id": "Fabricio Oberto",
+     "bbr_id": "obertfa01",
+     "position": "C",
+     "games": 5,
+     "games_started": 0,
+     "minutes": 45
+    },
+    {
+     "player_id": "Earl Barron",
+     "bbr_id": "barroea01",
+     "position": "C",
+     "games": 2,
+     "games_started": 1,
+     "minutes": 37
+    },
+    {
+     "player_id": "Jarron Collins",
+     "bbr_id": "collija03",
+     "position": "C",
+     "games": 5,
+     "games_started": 0,
+     "minutes": 24
+    }
+   ]
+  },
+  "Sacramento Kings": {
+   "code": "SAC",
+   "players": [
+    {
+     "player_id": "Beno Udrih",
+     "bbr_id": "udrihbe01",
+     "position": "PG",
+     "games": 79,
+     "games_started": 64,
+     "minutes": 2734
+    },
+    {
+     "player_id": "DeMarcus Cousins",
+     "bbr_id": "couside01",
+     "position": "C",
+     "games": 81,
+     "games_started": 62,
+     "minutes": 2309
+    },
+    {
+     "player_id": "Tyreke Evans",
+     "bbr_id": "evansty01",
+     "position": "SG",
+     "games": 57,
+     "games_started": 53,
+     "minutes": 2107
+    },
+    {
+     "player_id": "Samuel Dalembert",
+     "bbr_id": "dalemsa01",
+     "position": "C",
+     "games": 80,
+     "games_started": 46,
+     "minutes": 1938
+    },
+    {
+     "player_id": "Jason Thompson",
+     "bbr_id": "thompja02",
+     "position": "PF",
+     "games": 75,
+     "games_started": 39,
+     "minutes": 1748
+    },
+    {
+     "player_id": "Omri Casspi",
+     "bbr_id": "casspom01",
+     "position": "SF",
+     "games": 71,
+     "games_started": 27,
+     "minutes": 1702
+    },
+    {
+     "player_id": "Carl Landry",
+     "bbr_id": "landrca01",
+     "position": "PF",
+     "games": 53,
+     "games_started": 16,
+     "minutes": 1406
+    },
+    {
+     "player_id": "Francisco García",
+     "bbr_id": "garcifr01",
+     "position": "SF",
+     "games": 58,
+     "games_started": 34,
+     "minutes": 1386
+    },
+    {
+     "player_id": "Donté Greene",
+     "bbr_id": "greendo01",
+     "position": "SF",
+     "games": 69,
+     "games_started": 21,
+     "minutes": 1127
+    },
+    {
+     "player_id": "Marcus Thornton",
+     "bbr_id": "thornma01",
+     "position": "SG",
+     "games": 27,
+     "games_started": 23,
+     "minutes": 1030
+    },
+    {
+     "player_id": "Eugene Jeter",
+     "bbr_id": "jetereu01",
+     "position": "PG",
+     "games": 62,
+     "games_started": 1,
+     "minutes": 858
+    },
+    {
+     "player_id": "Luther Head",
+     "bbr_id": "headlu01",
+     "position": "PG",
+     "games": 36,
+     "games_started": 14,
+     "minutes": 586
+    },
+    {
+     "player_id": "Darnell Jackson",
+     "bbr_id": "jacksda01",
+     "position": "PF",
+     "games": 59,
+     "games_started": 2,
+     "minutes": 486
+    },
+    {
+     "player_id": "Jermaine Taylor",
+     "bbr_id": "tayloje02",
+     "position": "SG",
+     "games": 26,
+     "games_started": 8,
+     "minutes": 406
+    },
+    {
+     "player_id": "Antoine Wright",
+     "bbr_id": "wrighan01",
+     "position": "SG",
+     "games": 7,
+     "games_started": 0,
+     "minutes": 31
+    },
+    {
+     "player_id": "Hassan Whiteside",
+     "bbr_id": "whiteha01",
+     "position": "C",
+     "games": 1,
+     "games_started": 0,
+     "minutes": 2
+    }
+   ]
+  },
+  "San Antonio Spurs": {
+   "code": "SAS",
+   "players": [
+    {
+     "player_id": "Tony Parker",
+     "bbr_id": "parketo01",
+     "position": "PG",
+     "games": 78,
+     "games_started": 78,
+     "minutes": 2528
+    },
+    {
+     "player_id": "Richard Jefferson",
+     "bbr_id": "jefferi01",
+     "position": "SF",
+     "games": 81,
+     "games_started": 81,
+     "minutes": 2459
+    },
+    {
+     "player_id": "Manu Ginóbili",
+     "bbr_id": "ginobma01",
+     "position": "SG",
+     "games": 80,
+     "games_started": 79,
+     "minutes": 2426
+    },
+    {
+     "player_id": "Tim Duncan",
+     "bbr_id": "duncati01",
+     "position": "C",
+     "games": 76,
+     "games_started": 76,
+     "minutes": 2156
+    },
+    {
+     "player_id": "George Hill",
+     "bbr_id": "hillge01",
+     "position": "PG",
+     "games": 76,
+     "games_started": 5,
+     "minutes": 2148
+    },
+    {
+     "player_id": "DeJuan Blair",
+     "bbr_id": "blairde01",
+     "position": "PF",
+     "games": 81,
+     "games_started": 65,
+     "minutes": 1734
+    },
+    {
+     "player_id": "Gary Neal",
+     "bbr_id": "nealga01",
+     "position": "SG",
+     "games": 80,
+     "games_started": 1,
+     "minutes": 1685
+    },
+    {
+     "player_id": "Matt Bonner",
+     "bbr_id": "bonnema01",
+     "position": "PF",
+     "games": 66,
+     "games_started": 1,
+     "minutes": 1432
+    },
+    {
+     "player_id": "Antonio McDyess",
+     "bbr_id": "mcdyean01",
+     "position": "PF",
+     "games": 73,
+     "games_started": 16,
+     "minutes": 1387
+    },
+    {
+     "player_id": "Tiago Splitter",
+     "bbr_id": "splitti01",
+     "position": "C",
+     "games": 60,
+     "games_started": 6,
+     "minutes": 738
+    },
+    {
+     "player_id": "Chris Quinn",
+     "bbr_id": "quinnch01",
+     "position": "PG",
+     "games": 41,
+     "games_started": 0,
+     "minutes": 292
+    },
+    {
+     "player_id": "James Anderson",
+     "bbr_id": "anderja01",
+     "position": "SF",
+     "games": 26,
+     "games_started": 2,
+     "minutes": 286
+    },
+    {
+     "player_id": "Steve Novak",
+     "bbr_id": "novakst01",
+     "position": "SF",
+     "games": 23,
+     "games_started": 0,
+     "minutes": 197
+    },
+    {
+     "player_id": "Ime Udoka",
+     "bbr_id": "udokaim01",
+     "position": "SF",
+     "games": 20,
+     "games_started": 0,
+     "minutes": 130
+    },
+    {
+     "player_id": "Danny Green",
+     "bbr_id": "greenda02",
+     "position": "SG",
+     "games": 8,
+     "games_started": 0,
+     "minutes": 92
+    },
+    {
+     "player_id": "Larry Owens",
+     "bbr_id": "owensla01",
+     "position": "SF",
+     "games": 7,
+     "games_started": 0,
+     "minutes": 31
+    },
+    {
+     "player_id": "Garrett Temple",
+     "bbr_id": "templga01",
+     "position": "SG",
+     "games": 3,
+     "games_started": 0,
+     "minutes": 21
+    },
+    {
+     "player_id": "Alonzo Gee",
+     "bbr_id": "geeal01",
+     "position": "SG",
+     "games": 5,
+     "games_started": 0,
+     "minutes": 18
+    },
+    {
+     "player_id": "Bobby Simmons",
+     "bbr_id": "simmobo01",
+     "position": "SF",
+     "games": 2,
+     "games_started": 0,
+     "minutes": 16
+    },
+    {
+     "player_id": "Othyus Jeffers",
+     "bbr_id": "jeffeot01",
+     "position": "SG",
+     "games": 1,
+     "games_started": 0,
+     "minutes": 8
+    }
+   ]
+  },
+  "Toronto Raptors": {
+   "code": "TOR",
+   "players": [
+    {
+     "player_id": "DeMar DeRozan",
+     "bbr_id": "derozde01",
+     "position": "SG",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 2851
+    },
+    {
+     "player_id": "Andrea Bargnani",
+     "bbr_id": "bargnan01",
+     "position": "C",
+     "games": 66,
+     "games_started": 66,
+     "minutes": 2353
+    },
+    {
+     "player_id": "José Calderón",
+     "bbr_id": "caldejo01",
+     "position": "PG",
+     "games": 68,
+     "games_started": 55,
+     "minutes": 2102
+    },
+    {
+     "player_id": "Amir Johnson",
+     "bbr_id": "johnsam01",
+     "position": "PF",
+     "games": 72,
+     "games_started": 54,
+     "minutes": 1853
+    },
+    {
+     "player_id": "Ed Davis",
+     "bbr_id": "davised01",
+     "position": "PF",
+     "games": 65,
+     "games_started": 17,
+     "minutes": 1602
+    },
+    {
+     "player_id": "Sonny Weems",
+     "bbr_id": "weemsso01",
+     "position": "SF",
+     "games": 59,
+     "games_started": 28,
+     "minutes": 1413
+    },
+    {
+     "player_id": "Leandro Barbosa",
+     "bbr_id": "barbole01",
+     "position": "SG",
+     "games": 58,
+     "games_started": 0,
+     "minutes": 1395
+    },
+    {
+     "player_id": "Jerryd Bayless",
+     "bbr_id": "bayleje01",
+     "position": "PG",
+     "games": 60,
+     "games_started": 14,
+     "minutes": 1347
+    },
+    {
+     "player_id": "Linas Kleiza",
+     "bbr_id": "kleizli01",
+     "position": "SF",
+     "games": 39,
+     "games_started": 23,
+     "minutes": 1032
+    },
+    {
+     "player_id": "Reggie Evans",
+     "bbr_id": "evansre01",
+     "position": "PF",
+     "games": 30,
+     "games_started": 18,
+     "minutes": 798
+    },
+    {
+     "player_id": "Julian Wright",
+     "bbr_id": "wrighju01",
+     "position": "SF",
+     "games": 52,
+     "games_started": 6,
+     "minutes": 766
+    },
+    {
+     "player_id": "James Johnson",
+     "bbr_id": "johnsja01",
+     "position": "SF",
+     "games": 25,
+     "games_started": 25,
+     "minutes": 699
+    },
+    {
+     "player_id": "Joey Dorsey",
+     "bbr_id": "dorsejo01",
+     "position": "C",
+     "games": 43,
+     "games_started": 9,
+     "minutes": 522
+    },
+    {
+     "player_id": "Jarrett Jack",
+     "bbr_id": "jackja01",
+     "position": "PG",
+     "games": 13,
+     "games_started": 13,
+     "minutes": 347
+    },
+    {
+     "player_id": "Alexis Ajinça",
+     "bbr_id": "ajincal01",
+     "position": "C",
+     "games": 24,
+     "games_started": 0,
+     "minutes": 265
+    },
+    {
+     "player_id": "David Andersen",
+     "bbr_id": "anderda03",
+     "position": "PF",
+     "games": 11,
+     "games_started": 0,
+     "minutes": 150
+    },
+    {
+     "player_id": "Sundiata Gaines",
+     "bbr_id": "gainesu01",
+     "position": "PG",
+     "games": 6,
+     "games_started": 0,
+     "minutes": 90
+    },
+    {
+     "player_id": "Trey Johnson",
+     "bbr_id": "johnstr01",
+     "position": "SG",
+     "games": 7,
+     "games_started": 0,
+     "minutes": 81
+    },
+    {
+     "player_id": "Solomon Alabi",
+     "bbr_id": "alabiso01",
+     "position": "C",
+     "games": 12,
+     "games_started": 0,
+     "minutes": 59
+    },
+    {
+     "player_id": "Marcus Banks",
+     "bbr_id": "banksma01",
+     "position": "PG",
+     "games": 3,
+     "games_started": 0,
+     "minutes": 22
+    },
+    {
+     "player_id": "Peja Stojaković",
+     "bbr_id": "stojape01",
+     "position": "SF",
+     "games": 2,
+     "games_started": 0,
+     "minutes": 22
+    },
+    {
+     "player_id": "Ronald Dupree",
+     "bbr_id": "duprero01",
+     "position": "SF",
+     "games": 3,
+     "games_started": 0,
+     "minutes": 13
+    }
+   ]
+  },
+  "Utah Jazz": {
+   "code": "UTA",
+   "players": [
+    {
+     "player_id": "Al Jefferson",
+     "bbr_id": "jeffeal01",
+     "position": "C",
+     "games": 82,
+     "games_started": 82,
+     "minutes": 2940
+    },
+    {
+     "player_id": "Paul Millsap",
+     "bbr_id": "millspa01",
+     "position": "PF",
+     "games": 76,
+     "games_started": 76,
+     "minutes": 2605
+    },
+    {
+     "player_id": "Raja Bell",
+     "bbr_id": "bellra01",
+     "position": "SG",
+     "games": 68,
+     "games_started": 63,
+     "minutes": 2097
+    },
+    {
+     "player_id": "Deron Williams",
+     "bbr_id": "willide01",
+     "position": "PG",
+     "games": 53,
+     "games_started": 53,
+     "minutes": 2009
+    },
+    {
+     "player_id": "Andrei Kirilenko",
+     "bbr_id": "kirilan01",
+     "position": "SF",
+     "games": 64,
+     "games_started": 62,
+     "minutes": 1999
+    },
+    {
+     "player_id": "C.J. Miles",
+     "bbr_id": "milescj01",
+     "position": "SF",
+     "games": 78,
+     "games_started": 19,
+     "minutes": 1969
+    },
+    {
+     "player_id": "Earl Watson",
+     "bbr_id": "watsoea01",
+     "position": "PG",
+     "games": 80,
+     "games_started": 13,
+     "minutes": 1567
+    },
+    {
+     "player_id": "Gordon Hayward",
+     "bbr_id": "haywago01",
+     "position": "SF",
+     "games": 72,
+     "games_started": 17,
+     "minutes": 1218
+    },
+    {
+     "player_id": "Ronnie Price",
+     "bbr_id": "pricero01",
+     "position": "SG",
+     "games": 59,
+     "games_started": 0,
+     "minutes": 717
+    },
+    {
+     "player_id": "Francisco Elson",
+     "bbr_id": "elsonfr01",
+     "position": "C",
+     "games": 62,
+     "games_started": 1,
+     "minutes": 610
+    },
+    {
+     "player_id": "Devin Harris",
+     "bbr_id": "harride01",
+     "position": "PG",
+     "games": 17,
+     "games_started": 16,
+     "minutes": 530
+    },
+    {
+     "player_id": "Jeremy Evans",
+     "bbr_id": "evansje01",
+     "position": "SF",
+     "games": 49,
+     "games_started": 3,
+     "minutes": 463
+    },
+    {
+     "player_id": "Kyrylo Fesenko",
+     "bbr_id": "fesenky01",
+     "position": "C",
+     "games": 53,
+     "games_started": 1,
+     "minutes": 456
+    },
+    {
+     "player_id": "Derrick Favors",
+     "bbr_id": "favorde01",
+     "position": "PF",
+     "games": 22,
+     "games_started": 4,
+     "minutes": 444
+    },
+    {
+     "player_id": "Mehmet Okur",
+     "bbr_id": "okurme01",
+     "position": "C",
+     "games": 13,
+     "games_started": 0,
+     "minutes": 168
+    },
+    {
+     "player_id": "Kyle Weaver",
+     "bbr_id": "weaveky01",
+     "position": "SG",
+     "games": 5,
+     "games_started": 0,
+     "minutes": 69
+    },
+    {
+     "player_id": "Marcus Cousin",
+     "bbr_id": "cousima01",
+     "position": "C",
+     "games": 4,
+     "games_started": 0,
+     "minutes": 18
+    }
+   ]
+  },
+  "Washington Wizards": {
+   "code": "WAS",
+   "players": [
+    {
+     "player_id": "John Wall",
+     "bbr_id": "walljo01",
+     "position": "PG",
+     "games": 69,
+     "games_started": 64,
+     "minutes": 2606
+    },
+    {
+     "player_id": "JaVale McGee",
+     "bbr_id": "mcgeeja01",
+     "position": "C",
+     "games": 79,
+     "games_started": 75,
+     "minutes": 2193
+    },
+    {
+     "player_id": "Andray Blatche",
+     "bbr_id": "blatcan01",
+     "position": "PF",
+     "games": 64,
+     "games_started": 63,
+     "minutes": 2172
+    },
+    {
+     "player_id": "Nick Young",
+     "bbr_id": "youngni01",
+     "position": "SG",
+     "games": 64,
+     "games_started": 40,
+     "minutes": 2034
+    },
+    {
+     "player_id": "Kirk Hinrich",
+     "bbr_id": "hinriki01",
+     "position": "SG",
+     "games": 48,
+     "games_started": 29,
+     "minutes": 1471
+    },
+    {
+     "player_id": "Yi Jianlian",
+     "bbr_id": "jianlyi01",
+     "position": "PF",
+     "games": 63,
+     "games_started": 11,
+     "minutes": 1112
+    },
+    {
+     "player_id": "Al Thornton",
+     "bbr_id": "thornal01",
+     "position": "SF",
+     "games": 49,
+     "games_started": 23,
+     "minutes": 1069
+    },
+    {
+     "player_id": "Trevor Booker",
+     "bbr_id": "booketr01",
+     "position": "PF",
+     "games": 65,
+     "games_started": 14,
+     "minutes": 1063
+    },
+    {
+     "player_id": "Rashard Lewis",
+     "bbr_id": "lewisra02",
+     "position": "SF",
+     "games": 32,
+     "games_started": 27,
+     "minutes": 1014
+    },
+    {
+     "player_id": "Jordan Crawford",
+     "bbr_id": "crawfjo02",
+     "position": "SG",
+     "games": 26,
+     "games_started": 18,
+     "minutes": 867
+    },
+    {
+     "player_id": "Gilbert Arenas",
+     "bbr_id": "arenagi01",
+     "position": "PG",
+     "games": 21,
+     "games_started": 14,
+     "minutes": 726
+    },
+    {
+     "player_id": "Maurice Evans",
+     "bbr_id": "evansma01",
+     "position": "SF",
+     "games": 26,
+     "games_started": 12,
+     "minutes": 712
+    },
+    {
+     "player_id": "Kevin Séraphin",
+     "bbr_id": "serapke01",
+     "position": "PF",
+     "games": 58,
+     "games_started": 1,
+     "minutes": 635
+    },
+    {
+     "player_id": "Cartier Martin",
+     "bbr_id": "martica01",
+     "position": "SF",
+     "games": 52,
+     "games_started": 1,
+     "minutes": 542
+    },
+    {
+     "player_id": "Hilton Armstrong",
+     "bbr_id": "armsthi01",
+     "position": "C",
+     "games": 41,
+     "games_started": 2,
+     "minutes": 412
+    },
+    {
+     "player_id": "Josh Howard",
+     "bbr_id": "howarjo01",
+     "position": "SF",
+     "games": 18,
+     "games_started": 10,
+     "minutes": 409
+    },
+    {
+     "player_id": "Othyus Jeffers",
+     "bbr_id": "jeffeot01",
+     "position": "SG",
+     "games": 16,
+     "games_started": 1,
+     "minutes": 314
+    },
+    {
+     "player_id": "Mustafa Shakur",
+     "bbr_id": "shakumu01",
+     "position": "PG",
+     "games": 22,
+     "games_started": 0,
+     "minutes": 159
+    },
+    {
+     "player_id": "Alonzo Gee",
+     "bbr_id": "geeal01",
+     "position": "SG",
+     "games": 11,
+     "games_started": 5,
+     "minutes": 127
+    },
+    {
+     "player_id": "Larry Owens",
+     "bbr_id": "owensla01",
+     "position": "SF",
+     "games": 5,
+     "games_started": 0,
+     "minutes": 112
+    },
+    {
+     "player_id": "Hamady N'Diaye",
+     "bbr_id": "ndiayha01",
+     "position": "C",
+     "games": 16,
+     "games_started": 0,
+     "minutes": 80
+    },
+    {
+     "player_id": "Lester Hudson",
+     "bbr_id": "hudsole01",
+     "position": "PG",
+     "games": 11,
+     "games_started": 0,
+     "minutes": 73
+    },
+    {
+     "player_id": "Mike Bibby",
+     "bbr_id": "bibbymi01",
+     "position": "PG",
+     "games": 2,
+     "games_started": 0,
+     "minutes": 29
+    }
+   ]
+  }
+ }
+}
