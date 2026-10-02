@@ -17,6 +17,10 @@ Run `python scripts/run_june30.py --write` only when the career clock reaches Ju
 
 `00_Team/Team/Roster/holdings.json` records, with dates, every player simulated Miami holds: `from` the date Miami holds him, `until` the first date it no longer does (null while held). Real clubs' rotations leave out whoever Miami holds on the game's date. When Miami signs, trades, waives or loses a player, append an entry or set `until` on or after the career date, in the same change as the register; never change a date that has passed, because played games depend on it. On June 26, 2003 the expiring contracts run until July 1, and the pending options stay open until the June 30 decisions close the ones that are declined. Validation checks that every player the register holds is held on its `as_of` date.
 
+## Hiring pool (league staffs)
+
+`library/<year>/league/nba_<season>_staffs.json` (2002-03 to 2013-14, `scripts/import_staffs.py`) lists every real club's head coaches (in order, with the part of the season each coached), top basketball executives and assistant and support staff, from the Basketball-Reference team pages and coaches tables, with no win-loss records. Everyone on a real club's staff on the career date is a candidate Miami can hire; once Miami hires him he leaves his real club from that date. A coaching change counts only once the career clock reaches it, and Miami's own staff from 2003-04 lives in its organization records.
+
 ## Wade's requests
 
 Before a decision date, Wade's wishes go in the phase folder's `wade_requests.json`:

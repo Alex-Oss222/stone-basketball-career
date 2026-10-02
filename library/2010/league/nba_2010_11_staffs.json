@@ -1,0 +1,1244 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2010-11",
+ "kind": "league_staffs",
+ "source": "Basketball-Reference team season pages (https://www.basketball-reference.com/teams/<code>/<year>.html)",
+ "usage": "Each club's head coaches (in order, with the part of the season each coached), top basketball executives and assistant/support staff. Reference for the world and the hiring pool; no win-loss records. Counts only on dates the career clock has reached; Miami's staff from 2003-04 is simulated.",
+ "clubs": {
+  "Atlanta Hawks": {
+   "code": "ATL",
+   "head_coaches": [
+    {
+     "name": "Larry Drew",
+     "bbr_id": "drewla01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Rick Sund"
+   ],
+   "staff": [
+    {
+     "name": "Wally Blase",
+     "role": "Trainer"
+    },
+    {
+     "name": "Bob Bender",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Lester Conner",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Kenny Gattison",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Tyrone Hill",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Boston Celtics": {
+   "code": "BOS",
+   "head_coaches": [
+    {
+     "name": "Doc Rivers",
+     "bbr_id": "riverdo01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Danny Ainge"
+   ],
+   "staff": [
+    {
+     "name": "Ed Lacerte",
+     "role": "Trainer"
+    },
+    {
+     "name": "Kevin Eastman",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Lawrence Frank",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Armond Hill",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Roy Rogers",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Mike Longabardi",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Charlotte Bobcats": {
+   "code": "CHA",
+   "head_coaches": [
+    {
+     "name": "Larry Brown",
+     "bbr_id": "brownla01c",
+     "window": [
+      0.0,
+      0.3415
+     ]
+    },
+    {
+     "name": "Paul Silas",
+     "bbr_id": "silaspa01c",
+     "window": [
+      0.3415,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Rod Higgins"
+   ],
+   "staff": [
+    {
+     "name": "Steve Stricker",
+     "role": "Trainer"
+    },
+    {
+     "name": "Michael Irr",
+     "role": "Strength and Conditioning"
+    },
+    {
+     "name": "Herb Brown",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Jeff Capel",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Phil Ford",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Dave Hanners",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "LaSalle Thompson",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Ralph Lewis",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Charles Oakley",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Stephen Silas",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Chicago Bulls": {
+   "code": "CHI",
+   "head_coaches": [
+    {
+     "name": "Tom Thibodeau",
+     "bbr_id": "thiboto99c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Gar Forman"
+   ],
+   "staff": [
+    {
+     "name": "Fred Tedeschi",
+     "role": "Trainer"
+    },
+    {
+     "name": "Ron Adams",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Rick Brunson",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Andy Greer",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Adrian Griffin",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Ed Pinckney",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Mike Wilhelm",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Cleveland Cavaliers": {
+   "code": "CLE",
+   "head_coaches": [
+    {
+     "name": "Byron Scott",
+     "bbr_id": "scottby01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Chris Grant"
+   ],
+   "staff": [
+    {
+     "name": "Derek Millender",
+     "role": "Strength and Conditioning"
+    },
+    {
+     "name": "Chris Jent",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Jamahl Mosley",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Paul Pressey",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Joe Prunty",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Dallas Mavericks": {
+   "code": "DAL",
+   "head_coaches": [
+    {
+     "name": "Rick Carlisle",
+     "bbr_id": "carliri01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Donn Nelson"
+   ],
+   "staff": [
+    {
+     "name": "Brad Davis",
+     "role": "Player Development"
+    },
+    {
+     "name": "Casey Smith",
+     "role": "Trainer"
+    },
+    {
+     "name": "Darrell Armstrong",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Dwane Casey",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Monte Mathis",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Terry Stotts",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Denver Nuggets": {
+   "code": "DEN",
+   "head_coaches": [
+    {
+     "name": "George Karl",
+     "bbr_id": "karlge01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Masai Ujiri"
+   ],
+   "staff": [
+    {
+     "name": "Stacey Augmon",
+     "role": "Assistant Coach/Player Development"
+    },
+    {
+     "name": "Chad Iske",
+     "role": "Assistant Coach/Scout"
+    },
+    {
+     "name": "Jesse Mermuys",
+     "role": "Scout"
+    },
+    {
+     "name": "Steve Hess",
+     "role": "Strength and Conditioning"
+    },
+    {
+     "name": "Jim Gillen",
+     "role": "Trainer"
+    },
+    {
+     "name": "Adrian Dantley",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Melvin Hunt",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "John Welch",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Detroit Pistons": {
+   "code": "DET",
+   "head_coaches": [
+    {
+     "name": "John Kuester",
+     "bbr_id": "kuestjo01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Joe Dumars"
+   ],
+   "staff": [
+    {
+     "name": "Mike Abdenour",
+     "role": "Trainer"
+    },
+    {
+     "name": "Brian Hill",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Bill Pope",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Pat Sullivan",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Darrell Walker",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Golden State Warriors": {
+   "code": "GSW",
+   "head_coaches": [
+    {
+     "name": "Keith Smart",
+     "bbr_id": "smartke01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Larry Riley"
+   ],
+   "staff": [
+    {
+     "name": "Calbert Cheaney",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Jerry Sichting",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Stephen Silas",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Robert Werdann",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Lloyd Pierce",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Houston Rockets": {
+   "code": "HOU",
+   "head_coaches": [
+    {
+     "name": "Rick Adelman",
+     "bbr_id": "adelmri01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Daryl Morey"
+   ],
+   "staff": [
+    {
+     "name": "Jason Biles",
+     "role": "Trainer"
+    },
+    {
+     "name": "R.J. Adelman",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "T.R. Dunn",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Jack Sikma",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Elston Turner",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Pat Zipfel",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Indiana Pacers": {
+   "code": "IND",
+   "head_coaches": [
+    {
+     "name": "Jim O'Brien",
+     "bbr_id": "obrieji99c",
+     "window": [
+      0.0,
+      0.5366
+     ]
+    },
+    {
+     "name": "Frank Vogel",
+     "bbr_id": "vogelfr99c",
+     "window": [
+      0.5366,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Larry Bird"
+   ],
+   "staff": [
+    {
+     "name": "Josh Corbeil",
+     "role": "Trainer"
+    },
+    {
+     "name": "Dan Burke",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Jay DeFruscio",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Walter McCarty",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Vitaly Potapenko",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Frank Vogel",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Los Angeles Clippers": {
+   "code": "LAC",
+   "head_coaches": [
+    {
+     "name": "Vinny Del Negro",
+     "bbr_id": "delnevi01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Neil Olshey"
+   ],
+   "staff": [
+    {
+     "name": "Jasen Powell",
+     "role": "Trainer"
+    },
+    {
+     "name": "Dean Demopoulos",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Marc Iavaroni",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Robert Pack",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Dave Severns",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Howard Eisley",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Los Angeles Lakers": {
+   "code": "LAL",
+   "head_coaches": [
+    {
+     "name": "Phil Jackson",
+     "bbr_id": "jacksph01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Mitch Kupchak"
+   ],
+   "staff": [
+    {
+     "name": "Gary Vitti",
+     "role": "Trainer"
+    },
+    {
+     "name": "Jim Cleamons",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Frank Hamblen",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Chuck Person",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Brian Shaw",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Memphis Grizzlies": {
+   "code": "MEM",
+   "head_coaches": [
+    {
+     "name": "Lionel Hollins",
+     "bbr_id": "hollili01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Chris Wallace"
+   ],
+   "staff": [
+    {
+     "name": "Drew Graham",
+     "role": "Trainer"
+    },
+    {
+     "name": "Henry Bibby",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Johnny Davis",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Barry Hecker",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Damon Stoudamire",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Dave Joerger",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Milwaukee Bucks": {
+   "code": "MIL",
+   "head_coaches": [
+    {
+     "name": "Scott Skiles",
+     "bbr_id": "skilesc01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "John Hammond"
+   ],
+   "staff": [
+    {
+     "name": "Jim Boylan",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Bill Peterson",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Kelvin Sampson",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Joe Wolf",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Minnesota Timberwolves": {
+   "code": "MIN",
+   "head_coaches": [
+    {
+     "name": "Kurt Rambis",
+     "bbr_id": "rambiku01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "David Kahn"
+   ],
+   "staff": [
+    {
+     "name": "Gregg Farnam",
+     "role": "Trainer"
+    },
+    {
+     "name": "J.B. Bickerstaff",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Bill Laimbeer",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Reggie Theus",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Dave Wohl",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "New Jersey Nets": {
+   "code": "NJN",
+   "head_coaches": [
+    {
+     "name": "Avery Johnson",
+     "bbr_id": "johnsav01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Billy King"
+   ],
+   "staff": [
+    {
+     "name": "Doug Overton",
+     "role": "Assistant Coach/Player Development"
+    },
+    {
+     "name": "Tom Barrise",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Rich Dalatri",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Popeye Jones",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Larry Krystkowiak",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "John Loyer",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Sam Mitchell",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "New Orleans Hornets": {
+   "code": "NOH",
+   "head_coaches": [
+    {
+     "name": "Monty Williams",
+     "bbr_id": "willimo01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Dell Demps"
+   ],
+   "staff": [
+    {
+     "name": "Jon Ishop",
+     "role": "Trainer"
+    },
+    {
+     "name": "Randy Ayers",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "James Borrego",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Bryan Gates",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Fred Vinson",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Dave Hanners",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Michael Malone",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "New York Knicks": {
+   "code": "NYK",
+   "head_coaches": [
+    {
+     "name": "Mike D'Antoni",
+     "bbr_id": "dantomi01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Donnie Walsh"
+   ],
+   "staff": [
+    {
+     "name": "Roger Hinds",
+     "role": "Trainer"
+    },
+    {
+     "name": "Kenny Atkinson",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Greg Brittenham",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Dan D'Antoni",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Phil Weber",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Herb Williams",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Oklahoma City Thunder": {
+   "code": "OKC",
+   "head_coaches": [
+    {
+     "name": "Scott Brooks",
+     "bbr_id": "brooksc01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Sam Presti"
+   ],
+   "staff": [
+    {
+     "name": "Joe Sharpe",
+     "role": "Trainer"
+    },
+    {
+     "name": "Mark Bryant",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Maurice Cheeks",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Rex Kalamian",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Brian Keefe",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Maz Trakh",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Orlando Magic": {
+   "code": "ORL",
+   "head_coaches": [
+    {
+     "name": "Stan Van Gundy",
+     "bbr_id": "vangust99c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Otis Smith"
+   ],
+   "staff": [
+    {
+     "name": "Keon Weise",
+     "role": "Trainer"
+    },
+    {
+     "name": "Ahmad Ajami",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Bob Beyer",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Steve Clifford",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Patrick Ewing",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Brendan Malone",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Philadelphia 76ers": {
+   "code": "PHI",
+   "head_coaches": [
+    {
+     "name": "Doug Collins",
+     "bbr_id": "collido01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Rod Thorn"
+   ],
+   "staff": [
+    {
+     "name": "Kevin Johnson",
+     "role": "Trainer"
+    },
+    {
+     "name": "Michael Curry",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Brian James",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Aaron McKie",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Quin Snyder",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Phoenix Suns": {
+   "code": "PHO",
+   "head_coaches": [
+    {
+     "name": "Alvin Gentry",
+     "bbr_id": "gentral99c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Lance Blanks"
+   ],
+   "staff": [
+    {
+     "name": "Aaron Nelson",
+     "role": "Trainer"
+    },
+    {
+     "name": "Bill Cartwright",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Noel Gillespie",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Igor Kokoskov",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Dan Majerle",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Portland Trail Blazers": {
+   "code": "POR",
+   "head_coaches": [
+    {
+     "name": "Nate McMillan",
+     "bbr_id": "mcmilna01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Rich Cho"
+   ],
+   "staff": [
+    {
+     "name": "Geoff Clark",
+     "role": "Trainer"
+    },
+    {
+     "name": "Bill Bayno",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Bernie Bickerstaff",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Kaleb Canales",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Bob Ociepka",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Buck Williams",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Sacramento Kings": {
+   "code": "SAC",
+   "head_coaches": [
+    {
+     "name": "Paul Westphal",
+     "bbr_id": "westppa01c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Geoff Petrie"
+   ],
+   "staff": [
+    {
+     "name": "Pete Carril",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Mario Elie",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Jim Eyen",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Otis Hughley",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Truck Robinson",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "San Antonio Spurs": {
+   "code": "SAS",
+   "head_coaches": [
+    {
+     "name": "Gregg Popovich",
+     "bbr_id": "popovgr99c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "R.C. Buford"
+   ],
+   "staff": [
+    {
+     "name": "Brett Brown",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Mike Budenholzer",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Chip Engelland",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Chad Forcier",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Don Newman",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Jacque Vaughn",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Toronto Raptors": {
+   "code": "TOR",
+   "head_coaches": [
+    {
+     "name": "Jay Triano",
+     "bbr_id": "trianja99c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Bryan Colangelo"
+   ],
+   "staff": [
+    {
+     "name": "Alex English",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Eric Hughes",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Micah Nori",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Alvin Williams",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Utah Jazz": {
+   "code": "UTA",
+   "head_coaches": [
+    {
+     "name": "Jerry Sloan",
+     "bbr_id": "sloanje01c",
+     "window": [
+      0.0,
+      0.6585
+     ]
+    },
+    {
+     "name": "Tyrone Corbin",
+     "bbr_id": "corbity01c",
+     "window": [
+      0.6585,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Kevin O'Connor"
+   ],
+   "staff": [
+    {
+     "name": "Mark McKown",
+     "role": "Assistant Coach/Player Development"
+    },
+    {
+     "name": "Gary Briggs",
+     "role": "Trainer"
+    },
+    {
+     "name": "Tyrone Corbin",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Jeff Hornacek",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Phil Johnson",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Scott Layden",
+     "role": "Assistant Coach"
+    }
+   ]
+  },
+  "Washington Wizards": {
+   "code": "WAS",
+   "head_coaches": [
+    {
+     "name": "Flip Saunders",
+     "bbr_id": "saundfl99c",
+     "window": [
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "executives": [
+    "Ernie Grunfeld"
+   ],
+   "staff": [
+    {
+     "name": "Eric Waters",
+     "role": "Trainer"
+    },
+    {
+     "name": "Gene Banks",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Sam Cassell",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Ryan Saunders",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Wes Unseld",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Mike Wells",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Randy Wittman",
+     "role": "Assistant Coach"
+    },
+    {
+     "name": "Don Zierden",
+     "role": "Assistant Coach"
+    }
+   ]
+  }
+ }
+}
