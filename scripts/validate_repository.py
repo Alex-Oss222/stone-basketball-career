@@ -307,7 +307,7 @@ def validate():
             state=json.loads(state_path.read_text(encoding="utf-8"))
             require(errors,state.get("initialized") is True,"career must be initialized")
             require(errors,state.get("season")=="2003-04","current state season mismatch")
-            require(errors,state.get("current_date")=="2003-06-26","current checkpoint date mismatch")
+            require(errors,isinstance(state.get("current_date"),str) and state["current_date"]>="2003-06-26","career clock before the June 26 checkpoint")
             require(errors,state.get("team")=="Miami Heat","current team mismatch")
         except json.JSONDecodeError as exc:
             errors.append(f"current_state.json invalid: {exc}")
@@ -369,8 +369,12 @@ def validate():
                     require(errors,positions==sorted(positions),f"{card.relative_to(ROOT)}: template section order changed")
                     require(errors,re.findall(r"^## .+$",text,re.M)[-3:]==required_card_sections[-3:],f"{card.relative_to(ROOT)}: regular-season stats, playoffs and awards must remain the final sections")
 
+    try:
+        at_checkpoint=json.loads(state_path.read_text(encoding="utf-8")).get("current_date")=="2003-06-26"
+    except (OSError, ValueError):
+        at_checkpoint=True
     finance_path=team/"Finances/finance.json"
-    if finance_path.is_file():
+    if finance_path.is_file() and at_checkpoint:
         finance=json.loads(finance_path.read_text(encoding="utf-8"))
         require(errors,finance.get("as_of")=="2003-06-26","finance snapshot date mismatch")
         require(errors,finance.get("cap_room") is None,"June 26 cap room must remain unresolved")
@@ -394,8 +398,9 @@ def validate():
         schedules=json.loads(schedules_path.read_text(encoding="utf-8"))
         require(errors,schedules.get("known_baseline",{}).get("2003-04")==32066078,"contract schedule baseline mismatch")
         wade=next((x for x in schedules.get("players",[]) if x.get("player")=="Dwyane Wade"),{})
-        require(errors,wade.get("current_cap_hold")==2197000,"Wade unsigned rookie-scale cap hold must be $2.197M")
-        if history_path.is_file() and finance_path.is_file():
+        if wade.get("status")=="unsigned_first_round_draft_rights":
+            require(errors,wade.get("current_cap_hold")==2197000,"Wade unsigned rookie-scale cap hold must be $2.197M")
+        if history_path.is_file() and finance_path.is_file() and at_checkpoint:
             history=json.loads(history_path.read_text(encoding="utf-8"))
             errors.extend(finance_errors(finance,schedules,history))
 
@@ -534,6 +539,10 @@ def validate():
 
     from runtime.rosters import roster_errors
     errors.extend(roster_errors(ROOT))
+    from runtime.negotiation import negotiation_errors
+    errors.extend(negotiation_errors(ROOT))
+    from runtime.signing import ledger_errors
+    errors.extend(ledger_errors(ROOT))
     from runtime.rotations import holdings_errors
     errors.extend(holdings_errors(ROOT))
 

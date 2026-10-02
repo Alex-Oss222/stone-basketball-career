@@ -36,7 +36,7 @@ from .player_stats import alias
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_MINUTES_PER_GAME = 44.0     # input sanity bound; the kernel's caps decide game minutes
-NOT_HELD = ("free_agent", "released", "waived", "renounced", "traded", "retired")
+NOT_HELD = ("free_agent", "released", "waived", "renounced", "traded", "retired", "signed_elsewhere")
 
 
 def rosters_path(season):

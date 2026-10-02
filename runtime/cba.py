@@ -66,3 +66,64 @@ def rfa_eligible(entered_season, nba_seasons, cba):
     """Veteran restricted free agency (FAQ Q34): entered 1998-99 or later with three or fewer seasons."""
     rule = cba["restricted_free_agency"]["veterans"]
     return int(entered_season[:4]) >= int(rule["entered_from_season"][:4]) and nba_seasons <= rule["max_seasons"]
+
+
+# -- contract legality (docs/front_office_design.md, section 6; rules file, exceptions and maximum_salary) --
+
+MAX_SIGNING_BONUS_SHARE = 0.20     # of total salary (reported for 1999 offer sheets; docs/research/cba_1999_rules.md)
+
+
+def terms_errors(terms, *, route, years_of_service, prior_salary, cap_rules, cba, restricted_offer_sheet=False):
+    """Why a proposed contract is illegal under the 1999 rules, or [] when it passes.
+
+    terms: {"schedule": [first-year salary, ...], "guaranteed": int, "signing_bonus": int (optional)}.
+    route: "room", "bird", "early_bird", "non_bird", "mid_level", "million", "minimum", "rookie_scale".
+    """
+    errors = []
+    schedule = terms.get("schedule") or []
+    if not schedule or any(not isinstance(s, int) or s <= 0 for s in schedule):
+        return ["a contract needs a positive integer salary for every season"]
+    years, first = len(schedule), schedule[0]
+    tier = ("0_to_6_years" if (years_of_service or 0) <= 6 else "7_to_9_years" if years_of_service <= 9 else "10_plus_years")
+    maximum = cap_rules["maximum_salary"][tier]
+    if prior_salary:
+        maximum = max(maximum, round(prior_salary * 1.05))
+    minimums = cap_rules["minimum_salary"]
+    y = years_of_service or 0
+    minimum = minimums.get("10_plus_years" if y >= 10 else f"{min(y, 2)}_year{'s' if min(y, 2) != 1 else ''}") or minimums["2_years"]
+    if first > maximum:
+        errors.append(f"first-year salary {first:,} exceeds the maximum {maximum:,} for {years_of_service} years of service")
+    if first < minimum:
+        errors.append(f"first-year salary {first:,} is under the minimum {minimum:,}")
+    bird = route in ("bird", "early_bird")
+    max_years = cba["exceptions"]["larry_bird"]["max_years"] if route == "bird" else cba["exceptions"]["early_bird"]["max_years"] if route == "early_bird" else cba["exceptions"]["non_bird"]["max_years"]
+    if route == "minimum":
+        max_years = cba["exceptions"]["minimum"]["max_years"]
+    if years > max_years:
+        errors.append(f"{years} seasons exceeds the {max_years} allowed by the {route} route")
+    raise_limit = (cba["exceptions"]["larry_bird"]["raise_percent"] if bird else cba["exceptions"]["non_bird"]["raise_percent"]) / 100
+    for i in range(1, years):
+        if schedule[i] > schedule[i - 1] + first * raise_limit + 1 or schedule[i] < schedule[i - 1] - first * raise_limit - 1:
+            errors.append(f"season {i + 1} changes salary by more than {raise_limit:.1%} of the first-year salary")
+            break
+    if route == "mid_level" and first > cap_rules["exceptions"]["mid_level"]:
+        errors.append(f"mid-level exception allows at most {cap_rules['exceptions']['mid_level']:,} in the first season")
+    if route == "million" and (first > cap_rules["exceptions"]["biennial"] or years > 2):
+        errors.append("the $1 million exception allows at most its amount for up to two seasons")
+    if route == "early_bird":
+        floor = max(round((prior_salary or 0) * 1.75), cap_rules["exceptions"]["mid_level"])
+        if first > floor and first > maximum:
+            errors.append("early bird salary is limited to the greater of 175% of the prior salary and the average salary")
+    if route == "non_bird":
+        limit = max(round((prior_salary or 0) * 1.2), round(minimum * 1.2))
+        if first > limit:
+            errors.append(f"non-bird salary is limited to {limit:,} (120% of the prior salary or of the minimum)")
+    guaranteed = terms.get("guaranteed", sum(schedule))
+    if not 0 <= guaranteed <= sum(schedule):
+        errors.append("guaranteed money must be between zero and the scheduled total")
+    bonus = terms.get("signing_bonus") or 0
+    if bonus > MAX_SIGNING_BONUS_SHARE * sum(schedule):
+        errors.append(f"signing bonus exceeds {MAX_SIGNING_BONUS_SHARE:.0%} of total salary")
+    if restricted_offer_sheet and years < cba["restricted_free_agency"]["offer_sheet_min_seasons"]:
+        errors.append("an offer sheet to a restricted free agent needs at least three seasons")
+    return errors
