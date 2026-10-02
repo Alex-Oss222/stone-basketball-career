@@ -1,5 +1,7 @@
 # How to collect the league organization data (head coaches)
 
+**Not needed:** Claude collects every club's staff (head coaches, executives, assistants) directly from the Basketball-Reference team season pages with `scripts/import_staffs.py`. Keep these instructions only as a fallback.
+
 This gives every club's head coach, season by season: who coaches the opponents and who is eligible for Coach of the Year. The other 28 clubs follow history (world model D), so this is reference data. They make no simulated decisions, and Miami's own coaches stay in its organization records.
 
 ## What to download
