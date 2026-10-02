@@ -1,0 +1,31 @@
+{
+ "checkpoint": "2003-06-26",
+ "changes": [
+  "Houston Rockets: Glen Rice: removed post-checkpoint signing note; basis recast to unresolved_at_checkpoint",
+  "Los Angeles Clippers: Wang Zhizhi: removed post-checkpoint signing note; basis recast to unresolved_at_checkpoint",
+  "Los Angeles Lakers: Robert Horry: removed post-checkpoint signing note; basis recast to unresolved_at_checkpoint",
+  "Miami Heat: Anthony Carter: removed post-checkpoint signing note; basis recast to unresolved_at_checkpoint",
+  "Minnesota Timberwolves: Anthony Peeler: removed post-checkpoint signing note; basis recast to unresolved_at_checkpoint",
+  "New Jersey Nets: Dikembe Mutombo: removed post-checkpoint signing note; basis recast to unresolved_at_checkpoint",
+  "Toronto Raptors: Jelani McCoy: removed post-checkpoint signing note; basis recast to unresolved_at_checkpoint",
+  "Toronto Raptors: Hakeem Olajuwon: release dated after the checkpoint removed; status recast to retired_salary_on_books",
+  "Washington Wizards: Brian Cardinal: removed post-checkpoint signing note; basis recast to unresolved_at_checkpoint",
+  "Residual risk: 37 under_contract_unverified amounts are read from the 2003-04 salary list without confirmed continuity; a few may reflect deals signed after the checkpoint. The ledger flags them.",
+  "Residual risk: the 2003-07-01 list may include players whose option was declined on June 30; their pre-decision option status could not be reconstructed and is treated as expiring."
+ ],
+ "files": [
+  "2003/league/nba_2003_contracts.json",
+  "2003/league/nba_2003_expiring_contracts.json",
+  "2003/league/nba_2003_04_cap_rules.json",
+  "2004/league/nba_2004_05_cap_rules.json",
+  "2005/league/nba_2005_06_cap_rules.json",
+  "2006/league/nba_2006_07_cap_rules.json",
+  "2007/league/nba_2007_08_cap_rules.json",
+  "2008/league/nba_2008_09_cap_rules.json",
+  "2009/league/nba_2009_10_cap_rules.json",
+  "2010/league/nba_2010_11_cap_rules.json",
+  "2011/league/nba_2011_12_cap_rules.json",
+  "2012/league/nba_2012_13_cap_rules.json",
+  "2013/league/nba_2013_14_cap_rules.json"
+ ]
+}

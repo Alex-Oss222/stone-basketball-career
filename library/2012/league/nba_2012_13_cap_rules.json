@@ -1,29 +1,29 @@
 {
  "schema_version": 1,
  "league": "NBA",
- "season": "2007-08",
+ "season": "2012-13",
  "kind": "cap_rules",
  "status": "historical_actual",
  "live_use_policy": "Reference only until the figure's real publication date has passed in the career. Publication dates are tracked in the repo's league_cap_history.json; none are recorded here.",
- "salary_cap": 55630000,
- "luxury_tax_line": 67865000,
- "first_apron": null,
+ "salary_cap": 58044000,
+ "luxury_tax_line": 70307000,
+ "first_apron": 74307000,
  "exceptions": {
-  "mid_level": 5356000,
-  "taxpayer_mid_level": null,
-  "room_mid_level": null,
-  "biennial": 1830000
+  "mid_level": 5000000,
+  "taxpayer_mid_level": 3090000,
+  "room_mid_level": 2575000,
+  "biennial": 1957000
  },
  "maximum_salary": {
-  "0_to_6_years": 13041250,
-  "7_to_9_years": 15649500,
-  "10_plus_years": 18257750
+  "0_to_6_years": 13668750,
+  "7_to_9_years": 16402500,
+  "10_plus_years": 19136250
  },
  "minimum_salary": {
-  "0_years": 427163,
-  "1_year": 687456,
-  "2_years": 770610,
-  "10_plus_years": 1219590,
+  "0_years": 473604,
+  "1_year": 762195,
+  "2_years": 854389,
+  "10_plus_years": 1352181,
   "other_years_of_service": null
  },
  "rookie_scale": null,
