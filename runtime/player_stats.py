@@ -231,9 +231,17 @@ def build_ratings(data, data_hash):
 
 
 class RatingIndex:
-    def __init__(self, data):
+    """Veteran profiles, plus rookie estimates when supplied (same rate keys and baselines)."""
+
+    def __init__(self, data, rookies=None):
         self.data = data
-        self.players = data["players"]
+        self.players = {pid: dict(p, model_version=data["model_version"], as_of=data["as_of"],
+                                  source_sha256=data["source_sha256"]) for pid, p in data["players"].items()}
+        for pid, p in ((rookies or {}).get("players") or {}).items():
+            if pid in self.players:
+                raise ValueError(f"{p['player_name']} has both a veteran and a rookie profile")
+            self.players[pid] = dict(p, model_version=rookies["model_version"], as_of=rookies["as_of"],
+                                     source_sha256=rookies["source_sha256"])
         self.aliases = {}
         for pid, p in self.players.items():
             self.aliases.setdefault(alias(p["player_name"]), set()).add(pid)
@@ -254,9 +262,9 @@ class RatingIndex:
         p = self.lookup(player_id, bbr_id)
         if p is None:
             return {}
-        return {"bbr_id": p["bbr_id"], "model_version": self.data["model_version"],
-                "as_of": self.data["as_of"], "season_end_year": p["season_end_year"],
-                "source_sha256": self.data["source_sha256"],
+        return {"bbr_id": p["bbr_id"], "model_version": p["model_version"],
+                "as_of": p["as_of"], "season_end_year": p["season_end_year"],
+                "source_sha256": p["source_sha256"],
                 "rates": {k:p["estimated"][k] for k in RATE_KEYS}}
 
 
@@ -272,7 +280,15 @@ def load_rating_index(game_date, season, root=ROOT):
         raise ValueError("player statistics are not available at this game date")
     if data["model_version"] != MODEL_VERSION or data["source_sha256"] != sha256(Path(root)/STATS_PATH):
         raise ValueError("statistical ratings are stale; rebuild from the current source")
-    return RatingIndex(data)
+    from .prospects import PROSPECTS_PATH, ROOKIE_MODEL_VERSION, ROOKIE_PATH
+    rookies = None
+    if (Path(root)/ROOKIE_PATH).exists():
+        rookies = read_json(Path(root)/ROOKIE_PATH)
+        if (rookies["model_version"] != ROOKIE_MODEL_VERSION or rookies["as_of"] > game_date
+                or rookies["veteran_model_version"] != MODEL_VERSION
+                or rookies["source_sha256"] != sha256(Path(root)/PROSPECTS_PATH)):
+            raise ValueError("rookie estimates are stale or not yet available; rebuild from the current source")
+    return RatingIndex(data, rookies)
 
 
 def repository_rating_errors(root=ROOT):

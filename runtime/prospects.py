@@ -1,0 +1,152 @@
+"""Rookie estimates: translate pre-draft statistics into NBA engine rates.
+
+Only evidence available on draft night is used. A draftee without a pre-draft
+record gets no profile and plays on the engine's neutral fallback, which is not
+a claim that he is an average player.
+
+Method (model rookie-2003.1), per rate:
+
+1. Combine the player's pre-draft seasons with recency weights.
+2. Translate to an NBA-equivalent rate: shooting percentages and attempt
+   tendencies are the observed rate times a level factor; production rates
+   (usage, assists, rebounds, steals, blocks) are the NBA rate baseline times
+   the player's per-minute production relative to the NBA per-minute average,
+   times a level factor.
+3. Shrink toward the NBA baseline with the veteran priors, counting each
+   pre-draft attempt or minute as EVIDENCE_WEIGHT of an NBA one.
+
+Every constant below is a provisional judgement, not a fitted estimate. They are
+kept in one place so a later calibration against historical rookie seasons can
+replace them.
+"""
+from pathlib import Path
+
+from .player_stats import (PRIOR_ATTEMPTS, PRIOR_MINUTES, RATE_KEYS, ROOT, read_json, sha256)
+
+ROOKIE_MODEL_VERSION = "rookie-2003.1"
+PROSPECTS_PATH = Path("library/2003/league/nba_2003_prospect_stats.json")
+ROOKIE_PATH = Path("library/2003/league/nba_2003_rookie_estimates.json")
+VETERAN_PATH = Path("library/2003/league/nba_2003_veteran_ratings.json")
+
+RECENCY_WEIGHTS = (3, 2, 1)       # most recent season first
+EVIDENCE_WEIGHT = {"ncaa": 0.5}   # levels without a factor table are refused
+LEVEL_FACTORS = {
+    "ncaa": {
+        "two_point_pct": 0.92,             # longer, faster interior defense
+        "three_point_pct": 0.90,           # 19'9" college line vs 22'-23'9" NBA line
+        "free_throw_pct": 1.00,            # same distance and conditions
+        "three_point_attempt_rate": 0.75,  # fewer threes at the longer line
+        "free_throw_attempt_rate": 0.85,
+        "turnovers_per_fga": 1.15,         # more pressure and length
+        "usage_pct": 0.85, "assist_pct": 0.85,
+        "offensive_rebound_pct": 0.85, "defensive_rebound_pct": 0.85,
+        "steal_pct": 0.80, "block_pct": 0.80,
+    },
+}
+COUNT_KEYS = ("games", "minutes", "points", "field_goals_made", "field_goals_attempted",
+              "three_pointers_made", "three_pointers_attempted", "free_throws_made",
+              "free_throws_attempted", "rebounds", "assists", "steals", "blocks", "turnovers")
+
+
+def _weighted(seasons):
+    ordered = sorted(seasons, key=lambda s: s["season"], reverse=True)
+    if len(ordered) > len(RECENCY_WEIGHTS):
+        raise ValueError("more pre-draft seasons than recency weights")
+    weights = RECENCY_WEIGHTS[:len(ordered)]
+    totals = {k: sum(w * s[k] for w, s in zip(weights, ordered)) for k in COUNT_KEYS}
+    raw = {k: sum(s[k] for s in ordered) for k in COUNT_KEYS}
+    return totals, raw
+
+
+def _nba_per_minute(source_totals):
+    m = source_totals["minutes"]
+    t = source_totals
+    return {
+        "usage": (t["field_goals_attempted"] + .44 * t["free_throws_attempted"] + t["turnovers"]) / m,
+        "assists": t["assists"] / m,
+        "rebounds": (t["offensive_rebounds"] + t["defensive_rebounds"]) / m,
+        "steals": t["steals"] / m, "blocks": t["blocks"] / m,
+    }
+
+
+def translate(record, baselines, source_totals):
+    level = record["level"]
+    if level not in LEVEL_FACTORS:
+        raise ValueError(f"{record['player_id']}: no translation factors for level {level!r}")
+    f, evidence = LEVEL_FACTORS[level], EVIDENCE_WEIGHT[level]
+    w, raw = _weighted(record["seasons"])
+    nba = _nba_per_minute(source_totals)
+    two_a, two_m = w["field_goals_attempted"] - w["three_pointers_attempted"], w["field_goals_made"] - w["three_pointers_made"]
+    per_min = lambda key: w[key] / w["minutes"]
+    usage = (w["field_goals_attempted"] + .44 * w["free_throws_attempted"] + w["turnovers"]) / w["minutes"]
+    translated = {
+        "two_point_pct": two_m / two_a * f["two_point_pct"],
+        "three_point_pct": w["three_pointers_made"] / w["three_pointers_attempted"] * f["three_point_pct"],
+        "free_throw_pct": w["free_throws_made"] / w["free_throws_attempted"] * f["free_throw_pct"],
+        "three_point_attempt_rate": w["three_pointers_attempted"] / w["field_goals_attempted"] * f["three_point_attempt_rate"],
+        "free_throw_attempt_rate": w["free_throws_attempted"] / w["field_goals_attempted"] * f["free_throw_attempt_rate"],
+        "turnovers_per_fga": w["turnovers"] / w["field_goals_attempted"] * f["turnovers_per_fga"],
+        "usage_pct": baselines["usage_pct"] * usage / nba["usage"] * f["usage_pct"],
+        "assist_pct": baselines["assist_pct"] * per_min("assists") / nba["assists"] * f["assist_pct"],
+        # Pre-draft records give total rebounds only; both sides use the same relative rate.
+        "offensive_rebound_pct": baselines["offensive_rebound_pct"] * per_min("rebounds") / nba["rebounds"] * f["offensive_rebound_pct"],
+        "defensive_rebound_pct": baselines["defensive_rebound_pct"] * per_min("rebounds") / nba["rebounds"] * f["defensive_rebound_pct"],
+        "steal_pct": baselines["steal_pct"] * per_min("steals") / nba["steals"] * f["steal_pct"],
+        "block_pct": baselines["block_pct"] * per_min("blocks") / nba["blocks"] * f["block_pct"],
+        "fouls_per_minute": None,  # not recorded before the draft
+    }
+    samples = {
+        "two_point_pct": raw["field_goals_attempted"] - raw["three_pointers_attempted"],
+        "three_point_pct": raw["three_pointers_attempted"], "free_throw_pct": raw["free_throws_attempted"],
+        "three_point_attempt_rate": raw["field_goals_attempted"], "free_throw_attempt_rate": raw["field_goals_attempted"],
+        "turnovers_per_fga": raw["field_goals_attempted"],
+    }
+    estimated = {}
+    for key in RATE_KEYS:
+        value = translated[key]
+        if value is None:
+            estimated[key] = baselines[key]
+            continue
+        sample = samples.get(key, raw["minutes"]) * evidence
+        prior = PRIOR_ATTEMPTS.get(key, PRIOR_MINUTES)
+        estimated[key] = (value * sample + baselines[key] * prior) / (sample + prior)
+    return translated, estimated, raw
+
+
+def build_rookie_estimates(prospects, prospects_hash, veterans):
+    baselines, totals = veterans["rate_baselines"], veterans["source_totals"]
+    players = {}
+    for record in prospects["records"]:
+        if record["bbr_id"] in veterans["players"]:
+            raise ValueError(f"{record['player_id']} already has an NBA record")
+        translated, estimated, raw = translate(record, baselines, totals)
+        players[record["bbr_id"]] = {
+            "player_name": record["player_id"], "bbr_id": record["bbr_id"], "level": record["level"],
+            "school": record.get("school"), "season_end_year": 2003,
+            "sample": {"games": raw["games"], "minutes": raw["minutes"], "seasons": len(record["seasons"])},
+            "translated": translated, "estimated": estimated,
+            "status": "estimate from pre-draft statistics; not NBA evidence",
+        }
+    return {
+        "schema_version": 1, "model_version": ROOKIE_MODEL_VERSION, "as_of": prospects["as_of"],
+        "baseline_season": veterans["baseline_season"], "source_file": str(PROSPECTS_PATH),
+        "source_sha256": prospects_hash, "veteran_model_version": veterans["model_version"],
+        "method": {"recency_weights": list(RECENCY_WEIGHTS), "evidence_weight": EVIDENCE_WEIGHT,
+                   "level_factors": LEVEL_FACTORS, "prior_minutes": PRIOR_MINUTES, "prior_attempts": PRIOR_ATTEMPTS,
+                   "status": "provisional judgement constants; see docs/statistical_ratings.md"},
+        "players": players,
+    }
+
+
+def expected_rookie_estimates(root=ROOT):
+    return build_rookie_estimates(read_json(Path(root) / PROSPECTS_PATH), sha256(Path(root) / PROSPECTS_PATH),
+                                  read_json(Path(root) / VETERAN_PATH))
+
+
+def rookie_errors(root=ROOT):
+    try:
+        if read_json(Path(root) / ROOKIE_PATH) != expected_rookie_estimates(root):
+            return ["generated rookie estimates are stale; run scripts/import_prospect_stats.py"]
+        return []
+    except (OSError, ValueError, KeyError, TypeError, ZeroDivisionError) as exc:
+        return [f"cannot validate rookie estimates: {exc}"]

@@ -43,6 +43,23 @@ Staff estimates against NBA rotation players at the assessment date. Scale: 1–
 | Help defense | Not assessed | Profile records deflections plus premature help and cutter-loss errors; no Miami grade yet. |
 | Rim protection | Not assessed | Weak-side blocks are documented, but no NBA staff grade exists. |
 
+<!-- rookie-estimate:start -->
+### Statistical estimate from college record (rookie-2003.1)
+
+**Estimate, not NBA evidence.** Translated from 3 UConn seasons (98 games, 3178 minutes) with provisional college-to-NBA factors and shrinkage toward the 2002-03 NBA average. Grades rank the estimate against 2002-03 NBA players with 500+ minutes (20-80, 50 = median). The engine uses the estimated rates. Method: [statistical ratings](../../../../../../docs/statistical_ratings.md#rookie-estimates).
+
+| Rate | Grade (20-80) | Estimate | NBA average |
+| --- | ---: | ---: | ---: |
+| Two-point scoring | 73 | 0.500 | 0.463 |
+| Three-point shooting | 65 | 0.359 | 0.349 |
+| Free throws | 78 | 0.868 | 0.758 |
+| Assist production | 68 | 0.213 | 0.152 |
+| Offensive rebounding | 49 | 0.050 | 0.057 |
+| Defensive rebounding | 44 | 0.124 | 0.143 |
+| Steal production | 72 | 0.023 | 0.017 |
+| Block production | 63 | 0.019 | 0.015 |
+<!-- rookie-estimate:end -->
+
 ## Changes and coaching notes
 
 | Date | Finding and effect on role or grade | Evidence |
