@@ -175,7 +175,8 @@ def baselines(records):
                 free_throw_attempt_rate=fta/fga, turnover_pct=tov/(fga+.44*fta+tov))
     for key in ("usage_pct", "assist_pct", "offensive_rebound_pct", "defensive_rebound_pct", "steal_pct", "block_pct"):
         eligible = [r for r in records if r["advanced"][key] is not None and r["totals"]["minutes"] > 0]
-        mean[key] = sum(r["advanced"][key]*r["totals"]["minutes"] for r in eligible)/sum(r["totals"]["minutes"] for r in eligible)
+        # math.fsum is exactly rounded on every Python version (3.12 changed sum() for floats).
+        mean[key] = math.fsum(r["advanced"][key]*r["totals"]["minutes"] for r in eligible)/math.fsum(r["totals"]["minutes"] for r in eligible)
     return mean, sums
 
 
