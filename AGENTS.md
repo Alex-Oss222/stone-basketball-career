@@ -72,7 +72,7 @@ Wade's ability: his rookie season uses the college estimate (`runtime/prospects.
   1. A real transaction that involves Miami is skipped. Every player in it stays with the club that had him before the transaction.
   2. A player simulated Miami acquires leaves his real club from that date. A player simulated Miami holds stays with Miami even if history moved him elsewhere.
   3. When rule 1 or 2 changes a real club's roster, the departing players' real minutes go to the arriving players up to their own previous minute share, and any remainder is spread over the club's rotation in proportion to real minutes.
-- A real club's game input is its real season roster: each player's minutes per game played and the share of the club's games he played, never game dates (`runtime/rotations.py`). The engine draws availability per game.
+- A real club's game input is its real roster on the game's date (`runtime/rotations.py`): each player's minutes per game played and the share of the club's games he played. A traded player is with each club for his stint's part of the season, placed from the order of his stints and his games played, never from transaction dates or results. A stint begun by a real Miami transaction is skipped at import (rule 1); players on simulated Miami's register are taken out of real clubs (rule 2). The engine draws availability per game.
 - If Wade joins another club, that club becomes the simulated club from that date with its own career folder; earlier folders stay as history.
 - Real rosters are hindsight about other clubs, accepted by the user for the world only. They never decide what simulated Miami knows or plans: the AI/GM sees other clubs only as they stand on the current career date.
 

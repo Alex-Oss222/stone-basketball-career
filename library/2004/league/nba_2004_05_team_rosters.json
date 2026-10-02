@@ -15,7 +15,15 @@
      "position": "SF",
      "games": 66,
      "games_started": 66,
-     "minutes": 2550
+     "minutes": 2550,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Josh Childress",
@@ -23,7 +31,15 @@
      "position": "SG",
      "games": 80,
      "games_started": 44,
-     "minutes": 2376
+     "minutes": 2376,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Antoine Walker",
@@ -31,7 +47,15 @@
      "position": "PF",
      "games": 53,
      "games_started": 53,
-     "minutes": 2128
+     "minutes": 2128,
+     "span": [
+      0.0,
+      0.6883
+     ],
+     "window": [
+      0.0,
+      0.6883
+     ]
     },
     {
      "player_id": "Josh Smith",
@@ -39,7 +63,15 @@
      "position": "SF",
      "games": 74,
      "games_started": 59,
-     "minutes": 2050
+     "minutes": 2050,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tyronn Lue",
@@ -47,7 +79,15 @@
      "position": "PG",
      "games": 49,
      "games_started": 46,
-     "minutes": 1528
+     "minutes": 1528,
+     "span": [
+      0.3,
+      1.0
+     ],
+     "window": [
+      0.3,
+      1.0
+     ]
     },
     {
      "player_id": "Predrag Drobnjak",
@@ -55,7 +95,15 @@
      "position": "C",
      "games": 71,
      "games_started": 1,
-     "minutes": 1435
+     "minutes": 1435,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tony Delk",
@@ -63,7 +111,15 @@
      "position": "SG",
      "games": 56,
      "games_started": 1,
-     "minutes": 1340
+     "minutes": 1340,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Boris Diaw",
@@ -71,7 +127,15 @@
      "position": "SG",
      "games": 66,
      "games_started": 25,
-     "minutes": 1201
+     "minutes": 1201,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jason Collier",
@@ -79,7 +143,15 @@
      "position": "C",
      "games": 70,
      "games_started": 44,
-     "minutes": 942
+     "minutes": 942,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Royal Ivey",
@@ -87,7 +159,15 @@
      "position": "PG",
      "games": 62,
      "games_started": 5,
-     "minutes": 809
+     "minutes": 809,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tom Gugliotta",
@@ -95,7 +175,15 @@
      "position": "PF",
      "games": 27,
      "games_started": 9,
-     "minutes": 748
+     "minutes": 748,
+     "span": [
+      0.4255,
+      1.0
+     ],
+     "window": [
+      0.4255,
+      1.0
+     ]
     },
     {
      "player_id": "Obinna Ekezie",
@@ -103,7 +191,15 @@
      "position": "C",
      "games": 42,
      "games_started": 31,
-     "minutes": 732
+     "minutes": 732,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kenny Anderson",
@@ -111,7 +207,15 @@
      "position": "PG",
      "games": 39,
      "games_started": 20,
-     "minutes": 717
+     "minutes": 717,
+     "span": [
+      0.0,
+      0.907
+     ],
+     "window": [
+      0.0,
+      0.907
+     ]
     },
     {
      "player_id": "Donta Smith",
@@ -119,7 +223,15 @@
      "position": "SG",
      "games": 38,
      "games_started": 0,
-     "minutes": 433
+     "minutes": 433,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kevin Willis",
@@ -127,7 +239,15 @@
      "position": "C",
      "games": 29,
      "games_started": 5,
-     "minutes": 344
+     "minutes": 344,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jon Barry",
@@ -135,7 +255,15 @@
      "position": "SG",
      "games": 16,
      "games_started": 0,
-     "minutes": 275
+     "minutes": 275,
+     "span": [
+      0.0,
+      0.2319
+     ],
+     "window": [
+      0.0,
+      0.2319
+     ]
     },
     {
      "player_id": "Michael Stewart",
@@ -143,7 +271,15 @@
      "position": "PF",
      "games": 12,
      "games_started": 1,
-     "minutes": 145
+     "minutes": 145,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jelani McCoy",
@@ -151,7 +287,15 @@
      "position": "C",
      "games": 10,
      "games_started": 0,
-     "minutes": 88
+     "minutes": 88,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Anthony Miller",
@@ -159,7 +303,15 @@
      "position": "PF",
      "games": 2,
      "games_started": 0,
-     "minutes": 9
+     "minutes": 9,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "James Thomas",
@@ -167,7 +319,15 @@
      "position": "PF",
      "games": 2,
      "games_started": 0,
-     "minutes": 5
+     "minutes": 5,
+     "span": [
+      0.8182,
+      1.0
+     ],
+     "window": [
+      0.8182,
+      1.0
+     ]
     }
    ]
   },
@@ -180,7 +340,15 @@
      "position": "SF",
      "games": 82,
      "games_started": 82,
-     "minutes": 2960
+     "minutes": 2960,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Ricky Davis",
@@ -188,7 +356,15 @@
      "position": "SG",
      "games": 82,
      "games_started": 11,
-     "minutes": 2696
+     "minutes": 2696,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Gary Payton",
@@ -196,7 +372,15 @@
      "position": "PG",
      "games": 77,
      "games_started": 77,
-     "minutes": 2541
+     "minutes": 2541,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Raef LaFrentz",
@@ -204,7 +388,15 @@
      "position": "PF",
      "games": 80,
      "games_started": 80,
-     "minutes": 2196
+     "minutes": 2196,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Mark Blount",
@@ -212,7 +404,15 @@
      "position": "C",
      "games": 82,
      "games_started": 57,
-     "minutes": 2130
+     "minutes": 2130,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tony Allen",
@@ -220,7 +420,15 @@
      "position": "SG",
      "games": 77,
      "games_started": 34,
-     "minutes": 1262
+     "minutes": 1262,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Marcus Banks",
@@ -228,7 +436,15 @@
      "position": "PG",
      "games": 81,
      "games_started": 2,
-     "minutes": 1145
+     "minutes": 1145,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jiří Welsch",
@@ -236,7 +452,15 @@
      "position": "SG",
      "games": 55,
      "games_started": 32,
-     "minutes": 1125
+     "minutes": 1125,
+     "span": [
+      0.0,
+      0.7746
+     ],
+     "window": [
+      0.0,
+      0.7746
+     ]
     },
     {
      "player_id": "Al Jefferson",
@@ -244,7 +468,15 @@
      "position": "PF",
      "games": 71,
      "games_started": 1,
-     "minutes": 1051
+     "minutes": 1051,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Antoine Walker",
@@ -252,7 +484,15 @@
      "position": "PF",
      "games": 24,
      "games_started": 24,
-     "minutes": 827
+     "minutes": 827,
+     "span": [
+      0.6883,
+      1.0
+     ],
+     "window": [
+      0.6883,
+      1.0
+     ]
     },
     {
      "player_id": "Walter McCarty",
@@ -260,7 +500,15 @@
      "position": "PF",
      "games": 44,
      "games_started": 0,
-     "minutes": 553
+     "minutes": 553,
+     "span": [
+      0.0,
+      0.6111
+     ],
+     "window": [
+      0.0,
+      0.6111
+     ]
     },
     {
      "player_id": "Kendrick Perkins",
@@ -268,7 +516,15 @@
      "position": "C",
      "games": 60,
      "games_started": 3,
-     "minutes": 548
+     "minutes": 548,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Delonte West",
@@ -276,7 +532,15 @@
      "position": "SG",
      "games": 39,
      "games_started": 7,
-     "minutes": 507
+     "minutes": 507,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tom Gugliotta",
@@ -284,7 +548,15 @@
      "position": "PF",
      "games": 20,
      "games_started": 0,
-     "minutes": 218
+     "minutes": 218,
+     "span": [
+      0.0,
+      0.4255
+     ],
+     "window": [
+      0.0,
+      0.4255
+     ]
     },
     {
      "player_id": "Justin Reed",
@@ -292,7 +564,15 @@
      "position": "SF",
      "games": 23,
      "games_started": 0,
-     "minutes": 121
+     "minutes": 121,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -305,7 +585,15 @@
      "position": "PF",
      "games": 73,
      "games_started": 73,
-     "minutes": 2600
+     "minutes": 2600,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Primož Brezec",
@@ -313,7 +601,15 @@
      "position": "C",
      "games": 72,
      "games_started": 72,
-     "minutes": 2276
+     "minutes": 2276,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Gerald Wallace",
@@ -321,7 +617,15 @@
      "position": "SF",
      "games": 70,
      "games_started": 68,
-     "minutes": 2147
+     "minutes": 2147,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Brevin Knight",
@@ -329,7 +633,15 @@
      "position": "PG",
      "games": 66,
      "games_started": 61,
-     "minutes": 1944
+     "minutes": 1944,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jason Hart",
@@ -337,7 +649,15 @@
      "position": "PG",
      "games": 74,
      "games_started": 27,
-     "minutes": 1887
+     "minutes": 1887,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Keith Bogans",
@@ -345,7 +665,15 @@
      "position": "SG",
      "games": 74,
      "games_started": 42,
-     "minutes": 1791
+     "minutes": 1791,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Melvin Ely",
@@ -353,7 +681,15 @@
      "position": "PF",
      "games": 79,
      "games_started": 17,
-     "minutes": 1649
+     "minutes": 1649,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jason Kapono",
@@ -361,7 +697,15 @@
      "position": "SF",
      "games": 81,
      "games_started": 14,
-     "minutes": 1491
+     "minutes": 1491,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kareem Rush",
@@ -369,7 +713,15 @@
      "position": "SG",
      "games": 34,
      "games_started": 22,
-     "minutes": 877
+     "minutes": 877,
+     "span": [
+      0.2917,
+      1.0
+     ],
+     "window": [
+      0.2917,
+      1.0
+     ]
     },
     {
      "player_id": "Steve Smith",
@@ -377,7 +729,15 @@
      "position": "SG",
      "games": 37,
      "games_started": 1,
-     "minutes": 636
+     "minutes": 636,
+     "span": [
+      0.0,
+      0.74
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Theron Smith",
@@ -385,7 +745,15 @@
      "position": "SF",
      "games": 33,
      "games_started": 5,
-     "minutes": 510
+     "minutes": 510,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Matt Carroll",
@@ -393,7 +761,15 @@
      "position": "SG",
      "games": 25,
      "games_started": 0,
-     "minutes": 430
+     "minutes": 430,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jamal Sampson",
@@ -401,7 +777,15 @@
      "position": "PF",
      "games": 23,
      "games_started": 0,
-     "minutes": 329
+     "minutes": 329,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Bernard Robinson",
@@ -409,7 +793,15 @@
      "position": "SG",
      "games": 31,
      "games_started": 1,
-     "minutes": 328
+     "minutes": 328,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Eddie House",
@@ -417,15 +809,15 @@
      "position": "SG",
      "games": 13,
      "games_started": 5,
-     "minutes": 300
-    },
-    {
-     "player_id": "Malik Allen",
-     "bbr_id": "allenma01",
-     "position": "PF",
-     "games": 22,
-     "games_started": 1,
-     "minutes": 271
+     "minutes": 300,
+     "span": [
+      0.0,
+      0.1912
+     ],
+     "window": [
+      0.0,
+      0.1912
+     ]
     },
     {
      "player_id": "Cory Alexander",
@@ -433,7 +825,15 @@
      "position": "SG",
      "games": 16,
      "games_started": 1,
-     "minutes": 201
+     "minutes": 201,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jahidi White",
@@ -441,7 +841,15 @@
      "position": "C",
      "games": 17,
      "games_started": 0,
-     "minutes": 135
+     "minutes": 135,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tamar Slay",
@@ -449,7 +857,15 @@
      "position": "SG",
      "games": 8,
      "games_started": 0,
-     "minutes": 78
+     "minutes": 78,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -462,7 +878,15 @@
      "position": "PG",
      "games": 77,
      "games_started": 77,
-     "minutes": 2800
+     "minutes": 2800,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tyson Chandler",
@@ -470,7 +894,15 @@
      "position": "C",
      "games": 80,
      "games_started": 10,
-     "minutes": 2189
+     "minutes": 2189,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Chris Duhon",
@@ -478,7 +910,15 @@
      "position": "PG",
      "games": 82,
      "games_started": 73,
-     "minutes": 2177
+     "minutes": 2177,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Ben Gordon",
@@ -486,7 +926,15 @@
      "position": "SG",
      "games": 82,
      "games_started": 3,
-     "minutes": 2002
+     "minutes": 2002,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Andrés Nocioni",
@@ -494,7 +942,15 @@
      "position": "SF",
      "games": 81,
      "games_started": 38,
-     "minutes": 1892
+     "minutes": 1892,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Antonio Davis",
@@ -502,7 +958,15 @@
      "position": "PF",
      "games": 72,
      "games_started": 62,
-     "minutes": 1843
+     "minutes": 1843,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Eddy Curry",
@@ -510,7 +974,15 @@
      "position": "C",
      "games": 63,
      "games_started": 60,
-     "minutes": 1808
+     "minutes": 1808,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Luol Deng",
@@ -518,7 +990,15 @@
      "position": "SF",
      "games": 61,
      "games_started": 45,
-     "minutes": 1663
+     "minutes": 1663,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Othella Harrington",
@@ -526,7 +1006,15 @@
      "position": "PF",
      "games": 70,
      "games_started": 28,
-     "minutes": 1271
+     "minutes": 1271,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Eric Piatkowski",
@@ -534,7 +1022,15 @@
      "position": "SG",
      "games": 68,
      "games_started": 11,
-     "minutes": 841
+     "minutes": 841,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Adrian Griffin",
@@ -542,7 +1038,15 @@
      "position": "SF",
      "games": 69,
      "games_started": 1,
-     "minutes": 667
+     "minutes": 667,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jannero Pargo",
@@ -550,7 +1054,15 @@
      "position": "PG",
      "games": 32,
      "games_started": 0,
-     "minutes": 453
+     "minutes": 453,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jared Reiner",
@@ -558,7 +1070,15 @@
      "position": "C",
      "games": 19,
      "games_started": 2,
-     "minutes": 132
+     "minutes": 132,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Frank Williams",
@@ -566,7 +1086,15 @@
      "position": "SG",
      "games": 9,
      "games_started": 0,
-     "minutes": 71
+     "minutes": 71,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Lawrence Funderburke",
@@ -574,7 +1102,15 @@
      "position": "PF",
      "games": 2,
      "games_started": 0,
-     "minutes": 21
+     "minutes": 21,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -587,7 +1123,15 @@
      "position": "SF",
      "games": 80,
      "games_started": 80,
-     "minutes": 3388
+     "minutes": 3388,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jeff McInnis",
@@ -595,7 +1139,15 @@
      "position": "PG",
      "games": 76,
      "games_started": 69,
-     "minutes": 2651
+     "minutes": 2651,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Zydrunas Ilgauskas",
@@ -603,7 +1155,15 @@
      "position": "C",
      "games": 78,
      "games_started": 78,
-     "minutes": 2615
+     "minutes": 2615,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Drew Gooden",
@@ -611,7 +1171,15 @@
      "position": "PF",
      "games": 82,
      "games_started": 80,
-     "minutes": 2523
+     "minutes": 2523,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Eric Snow",
@@ -619,7 +1187,15 @@
      "position": "SG",
      "games": 81,
      "games_started": 15,
-     "minutes": 1844
+     "minutes": 1844,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Ira Newble",
@@ -627,7 +1203,15 @@
      "position": "SG",
      "games": 74,
      "games_started": 69,
-     "minutes": 1832
+     "minutes": 1832,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Robert Traylor",
@@ -635,7 +1219,15 @@
      "position": "C",
      "games": 74,
      "games_started": 6,
-     "minutes": 1327
+     "minutes": 1327,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Lucious Harris",
@@ -643,7 +1235,15 @@
      "position": "SG",
      "games": 73,
      "games_started": 4,
-     "minutes": 1128
+     "minutes": 1128,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Anderson Varejão",
@@ -651,7 +1251,15 @@
      "position": "PF",
      "games": 54,
      "games_started": 0,
-     "minutes": 863
+     "minutes": 863,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Sasha Pavlović",
@@ -659,7 +1267,15 @@
      "position": "SG",
      "games": 65,
      "games_started": 9,
-     "minutes": 862
+     "minutes": 862,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "DeSagana Diop",
@@ -667,7 +1283,15 @@
      "position": "C",
      "games": 39,
      "games_started": 0,
-     "minutes": 306
+     "minutes": 306,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jiří Welsch",
@@ -675,7 +1299,15 @@
      "position": "SF",
      "games": 16,
      "games_started": 0,
-     "minutes": 192
+     "minutes": 192,
+     "span": [
+      0.7746,
+      1.0
+     ],
+     "window": [
+      0.7746,
+      1.0
+     ]
     },
     {
      "player_id": "Scott Williams",
@@ -683,7 +1315,15 @@
      "position": "C",
      "games": 19,
      "games_started": 0,
-     "minutes": 152
+     "minutes": 152,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Dajuan Wagner",
@@ -691,7 +1331,15 @@
      "position": "SG",
      "games": 11,
      "games_started": 0,
-     "minutes": 102
+     "minutes": 102,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Luke Jackson",
@@ -699,7 +1347,15 @@
      "position": "SF",
      "games": 10,
      "games_started": 0,
-     "minutes": 43
+     "minutes": 43,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jérôme Moïso",
@@ -707,7 +1363,15 @@
      "position": "PF",
      "games": 4,
      "games_started": 0,
-     "minutes": 27
+     "minutes": 27,
+     "span": [
+      0.8,
+      1.0
+     ],
+     "window": [
+      0.8,
+      1.0
+     ]
     }
    ]
   },
@@ -720,7 +1384,15 @@
      "position": "PF",
      "games": 78,
      "games_started": 78,
-     "minutes": 3020
+     "minutes": 3020,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Josh Howard",
@@ -728,7 +1400,15 @@
      "position": "SF",
      "games": 76,
      "games_started": 76,
-     "minutes": 2446
+     "minutes": 2446,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jason Terry",
@@ -736,7 +1416,15 @@
      "position": "PG",
      "games": 80,
      "games_started": 57,
-     "minutes": 2401
+     "minutes": 2401,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Michael Finley",
@@ -744,7 +1432,15 @@
      "position": "SG",
      "games": 64,
      "games_started": 64,
-     "minutes": 2358
+     "minutes": 2358,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jerry Stackhouse",
@@ -752,7 +1448,15 @@
      "position": "SG",
      "games": 56,
      "games_started": 7,
-     "minutes": 1617
+     "minutes": 1617,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Erick Dampier",
@@ -760,7 +1464,15 @@
      "position": "C",
      "games": 59,
      "games_started": 56,
-     "minutes": 1609
+     "minutes": 1609,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Marquis Daniels",
@@ -768,7 +1480,15 @@
      "position": "SG",
      "games": 60,
      "games_started": 17,
-     "minutes": 1412
+     "minutes": 1412,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Alan Henderson",
@@ -776,7 +1496,15 @@
      "position": "PF",
      "games": 78,
      "games_started": 10,
-     "minutes": 1203
+     "minutes": 1203,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Devin Harris",
@@ -784,7 +1512,15 @@
      "position": "PG",
      "games": 76,
      "games_started": 19,
-     "minutes": 1173
+     "minutes": 1173,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Shawn Bradley",
@@ -792,7 +1528,15 @@
      "position": "C",
      "games": 77,
      "games_started": 14,
-     "minutes": 885
+     "minutes": 885,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Keith Van Horn",
@@ -800,7 +1544,15 @@
      "position": "PF",
      "games": 29,
      "games_started": 3,
-     "minutes": 684
+     "minutes": 684,
+     "span": [
+      0.5323,
+      1.0
+     ],
+     "window": [
+      0.5323,
+      1.0
+     ]
     },
     {
      "player_id": "Darrell Armstrong",
@@ -808,7 +1560,15 @@
      "position": "PG",
      "games": 52,
      "games_started": 7,
-     "minutes": 576
+     "minutes": 576,
+     "span": [
+      0.2121,
+      1.0
+     ],
+     "window": [
+      0.2121,
+      1.0
+     ]
     },
     {
      "player_id": "Calvin Booth",
@@ -816,7 +1576,15 @@
      "position": "C",
      "games": 34,
      "games_started": 1,
-     "minutes": 262
+     "minutes": 262,
+     "span": [
+      0.0,
+      0.6667
+     ],
+     "window": [
+      0.0,
+      0.6667
+     ]
     },
     {
      "player_id": "D.J. Mbenga",
@@ -824,7 +1592,15 @@
      "position": "C",
      "games": 15,
      "games_started": 1,
-     "minutes": 58
+     "minutes": 58,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Dan Dickau",
@@ -832,7 +1608,15 @@
      "position": "PG",
      "games": 4,
      "games_started": 0,
-     "minutes": 16
+     "minutes": 16,
+     "span": [
+      0.0,
+      0.0563
+     ],
+     "window": [
+      0.0,
+      0.0563
+     ]
     },
     {
      "player_id": "Pavel Podkolzin",
@@ -840,7 +1624,15 @@
      "position": "C",
      "games": 5,
      "games_started": 0,
-     "minutes": 10
+     "minutes": 10,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -853,7 +1645,15 @@
      "position": "PG",
      "games": 82,
      "games_started": 82,
-     "minutes": 2852
+     "minutes": 2852,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Carmelo Anthony",
@@ -861,7 +1661,15 @@
      "position": "SF",
      "games": 75,
      "games_started": 75,
-     "minutes": 2608
+     "minutes": 2608,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kenyon Martin",
@@ -869,7 +1677,15 @@
      "position": "PF",
      "games": 70,
      "games_started": 67,
-     "minutes": 2272
+     "minutes": 2272,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Earl Boykins",
@@ -877,7 +1693,15 @@
      "position": "PG",
      "games": 82,
      "games_started": 5,
-     "minutes": 2162
+     "minutes": 2162,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Marcus Camby",
@@ -885,7 +1709,15 @@
      "position": "C",
      "games": 66,
      "games_started": 66,
-     "minutes": 2015
+     "minutes": 2015,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Greg Buckner",
@@ -893,7 +1725,15 @@
      "position": "SG",
      "games": 70,
      "games_started": 41,
-     "minutes": 1522
+     "minutes": 1522,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Nenê",
@@ -901,7 +1741,15 @@
      "position": "C",
      "games": 55,
      "games_started": 18,
-     "minutes": 1317
+     "minutes": 1317,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "DerMarr Johnson",
@@ -909,7 +1757,15 @@
      "position": "SG",
      "games": 71,
      "games_started": 40,
-     "minutes": 1232
+     "minutes": 1232,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Bryon Russell",
@@ -917,7 +1773,15 @@
      "position": "SF",
      "games": 70,
      "games_started": 2,
-     "minutes": 1026
+     "minutes": 1026,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Francisco Elson",
@@ -925,7 +1789,15 @@
      "position": "C",
      "games": 67,
      "games_started": 11,
-     "minutes": 939
+     "minutes": 939,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Eduardo Nájera",
@@ -933,7 +1805,15 @@
      "position": "PF",
      "games": 26,
      "games_started": 0,
-     "minutes": 575
+     "minutes": 575,
+     "span": [
+      0.6176,
+      1.0
+     ],
+     "window": [
+      0.6176,
+      1.0
+     ]
     },
     {
      "player_id": "Rodney White",
@@ -941,15 +1821,15 @@
      "position": "SF",
      "games": 42,
      "games_started": 2,
-     "minutes": 531
-    },
-    {
-     "player_id": "Wesley Person",
-     "bbr_id": "persowe01",
-     "position": "SF",
-     "games": 25,
-     "games_started": 0,
-     "minutes": 461
+     "minutes": 531,
+     "span": [
+      0.0,
+      0.7241
+     ],
+     "window": [
+      0.0,
+      0.7241
+     ]
     },
     {
      "player_id": "Nikoloz Tskitishvili",
@@ -957,7 +1837,15 @@
      "position": "PF",
      "games": 23,
      "games_started": 0,
-     "minutes": 158
+     "minutes": 158,
+     "span": [
+      0.0,
+      0.6571
+     ],
+     "window": [
+      0.0,
+      0.6571
+     ]
     },
     {
      "player_id": "Voshon Lenard",
@@ -965,7 +1853,15 @@
      "position": "SG",
      "games": 3,
      "games_started": 1,
-     "minutes": 54
+     "minutes": 54,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Mark Pope",
@@ -973,7 +1869,15 @@
      "position": "PF",
      "games": 9,
      "games_started": 0,
-     "minutes": 27
+     "minutes": 27,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Luis Flores",
@@ -981,7 +1885,15 @@
      "position": "PG",
      "games": 1,
      "games_started": 0,
-     "minutes": 4
+     "minutes": 4,
+     "span": [
+      0.9375,
+      1.0
+     ],
+     "window": [
+      0.9375,
+      1.0
+     ]
     }
    ]
   },
@@ -994,7 +1906,15 @@
      "position": "SF",
      "games": 82,
      "games_started": 82,
-     "minutes": 3039
+     "minutes": 3039,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Richard Hamilton",
@@ -1002,7 +1922,15 @@
      "position": "SG",
      "games": 76,
      "games_started": 76,
-     "minutes": 2926
+     "minutes": 2926,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Chauncey Billups",
@@ -1010,7 +1938,15 @@
      "position": "PG",
      "games": 80,
      "games_started": 80,
-     "minutes": 2866
+     "minutes": 2866,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Rasheed Wallace",
@@ -1018,7 +1954,15 @@
      "position": "PF",
      "games": 79,
      "games_started": 79,
-     "minutes": 2687
+     "minutes": 2687,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Ben Wallace",
@@ -1026,7 +1970,15 @@
      "position": "C",
      "games": 74,
      "games_started": 74,
-     "minutes": 2671
+     "minutes": 2671,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Antonio McDyess",
@@ -1034,7 +1986,15 @@
      "position": "PF",
      "games": 77,
      "games_started": 8,
-     "minutes": 1797
+     "minutes": 1797,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Lindsey Hunter",
@@ -1042,7 +2002,15 @@
      "position": "SG",
      "games": 76,
      "games_started": 3,
-     "minutes": 1144
+     "minutes": 1144,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Carlos Arroyo",
@@ -1050,7 +2018,15 @@
      "position": "PG",
      "games": 40,
      "games_started": 0,
-     "minutes": 706
+     "minutes": 706,
+     "span": [
+      0.4286,
+      1.0
+     ],
+     "window": [
+      0.4286,
+      1.0
+     ]
     },
     {
      "player_id": "Ronald Dupree",
@@ -1058,7 +2034,15 @@
      "position": "SF",
      "games": 47,
      "games_started": 0,
-     "minutes": 472
+     "minutes": 472,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Carlos Delfino",
@@ -1066,7 +2050,15 @@
      "position": "SG",
      "games": 30,
      "games_started": 4,
-     "minutes": 459
+     "minutes": 459,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Elden Campbell",
@@ -1074,7 +2066,15 @@
      "position": "C",
      "games": 30,
      "games_started": 1,
-     "minutes": 340
+     "minutes": 340,
+     "span": [
+      0.25,
+      1.0
+     ],
+     "window": [
+      0.25,
+      1.0
+     ]
     },
     {
      "player_id": "Darvin Ham",
@@ -1082,7 +2082,15 @@
      "position": "SF",
      "games": 47,
      "games_started": 0,
-     "minutes": 275
+     "minutes": 275,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Darko Miličić",
@@ -1090,7 +2098,15 @@
      "position": "C",
      "games": 37,
      "games_started": 2,
-     "minutes": 254
+     "minutes": 254,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Smush Parker",
@@ -1098,7 +2114,15 @@
      "position": "PG",
      "games": 11,
      "games_started": 1,
-     "minutes": 110
+     "minutes": 110,
+     "span": [
+      0.0,
+      0.6875
+     ],
+     "window": [
+      0.0,
+      0.6875
+     ]
     },
     {
      "player_id": "Horace Jenkins",
@@ -1106,7 +2130,15 @@
      "position": "PG",
      "games": 15,
      "games_started": 0,
-     "minutes": 104
+     "minutes": 104,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Anthony Goldwire",
@@ -1114,7 +2146,15 @@
      "position": "PG",
      "games": 9,
      "games_started": 0,
-     "minutes": 55
+     "minutes": 55,
+     "span": [
+      0.0,
+      0.2727
+     ],
+     "window": [
+      0.0,
+      0.2727
+     ]
     },
     {
      "player_id": "Derrick Coleman",
@@ -1122,7 +2162,15 @@
      "position": "C",
      "games": 5,
      "games_started": 0,
-     "minutes": 50
+     "minutes": 50,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -1135,7 +2183,15 @@
      "position": "SG",
      "games": 72,
      "games_started": 72,
-     "minutes": 2724
+     "minutes": 2724,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Mike Dunleavy",
@@ -1143,7 +2199,15 @@
      "position": "SF",
      "games": 79,
      "games_started": 79,
-     "minutes": 2570
+     "minutes": 2570,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Troy Murphy",
@@ -1151,7 +2215,15 @@
      "position": "PF",
      "games": 70,
      "games_started": 69,
-     "minutes": 2375
+     "minutes": 2375,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Derek Fisher",
@@ -1159,7 +2231,15 @@
      "position": "PG",
      "games": 74,
      "games_started": 32,
-     "minutes": 2222
+     "minutes": 2222,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Adonal Foyle",
@@ -1167,7 +2247,15 @@
      "position": "C",
      "games": 78,
      "games_started": 50,
-     "minutes": 1700
+     "minutes": 1700,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Speedy Claxton",
@@ -1175,7 +2263,15 @@
      "position": "PG",
      "games": 46,
      "games_started": 44,
-     "minutes": 1501
+     "minutes": 1501,
+     "span": [
+      0.0,
+      0.7419
+     ],
+     "window": [
+      0.0,
+      0.7419
+     ]
     },
     {
      "player_id": "Mickaël Piétrus",
@@ -1183,7 +2279,15 @@
      "position": "SF",
      "games": 67,
      "games_started": 3,
-     "minutes": 1340
+     "minutes": 1340,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Clifford Robinson",
@@ -1191,7 +2295,15 @@
      "position": "C",
      "games": 42,
      "games_started": 29,
-     "minutes": 1090
+     "minutes": 1090,
+     "span": [
+      0.0,
+      0.5915
+     ],
+     "window": [
+      0.0,
+      0.5915
+     ]
     },
     {
      "player_id": "Baron Davis",
@@ -1199,7 +2311,15 @@
      "position": "PG",
      "games": 28,
      "games_started": 19,
-     "minutes": 988
+     "minutes": 988,
+     "span": [
+      0.3913,
+      1.0
+     ],
+     "window": [
+      0.3913,
+      1.0
+     ]
     },
     {
      "player_id": "Calbert Cheaney",
@@ -1207,7 +2327,15 @@
      "position": "SG",
      "games": 55,
      "games_started": 5,
-     "minutes": 951
+     "minutes": 951,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Eduardo Nájera",
@@ -1215,7 +2343,15 @@
      "position": "PF",
      "games": 42,
      "games_started": 4,
-     "minutes": 610
+     "minutes": 610,
+     "span": [
+      0.0,
+      0.6176
+     ],
+     "window": [
+      0.0,
+      0.6176
+     ]
     },
     {
      "player_id": "Dale Davis",
@@ -1223,7 +2359,15 @@
      "position": "C",
      "games": 36,
      "games_started": 3,
-     "minutes": 577
+     "minutes": 577,
+     "span": [
+      0.0,
+      0.5902
+     ],
+     "window": [
+      0.0,
+      0.5902
+     ]
     },
     {
      "player_id": "Žarko Čabarkapa",
@@ -1231,7 +2375,15 @@
      "position": "PF",
      "games": 37,
      "games_started": 0,
-     "minutes": 464
+     "minutes": 464,
+     "span": [
+      0.075,
+      1.0
+     ],
+     "window": [
+      0.075,
+      1.0
+     ]
     },
     {
      "player_id": "Andris Biedriņš",
@@ -1239,7 +2391,15 @@
      "position": "C",
      "games": 30,
      "games_started": 1,
-     "minutes": 384
+     "minutes": 384,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Rodney White",
@@ -1247,7 +2407,15 @@
      "position": "SF",
      "games": 16,
      "games_started": 0,
-     "minutes": 146
+     "minutes": 146,
+     "span": [
+      0.7241,
+      1.0
+     ],
+     "window": [
+      0.7241,
+      1.0
+     ]
     },
     {
      "player_id": "Ansu Sesay",
@@ -1255,7 +2423,15 @@
      "position": "SF",
      "games": 16,
      "games_started": 0,
-     "minutes": 128
+     "minutes": 128,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Luis Flores",
@@ -1263,7 +2439,15 @@
      "position": "PG",
      "games": 15,
      "games_started": 0,
-     "minutes": 73
+     "minutes": 73,
+     "span": [
+      0.0,
+      0.9375
+     ],
+     "window": [
+      0.0,
+      0.9375
+     ]
     },
     {
      "player_id": "Nikoloz Tskitishvili",
@@ -1271,7 +2455,15 @@
      "position": "PF",
      "games": 12,
      "games_started": 0,
-     "minutes": 62
+     "minutes": 62,
+     "span": [
+      0.6571,
+      1.0
+     ],
+     "window": [
+      0.6571,
+      1.0
+     ]
     }
    ]
   },
@@ -1284,7 +2476,15 @@
      "position": "SF",
      "games": 78,
      "games_started": 78,
-     "minutes": 3182
+     "minutes": 3182,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Yao Ming",
@@ -1292,7 +2492,15 @@
      "position": "C",
      "games": 80,
      "games_started": 80,
-     "minutes": 2447
+     "minutes": 2447,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Bob Sura",
@@ -1300,7 +2508,15 @@
      "position": "PG",
      "games": 61,
      "games_started": 59,
-     "minutes": 1922
+     "minutes": 1922,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "David Wesley",
@@ -1308,7 +2524,15 @@
      "position": "SG",
      "games": 54,
      "games_started": 53,
-     "minutes": 1840
+     "minutes": 1840,
+     "span": [
+      0.325,
+      1.0
+     ],
+     "window": [
+      0.325,
+      1.0
+     ]
     },
     {
      "player_id": "Juwan Howard",
@@ -1316,7 +2540,15 @@
      "position": "PF",
      "games": 61,
      "games_started": 47,
-     "minutes": 1624
+     "minutes": 1624,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jon Barry",
@@ -1324,7 +2556,15 @@
      "position": "SG",
      "games": 53,
      "games_started": 2,
-     "minutes": 1230
+     "minutes": 1230,
+     "span": [
+      0.2319,
+      1.0
+     ],
+     "window": [
+      0.2319,
+      1.0
+     ]
     },
     {
      "player_id": "Dikembe Mutombo",
@@ -1332,7 +2572,15 @@
      "position": "C",
      "games": 80,
      "games_started": 2,
-     "minutes": 1212
+     "minutes": 1212,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jim Jackson",
@@ -1340,7 +2588,15 @@
      "position": "SF",
      "games": 24,
      "games_started": 24,
-     "minutes": 990
+     "minutes": 990,
+     "span": [
+      0.0,
+      0.375
+     ],
+     "window": [
+      0.0,
+      0.375
+     ]
     },
     {
      "player_id": "Scott Padgett",
@@ -1348,7 +2604,15 @@
      "position": "PF",
      "games": 66,
      "games_started": 0,
-     "minutes": 942
+     "minutes": 942,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Maurice Taylor",
@@ -1356,7 +2620,15 @@
      "position": "PF",
      "games": 38,
      "games_started": 16,
-     "minutes": 905
+     "minutes": 905,
+     "span": [
+      0.0,
+      0.5846
+     ],
+     "window": [
+      0.0,
+      0.5846
+     ]
     },
     {
      "player_id": "Mike James",
@@ -1364,7 +2636,15 @@
      "position": "PG",
      "games": 27,
      "games_started": 5,
-     "minutes": 692
+     "minutes": 692,
+     "span": [
+      0.6351,
+      1.0
+     ],
+     "window": [
+      0.6351,
+      1.0
+     ]
     },
     {
      "player_id": "Ryan Bowen",
@@ -1372,7 +2652,15 @@
      "position": "SF",
      "games": 66,
      "games_started": 6,
-     "minutes": 604
+     "minutes": 604,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Clarence Weatherspoon",
@@ -1380,7 +2668,15 @@
      "position": "PF",
      "games": 40,
      "games_started": 18,
-     "minutes": 525
+     "minutes": 525,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tyronn Lue",
@@ -1388,7 +2684,15 @@
      "position": "PG",
      "games": 21,
      "games_started": 3,
-     "minutes": 479
+     "minutes": 479,
+     "span": [
+      0.0,
+      0.3
+     ],
+     "window": [
+      0.0,
+      0.3
+     ]
     },
     {
      "player_id": "Charlie Ward",
@@ -1396,7 +2700,15 @@
      "position": "PG",
      "games": 14,
      "games_started": 13,
-     "minutes": 360
+     "minutes": 360,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Andre Barrett",
@@ -1404,7 +2716,15 @@
      "position": "PG",
      "games": 27,
      "games_started": 0,
-     "minutes": 314
+     "minutes": 314,
+     "span": [
+      0.0,
+      0.7105
+     ],
+     "window": [
+      0.0,
+      0.7105
+     ]
     },
     {
      "player_id": "Boštjan Nachbar",
@@ -1412,7 +2732,15 @@
      "position": "SF",
      "games": 16,
      "games_started": 2,
-     "minutes": 204
+     "minutes": 204,
+     "span": [
+      0.0,
+      0.2254
+     ],
+     "window": [
+      0.0,
+      0.2254
+     ]
     },
     {
      "player_id": "Rod Strickland",
@@ -1420,7 +2748,15 @@
      "position": "PG",
      "games": 16,
      "games_started": 2,
-     "minutes": 196
+     "minutes": 196,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Reece Gaines",
@@ -1428,7 +2764,15 @@
      "position": "PG",
      "games": 10,
      "games_started": 0,
-     "minutes": 108
+     "minutes": 108,
+     "span": [
+      0.0,
+      0.4762
+     ],
+     "window": [
+      0.0,
+      0.4762
+     ]
     },
     {
      "player_id": "Moochie Norris",
@@ -1436,7 +2780,15 @@
      "position": "PG",
      "games": 6,
      "games_started": 0,
-     "minutes": 39
+     "minutes": 39,
+     "span": [
+      0.8421,
+      1.0
+     ],
+     "window": [
+      0.8421,
+      1.0
+     ]
     },
     {
      "player_id": "Torraye Braggs",
@@ -1444,7 +2796,15 @@
      "position": "PF",
      "games": 7,
      "games_started": 0,
-     "minutes": 24
+     "minutes": 24,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Vin Baker",
@@ -1452,7 +2812,15 @@
      "position": "C",
      "games": 3,
      "games_started": 0,
-     "minutes": 13
+     "minutes": 13,
+     "span": [
+      0.8889,
+      1.0
+     ],
+     "window": [
+      0.8889,
+      1.0
+     ]
     },
     {
      "player_id": "Brandin Knight",
@@ -1460,7 +2828,15 @@
      "position": "PG",
      "games": 1,
      "games_started": 0,
-     "minutes": 3
+     "minutes": 3,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -1473,7 +2849,15 @@
      "position": "SG",
      "games": 77,
      "games_started": 14,
-     "minutes": 2268
+     "minutes": 2268,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Reggie Miller",
@@ -1481,7 +2865,15 @@
      "position": "SG",
      "games": 66,
      "games_started": 66,
-     "minutes": 2105
+     "minutes": 2105,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Austin Croshere",
@@ -1489,7 +2881,15 @@
      "position": "PF",
      "games": 73,
      "games_started": 22,
-     "minutes": 1827
+     "minutes": 1827,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Stephen Jackson",
@@ -1497,7 +2897,15 @@
      "position": "SF",
      "games": 51,
      "games_started": 49,
-     "minutes": 1806
+     "minutes": 1806,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Anthony Johnson",
@@ -1505,7 +2913,15 @@
      "position": "PG",
      "games": 63,
      "games_started": 36,
-     "minutes": 1747
+     "minutes": 1747,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jeff Foster",
@@ -1513,7 +2929,15 @@
      "position": "C",
      "games": 61,
      "games_started": 43,
-     "minutes": 1594
+     "minutes": 1594,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jermaine O'Neal",
@@ -1521,7 +2945,15 @@
      "position": "PF",
      "games": 44,
      "games_started": 41,
-     "minutes": 1530
+     "minutes": 1530,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "James Jones",
@@ -1529,7 +2961,15 @@
      "position": "SF",
      "games": 75,
      "games_started": 24,
-     "minutes": 1330
+     "minutes": 1330,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jamaal Tinsley",
@@ -1537,7 +2977,15 @@
      "position": "PG",
      "games": 40,
      "games_started": 40,
-     "minutes": 1301
+     "minutes": 1301,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Eddie Gill",
@@ -1545,7 +2993,15 @@
      "position": "PG",
      "games": 73,
      "games_started": 3,
-     "minutes": 1021
+     "minutes": 1021,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Scot Pollard",
@@ -1553,7 +3009,15 @@
      "position": "C",
      "games": 49,
      "games_started": 17,
-     "minutes": 865
+     "minutes": 865,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "David Harrison",
@@ -1561,7 +3025,15 @@
      "position": "C",
      "games": 43,
      "games_started": 14,
-     "minutes": 760
+     "minutes": 760,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Dale Davis",
@@ -1569,7 +3041,15 @@
      "position": "C",
      "games": 25,
      "games_started": 25,
-     "minutes": 730
+     "minutes": 730,
+     "span": [
+      0.5902,
+      1.0
+     ],
+     "window": [
+      0.5902,
+      1.0
+     ]
     },
     {
      "player_id": "Metta World Peace",
@@ -1577,7 +3057,15 @@
      "position": "SF",
      "games": 7,
      "games_started": 7,
-     "minutes": 291
+     "minutes": 291,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Michael Curry",
@@ -1585,7 +3073,15 @@
      "position": "SF",
      "games": 18,
      "games_started": 7,
-     "minutes": 249
+     "minutes": 249,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "John Edwards",
@@ -1593,7 +3089,15 @@
      "position": "C",
      "games": 25,
      "games_started": 1,
-     "minutes": 139
+     "minutes": 139,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Marcus Haislip",
@@ -1601,7 +3105,15 @@
      "position": "PF",
      "games": 9,
      "games_started": 0,
-     "minutes": 106
+     "minutes": 106,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jonathan Bender",
@@ -1609,7 +3121,15 @@
      "position": "SF",
      "games": 7,
      "games_started": 0,
-     "minutes": 93
+     "minutes": 93,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Britton Johnsen",
@@ -1617,7 +3137,15 @@
      "position": "SF",
      "games": 6,
      "games_started": 1,
-     "minutes": 87
+     "minutes": 87,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tremaine Fowlkes",
@@ -1625,7 +3153,15 @@
      "position": "SF",
      "games": 8,
      "games_started": 0,
-     "minutes": 56
+     "minutes": 56,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -1638,7 +3174,15 @@
      "position": "PF",
      "games": 81,
      "games_started": 81,
-     "minutes": 3001
+     "minutes": 3001,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Bobby Simmons",
@@ -1646,7 +3190,15 @@
      "position": "SF",
      "games": 75,
      "games_started": 74,
-     "minutes": 2799
+     "minutes": 2799,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Corey Maggette",
@@ -1654,7 +3206,15 @@
      "position": "SG",
      "games": 66,
      "games_started": 60,
-     "minutes": 2436
+     "minutes": 2436,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Rick Brunson",
@@ -1662,7 +3222,15 @@
      "position": "PG",
      "games": 80,
      "games_started": 39,
-     "minutes": 1945
+     "minutes": 1945,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Quinton Ross",
@@ -1670,7 +3238,15 @@
      "position": "SG",
      "games": 78,
      "games_started": 19,
-     "minutes": 1659
+     "minutes": 1659,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Marko Jarić",
@@ -1678,7 +3254,15 @@
      "position": "PG",
      "games": 50,
      "games_started": 41,
-     "minutes": 1656
+     "minutes": 1656,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Chris Kaman",
@@ -1686,7 +3270,15 @@
      "position": "C",
      "games": 63,
      "games_started": 50,
-     "minutes": 1632
+     "minutes": 1632,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Mikki Moore",
@@ -1694,7 +3286,15 @@
      "position": "PF",
      "games": 74,
      "games_started": 4,
-     "minutes": 1178
+     "minutes": 1178,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Chris Wilcox",
@@ -1702,7 +3302,15 @@
      "position": "C",
      "games": 54,
      "games_started": 25,
-     "minutes": 1005
+     "minutes": 1005,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Željko Rebrača",
@@ -1710,7 +3318,15 @@
      "position": "C",
      "games": 58,
      "games_started": 2,
-     "minutes": 928
+     "minutes": 928,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Shaun Livingston",
@@ -1718,7 +3334,15 @@
      "position": "PG",
      "games": 30,
      "games_started": 15,
-     "minutes": 814
+     "minutes": 814,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Lionel Chalmers",
@@ -1726,7 +3350,15 @@
      "position": "PG",
      "games": 36,
      "games_started": 0,
-     "minutes": 433
+     "minutes": 433,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kerry Kittles",
@@ -1734,7 +3366,15 @@
      "position": "SG",
      "games": 11,
      "games_started": 0,
-     "minutes": 243
+     "minutes": 243,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Darrick Martin",
@@ -1742,7 +3382,15 @@
      "position": "PG",
      "games": 11,
      "games_started": 0,
-     "minutes": 190
+     "minutes": 190,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Mamadou N'Diaye",
@@ -1750,7 +3398,15 @@
      "position": "C",
      "games": 11,
      "games_started": 0,
-     "minutes": 72
+     "minutes": 72,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kenny Anderson",
@@ -1758,7 +3414,15 @@
      "position": "PG",
      "games": 4,
      "games_started": 0,
-     "minutes": 26
+     "minutes": 26,
+     "span": [
+      0.907,
+      1.0
+     ],
+     "window": [
+      0.907,
+      1.0
+     ]
     },
     {
      "player_id": "Kirk Penney",
@@ -1766,7 +3430,15 @@
      "position": "SG",
      "games": 4,
      "games_started": 0,
-     "minutes": 12
+     "minutes": 12,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Maurice Baker",
@@ -1774,7 +3446,15 @@
      "position": "PG",
      "games": 1,
      "games_started": 0,
-     "minutes": 1
+     "minutes": 1,
+     "span": [
+      0.0,
+      0.2
+     ],
+     "window": [
+      0.0,
+      0.2
+     ]
     }
    ]
   },
@@ -1787,7 +3467,15 @@
      "position": "PG",
      "games": 82,
      "games_started": 82,
-     "minutes": 2903
+     "minutes": 2903,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Caron Butler",
@@ -1795,7 +3483,15 @@
      "position": "SF",
      "games": 77,
      "games_started": 77,
-     "minutes": 2746
+     "minutes": 2746,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kobe Bryant",
@@ -1803,7 +3499,15 @@
      "position": "SG",
      "games": 66,
      "games_started": 66,
-     "minutes": 2689
+     "minutes": 2689,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Lamar Odom",
@@ -1811,7 +3515,15 @@
      "position": "PF",
      "games": 64,
      "games_started": 64,
-     "minutes": 2320
+     "minutes": 2320,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Chris Mihm",
@@ -1819,7 +3531,15 @@
      "position": "C",
      "games": 75,
      "games_started": 75,
-     "minutes": 1870
+     "minutes": 1870,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jumaine Jones",
@@ -1827,7 +3547,15 @@
      "position": "SF",
      "games": 76,
      "games_started": 23,
-     "minutes": 1830
+     "minutes": 1830,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Brian Grant",
@@ -1835,7 +3563,15 @@
      "position": "C",
      "games": 69,
      "games_started": 8,
-     "minutes": 1136
+     "minutes": 1136,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Brian Cook",
@@ -1843,7 +3579,15 @@
      "position": "C",
      "games": 72,
      "games_started": 0,
-     "minutes": 1087
+     "minutes": 1087,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tierre Brown",
@@ -1851,7 +3595,15 @@
      "position": "PG",
      "games": 76,
      "games_started": 0,
-     "minutes": 1066
+     "minutes": 1066,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Luke Walton",
@@ -1859,7 +3611,15 @@
      "position": "SF",
      "games": 61,
      "games_started": 5,
-     "minutes": 768
+     "minutes": 768,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Stanislav Medvedenko",
@@ -1867,7 +3627,15 @@
      "position": "PF",
      "games": 43,
      "games_started": 4,
-     "minutes": 423
+     "minutes": 423,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Sasha Vujačić",
@@ -1875,7 +3643,15 @@
      "position": "SG",
      "games": 35,
      "games_started": 3,
-     "minutes": 403
+     "minutes": 403,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Devean George",
@@ -1883,7 +3659,15 @@
      "position": "SF",
      "games": 15,
      "games_started": 3,
-     "minutes": 306
+     "minutes": 306,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Vlade Divac",
@@ -1891,7 +3675,15 @@
      "position": "C",
      "games": 15,
      "games_started": 0,
-     "minutes": 130
+     "minutes": 130,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kareem Rush",
@@ -1899,7 +3691,15 @@
      "position": "SG",
      "games": 14,
      "games_started": 0,
-     "minutes": 91
+     "minutes": 91,
+     "span": [
+      0.0,
+      0.2917
+     ],
+     "window": [
+      0.0,
+      0.2917
+     ]
     },
     {
      "player_id": "Tony Bobbitt",
@@ -1907,7 +3707,15 @@
      "position": "SG",
      "games": 2,
      "games_started": 0,
-     "minutes": 12
+     "minutes": 12,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -1920,7 +3728,15 @@
      "position": "SG",
      "games": 80,
      "games_started": 72,
-     "minutes": 2516
+     "minutes": 2516,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Lorenzen Wright",
@@ -1928,7 +3744,15 @@
      "position": "C",
      "games": 80,
      "games_started": 77,
-     "minutes": 2287
+     "minutes": 2287,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Mike Miller",
@@ -1936,7 +3760,15 @@
      "position": "SF",
      "games": 76,
      "games_started": 51,
-     "minutes": 2278
+     "minutes": 2278,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jason Williams",
@@ -1944,7 +3776,15 @@
      "position": "PG",
      "games": 71,
      "games_started": 68,
-     "minutes": 1952
+     "minutes": 1952,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Earl Watson",
@@ -1952,7 +3792,15 @@
      "position": "PG",
      "games": 80,
      "games_started": 14,
-     "minutes": 1808
+     "minutes": 1808,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Pau Gasol",
@@ -1960,7 +3808,15 @@
      "position": "PF",
      "games": 56,
      "games_started": 53,
-     "minutes": 1790
+     "minutes": 1790,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Bonzi Wells",
@@ -1968,7 +3824,15 @@
      "position": "SG",
      "games": 69,
      "games_started": 19,
-     "minutes": 1489
+     "minutes": 1489,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Brian Cardinal",
@@ -1976,7 +3840,15 @@
      "position": "PF",
      "games": 58,
      "games_started": 16,
-     "minutes": 1433
+     "minutes": 1433,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "James Posey",
@@ -1984,7 +3856,15 @@
      "position": "SF",
      "games": 50,
      "games_started": 18,
-     "minutes": 1382
+     "minutes": 1382,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Stromile Swift",
@@ -1992,7 +3872,15 @@
      "position": "PF",
      "games": 60,
      "games_started": 14,
-     "minutes": 1279
+     "minutes": 1279,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Dahntay Jones",
@@ -2000,7 +3888,15 @@
      "position": "SG",
      "games": 52,
      "games_started": 7,
-     "minutes": 649
+     "minutes": 649,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Ryan Humphrey",
@@ -2008,7 +3904,15 @@
      "position": "SF",
      "games": 35,
      "games_started": 0,
-     "minutes": 317
+     "minutes": 317,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jake Tsakalidis",
@@ -2016,7 +3920,15 @@
      "position": "C",
      "games": 31,
      "games_started": 1,
-     "minutes": 278
+     "minutes": 278,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Antonio Burks",
@@ -2024,7 +3936,15 @@
      "position": "PG",
      "games": 24,
      "games_started": 0,
-     "minutes": 219
+     "minutes": 219,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Andre Emmett",
@@ -2032,7 +3952,15 @@
      "position": "SG",
      "games": 8,
      "games_started": 0,
-     "minutes": 28
+     "minutes": 28,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -2045,7 +3973,15 @@
      "position": "SF",
      "games": 80,
      "games_started": 71,
-     "minutes": 2893
+     "minutes": 2893,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Michael Redd",
@@ -2053,7 +3989,15 @@
      "position": "SG",
      "games": 75,
      "games_started": 75,
-     "minutes": 2848
+     "minutes": 2848,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Joe Smith",
@@ -2061,7 +4005,15 @@
      "position": "PF",
      "games": 74,
      "games_started": 73,
-     "minutes": 2265
+     "minutes": 2265,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Mo Williams",
@@ -2069,7 +4021,15 @@
      "position": "PG",
      "games": 80,
      "games_started": 80,
-     "minutes": 2254
+     "minutes": 2254,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Dan Gadzuric",
@@ -2077,7 +4037,15 @@
      "position": "C",
      "games": 81,
      "games_started": 81,
-     "minutes": 1783
+     "minutes": 1783,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Zaza Pachulia",
@@ -2085,7 +4053,15 @@
      "position": "C",
      "games": 74,
      "games_started": 4,
-     "minutes": 1397
+     "minutes": 1397,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Mike James",
@@ -2093,7 +4069,15 @@
      "position": "PG",
      "games": 47,
      "games_started": 0,
-     "minutes": 1167
+     "minutes": 1167,
+     "span": [
+      0.0,
+      0.6351
+     ],
+     "window": [
+      0.0,
+      0.6351
+     ]
     },
     {
      "player_id": "Toni Kukoč",
@@ -2101,7 +4085,15 @@
      "position": "SF",
      "games": 53,
      "games_started": 6,
-     "minutes": 1099
+     "minutes": 1099,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Erick Strickland",
@@ -2109,7 +4101,15 @@
      "position": "SG",
      "games": 62,
      "games_started": 5,
-     "minutes": 1014
+     "minutes": 1014,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Marcus Fizer",
@@ -2117,7 +4117,15 @@
      "position": "PF",
      "games": 54,
      "games_started": 0,
-     "minutes": 903
+     "minutes": 903,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Keith Van Horn",
@@ -2125,7 +4133,15 @@
      "position": "SF",
      "games": 33,
      "games_started": 13,
-     "minutes": 818
+     "minutes": 818,
+     "span": [
+      0.0,
+      0.5323
+     ],
+     "window": [
+      0.0,
+      0.5323
+     ]
     },
     {
      "player_id": "Anthony Goldwire",
@@ -2133,7 +4149,15 @@
      "position": "PG",
      "games": 24,
      "games_started": 2,
-     "minutes": 482
+     "minutes": 482,
+     "span": [
+      0.2727,
+      1.0
+     ],
+     "window": [
+      0.2727,
+      1.0
+     ]
     },
     {
      "player_id": "Kendall Gill",
@@ -2141,7 +4165,15 @@
      "position": "SG",
      "games": 14,
      "games_started": 0,
-     "minutes": 284
+     "minutes": 284,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Calvin Booth",
@@ -2149,7 +4181,15 @@
      "position": "C",
      "games": 17,
      "games_started": 0,
-     "minutes": 189
+     "minutes": 189,
+     "span": [
+      0.6667,
+      1.0
+     ],
+     "window": [
+      0.6667,
+      1.0
+     ]
     },
     {
      "player_id": "Zendon Hamilton",
@@ -2157,7 +4197,15 @@
      "position": "C",
      "games": 16,
      "games_started": 0,
-     "minutes": 159
+     "minutes": 159,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Daniel Santiago",
@@ -2165,7 +4213,15 @@
      "position": "C",
      "games": 11,
      "games_started": 0,
-     "minutes": 105
+     "minutes": 105,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Reece Gaines",
@@ -2173,7 +4229,15 @@
      "position": "PG",
      "games": 11,
      "games_started": 0,
-     "minutes": 79
+     "minutes": 79,
+     "span": [
+      0.4762,
+      1.0
+     ],
+     "window": [
+      0.4762,
+      1.0
+     ]
     },
     {
      "player_id": "Eddie House",
@@ -2181,7 +4245,15 @@
      "position": "SG",
      "games": 5,
      "games_started": 0,
-     "minutes": 41
+     "minutes": 41,
+     "span": [
+      0.1912,
+      0.2647
+     ],
+     "window": [
+      0.1912,
+      0.2647
+     ]
     }
    ]
   },
@@ -2194,7 +4266,15 @@
      "position": "PF",
      "games": 82,
      "games_started": 82,
-     "minutes": 3121
+     "minutes": 3121,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Wally Szczerbiak",
@@ -2202,7 +4282,15 @@
      "position": "SF",
      "games": 81,
      "games_started": 37,
-     "minutes": 2558
+     "minutes": 2558,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Latrell Sprewell",
@@ -2210,7 +4298,15 @@
      "position": "SF",
      "games": 80,
      "games_started": 79,
-     "minutes": 2450
+     "minutes": 2450,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Trenton Hassell",
@@ -2218,7 +4314,15 @@
      "position": "SG",
      "games": 82,
      "games_started": 51,
-     "minutes": 2068
+     "minutes": 2068,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Troy Hudson",
@@ -2226,7 +4330,15 @@
      "position": "PG",
      "games": 79,
      "games_started": 32,
-     "minutes": 1729
+     "minutes": 1729,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Sam Cassell",
@@ -2234,7 +4346,15 @@
      "position": "PG",
      "games": 59,
      "games_started": 38,
-     "minutes": 1522
+     "minutes": 1522,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Eddie Griffin",
@@ -2242,7 +4362,15 @@
      "position": "PF",
      "games": 70,
      "games_started": 0,
-     "minutes": 1492
+     "minutes": 1492,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Fred Hoiberg",
@@ -2250,7 +4378,15 @@
      "position": "SG",
      "games": 76,
      "games_started": 0,
-     "minutes": 1272
+     "minutes": 1272,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Michael Olowokandi",
@@ -2258,7 +4394,15 @@
      "position": "C",
      "games": 62,
      "games_started": 34,
-     "minutes": 1215
+     "minutes": 1215,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Anthony Carter",
@@ -2266,7 +4410,15 @@
      "position": "PG",
      "games": 66,
      "games_started": 12,
-     "minutes": 742
+     "minutes": 742,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Mark Madsen",
@@ -2274,7 +4426,15 @@
      "position": "C",
      "games": 41,
      "games_started": 14,
-     "minutes": 601
+     "minutes": 601,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "John Thomas",
@@ -2282,7 +4442,15 @@
      "position": "C",
      "games": 44,
      "games_started": 8,
-     "minutes": 521
+     "minutes": 521,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Ervin Johnson",
@@ -2290,7 +4458,15 @@
      "position": "C",
      "games": 46,
      "games_started": 23,
-     "minutes": 410
+     "minutes": 410,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Ndudi Ebi",
@@ -2298,7 +4474,15 @@
      "position": "SG",
      "games": 2,
      "games_started": 0,
-     "minutes": 54
+     "minutes": 54,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -2311,7 +4495,15 @@
      "position": "C",
      "games": 80,
      "games_started": 80,
-     "minutes": 2542
+     "minutes": 2542,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jason Kidd",
@@ -2319,7 +4511,15 @@
      "position": "PG",
      "games": 66,
      "games_started": 65,
-     "minutes": 2435
+     "minutes": 2435,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Vince Carter",
@@ -2327,7 +4527,15 @@
      "position": "SF",
      "games": 57,
      "games_started": 56,
-     "minutes": 2220
+     "minutes": 2220,
+     "span": [
+      0.2597,
+      1.0
+     ],
+     "window": [
+      0.2597,
+      1.0
+     ]
     },
     {
      "player_id": "Nenad Krstić",
@@ -2335,7 +4543,15 @@
      "position": "PF",
      "games": 75,
      "games_started": 57,
-     "minutes": 1965
+     "minutes": 1965,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Travis Best",
@@ -2343,7 +4559,15 @@
      "position": "PG",
      "games": 76,
      "games_started": 6,
-     "minutes": 1461
+     "minutes": 1461,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jacque Vaughn",
@@ -2351,7 +4575,15 @@
      "position": "SG",
      "games": 71,
      "games_started": 34,
-     "minutes": 1410
+     "minutes": 1410,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Richard Jefferson",
@@ -2359,7 +4591,15 @@
      "position": "SF",
      "games": 33,
      "games_started": 33,
-     "minutes": 1355
+     "minutes": 1355,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Rodney Buford",
@@ -2367,7 +4607,15 @@
      "position": "SF",
      "games": 64,
      "games_started": 17,
-     "minutes": 1313
+     "minutes": 1313,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Brian Scalabrine",
@@ -2375,7 +4623,15 @@
      "position": "PF",
      "games": 54,
      "games_started": 14,
-     "minutes": 1167
+     "minutes": 1167,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Eric Williams",
@@ -2383,7 +4639,15 @@
      "position": "SG",
      "games": 21,
      "games_started": 21,
-     "minutes": 739
+     "minutes": 739,
+     "span": [
+      0.0,
+      0.3818
+     ],
+     "window": [
+      0.0,
+      0.3818
+     ]
     },
     {
      "player_id": "Jabari Smith",
@@ -2391,7 +4655,15 @@
      "position": "PF",
      "games": 45,
      "games_started": 2,
-     "minutes": 648
+     "minutes": 648,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Clifford Robinson",
@@ -2399,7 +4671,15 @@
      "position": "PF",
      "games": 29,
      "games_started": 0,
-     "minutes": 599
+     "minutes": 599,
+     "span": [
+      0.5915,
+      1.0
+     ],
+     "window": [
+      0.5915,
+      1.0
+     ]
     },
     {
      "player_id": "Zoran Planinić",
@@ -2407,7 +4687,15 @@
      "position": "PG",
      "games": 43,
      "games_started": 8,
-     "minutes": 515
+     "minutes": 515,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Alonzo Mourning",
@@ -2415,7 +4703,15 @@
      "position": "PF",
      "games": 18,
      "games_started": 14,
-     "minutes": 457
+     "minutes": 457,
+     "span": [
+      0.0,
+      0.4865
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Ron Mercer",
@@ -2423,7 +4719,15 @@
      "position": "SF",
      "games": 18,
      "games_started": 3,
-     "minutes": 390
+     "minutes": 390,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Billy Thomas",
@@ -2431,7 +4735,15 @@
      "position": "SF",
      "games": 25,
      "games_started": 0,
-     "minutes": 356
+     "minutes": 356,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Aaron Williams",
@@ -2439,7 +4751,15 @@
      "position": "C",
      "games": 19,
      "games_started": 0,
-     "minutes": 150
+     "minutes": 150,
+     "span": [
+      0.0,
+      0.4524
+     ],
+     "window": [
+      0.0,
+      0.4524
+     ]
     },
     {
      "player_id": "Kaniel Dickens",
@@ -2447,7 +4767,15 @@
      "position": "SF",
      "games": 11,
      "games_started": 0,
-     "minutes": 61
+     "minutes": 61,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Elden Campbell",
@@ -2455,7 +4783,15 @@
      "position": "C",
      "games": 10,
      "games_started": 0,
-     "minutes": 50
+     "minutes": 50,
+     "span": [
+      0.0,
+      0.25
+     ],
+     "window": [
+      0.0,
+      0.25
+     ]
     },
     {
      "player_id": "Awvee Storey",
@@ -2463,7 +4799,15 @@
      "position": "SG",
      "games": 9,
      "games_started": 0,
-     "minutes": 32
+     "minutes": 32,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jérôme Moïso",
@@ -2471,7 +4815,15 @@
      "position": "C",
      "games": 8,
      "games_started": 0,
-     "minutes": 24
+     "minutes": 24,
+     "span": [
+      0.4,
+      0.8
+     ],
+     "window": [
+      0.4,
+      0.8
+     ]
     },
     {
      "player_id": "Donnell Harvey",
@@ -2479,7 +4831,15 @@
      "position": "PF",
      "games": 3,
      "games_started": 0,
-     "minutes": 16
+     "minutes": 16,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -2492,7 +4852,15 @@
      "position": "PF",
      "games": 82,
      "games_started": 78,
-     "minutes": 2817
+     "minutes": 2817,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Dan Dickau",
@@ -2500,7 +4868,15 @@
      "position": "PG",
      "games": 67,
      "games_started": 46,
-     "minutes": 2074
+     "minutes": 2074,
+     "span": [
+      0.0563,
+      1.0
+     ],
+     "window": [
+      0.0563,
+      1.0
+     ]
     },
     {
      "player_id": "Lee Nailon",
@@ -2508,7 +4884,15 @@
      "position": "SF",
      "games": 68,
      "games_started": 51,
-     "minutes": 2017
+     "minutes": 2017,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "J.R. Smith",
@@ -2516,7 +4900,15 @@
      "position": "SG",
      "games": 76,
      "games_started": 56,
-     "minutes": 1859
+     "minutes": 1859,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Chris Andersen",
@@ -2524,7 +4916,15 @@
      "position": "C",
      "games": 67,
      "games_started": 2,
-     "minutes": 1430
+     "minutes": 1430,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Boštjan Nachbar",
@@ -2532,7 +4932,15 @@
      "position": "PF",
      "games": 55,
      "games_started": 4,
-     "minutes": 1137
+     "minutes": 1137,
+     "span": [
+      0.2254,
+      1.0
+     ],
+     "window": [
+      0.2254,
+      1.0
+     ]
     },
     {
      "player_id": "Casey Jacobsen",
@@ -2540,7 +4948,15 @@
      "position": "SG",
      "games": 44,
      "games_started": 1,
-     "minutes": 1030
+     "minutes": 1030,
+     "span": [
+      0.4762,
+      1.0
+     ],
+     "window": [
+      0.4762,
+      1.0
+     ]
     },
     {
      "player_id": "David Wesley",
@@ -2548,7 +4964,15 @@
      "position": "SG",
      "games": 26,
      "games_started": 26,
-     "minutes": 934
+     "minutes": 934,
+     "span": [
+      0.0,
+      0.325
+     ],
+     "window": [
+      0.0,
+      0.325
+     ]
     },
     {
      "player_id": "George Lynch",
@@ -2556,7 +4980,15 @@
      "position": "SF",
      "games": 44,
      "games_started": 27,
-     "minutes": 933
+     "minutes": 933,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Rodney Rogers",
@@ -2564,7 +4996,15 @@
      "position": "SF",
      "games": 30,
      "games_started": 26,
-     "minutes": 882
+     "minutes": 882,
+     "span": [
+      0.0,
+      0.5172
+     ],
+     "window": [
+      0.0,
+      0.5172
+     ]
     },
     {
      "player_id": "Jamaal Magloire",
@@ -2572,7 +5012,15 @@
      "position": "C",
      "games": 23,
      "games_started": 22,
-     "minutes": 703
+     "minutes": 703,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jackson Vroman",
@@ -2580,7 +5028,15 @@
      "position": "C",
      "games": 36,
      "games_started": 17,
-     "minutes": 648
+     "minutes": 648,
+     "span": [
+      0.2174,
+      1.0
+     ],
+     "window": [
+      0.2174,
+      1.0
+     ]
     },
     {
      "player_id": "Baron Davis",
@@ -2588,7 +5044,15 @@
      "position": "PG",
      "games": 18,
      "games_started": 13,
-     "minutes": 593
+     "minutes": 593,
+     "span": [
+      0.0,
+      0.3913
+     ],
+     "window": [
+      0.0,
+      0.3913
+     ]
     },
     {
      "player_id": "David West",
@@ -2596,7 +5060,15 @@
      "position": "SF",
      "games": 30,
      "games_started": 8,
-     "minutes": 552
+     "minutes": 552,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Junior Harrington",
@@ -2604,7 +5076,15 @@
      "position": "SG",
      "games": 29,
      "games_started": 7,
-     "minutes": 550
+     "minutes": 550,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Matt Freije",
@@ -2612,7 +5092,15 @@
      "position": "PF",
      "games": 23,
      "games_started": 11,
-     "minutes": 441
+     "minutes": 441,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Darrell Armstrong",
@@ -2620,7 +5108,15 @@
      "position": "PG",
      "games": 14,
      "games_started": 9,
-     "minutes": 412
+     "minutes": 412,
+     "span": [
+      0.0,
+      0.2121
+     ],
+     "window": [
+      0.0,
+      0.2121
+     ]
     },
     {
      "player_id": "Speedy Claxton",
@@ -2628,7 +5124,15 @@
      "position": "PG",
      "games": 16,
      "games_started": 3,
-     "minutes": 365
+     "minutes": 365,
+     "span": [
+      0.7419,
+      1.0
+     ],
+     "window": [
+      0.7419,
+      1.0
+     ]
     },
     {
      "player_id": "Maciej Lampe",
@@ -2636,7 +5140,15 @@
      "position": "C",
      "games": 21,
      "games_started": 0,
-     "minutes": 261
+     "minutes": 261,
+     "span": [
+      0.4324,
+      1.0
+     ],
+     "window": [
+      0.4324,
+      1.0
+     ]
     },
     {
      "player_id": "Alex Garcia",
@@ -2644,7 +5156,15 @@
      "position": "SG",
      "games": 8,
      "games_started": 3,
-     "minutes": 146
+     "minutes": 146,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Corsley Edwards",
@@ -2652,7 +5172,15 @@
      "position": "C",
      "games": 10,
      "games_started": 0,
-     "minutes": 110
+     "minutes": 110,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Lonny Baxter",
@@ -2660,7 +5188,15 @@
      "position": "PF",
      "games": 4,
      "games_started": 0,
-     "minutes": 36
+     "minutes": 36,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -2673,7 +5209,15 @@
      "position": "PG",
      "games": 82,
      "games_started": 82,
-     "minutes": 3281
+     "minutes": 3281,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kurt Thomas",
@@ -2681,7 +5225,15 @@
      "position": "PF",
      "games": 80,
      "games_started": 80,
-     "minutes": 2855
+     "minutes": 2855,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jamal Crawford",
@@ -2689,7 +5241,15 @@
      "position": "SG",
      "games": 70,
      "games_started": 67,
-     "minutes": 2688
+     "minutes": 2688,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tim Thomas",
@@ -2697,7 +5257,15 @@
      "position": "SF",
      "games": 71,
      "games_started": 68,
-     "minutes": 1940
+     "minutes": 1940,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Nazr Mohammed",
@@ -2705,7 +5273,15 @@
      "position": "C",
      "games": 54,
      "games_started": 54,
-     "minutes": 1519
+     "minutes": 1519,
+     "span": [
+      0.0,
+      0.7013
+     ],
+     "window": [
+      0.0,
+      0.7013
+     ]
     },
     {
      "player_id": "Mike Sweetney",
@@ -2713,7 +5289,15 @@
      "position": "C",
      "games": 77,
      "games_started": 28,
-     "minutes": 1509
+     "minutes": 1509,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Trevor Ariza",
@@ -2721,7 +5305,15 @@
      "position": "SF",
      "games": 80,
      "games_started": 12,
-     "minutes": 1382
+     "minutes": 1382,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jerome Williams",
@@ -2729,7 +5321,15 @@
      "position": "SF",
      "games": 79,
      "games_started": 4,
-     "minutes": 1211
+     "minutes": 1211,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Anfernee Hardaway",
@@ -2737,7 +5337,15 @@
      "position": "SF",
      "games": 37,
      "games_started": 0,
-     "minutes": 894
+     "minutes": 894,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Malik Rose",
@@ -2745,7 +5353,15 @@
      "position": "PF",
      "games": 26,
      "games_started": 4,
-     "minutes": 613
+     "minutes": 613,
+     "span": [
+      0.6579,
+      1.0
+     ],
+     "window": [
+      0.6579,
+      1.0
+     ]
     },
     {
      "player_id": "Allan Houston",
@@ -2753,7 +5369,15 @@
      "position": "SG",
      "games": 20,
      "games_started": 11,
-     "minutes": 532
+     "minutes": 532,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Maurice Taylor",
@@ -2761,7 +5385,15 @@
      "position": "C",
      "games": 27,
      "games_started": 0,
-     "minutes": 431
+     "minutes": 431,
+     "span": [
+      0.5846,
+      1.0
+     ],
+     "window": [
+      0.5846,
+      1.0
+     ]
     },
     {
      "player_id": "Moochie Norris",
@@ -2769,7 +5401,15 @@
      "position": "PG",
      "games": 32,
      "games_started": 0,
-     "minutes": 321
+     "minutes": 321,
+     "span": [
+      0.0,
+      0.8421
+     ],
+     "window": [
+      0.0,
+      0.8421
+     ]
     },
     {
      "player_id": "Jermaine Jackson",
@@ -2777,7 +5417,15 @@
      "position": "SG",
      "games": 21,
      "games_started": 0,
-     "minutes": 230
+     "minutes": 230,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Vin Baker",
@@ -2785,7 +5433,15 @@
      "position": "PF",
      "games": 24,
      "games_started": 0,
-     "minutes": 191
+     "minutes": 191,
+     "span": [
+      0.0,
+      0.8889
+     ],
+     "window": [
+      0.0,
+      0.8889
+     ]
     },
     {
      "player_id": "Jamison Brewer",
@@ -2793,7 +5449,15 @@
      "position": "PG",
      "games": 18,
      "games_started": 0,
-     "minutes": 185
+     "minutes": 185,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Bruno Šundov",
@@ -2801,7 +5465,15 @@
      "position": "C",
      "games": 21,
      "games_started": 0,
-     "minutes": 73
+     "minutes": 73,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Shandon Anderson",
@@ -2809,7 +5481,15 @@
      "position": "SG",
      "games": 1,
      "games_started": 0,
-     "minutes": 20
+     "minutes": 20,
+     "span": [
+      0.0,
+      0.0152
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jackie Butler",
@@ -2817,7 +5497,15 @@
      "position": "C",
      "games": 3,
      "games_started": 0,
-     "minutes": 5
+     "minutes": 5,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -2830,7 +5518,15 @@
      "position": "PG",
      "games": 78,
      "games_started": 78,
-     "minutes": 2978
+     "minutes": 2978,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Dwight Howard",
@@ -2838,7 +5534,15 @@
      "position": "PF",
      "games": 82,
      "games_started": 82,
-     "minutes": 2670
+     "minutes": 2670,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Grant Hill",
@@ -2846,7 +5550,15 @@
      "position": "SF",
      "games": 67,
      "games_started": 67,
-     "minutes": 2338
+     "minutes": 2338,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tony Battie",
@@ -2854,7 +5566,15 @@
      "position": "C",
      "games": 81,
      "games_started": 32,
-     "minutes": 1894
+     "minutes": 1894,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Hedo Türkoğlu",
@@ -2862,7 +5582,15 @@
      "position": "SF",
      "games": 67,
      "games_started": 11,
-     "minutes": 1757
+     "minutes": 1757,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jameer Nelson",
@@ -2870,7 +5598,15 @@
      "position": "PG",
      "games": 79,
      "games_started": 21,
-     "minutes": 1612
+     "minutes": 1612,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kelvin Cato",
@@ -2878,7 +5614,15 @@
      "position": "C",
      "games": 62,
      "games_started": 50,
-     "minutes": 1525
+     "minutes": 1525,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "DeShawn Stevenson",
@@ -2886,7 +5630,15 @@
      "position": "SG",
      "games": 55,
      "games_started": 27,
-     "minutes": 1089
+     "minutes": 1089,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Pat Garrity",
@@ -2894,7 +5646,15 @@
      "position": "PF",
      "games": 71,
      "games_started": 0,
-     "minutes": 955
+     "minutes": 955,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Cuttino Mobley",
@@ -2902,7 +5662,15 @@
      "position": "SG",
      "games": 23,
      "games_started": 21,
-     "minutes": 726
+     "minutes": 726,
+     "span": [
+      0.0,
+      0.3485
+     ],
+     "window": [
+      0.0,
+      0.3485
+     ]
     },
     {
      "player_id": "Stacey Augmon",
@@ -2910,7 +5678,15 @@
      "position": "SF",
      "games": 55,
      "games_started": 7,
-     "minutes": 663
+     "minutes": 663,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Doug Christie",
@@ -2918,7 +5694,15 @@
      "position": "SG",
      "games": 21,
      "games_started": 13,
-     "minutes": 529
+     "minutes": 529,
+     "span": [
+      0.5962,
+      1.0
+     ],
+     "window": [
+      0.5962,
+      1.0
+     ]
     },
     {
      "player_id": "Mario Kasun",
@@ -2926,7 +5710,15 @@
      "position": "C",
      "games": 45,
      "games_started": 0,
-     "minutes": 356
+     "minutes": 356,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Brandon Hunter",
@@ -2934,7 +5726,15 @@
      "position": "PF",
      "games": 31,
      "games_started": 0,
-     "minutes": 224
+     "minutes": 224,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Andre Barrett",
@@ -2942,7 +5742,15 @@
      "position": "PG",
      "games": 11,
      "games_started": 1,
-     "minutes": 169
+     "minutes": 169,
+     "span": [
+      0.7105,
+      1.0
+     ],
+     "window": [
+      0.7105,
+      1.0
+     ]
     },
     {
      "player_id": "Mark Jones",
@@ -2950,7 +5758,15 @@
      "position": "SF",
      "games": 10,
      "games_started": 0,
-     "minutes": 116
+     "minutes": 116,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Michael Bradley",
@@ -2958,7 +5774,15 @@
      "position": "PF",
      "games": 8,
      "games_started": 0,
-     "minutes": 55
+     "minutes": 55,
+     "span": [
+      0.0,
+      0.4444
+     ],
+     "window": [
+      0.0,
+      0.4444
+     ]
     },
     {
      "player_id": "Andrew DeClercq",
@@ -2966,7 +5790,15 @@
      "position": "C",
      "games": 8,
      "games_started": 0,
-     "minutes": 49
+     "minutes": 49,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -2979,7 +5811,15 @@
      "position": "PG",
      "games": 75,
      "games_started": 75,
-     "minutes": 3174
+     "minutes": 3174,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Andre Iguodala",
@@ -2987,7 +5827,15 @@
      "position": "SG",
      "games": 82,
      "games_started": 82,
-     "minutes": 2686
+     "minutes": 2686,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kyle Korver",
@@ -2995,7 +5843,15 @@
      "position": "SF",
      "games": 82,
      "games_started": 57,
-     "minutes": 2667
+     "minutes": 2667,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Marc Jackson",
@@ -3003,7 +5859,15 @@
      "position": "C",
      "games": 81,
      "games_started": 23,
-     "minutes": 1976
+     "minutes": 1976,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Samuel Dalembert",
@@ -3011,7 +5875,15 @@
      "position": "C",
      "games": 72,
      "games_started": 60,
-     "minutes": 1785
+     "minutes": 1785,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kenny Thomas",
@@ -3019,7 +5891,15 @@
      "position": "PF",
      "games": 47,
      "games_started": 43,
-     "minutes": 1344
+     "minutes": 1344,
+     "span": [
+      0.0,
+      0.6438
+     ],
+     "window": [
+      0.0,
+      0.6438
+     ]
     },
     {
      "player_id": "Aaron McKie",
@@ -3027,7 +5907,15 @@
      "position": "SG",
      "games": 68,
      "games_started": 3,
-     "minutes": 1118
+     "minutes": 1118,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Willie Green",
@@ -3035,7 +5923,15 @@
      "position": "SG",
      "games": 57,
      "games_started": 21,
-     "minutes": 1066
+     "minutes": 1066,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Corliss Williamson",
@@ -3043,7 +5939,15 @@
      "position": "PF",
      "games": 48,
      "games_started": 5,
-     "minutes": 1056
+     "minutes": 1056,
+     "span": [
+      0.0,
+      0.6667
+     ],
+     "window": [
+      0.0,
+      0.6667
+     ]
     },
     {
      "player_id": "John Salmons",
@@ -3051,7 +5955,15 @@
      "position": "SG",
      "games": 58,
      "games_started": 8,
-     "minutes": 993
+     "minutes": 993,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Chris Webber",
@@ -3059,7 +5971,15 @@
      "position": "PF",
      "games": 21,
      "games_started": 21,
-     "minutes": 702
+     "minutes": 702,
+     "span": [
+      0.6866,
+      1.0
+     ],
+     "window": [
+      0.6866,
+      1.0
+     ]
     },
     {
      "player_id": "Rodney Rogers",
@@ -3067,7 +5987,15 @@
      "position": "PF",
      "games": 28,
      "games_started": 7,
-     "minutes": 485
+     "minutes": 485,
+     "span": [
+      0.5172,
+      1.0
+     ],
+     "window": [
+      0.5172,
+      1.0
+     ]
     },
     {
      "player_id": "Josh Davis",
@@ -3075,7 +6003,15 @@
      "position": "PF",
      "games": 42,
      "games_started": 5,
-     "minutes": 328
+     "minutes": 328,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Brian Skinner",
@@ -3083,7 +6019,15 @@
      "position": "PF",
      "games": 24,
      "games_started": 0,
-     "minutes": 246
+     "minutes": 246,
+     "span": [
+      0.0,
+      0.4898
+     ],
+     "window": [
+      0.0,
+      0.4898
+     ]
     },
     {
      "player_id": "Kevin Ollie",
@@ -3091,7 +6035,15 @@
      "position": "PG",
      "games": 26,
      "games_started": 0,
-     "minutes": 158
+     "minutes": 158,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kedrick Brown",
@@ -3099,7 +6051,15 @@
      "position": "SF",
      "games": 8,
      "games_started": 0,
-     "minutes": 55
+     "minutes": 55,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Michael Bradley",
@@ -3107,7 +6067,15 @@
      "position": "PF",
      "games": 2,
      "games_started": 0,
-     "minutes": 16
+     "minutes": 16,
+     "span": [
+      0.8889,
+      1.0
+     ],
+     "window": [
+      0.8889,
+      1.0
+     ]
     }
    ]
   },
@@ -3120,7 +6088,15 @@
      "position": "SF",
      "games": 82,
      "games_started": 82,
-     "minutes": 3240
+     "minutes": 3240,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Shawn Marion",
@@ -3128,7 +6104,15 @@
      "position": "PF",
      "games": 81,
      "games_started": 81,
-     "minutes": 3146
+     "minutes": 3146,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Amar'e Stoudemire",
@@ -3136,7 +6120,15 @@
      "position": "C",
      "games": 80,
      "games_started": 80,
-     "minutes": 2889
+     "minutes": 2889,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Quentin Richardson",
@@ -3144,7 +6136,15 @@
      "position": "SG",
      "games": 79,
      "games_started": 78,
-     "minutes": 2839
+     "minutes": 2839,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Steve Nash",
@@ -3152,7 +6152,15 @@
      "position": "PG",
      "games": 75,
      "games_started": 75,
-     "minutes": 2573
+     "minutes": 2573,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Leandro Barbosa",
@@ -3160,7 +6168,15 @@
      "position": "PG",
      "games": 63,
      "games_started": 6,
-     "minutes": 1087
+     "minutes": 1087,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Steven Hunter",
@@ -3168,7 +6184,15 @@
      "position": "C",
      "games": 76,
      "games_started": 3,
-     "minutes": 1046
+     "minutes": 1046,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jim Jackson",
@@ -3176,7 +6200,15 @@
      "position": "SF",
      "games": 40,
      "games_started": 3,
-     "minutes": 997
+     "minutes": 997,
+     "span": [
+      0.375,
+      1.0
+     ],
+     "window": [
+      0.375,
+      1.0
+     ]
     },
     {
      "player_id": "Casey Jacobsen",
@@ -3184,7 +6216,15 @@
      "position": "SF",
      "games": 40,
      "games_started": 0,
-     "minutes": 768
+     "minutes": 768,
+     "span": [
+      0.0,
+      0.4762
+     ],
+     "window": [
+      0.0,
+      0.4762
+     ]
     },
     {
      "player_id": "Jake Voskuhl",
@@ -3192,7 +6232,15 @@
      "position": "C",
      "games": 38,
      "games_started": 1,
-     "minutes": 360
+     "minutes": 360,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Walter McCarty",
@@ -3200,7 +6248,15 @@
      "position": "PF",
      "games": 28,
      "games_started": 0,
-     "minutes": 353
+     "minutes": 353,
+     "span": [
+      0.6111,
+      1.0
+     ],
+     "window": [
+      0.6111,
+      1.0
+     ]
     },
     {
      "player_id": "Bo Outlaw",
@@ -3208,7 +6264,15 @@
      "position": "PF",
      "games": 39,
      "games_started": 0,
-     "minutes": 214
+     "minutes": 214,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Maciej Lampe",
@@ -3216,7 +6280,15 @@
      "position": "C",
      "games": 16,
      "games_started": 0,
-     "minutes": 119
+     "minutes": 119,
+     "span": [
+      0.0,
+      0.4324
+     ],
+     "window": [
+      0.0,
+      0.4324
+     ]
     },
     {
      "player_id": "Jackson Vroman",
@@ -3224,7 +6296,15 @@
      "position": "PF",
      "games": 10,
      "games_started": 1,
-     "minutes": 57
+     "minutes": 57,
+     "span": [
+      0.0,
+      0.2174
+     ],
+     "window": [
+      0.0,
+      0.2174
+     ]
     },
     {
      "player_id": "Smush Parker",
@@ -3232,7 +6312,15 @@
      "position": "PG",
      "games": 5,
      "games_started": 0,
-     "minutes": 34
+     "minutes": 34,
+     "span": [
+      0.6875,
+      1.0
+     ],
+     "window": [
+      0.6875,
+      1.0
+     ]
     },
     {
      "player_id": "Paul Shirley",
@@ -3240,7 +6328,15 @@
      "position": "PF",
      "games": 9,
      "games_started": 0,
-     "minutes": 30
+     "minutes": 30,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Yuta Tabuse",
@@ -3248,7 +6344,15 @@
      "position": "PG",
      "games": 4,
      "games_started": 0,
-     "minutes": 17
+     "minutes": 17,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Žarko Čabarkapa",
@@ -3256,7 +6360,15 @@
      "position": "PF",
      "games": 3,
      "games_started": 0,
-     "minutes": 11
+     "minutes": 11,
+     "span": [
+      0.0,
+      0.075
+     ],
+     "window": [
+      0.0,
+      0.075
+     ]
     }
    ]
   },
@@ -3269,7 +6381,15 @@
      "position": "PG",
      "games": 81,
      "games_started": 70,
-     "minutes": 2762
+     "minutes": 2762,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Ruben Patterson",
@@ -3277,7 +6397,15 @@
      "position": "SF",
      "games": 70,
      "games_started": 36,
-     "minutes": 1957
+     "minutes": 1957,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Shareef Abdur-Rahim",
@@ -3285,7 +6413,15 @@
      "position": "PF",
      "games": 54,
      "games_started": 49,
-     "minutes": 1867
+     "minutes": 1867,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Joel Przybilla",
@@ -3293,7 +6429,15 @@
      "position": "C",
      "games": 76,
      "games_started": 50,
-     "minutes": 1858
+     "minutes": 1858,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Theo Ratliff",
@@ -3301,7 +6445,15 @@
      "position": "C",
      "games": 63,
      "games_started": 45,
-     "minutes": 1731
+     "minutes": 1731,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Darius Miles",
@@ -3309,7 +6461,15 @@
      "position": "SF",
      "games": 63,
      "games_started": 22,
-     "minutes": 1699
+     "minutes": 1699,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Nick Van Exel",
@@ -3317,7 +6477,15 @@
      "position": "SG",
      "games": 53,
      "games_started": 34,
-     "minutes": 1619
+     "minutes": 1619,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Zach Randolph",
@@ -3325,7 +6493,15 @@
      "position": "PF",
      "games": 46,
      "games_started": 37,
-     "minutes": 1603
+     "minutes": 1603,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Sebastian Telfair",
@@ -3333,7 +6509,15 @@
      "position": "PG",
      "games": 68,
      "games_started": 26,
-     "minutes": 1330
+     "minutes": 1330,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Derek Anderson",
@@ -3341,7 +6525,15 @@
      "position": "SG",
      "games": 47,
      "games_started": 32,
-     "minutes": 1239
+     "minutes": 1239,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Travis Outlaw",
@@ -3349,7 +6541,15 @@
      "position": "SF",
      "games": 59,
      "games_started": 2,
-     "minutes": 793
+     "minutes": 793,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Viktor Khryapa",
@@ -3357,7 +6557,15 @@
      "position": "SF",
      "games": 32,
      "games_started": 5,
-     "minutes": 523
+     "minutes": 523,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Richie Frahm",
@@ -3365,7 +6573,15 @@
      "position": "SG",
      "games": 43,
      "games_started": 0,
-     "minutes": 499
+     "minutes": 499,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "James Thomas",
@@ -3373,7 +6589,15 @@
      "position": "PF",
      "games": 9,
      "games_started": 2,
-     "minutes": 112
+     "minutes": 112,
+     "span": [
+      0.0,
+      0.8182
+     ],
+     "window": [
+      0.0,
+      0.8182
+     ]
     },
     {
      "player_id": "Ha Seung-Jin",
@@ -3381,7 +6605,15 @@
      "position": "C",
      "games": 19,
      "games_started": 0,
-     "minutes": 104
+     "minutes": 104,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Maurice Baker",
@@ -3389,7 +6621,15 @@
      "position": "PG",
      "games": 4,
      "games_started": 0,
-     "minutes": 18
+     "minutes": 18,
+     "span": [
+      0.2,
+      1.0
+     ],
+     "window": [
+      0.2,
+      1.0
+     ]
     },
     {
      "player_id": "Geno Carlisle",
@@ -3397,7 +6637,15 @@
      "position": "SG",
      "games": 6,
      "games_started": 0,
-     "minutes": 16
+     "minutes": 16,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -3410,7 +6658,15 @@
      "position": "PG",
      "games": 80,
      "games_started": 80,
-     "minutes": 3084
+     "minutes": 3084,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Peja Stojaković",
@@ -3418,7 +6674,15 @@
      "position": "SF",
      "games": 66,
      "games_started": 66,
-     "minutes": 2534
+     "minutes": 2534,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Brad Miller",
@@ -3426,7 +6690,15 @@
      "position": "C",
      "games": 56,
      "games_started": 56,
-     "minutes": 2089
+     "minutes": 2089,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Darius Songaila",
@@ -3434,7 +6706,15 @@
      "position": "PF",
      "games": 81,
      "games_started": 21,
-     "minutes": 1668
+     "minutes": 1668,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Chris Webber",
@@ -3442,7 +6722,15 @@
      "position": "PF",
      "games": 46,
      "games_started": 46,
-     "minutes": 1668
+     "minutes": 1668,
+     "span": [
+      0.0,
+      0.6866
+     ],
+     "window": [
+      0.0,
+      0.6866
+     ]
     },
     {
      "player_id": "Cuttino Mobley",
@@ -3450,7 +6738,15 @@
      "position": "SG",
      "games": 43,
      "games_started": 43,
-     "minutes": 1662
+     "minutes": 1662,
+     "span": [
+      0.3485,
+      1.0
+     ],
+     "window": [
+      0.3485,
+      1.0
+     ]
     },
     {
      "player_id": "Maurice Evans",
@@ -3458,7 +6754,15 @@
      "position": "SG",
      "games": 65,
      "games_started": 11,
-     "minutes": 1233
+     "minutes": 1233,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Doug Christie",
@@ -3466,7 +6770,15 @@
      "position": "SG",
      "games": 31,
      "games_started": 31,
-     "minutes": 996
+     "minutes": 996,
+     "span": [
+      0.0,
+      0.5962
+     ],
+     "window": [
+      0.0,
+      0.5962
+     ]
     },
     {
      "player_id": "Kenny Thomas",
@@ -3474,7 +6786,15 @@
      "position": "PF",
      "games": 26,
      "games_started": 15,
-     "minutes": 823
+     "minutes": 823,
+     "span": [
+      0.6438,
+      1.0
+     ],
+     "window": [
+      0.6438,
+      1.0
+     ]
     },
     {
      "player_id": "Matt Barnes",
@@ -3482,7 +6802,15 @@
      "position": "SF",
      "games": 43,
      "games_started": 9,
-     "minutes": 715
+     "minutes": 715,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Brian Skinner",
@@ -3490,7 +6818,15 @@
      "position": "C",
      "games": 25,
      "games_started": 23,
-     "minutes": 695
+     "minutes": 695,
+     "span": [
+      0.4898,
+      1.0
+     ],
+     "window": [
+      0.4898,
+      1.0
+     ]
     },
     {
      "player_id": "Greg Ostertag",
@@ -3498,7 +6834,15 @@
      "position": "C",
      "games": 56,
      "games_started": 3,
-     "minutes": 556
+     "minutes": 556,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Eddie House",
@@ -3506,7 +6850,15 @@
      "position": "PG",
      "games": 50,
      "games_started": 2,
-     "minutes": 550
+     "minutes": 550,
+     "span": [
+      0.2647,
+      1.0
+     ],
+     "window": [
+      0.2647,
+      1.0
+     ]
     },
     {
      "player_id": "Bobby Jackson",
@@ -3514,7 +6866,15 @@
      "position": "SG",
      "games": 25,
      "games_started": 0,
-     "minutes": 536
+     "minutes": 536,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Corliss Williamson",
@@ -3522,7 +6882,15 @@
      "position": "PF",
      "games": 24,
      "games_started": 4,
-     "minutes": 471
+     "minutes": 471,
+     "span": [
+      0.6667,
+      1.0
+     ],
+     "window": [
+      0.6667,
+      1.0
+     ]
     },
     {
      "player_id": "Kevin Martin",
@@ -3530,7 +6898,15 @@
      "position": "PG",
      "games": 45,
      "games_started": 0,
-     "minutes": 455
+     "minutes": 455,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Erik Daniels",
@@ -3538,7 +6914,15 @@
      "position": "SF",
      "games": 21,
      "games_started": 0,
-     "minutes": 72
+     "minutes": 72,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Michael Bradley",
@@ -3546,7 +6930,15 @@
      "position": "PF",
      "games": 8,
      "games_started": 0,
-     "minutes": 48
+     "minutes": 48,
+     "span": [
+      0.4444,
+      0.8889
+     ],
+     "window": [
+      0.4444,
+      0.8889
+     ]
     }
    ]
   },
@@ -3559,7 +6951,15 @@
      "position": "PG",
      "games": 80,
      "games_started": 80,
-     "minutes": 2735
+     "minutes": 2735,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Bruce Bowen",
@@ -3567,7 +6967,15 @@
      "position": "SF",
      "games": 82,
      "games_started": 82,
-     "minutes": 2627
+     "minutes": 2627,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Tim Duncan",
@@ -3575,7 +6983,15 @@
      "position": "PF",
      "games": 66,
      "games_started": 66,
-     "minutes": 2203
+     "minutes": 2203,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Manu Ginóbili",
@@ -3583,7 +6999,15 @@
      "position": "SG",
      "games": 74,
      "games_started": 74,
-     "minutes": 2193
+     "minutes": 2193,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Rasho Nesterović",
@@ -3591,7 +7015,15 @@
      "position": "C",
      "games": 70,
      "games_started": 70,
-     "minutes": 1785
+     "minutes": 1785,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Brent Barry",
@@ -3599,7 +7031,15 @@
      "position": "SG",
      "games": 81,
      "games_started": 8,
-     "minutes": 1742
+     "minutes": 1742,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Robert Horry",
@@ -3607,7 +7047,15 @@
      "position": "PF",
      "games": 75,
      "games_started": 16,
-     "minutes": 1396
+     "minutes": 1396,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Devin Brown",
@@ -3615,7 +7063,15 @@
      "position": "SG",
      "games": 67,
      "games_started": 0,
-     "minutes": 1238
+     "minutes": 1238,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Beno Udrih",
@@ -3623,7 +7079,15 @@
      "position": "PG",
      "games": 80,
      "games_started": 2,
-     "minutes": 1149
+     "minutes": 1149,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Malik Rose",
@@ -3631,7 +7095,15 @@
      "position": "PF",
      "games": 50,
      "games_started": 1,
-     "minutes": 862
+     "minutes": 862,
+     "span": [
+      0.0,
+      0.6579
+     ],
+     "window": [
+      0.0,
+      0.6579
+     ]
     },
     {
      "player_id": "Tony Massenburg",
@@ -3639,7 +7111,15 @@
      "position": "PF",
      "games": 61,
      "games_started": 6,
-     "minutes": 699
+     "minutes": 699,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Nazr Mohammed",
@@ -3647,7 +7127,15 @@
      "position": "C",
      "games": 23,
      "games_started": 5,
-     "minutes": 414
+     "minutes": 414,
+     "span": [
+      0.7013,
+      1.0
+     ],
+     "window": [
+      0.7013,
+      1.0
+     ]
     },
     {
      "player_id": "Mike Wilks",
@@ -3655,7 +7143,15 @@
      "position": "PG",
      "games": 48,
      "games_started": 0,
-     "minutes": 278
+     "minutes": 278,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Sean Marks",
@@ -3663,7 +7159,15 @@
      "position": "PF",
      "games": 23,
      "games_started": 0,
-     "minutes": 244
+     "minutes": 244,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Glenn Robinson",
@@ -3671,7 +7175,15 @@
      "position": "SF",
      "games": 9,
      "games_started": 0,
-     "minutes": 157
+     "minutes": 157,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Dion Glover",
@@ -3679,7 +7191,15 @@
      "position": "SG",
      "games": 7,
      "games_started": 0,
-     "minutes": 68
+     "minutes": 68,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Linton Johnson",
@@ -3687,7 +7207,15 @@
      "position": "SF",
      "games": 2,
      "games_started": 0,
-     "minutes": 15
+     "minutes": 15,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -3700,7 +7228,15 @@
      "position": "SG",
      "games": 78,
      "games_started": 78,
-     "minutes": 3064
+     "minutes": 3064,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Rashard Lewis",
@@ -3708,7 +7244,15 @@
      "position": "SF",
      "games": 71,
      "games_started": 71,
-     "minutes": 2697
+     "minutes": 2697,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Luke Ridnour",
@@ -3716,7 +7260,15 @@
      "position": "PG",
      "games": 82,
      "games_started": 82,
-     "minutes": 2571
+     "minutes": 2571,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Antonio Daniels",
@@ -3724,7 +7276,15 @@
      "position": "PG",
      "games": 75,
      "games_started": 2,
-     "minutes": 2026
+     "minutes": 2026,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Reggie Evans",
@@ -3732,7 +7292,15 @@
      "position": "PF",
      "games": 79,
      "games_started": 79,
-     "minutes": 1881
+     "minutes": 1881,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Vladimir Radmanović",
@@ -3740,7 +7308,15 @@
      "position": "PF",
      "games": 63,
      "games_started": 0,
-     "minutes": 1856
+     "minutes": 1856,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Nick Collison",
@@ -3748,7 +7324,15 @@
      "position": "C",
      "games": 82,
      "games_started": 4,
-     "minutes": 1396
+     "minutes": 1396,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jerome James",
@@ -3756,7 +7340,15 @@
      "position": "C",
      "games": 80,
      "games_started": 80,
-     "minutes": 1330
+     "minutes": 1330,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Danny Fortson",
@@ -3764,7 +7356,15 @@
      "position": "C",
      "games": 62,
      "games_started": 0,
-     "minutes": 1047
+     "minutes": 1047,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Ronald Murray",
@@ -3772,7 +7372,15 @@
      "position": "SG",
      "games": 49,
      "games_started": 6,
-     "minutes": 883
+     "minutes": 883,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Damien Wilkins",
@@ -3780,7 +7388,15 @@
      "position": "SF",
      "games": 29,
      "games_started": 7,
-     "minutes": 520
+     "minutes": 520,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Vitaly Potapenko",
@@ -3788,7 +7404,15 @@
      "position": "C",
      "games": 33,
      "games_started": 1,
-     "minutes": 335
+     "minutes": 335,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Robert Swift",
@@ -3796,7 +7420,15 @@
      "position": "C",
      "games": 16,
      "games_started": 0,
-     "minutes": 72
+     "minutes": 72,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Mateen Cleaves",
@@ -3804,7 +7436,15 @@
      "position": "PG",
      "games": 14,
      "games_started": 0,
-     "minutes": 65
+     "minutes": 65,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Ibo Kutluay",
@@ -3812,7 +7452,15 @@
      "position": "SG",
      "games": 5,
      "games_started": 0,
-     "minutes": 12
+     "minutes": 12,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -3825,7 +7473,15 @@
      "position": "PF",
      "games": 81,
      "games_started": 81,
-     "minutes": 3017
+     "minutes": 3017,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Rafer Alston",
@@ -3833,7 +7489,15 @@
      "position": "PG",
      "games": 80,
      "games_started": 78,
-     "minutes": 2717
+     "minutes": 2717,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jalen Rose",
@@ -3841,7 +7505,15 @@
      "position": "SF",
      "games": 81,
      "games_started": 65,
-     "minutes": 2710
+     "minutes": 2710,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Morris Peterson",
@@ -3849,7 +7521,15 @@
      "position": "SG",
      "games": 82,
      "games_started": 61,
-     "minutes": 2510
+     "minutes": 2510,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Donyell Marshall",
@@ -3857,7 +7537,15 @@
      "position": "PF",
      "games": 65,
      "games_started": 2,
-     "minutes": 1645
+     "minutes": 1645,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Matt Bonner",
@@ -3865,7 +7553,15 @@
      "position": "C",
      "games": 82,
      "games_started": 0,
-     "minutes": 1553
+     "minutes": 1553,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Milt Palacio",
@@ -3873,7 +7569,15 @@
      "position": "PG",
      "games": 80,
      "games_started": 4,
-     "minutes": 1533
+     "minutes": 1533,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Lamond Murray",
@@ -3881,7 +7585,15 @@
      "position": "SF",
      "games": 62,
      "games_started": 1,
-     "minutes": 918
+     "minutes": 918,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Rafael Araújo",
@@ -3889,7 +7601,15 @@
      "position": "C",
      "games": 59,
      "games_started": 41,
-     "minutes": 736
+     "minutes": 736,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Loren Woods",
@@ -3897,7 +7617,15 @@
      "position": "C",
      "games": 45,
      "games_started": 30,
-     "minutes": 712
+     "minutes": 712,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Vince Carter",
@@ -3905,7 +7633,15 @@
      "position": "SG",
      "games": 20,
      "games_started": 20,
-     "minutes": 608
+     "minutes": 608,
+     "span": [
+      0.0,
+      0.2597
+     ],
+     "window": [
+      0.0,
+      0.2597
+     ]
     },
     {
      "player_id": "Eric Williams",
@@ -3913,7 +7649,15 @@
      "position": "SG",
      "games": 34,
      "games_started": 18,
-     "minutes": 583
+     "minutes": 583,
+     "span": [
+      0.3818,
+      1.0
+     ],
+     "window": [
+      0.3818,
+      1.0
+     ]
     },
     {
      "player_id": "Pape Sow",
@@ -3921,7 +7665,15 @@
      "position": "C",
      "games": 27,
      "games_started": 4,
-     "minutes": 255
+     "minutes": 255,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Aaron Williams",
@@ -3929,7 +7681,15 @@
      "position": "C",
      "games": 23,
      "games_started": 4,
-     "minutes": 165
+     "minutes": 165,
+     "span": [
+      0.4524,
+      1.0
+     ],
+     "window": [
+      0.4524,
+      1.0
+     ]
     },
     {
      "player_id": "Omar Cook",
@@ -3937,7 +7697,15 @@
      "position": "PG",
      "games": 5,
      "games_started": 0,
-     "minutes": 74
+     "minutes": 74,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jérôme Moïso",
@@ -3945,7 +7713,15 @@
      "position": "C",
      "games": 8,
      "games_started": 1,
-     "minutes": 69
+     "minutes": 69,
+     "span": [
+      0.0,
+      0.4
+     ],
+     "window": [
+      0.0,
+      0.4
+     ]
     }
    ]
   },
@@ -3958,7 +7734,15 @@
      "position": "SF",
      "games": 78,
      "games_started": 55,
-     "minutes": 2584
+     "minutes": 2584,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Mehmet Okur",
@@ -3966,7 +7750,15 @@
      "position": "C",
      "games": 82,
      "games_started": 25,
-     "minutes": 2304
+     "minutes": 2304,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Raja Bell",
@@ -3974,7 +7766,15 @@
      "position": "SG",
      "games": 63,
      "games_started": 32,
-     "minutes": 1790
+     "minutes": 1790,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Carlos Boozer",
@@ -3982,7 +7782,15 @@
      "position": "PF",
      "games": 51,
      "games_started": 51,
-     "minutes": 1772
+     "minutes": 1772,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Gordan Giriček",
@@ -3990,7 +7798,15 @@
      "position": "SG",
      "games": 81,
      "games_started": 44,
-     "minutes": 1660
+     "minutes": 1660,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Howard Eisley",
@@ -3998,7 +7814,15 @@
      "position": "PG",
      "games": 74,
      "games_started": 1,
-     "minutes": 1428
+     "minutes": 1428,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Keith McLeod",
@@ -4006,7 +7830,15 @@
      "position": "PG",
      "games": 53,
      "games_started": 47,
-     "minutes": 1382
+     "minutes": 1382,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Andrei Kirilenko",
@@ -4014,7 +7846,15 @@
      "position": "PF",
      "games": 41,
      "games_started": 37,
-     "minutes": 1349
+     "minutes": 1349,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jarron Collins",
@@ -4022,7 +7862,15 @@
      "position": "C",
      "games": 50,
      "games_started": 38,
-     "minutes": 961
+     "minutes": 961,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kirk Snyder",
@@ -4030,7 +7878,15 @@
      "position": "SG",
      "games": 68,
      "games_started": 7,
-     "minutes": 906
+     "minutes": 906,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kris Humphries",
@@ -4038,7 +7894,15 @@
      "position": "PF",
      "games": 67,
      "games_started": 4,
-     "minutes": 873
+     "minutes": 873,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Curtis Borchardt",
@@ -4046,7 +7910,15 @@
      "position": "C",
      "games": 67,
      "games_started": 23,
-     "minutes": 859
+     "minutes": 859,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Carlos Arroyo",
@@ -4054,7 +7926,15 @@
      "position": "PG",
      "games": 30,
      "games_started": 16,
-     "minutes": 742
+     "minutes": 742,
+     "span": [
+      0.0,
+      0.4286
+     ],
+     "window": [
+      0.0,
+      0.4286
+     ]
     },
     {
      "player_id": "Raül López",
@@ -4062,7 +7942,15 @@
      "position": "PG",
      "games": 31,
      "games_started": 15,
-     "minutes": 518
+     "minutes": 518,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Ben Handlogten",
@@ -4070,7 +7958,15 @@
      "position": "C",
      "games": 21,
      "games_started": 5,
-     "minutes": 297
+     "minutes": 297,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Randy Livingston",
@@ -4078,7 +7974,15 @@
      "position": "PG",
      "games": 17,
      "games_started": 4,
-     "minutes": 227
+     "minutes": 227,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Aleksandar Radojević",
@@ -4086,7 +7990,15 @@
      "position": "C",
      "games": 12,
      "games_started": 6,
-     "minutes": 128
+     "minutes": 128,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   },
@@ -4099,7 +8011,15 @@
      "position": "PG",
      "games": 80,
      "games_started": 80,
-     "minutes": 3274
+     "minutes": 3274,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Antawn Jamison",
@@ -4107,7 +8027,15 @@
      "position": "PF",
      "games": 68,
      "games_started": 68,
-     "minutes": 2605
+     "minutes": 2605,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Larry Hughes",
@@ -4115,7 +8043,15 @@
      "position": "SG",
      "games": 61,
      "games_started": 61,
-     "minutes": 2358
+     "minutes": 2358,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jared Jeffries",
@@ -4123,7 +8059,15 @@
      "position": "SF",
      "games": 77,
      "games_started": 71,
-     "minutes": 2007
+     "minutes": 2007,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Brendan Haywood",
@@ -4131,7 +8075,15 @@
      "position": "C",
      "games": 68,
      "games_started": 68,
-     "minutes": 1865
+     "minutes": 1865,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Jarvis Hayes",
@@ -4139,7 +8091,15 @@
      "position": "SF",
      "games": 54,
      "games_started": 22,
-     "minutes": 1560
+     "minutes": 1560,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Michael Ruffin",
@@ -4147,7 +8107,15 @@
      "position": "C",
      "games": 79,
      "games_started": 7,
-     "minutes": 1262
+     "minutes": 1262,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Juan Dixon",
@@ -4155,7 +8123,15 @@
      "position": "SG",
      "games": 63,
      "games_started": 4,
-     "minutes": 1054
+     "minutes": 1054,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Etan Thomas",
@@ -4163,7 +8139,15 @@
      "position": "C",
      "games": 47,
      "games_started": 10,
-     "minutes": 976
+     "minutes": 976,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Kwame Brown",
@@ -4171,7 +8155,15 @@
      "position": "PF",
      "games": 42,
      "games_started": 14,
-     "minutes": 908
+     "minutes": 908,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Steve Blake",
@@ -4179,7 +8171,15 @@
      "position": "PG",
      "games": 44,
      "games_started": 1,
-     "minutes": 648
+     "minutes": 648,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Anthony Peeler",
@@ -4187,7 +8187,15 @@
      "position": "SG",
      "games": 40,
      "games_started": 0,
-     "minutes": 529
+     "minutes": 529,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Laron Profit",
@@ -4195,7 +8203,15 @@
      "position": "SF",
      "games": 42,
      "games_started": 4,
-     "minutes": 428
+     "minutes": 428,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Damone Brown",
@@ -4203,7 +8219,15 @@
      "position": "SF",
      "games": 14,
      "games_started": 0,
-     "minutes": 152
+     "minutes": 152,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Samaki Walker",
@@ -4211,7 +8235,15 @@
      "position": "PF",
      "games": 14,
      "games_started": 0,
-     "minutes": 134
+     "minutes": 134,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     },
     {
      "player_id": "Peter John Ramos",
@@ -4219,7 +8251,15 @@
      "position": "C",
      "games": 6,
      "games_started": 0,
-     "minutes": 20
+     "minutes": 20,
+     "span": [
+      0.0,
+      1.0
+     ],
+     "window": [
+      0.0,
+      1.0
+     ]
     }
    ]
   }

@@ -175,6 +175,27 @@ class FeedbackTests(unittest.TestCase):
         zero = feedback_adjustments(self.expected, {k: 0.0 for k in RATE_KEYS}, {k: 100000 for k in RATE_KEYS})
         self.assertTrue(all(-SPREAD[k] - 1e-12 <= zero[k] < 0 for k in RATE_KEYS))
 
+    def test_feedback_file_must_be_finite(self):
+        adjust = {k: 0.0 for k in RATE_KEYS}
+        good = {"kind": "trajectory_feedback", "share": FEEDBACK_SHARE, "players": {"jamesle01": {"adjust": adjust}}}
+        self.assertEqual(feedback_errors(good), [])
+        for bad in ({"jamesle01": {"adjust": dict(adjust, usage_pct=float("nan"))}}, {"jamesle01": []},
+                    {"jamesle01": {"adjust": None}}):
+            self.assertTrue(feedback_errors(dict(good, players=bad)), bad)
+
+    def test_a_league_wide_level_is_nobodys_surprise(self):
+        """If the engine adds threes for everyone, no player's three-point rate is adjusted for it."""
+        line = {"seconds": 2160, "fgm": 9, "fga": 18, "tpm": 1, "tpa": 4, "ftm": 6, "fta": 8, "orb": 1, "drb": 5,
+                "ast": 7, "stl": 2, "blk": 1, "tov": 3, "pf": 2}
+        from runtime.protagonist import observed_rates, season_totals
+        per_minute = {"usage": 1, "assists": 1, "offensive_rebounds": 1, "defensive_rebounds": 1, "steals": 1, "blocks": 1}
+        observed = observed_rates(season_totals([line] * 70), BASE, per_minute)[0]
+        lower = dict(observed, three_point_attempt_rate=observed["three_point_attempt_rate"] * 0.8)
+        data = season_feedback({"aaaaa01": [line] * 70, "bbbbb01": [line] * 70}, {"aaaaa01": lower, "bbbbb01": lower},
+                               BASE, "2003-04", "2004-05")
+        for entry in data["players"].values():
+            self.assertAlmostEqual(entry["adjust"]["three_point_attempt_rate"], 0.0, places=9)
+
     def test_feedback_cannot_spiral(self):
         """A player who keeps beating his real path settles; the adjustment never accumulates past the cap."""
         adjust = {k: 0.0 for k in RATE_KEYS}

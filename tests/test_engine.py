@@ -85,12 +85,16 @@ class KernelTests(unittest.TestCase):
                 self.assertAlmostEqual(statistics.mean(totals[key]) / target, 1, delta=tolerance)
 
     def test_minutes_follow_targets(self):
-        # Isolate the target rotation: foul trouble can legitimately activate a DNP.
-        with mock.patch.dict(self.rules, {"foul_out_limit": 100}):
-            result = self.play(b"m" * 32)
-        rows = {r["player_id"]: r for r in result["player_stats"]["home"]}
-        self.assertEqual(rows["H_11"]["seconds"], 0)
-        self.assertGreater(rows["H_0"]["minutes"], rows["H_9"]["minutes"])
+        # Isolate the target rotation: foul trouble (which follows the foul-out limit) and garbage
+        # time can legitimately activate a DNP.
+        import runtime.kernel
+        with mock.patch.dict(self.rules, {"foul_out_limit": 100}), \
+                mock.patch.object(runtime.kernel, "GARBAGE_MARGIN", 10 ** 6):
+            for seed in (b"a", b"m", b"y"):
+                result = self.play(seed * 32)
+                rows = {r["player_id"]: r for r in result["player_stats"]["home"]}
+                self.assertLess(rows["H_11"]["seconds"], 60)
+                self.assertGreater(rows["H_0"]["minutes"], rows["H_9"]["minutes"])
 
     def test_illegal_team_refused(self):
         team = TeamInput("X", neutral_team("X").players + (PlayerInput("extra", "C", 0),))

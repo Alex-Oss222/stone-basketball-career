@@ -15,7 +15,7 @@ Status: `done`, `next`, `blocked: <what is missing>`, `later`.
 | 5 | Wade's rookie contract, with a negotiation log | Wade is unsigned; first user decision | built (`runtime/rookie_contract.py`, `scripts/open_rookie_negotiation.py`); opens on the offer date |
 | 6 | Miami's free agency (July 1 to 14 talks, signings from July 15), against a market of real clubs | Decides Miami's roster | after 2-5 |
 | 7 | Careers data: player season rates (option C) and real team rosters and minutes (option D) | Every opponent's lineup and every real player's ability | done: `library/careers/nba_player_careers.json` (1,185 players) and `library/<year>/league/nba_<season>_team_rosters.json`, 2003-04 to 2013-14 |
-| 8 | Rotations: real minute shares for other clubs (from item 7), Miami's from its own depth chart, plus the conflict rules in `AGENTS.md` | Games need real lineups | done for real clubs: `runtime/rotations.py`, request `"rotation": "real"` (minutes per game and availability, conflict rule 3); Miami states its rotation as an explicit `players` list, which the game builder (item 10) will write from the depth chart |
+| 8 | Rotations: real minute shares for other clubs (from item 7), Miami's from its own depth chart, plus the conflict rules in `AGENTS.md` | Games need real lineups | partly done: real clubs play their real roster on the game's date with minutes per game and availability (`runtime/rotations.py`, request `"rotation": "real"`); a traded player is with one club at a time; rule 1 for stints a real Miami transaction began, rule 2 (Miami's register) and rule 3 are applied. Open, due with items 6 and 10: rule 1 for players a real Miami transaction brought in between seasons (they need a list of those moves and their previous clubs, and a decision on real free agents Miami signed), and Miami's explicit `players` list written from the depth chart |
 | 9 | Miami's perimeter-defense grade for Wade at camp | Agreed rating decision; until then Wade counts as an average defender (defensive value 0) | at training camp; the grade must also be mapped to the defensive value scale (`docs/engine_model.md`) |
 | 10 | Game builder: Miami game notes and requests from the schedule, on their dates | No hand-written requests | before October 5 |
 | 11 | League slate: Railway plays every non-Miami game from the schedule | Standings need all 1,189 games | before October 28 |
@@ -25,16 +25,16 @@ Status: `done`, `next`, `blocked: <what is missing>`, `later`.
 
 ## Engine problems, worst first
 
-Found in the engine review on real 2003-04 rosters. Model and numbers: `docs/engine_model.md`; re-check with `python scripts/engine_diagnostics.py 6000`.
+Found in the engine review on real 2003-04 rosters. Model and numbers: `docs/engine_model.md`; re-check with `python scripts/engine_diagnostics.py 6` (six seasons of the real schedule).
 
 | # | Problem | Fix | Status |
 |---|---|---|---|
-| E1 | Defense barely existed: only legacy grades, steals and blocks | Real DBPM in the careers data; the five defenders on the floor move the opponent's shooting and turnovers | done (kernel 2003.3): +5 on the floor allows 5.3 fewer points per 100 |
-| E2 | Team quality compressed | Mostly E1 | done: spread of team average margins 4.0 over an 82-game season (benchmark 4-5) |
-| E3 | Stars overplayed (season shares over a top-12 list) | Minutes per game and availability, with caps (together with item 8) | done: stars play their real minutes per game |
-| E4 | Results too random, no late-game logic | Foul when trailing, run the clock when leading, hold for the last shot, closing lineups, garbage time, and a score effect | done: margin SD 13.7, overtime 5.4% |
-| E5 | Too many foul-outs | Sit players in foul trouble, bring them back later | done: 0.23 per game |
-| E6 | Every club plays at the league pace | Team pace from each season's team table | later: needs one upload per season, see `library/incoming/TEAM_PACE_DATA_INSTRUCTIONS.md` |
+| E1 | Defense barely existed: only legacy grades, steals and blocks | Real DBPM in the careers data; the five defenders on the floor move the opponent's shooting and turnovers | done (kernel 2003.3): +5 on the floor allows 5.1 fewer points per 100 |
+| E2 | Team quality compressed | E1, plus a score effect centred on the margin the rosters should produce, so it removes random swings but not quality | done: spread of club average margins 4.6 within a season (benchmark 4-5) |
+| E3 | Stars overplayed (season shares over a top-12 list) | Minutes per game and availability on the game's date, with caps (together with item 8) | done: players with 30+ minutes play 35.9 against an input of 35.3 |
+| E4 | Results too random, no late-game logic | Foul when trailing, run the clock when leading, hold for the last shot, closing lineups, garbage time, and the score effect | done: margin SD 13.1, overtime 5.0% |
+| E5 | Too many foul-outs | Sit players in foul trouble, bring them back later | done: 0.22 per game |
+| E6 | Every club plays at the league pace | Each club's pace from the season before (the same rule as the league averages) | later: needs one upload per season, see `library/incoming/TEAM_PACE_DATA_INSTRUCTIONS.md` |
 | E7 | No injuries or fatigue | Roadmap item 12 | before October 28 |
 
 ## During and after 2003-04

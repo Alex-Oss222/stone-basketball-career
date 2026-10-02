@@ -8,7 +8,14 @@ Writes two kinds of library files:
   100 possessions against a league-average defender) for the engine's defense.
   One row per player-season, from the combined row of a traded player.
 * library/<year>/league/nba_<YYYY>_<YY>_team_rosters.json: every non-Miami
-  club's real roster and minutes for that season (option D).
+  club's real roster and minutes for that season (option D). A traded player's
+  club rows come in the order he played for them; each row gets the part of the
+  season he spent there (`window`, a fraction of the season, from his games
+  played before, during and after the stint), so he is on one club at a time.
+  A stint that a real Miami transaction began is skipped (AGENTS.md rule 1):
+  the player stays with his previous club, whose window extends over it; a
+  player whose season began at Miami belongs to simulated Miami and gets no
+  real-club rows.
 
 Removed on import:
 * the historical Dwyane Wade (`wadedw01`): the career's Wade is alternate
@@ -83,6 +90,31 @@ def rates(total, adv):
     return out
 
 
+def stints(team_rows):
+    """(row, span, window) for each real-club stint, in the order played.
+
+    `span` is the part of the season the stint covered, from the player's games
+    before and during it; `window` is where the simulation keeps him: the same,
+    except that a stint begun by a real Miami transaction is skipped (rule 1) and
+    the previous club's window extends over it. A season that began at Miami
+    leaves no real-club stint."""
+    if not team_rows or team_rows[0]["Team"] == SIMULATED_CLUB:
+        return []
+    total = sum(int(num(r["G"]) or 0) for r in team_rows) or 1
+    out, before, skipped = [], 0, False
+    for r in team_rows:
+        games = int(num(r["G"]) or 0)
+        span = [round(before / total, 4), round((before + games) / total, 4)]
+        before += games
+        skipped = skipped or r["Team"] == SIMULATED_CLUB
+        if skipped:
+            # From the first Miami stint on, the player stays where he was before it.
+            out[-1] = (out[-1][0], out[-1][1], [out[-1][2][0], span[1]])
+            continue
+        out.append((r, span, list(span)))
+    return out
+
+
 def season_label(year_end):
     return f"{year_end - 1}-{str(year_end)[-2:]}"
 
@@ -112,14 +144,12 @@ def main(folder):
             entry["seasons"][season] = {"minutes": int(num(row["MP"]) or 0),
                                         "rates": rates(row, adv), "dbpm": num(adv.get("DBPM"))}
         clubs = {}
-        for r in totals:
-            if MULTI.match(r["Team"]) or r["Team"] == SIMULATED_CLUB:
-                continue
-            name = CODES[r["Team"]]
-            clubs.setdefault(name, {"code": r["Team"], "players": []})["players"].append({
-                "player_id": r["Player"], "bbr_id": r["Player-additional"], "position": r["Pos"],
-                "games": int(num(r["G"]) or 0), "games_started": int(num(r["GS"]) or 0),
-                "minutes": int(num(r["MP"]) or 0)})
+        for bbr_id, player_rows in by_player.items():
+            for r, span, window in stints([r for r in player_rows if not MULTI.match(r["Team"])]):
+                clubs.setdefault(CODES[r["Team"]], {"code": r["Team"], "players": []})["players"].append({
+                    "player_id": r["Player"], "bbr_id": bbr_id, "position": r["Pos"],
+                    "games": int(num(r["G"]) or 0), "games_started": int(num(r["GS"]) or 0),
+                    "minutes": int(num(r["MP"]) or 0), "span": span, "window": window})
         for club in clubs.values():
             club["players"].sort(key=lambda p: -p["minutes"])
         start = year_end - 1

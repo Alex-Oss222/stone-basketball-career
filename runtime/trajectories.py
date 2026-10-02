@@ -194,6 +194,10 @@ def apply_feedback(rates, adjustments):
             for key, value in rates.items()}
 
 
+RAW_KEYS = ("two_point_pct", "three_point_pct", "free_throw_pct", "three_point_attempt_rate",
+            "free_throw_attempt_rate", "turnovers_per_fga", "fouls_per_minute")
+
+
 def season_feedback(lines_by_player, expected_by_player, baselines, from_season, applies_to):
     """Feedback file content from a closed simulated season (run at rollover, roadmap item 18).
 
@@ -210,14 +214,25 @@ def season_feedback(lines_by_player, expected_by_player, baselines, from_season,
                   "assists": league["ast"] / minutes, "offensive_rebounds": league["orb"] / minutes,
                   "defensive_rebounds": league["drb"] / minutes, "steals": league["stl"] / minutes,
                   "blocks": league["blk"] / minutes}
-    players = {}
+    seen = {}
     for bbr_id, lines in sorted(lines_by_player.items()):
         if bbr_id in PROTAGONIST_IDS or bbr_id not in expected_by_player:
             continue
         totals = season_totals(lines)
-        observed, samples = observed_rates(totals, baselines, per_minute)
+        seen[bbr_id] = (totals, *observed_rates(totals, baselines, per_minute))
+    # Production rates are already relative to the simulated league. The others are made relative
+    # too: a league-wide level the engine adds (late-game threes and fouls, say) is nobody's surprise.
+    level = {}
+    for key in RAW_KEYS:
+        pairs = [(observed[key], expected_by_player[b][key], samples[key]) for b, (_, observed, samples) in seen.items()
+                 if observed[key] is not None and samples[key]]
+        weight = sum(n for _, _, n in pairs)
+        level[key] = (sum(o * n for o, _, n in pairs) / sum(e * n for _, e, n in pairs)) if weight else 1.0
+    players = {}
+    for bbr_id, (totals, observed, samples) in seen.items():
+        relative = {k: (v / level[k] if k in level and v is not None and level[k] > 0 else v) for k, v in observed.items()}
         players[bbr_id] = {"minutes": round(totals["seconds"] / 60, 1),
-                           "adjust": feedback_adjustments(expected_by_player[bbr_id], observed, samples)}
+                           "adjust": feedback_adjustments(expected_by_player[bbr_id], relative, samples)}
     return {"schema_version": 1, "kind": FEEDBACK_KIND, "from_season": from_season, "applies_to": applies_to,
             "share": FEEDBACK_SHARE, "source": "closed simulated game results of the from_season",
             "players": players}
@@ -230,11 +245,11 @@ def feedback_errors(data):
     for bbr_id, entry in data["players"].items():
         if bbr_id in PROTAGONIST_IDS:
             errors.append(f"{bbr_id}: the protagonist has his own season update, not real-player feedback")
-        adjust = entry.get("adjust", {})
-        if set(adjust) != set(RATE_KEYS) or any(
-                isinstance(v, bool) or not isinstance(v, (int, float)) or abs(v) > SPREAD[k] + 1e-12
-                for k, v in adjust.items()):
-            errors.append(f"{bbr_id}: adjustments must cover every rate and stay within the cap")
+        adjust = entry.get("adjust") if isinstance(entry, dict) else None
+        if not isinstance(adjust, dict) or set(adjust) != set(RATE_KEYS) or any(
+                isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v)
+                or abs(v) > SPREAD[k] + 1e-12 for k, v in adjust.items()):
+            errors.append(f"{bbr_id}: adjustments must cover every rate with finite values within the cap")
     return errors
 
 

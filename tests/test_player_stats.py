@@ -9,7 +9,7 @@ import unittest
 from runtime.era import environment_for, rules_for
 from runtime.game_requests import _club
 from runtime.game_runner import build_game_packet
-from runtime.kernel import PlayerInput, TeamInput, resolve_game, validate_result
+from runtime.kernel import calibrate, PlayerInput, TeamInput, resolve_game, validate_result
 from runtime.league import baseline_team, load_clubs
 from runtime.player_stats import (CUTOFF, MODEL_VERSION, RATINGS_PATH, RATE_KEYS, ROOT, STATS_PATH,
                                  RatingIndex, build_ratings, data_errors, load_rating_index,
@@ -161,9 +161,11 @@ class StatisticalKernelTests(unittest.TestCase):
         self.assertAlmostEqual(t["team_turnovers"]/n, self.env["team_turnovers_per_game"], delta=.15)
 
     def test_shooting_frequency_and_accuracy_are_independent(self):
+        # Regular possessions use the rate less the late-game threes the late-game logic adds back.
+        regular = calibrate(self.env)["regular_three_share"]
         for share in (.05, .65):
             t, _ = self.sample(self.team("H", three_point_attempt_rate=share, three_point_pct=.4))
-            self.assertAlmostEqual(t["tpa"]/t["fga"], share, delta=.02)
+            self.assertAlmostEqual(t["tpa"]/t["fga"], share * regular, delta=.02)
             self.assertAlmostEqual(t["tpm"]/t["tpa"], .4, delta=.065)
         for accuracy in (.15, .55):
             t, _ = self.sample(self.team("H", three_point_attempt_rate=.35, three_point_pct=accuracy))

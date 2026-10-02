@@ -9,10 +9,11 @@ from pathlib import Path
 
 from runtime.era import environment_for, rules_for
 from runtime.game_requests import load_request
-from runtime.kernel import (MINUTES_CAP, SHORT_HANDED_RAISE, PlayerInput, TeamInput, _allocate, calibrate,
-                            resolve_game, team_errors, validate_result)
+from runtime.kernel import (MINUTES_CAP, SHORT_HANDED_RAISE, PlayerInput, TeamInput, _allocate, _choose_lineup,
+                            _Club, _expected_points, calibrate, resolve_game, team_errors, validate_result)
 from runtime.player_stats import CUTOFF, MODEL_VERSION, RATE_KEYS
-from runtime.rotations import load_rosters, primary_position, real_rotation
+from runtime.rotations import load_rosters, miami_holds, primary_position, real_rotation, season_fraction
+from runtime.schedule import schedule_path
 
 ROOT = Path(__file__).resolve().parents[1]
 GAME_DATE = "2003-10-28"
@@ -41,6 +42,17 @@ def games(home, away, n, venue="neutral", tag="m"):
                               rules=RULES, environment=ENV, venue=venue)
         assert validate_result(result) == [], validate_result(result)
         yield result
+
+
+class ExpectedMarginTests(unittest.TestCase):
+    def test_equal_clubs_have_no_edge_and_defense_creates_one(self):
+        import random
+        cal = calibrate(ENV)
+        make = lambda t: _Club(t, "home", random.Random(0), RULES)
+        a, b = make(team("A")), make(team("B"))
+        self.assertAlmostEqual(_expected_points(a, b, cal), _expected_points(b, a, cal))
+        good = make(team("G", defense=2.0))
+        self.assertLess(_expected_points(a, good, cal), _expected_points(a, b, cal) - 0.05)
 
 
 class DefenseTests(unittest.TestCase):
@@ -115,7 +127,7 @@ class RotationTests(unittest.TestCase):
 
     def test_real_rotation_uses_minutes_per_game_and_games_played(self):
         rosters = load_rosters("2003-04")
-        cle = real_rotation("Cleveland Cavaliers", rosters["Cleveland Cavaliers"], 82)
+        cle = real_rotation("Cleveland Cavaliers", rosters["Cleveland Cavaliers"], 82, fraction=0.5)
         lebron = next(p for p in cle.players if p.player_id == "LeBron James")
         self.assertAlmostEqual(lebron.minutes, 3122 / 79, places=1)
         self.assertAlmostEqual(lebron.availability, 79 / 82, places=3)
@@ -123,17 +135,69 @@ class RotationTests(unittest.TestCase):
         self.assertEqual(per_game, sorted(per_game, reverse=True))
         self.assertEqual(primary_position("SG-SF"), "SG")
 
+    def test_traded_players_are_with_one_club_on_every_scheduled_date(self):
+        rosters = load_rosters("2003-04")
+        games = json.loads(schedule_path("2003-04").read_text())["games"]
+        held = miami_holds("2003-04")
+        for g in games:
+            if "Miami Heat" in (g["home"], g["away"]):
+                continue
+            fraction = season_fraction("2003-04", g["date"])
+            ids = [{p.stat_profile.get("bbr_id") or p.player_id for p in real_rotation(
+                       name, rosters[name], 82, fraction=fraction, exclude=held).players}
+                   for name in (g["home"], g["away"])]
+            self.assertFalse(ids[0] & ids[1], g)
+        def wallace(club, day):
+            players = real_rotation(club, rosters[club], 82, fraction=season_fraction("2003-04", day)).players
+            return any(p.player_id == "Rasheed Wallace" for p in players)
+        self.assertTrue(wallace("Portland Trail Blazers", "2003-11-05"))
+        self.assertFalse(wallace("Detroit Pistons", "2003-11-05"))
+        self.assertTrue(wallace("Detroit Pistons", "2004-04-01"))
+
+    def test_miami_register_players_leave_their_real_club(self):
+        held = miami_holds("2003-04")
+        self.assertIn("cartean01", held)                       # player option pending on June 26
+        rosters = load_rosters("2003-04")
+        spurs = real_rotation("San Antonio Spurs", rosters["San Antonio Spurs"], 82, fraction=0.05, exclude=held)
+        self.assertNotIn("Anthony Carter", {p.player_id for p in spurs.players})
+        nets = real_rotation("New Jersey Nets", rosters["New Jersey Nets"], 82, fraction=0.05, exclude=held)
+        self.assertNotIn("Alonzo Mourning", {p.player_id for p in nets.players})   # matched by name
+
     def test_conflict_rule_three_spreads_departed_minutes(self):
-        club = {"players": [{"player_id": "A", "bbr_id": "aaaaa01", "position": "PG", "games": 82, "games_started": 82, "minutes": 2952},
-                            {"player_id": "B", "bbr_id": "bbbbb01", "position": "SG", "games": 82, "games_started": 82, "minutes": 2460},
-                            {"player_id": "C", "bbr_id": "ccccc01", "position": "C", "games": 82, "games_started": 82, "minutes": 1640}]}
-        arrival = {"player_id": "D", "bbr_id": "ddddd01", "position": "PG", "games": 82, "games_started": 0, "minutes": 1640}
-        moved = real_rotation("X", club, 82, exclude={"aaaaa01"}, arrivals=[arrival])
+        row = lambda pid, minutes: {"player_id": pid, "bbr_id": f"{pid.lower() * 5}01", "position": "PG",
+                                    "games": 82, "games_started": 82, "minutes": minutes}
+        club = {"players": [row("A", 2952), row("B", 2460), row("C", 1640)]}
+        moved = real_rotation("X", club, 82, fraction=0.5, exclude={"aaaaa01"}, arrivals=[row("D", 1640)])
         minutes = {p.player_id: p.minutes for p in moved.players}
         self.assertEqual(minutes["D"], 20.0)                   # the arrival brings his own share
         # The other 16 minutes of A's 36 are spread over B and C in proportion to their minutes.
         self.assertAlmostEqual(minutes["B"] + minutes["C"], 30 + 20 + 16, places=1)
         self.assertAlmostEqual(minutes["B"] / minutes["C"], 30 / 20, places=3)
+        # An arrival never takes more than the departing minutes; nobody staying loses minutes.
+        small = {"players": [row("A", 492), row("B", 2460), row("C", 1640)]}
+        moved = real_rotation("X", small, 82, fraction=0.5, exclude={"aaaaa01"}, arrivals=[row("D", 2460)])
+        minutes = {p.player_id: p.minutes for p in moved.players}
+        self.assertAlmostEqual(minutes["D"], 6.0, places=2)
+        self.assertEqual((minutes["B"], minutes["C"]), (30.0, 20.0))
+
+    def test_hardship_does_not_override_availability(self):
+        import random
+        players = [PlayerInput("star", "PF", 42, availability=1 / 82)] + [
+            PlayerInput(f"p{i}", "SG", 30 - i, availability=0.55) for i in range(12)]
+        rng, dressed = random.Random(3), 0
+        for _ in range(3000):
+            dressed += "star" in _Club(TeamInput("X", tuple(players)), "home", rng, RULES).order
+        self.assertLess(dressed / 3000, 0.05)
+
+    def test_lineup_keeps_a_guard_and_a_big(self):
+        positions = ["SF", "SF", "SF", "SF", "PG", "C", "SG", "PF", "C", "SG"]
+        players = tuple(PlayerInput(f"p{i}", pos, m) for i, (pos, m) in enumerate(zip(positions, (38, 36, 34, 32, 30, 20, 18, 14, 10, 8))))
+        import random
+        club = _Club(TeamInput("X", players), "home", random.Random(1), RULES)
+        for mode in ("normal", "closing"):
+            lineup = _choose_lineup(club, 0, 2880, mode)
+            kinds = {club.players[pid].position for pid in lineup}
+            self.assertTrue(kinds & {"PG", "SG"} and kinds & {"PF", "C"}, (mode, lineup))
 
 
 class RealRotationRequestTests(unittest.TestCase):

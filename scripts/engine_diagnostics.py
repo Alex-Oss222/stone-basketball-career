@@ -1,21 +1,26 @@
 #!/usr/bin/env python3
-"""Engine diagnostics: play many games between real 2003-04 rosters and compare with benchmarks.
+"""Engine diagnostics: play the real 2003-04 schedule between real rosters and compare with benchmarks.
 
 Analysis only. Games here are resolved with made-up entropy and are never
 written anywhere: career results come only from the Railway engine
 (AGENTS.md, "Game engine"). Real-player development swings are stand-in draws
-from a hash of the player id, for the same reason.
+from a hash of the player id, for the same reason. Every non-Miami game of the
+schedule is played on its date with both clubs' real rotations on that date
+(`runtime/rotations.py`), so traded players are with one club at a time.
 
-Usage: python scripts/engine_diagnostics.py [games] [--defense-test]
+Usage: python scripts/engine_diagnostics.py [seasons] [--defense-test] [--home-test]
+
+Output names clubs and players: it is for checking the engine, not for the
+career record or the front office (AGENTS.md, option C), so do not commit it.
 
 Benchmarks are general NBA figures for the era (judgement, not 2003-04
 results): final-margin SD about 13-14, overtime in about 6% of games, 0.2-0.3
-foul-outs per game, spread of team average margins over an 82-game season about
-4-5, home win rate about 60%.
+foul-outs per game, spread of team average margins over a season about 4-5,
+home win rate about 60%.
 """
 import collections
 import hashlib
-import random
+import json
 import statistics
 import sys
 from dataclasses import replace
@@ -25,63 +30,81 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from runtime.era import environment_for, rules_for
-from runtime.kernel import TeamInput, resolve_game, validate_result
+from runtime.kernel import resolve_game, validate_result
 from runtime.player_stats import load_rating_index
-from runtime.rotations import load_rosters, real_rotation
+from runtime.rotations import load_rosters, miami_holds, real_rotation, season_fraction
+from runtime.schedule import games_per_team, schedule_path
 from runtime.trajectories import develop_profile, needs_development
 
-SEASON, DATE, GAMES_PER_CLUB = "2003-04", "2003-11-05", 82
+SEASON, DATE = "2003-04", "2003-11-05"
 BENCHMARKS = {"margin SD": (13, 14), "overtime rate": (0.05, 0.07), "foul-outs per game": (0.2, 0.3),
               "team net SD": (4, 5), "home win rate": (0.57, 0.63)}
 
 
-def stand_in_development(team):
-    players = []
-    for p in team.players:
-        if p.stat_profile and needs_development(p.stat_profile):
-            ref = hashlib.sha256(f"diagnostic:{p.stat_profile['bbr_id']}".encode()).hexdigest()
-            p = replace(p, stat_profile=develop_profile(p.stat_profile, {SEASON: ref}))
-        players.append(p)
-    return replace(team, players=tuple(players))
+class League:
+    """Real rotations on each scheduled date, with stand-in development swings."""
+
+    def __init__(self):
+        self.index = load_rating_index(DATE, SEASON, ROOT)
+        self.rosters = load_rosters(SEASON, ROOT)
+        self.held = miami_holds(SEASON, ROOT)
+        schedule = json.loads(schedule_path(SEASON, ROOT).read_text(encoding="utf-8"))["games"]
+        self.games = [g for g in schedule if "Miami Heat" not in (g["home"], g["away"])]
+        self.cache, self.profiles = {}, {}
+
+    def profile(self, p):
+        key = p.stat_profile.get("bbr_id")
+        if key not in self.profiles:
+            ref = hashlib.sha256(f"diagnostic:{key}".encode()).hexdigest()
+            self.profiles[key] = develop_profile(p.stat_profile, {SEASON: ref})
+        return self.profiles[key]
+
+    def team(self, name, game_date, shift=None):
+        fraction = season_fraction(SEASON, game_date, ROOT)
+        team = real_rotation(name, self.rosters[name], games_per_team(SEASON, name), self.index,
+                             fraction=fraction, exclude=self.held)
+        key = (name, tuple(p.player_id for p in team.players), tuple(p.availability for p in team.players), shift)
+        if key not in self.cache:
+            players = []
+            for p in team.players:
+                if p.stat_profile and needs_development(p.stat_profile):
+                    profile = self.profile(p)
+                    if shift:
+                        profile = dict(profile, defense=profile["defense"] + shift)
+                    p = replace(p, stat_profile=profile)
+                players.append(p)
+            self.cache[key] = replace(team, players=tuple(players))
+        return self.cache[key]
 
 
-def clubs():
-    index = load_rating_index(DATE, SEASON, ROOT)
-    return {name: stand_in_development(real_rotation(name, club, GAMES_PER_CLUB, index))
-            for name, club in load_rosters(SEASON, ROOT).items()}
-
-
-def play(teams, games, seed=7):
+def play(league, seasons, venue="home", better=None):
+    """Every non-Miami game of the schedule, `seasons` times with fresh entropy.
+    `better`: clubs whose players are all one point better on defense."""
     rules, env = rules_for(SEASON), environment_for(SEASON, DATE)
-    names, rng = sorted(teams), random.Random(seed)
-    for i in range(games):
-        home, away = rng.sample(names, 2)
-        result = resolve_game(teams[home], teams[away], entropy=hashlib.sha256(f"diag{i}".encode()).digest(),
-                              event_id=f"diag{i}", rules=rules, environment=env)
-        errors = validate_result(result)
-        if errors:
-            raise SystemExit(f"invalid result: {errors}")
-        yield result
+    shift = lambda name: 1.0 if better and name in better else None
+    for s in range(seasons):
+        for g in league.games:
+            home = league.team(g["home"], g["date"], shift(g["home"]))
+            away = league.team(g["away"], g["date"], shift(g["away"]))
+            event = f"diag-{s}-{g['game_id']}"
+            result = resolve_game(home, away, entropy=hashlib.sha256(event.encode()).digest(), event_id=event,
+                                  rules=rules, environment=env, venue=venue)
+            errors = validate_result(result)
+            if errors:
+                raise SystemExit(f"invalid result: {errors}")
+            yield s, result
 
 
-def season_spread(team_margins, margins):
-    """Spread of team average margins as an 82-game season would show it: the simulated
-    between-team variance, less this sample's noise, plus the noise of 82 games."""
-    noise = statistics.pvariance(margins)
-    observed = statistics.pvariance([statistics.mean(v) for v in team_margins.values()])
-    between = observed - statistics.mean(noise / len(v) for v in team_margins.values())
-    return max(0.0, between + noise / GAMES_PER_CLUB) ** 0.5
-
-
-def report(teams, games):
+def report(league, seasons):
     env = environment_for(SEASON, DATE)["averages"]
-    margins, team_margins, totals = [], collections.defaultdict(list), collections.defaultdict(list)
-    lines, overtimes, home_wins, foul_outs, possessions = collections.defaultdict(list), 0, 0, 0, []
-    for g in play(teams, games):
+    margins, overtimes, home_wins, foul_outs = [], 0, 0, 0
+    season_margins = collections.defaultdict(lambda: collections.defaultdict(list))
+    totals, lines = collections.defaultdict(list), collections.defaultdict(list)
+    for s, g in play(league, seasons):
         h, a = g["final_score"]["home"], g["final_score"]["away"]
         margins.append(h - a)
-        team_margins[g["home"]].append(h - a)
-        team_margins[g["away"]].append(a - h)
+        season_margins[s][g["home"]].append(h - a)
+        season_margins[s][g["away"]].append(a - h)
         overtimes += g["overtimes"] > 0
         home_wins += h > a
         for side in ("home", "away"):
@@ -90,7 +113,11 @@ def report(teams, games):
             for row in g["player_stats"][side]:
                 foul_outs += row["fouled_out"]
                 if row["seconds"] > 0:
-                    lines[(g[side], row["player_id"])].append(row)
+                    lines[(g[side], row["player_id"])].append(row["minutes"])
+    games = len(margins)
+    # Spread of club average margins within a season, the way a standings table shows it.
+    spreads = [statistics.pvariance([statistics.mean(v) for v in clubs.values()]) for clubs in season_margins.values()]
+    per_club = statistics.mean(len(v) for clubs in season_margins.values() for v in clubs.values())
     out = {
         "points": statistics.mean(totals["pts"]),
         "margin SD": statistics.pstdev(margins),
@@ -99,52 +126,63 @@ def report(teams, games):
         "home win rate": home_wins / games,
         "home margin": statistics.mean(margins),
         "foul-outs per game": foul_outs / games,
-        "team net SD": season_spread(team_margins, margins),
+        "team net SD": statistics.mean(spreads) ** 0.5,
     }
-    print(f"{games} games between real {SEASON} rosters")
+    print(f"{seasons} season(s) of the real {SEASON} schedule without Miami: {games} games, "
+          f"{per_club:.0f} per club per season")
     for key, value in out.items():
         bench = BENCHMARKS.get(key)
         print(f"  {key:<22} {value:7.3f}" + (f"   benchmark {bench[0]}-{bench[1]}" if bench else ""))
+    print(f"  home margin standard error {statistics.pstdev(margins) / games ** 0.5:.2f} "
+          "(use --home-test for a paired measurement)")
     print("  per team per game, simulated vs environment:")
     for key, target in (("pts", "points"), ("fga", "fga"), ("tpa", "three_pa"), ("fta", "fta"), ("tov", "tov"),
                         ("orb", "orb"), ("ast", "ast"), ("stl", "stl"), ("blk", "blk"), ("pf", "pf")):
         print(f"    {key:<4} {statistics.mean(totals[key]):6.1f}  {env[target]:6.1f}")
     print(f"    possessions {statistics.mean(totals['possessions']):.1f} (published pace {env['pace']})")
-    real = {(name, p.player_id): p.minutes for name, team in teams.items() for p in team.players}
-    rows = [(statistics.mean(r["minutes"] for r in v), real[k], k, v) for k, v in lines.items() if len(v) >= 15]
-    print("  most minutes per game played (simulated, real):")
-    for minutes, target, (club, pid), v in sorted(rows, reverse=True)[:10]:
-        print(f"    {pid:<24} {club:<24} {minutes:5.1f} {target:5.1f}  {statistics.mean(r['pts'] for r in v):5.1f} pts")
-    over = sum(1 for v in lines.values() for r in v if r["minutes"] > 44) / games
+    inputs = {(name, p["player_id"]): p["minutes"] / max(1, p["games"])
+              for name, club in league.rosters.items() for p in club["players"]}
+    regulars = [(statistics.mean(v), inputs[k]) for k, v in lines.items()
+                if len(v) >= 20 * seasons and inputs.get(k, 0) >= 30]
+    print(f"  players with 30+ input minutes per game: simulated {statistics.mean(m for m, _ in regulars):.1f}, "
+          f"input {statistics.mean(i for _, i in regulars):.1f}, mean absolute gap "
+          f"{statistics.mean(abs(m - i) for m, i in regulars):.1f} ({len(regulars)} player stints)")
+    over = sum(1 for v in lines.values() for m in v if m > 44) / games
     print(f"  player-games over 44 minutes per game: {over:.2f}")
-    nets = sorted(((statistics.mean(v), k) for k, v in team_margins.items()), reverse=True)
-    print("  best:", ", ".join(f"{k} {x:+.1f}" for x, k in nets[:5]))
-    print("  worst:", ", ".join(f"{k} {x:+.1f}" for x, k in nets[-5:]))
     return out
 
 
-def defense_test(teams, games):
-    """Every player one point better on defense (five on the floor = +5): points allowed should fall about 5 per 100."""
-    def shifted(team, delta):
-        return TeamInput(team.team_id, tuple(replace(p, stat_profile=dict(p.stat_profile, defense=p.stat_profile.get("defense", 0) + delta))
-                                             if p.stat_profile else p for p in team.players))
-    allowed = {}
-    for delta in (0.0, 1.0):
-        better = {k: shifted(t, delta) if k < "M" else t for k, t in teams.items()}
+def defense_test(league, seasons):
+    """Every player of half the clubs one point better on defense (+5 on the floor), same games."""
+    better = set(sorted(league.rosters)[::2])
+    def allowed(results):
         pts = poss = 0
-        for g in play(better, games):
+        for _, g in results:
             for side, opp in (("home", "away"), ("away", "home")):
-                if g[side] < "M":
+                if g[side] in better:
                     pts += g["final_score"][opp]
                     poss += g["team_stats"][opp]["possessions"]
-        allowed[delta] = 100 * pts / poss
-    print(f"defense +5 on the floor: {allowed[1.0] - allowed[0.0]:+.2f} points allowed per 100 (target about -5)")
+        return 100 * pts / poss
+    base, changed = list(play(league, seasons)), list(play(league, seasons, better=better))
+    print(f"defense +5 on the floor: {allowed(changed) - allowed(base):+.2f} points allowed per 100 "
+          f"({seasons} season(s), same games)")
+
+
+def home_test(league, seasons):
+    """Home minus neutral-site margin over the same games and entropy."""
+    base, neutral = list(play(league, seasons)), list(play(league, seasons, venue="neutral"))
+    diffs = [(g["final_score"]["home"] - g["final_score"]["away"]) - (n["final_score"]["home"] - n["final_score"]["away"])
+             for (_, g), (_, n) in zip(base, neutral)]
+    print(f"home edge (home minus neutral, same games): {statistics.mean(diffs):+.2f} "
+          f"+- {statistics.pstdev(diffs) / len(diffs) ** 0.5:.2f} points")
 
 
 if __name__ == "__main__":
-    count = int(next((a for a in sys.argv[1:] if a.isdigit()), 1500))
-    teams = clubs()
+    count = int(next((a for a in sys.argv[1:] if a.isdigit()), 5))
+    league = League()
     if "--defense-test" in sys.argv:
-        defense_test(teams, count)
+        defense_test(league, count)
+    elif "--home-test" in sys.argv:
+        home_test(league, count)
     else:
-        report(teams, count)
+        report(league, count)

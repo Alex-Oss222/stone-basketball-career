@@ -1,27 +1,38 @@
 """Rotations for real clubs (roadmap item 8, world model D).
 
-A real club's game input is its real season roster for that season
-(`library/<year>/league/nba_<season>_team_rosters.json`): each player brings
-his minutes per game played and his availability, the share of the club's
-games he played for it. The engine draws who is available for a given game,
+A real club's game input is its real season roster
+(`library/<year>/league/nba_<season>_team_rosters.json`) on the game's date.
+Each player brings his minutes per game played and his availability, the share
+of the club's games he played while with it. A traded player is with each club
+only for his stint's part of the season (`window`), so he is never on two clubs
+at once; this uses season totals and the order of his stints, never dates or
+results from history. The engine draws who is available for a given game,
 dresses the top of the rotation and fills the 240 minutes in rotation order
 (`runtime/kernel.py`). Season-share minutes would give a star who missed half
 the season half his minutes every night; this gives him his real minutes on
 the nights he plays.
 
-Conflict rules (AGENTS.md, option D) are applied by the caller through
-`exclude` (players simulated Miami holds) and `arrivals` (players who reach a
-real club because of a Miami transaction, with the minutes they take over).
+Conflict rules (AGENTS.md, option D):
+1. A real stint begun by a Miami transaction is skipped at import: the player
+   stays with his previous club (`scripts/import_careers.py`). Players a real
+   Miami transaction brought in between seasons still need a ledger
+   (ROADMAP item 8).
+2. Players simulated Miami holds on the game date (its team-control register)
+   are taken out of every real club (`miami_holds`).
+3. Departing players' minutes go to arrivals up to their own previous share;
+   the rest raises the staying rotation in proportion to real minutes.
 Miami's own rotation comes from its depth chart, never from this module.
 """
+from datetime import date
 import json
 from pathlib import Path
 
 from .kernel import POSITIONS, PlayerInput, TeamInput
+from .player_stats import alias
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_MINUTES_PER_GAME = 44.0     # input sanity bound; the kernel's caps decide game minutes
-MIN_GAMES = 1
+NOT_HELD = ("free_agent", "released", "waived", "renounced", "traded", "retired")
 
 
 def rosters_path(season):
@@ -33,32 +44,80 @@ def load_rosters(season, root=ROOT):
     return json.loads((Path(root) / rosters_path(season)).read_text(encoding="utf-8"))["clubs"]
 
 
+def season_fraction(season, game_date, root=ROOT):
+    """Where a date falls in the regular season, 0 at the first game and 1 at the last."""
+    from .schedule import schedule_path
+    games = json.loads(schedule_path(season, root).read_text(encoding="utf-8"))["games"]
+    first, last = (date.fromisoformat(d) for d in (min(g["date"] for g in games), max(g["date"] for g in games)))
+    day = date.fromisoformat(game_date)
+    return min(1.0, max(0.0, (day - first).days / max(1, (last - first).days)))
+
+
+def miami_holds(season, root=ROOT):
+    """Bbr_ids and name keys of every player on simulated Miami's register who is held (rule 2)."""
+    path = Path(root) / f"career/Dwyane_Wade/{season}/00_Team/Team/Roster/roster.json"
+    if not path.exists():
+        return frozenset()
+    held = set()
+    for p in json.loads(path.read_text(encoding="utf-8"))["players"]:
+        if not any(word in p.get("status", "") for word in NOT_HELD):
+            held.add(alias(p["name"]))
+            if p.get("bbr_id"):
+                held.add(p["bbr_id"])
+    return frozenset(held)
+
+
 def primary_position(label):
     """Basketball-Reference positions such as 'SG-SF' use their first listed position."""
     position = label.split("-")[0]
     return position if position in POSITIONS else "SF"
 
 
-def real_rotation(club_name, club, season_games, rating_index=None, exclude=(), arrivals=()):
-    """TeamInput for a real club: minutes per game and availability per player, rotation order first.
+def _span(p):
+    lo, hi = p.get("span", [0.0, 1.0])
+    return max(1e-9, hi - lo)
+
+
+def _present(p, fraction):
+    lo, hi = p.get("window", [0.0, 1.0])
+    return p["games"] >= 1 and p["minutes"] > 0 and (lo <= fraction < hi or (fraction >= 1.0 and hi >= 1.0))
+
+
+def _availability(p, season_games):
+    return min(1.0, p["games"] / (season_games * _span(p)))
+
+
+def _share(p, season_games):
+    """Expected minutes per club game while he is with the club."""
+    return p["minutes"] / p["games"] * _availability(p, season_games)
+
+
+def real_rotation(club_name, club, season_games, rating_index=None, *, fraction, exclude=(), arrivals=()):
+    """TeamInput for a real club on the date at `fraction` of the season, rotation order first.
 
     `club` is the roster file entry; `season_games` the club's regular-season games.
-    `exclude`: bbr_ids that are not with this club in the simulation (rule 2).
-    `arrivals`: extra roster entries (same shape) for players who joined in the simulation.
+    `exclude`: bbr_ids or names not with this club in the simulation (rule 2).
+    `arrivals`: roster entries (same shape) for players who joined in the simulation.
     """
-    exclude, arrivals = set(exclude), list(arrivals)
-    staying = [p for p in club["players"] if p["bbr_id"] not in exclude]
-    # Rule 3: departing minutes go to the arrivals up to their own previous share; the rest is
+    exclude = set(exclude)
+    gone = lambda p: p["bbr_id"] in exclude or alias(p["player_id"]) in exclude
+    present = [p for p in club["players"] if _present(p, fraction)]
+    staying = [p for p in present if not gone(p)]
+    arrivals = [a for a in arrivals if a["games"] >= 1 and a["minutes"] > 0 and not gone(a)]
+    # Rule 3: arrivals get the departing minutes up to their own previous share; the rest is
     # spread over the staying rotation in proportion to real minutes.
-    share = lambda group: sum(p["minutes"] for p in group) / season_games
-    remainder = max(0.0, share(p for p in club["players"] if p["bbr_id"] in exclude) - share(arrivals))
-    factor = 1 + remainder / share(staying) if staying and remainder else 1.0
+    freed = sum(_share(p, season_games) for p in present if gone(p))
+    wanted = sum(_share(a, season_games) for a in arrivals)
+    grant = min(1.0, freed / wanted) if wanted else 0.0
+    remainder = freed - grant * wanted
+    stay_share = sum(_share(p, season_games) for p in staying)
+    factor = 1 + remainder / stay_share if stay_share and remainder > 0 else 1.0
     players = []
-    for p in staying + arrivals:
-        if p["games"] < MIN_GAMES or p["minutes"] <= 0:
+    for p, scale in [(p, factor) for p in staying] + [(a, grant) for a in arrivals]:
+        per_game = min(MAX_MINUTES_PER_GAME, p["minutes"] / p["games"] * scale)
+        if per_game <= 0:
             continue
-        per_game = min(MAX_MINUTES_PER_GAME, p["minutes"] / p["games"] * (factor if p in staying else 1.0))
-        availability = min(1.0, p["games"] / season_games)
+        availability = _availability(p, season_games)
         profile = rating_index.engine_profile(p["player_id"], p["bbr_id"]) if rating_index else {}
         players.append((per_game, availability, PlayerInput(p["player_id"], primary_position(p["position"]),
                                                             round(per_game, 2), {}, profile,
