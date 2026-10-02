@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="132" viewBox="0 0 1200 132" role="img" aria-labelledby="title desc">
+<title id="title">BOSTON CELTICS · Proposal C1</title>
+<desc id="desc">Fictional contract proposal, position 3. Outside proposal. Team-associated design colors, not verified historical branding.</desc>
+<rect width="1200" height="132" rx="12" fill="#121826"/>
+<path d="M12 0h1188v88H0V12Q0 0 12 0" fill="#007A33"/>
+<rect y="88" width="1200" height="5" fill="#FFFFFF"/>
+<text x="28" y="39" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">POSITION 3 · FICTIONAL PROPOSAL C1</text>
+<text x="28" y="74" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">BOSTON CELTICS</text>
+<text x="1170" y="62" text-anchor="end" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">C1</text>
+<text x="28" y="119" fill="#DFE5EE" font-family="Arial, Helvetica, sans-serif" font-size="18">Outside proposal · 1 year + player option · Player controls year 2</text>
+</svg>
