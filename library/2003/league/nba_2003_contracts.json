@@ -15,8 +15,7 @@
  ],
  "accounting_rule": "Only contract terms, options and draft holds that already existed at this checkpoint are scheduled. Later signings, trades, option decisions, waivers and extensions are not imported. Later salary lists are used only to read the amounts of contract years that already existed.",
  "not_applied": [
-  "2003-06-27 trade: Milwaukee sent Sam Cassell and Ervin Johnson to Minnesota for Anthony Peeler and Joe Smith (after the checkpoint).",
-  "All option decisions and free agent signings dated after 2003-06-26."
+  "Every transaction, option decision, qualifying offer, waiver and signing dated after 2003-06-26 is excluded; those are simulated events."
  ],
  "status_legend": {
   "under_contract": "Contract in force for 2003-04, from a contract history or from an unbroken constant annual raise.",
@@ -25,10 +24,10 @@
   "minimum_contract_unverified": "Minimum-salary player whose 2003-04 status (second year, option or new deal) is not established.",
   "player_option_pending": "2003-04 is a player option with no decision at the checkpoint.",
   "team_option_pending": "2003-04 is a team option with no decision at the checkpoint.",
-  "free_agent_restricted": "On the 2003-07-01 published list, marked restricted.",
-  "free_agent_unrestricted": "On the 2003-07-01 published list, not marked restricted.",
   "free_agent_unlisted": "Contract history shows the contract ended in 2002-03; not on the published list.",
-  "expired_or_unresolved": "No 2003-04 commitment could be established."
+  "expired_or_unresolved": "No 2003-04 commitment could be established.",
+  "free_agent_expiring": "Contract expires June 30, 2003 (identified from the list published 2003-07-01). Field rfa_eligible is true when that list marked the player restricted, which shows eligibility for restricted free agency; whether Miami or any club tenders a qualifying offer is a simulated June 30 decision. null means eligibility is not established.",
+  "retired_salary_on_books": "Retired player whose salary is still carried on the club's 2003-04 list."
  },
  "amount_kind_legend": {
   "contract_salary": "Existing contract year.",
@@ -88,8 +87,7 @@
   "by_status": {
    "under_contract": 134,
    "under_rookie_contract": 74,
-   "free_agent_restricted": 33,
-   "free_agent_unrestricted": 95,
+   "free_agent_expiring": 128,
    "under_contract_unverified": 37,
    "minimum_contract_unverified": 11,
    "expired_or_unresolved": 24,
@@ -103,7 +101,7 @@
    "published_free_agent_list": 128,
    "no_2003_04_salary_found": 16,
    "rookie_scale_rule": 17,
-   "signed_elsewhere_after_june_2003": 8
+   "unresolved_at_checkpoint": 8
   },
   "draft_rights": 58,
   "released_players": 5
@@ -344,7 +342,7 @@
     {
      "player": "Jason Terry",
      "bbr_id": "terryja01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -358,12 +356,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Dion Glover",
      "bbr_id": "glovedi01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -377,12 +376,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "DerMarr Johnson",
      "bbr_id": "johnsde03",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -396,12 +396,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Mikki Moore",
      "bbr_id": "mooremi01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -413,12 +414,13 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Emanual Davis",
      "bbr_id": "davisem01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -432,12 +434,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Darvin Ham",
      "bbr_id": "hamda01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -451,12 +454,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Ira Newble",
      "bbr_id": "newblir01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -470,12 +474,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Jermaine Jackson",
      "bbr_id": "jacksje01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -487,7 +492,8 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [
@@ -538,8 +544,7 @@
    "counts": {
     "under_contract": 6,
     "under_rookie_contract": 1,
-    "free_agent_restricted": 2,
-    "free_agent_unrestricted": 6
+    "free_agent_expiring": 8
    },
    "projection": [
     {
@@ -901,7 +906,7 @@
     {
      "player": "Bimbo Coles",
      "bbr_id": "colesbi01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -915,12 +920,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Mark Bryant",
      "bbr_id": "bryanma01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -934,12 +940,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Walter McCarty",
      "bbr_id": "mccarwa01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -953,12 +960,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Mark Blount",
      "bbr_id": "blounma01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -972,12 +980,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Grant Long",
      "bbr_id": "longgr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -989,7 +998,8 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Ruben Wolkowyski",
@@ -1086,7 +1096,7 @@
     "under_rookie_contract": 1,
     "under_contract_unverified": 1,
     "minimum_contract_unverified": 1,
-    "free_agent_unrestricted": 5,
+    "free_agent_expiring": 5,
     "expired_or_unresolved": 1
    },
    "projection": [
@@ -1528,7 +1538,7 @@
     {
      "player": "Corie Blount",
      "bbr_id": "blounco01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -1542,12 +1552,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Fred Hoiberg",
      "bbr_id": "hoibefr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -1561,12 +1572,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Rick Brunson",
      "bbr_id": "brunsri01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -1580,7 +1592,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [
@@ -1647,7 +1660,7 @@
     "under_contract": 4,
     "under_rookie_contract": 6,
     "minimum_contract_unverified": 1,
-    "free_agent_unrestricted": 3
+    "free_agent_expiring": 3
    },
    "projection": [
     {
@@ -2023,7 +2036,7 @@
     {
      "player": "Jumaine Jones",
      "bbr_id": "jonesju01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -2037,12 +2050,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Tierre Brown",
      "bbr_id": "brownti01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -2054,12 +2068,13 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Milt Palacio",
      "bbr_id": "palacmi01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -2073,12 +2088,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Smush Parker",
      "bbr_id": "parkesm01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -2092,7 +2108,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [
@@ -2144,8 +2161,7 @@
     "under_contract": 4,
     "under_rookie_contract": 3,
     "team_option_pending": 1,
-    "free_agent_restricted": 2,
-    "free_agent_unrestricted": 2
+    "free_agent_expiring": 4
    },
    "projection": [
     {
@@ -2575,7 +2591,7 @@
     {
      "player": "Popeye Jones",
      "bbr_id": "jonespo01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -2589,12 +2605,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Walt Williams",
      "bbr_id": "williwa02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -2608,12 +2625,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Adrian Griffin",
      "bbr_id": "griffad01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -2627,12 +2645,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Raja Bell",
      "bbr_id": "bellra01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -2646,7 +2665,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [
@@ -2682,7 +2702,7 @@
    "counts": {
     "under_contract": 8,
     "under_contract_unverified": 2,
-    "free_agent_unrestricted": 4
+    "free_agent_expiring": 4
    },
    "projection": [
     {
@@ -2920,7 +2940,7 @@
     {
      "player": "Chris Andersen",
      "bbr_id": "anderch01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -2934,12 +2954,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Adam Harrington",
      "bbr_id": "harriad01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -2951,12 +2972,13 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Juwan Howard",
      "bbr_id": "howarju01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -2970,12 +2992,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Shammond Williams",
      "bbr_id": "willish01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -2989,12 +3012,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Donnell Harvey",
      "bbr_id": "harvedo01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -3008,7 +3032,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Junior Harrington",
@@ -3164,8 +3189,7 @@
    "counts": {
     "under_rookie_contract": 3,
     "under_contract_unverified": 2,
-    "free_agent_restricted": 2,
-    "free_agent_unrestricted": 3,
+    "free_agent_expiring": 5,
     "expired_or_unresolved": 3
    },
    "projection": [
@@ -3578,7 +3602,7 @@
     {
      "player": "Richard Hamilton",
      "bbr_id": "hamilri01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -3592,12 +3616,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Jon Barry",
      "bbr_id": "barryjo01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -3611,12 +3636,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Don Reid",
      "bbr_id": "reiddo01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -3630,12 +3656,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Danny Manning",
      "bbr_id": "mannida01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -3647,7 +3674,8 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [
@@ -3727,8 +3755,7 @@
     "under_rookie_contract": 1,
     "under_contract_unverified": 2,
     "minimum_contract_unverified": 1,
-    "free_agent_restricted": 1,
-    "free_agent_unrestricted": 3
+    "free_agent_expiring": 4
    },
    "projection": [
     {
@@ -4145,7 +4172,7 @@
     {
      "player": "Gilbert Arenas",
      "bbr_id": "arenagi01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -4159,12 +4186,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Earl Boykins",
      "bbr_id": "boykiea01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -4178,7 +4206,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [
@@ -4230,8 +4259,7 @@
     "under_contract": 4,
     "under_rookie_contract": 4,
     "under_contract_unverified": 2,
-    "free_agent_restricted": 1,
-    "free_agent_unrestricted": 1
+    "free_agent_expiring": 2
    },
    "projection": [
     {
@@ -4672,7 +4700,7 @@
     {
      "player": "James Posey",
      "bbr_id": "poseyja01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -4686,12 +4714,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Jason Collier",
      "bbr_id": "collija02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -4705,12 +4734,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Juaquin Hawkins",
      "bbr_id": "hawkiju01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -4724,7 +4754,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Glen Rice",
@@ -4737,7 +4768,7 @@
       "amount": 9200000,
       "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      },
-     "basis": "signed_elsewhere_after_june_2003",
+     "basis": "unresolved_at_checkpoint",
      "sources": [
       "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      ],
@@ -4745,7 +4776,7 @@
       "amount": 9600000,
       "method": "prior constant raise, unverified"
      },
-     "notes": "Signed a new contract after June 30, 2003 according to the transaction record. Whether a contract year or option existed on 2003-06-26 is not established."
+     "notes": "No 2003-04 commitment could be established from sources dated on or before the checkpoint. How the player's status resolves is a simulated event."
     },
     {
      "player": "Terence Morris",
@@ -4807,8 +4838,7 @@
     "under_contract": 5,
     "under_rookie_contract": 3,
     "team_option_pending": 1,
-    "free_agent_restricted": 1,
-    "free_agent_unrestricted": 2,
+    "free_agent_expiring": 3,
     "expired_or_unresolved": 2
    },
    "projection": [
@@ -5235,7 +5265,7 @@
     {
      "player": "Reggie Miller",
      "bbr_id": "millere01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -5249,12 +5279,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Jermaine O'Neal",
      "bbr_id": "onealje01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -5268,12 +5299,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Brad Miller",
      "bbr_id": "millebr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -5287,12 +5319,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Tim Hardaway",
      "bbr_id": "hardati01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -5304,12 +5337,13 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Erick Strickland",
      "bbr_id": "stricer01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -5323,7 +5357,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [
@@ -5349,7 +5384,7 @@
     "under_rookie_contract": 3,
     "under_contract_unverified": 2,
     "minimum_contract_unverified": 1,
-    "free_agent_unrestricted": 5
+    "free_agent_expiring": 5
    },
    "projection": [
     {
@@ -5628,7 +5663,7 @@
     {
      "player": "Elton Brand",
      "bbr_id": "brandel01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -5642,12 +5677,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Lamar Odom",
      "bbr_id": "odomla01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -5661,12 +5697,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Andre Miller",
      "bbr_id": "millean02",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -5680,12 +5717,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Corey Maggette",
      "bbr_id": "maggeco01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -5699,12 +5737,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Michael Olowokandi",
      "bbr_id": "olowomi01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -5718,12 +5757,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Eric Piatkowski",
      "bbr_id": "piatker01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -5737,12 +5777,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Sean Rooks",
      "bbr_id": "rooksse01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -5756,12 +5797,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Cherokee Parks",
      "bbr_id": "parksch02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -5775,7 +5817,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Wang Zhizhi",
@@ -5788,7 +5831,7 @@
       "amount": 1900000,
       "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      },
-     "basis": "signed_elsewhere_after_june_2003",
+     "basis": "unresolved_at_checkpoint",
      "sources": [
       "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      ],
@@ -5796,7 +5839,7 @@
       "amount": 3334150,
       "method": "prior constant raise, unverified"
      },
-     "notes": "Signed a new contract after June 30, 2003 according to the transaction record. Whether a contract year or option existed on 2003-06-26 is not established."
+     "notes": "No 2003-04 commitment could be established from sources dated on or before the checkpoint. How the player's status resolves is a simulated event."
     }
    ],
    "draft_rights": [
@@ -5848,8 +5891,7 @@
     "under_contract": 1,
     "under_rookie_contract": 4,
     "under_contract_unverified": 1,
-    "free_agent_restricted": 4,
-    "free_agent_unrestricted": 4,
+    "free_agent_expiring": 8,
     "expired_or_unresolved": 1
    },
    "projection": [
@@ -6195,7 +6237,7 @@
     {
      "player": "Tracy Murray",
      "bbr_id": "murratr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -6209,12 +6251,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Samaki Walker",
      "bbr_id": "walkesa01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -6228,12 +6271,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Brian Shaw",
      "bbr_id": "shawbr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -6247,12 +6291,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Mark Madsen",
      "bbr_id": "madsema01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -6266,7 +6311,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Robert Horry",
@@ -6279,7 +6325,7 @@
       "amount": 5300000,
       "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      },
-     "basis": "signed_elsewhere_after_june_2003",
+     "basis": "unresolved_at_checkpoint",
      "sources": [
       "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      ],
@@ -6287,7 +6333,7 @@
       "amount": 5300000,
       "method": "prior constant raise, unverified"
      },
-     "notes": "Signed a new contract after June 30, 2003 according to the transaction record. Whether a contract year or option existed on 2003-06-26 is not established."
+     "notes": "No 2003-04 commitment could be established from sources dated on or before the checkpoint. How the player's status resolves is a simulated event."
     }
    ],
    "draft_rights": [
@@ -6339,7 +6385,7 @@
     "under_contract": 6,
     "under_rookie_contract": 1,
     "under_contract_unverified": 1,
-    "free_agent_unrestricted": 4,
+    "free_agent_expiring": 4,
     "expired_or_unresolved": 1
    },
    "projection": [
@@ -6858,7 +6904,7 @@
     {
      "player": "Mike Batiste",
      "bbr_id": "batismi01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -6872,7 +6918,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Chris Owens",
@@ -6954,7 +7001,7 @@
     "under_rookie_contract": 5,
     "under_contract_unverified": 1,
     "team_option_pending": 1,
-    "free_agent_restricted": 1,
+    "free_agent_expiring": 1,
     "expired_or_unresolved": 1
    },
    "projection": [
@@ -7278,7 +7325,7 @@
     {
      "player": "Eddie House",
      "bbr_id": "houseed01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -7292,12 +7339,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Malik Allen",
      "bbr_id": "allenma01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -7311,12 +7359,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Mike James",
      "bbr_id": "jamesmi01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -7330,12 +7379,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Alonzo Mourning",
      "bbr_id": "mournal01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -7349,12 +7399,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Travis Best",
      "bbr_id": "besttr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -7368,12 +7419,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Vladimir Stepania",
      "bbr_id": "stepavl01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -7387,12 +7439,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Sean Marks",
      "bbr_id": "marksse01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -7406,7 +7459,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Anthony Carter",
@@ -7419,7 +7473,7 @@
       "amount": 3656250,
       "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      },
-     "basis": "signed_elsewhere_after_june_2003",
+     "basis": "unresolved_at_checkpoint",
      "sources": [
       "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      ],
@@ -7427,7 +7481,7 @@
       "amount": 4062500,
       "method": "prior constant raise, unverified"
      },
-     "notes": "Signed a new contract after June 30, 2003 according to the transaction record. Whether a contract year or option existed on 2003-06-26 is not established."
+     "notes": "No 2003-04 commitment could be established from sources dated on or before the checkpoint. How the player's status resolves is a simulated event."
     },
     {
      "player": "LaPhonso Ellis",
@@ -7496,8 +7550,7 @@
     "under_contract": 2,
     "under_rookie_contract": 1,
     "team_option_pending": 3,
-    "free_agent_restricted": 3,
-    "free_agent_unrestricted": 4,
+    "free_agent_expiring": 7,
     "expired_or_unresolved": 2
    },
    "projection": [
@@ -7949,7 +8002,7 @@
     {
      "player": "Gary Payton",
      "bbr_id": "paytoga01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -7963,12 +8016,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Rafer Alston",
      "bbr_id": "alstora01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -7980,7 +8034,8 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [
@@ -8033,7 +8088,7 @@
     "under_rookie_contract": 3,
     "under_contract_unverified": 3,
     "minimum_contract_unverified": 1,
-    "free_agent_unrestricted": 2
+    "free_agent_expiring": 2
    },
    "projection": [
     {
@@ -8313,7 +8368,7 @@
     {
      "player": "Loren Woods",
      "bbr_id": "woodslo01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -8327,12 +8382,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Mike Wilks",
      "bbr_id": "wilksmi01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -8344,12 +8400,13 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Radoslav Nesterovic",
      "bbr_id": "nestera01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -8363,12 +8420,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Kendall Gill",
      "bbr_id": "gillke01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -8382,12 +8440,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Rod Strickland",
      "bbr_id": "stricro02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -8401,12 +8460,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Gary Trent",
      "bbr_id": "trentga01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -8420,12 +8480,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Felipe Lopez",
      "bbr_id": "lopezfe01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -8439,7 +8500,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Anthony Peeler",
@@ -8452,7 +8514,7 @@
       "amount": 3350812,
       "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      },
-     "basis": "signed_elsewhere_after_june_2003",
+     "basis": "unresolved_at_checkpoint",
      "sources": [
       "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      ],
@@ -8460,7 +8522,7 @@
       "amount": 3723124,
       "method": "prior constant raise, unverified"
      },
-     "notes": "Signed a new contract after June 30, 2003 according to the transaction record. Whether a contract year or option existed on 2003-06-26 is not established."
+     "notes": "No 2003-04 commitment could be established from sources dated on or before the checkpoint. How the player's status resolves is a simulated event."
     },
     {
      "player": "Igor Rakocevic",
@@ -8529,8 +8591,7 @@
    "counts": {
     "under_contract": 4,
     "under_contract_unverified": 2,
-    "free_agent_restricted": 2,
-    "free_agent_unrestricted": 5,
+    "free_agent_expiring": 7,
     "expired_or_unresolved": 2
    },
    "projection": [
@@ -8882,7 +8943,7 @@
     {
      "player": "Brian Scalabrine",
      "bbr_id": "scalabr01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -8896,12 +8957,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Jason Kidd",
      "bbr_id": "kiddja01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -8915,12 +8977,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Lucious Harris",
      "bbr_id": "harrilu01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -8934,12 +8997,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Anthony Johnson",
      "bbr_id": "johnsan02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -8953,12 +9017,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Donny Marshall",
      "bbr_id": "marshdo02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -8970,7 +9035,8 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Dikembe Mutombo",
@@ -8983,7 +9049,7 @@
       "amount": 16105264,
       "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      },
-     "basis": "signed_elsewhere_after_june_2003",
+     "basis": "unresolved_at_checkpoint",
      "sources": [
       "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      ],
@@ -8991,7 +9057,7 @@
       "amount": 17894738,
       "method": "prior constant raise, unverified"
      },
-     "notes": "Signed a new contract after June 30, 2003 according to the transaction record. Whether a contract year or option existed on 2003-06-26 is not established."
+     "notes": "No 2003-04 commitment could be established from sources dated on or before the checkpoint. How the player's status resolves is a simulated event."
     },
     {
      "player": "Jamie Feick",
@@ -9046,8 +9112,7 @@
     "under_rookie_contract": 4,
     "under_contract_unverified": 2,
     "minimum_contract_unverified": 1,
-    "free_agent_restricted": 1,
-    "free_agent_unrestricted": 4,
+    "free_agent_expiring": 5,
     "expired_or_unresolved": 2
    },
    "projection": [
@@ -9440,7 +9505,7 @@
     {
      "player": "Kenny Anderson",
      "bbr_id": "anderke01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -9454,12 +9519,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Jerome Moiso",
      "bbr_id": "moisoje01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -9473,12 +9539,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "P.J. Brown",
      "bbr_id": "brownpj01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -9490,12 +9557,13 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Robert Pack",
      "bbr_id": "packro01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -9507,7 +9575,8 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Matt Bullard",
@@ -9576,7 +9645,7 @@
     "under_contract": 6,
     "under_rookie_contract": 3,
     "under_contract_unverified": 1,
-    "free_agent_unrestricted": 4,
+    "free_agent_expiring": 4,
     "expired_or_unresolved": 1
    },
    "projection": [
@@ -10021,7 +10090,7 @@
     {
      "player": "Lee Nailon",
      "bbr_id": "nailole01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -10035,12 +10104,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Lavor Postell",
      "bbr_id": "postela01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -10054,12 +10124,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Mark Pope",
      "bbr_id": "popema01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -10073,7 +10144,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [
@@ -10140,8 +10212,7 @@
     "under_contract": 10,
     "under_rookie_contract": 1,
     "under_contract_unverified": 1,
-    "free_agent_restricted": 2,
-    "free_agent_unrestricted": 1
+    "free_agent_expiring": 3
    },
    "projection": [
     {
@@ -10496,7 +10567,7 @@
     {
      "player": "Olumide Oyedeji",
      "bbr_id": "oyedeol01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -10510,12 +10581,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Pat Burke",
      "bbr_id": "burkepa01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -10529,12 +10601,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Darrell Armstrong",
      "bbr_id": "armstda01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -10548,12 +10621,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Chris Whitney",
      "bbr_id": "whitnch01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -10567,12 +10641,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Shawn Kemp",
      "bbr_id": "kempsh01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -10586,12 +10661,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Jacque Vaughn",
      "bbr_id": "vaughja01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -10605,7 +10681,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [
@@ -10672,8 +10749,7 @@
     "under_contract": 3,
     "under_rookie_contract": 3,
     "under_contract_unverified": 2,
-    "free_agent_restricted": 2,
-    "free_agent_unrestricted": 4
+    "free_agent_expiring": 6
    },
    "projection": [
     {
@@ -11135,7 +11211,7 @@
     {
      "player": "Kenny Thomas",
      "bbr_id": "thomake01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -11149,12 +11225,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Derrick Coleman",
      "bbr_id": "colemde01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -11168,12 +11245,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Tyrone Hill",
      "bbr_id": "hillty01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -11187,12 +11265,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Brian Skinner",
      "bbr_id": "skinnbr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -11206,7 +11285,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Kenny Satterfield",
@@ -11264,8 +11344,7 @@
     "under_rookie_contract": 2,
     "under_contract_unverified": 1,
     "minimum_contract_unverified": 2,
-    "free_agent_restricted": 1,
-    "free_agent_unrestricted": 3,
+    "free_agent_expiring": 4,
     "expired_or_unresolved": 1
    },
    "projection": [
@@ -11655,7 +11734,7 @@
     {
      "player": "Randy Brown",
      "bbr_id": "brownra02",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -11669,12 +11748,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Dan Langhi",
      "bbr_id": "langhda01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -11688,12 +11768,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Jake Voskuhl",
      "bbr_id": "voskuja01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -11707,12 +11788,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Alton Ford",
      "bbr_id": "fordal02",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -11726,12 +11808,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Scott Williams",
      "bbr_id": "willisc01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -11745,7 +11828,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [
@@ -11809,8 +11893,7 @@
     "under_contract": 3,
     "under_rookie_contract": 4,
     "under_contract_unverified": 2,
-    "free_agent_restricted": 4,
-    "free_agent_unrestricted": 1
+    "free_agent_expiring": 5
    },
    "projection": [
     {
@@ -12233,7 +12316,7 @@
     {
      "player": "Scottie Pippen",
      "bbr_id": "pippesc01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -12247,12 +12330,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Antonio Daniels",
      "bbr_id": "daniean01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -12266,12 +12350,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Chris Dudley",
      "bbr_id": "dudlech02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -12285,12 +12370,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Charles Smith",
      "bbr_id": "smithch04",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "prior_season_salary": {
@@ -12302,7 +12388,8 @@
      "sources": [
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. Not on a club payroll in the January 2003 salary list, or listed there under another name or club."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Arvydas Sabonis",
@@ -12390,7 +12477,7 @@
    "counts": {
     "under_contract": 8,
     "under_rookie_contract": 2,
-    "free_agent_unrestricted": 4,
+    "free_agent_expiring": 4,
     "expired_or_unresolved": 1
    },
    "projection": [
@@ -12819,7 +12906,7 @@
     {
      "player": "Keon Clark",
      "bbr_id": "clarkke01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -12833,12 +12920,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Brent Price",
      "bbr_id": "pricebr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -12852,12 +12940,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Mateen Cleaves",
      "bbr_id": "cleavma01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -12871,12 +12960,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Jim Jackson",
      "bbr_id": "jacksji01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -12890,12 +12980,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Damon Jones",
      "bbr_id": "jonesda01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -12909,7 +13000,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [],
@@ -12918,7 +13010,7 @@
     "under_contract": 7,
     "under_rookie_contract": 2,
     "under_contract_unverified": 1,
-    "free_agent_unrestricted": 5
+    "free_agent_expiring": 5
    },
    "projection": [
     {
@@ -13158,7 +13250,7 @@
     {
      "player": "Mengke Bateer",
      "bbr_id": "bateeme01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -13172,12 +13264,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Steve Smith",
      "bbr_id": "smithst01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -13191,12 +13284,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Steve Kerr",
      "bbr_id": "kerrst01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -13210,12 +13304,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Speedy Claxton",
      "bbr_id": "claxtsp01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -13229,12 +13324,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Kevin Willis",
      "bbr_id": "willike02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -13248,12 +13344,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Stephen Jackson",
      "bbr_id": "jacksst02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -13267,7 +13364,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "David Robinson",
@@ -13311,8 +13409,7 @@
     "under_rookie_contract": 1,
     "under_contract_unverified": 1,
     "player_option_pending": 1,
-    "free_agent_restricted": 1,
-    "free_agent_unrestricted": 5,
+    "free_agent_expiring": 6,
     "expired_or_unresolved": 2
    },
    "projection": [
@@ -13723,7 +13820,7 @@
     {
      "player": "Reggie Evans",
      "bbr_id": "evansre01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -13737,12 +13834,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Elden Campbell",
      "bbr_id": "campbel01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -13756,12 +13854,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Kevin Ollie",
      "bbr_id": "ollieke01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -13775,7 +13874,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     }
    ],
    "draft_rights": [
@@ -13855,8 +13955,7 @@
     "under_rookie_contract": 2,
     "under_contract_unverified": 1,
     "minimum_contract_unverified": 2,
-    "free_agent_restricted": 1,
-    "free_agent_unrestricted": 2
+    "free_agent_expiring": 3
    },
    "projection": [
     {
@@ -14288,7 +14387,7 @@
     {
      "player": "Mamadou N'diaye",
      "bbr_id": "ndiayma02",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -14302,12 +14401,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Voshon Lenard",
      "bbr_id": "lenarvo01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -14321,7 +14421,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Jelani McCoy",
@@ -14334,7 +14435,7 @@
       "amount": 637435,
       "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      },
-     "basis": "signed_elsewhere_after_june_2003",
+     "basis": "unresolved_at_checkpoint",
      "sources": [
       "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      ],
@@ -14342,7 +14443,7 @@
       "amount": 709020,
       "method": "prior constant raise, unverified"
      },
-     "notes": "Signed a new contract after June 30, 2003 according to the transaction record. Whether a contract year or option existed on 2003-06-26 is not established."
+     "notes": "No 2003-04 commitment could be established from sources dated on or before the checkpoint. How the player's status resolves is a simulated event."
     }
    ],
    "draft_rights": [
@@ -14407,18 +14508,18 @@
    "released_players": [
     {
      "player": "Hakeem Olajuwon",
-     "status": "released_before_checkpoint",
+     "status": "retired_salary_on_books",
      "schedule": {
       "2003-04": 6326923
      },
      "amount_kind": {
-      "2003-04": "dead_money"
+      "2003-04": "contract_salary"
      },
      "prior_season_salary": {
       "season": "2002-03",
       "amount": 5694231
      },
-     "notes": "Marked 'retired' in the January 2003 salary list and still on the club's 2003-04 list ('released 10/27/03'). Later seasons not traced.",
+     "notes": "Retired; salary still carried on the club's 2003-04 list. How it is resolved is a later event.",
      "sources": [
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.eskimo.com/~pbender/misc/salaries04.txt"
@@ -14430,7 +14531,7 @@
     "under_rookie_contract": 3,
     "under_contract_unverified": 3,
     "minimum_contract_unverified": 1,
-    "free_agent_unrestricted": 2,
+    "free_agent_expiring": 2,
     "expired_or_unresolved": 1
    },
    "projection": [
@@ -14741,7 +14842,7 @@
     {
      "player": "Carlos Arroyo",
      "bbr_id": "arroyca01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -14755,12 +14856,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Karl Malone",
      "bbr_id": "malonka01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -14774,12 +14876,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Mark Jackson",
      "bbr_id": "jacksma01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -14793,12 +14896,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Calbert Cheaney",
      "bbr_id": "cheanca01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -14812,12 +14916,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Tony Massenburg",
      "bbr_id": "masseto01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -14831,12 +14936,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Scott Padgett",
      "bbr_id": "padgesc01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -14850,7 +14956,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "John Stockton",
@@ -14920,8 +15027,7 @@
     "under_contract": 3,
     "under_rookie_contract": 3,
     "under_contract_unverified": 2,
-    "free_agent_restricted": 1,
-    "free_agent_unrestricted": 5,
+    "free_agent_expiring": 6,
     "expired_or_unresolved": 1
    },
    "projection": [
@@ -15316,7 +15422,7 @@
     {
      "player": "Bobby Simmons",
      "bbr_id": "simmobo01",
-     "status": "free_agent_restricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -15330,12 +15436,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": true
     },
     {
      "player": "Bryon Russell",
      "bbr_id": "russebr01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -15349,12 +15456,13 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Charles Oakley",
      "bbr_id": "oaklech01",
-     "status": "free_agent_unrestricted",
+     "status": "free_agent_expiring",
      "schedule": {},
      "amount_kind": {},
      "conditions": {},
@@ -15368,7 +15476,8 @@
       "https://www.eskimo.com/~pbender/misc/salaries03.txt",
       "https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/"
      ],
-     "notes": "On the free agent list published 2003-07-01. No 2003-04 salary scheduled; no qualifying offer or cap hold is priced here."
+     "notes": "Contract expires June 30, 2003. The free-agent list published 2003-07-01 is used only to identify expiring contracts; no qualifying-offer or cap-hold decision is implied.",
+     "rfa_eligible": null
     },
     {
      "player": "Tyronn Lue",
@@ -15419,7 +15528,7 @@
       "amount": 587435,
       "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      },
-     "basis": "signed_elsewhere_after_june_2003",
+     "basis": "unresolved_at_checkpoint",
      "sources": [
       "https://www.eskimo.com/~pbender/misc/salaries03.txt"
      ],
@@ -15427,7 +15536,7 @@
       "amount": 709020,
       "method": "prior constant raise, unverified"
      },
-     "notes": "Signed a new contract after June 30, 2003 according to the transaction record. Whether a contract year or option existed on 2003-06-26 is not established."
+     "notes": "No 2003-04 commitment could be established from sources dated on or before the checkpoint. How the player's status resolves is a simulated event."
     }
    ],
    "draft_rights": [
@@ -15479,8 +15588,7 @@
     "under_contract": 3,
     "under_rookie_contract": 5,
     "under_contract_unverified": 1,
-    "free_agent_restricted": 1,
-    "free_agent_unrestricted": 2,
+    "free_agent_expiring": 3,
     "free_agent_unlisted": 1,
     "expired_or_unresolved": 2
    },
@@ -15673,5 +15781,6 @@
     }
    ]
   }
- }
+ },
+ "sanitized_for_checkpoint": "2003-06-26"
 }

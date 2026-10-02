@@ -24,3 +24,15 @@ The draft-class dataset establishes where the 2003 draftees' rights sit after dr
 ## Images
 
 The datasets include Wikimedia image URLs and license metadata when available. Player cards may reference those fields. Do not invent a photo where the source field is null.
+
+## Contracts and the cap (league-wide)
+
+| File | Snapshot | Primary use |
+|---|---|---|
+| `nba_2003_contracts.json` | Every club's contracts, options, draft holds and dead money on June 26, 2003, scheduled through 2010-11 | League-wide cap ledgers (`runtime/contracts.py`) |
+| `nba_2003_expiring_contracts.json` | 128 contracts expiring June 30, 2003 | The free-agent pool; `rfa_eligible` is eligibility only |
+| `nba_2003_contracts_import_report.json` | What the import removed or recast, and residual risks | Audit |
+| `../../<year>/league/nba_<YYYY>_<YY>_cap_rules.json` | Cap, tax line, exceptions, salary minimums and maximums for 2003-04 through 2013-14; rookie scale for 2003 | Rules each front office applies |
+
+The raw uploads were imported once with `scripts/import_contracts.py`, which removed everything dated after the checkpoint: eight post-June 30 signing notes, the June 27 trade, and a release dated October 2003. It also recast "restricted" free-agent marks as eligibility, because a qualifying offer is a June 30 club decision the simulation makes. Miami's sheet in `00_Team/Finances` stays authoritative for Miami. Cap figures are usable by a front office only from their recorded publication date (`league_cap_history.json`); 2003-04 becomes live on July 15, 2003, and later seasons stay reference-only until their dates are researched.
+
