@@ -77,21 +77,71 @@
   "term": "three seasons plus a team option for a fourth, exercised by October 31 after the second season",
   "unsigned_first_round_hold": "100% of scale unless a verbal agreement is higher",
   "unsigned_second_round_hold": "none",
-  "source": "Q38, Q41"
+  "source": "Q38, Q41",
+  "raise_percent_note": "The scale fixes years two and three at 107.5% and 115% of year one (see the pick table in nba_2003_04_cap_rules.json); the 10% figure is not a negotiable raise.",
+  "fourth_year_option_deadline": "October 31 after the player's second season (Q38): for a 2003 draftee, October 31, 2005."
  },
  "unverified": [
   "A separate cap-hold rule for players coming off minimum-salary contracts (not found in the FAQ; the standard percentages are applied and flagged).",
-  "Any rule tying a cap hold to a pending qualifying offer or offer sheet (not found in the FAQ).",
-  "The 105% maximum rule and the mid-level-equals-average rule are cited to FAQ Questions 22 and 10 but their text is not in the extract file."
+  "Any rule tying a cap hold to a pending qualifying offer or offer sheet (not found in the FAQ)."
  ],
  "maximum_salary": {
   "rule": "The greater of the maximum for the player's years of service and 105% of his previous salary.",
-  "source": "FAQ Question 22, as cited by library/2003/league/nba_2003_free_agent_rights.json; the quoted FAQ text is not yet in the extract file"
+  "source": "FAQ Question 22; confirmed by the July 15, 2003 cap announcement (ESPN: Kidd's maximum was 30 percent of the cap, $13.152 million, with 12.5 percent raises) and by docs/research/cba_1999_rules.md"
  },
  "average_salary": {
   "2003-04_threshold": 4917000,
   "rule": "The mid-level exception equals the average salary, so the 2003-04 mid-level ($4,917,000) is the above/below-average line for cap holds. Salaries between $4,546,000 and $4,917,000 are flagged.",
-  "source": "FAQ Question 10, as cited by the rights file; the quoted FAQ text is not yet in the extract file"
+  "source": "FAQ Question 10; confirmed by the July 15, 2003 cap announcement, which ties the $4,917,000 average salary to the full mid-level exception (docs/research/cba_1999_rules.md)"
  },
- "minimum_salary_scale": "library/2003/league/nba_1999_cba_minimum_salary_scale.json (FAQ Question 9)"
+ "minimum_salary_scale": "library/2003/league/nba_1999_cba_minimum_salary_scale.json (FAQ Question 9)",
+ "calendar": "library/2003/league/nba_2003_04_calendar.json (moratorium July 1-15, 2003; cap published July 15; first signings July 16; trade deadline February 19, 2004)",
+ "trades": {
+  "matching_over_cap": {
+   "incoming_max_percent_of_outgoing": 115,
+   "plus_dollars": 100000,
+   "status": "reported for 1999 (Mark Cuban, July 2004: within 15 percent plus 100k); the 2005 agreement raised it to 125%",
+   "source": "docs/research/cba_1999_rules.md"
+  },
+  "base_year_compensation": {
+   "applies_when": "re-signed with Bird or Early Bird rights at a raise over 20% by a club over the cap",
+   "outgoing_value": "greater of 50% of the new salary and the previous salary",
+   "duration": "through the first season (inferred for 1999)",
+   "source": "docs/research/cba_1999_rules.md"
+  },
+  "newly_signed_free_agent_restriction": {
+   "rule": "not tradable for three months or until December 15, whichever is later",
+   "status": "inferred for 1999 (modern rule believed unchanged)"
+  },
+  "signed_first_round_pick_restriction_days": {
+   "days": 30,
+   "status": "inferred"
+  },
+  "cash_per_season_max": {
+   "amount": 3000000,
+   "status": "reported as unchanged across agreements (inferred for 1999)"
+  },
+  "stepien_rule": "A club may not leave itself without a first-round pick in consecutive future drafts (Wikipedia, Ted Stepien).",
+  "trade_bonus_max_percent_of_remaining_salary": {
+   "percent": 15,
+   "status": "inferred for 1999"
+  },
+  "sign_and_trade_min_seasons": 3,
+  "roster_max_after_trade": 15,
+  "deadline_2003_04": "2004-02-19 15:00 America/New_York"
+ },
+ "luxury_tax": {
+  "rate": "$1 per $1 over the line, computed on final team salary after the season",
+  "line_2002_03": 52880000,
+  "line_2003_04_projection_july_2003": 57000000,
+  "line_2003_04_actual_after_season": 54556722,
+  "escrow_percent": 10,
+  "source": "ESPN, July 15, 2003; Wikipedia, Luxury tax (sports); docs/research/cba_1999_rules.md",
+  "live_use": "Plan against the projection until the computation date in nba_2003_04_calendar.json."
+ },
+ "extensions": {
+  "rookie_scale": "from the end of the third season through October 31 of the fourth; up to six new seasons (inferred for 1999 from 2001 examples)",
+  "veteran": "from the third anniversary of signing for contracts of four or more seasons; remaining plus new seasons at most six (inferred)",
+  "status": "inferred; docs/research/cba_1999_rules.md"
+ }
 }

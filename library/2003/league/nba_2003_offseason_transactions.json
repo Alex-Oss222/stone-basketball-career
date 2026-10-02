@@ -1,0 +1,2265 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2003-04",
+ "kind": "offseason_transactions",
+ "window": {
+  "from": "2003-06-23",
+  "to": "2003-12-01"
+ },
+ "usage": "World data (option D): real free-agent signings, offer sheets, matches, trades and waivers of the 2003 offseason, dated. A free agent simulated Miami has not signed by his date joins his real club then. Rows with involves_miami are real Miami transactions, skipped by rule 1; they remain as the alternatives Miami competed against. Miami's front office never reads a row before its date.",
+ "evidence_key": {
+  "V": "read in a period source",
+  "S": "search snippet only; amount unverified",
+  "I": "inferred"
+ },
+ "sources": "library/2003/league/nba_2003_offseason_market_research.md (source keys)",
+ "cap_context": {
+  "salary_cap": 43840000,
+  "mid_level": 4917000,
+  "million_dollar_exception": 1500000,
+  "minimum_team_salary": 32880000,
+  "tax_line_2002_03": 52880000,
+  "tax_line_2003_04_projection": 57000000,
+  "published": "2003-07-15"
+ },
+ "signings": [
+  {
+   "date": "2003-07-16",
+   "kind": "signing",
+   "player": "Alonzo Mourning",
+   "bbr_id": "mournal01",
+   "from": "Miami Heat",
+   "to": "New Jersey Nets",
+   "years": 4,
+   "total": 22000000,
+   "note": "mid-level sized; July 11 report said $20M",
+   "evidence": "V",
+   "sources": "SB, ZO",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "signing",
+   "player": "Amal McCaskill",
+   "bbr_id": "mccasam01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "offer_sheet",
+   "player": "Andre Miller",
+   "bbr_id": "millean02",
+   "from": "Los Angeles Clippers",
+   "to": "Denver Nuggets",
+   "years": 6,
+   "total": 51170000,
+   "note": "plus $4.5M bonuses, $10M signing bonus, $14M up front; Clippers declined; signed August 1",
+   "evidence": "V",
+   "sources": "AMILL, MM, BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Andrew DeClercq",
+   "bbr_id": "declean01",
+   "from": "Orlando Magic",
+   "to": "Orlando Magic",
+   "years": 2,
+   "total": 5000000,
+   "note": "date not logged",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "offer_sheet",
+   "player": "Corey Maggette",
+   "bbr_id": "maggeco01",
+   "from": "Los Angeles Clippers",
+   "to": "Utah Jazz",
+   "years": 6,
+   "total": 42000000,
+   "note": "$42M ($45M per AP), front-loaded; Clippers matched within 15 days (date not found)",
+   "evidence": "V",
+   "sources": "JAZZ, MATCH, SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Corie Blount",
+   "bbr_id": "blounco01",
+   "from": "Chicago Bulls",
+   "to": "Chicago Bulls",
+   "years": 2,
+   "total": 3400000,
+   "note": "date not logged",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "signing",
+   "player": "Damon Jones",
+   "bbr_id": "jonesda01",
+   "from": "Sacramento Kings",
+   "to": "Milwaukee Bucks",
+   "years": null,
+   "total": null,
+   "note": "date not logged",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Derrick Coleman",
+   "bbr_id": "colemde01",
+   "from": "Philadelphia 76ers",
+   "to": "Philadelphia 76ers",
+   "years": 2,
+   "total": 10000000,
+   "note": "$10M to $12M; date not logged",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "offer_sheet",
+   "player": "Elton Brand",
+   "bbr_id": "brandel01",
+   "from": "Los Angeles Clippers",
+   "to": "Miami Heat",
+   "years": 6,
+   "total": 82200000,
+   "note": "Miami offer sheet (Heat side reported $84.2M); matched by the Clippers July 19",
+   "evidence": "V",
+   "sources": "BRAND, MATCH, SB",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "signing",
+   "player": "Gary Payton",
+   "bbr_id": "paytoga01",
+   "from": "Milwaukee Bucks",
+   "to": "Los Angeles Lakers",
+   "years": 2,
+   "total": 10325700,
+   "note": "full mid-level start $4.917M; total per Spotrac snippet",
+   "evidence": "V/S",
+   "sources": "SB, PAY, SPOT",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Jake Voskuhl",
+   "bbr_id": "voskuja01",
+   "from": "Phoenix Suns",
+   "to": "Phoenix Suns",
+   "years": 3,
+   "total": 5000000,
+   "note": "date not logged",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Jason Kidd",
+   "bbr_id": "kiddja01",
+   "from": "New Jersey Nets",
+   "to": "New Jersey Nets",
+   "years": 6,
+   "total": 103670000,
+   "note": "agreed July 11 at $99M, raised to $103.67M by the cap figure (30% maximum, 12.5% raises)",
+   "evidence": "V",
+   "sources": "KIDD, CAP, SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Jermaine O'Neal",
+   "bbr_id": "onealje01",
+   "from": "Indiana Pacers",
+   "to": "Indiana Pacers",
+   "years": 7,
+   "total": 120000000,
+   "note": "$120M (scoreboard) or $126,588,000 (snippet)",
+   "evidence": "V/S",
+   "sources": "SB, PAC, SHAM",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "signing",
+   "player": "Jerome Moiso",
+   "bbr_id": "moisoje01",
+   "from": "New Orleans Hornets",
+   "to": "Toronto Raptors",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "signing",
+   "player": "Juwan Howard",
+   "bbr_id": "howarju01",
+   "from": "Denver Nuggets",
+   "to": "Orlando Magic",
+   "years": 5,
+   "total": 28000000,
+   "note": "starts at the full mid-level $4.917M; reports range $28M to $38M",
+   "evidence": "V",
+   "sources": "SB, HOW, HOW2",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "signing",
+   "player": "Karl Malone",
+   "bbr_id": "malonka01",
+   "from": "Utah Jazz",
+   "to": "Los Angeles Lakers",
+   "years": 2,
+   "total": 3000000,
+   "note": "$1.5M first year ($1.5M exception)",
+   "evidence": "V",
+   "sources": "SB, MAL",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Kenny Thomas",
+   "bbr_id": "thomake01",
+   "from": "Philadelphia 76ers",
+   "to": "Philadelphia 76ers",
+   "years": 7,
+   "total": 40000000,
+   "note": "restricted; 'over $40M' (scoreboard) or $50,400,500 (snippet)",
+   "evidence": "V/S",
+   "sources": "SB, SHAM",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Kevin Willis",
+   "bbr_id": "willike02",
+   "from": "San Antonio Spurs",
+   "to": "San Antonio Spurs",
+   "years": null,
+   "total": null,
+   "note": "date not logged",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Lucious Harris",
+   "bbr_id": "harrilu01",
+   "from": "New Jersey Nets",
+   "to": "New Jersey Nets",
+   "years": 2,
+   "total": 5000000,
+   "note": "date not logged",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Mark Blount",
+   "bbr_id": "blounma01",
+   "from": "Boston Celtics",
+   "to": "Boston Celtics",
+   "years": null,
+   "total": null,
+   "note": "multiyear; date not logged",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "signing",
+   "player": "Michael Olowokandi",
+   "bbr_id": "olowomi01",
+   "from": "Los Angeles Clippers",
+   "to": "Minnesota Timberwolves",
+   "years": 3,
+   "total": 16200000,
+   "note": "full mid-level for three years",
+   "evidence": "V",
+   "sources": "SB, AMILL",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "signing",
+   "player": "Milt Palacio",
+   "bbr_id": "palacmi01",
+   "from": "Cleveland Cavaliers",
+   "to": "Toronto Raptors",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "P.J. Brown",
+   "bbr_id": "brownpj01",
+   "from": "New Orleans Hornets",
+   "to": "New Orleans Hornets",
+   "years": 4,
+   "total": 34000000,
+   "note": "date not logged",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "signing",
+   "player": "Rasho Nesterovic",
+   "bbr_id": "nestera01",
+   "from": "Minnesota Timberwolves",
+   "to": "San Antonio Spurs",
+   "years": 6,
+   "total": 42000000,
+   "note": "$42M (Stein) or $45M (ESPN scoreboard); Minnesota had offered 7 years $50M+",
+   "evidence": "V",
+   "sources": "ST15, SB, ST13",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Scott Williams",
+   "bbr_id": "willisc01",
+   "from": "Phoenix Suns",
+   "to": "Phoenix Suns",
+   "years": 1,
+   "total": 1000000,
+   "note": "date not logged",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "signing",
+   "player": "Theron Smith",
+   "bbr_id": "smithth01",
+   "from": null,
+   "to": "Memphis Grizzlies",
+   "years": null,
+   "total": null,
+   "note": "undrafted; undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Tim Duncan",
+   "bbr_id": "duncati01",
+   "from": "San Antonio Spurs",
+   "to": "San Antonio Spurs",
+   "years": 7,
+   "total": 122000000,
+   "note": "early termination option after 2007-08",
+   "evidence": "V",
+   "sources": "DUNC, SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "signing",
+   "player": "Tyronn Lue",
+   "bbr_id": "luety01",
+   "from": "Washington Wizards",
+   "to": "Orlando Magic",
+   "years": 2,
+   "total": 3000000,
+   "note": "date not logged",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-16",
+   "kind": "re_sign",
+   "player": "Walter McCarty",
+   "bbr_id": "mccarwa01",
+   "from": "Boston Celtics",
+   "to": "Boston Celtics",
+   "years": null,
+   "total": null,
+   "note": "multiyear; date not logged",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-17",
+   "kind": "signing",
+   "player": "Brian Skinner",
+   "bbr_id": "skinnbr01",
+   "from": "Philadelphia 76ers",
+   "to": "Milwaukee Bucks",
+   "years": 3,
+   "total": 5000000,
+   "note": "",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-17",
+   "kind": "signing",
+   "player": "Daniel Santiago",
+   "bbr_id": "santida01",
+   "from": null,
+   "to": "Milwaukee Bucks",
+   "years": null,
+   "total": null,
+   "note": "from Lottomatica Roma; undisclosed",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-17",
+   "kind": "signing",
+   "player": "Erick Strickland",
+   "bbr_id": "stricer01",
+   "from": "Indiana Pacers",
+   "to": "Milwaukee Bucks",
+   "years": 2,
+   "total": 3100000,
+   "note": "",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-17",
+   "kind": "signing",
+   "player": "Kevin Ollie",
+   "bbr_id": "ollieke01",
+   "from": "Seattle SuperSonics",
+   "to": "Cleveland Cavaliers",
+   "years": 5,
+   "total": 15000000,
+   "note": "",
+   "evidence": "V",
+   "sources": "SB, HOW",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-17",
+   "kind": "signing",
+   "player": "Mengke Bateer",
+   "bbr_id": "bateeme01",
+   "from": "San Antonio Spurs",
+   "to": "Toronto Raptors",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-19",
+   "kind": "signing",
+   "player": "Antonio Daniels",
+   "bbr_id": "daniean01",
+   "from": "Portland Trail Blazers",
+   "to": "Seattle SuperSonics",
+   "years": 3,
+   "total": 7500000,
+   "note": "multiyear; $7.5M per snippet",
+   "evidence": "V/S",
+   "sources": "DAN, SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-19",
+   "kind": "match",
+   "player": "Elton Brand",
+   "bbr_id": "brandel01",
+   "from": "Los Angeles Clippers",
+   "to": "Los Angeles Clippers",
+   "years": 6,
+   "total": 82200000,
+   "note": "Clippers matched Miami's sheet",
+   "evidence": "V",
+   "sources": "MATCH",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-20",
+   "kind": "signing",
+   "player": "Scottie Pippen",
+   "bbr_id": "pippesc01",
+   "from": "Portland Trail Blazers",
+   "to": "Chicago Bulls",
+   "years": 2,
+   "total": 10000000,
+   "note": "mid-level",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-21",
+   "kind": "offer_sheet",
+   "player": "Gilbert Arenas",
+   "bbr_id": "arenagi01",
+   "from": "Golden State Warriors",
+   "to": "Washington Wizards",
+   "years": 6,
+   "total": 64000000,
+   "note": "$64M to $65M; Golden State could not match (Early Bird rights only); registered August 8",
+   "evidence": "V",
+   "sources": "ARENAS, FRIEND, SB, BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-21",
+   "kind": "signing",
+   "player": "Sean Rooks",
+   "bbr_id": "rooksse01",
+   "from": "Los Angeles Clippers",
+   "to": "New Orleans Hornets",
+   "years": 1,
+   "total": null,
+   "note": "one year",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-22",
+   "kind": "signing",
+   "player": "Ira Newble",
+   "bbr_id": "newblir01",
+   "from": "Atlanta Hawks",
+   "to": "Cleveland Cavaliers",
+   "years": null,
+   "total": null,
+   "note": "half of the $4.9M mid-level",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-23",
+   "kind": "signing",
+   "player": "Speedy Claxton",
+   "bbr_id": "claxtsp01",
+   "from": "San Antonio Spurs",
+   "to": "Golden State Warriors",
+   "years": 3,
+   "total": 10000000,
+   "note": "about $10M",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-24",
+   "kind": "signing",
+   "player": "Anthony Johnson",
+   "bbr_id": "johnsan02",
+   "from": "New Jersey Nets",
+   "to": "Indiana Pacers",
+   "years": 1,
+   "total": null,
+   "note": "one year",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-24",
+   "kind": "sign_and_trade",
+   "player": "Brad Miller",
+   "bbr_id": "millebr01",
+   "from": "Indiana Pacers",
+   "to": "Sacramento Kings",
+   "years": 7,
+   "total": 68000000,
+   "note": "signed by Indiana and traded to Sacramento (three-team trade)",
+   "evidence": "V",
+   "sources": "BMILL",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-24",
+   "kind": "signing",
+   "player": "Robert Horry",
+   "bbr_id": "horryro01",
+   "from": "Los Angeles Lakers",
+   "to": "San Antonio Spurs",
+   "years": 2,
+   "total": 9450000,
+   "note": "$4.5M first year; Spurs team option on year two",
+   "evidence": "V",
+   "sources": "HORRY, ST28",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-25",
+   "kind": "signing",
+   "player": "Mike James",
+   "bbr_id": "jamesmi01",
+   "from": "Miami Heat",
+   "to": "Boston Celtics",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-07-26",
+   "kind": "signing",
+   "player": "Elden Campbell",
+   "bbr_id": "campbel01",
+   "from": "Seattle SuperSonics",
+   "to": "Detroit Pistons",
+   "years": 2,
+   "total": 8400000,
+   "note": "about $8.4M",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-26",
+   "kind": "signing",
+   "player": "Eric Piatkowski",
+   "bbr_id": "piatker01",
+   "from": "Los Angeles Clippers",
+   "to": "Houston Rockets",
+   "years": 3,
+   "total": 8000000,
+   "note": "",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-28",
+   "kind": "signing",
+   "player": "Fred Hoiberg",
+   "bbr_id": "hoibefr01",
+   "from": "Chicago Bulls",
+   "to": "Minnesota Timberwolves",
+   "years": 1,
+   "total": null,
+   "note": "one year",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-28",
+   "kind": "signing",
+   "player": "Mark Madsen",
+   "bbr_id": "madsema01",
+   "from": "Los Angeles Lakers",
+   "to": "Minnesota Timberwolves",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-29",
+   "kind": "signing",
+   "player": "Darrell Armstrong",
+   "bbr_id": "armstda01",
+   "from": "Orlando Magic",
+   "to": "New Orleans Hornets",
+   "years": 2,
+   "total": 6000000,
+   "note": "",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-29",
+   "kind": "signing",
+   "player": "Horace Grant",
+   "bbr_id": "grantho01",
+   "from": "Orlando Magic",
+   "to": "Los Angeles Lakers",
+   "years": null,
+   "total": null,
+   "note": "undisclosed; minimum inferred",
+   "evidence": "V/I",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-29",
+   "kind": "signing",
+   "player": "Marquis Daniels",
+   "bbr_id": "daniema01",
+   "from": null,
+   "to": "Dallas Mavericks",
+   "years": 1,
+   "total": null,
+   "note": "undrafted; one year",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-30",
+   "kind": "signing",
+   "player": "Anthony Carter",
+   "bbr_id": "cartean01",
+   "from": "Miami Heat",
+   "to": "San Antonio Spurs",
+   "years": 2,
+   "total": 1500000,
+   "note": "",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-07-31",
+   "kind": "match",
+   "player": "Corey Maggette",
+   "bbr_id": "maggeco01",
+   "from": "Los Angeles Clippers",
+   "to": "Los Angeles Clippers",
+   "years": 6,
+   "total": 42000000,
+   "note": "match date not found; placed at the end of the 15-day window",
+   "evidence": "I",
+   "sources": "MATCH",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-31",
+   "kind": "signing",
+   "player": "Devin Brown",
+   "bbr_id": "brownde02",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-01",
+   "kind": "match_declined",
+   "player": "Andre Miller",
+   "bbr_id": "millean02",
+   "from": "Los Angeles Clippers",
+   "to": "Denver Nuggets",
+   "years": 6,
+   "total": 51170000,
+   "note": "Clippers declined to match; registered August 1",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-02",
+   "kind": "signing",
+   "player": "Samaki Walker",
+   "bbr_id": "walkesa01",
+   "from": "Los Angeles Lakers",
+   "to": "Miami Heat",
+   "years": 1,
+   "total": null,
+   "note": "one year",
+   "evidence": "V",
+   "sources": "SB, BBRMIA",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-08-04",
+   "kind": "signing",
+   "player": "Olden Polynice",
+   "bbr_id": "polynol01",
+   "from": null,
+   "to": "Los Angeles Clippers",
+   "years": 1,
+   "total": null,
+   "note": "one year",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-05",
+   "kind": "re_sign",
+   "player": "Richard Hamilton",
+   "bbr_id": "hamilri01",
+   "from": "Detroit Pistons",
+   "to": "Detroit Pistons",
+   "years": 7,
+   "total": 62000000,
+   "note": "restricted; $62M (scoreboard) or $62,562,500 (snippet)",
+   "evidence": "V/S",
+   "sources": "SB, SHAM",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-06",
+   "kind": "signing",
+   "player": "Michael Ruffin",
+   "bbr_id": "ruffimi01",
+   "from": null,
+   "to": "Utah Jazz",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-06",
+   "kind": "signing",
+   "player": "Udonis Haslem",
+   "bbr_id": "hasleud01",
+   "from": null,
+   "to": "Miami Heat",
+   "years": 2,
+   "total": null,
+   "note": "undrafted; two-year minimum, partially guaranteed (snippet)",
+   "evidence": "V/S",
+   "sources": "BBRMIA, SHAM",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-08-07",
+   "kind": "signing",
+   "player": "Adrian Griffin",
+   "bbr_id": "griffad01",
+   "from": "Dallas Mavericks",
+   "to": "Houston Rockets",
+   "years": 2,
+   "total": 1500000,
+   "note": "",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-08",
+   "kind": "match_declined",
+   "player": "Gilbert Arenas",
+   "bbr_id": "arenagi01",
+   "from": "Golden State Warriors",
+   "to": "Washington Wizards",
+   "years": 6,
+   "total": 64000000,
+   "note": "Warriors unable to match; registered August 8",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-08",
+   "kind": "signing",
+   "player": "John Wallace",
+   "bbr_id": "wallajo01",
+   "from": null,
+   "to": "Miami Heat",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBRMIA",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-08-08",
+   "kind": "signing",
+   "player": "Loren Woods",
+   "bbr_id": "woodslo01",
+   "from": "Minnesota Timberwolves",
+   "to": "Miami Heat",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBRMIA",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-08-09",
+   "kind": "signing",
+   "player": "James Posey",
+   "bbr_id": "poseyja01",
+   "from": "Houston Rockets",
+   "to": "Memphis Grizzlies",
+   "years": 4,
+   "total": 23000000,
+   "note": "restricted; reported $23M",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-11",
+   "kind": "offer_sheet",
+   "player": "Lamar Odom",
+   "bbr_id": "odomla01",
+   "from": "Los Angeles Clippers",
+   "to": "Miami Heat",
+   "years": 6,
+   "total": 65000000,
+   "note": "'almost $67M' (scoreboard) or $63.6M (snippet); Clippers declined August 25; signed August 26",
+   "evidence": "V/S",
+   "sources": "SB, ST09, BBRMIA, SHAM",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-08-13",
+   "kind": "signing",
+   "player": "Eddie House",
+   "bbr_id": "houseed01",
+   "from": "Miami Heat",
+   "to": "Los Angeles Clippers",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-08-13",
+   "kind": "signing",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": "Chicago Bulls",
+   "to": "Toronto Raptors",
+   "years": null,
+   "total": null,
+   "note": "undisclosed; later to the Clippers September 30",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-15",
+   "kind": "signing",
+   "player": "Anthony Peeler",
+   "bbr_id": "peelean01",
+   "from": "Milwaukee Bucks",
+   "to": "Sacramento Kings",
+   "years": 1,
+   "total": null,
+   "note": "waived by Milwaukee July 7",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-18",
+   "kind": "signing",
+   "player": "Earl Boykins",
+   "bbr_id": "boykiea01",
+   "from": "Golden State Warriors",
+   "to": "Denver Nuggets",
+   "years": 5,
+   "total": 13700000,
+   "note": "",
+   "evidence": "V",
+   "sources": "SB",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-19",
+   "kind": "rookie_signing",
+   "player": "Dwyane Wade",
+   "bbr_id": null,
+   "from": null,
+   "to": "Miami Heat",
+   "years": 3,
+   "total": null,
+   "note": "rookie scale, No. 5 pick (real Miami; the career's Wade signs by simulation)",
+   "evidence": "V",
+   "sources": "BBRMIA",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-08-19",
+   "kind": "signing",
+   "player": "Jon Barry",
+   "bbr_id": "barryjo01",
+   "from": "Detroit Pistons",
+   "to": "Denver Nuggets",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-20",
+   "kind": "signing",
+   "player": "Kendall Gill",
+   "bbr_id": "gillke01",
+   "from": "Minnesota Timberwolves",
+   "to": "Chicago Bulls",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-21",
+   "kind": "re_sign",
+   "player": "Reggie Miller",
+   "bbr_id": "millere01",
+   "from": "Indiana Pacers",
+   "to": "Indiana Pacers",
+   "years": 3,
+   "total": 16500000,
+   "note": "date approximate; amount from a snippet",
+   "evidence": "S",
+   "sources": "PAC, DES",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-22",
+   "kind": "signing",
+   "player": "Tony Massenburg",
+   "bbr_id": "masseto01",
+   "from": "Utah Jazz",
+   "to": "Sacramento Kings",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-22",
+   "kind": "signing",
+   "player": "Travis Best",
+   "bbr_id": "besttr01",
+   "from": "Miami Heat",
+   "to": "Dallas Mavericks",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-08-25",
+   "kind": "signing",
+   "player": "Chris Whitney",
+   "bbr_id": "whitnch01",
+   "from": "Orlando Magic",
+   "to": "Washington Wizards",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-25",
+   "kind": "match_declined",
+   "player": "Lamar Odom",
+   "bbr_id": "odomla01",
+   "from": "Los Angeles Clippers",
+   "to": "Miami Heat",
+   "years": 6,
+   "total": 65000000,
+   "note": "Clippers declined to match Miami's sheet",
+   "evidence": "V",
+   "sources": "ST09, BBRMIA",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-08-27",
+   "kind": "signing",
+   "player": "Calbert Cheaney",
+   "bbr_id": "cheanca01",
+   "from": "Utah Jazz",
+   "to": "Golden State Warriors",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-04",
+   "kind": "signing",
+   "player": "Jacque Vaughn",
+   "bbr_id": "vaughja01",
+   "from": "Orlando Magic",
+   "to": "Atlanta Hawks",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-04",
+   "kind": "signing",
+   "player": "Rafer Alston",
+   "bbr_id": "alstora01",
+   "from": "Toronto Raptors",
+   "to": "Miami Heat",
+   "years": null,
+   "total": null,
+   "note": "undisclosed; a short deal (he was a free agent again in 2004)",
+   "evidence": "V/I",
+   "sources": "BBRMIA",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-09-11",
+   "kind": "offer_sheet",
+   "player": "Jason Terry",
+   "bbr_id": "terryja01",
+   "from": "Atlanta Hawks",
+   "to": "Utah Jazz",
+   "years": 3,
+   "total": 22500000,
+   "note": "Utah offer sheet; Atlanta matched September 25 (snippet dates)",
+   "evidence": "S",
+   "sources": "WP Jason_Terry, SHAM",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-12",
+   "kind": "signing",
+   "player": "Voshon Lenard",
+   "bbr_id": "lenarvo01",
+   "from": "Toronto Raptors",
+   "to": "Denver Nuggets",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-19",
+   "kind": "signing",
+   "player": "Kenny Anderson",
+   "bbr_id": "anderke01",
+   "from": "New Orleans Hornets",
+   "to": "Indiana Pacers",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-20",
+   "kind": "signing",
+   "player": "Mark Pope",
+   "bbr_id": "popema01",
+   "from": "New York Knicks",
+   "to": "Denver Nuggets",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-23",
+   "kind": "signing",
+   "player": "Bimbo Coles",
+   "bbr_id": "colesbi01",
+   "from": "Boston Celtics",
+   "to": "Miami Heat",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBRMIA",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-09-23",
+   "kind": "signing",
+   "player": "Darvin Ham",
+   "bbr_id": "hamda01",
+   "from": "Atlanta Hawks",
+   "to": "Detroit Pistons",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-23",
+   "kind": "signing",
+   "player": "Donnell Harvey",
+   "bbr_id": "harvedo01",
+   "from": "Denver Nuggets",
+   "to": "Orlando Magic",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-25",
+   "kind": "match",
+   "player": "Jason Terry",
+   "bbr_id": "terryja01",
+   "from": "Atlanta Hawks",
+   "to": "Atlanta Hawks",
+   "years": 3,
+   "total": 22500000,
+   "note": "Atlanta matched (snippet)",
+   "evidence": "S",
+   "sources": "WP Jason_Terry, SHAM",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-26",
+   "kind": "signing",
+   "player": "Raja Bell",
+   "bbr_id": "bellra01",
+   "from": "Dallas Mavericks",
+   "to": "Utah Jazz",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-27",
+   "kind": "signing",
+   "player": "Bobby Simmons",
+   "bbr_id": "simmobo01",
+   "from": "Washington Wizards",
+   "to": "Los Angeles Clippers",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-29",
+   "kind": "signing",
+   "player": "Alton Ford",
+   "bbr_id": "fordal02",
+   "from": null,
+   "to": "Orlando Magic",
+   "years": null,
+   "total": null,
+   "note": "camp deal",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-29",
+   "kind": "signing",
+   "player": "Dan Langhi",
+   "bbr_id": "langhda01",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "years": null,
+   "total": null,
+   "note": "camp deal",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-29",
+   "kind": "signing",
+   "player": "Sean Marks",
+   "bbr_id": "marksse01",
+   "from": "Miami Heat",
+   "to": "San Antonio Spurs",
+   "years": null,
+   "total": null,
+   "note": "camp deal; waived October 31",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-09-29",
+   "kind": "signing",
+   "player": "Shammond Williams",
+   "bbr_id": "willish01",
+   "from": null,
+   "to": "Orlando Magic",
+   "years": null,
+   "total": null,
+   "note": "camp deal",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-29",
+   "kind": "signing",
+   "player": "Tracy Murray",
+   "bbr_id": "murratr01",
+   "from": "Los Angeles Lakers",
+   "to": "Portland Trail Blazers",
+   "years": null,
+   "total": null,
+   "note": "camp deal",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-30",
+   "kind": "signing",
+   "player": "Jim Jackson",
+   "bbr_id": "jacksji01",
+   "from": "Sacramento Kings",
+   "to": "Houston Rockets",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-30",
+   "kind": "signing",
+   "player": "Lee Nailon",
+   "bbr_id": "nailole01",
+   "from": "New York Knicks",
+   "to": "Atlanta Hawks",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-01",
+   "kind": "signing",
+   "player": "Bryon Russell",
+   "bbr_id": "russebr01",
+   "from": "Washington Wizards",
+   "to": "Los Angeles Lakers",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-01",
+   "kind": "signing",
+   "player": "DerMarr Johnson",
+   "bbr_id": "johnsde03",
+   "from": "Atlanta Hawks",
+   "to": "Phoenix Suns",
+   "years": null,
+   "total": null,
+   "note": "waived October 16",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-03",
+   "kind": "signing",
+   "player": "Stephen Jackson",
+   "bbr_id": "jacksst02",
+   "from": "San Antonio Spurs",
+   "to": "Atlanta Hawks",
+   "years": 2,
+   "total": null,
+   "note": "two years; $2.1M per a doubtful snippet",
+   "evidence": "V/S",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-09",
+   "kind": "signing",
+   "player": "Dikembe Mutombo",
+   "bbr_id": "mutomdi01",
+   "from": "New Jersey Nets",
+   "to": "New York Knicks",
+   "years": 2,
+   "total": null,
+   "note": "after a New Jersey buyout (waived October 7)",
+   "evidence": "V/S",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-10",
+   "kind": "signing",
+   "player": "Glen Rice",
+   "bbr_id": "ricegl01",
+   "from": "Utah Jazz",
+   "to": "Los Angeles Clippers",
+   "years": null,
+   "total": null,
+   "note": "waived by Utah after the September 30 trade",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-23",
+   "kind": "signing",
+   "player": "Vladimir Stepania",
+   "bbr_id": "stepavl01",
+   "from": "Miami Heat",
+   "to": "Portland Trail Blazers",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-10-28",
+   "kind": "signing",
+   "player": "Scott Padgett",
+   "bbr_id": "padgesc01",
+   "from": "Utah Jazz",
+   "to": "Houston Rockets",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-28",
+   "kind": "signing",
+   "player": "Trenton Hassell",
+   "bbr_id": "hassetr01",
+   "from": "Chicago Bulls",
+   "to": "Minnesota Timberwolves",
+   "years": null,
+   "total": null,
+   "note": "waived by Chicago October 23",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-29",
+   "kind": "signing",
+   "player": "Steve Smith",
+   "bbr_id": "smithst01",
+   "from": "San Antonio Spurs",
+   "to": "New Orleans Hornets",
+   "years": null,
+   "total": null,
+   "note": "undisclosed",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-11-03",
+   "kind": "signing",
+   "player": "Kirk Penney",
+   "bbr_id": "penneki01",
+   "from": null,
+   "to": "Miami Heat",
+   "years": null,
+   "total": null,
+   "note": "waived November 7",
+   "evidence": "V",
+   "sources": "BBRMIA",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-11-07",
+   "kind": "signing",
+   "player": "Tyrone Hill",
+   "bbr_id": "hillty01",
+   "from": "Philadelphia 76ers",
+   "to": "Miami Heat",
+   "years": null,
+   "total": null,
+   "note": "waived December 1",
+   "evidence": "V",
+   "sources": "BBRMIA",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-12-01",
+   "kind": "signing",
+   "player": "Wang Zhizhi",
+   "bbr_id": "zhizhwa01",
+   "from": "Los Angeles Clippers",
+   "to": "Miami Heat",
+   "years": null,
+   "total": null,
+   "note": "",
+   "evidence": "V",
+   "sources": "BBRMIA",
+   "involves_miami": true
+  }
+ ],
+ "trades": [
+  {
+   "date": "2003-06-23",
+   "clubs": {
+    "Dallas Mavericks": {
+     "out": [
+      "Xue Yuyang (draft rights)"
+     ],
+     "in": [
+      "2004 2nd-round pick"
+     ]
+    },
+    "Denver Nuggets": {
+     "out": [
+      "2004 2nd-round pick"
+     ],
+     "in": [
+      "Xue Yuyang (draft rights)"
+     ]
+    }
+   },
+   "mechanism": "draft rights",
+   "evidence": "V",
+   "sources": "BBR03",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-06-25",
+   "clubs": {
+    "Boston Celtics": {
+     "out": [
+      "Darius Songaila (draft rights)"
+     ],
+     "in": [
+      "Brandon Hunter (2003 2nd)",
+      "2005 2nd-round pick"
+     ]
+    },
+    "Sacramento Kings": {
+     "out": [
+      "Brandon Hunter (2003 2nd)",
+      "2005 2nd-round pick"
+     ],
+     "in": [
+      "Darius Songaila (draft rights)"
+     ]
+    }
+   },
+   "mechanism": "draft rights",
+   "evidence": "V",
+   "sources": "BBR03",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-06-26",
+   "clubs": {
+    "Chicago Bulls": {
+     "out": [
+      "Matt Bonner (draft rights)"
+     ],
+     "in": [
+      "2004 2nd-round pick"
+     ]
+    },
+    "Toronto Raptors": {
+     "out": [
+      "2004 2nd-round pick"
+     ],
+     "in": [
+      "Matt Bonner (draft rights)"
+     ]
+    }
+   },
+   "mechanism": "draft night",
+   "evidence": "V",
+   "sources": "BBR03",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-06-26",
+   "clubs": {
+    "New Jersey Nets": {
+     "out": [
+      "Kyle Korver (draft rights)"
+     ],
+     "in": [
+      "cash"
+     ]
+    },
+    "Philadelphia 76ers": {
+     "out": [
+      "cash"
+     ],
+     "in": [
+      "Kyle Korver (draft rights)"
+     ]
+    }
+   },
+   "mechanism": "draft night, cash",
+   "evidence": "V",
+   "sources": "BBR03",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-06-26",
+   "clubs": {
+    "Boston Celtics": {
+     "out": [
+      "Troy Bell (draft rights)",
+      "Dahntay Jones (draft rights)"
+     ],
+     "in": [
+      "Marcus Banks (draft rights)",
+      "Kendrick Perkins (draft rights)"
+     ]
+    },
+    "Memphis Grizzlies": {
+     "out": [
+      "Marcus Banks (draft rights)",
+      "Kendrick Perkins (draft rights)"
+     ],
+     "in": [
+      "Troy Bell (draft rights)",
+      "Dahntay Jones (draft rights)"
+     ]
+    }
+   },
+   "mechanism": "draft night",
+   "evidence": "V",
+   "sources": "BBR03",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-06-26",
+   "clubs": {
+    "Philadelphia 76ers": {
+     "out": [
+      "Paccelis Morlende (draft rights)"
+     ],
+     "in": [
+      "Willie Green (draft rights)"
+     ]
+    },
+    "Seattle SuperSonics": {
+     "out": [
+      "Willie Green (draft rights)"
+     ],
+     "in": [
+      "Paccelis Morlende (draft rights)"
+     ]
+    }
+   },
+   "mechanism": "draft night",
+   "evidence": "V",
+   "sources": "BBR03",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-06-26",
+   "clubs": {
+    "Phoenix Suns": {
+     "out": [
+      "2005 1st-round pick"
+     ],
+     "in": [
+      "Leandro Barbosa (draft rights)"
+     ]
+    },
+    "San Antonio Spurs": {
+     "out": [
+      "Leandro Barbosa (draft rights)"
+     ],
+     "in": [
+      "2005 1st-round pick"
+     ]
+    }
+   },
+   "mechanism": "draft night",
+   "evidence": "V",
+   "sources": "BBR03",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-06-26",
+   "clubs": {
+    "Milwaukee Bucks": {
+     "out": [
+      "Keith Bogans (draft rights)"
+     ],
+     "in": [
+      "cash"
+     ]
+    },
+    "Orlando Magic": {
+     "out": [
+      "cash"
+     ],
+     "in": [
+      "Keith Bogans (draft rights)"
+     ]
+    }
+   },
+   "mechanism": "draft night, cash",
+   "evidence": "V",
+   "sources": "BBR03",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-06-27",
+   "clubs": {
+    "Milwaukee Bucks": {
+     "out": [
+      "Sam Cassell",
+      "Ervin Johnson"
+     ],
+     "in": [
+      "Anthony Peeler",
+      "Joe Smith"
+     ]
+    },
+    "Minnesota Timberwolves": {
+     "out": [
+      "Anthony Peeler",
+      "Joe Smith"
+     ],
+     "in": [
+      "Sam Cassell",
+      "Ervin Johnson"
+     ]
+    }
+   },
+   "mechanism": "salary matching; Peeler waived July 7",
+   "evidence": "V",
+   "sources": "BBR03, PAY",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-23",
+   "clubs": {
+    "Atlanta Hawks": {
+     "out": [
+      "Glenn Robinson",
+      "2006 2nd-round pick"
+     ],
+     "in": [
+      "Terrell Brandon",
+      "Randy Holcomb",
+      "conditional 2007 1st-round pick (became cash)"
+     ]
+    },
+    "Philadelphia 76ers": {
+     "out": [
+      "Keith Van Horn",
+      "Randy Holcomb",
+      "conditional 2007 1st-round pick"
+     ],
+     "in": [
+      "Glenn Robinson",
+      "Marc Jackson",
+      "2006 2nd-round pick"
+     ]
+    },
+    "Minnesota Timberwolves": {
+     "out": [
+      "Terrell Brandon",
+      "Marc Jackson"
+     ],
+     "in": [
+      "Latrell Sprewell"
+     ]
+    },
+    "New York Knicks": {
+     "out": [
+      "Latrell Sprewell"
+     ],
+     "in": [
+      "Keith Van Horn"
+     ]
+    }
+   },
+   "mechanism": "four-team salary match; Brandon's insured contract was Atlanta's asset",
+   "evidence": "V",
+   "sources": "FOUR, BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-24",
+   "clubs": {
+    "Indiana Pacers": {
+     "out": [
+      "Brad Miller (sign-and-trade)",
+      "Ron Mercer"
+     ],
+     "in": [
+      "Scot Pollard",
+      "Danny Ferry"
+     ]
+    },
+    "Sacramento Kings": {
+     "out": [
+      "Scot Pollard",
+      "Hedo Turkoglu"
+     ],
+     "in": [
+      "Brad Miller"
+     ]
+    },
+    "San Antonio Spurs": {
+     "out": [
+      "Danny Ferry"
+     ],
+     "in": [
+      "Hedo Turkoglu",
+      "Ron Mercer"
+     ]
+    }
+   },
+   "mechanism": "three-team sign-and-trade; Spurs absorbed salary into room",
+   "evidence": "V",
+   "sources": "BMILL, BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-07-29",
+   "clubs": {
+    "Boston Celtics": {
+     "out": [
+      "J.R. Bremer",
+      "Bruno Sundov",
+      "2005 2nd-round pick"
+     ],
+     "in": [
+      "Jumaine Jones"
+     ]
+    },
+    "Cleveland Cavaliers": {
+     "out": [
+      "Jumaine Jones"
+     ],
+     "in": [
+      "J.R. Bremer",
+      "Bruno Sundov",
+      "2005 2nd-round pick"
+     ]
+    }
+   },
+   "mechanism": "Jones was a Cleveland restricted free agent; sign-and-trade likely (unverified)",
+   "evidence": "V/I",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-05",
+   "clubs": {
+    "Sacramento Kings": {
+     "out": [
+      "Keon Clark",
+      "2004 2nd-round pick",
+      "2007 2nd-round pick"
+     ],
+     "in": [
+      "2004 2nd-round pick"
+     ]
+    },
+    "Utah Jazz": {
+     "out": [
+      "2004 2nd-round pick"
+     ],
+     "in": [
+      "Keon Clark",
+      "2004 2nd-round pick",
+      "2007 2nd-round pick"
+     ]
+    }
+   },
+   "mechanism": "tax dump into Utah's room",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-18",
+   "clubs": {
+    "Dallas Mavericks": {
+     "out": [
+      "Evan Eschmeyer",
+      "Avery Johnson",
+      "Popeye Jones",
+      "Antoine Rigaudeau",
+      "Nick Van Exel"
+     ],
+     "in": [
+      "Danny Fortson",
+      "Antawn Jamison",
+      "Chris Mills",
+      "Jiri Welsch"
+     ]
+    },
+    "Golden State Warriors": {
+     "out": [
+      "Danny Fortson",
+      "Antawn Jamison",
+      "Chris Mills",
+      "Jiri Welsch"
+     ],
+     "in": [
+      "Evan Eschmeyer",
+      "Avery Johnson",
+      "Popeye Jones",
+      "Antoine Rigaudeau",
+      "Nick Van Exel"
+     ]
+    }
+   },
+   "mechanism": "nine-player salary match",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-21",
+   "clubs": {
+    "Detroit Pistons": {
+     "out": [
+      "Clifford Robinson",
+      "Pepe Sanchez"
+     ],
+     "in": [
+      "Bob Sura"
+     ]
+    },
+    "Golden State Warriors": {
+     "out": [
+      "Bob Sura"
+     ],
+     "in": [
+      "Clifford Robinson",
+      "Pepe Sanchez"
+     ]
+    }
+   },
+   "mechanism": "salary match",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-08-28",
+   "clubs": {
+    "Detroit Pistons": {
+     "out": [
+      "Michael Curry"
+     ],
+     "in": [
+      "Lindsey Hunter"
+     ]
+    },
+    "Toronto Raptors": {
+     "out": [
+      "Lindsey Hunter"
+     ],
+     "in": [
+      "Michael Curry"
+     ]
+    }
+   },
+   "mechanism": "salary match",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-28",
+   "clubs": {
+    "Los Angeles Clippers": {
+     "out": [
+      "2004 2nd-round pick"
+     ],
+     "in": [
+      "Predrag Drobnjak"
+     ]
+    },
+    "Seattle SuperSonics": {
+     "out": [
+      "Predrag Drobnjak"
+     ],
+     "in": [
+      "2004 2nd-round pick"
+     ]
+    }
+   },
+   "mechanism": "into the Clippers' remaining room (inferred)",
+   "evidence": "V/I",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-30",
+   "clubs": {
+    "Houston Rockets": {
+     "out": [
+      "Glen Rice",
+      "three 2nd-round picks"
+     ],
+     "in": [
+      "John Amaechi",
+      "2004 2nd-round pick",
+      "trade exception"
+     ]
+    },
+    "Utah Jazz": {
+     "out": [
+      "John Amaechi",
+      "2004 2nd-round pick"
+     ],
+     "in": [
+      "Glen Rice",
+      "three 2nd-round picks"
+     ]
+    }
+   },
+   "mechanism": "Utah absorbed Rice into room and later waived him",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-09-30",
+   "clubs": {
+    "Memphis Grizzlies": {
+     "out": [
+      "Robert Archibald",
+      "Brevin Knight",
+      "Cezary Trybanski"
+     ],
+     "in": [
+      "Bo Outlaw",
+      "Jake Tsakalidis"
+     ]
+    },
+    "Phoenix Suns": {
+     "out": [
+      "Bo Outlaw",
+      "Jake Tsakalidis"
+     ],
+     "in": [
+      "Robert Archibald",
+      "Brevin Knight",
+      "Cezary Trybanski"
+     ]
+    }
+   },
+   "mechanism": "salary match",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-20",
+   "clubs": {
+    "Boston Celtics": {
+     "out": [
+      "Antoine Walker",
+      "Tony Delk"
+     ],
+     "in": [
+      "Raef LaFrentz",
+      "Chris Mills",
+      "Jiri Welsch",
+      "2004 1st-round pick"
+     ]
+    },
+    "Dallas Mavericks": {
+     "out": [
+      "Raef LaFrentz",
+      "Chris Mills",
+      "Jiri Welsch",
+      "2004 1st-round pick"
+     ],
+     "in": [
+      "Antoine Walker",
+      "Tony Delk"
+     ]
+    }
+   },
+   "mechanism": "salary match; Boston tax relief",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-25",
+   "clubs": {
+    "Chicago Bulls": {
+     "out": [
+      "future considerations"
+     ],
+     "in": [
+      "Erick Barkley",
+      "cash"
+     ]
+    },
+    "San Antonio Spurs": {
+     "out": [
+      "Erick Barkley",
+      "cash"
+     ],
+     "in": [
+      "future considerations"
+     ]
+    }
+   },
+   "mechanism": "roster move; Barkley waived",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  }
+ ],
+ "waivers": [
+  {
+   "date": "2003-07-07",
+   "player": "Anthony Peeler",
+   "bbr_id": "peelean01",
+   "club": "Milwaukee Bucks",
+   "note": "waived after the Cassell trade",
+   "evidence": "V",
+   "sources": "PAY, BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-07",
+   "player": "Dikembe Mutombo",
+   "bbr_id": "mutomdi01",
+   "club": "New Jersey Nets",
+   "note": "buyout",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-16",
+   "player": "DerMarr Johnson",
+   "bbr_id": "johnsde03",
+   "club": "Phoenix Suns",
+   "note": "",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-23",
+   "player": "Trenton Hassell",
+   "bbr_id": "hassetr01",
+   "club": "Chicago Bulls",
+   "note": "",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  },
+  {
+   "date": "2003-10-27",
+   "player": "Sean Lampley",
+   "bbr_id": "lamplse01",
+   "club": "Miami Heat",
+   "note": "real Miami; skipped by rule 1",
+   "evidence": "V",
+   "sources": "BBRMIA",
+   "involves_miami": true
+  },
+  {
+   "date": "2003-10-31",
+   "player": "Sean Marks",
+   "bbr_id": "marksse01",
+   "club": "San Antonio Spurs",
+   "note": "",
+   "evidence": "V",
+   "sources": "BBR04",
+   "involves_miami": false
+  }
+ ],
+ "unresolved_names": [
+  "Dwyane Wade"
+ ]
+}

@@ -34,6 +34,6 @@ A request that agrees with the rule changes nothing. One that opposes it becomes
 
 ## Wade's rookie contract (roadmap item 5)
 
-Miami opens with 120% of the No. 5 scale, the customary level for first-round picks: $2,636,400, $2,834,160 and $3,031,920 over 2003-04 to 2005-06, plus a $3,841,443 team option for 2006-07, to be exercised by October 31, 2004. Miami intends to sign him after its July free-agency moves, because until he signs he counts at 100% of scale.
+Miami opens with 120% of the No. 5 scale, the customary level for first-round picks: $2,636,400, $2,834,160 and $3,031,920 over 2003-04 to 2005-06, plus a $3,841,443 team option for 2006-07, to be exercised by October 31, 2005 (October 31 after his second season, FAQ Q38). Miami intends to sign him after its July free-agency moves, because until he signs he counts at 100% of scale.
 
 `python scripts/open_rookie_negotiation.py --write <date>` opens `01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json` on the offer date. Wade's answers (accept, counter, request a signing date, hold out) are the user's decisions and are appended as entries. Validation checks every entry's terms against the rookie scale and keeps dates in order; nothing may follow the signing.

@@ -2,7 +2,8 @@
 
 1999 agreement (FAQ Q38, Q41): first-round picks sign for 80-120% of the scale
 for their pick; three seasons plus a team option for a fourth, exercised by
-October 31 after the second season; raises limited to 10%. Until he signs, an
+October 31 after the second season (October 31, 2005 for a 2003 draftee); the
+scale fixes the raises. Until he signs, an
 unsigned first-round pick counts at 100% of scale.
 
 The log records every offer, counter, request and answer with its date and
@@ -37,7 +38,7 @@ def rookie_terms(pick, percent, root=ROOT):
             "schedule": {"2003-04": years[0], "2004-05": years[1], "2005-06": years[2], "2006-07": option},
             "amount_kind": {"2003-04": "contract_salary", "2004-05": "contract_salary",
                             "2005-06": "contract_salary", "2006-07": "team_option"},
-            "fourth_year_option_deadline": "2004-10-31",
+            "fourth_year_option_deadline": "2005-10-31",   # October 31 after his second season (FAQ Q38)
             "qualifying_offer_increase_percent_after_fourth_year": row["qualifying_offer_increase_percent"]}
 
 
