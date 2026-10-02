@@ -70,6 +70,14 @@ Cards are personnel records, not automatic game-engine ratings. Objective identi
 
 User-supplied player photos can be linked later. Do not invent image URLs.
 
+## Stats and awards
+
+The player's statistical record lives at `career/Dwyane_Wade/Stats_and_Awards/<season>/`, then month, then week.
+
+Closed game results are the evidence. Week pages summarize their games, month pages summarize the completed weeks, and the year page summarizes the months. Never import real-world Wade statistics or awards as branch results.
+
+Official NBA weekly award windows can cross this repository's fixed calendar buckets. Preserve the official award dates and file the honor on the week page containing the award period's end date.
+
 ## Game records
 
 Game-note statuses are `scheduled`, `played`, or `not_played`.

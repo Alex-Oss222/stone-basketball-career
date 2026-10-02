@@ -1,0 +1,34 @@
+# Dwyane Wade | October 2003 Stats & Awards
+
+[2003-04 season](../README.md) · [Week 3](Week_3/README.md) · [Week 4](Week_4/README.md)
+
+**Team:** Miami Heat  
+**Status:** Not started
+
+## Monthly line
+
+| G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+## Week-by-week
+
+| Week | Dates | G | PTS | REB | AST | STL | Weekly honor |
+|---|---|---:|---:|---:|---:|---:|---|
+| [Week 3](Week_3/README.md) | October 15-21 | 0 | N/A | N/A | N/A | N/A | Not determined |
+| [Week 4](Week_4/README.md) | October 22-31 | 0 | N/A | N/A | N/A | N/A | Not determined |
+
+## Monthly shooting totals
+
+| FGM | FGA | FG% | 3PM | 3PA | 3P% | FTM | FTA | FT% | ORB | DRB | TOV | PF |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 0 | 0 | N/A | 0 | 0 | N/A | 0 | 0 | N/A | 0 | 0 | 0 | 0 |
+
+## Monthly awards
+
+| Award | Result | Source |
+|---|---|---|
+| NBA Player of the Month | Not determined | — |
+| NBA Rookie of the Month | Not determined | — |
+
+Weekly honors are counted here only after their official NBA award window closes.

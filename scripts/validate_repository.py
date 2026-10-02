@@ -45,7 +45,7 @@ def discover():
     players = [p for p in career.iterdir() if p.is_dir()]
     if len(players) != 1:
         raise ValueError("career must contain exactly one player directory")
-    years = [p for p in players[0].iterdir() if p.is_dir()]
+    years = [p for p in players[0].iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)]
     if len(years) != 1:
         raise ValueError("player directory must contain exactly one active season directory")
     return players[0], years[0]
@@ -234,6 +234,16 @@ def validate():
     require(errors, month_week(8)==2 and month_week(14)==2, "Week 2 rule failed")
     require(errors, month_week(15)==3 and month_week(21)==3, "Week 3 rule failed")
     require(errors, month_week(22)==4 and month_week(31)==4, "Week 4 rule failed")
+
+    stats_root=player/"Stats_and_Awards"
+    stats_year=stats_root/season.name
+    require(errors,(stats_root/"README.md").is_file(),"missing Stats_and_Awards index")
+    require(errors,(stats_year/"README.md").is_file(),"missing yearly stats and awards page")
+    for month,spec in config["regular_season"].items():
+        month_dir=stats_year/spec["folder"]
+        require(errors,(month_dir/"README.md").is_file(),f"missing monthly stats page: {month}")
+        for week in spec["weeks"]:
+            require(errors,(month_dir/f"Week_{week}"/"README.md").is_file(),f"missing weekly stats page: {month} Week {week}")
 
     for area in config["areas"]:
         folder=season/area["folder"]

@@ -83,6 +83,23 @@ class InitializedCareerTests(unittest.TestCase):
         self.assertIn("2008-09",cap)
         self.assertFalse((TEAM/"Finances/cap_tracker.md").exists())
 
+    def test_stats_awards_hierarchy(self):
+        root=PLAYER/"Stats_and_Awards"/"2003-04"
+        self.assertTrue((root/"README.md").is_file())
+        mapping={
+            "10_October":[3,4],
+            "11_November":[1,2,3,4],
+            "12_December":[1,2,3,4],
+            "01_January":[1,2,3,4],
+            "02_February":[1,2,3,4],
+            "03_March":[1,2,3,4],
+            "04_April":[1,2],
+        }
+        for month,weeks in mapping.items():
+            self.assertTrue((root/month/"README.md").is_file())
+            for week in weeks:
+                self.assertTrue((root/month/f"Week_{week}"/"README.md").is_file())
+
     def test_six_year_cap_reference(self):
         history=json.loads((TEAM/"Finances/league_cap_history.json").read_text(encoding="utf-8"))
         caps={row["season"]:row["salary_cap"] for row in history["seasons"]}
