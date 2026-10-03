@@ -208,6 +208,9 @@ def estimate_market(*, on, production, comparables, cap):
     if extrapolated:
         drivers.append("Player is outside the comparable production range; extrapolation widens the band.")
     coverage = "moderate" if len(rows) >= 20 and minutes >= 1500 and not extrapolated and production.get("age") is not None else "low"
+    # Floats are rounded to 12 decimals so the fixture reproduces across platforms (summation order).
+    shares = tuple(round(x, 12) for x in shares)
+    intercept, slope, spread = round(intercept, 12), round(slope, 12), round(spread, 12)
     return {"status": "estimated", "low": round(shares[0] * cap["amount"]),
             "target": round(shares[1] * cap["amount"]), "high": round(shares[2] * cap["amount"]),
             "cap_share_low": shares[0], "cap_share_target": shares[1], "cap_share_high": shares[2],
