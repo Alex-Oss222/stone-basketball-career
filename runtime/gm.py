@@ -10,6 +10,8 @@ Every constant is a judgement constant, named here.
 import json
 from pathlib import Path
 
+from .standing import STANDING_WEIGHT
+from .trades import SIGN_AND_TRADE_RIGHTS
 from .valuation import read
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,10 +29,11 @@ AVERAGE_VALUE = 9.0                      # league-average production value (effi
 ROOKIE_VALUE_SHARE = 0.7                 # a first-round rookie counts at this share of average until he has played
 ROOM_OVER_RIGHTS_SCORE = 20.0                # a target this good is worth renouncing cheap rights for
 REPLACEMENT_VALUE, STAR_EXPONENT = 5.0, 1.5   # target score: (value above replacement)^1.5 per mid-level of ask
-STANDING_WEIGHT = {"unsigned_rookie": 0.15, "rookie": 0.2, "starter": 0.35, "all_star": 0.6, "franchise": 0.8}
 MATCH_SURPLUS_SLOPE, MATCH_OVER_TAX_FACTOR = 2.5, 0.3   # a real incumbent matching an offer sheet (design 4.5)
 ROLE_CEILING_SHARE = {"starter": None, "rotation": 1.0, "reserve": 0.3}   # of the mid-level: what a role is worth to Miami
 HOLD_KEEP_FACTOR = 1.5                   # keep a free agent's rights while his hold is under this times his valuation
+SIGN_AND_TRADE_MIN_SCORE = 20.0          # a target worth a sign-and-trade package scores at least ROOM_OVER_RIGHTS_SCORE
+RESIGN_AND_TRADE_FIT = 0.6               # Miami signs-and-trades an agreed own free agent only when his position fit is below this (run_free_agency shop_own, run_trade --shop)
 
 
 class FrontOffice:
@@ -158,7 +161,7 @@ class FrontOffice:
             rows.append({"bbr_id": bbr, "player": p["player"], "club": p["club"], "position": pos, "age": self.valuation.age(bbr),
                          "value": round(self.valuation.value(bbr) or 0, 1), "valuation": own, "ask": ask["first_year"],
                          "years_asked": ask["years"], "surplus": round(surplus, 3), "fit": weight, "score": round(score, 3),
-                         "wade_request": bool(wish), "rfa": bool(p.get("rfa_eligible"))})
+                         "wade_request": bool(wish), "rfa": bool(p.get("rfa_eligible")), "bird_class": p.get("bird_class")})
         rows.sort(key=lambda r: -r["score"])
         return rows[:limit]
 
@@ -201,6 +204,7 @@ class FrontOffice:
         chosen, remaining = [], budget_room
         spare = sorted(keep, key=lambda k: k["valuation"])      # rights Miami would give up for room, cheapest first
         renounced_for_room = []
+        probes = []
         for t in self.targets(requests, standing, limit=40):
             role_cap = self.role_ceiling(t["position"])
             if role_cap is not None and t["ask"] > role_cap * WALK_AWAY_OVER_VALUATION:
@@ -219,6 +223,16 @@ class FrontOffice:
                 remaining -= t["ask"]
             elif remaining < self.valuation.mid_level and t["ask"] <= self.valuation.mid_level and not any(c["route"] == "mid_level" for c in chosen):
                 chosen.append(dict(t, route="mid_level"))
+            elif (t["bird_class"] in SIGN_AND_TRADE_RIGHTS and not t["rfa"] and t["score"] >= SIGN_AND_TRADE_MIN_SCORE
+                  and not any(c["route"] == "sign_and_trade" for c in chosen) and not any(pr["player"] == t["player"] for pr in probes)):
+                # A target beyond the room and the exceptions whose incumbent holds his full Bird rights: Miami can only
+                # reach him by sign-and-trade. The probe is two-sided and read-only (runtime/trades.py); one per plan.
+                from .trades import TradeDesk
+                ok, why = TradeDesk(self.on, self, self.root).sign_and_trade_feasible(t)
+                probes.append({"player": t["player"], "bbr_id": t["bbr_id"], "club": t["club"], "ask": t["ask"], "score": t["score"],
+                               "sign_and_trade_feasible": ok, "binding_constraint": why})
+                if ok:
+                    chosen.append(dict(t, route="sign_and_trade", sign_and_trade_feasible=ok, binding_constraint=why))
             if len(chosen) >= 4:
                 break
         keep = [k for k in keep if k["player"] not in {r["player"] for r in renounced_for_room}]
@@ -233,6 +247,9 @@ class FrontOffice:
                 review.append({"player": r["player"], "outcome": "pursued", "reason": "in the plan's targets"})
             elif t is None:
                 review.append({"player": r["player"], "outcome": "not pursued", "reason": "not on the market on this date or no 2002-03 evidence to price"})
+            elif any(pr["player"] == r["player"] and not pr["sign_and_trade_feasible"] for pr in probes):
+                why = next(pr["binding_constraint"] for pr in probes if pr["player"] == r["player"])
+                review.append({"player": r["player"], "outcome": "not pursued", "reason": f"fits only through a sign-and-trade, and no package is legal: {why}"})
             else:
                 review.append({"player": r["player"], "outcome": "not pursued", "reason": f"ask ${t['ask']:,} does not fit the room (${remaining:,} left) or the exceptions; score {t['score']}"})
         rights = {p["player"]: p for p in self.rights["players"]}
@@ -240,7 +257,8 @@ class FrontOffice:
                     "valuation": k["valuation"], "hold": k["hold"]} for k in keep]
         return {"date": self.on, "cap_room": room, "payroll_ceiling": self.payroll_ceiling(),
                 "renounce_when_needed": drop, "keep_rights": keep, "needs": self.needs(),
-                "targets": chosen, "room_after_targets": remaining, "re_sign_candidates": re_sign, "wade_requests": review}
+                "targets": chosen, "room_after_targets": remaining, "re_sign_candidates": re_sign, "wade_requests": review,
+                "sign_and_trade_probes": probes}
 
     # -- offers ----------------------------------------------------------------------------
     def role_for(self, position, needs=None):
@@ -272,7 +290,14 @@ class FrontOffice:
             return 1500000
         if route == "minimum":
             return minimum
+        if route == "sign_and_trade":
+            return self.valuation.maximum(service, prior or None)   # signed by the incumbent with full Bird rights
         return None
+
+    def resign_and_trade(self, bbr_id, position):
+        """Whether Miami would shop an agreed own free agent as a sign-and-trade instead of simply re-signing him:
+        his position fit is below RESIGN_AND_TRADE_FIT (judgement; the free-agency driver's shop_own and run_trade --shop)."""
+        return self.fit(position, self.needs()) < RESIGN_AND_TRADE_FIT
 
     def offer_terms(self, target, round_no, counter=None, route="room", restricted=False):
         """Miami's offer in a round, or None when Miami walks away (docs/front_office_design.md 5.5).
@@ -308,7 +333,9 @@ class FrontOffice:
             years = min(years, 6)
         if route == "million":
             years = min(years, 2)
-        raise_share = RAISE["bird" if route in ("bird", "early_bird") else "other"]
+        if route == "sign_and_trade":
+            years = min(max(3, years), 7)    # at least three non-option seasons, at most the Bird length (1999 rules)
+        raise_share = RAISE["bird" if route in ("bird", "early_bird", "sign_and_trade") else "other"]
         schedule = [int(round(first * (1 + raise_share * i))) for i in range(years)]
         last_guaranteed = not (years >= 4 and round_no == 1)
         guaranteed = sum(schedule) if last_guaranteed else sum(schedule[:-1])

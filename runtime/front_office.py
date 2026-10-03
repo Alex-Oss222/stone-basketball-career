@@ -25,7 +25,7 @@ from datetime import date
 
 OPTION_MINUTES, OPTION_MAX_AGE = 400, 24
 QO_MINUTES, QO_MAX_AGE = 500, 24
-STANDING_WEIGHT = {"unsigned_rookie": 0.15, "rookie": 0.2, "starter": 0.35, "all_star": 0.6, "franchise": 0.8}
+from .standing import STANDING_WEIGHT   # noqa: E402  (one object, computed standing: runtime/standing.py)
 
 
 def age_on(birth_date, on):

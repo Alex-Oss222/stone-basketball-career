@@ -27,7 +27,7 @@ Offseason work can start before August, and contract talks can overlap workouts.
 4. Record the player's exact choice and date. A counteroffer, role request, workout preference or objection is a request until its actual consequence is known.
 5. Show who acts next and the next review date or event. Close the page only when the event and required conditions have resolved.
 
-Waiting for the user's contract choice is appropriate because it is a player decision. Waiting for the user to approve an ordinary AI/GM trade or lineup is not: show the verified outcome and the player's available response. A verified trade-consent right creates a genuine player decision and must never be waived automatically.
+Waiting for the user's contract choice is appropriate because it is a player decision. Waiting for the user to approve an ordinary AI/GM trade or lineup is not, below franchise standing: show the verified outcome and the player's available response. At franchise standing the consultation gate (`docs/front_office.md`, Franchise consultation) is a genuine player decision: the front office asks before it adds another star, the career clock waits for the answer, and the consultation page under `Wade_Consultations/` follows this workflow. A verified trade-consent right creates a genuine player decision and must never be waived automatically.
 
 ## Keep state and authority clear
 

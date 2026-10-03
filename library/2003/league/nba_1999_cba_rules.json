@@ -107,7 +107,11 @@
    "applies_when": "re-signed with Bird or Early Bird rights at a raise over 20% by a club over the cap",
    "outgoing_value": "greater of 50% of the new salary and the previous salary",
    "duration": "through the first season (inferred for 1999)",
-   "source": "docs/research/cba_1999_rules.md"
+   "source": "docs/research/cba_1999_rules.md",
+   "applies_to_sign_and_trade": true,
+   "applies_to_sign_and_trade_status": "inferred: the general rule names a Bird or Early Bird re-signing at a raise over 20% by a club over the cap; a sign-and-trade is such a signing",
+   "incoming_value": "not found; the receiving club counts the full new salary (inferred)",
+   "attached_at": "signing: computed once from the signing club's cap position after the signing and stored on the contract entry; never re-derived in a later trade"
   },
   "newly_signed_free_agent_restriction": {
    "rule": "not tradable for three months or until December 15, whichever is later",
@@ -119,14 +123,50 @@
   },
   "cash_per_season_max": {
    "amount": 3000000,
-   "status": "reported as unchanged across agreements (inferred for 1999)"
+   "status": "reported as unchanged across agreements (inferred for 1999)",
+   "note": "the limit is read per trade and per season (inferred); the record keeps cash_out and cash_in on each proposal"
   },
   "stepien_rule": "A club may not leave itself without a first-round pick in consecutive future drafts (Wikipedia, Ted Stepien).",
   "trade_bonus_max_percent_of_remaining_salary": {
    "percent": 15,
    "status": "inferred for 1999"
   },
-  "sign_and_trade_min_seasons": 3,
+  "sign_and_trade": {
+   "mechanism": "The incumbent signs its own free agent and trades the contract in the same transaction; three-team structures exist (Article VII section 8(e) per the research locator; the agreement text is not in the repository).",
+   "min_non_option_seasons": 3,
+   "min_non_option_seasons_status": "sourced via the research template's agreement locator (docs/templates/player_milestones/contract_negotiation_research.md, S1, Article VII section 8(e)); agreement text not re-read; the FAQ extract has no sign-and-trade text",
+   "signing_club_rights": "full Bird only (SIGN_AND_TRADE_RIGHTS)",
+   "signing_club_rights_status": "inferred (one 2003 observation: Brad Miller, 2003-07-24, 7 years); Early Bird, Non-Bird and cap-room sign-and-trades not found",
+   "first_season_guarantee_required": false,
+   "first_season_guarantee_status": "inferred: a 2005 addition (docs/research/cba_1999_rules.md section 2)",
+   "base_year_compensation_applies": true,
+   "base_year_compensation_status": "inferred (trades.base_year_compensation); attached at the signing, by the signing club's cap position then",
+   "simultaneous_signing_and_trade": true,
+   "simultaneous_status": "sourced: nba_2003_offseason_transactions.json, Brad Miller signed and traded 2003-07-24",
+   "own_sign_and_trade": "Miami's own sign-and-trade-out signs the agreed contract and trades it in the same transaction on the execution day (the free-agency driver's shop_own; scripts/run_trade.py --shop); the player is unsigned until the trade executes. A player Miami has already re-signed is an ordinary signed player: the newly-signed restriction binds him and the sign-and-trade label does not lift it",
+   "own_sign_and_trade_status": "sourced: the Miller example (signed and traded 2003-07-24, the same transaction); no later-day extension is modeled",
+   "newly_signed_restriction_exempt": true,
+   "newly_signed_restriction_exempt_status": "inferred from the Miller example: the contract is signed inside the trade, so a restriction that starts at a signing cannot bar it; it never extends to a trade on a later day, and at the receiving club the player is newly signed from that date",
+   "restricted_free_agents": "attempted in 2003 before an offer sheet (Odom, refused; Jones, unverified); after a signed sheet: not found; not modeled",
+   "availability": "the acquired player must be unsigned on the date Miami's agreement is dated, not on the execution date (design 4.4)",
+   "bird_clock_at_receiving_club": "sourced for traded players: 'his Bird rights are traded with him' (FAQ Q23); not separately observed for a sign-and-trade",
+   "in_season": "not found; the trade deadline applies",
+   "consents": [
+    "the player",
+    "the incumbent club",
+    "the receiving club"
+   ],
+   "consents_status": "sourced from the 2003 examples (Payton, Odom, Miller)",
+   "source": "docs/research/cba_1999_rules.md sections 2 and 4; library/2003/league/nba_2003_offseason_transactions.json"
+  },
+  "matching_under_cap": {
+   "rule": "a club at or under the cap after the trade absorbs incoming salary into room; the 115% test does not apply",
+   "status": "inferred from the rule's framing and the 2003 examples"
+  },
+  "moratorium_trade_ban": {
+   "rule": "no trade July 1-15, 2003",
+   "status": "inferred: the calendar source speaks only of signings; the 2003 log shows no trade between 2003-06-27 and 2003-07-23 (one season of absence)"
+  },
   "roster_max_after_trade": 15,
   "deadline_2003_04": "2004-02-19 15:00 America/New_York"
  },

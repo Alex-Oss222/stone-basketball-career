@@ -247,8 +247,46 @@ def renounce(writer, names, day, reason):
     return done
 
 
-def sign(writer, negotiation, day):
-    """Write a contract agreed on the desk into every canonical record."""
+def league_prior_salary(root, bbr_id):
+    """A free agent's 2002-03 salary from the league rights file (the inventory's prior-salary evidence)."""
+    for club in read("library/2003/league/nba_2003_free_agent_rights.json", root)["clubs"].values():
+        for p in club["free_agents"]:
+            if p.get("bbr_id") == bbr_id:
+                return p.get("prior_salary_2002_03")
+    return None
+
+
+def planning_cap(root, day):
+    from .market import Market
+    return Market(day, root).planning_cap(day)
+
+
+def base_year_compensation(sheet, rights, name, route, first_year, prior, cap, day):
+    """The base-year flag attached at a Miami signing (trades.base_year_compensation): a Bird or Early Bird
+    re-signing at a raise over 20% while Miami is over the cap once the new contract is counted (holds
+    without the player's own hold). Never re-derived in a later trade."""
+    if route not in ("bird", "early_bird"):
+        return {"applies": False, "status": f"not a Bird or Early Bird re-signing ({route}); base-year compensation does not apply"}
+    committed = counted_salary(sheet["players"], day)
+    holds = sum(p.get("cap_hold") or 0 for p in rights["players"]
+                if p["player"] != name and not (p.get("renounced") or p.get("signed_elsewhere") or p.get("re_signed")))
+    over = committed + holds + first_year > cap
+    raise_over = bool(prior) and first_year > prior * 1.2
+    applies = over and raise_over
+    return {"applies": applies, "status": ("inferred for 1999: re-signed with Bird or Early Bird rights at a raise over 20% by a club over the cap "
+                                           f"(raise {'over' if raise_over else 'within'} 20% of ${prior or 0:,}; Miami ${committed + holds + first_year:,} "
+                                           f"against the ${cap:,} cap with the contract counted); attached at the signing")}
+
+
+def sign(writer, negotiation, day, *, via_trade=None, cap=None):
+    """Write a contract agreed on the desk into every canonical record.
+
+    `via_trade` is the accepted sign-and-trade record. For an acquisition the incumbent signed the
+    player on the agreed terms and traded him, so his entry carries route `sign_and_trade`, the
+    acquisition and the base-year compensation the incumbent's cap position attached. For Miami's own
+    sign-and-trade-out Miami signs him with his Bird rights and trades him in the same transaction
+    (`apply_trade` departs him in the same commit): the entry carries the base-year flag the proposal
+    attached from Miami's ledger and no Miami holding opens, because he never plays for Miami."""
     rec = negotiation.record
     terms, route = rec["agreement"]["terms"], rec["agreement"]["route"]
     name, bbr = rec["player"], rec["bbr_id"]
@@ -259,13 +297,40 @@ def sign(writer, negotiation, day):
     sheet, roster, rights = writer.load(TEAM / "Finances/contract_schedules.json"), writer.load(TEAM / "Team/Roster/roster.json"), writer.load(TEAM / "Finances/free_agent_rights.json")
     holdings, depth = writer.load(TEAM / "Team/Roster/holdings.json"), writer.load(TEAM / "Team/Depth_Chart/depth_chart.json")
     source_rel = f"../../../01_Free_Agency/Negotiations/{slug(name)}.json"
+    right = next((p for p in rights["players"] if p["player"] == name), None)
+    prior = (right or {}).get("previous_salary") if own else league_prior_salary(writer.root, bbr)
+    acquired = via_trade["trade"].get("sign_and_trade_in") if via_trade else None
+    sent = via_trade["trade"].get("sign_and_trade_out") if via_trade else None
+    if acquired:
+        route = "sign_and_trade"
+        byc = acquired.get("base_year_compensation") or {"applies": False, "status": "not recorded by the incumbent"}
+    elif sent and sent.get("base_year_compensation") is not None:
+        byc = sent["base_year_compensation"]           # attached once, by the proposal, from Miami's ledger on its date
+    else:
+        byc = base_year_compensation(sheet, rights, name, route, terms["first_year"], prior, cap or planning_cap(writer.root, day), day)
     entry = {"player": name, "bbr_id": bbr, "status": "re_signed" if own else "signed_free_agent", "schedule": schedule, "amount_kind": kinds,
              "guaranteed": guaranteed, "signed_date": day, "original_term_seasons": terms["years"], "route": route,
-             "promise": terms.get("promise"), "notes": f"Signed {long_date(day)} by simulated Miami via {route}; agreed {rec['agreement']['date']} (engine decision {rec['agreement']['decision_event']}).",
+             "promise": terms.get("promise"), "base_year_compensation": byc,
+             "notes": f"Signed {long_date(day)} by simulated Miami via {route}; agreed {rec['agreement']['date']} (engine decision {rec['agreement']['decision_event']}).",
              "sources": [f"career/Dwyane_Wade/{SEASON}/01_Free_Agency/Negotiations/{slug(name)}.json"]}
+    if prior:
+        entry["prior_season_salary"] = {"season": "2002-03", "amount": prior}
+    if acquired:
+        record_rel = f"00_Team/Transactions/Trades/{via_trade['trade_id']}.json"
+        entry["acquired"] = {"how": "sign_and_trade", "date": day, "from": via_trade["trade"]["partner"], "record": record_rel}
+        entry["notes"] = (f"Signed {long_date(day)} by {via_trade['trade']['partner']} with his Bird rights on Miami's agreed terms and traded to Miami "
+                          f"at once (sign-and-trade {via_trade['trade_id']}); agreed {rec['agreement']['date']} (engine decision {rec['agreement']['decision_event']}).")
+        entry["sources"].append(f"career/Dwyane_Wade/{SEASON}/{record_rel}")
+    if sent:
+        record_rel = f"00_Team/Transactions/Trades/{via_trade['trade_id']}.json"
+        entry["notes"] = (f"Signed {long_date(day)} by simulated Miami via {route} and traded to {via_trade['trade']['partner']} in the same transaction "
+                          f"(sign-and-trade {via_trade['trade_id']}); agreed {rec['agreement']['date']} (engine decision {rec['agreement']['decision_event']}).")
+        entry["sources"].append(f"career/Dwyane_Wade/{SEASON}/{record_rel}")
     sheet["players"] = [p for p in sheet["players"] if p["player"] != name] + [entry]
     sheet["as_of"] = roster["as_of"] = day
     control = f"Signed {long_date(day)}: {terms['years']} seasons, ${sum(terms['schedule']):,} (${terms['first_year']:,} in 2003-04), ${terms['guaranteed']:,} guaranteed; route {route}."
+    if acquired:
+        control = f"Acquired by sign-and-trade from {via_trade['trade']['partner']} on {long_date(day)}: " + control[len("Signed "):]
     identity = league_identity(writer.root, bbr)
     existing = next((p for p in roster["players"] if p["name"] == name), None)
     if existing:
@@ -280,11 +345,17 @@ def sign(writer, negotiation, day):
     for p in rights["players"]:
         if p["player"] == name:
             p["re_signed"], p["re_signed_date"] = True, day
-    holdings["entries"].append({"player": name, "bbr_id": bbr, "from": day, "until": None,
-                                "basis": f"signed {day} ({route}); negotiation record Negotiations/{slug(name)}.json"})
+    if not sent:
+        holdings["entries"].append({"player": name, "bbr_id": bbr, "from": day, "until": None,
+                                    "basis": f"signed {day} ({route}); negotiation record Negotiations/{slug(name)}.json"})
     kind = "re-signs" if own else "signs"
+    how = f"route {route}"
+    if acquired:
+        kind, how = "acquires by sign-and-trade from " + via_trade["trade"]["partner"], f"contract signed by the incumbent with his Bird rights ({via_trade['trade_id']})"
+    if sent:
+        kind, how = f"signs and trades to {via_trade['trade']['partner']} in one transaction", f"route {route}, sign-and-trade {via_trade['trade_id']}"
     note_event(writer, PHASE / "note.md", day, f"Miami {kind} {name}: {terms['years']} seasons, ${sum(terms['schedule']):,} "
-               f"(${terms['guaranteed']:,} guaranteed), route {route}; promised role {promise_text(terms.get('promise'))}. Record: `Negotiations/{slug(name)}.json`.")
+               f"(${terms['guaranteed']:,} guaranteed), {how}; promised role {promise_text(terms.get('promise'))}. Record: `Negotiations/{slug(name)}.json`.")
     set_state(writer, day, last_event=f"{day}-miami-signs-{slug(name)}")
     negotiation.mark_signed(day, f"00_Team/Finances/contract_schedules.json#{name}")
     return entry
@@ -425,6 +496,11 @@ def ledger_errors(root=ROOT):
             errors.append(f"{p['name']}: signed player without a signed negotiation record")
         if entry and not any(e["player"] == p["name"] and e["from"] == entry.get("signed_date") and e["until"] is None for e in holdings["entries"]):
             errors.append(f"{p['name']}: no open holding from his signing date")
+        acquired = (entry or {}).get("acquired") or {}
+        if acquired.get("how") == "sign_and_trade":
+            trade_path = root / f"career/Dwyane_Wade/{SEASON}" / acquired.get("record", "")
+            if not trade_path.is_file() or json.loads(trade_path.read_text(encoding="utf-8")).get("status") != "completed":
+                errors.append(f"{p['name']}: acquired by sign-and-trade without a completed trade record")
     return errors
 
 
@@ -518,8 +594,10 @@ def sign_rookie(writer, log, terms, day):
                            "note": f"Contract executed {long_date(day)}; recorded on contract_schedules.json and the register."})
     note_event(writer, PHASE / "note.md", day, f"Wade signs his rookie-scale contract at {terms['percent_of_scale']}% of scale: "
                f"${first:,} in 2003-04, three seasons plus a 2006-07 team option. Record: `Wade_Rookie_Contract/negotiation_log.json`.")
+    state = writer.load(STATE)
+    pending = [d for d in state.get("pending_player_decisions", []) if d != "rookie_contract_offer"]
     set_state(writer, day, last_event=f"{day}-wade-signs-rookie-contract", contract_status="rookie_scale_contract", roster_status="under_contract",
-              pending_player_decisions=[])
+              pending_player_decisions=pending)
     return entry
 
 
@@ -562,8 +640,11 @@ def apply_trade(writer, record, day):
                                       "position": (identity.get("position") or "SF").split("-")[0],
                                       "games": prior.get("games", 0), "minutes": prior.get("minutes", 0),
                                       "basis": f"traded {day} ({record['trade_id']}); previous share from 2002-03 totals"})
-    # Miami's incoming players
+    # Miami's incoming players (a sign-and-trade acquisition was written by `sign` from the agreed terms)
+    acquired = trade.get("sign_and_trade_in")
     for name in trade.get("miami_in", []):
+        if acquired and acquired["player"] == name:
+            continue
         p = next(p for p in inventory["players"] if p["player"] == name)
         bbr = p.get("bbr_id")
         entry = {"player": name, "bbr_id": bbr, "status": "under_contract", "schedule": dict(p["schedule"]), "amount_kind": dict(p.get("amount_kind", {})),
@@ -595,7 +676,105 @@ def apply_trade(writer, record, day):
     outs = ", ".join(trade.get("miami_out", []) + [f"{x['year']} round {x['round']} pick" for x in trade.get("picks_out", [])]) or "nothing"
     ins = ", ".join(trade.get("miami_in", []) + [f"{x['year']} round {x['round']} pick" for x in trade.get("picks_in", [])]) or "nothing"
     state = writer.load(STATE)
-    note_event(writer, phase_note_for(state), day, f"Trade with {club}: Miami sends {outs} for {ins} (accepted by engine draw {record['decision_event']}). Record: `{record_rel}`.")
+    own = trade.get("sign_and_trade_out")
+    if acquired or own:
+        st = acquired or own
+        who = (f"{club} signs {st['player']} with his Bird rights and trades him to Miami" if acquired
+               else f"Miami signs {st['player']} with his Bird rights and trades him to {club} in the same transaction")
+        text = f"Sign-and-trade with {club}: Miami sends {outs} for {ins}; {who} (accepted by engine draw {record['decision_event']}). Record: `{record_rel}`."
+        event = f"{day}-sign-and-trade-{record['trade_id']}"
+    else:
+        text = f"Trade with {club}: Miami sends {outs} for {ins} (accepted by engine draw {record['decision_event']}). Record: `{record_rel}`."
+        event = f"{day}-trade-{record['trade_id']}"
+    note_event(writer, phase_note_for(state), day, text)
     set_state(writer, day, area=state.get("current_area", "01_Free_Agency"), note=state.get("current_note", "01_Free_Agency/note.md"),
-              last_event=f"{day}-trade-{record['trade_id']}")
+              last_event=event)
     return record_rel
+
+
+def write_proposal(root, desk, trade, ranking, day, *, kind="trade", negotiation=None, standing=None, consultation=None):
+    """Write a proposal record and its acceptance packet once (the one proposal writer): the record under
+    `00_Team/Transactions/Trades/<trade_id>.json`, `trade-<trade_id>.decision.json` beside it and the phase-note line."""
+    from .decisions import decision_errors
+    packet, valuation = desk.acceptance_packet(trade)
+    if packet is None:
+        raise ValueError("; ".join(valuation))
+    errors = decision_errors(packet)
+    if errors:
+        raise ValueError("; ".join(errors))
+    root = Path(root)
+    folder = root / TRADES
+    folder.mkdir(parents=True, exist_ok=True)
+    trade_id = desk.trade_id(trade)
+    path = folder / f"{trade_id}.json"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    st = trade.get("sign_and_trade_in") or trade.get("sign_and_trade_out")
+    basis = ("Chosen by Miami's front office as the top-ranked legal proposal on the date (runtime/trades.py search)." if kind == "trade" else
+             ("The incumbent signs the agreed player with his Bird rights and trades him; Miami offers the legal package that costs it the least value "
+              "(runtime/trades.py sign_and_trade_proposal)." if trade.get("sign_and_trade_in") else
+              "Miami signs its own agreed free agent with his Bird rights and trades him in the same transaction to the first partner whose "
+              "arriving package is worth Miami's while; his consent is a separate draw (runtime/trades.py sign_and_trade_proposal). "
+              "A decline on either draw leaves the agreement standing: Miami re-signs him on the agreed terms."))
+    record = {"trade_id": trade_id, "date": day, "status": "proposed", "kind": kind, "trade": trade, "valuation": valuation,
+              "ranking": ranking, "decision_event": packet["event_id"], "negotiation": negotiation, "standing": standing,
+              "consultation": consultation, "answer": None, "applied": None, "basis": basis}
+    if trade.get("sign_and_trade_out"):
+        record["player_consent_event"] = f"2003-fa-{st['bbr_id']}-sign-and-trade-{trade_id}"
+    path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    request = folder / f"{packet['event_id']}.decision.json"
+    if not request.exists():
+        request.write_text(json.dumps(packet, indent=1) + "\n", encoding="utf-8")
+    writer = Writer(root)
+    state = writer.load(STATE)
+    outs = ", ".join(trade.get("miami_out", [])) or "nothing"
+    ins = ", ".join(trade.get("miami_in", [])) or "nothing"
+    label = "proposes a sign-and-trade to" if kind == "sign_and_trade" else "proposes to"
+    note_event(writer, phase_note_for(state), day,
+               f"Miami {label} {trade['partner']}: {outs} for {ins} (acceptance drawn by the engine, {packet['event_id']}). "
+               f"Record: `00_Team/Transactions/Trades/{trade_id}.json`.")
+    writer.commit()
+    return record
+
+
+TRADE_STATUSES = ("proposed", "completed", "declined", "void")
+
+
+def trade_record_errors(root=ROOT):
+    """Every trade record is well formed, has its packet, and a completed sign-and-trade links back to its signing."""
+    errors = []
+    root = Path(root)
+    folder = root / TRADES
+    if not folder.exists():
+        return errors
+    season_dir = root / f"career/Dwyane_Wade/{SEASON}"
+    for path in sorted(folder.glob("*.json")):
+        if path.name.endswith(".decision.json") or path.name.endswith(".result.json"):
+            continue
+        rel = path.relative_to(root)
+        try:
+            r = json.loads(path.read_text(encoding="utf-8"))
+        except ValueError as exc:
+            errors.append(f"{rel}: invalid JSON: {exc}")
+            continue
+        if r.get("trade_id") != path.stem:
+            errors.append(f"{rel}: trade_id must be the file stem")
+        if r.get("status") not in TRADE_STATUSES:
+            errors.append(f"{rel}: unknown status {r.get('status')!r}")
+        if not r.get("decision_event") or not (folder / f"{r['decision_event']}.decision.json").exists():
+            errors.append(f"{rel}: missing decision packet {r.get('decision_event')}.decision.json")
+        if r.get("status") == "completed" and not r.get("applied"):
+            errors.append(f"{rel}: completed without an applied date")
+        trade = r.get("trade") or {}
+        kind = r.get("kind", "trade")
+        if kind == "sign_and_trade" or trade.get("sign_and_trade_in") or trade.get("sign_and_trade_out"):
+            if bool(trade.get("sign_and_trade_in")) == bool(trade.get("sign_and_trade_out")):
+                errors.append(f"{rel}: a sign-and-trade names exactly one of sign_and_trade_in and sign_and_trade_out")
+            neg = r.get("negotiation")
+            if not neg or not (root / neg).exists():
+                errors.append(f"{rel}: a sign-and-trade needs its negotiation record")
+            elif r.get("status") == "completed" and json.loads((root / neg).read_text(encoding="utf-8")).get("status") != "signed":
+                errors.append(f"{rel}: a completed sign-and-trade needs a signed negotiation")
+        if r.get("consultation") and not (season_dir / "Wade_Consultations" / f"{r['consultation']}.json").exists():
+            errors.append(f"{rel}: consultation {r['consultation']} has no record")
+    return errors

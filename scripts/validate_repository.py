@@ -263,6 +263,55 @@ def validate_sequence(folder, errors, maximum=None):
         require(errors, nums == list(range(1,max(nums)+1)), f"{folder.relative_to(ROOT)}: game files must be sequential without gaps")
 
 
+RIGHTS_RULE_KEYS = ("previous_salary", "joined_miami", "seasons_with_miami_for_bird", "nba_seasons_before_2003_04", "bird_status",
+                    "cap_hold", "cap_hold_percent", "above_league_average_salary", "qualifying_offer")
+
+
+def rights_errors(root):
+    """Miami's free-agent rights file against the rule builder and the league rights file.
+
+    At the June 26 checkpoint the file must equal the builder's output. Once the clock has moved, the
+    drivers add state the builder does not know (qualifying offers tendered, re-signings, departures,
+    a declined player option's new row), so every builder player must still agree on the rule-computed
+    keys while extra keys and extra rows are allowed."""
+    from scripts.build_miami_free_agent_rights import OUT as RIGHTS_PATH, build as build_rights
+    errors = []
+    root = Path(root)
+    try:
+        state = json.loads((root / "career/Dwyane_Wade/2003-04/current_state.json").read_text(encoding="utf-8"))
+        current = json.loads((root / RIGHTS_PATH).read_text(encoding="utf-8"))
+        built = json.loads(json.dumps(build_rights(root)))
+        if state.get("current_date", "2003-06-26") <= "2003-06-26":
+            if current != built:
+                errors.append("Miami free-agent rights are stale; run scripts/build_miami_free_agent_rights.py")
+        else:
+            rows = {p["player"]: p for p in current["players"]}
+            for p in built["players"]:
+                row = rows.get(p["player"])
+                if row is None:
+                    errors.append(f"Miami free-agent rights: {p['player']} is missing from the file")
+                    continue
+                for key in RIGHTS_RULE_KEYS:
+                    if row.get(key) != p.get(key):
+                        errors.append(f"Miami free-agent rights: {p['player']}: {key} disagrees with the rule builder")
+        league_rights = json.loads((root / "library/2003/league/nba_2003_free_agent_rights.json").read_text(encoding="utf-8"))
+        if any(p["status"] in ("free_agent_restricted", "free_agent_unrestricted")
+               for c in league_rights["clubs"].values() for p in c["free_agents"]):
+            errors.append("league free-agent rights must not carry restricted/unrestricted marks (qualifying offers are June 30 decisions)")
+        bird_names = {"bird": "larry_bird", "early_bird": "early_bird", "non_bird": "non_bird"}
+        league_miami = {p["bbr_id"]: p for p in league_rights["clubs"]["Miami Heat"]["free_agents"]}
+        for p in current["players"]:
+            other = league_miami.get(p["bbr_id"])
+            if other is None:
+                continue                      # a row the drivers added (a declined player option) is not in the league file
+            if (bird_names.get(other.get("bird_class")), other.get("cap_hold_amount"), other.get("qualifying_offer_amount")) != \
+                    (p["bird_status"], p["cap_hold"], p["qualifying_offer"]):
+                errors.append(f"Miami free-agent rights disagree with the league rights file for {p['player']}")
+    except (OSError, ValueError, KeyError) as exc:
+        errors.append(f"cannot validate Miami free-agent rights: {exc}")
+    return errors
+
+
 def validate():
     errors=repository_rating_errors(ROOT)
     try:
@@ -509,23 +558,7 @@ def validate():
         for game in rdir.glob("Game_*.md"):
             validate_game(game,errors)
 
-    from scripts.build_miami_free_agent_rights import OUT as RIGHTS_PATH, build as build_rights
-    try:
-        if json.loads((ROOT / RIGHTS_PATH).read_text(encoding="utf-8")) != json.loads(json.dumps(build_rights(ROOT))):
-            errors.append("Miami free-agent rights are stale; run scripts/build_miami_free_agent_rights.py")
-        league_rights = json.loads((ROOT / "library/2003/league/nba_2003_free_agent_rights.json").read_text(encoding="utf-8"))
-        if any(p["status"] in ("free_agent_restricted", "free_agent_unrestricted")
-               for c in league_rights["clubs"].values() for p in c["free_agents"]):
-            errors.append("league free-agent rights must not carry restricted/unrestricted marks (qualifying offers are June 30 decisions)")
-        bird_names = {"bird": "larry_bird", "early_bird": "early_bird", "non_bird": "non_bird"}
-        league_miami = {p["bbr_id"]: p for p in league_rights["clubs"]["Miami Heat"]["free_agents"]}
-        for p in json.loads((ROOT / RIGHTS_PATH).read_text(encoding="utf-8"))["players"]:
-            other = league_miami.get(p["bbr_id"], {})
-            if (bird_names.get(other.get("bird_class")), other.get("cap_hold_amount"), other.get("qualifying_offer_amount")) != \
-                    (p["bird_status"], p["cap_hold"], p["qualifying_offer"]):
-                errors.append(f"Miami free-agent rights disagree with the league rights file for {p['player']}")
-    except (OSError, ValueError, KeyError) as exc:
-        errors.append(f"cannot validate Miami free-agent rights: {exc}")
+    errors.extend(rights_errors(ROOT))
 
     from runtime.decisions import decision_errors, find_decisions
     for path in find_decisions(ROOT):
@@ -545,6 +578,13 @@ def validate():
     errors.extend(ledger_errors(ROOT))
     from runtime.rotations import holdings_errors
     errors.extend(holdings_errors(ROOT))
+    from runtime.signing import trade_record_errors
+    errors.extend(trade_record_errors(ROOT))
+    from runtime.standing import season_close_errors, standing_errors
+    errors.extend(standing_errors(ROOT))
+    errors.extend(season_close_errors(ROOT))
+    from runtime.consultations import consultation_errors
+    errors.extend(consultation_errors(ROOT))
 
     from runtime.contracts import contract_errors
     errors.extend(contract_errors(ROOT))

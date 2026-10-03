@@ -1,10 +1,13 @@
 import json
+import shutil
+import tempfile
 import unittest
 from copy import deepcopy
 from pathlib import Path
 
+from runtime import signing
 from runtime.season_rules import month_week, next_series_game_number, series_over
-from scripts.validate_repository import finance_errors
+from scripts.validate_repository import finance_errors, rights_errors
 
 ROOT=Path(__file__).resolve().parents[1]
 PLAYER=ROOT/"career/Dwyane_Wade"
@@ -270,6 +273,46 @@ class FinanceProjectionTests(unittest.TestCase):
     def test_no_early_option_result(self):
         self.finance["pending_control_items"][-1]["status"]="declined"
         self.assertTrue(any("option decision must remain pending" in e for e in self.errors()))
+
+
+class RightsCheckTests(unittest.TestCase):
+    """Miami's free-agent rights file against the rule builder: equality at the checkpoint, tolerance afterwards."""
+
+    def copy(self):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        root = Path(tmp.name)
+        shutil.copytree(ROOT / "library", root / "library")
+        shutil.copytree(ROOT / "career", root / "career")
+        return root
+
+    def test_checkpoint_copy_passes_and_drivers_state_is_tolerated(self):
+        root = self.copy()
+        self.assertEqual(rights_errors(root), [])
+        rights_path = root / "career/Dwyane_Wade/2003-04/00_Team/Finances/free_agent_rights.json"
+        state_path = root / "career/Dwyane_Wade/2003-04/current_state.json"
+        data = json.loads(rights_path.read_text())
+        data["players"][0]["re_signed"] = True
+        data["players"][0]["re_signed_date"] = "2003-07-16"
+        rights_path.write_text(json.dumps(data, indent=1) + "\n")
+        self.assertTrue(any("stale" in e for e in rights_errors(root)))          # at June 26 the file must equal the builder
+        writer = signing.Writer(root)
+        signing.open_market(writer, "2003-07-01")
+        writer.commit()
+        state = json.loads(state_path.read_text())
+        state["current_date"] = "2003-07-16"
+        state_path.write_text(json.dumps(state, indent=1) + "\n")
+        data = json.loads(rights_path.read_text())
+        data["players"][0]["re_signed"] = True
+        data["players"][0]["re_signed_date"] = "2003-07-16"
+        data["players"].append(dict(data["players"][1], player="Declined Option", bbr_id="declined01"))   # a row the drivers add
+        rights_path.write_text(json.dumps(data, indent=1) + "\n")
+        self.assertEqual(rights_errors(root), [])
+        data["players"][0]["cap_hold"] += 1
+        rights_path.write_text(json.dumps(data, indent=1) + "\n")
+        errors = rights_errors(root)
+        self.assertTrue(any("cap_hold disagrees with the rule builder" in e for e in errors), errors)
+        self.assertTrue(any("disagree with the league rights file" in e for e in errors), errors)
 
 
 if __name__=="__main__":
