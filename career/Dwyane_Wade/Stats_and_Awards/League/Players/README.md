@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-11-08**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-11-11**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -89,7 +89,7 @@ Card date: **2003-11-08**. 407 registry players, one Markdown card and one inter
 | [Tony Delk](delkto01.md) | Dallas Mavericks | 29 | sourced | [open](delkto01.html) |
 | [Tony Parker](parketo01.md) | San Antonio Spurs | 21 | sourced | [open](parketo01.html) |
 | [Travis Best](besttr01.md) | Dallas Mavericks | 31 | sourced | [open](besttr01.html) |
-| [Troy Bell](belltr01.md) | Memphis Grizzlies (draft rights) | 22 | silhouette | [open](belltr01.html) |
+| [Troy Bell](belltr01.md) | Memphis Grizzlies (draft rights) | 23 | silhouette | [open](belltr01.html) |
 | [Troy Hudson](hudsotr01.md) | Minnesota Timberwolves | 27 | sourced | [open](hudsotr01.html) |
 | [Tyronn Lue](luety01.md) | Orlando Magic | 26 | sourced | [open](luety01.html) |
 
@@ -411,7 +411,7 @@ Card date: **2003-11-08**. 407 registry players, one Markdown card and one inter
 | [John Amaechi](amaecjo01.md) | Houston Rockets | 32 | sourced | [open](amaecjo01.html) |
 | [Kelvin Cato](catoke01.md) | Houston Rockets | 29 | sourced | [open](catoke01.html) |
 | [Ken Johnson](johnske03.md) | Free agent | 25 | sourced | [open](johnske03.html) |
-| [Kendrick Perkins](perkike01.md) | Boston Celtics (draft rights) | 18 | sourced | [open](perkike01.html) |
+| [Kendrick Perkins](perkike01.md) | Boston Celtics (draft rights) | 19 | sourced | [open](perkike01.html) |
 | [Keon Clark](clarkke01.md) | Free agent | 28 | silhouette | [open](clarkke01.html) |
 | [Kevin Willis](willike02.md) | San Antonio Spurs | 41 | sourced | [open](willike02.html) |
 | [Kurt Thomas](thomaku01.md) | New York Knicks | 31 | sourced | [open](thomaku01.html) |

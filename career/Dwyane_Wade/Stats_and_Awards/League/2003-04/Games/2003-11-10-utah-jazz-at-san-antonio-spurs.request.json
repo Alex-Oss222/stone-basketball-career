@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-10-utah-jazz-at-san-antonio-spurs",
+ "game_date": "2003-11-10",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "San Antonio Spurs",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ }
+}

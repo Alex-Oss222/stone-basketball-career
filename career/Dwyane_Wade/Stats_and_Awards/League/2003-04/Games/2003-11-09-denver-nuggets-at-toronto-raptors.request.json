@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-09-denver-nuggets-at-toronto-raptors",
+ "game_date": "2003-11-09",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Toronto Raptors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Denver Nuggets",
+  "rotation": "real"
+ }
+}

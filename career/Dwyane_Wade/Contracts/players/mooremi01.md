@@ -2,9 +2,9 @@
 
 # Contract | Mikki Moore
 
-Known through: 2003-11-08. [Open interactive contract](mooremi01.html#contract) · [Contract history](mooremi01.html#contract-history)
+Known through: 2003-11-11. [Open interactive contract](mooremi01.html#contract) · [Contract history](mooremi01.html#contract-history)
 
-Mikki Moore: free agent expiring. Evidence cutoff: 2003-11-08.
+Mikki Moore: free agent expiring. Evidence cutoff: 2003-11-11.
 
 ## Current contract
 

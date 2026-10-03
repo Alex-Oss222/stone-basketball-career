@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-11-boston-celtics-at-indiana-pacers",
+ "game_date": "2003-11-11",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ }
+}

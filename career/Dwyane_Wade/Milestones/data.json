@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2003-11-08",
+  "as_of": "2003-11-11",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 19,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2003-04-rotation-2003-11-07",
+  "current_event": "2003-11-08-minnesota-timberwolves-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2003-11-08"
+              "2003-11-11"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2003-04-rotation-2003-11-07"
+              "2003-11-08-minnesota-timberwolves-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2003-11-08",
+              "2003-11-11",
               "Current checkpoint",
-              "2003-04-rotation-2003-11-07",
+              "2003-11-08-minnesota-timberwolves-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -308,6 +308,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -316,7 +320,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-08"
+          "value": "2003-11-11"
         },
         {
           "label": "Team",
@@ -602,6 +606,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -610,7 +618,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-08"
+          "value": "2003-11-11"
         },
         {
           "label": "Team",
@@ -949,6 +957,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -957,7 +969,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-08"
+          "value": "2003-11-11"
         },
         {
           "label": "Team",
@@ -1404,6 +1416,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1412,7 +1428,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-08"
+          "value": "2003-11-11"
         },
         {
           "label": "Team",
@@ -1668,6 +1684,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1676,7 +1696,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-08"
+          "value": "2003-11-11"
         },
         {
           "label": "Team",
@@ -1928,6 +1948,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1936,7 +1960,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-08"
+          "value": "2003-11-11"
         },
         {
           "label": "Team",
@@ -2197,6 +2221,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2205,7 +2233,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-08"
+          "value": "2003-11-11"
         },
         {
           "label": "Team",
@@ -2514,6 +2542,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2522,7 +2554,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-08"
+          "value": "2003-11-11"
         },
         {
           "label": "Team",
@@ -2539,7 +2571,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "12 closed game records in 2003-04 through 2003-11-08. Competitions remain separate.",
+      "summary": "13 closed game records in 2003-04 through 2003-11-11. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2566,12 +2598,12 @@
             ],
             [
               "regular",
-              5,
-              19.564956666666667,
-              9.6,
-              2.8,
-              1.4,
-              0.6,
+              6,
+              22.10926388888889,
+              10.5,
+              3.1666666666666665,
+              2.1666666666666665,
+              0.6666666666666666,
               "Complete"
             ]
           ]
@@ -2599,12 +2631,12 @@
             ],
             [
               "regular",
-              13,
-              33,
-              0.3939393939393939,
-              3,
-              12,
-              0.25
+              19,
+              44,
+              0.4318181818181818,
+              6,
+              17,
+              0.35294117647058826
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -2737,6 +2769,16 @@
               {
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md"
+              }
+            ],
+            [
+              "2003-11-08",
+              "regular",
+              "Minnesota Timberwolves",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md"
               }
             ]
           ]
@@ -2919,6 +2961,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2927,7 +2973,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-08"
+          "value": "2003-11-11"
         },
         {
           "label": "Team",
