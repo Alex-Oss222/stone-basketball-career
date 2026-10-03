@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-06-indiana-pacers-at-new-jersey-nets",
+ "game_date": "2003-11-06",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ }
+}

@@ -2,11 +2,11 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2003-11-07**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2003-11-08**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2003-11-07
+## 2003-04 · NBA regular season · through 2003-11-08
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
@@ -236,7 +236,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-04 | San Antonio Spurs | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.result.json) | Not recorded |
 
-## 2003-04 · NBA preseason · through 2003-11-07
+## 2003-04 · NBA preseason · through 2003-11-08
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 

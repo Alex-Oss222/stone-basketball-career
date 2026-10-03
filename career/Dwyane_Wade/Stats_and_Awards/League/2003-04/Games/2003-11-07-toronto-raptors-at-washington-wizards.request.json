@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-07-toronto-raptors-at-washington-wizards",
+ "game_date": "2003-11-07",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Toronto Raptors",
+  "rotation": "real"
+ }
+}

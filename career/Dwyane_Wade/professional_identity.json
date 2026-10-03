@@ -81,6 +81,27 @@
       "availability": "No current restriction recorded in the established profile",
       "source_state": "2003-04/current_state.json",
       "source_event": "2003-04/04_Training_Camp/Wade_Camp_Review.md"
+    },
+    {
+      "as_of": "2003-11-07",
+      "team": "Miami Heat",
+      "league": "NBA",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "jersey": null,
+      "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+      "prior_program": "UConn (simulation canon)",
+      "roster_status": "Under contract",
+      "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option",
+      "role": "Starter; staff plan 34 minutes",
+      "nba_debut": null,
+      "national_team": null,
+      "national_team_eligibility": "Not verified",
+      "availability": "No current restriction recorded in the established profile",
+      "source_state": "2003-04/current_state.json",
+      "source_event": "2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
     }
   ]
 }

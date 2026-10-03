@@ -2,7 +2,7 @@
 
 # Season exit meeting | Dwyane Wade
 
-Career date: 2003-11-07 · Miami Heat · inactive
+Career date: 2003-11-08 · Miami Heat · inactive
 
 [Live milestone desk](index.html#exit_meeting) · [All milestones](README.md)
 
@@ -26,7 +26,7 @@ Activation: The player's season closes and a dated exit meeting is recorded.
 | Discussion | Current evidence | Needed before a conclusion |
 | --- | --- | --- |
 | Strength and limiting possession | Not recorded | Specific game or film references |
-| Communicated role and actual use | Rotation; staff plan 20 minutes | Dated statements and closed minutes |
+| Communicated role and actual use | Starting SG; staff plan 34 minutes | Dated statements and closed minutes |
 | Availability and recovery | No current restriction recorded in the established profile | Current qualified assessment |
 | Contract outlook | rookie_scale_contract | Actual terms, options and next verified gate |
 | Summer priorities | Not recorded | Player selection and staff-supported plan |
@@ -61,15 +61,16 @@ The actual season close and an agreed exit-meeting date.
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/11_November/Week_1/note.md)
+- [Owning event](../2003-04/06_Regular_Season/11_November/Week_2/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
-- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/depth_chart.json)
+- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json)
+- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/rotation.json)
+- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)

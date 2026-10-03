@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-07-los-angeles-clippers-at-denver-nuggets",
+ "game_date": "2003-11-07",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Denver Nuggets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Los Angeles Clippers",
+  "rotation": "real"
+ }
+}
