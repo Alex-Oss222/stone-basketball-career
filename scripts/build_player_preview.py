@@ -310,7 +310,7 @@ def build_preview(root=ROOT):
         notice=payload["notice"], coordinate_system="Feet from basket: x lateral; y toward half court; baseline y=-5.25",
         shots=payload["periods"][0]["shots"]), indent=2) + "\n"
     outputs.update(card_fallbacks(folder, payload))
-    template = (root / "docs/templates/player_cards_preview.html").read_text()
+    template = (Path(__file__).resolve().parents[1] / "runtime/assets/player_cards.html").read_text()
     if template.count("__PLAYER_CARD_DATA__") != 1:
         raise ValueError("player-card HTML template must contain exactly one __PLAYER_CARD_DATA__ token")
     # Escape HTML-significant characters while retaining valid JSON for inline data.

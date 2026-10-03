@@ -1,5 +1,7 @@
 # Build roadmap
 
+**Detailed player screens are active on `milestone-1`.** The normal report build now owns the canonical [milestone desk](../career/Dwyane_Wade/Milestones/README.md) and Shooting/Awards cards. Supported event CLIs refresh them after writes, and Railway serves the same career data at `/career` and `/cards`. The integration adds presentation and source-backed navigation; each existing mechanic retains its own completion status below. Live spatial shooting still requires recorded shot coordinates because the current game engine emits box scores.
+
 Only what the career needs to move forward, in the order the career clock reaches it. World model: real league, simulated Miami (option D, see `AGENTS.md`). An item belongs here only if the career stops or plays wrong without it.
 
 Status: `done`, `next`, `blocked: <what is missing>`, `later`.

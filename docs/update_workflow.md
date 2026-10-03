@@ -8,9 +8,13 @@ Read player cards required for the event. Read finances when contract, cap, free
 
 ## Player milestones
 
-When a dated event creates a genuine player decision, use the relevant [milestone template](templates/player_milestones/README.md): contract, free agency, training, trade update, exit meeting or camp review. Follow its [recording workflow](templates/player_milestones/workflow.md). Show the available choice and next checkpoint, then record the player's response without deciding it for them.
+Open the [active detailed career desk](../career/Dwyane_Wade/Milestones/README.md), or `/career` on the existing Railway service. The nine live screens are generated from dated career records by `runtime/player_milestones.py`; Shooting and Awards use `runtime/player_cards.py`. They are part of the normal report build, not a separate preview command. Full detail is the default.
 
-Club-owned outcomes are notifications unless a verified player right creates a choice. A counteroffer is not an accepted contract, planned training is not completed work, and an expiring contract does not generate a new deal automatically. These templates do not implement the remaining contract, trade or development mechanics.
+When a dated event creates a genuine player decision, use its current milestone page: contract, free agency, training, trade update, exit meeting or camp review. The [milestone templates](templates/player_milestones/README.md) define the detail and the [recording workflow](templates/player_milestones/workflow.md) defines ownership. Show the available choice and next checkpoint, then record the player's response without deciding it for them. Inactive milestones state the missing trigger instead of inventing an offer, appointment, transaction or result.
+
+Club-owned outcomes are notifications unless a verified player right creates a choice. A counteroffer is not an accepted contract, planned training is not completed work, and an expiring contract does not generate a new deal automatically. Existing contract, trade and development workflows own the mechanics; opening a screen never executes them.
+
+The supported event CLIs refresh detailed views after their successful writes. For a manual source-record change, run `python scripts/update_player_reports.py` before committing. `--check` validates freshness without writing. Raw engine sidecars remain noncanonical until the owning game or phase note closes; regeneration does not change that boundary. Missing shot coordinates stay unavailable and never come from the illustrative fixtures.
 
 ## Team changes
 

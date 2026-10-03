@@ -18,6 +18,7 @@ sys.path.insert(0, str(ROOT))
 from runtime.front_office import (age_on, estimated_market_value, player_option_probability, qualifying_offer,
                                   request_override, team_option)
 from runtime.standing import standing_on
+from scripts.refresh_career_views import refresh_career_views
 
 DATE = "2003-06-30"
 SEASON = ROOT / "career/Dwyane_Wade/2003-04"
@@ -99,7 +100,9 @@ def main():
     (OUT / "front_office_decisions.json").write_text(json.dumps(package, indent=1) + "\n")
     for d in draws:
         (OUT / f"{d['event_id']}.decision.json").write_text(json.dumps(d, indent=1) + "\n")
+    refreshed = refresh_career_views(ROOT)
     print(f"{len(package['decisions'])} rule decisions, {len(draws)} engine draws written to {OUT.relative_to(ROOT)}")
+    print(f"Updated {len(refreshed)} detailed career views; open career/Dwyane_Wade/Milestones/index.html.")
 
 
 if __name__ == "__main__":

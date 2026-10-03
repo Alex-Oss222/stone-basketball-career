@@ -20,6 +20,7 @@ from runtime.decisions import decision_errors          # noqa: E402
 from runtime.gm import FrontOffice                     # noqa: E402
 from runtime.market import Market                      # noqa: E402
 from runtime.valuation import read                     # noqa: E402
+from scripts.refresh_career_views import refresh_career_views # noqa: E402
 
 INVITE_DAY, PRESEASON_DAY, EVALUATION_DAY, CUT_DAY = "2003-09-30", "2003-10-05", "2003-10-24", "2003-10-27"
 
@@ -205,7 +206,7 @@ def wade_page(day, grade, line, rotation):
 
 ![Training camp: assignment, evidence and player response](../../../../docs/templates/player_milestones/assets/camp.svg)
 
-[Template](../../../../docs/templates/player_milestones/training_camp.md) · [Camp note](note.md) · [Depth chart](../00_Team/Team/Depth_Chart/depth_chart.json) · [Rotation](../00_Team/Team/Depth_Chart/rotation.json)
+[Live detailed camp review](../../Milestones/index.html#training_camp) · [Shooting and Awards](../../Stats_and_Awards/player_cards.html) · [Camp note](note.md) · [Depth chart](../00_Team/Team/Depth_Chart/depth_chart.json) · [Rotation](../00_Team/Team/Depth_Chart/rotation.json)
 
 | Player / age | Position / club | Review date | Availability |
 | --- | --- | --- | --- |
@@ -251,7 +252,9 @@ def main(argv):
     if len(argv) != 3 or argv[1] != "--write":
         raise SystemExit(__doc__)
     stops = CampRun().write(argv[2])
+    refreshed = refresh_career_views(ROOT)
     print("\n".join(stops) if stops else f"camp stages through {argv[2]} written")
+    print(f"Updated {len(refreshed)} detailed career views; open career/Dwyane_Wade/Milestones/index.html#training_camp.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,70 @@
+<!-- Generated live career view; edit canonical event records and rebuild. -->
+
+# Stats review | Dwyane Wade
+
+Career date: 2003-06-26 · Miami Heat · inactive
+
+[Live milestone desk](index.html#stats_review) · [All milestones](README.md)
+
+0 closed game records in 2003-04 through 2003-06-26. Competitions remain separate.
+
+Activation: A declared, closed game result supplies observed participation and the player box.
+
+## Production by competition
+
+| Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| regular | 0 | N/A | N/A | N/A | N/A | N/A | Complete |
+
+## Pooled shooting
+
+Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A.
+
+| Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
+| --- | --- | --- | --- | --- | --- | --- |
+| regular | 0 | 0 | N/A | 0 | 0 | N/A |
+
+## Closed source games
+
+| Date | Competition | Opponent | Participation | Source |
+| --- | --- | --- | --- | --- |
+| No dated record | N/A | N/A | N/A | N/A |
+
+## Evidence available for decisions
+
+| Question | Required evidence | Current treatment |
+| --- | --- | --- |
+| Period production | Closed simulated boxes | Summed and divided by recorded appearances |
+| Shot locations | Actual coordinates and outcomes | Never invented from a box score |
+| Defense or role improvement | Assignment, film and representative sample | Box-score events alone do not settle it |
+| Training effects | Dated plan and repeated comparable evidence | No automatic ability gain |
+
+## Your next useful question
+
+- Choose a completed period and name the basketball question you want reviewed.
+- Compare the same competition and keep sample size visible.
+- Respond through training and role conversations; do not import historical Wade results.
+
+## Available response paths
+
+- [Open your complete statistics](../Stats_and_Awards/README.md): Follow season, month, week and source-game reports.
+- [Open shooting and player cards](../Stats_and_Awards/player_cards.html): The live card dashboard uses the same canonical source records.
+
+## Next checkpoint
+
+The next declared, closed game result or a chosen completed-period review.
+
+## Evidence
+
+- [Authoritative career checkpoint](../2003-04/current_state.json)
+- [Dated professional identity](../professional_identity.json)
+- [Established player profile](../Dwyane_Wade_Player_Profile.md)
+- [Owning event](../2003-04/09_Draft/note.md)
+- [Dated contract control and fixed rookie-scale reference](../2003-04/00_Team/Finances/contract_schedules.json)
+- [Rookie-scale-only reference: no unpublished cap data](rookie_scale_reference.json)
+- [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
+- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/depth_chart.json)
+- [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
+- [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
+- [Workflow](../../../docs/front_office.md)
+- [Free-agency record](../2003-04/01_Free_Agency/note.md)

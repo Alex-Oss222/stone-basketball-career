@@ -1,5 +1,7 @@
 # Shooting and yearly awards cards
 
+[Active canonical cards](https://stone-basketball-career-production.up.railway.app/cards) now use this design through the normal career report build. [Live source and shot-feed contract](player_statistics.md#active-detailed-cards) documents the integration. The examples below remain isolated design fixtures.
+
 [Interactive sample](examples/player_cards_preview.html) · [Sample reports](examples/player_stats_preview.md) · [Shooting fallback](examples/sample_shooting.md) · [Awards fallback](examples/sample_awards.md)
 
 The sample report strip contains two destinations: **Shooting** and **Awards**. The source box-score table keeps its full statistical columns. The interactive version supports pointer hover, keyboard focus and touch; the Markdown version uses ordinary image links so the navigation also works on GitHub.
@@ -68,7 +70,7 @@ Build the examples from the repository root:
 python scripts/build_player_preview.py
 ```
 
-The HTML is generated from `docs/templates/player_cards_preview.html` and its embedded data. Edit the template or generator, then rebuild. The generated page is self-contained and can be opened locally without a server. GitHub renders the Markdown fallbacks; it displays HTML source rather than running the interactive document.
+The HTML is generated from `runtime/assets/player_cards.html` and its embedded data. The live report builder and the example builder share this presentation template with separate canonical and illustrative payloads. Edit the template or generator, then rebuild. The generated page is self-contained and can be opened locally without a server. GitHub renders the Markdown fallbacks; the deployed `/cards` route runs the current canonical interactive view.
 
 ## Awards, by season
 
