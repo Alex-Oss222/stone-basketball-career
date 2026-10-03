@@ -4,6 +4,8 @@ Dwyane Wade's alternate NBA career. The [current checkpoint](career/Dwyane_Wade/
 
 Opening checkpoint: June 26, 2003, Miami's No. 5 draft pick with unsigned draft rights. Later status comes from the dated career records.
 
+**New to the project (person or assistant)?** Start with [How this repository works](docs/HOW_IT_WORKS.md), then the rules in [AGENTS.md](AGENTS.md).
+
 ## Open the career
 
 **Detailed career desk:** [Open live screens](https://stone-basketball-career-production.up.railway.app/career) · [Detailed career record](career/Dwyane_Wade/Milestones/README.md) · [Shooting, Contract and Awards](https://stone-basketball-career-production.up.railway.app/cards) · [Every player's contract](https://stone-basketball-career-production.up.railway.app/contracts).
