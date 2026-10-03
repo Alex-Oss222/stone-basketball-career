@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-11-03**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-11-04**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -424,7 +424,7 @@ Card date: **2003-11-03**. 407 registry players, one Markdown card and one inter
 | [Mark Blount](blounma01.md) | Boston Celtics | 27 | sourced | [open](blounma01.html) |
 | [Melvin Ely](elyme01.md) | Los Angeles Clippers | 25 | silhouette | [open](elyme01.html) |
 | [Michael Doleac](doleami01.md) | New York Knicks | 26 | sourced | [open](doleami01.html) |
-| [Mikki Moore](mooremi01.md) | Atlanta Hawks | 27 | sourced | [open](mooremi01.html) |
+| [Mikki Moore](mooremi01.md) | Atlanta Hawks | 28 | sourced | [open](mooremi01.html) |
 | [Nazr Mohammed](mohamna01.md) | Atlanta Hawks | 26 | sourced | [open](mohamna01.html) |
 | [Nedzad Sinanovic](sinanne01.md) | Portland Trail Blazers (draft rights) | 20 | sourced | [open](sinanne01.html) |
 | [Nene](hilarne01.md) | Denver Nuggets | 21 | sourced | [open](hilarne01.html) |

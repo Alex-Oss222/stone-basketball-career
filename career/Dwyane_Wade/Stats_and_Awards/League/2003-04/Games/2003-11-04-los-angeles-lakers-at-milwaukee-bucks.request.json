@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-04-los-angeles-lakers-at-milwaukee-bucks",
+ "game_date": "2003-11-04",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ }
+}

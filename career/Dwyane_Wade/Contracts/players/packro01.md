@@ -2,9 +2,9 @@
 
 # Contract | Robert Pack
 
-Known through: 2003-11-03. [Open interactive contract](packro01.html#contract) · [Contract history](packro01.html#contract-history)
+Known through: 2003-11-04. [Open interactive contract](packro01.html#contract) · [Contract history](packro01.html#contract-history)
 
-Robert Pack: free agent expiring. Evidence cutoff: 2003-11-03.
+Robert Pack: free agent expiring. Evidence cutoff: 2003-11-04.
 
 ## Current contract
 
