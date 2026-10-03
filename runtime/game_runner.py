@@ -100,6 +100,25 @@ def freeze_inputs(home, away, journal, **kwargs):
     return home, away, packet, rules, environment
 
 
+def replay_packet(home, away, journal, result, **kwargs):
+    """Reconstruct an already played game's packet without running an old kernel.
+
+    The store serves its first result verbatim across engine upgrades. All dated
+    inputs must still hash to the original journal entry, but the procedure is
+    the version that actually played the game, not the newly deployed version.
+    This is only for checking a stored result; unfinished events go through the
+    current runner and fail closed if their original packet no longer matches.
+    """
+    if result.get("event_id") != kwargs["event_id"]:
+        raise ValueError("stored result does not match the game event")
+    kernel = result.get("kernel")
+    if not isinstance(kernel, str) or not kernel.strip():
+        raise ValueError("stored game result has no kernel version")
+    packet = freeze_inputs(home, away, journal, **kwargs)[2]
+    packet["procedure"] = kernel
+    return packet
+
+
 def _developed(team, season, journal):
     players = []
     for p in team.players:

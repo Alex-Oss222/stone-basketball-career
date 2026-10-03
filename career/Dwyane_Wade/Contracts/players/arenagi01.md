@@ -2,9 +2,9 @@
 
 # Contract | Gilbert Arenas
 
-Known through: 2003-10-27. [Open interactive contract](arenagi01.html#contract) · [Contract history](arenagi01.html#contract-history)
+Known through: 2003-10-28. [Open interactive contract](arenagi01.html#contract) · [Contract history](arenagi01.html#contract-history)
 
-Gilbert Arenas: free agent expiring. Evidence cutoff: 2003-10-27.
+Gilbert Arenas: free agent expiring. Evidence cutoff: 2003-10-28.
 
 ## Current contract
 

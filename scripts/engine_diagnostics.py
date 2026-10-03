@@ -8,16 +8,18 @@ from a hash of the player id, for the same reason. Every non-Miami game of the
 schedule is played on its date with both clubs' real rotations on that date
 (`runtime/rotations.py`), so traded players are with one club at a time.
 
-Usage: python scripts/engine_diagnostics.py [seasons] [--defense-test] [--home-test]
+Usage: python scripts/engine_diagnostics.py [seasons] [--defense-test | --home-test]
+       python scripts/engine_diagnostics.py 4 --check --summary-json /tmp/engine-summary.json
 
-Output names clubs and players: it is for checking the engine, not for the
-career record or the front office (AGENTS.md, option C), so do not commit it.
+Output contains league aggregates only. Diagnostic games are not career
+results or evidence available to the front office (AGENTS.md, option C).
 
 Benchmarks are general NBA figures for the era (judgement, not 2003-04
 results): final-margin SD about 13-14, overtime in about 6% of games, 0.2-0.3
 foul-outs per game, spread of team average margins over a season about 4-5,
 home win rate about 60%.
 """
+import argparse
 import collections
 import hashlib
 import json
@@ -30,6 +32,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from runtime.era import environment_for, rules_for
+from runtime import KERNEL_VERSION
 from runtime.injuries import rest_days
 from runtime.kernel import resolve_game, validate_result
 from runtime.player_stats import load_rating_index
@@ -40,6 +43,10 @@ from runtime.trajectories import develop_profile, needs_development
 SEASON, DATE = "2003-04", "2003-11-05"
 BENCHMARKS = {"margin SD": (13, 14), "overtime rate": (0.05, 0.07), "foul-outs per game": (0.2, 0.3),
               "team net SD": (4, 5), "home win rate": (0.57, 0.63)}
+BOX_TARGETS = (("pts", "points", .03), ("fga", "fga", .03), ("tpa", "three_pa", .06),
+               ("fta", "fta", .06), ("tov", "tov", .06), ("orb", "orb", .06),
+               ("drb", "drb", .06), ("ast", "ast", .06), ("stl", "stl", .06),
+               ("blk", "blk", .06), ("pf", "pf", .06))
 
 
 class League:
@@ -103,6 +110,7 @@ def report(league, seasons):
     margins, overtimes, home_wins, foul_outs = [], 0, 0, 0
     season_margins = collections.defaultdict(lambda: collections.defaultdict(list))
     totals, lines = collections.defaultdict(list), collections.defaultdict(list)
+    transitions = collections.Counter()
     for s, g in play(league, seasons):
         h, a = g["final_score"]["home"], g["final_score"]["away"]
         margins.append(h - a)
@@ -110,6 +118,10 @@ def report(league, seasons):
         season_margins[s][g["away"]].append(a - h)
         overtimes += g["overtimes"] > 0
         home_wins += h > a
+        for side in ("home", "away"):
+            for key, value in g.get("transition_stats", {}).get(side, {}).items():
+                if isinstance(value, (int, float)):
+                    transitions[key] += value
         for side in ("home", "away"):
             for key, value in g["team_stats"][side].items():
                 totals[key].append(value)
@@ -139,9 +151,13 @@ def report(league, seasons):
     print(f"  home margin standard error {statistics.pstdev(margins) / games ** 0.5:.2f} "
           "(use --home-test for a paired measurement)")
     print("  per team per game, simulated vs environment:")
-    for key, target in (("pts", "points"), ("fga", "fga"), ("tpa", "three_pa"), ("fta", "fta"), ("tov", "tov"),
-                        ("orb", "orb"), ("ast", "ast"), ("stl", "stl"), ("blk", "blk"), ("pf", "pf")):
+    for key, target, _ in BOX_TARGETS:
         print(f"    {key:<4} {statistics.mean(totals[key]):6.1f}  {env[target]:6.1f}")
+    shooting = {key: sum(totals[made]) / max(1, sum(totals[attempted]))
+                for key, made, attempted in (("fg_pct", "fgm", "fga"), ("three_pct", "tpm", "tpa"),
+                                              ("ft_pct", "ftm", "fta"))}
+    for key, value in shooting.items():
+        print(f"    {key:<9} {value:.4f}  {env[key]:.4f}")
     print(f"    possessions {statistics.mean(totals['possessions']):.1f} (published pace {env['pace']})")
     inputs = {(name, p["player_id"]): p["minutes"] / max(1, p["games"])
               for name, club in league.rosters.items() for p in club["players"]}
@@ -152,7 +168,16 @@ def report(league, seasons):
           f"{statistics.mean(abs(m - i) for m, i in regulars):.1f} ({len(regulars)} player stints)")
     over = sum(1 for v in lines.values() for m in v if m > 44) / games
     print(f"  player-games over 44 minutes per game: {over:.2f}")
-    return out
+    box = {key: statistics.mean(values) for key, values in totals.items()}
+    errors = [f"{key}: {box[key]:.3f} outside {env[target]:.3f} +/- {tolerance:.0%}"
+              for key, target, tolerance in BOX_TARGETS
+              if abs(box[key] / env[target] - 1) > tolerance]
+    errors += [f"{key}: {value:.4f} outside {env[key]:.4f} +/- 0.0100"
+               for key, value in shooting.items() if abs(value - env[key]) > .01]
+    return {"kernel": KERNEL_VERSION, "season": SEASON, "baseline_season": "2002-03",
+            "seasons": seasons, "games": games, "metrics": out, "box_per_team": box,
+            "shooting": shooting, "environment": env, "calibration_errors": errors,
+            "transitions_per_team": {key: value / (games * 2) for key, value in transitions.items()}}
 
 
 def defense_test(league, seasons):
@@ -169,6 +194,8 @@ def defense_test(league, seasons):
     base, changed = list(play(league, seasons)), list(play(league, seasons, better=better))
     print(f"defense +5 on the floor: {allowed(changed) - allowed(base):+.2f} points allowed per 100 "
           f"({seasons} season(s), same games)")
+    return {"kernel": KERNEL_VERSION, "seasons": seasons, "games": len(base),
+            "defense_change_per_100": allowed(changed) - allowed(base)}
 
 
 def home_test(league, seasons):
@@ -178,14 +205,33 @@ def home_test(league, seasons):
              for (_, g), (_, n) in zip(base, neutral)]
     print(f"home edge (home minus neutral, same games): {statistics.mean(diffs):+.2f} "
           f"+- {statistics.pstdev(diffs) / len(diffs) ** 0.5:.2f} points")
+    return {"kernel": KERNEL_VERSION, "seasons": seasons, "games": len(diffs),
+            "home_edge": statistics.mean(diffs), "standard_error": statistics.pstdev(diffs) / len(diffs) ** 0.5}
 
 
 if __name__ == "__main__":
-    count = int(next((a for a in sys.argv[1:] if a.isdigit()), 5))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("seasons", type=int, nargs="?", default=5)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--defense-test", action="store_true")
+    mode.add_argument("--home-test", action="store_true")
+    parser.add_argument("--summary-json", type=Path, help="write aggregate diagnostics only, never game results")
+    parser.add_argument("--check", action="store_true", help="fail when league box totals or shooting miss the prior-season targets")
+    args = parser.parse_args()
+    if args.seasons < 1:
+        parser.error("seasons must be positive")
+    if args.check and (args.defense_test or args.home_test):
+        parser.error("--check applies to the league calibration report")
     league = League()
-    if "--defense-test" in sys.argv:
-        defense_test(league, count)
-    elif "--home-test" in sys.argv:
-        home_test(league, count)
+    if args.defense_test:
+        summary = defense_test(league, args.seasons)
+    elif args.home_test:
+        summary = home_test(league, args.seasons)
     else:
-        report(league, count)
+        summary = report(league, args.seasons)
+    if args.summary_json:
+        args.summary_json.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    if args.check:
+        for error in summary["calibration_errors"]:
+            print(error, file=sys.stderr)
+        raise SystemExit(bool(summary["calibration_errors"]))

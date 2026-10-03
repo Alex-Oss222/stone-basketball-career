@@ -2,9 +2,9 @@
 
 # Contract | Calbert Cheaney
 
-Known through: 2003-10-27. [Open interactive contract](cheanca01.html#contract) · [Contract history](cheanca01.html#contract-history)
+Known through: 2003-10-28. [Open interactive contract](cheanca01.html#contract) · [Contract history](cheanca01.html#contract-history)
 
-Calbert Cheaney: free agent expiring. Evidence cutoff: 2003-10-27.
+Calbert Cheaney: free agent expiring. Evidence cutoff: 2003-10-28.
 
 ## Current contract
 

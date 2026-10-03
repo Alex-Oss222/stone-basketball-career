@@ -2,9 +2,9 @@
 
 # Contract | Malik Allen
 
-Known through: 2003-10-27. [Open interactive contract](allenma01.html#contract) · [Contract history](allenma01.html#contract-history)
+Known through: 2003-10-28. [Open interactive contract](allenma01.html#contract) · [Contract history](allenma01.html#contract-history)
 
-Malik Allen: free agent expiring. Evidence cutoff: 2003-10-27.
+Malik Allen: free agent expiring. Evidence cutoff: 2003-10-28.
 
 ## Current contract
 

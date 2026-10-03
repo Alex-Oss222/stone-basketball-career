@@ -2,9 +2,9 @@
 
 # Contract | Jon Barry
 
-Known through: 2003-10-27. [Open interactive contract](barryjo01.html#contract) · [Contract history](barryjo01.html#contract-history)
+Known through: 2003-10-28. [Open interactive contract](barryjo01.html#contract) · [Contract history](barryjo01.html#contract-history)
 
-Jon Barry: free agent expiring. Evidence cutoff: 2003-10-27.
+Jon Barry: free agent expiring. Evidence cutoff: 2003-10-28.
 
 ## Current contract
 

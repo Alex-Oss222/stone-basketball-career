@@ -2,9 +2,9 @@
 
 # Contract | Juwan Howard
 
-Known through: 2003-10-27. [Open interactive contract](howarju01.html#contract) · [Contract history](howarju01.html#contract-history)
+Known through: 2003-10-28. [Open interactive contract](howarju01.html#contract) · [Contract history](howarju01.html#contract-history)
 
-Juwan Howard: free agent expiring. Evidence cutoff: 2003-10-27.
+Juwan Howard: free agent expiring. Evidence cutoff: 2003-10-28.
 
 ## Current contract
 

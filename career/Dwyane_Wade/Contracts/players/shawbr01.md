@@ -2,9 +2,9 @@
 
 # Contract | Brian Shaw
 
-Known through: 2003-10-27. [Open interactive contract](shawbr01.html#contract) · [Contract history](shawbr01.html#contract-history)
+Known through: 2003-10-28. [Open interactive contract](shawbr01.html#contract) · [Contract history](shawbr01.html#contract-history)
 
-Brian Shaw: free agent expiring. Evidence cutoff: 2003-10-27.
+Brian Shaw: free agent expiring. Evidence cutoff: 2003-10-28.
 
 ## Current contract
 

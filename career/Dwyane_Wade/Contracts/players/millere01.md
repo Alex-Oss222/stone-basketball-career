@@ -2,9 +2,9 @@
 
 # Contract | Reggie Miller
 
-Known through: 2003-10-27. [Open interactive contract](millere01.html#contract) · [Contract history](millere01.html#contract-history)
+Known through: 2003-10-28. [Open interactive contract](millere01.html#contract) · [Contract history](millere01.html#contract-history)
 
-Reggie Miller: free agent expiring. Evidence cutoff: 2003-10-27.
+Reggie Miller: free agent expiring. Evidence cutoff: 2003-10-28.
 
 ## Current contract
 

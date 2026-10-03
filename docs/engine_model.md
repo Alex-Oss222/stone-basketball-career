@@ -1,6 +1,6 @@
-# Engine model and calibration (kernel 2003.5)
+# Engine model and calibration (kernel 2003.6)
 
-What the possession engine does beyond the per-play rates, why, and how it was checked. Code: `runtime/kernel.py`, `runtime/rotations.py`. Check: `python scripts/engine_diagnostics.py 4`, plus `--defense-test` and `--home-test` (analysis only: made-up entropy, nothing written to the career; its output names clubs and players and is not to be committed).
+What the possession engine does beyond the per-play rates, why, and how it was checked. Code: `runtime/kernel.py`, `runtime/rotations.py`. Check: `python scripts/engine_diagnostics.py 4 --check --summary-json /tmp/engine-summary.json`, plus `--defense-test` and `--home-test` (analysis only: made-up entropy, nothing written to the career). Reports and optional JSON contain league aggregates, never player results for the career or front office.
 
 All constants below are judgement constants unless a source is named. They describe how basketball is played, not any team's results, and none was fitted to a 2003-04 result. This page reports only league-wide measures; per-club and per-player results of the check stay out of the repository (AGENTS.md, option C).
 
@@ -15,6 +15,22 @@ Rebounding already has its own rates, so it is left out to avoid counting it twi
 
 Players without DBPM count as average defenders (0): veteran and rookie estimates, and Wade until his camp grade (roadmap item 9). Legacy 20-80 perimeter/interior grades keep their old small effect.
 
+Kernel 2003.6 divides the shooting part of each player's existing defensive value into interior and perimeter channels. Block rate and steal rate are each measured relative to their league baseline. The specialization tilt is `(blocks - steals) / (blocks + steals + 2)`; the two added baseline events shrink extreme small-sample specialization. Interior and perimeter weights are `1 + tilt` and `1 - tilt`, normalized by the league's two-point and three-point shot values, including and-ones and offensive-rebound continuations. Thus specialization redistributes the shooting budget rather than adding more defense. The turnover budget and rebound probabilities retain their own rates.
+
+Interior means **all two-point shots** here. There is no recorded rim/midrange distinction, and this approximation does not create shot locations. Blocks and steals cannot give a player with zero defensive value new defensive ability. There are still no individual matchups, size mismatches, or lineup chemistry.
+
+## Usage, passing and transition (kernel 2003.6)
+
+**Usage versus efficiency.** The shooter's expected usage is normalized against the five players on the floor. Load above his own profile estimate costs 0.30 make probability per unit of additional possession share (three percentage points for ten additional usage points); lower load provides the corresponding benefit, bounded at six percentage points either way. It applies to two- and three-point shooting, never free-throw accuracy. More minutes at the same possession share do not themselves incur this cost. The rule is the same for Wade and every other player.
+
+**Passer effects.** The four other players' assist rates, relative to the league baseline, change a shooter's make probability by `0.018 × (mean teammate passing quality - 1)`, bounded at 3.5 percentage points. The shooter cannot improve his own shot with his own assist rate. Assists are still credited only after a made basket, so this does not create assists on misses or double-count the passer's box score. Legacy passing grades use a position-normalized fallback.
+
+**Transition.** A credited steal offers a break with probability 70%; a credited defensive rebound offers one with probability 22%. A break uses about seven seconds, with an eight-percentage-point two-point bonus and a two-point three-point bonus relative to half-court play. Dead balls, substitutions, quarter changes, and offensive rebounds reset the opportunity; a late leading team can choose to use the clock. These are event-driven opportunities, not extra possessions added independently of the clock. No player is given a Wade-specific transition boost.
+
+Season shooting rates and pace already include fast breaks. The calibration removes their expected contribution from half-court timing and all make rates before adding the effects to observed breaks. The expected-margin calculation also estimates each club's transition opportunities from its defense, steals and rebounds, so the score effect does not erase that advantage. The result's `transition_stats` records aggregate opportunities by origin, elapsed seconds, attempts, makes and points; it contains no fabricated shot coordinates.
+
+The explicit end-of-period and forced late-three logic also depresses shooting already represented in the source rates. A global regular three-point correction of +0.014 restores the league target; it affects the analytic estimate and played probabilities equally. It is an aggregate calibration constant, never a player-specific correction or a change to historical source data.
+
 ## Rotations and availability (problem E3, roadmap item 8)
 
 A player input has minutes per game when he plays and an availability, the chance he is available for a game (default 1).
@@ -28,6 +44,14 @@ Conflict rules (`AGENTS.md`, world model):
 1. Real Miami transactions are skipped at import. A stint one began is folded into the player's previous club, whose stint extends over it. A player real Miami brought in between seasons, free agents included (chosen by the user), is back on the club he last played for (its successor if the franchise moved or was renamed), for the whole season, with his minutes per game and games played in that last season. One with no previous NBA club stays a free agent.
 2. Players simulated Miami holds on the game's date are taken out of every real club. They come from Miami's dated holdings record (`00_Team/Team/Roster/holdings.json`, next to the register), matched by Basketball-Reference ID (by name only for an entry without one), so a later roster move never changes a game already played. A returned player simulated Miami signs plays for Miami only, and frees no minutes at the club he never really played for.
 3. Departing players' minutes go to arrivals and returned players up to their own previous share; the rest raises the staying players' minutes in proportion to their real minutes. When the arrivals need more than the departing minutes, the difference comes out of the staying players' minutes in the same proportion.
+
+Miami's staff reviews its rotation every fourteen days after the dated camp decision (`runtime/rotation_reviews.py`; [workflow](front_office.md#fortnightly-staff-rotation-reviews)). Each player's closed regular-season production per minute blends with a fixed preseason prior worth 300 minutes. Close starting battles use engine decision packets; clear leaders start without a draw. New dated rotation files apply prospectively, and existing game requests are never rewritten.
+
+Explicit requests may mark five staff starters. The engine records `started` from the actual opening five after availability changes. Injury replacement starts receive the same GS credit as other starts, including in the existing season-close standing calculation. Legacy results without this field retain unknown starts; current lineups cannot fill the gap.
+
+## Engine upgrades and closed games
+
+Kernel 2003.6 adds result fields while retaining schema 1. For a stored game, the service rebuilds and checks all dated inputs under that result's original kernel version, then serves the stored result verbatim. New optional starter inputs are absent from historical packets unless explicitly supplied. Editing an already played request still fails its journal hash check. An old journal entry without a saved result fails closed across a kernel change; it must not be silently redrawn under the new rules.
 
 ## Late game (problem E4)
 
@@ -80,5 +104,30 @@ Four seasons of the real 2003-04 schedule without Miami's games (4,428 games, 79
 Box totals per team: FGA 81.1 (80.8), FTA 24.8 (24.4), turnovers 15.2 (14.9), offensive rebounds 12.1 (12.0), assists 21.7 (21.5), fouls 22.1 (21.8); environment values in brackets. Three-point attempts run at 15.1 against 14.7: the 2003-04 players' own three-point rates, weighted by their attempts, are about 3% above the 2002-03 environment.
 
 Later kernels (the record above was measured on 2003.3): with team pace and back-to-backs (2003.5), three seasons give margin SD 13.1, overtime 5.0%, home win 61.2%, foul-outs 0.22 and club spread 4.6.
+
+### Kernel 2003.6 recalibration
+
+The reproducible four-season check covers 4,428 non-Miami games (8,856 team boxes). The same schedule and diagnostic entropy were run before the change on 2003.5. All result invariants passed. `--check` passed with its declared limits: scoring and FGA within 3% of the prior-season environment, other box counts within 6%, and aggregate shooting percentages within one percentage point. These are Monte Carlo acceptance bands, not claims of exact equality.
+
+| Measure | 2003.5 before change | 2003.6 | Prior-season target / era benchmark |
+| --- | ---: | ---: | ---: |
+| Points per team | 94.82 | 95.01 | 95.1 |
+| FGA per team | 81.2 | 80.88 | 80.8 |
+| Three-point attempts per team | 15.2 | 15.11 | 14.7 |
+| Free-throw attempts per team | 25.0 | 24.78 | 24.4 |
+| Turnovers per team | 15.1 | 15.16 | 14.9 |
+| Offensive rebounds per team | 12.2 | 12.11 | 12.0 |
+| Assists per team | 21.6 | 21.70 | 21.5 |
+| Margin SD | 13.11 | 13.24 | 13–14 |
+| Overtime games | 5.4% | 5.2% | 5–7% |
+| Home win rate | 60.6% | 60.8% | 57–63% |
+| Foul-outs per game | 0.229 | 0.225 | 0.2–0.3 |
+| Spread of club average margins | 4.59 | 4.55 | 4–5 |
+
+New aggregate shooting: FG 43.89% (target 44.2%), three-point 35.21% (34.9%), FT 75.46% (75.8%). Defensive rebounds 30.45 (30.3), steals 8.24 (7.9), blocks 5.15 (5.0), fouls 22.09 (21.8). There are 9.83 recorded transition possessions per team, averaging 7.02 seconds. Box-counted possessions remain 95.10 against the published pace estimator's 91.0; as before, the clock is calibrated to box totals and these definitions differ.
+
+Paired checks used three seasons each (3,321 pairs): +5 defensive value on the floor reduced opponent scoring by **4.61 points per 100 possessions**; home versus neutral court added **3.18 ± 0.21 points** (standard error). Synthetic usage tests kept the focal player's estimate fixed while reducing teammates' usage: across 400 games per scenario, his attempts rose 67.6% and shooting fell from 43.70% to 40.50%. That test concerns the model's response to load, not a prediction for Wade.
+
+Commands: `python scripts/engine_diagnostics.py 4 --check`; `python scripts/engine_diagnostics.py 3 --defense-test`; `python scripts/engine_diagnostics.py 3 --home-test`; `python -m unittest tests.test_shot_creation -q`. Diagnostic files stay outside the career, and no real 2003-04 results were used as calibration targets.
 
 Known gaps: from 2004-05, players real Miami traded away between seasons still follow history, because the season tables cannot tell a trade from a free-agent move (roadmap item 8).

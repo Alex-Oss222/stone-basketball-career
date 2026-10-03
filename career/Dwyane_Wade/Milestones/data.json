@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2003-10-27",
+  "as_of": "2003-10-28",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -18,7 +18,7 @@
       "title": "Your career calendar",
       "status": "active",
       "trigger": "The authoritative current date and recorded event determine what is open.",
-      "summary": "Dwyane Wade is at 04 Training Camp. All milestone pages remain accessible; inactive pages explain their opening event.",
+      "summary": "Dwyane Wade is at 06 Regular Season. All milestone pages remain accessible; inactive pages explain their opening event.",
       "sections": [
         {
           "title": "What is happening now",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2003-10-27"
+              "2003-10-28"
             ],
             [
               "Team",
@@ -64,13 +64,13 @@
           ],
           "rows": [
             [
-              "2003-10-27",
+              "2003-10-28",
               "Current checkpoint",
               "2003-10-27-camp-signings-corrected",
               "Recorded",
               {
                 "label": "Owning event",
-                "href": "../2003-04/04_Training_Camp/note.md"
+                "href": "../2003-04/06_Regular_Season/10_October/Week_4/note.md"
               }
             ],
             [
@@ -177,7 +177,7 @@
       "actions": [
         {
           "label": "Open the current event",
-          "href": "../2003-04/04_Training_Camp/note.md",
+          "href": "../2003-04/06_Regular_Season/10_October/Week_4/note.md",
           "description": "Read the owning career note and record the player's actual response when one is due."
         },
         {
@@ -201,7 +201,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/04_Training_Camp/note.md"
+          "href": "../2003-04/06_Regular_Season/10_October/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -222,6 +222,10 @@
         {
           "label": "Offseason player decisions and events",
           "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
           "label": "Recorded camp roster",
@@ -288,7 +292,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-27"
+          "value": "2003-10-28"
         },
         {
           "label": "Team",
@@ -467,7 +471,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/04_Training_Camp/note.md"
+          "href": "../2003-04/06_Regular_Season/10_October/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -488,6 +492,10 @@
         {
           "label": "Offseason player decisions and events",
           "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
           "label": "Recorded camp roster",
@@ -554,7 +562,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-27"
+          "value": "2003-10-28"
         },
         {
           "label": "Team",
@@ -786,7 +794,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/04_Training_Camp/note.md"
+          "href": "../2003-04/06_Regular_Season/10_October/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -807,6 +815,10 @@
         {
           "label": "Offseason player decisions and events",
           "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
           "label": "Recorded camp roster",
@@ -873,7 +885,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-27"
+          "value": "2003-10-28"
         },
         {
           "label": "Team",
@@ -1213,7 +1225,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/04_Training_Camp/note.md"
+          "href": "../2003-04/06_Regular_Season/10_October/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1234,6 +1246,10 @@
         {
           "label": "Offseason player decisions and events",
           "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
           "label": "Recorded camp roster",
@@ -1300,7 +1316,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-27"
+          "value": "2003-10-28"
         },
         {
           "label": "Team",
@@ -1449,7 +1465,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/04_Training_Camp/note.md"
+          "href": "../2003-04/06_Regular_Season/10_October/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1470,6 +1486,10 @@
         {
           "label": "Offseason player decisions and events",
           "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
           "label": "Recorded camp roster",
@@ -1536,7 +1556,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-27"
+          "value": "2003-10-28"
         },
         {
           "label": "Team",
@@ -1657,7 +1677,7 @@
       "actions": [
         {
           "label": "Open the current event discussion",
-          "href": "../2003-04/04_Training_Camp/note.md",
+          "href": "../2003-04/06_Regular_Season/10_October/Week_4/note.md",
           "description": "Record a dated reaction to an actual transaction."
         },
         {
@@ -1681,7 +1701,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/04_Training_Camp/note.md"
+          "href": "../2003-04/06_Regular_Season/10_October/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1702,6 +1722,10 @@
         {
           "label": "Offseason player decisions and events",
           "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
           "label": "Recorded camp roster",
@@ -1768,7 +1792,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-27"
+          "value": "2003-10-28"
         },
         {
           "label": "Team",
@@ -1922,7 +1946,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/04_Training_Camp/note.md"
+          "href": "../2003-04/06_Regular_Season/10_October/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1943,6 +1967,10 @@
         {
           "label": "Offseason player decisions and events",
           "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
           "label": "Recorded camp roster",
@@ -2009,7 +2037,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-27"
+          "value": "2003-10-28"
         },
         {
           "label": "Team",
@@ -2211,7 +2239,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/04_Training_Camp/note.md"
+          "href": "../2003-04/06_Regular_Season/10_October/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2232,6 +2260,10 @@
         {
           "label": "Offseason player decisions and events",
           "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
           "label": "Recorded camp roster",
@@ -2298,7 +2330,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-27"
+          "value": "2003-10-28"
         },
         {
           "label": "Team",
@@ -2315,7 +2347,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "7 closed game records in 2003-04 through 2003-10-27. Competitions remain separate.",
+      "summary": "7 closed game records in 2003-04 through 2003-10-28. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2538,7 +2570,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/04_Training_Camp/note.md"
+          "href": "../2003-04/06_Regular_Season/10_October/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2559,6 +2591,10 @@
         {
           "label": "Offseason player decisions and events",
           "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
           "label": "Recorded camp roster",
@@ -2625,7 +2661,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-27"
+          "value": "2003-10-28"
         },
         {
           "label": "Team",

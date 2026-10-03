@@ -116,7 +116,21 @@ Proposals to Miami from real clubs and injuries in the value are not built; the 
 
 ## Regular-season games (roadmap items 10 and 11)
 
-Once the camp decision is written, `python scripts/build_season_games.py --write <date>` writes Miami's game notes and requests on their dates from `rotation.json` (injured players out, the depth chart's next man up, Wade's grade while in force) and `python scripts/build_league_slate.py --write <date>` writes the request for every other club's game; both are described in `runtime/README.md` (Game builders). The front office changes Miami's rotation only by a dated new `rotation.json`, which the builder reads for games from that date; a written request is never changed.
+Once the camp decision is written, `python scripts/build_season_games.py --write <date>` writes Miami's game notes and requests from the latest staff rotation dated on or before each game (injured players out, the depth chart's next man up, Wade's grade while in force). `python scripts/build_league_slate.py --write <date>` writes the request for every other club's game; both are described in `runtime/README.md` (Game builders). A written request is never changed. The Miami builder stops before a game whose due staff review remains unresolved.
+
+## Fortnightly staff rotation reviews
+
+`python scripts/review_rotation.py --write <date>` processes reviews every fourteen days after the camp rotation's `as_of` date, through the final regular-season game. For an October 24 camp decision, the first reviews are November 7 and November 21. The command cannot pass the career clock, advance it, or play games. `--check <date>` reports due work and validates existing reviews without writing.
+
+Before each review, every earlier scheduled Miami game must have a played note declaring its terminated result, or a canceled note with a reason. Raw result sidecars and games on or after the review day are excluded. The staff freezes each source path and hash alongside its assessment.
+
+The rating uses NBA efficiency—points, rebounds, assists, steals and blocks, less missed field goals, missed free throws and turnovers—per 30 minutes. Each player's fixed camp staff estimate contributes 300 prior minutes. The score is `(preseason estimate × 300 + closed efficiency × 30) / (300 + closed minutes)`. Every review starts from that same preseason prior, so earlier reviews do not count the evidence twice. A player with 30 closed minutes gets 9.1% weight on those results; at 300 minutes the weights are equal. New arrivals without a camp score need a dated staff estimate in `Depth_Chart/preseason_estimates.json`, with `players` entries containing `player`, `as_of` and `score`.
+
+At each primary position, a clear leader takes the starting job. If the top two scores differ by at most 10% of their absolute scale (with a floor of one), the engine draws the winner. A tie is 50–50; the leader's probability rises to 75% at the threshold. Eddie Jones has no incumbent or seniority bonus; Wade has no draft-slot or protagonist bonus in these reviews. Their frozen preseason assessments are treated by the same formula as everyone else's.
+
+Records live under `00_Team/Team/Depth_Chart/Reviews/YYYY-MM-DD/`: immutable `review.json`, battle `*.decision.json` requests and checked engine answers, then `depth_chart.json` and a 240-minute `rotation.json`. Submit pending battle requests through the existing authorized engine decision workflow and run the review command again after collection. No rotation is completed until every required answer is present. The original camp files remain the baseline; subsequent review files select the rotation in force for each new game.
+
+An injured starter's healthy depth-chart replacement is explicitly marked as a starter in the game request. The engine's actual opening-five flags feed starts in reports and the established season-close standing rule. A later staff decision cannot rewrite a played game's lineup or start credit.
 
 ## Wade's rookie contract (roadmap item 5)
 

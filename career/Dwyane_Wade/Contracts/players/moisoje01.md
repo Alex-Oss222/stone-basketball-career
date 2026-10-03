@@ -2,9 +2,9 @@
 
 # Contract | Jerome Moiso
 
-Known through: 2003-10-27. [Open interactive contract](moisoje01.html#contract) · [Contract history](moisoje01.html#contract-history)
+Known through: 2003-10-28. [Open interactive contract](moisoje01.html#contract) · [Contract history](moisoje01.html#contract-history)
 
-Jerome Moiso: free agent expiring. Evidence cutoff: 2003-10-27.
+Jerome Moiso: free agent expiring. Evidence cutoff: 2003-10-28.
 
 ## Current contract
 

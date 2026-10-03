@@ -44,6 +44,8 @@ Roster means the current team-control register at the stated date. Expiring cont
 
 Depth chart is a working basketball view, not a user choice and not a promise of minutes. At the June 26 checkpoint it carries the just-completed 2002-03 positional order and leaves the two new draft picks unassigned until the coaching staff makes a new decision.
 
+During the regular season, the staff reviews the roster every fourteen days after its dated camp decision. Run `scripts/review_rotation.py` before building games past a due review. Rank closed production per minute blended with fixed preseason estimates; use the engine's journaled starting-battle decisions when the leaders are close. Apply the same rule to Eddie Jones, Wade and every other player, without a seniority or draft-slot bonus. Save each new rotation under its review date and preserve earlier requests/results. Actual injury replacement starts count toward GS and the established season-close standing rule. See `docs/front_office.md`, Fortnightly staff rotation reviews.
+
 ## No hindsight
 
 Do not import:

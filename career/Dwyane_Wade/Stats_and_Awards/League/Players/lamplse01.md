@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `lamplse01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2003-10-27 · **Club on this date:** Miami Heat · **Basis:** held by Miami (held until the June 30 team-option decision; closed then if declined) · **League:** NBA  
+**Card date:** 2003-10-28 · **Club on this date:** Miami Heat · **Basis:** held by Miami (held until the June 30 team-option decision; closed then if declined) · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #21 · **Born:** 1979-09-03 · **Age on card date:** 24  
 **Registry ID:** `lamplse01` · [Basketball-Reference page](https://www.basketball-reference.com/players/l/lamplse01.html) · ESPN ID 1010
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `lampls
 
 ## Simulated statistics
 
-As of **2003-10-27**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2003-10-28**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -119,4 +119,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2003-10-27. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2003-10-28. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

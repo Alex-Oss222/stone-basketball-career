@@ -24,6 +24,11 @@ A club is one of:
   (`runtime/rotations.py`, world model D);
 * a `baseline` library file, from which `runtime.league.baseline_team` builds a
   conventional rotation (the older end-of-2002-03 default).
+
+An explicit rotation may give every player a `starter` boolean, with five
+true values. These are the staff's starters for this game, including injury
+replacements. The engine records the actual opening five in its closed box;
+historical requests without these flags keep their original lineup policy.
 """
 import json
 from pathlib import Path
@@ -78,14 +83,21 @@ def _club(spec, actives, root, rating_index, season=None, game_date=None):
     simulated = spec["team"] == SIMULATED_CLUB
     ages = simulated_ages(season, game_date, root) if simulated and season and game_date else {}
     players = []
+    starter_flags = [p.get("starter") for p in spec["players"]]
+    explicit_starters = any("starter" in p for p in spec["players"])
+    if explicit_starters and any(type(flag) is not bool for flag in starter_flags):
+        raise ValueError(f"{spec['team']}: starter must be a boolean for every player when supplied")
     for p in spec["players"]:
-        unknown = set(p) - {"player_id", "bbr_id", "position", "minutes", "ratings"}
+        unknown = set(p) - {"player_id", "bbr_id", "position", "minutes", "ratings", "starter"}
         if unknown:
             raise ValueError(f"{spec['team']}: unknown player fields {sorted(unknown)}")
         profile = rating_index.engine_profile(p["player_id"], p.get("bbr_id")) if rating_index else {}
         players.append(PlayerInput(p["player_id"], p["position"], p["minutes"], dict(p.get("ratings", {})), profile,
                                    age=ages.get(alias(p["player_id"]))))
-    return TeamInput(spec["team"], tuple(players), rest_days=rest, injuries=simulated)
+    starters = tuple(p["player_id"] for p in spec["players"] if p.get("starter") is True)
+    if explicit_starters and len(starters) != 5:
+        raise ValueError(f"{spec['team']}: exactly five players must be marked starter")
+    return TeamInput(spec["team"], tuple(players), rest_days=rest, injuries=simulated, starters=starters)
 
 
 def load_request(path, root=ROOT):

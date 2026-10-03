@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `brunsri01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2003-10-27 · **Club on this date:** Toronto Raptors · **Basis:** signing to Toronto Raptors on 2003-08-13 (world data) · **League:** NBA  
+**Card date:** 2003-10-28 · **Club on this date:** Toronto Raptors · **Basis:** signing to Toronto Raptors on 2003-08-13 (world data) · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #9 · **Born:** 1972-06-14 · **Age on card date:** 31  
 **Registry ID:** `brunsri01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/brunsri01.html) · ESPN ID 106
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `brunsr
 
 ## Simulated statistics
 
-As of **2003-10-27**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2003-10-28**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -119,4 +119,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2003-10-27. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2003-10-28. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

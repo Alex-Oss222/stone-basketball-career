@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `howarju01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2003-10-27 · **Club on this date:** Orlando Magic · **Basis:** signing to Orlando Magic on 2003-07-16 (world data) · **League:** NBA  
+**Card date:** 2003-10-28 · **Club on this date:** Orlando Magic · **Basis:** signing to Orlando Magic on 2003-07-16 (world data) · **League:** NBA  
 **Position:** PF (Power forward) · **Jersey:** #5 · **Born:** 1973-02-07 · **Age on card date:** 30  
 **Registry ID:** `howarju01` · [Basketball-Reference page](https://www.basketball-reference.com/players/h/howarju01.html) · ESPN ID 351
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `howarj
 
 ## Simulated statistics
 
-As of **2003-10-27**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2003-10-28**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -119,4 +119,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2003-10-27. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2003-10-28. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
