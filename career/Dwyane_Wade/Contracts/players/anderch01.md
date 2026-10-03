@@ -2,9 +2,9 @@
 
 # Contract | Chris Andersen
 
-Known through: 2003-06-26. [Open interactive contract](anderch01.html#contract) · [Contract history](anderch01.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](anderch01.html#contract) · [Contract history](anderch01.html#contract-history)
 
-Chris Andersen: free agent expiring. Evidence cutoff: 2003-06-26.
+Chris Andersen: free agent expiring. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 

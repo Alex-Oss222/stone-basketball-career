@@ -2,9 +2,9 @@
 
 # Contract | Karl Malone
 
-Known through: 2003-06-26. [Open interactive contract](malonka01.html#contract) · [Contract history](malonka01.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](malonka01.html#contract) · [Contract history](malonka01.html#contract-history)
 
-Karl Malone: free agent expiring. Evidence cutoff: 2003-06-26.
+Karl Malone: free agent expiring. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 

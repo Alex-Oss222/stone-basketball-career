@@ -14,10 +14,10 @@
     "photo_url": null,
     "initials": "DW",
     "status": "Draft rights; unsigned",
-    "cutoff": "2003-06-26"
+    "cutoff": "2003-06-30"
   },
-  "clock": "2003-06-26",
-  "notice": "Career records through 2003-06-26. Closed games, recorded contracts and earned awards. Missing evidence remains explicit.",
+  "clock": "2003-06-30",
+  "notice": "Career records through 2003-06-30. Closed games, recorded contracts and earned awards. Missing evidence remains explicit.",
   "links": {
     "stats": "README.md",
     "shooting": "Shooting.md",
@@ -69,14 +69,14 @@
   "periods": [
     {
       "id": "regular-2003-04-season",
-      "label": "2003-04 · NBA regular season · through 2003-06-26",
+      "label": "2003-04 · NBA regular season · through 2003-06-30",
       "kind": "season",
       "season": "2003-04",
       "competition": "regular",
       "competition_label": "NBA regular season",
       "start": "2003-06-01",
-      "end": "2003-06-26",
-      "cutoff": "2003-06-26",
+      "end": "2003-06-30",
+      "cutoff": "2003-06-30",
       "games": 0,
       "appearances": 0,
       "dnp": 0,
@@ -316,7 +316,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Draft rights; unsigned",
-        "cutoff": "2003-06-26"
+        "cutoff": "2003-06-30"
       },
       "geometry_supported": true,
       "source_note": "No closed games in this competition at the current career checkpoint. No appearance or shot sample is implied."
@@ -329,7 +329,7 @@
         "id": "2003-04",
         "label": "2003-04",
         "season": "2003-04",
-        "cutoff": "2003-06-26",
+        "cutoff": "2003-06-30",
         "records": [],
         "identity": {
           "name": "Dwyane Wade",
@@ -344,23 +344,23 @@
           "photo_url": null,
           "initials": "DW",
           "status": "Draft rights; unsigned",
-          "cutoff": "2003-06-26"
+          "cutoff": "2003-06-30"
         },
-        "notice": "Only earned annual awards announced on or before 2003-06-26 appear. Weekly, monthly and unclassified recognition remains in the full award register."
+        "notice": "Only earned annual awards announced on or before 2003-06-30 appear. Weekly, monthly and unclassified recognition remains in the full award register."
       }
     ]
   },
   "contracts": {
-    "as_of": "2003-06-26",
+    "as_of": "2003-06-30",
     "player_id": "wadedw01",
     "status": "unsigned_first_round_draft_rights",
-    "summary": "Dwyane Wade: unsigned first round draft rights. Evidence cutoff: 2003-06-26.",
+    "summary": "Dwyane Wade: unsigned first round draft rights. Evidence cutoff: 2003-06-30.",
     "current": null,
     "history": [],
     "metrics": [
       {
         "label": "Career date",
-        "value": "2003-06-26"
+        "value": "2003-06-30"
       },
       {
         "label": "Recorded contracts",
@@ -542,7 +542,7 @@
       "history_complete": false,
       "recorded_contract_count": 0,
       "current_contract_verified": false,
-      "as_of": "2003-06-26",
+      "as_of": "2003-06-30",
       "note": "Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed."
     }
   }

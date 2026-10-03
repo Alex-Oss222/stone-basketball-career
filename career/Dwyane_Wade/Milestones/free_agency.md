@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2003-06-26 · Miami Heat · inactive
+Career date: 2003-06-30 · Miami Heat · inactive
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -64,7 +64,7 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/09_Draft/note.md)
+- [Free-agency record](../2003-04/01_Free_Agency/note.md)
 - [Dated contract control and fixed rookie-scale reference](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie-scale-only reference: no unpublished cap data](rookie_scale_reference.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
@@ -72,5 +72,4 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Workflow](../../../docs/front_office.md)
-- [Free-agency record](../2003-04/01_Free_Agency/note.md)
 - [Dated milestone working records and player replies](../milestones.json)

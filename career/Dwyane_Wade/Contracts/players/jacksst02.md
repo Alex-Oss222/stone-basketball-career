@@ -2,9 +2,9 @@
 
 # Contract | Stephen Jackson
 
-Known through: 2003-06-26. [Open interactive contract](jacksst02.html#contract) · [Contract history](jacksst02.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](jacksst02.html#contract) · [Contract history](jacksst02.html#contract-history)
 
-Stephen Jackson: free agent expiring. Evidence cutoff: 2003-06-26.
+Stephen Jackson: free agent expiring. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 

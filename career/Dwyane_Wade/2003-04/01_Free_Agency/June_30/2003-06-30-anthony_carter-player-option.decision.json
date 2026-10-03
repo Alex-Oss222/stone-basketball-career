@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-06-30-anthony_carter-player-option",
+ "date": "2003-06-30",
+ "question": "Does Anthony Carter exercise his 2003-04 player option of $4,100,000?",
+ "decider": "Anthony Carter (simulated player)",
+ "options": {
+  "exercise": 0.645,
+  "decline": 0.355
+ },
+ "basis": "Option $4,100,000 against an estimated market value of $2,616,793 (912 minutes in 2002-03; minimum plus a minutes-proportional share of the $4,917,000 mid-level). runtime/front_office.py, provisional."
+}

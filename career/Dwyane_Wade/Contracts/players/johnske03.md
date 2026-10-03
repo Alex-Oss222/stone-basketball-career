@@ -2,9 +2,9 @@
 
 # Contract | Ken Johnson
 
-Known through: 2003-06-26. [Open interactive contract](johnske03.html#contract) · [Contract history](johnske03.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](johnske03.html#contract) · [Contract history](johnske03.html#contract-history)
 
-Ken Johnson: team option pending. Evidence cutoff: 2003-06-26.
+Ken Johnson: team option pending. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 

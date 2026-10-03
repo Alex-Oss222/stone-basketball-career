@@ -2,9 +2,9 @@
 
 # Contract | Voshon Lenard
 
-Known through: 2003-06-26. [Open interactive contract](lenarvo01.html#contract) · [Contract history](lenarvo01.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](lenarvo01.html#contract) · [Contract history](lenarvo01.html#contract-history)
 
-Voshon Lenard: free agent expiring. Evidence cutoff: 2003-06-26.
+Voshon Lenard: free agent expiring. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 
