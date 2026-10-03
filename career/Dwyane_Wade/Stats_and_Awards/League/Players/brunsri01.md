@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `brunsr
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/brunsri01.html#contract) ([text](../../../Contracts/players/brunsri01.md)).
+
 **2002-03 (recorded, CHI):** 17 G, 0 GS, 11.5 MPG, 3.5 PPG, 1.1 RPG, 2.1 APG, 0.6 SPG, 0.2 BPG, 1.0 TOV, FG 46.0%.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

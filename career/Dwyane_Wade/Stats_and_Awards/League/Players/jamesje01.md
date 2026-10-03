@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jamesj
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $5,000,600) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jamesje01.html#contract) ([text](../../../Contracts/players/jamesje01.md)).
+
 **2002-03 (recorded, SEA):** 51 G, 16 GS, 15.0 MPG, 5.4 PPG, 4.2 RPG, 0.5 APG, 0.2 SPG, 1.6 BPG, 1.5 TOV, FG 47.8%.
 
 **Colours:** header uses Seattle SuperSonics colours (#00573f / #f6be00) for the season starting 2003; presentation only.

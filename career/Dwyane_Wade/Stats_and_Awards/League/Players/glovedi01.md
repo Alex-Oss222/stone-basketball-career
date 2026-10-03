@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `gloved
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/glovedi01.html#contract) ([text](../../../Contracts/players/glovedi01.md)).
+
 **2002-03 (recorded, ATL):** 76 G, 42 GS, 24.9 MPG, 9.7 PPG, 3.7 RPG, 1.9 APG, 0.9 SPG, 0.2 BPG, 1.4 TOV, FG 42.7%.
 
 **Colours:** header uses Atlanta Hawks colours (#c8102e / #ffcd00) for the season starting 2003; presentation only.

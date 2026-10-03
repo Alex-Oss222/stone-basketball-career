@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `johnsk
 
 **Contract/control:** 2003-04 team option pending; through 2003-04 (2003-04 scheduled $563,679) (league contract inventory status `team_option_pending`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/johnske03.html#contract) ([text](../../../Contracts/players/johnske03.md)).
+
 **2002-03 (recorded, MIA):** 16 G, 0 GS, 9.8 MPG, 2.0 PPG, 2.0 RPG, 0.0 APG, 0.1 SPG, 0.8 BPG, 0.4 TOV, FG 40.5%.
 
 **Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2003; presentation only.

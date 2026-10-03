@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `salmoj
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $865,320) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/salmojo01.html#contract) ([text](../../../Contracts/players/salmojo01.md)).
+
 **2002-03 (recorded, PHI):** 64 G, 1 GS, 7.9 MPG, 2.1 PPG, 0.9 RPG, 0.7 APG, 0.3 SPG, 0.1 BPG, 0.5 TOV, FG 41.4%.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

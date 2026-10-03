@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mcinnj
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $3,300,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mcinnje01.html#contract) ([text](../../../Contracts/players/mcinnje01.md)).
+
 **2002-03 (recorded, POR):** 75 G, 1 GS, 17.5 MPG, 5.8 PPG, 1.3 RPG, 2.3 APG, 0.3 SPG, 0.0 BPG, 1.0 TOV, FG 44.4%.
 
 **Colours:** header uses Portland Trail Blazers colours (#c8102e / #010101) for the season starting 2003; presentation only.

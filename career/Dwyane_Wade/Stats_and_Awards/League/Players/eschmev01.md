@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `eschme
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $3,169,600) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/eschmev01.html#contract) ([text](../../../Contracts/players/eschmev01.md)).
+
 **2002-03 (recorded, DAL):** 17 G, 3 GS, 7.9 MPG, 1.0 PPG, 1.7 RPG, 0.4 APG, 0.6 SPG, 0.4 BPG, 0.4 TOV, FG 36.8%.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

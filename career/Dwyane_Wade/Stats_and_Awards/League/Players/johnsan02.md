@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `johnsa
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/johnsan02.html#contract) ([text](../../../Contracts/players/johnsan02.md)).
+
 **2002-03 (recorded, NJN):** 66 G, 2 GS, 12.8 MPG, 4.1 PPG, 1.2 RPG, 1.3 APG, 0.6 SPG, 0.1 BPG, 0.6 TOV, FG 44.6%.
 
 **Colours:** header uses New Jersey Nets colours (#041e42 / #ba0c2f) for the season starting 2003; presentation only.

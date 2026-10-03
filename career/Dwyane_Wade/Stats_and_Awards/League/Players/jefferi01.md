@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jeffer
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,586,280) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jefferi01.html#contract) ([text](../../../Contracts/players/jefferi01.md)).
+
 **2002-03 (recorded, NJN):** 80 G, 80 GS, 36.0 MPG, 15.5 PPG, 6.4 RPG, 2.5 APG, 1.0 SPG, 0.6 BPG, 1.9 TOV, FG 50.1%.
 
 **Colours:** header uses New Jersey Nets colours (#041e42 / #ba0c2f) for the season starting 2003; presentation only.

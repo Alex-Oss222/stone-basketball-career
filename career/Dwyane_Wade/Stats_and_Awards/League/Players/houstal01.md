@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `housta
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $15,937,500) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/houstal01.html#contract) ([text](../../../Contracts/players/houstal01.md)).
+
 **2002-03 (recorded, NYK):** 82 G, 82 GS, 37.9 MPG, 22.5 PPG, 2.8 RPG, 2.7 APG, 0.7 SPG, 0.1 BPG, 2.2 TOV, FG 44.5%.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

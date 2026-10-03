@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `thomat
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $11,825,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/thomati01.html#contract) ([text](../../../Contracts/players/thomati01.md)).
+
 **2002-03 (recorded, MIL):** 80 G, 70 GS, 29.5 MPG, 13.3 PPG, 4.9 RPG, 1.3 APG, 0.9 SPG, 0.6 BPG, 1.7 TOV, FG 44.3%.
 
 **Colours:** header uses Milwaukee Bucks colours (#702f8a / #2c5234) for the season starting 2003; presentation only.

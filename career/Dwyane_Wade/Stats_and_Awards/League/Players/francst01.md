@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `francs
 
 **Contract/control:** Under contract; through 2008-09 (2003-04 scheduled $10,960,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/francst01.html#contract) ([text](../../../Contracts/players/francst01.md)).
+
 **2002-03 (recorded, HOU):** 81 G, 81 GS, 41.0 MPG, 21.0 PPG, 6.2 RPG, 6.2 APG, 1.7 SPG, 0.5 BPG, 3.7 TOV, FG 43.5%.
 
 **Colours:** header uses Houston Rockets colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

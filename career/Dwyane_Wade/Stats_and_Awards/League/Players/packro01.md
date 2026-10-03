@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `packro
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/packro01.html#contract) ([text](../../../Contracts/players/packro01.md)).
+
 **2002-03 (recorded, NOH):** 28 G, 4 GS, 15.7 MPG, 5.2 PPG, 1.8 RPG, 2.9 APG, 0.9 SPG, 0.0 BPG, 1.4 TOV, FG 40.3%.
 
 **Colours:** header uses New Orleans Hornets colours (#00778b / #280071) for the season starting 2003; presentation only.

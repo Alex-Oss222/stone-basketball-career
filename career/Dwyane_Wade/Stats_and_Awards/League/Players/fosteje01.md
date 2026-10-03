@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `fostej
 
 **Contract/control:** Listed under contract (continuity unverified); through 2006-07 (2003-04 scheduled $4,000,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/fosteje01.html#contract) ([text](../../../Contracts/players/fosteje01.md)).
+
 **2002-03 (recorded, IND):** 77 G, 2 GS, 10.4 MPG, 2.1 PPG, 3.6 RPG, 0.7 APG, 0.4 SPG, 0.3 BPG, 0.4 TOV, FG 36.0%.
 
 **Colours:** header uses Indiana Pacers colours (#041e42 / #ffcd00) for the season starting 2003; presentation only.

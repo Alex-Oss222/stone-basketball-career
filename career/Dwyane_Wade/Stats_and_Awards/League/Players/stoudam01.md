@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `stouda
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,899,720) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/stoudam01.html#contract) ([text](../../../Contracts/players/stoudam01.md)).
+
 **2002-03 (recorded, PHO):** 82 G, 71 GS, 31.3 MPG, 13.5 PPG, 8.8 RPG, 1.0 APG, 0.8 SPG, 1.1 BPG, 2.3 TOV, FG 47.2%.
 
 **Colours:** header uses Phoenix Suns colours (#582c83 / #cb6015) for the season starting 2003; presentation only.

@@ -12,6 +12,12 @@
 
 **Contract/control:** Unsigned No. 5 draft rights; $2,197,000 hold at 100% of rookie scale. No executed salary yet. [Finance record](../../Finances/cap_sheet.md).
 
+<!-- contract-navigation:start -->
+[Current contract](../../../../Contracts/players/wadedw01.html#contract) · [Contract history](../../../../Contracts/players/wadedw01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
+
+Contract pages follow the current career date; this personnel assessment retains its stated date.
+<!-- contract-navigation:end -->
+
 ## Scouting report
 
 **Role:** Unassigned rookie; Miami has not assigned a 2003-04 rotation role yet.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `newbli
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/newblir01.html#contract) ([text](../../../Contracts/players/newblir01.md)).
+
 **2002-03 (recorded, ATL):** 73 G, 45 GS, 26.5 MPG, 7.7 PPG, 3.7 RPG, 1.4 APG, 0.7 SPG, 0.4 BPG, 0.9 TOV, FG 49.5%.
 
 **Colours:** header uses Atlanta Hawks colours (#c8102e / #ffcd00) for the season starting 2003; presentation only.

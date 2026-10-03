@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `okurme
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $1,100,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/okurme01.html#contract) ([text](../../../Contracts/players/okurme01.md)).
+
 **2002-03 (recorded, DET):** 72 G, 9 GS, 19.0 MPG, 6.9 PPG, 4.7 RPG, 1.0 APG, 0.3 SPG, 0.5 BPG, 0.9 TOV, FG 42.6%.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

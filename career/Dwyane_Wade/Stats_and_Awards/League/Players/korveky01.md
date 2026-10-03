@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `korvek
 
 **Contract/control:** Unsigned No. 51 second-round draft rights held by Philadelphia 76ers; no contract has been agreed. No individual draft cap hold.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/korveky01.html#contract) ([text](../../../Contracts/players/korveky01.md)).
+
 **2003 draft entry:** No. 51 overall, rights held by Philadelphia 76ers (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

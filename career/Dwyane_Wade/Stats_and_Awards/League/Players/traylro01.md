@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `traylr
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $825,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/traylro01.html#contract) ([text](../../../Contracts/players/traylro01.md)).
+
 **2002-03 (recorded, NOH):** 69 G, 0 GS, 12.3 MPG, 3.9 PPG, 3.8 RPG, 0.7 APG, 0.7 SPG, 0.5 BPG, 0.8 TOV, FG 44.3%.
 
 **Colours:** header uses New Orleans Hornets colours (#00778b / #280071) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hudsot
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $2,100,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/hudsotr01.html#contract) ([text](../../../Contracts/players/hudsotr01.md)).
+
 **2002-03 (recorded, MIN):** 79 G, 74 GS, 32.9 MPG, 14.2 PPG, 2.3 RPG, 5.7 APG, 0.8 SPG, 0.1 BPG, 2.3 TOV, FG 42.8%.
 
 **Colours:** header uses Minnesota Timberwolves colours (#236192 / #00843d) for the season starting 2003; presentation only.

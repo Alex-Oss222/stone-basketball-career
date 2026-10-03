@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `davisd
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $9,061,875) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/davisda01.html#contract) ([text](../../../Contracts/players/davisda01.md)).
+
 **2002-03 (recorded, POR):** 78 G, 78 GS, 29.3 MPG, 7.4 PPG, 7.2 RPG, 1.2 APG, 0.7 SPG, 0.9 BPG, 0.9 TOV, FG 54.1%.
 
 **Colours:** header uses Portland Trail Blazers colours (#c8102e / #010101) for the season starting 2003; presentation only.

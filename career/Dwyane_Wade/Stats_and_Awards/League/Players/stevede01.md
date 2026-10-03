@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `steved
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $1,616,087) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/stevede01.html#contract) ([text](../../../Contracts/players/stevede01.md)).
+
 **2002-03 (recorded, UTA):** 61 G, 8 GS, 12.5 MPG, 4.6 PPG, 1.4 RPG, 0.7 APG, 0.4 SPG, 0.1 BPG, 0.8 TOV, FG 40.1%.
 
 **Colours:** header uses Utah Jazz colours (#753bbd / #00a9e0) for the season starting 2003; presentation only.

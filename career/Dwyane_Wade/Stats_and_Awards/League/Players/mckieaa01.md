@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mckiea
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $5,000,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mckieaa01.html#contract) ([text](../../../Contracts/players/mckieaa01.md)).
+
 **2002-03 (recorded, PHI):** 80 G, 40 GS, 29.7 MPG, 9.0 PPG, 4.4 RPG, 3.5 APG, 1.6 SPG, 0.1 BPG, 1.4 TOV, FG 42.9%.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

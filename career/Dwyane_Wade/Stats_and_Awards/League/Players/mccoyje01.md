@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mccoyj
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mccoyje01.html#contract) ([text](../../../Contracts/players/mccoyje01.md)).
+
 **2002-03 (recorded, TOR):** 67 G, 25 GS, 20.4 MPG, 6.8 PPG, 5.3 RPG, 0.6 APG, 0.4 SPG, 0.9 BPG, 1.4 TOV, FG 49.1%.
 
 **Colours:** header uses Toronto Raptors colours (#753bbd / #ba0c2f) for the season starting 2003; presentation only.

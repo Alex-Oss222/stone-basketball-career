@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `pippes
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/pippesc01.html#contract) ([text](../../../Contracts/players/pippesc01.md)).
+
 **2002-03 (recorded, POR):** 64 G, 58 GS, 29.9 MPG, 10.8 PPG, 4.3 RPG, 4.5 APG, 1.6 SPG, 0.4 BPG, 2.6 TOV, FG 44.4%.
 
 **Colours:** header uses Portland Trail Blazers colours (#c8102e / #010101) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `kukoct
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $9,056,250) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/kukocto01.html#contract) ([text](../../../Contracts/players/kukocto01.md)).
+
 **2002-03 (recorded, MIL):** 63 G, 0 GS, 27.0 MPG, 11.6 PPG, 4.2 RPG, 3.7 APG, 1.3 SPG, 0.5 BPG, 1.9 TOV, FG 43.2%.
 
 **Colours:** header uses Milwaukee Bucks colours (#702f8a / #2c5234) for the season starting 2003; presentation only.

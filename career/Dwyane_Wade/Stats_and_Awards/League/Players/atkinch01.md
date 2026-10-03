@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `atkinc
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $3,900,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/atkinch01.html#contract) ([text](../../../Contracts/players/atkinch01.md)).
+
 **2002-03 (recorded, DET):** 65 G, 7 GS, 21.5 MPG, 7.1 PPG, 1.5 RPG, 2.7 APG, 0.4 SPG, 0.1 BPG, 1.2 TOV, FG 36.1%.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

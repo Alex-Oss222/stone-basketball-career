@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `giricg
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $1,540,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/giricgo01.html#contract) ([text](../../../Contracts/players/giricgo01.md)).
+
 **2002-03 (recorded, MEM/ORL):** 76 G, 62 GS, 28.3 MPG, 12.3 PPG, 3.1 RPG, 1.8 APG, 0.7 SPG, 0.1 BPG, 1.9 TOV, FG 43.6%.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

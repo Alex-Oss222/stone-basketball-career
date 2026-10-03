@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `kirila
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $955,800) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/kirilan01.html#contract) ([text](../../../Contracts/players/kirilan01.md)).
+
 **2002-03 (recorded, UTA):** 80 G, 11 GS, 27.7 MPG, 12.0 PPG, 5.2 RPG, 1.7 APG, 1.5 SPG, 2.2 BPG, 1.7 TOV, FG 49.1%.
 
 **Colours:** header uses Utah Jazz colours (#753bbd / #00a9e0) for the season starting 2003; presentation only.

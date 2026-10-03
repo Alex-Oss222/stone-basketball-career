@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jonesd
 
 **Contract/control:** Unsigned No. 20 first-round draft rights held by Memphis Grizzlies; no contract has been agreed. Draft cap hold $886,400.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jonesda02.html#contract) ([text](../../../Contracts/players/jonesda02.md)).
+
 **2003 draft entry:** No. 20 overall, rights held by Memphis Grizzlies (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

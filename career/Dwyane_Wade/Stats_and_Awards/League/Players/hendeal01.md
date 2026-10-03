@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hendea
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $7,682,188) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/hendeal01.html#contract) ([text](../../../Contracts/players/hendeal01.md)).
+
 **2002-03 (recorded, ATL):** 82 G, 3 GS, 18.2 MPG, 4.8 PPG, 4.9 RPG, 0.5 APG, 0.4 SPG, 0.4 BPG, 0.7 TOV, FG 46.8%.
 
 **Colours:** header uses Atlanta Hawks colours (#c8102e / #ffcd00) for the season starting 2003; presentation only.

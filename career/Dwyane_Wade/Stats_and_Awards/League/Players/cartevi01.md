@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `cartev
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $11,326,219) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/cartevi01.html#contract) ([text](../../../Contracts/players/cartevi01.md)).
+
 **2002-03 (recorded, TOR):** 43 G, 42 GS, 34.2 MPG, 20.6 PPG, 4.4 RPG, 3.3 APG, 1.1 SPG, 1.0 BPG, 1.7 TOV, FG 46.7%.
 
 **Colours:** header uses Toronto Raptors colours (#753bbd / #ba0c2f) for the season starting 2003; presentation only.

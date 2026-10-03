@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `boothc
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $5,446,800) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/boothca01.html#contract) ([text](../../../Contracts/players/boothca01.md)).
+
 **2002-03 (recorded, SEA):** 47 G, 0 GS, 12.2 MPG, 2.9 PPG, 2.3 RPG, 0.3 APG, 0.2 SPG, 0.7 BPG, 0.5 TOV, FG 43.7%.
 
 **Colours:** header uses Seattle SuperSonics colours (#00573f / #f6be00) for the season starting 2003; presentation only.

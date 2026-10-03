@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `chrisd
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $6,900,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/chrisdo01.html#contract) ([text](../../../Contracts/players/chrisdo01.md)).
+
 **2002-03 (recorded, SAC):** 80 G, 80 GS, 33.9 MPG, 9.3 PPG, 4.3 RPG, 4.7 APG, 2.2 SPG, 0.5 BPG, 1.8 TOV, FG 47.9%.
 
 **Colours:** header uses Sacramento Kings colours (#753bbd / #010101) for the season starting 2003; presentation only.

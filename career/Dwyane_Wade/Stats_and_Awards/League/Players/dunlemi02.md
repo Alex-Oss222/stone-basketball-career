@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `dunlem
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $3,332,520) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/dunlemi02.html#contract) ([text](../../../Contracts/players/dunlemi02.md)).
+
 **2002-03 (recorded, GSW):** 82 G, 3 GS, 15.9 MPG, 5.7 PPG, 2.6 RPG, 1.3 APG, 0.6 SPG, 0.2 BPG, 1.0 TOV, FG 40.3%.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

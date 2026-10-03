@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `gooded
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $3,004,560) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/goodedr01.html#contract) ([text](../../../Contracts/players/goodedr01.md)).
+
 **2002-03 (recorded, MEM/ORL):** 70 G, 47 GS, 26.8 MPG, 12.5 PPG, 6.5 RPG, 1.2 APG, 0.8 SPG, 0.5 BPG, 2.1 TOV, FG 45.7%.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

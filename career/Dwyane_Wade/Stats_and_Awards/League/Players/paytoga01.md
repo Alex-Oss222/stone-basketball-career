@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `paytog
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/paytoga01.html#contract) ([text](../../../Contracts/players/paytoga01.md)).
+
 **2002-03 (recorded, SEA/MIL):** 80 G, 80 GS, 40.1 MPG, 20.4 PPG, 4.2 RPG, 8.3 APG, 1.7 SPG, 0.2 BPG, 2.3 TOV, FG 45.4%.
 
 **Colours:** header uses Milwaukee Bucks colours (#702f8a / #2c5234) for the season starting 2003; presentation only.

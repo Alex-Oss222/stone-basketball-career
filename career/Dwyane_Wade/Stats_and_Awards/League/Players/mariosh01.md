@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `marios
 
 **Contract/control:** Listed under contract (continuity unverified); through 2008-09 (2003-04 scheduled $10,960,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mariosh01.html#contract) ([text](../../../Contracts/players/mariosh01.md)).
+
 **2002-03 (recorded, PHO):** 81 G, 81 GS, 41.6 MPG, 21.2 PPG, 9.5 RPG, 2.4 APG, 2.3 SPG, 1.2 BPG, 1.9 TOV, FG 45.2%.
 
 **Colours:** header uses Phoenix Suns colours (#582c83 / #cb6015) for the season starting 2003; presentation only.

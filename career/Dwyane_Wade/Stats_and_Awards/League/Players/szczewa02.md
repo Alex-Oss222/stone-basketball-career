@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `szczew
 
 **Contract/control:** Under contract; through 2008-09 (2003-04 scheduled $8,000,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/szczewa02.html#contract) ([text](../../../Contracts/players/szczewa02.md)).
+
 **2002-03 (recorded, MIN):** 52 G, 42 GS, 35.3 MPG, 17.6 PPG, 4.6 RPG, 2.6 APG, 0.8 SPG, 0.4 BPG, 1.7 TOV, FG 48.1%.
 
 **Colours:** header uses Minnesota Timberwolves colours (#236192 / #00843d) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jonesj
 
 **Contract/control:** Unsigned No. 49 second-round draft rights held by Indiana Pacers; no contract has been agreed. No individual draft cap hold.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jonesja02.html#contract) ([text](../../../Contracts/players/jonesja02.md)).
+
 **2003 draft entry:** No. 49 overall, rights held by Indiana Pacers (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Indiana Pacers colours (#041e42 / #ffcd00) for the season starting 2003; presentation only.

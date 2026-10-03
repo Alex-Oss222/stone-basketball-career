@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `radmav
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,669,800) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/radmavl01.html#contract) ([text](../../../Contracts/players/radmavl01.md)).
+
 **2002-03 (recorded, SEA):** 72 G, 16 GS, 26.5 MPG, 10.1 PPG, 4.5 RPG, 1.3 APG, 0.9 SPG, 0.3 BPG, 1.4 TOV, FG 41.0%.
 
 **Colours:** header uses Seattle SuperSonics colours (#00573f / #f6be00) for the season starting 2003; presentation only.

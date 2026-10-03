@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hardaa
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $13,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/hardaan01.html#contract) ([text](../../../Contracts/players/hardaan01.md)).
+
 **2002-03 (recorded, PHO):** 58 G, 51 GS, 30.6 MPG, 10.6 PPG, 4.4 RPG, 4.1 APG, 1.1 SPG, 0.4 BPG, 2.5 TOV, FG 44.7%.
 
 **Colours:** header uses Phoenix Suns colours (#582c83 / #cb6015) for the season starting 2003; presentation only.

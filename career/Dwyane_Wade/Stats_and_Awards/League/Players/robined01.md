@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `robine
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $6,204,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/robined01.html#contract) ([text](../../../Contracts/players/robined01.md)).
+
 **2002-03 (recorded, CHI):** 64 G, 18 GS, 21.2 MPG, 5.7 PPG, 3.1 RPG, 1.0 APG, 1.0 SPG, 0.2 BPG, 0.8 TOV, FG 49.2%.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

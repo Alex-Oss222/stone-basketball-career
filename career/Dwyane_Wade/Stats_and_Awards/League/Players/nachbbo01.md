@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `nachbb
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,396,440) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/nachbbo01.html#contract) ([text](../../../Contracts/players/nachbbo01.md)).
+
 **2002-03 (recorded, HOU):** 14 G, 1 GS, 5.5 MPG, 2.1 PPG, 0.8 RPG, 0.2 APG, 0.1 SPG, 0.1 BPG, 0.4 TOV, FG 35.5%.
 
 **Colours:** header uses Houston Rockets colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

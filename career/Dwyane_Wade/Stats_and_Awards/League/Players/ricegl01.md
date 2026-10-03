@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `ricegl
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/ricegl01.html#contract) ([text](../../../Contracts/players/ricegl01.md)).
+
 **2002-03 (recorded, HOU):** 62 G, 26 GS, 24.7 MPG, 9.0 PPG, 2.5 RPG, 1.0 APG, 0.4 SPG, 0.1 BPG, 0.9 TOV, FG 42.9%.
 
 **Colours:** header uses Houston Rockets colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

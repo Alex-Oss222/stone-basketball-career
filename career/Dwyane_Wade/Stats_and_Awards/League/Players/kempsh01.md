@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `kempsh
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/kempsh01.html#contract) ([text](../../../Contracts/players/kempsh01.md)).
+
 **2002-03 (recorded, ORL):** 79 G, 55 GS, 20.7 MPG, 6.8 PPG, 5.7 RPG, 0.7 APG, 0.8 SPG, 0.4 BPG, 1.3 TOV, FG 41.8%.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

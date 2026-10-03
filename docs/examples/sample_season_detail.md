@@ -42,9 +42,9 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 ### Per game
 
-[![Shooting: open the shot-chart page](assets/shooting_link.svg)](sample_shooting.md#season) [![Awards: open the annual-awards page](assets/awards_link.svg)](sample_awards.md)
+[![Shooting: open the shot-chart page](assets/shooting_link.svg)](sample_shooting.md#season) [![Contract: open current terms and contract history](assets/contract_link.svg)](sample_contract.md) [![Awards: open the annual-awards page](assets/awards_link.svg)](sample_awards.md)
 
-[Interactive Shooting](player_cards_preview.html?period=season#shooting) · [Interactive Awards](player_cards_preview.html#awards) · [Shooting text version](sample_shooting.md) · [Awards text version](sample_awards.md)
+[Interactive Shooting](player_cards_preview.html?period=season#shooting) · [Interactive Contract](player_cards_preview.html#contract) · [Interactive Awards](player_cards_preview.html#awards) · [Shooting text version](sample_shooting.md) · [Contract text version](sample_contract.md) · [Awards text version](sample_awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -106,9 +106,9 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 ### Splits
 
-[![Shooting: open the shot-chart page](assets/shooting_link.svg)](sample_shooting.md#season) [![Awards: open the annual-awards page](assets/awards_link.svg)](sample_awards.md)
+[![Shooting: open the shot-chart page](assets/shooting_link.svg)](sample_shooting.md#season) [![Contract: open current terms and contract history](assets/contract_link.svg)](sample_contract.md) [![Awards: open the annual-awards page](assets/awards_link.svg)](sample_awards.md)
 
-[Interactive Shooting](player_cards_preview.html?period=season#shooting) · [Interactive Awards](player_cards_preview.html#awards) · [Shooting text version](sample_shooting.md) · [Awards text version](sample_awards.md)
+[Interactive Shooting](player_cards_preview.html?period=season#shooting) · [Interactive Contract](player_cards_preview.html#contract) · [Interactive Awards](player_cards_preview.html#awards) · [Shooting text version](sample_shooting.md) · [Contract text version](sample_contract.md) · [Awards text version](sample_awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

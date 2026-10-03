@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `robinc
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $4,700,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/robincl02.html#contract) ([text](../../../Contracts/players/robincl02.md)).
+
 **2002-03 (recorded, DET):** 81 G, 69 GS, 34.9 MPG, 12.2 PPG, 3.9 RPG, 3.3 APG, 1.1 SPG, 1.1 BPG, 2.0 TOV, FG 39.8%.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

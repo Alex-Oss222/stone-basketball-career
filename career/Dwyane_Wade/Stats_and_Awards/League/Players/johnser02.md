@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `johnse
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $4,418,156) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/johnser02.html#contract) ([text](../../../Contracts/players/johnser02.md)).
+
 **2002-03 (recorded, MIL):** 69 G, 17 GS, 17.0 MPG, 2.2 PPG, 4.3 RPG, 0.3 APG, 0.5 SPG, 0.9 BPG, 0.5 TOV, FG 45.2%.
 
 **Colours:** header uses Milwaukee Bucks colours (#702f8a / #2c5234) for the season starting 2003; presentation only.

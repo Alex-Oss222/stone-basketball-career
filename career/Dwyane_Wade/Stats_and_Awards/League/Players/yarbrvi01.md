@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `yarbrv
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/yarbrvi01.html#contract) ([text](../../../Contracts/players/yarbrvi01.md)).
+
 **2002-03 (recorded, DEN):** 59 G, 39 GS, 23.4 MPG, 6.9 PPG, 2.7 RPG, 2.2 APG, 1.0 SPG, 0.6 BPG, 1.4 TOV, FG 39.3%.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

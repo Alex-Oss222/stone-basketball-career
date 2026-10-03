@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jacksj
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jacksji01.html#contract) ([text](../../../Contracts/players/jacksji01.md)).
+
 **2002-03 (recorded, SAC):** 63 G, 0 GS, 20.8 MPG, 7.7 PPG, 4.2 RPG, 1.9 APG, 0.5 SPG, 0.1 BPG, 1.3 TOV, FG 44.2%.
 
 **Colours:** header uses Sacramento Kings colours (#753bbd / #010101) for the season starting 2003; presentation only.

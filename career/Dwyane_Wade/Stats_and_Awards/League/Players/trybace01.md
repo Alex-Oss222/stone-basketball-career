@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `trybac
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $1,600,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/trybace01.html#contract) ([text](../../../Contracts/players/trybace01.md)).
+
 **2002-03 (recorded, MEM):** 15 G, 0 GS, 5.7 MPG, 0.9 PPG, 0.9 RPG, 0.1 APG, 0.0 SPG, 0.4 BPG, 0.5 TOV, FG 25.0%.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `delkto
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $2,925,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/delkto01.html#contract) ([text](../../../Contracts/players/delkto01.md)).
+
 **2002-03 (recorded, BOS):** 67 G, 39 GS, 28.0 MPG, 9.8 PPG, 3.5 RPG, 2.2 APG, 1.1 SPG, 0.1 BPG, 1.0 TOV, FG 41.6%.
 
 **Colours:** header uses Boston Celtics colours (#007a33 / #ffffff) for the season starting 2003; presentation only.

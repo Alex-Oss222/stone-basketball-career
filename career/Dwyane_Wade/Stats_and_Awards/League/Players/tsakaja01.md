@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `tsakaj
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $1,580,702) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/tsakaja01.html#contract) ([text](../../../Contracts/players/tsakaja01.md)).
+
 **2002-03 (recorded, PHO):** 33 G, 27 GS, 16.5 MPG, 4.9 PPG, 3.7 RPG, 0.4 APG, 0.2 SPG, 0.5 BPG, 0.8 TOV, FG 45.2%.
 
 **Colours:** header uses Phoenix Suns colours (#582c83 / #cb6015) for the season starting 2003; presentation only.

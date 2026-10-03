@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `diawbo
 
 **Contract/control:** Unsigned No. 21 first-round draft rights held by Atlanta Hawks; no contract has been agreed. Draft cap hold $850,900.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/diawbo01.html#contract) ([text](../../../Contracts/players/diawbo01.md)).
+
 **2003 draft entry:** No. 21 overall, rights held by Atlanta Hawks (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Atlanta Hawks colours (#c8102e / #ffcd00) for the season starting 2003; presentation only.

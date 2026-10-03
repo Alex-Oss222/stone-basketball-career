@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `lynchg
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $2,800,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/lynchge01.html#contract) ([text](../../../Contracts/players/lynchge01.md)).
+
 **2002-03 (recorded, NOH):** 81 G, 32 GS, 18.5 MPG, 4.5 PPG, 4.4 RPG, 1.3 APG, 0.8 SPG, 0.2 BPG, 0.6 TOV, FG 40.9%.
 
 **Colours:** header uses New Orleans Hornets colours (#00778b / #280071) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `perkik
 
 **Contract/control:** Unsigned No. 27 first-round draft rights held by Boston Celtics; no contract has been agreed. Draft cap hold $678,600.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/perkike01.html#contract) ([text](../../../Contracts/players/perkike01.md)).
+
 **2003 draft entry:** No. 27 overall, rights held by Boston Celtics (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Boston Celtics colours (#007a33 / #ffffff) for the season starting 2003; presentation only.

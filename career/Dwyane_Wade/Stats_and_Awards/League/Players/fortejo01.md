@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `fortej
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,080,360) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/fortejo01.html#contract) ([text](../../../Contracts/players/fortejo01.md)).
+
 **2002-03 (recorded, SEA):** 17 G, 0 GS, 5.1 MPG, 1.4 PPG, 0.6 RPG, 0.6 APG, 0.2 SPG, 0.0 BPG, 0.6 TOV, FG 28.6%.
 
 **Colours:** header uses Seattle SuperSonics colours (#00573f / #f6be00) for the season starting 2003; presentation only.

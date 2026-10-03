@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `zimmed
 
 **Contract/control:** Unsigned No. 40 second-round draft rights held by Golden State Warriors; no contract has been agreed. No individual draft cap hold.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/zimmede01.html#contract) ([text](../../../Contracts/players/zimmede01.md)).
+
 **2003 draft entry:** No. 40 overall, rights held by Golden State Warriors (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

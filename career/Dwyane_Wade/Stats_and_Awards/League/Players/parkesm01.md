@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `parkes
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/parkesm01.html#contract) ([text](../../../Contracts/players/parkesm01.md)).
+
 **2002-03 (recorded, CLE):** 66 G, 18 GS, 16.7 MPG, 6.2 PPG, 1.8 RPG, 2.5 APG, 0.7 SPG, 0.2 BPG, 2.0 TOV, FG 40.2%.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

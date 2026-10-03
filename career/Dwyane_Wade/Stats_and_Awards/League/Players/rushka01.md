@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `rushka
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,097,640) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/rushka01.html#contract) ([text](../../../Contracts/players/rushka01.md)).
+
 **2002-03 (recorded, LAL):** 76 G, 0 GS, 11.5 MPG, 3.0 PPG, 1.2 RPG, 0.9 APG, 0.1 SPG, 0.1 BPG, 0.8 TOV, FG 39.3%.
 
 **Colours:** header uses Los Angeles Lakers colours (#702f8a / #ffc72c) for the season starting 2003; presentation only.

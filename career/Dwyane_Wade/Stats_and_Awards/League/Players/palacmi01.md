@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `palacm
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/palacmi01.html#contract) ([text](../../../Contracts/players/palacmi01.md)).
+
 **2002-03 (recorded, CLE):** 80 G, 46 GS, 24.7 MPG, 5.0 PPG, 2.9 RPG, 3.2 APG, 0.8 SPG, 0.2 BPG, 1.6 TOV, FG 41.8%.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

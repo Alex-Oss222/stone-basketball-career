@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `smithj
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $5,445,600) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/smithjo02.html#contract) ([text](../../../Contracts/players/smithjo02.md)).
+
 **2002-03 (recorded, MIN):** 54 G, 21 GS, 20.7 MPG, 7.5 PPG, 5.0 RPG, 0.7 APG, 0.3 SPG, 1.0 BPG, 0.8 TOV, FG 46.0%.
 
 **Colours:** header uses Minnesota Timberwolves colours (#236192 / #00843d) for the season starting 2003; presentation only.

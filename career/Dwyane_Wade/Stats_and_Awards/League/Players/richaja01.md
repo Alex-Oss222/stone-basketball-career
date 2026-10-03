@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `richaj
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $2,789,280) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/richaja01.html#contract) ([text](../../../Contracts/players/richaja01.md)).
+
 **2002-03 (recorded, GSW):** 82 G, 82 GS, 32.9 MPG, 15.6 PPG, 4.6 RPG, 3.0 APG, 1.1 SPG, 0.3 BPG, 2.2 TOV, FG 41.0%.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

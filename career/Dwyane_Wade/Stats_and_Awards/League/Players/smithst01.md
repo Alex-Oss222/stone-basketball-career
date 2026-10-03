@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `smiths
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/smithst01.html#contract) ([text](../../../Contracts/players/smithst01.md)).
+
 **2002-03 (recorded, SAS):** 53 G, 18 GS, 19.5 MPG, 6.8 PPG, 1.9 RPG, 1.3 APG, 0.5 SPG, 0.2 BPG, 0.8 TOV, FG 38.8%.
 
 **Colours:** header uses San Antonio Spurs colours (#010101 / #8d9093) for the season starting 2003; presentation only.

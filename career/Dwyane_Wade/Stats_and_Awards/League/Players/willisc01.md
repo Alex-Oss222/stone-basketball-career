@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willis
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/willisc01.html#contract) ([text](../../../Contracts/players/willisc01.md)).
+
 **2002-03 (recorded, PHO):** 69 G, 33 GS, 12.6 MPG, 4.0 PPG, 2.8 RPG, 0.3 APG, 0.4 SPG, 0.3 BPG, 0.5 TOV, FG 41.1%.
 
 **Colours:** header uses Phoenix Suns colours (#582c83 / #cb6015) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `lampls
 
 **Contract/control:** 2003-04 team option pending; through 2003-04 (2003-04 scheduled $563,679) (league contract inventory status `team_option_pending`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/lamplse01.html#contract) ([text](../../../Contracts/players/lamplse01.md)).
+
 **2002-03 (recorded, MIA):** 35 G, 0 GS, 13.9 MPG, 4.8 PPG, 2.4 RPG, 0.9 APG, 0.2 SPG, 0.1 BPG, 0.7 TOV, FG 43.4%.
 
 **Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2003; presentation only.

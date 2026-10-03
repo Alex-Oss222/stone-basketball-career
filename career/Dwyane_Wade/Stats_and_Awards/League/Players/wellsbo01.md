@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wellsb
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $7,000,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/wellsbo01.html#contract) ([text](../../../Contracts/players/wellsbo01.md)).
+
 **2002-03 (recorded, POR):** 75 G, 65 GS, 31.9 MPG, 15.2 PPG, 5.3 RPG, 3.3 APG, 1.6 SPG, 0.2 BPG, 2.9 TOV, FG 44.1%.
 
 **Colours:** header uses Portland Trail Blazers colours (#c8102e / #010101) for the season starting 2003; presentation only.

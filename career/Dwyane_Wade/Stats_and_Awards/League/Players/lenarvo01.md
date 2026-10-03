@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `lenarv
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/lenarvo01.html#contract) ([text](../../../Contracts/players/lenarvo01.md)).
+
 **2002-03 (recorded, TOR):** 63 G, 24 GS, 30.6 MPG, 14.3 PPG, 3.4 RPG, 2.3 APG, 0.9 SPG, 0.3 BPG, 1.6 TOV, FG 40.2%.
 
 **Colours:** header uses Toronto Raptors colours (#753bbd / #ba0c2f) for the season starting 2003; presentation only.

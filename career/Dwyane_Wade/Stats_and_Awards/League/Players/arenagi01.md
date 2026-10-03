@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `arenag
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/arenagi01.html#contract) ([text](../../../Contracts/players/arenagi01.md)).
+
 **2002-03 (recorded, GSW):** 82 G, 82 GS, 35.0 MPG, 18.3 PPG, 4.7 RPG, 6.3 APG, 1.5 SPG, 0.2 BPG, 3.5 TOV, FG 43.1%.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

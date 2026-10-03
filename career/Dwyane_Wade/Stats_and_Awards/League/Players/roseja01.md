@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `roseja
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $13,279,750) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/roseja01.html#contract) ([text](../../../Contracts/players/roseja01.md)).
+
 **2002-03 (recorded, CHI):** 82 G, 82 GS, 40.9 MPG, 22.1 PPG, 4.3 RPG, 4.8 APG, 0.9 SPG, 0.3 BPG, 3.5 TOV, FG 40.6%.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

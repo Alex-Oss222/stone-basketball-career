@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willis
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/willish01.html#contract) ([text](../../../Contracts/players/willish01.md)).
+
 **2002-03 (recorded, BOS/DEN):** 78 G, 11 GS, 24.1 MPG, 8.0 PPG, 2.2 RPG, 3.4 APG, 1.0 SPG, 0.1 BPG, 1.5 TOV, FG 39.4%.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

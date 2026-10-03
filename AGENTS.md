@@ -8,7 +8,9 @@ The user controls Wade's legitimate player decisions.
 
 The AI/GM controls Miami's organization, roster construction, cap accounting, contracts offered by the club, depth chart, rotation, tactics, staff decisions and transactions. The user can react to those decisions as Wade but cannot directly author them.
 
-## Current checkpoint
+## Opening checkpoint
+
+The current dated `current_state.json` is authoritative as play advances. The initial setup below describes the opening checkpoint, not a permanently fixed date.
 
 - Date: June 26, 2003
 - Event: 2003 NBA Draft
@@ -29,6 +31,8 @@ Do not import a later 2003 event before the career clock reaches it.
 6. player cards needed for the current event
 7. finances only when contract, cap or transaction consequences matter
 8. current phase/week/game note
+
+Then read `Milestones/README.md` and `Milestones/calendar.md` under the player's career. Phase READMEs link the full live screens. Follow `docs/live_player_milestones.md` to save the user's authorized reply against the exact current offer or working-record version.
 
 ## Team state
 
@@ -155,10 +159,18 @@ Games are played by the engine on Railway. To play a game, write `Game_N.request
 
 ## After an event
 
-For player-facing calendar milestones, use `docs/templates/player_milestones/` and its workflow: a compact identity, the actual event, decision-relevant evidence, the player's available response and the next checkpoint. Open a page only from a dated trigger. Ask for Wade's own contract/training/role preference; do not ask the user to approve an ordinary AI/GM trade or a coaching assignment. Verify any actual trade-consent right. Templates and filled previews are not simulation events, live offers, signed contracts or ability gains.
+The detailed screens are active career records, generated into `career/Dwyane_Wade/Milestones/` and `Stats_and_Awards/`. Use the current `Milestones/README.md` and the relevant full milestone page when opening a player decision or notification. Full detail is always the default: show the actual event, complete relevant terms and evidence, status, legitimate player responses and next checkpoint. Do not substitute a sample scenario or a compact summary for the live detailed screen.
+
+The standard event CLIs regenerate these views after a successful write. After a direct manual career-record update, run `python scripts/update_player_reports.py` before presenting the next screen. Generated pages are read-only projections of source records: edit the owning decision, negotiation, training or game record, then regenerate. The website's `/career` and `/cards` routes show the same canonical data. Browser reads never create offers, sign contracts, approve trades, simulate games or advance time.
+
+Player navigation is Shooting, Contract, Awards, in that order. Contract opens Current Contract and Contract History with full recorded detail. `/contracts` contains a dated page for every tracked player, including the current team roster. Update the owning signed agreement or transaction record before rebuilding; never hand-edit a generated contract page. Keep the original agreement in history after a new signing, and treat a trade as assignment of that agreement. Unknown guarantees, clauses, signing dates and original totals remain unknown. Use `docs/player_contract_pages.md` for the source schema and update procedure.
+
+For player-facing calendar milestones, use `docs/templates/player_milestones/` and its workflow: a complete identity, the actual event, decision-relevant evidence, the player's available response and the next checkpoint. Open a page only from a dated trigger. Ask for Wade's own contract/training/role preference; do not ask the user to approve an ordinary AI/GM trade or a coaching assignment. Verify any actual trade-consent right. Templates and filled previews are not simulation events, live offers, signed contracts or ability gains.
 
 1. write the owning event note;
 2. update current state;
 3. update affected AI/GM team records only when Miami actually changed;
-4. run repository validation;
-5. run tests.
+4. record actual milestone appointments, plans and follow-ups with dated sources in `milestones.json`; use `scripts/player_milestone.py` for the user's authorized reply;
+5. rebuild all detailed views with `python scripts/update_player_reports.py`;
+6. run repository validation;
+7. run tests.

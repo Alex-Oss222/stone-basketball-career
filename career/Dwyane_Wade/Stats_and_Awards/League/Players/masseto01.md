@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `masset
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/masseto01.html#contract) ([text](../../../Contracts/players/masseto01.md)).
+
 **2002-03 (recorded, UTA):** 58 G, 1 GS, 13.7 MPG, 4.7 PPG, 2.7 RPG, 0.3 APG, 0.3 SPG, 0.3 BPG, 0.9 TOV, FG 44.8%.
 
 **Colours:** header uses Utah Jazz colours (#753bbd / #00a9e0) for the season starting 2003; presentation only.

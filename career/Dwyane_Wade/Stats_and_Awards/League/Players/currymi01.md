@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `currym
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $2,800,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/currymi01.html#contract) ([text](../../../Contracts/players/currymi01.md)).
+
 **2002-03 (recorded, DET):** 78 G, 77 GS, 19.9 MPG, 3.0 PPG, 1.6 RPG, 1.3 APG, 0.6 SPG, 0.1 BPG, 0.6 TOV, FG 40.2%.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

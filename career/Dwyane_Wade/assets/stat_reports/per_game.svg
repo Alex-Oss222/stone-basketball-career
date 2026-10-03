@@ -3,5 +3,5 @@
 <rect x="0" y="0" width="1280" height="64" rx="24" fill="#141517"/>
 <rect x="0" y="0" width="230" height="64" rx="12" fill="#a71930"/>
 <text x="25" y="41" font-family="sans-serif" font-size="27" fill="#ffffff" font-weight="700" text-anchor="start">PER GAME</text>
-<text x="254" y="39" font-family="sans-serif" font-size="20" fill="#d0d1d4" font-weight="400" text-anchor="start">Production · Shooting · Rebounding · Playmaking · Defense · Honors</text>
+<text x="254" y="39" font-family="sans-serif" font-size="20" fill="#d0d1d4" font-weight="400" text-anchor="start">Complete recorded box-score statistics</text>
 </svg>

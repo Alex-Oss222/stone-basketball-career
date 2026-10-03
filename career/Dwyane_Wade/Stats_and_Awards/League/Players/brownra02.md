@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `brownr
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/brownra02.html#contract) ([text](../../../Contracts/players/brownra02.md)).
+
 **2002-03 (recorded, PHO):** 32 G, 0 GS, 8.2 MPG, 1.3 PPG, 0.8 RPG, 1.1 APG, 0.5 SPG, 0.1 BPG, 0.5 TOV, FG 37.2%.
 
 **Colours:** header uses Phoenix Suns colours (#582c83 / #cb6015) for the season starting 2003; presentation only.

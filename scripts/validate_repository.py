@@ -15,6 +15,7 @@ if str(ROOT) not in sys.path:
 
 from runtime.season_rules import month_week, area_available
 from runtime.player_stats import repository_rating_errors
+from runtime.contract_navigation import plain_player_name
 
 NOTE_STATUSES = {"not_started","active","complete"}
 GAME_STATUSES = {"scheduled","played","not_played"}
@@ -154,7 +155,7 @@ def markdown_tables(text):
             yield rows[0],rows[2:]
 
 
-LINK_TEXT=re.compile(r"^\[([^\]]+)\]\(([^)]+)\)$")
+LINK_TEXT=re.compile(r"^\[([^\]]+)\]\(([^)]+)\)")   # the first link in a cell; a contract link may follow
 
 
 def cell_text(cell):

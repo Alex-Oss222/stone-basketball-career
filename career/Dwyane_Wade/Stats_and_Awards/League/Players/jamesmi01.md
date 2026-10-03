@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jamesm
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jamesmi01.html#contract) ([text](../../../Contracts/players/jamesmi01.md)).
+
 **2002-03 (recorded, MIA):** 78 G, 8 GS, 22.1 MPG, 7.8 PPG, 1.9 RPG, 3.2 APG, 0.8 SPG, 0.1 BPG, 1.4 TOV, FG 37.3%.
 
 **Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2003; presentation only.

@@ -20,6 +20,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wadedw
 
 **Contract/control:** Draft rights held by Miami; no executed professional contract (career record).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/wadedw01.html#contract) ([text](../../../Contracts/players/wadedw01.md)).
+
 **NBA entry:** 2003 draft, round 1, No. 5 overall, Miami Heat. This is the simulation's alternate-history player; the historical Wade's statistics and biography are never used.
 
 **Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2003; presentation only.

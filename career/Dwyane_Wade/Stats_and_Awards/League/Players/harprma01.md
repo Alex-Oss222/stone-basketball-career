@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `harprm
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $4,290,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/harprma01.html#contract) ([text](../../../Contracts/players/harprma01.md)).
+
 **2002-03 (recorded, UTA):** 78 G, 69 GS, 32.8 MPG, 17.6 PPG, 6.6 RPG, 1.7 APG, 0.9 SPG, 0.2 BPG, 2.1 TOV, FG 51.1%.
 
 **Colours:** header uses Utah Jazz colours (#753bbd / #00a9e0) for the season starting 2003; presentation only.

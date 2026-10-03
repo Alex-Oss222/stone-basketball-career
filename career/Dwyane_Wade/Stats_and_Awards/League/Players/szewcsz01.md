@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `szewcs
 
 **Contract/control:** Unsigned No. 35 second-round draft rights held by Milwaukee Bucks; no contract has been agreed. No individual draft cap hold.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/szewcsz01.html#contract) ([text](../../../Contracts/players/szewcsz01.md)).
+
 **2003 draft entry:** No. 35 overall, rights held by Milwaukee Bucks (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Milwaukee Bucks colours (#702f8a / #2c5234) for the season starting 2003; presentation only.

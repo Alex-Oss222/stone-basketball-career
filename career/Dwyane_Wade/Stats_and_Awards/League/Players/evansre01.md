@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `evansr
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/evansre01.html#contract) ([text](../../../Contracts/players/evansre01.md)).
+
 **2002-03 (recorded, SEA):** 67 G, 60 GS, 20.4 MPG, 3.2 PPG, 6.6 RPG, 0.5 APG, 0.6 SPG, 0.2 BPG, 0.8 TOV, FG 47.1%.
 
 **Colours:** header uses Seattle SuperSonics colours (#00573f / #f6be00) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `elyme0
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,628,760) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/elyme01.html#contract) ([text](../../../Contracts/players/elyme01.md)).
+
 **2002-03 (recorded, LAC):** 52 G, 7 GS, 15.4 MPG, 4.5 PPG, 3.3 RPG, 0.3 APG, 0.2 SPG, 0.6 BPG, 1.0 TOV, FG 49.5%.
 
 **Colours:** header uses Los Angeles Clippers colours (#d50032 / #003da5) for the season starting 2003; presentation only.

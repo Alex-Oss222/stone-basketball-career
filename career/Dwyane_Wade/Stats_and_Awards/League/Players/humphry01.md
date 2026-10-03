@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `humphr
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,143,360) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/humphry01.html#contract) ([text](../../../Contracts/players/humphry01.md)).
+
 **2002-03 (recorded, ORL/MEM):** 48 G, 1 GS, 9.2 MPG, 1.9 PPG, 2.1 RPG, 0.2 APG, 0.2 SPG, 0.4 BPG, 0.5 TOV, FG 29.2%.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

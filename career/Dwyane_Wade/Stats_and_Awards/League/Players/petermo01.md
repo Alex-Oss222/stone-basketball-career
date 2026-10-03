@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `peterm
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $1,646,079) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/petermo01.html#contract) ([text](../../../Contracts/players/petermo01.md)).
+
 **2002-03 (recorded, TOR):** 82 G, 80 GS, 36.0 MPG, 14.1 PPG, 4.4 RPG, 2.3 APG, 1.1 SPG, 0.4 BPG, 1.6 TOV, FG 39.2%.
 
 **Colours:** header uses Toronto Raptors colours (#753bbd / #ba0c2f) for the season starting 2003; presentation only.

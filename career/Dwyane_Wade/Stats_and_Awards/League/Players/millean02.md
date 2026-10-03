@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `millea
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/millean02.html#contract) ([text](../../../Contracts/players/millean02.md)).
+
 **2002-03 (recorded, LAC):** 80 G, 80 GS, 36.4 MPG, 13.6 PPG, 4.0 RPG, 6.7 APG, 1.2 SPG, 0.1 BPG, 2.6 TOV, FG 40.6%.
 
 **Colours:** header uses Los Angeles Clippers colours (#d50032 / #003da5) for the season starting 2003; presentation only.

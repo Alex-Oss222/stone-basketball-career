@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bogank
 
 **Contract/control:** Unsigned No. 43 second-round draft rights held by Orlando Magic; no contract has been agreed. No individual draft cap hold.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/boganke01.html#contract) ([text](../../../Contracts/players/boganke01.md)).
+
 **2003 draft entry:** No. 43 overall, rights held by Orlando Magic (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

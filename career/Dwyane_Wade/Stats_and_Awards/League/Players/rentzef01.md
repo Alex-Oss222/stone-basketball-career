@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `rentze
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $971,160) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/rentzef01.html#contract) ([text](../../../Contracts/players/rentzef01.md)).
+
 **2002-03 (recorded, PHI):** 35 G, 0 GS, 4.1 MPG, 1.5 PPG, 0.7 RPG, 0.2 APG, 0.2 SPG, 0.1 BPG, 0.1 TOV, FG 33.9%.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `piercp
 
 **Contract/control:** Under contract; through 2007-08 (2003-04 scheduled $11,326,219) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/piercpa01.html#contract) ([text](../../../Contracts/players/piercpa01.md)).
+
 **2002-03 (recorded, BOS):** 79 G, 79 GS, 39.2 MPG, 25.9 PPG, 7.3 RPG, 4.4 APG, 1.8 SPG, 0.8 BPG, 3.6 TOV, FG 41.6%.
 
 **Colours:** header uses Boston Celtics colours (#007a33 / #ffffff) for the season starting 2003; presentation only.

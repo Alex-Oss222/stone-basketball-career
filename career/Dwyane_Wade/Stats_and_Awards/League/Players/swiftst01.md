@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `swifts
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $4,592,418) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/swiftst01.html#contract) ([text](../../../Contracts/players/swiftst01.md)).
+
 **2002-03 (recorded, MEM):** 67 G, 26 GS, 22.1 MPG, 9.7 PPG, 5.7 RPG, 0.7 APG, 0.8 SPG, 1.6 BPG, 1.5 TOV, FG 48.1%.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

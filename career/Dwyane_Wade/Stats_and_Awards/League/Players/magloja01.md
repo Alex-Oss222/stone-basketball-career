@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `magloj
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $1,726,771) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/magloja01.html#contract) ([text](../../../Contracts/players/magloja01.md)).
+
 **2002-03 (recorded, NOH):** 82 G, 82 GS, 29.8 MPG, 10.3 PPG, 8.8 RPG, 1.1 APG, 0.6 SPG, 1.4 BPG, 1.9 TOV, FG 48.0%.
 
 **Colours:** header uses New Orleans Hornets colours (#00778b / #280071) for the season starting 2003; presentation only.

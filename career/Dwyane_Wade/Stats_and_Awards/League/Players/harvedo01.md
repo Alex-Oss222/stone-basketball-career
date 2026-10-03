@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `harved
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/harvedo01.html#contract) ([text](../../../Contracts/players/harvedo01.md)).
+
 **2002-03 (recorded, DEN):** 77 G, 27 GS, 20.9 MPG, 7.9 PPG, 5.3 RPG, 1.3 APG, 0.6 SPG, 0.4 BPG, 1.6 TOV, FG 44.6%.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

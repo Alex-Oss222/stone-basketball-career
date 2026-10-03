@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hillty
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/hillty01.html#contract) ([text](../../../Contracts/players/hillty01.md)).
+
 **2002-03 (recorded, CLE/PHI):** 56 G, 43 GS, 24.1 MPG, 5.6 PPG, 7.0 RPG, 0.7 APG, 0.8 SPG, 0.5 BPG, 1.2 TOV, FG 42.2%.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

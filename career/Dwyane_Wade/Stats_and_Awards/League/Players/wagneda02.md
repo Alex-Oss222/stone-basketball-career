@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wagned
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $2,471,280) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/wagneda02.html#contract) ([text](../../../Contracts/players/wagneda02.md)).
+
 **2002-03 (recorded, CLE):** 47 G, 24 GS, 29.5 MPG, 13.4 PPG, 1.7 RPG, 2.8 APG, 0.8 SPG, 0.1 BPG, 1.8 TOV, FG 36.9%.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

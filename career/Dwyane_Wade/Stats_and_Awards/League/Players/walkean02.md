@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `walkea
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $13,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/walkean02.html#contract) ([text](../../../Contracts/players/walkean02.md)).
+
 **2002-03 (recorded, BOS):** 78 G, 78 GS, 41.5 MPG, 20.1 PPG, 7.2 RPG, 4.8 APG, 1.5 SPG, 0.4 BPG, 3.3 TOV, FG 38.8%.
 
 **Colours:** header uses Boston Celtics colours (#007a33 / #ffffff) for the season starting 2003; presentation only.

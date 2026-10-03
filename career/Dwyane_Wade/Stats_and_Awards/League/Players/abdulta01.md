@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `abdult
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $6,187,500) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/abdulta01.html#contract) ([text](../../../Contracts/players/abdulta01.md)).
+
 **2002-03 (recorded, DAL):** 14 G, 0 GS, 14.6 MPG, 4.1 PPG, 2.9 RPG, 1.5 APG, 0.4 SPG, 0.2 BPG, 0.5 TOV, FG 46.6%.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

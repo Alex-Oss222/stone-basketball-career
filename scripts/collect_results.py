@@ -32,6 +32,7 @@ sys.path.insert(0, str(ROOT))
 from runtime import KERNEL_VERSION
 from runtime.decisions import find_decisions
 from runtime.game_requests import find_requests
+from scripts.refresh_career_views import refresh_career_views
 
 URL = os.getenv("ENGINE_URL", "https://stone-basketball-career-production.up.railway.app").rstrip("/")
 
@@ -90,6 +91,9 @@ def main():
     for request, out, event_id, kind in todo:
         print(f"PENDING {event_id} (not served yet)")
     print(f"{len(written)} result file(s) written; {len(todo)} still pending")
+    if written:
+        refreshed = refresh_career_views(ROOT)
+        print(f"Updated {len(refreshed)} detailed career views from closed career evidence. Raw sidecars remain unclosed until their owning notes are updated.")
 
 
 if __name__ == "__main__":

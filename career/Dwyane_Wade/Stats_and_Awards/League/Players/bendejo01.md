@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bendej
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $5,800,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/bendejo01.html#contract) ([text](../../../Contracts/players/bendejo01.md)).
+
 **2002-03 (recorded, IND):** 46 G, 2 GS, 17.8 MPG, 6.6 PPG, 2.9 RPG, 0.9 APG, 0.2 SPG, 1.2 BPG, 0.9 TOV, FG 44.1%.
 
 **Colours:** header uses Indiana Pacers colours (#041e42 / #ffcd00) for the season starting 2003; presentation only.

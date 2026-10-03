@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `postel
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/postela01.html#contract) ([text](../../../Contracts/players/postela01.md)).
+
 **2002-03 (recorded, NYK):** 12 G, 0 GS, 8.2 MPG, 3.6 PPG, 0.3 RPG, 0.2 APG, 0.2 SPG, 0.0 BPG, 0.6 TOV, FG 36.8%.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

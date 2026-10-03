@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `welscj
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,326,600) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/welscji01.html#contract) ([text](../../../Contracts/players/welscji01.md)).
+
 **2002-03 (recorded, GSW):** 37 G, 0 GS, 6.3 MPG, 1.6 PPG, 0.8 RPG, 0.7 APG, 0.2 SPG, 0.1 BPG, 0.5 TOV, FG 25.3%.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

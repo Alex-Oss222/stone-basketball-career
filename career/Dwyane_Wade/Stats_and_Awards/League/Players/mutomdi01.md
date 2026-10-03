@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mutomd
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mutomdi01.html#contract) ([text](../../../Contracts/players/mutomdi01.md)).
+
 **2002-03 (recorded, NJN):** 24 G, 16 GS, 21.4 MPG, 5.8 PPG, 6.4 RPG, 0.8 APG, 0.2 SPG, 1.5 BPG, 1.4 TOV, FG 37.4%.
 
 **Colours:** header uses New Jersey Nets colours (#041e42 / #ba0c2f) for the season starting 2003; presentation only.

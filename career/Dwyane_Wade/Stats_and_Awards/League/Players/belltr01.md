@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `belltr
 
 **Contract/control:** Unsigned No. 16 first-round draft rights held by Memphis Grizzlies; no contract has been agreed. Draft cap hold $1,071,200.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/belltr01.html#contract) ([text](../../../Contracts/players/belltr01.md)).
+
 **2003 draft entry:** No. 16 overall, rights held by Memphis Grizzlies (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

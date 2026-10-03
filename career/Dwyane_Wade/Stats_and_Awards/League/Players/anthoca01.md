@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `anthoc
 
 **Contract/control:** Unsigned No. 3 first-round draft rights held by Denver Nuggets; no contract has been agreed. Draft cap hold $2,691,000.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/anthoca01.html#contract) ([text](../../../Contracts/players/anthoca01.md)).
+
 **2003 draft entry:** No. 3 overall, rights held by Denver Nuggets (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `alexac
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $2,168,193) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/alexaco02.html#contract) ([text](../../../Contracts/players/alexaco02.md)).
+
 **2002-03 (recorded, NOH):** 66 G, 7 GS, 20.6 MPG, 7.9 PPG, 1.8 RPG, 1.2 APG, 0.5 SPG, 0.1 BPG, 1.0 TOV, FG 38.2%.
 
 **Colours:** header uses New Orleans Hornets colours (#00778b / #280071) for the season starting 2003; presentation only.

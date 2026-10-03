@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `randoz
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,172,160) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/randoza01.html#contract) ([text](../../../Contracts/players/randoza01.md)).
+
 **2002-03 (recorded, POR):** 77 G, 11 GS, 16.9 MPG, 8.4 PPG, 4.5 RPG, 0.5 APG, 0.5 SPG, 0.2 BPG, 0.8 TOV, FG 51.3%.
 
 **Colours:** header uses Portland Trail Blazers colours (#c8102e / #010101) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `boozec
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $563,679) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/boozeca01.html#contract) ([text](../../../Contracts/players/boozeca01.md)).
+
 **2002-03 (recorded, CLE):** 81 G, 54 GS, 25.3 MPG, 10.0 PPG, 7.5 RPG, 1.3 APG, 0.7 SPG, 0.6 BPG, 1.3 TOV, FG 53.6%.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

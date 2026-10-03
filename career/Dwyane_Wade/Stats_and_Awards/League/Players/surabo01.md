@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `surabo
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $6,266,666) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/surabo01.html#contract) ([text](../../../Contracts/players/surabo01.md)).
+
 **2002-03 (recorded, GSW):** 55 G, 0 GS, 20.5 MPG, 7.3 PPG, 3.0 RPG, 3.2 APG, 0.8 SPG, 0.0 BPG, 1.5 TOV, FG 41.2%.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

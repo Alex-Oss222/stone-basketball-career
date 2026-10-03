@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `morlep
 
 **Contract/control:** Unsigned No. 50 second-round draft rights held by Seattle SuperSonics; no contract has been agreed. No individual draft cap hold.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/morlepa01.html#contract) ([text](../../../Contracts/players/morlepa01.md)).
+
 **2003 draft entry:** No. 50 overall, rights held by Seattle SuperSonics (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Seattle SuperSonics colours (#00573f / #f6be00) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `longgr
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/longgr01.html#contract) ([text](../../../Contracts/players/longgr01.md)).
+
 **2002-03 (recorded, BOS):** 41 G, 1 GS, 11.9 MPG, 1.8 PPG, 2.0 RPG, 0.6 APG, 0.2 SPG, 0.0 BPG, 0.5 TOV, FG 38.6%.
 
 **Colours:** header uses Boston Celtics colours (#007a33 / #ffffff) for the season starting 2003; presentation only.

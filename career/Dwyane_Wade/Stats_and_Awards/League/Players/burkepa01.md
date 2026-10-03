@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `burkep
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/burkepa01.html#contract) ([text](../../../Contracts/players/burkepa01.md)).
+
 **2002-03 (recorded, ORL):** 62 G, 8 GS, 12.6 MPG, 4.3 PPG, 2.4 RPG, 0.4 APG, 0.3 SPG, 0.4 BPG, 0.8 TOV, FG 38.2%.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

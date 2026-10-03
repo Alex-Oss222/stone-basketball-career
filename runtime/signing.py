@@ -9,10 +9,12 @@ failed write leaves the records untouched. Nothing here draws chance or decides
 anything; it records what the front office and the engine already decided.
 """
 from datetime import date
+from copy import deepcopy
 import json
 from pathlib import Path
 
 from .valuation import read
+from .contract_archive import archive_contract, archive_previous_contract
 
 ROOT = Path(__file__).resolve().parents[1]
 SEASON = "2003-04"
@@ -55,6 +57,7 @@ class Writer:
 
     def commit(self):
         for rel, data in self.files.items():
+            (self.root / rel).parent.mkdir(parents=True, exist_ok=True)
             dump(self.root / rel, data)
         for rel, content in self.texts.items():
             (self.root / rel).parent.mkdir(parents=True, exist_ok=True)
@@ -326,6 +329,15 @@ def sign(writer, negotiation, day, *, via_trade=None, cap=None):
         entry["notes"] = (f"Signed {long_date(day)} by simulated Miami via {route} and traded to {via_trade['trade']['partner']} in the same transaction "
                           f"(sign-and-trade {via_trade['trade_id']}); agreed {rec['agreement']['date']} (engine decision {rec['agreement']['decision_event']}).")
         entry["sources"].append(f"career/Dwyane_Wade/{SEASON}/{record_rel}")
+    previous = next((p for p in sheet["players"] if p["player"] == name), None)
+    archive_previous_contract(writer, previous, day, source=str(TEAM / "Finances/contract_schedules.json"), player_id=bbr)
+    archived = archive_contract(writer, entry, day, event="signed", source=entry["sources"][0], player_id=bbr,
+                                signing_team=via_trade["trade"]["partner"] if acquired else "Miami Heat", executed_terms=terms)
+    entry["contract_id"] = archived["contract_id"]
+    if acquired:
+        archive_contract(writer, entry, day, event="assigned", source=f"career/Dwyane_Wade/{SEASON}/{record_rel}", player_id=bbr,
+                         signing_team=via_trade["trade"]["partner"], assignment={"date": day, "from_team": via_trade["trade"]["partner"],
+                         "to_team": "Miami Heat", "source": f"career/Dwyane_Wade/{SEASON}/{record_rel}"})
     sheet["players"] = [p for p in sheet["players"] if p["player"] != name] + [entry]
     sheet["as_of"] = roster["as_of"] = day
     control = f"Signed {long_date(day)}: {terms['years']} seasons, ${sum(terms['schedule']):,} (${terms['first_year']:,} in 2003-04), ${terms['guaranteed']:,} guaranteed; route {route}."
@@ -571,10 +583,22 @@ def depart(writer, name, day, status, reason):
     return True
 
 
+def player_status_snapshot(writer, day, source_event, **fields):
+    """Keep the public identity dated when an executed event changes Wade's status."""
+    identity_rel = Path("career/Dwyane_Wade/professional_identity.json")
+    if not (writer.root / identity_rel).is_file():
+        return
+    identity = writer.load(identity_rel)
+    snapshot = dict(max((s for s in identity["snapshots"] if s["as_of"] <= day), key=lambda s: s["as_of"]))
+    snapshot.update(as_of=day, source_state=f"{SEASON}/current_state.json", source_event=source_event, **fields)
+    identity["snapshots"] = sorted([s for s in identity["snapshots"] if s["as_of"] != day] + [snapshot], key=lambda s: s["as_of"])
+
+
 def sign_rookie(writer, log, terms, day):
     """Wade signs his rookie-scale contract: the cap sheet, register, depth chart, state and the log's signing entry."""
     sheet, roster, depth = writer.load(TEAM / "Finances/contract_schedules.json"), writer.load(TEAM / "Team/Roster/roster.json"), writer.load(TEAM / "Team/Depth_Chart/depth_chart.json")
     entry = next(p for p in sheet["players"] if p["player"] == "Dwyane Wade")
+    archive_previous_contract(writer, entry, day, source=str(TEAM / "Finances/contract_schedules.json"), player_id="wadedw01")
     layered = terms.get("structure") == "layered"
     percent = terms["total_percent"] if layered else terms["percent_of_scale"]
     entry.update(status="under_contract", schedule=dict(terms["schedule"]), amount_kind=dict(terms["amount_kind"]), signed_date=day,
@@ -591,6 +615,9 @@ def sign_rookie(writer, log, terms, day):
         entry["bonus_evaluation"] = "each season's incentives are evaluated against closed results at the season rollover (docs/ROADMAP.md item 18)"
     entry.pop("current_cap_hold", None)
     entry["sources"] = ["01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json"] + [s for s in entry.get("sources", []) if "negotiation_log" not in s]
+    archived = archive_contract(writer, entry, day, event="signed", source=str(PHASE / "Wade_Rookie_Contract/negotiation_log.json"),
+                                player_id="wadedw01", signing_team="Miami Heat", executed_terms=terms)
+    entry["contract_id"] = archived["contract_id"]
     first = terms["schedule"]["2003-04"]
     for p in roster["players"]:
         if p["name"] == "Dwyane Wade":
@@ -608,6 +635,8 @@ def sign_rookie(writer, log, terms, day):
     pending = [d for d in state.get("pending_player_decisions", []) if d != "rookie_contract_offer"]
     set_state(writer, day, last_event=f"{day}-wade-signs-rookie-contract", contract_status="rookie_scale_contract", roster_status="under_contract",
               pending_player_decisions=pending)
+    player_status_snapshot(writer, day, f"{SEASON}/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json",
+                           roster_status="Under contract", contract=f"Rookie scale signed {day}: three seasons plus a 2006-07 team option")
     return entry
 
 
@@ -640,6 +669,9 @@ def apply_trade(writer, record, day):
     for name in trade.get("miami_out", []):
         entry = next(p for p in sheet["players"] if p["player"] == name)
         bbr = entry.get("bbr_id") or next((r.get("bbr_id") for r in roster["players"] if r["name"] == name), None)
+        archive_contract(writer, entry, day, event="assigned", source=f"career/Dwyane_Wade/{SEASON}/{record_rel}", player_id=bbr,
+                         assignment={"date": day, "from_team": "Miami Heat", "to_team": club,
+                                     "source": f"career/Dwyane_Wade/{SEASON}/{record_rel}"})
         depart(writer, name, day, "traded", f"traded to {club} ({record['trade_id']})")
         for e in holdings["entries"]:
             if e["player"] == name and e["until"] is None:
@@ -663,6 +695,18 @@ def apply_trade(writer, record, day):
                  "sources": [record_rel] + list(p.get("sources", []))}
         if p.get("prior_season_salary"):
             entry["prior_season_salary"] = p["prior_season_salary"]
+        previous = next((old for old in sheet["players"] if old["player"] == name), None)
+        archive_previous_contract(writer, previous, day, source=str(TEAM / "Finances/contract_schedules.json"), player_id=bbr)
+        # The presentation archive retains all sourced original terms, including
+        # options and guarantees. It does not alter the engine's salary ledger.
+        assigned = {**deepcopy(p), "acquired": deepcopy(entry["acquired"])}
+        archived = archive_contract(writer, assigned, day, event="assigned", source=f"career/Dwyane_Wade/{SEASON}/{record_rel}", player_id=bbr,
+                                    assignment={"date": day, "from_team": club, "to_team": "Miami Heat",
+                                                "source": f"career/Dwyane_Wade/{SEASON}/{record_rel}"})
+        entry["contract_id"] = archived["contract_id"]
+        for field in ("signed_date", "signing_team"):
+            if p.get(field):
+                entry[field] = p[field]
         sheet["players"] = [x for x in sheet["players"] if x["player"] != name] + [entry]
         identity = league_identity(writer.root, bbr)
         salary = p["schedule"].get(SEASON) or 0

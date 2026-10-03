@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willia
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $2,925,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/williaa01.html#contract) ([text](../../../Contracts/players/williaa01.md)).
+
 **2002-03 (recorded, NJN):** 81 G, 0 GS, 19.7 MPG, 6.2 PPG, 4.1 RPG, 1.1 APG, 0.3 SPG, 0.7 BPG, 1.0 TOV, FG 45.3%.
 
 **Colours:** header uses New Jersey Nets colours (#041e42 / #ba0c2f) for the season starting 2003; presentation only.

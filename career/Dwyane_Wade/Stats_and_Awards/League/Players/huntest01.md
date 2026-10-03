@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `huntes
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,431,600) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/huntest01.html#contract) ([text](../../../Contracts/players/huntest01.md)).
+
 **2002-03 (recorded, ORL):** 33 G, 5 GS, 13.5 MPG, 3.9 PPG, 2.8 RPG, 0.2 APG, 0.3 SPG, 1.1 BPG, 0.5 TOV, FG 54.4%.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

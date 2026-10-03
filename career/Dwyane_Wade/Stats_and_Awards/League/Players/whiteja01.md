@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `whitej
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $5,676,091) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/whiteja01.html#contract) ([text](../../../Contracts/players/whiteja01.md)).
+
 **2002-03 (recorded, WAS):** 16 G, 8 GS, 14.4 MPG, 4.2 PPG, 4.6 RPG, 0.1 APG, 0.1 SPG, 0.8 BPG, 0.6 TOV, FG 47.2%.
 
 **Colours:** header uses Washington Wizards colours (#236192 / #8f654d) for the season starting 2003; presentation only.

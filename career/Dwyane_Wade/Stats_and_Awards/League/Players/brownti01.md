@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `brownt
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/brownti01.html#contract) ([text](../../../Contracts/players/brownti01.md)).
+
 **2002-03 (recorded, CLE):** 15 G, 0 GS, 11.2 MPG, 4.3 PPG, 2.0 RPG, 2.6 APG, 0.9 SPG, 0.0 BPG, 1.5 TOV, FG 45.8%.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `garrip
 
 **Contract/control:** Under contract; through 2007-08 (2003-04 scheduled $2,643,750) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/garripa01.html#contract) ([text](../../../Contracts/players/garripa01.md)).
+
 **2002-03 (recorded, ORL):** 81 G, 53 GS, 31.9 MPG, 10.7 PPG, 3.8 RPG, 1.5 APG, 0.8 SPG, 0.2 BPG, 1.0 TOV, FG 41.9%.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

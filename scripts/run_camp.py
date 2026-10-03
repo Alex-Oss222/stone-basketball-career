@@ -16,10 +16,12 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime import camp, signing                      # noqa: E402
+from runtime.contract_archive import archive_contract  # noqa: E402
 from runtime.decisions import decision_errors          # noqa: E402
 from runtime.gm import FrontOffice                     # noqa: E402
 from runtime.market import Market                      # noqa: E402
 from runtime.valuation import read                     # noqa: E402
+from scripts.refresh_career_views import refresh_career_views # noqa: E402
 
 INVITE_DAY, PRESEASON_DAY, EVALUATION_DAY, CUT_DAY = "2003-09-30", "2003-10-05", "2003-10-24", "2003-10-27"
 
@@ -69,6 +71,8 @@ class CampRun:
             sheet["players"].append({"player": r["player"], "bbr_id": r["bbr_id"], "status": "camp_contract", "schedule": {camp.SEASON: r["salary"]},
                                      "amount_kind": {camp.SEASON: "contract_salary"}, "guaranteed": {camp.SEASON: 0}, "guarantee_date": camp.GUARANTEE_DATE,
                                      "signed_date": day, "route": "minimum", "notes": control, "sources": ["04_Training_Camp/camp_roster.json"]})
+            archive_contract(self.writer, sheet["players"][-1], day, event="signed", source=str(camp.CAMP_ROSTER),
+                             player_id=r["bbr_id"], signing_team="Miami Heat")
             roster["players"].append({"id": signing.slug(r["player"]), "name": r["player"], "positions": [r["position"]], "date_of_birth": identity.get("birth_date"),
                                       "status": "camp_contract", "control": control, "working_role": "Camp invitee",
                                       "player_card": f"../Player_Cards/{signing.slug(r['player'])}.md", "bbr_id": r["bbr_id"]})
@@ -144,6 +148,11 @@ class CampRun:
         self.writer.text(camp.CAMP / "Wade_Camp_Review.md", wade_page(day, grade, lines.get("Dwyane Wade"), rotation, reply))
         if reply_path.exists():
             signing.note_event(self.writer, camp.CAMP / "note.md", day, f"Wade's reply to the camp review: {reply}")
+        minutes = next((p["minutes"] for p in rotation["players"] if p["player_id"] == "Dwyane Wade"), 0)
+        positions = [pos for pos, names in depth["positions"].items() if names and names[0] == "Dwyane Wade"]
+        assignment = "Starting " + "/".join(positions) if positions else "Rotation" if minutes else "Outside current rotation"
+        signing.player_status_snapshot(self.writer, day, "2003-04/04_Training_Camp/Wade_Camp_Review.md",
+                                       role=f"{assignment}; staff plan {minutes:g} minutes")
         signing.set_state(self.writer, day, area="04_Training_Camp", note="04_Training_Camp/note.md", last_event=f"{day}-camp-decision")
         return True
 
@@ -209,7 +218,7 @@ def wade_page(day, grade, line, rotation, reply="_open_"):
 
 ![Training camp: assignment, evidence and player response](../../../../docs/templates/player_milestones/assets/camp.svg)
 
-[Template](../../../../docs/templates/player_milestones/training_camp.md) · [Camp note](note.md) · [Depth chart](../00_Team/Team/Depth_Chart/depth_chart.json) · [Rotation](../00_Team/Team/Depth_Chart/rotation.json)
+[Live detailed camp review](../../Milestones/index.html#training_camp) · [Shooting and Awards](../../Stats_and_Awards/player_cards.html) · [Camp note](note.md) · [Depth chart](../00_Team/Team/Depth_Chart/depth_chart.json) · [Rotation](../00_Team/Team/Depth_Chart/rotation.json)
 
 | Player / age | Position / club | Review date | Availability |
 | --- | --- | --- | --- |
@@ -255,7 +264,9 @@ def main(argv):
     if len(argv) != 3 or argv[1] != "--write":
         raise SystemExit(__doc__)
     stops = CampRun().write(argv[2])
+    refreshed = refresh_career_views(ROOT)
     print("\n".join(stops) if stops else f"camp stages through {argv[2]} written")
+    print(f"Updated {len(refreshed)} detailed career views; open career/Dwyane_Wade/Milestones/index.html#training_camp.")
 
 
 if __name__ == "__main__":

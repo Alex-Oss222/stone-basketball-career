@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willij
 
 **Contract/control:** Under contract; through 2007-08 (2003-04 scheduled $5,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/willije01.html#contract) ([text](../../../Contracts/players/willije01.md)).
+
 **2002-03 (recorded, TOR):** 71 G, 63 GS, 33.0 MPG, 9.7 PPG, 9.2 RPG, 1.3 APG, 1.6 SPG, 0.4 BPG, 1.4 TOV, FG 49.9%.
 
 **Colours:** header uses Toronto Raptors colours (#753bbd / #ba0c2f) for the season starting 2003; presentation only.

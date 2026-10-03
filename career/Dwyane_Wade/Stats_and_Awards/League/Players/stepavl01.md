@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `stepav
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/stepavl01.html#contract) ([text](../../../Contracts/players/stepavl01.md)).
+
 **2002-03 (recorded, MIA):** 79 G, 6 GS, 20.2 MPG, 5.6 PPG, 7.0 RPG, 0.3 APG, 0.6 SPG, 0.5 BPG, 0.9 TOV, FG 43.3%.
 
 **Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2003; presentation only.

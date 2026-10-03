@@ -12,4 +12,6 @@ COPY --from=verify /app/runtime/ runtime/
 COPY --from=verify /app/scripts/serve_engine.py scripts/serve_engine.py
 COPY --from=verify /app/career/ career/
 COPY --from=verify /app/library/ library/
+COPY --from=verify /app/foundation/ foundation/
+COPY --from=verify /app/docs/ docs/
 CMD ["python", "scripts/serve_engine.py"]

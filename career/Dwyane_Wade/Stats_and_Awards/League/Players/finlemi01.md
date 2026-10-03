@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `finlem
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $13,281,250) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/finlemi01.html#contract) ([text](../../../Contracts/players/finlemi01.md)).
+
 **2002-03 (recorded, DAL):** 69 G, 69 GS, 38.3 MPG, 19.3 PPG, 5.8 RPG, 3.0 APG, 1.1 SPG, 0.3 BPG, 1.7 TOV, FG 42.5%.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `howarj
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/howarju01.html#contract) ([text](../../../Contracts/players/howarju01.md)).
+
 **2002-03 (recorded, DEN):** 77 G, 77 GS, 35.5 MPG, 18.4 PPG, 7.6 RPG, 3.0 APG, 1.0 SPG, 0.4 BPG, 2.5 TOV, FG 45.0%.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

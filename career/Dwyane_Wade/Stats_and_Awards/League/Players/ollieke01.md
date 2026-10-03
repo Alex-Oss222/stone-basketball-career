@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `olliek
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/ollieke01.html#contract) ([text](../../../Contracts/players/ollieke01.md)).
+
 **2002-03 (recorded, MIL/SEA):** 82 G, 5 GS, 23.1 MPG, 6.5 PPG, 2.2 RPG, 3.5 APG, 0.8 SPG, 0.1 BPG, 0.9 TOV, FG 45.1%.
 
 **Colours:** header uses Seattle SuperSonics colours (#00573f / #f6be00) for the season starting 2003; presentation only.

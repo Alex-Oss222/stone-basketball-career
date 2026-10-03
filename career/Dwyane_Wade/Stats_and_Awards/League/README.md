@@ -1,5 +1,9 @@
 # NBA | Statistics and awards
 
+<!-- contract-navigation:start -->
+[Current contracts and contract history for every tracked player](../../Contracts/index.html)
+<!-- contract-navigation:end -->
+
 [Stats hub](../README.md) · [2003-04 players](2003-04/League_Stats.md) · [2003-04 awards](2003-04/League_Awards.md) · [Player registry](player_registry.json) · [Player cards](Players/README.md)
 
 The league pages cover 407 registered players. All entries remain available in six position groups, with the complete per-game table in the same order as the player pages. A closed group keeps the page short; opening it reveals every player in that position, alphabetically.

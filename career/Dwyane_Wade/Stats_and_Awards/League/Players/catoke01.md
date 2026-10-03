@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `catoke
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $7,344,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/catoke01.html#contract) ([text](../../../Contracts/players/catoke01.md)).
+
 **2002-03 (recorded, HOU):** 73 G, 5 GS, 17.1 MPG, 4.5 PPG, 5.9 RPG, 0.3 APG, 0.5 SPG, 1.2 BPG, 0.8 TOV, FG 52.0%.
 
 **Colours:** header uses Houston Rockets colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

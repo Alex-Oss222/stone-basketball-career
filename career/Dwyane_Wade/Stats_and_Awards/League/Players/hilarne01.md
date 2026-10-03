@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hilarn
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $2,102,840) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/hilarne01.html#contract) ([text](../../../Contracts/players/hilarne01.md)).
+
 **2002-03 (recorded, DEN):** 80 G, 53 GS, 28.2 MPG, 10.5 PPG, 6.1 RPG, 1.9 APG, 1.6 SPG, 0.8 BPG, 2.3 TOV, FG 51.9%.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

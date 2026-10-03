@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `ferryd
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/ferryda01.html#contract) ([text](../../../Contracts/players/ferryda01.md)).
+
 **2002-03 (recorded, SAS):** 64 G, 1 GS, 9.4 MPG, 1.9 PPG, 1.2 RPG, 0.3 APG, 0.1 SPG, 0.1 BPG, 0.4 TOV, FG 35.5%.
 
 **Colours:** header uses San Antonio Spurs colours (#010101 / #8d9093) for the season starting 2003; presentation only.

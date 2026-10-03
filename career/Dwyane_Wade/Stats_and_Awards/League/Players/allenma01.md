@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `allenm
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/allenma01.html#contract) ([text](../../../Contracts/players/allenma01.md)).
+
 **2002-03 (recorded, MIA):** 80 G, 73 GS, 29.0 MPG, 9.6 PPG, 5.3 RPG, 0.7 APG, 0.5 SPG, 1.0 BPG, 1.6 TOV, FG 42.4%.
 
 **Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `kittlk
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $9,766,667) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/kittlke01.html#contract) ([text](../../../Contracts/players/kittlke01.md)).
+
 **2002-03 (recorded, NJN):** 65 G, 57 GS, 30.0 MPG, 13.0 PPG, 3.9 RPG, 2.6 APG, 1.6 SPG, 0.5 BPG, 0.8 TOV, FG 46.7%.
 
 **Colours:** header uses New Jersey Nets colours (#041e42 / #ba0c2f) for the season starting 2003; presentation only.

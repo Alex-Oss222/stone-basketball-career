@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `colemd
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/colemde01.html#contract) ([text](../../../Contracts/players/colemde01.md)).
+
 **2002-03 (recorded, PHI):** 64 G, 35 GS, 27.2 MPG, 9.4 PPG, 7.0 RPG, 1.4 APG, 0.8 SPG, 1.1 BPG, 1.5 TOV, FG 44.8%.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

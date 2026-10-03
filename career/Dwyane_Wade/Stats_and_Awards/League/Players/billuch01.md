@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `billuc
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $5,000,600) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/billuch01.html#contract) ([text](../../../Contracts/players/billuch01.md)).
+
 **2002-03 (recorded, DET):** 74 G, 74 GS, 31.4 MPG, 16.2 PPG, 3.7 RPG, 3.9 APG, 0.9 SPG, 0.2 BPG, 1.8 TOV, FG 42.1%.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

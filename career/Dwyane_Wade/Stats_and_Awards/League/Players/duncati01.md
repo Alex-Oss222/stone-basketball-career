@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `duncat
 
 **Contract/control:** 2003-04 player option pending; through 2003-04 (2003-04 scheduled $13,279,750) (league contract inventory status `player_option_pending`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/duncati01.html#contract) ([text](../../../Contracts/players/duncati01.md)).
+
 **2002-03 (recorded, SAS):** 81 G, 81 GS, 39.3 MPG, 23.3 PPG, 12.9 RPG, 3.9 APG, 0.7 SPG, 2.9 BPG, 3.1 TOV, FG 51.3%.
 
 **Colours:** header uses San Antonio Spurs colours (#010101 / #8d9093) for the season starting 2003; presentation only.

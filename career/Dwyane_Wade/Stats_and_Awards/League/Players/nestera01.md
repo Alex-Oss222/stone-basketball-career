@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `nester
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/nestera01.html#contract) ([text](../../../Contracts/players/nestera01.md)).
+
 **2002-03 (recorded, MIN):** 77 G, 77 GS, 30.4 MPG, 11.2 PPG, 6.5 RPG, 1.5 APG, 0.5 SPG, 1.5 BPG, 1.3 TOV, FG 52.5%.
 
 **Colours:** header uses Minnesota Timberwolves colours (#236192 / #00843d) for the season starting 2003; presentation only.

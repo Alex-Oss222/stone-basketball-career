@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bastom
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/bastoma01.html#contract) ([text](../../../Contracts/players/bastoma01.md)).
+
 **2002-03 (recorded, TOR):** 16 G, 0 GS, 6.6 MPG, 2.5 PPG, 1.4 RPG, 0.0 APG, 0.2 SPG, 0.7 BPG, 0.4 TOV, FG 60.0%.
 
 **Colours:** header uses Toronto Raptors colours (#753bbd / #ba0c2f) for the season starting 2003; presentation only.

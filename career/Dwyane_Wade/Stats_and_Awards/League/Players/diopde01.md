@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `diopde
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $2,118,840) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/diopde01.html#contract) ([text](../../../Contracts/players/diopde01.md)).
+
 **2002-03 (recorded, CLE):** 80 G, 1 GS, 11.8 MPG, 1.5 PPG, 2.7 RPG, 0.5 APG, 0.4 SPG, 1.0 BPG, 0.7 TOV, FG 35.1%.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

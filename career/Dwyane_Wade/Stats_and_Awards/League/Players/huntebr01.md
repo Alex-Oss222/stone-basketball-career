@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hunteb
 
 **Contract/control:** Unsigned No. 56 second-round draft rights held by Boston Celtics; no contract has been agreed. No individual draft cap hold.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/huntebr01.html#contract) ([text](../../../Contracts/players/huntebr01.md)).
+
 **2003 draft entry:** No. 56 overall, rights held by Boston Celtics (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Boston Celtics colours (#007a33 / #ffffff) for the season starting 2003; presentation only.

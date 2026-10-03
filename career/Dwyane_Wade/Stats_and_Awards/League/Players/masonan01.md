@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `masona
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $4,348,094) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/masonan01.html#contract) ([text](../../../Contracts/players/masonan01.md)).
+
 **2002-03 (recorded, MIL):** 65 G, 58 GS, 32.6 MPG, 7.2 PPG, 6.4 RPG, 3.2 APG, 0.5 SPG, 0.2 BPG, 1.2 TOV, FG 48.6%.
 
 **Colours:** header uses Milwaukee Bucks colours (#702f8a / #2c5234) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `masond
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $1,898,312) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/masonde01.html#contract) ([text](../../../Contracts/players/masonde01.md)).
+
 **2002-03 (recorded, SEA/MIL):** 80 G, 40 GS, 34.5 MPG, 14.3 PPG, 6.5 RPG, 2.0 APG, 0.8 SPG, 0.4 BPG, 1.4 TOV, FG 44.9%.
 
 **Colours:** header uses Milwaukee Bucks colours (#702f8a / #2c5234) for the season starting 2003; presentation only.

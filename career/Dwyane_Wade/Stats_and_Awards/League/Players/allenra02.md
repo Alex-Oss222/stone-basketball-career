@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `allenr
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $13,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/allenra02.html#contract) ([text](../../../Contracts/players/allenra02.md)).
+
 **2002-03 (recorded, MIL/SEA):** 76 G, 75 GS, 37.9 MPG, 22.5 PPG, 5.0 RPG, 4.4 APG, 1.4 SPG, 0.2 BPG, 2.6 TOV, FG 43.9%.
 
 **Colours:** header uses Seattle SuperSonics colours (#00573f / #f6be00) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bradls
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $3,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/bradlsh01.html#contract) ([text](../../../Contracts/players/bradlsh01.md)).
+
 **2002-03 (recorded, DAL):** 81 G, 39 GS, 21.4 MPG, 6.7 PPG, 5.9 RPG, 0.7 APG, 0.8 SPG, 2.1 BPG, 0.8 TOV, FG 53.6%.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

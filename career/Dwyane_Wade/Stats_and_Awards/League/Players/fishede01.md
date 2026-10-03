@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `fished
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $3,000,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/fishede01.html#contract) ([text](../../../Contracts/players/fishede01.md)).
+
 **2002-03 (recorded, LAL):** 82 G, 82 GS, 34.5 MPG, 10.5 PPG, 2.9 RPG, 3.6 APG, 1.1 SPG, 0.2 BPG, 1.1 TOV, FG 43.7%.
 
 **Colours:** header uses Los Angeles Lakers colours (#702f8a / #ffc72c) for the season starting 2003; presentation only.

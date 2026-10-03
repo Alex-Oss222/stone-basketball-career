@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `haislm
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,547,280) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/haislma01.html#contract) ([text](../../../Contracts/players/haislma01.md)).
+
 **2002-03 (recorded, MIL):** 39 G, 8 GS, 11.3 MPG, 4.1 PPG, 1.4 RPG, 0.2 APG, 0.2 SPG, 0.5 BPG, 0.5 TOV, FG 43.1%.
 
 **Colours:** header uses Milwaukee Bucks colours (#702f8a / #2c5234) for the season starting 2003; presentation only.

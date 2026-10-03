@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `fowlkt
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $638,679) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/fowlktr01.html#contract) ([text](../../../Contracts/players/fowlktr01.md)).
+
 **2002-03 (recorded, LAC):** 37 G, 10 GS, 15.5 MPG, 4.4 PPG, 2.8 RPG, 0.6 APG, 0.7 SPG, 0.1 BPG, 0.5 TOV, FG 43.8%.
 
 **Colours:** header uses Los Angeles Clippers colours (#d50032 / #003da5) for the season starting 2003; presentation only.

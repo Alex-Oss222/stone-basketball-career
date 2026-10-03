@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `iversa
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $13,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/iversal01.html#contract) ([text](../../../Contracts/players/iversal01.md)).
+
 **2002-03 (recorded, PHI):** 82 G, 82 GS, 42.5 MPG, 27.6 PPG, 4.2 RPG, 5.5 APG, 2.7 SPG, 0.2 BPG, 3.5 TOV, FG 41.4%.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

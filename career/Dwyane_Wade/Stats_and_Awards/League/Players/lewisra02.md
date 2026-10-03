@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `lewisr
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $7,012,987) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/lewisra02.html#contract) ([text](../../../Contracts/players/lewisra02.md)).
+
 **2002-03 (recorded, SEA):** 77 G, 77 GS, 39.5 MPG, 18.1 PPG, 6.5 RPG, 1.7 APG, 1.3 SPG, 0.5 BPG, 1.9 TOV, FG 45.2%.
 
 **Colours:** header uses Seattle SuperSonics colours (#00573f / #f6be00) for the season starting 2003; presentation only.

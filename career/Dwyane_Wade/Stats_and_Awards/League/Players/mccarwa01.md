@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mccarw
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mccarwa01.html#contract) ([text](../../../Contracts/players/mccarwa01.md)).
+
 **2002-03 (recorded, BOS):** 82 G, 8 GS, 23.8 MPG, 6.1 PPG, 3.5 RPG, 1.3 APG, 1.0 SPG, 0.3 BPG, 0.8 TOV, FG 41.4%.
 
 **Colours:** header uses Boston Celtics colours (#007a33 / #ffffff) for the season starting 2003; presentation only.

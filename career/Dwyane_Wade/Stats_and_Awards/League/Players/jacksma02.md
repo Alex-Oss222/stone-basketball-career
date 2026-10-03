@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jacksm
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $3,900,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jacksma02.html#contract) ([text](../../../Contracts/players/jacksma02.md)).
+
 **2002-03 (recorded, MIN):** 77 G, 0 GS, 13.5 MPG, 5.5 PPG, 2.9 RPG, 0.5 APG, 0.3 SPG, 0.4 BPG, 0.8 TOV, FG 43.8%.
 
 **Colours:** header uses Minnesota Timberwolves colours (#236192 / #00843d) for the season starting 2003; presentation only.

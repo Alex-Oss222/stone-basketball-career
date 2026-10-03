@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `battis
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $2,533,440) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/battish01.html#contract) ([text](../../../Contracts/players/battish01.md)).
+
 **2002-03 (recorded, MEM):** 78 G, 47 GS, 30.6 MPG, 9.7 PPG, 4.4 RPG, 1.3 APG, 1.3 SPG, 1.1 BPG, 0.9 TOV, FG 48.3%.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

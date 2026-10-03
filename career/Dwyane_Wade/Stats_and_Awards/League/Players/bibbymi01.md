@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bibbym
 
 **Contract/control:** Under contract; through 2008-09 (2003-04 scheduled $9,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/bibbymi01.html#contract) ([text](../../../Contracts/players/bibbymi01.md)).
+
 **2002-03 (recorded, SAC):** 55 G, 55 GS, 33.4 MPG, 15.9 PPG, 2.7 RPG, 5.2 APG, 1.3 SPG, 0.1 BPG, 2.3 TOV, FG 47.0%.
 
 **Colours:** header uses Sacramento Kings colours (#753bbd / #010101) for the season starting 2003; presentation only.

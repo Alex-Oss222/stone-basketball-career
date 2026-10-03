@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `anderc
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/anderch01.html#contract) ([text](../../../Contracts/players/anderch01.md)).
+
 **2002-03 (recorded, DEN):** 59 G, 3 GS, 15.4 MPG, 5.2 PPG, 4.6 RPG, 0.5 APG, 0.5 SPG, 1.0 BPG, 1.0 TOV, FG 40.0%.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

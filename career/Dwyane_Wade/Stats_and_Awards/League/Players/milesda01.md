@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `milesd
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $4,130,701) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/milesda01.html#contract) ([text](../../../Contracts/players/milesda01.md)).
+
 **2002-03 (recorded, CLE):** 67 G, 62 GS, 30.0 MPG, 9.2 PPG, 5.4 RPG, 2.6 APG, 1.0 SPG, 1.0 BPG, 2.7 TOV, FG 41.0%.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

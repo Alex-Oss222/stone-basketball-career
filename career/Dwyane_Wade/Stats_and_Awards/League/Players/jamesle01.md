@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jamesl
 
 **Contract/control:** Unsigned No. 1 first-round draft rights held by Cleveland Cavaliers; no contract has been agreed. Draft cap hold $3,349,100.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jamesle01.html#contract) ([text](../../../Contracts/players/jamesle01.md)).
+
 **2003 draft entry:** No. 1 overall, rights held by Cleveland Cavaliers (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

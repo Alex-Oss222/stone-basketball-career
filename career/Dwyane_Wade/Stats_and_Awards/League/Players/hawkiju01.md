@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hawkij
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/hawkiju01.html#contract) ([text](../../../Contracts/players/hawkiju01.md)).
+
 **2002-03 (recorded, HOU):** 58 G, 10 GS, 11.8 MPG, 2.3 PPG, 1.3 RPG, 0.8 APG, 0.5 SPG, 0.1 BPG, 0.5 TOV, FG 38.5%.
 
 **Colours:** header uses Houston Rockets colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

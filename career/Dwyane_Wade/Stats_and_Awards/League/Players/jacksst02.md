@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jackss
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jacksst02.html#contract) ([text](../../../Contracts/players/jacksst02.md)).
+
 **2002-03 (recorded, SAS):** 80 G, 58 GS, 28.2 MPG, 11.8 PPG, 3.6 RPG, 2.3 APG, 1.6 SPG, 0.4 BPG, 2.2 TOV, FG 43.5%.
 
 **Colours:** header uses San Antonio Spurs colours (#010101 / #8d9093) for the season starting 2003; presentation only.

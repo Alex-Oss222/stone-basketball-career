@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `oneals
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $24,749,999) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/onealsh01.html#contract) ([text](../../../Contracts/players/onealsh01.md)).
+
 **2002-03 (recorded, LAL):** 67 G, 66 GS, 37.8 MPG, 27.5 PPG, 11.1 RPG, 3.1 APG, 0.6 SPG, 2.4 BPG, 2.9 TOV, FG 57.4%.
 
 **Colours:** header uses Los Angeles Lakers colours (#702f8a / #ffc72c) for the season starting 2003; presentation only.

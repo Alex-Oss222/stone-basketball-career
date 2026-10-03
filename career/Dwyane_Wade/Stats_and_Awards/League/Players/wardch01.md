@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wardch
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $6,030,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/wardch01.html#contract) ([text](../../../Contracts/players/wardch01.md)).
+
 **2002-03 (recorded, NYK):** 66 G, 6 GS, 22.2 MPG, 7.2 PPG, 2.7 RPG, 4.6 APG, 1.2 SPG, 0.2 BPG, 1.4 TOV, FG 39.9%.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

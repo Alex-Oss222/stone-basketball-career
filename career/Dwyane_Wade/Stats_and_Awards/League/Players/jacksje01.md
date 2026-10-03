@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jacksj
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jacksje01.html#contract) ([text](../../../Contracts/players/jacksje01.md)).
+
 **2002-03 (recorded, TOR/ATL):** 53 G, 1 GS, 10.5 MPG, 2.3 PPG, 1.1 RPG, 1.4 APG, 0.4 SPG, 0.1 BPG, 0.6 TOV, FG 36.4%.
 
 **Colours:** header uses Atlanta Hawks colours (#c8102e / #ffcd00) for the season starting 2003; presentation only.

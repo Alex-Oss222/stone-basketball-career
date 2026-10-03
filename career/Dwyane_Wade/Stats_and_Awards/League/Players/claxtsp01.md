@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `claxts
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/claxtsp01.html#contract) ([text](../../../Contracts/players/claxtsp01.md)).
+
 **2002-03 (recorded, SAS):** 30 G, 0 GS, 15.7 MPG, 5.8 PPG, 1.9 RPG, 2.5 APG, 0.7 SPG, 0.2 BPG, 1.2 TOV, FG 46.2%.
 
 **Colours:** header uses San Antonio Spurs colours (#010101 / #8d9093) for the season starting 2003; presentation only.

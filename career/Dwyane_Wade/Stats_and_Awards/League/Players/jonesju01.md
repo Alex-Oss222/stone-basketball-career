@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jonesj
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jonesju01.html#contract) ([text](../../../Contracts/players/jonesju01.md)).
+
 **2002-03 (recorded, CLE):** 80 G, 12 GS, 27.6 MPG, 9.8 PPG, 5.1 RPG, 1.4 APG, 0.8 SPG, 0.3 BPG, 1.3 TOV, FG 43.4%.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

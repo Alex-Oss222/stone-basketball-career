@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `harria
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $5,692,500) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/harrial01.html#contract) ([text](../../../Contracts/players/harrial01.md)).
+
 **2002-03 (recorded, IND):** 82 G, 37 GS, 30.1 MPG, 12.2 PPG, 6.2 RPG, 1.5 APG, 0.9 SPG, 0.4 BPG, 2.0 TOV, FG 43.4%.
 
 **Colours:** header uses Indiana Pacers colours (#041e42 / #ffcd00) for the season starting 2003; presentation only.

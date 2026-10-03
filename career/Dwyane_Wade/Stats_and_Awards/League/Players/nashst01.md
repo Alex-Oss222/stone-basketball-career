@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `nashst
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $5,750,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/nashst01.html#contract) ([text](../../../Contracts/players/nashst01.md)).
+
 **2002-03 (recorded, DAL):** 82 G, 82 GS, 33.1 MPG, 17.7 PPG, 2.9 RPG, 7.3 APG, 1.0 SPG, 0.1 BPG, 2.3 TOV, FG 46.5%.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

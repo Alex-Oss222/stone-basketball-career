@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `luety0
 
 **Contract/control:** Contract ended in 2002-03 (league contract inventory status `free_agent_unlisted`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/luety01.html#contract) ([text](../../../Contracts/players/luety01.md)).
+
 **2002-03 (recorded, WAS):** 75 G, 24 GS, 26.5 MPG, 8.6 PPG, 2.0 RPG, 3.5 APG, 0.6 SPG, 0.0 BPG, 1.0 TOV, FG 43.3%.
 
 **Colours:** header uses Washington Wizards colours (#236192 / #8f654d) for the season starting 2003; presentation only.

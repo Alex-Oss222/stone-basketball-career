@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `parket
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $856,200) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/parketo01.html#contract) ([text](../../../Contracts/players/parketo01.md)).
+
 **2002-03 (recorded, SAS):** 82 G, 82 GS, 33.8 MPG, 15.5 PPG, 2.6 RPG, 5.3 APG, 0.9 SPG, 0.0 BPG, 2.4 TOV, FG 46.4%.
 
 **Colours:** header uses San Antonio Spurs colours (#010101 / #8d9093) for the season starting 2003; presentation only.

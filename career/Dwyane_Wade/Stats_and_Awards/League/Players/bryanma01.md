@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bryanm
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/bryanma01.html#contract) ([text](../../../Contracts/players/bryanma01.md)).
+
 **2002-03 (recorded, PHI/DEN/BOS):** 16 G, 0 GS, 6.2 MPG, 0.8 PPG, 1.2 RPG, 0.2 APG, 0.1 SPG, 0.1 BPG, 0.4 TOV, FG 26.3%.
 
 **Colours:** header uses Boston Celtics colours (#007a33 / #ffffff) for the season starting 2003; presentation only.

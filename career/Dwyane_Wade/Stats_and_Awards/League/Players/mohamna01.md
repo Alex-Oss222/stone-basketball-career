@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mohamn
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $5,000,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mohamna01.html#contract) ([text](../../../Contracts/players/mohamna01.md)).
+
 **2002-03 (recorded, ATL):** 35 G, 0 GS, 12.7 MPG, 4.6 PPG, 3.7 RPG, 0.2 APG, 0.5 SPG, 0.6 BPG, 0.7 TOV, FG 42.1%.
 
 **Colours:** header uses Atlanta Hawks colours (#c8102e / #ffcd00) for the season starting 2003; presentation only.

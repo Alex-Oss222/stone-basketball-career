@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mingya
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $4,147,560) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mingya01.html#contract) ([text](../../../Contracts/players/mingya01.md)).
+
 **2002-03 (recorded, HOU):** 82 G, 72 GS, 29.0 MPG, 13.5 PPG, 8.2 RPG, 1.7 APG, 0.4 SPG, 1.8 BPG, 2.1 TOV, FG 49.8%.
 
 **Colours:** header uses Houston Rockets colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

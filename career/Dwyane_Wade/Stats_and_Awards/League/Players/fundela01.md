@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `fundel
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $3,600,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/fundela01.html#contract) ([text](../../../Contracts/players/fundela01.md)).
+
 **2002-03 (recorded, SAC):** 27 G, 0 GS, 8.5 MPG, 2.7 PPG, 2.0 RPG, 0.3 APG, 0.0 SPG, 0.4 BPG, 0.2 TOV, FG 44.4%.
 
 **Colours:** header uses Sacramento Kings colours (#753bbd / #010101) for the season starting 2003; presentation only.

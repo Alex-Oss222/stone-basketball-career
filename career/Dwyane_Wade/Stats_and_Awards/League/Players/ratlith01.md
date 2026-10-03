@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `ratlit
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $10,156,250) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/ratlith01.html#contract) ([text](../../../Contracts/players/ratlith01.md)).
+
 **2002-03 (recorded, ATL):** 81 G, 81 GS, 31.1 MPG, 8.7 PPG, 7.5 RPG, 0.9 APG, 0.7 SPG, 3.2 BPG, 1.7 TOV, FG 46.4%.
 
 **Colours:** header uses Atlanta Hawks colours (#c8102e / #ffcd00) for the season starting 2003; presentation only.

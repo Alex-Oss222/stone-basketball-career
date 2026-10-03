@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `blounc
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/blounco01.html#contract) ([text](../../../Contracts/players/blounco01.md)).
+
 **2002-03 (recorded, CHI):** 50 G, 3 GS, 16.7 MPG, 3.0 PPG, 4.1 RPG, 1.0 APG, 0.7 SPG, 0.4 BPG, 0.9 TOV, FG 48.5%.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

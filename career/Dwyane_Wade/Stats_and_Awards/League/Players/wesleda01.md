@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wesled
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $3,960,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/wesleda01.html#contract) ([text](../../../Contracts/players/wesleda01.md)).
+
 **2002-03 (recorded, NOH):** 73 G, 73 GS, 37.1 MPG, 16.7 PPG, 2.4 RPG, 3.4 APG, 1.5 SPG, 0.1 BPG, 1.8 TOV, FG 43.3%.
 
 **Colours:** header uses New Orleans Hornets colours (#00778b / #280071) for the season starting 2003; presentation only.

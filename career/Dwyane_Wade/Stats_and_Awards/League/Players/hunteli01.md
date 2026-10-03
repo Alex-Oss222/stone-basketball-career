@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `huntel
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $3,000,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/hunteli01.html#contract) ([text](../../../Contracts/players/hunteli01.md)).
+
 **2002-03 (recorded, TOR):** 29 G, 0 GS, 23.2 MPG, 9.7 PPG, 2.0 RPG, 2.4 APG, 1.2 SPG, 0.2 BPG, 2.0 TOV, FG 35.1%.
 
 **Colours:** header uses Toronto Raptors colours (#753bbd / #ba0c2f) for the season starting 2003; presentation only.

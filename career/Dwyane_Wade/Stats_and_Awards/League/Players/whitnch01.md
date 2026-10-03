@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `whitnc
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/whitnch01.html#contract) ([text](../../../Contracts/players/whitnch01.md)).
+
 **2002-03 (recorded, DEN/ORL):** 51 G, 21 GS, 20.6 MPG, 7.0 PPG, 1.3 RPG, 2.8 APG, 0.6 SPG, 0.0 BPG, 1.4 TOV, FG 35.5%.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

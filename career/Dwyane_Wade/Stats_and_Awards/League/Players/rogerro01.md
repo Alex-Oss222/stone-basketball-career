@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `rogerr
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $3,075,600) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/rogerro01.html#contract) ([text](../../../Contracts/players/rogerro01.md)).
+
 **2002-03 (recorded, NJN):** 68 G, 0 GS, 19.2 MPG, 7.0 PPG, 3.9 RPG, 1.6 APG, 0.7 SPG, 0.5 BPG, 1.3 TOV, FG 40.2%.
 
 **Colours:** header uses New Jersey Nets colours (#041e42 / #ba0c2f) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `dickad
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $835,200) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/dickada01.html#contract) ([text](../../../Contracts/players/dickada01.md)).
+
 **2002-03 (recorded, ATL):** 50 G, 0 GS, 10.3 MPG, 3.7 PPG, 0.9 RPG, 1.7 APG, 0.3 SPG, 0.0 BPG, 1.1 TOV, FG 41.2%.
 
 **Colours:** header uses Atlanta Hawks colours (#c8102e / #ffcd00) for the season starting 2003; presentation only.

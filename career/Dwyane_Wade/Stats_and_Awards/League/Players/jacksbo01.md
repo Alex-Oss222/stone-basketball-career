@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jacksb
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $2,925,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jacksbo01.html#contract) ([text](../../../Contracts/players/jacksbo01.md)).
+
 **2002-03 (recorded, SAC):** 59 G, 26 GS, 28.4 MPG, 15.2 PPG, 3.7 RPG, 3.1 APG, 1.2 SPG, 0.1 BPG, 1.8 TOV, FG 46.4%.
 
 **Colours:** header uses Sacramento Kings colours (#753bbd / #010101) for the season starting 2003; presentation only.

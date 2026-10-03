@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `medves
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $1,540,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/medvest01.html#contract) ([text](../../../Contracts/players/medvest01.md)).
+
 **2002-03 (recorded, LAL):** 58 G, 10 GS, 10.7 MPG, 4.4 PPG, 2.4 RPG, 0.3 APG, 0.2 SPG, 0.1 BPG, 0.6 TOV, FG 43.4%.
 
 **Colours:** header uses Los Angeles Lakers colours (#702f8a / #ffc72c) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bagard
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $1,453,326) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/bagarda01.html#contract) ([text](../../../Contracts/players/bagarda01.md)).
+
 **2002-03 (recorded, CHI):** 10 G, 0 GS, 7.6 MPG, 1.9 PPG, 2.0 RPG, 0.4 APG, 0.3 SPG, 0.3 BPG, 0.5 TOV, FG 30.8%.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

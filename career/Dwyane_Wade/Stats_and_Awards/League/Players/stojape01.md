@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `stojap
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $6,250,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/stojape01.html#contract) ([text](../../../Contracts/players/stojape01.md)).
+
 **2002-03 (recorded, SAC):** 72 G, 72 GS, 34.0 MPG, 19.2 PPG, 5.5 RPG, 2.0 APG, 1.0 SPG, 0.1 BPG, 1.4 TOV, FG 48.1%.
 
 **Colours:** header uses Sacramento Kings colours (#753bbd / #010101) for the season starting 2003; presentation only.

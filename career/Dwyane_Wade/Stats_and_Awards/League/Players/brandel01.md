@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `brande
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/brandel01.html#contract) ([text](../../../Contracts/players/brandel01.md)).
+
 **2002-03 (recorded, LAC):** 62 G, 61 GS, 39.6 MPG, 18.5 PPG, 11.3 RPG, 2.5 APG, 1.1 SPG, 2.5 BPG, 2.6 TOV, FG 50.2%.
 
 **Colours:** header uses Los Angeles Clippers colours (#d50032 / #003da5) for the season starting 2003; presentation only.

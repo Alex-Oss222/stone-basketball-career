@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `outlab
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $6,585,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/outlabo01.html#contract) ([text](../../../Contracts/players/outlabo01.md)).
+
 **2002-03 (recorded, PHO):** 80 G, 20 GS, 22.5 MPG, 4.7 PPG, 4.6 RPG, 1.4 APG, 0.6 SPG, 0.9 BPG, 0.9 TOV, FG 55.0%.
 
 **Colours:** header uses Phoenix Suns colours (#582c83 / #cb6015) for the season starting 2003; presentation only.

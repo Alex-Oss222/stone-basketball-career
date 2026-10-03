@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `harrij
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/harriju01.html#contract) ([text](../../../Contracts/players/harriju01.md)).
+
 **2002-03 (recorded, DEN):** 82 G, 51 GS, 24.4 MPG, 5.1 PPG, 3.0 RPG, 3.4 APG, 1.0 SPG, 0.2 BPG, 1.9 TOV, FG 36.2%.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

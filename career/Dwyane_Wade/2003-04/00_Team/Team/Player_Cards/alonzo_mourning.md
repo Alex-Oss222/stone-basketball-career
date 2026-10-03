@@ -6,6 +6,12 @@
 
 **Contract/control:** Contract through 2002-03; no 2002-03 games due illness; expires June 30 unless a new transaction occurs. [Finance record](../../Finances/cap_sheet.md).
 
+<!-- contract-navigation:start -->
+[Current contract](../../../../Contracts/players/alonzo_mourning.html#contract) · [Contract history](../../../../Contracts/players/alonzo_mourning.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
+
+Contract pages follow the current career date; this personnel assessment retains its stated date.
+<!-- contract-navigation:end -->
+
 ## Scouting report
 
 **Role:** Unavailable at the June 26 checkpoint; no 2003-04 playing role is assigned.

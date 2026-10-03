@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `russeb
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/russebr01.html#contract) ([text](../../../Contracts/players/russebr01.md)).
+
 **2002-03 (recorded, WAS):** 70 G, 23 GS, 19.8 MPG, 4.5 PPG, 3.0 RPG, 1.0 APG, 1.0 SPG, 0.1 BPG, 0.8 TOV, FG 35.3%.
 
 **Colours:** header uses Washington Wizards colours (#236192 / #8f654d) for the season starting 2003; presentation only.

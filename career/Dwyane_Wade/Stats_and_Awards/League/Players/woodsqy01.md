@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `woodsq
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,053,720) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/woodsqy01.html#contract) ([text](../../../Contracts/players/woodsqy01.md)).
+
 **2002-03 (recorded, POR):** 53 G, 0 GS, 6.3 MPG, 2.4 PPG, 1.0 RPG, 0.2 APG, 0.3 SPG, 0.0 BPG, 0.4 TOV, FG 50.0%.
 
 **Colours:** header uses Portland Trail Blazers colours (#c8102e / #010101) for the season starting 2003; presentation only.

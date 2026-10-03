@@ -12,6 +12,12 @@
 
 **Contract/control:** Under contract for 2003-04 at a reported approximately $3.6M. Guarantee trigger amended in January; exact protected amount unverified. No waiver decision recorded. [Finance record](../../Finances/cap_sheet.md).
 
+<!-- contract-navigation:start -->
+[Current contract](../../../../Contracts/players/ellisla01.html#contract) · [Contract history](../../../../Contracts/players/ellisla01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
+
+Contract pages follow the current career date; this personnel assessment retains its stated date.
+<!-- contract-navigation:end -->
+
 ## Scouting report
 
 **Role:** 2002-03 PF2 is the carried 2002-03 baseline; Miami has not finalized the 2003-04 role.

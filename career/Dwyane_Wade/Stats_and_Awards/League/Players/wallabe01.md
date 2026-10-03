@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wallab
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $5,700,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/wallabe01.html#contract) ([text](../../../Contracts/players/wallabe01.md)).
+
 **2002-03 (recorded, DET):** 73 G, 73 GS, 39.4 MPG, 6.9 PPG, 15.4 RPG, 1.6 APG, 1.4 SPG, 3.2 BPG, 1.2 TOV, FG 48.1%.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

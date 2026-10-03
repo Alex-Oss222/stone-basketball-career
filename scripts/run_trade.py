@@ -32,6 +32,7 @@ from runtime.market import Market                       # noqa: E402
 from runtime.standing import standing_on                # noqa: E402
 from runtime.trades import TradeDesk                    # noqa: E402
 from runtime.valuation import read                      # noqa: E402
+from scripts.refresh_career_views import refresh_career_views # noqa: E402
 
 SEASON = "2003-04"
 TRADES = signing.TRADES
@@ -249,6 +250,9 @@ def main(argv):
             print(f"{trade_id}: {status}")
         if pending:
             print("pending draws: " + ", ".join(pending))
+    if argv[1] != "--search":
+        refreshed = refresh_career_views(ROOT)
+        print(f"Updated {len(refreshed)} detailed career views; open career/Dwyane_Wade/Milestones/index.html#trade_update.")
 
 
 if __name__ == "__main__":

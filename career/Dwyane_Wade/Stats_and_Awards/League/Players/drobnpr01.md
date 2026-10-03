@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `drobnp
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $2,500,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/drobnpr01.html#contract) ([text](../../../Contracts/players/drobnpr01.md)).
+
 **2002-03 (recorded, SEA):** 82 G, 69 GS, 24.2 MPG, 9.4 PPG, 3.9 RPG, 1.0 APG, 0.6 SPG, 0.5 BPG, 0.8 TOV, FG 41.2%.
 
 **Colours:** header uses Seattle SuperSonics colours (#00573f / #f6be00) for the season starting 2003; presentation only.

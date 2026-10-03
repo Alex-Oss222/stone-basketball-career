@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `martik
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $5,128,689) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/martike01.html#contract) ([text](../../../Contracts/players/martike01.md)).
+
 **2002-03 (recorded, NJN):** 77 G, 77 GS, 34.1 MPG, 16.7 PPG, 8.3 RPG, 2.4 APG, 1.3 SPG, 0.9 BPG, 2.5 TOV, FG 47.0%.
 
 **Colours:** header uses New Jersey Nets colours (#041e42 / #ba0c2f) for the season starting 2003; presentation only.

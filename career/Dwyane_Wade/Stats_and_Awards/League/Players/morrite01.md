@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `morrit
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/morrite01.html#contract) ([text](../../../Contracts/players/morrite01.md)).
+
 **2002-03 (recorded, HOU):** 49 G, 0 GS, 12.9 MPG, 3.7 PPG, 2.6 RPG, 0.5 APG, 0.2 SPG, 0.3 BPG, 0.6 TOV, FG 46.6%.
 
 **Colours:** header uses Houston Rockets colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

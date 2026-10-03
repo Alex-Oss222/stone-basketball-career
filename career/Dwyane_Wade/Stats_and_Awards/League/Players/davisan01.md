@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `davisa
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $12,925,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/davisan01.html#contract) ([text](../../../Contracts/players/davisan01.md)).
+
 **2002-03 (recorded, TOR):** 53 G, 52 GS, 35.7 MPG, 13.9 PPG, 8.2 RPG, 2.5 APG, 0.4 SPG, 1.2 BPG, 2.2 TOV, FG 40.7%.
 
 **Colours:** header uses Toronto Raptors colours (#753bbd / #ba0c2f) for the season starting 2003; presentation only.

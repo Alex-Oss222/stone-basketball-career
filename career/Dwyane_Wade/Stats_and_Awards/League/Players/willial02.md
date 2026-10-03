@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willia
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $5,500,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/willial02.html#contract) ([text](../../../Contracts/players/willial02.md)).
+
 **2002-03 (recorded, TOR):** 78 G, 78 GS, 33.8 MPG, 13.2 PPG, 3.1 RPG, 5.3 APG, 1.4 SPG, 0.3 BPG, 1.6 TOV, FG 43.8%.
 
 **Colours:** header uses Toronto Raptors colours (#753bbd / #ba0c2f) for the season starting 2003; presentation only.

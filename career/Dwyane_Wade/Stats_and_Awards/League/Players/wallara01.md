@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wallar
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $18,000,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/wallara01.html#contract) ([text](../../../Contracts/players/wallara01.md)).
+
 **2002-03 (recorded, POR):** 74 G, 74 GS, 36.3 MPG, 18.1 PPG, 7.4 RPG, 2.1 APG, 0.9 SPG, 1.0 BPG, 1.9 TOV, FG 47.1%.
 
 **Colours:** header uses Portland Trail Blazers colours (#c8102e / #010101) for the season starting 2003; presentation only.

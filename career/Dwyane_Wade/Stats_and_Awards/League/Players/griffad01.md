@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `griffa
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/griffad01.html#contract) ([text](../../../Contracts/players/griffad01.md)).
+
 **2002-03 (recorded, DAL):** 74 G, 48 GS, 18.6 MPG, 4.4 PPG, 3.6 RPG, 1.4 APG, 1.0 SPG, 0.1 BPG, 0.6 TOV, FG 43.3%.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

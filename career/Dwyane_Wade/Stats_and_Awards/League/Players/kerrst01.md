@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `kerrst
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/kerrst01.html#contract) ([text](../../../Contracts/players/kerrst01.md)).
+
 **2002-03 (recorded, SAS):** 75 G, 0 GS, 12.7 MPG, 4.0 PPG, 0.8 RPG, 0.9 APG, 0.4 SPG, 0.0 BPG, 0.5 TOV, FG 43.0%.
 
 **Colours:** header uses San Antonio Spurs colours (#010101 / #8d9093) for the season starting 2003; presentation only.

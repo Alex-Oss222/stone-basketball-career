@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `cartea
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/cartean01.html#contract) ([text](../../../Contracts/players/cartean01.md)).
+
 **2002-03 (recorded, MIA):** 49 G, 26 GS, 18.6 MPG, 4.1 PPG, 1.7 RPG, 4.1 APG, 0.9 SPG, 0.1 BPG, 1.7 TOV, FG 35.6%.
 
 **Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2003; presentation only.

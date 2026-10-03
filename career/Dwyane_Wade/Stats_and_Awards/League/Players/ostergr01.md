@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `osterg
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $8,666,666) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/ostergr01.html#contract) ([text](../../../Contracts/players/ostergr01.md)).
+
 **2002-03 (recorded, UTA):** 81 G, 74 GS, 23.8 MPG, 5.4 PPG, 6.2 RPG, 0.7 APG, 0.2 SPG, 1.8 BPG, 1.3 TOV, FG 51.8%.
 
 **Colours:** header uses Utah Jazz colours (#753bbd / #00a9e0) for the season starting 2003; presentation only.

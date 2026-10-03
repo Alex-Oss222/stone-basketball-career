@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `stackj
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $6,906,250) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/stackje01.html#contract) ([text](../../../Contracts/players/stackje01.md)).
+
 **2002-03 (recorded, WAS):** 70 G, 70 GS, 39.2 MPG, 21.5 PPG, 3.7 RPG, 4.5 APG, 0.9 SPG, 0.4 BPG, 2.8 TOV, FG 40.9%.
 
 **Colours:** header uses Washington Wizards colours (#236192 / #8f654d) for the season starting 2003; presentation only.

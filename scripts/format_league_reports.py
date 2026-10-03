@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from runtime.stat_layout import RED, PER_GAME_COLUMNS, link, markdown_table, rect, scope_for, svg_start, svg_text
+from runtime.contract_navigation import contract_player_link, plain_player_name
 
 COLUMNS = ["Player", "Age", "Club / rights", "Lg", *PER_GAME_COLUMNS[4:-1]]
 LINK = re.compile(r"^\[([^\]]+)\]\([^)]+\)$")

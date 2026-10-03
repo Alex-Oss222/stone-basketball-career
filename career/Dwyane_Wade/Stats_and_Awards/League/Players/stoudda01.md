@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `stoudd
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $12,375,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/stoudda01.html#contract) ([text](../../../Contracts/players/stoudda01.md)).
+
 **2002-03 (recorded, POR):** 59 G, 27 GS, 22.3 MPG, 6.9 PPG, 2.6 RPG, 3.5 APG, 0.7 SPG, 0.1 BPG, 1.4 TOV, FG 37.6%.
 
 **Colours:** header uses Portland Trail Blazers colours (#c8102e / #010101) for the season starting 2003; presentation only.

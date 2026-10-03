@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mihmch
 
 **Contract/control:** 2003-04 team option pending; through 2003-04 (2003-04 scheduled $2,809,494) (league contract inventory status `team_option_pending`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mihmch01.html#contract) ([text](../../../Contracts/players/mihmch01.md)).
+
 **2002-03 (recorded, CLE):** 52 G, 0 GS, 15.6 MPG, 5.9 PPG, 4.4 RPG, 0.5 APG, 0.3 SPG, 0.7 BPG, 0.9 TOV, FG 40.4%.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

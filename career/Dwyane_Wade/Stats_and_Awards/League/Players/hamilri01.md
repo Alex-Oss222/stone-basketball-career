@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hamilr
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/hamilri01.html#contract) ([text](../../../Contracts/players/hamilri01.md)).
+
 **2002-03 (recorded, DET):** 82 G, 82 GS, 32.2 MPG, 19.7 PPG, 3.9 RPG, 2.5 APG, 0.8 SPG, 0.2 BPG, 2.4 TOV, FG 44.3%.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `divacv
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $12,051,510) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/divacvl01.html#contract) ([text](../../../Contracts/players/divacvl01.md)).
+
 **2002-03 (recorded, SAC):** 80 G, 80 GS, 29.8 MPG, 9.9 PPG, 7.2 RPG, 3.4 APG, 1.0 SPG, 1.3 BPG, 1.9 TOV, FG 46.6%.
 
 **Colours:** header uses Sacramento Kings colours (#753bbd / #010101) for the season starting 2003; presentation only.

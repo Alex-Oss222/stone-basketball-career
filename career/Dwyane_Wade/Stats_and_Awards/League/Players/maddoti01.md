@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `maddot
 
 **Contract/control:** 2003-04 team option pending; through 2003-04 (2003-04 scheduled $563,679) (league contract inventory status `team_option_pending`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/maddoti01.html#contract) ([text](../../../Contracts/players/maddoti01.md)).
+
 **2002-03 (recorded, HOU):** 9 G, 0 GS, 3.9 MPG, 1.2 PPG, 0.8 RPG, 0.6 APG, 0.3 SPG, 0.1 BPG, 0.3 TOV, FG 25.0%.
 
 **Colours:** header uses Houston Rockets colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

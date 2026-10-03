@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bonnem
 
 **Contract/control:** Unsigned No. 45 second-round draft rights held by Toronto Raptors; no contract has been agreed. No individual draft cap hold.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/bonnema01.html#contract) ([text](../../../Contracts/players/bonnema01.md)).
+
 **2003 draft entry:** No. 45 overall, rights held by Toronto Raptors (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Toronto Raptors colours (#753bbd / #ba0c2f) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `fortsd
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $5,428,602) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/fortsda01.html#contract) ([text](../../../Contracts/players/fortsda01.md)).
+
 **2002-03 (recorded, GSW):** 17 G, 0 GS, 13.1 MPG, 3.5 PPG, 4.3 RPG, 0.7 APG, 0.5 SPG, 0.0 BPG, 0.9 TOV, FG 37.0%.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

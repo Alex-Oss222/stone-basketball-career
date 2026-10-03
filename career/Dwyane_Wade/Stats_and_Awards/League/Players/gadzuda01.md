@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `gadzud
 
 **Contract/control:** Minimum-salary contract (2003-04 status unverified); through 2003-04 (2003-04 scheduled $563,679) (league contract inventory status `minimum_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/gadzuda01.html#contract) ([text](../../../Contracts/players/gadzuda01.md)).
+
 **2002-03 (recorded, MIL):** 49 G, 30 GS, 15.5 MPG, 3.4 PPG, 4.0 RPG, 0.2 APG, 0.4 SPG, 1.1 BPG, 0.6 TOV, FG 48.3%.
 
 **Colours:** header uses Milwaukee Bucks colours (#702f8a / #2c5234) for the season starting 2003; presentation only.

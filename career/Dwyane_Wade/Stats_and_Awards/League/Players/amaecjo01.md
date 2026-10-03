@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `amaecj
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $2,610,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/amaecjo01.html#contract) ([text](../../../Contracts/players/amaecjo01.md)).
+
 **2002-03 (recorded, UTA):** 50 G, 1 GS, 9.5 MPG, 2.0 PPG, 1.5 RPG, 0.4 APG, 0.3 SPG, 0.1 BPG, 0.7 TOV, FG 31.4%.
 
 **Colours:** header uses Utah Jazz colours (#753bbd / #00a9e0) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `foylea
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $4,400,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/foylead01.html#contract) ([text](../../../Contracts/players/foylead01.md)).
+
 **2002-03 (recorded, GSW):** 82 G, 0 GS, 21.8 MPG, 5.4 PPG, 6.0 RPG, 0.5 APG, 0.5 SPG, 2.5 BPG, 0.9 TOV, FG 53.6%.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

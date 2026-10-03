@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mercer
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $6,750,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mercero01.html#contract) ([text](../../../Contracts/players/mercero01.md)).
+
 **2002-03 (recorded, IND):** 72 G, 3 GS, 23.2 MPG, 7.7 PPG, 2.1 RPG, 1.6 APG, 0.7 SPG, 0.2 BPG, 0.8 TOV, FG 40.9%.
 
 **Colours:** header uses Indiana Pacers colours (#041e42 / #ffcd00) for the season starting 2003; presentation only.

@@ -14,13 +14,15 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from runtime.private_service import Store, handler, play_requests
+from runtime.live_site import CareerSite
 
 store = Store(os.getenv("ENGINE_DATABASE_PATH", "/data/engine.sqlite3"))
 store.initialize()
 games = play_requests(store, ROOT)
+career_site = CareerSite(ROOT, revision=os.getenv("RAILWAY_GIT_COMMIT_SHA"))
 for key, entry in games.items():
     print(f"{entry['status']:>14}  {key}" + (f"  ({entry['error']})" if "error" in entry else ""), flush=True)
 port = int(os.getenv("PORT", "8765"))
 print(f"basketball engine listening on {port}; {len(games)} game request(s)", flush=True)
 ThreadingHTTPServer((os.getenv("ENGINE_BIND_HOST", "0.0.0.0"), port),
-                    handler(store, os.environ["ENGINE_API_TOKEN"], games)).serve_forever()
+                    handler(store, os.environ["ENGINE_API_TOKEN"], games, career_site=career_site)).serve_forever()

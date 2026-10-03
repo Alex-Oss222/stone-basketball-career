@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `artesr
 
 **Contract/control:** Listed under contract (continuity unverified); through 2006-07 (2003-04 scheduled $5,473,684) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/artesro01.html#contract) ([text](../../../Contracts/players/artesro01.md)).
+
 **2002-03 (recorded, IND):** 69 G, 67 GS, 33.6 MPG, 15.5 PPG, 5.2 RPG, 2.9 APG, 2.3 SPG, 0.7 BPG, 2.1 TOV, FG 42.8%.
 
 **Colours:** header uses Indiana Pacers colours (#041e42 / #ffcd00) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `clarkk
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/clarkke01.html#contract) ([text](../../../Contracts/players/clarkke01.md)).
+
 **2002-03 (recorded, SAC):** 80 G, 11 GS, 22.2 MPG, 6.7 PPG, 5.6 RPG, 1.0 APG, 0.5 SPG, 1.9 BPG, 1.2 TOV, FG 50.1%.
 
 **Colours:** header uses Sacramento Kings colours (#753bbd / #010101) for the season starting 2003; presentation only.

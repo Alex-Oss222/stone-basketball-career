@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `rebraz
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $4,200,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/rebraze01.html#contract) ([text](../../../Contracts/players/rebraze01.md)).
+
 **2002-03 (recorded, DET):** 30 G, 12 GS, 16.3 MPG, 6.6 PPG, 3.1 RPG, 0.3 APG, 0.2 SPG, 0.6 BPG, 1.0 TOV, FG 55.2%.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

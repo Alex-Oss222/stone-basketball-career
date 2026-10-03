@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `murpht
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,506,960) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/murphtr01.html#contract) ([text](../../../Contracts/players/murphtr01.md)).
+
 **2002-03 (recorded, GSW):** 79 G, 79 GS, 31.8 MPG, 11.7 PPG, 10.2 RPG, 1.3 APG, 0.8 SPG, 0.4 BPG, 1.4 TOV, FG 45.1%.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

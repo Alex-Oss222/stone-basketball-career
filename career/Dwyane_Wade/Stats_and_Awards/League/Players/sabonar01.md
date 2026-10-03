@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `sabona
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/sabonar01.html#contract) ([text](../../../Contracts/players/sabonar01.md)).
+
 **2002-03 (recorded, POR):** 78 G, 1 GS, 15.5 MPG, 6.1 PPG, 4.3 RPG, 1.8 APG, 0.8 SPG, 0.6 BPG, 1.0 TOV, FG 47.6%.
 
 **Colours:** header uses Portland Trail Blazers colours (#c8102e / #010101) for the season starting 2003; presentation only.

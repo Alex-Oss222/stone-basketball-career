@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `blounm
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/blounma01.html#contract) ([text](../../../Contracts/players/blounma01.md)).
+
 **2002-03 (recorded, DEN/BOS):** 81 G, 31 GS, 17.3 MPG, 5.0 PPG, 3.8 RPG, 0.7 APG, 0.5 SPG, 0.8 BPG, 1.3 TOV, FG 43.2%.
 
 **Colours:** header uses Boston Celtics colours (#007a33 / #ffffff) for the season starting 2003; presentation only.

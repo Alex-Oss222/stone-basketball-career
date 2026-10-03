@@ -1,0 +1,549 @@
+{
+  "schema_version": 1,
+  "mode": "live",
+  "identity": {
+    "name": "Dwyane Wade",
+    "team": "Miami Heat",
+    "jersey": null,
+    "position": "SG / PG",
+    "age": 19,
+    "height": "6 ft 6 in",
+    "weight": "220 lb",
+    "shoots": "Right",
+    "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+    "photo_url": null,
+    "initials": "DW",
+    "status": "Draft rights; unsigned",
+    "cutoff": "2003-06-26"
+  },
+  "clock": "2003-06-26",
+  "notice": "Career records through 2003-06-26. Closed games, recorded contracts and earned awards. Missing evidence remains explicit.",
+  "links": {
+    "stats": "README.md",
+    "shooting": "Shooting.md",
+    "awards": "Awards.md",
+    "definitions": "../../../docs/player_statistics.md",
+    "milestones": "../Milestones/index.html",
+    "contract": "Contract.md",
+    "contracts": "../Contracts/index.html"
+  },
+  "geometry": {
+    "units": "feet",
+    "origin": "basket_center",
+    "x_min": -25.0,
+    "x_max": 25.0,
+    "baseline_y": -5.25,
+    "half_court_y": 41.75,
+    "paint_half_width": 8.0,
+    "paint_top_y": 13.75,
+    "three_point_radius": 23.75,
+    "corner_three_x": 22.0,
+    "three_point_join_y": 8.94776508408664,
+    "under_12_radius": 12.0,
+    "midrange_radius": 18.0,
+    "line_policy": "A coordinate on the three-point line is inside the two-point region."
+  },
+  "zones": [
+    {
+      "id": "paint",
+      "label": "Paint"
+    },
+    {
+      "id": "under_12",
+      "label": "Outside paint, under 12 ft"
+    },
+    {
+      "id": "12_to_18",
+      "label": "Outside paint, 12 to under 18 ft"
+    },
+    {
+      "id": "18_to_3pt",
+      "label": "18 ft to the three-point line"
+    },
+    {
+      "id": "three",
+      "label": "Three-point range"
+    }
+  ],
+  "default_period": "regular-2003-04-season",
+  "periods": [
+    {
+      "id": "regular-2003-04-season",
+      "label": "2003-04 · NBA regular season · through 2003-06-26",
+      "kind": "season",
+      "season": "2003-04",
+      "competition": "regular",
+      "competition_label": "NBA regular season",
+      "start": "2003-06-01",
+      "end": "2003-06-26",
+      "cutoff": "2003-06-26",
+      "games": 0,
+      "appearances": 0,
+      "dnp": 0,
+      "box": {
+        "pts": 0,
+        "fgm": 0,
+        "fga": 0,
+        "tpm": 0,
+        "tpa": 0,
+        "ftm": 0,
+        "fta": 0,
+        "orb": 0,
+        "drb": 0,
+        "ast": 0,
+        "stl": 0,
+        "blk": 0,
+        "tov": 0,
+        "pf": 0,
+        "seconds": 0,
+        "ft_points": 0,
+        "two_pm": 0,
+        "two_pa": 0,
+        "reb": 0
+      },
+      "rates": {
+        "fg_pct": null,
+        "two_pct": null,
+        "three_pct": null,
+        "ft_pct": null,
+        "efg_pct": null,
+        "ts_pct": null,
+        "ast_to": null,
+        "three_rate": null,
+        "ft_rate": null
+      },
+      "pg": {
+        "pts": null,
+        "fgm": null,
+        "fga": null,
+        "tpm": null,
+        "tpa": null,
+        "ftm": null,
+        "fta": null,
+        "orb": null,
+        "drb": null,
+        "ast": null,
+        "stl": null,
+        "blk": null,
+        "tov": null,
+        "pf": null,
+        "seconds": null,
+        "ft_points": null,
+        "two_pm": null,
+        "two_pa": null,
+        "reb": null,
+        "minutes": null
+      },
+      "per36": {
+        "pts": null,
+        "fgm": null,
+        "fga": null,
+        "tpm": null,
+        "tpa": null,
+        "ftm": null,
+        "fta": null,
+        "orb": null,
+        "drb": null,
+        "ast": null,
+        "stl": null,
+        "blk": null,
+        "tov": null,
+        "pf": null,
+        "ft_points": null,
+        "two_pm": null,
+        "two_pa": null,
+        "reb": null
+      },
+      "source_games": [],
+      "shots": [],
+      "shooting": {
+        "schema_version": 1,
+        "scope": {
+          "start": null,
+          "end": null
+        },
+        "geometry": {
+          "units": "feet",
+          "origin": "basket_center",
+          "x_min": -25.0,
+          "x_max": 25.0,
+          "baseline_y": -5.25,
+          "half_court_y": 41.75,
+          "paint_half_width": 8.0,
+          "paint_top_y": 13.75,
+          "three_point_radius": 23.75,
+          "corner_three_x": 22.0,
+          "three_point_join_y": 8.94776508408664,
+          "under_12_radius": 12.0,
+          "midrange_radius": 18.0,
+          "line_policy": "A coordinate on the three-point line is inside the two-point region."
+        },
+        "games": 0,
+        "recorded_appearances": 0,
+        "dnp": 0,
+        "closed_games": 0,
+        "totals": {
+          "fgm": 0,
+          "fga": 0,
+          "tpm": 0,
+          "tpa": 0,
+          "fg_points": 0,
+          "fg_pct": null,
+          "fg_ppg": null,
+          "fga_per_game": null
+        },
+        "observed": {
+          "fgm": 0,
+          "fga": 0,
+          "tpm": 0,
+          "tpa": 0,
+          "fg_points": 0
+        },
+        "zones": [
+          {
+            "id": "paint",
+            "label": "Paint",
+            "fgm": 0,
+            "fga": 0,
+            "tpm": 0,
+            "tpa": 0,
+            "fg_points": 0,
+            "fg_pct": null,
+            "fg_ppg": null,
+            "fga_per_game": null,
+            "coverage": "complete",
+            "observed_fgm": 0,
+            "observed_fga": 0,
+            "observed_fg_points": 0
+          },
+          {
+            "id": "under_12",
+            "label": "Outside paint, under 12 ft",
+            "fgm": 0,
+            "fga": 0,
+            "tpm": 0,
+            "tpa": 0,
+            "fg_points": 0,
+            "fg_pct": null,
+            "fg_ppg": null,
+            "fga_per_game": null,
+            "coverage": "complete",
+            "observed_fgm": 0,
+            "observed_fga": 0,
+            "observed_fg_points": 0
+          },
+          {
+            "id": "12_to_18",
+            "label": "Outside paint, 12 to under 18 ft",
+            "fgm": 0,
+            "fga": 0,
+            "tpm": 0,
+            "tpa": 0,
+            "fg_points": 0,
+            "fg_pct": null,
+            "fg_ppg": null,
+            "fga_per_game": null,
+            "coverage": "complete",
+            "observed_fgm": 0,
+            "observed_fga": 0,
+            "observed_fg_points": 0
+          },
+          {
+            "id": "18_to_3pt",
+            "label": "18 ft to the three-point line",
+            "fgm": 0,
+            "fga": 0,
+            "tpm": 0,
+            "tpa": 0,
+            "fg_points": 0,
+            "fg_pct": null,
+            "fg_ppg": null,
+            "fga_per_game": null,
+            "coverage": "complete",
+            "observed_fgm": 0,
+            "observed_fga": 0,
+            "observed_fg_points": 0
+          },
+          {
+            "id": "three",
+            "label": "Three-point range",
+            "fgm": 0,
+            "fga": 0,
+            "tpm": 0,
+            "tpa": 0,
+            "fg_points": 0,
+            "fg_pct": null,
+            "fg_ppg": null,
+            "fga_per_game": null,
+            "coverage": "complete",
+            "observed_fgm": 0,
+            "observed_fga": 0,
+            "observed_fg_points": 0
+          }
+        ],
+        "bins": [],
+        "coverage": {
+          "status": "complete",
+          "located_attempts": 0,
+          "unlocated_attempts": 0,
+          "outside_view_attempts": 0,
+          "missing_attempts": 0,
+          "known_missing_attempts": 0,
+          "recorded_attempts": 0,
+          "box_fga": 0,
+          "missing_box_games": [],
+          "missing_shot_games": [],
+          "location_fraction": null
+        },
+        "source_refs": [],
+        "notes": [
+          "Zone points count made field goals only; free throws are excluded.",
+          "All recorded appearances in the selected period are in the denominator; DNPs are excluded.",
+          "Incomplete tracking leaves full-period zone and bin per-game rates unavailable.",
+          "Bin area is proportional to attempts per appearance using a fixed display scale, not its radius."
+        ]
+      },
+      "identity": {
+        "name": "Dwyane Wade",
+        "team": "Miami Heat",
+        "jersey": null,
+        "position": "SG / PG",
+        "age": 19,
+        "height": "6 ft 6 in",
+        "weight": "220 lb",
+        "shoots": "Right",
+        "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+        "photo_url": null,
+        "initials": "DW",
+        "status": "Draft rights; unsigned",
+        "cutoff": "2003-06-26"
+      },
+      "geometry_supported": true,
+      "source_note": "No closed games in this competition at the current career checkpoint. No appearance or shot sample is implied."
+    }
+  ],
+  "awards": {
+    "default_scenario": "2003-04",
+    "scenarios": [
+      {
+        "id": "2003-04",
+        "label": "2003-04",
+        "season": "2003-04",
+        "cutoff": "2003-06-26",
+        "records": [],
+        "identity": {
+          "name": "Dwyane Wade",
+          "team": "Miami Heat",
+          "jersey": null,
+          "position": "SG / PG",
+          "age": 19,
+          "height": "6 ft 6 in",
+          "weight": "220 lb",
+          "shoots": "Right",
+          "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+          "photo_url": null,
+          "initials": "DW",
+          "status": "Draft rights; unsigned",
+          "cutoff": "2003-06-26"
+        },
+        "notice": "Only earned annual awards announced on or before 2003-06-26 appear. Weekly, monthly and unclassified recognition remains in the full award register."
+      }
+    ]
+  },
+  "contracts": {
+    "as_of": "2003-06-26",
+    "player_id": "wadedw01",
+    "status": "unsigned_first_round_draft_rights",
+    "summary": "Dwyane Wade: unsigned first round draft rights. Evidence cutoff: 2003-06-26.",
+    "current": null,
+    "history": [],
+    "metrics": [
+      {
+        "label": "Career date",
+        "value": "2003-06-26"
+      },
+      {
+        "label": "Recorded contracts",
+        "value": "0",
+        "detail": "Partial archive; current contract included once."
+      },
+      {
+        "label": "History coverage",
+        "value": "Partial"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Current control and contract coverage",
+        "columns": [
+          "Field",
+          "Dated record"
+        ],
+        "rows": [
+          [
+            "Player",
+            "Dwyane Wade"
+          ],
+          [
+            "Club / rights baseline",
+            "Miami Heat"
+          ],
+          [
+            "Control status",
+            "unsigned_first_round_draft_rights"
+          ],
+          [
+            "Executed current contract",
+            "No verified current signed contract"
+          ],
+          [
+            "Recorded cap hold",
+            "$2,197,000"
+          ],
+          [
+            "Coverage",
+            "Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed."
+          ]
+        ],
+        "notice": "Draft rights and cap holds are not salaries or executed contracts. A roster baseline does not certify an active contract."
+      },
+      {
+        "title": "Unsigned or unresolved salary evidence",
+        "columns": [
+          "Season",
+          "Amount",
+          "Record kind"
+        ],
+        "rows": [
+          [
+            "2003-04",
+            "$2,197,000",
+            "draft_hold"
+          ]
+        ],
+        "notice": "The current cap charge is 100% of rookie scale because an unsigned first-round pick counts at scale immediately after selection under the 1999 CBA. Future rookie-scale figures are reference terms, not signed Miami commitments until Wade signs."
+      },
+      {
+        "title": "Draft-rights scale reference",
+        "columns": [
+          "Reference",
+          "Recorded value"
+        ],
+        "rows": [
+          [
+            "2003-04",
+            "$2,197,000"
+          ],
+          [
+            "2004-05",
+            "$2,361,800"
+          ],
+          [
+            "2005-06",
+            "$2,526,600"
+          ],
+          [
+            "2006-07 option increase over 2005-06 percent",
+            "26.7"
+          ],
+          [
+            "allowed signing percent of scale",
+            "min: 80; max: 120"
+          ]
+        ],
+        "notice": "A scale reference and permitted percentage range are negotiation boundaries, not an offer, signed salary or guarantee."
+      },
+      {
+        "title": "Recorded free-agent rights",
+        "columns": [
+          "Field",
+          "Recorded detail"
+        ],
+        "rows": [
+          [
+            "Bird classification",
+            "Not recorded"
+          ],
+          [
+            "Bird classification basis",
+            "Not recorded"
+          ],
+          [
+            "Recorded Bird-clock seasons",
+            "Not recorded"
+          ],
+          [
+            "Restricted-free-agency eligibility",
+            "Not recorded"
+          ],
+          [
+            "Qualifying-offer reference amount",
+            "Not recorded"
+          ],
+          [
+            "Qualifying-offer basis",
+            "Not recorded"
+          ],
+          [
+            "Free-agent cap hold reference",
+            "Not recorded"
+          ],
+          [
+            "Qualifying offer actually tendered",
+            "Not recorded"
+          ],
+          [
+            "Tender date",
+            "Not recorded"
+          ],
+          [
+            "Renounced",
+            "Not recorded"
+          ]
+        ],
+        "notice": "Eligibility and a reference amount do not establish a tendered qualifying offer or completed free-agency outcome."
+      },
+      {
+        "title": "Unsigned negotiation and player responses",
+        "columns": [
+          "Date",
+          "Party",
+          "Action",
+          "Terms",
+          "Source"
+        ],
+        "rows": [],
+        "notice": "An offer, counteroffer or acceptance is not an executed contract."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Authoritative club contract schedule",
+        "href": "../2003-04/00_Team/Finances/contract_schedules.json"
+      },
+      {
+        "label": "Contract source document",
+        "href": "https://basketball.realgm.com/nba/info/rookie_scale/2004"
+      },
+      {
+        "label": "Contract source document",
+        "href": "https://www.cbafaq.com/salarycap99.htm"
+      },
+      {
+        "label": "Contract source document",
+        "href": "https://www.cbafaq.com/scale99.htm"
+      },
+      {
+        "label": "Contract source document",
+        "href": "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+      }
+    ],
+    "coverage": {
+      "history_complete": false,
+      "recorded_contract_count": 0,
+      "current_contract_verified": false,
+      "as_of": "2003-06-26",
+      "note": "Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed."
+    }
+  }
+}

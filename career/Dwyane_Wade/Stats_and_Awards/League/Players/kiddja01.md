@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `kiddja
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/kiddja01.html#contract) ([text](../../../Contracts/players/kiddja01.md)).
+
 **2002-03 (recorded, NJN):** 80 G, 80 GS, 37.4 MPG, 18.7 PPG, 6.3 RPG, 8.9 APG, 2.2 SPG, 0.3 BPG, 3.7 TOV, FG 41.4%.
 
 **Colours:** header uses New Jersey Nets colours (#041e42 / #ba0c2f) for the season starting 2003; presentation only.

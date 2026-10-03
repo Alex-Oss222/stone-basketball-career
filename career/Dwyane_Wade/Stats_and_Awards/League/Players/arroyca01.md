@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `arroyc
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/arroyca01.html#contract) ([text](../../../Contracts/players/arroyca01.md)).
+
 **2002-03 (recorded, UTA):** 44 G, 0 GS, 6.5 MPG, 2.8 PPG, 0.6 RPG, 1.2 APG, 0.3 SPG, 0.0 BPG, 0.7 TOV, FG 45.9%.
 
 **Colours:** header uses Utah Jazz colours (#753bbd / #00a9e0) for the season starting 2003; presentation only.

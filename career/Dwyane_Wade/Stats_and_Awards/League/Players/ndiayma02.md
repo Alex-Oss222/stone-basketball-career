@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `ndiaym
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/ndiayma02.html#contract) ([text](../../../Contracts/players/ndiayma02.md)).
+
 **2002-03 (recorded, TOR):** 22 G, 8 GS, 16.5 MPG, 5.5 PPG, 3.7 RPG, 0.3 APG, 0.4 SPG, 1.5 BPG, 1.0 TOV, FG 44.8%.
 
 **Colours:** header uses Toronto Raptors colours (#753bbd / #ba0c2f) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jordam
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jordami01.html#contract) ([text](../../../Contracts/players/jordami01.md)).
+
 **2002-03 (recorded, WAS):** 82 G, 67 GS, 37.0 MPG, 20.0 PPG, 6.1 RPG, 3.8 APG, 1.5 SPG, 0.5 BPG, 2.1 TOV, FG 44.5%.
 
 **Colours:** header uses Washington Wizards colours (#236192 / #8f654d) for the season starting 2003; presentation only.

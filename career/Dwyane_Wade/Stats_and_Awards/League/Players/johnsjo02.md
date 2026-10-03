@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `johnsj
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,850,160) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/johnsjo02.html#contract) ([text](../../../Contracts/players/johnsjo02.md)).
+
 **2002-03 (recorded, PHO):** 82 G, 34 GS, 27.5 MPG, 9.8 PPG, 3.2 RPG, 2.6 APG, 0.8 SPG, 0.2 BPG, 1.3 TOV, FG 39.7%.
 
 **Colours:** header uses Phoenix Suns colours (#582c83 / #cb6015) for the season starting 2003; presentation only.

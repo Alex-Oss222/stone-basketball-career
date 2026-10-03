@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `brownp
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/brownpj01.html#contract) ([text](../../../Contracts/players/brownpj01.md)).
+
 **2002-03 (recorded, NOH):** 78 G, 78 GS, 33.4 MPG, 10.7 PPG, 9.0 RPG, 1.9 APG, 0.9 SPG, 1.0 BPG, 1.3 TOV, FG 53.1%.
 
 **Colours:** header uses New Orleans Hornets colours (#00778b / #280071) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jacobc
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,011,600) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jacobca01.html#contract) ([text](../../../Contracts/players/jacobca01.md)).
+
 **2002-03 (recorded, PHO):** 72 G, 0 GS, 15.9 MPG, 5.1 PPG, 1.2 RPG, 1.0 APG, 0.5 SPG, 0.1 BPG, 0.8 TOV, FG 37.3%.
 
 **Colours:** header uses Phoenix Suns colours (#582c83 / #cb6015) for the season starting 2003; presentation only.

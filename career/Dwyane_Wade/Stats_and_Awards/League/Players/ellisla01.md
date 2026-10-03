@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `ellisl
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/ellisla01.html#contract) ([text](../../../Contracts/players/ellisla01.md)).
+
 **2002-03 (recorded, MIA):** 55 G, 3 GS, 14.3 MPG, 5.0 PPG, 2.9 RPG, 0.3 APG, 0.3 SPG, 0.3 BPG, 0.6 TOV, FG 38.2%.
 
 **Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `strice
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/stricer01.html#contract) ([text](../../../Contracts/players/stricer01.md)).
+
 **2002-03 (recorded, IND):** 71 G, 10 GS, 18.0 MPG, 6.5 PPG, 2.0 RPG, 2.9 APG, 0.5 SPG, 0.1 BPG, 1.4 TOV, FG 42.9%.
 
 **Colours:** header uses Indiana Pacers colours (#041e42 / #ffcd00) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `masonr
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/masonro01.html#contract) ([text](../../../Contracts/players/masonro01.md)).
+
 **2002-03 (recorded, CHI):** 17 G, 0 GS, 6.6 MPG, 1.8 PPG, 0.7 RPG, 0.7 APG, 0.2 SPG, 0.0 BPG, 0.3 TOV, FG 35.5%.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

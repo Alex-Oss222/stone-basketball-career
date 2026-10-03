@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `howarj
 
 **Contract/control:** Unsigned No. 29 first-round draft rights held by Dallas Mavericks; no contract has been agreed. Draft cap hold $669,500.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/howarjo01.html#contract) ([text](../../../Contracts/players/howarjo01.md)).
+
 **2003 draft entry:** No. 29 overall, rights held by Dallas Mavericks (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jaricm
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $1,925,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jaricma01.html#contract) ([text](../../../Contracts/players/jaricma01.md)).
+
 **2002-03 (recorded, LAC):** 66 G, 12 GS, 20.9 MPG, 7.4 PPG, 2.4 RPG, 2.9 APG, 1.5 SPG, 0.2 BPG, 1.6 TOV, FG 40.1%.
 
 **Colours:** header uses Los Angeles Clippers colours (#d50032 / #003da5) for the season starting 2003; presentation only.

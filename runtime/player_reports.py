@@ -13,6 +13,7 @@ from .career_stats import NATIONAL_PATHS, aggregate, collect_games, identity_at,
 from .career_dashboard import career_overview
 from .award_records import load_awards, honors_in_scope
 from .stat_layout import ReportStyle
+from .player_cards import build_player_cards
 from .season_rules import nba_cup_available, play_in_format, season_start
 
 LABELS = {
@@ -53,6 +54,7 @@ def link(page, target, label):
 
 def identity_block(identity, as_of, profile_link=None, full=False, *, style=None, page=None):
     if style is not None:
+        full = full or style.detailed
         plain = identity_block(identity, as_of, profile_link, full)
         honors = honors_in_scope(style.awards, known_on=as_of)
         plain += "### Earned career honors\n\n"
@@ -62,6 +64,7 @@ def identity_block(identity, as_of, profile_link=None, full=False, *, style=None
         else:
             plain += "No earned professional honors recorded by this page's identity cutoff.\n\n"
         visual = "## Professional identity\n\n" + style.header(page, as_of)
+        plain, visual = style.award_terms(plain), style.award_terms(visual)
         if full:
             return visual + plain.split("## Professional identity\n\n", 1)[1]
         return visual + "<details>\n<summary>Personal information and earned honors: text version</summary>\n\n" + plain.split("## Professional identity\n\n", 1)[1] + "</details>\n\n"
@@ -208,8 +211,8 @@ def honors_tail(page):
     if not page.is_file():
         return ""
     text = page.read_text(encoding="utf-8")
-    found = re.search(r"^#{2,3} Awards and honors\n", text, flags=re.M)
-    return "### Awards and honors\n" + text[found.end():] if found else ""
+    found = re.search(r"^#{2,3} Awards(?: and honors)?\n", text, flags=re.M)
+    return "### Awards\n" + text[found.end():] if found else ""
 
 
 def report(page, title, identity, as_of, records, *, navigation=(), groups=(), comparison=(), detail=None, full=False, extra="", honors="", style=None, scope=None):
@@ -252,8 +255,16 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
     records = collect_games(player, identity, as_of)
     outputs = {}
     awards = load_awards(player, as_of)
-    style = ReportStyle(identity, awards, as_of, outputs, player / "assets/stat_reports", player)
-    render_report = partial(report, style=style)
+    from .player_contracts import build_contract_catalog
+    from .contract_pages import build_contract_pages
+    contract_catalog = build_contract_catalog(root, player, as_of)
+    outputs.update(build_player_cards(root, player, identity, records, awards, as_of, contract_catalog=contract_catalog))
+    outputs.update(build_contract_pages(root, player, as_of, catalog=contract_catalog))
+    card_data = json.loads(outputs[player / "Stats_and_Awards/player_cards_data.json"])
+    style = ReportStyle(identity, awards, as_of, outputs, player / "assets/stat_reports", player,
+                        cards_root=player / "Stats_and_Awards", card_periods=[p["id"] for p in card_data["periods"]],
+                        default_card_period=card_data["default_period"], detailed=True)
+    render_report = partial(report, style=style, full=True)
     period_rollup = partial(rollup, style=style)
     stats = player / "Stats_and_Awards"
     profile = player / "Professional_Identity.md"
@@ -475,7 +486,7 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
     outputs[page] += style.banner(page, as_of)
     outputs[page] += " · ".join(link(page, target, label) for label, target in navigation) + "\n\n"
     outputs[page] += "**Season reports:** " + " · ".join(link(page, s / "README.md", s.name) for s in seasons) + "\n\n"
-    outputs[page] += "<details>\n<summary>Professional identity: text version</summary>\n\n"
+    outputs[page] += "<details open>\n<summary>Professional identity: text version</summary>\n\n"
     outputs[page] += identity_block(identity, as_of) + "</details>\n\n## Statistics\n\n" + statistics
     # Preserve front matter and decisions on existing game notes; own only this block.
     for record in records:
@@ -489,7 +500,17 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
             outputs[page] = re.sub(r"<!-- player-report:start -->.*?<!-- player-report:end -->", lambda _: block, old, flags=re.S)
         else:
             outputs[page] = old.rstrip() + "\n\n" + block + "\n"
-    return {page: text.rstrip() + "\n" for page, text in outputs.items()}
+    from .player_milestones import build_milestone_pages
+    outputs.update(build_milestone_pages(player, identity, records, root=root))
+    from .milestone_records import build_phase_navigation
+    outputs.update(build_phase_navigation(root, player))
+    from .contract_navigation import build_contract_navigation
+    contract_navigation = build_contract_navigation(root, player)
+    outputs.update(contract_navigation)
+    for page in (player / "README.md", stats / "README.md", *(s / "README.md" for s in seasons)):
+        if page in outputs:
+            outputs[page] += "\n" + link(page, player / "Milestones/index.html", "Open your live career milestones") + " · " + link(page, stats / "player_cards.html", "Detailed Shooting, Contract and Awards") + " · " + link(page, player / "Contracts/index.html", "Every player's contract") + "\n"
+    return {page: (style.award_terms(text) if page.suffix == ".md" and page not in contract_navigation else text).rstrip() + "\n" for page, text in outputs.items()}
 
 
 def report_errors(root: Path, player: Path) -> list[str]:
@@ -503,7 +524,7 @@ def report_errors(root: Path, player: Path) -> list[str]:
         for href in re.findall(r"\[[^\]\n]+\]\(([^)\s]+)\)", text):
             if "://" in href or href.startswith("#"):
                 continue
-            target = (page.parent / href.split("#", 1)[0]).resolve()
+            target = (page.parent / href.split("#", 1)[0].split("?", 1)[0]).resolve()
             if not target.exists():
                 errors.append(f"{page.relative_to(root)}: broken report link {href}")
     return errors

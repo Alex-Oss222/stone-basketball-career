@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `najere
 
 **Contract/control:** Under contract; through 2007-08 (2003-04 scheduled $3,428,572) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/najered01.html#contract) ([text](../../../Contracts/players/najered01.md)).
+
 **2002-03 (recorded, DAL):** 48 G, 12 GS, 23.0 MPG, 6.7 PPG, 4.6 RPG, 1.0 APG, 0.8 SPG, 0.5 BPG, 0.5 TOV, FG 55.8%.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

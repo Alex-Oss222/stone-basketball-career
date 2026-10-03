@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `odomla
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/odomla01.html#contract) ([text](../../../Contracts/players/odomla01.md)).
+
 **2002-03 (recorded, LAC):** 49 G, 47 GS, 34.3 MPG, 14.6 PPG, 6.7 RPG, 3.6 APG, 0.9 SPG, 0.8 BPG, 2.9 TOV, FG 43.9%.
 
 **Colours:** header uses Los Angeles Clippers colours (#d50032 / #003da5) for the season starting 2003; presentation only.

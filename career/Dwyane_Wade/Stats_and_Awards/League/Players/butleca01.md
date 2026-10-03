@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `butlec
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,804,680) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/butleca01.html#contract) ([text](../../../Contracts/players/butleca01.md)).
+
 **2002-03 (recorded, MIA):** 78 G, 78 GS, 36.6 MPG, 15.4 PPG, 5.1 RPG, 2.7 APG, 1.8 SPG, 0.4 BPG, 2.5 TOV, FG 41.6%.
 
 **Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `vanexn
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $11,956,625) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/vanexni01.html#contract) ([text](../../../Contracts/players/vanexni01.md)).
+
 **2002-03 (recorded, DAL):** 73 G, 1 GS, 27.8 MPG, 12.5 PPG, 2.8 RPG, 4.3 APG, 0.6 SPG, 0.1 BPG, 1.7 TOV, FG 41.2%.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

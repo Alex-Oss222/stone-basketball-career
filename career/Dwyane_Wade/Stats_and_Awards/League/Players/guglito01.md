@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `guglit
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $11,670,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/guglito01.html#contract) ([text](../../../Contracts/players/guglito01.md)).
+
 **2002-03 (recorded, PHO):** 27 G, 11 GS, 16.6 MPG, 4.8 PPG, 3.7 RPG, 1.1 APG, 0.5 SPG, 0.2 BPG, 1.1 TOV, FG 45.5%.
 
 **Colours:** header uses Phoenix Suns colours (#582c83 / #cb6015) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `trentg
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/trentga01.html#contract) ([text](../../../Contracts/players/trentga01.md)).
+
 **2002-03 (recorded, MIN):** 80 G, 22 GS, 15.3 MPG, 6.0 PPG, 3.6 RPG, 1.0 APG, 0.4 SPG, 0.3 BPG, 0.7 TOV, FG 53.5%.
 
 **Colours:** header uses Minnesota Timberwolves colours (#236192 / #00843d) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `georgd
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $4,546,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/georgde01.html#contract) ([text](../../../Contracts/players/georgde01.md)).
+
 **2002-03 (recorded, LAL):** 71 G, 7 GS, 22.7 MPG, 6.9 PPG, 4.0 RPG, 1.3 APG, 0.8 SPG, 0.5 BPG, 0.9 TOV, FG 39.0%.
 
 **Colours:** header uses Los Angeles Lakers colours (#702f8a / #ffc72c) for the season starting 2003; presentation only.

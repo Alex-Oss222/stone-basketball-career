@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `abdurs
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $13,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/abdursh01.html#contract) ([text](../../../Contracts/players/abdursh01.md)).
+
 **2002-03 (recorded, ATL):** 81 G, 81 GS, 38.1 MPG, 19.9 PPG, 8.4 RPG, 3.0 APG, 1.1 SPG, 0.5 BPG, 2.6 TOV, FG 47.8%.
 
 **Colours:** header uses Atlanta Hawks colours (#c8102e / #ffcd00) for the season starting 2003; presentation only.

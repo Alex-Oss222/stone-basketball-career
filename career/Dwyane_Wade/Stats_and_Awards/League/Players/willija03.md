@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willij
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $3,710,880) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/willija03.html#contract) ([text](../../../Contracts/players/willija03.md)).
+
 **2002-03 (recorded, CHI):** 75 G, 54 GS, 26.1 MPG, 9.5 PPG, 2.6 RPG, 4.7 APG, 1.1 SPG, 0.2 BPG, 2.3 TOV, FG 39.9%.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

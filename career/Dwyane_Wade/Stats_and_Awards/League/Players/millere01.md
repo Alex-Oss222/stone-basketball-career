@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `miller
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/millere01.html#contract) ([text](../../../Contracts/players/millere01.md)).
+
 **2002-03 (recorded, IND):** 70 G, 70 GS, 30.2 MPG, 12.6 PPG, 2.5 RPG, 2.4 APG, 0.9 SPG, 0.1 BPG, 0.9 TOV, FG 44.1%.
 
 **Colours:** header uses Indiana Pacers colours (#041e42 / #ffcd00) for the season starting 2003; presentation only.

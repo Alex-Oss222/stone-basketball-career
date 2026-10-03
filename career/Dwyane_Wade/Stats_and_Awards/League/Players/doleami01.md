@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `doleam
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $1,540,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/doleami01.html#contract) ([text](../../../Contracts/players/doleami01.md)).
+
 **2002-03 (recorded, NYK):** 75 G, 0 GS, 13.9 MPG, 4.4 PPG, 2.9 RPG, 0.6 APG, 0.2 SPG, 0.2 BPG, 0.7 TOV, FG 42.6%.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

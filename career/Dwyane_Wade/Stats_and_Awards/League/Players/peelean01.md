@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `peelea
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/peelean01.html#contract) ([text](../../../Contracts/players/peelean01.md)).
+
 **2002-03 (recorded, MIN):** 82 G, 39 GS, 27.4 MPG, 7.7 PPG, 2.9 RPG, 3.0 APG, 0.9 SPG, 0.2 BPG, 1.0 TOV, FG 41.4%.
 
 **Colours:** header uses Minnesota Timberwolves colours (#236192 / #00843d) for the season starting 2003; presentation only.

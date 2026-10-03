@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `nailol
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/nailole01.html#contract) ([text](../../../Contracts/players/nailole01.md)).
+
 **2002-03 (recorded, NYK):** 38 G, 0 GS, 10.7 MPG, 5.5 PPG, 1.8 RPG, 0.7 APG, 0.2 SPG, 0.1 BPG, 0.8 TOV, FG 44.2%.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

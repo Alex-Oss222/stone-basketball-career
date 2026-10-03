@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `patter
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $5,445,600) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/patteru01.html#contract) ([text](../../../Contracts/players/patteru01.md)).
+
 **2002-03 (recorded, POR):** 78 G, 17 GS, 21.2 MPG, 8.3 PPG, 3.4 RPG, 1.3 APG, 0.9 SPG, 0.4 BPG, 1.5 TOV, FG 49.2%.
 
 **Colours:** header uses Portland Trail Blazers colours (#c8102e / #010101) for the season starting 2003; presentation only.

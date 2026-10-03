@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `maggec
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/maggeco01.html#contract) ([text](../../../Contracts/players/maggeco01.md)).
+
 **2002-03 (recorded, LAC):** 64 G, 57 GS, 31.3 MPG, 16.8 PPG, 5.0 RPG, 1.9 APG, 0.9 SPG, 0.2 BPG, 2.3 TOV, FG 44.4%.
 
 **Colours:** header uses Los Angeles Clippers colours (#d50032 / #003da5) for the season starting 2003; presentation only.

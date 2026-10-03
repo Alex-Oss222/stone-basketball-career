@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `armstd
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/armstda01.html#contract) ([text](../../../Contracts/players/armstda01.md)).
+
 **2002-03 (recorded, ORL):** 82 G, 23 GS, 28.7 MPG, 9.4 PPG, 3.6 RPG, 3.9 APG, 1.6 SPG, 0.2 BPG, 2.0 TOV, FG 40.9%.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

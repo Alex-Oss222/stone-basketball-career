@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `williw
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/williwa02.html#contract) ([text](../../../Contracts/players/williwa02.md)).
+
 **2002-03 (recorded, DAL):** 66 G, 1 GS, 17.6 MPG, 5.5 PPG, 3.1 RPG, 0.9 APG, 0.6 SPG, 0.4 BPG, 0.5 TOV, FG 39.3%.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

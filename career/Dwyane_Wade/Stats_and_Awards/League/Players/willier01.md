@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willie
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $5,540,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/willier01.html#contract) ([text](../../../Contracts/players/willier01.md)).
+
 **2002-03 (recorded, BOS):** 82 G, 79 GS, 28.7 MPG, 9.1 PPG, 4.7 RPG, 1.7 APG, 1.0 SPG, 0.2 BPG, 1.2 TOV, FG 44.2%.
 
 **Colours:** header uses Boston Celtics colours (#007a33 / #ffffff) for the season starting 2003; presentation only.

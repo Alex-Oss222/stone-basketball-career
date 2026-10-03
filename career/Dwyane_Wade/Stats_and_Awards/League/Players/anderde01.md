@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `anderd
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $7,794,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/anderde01.html#contract) ([text](../../../Contracts/players/anderde01.md)).
+
 **2002-03 (recorded, POR):** 76 G, 76 GS, 33.6 MPG, 13.9 PPG, 3.5 RPG, 4.3 APG, 1.2 SPG, 0.2 BPG, 1.7 TOV, FG 42.7%.
 
 **Colours:** header uses Portland Trail Blazers colours (#c8102e / #010101) for the season starting 2003; presentation only.

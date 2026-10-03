@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `horryr
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/horryro01.html#contract) ([text](../../../Contracts/players/horryro01.md)).
+
 **2002-03 (recorded, LAL):** 80 G, 26 GS, 29.3 MPG, 6.5 PPG, 6.4 RPG, 2.9 APG, 1.2 SPG, 0.8 BPG, 1.4 TOV, FG 38.7%.
 
 **Colours:** header uses Los Angeles Lakers colours (#702f8a / #ffc72c) for the season starting 2003; presentation only.

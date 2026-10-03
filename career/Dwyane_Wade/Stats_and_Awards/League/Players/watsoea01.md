@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `watsoe
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $1,336,500) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/watsoea01.html#contract) ([text](../../../Contracts/players/watsoea01.md)).
+
 **2002-03 (recorded, MEM):** 79 G, 2 GS, 17.3 MPG, 5.5 PPG, 2.1 RPG, 2.8 APG, 1.1 SPG, 0.2 BPG, 1.1 TOV, FG 43.5%.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

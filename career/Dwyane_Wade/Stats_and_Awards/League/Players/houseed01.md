@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `housee
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/houseed01.html#contract) ([text](../../../Contracts/players/houseed01.md)).
+
 **2002-03 (recorded, MIA):** 55 G, 7 GS, 18.6 MPG, 7.5 PPG, 1.8 RPG, 1.6 APG, 0.8 SPG, 0.0 BPG, 0.8 TOV, FG 38.7%.
 
 **Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2003; presentation only.

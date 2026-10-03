@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `piatke
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/piatker01.html#contract) ([text](../../../Contracts/players/piatker01.md)).
+
 **2002-03 (recorded, LAC):** 62 G, 26 GS, 21.9 MPG, 9.7 PPG, 2.5 RPG, 1.1 APG, 0.5 SPG, 0.1 BPG, 0.9 TOV, FG 47.1%.
 
 **Colours:** header uses Los Angeles Clippers colours (#d50032 / #003da5) for the season starting 2003; presentation only.

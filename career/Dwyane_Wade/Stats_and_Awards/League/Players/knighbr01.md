@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `knighb
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $5,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/knighbr01.html#contract) ([text](../../../Contracts/players/knighbr01.md)).
+
 **2002-03 (recorded, MEM):** 55 G, 4 GS, 16.9 MPG, 3.9 PPG, 1.5 RPG, 4.2 APG, 1.3 SPG, 0.0 BPG, 1.7 TOV, FG 42.5%.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

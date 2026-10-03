@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `murrar
 
 **Contract/control:** Minimum-salary contract (2003-04 status unverified); through 2003-04 (2003-04 scheduled $563,679) (league contract inventory status `minimum_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/murraro01.html#contract) ([text](../../../Contracts/players/murraro01.md)).
+
 **2002-03 (recorded, MIL/SEA):** 14 G, 0 GS, 4.4 MPG, 1.9 PPG, 0.3 RPG, 0.4 APG, 0.3 SPG, 0.0 BPG, 0.6 TOV, FG 35.5%.
 
 **Colours:** header uses Seattle SuperSonics colours (#00573f / #f6be00) for the season starting 2003; presentation only.

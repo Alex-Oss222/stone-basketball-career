@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `skinnb
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/skinnbr01.html#contract) ([text](../../../Contracts/players/skinnbr01.md)).
+
 **2002-03 (recorded, PHI):** 77 G, 9 GS, 17.9 MPG, 6.0 PPG, 4.8 RPG, 0.2 APG, 0.6 SPG, 0.7 BPG, 0.8 TOV, FG 55.0%.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `batism
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/batismi01.html#contract) ([text](../../../Contracts/players/batismi01.md)).
+
 **2002-03 (recorded, MEM):** 75 G, 2 GS, 16.6 MPG, 6.4 PPG, 3.4 RPG, 0.7 APG, 0.6 SPG, 0.2 BPG, 0.9 TOV, FG 42.2%.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

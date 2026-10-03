@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hoibef
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/hoibefr01.html#contract) ([text](../../../Contracts/players/hoibefr01.md)).
+
 **2002-03 (recorded, CHI):** 63 G, 0 GS, 12.4 MPG, 2.3 PPG, 2.2 RPG, 1.1 APG, 0.6 SPG, 0.1 BPG, 0.4 TOV, FG 38.9%.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

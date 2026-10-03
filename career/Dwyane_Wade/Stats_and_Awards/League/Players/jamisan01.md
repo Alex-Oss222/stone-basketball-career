@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jamisa
 
 **Contract/control:** Under contract; through 2007-08 (2003-04 scheduled $11,326,219) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jamisan01.html#contract) ([text](../../../Contracts/players/jamisan01.md)).
+
 **2002-03 (recorded, GSW):** 82 G, 82 GS, 39.3 MPG, 22.2 PPG, 7.0 RPG, 1.9 APG, 0.9 SPG, 0.5 BPG, 2.2 TOV, FG 47.0%.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

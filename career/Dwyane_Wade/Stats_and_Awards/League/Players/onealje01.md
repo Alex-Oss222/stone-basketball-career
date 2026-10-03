@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `onealj
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/onealje01.html#contract) ([text](../../../Contracts/players/onealje01.md)).
+
 **2002-03 (recorded, IND):** 77 G, 76 GS, 37.2 MPG, 20.8 PPG, 10.3 RPG, 2.0 APG, 0.9 SPG, 2.3 BPG, 2.3 TOV, FG 48.4%.
 
 **Colours:** header uses Indiana Pacers colours (#041e42 / #ffcd00) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `anderk
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/anderke01.html#contract) ([text](../../../Contracts/players/anderke01.md)).
+
 **2002-03 (recorded, SEA/NOH):** 61 G, 2 GS, 18.6 MPG, 6.1 PPG, 2.2 RPG, 3.2 APG, 1.0 SPG, 0.1 BPG, 1.2 TOV, FG 42.7%.
 
 **Colours:** header uses New Orleans Hornets colours (#00778b / #280071) for the season starting 2003; presentation only.

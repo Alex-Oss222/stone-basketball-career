@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mcgrat
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $13,279,750) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mcgratr01.html#contract) ([text](../../../Contracts/players/mcgratr01.md)).
+
 **2002-03 (recorded, ORL):** 75 G, 74 GS, 39.4 MPG, 32.1 PPG, 6.5 RPG, 5.5 APG, 1.7 SPG, 0.8 BPG, 2.6 TOV, FG 45.7%.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `lafrer
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $8,178,750) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/lafrera01.html#contract) ([text](../../../Contracts/players/lafrera01.md)).
+
 **2002-03 (recorded, DAL):** 69 G, 43 GS, 23.3 MPG, 9.3 PPG, 4.8 RPG, 0.8 APG, 0.5 SPG, 1.3 BPG, 0.7 TOV, FG 51.8%.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

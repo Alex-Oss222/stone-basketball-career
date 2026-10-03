@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willij
 
 **Contract/control:** Under contract; through 2007-08 (2003-04 scheduled $6,187,500) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/willija02.html#contract) ([text](../../../Contracts/players/willija02.md)).
+
 **2002-03 (recorded, MEM):** 76 G, 76 GS, 31.7 MPG, 12.1 PPG, 2.8 RPG, 8.3 APG, 1.2 SPG, 0.1 BPG, 2.2 TOV, FG 38.8%.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

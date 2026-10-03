@@ -12,6 +12,12 @@
 
 **Contract/control:** Unsigned No. 33 draft rights; no individual draft cap hold. Contract salary is not yet agreed. [Finance record](../../Finances/cap_sheet.md).
 
+<!-- contract-navigation:start -->
+[Current contract](../../../../Contracts/players/beaslje01.html#contract) · [Contract history](../../../../Contracts/players/beaslje01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
+
+Contract pages follow the current career date; this personnel assessment retains its stated date.
+<!-- contract-navigation:end -->
+
 ## Scouting report
 
 **Role:** Unassigned rookie; Miami has not assigned a 2003-04 rotation role yet.

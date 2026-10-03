@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `sassej
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,125,729) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/sasseje01.html#contract) ([text](../../../Contracts/players/sasseje01.md)).
+
 **2002-03 (recorded, ORL):** 75 G, 4 GS, 13.7 MPG, 2.6 PPG, 2.5 RPG, 0.9 APG, 0.6 SPG, 0.2 BPG, 0.5 TOV, FG 30.9%.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

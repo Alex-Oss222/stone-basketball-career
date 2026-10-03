@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `harria
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/harriad01.html#contract) ([text](../../../Contracts/players/harriad01.md)).
+
 **2002-03 (recorded, DAL/DEN):** 19 G, 0 GS, 5.8 MPG, 1.6 PPG, 0.4 RPG, 0.6 APG, 0.1 SPG, 0.1 BPG, 0.1 TOV, FG 29.7%.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

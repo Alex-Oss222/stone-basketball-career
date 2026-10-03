@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `tskitn
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $2,720,760) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/tskitni01.html#contract) ([text](../../../Contracts/players/tskitni01.md)).
+
 **2002-03 (recorded, DEN):** 81 G, 16 GS, 16.3 MPG, 3.9 PPG, 2.2 RPG, 1.1 APG, 0.4 SPG, 0.4 BPG, 1.0 TOV, FG 29.3%.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

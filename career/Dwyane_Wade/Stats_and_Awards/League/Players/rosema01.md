@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `rosema
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $4,916,250) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/rosema01.html#contract) ([text](../../../Contracts/players/rosema01.md)).
+
 **2002-03 (recorded, SAS):** 79 G, 13 GS, 24.5 MPG, 10.4 PPG, 6.4 RPG, 1.6 APG, 0.7 SPG, 0.5 BPG, 2.2 TOV, FG 45.9%.
 
 **Colours:** header uses San Antonio Spurs colours (#010101 / #8d9093) for the season starting 2003; presentation only.

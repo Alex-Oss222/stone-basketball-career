@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `stockj
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/stockjo01.html#contract) ([text](../../../Contracts/players/stockjo01.md)).
+
 **2002-03 (recorded, UTA):** 82 G, 82 GS, 27.7 MPG, 10.8 PPG, 2.5 RPG, 7.7 APG, 1.7 SPG, 0.2 BPG, 2.2 TOV, FG 48.3%.
 
 **Colours:** header uses Utah Jazz colours (#753bbd / #00a9e0) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hughel
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $5,000,600) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/hughela01.html#contract) ([text](../../../Contracts/players/hughela01.md)).
+
 **2002-03 (recorded, WAS):** 67 G, 56 GS, 31.9 MPG, 12.8 PPG, 4.6 RPG, 3.1 APG, 1.3 SPG, 0.4 BPG, 2.0 TOV, FG 46.7%.
 
 **Colours:** header uses Washington Wizards colours (#236192 / #8f654d) for the season starting 2003; presentation only.

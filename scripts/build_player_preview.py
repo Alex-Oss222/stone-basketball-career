@@ -59,10 +59,143 @@ def period_for_page(page):
 
 def card_navigation(period="season"):
     return (f"[![Shooting: open the shot-chart page](assets/shooting_link.svg)](sample_shooting.md#{period}) "
+            "[![Contract: open current terms and contract history](assets/contract_link.svg)](sample_contract.md) "
             "[![Awards: open the annual-awards page](assets/awards_link.svg)](sample_awards.md)\n\n"
             f"[Interactive Shooting](player_cards_preview.html?period={period}#shooting) · "
+            "[Interactive Contract](player_cards_preview.html#contract) · "
             "[Interactive Awards](player_cards_preview.html#awards) · "
-            "[Shooting text version](sample_shooting.md) · [Awards text version](sample_awards.md)\n\n")
+            "[Shooting text version](sample_shooting.md) · [Contract text version](sample_contract.md) · [Awards text version](sample_awards.md)\n\n")
+
+
+def contract_design_payload():
+    """Independent veteran design fixture, never the rookie sample or career data."""
+    notice = ("INDEPENDENT FICTIONAL CONTRACT DESIGN SCENARIO. Example Contract Player is a 25-year-old veteran. "
+              "These invented agreements are separate from the 19-year-old Shooting sample, the Awards scenarios and Wade's career. "
+              "Amounts illustrate recorded terms; they are not a market quote or an approved NBA agreement.")
+    def section(title, columns=(), rows=(), body=None, items=(), notice=None):
+        return dict(title=title, columns=list(columns), rows=list(rows), body=body, items=list(items), notice=notice)
+    def metric(label, value, detail):
+        return dict(label=label, value=value, detail=detail)
+    sources = [dict(label="Independent fictional agreement and term schedules", href="sample_contract.md#current-agreement"),
+               dict(label="Machine-readable design fixture", href="player_cards_data.json")]
+    current = dict(id="example-veteran-2003", title="Example Club | Veteran agreement", team="Example Club",
+        type="Veteran free-agent signing (fictional)", status="active", signed_on="2003-07-17",
+        start_season="2003-04", end_season="2005-06",
+        summary="Three scheduled seasons at $15,750,000 in base salary. The first two years total $10,250,000 in guaranteed base salary; the third is a $5,500,000 team option. Annual incentives are tracked separately. No exercise decision is presumed.",
+        metrics=[metric("Scheduled base", "$15,750,000", "Includes the unexercised $5,500,000 team option."),
+                 metric("Guaranteed base", "$10,250,000", "Two protected seasons; excludes incentives."),
+                 metric("Base annual average", "$5,250,000", "Scheduled base divided by three seasons."),
+                 metric("Current base salary", "$5,000,000", "2003-04 scheduled salary; not payroll paid."),
+                 metric("Option decision", "Jun 29, 2005", "Fictional contractual notice deadline."),
+                 metric("Maximum incentives", "$450,000", "Up to $150,000 per season; contingent.")],
+        sources=sources,
+        sections=[
+            section("Agreement summary", ("Recorded term", "Value", "Meaning"), [
+                ["Player / age", "Example Contract Player / 25", "Independent veteran design identity."],
+                ["Signed / effective", "July 17, 2003 / 2003-04 season", "Design fixture records both dates."],
+                ["Signing method", "Free-agent contract with Example Club", "Cap-space route is asserted only inside this fictional fixture."],
+                ["Contract length", "3 seasons: 2003-04 through 2005-06", "Final season is a team option, not an exercised commitment."],
+                ["Total base / maximum compensation", "$15,750,000 / $16,200,000", "Maximum adds all $450,000 of contingent incentives."],
+                ["Agent", None, "No invented representative or contact details."],
+                ["Cap percentage", None, "No verified cap denominator is attached to this independent fixture."],
+            ]),
+            section("Salary by season and option control", ("Season", "Base salary", "Guaranteed base", "Likely bonus", "Unlikely bonus", "Illustrative cap charge", "Option / control", "Decision deadline"), [
+                ["2003-04", "$5,000,000", "$5,000,000", "$50,000", "$100,000", "$5,050,000", "No option", "Not applicable"],
+                ["2004-05", "$5,250,000", "$5,250,000", "$50,000", "$100,000", "$5,300,000", "No option", "Not applicable"],
+                ["2005-06", "$5,500,000", "$0", "$50,000", "$100,000", "$5,550,000", "Team option; not exercised", "June 29, 2005"],
+                ["Scheduled total", "$15,750,000", "$10,250,000", "$150,000", "$300,000", "$15,900,000", "Includes contingent final season", "No decision entered"],
+            ], body="Illustrative cap charges are base salary plus the fixture's likely bonus. They are distinct from guaranteed cash, earned compensation and spendable team room.",
+                notice="Option-year salary and cap charge are conditional. The $0 guaranteed base for 2005-06 does not erase the $5,500,000 option amount or resolve the club's future cap hold."),
+            section("Guarantees and protection schedule", ("Protection", "Amount / timing", "Recorded condition"), [
+                ["2003-04 base", "$5,000,000", "Fully protected under the fictional signed schedule."],
+                ["2004-05 base", "$5,250,000", "Fully protected under the fictional signed schedule."],
+                ["2005-06 base", "$5,500,000 if option exercised", "No guarantee has vested at the November 12, 2003 cutoff."],
+                ["Guarantee total", "$10,250,000", "Base only; does not assume an incentive is earned."],
+                ["Payment timing", None, "Actual installments, escrow deductions and payroll paid are not supplied."],
+                ["Waiver / set-off detail", None, "A protection amount is not a complete waiver calculation."],
+            ]),
+            section("Incentives and performance conditions", ("Season", "Bonus", "Classification", "Maximum", "Earned status"), [
+                ["Each scheduled season", "At least 65 appearances", "Likely in this fixture", "$50,000", "Not determined at cutoff"],
+                ["Each scheduled season", "All-Defensive team selection", "Unlikely in this fixture", "$100,000", "Not determined at cutoff"],
+                ["All three seasons", "Aggregate contingent maximum", "Separate from base guarantee", "$450,000", "No bonus paid or earned is asserted"],
+            ], notice="Thresholds and likely/unlikely labels are invented design data, not facts derived from the six Shooting games. Option-year bonuses exist only if that season becomes effective."),
+            section("Rights, option deadlines and expiry", ("Checkpoint", "Date / holder", "Consequence"), [
+                ["Team-option holder", "Example Club", "The player cannot exercise or decline the club's option."],
+                ["Option notice", "June 29, 2005", "A future fixture deadline, with no outcome entered."],
+                ["Earliest contractual end", "June 30, 2005", "If the team option is not exercised."],
+                ["Scheduled end if exercised", "June 30, 2006", "Would require a recorded option decision."],
+                ["Projected free-agent classification", None, "Requires a dated service/control check at expiry."],
+                ["Bird rights / extension eligibility", None, "Not established by this design fixture."],
+                ["Current negotiation", "None recorded", "This is a signed example, not a new offer or editable counter."],
+            ]),
+            section("Clauses, assignment and player control", ("Clause", "Recorded term", "Player-facing effect"), [
+                ["No-trade clause", "Not granted in the fixture", "No general player veto is displayed."],
+                ["Trade bonus", "No trade bonus in the fixture", "No bonus is added to the scheduled figures."],
+                ["Assignment", "Agreement remains in force upon a permitted trade", "A trade does not become a replacement signing."],
+                ["Trade eligibility restriction", None, "Requires the applicable dated rules and transaction record."],
+                ["Amendments", "None recorded as of November 12, 2003", "The original document remains the version shown."],
+                ["Other negotiated clauses", None, "An absent clause field is not proof that no clause exists."],
+            ]),
+            section("Transaction and document audit", ("Date", "Recorded event", "Effect", "Source"), [
+                ["2003-06-30", "Prior fictional agreement expired", "History retained; no salary carried into this new agreement", {"label":"Prior agreement", "href":"sample_contract.md#prior-agreement"}],
+                ["2003-07-17", "Current fictional agreement signed", "Base salary schedule and protections begin", {"label":"Current agreement", "href":"sample_contract.md#current-agreement"}],
+                ["2003-11-12", "Design record cutoff", "No option exercise, trade, bonus award or amendment entered", {"label":"Fixture provenance", "href":"sample_contract.md#fixture-provenance"}],
+            ]),
+            section("Signed document and evidence boundaries", ("Document field", "Recorded value"), [
+                ["Document", "Fictional current-agreement term sheet, version 1"],
+                ["Signing evidence", {"label":"Complete fictional agreement schedule", "href":"sample_contract.md#current-agreement"}],
+                ["Machine-readable record ID", "example-veteran-2003"],
+                ["Signature scan / registration confirmation", None],
+                ["Evidence status", "Explicit design fixture only; no executed legal document or career event"],
+            ], notice=notice),
+        ])
+    prior = dict(id="example-veteran-2001", title="Former Example Club | Previous agreement", team="Former Example Club",
+        type="Veteran free-agent signing (fictional)", status="expired", signed_on="2001-07-20",
+        start_season="2001-02", end_season="2002-03",
+        summary="A separate two-year fictional agreement with $4,200,000 of scheduled and fully protected base salary. It expired June 30, 2003. The original terms remain available after the new signing; scheduled salary is not proof of payroll paid.",
+        metrics=[metric("Original base value", "$4,200,000", "Two years; retained original agreement."),
+                 metric("Base annual average", "$2,100,000", "$4,200,000 divided by two seasons."),
+                 metric("Original guarantee", "$4,200,000", "Fully protected base at signing."),
+                 metric("Contract ended", "Jun 30, 2003", "Expired before the separate current signing.")],
+        sources=[dict(label="Full previous fictional agreement", href="sample_contract.md#prior-agreement")],
+        sections=[
+            section("Original agreement summary", ("Recorded term", "Value"), [
+                ["Signed with", "Former Example Club on July 20, 2001"], ["Covered seasons", "2001-02 and 2002-03"],
+                ["Original base / guarantee", "$4,200,000 / $4,200,000"], ["Signing method", "Fictional veteran free-agent signing"],
+                ["Agent and registration evidence", None],
+            ]),
+            section("Historical salary schedule", ("Season", "Base salary", "Guaranteed base", "Incentives", "Option", "Illustrative cap charge"), [
+                ["2001-02", "$2,000,000", "$2,000,000", "$0", "None", "$2,000,000"],
+                ["2002-03", "$2,200,000", "$2,200,000", "$0", "None", "$2,200,000"],
+                ["Original total", "$4,200,000", "$4,200,000", "$0", "None", "$4,200,000"],
+            ], notice="These are the former agreement's own figures. Current-agreement salary and option terms are not backfilled into history."),
+            section("Guarantees and incentives at signing", ("Term", "Original record"), [
+                ["Protection", "Both scheduled years fully protected in this fixture"],
+                ["Incentives", "No incentive compensation in this fixture"],
+                ["Payroll paid, escrow and deductions", None],
+            ]),
+            section("Rights, deadlines and clauses", ("Term", "Original record"), [
+                ["Contractual expiry", "June 30, 2003"], ["Team or player option", "None in the fixture"],
+                ["No-trade clause / trade bonus", "Neither granted in the fixture"],
+                ["Historical Bird or restricted status", None], ["Other clauses and waiver calculations", None],
+            ]),
+            section("Historical transaction audit", ("Date", "Recorded event", "Effect"), [
+                ["2001-07-20", "Fictional original agreement signed", "Two-year schedule established"],
+                ["2003-06-30", "Agreement expired", "Original record remains archived"],
+                ["2003-07-17", "Separate new agreement signed", "Does not overwrite this original contract"],
+            ]),
+            section("Original signed-document source", ("Document field", "Recorded value"), [
+                ["Document", {"label":"Previous fictional agreement schedule", "href":"sample_contract.md#prior-agreement"}],
+                ["Record ID", "example-veteran-2001"], ["Signature scan / registration confirmation", None],
+                ["Evidence status", "Independent fictional design fixture, not a historical NBA contract"],
+            ]),
+        ])
+    return dict(as_of="2003-11-12", player_id="example_contract_player", status="active", summary=current["summary"],
+        notice=notice, identity=dict(name="Example Contract Player", team="Example Club", jersey=7, position="SG", age=25,
+            height="6 ft 4 in", weight="210 lb", shoots="Right", entry="Independent veteran contract design fixture",
+            photo_url=None, initials="EC", status="Fictional contract illustration"),
+        current=current, history=[current, prior], metrics=[], sections=[],
+        sources=[dict(label="Contract fixture provenance", href="sample_contract.md#fixture-provenance")])
 
 
 def annual_awards(records, season, cutoff):
@@ -112,6 +245,7 @@ def cards_payload(identity, records, awards):
         photo_url=None, initials="EP"),
         notice="ILLUSTRATIVE TEMPLATE ONLY. Fictional box scores and synthetic shot locations for layout testing only. No real tracking or career results.",
         geometry=NBA_GEOMETRY, zones=ZONES, default_period="season", periods=periods,
+        enabled_tabs=["shooting", "contract", "awards"], contracts=contract_design_payload(),
         awards=dict(default_scenario="current", scenarios=[
             dict(id="current", label="2003-04 current sample", season="2003-04", cutoff="2003-11-12",
                  notice="No annual award has been earned by this sample's November 12, 2003 cutoff. Weekly and monthly awards remain separate.", records=current_awards),
@@ -181,7 +315,7 @@ def card_fallbacks(folder, payload):
     """Readable repository pages back every clickable image banner."""
     outputs = {}
     shooting = "# Shooting | Example Player\n\n" + NOTICE
-    shooting += "[Open interactive Shooting](player_cards_preview.html#shooting) · [Statistics index](player_stats_preview.md) · [Awards](sample_awards.md)\n\n"
+    shooting += "[Open interactive Shooting](player_cards_preview.html#shooting) · [Statistics index](player_stats_preview.md) · [Contract](sample_contract.md) · [Awards](sample_awards.md)\n\n"
     shooting += "Shot coordinates are **synthetic design fixtures**, explicitly generated to reconcile with the six existing fictional game boxes. They are not inferred real locations or canonical tracking. Free throws contribute to PTS but never appear as field-goal dots.\n\n"
     shooting += "**Read the map:** circle area represents field-goal attempts per appearance, using one fixed scale across periods. Color represents absolute observed FG%, with no invented league benchmark. Hover inspection and selectors are in the interactive version; the complete values remain below.\n\n"
     shooting += " · ".join(f'[{p["id"].replace("-", " ").title()}](#{p["id"]})' for p in payload["periods"]) + "\n\n"
@@ -203,7 +337,7 @@ def card_fallbacks(folder, payload):
     shooting += "[Raw synthetic shot fixture](illustrative_shots.json) · [Period payload](player_cards_data.json) · [Definitions and implementation boundaries](../shooting_and_awards_design.md)\n"
     outputs[folder / "sample_shooting.md"] = shooting
     awards = "# Awards | Example Player\n\n" + NOTICE
-    awards += "[Open interactive Awards](player_cards_preview.html#awards) · [Statistics index](player_stats_preview.md) · [Shooting](sample_shooting.md)\n\n"
+    awards += "[Open interactive Awards](player_cards_preview.html#awards) · [Statistics index](player_stats_preview.md) · [Shooting](sample_shooting.md) · [Contract](sample_contract.md)\n\n"
     awards += "This page presents **annual awards by season**. Only records explicitly marked earned, scoped to that season, and announced on or before that scenario's cutoff receive a badge. Nominees and pending decisions are excluded.\n\n"
     for scenario in payload["awards"]["scenarios"]:
         earned = annual_awards(scenario["records"], scenario["season"], scenario["cutoff"])
@@ -221,7 +355,48 @@ def card_fallbacks(folder, payload):
             awards += "\nThe nominated Most Improved Player record is deliberately excluded from earned badges. This design scenario never joins the November 2003 identity, totals or current-award count.\n\n"
     awards += "[Structured fixture](player_cards_data.json) · [Award scope and cutoff rules](../shooting_and_awards_design.md)\n"
     outputs[folder / "sample_awards.md"] = awards
+    outputs[folder / "sample_contract.md"] = contract_fallback(payload["contracts"])
     return outputs
+
+
+def contract_fallback(data):
+    """Every illustrative agreement has the same fully expanded Markdown detail."""
+    def cell(value):
+        if value is None or value == "":
+            return "Not recorded"
+        if isinstance(value, dict):
+            return f'[{value["label"]}]({value["href"]})' if value.get("href") else str(value.get("label", "Not recorded"))
+        return str(value).replace("|", "\\|").replace("\n", "<br>")
+    text = "# Contract | Example Contract Player\n\n> **ILLUSTRATIVE TEMPLATE ONLY.**\n\n> **" + data["notice"] + "**\n\n"
+    text += "[Shooting](sample_shooting.md) · [Interactive Contract](player_cards_preview.html#contract) · [Awards](sample_awards.md) · [Preview index](player_stats_preview.md)\n\n"
+    text += "**Known through:** " + data["as_of"] + ". **Contract identity:** age 25, Example Club, veteran guard. This identity applies only to this separate contract design scenario.\n\n"
+    text += "[Current agreement](#current-agreement) · [Prior agreement](#prior-agreement) · [Fixture provenance](#fixture-provenance)\n\n"
+    for index, record in enumerate(data["history"]):
+        title = "Current agreement" if index == 0 else "Prior agreement"
+        text += f'## {title}\n\n### {record["title"]}\n\n{record["summary"]}\n\n'
+        text += f'**Signed:** {record["signed_on"]}. **Status at cutoff:** {record["status"]}. **Covered seasons:** {record["start_season"]} through {record["end_season"]}. **Record ID:** `{record["id"]}`.\n\n'
+        text += f'[Open this complete agreement](player_cards_preview.html?contract={record["id"]}#contract-history)\n\n'
+        text += "| Metric | Recorded value | Meaning |\n| --- | --- | --- |\n"
+        for metric in record["metrics"]:
+            text += "| " + " | ".join(cell(metric[k]) for k in ("label", "value", "detail")) + " |\n"
+        text += "\n"
+        for section in record["sections"]:
+            text += "### " + section["title"] + "\n\n"
+            if section.get("body"):
+                text += section["body"] + "\n\n"
+            if section.get("columns"):
+                text += "| " + " | ".join(section["columns"]) + " |\n| " + " | ".join("---" for _ in section["columns"]) + " |\n"
+                for row in section["rows"]:
+                    text += "| " + " | ".join(cell(value) for value in row) + " |\n"
+                text += "\n"
+            if section.get("items"):
+                text += "\n".join("- " + cell(item) for item in section["items"]) + "\n\n"
+            if section.get("notice"):
+                text += "> " + section["notice"] + "\n\n"
+    text += "## Fixture provenance\n\nAll identity, contract, salary, option, clause and transaction entries on this page are deliberately invented. This is a signed-contract **presentation example**, not an executed legal instrument, a negotiation offer, a claim about NBA market value or a career event. The two agreements belong to one independent veteran scenario.\n\n"
+    text += "The current base schedule sums to $15,750,000; its first two years sum to $10,250,000 guaranteed. Each season offers up to $150,000 in contingent incentives, totaling $450,000 if all three seasons become effective and every condition is met. The prior agreement's two salaries sum to $4,200,000. No actual cash payment is inferred from these schedules.\n\n"
+    text += "[Structured fixture](player_cards_data.json) · [Illustrative generator](../../scripts/build_player_preview.py) · [Live contract source schema](../player_contract_pages.md)\n"
+    return text
 
 
 def build_preview(root=ROOT):
@@ -291,8 +466,8 @@ def build_preview(root=ROOT):
             scope={"competition": "regular", "season": "2003-04", "start": r["date"], "end": r["date"], "honors": False})
     outputs[index] = "# Player statistics | Filled preview\n\n" + NOTICE
     outputs[index] += "These examples use the same calculations and presentation as the career reports. Start with the season and follow its month, week and game links.\n\n"
-    outputs[index] += "[Open interactive Shooting and Awards cards](player_cards_preview.html) · [Shooting page](sample_shooting.md) · [Annual Awards page](sample_awards.md)\n\n"
-    outputs[index] += "The two image banners are ordinary Markdown links and work in repository views. Open the HTML preview in a browser for period selectors and shot inspection. Synthetic locations illustrate the layout; they are not real tracking.\n\n"
+    outputs[index] += "[Open interactive Shooting, Contract and Awards cards](player_cards_preview.html) · [Shooting page](sample_shooting.md) · [Contract page](sample_contract.md) · [Annual Awards page](sample_awards.md)\n\n"
+    outputs[index] += "The three image banners are ordinary Markdown links and work in repository views. Open the HTML preview in a browser for period selectors, shot inspection and full contract-history drilldown. Synthetic locations illustrate the layout; they are not real tracking. The Contract tab uses a separate fictional 25-year-old veteran, with an explicit identity and provenance notice; it is not the 19-year-old six-game sample's history.\n\n"
     outputs[index] += "| Level | Preview | What changes at this level |\n| --- | --- | --- |\n"
     outputs[index] += "| Season | [Season summary](sample_season.md) · [Full detail](sample_season_detail.md) | Season totals, monthly comparison, splits and highs |\n"
     outputs[index] += "| Month | [November](sample_month.md) · [Full detail](sample_month_detail.md) | Monthly production and week-by-week rollup |\n"
@@ -304,13 +479,14 @@ def build_preview(root=ROOT):
     outputs[index] += "[Full statistics definitions](../player_statistics.md) · [Current canonical career](../../career/Dwyane_Wade/README.md)\n"
     payload = cards_payload(identity, records, awards)
     outputs[folder / "assets/shooting_link.svg"] = navigation_badge("Shooting", "Court map · attempt frequency · accuracy · period selector", "#e34e67")
+    outputs[folder / "assets/contract_link.svg"] = navigation_badge("Contract", "Current agreement · original terms · complete contract history", "#e34e67")
     outputs[folder / "assets/awards_link.svg"] = navigation_badge("Awards", "Earned annual awards · season selector · dated record", "#efbf58")
     outputs[folder / "player_cards_data.json"] = json.dumps(payload, indent=2) + "\n"
     outputs[folder / "illustrative_shots.json"] = json.dumps(dict(schema_version=1, record_type="illustrative_synthetic_locations",
         notice=payload["notice"], coordinate_system="Feet from basket: x lateral; y toward half court; baseline y=-5.25",
         shots=payload["periods"][0]["shots"]), indent=2) + "\n"
     outputs.update(card_fallbacks(folder, payload))
-    template = (root / "docs/templates/player_cards_preview.html").read_text()
+    template = (Path(__file__).resolve().parents[1] / "runtime/assets/player_cards.html").read_text()
     if template.count("__PLAYER_CARD_DATA__") != 1:
         raise ValueError("player-card HTML template must contain exactly one __PLAYER_CARD_DATA__ token")
     # Escape HTML-significant characters while retaining valid JSON for inline data.

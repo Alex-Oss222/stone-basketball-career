@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `vranes
 
 **Contract/control:** Unsigned No. 39 second-round draft rights held by New York Knicks; no contract has been agreed. No individual draft cap hold.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/vranesl01.html#contract) ([text](../../../Contracts/players/vranesl01.md)).
+
 **2003 draft entry:** No. 39 overall, rights held by New York Knicks (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

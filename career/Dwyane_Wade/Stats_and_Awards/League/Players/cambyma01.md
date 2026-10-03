@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `cambym
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $7,250,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/cambyma01.html#contract) ([text](../../../Contracts/players/cambyma01.md)).
+
 **2002-03 (recorded, DEN):** 29 G, 9 GS, 21.2 MPG, 7.6 PPG, 7.2 RPG, 1.6 APG, 0.7 SPG, 1.4 BPG, 0.9 TOV, FG 41.0%.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

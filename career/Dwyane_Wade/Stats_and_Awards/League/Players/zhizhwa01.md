@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `zhizhw
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/zhizhwa01.html#contract) ([text](../../../Contracts/players/zhizhwa01.md)).
+
 **2002-03 (recorded, LAC):** 41 G, 1 GS, 10.0 MPG, 4.4 PPG, 1.9 RPG, 0.2 APG, 0.2 SPG, 0.2 BPG, 0.8 TOV, FG 38.3%.
 
 **Colours:** header uses Los Angeles Clippers colours (#d50032 / #003da5) for the season starting 2003; presentation only.

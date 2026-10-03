@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `colesb
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/colesbi01.html#contract) ([text](../../../Contracts/players/colesbi01.md)).
+
 **2002-03 (recorded, CLE/BOS):** 35 G, 11 GS, 19.7 MPG, 4.4 PPG, 1.7 RPG, 2.1 APG, 0.5 SPG, 0.1 BPG, 0.8 TOV, FG 33.3%.
 
 **Colours:** header uses Boston Celtics colours (#007a33 / #ffffff) for the season starting 2003; presentation only.

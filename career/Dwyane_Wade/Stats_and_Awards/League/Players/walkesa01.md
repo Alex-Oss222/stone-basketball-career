@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `walkes
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/walkesa01.html#contract) ([text](../../../Contracts/players/walkesa01.md)).
+
 **2002-03 (recorded, LAL):** 67 G, 39 GS, 18.6 MPG, 4.4 PPG, 5.5 RPG, 1.0 APG, 0.3 SPG, 0.8 BPG, 0.8 TOV, FG 42.0%.
 
 **Colours:** header uses Los Angeles Lakers colours (#702f8a / #ffc72c) for the season starting 2003; presentation only.

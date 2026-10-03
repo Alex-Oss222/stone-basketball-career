@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `eisleh
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $5,843,750) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/eisleho01.html#contract) ([text](../../../Contracts/players/eisleho01.md)).
+
 **2002-03 (recorded, NYK):** 82 G, 76 GS, 27.4 MPG, 9.1 PPG, 2.3 RPG, 5.4 APG, 0.9 SPG, 0.1 BPG, 1.8 TOV, FG 41.7%.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

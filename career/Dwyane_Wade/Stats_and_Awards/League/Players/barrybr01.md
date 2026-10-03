@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `barryb
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $5,400,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/barrybr01.html#contract) ([text](../../../Contracts/players/barrybr01.md)).
+
 **2002-03 (recorded, SEA):** 75 G, 68 GS, 33.1 MPG, 10.3 PPG, 4.0 RPG, 5.1 APG, 1.5 SPG, 0.2 BPG, 1.9 TOV, FG 45.8%.
 
 **Colours:** header uses Seattle SuperSonics colours (#00573f / #f6be00) for the season starting 2003; presentation only.

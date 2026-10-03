@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `delfic
 
 **Contract/control:** Unsigned No. 25 first-round draft rights held by Detroit Pistons; no contract has been agreed. Draft cap hold $722,700.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/delfica01.html#contract) ([text](../../../Contracts/players/delfica01.md)).
+
 **2003 draft entry:** No. 25 overall, rights held by Detroit Pistons (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

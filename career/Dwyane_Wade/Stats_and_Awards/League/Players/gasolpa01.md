@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `gasolp
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $2,618,395) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/gasolpa01.html#contract) ([text](../../../Contracts/players/gasolpa01.md)).
+
 **2002-03 (recorded, MEM):** 82 G, 82 GS, 36.0 MPG, 19.0 PPG, 8.8 RPG, 2.8 APG, 0.4 SPG, 1.8 BPG, 2.6 TOV, FG 51.0%.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

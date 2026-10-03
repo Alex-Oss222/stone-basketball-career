@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `whiter
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,947,600) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/whitero02.html#contract) ([text](../../../Contracts/players/whitero02.md)).
+
 **2002-03 (recorded, DEN):** 72 G, 19 GS, 21.7 MPG, 9.0 PPG, 3.0 RPG, 1.7 APG, 0.6 SPG, 0.4 BPG, 2.2 TOV, FG 40.8%.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

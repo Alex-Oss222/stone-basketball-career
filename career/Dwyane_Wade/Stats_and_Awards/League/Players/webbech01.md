@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `webbec
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $15,937,500) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/webbech01.html#contract) ([text](../../../Contracts/players/webbech01.md)).
+
 **2002-03 (recorded, SAC):** 67 G, 67 GS, 39.1 MPG, 23.0 PPG, 10.5 RPG, 5.4 APG, 1.6 SPG, 1.3 BPG, 3.2 TOV, FG 46.1%.
 
 **Colours:** header uses Sacramento Kings colours (#753bbd / #010101) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wallag
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $917,520) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/wallage01.html#contract) ([text](../../../Contracts/players/wallage01.md)).
+
 **2002-03 (recorded, SAC):** 47 G, 7 GS, 12.1 MPG, 4.7 PPG, 2.7 RPG, 0.5 APG, 0.5 SPG, 0.3 BPG, 0.9 TOV, FG 49.2%.
 
 **Colours:** header uses Sacramento Kings colours (#753bbd / #010101) for the season starting 2003; presentation only.

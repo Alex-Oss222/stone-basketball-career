@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `griffe
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $2,312,760) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/griffed01.html#contract) ([text](../../../Contracts/players/griffed01.md)).
+
 **2002-03 (recorded, HOU):** 77 G, 66 GS, 24.5 MPG, 8.6 PPG, 6.0 RPG, 1.1 APG, 0.7 SPG, 1.4 BPG, 1.0 TOV, FG 40.0%.
 
 **Colours:** header uses Houston Rockets colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `woodsl
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/woodslo01.html#contract) ([text](../../../Contracts/players/woodslo01.md)).
+
 **2002-03 (recorded, MIN):** 38 G, 11 GS, 9.3 MPG, 2.1 PPG, 2.5 RPG, 0.5 APG, 0.3 SPG, 0.3 BPG, 0.6 TOV, FG 38.2%.
 
 **Colours:** header uses Minnesota Timberwolves colours (#236192 / #00843d) for the season starting 2003; presentation only.

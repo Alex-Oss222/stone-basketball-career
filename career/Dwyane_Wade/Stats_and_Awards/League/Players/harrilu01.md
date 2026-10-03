@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `harril
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/harrilu01.html#contract) ([text](../../../Contracts/players/harrilu01.md)).
+
 **2002-03 (recorded, NJN):** 77 G, 25 GS, 25.6 MPG, 10.3 PPG, 3.0 RPG, 2.0 APG, 0.7 SPG, 0.1 BPG, 0.9 TOV, FG 41.3%.
 
 **Colours:** header uses New Jersey Nets colours (#041e42 / #ba0c2f) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wilksm
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/wilksmi01.html#contract) ([text](../../../Contracts/players/wilksmi01.md)).
+
 **2002-03 (recorded, ATL/MIN):** 46 G, 7 GS, 15.0 MPG, 3.2 PPG, 1.5 RPG, 2.0 APG, 0.6 SPG, 0.1 BPG, 0.6 TOV, FG 33.8%.
 
 **Colours:** header uses Minnesota Timberwolves colours (#236192 / #00843d) for the season starting 2003; presentation only.

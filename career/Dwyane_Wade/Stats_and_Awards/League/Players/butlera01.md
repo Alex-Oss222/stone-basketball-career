@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `butler
 
 **Contract/control:** 2003-04 team option pending; through 2003-04 (2003-04 scheduled $563,679) (league contract inventory status `team_option_pending`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/butlera01.html#contract) ([text](../../../Contracts/players/butlera01.md)).
+
 **2002-03 (recorded, MIA):** 72 G, 28 GS, 21.0 MPG, 7.5 PPG, 2.6 RPG, 1.3 APG, 0.3 SPG, 0.6 BPG, 1.1 TOV, FG 36.2%.
 
 **Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2003; presentation only.

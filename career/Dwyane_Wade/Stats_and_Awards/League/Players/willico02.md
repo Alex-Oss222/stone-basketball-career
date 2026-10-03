@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willic
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $5,000,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/willico02.html#contract) ([text](../../../Contracts/players/willico02.md)).
+
 **2002-03 (recorded, DET):** 82 G, 1 GS, 25.1 MPG, 12.0 PPG, 4.4 RPG, 1.3 APG, 0.5 SPG, 0.3 BPG, 1.5 TOV, FG 45.3%.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

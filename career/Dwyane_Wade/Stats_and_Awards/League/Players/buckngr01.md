@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `buckng
 
 **Contract/control:** Under contract; through 2007-08 (2003-04 scheduled $2,640,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/buckngr01.html#contract) ([text](../../../Contracts/players/buckngr01.md)).
+
 **2002-03 (recorded, PHI):** 75 G, 5 GS, 20.2 MPG, 6.0 PPG, 2.9 RPG, 1.3 APG, 1.0 SPG, 0.2 BPG, 0.8 TOV, FG 46.5%.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

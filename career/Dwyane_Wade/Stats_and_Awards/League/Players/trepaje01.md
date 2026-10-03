@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `trepaj
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/trepaje01.html#contract) ([text](../../../Contracts/players/trepaje01.md)).
+
 **2002-03 (recorded, DEN):** 8 G, 0 GS, 12.1 MPG, 5.6 PPG, 2.0 RPG, 0.8 APG, 1.0 SPG, 0.0 BPG, 1.0 TOV, FG 42.5%.
 
 **Colours:** header uses Denver Nuggets colours (#418fde / #ffc72c) for the season starting 2003; presentation only.

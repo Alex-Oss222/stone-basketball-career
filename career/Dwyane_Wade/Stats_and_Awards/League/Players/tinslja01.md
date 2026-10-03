@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `tinslj
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $861,600) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/tinslja01.html#contract) ([text](../../../Contracts/players/tinslja01.md)).
+
 **2002-03 (recorded, IND):** 73 G, 69 GS, 30.6 MPG, 7.8 PPG, 3.6 RPG, 7.5 APG, 1.7 SPG, 0.2 BPG, 2.6 TOV, FG 39.6%.
 
 **Colours:** header uses Indiana Pacers colours (#041e42 / #ffcd00) for the season starting 2003; presentation only.

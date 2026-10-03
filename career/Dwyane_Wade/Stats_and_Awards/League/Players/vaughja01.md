@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `vaughj
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/vaughja01.html#contract) ([text](../../../Contracts/players/vaughja01.md)).
+
 **2002-03 (recorded, ORL):** 80 G, 48 GS, 21.1 MPG, 5.9 PPG, 1.5 RPG, 2.9 APG, 0.8 SPG, 0.0 BPG, 1.2 TOV, FG 44.8%.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

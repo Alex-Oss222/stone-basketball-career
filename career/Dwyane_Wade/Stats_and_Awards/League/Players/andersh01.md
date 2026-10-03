@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `anders
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $6,700,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/andersh01.html#contract) ([text](../../../Contracts/players/andersh01.md)).
+
 **2002-03 (recorded, NYK):** 82 G, 9 GS, 21.1 MPG, 8.4 PPG, 3.1 RPG, 1.1 APG, 0.9 SPG, 0.2 BPG, 1.4 TOV, FG 46.2%.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `ginobm
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $1,457,500) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/ginobma01.html#contract) ([text](../../../Contracts/players/ginobma01.md)).
+
 **2002-03 (recorded, SAS):** 69 G, 5 GS, 20.7 MPG, 7.6 PPG, 2.3 RPG, 2.0 APG, 1.4 SPG, 0.2 BPG, 1.4 TOV, FG 43.8%.
 
 **Colours:** header uses San Antonio Spurs colours (#010101 / #8d9093) for the season starting 2003; presentation only.

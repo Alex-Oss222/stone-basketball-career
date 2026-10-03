@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `thomak
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $5,394,125) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/thomaku01.html#contract) ([text](../../../Contracts/players/thomaku01.md)).
+
 **2002-03 (recorded, NYK):** 81 G, 81 GS, 31.8 MPG, 14.0 PPG, 7.9 RPG, 2.0 APG, 1.0 SPG, 1.2 BPG, 1.7 TOV, FG 48.3%.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

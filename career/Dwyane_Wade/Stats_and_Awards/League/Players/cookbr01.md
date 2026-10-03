@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `cookbr
 
 **Contract/control:** Unsigned No. 24 first-round draft rights held by Los Angeles Lakers; no contract has been agreed. Draft cap hold $752,800.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/cookbr01.html#contract) ([text](../../../Contracts/players/cookbr01.md)).
+
 **2003 draft entry:** No. 24 overall, rights held by Los Angeles Lakers (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Los Angeles Lakers colours (#702f8a / #ffc72c) for the season starting 2003; presentation only.

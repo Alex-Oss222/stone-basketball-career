@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `robind
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/robinda01.html#contract) ([text](../../../Contracts/players/robinda01.md)).
+
 **2002-03 (recorded, SAS):** 64 G, 64 GS, 26.2 MPG, 8.5 PPG, 7.9 RPG, 1.0 APG, 0.8 SPG, 1.7 BPG, 1.3 TOV, FG 46.9%.
 
 **Colours:** header uses San Antonio Spurs colours (#010101 / #8d9093) for the season starting 2003; presentation only.

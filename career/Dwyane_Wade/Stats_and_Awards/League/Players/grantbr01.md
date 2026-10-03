@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `grantb
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $12,130,648) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/grantbr01.html#contract) ([text](../../../Contracts/players/grantbr01.md)).
+
 **2002-03 (recorded, MIA):** 82 G, 82 GS, 32.2 MPG, 10.3 PPG, 10.2 RPG, 1.3 APG, 0.8 SPG, 0.6 BPG, 1.6 TOV, FG 50.9%.
 
 **Colours:** header uses Miami Heat colours (#a6192e / #ffa400) for the season starting 2003; presentation only.

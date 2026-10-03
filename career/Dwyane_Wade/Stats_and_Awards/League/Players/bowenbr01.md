@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bowenb
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $3,650,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/bowenbr01.html#contract) ([text](../../../Contracts/players/bowenbr01.md)).
+
 **2002-03 (recorded, SAS):** 82 G, 82 GS, 31.3 MPG, 7.1 PPG, 2.9 RPG, 1.4 APG, 0.8 SPG, 0.5 BPG, 0.9 TOV, FG 46.6%.
 
 **Colours:** header uses San Antonio Spurs colours (#010101 / #8d9093) for the season starting 2003; presentation only.

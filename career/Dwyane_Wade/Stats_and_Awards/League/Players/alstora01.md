@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `alstor
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/alstora01.html#contract) ([text](../../../Contracts/players/alstora01.md)).
+
 **2002-03 (recorded, TOR):** 47 G, 4 GS, 20.9 MPG, 7.8 PPG, 2.3 RPG, 4.1 APG, 0.8 SPG, 0.3 BPG, 1.8 TOV, FG 41.5%.
 
 **Colours:** header uses Toronto Raptors colours (#753bbd / #ba0c2f) for the season starting 2003; presentation only.

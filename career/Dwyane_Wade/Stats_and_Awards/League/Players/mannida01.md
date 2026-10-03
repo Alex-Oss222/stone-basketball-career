@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mannid
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mannida01.html#contract) ([text](../../../Contracts/players/mannida01.md)).
+
 **2002-03 (recorded, DET):** 13 G, 0 GS, 6.8 MPG, 2.6 PPG, 1.4 RPG, 0.5 APG, 0.7 SPG, 0.2 BPG, 0.5 TOV, FG 40.6%.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

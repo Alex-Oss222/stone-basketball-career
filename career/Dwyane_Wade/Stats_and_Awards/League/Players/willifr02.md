@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willif
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $894,960) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/willifr02.html#contract) ([text](../../../Contracts/players/willifr02.md)).
+
 **2002-03 (recorded, NYK):** 21 G, 0 GS, 8.0 MPG, 1.3 PPG, 0.9 RPG, 1.6 APG, 0.3 SPG, 0.1 BPG, 0.8 TOV, FG 27.3%.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

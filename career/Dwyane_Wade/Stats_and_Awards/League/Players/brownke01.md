@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `brownk
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,757,640) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/brownke01.html#contract) ([text](../../../Contracts/players/brownke01.md)).
+
 **2002-03 (recorded, BOS):** 51 G, 5 GS, 13.1 MPG, 2.8 PPG, 2.7 RPG, 0.4 APG, 0.7 SPG, 0.3 BPG, 0.5 TOV, FG 35.7%.
 
 **Colours:** header uses Boston Celtics colours (#007a33 / #ffffff) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `haywob
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,125,360) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/haywobr01.html#contract) ([text](../../../Contracts/players/haywobr01.md)).
+
 **2002-03 (recorded, WAS):** 81 G, 69 GS, 23.8 MPG, 6.2 PPG, 5.0 RPG, 0.4 APG, 0.4 SPG, 1.5 BPG, 0.8 TOV, FG 51.0%.
 
 **Colours:** header uses Washington Wizards colours (#236192 / #8f654d) for the season starting 2003; presentation only.

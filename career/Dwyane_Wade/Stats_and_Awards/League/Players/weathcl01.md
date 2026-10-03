@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `weathc
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $5,445,600) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/weathcl01.html#contract) ([text](../../../Contracts/players/weathcl01.md)).
+
 **2002-03 (recorded, NYK):** 79 G, 19 GS, 25.6 MPG, 6.6 PPG, 7.6 RPG, 0.9 APG, 0.9 SPG, 0.5 BPG, 0.8 TOV, FG 44.9%.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

@@ -12,6 +12,12 @@
 
 **Contract/control:** $4.1M 2003-04 player option with June 30 notification deadline; outcome is not yet known to the simulation. [Finance record](../../Finances/cap_sheet.md).
 
+<!-- contract-navigation:start -->
+[Current contract](../../../../Contracts/players/cartean01.html#contract) · [Contract history](../../../../Contracts/players/cartean01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
+
+Contract pages follow the current career date; this personnel assessment retains its stated date.
+<!-- contract-navigation:end -->
+
 ## Scouting report
 
 **Role:** 2002-03 PG3 is the carried 2002-03 baseline; Miami has not finalized the 2003-04 role.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `nowitd
 
 **Contract/control:** Under contract; through 2007-08 (2003-04 scheduled $11,326,219) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/nowitdi01.html#contract) ([text](../../../Contracts/players/nowitdi01.md)).
+
 **2002-03 (recorded, DAL):** 80 G, 80 GS, 39.0 MPG, 25.1 PPG, 9.9 RPG, 3.0 APG, 1.4 SPG, 1.0 BPG, 1.9 TOV, FG 46.3%.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

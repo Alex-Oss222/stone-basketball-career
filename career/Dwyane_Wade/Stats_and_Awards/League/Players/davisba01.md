@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `davisb
 
 **Contract/control:** Under contract; through 2008-09 (2003-04 scheduled $10,960,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/davisba01.html#contract) ([text](../../../Contracts/players/davisba01.md)).
+
 **2002-03 (recorded, NOH):** 50 G, 47 GS, 37.8 MPG, 17.1 PPG, 3.7 RPG, 6.4 APG, 1.8 SPG, 0.4 BPG, 2.8 TOV, FG 41.6%.
 
 **Colours:** header uses New Orleans Hornets colours (#00778b / #280071) for the season starting 2003; presentation only.

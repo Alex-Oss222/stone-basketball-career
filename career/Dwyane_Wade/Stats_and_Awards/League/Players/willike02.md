@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willik
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/willike02.html#contract) ([text](../../../Contracts/players/willike02.md)).
+
 **2002-03 (recorded, SAS):** 71 G, 6 GS, 11.8 MPG, 4.2 PPG, 3.2 RPG, 0.3 APG, 0.3 SPG, 0.3 BPG, 0.8 TOV, FG 47.9%.
 
 **Colours:** header uses San Antonio Spurs colours (#010101 / #8d9093) for the season starting 2003; presentation only.

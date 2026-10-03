@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `archir
 
 **Contract/control:** 2003-04 team option pending; through 2003-04 (2003-04 scheduled $563,679) (league contract inventory status `team_option_pending`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/archiro01.html#contract) ([text](../../../Contracts/players/archiro01.md)).
+
 **2002-03 (recorded, MEM):** 12 G, 0 GS, 6.0 MPG, 1.6 PPG, 1.4 RPG, 0.2 APG, 0.0 SPG, 0.2 BPG, 0.6 TOV, FG 30.0%.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

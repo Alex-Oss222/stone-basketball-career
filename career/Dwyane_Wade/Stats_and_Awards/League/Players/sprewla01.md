@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `sprewl
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $13,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/sprewla01.html#contract) ([text](../../../Contracts/players/sprewla01.md)).
+
 **2002-03 (recorded, NYK):** 74 G, 73 GS, 38.6 MPG, 16.4 PPG, 3.9 RPG, 4.5 APG, 1.4 SPG, 0.3 BPG, 2.3 TOV, FG 40.3%.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

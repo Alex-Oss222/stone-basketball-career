@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hinrik
 
 **Contract/control:** Unsigned No. 7 first-round draft rights held by Chicago Bulls; no contract has been agreed. Draft cap hold $1,821,600.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/hinriki01.html#contract) ([text](../../../Contracts/players/hinriki01.md)).
+
 **2003 draft entry:** No. 7 overall, rights held by Chicago Bulls (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

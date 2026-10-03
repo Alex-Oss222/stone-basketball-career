@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hasset
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $638,679) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/hassetr01.html#contract) ([text](../../../Contracts/players/hassetr01.md)).
+
 **2002-03 (recorded, CHI):** 82 G, 53 GS, 24.4 MPG, 4.2 PPG, 3.1 RPG, 1.8 APG, 0.5 SPG, 0.7 BPG, 1.0 TOV, FG 36.7%.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

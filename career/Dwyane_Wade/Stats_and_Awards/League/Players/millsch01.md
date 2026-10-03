@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `millsc
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $6,600,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/millsch01.html#contract) ([text](../../../Contracts/players/millsch01.md)).
+
 **2002-03 (recorded, GSW):** 21 G, 0 GS, 12.5 MPG, 4.8 PPG, 2.4 RPG, 1.0 APG, 0.3 SPG, 0.1 BPG, 0.5 TOV, FG 36.8%.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

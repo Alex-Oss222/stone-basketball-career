@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `wilcoc
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $2,066,760) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/wilcoch01.html#contract) ([text](../../../Contracts/players/wilcoch01.md)).
+
 **2002-03 (recorded, LAC):** 46 G, 3 GS, 10.4 MPG, 3.7 PPG, 2.3 RPG, 0.5 APG, 0.2 SPG, 0.3 BPG, 0.6 TOV, FG 52.1%.
 
 **Colours:** header uses Los Angeles Clippers colours (#d50032 / #003da5) for the season starting 2003; presentation only.

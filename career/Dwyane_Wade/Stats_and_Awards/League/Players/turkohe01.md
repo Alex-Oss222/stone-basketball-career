@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `turkoh
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $1,995,611) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/turkohe01.html#contract) ([text](../../../Contracts/players/turkohe01.md)).
+
 **2002-03 (recorded, SAC):** 67 G, 11 GS, 17.5 MPG, 6.7 PPG, 2.8 RPG, 1.3 APG, 0.4 SPG, 0.2 BPG, 0.7 TOV, FG 42.2%.
 
 **Colours:** header uses Sacramento Kings colours (#753bbd / #010101) for the season starting 2003; presentation only.

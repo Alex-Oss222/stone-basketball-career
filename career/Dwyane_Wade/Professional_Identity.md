@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career honors through 2003-06-26](assets/stat_reports/personal_2003-06-26.svg)
+![Player personal information and earned career awards through 2003-06-26](assets/stat_reports/personal_2003-06-26.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -33,6 +33,6 @@ Identity as of 2003-06-26; status snapshot dated 2003-06-26. User-established al
 
 [Established full player profile](Dwyane_Wade_Player_Profile.md)
 
-### Earned career honors
+### Earned career awards
 
-No earned professional honors recorded by this page's identity cutoff.
+No earned professional awards recorded by this page's identity cutoff.

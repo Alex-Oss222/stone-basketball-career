@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `moisoj
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/moisoje01.html#contract) ([text](../../../Contracts/players/moisoje01.md)).
+
 **2002-03 (recorded, NOH):** 51 G, 1 GS, 12.6 MPG, 4.0 PPG, 3.5 RPG, 0.4 APG, 0.4 SPG, 0.9 BPG, 0.9 TOV, FG 52.0%.
 
 **Colours:** header uses New Orleans Hornets colours (#00778b / #280071) for the season starting 2003; presentation only.

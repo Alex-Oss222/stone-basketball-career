@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `pargoj
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $563,679) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/pargoja01.html#contract) ([text](../../../Contracts/players/pargoja01.md)).
+
 **2002-03 (recorded, LAL):** 34 G, 0 GS, 10.1 MPG, 2.5 PPG, 1.1 RPG, 1.1 APG, 0.4 SPG, 0.1 BPG, 0.7 TOV, FG 39.8%.
 
 **Colours:** header uses Los Angeles Lakers colours (#702f8a / #ffc72c) for the season starting 2003; presentation only.

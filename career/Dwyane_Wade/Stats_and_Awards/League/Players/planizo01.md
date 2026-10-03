@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `planiz
 
 **Contract/control:** Unsigned No. 22 first-round draft rights held by New Jersey Nets; no contract has been agreed. Draft cap hold $816,900.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/planizo01.html#contract) ([text](../../../Contracts/players/planizo01.md)).
+
 **2003 draft entry:** No. 22 overall, rights held by New Jersey Nets (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses New Jersey Nets colours (#041e42 / #ba0c2f) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `voskuj
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/voskuja01.html#contract) ([text](../../../Contracts/players/voskuja01.md)).
+
 **2002-03 (recorded, PHO):** 65 G, 1 GS, 14.6 MPG, 3.8 PPG, 3.5 RPG, 0.6 APG, 0.3 SPG, 0.4 BPG, 0.7 TOV, FG 56.4%.
 
 **Colours:** header uses Phoenix Suns colours (#582c83 / #cb6015) for the season starting 2003; presentation only.

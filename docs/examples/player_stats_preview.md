@@ -4,9 +4,9 @@
 
 These examples use the same calculations and presentation as the career reports. Start with the season and follow its month, week and game links.
 
-[Open interactive Shooting and Awards cards](player_cards_preview.html) · [Shooting page](sample_shooting.md) · [Annual Awards page](sample_awards.md)
+[Open interactive Shooting, Contract and Awards cards](player_cards_preview.html) · [Shooting page](sample_shooting.md) · [Contract page](sample_contract.md) · [Annual Awards page](sample_awards.md)
 
-The two image banners are ordinary Markdown links and work in repository views. Open the HTML preview in a browser for period selectors and shot inspection. Synthetic locations illustrate the layout; they are not real tracking.
+The three image banners are ordinary Markdown links and work in repository views. Open the HTML preview in a browser for period selectors, shot inspection and full contract-history drilldown. Synthetic locations illustrate the layout; they are not real tracking. The Contract tab uses a separate fictional 25-year-old veteran, with an explicit identity and provenance notice; it is not the 19-year-old six-game sample's history.
 
 | Level | Preview | What changes at this level |
 | --- | --- | --- |
@@ -49,9 +49,9 @@ Six illustrative appearances, plus one recorded DNP, through November 12. All aw
 
 ### Per game
 
-[![Shooting: open the shot-chart page](assets/shooting_link.svg)](sample_shooting.md#season) [![Awards: open the annual-awards page](assets/awards_link.svg)](sample_awards.md)
+[![Shooting: open the shot-chart page](assets/shooting_link.svg)](sample_shooting.md#season) [![Contract: open current terms and contract history](assets/contract_link.svg)](sample_contract.md) [![Awards: open the annual-awards page](assets/awards_link.svg)](sample_awards.md)
 
-[Interactive Shooting](player_cards_preview.html?period=season#shooting) · [Interactive Awards](player_cards_preview.html#awards) · [Shooting text version](sample_shooting.md) · [Awards text version](sample_awards.md)
+[Interactive Shooting](player_cards_preview.html?period=season#shooting) · [Interactive Contract](player_cards_preview.html#contract) · [Interactive Awards](player_cards_preview.html#awards) · [Shooting text version](sample_shooting.md) · [Contract text version](sample_contract.md) · [Awards text version](sample_awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

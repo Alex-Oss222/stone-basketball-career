@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `crosha
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $7,610,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/croshau01.html#contract) ([text](../../../Contracts/players/croshau01.md)).
+
 **2002-03 (recorded, IND):** 49 G, 0 GS, 12.9 MPG, 5.1 PPG, 3.2 RPG, 1.1 APG, 0.1 SPG, 0.3 BPG, 0.6 TOV, FG 41.1%.
 
 **Colours:** header uses Indiana Pacers colours (#041e42 / #ffcd00) for the season starting 2003; presentation only.

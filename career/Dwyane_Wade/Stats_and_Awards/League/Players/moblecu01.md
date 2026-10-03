@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `moblec
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $5,394,125) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/moblecu01.html#contract) ([text](../../../Contracts/players/moblecu01.md)).
+
 **2002-03 (recorded, HOU):** 73 G, 73 GS, 41.7 MPG, 17.5 PPG, 4.2 RPG, 2.8 APG, 1.3 SPG, 0.5 BPG, 2.3 TOV, FG 43.4%.
 
 **Colours:** header uses Houston Rockets colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

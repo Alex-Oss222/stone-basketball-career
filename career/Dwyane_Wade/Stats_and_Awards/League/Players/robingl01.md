@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `robing
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $10,730,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/robingl01.html#contract) ([text](../../../Contracts/players/robingl01.md)).
+
 **2002-03 (recorded, ATL):** 69 G, 68 GS, 37.6 MPG, 20.8 PPG, 6.6 RPG, 3.0 APG, 1.3 SPG, 0.4 BPG, 3.6 TOV, FG 43.2%.
 
 **Colours:** header uses Atlanta Hawks colours (#c8102e / #ffcd00) for the season starting 2003; presentation only.

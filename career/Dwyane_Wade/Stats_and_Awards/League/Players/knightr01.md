@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `knight
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $4,402,500) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/knightr01.html#contract) ([text](../../../Contracts/players/knightr01.md)).
+
 **2002-03 (recorded, NYK):** 32 G, 0 GS, 9.0 MPG, 1.9 PPG, 1.9 RPG, 0.4 APG, 0.2 SPG, 0.3 BPG, 0.3 TOV, FG 38.5%.
 
 **Colours:** header uses New York Knicks colours (#0072ce / #fe5000) for the season starting 2003; presentation only.

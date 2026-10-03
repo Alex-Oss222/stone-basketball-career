@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `malonk
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/malonka01.html#contract) ([text](../../../Contracts/players/malonka01.md)).
+
 **2002-03 (recorded, UTA):** 81 G, 81 GS, 36.2 MPG, 20.6 PPG, 7.8 RPG, 4.7 APG, 1.7 SPG, 0.4 BPG, 2.6 TOV, FG 46.2%.
 
 **Colours:** header uses Utah Jazz colours (#753bbd / #00a9e0) for the season starting 2003; presentation only.

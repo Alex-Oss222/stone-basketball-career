@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `poseyj
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/poseyja01.html#contract) ([text](../../../Contracts/players/poseyja01.md)).
+
 **2002-03 (recorded, DEN/HOU):** 83 G, 71 GS, 30.3 MPG, 10.8 PPG, 5.1 RPG, 2.2 APG, 1.3 SPG, 0.2 BPG, 1.7 TOV, FG 41.1%.
 
 **Colours:** header uses Houston Rockets colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `terryj
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/terryja01.html#contract) ([text](../../../Contracts/players/terryja01.md)).
+
 **2002-03 (recorded, ATL):** 81 G, 81 GS, 38.0 MPG, 17.2 PPG, 3.4 RPG, 7.4 APG, 1.6 SPG, 0.2 BPG, 3.1 TOV, FG 42.8%.
 
 **Colours:** header uses Atlanta Hawks colours (#c8102e / #ffcd00) for the season starting 2003; presentation only.

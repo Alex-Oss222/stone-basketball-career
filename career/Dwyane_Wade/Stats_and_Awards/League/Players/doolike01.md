@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `doolik
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $2,256,444) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/doolike01.html#contract) ([text](../../../Contracts/players/doolike01.md)).
+
 **2002-03 (recorded, LAC):** 55 G, 1 GS, 17.6 MPG, 6.4 PPG, 1.3 RPG, 1.6 APG, 0.4 SPG, 0.1 BPG, 1.1 TOV, FG 38.9%.
 
 **Colours:** header uses Los Angeles Clippers colours (#d50032 / #003da5) for the season starting 2003; presentation only.

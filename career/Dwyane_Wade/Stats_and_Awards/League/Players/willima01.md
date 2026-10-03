@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willim
 
 **Contract/control:** Unsigned No. 47 second-round draft rights held by Utah Jazz; no contract has been agreed. No individual draft cap hold.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/willima01.html#contract) ([text](../../../Contracts/players/willima01.md)).
+
 **2003 draft entry:** No. 47 overall, rights held by Utah Jazz (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Utah Jazz colours (#753bbd / #00a9e0) for the season starting 2003; presentation only.

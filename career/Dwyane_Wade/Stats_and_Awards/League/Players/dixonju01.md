@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `dixonj
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,260,360) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/dixonju01.html#contract) ([text](../../../Contracts/players/dixonju01.md)).
+
 **2002-03 (recorded, WAS):** 42 G, 3 GS, 15.4 MPG, 6.4 PPG, 1.7 RPG, 1.0 APG, 0.6 SPG, 0.1 BPG, 1.0 TOV, FG 38.4%.
 
 **Colours:** header uses Washington Wizards colours (#236192 / #8f654d) for the season starting 2003; presentation only.

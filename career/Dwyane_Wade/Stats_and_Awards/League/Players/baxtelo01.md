@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `baxtel
 
 **Contract/control:** Minimum-salary contract (2003-04 status unverified); through 2003-04 (2003-04 scheduled $636,679) (league contract inventory status `minimum_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/baxtelo01.html#contract) ([text](../../../Contracts/players/baxtelo01.md)).
+
 **2002-03 (recorded, CHI):** 55 G, 0 GS, 12.4 MPG, 4.8 PPG, 3.0 RPG, 0.3 APG, 0.2 SPG, 0.4 BPG, 0.8 TOV, FG 46.6%.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

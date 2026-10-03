@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `casses
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $5,062,500) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/cassesa01.html#contract) ([text](../../../Contracts/players/cassesa01.md)).
+
 **2002-03 (recorded, MIL):** 78 G, 77 GS, 34.6 MPG, 19.7 PPG, 4.4 RPG, 5.8 APG, 1.1 SPG, 0.2 BPG, 2.3 TOV, FG 47.0%.
 
 **Colours:** header uses Milwaukee Bucks colours (#702f8a / #2c5234) for the season starting 2003; presentation only.

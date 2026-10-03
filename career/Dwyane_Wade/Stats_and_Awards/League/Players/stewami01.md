@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `stewam
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $4,480,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/stewami01.html#contract) ([text](../../../Contracts/players/stewami01.md)).
+
 **2002-03 (recorded, CLE):** 47 G, 0 GS, 5.3 MPG, 0.8 PPG, 1.2 RPG, 0.1 APG, 0.0 SPG, 0.3 BPG, 0.2 TOV, FG 37.8%.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

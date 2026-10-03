@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `dampie
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $7,842,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/dampier01.html#contract) ([text](../../../Contracts/players/dampier01.md)).
+
 **2002-03 (recorded, GSW):** 82 G, 82 GS, 24.1 MPG, 8.2 PPG, 6.6 RPG, 0.7 APG, 0.3 SPG, 1.9 BPG, 1.4 TOV, FG 49.6%.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

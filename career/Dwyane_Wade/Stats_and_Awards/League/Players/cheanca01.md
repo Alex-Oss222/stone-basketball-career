@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `cheanc
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/cheanca01.html#contract) ([text](../../../Contracts/players/cheanca01.md)).
+
 **2002-03 (recorded, UTA):** 81 G, 74 GS, 29.0 MPG, 8.6 PPG, 3.5 RPG, 2.0 APG, 0.8 SPG, 0.2 BPG, 1.3 TOV, FG 49.9%.
 
 **Colours:** header uses Utah Jazz colours (#753bbd / #00a9e0) for the season starting 2003; presentation only.

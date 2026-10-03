@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `gainer
 
 **Contract/control:** Unsigned No. 15 first-round draft rights held by Orlando Magic; no contract has been agreed. Draft cap hold $1,127,600.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/gainere01.html#contract) ([text](../../../Contracts/players/gainere01.md)).
+
 **2003 draft entry:** No. 15 overall, rights held by Orlando Magic (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

@@ -490,6 +490,8 @@ def markdown_card(ctx, data):
     if data["measurements"]:
         lines.append(f'**Measurements (career profile, dated {ctx.identity["physical_profile_as_of"]}):** {data["measurements"]} · **Prior program:** {data["prior_program"]}\n')
     lines.append(f'**Contract/control:** {data["contract"]}\n')
+    lines.append(f'**Contract pages:** [current contract and history](../../../Contracts/players/{pid}.html#contract) '
+                 f'([text](../../../Contracts/players/{pid}.md)).\n')
     if data["wade"]:
         lines.append(f'**NBA entry:** {data["entry"]}. This is the simulation\'s alternate-history player; the historical Wade\'s statistics and biography are never used.\n')
     elif data["rights"]:

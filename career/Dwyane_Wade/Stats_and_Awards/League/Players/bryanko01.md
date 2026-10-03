@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bryank
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $13,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/bryanko01.html#contract) ([text](../../../Contracts/players/bryanko01.md)).
+
 **2002-03 (recorded, LAL):** 82 G, 82 GS, 41.5 MPG, 30.0 PPG, 6.9 RPG, 5.9 APG, 2.2 SPG, 0.8 BPG, 3.5 TOV, FG 45.1%.
 
 **Colours:** header uses Los Angeles Lakers colours (#702f8a / #ffc72c) for the season starting 2003; presentation only.

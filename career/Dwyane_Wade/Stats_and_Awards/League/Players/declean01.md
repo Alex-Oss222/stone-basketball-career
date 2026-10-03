@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `declea
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $2,500,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/declean01.html#contract) ([text](../../../Contracts/players/declean01.md)).
+
 **2002-03 (recorded, ORL):** 77 G, 21 GS, 17.2 MPG, 4.7 PPG, 4.4 RPG, 0.7 APG, 0.5 SPG, 0.5 BPG, 1.1 TOV, FG 53.4%.
 
 **Colours:** header uses Orlando Magic colours (#0057b7 / #010101) for the season starting 2003; presentation only.

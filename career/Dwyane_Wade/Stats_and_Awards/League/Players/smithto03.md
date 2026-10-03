@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `smitht
 
 **Contract/control:** Unsigned No. 53 second-round draft rights held by Chicago Bulls; no contract has been agreed. No individual draft cap hold.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/smithto03.html#contract) ([text](../../../Contracts/players/smithto03.md)).
+
 **2003 draft entry:** No. 53 overall, rights held by Chicago Bulls (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

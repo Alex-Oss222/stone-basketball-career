@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `blakes
 
 **Contract/control:** Unsigned No. 38 second-round draft rights held by Washington Wizards; no contract has been agreed. No individual draft cap hold.
 
+**Contract pages:** [current contract and history](../../../Contracts/players/blakest01.html#contract) ([text](../../../Contracts/players/blakest01.md)).
+
 **2003 draft entry:** No. 38 overall, rights held by Washington Wizards (draft of June 26, 2003). No NBA statistics exist for this player on the card date.
 
 **Colours:** header uses Washington Wizards colours (#236192 / #8f654d) for the season starting 2003; presentation only.

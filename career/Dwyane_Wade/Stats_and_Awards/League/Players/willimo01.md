@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willim
 
 **Contract/control:** Minimum-salary contract (2003-04 status unverified); through 2003-04 (2003-04 scheduled $1,000,000) (league contract inventory status `minimum_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/willimo01.html#contract) ([text](../../../Contracts/players/willimo01.md)).
+
 **2002-03 (recorded, PHI):** 21 G, 2 GS, 13.1 MPG, 4.4 PPG, 2.1 RPG, 1.2 APG, 0.6 SPG, 0.2 BPG, 0.8 TOV, FG 42.5%.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

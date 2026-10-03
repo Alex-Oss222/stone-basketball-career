@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `crawfj
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $2,577,937) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/crawfja01.html#contract) ([text](../../../Contracts/players/crawfja01.md)).
+
 **2002-03 (recorded, CHI):** 80 G, 31 GS, 24.9 MPG, 10.7 PPG, 2.3 RPG, 4.2 APG, 1.0 SPG, 0.3 BPG, 1.7 TOV, FG 41.3%.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

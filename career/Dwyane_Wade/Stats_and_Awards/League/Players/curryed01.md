@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `currye
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $3,080,160) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/curryed01.html#contract) ([text](../../../Contracts/players/curryed01.md)).
+
 **2002-03 (recorded, CHI):** 81 G, 48 GS, 19.4 MPG, 10.5 PPG, 4.4 RPG, 0.5 APG, 0.2 SPG, 0.8 BPG, 1.7 TOV, FG 58.5%.
 
 **Colours:** header uses Chicago Bulls colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `princt
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $971,160) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/princta01.html#contract) ([text](../../../Contracts/players/princta01.md)).
+
 **2002-03 (recorded, DET):** 42 G, 5 GS, 10.4 MPG, 3.3 PPG, 1.1 RPG, 0.6 APG, 0.2 SPG, 0.3 BPG, 0.5 TOV, FG 44.9%.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

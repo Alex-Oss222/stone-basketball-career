@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `thomak
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/thomake01.html#contract) ([text](../../../Contracts/players/thomake01.md)).
+
 **2002-03 (recorded, HOU/PHI):** 66 G, 42 GS, 30.0 MPG, 10.1 PPG, 8.0 RPG, 1.7 APG, 0.9 SPG, 0.4 BPG, 1.8 TOV, FG 46.5%.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

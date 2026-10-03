@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `norrim
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $3,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/norrimo01.html#contract) ([text](../../../Contracts/players/norrimo01.md)).
+
 **2002-03 (recorded, HOU):** 82 G, 3 GS, 16.8 MPG, 4.4 PPG, 1.9 RPG, 2.4 APG, 0.7 SPG, 0.0 BPG, 1.0 TOV, FG 40.6%.
 
 **Colours:** header uses Houston Rockets colours (#ba0c2f / #010101) for the season starting 2003; presentation only.

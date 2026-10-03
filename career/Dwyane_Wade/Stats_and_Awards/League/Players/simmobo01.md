@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `simmob
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/simmobo01.html#contract) ([text](../../../Contracts/players/simmobo01.md)).
+
 **2002-03 (recorded, WAS):** 36 G, 2 GS, 10.5 MPG, 3.3 PPG, 2.1 RPG, 0.6 APG, 0.3 SPG, 0.1 BPG, 0.2 TOV, FG 39.3%.
 
 **Colours:** header uses Washington Wizards colours (#236192 / #8f654d) for the season starting 2003; presentation only.

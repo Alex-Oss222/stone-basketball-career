@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `persow
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $7,700,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/persowe01.html#contract) ([text](../../../Contracts/players/persowe01.md)).
+
 **2002-03 (recorded, MEM):** 66 G, 44 GS, 29.4 MPG, 11.0 PPG, 2.9 RPG, 1.7 APG, 0.6 SPG, 0.3 BPG, 0.8 TOV, FG 45.6%.
 
 **Colours:** header uses Memphis Grizzlies colours (#00b2a9 / #c8102e) for the season starting 2003; presentation only.

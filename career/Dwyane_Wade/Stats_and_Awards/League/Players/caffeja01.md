@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `caffej
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $5,687,500) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/caffeja01.html#contract) ([text](../../../Contracts/players/caffeja01.md)).
+
 **2002-03 (recorded, MIL):** 51 G, 16 GS, 17.5 MPG, 5.8 PPG, 3.5 RPG, 0.7 APG, 0.4 SPG, 0.3 BPG, 1.1 TOV, FG 45.6%.
 
 **Colours:** header uses Milwaukee Bucks colours (#702f8a / #2c5234) for the season starting 2003; presentation only.

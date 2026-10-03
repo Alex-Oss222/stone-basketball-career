@@ -2,6 +2,8 @@
 
 [Templates](README.md) · [Filled previews](../../examples/player_milestones/README.md) · [Research](research.md)
 
+Use the [live career desk](../../../career/Dwyane_Wade/Milestones/README.md) during play and the [working-event and reply guide](../../live_player_milestones.md) to persist actual choices. The blank pages below provide detailed source documents; their live counterparts now read dated working records and guarded replies.
+
 ## Open the relevant page when its event exists
 
 Read the current date, professional identity, contract, availability and owning phase note. Select the page for the actual event. A possible future event belongs in the calendar, not in the pending player-decision list. An offer expiry, option date or meeting time needs a recorded source.
@@ -44,7 +46,7 @@ The user determines Wade's choices. The AI/GM determines club offers and transac
 
 These pages are reusable presentation and recording templates. The rookie negotiation log supports dated rookie offers. The [contract/free-agency workflow module](../../contract_negotiation_engine.md) supplies isolated transitions for offers and evidence, including the reserved fifth RFA matching record. Existing 2003 front-office adapters in `runtime/market.py`, `runtime/gm.py`, `runtime/negotiation.py` and `runtime/signing.py` support their documented market and transaction paths; `runtime/trades.py` and `runtime/camp.py` support their own documented workflows. A template never bypasses those paths or broadens their era/transaction coverage.
 
-The [screen gallery](../../examples/player_milestones/career_milestones_preview.html) and [detailed contract demonstration](../../examples/player_milestones/contract_negotiation_preview.html) are local previews. The [market profile](../../player_market_profile.md) adds read-only status derivation, scenario selection and an evidence-backed salary range. It does not authenticate sources, approve a contract or write to the career. Live player-dashboard action integration, unsupported legal exceptions and any training-driven ability mechanism still require their own supported implementation. Missing mechanics stay unresolved.
+The [screen gallery](../../examples/player_milestones/career_milestones_preview.html) and [detailed contract demonstration](../../examples/player_milestones/contract_negotiation_preview.html) remain local previews. The [market profile](../../player_market_profile.md) adds read-only status derivation, scenario selection and an evidence-backed salary range; it does not authenticate sources or execute a contract. The live screens now consume dated working records, rookie replies and franchise answers. Unsupported veteran execution paths, legal exceptions and a training-driven ability mechanism remain unfinished.
 
 Contract and free-agency pages share offer IDs, versions and a history. Declining an incumbent proposal does not create market eligibility. Four comparison slots contain ordinary proposals; the fifth records only the incumbent's matching outcome for the exact signed outside sheet. See the [detailed research and interaction specification](contract_negotiation_research.md).
 

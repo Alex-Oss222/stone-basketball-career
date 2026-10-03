@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `davisr
 
 **Contract/control:** Under contract; through 2007-08 (2003-04 scheduled $5,000,600) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/davisri01.html#contract) ([text](../../../Contracts/players/davisri01.md)).
+
 **2002-03 (recorded, CLE):** 79 G, 76 GS, 39.6 MPG, 20.6 PPG, 4.9 RPG, 5.5 APG, 1.6 SPG, 0.5 BPG, 3.5 TOV, FG 41.0%.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

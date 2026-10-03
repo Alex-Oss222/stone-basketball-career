@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `ilgauz
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $13,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/ilgauzy01.html#contract) ([text](../../../Contracts/players/ilgauzy01.md)).
+
 **2002-03 (recorded, CLE):** 81 G, 81 GS, 30.0 MPG, 17.2 PPG, 7.5 RPG, 1.6 APG, 0.7 SPG, 1.9 BPG, 2.6 TOV, FG 44.1%.
 
 **Colours:** header uses Cleveland Cavaliers colours (#9d2235 / #8c714c) for the season starting 2003; presentation only.

@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `jacksm
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/jacksma01.html#contract) ([text](../../../Contracts/players/jacksma01.md)).
+
 **2002-03 (recorded, UTA):** 82 G, 0 GS, 17.9 MPG, 4.7 PPG, 2.1 RPG, 4.6 APG, 0.6 SPG, 0.0 BPG, 1.9 TOV, FG 39.8%.
 
 **Colours:** header uses Utah Jazz colours (#753bbd / #00a9e0) for the season starting 2003; presentation only.

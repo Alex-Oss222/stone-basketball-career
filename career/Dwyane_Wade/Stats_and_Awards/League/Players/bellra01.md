@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `bellra
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/bellra01.html#contract) ([text](../../../Contracts/players/bellra01.md)).
+
 **2002-03 (recorded, DAL):** 75 G, 32 GS, 15.6 MPG, 3.1 PPG, 1.9 RPG, 0.8 APG, 0.7 SPG, 0.1 BPG, 0.6 TOV, FG 44.1%.
 
 **Colours:** header uses Dallas Mavericks colours (#041e42 / #0057b7) for the season starting 2003; presentation only.

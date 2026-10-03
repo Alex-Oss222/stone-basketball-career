@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mashbj
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $8,525,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mashbja01.html#contract) ([text](../../../Contracts/players/mashbja01.md)).
+
 **2002-03 (recorded, NOH):** 82 G, 81 GS, 40.5 MPG, 21.6 PPG, 6.1 RPG, 5.6 APG, 1.0 SPG, 0.2 BPG, 2.8 TOV, FG 42.2%.
 
 **Colours:** header uses New Orleans Hornets colours (#00778b / #280071) for the season starting 2003; presentation only.

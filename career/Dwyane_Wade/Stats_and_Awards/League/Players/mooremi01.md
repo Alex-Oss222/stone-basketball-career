@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `moorem
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/mooremi01.html#contract) ([text](../../../Contracts/players/mooremi01.md)).
+
 **2002-03 (recorded, BOS/ATL):** 8 G, 0 GS, 5.4 MPG, 2.2 PPG, 1.0 RPG, 0.4 APG, 0.0 SPG, 0.5 BPG, 0.2 TOV, FG 38.5%.
 
 **Colours:** header uses Atlanta Hawks colours (#c8102e / #ffcd00) for the season starting 2003; presentation only.

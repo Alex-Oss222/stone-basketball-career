@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `scalab
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/scalabr01.html#contract) ([text](../../../Contracts/players/scalabr01.md)).
+
 **2002-03 (recorded, NJN):** 59 G, 7 GS, 12.3 MPG, 3.1 PPG, 2.4 RPG, 0.8 APG, 0.3 SPG, 0.3 BPG, 0.8 TOV, FG 40.2%.
 
 **Colours:** header uses New Jersey Nets colours (#041e42 / #ba0c2f) for the season starting 2003; presentation only.

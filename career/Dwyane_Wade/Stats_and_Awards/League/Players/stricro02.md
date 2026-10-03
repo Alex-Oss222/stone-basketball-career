@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `stricr
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/stricro02.html#contract) ([text](../../../Contracts/players/stricro02.md)).
+
 **2002-03 (recorded, MIN):** 47 G, 8 GS, 20.3 MPG, 6.8 PPG, 2.0 RPG, 4.6 APG, 1.0 SPG, 0.1 BPG, 1.6 TOV, FG 43.2%.
 
 **Colours:** header uses Minnesota Timberwolves colours (#236192 / #00843d) for the season starting 2003; presentation only.

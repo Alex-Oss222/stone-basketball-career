@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `barryj
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/barryjo01.html#contract) ([text](../../../Contracts/players/barryjo01.md)).
+
 **2002-03 (recorded, DET):** 80 G, 0 GS, 18.4 MPG, 6.9 PPG, 2.2 RPG, 2.6 APG, 0.8 SPG, 0.2 BPG, 1.0 TOV, FG 45.0%.
 
 **Colours:** header uses Detroit Pistons colours (#003da5 / #d50032) for the season starting 2003; presentation only.

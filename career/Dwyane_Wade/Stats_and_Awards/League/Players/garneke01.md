@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `garnek
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $28,000,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/garneke01.html#contract) ([text](../../../Contracts/players/garneke01.md)).
+
 **2002-03 (recorded, MIN):** 82 G, 82 GS, 40.5 MPG, 23.0 PPG, 13.4 RPG, 6.0 APG, 1.4 SPG, 1.6 BPG, 2.8 TOV, FG 50.2%.
 
 **Colours:** header uses Minnesota Timberwolves colours (#236192 / #00843d) for the season starting 2003; presentation only.

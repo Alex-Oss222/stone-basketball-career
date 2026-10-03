@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `slayta
 
 **Contract/control:** Minimum-salary contract (2003-04 status unverified); through 2003-04 (2003-04 scheduled $563,679) (league contract inventory status `minimum_contract_unverified`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/slayta01.html#contract) ([text](../../../Contracts/players/slayta01.md)).
+
 **2002-03 (recorded, NJN):** 36 G, 0 GS, 7.6 MPG, 2.6 PPG, 0.9 RPG, 0.4 APG, 0.4 SPG, 0.1 BPG, 0.6 TOV, FG 37.9%.
 
 **Colours:** header uses New Jersey Nets colours (#041e42 / #ba0c2f) for the season starting 2003; presentation only.

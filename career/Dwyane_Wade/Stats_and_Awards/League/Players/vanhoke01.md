@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `vanhok
 
 **Contract/control:** Under contract; through 2007-08 (2003-04 scheduled $13,279,750) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/vanhoke01.html#contract) ([text](../../../Contracts/players/vanhoke01.md)).
+
 **2002-03 (recorded, PHI):** 74 G, 73 GS, 31.6 MPG, 15.9 PPG, 7.1 RPG, 1.3 APG, 0.9 SPG, 0.4 BPG, 2.0 TOV, FG 48.2%.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

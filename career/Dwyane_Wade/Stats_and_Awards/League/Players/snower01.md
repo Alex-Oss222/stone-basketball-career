@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `snower
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $4,500,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/snower01.html#contract) ([text](../../../Contracts/players/snower01.md)).
+
 **2002-03 (recorded, PHI):** 82 G, 82 GS, 37.9 MPG, 12.9 PPG, 3.7 RPG, 6.6 APG, 1.6 SPG, 0.1 BPG, 2.4 TOV, FG 45.2%.
 
 **Colours:** header uses Philadelphia 76ers colours (#d50032 / #896c4c) for the season starting 2003; presentation only.

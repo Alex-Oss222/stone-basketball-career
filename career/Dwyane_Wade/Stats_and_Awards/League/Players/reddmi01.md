@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `reddmi
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $3,000,000) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/reddmi01.html#contract) ([text](../../../Contracts/players/reddmi01.md)).
+
 **2002-03 (recorded, MIL):** 82 G, 14 GS, 28.2 MPG, 15.1 PPG, 4.5 RPG, 1.4 APG, 1.2 SPG, 0.2 BPG, 0.9 TOV, FG 46.9%.
 
 **Colours:** header uses Milwaukee Bucks colours (#702f8a / #2c5234) for the season starting 2003; presentation only.

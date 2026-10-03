@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `boykie
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/boykiea01.html#contract) ([text](../../../Contracts/players/boykiea01.md)).
+
 **2002-03 (recorded, GSW):** 68 G, 0 GS, 19.4 MPG, 8.8 PPG, 1.3 RPG, 3.2 APG, 0.6 SPG, 0.1 BPG, 1.1 TOV, FG 42.9%.
 
 **Colours:** header uses Golden State Warriors colours (#041e42 / #be3a34) for the season starting 2003; presentation only.

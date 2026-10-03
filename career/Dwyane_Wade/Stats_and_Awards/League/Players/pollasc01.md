@@ -18,6 +18,8 @@ The interactive card is an HTML file: GitHub shows it as source, so open `pollas
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $5,309,563) (league contract inventory status `under_contract`, as of June 26, 2003).
 
+**Contract pages:** [current contract and history](../../../Contracts/players/pollasc01.html#contract) ([text](../../../Contracts/players/pollasc01.md)).
+
 **2002-03 (recorded, SAC):** 23 G, 0 GS, 14.1 MPG, 4.5 PPG, 4.6 RPG, 0.3 APG, 0.6 SPG, 0.7 BPG, 0.7 TOV, FG 46.0%.
 
 **Colours:** header uses Sacramento Kings colours (#753bbd / #010101) for the season starting 2003; presentation only.
