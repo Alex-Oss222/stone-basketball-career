@@ -1,0 +1,13 @@
+{
+ "date": "2003-07-01",
+ "decider": "Jason Kidd (simulated player)",
+ "event_id": "2003-fa-kiddja01-offer-1",
+ "kind": "decision",
+ "options": {
+  "accept": 0.02,
+  "counter": 0.686,
+  "reject": 0.294
+ },
+ "outcome": "counter",
+ "question": "Does Jason Kidd accept Miami's offer (3 years, $31,382,036 guaranteed)?"
+}
