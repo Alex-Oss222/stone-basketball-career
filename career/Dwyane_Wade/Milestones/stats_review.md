@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2003-10-29 · Miami Heat · active
+Career date: 2003-10-31 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-8 closed game records in 2003-04 through 2003-10-29. Competitions remain separate.
+9 closed game records in 2003-04 through 2003-10-31. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
-| regular | 1 | 18.4 | 4.0 | 5.0 | 1.0 | 0.0 | Complete |
+| regular | 2 | 20.0 | 6.0 | 2.5 | 2.0 | 0.0 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A |
-| regular | 1 | 4 | 0.250 | 0 | 0 | N/A |
+| regular | 3 | 10 | 0.300 | 0 | 2 | 0.0 |
 
 ## Closed source games
 
@@ -38,6 +38,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2003-10-17 | preseason | Detroit Pistons | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_6.md) |
 | 2003-10-21 | preseason | Memphis Grizzlies | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_7.md) |
 | 2003-10-28 | regular | Philadelphia 76ers | Played | [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
+| 2003-10-29 | regular | Boston Celtics | Played | [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -91,4 +92,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/05_Preseason/Game_6.md)
 - [Closed game](../2003-04/05_Preseason/Game_7.md)
 - [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)
+- [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

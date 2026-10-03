@@ -2,9 +2,9 @@
 
 # Contract | Tyrone Hill
 
-Known through: 2003-10-29. [Open interactive contract](hillty01.html#contract) · [Contract history](hillty01.html#contract-history)
+Known through: 2003-10-31. [Open interactive contract](hillty01.html#contract) · [Contract history](hillty01.html#contract-history)
 
-Tyrone Hill: released. Evidence cutoff: 2003-10-29.
+Tyrone Hill: released. Evidence cutoff: 2003-10-31.
 
 ## Current contract
 

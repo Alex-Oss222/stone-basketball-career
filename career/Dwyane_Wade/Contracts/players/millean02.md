@@ -2,9 +2,9 @@
 
 # Contract | Andre Miller
 
-Known through: 2003-10-29. [Open interactive contract](millean02.html#contract) · [Contract history](millean02.html#contract-history)
+Known through: 2003-10-31. [Open interactive contract](millean02.html#contract) · [Contract history](millean02.html#contract-history)
 
-Andre Miller: free agent expiring. Evidence cutoff: 2003-10-29.
+Andre Miller: free agent expiring. Evidence cutoff: 2003-10-31.
 
 ## Current contract
 

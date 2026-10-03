@@ -2,7 +2,8 @@
 from pathlib import Path
 import unittest
 
-from scripts.format_league_reports import COLUMNS, format_page, read_tables
+from runtime.stat_layout import markdown_table
+from scripts.format_league_reports import COLUMNS, format_page, ratio, read_tables
 
 
 class LeagueLayoutTests(unittest.TestCase):
@@ -53,6 +54,22 @@ class LeagueLayoutTests(unittest.TestCase):
                         self.text.replace(duplicate, duplicate * 2)):
             with self.assertRaises(ValueError):
                 self.format(changed)
+
+    def test_efficiency_over_100_percent_is_preserved_without_relaxing_shooting_percentages(self):
+        values = dict.fromkeys(COLUMNS, "N/A")
+        values.update({"Player": "Example Player", "Club / rights": "TEST rights", "FG%": ".750",
+                       "eFG%": "1.250", "TS% (est.)": "1.125"})
+        table = markdown_table(COLUMNS, [[values[key] for key in COLUMNS]])
+        text = "# League\n\n## Players by position\n\n<details>\n<summary>PG · Point guards</summary>\n\n" + table + "\n</details>"
+        formatted = self.format(text)
+        _, rows = next(read_tables(formatted))
+        self.assertEqual((rows[0]["FG%"], rows[0]["eFG%"], rows[0]["TS% (est.)"]), (".750", "1.250", "1.125"))
+        self.assertEqual(formatted, self.format(formatted))
+        self.assertEqual(ratio("125%", maximum=1.5), "1.250")
+        with self.assertRaises(ValueError):
+            ratio("125", maximum=1.5)     # an unlabeled percent is still ambiguous
+        with self.assertRaises(ValueError):
+            self.format(text.replace(".750", "1.250"))   # a raw FG percentage cannot exceed one
 
 
 if __name__ == "__main__":

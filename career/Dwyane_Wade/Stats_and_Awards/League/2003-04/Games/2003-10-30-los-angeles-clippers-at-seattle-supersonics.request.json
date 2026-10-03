@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-10-30-los-angeles-clippers-at-seattle-supersonics",
+ "game_date": "2003-10-30",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Los Angeles Clippers",
+  "rotation": "real"
+ }
+}

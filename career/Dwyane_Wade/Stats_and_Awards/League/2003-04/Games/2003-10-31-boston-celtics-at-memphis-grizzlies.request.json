@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-10-31-boston-celtics-at-memphis-grizzlies",
+ "game_date": "2003-10-31",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ }
+}

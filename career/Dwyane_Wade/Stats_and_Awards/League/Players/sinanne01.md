@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `sinanne01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2003-10-29 · **Club on this date:** Portland Trail Blazers (draft rights) · **Basis:** 2003 draft rights · **League:** NBA  
+**Card date:** 2003-10-31 · **Club on this date:** Portland Trail Blazers (draft rights) · **Basis:** 2003 draft rights · **League:** NBA  
 **Position:** C (Center) · **Jersey:** Unassigned · **Born:** 1983-01-29 · **Age on card date:** 20  
 **Registry ID:** `sinanne01` · [Basketball-Reference page](https://www.basketball-reference.com/players/s/sinanne01.html)
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `sinann
 
 ## Simulated statistics
 
-As of **2003-10-29**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2003-10-31**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -118,4 +118,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2003-10-29. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2003-10-31. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

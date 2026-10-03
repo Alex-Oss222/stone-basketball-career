@@ -2,9 +2,9 @@
 
 # Contract | Dajuan Wagner
 
-Known through: 2003-10-29. [Open interactive contract](wagneda02.html#contract) · [Contract history](wagneda02.html#contract-history)
+Known through: 2003-10-31. [Open interactive contract](wagneda02.html#contract) · [Contract history](wagneda02.html#contract-history)
 
-Dajuan Wagner: under rookie contract. Evidence cutoff: 2003-10-29.
+Dajuan Wagner: under rookie contract. Evidence cutoff: 2003-10-31.
 
 ## Current contract
 

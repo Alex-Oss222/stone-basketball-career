@@ -2,9 +2,9 @@
 
 # Contract | Steve Blake
 
-Known through: 2003-10-29. [Open interactive contract](blakest01.html#contract) · [Contract history](blakest01.html#contract-history)
+Known through: 2003-10-31. [Open interactive contract](blakest01.html#contract) · [Contract history](blakest01.html#contract-history)
 
-Steve Blake: No verified contract record. Evidence cutoff: 2003-10-29.
+Steve Blake: No verified contract record. Evidence cutoff: 2003-10-31.
 
 ## Current contract
 

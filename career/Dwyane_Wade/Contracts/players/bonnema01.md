@@ -2,9 +2,9 @@
 
 # Contract | Matt Bonner
 
-Known through: 2003-10-29. [Open interactive contract](bonnema01.html#contract) · [Contract history](bonnema01.html#contract-history)
+Known through: 2003-10-31. [Open interactive contract](bonnema01.html#contract) · [Contract history](bonnema01.html#contract-history)
 
-Matt Bonner: No verified contract record. Evidence cutoff: 2003-10-29.
+Matt Bonner: No verified contract record. Evidence cutoff: 2003-10-31.
 
 ## Current contract
 

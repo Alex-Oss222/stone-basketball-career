@@ -55,14 +55,14 @@ def read_tables(text):
         yield cells[0], [dict(zip(cells[0], row)) for row in cells[2:]]
 
 
-def ratio(value):
+def ratio(value, *, maximum=1.0):
     if value == "N/A":
         return value
     number = float(value.removesuffix("%"))
     if value.endswith("%"):
         number /= 100
-    elif number > 1:
-        raise ValueError("league shooting rate needs an explicit percent sign or a 0-1 ratio")
+    elif number > maximum:
+        raise ValueError(f"league shooting rate needs an explicit percent sign or a 0-{maximum:g} ratio")
     return f"{number:.3f}".removeprefix("0")
 
 
@@ -97,7 +97,9 @@ def format_page(text, page, registry, as_of, asset, league_dir=None):
             # The club/rights cell is an existing dated label, never a new roster decision.
             values["Club / rights"] = old["Club / rights"]
             for key in ("FG%", "3P%", "2P%", "eFG%", "FT%", "TS% (est.)"):
-                values[key] = ratio(values[key])
+                # Three-point value makes eFG and true shooting exceed 100% in
+                # small samples; ordinary make/attempt percentages cannot.
+                values[key] = ratio(values[key], maximum=1.5 if key in ("eFG%", "TS% (est.)") else 1.0)
             rows.append([values[key] for key in COLUMNS])
         return f"<details>\n<summary>{pos} ·{summary}</summary>\n\n### {pos}: per game\n\n" + markdown_table(COLUMNS, rows).rstrip() + "\n\n</details>"
     text, count = re.subn(r"<details>\n<summary>(PG|SG|SF|F|PF|C) ·(.*?)</summary>(.*?)</details>", position, text, flags=re.S)
