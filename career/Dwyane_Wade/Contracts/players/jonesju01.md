@@ -2,9 +2,9 @@
 
 # Contract | Jumaine Jones
 
-Known through: 2003-10-24. [Open interactive contract](jonesju01.html#contract) · [Contract history](jonesju01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](jonesju01.html#contract) · [Contract history](jonesju01.html#contract-history)
 
-Jumaine Jones: camp contract. Evidence cutoff: 2003-10-24.
+Jumaine Jones: camp contract. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

@@ -3,7 +3,7 @@
  "owner": "ai_gm",
  "season": "2003-04",
  "opened": "2003-09-30",
- "status": "open",
+ "status": "closed",
  "purpose": "Miami's training-camp roster: the register plus invitees on non-guaranteed minimum contracts, camp injuries, and the cut.",
  "players": [
   {
@@ -168,7 +168,7 @@
    "positions": [
     "PF"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 563679,
@@ -185,7 +185,7 @@
    "positions": [
     "SG"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 638679,
@@ -236,7 +236,7 @@
    "positions": [
     "PF"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 563679,
@@ -270,7 +270,7 @@
    "positions": [
     "PF"
    ],
-   "status": "camp_contract",
+   "status": "released",
    "kind": "invite",
    "contract": {
     "salary": 1070000,
@@ -282,7 +282,28 @@
    "injured_through": null
   }
  ],
- "cuts": [],
+ "cuts": [
+  {
+   "player": "Tyrone Hill",
+   "date": "2003-10-27",
+   "score": 8.034
+  },
+  {
+   "player": "Mike Batiste",
+   "date": "2003-10-27",
+   "score": 8.212
+  },
+  {
+   "player": "Dion Glover",
+   "date": "2003-10-27",
+   "score": 9.009
+  },
+  {
+   "player": "Reggie Evans",
+   "date": "2003-10-27",
+   "score": 9.256
+  }
+ ],
  "injuries_applied": "2003-09-30",
  "staff_scores": {
   "Caron Butler": 12.1,
@@ -306,5 +327,6 @@
   "Scott Padgett": 10.121,
   "Tyrone Hill": 8.034
  },
- "evaluated": "2003-10-24"
+ "evaluated": "2003-10-24",
+ "cut_done": "2003-10-27"
 }

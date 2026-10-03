@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2003-10-24 · Miami Heat · needs evidence
+Career date: 2003-10-27 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -59,6 +59,11 @@ These are Miami's roster negotiations, not offers to Wade.
 | 2003-08-13 | Eddie House signs with Los Angeles Clippers (signing, real move); his hold and rights leave Miami's books. |
 | 2003-08-22 | Travis Best signs with Dallas Mavericks (signing, real move); his hold and rights leave Miami's books. |
 | 2003-09-29 | Sean Marks signs with San Antonio Spurs (signing, real move); his hold and rights leave Miami's books. |
+| 2003-10-23 | Vladimir Stepania signs with Portland Trail Blazers (signing, real move); his hold and rights leave Miami's books. |
+| 2003-10-27 | Tyrone Hill released at the cut to 15 (non-guaranteed camp contract; no dead money). |
+| 2003-10-27 | Mike Batiste released at the cut to 15 (non-guaranteed camp contract; no dead money). |
+| 2003-10-27 | Dion Glover released at the cut to 15 (non-guaranteed camp contract; no dead money). |
+| 2003-10-27 | Reggie Evans released at the cut to 15 (non-guaranteed camp contract; no dead money). |
 
 ## Decision authority
 

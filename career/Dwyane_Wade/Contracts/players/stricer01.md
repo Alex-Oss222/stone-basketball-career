@@ -2,9 +2,9 @@
 
 # Contract | Erick Strickland
 
-Known through: 2003-10-24. [Open interactive contract](stricer01.html#contract) · [Contract history](stricer01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](stricer01.html#contract) · [Contract history](stricer01.html#contract-history)
 
-Erick Strickland: free agent expiring. Evidence cutoff: 2003-10-24.
+Erick Strickland: free agent expiring. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

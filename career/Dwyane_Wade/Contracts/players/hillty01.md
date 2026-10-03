@@ -2,9 +2,9 @@
 
 # Contract | Tyrone Hill
 
-Known through: 2003-10-24. [Open interactive contract](hillty01.html#contract) · [Contract history](hillty01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](hillty01.html#contract) · [Contract history](hillty01.html#contract-history)
 
-Tyrone Hill: camp contract. Evidence cutoff: 2003-10-24.
+Tyrone Hill: camp contract. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

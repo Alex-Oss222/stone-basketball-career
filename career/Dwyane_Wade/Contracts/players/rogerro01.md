@@ -2,9 +2,9 @@
 
 # Contract | Rodney Rogers
 
-Known through: 2003-10-24. [Open interactive contract](rogerro01.html#contract) · [Contract history](rogerro01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](rogerro01.html#contract) · [Contract history](rogerro01.html#contract-history)
 
-Rodney Rogers: under contract unverified. Evidence cutoff: 2003-10-24.
+Rodney Rogers: under contract unverified. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

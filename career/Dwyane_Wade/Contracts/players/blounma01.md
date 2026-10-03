@@ -2,9 +2,9 @@
 
 # Contract | Mark Blount
 
-Known through: 2003-10-24. [Open interactive contract](blounma01.html#contract) · [Contract history](blounma01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](blounma01.html#contract) · [Contract history](blounma01.html#contract-history)
 
-Mark Blount: free agent expiring. Evidence cutoff: 2003-10-24.
+Mark Blount: free agent expiring. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2003-10-24",
+  "as_of": "2003-10-27",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 19,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2003-10-24-camp-decision",
+  "current_event": "2003-10-27-camp-cut",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2003-10-24"
+              "2003-10-27"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2003-10-24-camp-decision"
+              "2003-10-27-camp-cut"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2003-10-24",
+              "2003-10-27",
               "Current checkpoint",
-              "2003-10-24-camp-decision",
+              "2003-10-27-camp-cut",
               "Recorded",
               {
                 "label": "Owning event",
@@ -277,7 +277,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-24"
+          "value": "2003-10-27"
         },
         {
           "label": "Team",
@@ -543,7 +543,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-24"
+          "value": "2003-10-27"
         },
         {
           "label": "Team",
@@ -862,7 +862,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-24"
+          "value": "2003-10-27"
         },
         {
           "label": "Team",
@@ -1078,6 +1078,26 @@
             [
               "2003-09-29",
               "Sean Marks signs with San Antonio Spurs (signing, real move); his hold and rights leave Miami's books."
+            ],
+            [
+              "2003-10-23",
+              "Vladimir Stepania signs with Portland Trail Blazers (signing, real move); his hold and rights leave Miami's books."
+            ],
+            [
+              "2003-10-27",
+              "Tyrone Hill released at the cut to 15 (non-guaranteed camp contract; no dead money)."
+            ],
+            [
+              "2003-10-27",
+              "Mike Batiste released at the cut to 15 (non-guaranteed camp contract; no dead money)."
+            ],
+            [
+              "2003-10-27",
+              "Dion Glover released at the cut to 15 (non-guaranteed camp contract; no dead money)."
+            ],
+            [
+              "2003-10-27",
+              "Reggie Evans released at the cut to 15 (non-guaranteed camp contract; no dead money)."
             ]
           ]
         },
@@ -1226,7 +1246,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-24"
+          "value": "2003-10-27"
         },
         {
           "label": "Team",
@@ -1462,7 +1482,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-24"
+          "value": "2003-10-27"
         },
         {
           "label": "Team",
@@ -1694,7 +1714,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-24"
+          "value": "2003-10-27"
         },
         {
           "label": "Team",
@@ -1935,7 +1955,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-24"
+          "value": "2003-10-27"
         },
         {
           "label": "Team",
@@ -2002,7 +2022,7 @@
             ],
             [
               "SG",
-              "Eddie Jones, Dwyane Wade, Stephen Jackson, Dion Glover, Rasual Butler",
+              "Eddie Jones, Dwyane Wade, Stephen Jackson, Rasual Butler",
               "Staff ordering; not a future minutes promise"
             ],
             [
@@ -2012,7 +2032,7 @@
             ],
             [
               "PF",
-              "Scott Padgett, Reggie Evans, Mike Batiste, Tyrone Hill, LaPhonso Ellis, Jerome Beasley",
+              "Scott Padgett, LaPhonso Ellis, Jerome Beasley",
               "Staff ordering; not a future minutes promise"
             ],
             [
@@ -2021,7 +2041,7 @@
               "Staff ordering; not a future minutes promise"
             ]
           ],
-          "notice": "Snapshot: 2003-10-24. Draft rights and unassigned arrivals are not assigned minutes."
+          "notice": "Snapshot: 2003-10-27. Draft rights and unassigned arrivals are not assigned minutes."
         },
         {
           "title": "Role and promise review",
@@ -2080,6 +2100,10 @@
             [
               "2003-10-24",
               "Wade's reply to the camp review: Work within the assignment: my focus is training camp and strength and conditioning. I'd like reps in the strength and conditioning program and the staff's conditioning standard; review after the preseason."
+            ],
+            [
+              "2003-10-27",
+              "Cut to 15: Tyrone Hill, Mike Batiste, Dion Glover, Reggie Evans. Promise check: every promised role is in the rotation. Record: `promise_log.json`."
             ]
           ]
         },
@@ -2212,7 +2236,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-24"
+          "value": "2003-10-27"
         },
         {
           "label": "Team",
@@ -2229,7 +2253,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "7 closed game records in 2003-04 through 2003-10-24. Competitions remain separate.",
+      "summary": "7 closed game records in 2003-04 through 2003-10-27. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2539,7 +2563,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-10-24"
+          "value": "2003-10-27"
         },
         {
           "label": "Team",

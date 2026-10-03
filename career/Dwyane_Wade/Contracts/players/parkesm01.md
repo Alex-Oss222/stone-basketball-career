@@ -2,9 +2,9 @@
 
 # Contract | Smush Parker
 
-Known through: 2003-10-24. [Open interactive contract](parkesm01.html#contract) · [Contract history](parkesm01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](parkesm01.html#contract) · [Contract history](parkesm01.html#contract-history)
 
-Smush Parker: free agent expiring. Evidence cutoff: 2003-10-24.
+Smush Parker: free agent expiring. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

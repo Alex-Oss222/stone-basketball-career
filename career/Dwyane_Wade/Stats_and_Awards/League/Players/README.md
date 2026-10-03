@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-10-24**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-10-27**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -120,7 +120,7 @@ Card date: **2003-10-24**. 407 registry players, one Markdown card and one inter
 | [Darvin Ham](hamda01.md) | Detroit Pistons | 30 | sourced | [open](hamda01.html) |
 | [David Wesley](wesleda01.md) | New Orleans Hornets | 32 | sourced | [open](wesleda01.html) |
 | [DeShawn Stevenson](stevede01.md) | Utah Jazz | 22 | sourced | [open](stevede01.html) |
-| [Dion Glover](glovedi01.md) | Miami Heat | 25 | silhouette | [open](glovedi01.html) |
+| [Dion Glover](glovedi01.md) | Free agent | 25 | silhouette | [open](glovedi01.html) |
 | [Doug Christie](chrisdo01.md) | Sacramento Kings | 33 | sourced | [open](chrisdo01.html) |
 | [Dwyane Wade](wadedw01.md) | Miami Heat (draft rights) | 19 | sourced | [open](wadedw01.html) |
 | [Eddie House](houseed01.md) | Los Angeles Clippers | 25 | sourced | [open](houseed01.html) |
@@ -328,15 +328,15 @@ Card date: **2003-10-24**. 407 registry players, one Markdown card and one inter
 | [Mehmet Okur](okurme01.md) | Detroit Pistons | 24 | sourced | [open](okurme01.html) |
 | [Michael Bradley](bradlmi01.md) | Toronto Raptors | 24 | silhouette | [open](bradlmi01.html) |
 | [Michael Stewart](stewami01.md) | Cleveland Cavaliers | 28 | silhouette | [open](stewami01.html) |
-| [Michael Sweetney](sweetmi01.md) | New York Knicks (draft rights) | 20 | silhouette | [open](sweetmi01.html) |
-| [Mike Batiste](batismi01.md) | Miami Heat | 25 | sourced | [open](batismi01.html) |
-| [Nick Collison](collini01.md) | Seattle SuperSonics (draft rights) | 22 | sourced | [open](collini01.html) |
+| [Michael Sweetney](sweetmi01.md) | New York Knicks (draft rights) | 21 | silhouette | [open](sweetmi01.html) |
+| [Mike Batiste](batismi01.md) | Free agent | 25 | sourced | [open](batismi01.html) |
+| [Nick Collison](collini01.md) | Seattle SuperSonics (draft rights) | 23 | sourced | [open](collini01.html) |
 | [P.J. Brown](brownpj01.md) | New Orleans Hornets | 34 | sourced | [open](brownpj01.html) |
 | [Pat Garrity](garripa01.md) | Orlando Magic | 27 | sourced | [open](garripa01.html) |
 | [Pau Gasol](gasolpa01.md) | Memphis Grizzlies | 23 | sourced | [open](gasolpa01.html) |
 | [Qyntel Woods](woodsqy01.md) | Portland Trail Blazers | 22 | sourced | [open](woodsqy01.html) |
 | [Rasheed Wallace](wallara01.md) | Portland Trail Blazers | 29 | sourced | [open](wallara01.html) |
-| [Reggie Evans](evansre01.md) | Miami Heat | 23 | sourced | [open](evansre01.html) |
+| [Reggie Evans](evansre01.md) | Free agent | 23 | sourced | [open](evansre01.html) |
 | [Rick Rickert](rickeri01.md) | Minnesota Timberwolves (draft rights) | 20 | sourced | [open](rickeri01.html) |
 | [Robert Archibald](archiro01.md) | Phoenix Suns | 23 | sourced | [open](archiro01.html) |
 | [Robert Horry](horryro01.md) | San Antonio Spurs | 33 | sourced | [open](horryro01.html) |
@@ -352,7 +352,7 @@ Card date: **2003-10-24**. 407 registry players, one Markdown card and one inter
 | [Tommy Smith](smithto03.md) | Chicago Bulls (draft rights) | 22 | silhouette | [open](smithto03.html) |
 | [Toni Kukoc](kukocto01.md) | Milwaukee Bucks | 35 | sourced | [open](kukocto01.html) |
 | [Troy Murphy](murphtr01.md) | Golden State Warriors | 23 | sourced | [open](murphtr01.html) |
-| [Tyrone Hill](hillty01.md) | Miami Heat | 35 | silhouette | [open](hillty01.html) |
+| [Tyrone Hill](hillty01.md) | Free agent | 35 | silhouette | [open](hillty01.html) |
 | [Vladimir Radmanovic](radmavl01.md) | Seattle SuperSonics | 22 | sourced | [open](radmavl01.html) |
 | [Zach Randolph](randoza01.md) | Portland Trail Blazers | 22 | sourced | [open](randoza01.html) |
 | [Zaza Pachulia](pachuza01.md) | Orlando Magic (draft rights) | 19 | sourced | [open](pachuza01.html) |
@@ -429,7 +429,7 @@ Card date: **2003-10-24**. 407 registry players, one Markdown card and one inter
 | [Nedzad Sinanovic](sinanne01.md) | Portland Trail Blazers (draft rights) | 20 | sourced | [open](sinanne01.html) |
 | [Nene](hilarne01.md) | Denver Nuggets | 21 | sourced | [open](hilarne01.html) |
 | [Pat Burke](burkepa01.md) | Orlando Magic | 29 | sourced | [open](burkepa01.html) |
-| [Predrag Drobnjak](drobnpr01.md) | Los Angeles Clippers | 27 | silhouette | [open](drobnpr01.html) |
+| [Predrag Drobnjak](drobnpr01.md) | Los Angeles Clippers | 28 | silhouette | [open](drobnpr01.html) |
 | [Raef LaFrentz](lafrera01.md) | Boston Celtics | 27 | sourced | [open](lafrera01.html) |
 | [Rasho Nesterovic](nestera01.md) | San Antonio Spurs | 27 | sourced | [open](nestera01.html) |
 | [Remon van de Hare](vandera01.md) | Toronto Raptors (draft rights) | 21 | silhouette | [open](vandera01.html) |

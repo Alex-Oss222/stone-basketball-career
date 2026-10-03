@@ -1,7 +1,7 @@
 {
   "schema_version": 5,
   "owner": "ai_gm",
-  "as_of": "2003-10-24",
+  "as_of": "2003-10-27",
   "season": "2003-04",
   "team": "Miami Heat",
   "cap_status": "free_agency",
@@ -13,7 +13,7 @@
   "known_counted_salary_before_free_agent_holds": 32066078,
   "reference_difference_to_historical_actual_cap_before_free_agent_holds": 11773922,
   "cap_space": null,
-  "cap_room": -6024233,
+  "cap_room": -1433196,
   "cap_room_reason": [
     "Cap published July 15, 2003.",
     "Committed salary, unrenounced holds and the roster charge for empty spots are deducted (docs/front_office_design.md 5.1)."
@@ -140,7 +140,7 @@
   "live_official_tax_threshold": null,
   "tax_payroll": null,
   "luxury_tax_bill": null,
-  "free_agent_holds": 2421166,
+  "free_agent_holds": 666166,
   "other_cap_items": [
     {
       "item": "incomplete_roster_charges",
@@ -220,7 +220,7 @@
   "subtotal_precision": "includes_rounded_report",
   "reported_rounded_salary_count": 1,
   "planning_cap": 43840000,
-  "known_counted_salary": 47443067,
+  "known_counted_salary": 44607030,
   "roster_charge": 0,
-  "projected_cap_room": -6024233
+  "projected_cap_room": -1433196
 }

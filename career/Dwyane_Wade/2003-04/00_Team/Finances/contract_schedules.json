@@ -574,7 +574,7 @@
     {
       "player": "Reggie Evans",
       "bbr_id": "evansre01",
-      "status": "camp_contract",
+      "status": "released",
       "schedule": {
         "2003-04": 563679
       },
@@ -595,7 +595,7 @@
     {
       "player": "Dion Glover",
       "bbr_id": "glovedi01",
-      "status": "camp_contract",
+      "status": "released",
       "schedule": {
         "2003-04": 638679
       },
@@ -658,7 +658,7 @@
     {
       "player": "Mike Batiste",
       "bbr_id": "batismi01",
-      "status": "camp_contract",
+      "status": "released",
       "schedule": {
         "2003-04": 563679
       },
@@ -700,7 +700,7 @@
     {
       "player": "Tyrone Hill",
       "bbr_id": "hillty01",
-      "status": "camp_contract",
+      "status": "released",
       "schedule": {
         "2003-04": 1070000
       },

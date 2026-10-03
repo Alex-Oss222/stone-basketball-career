@@ -4,7 +4,7 @@
 
 NBA regular season · January 8-14, 2004
 
-As of October 24, 2003: not started. The 22-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 22-player active roster.
+As of October 27, 2003: not started. The 17-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 17-player active roster.
 
 ## Team record
 
@@ -27,19 +27,14 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Mike James | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Eddie Jones | SG/SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Sean Lampley | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Vladimir Stepania | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Dwyane Wade | SG/PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Jerome Beasley | PF/C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Keon Clark | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Jumaine Jones | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Stephen Jackson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Reggie Evans | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Dion Glover | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Shawn Kemp | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Chris Andersen | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Mike Batiste | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Scott Padgett | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Tyrone Hill | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 <details>
 <summary>Shooting and rebounding detail</summary>
@@ -57,19 +52,14 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Mike James | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Eddie Jones | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Sean Lampley | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Vladimir Stepania | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Dwyane Wade | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Jerome Beasley | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Keon Clark | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Jumaine Jones | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Stephen Jackson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Reggie Evans | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Dion Glover | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Shawn Kemp | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Chris Andersen | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Mike Batiste | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Scott Padgett | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Tyrone Hill | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 
 </details>
 

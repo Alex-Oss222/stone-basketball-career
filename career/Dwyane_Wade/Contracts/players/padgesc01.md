@@ -2,9 +2,9 @@
 
 # Contract | Scott Padgett
 
-Known through: 2003-10-24. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
 
-Scott Padgett: camp contract. Evidence cutoff: 2003-10-24.
+Scott Padgett: camp contract. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

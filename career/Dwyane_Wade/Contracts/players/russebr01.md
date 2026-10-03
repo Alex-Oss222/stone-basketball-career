@@ -2,9 +2,9 @@
 
 # Contract | Bryon Russell
 
-Known through: 2003-10-24. [Open interactive contract](russebr01.html#contract) · [Contract history](russebr01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](russebr01.html#contract) · [Contract history](russebr01.html#contract-history)
 
-Bryon Russell: free agent expiring. Evidence cutoff: 2003-10-24.
+Bryon Russell: free agent expiring. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "ai_gm",
-  "as_of": "2003-10-24",
+  "as_of": "2003-10-27",
   "team": "Miami Heat",
   "status": "camp_decision",
   "game_ready": true,
@@ -15,7 +15,6 @@
       "Eddie Jones",
       "Dwyane Wade",
       "Stephen Jackson",
-      "Dion Glover",
       "Rasual Butler"
     ],
     "SF": [
@@ -25,9 +24,6 @@
     ],
     "PF": [
       "Scott Padgett",
-      "Reggie Evans",
-      "Mike Batiste",
-      "Tyrone Hill",
       "LaPhonso Ellis",
       "Jerome Beasley"
     ],
@@ -45,5 +41,31 @@
   "unassigned_draft_rights": [],
   "unassigned_arrivals": [],
   "unavailable": [],
-  "departed": []
+  "departed": [
+    {
+      "name": "Vladimir Stepania",
+      "date": "2003-10-23",
+      "status": "signed_elsewhere"
+    },
+    {
+      "name": "Tyrone Hill",
+      "date": "2003-10-27",
+      "status": "released"
+    },
+    {
+      "name": "Mike Batiste",
+      "date": "2003-10-27",
+      "status": "released"
+    },
+    {
+      "name": "Dion Glover",
+      "date": "2003-10-27",
+      "status": "released"
+    },
+    {
+      "name": "Reggie Evans",
+      "date": "2003-10-27",
+      "status": "released"
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "ai_gm",
-  "as_of": "2003-09-30",
+  "as_of": "2003-10-27",
   "season": "2003-04",
   "team": "Miami Heat",
   "roster_kind": "team_control_register",
@@ -245,8 +245,8 @@
       "weight_lb": 236,
       "date_of_birth": "1976-05-08",
       "college": null,
-      "status": "free_agent_rights_held",
-      "control": "Free agent from July 1, 2003; Miami holds his rights and cap hold until he re-signs, signs elsewhere or is renounced (Finances/free_agent_rights.json).",
+      "status": "signed_elsewhere",
+      "control": "October 23, 2003: signs with Portland Trail Blazers (signing, real move); his hold and rights leave Miami's books.",
       "working_role": "2002-03 C2",
       "player_card": "../Player_Cards/vladimir_stepania.md",
       "bbr_id": "stepavl01"
@@ -329,8 +329,8 @@
         "PF"
       ],
       "date_of_birth": "1980-05-18",
-      "status": "camp_contract",
-      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $563,679, guaranteed if still on the roster on 2004-01-10.",
+      "status": "released",
+      "control": "October 27, 2003: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/reggie_evans.md",
       "bbr_id": "evansre01"
@@ -342,8 +342,8 @@
         "SG"
       ],
       "date_of_birth": "1978-10-22",
-      "status": "camp_contract",
-      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+      "status": "released",
+      "control": "October 27, 2003: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/dion_glover.md",
       "bbr_id": "glovedi01"
@@ -381,8 +381,8 @@
         "PF"
       ],
       "date_of_birth": "1977-11-21",
-      "status": "camp_contract",
-      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $563,679, guaranteed if still on the roster on 2004-01-10.",
+      "status": "released",
+      "control": "October 27, 2003: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/mike_batiste.md",
       "bbr_id": "batismi01"
@@ -407,8 +407,8 @@
         "PF"
       ],
       "date_of_birth": "1968-03-19",
-      "status": "camp_contract",
-      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10.",
+      "status": "released",
+      "control": "October 27, 2003: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/tyrone_hill.md",
       "bbr_id": "hillty01"

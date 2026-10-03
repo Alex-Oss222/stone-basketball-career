@@ -156,14 +156,14 @@
    "player": "Reggie Evans",
    "bbr_id": "evansre01",
    "from": "2003-09-30",
-   "until": null,
+   "until": "2003-10-27",
    "basis": "camp contract 2003-09-30 (camp_roster.json)"
   },
   {
    "player": "Dion Glover",
    "bbr_id": "glovedi01",
    "from": "2003-09-30",
-   "until": null,
+   "until": "2003-10-27",
    "basis": "camp contract 2003-09-30 (camp_roster.json)"
   },
   {
@@ -184,7 +184,7 @@
    "player": "Mike Batiste",
    "bbr_id": "batismi01",
    "from": "2003-09-30",
-   "until": null,
+   "until": "2003-10-27",
    "basis": "camp contract 2003-09-30 (camp_roster.json)"
   },
   {
@@ -198,7 +198,7 @@
    "player": "Tyrone Hill",
    "bbr_id": "hillty01",
    "from": "2003-09-30",
-   "until": null,
+   "until": "2003-10-27",
    "basis": "camp contract 2003-09-30 (camp_roster.json)"
   }
  ]

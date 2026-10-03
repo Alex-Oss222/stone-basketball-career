@@ -2,7 +2,7 @@
  "schema_version": 1,
  "initialized": true,
  "season": "2003-04",
- "current_date": "2003-10-24",
+ "current_date": "2003-10-27",
  "current_area": "04_Training_Camp",
  "current_note": "04_Training_Camp/note.md",
  "team": "Miami Heat",
@@ -15,6 +15,6 @@
  },
  "contract_status": "rookie_scale_contract",
  "roster_status": "under_contract",
- "last_closed_event": "2003-10-24-camp-decision",
+ "last_closed_event": "2003-10-27-camp-cut",
  "pending_player_decisions": []
 }
