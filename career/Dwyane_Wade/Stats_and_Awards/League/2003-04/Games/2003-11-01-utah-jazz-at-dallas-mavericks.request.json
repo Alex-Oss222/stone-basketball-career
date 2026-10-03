@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-01-utah-jazz-at-dallas-mavericks",
+ "game_date": "2003-11-01",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Dallas Mavericks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ }
+}

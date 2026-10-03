@@ -2,9 +2,9 @@
 
 # Contract | Michael Doleac
 
-Known through: 2003-10-31. [Open interactive contract](doleami01.html#contract) · [Contract history](doleami01.html#contract-history)
+Known through: 2003-11-03. [Open interactive contract](doleami01.html#contract) · [Contract history](doleami01.html#contract-history)
 
-Michael Doleac: under contract. Evidence cutoff: 2003-10-31.
+Michael Doleac: under contract. Evidence cutoff: 2003-11-03.
 
 ## Current contract
 

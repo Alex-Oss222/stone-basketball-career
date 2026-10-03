@@ -289,6 +289,19 @@ def _contract_views(c):
 def _basketball_views(c, contract):
     depth_path = c.team / "Team/Depth_Chart/depth_chart.json"
     depth = c.snapshot(depth_path)
+    rotation_path = depth_path.with_name("rotation.json")
+    rotation = c.snapshot(rotation_path)
+    reviewed = False
+    if rotation and any(c.known(p.parent.name) for p in depth_path.parent.glob("Reviews/*/rotation.json")):
+        from .rotation_reviews import rotation_in_force
+        # Reporting keeps the last completed assignment while the next review
+        # awaits a draw. The game builder independently enforces the due gate.
+        rotation, depth = rotation_in_force(c.on, c.root, c.season.name, require_review=False)
+        if rotation.get("review"):
+            reviewed = True
+            folder = depth_path.parent / "Reviews" / rotation["as_of"]
+            depth_path, rotation_path = folder / "depth_chart.json", folder / "rotation.json"
+            c.source(folder / "review.json", "Dated staff rotation review")
     if depth:
         c.source(depth_path, "Current dated staff depth chart")
     role_rows = [[position, ", ".join(_text(n) for n in names), "Staff ordering; not a future minutes promise"]
@@ -296,6 +309,11 @@ def _basketball_views(c, contract):
     unassigned = [p for p in depth.get("unassigned_draft_rights", []) + depth.get("unassigned_arrivals", [])
                   if p.get("name", p.get("player")) == c.name]
     role = "Unassigned rookie; staff role decision pending" if unassigned else _text(c.identity.get("role"))
+    if reviewed:
+        minutes = next((p.get("minutes", 0) for p in rotation["players"] if p["player_id"] == c.name), 0)
+        positions = [pos for pos, name in rotation.get("starters", {}).items() if name == c.name]
+        assignment = "Starting " + "/".join(positions) if positions else "Rotation" if minutes else "Outside current rotation"
+        role = f"{assignment}; staff plan {minutes:g} minutes"
     offseason, camp_phase = c.phase("03_Offseason"), c.phase("04_Training_Camp")
     c.source(offseason["path"], "Offseason player decisions and events")
     c.source(camp_phase["path"], "Training-camp events and player response")
@@ -334,8 +352,6 @@ def _basketball_views(c, contract):
         _text(training.get("review_date"), "The player and staff agree a dated first block and review criteria."))
     camp_path = c.season / "04_Training_Camp/camp_roster.json"
     camp = c.snapshot(camp_path, ("opened", "as_of"))
-    rotation_path = c.team / "Team/Depth_Chart/rotation.json"
-    rotation = c.snapshot(rotation_path)
     p_rows = [p for p in camp.get("players", []) if p.get("player") == c.name]
     minutes = next((p.get("minutes") for p in rotation.get("players", [])
                     if p.get("player_id") in {c.name, c.identity.get("player_id")}), None)

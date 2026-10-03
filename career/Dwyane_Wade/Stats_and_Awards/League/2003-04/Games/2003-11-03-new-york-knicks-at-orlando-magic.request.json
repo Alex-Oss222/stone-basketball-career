@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-03-new-york-knicks-at-orlando-magic",
+ "game_date": "2003-11-03",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New York Knicks",
+  "rotation": "real"
+ }
+}

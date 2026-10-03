@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-10-31**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-11-03**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -165,7 +165,7 @@ Card date: **2003-10-31**. 407 registry players, one Markdown card and one inter
 | [Stephen Jackson](jacksst02.md) | Miami Heat | 25 | sourced | [open](jacksst02.html) |
 | [Steve Smith](smithst01.md) | New Orleans Hornets | 34 | sourced | [open](smithst01.html) |
 | [Tamar Slay](slayta01.md) | New Jersey Nets | 23 | sourced | [open](slayta01.html) |
-| [Tariq Abdul-Wahad](abdulta01.md) | Dallas Mavericks | 28 | sourced | [open](abdulta01.html) |
+| [Tariq Abdul-Wahad](abdulta01.md) | Dallas Mavericks | 29 | sourced | [open](abdulta01.html) |
 | [Tito Maddox](maddoti01.md) | Houston Rockets | 22 | silhouette | [open](maddoti01.html) |
 | [Tracy McGrady](mcgratr01.md) | Orlando Magic | 24 | sourced | [open](mcgratr01.html) |
 | [Travis Hansen](hansetr01.md) | Atlanta Hawks (draft rights) | 25 | sourced | [open](hansetr01.html) |
@@ -399,7 +399,7 @@ Card date: **2003-10-31**. 407 registry players, one Markdown card and one inter
 | [Greg Ostertag](ostergr01.md) | Utah Jazz | 30 | sourced | [open](ostergr01.html) |
 | [Jahidi White](whiteja01.md) | Washington Wizards | 27 | silhouette | [open](whiteja01.html) |
 | [Jake Tsakalidis](tsakaja01.md) | Memphis Grizzlies | 24 | sourced | [open](tsakaja01.html) |
-| [Jake Voskuhl](voskuja01.md) | Phoenix Suns | 25 | sourced | [open](voskuja01.html) |
+| [Jake Voskuhl](voskuja01.md) | Phoenix Suns | 26 | sourced | [open](voskuja01.html) |
 | [Jamaal Magloire](magloja01.md) | New Orleans Hornets | 25 | sourced | [open](magloja01.html) |
 | [James Lang](langja01.md) | New Orleans Hornets (draft rights) | 20 | sourced | [open](langja01.html) |
 | [Jason Collins](collija04.md) | New Jersey Nets | 24 | sourced | [open](collija04.html) |

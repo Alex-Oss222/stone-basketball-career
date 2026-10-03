@@ -2,9 +2,9 @@
 
 # Contract | Kenny Thomas
 
-Known through: 2003-10-31. [Open interactive contract](thomake01.html#contract) · [Contract history](thomake01.html#contract-history)
+Known through: 2003-11-03. [Open interactive contract](thomake01.html#contract) · [Contract history](thomake01.html#contract-history)
 
-Kenny Thomas: free agent expiring. Evidence cutoff: 2003-10-31.
+Kenny Thomas: free agent expiring. Evidence cutoff: 2003-11-03.
 
 ## Current contract
 
