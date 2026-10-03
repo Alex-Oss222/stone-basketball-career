@@ -18,14 +18,14 @@ Activation: The authoritative current date and recorded event determine what is 
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2003-11-08-minnesota-timberwolves-at-miami-heat |
+| Last closed event | 2003-11-11-miami-heat-at-houston-rockets |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2003-11-11 | Current checkpoint | 2003-11-08-minnesota-timberwolves-at-miami-heat | Recorded | [Owning event](../2003-04/06_Regular_Season/11_November/Week_2/note.md) |
+| 2003-11-11 | Current checkpoint | 2003-11-11-miami-heat-at-houston-rockets | Recorded | [Owning event](../2003-04/06_Regular_Season/11_November/Week_2/note.md) |
 | 2003-07-19 | Next contract review | Player responds to an actual eligible proposal | recorded | [Contract desk](index.html#contract_negotiation) |
 | 2003-09-30 | Camp reporting | Club records the date | active | [Training camp](index.html#training_camp) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
@@ -94,4 +94,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md)
+- [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)
