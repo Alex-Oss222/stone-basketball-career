@@ -1,0 +1,198 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "date": "2003-10-27",
+ "purpose": "Camp signings voided because the player was not truly available on the signing date, the refill of the open roster spots, and the new rotation (scripts/correct_camp_signings.py).",
+ "voided": [
+  {
+   "player": "Keon Clark",
+   "bbr_id": "clarkke01",
+   "signed": "2003-09-30",
+   "status_before": "camp_contract",
+   "reason": "he was not a free agent on that date (world data corrected); real move: trade to Utah Jazz on 2003-08-05"
+  },
+  {
+   "player": "Jumaine Jones",
+   "bbr_id": "jonesju01",
+   "signed": "2003-09-30",
+   "status_before": "camp_contract",
+   "reason": "Boston Celtics had already acquired him on 2003-07-29 (trade)"
+  },
+  {
+   "player": "Reggie Evans",
+   "bbr_id": "evansre01",
+   "signed": "2003-09-30",
+   "status_before": "released",
+   "reason": "Seattle SuperSonics had already re-signed him on 2003-09-26 (re_sign)"
+  },
+  {
+   "player": "Chris Andersen",
+   "bbr_id": "anderch01",
+   "signed": "2003-09-30",
+   "status_before": "camp_contract",
+   "reason": "Denver Nuggets had already re-signed him on 2003-09-29 (re_sign)"
+  },
+  {
+   "player": "Mike Batiste",
+   "bbr_id": "batismi01",
+   "signed": "2003-09-30",
+   "status_before": "released",
+   "reason": "he was a restricted free agent; a camp contract bypassed his club's right to match"
+  }
+ ],
+ "refill": {
+  "spots": 3,
+  "picks": [
+   {
+    "player": "Cherokee Parks",
+    "bbr_id": "parksch02",
+    "position": "SF",
+    "value": 7.13,
+    "value_known": true,
+    "fit": 0.5,
+    "score": 3.563,
+    "unattached": false,
+    "salary": 638679,
+    "wade_request": false
+   },
+   {
+    "player": "Udonis Haslem",
+    "bbr_id": "hasleud01",
+    "position": "PF",
+    "value": 5.0,
+    "value_known": false,
+    "fit": 0.65,
+    "score": 3.25,
+    "unattached": true,
+    "salary": 366931,
+    "wade_request": true
+   },
+   {
+    "player": "John Wallace",
+    "bbr_id": "wallajo01",
+    "position": "PF",
+    "value": 5.0,
+    "value_known": false,
+    "fit": 0.65,
+    "score": 3.25,
+    "unattached": false,
+    "salary": 366931,
+    "wade_request": false
+   }
+  ],
+  "requests": [
+   {
+    "player": "Andre Miller",
+    "request_date": "2003-06-26",
+    "outcome": "not available as an unrestricted free agent"
+   },
+   {
+    "player": "Lamar Odom",
+    "request_date": "2003-06-26",
+    "outcome": "not available as an unrestricted free agent"
+   },
+   {
+    "player": "Udonis Haslem",
+    "request_date": "2003-10-27",
+    "outcome": "picked by the rule; the request broke a tie at the last spot"
+   }
+  ],
+  "answers": [
+   {
+    "player": "Smush Parker",
+    "outcome": "decline",
+    "event": "2003-10-27-refill-answer-parkesm01"
+   },
+   {
+    "player": "Cherokee Parks",
+    "outcome": "accept",
+    "event": "2003-10-27-refill-answer-parksch02"
+   },
+   {
+    "player": "Udonis Haslem",
+    "outcome": "accept",
+    "event": "2003-10-27-refill-answer-hasleud01"
+   },
+   {
+    "player": "John Wallace",
+    "outcome": "accept",
+    "event": "2003-10-27-refill-answer-wallajo01"
+   }
+  ],
+  "ranking": [
+   {
+    "player": "Smush Parker",
+    "position": "PG",
+    "value": 6.12,
+    "value_known": true,
+    "fit": 0.63,
+    "score": 3.856,
+    "wade_request": false
+   },
+   {
+    "player": "Cherokee Parks",
+    "position": "SF",
+    "value": 7.13,
+    "value_known": true,
+    "fit": 0.5,
+    "score": 3.563,
+    "wade_request": false
+   },
+   {
+    "player": "Udonis Haslem",
+    "position": "PF",
+    "value": 5.0,
+    "value_known": false,
+    "fit": 0.65,
+    "score": 3.25,
+    "wade_request": true
+   },
+   {
+    "player": "John Wallace",
+    "position": "PF",
+    "value": 5.0,
+    "value_known": false,
+    "fit": 0.65,
+    "score": 3.25,
+    "wade_request": false
+   },
+   {
+    "player": "Mamadou N'diaye",
+    "position": "C",
+    "value": 6.0,
+    "value_known": true,
+    "fit": 0.5,
+    "score": 2.998,
+    "wade_request": false
+   },
+   {
+    "player": "Rod Strickland",
+    "position": "PG",
+    "value": 4.55,
+    "value_known": true,
+    "fit": 0.63,
+    "score": 2.867,
+    "wade_request": false
+   },
+   {
+    "player": "Robert Pack",
+    "position": "PG",
+    "value": 4.52,
+    "value_known": true,
+    "fit": 0.63,
+    "score": 2.851,
+    "wade_request": false
+   },
+   {
+    "player": "Mark Jackson",
+    "position": "PG",
+    "value": 3.99,
+    "value_known": true,
+    "fit": 0.63,
+    "score": 2.512,
+    "wade_request": false
+   }
+  ]
+ },
+ "rotation_written": "2003-10-27"
+}

@@ -10,7 +10,7 @@
 **Age at assessment:** 33 · **Height:** 6-8 · **Weight:** 240 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Under contract for 2003-04 at a reported approximately $3.6M. Guarantee trigger amended in January; exact protected amount unverified. No waiver decision recorded. (register, 2003-07-21) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Under contract for 2003-04 at a reported approximately $3.6M. Guarantee trigger amended in January; exact protected amount unverified. No waiver decision recorded. (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/ellisla01.html#contract) · [Contract history](../../../../Contracts/players/ellisla01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

@@ -22,5 +22,21 @@ status: active
 - 2003-07-17: Miami re-signs Mike James: 3 seasons, $10,294,422 ($10,294,422 guaranteed), route early_bird; promised role starter, 32 minutes a game. Record: `Negotiations/mike_james.json`.
 - 2003-07-19: Miami offers Wade his rookie-scale contract at 120% of scale with a promised role of rotation (20 minutes). Wade answers in `Wade_Rookie_Contract/negotiation_log.json`; the milestone screen shows the detailed negotiation.
 - 2003-07-21: Wade signs his rookie-scale contract (80% protected plus incentives to 120% of scale): $2,197,000 counted in 2003-04, three seasons plus a 2006-07 team option. Record: `Wade_Rookie_Contract/negotiation_log.json`.
+- 2003-08-13: Eddie House signs with Los Angeles Clippers (signing, real move); his hold and rights leave Miami's books.
+- 2003-08-22: Travis Best signs with Dallas Mavericks (signing, real move); his hold and rights leave Miami's books.
+- 2003-09-29: Sean Marks signs with San Antonio Spurs (signing, real move); his hold and rights leave Miami's books.
+- 2003-10-23: Vladimir Stepania signs with Portland Trail Blazers (signing, real move); his hold and rights leave Miami's books.
+- 2003-10-27: Tyrone Hill released at the cut to 15 (non-guaranteed camp contract; no dead money).
+- 2003-10-27: Mike Batiste released at the cut to 15 (non-guaranteed camp contract; no dead money).
+- 2003-10-27: Dion Glover released at the cut to 15 (non-guaranteed camp contract; no dead money).
+- 2003-10-27: Reggie Evans released at the cut to 15 (non-guaranteed camp contract; no dead money).
+- 2003-10-27: Keon Clark camp contract of September 30, 2003 voided: he was not a free agent on that date (world data corrected); real move: trade to Utah Jazz on 2003-08-05; he returns to his real club (rule 2 no longer applies).
+- 2003-10-27: Jumaine Jones camp contract of September 30, 2003 voided: Boston Celtics had already acquired him on 2003-07-29 (trade); he returns to his real club (rule 2 no longer applies).
+- 2003-10-27: Reggie Evans camp contract of September 30, 2003 voided: Seattle SuperSonics had already re-signed him on 2003-09-26 (re_sign); he returns to his real club (rule 2 no longer applies).
+- 2003-10-27: Chris Andersen camp contract of September 30, 2003 voided: Denver Nuggets had already re-signed him on 2003-09-29 (re_sign); he returns to his real club (rule 2 no longer applies).
+- 2003-10-27: Mike Batiste camp contract of September 30, 2003 voided: he was a restricted free agent; a camp contract bypassed his club's right to match; he returns to his real club (rule 2 no longer applies).
+- 2003-10-27: Miami signs Cherokee Parks: Signed October 27, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).
+- 2003-10-27: Miami signs Udonis Haslem: Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).
+- 2003-10-27: Miami signs John Wallace: Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).
 
 ## Consequences

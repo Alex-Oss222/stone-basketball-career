@@ -1,62 +1,96 @@
 {
   "schema_version": 1,
   "owner": "ai_gm",
-  "as_of": "2003-07-21",
+  "as_of": "2003-10-27",
   "team": "Miami Heat",
-  "status": "offseason_holding_chart",
-  "game_ready": false,
-  "basis": "final 2002-03 usage-based positional order",
+  "status": "camp_decision",
+  "game_ready": true,
+  "basis": "Training-camp decision on 2003-10-24: staff scores (prior value 0.6, preseason production 0.4) with one evaluation draw per close battle",
   "positions": {
     "PG": [
-      "Travis Best",
       "Mike James",
       "Anthony Carter"
     ],
     "SG": [
       "Eddie Jones",
-      "Rasual Butler",
-      "Eddie House"
+      "Dwyane Wade",
+      "Stephen Jackson",
+      "Rasual Butler"
     ],
     "SF": [
       "Caron Butler",
-      "Sean Lampley"
+      "Sean Lampley",
+      "Cherokee Parks"
     ],
     "PF": [
-      "Malik Allen",
+      "Scott Padgett",
       "LaPhonso Ellis",
-      "Sean Marks"
+      "Jerome Beasley",
+      "Udonis Haslem",
+      "John Wallace"
     ],
     "C": [
       "Brian Grant",
-      "Vladimir Stepania",
-      "Ken Johnson"
+      "Shawn Kemp"
     ]
   },
-  "unassigned_draft_rights": [
-    {
-      "name": "Dwyane Wade",
-      "positions": [
-        "SG",
-        "PG"
-      ],
-      "status": "under_contract"
-    },
-    {
-      "name": "Jerome Beasley",
-      "positions": [
-        "PF",
-        "C"
-      ],
-      "status": "draft_rights_unsigned"
-    }
-  ],
+  "battles_drawn": {
+    "SG": "Eddie Jones",
+    "PF": "Scott Padgett"
+  },
+  "unassigned_draft_rights": [],
+  "unassigned_arrivals": [],
   "unavailable": [],
-  "source": "https://www.basketball-reference.com/teams/MIA/2003_depth.html",
   "departed": [
     {
-      "name": "Alonzo Mourning",
-      "date": "2003-07-16",
+      "name": "Vladimir Stepania",
+      "date": "2003-10-23",
       "status": "signed_elsewhere"
+    },
+    {
+      "name": "Tyrone Hill",
+      "date": "2003-10-27",
+      "status": "released"
+    },
+    {
+      "name": "Mike Batiste",
+      "date": "2003-10-27",
+      "status": "released"
+    },
+    {
+      "name": "Dion Glover",
+      "date": "2003-10-27",
+      "status": "released"
+    },
+    {
+      "name": "Reggie Evans",
+      "date": "2003-10-27",
+      "status": "released"
+    },
+    {
+      "name": "Keon Clark",
+      "date": "2003-10-27",
+      "status": "voided"
+    },
+    {
+      "name": "Jumaine Jones",
+      "date": "2003-10-27",
+      "status": "voided"
+    },
+    {
+      "name": "Reggie Evans",
+      "date": "2003-10-27",
+      "status": "voided"
+    },
+    {
+      "name": "Chris Andersen",
+      "date": "2003-10-27",
+      "status": "voided"
+    },
+    {
+      "name": "Mike Batiste",
+      "date": "2003-10-27",
+      "status": "voided"
     }
   ]
 }

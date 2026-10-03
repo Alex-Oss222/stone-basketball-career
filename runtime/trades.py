@@ -26,6 +26,7 @@ import math
 from pathlib import Path
 
 from .contracts import club_ledger
+from .market import UNDATED_EXIT
 from .valuation import read
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -205,7 +206,7 @@ class TradeDesk:
         self.cap = self.market.planning_cap(on)
         self.signings = {r["bbr_id"]: r for r in read_json(TRANSACTIONS_PATH, root)["signings"]
                          if r.get("bbr_id") and r["kind"] in ("signing", "re_sign", "sign_and_trade", "match", "match_declined", "rookie_signing")
-                         and r["to"] != MIAMI and r["date"] <= on}
+                         and r["to"] != MIAMI and (r["date"] or UNDATED_EXIT) <= on}
         self.picks = read_json(PICKS_PATH, root) if (self.root / PICKS_PATH).exists() else {"picks": []}
         self.needing_consultation = []
 
@@ -245,7 +246,7 @@ class TradeDesk:
         out = []
         for entry in self.fo.sheet["players"]:
             p, r = self.miami_player(entry["player"])
-            if not r or not p["schedule"].get(SEASON) or p["status"] in ("renounced", "released", "traded", "signed_elsewhere"):
+            if not r or not p["schedule"].get(SEASON) or p["status"] in ("renounced", "released", "traded", "signed_elsewhere", "voided"):
                 continue
             if any(w in p["status"] for w in NOT_TRADEABLE_WORDS):
                 continue
@@ -412,7 +413,7 @@ class TradeDesk:
         if t["partner_after"] > self.cap and t["out_full"] > t["in_match"] * pct + plus:
             errors.append(f"{club} over the cap after the trade: incoming ${t['out_full']:,.0f} exceeds {pct:.0%} of its outgoing ${t['in_match']:,.0f} plus ${plus:,}" + byc)
         # Rosters of at most 15 after the trade (Miami; the partner's count is not on the inventory for the date).
-        active = sum(1 for r in self.fo.roster["players"] if not any(w in r["status"] for w in ("free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "pending")))
+        active = sum(1 for r in self.fo.roster["players"] if not any(w in r["status"] for w in ("free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "pending", "voided")))
         leaving = [n for n in trade.get("miami_out", []) if not (own and own["player"] == n)]   # the own sign-and-trade player is not on the active register
         if active - len(leaving) + len(trade.get("miami_in", [])) > rules["roster_max_after_trade"]:
             errors.append(f"Miami would carry more than {rules['roster_max_after_trade']} players")

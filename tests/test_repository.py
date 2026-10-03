@@ -70,7 +70,7 @@ class InitializedCareerTests(unittest.TestCase):
             self.assertEqual(text.rfind("## Awards and honors"),positions[-1])
 
     def test_depth_chart_is_holding_chart(self):
-        depth=json.loads((TEAM/"Team/Depth_Chart/depth_chart.json").read_text(encoding="utf-8"))
+        depth=checkpoint.read("career/Dwyane_Wade/2003-04/00_Team/Team/Depth_Chart/depth_chart.json")
         self.assertFalse(depth["game_ready"])
         names={p["name"] for p in depth["unassigned_draft_rights"]}
         self.assertEqual(names,{"Dwyane Wade","Jerome Beasley"})
@@ -151,8 +151,9 @@ class InitializedCareerTests(unittest.TestCase):
     def test_team_stats_only_list_current_team_pool(self):
         text=(PLAYER/"Stats_and_Awards"/"Team"/"2003-04"/"Team_Stats.md").read_text(encoding="utf-8")
         roster=json.loads((TEAM/"Team/Roster/roster.json").read_text(encoding="utf-8"))
-        for player in roster["players"]:
-            self.assertIn(f"| {player['name']} |",text)
+        from runtime.write_back import register_names
+        for name in register_names(roster["players"]):      # Miami's players on the date; departed and released leave
+            self.assertIn(f"| {name} |",text)
         self.assertNotIn("| LeBron James |",text)
 
     def test_eight_year_cap_reference(self):

@@ -172,7 +172,8 @@ def report_errors(root, player, team):
     registry=json.loads((stats/"League/player_registry.json").read_text(encoding="utf-8"))["players"]
     roster=json.loads((team/"Team/Roster/roster.json").read_text(encoding="utf-8"))["players"]
     expected_league=Counter(p["name"] for p in registry)
-    expected_team=Counter(p["name"] for p in roster)
+    from runtime.write_back import register_names
+    expected_team=Counter(register_names(roster))      # departed players leave the not-started pages
     for page in pages:
         text=page.read_text(encoding="utf-8")
         label=str(page.relative_to(root))
@@ -191,8 +192,8 @@ def report_errors(root, player, team):
             # Completed Miami periods retain former players; today's roster is not their source.
             if page.name=="League_Stats.md":
                 require(errors,actual==expected_league,f"{label}: player production rows missing or duplicated")
-            elif "As of June 26, 2003: not started." in text:
-                require(errors,actual==expected_team,f"{label}: initial Miami control-register coverage mismatch")
+            elif re.search(r"^As of [^\n]*: not started\.",text,re.M):
+                require(errors,actual==expected_team,f"{label}: Miami control-register coverage mismatch on a not-started page")
         if page.name=="League_Stats.md":
             for pos in {p["position"] for p in registry}:
                 group=re.search(rf"<summary>{pos} ·.*?</summary>(.*?)</details>",text,re.S)
@@ -322,6 +323,35 @@ def rights_errors(root):
                 errors.append(f"Miami free-agent rights disagree with the league rights file for {p['player']}")
     except (OSError, ValueError, KeyError) as exc:
         errors.append(f"cannot validate Miami free-agent rights: {exc}")
+    return errors
+
+
+def miami_roster_errors(root):
+    """Standing roster rules, checked on every validation run (docs/front_office.md):
+    after the cut every scheduled Miami game dresses only players Miami holds under a signed contract,
+    and the signed roster is at most fifteen."""
+    from runtime.camp import CUT_DAY_FALLBACK, ROSTER_MAX, playable
+    from runtime.game_requests import find_requests
+    errors = []
+    season = root / "career/Dwyane_Wade/2003-04"
+    state = json.loads((season / "current_state.json").read_text(encoding="utf-8"))
+    roster = json.loads((season / "00_Team/Team/Roster/roster.json").read_text(encoding="utf-8"))["players"]
+    status = {p["name"]: p.get("status") for p in roster}
+    signed = [n for n, st in status.items() if playable(st)]
+    camp = season / "04_Training_Camp/camp_roster.json"
+    cut_done = camp.is_file() and json.loads(camp.read_text(encoding="utf-8")).get("cut_done")
+    if (cut_done or state["current_date"] > CUT_DAY_FALLBACK) and len(signed) > ROSTER_MAX:
+        errors.append(f"Miami carries {len(signed)} signed players after the cut; the limit is {ROSTER_MAX}")
+    for path in find_requests(root):
+        if "Stats_and_Awards" in path.parts or path.with_name(path.name.replace(".request.json", ".result.json")).exists():
+            continue                                  # league slate games and played games keep their inputs
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for side in (data.get("home") or {}, data.get("away") or {}):
+            if side.get("team") != "Miami Heat":
+                continue
+            for p in side.get("players", []):
+                if not playable(status.get(p["player_id"])):
+                    errors.append(f"{path.relative_to(root)}: {p['player_id']} is not a signed Miami player ({status.get(p['player_id'])})")
     return errors
 
 
@@ -615,6 +645,7 @@ def validate():
     errors.extend(request_errors(ROOT))
     from runtime.rotation_reviews import review_errors
     errors.extend(review_errors(ROOT))
+    errors.extend(miami_roster_errors(ROOT))
     from runtime.season_games import is_league_slate
     for request in find_requests(ROOT):
         if is_league_slate(request):

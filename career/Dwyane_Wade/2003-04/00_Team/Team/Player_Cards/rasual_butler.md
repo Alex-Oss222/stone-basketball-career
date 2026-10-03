@@ -10,7 +10,7 @@
 **Age at assessment:** 24 · **Height:** 6-7 · **Weight:** 215 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Team option exercised on June 30, 2003 (front office rule; see June_30/front_office_decisions.json). (register, 2003-07-21) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Team option exercised on June 30, 2003 (front office rule; see June_30/front_office_decisions.json). (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/butlera01.html#contract) · [Contract history](../../../../Contracts/players/butlera01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

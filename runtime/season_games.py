@@ -196,8 +196,9 @@ def grades_in_force(game_date, root=ROOT, season=SEASON):
 
 
 def depth_order(depth, roster):
-    """Roster entries in depth-chart order (position by position), for the next man up."""
-    by_name = {p["name"]: p for p in roster["players"]}
+    """Playable roster entries in depth-chart order (position by position), for the next man up."""
+    from .camp import playable
+    by_name = {p["name"]: p for p in roster["players"] if playable(p.get("status"))}
     out = []
     for pos, names in depth.get("positions", {}).items():
         for name in names:
@@ -313,8 +314,8 @@ def miami_side(game_date, root=ROOT, season=SEASON):
     roster = read_json(team / "Roster/roster.json")
     if roster.get("as_of", "") > game_date:
         raise ValueError("no historical roster for this game; the available register is dated after it")
-    inactive = ("free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "pending", "draft_rights")
-    active = [p for p in roster["players"] if not any(word in p.get("status", "") for word in inactive)]
+    from .camp import playable
+    active = [p for p in roster["players"] if playable(p.get("status"))]
     active_names = {p["name"] for p in active}
     unavailable = {p["player_id"] for p in rotation["players"]} - active_names
     return rotation_for(rotation, injured, grades_in_force(game_date, root, season),

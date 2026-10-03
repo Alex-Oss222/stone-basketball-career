@@ -162,7 +162,8 @@ class CampRun:
         market = Market(day, self.root)
         fo = FrontOffice(day, market, self.root)
         scores = data.get("staff_scores") or camp.prior_values(data, market.valuation)
-        names = camp.cut_list(data, scores, fo)
+        rotation_names = [p["player_id"] for p in read(camp.ROTATION, self.root)["players"]] if (self.root / camp.ROTATION).exists() else []
+        names = camp.cut_list(data, scores, fo, protected=rotation_names)
         sheet, roster, holdings = self.writer.load(signing.TEAM / "Finances/contract_schedules.json"), self.writer.load(signing.TEAM / "Team/Roster/roster.json"), self.writer.load(signing.TEAM / "Team/Roster/holdings.json")
         for name in names:
             for p in data["players"]:
@@ -208,6 +209,10 @@ class CampRun:
         if data:
             self.save_camp(data)
         self.writer.commit()
+        if data:                               # camp contracts change the ledger: the finance summary follows it
+            day = max(d for d in (INVITE_DAY, PRESEASON_DAY, EVALUATION_DAY, CUT_DAY) if d <= until)
+            signing.refresh_finance(self.writer, FrontOffice(day, Market(day, self.root), self.root), day)
+            self.writer.commit()
         return stops
 
 

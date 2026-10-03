@@ -4,7 +4,7 @@
 
 ![Player career overview: professional identity, NBA regular-season statistics and playoff statistics](assets/career_overview.svg)
 
-![Earned professional awards through 2003-07-31](assets/stat_reports/awards_2003-07-31.svg)
+![Earned professional awards through 2003-10-27](assets/stat_reports/awards_2003-10-27.svg)
 
 [Professional identity](Professional_Identity.md) · [Career statistics](Stats_and_Awards/README.md) · [Earned awards](Awards.md) · [National team / FIBA](National_Team/README.md)
 
@@ -25,13 +25,13 @@
 
 NBA entry: 2003 draft, round 1, No. 5 overall, Miami Heat.
 
-Identity as of 2003-07-31; status snapshot dated 2003-07-21. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-10-27; status snapshot dated 2003-10-24. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 </details>
 
 ## Statistics
 
-Career cutoff: **2003-07-31**. Club competitions and national-team events have separate records.
+Career cutoff: **2003-10-27**. Club competitions and national-team events have separate records.
 
 ### NBA regular season
 

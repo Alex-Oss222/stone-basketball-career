@@ -2,9 +2,9 @@
 
 # Contract | Dwyane Wade
 
-Known through: 2003-07-31. [Open interactive contract](player_cards.html#contract) · [Contract history](player_cards.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](player_cards.html#contract) · [Contract history](player_cards.html#contract-history)
 
-Dwyane Wade: under contract. Evidence cutoff: 2003-07-31.
+Dwyane Wade: under contract. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 
@@ -110,14 +110,14 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
+- [Dated signed-contract archive](../Contracts/contract_records.json)
 - [Contract source document](https://basketball.realgm.com/nba/info/rookie_scale/2004)
 - [Contract source document](https://www.cbafaq.com/salarycap99.htm)
 - [Contract source document](https://www.cbafaq.com/scale99.htm)
 - [Contract source document](https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf)
+- [Signing / contract source](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Executed rookie signing log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
-- [Dated signed-contract archive](../Contracts/contract_records.json)
+- [Authoritative club contract schedule](../2003-04/00_Team/Finances/contract_schedules.json)
 
 ### Current control and contract coverage
 
@@ -279,14 +279,14 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
+- [Dated signed-contract archive](../Contracts/contract_records.json)
 - [Contract source document](https://basketball.realgm.com/nba/info/rookie_scale/2004)
 - [Contract source document](https://www.cbafaq.com/salarycap99.htm)
 - [Contract source document](https://www.cbafaq.com/scale99.htm)
 - [Contract source document](https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf)
+- [Signing / contract source](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Executed rookie signing log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
-- [Dated signed-contract archive](../Contracts/contract_records.json)
+- [Authoritative club contract schedule](../2003-04/00_Team/Finances/contract_schedules.json)
 
 ## Source records
 

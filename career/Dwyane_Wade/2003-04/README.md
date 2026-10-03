@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2003-07-31](../assets/stat_reports/personal_2003-07-31.svg)
+![Player personal information and earned career awards through 2003-10-27](../assets/stat_reports/personal_2003-10-27.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -20,16 +20,16 @@
 | Wingspan / standing reach | 6 ft 11.5 in / 8 ft 7.5 in |
 | Shooting hand | Right |
 | Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option |
-| Role | Unassigned rookie |
+| Role | Rotation; staff plan 20 minutes |
 | NBA debut | Not recorded |
 | Nationality | Not recorded |
 | National team | No selection recorded |
 | National-team eligibility | Not verified |
 | Availability | No current restriction recorded in the established profile |
 | Physical measurements recorded | 2003-06-25 |
-| Professional status effective | 2003-07-21 |
+| Professional status effective | 2003-10-24 |
 
-Identity as of 2003-07-31; status snapshot dated 2003-07-21. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-10-27; status snapshot dated 2003-10-24. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Complete professional identity](../Professional_Identity.md)
 
@@ -39,7 +39,7 @@ No earned professional awards recorded by this page's identity cutoff.
 
 ## Statistics
 
-Report cutoff: **2003-07-31**. Each row is a separate competition; do not add the rates.
+Report cutoff: **2003-10-27**. Each row is a separate competition; do not add the rates.
 
 ### Competition summary
 
@@ -50,7 +50,7 @@ Report cutoff: **2003-07-31**. Each row is a separate competition; do not add th
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [Summer League](02_Summer_League/README.md) | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [Preseason](05_Preseason/README.md) | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [Preseason](05_Preseason/README.md) | 19 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [NBA regular season](06_Regular_Season/README.md) | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [NBA playoffs](08_Playoffs/README.md) | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 

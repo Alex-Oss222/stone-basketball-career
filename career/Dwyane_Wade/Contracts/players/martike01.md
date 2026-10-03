@@ -2,9 +2,9 @@
 
 # Contract | Kenyon Martin
 
-Known through: 2003-07-31. [Open interactive contract](martike01.html#contract) · [Contract history](martike01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](martike01.html#contract) · [Contract history](martike01.html#contract-history)
 
-Kenyon Martin: under rookie contract. Evidence cutoff: 2003-07-31.
+Kenyon Martin: under rookie contract. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

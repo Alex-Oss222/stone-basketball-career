@@ -2,9 +2,9 @@
 
 # Contract | Carlos Arroyo
 
-Known through: 2003-07-31. [Open interactive contract](arroyca01.html#contract) · [Contract history](arroyca01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](arroyca01.html#contract) · [Contract history](arroyca01.html#contract-history)
 
-Carlos Arroyo: free agent expiring. Evidence cutoff: 2003-07-31.
+Carlos Arroyo: free agent expiring. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 
@@ -50,7 +50,7 @@ Eligibility and a reference amount do not establish a tendered qualifying offer 
 | Qualifying-offer reference amount | $788,679 |
 | Qualifying-offer basis | 2003-04 minimum for his years of service plus $150,000 |
 | Free-agent cap hold reference | $655,200 |
-| Qualifying offer actually tendered | Not recorded |
+| Qualifying offer actually tendered | No |
 | Tender date | Not recorded |
 | Renounced | Not recorded |
 

@@ -42,7 +42,7 @@ def fetch(path):
         with urlopen(f"{URL}{path}", timeout=30) as response:
             return json.loads(response.read().decode("utf-8"))
     except HTTPError as exc:
-        if exc.code == 404:
+        if exc.code == 404 or exc.code >= 500:      # not served yet, or the engine is mid-deploy: poll again
             return None
         raise
     except (URLError, TimeoutError, ValueError):

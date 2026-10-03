@@ -1,0 +1,12 @@
+{
+ "date": "2003-10-27",
+ "decider": "John Wallace (simulated player)",
+ "event_id": "2003-10-27-refill-answer-wallajo01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.75,
+  "decline": 0.25
+ },
+ "outcome": "accept",
+ "question": "Does John Wallace accept Miami's non-guaranteed minimum contract ($366,931, 2003-04)?"
+}

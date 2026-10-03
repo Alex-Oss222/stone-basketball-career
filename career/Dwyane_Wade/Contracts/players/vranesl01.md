@@ -2,9 +2,9 @@
 
 # Contract | Slavko Vranes
 
-Known through: 2003-07-31. [Open interactive contract](vranesl01.html#contract) · [Contract history](vranesl01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](vranesl01.html#contract) · [Contract history](vranesl01.html#contract-history)
 
-Slavko Vranes: No verified contract record. Evidence cutoff: 2003-07-31.
+Slavko Vranes: No verified contract record. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

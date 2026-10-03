@@ -2,9 +2,9 @@
 
 # Contract | Tim Hardaway
 
-Known through: 2003-07-31. [Open interactive contract](hardati01.html#contract) · [Contract history](hardati01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](hardati01.html#contract) · [Contract history](hardati01.html#contract-history)
 
-Tim Hardaway: free agent expiring. Evidence cutoff: 2003-07-31.
+Tim Hardaway: free agent expiring. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

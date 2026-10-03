@@ -10,7 +10,7 @@
 **Age at assessment:** 24 · **Height:** 6-10 · **Weight:** 255 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Free agent from July 1, 2003; Miami holds his rights and cap hold until he re-signs, signs elsewhere or is renounced (Finances/free_agent_rights.json). (register, 2003-07-21) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Free agent from July 1, 2003; Miami holds his rights and cap hold until he re-signs, signs elsewhere or is renounced (Finances/free_agent_rights.json). (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/allenma01.html#contract) · [Contract history](../../../../Contracts/players/allenma01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

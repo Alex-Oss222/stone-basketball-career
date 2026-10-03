@@ -2,9 +2,9 @@
 
 # Contract | Rodney White
 
-Known through: 2003-07-31. [Open interactive contract](whitero02.html#contract) · [Contract history](whitero02.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](whitero02.html#contract) · [Contract history](whitero02.html#contract-history)
 
-Rodney White: under rookie contract. Evidence cutoff: 2003-07-31.
+Rodney White: under rookie contract. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

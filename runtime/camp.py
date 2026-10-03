@@ -33,6 +33,7 @@ STATS_PATH = Path("library/2003/league/nba_2002_03_player_stats.json")
 
 # Judgement constants, named so they can be revisited.
 CAMP_MAX, ROSTER_MAX = 20, 15
+CUT_DAY_FALLBACK = "2003-10-27"                          # the 2003 cut date; later seasons read the calendar
 INVITE_MIN_VALUE = REPLACEMENT_EFF_PER_GAME + 1.0      # production value worth a camp look
 INVITE_YOUNG_AGE = 25                                   # a young player is worth a look at replacement value
 CAMP_INJURY_BASE, CAMP_INJURY_PER_YEAR_OVER_30 = 0.03, 0.005
@@ -62,7 +63,7 @@ def efficiency(line):
 # -- camp roster ---------------------------------------------------------------------------------
 def active_players(roster):
     return [p for p in roster["players"] if not any(w in p["status"] for w in
-            ("free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "pending", "camp"))]
+            ("free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "pending", "camp", "voided"))]
 
 
 def invite(on, front_office, market, root=ROOT):
@@ -79,6 +80,8 @@ def invite(on, front_office, market, root=ROOT):
     for bbr, p in market.pool(on).items():
         if p["club"] == MIAMI or any(r.get("bbr_id") == bbr for r in roster["players"]):
             continue
+        if market.restricted(bbr):
+            continue          # a camp contract is not an offer sheet: his club's right to match would be bypassed
         value, age = market.valuation.value(bbr), market.valuation.age(bbr)
         if value is None:
             continue
@@ -135,10 +138,12 @@ def ordered_players(camp, depth, values, on):
 def rotation_players(camp, depth, values, on, template, grades=None, game_index=0):
     """Miami's explicit `players` list for a game request: twelve actives, minutes summing to 240.
 
-    The core (starters and the first reserves) dresses every game; the remaining spots rotate through
-    the rest of the camp roster by game, so every invitee is seen in the preseason."""
+    The core (starters and the first reserves) and every signed roster player dress every game, so a
+    rookie without a 2002-03 line is never rotated out by his missing production value; the remaining
+    spots rotate through the camp invitees by game, so every invitee is seen in the preseason."""
     order = ordered_players(camp, depth, values, on)
-    core, tail = order[:CORE_SIZE], order[CORE_SIZE:]
+    core = order[:CORE_SIZE] + [p for p in order[CORE_SIZE:] if p.get("kind") != "invite"]
+    tail = [p for p in order[CORE_SIZE:] if p.get("kind") == "invite"]
     if tail:
         shift = game_index % len(tail)
         tail = tail[shift:] + tail[:shift]
@@ -345,15 +350,28 @@ def grades_record(entries, on):
 
 
 # -- cut and promises ------------------------------------------------------------------------------
-def cut_list(camp, scores, front_office):
-    """Players to release, lowest score and fit first, until the roster is ROSTER_MAX (non-guaranteed first)."""
+# Register statuses of players who cannot dress for Miami: not signed, or no longer Miami's.
+NOT_PLAYABLE = ("free_agent", "unsigned", "released", "waived", "traded", "renounced", "signed_elsewhere", "declined", "cut", "voided")
+
+
+def playable(status):
+    """A register status that lets a player dress for Miami: a signed contract Miami still holds."""
+    return bool(status) and not any(word in status for word in NOT_PLAYABLE)
+
+
+def cut_list(camp, scores, front_office, protected=()):
+    """Players to release until the signed roster is ROSTER_MAX: non-guaranteed first, lowest score and fit first.
+
+    Unsigned draft rights do not count toward the fifteen and are never released here: the rights stay
+    Miami's. Players in `protected` (the staff's written rotation) are released last, so a cut never
+    removes a player the staff has just given minutes."""
     needs = front_office.needs()
-    keep = [p for p in camp["players"] if p["status"] != "released"]
+    keep = [p for p in camp["players"] if p["status"] != "released" and playable(p.get("status", "camp_contract"))]
     if len(keep) <= ROSTER_MAX:
         return []
     def rank(p):
         guaranteed = p["kind"] == "roster"
-        return (guaranteed, scores[p["player"]] * (0.5 + front_office.fit(p["positions"][0], needs)))
+        return (p["player"] in protected, guaranteed, scores[p["player"]] * (0.5 + front_office.fit(p["positions"][0], needs)))
     ordered = sorted(keep, key=rank)
     return [p["player"] for p in ordered[:len(keep) - ROSTER_MAX]]
 

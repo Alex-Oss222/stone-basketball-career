@@ -2,9 +2,9 @@
 
 # Contract | Loren Woods
 
-Known through: 2003-07-31. [Open interactive contract](woodslo01.html#contract) · [Contract history](woodslo01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](woodslo01.html#contract) · [Contract history](woodslo01.html#contract-history)
 
-Loren Woods: free agent expiring. Evidence cutoff: 2003-07-31.
+Loren Woods: free agent expiring. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

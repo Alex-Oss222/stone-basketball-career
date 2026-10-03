@@ -35,7 +35,9 @@
     "previous salary is minimum-level; a separate minimum-contract hold rule is unverified (rules file, unverified[0])"
    ],
    "qualifying_offer_tendered": true,
-   "qualifying_offer_date": "2003-06-30"
+   "qualifying_offer_date": "2003-06-30",
+   "signed_elsewhere": true,
+   "signed_elsewhere_date": "2003-08-13"
   },
   {
    "player": "Malik Allen",
@@ -129,7 +131,9 @@
    "restricted_free_agency_eligible": false,
    "qualifying_offer": null,
    "qualifying_offer_basis": "not eligible for restricted free agency",
-   "notes": []
+   "notes": [],
+   "signed_elsewhere": true,
+   "signed_elsewhere_date": "2003-08-22"
   },
   {
    "player": "Vladimir Stepania",
@@ -149,7 +153,9 @@
    "restricted_free_agency_eligible": false,
    "qualifying_offer": null,
    "qualifying_offer_basis": "not eligible for restricted free agency",
-   "notes": []
+   "notes": [],
+   "signed_elsewhere": true,
+   "signed_elsewhere_date": "2003-10-23"
   },
   {
    "player": "Sean Marks",
@@ -171,7 +177,9 @@
    "qualifying_offer_basis": "not eligible for restricted free agency",
    "notes": [
     "previous salary is minimum-level; a separate minimum-contract hold rule is unverified (rules file, unverified[0])"
-   ]
+   ],
+   "signed_elsewhere": true,
+   "signed_elsewhere_date": "2003-09-29"
   }
  ],
  "total_cap_holds": 28499658

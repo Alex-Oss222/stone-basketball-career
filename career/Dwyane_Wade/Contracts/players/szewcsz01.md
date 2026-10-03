@@ -2,9 +2,9 @@
 
 # Contract | Szymon Szewczyk
 
-Known through: 2003-07-31. [Open interactive contract](szewcsz01.html#contract) · [Contract history](szewcsz01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](szewcsz01.html#contract) · [Contract history](szewcsz01.html#contract-history)
 
-Szymon Szewczyk: No verified contract record. Evidence cutoff: 2003-07-31.
+Szymon Szewczyk: No verified contract record. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

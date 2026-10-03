@@ -2,9 +2,9 @@
 
 # Contract | Mamadou N'diaye
 
-Known through: 2003-07-31. [Open interactive contract](ndiayma02.html#contract) · [Contract history](ndiayma02.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](ndiayma02.html#contract) · [Contract history](ndiayma02.html#contract-history)
 
-Mamadou N'diaye: free agent expiring. Evidence cutoff: 2003-07-31.
+Mamadou N'diaye: free agent expiring. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

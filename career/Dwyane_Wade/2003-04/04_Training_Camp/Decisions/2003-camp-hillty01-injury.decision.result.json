@@ -1,0 +1,12 @@
+{
+ "date": "2003-09-30",
+ "decider": "engine (camp injury draw)",
+ "event_id": "2003-camp-hillty01-injury",
+ "kind": "decision",
+ "options": {
+  "healthy": 0.945,
+  "injured": 0.055
+ },
+ "outcome": "healthy",
+ "question": "Is Tyrone Hill hurt in training camp?"
+}

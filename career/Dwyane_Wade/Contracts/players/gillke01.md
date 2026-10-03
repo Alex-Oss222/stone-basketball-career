@@ -2,9 +2,9 @@
 
 # Contract | Kendall Gill
 
-Known through: 2003-07-31. [Open interactive contract](gillke01.html#contract) · [Contract history](gillke01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](gillke01.html#contract) · [Contract history](gillke01.html#contract-history)
 
-Kendall Gill: free agent expiring. Evidence cutoff: 2003-07-31.
+Kendall Gill: free agent expiring. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

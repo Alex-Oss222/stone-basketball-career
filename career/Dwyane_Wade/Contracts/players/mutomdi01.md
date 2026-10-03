@@ -2,9 +2,9 @@
 
 # Contract | Dikembe Mutombo
 
-Known through: 2003-07-31. [Open interactive contract](mutomdi01.html#contract) · [Contract history](mutomdi01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](mutomdi01.html#contract) · [Contract history](mutomdi01.html#contract-history)
 
-Dikembe Mutombo: expired or unresolved. Evidence cutoff: 2003-07-31.
+Dikembe Mutombo: expired or unresolved. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

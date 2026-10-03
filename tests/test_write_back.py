@@ -200,7 +200,9 @@ class WriteBackRunTests(unittest.TestCase):
         self.assertEqual(record[6], f"{scores[miami_side] - scores[other_side]:+.1f}")
         production = rows_by_first_cell(team_page, ["Player", "Pos", "G"])
         self.assertEqual((production["Dwyane Wade"]["G"], production["Dwyane Wade"]["PPG"]), ("1", f"{wade['pts']:.1f}"))
-        self.assertEqual(production["Alonzo Mourning"]["G"], "0")        # on the register, no appearance
+        idle = next(n for n, row in production.items() if row["G"] == "0")    # on the register, no appearance
+        self.assertEqual(production[idle]["G"], "0")
+        self.assertNotIn("Alonzo Mourning", production)                     # released before the period: not a Miami row
         shooting = rows_by_first_cell(team_page, ["Player", "GS"])
         self.assertEqual(shooting["Dwyane Wade"]["GS"], str(int(wade["started"])))
         self.assertEqual((shooting["Dwyane Wade"]["FG"], shooting["Dwyane Wade"]["FG%"]), (f"{wade['fgm']}/{wade['fga']}", ratio(wade["fgm"], wade["fga"])))
@@ -247,7 +249,9 @@ class WriteBackRunTests(unittest.TestCase):
         payload = json.loads(re.search(r'type="application/json">(.*?)</script>', (root / STATS / "League/Players/wadedw01.html").read_text(), re.S).group(1)
                              .replace("\\u003c", "<").replace("\\u003e", ">").replace("\\u0026", "&"))
         season_period = next(p for p in payload["periods"] if p["id"] == "season")
-        self.assertEqual((season_period["games"], season_period["box"]["pts"], season_period["shooting"]["coverage"]["status"]), (1, wade["pts"], "unavailable"))
+        # No shot-location feed exists, so coverage is unavailable; a game with no field-goal attempt has nothing to locate.
+        expected = "complete" if wade["fga"] == 0 else "unavailable"
+        self.assertEqual((season_period["games"], season_period["box"]["pts"], season_period["shooting"]["coverage"]["status"]), (1, wade["pts"], expected))
         idle = rows_by_first_cell((root / STATS / "League/Players/willial02.md").read_text(), ["Scope"])
         self.assertEqual(idle["2003-04 regular season"]["G"], "0")
         self.assertEqual(check_cards(root), [])

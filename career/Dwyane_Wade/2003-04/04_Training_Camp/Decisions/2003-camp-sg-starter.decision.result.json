@@ -1,0 +1,12 @@
+{
+ "date": "2003-10-24",
+ "decider": "Miami coaching staff (evaluation draw)",
+ "event_id": "2003-camp-sg-starter",
+ "kind": "decision",
+ "options": {
+  "Dwyane Wade": 0.499,
+  "Eddie Jones": 0.501
+ },
+ "outcome": "Eddie Jones",
+ "question": "Who starts at SG: Eddie Jones or Dwyane Wade?"
+}
