@@ -2,9 +2,9 @@
 
 # Contract | Mickael Pietrus
 
-Known through: 2003-11-04. [Open interactive contract](pietrmi01.html#contract) · [Contract history](pietrmi01.html#contract-history)
+Known through: 2003-11-07. [Open interactive contract](pietrmi01.html#contract) · [Contract history](pietrmi01.html#contract-history)
 
-Mickael Pietrus: No verified contract record. Evidence cutoff: 2003-11-04.
+Mickael Pietrus: No verified contract record. Evidence cutoff: 2003-11-07.
 
 ## Current contract
 

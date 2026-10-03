@@ -2,9 +2,9 @@
 
 # Contract | Jacque Vaughn
 
-Known through: 2003-11-04. [Open interactive contract](vaughja01.html#contract) · [Contract history](vaughja01.html#contract-history)
+Known through: 2003-11-07. [Open interactive contract](vaughja01.html#contract) · [Contract history](vaughja01.html#contract-history)
 
-Jacque Vaughn: free agent expiring. Evidence cutoff: 2003-11-04.
+Jacque Vaughn: free agent expiring. Evidence cutoff: 2003-11-07.
 
 ## Current contract
 

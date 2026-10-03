@@ -2,9 +2,9 @@
 
 # Contract | Steve Kerr
 
-Known through: 2003-11-04. [Open interactive contract](kerrst01.html#contract) · [Contract history](kerrst01.html#contract-history)
+Known through: 2003-11-07. [Open interactive contract](kerrst01.html#contract) · [Contract history](kerrst01.html#contract-history)
 
-Steve Kerr: free agent expiring. Evidence cutoff: 2003-11-04.
+Steve Kerr: free agent expiring. Evidence cutoff: 2003-11-07.
 
 ## Current contract
 

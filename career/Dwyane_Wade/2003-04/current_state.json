@@ -2,7 +2,7 @@
  "schema_version": 1,
  "initialized": true,
  "season": "2003-04",
- "current_date": "2003-11-04",
+ "current_date": "2003-11-07",
  "current_area": "06_Regular_Season",
  "current_note": "06_Regular_Season/11_November/Week_1/note.md",
  "team": "Miami Heat",
@@ -15,6 +15,6 @@
  },
  "contract_status": "rookie_scale_contract",
  "roster_status": "under_contract",
- "last_closed_event": "2003-11-03-miami-heat-at-dallas-mavericks",
+ "last_closed_event": "2003-11-04-miami-heat-at-san-antonio-spurs",
  "pending_player_decisions": []
 }

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-11-04**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-11-07**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -132,7 +132,7 @@ Card date: **2003-11-04**. 407 registry players, one Markdown card and one inter
 | [Jason Richardson](richaja01.md) | Golden State Warriors | 22 | sourced | [open](richaja01.html) |
 | [Jeff Trepagnier](trepaje01.md) | Denver Nuggets | 24 | silhouette | [open](trepaje01.html) |
 | [Jermaine Jackson](jacksje01.md) | Atlanta Hawks | 27 | sourced | [open](jacksje01.html) |
-| [Jerry Stackhouse](stackje01.md) | Washington Wizards | 28 | sourced | [open](stackje01.html) |
+| [Jerry Stackhouse](stackje01.md) | Washington Wizards | 29 | sourced | [open](stackje01.html) |
 | [Jeryl Sasser](sasseje01.md) | Orlando Magic | 24 | silhouette | [open](sasseje01.html) |
 | [Joe Johnson](johnsjo02.md) | Phoenix Suns | 22 | sourced | [open](johnsjo02.html) |
 | [Jon Barry](barryjo01.md) | Denver Nuggets | 34 | sourced | [open](barryjo01.html) |
@@ -225,7 +225,7 @@ Card date: **2003-11-04**. 407 registry players, one Markdown card and one inter
 | [Josh Howard](howarjo01.md) | Dallas Mavericks (draft rights) | 23 | sourced | [open](howarjo01.html) |
 | [Jumaine Jones](jonesju01.md) | Free agent | 24 | sourced | [open](jonesju01.html) |
 | [Kedrick Brown](brownke01.md) | Boston Celtics | 22 | sourced | [open](brownke01.html) |
-| [Lamar Odom](odomla01.md) | Los Angeles Clippers | 23 | sourced | [open](odomla01.html) |
+| [Lamar Odom](odomla01.md) | Los Angeles Clippers | 24 | sourced | [open](odomla01.html) |
 | [Latrell Sprewell](sprewla01.md) | Minnesota Timberwolves | 33 | silhouette | [open](sprewla01.html) |
 | [LeBron James](jamesle01.md) | Cleveland Cavaliers (draft rights) | 18 | sourced | [open](jamesle01.html) |
 | [Lee Nailon](nailole01.md) | Atlanta Hawks | 28 | silhouette | [open](nailole01.html) |

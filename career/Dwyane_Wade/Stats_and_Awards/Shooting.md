@@ -2,17 +2,17 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2003-11-04**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2003-11-07**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2003-11-04
+## 2003-04 · NBA regular season · through 2003-11-07
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 4 | 0 | 4 | 11 / 26 | 42.3% | 2 / 8 | 39 | unavailable |
+| 5 | 0 | 5 | 13 / 33 | 39.4% | 3 / 12 | 48 | unavailable |
 
 Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.
 
@@ -30,6 +30,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | 2003-10-29 | Boston Celtics | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.result.json) | Not recorded |
 | 2003-10-31 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.result.json) | Not recorded |
 | 2003-11-03 | Dallas Mavericks | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.result.json) | Not recorded |
+| 2003-11-04 | San Antonio Spurs | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.result.json) | Not recorded |
 
 ## 2003-10 · NBA regular season
 
@@ -85,7 +86,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 0 | 1 | 3 / 9 | 33.3% | 1 / 5 | 11 | unavailable |
+| 2 | 0 | 2 | 5 / 16 | 31.2% | 2 / 9 | 20 | unavailable |
 
 Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.
 
@@ -100,14 +101,15 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-03 | Dallas Mavericks | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.result.json) | Not recorded |
+| 2003-11-04 | San Antonio Spurs | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.result.json) | Not recorded |
 
-## 2003-11-01 to 2003-11-04 · NBA regular season
+## 2003-11-01 to 2003-11-07 · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-week-2003-11-01#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 0 | 1 | 3 / 9 | 33.3% | 1 / 5 | 11 | unavailable |
+| 2 | 0 | 2 | 5 / 16 | 31.2% | 2 / 9 | 20 | unavailable |
 
 Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.
 
@@ -122,6 +124,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-03 | Dallas Mavericks | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.result.json) | Not recorded |
+| 2003-11-04 | San Antonio Spurs | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.result.json) | Not recorded |
 
 ## 2003-10-28 vs Philadelphia 76ers · Played · NBA regular season
 
@@ -211,7 +214,29 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-03 | Dallas Mavericks | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.result.json) | Not recorded |
 
-## 2003-04 · NBA preseason · through 2003-11-04
+## 2003-11-04 vs San Antonio Spurs · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-3364a71a4da0183b#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 2 / 7 | 28.6% | 1 / 4 | 9 | unavailable |
+
+Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2003-11-04 | San Antonio Spurs | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.result.json) | Not recorded |
+
+## 2003-04 · NBA preseason · through 2003-11-07
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 
