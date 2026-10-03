@@ -6,6 +6,13 @@
    "player": "Andre Miller",
    "requested": "pursue",
    "note": "Wade asks the front office to go after Andre Miller (Los Angeles Clippers, rookie contract ending June 30, 2003) to run the point next to him."
+  },
+  {
+   "date": "2003-06-26",
+   "subject": "free_agent_target",
+   "player": "Lamar Odom",
+   "requested": "pursue",
+   "note": "Wade asks the front office to pursue Lamar Odom (Los Angeles Clippers, restricted free agent). Under world rule 1 his real August 2003 move to Miami never happens; he stays a Clippers free agent unless simulated Miami signs him, through an offer sheet the Clippers may match."
   }
  ]
 }

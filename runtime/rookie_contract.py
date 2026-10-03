@@ -55,14 +55,98 @@ def log_errors(log, root=ROOT):
             errors.append(f"{where}: nothing may follow the signing")
         terms = entry.get("terms")
         if terms is not None:
-            try:
-                expected = rookie_terms(terms["pick"], terms["percent_of_scale"], root)
-                if terms != expected:
-                    errors.append(f"{where}: terms do not match the rookie scale")
-            except (KeyError, ValueError, StopIteration) as exc:
-                errors.append(f"{where}: {exc}")
+            errors.extend(f"{where}: {e}" for e in terms_errors_any(terms, root))
         if entry.get("action") == "sign":
             signed = True
             if terms is None:
                 errors.append(f"{where}: a signing needs terms")
     return errors
+
+
+# -- layered rookie contract (Wade's counter framework, user premise) ----------------------------------------
+# 1999 rules as recorded in library/2003/league/nba_1999_cba_rules.json and docs/research/cba_1999_rules.md:
+# at least 80% of scale must be Current Cash Compensation (protected salary, no incentives); the total may not
+# exceed 120%; Unlikely Bonuses may not exceed 25% of Regular Salary; incentives for physical condition and for
+# an offseason skill-and-conditioning program count as Salary (included); no signing bonus on a rookie-scale deal;
+# the fourth-year option is the third-year Salary raised by the pick's percentage; a promised role is not a
+# permitted amendment of the Uniform Player Contract.
+PROTECTED_MIN_PERCENT, TOTAL_MAX_PERCENT = 80, 120
+UNLIKELY_MAX_SHARE_OF_REGULAR_SALARY = 0.25
+INCLUDED_KINDS = ("conditioning_program", "physical_condition", "academic")   # incentive kinds the 1999 rules count as Salary
+SEASONS = ("2003-04", "2004-05", "2005-06")
+
+
+def layered_terms(pick, protected_percent, incentives, root=ROOT):
+    """A rookie-scale contract as protected cash plus incentives, each a percent of scale per season.
+
+    `incentives`: list of {id, label, kind (included kind or "performance"), percent, benchmarks {season: text},
+    classification ("included" for included kinds; "likely" or "unlikely" for performance)}. The counted Salary of a
+    season is protected cash plus included incentives plus performance bonuses classified likely; the fourth-year
+    option is the third season's counted Salary raised by the pick's percentage (Article XI carries the third year's
+    terms into the option year, except the raise).
+    """
+    row, scale = scale_row(pick, root)
+    base = {s: row[f"year_{i}"] for i, s in enumerate(SEASONS, start=1)}
+    amounts = lambda pct: {s: round(base[s] * pct / 100) for s in SEASONS}
+    protected = amounts(protected_percent)
+    layers = []
+    for inc in incentives:
+        kind = inc["kind"]
+        classification = "included" if kind in INCLUDED_KINDS else inc.get("classification", "unlikely")
+        layers.append({"id": inc["id"], "label": inc["label"], "kind": kind, "percent": inc["percent"],
+                       "classification": classification,
+                       "classified_by": ("1999 rules: physical-condition, academic and designated program incentives are Salary"
+                                         if classification == "included" else
+                                         "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is "
+                                         "Unlikely unless the prior season's record would have earned it"),
+                       "benchmarks": dict(inc.get("benchmarks", {})), "amounts": amounts(inc["percent"])})
+    counted = {s: protected[s] + sum(l["amounts"][s] for l in layers if l["classification"] in ("included", "likely")) for s in SEASONS}
+    maximum = {s: protected[s] + sum(l["amounts"][s] for l in layers) for s in SEASONS}
+    option = round(counted["2005-06"] * (1 + row["fourth_year_option_increase_percent"] / 100))
+    return {"pick": pick, "structure": "layered", "protected_percent": protected_percent,
+            "total_percent": protected_percent + sum(l["percent"] for l in layers),
+            "protected_schedule": protected, "incentives": layers, "maximum_schedule": maximum,
+            "schedule": {**counted, "2006-07": option},
+            "amount_kind": {"2003-04": "contract_salary", "2004-05": "contract_salary", "2005-06": "contract_salary", "2006-07": "team_option"},
+            "signing_bonus": 0, "promised_role_contractual": False,
+            "fourth_year_option_deadline": "2005-10-31",
+            "fourth_year_option_basis": f"third-season counted Salary raised {row['fourth_year_option_increase_percent']}% (pick {pick})",
+            "qualifying_offer_increase_percent_after_fourth_year": row["qualifying_offer_increase_percent"]}
+
+
+def layered_errors(terms, root=ROOT):
+    """Why a layered rookie contract breaks the 1999 rules, with the rule named."""
+    errors = []
+    try:
+        expected = layered_terms(terms["pick"], terms["protected_percent"],
+                                 [{k: l[k] for k in ("id", "label", "kind", "percent", "benchmarks", "classification") if k in l} for l in terms["incentives"]], root)
+    except (KeyError, TypeError, ValueError, StopIteration) as exc:
+        return [f"layered terms cannot be rebuilt: {exc}"]
+    if {k: v for k, v in terms.items() if k != "note"} != expected:
+        errors.append("layered terms do not match their percentages and the scale")
+    if terms["protected_percent"] < PROTECTED_MIN_PERCENT:
+        errors.append(f"protected Current Cash Compensation under {PROTECTED_MIN_PERCENT}% of scale (1999 rookie-scale rule)")
+    if terms["total_percent"] > TOTAL_MAX_PERCENT:
+        errors.append(f"maximum compensation over {TOTAL_MAX_PERCENT}% of scale (1999 rookie-scale rule)")
+    unlikely = sum(l["percent"] for l in terms["incentives"] if l["classification"] == "unlikely")
+    if unlikely > terms["protected_percent"] * UNLIKELY_MAX_SHARE_OF_REGULAR_SALARY + 1e-9:
+        errors.append(f"Unlikely Bonuses exceed {UNLIKELY_MAX_SHARE_OF_REGULAR_SALARY:.0%} of Regular Salary (1999 rules)")
+    if terms.get("signing_bonus"):
+        errors.append("no signing bonus on a rookie-scale contract (1999 rules)")
+    if terms.get("promised_role_contractual"):
+        errors.append("a promised role is not a permitted amendment of the Uniform Player Contract")
+    for l in terms["incentives"]:
+        if l["kind"] == "performance" and any(not b for b in l["benchmarks"].values()):
+            errors.append(f"{l['id']}: a performance bonus needs a positive, numerical or recognized-honor benchmark for each season")
+    return errors
+
+
+def terms_errors_any(terms, root=ROOT):
+    """Errors for either shape of rookie terms: a plain percent of scale, or the layered structure."""
+    if isinstance(terms, dict) and terms.get("structure") == "layered":
+        return layered_errors(terms, root)
+    try:
+        expected = rookie_terms(terms["pick"], terms["percent_of_scale"], root)
+    except (KeyError, TypeError, ValueError, StopIteration) as exc:
+        return [str(exc)]
+    return [] if terms == expected else ["terms do not match the rookie scale"]

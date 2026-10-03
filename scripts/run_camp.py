@@ -139,7 +139,11 @@ class CampRun:
         signing.note_event(self.writer, camp.CAMP / "note.md", day,
                            f"Staff decision from {len(results)} preseason games: starters {starters}" + (f"; battles drawn: {winners}" if winners else "") +
                            f". Wade's perimeter-defense grade {grade['grade']} ({grade['evidence'][1]}). Records: `../00_Team/Team/Depth_Chart/depth_chart.json`, `rotation.json`, `../00_Team/Team/defensive_grades.json`.")
-        self.writer.text(camp.CAMP / "Wade_Camp_Review.md", wade_page(day, grade, lines.get("Dwyane Wade"), rotation))
+        reply_path = self.root / camp.CAMP / "wade_reply.json"
+        reply = json.loads(reply_path.read_text(encoding="utf-8"))["reply"] if reply_path.exists() else "_open_"
+        self.writer.text(camp.CAMP / "Wade_Camp_Review.md", wade_page(day, grade, lines.get("Dwyane Wade"), rotation, reply))
+        if reply_path.exists():
+            signing.note_event(self.writer, camp.CAMP / "note.md", day, f"Wade's reply to the camp review: {reply}")
         signing.set_state(self.writer, day, area="04_Training_Camp", note="04_Training_Camp/note.md", last_event=f"{day}-camp-decision")
         return True
 
@@ -198,7 +202,7 @@ class CampRun:
         return stops
 
 
-def wade_page(day, grade, line, rotation):
+def wade_page(day, grade, line, rotation, reply="_open_"):
     minutes = next((p["minutes"] for p in rotation["players"] if p["player_id"] == "Dwyane Wade"), 0)
     played = f"{line['games']} preseason games, {line['minutes']:.0f} minutes, {line['stl']} steals, {line['blk']} blocks" if line else "no preseason minutes"
     return f"""# Camp and role review | Dwyane Wade
@@ -237,7 +241,7 @@ Camp observations and scrimmage totals are not NBA regular-season statistics.
 | Work within the assignment | "My focus is {{task}}. Let's review it after {{event}}." | Actual role and future rotation changes |
 | Challenge the assessment constructively | "I disagree about {{point}} because {{evidence}}." | Whether the evidence changes the assessment |
 
-**Your reply:** _open_
+**Your reply:** {reply}
 
 **Staff response:** _not yet_
 
