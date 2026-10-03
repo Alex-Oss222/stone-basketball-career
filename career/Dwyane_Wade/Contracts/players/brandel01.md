@@ -2,9 +2,9 @@
 
 # Contract | Elton Brand
 
-Known through: 2003-07-01. [Open interactive contract](brandel01.html#contract) · [Contract history](brandel01.html#contract-history)
+Known through: 2003-07-02. [Open interactive contract](brandel01.html#contract) · [Contract history](brandel01.html#contract-history)
 
-Elton Brand: free agent expiring. Evidence cutoff: 2003-07-01.
+Elton Brand: free agent expiring. Evidence cutoff: 2003-07-02.
 
 ## Current contract
 

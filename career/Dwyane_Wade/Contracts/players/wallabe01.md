@@ -2,9 +2,9 @@
 
 # Contract | Ben Wallace
 
-Known through: 2003-07-01. [Open interactive contract](wallabe01.html#contract) · [Contract history](wallabe01.html#contract-history)
+Known through: 2003-07-02. [Open interactive contract](wallabe01.html#contract) · [Contract history](wallabe01.html#contract-history)
 
-Ben Wallace: under contract. Evidence cutoff: 2003-07-01.
+Ben Wallace: under contract. Evidence cutoff: 2003-07-02.
 
 ## Current contract
 

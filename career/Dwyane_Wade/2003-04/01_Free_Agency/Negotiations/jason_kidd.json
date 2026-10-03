@@ -70,6 +70,44 @@
     "errors": []
    },
    "decision_event": "2003-fa-kiddja01-offer-1",
+   "answer": "counter",
+   "answered": "2003-07-02",
+   "counter": 10042251
+  },
+  {
+   "round": 2,
+   "date": "2003-07-02",
+   "offer_id": "MIA-jason_kidd-1",
+   "version": 2,
+   "route": "sign_and_trade",
+   "terms": {
+    "first_year": 9986461,
+    "years": 3,
+    "schedule": [
+     9986461,
+     11234769,
+     12483076
+    ],
+    "guaranteed": 33704306,
+    "raise_percent": 12.5,
+    "last_year_guaranteed": true,
+    "round": 2,
+    "promise": {
+     "role": "starter",
+     "minutes_per_game": 32
+    },
+    "basis": "round 2: ask $10,626,721, Miami's valuation $10,418,354, ceiling $11,460,189, counter $10,042,251"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-kiddja01-offer-2",
    "answer": null,
    "answered": null,
    "counter": null
@@ -86,7 +124,7 @@
   "trusted_issuers": [
    "miami_cap_adapter"
   ],
-  "last_at": "2003-07-01T12:00:00-04:00",
+  "last_at": "2003-07-02T12:00:00-04:00",
   "cba": "1999",
   "phase": "market",
   "market": {
@@ -108,6 +146,17 @@
     },
     "issued_at": "2003-07-01T12:00:00-04:00",
     "expires_at": "2003-07-04T12:00:00-04:00",
+    "status": "superseded"
+   },
+   {
+    "offer_id": "MIA-jason_kidd-1",
+    "version": 2,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":32,\"role\":\"starter\"},\"route\":\"sign_and_trade\",\"salary_schedule\":[{\"guaranteed\":9986461,\"option\":\"none\",\"salary\":9986461,\"season\":\"2003-04\"},{\"guaranteed\":11234769,\"option\":\"none\",\"salary\":11234769,\"season\":\"2004-05\"},{\"guaranteed\":12483076,\"option\":\"none\",\"salary\":12483076,\"season\":\"2005-06\"}]}"
+    },
+    "issued_at": "2003-07-02T12:00:00-04:00",
+    "expires_at": "2003-07-05T12:00:00-04:00",
     "status": "open"
    }
   ],
@@ -117,7 +166,17 @@
    null,
    null
   ],
-  "requests": [],
+  "requests": [
+   {
+    "offer_id": "MIA-jason_kidd-1",
+    "version": 1,
+    "terms": {
+     "encoded": "{\"salary_schedule\":[{\"guaranteed\":10042251,\"option\":\"none\",\"salary\":10042251,\"season\":\"2003-04\"},{\"guaranteed\":11297532,\"option\":\"none\",\"salary\":11297532,\"season\":\"2004-05\"},{\"guaranteed\":12552814,\"option\":\"none\",\"salary\":12552814,\"season\":\"2005-06\"}]}"
+    },
+    "requested_at": "2003-07-02T09:00:00-04:00",
+    "decision_ref": "2003-fa-kiddja01-offer-1"
+   }
+  ],
   "sheet": null,
   "resolution": null,
   "events": [
@@ -171,6 +230,45 @@
      "valid_until": "2003-07-02T12:00:00-04:00",
      "scope": "club_offer",
      "subject_digest": "44aecb3251fc7d32ef0d42b949fb94d44a1da6c710534f79583a85e345dbc26e"
+    }
+   },
+   {
+    "action": "counter_request",
+    "actor": {
+     "kind": "player",
+     "identity": "Jason Kidd"
+    },
+    "at": "2003-07-02T09:00:00-04:00",
+    "source_refs": [
+     "2003-fa-kiddja01-offer-1"
+    ],
+    "subject_digest": "c4d40a0c55b0218ce8a54f9f668cb3417d3f6dca7c239eb824325f92052d8a31",
+    "attestation": null
+   },
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-02T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "4feb7d649f9a3994554bcdb24f0eea85f9cc2ee991c9aeef37ea3379f72c0148",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-02T12:00:00-04:00",
+     "valid_until": "2003-07-03T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "4feb7d649f9a3994554bcdb24f0eea85f9cc2ee991c9aeef37ea3379f72c0148"
     }
    }
   ]

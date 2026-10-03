@@ -1,0 +1,12 @@
+{
+ "event_id": "2003-fa-kiddja01-offer-2",
+ "date": "2003-07-02",
+ "question": "Does Jason Kidd accept Miami's offer (3 years, $33,704,306 guaranteed)?",
+ "decider": "Jason Kidd (simulated player)",
+ "options": {
+  "accept": 0.02,
+  "counter": 0.686,
+  "reject": 0.294
+ },
+ "basis": "Utility of Miami's offer 0.870 against his alternative 1.568 (real contract (world data): 6 years, $103,670,000 at New Jersey Nets); priorities {'money': 0.55, 'years': 0.15, 'role': 0.1, 'winning': 0.1, 'location': 0.1}; logistic slope 6.0, kept inside (0.02, 0.95); round 2 of 3."
+}
