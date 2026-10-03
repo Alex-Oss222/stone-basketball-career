@@ -2,7 +2,7 @@
 
 # Season exit meeting | Dwyane Wade
 
-Career date: 2003-11-03 · Miami Heat · inactive
+Career date: 2003-11-04 · Miami Heat · inactive
 
 [Live milestone desk](index.html#exit_meeting) · [All milestones](README.md)
 
@@ -85,4 +85,5 @@ The actual season close and an agreed exit-meeting date.
 - [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

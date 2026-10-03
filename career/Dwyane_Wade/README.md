@@ -4,7 +4,7 @@
 
 ![Player career overview: professional identity, NBA regular-season statistics and playoff statistics](assets/career_overview.svg)
 
-![Earned professional awards through 2003-11-03](assets/stat_reports/awards_2003-11-03.svg)
+![Earned professional awards through 2003-11-04](assets/stat_reports/awards_2003-11-04.svg)
 
 [Professional identity](Professional_Identity.md) · [Career statistics](Stats_and_Awards/README.md) · [Earned awards](Awards.md) · [National team / FIBA](National_Team/README.md)
 
@@ -25,13 +25,13 @@
 
 NBA entry: 2003 draft, round 1, No. 5 overall, Miami Heat.
 
-Identity as of 2003-11-03; status snapshot dated 2003-10-24. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-11-04; status snapshot dated 2003-10-24. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 </details>
 
 ## Statistics
 
-Career cutoff: **2003-11-03**. Club competitions and national-team events have separate records.
+Career cutoff: **2003-11-04**. Club competitions and national-team events have separate records.
 
 ### NBA regular season
 
@@ -41,8 +41,8 @@ Career cutoff: **2003-11-03**. Club competitions and national-team events have s
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04](Stats_and_Awards/2003-04/README.md) | 19 | Miami Heat | NBA | SG / PG | 3 | 0 | 19.4 | 2.7 | 5.7 | .471 | 0.3 | 1.0 | .333 | 2.3 | 4.7 | .500 | .500 | 3.7 | 3.7 | 1.000 | 1.7 | 1.0 | 2.7 | 1.7 | 1.0 | 0.3 | 0.3 | 1.0 | 9.3 | .641 | — |
-| Career total | 19 | Miami Heat | NBA | SG / PG | 3 | 0 | 19.4 | 2.7 | 5.7 | .471 | 0.3 | 1.0 | .333 | 2.3 | 4.7 | .500 | .500 | 3.7 | 3.7 | 1.000 | 1.7 | 1.0 | 2.7 | 1.7 | 1.0 | 0.3 | 0.3 | 1.0 | 9.3 | .641 | — |
+| [2003-04](Stats_and_Awards/2003-04/README.md) | 19 | Miami Heat | NBA | SG / PG | 4 | 0 | 19.9 | 2.8 | 6.5 | .423 | 0.5 | 2.0 | .250 | 2.2 | 4.5 | .500 | .462 | 3.8 | 3.8 | 1.000 | 1.2 | 1.8 | 3.0 | 1.5 | 1.2 | 0.5 | 0.5 | 1.0 | 9.8 | .598 | — |
+| Career total | 19 | Miami Heat | NBA | SG / PG | 4 | 0 | 19.9 | 2.8 | 6.5 | .423 | 0.5 | 2.0 | .250 | 2.2 | 4.5 | .500 | .462 | 3.8 | 3.8 | 1.000 | 1.2 | 1.8 | 3.0 | 1.5 | 1.2 | 0.5 | 0.5 | 1.0 | 9.8 | .598 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
