@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="180" viewBox="0 0 1280 180" role="img" aria-labelledby="t d">
+<title id="t">Chucky Atkins</title><desc id="d">Chucky Atkins, Detroit Pistons, Point guard, #7.</desc>
+<rect width="1280" height="180" rx="24" fill="#003da5"/>
+<rect x="0" y="150" width="1280" height="30" fill="#d50032" fill-opacity=".92"/>
+<rect x="0" y="150" width="1280" height="6" fill="#d50032"/>
+<text x="48" y="78" font-family="sans-serif" font-size="54" font-weight="700" fill="#ffffff">Chucky Atkins</text>
+<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Point guard · Detroit Pistons</text>
+<text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#7</text>
+</svg>

@@ -1,0 +1,2944 @@
+{
+  "schema_version": 1,
+  "purpose": "Catalogue of NBA awards and honors across eras, with each award's first season, electorate, scoring rule and the dated rule changes that gate how a season's vote may be run.",
+  "location_note": "An era-spanning reference kept in library/2003/league, like 00_Team/Finances/league_cap_history.json, because the 2003 cycle is where the career starts; it is world knowledge about how the league decides honors, not a result of any season.",
+  "era_gating": "An award may be voted in a season only if its first_season is on or before that season and its last_season is null or on or after it. A rule in `rules` applies only from its first_season; a later rule never applies retroactively (the 65-game rule of 2023-24 never touches the 2003-04 vote). `runtime/award_records.awards_in_force(season)` reads this file; docs/awards_catalog.md explains it.",
+  "research_date": "2026-10-03",
+  "status_values": {
+    "sourced": "stated by a fetched page listed in `sources`",
+    "derived": "computed from figures on a fetched page (for example ballots from a maximum point total); the derivation is in the note",
+    "unverified": "not established by any fetched page; never a basis for a simulated vote until researched"
+  },
+  "hindsight_note": "Sources were read for rules and dates only. Real winners, vote totals and results after June 26, 2003 are not catalogued and must not be imported.",
+  "season_format": "YYYY-YY; a season is compared by its starting year",
+  "honor_name_contract": "The `honor_names` an award writes to awards.json must match runtime/standing.py HONOR_* names where one exists: All-Star, All-NBA First/Second/Third Team, Most Valuable Player, Finals MVP.",
+  "sources": {
+    "wp_mvp": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Most_Valuable_Player_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_mvp": {
+      "url": "https://www.basketball-reference.com/awards/mvp.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_roy": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Rookie_of_the_Year_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_roy": {
+      "url": "https://www.basketball-reference.com/awards/roy.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_dpoy": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Defensive_Player_of_the_Year_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_dpoy": {
+      "url": "https://www.basketball-reference.com/awards/dpoy.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_smoy": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Sixth_Man_of_the_Year_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_smoy": {
+      "url": "https://www.basketball-reference.com/awards/smoy.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_mip": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Most_Improved_Player_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_mip": {
+      "url": "https://www.basketball-reference.com/awards/mip.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_coy": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Coach_of_the_Year_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_coy": {
+      "url": "https://www.basketball-reference.com/awards/coy.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_eoy": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Executive_of_the_Year_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_eoy": {
+      "url": "https://www.basketball-reference.com/awards/eoy.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_cpoy": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Comeback_Player_of_the_Year_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "wp_fmvp": {
+      "url": "https://en.wikipedia.org/wiki/Bill_Russell_NBA_Finals_Most_Valuable_Player_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_fmvp": {
+      "url": "https://www.basketball-reference.com/awards/finals_mvp.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_asgmvp": {
+      "url": "https://en.wikipedia.org/wiki/NBA_All-Star_Game_Most_Valuable_Player_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_asgmvp": {
+      "url": "https://www.basketball-reference.com/awards/all_star_mvp.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_allnba": {
+      "url": "https://en.wikipedia.org/wiki/All-NBA_Team",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_allnba": {
+      "url": "https://www.basketball-reference.com/awards/all_league.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_alldef": {
+      "url": "https://en.wikipedia.org/wiki/NBA_All-Defensive_Team",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_alldef": {
+      "url": "https://www.basketball-reference.com/awards/all_defense.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_allrookie": {
+      "url": "https://en.wikipedia.org/wiki/NBA_All-Rookie_Team",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_allrookie": {
+      "url": "https://www.basketball-reference.com/awards/all_rookie.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_pomw": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Player_of_the_Month_and_Week",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_pow": {
+      "url": "https://www.basketball-reference.com/awards/pow.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "br_pom": {
+      "url": "https://www.basketball-reference.com/awards/pom.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_rom": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Rookie_of_the_Month_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_rom": {
+      "url": "https://www.basketball-reference.com/awards/rom.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_sports": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Sportsmanship_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_sports": {
+      "url": "https://www.basketball-reference.com/awards/sportsmanship.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_kennedy": {
+      "url": "https://en.wikipedia.org/wiki/J._Walter_Kennedy_Citizenship_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_kennedy": {
+      "url": "https://www.basketball-reference.com/awards/citizenship.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_teammate": {
+      "url": "https://en.wikipedia.org/wiki/Twyman%E2%80%93Stokes_Teammate_of_the_Year_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_teammate": {
+      "url": "https://www.basketball-reference.com/awards/tmoy.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_hustle": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Hustle_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_hustle": {
+      "url": "https://www.basketball-reference.com/awards/hustle.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_clutch": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Clutch_Player_of_the_Year_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_clutch": {
+      "url": "https://www.basketball-reference.com/awards/clutch_poy.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_sjc": {
+      "url": "https://en.wikipedia.org/wiki/Kareem_Abdul-Jabbar_Social_Justice_Champion_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_sjc": {
+      "url": "https://www.basketball-reference.com/awards/social_justice.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_cup": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Cup",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_istmvp": {
+      "url": "https://www.basketball-reference.com/awards/ist_mvp.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "br_istteam": {
+      "url": "https://www.basketball-reference.com/awards/ist_all_tournament.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_rising": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Rising_Stars_Challenge",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "wp_cassist": {
+      "url": "https://en.wikipedia.org/wiki/NBA_Community_Assist_Award",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "wp_asg": {
+      "url": "https://en.wikipedia.org/wiki/NBA_All-Star_Game",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "wp_asg2004": {
+      "url": "https://en.wikipedia.org/wiki/2004_NBA_All-Star_Game",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_ratereq": {
+      "url": "https://www.basketball-reference.com/about/rate_stat_req.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "wp_pts": {
+      "url": "https://en.wikipedia.org/wiki/List_of_NBA_annual_scoring_leaders",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "wp_trb": {
+      "url": "https://en.wikipedia.org/wiki/List_of_NBA_annual_rebounding_leaders",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "wp_ast": {
+      "url": "https://en.wikipedia.org/wiki/List_of_NBA_annual_assists_leaders",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "wp_stl": {
+      "url": "https://en.wikipedia.org/wiki/List_of_NBA_annual_steals_leaders",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "wp_blk": {
+      "url": "https://en.wikipedia.org/wiki/List_of_NBA_annual_blocks_leaders",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "wp_fg": {
+      "url": "https://en.wikipedia.org/wiki/List_of_NBA_annual_field_goal_percentage_leaders",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "wp_3p": {
+      "url": "https://en.wikipedia.org/wiki/List_of_NBA_annual_3-point_field_goal_percentage_leaders",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "wp_ft": {
+      "url": "https://en.wikipedia.org/wiki/List_of_NBA_annual_free_throw_percentage_leaders",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "wp_resting": {
+      "url": "https://en.wikipedia.org/wiki/Resting_the_starters",
+      "kind": "wikipedia",
+      "verified_on": "2026-10-03"
+    },
+    "br_2004": {
+      "url": "https://www.basketball-reference.com/awards/awards_2004.html",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    },
+    "nba_pr_2024": {
+      "url": "https://pr.nba.com/voting-results-2023-24-nba-regular-season-awards/",
+      "kind": "nba",
+      "verified_on": "2026-10-03"
+    },
+    "nba_roy_2004": {
+      "url": "https://www.nba.com/cavaliers/news/lbj_roy_040420.html",
+      "kind": "nba",
+      "verified_on": "2026-10-03"
+    },
+    "nba_allrookie_2004": {
+      "url": "https://www.nba.com/cavaliers/news/lbj_allrookie_040427.html",
+      "kind": "nba",
+      "verified_on": "2026-10-03"
+    },
+    "nba_potw_example": {
+      "url": "https://official.nba.com/miamis-bosh-and-golden-states-thompson-named-nba-eastern-and-western-conference-players-of-the-week/",
+      "kind": "nba",
+      "verified_on": "2026-10-03"
+    },
+    "br_index": {
+      "url": "https://www.basketball-reference.com/awards/",
+      "kind": "basketball_reference",
+      "verified_on": "2026-10-03"
+    }
+  },
+  "periods": {
+    "regular_season": {
+      "definition": "The club's regular-season games of the season; voting closes after the last regular-season game and winners are announced during the playoffs.",
+      "announcement": {
+        "value": "during the playoffs; in 2004 the Rookie of the Year was announced April 20 and the All-Rookie teams April 27",
+        "status": "sourced",
+        "sources": [
+          "nba_roy_2004",
+          "nba_allrookie_2004"
+        ],
+        "note": "the fetched pages show only the dated headlines; the other 2004 announcement dates are unverified"
+      }
+    },
+    "award_week": {
+      "definition": "An official Monday-to-Sunday window announced by the league; it can cross this repository's fixed day 1-7, 8-14, 15-21, 22-end buckets, and the honor is filed on the week page containing the period's end date.",
+      "announcement": {
+        "value": "the Monday after the period",
+        "status": "unverified",
+        "sources": [
+          "nba_potw_example"
+        ],
+        "note": "the official example announcement names the period and the other nominees; a Monday announcement is the usual practice, not a fetched rule"
+      }
+    },
+    "calendar_month": {
+      "definition": "The calendar month's games; October and April are partial months.",
+      "announcement": {
+        "value": "early in the following month, before the player's next home game for Rookie of the Month",
+        "status": "unverified",
+        "sources": [
+          "wp_rom"
+        ]
+      }
+    },
+    "nba_finals": {
+      "definition": "The NBA Finals series.",
+      "announcement": {
+        "value": "immediately after the final game",
+        "status": "sourced",
+        "sources": [
+          "wp_fmvp"
+        ]
+      }
+    },
+    "all_star_break": {
+      "definition": "Selection announced before the All-Star Game: starters first, reserves later.",
+      "announcement": {
+        "value": null,
+        "status": "unverified",
+        "sources": []
+      }
+    },
+    "all_star_game": {
+      "definition": "The All-Star Game itself.",
+      "announcement": {
+        "value": "immediately after the game",
+        "status": "sourced",
+        "sources": [
+          "wp_asgmvp"
+        ]
+      }
+    },
+    "all_star_weekend": {
+      "definition": "The Rookie Challenge / Rising Stars game on All-Star weekend (2004: Friday, February 13).",
+      "announcement": {
+        "value": "immediately after the game",
+        "status": "sourced",
+        "sources": [
+          "wp_rising"
+        ]
+      }
+    },
+    "nba_cup": {
+      "definition": "Group play, knockout rounds and the championship game of the in-season tournament, from 2023-24.",
+      "announcement": {
+        "value": "after the championship game",
+        "status": "sourced",
+        "sources": [
+          "wp_cup"
+        ]
+      }
+    }
+  },
+  "rules": [
+    {
+      "id": "games_played_65_2023_24",
+      "name": "65-game eligibility rule",
+      "first_season": "2023-24",
+      "last_season": null,
+      "applies_to": [
+        "mvp",
+        "dpoy",
+        "mip",
+        "all_nba",
+        "all_defensive"
+      ],
+      "text": "A player must appear in at least 65 games, counting only games with at least 20 minutes played, plus up to two near misses of 15 to 19 minutes; 62 credited games suffice after a season-ending injury. Rookie of the Year, Sixth Man of the Year and All-Rookie are not covered. Clutch Player coverage is not stated by the fetched pages.",
+      "status": "sourced",
+      "sources": [
+        "wp_mvp",
+        "wp_resting",
+        "wp_dpoy",
+        "wp_mip",
+        "wp_allnba",
+        "wp_alldef"
+      ],
+      "note": "A later rule: the 2003-04 vote must not use it."
+    },
+    {
+      "id": "mvp_media_vote_1980_81",
+      "name": "MVP voted by media",
+      "first_season": "1980-81",
+      "last_season": null,
+      "applies_to": [
+        "mvp"
+      ],
+      "text": "Players voted the MVP through 1979-80; sportswriters and broadcasters from 1980-81.",
+      "status": "sourced",
+      "sources": [
+        "wp_mvp"
+      ]
+    },
+    {
+      "id": "mvp_fan_ballot_2009_10",
+      "name": "One fan ballot in the MVP vote",
+      "first_season": "2009-10",
+      "last_season": null,
+      "applies_to": [
+        "mvp"
+      ],
+      "text": "'Starting from 2010, one ballot was cast by fans through online voting.' The season boundary is inferred from the year; unverified as a season.",
+      "status": "unverified",
+      "sources": [
+        "wp_mvp"
+      ]
+    },
+    {
+      "id": "all_nba_third_team_1988_89",
+      "name": "All-NBA Third Team",
+      "first_season": "1988-89",
+      "last_season": null,
+      "applies_to": [
+        "all_nba"
+      ],
+      "text": "Three five-man teams since 1988.",
+      "status": "sourced",
+      "sources": [
+        "wp_allnba"
+      ]
+    },
+    {
+      "id": "all_nba_positionless_2023_24",
+      "name": "All-NBA positionless",
+      "first_season": "2023-24",
+      "last_season": null,
+      "applies_to": [
+        "all_nba"
+      ],
+      "text": "No positional slots from 2023-24; two guards, two forwards and one center before.",
+      "status": "sourced",
+      "sources": [
+        "wp_allnba"
+      ]
+    },
+    {
+      "id": "all_defensive_media_vote_2013_14",
+      "name": "All-Defensive voted by media",
+      "first_season": "2013-14",
+      "last_season": null,
+      "applies_to": [
+        "all_defensive"
+      ],
+      "text": "Head coaches voted through 2012-13; a panel of writers and broadcasters from 2013-14.",
+      "status": "sourced",
+      "sources": [
+        "wp_alldef"
+      ]
+    },
+    {
+      "id": "all_defensive_positionless_2023_24",
+      "name": "All-Defensive positionless",
+      "first_season": "2023-24",
+      "last_season": null,
+      "applies_to": [
+        "all_defensive"
+      ],
+      "text": "No positional slots from 2023-24.",
+      "status": "sourced",
+      "sources": [
+        "wp_alldef"
+      ]
+    },
+    {
+      "id": "all_rookie_second_team_1989_90",
+      "name": "All-Rookie Second Team",
+      "first_season": "1989-90",
+      "last_season": null,
+      "applies_to": [
+        "all_rookie"
+      ],
+      "text": "Wikipedia's table shows a second team from 1989-90; the exact first season of the second team is not stated in prose.",
+      "status": "unverified",
+      "sources": [
+        "wp_allrookie"
+      ]
+    },
+    {
+      "id": "eoy_league_vote_2008_09",
+      "name": "Executive of the Year voted by club executives",
+      "first_season": "2008-09",
+      "last_season": null,
+      "applies_to": [
+        "eoy"
+      ],
+      "text": "The Sporting News selected the award through 2008; club executives vote from 2009. The season boundary is inferred from the year.",
+      "status": "unverified",
+      "sources": [
+        "wp_eoy"
+      ]
+    },
+    {
+      "id": "all_star_frontcourt_2012_13",
+      "name": "All-Star frontcourt ballot",
+      "first_season": "2012-13",
+      "last_season": null,
+      "applies_to": [
+        "all_star_selection"
+      ],
+      "text": "'Prior to 2013, fans selected two forwards and one center instead of generic frontcourt players.'",
+      "status": "sourced",
+      "sources": [
+        "wp_asg"
+      ]
+    },
+    {
+      "id": "all_star_weighted_vote_2016_17",
+      "name": "All-Star weighted starter vote",
+      "first_season": "2016-17",
+      "last_season": null,
+      "applies_to": [
+        "all_star_selection"
+      ],
+      "text": "From the 2017 game, starters by fans 50%, players 25%, media 25%.",
+      "status": "sourced",
+      "sources": [
+        "wp_asg"
+      ]
+    },
+    {
+      "id": "all_star_draft_2017_18",
+      "name": "All-Star captains' draft",
+      "first_season": "2017-18",
+      "last_season": null,
+      "applies_to": [
+        "all_star_selection"
+      ],
+      "text": "From the 2018 game, the top vote-getters of each conference draft the teams regardless of conference.",
+      "status": "sourced",
+      "sources": [
+        "wp_asg"
+      ]
+    },
+    {
+      "id": "per_game_titles_1969_70",
+      "name": "Statistical titles on per-game averages",
+      "first_season": "1969-70",
+      "last_season": null,
+      "applies_to": [
+        "scoring_title",
+        "rebounding_title",
+        "assists_title"
+      ],
+      "text": "Totals decided the scoring, rebounding and assists titles through 1968-69; per-game averages from 1969-70.",
+      "status": "sourced",
+      "sources": [
+        "wp_pts",
+        "wp_trb",
+        "wp_ast"
+      ]
+    },
+    {
+      "id": "stat_titles_58_games_2013_14",
+      "name": "58-game qualification for rate titles",
+      "first_season": "2013-14",
+      "last_season": null,
+      "applies_to": [
+        "scoring_title",
+        "rebounding_title",
+        "assists_title",
+        "steals_title",
+        "blocks_title",
+        "three_pct_title"
+      ],
+      "text": "58 games (70% of 82) or a total that would still lead when divided by 58; 82 made threes for the three-point title. In 2003-04 the thresholds were 70 games or the total minimums listed on each title.",
+      "status": "sourced",
+      "sources": [
+        "wp_pts",
+        "wp_stl",
+        "wp_3p",
+        "br_ratereq"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "id": "mvp",
+      "name": "Most Valuable Player",
+      "short_name": "MVP",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Most Valuable Player"
+      ],
+      "first_season": {
+        "value": "1955-56",
+        "status": "sourced",
+        "sources": [
+          "wp_mvp",
+          "br_mvp"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel",
+          "status": "sourced",
+          "sources": [
+            "wp_mvp"
+          ],
+          "note": "players voted through 1979-80; sportswriters and broadcasters from the United States and Canada from 1980-81; one fan ballot added from 2010"
+        },
+        "size": {
+          "value": 123,
+          "status": "derived",
+          "sources": [
+            "br_2004"
+          ],
+          "note": "2003-04 only: the Basketball-Reference 2003-04 voting page shows a 1,230-point maximum, which is 123 ballots at 10 points each; the number of ballots in any other season is not catalogued"
+        },
+        "size_2023_24": {
+          "value": 99,
+          "status": "sourced",
+          "sources": [
+            "nba_pr_2024"
+          ],
+          "note": "2023-24 ballot count, for comparison only; never applies to an earlier vote"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "10-7-5-3-1: five-place ballot; 10, 7, 5, 3 and 1 points",
+          "status": "sourced",
+          "sources": [
+            "wp_mvp"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "regular-season players",
+          "status": "sourced",
+          "sources": [
+            "wp_mvp"
+          ]
+        }
+      ],
+      "era_rules": [
+        "mvp_media_vote_1980_81",
+        "mvp_fan_ballot_2009_10",
+        "games_played_65_2023_24"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "wp_mvp",
+        "br_mvp",
+        "br_2004"
+      ],
+      "notes": [
+        "Trophy named the Michael Jordan Trophy from 2022-23 (Basketball-Reference index); the name of the trophy never changes the award."
+      ]
+    },
+    {
+      "id": "roy",
+      "name": "Rookie of the Year",
+      "short_name": "ROY",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Rookie of the Year"
+      ],
+      "first_season": {
+        "value": "1952-53",
+        "status": "sourced",
+        "sources": [
+          "wp_roy",
+          "br_roy"
+        ],
+        "note": "writers named winners 1947-48 to 1951-52, not recognised by the NBA"
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel",
+          "status": "sourced",
+          "sources": [
+            "wp_roy"
+          ],
+          "note": "United States and Canadian sportswriters and broadcasters"
+        },
+        "size": {
+          "value": 118,
+          "status": "derived",
+          "sources": [
+            "br_2004"
+          ],
+          "note": "2003-04 only: the 2003-04 voting page shows a 590-point maximum, which is 118 ballots at 5 points each"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "5-3-1: each voter names first, second and third; 5, 3 and 1 points; highest total wins regardless of first-place votes",
+          "status": "sourced",
+          "sources": [
+            "wp_roy"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "first NBA season (rookie status)",
+          "status": "sourced",
+          "sources": [
+            "wp_roy"
+          ]
+        }
+      ],
+      "era_rules": [],
+      "period": "regular_season",
+      "sources": [
+        "wp_roy",
+        "br_roy",
+        "br_2004",
+        "nba_roy_2004"
+      ],
+      "notes": [
+        "Not covered by the 65-game rule (Wikipedia, Resting the starters).",
+        "Wilt Chamberlain Trophy from 2022-23 (Basketball-Reference)."
+      ]
+    },
+    {
+      "id": "dpoy",
+      "name": "Defensive Player of the Year",
+      "short_name": "DPOY",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Defensive Player of the Year"
+      ],
+      "first_season": {
+        "value": "1982-83",
+        "status": "sourced",
+        "sources": [
+          "wp_dpoy",
+          "br_dpoy"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel",
+          "status": "sourced",
+          "sources": [
+            "wp_dpoy"
+          ],
+          "note": "sportswriters and broadcasters from the United States and Canada"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": [
+            "wp_dpoy"
+          ],
+          "note": "Wikipedia names a panel of 124 for recent seasons without a date; the 2003-04 count is not established by any fetched page; the repository's 118-ballot fallback stays provisional"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "5-3-1: each voter names first, second and third; 5, 3 and 1 points; highest total wins regardless of first-place votes",
+          "status": "sourced",
+          "sources": [
+            "wp_dpoy"
+          ]
+        }
+      },
+      "eligibility": [],
+      "era_rules": [
+        "games_played_65_2023_24"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "wp_dpoy",
+        "br_dpoy"
+      ],
+      "notes": [
+        "Hakeem Olajuwon Trophy from 2022-23 (Basketball-Reference)."
+      ]
+    },
+    {
+      "id": "smoy",
+      "name": "Sixth Man of the Year",
+      "short_name": "6MOY",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Sixth Man of the Year"
+      ],
+      "first_season": {
+        "value": "1982-83",
+        "status": "sourced",
+        "sources": [
+          "wp_smoy",
+          "br_smoy"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel",
+          "status": "sourced",
+          "sources": [
+            "wp_smoy"
+          ],
+          "note": "sportswriters and broadcasters from throughout the United States and Canada"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": [],
+          "note": "the 2003-04 count is not established; the repository's 118-ballot fallback stays provisional"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "5-3-1: each voter names first, second and third; 5, 3 and 1 points; highest total wins regardless of first-place votes",
+          "status": "sourced",
+          "sources": [
+            "wp_smoy"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "must come off the bench in more games than he starts",
+          "status": "sourced",
+          "sources": [
+            "wp_smoy"
+          ]
+        }
+      ],
+      "era_rules": [],
+      "period": "regular_season",
+      "sources": [
+        "wp_smoy",
+        "br_smoy"
+      ],
+      "notes": [
+        "Not covered by the 65-game rule (Wikipedia, Resting the starters).",
+        "John Havlicek Trophy from 2022-23 (Basketball-Reference)."
+      ]
+    },
+    {
+      "id": "mip",
+      "name": "Most Improved Player",
+      "short_name": "MIP",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Most Improved Player"
+      ],
+      "first_season": {
+        "value": "1985-86",
+        "status": "sourced",
+        "sources": [
+          "wp_mip",
+          "br_mip"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel",
+          "status": "sourced",
+          "sources": [
+            "wp_mip"
+          ],
+          "note": "sportswriters throughout the United States and Canada"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": [],
+          "note": "the 2003-04 count is not established; the repository's 118-ballot fallback stays provisional"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "5-3-1: each voter names first, second and third; 5, 3 and 1 points; highest total wins regardless of first-place votes",
+          "status": "sourced",
+          "sources": [
+            "wp_mip"
+          ]
+        }
+      },
+      "eligibility": [],
+      "era_rules": [
+        "games_played_65_2023_24"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "wp_mip",
+        "br_mip"
+      ],
+      "notes": [
+        "George Mikan Trophy from 2022-23 (Basketball-Reference index)."
+      ]
+    },
+    {
+      "id": "coy",
+      "name": "Coach of the Year",
+      "short_name": "COY",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Coach of the Year"
+      ],
+      "first_season": {
+        "value": "1962-63",
+        "status": "sourced",
+        "sources": [
+          "wp_coy",
+          "br_coy"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel",
+          "status": "sourced",
+          "sources": [
+            "wp_coy"
+          ],
+          "note": "sportswriters from the United States and Canada"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "5-3-1: each voter names first, second and third; 5, 3 and 1 points; highest total wins regardless of first-place votes",
+          "status": "sourced",
+          "sources": [
+            "wp_coy"
+          ]
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "regular_season",
+      "sources": [
+        "wp_coy",
+        "br_coy"
+      ],
+      "notes": [
+        "Red Auerbach Trophy (Wikipedia). Decided for head coaches; Miami's coach is eligible as a simulated decision, other coaches from the staffs files."
+      ]
+    },
+    {
+      "id": "eoy",
+      "name": "Executive of the Year",
+      "short_name": "EOY",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Executive of the Year"
+      ],
+      "first_season": {
+        "value": "1972-73",
+        "status": "sourced",
+        "sources": [
+          "wp_eoy",
+          "br_eoy"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "publication_then_executives",
+          "status": "sourced",
+          "sources": [
+            "wp_eoy"
+          ],
+          "note": "selected by The Sporting News from 1972-73 through 2008, recognised by the NBA; from 2009 voted by executives of the league's clubs"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": [],
+          "note": "the 2003-04 Sporting News selection process is not described by any fetched page"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": [
+            "wp_eoy"
+          ],
+          "note": "since 2009 'the person with the most votes wins'; no point system is published; the 2003-04 Sporting News method is unknown"
+        }
+      },
+      "eligibility": [],
+      "era_rules": [
+        "eoy_league_vote_2008_09"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "wp_eoy",
+        "br_eoy"
+      ],
+      "notes": []
+    },
+    {
+      "id": "comeback_poy",
+      "name": "Comeback Player of the Year",
+      "short_name": "CPOY",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Comeback Player of the Year"
+      ],
+      "first_season": {
+        "value": "1980-81",
+        "status": "sourced",
+        "sources": [
+          "wp_cpoy"
+        ]
+      },
+      "last_season": {
+        "value": "1985-86",
+        "status": "sourced",
+        "sources": [
+          "wp_cpoy"
+        ],
+        "note": "discontinued during 1986-87; Most Improved Player began in 1985-86 and is a distinct award"
+      },
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel",
+          "status": "sourced",
+          "sources": [
+            "wp_cpoy"
+          ],
+          "note": "78 media members: three from each NBA city and nine national"
+        },
+        "size": {
+          "value": 78,
+          "status": "sourced",
+          "sources": [
+            "wp_cpoy"
+          ]
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "regular_season",
+      "sources": [
+        "wp_cpoy"
+      ],
+      "notes": [
+        "Discontinued before 2003-04: never in force for this career."
+      ]
+    },
+    {
+      "id": "all_nba",
+      "name": "All-NBA Team",
+      "short_name": "All-NBA",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "All-NBA First Team",
+        "All-NBA Second Team",
+        "All-NBA Third Team"
+      ],
+      "first_season": {
+        "value": "1946-47",
+        "status": "sourced",
+        "sources": [
+          "wp_allnba",
+          "br_allnba"
+        ],
+        "note": "two teams originally; third team from 1988-89"
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel",
+          "status": "sourced",
+          "sources": [
+            "wp_allnba"
+          ],
+          "note": "global panel of sportswriters and broadcasters"
+        },
+        "size": {
+          "value": 123,
+          "status": "derived",
+          "sources": [
+            "br_2004"
+          ],
+          "note": "2003-04 only: the 2003-04 voting page shows a 615-point maximum, which is 123 ballots at 5 points each"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "5-3-1: first-team vote 5 points, second-team 3, third-team 1",
+          "status": "sourced",
+          "sources": [
+            "wp_allnba"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "positions: two guards, two forwards and one center per team from 1956 through 2022-23",
+          "status": "sourced",
+          "sources": [
+            "wp_allnba"
+          ]
+        }
+      ],
+      "era_rules": [
+        "all_nba_third_team_1988_89",
+        "all_nba_positionless_2023_24",
+        "games_played_65_2023_24"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "wp_allnba",
+        "br_allnba",
+        "br_2004"
+      ],
+      "notes": []
+    },
+    {
+      "id": "all_defensive",
+      "name": "All-Defensive Team",
+      "short_name": "All-Defensive",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "All-Defensive First Team",
+        "All-Defensive Second Team"
+      ],
+      "first_season": {
+        "value": "1968-69",
+        "status": "sourced",
+        "sources": [
+          "wp_alldef",
+          "br_alldef"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "coaches",
+          "status": "sourced",
+          "sources": [
+            "wp_alldef"
+          ],
+          "note": "NBA head coaches, who may not vote for their own players, through 2012-13; a media panel from 2013-14"
+        },
+        "size": {
+          "value": 29,
+          "status": "derived",
+          "sources": [
+            "br_2004"
+          ],
+          "note": "2003-04 only: 29 head coaches; the 2003-04 voting page shows a 58-point maximum, which is 29 first-team votes at 2 points"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "2-1: first-team vote 2 points, second-team 1",
+          "status": "sourced",
+          "sources": [
+            "wp_alldef"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "positional teams (two guards, two forwards, one center) through 2022-23",
+          "status": "sourced",
+          "sources": [
+            "wp_alldef"
+          ]
+        }
+      ],
+      "era_rules": [
+        "all_defensive_media_vote_2013_14",
+        "all_defensive_positionless_2023_24",
+        "games_played_65_2023_24"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "wp_alldef",
+        "br_alldef",
+        "br_2004"
+      ],
+      "notes": []
+    },
+    {
+      "id": "all_rookie",
+      "name": "All-Rookie Team",
+      "short_name": "All-Rookie",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "All-Rookie First Team",
+        "All-Rookie Second Team"
+      ],
+      "first_season": {
+        "value": "1962-63",
+        "status": "sourced",
+        "sources": [
+          "wp_allrookie",
+          "br_allrookie"
+        ],
+        "note": "first team only at first; a second team is shown from 1989-90"
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "coaches",
+          "status": "sourced",
+          "sources": [
+            "wp_allrookie"
+          ],
+          "note": "NBA head coaches, not allowed to vote for players on their own team"
+        },
+        "size": {
+          "value": 29,
+          "status": "derived",
+          "sources": [
+            "br_2004"
+          ],
+          "note": "2003-04 only: 29 head coaches; the 2003-04 voting page shows a 56-point maximum for a rookie, which is 28 first-team votes at 2 points, his own coach excluded"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "2-1: first-team vote 2 points, second-team 1; top five form the first team, next five the second, ties expand a team",
+          "status": "sourced",
+          "sources": [
+            "wp_allrookie"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "rookies; no positional slots",
+          "status": "sourced",
+          "sources": [
+            "wp_allrookie"
+          ]
+        }
+      ],
+      "era_rules": [
+        "all_rookie_second_team_1989_90"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "wp_allrookie",
+        "br_allrookie",
+        "br_2004",
+        "nba_allrookie_2004"
+      ],
+      "notes": [
+        "Not covered by the 65-game rule (Wikipedia, Resting the starters)."
+      ]
+    },
+    {
+      "id": "sportsmanship",
+      "name": "NBA Sportsmanship Award",
+      "short_name": "Sportsmanship",
+      "scope": "season",
+      "category": "non_performance",
+      "competition": "regular",
+      "honor_names": [
+        "NBA Sportsmanship Award"
+      ],
+      "first_season": {
+        "value": "1995-96",
+        "status": "sourced",
+        "sources": [
+          "wp_sports",
+          "br_sports"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "players",
+          "status": "sourced",
+          "sources": [
+            "wp_sports"
+          ],
+          "note": "each club nominates one player; NBA players vote"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "11-9-7-5-3-1 over six places",
+          "status": "sourced",
+          "sources": [
+            "wp_sports"
+          ]
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "regular_season",
+      "sources": [
+        "wp_sports",
+        "br_sports"
+      ],
+      "notes": [
+        "Joe Dumars Trophy from 2000 (Wikipedia)."
+      ]
+    },
+    {
+      "id": "kennedy_citizenship",
+      "name": "J. Walter Kennedy Citizenship Award",
+      "short_name": "Kennedy Citizenship",
+      "scope": "season",
+      "category": "non_performance",
+      "competition": "regular",
+      "honor_names": [
+        "J. Walter Kennedy Citizenship Award"
+      ],
+      "first_season": {
+        "value": "1974-75",
+        "status": "sourced",
+        "sources": [
+          "wp_kennedy",
+          "br_kennedy"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "writers_association",
+          "status": "sourced",
+          "sources": [
+            "wp_kennedy"
+          ],
+          "note": "Professional Basketball Writers Association members nominate and vote"
+        },
+        "size": {
+          "value": 150,
+          "status": "sourced",
+          "sources": [
+            "wp_kennedy"
+          ],
+          "note": "'approximately 150 PBWA members' (undated)"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "regular_season",
+      "sources": [
+        "wp_kennedy",
+        "br_kennedy"
+      ],
+      "notes": []
+    },
+    {
+      "id": "teammate_of_year",
+      "name": "Twyman-Stokes Teammate of the Year",
+      "short_name": "Teammate of the Year",
+      "scope": "season",
+      "category": "non_performance",
+      "competition": "regular",
+      "honor_names": [
+        "Twyman-Stokes Teammate of the Year"
+      ],
+      "first_season": {
+        "value": "2012-13",
+        "status": "sourced",
+        "sources": [
+          "wp_teammate",
+          "br_teammate"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "players",
+          "status": "sourced",
+          "sources": [
+            "wp_teammate"
+          ],
+          "note": "a panel of NBA executives nominates 12 players, six per conference; NBA players vote"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "10-7-5-3-1 over five places",
+          "status": "sourced",
+          "sources": [
+            "wp_teammate"
+          ]
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "regular_season",
+      "sources": [
+        "wp_teammate",
+        "br_teammate"
+      ],
+      "notes": []
+    },
+    {
+      "id": "hustle",
+      "name": "NBA Hustle Award",
+      "short_name": "Hustle",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "NBA Hustle Award"
+      ],
+      "first_season": {
+        "value": "2016-17",
+        "status": "sourced",
+        "sources": [
+          "wp_hustle",
+          "br_hustle"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "sourced",
+          "sources": [
+            "wp_hustle"
+          ],
+          "note": "decided from tracked hustle statistics (deflections, charges, loose balls, screens, contests)"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": [],
+          "note": "no vote"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "statistical, no ballot",
+          "status": "sourced",
+          "sources": [
+            "wp_hustle"
+          ]
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "regular_season",
+      "sources": [
+        "wp_hustle",
+        "br_hustle"
+      ],
+      "notes": [
+        "Needs tracking data the engine does not produce; even once in force it cannot be decided without it."
+      ]
+    },
+    {
+      "id": "clutch_poy",
+      "name": "Clutch Player of the Year",
+      "short_name": "Clutch",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Clutch Player of the Year"
+      ],
+      "first_season": {
+        "value": "2022-23",
+        "status": "sourced",
+        "sources": [
+          "wp_clutch",
+          "br_clutch"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel",
+          "status": "sourced",
+          "sources": [
+            "wp_clutch"
+          ],
+          "note": "media panel voting on nominations from NBA head coaches"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "regular_season",
+      "sources": [
+        "wp_clutch",
+        "br_clutch"
+      ],
+      "notes": [
+        "Jerry West Trophy (Wikipedia)."
+      ]
+    },
+    {
+      "id": "social_justice_champion",
+      "name": "Kareem Abdul-Jabbar Social Justice Champion",
+      "short_name": "Social Justice Champion",
+      "scope": "season",
+      "category": "non_performance",
+      "competition": "regular",
+      "honor_names": [
+        "Kareem Abdul-Jabbar Social Justice Champion"
+      ],
+      "first_season": {
+        "value": "2020-21",
+        "status": "sourced",
+        "sources": [
+          "wp_sjc",
+          "br_sjc"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "committee",
+          "status": "sourced",
+          "sources": [
+            "wp_sjc"
+          ],
+          "note": "each club nominates one player; a committee of NBA legends, league executives and social justice leaders selects five finalists and the winner"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "committee selection, no ballot",
+          "status": "sourced",
+          "sources": [
+            "wp_sjc"
+          ]
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "regular_season",
+      "sources": [
+        "wp_sjc",
+        "br_sjc"
+      ],
+      "notes": []
+    },
+    {
+      "id": "community_assist_monthly",
+      "name": "NBA Cares Community Assist Award",
+      "short_name": "Community Assist (month)",
+      "scope": "monthly",
+      "category": "non_performance",
+      "competition": "regular",
+      "honor_names": [
+        "NBA Cares Community Assist Award"
+      ],
+      "first_season": {
+        "value": "2001-02",
+        "status": "sourced",
+        "sources": [
+          "wp_cassist"
+        ],
+        "note": "first monthly award October 2001"
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "unverified",
+          "sources": [
+            "wp_cassist"
+          ],
+          "note": "Wikipedia does not say who decides it"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "calendar_month",
+      "sources": [
+        "wp_cassist"
+      ],
+      "notes": [
+        "Off-season Community Assist awards exist from 2008-09 (Wikipedia)."
+      ]
+    },
+    {
+      "id": "bob_lanier_community_assist",
+      "name": "Bob Lanier Community Assist Award",
+      "short_name": "Community Assist (season)",
+      "scope": "season",
+      "category": "non_performance",
+      "competition": "regular",
+      "honor_names": [
+        "Bob Lanier Community Assist Award"
+      ],
+      "first_season": {
+        "value": "2021-22",
+        "status": "unverified",
+        "sources": [
+          "wp_cassist"
+        ],
+        "note": "Wikipedia: the season-long Community Assist award was renamed for Bob Lanier in 2022; whether the 2021-22 award was the first to carry the name, and when the season-long award itself began, is unverified"
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "unverified",
+          "sources": [
+            "wp_cassist"
+          ]
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "regular_season",
+      "sources": [
+        "wp_cassist"
+      ],
+      "notes": []
+    },
+    {
+      "id": "scoring_title",
+      "name": "Scoring title",
+      "short_name": "PPG leader",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Scoring title"
+      ],
+      "first_season": {
+        "value": "1946-47",
+        "status": "sourced",
+        "sources": [
+          "wp_pts"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "sourced",
+          "sources": [
+            "wp_pts"
+          ],
+          "note": "statistical title, no vote"
+        },
+        "size": {
+          "value": null,
+          "status": "sourced",
+          "sources": [],
+          "note": "no vote"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "highest qualified value; per-game titles since 1969-70, totals before",
+          "status": "sourced",
+          "sources": [
+            "wp_pts",
+            "wp_trb",
+            "wp_ast"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "70 games or 1,400 points",
+          "status": "sourced",
+          "sources": [
+            "br_ratereq"
+          ],
+          "note": "1999-00 through 2010-11 (Basketball-Reference rate statistic requirements); applies to 2003-04"
+        },
+        {
+          "value": "58 games (70% of 82), or fewer if the total divided by 58 would still lead",
+          "status": "sourced",
+          "sources": [
+            "wp_pts"
+          ],
+          "note": "from 2013-14; never applies to an earlier season"
+        }
+      ],
+      "era_rules": [
+        "per_game_titles_1969_70",
+        "stat_titles_58_games_2013_14"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "br_ratereq",
+        "wp_pts"
+      ],
+      "notes": []
+    },
+    {
+      "id": "rebounding_title",
+      "name": "Rebounding title",
+      "short_name": "RPG leader",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Rebounding title"
+      ],
+      "first_season": {
+        "value": "1950-51",
+        "status": "sourced",
+        "sources": [
+          "wp_trb"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "sourced",
+          "sources": [
+            "wp_trb"
+          ],
+          "note": "statistical title, no vote"
+        },
+        "size": {
+          "value": null,
+          "status": "sourced",
+          "sources": [],
+          "note": "no vote"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "highest qualified value; per-game titles since 1969-70, totals before",
+          "status": "sourced",
+          "sources": [
+            "wp_pts",
+            "wp_trb",
+            "wp_ast"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "70 games or 800 rebounds",
+          "status": "sourced",
+          "sources": [
+            "br_ratereq"
+          ],
+          "note": "1999-00 through 2010-11 (Basketball-Reference rate statistic requirements); applies to 2003-04"
+        },
+        {
+          "value": "58 games, or fewer if the total divided by 58 would still lead",
+          "status": "sourced",
+          "sources": [
+            "wp_trb"
+          ],
+          "note": "from 2013-14; never applies to an earlier season"
+        }
+      ],
+      "era_rules": [
+        "per_game_titles_1969_70",
+        "stat_titles_58_games_2013_14"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "br_ratereq",
+        "wp_trb"
+      ],
+      "notes": []
+    },
+    {
+      "id": "assists_title",
+      "name": "Assists title",
+      "short_name": "APG leader",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Assists title"
+      ],
+      "first_season": {
+        "value": "1946-47",
+        "status": "sourced",
+        "sources": [
+          "wp_ast"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "sourced",
+          "sources": [
+            "wp_ast"
+          ],
+          "note": "statistical title, no vote"
+        },
+        "size": {
+          "value": null,
+          "status": "sourced",
+          "sources": [],
+          "note": "no vote"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "highest qualified value; per-game titles since 1969-70, totals before",
+          "status": "sourced",
+          "sources": [
+            "wp_pts",
+            "wp_trb",
+            "wp_ast"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "70 games or 400 assists",
+          "status": "sourced",
+          "sources": [
+            "br_ratereq"
+          ],
+          "note": "1999-00 through 2010-11 (Basketball-Reference rate statistic requirements); applies to 2003-04"
+        },
+        {
+          "value": "58 games, or fewer if the total divided by 58 would still lead",
+          "status": "sourced",
+          "sources": [
+            "wp_ast"
+          ],
+          "note": "from 2013-14; never applies to an earlier season"
+        }
+      ],
+      "era_rules": [
+        "per_game_titles_1969_70",
+        "stat_titles_58_games_2013_14"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "br_ratereq",
+        "wp_ast"
+      ],
+      "notes": []
+    },
+    {
+      "id": "steals_title",
+      "name": "Steals title",
+      "short_name": "SPG leader",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Steals title"
+      ],
+      "first_season": {
+        "value": "1973-74",
+        "status": "sourced",
+        "sources": [
+          "wp_stl"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "sourced",
+          "sources": [
+            "wp_stl"
+          ],
+          "note": "statistical title, no vote"
+        },
+        "size": {
+          "value": null,
+          "status": "sourced",
+          "sources": [],
+          "note": "no vote"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "highest qualified value; per-game titles since 1969-70, totals before",
+          "status": "sourced",
+          "sources": [
+            "wp_pts",
+            "wp_trb",
+            "wp_ast"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "70 games or 125 steals",
+          "status": "sourced",
+          "sources": [
+            "br_ratereq"
+          ],
+          "note": "1999-00 through 2010-11 (Basketball-Reference rate statistic requirements); applies to 2003-04"
+        },
+        {
+          "value": "58 games, or fewer if the total divided by 58 would still lead",
+          "status": "sourced",
+          "sources": [
+            "wp_stl"
+          ],
+          "note": "from 2013-14; never applies to an earlier season"
+        }
+      ],
+      "era_rules": [
+        "per_game_titles_1969_70",
+        "stat_titles_58_games_2013_14"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "br_ratereq",
+        "wp_stl"
+      ],
+      "notes": []
+    },
+    {
+      "id": "blocks_title",
+      "name": "Blocks title",
+      "short_name": "BPG leader",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Blocks title"
+      ],
+      "first_season": {
+        "value": "1973-74",
+        "status": "sourced",
+        "sources": [
+          "wp_blk"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "sourced",
+          "sources": [
+            "wp_blk"
+          ],
+          "note": "statistical title, no vote"
+        },
+        "size": {
+          "value": null,
+          "status": "sourced",
+          "sources": [],
+          "note": "no vote"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "highest qualified value; per-game titles since 1969-70, totals before",
+          "status": "sourced",
+          "sources": [
+            "wp_pts",
+            "wp_trb",
+            "wp_ast"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "70 games or 100 blocks",
+          "status": "sourced",
+          "sources": [
+            "br_ratereq"
+          ],
+          "note": "1999-00 through 2010-11 (Basketball-Reference rate statistic requirements); applies to 2003-04"
+        },
+        {
+          "value": "58 games, or fewer if the total divided by 58 would still lead",
+          "status": "sourced",
+          "sources": [
+            "wp_blk"
+          ],
+          "note": "from 2013-14; never applies to an earlier season"
+        }
+      ],
+      "era_rules": [
+        "per_game_titles_1969_70",
+        "stat_titles_58_games_2013_14"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "br_ratereq",
+        "wp_blk"
+      ],
+      "notes": []
+    },
+    {
+      "id": "fg_pct_title",
+      "name": "Field-goal percentage title",
+      "short_name": "FG% leader",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Field-goal percentage title"
+      ],
+      "first_season": {
+        "value": "1946-47",
+        "status": "unverified",
+        "sources": [
+          "wp_fg"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "sourced",
+          "sources": [
+            "wp_fg"
+          ],
+          "note": "statistical title, no vote"
+        },
+        "size": {
+          "value": null,
+          "status": "sourced",
+          "sources": [],
+          "note": "no vote"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "highest qualified value; per-game titles since 1969-70, totals before",
+          "status": "sourced",
+          "sources": [
+            "wp_pts",
+            "wp_trb",
+            "wp_ast"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "300 field goals made",
+          "status": "sourced",
+          "sources": [
+            "br_ratereq"
+          ],
+          "note": "1999-00 through 2010-11 (Basketball-Reference rate statistic requirements); applies to 2003-04"
+        },
+        {
+          "value": "300 field goals made (unchanged; the 300 minimum dates from 1974-75)",
+          "status": "sourced",
+          "sources": [
+            "wp_fg"
+          ],
+          "note": "from 2013-14; never applies to an earlier season"
+        }
+      ],
+      "era_rules": [
+        "per_game_titles_1969_70",
+        "stat_titles_58_games_2013_14"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "br_ratereq",
+        "wp_fg"
+      ],
+      "notes": [
+        "First season of the title itself is not stated by the fetched pages; the 300-make minimum is sourced from 1974-75."
+      ]
+    },
+    {
+      "id": "three_pct_title",
+      "name": "Three-point percentage title",
+      "short_name": "3P% leader",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Three-point percentage title"
+      ],
+      "first_season": {
+        "value": "1979-80",
+        "status": "sourced",
+        "sources": [
+          "wp_3p"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "sourced",
+          "sources": [
+            "wp_3p"
+          ],
+          "note": "statistical title, no vote"
+        },
+        "size": {
+          "value": null,
+          "status": "sourced",
+          "sources": [],
+          "note": "no vote"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "highest qualified value; per-game titles since 1969-70, totals before",
+          "status": "sourced",
+          "sources": [
+            "wp_pts",
+            "wp_trb",
+            "wp_ast"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "55 three-pointers made",
+          "status": "sourced",
+          "sources": [
+            "br_ratereq"
+          ],
+          "note": "1999-00 through 2010-11 (Basketball-Reference rate statistic requirements); applies to 2003-04"
+        },
+        {
+          "value": "82 three-pointers made",
+          "status": "sourced",
+          "sources": [
+            "wp_3p"
+          ],
+          "note": "from 2013-14; never applies to an earlier season"
+        }
+      ],
+      "era_rules": [
+        "per_game_titles_1969_70",
+        "stat_titles_58_games_2013_14"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "br_ratereq",
+        "wp_3p"
+      ],
+      "notes": [
+        "82 made applied 1994-95 to 1996-97 and again from 2013-14; 55 made applied from 1999-00 (Basketball-Reference)."
+      ]
+    },
+    {
+      "id": "ft_pct_title",
+      "name": "Free-throw percentage title",
+      "short_name": "FT% leader",
+      "scope": "season",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Free-throw percentage title"
+      ],
+      "first_season": {
+        "value": "1946-47",
+        "status": "unverified",
+        "sources": [
+          "wp_ft"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "sourced",
+          "sources": [
+            "wp_ft"
+          ],
+          "note": "statistical title, no vote"
+        },
+        "size": {
+          "value": null,
+          "status": "sourced",
+          "sources": [],
+          "note": "no vote"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "highest qualified value; per-game titles since 1969-70, totals before",
+          "status": "sourced",
+          "sources": [
+            "wp_pts",
+            "wp_trb",
+            "wp_ast"
+          ]
+        }
+      },
+      "eligibility": [
+        {
+          "value": "125 free throws made",
+          "status": "sourced",
+          "sources": [
+            "br_ratereq"
+          ],
+          "note": "1999-00 through 2010-11 (Basketball-Reference rate statistic requirements); applies to 2003-04"
+        },
+        {
+          "value": "125 free throws made (unchanged; the 125 minimum dates from 1974-75)",
+          "status": "sourced",
+          "sources": [
+            "wp_ft"
+          ],
+          "note": "from 2013-14; never applies to an earlier season"
+        }
+      ],
+      "era_rules": [
+        "per_game_titles_1969_70",
+        "stat_titles_58_games_2013_14"
+      ],
+      "period": "regular_season",
+      "sources": [
+        "br_ratereq",
+        "wp_ft"
+      ],
+      "notes": [
+        "First season of the title itself is not stated by the fetched pages; the 125-make minimum is sourced from 1974-75."
+      ]
+    },
+    {
+      "id": "finals_mvp",
+      "name": "Finals MVP",
+      "short_name": "Finals MVP",
+      "scope": "playoff",
+      "category": "performance",
+      "competition": "playoff",
+      "honor_names": [
+        "Finals MVP"
+      ],
+      "first_season": {
+        "value": "1968-69",
+        "status": "sourced",
+        "sources": [
+          "wp_fmvp",
+          "br_fmvp"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel",
+          "status": "sourced",
+          "sources": [
+            "wp_fmvp"
+          ],
+          "note": "a panel of media members voting after the final game"
+        },
+        "size": {
+          "value": 11,
+          "status": "sourced",
+          "sources": [
+            "wp_fmvp"
+          ],
+          "note": "eleven media members per Wikipedia, undated; the 2004 panel size is unverified"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "nba_finals",
+      "sources": [
+        "wp_fmvp",
+        "br_fmvp"
+      ],
+      "notes": [
+        "Renamed the Bill Russell NBA Finals Most Valuable Player Award on February 14, 2009 (Wikipedia); a later name, not used before that date."
+      ]
+    },
+    {
+      "id": "all_star_selection",
+      "name": "All-Star",
+      "short_name": "All-Star",
+      "scope": "all-star",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "All-Star"
+      ],
+      "first_season": {
+        "value": "1950-51",
+        "status": "sourced",
+        "sources": [
+          "wp_asg"
+        ],
+        "note": "first game March 2, 1951"
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "fans_and_coaches",
+          "status": "sourced",
+          "sources": [
+            "wp_asg2004",
+            "wp_asg"
+          ],
+          "note": "2003-04: fans vote the starters (two guards, two forwards, one center per conference); head coaches of each conference vote the reserves and may not pick their own players"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "starters by fan ballot plurality; reserves by coach ballots (two guards, three frontcourt, two wild cards each, ranked)",
+          "status": "sourced",
+          "sources": [
+            "wp_asg2004",
+            "wp_asg"
+          ],
+          "note": "the coach ballot shape is described for the current format; the 2004 shape is unverified"
+        }
+      },
+      "eligibility": [
+        {
+          "value": "fan ballot starters began at an unverified date before 2004; 1975 is often cited but no fetched page states it",
+          "status": "unverified",
+          "sources": [
+            "wp_asg"
+          ]
+        }
+      ],
+      "era_rules": [
+        "all_star_frontcourt_2012_13",
+        "all_star_weighted_vote_2016_17",
+        "all_star_draft_2017_18"
+      ],
+      "period": "all_star_break",
+      "sources": [
+        "wp_asg",
+        "wp_asg2004"
+      ],
+      "notes": [
+        "Filed in the `regular` competition (runtime/standing.py)."
+      ]
+    },
+    {
+      "id": "all_star_game_mvp",
+      "name": "All-Star Game MVP",
+      "short_name": "ASG MVP",
+      "scope": "all-star",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "All-Star Game MVP"
+      ],
+      "first_season": {
+        "value": "1950-51",
+        "status": "sourced",
+        "sources": [
+          "br_asgmvp",
+          "wp_asgmvp"
+        ],
+        "note": "Wikipedia: established 1953 with 1951 and 1952 winners named retroactively; Basketball-Reference lists from 1950-51"
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel",
+          "status": "sourced",
+          "sources": [
+            "wp_asgmvp"
+          ],
+          "note": "media members voting after the game; fans hold 25% of the vote in the current format (date of that change unverified)"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "all_star_game",
+      "sources": [
+        "wp_asgmvp",
+        "br_asgmvp"
+      ],
+      "notes": [
+        "Kobe Bryant MVP Award from February 15, 2020 (Basketball-Reference)."
+      ]
+    },
+    {
+      "id": "rising_stars_mvp",
+      "name": "Rookie Challenge / Rising Stars MVP",
+      "short_name": "Rising Stars MVP",
+      "scope": "all-star",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Rookie Challenge / Rising Stars MVP"
+      ],
+      "first_season": {
+        "value": "1993-94",
+        "status": "sourced",
+        "sources": [
+          "wp_rising"
+        ],
+        "note": "first Rookie Game February 12, 1994; no game in 1998-99; rookies versus sophomores 2000 to 2014; USA versus World 2015 to 2021; drafted teams from 2022"
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": null,
+          "status": "unverified",
+          "sources": [
+            "wp_rising"
+          ],
+          "note": "no fetched page says who names the MVP"
+        },
+        "size": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "all_star_weekend",
+      "sources": [
+        "wp_rising"
+      ],
+      "notes": [
+        "An exhibition honor; it is not a regular-season statistical record."
+      ]
+    },
+    {
+      "id": "player_of_week",
+      "name": "Player of the Week",
+      "short_name": "POTW",
+      "scope": "weekly",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Player of the Week"
+      ],
+      "first_season": {
+        "value": "1979-80",
+        "status": "sourced",
+        "sources": [
+          "wp_pomw",
+          "br_pow"
+        ],
+        "note": "first award October 1979"
+      },
+      "last_season": null,
+      "conference_split": {
+        "value": "2001-02",
+        "status": "sourced",
+        "sources": [
+          "wp_pomw"
+        ],
+        "note": "one Eastern and one Western Conference winner from 2001-02"
+      },
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "unverified",
+          "sources": [
+            "wp_pomw"
+          ],
+          "note": "Wikipedia says the awards weigh statistics and team success without naming the selector; the NBA announces them"
+        },
+        "size": {
+          "value": null,
+          "status": "sourced",
+          "sources": [],
+          "note": "no published ballot"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": [
+            "wp_pomw",
+            "nba_potw_example"
+          ],
+          "note": "league selection; no published ballot or point system"
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "award_week",
+      "sources": [
+        "wp_pomw",
+        "br_pow",
+        "nba_potw_example"
+      ],
+      "notes": []
+    },
+    {
+      "id": "player_of_month",
+      "name": "Player of the Month",
+      "short_name": "POTM",
+      "scope": "monthly",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Player of the Month"
+      ],
+      "first_season": {
+        "value": "1979-80",
+        "status": "sourced",
+        "sources": [
+          "wp_pomw",
+          "br_pom"
+        ],
+        "note": "first award November 1979"
+      },
+      "last_season": null,
+      "conference_split": {
+        "value": "2001-02",
+        "status": "sourced",
+        "sources": [
+          "wp_pomw",
+          "br_pom"
+        ],
+        "note": "Basketball-Reference lists East and West winners from 2001-02; Wikipedia states the split for the weekly award and treats the monthly award alongside it"
+      },
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "unverified",
+          "sources": [
+            "wp_pomw"
+          ]
+        },
+        "size": {
+          "value": null,
+          "status": "sourced",
+          "sources": [],
+          "note": "no published ballot"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": [
+            "wp_pomw"
+          ],
+          "note": "league selection; no published ballot or point system"
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "calendar_month",
+      "sources": [
+        "wp_pomw",
+        "br_pom"
+      ],
+      "notes": []
+    },
+    {
+      "id": "rookie_of_month",
+      "name": "Rookie of the Month",
+      "short_name": "ROTM",
+      "scope": "monthly",
+      "category": "performance",
+      "competition": "regular",
+      "honor_names": [
+        "Rookie of the Month"
+      ],
+      "first_season": {
+        "value": "1981-82",
+        "status": "sourced",
+        "sources": [
+          "wp_rom",
+          "br_rom"
+        ],
+        "note": "first award November 1981"
+      },
+      "last_season": null,
+      "conference_split": {
+        "value": "2001-02",
+        "status": "sourced",
+        "sources": [
+          "wp_rom"
+        ]
+      },
+      "electorate": {
+        "kind": {
+          "value": "league_office",
+          "status": "unverified",
+          "sources": [
+            "wp_rom"
+          ],
+          "note": "'presented monthly by the league'; selector not named"
+        },
+        "size": {
+          "value": null,
+          "status": "sourced",
+          "sources": [],
+          "note": "no published ballot"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": [
+            "wp_rom"
+          ],
+          "note": "league selection; no published ballot or point system"
+        }
+      },
+      "eligibility": [
+        {
+          "value": "rookies",
+          "status": "sourced",
+          "sources": [
+            "wp_rom"
+          ]
+        }
+      ],
+      "era_rules": [],
+      "period": "calendar_month",
+      "sources": [
+        "wp_rom",
+        "br_rom"
+      ],
+      "notes": []
+    },
+    {
+      "id": "nba_cup_mvp",
+      "name": "NBA Cup MVP",
+      "short_name": "Cup MVP",
+      "scope": "cup",
+      "category": "performance",
+      "competition": "nba_cup_championship",
+      "honor_names": [
+        "NBA Cup MVP"
+      ],
+      "first_season": {
+        "value": "2023-24",
+        "status": "sourced",
+        "sources": [
+          "wp_cup",
+          "br_istmvp"
+        ],
+        "note": "called the In-Season Tournament in 2023-24; renamed NBA Cup in February 2024"
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel_and_fans",
+          "status": "sourced",
+          "sources": [
+            "wp_cup"
+          ],
+          "note": "2023-24: 20 media votes and 5 fan votes"
+        },
+        "size": {
+          "value": 25,
+          "status": "sourced",
+          "sources": [
+            "wp_cup"
+          ],
+          "note": "2023-24 only"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": null,
+          "status": "unverified",
+          "sources": []
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "nba_cup",
+      "sources": [
+        "wp_cup",
+        "br_istmvp"
+      ],
+      "notes": [
+        "The championship game is not a regular-season game; group and knockout games before it are (Wikipedia)."
+      ]
+    },
+    {
+      "id": "nba_cup_all_tournament",
+      "name": "NBA Cup All-Tournament Team",
+      "short_name": "Cup All-Tournament",
+      "scope": "cup",
+      "category": "performance",
+      "competition": "nba_cup_championship",
+      "honor_names": [
+        "NBA Cup All-Tournament Team"
+      ],
+      "first_season": {
+        "value": "2023-24",
+        "status": "sourced",
+        "sources": [
+          "wp_cup",
+          "br_istteam"
+        ]
+      },
+      "last_season": null,
+      "conference_split": null,
+      "electorate": {
+        "kind": {
+          "value": "media_panel_and_fans",
+          "status": "sourced",
+          "sources": [
+            "wp_cup"
+          ]
+        },
+        "size": {
+          "value": 25,
+          "status": "sourced",
+          "sources": [
+            "wp_cup"
+          ],
+          "note": "2023-24 only"
+        }
+      },
+      "scoring": {
+        "rule": {
+          "value": "five players, one team",
+          "status": "sourced",
+          "sources": [
+            "br_istteam"
+          ]
+        }
+      },
+      "eligibility": [],
+      "era_rules": [],
+      "period": "nba_cup",
+      "sources": [
+        "wp_cup",
+        "br_istteam"
+      ],
+      "notes": []
+    }
+  ],
+  "not_catalogued": [
+    "Coach of the Month (first season not established by a fetched page)",
+    "All-Star Saturday contests (Three-Point, Slam Dunk, Skills): exhibitions without a career-record role",
+    "Executive of the Year selection method under The Sporting News",
+    "team honors such as division and conference titles, which are standings results"
+  ]
+}

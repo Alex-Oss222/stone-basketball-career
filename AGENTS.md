@@ -103,6 +103,8 @@ The 2003 veteran import adds a separate statistical estimate layer, documented i
 
 User-supplied player photos can be linked later. Do not invent image URLs.
 
+League player cards (one Markdown and one interactive HTML card per registry player, linked from every league stats page, club colours by era, dated club via `runtime/league_cards.club_on`): `docs/player_cards.md`; rebuild with `python scripts/build_league_cards.py --write`.
+
 ## Stats and awards
 
 The player's statistical record lives at `career/Dwyane_Wade/Stats_and_Awards/<season>/`, then month, then week.

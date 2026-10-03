@@ -12,6 +12,7 @@ These files are source evidence, not live career state.
 | `nba_2002_03_league_environment.json` | Supplied 2002-03 league averages | Engine calibration baseline for 2003-04 |
 | `nba_2003_04_schedule.json` | 2003-04 regular season, 1,189 games | Dates and matchups only; source: ESPN via SportsDataverse, as played |
 | `nba_2003_04_preseason_schedule.json` | 2003-04 preseason, 114 NBA-vs-NBA games | Dates and matchups only; source: NBA.com via Kaggle, as played |
+| `nba_awards_catalog.json` | Every NBA award across eras: first season, electorate, scoring rule, dated rule changes, each fact marked sourced/derived/unverified | Era gating of award votes (`runtime/award_records.awards_in_force`, `docs/awards_catalog.md`); kept here like the cap history, never a source of winners |
 
 The schedules are pre-season knowledge and may be used before the games are played. They were taken from the schedule as played, so any game postponed during the season appears on its played date. No scores or results are stored.
 

@@ -54,3 +54,51 @@ def honors_in_scope(awards, *, known_on, competition=None, season=None, start=No
 def badge_labels(awards, as_of):
     counts = Counter(a["name"] for a in awards if a["awarded_on"] <= as_of)
     return [f"{n}× {name}" if n > 1 else name for name, n in counts.items()]
+
+
+# -- the era-gated catalogue (library/2003/league/nba_awards_catalog.json, docs/awards_catalog.md) ------------
+ROOT = Path(__file__).resolve().parents[1]
+CATALOG_PATH = ROOT / "library/2003/league/nba_awards_catalog.json"
+SCOPES = ("season", "monthly", "weekly", "playoff", "all-star", "cup")
+FACT_STATUSES = ("sourced", "derived", "unverified")
+
+
+def season_start(season: str) -> int:
+    """'2003-04' -> 2003; the catalogue compares seasons by their starting year."""
+    if not isinstance(season, str) or len(season) != 7 or season[4] != "-" or not season[:4].isdigit() \
+            or not season[5:].isdigit() or int(season[5:]) != (int(season[:4]) + 1) % 100:
+        raise ValueError(f"season must look like 2003-04, got {season!r}")
+    return int(season[:4])
+
+
+def load_catalog(path: Path | None = None) -> dict:
+    data = json.loads(Path(path or CATALOG_PATH).read_text(encoding="utf-8"))
+    if data.get("schema_version") != 1 or not isinstance(data.get("awards"), list) or not isinstance(data.get("rules"), list):
+        raise ValueError("awards catalogue: expected schema version 1 with awards and rules lists")
+    return data
+
+
+def _in_force(entry: dict, start: int) -> bool:
+    first = entry["first_season"]
+    first = first["value"] if isinstance(first, dict) else first
+    last = entry.get("last_season")
+    last = last["value"] if isinstance(last, dict) else last
+    return season_start(first) <= start and (last is None or start <= season_start(last))
+
+
+def awards_in_force(season: str, catalog: dict | None = None) -> list[dict]:
+    """Awards that may be decided for `season`: first season on or before it, not yet discontinued.
+
+    Later rules never apply retroactively; `rules_in_force` gives the ones that do. Entries come back in
+    catalogue order and unchanged, so a caller still reads each fact's `status` before using it in a vote.
+    """
+    start = season_start(season)
+    catalog = catalog or load_catalog()
+    return [a for a in catalog["awards"] if _in_force(a, start)]
+
+
+def rules_in_force(season: str, catalog: dict | None = None) -> list[dict]:
+    """Catalogue rules whose first season is on or before `season` (the 65-game rule is not one in 2003-04)."""
+    start = season_start(season)
+    catalog = catalog or load_catalog()
+    return [r for r in catalog["rules"] if _in_force(r, start)]
