@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-11-07**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-11-08**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -16,7 +16,7 @@ Card date: **2003-11-07**. 407 registry players, one Markdown card and one inter
 | [Baron Davis](davisba01.md) | New Orleans Hornets | 24 | sourced | [open](davisba01.html) |
 | [Bimbo Coles](colesbi01.md) | Boston Celtics | 35 | sourced | [open](colesbi01.html) |
 | [Bobby Jackson](jacksbo01.md) | Sacramento Kings | 30 | sourced | [open](jacksbo01.html) |
-| [Brevin Knight](knighbr01.md) | Phoenix Suns | 27 | sourced | [open](knighbr01.html) |
+| [Brevin Knight](knighbr01.md) | Phoenix Suns | 28 | sourced | [open](knighbr01.html) |
 | [Brian Shaw](shawbr01.md) | Los Angeles Lakers | 37 | sourced | [open](shawbr01.html) |
 | [Carlos Arroyo](arroyca01.md) | Utah Jazz | 24 | sourced | [open](arroyca01.html) |
 | [Charlie Ward](wardch01.md) | New York Knicks | 33 | sourced | [open](wardch01.html) |

@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2003-11-07](../../assets/stat_reports/personal_2003-11-07.svg)
+![Player personal information and earned career awards through 2003-11-08](../../assets/stat_reports/personal_2003-11-08.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -22,16 +22,16 @@
 | Wingspan / standing reach | 6 ft 11.5 in / 8 ft 7.5 in |
 | Shooting hand | Right |
 | Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option |
-| Role | Rotation; staff plan 20 minutes |
+| Role | Starter; staff plan 34 minutes |
 | NBA debut | Not recorded |
 | Nationality | Not recorded |
 | National team | No selection recorded |
 | National-team eligibility | Not verified |
 | Availability | No current restriction recorded in the established profile |
 | Physical measurements recorded | 2003-06-25 |
-| Professional status effective | 2003-10-24 |
+| Professional status effective | 2003-11-07 |
 
-Identity as of 2003-11-07; status snapshot dated 2003-10-24. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-11-08; status snapshot dated 2003-11-07. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -39,7 +39,7 @@ No earned professional awards recorded by this page's identity cutoff.
 
 ## Statistics
 
-As of **2003-11-07**: 5 closed games; 5/5 have player participation and box coverage; recorded DNPs: 0.
+As of **2003-11-08**: 5 closed games; 5/5 have player participation and box coverage; recorded DNPs: 0.
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
@@ -164,6 +164,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2003-10-31](10_October/Week_4/Game_3.md) | Detroit Pistons | home | L 100-105 | Played | 18.3 | 16 | 3 | 1 | 0 | 0 | 1 |
 | [2003-11-03](11_November/Week_1/Game_1.md) | Dallas Mavericks | away | L 92-104 | Played | 21.2 | 11 | 4 | 1 | 2 | 1 | 1 |
 | [2003-11-04](11_November/Week_1/Game_2.md) | San Antonio Spurs | away | L 95-106 | Played | 18.4 | 9 | 2 | 1 | 1 | 0 | 1 |
+| [2003-11-08](11_November/Week_2/Game_1.md) | Minnesota Timberwolves | home | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ### Individual game boxes
 
@@ -174,6 +175,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2003-10-31](10_October/Week_4/Game_3.md) | 19 | Miami Heat | NBA | SG / PG | 1 | 0 | 18.3 | 5.0 | 7.0 | .714 | 1.0 | 1.0 | 1.000 | 4.0 | 6.0 | .667 | .786 | 5.0 | 5.0 | 1.000 | 2.0 | 1.0 | 3.0 | 1.0 | 0.0 | 0.0 | 1.0 | 0.0 | 16.0 | .870 | — |
 | [2003-11-03](11_November/Week_1/Game_1.md) | 19 | Miami Heat | NBA | SG / PG | 1 | 0 | 21.2 | 3.0 | 9.0 | .333 | 1.0 | 5.0 | .200 | 2.0 | 4.0 | .500 | .389 | 4.0 | 4.0 | 1.000 | 0.0 | 4.0 | 4.0 | 1.0 | 2.0 | 1.0 | 1.0 | 1.0 | 11.0 | .511 | — |
 | [2003-11-04](11_November/Week_1/Game_2.md) | 19 | Miami Heat | NBA | SG / PG | 1 | 0 | 18.4 | 2.0 | 7.0 | .286 | 1.0 | 4.0 | .250 | 1.0 | 3.0 | .333 | .357 | 4.0 | 4.0 | 1.000 | 1.0 | 1.0 | 2.0 | 1.0 | 1.0 | 0.0 | 1.0 | 3.0 | 9.0 | .514 | — |
+| [2003-11-08](11_November/Week_2/Game_1.md) | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 

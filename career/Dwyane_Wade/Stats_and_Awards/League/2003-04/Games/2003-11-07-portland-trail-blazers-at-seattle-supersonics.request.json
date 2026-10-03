@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-07-portland-trail-blazers-at-seattle-supersonics",
+ "game_date": "2003-11-07",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ }
+}

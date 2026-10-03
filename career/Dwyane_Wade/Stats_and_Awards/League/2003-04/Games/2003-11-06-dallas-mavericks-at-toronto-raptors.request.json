@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-06-dallas-mavericks-at-toronto-raptors",
+ "game_date": "2003-11-06",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Toronto Raptors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Dallas Mavericks",
+  "rotation": "real"
+ }
+}

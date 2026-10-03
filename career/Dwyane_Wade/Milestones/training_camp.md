@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2003-11-07 · Miami Heat · active
+Career date: 2003-11-08 · Miami Heat · active
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -16,28 +16,28 @@ Activation: The club opens camp and records participation, evaluation or an actu
 | --- | --- |
 | Camp opened | 2003-09-30 |
 | Participation | under_contract |
-| Current role | Rotation; staff plan 20 minutes |
-| Staff rotation minutes | 20.0 |
+| Current role | Starting SG; staff plan 34 minutes |
+| Staff rotation minutes | 34.0 |
 | Closed preseason games | 7 |
 | Camp availability | No camp injury restriction recorded |
 
 ## Current depth chart
 
-Snapshot: 2003-10-27. Draft rights and unassigned arrivals are not assigned minutes.
+Snapshot: 2003-11-07. Draft rights and unassigned arrivals are not assigned minutes.
 
 | Position | Staff ordering | Interpretation |
 | --- | --- | --- |
 | PG | Mike James, Anthony Carter | Staff ordering; not a future minutes promise |
-| SG | Eddie Jones, Dwyane Wade, Stephen Jackson, Rasual Butler | Staff ordering; not a future minutes promise |
-| SF | Caron Butler, Sean Lampley, Cherokee Parks | Staff ordering; not a future minutes promise |
-| PF | Scott Padgett, LaPhonso Ellis, Jerome Beasley, Udonis Haslem, John Wallace | Staff ordering; not a future minutes promise |
-| C | Brian Grant, Shawn Kemp | Staff ordering; not a future minutes promise |
+| SG | Dwyane Wade, Eddie Jones, Stephen Jackson, Rasual Butler | Staff ordering; not a future minutes promise |
+| SF | Caron Butler, Cherokee Parks, Sean Lampley | Staff ordering; not a future minutes promise |
+| PF | Scott Padgett, LaPhonso Ellis, John Wallace, Udonis Haslem | Staff ordering; not a future minutes promise |
+| C | Shawn Kemp, Brian Grant | Staff ordering; not a future minutes promise |
 
 ## Role and promise review
 
 | Item | Evidence needed | Current position |
 | --- | --- | --- |
-| Expected role | Attributed coach statement | Rotation; staff plan 20 minutes |
+| Expected role | Attributed coach statement | Starting SG; staff plan 34 minutes |
 | Actual use | Closed preseason boxes | 7 closed games |
 | Promised minutes | Written promise and date | Not recorded |
 | Promise review | Dated review against rotation | Not recorded |
@@ -77,15 +77,16 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/11_November/Week_1/note.md)
+- [Owning event](../2003-04/06_Regular_Season/11_November/Week_2/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
-- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/depth_chart.json)
+- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json)
+- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/rotation.json)
+- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)

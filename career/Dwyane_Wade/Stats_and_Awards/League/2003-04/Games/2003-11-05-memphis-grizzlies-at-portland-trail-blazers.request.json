@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-05-memphis-grizzlies-at-portland-trail-blazers",
+ "game_date": "2003-11-05",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ }
+}

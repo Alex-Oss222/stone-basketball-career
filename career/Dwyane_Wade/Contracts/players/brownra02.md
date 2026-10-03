@@ -2,9 +2,9 @@
 
 # Contract | Randy Brown
 
-Known through: 2003-11-07. [Open interactive contract](brownra02.html#contract) · [Contract history](brownra02.html#contract-history)
+Known through: 2003-11-08. [Open interactive contract](brownra02.html#contract) · [Contract history](brownra02.html#contract-history)
 
-Randy Brown: free agent expiring. Evidence cutoff: 2003-11-07.
+Randy Brown: free agent expiring. Evidence cutoff: 2003-11-08.
 
 ## Current contract
 

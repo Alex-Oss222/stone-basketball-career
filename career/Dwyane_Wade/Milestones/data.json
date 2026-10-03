@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2003-11-07",
+  "as_of": "2003-11-08",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 19,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2003-11-04-miami-heat-at-san-antonio-spurs",
+  "current_event": "2003-04-rotation-2003-11-07",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2003-11-07"
+              "2003-11-08"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2003-11-04-miami-heat-at-san-antonio-spurs"
+              "2003-04-rotation-2003-11-07"
             ],
             [
               "Pending player decisions",
@@ -64,13 +64,13 @@
           ],
           "rows": [
             [
-              "2003-11-07",
+              "2003-11-08",
               "Current checkpoint",
-              "2003-11-04-miami-heat-at-san-antonio-spurs",
+              "2003-04-rotation-2003-11-07",
               "Recorded",
               {
                 "label": "Owning event",
-                "href": "../2003-04/06_Regular_Season/11_November/Week_1/note.md"
+                "href": "../2003-04/06_Regular_Season/11_November/Week_2/note.md"
               }
             ],
             [
@@ -177,7 +177,7 @@
       "actions": [
         {
           "label": "Open the current event",
-          "href": "../2003-04/06_Regular_Season/11_November/Week_1/note.md",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/note.md",
           "description": "Read the owning career note and record the player's actual response when one is due."
         },
         {
@@ -201,7 +201,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/11_November/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -216,8 +216,12 @@
           "href": "../2003-04/01_Free_Agency/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -233,7 +237,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -312,7 +316,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-07"
+          "value": "2003-11-08"
         },
         {
           "label": "Team",
@@ -491,7 +495,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/11_November/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -506,8 +510,12 @@
           "href": "../2003-04/01_Free_Agency/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -523,7 +531,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -602,7 +610,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-07"
+          "value": "2003-11-08"
         },
         {
           "label": "Team",
@@ -834,7 +842,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/11_November/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -849,8 +857,12 @@
           "href": "../2003-04/01_Free_Agency/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -866,7 +878,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -945,7 +957,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-07"
+          "value": "2003-11-08"
         },
         {
           "label": "Team",
@@ -1285,7 +1297,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/11_November/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1300,8 +1312,12 @@
           "href": "../2003-04/01_Free_Agency/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1317,7 +1333,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -1396,7 +1412,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-07"
+          "value": "2003-11-08"
         },
         {
           "label": "Team",
@@ -1424,7 +1440,7 @@
           "rows": [
             [
               "Current role",
-              "Rotation; staff plan 20 minutes"
+              "Starting SG; staff plan 34 minutes"
             ],
             [
               "Availability",
@@ -1545,7 +1561,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/11_November/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1560,8 +1576,12 @@
           "href": "../2003-04/01_Free_Agency/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1577,7 +1597,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -1656,7 +1676,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-07"
+          "value": "2003-11-08"
         },
         {
           "label": "Team",
@@ -1706,7 +1726,7 @@
             ],
             [
               "Staff role after a move",
-              "Rotation; staff plan 20 minutes"
+              "Starter; staff plan 34 minutes"
             ],
             [
               "Report / travel deadline",
@@ -1777,7 +1797,7 @@
       "actions": [
         {
           "label": "Open the current event discussion",
-          "href": "../2003-04/06_Regular_Season/11_November/Week_1/note.md",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/note.md",
           "description": "Record a dated reaction to an actual transaction."
         },
         {
@@ -1801,7 +1821,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/11_November/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1816,8 +1836,12 @@
           "href": "../2003-04/01_Free_Agency/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1833,7 +1857,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -1912,7 +1936,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-07"
+          "value": "2003-11-08"
         },
         {
           "label": "Team",
@@ -1979,7 +2003,7 @@
             ],
             [
               "Communicated role and actual use",
-              "Rotation; staff plan 20 minutes",
+              "Starting SG; staff plan 34 minutes",
               "Dated statements and closed minutes"
             ],
             [
@@ -2066,7 +2090,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/11_November/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2081,8 +2105,12 @@
           "href": "../2003-04/01_Free_Agency/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2098,7 +2126,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -2177,7 +2205,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-07"
+          "value": "2003-11-08"
         },
         {
           "label": "Team",
@@ -2213,11 +2241,11 @@
             ],
             [
               "Current role",
-              "Rotation; staff plan 20 minutes"
+              "Starting SG; staff plan 34 minutes"
             ],
             [
               "Staff rotation minutes",
-              20.0
+              34.0
             ],
             [
               "Closed preseason games",
@@ -2244,26 +2272,26 @@
             ],
             [
               "SG",
-              "Eddie Jones, Dwyane Wade, Stephen Jackson, Rasual Butler",
+              "Dwyane Wade, Eddie Jones, Stephen Jackson, Rasual Butler",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "SF",
-              "Caron Butler, Sean Lampley, Cherokee Parks",
+              "Caron Butler, Cherokee Parks, Sean Lampley",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "PF",
-              "Scott Padgett, LaPhonso Ellis, Jerome Beasley, Udonis Haslem, John Wallace",
+              "Scott Padgett, LaPhonso Ellis, John Wallace, Udonis Haslem",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "C",
-              "Brian Grant, Shawn Kemp",
+              "Shawn Kemp, Brian Grant",
               "Staff ordering; not a future minutes promise"
             ]
           ],
-          "notice": "Snapshot: 2003-10-27. Draft rights and unassigned arrivals are not assigned minutes."
+          "notice": "Snapshot: 2003-11-07. Draft rights and unassigned arrivals are not assigned minutes."
         },
         {
           "title": "Role and promise review",
@@ -2276,7 +2304,7 @@
             [
               "Expected role",
               "Attributed coach statement",
-              "Rotation; staff plan 20 minutes"
+              "Starting SG; staff plan 34 minutes"
             ],
             [
               "Actual use",
@@ -2379,7 +2407,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/11_November/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2394,8 +2422,12 @@
           "href": "../2003-04/01_Free_Agency/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2411,7 +2443,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -2490,7 +2522,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-07"
+          "value": "2003-11-08"
         },
         {
           "label": "Team",
@@ -2507,7 +2539,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "12 closed game records in 2003-04 through 2003-11-07. Competitions remain separate.",
+      "summary": "12 closed game records in 2003-04 through 2003-11-08. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2780,7 +2812,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/11_November/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/11_November/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2795,8 +2827,12 @@
           "href": "../2003-04/01_Free_Agency/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2812,7 +2848,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -2891,7 +2927,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-07"
+          "value": "2003-11-08"
         },
         {
           "label": "Team",

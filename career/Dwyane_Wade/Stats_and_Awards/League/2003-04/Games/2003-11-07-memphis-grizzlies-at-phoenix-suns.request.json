@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-07-memphis-grizzlies-at-phoenix-suns",
+ "game_date": "2003-11-07",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ }
+}
