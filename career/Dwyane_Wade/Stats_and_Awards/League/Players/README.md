@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-07-02**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-07-03**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -188,7 +188,7 @@ Card date: **2003-07-02**. 407 registry players, one Markdown card and one inter
 | [Al Harrington](harrial01.md) | Indiana Pacers | 23 | sourced | [open](harrial01.html) |
 | [Andrei Kirilenko](kirilan01.md) | Utah Jazz | 22 | sourced | [open](kirilan01.html) |
 | [Antawn Jamison](jamisan01.md) | Golden State Warriors | 27 | sourced | [open](jamisan01.html) |
-| [Bostjan Nachbar](nachbbo01.md) | Houston Rockets | 22 | sourced | [open](nachbbo01.html) |
+| [Bostjan Nachbar](nachbbo01.md) | Houston Rockets | 23 | sourced | [open](nachbbo01.html) |
 | [Bruce Bowen](bowenbr01.md) | San Antonio Spurs | 32 | sourced | [open](bowenbr01.html) |
 | [Bryon Russell](russebr01.md) | Washington Wizards | 32 | silhouette | [open](russebr01.html) |
 | [Carmelo Anthony](anthoca01.md) | Denver Nuggets (draft rights) | 19 | sourced | [open](anthoca01.html) |

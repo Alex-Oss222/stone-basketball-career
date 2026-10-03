@@ -68,3 +68,8 @@ One-time setup (already done for this repository):
 After that there is nothing to run locally. The deploy log lists each request as `played`, `already_played` or `error`.
 
 A kernel version change is journaled in `kernel_transitions` and does not alter the seed or any played game.
+
+## Decisions drawn on demand
+
+`POST /decisions` (bearer token) takes one decision packet, the exact content of a committed or about-to-be-committed `*.decision.json`, and returns the engine's draw: `201` and `status: decided` the first time, `200` and `status: already_decided` with the same outcome afterwards, `409` for a changed packet under an event id already drawn or a packet that breaks the decision schema, `401` without the token, `400` or `413` for a malformed body. Boot scans and the route share `runtime.private_service.play_decision`. `python scripts/draw_decisions.py` sends every pending request, checks each answer against its request (`scripts/collect_results.result_errors`) and writes the result file the collector would write. The token is read from `ENGINE_API_TOKEN` and never written or printed. Games are not drawn this way.
+

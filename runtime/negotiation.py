@@ -69,10 +69,18 @@ def attestation(action, payload, at, source_refs):
                             (datetime.fromisoformat(at) + timedelta(days=1)).isoformat(), action, desk.fingerprint(payload))
 
 
-def counter_amount(offer_first_year, ask):
+COUNTER_PREMIUM_LIMIT = 0.15    # most an agent adds to the money for a factor money cannot fix (judgement)
+
+
+def counter_amount(offer_first_year, ask, premium=0.0):
     """The player's counter when the draw says he counters: the split between the offer and his ask,
-    never below an 8% lift on the offer and never above the ask (judgement, deterministic given the draw)."""
-    return int(round(min(ask, max(offer_first_year * 1.08, (offer_first_year + ask) / 2))))
+    never below an 8% lift on the offer and never above the ask (judgement, deterministic given the draw).
+
+    `premium` (0 to COUNTER_PREMIUM_LIMIT) is the agent's price for a weakness money cannot fix, such as a
+    weaker club or a smaller role (runtime/player_utility.py, counter focus): it lifts both the counter and its cap."""
+    premium = max(0.0, min(COUNTER_PREMIUM_LIMIT, premium))
+    top = ask * (1 + premium)
+    return int(round(min(top, max(offer_first_year * 1.08, (offer_first_year + ask) / 2 * (1 + premium)))))
 
 
 class Negotiation:
@@ -156,7 +164,7 @@ class Negotiation:
         return rnd
 
     # -- the player's side (drawn) --------------------------------------------------------------
-    def apply_answer(self, outcome, on, decision_ref, ask=None):
+    def apply_answer(self, outcome, on, decision_ref, ask=None, premium=0.0):
         """Apply the engine's drawn answer to the latest round; `decision_ref` is the decision event id."""
         rnd = self.last_round()
         if rnd["answer"] is not None:
@@ -171,7 +179,7 @@ class Negotiation:
             self.record["status"] = "agreed"
             # The desk records the acceptance (or the signed sheet) on the signing date: execute_agreement / sign_sheet.
         elif outcome == "counter":
-            rnd["counter"] = counter_amount(rnd["terms"]["first_year"], ask or rnd["terms"]["first_year"])
+            rnd["counter"] = counter_amount(rnd["terms"]["first_year"], ask or rnd["terms"]["first_year"], premium)
             raise_share = rnd["terms"]["raise_percent"] / 100
             schedule = [int(round(rnd["counter"] * (1 + raise_share * i))) for i in range(rnd["terms"]["years"])]
             terms = desk.Terms.from_dict({"salary_schedule": salary_schedule(dict(rnd["terms"], schedule=schedule, last_year_guaranteed=True))})

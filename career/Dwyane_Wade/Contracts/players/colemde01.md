@@ -2,9 +2,9 @@
 
 # Contract | Derrick Coleman
 
-Known through: 2003-07-02. [Open interactive contract](colemde01.html#contract) · [Contract history](colemde01.html#contract-history)
+Known through: 2003-07-03. [Open interactive contract](colemde01.html#contract) · [Contract history](colemde01.html#contract-history)
 
-Derrick Coleman: free agent expiring. Evidence cutoff: 2003-07-02.
+Derrick Coleman: free agent expiring. Evidence cutoff: 2003-07-03.
 
 ## Current contract
 

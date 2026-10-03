@@ -2,9 +2,9 @@
 
 # Contract | Carmelo Anthony
 
-Known through: 2003-07-02. [Open interactive contract](anthoca01.html#contract) · [Contract history](anthoca01.html#contract-history)
+Known through: 2003-07-03. [Open interactive contract](anthoca01.html#contract) · [Contract history](anthoca01.html#contract-history)
 
-Carmelo Anthony: No verified contract record. Evidence cutoff: 2003-07-02.
+Carmelo Anthony: No verified contract record. Evidence cutoff: 2003-07-03.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | P.J. Brown
 
-Known through: 2003-07-02. [Open interactive contract](brownpj01.html#contract) · [Contract history](brownpj01.html#contract-history)
+Known through: 2003-07-03. [Open interactive contract](brownpj01.html#contract) · [Contract history](brownpj01.html#contract-history)
 
-P.J. Brown: free agent expiring. Evidence cutoff: 2003-07-02.
+P.J. Brown: free agent expiring. Evidence cutoff: 2003-07-03.
 
 ## Current contract
 

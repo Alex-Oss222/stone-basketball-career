@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2003-07-02 · Miami Heat · inactive
+Career date: 2003-07-03 · Miami Heat · inactive
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -33,7 +33,7 @@ These are Miami's roster negotiations, not offers to Wade.
 
 | Player | Opened | Dated rounds | Known position | Source |
 | --- | --- | --- | --- | --- |
-| Jason Kidd | 2003-07-01 | 2 | Dated negotiation; no signing confirmed | [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json) |
+| Jason Kidd | 2003-07-01 | 3 | Dated negotiation; no signing confirmed | [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json) |
 
 ## Recorded market events
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2003-07-02",
+  "as_of": "2003-07-03",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2003-07-02"
+              "2003-07-03"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2003-07-02",
+              "2003-07-03",
               "Current checkpoint",
               "2003-06-30-miami-option-and-qualifying-offer-decisions",
               "Recorded",
@@ -229,7 +229,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-02"
+          "value": "2003-07-03"
         },
         {
           "label": "Team",
@@ -432,7 +432,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-02"
+          "value": "2003-07-03"
         },
         {
           "label": "Team",
@@ -652,7 +652,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-02"
+          "value": "2003-07-03"
         },
         {
           "label": "Team",
@@ -748,7 +748,7 @@
             [
               "Jason Kidd",
               "2003-07-01",
-              2,
+              3,
               "Dated negotiation; no signing confirmed",
               {
                 "label": "Negotiation source",
@@ -888,7 +888,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-02"
+          "value": "2003-07-03"
         },
         {
           "label": "Team",
@@ -1076,7 +1076,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-02"
+          "value": "2003-07-03"
         },
         {
           "label": "Team",
@@ -1260,7 +1260,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-02"
+          "value": "2003-07-03"
         },
         {
           "label": "Team",
@@ -1453,7 +1453,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-02"
+          "value": "2003-07-03"
         },
         {
           "label": "Team",
@@ -1660,7 +1660,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-02"
+          "value": "2003-07-03"
         },
         {
           "label": "Team",
@@ -1677,7 +1677,7 @@
       "title": "Stats review",
       "status": "inactive",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "0 closed game records in 2003-04 through 2003-07-02. Competitions remain separate.",
+      "summary": "0 closed game records in 2003-04 through 2003-07-03. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -1849,7 +1849,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-02"
+          "value": "2003-07-03"
         },
         {
           "label": "Team",
@@ -1867,7 +1867,7 @@
   "rookie_scale_reference": {
     "schema_version": 1,
     "reference_only": true,
-    "as_of": "2003-07-02",
+    "as_of": "2003-07-03",
     "player": "Dwyane Wade",
     "draft_year": 2003,
     "pick": 5,

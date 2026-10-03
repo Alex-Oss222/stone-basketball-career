@@ -2,9 +2,9 @@
 
 # Contract | Eric Piatkowski
 
-Known through: 2003-07-02. [Open interactive contract](piatker01.html#contract) · [Contract history](piatker01.html#contract-history)
+Known through: 2003-07-03. [Open interactive contract](piatker01.html#contract) · [Contract history](piatker01.html#contract-history)
 
-Eric Piatkowski: free agent expiring. Evidence cutoff: 2003-07-02.
+Eric Piatkowski: free agent expiring. Evidence cutoff: 2003-07-03.
 
 ## Current contract
 

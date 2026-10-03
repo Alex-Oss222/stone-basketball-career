@@ -16,6 +16,7 @@ from .valuation import read
 
 ROOT = Path(__file__).resolve().parents[1]
 SEASON = "2003-04"
+MIAMI = "Miami Heat"
 TEAM = Path(f"career/Dwyane_Wade/{SEASON}/00_Team")
 POSITIONS = ("PG", "SG", "SF", "PF", "C")
 ROTATION_MINUTES = {"PG": 48, "SG": 48, "SF": 48, "PF": 48, "C": 48}   # a full rotation covers 48 at each spot
@@ -349,7 +350,7 @@ class FrontOffice:
         """What the player weighs about Miami: role, strength and location (docs/front_office_design.md 4.3)."""
         role = self.role_for(target["position"])
         wins = self.config.get("projection", {}).get("wins", 30)
-        return {"role_minutes": role["minutes_per_game"], "strength": wins,
+        return {"club": MIAMI, "role_minutes": role["minutes_per_game"], "strength": wins,
                 "location": self.config.get("location_appeal", 0.6), "ask": target["ask"]}
 
     def match_packet(self, target, terms, window):

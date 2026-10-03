@@ -59,6 +59,39 @@ At market entry each player draws, once, a **trait** (fame, loyalty, money, winn
 
 For each live Miami offer the player compares two utilities: Miami's offer, and his **best alternative**, which is his real contract on his real date when the market file has it, otherwise the tier price for a player of his value (section 4.2). Utility is the priority-weighted sum of log guaranteed money, years, projected role at the club (minutes available at his position from the depth chart or the real rotation), the club's projected strength from on-date evidence (last season's record and the current roster), and location. The chance he accepts is a logistic function of the difference (`p = 1 / (1 + exp(-k * (U_miami - U_alt)))`, with `k` *judgement*, and `p` kept inside 0.02 to 0.95 so a weak offer never lands a star and a strong one is never certain). Three answers are possible: accept, counter with a stated ask, or reject. Patience: three rounds per club per window (*judgement*).
 
+### 4.4a The answer model (`runtime/player_utility.py`, `utility-2003.2`)
+
+From July 3, 2003 every answer packet uses the factor model below. It adapts a twelve-factor negotiation framework the user supplied (assessed in section 4.4b). Drawn answers made under the earlier five-weight utility stay as drawn.
+
+- **Factors, each scored 0 to 100 for Miami's offer and for his best alternative.** Money (guaranteed salary against his ask for the seasons he wants), security (seasons offered against seasons wanted), net income (state or provincial income-tax tier: none in Florida, Texas, Washington and Tennessee; highest in California, New York City and Ontario), role, contention, loyalty (the club he played for in 2002-03) and market (media-market tier). Tiers are *judgement*.
+- **Rosters decide role and contention** (`runtime/club_strength.py`), at the user's request. Every club's roster is rebuilt on the date: real clubs from the end-of-2002-03 rosters plus the real moves dated on or before it, under the conflict rules; Miami from its ledger. Contention is that club's projected wins *with him on it*, from a straight line fitted on the 2002-03 rosters against the 2002-03 standings. Role elsewhere is his value rank inside his position group on that roster. Miami's role is its own depth-chart promise. A signing therefore changes what the next free agent sees: a club that has just added a guard offers the next guard less, and a stronger roster draws veterans.
+- **Weights** come from his career stage (24 or younger, 25 to 29, 30 or older) and are tilted by his drawn trait. Contention carries more than in the supplied table at the early and prime stages, because the user asked that the rosters weigh heavily.
+- **Not scored.** These have no dated evidence: scheme fit (Miami's staff has set no scheme), organisation, coach and locker-room ties, medical staff, and family. They are named on every packet and never guessed for a real person. Era rules are not a preference; the contract desk refuses an illegal offer first.
+- **Answer odds.** The utility gap (Miami minus alternative, in points) goes through an ordered logistic. Accept is centred 4 points above the alternative and reject 10 points below it, with a scale of 4. Counter takes the band between. Accept is kept inside 2% to 95%. There is no counter in the last round he hears. An offer under 70% of the ask is near-certain rejection. The engine draws the answer.
+- **Counter.** The agent pushes on the factor where Miami loses most weighted ground. Money and years are fixed by the money counter and the next offer's length. A weakness money cannot fix, such as a weaker club or a smaller role, adds up to 15% to the counter (`runtime/negotiation.counter_amount`).
+- **Dealbreaker.** A starter in his prime offered a bench role walks without a draw. That means at least 30 minutes and 75% starts in 2002-03, aged 25 to 31, offered under 20 minutes.
+
+### 4.4b The supplied framework, assessed
+
+These parts were adopted:
+
+- The factor-weighted utility.
+- Career-stage weights.
+- Counters aimed at the weakest factor.
+- The role-disrespect dealbreaker.
+
+These parts were changed:
+
+- **Fixed thresholds become a draw.** The framework's fixed thresholds (accept at 72 or more, counter from 45 to 72, walk under 45) are deterministic and absolute. Here they become a draw on the gap to his real alternative, because a player measures an offer against what else he can get.
+- **The California rate is corrected.** The framework's 13.3% California rate is the 2012 rate. In 2003 the top rate was lower, so tiers are used, not rates.
+- **Era rules move out of the utility.** The framework's factor 12, era rules, is a legal constraint, not a preference.
+
+These parts were not adopted:
+
+- **The coach as the user.** The framework makes the user the coach. Here the user is Wade, and the coach is part of the AI front office.
+- **Invented personal details.** Psychometric profiles, family preferences and friendships for real players would be invented facts.
+- **Post-signing effects.** Morale, chemistry and coach-versus-star power have no engine hooks yet.
+
 A free agent Miami pursues before his real date can still be lost on that date: if no agreement exists, he signs his real contract. An agreement in the moratorium becomes a signing on July 16 or later.
 
 ### 4.5 Restricted free agents

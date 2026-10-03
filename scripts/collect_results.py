@@ -49,6 +49,31 @@ def fetch(path):
         return None
 
 
+def result_errors(request, result, kind):
+    """The collector's check that a served result answers the committed request it is filed against.
+
+    A decision result must repeat the request's event id, date, question, decider and options exactly and
+    carry an outcome among those options; a game result must carry the request's event id. A mismatch is
+    never written: the request in the repository is the record, and the engine's answer must be to it.
+    """
+    errors = []
+    if not isinstance(result, dict) or result.get("event_id") != request.get("event_id"):
+        return [f"result event id {result.get('event_id') if isinstance(result, dict) else None!r} is not the request's {request.get('event_id')!r}"]
+    if kind == "decision":
+        if result.get("kind") != "decision":
+            errors.append("result is not a decision")
+        for key in ("date", "question", "decider", "options"):
+            if result.get(key) != request.get(key):
+                errors.append(f"result {key} differs from the committed request")
+        if result.get("outcome") not in (request.get("options") or {}):
+            errors.append(f"outcome {result.get('outcome')!r} is not one of the request's options")
+    return errors
+
+
+def write_result(out, result):
+    out.write_text(json.dumps(result, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+
+
 def pending():
     games = [(p, p.with_name(p.name.replace(".request.json", ".result.json")),
               json.loads(p.read_text(encoding="utf-8"))["event_id"], "game") for p in find_requests(ROOT)]
@@ -82,7 +107,12 @@ def main():
             if result is None:
                 remaining.append((request, out, event_id, kind))
                 continue
-            out.write_text(json.dumps(result, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+            committed = json.loads(request.read_text(encoding="utf-8")) if request.exists() else {"event_id": event_id}
+            problems = result_errors(committed, result, kind if request.exists() else "game")
+            if problems:
+                print(f"REFUSED {event_id}: " + "; ".join(problems))
+                continue
+            write_result(out, result)
             written.append(out.relative_to(ROOT))
             print(f"{kind:<8} {event_id} -> {out.relative_to(ROOT)}")
         todo = remaining
