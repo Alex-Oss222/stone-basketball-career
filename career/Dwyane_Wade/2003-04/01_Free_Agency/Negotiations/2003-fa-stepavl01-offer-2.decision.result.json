@@ -1,0 +1,13 @@
+{
+ "date": "2003-07-17",
+ "decider": "Vladimir Stepania (simulated player)",
+ "event_id": "2003-fa-stepavl01-offer-2",
+ "kind": "decision",
+ "options": {
+  "accept": 0.206,
+  "counter": 0.69,
+  "reject": 0.104
+ },
+ "outcome": "counter",
+ "question": "Does Vladimir Stepania accept Miami Heat's offer (4 years, $18,507,572 guaranteed)?"
+}

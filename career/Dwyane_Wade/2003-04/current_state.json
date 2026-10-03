@@ -2,7 +2,7 @@
  "schema_version": 1,
  "initialized": true,
  "season": "2003-04",
- "current_date": "2003-07-03",
+ "current_date": "2003-07-31",
  "current_area": "01_Free_Agency",
  "current_note": "01_Free_Agency/note.md",
  "team": "Miami Heat",
@@ -13,8 +13,8 @@
   "overall": 5,
   "status": "selected"
  },
- "contract_status": "draft_rights_unsigned",
- "roster_status": "draft_rights",
- "last_closed_event": "2003-06-30-miami-option-and-qualifying-offer-decisions",
+ "contract_status": "rookie_scale_contract",
+ "roster_status": "under_contract",
+ "last_closed_event": "2003-07-21-wade-signs-rookie-contract",
  "pending_player_decisions": []
 }

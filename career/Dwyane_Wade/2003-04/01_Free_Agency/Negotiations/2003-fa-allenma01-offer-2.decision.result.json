@@ -1,0 +1,13 @@
+{
+ "date": "2003-07-17",
+ "decider": "Malik Allen (simulated player)",
+ "event_id": "2003-fa-allenma01-offer-2",
+ "kind": "decision",
+ "options": {
+  "accept": 0.163,
+  "counter": 0.703,
+  "reject": 0.134
+ },
+ "outcome": "counter",
+ "question": "Does Malik Allen accept Miami Heat's offer (5 years, $25,823,350 guaranteed)?"
+}

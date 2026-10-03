@@ -2,9 +2,9 @@
 
 # Contract | Dion Glover
 
-Known through: 2003-07-03. [Open interactive contract](glovedi01.html#contract) · [Contract history](glovedi01.html#contract-history)
+Known through: 2003-07-31. [Open interactive contract](glovedi01.html#contract) · [Contract history](glovedi01.html#contract-history)
 
-Dion Glover: free agent expiring. Evidence cutoff: 2003-07-03.
+Dion Glover: free agent expiring. Evidence cutoff: 2003-07-31.
 
 ## Current contract
 

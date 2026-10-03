@@ -21,7 +21,9 @@ AFTER_CHECKPOINT = (                       # records the clock writes after June
     f"{SEASON}/Wade_Consultations",
     f"{SEASON}/00_Team/Transactions",
     f"{SEASON}/04_Training_Camp/camp_roster.json",
+    f"{SEASON}/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json",
     "career/Dwyane_Wade/standing.json",
+    "career/Dwyane_Wade/Contracts/contract_records.json",
 )
 
 

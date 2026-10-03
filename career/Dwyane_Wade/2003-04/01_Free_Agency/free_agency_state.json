@@ -1,12 +1,13 @@
 {
  "window": "2003-fa",
  "june30_applied": true,
- "news_through": "2003-07-03",
+ "news_through": "2003-07-31",
  "plans": [
-  "2003-07-01"
+  "2003-07-01",
+  "2003-07-16"
  ],
- "wade_offer_date": null,
- "standing": "unsigned_rookie",
- "standing_as_of": null,
- "stopped": "awaiting engine draws: 2003-fa-kiddja01-offer-3"
+ "wade_offer_date": "2003-07-19",
+ "standing": "rookie",
+ "standing_as_of": "2003-07-21",
+ "stopped": null
 }

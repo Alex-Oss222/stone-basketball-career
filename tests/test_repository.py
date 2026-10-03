@@ -175,7 +175,7 @@ class InitializedCareerTests(unittest.TestCase):
         self.assertEqual(finance["historical_actual_salary_cap"],43840000)
         self.assertEqual(finance["known_counted_salary_before_free_agent_holds"],32066078)
         self.assertEqual(finance["subtotal_precision"],"includes_rounded_report")
-        schedules=json.loads((TEAM/"Finances/contract_schedules.json").read_text(encoding="utf-8"))
+        schedules=checkpoint.read("career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json")
         wade=next(x for x in schedules["players"] if x["player"]=="Dwyane Wade")
         self.assertEqual(wade["current_cap_hold"],2197000)
 

@@ -325,8 +325,14 @@ class LiveContractCatalogTests(unittest.TestCase):
         self.assertEqual(410, len(catalog["players"]))
         self.assertEqual("wadedw01", catalog["default_player_id"])
         wade = next(p for p in catalog["players"] if p["id"] == "wadedw01")
-        self.assertEqual([], wade["history"])
-        self.assertIsNone(wade["current"])
+        log = player / "2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json"
+        signed = log.is_file() and any(e["action"] == "sign" for e in json.loads(log.read_text())["entries"])
+        if signed:                                       # the live clock is past his signing: one executed agreement
+            self.assertEqual(1, len(wade["history"]))
+            self.assertEqual("rookie_scale", wade["current"]["type"])
+        else:
+            self.assertEqual([], wade["history"])
+            self.assertIsNone(wade["current"])
         for p in catalog["players"]:
             json.dumps(contract_payload(p, root=ROOT, page=player / "Contracts/players" / (p["id"] + ".html")))
         self.assertEqual(before, {p: p.read_bytes() for p in player.rglob("*.json")})

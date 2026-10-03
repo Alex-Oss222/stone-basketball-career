@@ -1,0 +1,13 @@
+{
+ "date": "2003-07-16",
+ "decider": "Mike James (simulated player)",
+ "event_id": "2003-fa-jamesmi01-offer-1",
+ "kind": "decision",
+ "options": {
+  "accept": 0.133,
+  "counter": 0.702,
+  "reject": 0.165
+ },
+ "outcome": "accept",
+ "question": "Does Mike James accept Miami Heat's offer (3 years, $10,294,422 guaranteed)?"
+}

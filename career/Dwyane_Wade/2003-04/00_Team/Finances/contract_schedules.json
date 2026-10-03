@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "owner": "ai_gm",
-  "as_of": "2003-06-30",
+  "as_of": "2003-07-21",
   "team": "Miami Heat",
   "horizon": [
     "2003-04",
@@ -329,10 +329,12 @@
     },
     {
       "player": "Dwyane Wade",
-      "status": "unsigned_first_round_draft_rights",
-      "current_cap_hold": 2197000,
+      "status": "under_contract",
       "schedule": {
-        "2003-04": 2197000
+        "2003-04": 2197000,
+        "2004-05": 2361800,
+        "2005-06": 2526600,
+        "2006-07": 3201202
       },
       "rookie_scale_reference": {
         "2003-04": 2197000,
@@ -344,16 +346,112 @@
           "max": 120
         }
       },
-      "notes": "The current cap charge is 100% of rookie scale because an unsigned first-round pick counts at scale immediately after selection under the 1999 CBA. Future rookie-scale figures are reference terms, not signed Miami commitments until Wade signs.",
+      "notes": "Rookie-scale contract signed July 21, 2003: 80% of the No. 5 scale as protected Current Cash Compensation plus incentives to 120%; the scheduled amounts are the counted Salary (protected cash, included incentives and bonuses classified Likely); Unlikely bonuses count only when earned. Three seasons plus a team option for 2006-07 at the third season's Salary raised 26.7%, to be exercised by 2005-10-31. The draft hold ends with the signing.",
       "sources": [
+        "01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json",
         "https://basketball.realgm.com/nba/info/rookie_scale/2004",
         "https://www.cbafaq.com/salarycap99.htm",
         "https://www.cbafaq.com/scale99.htm",
         "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
       ],
       "amount_kind": {
-        "2003-04": "draft_hold"
-      }
+        "2003-04": "contract_salary",
+        "2004-05": "contract_salary",
+        "2005-06": "contract_salary",
+        "2006-07": "team_option"
+      },
+      "signed_date": "2003-07-21",
+      "original_term_seasons": 3,
+      "team_option_season": "2006-07",
+      "fourth_year_option_deadline": "2005-10-31",
+      "percent_of_scale": 120,
+      "route": "rookie_scale",
+      "protected_schedule": {
+        "2003-04": 1757600,
+        "2004-05": 1889440,
+        "2005-06": 2021280
+      },
+      "maximum_schedule": {
+        "2003-04": 2636400,
+        "2004-05": 2834160,
+        "2005-06": 3031920
+      },
+      "incentives": [
+        {
+          "id": "conditioning_program",
+          "label": "Offseason skill and conditioning program (10% of scale)",
+          "kind": "conditioning_program",
+          "percent": 10,
+          "classification": "included",
+          "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+          "benchmarks": {
+            "2003-04": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+            "2004-05": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+            "2005-06": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league."
+          },
+          "amounts": {
+            "2003-04": 219700,
+            "2004-05": 236180,
+            "2005-06": 252660
+          }
+        },
+        {
+          "id": "physical_condition",
+          "label": "Preseason conditioning standard (10% of scale)",
+          "kind": "physical_condition",
+          "percent": 10,
+          "classification": "included",
+          "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+          "benchmarks": {
+            "2003-04": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+            "2004-05": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+            "2005-06": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league)."
+          },
+          "amounts": {
+            "2003-04": 219700,
+            "2004-05": 236180,
+            "2005-06": 252660
+          }
+        },
+        {
+          "id": "minutes",
+          "label": "Regular-season minutes (10% of scale)",
+          "kind": "performance",
+          "percent": 10,
+          "classification": "unlikely",
+          "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+          "benchmarks": {
+            "2003-04": "At least 1,200 regular-season minutes played.",
+            "2004-05": "At least 1,200 regular-season minutes played.",
+            "2005-06": "At least 1,200 regular-season minutes played."
+          },
+          "amounts": {
+            "2003-04": 219700,
+            "2004-05": 236180,
+            "2005-06": 252660
+          }
+        },
+        {
+          "id": "achievement",
+          "label": "Achievement (10% of scale)",
+          "kind": "performance",
+          "percent": 10,
+          "classification": "unlikely",
+          "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+          "benchmarks": {
+            "2003-04": "Selection to an NBA All-Rookie Team.",
+            "2004-05": "At least 15.0 points per game while appearing in at least 60 games.",
+            "2005-06": "At least 17.0 points per game while appearing in at least 60 games."
+          },
+          "amounts": {
+            "2003-04": 219700,
+            "2004-05": 236180,
+            "2005-06": 252660
+          }
+        }
+      ],
+      "bonus_evaluation": "each season's incentives are evaluated against closed results at the season rollover (docs/ROADMAP.md item 18)",
+      "contract_id": "wadedw01-2003-07-21"
     },
     {
       "player": "Jerome Beasley",
@@ -369,6 +467,46 @@
       "sources": [
         "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
       ]
+    },
+    {
+      "player": "Mike James",
+      "bbr_id": "jamesmi01",
+      "status": "re_signed",
+      "schedule": {
+        "2003-04": 3050199,
+        "2004-05": 3431474,
+        "2005-06": 3812749
+      },
+      "amount_kind": {
+        "2003-04": "contract_salary",
+        "2004-05": "contract_salary",
+        "2005-06": "contract_salary"
+      },
+      "guaranteed": {
+        "2003-04": 3050199,
+        "2004-05": 3431474,
+        "2005-06": 3812749
+      },
+      "signed_date": "2003-07-17",
+      "original_term_seasons": 3,
+      "route": "early_bird",
+      "promise": {
+        "role": "starter",
+        "minutes_per_game": 32
+      },
+      "base_year_compensation": {
+        "applies": true,
+        "status": "inferred for 1999: re-signed with Bird or Early Bird rights at a raise over 20% by a club over the cap (raise over 20% of $512,435; Miami $46,515,837 against the $43,840,000 cap with the contract counted); attached at the signing"
+      },
+      "notes": "Signed July 17, 2003 by simulated Miami via early_bird; agreed 2003-07-17 (engine decision 2003-fa-jamesmi01-offer-1).",
+      "sources": [
+        "career/Dwyane_Wade/2003-04/01_Free_Agency/Negotiations/mike_james.json"
+      ],
+      "prior_season_salary": {
+        "season": "2002-03",
+        "amount": 512435
+      },
+      "contract_id": "jamesmi01-2003-07-17"
     }
   ],
   "expiring_or_unresolved_without_scheduled_2003_04_salary": [

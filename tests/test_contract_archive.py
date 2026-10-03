@@ -6,6 +6,8 @@ import shutil
 import tempfile
 import unittest
 
+from tests import checkpoint
+
 from runtime.contract_archive import ARCHIVE, archive_contract, archive_previous_contract
 from runtime import signing
 from runtime.rookie_contract import rookie_terms
@@ -112,6 +114,7 @@ class ContractArchiveTests(unittest.TestCase):
 
     def copy_career(self, library=False):
         shutil.copytree(ROOT / "career", self.root / "career")
+        checkpoint.pin(self.root)                        # signings are exercised from the June 26 checkpoint
         if library:
             shutil.copytree(ROOT / "library", self.root / "library")
 

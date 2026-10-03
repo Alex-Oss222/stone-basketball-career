@@ -1,0 +1,12 @@
+{
+ "event_id": "2003-fa-clarkke01-offer-1",
+ "date": "2003-07-16",
+ "question": "Does Keon Clark accept Miami Heat's offer (3 years, $12,828,760 guaranteed)?",
+ "decider": "Keon Clark (simulated player)",
+ "options": {
+  "accept": 0.02,
+  "counter": 0.007,
+  "reject": 0.973
+ },
+ "basis": "utility-2003.2: utility 48.41 at Miami Heat against 72.69 for his alternative (tier price (no reported terms): 4 years, $22,707,955 at None), gap -24.28 points. Rosters on the date with him: Miami Heat 28.8 projected wins, about 20 minutes; None 41 wins, about 22.2 minutes. Prime stage, trait money. Factors (weight x offer/alternative): money 0.28 x 13.4/70.5; security 0.09 x 75/100; net_income 0.06 x 100/60; role 0.22 x 90.1/100; contention 0.22 x 22/52.5; loyalty 0.08 x 50/50; market 0.05 x 60/60. Ordered logistic: accept above 4.0, reject below -10.0, scale 4.0; round 1 of 3. Weakest factor against the alternative: money. Not scored (no dated evidence): scheme fit, organisation, coach and locker-room ties, medical staff, family."
+}

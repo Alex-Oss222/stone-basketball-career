@@ -4,11 +4,11 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2003-07-03](assets/stat_reports/personal_2003-07-03.svg)
+![Player personal information and earned career awards through 2003-07-31](assets/stat_reports/personal_2003-07-31.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
-| Dwyane Tyrone Wade Jr. | 19 | Miami Heat / NBA | SG / PG | Not assigned | Draft rights; unsigned |
+| Dwyane Tyrone Wade Jr. | 19 | Miami Heat / NBA | SG / PG | Not assigned | Under contract |
 
 | Identity field | Recorded value |
 | --- | --- |
@@ -19,7 +19,7 @@
 | Weight | 220 lb |
 | Wingspan / standing reach | 6 ft 11.5 in / 8 ft 7.5 in |
 | Shooting hand | Right |
-| Contract | No executed professional contract |
+| Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option |
 | Role | Unassigned rookie |
 | NBA debut | Not recorded |
 | Nationality | Not recorded |
@@ -27,9 +27,9 @@
 | National-team eligibility | Not verified |
 | Availability | No current restriction recorded in the established profile |
 | Physical measurements recorded | 2003-06-25 |
-| Professional status effective | 2003-06-26 |
+| Professional status effective | 2003-07-21 |
 
-Identity as of 2003-07-03; status snapshot dated 2003-06-26. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-07-31; status snapshot dated 2003-07-21. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Established full player profile](Dwyane_Wade_Player_Profile.md)
 

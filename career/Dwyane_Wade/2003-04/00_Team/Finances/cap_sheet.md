@@ -1,16 +1,16 @@
 # Miami Heat | Cap sheet
 
-July 1, 2003 · 2003-04 through 2010-11 · USD
+July 21, 2003 · 2003-04 through 2010-11 · USD
 
 [Finance guide](README.md) · [Roster and control](../Team/Roster/roster.json) · [Contract detail](contract_schedules.json)
 
 ## Current cap position
 
-| Cap (planning, prior season) | Committed salary | Free-agent holds | Roster charge | Room |
+| Cap (published) | Committed salary | Free-agent holds | Roster charge | Room |
 | ---: | ---: | ---: | ---: | ---: |
-| 40,271,000 | 37,293,436 | 28,499,658 | 1,467,724 | -26,989,818 |
+| 43,840,000 | 40,343,635 | 6,172,202 | 1,100,793 | -3,776,630 |
 
-Committed salary counts contracts, exercised options and the unsigned first-round hold on July 1, 2003. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
+Committed salary counts contracts, exercised options and the unsigned first-round hold on July 21, 2003. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
 
 ## Eight-season commitments
 
@@ -20,12 +20,13 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 | [Brian Grant](../Team/Player_Cards/brian_grant.md) | 12,130,648 | 13,233,434 | 14,336,220 | 15,439,006<sup>ETO</sup> | — | — | — | — |
 | [Anthony Carter](../Team/Player_Cards/anthony_carter.md) | 4,100,000<sup>PO</sup> | — | — | — | — | — | — | — |
 | [LaPhonso Ellis](../Team/Player_Cards/laphonso_ellis.md) | 3,600,000 | — | — | — | — | — | — | — |
-| [Dwyane Wade](../Team/Player_Cards/dwyane_wade.md) | 2,197,000<sup>H</sup> | — | — | — | — | — | — | — |
+| [Mike James](../Team/Player_Cards/mike_james.md) | 3,050,199 | 3,431,474 | 3,812,749 | — | — | — | — | — |
+| [Dwyane Wade](../Team/Player_Cards/dwyane_wade.md) | 2,197,000 | 2,361,800 | 2,526,600 | 3,201,202<sup>TO</sup> | — | — | — | — |
 | [Caron Butler](../Team/Player_Cards/caron_butler.md) | 1,804,680 | 1,930,680 | 2,461,617<sup>TO</sup> | — | — | — | — | — |
 | [Rasual Butler](../Team/Player_Cards/rasual_butler.md) | 563,679<sup>TO</sup> | — | — | — | — | — | — | — |
 | [Sean Lampley](../Team/Player_Cards/sean_lampley.md) | 563,679<sup>TO</sup> | — | — | — | — | — | — | — |
 | [Jerome Beasley](../Team/Player_Cards/jerome_beasley.md) | — | — | — | — | — | — | — | — |
-| Counted | 37,293,436 | 28,619,114 | 31,374,087 | 31,136,506 | 0 | 0 | 0 | 0 |
+| Counted | 40,343,635 | 34,412,388 | 37,713,436 | 34,337,708 | 0 | 0 | 0 | 0 |
 
 ## Free-agent holds
 
@@ -33,8 +34,6 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 | --- | ---: | --- |
 | Eddie House | 1,274,870 | larry_bird |
 | Malik Allen | 666,166 | early_bird |
-| Mike James | 666,166 | early_bird |
-| Alonzo Mourning | 21,661,290 | larry_bird |
 | Travis Best | 1,680,000 | non_bird |
 | Vladimir Stepania | 1,755,000 | early_bird |
 | Sean Marks | 796,166 | early_bird |

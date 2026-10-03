@@ -1,0 +1,12 @@
+{
+ "event_id": "2003-fa-allenma01-offer-1",
+ "date": "2003-07-16",
+ "question": "Does Malik Allen accept Miami Heat's offer (4 years, $12,317,005 guaranteed)?",
+ "decider": "Malik Allen (simulated player)",
+ "options": {
+  "accept": 0.02,
+  "counter": 0.032,
+  "reject": 0.948
+ },
+ "basis": "utility-2003.2: utility 51.04 at Miami Heat against 72.69 for his alternative (tier price (no reported terms): 5 years, $27,805,584 at None), gap -21.65 points. Rosters on the date with him: Miami Heat 28.3 projected wins, about 32 minutes; None 41 wins, about 29.0 minutes. Prime stage, trait money. Factors (weight x offer/alternative): money 0.28 x 0/70.5; security 0.09 x 80/100; net_income 0.06 x 100/60; role 0.22 x 100/100; contention 0.22 x 20.8/52.5; loyalty 0.08 x 100/50; market 0.05 x 60/60. Ordered logistic: accept above 4.0, reject below -10.0, scale 4.0; round 1 of 3. Weakest factor against the alternative: money. Not scored (no dated evidence): scheme fit, organisation, coach and locker-room ties, medical staff, family."
+}

@@ -123,6 +123,13 @@
    "from": "2003-06-26",
    "until": null,
    "basis": "draft rights"
+  },
+  {
+   "player": "Mike James",
+   "bbr_id": "jamesmi01",
+   "from": "2003-07-17",
+   "until": null,
+   "basis": "signed 2003-07-17 (early_bird); negotiation record Negotiations/mike_james.json"
   }
  ]
 }

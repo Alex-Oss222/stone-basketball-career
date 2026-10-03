@@ -6,6 +6,8 @@ import shutil
 import tempfile
 import unittest
 
+from tests import checkpoint
+
 from runtime.player_milestones import SCREEN_IDS, build_milestone_pages, build_milestone_payload
 from runtime.rookie_contract import rookie_terms
 
@@ -42,7 +44,8 @@ class LiveMilestonesTests(unittest.TestCase):
         for relative in files:
             target = self.root / relative
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(ROOT / relative, target)
+            frozen = checkpoint.FIXTURE / relative          # the June 26 checkpoint where the clock has moved past it
+            shutil.copyfile(frozen if frozen.is_file() else ROOT / relative, target)
         self.identity = json.loads((self.player / "professional_identity.json").read_text())
 
     def pin_checkpoint(self):

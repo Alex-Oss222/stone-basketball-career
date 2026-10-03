@@ -2,11 +2,11 @@
 
 # Contract negotiation | Dwyane Wade
 
-Career date: 2003-07-03 · Miami Heat · inactive
+Career date: 2003-07-31 · Miami Heat · recorded
 
 [Live milestone desk](index.html#contract_negotiation) · [All milestones](README.md)
 
-No written rookie-contract offer is recorded at this checkpoint. Your scale reference is available for preparation.
+Miami's latest recorded offer is dated 2003-07-19.
 
 Activation: A dated, actual offer opens the response desk; unsigned draft rights alone do not create one.
 
@@ -14,11 +14,11 @@ Activation: A dated, actual offer opens the response desk; unsigned draft rights
 
 | Item | Position |
 | --- | --- |
-| Player status | draft rights unsigned |
-| Current proposal | None recorded |
-| Whose response is next | Miami records its actual first offer; the player then chooses a response. |
-| Negotiation participants | You and Miami; draft rights remain with Miami |
-| Market-worth estimate | Rookie-scale signing; NBA-market value does not set this salary |
+| Player status | rookie scale contract |
+| Current proposal | 2003-07-19 |
+| Whose response is next | Verify registration and the authoritative contract record; no second player acceptance is requested. |
+| Negotiation participants | As identified in the actual dated offer |
+| Market-worth estimate | No verified live market valuation supplied |
 | Player status selector | Live eligibility follows records; UFA/RFA cannot be selected here |
 
 ## Actual latest club proposal
@@ -27,7 +27,10 @@ No rows means no actual club offer. A player counter does not rewrite the club's
 
 | Season | Salary | Protection / option classification |
 | --- | --- | --- |
-| No dated record | N/A | N/A |
+| 2003-04 | $2,636,400 | contract_salary |
+| 2004-05 | $2,834,160 | contract_salary |
+| 2005-06 | $3,031,920 | contract_salary |
+| 2006-07 | $3,841,443 | team_option |
 
 ## Fixed No. 5 rookie-scale reference
 
@@ -35,16 +38,17 @@ Legal scale reference only: not offers, signed salary or a future option decisio
 
 | Season | 80% of scale | 100% of scale | 120% of scale | Nature |
 | --- | --- | --- | --- | --- |
-| 2003-04 | $1,757,600 | $2,197,000 | $2,636,400 | Rookie-scale reference |
-| 2004-05 | $1,889,440 | $2,361,800 | $2,834,160 | Rookie-scale reference |
-| 2005-06 | $2,021,280 | $2,526,600 | $3,031,920 | Rookie-scale reference |
-| 2006-07 | $2,560,962 | $3,201,202 | $3,841,443 | Team option, not exercised |
+| No dated record | N/A | N/A | N/A | N/A |
 
 ## Dated negotiation history
 
 | Date | Party | Action | Scale percentage | Recorded note |
 | --- | --- | --- | --- | --- |
-| No dated record | N/A | N/A | N/A | N/A |
+| 2003-07-19 | miami | offer | 120 | 120% is the customary first-round signing level; signing later keeps the lower 100% hold during free agency. Offered after Miami's July free-agent moves; the role promise is the better of his two positions on the depth chart on 2003-07-19, and at least a rotation role for a top-ten pick. |
+| 2003-07-19 | wade | counter | N/A | 80% of scale as protected Current Cash Compensation plus up to 40% of scale in CBA-compliant incentives: 20% in physical-condition and designated-program incentives that count as Salary, 20% in objective performance incentives classified by the league (Unlikely for a rookie). Maximum compensation 120% of scale. Miami's stated role is a non-contractual basketball representation. No signing bonus. Three seasons plus the mandatory fourth-year team option at 26.7% over the third season's Salary. |
+| 2003-07-20 | miami | answer | N/A | Agreed: 80% protected with incentives to 120% is legal and within the 120% Miami offered; the counted Salary is protected cash plus included incentives. Miami's stated role remains a basketball representation, not a contract term. |
+| 2003-07-20 | wade | accept | N/A | Accepts Miami's agreement to the counter (standing instruction). |
+| 2003-07-21 | miami | sign | N/A | Contract executed July 21, 2003; recorded on contract_schedules.json and the register. |
 
 ## Your response and the separate club decision
 
@@ -62,14 +66,21 @@ Legal scale reference only: not offers, signed salary or a future option decisio
 - Signing date, registration and any verified conditions.
 - Basketball role discussions remain separate from salary and legal principal terms.
 
+## Reply to this version
+
+| Record | Version | Next step |
+| --- | --- | --- |
+| [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json) | 44f6bc0752a71bd7 | Use rookie_contract: accept, counter, decline or request; execution remains separate |
+
 ## Available response paths
 
+- [Open the actual negotiation record](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json): Review the recorded proposal and the party whose response is due; no duplicate acceptance is requested.
 - [Review the rookie-contract workflow](../../../docs/front_office.md): Explains the existing club-offer and player-response process.
 - [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
 
-Miami records its actual first offer; the player then chooses a response.
+Verify registration and the authoritative contract record; no second player acceptance is requested.
 
 ## Evidence
 
@@ -77,11 +88,15 @@ Miami records its actual first offer; the player then chooses a response.
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
 - [Owning event](../2003-04/01_Free_Agency/note.md)
-- [Dated contract control and fixed rookie-scale reference](../2003-04/00_Team/Finances/contract_schedules.json)
-- [Rookie-scale-only reference: no unpublished cap data](rookie_scale_reference.json)
+- [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
+- [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
 - [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/mike_james.json)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/vladimir_stepania.json)
 - [Dated milestone working records and player replies](../milestones.json)

@@ -42,7 +42,8 @@ class LiveCareerSiteTests(unittest.TestCase):
             self.assertIsNone(self.site.resource(path), path)
         page, kind = self.site.resource("/career/Dwyane_Wade/2003-04/current_state.json")
         self.assertEqual(kind, "application/json")
-        self.assertEqual(json.loads(page)["contract_status"], "draft_rights_unsigned")
+        live = json.loads((ROOT / "career/Dwyane_Wade/2003-04/current_state.json").read_text(encoding="utf-8"))
+        self.assertEqual(json.loads(page)["contract_status"], live["contract_status"])      # served as recorded, whatever the date
 
     def test_record_pages_keep_full_tables_and_escape_embedded_html(self):
         page = source_page("# Record\n\n| A | B |\n| --- | --- |\n| 2 | 3 |\n\n<script>alert(1)</script>\n[Bad](javascript:alert)\n", "Record")

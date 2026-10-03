@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "player_id": "dwyane_wade",
+  "aliases": ["Dwyane Wade", "dwyane_wade", "wadedw01"],
+  "full_name": "Dwyane Tyrone Wade Jr.",
+  "display_name": "Dwyane Wade",
+  "date_of_birth": "1984-01-17",
+  "record_type": "user_established_alternate_history",
+  "source_profile": "Dwyane_Wade_Player_Profile.md",
+  "physical_profile_as_of": "2003-06-25",
+  "height_in_shoes": "6 ft 6 in",
+  "height_without_shoes": "6 ft 4.75 in",
+  "weight_lb": 220,
+  "wingspan": "6 ft 11.5 in",
+  "standing_reach": "8 ft 7.5 in",
+  "shooting_hand": "Right",
+  "nationalities": null,
+  "snapshots": [
+    {
+      "as_of": "2003-06-26",
+      "team": "Miami Heat",
+      "league": "NBA",
+      "positions": ["SG", "PG"],
+      "jersey": null,
+      "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+      "prior_program": "UConn (simulation canon)",
+      "roster_status": "Draft rights; unsigned",
+      "contract": "No executed professional contract",
+      "role": "Unassigned rookie",
+      "nba_debut": null,
+      "national_team": null,
+      "national_team_eligibility": "Not verified",
+      "availability": "No current restriction recorded in the established profile",
+      "source_state": "2003-04/current_state.json"
+    }
+  ]
+}

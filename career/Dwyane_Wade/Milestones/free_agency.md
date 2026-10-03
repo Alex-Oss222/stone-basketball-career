@@ -2,11 +2,11 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2003-07-03 · Miami Heat · inactive
+Career date: 2003-07-31 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
-Wade is not on the free-agent market while Miami holds his unsigned draft rights.
+Player eligibility requires actual contract, option and qualifying-offer records; team recruitment is separate.
 
 Activation: A verified player market window or actual dated Miami roster-market event.
 
@@ -14,11 +14,11 @@ Activation: A verified player market window or actual dated Miami roster-market 
 
 | Item | Current evidence |
 | --- | --- |
-| Control | draft_rights_unsigned |
-| UFA / RFA | Neither: unsigned draft rights |
-| Qualifying offer | Not applicable to this unsigned draft checkpoint |
+| Control | rookie_scale_contract |
+| UFA / RFA | Not established by a calendar date alone |
+| Qualifying offer | Requires actual tender and rights evidence |
 | Outside written offers | None established by the current player control record |
-| Market value | Rookie scale governs the first contract |
+| Market value | No verified estimate supplied to this live view |
 
 ## Your team-direction requests
 
@@ -34,6 +34,10 @@ These are Miami's roster negotiations, not offers to Wade.
 | Player | Opened | Dated rounds | Known position | Source |
 | --- | --- | --- | --- | --- |
 | Jason Kidd | 2003-07-01 | 3 | Dated negotiation; no signing confirmed | [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json) |
+| Keon Clark | 2003-07-16 | 3 | Dated negotiation; no signing confirmed | [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json) |
+| Malik Allen | 2003-07-16 | 3 | Dated negotiation; no signing confirmed | [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json) |
+| Mike James | 2003-07-16 | 1 | Signed | [Negotiation source](../2003-04/01_Free_Agency/Negotiations/mike_james.json) |
+| Vladimir Stepania | 2003-07-16 | 3 | Dated negotiation; no signing confirmed | [Negotiation source](../2003-04/01_Free_Agency/Negotiations/vladimir_stepania.json) |
 
 ## Recorded market events
 
@@ -45,6 +49,13 @@ These are Miami's roster negotiations, not offers to Wade.
 | 2003-07-01 | Front-office plan (prior cap, projected): room $-5,328,528 after renouncing when needed Alonzo Mourning; targets Jason Kidd (sign_and_trade, ask $10,626,721), Keon Clark (mid_level, ask $3,775,765). Record: `Plans/plan_2003-07-01.json`. |
 | 2003-07-01 | Wade's request to pursue Andre Miller: not pursued (ask $5,780,236 does not fit the room ($-5,328,528 left) or the exceptions; score 21.456). |
 | 2003-07-01 | Wade's request to pursue Lamar Odom: not pursued (ask $6,142,338 does not fit the room ($-5,328,528 left) or the exceptions; score 13.412). |
+| 2003-07-16 | Alonzo Mourning signs with New Jersey Nets (signing, real move); his hold and rights leave Miami's books. |
+| 2003-07-16 | Front-office plan (cap published): room $-1,759,528 after renouncing when needed Alonzo Mourning; targets Keon Clark (mid_level, ask $4,442,861). Record: `Plans/plan_2003-07-16.json`. |
+| 2003-07-16 | Wade's request to pursue Andre Miller: not pursued (ask $6,801,719 does not fit the room ($-1,759,528 left) or the exceptions; score 18.233). |
+| 2003-07-16 | Wade's request to pursue Lamar Odom: not pursued (ask $7,227,864 does not fit the room ($-1,759,528 left) or the exceptions; score 11.398). |
+| 2003-07-17 | Miami re-signs Mike James: 3 seasons, $10,294,422 ($10,294,422 guaranteed), route early_bird; promised role starter, 32 minutes a game. Record: `Negotiations/mike_james.json`. |
+| 2003-07-19 | Miami offers Wade his rookie-scale contract at 120% of scale with a promised role of rotation (20 minutes). Wade answers in `Wade_Rookie_Contract/negotiation_log.json`; the milestone screen shows the detailed negotiation. |
+| 2003-07-21 | Wade signs his rookie-scale contract (80% protected plus incentives to 120% of scale): $2,197,000 counted in 2003-04, three seasons plus a 2006-07 team option. Record: `Wade_Rookie_Contract/negotiation_log.json`. |
 
 ## Decision authority
 
@@ -70,11 +81,15 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
 - [Owning event](../2003-04/01_Free_Agency/note.md)
-- [Dated contract control and fixed rookie-scale reference](../2003-04/00_Team/Finances/contract_schedules.json)
-- [Rookie-scale-only reference: no unpublished cap data](rookie_scale_reference.json)
+- [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
+- [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
 - [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/mike_james.json)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/vladimir_stepania.json)
 - [Dated milestone working records and player replies](../milestones.json)

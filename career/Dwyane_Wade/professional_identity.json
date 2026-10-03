@@ -1,7 +1,11 @@
 {
   "schema_version": 1,
   "player_id": "dwyane_wade",
-  "aliases": ["Dwyane Wade", "dwyane_wade", "wadedw01"],
+  "aliases": [
+    "Dwyane Wade",
+    "dwyane_wade",
+    "wadedw01"
+  ],
   "full_name": "Dwyane Tyrone Wade Jr.",
   "display_name": "Dwyane Wade",
   "date_of_birth": "1984-01-17",
@@ -20,7 +24,10 @@
       "as_of": "2003-06-26",
       "team": "Miami Heat",
       "league": "NBA",
-      "positions": ["SG", "PG"],
+      "positions": [
+        "SG",
+        "PG"
+      ],
       "jersey": null,
       "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
       "prior_program": "UConn (simulation canon)",
@@ -32,6 +39,27 @@
       "national_team_eligibility": "Not verified",
       "availability": "No current restriction recorded in the established profile",
       "source_state": "2003-04/current_state.json"
+    },
+    {
+      "as_of": "2003-07-21",
+      "team": "Miami Heat",
+      "league": "NBA",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "jersey": null,
+      "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+      "prior_program": "UConn (simulation canon)",
+      "roster_status": "Under contract",
+      "contract": "Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option",
+      "role": "Unassigned rookie",
+      "nba_debut": null,
+      "national_team": null,
+      "national_team_eligibility": "Not verified",
+      "availability": "No current restriction recorded in the established profile",
+      "source_state": "2003-04/current_state.json",
+      "source_event": "2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json"
     }
   ]
 }
