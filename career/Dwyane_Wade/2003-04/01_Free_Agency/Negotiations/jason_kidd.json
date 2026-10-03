@@ -25,8 +25,56 @@
   "sign_and_trade_feasible": true,
   "binding_constraint": null
  },
- "priorities": null,
- "rounds": [],
+ "priorities": {
+  "trait": "money",
+  "weights": {
+   "money": 0.55,
+   "years": 0.15,
+   "role": 0.1,
+   "winning": 0.1,
+   "location": 0.1
+  }
+ },
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2003-07-01",
+   "offer_id": "MIA-jason_kidd-1",
+   "version": 1,
+   "route": "sign_and_trade",
+   "terms": {
+    "first_year": 9298381,
+    "years": 3,
+    "schedule": [
+     9298381,
+     10460679,
+     11622976
+    ],
+    "guaranteed": 31382036,
+    "raise_percent": 12.5,
+    "last_year_guaranteed": true,
+    "round": 1,
+    "promise": {
+     "role": "starter",
+     "minutes_per_game": 32
+    },
+    "basis": "round 1: ask $10,626,721, Miami's valuation $10,418,354, ceiling $11,460,189"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-kiddja01-offer-1",
+   "answer": null,
+   "answered": null,
+   "counter": null
+  }
+ ],
  "agreement": null,
  "sheet": null,
  "signing": null,
@@ -40,11 +88,31 @@
   ],
   "last_at": "2003-07-01T12:00:00-04:00",
   "cba": "1999",
-  "phase": "incumbent_negotiation",
-  "market": null,
-  "offers": [],
+  "phase": "market",
+  "market": {
+   "status": "UFA",
+   "contract_state": "expired",
+   "negotiation_opens": "2003-07-01T00:00:00-04:00",
+   "negotiation_closes": "2004-06-30T12:00:00-04:00",
+   "signing_opens": "2003-07-16T00:00:00-04:00",
+   "signing_closes": "2004-06-30T12:00:00-04:00",
+   "rights_ref": "library/2003/league/nba_2003_free_agent_rights.json"
+  },
+  "offers": [
+   {
+    "offer_id": "MIA-jason_kidd-1",
+    "version": 1,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":32,\"role\":\"starter\"},\"route\":\"sign_and_trade\",\"salary_schedule\":[{\"guaranteed\":9298381,\"option\":\"none\",\"salary\":9298381,\"season\":\"2003-04\"},{\"guaranteed\":10460679,\"option\":\"none\",\"salary\":10460679,\"season\":\"2004-05\"},{\"guaranteed\":11622976,\"option\":\"none\",\"salary\":11622976,\"season\":\"2005-06\"}]}"
+    },
+    "issued_at": "2003-07-01T12:00:00-04:00",
+    "expires_at": "2003-07-04T12:00:00-04:00",
+    "status": "open"
+   }
+  ],
   "slots": [
-   null,
+   "MIA-jason_kidd-1",
    null,
    null,
    null
@@ -52,6 +120,59 @@
   "requests": [],
   "sheet": null,
   "resolution": null,
-  "events": []
+  "events": [
+   {
+    "action": "open_market",
+    "actor": {
+     "kind": "player",
+     "identity": "Jason Kidd"
+    },
+    "at": "2003-07-01T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "d72508395b8f78e42be1a7ee18e9990b69b9b7a44608e2886941d6ab3f6ca312",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-01T12:00:00-04:00",
+     "valid_until": "2003-07-02T12:00:00-04:00",
+     "scope": "open_market",
+     "subject_digest": "d72508395b8f78e42be1a7ee18e9990b69b9b7a44608e2886941d6ab3f6ca312"
+    }
+   },
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-01T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "44aecb3251fc7d32ef0d42b949fb94d44a1da6c710534f79583a85e345dbc26e",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-01T12:00:00-04:00",
+     "valid_until": "2003-07-02T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "44aecb3251fc7d32ef0d42b949fb94d44a1da6c710534f79583a85e345dbc26e"
+    }
+   }
+  ]
  }
 }
