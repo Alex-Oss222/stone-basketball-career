@@ -80,6 +80,8 @@ def invite(on, front_office, market, root=ROOT):
     for bbr, p in market.pool(on).items():
         if p["club"] == MIAMI or any(r.get("bbr_id") == bbr for r in roster["players"]):
             continue
+        if market.restricted(bbr):
+            continue          # a camp contract is not an offer sheet: his club's right to match would be bypassed
         value, age = market.valuation.value(bbr), market.valuation.age(bbr)
         if value is None:
             continue

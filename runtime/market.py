@@ -83,6 +83,14 @@ class Market:
             out[key] = (row["date"], destination, row)
         return out
 
+    def restricted(self, bbr_id):
+        """A restricted free agent: his club holds a right to match, so only an offer sheet can sign him.
+
+        Eligible players count as restricted unless the world data records that no qualifying offer was
+        tendered (`qualifying_offer_tendered: false`); an unknown tender is treated as tendered."""
+        p = self.players.get(bbr_id) or {}
+        return bool(p.get("rfa_eligible")) and p.get("qualifying_offer_tendered") is not False
+
     def exit(self, bbr_id):
         return self.exits.get(bbr_id)
 
