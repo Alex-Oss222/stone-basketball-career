@@ -1,0 +1,3696 @@
+{
+  "schema_version": 1,
+  "as_of": "2003-06-26",
+  "players": [
+    {
+      "player_id": "mckieaa01",
+      "name": "Aaron McKie",
+      "team": "Philadelphia 76ers",
+      "status": "under contract",
+      "current_contract_id": "mckieaa01-existing-40573a80580b",
+      "recorded_agreements": 1,
+      "href": "players/mckieaa01.html#contract"
+    },
+    {
+      "player_id": "williaa01",
+      "name": "Aaron Williams",
+      "team": "New Jersey Nets",
+      "status": "under contract",
+      "current_contract_id": "williaa01-existing-9b50a79e354f",
+      "recorded_agreements": 1,
+      "href": "players/williaa01.html#contract"
+    },
+    {
+      "player_id": "harriad01",
+      "name": "Adam Harrington",
+      "team": "Denver Nuggets",
+      "status": "free agent expiring",
+      "current_contract_id": "harriad01-existing-0c692a1d7fd7",
+      "recorded_agreements": 1,
+      "href": "players/harriad01.html#contract"
+    },
+    {
+      "player_id": "foylead01",
+      "name": "Adonal Foyle",
+      "team": "Golden State Warriors",
+      "status": "under contract",
+      "current_contract_id": "foylead01-existing-eda9abc430a3",
+      "recorded_agreements": 1,
+      "href": "players/foylead01.html#contract"
+    },
+    {
+      "player_id": "griffad01",
+      "name": "Adrian Griffin",
+      "team": "Dallas Mavericks",
+      "status": "free agent expiring",
+      "current_contract_id": "griffad01-existing-f0c12ee39ac1",
+      "recorded_agreements": 1,
+      "href": "players/griffad01.html#contract"
+    },
+    {
+      "player_id": "harrial01",
+      "name": "Al Harrington",
+      "team": "Indiana Pacers",
+      "status": "under contract",
+      "current_contract_id": "harrial01-2001-11-01",
+      "recorded_agreements": 1,
+      "href": "players/harrial01.html#contract"
+    },
+    {
+      "player_id": "hendeal01",
+      "name": "Alan Henderson",
+      "team": "Atlanta Hawks",
+      "status": "under contract",
+      "current_contract_id": "hendeal01-existing-ffd1cadebf25",
+      "recorded_agreements": 1,
+      "href": "players/hendeal01.html#contract"
+    },
+    {
+      "player_id": "houstal01",
+      "name": "Allan Houston",
+      "team": "New York Knicks",
+      "status": "under contract",
+      "current_contract_id": "houstal01-existing-4181df4dc5c4",
+      "recorded_agreements": 1,
+      "href": "players/houstal01.html#contract"
+    },
+    {
+      "player_id": "iversal01",
+      "name": "Allen Iverson",
+      "team": "Philadelphia 76ers",
+      "status": "under contract",
+      "current_contract_id": "iversal01-existing-02158f91187a",
+      "recorded_agreements": 1,
+      "href": "players/iversal01.html#contract"
+    },
+    {
+      "player_id": "alonzo_mourning",
+      "name": "Alonzo Mourning",
+      "team": "Miami Heat",
+      "status": "free agent expiring",
+      "current_contract_id": "alonzo_mourning-existing-c85a644e8821",
+      "recorded_agreements": 1,
+      "href": "players/alonzo_mourning.html#contract"
+    },
+    {
+      "player_id": "willial02",
+      "name": "Alvin Williams",
+      "team": "Toronto Raptors",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/willial02.html#contract"
+    },
+    {
+      "player_id": "stoudam01",
+      "name": "Amar'e Stoudemire",
+      "team": "Phoenix Suns",
+      "status": "under rookie contract",
+      "current_contract_id": "stoudam01-2002-07-05",
+      "recorded_agreements": 1,
+      "href": "players/stoudam01.html#contract"
+    },
+    {
+      "player_id": "millean02",
+      "name": "Andre Miller",
+      "team": "Los Angeles Clippers",
+      "status": "free agent expiring",
+      "current_contract_id": "millean02-existing-44227597c571",
+      "recorded_agreements": 1,
+      "href": "players/millean02.html#contract"
+    },
+    {
+      "player_id": "glynian01",
+      "name": "Andreas Glyniadakis",
+      "team": "Detroit Pistons",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/glynian01.html#contract"
+    },
+    {
+      "player_id": "kirilan01",
+      "name": "Andrei Kirilenko",
+      "team": "Utah Jazz",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/kirilan01.html#contract"
+    },
+    {
+      "player_id": "declean01",
+      "name": "Andrew DeClercq",
+      "team": "Orlando Magic",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/declean01.html#contract"
+    },
+    {
+      "player_id": "hardaan01",
+      "name": "Anfernee Hardaway",
+      "team": "Phoenix Suns",
+      "status": "under contract",
+      "current_contract_id": "hardaan01-existing-440992846d5f",
+      "recorded_agreements": 1,
+      "href": "players/hardaan01.html#contract"
+    },
+    {
+      "player_id": "jamisan01",
+      "name": "Antawn Jamison",
+      "team": "Golden State Warriors",
+      "status": "under contract",
+      "current_contract_id": "jamisan01-2001-08-28",
+      "recorded_agreements": 1,
+      "href": "players/jamisan01.html#contract"
+    },
+    {
+      "player_id": "cartean01",
+      "name": "Anthony Carter",
+      "team": "Miami Heat",
+      "status": "player option pending",
+      "current_contract_id": "cartean01-existing-a6261cf04017",
+      "recorded_agreements": 1,
+      "href": "players/cartean01.html#contract"
+    },
+    {
+      "player_id": "johnsan02",
+      "name": "Anthony Johnson",
+      "team": "New Jersey Nets",
+      "status": "free agent expiring",
+      "current_contract_id": "johnsan02-existing-0af1d8752257",
+      "recorded_agreements": 1,
+      "href": "players/johnsan02.html#contract"
+    },
+    {
+      "player_id": "masonan01",
+      "name": "Anthony Mason",
+      "team": "Milwaukee Bucks",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/masonan01.html#contract"
+    },
+    {
+      "player_id": "peelean01",
+      "name": "Anthony Peeler",
+      "team": "Minnesota Timberwolves",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/peelean01.html#contract"
+    },
+    {
+      "player_id": "walkean02",
+      "name": "Antoine Walker",
+      "team": "Boston Celtics",
+      "status": "under contract",
+      "current_contract_id": "walkean02-1999-01-22",
+      "recorded_agreements": 1,
+      "href": "players/walkean02.html#contract"
+    },
+    {
+      "player_id": "daniean01",
+      "name": "Antonio Daniels",
+      "team": "Portland Trail Blazers",
+      "status": "free agent expiring",
+      "current_contract_id": "daniean01-existing-cdba12b35c5b",
+      "recorded_agreements": 1,
+      "href": "players/daniean01.html#contract"
+    },
+    {
+      "player_id": "davisan01",
+      "name": "Antonio Davis",
+      "team": "Toronto Raptors",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/davisan01.html#contract"
+    },
+    {
+      "player_id": "sabonar01",
+      "name": "Arvydas Sabonis",
+      "team": "Portland Trail Blazers",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/sabonar01.html#contract"
+    },
+    {
+      "player_id": "croshau01",
+      "name": "Austin Croshere",
+      "team": "Indiana Pacers",
+      "status": "under contract",
+      "current_contract_id": "croshau01-existing-cef2473987f9",
+      "recorded_agreements": 1,
+      "href": "players/croshau01.html#contract"
+    },
+    {
+      "player_id": "davisba01",
+      "name": "Baron Davis",
+      "team": "New Orleans Hornets",
+      "status": "under contract",
+      "current_contract_id": "davisba01-2002-07-30",
+      "recorded_agreements": 1,
+      "href": "players/davisba01.html#contract"
+    },
+    {
+      "player_id": "wallabe01",
+      "name": "Ben Wallace",
+      "team": "Detroit Pistons",
+      "status": "under contract",
+      "current_contract_id": "wallabe01-2000-08-03",
+      "recorded_agreements": 1,
+      "href": "players/wallabe01.html#contract"
+    },
+    {
+      "player_id": "colesbi01",
+      "name": "Bimbo Coles",
+      "team": "Boston Celtics",
+      "status": "free agent expiring",
+      "current_contract_id": "colesbi01-existing-bad5d80f58b0",
+      "recorded_agreements": 1,
+      "href": "players/colesbi01.html#contract"
+    },
+    {
+      "player_id": "outlabo01",
+      "name": "Bo Outlaw",
+      "team": "Phoenix Suns",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/outlabo01.html#contract"
+    },
+    {
+      "player_id": "surabo01",
+      "name": "Bob Sura",
+      "team": "Golden State Warriors",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/surabo01.html#contract"
+    },
+    {
+      "player_id": "jacksbo01",
+      "name": "Bobby Jackson",
+      "team": "Sacramento Kings",
+      "status": "under contract",
+      "current_contract_id": "jacksbo01-existing-f91f71f97403",
+      "recorded_agreements": 1,
+      "href": "players/jacksbo01.html#contract"
+    },
+    {
+      "player_id": "simmobo01",
+      "name": "Bobby Simmons",
+      "team": "Washington Wizards",
+      "status": "free agent expiring",
+      "current_contract_id": "simmobo01-existing-b36c4428486c",
+      "recorded_agreements": 1,
+      "href": "players/simmobo01.html#contract"
+    },
+    {
+      "player_id": "wellsbo01",
+      "name": "Bonzi Wells",
+      "team": "Portland Trail Blazers",
+      "status": "under contract",
+      "current_contract_id": "wellsbo01-2002-09-30",
+      "recorded_agreements": 1,
+      "href": "players/wellsbo01.html#contract"
+    },
+    {
+      "player_id": "diawbo01",
+      "name": "Boris Diaw",
+      "team": "Atlanta Hawks",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/diawbo01.html#contract"
+    },
+    {
+      "player_id": "nachbbo01",
+      "name": "Bostjan Nachbar",
+      "team": "Houston Rockets",
+      "status": "under rookie contract",
+      "current_contract_id": "nachbbo01-existing-d125a3820b11",
+      "recorded_agreements": 1,
+      "href": "players/nachbbo01.html#contract"
+    },
+    {
+      "player_id": "millebr01",
+      "name": "Brad Miller",
+      "team": "Indiana Pacers",
+      "status": "free agent expiring",
+      "current_contract_id": "millebr01-existing-143484da6d94",
+      "recorded_agreements": 1,
+      "href": "players/millebr01.html#contract"
+    },
+    {
+      "player_id": "huntebr01",
+      "name": "Brandon Hunter",
+      "team": "Boston Celtics",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/huntebr01.html#contract"
+    },
+    {
+      "player_id": "haywobr01",
+      "name": "Brendan Haywood",
+      "team": "Washington Wizards",
+      "status": "under rookie contract",
+      "current_contract_id": "haywobr01-existing-ef00a183f358",
+      "recorded_agreements": 1,
+      "href": "players/haywobr01.html#contract"
+    },
+    {
+      "player_id": "barrybr01",
+      "name": "Brent Barry",
+      "team": "Seattle SuperSonics",
+      "status": "under contract",
+      "current_contract_id": "barrybr01-existing-156bbe16b26d",
+      "recorded_agreements": 1,
+      "href": "players/barrybr01.html#contract"
+    },
+    {
+      "player_id": "knighbr01",
+      "name": "Brevin Knight",
+      "team": "Memphis Grizzlies",
+      "status": "under contract",
+      "current_contract_id": "knighbr01-1999-11-01",
+      "recorded_agreements": 1,
+      "href": "players/knighbr01.html#contract"
+    },
+    {
+      "player_id": "cookbr01",
+      "name": "Brian Cook",
+      "team": "Los Angeles Lakers",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/cookbr01.html#contract"
+    },
+    {
+      "player_id": "grantbr01",
+      "name": "Brian Grant",
+      "team": "Miami Heat",
+      "status": "under contract",
+      "current_contract_id": "grantbr01-2000-08-30",
+      "recorded_agreements": 1,
+      "href": "players/grantbr01.html#contract"
+    },
+    {
+      "player_id": "scalabr01",
+      "name": "Brian Scalabrine",
+      "team": "New Jersey Nets",
+      "status": "free agent expiring",
+      "current_contract_id": "scalabr01-existing-ef5488bab1ee",
+      "recorded_agreements": 1,
+      "href": "players/scalabr01.html#contract"
+    },
+    {
+      "player_id": "shawbr01",
+      "name": "Brian Shaw",
+      "team": "Los Angeles Lakers",
+      "status": "free agent expiring",
+      "current_contract_id": "shawbr01-existing-54755c4cf0c8",
+      "recorded_agreements": 1,
+      "href": "players/shawbr01.html#contract"
+    },
+    {
+      "player_id": "skinnbr01",
+      "name": "Brian Skinner",
+      "team": "Philadelphia 76ers",
+      "status": "free agent expiring",
+      "current_contract_id": "skinnbr01-existing-f0c12ee39ac1",
+      "recorded_agreements": 1,
+      "href": "players/skinnbr01.html#contract"
+    },
+    {
+      "player_id": "bowenbr01",
+      "name": "Bruce Bowen",
+      "team": "San Antonio Spurs",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/bowenbr01.html#contract"
+    },
+    {
+      "player_id": "russebr01",
+      "name": "Bryon Russell",
+      "team": "Washington Wizards",
+      "status": "free agent expiring",
+      "current_contract_id": "russebr01-existing-ed9d692d8e6c",
+      "recorded_agreements": 1,
+      "href": "players/russebr01.html#contract"
+    },
+    {
+      "player_id": "cheanca01",
+      "name": "Calbert Cheaney",
+      "team": "Utah Jazz",
+      "status": "free agent expiring",
+      "current_contract_id": "cheanca01-existing-f51cc2cc3a75",
+      "recorded_agreements": 1,
+      "href": "players/cheanca01.html#contract"
+    },
+    {
+      "player_id": "boothca01",
+      "name": "Calvin Booth",
+      "team": "Seattle SuperSonics",
+      "status": "under contract",
+      "current_contract_id": "boothca01-existing-ac0b4076eeb1",
+      "recorded_agreements": 1,
+      "href": "players/boothca01.html#contract"
+    },
+    {
+      "player_id": "arroyca01",
+      "name": "Carlos Arroyo",
+      "team": "Utah Jazz",
+      "status": "free agent expiring",
+      "current_contract_id": "arroyca01-existing-0a1f3fbbc1a4",
+      "recorded_agreements": 1,
+      "href": "players/arroyca01.html#contract"
+    },
+    {
+      "player_id": "boozeca01",
+      "name": "Carlos Boozer",
+      "team": "Cleveland Cavaliers",
+      "status": "under contract",
+      "current_contract_id": "boozeca01-2002-08-07",
+      "recorded_agreements": 1,
+      "href": "players/boozeca01.html#contract"
+    },
+    {
+      "player_id": "delfica01",
+      "name": "Carlos Delfino",
+      "team": "Detroit Pistons",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/delfica01.html#contract"
+    },
+    {
+      "player_id": "anthoca01",
+      "name": "Carmelo Anthony",
+      "team": "Denver Nuggets",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/anthoca01.html#contract"
+    },
+    {
+      "player_id": "butleca01",
+      "name": "Caron Butler",
+      "team": "Miami Heat",
+      "status": "under rookie contract",
+      "current_contract_id": "butleca01-2002-07-02",
+      "recorded_agreements": 1,
+      "href": "players/butleca01.html#contract"
+    },
+    {
+      "player_id": "jacobca01",
+      "name": "Casey Jacobsen",
+      "team": "Phoenix Suns",
+      "status": "under rookie contract",
+      "current_contract_id": "jacobca01-2002-07-05",
+      "recorded_agreements": 1,
+      "href": "players/jacobca01.html#contract"
+    },
+    {
+      "player_id": "trybace01",
+      "name": "Cezary Trybanski",
+      "team": "Memphis Grizzlies",
+      "status": "under contract",
+      "current_contract_id": "trybace01-existing-1a41fb5aae5b",
+      "recorded_agreements": 1,
+      "href": "players/trybace01.html#contract"
+    },
+    {
+      "player_id": "oaklech01",
+      "name": "Charles Oakley",
+      "team": "Washington Wizards",
+      "status": "free agent expiring",
+      "current_contract_id": "oaklech01-existing-54755c4cf0c8",
+      "recorded_agreements": 1,
+      "href": "players/oaklech01.html#contract"
+    },
+    {
+      "player_id": "wardch01",
+      "name": "Charlie Ward",
+      "team": "New York Knicks",
+      "status": "under contract",
+      "current_contract_id": "wardch01-existing-9f0957b8e75c",
+      "recorded_agreements": 1,
+      "href": "players/wardch01.html#contract"
+    },
+    {
+      "player_id": "billuch01",
+      "name": "Chauncey Billups",
+      "team": "Detroit Pistons",
+      "status": "under contract",
+      "current_contract_id": "billuch01-existing-66935d7c7822",
+      "recorded_agreements": 1,
+      "href": "players/billuch01.html#contract"
+    },
+    {
+      "player_id": "anderch01",
+      "name": "Chris Andersen",
+      "team": "Denver Nuggets",
+      "status": "free agent expiring",
+      "current_contract_id": "anderch01-existing-ef5488bab1ee",
+      "recorded_agreements": 1,
+      "href": "players/anderch01.html#contract"
+    },
+    {
+      "player_id": "boshch01",
+      "name": "Chris Bosh",
+      "team": "Toronto Raptors",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/boshch01.html#contract"
+    },
+    {
+      "player_id": "jeffech01",
+      "name": "Chris Jefferies",
+      "team": "Toronto Raptors",
+      "status": "under rookie contract",
+      "current_contract_id": "jeffech01-2002-09-30",
+      "recorded_agreements": 1,
+      "href": "players/jeffech01.html#contract"
+    },
+    {
+      "player_id": "kamanch01",
+      "name": "Chris Kaman",
+      "team": "Los Angeles Clippers",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/kamanch01.html#contract"
+    },
+    {
+      "player_id": "mihmch01",
+      "name": "Chris Mihm",
+      "team": "Cleveland Cavaliers",
+      "status": "team option pending",
+      "current_contract_id": "mihmch01-2000-07-13",
+      "recorded_agreements": 1,
+      "href": "players/mihmch01.html#contract"
+    },
+    {
+      "player_id": "millsch01",
+      "name": "Chris Mills",
+      "team": "Golden State Warriors",
+      "status": "under contract",
+      "current_contract_id": "millsch01-existing-b8d7dd63906c",
+      "recorded_agreements": 1,
+      "href": "players/millsch01.html#contract"
+    },
+    {
+      "player_id": "owensch01",
+      "name": "Chris Owens",
+      "team": "Memphis Grizzlies",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/owensch01.html#contract"
+    },
+    {
+      "player_id": "webbech01",
+      "name": "Chris Webber",
+      "team": "Sacramento Kings",
+      "status": "under contract",
+      "current_contract_id": "webbech01-existing-301031641947",
+      "recorded_agreements": 1,
+      "href": "players/webbech01.html#contract"
+    },
+    {
+      "player_id": "whitnch01",
+      "name": "Chris Whitney",
+      "team": "Orlando Magic",
+      "status": "free agent expiring",
+      "current_contract_id": "whitnch01-existing-e5a88dec1c61",
+      "recorded_agreements": 1,
+      "href": "players/whitnch01.html#contract"
+    },
+    {
+      "player_id": "wilcoch01",
+      "name": "Chris Wilcox",
+      "team": "Los Angeles Clippers",
+      "status": "under rookie contract",
+      "current_contract_id": "wilcoch01-2002-07-31",
+      "recorded_agreements": 1,
+      "href": "players/wilcoch01.html#contract"
+    },
+    {
+      "player_id": "laettch01",
+      "name": "Christian Laettner",
+      "team": "Washington Wizards",
+      "status": "under contract",
+      "current_contract_id": "laettch01-existing-8075d096f0a0",
+      "recorded_agreements": 1,
+      "href": "players/laettch01.html#contract"
+    },
+    {
+      "player_id": "atkinch01",
+      "name": "Chucky Atkins",
+      "team": "Detroit Pistons",
+      "status": "under contract",
+      "current_contract_id": "atkinch01-existing-9910d7d3f6f4",
+      "recorded_agreements": 1,
+      "href": "players/atkinch01.html#contract"
+    },
+    {
+      "player_id": "weathcl01",
+      "name": "Clarence Weatherspoon",
+      "team": "New York Knicks",
+      "status": "under contract",
+      "current_contract_id": "weathcl01-existing-df5424780870",
+      "recorded_agreements": 1,
+      "href": "players/weathcl01.html#contract"
+    },
+    {
+      "player_id": "robincl02",
+      "name": "Clifford Robinson",
+      "team": "Detroit Pistons",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/robincl02.html#contract"
+    },
+    {
+      "player_id": "maggeco01",
+      "name": "Corey Maggette",
+      "team": "Los Angeles Clippers",
+      "status": "free agent expiring",
+      "current_contract_id": "maggeco01-existing-92b23e7825bd",
+      "recorded_agreements": 1,
+      "href": "players/maggeco01.html#contract"
+    },
+    {
+      "player_id": "blounco01",
+      "name": "Corie Blount",
+      "team": "Chicago Bulls",
+      "status": "free agent expiring",
+      "current_contract_id": "blounco01-existing-ed9d692d8e6c",
+      "recorded_agreements": 1,
+      "href": "players/blounco01.html#contract"
+    },
+    {
+      "player_id": "willico02",
+      "name": "Corliss Williamson",
+      "team": "Detroit Pistons",
+      "status": "under contract",
+      "current_contract_id": "willico02-existing-40573a80580b",
+      "recorded_agreements": 1,
+      "href": "players/willico02.html#contract"
+    },
+    {
+      "player_id": "alexaco02",
+      "name": "Courtney Alexander",
+      "team": "New Orleans Hornets",
+      "status": "under rookie contract",
+      "current_contract_id": "alexaco02-2000-07-06",
+      "recorded_agreements": 1,
+      "href": "players/alexaco02.html#contract"
+    },
+    {
+      "player_id": "moblecu01",
+      "name": "Cuttino Mobley",
+      "team": "Houston Rockets",
+      "status": "under contract",
+      "current_contract_id": "moblecu01-2000-08-02",
+      "recorded_agreements": 1,
+      "href": "players/moblecu01.html#contract"
+    },
+    {
+      "player_id": "jonesda02",
+      "name": "Dahntay Jones",
+      "team": "Memphis Grizzlies",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/jonesda02.html#contract"
+    },
+    {
+      "player_id": "wagneda02",
+      "name": "Dajuan Wagner",
+      "team": "Cleveland Cavaliers",
+      "status": "under rookie contract",
+      "current_contract_id": "wagneda02-2002-07-16",
+      "recorded_agreements": 1,
+      "href": "players/wagneda02.html#contract"
+    },
+    {
+      "player_id": "davisda01",
+      "name": "Dale Davis",
+      "team": "Portland Trail Blazers",
+      "status": "under contract",
+      "current_contract_id": "davisda01-existing-fb00d42a644b",
+      "recorded_agreements": 1,
+      "href": "players/davisda01.html#contract"
+    },
+    {
+      "player_id": "bagarda01",
+      "name": "Dalibor Bagaric",
+      "team": "Chicago Bulls",
+      "status": "under rookie contract",
+      "current_contract_id": "bagarda01-existing-10b8f85369c7",
+      "recorded_agreements": 1,
+      "href": "players/bagarda01.html#contract"
+    },
+    {
+      "player_id": "stoudda01",
+      "name": "Damon Stoudamire",
+      "team": "Portland Trail Blazers",
+      "status": "under contract",
+      "current_contract_id": "stoudda01-existing-332371589e94",
+      "recorded_agreements": 1,
+      "href": "players/stoudda01.html#contract"
+    },
+    {
+      "player_id": "dickada01",
+      "name": "Dan Dickau",
+      "team": "Atlanta Hawks",
+      "status": "under rookie contract",
+      "current_contract_id": "dickada01-2002-07-09",
+      "recorded_agreements": 1,
+      "href": "players/dickada01.html#contract"
+    },
+    {
+      "player_id": "gadzuda01",
+      "name": "Dan Gadzuric",
+      "team": "Milwaukee Bucks",
+      "status": "minimum contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/gadzuda01.html#contract"
+    },
+    {
+      "player_id": "ferryda01",
+      "name": "Danny Ferry",
+      "team": "San Antonio Spurs",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/ferryda01.html#contract"
+    },
+    {
+      "player_id": "fortsda01",
+      "name": "Danny Fortson",
+      "team": "Golden State Warriors",
+      "status": "under contract",
+      "current_contract_id": "fortsda01-existing-9b3348c6b7bd",
+      "recorded_agreements": 1,
+      "href": "players/fortsda01.html#contract"
+    },
+    {
+      "player_id": "mannida01",
+      "name": "Danny Manning",
+      "team": "Detroit Pistons",
+      "status": "free agent expiring",
+      "current_contract_id": "mannida01-existing-c665d456ec27",
+      "recorded_agreements": 1,
+      "href": "players/mannida01.html#contract"
+    },
+    {
+      "player_id": "milesda01",
+      "name": "Darius Miles",
+      "team": "Cleveland Cavaliers",
+      "status": "under rookie contract",
+      "current_contract_id": "milesda01-2000-08-08",
+      "recorded_agreements": 1,
+      "href": "players/milesda01.html#contract"
+    },
+    {
+      "player_id": "milicda01",
+      "name": "Darko Milicic",
+      "team": "Detroit Pistons",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/milicda01.html#contract"
+    },
+    {
+      "player_id": "armstda01",
+      "name": "Darrell Armstrong",
+      "team": "Orlando Magic",
+      "status": "free agent expiring",
+      "current_contract_id": "armstda01-existing-322f3c509b26",
+      "recorded_agreements": 1,
+      "href": "players/armstda01.html#contract"
+    },
+    {
+      "player_id": "hamda01",
+      "name": "Darvin Ham",
+      "team": "Atlanta Hawks",
+      "status": "free agent expiring",
+      "current_contract_id": "hamda01-existing-0af1d8752257",
+      "recorded_agreements": 1,
+      "href": "players/hamda01.html#contract"
+    },
+    {
+      "player_id": "robinda01",
+      "name": "David Robinson",
+      "team": "San Antonio Spurs",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/robinda01.html#contract"
+    },
+    {
+      "player_id": "wesleda01",
+      "name": "David Wesley",
+      "team": "New Orleans Hornets",
+      "status": "under contract",
+      "current_contract_id": "wesleda01-existing-1586e3c86559",
+      "recorded_agreements": 1,
+      "href": "players/wesleda01.html#contract"
+    },
+    {
+      "player_id": "westda01",
+      "name": "David West",
+      "team": "New Orleans Hornets",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/westda01.html#contract"
+    },
+    {
+      "player_id": "diopde01",
+      "name": "DeSagana Diop",
+      "team": "Cleveland Cavaliers",
+      "status": "under rookie contract",
+      "current_contract_id": "diopde01-2001-07-05",
+      "recorded_agreements": 1,
+      "href": "players/diopde01.html#contract"
+    },
+    {
+      "player_id": "stevede01",
+      "name": "DeShawn Stevenson",
+      "team": "Utah Jazz",
+      "status": "under rookie contract",
+      "current_contract_id": "stevede01-existing-0ba8566d48cd",
+      "recorded_agreements": 1,
+      "href": "players/stevede01.html#contract"
+    },
+    {
+      "player_id": "anderde01",
+      "name": "Derek Anderson",
+      "team": "Portland Trail Blazers",
+      "status": "under contract",
+      "current_contract_id": "anderde01-existing-794c819738b1",
+      "recorded_agreements": 1,
+      "href": "players/anderde01.html#contract"
+    },
+    {
+      "player_id": "fishede01",
+      "name": "Derek Fisher",
+      "team": "Los Angeles Lakers",
+      "status": "under contract",
+      "current_contract_id": "fishede01-existing-21a3b1ecd659",
+      "recorded_agreements": 1,
+      "href": "players/fishede01.html#contract"
+    },
+    {
+      "player_id": "colemde01",
+      "name": "Derrick Coleman",
+      "team": "Philadelphia 76ers",
+      "status": "free agent expiring",
+      "current_contract_id": "colemde01-existing-d6a2c149ca0a",
+      "recorded_agreements": 1,
+      "href": "players/colemde01.html#contract"
+    },
+    {
+      "player_id": "zimmede01",
+      "name": "Derrick Zimmerman",
+      "team": "Golden State Warriors",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/zimmede01.html#contract"
+    },
+    {
+      "player_id": "masonde01",
+      "name": "Desmond Mason",
+      "team": "Milwaukee Bucks",
+      "status": "under rookie contract",
+      "current_contract_id": "masonde01-2000-08-03",
+      "recorded_agreements": 1,
+      "href": "players/masonde01.html#contract"
+    },
+    {
+      "player_id": "georgde01",
+      "name": "Devean George",
+      "team": "Los Angeles Lakers",
+      "status": "under contract",
+      "current_contract_id": "georgde01-existing-f0c68038c826",
+      "recorded_agreements": 1,
+      "href": "players/georgde01.html#contract"
+    },
+    {
+      "player_id": "mutomdi01",
+      "name": "Dikembe Mutombo",
+      "team": "New Jersey Nets",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/mutomdi01.html#contract"
+    },
+    {
+      "player_id": "glovedi01",
+      "name": "Dion Glover",
+      "team": "Atlanta Hawks",
+      "status": "free agent expiring",
+      "current_contract_id": "glovedi01-existing-ed0c91c64001",
+      "recorded_agreements": 1,
+      "href": "players/glovedi01.html#contract"
+    },
+    {
+      "player_id": "nowitdi01",
+      "name": "Dirk Nowitzki",
+      "team": "Dallas Mavericks",
+      "status": "under contract",
+      "current_contract_id": "nowitdi01-2001-10-22",
+      "recorded_agreements": 1,
+      "href": "players/nowitdi01.html#contract"
+    },
+    {
+      "player_id": "harvedo01",
+      "name": "Donnell Harvey",
+      "team": "Denver Nuggets",
+      "status": "free agent expiring",
+      "current_contract_id": "harvedo01-existing-166e3605d5cb",
+      "recorded_agreements": 1,
+      "href": "players/harvedo01.html#contract"
+    },
+    {
+      "player_id": "chrisdo01",
+      "name": "Doug Christie",
+      "team": "Sacramento Kings",
+      "status": "under contract",
+      "current_contract_id": "chrisdo01-existing-a6cafd087288",
+      "recorded_agreements": 1,
+      "href": "players/chrisdo01.html#contract"
+    },
+    {
+      "player_id": "goodedr01",
+      "name": "Drew Gooden",
+      "team": "Orlando Magic",
+      "status": "under rookie contract",
+      "current_contract_id": "goodedr01-2002-07-02",
+      "recorded_agreements": 1,
+      "href": "players/goodedr01.html#contract"
+    },
+    {
+      "player_id": "wadedw01",
+      "name": "Dwyane Wade",
+      "team": "Miami Heat",
+      "status": "unsigned first round draft rights",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/wadedw01.html#contract"
+    },
+    {
+      "player_id": "boykiea01",
+      "name": "Earl Boykins",
+      "team": "Golden State Warriors",
+      "status": "free agent expiring",
+      "current_contract_id": "boykiea01-existing-409fbf50fa6a",
+      "recorded_agreements": 1,
+      "href": "players/boykiea01.html#contract"
+    },
+    {
+      "player_id": "watsoea01",
+      "name": "Earl Watson",
+      "team": "Memphis Grizzlies",
+      "status": "under contract",
+      "current_contract_id": "watsoea01-2002-07-19",
+      "recorded_agreements": 1,
+      "href": "players/watsoea01.html#contract"
+    },
+    {
+      "player_id": "griffed01",
+      "name": "Eddie Griffin",
+      "team": "Houston Rockets",
+      "status": "under rookie contract",
+      "current_contract_id": "griffed01-2001-09-19",
+      "recorded_agreements": 1,
+      "href": "players/griffed01.html#contract"
+    },
+    {
+      "player_id": "houseed01",
+      "name": "Eddie House",
+      "team": "Miami Heat",
+      "status": "free agent expiring",
+      "current_contract_id": "houseed01-existing-f0c12ee39ac1",
+      "recorded_agreements": 1,
+      "href": "players/houseed01.html#contract"
+    },
+    {
+      "player_id": "jonesed02",
+      "name": "Eddie Jones",
+      "team": "Miami Heat",
+      "status": "under contract",
+      "current_contract_id": "jonesed02-2000-08-01",
+      "recorded_agreements": 1,
+      "href": "players/jonesed02.html#contract"
+    },
+    {
+      "player_id": "robined01",
+      "name": "Eddie Robinson",
+      "team": "Chicago Bulls",
+      "status": "under contract",
+      "current_contract_id": "robined01-existing-b96a8078c91c",
+      "recorded_agreements": 1,
+      "href": "players/robined01.html#contract"
+    },
+    {
+      "player_id": "curryed01",
+      "name": "Eddy Curry",
+      "team": "Chicago Bulls",
+      "status": "under rookie contract",
+      "current_contract_id": "curryed01-2001-10-01",
+      "recorded_agreements": 1,
+      "href": "players/curryed01.html#contract"
+    },
+    {
+      "player_id": "najered01",
+      "name": "Eduardo Najera",
+      "team": "Dallas Mavericks",
+      "status": "under contract",
+      "current_contract_id": "najered01-2002-09-28",
+      "recorded_agreements": 1,
+      "href": "players/najered01.html#contract"
+    },
+    {
+      "player_id": "rentzef01",
+      "name": "Efthimios Rentzias",
+      "team": "Philadelphia 76ers",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/rentzef01.html#contract"
+    },
+    {
+      "player_id": "brandel01",
+      "name": "Elton Brand",
+      "team": "Los Angeles Clippers",
+      "status": "free agent expiring",
+      "current_contract_id": "brandel01-existing-fd7bb8bcbbbb",
+      "recorded_agreements": 1,
+      "href": "players/brandel01.html#contract"
+    },
+    {
+      "player_id": "piatker01",
+      "name": "Eric Piatkowski",
+      "team": "Los Angeles Clippers",
+      "status": "free agent expiring",
+      "current_contract_id": "piatker01-existing-e5a88dec1c61",
+      "recorded_agreements": 1,
+      "href": "players/piatker01.html#contract"
+    },
+    {
+      "player_id": "snower01",
+      "name": "Eric Snow",
+      "team": "Philadelphia 76ers",
+      "status": "under contract",
+      "current_contract_id": "snower01-1999-08-01",
+      "recorded_agreements": 1,
+      "href": "players/snower01.html#contract"
+    },
+    {
+      "player_id": "willier01",
+      "name": "Eric Williams",
+      "team": "Boston Celtics",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/willier01.html#contract"
+    },
+    {
+      "player_id": "dampier01",
+      "name": "Erick Dampier",
+      "team": "Golden State Warriors",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/dampier01.html#contract"
+    },
+    {
+      "player_id": "stricer01",
+      "name": "Erick Strickland",
+      "team": "Indiana Pacers",
+      "status": "free agent expiring",
+      "current_contract_id": "stricer01-existing-c54f4c71ecad",
+      "recorded_agreements": 1,
+      "href": "players/stricer01.html#contract"
+    },
+    {
+      "player_id": "johnser02",
+      "name": "Ervin Johnson",
+      "team": "Milwaukee Bucks",
+      "status": "under contract",
+      "current_contract_id": "johnser02-existing-d23ec1018463",
+      "recorded_agreements": 1,
+      "href": "players/johnser02.html#contract"
+    },
+    {
+      "player_id": "eschmev01",
+      "name": "Evan Eschmeyer",
+      "team": "Dallas Mavericks",
+      "status": "under contract",
+      "current_contract_id": "eschmev01-2001-08-08",
+      "recorded_agreements": 1,
+      "href": "players/eschmev01.html#contract"
+    },
+    {
+      "player_id": "willifr02",
+      "name": "Frank Williams",
+      "team": "New York Knicks",
+      "status": "under rookie contract",
+      "current_contract_id": "willifr02-2002-07-08",
+      "recorded_agreements": 1,
+      "href": "players/willifr02.html#contract"
+    },
+    {
+      "player_id": "hoibefr01",
+      "name": "Fred Hoiberg",
+      "team": "Chicago Bulls",
+      "status": "free agent expiring",
+      "current_contract_id": "hoibefr01-existing-ed9d692d8e6c",
+      "recorded_agreements": 1,
+      "href": "players/hoibefr01.html#contract"
+    },
+    {
+      "player_id": "paytoga01",
+      "name": "Gary Payton",
+      "team": "Milwaukee Bucks",
+      "status": "free agent expiring",
+      "current_contract_id": "paytoga01-existing-4d222245364f",
+      "recorded_agreements": 1,
+      "href": "players/paytoga01.html#contract"
+    },
+    {
+      "player_id": "trentga01",
+      "name": "Gary Trent",
+      "team": "Minnesota Timberwolves",
+      "status": "free agent expiring",
+      "current_contract_id": "trentga01-existing-fb5004195cfc",
+      "recorded_agreements": 1,
+      "href": "players/trentga01.html#contract"
+    },
+    {
+      "player_id": "lynchge01",
+      "name": "George Lynch",
+      "team": "New Orleans Hornets",
+      "status": "under contract",
+      "current_contract_id": "lynchge01-existing-753aca3f2d46",
+      "recorded_agreements": 1,
+      "href": "players/lynchge01.html#contract"
+    },
+    {
+      "player_id": "wallage01",
+      "name": "Gerald Wallace",
+      "team": "Sacramento Kings",
+      "status": "under rookie contract",
+      "current_contract_id": "wallage01-2001-07-06",
+      "recorded_agreements": 1,
+      "href": "players/wallage01.html#contract"
+    },
+    {
+      "player_id": "arenagi01",
+      "name": "Gilbert Arenas",
+      "team": "Golden State Warriors",
+      "status": "free agent expiring",
+      "current_contract_id": "arenagi01-existing-ef5488bab1ee",
+      "recorded_agreements": 1,
+      "href": "players/arenagi01.html#contract"
+    },
+    {
+      "player_id": "ricegl01",
+      "name": "Glen Rice",
+      "team": "Houston Rockets",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/ricegl01.html#contract"
+    },
+    {
+      "player_id": "robingl01",
+      "name": "Glenn Robinson",
+      "team": "Atlanta Hawks",
+      "status": "under contract",
+      "current_contract_id": "robingl01-existing-22b8500d0040",
+      "recorded_agreements": 1,
+      "href": "players/robingl01.html#contract"
+    },
+    {
+      "player_id": "giricgo01",
+      "name": "Gordan Giricek",
+      "team": "Orlando Magic",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/giricgo01.html#contract"
+    },
+    {
+      "player_id": "longgr01",
+      "name": "Grant Long",
+      "team": "Boston Celtics",
+      "status": "free agent expiring",
+      "current_contract_id": "longgr01-existing-864c91a5245f",
+      "recorded_agreements": 1,
+      "href": "players/longgr01.html#contract"
+    },
+    {
+      "player_id": "buckngr01",
+      "name": "Greg Buckner",
+      "team": "Philadelphia 76ers",
+      "status": "under contract",
+      "current_contract_id": "buckngr01-2002-07-25",
+      "recorded_agreements": 1,
+      "href": "players/buckngr01.html#contract"
+    },
+    {
+      "player_id": "ostergr01",
+      "name": "Greg Ostertag",
+      "team": "Utah Jazz",
+      "status": "under contract",
+      "current_contract_id": "ostergr01-existing-d190b00bef8d",
+      "recorded_agreements": 1,
+      "href": "players/ostergr01.html#contract"
+    },
+    {
+      "player_id": "turkohe01",
+      "name": "Hedo Turkoglu",
+      "team": "Sacramento Kings",
+      "status": "under rookie contract",
+      "current_contract_id": "turkohe01-existing-c5bb2f80a9f0",
+      "recorded_agreements": 1,
+      "href": "players/turkohe01.html#contract"
+    },
+    {
+      "player_id": "eisleho01",
+      "name": "Howard Eisley",
+      "team": "New York Knicks",
+      "status": "under contract",
+      "current_contract_id": "eisleho01-existing-3a00524ac07b",
+      "recorded_agreements": 1,
+      "href": "players/eisleho01.html#contract"
+    },
+    {
+      "player_id": "newblir01",
+      "name": "Ira Newble",
+      "team": "Atlanta Hawks",
+      "status": "free agent expiring",
+      "current_contract_id": "newblir01-existing-99e00a08055e",
+      "recorded_agreements": 1,
+      "href": "players/newblir01.html#contract"
+    },
+    {
+      "player_id": "bremejr01",
+      "name": "J.R. Bremer",
+      "team": "Boston Celtics",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/bremejr01.html#contract"
+    },
+    {
+      "player_id": "vaughja01",
+      "name": "Jacque Vaughn",
+      "team": "Orlando Magic",
+      "status": "free agent expiring",
+      "current_contract_id": "vaughja01-existing-0af1d8752257",
+      "recorded_agreements": 1,
+      "href": "players/vaughja01.html#contract"
+    },
+    {
+      "player_id": "whiteja01",
+      "name": "Jahidi White",
+      "team": "Washington Wizards",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/whiteja01.html#contract"
+    },
+    {
+      "player_id": "tsakaja01",
+      "name": "Jake Tsakalidis",
+      "team": "Phoenix Suns",
+      "status": "under rookie contract",
+      "current_contract_id": "tsakaja01-2000-10-02",
+      "recorded_agreements": 1,
+      "href": "players/tsakaja01.html#contract"
+    },
+    {
+      "player_id": "voskuja01",
+      "name": "Jake Voskuhl",
+      "team": "Phoenix Suns",
+      "status": "free agent expiring",
+      "current_contract_id": "voskuja01-existing-99e00a08055e",
+      "recorded_agreements": 1,
+      "href": "players/voskuja01.html#contract"
+    },
+    {
+      "player_id": "roseja01",
+      "name": "Jalen Rose",
+      "team": "Chicago Bulls",
+      "status": "under contract",
+      "current_contract_id": "roseja01-existing-6434280dd7b3",
+      "recorded_agreements": 1,
+      "href": "players/roseja01.html#contract"
+    },
+    {
+      "player_id": "magloja01",
+      "name": "Jamaal Magloire",
+      "team": "New Orleans Hornets",
+      "status": "under rookie contract",
+      "current_contract_id": "magloja01-2000-07-18",
+      "recorded_agreements": 1,
+      "href": "players/magloja01.html#contract"
+    },
+    {
+      "player_id": "tinslja01",
+      "name": "Jamaal Tinsley",
+      "team": "Indiana Pacers",
+      "status": "under rookie contract",
+      "current_contract_id": "tinslja01-2001-07-19",
+      "recorded_agreements": 1,
+      "href": "players/tinslja01.html#contract"
+    },
+    {
+      "player_id": "crawfja01",
+      "name": "Jamal Crawford",
+      "team": "Chicago Bulls",
+      "status": "under rookie contract",
+      "current_contract_id": "crawfja01-2000-09-25",
+      "recorded_agreements": 1,
+      "href": "players/crawfja01.html#contract"
+    },
+    {
+      "player_id": "mashbja01",
+      "name": "Jamal Mashburn",
+      "team": "New Orleans Hornets",
+      "status": "under contract",
+      "current_contract_id": "mashbja01-existing-7e80df14785a",
+      "recorded_agreements": 1,
+      "href": "players/mashbja01.html#contract"
+    },
+    {
+      "player_id": "jonesja02",
+      "name": "James Jones",
+      "team": "Indiana Pacers",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/jonesja02.html#contract"
+    },
+    {
+      "player_id": "langja01",
+      "name": "James Lang",
+      "team": "New Orleans Hornets",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/langja01.html#contract"
+    },
+    {
+      "player_id": "poseyja01",
+      "name": "James Posey",
+      "team": "Houston Rockets",
+      "status": "free agent expiring",
+      "current_contract_id": "poseyja01-existing-ab2fa937c087",
+      "recorded_agreements": 1,
+      "href": "players/poseyja01.html#contract"
+    },
+    {
+      "player_id": "pargoja01",
+      "name": "Jannero Pargo",
+      "team": "Los Angeles Lakers",
+      "status": "under contract",
+      "current_contract_id": "pargoja01-2002-07-23",
+      "recorded_agreements": 1,
+      "href": "players/pargoja01.html#contract"
+    },
+    {
+      "player_id": "hayesja01",
+      "name": "Jarvis Hayes",
+      "team": "Washington Wizards",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/hayesja01.html#contract"
+    },
+    {
+      "player_id": "caffeja01",
+      "name": "Jason Caffey",
+      "team": "Milwaukee Bucks",
+      "status": "under contract",
+      "current_contract_id": "caffeja01-existing-c82739c73382",
+      "recorded_agreements": 1,
+      "href": "players/caffeja01.html#contract"
+    },
+    {
+      "player_id": "collija04",
+      "name": "Jason Collins",
+      "team": "New Jersey Nets",
+      "status": "under rookie contract",
+      "current_contract_id": "collija04-2001-07-13",
+      "recorded_agreements": 1,
+      "href": "players/collija04.html#contract"
+    },
+    {
+      "player_id": "kaponja01",
+      "name": "Jason Kapono",
+      "team": "Cleveland Cavaliers",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/kaponja01.html#contract"
+    },
+    {
+      "player_id": "kiddja01",
+      "name": "Jason Kidd",
+      "team": "New Jersey Nets",
+      "status": "free agent expiring",
+      "current_contract_id": "kiddja01-existing-557cfaa7bd12",
+      "recorded_agreements": 1,
+      "href": "players/kiddja01.html#contract"
+    },
+    {
+      "player_id": "richaja01",
+      "name": "Jason Richardson",
+      "team": "Golden State Warriors",
+      "status": "under rookie contract",
+      "current_contract_id": "richaja01-2001-08-24",
+      "recorded_agreements": 1,
+      "href": "players/richaja01.html#contract"
+    },
+    {
+      "player_id": "terryja01",
+      "name": "Jason Terry",
+      "team": "Atlanta Hawks",
+      "status": "free agent expiring",
+      "current_contract_id": "terryja01-existing-a3152a72f60e",
+      "recorded_agreements": 1,
+      "href": "players/terryja01.html#contract"
+    },
+    {
+      "player_id": "willija02",
+      "name": "Jason Williams",
+      "team": "Memphis Grizzlies",
+      "status": "under contract",
+      "current_contract_id": "willija02-2001-10-17",
+      "recorded_agreements": 1,
+      "href": "players/willija02.html#contract"
+    },
+    {
+      "player_id": "willija03",
+      "name": "Jay Williams",
+      "team": "Chicago Bulls",
+      "status": "under rookie contract",
+      "current_contract_id": "willija03-2002-07-10",
+      "recorded_agreements": 1,
+      "href": "players/willija03.html#contract"
+    },
+    {
+      "player_id": "fosteje01",
+      "name": "Jeff Foster",
+      "team": "Indiana Pacers",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/fosteje01.html#contract"
+    },
+    {
+      "player_id": "mcinnje01",
+      "name": "Jeff McInnis",
+      "team": "Portland Trail Blazers",
+      "status": "under contract",
+      "current_contract_id": "mcinnje01-existing-5ed145dea098",
+      "recorded_agreements": 1,
+      "href": "players/mcinnje01.html#contract"
+    },
+    {
+      "player_id": "trepaje01",
+      "name": "Jeff Trepagnier",
+      "team": "Denver Nuggets",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/trepaje01.html#contract"
+    },
+    {
+      "player_id": "mccoyje01",
+      "name": "Jelani McCoy",
+      "team": "Toronto Raptors",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/mccoyje01.html#contract"
+    },
+    {
+      "player_id": "jacksje01",
+      "name": "Jermaine Jackson",
+      "team": "Atlanta Hawks",
+      "status": "free agent expiring",
+      "current_contract_id": "jacksje01-existing-0fe07c3c6f1b",
+      "recorded_agreements": 1,
+      "href": "players/jacksje01.html#contract"
+    },
+    {
+      "player_id": "onealje01",
+      "name": "Jermaine O'Neal",
+      "team": "Indiana Pacers",
+      "status": "free agent expiring",
+      "current_contract_id": "onealje01-existing-f3039e59ea41",
+      "recorded_agreements": 1,
+      "href": "players/onealje01.html#contract"
+    },
+    {
+      "player_id": "beaslje01",
+      "name": "Jerome Beasley",
+      "team": "Miami Heat",
+      "status": "unsigned second round draft rights",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/beaslje01.html#contract"
+    },
+    {
+      "player_id": "jamesje01",
+      "name": "Jerome James",
+      "team": "Seattle SuperSonics",
+      "status": "under contract",
+      "current_contract_id": "jamesje01-existing-a0f6664f8d6f",
+      "recorded_agreements": 1,
+      "href": "players/jamesje01.html#contract"
+    },
+    {
+      "player_id": "moisoje01",
+      "name": "Jerome Moiso",
+      "team": "New Orleans Hornets",
+      "status": "free agent expiring",
+      "current_contract_id": "moisoje01-existing-605a632bd79c",
+      "recorded_agreements": 1,
+      "href": "players/moisoje01.html#contract"
+    },
+    {
+      "player_id": "willije01",
+      "name": "Jerome Williams",
+      "team": "Toronto Raptors",
+      "status": "under contract",
+      "current_contract_id": "willije01-2001-07-18",
+      "recorded_agreements": 1,
+      "href": "players/willije01.html#contract"
+    },
+    {
+      "player_id": "stackje01",
+      "name": "Jerry Stackhouse",
+      "team": "Washington Wizards",
+      "status": "under contract",
+      "current_contract_id": "stackje01-1999-01-21",
+      "recorded_agreements": 1,
+      "href": "players/stackje01.html#contract"
+    },
+    {
+      "player_id": "sasseje01",
+      "name": "Jeryl Sasser",
+      "team": "Orlando Magic",
+      "status": "under rookie contract",
+      "current_contract_id": "sasseje01-existing-6b325eebe181",
+      "recorded_agreements": 1,
+      "href": "players/sasseje01.html#contract"
+    },
+    {
+      "player_id": "jacksji01",
+      "name": "Jim Jackson",
+      "team": "Sacramento Kings",
+      "status": "free agent expiring",
+      "current_contract_id": "jacksji01-existing-ca240667745f",
+      "recorded_agreements": 1,
+      "href": "players/jacksji01.html#contract"
+    },
+    {
+      "player_id": "welscji01",
+      "name": "Jiri Welsch",
+      "team": "Golden State Warriors",
+      "status": "under rookie contract",
+      "current_contract_id": "welscji01-existing-68346913c64d",
+      "recorded_agreements": 1,
+      "href": "players/welscji01.html#contract"
+    },
+    {
+      "player_id": "johnsjo02",
+      "name": "Joe Johnson",
+      "team": "Phoenix Suns",
+      "status": "under rookie contract",
+      "current_contract_id": "johnsjo02-2001-07-10",
+      "recorded_agreements": 1,
+      "href": "players/johnsjo02.html#contract"
+    },
+    {
+      "player_id": "smithjo02",
+      "name": "Joe Smith",
+      "team": "Minnesota Timberwolves",
+      "status": "under contract",
+      "current_contract_id": "smithjo02-existing-aa502761a5b3",
+      "recorded_agreements": 1,
+      "href": "players/smithjo02.html#contract"
+    },
+    {
+      "player_id": "przybjo01",
+      "name": "Joel Przybilla",
+      "team": "Milwaukee Bucks",
+      "status": "under rookie contract",
+      "current_contract_id": "przybjo01-2000-07-08",
+      "recorded_agreements": 1,
+      "href": "players/przybjo01.html#contract"
+    },
+    {
+      "player_id": "amaecjo01",
+      "name": "John Amaechi",
+      "team": "Utah Jazz",
+      "status": "under contract",
+      "current_contract_id": "amaecjo01-existing-1ccabbb6223a",
+      "recorded_agreements": 1,
+      "href": "players/amaecjo01.html#contract"
+    },
+    {
+      "player_id": "salmojo01",
+      "name": "John Salmons",
+      "team": "Philadelphia 76ers",
+      "status": "under rookie contract",
+      "current_contract_id": "salmojo01-2002-07-12",
+      "recorded_agreements": 1,
+      "href": "players/salmojo01.html#contract"
+    },
+    {
+      "player_id": "stockjo01",
+      "name": "John Stockton",
+      "team": "Utah Jazz",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/stockjo01.html#contract"
+    },
+    {
+      "player_id": "barryjo01",
+      "name": "Jon Barry",
+      "team": "Detroit Pistons",
+      "status": "free agent expiring",
+      "current_contract_id": "barryjo01-existing-240df857ccc0",
+      "recorded_agreements": 1,
+      "href": "players/barryjo01.html#contract"
+    },
+    {
+      "player_id": "bendejo01",
+      "name": "Jonathan Bender",
+      "team": "Indiana Pacers",
+      "status": "under contract",
+      "current_contract_id": "bendejo01-2002-10-31",
+      "recorded_agreements": 1,
+      "href": "players/bendejo01.html#contract"
+    },
+    {
+      "player_id": "fortejo01",
+      "name": "Joseph Forte",
+      "team": "Seattle SuperSonics",
+      "status": "under rookie contract",
+      "current_contract_id": "fortejo01-existing-6e2f71ae974e",
+      "recorded_agreements": 1,
+      "href": "players/fortejo01.html#contract"
+    },
+    {
+      "player_id": "howarjo01",
+      "name": "Josh Howard",
+      "team": "Dallas Mavericks",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/howarjo01.html#contract"
+    },
+    {
+      "player_id": "dixonju01",
+      "name": "Juan Dixon",
+      "team": "Washington Wizards",
+      "status": "under rookie contract",
+      "current_contract_id": "dixonju01-2002-07-11",
+      "recorded_agreements": 1,
+      "href": "players/dixonju01.html#contract"
+    },
+    {
+      "player_id": "hawkiju01",
+      "name": "Juaquin Hawkins",
+      "team": "Houston Rockets",
+      "status": "free agent expiring",
+      "current_contract_id": "hawkiju01-existing-99e00a08055e",
+      "recorded_agreements": 1,
+      "href": "players/hawkiju01.html#contract"
+    },
+    {
+      "player_id": "jonesju01",
+      "name": "Jumaine Jones",
+      "team": "Cleveland Cavaliers",
+      "status": "free agent expiring",
+      "current_contract_id": "jonesju01-existing-bc422fc1f819",
+      "recorded_agreements": 1,
+      "href": "players/jonesju01.html#contract"
+    },
+    {
+      "player_id": "harriju01",
+      "name": "Junior Harrington",
+      "team": "Denver Nuggets",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/harriju01.html#contract"
+    },
+    {
+      "player_id": "howarju01",
+      "name": "Juwan Howard",
+      "team": "Denver Nuggets",
+      "status": "free agent expiring",
+      "current_contract_id": "howarju01-existing-ebc4f1652fb1",
+      "recorded_agreements": 1,
+      "href": "players/howarju01.html#contract"
+    },
+    {
+      "player_id": "rushka01",
+      "name": "Kareem Rush",
+      "team": "Los Angeles Lakers",
+      "status": "under rookie contract",
+      "current_contract_id": "rushka01-2002-07-03",
+      "recorded_agreements": 1,
+      "href": "players/rushka01.html#contract"
+    },
+    {
+      "player_id": "malonka01",
+      "name": "Karl Malone",
+      "team": "Utah Jazz",
+      "status": "free agent expiring",
+      "current_contract_id": "malonka01-existing-def43b14e73a",
+      "recorded_agreements": 1,
+      "href": "players/malonka01.html#contract"
+    },
+    {
+      "player_id": "brownke01",
+      "name": "Kedrick Brown",
+      "team": "Boston Celtics",
+      "status": "under rookie contract",
+      "current_contract_id": "brownke01-2001-07-09",
+      "recorded_agreements": 1,
+      "href": "players/brownke01.html#contract"
+    },
+    {
+      "player_id": "boganke01",
+      "name": "Keith Bogans",
+      "team": "Orlando Magic",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/boganke01.html#contract"
+    },
+    {
+      "player_id": "vanhoke01",
+      "name": "Keith Van Horn",
+      "team": "Philadelphia 76ers",
+      "status": "under contract",
+      "current_contract_id": "vanhoke01-1999-08-05",
+      "recorded_agreements": 1,
+      "href": "players/vanhoke01.html#contract"
+    },
+    {
+      "player_id": "catoke01",
+      "name": "Kelvin Cato",
+      "team": "Houston Rockets",
+      "status": "under contract",
+      "current_contract_id": "catoke01-existing-7cdb971d8072",
+      "recorded_agreements": 1,
+      "href": "players/catoke01.html#contract"
+    },
+    {
+      "player_id": "johnske03",
+      "name": "Ken Johnson",
+      "team": "Miami Heat",
+      "status": "team option pending",
+      "current_contract_id": "johnske03-2002-09-25",
+      "recorded_agreements": 1,
+      "href": "players/johnske03.html#contract"
+    },
+    {
+      "player_id": "gillke01",
+      "name": "Kendall Gill",
+      "team": "Minnesota Timberwolves",
+      "status": "free agent expiring",
+      "current_contract_id": "gillke01-existing-54755c4cf0c8",
+      "recorded_agreements": 1,
+      "href": "players/gillke01.html#contract"
+    },
+    {
+      "player_id": "perkike01",
+      "name": "Kendrick Perkins",
+      "team": "Boston Celtics",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/perkike01.html#contract"
+    },
+    {
+      "player_id": "anderke01",
+      "name": "Kenny Anderson",
+      "team": "New Orleans Hornets",
+      "status": "free agent expiring",
+      "current_contract_id": "anderke01-existing-705978ce1d0f",
+      "recorded_agreements": 1,
+      "href": "players/anderke01.html#contract"
+    },
+    {
+      "player_id": "thomake01",
+      "name": "Kenny Thomas",
+      "team": "Philadelphia 76ers",
+      "status": "free agent expiring",
+      "current_contract_id": "thomake01-existing-6e0f280277bc",
+      "recorded_agreements": 1,
+      "href": "players/thomake01.html#contract"
+    },
+    {
+      "player_id": "martike01",
+      "name": "Kenyon Martin",
+      "team": "New Jersey Nets",
+      "status": "under rookie contract",
+      "current_contract_id": "martike01-2000-08-22",
+      "recorded_agreements": 1,
+      "href": "players/martike01.html#contract"
+    },
+    {
+      "player_id": "clarkke01",
+      "name": "Keon Clark",
+      "team": "Sacramento Kings",
+      "status": "free agent expiring",
+      "current_contract_id": "clarkke01-existing-18808181ab1a",
+      "recorded_agreements": 1,
+      "href": "players/clarkke01.html#contract"
+    },
+    {
+      "player_id": "kittlke01",
+      "name": "Kerry Kittles",
+      "team": "New Jersey Nets",
+      "status": "under contract",
+      "current_contract_id": "kittlke01-1999-03-13",
+      "recorded_agreements": 1,
+      "href": "players/kittlke01.html#contract"
+    },
+    {
+      "player_id": "garneke01",
+      "name": "Kevin Garnett",
+      "team": "Minnesota Timberwolves",
+      "status": "under contract",
+      "current_contract_id": "garneke01-1997-10-01",
+      "recorded_agreements": 1,
+      "href": "players/garneke01.html#contract"
+    },
+    {
+      "player_id": "ollieke01",
+      "name": "Kevin Ollie",
+      "team": "Seattle SuperSonics",
+      "status": "free agent expiring",
+      "current_contract_id": "ollieke01-existing-f51cc2cc3a75",
+      "recorded_agreements": 1,
+      "href": "players/ollieke01.html#contract"
+    },
+    {
+      "player_id": "willike02",
+      "name": "Kevin Willis",
+      "team": "San Antonio Spurs",
+      "status": "free agent expiring",
+      "current_contract_id": "willike02-existing-54755c4cf0c8",
+      "recorded_agreements": 1,
+      "href": "players/willike02.html#contract"
+    },
+    {
+      "player_id": "doolike01",
+      "name": "Keyon Dooling",
+      "team": "Los Angeles Clippers",
+      "status": "under rookie contract",
+      "current_contract_id": "doolike01-2000-08-08",
+      "recorded_agreements": 1,
+      "href": "players/doolike01.html#contract"
+    },
+    {
+      "player_id": "hinriki01",
+      "name": "Kirk Hinrich",
+      "team": "Chicago Bulls",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/hinriki01.html#contract"
+    },
+    {
+      "player_id": "bryanko01",
+      "name": "Kobe Bryant",
+      "team": "Los Angeles Lakers",
+      "status": "under contract",
+      "current_contract_id": "bryanko01-1999-01-29",
+      "recorded_agreements": 1,
+      "href": "players/bryanko01.html#contract"
+    },
+    {
+      "player_id": "thomaku01",
+      "name": "Kurt Thomas",
+      "team": "New York Knicks",
+      "status": "under contract",
+      "current_contract_id": "thomaku01-existing-233b1ae92182",
+      "recorded_agreements": 1,
+      "href": "players/thomaku01.html#contract"
+    },
+    {
+      "player_id": "brownkw01",
+      "name": "Kwame Brown",
+      "team": "Washington Wizards",
+      "status": "under rookie contract",
+      "current_contract_id": "brownkw01-2001-07-13",
+      "recorded_agreements": 1,
+      "href": "players/brownkw01.html#contract"
+    },
+    {
+      "player_id": "korveky01",
+      "name": "Kyle Korver",
+      "team": "Philadelphia 76ers",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/korveky01.html#contract"
+    },
+    {
+      "player_id": "ellisla01",
+      "name": "LaPhonso Ellis",
+      "team": "Miami Heat",
+      "status": "under contract guarantee amended",
+      "current_contract_id": "ellisla01-2001-07-28",
+      "recorded_agreements": 1,
+      "href": "players/ellisla01.html#contract"
+    },
+    {
+      "player_id": "odomla01",
+      "name": "Lamar Odom",
+      "team": "Los Angeles Clippers",
+      "status": "free agent expiring",
+      "current_contract_id": "odomla01-existing-6b7f0a39d36c",
+      "recorded_agreements": 1,
+      "href": "players/odomla01.html#contract"
+    },
+    {
+      "player_id": "hughela01",
+      "name": "Larry Hughes",
+      "team": "Washington Wizards",
+      "status": "under contract",
+      "current_contract_id": "hughela01-2002-07-18",
+      "recorded_agreements": 1,
+      "href": "players/hughela01.html#contract"
+    },
+    {
+      "player_id": "sprewla01",
+      "name": "Latrell Sprewell",
+      "team": "New York Knicks",
+      "status": "under contract",
+      "current_contract_id": "sprewla01-existing-02158f91187a",
+      "recorded_agreements": 1,
+      "href": "players/sprewla01.html#contract"
+    },
+    {
+      "player_id": "postela01",
+      "name": "Lavor Postell",
+      "team": "New York Knicks",
+      "status": "free agent expiring",
+      "current_contract_id": "postela01-existing-99e00a08055e",
+      "recorded_agreements": 1,
+      "href": "players/postela01.html#contract"
+    },
+    {
+      "player_id": "fundela01",
+      "name": "Lawrence Funderburke",
+      "team": "Sacramento Kings",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/fundela01.html#contract"
+    },
+    {
+      "player_id": "jamesle01",
+      "name": "LeBron James",
+      "team": "Cleveland Cavaliers",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/jamesle01.html#contract"
+    },
+    {
+      "player_id": "barbole01",
+      "name": "Leandro Barbosa",
+      "team": "Phoenix Suns",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/barbole01.html#contract"
+    },
+    {
+      "player_id": "nailole01",
+      "name": "Lee Nailon",
+      "team": "New York Knicks",
+      "status": "free agent expiring",
+      "current_contract_id": "nailole01-existing-99e00a08055e",
+      "recorded_agreements": 1,
+      "href": "players/nailole01.html#contract"
+    },
+    {
+      "player_id": "hunteli01",
+      "name": "Lindsey Hunter",
+      "team": "Toronto Raptors",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/hunteli01.html#contract"
+    },
+    {
+      "player_id": "baxtelo01",
+      "name": "Lonny Baxter",
+      "team": "Chicago Bulls",
+      "status": "minimum contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/baxtelo01.html#contract"
+    },
+    {
+      "player_id": "woodslo01",
+      "name": "Loren Woods",
+      "team": "Minnesota Timberwolves",
+      "status": "free agent expiring",
+      "current_contract_id": "woodslo01-existing-5cb9287ea564",
+      "recorded_agreements": 1,
+      "href": "players/woodslo01.html#contract"
+    },
+    {
+      "player_id": "harrilu01",
+      "name": "Lucious Harris",
+      "team": "New Jersey Nets",
+      "status": "free agent expiring",
+      "current_contract_id": "harrilu01-existing-4510d49c21d0",
+      "recorded_agreements": 1,
+      "href": "players/harrilu01.html#contract"
+    },
+    {
+      "player_id": "ridnolu01",
+      "name": "Luke Ridnour",
+      "team": "Seattle SuperSonics",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/ridnolu01.html#contract"
+    },
+    {
+      "player_id": "waltolu01",
+      "name": "Luke Walton",
+      "team": "Los Angeles Lakers",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/waltolu01.html#contract"
+    },
+    {
+      "player_id": "bastoma01",
+      "name": "Maceo Baston",
+      "team": "Toronto Raptors",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/bastoma01.html#contract"
+    },
+    {
+      "player_id": "lampema01",
+      "name": "Maciej Lampe",
+      "team": "New York Knicks",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/lampema01.html#contract"
+    },
+    {
+      "player_id": "badiama01",
+      "name": "Malick Badiane",
+      "team": "Houston Rockets",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/badiama01.html#contract"
+    },
+    {
+      "player_id": "allenma01",
+      "name": "Malik Allen",
+      "team": "Miami Heat",
+      "status": "free agent expiring",
+      "current_contract_id": "allenma01-existing-ef5488bab1ee",
+      "recorded_agreements": 1,
+      "href": "players/allenma01.html#contract"
+    },
+    {
+      "player_id": "rosema01",
+      "name": "Malik Rose",
+      "team": "San Antonio Spurs",
+      "status": "under contract",
+      "current_contract_id": "rosema01-existing-f6cc43891fc7",
+      "recorded_agreements": 1,
+      "href": "players/rosema01.html#contract"
+    },
+    {
+      "player_id": "ndiayma02",
+      "name": "Mamadou N'diaye",
+      "team": "Toronto Raptors",
+      "status": "free agent expiring",
+      "current_contract_id": "ndiayma02-existing-e4801aa31c08",
+      "recorded_agreements": 1,
+      "href": "players/ndiayma02.html#contract"
+    },
+    {
+      "player_id": "ginobma01",
+      "name": "Manu Ginobili",
+      "team": "San Antonio Spurs",
+      "status": "under contract",
+      "current_contract_id": "ginobma01-2002-07-18",
+      "recorded_agreements": 1,
+      "href": "players/ginobma01.html#contract"
+    },
+    {
+      "player_id": "jacksma02",
+      "name": "Marc Jackson",
+      "team": "Minnesota Timberwolves",
+      "status": "under contract",
+      "current_contract_id": "jacksma02-existing-f58893247844",
+      "recorded_agreements": 1,
+      "href": "players/jacksma02.html#contract"
+    },
+    {
+      "player_id": "banksma01",
+      "name": "Marcus Banks",
+      "team": "Boston Celtics",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/banksma01.html#contract"
+    },
+    {
+      "player_id": "cambyma01",
+      "name": "Marcus Camby",
+      "team": "Denver Nuggets",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/cambyma01.html#contract"
+    },
+    {
+      "player_id": "haislma01",
+      "name": "Marcus Haislip",
+      "team": "Milwaukee Bucks",
+      "status": "under rookie contract",
+      "current_contract_id": "haislma01-2002-07-19",
+      "recorded_agreements": 1,
+      "href": "players/haislma01.html#contract"
+    },
+    {
+      "player_id": "austima01",
+      "name": "Mario Austin",
+      "team": "Chicago Bulls",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/austima01.html#contract"
+    },
+    {
+      "player_id": "blounma01",
+      "name": "Mark Blount",
+      "team": "Boston Celtics",
+      "status": "free agent expiring",
+      "current_contract_id": "blounma01-existing-c54f4c71ecad",
+      "recorded_agreements": 1,
+      "href": "players/blounma01.html#contract"
+    },
+    {
+      "player_id": "bryanma01",
+      "name": "Mark Bryant",
+      "team": "Boston Celtics",
+      "status": "free agent expiring",
+      "current_contract_id": "bryanma01-existing-54755c4cf0c8",
+      "recorded_agreements": 1,
+      "href": "players/bryanma01.html#contract"
+    },
+    {
+      "player_id": "jacksma01",
+      "name": "Mark Jackson",
+      "team": "Utah Jazz",
+      "status": "free agent expiring",
+      "current_contract_id": "jacksma01-existing-54755c4cf0c8",
+      "recorded_agreements": 1,
+      "href": "players/jacksma01.html#contract"
+    },
+    {
+      "player_id": "madsema01",
+      "name": "Mark Madsen",
+      "team": "Los Angeles Lakers",
+      "status": "free agent expiring",
+      "current_contract_id": "madsema01-existing-392bc9aa575b",
+      "recorded_agreements": 1,
+      "href": "players/madsema01.html#contract"
+    },
+    {
+      "player_id": "jaricma01",
+      "name": "Marko Jaric",
+      "team": "Los Angeles Clippers",
+      "status": "under contract",
+      "current_contract_id": "jaricma01-existing-8ee165c63ff5",
+      "recorded_agreements": 1,
+      "href": "players/jaricma01.html#contract"
+    },
+    {
+      "player_id": "bonnema01",
+      "name": "Matt Bonner",
+      "team": "Toronto Raptors",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/bonnema01.html#contract"
+    },
+    {
+      "player_id": "harprma01",
+      "name": "Matt Harpring",
+      "team": "Utah Jazz",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/harprma01.html#contract"
+    },
+    {
+      "player_id": "okurme01",
+      "name": "Mehmet Okur",
+      "team": "Detroit Pistons",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/okurme01.html#contract"
+    },
+    {
+      "player_id": "elyme01",
+      "name": "Melvin Ely",
+      "team": "Los Angeles Clippers",
+      "status": "under rookie contract",
+      "current_contract_id": "elyme01-2002-09-04",
+      "recorded_agreements": 1,
+      "href": "players/elyme01.html#contract"
+    },
+    {
+      "player_id": "bradlmi01",
+      "name": "Michael Bradley",
+      "team": "Toronto Raptors",
+      "status": "under rookie contract",
+      "current_contract_id": "bradlmi01-2001-07-23",
+      "recorded_agreements": 1,
+      "href": "players/bradlmi01.html#contract"
+    },
+    {
+      "player_id": "currymi01",
+      "name": "Michael Curry",
+      "team": "Detroit Pistons",
+      "status": "under contract",
+      "current_contract_id": "currymi01-existing-393376c46ca3",
+      "recorded_agreements": 1,
+      "href": "players/currymi01.html#contract"
+    },
+    {
+      "player_id": "doleami01",
+      "name": "Michael Doleac",
+      "team": "New York Knicks",
+      "status": "under contract",
+      "current_contract_id": "doleami01-2002-08-07",
+      "recorded_agreements": 1,
+      "href": "players/doleami01.html#contract"
+    },
+    {
+      "player_id": "finlemi01",
+      "name": "Michael Finley",
+      "team": "Dallas Mavericks",
+      "status": "under contract",
+      "current_contract_id": "finlemi01-existing-afb6c9b71929",
+      "recorded_agreements": 1,
+      "href": "players/finlemi01.html#contract"
+    },
+    {
+      "player_id": "jordami01",
+      "name": "Michael Jordan",
+      "team": "Washington Wizards",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/jordami01.html#contract"
+    },
+    {
+      "player_id": "reddmi01",
+      "name": "Michael Redd",
+      "team": "Milwaukee Bucks",
+      "status": "under contract",
+      "current_contract_id": "reddmi01-2002-09-30",
+      "recorded_agreements": 1,
+      "href": "players/reddmi01.html#contract"
+    },
+    {
+      "player_id": "stewami01",
+      "name": "Michael Stewart",
+      "team": "Cleveland Cavaliers",
+      "status": "under contract",
+      "current_contract_id": "stewami01-1999-08-12",
+      "recorded_agreements": 1,
+      "href": "players/stewami01.html#contract"
+    },
+    {
+      "player_id": "sweetmi01",
+      "name": "Michael Sweetney",
+      "team": "New York Knicks",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/sweetmi01.html#contract"
+    },
+    {
+      "player_id": "pietrmi01",
+      "name": "Mickael Pietrus",
+      "team": "Golden State Warriors",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/pietrmi01.html#contract"
+    },
+    {
+      "player_id": "batismi01",
+      "name": "Mike Batiste",
+      "team": "Memphis Grizzlies",
+      "status": "free agent expiring",
+      "current_contract_id": "batismi01-existing-1f0c23df98ea",
+      "recorded_agreements": 1,
+      "href": "players/batismi01.html#contract"
+    },
+    {
+      "player_id": "bibbymi01",
+      "name": "Mike Bibby",
+      "team": "Sacramento Kings",
+      "status": "under contract",
+      "current_contract_id": "bibbymi01-2002-08-16",
+      "recorded_agreements": 1,
+      "href": "players/bibbymi01.html#contract"
+    },
+    {
+      "player_id": "dunlemi02",
+      "name": "Mike Dunleavy",
+      "team": "Golden State Warriors",
+      "status": "under rookie contract",
+      "current_contract_id": "dunlemi02-2002-07-07",
+      "recorded_agreements": 1,
+      "href": "players/dunlemi02.html#contract"
+    },
+    {
+      "player_id": "jamesmi01",
+      "name": "Mike James",
+      "team": "Miami Heat",
+      "status": "free agent expiring",
+      "current_contract_id": "jamesmi01-existing-ef5488bab1ee",
+      "recorded_agreements": 1,
+      "href": "players/jamesmi01.html#contract"
+    },
+    {
+      "player_id": "wilksmi01",
+      "name": "Mike Wilks",
+      "team": "Minnesota Timberwolves",
+      "status": "free agent expiring",
+      "current_contract_id": "wilksmi01-existing-96667aeb9cb6",
+      "recorded_agreements": 1,
+      "href": "players/wilksmi01.html#contract"
+    },
+    {
+      "player_id": "mooremi01",
+      "name": "Mikki Moore",
+      "team": "Atlanta Hawks",
+      "status": "free agent expiring",
+      "current_contract_id": "mooremi01-existing-d525b83ec97b",
+      "recorded_agreements": 1,
+      "href": "players/mooremi01.html#contract"
+    },
+    {
+      "player_id": "palacmi01",
+      "name": "Milt Palacio",
+      "team": "Cleveland Cavaliers",
+      "status": "free agent expiring",
+      "current_contract_id": "palacmi01-existing-fcf72d0727aa",
+      "recorded_agreements": 1,
+      "href": "players/palacmi01.html#contract"
+    },
+    {
+      "player_id": "willima01",
+      "name": "Mo Williams",
+      "team": "Utah Jazz",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/willima01.html#contract"
+    },
+    {
+      "player_id": "willimo01",
+      "name": "Monty Williams",
+      "team": "Philadelphia 76ers",
+      "status": "minimum contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/willimo01.html#contract"
+    },
+    {
+      "player_id": "norrimo01",
+      "name": "Moochie Norris",
+      "team": "Houston Rockets",
+      "status": "under contract",
+      "current_contract_id": "norrimo01-existing-bacc7a9a2768",
+      "recorded_agreements": 1,
+      "href": "players/norrimo01.html#contract"
+    },
+    {
+      "player_id": "petermo01",
+      "name": "Morris Peterson",
+      "team": "Toronto Raptors",
+      "status": "under rookie contract",
+      "current_contract_id": "petermo01-2000-10-02",
+      "recorded_agreements": 1,
+      "href": "players/petermo01.html#contract"
+    },
+    {
+      "player_id": "mohamna01",
+      "name": "Nazr Mohammed",
+      "team": "Atlanta Hawks",
+      "status": "under contract",
+      "current_contract_id": "mohamna01-existing-414be4f1342b",
+      "recorded_agreements": 1,
+      "href": "players/mohamna01.html#contract"
+    },
+    {
+      "player_id": "ebind01",
+      "name": "Ndudi Ebi",
+      "team": "Minnesota Timberwolves",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/ebind01.html#contract"
+    },
+    {
+      "player_id": "sinanne01",
+      "name": "Nedzad Sinanovic",
+      "team": "Portland Trail Blazers",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/sinanne01.html#contract"
+    },
+    {
+      "player_id": "hilarne01",
+      "name": "Nene",
+      "team": "Denver Nuggets",
+      "status": "under rookie contract",
+      "current_contract_id": "hilarne01-2002-07-23",
+      "recorded_agreements": 1,
+      "href": "players/hilarne01.html#contract"
+    },
+    {
+      "player_id": "collini01",
+      "name": "Nick Collison",
+      "team": "Seattle SuperSonics",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/collini01.html#contract"
+    },
+    {
+      "player_id": "vanexni01",
+      "name": "Nick Van Exel",
+      "team": "Dallas Mavericks",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/vanexni01.html#contract"
+    },
+    {
+      "player_id": "tskitni01",
+      "name": "Nikoloz Tskitishvili",
+      "team": "Denver Nuggets",
+      "status": "under rookie contract",
+      "current_contract_id": "tskitni01-existing-74fa35613b56",
+      "recorded_agreements": 1,
+      "href": "players/tskitni01.html#contract"
+    },
+    {
+      "player_id": "brownpj01",
+      "name": "P.J. Brown",
+      "team": "New Orleans Hornets",
+      "status": "free agent expiring",
+      "current_contract_id": "brownpj01-existing-864c91a5245f",
+      "recorded_agreements": 1,
+      "href": "players/brownpj01.html#contract"
+    },
+    {
+      "player_id": "morlepa01",
+      "name": "Paccelis Morlende",
+      "team": "Seattle SuperSonics",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/morlepa01.html#contract"
+    },
+    {
+      "player_id": "burkepa01",
+      "name": "Pat Burke",
+      "team": "Orlando Magic",
+      "status": "free agent expiring",
+      "current_contract_id": "burkepa01-existing-1f0c23df98ea",
+      "recorded_agreements": 1,
+      "href": "players/burkepa01.html#contract"
+    },
+    {
+      "player_id": "garripa01",
+      "name": "Pat Garrity",
+      "team": "Orlando Magic",
+      "status": "under contract",
+      "current_contract_id": "garripa01-existing-ddedaf17ef40",
+      "recorded_agreements": 1,
+      "href": "players/garripa01.html#contract"
+    },
+    {
+      "player_id": "gasolpa01",
+      "name": "Pau Gasol",
+      "team": "Memphis Grizzlies",
+      "status": "under rookie contract",
+      "current_contract_id": "gasolpa01-2001-09-06",
+      "recorded_agreements": 1,
+      "href": "players/gasolpa01.html#contract"
+    },
+    {
+      "player_id": "piercpa01",
+      "name": "Paul Pierce",
+      "team": "Boston Celtics",
+      "status": "under contract",
+      "current_contract_id": "piercpa01-2001-08-01",
+      "recorded_agreements": 1,
+      "href": "players/piercpa01.html#contract"
+    },
+    {
+      "player_id": "stojape01",
+      "name": "Peja Stojakovic",
+      "team": "Sacramento Kings",
+      "status": "under contract",
+      "current_contract_id": "stojape01-2000-08-16",
+      "recorded_agreements": 1,
+      "href": "players/stojape01.html#contract"
+    },
+    {
+      "player_id": "drobnpr01",
+      "name": "Predrag Drobnjak",
+      "team": "Seattle SuperSonics",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/drobnpr01.html#contract"
+    },
+    {
+      "player_id": "woodsqy01",
+      "name": "Qyntel Woods",
+      "team": "Portland Trail Blazers",
+      "status": "under rookie contract",
+      "current_contract_id": "woodsqy01-2002-07-12",
+      "recorded_agreements": 1,
+      "href": "players/woodsqy01.html#contract"
+    },
+    {
+      "player_id": "lafrera01",
+      "name": "Raef LaFrentz",
+      "team": "Dallas Mavericks",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/lafrera01.html#contract"
+    },
+    {
+      "player_id": "alstora01",
+      "name": "Rafer Alston",
+      "team": "Milwaukee Bucks",
+      "status": "free agent expiring",
+      "current_contract_id": "alstora01-existing-975b166781f3",
+      "recorded_agreements": 1,
+      "href": "players/alstora01.html#contract"
+    },
+    {
+      "player_id": "bellra01",
+      "name": "Raja Bell",
+      "team": "Dallas Mavericks",
+      "status": "free agent expiring",
+      "current_contract_id": "bellra01-existing-3a1c516ea322",
+      "recorded_agreements": 1,
+      "href": "players/bellra01.html#contract"
+    },
+    {
+      "player_id": "brownra02",
+      "name": "Randy Brown",
+      "team": "Phoenix Suns",
+      "status": "free agent expiring",
+      "current_contract_id": "brownra02-existing-58655fa4889a",
+      "recorded_agreements": 1,
+      "href": "players/brownra02.html#contract"
+    },
+    {
+      "player_id": "lewisra02",
+      "name": "Rashard Lewis",
+      "team": "Seattle SuperSonics",
+      "status": "under contract",
+      "current_contract_id": "lewisra02-2002-09-19",
+      "recorded_agreements": 1,
+      "href": "players/lewisra02.html#contract"
+    },
+    {
+      "player_id": "wallara01",
+      "name": "Rasheed Wallace",
+      "team": "Portland Trail Blazers",
+      "status": "under contract",
+      "current_contract_id": "wallara01-1997-09-29",
+      "recorded_agreements": 1,
+      "href": "players/wallara01.html#contract"
+    },
+    {
+      "player_id": "nestera01",
+      "name": "Rasho Nesterovic",
+      "team": "Minnesota Timberwolves",
+      "status": "free agent expiring",
+      "current_contract_id": "nestera01-existing-0217e6bfaa23",
+      "recorded_agreements": 1,
+      "href": "players/nestera01.html#contract"
+    },
+    {
+      "player_id": "butlera01",
+      "name": "Rasual Butler",
+      "team": "Miami Heat",
+      "status": "team option pending",
+      "current_contract_id": "butlera01-2002-08-15",
+      "recorded_agreements": 1,
+      "href": "players/butlera01.html#contract"
+    },
+    {
+      "player_id": "allenra02",
+      "name": "Ray Allen",
+      "team": "Seattle SuperSonics",
+      "status": "under contract",
+      "current_contract_id": "allenra02-1999-03-08",
+      "recorded_agreements": 1,
+      "href": "players/allenra02.html#contract"
+    },
+    {
+      "player_id": "gainere01",
+      "name": "Reece Gaines",
+      "team": "Orlando Magic",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/gainere01.html#contract"
+    },
+    {
+      "player_id": "evansre01",
+      "name": "Reggie Evans",
+      "team": "Seattle SuperSonics",
+      "status": "free agent expiring",
+      "current_contract_id": "evansre01-existing-1f0c23df98ea",
+      "recorded_agreements": 1,
+      "href": "players/evansre01.html#contract"
+    },
+    {
+      "player_id": "millere01",
+      "name": "Reggie Miller",
+      "team": "Indiana Pacers",
+      "status": "free agent expiring",
+      "current_contract_id": "millere01-existing-1243e246ad7f",
+      "recorded_agreements": 1,
+      "href": "players/millere01.html#contract"
+    },
+    {
+      "player_id": "vandera01",
+      "name": "Remon van de Hare",
+      "team": "Toronto Raptors",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/vandera01.html#contract"
+    },
+    {
+      "player_id": "hamilri01",
+      "name": "Richard Hamilton",
+      "team": "Detroit Pistons",
+      "status": "free agent expiring",
+      "current_contract_id": "hamilri01-existing-26e3c05e8284",
+      "recorded_agreements": 1,
+      "href": "players/hamilri01.html#contract"
+    },
+    {
+      "player_id": "jefferi01",
+      "name": "Richard Jefferson",
+      "team": "New Jersey Nets",
+      "status": "under rookie contract",
+      "current_contract_id": "jefferi01-2001-07-13",
+      "recorded_agreements": 1,
+      "href": "players/jefferi01.html#contract"
+    },
+    {
+      "player_id": "brunsri01",
+      "name": "Rick Brunson",
+      "team": "Chicago Bulls",
+      "status": "free agent expiring",
+      "current_contract_id": "brunsri01-existing-0af1d8752257",
+      "recorded_agreements": 1,
+      "href": "players/brunsri01.html#contract"
+    },
+    {
+      "player_id": "foxri01",
+      "name": "Rick Fox",
+      "team": "Los Angeles Lakers",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/foxri01.html#contract"
+    },
+    {
+      "player_id": "rickeri01",
+      "name": "Rick Rickert",
+      "team": "Minnesota Timberwolves",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/rickeri01.html#contract"
+    },
+    {
+      "player_id": "davisri01",
+      "name": "Ricky Davis",
+      "team": "Cleveland Cavaliers",
+      "status": "under contract",
+      "current_contract_id": "davisri01-existing-9a3120168581",
+      "recorded_agreements": 1,
+      "href": "players/davisri01.html#contract"
+    },
+    {
+      "player_id": "archiro01",
+      "name": "Robert Archibald",
+      "team": "Memphis Grizzlies",
+      "status": "team option pending",
+      "current_contract_id": "archiro01-2002-07-02",
+      "recorded_agreements": 1,
+      "href": "players/archiro01.html#contract"
+    },
+    {
+      "player_id": "horryro01",
+      "name": "Robert Horry",
+      "team": "Los Angeles Lakers",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/horryro01.html#contract"
+    },
+    {
+      "player_id": "packro01",
+      "name": "Robert Pack",
+      "team": "New Orleans Hornets",
+      "status": "free agent expiring",
+      "current_contract_id": "packro01-existing-864c91a5245f",
+      "recorded_agreements": 1,
+      "href": "players/packro01.html#contract"
+    },
+    {
+      "player_id": "traylro01",
+      "name": "Robert Traylor",
+      "team": "New Orleans Hornets",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/traylro01.html#contract"
+    },
+    {
+      "player_id": "stricro02",
+      "name": "Rod Strickland",
+      "team": "Minnesota Timberwolves",
+      "status": "free agent expiring",
+      "current_contract_id": "stricro02-existing-54755c4cf0c8",
+      "recorded_agreements": 1,
+      "href": "players/stricro02.html#contract"
+    },
+    {
+      "player_id": "rogerro01",
+      "name": "Rodney Rogers",
+      "team": "New Jersey Nets",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/rogerro01.html#contract"
+    },
+    {
+      "player_id": "whitero02",
+      "name": "Rodney White",
+      "team": "Denver Nuggets",
+      "status": "under rookie contract",
+      "current_contract_id": "whitero02-existing-78449f6d1257",
+      "recorded_agreements": 1,
+      "href": "players/whitero02.html#contract"
+    },
+    {
+      "player_id": "masonro01",
+      "name": "Roger Mason Jr.",
+      "team": "Chicago Bulls",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/masonro01.html#contract"
+    },
+    {
+      "player_id": "artesro01",
+      "name": "Ron Artest",
+      "team": "Indiana Pacers",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/artesro01.html#contract"
+    },
+    {
+      "player_id": "mercero01",
+      "name": "Ron Mercer",
+      "team": "Indiana Pacers",
+      "status": "under contract",
+      "current_contract_id": "mercero01-2000-08-02",
+      "recorded_agreements": 1,
+      "href": "players/mercero01.html#contract"
+    },
+    {
+      "player_id": "murraro01",
+      "name": "Ronald Murray",
+      "team": "Seattle SuperSonics",
+      "status": "minimum contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/murraro01.html#contract"
+    },
+    {
+      "player_id": "patteru01",
+      "name": "Ruben Patterson",
+      "team": "Portland Trail Blazers",
+      "status": "under contract",
+      "current_contract_id": "patteru01-existing-aa502761a5b3",
+      "recorded_agreements": 1,
+      "href": "players/patteru01.html#contract"
+    },
+    {
+      "player_id": "humphry01",
+      "name": "Ryan Humphrey",
+      "team": "Memphis Grizzlies",
+      "status": "under rookie contract",
+      "current_contract_id": "humphry01-existing-f849c1c0df25",
+      "recorded_agreements": 1,
+      "href": "players/humphry01.html#contract"
+    },
+    {
+      "player_id": "cassesa01",
+      "name": "Sam Cassell",
+      "team": "Milwaukee Bucks",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/cassesa01.html#contract"
+    },
+    {
+      "player_id": "walkesa01",
+      "name": "Samaki Walker",
+      "team": "Los Angeles Lakers",
+      "status": "free agent expiring",
+      "current_contract_id": "walkesa01-existing-e1ac8e9d38a3",
+      "recorded_agreements": 1,
+      "href": "players/walkesa01.html#contract"
+    },
+    {
+      "player_id": "becirsa01",
+      "name": "Sani Becirovic",
+      "team": "Denver Nuggets",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/becirsa01.html#contract"
+    },
+    {
+      "player_id": "pavloal01",
+      "name": "Sasha Pavlovic",
+      "team": "Utah Jazz",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/pavloal01.html#contract"
+    },
+    {
+      "player_id": "pollasc01",
+      "name": "Scot Pollard",
+      "team": "Sacramento Kings",
+      "status": "under contract",
+      "current_contract_id": "pollasc01-existing-5c3dd39cfcac",
+      "recorded_agreements": 1,
+      "href": "players/pollasc01.html#contract"
+    },
+    {
+      "player_id": "padgesc01",
+      "name": "Scott Padgett",
+      "team": "Utah Jazz",
+      "status": "free agent expiring",
+      "current_contract_id": "padgesc01-existing-3a1c516ea322",
+      "recorded_agreements": 1,
+      "href": "players/padgesc01.html#contract"
+    },
+    {
+      "player_id": "willisc01",
+      "name": "Scott Williams",
+      "team": "Phoenix Suns",
+      "status": "free agent expiring",
+      "current_contract_id": "willisc01-existing-54755c4cf0c8",
+      "recorded_agreements": 1,
+      "href": "players/willisc01.html#contract"
+    },
+    {
+      "player_id": "pippesc01",
+      "name": "Scottie Pippen",
+      "team": "Portland Trail Blazers",
+      "status": "free agent expiring",
+      "current_contract_id": "pippesc01-existing-83f1c5a7e63a",
+      "recorded_agreements": 1,
+      "href": "players/pippesc01.html#contract"
+    },
+    {
+      "player_id": "lamplse01",
+      "name": "Sean Lampley",
+      "team": "Miami Heat",
+      "status": "team option pending",
+      "current_contract_id": "lamplse01-2002-09-29",
+      "recorded_agreements": 1,
+      "href": "players/lamplse01.html#contract"
+    },
+    {
+      "player_id": "marksse01",
+      "name": "Sean Marks",
+      "team": "Miami Heat",
+      "status": "free agent expiring",
+      "current_contract_id": "marksse01-existing-3a1c516ea322",
+      "recorded_agreements": 1,
+      "href": "players/marksse01.html#contract"
+    },
+    {
+      "player_id": "rooksse01",
+      "name": "Sean Rooks",
+      "team": "Los Angeles Clippers",
+      "status": "free agent expiring",
+      "current_contract_id": "rooksse01-existing-4510d49c21d0",
+      "recorded_agreements": 1,
+      "href": "players/rooksse01.html#contract"
+    },
+    {
+      "player_id": "willish01",
+      "name": "Shammond Williams",
+      "team": "Denver Nuggets",
+      "status": "free agent expiring",
+      "current_contract_id": "willish01-existing-c9d34aa3c9f7",
+      "recorded_agreements": 1,
+      "href": "players/willish01.html#contract"
+    },
+    {
+      "player_id": "andersh01",
+      "name": "Shandon Anderson",
+      "team": "New York Knicks",
+      "status": "under contract",
+      "current_contract_id": "andersh01-existing-f2497a228c70",
+      "recorded_agreements": 1,
+      "href": "players/andersh01.html#contract"
+    },
+    {
+      "player_id": "battish01",
+      "name": "Shane Battier",
+      "team": "Memphis Grizzlies",
+      "status": "under rookie contract",
+      "current_contract_id": "battish01-2001-07-03",
+      "recorded_agreements": 1,
+      "href": "players/battish01.html#contract"
+    },
+    {
+      "player_id": "onealsh01",
+      "name": "Shaquille O'Neal",
+      "team": "Los Angeles Lakers",
+      "status": "under contract",
+      "current_contract_id": "onealsh01-2000-10-13",
+      "recorded_agreements": 1,
+      "href": "players/onealsh01.html#contract"
+    },
+    {
+      "player_id": "abdursh01",
+      "name": "Shareef Abdur-Rahim",
+      "team": "Atlanta Hawks",
+      "status": "under contract",
+      "current_contract_id": "abdursh01-existing-02158f91187a",
+      "recorded_agreements": 1,
+      "href": "players/abdursh01.html#contract"
+    },
+    {
+      "player_id": "bradlsh01",
+      "name": "Shawn Bradley",
+      "team": "Dallas Mavericks",
+      "status": "under contract",
+      "current_contract_id": "bradlsh01-existing-340fddfabb33",
+      "recorded_agreements": 1,
+      "href": "players/bradlsh01.html#contract"
+    },
+    {
+      "player_id": "kempsh01",
+      "name": "Shawn Kemp",
+      "team": "Orlando Magic",
+      "status": "free agent expiring",
+      "current_contract_id": "kempsh01-existing-54755c4cf0c8",
+      "recorded_agreements": 1,
+      "href": "players/kempsh01.html#contract"
+    },
+    {
+      "player_id": "mariosh01",
+      "name": "Shawn Marion",
+      "team": "Phoenix Suns",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/mariosh01.html#contract"
+    },
+    {
+      "player_id": "medvest01",
+      "name": "Slava Medvedenko",
+      "team": "Los Angeles Lakers",
+      "status": "under contract",
+      "current_contract_id": "medvest01-2002-07-26",
+      "recorded_agreements": 1,
+      "href": "players/medvest01.html#contract"
+    },
+    {
+      "player_id": "vranesl01",
+      "name": "Slavko Vranes",
+      "team": "New York Knicks",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/vranesl01.html#contract"
+    },
+    {
+      "player_id": "parkesm01",
+      "name": "Smush Parker",
+      "team": "Cleveland Cavaliers",
+      "status": "free agent expiring",
+      "current_contract_id": "parkesm01-existing-1f0c23df98ea",
+      "recorded_agreements": 1,
+      "href": "players/parkesm01.html#contract"
+    },
+    {
+      "player_id": "schorso01",
+      "name": "Sofoklis Schortsanitis",
+      "team": "Los Angeles Clippers",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/schorso01.html#contract"
+    },
+    {
+      "player_id": "claxtsp01",
+      "name": "Speedy Claxton",
+      "team": "San Antonio Spurs",
+      "status": "free agent expiring",
+      "current_contract_id": "claxtsp01-existing-17921acff22f",
+      "recorded_agreements": 1,
+      "href": "players/claxtsp01.html#contract"
+    },
+    {
+      "player_id": "augmost01",
+      "name": "Stacey Augmon",
+      "team": "New Orleans Hornets",
+      "status": "under contract",
+      "current_contract_id": "augmost01-existing-38245c5a6a8a",
+      "recorded_agreements": 1,
+      "href": "players/augmost01.html#contract"
+    },
+    {
+      "player_id": "jacksst02",
+      "name": "Stephen Jackson",
+      "team": "San Antonio Spurs",
+      "status": "free agent expiring",
+      "current_contract_id": "jacksst02-existing-0af1d8752257",
+      "recorded_agreements": 1,
+      "href": "players/jacksst02.html#contract"
+    },
+    {
+      "player_id": "marbust01",
+      "name": "Stephon Marbury",
+      "team": "Phoenix Suns",
+      "status": "under contract",
+      "current_contract_id": "marbust01-existing-02158f91187a",
+      "recorded_agreements": 1,
+      "href": "players/marbust01.html#contract"
+    },
+    {
+      "player_id": "blakest01",
+      "name": "Steve Blake",
+      "team": "Washington Wizards",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/blakest01.html#contract"
+    },
+    {
+      "player_id": "francst01",
+      "name": "Steve Francis",
+      "team": "Houston Rockets",
+      "status": "under contract",
+      "current_contract_id": "francst01-2002-08-26",
+      "recorded_agreements": 1,
+      "href": "players/francst01.html#contract"
+    },
+    {
+      "player_id": "kerrst01",
+      "name": "Steve Kerr",
+      "team": "San Antonio Spurs",
+      "status": "free agent expiring",
+      "current_contract_id": "kerrst01-existing-883fca112038",
+      "recorded_agreements": 1,
+      "href": "players/kerrst01.html#contract"
+    },
+    {
+      "player_id": "nashst01",
+      "name": "Steve Nash",
+      "team": "Dallas Mavericks",
+      "status": "under contract",
+      "current_contract_id": "nashst01-1999-01-25",
+      "recorded_agreements": 1,
+      "href": "players/nashst01.html#contract"
+    },
+    {
+      "player_id": "smithst01",
+      "name": "Steve Smith",
+      "team": "San Antonio Spurs",
+      "status": "free agent expiring",
+      "current_contract_id": "smithst01-existing-e8204ee024b2",
+      "recorded_agreements": 1,
+      "href": "players/smithst01.html#contract"
+    },
+    {
+      "player_id": "huntest01",
+      "name": "Steven Hunter",
+      "team": "Orlando Magic",
+      "status": "under rookie contract",
+      "current_contract_id": "huntest01-2001-08-23",
+      "recorded_agreements": 1,
+      "href": "players/huntest01.html#contract"
+    },
+    {
+      "player_id": "swiftst01",
+      "name": "Stromile Swift",
+      "team": "Memphis Grizzlies",
+      "status": "under rookie contract",
+      "current_contract_id": "swiftst01-2000-07-18",
+      "recorded_agreements": 1,
+      "href": "players/swiftst01.html#contract"
+    },
+    {
+      "player_id": "szewcsz01",
+      "name": "Szymon Szewczyk",
+      "team": "Milwaukee Bucks",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/szewcsz01.html#contract"
+    },
+    {
+      "player_id": "fordtj01",
+      "name": "T.J. Ford",
+      "team": "Milwaukee Bucks",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/fordtj01.html#contract"
+    },
+    {
+      "player_id": "slayta01",
+      "name": "Tamar Slay",
+      "team": "New Jersey Nets",
+      "status": "minimum contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/slayta01.html#contract"
+    },
+    {
+      "player_id": "abdulta01",
+      "name": "Tariq Abdul-Wahad",
+      "team": "Dallas Mavericks",
+      "status": "under contract",
+      "current_contract_id": "abdulta01-2000-08-01",
+      "recorded_agreements": 1,
+      "href": "players/abdulta01.html#contract"
+    },
+    {
+      "player_id": "princta01",
+      "name": "Tayshaun Prince",
+      "team": "Detroit Pistons",
+      "status": "under rookie contract",
+      "current_contract_id": "princta01-2002-07-02",
+      "recorded_agreements": 1,
+      "href": "players/princta01.html#contract"
+    },
+    {
+      "player_id": "morrite01",
+      "name": "Terence Morris",
+      "team": "Houston Rockets",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/morrite01.html#contract"
+    },
+    {
+      "player_id": "ratlith01",
+      "name": "Theo Ratliff",
+      "team": "Atlanta Hawks",
+      "status": "under contract",
+      "current_contract_id": "ratlith01-existing-cea13692f037",
+      "recorded_agreements": 1,
+      "href": "players/ratlith01.html#contract"
+    },
+    {
+      "player_id": "brownti01",
+      "name": "Tierre Brown",
+      "team": "Cleveland Cavaliers",
+      "status": "free agent expiring",
+      "current_contract_id": "brownti01-existing-864c91a5245f",
+      "recorded_agreements": 1,
+      "href": "players/brownti01.html#contract"
+    },
+    {
+      "player_id": "duncati01",
+      "name": "Tim Duncan",
+      "team": "San Antonio Spurs",
+      "status": "player option pending",
+      "current_contract_id": "duncati01-2000-08-01",
+      "recorded_agreements": 1,
+      "href": "players/duncati01.html#contract"
+    },
+    {
+      "player_id": "hardati01",
+      "name": "Tim Hardaway",
+      "team": "Indiana Pacers",
+      "status": "free agent expiring",
+      "current_contract_id": "hardati01-existing-f51cc2cc3a75",
+      "recorded_agreements": 1,
+      "href": "players/hardati01.html#contract"
+    },
+    {
+      "player_id": "thomati01",
+      "name": "Tim Thomas",
+      "team": "Milwaukee Bucks",
+      "status": "under contract",
+      "current_contract_id": "thomati01-existing-5df247bcd69a",
+      "recorded_agreements": 1,
+      "href": "players/thomati01.html#contract"
+    },
+    {
+      "player_id": "maddoti01",
+      "name": "Tito Maddox",
+      "team": "Houston Rockets",
+      "status": "team option pending",
+      "current_contract_id": "maddoti01-2002-09-12",
+      "recorded_agreements": 1,
+      "href": "players/maddoti01.html#contract"
+    },
+    {
+      "player_id": "guglito01",
+      "name": "Tom Gugliotta",
+      "team": "Phoenix Suns",
+      "status": "under contract",
+      "current_contract_id": "guglito01-existing-c0eee2ba853a",
+      "recorded_agreements": 1,
+      "href": "players/guglito01.html#contract"
+    },
+    {
+      "player_id": "smithto03",
+      "name": "Tommy Smith",
+      "team": "Chicago Bulls",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/smithto03.html#contract"
+    },
+    {
+      "player_id": "kukocto01",
+      "name": "Toni Kukoc",
+      "team": "Milwaukee Bucks",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/kukocto01.html#contract"
+    },
+    {
+      "player_id": "battito01",
+      "name": "Tony Battie",
+      "team": "Boston Celtics",
+      "status": "under contract",
+      "current_contract_id": "battito01-1999-10-15",
+      "recorded_agreements": 1,
+      "href": "players/battito01.html#contract"
+    },
+    {
+      "player_id": "delkto01",
+      "name": "Tony Delk",
+      "team": "Boston Celtics",
+      "status": "under contract",
+      "current_contract_id": "delkto01-2000-08-01",
+      "recorded_agreements": 1,
+      "href": "players/delkto01.html#contract"
+    },
+    {
+      "player_id": "masseto01",
+      "name": "Tony Massenburg",
+      "team": "Utah Jazz",
+      "status": "free agent expiring",
+      "current_contract_id": "masseto01-existing-9ab8c35a8183",
+      "recorded_agreements": 1,
+      "href": "players/masseto01.html#contract"
+    },
+    {
+      "player_id": "parketo01",
+      "name": "Tony Parker",
+      "team": "San Antonio Spurs",
+      "status": "under rookie contract",
+      "current_contract_id": "parketo01-2001-09-21",
+      "recorded_agreements": 1,
+      "href": "players/parketo01.html#contract"
+    },
+    {
+      "player_id": "mcgratr01",
+      "name": "Tracy McGrady",
+      "team": "Orlando Magic",
+      "status": "under contract",
+      "current_contract_id": "mcgratr01-existing-6434280dd7b3",
+      "recorded_agreements": 1,
+      "href": "players/mcgratr01.html#contract"
+    },
+    {
+      "player_id": "besttr01",
+      "name": "Travis Best",
+      "team": "Miami Heat",
+      "status": "free agent expiring",
+      "current_contract_id": "besttr01-existing-ed9d692d8e6c",
+      "recorded_agreements": 1,
+      "href": "players/besttr01.html#contract"
+    },
+    {
+      "player_id": "hansetr01",
+      "name": "Travis Hansen",
+      "team": "Atlanta Hawks",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/hansetr01.html#contract"
+    },
+    {
+      "player_id": "knightr01",
+      "name": "Travis Knight",
+      "team": "New York Knicks",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/knightr01.html#contract"
+    },
+    {
+      "player_id": "outlatr01",
+      "name": "Travis Outlaw",
+      "team": "Portland Trail Blazers",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/outlatr01.html#contract"
+    },
+    {
+      "player_id": "fowlktr01",
+      "name": "Tremaine Fowlkes",
+      "team": "Los Angeles Clippers",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/fowlktr01.html#contract"
+    },
+    {
+      "player_id": "hassetr01",
+      "name": "Trenton Hassell",
+      "team": "Chicago Bulls",
+      "status": "under contract",
+      "current_contract_id": "hassetr01-2001-09-27",
+      "recorded_agreements": 1,
+      "href": "players/hassetr01.html#contract"
+    },
+    {
+      "player_id": "belltr01",
+      "name": "Troy Bell",
+      "team": "Memphis Grizzlies",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/belltr01.html#contract"
+    },
+    {
+      "player_id": "hudsotr01",
+      "name": "Troy Hudson",
+      "team": "Minnesota Timberwolves",
+      "status": "under contract unverified",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/hudsotr01.html#contract"
+    },
+    {
+      "player_id": "murphtr01",
+      "name": "Troy Murphy",
+      "team": "Golden State Warriors",
+      "status": "under rookie contract",
+      "current_contract_id": "murphtr01-2001-08-24",
+      "recorded_agreements": 1,
+      "href": "players/murphtr01.html#contract"
+    },
+    {
+      "player_id": "hillty01",
+      "name": "Tyrone Hill",
+      "team": "Philadelphia 76ers",
+      "status": "free agent expiring",
+      "current_contract_id": "hillty01-existing-f61d7ffcb361",
+      "recorded_agreements": 1,
+      "href": "players/hillty01.html#contract"
+    },
+    {
+      "player_id": "luety01",
+      "name": "Tyronn Lue",
+      "team": "Washington Wizards",
+      "status": "free agent unlisted",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/luety01.html#contract"
+    },
+    {
+      "player_id": "cartevi01",
+      "name": "Vince Carter",
+      "team": "Toronto Raptors",
+      "status": "under contract",
+      "current_contract_id": "cartevi01-existing-63837860310d",
+      "recorded_agreements": 1,
+      "href": "players/cartevi01.html#contract"
+    },
+    {
+      "player_id": "yarbrvi01",
+      "name": "Vincent Yarbrough",
+      "team": "Denver Nuggets",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/yarbrvi01.html#contract"
+    },
+    {
+      "player_id": "potapvi01",
+      "name": "Vitaly Potapenko",
+      "team": "Seattle SuperSonics",
+      "status": "under contract",
+      "current_contract_id": "potapvi01-existing-2ac1c74d65f2",
+      "recorded_agreements": 1,
+      "href": "players/potapvi01.html#contract"
+    },
+    {
+      "player_id": "divacvl01",
+      "name": "Vlade Divac",
+      "team": "Sacramento Kings",
+      "status": "under contract",
+      "current_contract_id": "divacvl01-existing-03aec9bf91a7",
+      "recorded_agreements": 1,
+      "href": "players/divacvl01.html#contract"
+    },
+    {
+      "player_id": "radmavl01",
+      "name": "Vladimir Radmanovic",
+      "team": "Seattle SuperSonics",
+      "status": "under rookie contract",
+      "current_contract_id": "radmavl01-2001-09-01",
+      "recorded_agreements": 1,
+      "href": "players/radmavl01.html#contract"
+    },
+    {
+      "player_id": "stepavl01",
+      "name": "Vladimir Stepania",
+      "team": "Miami Heat",
+      "status": "free agent expiring",
+      "current_contract_id": "stepavl01-existing-41302b9f62ac",
+      "recorded_agreements": 1,
+      "href": "players/stepavl01.html#contract"
+    },
+    {
+      "player_id": "lenarvo01",
+      "name": "Voshon Lenard",
+      "team": "Toronto Raptors",
+      "status": "free agent expiring",
+      "current_contract_id": "lenarvo01-existing-fb5004195cfc",
+      "recorded_agreements": 1,
+      "href": "players/lenarvo01.html#contract"
+    },
+    {
+      "player_id": "szczewa02",
+      "name": "Wally Szczerbiak",
+      "team": "Minnesota Timberwolves",
+      "status": "under contract",
+      "current_contract_id": "szczewa02-2002-10-30",
+      "recorded_agreements": 1,
+      "href": "players/szczewa02.html#contract"
+    },
+    {
+      "player_id": "williwa02",
+      "name": "Walt Williams",
+      "team": "Dallas Mavericks",
+      "status": "free agent expiring",
+      "current_contract_id": "williwa02-existing-54755c4cf0c8",
+      "recorded_agreements": 1,
+      "href": "players/williwa02.html#contract"
+    },
+    {
+      "player_id": "mccarwa01",
+      "name": "Walter McCarty",
+      "team": "Boston Celtics",
+      "status": "free agent expiring",
+      "current_contract_id": "mccarwa01-existing-c54f4c71ecad",
+      "recorded_agreements": 1,
+      "href": "players/mccarwa01.html#contract"
+    },
+    {
+      "player_id": "zhizhwa01",
+      "name": "Wang Zhizhi",
+      "team": "Los Angeles Clippers",
+      "status": "expired or unresolved",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/zhizhwa01.html#contract"
+    },
+    {
+      "player_id": "persowe01",
+      "name": "Wesley Person",
+      "team": "Memphis Grizzlies",
+      "status": "under contract",
+      "current_contract_id": "persowe01-existing-37caa978c62f",
+      "recorded_agreements": 1,
+      "href": "players/persowe01.html#contract"
+    },
+    {
+      "player_id": "greenwi01",
+      "name": "Willie Green",
+      "team": "Philadelphia 76ers",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/greenwi01.html#contract"
+    },
+    {
+      "player_id": "yuyanxu01",
+      "name": "Xue Yuyang",
+      "team": "Denver Nuggets",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/yuyanxu01.html#contract"
+    },
+    {
+      "player_id": "mingya01",
+      "name": "Yao Ming",
+      "team": "Houston Rockets",
+      "status": "under rookie contract",
+      "current_contract_id": "mingya01-2002-10-18",
+      "recorded_agreements": 1,
+      "href": "players/mingya01.html#contract"
+    },
+    {
+      "player_id": "randoza01",
+      "name": "Zach Randolph",
+      "team": "Portland Trail Blazers",
+      "status": "under rookie contract",
+      "current_contract_id": "randoza01-2001-08-21",
+      "recorded_agreements": 1,
+      "href": "players/randoza01.html#contract"
+    },
+    {
+      "player_id": "cabarza01",
+      "name": "Zarko Cabarkapa",
+      "team": "Phoenix Suns",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/cabarza01.html#contract"
+    },
+    {
+      "player_id": "pachuza01",
+      "name": "Zaza Pachulia",
+      "team": "Orlando Magic",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/pachuza01.html#contract"
+    },
+    {
+      "player_id": "rebraze01",
+      "name": "Zeljko Rebraca",
+      "team": "Detroit Pistons",
+      "status": "under contract",
+      "current_contract_id": "rebraze01-existing-2f9ec69151a0",
+      "recorded_agreements": 1,
+      "href": "players/rebraze01.html#contract"
+    },
+    {
+      "player_id": "planizo01",
+      "name": "Zoran Planinic",
+      "team": "New Jersey Nets",
+      "status": "No verified contract record",
+      "current_contract_id": null,
+      "recorded_agreements": 0,
+      "href": "players/planizo01.html#contract"
+    },
+    {
+      "player_id": "ilgauzy01",
+      "name": "Zydrunas Ilgauskas",
+      "team": "Cleveland Cavaliers",
+      "status": "under contract",
+      "current_contract_id": "ilgauzy01-existing-02158f91187a",
+      "recorded_agreements": 1,
+      "href": "players/ilgauzy01.html#contract"
+    }
+  ]
+}

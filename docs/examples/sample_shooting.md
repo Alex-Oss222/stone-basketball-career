@@ -2,7 +2,7 @@
 
 > **ILLUSTRATIVE TEMPLATE ONLY.** All games, teams, dates and performance figures below are invented for layout testing. They are not Wade's career results or a simulated future outcome.
 
-[Open interactive Shooting](player_cards_preview.html#shooting) · [Statistics index](player_stats_preview.md) · [Awards](sample_awards.md)
+[Open interactive Shooting](player_cards_preview.html#shooting) · [Statistics index](player_stats_preview.md) · [Contract](sample_contract.md) · [Awards](sample_awards.md)
 
 Shot coordinates are **synthetic design fixtures**, explicitly generated to reconcile with the six existing fictional game boxes. They are not inferred real locations or canonical tracking. Free throws contribute to PTS but never appear as field-goal dots.
 

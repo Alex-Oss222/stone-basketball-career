@@ -16,6 +16,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime import camp, signing                      # noqa: E402
+from runtime.contract_archive import archive_contract  # noqa: E402
 from runtime.decisions import decision_errors          # noqa: E402
 from runtime.gm import FrontOffice                     # noqa: E402
 from runtime.market import Market                      # noqa: E402
@@ -70,6 +71,8 @@ class CampRun:
             sheet["players"].append({"player": r["player"], "bbr_id": r["bbr_id"], "status": "camp_contract", "schedule": {camp.SEASON: r["salary"]},
                                      "amount_kind": {camp.SEASON: "contract_salary"}, "guaranteed": {camp.SEASON: 0}, "guarantee_date": camp.GUARANTEE_DATE,
                                      "signed_date": day, "route": "minimum", "notes": control, "sources": ["04_Training_Camp/camp_roster.json"]})
+            archive_contract(self.writer, sheet["players"][-1], day, event="signed", source=str(camp.CAMP_ROSTER),
+                             player_id=r["bbr_id"], signing_team="Miami Heat")
             roster["players"].append({"id": signing.slug(r["player"]), "name": r["player"], "positions": [r["position"]], "date_of_birth": identity.get("birth_date"),
                                       "status": "camp_contract", "control": control, "working_role": "Camp invitee",
                                       "player_card": f"../Player_Cards/{signing.slug(r['player'])}.md", "bbr_id": r["bbr_id"]})

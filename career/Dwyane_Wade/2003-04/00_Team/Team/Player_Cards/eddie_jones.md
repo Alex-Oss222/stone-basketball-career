@@ -6,6 +6,12 @@
 
 **Contract/control:** Existing seven-year contract runs through 2006-07; 2003-04 salary $12,333,750. [Finance record](../../Finances/cap_sheet.md).
 
+<!-- contract-navigation:start -->
+[Current contract](../../../../Contracts/players/jonesed02.html#contract) · [Contract history](../../../../Contracts/players/jonesed02.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
+
+Contract pages follow the current career date; this personnel assessment retains its stated date.
+<!-- contract-navigation:end -->
+
 ## Scouting report
 
 **Role:** 2002-03 SG1 is the carried 2002-03 baseline; Miami has not finalized the 2003-04 role.

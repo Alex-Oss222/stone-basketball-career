@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from runtime.stat_layout import RED, PER_GAME_COLUMNS, link, markdown_table, rect, scope_for, svg_start, svg_text
+from runtime.contract_navigation import contract_player_link, plain_player_name
 
 COLUMNS = ["Player", "Age", "Club / rights", "Lg", *PER_GAME_COLUMNS[4:-1]]
 ALIASES = {"MP": "MPG", "PTS": "PPG", "TRB": "RPG", "AST": "APG", "STL": "SPG", "BLK": "BPG", "TOV": "TOV/G"}
@@ -59,7 +60,7 @@ def format_page(text, page, registry, as_of, asset):
         for headers, rows in read_tables(body):
             target = production if "PPG" in headers or "PTS" in headers else shooting
             for row in rows:
-                name = row["Player"]
+                name = plain_player_name(row["Player"])
                 if name in target:
                     raise ValueError(f"{page}: duplicate {name} row")
                 target[name] = row
@@ -75,7 +76,9 @@ def format_page(text, page, registry, as_of, asset):
             birth, on = date.fromisoformat(p["birth_date"]), date.fromisoformat(cutoff)
             age = on.year - birth.year - ((on.month, on.day) < (birth.month, birth.day))
             values = {key: old.get(key, old.get(ALIASES.get(key, ""), "N/A")) for key in COLUMNS}
-            values.update(Player=name, Age=old.get("Age", str(age)), Lg=old.get("Lg", "NBA"), Pos=old.get("Pos", pos))
+            career_player = next((parent for parent in page.parents if parent.name == "Stats_and_Awards"), None)
+            player_label = contract_player_link(page, career_player.parent, p) if career_player else name
+            values.update(Player=player_label, Age=old.get("Age", str(age)), Lg=old.get("Lg", "NBA"), Pos=old.get("Pos", pos))
             # The club/rights cell is an existing dated label, never a new roster decision.
             values["Club / rights"] = old["Club / rights"]
             for key in ("FG%", "3P%", "2P%", "eFG%", "FT%", "TS% (est.)"):

@@ -6,7 +6,7 @@ Opening checkpoint: June 26, 2003, Miami's No. 5 draft pick with unsigned draft 
 
 ## Open the career
 
-**Detailed career desk:** [Open live screens](https://stone-basketball-career-production.up.railway.app/career) · [Detailed career record](career/Dwyane_Wade/Milestones/README.md) · [Shooting and Awards](https://stone-basketball-career-production.up.railway.app/cards).
+**Detailed career desk:** [Open live screens](https://stone-basketball-career-production.up.railway.app/career) · [Detailed career record](career/Dwyane_Wade/Milestones/README.md) · [Shooting, Contract and Awards](https://stone-basketball-career-production.up.railway.app/cards) · [Every player's contract](https://stone-basketball-career-production.up.railway.app/contracts).
 
 These screens read this branch's actual career state. Full detail is the default: dated status, complete evidence tables, contract terms, player responses, source records and the next checkpoint. They regenerate with the ordinary career-report and event-update commands. Opening a screen does not advance the career clock or make a player decision.
 
@@ -14,6 +14,7 @@ These screens read this branch's actual career state. Full detail is the default
 | --- | --- |
 | [Active milestone screens](career/Dwyane_Wade/Milestones/README.md) | Calendar, contract checkpoint, negotiation, free agency, training, trade, exit meeting, camp and statistics, populated from current records |
 | [Current Shooting card](career/Dwyane_Wade/Stats_and_Awards/Shooting.md) · [Yearly Awards](career/Dwyane_Wade/Stats_and_Awards/Awards.md) | Actual closed results and earned awards; location coverage is stated explicitly |
+| [Current Contract and Contract History](career/Dwyane_Wade/Stats_and_Awards/Contract.md) · [Player contract directory](career/Dwyane_Wade/Contracts/README.md) | Dated agreements, complete available salary schedules, guarantees, options, clauses and source records for every tracked player |
 | [Current checkpoint](career/Dwyane_Wade/2003-04/current_state.json) | Career date, phase and pending player decisions |
 | [Wade's profile](career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md) | Established alternate-history background and abilities |
 | [Professional identity](career/Dwyane_Wade/Professional_Identity.md) | Player identity and professional status at the report date |
@@ -37,6 +38,8 @@ The [2003 source library](library/2003/league/README.md) holds league evidence s
 The stats hub follows the existing season, month and week folders. Historical rating inputs do not count as current-season results. The cap sheet rolls forward existing obligations; its separate historical cap archive cannot guide decisions before the relevant publication date.
 
 Player reports and active screens default to full detail. Tables cover raw totals, per-game and per-36 production, shooting, estimated efficiency, splits, highs and source games. [Definitions and source requirements](docs/player_statistics.md) explain missing data. NBA Cup is gated to 2023-24 onward, with its championship counted separately.
+
+Contract appears between Shooting and Awards. Current Contract and Contract History read the owning agreement and transaction records, with direct evidence links. The [contract source and update guide](docs/player_contract_pages.md) explains recorded terms, partial historical schedules and how the normal report rebuild refreshes every player's page. The website never turns a hold, offer or inferred salary into an executed agreement.
 
 ## Running and maintaining the simulation
 

@@ -94,7 +94,7 @@ def source_page(text, title, *, is_json=False):
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} | Career record</title>
 <style>:root{{color-scheme:dark}}*{{box-sizing:border-box}}body{{margin:0;background:#0c0d11;color:#ececf0;font:15px/1.65 system-ui,sans-serif}}main{{max-width:1280px;margin:auto;padding:28px 24px 70px;overflow-wrap:anywhere}}nav{{display:flex;gap:20px;flex-wrap:wrap;border-bottom:1px solid #443039;padding-bottom:18px;margin-bottom:26px}}a{{color:#ec9aac}}h1{{font-size:32px}}h2{{margin-top:35px;border-bottom:1px solid #32262b;padding-bottom:9px}}h3{{margin-top:27px}}img{{max-width:100%;height:auto}}pre{{overflow:auto;white-space:pre-wrap;background:#151820;border:1px solid #30333d;padding:22px;border-radius:8px}}code{{color:#edc591}}.table-scroll{{overflow:auto;margin:18px 0}}table{{border-collapse:collapse;min-width:100%;font-size:13px}}td{{border:1px solid #353139;padding:11px;white-space:nowrap}}tr:first-child{{background:#501d2c;font-weight:700}}a:focus-visible{{outline:3px solid #f2c56a;outline-offset:4px}}</style></head>
-<body><main><nav><a href="/career">Career desk</a><a href="/cards">Shooting and Awards</a><a href="/games">Engine results</a></nav>{body}</main></body></html>'''
+<body><main><nav><a href="/career">Career desk</a><a href="/cards">Shooting, Contract and Awards</a><a href="/contracts">Player contracts</a><a href="/games">Engine results</a></nav>{body}</main></body></html>'''
 
 
 class CareerSite:
@@ -123,6 +123,7 @@ class CareerSite:
         base = "/" + self.player.relative_to(self.root).as_posix()
         self.home = base + "/Milestones/index.html"
         self.cards = base + "/Stats_and_Awards/player_cards.html"
+        self.contracts = base + "/Contracts/index.html"
         if self.home not in self.pages or self.cards not in self.pages:
             raise ValueError("live milestone and player card screens were not generated")
         states = [json.loads(p.read_text()) for p in self.player.glob("*/current_state.json")]
@@ -130,6 +131,7 @@ class CareerSite:
         self.status = {"screen_version": 1, "mode": "canonical", "detail": "full", "revision": revision,
                        "as_of": current["current_date"], "season": current["season"],
                        "milestones": self.home, "player_cards": self.cards,
+                       "contracts": self.contracts,
                        "generated_pages": len(self.pages)}
 
     def resource(self, request_path):
@@ -153,11 +155,11 @@ class CareerSite:
             path += "/README.md" if not path.endswith("/") else "README.md"
             target /= "README.md"
         suffix = target.suffix.lower()
-        if suffix not in {".html", ".md", ".json", ".svg", ".png", ".jpg", ".jpeg", ".webp"}:
+        if suffix not in {".html", ".md", ".json", ".svg", ".png", ".jpg", ".jpeg", ".webp", ".js", ".css"}:
             return None
         # Only generated canonical HTML runs as an app. Documentation examples
         # remain files in the repo, never an accidental production player view.
-        if suffix == ".html" and path not in self.pages:
+        if suffix in {".html", ".js", ".css"} and path not in self.pages:
             return None
         content = self.pages.get(path)
         if content is None:
@@ -168,4 +170,5 @@ class CareerSite:
             content = target.read_text(encoding="utf-8")
         if suffix == ".md":
             return source_page(content, target.stem), "text/html"
-        return content, {".html": "text/html", ".json": "application/json", ".svg": "image/svg+xml"}[suffix]
+        return content, {".html": "text/html", ".json": "application/json", ".svg": "image/svg+xml",
+                         ".js": "text/javascript", ".css": "text/css"}[suffix]

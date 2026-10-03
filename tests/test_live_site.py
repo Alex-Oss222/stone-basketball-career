@@ -70,6 +70,14 @@ class LiveCareerSiteTests(unittest.TestCase):
                     self.assertEqual(response.headers["X-Content-Type-Options"], "nosniff")
                 with urlopen(base + "/cards") as response:
                     self.assertTrue(response.url.endswith(self.site.cards))
+                with urlopen(base + "/contracts") as response:
+                    self.assertTrue(response.url.endswith(self.site.contracts))
+                    self.assertIn("Player contracts", response.read().decode())
+                with urlopen(base + "/career/Dwyane_Wade/Contracts/assets/player_cards.js") as response:
+                    self.assertIn("text/javascript", response.headers["Content-Type"])
+                    self.assertIn("JSON.parse", response.read().decode())
+                with urlopen(base + "/career/Dwyane_Wade/Contracts/assets/player_cards.css") as response:
+                    self.assertIn("text/css", response.headers["Content-Type"])
                 with urlopen(base + "/career/status") as response:
                     self.assertEqual(json.load(response)["revision"], "test-revision")
                 with urlopen(base + "/games") as response:
