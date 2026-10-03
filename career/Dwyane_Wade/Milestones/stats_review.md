@@ -6,7 +6,7 @@ Career date: 2003-10-28 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-7 closed game records in 2003-04 through 2003-10-28. Competitions remain separate.
+8 closed game records in 2003-04 through 2003-10-28. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
-| regular | 0 | N/A | N/A | N/A | N/A | N/A | Complete |
+| regular | 1 | 18.4 | 4.0 | 5.0 | 1.0 | 0.0 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A |
-| regular | 0 | 0 | N/A | 0 | 0 | N/A |
+| regular | 1 | 4 | 0.250 | 0 | 0 | N/A |
 
 ## Closed source games
 
@@ -37,6 +37,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2003-10-16 | preseason | Atlanta Hawks | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_5.md) |
 | 2003-10-17 | preseason | Detroit Pistons | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_6.md) |
 | 2003-10-21 | preseason | Memphis Grizzlies | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_7.md) |
+| 2003-10-28 | regular | Philadelphia 76ers | Played | [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
 
 ## Evidence available for decisions
 
@@ -89,4 +90,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/05_Preseason/Game_5.md)
 - [Closed game](../2003-04/05_Preseason/Game_6.md)
 - [Closed game](../2003-04/05_Preseason/Game_7.md)
+- [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

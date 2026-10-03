@@ -49,6 +49,21 @@ def pin(root):
         for path in (root / SEASON).glob(pattern):
             if path.is_file():
                 path.unlink()
+    # Reset the initial game-log scaffolds too: deleting a result must not leave
+    # its event ID in a copied phase/week note, where idempotent write-back would
+    # mistake a newly simulated fixture game for the live career's earlier game.
+    preseason = root / SEASON / "05_Preseason/note.md"
+    if preseason.exists():
+        preseason.write_text("---\ntype: phase\nstatus: not_started\n---\n\n# Preseason\n\n"
+                             "## Player decisions\n\n## Events\n\n## Consequences\n", encoding="utf-8")
+    day_ranges = {1: "1-7", 2: "8-14", 3: "15-21", 4: "22-end"}
+    for note in (root / SEASON / "06_Regular_Season").glob("*/Week_*/note.md"):
+        month = note.parent.parent.name.split("_", 1)[1]
+        week = int(note.parent.name.split("_", 1)[1])
+        note.write_text(f"---\ntype: regular_season_week\nstatus: not_started\nmonth: {month}\n"
+                        f"week: {week}\ndays: {day_ranges[week]}\n---\n\n# {month} Week {week}\n\n"
+                        "## Schedule\n\n## Player decisions\n\n## Games and events\n\n## Consequences\n",
+                        encoding="utf-8")
     register = json.loads((root / SEASON / "00_Team/Team/Roster/roster.json").read_text(encoding="utf-8"))
     ids = {p["id"] for p in register["players"]}
     for card in (root / SEASON / "00_Team/Team/Player_Cards").glob("*.md"):
