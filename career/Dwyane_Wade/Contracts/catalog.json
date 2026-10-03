@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2003-06-30",
+  "as_of": "2003-07-01",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -25,7 +25,7 @@
       "name": "Adam Harrington",
       "team": "Denver Nuggets",
       "status": "free agent expiring",
-      "current_contract_id": "harriad01-existing-0c692a1d7fd7",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/harriad01.html#contract"
     },
@@ -43,7 +43,7 @@
       "name": "Adrian Griffin",
       "team": "Dallas Mavericks",
       "status": "free agent expiring",
-      "current_contract_id": "griffad01-existing-f0c12ee39ac1",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/griffad01.html#contract"
     },
@@ -88,7 +88,7 @@
       "name": "Alonzo Mourning",
       "team": "Miami Heat",
       "status": "free agent expiring",
-      "current_contract_id": "alonzo_mourning-existing-c85a644e8821",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/alonzo_mourning.html#contract"
     },
@@ -115,7 +115,7 @@
       "name": "Andre Miller",
       "team": "Los Angeles Clippers",
       "status": "free agent expiring",
-      "current_contract_id": "millean02-existing-44227597c571",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/millean02.html#contract"
     },
@@ -168,7 +168,7 @@
       "player_id": "cartean01",
       "name": "Anthony Carter",
       "team": "Miami Heat",
-      "status": "player option pending",
+      "status": "player option exercised",
       "current_contract_id": "cartean01-existing-a6261cf04017",
       "recorded_agreements": 1,
       "href": "players/cartean01.html#contract"
@@ -178,7 +178,7 @@
       "name": "Anthony Johnson",
       "team": "New Jersey Nets",
       "status": "free agent expiring",
-      "current_contract_id": "johnsan02-existing-0af1d8752257",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/johnsan02.html#contract"
     },
@@ -214,7 +214,7 @@
       "name": "Antonio Daniels",
       "team": "Portland Trail Blazers",
       "status": "free agent expiring",
-      "current_contract_id": "daniean01-existing-cdba12b35c5b",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/daniean01.html#contract"
     },
@@ -268,7 +268,7 @@
       "name": "Bimbo Coles",
       "team": "Boston Celtics",
       "status": "free agent expiring",
-      "current_contract_id": "colesbi01-existing-bad5d80f58b0",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/colesbi01.html#contract"
     },
@@ -304,7 +304,7 @@
       "name": "Bobby Simmons",
       "team": "Washington Wizards",
       "status": "free agent expiring",
-      "current_contract_id": "simmobo01-existing-b36c4428486c",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/simmobo01.html#contract"
     },
@@ -340,7 +340,7 @@
       "name": "Brad Miller",
       "team": "Indiana Pacers",
       "status": "free agent expiring",
-      "current_contract_id": "millebr01-existing-143484da6d94",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/millebr01.html#contract"
     },
@@ -403,7 +403,7 @@
       "name": "Brian Scalabrine",
       "team": "New Jersey Nets",
       "status": "free agent expiring",
-      "current_contract_id": "scalabr01-existing-ef5488bab1ee",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/scalabr01.html#contract"
     },
@@ -412,7 +412,7 @@
       "name": "Brian Shaw",
       "team": "Los Angeles Lakers",
       "status": "free agent expiring",
-      "current_contract_id": "shawbr01-existing-54755c4cf0c8",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/shawbr01.html#contract"
     },
@@ -421,7 +421,7 @@
       "name": "Brian Skinner",
       "team": "Philadelphia 76ers",
       "status": "free agent expiring",
-      "current_contract_id": "skinnbr01-existing-f0c12ee39ac1",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/skinnbr01.html#contract"
     },
@@ -439,7 +439,7 @@
       "name": "Bryon Russell",
       "team": "Washington Wizards",
       "status": "free agent expiring",
-      "current_contract_id": "russebr01-existing-ed9d692d8e6c",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/russebr01.html#contract"
     },
@@ -448,7 +448,7 @@
       "name": "Calbert Cheaney",
       "team": "Utah Jazz",
       "status": "free agent expiring",
-      "current_contract_id": "cheanca01-existing-f51cc2cc3a75",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/cheanca01.html#contract"
     },
@@ -466,7 +466,7 @@
       "name": "Carlos Arroyo",
       "team": "Utah Jazz",
       "status": "free agent expiring",
-      "current_contract_id": "arroyca01-existing-0a1f3fbbc1a4",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/arroyca01.html#contract"
     },
@@ -529,7 +529,7 @@
       "name": "Charles Oakley",
       "team": "Washington Wizards",
       "status": "free agent expiring",
-      "current_contract_id": "oaklech01-existing-54755c4cf0c8",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/oaklech01.html#contract"
     },
@@ -556,7 +556,7 @@
       "name": "Chris Andersen",
       "team": "Denver Nuggets",
       "status": "free agent expiring",
-      "current_contract_id": "anderch01-existing-ef5488bab1ee",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/anderch01.html#contract"
     },
@@ -628,7 +628,7 @@
       "name": "Chris Whitney",
       "team": "Orlando Magic",
       "status": "free agent expiring",
-      "current_contract_id": "whitnch01-existing-e5a88dec1c61",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/whitnch01.html#contract"
     },
@@ -682,7 +682,7 @@
       "name": "Corey Maggette",
       "team": "Los Angeles Clippers",
       "status": "free agent expiring",
-      "current_contract_id": "maggeco01-existing-92b23e7825bd",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/maggeco01.html#contract"
     },
@@ -691,7 +691,7 @@
       "name": "Corie Blount",
       "team": "Chicago Bulls",
       "status": "free agent expiring",
-      "current_contract_id": "blounco01-existing-ed9d692d8e6c",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/blounco01.html#contract"
     },
@@ -808,7 +808,7 @@
       "name": "Danny Manning",
       "team": "Detroit Pistons",
       "status": "free agent expiring",
-      "current_contract_id": "mannida01-existing-c665d456ec27",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/mannida01.html#contract"
     },
@@ -835,7 +835,7 @@
       "name": "Darrell Armstrong",
       "team": "Orlando Magic",
       "status": "free agent expiring",
-      "current_contract_id": "armstda01-existing-322f3c509b26",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/armstda01.html#contract"
     },
@@ -844,7 +844,7 @@
       "name": "Darvin Ham",
       "team": "Atlanta Hawks",
       "status": "free agent expiring",
-      "current_contract_id": "hamda01-existing-0af1d8752257",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/hamda01.html#contract"
     },
@@ -916,7 +916,7 @@
       "name": "Derrick Coleman",
       "team": "Philadelphia 76ers",
       "status": "free agent expiring",
-      "current_contract_id": "colemde01-existing-d6a2c149ca0a",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/colemde01.html#contract"
     },
@@ -961,7 +961,7 @@
       "name": "Dion Glover",
       "team": "Atlanta Hawks",
       "status": "free agent expiring",
-      "current_contract_id": "glovedi01-existing-ed0c91c64001",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/glovedi01.html#contract"
     },
@@ -979,7 +979,7 @@
       "name": "Donnell Harvey",
       "team": "Denver Nuggets",
       "status": "free agent expiring",
-      "current_contract_id": "harvedo01-existing-166e3605d5cb",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/harvedo01.html#contract"
     },
@@ -1015,7 +1015,7 @@
       "name": "Earl Boykins",
       "team": "Golden State Warriors",
       "status": "free agent expiring",
-      "current_contract_id": "boykiea01-existing-409fbf50fa6a",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/boykiea01.html#contract"
     },
@@ -1042,7 +1042,7 @@
       "name": "Eddie House",
       "team": "Miami Heat",
       "status": "free agent expiring",
-      "current_contract_id": "houseed01-existing-f0c12ee39ac1",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/houseed01.html#contract"
     },
@@ -1096,7 +1096,7 @@
       "name": "Elton Brand",
       "team": "Los Angeles Clippers",
       "status": "free agent expiring",
-      "current_contract_id": "brandel01-existing-fd7bb8bcbbbb",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/brandel01.html#contract"
     },
@@ -1105,7 +1105,7 @@
       "name": "Eric Piatkowski",
       "team": "Los Angeles Clippers",
       "status": "free agent expiring",
-      "current_contract_id": "piatker01-existing-e5a88dec1c61",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/piatker01.html#contract"
     },
@@ -1141,7 +1141,7 @@
       "name": "Erick Strickland",
       "team": "Indiana Pacers",
       "status": "free agent expiring",
-      "current_contract_id": "stricer01-existing-c54f4c71ecad",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/stricer01.html#contract"
     },
@@ -1177,7 +1177,7 @@
       "name": "Fred Hoiberg",
       "team": "Chicago Bulls",
       "status": "free agent expiring",
-      "current_contract_id": "hoibefr01-existing-ed9d692d8e6c",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/hoibefr01.html#contract"
     },
@@ -1186,7 +1186,7 @@
       "name": "Gary Payton",
       "team": "Milwaukee Bucks",
       "status": "free agent expiring",
-      "current_contract_id": "paytoga01-existing-4d222245364f",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/paytoga01.html#contract"
     },
@@ -1195,7 +1195,7 @@
       "name": "Gary Trent",
       "team": "Minnesota Timberwolves",
       "status": "free agent expiring",
-      "current_contract_id": "trentga01-existing-fb5004195cfc",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/trentga01.html#contract"
     },
@@ -1222,7 +1222,7 @@
       "name": "Gilbert Arenas",
       "team": "Golden State Warriors",
       "status": "free agent expiring",
-      "current_contract_id": "arenagi01-existing-ef5488bab1ee",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/arenagi01.html#contract"
     },
@@ -1258,7 +1258,7 @@
       "name": "Grant Long",
       "team": "Boston Celtics",
       "status": "free agent expiring",
-      "current_contract_id": "longgr01-existing-864c91a5245f",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/longgr01.html#contract"
     },
@@ -1303,7 +1303,7 @@
       "name": "Ira Newble",
       "team": "Atlanta Hawks",
       "status": "free agent expiring",
-      "current_contract_id": "newblir01-existing-99e00a08055e",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/newblir01.html#contract"
     },
@@ -1321,7 +1321,7 @@
       "name": "Jacque Vaughn",
       "team": "Orlando Magic",
       "status": "free agent expiring",
-      "current_contract_id": "vaughja01-existing-0af1d8752257",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/vaughja01.html#contract"
     },
@@ -1348,7 +1348,7 @@
       "name": "Jake Voskuhl",
       "team": "Phoenix Suns",
       "status": "free agent expiring",
-      "current_contract_id": "voskuja01-existing-99e00a08055e",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/voskuja01.html#contract"
     },
@@ -1420,7 +1420,7 @@
       "name": "James Posey",
       "team": "Houston Rockets",
       "status": "free agent expiring",
-      "current_contract_id": "poseyja01-existing-ab2fa937c087",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/poseyja01.html#contract"
     },
@@ -1474,7 +1474,7 @@
       "name": "Jason Kidd",
       "team": "New Jersey Nets",
       "status": "free agent expiring",
-      "current_contract_id": "kiddja01-existing-557cfaa7bd12",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/kiddja01.html#contract"
     },
@@ -1492,7 +1492,7 @@
       "name": "Jason Terry",
       "team": "Atlanta Hawks",
       "status": "free agent expiring",
-      "current_contract_id": "terryja01-existing-a3152a72f60e",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/terryja01.html#contract"
     },
@@ -1555,7 +1555,7 @@
       "name": "Jermaine Jackson",
       "team": "Atlanta Hawks",
       "status": "free agent expiring",
-      "current_contract_id": "jacksje01-existing-0fe07c3c6f1b",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/jacksje01.html#contract"
     },
@@ -1564,7 +1564,7 @@
       "name": "Jermaine O'Neal",
       "team": "Indiana Pacers",
       "status": "free agent expiring",
-      "current_contract_id": "onealje01-existing-f3039e59ea41",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/onealje01.html#contract"
     },
@@ -1591,7 +1591,7 @@
       "name": "Jerome Moiso",
       "team": "New Orleans Hornets",
       "status": "free agent expiring",
-      "current_contract_id": "moisoje01-existing-605a632bd79c",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/moisoje01.html#contract"
     },
@@ -1627,7 +1627,7 @@
       "name": "Jim Jackson",
       "team": "Sacramento Kings",
       "status": "free agent expiring",
-      "current_contract_id": "jacksji01-existing-ca240667745f",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/jacksji01.html#contract"
     },
@@ -1699,7 +1699,7 @@
       "name": "Jon Barry",
       "team": "Detroit Pistons",
       "status": "free agent expiring",
-      "current_contract_id": "barryjo01-existing-240df857ccc0",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/barryjo01.html#contract"
     },
@@ -1744,7 +1744,7 @@
       "name": "Juaquin Hawkins",
       "team": "Houston Rockets",
       "status": "free agent expiring",
-      "current_contract_id": "hawkiju01-existing-99e00a08055e",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/hawkiju01.html#contract"
     },
@@ -1753,7 +1753,7 @@
       "name": "Jumaine Jones",
       "team": "Cleveland Cavaliers",
       "status": "free agent expiring",
-      "current_contract_id": "jonesju01-existing-bc422fc1f819",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/jonesju01.html#contract"
     },
@@ -1771,7 +1771,7 @@
       "name": "Juwan Howard",
       "team": "Denver Nuggets",
       "status": "free agent expiring",
-      "current_contract_id": "howarju01-existing-ebc4f1652fb1",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/howarju01.html#contract"
     },
@@ -1789,7 +1789,7 @@
       "name": "Karl Malone",
       "team": "Utah Jazz",
       "status": "free agent expiring",
-      "current_contract_id": "malonka01-existing-def43b14e73a",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/malonka01.html#contract"
     },
@@ -1833,8 +1833,8 @@
       "player_id": "johnske03",
       "name": "Ken Johnson",
       "team": "Miami Heat",
-      "status": "team option pending",
-      "current_contract_id": "johnske03-2002-09-25",
+      "status": "team option declined",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/johnske03.html#contract"
     },
@@ -1843,7 +1843,7 @@
       "name": "Kendall Gill",
       "team": "Minnesota Timberwolves",
       "status": "free agent expiring",
-      "current_contract_id": "gillke01-existing-54755c4cf0c8",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/gillke01.html#contract"
     },
@@ -1861,7 +1861,7 @@
       "name": "Kenny Anderson",
       "team": "New Orleans Hornets",
       "status": "free agent expiring",
-      "current_contract_id": "anderke01-existing-705978ce1d0f",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/anderke01.html#contract"
     },
@@ -1870,7 +1870,7 @@
       "name": "Kenny Thomas",
       "team": "Philadelphia 76ers",
       "status": "free agent expiring",
-      "current_contract_id": "thomake01-existing-6e0f280277bc",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/thomake01.html#contract"
     },
@@ -1888,7 +1888,7 @@
       "name": "Keon Clark",
       "team": "Sacramento Kings",
       "status": "free agent expiring",
-      "current_contract_id": "clarkke01-existing-18808181ab1a",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/clarkke01.html#contract"
     },
@@ -1915,7 +1915,7 @@
       "name": "Kevin Ollie",
       "team": "Seattle SuperSonics",
       "status": "free agent expiring",
-      "current_contract_id": "ollieke01-existing-f51cc2cc3a75",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/ollieke01.html#contract"
     },
@@ -1924,7 +1924,7 @@
       "name": "Kevin Willis",
       "team": "San Antonio Spurs",
       "status": "free agent expiring",
-      "current_contract_id": "willike02-existing-54755c4cf0c8",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/willike02.html#contract"
     },
@@ -1996,7 +1996,7 @@
       "name": "Lamar Odom",
       "team": "Los Angeles Clippers",
       "status": "free agent expiring",
-      "current_contract_id": "odomla01-existing-6b7f0a39d36c",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/odomla01.html#contract"
     },
@@ -2023,7 +2023,7 @@
       "name": "Lavor Postell",
       "team": "New York Knicks",
       "status": "free agent expiring",
-      "current_contract_id": "postela01-existing-99e00a08055e",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/postela01.html#contract"
     },
@@ -2059,7 +2059,7 @@
       "name": "Lee Nailon",
       "team": "New York Knicks",
       "status": "free agent expiring",
-      "current_contract_id": "nailole01-existing-99e00a08055e",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/nailole01.html#contract"
     },
@@ -2086,7 +2086,7 @@
       "name": "Loren Woods",
       "team": "Minnesota Timberwolves",
       "status": "free agent expiring",
-      "current_contract_id": "woodslo01-existing-5cb9287ea564",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/woodslo01.html#contract"
     },
@@ -2095,7 +2095,7 @@
       "name": "Lucious Harris",
       "team": "New Jersey Nets",
       "status": "free agent expiring",
-      "current_contract_id": "harrilu01-existing-4510d49c21d0",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/harrilu01.html#contract"
     },
@@ -2149,7 +2149,7 @@
       "name": "Malik Allen",
       "team": "Miami Heat",
       "status": "free agent expiring",
-      "current_contract_id": "allenma01-existing-ef5488bab1ee",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/allenma01.html#contract"
     },
@@ -2167,7 +2167,7 @@
       "name": "Mamadou N'diaye",
       "team": "Toronto Raptors",
       "status": "free agent expiring",
-      "current_contract_id": "ndiayma02-existing-e4801aa31c08",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/ndiayma02.html#contract"
     },
@@ -2230,7 +2230,7 @@
       "name": "Mark Blount",
       "team": "Boston Celtics",
       "status": "free agent expiring",
-      "current_contract_id": "blounma01-existing-c54f4c71ecad",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/blounma01.html#contract"
     },
@@ -2239,7 +2239,7 @@
       "name": "Mark Bryant",
       "team": "Boston Celtics",
       "status": "free agent expiring",
-      "current_contract_id": "bryanma01-existing-54755c4cf0c8",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/bryanma01.html#contract"
     },
@@ -2248,7 +2248,7 @@
       "name": "Mark Jackson",
       "team": "Utah Jazz",
       "status": "free agent expiring",
-      "current_contract_id": "jacksma01-existing-54755c4cf0c8",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/jacksma01.html#contract"
     },
@@ -2257,7 +2257,7 @@
       "name": "Mark Madsen",
       "team": "Los Angeles Lakers",
       "status": "free agent expiring",
-      "current_contract_id": "madsema01-existing-392bc9aa575b",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/madsema01.html#contract"
     },
@@ -2392,7 +2392,7 @@
       "name": "Mike Batiste",
       "team": "Memphis Grizzlies",
       "status": "free agent expiring",
-      "current_contract_id": "batismi01-existing-1f0c23df98ea",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/batismi01.html#contract"
     },
@@ -2419,7 +2419,7 @@
       "name": "Mike James",
       "team": "Miami Heat",
       "status": "free agent expiring",
-      "current_contract_id": "jamesmi01-existing-ef5488bab1ee",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/jamesmi01.html#contract"
     },
@@ -2428,7 +2428,7 @@
       "name": "Mike Wilks",
       "team": "Minnesota Timberwolves",
       "status": "free agent expiring",
-      "current_contract_id": "wilksmi01-existing-96667aeb9cb6",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/wilksmi01.html#contract"
     },
@@ -2437,7 +2437,7 @@
       "name": "Mikki Moore",
       "team": "Atlanta Hawks",
       "status": "free agent expiring",
-      "current_contract_id": "mooremi01-existing-d525b83ec97b",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/mooremi01.html#contract"
     },
@@ -2446,7 +2446,7 @@
       "name": "Milt Palacio",
       "team": "Cleveland Cavaliers",
       "status": "free agent expiring",
-      "current_contract_id": "palacmi01-existing-fcf72d0727aa",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/palacmi01.html#contract"
     },
@@ -2554,7 +2554,7 @@
       "name": "P.J. Brown",
       "team": "New Orleans Hornets",
       "status": "free agent expiring",
-      "current_contract_id": "brownpj01-existing-864c91a5245f",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/brownpj01.html#contract"
     },
@@ -2572,7 +2572,7 @@
       "name": "Pat Burke",
       "team": "Orlando Magic",
       "status": "free agent expiring",
-      "current_contract_id": "burkepa01-existing-1f0c23df98ea",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/burkepa01.html#contract"
     },
@@ -2644,7 +2644,7 @@
       "name": "Rafer Alston",
       "team": "Milwaukee Bucks",
       "status": "free agent expiring",
-      "current_contract_id": "alstora01-existing-975b166781f3",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/alstora01.html#contract"
     },
@@ -2653,7 +2653,7 @@
       "name": "Raja Bell",
       "team": "Dallas Mavericks",
       "status": "free agent expiring",
-      "current_contract_id": "bellra01-existing-3a1c516ea322",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/bellra01.html#contract"
     },
@@ -2662,7 +2662,7 @@
       "name": "Randy Brown",
       "team": "Phoenix Suns",
       "status": "free agent expiring",
-      "current_contract_id": "brownra02-existing-58655fa4889a",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/brownra02.html#contract"
     },
@@ -2689,7 +2689,7 @@
       "name": "Rasho Nesterovic",
       "team": "Minnesota Timberwolves",
       "status": "free agent expiring",
-      "current_contract_id": "nestera01-existing-0217e6bfaa23",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/nestera01.html#contract"
     },
@@ -2697,7 +2697,7 @@
       "player_id": "butlera01",
       "name": "Rasual Butler",
       "team": "Miami Heat",
-      "status": "team option pending",
+      "status": "team option exercised",
       "current_contract_id": "butlera01-2002-08-15",
       "recorded_agreements": 1,
       "href": "players/butlera01.html#contract"
@@ -2725,7 +2725,7 @@
       "name": "Reggie Evans",
       "team": "Seattle SuperSonics",
       "status": "free agent expiring",
-      "current_contract_id": "evansre01-existing-1f0c23df98ea",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/evansre01.html#contract"
     },
@@ -2734,7 +2734,7 @@
       "name": "Reggie Miller",
       "team": "Indiana Pacers",
       "status": "free agent expiring",
-      "current_contract_id": "millere01-existing-1243e246ad7f",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/millere01.html#contract"
     },
@@ -2752,7 +2752,7 @@
       "name": "Richard Hamilton",
       "team": "Detroit Pistons",
       "status": "free agent expiring",
-      "current_contract_id": "hamilri01-existing-26e3c05e8284",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/hamilri01.html#contract"
     },
@@ -2770,7 +2770,7 @@
       "name": "Rick Brunson",
       "team": "Chicago Bulls",
       "status": "free agent expiring",
-      "current_contract_id": "brunsri01-existing-0af1d8752257",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/brunsri01.html#contract"
     },
@@ -2824,7 +2824,7 @@
       "name": "Robert Pack",
       "team": "New Orleans Hornets",
       "status": "free agent expiring",
-      "current_contract_id": "packro01-existing-864c91a5245f",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/packro01.html#contract"
     },
@@ -2842,7 +2842,7 @@
       "name": "Rod Strickland",
       "team": "Minnesota Timberwolves",
       "status": "free agent expiring",
-      "current_contract_id": "stricro02-existing-54755c4cf0c8",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/stricro02.html#contract"
     },
@@ -2932,7 +2932,7 @@
       "name": "Samaki Walker",
       "team": "Los Angeles Lakers",
       "status": "free agent expiring",
-      "current_contract_id": "walkesa01-existing-e1ac8e9d38a3",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/walkesa01.html#contract"
     },
@@ -2968,7 +2968,7 @@
       "name": "Scott Padgett",
       "team": "Utah Jazz",
       "status": "free agent expiring",
-      "current_contract_id": "padgesc01-existing-3a1c516ea322",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/padgesc01.html#contract"
     },
@@ -2977,7 +2977,7 @@
       "name": "Scott Williams",
       "team": "Phoenix Suns",
       "status": "free agent expiring",
-      "current_contract_id": "willisc01-existing-54755c4cf0c8",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/willisc01.html#contract"
     },
@@ -2986,7 +2986,7 @@
       "name": "Scottie Pippen",
       "team": "Portland Trail Blazers",
       "status": "free agent expiring",
-      "current_contract_id": "pippesc01-existing-83f1c5a7e63a",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/pippesc01.html#contract"
     },
@@ -2994,7 +2994,7 @@
       "player_id": "lamplse01",
       "name": "Sean Lampley",
       "team": "Miami Heat",
-      "status": "team option pending",
+      "status": "team option exercised",
       "current_contract_id": "lamplse01-2002-09-29",
       "recorded_agreements": 1,
       "href": "players/lamplse01.html#contract"
@@ -3004,7 +3004,7 @@
       "name": "Sean Marks",
       "team": "Miami Heat",
       "status": "free agent expiring",
-      "current_contract_id": "marksse01-existing-3a1c516ea322",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/marksse01.html#contract"
     },
@@ -3013,7 +3013,7 @@
       "name": "Sean Rooks",
       "team": "Los Angeles Clippers",
       "status": "free agent expiring",
-      "current_contract_id": "rooksse01-existing-4510d49c21d0",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/rooksse01.html#contract"
     },
@@ -3022,7 +3022,7 @@
       "name": "Shammond Williams",
       "team": "Denver Nuggets",
       "status": "free agent expiring",
-      "current_contract_id": "willish01-existing-c9d34aa3c9f7",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/willish01.html#contract"
     },
@@ -3076,7 +3076,7 @@
       "name": "Shawn Kemp",
       "team": "Orlando Magic",
       "status": "free agent expiring",
-      "current_contract_id": "kempsh01-existing-54755c4cf0c8",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/kempsh01.html#contract"
     },
@@ -3112,7 +3112,7 @@
       "name": "Smush Parker",
       "team": "Cleveland Cavaliers",
       "status": "free agent expiring",
-      "current_contract_id": "parkesm01-existing-1f0c23df98ea",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/parkesm01.html#contract"
     },
@@ -3130,7 +3130,7 @@
       "name": "Speedy Claxton",
       "team": "San Antonio Spurs",
       "status": "free agent expiring",
-      "current_contract_id": "claxtsp01-existing-17921acff22f",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/claxtsp01.html#contract"
     },
@@ -3148,7 +3148,7 @@
       "name": "Stephen Jackson",
       "team": "San Antonio Spurs",
       "status": "free agent expiring",
-      "current_contract_id": "jacksst02-existing-0af1d8752257",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/jacksst02.html#contract"
     },
@@ -3184,7 +3184,7 @@
       "name": "Steve Kerr",
       "team": "San Antonio Spurs",
       "status": "free agent expiring",
-      "current_contract_id": "kerrst01-existing-883fca112038",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/kerrst01.html#contract"
     },
@@ -3202,7 +3202,7 @@
       "name": "Steve Smith",
       "team": "San Antonio Spurs",
       "status": "free agent expiring",
-      "current_contract_id": "smithst01-existing-e8204ee024b2",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/smithst01.html#contract"
     },
@@ -3292,7 +3292,7 @@
       "name": "Tierre Brown",
       "team": "Cleveland Cavaliers",
       "status": "free agent expiring",
-      "current_contract_id": "brownti01-existing-864c91a5245f",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/brownti01.html#contract"
     },
@@ -3310,7 +3310,7 @@
       "name": "Tim Hardaway",
       "team": "Indiana Pacers",
       "status": "free agent expiring",
-      "current_contract_id": "hardati01-existing-f51cc2cc3a75",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/hardati01.html#contract"
     },
@@ -3382,7 +3382,7 @@
       "name": "Tony Massenburg",
       "team": "Utah Jazz",
       "status": "free agent expiring",
-      "current_contract_id": "masseto01-existing-9ab8c35a8183",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/masseto01.html#contract"
     },
@@ -3409,7 +3409,7 @@
       "name": "Travis Best",
       "team": "Miami Heat",
       "status": "free agent expiring",
-      "current_contract_id": "besttr01-existing-ed9d692d8e6c",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/besttr01.html#contract"
     },
@@ -3490,7 +3490,7 @@
       "name": "Tyrone Hill",
       "team": "Philadelphia 76ers",
       "status": "free agent expiring",
-      "current_contract_id": "hillty01-existing-f61d7ffcb361",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/hillty01.html#contract"
     },
@@ -3553,7 +3553,7 @@
       "name": "Vladimir Stepania",
       "team": "Miami Heat",
       "status": "free agent expiring",
-      "current_contract_id": "stepavl01-existing-41302b9f62ac",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/stepavl01.html#contract"
     },
@@ -3562,7 +3562,7 @@
       "name": "Voshon Lenard",
       "team": "Toronto Raptors",
       "status": "free agent expiring",
-      "current_contract_id": "lenarvo01-existing-fb5004195cfc",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/lenarvo01.html#contract"
     },
@@ -3580,7 +3580,7 @@
       "name": "Walt Williams",
       "team": "Dallas Mavericks",
       "status": "free agent expiring",
-      "current_contract_id": "williwa02-existing-54755c4cf0c8",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/williwa02.html#contract"
     },
@@ -3589,7 +3589,7 @@
       "name": "Walter McCarty",
       "team": "Boston Celtics",
       "status": "free agent expiring",
-      "current_contract_id": "mccarwa01-existing-c54f4c71ecad",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/mccarwa01.html#contract"
     },

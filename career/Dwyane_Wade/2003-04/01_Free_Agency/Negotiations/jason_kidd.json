@@ -1,0 +1,57 @@
+{
+ "player": "Jason Kidd",
+ "bbr_id": "kiddja01",
+ "incumbent": "New Jersey Nets",
+ "restricted": false,
+ "opened": "2003-07-01",
+ "status": "open",
+ "plan": {
+  "bbr_id": "kiddja01",
+  "player": "Jason Kidd",
+  "club": "New Jersey Nets",
+  "position": "PG",
+  "age": 30,
+  "value": 19.4,
+  "valuation": 10418354,
+  "ask": 10626721,
+  "years_asked": 3,
+  "surplus": -0.02,
+  "fit": 0.857,
+  "score": 21.78,
+  "wade_request": false,
+  "rfa": false,
+  "bird_class": "bird",
+  "route": "sign_and_trade",
+  "sign_and_trade_feasible": true,
+  "binding_constraint": null
+ },
+ "priorities": null,
+ "rounds": [],
+ "agreement": null,
+ "sheet": null,
+ "signing": null,
+ "ended": null,
+ "trade": null,
+ "state": {
+  "player": "Jason Kidd",
+  "incumbent": "New Jersey Nets",
+  "trusted_issuers": [
+   "miami_cap_adapter"
+  ],
+  "last_at": "2003-07-01T12:00:00-04:00",
+  "cba": "1999",
+  "phase": "incumbent_negotiation",
+  "market": null,
+  "offers": [],
+  "slots": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "requests": [],
+  "sheet": null,
+  "resolution": null,
+  "events": []
+ }
+}

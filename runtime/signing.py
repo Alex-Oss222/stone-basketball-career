@@ -37,7 +37,15 @@ def long_date(day):
 
 
 def dump(path, data):
-    path.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    """Write JSON, keeping the file's existing indentation so records diff by content only."""
+    indent = 1
+    if path.is_file():
+        for line in path.read_text(encoding="utf-8").splitlines()[1:3]:
+            lead = len(line) - len(line.lstrip(" "))
+            if lead:
+                indent = lead
+                break
+    path.write_text(json.dumps(data, indent=indent, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 class Writer:
@@ -68,7 +76,7 @@ class Writer:
 
 
 # -- building blocks -------------------------------------------------------------------------------
-def note_event(writer, rel, day, text, status="in_progress"):
+def note_event(writer, rel, day, text, status="active"):
     """Append a dated line under '## Events' of a phase note and move its status."""
     path = writer.root / rel
     content = writer.texts.get(Path(rel)) or path.read_text(encoding="utf-8")
@@ -409,6 +417,13 @@ def refresh_finance(writer, front_office, day):
                    cap_room_reason=[("Cap published July 15, 2003." if room["cap_known"] else "Cap not yet published; room is projected on the prior cap."),
                                     "Committed salary, unrenounced holds and the roster charge for empty spots are deducted (docs/front_office_design.md 5.1)."])
     sheet = writer.load(TEAM / "Finances/contract_schedules.json")
+    outcomes = {"player_option_exercised": "exercised", "player_option_declined": "declined",
+                "team_option_exercised": "exercised", "team_option_declined": "declined"}
+    status = {p["player"]: p["status"] for p in sheet["players"]}
+    for item in finance.get("pending_control_items", []):          # the draft-day option list follows the ledger's outcomes
+        outcome = outcomes.get(status.get(item["player"], ""))
+        if outcome and item.get("status") != outcome:
+            item.update(status=outcome, decided=item.get("deadline"))
     writer.text(TEAM / "Finances/cap_sheet.md", cap_sheet_text(sheet, writer.load(TEAM / "Finances/free_agent_rights.json"), room, day))
 
 

@@ -5,6 +5,8 @@ import json
 import shutil
 import tempfile
 import unittest
+
+from tests import checkpoint
 from pathlib import Path
 
 from runtime import front_office, gm, signing, standing
@@ -23,6 +25,7 @@ def copy_repo():
     root = Path(tmp.name)
     shutil.copytree(ROOT / "library", root / "library")
     shutil.copytree(ROOT / "career", root / "career")
+    checkpoint.pin(root)                      # tests simulate from the June 26 checkpoint, not the live clock
     return tmp, root
 
 

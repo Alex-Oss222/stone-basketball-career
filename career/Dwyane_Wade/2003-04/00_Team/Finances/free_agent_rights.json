@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2003-06-26",
+ "as_of": "2003-07-01",
  "team": "Miami Heat",
  "purpose": "Rights and cap holds for Miami's expiring contracts. Facts and rule computations only; no decision is recorded here.",
  "rules": "library/2003/league/nba_1999_cba_rules.json",
@@ -33,7 +33,9 @@
    "qualifying_offer_basis": "minimum salary plus $150,000",
    "notes": [
     "previous salary is minimum-level; a separate minimum-contract hold rule is unverified (rules file, unverified[0])"
-   ]
+   ],
+   "qualifying_offer_tendered": true,
+   "qualifying_offer_date": "2003-06-30"
   },
   {
    "player": "Malik Allen",
@@ -55,7 +57,9 @@
    "qualifying_offer_basis": "minimum salary plus $150,000",
    "notes": [
     "previous salary is minimum-level; a separate minimum-contract hold rule is unverified (rules file, unverified[0])"
-   ]
+   ],
+   "qualifying_offer_tendered": true,
+   "qualifying_offer_date": "2003-06-30"
   },
   {
    "player": "Mike James",
@@ -77,7 +81,9 @@
    "qualifying_offer_basis": "minimum salary plus $150,000",
    "notes": [
     "previous salary is minimum-level; a separate minimum-contract hold rule is unverified (rules file, unverified[0])"
-   ]
+   ],
+   "qualifying_offer_tendered": true,
+   "qualifying_offer_date": "2003-06-30"
   },
   {
    "player": "Alonzo Mourning",

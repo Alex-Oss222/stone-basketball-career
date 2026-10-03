@@ -4,6 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from tests import checkpoint
 from runtime import camp, signing
 from runtime.decisions import decision_errors
 from runtime.gm import FrontOffice
@@ -23,6 +24,7 @@ def copy_repo():
     root = Path(tmp.name)
     shutil.copytree(ROOT / "library", root / "library")
     shutil.copytree(ROOT / "career", root / "career")
+    checkpoint.pin(root)                      # tests simulate from the June 26 checkpoint, not the live clock
     return tmp, root
 
 

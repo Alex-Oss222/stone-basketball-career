@@ -100,6 +100,7 @@ class LiveMilestonesTests(unittest.TestCase):
         self.assertFalse(any("nba_2003_04_cap_rules.json" in href for href in hrefs))
 
     def test_future_rookie_offer_and_future_request_do_not_enter_current_view(self):
+        self.pin_checkpoint()
         entry = self.offer()
         entry["note"] = "FUTURE OFFER SECRET"
         self.rookie_log([entry])
@@ -145,6 +146,7 @@ class LiveMilestonesTests(unittest.TestCase):
                       section(payload, "contract_negotiation", "Registration check")["notice"])
 
     def test_future_effective_dates_cannot_activate_old_as_of_snapshot(self):
+        self.pin_checkpoint()
         self.write("03_Offseason/exit_meeting.json", {"as_of": "2003-06-26", "date": "2003-07-01", "goal": "FUTURE EXIT SECRET"})
         self.write("03_Offseason/training_plan.json", {"as_of": "2003-06-26", "date": "2003-07-01", "focus": "FUTURE TRAINING SECRET"})
         self.write("04_Training_Camp/camp_roster.json", {"as_of": "2003-06-26", "opened": "2003-09-30", "players": []})
@@ -224,6 +226,7 @@ class LiveMilestonesTests(unittest.TestCase):
         self.assertEqual(section(self.payload(), "calendar", "Franchise consultations")["rows"][0][3], "object")
 
     def test_dated_training_results_future_blocks_and_phase_bullets(self):
+        self.pin_checkpoint()
         self.write("03_Offseason/training_plan.json", {"as_of": "2003-06-26", "focus": "Recorded focus", "blocks": [
             {"date": "2003-06-26", "focus": "Recorded block", "result": "Observed result"},
             {"date": "2003-07-01", "focus": "FUTURE BLOCK SECRET"}]})

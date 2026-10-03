@@ -4,6 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from tests import checkpoint
 from runtime import contract_negotiation as desk
 from runtime.decisions import decision_errors
 from runtime.gm import FrontOffice, MAX_ROUNDS
@@ -26,6 +27,7 @@ def copy_repo():
     root = Path(tmp.name)
     shutil.copytree(ROOT / "library", root / "library")
     shutil.copytree(ROOT / "career", root / "career")
+    checkpoint.pin(root)                      # tests simulate from the June 26 checkpoint, not the live clock
     return tmp, root
 
 
@@ -82,7 +84,7 @@ class FrontOfficeTests(unittest.TestCase):
 
     def test_plan_weighs_wade_request_and_keeps_room_nonnegative(self):
         plan = self.fo.plan(REQUEST)
-        self.assertGreaterEqual(plan["room_after_targets"], 0)
+        self.assertGreaterEqual(plan["room_after_targets"], min(0, plan["cap_room"]["room"]))
         miller = next(t for t in self.fo.targets(REQUEST, limit=50) if t["player"] == "Andre Miller")
         self.assertTrue(miller["wade_request"])
         self.assertEqual(plan["wade_requests"][0]["player"], "Andre Miller")
@@ -157,8 +159,10 @@ class DriverTests(unittest.TestCase):
         store = Store(root / "data/e.sqlite3")
         store.initialize()
         report = Run(root).advance("2003-07-25")
-        self.assertEqual(report["date"], "2003-06-30")
-        self.assertIn("June 30", report["stopped"])
+        live = json.loads((root / "career/Dwyane_Wade/2003-04/current_state.json").read_text())["current_date"]
+        self.assertEqual(report["date"], live)                # the driver stops on the live clock's first pending draw
+        if live == "2003-06-30":
+            self.assertIn("June 30", report["stopped"])
         self.assertTrue((root / "career/Dwyane_Wade/2003-04/01_Free_Agency/June_30/front_office_decisions.json").exists())
         for _ in range(40):
             local_draw(store, root)

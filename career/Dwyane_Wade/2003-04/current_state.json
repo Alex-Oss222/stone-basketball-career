@@ -2,7 +2,7 @@
  "schema_version": 1,
  "initialized": true,
  "season": "2003-04",
- "current_date": "2003-06-30",
+ "current_date": "2003-07-01",
  "current_area": "01_Free_Agency",
  "current_note": "01_Free_Agency/note.md",
  "team": "Miami Heat",
@@ -15,6 +15,6 @@
  },
  "contract_status": "draft_rights_unsigned",
  "roster_status": "draft_rights",
- "last_closed_event": "2003-06-26-miami-selects-dwyane-wade-no-5",
+ "last_closed_event": "2003-06-30-miami-option-and-qualifying-offer-decisions",
  "pending_player_decisions": []
 }

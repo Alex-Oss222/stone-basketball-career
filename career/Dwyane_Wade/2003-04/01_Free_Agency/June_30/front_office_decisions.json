@@ -11,7 +11,8 @@
    "kind": "team_option",
    "salary": 563679,
    "wade_request": null,
-   "status": "final"
+   "status": "final",
+   "final": "exercise"
   },
   {
    "player": "Sean Lampley",
@@ -21,7 +22,8 @@
    "kind": "team_option",
    "salary": 563679,
    "wade_request": null,
-   "status": "final"
+   "status": "final",
+   "final": "exercise"
   },
   {
    "player": "Ken Johnson",
@@ -31,7 +33,8 @@
    "kind": "team_option",
    "salary": 563679,
    "wade_request": null,
-   "status": "final"
+   "status": "final",
+   "final": "decline"
   },
   {
    "player": "Eddie House",
@@ -41,7 +44,8 @@
    "reason": "1025 minutes in 2002-03, age 25: rule is 500+ minutes or age 24 or younger",
    "kind": "qualifying_offer",
    "wade_request": null,
-   "status": "final"
+   "status": "final",
+   "final": "tender"
   },
   {
    "player": "Malik Allen",
@@ -51,7 +55,8 @@
    "reason": "2318 minutes in 2002-03, age 25: rule is 500+ minutes or age 24 or younger",
    "kind": "qualifying_offer",
    "wade_request": null,
-   "status": "final"
+   "status": "final",
+   "final": "tender"
   },
   {
    "player": "Mike James",
@@ -61,7 +66,8 @@
    "reason": "1722 minutes in 2002-03, age 28: rule is 500+ minutes or age 24 or younger",
    "kind": "qualifying_offer",
    "wade_request": null,
-   "status": "final"
+   "status": "final",
+   "final": "tender"
   }
  ]
 }

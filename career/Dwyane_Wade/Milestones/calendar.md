@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2003-06-30 · Miami Heat · active
+Career date: 2003-07-01 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,18 +14,18 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2003-06-30 |
+| Career date | 2003-07-01 |
 | Team | Miami Heat |
 | Contract status | draft_rights_unsigned |
 | Roster status | draft_rights |
-| Last closed event | 2003-06-26-miami-selects-dwyane-wade-no-5 |
+| Last closed event | 2003-06-30-miami-option-and-qualifying-offer-decisions |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2003-06-30 | Current checkpoint | 2003-06-26-miami-selects-dwyane-wade-no-5 | Recorded | [Owning event](../2003-04/01_Free_Agency/note.md) |
+| 2003-07-01 | Current checkpoint | 2003-06-30-miami-option-and-qualifying-offer-decisions | Recorded | [Owning event](../2003-04/01_Free_Agency/note.md) |
 | 2003-06-30 | Option and qualifying-offer decisions | Owner depends on the actual contract | Scheduled gate; no outcome imported | [Workflow](../../../docs/front_office.md) |
 | 2003-07-01 | Free-agent negotiation window | Miami's roster work; Wade's own status follows his control record | Window does not create an offer | [Free-agency record](../2003-04/01_Free_Agency/note.md) |
 | Not yet recorded | Rookie-contract proposal | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
@@ -75,4 +75,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Workflow](../../../docs/front_office.md)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Dated milestone working records and player replies](../milestones.json)
