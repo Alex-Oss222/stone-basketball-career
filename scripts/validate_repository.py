@@ -326,6 +326,35 @@ def rights_errors(root):
     return errors
 
 
+def miami_roster_errors(root):
+    """Standing roster rules, checked on every validation run (docs/front_office.md):
+    after the cut every scheduled Miami game dresses only players Miami holds under a signed contract,
+    and the signed roster is at most fifteen."""
+    from runtime.camp import CUT_DAY_FALLBACK, ROSTER_MAX, playable
+    from runtime.game_requests import find_requests
+    errors = []
+    season = root / "career/Dwyane_Wade/2003-04"
+    state = json.loads((season / "current_state.json").read_text(encoding="utf-8"))
+    roster = json.loads((season / "00_Team/Team/Roster/roster.json").read_text(encoding="utf-8"))["players"]
+    status = {p["name"]: p.get("status") for p in roster}
+    signed = [n for n, st in status.items() if playable(st)]
+    camp = season / "04_Training_Camp/camp_roster.json"
+    cut_done = camp.is_file() and json.loads(camp.read_text(encoding="utf-8")).get("cut_done")
+    if (cut_done or state["current_date"] > CUT_DAY_FALLBACK) and len(signed) > ROSTER_MAX:
+        errors.append(f"Miami carries {len(signed)} signed players after the cut; the limit is {ROSTER_MAX}")
+    for path in find_requests(root):
+        if "Stats_and_Awards" in path.parts or path.with_name(path.name.replace(".request.json", ".result.json")).exists():
+            continue                                  # league slate games and played games keep their inputs
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for side in (data.get("home") or {}, data.get("away") or {}):
+            if side.get("team") != "Miami Heat":
+                continue
+            for p in side.get("players", []):
+                if not playable(status.get(p["player_id"])):
+                    errors.append(f"{path.relative_to(root)}: {p['player_id']} is not a signed Miami player ({status.get(p['player_id'])})")
+    return errors
+
+
 def validate():
     errors=repository_rating_errors(ROOT)
     try:
@@ -614,6 +643,7 @@ def validate():
 
     from runtime.game_requests import find_requests, request_errors
     errors.extend(request_errors(ROOT))
+    errors.extend(miami_roster_errors(ROOT))
     from runtime.season_games import is_league_slate
     for request in find_requests(ROOT):
         if is_league_slate(request):

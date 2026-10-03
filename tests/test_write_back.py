@@ -198,7 +198,9 @@ class WriteBackRunTests(unittest.TestCase):
         self.assertEqual(record[6], f"{scores[miami_side] - scores[other_side]:+.1f}")
         production = rows_by_first_cell(team_page, ["Player", "Pos", "G"])
         self.assertEqual((production["Dwyane Wade"]["G"], production["Dwyane Wade"]["PPG"]), ("1", f"{wade['pts']:.1f}"))
-        self.assertEqual(production["Alonzo Mourning"]["G"], "0")        # on the register, no appearance
+        idle = next(n for n, row in production.items() if row["G"] == "0")    # on the register, no appearance
+        self.assertEqual(production[idle]["G"], "0")
+        self.assertNotIn("Alonzo Mourning", production)                     # released before the period: not a Miami row
         shooting = rows_by_first_cell(team_page, ["Player", "GS"])
         self.assertEqual((shooting["Dwyane Wade"]["FG"], shooting["Dwyane Wade"]["FG%"]), (f"{wade['fgm']}/{wade['fga']}", ratio(wade["fgm"], wade["fga"])))
         season_team = (root / STATS / "Team/2003-04/Team_Stats.md").read_text()

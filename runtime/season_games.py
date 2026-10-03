@@ -195,8 +195,9 @@ def grades_in_force(game_date, root=ROOT, season=SEASON):
 
 
 def depth_order(depth, roster):
-    """Roster entries in depth-chart order (position by position), for the next man up."""
-    by_name = {p["name"]: p for p in roster["players"]}
+    """Playable roster entries in depth-chart order (position by position), for the next man up."""
+    from .camp import playable
+    by_name = {p["name"]: p for p in roster["players"] if playable(p.get("status"))}
     out = []
     for pos, names in depth.get("positions", {}).items():
         for name in names:
@@ -265,7 +266,14 @@ def miami_side(game_date, root=ROOT, season=SEASON):
         injured = {p: n - between for p, n in injured.items() if n - between > 0}
     depth = read_json(team / "Depth_Chart/depth_chart.json")
     roster = read_json(team / "Roster/roster.json")
-    return rotation_for(rotation, injured, grades_in_force(game_date, root, season), depth_order(depth, roster)), injured
+    from .camp import playable
+    status = {p["name"]: p.get("status") for p in roster["players"]}
+    # A rotation player Miami no longer holds under a signed contract (released, traded, unsigned) is out
+    # for every game, like an injury without an end: the next man on the depth chart takes the slot.
+    gone = {p["player_id"]: 10 ** 6 for p in rotation["players"] if not playable(status.get(p["player_id"]))}
+    out = dict(injured, **gone)
+    players = rotation_for(rotation, out, grades_in_force(game_date, root, season), depth_order(depth, roster))
+    return players, injured
 
 
 def miami_request(game, players):
