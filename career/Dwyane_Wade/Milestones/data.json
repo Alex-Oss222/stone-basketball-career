@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2003-07-01",
+  "as_of": "2003-07-02",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2003-07-01"
+              "2003-07-02"
             ],
             [
               "Team",
@@ -64,32 +64,12 @@
           ],
           "rows": [
             [
-              "2003-07-01",
+              "2003-07-02",
               "Current checkpoint",
               "2003-06-30-miami-option-and-qualifying-offer-decisions",
               "Recorded",
               {
                 "label": "Owning event",
-                "href": "../2003-04/01_Free_Agency/note.md"
-              }
-            ],
-            [
-              "2003-06-30",
-              "Option and qualifying-offer decisions",
-              "Owner depends on the actual contract",
-              "Scheduled gate; no outcome imported",
-              {
-                "label": "Workflow",
-                "href": "../../../docs/front_office.md"
-              }
-            ],
-            [
-              "2003-07-01",
-              "Free-agent negotiation window",
-              "Miami's roster work; Wade's own status follows his control record",
-              "Window does not create an offer",
-              {
-                "label": "Free-agency record",
                 "href": "../2003-04/01_Free_Agency/note.md"
               }
             ],
@@ -209,7 +189,7 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Free-agency record",
+          "label": "Owning event",
           "href": "../2003-04/01_Free_Agency/note.md"
         },
         {
@@ -237,10 +217,6 @@
           "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
-          "label": "Workflow",
-          "href": "../../../docs/front_office.md"
-        },
-        {
           "label": "Negotiation source",
           "href": "../2003-04/01_Free_Agency/Negotiations/jason_kidd.json"
         },
@@ -253,7 +229,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-01"
+          "value": "2003-07-02"
         },
         {
           "label": "Team",
@@ -416,7 +392,7 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Free-agency record",
+          "label": "Owning event",
           "href": "../2003-04/01_Free_Agency/note.md"
         },
         {
@@ -444,10 +420,6 @@
           "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
-          "label": "Workflow",
-          "href": "../../../docs/front_office.md"
-        },
-        {
           "label": "Negotiation source",
           "href": "../2003-04/01_Free_Agency/Negotiations/jason_kidd.json"
         },
@@ -460,7 +432,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-01"
+          "value": "2003-07-02"
         },
         {
           "label": "Team",
@@ -640,7 +612,7 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Free-agency record",
+          "label": "Owning event",
           "href": "../2003-04/01_Free_Agency/note.md"
         },
         {
@@ -668,10 +640,6 @@
           "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
-          "label": "Workflow",
-          "href": "../../../docs/front_office.md"
-        },
-        {
           "label": "Negotiation source",
           "href": "../2003-04/01_Free_Agency/Negotiations/jason_kidd.json"
         },
@@ -684,7 +652,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-01"
+          "value": "2003-07-02"
         },
         {
           "label": "Team",
@@ -780,7 +748,7 @@
             [
               "Jason Kidd",
               "2003-07-01",
-              1,
+              2,
               "Dated negotiation; no signing confirmed",
               {
                 "label": "Negotiation source",
@@ -880,7 +848,7 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Free-agency record",
+          "label": "Owning event",
           "href": "../2003-04/01_Free_Agency/note.md"
         },
         {
@@ -908,10 +876,6 @@
           "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
-          "label": "Workflow",
-          "href": "../../../docs/front_office.md"
-        },
-        {
           "label": "Negotiation source",
           "href": "../2003-04/01_Free_Agency/Negotiations/jason_kidd.json"
         },
@@ -924,7 +888,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-01"
+          "value": "2003-07-02"
         },
         {
           "label": "Team",
@@ -1072,7 +1036,7 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Free-agency record",
+          "label": "Owning event",
           "href": "../2003-04/01_Free_Agency/note.md"
         },
         {
@@ -1100,10 +1064,6 @@
           "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
-          "label": "Workflow",
-          "href": "../../../docs/front_office.md"
-        },
-        {
           "label": "Negotiation source",
           "href": "../2003-04/01_Free_Agency/Negotiations/jason_kidd.json"
         },
@@ -1116,7 +1076,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-01"
+          "value": "2003-07-02"
         },
         {
           "label": "Team",
@@ -1260,7 +1220,7 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Free-agency record",
+          "label": "Owning event",
           "href": "../2003-04/01_Free_Agency/note.md"
         },
         {
@@ -1288,10 +1248,6 @@
           "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
-          "label": "Workflow",
-          "href": "../../../docs/front_office.md"
-        },
-        {
           "label": "Negotiation source",
           "href": "../2003-04/01_Free_Agency/Negotiations/jason_kidd.json"
         },
@@ -1304,7 +1260,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-01"
+          "value": "2003-07-02"
         },
         {
           "label": "Team",
@@ -1457,7 +1413,7 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Free-agency record",
+          "label": "Owning event",
           "href": "../2003-04/01_Free_Agency/note.md"
         },
         {
@@ -1485,10 +1441,6 @@
           "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
-          "label": "Workflow",
-          "href": "../../../docs/front_office.md"
-        },
-        {
           "label": "Negotiation source",
           "href": "../2003-04/01_Free_Agency/Negotiations/jason_kidd.json"
         },
@@ -1501,7 +1453,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-01"
+          "value": "2003-07-02"
         },
         {
           "label": "Team",
@@ -1668,7 +1620,7 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Free-agency record",
+          "label": "Owning event",
           "href": "../2003-04/01_Free_Agency/note.md"
         },
         {
@@ -1696,10 +1648,6 @@
           "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
-          "label": "Workflow",
-          "href": "../../../docs/front_office.md"
-        },
-        {
           "label": "Negotiation source",
           "href": "../2003-04/01_Free_Agency/Negotiations/jason_kidd.json"
         },
@@ -1712,7 +1660,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-01"
+          "value": "2003-07-02"
         },
         {
           "label": "Team",
@@ -1729,7 +1677,7 @@
       "title": "Stats review",
       "status": "inactive",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "0 closed game records in 2003-04 through 2003-07-01. Competitions remain separate.",
+      "summary": "0 closed game records in 2003-04 through 2003-07-02. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -1861,7 +1809,7 @@
           "href": "../Dwyane_Wade_Player_Profile.md"
         },
         {
-          "label": "Free-agency record",
+          "label": "Owning event",
           "href": "../2003-04/01_Free_Agency/note.md"
         },
         {
@@ -1889,10 +1837,6 @@
           "href": "../2003-04/04_Training_Camp/note.md"
         },
         {
-          "label": "Workflow",
-          "href": "../../../docs/front_office.md"
-        },
-        {
           "label": "Negotiation source",
           "href": "../2003-04/01_Free_Agency/Negotiations/jason_kidd.json"
         },
@@ -1905,7 +1849,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-01"
+          "value": "2003-07-02"
         },
         {
           "label": "Team",
@@ -1923,7 +1867,7 @@
   "rookie_scale_reference": {
     "schema_version": 1,
     "reference_only": true,
-    "as_of": "2003-07-01",
+    "as_of": "2003-07-02",
     "player": "Dwyane Wade",
     "draft_year": 2003,
     "pick": 5,

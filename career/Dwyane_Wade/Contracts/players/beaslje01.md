@@ -2,9 +2,9 @@
 
 # Contract | Jerome Beasley
 
-Known through: 2003-07-01. [Open interactive contract](beaslje01.html#contract) · [Contract history](beaslje01.html#contract-history)
+Known through: 2003-07-02. [Open interactive contract](beaslje01.html#contract) · [Contract history](beaslje01.html#contract-history)
 
-Jerome Beasley: unsigned second round draft rights. Evidence cutoff: 2003-07-01.
+Jerome Beasley: unsigned second round draft rights. Evidence cutoff: 2003-07-02.
 
 ## Current contract
 

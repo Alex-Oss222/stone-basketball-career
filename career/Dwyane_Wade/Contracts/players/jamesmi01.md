@@ -2,9 +2,9 @@
 
 # Contract | Mike James
 
-Known through: 2003-07-01. [Open interactive contract](jamesmi01.html#contract) · [Contract history](jamesmi01.html#contract-history)
+Known through: 2003-07-02. [Open interactive contract](jamesmi01.html#contract) · [Contract history](jamesmi01.html#contract-history)
 
-Mike James: free agent expiring. Evidence cutoff: 2003-07-01.
+Mike James: free agent expiring. Evidence cutoff: 2003-07-02.
 
 ## Current contract
 

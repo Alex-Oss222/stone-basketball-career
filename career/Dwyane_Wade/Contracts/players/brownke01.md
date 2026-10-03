@@ -2,9 +2,9 @@
 
 # Contract | Kedrick Brown
 
-Known through: 2003-07-01. [Open interactive contract](brownke01.html#contract) · [Contract history](brownke01.html#contract-history)
+Known through: 2003-07-02. [Open interactive contract](brownke01.html#contract) · [Contract history](brownke01.html#contract-history)
 
-Kedrick Brown: under rookie contract. Evidence cutoff: 2003-07-01.
+Kedrick Brown: under rookie contract. Evidence cutoff: 2003-07-02.
 
 ## Current contract
 

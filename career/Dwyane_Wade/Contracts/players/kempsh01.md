@@ -2,9 +2,9 @@
 
 # Contract | Shawn Kemp
 
-Known through: 2003-07-01. [Open interactive contract](kempsh01.html#contract) · [Contract history](kempsh01.html#contract-history)
+Known through: 2003-07-02. [Open interactive contract](kempsh01.html#contract) · [Contract history](kempsh01.html#contract-history)
 
-Shawn Kemp: free agent expiring. Evidence cutoff: 2003-07-01.
+Shawn Kemp: free agent expiring. Evidence cutoff: 2003-07-02.
 
 ## Current contract
 

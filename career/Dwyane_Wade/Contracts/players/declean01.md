@@ -2,9 +2,9 @@
 
 # Contract | Andrew DeClercq
 
-Known through: 2003-07-01. [Open interactive contract](declean01.html#contract) · [Contract history](declean01.html#contract-history)
+Known through: 2003-07-02. [Open interactive contract](declean01.html#contract) · [Contract history](declean01.html#contract-history)
 
-Andrew DeClercq: under contract unverified. Evidence cutoff: 2003-07-01.
+Andrew DeClercq: under contract unverified. Evidence cutoff: 2003-07-02.
 
 ## Current contract
 
