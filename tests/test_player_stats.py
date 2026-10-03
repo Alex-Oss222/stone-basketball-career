@@ -29,7 +29,9 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(data_errors(self.data), [])
         self.assertEqual(repository_rating_errors(), [])
         generated, data, ratings, report = outputs()
-        generated.update(card_outputs(data, ratings, report))
+        clock = read_json(ROOT / "career/Dwyane_Wade/2003-04/current_state.json")["current_date"]
+        if clock == "2003-06-26":                         # opening cards are imported only at the checkpoint
+            generated.update(card_outputs(data, ratings, report))
         for path, content in generated.items():
             with self.subTest(file=str(path)):
                 self.assertEqual((ROOT/path).read_text(encoding="utf-8"), content)

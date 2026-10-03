@@ -2,11 +2,11 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2003-06-26 · Miami Heat · active
+Career date: 2003-06-30 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
-Dwyane Wade is at 09 Draft. All milestone pages remain accessible; inactive pages explain their opening event.
+Dwyane Wade is at 01 Free Agency. All milestone pages remain accessible; inactive pages explain their opening event.
 
 Activation: The authoritative current date and recorded event determine what is open.
 
@@ -14,7 +14,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2003-06-26 |
+| Career date | 2003-06-30 |
 | Team | Miami Heat |
 | Contract status | draft_rights_unsigned |
 | Roster status | draft_rights |
@@ -25,7 +25,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2003-06-26 | Current checkpoint | 2003-06-26-miami-selects-dwyane-wade-no-5 | Recorded | [Owning event](../2003-04/09_Draft/note.md) |
+| 2003-06-30 | Current checkpoint | 2003-06-26-miami-selects-dwyane-wade-no-5 | Recorded | [Owning event](../2003-04/01_Free_Agency/note.md) |
 | 2003-06-30 | Option and qualifying-offer decisions | Owner depends on the actual contract | Scheduled gate; no outcome imported | [Workflow](../../../docs/front_office.md) |
 | 2003-07-01 | Free-agent negotiation window | Miami's roster work; Wade's own status follows his control record | Window does not create an offer | [Free-agency record](../2003-04/01_Free_Agency/note.md) |
 | Not yet recorded | Rookie-contract proposal | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
@@ -55,7 +55,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 ## Available response paths
 
-- [Open the current event](../2003-04/09_Draft/note.md): Read the owning career note and record the player's actual response when one is due.
+- [Open the current event](../2003-04/01_Free_Agency/note.md): Read the owning career note and record the player's actual response when one is due.
 - [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
@@ -67,7 +67,7 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/09_Draft/note.md)
+- [Free-agency record](../2003-04/01_Free_Agency/note.md)
 - [Dated contract control and fixed rookie-scale reference](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie-scale-only reference: no unpublished cap data](rookie_scale_reference.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
@@ -75,5 +75,4 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Workflow](../../../docs/front_office.md)
-- [Free-agency record](../2003-04/01_Free_Agency/note.md)
 - [Dated milestone working records and player replies](../milestones.json)

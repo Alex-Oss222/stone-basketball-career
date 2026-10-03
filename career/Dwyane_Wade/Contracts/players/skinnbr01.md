@@ -2,9 +2,9 @@
 
 # Contract | Brian Skinner
 
-Known through: 2003-06-26. [Open interactive contract](skinnbr01.html#contract) · [Contract history](skinnbr01.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](skinnbr01.html#contract) · [Contract history](skinnbr01.html#contract-history)
 
-Brian Skinner: free agent expiring. Evidence cutoff: 2003-06-26.
+Brian Skinner: free agent expiring. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 

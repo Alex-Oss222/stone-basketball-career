@@ -2,9 +2,9 @@
 
 # Contract | Fred Hoiberg
 
-Known through: 2003-06-26. [Open interactive contract](hoibefr01.html#contract) · [Contract history](hoibefr01.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](hoibefr01.html#contract) · [Contract history](hoibefr01.html#contract-history)
 
-Fred Hoiberg: free agent expiring. Evidence cutoff: 2003-06-26.
+Fred Hoiberg: free agent expiring. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 

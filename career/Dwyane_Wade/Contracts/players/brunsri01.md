@@ -2,9 +2,9 @@
 
 # Contract | Rick Brunson
 
-Known through: 2003-06-26. [Open interactive contract](brunsri01.html#contract) · [Contract history](brunsri01.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](brunsri01.html#contract) · [Contract history](brunsri01.html#contract-history)
 
-Rick Brunson: free agent expiring. Evidence cutoff: 2003-06-26.
+Rick Brunson: free agent expiring. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 

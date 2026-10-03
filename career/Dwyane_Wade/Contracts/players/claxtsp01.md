@@ -2,9 +2,9 @@
 
 # Contract | Speedy Claxton
 
-Known through: 2003-06-26. [Open interactive contract](claxtsp01.html#contract) · [Contract history](claxtsp01.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](claxtsp01.html#contract) · [Contract history](claxtsp01.html#contract-history)
 
-Speedy Claxton: free agent expiring. Evidence cutoff: 2003-06-26.
+Speedy Claxton: free agent expiring. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 

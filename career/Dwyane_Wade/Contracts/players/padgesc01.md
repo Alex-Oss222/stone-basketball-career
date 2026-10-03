@@ -2,9 +2,9 @@
 
 # Contract | Scott Padgett
 
-Known through: 2003-06-26. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
 
-Scott Padgett: free agent expiring. Evidence cutoff: 2003-06-26.
+Scott Padgett: free agent expiring. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 

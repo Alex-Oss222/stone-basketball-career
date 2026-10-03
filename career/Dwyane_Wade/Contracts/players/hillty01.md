@@ -2,9 +2,9 @@
 
 # Contract | Tyrone Hill
 
-Known through: 2003-06-26. [Open interactive contract](hillty01.html#contract) · [Contract history](hillty01.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](hillty01.html#contract) · [Contract history](hillty01.html#contract-history)
 
-Tyrone Hill: free agent expiring. Evidence cutoff: 2003-06-26.
+Tyrone Hill: free agent expiring. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 

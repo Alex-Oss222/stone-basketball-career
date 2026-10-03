@@ -2,9 +2,9 @@
 
 # Contract | Lucious Harris
 
-Known through: 2003-06-26. [Open interactive contract](harrilu01.html#contract) · [Contract history](harrilu01.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](harrilu01.html#contract) · [Contract history](harrilu01.html#contract-history)
 
-Lucious Harris: free agent expiring. Evidence cutoff: 2003-06-26.
+Lucious Harris: free agent expiring. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 

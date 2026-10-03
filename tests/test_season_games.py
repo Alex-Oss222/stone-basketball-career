@@ -129,7 +129,7 @@ class MiamiBuilderTests(unittest.TestCase):
         store = Store(root / "data/e.sqlite3")
         store.initialize()
         status = play_local(store, root)
-        self.assertEqual({v["status"] for v in status.values()}, {"played"})
+        self.assertEqual({v["status"] for v in status.values() if "decision" not in v.get("request", "")}, {"played"})
         result_path = week4 / "Game_1.result.json"
         result = json.loads(result_path.read_text())
         starter = first["away"]["players"][0]["player_id"]

@@ -1,0 +1,67 @@
+{
+ "date": "2003-06-30",
+ "team": "Miami Heat",
+ "owner": "ai_gm",
+ "decisions": [
+  {
+   "player": "Rasual Butler",
+   "decision": "exercise",
+   "margin": 1.0,
+   "reason": "1514 minutes in 2002-03, age 24: rule is 400+ minutes or age 24 or younger",
+   "kind": "team_option",
+   "salary": 563679,
+   "wade_request": null,
+   "status": "final"
+  },
+  {
+   "player": "Sean Lampley",
+   "decision": "exercise",
+   "margin": 0.25,
+   "reason": "487 minutes in 2002-03, age 23: rule is 400+ minutes or age 24 or younger",
+   "kind": "team_option",
+   "salary": 563679,
+   "wade_request": null,
+   "status": "final"
+  },
+  {
+   "player": "Ken Johnson",
+   "decision": "decline",
+   "margin": 0.25,
+   "reason": "156 minutes in 2002-03, age 25: rule is 400+ minutes or age 24 or younger",
+   "kind": "team_option",
+   "salary": 563679,
+   "wade_request": null,
+   "status": "final"
+  },
+  {
+   "player": "Eddie House",
+   "decision": "tender",
+   "amount": 813679,
+   "margin": 1.0,
+   "reason": "1025 minutes in 2002-03, age 25: rule is 500+ minutes or age 24 or younger",
+   "kind": "qualifying_offer",
+   "wade_request": null,
+   "status": "final"
+  },
+  {
+   "player": "Malik Allen",
+   "decision": "tender",
+   "amount": 788679,
+   "margin": 1.0,
+   "reason": "2318 minutes in 2002-03, age 25: rule is 500+ minutes or age 24 or younger",
+   "kind": "qualifying_offer",
+   "wade_request": null,
+   "status": "final"
+  },
+  {
+   "player": "Mike James",
+   "decision": "tender",
+   "amount": 788679,
+   "margin": 1.0,
+   "reason": "1722 minutes in 2002-03, age 28: rule is 500+ minutes or age 24 or younger",
+   "kind": "qualifying_offer",
+   "wade_request": null,
+   "status": "final"
+  }
+ ]
+}

@@ -2,9 +2,9 @@
 
 # Contract | Keon Clark
 
-Known through: 2003-06-26. [Open interactive contract](clarkke01.html#contract) · [Contract history](clarkke01.html#contract-history)
+Known through: 2003-06-30. [Open interactive contract](clarkke01.html#contract) · [Contract history](clarkke01.html#contract-history)
 
-Keon Clark: free agent expiring. Evidence cutoff: 2003-06-26.
+Keon Clark: free agent expiring. Evidence cutoff: 2003-06-30.
 
 ## Current contract
 

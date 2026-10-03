@@ -237,8 +237,9 @@ class ReportTests(unittest.TestCase):
 
     def test_current_reports_are_idempotent_and_canon_unchanged(self):
         self.assertEqual(report_errors(ROOT, PLAYER), [])
-        self.assertEqual(collect_games(PLAYER, IDENTITY, "2003-06-26"), [])
-        self.assertEqual(json.loads((PLAYER / "2003-04/current_state.json").read_text())["current_date"], "2003-06-26")
+        clock = json.loads((PLAYER / "2003-04/current_state.json").read_text())["current_date"]
+        self.assertEqual(collect_games(PLAYER, IDENTITY, clock), [])          # no closed game before the regular season
+        self.assertGreaterEqual(clock, "2003-06-26")
 
     def test_preview_is_reproducible_and_outside_career(self):
         for path, text in build_preview(ROOT).items():
