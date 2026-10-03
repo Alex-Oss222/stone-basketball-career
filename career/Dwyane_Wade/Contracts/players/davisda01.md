@@ -2,9 +2,9 @@
 
 # Contract | Dale Davis
 
-Known through: 2003-10-31. [Open interactive contract](davisda01.html#contract) · [Contract history](davisda01.html#contract-history)
+Known through: 2003-11-03. [Open interactive contract](davisda01.html#contract) · [Contract history](davisda01.html#contract-history)
 
-Dale Davis: under contract. Evidence cutoff: 2003-10-31.
+Dale Davis: under contract. Evidence cutoff: 2003-11-03.
 
 ## Current contract
 

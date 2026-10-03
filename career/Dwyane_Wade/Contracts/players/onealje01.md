@@ -2,9 +2,9 @@
 
 # Contract | Jermaine O'Neal
 
-Known through: 2003-10-31. [Open interactive contract](onealje01.html#contract) · [Contract history](onealje01.html#contract-history)
+Known through: 2003-11-03. [Open interactive contract](onealje01.html#contract) · [Contract history](onealje01.html#contract-history)
 
-Jermaine O'Neal: free agent expiring. Evidence cutoff: 2003-10-31.
+Jermaine O'Neal: free agent expiring. Evidence cutoff: 2003-11-03.
 
 ## Current contract
 

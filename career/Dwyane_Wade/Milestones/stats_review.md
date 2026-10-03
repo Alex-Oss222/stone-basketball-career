@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2003-10-31 · Miami Heat · active
+Career date: 2003-11-03 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-9 closed game records in 2003-04 through 2003-10-31. Competitions remain separate.
+10 closed game records in 2003-04 through 2003-11-03. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
-| regular | 2 | 20.0 | 6.0 | 2.5 | 2.0 | 0.0 | Complete |
+| regular | 3 | 19.4 | 9.3 | 2.7 | 1.7 | 0.333 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A |
-| regular | 3 | 10 | 0.300 | 0 | 2 | 0.0 |
+| regular | 8 | 17 | 0.471 | 1 | 3 | 0.333 |
 
 ## Closed source games
 
@@ -39,6 +39,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2003-10-21 | preseason | Memphis Grizzlies | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_7.md) |
 | 2003-10-28 | regular | Philadelphia 76ers | Played | [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
 | 2003-10-29 | regular | Boston Celtics | Played | [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.md) |
+| 2003-10-31 | regular | Detroit Pistons | Played | [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -70,7 +71,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/10_October/Week_4/note.md)
+- [Owning event](../2003-04/06_Regular_Season/11_November/Week_1/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
@@ -93,4 +94,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/05_Preseason/Game_7.md)
 - [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.md)
+- [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

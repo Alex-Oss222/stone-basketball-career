@@ -2,9 +2,9 @@
 
 # Contract | Shaquille O'Neal
 
-Known through: 2003-10-31. [Open interactive contract](onealsh01.html#contract) · [Contract history](onealsh01.html#contract-history)
+Known through: 2003-11-03. [Open interactive contract](onealsh01.html#contract) · [Contract history](onealsh01.html#contract-history)
 
-Shaquille O'Neal: under contract. Evidence cutoff: 2003-10-31.
+Shaquille O'Neal: under contract. Evidence cutoff: 2003-11-03.
 
 ## Current contract
 

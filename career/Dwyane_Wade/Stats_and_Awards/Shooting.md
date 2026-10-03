@@ -2,17 +2,17 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2003-10-31**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2003-11-03**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2003-10-31
+## 2003-04 · NBA regular season · through 2003-11-03
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 2 | 3 / 10 | 30.0% | 0 / 2 | 12 | unavailable |
+| 3 | 0 | 3 | 8 / 17 | 47.1% | 1 / 3 | 28 | unavailable |
 
 Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.
 
@@ -28,6 +28,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-28 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.result.json) | Not recorded |
 | 2003-10-29 | Boston Celtics | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.result.json) | Not recorded |
+| 2003-10-31 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.result.json) | Not recorded |
 
 ## 2003-10 · NBA regular season
 
@@ -35,7 +36,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 2 | 3 / 10 | 30.0% | 0 / 2 | 12 | unavailable |
+| 3 | 0 | 3 | 8 / 17 | 47.1% | 1 / 3 | 28 | unavailable |
 
 Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.
 
@@ -51,6 +52,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-28 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.result.json) | Not recorded |
 | 2003-10-29 | Boston Celtics | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.result.json) | Not recorded |
+| 2003-10-31 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.result.json) | Not recorded |
 
 ## 2003-10-22 to 2003-10-31 · NBA regular season
 
@@ -58,7 +60,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 2 | 3 / 10 | 30.0% | 0 / 2 | 12 | unavailable |
+| 3 | 0 | 3 | 8 / 17 | 47.1% | 1 / 3 | 28 | unavailable |
 
 Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.
 
@@ -74,6 +76,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-28 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.result.json) | Not recorded |
 | 2003-10-29 | Boston Celtics | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.result.json) | Not recorded |
+| 2003-10-31 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.result.json) | Not recorded |
 
 ## 2003-10-28 vs Philadelphia 76ers · Played · NBA regular season
 
@@ -119,7 +122,29 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-29 | Boston Celtics | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.result.json) | Not recorded |
 
-## 2003-04 · NBA preseason · through 2003-10-31
+## 2003-10-31 vs Detroit Pistons · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-03fe73ce96501a01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 5 / 7 | 71.4% | 1 / 1 | 16 | unavailable |
+
+Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2003-10-31 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.result.json) | Not recorded |
+
+## 2003-04 · NBA preseason · through 2003-11-03
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 

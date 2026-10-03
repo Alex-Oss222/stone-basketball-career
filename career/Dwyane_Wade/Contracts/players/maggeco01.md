@@ -2,9 +2,9 @@
 
 # Contract | Corey Maggette
 
-Known through: 2003-10-31. [Open interactive contract](maggeco01.html#contract) · [Contract history](maggeco01.html#contract-history)
+Known through: 2003-11-03. [Open interactive contract](maggeco01.html#contract) · [Contract history](maggeco01.html#contract-history)
 
-Corey Maggette: free agent expiring. Evidence cutoff: 2003-10-31.
+Corey Maggette: free agent expiring. Evidence cutoff: 2003-11-03.
 
 ## Current contract
 

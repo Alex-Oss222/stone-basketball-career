@@ -2,9 +2,9 @@
 
 # Contract | Zeljko Rebraca
 
-Known through: 2003-10-31. [Open interactive contract](rebraze01.html#contract) · [Contract history](rebraze01.html#contract-history)
+Known through: 2003-11-03. [Open interactive contract](rebraze01.html#contract) · [Contract history](rebraze01.html#contract-history)
 
-Zeljko Rebraca: under contract. Evidence cutoff: 2003-10-31.
+Zeljko Rebraca: under contract. Evidence cutoff: 2003-11-03.
 
 ## Current contract
 

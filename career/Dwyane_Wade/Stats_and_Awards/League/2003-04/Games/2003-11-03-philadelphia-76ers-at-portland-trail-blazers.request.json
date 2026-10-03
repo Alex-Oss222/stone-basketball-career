@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-03-philadelphia-76ers-at-portland-trail-blazers",
+ "game_date": "2003-11-03",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Philadelphia 76ers",
+  "rotation": "real"
+ }
+}

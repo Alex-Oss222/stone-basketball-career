@@ -179,6 +179,81 @@ class LiveMilestonesTests(unittest.TestCase):
         self.assertNotIn("FUTURE ROLE SECRET", json.dumps(payload))
         self.assertEqual(screen(payload, "training_camp")["status"], "inactive")
 
+    def rotation_review_fixture(self):
+        from runtime import camp, rotation_reviews, season_games
+        from tests.test_rotation_reviews import line, save
+        players = [{"player": name, "positions": [pos], "status": "under_contract"} for name, pos in
+                   (("Point Guard", "PG"), ("Eddie Jones", "SG"), ("Small Forward", "SF"),
+                    ("Power Forward", "PF"), ("Center", "C"), ("Dwyane Wade", "SG"))]
+        priors = {p["player"]: 10 for p in players}
+        priors["Dwyane Wade"] = 8
+        depth = camp.depth_chart_from({"players": players}, priors, {}, "2003-10-24")
+        baseline = camp.season_rotation({"players": players}, depth, priors, "2003-10-24")
+        self.write("00_Team/Team/Depth_Chart/depth_chart.json", depth)
+        baseline_path = self.write("00_Team/Team/Depth_Chart/rotation.json", baseline)
+        self.write("00_Team/Team/Roster/roster.json", {"as_of": "2003-10-24", "players": [
+            {"name": p["player"], "positions": p["positions"], "status": p["status"]} for p in players]})
+        self.write("04_Training_Camp/camp_roster.json", {"opened": "2003-09-30", "evaluated": "2003-10-24",
+                                                        "players": players, "staff_scores": priors})
+        games = [{"date": day, "game_id": day + "-miami-boston", "home": "Miami Heat", "away": "Boston Celtics"}
+                 for day in ("2003-10-28", "2003-11-21")]
+        save(self.root / "library/2003/league/nba_2003_04_schedule.json", {"games": games})
+        note = self.root / season_games.week_dir("2003-10-28") / "Game_1.md"
+        note.parent.mkdir(parents=True, exist_ok=True)
+        note.write_text(season_games.game_note(1, games[0], "home").replace("status: scheduled", "status: played"))
+        save(note.with_suffix(".result.json"), {"event_id": games[0]["game_id"], "game_date": games[0]["date"],
+             "game_type": "regular", "home": "Miami Heat", "away": "Boston Celtics", "terminated": True,
+             "player_stats": {"home": [line(p["player"], 30, 90 if p["player"] == "Dwyane Wade" else 10)
+                                       for p in players], "away": []}})
+        self.assertEqual(rotation_reviews.write_review("2003-11-07", self.root), [])
+        return baseline_path, baseline, rotation_reviews
+
+    def test_completed_staff_review_updates_current_role_minutes_depth_and_sources(self):
+        baseline_path, baseline, reviews = self.rotation_review_fixture()
+        baseline_bytes = baseline_path.read_bytes()
+        self.advance("2003-11-06")
+        earlier = self.payload()
+        prior_minutes = next(p["minutes"] for p in baseline["players"] if p["player_id"] == "Dwyane Wade")
+        self.assertEqual(dict(section(earlier, "training_camp", "Your camp position")["rows"])["Staff rotation minutes"], prior_minutes)
+        self.assertNotIn("Reviews/2003-11-07", json.dumps(earlier))
+
+        self.advance("2003-11-07")
+        before = {p: p.read_bytes() for p in self.root.rglob("*") if p.is_file()}
+        current = self.payload()
+        rotation, _ = reviews.rotation_in_force("2003-11-07", self.root)
+        expected_minutes = next(p["minutes"] for p in rotation["players"] if p["player_id"] == "Dwyane Wade")
+        position = dict(section(current, "training_camp", "Your camp position")["rows"])
+        self.assertEqual(position["Staff rotation minutes"], expected_minutes)
+        self.assertEqual(position["Current role"], f"Starting SG; staff plan {expected_minutes:g} minutes")
+        guard_row = next(r for r in section(current, "training_camp", "Current depth chart")["rows"] if r[0] == "SG")
+        self.assertTrue(guard_row[1].startswith("Dwyane Wade, Eddie Jones"))
+        rendered = json.dumps(current)
+        self.assertIn("Reviews/2003-11-07/rotation.json", rendered)
+        self.assertIn("Reviews/2003-11-07/depth_chart.json", rendered)
+        self.assertIn("Reviews/2003-11-07/review.json", rendered)
+        self.assertEqual(baseline_path.read_bytes(), baseline_bytes)
+        self.assertEqual(before, {p: p.read_bytes() for p in self.root.rglob("*") if p.is_file()})
+
+    def test_pending_review_keeps_last_completed_assignment_visible(self):
+        _, baseline, reviews = self.rotation_review_fixture()
+        folder = reviews.review_dir("2003-11-07", self.root)
+        rotation = json.loads((folder / "rotation.json").read_text())
+        (folder / "rotation.json").unlink()
+        self.advance("2003-11-07")
+        pending = self.payload()
+        prior_minutes = next(p["minutes"] for p in baseline["players"] if p["player_id"] == "Dwyane Wade")
+        self.assertEqual(dict(section(pending, "training_camp", "Your camp position")["rows"])["Staff rotation minutes"], prior_minutes)
+        guard_row = next(r for r in section(pending, "training_camp", "Current depth chart")["rows"] if r[0] == "SG")
+        self.assertTrue(guard_row[1].startswith("Eddie Jones, Dwyane Wade"))
+        self.assertNotIn("Reviews/2003-11-07", json.dumps(pending))
+        (folder / "rotation.json").write_text(json.dumps(rotation))
+        expected_minutes = next(p["minutes"] for p in rotation["players"] if p["player_id"] == "Dwyane Wade")
+        self.advance("2003-11-21")
+        # A later review can remain due while reporting the November 7 assignment.
+        current = self.payload()
+        self.assertEqual(dict(section(current, "training_camp", "Your camp position")["rows"])["Staff rotation minutes"], expected_minutes)
+        self.assertIn("Reviews/2003-11-07/rotation.json", json.dumps(current))
+
     def test_outgoing_wade_trade_reports_actual_involvement_and_completion(self):
         self.advance("2003-07-20")
         self.write("00_Team/Transactions/Trades/actual.json", {
