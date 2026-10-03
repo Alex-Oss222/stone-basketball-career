@@ -31,7 +31,7 @@ An alternate-history NBA career simulation of **Dwyane Wade**, starting at the J
 | `library/careers/nba_player_careers.json` | Real players' season rates, used by the engine for their ability |
 | `runtime/` | All logic (Python, standard library only) |
 | `scripts/` | Command-line drivers (each has a docstring with its usage) |
-| `tests/` | 498 unit tests; `tests/checkpoint.py` freezes the June 26 checkpoint for tests |
+| `tests/` | 501 unit tests; `tests/checkpoint.py` freezes the June 26 checkpoint for tests |
 
 ## 3. The game engine and draws
 
@@ -39,7 +39,7 @@ An alternate-history NBA career simulation of **Dwyane Wade**, starting at the J
 - **Every chance event is drawn by the engine, never locally.** A game is a `Game_N.request.json`. A decision (a free agent's answer, an injury, a camp battle, a consent) is a `*.decision.json` with options and probabilities.
 - **Never re-rolled.** The engine stores the first draw for every event id forever and refuses a changed packet under the same id. Never pass a seed, never edit a drawn request, never resolve a game or decision locally.
 - **Games.** They need a push to `milestone-1` and a Railway redeploy, because the engine reads the repository's dated inputs at boot. Results are then fetched with `python scripts/collect_results.py`. The `collect-results` GitHub workflow also runs hourly and on every push to `milestone-1`.
-- **Decisions.** They can be drawn at once through the authenticated `POST /decisions` route: `python scripts/draw_decisions.py`. It needs the environment variable `ENGINE_API_TOKEN`. **The token is a secret: it is never written into the repository or chat.** Without the token, decisions go the slow way: commit, push, deploy, collect.
+- **Decisions.** They can be drawn at once through the authenticated `POST /decisions` route: `python scripts/draw_decisions.py`. It needs the environment variable `ENGINE_API_TOKEN`. **The token is a secret: it is never written into the repository or chat.** Without the token, decisions go through commit, push, deploy and collection. If direct POST transport cannot accept the body, publish the unchanged committed packet and let the normal startup scan draw it; the journal still keeps one answer per event.
 - **Canonical results.** A result counts only after it is written into the career record. `scripts/write_back_results.py --write` writes game results into notes and statistics pages.
 
 ## 4. How the clock moves (the loop)
@@ -85,16 +85,18 @@ Commit in batches, about every couple of weeks of career time or at any stop tha
   - **Generated pages.** `runtime/player_reports.py`, `runtime/write_back.py` and `runtime/league_cards.py`. Every page is generated: edit the source record, never the page.
   - **Refresh.** `scripts/refresh_career_views.py` rebuilds reports, league cards and statistics pages together.
 
-## 6. Where the career stands (October 28, 2003)
+## 6. Where the career stands (November 11, 2003)
 
-- **Wade.** Signed July 21, 2003 to his rookie-scale deal. The user's counter: 80% protected, incentives to 120% of scale, team option for 2006-07. His standing is `rookie`. In the rotation he comes off the bench at 20 minutes, as the first guard.
-- **Miami's 15.** Mike James, Eddie Jones, Caron Butler, Scott Padgett and Brian Grant start. The bench is Stephen Jackson, Shawn Kemp, LaPhonso Ellis, Cherokee Parks, Rasual Butler, Anthony Carter, Sean Lampley, Udonis Haslem and John Wallace. Jerome Beasley holds unsigned second-round rights.
+- **Wade.** Signed July 21, 2003 to his rookie-scale deal. The user's counter: 80% protected, incentives to 120% of scale, team option for 2006-07. His standing remains `rookie` under the existing season-close rule. He starts at shooting guard with a 34-minute staff plan. Through 7 appearances he has 2 actual starts and averages 10.9 points, 3.4 rebounds and 3.0 assists in 23.9 minutes.
+- **Miami's 15.** Mike James, Dwyane Wade, Caron Butler, Scott Padgett and Shawn Kemp start. The bench is Eddie Jones, Stephen Jackson, Brian Grant, Cherokee Parks, LaPhonso Ellis, Rasual Butler, Anthony Carter, Sean Lampley, Udonis Haslem and John Wallace. Jerome Beasley holds unsigned second-round rights.
 - **Preseason.** Miami went 2-5. Wade played only Games 1 and 2, because of a dressing rule since fixed.
 - **Free agency.** Kidd stayed in New Jersey. Miller and Odom were requested by Wade but not pursued for lack of cap room. Haslem was signed on October 27: Wade's request broke a tie at the last roster spot.
 - **The October 27 correction.** Five camp signings were voided because the players weren't truly available. Real moves, with sources, were added to the transactions file.
-- **Opening night.** Philadelphia beat Miami 114-111 in overtime on October 28; Miami is 0-1. Wade came off the bench for 4 points, 5 rebounds, 1 assist and 1 steal in 18.4 minutes (1/4 FG, 2/2 FT, 0 turnovers). No injuries were drawn. The game and both other October 28 league results are closed records from Railway kernel 2003.6.
-- **Next.** Miami plays at Boston on October 29. The next scheduled staff rotation review is November 7.
-- **League report coverage.** The fixed player registry omits fourteen names present in the opening-night results, including Eddie Jones and Cherokee Parks. Their full box scores and Miami totals are recorded correctly; league individual tables remain limited to registry players.
+- **Regular season.** Miami is 3-4 after seven games. The six Miami games from October 29 through November 11 and all 93 background games in that span are closed Railway results. Including opening night, there are 102 closed regular-season games: seven Miami and 95 background. The seven preseason results remain separate. Every new game was drawn by Railway kernel 2003.6.
+- **November 7 staff review.** Five closed games were blended with the same 300-minute preseason prior for every player. Railway selected Wade over Eddie Jones in the close shooting-guard battle; Shawn Kemp took the center job on a clear score advantage over Brian Grant. The [dated review and rotation](../career/Dwyane_Wade/2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json), weekly note, identity snapshot and career screens agree. Earlier played lineups and results are preserved.
+- **Latest game.** November 11 at Houston: Miami won 96–90. Wade had 13 points, 5 rebounds and 8 assists in 34.4 minutes, with an actual start recorded. No injuries were drawn in the seven Miami games.
+- **Next.** Cleveland visits Miami on November 12. The next scheduled staff rotation review is November 21. No Wade decision is pending.
+- **League report coverage.** The fixed player registry omits some names present in the recorded results, including Eddie Jones and Cherokee Parks. Full box scores and Miami totals are recorded correctly; league individual tables remain limited to registry players.
 
 ## 7. Rotation reviews and remaining work (see `docs/ROADMAP.md`)
 
