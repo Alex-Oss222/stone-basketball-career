@@ -14,4 +14,6 @@ days: 8-14
 
 ## Games and events
 
+- 2003-11-08: Minnesota Timberwolves 87 at Miami Heat 101 — Miami Heat W 101-87 ([Game 1](Game_1.md), event `2003-11-08-minnesota-timberwolves-at-miami-heat`)
+
 ## Consequences

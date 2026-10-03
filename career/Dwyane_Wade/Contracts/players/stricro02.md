@@ -2,9 +2,9 @@
 
 # Contract | Rod Strickland
 
-Known through: 2003-11-08. [Open interactive contract](stricro02.html#contract) · [Contract history](stricro02.html#contract-history)
+Known through: 2003-11-11. [Open interactive contract](stricro02.html#contract) · [Contract history](stricro02.html#contract-history)
 
-Rod Strickland: free agent expiring. Evidence cutoff: 2003-11-08.
+Rod Strickland: free agent expiring. Evidence cutoff: 2003-11-11.
 
 ## Current contract
 

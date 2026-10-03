@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-09-sacramento-kings-at-boston-celtics",
+ "game_date": "2003-11-09",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ }
+}

@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `pollasc01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2003-11-08 · **Club on this date:** Indiana Pacers · **Basis:** traded to Indiana Pacers on 2003-07-24 (world data) · **League:** NBA  
+**Card date:** 2003-11-11 · **Club on this date:** Indiana Pacers · **Basis:** traded to Indiana Pacers on 2003-07-24 (world data) · **League:** NBA  
 **Position:** C (Center) · **Jersey:** #31 · **Born:** 1975-02-12 · **Age on card date:** 28  
 **Registry ID:** `pollasc01` · [Basketball-Reference page](https://www.basketball-reference.com/players/p/pollasc01.html) · ESPN ID 664
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `pollas
 
 ## Simulated statistics
 
-As of **2003-11-08**: 6 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2003-11-11**: 6 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -102,7 +102,7 @@ Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regul
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2003-04 is simulated: 6 closed regular-season games through 2003-11-08.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2003-04 is simulated: 6 closed regular-season games through 2003-11-11.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -119,4 +119,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2003-11-08. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2003-11-11. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

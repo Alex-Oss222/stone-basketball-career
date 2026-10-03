@@ -2,9 +2,9 @@
 
 # Contract | Adrian Griffin
 
-Known through: 2003-11-08. [Open interactive contract](griffad01.html#contract) · [Contract history](griffad01.html#contract-history)
+Known through: 2003-11-11. [Open interactive contract](griffad01.html#contract) · [Contract history](griffad01.html#contract-history)
 
-Adrian Griffin: free agent expiring. Evidence cutoff: 2003-11-08.
+Adrian Griffin: free agent expiring. Evidence cutoff: 2003-11-11.
 
 ## Current contract
 
