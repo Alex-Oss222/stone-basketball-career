@@ -4,7 +4,7 @@
 [Current contracts and contract history for every tracked player](../../Contracts/index.html)
 <!-- contract-navigation:end -->
 
-[Stats hub](../README.md) · [2003-04 players](2003-04/League_Stats.md) · [2003-04 awards](2003-04/League_Awards.md) · [Player registry](player_registry.json)
+[Stats hub](../README.md) · [2003-04 players](2003-04/League_Stats.md) · [2003-04 awards](2003-04/League_Awards.md) · [Player registry](player_registry.json) · [Player cards](Players/README.md)
 
 The league pages cover 407 registered players. All entries remain available in six position groups, with the complete per-game table in the same order as the player pages. A closed group keeps the page short; opening it reveals every player in that position, alphabetically.
 
@@ -31,7 +31,7 @@ G is appearances. Averages and percentages need valid denominators. Publish peri
 
 Weekly and monthly shortlists are internal; they do not imply the NBA published ranked finalists or numerical ballots. Mark **WINNER** only after the decision closes. Keep the shortlist visible, with its evidence. A calendar bucket can contain no award. File an award in the bucket containing its official period's end date, including awards whose window crosses weeks or months.
 
-Season pages retain the branch's 10-7-5-3-1 MVP and 5-3-1 individual-award scoring. The configured 123/118 ballot counts are procedure inputs, not votes already cast; the 118-voter fallback for DPOY, Sixth Man and MIP remains provisional. Verify award-specific rules and totals before closing. Do not import real winners or the later 65-game eligibility rule. All-Rookie uses the established 29-coach, 2-1 model without votes for a coach's own player.
+Season pages retain the branch's 10-7-5-3-1 MVP and 5-3-1 individual-award scoring. The configured 123/118 ballot counts are procedure inputs, not votes already cast; the 118-voter fallback for DPOY, Sixth Man and MIP remains provisional. Verify award-specific rules and totals before closing. Do not import real winners or the later 65-game eligibility rule. The era-gated catalogue of every award, its electorate, scoring rule and first season is `library/2003/league/nba_awards_catalog.json` (`docs/awards_catalog.md`); only awards and rules it lists as in force for 2003-04 may be used. All-Rookie uses the established 29-coach, 2-1 model without votes for a coach's own player.
 
 ## Research basis
 

@@ -1,0 +1,483 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "team_colors_by_era",
+ "source": "user-supplied list (StatMuse-derived), uploaded October 2, 2026",
+ "usage": "Presentation only: a league player card takes the colours in force for its season (a row covers seasons whose starting year is at least from_year and under to_year). Colours never enter any decision; later eras are kept for continuity, like the cap history.",
+ "placeholder": {
+  "primary": "#1d1d1f",
+  "secondary": "#c5c7cb",
+  "note": "unsigned draft rights or no recorded club"
+ },
+ "eras": [
+  {
+   "club": "Atlanta Hawks",
+   "primary": "#c8102e",
+   "secondary": "#ffcd00",
+   "from_year": 2002,
+   "to_year": 2004
+  },
+  {
+   "club": "Atlanta Hawks",
+   "primary": "#c8102e",
+   "secondary": "#ffc72c",
+   "from_year": 2004,
+   "to_year": 2007
+  },
+  {
+   "club": "Atlanta Hawks",
+   "primary": "#0c2340",
+   "secondary": "#c8102e",
+   "from_year": 2007,
+   "to_year": 2014
+  },
+  {
+   "club": "Boston Celtics",
+   "primary": "#007a33",
+   "secondary": "#ffffff",
+   "from_year": 2002,
+   "to_year": 2014
+  },
+  {
+   "club": "New Jersey Nets",
+   "primary": "#041e42",
+   "secondary": "#ba0c2f",
+   "from_year": 2002,
+   "to_year": 2012
+  },
+  {
+   "club": "Brooklyn Nets",
+   "primary": "#010101",
+   "secondary": "#ffffff",
+   "from_year": 2012,
+   "to_year": 2014
+  },
+  {
+   "club": "Charlotte Bobcats",
+   "primary": "#f9423a",
+   "secondary": "#1b365d",
+   "from_year": 2004,
+   "to_year": 2007
+  },
+  {
+   "club": "Charlotte Bobcats",
+   "primary": "#1b365d",
+   "secondary": "#e35205",
+   "from_year": 2007,
+   "to_year": 2009
+  },
+  {
+   "club": "Charlotte Bobcats",
+   "primary": "#1b365d",
+   "secondary": "#e35205",
+   "from_year": 2009,
+   "to_year": 2012
+  },
+  {
+   "club": "Charlotte Bobcats",
+   "primary": "#0c2340",
+   "secondary": "#e35205",
+   "from_year": 2012,
+   "to_year": 2014
+  },
+  {
+   "club": "Chicago Bulls",
+   "primary": "#ba0c2f",
+   "secondary": "#010101",
+   "from_year": 2002,
+   "to_year": 2014
+  },
+  {
+   "club": "Cleveland Cavaliers",
+   "primary": "#5c88da",
+   "secondary": "#e35205",
+   "from_year": 2002,
+   "to_year": 2003
+  },
+  {
+   "club": "Cleveland Cavaliers",
+   "primary": "#9d2235",
+   "secondary": "#8c714c",
+   "from_year": 2003,
+   "to_year": 2010
+  },
+  {
+   "club": "Cleveland Cavaliers",
+   "primary": "#6f263d",
+   "secondary": "#ffb81c",
+   "from_year": 2010,
+   "to_year": 2014
+  },
+  {
+   "club": "Dallas Mavericks",
+   "primary": "#041e42",
+   "secondary": "#0057b7",
+   "from_year": 2002,
+   "to_year": 2007
+  },
+  {
+   "club": "Dallas Mavericks",
+   "primary": "#0c2340",
+   "secondary": "#0057b7",
+   "from_year": 2007,
+   "to_year": 2014
+  },
+  {
+   "club": "Denver Nuggets",
+   "primary": "#041e42",
+   "secondary": "#9d2235",
+   "from_year": 2002,
+   "to_year": 2003
+  },
+  {
+   "club": "Denver Nuggets",
+   "primary": "#418fde",
+   "secondary": "#ffc72c",
+   "from_year": 2003,
+   "to_year": 2005
+  },
+  {
+   "club": "Denver Nuggets",
+   "primary": "#418fde",
+   "secondary": "#ffc72c",
+   "from_year": 2005,
+   "to_year": 2008
+  },
+  {
+   "club": "Denver Nuggets",
+   "primary": "#418fde",
+   "secondary": "#ffc72c",
+   "from_year": 2008,
+   "to_year": 2014
+  },
+  {
+   "club": "Detroit Pistons",
+   "primary": "#003da5",
+   "secondary": "#d50032",
+   "from_year": 2002,
+   "to_year": 2005
+  },
+  {
+   "club": "Detroit Pistons",
+   "primary": "#003da5",
+   "secondary": "#d50032",
+   "from_year": 2005,
+   "to_year": 2014
+  },
+  {
+   "club": "Golden State Warriors",
+   "primary": "#041e42",
+   "secondary": "#be3a34",
+   "from_year": 2002,
+   "to_year": 2010
+  },
+  {
+   "club": "Golden State Warriors",
+   "primary": "#003da5",
+   "secondary": "#ffc72c",
+   "from_year": 2010,
+   "to_year": 2014
+  },
+  {
+   "club": "Houston Rockets",
+   "primary": "#041e42",
+   "secondary": "#ba0c2f",
+   "from_year": 2002,
+   "to_year": 2003
+  },
+  {
+   "club": "Houston Rockets",
+   "primary": "#ba0c2f",
+   "secondary": "#010101",
+   "from_year": 2003,
+   "to_year": 2014
+  },
+  {
+   "club": "Indiana Pacers",
+   "primary": "#041e42",
+   "secondary": "#ffcd00",
+   "from_year": 2002,
+   "to_year": 2005
+  },
+  {
+   "club": "Indiana Pacers",
+   "primary": "#041e42",
+   "secondary": "#ffb81c",
+   "from_year": 2005,
+   "to_year": 2010
+  },
+  {
+   "club": "Indiana Pacers",
+   "primary": "#041e42",
+   "secondary": "#ffc72c",
+   "from_year": 2010,
+   "to_year": 2014
+  },
+  {
+   "club": "Los Angeles Clippers",
+   "primary": "#d50032",
+   "secondary": "#003da5",
+   "from_year": 2002,
+   "to_year": 2010
+  },
+  {
+   "club": "Los Angeles Clippers",
+   "primary": "#d50032",
+   "secondary": "#003da5",
+   "from_year": 2010,
+   "to_year": 2014
+  },
+  {
+   "club": "Los Angeles Lakers",
+   "primary": "#702f8a",
+   "secondary": "#ffc72c",
+   "from_year": 2002,
+   "to_year": 2014
+  },
+  {
+   "club": "Memphis Grizzlies",
+   "primary": "#00b2a9",
+   "secondary": "#c8102e",
+   "from_year": 2002,
+   "to_year": 2004
+  },
+  {
+   "club": "Memphis Grizzlies",
+   "primary": "#0c2340",
+   "secondary": "#ffc72c",
+   "from_year": 2004,
+   "to_year": 2014
+  },
+  {
+   "club": "Miami Heat",
+   "primary": "#a6192e",
+   "secondary": "#ffa400",
+   "from_year": 2002,
+   "to_year": 2007
+  },
+  {
+   "club": "Miami Heat",
+   "primary": "#862633",
+   "secondary": "#ffa400",
+   "from_year": 2007,
+   "to_year": 2014
+  },
+  {
+   "club": "Milwaukee Bucks",
+   "primary": "#702f8a",
+   "secondary": "#2c5234",
+   "from_year": 2002,
+   "to_year": 2006
+  },
+  {
+   "club": "Milwaukee Bucks",
+   "primary": "#2c5234",
+   "secondary": "#a6192e",
+   "from_year": 2006,
+   "to_year": 2014
+  },
+  {
+   "club": "Minnesota Timberwolves",
+   "primary": "#236192",
+   "secondary": "#00843d",
+   "from_year": 2002,
+   "to_year": 2008
+  },
+  {
+   "club": "Minnesota Timberwolves",
+   "primary": "#236192",
+   "secondary": "#009739",
+   "from_year": 2008,
+   "to_year": 2014
+  },
+  {
+   "club": "New Orleans Hornets",
+   "primary": "#00778b",
+   "secondary": "#280071",
+   "from_year": 2002,
+   "to_year": 2005
+  },
+  {
+   "club": "New Orleans/Oklahoma City Hornets",
+   "primary": "#00778b",
+   "secondary": "#280071",
+   "from_year": 2005,
+   "to_year": 2007
+  },
+  {
+   "club": "New Orleans Hornets",
+   "primary": "#00778b",
+   "secondary": "#280071",
+   "from_year": 2007,
+   "to_year": 2008
+  },
+  {
+   "club": "New Orleans Hornets",
+   "primary": "#0082ba",
+   "secondary": "#211747",
+   "from_year": 2008,
+   "to_year": 2013
+  },
+  {
+   "club": "New Orleans Pelicans",
+   "primary": "#0c2340",
+   "secondary": "#b9975b",
+   "from_year": 2013,
+   "to_year": 2014
+  },
+  {
+   "club": "New York Knicks",
+   "primary": "#0072ce",
+   "secondary": "#fe5000",
+   "from_year": 2002,
+   "to_year": 2011
+  },
+  {
+   "club": "New York Knicks",
+   "primary": "#003594",
+   "secondary": "#fe5000",
+   "from_year": 2011,
+   "to_year": 2012
+  },
+  {
+   "club": "New York Knicks",
+   "primary": "#003da5",
+   "secondary": "#ff6720",
+   "from_year": 2012,
+   "to_year": 2014
+  },
+  {
+   "club": "Seattle SuperSonics",
+   "primary": "#00573f",
+   "secondary": "#f6be00",
+   "from_year": 2002,
+   "to_year": 2008
+  },
+  {
+   "club": "Oklahoma City Thunder",
+   "primary": "#0072ce",
+   "secondary": "#ee2737",
+   "from_year": 2008,
+   "to_year": 2014
+  },
+  {
+   "club": "Orlando Magic",
+   "primary": "#0057b7",
+   "secondary": "#010101",
+   "from_year": 2002,
+   "to_year": 2014
+  },
+  {
+   "club": "Philadelphia 76ers",
+   "primary": "#d50032",
+   "secondary": "#896c4c",
+   "from_year": 2002,
+   "to_year": 2009
+  },
+  {
+   "club": "Philadelphia 76ers",
+   "primary": "#d50032",
+   "secondary": "#003da5",
+   "from_year": 2009,
+   "to_year": 2014
+  },
+  {
+   "club": "Phoenix Suns",
+   "primary": "#582c83",
+   "secondary": "#cb6015",
+   "from_year": 2002,
+   "to_year": 2013
+  },
+  {
+   "club": "Phoenix Suns",
+   "primary": "#cb6015",
+   "secondary": "#211747",
+   "from_year": 2013,
+   "to_year": 2014
+  },
+  {
+   "club": "Portland Trail Blazers",
+   "primary": "#c8102e",
+   "secondary": "#010101",
+   "from_year": 2002,
+   "to_year": 2014
+  },
+  {
+   "club": "Sacramento Kings",
+   "primary": "#753bbd",
+   "secondary": "#010101",
+   "from_year": 2002,
+   "to_year": 2014
+  },
+  {
+   "club": "San Antonio Spurs",
+   "primary": "#010101",
+   "secondary": "#8d9093",
+   "from_year": 2002,
+   "to_year": 2014
+  },
+  {
+   "club": "Toronto Raptors",
+   "primary": "#753bbd",
+   "secondary": "#ba0c2f",
+   "from_year": 2002,
+   "to_year": 2006
+  },
+  {
+   "club": "Toronto Raptors",
+   "primary": "#ba0c2f",
+   "secondary": "#010101",
+   "from_year": 2006,
+   "to_year": 2008
+  },
+  {
+   "club": "Toronto Raptors",
+   "primary": "#ba0c2f",
+   "secondary": "#010101",
+   "from_year": 2008,
+   "to_year": 2014
+  },
+  {
+   "club": "Utah Jazz",
+   "primary": "#753bbd",
+   "secondary": "#00a9e0",
+   "from_year": 2002,
+   "to_year": 2004
+  },
+  {
+   "club": "Utah Jazz",
+   "primary": "#0c2340",
+   "secondary": "#418fde",
+   "from_year": 2004,
+   "to_year": 2010
+  },
+  {
+   "club": "Utah Jazz",
+   "primary": "#0c2340",
+   "secondary": "#2c5234",
+   "from_year": 2010,
+   "to_year": 2014
+  },
+  {
+   "club": "Washington Wizards",
+   "primary": "#236192",
+   "secondary": "#8f654d",
+   "from_year": 2002,
+   "to_year": 2007
+  },
+  {
+   "club": "Washington Wizards",
+   "primary": "#236192",
+   "secondary": "#896c4c",
+   "from_year": 2007,
+   "to_year": 2011
+  },
+  {
+   "club": "Washington Wizards",
+   "primary": "#c8102e",
+   "secondary": "#0c2340",
+   "from_year": 2011,
+   "to_year": 2014
+  }
+ ]
+}

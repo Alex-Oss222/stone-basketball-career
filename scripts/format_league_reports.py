@@ -18,6 +18,21 @@ from runtime.stat_layout import RED, PER_GAME_COLUMNS, link, markdown_table, rec
 from runtime.contract_navigation import contract_player_link, plain_player_name
 
 COLUMNS = ["Player", "Age", "Club / rights", "Lg", *PER_GAME_COLUMNS[4:-1]]
+LINK = re.compile(r"^\[([^\]]+)\]\([^)]+\)$")
+
+
+def player_name(cell):
+    """The player's name from a Player cell, whether or not it is already a card link."""
+    match = LINK.match(cell.strip())
+    return match.group(1) if match else cell.strip()
+
+
+def card_link(page, registry_player, league_dir):
+    """Markdown link to the player's league card, relative to the page; plain text without a registry id."""
+    card_id = registry_player.get("registry_id")
+    if not card_id:
+        return registry_player["name"]
+    return link(page, league_dir / "Players" / f"{card_id}.md", registry_player["name"])
 ALIASES = {"MP": "MPG", "PTS": "PPG", "TRB": "RPG", "AST": "APG", "STL": "SPG", "BLK": "BPG", "TOV": "TOV/G"}
 
 
@@ -51,8 +66,10 @@ def ratio(value):
     return f"{number:.3f}".removeprefix("0")
 
 
-def format_page(text, page, registry, as_of, asset):
+def format_page(text, page, registry, as_of, asset, league_dir=None):
+    """Rewrite one page's position tables; `league_dir` is the League folder the Players cards live in."""
     cutoff = scope_for(page, [], as_of)["identity_date"]
+    league_dir = league_dir or asset.parent.parent
     players = {p["name"]: p for p in registry["players"]}
     def position(match):
         pos, summary, body = match.groups()
@@ -60,7 +77,7 @@ def format_page(text, page, registry, as_of, asset):
         for headers, rows in read_tables(body):
             target = production if "PPG" in headers or "PTS" in headers else shooting
             for row in rows:
-                name = plain_player_name(row["Player"])
+                name = row["Player"] = player_name(row["Player"])
                 if name in target:
                     raise ValueError(f"{page}: duplicate {name} row")
                 target[name] = row
@@ -76,9 +93,7 @@ def format_page(text, page, registry, as_of, asset):
             birth, on = date.fromisoformat(p["birth_date"]), date.fromisoformat(cutoff)
             age = on.year - birth.year - ((on.month, on.day) < (birth.month, birth.day))
             values = {key: old.get(key, old.get(ALIASES.get(key, ""), "N/A")) for key in COLUMNS}
-            career_player = next((parent for parent in page.parents if parent.name == "Stats_and_Awards"), None)
-            player_label = contract_player_link(page, career_player.parent, p) if career_player else name
-            values.update(Player=player_label, Age=old.get("Age", str(age)), Lg=old.get("Lg", "NBA"), Pos=old.get("Pos", pos))
+            values.update(Player=card_link(page, p, league_dir), Age=old.get("Age", str(age)), Lg=old.get("Lg", "NBA"), Pos=old.get("Pos", pos))
             # The club/rights cell is an existing dated label, never a new roster decision.
             values["Club / rights"] = old["Club / rights"]
             for key in ("FG%", "3P%", "2P%", "eFG%", "FT%", "TS% (est.)"):
@@ -91,10 +106,12 @@ def format_page(text, page, registry, as_of, asset):
     old_caption = "Open a position to see every tracked player. Production is per appearance; the shooting table keeps GS and percentages separate. Team labels show the source club or draft rights, not a finalized opening-night roster."
     caption = (f"Open a position to see every tracked player. G and GS are counts; MP and counting statistics are per appearance. "
                f"Shooting uses .500 = 50.0%. Scroll horizontally for all columns. Age is recorded at the period's identity cutoff ({cutoff}); "
-               "birth dates and identity references are in the linked player registry. Club / rights is the recorded source label, not proof of an active roster spot. "
+               "birth dates and identity references are in the linked player registry. Each player name opens his league card. Club / rights is the recorded source label, not proof of an active roster spot. "
                "Unrecorded starts, attempts, splits and fouls stay N/A; they cannot be reconstructed from rounded averages.")
-    if old_caption in text:
-        text = text.replace(old_caption, caption)
+    previous_caption = caption.replace("Each player name opens his league card. ", "")
+    for old in (old_caption, previous_caption):
+        if old in text:
+            text = text.replace(old, caption)
     image = "!" + link(page, asset, "NBA per-game statistics: identity, shooting, rebounding, playmaking and defense") + "\n\n"
     if image not in text:
         text = text.replace("## Players by position\n\n", "## Players by position\n\n" + image)
@@ -112,7 +129,7 @@ def main():
         asset = league / "assets/per_game.svg"
         outputs[asset] = header_svg()
         for page in league.rglob("League_Stats.md"):
-            outputs[page] = format_page(page.read_text(), page, registry, as_of, asset)
+            outputs[page] = format_page(page.read_text(), page, registry, as_of, asset, league)
     for page, text in outputs.items():
         page.parent.mkdir(parents=True, exist_ok=True)
         page.write_text(text, encoding="utf-8")

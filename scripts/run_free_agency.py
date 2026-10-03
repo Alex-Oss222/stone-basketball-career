@@ -22,6 +22,7 @@ sys.path.insert(0, str(ROOT))
 from runtime import consultations, signing, standing         # noqa: E402
 from runtime.decisions import decision_errors                # noqa: E402
 from runtime.front_office import rookie_offer                # noqa: E402
+from runtime.rookie_contract import layered_errors, layered_terms   # noqa: E402
 from runtime.gm import MAX_ROUNDS, FrontOffice               # noqa: E402
 from runtime.market import PATIENCE_ROUNDS, Market           # noqa: E402
 from runtime.negotiation import FOLDER, Negotiation, slug    # noqa: E402
@@ -616,6 +617,7 @@ class Run:
                          "note": f"{offer['reason']}. Offered after Miami's July free-agent moves; the role promise is the better of his two positions on the depth chart on {day}, and at least a rotation role for a top-ten pick."}],
         }, indent=1) + "\n", encoding="utf-8")
         self.state["wade_offer_date"] = day
+        self.submit_standing_counter(json.loads(log.read_text(encoding="utf-8")), day)
         signing.note_event(self.writer, PHASE / "note.md", day,
                            f"Miami offers Wade his rookie-scale contract at {offer['terms']['percent_of_scale']}% of scale with a promised role of "
                            f"{role['role']} ({role['minutes_per_game']} minutes). Wade answers in `Wade_Rookie_Contract/negotiation_log.json`. "
@@ -623,27 +625,78 @@ class Run:
         state = self.writer.load(signing.STATE)
         state["pending_player_decisions"] = ["rookie_contract_offer"]
 
+    def standing_instruction(self):
+        path = self.root / PHASE / "Wade_Rookie_Contract/standing_instruction.json"
+        return json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+
+    def submit_standing_counter(self, log, day):
+        """Wade's pre-registered counter (the user's standing instruction) goes in the day Miami offers."""
+        inst = self.standing_instruction()
+        if not inst or not inst.get("counter"):
+            return False
+        c = inst["counter"]
+        terms = layered_terms(c["pick"], c["protected_percent"], c["incentives"], self.root)
+        log["entries"].append({"date": day, "party": "wade", "action": "counter", "terms": terms,
+                               "note": c.get("note", "standing instruction"), "source": "Wade_Rookie_Contract/standing_instruction.json"})
+        log_path = self.root / PHASE / "Wade_Rookie_Contract/negotiation_log.json"
+        log_path.write_text(json.dumps(log, indent=1) + "\n", encoding="utf-8")
+        return True
+
+    def first_signing_day(self):
+        return next(e["date"] for e in read("library/2003/league/nba_2003_04_calendar.json", self.root)["events"] if e["id"] == "first_signing_day")
+
     def wade_answer(self, day):
-        """Read Wade's answer in the rookie log: an acceptance is signed the next day; a counter gets Miami's answer."""
+        """Read Wade's answer in the rookie log: an acceptance is signed the next legal day; a counter gets Miami's answer."""
         log_path = self.root / PHASE / "Wade_Rookie_Contract/negotiation_log.json"
         log = json.loads(log_path.read_text(encoding="utf-8"))
         entries = log["entries"]
         last = entries[-1]
         if last["action"] == "sign":
             return None
+        if last["party"] == "miami" and last["action"] == "answer" and last.get("agreed"):
+            inst = self.standing_instruction()
+            if inst and inst.get("on_agreement") == "accept" and last["date"] <= day:
+                entries.append({"date": day, "party": "wade", "action": "accept", "terms": last["terms"],
+                                "note": "Accepts Miami's agreement to the counter (standing instruction).", "source": "Wade_Rookie_Contract/standing_instruction.json"})
+                log_path.write_text(json.dumps(log, indent=1) + "\n", encoding="utf-8")
+                last = entries[-1]
+            else:
+                return "awaiting Wade's acceptance of the agreed rookie terms"
         if last["party"] == "miami":
             return "awaiting Wade's answer to Miami's rookie offer"
         if last["date"] >= day:
             return "awaiting Wade's answer to Miami's rookie offer" if last["date"] > day else None
         if last["action"] == "accept":
+            if day < self.first_signing_day():
+                return f"rookie contract agreed; execution waits for the first legal signing day {self.first_signing_day()} (calendar)"
             terms = last.get("terms") or next(e["terms"] for e in reversed(entries) if e["party"] == "miami" and e.get("terms"))
             signing.sign_rookie(self.writer, log, terms, day)
             self.writer.files[PHASE / "Wade_Rookie_Contract/negotiation_log.json"] = log
             self.wade_signed = day
             return None
+        if last["action"] == "counter" and last["terms"].get("structure") == "layered":
+            # Miami's rule: a legal counter whose ceiling is within its offer and whose protected floor is lower is accepted.
+            errors = layered_errors(last["terms"], self.root)
+            offered = next(e["terms"]["percent_of_scale"] for e in reversed(entries) if e["party"] == "miami" and e.get("terms") and "percent_of_scale" in e["terms"])
+            if not errors and last["terms"]["total_percent"] <= offered:
+                entries.append({"date": day, "party": "miami", "action": "answer", "terms": last["terms"], "agreed": True,
+                                "note": (f"Agreed: {last['terms']['protected_percent']}% protected with incentives to {last['terms']['total_percent']}% is legal "
+                                         f"and within the {offered}% Miami offered; the counted Salary is protected cash plus included incentives. "
+                                         "Miami's stated role remains a basketball representation, not a contract term.")})
+                inst = self.standing_instruction()
+                if inst and inst.get("on_agreement") == "accept":
+                    entries.append({"date": day, "party": "wade", "action": "accept", "terms": last["terms"],
+                                    "note": "Accepts Miami's agreement to the counter (standing instruction).", "source": "Wade_Rookie_Contract/standing_instruction.json"})
+                    self.writer.files[PHASE / "Wade_Rookie_Contract/negotiation_log.json"] = log
+                    return None                     # the contract executes on the next legal day
+            else:
+                entries.append({"date": day, "party": "miami", "action": "answer", "terms": rookie_offer(5)["terms"],
+                                "note": "Declined: " + ("; ".join(errors) if errors else f"ceiling above the {offered}% offered") + "; the 120% offer stands."})
+            self.writer.files[PHASE / "Wade_Rookie_Contract/negotiation_log.json"] = log
+            return "awaiting Wade's answer to Miami's rookie offer"
         if last["action"] == "counter":
             wanted = last["terms"]["percent_of_scale"]
-            offered = next(e["terms"]["percent_of_scale"] for e in reversed(entries) if e["party"] == "miami" and e.get("terms"))
+            offered = next(e["terms"]["percent_of_scale"] for e in reversed(entries) if e["party"] == "miami" and e.get("terms") and "percent_of_scale" in e["terms"])
             if wanted <= offered:
                 entries.append({"date": day, "party": "miami", "action": "answer", "terms": last["terms"],
                                 "note": "Accepted: the counter is inside what Miami offered."})

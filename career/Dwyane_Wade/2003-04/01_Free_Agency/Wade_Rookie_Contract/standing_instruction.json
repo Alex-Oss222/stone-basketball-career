@@ -1,0 +1,64 @@
+{
+ "schema_version": 1,
+ "owner": "user",
+ "player": "Dwyane Wade",
+ "recorded": "2026-10-03",
+ "purpose": "Wade's standing instruction for his rookie-scale negotiation: the driver submits this counter the day Miami's offer appears, and accepts Miami's agreement to it. The user wrote the structure (October 3, 2026); the driver fills the amounts from the scale.",
+ "counter": {
+  "pick": 5,
+  "protected_percent": 80,
+  "incentives": [
+   {
+    "id": "conditioning_program",
+    "label": "Offseason skill and conditioning program (10% of scale)",
+    "kind": "conditioning_program",
+    "percent": 10,
+    "benchmarks": {
+     "2003-04": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+     "2004-05": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+     "2005-06": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league."
+    }
+   },
+   {
+    "id": "physical_condition",
+    "label": "Preseason conditioning standard (10% of scale)",
+    "kind": "physical_condition",
+    "percent": 10,
+    "benchmarks": {
+     "2003-04": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+     "2004-05": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+     "2005-06": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league)."
+    }
+   },
+   {
+    "id": "minutes",
+    "label": "Regular-season minutes (10% of scale)",
+    "kind": "performance",
+    "percent": 10,
+    "classification": "unlikely",
+    "benchmarks": {
+     "2003-04": "At least 1,200 regular-season minutes played.",
+     "2004-05": "At least 1,200 regular-season minutes played.",
+     "2005-06": "At least 1,200 regular-season minutes played."
+    }
+   },
+   {
+    "id": "achievement",
+    "label": "Achievement (10% of scale)",
+    "kind": "performance",
+    "percent": 10,
+    "classification": "unlikely",
+    "benchmarks": {
+     "2003-04": "Selection to an NBA All-Rookie Team.",
+     "2004-05": "At least 15.0 points per game while appearing in at least 60 games.",
+     "2005-06": "At least 17.0 points per game while appearing in at least 60 games."
+    }
+   }
+  ],
+  "signing_bonus": 0,
+  "promised_role_contractual": false,
+  "note": "80% of scale as protected Current Cash Compensation plus up to 40% of scale in CBA-compliant incentives: 20% in physical-condition and designated-program incentives that count as Salary, 20% in objective performance incentives classified by the league (Unlikely for a rookie). Maximum compensation 120% of scale. Miami's stated role is a non-contractual basketball representation. No signing bonus. Three seasons plus the mandatory fourth-year team option at 26.7% over the third season's Salary."
+ },
+ "on_agreement": "accept",
+ "execution": "on or after the first legal signing day of the calendar (library/2003/league/nba_2003_04_calendar.json, first_signing_day); the user's source placed it at August 1, which is not supported by the repository's verified 2003 calendar and is not used."
+}

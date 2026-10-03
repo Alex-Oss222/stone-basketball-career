@@ -25,6 +25,7 @@ Activation: A verified player market window or actual dated Miami roster-market 
 | Date | Subject | Target | Request | Explanation | Source |
 | --- | --- | --- | --- | --- | --- |
 | 2003-06-26 | free_agent_target | Andre Miller | pursue | Wade asks the front office to go after Andre Miller (Los Angeles Clippers, rookie contract ending June 30, 2003) to run the point next to him. | [Recorded request](../2003-04/01_Free_Agency/wade_requests.json) |
+| 2003-06-26 | free_agent_target | Lamar Odom | pursue | Wade asks the front office to pursue Lamar Odom (Los Angeles Clippers, restricted free agent). Under world rule 1 his real August 2003 move to Miami never happens; he stays a Clippers free agent unless simulated Miami signs him, through an offer sheet the Clippers may match. | [Recorded request](../2003-04/01_Free_Agency/wade_requests.json) |
 
 ## Miami's actual negotiation records
 

@@ -49,6 +49,8 @@ def league_player_links(text: str, page: Path, player: Path, registry: dict) -> 
         name = plain_player_name(cell)
         if name not in names:
             return match.group(0)
+        if "/Players/" in cell or cell.startswith("[") and "Players/" in cell:
+            return match.group(0)        # the league card is the hub; it links the contract page itself
         return prefix + contract_player_link(page, player, names[name]) + suffix
 
     return re.sub(r"^(\|[ \t]*)([^|\n]*?)([ \t]*\|[^\n]*)$", replace, text, flags=re.M)

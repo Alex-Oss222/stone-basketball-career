@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="180" viewBox="0 0 1280 180" role="img" aria-labelledby="t d">
+<title id="t">Joseph Forte</title><desc id="d">Joseph Forte, Seattle SuperSonics, Shooting guard, #40.</desc>
+<rect width="1280" height="180" rx="24" fill="#00573f"/>
+<rect x="0" y="150" width="1280" height="30" fill="#f6be00" fill-opacity=".92"/>
+<rect x="0" y="150" width="1280" height="6" fill="#f6be00"/>
+<text x="48" y="78" font-family="sans-serif" font-size="54" font-weight="700" fill="#ffffff">Joseph Forte</text>
+<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Shooting guard · Seattle SuperSonics</text>
+<text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#40</text>
+</svg>

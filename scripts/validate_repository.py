@@ -155,6 +155,15 @@ def markdown_tables(text):
             yield rows[0],rows[2:]
 
 
+LINK_TEXT=re.compile(r"^\[([^\]]+)\]\(([^)]+)\)")   # the first link in a cell; a contract link may follow
+
+
+def cell_text(cell):
+    """A table cell's visible text; a Markdown link reads as its label."""
+    match=LINK_TEXT.match(cell.strip())
+    return match.group(1) if match else cell.strip()
+
+
 def report_errors(root, player, team):
     """Check navigation and player coverage across every existing period."""
     errors=[]
@@ -177,7 +186,7 @@ def report_errors(root, player, team):
             require(errors,all(len(row)==len(header) for row in rows),f"{label}: table column mismatch")
         if page.name in {"League_Stats.md","Team_Stats.md"}:
             production=[row for header,rows in tables if header[:1]==["Player"] and ("PPG" in header or "PTS" in header) for row in rows]
-            actual=Counter(plain_player_name(row[0]) for row in production)
+            actual=Counter(cell_text(row[0]) for row in production)
             require(errors,all(count==1 for count in actual.values()),f"{label}: duplicate player production rows")
             # Completed Miami periods retain former players; today's roster is not their source.
             if page.name=="League_Stats.md":
@@ -189,7 +198,10 @@ def report_errors(root, player, team):
                 group=re.search(rf"<summary>{pos} ·.*?</summary>(.*?)</details>",text,re.S)
                 require(errors,group is not None,f"{label}: missing {pos} position group")
                 if group:
-                    names=Counter(plain_player_name(row[0]) for header,rows in markdown_tables(group[1]) if "PPG" in header or "PTS" in header for row in rows)
+                    names=Counter(cell_text(row[0]) for header,rows in markdown_tables(group[1]) if "PPG" in header or "PTS" in header for row in rows)
+                    for header,rows in markdown_tables(group[1]):
+                        for row in rows:
+                            require(errors,LINK_TEXT.match(row[0].strip()) is not None,f"{label}: {cell_text(row[0])} is not linked to a league card")
                     require(errors,names==Counter(p["name"] for p in registry if p["position"]==pos),f"{label}: {pos} membership mismatch")
                     columns={column for header,_ in markdown_tables(group[1]) for column in header}
                     require(errors,{"Age","Pos","GS","MP","FG","FGA","3P","3PA","2P","2PA","eFG%","FT","FTA","ORB","DRB","TRB","PF","PTS"}<=columns,f"{label}: incomplete league per-game columns")
@@ -601,11 +613,16 @@ def validate():
 
     from runtime.game_requests import find_requests, request_errors
     errors.extend(request_errors(ROOT))
+    from runtime.season_games import is_league_slate
     for request in find_requests(ROOT):
+        if is_league_slate(request):
+            continue                      # the league slate has no game notes: its results are league records
         note=request.with_name(request.name.replace(".request.json",".md"))
         require(errors,note.is_file(),f"{request.relative_to(ROOT)}: no matching game note {note.name}")
 
     errors.extend(report_errors(ROOT,player,team))
+    from runtime.league_cards import card_errors
+    errors.extend(card_errors(ROOT))
     from runtime.player_reports import report_errors as player_report_errors
     errors.extend(player_report_errors(ROOT,player))
     return errors

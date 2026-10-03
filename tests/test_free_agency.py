@@ -204,19 +204,18 @@ class DriverTests(unittest.TestCase):
         if "Wade" in (report["stopped"] or ""):
             log_path = root / "career/Dwyane_Wade/2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json"
             log = json.loads(log_path.read_text())
-            self.assertEqual(log["entries"][-1]["action"], "offer")
-            self.assertIn(log["entries"][-1]["promise"]["role"], ("rotation", "starter"))   # never a reserve for a top-ten pick
-            self.assertGreaterEqual(log["entries"][-1]["promise"]["minutes_per_game"], 20)
-            log["entries"].append({"date": career["current_date"], "party": "wade", "action": "accept", "note": "test"})
-            log_path.write_text(json.dumps(log, indent=1))
-            report = Run(root).advance("2003-07-31")
+            offer = next(e for e in log["entries"] if e["action"] == "offer")
+            self.assertIn(offer["promise"]["role"], ("rotation", "starter"))   # never a reserve for a top-ten pick
+            self.assertGreaterEqual(offer["promise"]["minutes_per_game"], 20)
+            self.assertEqual(log["entries"][-1]["action"], "counter")          # Wade's standing counter goes in the same day
+            report = Run(root).advance("2003-07-31")                           # Miami agrees, Wade accepts, the contract executes
             self.assertIsNone(report["stopped"], report)
             log = json.loads(log_path.read_text())
-            self.assertEqual(log["entries"][-1]["action"], "sign")
+            self.assertEqual([e["action"] for e in log["entries"][-3:]], ["answer", "accept", "sign"])
             sheet = json.loads((root / "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json").read_text())
             wade = next(p for p in sheet["players"] if p["player"] == "Dwyane Wade")
             self.assertEqual(wade["status"], "under_contract")
-            self.assertEqual(wade["schedule"]["2003-04"], 2636400)
+            self.assertEqual(wade["schedule"]["2003-04"], 2197000)              # counted Salary: 80% protected plus 20% included incentives
             state = json.loads((root / "career/Dwyane_Wade/2003-04/current_state.json").read_text())
             self.assertEqual(state["contract_status"], "rookie_scale_contract")
             self.assertEqual(state["pending_player_decisions"], [])
@@ -234,3 +233,49 @@ class DriverTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RookieCounterTests(unittest.TestCase):
+    def test_layered_counter_reproduces_the_user_table_and_passes_the_rules(self):
+        from runtime.rookie_contract import layered_errors, layered_terms, log_errors
+        inst = json.loads((ROOT / "career/Dwyane_Wade/2003-04/01_Free_Agency/Wade_Rookie_Contract/standing_instruction.json").read_text())
+        c = inst["counter"]
+        terms = layered_terms(c["pick"], c["protected_percent"], c["incentives"])
+        self.assertEqual(terms["protected_schedule"]["2003-04"], 1757600)
+        self.assertEqual(terms["schedule"]["2003-04"], 2197000)              # counted: protected plus included incentives
+        self.assertEqual(terms["maximum_schedule"]["2003-04"], 2636400)
+        self.assertEqual(terms["schedule"]["2006-07"], round(2526600 * 1.267))
+        self.assertEqual(layered_errors(terms), [])
+        self.assertEqual(log_errors({"entries": [{"date": "2003-07-20", "party": "wade", "action": "counter", "terms": terms}]}), [])
+        too_rich = layered_terms(5, 80, c["incentives"] + [{"id": "x", "label": "x", "kind": "performance", "percent": 5, "benchmarks": {s: "y" for s in ("2003-04", "2004-05", "2005-06")}}])
+        self.assertTrue(any("Unlikely" in e or "120%" in e for e in layered_errors(too_rich)))
+        self.assertTrue(layered_errors(layered_terms(5, 70, c["incentives"][:2])))
+
+    def test_driver_submits_the_counter_agrees_and_signs_on_a_legal_day(self):
+        tmp, root = copy_repo()
+        self.addCleanup(tmp.cleanup)
+        run = Run(root)
+        run.market = Market("2003-07-18", root)
+        run.fo = FrontOffice("2003-07-18", run.market, root)
+        run.wade_offer("2003-07-18")
+        run.writer.commit()
+        log_path = root / "career/Dwyane_Wade/2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json"
+        log = json.loads(log_path.read_text())
+        self.assertEqual([e["action"] for e in log["entries"]], ["offer", "counter"])
+        self.assertEqual(log["entries"][1]["terms"]["structure"], "layered")
+        run1 = Run(root)
+        run1.wade_answer("2003-07-19")
+        run1.writer.commit()
+        log = json.loads(log_path.read_text())
+        self.assertEqual([e["action"] for e in log["entries"][-2:]], ["answer", "accept"])
+        self.assertTrue(log["entries"][-2].get("agreed"))
+        run2 = Run(root)
+        self.assertIsNone(run2.wade_answer("2003-07-20"))
+        run2.writer.commit()
+        log = json.loads(log_path.read_text())
+        self.assertEqual(log["entries"][-1]["action"], "sign")
+        sheet = json.loads((root / "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json").read_text())
+        wade = next(p for p in sheet["players"] if p["player"] == "Dwyane Wade")
+        self.assertEqual(wade["schedule"]["2003-04"], 2197000)
+        self.assertEqual(wade["protected_schedule"]["2003-04"], 1757600)
+        self.assertEqual(wade["percent_of_scale"], 120)

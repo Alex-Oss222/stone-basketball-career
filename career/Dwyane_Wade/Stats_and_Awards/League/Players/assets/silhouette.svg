@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="400" viewBox="0 0 320 400" role="img" aria-labelledby="t">
+<title id="t">No sourced photo</title>
+<rect width="320" height="400" rx="18" fill="#1d1d1f"/>
+<circle cx="160" cy="150" r="70" fill="#c5c7cb" fill-opacity=".55"/>
+<path d="M40 400 C40 290 100 250 160 250 C220 250 280 290 280 400 Z" fill="#c5c7cb" fill-opacity=".55"/>
+<text x="160" y="380" font-family="sans-serif" font-size="18" fill="#c5c7cb" text-anchor="middle">No sourced photo</text>
+</svg>

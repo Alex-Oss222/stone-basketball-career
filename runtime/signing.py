@@ -599,10 +599,20 @@ def sign_rookie(writer, log, terms, day):
     sheet, roster, depth = writer.load(TEAM / "Finances/contract_schedules.json"), writer.load(TEAM / "Team/Roster/roster.json"), writer.load(TEAM / "Team/Depth_Chart/depth_chart.json")
     entry = next(p for p in sheet["players"] if p["player"] == "Dwyane Wade")
     archive_previous_contract(writer, entry, day, source=str(TEAM / "Finances/contract_schedules.json"), player_id="wadedw01")
+    layered = terms.get("structure") == "layered"
+    percent = terms["total_percent"] if layered else terms["percent_of_scale"]
     entry.update(status="under_contract", schedule=dict(terms["schedule"]), amount_kind=dict(terms["amount_kind"]), signed_date=day,
                  original_term_seasons=3, team_option_season="2006-07", fourth_year_option_deadline=terms["fourth_year_option_deadline"],
-                 percent_of_scale=terms["percent_of_scale"], route="rookie_scale",
-                 notes=f"Rookie-scale contract signed {long_date(day)} at {terms['percent_of_scale']}% of the No. 5 scale: three seasons plus a team option for 2006-07, to be exercised by {terms['fourth_year_option_deadline']}. The draft hold ends with the signing.")
+                 percent_of_scale=percent, route="rookie_scale",
+                 notes=(f"Rookie-scale contract signed {long_date(day)}: {terms['protected_percent']}% of the No. 5 scale as protected Current Cash "
+                        f"Compensation plus incentives to {percent}%; the scheduled amounts are the counted Salary (protected cash, included "
+                        f"incentives and bonuses classified Likely); Unlikely bonuses count only when earned. Three seasons plus a team option for "
+                        f"2006-07 at the third season's Salary raised 26.7%, to be exercised by {terms['fourth_year_option_deadline']}. The draft hold ends with the signing."
+                        if layered else
+                        f"Rookie-scale contract signed {long_date(day)} at {percent}% of the No. 5 scale: three seasons plus a team option for 2006-07, to be exercised by {terms['fourth_year_option_deadline']}. The draft hold ends with the signing."))
+    if layered:
+        entry["protected_schedule"], entry["maximum_schedule"], entry["incentives"] = dict(terms["protected_schedule"]), dict(terms["maximum_schedule"]), [dict(l) for l in terms["incentives"]]
+        entry["bonus_evaluation"] = "each season's incentives are evaluated against closed results at the season rollover (docs/ROADMAP.md item 18)"
     entry.pop("current_cap_hold", None)
     entry["sources"] = ["01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json"] + [s for s in entry.get("sources", []) if "negotiation_log" not in s]
     archived = archive_contract(writer, entry, day, event="signed", source=str(PHASE / "Wade_Rookie_Contract/negotiation_log.json"),
@@ -612,15 +622,15 @@ def sign_rookie(writer, log, terms, day):
     for p in roster["players"]:
         if p["name"] == "Dwyane Wade":
             p["status"] = "under_contract"
-            p["control"] = f"Rookie-scale contract signed {long_date(day)}: ${first:,} in 2003-04, three seasons plus a 2006-07 team option; {terms['percent_of_scale']}% of scale."
+            p["control"] = f"Rookie-scale contract signed {long_date(day)}: ${first:,} counted in 2003-04, three seasons plus a 2006-07 team option; {percent}% of scale" + (" at the maximum, 80% protected" if layered else "") + "."
     for u in depth.get("unassigned_draft_rights", []):
         if u["name"] == "Dwyane Wade":
             u["status"] = "under_contract"
     sheet["as_of"] = roster["as_of"] = depth["as_of"] = day
     log["entries"].append({"date": day, "party": "miami", "action": "sign", "terms": terms,
                            "note": f"Contract executed {long_date(day)}; recorded on contract_schedules.json and the register."})
-    note_event(writer, PHASE / "note.md", day, f"Wade signs his rookie-scale contract at {terms['percent_of_scale']}% of scale: "
-               f"${first:,} in 2003-04, three seasons plus a 2006-07 team option. Record: `Wade_Rookie_Contract/negotiation_log.json`.")
+    note_event(writer, PHASE / "note.md", day, f"Wade signs his rookie-scale contract ({'80% protected plus incentives to ' if layered else ''}{percent}% of scale): "
+               f"${first:,} counted in 2003-04, three seasons plus a 2006-07 team option. Record: `Wade_Rookie_Contract/negotiation_log.json`.")
     state = writer.load(STATE)
     pending = [d for d in state.get("pending_player_decisions", []) if d != "rookie_contract_offer"]
     set_state(writer, day, last_event=f"{day}-wade-signs-rookie-contract", contract_status="rookie_scale_contract", roster_status="under_contract",

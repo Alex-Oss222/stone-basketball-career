@@ -27,7 +27,8 @@ class ContractNavigationTests(unittest.TestCase):
             self.assertEqual({plain_player_name(row["Player"]) for row in after}, set(expected))
             for original, linked in zip(before, after):
                 name = plain_player_name(linked["Player"])
-                self.assertIn(f"Contracts/players/{expected[name]}.html#contract", linked["Player"])
+                self.assertTrue(f"Players/{expected[name]}.md" in linked["Player"]        # the league card (hub)
+                                or f"Contracts/players/{expected[name]}.html#contract" in linked["Player"], linked["Player"])
                 self.assertEqual({k: v for k, v in original.items() if k != "Player"},
                                  {k: v for k, v in linked.items() if k != "Player"})
             self.assertEqual(outputs[page], league_player_links(outputs[page], page, PLAYER, registry))
