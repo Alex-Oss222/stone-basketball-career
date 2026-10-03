@@ -2,7 +2,7 @@
 
 **Illustrative templates only.** These independent scenarios use an Example Player, fictional offers and either fictional clubs or labeled NBA club contexts. They are not Wade's future, live offers, completed training, or simulation decisions. No live player response is recorded.
 
-[Open the interactive screen gallery](career_milestones_preview.html) · [Blank templates](../../templates/player_milestones/README.md) · [Career](../../../career/Dwyane_Wade/README.md) · [Statistical examples](../player_stats_preview.md)
+[Open the interactive screen gallery](career_milestones_preview.html) · [Shooting and awards cards](../player_cards_preview.html) · [Blank templates](../../templates/player_milestones/README.md) · [Career](../../../career/Dwyane_Wade/README.md) · [Statistical examples](../player_stats_preview.md)
 
 Nine reusable experiences, each with a different job. Start with the gallery to explore the screens, then open a filled example or copy its blank template. GitHub shows HTML source; download the gallery file and open it in a browser for the interactive view. It runs offline with no setup.
 

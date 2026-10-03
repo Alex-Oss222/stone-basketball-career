@@ -4,6 +4,10 @@
 
 These examples use the same calculations and presentation as the career reports. Start with the season and follow its month, week and game links.
 
+[Open interactive Shooting and Awards cards](player_cards_preview.html) · [Shooting page](sample_shooting.md) · [Annual Awards page](sample_awards.md)
+
+The two image banners are ordinary Markdown links and work in repository views. Open the HTML preview in a browser for period selectors and shot inspection. Synthetic locations illustrate the layout; they are not real tracking.
+
 | Level | Preview | What changes at this level |
 | --- | --- | --- |
 | Season | [Season summary](sample_season.md) · [Full detail](sample_season_detail.md) | Season totals, monthly comparison, splits and highs |
@@ -13,10 +17,10 @@ These examples use the same calculations and presentation as the career reports.
 
 ## Professional identity
 
-![Player personal information and earned career honors through 2003-11-12](assets/personal_2003-11-12.svg)
+![Player personal information and earned career awards through 2003-11-12](assets/personal_2003-11-12.svg)
 
 <details>
-<summary>Personal information and earned honors: text version</summary>
+<summary>Personal information and earned awards: text version</summary>
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -30,9 +34,9 @@ NBA entry: Example draft entry: round 1, pick 5.
 
 Identity as of 2003-11-12; status snapshot dated 2003-10-01. Illustrative player identity; not a canonical career record.
 
-### Earned career honors
+### Earned career awards
 
-| Honor | Period | Announced | Decision record |
+| Award | Period | Announced | Decision record |
 | --- | --- | --- | --- |
 | Rookie of the Month | 2003-10-01 to 2003-10-31 | 2003-11-01 | ROTM (example) |
 | Player of the Week | 2003-11-01 to 2003-11-07 | 2003-11-08 | POTW (example) |
@@ -41,11 +45,13 @@ Identity as of 2003-11-12; status snapshot dated 2003-10-01. Illustrative player
 
 ## Statistics
 
-Six illustrative appearances, plus one recorded DNP, through November 12. All honors here are fictional layout examples.
+Six illustrative appearances, plus one recorded DNP, through November 12. All awards here are fictional layout examples.
 
 ### Per game
 
-![Per-game player statistics](assets/per_game.svg)
+[![Shooting: open the shot-chart page](assets/shooting_link.svg)](sample_shooting.md#season) [![Awards: open the annual-awards page](assets/awards_link.svg)](sample_awards.md)
+
+[Interactive Shooting](player_cards_preview.html?period=season#shooting) · [Interactive Awards](player_cards_preview.html#awards) · [Shooting text version](sample_shooting.md) · [Awards text version](sample_awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -53,6 +59,6 @@ Six illustrative appearances, plus one recorded DNP, through November 12. All ho
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2003-11-12, filed by the honor's period-end date; the banner shows career honors known at the page's identity cutoff.
+Awards are confirmed through 2003-11-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistics definitions](../player_statistics.md) · [Current canonical career](../../career/Dwyane_Wade/README.md)
