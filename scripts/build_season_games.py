@@ -6,12 +6,16 @@
 
 For each Miami regular-season game on or before the date that has no note yet, the note
 `06_Regular_Season/<month>/Week_N/Game_N.md` (scheduled, competition regular, result_file) and the
-request `Game_N.request.json` next to it: Miami's players from the camp rotation
-(`00_Team/Team/Depth_Chart/rotation.json`), less the players the engine's injury draws keep out,
+request `Game_N.request.json` next to it: Miami's players from the staff rotation
+in force on the game date (camp's `rotation.json`, then `Depth_Chart/Reviews/<date>/rotation.json`),
+less the players the engine's injury draws keep out,
 re-scaled to 240 minutes, with Wade's perimeter-defense grade while it is in force; the opponent's
 real roster. Every request is validated with `runtime.game_requests.load_request` before it is kept,
 and the generated player report pages are rebuilt afterwards. A game is never written before its
 date, a request is never rewritten, and nothing is committed here (`runtime/season_games.py`).
+Before crossing a due fortnightly review, complete `scripts/review_rotation.py`
+and collect any starting-battle draws. An injured starter's next healthy backup
+gets an explicit start in the request and in the engine box score.
 """
 import argparse
 from pathlib import Path

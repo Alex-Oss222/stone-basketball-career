@@ -6,8 +6,9 @@ dated on or before the run date and not yet written, the game note
 record with the engine fields filled: status scheduled, competition regular,
 event_id, result_file) and the request `Game_N.request.json` next to it, in the
 format `runtime/game_requests.py` documents. Miami's side is the explicit
-`players` list from the camp decision (`00_Team/Team/Depth_Chart/rotation.json`,
-240 minutes in rotation order); players the engine's injury draws keep out
+`players` list from the dated staff rotation (camp's `rotation.json`, then
+`Depth_Chart/Reviews/<date>/rotation.json`), with 240 minutes in rotation order;
+players the engine's injury draws keep out
 (`runtime.injuries.injured_out` over Miami's closed results, in order) are left
 out, the next man on the staff's depth chart takes the last rotation slot, and
 the minutes are re-scaled to 240. Wade's `perimeter_defense` rating is carried
@@ -207,14 +208,39 @@ def depth_order(depth, roster):
     return out
 
 
-def rotation_for(rotation, injured, grades, replacements=()):
-    """Miami's `players` list for one game from the camp rotation.
+def rotation_for(rotation, injured, grades, replacements=(), unavailable=()):
+    """Miami's players and actual starters from the staff rotation.
 
     Injured players (`injured`: player -> games still out) leave the list; for each, the next man on
     the depth chart who is not in the rotation and not injured takes the last rotation slot's minutes
     (the staff's standing rule, judgement); the remaining minutes are re-scaled to 240 in order.
+    An injured starter's job passes to the next healthy player at that position,
+    including a reserve already in the rotation. Every request explicitly marks
+    the five opening players; minutes and foul substitutions cannot erase a start.
     Ratings carry only the dated staff grades in force (`grades`: player -> perimeter_defense)."""
-    kept = [dict(p) for p in rotation["players"] if p["player_id"] not in injured]
+    original = rotation["players"]
+    by_id = {p["player_id"]: p for p in original}
+    assignments = dict(rotation.get("starters", {}))
+    if assignments and (len(assignments) != 5 or len(set(assignments.values())) != 5):
+        raise ValueError("staff rotation must name exactly five valid starters")
+    if any("starter" in p for p in original):
+        if any(type(p.get("starter")) is not bool for p in original) or sum(p["starter"] for p in original) != 5:
+            raise ValueError("staff rotation must flag exactly five valid starters")
+        if assignments and {p["player_id"] for p in original if p["starter"]} != set(assignments.values()):
+            raise ValueError("staff rotation starter flags disagree with its positional assignments")
+    if not assignments:
+        explicit = [p for p in original if p.get("starter") is True]
+        pool = explicit if explicit else original
+        for p in pool:
+            if p["position"] not in assignments and len(assignments) < 5:
+                assignments[p["position"]] = p["player_id"]
+        for p in pool:
+            if len(assignments) == 5:
+                break
+            if p["player_id"] not in assignments.values():
+                assignments[f"slot_{len(assignments)}"] = p["player_id"]
+    excluded = set(injured) | set(unavailable)
+    kept = [dict(p) for p in rotation["players"] if p["player_id"] not in excluded]
     if not kept:
         raise ValueError("every rotation player is injured; the staff must write a new rotation")
     slot_minutes = min(p["minutes"] for p in kept)
@@ -223,7 +249,7 @@ def rotation_for(rotation, injured, grades, replacements=()):
     for entry in replacements:
         if out_count <= 0 or len(kept) >= GAME_DAY_ACTIVES:
             break
-        if entry["name"] in dressed or entry["name"] in injured:
+        if entry["name"] in dressed or entry["name"] in excluded:
             continue
         player = {"player_id": entry["name"], "position": entry.get("depth_position") or entry["positions"][0],
                   "minutes": slot_minutes, "ratings": {}}
@@ -232,6 +258,30 @@ def rotation_for(rotation, injured, grades, replacements=()):
         kept.append(player)
         dressed.add(entry["name"])
         out_count -= 1
+    if len(kept) < 5:
+        raise ValueError("fewer than five healthy rotation players; the staff must write a new rotation")
+    dressed = {p["player_id"] for p in kept}
+    starters = {name for name in assignments.values() if name in dressed}
+    next_up = [p["name"] for p in replacements] + [p["player_id"] for p in kept]
+    replacement_by_name = {p["name"]: p for p in replacements}
+    kept_by_name = {p["player_id"]: p for p in kept}
+    for pos, name in assignments.items():
+        if name in starters:
+            continue
+        candidates = [n for n in next_up if n in dressed and n not in starters]
+        def at_position(candidate):
+            entry = replacement_by_name.get(candidate, {})
+            return (entry.get("depth_position") == pos or pos in entry.get("positions", []) or
+                    kept_by_name[candidate]["position"] == pos)
+        preferred = [n for n in candidates if at_position(n)]
+        if candidates:
+            starters.add((preferred or candidates)[0])
+    for p in kept:
+        if len(starters) >= 5:
+            break
+        starters.add(p["player_id"])
+    if len(starters) != 5 or any(name not in by_id for name in assignments.values()):
+        raise ValueError("staff rotation must name exactly five valid starters")
     total = sum(p["minutes"] for p in kept)
     scale = 240 / total
     for p in kept:
@@ -242,19 +292,16 @@ def rotation_for(rotation, injured, grades, replacements=()):
             raise ValueError(f"{p['player_id']} would play {p['minutes']} minutes; too few healthy players")
         grade = grades.get(p["player_id"])
         p["ratings"] = {"perimeter_defense": grade} if grade is not None else {}
+        p["starter"] = p["player_id"] in starters
         p.pop("depth_position", None)
     return kept
 
 
 def miami_side(game_date, root=ROOT, season=SEASON):
-    """Miami's explicit players list for a game on `game_date`, from the camp decision and closed results."""
+    """Miami's explicit players from the staff decision in force on this date."""
+    from .rotation_reviews import rotation_in_force
     team = Path(root) / season_base(season) / "00_Team/Team"
-    rotation_path = team / "Depth_Chart/rotation.json"
-    if not rotation_path.exists():
-        raise ValueError("no rotation: the camp decision (rotation.json) has not been written")
-    rotation = read_json(rotation_path)
-    if rotation.get("as_of", "") > game_date:
-        raise ValueError(f"rotation.json is dated {rotation['as_of']}, after the game on {game_date}")
+    rotation, depth = rotation_in_force(game_date, root, season)
     results = [r for r in miami_results(root, season) if r.get("game_date", "") < game_date]
     injured = injured_out(results)
     if injured:
@@ -263,9 +310,15 @@ def miami_side(game_date, root=ROOT, season=SEASON):
         last = max(r.get("game_date", "") for r in results)
         between = sum(1 for d in miami_game_dates(root, season) if last < d < game_date)
         injured = {p: n - between for p, n in injured.items() if n - between > 0}
-    depth = read_json(team / "Depth_Chart/depth_chart.json")
     roster = read_json(team / "Roster/roster.json")
-    return rotation_for(rotation, injured, grades_in_force(game_date, root, season), depth_order(depth, roster)), injured
+    if roster.get("as_of", "") > game_date:
+        raise ValueError("no historical roster for this game; the available register is dated after it")
+    inactive = ("free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "pending", "draft_rights")
+    active = [p for p in roster["players"] if not any(word in p.get("status", "") for word in inactive)]
+    active_names = {p["name"] for p in active}
+    unavailable = {p["player_id"] for p in rotation["players"]} - active_names
+    return rotation_for(rotation, injured, grades_in_force(game_date, root, season),
+                        depth_order(depth, {"players": active}), unavailable), injured
 
 
 def miami_request(game, players):
@@ -298,11 +351,15 @@ def miami_games_due(until, root=ROOT, season=SEASON):
                 raise ValueError(f"{path.relative_to(root)} is filed outside its week folder")
             request = path.with_name(f"Game_{number}.request.json")
             if not request.exists():
+                if note_meta(path).get("status") == "played" or path.with_suffix(".result.json").exists():
+                    raise ValueError(f"{path.relative_to(root)}: cannot reconstruct a played or drawn game's missing request")
                 plan.append({"game": game, "number": number, "folder": folder, "note": False, "request": True})
             continue
         if latest > game["date"]:
             raise ValueError(f"{folder.relative_to(root)} already holds a game dated {latest}, after {game['date']}")
         number = (numbers[-1] if numbers else 0) + 1
+        if (folder / f"Game_{number}.request.json").exists() or (folder / f"Game_{number}.result.json").exists():
+            raise ValueError(f"{folder.relative_to(root)}/Game_{number}: orphan request/result has no owning note; refusing to overwrite it")
         counters[folder] = (numbers + [number], game["date"])
         plan.append({"game": game, "number": number, "folder": folder, "note": True, "request": True})
     return plan

@@ -14,6 +14,11 @@ On top of the per-play rates (docs/engine_model.md):
 * Defense: the five defenders' summed defensive value (DBPM scale, points per
   100 possessions) lowers the opponent's make probability and raises its
   turnovers, two thirds through shooting and one third through turnovers.
+  Blocks/steals allocate that shooting budget between two- and three-point
+  shots; they do not create defensive value for an ungraded player.
+* Shot creation: usage above a player's own expected share lowers efficiency;
+  teammates' passing improves it. Live steals and defensive rebounds can start
+  shorter, easier transition plays, centered on the era's existing rates.
 * Rotation: each player brings minutes per game and an availability; the engine
   draws who is available, dresses the top of the rotation and fills 240 minutes
   in rotation order, raising the rest within caps when short-handed.
@@ -87,6 +92,16 @@ BACK_TO_BACK_INJURY = 1.2       # risk factor on the second night of a back-to-b
 INJURY_LENGTHS = ((0.55, 1, 2, "day-to-day"), (0.25, 3, 7, "short"), (0.13, 8, 20, "medium"),
                   (0.06, 21, 50, "long"), (0.01, 51, 82, "season"))
 CAREFUL = 0.25                  # foul weight of a player one foul from disqualification
+# Shot creation: structural assumptions, not fits to any player's career.
+USAGE_MAKE_SLOPE, USAGE_MAKE_LIMIT = 0.30, 0.06
+PASSING_MAKE_SLOPE, PASSING_MAKE_LIMIT = 0.018, 0.035
+TRANSITION_AFTER_STEAL, TRANSITION_AFTER_REBOUND = 0.70, 0.22
+TRANSITION_SECONDS = 7.0
+TRANSITION_TWO_BONUS, TRANSITION_THREE_BONUS = 0.08, 0.02
+# Source percentages include final-clock/forced attempts. The kernel applies
+# those penalties explicitly; aggregate prior-environment validation measured
+# a residual 1.4 percentage-point loss on threes before this correction.
+THREE_MAKE_CALIBRATION = 0.014
 
 
 @dataclass(frozen=True)
@@ -107,6 +122,7 @@ class TeamInput:
     pace: float = 1.0               # the club's pace relative to the league (problem E6)
     rest_days: int = 2              # days off before this game; 0 is the second night of a back-to-back
     injuries: bool = False          # draw injuries for this club's players (the simulated club; E7)
+    starters: tuple = ()            # dated staff choice; availability may require replacements
 
 
 def team_errors(team, rules):
@@ -124,6 +140,9 @@ def team_errors(team, rules):
     ids = [p.player_id for p in players]
     if len(ids) != len(set(ids)):
         errors.append("duplicate player ids")
+    if team.starters and (len(team.starters) != 5 or len(set(team.starters)) != 5
+                          or any(pid not in ids for pid in team.starters)):
+        errors.append("starters must name five different roster players")
     if len(players) < rules["players_on_floor"]:
         errors.append("fewer than five available players")
     availability = [p.availability for p in players]
@@ -186,6 +205,9 @@ def team_errors(team, rules):
 
 def team_packet(team):
     data = asdict(team)
+    if not team.starters:
+        # Preserve the shape (and journal digest) of historical input packets.
+        data.pop("starters")
     data["players"] = [dict(p, ratings=dict(sorted(p["ratings"].items()))) for p in data["players"]]
     return data
 
@@ -212,12 +234,23 @@ def calibrate(environment):
     make_value = shot_points / fgm - a["orb"] / misses * per_possession
     shot_value = a["fga"] / box_possessions * make_value
     turnover_value = plays / box_possessions * (shot_points + a["orb"] * per_possession) / a["fga"]
+    p_extra_foul = max(0.0, a["pf"] - LATE_FOUL_PF - trips - and_one_fta) / box_possessions
+    transition_share = ((a["stl"] * TRANSITION_AFTER_STEAL + a["drb"] * TRANSITION_AFTER_REBOUND)
+                        / box_possessions * (1 - p_extra_foul))
+    mean_seconds = 2880 / (2 * box_possessions) - ORB_CONTINUATION_SECONDS * a["orb"] / box_possessions
+    continuation_value = a["orb"] / misses * per_possession
+    and_one_value = and_one_fta / fgm * a["ft_pct"]
+    two_value, three_value = 2 + and_one_value - continuation_value, 3 + and_one_value - continuation_value
     return {
         # The clock is calibrated so the box-score totals (FGA, TOV, FTA, ORB)
         # land on the era averages. Possessions counted from those totals run a
         # little above the published pace, whose estimator differs; the box
         # totals are what a game record shows, so they take priority.
-        "possession_seconds": 2880 / (2 * box_possessions) - ORB_CONTINUATION_SECONDS * a["orb"] / box_possessions,
+        "possession_seconds": (mean_seconds - transition_share * TRANSITION_SECONDS) / (1 - transition_share),
+        "transition_share": transition_share,
+        # Offensive rebounds create additional half-court plays, diluting transition shots.
+        "transition_play_share": transition_share * box_possessions / plays,
+        "defense_three_share": a["three_pa"] * three_value / (two_a * two_value + a["three_pa"] * three_value),
         "p_team_tov": team_tov / plays,
         "p_tov": player_tov / (plays - team_tov),
         "p_trip": trips / (plays - team_tov),
@@ -237,7 +270,7 @@ def calibrate(environment):
         "p_stl": a["stl"] / player_tov,
         "p_blk": a["blk"] / misses,
         # Drawn once per engine possession, which follow the box totals rather than the published pace.
-        "p_extra_foul": max(0.0, a["pf"] - LATE_FOUL_PF - trips - and_one_fta) / box_possessions,
+        "p_extra_foul": p_extra_foul,
         "home_edge": assumptions["home_edge_points_per_game"] / (2 * a["fga"] * make_value),
         "home_points": assumptions["home_edge_points_per_game"],
         "edge_per_point": 1 / (a["fga"] * make_value),     # make-probability shift worth one point a game
@@ -259,19 +292,70 @@ def _rate_weight(player, key, position_index, cal, legacy_key=None):
     return POSITION_PROFILE[player.position][position_index] * (1 + 0.02 * _rating(player, legacy_key))
 
 
-def _expected_points(club, opponent, cal):
-    """Expected points per possession of `club` against `opponent`, from the dressed players'
-    minute targets and the same per-play rates `play` uses (before the home edge and the score
-    effect). It centres the score effect on the margin the two rosters should produce."""
+def _usage_adjustment(player, total_weight, cal):
+    """Extra load relative to this player's own expected usage costs shot quality.
+
+    Five league-average usage weights sum to five. Normalizing the player's
+    estimate onto that scale keeps a neutral lineup neutral in every era.
+    """
+    weight = _rate_weight(player, "usage_pct", 0, cal, "usage")
+    extra_share = weight / max(.01, total_weight) - weight / 5
+    return _clamp(-USAGE_MAKE_SLOPE * extra_share, -USAGE_MAKE_LIMIT, USAGE_MAKE_LIMIT)
+
+
+def _passing_weight(player, cal):
+    weight = _rate_weight(player, "assist_pct", 3, cal, "passing")
+    if not player.stat_profile:
+        weight /= sum(profile[3] for profile in POSITION_PROFILE.values()) / 5
+    return weight
+
+
+def _passing_adjustment(teammates, cal):
+    """Mean teammate passing quality; (player, presence) pairs exclude the shooter."""
+    weight = sum(presence for _, presence in teammates)
+    quality = sum(presence * _passing_weight(player, cal) for player, presence in teammates) / max(.01, weight)
+    return _clamp(PASSING_MAKE_SLOPE * (quality - 1), -PASSING_MAKE_LIMIT, PASSING_MAKE_LIMIT)
+
+
+def _defensive_split(player, cal):
+    """Allocate existing DBPM, never infer defensive ability from blocks or steals.
+
+    The two-point side is an interior proxy: the inputs contain no rim/midrange
+    locations. A one-baseline-event prior in each channel shrinks specialization.
+    League shot values normalize the split to the original shooting budget.
+    """
+    value = _defense(player)
+    if not value:
+        return 0.0, 0.0
+    blocks = _rate_weight(player, "block_pct", 5, cal, "interior_defense")
+    steals = _rate_weight(player, "steal_pct", 4, cal, "perimeter_defense")
+    tilt = (blocks - steals) / (blocks + steals + 2)
+    two, three = 1 + tilt, 1 - tilt
+    share = cal["defense_three_share"]
+    normalizer = (1 - share) * two + share * three
+    return value * two / normalizer, value * three / normalizer
+
+
+def _transition_adjustment(is_three, transition, cal):
+    bonus = TRANSITION_THREE_BONUS if is_three else TRANSITION_TWO_BONUS
+    # Real season make rates already include fast breaks; remove the expected
+    # contribution from every shot before adding it to actual transition shots.
+    return bonus * (int(transition) - cal["transition_play_share"])
+
+
+def _expected_play_rates(club, opponent, cal, transition_share=None):
+    """Minute-weighted points, misses, rebounds and steals for one play."""
     presence = {pid: club.targets[pid] / 48 for pid in club.order}
     against = {pid: opponent.targets[pid] / 48 for pid in opponent.order}
     team_defense = sum(against[pid] * _defense(opponent.players[pid]) for pid in opponent.order)
+    defense_two = sum(against[pid] * _defensive_split(opponent.players[pid], cal)[0] for pid in opponent.order)
+    defense_three = sum(against[pid] * _defensive_split(opponent.players[pid], cal)[1] for pid in opponent.order)
     perimeter = sum(against[pid] * _rating(opponent.players[pid], "perimeter_defense") for pid in opponent.order) / 5
     interior = sum(against[pid] * _rating(opponent.players[pid], "interior_defense") for pid in opponent.order) / 5
     usage = {pid: presence[pid] * _rate_weight(club.players[pid], "usage_pct", 0, cal, "usage") for pid in club.order}
     total = sum(usage.values()) or 1.0
     mean_three = sum(u * POSITION_PROFILE[club.players[pid].position][1] for pid, u in usage.items()) / total
-    value = misses = 0.0
+    value = misses = turnovers = 0.0
     for pid in club.order:
         player = club.players[pid]
         rates = player.stat_profile.get("rates")
@@ -294,18 +378,46 @@ def _expected_points(club, opponent, cal):
             p3 = cal["p_three"] + RATING_SLOPE * _rating(player, "three_point_shooting")
             ft = _clamp(cal["p_ft"] + RATING_SLOPE * _rating(player, "free_throws"), 0.3, 0.97)
         p_tov = _clamp(p_tov + cal["tov_per_defense"] * team_defense, 0.005, 0.6)
-        p2 = _clamp(p2 - RATING_SLOPE * interior - cal["make_per_defense"] * team_defense, 0.0, 1.0)
-        p3 = _clamp(p3 - RATING_SLOPE * perimeter - cal["make_per_defense"] * team_defense, 0.0, 1.0)
+        creation = _usage_adjustment(player, total, cal) + _passing_adjustment(
+            [(club.players[mate], presence[mate]) for mate in club.order if mate != pid], cal)
+        transition_delta = (transition_share - cal["transition_play_share"]) if transition_share is not None else 0.0
+        p2 = _clamp(p2 + creation + transition_delta * TRANSITION_TWO_BONUS
+                    - RATING_SLOPE * interior - cal["make_per_defense"] * defense_two, 0.0, 1.0)
+        p3 = _clamp(p3 + THREE_MAKE_CALIBRATION + creation + transition_delta * TRANSITION_THREE_BONUS
+                    - RATING_SLOPE * perimeter - cal["make_per_defense"] * defense_three, 0.0, 1.0)
         shot = max(0.0, 1 - p_tov - p_trip)
         make = three * p3 + (1 - three) * p2
         share = usage[pid] / total
         value += share * (p_trip * 2 * ft + shot * (three * p3 * 3 + (1 - three) * p2 * 2 + make * p_and_one * ft))
         misses += share * shot * (1 - make)
+        turnovers += share * p_tov
     o_reb = sum(presence[pid] * _rate_weight(club.players[pid], "offensive_rebound_pct", 2, cal, "rebounding") for pid in club.order)
     d_reb = sum(against[pid] * _rate_weight(opponent.players[pid], "defensive_rebound_pct", 2, cal, "rebounding") for pid in opponent.order)
     p_orb = _clamp(cal["p_orb"] * (o_reb / max(.01, d_reb)) ** 0.5, 0.05, 0.6)
     kept = 1 - cal["p_team_tov"]
-    return kept * value / (1 - kept * misses * p_orb)
+    steal_weight = sum(against[pid] * _rate_weight(opponent.players[pid], "steal_pct", 4, cal, "perimeter_defense")
+                       for pid in opponent.order) / 5
+    p_stl = cal["p_stl"] * (steal_weight if any(opponent.players[pid].stat_profile for pid in opponent.order) else 1)
+    return kept * value, kept * misses, p_orb, kept * turnovers * _clamp(p_stl, 0, .98)
+
+
+def _expected_points(club, opponent, cal):
+    """Expected points per possession before home edge and score effects.
+
+    The same creation and defensive terms as live play set the par margin.
+    Opponent misses and turnovers also predict this club's transition chances;
+    a turnover-producing defense therefore retains its fast-break benefit.
+    """
+    value, misses, p_orb, _ = _expected_play_rates(club, opponent, cal)
+    _, other_misses, other_orb, steals = _expected_play_rates(opponent, club, cal)
+    other_continuation = 1 - other_misses * other_orb
+    steals /= other_continuation
+    drb = other_misses * (1 - other_orb) * cal["p_player_drb"] / other_continuation
+    transitions = (steals * TRANSITION_AFTER_STEAL + drb * TRANSITION_AFTER_REBOUND)
+    transitions *= 1 - cal["p_extra_foul"]       # common fouls stop the break
+    transition_share = transitions * (1 - misses * p_orb)
+    value, misses, p_orb, _ = _expected_play_rates(club, opponent, cal, transition_share)
+    return value / (1 - misses * p_orb)
 
 
 def _clamp(p, low=0.01, high=0.99):
@@ -368,6 +480,8 @@ class _Club:
         self.points = 0
         self.period_points = []
         self.team_turnovers = 0
+        self.started = set()
+        self.transition = {key: 0 for key in ("possessions", "after_steal", "after_rebound", "seconds", "fga", "fgm", "points")}
 
 
 def _weighted(rng, items, weights):
@@ -394,7 +508,7 @@ def _eligible(club, sitting=frozenset()):
     return free
 
 
-def _choose_lineup(club, elapsed, game_seconds, mode="normal", sitting=frozenset()):
+def _choose_lineup(club, elapsed, game_seconds, mode="normal", sitting=frozenset(), opening=False):
     """Pick the five whose played time lags their target share the most.
 
     `closing`: the five with the largest targets (the coach's best players).
@@ -414,6 +528,16 @@ def _choose_lineup(club, elapsed, game_seconds, mode="normal", sitting=frozenset
             bench = [pid for pid in ranked if pid not in starters]
             if len(bench) >= 5:
                 ranked = bench + [pid for pid in ranked if pid in starters]
+    if opening and club.team.starters:
+        starters = [pid for pid in club.team.starters if pid in candidates]
+        for missing in (pid for pid in club.team.starters if pid not in candidates):
+            position = club.players[missing].position
+            replacement = next((pid for pid in ranked if pid not in starters and club.players[pid].position == position), None)
+            if replacement is None:
+                replacement = next(pid for pid in ranked if pid not in starters)
+            starters.append(replacement)
+        ranked = starters + [pid for pid in ranked if pid not in starters]
+        return ranked[:5]       # an explicit staff choice may deliberately be small
     lineup = ranked[:5]
     # Keep one guard and one big on the floor when the bench allows it. The player replaced is the
     # lowest-ranked one who was not just brought in and is not the only guard or big.
@@ -548,6 +672,8 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         weights = o_weights if side == offense else d_weights
         pid = _weighted(rng, club.on_floor, weights)
         club.lines[pid]["orb" if side == offense else "drb"] += 1
+        if side == defense:
+            state["transition"] = (defense, "rebound")
         return side == offense
 
     def intentional_foul(offense):
@@ -557,11 +683,12 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         foul(other(offense), "intentional")
         free_throws(offense, shooter, 2)
 
-    def play(offense, three_floor=None, last=False):
+    def play(offense, three_floor=None, last=False, transition=False):
         """Resolve one possession; return True when the offense keeps the ball (offensive rebound).
         `last`: the period's final possession, against a set defense that knows it."""
         defense = other(offense)
         o, d = clubs[offense], clubs[defense]
+        state.pop("transition", None)
         if rng.random() < cal["p_team_tov"]:
             o.team_turnovers += 1
             return False
@@ -588,6 +715,7 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
             p_stl = cal["p_stl"] * sum(weights)/5 if any(d.players[pid].stat_profile for pid in d.on_floor) else cal["p_stl"]
             if rng.random() < _clamp(p_stl, 0, .98):
                 d.lines[_weighted(rng, d.on_floor, weights)]["stl"] += 1
+                state["transition"] = (defense, "steal")
             return False
         if roll < p_tov + p_trip:
             foul(defense, "shooting")
@@ -605,6 +733,7 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         is_three = rng.random() < three_share
         defense_key = "perimeter_defense" if is_three else "interior_defense"
         def_rating = sum(_rating(d.players[pid], defense_key) for pid in d.on_floor) / 5
+        shot_defense = sum(_defensive_split(d.players[pid], cal)[int(is_three)] for pid in d.on_floor)
         if rates:
             p_make = rates["three_point_pct" if is_three else "two_point_pct"]
         elif is_three:
@@ -615,15 +744,23 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         # Score effect: a team ahead of where these rosters should be relaxes, one behind presses.
         par = expected_margin * min(1.0, state["elapsed"] / regulation_seconds) * (1 if offense == "home" else -1)
         lead = max(-LEAD_CAP, min(LEAD_CAP, o.points - d.points - par))
-        p_make = _clamp(p_make - RATING_SLOPE * def_rating - cal["make_per_defense"] * team_defense
+        creation = _usage_adjustment(player, sum(handlers), cal) + _passing_adjustment(
+            [(o.players[pid], 1.0) for pid in o.on_floor if pid != shooter], cal)
+        p_make = _clamp(p_make + (THREE_MAKE_CALIBRATION if is_three else 0)
+                        + creation + _transition_adjustment(is_three, transition, cal)
+                        - RATING_SLOPE * def_rating - cal["make_per_defense"] * shot_defense
                         - LEAD_EFFECT * lead + edge[offense], 0.0, 1.0) * (LAST_SHOT if last else 1.0)
         line = o.lines[shooter]
         line["fga"] += 1
+        if transition:
+            o.transition["fga"] += 1
         if is_three:
             line["tpa"] += 1
         if rng.random() < p_make:
             value = 3 if is_three else 2
             line["fgm"] += 1
+            if transition:
+                o.transition["fgm"] += 1
             line["tpm"] += int(is_three)
             line["pts"] += value
             o.points += value
@@ -661,15 +798,19 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
 
     def run_period(number, seconds, offense, game_seconds, elapsed_before):
         state["period"], state["clock"] = number, seconds
+        state.pop("transition", None)       # a new period always begins against a set defense
         late = number >= rules["quarters"]
 
         def substitute(mode):
             for club in clubs.values():
                 club.on_floor = _choose_lineup(club, elapsed_before + seconds - state["clock"], game_seconds,
-                                               mode, sitting(club))
+                                               mode, sitting(club), opening=number == 1 and state["clock"] == seconds)
 
         mode = lineup_mode()
         substitute(mode)
+        if number == 1:
+            for club in clubs.values():
+                club.started = set(club.on_floor)
         for club in clubs.values():
             club.period_points.append(club.points)
         since_sub = 0.0
@@ -683,11 +824,14 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
 
         while state["clock"] > 0:
             clock = state["clock"]
+            origin = state.pop("transition", None)
+            transition = False
             now = lineup_mode()
             if since_sub >= SUB_SECONDS or now != mode:
                 mode = now
                 substitute(mode)
                 since_sub = 0.0
+                origin = None                 # substitution is a dead ball
             lead = clubs[offense].points - clubs[other(offense)].points
             if late and 0 < lead and clock <= foul_window(lead):
                 # The trailing defense fouls at once to stop the clock (E4), if it can before the horn.
@@ -700,10 +844,20 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
                 intentional_foul(offense)
                 offense = other(offense)
                 continue
+            if origin is not None and origin[0] == offense and clock > shot_clock:
+                chance = TRANSITION_AFTER_STEAL if origin[1] == "steal" else TRANSITION_AFTER_REBOUND
+                transition = rng.random() < chance
+                if late and lead > 0 and clock <= LATE_SECONDS:
+                    transition = False           # protect the lead and use the clock
+            common_foul = rng.random() < cal["p_extra_foul"]
+            if common_foul:
+                transition = False               # dead ball resets shot quality and tempo
             three_floor = None
             if late and lead <= -3 and clock <= 60:
                 three_floor = THREE_FLOOR[1] if lead == -3 and clock <= shot_clock else THREE_FLOOR[0]
-            if late and lead < 0 and clock <= LATE_SECONDS:
+            if transition:
+                drawn = max(3.0, min(float(shot_clock), rng.gauss(TRANSITION_SECONDS / game_pace, 2.0)))
+            elif late and lead < 0 and clock <= LATE_SECONDS:
                 if lead >= -3 and clock <= shot_clock:
                     drawn = max(1.0, clock - rng.uniform(2.0, 8.0))   # a good shot, leaving a little time
                 else:
@@ -723,9 +877,16 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
                 run(min(clock, drawn))
             possessions[offense] += 1
             # Non-shooting defensive fouls (reach-ins, loose balls, illegal screens excluded).
-            if rng.random() < cal["p_extra_foul"]:
+            if common_foul:
                 foul(other(offense), "common")
-            kept = play(offense, three_floor, last=state["clock"] <= 0)
+            before_points = clubs[offense].points
+            if transition:
+                clubs[offense].transition["possessions"] += 1
+                clubs[offense].transition["after_" + origin[1]] += 1
+                clubs[offense].transition["seconds"] += min(clock, drawn)
+            kept = play(offense, three_floor, last=state["clock"] <= 0, transition=transition)
+            if transition:
+                clubs[offense].transition["points"] += clubs[offense].points - before_points
             while kept and state["clock"] > 0:
                 run(min(state["clock"], max(2.0, rng.gauss(ORB_CONTINUATION_SECONDS, 3.0))))
                 kept = play(offense, three_floor)
@@ -781,6 +942,7 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
             line["seconds"] = round(line["seconds"], 3)
             line["minutes"] = round(line["seconds"] / 60, 1)
             line["fouled_out"] = pid in club.fouled_out
+            line["started"] = pid in club.started
             rows.append({"player_id": pid, **line})
         return rows
 
@@ -800,6 +962,8 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         "team_stats": {side: team_totals(club) for side, club in clubs.items()},
         "player_stats": {side: box(club) for side, club in clubs.items()},
         "inactive": {side: list(club.inactive) for side, club in clubs.items()},
+        "transition_stats": {side: {**club.transition, "seconds": round(club.transition["seconds"], 3)}
+                             for side, club in clubs.items()},
         "game_seconds": elapsed,
         "injuries": injuries,
         "terminated": True,
@@ -839,6 +1003,24 @@ def validate_result(result):
         floor_seconds = sum(r["seconds"] for r in rows)
         if abs(floor_seconds - 5 * result["game_seconds"]) > 0.01 * len(rows):
             errors.append(f"{side}: floor time {floor_seconds} != 5 x {result['game_seconds']}")
+        if any("started" in row for row in rows):
+            if (any(not isinstance(row.get("started"), bool) for row in rows)
+                    or sum(row.get("started") is True for row in rows) != 5
+                    or any(row.get("started") is True and row["seconds"] <= 0 for row in rows)):
+                errors.append(f"{side}: starters must identify the five players who opened the game")
+        if "transition_stats" in result:
+            transition = result["transition_stats"].get(side, {})
+            keys = {"possessions", "after_steal", "after_rebound", "seconds", "fga", "fgm", "points"}
+            valid = (set(transition) == keys and all(
+                not isinstance(v, bool) and isinstance(v, (int, float)) and math.isfinite(v) and v >= 0
+                and (key == "seconds" or isinstance(v, int)) for key, v in transition.items()))
+            if not valid:
+                errors.append(f"{side}: invalid transition counters")
+            elif (transition["after_steal"] + transition["after_rebound"] != transition["possessions"]
+                  or not transition["fgm"] <= transition["fga"] <= transition["possessions"] <= team["possessions"]
+                  or transition["after_steal"] > team["stl"] or transition["after_rebound"] > team["drb"]
+                  or transition["points"] > team["pts"] or transition["seconds"] > result["game_seconds"]):
+                errors.append(f"{side}: transition counters do not reconcile")
         for r in rows:
             if r["fgm"] > r["fga"] or r["tpm"] > r["tpa"] or r["ftm"] > r["fta"] or r["tpa"] > r["fga"]:
                 errors.append(f"{side}: {r['player_id']} has impossible shooting line")

@@ -174,10 +174,12 @@ class WriteBackRunTests(unittest.TestCase):
         self.assertGreater(wade["seconds"], 0)
         game_row = rows_by_first_cell(text, ["Scope"])["This game"]
         self.assertEqual((game_row["G"], game_row["PTS"], game_row["FG%"]), ("1", f"{wade['pts']:.1f}", ratio(wade["fgm"], wade["fga"])))
+        self.assertEqual(game_row["GS"], str(int(wade["started"])))
         for page in (STATS / "2003-04/10_October/Week_4/README.md", STATS / "2003-04/10_October/README.md", STATS / "2003-04/README.md",
                      SEASON / "06_Regular_Season/10_October/Week_4/README.md"):
             row = rows_by_first_cell((root / page).read_text(), ["Scope"])["This scope"]
             self.assertEqual(row["G"], "1", page)
+            self.assertEqual(row["GS"], str(int(wade["started"])), page)
             self.assertEqual(row["PTS"], f"{wade['pts']:.1f}", page)
             self.assertEqual(row["TRB"], f"{wade['orb'] + wade['drb']:.1f}", page)
             self.assertEqual(row["MP"], f"{wade['seconds'] / 60:.1f}", page)
@@ -200,6 +202,7 @@ class WriteBackRunTests(unittest.TestCase):
         self.assertEqual((production["Dwyane Wade"]["G"], production["Dwyane Wade"]["PPG"]), ("1", f"{wade['pts']:.1f}"))
         self.assertEqual(production["Alonzo Mourning"]["G"], "0")        # on the register, no appearance
         shooting = rows_by_first_cell(team_page, ["Player", "GS"])
+        self.assertEqual(shooting["Dwyane Wade"]["GS"], str(int(wade["started"])))
         self.assertEqual((shooting["Dwyane Wade"]["FG"], shooting["Dwyane Wade"]["FG%"]), (f"{wade['fgm']}/{wade['fga']}", ratio(wade["fgm"], wade["fga"])))
         season_team = (root / STATS / "Team/2003-04/Team_Stats.md").read_text()
         self.assertIn("| [October 2003](10_October/Team_Stats.md) | October 1-31, 2003 | 1 | Through October 28, 2003 |", season_team)
@@ -227,7 +230,7 @@ class WriteBackRunTests(unittest.TestCase):
                 self.assertEqual(row["PTS"], f"{r['pts']:.1f}", (page, name))
                 self.assertEqual(row["FG%"], ratio(r["fgm"], r["fga"]), (page, name))
                 self.assertEqual(row["eFG%"], ratio(r["fgm"] + .5 * r["tpm"], r["fga"]), (page, name))
-                self.assertEqual(row["GS"], "N/A")
+                self.assertEqual(row["GS"], str(int(r["started"])))
             self.assertEqual(rows["Alvin Williams"]["G"], "0")
             self.assertEqual(set(list(rows["Alvin Williams"].values())[5:]) - {"0"}, {"N/A"})
             self.assertIn("| Category | 1 | 2 | 3 |", league)
@@ -239,6 +242,7 @@ class WriteBackRunTests(unittest.TestCase):
         wade_card = (root / STATS / "League/Players/wadedw01.md").read_text()
         season_row = rows_by_first_cell(wade_card, ["Scope"])["2003-04 regular season"]
         self.assertEqual((season_row["G"], season_row["PTS"]), ("1", f"{wade['pts']:.1f}"))
+        self.assertEqual(season_row["GS"], str(int(wade["started"])))
         self.assertIn("1 closed games feed this card", wade_card)
         payload = json.loads(re.search(r'type="application/json">(.*?)</script>', (root / STATS / "League/Players/wadedw01.html").read_text(), re.S).group(1)
                              .replace("\\u003c", "<").replace("\\u003e", ">").replace("\\u0026", "&"))

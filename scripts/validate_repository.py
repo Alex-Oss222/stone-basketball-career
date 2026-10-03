@@ -613,6 +613,8 @@ def validate():
 
     from runtime.game_requests import find_requests, request_errors
     errors.extend(request_errors(ROOT))
+    from runtime.rotation_reviews import review_errors
+    errors.extend(review_errors(ROOT))
     from runtime.season_games import is_league_slate
     for request in find_requests(ROOT):
         if is_league_slate(request):

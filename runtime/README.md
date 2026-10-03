@@ -1,6 +1,6 @@
 # Game engine
 
-Kernel `2003.5`, schema `1`.
+Kernel `2003.6`, schema `1`.
 
 ## Detailed live career screens
 
@@ -40,6 +40,8 @@ Unmatched players retain optional legacy ratings on a 20–80 scale (`three_poin
 
 Kernels 2003.3 to 2003.5 add team defense, availability-based rotations, late-game logic, foul trouble, a score effect, team pace, back-to-back fatigue and injuries for Miami. The model, its constants and the calibration record are in [docs/engine_model.md](../docs/engine_model.md); `python scripts/engine_diagnostics.py 4` re-runs the check: four seasons of the real 2003-04 schedule between real rosters on their dates (analysis only, nothing is written; add `--defense-test` or `--home-test` for the paired checks).
 
+Kernel 2003.6 adds usage-dependent shooting efficiency, teammate passing effects, interior/perimeter defensive specialization, and transition after steals and defensive rebounds. Interior defense uses two-point shots as a proxy; no shot locations, matchups, size or chemistry are invented. `python scripts/engine_diagnostics.py 4 --check --summary-json /tmp/engine-summary.json` checks aggregate box totals and shooting against the real prior-season environment. Actual opening-lineup `started` flags and aggregate `transition_stats` are included in new results. Existing stored results stay unchanged across upgrades and edited packets are still refused.
+
 Rotations: a club is an explicit `players` list (Miami's AI/GM states its rotation this way; minutes sum to 240), `"rotation": "real"` for a real club's real roster on the game's date, with minutes per game and availability, less any player simulated Miami holds (`runtime/rotations.py`, roadmap item 8, world model D), or a `baseline` library file. With availabilities the engine draws who is available, dresses up to 12 in rotation order and fills 240 minutes. Six fouls disqualify. Overtime is five minutes.
 
 `runtime/league.py` builds the older baseline rotation for background clubs from the end-of-2002-03 depth order. It is a default, not a coaching decision; Miami's rotation belongs to the AI/GM records.
@@ -52,6 +54,10 @@ Nothing is written by hand. Both builders read the season schedule (`library/200
 - `python scripts/build_league_slate.py --write <date>` (the league, item 11): a request for every non-Miami regular-season game on or before the date, `career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Games/<game_id>.request.json` (both clubs `"rotation": "real"`, game_type regular, venue home) with a README. Railway finds them like any request and `scripts/collect_results.py` writes `<game_id>.result.json` beside each; a result there is a league record for standings and league statistics, never a player's game record (there is no game note). Every written request is checked structurally (exact fields, both clubs in the season's roster file, agreement with the schedule's game, not Miami); the engine's `load_request` runs on a deterministic sample (first, last and every 25th written) because it costs about 0.2 s a request and the full 1,189-game slate would take minutes; `--validate-all` runs it on every request. Repository validation applies the same rule: the full engine check for every Miami request, structure for the whole slate plus the sample, and unique event ids across both (`runtime.game_requests.request_errors`). The script first confirms that the schedule's club names are the roster file's.
 
 - `python scripts/write_back_results.py --write` (the write-back, item 13; `runtime/write_back.py`, `docs/player_statistics.md`): after `scripts/collect_results.py` has saved the engine's answers, every result beside a scheduled Miami note dated on or before the career clock is written into the note (played, score, box score, Miami injuries), the phase/week note and the injured player's Miami card; then the player reports, the Miami team pages, the league pages and the league cards are rebuilt from the closed results. `--check` verifies; repository validation refuses an unwritten result.
+
+## Fortnightly staff reviews
+
+During the regular season, run `python scripts/review_rotation.py --write <date>` for the staff's fortnightly reviews before building games past their due dates. Close all earlier games first, collect any engine-drawn starting battles, then rerun the review command. The builder uses the newest dated `Depth_Chart/Reviews/<date>/rotation.json`, falling back to the immutable camp rotation before the first review. `--check <date>` validates reviews without writes. Existing requests retain their original lineups, and injury replacement starts count normally. Full rules: [fortnightly staff reviews](../docs/front_office.md#fortnightly-staff-rotation-reviews).
 
 ## Railway deployment
 
@@ -72,4 +78,3 @@ A kernel version change is journaled in `kernel_transitions` and does not alter 
 ## Decisions drawn on demand
 
 `POST /decisions` (bearer token) takes one decision packet, the exact content of a committed or about-to-be-committed `*.decision.json`, and returns the engine's draw: `201` and `status: decided` the first time, `200` and `status: already_decided` with the same outcome afterwards, `409` for a changed packet under an event id already drawn or a packet that breaks the decision schema, `401` without the token, `400` or `413` for a malformed body. Boot scans and the route share `runtime.private_service.play_decision`. `python scripts/draw_decisions.py` sends every pending request, checks each answer against its request (`scripts/collect_results.result_errors`) and writes the result file the collector would write. The token is read from `ENGINE_API_TOKEN` and never written or printed. Games are not drawn this way.
-

@@ -151,7 +151,7 @@ class Store:
 def play_requests(store, root):
     """Play every game request in the repository. Returns {event_id or path: status}."""
     from .game_requests import find_requests, load_request
-    from .game_runner import freeze_inputs, run_game
+    from .game_runner import freeze_inputs, replay_packet, run_game
 
     status = {}
     for path in find_requests(root):
@@ -159,13 +159,16 @@ def play_requests(store, root):
         try:
             home, away, kwargs = load_request(path, root)
             event_id = kwargs["event_id"]
-            packet_hash = hashlib.sha256(canonical(freeze_inputs(home, away, store, **kwargs)[2])).hexdigest()
             existing = store.result(event_id)
             if existing is None:
+                packet = freeze_inputs(home, away, store, **kwargs)[2]
+                packet_hash = hashlib.sha256(canonical(packet)).hexdigest()
                 result = run_game(home, away, journal=store, **kwargs)
                 store.save_result(event_id, packet_hash, result)
                 state = "played"
             else:
+                packet = replay_packet(home, away, store, existing, **kwargs)
+                packet_hash = hashlib.sha256(canonical(packet)).hexdigest()
                 store.close_digest(event_id, packet_hash)  # refuses edited inputs
                 state = "already_played"
             status[event_id] = {"status": state, "request": rel}

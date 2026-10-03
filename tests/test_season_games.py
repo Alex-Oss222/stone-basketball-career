@@ -32,6 +32,12 @@ def write_minimal_rotation(root, grade_from="2003-10-24"):
     names = [n for group in depth["positions"].values() for n in group]
     players = [{"player": p["name"], "bbr_id": p.get("bbr_id"), "positions": p["positions"], "status": "roster", "injured_through": None}
                for p in roster["players"] if p["name"] in names]
+    # This fixture models a completed camp: players in its rotation are signed,
+    # rather than retaining June's pending-option/draft-rights register labels.
+    for player in roster["players"]:
+        if player["name"] in names:
+            player["status"] = "under_contract"
+    roster["as_of"] = "2003-10-24"
     values = {n: len(names) - i for i, n in enumerate(names)}
     rotation = camp.season_rotation({"players": players}, depth, values, "2003-10-24", {"Dwyane Wade": 45})
     # A camp decision implies the players are under Miami's control: the holdings record (rule 2) says so, as the
@@ -41,6 +47,14 @@ def write_minimal_rotation(root, grade_from="2003-10-24"):
     for e in holdings["entries"]:
         if e["player"] in names:
             e["until"] = None
+    held_names = {e["player"] for e in holdings["entries"] if e["from"] <= roster["as_of"] and
+                  (e["until"] is None or roster["as_of"] < e["until"])}
+    for player in roster["players"]:
+        if player["name"] not in held_names:
+            # Keep former-player rows for the zero-appearance report, while
+            # reflecting that June-only holdings have expired by this camp.
+            player["status"] = "free_agent"
+    (root / TEAM / "Roster/roster.json").write_text(json.dumps(roster, indent=1) + "\n")
     holdings_path.write_text(json.dumps(holdings, indent=1) + "\n")
     (root / TEAM / "Depth_Chart/depth_chart.json").write_text(json.dumps(depth, indent=1) + "\n")
     (root / TEAM / "Depth_Chart/rotation.json").write_text(json.dumps(rotation, indent=1) + "\n")
