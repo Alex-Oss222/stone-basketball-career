@@ -2,9 +2,9 @@
 
 # Contract | Anthony Johnson
 
-Known through: 2003-10-27. [Open interactive contract](johnsan02.html#contract) · [Contract history](johnsan02.html#contract-history)
+Known through: 2003-10-28. [Open interactive contract](johnsan02.html#contract) · [Contract history](johnsan02.html#contract-history)
 
-Anthony Johnson: free agent expiring. Evidence cutoff: 2003-10-27.
+Anthony Johnson: free agent expiring. Evidence cutoff: 2003-10-28.
 
 ## Current contract
 

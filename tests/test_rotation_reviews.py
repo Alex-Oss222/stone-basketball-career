@@ -220,6 +220,38 @@ class DatedReviewTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "before all engine battle draws"):
             reviews.rotation_in_force("2003-11-21", self.root)
 
+    def test_camp_refill_does_not_reset_cadence_and_supplies_dated_priors(self):
+        baseline_path = self.depth / "rotation.json"
+        baseline = json.loads(baseline_path.read_text())
+        baseline["as_of"] = "2003-10-27"
+        save(baseline_path, baseline)
+        self.assertEqual(reviews.review_dates("2003-11-21", self.root), ["2003-11-07", "2003-11-21"])
+        roster_path = self.base / "00_Team/Team/Roster/roster.json"
+        roster = json.loads(roster_path.read_text())
+        roster["as_of"] = "2003-10-27"
+        arrivals = {"Cherokee Parks": 7.13, "Udonis Haslem": 5.0, "John Wallace": 5.0}
+        for name in arrivals:
+            roster["players"].append({"name": name, "positions": ["PF"], "status": "camp_contract"})
+        for name, status in (("Voided Star", "voided"), ("Unsigned Prospect", "draft_rights_unsigned"), ("Waived Player", "waived")):
+            roster["players"].append({"name": name, "positions": ["PF"], "status": status})
+        save(roster_path, roster)
+        correction_path = self.base / "04_Training_Camp/signing_corrections.json"
+        correction = {"date": "2003-10-27", "rotation_written": "2003-10-27", "refill": {"picks": [
+            {"player": name, "value": value, "score": value * 0.65, "fit": 0.65, "wade_request": name == "Udonis Haslem"}
+            for name, value in arrivals.items()]}}
+        save(correction_path, correction)
+        self.game_record()
+        snapshot = reviews.review_input("2003-11-07", self.root)
+        self.assertEqual(snapshot["assessment_date"], "2003-10-24")
+        for name, value in arrivals.items():
+            self.assertEqual(snapshot["scores"][name], value)
+            self.assertEqual(snapshot["evidence"][name]["preseason_estimate"], value)
+        self.assertFalse({"Voided Star", "Unsigned Prospect", "Waived Player"} & set(snapshot["scores"]))
+        self.assertNotIn("Udonis Haslem", reviews.preseason_priors("2003-10-26", self.root))
+        correction["rotation_written"] = "2003-11-08"
+        save(correction_path, correction)
+        self.assertNotIn("Udonis Haslem", reviews.preseason_priors("2003-11-07", self.root))
+
     def test_departure_between_reviews_promotes_backup_without_inventing_injury(self):
         self.game_record(points=90)
         reviews.write_review("2003-11-07", self.root)

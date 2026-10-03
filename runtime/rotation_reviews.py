@@ -31,6 +31,13 @@ def review_dir(on, root=ROOT, season=SEASON):
     return depth_dir(root, season) / "Reviews" / check_date(on)
 
 
+def assessment_date(root=ROOT, season=SEASON):
+    """Camp's assessment fixes the cadence; a later roster correction does not reset it."""
+    camp_path = Path(root) / season_base(season) / "04_Training_Camp/camp_roster.json"
+    assessed = read_json(camp_path) if camp_path.exists() else {}
+    return check_date(assessed.get("evaluated") or read_json(depth_dir(root, season) / "rotation.json")["as_of"])
+
+
 def review_dates(until, root=ROOT, season=SEASON):
     """Every review due, on the camp decision's fixed fourteen-day cadence."""
     check_date(until)
@@ -40,7 +47,7 @@ def review_dates(until, root=ROOT, season=SEASON):
     last_game = max((g["date"] for g in season_games(season, root)
                      if MIAMI in (g["home"], g["away"])), default=until)
     cutoff = min(until, last_game)
-    day = date.fromisoformat(read_json(baseline)["as_of"]) + timedelta(days=REVIEW_DAYS)
+    day = date.fromisoformat(assessment_date(root, season)) + timedelta(days=REVIEW_DAYS)
     out = []
     while day.isoformat() <= cutoff:
         out.append(day.isoformat())
@@ -182,18 +189,14 @@ def battle_packets(players, scores, on, season=SEASON):
     return packets
 
 
-def review_input(on, root=ROOT, season=SEASON):
-    """Freeze basketball evidence before any engine battle draw is requested."""
+def preseason_priors(on, root=ROOT, season=SEASON):
+    """Dated staff estimates, preserving the first frozen prior for each player.
+
+    Camp evaluation scores lead. Players signed in a later camp refill retain
+    the recorded basketball value on that signing decision, before fit or a
+    Wade request affects recruitment. No later season ability is consulted.
+    """
     base = Path(root) / season_base(season)
-    roster = read_json(base / "00_Team/Team/Roster/roster.json")
-    if roster.get("as_of", "") > on:
-        raise ValueError("cannot reconstruct a past staff review from a later roster")
-    excluded = ("free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "pending", "draft_rights")
-    players = [{"player": p["name"], "positions": p["positions"], "bbr_id": p.get("bbr_id"), "status": "roster"}
-               for p in roster["players"] if not any(s in p["status"] for s in excluded)]
-    players.sort(key=lambda p: p["player"])
-    if len(players) < 5:
-        raise ValueError("staff review needs at least five contracted players")
     camp_path = base / "04_Training_Camp/camp_roster.json"
     assessed = read_json(camp_path) if camp_path.exists() else {}
     if assessed.get("evaluated", "") > on:
@@ -207,16 +210,38 @@ def review_input(on, root=ROOT, season=SEASON):
                 priors.setdefault(name, value)
     for name, value in assessed.get("staff_scores", {}).items():
         priors.setdefault(name, value)
+    correction_path = base / "04_Training_Camp/signing_corrections.json"
+    if correction_path.exists():
+        correction = read_json(correction_path)
+        if correction.get("date", "") and correction["date"] <= on and correction.get("rotation_written", "") and correction["rotation_written"] <= on:
+            for row in correction.get("refill", {}).get("picks", []):
+                priors.setdefault(row["player"], row["value"])
     estimates = depth_dir(root, season) / "preseason_estimates.json"
     if estimates.exists():
         for row in read_json(estimates).get("players", []):
             if row["as_of"] <= on:
                 priors.setdefault(row["player"], row["score"])
+    return priors
+
+
+def review_input(on, root=ROOT, season=SEASON):
+    """Freeze basketball evidence before any engine battle draw is requested."""
+    base = Path(root) / season_base(season)
+    roster = read_json(base / "00_Team/Team/Roster/roster.json")
+    if roster.get("as_of", "") > on:
+        raise ValueError("cannot reconstruct a past staff review from a later roster")
+    players = [{"player": p["name"], "positions": p["positions"], "bbr_id": p.get("bbr_id"), "status": "roster"}
+               for p in roster["players"] if camp.playable(p.get("status"))]
+    players.sort(key=lambda p: p["player"])
+    if len(players) < 5:
+        raise ValueError("staff review needs at least five contracted players")
+    priors = preseason_priors(on, root, season)
     results, sources, pending = closed_evidence(on, root, season)
     if pending:
         raise ValueError("awaiting closed Miami results before " + on + ": " + ", ".join(pending))
     scores, evidence = staff_scores(players, priors, results)
     return {"schema_version": 1, "owner": "ai_gm", "season": season, "as_of": on,
+            "assessment_date": assessment_date(root, season),
             "prior_minutes": PRIOR_MINUTES, "score_minutes": SCORE_MINUTES,
             "prior_scores": priors,
             "evidence_cutoff": "game_date strictly before review date", "sources": sources,
@@ -351,6 +376,8 @@ def review_errors(root=ROOT, season=SEASON, until=None):
                 raise ValueError("review date differs from its dated folder")
             if snapshot.get("season") != season:
                 raise ValueError("review season differs from its season folder")
+            if snapshot.get("assessment_date", assessment_date(root, season)) != assessment_date(root, season):
+                raise ValueError("review cadence differs from the original camp assessment date")
             if snapshot["as_of"] not in review_dates(snapshot["as_of"], root, season):
                 raise ValueError("review is outside the fortnightly cadence")
             earlier = [day for day in pending_reviews(snapshot["as_of"], root, season) if day < snapshot["as_of"]]

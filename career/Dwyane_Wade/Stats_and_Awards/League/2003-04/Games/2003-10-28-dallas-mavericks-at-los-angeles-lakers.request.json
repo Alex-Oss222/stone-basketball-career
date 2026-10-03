@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-10-28-dallas-mavericks-at-los-angeles-lakers",
+ "game_date": "2003-10-28",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Dallas Mavericks",
+  "rotation": "real"
+ }
+}

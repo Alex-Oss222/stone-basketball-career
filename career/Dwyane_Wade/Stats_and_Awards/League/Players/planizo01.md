@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `planizo01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2003-10-27 · **Club on this date:** New Jersey Nets (draft rights) · **Basis:** 2003 draft rights · **League:** NBA  
+**Card date:** 2003-10-28 · **Club on this date:** New Jersey Nets (draft rights) · **Basis:** 2003 draft rights · **League:** NBA  
 **Position:** SG (Shooting guard) · **Jersey:** #10 · **Born:** 1982-09-12 · **Age on card date:** 21  
 **Registry ID:** `planizo01` · [Basketball-Reference page](https://www.basketball-reference.com/players/p/planizo01.html) · ESPN ID 2174
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `planiz
 
 ## Simulated statistics
 
-As of **2003-10-27**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2003-10-28**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -118,4 +118,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2003-10-27. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2003-10-28. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

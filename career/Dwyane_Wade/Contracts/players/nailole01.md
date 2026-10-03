@@ -2,9 +2,9 @@
 
 # Contract | Lee Nailon
 
-Known through: 2003-10-27. [Open interactive contract](nailole01.html#contract) · [Contract history](nailole01.html#contract-history)
+Known through: 2003-10-28. [Open interactive contract](nailole01.html#contract) · [Contract history](nailole01.html#contract-history)
 
-Lee Nailon: free agent expiring. Evidence cutoff: 2003-10-27.
+Lee Nailon: free agent expiring. Evidence cutoff: 2003-10-28.
 
 ## Current contract
 

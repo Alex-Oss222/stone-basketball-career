@@ -80,6 +80,8 @@ class WriteBackRunTests(unittest.TestCase):
         tmp, root = copy_repo()
         self.addCleanup(tmp.cleanup)
         write_minimal_rotation(root, grade_from="2003-10-24")
+        roster = json.loads((root / SEASON / "00_Team/Team/Roster/roster.json").read_text())
+        self.assertEqual(next(p["status"] for p in roster["players"] if p["name"] == "Alonzo Mourning"), "released")
         # Miami's regular-season opener from the builder, a preseason game from the camp note format, one league game.
         plan = season_games.build_miami("2003-10-28", root, write=True)
         self.assertEqual(len(plan), 1)

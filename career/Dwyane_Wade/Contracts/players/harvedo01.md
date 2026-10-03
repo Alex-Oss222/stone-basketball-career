@@ -2,9 +2,9 @@
 
 # Contract | Donnell Harvey
 
-Known through: 2003-10-27. [Open interactive contract](harvedo01.html#contract) · [Contract history](harvedo01.html#contract-history)
+Known through: 2003-10-28. [Open interactive contract](harvedo01.html#contract) · [Contract history](harvedo01.html#contract-history)
 
-Donnell Harvey: free agent expiring. Evidence cutoff: 2003-10-27.
+Donnell Harvey: free agent expiring. Evidence cutoff: 2003-10-28.
 
 ## Current contract
 

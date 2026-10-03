@@ -79,6 +79,21 @@ class CampUnitTests(unittest.TestCase):
 
 
 class CampRunTests(unittest.TestCase):
+    def test_checkpoint_removes_later_league_games_and_rotation_reviews(self):
+        tmp, root = copy_repo()
+        self.addCleanup(tmp.cleanup)
+        slate = root / "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Games"
+        review = root / camp.ROTATION.parent / "Reviews/2003-11-10"
+        slate.mkdir(parents=True)
+        review.mkdir(parents=True)
+        (slate / "later.request.json").write_text(json.dumps({"event_id": "future-league-game"}))
+        (review / "rotation.json").write_text(json.dumps({"as_of": "2003-11-10", "players": []}))
+        checkpoint.pin(root)
+        self.assertFalse(slate.exists())
+        self.assertFalse(review.parent.exists())
+        self.assertEqual(json.loads((root / checkpoint.SEASON / "current_state.json").read_text())
+                         ["current_date"], checkpoint.CHECKPOINT)
+
     def test_camp_through_the_cut(self):
         tmp, root = copy_repo()
         self.addCleanup(tmp.cleanup)

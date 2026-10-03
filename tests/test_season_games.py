@@ -51,9 +51,9 @@ def write_minimal_rotation(root, grade_from="2003-10-24"):
                   (e["until"] is None or roster["as_of"] < e["until"])}
     for player in roster["players"]:
         if player["name"] not in held_names:
-            # Keep former-player rows for the zero-appearance report, while
-            # reflecting that June-only holdings have expired by this camp.
-            player["status"] = "free_agent"
+            # This fixture closes camp: expired June-only control is a departure,
+            # not a current Miami register row on the not-started team pages.
+            player["status"] = "released"
     (root / TEAM / "Roster/roster.json").write_text(json.dumps(roster, indent=1) + "\n")
     holdings_path.write_text(json.dumps(holdings, indent=1) + "\n")
     # ...and that they are signed: only players under a signed contract dress (camp.playable).

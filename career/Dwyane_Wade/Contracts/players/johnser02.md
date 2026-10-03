@@ -2,9 +2,9 @@
 
 # Contract | Ervin Johnson
 
-Known through: 2003-10-27. [Open interactive contract](johnser02.html#contract) · [Contract history](johnser02.html#contract-history)
+Known through: 2003-10-28. [Open interactive contract](johnser02.html#contract) · [Contract history](johnser02.html#contract-history)
 
-Ervin Johnson: under contract. Evidence cutoff: 2003-10-27.
+Ervin Johnson: under contract. Evidence cutoff: 2003-10-28.
 
 ## Current contract
 

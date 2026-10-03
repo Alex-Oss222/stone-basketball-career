@@ -94,16 +94,19 @@ Commit in batches, about every couple of weeks of career time or at any stop tha
 - **The October 27 correction.** Five camp signings were voided because the players weren't truly available. Real moves, with sources, were added to the transactions file.
 - **Next.** Opening night is October 28, 2003, at Philadelphia.
 
-## 7. What still needs building (see `docs/ROADMAP.md`)
+## 7. Rotation reviews and remaining work (see `docs/ROADMAP.md`)
 
-1. **In-season rotation review. Do this before opening night.** Today the camp rotation is fixed for all 82 games, so Wade can never become a starter on merit. Proposed design:
-   - A dated staff review every two weeks from closed results (production per minute, shrunk toward the preseason estimate).
-   - Close starting battles drawn by the engine.
-   - Wade's role requests weighed by standing.
-   - Starts made while a starter is injured count toward standing.
-2. **Standings, tiebreakers and the playoff bracket** (roadmap item 14), before April 2004.
-3. **Season awards vote** (item 15), before April 2004.
-4. **The 2004 draft** (item 17) and **season rollover** (item 18), before summer 2004.
+**In-season rotation reviews are built.** The staff reviews Miami every fourteen days after its October 24 camp assessment: November 7, November 21, and so on through the regular season. The October 27 roster correction does not reset that schedule. Run `python scripts/review_rotation.py --write <date>` when a review is due; the game builder waits for it before writing later game requests.
+
+The staff ranks the signed roster by production per minute from closed regular-season games strictly before the review date. Each player's fixed preseason estimate carries the weight of 300 minutes; the score adds observed efficiency on the same per-30-minute scale. The prior loses weight as minutes accumulate, so a few hot or cold games have limited influence. Camp evaluation scores supply the estimates. Later camp arrivals use their dated recruitment value: Cherokee Parks 7.13, Udonis Haslem 5, and John Wallace 5 from the October 27 signing correction. Recruitment fit and Wade's requests do not add a starting-job bonus.
+
+At each position, a clear leader gets the job. When the top two scores are within 10%, an unchanged engine decision packet decides the battle once, giving the leader a 50%–75% chance. Collect those draws and rerun the review command to complete the rotation. Seniority and draft slot provide no protection. Reviews save their evidence, decisions, depth chart and rotation under `00_Team/Team/Depth_Chart/Reviews/<date>/`; already-written game requests keep their lineups. An injury replacement's actual start is recorded in the game result and counts in reports and standing under the existing standing rules.
+
+Remaining work:
+
+1. **Standings, tiebreakers and the playoff bracket** (roadmap item 14), before April 2004.
+2. **Season awards vote** (item 15), before April 2004.
+3. **The 2004 draft** (item 17) and **season rollover** (item 18), before summer 2004.
 
 ## 8. Hard rules that are easy to break
 
