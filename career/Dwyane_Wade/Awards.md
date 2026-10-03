@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2003-07-31](assets/stat_reports/personal_2003-07-31.svg)
+![Player personal information and earned career awards through 2003-10-05](assets/stat_reports/personal_2003-10-05.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-07-21 |
 
-Identity as of 2003-07-31; status snapshot dated 2003-07-21. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-10-05; status snapshot dated 2003-07-21. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "ai_gm",
-  "as_of": "2003-07-21",
+  "as_of": "2003-09-30",
   "season": "2003-04",
   "team": "Miami Heat",
   "roster_kind": "team_control_register",
@@ -48,8 +48,8 @@
       "weight_lb": 182,
       "date_of_birth": "1972-07-12",
       "college": "Georgia Tech",
-      "status": "free_agent_rights_held",
-      "control": "Free agent from July 1, 2003; Miami holds his rights and cap hold until he re-signs, signs elsewhere or is renounced (Finances/free_agent_rights.json).",
+      "status": "signed_elsewhere",
+      "control": "August 22, 2003: signs with Dallas Mavericks (signing, real move); his hold and rights leave Miami's books.",
       "working_role": "2002-03 PG1",
       "player_card": "../Player_Cards/travis_best.md",
       "bbr_id": "besttr01"
@@ -147,8 +147,8 @@
       "weight_lb": 180,
       "date_of_birth": "1978-05-14",
       "college": "Arizona State",
-      "status": "free_agent_rights_held",
-      "control": "Free agent from July 1, 2003; Miami holds his rights and cap hold until he re-signs, signs elsewhere or is renounced (Finances/free_agent_rights.json).",
+      "status": "signed_elsewhere",
+      "control": "August 13, 2003: signs with Los Angeles Clippers (signing, real move); his hold and rights leave Miami's books.",
       "working_role": "2002-03 SG3",
       "player_card": "../Player_Cards/eddie_house.md",
       "bbr_id": "houseed01"
@@ -229,8 +229,8 @@
       "weight_lb": 250,
       "date_of_birth": "1975-08-23",
       "college": "California",
-      "status": "free_agent_rights_held",
-      "control": "Free agent from July 1, 2003; Miami holds his rights and cap hold until he re-signs, signs elsewhere or is renounced (Finances/free_agent_rights.json).",
+      "status": "signed_elsewhere",
+      "control": "September 29, 2003: signs with San Antonio Spurs (signing, real move); his hold and rights leave Miami's books.",
       "working_role": "2002-03 PF3",
       "player_card": "../Player_Cards/sean_marks.md",
       "bbr_id": "marksse01"
@@ -282,6 +282,136 @@
       "control": "Unsigned No. 33 draft rights; no individual draft cap hold. Contract salary is not yet agreed.",
       "working_role": "Unassigned rookie",
       "player_card": "../Player_Cards/jerome_beasley.md"
+    },
+    {
+      "id": "keon_clark",
+      "name": "Keon Clark",
+      "positions": [
+        "C"
+      ],
+      "date_of_birth": "1975-04-16",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/keon_clark.md",
+      "bbr_id": "clarkke01"
+    },
+    {
+      "id": "jumaine_jones",
+      "name": "Jumaine Jones",
+      "positions": [
+        "SF"
+      ],
+      "date_of_birth": "1979-02-10",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/jumaine_jones.md",
+      "bbr_id": "jonesju01"
+    },
+    {
+      "id": "stephen_jackson",
+      "name": "Stephen Jackson",
+      "positions": [
+        "SG"
+      ],
+      "date_of_birth": "1978-04-05",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/stephen_jackson.md",
+      "bbr_id": "jacksst02"
+    },
+    {
+      "id": "reggie_evans",
+      "name": "Reggie Evans",
+      "positions": [
+        "PF"
+      ],
+      "date_of_birth": "1980-05-18",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $563,679, guaranteed if still on the roster on 2004-01-10.",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/reggie_evans.md",
+      "bbr_id": "evansre01"
+    },
+    {
+      "id": "dion_glover",
+      "name": "Dion Glover",
+      "positions": [
+        "SG"
+      ],
+      "date_of_birth": "1978-10-22",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/dion_glover.md",
+      "bbr_id": "glovedi01"
+    },
+    {
+      "id": "shawn_kemp",
+      "name": "Shawn Kemp",
+      "positions": [
+        "C"
+      ],
+      "date_of_birth": "1969-11-26",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10.",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/shawn_kemp.md",
+      "bbr_id": "kempsh01"
+    },
+    {
+      "id": "chris_andersen",
+      "name": "Chris Andersen",
+      "positions": [
+        "C"
+      ],
+      "date_of_birth": "1978-07-07",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/chris_andersen.md",
+      "bbr_id": "anderch01"
+    },
+    {
+      "id": "mike_batiste",
+      "name": "Mike Batiste",
+      "positions": [
+        "PF"
+      ],
+      "date_of_birth": "1977-11-21",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $563,679, guaranteed if still on the roster on 2004-01-10.",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/mike_batiste.md",
+      "bbr_id": "batismi01"
+    },
+    {
+      "id": "scott_padgett",
+      "name": "Scott Padgett",
+      "positions": [
+        "PF"
+      ],
+      "date_of_birth": "1976-04-19",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/scott_padgett.md",
+      "bbr_id": "padgesc01"
+    },
+    {
+      "id": "tyrone_hill",
+      "name": "Tyrone Hill",
+      "positions": [
+        "PF"
+      ],
+      "date_of_birth": "1968-03-19",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10.",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/tyrone_hill.md",
+      "bbr_id": "hillty01"
     }
   ],
   "sources": [

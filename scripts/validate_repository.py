@@ -172,7 +172,8 @@ def report_errors(root, player, team):
     registry=json.loads((stats/"League/player_registry.json").read_text(encoding="utf-8"))["players"]
     roster=json.loads((team/"Team/Roster/roster.json").read_text(encoding="utf-8"))["players"]
     expected_league=Counter(p["name"] for p in registry)
-    expected_team=Counter(p["name"] for p in roster)
+    from runtime.write_back import register_names
+    expected_team=Counter(register_names(roster))      # departed players leave the not-started pages
     for page in pages:
         text=page.read_text(encoding="utf-8")
         label=str(page.relative_to(root))
@@ -191,8 +192,8 @@ def report_errors(root, player, team):
             # Completed Miami periods retain former players; today's roster is not their source.
             if page.name=="League_Stats.md":
                 require(errors,actual==expected_league,f"{label}: player production rows missing or duplicated")
-            elif "As of June 26, 2003: not started." in text:
-                require(errors,actual==expected_team,f"{label}: initial Miami control-register coverage mismatch")
+            elif re.search(r"^As of [^\n]*: not started\.",text,re.M):
+                require(errors,actual==expected_team,f"{label}: Miami control-register coverage mismatch on a not-started page")
         if page.name=="League_Stats.md":
             for pos in {p["position"] for p in registry}:
                 group=re.search(rf"<summary>{pos} ·.*?</summary>(.*?)</details>",text,re.S)

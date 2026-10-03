@@ -2,9 +2,9 @@
  "schema_version": 1,
  "initialized": true,
  "season": "2003-04",
- "current_date": "2003-07-31",
- "current_area": "01_Free_Agency",
- "current_note": "01_Free_Agency/note.md",
+ "current_date": "2003-10-05",
+ "current_area": "05_Preseason",
+ "current_note": "05_Preseason/note.md",
  "team": "Miami Heat",
  "team_abbreviation": "MIA",
  "draft": {
@@ -15,6 +15,6 @@
  },
  "contract_status": "rookie_scale_contract",
  "roster_status": "under_contract",
- "last_closed_event": "2003-07-21-wade-signs-rookie-contract",
+ "last_closed_event": "2003-10-05-preseason-requests",
  "pending_player_decisions": []
 }

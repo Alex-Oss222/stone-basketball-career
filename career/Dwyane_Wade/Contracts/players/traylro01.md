@@ -2,9 +2,9 @@
 
 # Contract | Robert Traylor
 
-Known through: 2003-07-31. [Open interactive contract](traylro01.html#contract) · [Contract history](traylro01.html#contract-history)
+Known through: 2003-10-05. [Open interactive contract](traylro01.html#contract) · [Contract history](traylro01.html#contract-history)
 
-Robert Traylor: under contract unverified. Evidence cutoff: 2003-07-31.
+Robert Traylor: under contract unverified. Evidence cutoff: 2003-10-05.
 
 ## Current contract
 

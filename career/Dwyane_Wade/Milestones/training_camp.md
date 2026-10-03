@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2003-07-31 · Miami Heat · inactive
+Career date: 2003-10-05 · Miami Heat · active
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -14,23 +14,23 @@ Activation: The club opens camp and records participation, evaluation or an actu
 
 | Item | Recorded position |
 | --- | --- |
-| Camp opened | Not recorded |
-| Participation | No camp participation record |
+| Camp opened | 2003-09-30 |
+| Participation | under_contract |
 | Current role | Unassigned rookie; staff role decision pending |
 | Staff rotation minutes | N/A |
 | Closed preseason games | 0 |
-| Camp availability | No camp assessment recorded |
+| Camp availability | No camp injury restriction recorded |
 
 ## Current depth chart
 
-Snapshot: 2003-07-21. Draft rights and unassigned arrivals are not assigned minutes.
+Snapshot: 2003-09-29. Draft rights and unassigned arrivals are not assigned minutes.
 
 | Position | Staff ordering | Interpretation |
 | --- | --- | --- |
-| PG | Travis Best, Mike James, Anthony Carter | Staff ordering; not a future minutes promise |
-| SG | Eddie Jones, Rasual Butler, Eddie House | Staff ordering; not a future minutes promise |
+| PG | Mike James, Anthony Carter | Staff ordering; not a future minutes promise |
+| SG | Eddie Jones, Rasual Butler | Staff ordering; not a future minutes promise |
 | SF | Caron Butler, Sean Lampley | Staff ordering; not a future minutes promise |
-| PF | Malik Allen, LaPhonso Ellis, Sean Marks | Staff ordering; not a future minutes promise |
+| PF | Malik Allen, LaPhonso Ellis | Staff ordering; not a future minutes promise |
 | C | Brian Grant, Vladimir Stepania, Ken Johnson | Staff ordering; not a future minutes promise |
 
 ## Role and promise review
@@ -47,7 +47,8 @@ Snapshot: 2003-07-21. Draft rights and unassigned arrivals are not assigned minu
 
 | Date | Event / decision |
 | --- | --- |
-| No dated record | N/A |
+| 2003-09-30 | Camp opens with 20 players: 10 invitees on non-guaranteed minimums (Keon Clark, Jumaine Jones, Stephen Jackson, Reggie Evans, Dion Glover, Shawn Kemp, Chris Andersen, Mike Batiste, Scott Padgett, Tyrone Hill). Record: `camp_roster.json`. |
+| 2003-09-30 | Camp injury draws: nobody is hurt. |
 
 ## Your response to the staff
 
@@ -70,13 +71,14 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/01_Free_Agency/note.md)
+- [Owning event](../2003-04/05_Preseason/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
 - [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
+- [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)

@@ -10,7 +10,7 @@
 **Age at assessment:** 30 · **Height:** 5-11 · **Weight:** 182 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Free agent from July 1, 2003; Miami holds his rights and cap hold until he re-signs, signs elsewhere or is renounced (Finances/free_agent_rights.json). (register, 2003-07-21) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** August 22, 2003: signs with Dallas Mavericks (signing, real move); his hold and rights leave Miami's books. (register, 2003-09-30) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/besttr01.html#contract) · [Contract history](../../../../Contracts/players/besttr01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

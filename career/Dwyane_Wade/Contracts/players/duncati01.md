@@ -2,9 +2,9 @@
 
 # Contract | Tim Duncan
 
-Known through: 2003-07-31. [Open interactive contract](duncati01.html#contract) · [Contract history](duncati01.html#contract-history)
+Known through: 2003-10-05. [Open interactive contract](duncati01.html#contract) · [Contract history](duncati01.html#contract-history)
 
-Tim Duncan: player option pending. Evidence cutoff: 2003-07-31.
+Tim Duncan: player option pending. Evidence cutoff: 2003-10-05.
 
 ## Current contract
 

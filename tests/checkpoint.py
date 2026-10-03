@@ -21,6 +21,7 @@ AFTER_CHECKPOINT = (                       # records the clock writes after June
     f"{SEASON}/Wade_Consultations",
     f"{SEASON}/00_Team/Transactions",
     f"{SEASON}/04_Training_Camp/camp_roster.json",
+    f"{SEASON}/04_Training_Camp/Decisions",
     f"{SEASON}/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json",
     "career/Dwyane_Wade/standing.json",
     "career/Dwyane_Wade/Contracts/contract_records.json",
@@ -40,9 +41,21 @@ def pin(root):
             shutil.rmtree(target)
         elif target.is_file():
             target.unlink()
+    for pattern in ("05_Preseason/Game_*", "06_Regular_Season/**/Game_*"):   # game notes and requests come after camp
+        for path in (root / SEASON).glob(pattern):
+            if path.is_file():
+                path.unlink()
+    register = json.loads((root / SEASON / "00_Team/Team/Roster/roster.json").read_text(encoding="utf-8"))
+    ids = {p["id"] for p in register["players"]}
+    for card in (root / SEASON / "00_Team/Team/Player_Cards").glob("*.md"):
+        if card.name not in ("README.md", "TEMPLATE.md") and card.stem not in ids:
+            card.unlink()                        # personnel cards of players who joined after the checkpoint
     state_path = root / SEASON / "current_state.json"
     state = json.loads(state_path.read_text(encoding="utf-8"))
     assert state["current_date"] == CHECKPOINT, state["current_date"]
+    if (root / "library").is_dir():
+        from runtime.write_back import write_statistics_pages
+        write_statistics_pages(root)             # Miami's not-started pages list the checkpoint register
     return root
 
 

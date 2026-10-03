@@ -2,9 +2,9 @@
 
 # Contract | Chris Wilcox
 
-Known through: 2003-07-31. [Open interactive contract](wilcoch01.html#contract) · [Contract history](wilcoch01.html#contract-history)
+Known through: 2003-10-05. [Open interactive contract](wilcoch01.html#contract) · [Contract history](wilcoch01.html#contract-history)
 
-Chris Wilcox: under rookie contract. Evidence cutoff: 2003-07-31.
+Chris Wilcox: under rookie contract. Evidence cutoff: 2003-10-05.
 
 ## Current contract
 

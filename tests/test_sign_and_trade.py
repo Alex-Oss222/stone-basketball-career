@@ -77,8 +77,14 @@ def all_errors(root):
 class LegalityTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.desk = TradeDesk(DAY, FrontOffice(DAY, Market(DAY)))
+        cls.tmp, cls.root = copy_repo()                    # the desk on the June 26 checkpoint, not the live clock
+        cls.desk = TradeDesk(DAY, FrontOffice(DAY, Market(DAY, cls.root), cls.root), cls.root)
+
         cls.market = cls.desk.market
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.tmp.cleanup()
 
     def contract(self, first, years, raise_share=trades.BIRD_RAISE):
         schedule = [int(round(first * (1 + raise_share * i))) for i in range(years)]
@@ -117,7 +123,7 @@ class LegalityTests(unittest.TestCase):
         text = " ".join(self.desk.errors(early))
         self.assertIn(str(SIGN_AND_TRADE_RIGHTS), text)
         self.assertIn("early_bird", text)
-        early_desk = TradeDesk("2003-07-10", FrontOffice("2003-07-10", Market("2003-07-10")))
+        early_desk = TradeDesk("2003-07-10", FrontOffice("2003-07-10", Market("2003-07-10", self.root), self.root), self.root)
         self.assertTrue(any("moratorium" in e for e in early_desk.errors(trade)))
         self.assertTrue(any("115%" in e for e in self.desk.errors(dict(trade, miami_out=["Caron Butler"]))))
         both = dict(trade, sign_and_trade_out=st)
@@ -185,7 +191,7 @@ class LegalityTests(unittest.TestCase):
         ok, why = self.desk.sign_and_trade_feasible(miller)
         self.assertFalse(ok)
         self.assertIn("Indiana Pacers over the cap", why)
-        july_2 = TradeDesk("2003-07-02", FrontOffice("2003-07-02", Market("2003-07-02")))     # Kidd is unsigned until July 16
+        july_2 = TradeDesk("2003-07-02", FrontOffice("2003-07-02", Market("2003-07-02", self.root), self.root), self.root)     # Kidd is unsigned until July 16
         kidd = next(t for t in july_2.fo.targets([], limit=80) if t["player"] == "Jason Kidd")   # a raise inside 20%: no base-year compensation
         self.assertEqual(july_2.sign_and_trade_feasible(kidd), (True, None))
         self.assertEqual(fo.route_ceiling("sign_and_trade", "kiddja01"), fo.valuation.maximum(self.market.players["kiddja01"].get("nba_seasons_before_2003_04"),

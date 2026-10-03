@@ -526,22 +526,47 @@ def team_record(games, scope):
     return [str(n), str(wins), str(n - wins), _ratio(wins / n), _n(pts / n), _n(opp / n), f"{(pts - opp) / n:+.1f}"]
 
 
-def team_page(text, page, lines, games, positions, now):
-    """One Team_Stats.md page rebuilt from Miami's closed results."""
+# Register statuses of players who are no longer Miami's: they leave the not-started pages (completed
+# pages keep them for the games they played).
+REGISTER_GONE = ("signed_elsewhere", "traded", "waived", "released", "renounced", "option_declined", "cut")
+
+
+def register_names(players):
+    """The control register's current Miami players, in register order."""
+    return [p["name"] for p in players if not any(word in (p.get("status") or "") for word in REGISTER_GONE)]
+
+
+def team_page(text, page, lines, games, positions, now, register=None):
+    """One Team_Stats.md page rebuilt from Miami's closed results.
+
+    A period that has not started lists the control register as it stands on the career date, so
+    signings, camp invites and departures reach every future page; a period with games lists the
+    players who appeared plus the rows it already carried."""
     scope = scope_for(page, [], now)
     summaries = {name: aggregate([r for r in records if _in(r, scope)]) for name, records in lines.items()}
     present = sorted(name for name, s in summaries.items() if s["closed"])
     n = len([g for g in games if scope["start"] <= g["game_date"] <= scope["end"]])
-    if n:   # a period with no closed game keeps its dated "not started" line
+    future = not n and register is not None          # no closed Miami game in the period yet
+    if n:
         status = f"As of {long_date(now)}: {_plural(n, 'closed Miami game')} in this period. Rows cover Miami's closed games only."
         text = re.sub(r"^As of [^\n]*$", lambda _: status, text, count=1, flags=re.M)
+    elif future:
+        k = len(register)
+        status = (f"As of {long_date(now)}: not started. The {k}-player control register includes contracts, options, "
+                  f"camp contracts and unsigned rights; it is not a {k}-player active roster.")
+        text = re.sub(r"^As of [^\n]*$", lambda _: status, text, count=1, flags=re.M)
     empty = aggregate([])
+
+    def listed(rows):
+        if future:
+            return list(register)
+        return [r[0] for r in rows] + [p for p in present if p not in {r[0] for r in rows}]
 
     def replacer(headers, rows):
         if headers == TEAM_RECORD:
             return _table(headers, [team_record(games, scope)], aligns=[True] * 7)
         if headers == TEAM_PRODUCTION:
-            names = [r[0] for r in rows] + [p for p in present if p not in {r[0] for r in rows}]
+            names = listed(rows)
             pos = {r[0]: r[1] for r in rows}
             out = []
             for name in names:
@@ -550,7 +575,7 @@ def team_page(text, page, lines, games, positions, now):
                             *(_n(s["pg"][k]) for k in ("pts", "reb", "ast", "stl", "blk", "tov"))])
             return _table(headers, out, aligns=[False, False] + [True] * 8)
         if headers == TEAM_SHOOTING:
-            names = [r[0] for r in rows] + [p for p in present if p not in {r[0] for r in rows}]
+            names = listed(rows)
             out = []
             for name in names:
                 s = summaries.get(name, empty)
@@ -588,7 +613,7 @@ def statistics_pages(root=ROOT, season=SEASON):
                 positions.setdefault(p["player_id"], p.get("position", "N/A"))
     team = root / PLAYER_DIR / "Stats_and_Awards/Team" / season
     for page in sorted(team.rglob("Team_Stats.md")):
-        outputs[page] = team_page(page.read_text(encoding="utf-8"), page, team_lines, games, positions, now)
+        outputs[page] = team_page(page.read_text(encoding="utf-8"), page, team_lines, games, positions, now, register_names(players))
     return outputs
 
 

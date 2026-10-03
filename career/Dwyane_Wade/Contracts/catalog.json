@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2003-07-31",
+  "as_of": "2003-10-05",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -554,10 +554,10 @@
     {
       "player_id": "anderch01",
       "name": "Chris Andersen",
-      "team": "Denver Nuggets",
-      "status": "free agent expiring",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Miami Heat",
+      "status": "camp contract",
+      "current_contract_id": "anderch01-2003-09-30",
+      "recorded_agreements": 2,
       "href": "players/anderch01.html#contract"
     },
     {
@@ -959,10 +959,10 @@
     {
       "player_id": "glovedi01",
       "name": "Dion Glover",
-      "team": "Atlanta Hawks",
-      "status": "free agent expiring",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Miami Heat",
+      "status": "camp contract",
+      "current_contract_id": "glovedi01-2003-09-30",
+      "recorded_agreements": 2,
       "href": "players/glovedi01.html#contract"
     },
     {
@@ -1751,10 +1751,10 @@
     {
       "player_id": "jonesju01",
       "name": "Jumaine Jones",
-      "team": "Cleveland Cavaliers",
-      "status": "free agent expiring",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Miami Heat",
+      "status": "camp contract",
+      "current_contract_id": "jonesju01-2003-09-30",
+      "recorded_agreements": 2,
       "href": "players/jonesju01.html#contract"
     },
     {
@@ -1886,10 +1886,10 @@
     {
       "player_id": "clarkke01",
       "name": "Keon Clark",
-      "team": "Sacramento Kings",
-      "status": "free agent expiring",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Miami Heat",
+      "status": "camp contract",
+      "current_contract_id": "clarkke01-2003-09-30",
+      "recorded_agreements": 2,
       "href": "players/clarkke01.html#contract"
     },
     {
@@ -2390,10 +2390,10 @@
     {
       "player_id": "batismi01",
       "name": "Mike Batiste",
-      "team": "Memphis Grizzlies",
-      "status": "free agent expiring",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Miami Heat",
+      "status": "camp contract",
+      "current_contract_id": "batismi01-2003-09-30",
+      "recorded_agreements": 2,
       "href": "players/batismi01.html#contract"
     },
     {
@@ -2723,10 +2723,10 @@
     {
       "player_id": "evansre01",
       "name": "Reggie Evans",
-      "team": "Seattle SuperSonics",
-      "status": "free agent expiring",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Miami Heat",
+      "status": "camp contract",
+      "current_contract_id": "evansre01-2003-09-30",
+      "recorded_agreements": 2,
       "href": "players/evansre01.html#contract"
     },
     {
@@ -2966,10 +2966,10 @@
     {
       "player_id": "padgesc01",
       "name": "Scott Padgett",
-      "team": "Utah Jazz",
-      "status": "free agent expiring",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Miami Heat",
+      "status": "camp contract",
+      "current_contract_id": "padgesc01-2003-09-30",
+      "recorded_agreements": 2,
       "href": "players/padgesc01.html#contract"
     },
     {
@@ -3074,10 +3074,10 @@
     {
       "player_id": "kempsh01",
       "name": "Shawn Kemp",
-      "team": "Orlando Magic",
-      "status": "free agent expiring",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Miami Heat",
+      "status": "camp contract",
+      "current_contract_id": "kempsh01-2003-09-30",
+      "recorded_agreements": 2,
       "href": "players/kempsh01.html#contract"
     },
     {
@@ -3146,10 +3146,10 @@
     {
       "player_id": "jacksst02",
       "name": "Stephen Jackson",
-      "team": "San Antonio Spurs",
-      "status": "free agent expiring",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Miami Heat",
+      "status": "camp contract",
+      "current_contract_id": "jacksst02-2003-09-30",
+      "recorded_agreements": 2,
       "href": "players/jacksst02.html#contract"
     },
     {
@@ -3488,10 +3488,10 @@
     {
       "player_id": "hillty01",
       "name": "Tyrone Hill",
-      "team": "Philadelphia 76ers",
-      "status": "free agent expiring",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Miami Heat",
+      "status": "camp contract",
+      "current_contract_id": "hillty01-2003-09-30",
+      "recorded_agreements": 2,
       "href": "players/hillty01.html#contract"
     },
     {

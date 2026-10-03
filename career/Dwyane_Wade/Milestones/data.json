@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2003-07-31",
+  "as_of": "2003-10-05",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 19,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2003-07-21-wade-signs-rookie-contract",
+  "current_event": "2003-10-05-preseason-requests",
   "current_screen": "calendar",
   "screens": [
     {
@@ -18,7 +18,7 @@
       "title": "Your career calendar",
       "status": "active",
       "trigger": "The authoritative current date and recorded event determine what is open.",
-      "summary": "Dwyane Wade is at 01 Free Agency. All milestone pages remain accessible; inactive pages explain their opening event.",
+      "summary": "Dwyane Wade is at 05 Preseason. All milestone pages remain accessible; inactive pages explain their opening event.",
       "sections": [
         {
           "title": "What is happening now",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2003-07-31"
+              "2003-10-05"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2003-07-21-wade-signs-rookie-contract"
+              "2003-10-05-preseason-requests"
             ],
             [
               "Pending player decisions",
@@ -64,13 +64,13 @@
           ],
           "rows": [
             [
-              "2003-07-31",
+              "2003-10-05",
               "Current checkpoint",
-              "2003-07-21-wade-signs-rookie-contract",
+              "2003-10-05-preseason-requests",
               "Recorded",
               {
                 "label": "Owning event",
-                "href": "../2003-04/01_Free_Agency/note.md"
+                "href": "../2003-04/05_Preseason/note.md"
               }
             ],
             [
@@ -84,10 +84,10 @@
               }
             ],
             [
-              "Not yet verified",
+              "2003-09-30",
               "Camp reporting",
               "Club records the date",
-              "inactive",
+              "active",
               {
                 "label": "Training camp",
                 "href": "#training_camp"
@@ -166,7 +166,7 @@
       "actions": [
         {
           "label": "Open the current event",
-          "href": "../2003-04/01_Free_Agency/note.md",
+          "href": "../2003-04/05_Preseason/note.md",
           "description": "Read the owning career note and record the player's actual response when one is due."
         },
         {
@@ -190,7 +190,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/01_Free_Agency/note.md"
+          "href": "../2003-04/05_Preseason/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -215,6 +215,10 @@
         {
           "label": "Training-camp events and player response",
           "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Recorded camp roster",
+          "href": "../2003-04/04_Training_Camp/camp_roster.json"
         },
         {
           "label": "Negotiation source",
@@ -245,7 +249,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-31"
+          "value": "2003-10-05"
         },
         {
           "label": "Team",
@@ -297,7 +301,7 @@
             ],
             [
               "Source snapshot",
-              "2003-07-21"
+              "2003-09-30"
             ]
           ]
         },
@@ -424,7 +428,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/01_Free_Agency/note.md"
+          "href": "../2003-04/05_Preseason/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -449,6 +453,10 @@
         {
           "label": "Training-camp events and player response",
           "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Recorded camp roster",
+          "href": "../2003-04/04_Training_Camp/camp_roster.json"
         },
         {
           "label": "Negotiation source",
@@ -479,7 +487,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-31"
+          "value": "2003-10-05"
         },
         {
           "label": "Team",
@@ -711,7 +719,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/01_Free_Agency/note.md"
+          "href": "../2003-04/05_Preseason/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -736,6 +744,10 @@
         {
           "label": "Training-camp events and player response",
           "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Recorded camp roster",
+          "href": "../2003-04/04_Training_Camp/camp_roster.json"
         },
         {
           "label": "Negotiation source",
@@ -766,7 +778,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-31"
+          "value": "2003-10-05"
         },
         {
           "label": "Team",
@@ -970,6 +982,18 @@
             [
               "2003-07-21",
               "Wade signs his rookie-scale contract (80% protected plus incentives to 120% of scale): $2,197,000 counted in 2003-04, three seasons plus a 2006-07 team option. Record: `Wade_Rookie_Contract/negotiation_log.json`."
+            ],
+            [
+              "2003-08-13",
+              "Eddie House signs with Los Angeles Clippers (signing, real move); his hold and rights leave Miami's books."
+            ],
+            [
+              "2003-08-22",
+              "Travis Best signs with Dallas Mavericks (signing, real move); his hold and rights leave Miami's books."
+            ],
+            [
+              "2003-09-29",
+              "Sean Marks signs with San Antonio Spurs (signing, real move); his hold and rights leave Miami's books."
             ]
           ]
         },
@@ -1031,7 +1055,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/01_Free_Agency/note.md"
+          "href": "../2003-04/05_Preseason/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1056,6 +1080,10 @@
         {
           "label": "Training-camp events and player response",
           "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Recorded camp roster",
+          "href": "../2003-04/04_Training_Camp/camp_roster.json"
         },
         {
           "label": "Negotiation source",
@@ -1086,7 +1114,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-31"
+          "value": "2003-10-05"
         },
         {
           "label": "Team",
@@ -1235,7 +1263,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/01_Free_Agency/note.md"
+          "href": "../2003-04/05_Preseason/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1260,6 +1288,10 @@
         {
           "label": "Training-camp events and player response",
           "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Recorded camp roster",
+          "href": "../2003-04/04_Training_Camp/camp_roster.json"
         },
         {
           "label": "Negotiation source",
@@ -1290,7 +1322,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-31"
+          "value": "2003-10-05"
         },
         {
           "label": "Team",
@@ -1411,7 +1443,7 @@
       "actions": [
         {
           "label": "Open the current event discussion",
-          "href": "../2003-04/01_Free_Agency/note.md",
+          "href": "../2003-04/05_Preseason/note.md",
           "description": "Record a dated reaction to an actual transaction."
         },
         {
@@ -1435,7 +1467,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/01_Free_Agency/note.md"
+          "href": "../2003-04/05_Preseason/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1460,6 +1492,10 @@
         {
           "label": "Training-camp events and player response",
           "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Recorded camp roster",
+          "href": "../2003-04/04_Training_Camp/camp_roster.json"
         },
         {
           "label": "Negotiation source",
@@ -1490,7 +1526,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-31"
+          "value": "2003-10-05"
         },
         {
           "label": "Team",
@@ -1644,7 +1680,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/01_Free_Agency/note.md"
+          "href": "../2003-04/05_Preseason/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1669,6 +1705,10 @@
         {
           "label": "Training-camp events and player response",
           "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Recorded camp roster",
+          "href": "../2003-04/04_Training_Camp/camp_roster.json"
         },
         {
           "label": "Negotiation source",
@@ -1699,7 +1739,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-31"
+          "value": "2003-10-05"
         },
         {
           "label": "Team",
@@ -1714,7 +1754,7 @@
     {
       "id": "training_camp",
       "title": "Training camp",
-      "status": "inactive",
+      "status": "active",
       "trigger": "The club opens camp and records participation, evaluation or an actual role decision.",
       "summary": "Staff ordering is visible; camp attendance, minutes and grades require their own dated records.",
       "sections": [
@@ -1727,11 +1767,11 @@
           "rows": [
             [
               "Camp opened",
-              "Not recorded"
+              "2003-09-30"
             ],
             [
               "Participation",
-              "No camp participation record"
+              "under_contract"
             ],
             [
               "Current role",
@@ -1747,7 +1787,7 @@
             ],
             [
               "Camp availability",
-              "No camp assessment recorded"
+              "No camp injury restriction recorded"
             ]
           ]
         },
@@ -1761,12 +1801,12 @@
           "rows": [
             [
               "PG",
-              "Travis Best, Mike James, Anthony Carter",
+              "Mike James, Anthony Carter",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "SG",
-              "Eddie Jones, Rasual Butler, Eddie House",
+              "Eddie Jones, Rasual Butler",
               "Staff ordering; not a future minutes promise"
             ],
             [
@@ -1776,7 +1816,7 @@
             ],
             [
               "PF",
-              "Malik Allen, LaPhonso Ellis, Sean Marks",
+              "Malik Allen, LaPhonso Ellis",
               "Staff ordering; not a future minutes promise"
             ],
             [
@@ -1785,7 +1825,7 @@
               "Staff ordering; not a future minutes promise"
             ]
           ],
-          "notice": "Snapshot: 2003-07-21. Draft rights and unassigned arrivals are not assigned minutes."
+          "notice": "Snapshot: 2003-09-29. Draft rights and unassigned arrivals are not assigned minutes."
         },
         {
           "title": "Role and promise review",
@@ -1828,7 +1868,16 @@
             "Date",
             "Event / decision"
           ],
-          "rows": []
+          "rows": [
+            [
+              "2003-09-30",
+              "Camp opens with 20 players: 10 invitees on non-guaranteed minimums (Keon Clark, Jumaine Jones, Stephen Jackson, Reggie Evans, Dion Glover, Shawn Kemp, Chris Andersen, Mike Batiste, Scott Padgett, Tyrone Hill). Record: `camp_roster.json`."
+            ],
+            [
+              "2003-09-30",
+              "Camp injury draws: nobody is hurt."
+            ]
+          ]
         },
         {
           "title": "Your response to the staff",
@@ -1867,7 +1916,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/01_Free_Agency/note.md"
+          "href": "../2003-04/05_Preseason/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1892,6 +1941,10 @@
         {
           "label": "Training-camp events and player response",
           "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Recorded camp roster",
+          "href": "../2003-04/04_Training_Camp/camp_roster.json"
         },
         {
           "label": "Negotiation source",
@@ -1922,7 +1975,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-31"
+          "value": "2003-10-05"
         },
         {
           "label": "Team",
@@ -1939,7 +1992,7 @@
       "title": "Stats review",
       "status": "inactive",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "0 closed game records in 2003-04 through 2003-07-31. Competitions remain separate.",
+      "summary": "0 closed game records in 2003-04 through 2003-10-05. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2072,7 +2125,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/01_Free_Agency/note.md"
+          "href": "../2003-04/05_Preseason/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2097,6 +2150,10 @@
         {
           "label": "Training-camp events and player response",
           "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Recorded camp roster",
+          "href": "../2003-04/04_Training_Camp/camp_roster.json"
         },
         {
           "label": "Negotiation source",
@@ -2127,7 +2184,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-07-31"
+          "value": "2003-10-05"
         },
         {
           "label": "Team",

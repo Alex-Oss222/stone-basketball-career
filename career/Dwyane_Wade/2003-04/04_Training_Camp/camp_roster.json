@@ -1,0 +1,287 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "season": "2003-04",
+ "opened": "2003-09-30",
+ "status": "open",
+ "purpose": "Miami's training-camp roster: the register plus invitees on non-guaranteed minimum contracts, camp injuries, and the cut.",
+ "players": [
+  {
+   "player": "Caron Butler",
+   "bbr_id": "butleca01",
+   "positions": [
+    "SF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Rasual Butler",
+   "bbr_id": "butlera01",
+   "positions": [
+    "SG",
+    "SF"
+   ],
+   "status": "team_option_exercised",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Anthony Carter",
+   "bbr_id": "cartean01",
+   "positions": [
+    "PG"
+   ],
+   "status": "player_option_exercised",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "LaPhonso Ellis",
+   "bbr_id": "ellisla01",
+   "positions": [
+    "PF"
+   ],
+   "status": "under_contract_guarantee_amended",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Brian Grant",
+   "bbr_id": "grantbr01",
+   "positions": [
+    "C",
+    "PF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Mike James",
+   "bbr_id": "jamesmi01",
+   "positions": [
+    "PG"
+   ],
+   "status": "re_signed",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Eddie Jones",
+   "bbr_id": "jonesed02",
+   "positions": [
+    "SG",
+    "SF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Sean Lampley",
+   "bbr_id": "lamplse01",
+   "positions": [
+    "SF"
+   ],
+   "status": "team_option_exercised",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Dwyane Wade",
+   "bbr_id": null,
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Jerome Beasley",
+   "bbr_id": null,
+   "positions": [
+    "PF",
+    "C"
+   ],
+   "status": "draft_rights_unsigned",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Keon Clark",
+   "bbr_id": "clarkke01",
+   "positions": [
+    "C"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 638679,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 9.8,
+   "fit": 0.667,
+   "injured_through": null
+  },
+  {
+   "player": "Jumaine Jones",
+   "bbr_id": "jonesju01",
+   "positions": [
+    "SF"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 638679,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 10.41,
+   "fit": 0.5,
+   "injured_through": null
+  },
+  {
+   "player": "Stephen Jackson",
+   "bbr_id": "jacksst02",
+   "positions": [
+    "SG"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 638679,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 10.39,
+   "fit": 0.5,
+   "injured_through": null
+  },
+  {
+   "player": "Reggie Evans",
+   "bbr_id": "evansre01",
+   "positions": [
+    "PF"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 563679,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 7.82,
+   "fit": 0.65,
+   "injured_through": null
+  },
+  {
+   "player": "Dion Glover",
+   "bbr_id": "glovedi01",
+   "positions": [
+    "SG"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 638679,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 9.36,
+   "fit": 0.5,
+   "injured_through": null
+  },
+  {
+   "player": "Shawn Kemp",
+   "bbr_id": "kempsh01",
+   "positions": [
+    "C"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 1070000,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 6.57,
+   "fit": 0.667,
+   "injured_through": null
+  },
+  {
+   "player": "Chris Andersen",
+   "bbr_id": "anderch01",
+   "positions": [
+    "C"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 638679,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 6.47,
+   "fit": 0.667,
+   "injured_through": null
+  },
+  {
+   "player": "Mike Batiste",
+   "bbr_id": "batismi01",
+   "positions": [
+    "PF"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 563679,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 6.34,
+   "fit": 0.65,
+   "injured_through": null
+  },
+  {
+   "player": "Scott Padgett",
+   "bbr_id": "padgesc01",
+   "positions": [
+    "PF"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 638679,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 6.15,
+   "fit": 0.65,
+   "injured_through": null
+  },
+  {
+   "player": "Tyrone Hill",
+   "bbr_id": "hillty01",
+   "positions": [
+    "PF"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 1070000,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 6.09,
+   "fit": 0.65,
+   "injured_through": null
+  }
+ ],
+ "cuts": [],
+ "injuries_applied": "2003-09-30"
+}

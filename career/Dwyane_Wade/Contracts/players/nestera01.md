@@ -2,9 +2,9 @@
 
 # Contract | Rasho Nesterovic
 
-Known through: 2003-07-31. [Open interactive contract](nestera01.html#contract) · [Contract history](nestera01.html#contract-history)
+Known through: 2003-10-05. [Open interactive contract](nestera01.html#contract) · [Contract history](nestera01.html#contract-history)
 
-Rasho Nesterovic: free agent expiring. Evidence cutoff: 2003-07-31.
+Rasho Nesterovic: free agent expiring. Evidence cutoff: 2003-10-05.
 
 ## Current contract
 
