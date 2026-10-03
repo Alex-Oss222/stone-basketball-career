@@ -2,9 +2,9 @@
 
 # Contract | Nazr Mohammed
 
-Known through: 2003-10-05. [Open interactive contract](mohamna01.html#contract) · [Contract history](mohamna01.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](mohamna01.html#contract) · [Contract history](mohamna01.html#contract-history)
 
-Nazr Mohammed: under contract. Evidence cutoff: 2003-10-05.
+Nazr Mohammed: under contract. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 

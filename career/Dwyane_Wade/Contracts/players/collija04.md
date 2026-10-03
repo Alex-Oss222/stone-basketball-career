@@ -2,9 +2,9 @@
 
 # Contract | Jason Collins
 
-Known through: 2003-10-05. [Open interactive contract](collija04.html#contract) · [Contract history](collija04.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](collija04.html#contract) · [Contract history](collija04.html#contract-history)
 
-Jason Collins: under rookie contract. Evidence cutoff: 2003-10-05.
+Jason Collins: under rookie contract. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 

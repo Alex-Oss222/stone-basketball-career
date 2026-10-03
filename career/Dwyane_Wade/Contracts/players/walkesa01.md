@@ -2,9 +2,9 @@
 
 # Contract | Samaki Walker
 
-Known through: 2003-10-05. [Open interactive contract](walkesa01.html#contract) · [Contract history](walkesa01.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](walkesa01.html#contract) · [Contract history](walkesa01.html#contract-history)
 
-Samaki Walker: free agent expiring. Evidence cutoff: 2003-10-05.
+Samaki Walker: free agent expiring. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 

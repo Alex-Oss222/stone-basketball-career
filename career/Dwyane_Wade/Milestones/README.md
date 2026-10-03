@@ -2,7 +2,7 @@
 
 # Dwyane Wade | Live milestones
 
-Career date: 2003-10-05. [Open the detailed milestone desk](index.html).
+Career date: 2003-10-24. [Open the detailed milestone desk](index.html).
 
 These are current career views, with activation gates and actual evidence. An inactive view does not imply its event occurred.
 
@@ -16,4 +16,4 @@ These are current career views, with activation gates and actual evidence. An in
 | [Trade update](trade_update.md) | inactive | An actual dated proposal, consultation or executed transaction. |
 | [Season exit meeting](exit_meeting.md) | inactive | The player's season closes and a dated exit meeting is recorded. |
 | [Training camp](training_camp.md) | active | The club opens camp and records participation, evaluation or an actual role decision. |
-| [Stats review](stats_review.md) | inactive | A declared, closed game result supplies observed participation and the player box. |
+| [Stats review](stats_review.md) | active | A declared, closed game result supplies observed participation and the player box. |

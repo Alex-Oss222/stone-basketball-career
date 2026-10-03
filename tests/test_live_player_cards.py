@@ -104,7 +104,9 @@ class LiveCardFixtures(unittest.TestCase):
 class LiveRenderTests(LiveCardFixtures):
     def test_draft_checkpoint_has_actual_identity_empty_games_and_no_annual_awards(self):
         clock = "2003-06-26"
-        records = collect_games(PLAYER, IDENTITY, clock)
+        # The draft checkpoint has no game notes; later notes belong to dates the card at this clock cannot see.
+        records = [r for r in collect_games(PLAYER, IDENTITY, "9999-12-31") if r["date"] <= clock] if any(
+            (PLAYER / "2003-04").rglob("Game_*.result.json")) else collect_games(PLAYER, IDENTITY, clock)
         before = json.dumps(IDENTITY, sort_keys=True)
         with patch("runtime.shot_chart.make_illustrative_shots", side_effect=AssertionError("synthetic feed called")):
             outputs = build_player_cards(ROOT, PLAYER, IDENTITY, records, [], clock)

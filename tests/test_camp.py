@@ -53,7 +53,8 @@ class CampUnitTests(unittest.TestCase):
         self.assertEqual(camp.battle_packets(roster, {"A": 10.0, "B": 8.0, "C": 8.0}, "2003-10-24"), [])
 
     def test_rotation_dresses_twelve_for_240_minutes(self):
-        players = [{"player": f"P{i}", "bbr_id": None, "positions": [camp.POSITIONS[i % 5]], "status": "roster", "injured_through": None} for i in range(18)]
+        players = [{"player": f"P{i}", "bbr_id": None, "positions": [camp.POSITIONS[i % 5]], "status": "roster", "injured_through": None,
+                    "kind": "roster" if i < 9 else "invite"} for i in range(18)]
         data = {"players": players}
         depth = {"positions": {pos: [f"P{i}" for i in range(18) if i % 5 == camp.POSITIONS.index(pos)] for pos in camp.POSITIONS}}
         values = {f"P{i}": 18 - i for i in range(18)}
@@ -62,7 +63,9 @@ class CampUnitTests(unittest.TestCase):
         self.assertEqual(len(first), 12)
         self.assertAlmostEqual(sum(p["minutes"] for p in first), 240)
         self.assertEqual([p["player_id"] for p in first[:camp.CORE_SIZE]], [p["player_id"] for p in second[:camp.CORE_SIZE]])
-        self.assertNotEqual([p["player_id"] for p in first], [p["player_id"] for p in second])
+        self.assertNotEqual([p["player_id"] for p in first], [p["player_id"] for p in second])   # invitees rotate
+        for i in range(9):                                     # every signed roster player dresses every game
+            self.assertIn(f"P{i}", [p["player_id"] for p in second])
         self.assertEqual(camp.rotation_players(data, depth, values, "2003-10-07", camp.PRESEASON_MINUTES, {"P0": 55})[0]["ratings"], {"perimeter_defense": 55})
 
     def test_wade_grade_stays_inside_its_limits(self):

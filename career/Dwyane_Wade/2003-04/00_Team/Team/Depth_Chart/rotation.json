@@ -1,0 +1,88 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2003-10-24",
+ "team": "Miami Heat",
+ "total_minutes": 240,
+ "purpose": "Miami's rotation for the game builder: minutes per game in rotation order; the engine's injury and foul logic changes a night's minutes.",
+ "players": [
+  {
+   "player_id": "Mike James",
+   "position": "PG",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "jamesmi01"
+  },
+  {
+   "player_id": "Eddie Jones",
+   "position": "SG",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "jonesed02"
+  },
+  {
+   "player_id": "Caron Butler",
+   "position": "SF",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "butleca01"
+  },
+  {
+   "player_id": "Scott Padgett",
+   "position": "PF",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "padgesc01"
+  },
+  {
+   "player_id": "Brian Grant",
+   "position": "C",
+   "minutes": 34.0,
+   "ratings": {},
+   "bbr_id": "grantbr01"
+  },
+  {
+   "player_id": "Dwyane Wade",
+   "position": "SG",
+   "minutes": 20.0,
+   "ratings": {
+    "perimeter_defense": 45
+   }
+  },
+  {
+   "player_id": "Stephen Jackson",
+   "position": "SG",
+   "minutes": 16.0,
+   "ratings": {},
+   "bbr_id": "jacksst02"
+  },
+  {
+   "player_id": "Keon Clark",
+   "position": "C",
+   "minutes": 12.0,
+   "ratings": {},
+   "bbr_id": "clarkke01"
+  },
+  {
+   "player_id": "Shawn Kemp",
+   "position": "C",
+   "minutes": 10.0,
+   "ratings": {},
+   "bbr_id": "kempsh01"
+  },
+  {
+   "player_id": "Chris Andersen",
+   "position": "C",
+   "minutes": 8.0,
+   "ratings": {},
+   "bbr_id": "anderch01"
+  },
+  {
+   "player_id": "Jumaine Jones",
+   "position": "SF",
+   "minutes": 4.0,
+   "ratings": {},
+   "bbr_id": "jonesju01"
+  }
+ ]
+}

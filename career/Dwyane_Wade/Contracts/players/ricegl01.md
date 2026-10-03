@@ -2,9 +2,9 @@
 
 # Contract | Glen Rice
 
-Known through: 2003-10-05. [Open interactive contract](ricegl01.html#contract) · [Contract history](ricegl01.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](ricegl01.html#contract) · [Contract history](ricegl01.html#contract-history)
 
-Glen Rice: expired or unresolved. Evidence cutoff: 2003-10-05.
+Glen Rice: expired or unresolved. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 
