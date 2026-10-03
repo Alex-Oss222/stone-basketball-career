@@ -2,9 +2,9 @@
 
 # Contract | Chris Whitney
 
-Known through: 2003-10-28. [Open interactive contract](whitnch01.html#contract) · [Contract history](whitnch01.html#contract-history)
+Known through: 2003-10-29. [Open interactive contract](whitnch01.html#contract) · [Contract history](whitnch01.html#contract-history)
 
-Chris Whitney: free agent expiring. Evidence cutoff: 2003-10-28.
+Chris Whitney: free agent expiring. Evidence cutoff: 2003-10-29.
 
 ## Current contract
 

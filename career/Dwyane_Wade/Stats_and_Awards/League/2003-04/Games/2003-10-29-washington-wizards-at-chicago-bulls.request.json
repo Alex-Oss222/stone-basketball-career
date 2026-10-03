@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-10-29-washington-wizards-at-chicago-bulls",
+ "game_date": "2003-10-29",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Chicago Bulls",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ }
+}

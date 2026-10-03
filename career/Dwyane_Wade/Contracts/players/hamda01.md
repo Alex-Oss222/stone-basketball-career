@@ -2,9 +2,9 @@
 
 # Contract | Darvin Ham
 
-Known through: 2003-10-28. [Open interactive contract](hamda01.html#contract) · [Contract history](hamda01.html#contract-history)
+Known through: 2003-10-29. [Open interactive contract](hamda01.html#contract) · [Contract history](hamda01.html#contract-history)
 
-Darvin Ham: free agent expiring. Evidence cutoff: 2003-10-28.
+Darvin Ham: free agent expiring. Evidence cutoff: 2003-10-29.
 
 ## Current contract
 

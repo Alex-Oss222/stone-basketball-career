@@ -4,7 +4,7 @@
 
 NBA regular season · November 22-30, 2003
 
-As of October 28, 2003: not started. The 17-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 17-player active roster.
+As of October 29, 2003: not started. The 17-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 17-player active roster.
 
 ## Team record
 

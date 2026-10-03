@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-10-29-milwaukee-bucks-at-minnesota-timberwolves",
+ "game_date": "2003-10-29",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Minnesota Timberwolves",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ }
+}

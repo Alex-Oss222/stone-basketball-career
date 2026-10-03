@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-10-29-new-jersey-nets-at-toronto-raptors",
+ "game_date": "2003-10-29",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Toronto Raptors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ }
+}

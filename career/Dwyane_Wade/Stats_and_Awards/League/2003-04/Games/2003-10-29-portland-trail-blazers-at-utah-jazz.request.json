@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-10-29-portland-trail-blazers-at-utah-jazz",
+ "game_date": "2003-10-29",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ }
+}

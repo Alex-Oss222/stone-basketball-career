@@ -2,9 +2,9 @@
 
 # Contract | Mark Madsen
 
-Known through: 2003-10-28. [Open interactive contract](madsema01.html#contract) · [Contract history](madsema01.html#contract-history)
+Known through: 2003-10-29. [Open interactive contract](madsema01.html#contract) · [Contract history](madsema01.html#contract-history)
 
-Mark Madsen: free agent expiring. Evidence cutoff: 2003-10-28.
+Mark Madsen: free agent expiring. Evidence cutoff: 2003-10-29.
 
 ## Current contract
 

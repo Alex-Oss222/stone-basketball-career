@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-10-29-dallas-mavericks-at-golden-state-warriors",
+ "game_date": "2003-10-29",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Golden State Warriors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Dallas Mavericks",
+  "rotation": "real"
+ }
+}
