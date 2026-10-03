@@ -2,9 +2,9 @@
 
 # Contract | Luke Ridnour
 
-Known through: 2003-11-04. [Open interactive contract](ridnolu01.html#contract) · [Contract history](ridnolu01.html#contract-history)
+Known through: 2003-11-07. [Open interactive contract](ridnolu01.html#contract) · [Contract history](ridnolu01.html#contract-history)
 
-Luke Ridnour: No verified contract record. Evidence cutoff: 2003-11-04.
+Luke Ridnour: No verified contract record. Evidence cutoff: 2003-11-07.
 
 ## Current contract
 

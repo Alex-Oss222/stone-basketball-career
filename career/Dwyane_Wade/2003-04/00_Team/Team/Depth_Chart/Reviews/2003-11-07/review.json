@@ -1,0 +1,360 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "season": "2003-04",
+ "as_of": "2003-11-07",
+ "assessment_date": "2003-10-24",
+ "prior_minutes": 300.0,
+ "score_minutes": 30.0,
+ "prior_scores": {
+  "Caron Butler": 12.1,
+  "Rasual Butler": 5.998,
+  "Anthony Carter": 5.554,
+  "LaPhonso Ellis": 7.231,
+  "Brian Grant": 12.357,
+  "Mike James": 8.92,
+  "Eddie Jones": 13.733,
+  "Sean Lampley": 5.324,
+  "Dwyane Wade": 13.725,
+  "Jerome Beasley": 5.5,
+  "Keon Clark": 10.77,
+  "Jumaine Jones": 9.335,
+  "Stephen Jackson": 12.135,
+  "Reggie Evans": 9.256,
+  "Dion Glover": 9.009,
+  "Shawn Kemp": 10.712,
+  "Chris Andersen": 10.532,
+  "Mike Batiste": 8.212,
+  "Scott Padgett": 10.121,
+  "Tyrone Hill": 8.034,
+  "Cherokee Parks": 7.13,
+  "Udonis Haslem": 5.0,
+  "John Wallace": 5.0
+ },
+ "evidence_cutoff": "game_date strictly before review date",
+ "sources": [
+  {
+   "event_id": "2003-10-28-miami-heat-at-philadelphia-76ers",
+   "date": "2003-10-28",
+   "result_file": "career/Dwyane_Wade/2003-04/06_Regular_Season/10_October/Week_4/Game_1.result.json",
+   "sha256": "e30a11ff53153a62c66369aec6f0621749cc5ee96e97638fe5c782ffe807ef49"
+  },
+  {
+   "event_id": "2003-10-29-miami-heat-at-boston-celtics",
+   "date": "2003-10-29",
+   "result_file": "career/Dwyane_Wade/2003-04/06_Regular_Season/10_October/Week_4/Game_2.result.json",
+   "sha256": "72ce454c338df32137323de1b3978690e4b4622941e4b8292490c437fff6c9bc"
+  },
+  {
+   "event_id": "2003-10-31-detroit-pistons-at-miami-heat",
+   "date": "2003-10-31",
+   "result_file": "career/Dwyane_Wade/2003-04/06_Regular_Season/10_October/Week_4/Game_3.result.json",
+   "sha256": "1c068a33ad64d17ea286cb27927e5f4744ad6f23df8579f0111275b67423d420"
+  },
+  {
+   "event_id": "2003-11-03-miami-heat-at-dallas-mavericks",
+   "date": "2003-11-03",
+   "result_file": "career/Dwyane_Wade/2003-04/06_Regular_Season/11_November/Week_1/Game_1.result.json",
+   "sha256": "410afa0d9f04e030f6c0bdb60d0fce74d6b9208cf92b9b8d8173248e83a01ad8"
+  },
+  {
+   "event_id": "2003-11-04-miami-heat-at-san-antonio-spurs",
+   "date": "2003-11-04",
+   "result_file": "career/Dwyane_Wade/2003-04/06_Regular_Season/11_November/Week_1/Game_2.result.json",
+   "sha256": "3ca0b6c5686102ac0f2efbde67d3aacb3e8aec649bce76e27eb2e99fdcfe4a47"
+  }
+ ],
+ "players": [
+  {
+   "player": "Anthony Carter",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "cartean01",
+   "status": "roster"
+  },
+  {
+   "player": "Brian Grant",
+   "positions": [
+    "C",
+    "PF"
+   ],
+   "bbr_id": "grantbr01",
+   "status": "roster"
+  },
+  {
+   "player": "Caron Butler",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "butleca01",
+   "status": "roster"
+  },
+  {
+   "player": "Cherokee Parks",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "parksch02",
+   "status": "roster"
+  },
+  {
+   "player": "Dwyane Wade",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "bbr_id": null,
+   "status": "roster"
+  },
+  {
+   "player": "Eddie Jones",
+   "positions": [
+    "SG",
+    "SF"
+   ],
+   "bbr_id": "jonesed02",
+   "status": "roster"
+  },
+  {
+   "player": "John Wallace",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "wallajo01",
+   "status": "roster"
+  },
+  {
+   "player": "LaPhonso Ellis",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "ellisla01",
+   "status": "roster"
+  },
+  {
+   "player": "Mike James",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "jamesmi01",
+   "status": "roster"
+  },
+  {
+   "player": "Rasual Butler",
+   "positions": [
+    "SG",
+    "SF"
+   ],
+   "bbr_id": "butlera01",
+   "status": "roster"
+  },
+  {
+   "player": "Scott Padgett",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "padgesc01",
+   "status": "roster"
+  },
+  {
+   "player": "Sean Lampley",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "lamplse01",
+   "status": "roster"
+  },
+  {
+   "player": "Shawn Kemp",
+   "positions": [
+    "C"
+   ],
+   "bbr_id": "kempsh01",
+   "status": "roster"
+  },
+  {
+   "player": "Stephen Jackson",
+   "positions": [
+    "SG"
+   ],
+   "bbr_id": "jacksst02",
+   "status": "roster"
+  },
+  {
+   "player": "Udonis Haslem",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "hasleud01",
+   "status": "roster"
+  }
+ ],
+ "scores": {
+  "Anthony Carter": 5.554,
+  "Brian Grant": 10.680236,
+  "Caron Butler": 11.14681,
+  "Cherokee Parks": 8.174374,
+  "Dwyane Wade": 14.422178,
+  "Eddie Jones": 13.252348,
+  "John Wallace": 5.0,
+  "LaPhonso Ellis": 6.931354,
+  "Mike James": 11.102555,
+  "Rasual Butler": 5.735939,
+  "Scott Padgett": 12.472503,
+  "Sean Lampley": 5.324,
+  "Shawn Kemp": 12.712629,
+  "Stephen Jackson": 12.80256,
+  "Udonis Haslem": 5.0
+ },
+ "evidence": {
+  "Anthony Carter": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 5.554,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 5.554
+  },
+  "Brian Grant": {
+   "games": 5,
+   "minutes": 181.92755,
+   "efficiency": 48.0,
+   "preseason_estimate": 12.357,
+   "observed_per_30": 7.915239,
+   "observed_weight": 0.3775,
+   "score": 10.680236
+  },
+  "Caron Butler": {
+   "games": 5,
+   "minutes": 165.60405,
+   "efficiency": 52.0,
+   "preseason_estimate": 12.1,
+   "observed_per_30": 9.420059,
+   "observed_weight": 0.355676,
+   "score": 11.14681
+  },
+  "Cherokee Parks": {
+   "games": 5,
+   "minutes": 42.41153333333334,
+   "efficiency": 22.0,
+   "preseason_estimate": 7.13,
+   "observed_per_30": 15.561805,
+   "observed_weight": 0.123861,
+   "score": 8.174374
+  },
+  "Dwyane Wade": {
+   "games": 5,
+   "minutes": 97.82478333333333,
+   "efficiency": 54.0,
+   "preseason_estimate": 13.725,
+   "observed_per_30": 16.560221,
+   "observed_weight": 0.245899,
+   "score": 14.422178
+  },
+  "Eddie Jones": {
+   "games": 5,
+   "minutes": 182.92575,
+   "efficiency": 76.0,
+   "preseason_estimate": 13.733,
+   "observed_per_30": 12.464074,
+   "observed_weight": 0.378786,
+   "score": 13.252348
+  },
+  "John Wallace": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 5.0,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 5.0
+  },
+  "LaPhonso Ellis": {
+   "games": 5,
+   "minutes": 47.59441666666667,
+   "efficiency": 8.0,
+   "preseason_estimate": 7.231,
+   "observed_per_30": 5.042608,
+   "observed_weight": 0.136925,
+   "score": 6.931354
+  },
+  "Mike James": {
+   "games": 5,
+   "minutes": 178.80871666666667,
+   "efficiency": 88.0,
+   "preseason_estimate": 8.92,
+   "observed_per_30": 14.764381,
+   "observed_weight": 0.373445,
+   "score": 11.102555
+  },
+  "Rasual Butler": {
+   "games": 5,
+   "minutes": 18.936433333333333,
+   "efficiency": 1.0,
+   "preseason_estimate": 5.998,
+   "observed_per_30": 1.584248,
+   "observed_weight": 0.059374,
+   "score": 5.735939
+  },
+  "Scott Padgett": {
+   "games": 5,
+   "minutes": 169.53686666666667,
+   "efficiency": 94.0,
+   "preseason_estimate": 10.121,
+   "observed_per_30": 16.63355,
+   "observed_weight": 0.361073,
+   "score": 12.472503
+  },
+  "Sean Lampley": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 5.324,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 5.324
+  },
+  "Shawn Kemp": {
+   "games": 5,
+   "minutes": 61.34146666666666,
+   "efficiency": 46.0,
+   "preseason_estimate": 10.712,
+   "observed_per_30": 22.497017,
+   "observed_weight": 0.16976,
+   "score": 12.712629
+  },
+  "Stephen Jackson": {
+   "games": 5,
+   "minutes": 78.08845,
+   "efficiency": 40.0,
+   "preseason_estimate": 12.135,
+   "observed_per_30": 15.367189,
+   "observed_weight": 0.206535,
+   "score": 12.80256
+  },
+  "Udonis Haslem": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 5.0,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 5.0
+  }
+ },
+ "battles": [
+  {
+   "event_id": "2003-04-rotation-2003-11-07-sg-starter",
+   "date": "2003-11-07",
+   "question": "Who starts at SG: Dwyane Wade or Eddie Jones?",
+   "decider": "Miami coaching staff (engine evaluation draw)",
+   "options": {
+    "Dwyane Wade": 0.702783,
+    "Eddie Jones": 0.297217
+   },
+   "basis": "Dated staff scores 14.422178 and 13.252348 within 10%; closed production per 30 minutes blended with 300 preseason prior minutes. No seniority, draft-slot or incumbent bonus."
+  }
+ ]
+}

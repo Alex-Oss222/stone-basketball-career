@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-04-rotation-2003-11-07-sg-starter",
+ "date": "2003-11-07",
+ "question": "Who starts at SG: Dwyane Wade or Eddie Jones?",
+ "decider": "Miami coaching staff (engine evaluation draw)",
+ "options": {
+  "Dwyane Wade": 0.702783,
+  "Eddie Jones": 0.297217
+ },
+ "basis": "Dated staff scores 14.422178 and 13.252348 within 10%; closed production per 30 minutes blended with 300 preseason prior minutes. No seniority, draft-slot or incumbent bonus."
+}

@@ -2,9 +2,9 @@
 
 # Contract | Travis Best
 
-Known through: 2003-11-04. [Open interactive contract](besttr01.html#contract) · [Contract history](besttr01.html#contract-history)
+Known through: 2003-11-07. [Open interactive contract](besttr01.html#contract) · [Contract history](besttr01.html#contract-history)
 
-Travis Best: free agent expiring. Evidence cutoff: 2003-11-04.
+Travis Best: free agent expiring. Evidence cutoff: 2003-11-07.
 
 ## Current contract
 

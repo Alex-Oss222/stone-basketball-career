@@ -2,9 +2,9 @@
 
 # Contract | Walt Williams
 
-Known through: 2003-11-04. [Open interactive contract](williwa02.html#contract) · [Contract history](williwa02.html#contract-history)
+Known through: 2003-11-07. [Open interactive contract](williwa02.html#contract) · [Contract history](williwa02.html#contract-history)
 
-Walt Williams: free agent expiring. Evidence cutoff: 2003-11-04.
+Walt Williams: free agent expiring. Evidence cutoff: 2003-11-07.
 
 ## Current contract
 
