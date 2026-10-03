@@ -1,0 +1,14 @@
+{
+ "date": "2003-07-01",
+ "decider": "Jason Kidd (simulated player)",
+ "event_id": "2003-fa-kiddja01-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "money",
+ "question": "What does Jason Kidd weigh most in choosing his next contract?"
+}

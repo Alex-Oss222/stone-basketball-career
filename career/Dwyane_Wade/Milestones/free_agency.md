@@ -33,7 +33,7 @@ These are Miami's roster negotiations, not offers to Wade.
 
 | Player | Opened | Dated rounds | Known position | Source |
 | --- | --- | --- | --- | --- |
-| Jason Kidd | 2003-07-01 | 0 | Dated negotiation; no signing confirmed | [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json) |
+| Jason Kidd | 2003-07-01 | 1 | Dated negotiation; no signing confirmed | [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json) |
 
 ## Recorded market events
 
