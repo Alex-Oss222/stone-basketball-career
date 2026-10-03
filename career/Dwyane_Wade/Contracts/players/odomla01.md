@@ -2,9 +2,9 @@
 
 # Contract | Lamar Odom
 
-Known through: 2003-10-28. [Open interactive contract](odomla01.html#contract) · [Contract history](odomla01.html#contract-history)
+Known through: 2003-10-29. [Open interactive contract](odomla01.html#contract) · [Contract history](odomla01.html#contract-history)
 
-Lamar Odom: free agent expiring. Evidence cutoff: 2003-10-28.
+Lamar Odom: free agent expiring. Evidence cutoff: 2003-10-29.
 
 ## Current contract
 

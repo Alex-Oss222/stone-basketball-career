@@ -4,7 +4,7 @@
 
 NBA regular season · October 1-31, 2003
 
-407 tracked players · 3 closed games in this record · Through October 28, 2003.
+407 tracked players · 3 closed games in this record · Through October 29, 2003.
 
 ## Leaders
 
@@ -496,7 +496,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | Period | Calendar dates | Closed games | Status |
 | --- | --- | ---: | --- |
 | [Week 3](Week_3/League_Stats.md) | October 15-21, 2003 | 0 | Not started |
-| [Week 4](Week_4/League_Stats.md) | October 22-31, 2003 | 3 | Through October 28, 2003 |
+| [Week 4](Week_4/League_Stats.md) | October 22-31, 2003 | 3 | Through October 29, 2003 |
 
 ## Coverage
 

@@ -2,9 +2,9 @@
 
 # Contract | Adam Harrington
 
-Known through: 2003-10-28. [Open interactive contract](harriad01.html#contract) · [Contract history](harriad01.html#contract-history)
+Known through: 2003-10-29. [Open interactive contract](harriad01.html#contract) · [Contract history](harriad01.html#contract-history)
 
-Adam Harrington: free agent expiring. Evidence cutoff: 2003-10-28.
+Adam Harrington: free agent expiring. Evidence cutoff: 2003-10-29.
 
 ## Current contract
 

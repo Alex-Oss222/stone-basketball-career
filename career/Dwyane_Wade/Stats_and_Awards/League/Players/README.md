@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-10-28**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-10-29**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -163,7 +163,7 @@ Card date: **2003-10-28**. 407 registry players, one Markdown card and one inter
 | [Sani Becirovic](becirsa01.md) | Denver Nuggets (draft rights) | 22 | sourced | [open](becirsa01.html) |
 | [Stacey Augmon](augmost01.md) | New Orleans Hornets | 35 | sourced | [open](augmost01.html) |
 | [Stephen Jackson](jacksst02.md) | Miami Heat | 25 | sourced | [open](jacksst02.html) |
-| [Steve Smith](smithst01.md) | San Antonio Spurs | 34 | sourced | [open](smithst01.html) |
+| [Steve Smith](smithst01.md) | New Orleans Hornets | 34 | sourced | [open](smithst01.html) |
 | [Tamar Slay](slayta01.md) | New Jersey Nets | 23 | sourced | [open](slayta01.html) |
 | [Tariq Abdul-Wahad](abdulta01.md) | Dallas Mavericks | 28 | sourced | [open](abdulta01.html) |
 | [Tito Maddox](maddoti01.md) | Houston Rockets | 22 | silhouette | [open](maddoti01.html) |
