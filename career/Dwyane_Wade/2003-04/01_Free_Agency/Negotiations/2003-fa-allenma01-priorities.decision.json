@@ -1,0 +1,13 @@
+{
+ "event_id": "2003-fa-allenma01-priorities",
+ "date": "2003-07-16",
+ "question": "What does Malik Allen weigh most in choosing his next contract?",
+ "decider": "Malik Allen (simulated player)",
+ "options": {
+  "money": 0.3,
+  "fame": 0.2,
+  "loyalty": 0.2,
+  "winning": 0.3
+ },
+ "basis": "Trait odds by age (25): money, fame, loyalty, winning (docs/front_office_design.md 4.3). Drawn once per market window."
+}

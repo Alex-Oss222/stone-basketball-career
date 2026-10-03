@@ -1,0 +1,188 @@
+{
+ "date": "2003-07-16",
+ "cap_room": {
+  "cap": 43840000,
+  "cap_known": true,
+  "committed": 37293436,
+  "holds": 6838368,
+  "roster_charge": 1467724,
+  "room": -1759528
+ },
+ "payroll_ceiling": 57000000,
+ "renounce_when_needed": [
+  {
+   "player": "Alonzo Mourning",
+   "hold": 21661290,
+   "valuation": null,
+   "bird_status": "larry_bird",
+   "reason": "no 2002-03 evidence; hold exceeds any offer Miami would make"
+  }
+ ],
+ "keep_rights": [
+  {
+   "player": "Eddie House",
+   "hold": 1274870,
+   "valuation": 3616827,
+   "bird_status": "larry_bird",
+   "reason": "hold is within what Miami would pay; rights worth keeping"
+  },
+  {
+   "player": "Malik Allen",
+   "hold": 666166,
+   "valuation": 4634264,
+   "bird_status": "early_bird",
+   "reason": "hold is within what Miami would pay; rights worth keeping"
+  },
+  {
+   "player": "Mike James",
+   "hold": 666166,
+   "valuation": 3873269,
+   "bird_status": "early_bird",
+   "reason": "hold is within what Miami would pay; rights worth keeping"
+  },
+  {
+   "player": "Travis Best",
+   "hold": 1680000,
+   "valuation": 3868714,
+   "bird_status": "non_bird",
+   "reason": "hold is within what Miami would pay; rights worth keeping"
+  },
+  {
+   "player": "Vladimir Stepania",
+   "hold": 1755000,
+   "valuation": 4370228,
+   "bird_status": "early_bird",
+   "reason": "hold is within what Miami would pay; rights worth keeping"
+  },
+  {
+   "player": "Sean Marks",
+   "hold": 796166,
+   "valuation": 3171528,
+   "bird_status": "early_bird",
+   "reason": "hold is within what Miami would pay; rights worth keeping"
+  }
+ ],
+ "needs": {
+  "PG": {
+   "minutes_short": 16,
+   "quality_gap": 0.38,
+   "incumbents": [
+    "Anthony Carter"
+   ]
+  },
+  "SG": {
+   "minutes_short": 0,
+   "quality_gap": 0.0,
+   "incumbents": [
+    "Rasual Butler",
+    "Eddie Jones",
+    "Dwyane Wade"
+   ]
+  },
+  "SF": {
+   "minutes_short": 0,
+   "quality_gap": 0.0,
+   "incumbents": [
+    "Caron Butler",
+    "Sean Lampley"
+   ]
+  },
+  "PF": {
+   "minutes_short": 0,
+   "quality_gap": 0.3,
+   "incumbents": [
+    "LaPhonso Ellis",
+    "Jerome Beasley"
+   ]
+  },
+  "C": {
+   "minutes_short": 16,
+   "quality_gap": 0.0,
+   "incumbents": [
+    "Brian Grant"
+   ]
+  }
+ },
+ "targets": [
+  {
+   "bbr_id": "clarkke01",
+   "player": "Keon Clark",
+   "club": "Sacramento Kings",
+   "position": "C",
+   "age": 28,
+   "value": 9.8,
+   "valuation": 4936512,
+   "ask": 4442861,
+   "years_asked": 4,
+   "surplus": 0.111,
+   "fit": 0.667,
+   "score": 7.766,
+   "wade_request": false,
+   "rfa": false,
+   "bird_class": "non_bird",
+   "route": "mid_level"
+  }
+ ],
+ "room_after_targets": -1759528,
+ "re_sign_candidates": [
+  {
+   "player": "Eddie House",
+   "bbr_id": "houseed01",
+   "route": "larry_bird",
+   "valuation": 3616827,
+   "hold": 1274870
+  },
+  {
+   "player": "Malik Allen",
+   "bbr_id": "allenma01",
+   "route": "early_bird",
+   "valuation": 4634264,
+   "hold": 666166
+  },
+  {
+   "player": "Mike James",
+   "bbr_id": "jamesmi01",
+   "route": "early_bird",
+   "valuation": 3873269,
+   "hold": 666166
+  },
+  {
+   "player": "Travis Best",
+   "bbr_id": "besttr01",
+   "route": "non_bird",
+   "valuation": 3868714,
+   "hold": 1680000
+  },
+  {
+   "player": "Vladimir Stepania",
+   "bbr_id": "stepavl01",
+   "route": "early_bird",
+   "valuation": 4370228,
+   "hold": 1755000
+  },
+  {
+   "player": "Sean Marks",
+   "bbr_id": "marksse01",
+   "route": "early_bird",
+   "valuation": 3171528,
+   "hold": 796166
+  }
+ ],
+ "wade_requests": [
+  {
+   "player": "Andre Miller",
+   "outcome": "not pursued",
+   "reason": "ask $6,801,719 does not fit the room ($-1,759,528 left) or the exceptions; score 18.233"
+  },
+  {
+   "player": "Lamar Odom",
+   "outcome": "not pursued",
+   "reason": "ask $7,227,864 does not fit the room ($-1,759,528 left) or the exceptions; score 11.398"
+  }
+ ],
+ "sign_and_trade_probes": [],
+ "standing": {
+  "standing": "unsigned_rookie",
+  "as_of": null
+ }
+}

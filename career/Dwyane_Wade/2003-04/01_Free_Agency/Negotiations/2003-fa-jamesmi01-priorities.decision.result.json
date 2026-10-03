@@ -1,0 +1,14 @@
+{
+ "date": "2003-07-16",
+ "decider": "Mike James (simulated player)",
+ "event_id": "2003-fa-jamesmi01-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "winning",
+ "question": "What does Mike James weigh most in choosing his next contract?"
+}

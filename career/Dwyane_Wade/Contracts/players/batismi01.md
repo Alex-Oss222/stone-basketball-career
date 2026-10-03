@@ -2,9 +2,9 @@
 
 # Contract | Mike Batiste
 
-Known through: 2003-07-03. [Open interactive contract](batismi01.html#contract) · [Contract history](batismi01.html#contract-history)
+Known through: 2003-07-31. [Open interactive contract](batismi01.html#contract) · [Contract history](batismi01.html#contract-history)
 
-Mike Batiste: free agent expiring. Evidence cutoff: 2003-07-03.
+Mike Batiste: free agent expiring. Evidence cutoff: 2003-07-31.
 
 ## Current contract
 

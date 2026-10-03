@@ -2,9 +2,9 @@
 
 # Contract | Joseph Forte
 
-Known through: 2003-07-03. [Open interactive contract](fortejo01.html#contract) · [Contract history](fortejo01.html#contract-history)
+Known through: 2003-07-31. [Open interactive contract](fortejo01.html#contract) · [Contract history](fortejo01.html#contract-history)
 
-Joseph Forte: under rookie contract. Evidence cutoff: 2003-07-03.
+Joseph Forte: under rookie contract. Evidence cutoff: 2003-07-31.
 
 ## Current contract
 
@@ -43,7 +43,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | $1,009,920 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
-| 2003-04 | $1,080,360 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | season_salary_list | Not recorded |
+| 2003-04 | $1,080,360 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,721,013 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | team_option | extrapolated_rookie_option_formula | Fourth-year team option under the rookie scale; no decision recorded on or before 2003-06-26. |
 
 ### Options and decision deadlines
@@ -203,7 +203,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | $1,009,920 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
-| 2003-04 | $1,080,360 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | season_salary_list | Not recorded |
+| 2003-04 | $1,080,360 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | season_salary_list | Not recorded |
 | 2004-05 | $1,721,013 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | team_option | extrapolated_rookie_option_formula | Fourth-year team option under the rookie scale; no decision recorded on or before 2003-06-26. |
 
 ### Options and decision deadlines

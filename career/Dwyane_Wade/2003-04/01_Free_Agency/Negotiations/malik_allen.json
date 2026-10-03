@@ -1,0 +1,526 @@
+{
+ "player": "Malik Allen",
+ "bbr_id": "allenma01",
+ "incumbent": "Miami Heat",
+ "restricted": false,
+ "opened": "2003-07-16",
+ "status": "ended",
+ "plan": {
+  "bbr_id": "allenma01",
+  "player": "Malik Allen",
+  "club": "Miami Heat",
+  "position": "PF",
+  "valuation": 4634264,
+  "ask": 4170838,
+  "years_asked": 5,
+  "route": "early_bird",
+  "rfa": false,
+  "score": null
+ },
+ "priorities": {
+  "trait": "money",
+  "weights": {
+   "money": 0.55,
+   "years": 0.15,
+   "role": 0.1,
+   "winning": 0.1,
+   "location": 0.1
+  }
+ },
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2003-07-16",
+   "offer_id": "MIA-malik_allen-1",
+   "version": 1,
+   "route": "early_bird",
+   "terms": {
+    "first_year": 3649483,
+    "years": 4,
+    "schedule": [
+     3649483,
+     4105668,
+     4561854,
+     5018039
+    ],
+    "guaranteed": 12317005,
+    "raise_percent": 12.5,
+    "last_year_guaranteed": false,
+    "round": 1,
+    "promise": {
+     "role": "starter",
+     "minutes_per_game": 32
+    },
+    "basis": "round 1: ask $4,170,838, Miami's valuation $4,634,264, ceiling $4,917,000"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-allenma01-offer-1",
+   "answer": "reject",
+   "answered": "2003-07-17",
+   "counter": null,
+   "assessment": {
+    "model": "utility-2003.2",
+    "stage": "prime",
+    "trait": "money",
+    "weights": {
+     "money": 0.2761,
+     "security": 0.085,
+     "net_income": 0.0637,
+     "role": 0.2212,
+     "contention": 0.2212,
+     "loyalty": 0.0796,
+     "market": 0.0531
+    },
+    "offer": {
+     "money": 0.0,
+     "security": 80.0,
+     "net_income": 100,
+     "role": 100.0,
+     "contention": 20.8,
+     "loyalty": 100,
+     "market": 60
+    },
+    "alternative": {
+     "money": 70.6,
+     "security": 100.0,
+     "net_income": 60,
+     "role": 100.0,
+     "contention": 52.5,
+     "loyalty": 50,
+     "market": 60
+    },
+    "offer_club": "Miami Heat",
+    "alternative_club": null,
+    "situations": {
+     "offer": {
+      "club": "Miami Heat",
+      "strength": 28.3,
+      "role_minutes": 32
+     },
+     "alternative": {
+      "club": null,
+      "strength": 41,
+      "role_minutes": 29.0
+     }
+    },
+    "utility": {
+     "offer": 51.04,
+     "alternative": 72.71,
+     "gap": -21.67
+    },
+    "excluded": [
+     "scheme fit: Miami's staff has not set an offensive or defensive scheme (team_config.json)",
+     "organisational stability, coach relationship and locker-room ties: no dated evidence",
+     "medical and training staff: no dated evidence",
+     "family and personal circumstances: no sourced evidence; never invented for a real person"
+    ]
+   },
+   "counter_focus": {
+    "factor": "money",
+    "weighted_deficit": 19.49
+   }
+  },
+  {
+   "round": 2,
+   "date": "2003-07-17",
+   "offer_id": "MIA-malik_allen-2",
+   "version": 1,
+   "route": "early_bird",
+   "terms": {
+    "first_year": 4131736,
+    "years": 5,
+    "schedule": [
+     4131736,
+     4648203,
+     5164670,
+     5681137,
+     6197604
+    ],
+    "guaranteed": 25823350,
+    "raise_percent": 12.5,
+    "last_year_guaranteed": true,
+    "round": 2,
+    "promise": {
+     "role": "starter",
+     "minutes_per_game": 32
+    },
+    "basis": "round 2: ask $4,170,838, Miami's valuation $4,634,264, ceiling $4,917,000"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-allenma01-offer-2",
+   "answer": "counter",
+   "answered": "2003-07-18",
+   "counter": 4407742,
+   "assessment": {
+    "model": "utility-2003.2",
+    "stage": "prime",
+    "trait": "money",
+    "weights": {
+     "money": 0.2761,
+     "security": 0.085,
+     "net_income": 0.0637,
+     "role": 0.2212,
+     "contention": 0.2212,
+     "loyalty": 0.0796,
+     "market": 0.0531
+    },
+    "offer": {
+     "money": 63.1,
+     "security": 100.0,
+     "net_income": 100,
+     "role": 100.0,
+     "contention": 26.8,
+     "loyalty": 100,
+     "market": 60
+    },
+    "alternative": {
+     "money": 70.6,
+     "security": 100.0,
+     "net_income": 60,
+     "role": 100.0,
+     "contention": 52.5,
+     "loyalty": 50,
+     "market": 60
+    },
+    "offer_club": "Miami Heat",
+    "alternative_club": null,
+    "situations": {
+     "offer": {
+      "club": "Miami Heat",
+      "strength": 30.7,
+      "role_minutes": 32
+     },
+     "alternative": {
+      "club": null,
+      "strength": 41,
+      "role_minutes": 29.0
+     }
+    },
+    "utility": {
+     "offer": 71.49,
+     "alternative": 72.71,
+     "gap": -1.22
+    },
+    "excluded": [
+     "scheme fit: Miami's staff has not set an offensive or defensive scheme (team_config.json)",
+     "organisational stability, coach relationship and locker-room ties: no dated evidence",
+     "medical and training staff: no dated evidence",
+     "family and personal circumstances: no sourced evidence; never invented for a real person"
+    ]
+   },
+   "counter_focus": {
+    "factor": "contention",
+    "weighted_deficit": 5.68
+   }
+  },
+  {
+   "round": 3,
+   "date": "2003-07-18",
+   "offer_id": "MIA-malik_allen-2",
+   "version": 2,
+   "route": "early_bird",
+   "terms": {
+    "first_year": 4400842,
+    "years": 5,
+    "schedule": [
+     4400842,
+     4950947,
+     5501052,
+     6051158,
+     6601263
+    ],
+    "guaranteed": 27505262,
+    "raise_percent": 12.5,
+    "last_year_guaranteed": true,
+    "round": 3,
+    "promise": {
+     "role": "starter",
+     "minutes_per_game": 32
+    },
+    "basis": "round 3: ask $4,170,838, Miami's valuation $4,634,264, ceiling $4,917,000, counter $4,407,742"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-allenma01-offer-3",
+   "answer": "reject",
+   "answered": "2003-07-19",
+   "counter": null,
+   "assessment": {
+    "model": "utility-2003.2",
+    "stage": "prime",
+    "trait": "money",
+    "weights": {
+     "money": 0.2761,
+     "security": 0.085,
+     "net_income": 0.0637,
+     "role": 0.2212,
+     "contention": 0.2212,
+     "loyalty": 0.0796,
+     "market": 0.0531
+    },
+    "offer": {
+     "money": 69.5,
+     "security": 100.0,
+     "net_income": 100,
+     "role": 100.0,
+     "contention": 26.8,
+     "loyalty": 100,
+     "market": 60
+    },
+    "alternative": {
+     "money": 70.6,
+     "security": 100.0,
+     "net_income": 60,
+     "role": 100.0,
+     "contention": 52.5,
+     "loyalty": 50,
+     "market": 60
+    },
+    "offer_club": "Miami Heat",
+    "alternative_club": null,
+    "situations": {
+     "offer": {
+      "club": "Miami Heat",
+      "strength": 30.7,
+      "role_minutes": 32
+     },
+     "alternative": {
+      "club": null,
+      "strength": 41,
+      "role_minutes": 29.0
+     }
+    },
+    "utility": {
+     "offer": 73.25,
+     "alternative": 72.71,
+     "gap": 0.54
+    },
+    "excluded": [
+     "scheme fit: Miami's staff has not set an offensive or defensive scheme (team_config.json)",
+     "organisational stability, coach relationship and locker-room ties: no dated evidence",
+     "medical and training staff: no dated evidence",
+     "family and personal circumstances: no sourced evidence; never invented for a real person"
+    ]
+   },
+   "counter_focus": {
+    "factor": "contention",
+    "weighted_deficit": 5.68
+   }
+  }
+ ],
+ "agreement": null,
+ "sheet": null,
+ "signing": null,
+ "ended": {
+  "date": "2003-07-19",
+  "reason": "rejected Miami's final offer"
+ },
+ "trade": null,
+ "state": {
+  "player": "Malik Allen",
+  "incumbent": "Miami Heat",
+  "trusted_issuers": [
+   "miami_cap_adapter"
+  ],
+  "last_at": "2003-07-19T09:00:00-04:00",
+  "cba": "1999",
+  "phase": "incumbent_negotiation",
+  "market": null,
+  "offers": [
+   {
+    "offer_id": "MIA-malik_allen-1",
+    "version": 1,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":32,\"role\":\"starter\"},\"route\":\"early_bird\",\"salary_schedule\":[{\"guaranteed\":3649483,\"option\":\"none\",\"salary\":3649483,\"season\":\"2003-04\"},{\"guaranteed\":4105668,\"option\":\"none\",\"salary\":4105668,\"season\":\"2004-05\"},{\"guaranteed\":4561854,\"option\":\"none\",\"salary\":4561854,\"season\":\"2005-06\"},{\"guaranteed\":0,\"option\":\"none\",\"salary\":5018039,\"season\":\"2006-07\"}]}"
+    },
+    "issued_at": "2003-07-16T12:00:00-04:00",
+    "expires_at": "2003-07-19T12:00:00-04:00",
+    "status": "rejected"
+   },
+   {
+    "offer_id": "MIA-malik_allen-2",
+    "version": 1,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":32,\"role\":\"starter\"},\"route\":\"early_bird\",\"salary_schedule\":[{\"guaranteed\":4131736,\"option\":\"none\",\"salary\":4131736,\"season\":\"2003-04\"},{\"guaranteed\":4648203,\"option\":\"none\",\"salary\":4648203,\"season\":\"2004-05\"},{\"guaranteed\":5164670,\"option\":\"none\",\"salary\":5164670,\"season\":\"2005-06\"},{\"guaranteed\":5681137,\"option\":\"none\",\"salary\":5681137,\"season\":\"2006-07\"},{\"guaranteed\":6197604,\"option\":\"none\",\"salary\":6197604,\"season\":\"2007-08\"}]}"
+    },
+    "issued_at": "2003-07-17T12:00:00-04:00",
+    "expires_at": "2003-07-20T12:00:00-04:00",
+    "status": "superseded"
+   },
+   {
+    "offer_id": "MIA-malik_allen-2",
+    "version": 2,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":32,\"role\":\"starter\"},\"route\":\"early_bird\",\"salary_schedule\":[{\"guaranteed\":4400842,\"option\":\"none\",\"salary\":4400842,\"season\":\"2003-04\"},{\"guaranteed\":4950947,\"option\":\"none\",\"salary\":4950947,\"season\":\"2004-05\"},{\"guaranteed\":5501052,\"option\":\"none\",\"salary\":5501052,\"season\":\"2005-06\"},{\"guaranteed\":6051158,\"option\":\"none\",\"salary\":6051158,\"season\":\"2006-07\"},{\"guaranteed\":6601263,\"option\":\"none\",\"salary\":6601263,\"season\":\"2007-08\"}]}"
+    },
+    "issued_at": "2003-07-18T12:00:00-04:00",
+    "expires_at": "2003-07-21T12:00:00-04:00",
+    "status": "rejected"
+   }
+  ],
+  "slots": [
+   "MIA-malik_allen-2",
+   null,
+   null,
+   null
+  ],
+  "requests": [
+   {
+    "offer_id": "MIA-malik_allen-2",
+    "version": 1,
+    "terms": {
+     "encoded": "{\"salary_schedule\":[{\"guaranteed\":4407742,\"option\":\"none\",\"salary\":4407742,\"season\":\"2003-04\"},{\"guaranteed\":4958710,\"option\":\"none\",\"salary\":4958710,\"season\":\"2004-05\"},{\"guaranteed\":5509678,\"option\":\"none\",\"salary\":5509678,\"season\":\"2005-06\"},{\"guaranteed\":6060645,\"option\":\"none\",\"salary\":6060645,\"season\":\"2006-07\"},{\"guaranteed\":6611613,\"option\":\"none\",\"salary\":6611613,\"season\":\"2007-08\"}]}"
+    },
+    "requested_at": "2003-07-18T09:00:00-04:00",
+    "decision_ref": "2003-fa-allenma01-offer-2"
+   }
+  ],
+  "sheet": null,
+  "resolution": null,
+  "events": [
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-16T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "c7970ebdb223aedca83180cd00b92a42026e154d853975b0a3a4486153aa7baf",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-16T12:00:00-04:00",
+     "valid_until": "2003-07-17T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "c7970ebdb223aedca83180cd00b92a42026e154d853975b0a3a4486153aa7baf"
+    }
+   },
+   {
+    "action": "reject_offer",
+    "actor": {
+     "kind": "player",
+     "identity": "Malik Allen"
+    },
+    "at": "2003-07-17T09:00:00-04:00",
+    "source_refs": [
+     "2003-fa-allenma01-offer-1"
+    ],
+    "subject_digest": "64c5d1cb1b8c14bd52bec21cfbd20d4f23076fec21f1ab874e855a7cb75e190e",
+    "attestation": null
+   },
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-17T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "7010fa30a4da340ab313aa46eb20c4cdf82f56d05144cf66758c02128916feb6",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-17T12:00:00-04:00",
+     "valid_until": "2003-07-18T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "7010fa30a4da340ab313aa46eb20c4cdf82f56d05144cf66758c02128916feb6"
+    }
+   },
+   {
+    "action": "counter_request",
+    "actor": {
+     "kind": "player",
+     "identity": "Malik Allen"
+    },
+    "at": "2003-07-18T09:00:00-04:00",
+    "source_refs": [
+     "2003-fa-allenma01-offer-2"
+    ],
+    "subject_digest": "abb7f1692e9166cb266247c81db6a47c4951ac587a9669ec447c5b1b2e823d0b",
+    "attestation": null
+   },
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-18T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "fedf8a344b8ef985dc5d1ad214c37773e7073e1af28151b1b01621b456c0e6a8",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-18T12:00:00-04:00",
+     "valid_until": "2003-07-19T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "fedf8a344b8ef985dc5d1ad214c37773e7073e1af28151b1b01621b456c0e6a8"
+    }
+   },
+   {
+    "action": "reject_offer",
+    "actor": {
+     "kind": "player",
+     "identity": "Malik Allen"
+    },
+    "at": "2003-07-19T09:00:00-04:00",
+    "source_refs": [
+     "2003-fa-allenma01-offer-3"
+    ],
+    "subject_digest": "ea2f18d14004e77450cced802e2fc5b1c6b43697d67c7384d9f69a1119307b30",
+    "attestation": null
+   }
+  ]
+ }
+}

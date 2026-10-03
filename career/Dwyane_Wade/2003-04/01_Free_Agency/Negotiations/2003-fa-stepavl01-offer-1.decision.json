@@ -1,0 +1,12 @@
+{
+ "event_id": "2003-fa-stepavl01-offer-1",
+ "date": "2003-07-16",
+ "question": "Does Vladimir Stepania accept Miami Heat's offer (3 years, $11,615,244 guaranteed)?",
+ "decider": "Vladimir Stepania (simulated player)",
+ "options": {
+  "accept": 0.02,
+  "counter": 0.149,
+  "reject": 0.831
+ },
+ "basis": "utility-2003.2: utility 54.44 at Miami Heat against 70.81 for his alternative (tier price (no reported terms): 4 years, $20,103,049 at Portland Trail Blazers), gap -16.37 points. Rosters on the date with him: Miami Heat 27.8 projected wins, about 20 minutes; Portland Trail Blazers 37.6 wins, about 26 minutes. Prime stage, trait money. Factors (weight x offer/alternative): money 0.28 x 15.7/70.5; security 0.09 x 75/100; net_income 0.06 x 100/60; role 0.22 x 99/100; contention 0.22 x 19.5/44; loyalty 0.08 x 100/50; market 0.05 x 60/60. Ordered logistic: accept above 4.0, reject below -10.0, scale 4.0; round 1 of 3. Weakest factor against the alternative: money. Not scored (no dated evidence): scheme fit, organisation, coach and locker-room ties, medical staff, family."
+}

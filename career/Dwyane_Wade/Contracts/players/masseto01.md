@@ -2,9 +2,9 @@
 
 # Contract | Tony Massenburg
 
-Known through: 2003-07-03. [Open interactive contract](masseto01.html#contract) · [Contract history](masseto01.html#contract-history)
+Known through: 2003-07-31. [Open interactive contract](masseto01.html#contract) · [Contract history](masseto01.html#contract-history)
 
-Tony Massenburg: free agent expiring. Evidence cutoff: 2003-07-03.
+Tony Massenburg: free agent expiring. Evidence cutoff: 2003-07-31.
 
 ## Current contract
 

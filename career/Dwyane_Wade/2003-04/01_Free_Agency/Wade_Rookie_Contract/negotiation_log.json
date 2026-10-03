@@ -1,0 +1,491 @@
+{
+ "player": "Dwyane Wade",
+ "team": "Miami Heat",
+ "pick": 5,
+ "agreement": "1999 CBA rookie scale (library/2003/league/nba_1999_cba_rules.json)",
+ "entries": [
+  {
+   "date": "2003-07-19",
+   "party": "miami",
+   "action": "offer",
+   "terms": {
+    "pick": 5,
+    "percent_of_scale": 120,
+    "schedule": {
+     "2003-04": 2636400,
+     "2004-05": 2834160,
+     "2005-06": 3031920,
+     "2006-07": 3841443
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary",
+     "2004-05": "contract_salary",
+     "2005-06": "contract_salary",
+     "2006-07": "team_option"
+    },
+    "fourth_year_option_deadline": "2005-10-31",
+    "qualifying_offer_increase_percent_after_fourth_year": 32.6
+   },
+   "promise": {
+    "role": "rotation",
+    "minutes_per_game": 20
+   },
+   "note": "120% is the customary first-round signing level; signing later keeps the lower 100% hold during free agency. Offered after Miami's July free-agent moves; the role promise is the better of his two positions on the depth chart on 2003-07-19, and at least a rotation role for a top-ten pick."
+  },
+  {
+   "date": "2003-07-19",
+   "party": "wade",
+   "action": "counter",
+   "terms": {
+    "pick": 5,
+    "structure": "layered",
+    "protected_percent": 80,
+    "total_percent": 120,
+    "protected_schedule": {
+     "2003-04": 1757600,
+     "2004-05": 1889440,
+     "2005-06": 2021280
+    },
+    "incentives": [
+     {
+      "id": "conditioning_program",
+      "label": "Offseason skill and conditioning program (10% of scale)",
+      "kind": "conditioning_program",
+      "percent": 10,
+      "classification": "included",
+      "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+      "benchmarks": {
+       "2003-04": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+       "2004-05": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+       "2005-06": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "physical_condition",
+      "label": "Preseason conditioning standard (10% of scale)",
+      "kind": "physical_condition",
+      "percent": 10,
+      "classification": "included",
+      "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+      "benchmarks": {
+       "2003-04": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+       "2004-05": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+       "2005-06": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league)."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "minutes",
+      "label": "Regular-season minutes (10% of scale)",
+      "kind": "performance",
+      "percent": 10,
+      "classification": "unlikely",
+      "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+      "benchmarks": {
+       "2003-04": "At least 1,200 regular-season minutes played.",
+       "2004-05": "At least 1,200 regular-season minutes played.",
+       "2005-06": "At least 1,200 regular-season minutes played."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "achievement",
+      "label": "Achievement (10% of scale)",
+      "kind": "performance",
+      "percent": 10,
+      "classification": "unlikely",
+      "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+      "benchmarks": {
+       "2003-04": "Selection to an NBA All-Rookie Team.",
+       "2004-05": "At least 15.0 points per game while appearing in at least 60 games.",
+       "2005-06": "At least 17.0 points per game while appearing in at least 60 games."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     }
+    ],
+    "maximum_schedule": {
+     "2003-04": 2636400,
+     "2004-05": 2834160,
+     "2005-06": 3031920
+    },
+    "schedule": {
+     "2003-04": 2197000,
+     "2004-05": 2361800,
+     "2005-06": 2526600,
+     "2006-07": 3201202
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary",
+     "2004-05": "contract_salary",
+     "2005-06": "contract_salary",
+     "2006-07": "team_option"
+    },
+    "signing_bonus": 0,
+    "promised_role_contractual": false,
+    "fourth_year_option_deadline": "2005-10-31",
+    "fourth_year_option_basis": "third-season counted Salary raised 26.7% (pick 5)",
+    "qualifying_offer_increase_percent_after_fourth_year": 32.6
+   },
+   "note": "80% of scale as protected Current Cash Compensation plus up to 40% of scale in CBA-compliant incentives: 20% in physical-condition and designated-program incentives that count as Salary, 20% in objective performance incentives classified by the league (Unlikely for a rookie). Maximum compensation 120% of scale. Miami's stated role is a non-contractual basketball representation. No signing bonus. Three seasons plus the mandatory fourth-year team option at 26.7% over the third season's Salary.",
+   "source": "Wade_Rookie_Contract/standing_instruction.json"
+  },
+  {
+   "date": "2003-07-20",
+   "party": "miami",
+   "action": "answer",
+   "terms": {
+    "pick": 5,
+    "structure": "layered",
+    "protected_percent": 80,
+    "total_percent": 120,
+    "protected_schedule": {
+     "2003-04": 1757600,
+     "2004-05": 1889440,
+     "2005-06": 2021280
+    },
+    "incentives": [
+     {
+      "id": "conditioning_program",
+      "label": "Offseason skill and conditioning program (10% of scale)",
+      "kind": "conditioning_program",
+      "percent": 10,
+      "classification": "included",
+      "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+      "benchmarks": {
+       "2003-04": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+       "2004-05": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+       "2005-06": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "physical_condition",
+      "label": "Preseason conditioning standard (10% of scale)",
+      "kind": "physical_condition",
+      "percent": 10,
+      "classification": "included",
+      "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+      "benchmarks": {
+       "2003-04": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+       "2004-05": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+       "2005-06": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league)."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "minutes",
+      "label": "Regular-season minutes (10% of scale)",
+      "kind": "performance",
+      "percent": 10,
+      "classification": "unlikely",
+      "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+      "benchmarks": {
+       "2003-04": "At least 1,200 regular-season minutes played.",
+       "2004-05": "At least 1,200 regular-season minutes played.",
+       "2005-06": "At least 1,200 regular-season minutes played."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "achievement",
+      "label": "Achievement (10% of scale)",
+      "kind": "performance",
+      "percent": 10,
+      "classification": "unlikely",
+      "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+      "benchmarks": {
+       "2003-04": "Selection to an NBA All-Rookie Team.",
+       "2004-05": "At least 15.0 points per game while appearing in at least 60 games.",
+       "2005-06": "At least 17.0 points per game while appearing in at least 60 games."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     }
+    ],
+    "maximum_schedule": {
+     "2003-04": 2636400,
+     "2004-05": 2834160,
+     "2005-06": 3031920
+    },
+    "schedule": {
+     "2003-04": 2197000,
+     "2004-05": 2361800,
+     "2005-06": 2526600,
+     "2006-07": 3201202
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary",
+     "2004-05": "contract_salary",
+     "2005-06": "contract_salary",
+     "2006-07": "team_option"
+    },
+    "signing_bonus": 0,
+    "promised_role_contractual": false,
+    "fourth_year_option_deadline": "2005-10-31",
+    "fourth_year_option_basis": "third-season counted Salary raised 26.7% (pick 5)",
+    "qualifying_offer_increase_percent_after_fourth_year": 32.6
+   },
+   "agreed": true,
+   "note": "Agreed: 80% protected with incentives to 120% is legal and within the 120% Miami offered; the counted Salary is protected cash plus included incentives. Miami's stated role remains a basketball representation, not a contract term."
+  },
+  {
+   "date": "2003-07-20",
+   "party": "wade",
+   "action": "accept",
+   "terms": {
+    "pick": 5,
+    "structure": "layered",
+    "protected_percent": 80,
+    "total_percent": 120,
+    "protected_schedule": {
+     "2003-04": 1757600,
+     "2004-05": 1889440,
+     "2005-06": 2021280
+    },
+    "incentives": [
+     {
+      "id": "conditioning_program",
+      "label": "Offseason skill and conditioning program (10% of scale)",
+      "kind": "conditioning_program",
+      "percent": 10,
+      "classification": "included",
+      "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+      "benchmarks": {
+       "2003-04": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+       "2004-05": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+       "2005-06": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "physical_condition",
+      "label": "Preseason conditioning standard (10% of scale)",
+      "kind": "physical_condition",
+      "percent": 10,
+      "classification": "included",
+      "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+      "benchmarks": {
+       "2003-04": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+       "2004-05": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+       "2005-06": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league)."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "minutes",
+      "label": "Regular-season minutes (10% of scale)",
+      "kind": "performance",
+      "percent": 10,
+      "classification": "unlikely",
+      "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+      "benchmarks": {
+       "2003-04": "At least 1,200 regular-season minutes played.",
+       "2004-05": "At least 1,200 regular-season minutes played.",
+       "2005-06": "At least 1,200 regular-season minutes played."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "achievement",
+      "label": "Achievement (10% of scale)",
+      "kind": "performance",
+      "percent": 10,
+      "classification": "unlikely",
+      "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+      "benchmarks": {
+       "2003-04": "Selection to an NBA All-Rookie Team.",
+       "2004-05": "At least 15.0 points per game while appearing in at least 60 games.",
+       "2005-06": "At least 17.0 points per game while appearing in at least 60 games."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     }
+    ],
+    "maximum_schedule": {
+     "2003-04": 2636400,
+     "2004-05": 2834160,
+     "2005-06": 3031920
+    },
+    "schedule": {
+     "2003-04": 2197000,
+     "2004-05": 2361800,
+     "2005-06": 2526600,
+     "2006-07": 3201202
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary",
+     "2004-05": "contract_salary",
+     "2005-06": "contract_salary",
+     "2006-07": "team_option"
+    },
+    "signing_bonus": 0,
+    "promised_role_contractual": false,
+    "fourth_year_option_deadline": "2005-10-31",
+    "fourth_year_option_basis": "third-season counted Salary raised 26.7% (pick 5)",
+    "qualifying_offer_increase_percent_after_fourth_year": 32.6
+   },
+   "note": "Accepts Miami's agreement to the counter (standing instruction).",
+   "source": "Wade_Rookie_Contract/standing_instruction.json"
+  },
+  {
+   "date": "2003-07-21",
+   "party": "miami",
+   "action": "sign",
+   "terms": {
+    "pick": 5,
+    "structure": "layered",
+    "protected_percent": 80,
+    "total_percent": 120,
+    "protected_schedule": {
+     "2003-04": 1757600,
+     "2004-05": 1889440,
+     "2005-06": 2021280
+    },
+    "incentives": [
+     {
+      "id": "conditioning_program",
+      "label": "Offseason skill and conditioning program (10% of scale)",
+      "kind": "conditioning_program",
+      "percent": 10,
+      "classification": "included",
+      "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+      "benchmarks": {
+       "2003-04": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+       "2004-05": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+       "2005-06": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "physical_condition",
+      "label": "Preseason conditioning standard (10% of scale)",
+      "kind": "physical_condition",
+      "percent": 10,
+      "classification": "included",
+      "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+      "benchmarks": {
+       "2003-04": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+       "2004-05": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+       "2005-06": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league)."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "minutes",
+      "label": "Regular-season minutes (10% of scale)",
+      "kind": "performance",
+      "percent": 10,
+      "classification": "unlikely",
+      "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+      "benchmarks": {
+       "2003-04": "At least 1,200 regular-season minutes played.",
+       "2004-05": "At least 1,200 regular-season minutes played.",
+       "2005-06": "At least 1,200 regular-season minutes played."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "achievement",
+      "label": "Achievement (10% of scale)",
+      "kind": "performance",
+      "percent": 10,
+      "classification": "unlikely",
+      "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+      "benchmarks": {
+       "2003-04": "Selection to an NBA All-Rookie Team.",
+       "2004-05": "At least 15.0 points per game while appearing in at least 60 games.",
+       "2005-06": "At least 17.0 points per game while appearing in at least 60 games."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     }
+    ],
+    "maximum_schedule": {
+     "2003-04": 2636400,
+     "2004-05": 2834160,
+     "2005-06": 3031920
+    },
+    "schedule": {
+     "2003-04": 2197000,
+     "2004-05": 2361800,
+     "2005-06": 2526600,
+     "2006-07": 3201202
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary",
+     "2004-05": "contract_salary",
+     "2005-06": "contract_salary",
+     "2006-07": "team_option"
+    },
+    "signing_bonus": 0,
+    "promised_role_contractual": false,
+    "fourth_year_option_deadline": "2005-10-31",
+    "fourth_year_option_basis": "third-season counted Salary raised 26.7% (pick 5)",
+    "qualifying_offer_increase_percent_after_fourth_year": 32.6
+   },
+   "note": "Contract executed July 21, 2003; recorded on contract_schedules.json and the register."
+  }
+ ]
+}

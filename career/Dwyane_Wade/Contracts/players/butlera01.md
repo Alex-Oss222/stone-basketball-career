@@ -2,9 +2,9 @@
 
 # Contract | Rasual Butler
 
-Known through: 2003-07-03. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
+Known through: 2003-07-31. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
 
-Rasual Butler: team option exercised. Evidence cutoff: 2003-07-03.
+Rasual Butler: team option exercised. Evidence cutoff: 2003-07-31.
 
 ## Current contract
 
@@ -43,7 +43,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | $349,458 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
-| 2003-04 | $563,679 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | team_option | minimum_scale | Team option; June 30 decision pending at this checkpoint. Exercise does not establish a fully guaranteed salary. |
+| 2003-04 | $563,679 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | team_option | minimum_scale | Team option; June 30 decision pending at this checkpoint. Exercise does not establish a fully guaranteed salary. |
 
 ### Options and decision deadlines
 
@@ -203,7 +203,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | $349,458 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
-| 2003-04 | $563,679 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | team_option | minimum_scale | Team option; June 30 decision pending at this checkpoint. Exercise does not establish a fully guaranteed salary. |
+| 2003-04 | $563,679 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | team_option | minimum_scale | Team option; June 30 decision pending at this checkpoint. Exercise does not establish a fully guaranteed salary. |
 
 ### Options and decision deadlines
 

@@ -1,0 +1,523 @@
+{
+ "player": "Vladimir Stepania",
+ "bbr_id": "stepavl01",
+ "incumbent": "Miami Heat",
+ "restricted": false,
+ "opened": "2003-07-16",
+ "status": "ended",
+ "plan": {
+  "bbr_id": "stepavl01",
+  "player": "Vladimir Stepania",
+  "club": "Miami Heat",
+  "position": "C",
+  "valuation": 4370228,
+  "ask": 3933205,
+  "years_asked": 4,
+  "route": "early_bird",
+  "rfa": false,
+  "score": null
+ },
+ "priorities": {
+  "trait": "money",
+  "weights": {
+   "money": 0.55,
+   "years": 0.15,
+   "role": 0.1,
+   "winning": 0.1,
+   "location": 0.1
+  }
+ },
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2003-07-16",
+   "offer_id": "MIA-vladimir_stepania-1",
+   "version": 1,
+   "route": "early_bird",
+   "terms": {
+    "first_year": 3441554,
+    "years": 3,
+    "schedule": [
+     3441554,
+     3871748,
+     4301942
+    ],
+    "guaranteed": 11615244,
+    "raise_percent": 12.5,
+    "last_year_guaranteed": true,
+    "round": 1,
+    "promise": {
+     "role": "rotation",
+     "minutes_per_game": 20
+    },
+    "basis": "round 1: ask $3,933,205, Miami's valuation $4,370,228, ceiling $4,807,250"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-stepavl01-offer-1",
+   "answer": "reject",
+   "answered": "2003-07-17",
+   "counter": null,
+   "assessment": {
+    "model": "utility-2003.2",
+    "stage": "prime",
+    "trait": "money",
+    "weights": {
+     "money": 0.2761,
+     "security": 0.085,
+     "net_income": 0.0637,
+     "role": 0.2212,
+     "contention": 0.2212,
+     "loyalty": 0.0796,
+     "market": 0.0531
+    },
+    "offer": {
+     "money": 15.7,
+     "security": 75.0,
+     "net_income": 100,
+     "role": 99.0,
+     "contention": 19.5,
+     "loyalty": 100,
+     "market": 60
+    },
+    "alternative": {
+     "money": 70.6,
+     "security": 100.0,
+     "net_income": 60,
+     "role": 100.0,
+     "contention": 44.0,
+     "loyalty": 50,
+     "market": 60
+    },
+    "offer_club": "Miami Heat",
+    "alternative_club": "Portland Trail Blazers",
+    "situations": {
+     "offer": {
+      "club": "Miami Heat",
+      "strength": 27.8,
+      "role_minutes": 20
+     },
+     "alternative": {
+      "club": "Portland Trail Blazers",
+      "strength": 37.6,
+      "role_minutes": 26
+     }
+    },
+    "utility": {
+     "offer": 54.44,
+     "alternative": 70.83,
+     "gap": -16.39
+    },
+    "excluded": [
+     "scheme fit: Miami's staff has not set an offensive or defensive scheme (team_config.json)",
+     "organisational stability, coach relationship and locker-room ties: no dated evidence",
+     "medical and training staff: no dated evidence",
+     "family and personal circumstances: no sourced evidence; never invented for a real person"
+    ]
+   },
+   "counter_focus": {
+    "factor": "money",
+    "weighted_deficit": 15.16
+   }
+  },
+  {
+   "round": 2,
+   "date": "2003-07-17",
+   "offer_id": "MIA-vladimir_stepania-2",
+   "version": 1,
+   "route": "early_bird",
+   "terms": {
+    "first_year": 3896331,
+    "years": 4,
+    "schedule": [
+     3896331,
+     4383372,
+     4870414,
+     5357455
+    ],
+    "guaranteed": 18507572,
+    "raise_percent": 12.5,
+    "last_year_guaranteed": true,
+    "round": 2,
+    "promise": {
+     "role": "rotation",
+     "minutes_per_game": 20
+    },
+    "basis": "round 2: ask $3,933,205, Miami's valuation $4,370,228, ceiling $4,807,250"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-stepavl01-offer-2",
+   "answer": "counter",
+   "answered": "2003-07-18",
+   "counter": 4087387,
+   "assessment": {
+    "model": "utility-2003.2",
+    "stage": "prime",
+    "trait": "money",
+    "weights": {
+     "money": 0.2761,
+     "security": 0.085,
+     "net_income": 0.0637,
+     "role": 0.2212,
+     "contention": 0.2212,
+     "loyalty": 0.0796,
+     "market": 0.0531
+    },
+    "offer": {
+     "money": 62.3,
+     "security": 100.0,
+     "net_income": 100,
+     "role": 99.0,
+     "contention": 25.5,
+     "loyalty": 100,
+     "market": 60
+    },
+    "alternative": {
+     "money": 70.6,
+     "security": 100.0,
+     "net_income": 60,
+     "role": 100.0,
+     "contention": 43.2,
+     "loyalty": 50,
+     "market": 60
+    },
+    "offer_club": "Miami Heat",
+    "alternative_club": "Portland Trail Blazers",
+    "situations": {
+     "offer": {
+      "club": "Miami Heat",
+      "strength": 30.2,
+      "role_minutes": 20
+     },
+     "alternative": {
+      "club": "Portland Trail Blazers",
+      "strength": 37.3,
+      "role_minutes": 26
+     }
+    },
+    "utility": {
+     "offer": 70.76,
+     "alternative": 70.66,
+     "gap": 0.1
+    },
+    "excluded": [
+     "scheme fit: Miami's staff has not set an offensive or defensive scheme (team_config.json)",
+     "organisational stability, coach relationship and locker-room ties: no dated evidence",
+     "medical and training staff: no dated evidence",
+     "family and personal circumstances: no sourced evidence; never invented for a real person"
+    ]
+   },
+   "counter_focus": {
+    "factor": "contention",
+    "weighted_deficit": 3.92
+   }
+  },
+  {
+   "round": 3,
+   "date": "2003-07-18",
+   "offer_id": "MIA-vladimir_stepania-2",
+   "version": 2,
+   "route": "early_bird",
+   "terms": {
+    "first_year": 4082611,
+    "years": 4,
+    "schedule": [
+     4082611,
+     4592937,
+     5103264,
+     5613590
+    ],
+    "guaranteed": 19392402,
+    "raise_percent": 12.5,
+    "last_year_guaranteed": true,
+    "round": 3,
+    "promise": {
+     "role": "rotation",
+     "minutes_per_game": 20
+    },
+    "basis": "round 3: ask $3,933,205, Miami's valuation $4,370,228, ceiling $4,807,250, counter $4,087,387"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-stepavl01-offer-3",
+   "answer": "reject",
+   "answered": "2003-07-19",
+   "counter": null,
+   "assessment": {
+    "model": "utility-2003.2",
+    "stage": "prime",
+    "trait": "money",
+    "weights": {
+     "money": 0.2761,
+     "security": 0.085,
+     "net_income": 0.0637,
+     "role": 0.2212,
+     "contention": 0.2212,
+     "loyalty": 0.0796,
+     "market": 0.0531
+    },
+    "offer": {
+     "money": 66.9,
+     "security": 100.0,
+     "net_income": 100,
+     "role": 99.0,
+     "contention": 25.5,
+     "loyalty": 100,
+     "market": 60
+    },
+    "alternative": {
+     "money": 70.6,
+     "security": 100.0,
+     "net_income": 60,
+     "role": 100.0,
+     "contention": 43.2,
+     "loyalty": 50,
+     "market": 60
+    },
+    "offer_club": "Miami Heat",
+    "alternative_club": "Portland Trail Blazers",
+    "situations": {
+     "offer": {
+      "club": "Miami Heat",
+      "strength": 30.2,
+      "role_minutes": 20
+     },
+     "alternative": {
+      "club": "Portland Trail Blazers",
+      "strength": 37.3,
+      "role_minutes": 26
+     }
+    },
+    "utility": {
+     "offer": 72.03,
+     "alternative": 70.66,
+     "gap": 1.37
+    },
+    "excluded": [
+     "scheme fit: Miami's staff has not set an offensive or defensive scheme (team_config.json)",
+     "organisational stability, coach relationship and locker-room ties: no dated evidence",
+     "medical and training staff: no dated evidence",
+     "family and personal circumstances: no sourced evidence; never invented for a real person"
+    ]
+   },
+   "counter_focus": {
+    "factor": "contention",
+    "weighted_deficit": 3.92
+   }
+  }
+ ],
+ "agreement": null,
+ "sheet": null,
+ "signing": null,
+ "ended": {
+  "date": "2003-07-19",
+  "reason": "rejected Miami's final offer"
+ },
+ "trade": null,
+ "state": {
+  "player": "Vladimir Stepania",
+  "incumbent": "Miami Heat",
+  "trusted_issuers": [
+   "miami_cap_adapter"
+  ],
+  "last_at": "2003-07-19T09:00:00-04:00",
+  "cba": "1999",
+  "phase": "incumbent_negotiation",
+  "market": null,
+  "offers": [
+   {
+    "offer_id": "MIA-vladimir_stepania-1",
+    "version": 1,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":20,\"role\":\"rotation\"},\"route\":\"early_bird\",\"salary_schedule\":[{\"guaranteed\":3441554,\"option\":\"none\",\"salary\":3441554,\"season\":\"2003-04\"},{\"guaranteed\":3871748,\"option\":\"none\",\"salary\":3871748,\"season\":\"2004-05\"},{\"guaranteed\":4301942,\"option\":\"none\",\"salary\":4301942,\"season\":\"2005-06\"}]}"
+    },
+    "issued_at": "2003-07-16T12:00:00-04:00",
+    "expires_at": "2003-07-19T12:00:00-04:00",
+    "status": "rejected"
+   },
+   {
+    "offer_id": "MIA-vladimir_stepania-2",
+    "version": 1,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":20,\"role\":\"rotation\"},\"route\":\"early_bird\",\"salary_schedule\":[{\"guaranteed\":3896331,\"option\":\"none\",\"salary\":3896331,\"season\":\"2003-04\"},{\"guaranteed\":4383372,\"option\":\"none\",\"salary\":4383372,\"season\":\"2004-05\"},{\"guaranteed\":4870414,\"option\":\"none\",\"salary\":4870414,\"season\":\"2005-06\"},{\"guaranteed\":5357455,\"option\":\"none\",\"salary\":5357455,\"season\":\"2006-07\"}]}"
+    },
+    "issued_at": "2003-07-17T12:00:00-04:00",
+    "expires_at": "2003-07-20T12:00:00-04:00",
+    "status": "superseded"
+   },
+   {
+    "offer_id": "MIA-vladimir_stepania-2",
+    "version": 2,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":20,\"role\":\"rotation\"},\"route\":\"early_bird\",\"salary_schedule\":[{\"guaranteed\":4082611,\"option\":\"none\",\"salary\":4082611,\"season\":\"2003-04\"},{\"guaranteed\":4592937,\"option\":\"none\",\"salary\":4592937,\"season\":\"2004-05\"},{\"guaranteed\":5103264,\"option\":\"none\",\"salary\":5103264,\"season\":\"2005-06\"},{\"guaranteed\":5613590,\"option\":\"none\",\"salary\":5613590,\"season\":\"2006-07\"}]}"
+    },
+    "issued_at": "2003-07-18T12:00:00-04:00",
+    "expires_at": "2003-07-21T12:00:00-04:00",
+    "status": "rejected"
+   }
+  ],
+  "slots": [
+   "MIA-vladimir_stepania-2",
+   null,
+   null,
+   null
+  ],
+  "requests": [
+   {
+    "offer_id": "MIA-vladimir_stepania-2",
+    "version": 1,
+    "terms": {
+     "encoded": "{\"salary_schedule\":[{\"guaranteed\":4087387,\"option\":\"none\",\"salary\":4087387,\"season\":\"2003-04\"},{\"guaranteed\":4598310,\"option\":\"none\",\"salary\":4598310,\"season\":\"2004-05\"},{\"guaranteed\":5109234,\"option\":\"none\",\"salary\":5109234,\"season\":\"2005-06\"},{\"guaranteed\":5620157,\"option\":\"none\",\"salary\":5620157,\"season\":\"2006-07\"}]}"
+    },
+    "requested_at": "2003-07-18T09:00:00-04:00",
+    "decision_ref": "2003-fa-stepavl01-offer-2"
+   }
+  ],
+  "sheet": null,
+  "resolution": null,
+  "events": [
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-16T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "2111623a7425be38c69a893b2664ae15e8a3f3a09513cdfd6ae7db4529cf0fdd",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-16T12:00:00-04:00",
+     "valid_until": "2003-07-17T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "2111623a7425be38c69a893b2664ae15e8a3f3a09513cdfd6ae7db4529cf0fdd"
+    }
+   },
+   {
+    "action": "reject_offer",
+    "actor": {
+     "kind": "player",
+     "identity": "Vladimir Stepania"
+    },
+    "at": "2003-07-17T09:00:00-04:00",
+    "source_refs": [
+     "2003-fa-stepavl01-offer-1"
+    ],
+    "subject_digest": "8f3350efeb42be32defb4b94394065e60f7cb6ca97ddba59dde622af5277100d",
+    "attestation": null
+   },
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-17T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "ce5fde8d4448aa7369f4563885b04e8cb17e95a245a878009bdc040509e6cf65",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-17T12:00:00-04:00",
+     "valid_until": "2003-07-18T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "ce5fde8d4448aa7369f4563885b04e8cb17e95a245a878009bdc040509e6cf65"
+    }
+   },
+   {
+    "action": "counter_request",
+    "actor": {
+     "kind": "player",
+     "identity": "Vladimir Stepania"
+    },
+    "at": "2003-07-18T09:00:00-04:00",
+    "source_refs": [
+     "2003-fa-stepavl01-offer-2"
+    ],
+    "subject_digest": "79505d050f0e9464bf5b2031b4434bc48d3c6393a9b0fbcc3c18f7a0104812b2",
+    "attestation": null
+   },
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-18T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "622ef108f821f99f376f47cb5a042106ce74e4b6e3a8f4c41ed8b1cbb79a4d71",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-18T12:00:00-04:00",
+     "valid_until": "2003-07-19T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "622ef108f821f99f376f47cb5a042106ce74e4b6e3a8f4c41ed8b1cbb79a4d71"
+    }
+   },
+   {
+    "action": "reject_offer",
+    "actor": {
+     "kind": "player",
+     "identity": "Vladimir Stepania"
+    },
+    "at": "2003-07-19T09:00:00-04:00",
+    "source_refs": [
+     "2003-fa-stepavl01-offer-3"
+    ],
+    "subject_digest": "34a19fcab62c9c650fa4082d2b109e5a3fdd31182c940a59c89ea7a2bd82c139",
+    "attestation": null
+   }
+  ]
+ }
+}

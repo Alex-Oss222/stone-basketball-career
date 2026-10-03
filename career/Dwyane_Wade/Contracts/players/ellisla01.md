@@ -2,9 +2,9 @@
 
 # Contract | LaPhonso Ellis
 
-Known through: 2003-07-03. [Open interactive contract](ellisla01.html#contract) · [Contract history](ellisla01.html#contract-history)
+Known through: 2003-07-31. [Open interactive contract](ellisla01.html#contract) · [Contract history](ellisla01.html#contract-history)
 
-LaPhonso Ellis: under contract guarantee amended. Evidence cutoff: 2003-07-03.
+LaPhonso Ellis: under contract guarantee amended. Evidence cutoff: 2003-07-31.
 
 ## Current contract
 
@@ -43,7 +43,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | $3,100,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
-| 2003-04 | $3,600,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | reported_rounded | Existing final contract year remains scheduled until an actual transaction. Guarantee amendment is not recorded as a formal team option. |
+| 2003-04 | $3,600,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | reported_rounded | Existing final contract year remains scheduled until an actual transaction. Guarantee amendment is not recorded as a formal team option. |
 
 ### Options and decision deadlines
 
@@ -200,7 +200,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | $3,100,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | prior_season_salary_reference | recorded prior-season reference | Prior salary evidence; not automatically part of the full original term. |
-| 2003-04 | $3,600,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | reported_rounded | Existing final contract year remains scheduled until an actual transaction. Guarantee amendment is not recorded as a formal team option. |
+| 2003-04 | $3,600,000 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | reported_rounded | Existing final contract year remains scheduled until an actual transaction. Guarantee amendment is not recorded as a formal team option. |
 
 ### Options and decision deadlines
 

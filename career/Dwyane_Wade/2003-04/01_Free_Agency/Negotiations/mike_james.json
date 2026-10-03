@@ -1,0 +1,257 @@
+{
+ "player": "Mike James",
+ "bbr_id": "jamesmi01",
+ "incumbent": "Miami Heat",
+ "restricted": false,
+ "opened": "2003-07-16",
+ "status": "signed",
+ "plan": {
+  "bbr_id": "jamesmi01",
+  "player": "Mike James",
+  "club": "Miami Heat",
+  "position": "PG",
+  "valuation": 3873269,
+  "ask": 3485942,
+  "years_asked": 4,
+  "route": "early_bird",
+  "rfa": false,
+  "score": null
+ },
+ "priorities": {
+  "trait": "winning",
+  "weights": {
+   "money": 0.3,
+   "years": 0.1,
+   "role": 0.15,
+   "winning": 0.4,
+   "location": 0.05
+  }
+ },
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2003-07-16",
+   "offer_id": "MIA-mike_james-1",
+   "version": 1,
+   "route": "early_bird",
+   "terms": {
+    "first_year": 3050199,
+    "years": 3,
+    "schedule": [
+     3050199,
+     3431474,
+     3812749
+    ],
+    "guaranteed": 10294422,
+    "raise_percent": 12.5,
+    "last_year_guaranteed": true,
+    "round": 1,
+    "promise": {
+     "role": "starter",
+     "minutes_per_game": 32
+    },
+    "basis": "round 1: ask $3,485,942, Miami's valuation $3,873,269, ceiling $4,260,595"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-jamesmi01-offer-1",
+   "answer": "accept",
+   "answered": "2003-07-17",
+   "counter": null,
+   "assessment": {
+    "model": "utility-2003.2",
+    "stage": "prime",
+    "trait": "winning",
+    "weights": {
+     "money": 0.1773,
+     "security": 0.0545,
+     "net_income": 0.0409,
+     "role": 0.2273,
+     "contention": 0.3636,
+     "loyalty": 0.0818,
+     "market": 0.0545
+    },
+    "offer": {
+     "money": 15.7,
+     "security": 75.0,
+     "net_income": 100,
+     "role": 100.0,
+     "contention": 17.0,
+     "loyalty": 100,
+     "market": 60
+    },
+    "alternative": {
+     "money": 70.6,
+     "security": 100.0,
+     "net_income": 60,
+     "role": 36.2,
+     "contention": 51.0,
+     "loyalty": 50,
+     "market": 60
+    },
+    "offer_club": "Miami Heat",
+    "alternative_club": "Boston Celtics",
+    "situations": {
+     "offer": {
+      "club": "Miami Heat",
+      "strength": 26.8,
+      "role_minutes": 32
+     },
+     "alternative": {
+      "club": "Boston Celtics",
+      "strength": 40.4,
+      "role_minutes": 8
+     }
+    },
+    "utility": {
+     "offer": 51.32,
+     "alternative": 54.55,
+     "gap": -3.23
+    },
+    "excluded": [
+     "scheme fit: Miami's staff has not set an offensive or defensive scheme (team_config.json)",
+     "organisational stability, coach relationship and locker-room ties: no dated evidence",
+     "medical and training staff: no dated evidence",
+     "family and personal circumstances: no sourced evidence; never invented for a real person"
+    ]
+   },
+   "counter_focus": {
+    "factor": "contention",
+    "weighted_deficit": 12.36
+   }
+  }
+ ],
+ "agreement": {
+  "date": "2003-07-17",
+  "terms": {
+   "first_year": 3050199,
+   "years": 3,
+   "schedule": [
+    3050199,
+    3431474,
+    3812749
+   ],
+   "guaranteed": 10294422,
+   "raise_percent": 12.5,
+   "last_year_guaranteed": true,
+   "round": 1,
+   "promise": {
+    "role": "starter",
+    "minutes_per_game": 32
+   },
+   "basis": "round 1: ask $3,485,942, Miami's valuation $3,873,269, ceiling $4,260,595"
+  },
+  "route": "early_bird",
+  "offer_id": "MIA-mike_james-1",
+  "decision_event": "2003-fa-jamesmi01-offer-1",
+  "basis": "agreement in principle; executed on the signing date",
+  "executed": "2003-07-17"
+ },
+ "sheet": null,
+ "signing": {
+  "date": "2003-07-17",
+  "record": "00_Team/Finances/contract_schedules.json#Mike James"
+ },
+ "ended": null,
+ "trade": null,
+ "state": {
+  "player": "Mike James",
+  "incumbent": "Miami Heat",
+  "trusted_issuers": [
+   "miami_cap_adapter"
+  ],
+  "last_at": "2003-07-17T11:00:00-04:00",
+  "cba": "1999",
+  "phase": "execution_pending",
+  "market": null,
+  "offers": [
+   {
+    "offer_id": "MIA-mike_james-1",
+    "version": 1,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":32,\"role\":\"starter\"},\"route\":\"early_bird\",\"salary_schedule\":[{\"guaranteed\":3050199,\"option\":\"none\",\"salary\":3050199,\"season\":\"2003-04\"},{\"guaranteed\":3431474,\"option\":\"none\",\"salary\":3431474,\"season\":\"2004-05\"},{\"guaranteed\":3812749,\"option\":\"none\",\"salary\":3812749,\"season\":\"2005-06\"}]}"
+    },
+    "issued_at": "2003-07-16T12:00:00-04:00",
+    "expires_at": "2003-07-19T12:00:00-04:00",
+    "status": "accepted"
+   }
+  ],
+  "slots": [
+   "MIA-mike_james-1",
+   null,
+   null,
+   null
+  ],
+  "requests": [],
+  "sheet": null,
+  "resolution": {
+   "outcome": "agreement",
+   "team": "Miami Heat",
+   "offer_id": "MIA-mike_james-1",
+   "version": 1,
+   "terms": {
+    "encoded": "{\"promise\":{\"minutes_per_game\":32,\"role\":\"starter\"},\"route\":\"early_bird\",\"salary_schedule\":[{\"guaranteed\":3050199,\"option\":\"none\",\"salary\":3050199,\"season\":\"2003-04\"},{\"guaranteed\":3431474,\"option\":\"none\",\"salary\":3431474,\"season\":\"2004-05\"},{\"guaranteed\":3812749,\"option\":\"none\",\"salary\":3812749,\"season\":\"2005-06\"}]}"
+   },
+   "resolved_at": "2003-07-17T11:00:00-04:00",
+   "slot": null
+  },
+  "events": [
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-16T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "5f131ed4dfdc4dfb3dfde117f1fd4fee0119016cf3816971c30ee44898ff0d6c",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-16T12:00:00-04:00",
+     "valid_until": "2003-07-17T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "5f131ed4dfdc4dfb3dfde117f1fd4fee0119016cf3816971c30ee44898ff0d6c"
+    }
+   },
+   {
+    "action": "agreement",
+    "actor": {
+     "kind": "player",
+     "identity": "Mike James"
+    },
+    "at": "2003-07-17T11:00:00-04:00",
+    "source_refs": [
+     "2003-fa-jamesmi01-offer-1"
+    ],
+    "subject_digest": "d3d01c111adb7b22bbe0ecda94b86559054ab01090648df75911d80e80f83612",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "2003-fa-jamesmi01-offer-1"
+     ],
+     "verified_at": "2003-07-17T11:00:00-04:00",
+     "valid_until": "2003-07-18T11:00:00-04:00",
+     "scope": "agreement",
+     "subject_digest": "d3d01c111adb7b22bbe0ecda94b86559054ab01090648df75911d80e80f83612"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "date": "2003-07-16",
+ "decider": "Keon Clark (simulated player)",
+ "event_id": "2003-fa-clarkke01-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "money",
+ "question": "What does Keon Clark weigh most in choosing his next contract?"
+}

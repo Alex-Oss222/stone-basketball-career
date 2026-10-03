@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2003-07-03 · Miami Heat · active
+Career date: 2003-07-31 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,19 +14,19 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2003-07-03 |
+| Career date | 2003-07-31 |
 | Team | Miami Heat |
-| Contract status | draft_rights_unsigned |
-| Roster status | draft_rights |
-| Last closed event | 2003-06-30-miami-option-and-qualifying-offer-decisions |
+| Contract status | rookie_scale_contract |
+| Roster status | under_contract |
+| Last closed event | 2003-07-21-wade-signs-rookie-contract |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2003-07-03 | Current checkpoint | 2003-06-30-miami-option-and-qualifying-offer-decisions | Recorded | [Owning event](../2003-04/01_Free_Agency/note.md) |
-| Not yet recorded | Rookie-contract proposal | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
+| 2003-07-31 | Current checkpoint | 2003-07-21-wade-signs-rookie-contract | Recorded | [Owning event](../2003-04/01_Free_Agency/note.md) |
+| 2003-07-19 | Next contract review | Player responds to an actual eligible proposal | recorded | [Contract desk](index.html#contract_negotiation) |
 | Not yet verified | Camp reporting | Club records the date | inactive | [Training camp](index.html#training_camp) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
@@ -66,11 +66,15 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
 - [Owning event](../2003-04/01_Free_Agency/note.md)
-- [Dated contract control and fixed rookie-scale reference](../2003-04/00_Team/Finances/contract_schedules.json)
-- [Rookie-scale-only reference: no unpublished cap data](rookie_scale_reference.json)
+- [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
+- [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
 - [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/mike_james.json)
+- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/vladimir_stepania.json)
 - [Dated milestone working records and player replies](../milestones.json)

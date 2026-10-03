@@ -78,9 +78,17 @@ class MarketTests(unittest.TestCase):
 
 
 class FrontOfficeTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.tmp, cls.root = copy_repo()                  # the July 16 plan as made from the June 26 checkpoint
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.tmp.cleanup()
+
     def setUp(self):
-        self.market = Market("2003-07-16")
-        self.fo = FrontOffice("2003-07-16", self.market)
+        self.market = Market("2003-07-16", self.root)
+        self.fo = FrontOffice("2003-07-16", self.market, self.root)
 
     def test_plan_weighs_wade_request_and_keeps_room_nonnegative(self):
         plan = self.fo.plan(REQUEST)

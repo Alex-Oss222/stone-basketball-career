@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "ai_gm",
-  "as_of": "2003-07-01",
+  "as_of": "2003-07-21",
   "season": "2003-04",
   "team": "Miami Heat",
   "roster_kind": "team_control_register",
@@ -17,8 +17,8 @@
       "weight_lb": 240,
       "date_of_birth": "1970-02-08",
       "college": "Georgetown",
-      "status": "free_agent_rights_held",
-      "control": "Free agent from July 1, 2003; Miami holds his rights and cap hold until he re-signs, signs elsewhere or is renounced (Finances/free_agent_rights.json).",
+      "status": "signed_elsewhere",
+      "control": "July 16, 2003: signs with New Jersey Nets (signing, real move); his hold and rights leave Miami's books.",
       "working_role": "Unavailable",
       "player_card": "../Player_Cards/alonzo_mourning.md"
     },
@@ -163,8 +163,8 @@
       "weight_lb": 188,
       "date_of_birth": "1975-06-23",
       "college": "Duquesne",
-      "status": "free_agent_rights_held",
-      "control": "Free agent from July 1, 2003; Miami holds his rights and cap hold until he re-signs, signs elsewhere or is renounced (Finances/free_agent_rights.json).",
+      "status": "re_signed",
+      "control": "Signed July 17, 2003: 3 seasons, $10,294,422 ($3,050,199 in 2003-04), $10,294,422 guaranteed; route early_bird.",
       "working_role": "2002-03 PG2",
       "player_card": "../Player_Cards/mike_james.md",
       "bbr_id": "jamesmi01"
@@ -262,8 +262,8 @@
       "weight_lb": 220,
       "date_of_birth": "1984-01-17",
       "college": "UConn (simulation canon)",
-      "status": "draft_rights_unsigned",
-      "control": "Unsigned No. 5 draft rights; $2,197,000 hold at 100% of rookie scale. No executed salary yet.",
+      "status": "under_contract",
+      "control": "Rookie-scale contract signed July 21, 2003: $2,197,000 counted in 2003-04, three seasons plus a 2006-07 team option; 120% of scale at the maximum, 80% protected.",
       "working_role": "Unassigned rookie",
       "player_card": "../Player_Cards/dwyane_wade.md"
     },

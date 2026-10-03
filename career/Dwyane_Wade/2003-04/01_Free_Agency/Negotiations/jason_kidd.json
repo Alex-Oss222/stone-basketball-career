@@ -4,7 +4,7 @@
  "incumbent": "New Jersey Nets",
  "restricted": false,
  "opened": "2003-07-01",
- "status": "open",
+ "status": "ended",
  "plan": {
   "bbr_id": "kiddja01",
   "player": "Jason Kidd",
@@ -207,8 +207,8 @@
     "errors": []
    },
    "decision_event": "2003-fa-kiddja01-offer-3",
-   "answer": null,
-   "answered": null,
+   "answer": "reject",
+   "answered": "2003-07-04",
    "counter": null,
    "assessment": {
     "model": "utility-2003.2",
@@ -276,7 +276,10 @@
  "agreement": null,
  "sheet": null,
  "signing": null,
- "ended": null,
+ "ended": {
+  "date": "2003-07-04",
+  "reason": "rejected Miami's final offer"
+ },
  "trade": null,
  "state": {
   "player": "Jason Kidd",
@@ -284,7 +287,7 @@
   "trusted_issuers": [
    "miami_cap_adapter"
   ],
-  "last_at": "2003-07-03T12:00:00-04:00",
+  "last_at": "2003-07-04T09:00:00-04:00",
   "cba": "1999",
   "phase": "market",
   "market": {
@@ -328,7 +331,7 @@
     },
     "issued_at": "2003-07-03T12:00:00-04:00",
     "expires_at": "2003-07-06T12:00:00-04:00",
-    "status": "open"
+    "status": "rejected"
    }
   ],
   "slots": [
@@ -489,6 +492,19 @@
      "scope": "club_offer",
      "subject_digest": "92503275cb2072558ece25e58a84455ddbea640559dafaf6752b74e5e795645a"
     }
+   },
+   {
+    "action": "reject_offer",
+    "actor": {
+     "kind": "player",
+     "identity": "Jason Kidd"
+    },
+    "at": "2003-07-04T09:00:00-04:00",
+    "source_refs": [
+     "2003-fa-kiddja01-offer-3"
+    ],
+    "subject_digest": "15d0d3d484ca6933af90dcebfb91ddbda81bb5478191a249518681e0b98ce6e5",
+    "attestation": null
    }
   ]
  }

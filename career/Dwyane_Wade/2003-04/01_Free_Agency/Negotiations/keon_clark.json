@@ -1,0 +1,553 @@
+{
+ "player": "Keon Clark",
+ "bbr_id": "clarkke01",
+ "incumbent": "Sacramento Kings",
+ "restricted": false,
+ "opened": "2003-07-16",
+ "status": "ended",
+ "plan": {
+  "bbr_id": "clarkke01",
+  "player": "Keon Clark",
+  "club": "Sacramento Kings",
+  "position": "C",
+  "age": 28,
+  "value": 9.8,
+  "valuation": 4936512,
+  "ask": 4442861,
+  "years_asked": 4,
+  "surplus": 0.111,
+  "fit": 0.667,
+  "score": 7.766,
+  "wade_request": false,
+  "rfa": false,
+  "bird_class": "non_bird",
+  "route": "mid_level"
+ },
+ "priorities": {
+  "trait": "money",
+  "weights": {
+   "money": 0.55,
+   "years": 0.15,
+   "role": 0.1,
+   "winning": 0.1,
+   "location": 0.1
+  }
+ },
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2003-07-16",
+   "offer_id": "MIA-keon_clark-1",
+   "version": 1,
+   "route": "mid_level",
+   "terms": {
+    "first_year": 3887503,
+    "years": 3,
+    "schedule": [
+     3887503,
+     4276253,
+     4665004
+    ],
+    "guaranteed": 12828760,
+    "raise_percent": 10.0,
+    "last_year_guaranteed": true,
+    "round": 1,
+    "promise": {
+     "role": "rotation",
+     "minutes_per_game": 20
+    },
+    "basis": "round 1: ask $4,442,861, Miami's valuation $4,917,000, ceiling $4,917,000"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-clarkke01-offer-1",
+   "answer": "reject",
+   "answered": "2003-07-17",
+   "counter": null,
+   "assessment": {
+    "model": "utility-2003.2",
+    "stage": "prime",
+    "trait": "money",
+    "weights": {
+     "money": 0.2761,
+     "security": 0.085,
+     "net_income": 0.0637,
+     "role": 0.2212,
+     "contention": 0.2212,
+     "loyalty": 0.0796,
+     "market": 0.0531
+    },
+    "offer": {
+     "money": 13.4,
+     "security": 75.0,
+     "net_income": 100,
+     "role": 90.1,
+     "contention": 22.0,
+     "loyalty": 50,
+     "market": 60
+    },
+    "alternative": {
+     "money": 70.6,
+     "security": 100.0,
+     "net_income": 60,
+     "role": 100.0,
+     "contention": 52.5,
+     "loyalty": 50,
+     "market": 60
+    },
+    "offer_club": "Miami Heat",
+    "alternative_club": null,
+    "situations": {
+     "offer": {
+      "club": "Miami Heat",
+      "strength": 28.8,
+      "role_minutes": 20
+     },
+     "alternative": {
+      "club": null,
+      "strength": 41,
+      "role_minutes": 22.2
+     }
+    },
+    "utility": {
+     "offer": 48.41,
+     "alternative": 72.71,
+     "gap": -24.3
+    },
+    "excluded": [
+     "scheme fit: Miami's staff has not set an offensive or defensive scheme (team_config.json)",
+     "organisational stability, coach relationship and locker-room ties: no dated evidence",
+     "medical and training staff: no dated evidence",
+     "family and personal circumstances: no sourced evidence; never invented for a real person"
+    ]
+   },
+   "counter_focus": {
+    "factor": "money",
+    "weighted_deficit": 15.79
+   }
+  },
+  {
+   "round": 2,
+   "date": "2003-07-17",
+   "offer_id": "MIA-keon_clark-2",
+   "version": 1,
+   "route": "mid_level",
+   "terms": {
+    "first_year": 4401209,
+    "years": 4,
+    "schedule": [
+     4401209,
+     4841330,
+     5281451,
+     5721572
+    ],
+    "guaranteed": 20245562,
+    "raise_percent": 10.0,
+    "last_year_guaranteed": true,
+    "round": 2,
+    "promise": {
+     "role": "rotation",
+     "minutes_per_game": 20
+    },
+    "basis": "round 2: ask $4,442,861, Miami's valuation $4,917,000, ceiling $4,917,000"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-clarkke01-offer-2",
+   "answer": "reject",
+   "answered": "2003-07-18",
+   "counter": null,
+   "assessment": {
+    "model": "utility-2003.2",
+    "stage": "prime",
+    "trait": "money",
+    "weights": {
+     "money": 0.2761,
+     "security": 0.085,
+     "net_income": 0.0637,
+     "role": 0.2212,
+     "contention": 0.2212,
+     "loyalty": 0.0796,
+     "market": 0.0531
+    },
+    "offer": {
+     "money": 59.1,
+     "security": 100.0,
+     "net_income": 100,
+     "role": 90.1,
+     "contention": 28.0,
+     "loyalty": 50,
+     "market": 60
+    },
+    "alternative": {
+     "money": 70.6,
+     "security": 100.0,
+     "net_income": 60,
+     "role": 100.0,
+     "contention": 52.5,
+     "loyalty": 50,
+     "market": 60
+    },
+    "offer_club": "Miami Heat",
+    "alternative_club": null,
+    "situations": {
+     "offer": {
+      "club": "Miami Heat",
+      "strength": 31.2,
+      "role_minutes": 20
+     },
+     "alternative": {
+      "club": null,
+      "strength": 41,
+      "role_minutes": 22.2
+     }
+    },
+    "utility": {
+     "offer": 64.48,
+     "alternative": 72.71,
+     "gap": -8.23
+    },
+    "excluded": [
+     "scheme fit: Miami's staff has not set an offensive or defensive scheme (team_config.json)",
+     "organisational stability, coach relationship and locker-room ties: no dated evidence",
+     "medical and training staff: no dated evidence",
+     "family and personal circumstances: no sourced evidence; never invented for a real person"
+    ]
+   },
+   "counter_focus": {
+    "factor": "contention",
+    "weighted_deficit": 5.42
+   }
+  },
+  {
+   "round": 3,
+   "date": "2003-07-18",
+   "offer_id": "MIA-keon_clark-3",
+   "version": 1,
+   "route": "mid_level",
+   "terms": {
+    "first_year": 4441820,
+    "years": 4,
+    "schedule": [
+     4441820,
+     4886002,
+     5330184,
+     5774366
+    ],
+    "guaranteed": 20432372,
+    "raise_percent": 10.0,
+    "last_year_guaranteed": true,
+    "round": 3,
+    "promise": {
+     "role": "rotation",
+     "minutes_per_game": 20
+    },
+    "basis": "round 3: ask $4,442,861, Miami's valuation $4,917,000, ceiling $4,917,000"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-clarkke01-offer-3",
+   "answer": "reject",
+   "answered": "2003-07-19",
+   "counter": null,
+   "assessment": {
+    "model": "utility-2003.2",
+    "stage": "prime",
+    "trait": "money",
+    "weights": {
+     "money": 0.2761,
+     "security": 0.085,
+     "net_income": 0.0637,
+     "role": 0.2212,
+     "contention": 0.2212,
+     "loyalty": 0.0796,
+     "market": 0.0531
+    },
+    "offer": {
+     "money": 60.0,
+     "security": 100.0,
+     "net_income": 100,
+     "role": 90.1,
+     "contention": 28.0,
+     "loyalty": 50,
+     "market": 60
+    },
+    "alternative": {
+     "money": 70.6,
+     "security": 100.0,
+     "net_income": 60,
+     "role": 100.0,
+     "contention": 52.5,
+     "loyalty": 50,
+     "market": 60
+    },
+    "offer_club": "Miami Heat",
+    "alternative_club": null,
+    "situations": {
+     "offer": {
+      "club": "Miami Heat",
+      "strength": 31.2,
+      "role_minutes": 20
+     },
+     "alternative": {
+      "club": null,
+      "strength": 41,
+      "role_minutes": 22.2
+     }
+    },
+    "utility": {
+     "offer": 64.73,
+     "alternative": 72.71,
+     "gap": -7.98
+    },
+    "excluded": [
+     "scheme fit: Miami's staff has not set an offensive or defensive scheme (team_config.json)",
+     "organisational stability, coach relationship and locker-room ties: no dated evidence",
+     "medical and training staff: no dated evidence",
+     "family and personal circumstances: no sourced evidence; never invented for a real person"
+    ]
+   },
+   "counter_focus": {
+    "factor": "contention",
+    "weighted_deficit": 5.42
+   }
+  }
+ ],
+ "agreement": null,
+ "sheet": null,
+ "signing": null,
+ "ended": {
+  "date": "2003-07-19",
+  "reason": "rejected Miami's final offer"
+ },
+ "trade": null,
+ "state": {
+  "player": "Keon Clark",
+  "incumbent": "Sacramento Kings",
+  "trusted_issuers": [
+   "miami_cap_adapter"
+  ],
+  "last_at": "2003-07-19T09:00:00-04:00",
+  "cba": "1999",
+  "phase": "market",
+  "market": {
+   "status": "UFA",
+   "contract_state": "expired",
+   "negotiation_opens": "2003-07-01T00:00:00-04:00",
+   "negotiation_closes": "2004-06-30T12:00:00-04:00",
+   "signing_opens": "2003-07-16T00:00:00-04:00",
+   "signing_closes": "2004-06-30T12:00:00-04:00",
+   "rights_ref": "library/2003/league/nba_2003_free_agent_rights.json"
+  },
+  "offers": [
+   {
+    "offer_id": "MIA-keon_clark-1",
+    "version": 1,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":20,\"role\":\"rotation\"},\"route\":\"mid_level\",\"salary_schedule\":[{\"guaranteed\":3887503,\"option\":\"none\",\"salary\":3887503,\"season\":\"2003-04\"},{\"guaranteed\":4276253,\"option\":\"none\",\"salary\":4276253,\"season\":\"2004-05\"},{\"guaranteed\":4665004,\"option\":\"none\",\"salary\":4665004,\"season\":\"2005-06\"}]}"
+    },
+    "issued_at": "2003-07-16T12:00:00-04:00",
+    "expires_at": "2003-07-19T12:00:00-04:00",
+    "status": "rejected"
+   },
+   {
+    "offer_id": "MIA-keon_clark-2",
+    "version": 1,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":20,\"role\":\"rotation\"},\"route\":\"mid_level\",\"salary_schedule\":[{\"guaranteed\":4401209,\"option\":\"none\",\"salary\":4401209,\"season\":\"2003-04\"},{\"guaranteed\":4841330,\"option\":\"none\",\"salary\":4841330,\"season\":\"2004-05\"},{\"guaranteed\":5281451,\"option\":\"none\",\"salary\":5281451,\"season\":\"2005-06\"},{\"guaranteed\":5721572,\"option\":\"none\",\"salary\":5721572,\"season\":\"2006-07\"}]}"
+    },
+    "issued_at": "2003-07-17T12:00:00-04:00",
+    "expires_at": "2003-07-20T12:00:00-04:00",
+    "status": "rejected"
+   },
+   {
+    "offer_id": "MIA-keon_clark-3",
+    "version": 1,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":20,\"role\":\"rotation\"},\"route\":\"mid_level\",\"salary_schedule\":[{\"guaranteed\":4441820,\"option\":\"none\",\"salary\":4441820,\"season\":\"2003-04\"},{\"guaranteed\":4886002,\"option\":\"none\",\"salary\":4886002,\"season\":\"2004-05\"},{\"guaranteed\":5330184,\"option\":\"none\",\"salary\":5330184,\"season\":\"2005-06\"},{\"guaranteed\":5774366,\"option\":\"none\",\"salary\":5774366,\"season\":\"2006-07\"}]}"
+    },
+    "issued_at": "2003-07-18T12:00:00-04:00",
+    "expires_at": "2003-07-21T12:00:00-04:00",
+    "status": "rejected"
+   }
+  ],
+  "slots": [
+   "MIA-keon_clark-3",
+   null,
+   null,
+   null
+  ],
+  "requests": [],
+  "sheet": null,
+  "resolution": null,
+  "events": [
+   {
+    "action": "open_market",
+    "actor": {
+     "kind": "player",
+     "identity": "Keon Clark"
+    },
+    "at": "2003-07-16T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "1dabc88e05d3ec6d5c3aafc47f1fc0c3efdb6d4b66f6a6dbe86847ad60ce025b",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-16T12:00:00-04:00",
+     "valid_until": "2003-07-17T12:00:00-04:00",
+     "scope": "open_market",
+     "subject_digest": "1dabc88e05d3ec6d5c3aafc47f1fc0c3efdb6d4b66f6a6dbe86847ad60ce025b"
+    }
+   },
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-16T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "a9c18e8f24b20375f1e4e7aed17593a7ed5c6b6c3e3ca6deb2c276edd9fc2ea0",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-16T12:00:00-04:00",
+     "valid_until": "2003-07-17T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "a9c18e8f24b20375f1e4e7aed17593a7ed5c6b6c3e3ca6deb2c276edd9fc2ea0"
+    }
+   },
+   {
+    "action": "reject_offer",
+    "actor": {
+     "kind": "player",
+     "identity": "Keon Clark"
+    },
+    "at": "2003-07-17T09:00:00-04:00",
+    "source_refs": [
+     "2003-fa-clarkke01-offer-1"
+    ],
+    "subject_digest": "8febd43fc34d11f13ad39885e6b8a095cd2f70061eb328aa2c712ecb0a547a0c",
+    "attestation": null
+   },
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-17T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "2c1230ead4a617d778fec126e2bdf447235f5dcb1798a6d8c16e2437b82df0c2",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-17T12:00:00-04:00",
+     "valid_until": "2003-07-18T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "2c1230ead4a617d778fec126e2bdf447235f5dcb1798a6d8c16e2437b82df0c2"
+    }
+   },
+   {
+    "action": "reject_offer",
+    "actor": {
+     "kind": "player",
+     "identity": "Keon Clark"
+    },
+    "at": "2003-07-18T09:00:00-04:00",
+    "source_refs": [
+     "2003-fa-clarkke01-offer-2"
+    ],
+    "subject_digest": "0d7e1ef16b6be12fe59dfb554ef19072ebb6608e8959fbfb150e445f4e645335",
+    "attestation": null
+   },
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-18T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "18be8cbffccdcc996ba6a0ab111b71dc11397f352c933c9c31188e7b2c575f40",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-18T12:00:00-04:00",
+     "valid_until": "2003-07-19T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "18be8cbffccdcc996ba6a0ab111b71dc11397f352c933c9c31188e7b2c575f40"
+    }
+   },
+   {
+    "action": "reject_offer",
+    "actor": {
+     "kind": "player",
+     "identity": "Keon Clark"
+    },
+    "at": "2003-07-19T09:00:00-04:00",
+    "source_refs": [
+     "2003-fa-clarkke01-offer-3"
+    ],
+    "subject_digest": "44e9684e2ddeb09dea98911635c6e8eb9ea822cc0963e6972d5f8032158b9a71",
+    "attestation": null
+   }
+  ]
+ }
+}

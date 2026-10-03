@@ -1,0 +1,14 @@
+{
+ "date": "2003-07-16",
+ "decider": "Malik Allen (simulated player)",
+ "event_id": "2003-fa-allenma01-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.2,
+  "loyalty": 0.2,
+  "money": 0.3,
+  "winning": 0.3
+ },
+ "outcome": "money",
+ "question": "What does Malik Allen weigh most in choosing his next contract?"
+}

@@ -633,8 +633,7 @@ class Run:
         self.submit_standing_counter(json.loads(log.read_text(encoding="utf-8")), day)
         signing.note_event(self.writer, PHASE / "note.md", day,
                            f"Miami offers Wade his rookie-scale contract at {offer['terms']['percent_of_scale']}% of scale with a promised role of "
-                           f"{role['role']} ({role['minutes_per_game']} minutes). Wade answers in `Wade_Rookie_Contract/negotiation_log.json`. "
-                           "[Open the detailed negotiation](../../Milestones/index.html#contract_negotiation).")
+                           f"{role['role']} ({role['minutes_per_game']} minutes). Wade answers in `Wade_Rookie_Contract/negotiation_log.json`; the milestone screen shows the detailed negotiation.")
         state = self.writer.load(signing.STATE)
         state["pending_player_decisions"] = ["rookie_contract_offer"]
 

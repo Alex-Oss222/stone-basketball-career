@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2003-07-03. [Search the contract directory](index.html)
+Known through 2003-07-31. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -119,7 +119,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Donnell Harvey](players/harvedo01.md) | Denver Nuggets | free agent expiring | No verified current agreement | 1 |
 | [Doug Christie](players/chrisdo01.md) | Sacramento Kings | under contract | Doug Christie · existing contract; signing date not recorded | 1 |
 | [Drew Gooden](players/goodedr01.md) | Orlando Magic | under rookie contract | Drew Gooden · 2002-07-02 | 1 |
-| [Dwyane Wade](players/wadedw01.md) | Miami Heat | unsigned first round draft rights | No verified current agreement | 0 |
+| [Dwyane Wade](players/wadedw01.md) | Miami Heat | under contract | Dwyane Wade · 2003-07-21 | 1 |
 | [Earl Boykins](players/boykiea01.md) | Golden State Warriors | free agent expiring | No verified current agreement | 1 |
 | [Earl Watson](players/watsoea01.md) | Memphis Grizzlies | under contract | Earl Watson · 2002-07-19 | 1 |
 | [Eddie Griffin](players/griffed01.md) | Houston Rockets | under rookie contract | Eddie Griffin · 2001-09-19 | 1 |
@@ -276,7 +276,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Mike Batiste](players/batismi01.md) | Memphis Grizzlies | free agent expiring | No verified current agreement | 1 |
 | [Mike Bibby](players/bibbymi01.md) | Sacramento Kings | under contract | Mike Bibby · 2002-08-16 | 1 |
 | [Mike Dunleavy](players/dunlemi02.md) | Golden State Warriors | under rookie contract | Mike Dunleavy · 2002-07-07 | 1 |
-| [Mike James](players/jamesmi01.md) | Miami Heat | free agent expiring | No verified current agreement | 1 |
+| [Mike James](players/jamesmi01.md) | Miami Heat | re signed | Mike James · 2003-07-17 | 2 |
 | [Mike Wilks](players/wilksmi01.md) | Minnesota Timberwolves | free agent expiring | No verified current agreement | 1 |
 | [Mikki Moore](players/mooremi01.md) | Atlanta Hawks | free agent expiring | No verified current agreement | 1 |
 | [Milt Palacio](players/palacmi01.md) | Cleveland Cavaliers | free agent expiring | No verified current agreement | 1 |

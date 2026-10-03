@@ -1,0 +1,24 @@
+{
+ "schema_version": 1,
+ "purpose": "Dated snapshots of Wade's standing with Miami's front office (runtime/standing.py): each is the rule's computation on its date from closed simulated results and recorded honors, never the historical Wade. Append-only; validation replays every snapshot and refuses a stale file.",
+ "snapshots": [
+  {
+   "as_of": "2003-07-21",
+   "standing": "rookie",
+   "trigger": "signing",
+   "basis": {
+    "closed_seasons": [],
+    "window": [],
+    "starter_lines": {},
+    "honors": [],
+    "conflicts": [],
+    "ignored_honors": [],
+    "rule": "no closed season",
+    "signed_date": "2003-07-21",
+    "season_folder": "2003-04",
+    "statistics": {}
+   },
+   "source": "2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json"
+  }
+ ]
+}

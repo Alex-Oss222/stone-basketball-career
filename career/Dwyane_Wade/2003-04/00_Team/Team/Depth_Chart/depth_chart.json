@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "ai_gm",
-  "as_of": "2003-06-26",
+  "as_of": "2003-07-21",
   "team": "Miami Heat",
   "status": "offseason_holding_chart",
   "game_ready": false,
@@ -39,7 +39,7 @@
         "SG",
         "PG"
       ],
-      "status": "draft_rights_unsigned"
+      "status": "under_contract"
     },
     {
       "name": "Jerome Beasley",
@@ -50,14 +50,13 @@
       "status": "draft_rights_unsigned"
     }
   ],
-  "unavailable": [
+  "unavailable": [],
+  "source": "https://www.basketball-reference.com/teams/MIA/2003_depth.html",
+  "departed": [
     {
       "name": "Alonzo Mourning",
-      "positions": [
-        "C"
-      ],
-      "reason": "did not play in 2002-03 due illness; contract expires June 30"
+      "date": "2003-07-16",
+      "status": "signed_elsewhere"
     }
-  ],
-  "source": "https://www.basketball-reference.com/teams/MIA/2003_depth.html"
+  ]
 }

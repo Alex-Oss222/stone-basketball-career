@@ -4,7 +4,7 @@
 **Age at assessment:** 23 · **Height:** 6-7 · **Weight:** 227 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Existing 2003-04 team option at the $563,679 minimum; June 30 decision pending. Contract has partial guarantee terms, exact protection unverified. [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Team option exercised on June 30, 2003 (front office rule; see June_30/front_office_decisions.json). (register, 2003-07-21) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/lamplse01.html#contract) · [Contract history](../../../../Contracts/players/lamplse01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

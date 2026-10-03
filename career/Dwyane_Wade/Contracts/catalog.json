@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2003-07-03",
+  "as_of": "2003-07-31",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1005,9 +1005,9 @@
       "player_id": "wadedw01",
       "name": "Dwyane Wade",
       "team": "Miami Heat",
-      "status": "unsigned first round draft rights",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "wadedw01-2003-07-21",
+      "recorded_agreements": 1,
       "href": "players/wadedw01.html#contract"
     },
     {
@@ -2418,9 +2418,9 @@
       "player_id": "jamesmi01",
       "name": "Mike James",
       "team": "Miami Heat",
-      "status": "free agent expiring",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "status": "re signed",
+      "current_contract_id": "jamesmi01-2003-07-17",
+      "recorded_agreements": 2,
       "href": "players/jamesmi01.html#contract"
     },
     {
