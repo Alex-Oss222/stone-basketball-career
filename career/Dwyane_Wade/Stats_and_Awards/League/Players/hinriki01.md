@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `hinrik
 
 ## Simulated statistics
 
-As of **2003-11-08**: 4 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2003-11-08**: 7 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04 regular season](../2003-04/League_Stats.md) | 22 | CHI rights | NBA | PG | 3 | 3 | 38.4 | 4.7 | 10.0 | .467 | 2.3 | 5.0 | .467 | 2.3 | 5.0 | .467 | .583 | 3.3 | 4.3 | .769 | 0.7 | 3.0 | 3.7 | 8.0 | 1.3 | 1.3 | 1.7 | 3.7 | 15.0 | .630 | — |
+| [2003-04 regular season](../2003-04/League_Stats.md) | 22 | CHI rights | NBA | PG | 6 | 6 | 33.3 | 3.7 | 8.7 | .423 | 1.8 | 4.0 | .458 | 1.8 | 4.7 | .393 | .529 | 2.8 | 3.3 | .850 | 0.7 | 2.5 | 3.2 | 7.5 | 1.3 | 0.8 | 1.3 | 4.0 | 12.0 | .592 | — |
 
 ### Month
 
@@ -42,7 +42,7 @@ As of **2003-11-08**: 4 closed games feed this card. Per-game columns use the re
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [October 2003](../2003-04/10_October/League_Stats.md) | 22 | CHI rights | NBA | PG | 1 | 1 | 34.4 | 6.0 | 13.0 | .462 | 2.0 | 4.0 | .500 | 4.0 | 9.0 | .444 | .538 | 3.0 | 3.0 | 1.000 | 1.0 | 6.0 | 7.0 | 5.0 | 0.0 | 1.0 | 2.0 | 3.0 | 17.0 | .594 | — |
-| [November 2003](../2003-04/11_November/League_Stats.md) | 22 | CHI rights | NBA | PG | 2 | 2 | 40.4 | 4.0 | 8.5 | .471 | 2.5 | 5.5 | .455 | 1.5 | 3.0 | .500 | .618 | 3.5 | 5.0 | .700 | 0.5 | 1.5 | 2.0 | 9.5 | 2.0 | 1.5 | 1.5 | 4.0 | 14.0 | .654 | — |
+| [November 2003](../2003-04/11_November/League_Stats.md) | 22 | CHI rights | NBA | PG | 5 | 5 | 33.1 | 3.2 | 7.8 | .410 | 1.8 | 4.0 | .450 | 1.4 | 3.8 | .368 | .526 | 2.8 | 3.4 | .824 | 0.6 | 1.8 | 2.4 | 8.0 | 1.6 | 0.8 | 1.2 | 4.2 | 11.0 | .592 | — |
 | [December 2003](../2003-04/12_December/League_Stats.md) | 22 | CHI rights | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [January 2004](../2003-04/01_January/League_Stats.md) | 22 | CHI rights | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [February 2004](../2003-04/02_February/League_Stats.md) | 22 | CHI rights | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -60,8 +60,8 @@ As of **2003-11-08**: 4 closed games feed this card. Per-game columns use the re
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [October 2003 week 3 (15 to 21)](../2003-04/10_October/Week_3/League_Stats.md) | 22 | CHI rights | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [October 2003 week 4 (22 to 31)](../2003-04/10_October/Week_4/League_Stats.md) | 22 | CHI rights | NBA | PG | 1 | 1 | 34.4 | 6.0 | 13.0 | .462 | 2.0 | 4.0 | .500 | 4.0 | 9.0 | .444 | .538 | 3.0 | 3.0 | 1.000 | 1.0 | 6.0 | 7.0 | 5.0 | 0.0 | 1.0 | 2.0 | 3.0 | 17.0 | .594 | — |
-| [November 2003 week 1 (01 to 07)](../2003-04/11_November/Week_1/League_Stats.md) | 22 | CHI rights | NBA | PG | 2 | 2 | 40.4 | 4.0 | 8.5 | .471 | 2.5 | 5.5 | .455 | 1.5 | 3.0 | .500 | .618 | 3.5 | 5.0 | .700 | 0.5 | 1.5 | 2.0 | 9.5 | 2.0 | 1.5 | 1.5 | 4.0 | 14.0 | .654 | — |
-| [November 2003 week 2 (08 to 14)](../2003-04/11_November/Week_2/League_Stats.md) | 22 | CHI rights | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [November 2003 week 1 (01 to 07)](../2003-04/11_November/Week_1/League_Stats.md) | 22 | CHI rights | NBA | PG | 4 | 4 | 36.6 | 3.5 | 8.8 | .400 | 2.0 | 4.8 | .421 | 1.5 | 4.0 | .375 | .514 | 3.0 | 3.8 | .800 | 0.8 | 2.2 | 3.0 | 9.2 | 2.0 | 1.0 | 1.0 | 4.2 | 12.0 | .577 | — |
+| [November 2003 week 2 (08 to 14)](../2003-04/11_November/Week_2/League_Stats.md) | 22 | CHI rights | NBA | PG | 1 | 1 | 19.0 | 2.0 | 4.0 | .500 | 1.0 | 1.0 | 1.000 | 1.0 | 3.0 | .333 | .625 | 2.0 | 2.0 | 1.000 | 0.0 | 0.0 | 0.0 | 3.0 | 0.0 | 0.0 | 2.0 | 4.0 | 7.0 | .717 | — |
 | [November 2003 week 3 (15 to 21)](../2003-04/11_November/Week_3/League_Stats.md) | 22 | CHI rights | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [November 2003 week 4 (22 to 30)](../2003-04/11_November/Week_4/League_Stats.md) | 22 | CHI rights | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [December 2003 week 1 (01 to 07)](../2003-04/12_December/Week_1/League_Stats.md) | 22 | CHI rights | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -87,7 +87,7 @@ As of **2003-11-08**: 4 closed games feed this card. Per-game columns use the re
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regular season. Coverage: **unavailable**; 0 located attempts, 0 unlocated, 0 outside the view, 30 missing. Zone rates stay N/A until located attempts exist; nothing is estimated onto the court.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regular season. Coverage: **unavailable**; 0 located attempts, 0 unlocated, 0 outside the view, 52 missing. Zone rates stay N/A until located attempts exist; nothing is estimated onto the court.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
@@ -96,17 +96,17 @@ Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regul
 | Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A |
 | 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A |
 | Three-point range | N/A | N/A | N/A | N/A | N/A |
-| All field goals | 14 | 30 | 46.7% | 11.67 | 10.00 |
+| All field goals | 22 | 52 | 42.3% | 9.17 | 8.67 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2003-04 is simulated: 4 closed regular-season games through 2003-11-08.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2003-04 is simulated: 7 closed regular-season games through 2003-11-08.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | CHI rights | 3 | 3 | 38.4 | 15.0 | 3.7 | 8.0 | 1.3 | 1.3 | 1.7 | 46.7% | 46.7% | 76.9% |
+| 2003-04 | CHI rights | 6 | 6 | 33.3 | 12.0 | 3.2 | 7.5 | 1.3 | 0.8 | 1.3 | 42.3% | 45.8% | 85.0% |
 
 ## Playoff statistics by year
 
