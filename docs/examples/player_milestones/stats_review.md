@@ -2,7 +2,7 @@
 
 > Independent fictional six-game sample. Every figure is invented for this template. It does not add results, awards or development to Wade's career.
 
-[All previews](README.md) · [Blank review](../../templates/player_milestones/stats_review.md) · [Full statistical layouts](../player_stats_preview.md)
+[All previews](README.md) · [Blank review](../../templates/player_milestones/stats_review.md) · [Full statistical layouts](../player_stats_preview.md) · [Interactive shooting and awards](../player_cards_preview.html)
 
 **Regular-season review through November 12, 2003.** Three earlier appearances and three recent appearances. Six fictional closed boxes are assumed for this illustration; they are not canonical game files.
 

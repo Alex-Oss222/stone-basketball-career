@@ -1,8 +1,8 @@
 <!-- ILLUSTRATIVE TEMPLATE ONLY -->
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="64" viewBox="0 0 1280 64" role="img" aria-labelledby="title desc">
-<title id="title">Per-game statistics</title><desc id="desc">Complete player box-score columns; averages per appearance.</desc>
-<rect x="0" y="0" width="1280" height="64" rx="24" fill="#141517"/>
-<rect x="0" y="0" width="230" height="64" rx="12" fill="#a71930"/>
-<text x="25" y="41" font-family="sans-serif" font-size="27" fill="#ffffff" font-weight="700" text-anchor="start">PER GAME</text>
-<text x="254" y="39" font-family="sans-serif" font-size="20" fill="#d0d1d4" font-weight="400" text-anchor="start">Production · Shooting · Rebounding · Playmaking · Defense · Honors</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="92" viewBox="0 0 620 92" role="img" aria-label="PER GAME">
+<rect width="620" height="92" rx="12" fill="#141517"/>
+<rect width="8" height="92" rx="4" fill="#e03a55"/>
+<text x="28" y="40" fill="#e03a55" font-family="sans-serif" font-size="27" font-weight="700">PER GAME</text>
+<text x="28" y="69" fill="#cbd0d7" font-family="sans-serif" font-size="16">Complete box-score columns below</text>
+<text x="580" y="56" fill="#e03a55" font-family="sans-serif" font-size="29">›</text>
 </svg>
