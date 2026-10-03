@@ -15,7 +15,7 @@ A card shows only evidence dated on or before its date, which is the career cloc
 | Identity | Position, jersey, birth date, age on the card date, registry id, Basketball-Reference page, ESPN id; Wade's measurements and prior program come from his career profile | Registry and the baseline roster entry; `professional_identity.json` for Wade |
 | Contract/control | Terms that already existed at the checkpoint, or the unsigned draft rights and their pick | `library/2003/league/nba_2003_contracts.json` (status legend in that file) |
 | Prior season | Recorded 2002-03 line, or the 2003 draft entry for the 58 rookies | `nba_2002_03_player_stats.json`; draft rights from the contract inventory |
-| Simulated statistics | Season, month and week per-game tables in the repository's column order, N/A until closed games exist, never zero | Closed game results written into the career record (none yet) |
+| Simulated statistics | Season, month and week per-game tables in the repository's column order, N/A until closed games exist, never zero | Closed regular-season results written into the career record by the write-back (`runtime.write_back.closed_lines`: Miami's played notes and the league slate results, matched by bbr_id then name) |
 | Shooting zones | Zone table from `runtime/shot_chart.py` (`aggregate_shots`) over closed results; coverage `unavailable` until located attempts exist | Closed results only; nothing is estimated onto the court |
 | Regular-season statistics by year, Playoff statistics by year, Awards and honors | The same final three sections as the Miami cards, awards last | 2002-03 line; simulated 2003-04 rows; honors only from a closed award decision |
 
@@ -44,4 +44,4 @@ python scripts/format_league_reports.py        # relink the Player cells of ever
 
 The build is idempotent. Repository validation (`scripts/validate_repository.py`) requires a Markdown and an HTML card for every registry player, every league-page player link to resolve, the three final sections in order, and no photo URL outside the league baseline. Tests: `tests/test_league_cards.py`.
 
-The cards are rebuilt when the clock, the holdings, the departures ledger or closed results change. They do not run the engine, advance time or decide anything.
+The cards are rebuilt when the clock, the holdings, the departures ledger or closed results change; `scripts/write_back_results.py --write` rebuilds them after writing results. They do not run the engine, advance time or decide anything.

@@ -70,7 +70,7 @@ class FrontOfficeTests(unittest.TestCase):
         tmp, root = copy_repo()
         self.addCleanup(tmp.cleanup)
         folder = root / "career/Dwyane_Wade/2003-04/01_Free_Agency/June_30"
-        folder.mkdir(parents=True)
+        folder.mkdir(parents=True, exist_ok=True)
         request = {"event_id": "t-decision", "date": "2003-06-30", "question": "q?", "decider": "test",
                    "options": {"a": 0.5, "b": 0.5}, "basis": "test"}
         (folder / "t.decision.json").write_text(json.dumps(request))
@@ -81,7 +81,8 @@ class FrontOfficeTests(unittest.TestCase):
         self.assertEqual(play_requests(store, root)["t-decision"]["status"], "already_decided")
         self.assertEqual(store.result("t-decision")["outcome"], outcome)
         (folder / "t.decision.json").write_text(json.dumps(dict(request, options={"a": 0.9, "b": 0.1})))
-        self.assertEqual(next(iter(play_requests(store, root).values()))["status"], "error")
+        statuses = play_requests(store, root)
+        self.assertEqual(statuses[str(Path("career/Dwyane_Wade/2003-04/01_Free_Agency/June_30/t.decision.json"))]["status"], "error")
 
     def test_draw_follows_probabilities(self):
         picks = [draw({"event_id": f"e{i}", "date": "d", "question": "q", "decider": "x",

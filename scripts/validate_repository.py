@@ -625,6 +625,8 @@ def validate():
     errors.extend(card_errors(ROOT))
     from runtime.player_reports import report_errors as player_report_errors
     errors.extend(player_report_errors(ROOT,player))
+    from runtime.write_back import write_back_errors
+    errors.extend(write_back_errors(ROOT))
     return errors
 
 

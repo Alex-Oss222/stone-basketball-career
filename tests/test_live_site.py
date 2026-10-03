@@ -23,7 +23,7 @@ class LiveCareerSiteTests(unittest.TestCase):
     def test_live_pages_are_canonical_and_detailed_without_writing_career(self):
         source = ROOT / "career/Dwyane_Wade/2003-04/current_state.json"
         before = hashlib.sha256(source.read_bytes()).hexdigest()
-        self.assertEqual(self.site.status["as_of"], "2003-06-26")
+        self.assertEqual(self.site.status["as_of"], json.loads(source.read_text())["current_date"])   # the live clock
         self.assertEqual(self.site.status["detail"], "full")
         self.assertEqual(self.site.status["mode"], "canonical")
         for path in (self.site.home, self.site.cards):

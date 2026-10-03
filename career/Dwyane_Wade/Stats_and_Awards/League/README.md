@@ -12,7 +12,7 @@ The league pages cover 407 registered players. All entries remain available in s
 
 Season, month and week pages include age, recorded club or draft rights, league, position, games, starts, minutes, all shooting makes and attempts, shooting efficiency, offensive and defensive rebounds, assists, steals, blocks, turnovers, fouls and points. G and GS are counts; the other counting columns are per appearance. Shooting uses .500 = 50.0%. Identity comes from the dated registry; its birth dates are available in the registry link. The red-and-black section header has no awards banner; award decisions remain in their linked records.
 
-An unavailable column stays N/A until closed branch game evidence supplies it. The presentation formatter (`scripts/format_league_reports.py`) preserves existing period values and navigation; it does not collect engine results, reconstruct attempts from rounded averages, or populate leaders. League-wide result aggregation remains on the build roadmap.
+An unavailable column stays N/A until closed branch game evidence supplies it. The presentation formatter (`scripts/format_league_reports.py`) preserves existing period values and navigation; it does not collect engine results, reconstruct attempts from rounded averages, or populate leaders. The write-back (`scripts/write_back_results.py`, [rules](../../../../docs/player_statistics.md#write-back)) aggregates the closed results into these pages and fills the period comparison under Leaders; unregistered players in a result are reported, never added.
 
 ## Coverage and rankings
 

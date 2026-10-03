@@ -288,9 +288,12 @@ class RightsCheckTests(unittest.TestCase):
 
     def test_checkpoint_copy_passes_and_drivers_state_is_tolerated(self):
         root = self.copy()
-        self.assertEqual(rights_errors(root), [])
         rights_path = root / "career/Dwyane_Wade/2003-04/00_Team/Finances/free_agent_rights.json"
         state_path = root / "career/Dwyane_Wade/2003-04/current_state.json"
+        state = json.loads(state_path.read_text())
+        state["current_date"] = "2003-06-26"                 # the checkpoint rule is what this test exercises
+        state_path.write_text(json.dumps(state, indent=1) + "\n")
+        self.assertEqual(rights_errors(root), [])
         data = json.loads(rights_path.read_text())
         data["players"][0]["re_signed"] = True
         data["players"][0]["re_signed_date"] = "2003-07-16"

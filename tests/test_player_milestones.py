@@ -45,6 +45,11 @@ class LiveMilestonesTests(unittest.TestCase):
             shutil.copyfile(ROOT / relative, target)
         self.identity = json.loads((self.player / "professional_identity.json").read_text())
 
+    def pin_checkpoint(self):
+        state = json.loads((self.season / "current_state.json").read_text())
+        state["current_date"] = "2003-06-26"            # the fixture describes the June 26 checkpoint
+        self.write("current_state.json", state)
+
     def write(self, relative, data):
         path = self.season / relative
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -68,6 +73,7 @@ class LiveMilestonesTests(unittest.TestCase):
                 "terms": rookie_terms(5, 120, self.root), "note": "Actual test club offer"}
 
     def test_current_checkpoint_has_nine_detailed_live_views_without_fiction(self):
+        self.pin_checkpoint()
         payload = self.payload()
         self.assertEqual([s["id"] for s in payload["screens"]], list(SCREEN_IDS))
         self.assertEqual(payload["as_of"], "2003-06-26")
@@ -206,6 +212,7 @@ class LiveMilestonesTests(unittest.TestCase):
         self.assertNotIn("Recorded eligibility failure", json.dumps(rows))
 
     def test_pending_consultation_is_real_player_action_and_future_answer_hidden(self):
+        self.pin_checkpoint()
         self.write("Wade_Consultations/asked.json", {
             "date": "2003-06-26", "kind": "trade", "player": "Recorded Star", "basis": "Actual asking record",
             "status": "closed", "answer": "object", "answered": "2003-06-27"})

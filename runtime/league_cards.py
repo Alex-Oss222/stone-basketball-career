@@ -534,15 +534,17 @@ def markdown_card(ctx, data):
     lines.append("G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.\n")
     hist = ["Season", "Team(s)", "G", "GS", "MIN", "PTS", "REB", "AST", "STL", "BLK", "TOV", "FG%", "3P%", "FT%"]
     rows = []
+    started = (f"2003-04 is simulated: {data['closed']} closed regular-season games through {ctx.on}."
+               if data["closed"] else "2003-04 is simulated and has not started.")
     if data["prior"]:
         rows.append(_prior_row(data["prior"], "/".join(data["prior"]["team_codes"])))
-        coverage = "2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2003-04 is simulated and has not started."
+        coverage = f"2002-03 regular season from the supplied statistics file; earlier seasons are not imported. {started}"
     elif data["wade"]:
-        coverage = "No NBA season before 2003-04. The historical Wade's statistics are never imported."
+        coverage = f"No NBA season before 2003-04. The historical Wade's statistics are never imported. {started}" if data["closed"] else "No NBA season before 2003-04. The historical Wade's statistics are never imported."
     elif data["rights"]:
-        coverage = "No NBA season before 2003-04 (2003 draft entry)."
+        coverage = f"No NBA season before 2003-04 (2003 draft entry). {started}" if data["closed"] else "No NBA season before 2003-04 (2003 draft entry)."
     else:
-        coverage = "No 2002-03 record in the supplied statistics file. 2003-04 is simulated and has not started."
+        coverage = f"No 2002-03 record in the supplied statistics file. {started}"
     s = data["stats"]["season"]["summary"]
     pg = s["pg"]
     pct = lambda v: "N/A" if v is None else f"{v:.1%}"
@@ -670,6 +672,20 @@ def index_page(ctx, cards):
     return "\n".join(lines)
 
 
+def closed_records(ctx):
+    """registry_id -> closed regular-season records on or before the card date (the write-back's matching).
+
+    The engine's results carry no shot locations, so no shots are supplied and zone coverage stays unavailable."""
+    from .write_back import closed_lines
+    lines, _ = closed_lines(ctx.root, SEASON, ctx.on)
+    card_dir = ctx.root / CARDS_DIR
+    for records in lines.values():
+        for r in records:
+            if r.get("note") is not None:
+                r["href"] = _rel(card_dir, r["note"])
+    return lines
+
+
 def build_cards(root=ROOT, ctx=None):
     """All league card outputs as {path: text}; reads dated records only, writes nothing."""
     ctx = ctx or CardContext(root)
@@ -677,8 +693,9 @@ def build_cards(root=ROOT, ctx=None):
     template = html_template(ctx.template)
     outputs = {folder / SILHOUETTE: silhouette_svg()}
     cards = []
+    records = closed_records(ctx)
     for player in ctx.registry["players"]:
-        data = card_data(ctx, player)
+        data = card_data(ctx, player, records.get(player["registry_id"], ()))
         cards.append(data)
         outputs[folder / f'{data["id"]}.md'] = markdown_card(ctx, data)
         outputs[folder / f'{data["id"]}.html'] = html_card(ctx, data, template)
