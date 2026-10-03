@@ -1,0 +1,12 @@
+{
+ "date": "2003-06-30",
+ "decider": "Anthony Carter (simulated player)",
+ "event_id": "2003-06-30-anthony_carter-player-option",
+ "kind": "decision",
+ "options": {
+  "decline": 0.355,
+  "exercise": 0.645
+ },
+ "outcome": "exercise",
+ "question": "Does Anthony Carter exercise his 2003-04 player option of $4,100,000?"
+}
