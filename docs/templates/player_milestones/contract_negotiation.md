@@ -18,6 +18,34 @@
 
 **Market eligibility:** {{negotiations open? signing permitted? existing contract ended? valid RFA rights?}}. Declining a proposal does not terminate an existing contract, release draft rights, erase restrictions, or advance the calendar.
 
+## Your value before the first counter
+
+**Estimated first-year market range:** {{low to high}} · **Working target:** {{target}} · **Share of published cap:** {{range and target}} · **Evidence confidence:** {{limited / moderate; reason}}.
+
+**Legal salary range:** {{service-based minimum to maximum, or unresolved}} · **This club's available route:** {{room / exception / rights and evidenced ceiling, or unresolved}}.
+
+Market value, a player's legal maximum and a particular club's spending authority answer different questions. A low offer may reflect that club's route or willingness; a high estimate does not authorize an illegal salary. See the [usable market profile baseline](../../player_market_profile.md).
+
+| Evidence behind your target | Available record | Effect on the discussion | Limitation |
+| --- | --- | --- | --- |
+| Sustained production | {{closed season totals, games/minutes, source cutoff}} | {{role-adjusted evidence to present}} | {{small sample / missing period}} |
+| Comparable contracts | {{named comparables, signed dates, first-year base, signing-era cap share}} | {{range, differences in age/service/role}} | {{old deal / different role / synthetic preview}} |
+| Availability | {{appearances and documented restrictions}} | {{security or protection question}} | {{no invented medical prognosis}} |
+| Basketball demand | {{actual contacts, written bids, roster needs}} | {{credible alternatives}} | {{interest is not a bid}} |
+| Negotiating position | {{UFA/RFA, option, incumbent rights}} | {{available paths and restrictions}} | {{rights do not assign a fixed dollar discount}} |
+
+**Ask:** {{specific terms to request}}. **Private minimum acceptable package:** {{only if the player has stated it}}. **Walk-away alternative:** {{actual existing option/offer or no secured alternative}}. Keep the player's private floor separate from outgoing messages.
+
+### Counter planning
+
+| Requested change | What you gain | What you may offer in exchange | Club reply needed |
+| --- | --- | --- | --- |
+| {{more first-year salary}} | {{cash now}} | {{term or option concession if desired}} | {{revised legal schedule}} |
+| {{more protected seasons}} | {{security}} | {{lower first-year ask if desired}} | {{exact protection language}} |
+| {{player option / shorter term}} | {{earlier control}} | {{less total money if desired}} | {{eligible structure and deadline}} |
+
+These are bargaining dimensions, not fixed exchange rates. Changing a slider or drafting a counter never changes the club's current offer. Show the salary delta, guaranteed delta and earliest possible next market before recording the player's instruction.
+
 ## Four ordinary offers, one reserved matching position
 
 Display up to four actual written proposals together. An open incumbent proposal uses one ordinary slot. Empty slots read **No written offer**. Keep additional proposals in the offer register and let the player select the four compared here. Interest, meetings and estimates belong in a separate contact log.

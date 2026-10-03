@@ -6,7 +6,7 @@
 
 Read the current date, professional identity, contract, availability and owning phase note. Select the page for the actual event. A possible future event belongs in the calendar, not in the pending player-decision list. An offer expiry, option date or meeting time needs a recorded source.
 
-Use the blank template to make a short page in the owning phase, named `Milestone_YYYY-MM-DD_<subject>.md`. Fill it from evidence available on that date; replace relative template links with links appropriate to its new location. Keep a source reference to the original template. This document is not a game note or an engine request.
+Use the blank template to make a page in the owning phase, named `Milestone_YYYY-MM-DD_<subject>.md`. Keep its immediate action compact and retain the detailed working records below it. Fill it from evidence available on that date; replace relative template links with links appropriate to its new location. Keep a source reference to the original template. This document is not a game note or an engine request.
 
 | Event | Suggested owning location | Evidence to read |
 | --- | --- | --- |
@@ -16,6 +16,9 @@ Use the blank template to make a short page in the owning phase, named `Mileston
 | Training block | `03_Offseason/` or the phase where it actually occurs | Player preference, staff plan, availability, completed-session evidence |
 | Exit meeting | The phase/week containing the team's actual last game | Closed season reports and communicated staff feedback |
 | Camp review | `04_Training_Camp/` | Staff observations, current role and scheduled evaluation |
+| Contract checkpoint | Phase containing the actual option/QO/expiry event | Existing terms, notice, holder, applicable rules and rights outcome |
+| Stats review | Owning reporting period or meeting note | Source-linked closed reports, coverage and dated role evidence |
+| Calendar view | Current phase index | Actual milestone IDs, commitments, dependencies and sourced deadlines |
 
 Offseason work can start before August, and contract talks can overlap workouts. Existing folder names organize records; they do not create mandatory dates or mean an event occurred.
 
@@ -39,11 +42,21 @@ The user determines Wade's choices. The AI/GM determines club offers and transac
 
 ## What is implemented versus presented
 
-These pages are reusable presentation and recording templates. The existing rookie negotiation log can support a live rookie offer when its date and terms are verified. The [contract/free-agency workflow module](../../contract_negotiation_engine.md) adds isolated, tested transitions for supplied offers and evidence, including the reserved fifth RFA matching record. Its [interactive demonstration](../../examples/player_milestones/contract_negotiation_preview.html) is a separate local preview, not a connection to live career state. Market generation, complete cap/eligibility validation, automatic deadlines, exceptional RFA resolution, trade completion, new-contract write-back and training-driven ability changes still need their supported integration paths. Missing mechanics stay unresolved instead of being improvised as guaranteed results.
+These pages are reusable presentation and recording templates. The rookie negotiation log supports dated rookie offers. The [contract/free-agency workflow module](../../contract_negotiation_engine.md) supplies isolated transitions for offers and evidence, including the reserved fifth RFA matching record. Existing 2003 front-office adapters in `runtime/market.py`, `runtime/gm.py`, `runtime/negotiation.py` and `runtime/signing.py` support their documented market and transaction paths; `runtime/trades.py` and `runtime/camp.py` support their own documented workflows. A template never bypasses those paths or broadens their era/transaction coverage.
+
+The [screen gallery](../../examples/player_milestones/career_milestones_preview.html) and [detailed contract demonstration](../../examples/player_milestones/contract_negotiation_preview.html) are local previews. The [market profile](../../player_market_profile.md) adds read-only status derivation, scenario selection and an evidence-backed salary range. It does not authenticate sources, approve a contract or write to the career. Live player-dashboard action integration, unsupported legal exceptions and any training-driven ability mechanism still require their own supported implementation. Missing mechanics stay unresolved.
 
 Contract and free-agency pages share offer IDs, versions and a history. Declining an incumbent proposal does not create market eligibility. Four comparison slots contain ordinary proposals; the fifth records only the incumbent's matching outcome for the exact signed outside sheet. See the [detailed research and interaction specification](contract_negotiation_research.md).
 
 The [build roadmap](../../ROADMAP.md) retains ownership of unfinished mechanics. No template here advances the clock, runs a draw, creates an offer or signs a deal.
+
+## Keep depth useful
+
+Use three levels: the event and next decision, the main working surface, then supporting records. Trade shows a transition dossier; free agency shows rights, contacts and bids; negotiation shows versioned cash and control; training shows planned work, completed work and review. Do not replace all of them with the same generic choice card.
+
+For live screens, remove inapplicable branches while preserving material unknowns. The UFA/RFA selector belongs to hypothetical setup; the career's status comes from dated records. Acknowledging a trade notice is distinct from exercising a real consent right. A new contract needs an executed source agreement, its own schedule and the supported write-back. Contract expiry alone is not that agreement.
+
+Keep unresolved questions with their owners and next checkpoints. Calendar conflicts can reschedule proposed sessions after confirmation; they cannot silently move a sourced legal deadline. Periodic statistics reviews use the existing report hierarchy and never duplicate game ownership.
 
 ### One rule inconsistency to resolve before using a deadline
 

@@ -8,10 +8,10 @@
 
 ## Professional identity
 
-![Player personal information and earned career honors through 2003-11-03](assets/personal_2003-11-03.svg)
+![Player personal information and earned career awards through 2003-11-03](assets/personal_2003-11-03.svg)
 
 <details>
-<summary>Personal information and earned honors: text version</summary>
+<summary>Personal information and earned awards: text version</summary>
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -25,9 +25,9 @@ NBA entry: Example draft entry: round 1, pick 5.
 
 Identity as of 2003-11-03; status snapshot dated 2003-10-01. Illustrative player identity; not a canonical career record.
 
-### Earned career honors
+### Earned career awards
 
-| Honor | Period | Announced | Decision record |
+| Award | Period | Announced | Decision record |
 | --- | --- | --- | --- |
 | Rookie of the Month | 2003-10-01 to 2003-10-31 | 2003-11-01 | ROTM (example) |
 
@@ -41,7 +41,9 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 ### Per game
 
-![Per-game player statistics](assets/per_game.svg)
+[![Shooting: open the shot-chart page](assets/shooting_link.svg)](sample_shooting.md#game-3) [![Awards: open the annual-awards page](assets/awards_link.svg)](sample_awards.md)
+
+[Interactive Shooting](player_cards_preview.html?period=game-3#shooting) · [Interactive Awards](player_cards_preview.html#awards) · [Shooting text version](sample_shooting.md) · [Awards text version](sample_awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -49,7 +51,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2003-11-12, filed by the honor's period-end date; the banner shows career honors known at the page's identity cutoff.
+Awards are confirmed through 2003-11-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -103,7 +105,9 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 ### Splits
 
-![Per-game player statistics](assets/per_game.svg)
+[![Shooting: open the shot-chart page](assets/shooting_link.svg)](sample_shooting.md#game-3) [![Awards: open the annual-awards page](assets/awards_link.svg)](sample_awards.md)
+
+[Interactive Shooting](player_cards_preview.html?period=game-3#shooting) · [Interactive Awards](player_cards_preview.html#awards) · [Shooting text version](sample_shooting.md) · [Awards text version](sample_awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -116,7 +120,7 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2003-11-12, filed by the honor's period-end date; the banner shows career honors known at the page's identity cutoff.
+Awards are confirmed through 2003-11-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 

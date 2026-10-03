@@ -4,7 +4,7 @@
 
 Reviewed October 2, 2026. The layouts and reply prompts are original design choices for this simulation. Later publications inform the kinds of information a player needs; they do not establish the rules or events of the 2003 career.
 
-The expanded [contract negotiation and free-agency research](contract_negotiation_research.md) adds a primary 1999 agreement source, detailed compensation analysis, team-aware presentation, four ordinary offers and a reserved fifth incumbent matching record. It also distinguishes the local demonstration and isolated workflow module from remaining live-career integration.
+The expanded [contract negotiation and free-agency research](contract_negotiation_research.md) adds a primary 1999 agreement source, detailed compensation analysis, team-aware presentation, four ordinary offers and a reserved fifth incumbent matching record. The [player-experience research](player_experience_research.md) adds first-person player interviews, practical trade-transition needs and distinct screen designs. The [market profile baseline](../../player_market_profile.md) documents the dated valuation inputs and its limitations.
 
 ## Source use
 

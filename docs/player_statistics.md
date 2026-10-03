@@ -1,6 +1,6 @@
 # Player statistics and professional identity
 
-[Filled preview](examples/player_stats_preview.md) · [Current career](../career/Dwyane_Wade/README.md) · [Structure](season_structure.md)
+[Filled preview](examples/player_stats_preview.md) · [Interactive shooting and awards](examples/player_cards_preview.html) · [Current career](../career/Dwyane_Wade/README.md) · [Structure](season_structure.md)
 
 Reports contain professional identity and statistical performance. Decisions remain in their owning notes. Existing team, league and award records retain their paths and links.
 
@@ -39,6 +39,8 @@ Each entry needs `id`, `name`, `short_name`, `status: earned`, `competition`, `s
 The loader rejects duplicate honors, nominees, unsupported competitions, future announcements, invalid date order and missing/outside sources. NBA Cup and Play-In season gates also apply to their honors. A banner shows only awards announced by that page's identity cutoff. The table's Awards column uses the current career knowledge date and files each honor into the period containing its **period-end date**, as required by the calendar/award rules. Thus an award announced on Monday can appear in the prior week's table after confirmation; its announcement date is retained in the register, and the table names its knowledge cutoff. It never enters an earlier as-of banner before announcement.
 
 The filled examples include fictional award badges to demonstrate appearance. They are kept outside the career directory and marked as illustrative.
+
+The sample cards now use two linked destinations, **Shooting** and **Awards**, in place of the descriptive category strip. The [interactive shooting card](examples/player_cards_preview.html) adds location inspection, fixed FG% colors, frequency-scaled dots and period-specific regional calculations. Its locations are explicitly synthetic and reconcile to the existing fictional box scores. The Awards view shows yearly earned banners, with separate empty and fictional filled design cases. [Design, formulas and source requirements](shooting_and_awards_design.md) explain the missing-feed behavior and the distinction between sample visualization and live tracking support.
 
 Weeks retain the repository's established **days 1-7, 8-14, 15-21 and 22-month end**, with full dates in every title. They are monthly buckets, not Monday-Sunday weeks. Official awards retain their own date windows. January-April belong to the second calendar year of an NBA season. The 2003-04 calendar is not universal: verify lockout, restart and future schedules at rollover.
 
