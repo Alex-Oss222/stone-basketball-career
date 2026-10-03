@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `planiz
 
 ## Simulated statistics
 
-As of **2003-11-04**: 3 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2003-11-04**: 4 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -102,7 +102,7 @@ Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regul
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2003-04 is simulated: 3 closed regular-season games through 2003-11-04.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2003-04 is simulated: 4 closed regular-season games through 2003-11-04.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
