@@ -53,6 +53,7 @@ A draft hold and an unexercised option are not signed guaranteed salary.
 ## Available response paths
 
 - [Review current contract record](../2003-04/00_Team/Finances/contract_schedules.json): Inspect the recorded obligations and their amount types.
+- [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
 
@@ -72,3 +73,4 @@ A real club offer, contract event or verified option/expiry deadline.
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Workflow](../../../docs/front_office.md)
 - [Free-agency record](../2003-04/01_Free_Agency/note.md)
+- [Dated milestone working records and player replies](../milestones.json)

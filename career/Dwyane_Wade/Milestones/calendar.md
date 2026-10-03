@@ -55,6 +55,7 @@ Activation: The authoritative current date and recorded event determine what is 
 ## Available response paths
 
 - [Open the current event](../2003-04/09_Draft/note.md): Read the owning career note and record the player's actual response when one is due.
+- [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
 
@@ -74,3 +75,4 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Workflow](../../../docs/front_office.md)
 - [Free-agency record](../2003-04/01_Free_Agency/note.md)
+- [Dated milestone working records and player replies](../milestones.json)

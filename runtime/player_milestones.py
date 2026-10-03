@@ -369,7 +369,7 @@ def _basketball_views(c, contract):
                 "State the role you want and request a review of the actual sample.",
                 "Report availability to qualified staff.",
                 "The coach owns depth-chart position and rotation minutes; a request is not an assignment."]}],
-        [c.action(c.season / "04_Training_Camp/Wade_Camp_Review.md", "Answer your camp review", "Respond to the actual staff review."),
+        [c.action(c.season / "04_Training_Camp/Wade_Camp_Review.md", "Answer your camp review", "Respond to the actual staff review.") if c.known(camp.get("evaluated")) else None,
          c.action(camp_phase["path"], "Open camp events and discussion", "Inspect the dated camp record.")],
         "A verified camp-opening record, then actual preseason evidence and the coach's role review.")
     exit_path = c.season / "03_Offseason/exit_meeting.json"
@@ -564,6 +564,8 @@ def build_milestone_payload(player: Path, identity: dict, records: list, *, root
          {"label": "Open shooting and player cards", "href": "../Stats_and_Awards/player_cards.html", "description": "The live card dashboard uses the same canonical source records."}],
         "The next declared, closed game result or a chosen completed-period review.")
     screens = {s["id"]: s for s in (calendar, checkpoint, negotiation, freeagency, training, trade_view, exit_view, camp, stats)}
+    from .milestone_records import augment_live_screens
+    augment_live_screens(c, screens)
     for screen in screens.values():
         screen["sources"] = list(c.sources.values())
     return {"schema_version": 1, "mode": "live", "as_of": c.on, "season": c.season.name,

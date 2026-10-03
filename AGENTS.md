@@ -32,6 +32,8 @@ Do not import a later 2003 event before the career clock reaches it.
 7. finances only when contract, cap or transaction consequences matter
 8. current phase/week/game note
 
+Then read `Milestones/README.md` and `Milestones/calendar.md` under the player's career. Phase READMEs link the full live screens. Follow `docs/live_player_milestones.md` to save the user's authorized reply against the exact current offer or working-record version.
+
 ## Team state
 
 Everything under `00_Team` is simulation-owned.
@@ -164,5 +166,7 @@ For player-facing calendar milestones, use `docs/templates/player_milestones/` a
 1. write the owning event note;
 2. update current state;
 3. update affected AI/GM team records only when Miami actually changed;
-4. run repository validation;
-5. run tests.
+4. record actual milestone appointments, plans and follow-ups with dated sources in `milestones.json`; use `scripts/player_milestone.py` for the user's authorized reply;
+5. rebuild all detailed views with `python scripts/update_player_reports.py`;
+6. run repository validation;
+7. run tests.

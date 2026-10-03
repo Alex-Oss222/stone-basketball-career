@@ -59,6 +59,7 @@ Snapshot: 2003-06-26. Draft rights and unassigned arrivals are not assigned minu
 ## Available response paths
 
 - [Open camp events and discussion](../2003-04/04_Training_Camp/note.md): Inspect the dated camp record.
+- [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
 
@@ -78,3 +79,4 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Workflow](../../../docs/front_office.md)
 - [Free-agency record](../2003-04/01_Free_Agency/note.md)
+- [Dated milestone working records and player replies](../milestones.json)

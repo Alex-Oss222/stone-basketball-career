@@ -498,6 +498,8 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
             outputs[page] = old.rstrip() + "\n\n" + block + "\n"
     from .player_milestones import build_milestone_pages
     outputs.update(build_milestone_pages(player, identity, records, root=root))
+    from .milestone_records import build_phase_navigation
+    outputs.update(build_phase_navigation(root, player))
     for page in (player / "README.md", stats / "README.md", *(s / "README.md" for s in seasons)):
         if page in outputs:
             outputs[page] += "\n" + link(page, player / "Milestones/index.html", "Open your live career milestones") + " · " + link(page, stats / "player_cards.html", "Detailed Shooting and Awards") + "\n"

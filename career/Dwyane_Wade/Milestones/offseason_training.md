@@ -54,6 +54,7 @@ Activation: A dated player priority and staff-supported development block.
 ## Available response paths
 
 - [Open your recorded development work](../2003-04/03_Offseason/note.md): Record a real dated priority or review in the owning offseason record.
+- [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
 
@@ -73,3 +74,4 @@ The player and staff agree a dated first block and review criteria.
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Workflow](../../../docs/front_office.md)
 - [Free-agency record](../2003-04/01_Free_Agency/note.md)
+- [Dated milestone working records and player replies](../milestones.json)

@@ -52,6 +52,7 @@ Activation: An actual dated proposal, consultation or executed transaction.
 ## Available response paths
 
 - [Open the current event discussion](../2003-04/09_Draft/note.md): Record a dated reaction to an actual transaction.
+- [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
 
@@ -71,3 +72,4 @@ An actual transaction update with its source and applicable player rights.
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Workflow](../../../docs/front_office.md)
 - [Free-agency record](../2003-04/01_Free_Agency/note.md)
+- [Dated milestone working records and player replies](../milestones.json)

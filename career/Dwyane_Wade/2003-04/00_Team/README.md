@@ -1,5 +1,11 @@
 # Miami Heat team state
 
+<!-- career-desk:start -->
+
+**Current live player pages:** [Trade update](../../Milestones/trade_update.md) · [Calendar](../../Milestones/calendar.md) · [Full career desk](../../Milestones/README.md) · [Interactive view](../../Milestones/index.html)
+
+<!-- career-desk:end -->
+
 Snapshot date: June 26, 2003.
 
 This area is AI/GM-owned.

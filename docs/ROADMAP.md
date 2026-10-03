@@ -8,6 +8,8 @@ Status: `done`, `next`, `blocked: <what is missing>`, `later`.
 
 ## Before opening night (career at June 26, 2003)
 
+Working records and player replies are integrated with those live screens: [event and reply guide](live_player_milestones.md). Phase navigation, append-only follow-ups, version/date guards and source-based calendar conflicts are implemented. A recorded preference never bypasses the remaining execution mechanics below.
+
 | # | Item | Why it is needed | Status |
 |---|---|---|---|
 | 1 | League contracts and cap ledger | Every team's payroll and cap position | done (stage 1, `runtime/contracts.py`) |

@@ -571,6 +571,17 @@ def depart(writer, name, day, status, reason):
     return True
 
 
+def player_status_snapshot(writer, day, source_event, **fields):
+    """Keep the public identity dated when an executed event changes Wade's status."""
+    identity_rel = Path("career/Dwyane_Wade/professional_identity.json")
+    if not (writer.root / identity_rel).is_file():
+        return
+    identity = writer.load(identity_rel)
+    snapshot = dict(max((s for s in identity["snapshots"] if s["as_of"] <= day), key=lambda s: s["as_of"]))
+    snapshot.update(as_of=day, source_state=f"{SEASON}/current_state.json", source_event=source_event, **fields)
+    identity["snapshots"] = sorted([s for s in identity["snapshots"] if s["as_of"] != day] + [snapshot], key=lambda s: s["as_of"])
+
+
 def sign_rookie(writer, log, terms, day):
     """Wade signs his rookie-scale contract: the cap sheet, register, depth chart, state and the log's signing entry."""
     sheet, roster, depth = writer.load(TEAM / "Finances/contract_schedules.json"), writer.load(TEAM / "Team/Roster/roster.json"), writer.load(TEAM / "Team/Depth_Chart/depth_chart.json")
@@ -598,6 +609,8 @@ def sign_rookie(writer, log, terms, day):
     pending = [d for d in state.get("pending_player_decisions", []) if d != "rookie_contract_offer"]
     set_state(writer, day, last_event=f"{day}-wade-signs-rookie-contract", contract_status="rookie_scale_contract", roster_status="under_contract",
               pending_player_decisions=pending)
+    player_status_snapshot(writer, day, f"{SEASON}/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json",
+                           roster_status="Under contract", contract=f"Rookie scale signed {day}: three seasons plus a 2006-07 team option")
     return entry
 
 

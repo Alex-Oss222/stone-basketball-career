@@ -141,6 +141,11 @@ class CampRun:
                            f"Staff decision from {len(results)} preseason games: starters {starters}" + (f"; battles drawn: {winners}" if winners else "") +
                            f". Wade's perimeter-defense grade {grade['grade']} ({grade['evidence'][1]}). Records: `../00_Team/Team/Depth_Chart/depth_chart.json`, `rotation.json`, `../00_Team/Team/defensive_grades.json`.")
         self.writer.text(camp.CAMP / "Wade_Camp_Review.md", wade_page(day, grade, lines.get("Dwyane Wade"), rotation))
+        minutes = next((p["minutes"] for p in rotation["players"] if p["player_id"] == "Dwyane Wade"), 0)
+        positions = [pos for pos, names in depth["positions"].items() if names and names[0] == "Dwyane Wade"]
+        assignment = "Starting " + "/".join(positions) if positions else "Rotation" if minutes else "Outside current rotation"
+        signing.player_status_snapshot(self.writer, day, "2003-04/04_Training_Camp/Wade_Camp_Review.md",
+                                       role=f"{assignment}; staff plan {minutes:g} minutes")
         signing.set_state(self.writer, day, area="04_Training_Camp", note="04_Training_Camp/note.md", last_event=f"{day}-camp-decision")
         return True
 

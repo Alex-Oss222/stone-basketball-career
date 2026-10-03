@@ -4,6 +4,8 @@ These designs now power the [active detailed career desk](../../../career/Dwyane
 
 Nine reusable player-facing pages for the moments when the calendar changes what you can do. Each has an immediate action, detailed working records and a next checkpoint.
 
+[Save a real working event or player reply](../../live_player_milestones.md). The full live screens consume those records; your preference remains separate from a club decision, coaching assignment or ability change.
+
 [Interactive screen gallery](../../examples/player_milestones/career_milestones_preview.html) · [Filled examples](../../examples/player_milestones/README.md) · [Player-experience research](player_experience_research.md) · [Research and era rules](research.md) · [How to use these pages](workflow.md)
 
 [Detailed contract/free-agency design](contract_negotiation_research.md) · [Interactive contract desk](../../examples/player_milestones/contract_negotiation_preview.html). Compare four ordinary proposals together; the fifth position is reserved for the incumbent's RFA matching record.

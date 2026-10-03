@@ -52,6 +52,7 @@ These are Miami's roster negotiations, not offers to Wade.
 ## Available response paths
 
 - [Open market events and your requests](../2003-04/01_Free_Agency/note.md): Review the actual dated roster-market discussion.
+- [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
 
@@ -71,3 +72,4 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Workflow](../../../docs/front_office.md)
 - [Free-agency record](../2003-04/01_Free_Agency/note.md)
+- [Dated milestone working records and player replies](../milestones.json)

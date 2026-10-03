@@ -49,6 +49,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 
 - [Open your complete statistics](../Stats_and_Awards/README.md): Follow season, month, week and source-game reports.
 - [Open shooting and player cards](../Stats_and_Awards/player_cards.html): The live card dashboard uses the same canonical source records.
+- [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
 
@@ -68,3 +69,4 @@ The next declared, closed game result or a chosen completed-period review.
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Workflow](../../../docs/front_office.md)
 - [Free-agency record](../2003-04/01_Free_Agency/note.md)
+- [Dated milestone working records and player replies](../milestones.json)

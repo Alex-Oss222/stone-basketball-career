@@ -33,6 +33,8 @@ jobs:
         env:
           COLLECT_WAIT: "1200"
         run: python scripts/collect_results.py
+      - name: Refresh live player pages from canonical evidence
+        run: python scripts/update_player_reports.py
       - name: Commit result files
         run: |
           git add -A career

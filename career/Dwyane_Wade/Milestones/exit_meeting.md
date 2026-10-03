@@ -50,6 +50,7 @@ Activation: The player's season closes and a dated exit meeting is recorded.
 ## Available response paths
 
 - [Open the owning offseason record](../2003-04/03_Offseason/note.md): Use a dated meeting and closed-season evidence when the review occurs.
+- [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
 
@@ -69,3 +70,4 @@ The actual season close and an agreed exit-meeting date.
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Workflow](../../../docs/front_office.md)
 - [Free-agency record](../2003-04/01_Free_Agency/note.md)
+- [Dated milestone working records and player replies](../milestones.json)
