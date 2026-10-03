@@ -245,7 +245,9 @@ class WriteBackRunTests(unittest.TestCase):
         payload = json.loads(re.search(r'type="application/json">(.*?)</script>', (root / STATS / "League/Players/wadedw01.html").read_text(), re.S).group(1)
                              .replace("\\u003c", "<").replace("\\u003e", ">").replace("\\u0026", "&"))
         season_period = next(p for p in payload["periods"] if p["id"] == "season")
-        self.assertEqual((season_period["games"], season_period["box"]["pts"], season_period["shooting"]["coverage"]["status"]), (1, wade["pts"], "unavailable"))
+        # No shot-location feed exists, so coverage is unavailable; a game with no field-goal attempt has nothing to locate.
+        expected = "complete" if wade["fga"] == 0 else "unavailable"
+        self.assertEqual((season_period["games"], season_period["box"]["pts"], season_period["shooting"]["coverage"]["status"]), (1, wade["pts"], expected))
         idle = rows_by_first_cell((root / STATS / "League/Players/willial02.md").read_text(), ["Scope"])
         self.assertEqual(idle["2003-04 regular season"]["G"], "0")
         self.assertEqual(check_cards(root), [])

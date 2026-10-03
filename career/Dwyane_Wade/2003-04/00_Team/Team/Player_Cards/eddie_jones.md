@@ -4,7 +4,7 @@
 **Age at assessment:** 31 · **Height:** 6-6 · **Weight:** 190 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Existing seven-year contract runs through 2006-07; 2003-04 salary $12,333,750. (register, 2003-09-30) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Existing seven-year contract runs through 2006-07; 2003-04 salary $12,333,750. (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/jonesed02.html#contract) · [Contract history](../../../../Contracts/players/jonesed02.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

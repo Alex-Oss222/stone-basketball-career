@@ -1,0 +1,18 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2003-04",
+ "kind": "player_identities",
+ "purpose": "Identity for free agents outside the league baseline whose real 2003 club was Miami (rule 1 leaves them unsigned): position, birth date and pre-2003 path, read from Basketball-Reference player pages. Identity only: no results, contracts or later seasons.",
+ "players": [
+  {"player_id": "Udonis Haslem", "bbr_id": "hasleud01", "position": "PF", "birth_date": "1980-06-09", "height": "6-8", "college": "Florida",
+   "pre_2003_path": "Undrafted in 2002; played the 2002-03 season in France (Chalon-sur-Saone).", "nba_history": false,
+   "page_url": "https://www.basketball-reference.com/players/h/hasleud01.html"},
+  {"player_id": "Kirk Penney", "bbr_id": "penneki01", "position": "SG", "birth_date": "1980-11-23", "height": "6-5", "college": "Wisconsin",
+   "pre_2003_path": "Undrafted in 2003 (New Zealand).", "nba_history": false,
+   "page_url": "https://www.basketball-reference.com/players/p/penneki01.html"},
+  {"player_id": "John Wallace", "bbr_id": "wallajo01", "position": "PF", "birth_date": "1974-02-09", "height": "6-8", "college": "Syracuse",
+   "pre_2003_path": "NBA seasons before 2002-03 (not in this repository's statistics); no 2002-03 NBA club.", "nba_history": true,
+   "page_url": "https://www.basketball-reference.com/players/w/wallajo01.html"}
+ ]
+}

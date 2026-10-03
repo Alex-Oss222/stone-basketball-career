@@ -25,7 +25,7 @@ STATE = Path(f"career/Dwyane_Wade/{SEASON}/current_state.json")
 HORIZON = ["2003-04", "2004-05", "2005-06", "2006-07", "2007-08", "2008-09", "2009-10", "2010-11"]
 ACTIVE_STATUSES = ("under_contract", "under_contract_guarantee_amended", "team_option_exercised", "player_option_exercised",
                    "signed_free_agent", "re_signed")
-CLOSED_STATUSES = ("team_option_declined", "player_option_declined", "renounced", "released", "traded", "signed_elsewhere")
+CLOSED_STATUSES = ("team_option_declined", "player_option_declined", "renounced", "released", "traded", "signed_elsewhere", "voided")
 
 
 def slug(name):
@@ -109,6 +109,11 @@ def league_identity(root, bbr_id):
     for p in read("career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json", root)["players"]:
         if p.get("bbr_id") == bbr_id:
             return {"player_id": p["name"], "position": p.get("position"), "birth_date": p.get("birth_date"), "club": p.get("team_name")}
+    extra = Path(root) / "library/2003/league/nba_2003_unattached_identities.json"
+    if extra.is_file():
+        for p in json.loads(extra.read_text(encoding="utf-8"))["players"]:
+            if p.get("bbr_id") == bbr_id:
+                return dict(p, club=None)
     return {}
 
 

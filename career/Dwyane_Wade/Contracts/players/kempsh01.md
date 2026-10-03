@@ -2,9 +2,9 @@
 
 # Contract | Shawn Kemp
 
-Known through: 2003-10-24. [Open interactive contract](kempsh01.html#contract) · [Contract history](kempsh01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](kempsh01.html#contract) · [Contract history](kempsh01.html#contract-history)
 
-Shawn Kemp: camp contract. Evidence cutoff: 2003-10-24.
+Shawn Kemp: camp contract. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 
@@ -103,9 +103,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
+- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 
 ### Current control and contract coverage
 
@@ -257,9 +257,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
+- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 
 ### Shawn Kemp · existing contract; signing date not recorded
 

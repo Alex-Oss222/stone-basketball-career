@@ -2,9 +2,9 @@
 
 # Contract | Sam Cassell
 
-Known through: 2003-10-24. [Open interactive contract](cassesa01.html#contract) · [Contract history](cassesa01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](cassesa01.html#contract) · [Contract history](cassesa01.html#contract-history)
 
-Sam Cassell: under contract unverified. Evidence cutoff: 2003-10-24.
+Sam Cassell: under contract unverified. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

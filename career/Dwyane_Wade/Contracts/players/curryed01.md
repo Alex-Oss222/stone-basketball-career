@@ -2,9 +2,9 @@
 
 # Contract | Eddy Curry
 
-Known through: 2003-10-24. [Open interactive contract](curryed01.html#contract) · [Contract history](curryed01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](curryed01.html#contract) · [Contract history](curryed01.html#contract-history)
 
-Eddy Curry: under rookie contract. Evidence cutoff: 2003-10-24.
+Eddy Curry: under rookie contract. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

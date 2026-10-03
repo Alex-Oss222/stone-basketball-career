@@ -2,9 +2,9 @@
 
 # Contract | James Jones
 
-Known through: 2003-10-24. [Open interactive contract](jonesja02.html#contract) · [Contract history](jonesja02.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](jonesja02.html#contract) · [Contract history](jonesja02.html#contract-history)
 
-James Jones: No verified contract record. Evidence cutoff: 2003-10-24.
+James Jones: No verified contract record. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

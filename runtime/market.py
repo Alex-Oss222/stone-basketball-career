@@ -25,6 +25,7 @@ TRANSACTIONS_PATH = Path("library/2003/league/nba_2003_offseason_transactions.js
 CALENDAR_PATH = Path("library/2003/league/nba_2003_04_calendar.json")
 CONTRACTS_PATH = Path("library/2003/league/nba_2003_contracts.json")
 MIAMI = "Miami Heat"
+UNDATED_EXIT = "2003-10-01"             # an undated real re-signing counts from the day camps open (inference)
 PRIOR_CAP = 40271000                     # 2002-03 cap: the planning figure before July 15, 2003
 
 # Market pressure (judgement): buyers (clubs that can pay more than the mid-level on the date, after
@@ -62,6 +63,8 @@ class Market:
         self.players = {}
         for club, entry in read(RIGHTS_PATH, root)["clubs"].items():
             for p in entry["free_agents"]:
+                if p.get("not_a_free_agent"):
+                    continue          # listed in error (Keon Clark exercised his option): never on the market
                 self.players[p["bbr_id"]] = dict(p, club=club)
         self.exits = self._exits()
         self.standings = read(Path("library/2003/league/nba_2002_03_standings.json"), root)["clubs"]   # strength known on the date
@@ -70,9 +73,13 @@ class Market:
     def _exits(self):
         """bbr_id -> (date, destination, row) of the first real move that takes him off the market."""
         out = {}
-        for row in sorted(self.transactions["signings"], key=lambda r: r["date"]):
-            if row["kind"] not in ("signing", "re_sign", "sign_and_trade", "match", "match_declined"):
+        for row in sorted(self.transactions["signings"], key=lambda r: r["date"] or UNDATED_EXIT):
+            if row["kind"] not in ("signing", "re_sign", "sign_and_trade", "match", "match_declined", "trade"):
                 continue
+            if not row["date"]:
+                # A real move with no dated source (Glover's and Trent's re-signings): he was with his club in
+                # camp, so he leaves the market when camps open. An inference, labelled on the row.
+                row = dict(row, date=UNDATED_EXIT, date_inferred=True)
             key = row["bbr_id"] or alias(row["player"])
             if key in out:
                 continue
@@ -80,8 +87,18 @@ class Market:
             if destination == MIAMI:
                 # Rule 1: a real Miami signing is skipped; he stays with the club that had him.
                 destination = row["from"] or self.players.get(key, {}).get("club")
+                if not destination:
+                    continue          # no previous NBA club (Haslem): he stays a free agent, so no exit
             out[key] = (row["date"], destination, row)
         return out
+
+    def restricted(self, bbr_id):
+        """A restricted free agent: his club holds a right to match, so only an offer sheet can sign him.
+
+        Eligible players count as restricted unless the world data records that no qualifying offer was
+        tendered (`qualifying_offer_tendered: false`); an unknown tender is treated as tendered."""
+        p = self.players.get(bbr_id) or {}
+        return bool(p.get("rfa_eligible")) and p.get("qualifying_offer_tendered") is not False
 
     def exit(self, bbr_id):
         return self.exits.get(bbr_id)
@@ -98,7 +115,7 @@ class Market:
 
     def news(self, since, until):
         """Real moves dated after `since` and on or before `until`: what the front office reads as news."""
-        return [row for row in self.transactions["signings"] if since < row["date"] <= until
+        return [row for row in self.transactions["signings"] if row["date"] and since < row["date"] <= until
                 and not (row["to"] == MIAMI or row["kind"] == "rookie_signing")]
 
     # -- prices ------------------------------------------------------------------------------

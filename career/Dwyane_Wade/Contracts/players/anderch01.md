@@ -2,9 +2,9 @@
 
 # Contract | Chris Andersen
 
-Known through: 2003-10-24. [Open interactive contract](anderch01.html#contract) · [Contract history](anderch01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](anderch01.html#contract) · [Contract history](anderch01.html#contract-history)
 
-Chris Andersen: camp contract. Evidence cutoff: 2003-10-24.
+Chris Andersen: voided. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 
@@ -103,9 +103,8 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 
 ### Current control and contract coverage
 
@@ -115,7 +114,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Chris Andersen |
 | Club / rights baseline | Miami Heat |
-| Control status | camp_contract |
+| Control status | voided |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -257,9 +256,8 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 
 ### Chris Andersen · existing contract; signing date not recorded
 

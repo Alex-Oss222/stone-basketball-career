@@ -2,9 +2,9 @@
 
 # Contract | Jim Jackson
 
-Known through: 2003-10-24. [Open interactive contract](jacksji01.html#contract) · [Contract history](jacksji01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](jacksji01.html#contract) · [Contract history](jacksji01.html#contract-history)
 
-Jim Jackson: free agent expiring. Evidence cutoff: 2003-10-24.
+Jim Jackson: free agent expiring. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Antonio Daniels
 
-Known through: 2003-10-24. [Open interactive contract](daniean01.html#contract) · [Contract history](daniean01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](daniean01.html#contract) · [Contract history](daniean01.html#contract-history)
 
-Antonio Daniels: free agent expiring. Evidence cutoff: 2003-10-24.
+Antonio Daniels: free agent expiring. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 

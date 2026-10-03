@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2003-10-24",
+ "as_of": "2003-10-27",
  "team": "Miami Heat",
  "total_minutes": 240,
  "purpose": "Miami's rotation for the game builder: minutes per game in rotation order; the engine's injury and foul logic changes a night's minutes.",
@@ -57,32 +57,32 @@
    "bbr_id": "jacksst02"
   },
   {
-   "player_id": "Keon Clark",
-   "position": "C",
-   "minutes": 12.0,
-   "ratings": {},
-   "bbr_id": "clarkke01"
-  },
-  {
    "player_id": "Shawn Kemp",
    "position": "C",
-   "minutes": 10.0,
+   "minutes": 12.0,
    "ratings": {},
    "bbr_id": "kempsh01"
   },
   {
-   "player_id": "Chris Andersen",
-   "position": "C",
-   "minutes": 8.0,
+   "player_id": "LaPhonso Ellis",
+   "position": "PF",
+   "minutes": 10.0,
    "ratings": {},
-   "bbr_id": "anderch01"
+   "bbr_id": "ellisla01"
   },
   {
-   "player_id": "Jumaine Jones",
+   "player_id": "Cherokee Parks",
    "position": "SF",
+   "minutes": 8.0,
+   "ratings": {},
+   "bbr_id": "parksch02"
+  },
+  {
+   "player_id": "Rasual Butler",
+   "position": "SG",
    "minutes": 4.0,
    "ratings": {},
-   "bbr_id": "jonesju01"
+   "bbr_id": "butlera01"
   }
  ]
 }

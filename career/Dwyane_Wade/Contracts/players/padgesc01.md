@@ -2,9 +2,9 @@
 
 # Contract | Scott Padgett
 
-Known through: 2003-10-24. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
 
-Scott Padgett: camp contract. Evidence cutoff: 2003-10-24.
+Scott Padgett: camp contract. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 
@@ -103,9 +103,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
+- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 
 ### Current control and contract coverage
 
@@ -257,9 +257,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
+- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 
 ### Scott Padgett · existing contract; signing date not recorded
 

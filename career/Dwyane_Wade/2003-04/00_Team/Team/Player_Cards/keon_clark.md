@@ -4,7 +4,7 @@
 **Age at assessment:** 28 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** September 30, 2003 · **Statistics through:** September 30, 2003
 
-**Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10. (register, 2003-09-30) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** October 27, 2003: camp contract of September 30, 2003 voided: he was not a free agent on that date (world data corrected); real move: trade to Utah Jazz on 2003-08-05; he returns to his real club (rule 2 no longer applies). (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/clarkke01.html#contract) · [Contract history](../../../../Contracts/players/clarkke01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

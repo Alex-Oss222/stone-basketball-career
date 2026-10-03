@@ -528,7 +528,7 @@ def team_record(games, scope):
 
 # Register statuses of players who are no longer Miami's: they leave the not-started pages (completed
 # pages keep them for the games they played).
-REGISTER_GONE = ("signed_elsewhere", "traded", "waived", "released", "renounced", "option_declined", "cut")
+REGISTER_GONE = ("signed_elsewhere", "traded", "waived", "released", "renounced", "option_declined", "cut", "voided")
 
 
 def register_names(players):

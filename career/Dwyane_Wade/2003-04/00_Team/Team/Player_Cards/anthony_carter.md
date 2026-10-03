@@ -10,7 +10,7 @@
 **Age at assessment:** 28 · **Height:** 6-1 · **Weight:** 190 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Player option exercised on June 30, 2003 (engine draw 2003-06-30-anthony_carter-player-option). (register, 2003-09-30) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Player option exercised on June 30, 2003 (engine draw 2003-06-30-anthony_carter-player-option). (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/cartean01.html#contract) · [Contract history](../../../../Contracts/players/cartean01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

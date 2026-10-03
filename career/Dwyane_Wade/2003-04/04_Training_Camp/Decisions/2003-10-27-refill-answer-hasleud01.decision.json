@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-10-27-refill-answer-hasleud01",
+ "date": "2003-10-27",
+ "question": "Does Udonis Haslem accept Miami's non-guaranteed minimum contract ($366,931, 2003-04)?",
+ "decider": "Udonis Haslem (simulated player)",
+ "options": {
+  "accept": 0.9,
+  "decline": 0.1
+ },
+ "basis": "An undrafted player with no NBA club offered an NBA roster spot (judgement 0.9); guaranteed if he is still on the roster on January 10, 2004."
+}

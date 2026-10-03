@@ -2,9 +2,9 @@
 
 # Contract | Ira Newble
 
-Known through: 2003-10-24. [Open interactive contract](newblir01.html#contract) · [Contract history](newblir01.html#contract-history)
+Known through: 2003-10-27. [Open interactive contract](newblir01.html#contract) · [Contract history](newblir01.html#contract-history)
 
-Ira Newble: free agent expiring. Evidence cutoff: 2003-10-24.
+Ira Newble: free agent expiring. Evidence cutoff: 2003-10-27.
 
 ## Current contract
 
