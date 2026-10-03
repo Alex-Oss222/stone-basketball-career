@@ -2,9 +2,9 @@
 
 # Contract | Jake Voskuhl
 
-Known through: 2003-10-05. [Open interactive contract](voskuja01.html#contract) · [Contract history](voskuja01.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](voskuja01.html#contract) · [Contract history](voskuja01.html#contract-history)
 
-Jake Voskuhl: free agent expiring. Evidence cutoff: 2003-10-05.
+Jake Voskuhl: free agent expiring. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 

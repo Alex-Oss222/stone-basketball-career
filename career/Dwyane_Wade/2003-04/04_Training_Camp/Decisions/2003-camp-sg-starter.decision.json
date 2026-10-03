@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-camp-sg-starter",
+ "date": "2003-10-24",
+ "question": "Who starts at SG: Eddie Jones or Dwyane Wade?",
+ "decider": "Miami coaching staff (evaluation draw)",
+ "options": {
+  "Eddie Jones": 0.501,
+  "Dwyane Wade": 0.499
+ },
+ "basis": "Staff scores 13.733 and 13.725 within 10%: the leader's edge over half the margin, drawn once (docs/front_office_design.md 8)."
+}

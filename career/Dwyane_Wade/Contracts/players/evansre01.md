@@ -2,9 +2,9 @@
 
 # Contract | Reggie Evans
 
-Known through: 2003-10-05. [Open interactive contract](evansre01.html#contract) · [Contract history](evansre01.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](evansre01.html#contract) · [Contract history](evansre01.html#contract-history)
 
-Reggie Evans: camp contract. Evidence cutoff: 2003-10-05.
+Reggie Evans: camp contract. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 

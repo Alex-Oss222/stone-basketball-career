@@ -2,9 +2,9 @@
 
 # Contract | Mike Batiste
 
-Known through: 2003-10-05. [Open interactive contract](batismi01.html#contract) · [Contract history](batismi01.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](batismi01.html#contract) · [Contract history](batismi01.html#contract-history)
 
-Mike Batiste: camp contract. Evidence cutoff: 2003-10-05.
+Mike Batiste: camp contract. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 

@@ -283,5 +283,28 @@
   }
  ],
  "cuts": [],
- "injuries_applied": "2003-09-30"
+ "injuries_applied": "2003-09-30",
+ "staff_scores": {
+  "Caron Butler": 12.1,
+  "Rasual Butler": 5.998,
+  "Anthony Carter": 5.554,
+  "LaPhonso Ellis": 7.231,
+  "Brian Grant": 12.357,
+  "Mike James": 8.92,
+  "Eddie Jones": 13.733,
+  "Sean Lampley": 5.324,
+  "Dwyane Wade": 13.725,
+  "Jerome Beasley": 5.5,
+  "Keon Clark": 10.77,
+  "Jumaine Jones": 9.335,
+  "Stephen Jackson": 12.135,
+  "Reggie Evans": 9.256,
+  "Dion Glover": 9.009,
+  "Shawn Kemp": 10.712,
+  "Chris Andersen": 10.532,
+  "Mike Batiste": 8.212,
+  "Scott Padgett": 10.121,
+  "Tyrone Hill": 8.034
+ },
+ "evaluated": "2003-10-24"
 }

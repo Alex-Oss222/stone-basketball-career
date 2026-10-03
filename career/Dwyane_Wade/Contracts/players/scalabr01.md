@@ -2,9 +2,9 @@
 
 # Contract | Brian Scalabrine
 
-Known through: 2003-10-05. [Open interactive contract](scalabr01.html#contract) · [Contract history](scalabr01.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](scalabr01.html#contract) · [Contract history](scalabr01.html#contract-history)
 
-Brian Scalabrine: free agent expiring. Evidence cutoff: 2003-10-05.
+Brian Scalabrine: free agent expiring. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 

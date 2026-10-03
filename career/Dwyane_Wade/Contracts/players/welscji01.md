@@ -2,9 +2,9 @@
 
 # Contract | Jiri Welsch
 
-Known through: 2003-10-05. [Open interactive contract](welscji01.html#contract) · [Contract history](welscji01.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](welscji01.html#contract) · [Contract history](welscji01.html#contract-history)
 
-Jiri Welsch: under rookie contract. Evidence cutoff: 2003-10-05.
+Jiri Welsch: under rookie contract. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 

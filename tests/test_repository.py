@@ -70,7 +70,7 @@ class InitializedCareerTests(unittest.TestCase):
             self.assertEqual(text.rfind("## Awards and honors"),positions[-1])
 
     def test_depth_chart_is_holding_chart(self):
-        depth=json.loads((TEAM/"Team/Depth_Chart/depth_chart.json").read_text(encoding="utf-8"))
+        depth=checkpoint.read("career/Dwyane_Wade/2003-04/00_Team/Team/Depth_Chart/depth_chart.json")
         self.assertFalse(depth["game_ready"])
         names={p["name"] for p in depth["unassigned_draft_rights"]}
         self.assertEqual(names,{"Dwyane Wade","Jerome Beasley"})

@@ -2,9 +2,9 @@
 
 # Contract | Danny Ferry
 
-Known through: 2003-10-05. [Open interactive contract](ferryda01.html#contract) · [Contract history](ferryda01.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](ferryda01.html#contract) · [Contract history](ferryda01.html#contract-history)
 
-Danny Ferry: expired or unresolved. Evidence cutoff: 2003-10-05.
+Danny Ferry: expired or unresolved. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 

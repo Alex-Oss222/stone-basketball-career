@@ -2,9 +2,9 @@
 
 # Contract | Lavor Postell
 
-Known through: 2003-10-05. [Open interactive contract](postela01.html#contract) · [Contract history](postela01.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](postela01.html#contract) · [Contract history](postela01.html#contract-history)
 
-Lavor Postell: free agent expiring. Evidence cutoff: 2003-10-05.
+Lavor Postell: free agent expiring. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 

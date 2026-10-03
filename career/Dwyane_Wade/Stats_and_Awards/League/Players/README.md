@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-10-05**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-10-24**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -19,7 +19,7 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Brevin Knight](knighbr01.md) | Phoenix Suns | 27 | sourced | [open](knighbr01.html) |
 | [Brian Shaw](shawbr01.md) | Los Angeles Lakers | 37 | sourced | [open](shawbr01.html) |
 | [Carlos Arroyo](arroyca01.md) | Utah Jazz | 24 | sourced | [open](arroyca01.html) |
-| [Charlie Ward](wardch01.md) | New York Knicks | 32 | sourced | [open](wardch01.html) |
+| [Charlie Ward](wardch01.md) | New York Knicks | 33 | sourced | [open](wardch01.html) |
 | [Chauncey Billups](billuch01.md) | Detroit Pistons | 27 | sourced | [open](billuch01.html) |
 | [Chris Whitney](whitnch01.md) | Washington Wizards | 32 | silhouette | [open](whitnch01.html) |
 | [Chucky Atkins](atkinch01.md) | Detroit Pistons | 29 | sourced | [open](atkinch01.html) |
@@ -41,18 +41,18 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Jacque Vaughn](vaughja01.md) | Atlanta Hawks | 28 | sourced | [open](vaughja01.html) |
 | [Jamaal Tinsley](tinslja01.md) | Indiana Pacers | 25 | sourced | [open](tinslja01.html) |
 | [Jamal Crawford](crawfja01.md) | Chicago Bulls | 23 | sourced | [open](crawfja01.html) |
-| [Jannero Pargo](pargoja01.md) | Los Angeles Lakers | 23 | sourced | [open](pargoja01.html) |
+| [Jannero Pargo](pargoja01.md) | Los Angeles Lakers | 24 | sourced | [open](pargoja01.html) |
 | [Jason Kidd](kiddja01.md) | New Jersey Nets | 30 | sourced | [open](kiddja01.html) |
 | [Jason Terry](terryja01.md) | Atlanta Hawks | 26 | sourced | [open](terryja01.html) |
 | [Jason Williams](willija02.md) | Memphis Grizzlies | 27 | sourced | [open](willija02.html) |
 | [Jay Williams](willija03.md) | Chicago Bulls | 22 | sourced | [open](willija03.html) |
-| [Jeff McInnis](mcinnje01.md) | Portland Trail Blazers | 28 | sourced | [open](mcinnje01.html) |
+| [Jeff McInnis](mcinnje01.md) | Portland Trail Blazers | 29 | sourced | [open](mcinnje01.html) |
 | [John Salmons](salmojo01.md) | Philadelphia 76ers | 23 | sourced | [open](salmojo01.html) |
 | [John Stockton](stockjo01.md) | Utah Jazz | 41 | sourced | [open](stockjo01.html) |
-| [Juan Dixon](dixonju01.md) | Washington Wizards | 24 | sourced | [open](dixonju01.html) |
+| [Juan Dixon](dixonju01.md) | Washington Wizards | 25 | sourced | [open](dixonju01.html) |
 | [Junior Harrington](harriju01.md) | Denver Nuggets | 23 | silhouette | [open](harriju01.html) |
 | [Kareem Rush](rushka01.md) | Los Angeles Lakers | 22 | sourced | [open](rushka01.html) |
-| [Kenny Anderson](anderke01.md) | Indiana Pacers | 32 | sourced | [open](anderke01.html) |
+| [Kenny Anderson](anderke01.md) | Indiana Pacers | 33 | sourced | [open](anderke01.html) |
 | [Kevin Ollie](ollieke01.md) | Cleveland Cavaliers | 30 | sourced | [open](ollieke01.html) |
 | [Kirk Hinrich](hinriki01.md) | Chicago Bulls (draft rights) | 22 | sourced | [open](hinriki01.html) |
 | [Larry Hughes](hughela01.md) | Washington Wizards | 24 | sourced | [open](hughela01.html) |
@@ -86,7 +86,7 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [T.J. Ford](fordtj01.md) | Milwaukee Bucks (draft rights) | 20 | sourced | [open](fordtj01.html) |
 | [Tierre Brown](brownti01.md) | Cleveland Cavaliers | 24 | silhouette | [open](brownti01.html) |
 | [Tim Hardaway](hardati01.md) | Indiana Pacers | 37 | sourced | [open](hardati01.html) |
-| [Tony Delk](delkto01.md) | Boston Celtics | 29 | sourced | [open](delkto01.html) |
+| [Tony Delk](delkto01.md) | Dallas Mavericks | 29 | sourced | [open](delkto01.html) |
 | [Tony Parker](parketo01.md) | San Antonio Spurs | 21 | sourced | [open](parketo01.html) |
 | [Travis Best](besttr01.md) | Dallas Mavericks | 31 | sourced | [open](besttr01.html) |
 | [Troy Bell](belltr01.md) | Memphis Grizzlies (draft rights) | 22 | silhouette | [open](belltr01.html) |
@@ -120,13 +120,13 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Darvin Ham](hamda01.md) | Detroit Pistons | 30 | sourced | [open](hamda01.html) |
 | [David Wesley](wesleda01.md) | New Orleans Hornets | 32 | sourced | [open](wesleda01.html) |
 | [DeShawn Stevenson](stevede01.md) | Utah Jazz | 22 | sourced | [open](stevede01.html) |
-| [Dion Glover](glovedi01.md) | Miami Heat | 24 | silhouette | [open](glovedi01.html) |
+| [Dion Glover](glovedi01.md) | Miami Heat | 25 | silhouette | [open](glovedi01.html) |
 | [Doug Christie](chrisdo01.md) | Sacramento Kings | 33 | sourced | [open](chrisdo01.html) |
 | [Dwyane Wade](wadedw01.md) | Miami Heat (draft rights) | 19 | sourced | [open](wadedw01.html) |
 | [Eddie House](houseed01.md) | Los Angeles Clippers | 25 | sourced | [open](houseed01.html) |
 | [Eric Piatkowski](piatker01.md) | Houston Rockets | 33 | sourced | [open](piatker01.html) |
 | [Erick Strickland](stricer01.md) | Milwaukee Bucks | 29 | silhouette | [open](stricer01.html) |
-| [Fred Hoiberg](hoibefr01.md) | Minnesota Timberwolves | 30 | sourced | [open](hoibefr01.html) |
+| [Fred Hoiberg](hoibefr01.md) | Minnesota Timberwolves | 31 | sourced | [open](hoibefr01.html) |
 | [George Lynch](lynchge01.md) | New Orleans Hornets | 33 | silhouette | [open](lynchge01.html) |
 | [Greg Buckner](buckngr01.md) | Philadelphia 76ers | 27 | silhouette | [open](buckngr01.html) |
 | [Jason Richardson](richaja01.md) | Golden State Warriors | 22 | sourced | [open](richaja01.html) |
@@ -150,7 +150,7 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Manu Ginobili](ginobma01.md) | San Antonio Spurs | 26 | sourced | [open](ginobma01.html) |
 | [Michael Redd](reddmi01.md) | Milwaukee Bucks | 24 | sourced | [open](reddmi01.html) |
 | [Nick Van Exel](vanexni01.md) | Golden State Warriors | 31 | sourced | [open](vanexni01.html) |
-| [Paul Pierce](piercpa01.md) | Boston Celtics | 25 | sourced | [open](piercpa01.html) |
+| [Paul Pierce](piercpa01.md) | Boston Celtics | 26 | sourced | [open](piercpa01.html) |
 | [Raja Bell](bellra01.md) | Utah Jazz | 27 | sourced | [open](bellra01.html) |
 | [Rasual Butler](butlera01.md) | Miami Heat | 24 | sourced | [open](butlera01.html) |
 | [Ray Allen](allenra02.md) | Seattle SuperSonics | 28 | sourced | [open](allenra02.html) |
@@ -169,7 +169,7 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Tito Maddox](maddoti01.md) | Houston Rockets | 22 | silhouette | [open](maddoti01.html) |
 | [Tracy McGrady](mcgratr01.md) | Orlando Magic | 24 | sourced | [open](mcgratr01.html) |
 | [Travis Hansen](hansetr01.md) | Atlanta Hawks (draft rights) | 25 | sourced | [open](hansetr01.html) |
-| [Trenton Hassell](hassetr01.md) | Chicago Bulls | 24 | sourced | [open](hassetr01.html) |
+| [Trenton Hassell](hassetr01.md) | Free agent | 24 | sourced | [open](hassetr01.html) |
 | [Vince Carter](cartevi01.md) | Toronto Raptors | 26 | sourced | [open](cartevi01.html) |
 | [Vincent Yarbrough](yarbrvi01.md) | Denver Nuggets | 22 | silhouette | [open](yarbrvi01.html) |
 | [Voshon Lenard](lenarvo01.md) | Denver Nuggets | 30 | silhouette | [open](lenarvo01.html) |
@@ -197,9 +197,9 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Chris Jefferies](jeffech01.md) | Toronto Raptors | 23 | silhouette | [open](jeffech01.html) |
 | [Chris Owens](owensch01.md) | Memphis Grizzlies | 24 | sourced | [open](owensch01.html) |
 | [Corliss Williamson](willico02.md) | Detroit Pistons | 29 | sourced | [open](willico02.html) |
-| [Danny Ferry](ferryda01.md) | Indiana Pacers | 36 | sourced | [open](ferryda01.html) |
-| [Darius Miles](milesda01.md) | Cleveland Cavaliers | 21 | sourced | [open](milesda01.html) |
-| [Desmond Mason](masonde01.md) | Milwaukee Bucks | 25 | sourced | [open](masonde01.html) |
+| [Danny Ferry](ferryda01.md) | Indiana Pacers | 37 | sourced | [open](ferryda01.html) |
+| [Darius Miles](milesda01.md) | Cleveland Cavaliers | 22 | sourced | [open](milesda01.html) |
+| [Desmond Mason](masonde01.md) | Milwaukee Bucks | 26 | sourced | [open](masonde01.html) |
 | [Devean George](georgde01.md) | Los Angeles Lakers | 26 | sourced | [open](georgde01.html) |
 | [Donnell Harvey](harvedo01.md) | Orlando Magic | 23 | silhouette | [open](harvedo01.html) |
 | [Eddie Robinson](robined01.md) | Chicago Bulls | 27 | sourced | [open](robined01.html) |
@@ -207,7 +207,7 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Eric Williams](willier01.md) | Boston Celtics | 31 | silhouette | [open](willier01.html) |
 | [Gary Trent](trentga01.md) | Minnesota Timberwolves | 29 | silhouette | [open](trentga01.html) |
 | [Gerald Wallace](wallage01.md) | Sacramento Kings | 21 | sourced | [open](wallage01.html) |
-| [Glen Rice](ricegl01.md) | Utah Jazz | 36 | sourced | [open](ricegl01.html) |
+| [Glen Rice](ricegl01.md) | Los Angeles Clippers | 36 | sourced | [open](ricegl01.html) |
 | [Glenn Robinson](robingl01.md) | Philadelphia 76ers | 30 | sourced | [open](robingl01.html) |
 | [Gordan Giricek](giricgo01.md) | Orlando Magic | 26 | sourced | [open](giricgo01.html) |
 | [Hedo Turkoglu](turkohe01.md) | San Antonio Spurs | 24 | sourced | [open](turkohe01.html) |
@@ -218,8 +218,8 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [James Posey](poseyja01.md) | Memphis Grizzlies | 26 | sourced | [open](poseyja01.html) |
 | [Jarvis Hayes](hayesja01.md) | Washington Wizards (draft rights) | 22 | sourced | [open](hayesja01.html) |
 | [Jason Kapono](kaponja01.md) | Cleveland Cavaliers (draft rights) | 22 | sourced | [open](kaponja01.html) |
-| [Jim Jackson](jacksji01.md) | Houston Rockets | 32 | sourced | [open](jacksji01.html) |
-| [Jiri Welsch](welscji01.md) | Dallas Mavericks | 23 | sourced | [open](welscji01.html) |
+| [Jim Jackson](jacksji01.md) | Houston Rockets | 33 | sourced | [open](jacksji01.html) |
+| [Jiri Welsch](welscji01.md) | Boston Celtics | 23 | sourced | [open](welscji01.html) |
 | [Joe Smith](smithjo02.md) | Milwaukee Bucks | 28 | sourced | [open](smithjo02.html) |
 | [Jonathan Bender](bendejo01.md) | Indiana Pacers | 22 | silhouette | [open](bendejo01.html) |
 | [Josh Howard](howarjo01.md) | Dallas Mavericks (draft rights) | 23 | sourced | [open](howarjo01.html) |
@@ -230,13 +230,13 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [LeBron James](jamesle01.md) | Cleveland Cavaliers (draft rights) | 18 | sourced | [open](jamesle01.html) |
 | [Lee Nailon](nailole01.md) | Atlanta Hawks | 28 | silhouette | [open](nailole01.html) |
 | [Luke Walton](waltolu01.md) | Los Angeles Lakers (draft rights) | 23 | sourced | [open](waltolu01.html) |
-| [Marko Jaric](jaricma01.md) | Los Angeles Clippers | 24 | sourced | [open](jaricma01.html) |
+| [Marko Jaric](jaricma01.md) | Los Angeles Clippers | 25 | sourced | [open](jaricma01.html) |
 | [Matt Harpring](harprma01.md) | Utah Jazz | 27 | sourced | [open](harprma01.html) |
 | [Michael Curry](currymi01.md) | Toronto Raptors | 35 | silhouette | [open](currymi01.html) |
 | [Michael Finley](finlemi01.md) | Dallas Mavericks | 30 | sourced | [open](finlemi01.html) |
 | [Michael Jordan](jordami01.md) | Washington Wizards | 40 | sourced | [open](jordami01.html) |
 | [Mike Dunleavy](dunlemi02.md) | Golden State Warriors | 23 | sourced | [open](dunlemi02.html) |
-| [Monty Williams](willimo01.md) | Philadelphia 76ers | 31 | sourced | [open](willimo01.html) |
+| [Monty Williams](willimo01.md) | Philadelphia 76ers | 32 | sourced | [open](willimo01.html) |
 | [Morris Peterson](petermo01.md) | Toronto Raptors | 26 | sourced | [open](petermo01.html) |
 | [Ndudi Ebi](ebind01.md) | Minnesota Timberwolves (draft rights) | 19 | sourced | [open](ebind01.html) |
 | [Nikoloz Tskitishvili](tskitni01.md) | Denver Nuggets | 20 | sourced | [open](tskitni01.html) |
@@ -280,7 +280,7 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | Player | Club on card date | Age | Photo | Interactive |
 | --- | --- | --- | --- | --- |
 | [Amar'e Stoudemire](stoudam01.md) | Phoenix Suns | 20 | sourced | [open](stoudam01.html) |
-| [Antoine Walker](walkean02.md) | Boston Celtics | 27 | sourced | [open](walkean02.html) |
+| [Antoine Walker](walkean02.md) | Dallas Mavericks | 27 | sourced | [open](walkean02.html) |
 | [Austin Croshere](croshau01.md) | Indiana Pacers | 28 | sourced | [open](croshau01.html) |
 | [Boris Diaw](diawbo01.md) | Atlanta Hawks (draft rights) | 21 | sourced | [open](diawbo01.html) |
 | [Brandon Hunter](huntebr01.md) | Boston Celtics (draft rights) | 22 | sourced | [open](huntebr01.html) |
@@ -289,7 +289,7 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Brian Skinner](skinnbr01.md) | Milwaukee Bucks | 27 | sourced | [open](skinnbr01.html) |
 | [Carlos Boozer](boozeca01.md) | Cleveland Cavaliers | 21 | sourced | [open](boozeca01.html) |
 | [Chris Bosh](boshch01.md) | Toronto Raptors (draft rights) | 19 | sourced | [open](boshch01.html) |
-| [Chris Mills](millsch01.md) | Dallas Mavericks | 33 | silhouette | [open](millsch01.html) |
+| [Chris Mills](millsch01.md) | Boston Celtics | 33 | silhouette | [open](millsch01.html) |
 | [Chris Webber](webbech01.md) | Sacramento Kings | 30 | sourced | [open](webbech01.html) |
 | [Chris Wilcox](wilcoch01.md) | Los Angeles Clippers | 21 | sourced | [open](wilcoch01.html) |
 | [Christian Laettner](laettch01.md) | Washington Wizards | 34 | sourced | [open](laettch01.html) |
@@ -305,12 +305,12 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Elton Brand](brandel01.md) | Los Angeles Clippers | 24 | sourced | [open](brandel01.html) |
 | [Grant Long](longgr01.md) | Boston Celtics | 37 | silhouette | [open](longgr01.html) |
 | [Jason Caffey](caffeja01.md) | Milwaukee Bucks | 30 | silhouette | [open](caffeja01.html) |
-| [Jermaine O'Neal](onealje01.md) | Indiana Pacers | 24 | sourced | [open](onealje01.html) |
+| [Jermaine O'Neal](onealje01.md) | Indiana Pacers | 25 | sourced | [open](onealje01.html) |
 | [Jerome Beasley](beaslje01.md) | Miami Heat (draft rights) | 23 | sourced | [open](beaslje01.html) |
 | [Jerome Williams](willije01.md) | Toronto Raptors | 30 | sourced | [open](willije01.html) |
 | [Juwan Howard](howarju01.md) | Orlando Magic | 30 | sourced | [open](howarju01.html) |
 | [Karl Malone](malonka01.md) | Los Angeles Lakers | 40 | sourced | [open](malonka01.html) |
-| [Keith Van Horn](vanhoke01.md) | New York Knicks | 27 | sourced | [open](vanhoke01.html) |
+| [Keith Van Horn](vanhoke01.md) | New York Knicks | 28 | sourced | [open](vanhoke01.html) |
 | [Kenny Thomas](thomake01.md) | Philadelphia 76ers | 26 | sourced | [open](thomake01.html) |
 | [Kenyon Martin](martike01.md) | New Jersey Nets | 25 | sourced | [open](martike01.html) |
 | [Kevin Garnett](garneke01.md) | Minnesota Timberwolves | 27 | sourced | [open](garneke01.html) |
@@ -331,7 +331,7 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Michael Sweetney](sweetmi01.md) | New York Knicks (draft rights) | 20 | silhouette | [open](sweetmi01.html) |
 | [Mike Batiste](batismi01.md) | Miami Heat | 25 | sourced | [open](batismi01.html) |
 | [Nick Collison](collini01.md) | Seattle SuperSonics (draft rights) | 22 | sourced | [open](collini01.html) |
-| [P.J. Brown](brownpj01.md) | New Orleans Hornets | 33 | sourced | [open](brownpj01.html) |
+| [P.J. Brown](brownpj01.md) | New Orleans Hornets | 34 | sourced | [open](brownpj01.html) |
 | [Pat Garrity](garripa01.md) | Orlando Magic | 27 | sourced | [open](garripa01.html) |
 | [Pau Gasol](gasolpa01.md) | Memphis Grizzlies | 23 | sourced | [open](gasolpa01.html) |
 | [Qyntel Woods](woodsqy01.md) | Portland Trail Blazers | 22 | sourced | [open](woodsqy01.html) |
@@ -390,7 +390,7 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Darko Milicic](milicda01.md) | Detroit Pistons (draft rights) | 18 | sourced | [open](milicda01.html) |
 | [David Robinson](robinda01.md) | San Antonio Spurs | 38 | sourced | [open](robinda01.html) |
 | [Derrick Coleman](colemde01.md) | Philadelphia 76ers | 36 | sourced | [open](colemde01.html) |
-| [Dikembe Mutombo](mutomdi01.md) | New Jersey Nets | 37 | sourced | [open](mutomdi01.html) |
+| [Dikembe Mutombo](mutomdi01.md) | New York Knicks | 37 | sourced | [open](mutomdi01.html) |
 | [Eddy Curry](curryed01.md) | Chicago Bulls | 20 | sourced | [open](curryed01.html) |
 | [Efthimios Rentzias](rentzef01.md) | Philadelphia 76ers | 27 | sourced | [open](rentzef01.html) |
 | [Erick Dampier](dampier01.md) | Golden State Warriors | 28 | sourced | [open](dampier01.html) |
@@ -401,13 +401,13 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Jake Tsakalidis](tsakaja01.md) | Memphis Grizzlies | 24 | sourced | [open](tsakaja01.html) |
 | [Jake Voskuhl](voskuja01.md) | Phoenix Suns | 25 | sourced | [open](voskuja01.html) |
 | [Jamaal Magloire](magloja01.md) | New Orleans Hornets | 25 | sourced | [open](magloja01.html) |
-| [James Lang](langja01.md) | New Orleans Hornets (draft rights) | 19 | sourced | [open](langja01.html) |
+| [James Lang](langja01.md) | New Orleans Hornets (draft rights) | 20 | sourced | [open](langja01.html) |
 | [Jason Collins](collija04.md) | New Jersey Nets | 24 | sourced | [open](collija04.html) |
 | [Jeff Foster](fosteje01.md) | Indiana Pacers | 26 | sourced | [open](fosteje01.html) |
 | [Jelani McCoy](mccoyje01.md) | Toronto Raptors | 25 | sourced | [open](mccoyje01.html) |
 | [Jerome James](jamesje01.md) | Seattle SuperSonics | 27 | sourced | [open](jamesje01.html) |
 | [Jerome Moiso](moisoje01.md) | Toronto Raptors | 25 | sourced | [open](moisoje01.html) |
-| [Joel Przybilla](przybjo01.md) | Milwaukee Bucks | 23 | sourced | [open](przybjo01.html) |
+| [Joel Przybilla](przybjo01.md) | Milwaukee Bucks | 24 | sourced | [open](przybjo01.html) |
 | [John Amaechi](amaecjo01.md) | Houston Rockets | 32 | sourced | [open](amaecjo01.html) |
 | [Kelvin Cato](catoke01.md) | Houston Rockets | 29 | sourced | [open](catoke01.html) |
 | [Ken Johnson](johnske03.md) | Free agent | 25 | sourced | [open](johnske03.html) |
@@ -430,7 +430,7 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Nene](hilarne01.md) | Denver Nuggets | 21 | sourced | [open](hilarne01.html) |
 | [Pat Burke](burkepa01.md) | Orlando Magic | 29 | sourced | [open](burkepa01.html) |
 | [Predrag Drobnjak](drobnpr01.md) | Los Angeles Clippers | 27 | silhouette | [open](drobnpr01.html) |
-| [Raef LaFrentz](lafrera01.md) | Dallas Mavericks | 27 | sourced | [open](lafrera01.html) |
+| [Raef LaFrentz](lafrera01.md) | Boston Celtics | 27 | sourced | [open](lafrera01.html) |
 | [Rasho Nesterovic](nestera01.md) | San Antonio Spurs | 27 | sourced | [open](nestera01.html) |
 | [Remon van de Hare](vandera01.md) | Toronto Raptors (draft rights) | 21 | silhouette | [open](vandera01.html) |
 | [Robert Traylor](traylro01.md) | New Orleans Hornets | 26 | sourced | [open](traylro01.html) |
@@ -450,7 +450,7 @@ Card date: **2003-10-05**. 407 registry players, one Markdown card and one inter
 | [Travis Knight](knightr01.md) | New York Knicks | 29 | silhouette | [open](knightr01.html) |
 | [Vitaly Potapenko](potapvi01.md) | Seattle SuperSonics | 28 | sourced | [open](potapvi01.html) |
 | [Vlade Divac](divacvl01.md) | Sacramento Kings | 35 | sourced | [open](divacvl01.html) |
-| [Vladimir Stepania](stepavl01.md) | Free agent | 27 | silhouette | [open](stepavl01.html) |
+| [Vladimir Stepania](stepavl01.md) | Portland Trail Blazers | 27 | silhouette | [open](stepavl01.html) |
 | [Wang Zhizhi](zhizhwa01.md) | Los Angeles Clippers | 26 | sourced | [open](zhizhwa01.html) |
 | [Xue Yuyang](yuyanxu01.md) | Denver Nuggets (draft rights) | 21 | silhouette | [open](yuyanxu01.html) |
 | [Yao Ming](mingya01.md) | Houston Rockets | 23 | sourced | [open](mingya01.html) |

@@ -1,0 +1,21 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "team": "Miami Heat",
+ "as_of": "2003-10-24",
+ "purpose": "Dated staff grades of defense for players without a DBPM record. The engine reads a grade for games on or after its date as the player's defensive value (points per 100 possessions) and as his perimeter_defense rating; a played game keeps the inputs it was played with.",
+ "players": [
+  {
+   "player": "Dwyane Wade",
+   "bbr_id": null,
+   "grade": 45,
+   "from": "2003-10-24",
+   "defense": -0.5,
+   "evidence": [
+    "profile sections 6 and 14: base 45 (length and strength for guard matchups, weak-side blocks and deflections; loses cutters, leaves shooters to help, caught on screens)",
+    "0 steals and 1 blocks in 23 preseason minutes (1.56 per 36 against 1.6)"
+   ],
+   "basis": "grade 50 is an average defender; 1.0 point per 100 possessions per ten grade points (runtime/camp.py)"
+  }
+ ]
+}

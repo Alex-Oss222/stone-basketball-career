@@ -2,9 +2,9 @@
 
 # Contract | Chris Andersen
 
-Known through: 2003-10-05. [Open interactive contract](anderch01.html#contract) · [Contract history](anderch01.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](anderch01.html#contract) · [Contract history](anderch01.html#contract-history)
 
-Chris Andersen: camp contract. Evidence cutoff: 2003-10-05.
+Chris Andersen: camp contract. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 

@@ -1,0 +1,12 @@
+{
+ "date": "2003-10-24",
+ "decider": "Miami coaching staff (evaluation draw)",
+ "event_id": "2003-camp-pf-starter",
+ "kind": "decision",
+ "options": {
+  "Reggie Evans": 0.286,
+  "Scott Padgett": 0.714
+ },
+ "outcome": "Scott Padgett",
+ "question": "Who starts at PF: Scott Padgett or Reggie Evans?"
+}

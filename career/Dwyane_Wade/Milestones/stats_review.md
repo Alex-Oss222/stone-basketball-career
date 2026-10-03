@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2003-10-05 · Miami Heat · inactive
+Career date: 2003-10-24 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-0 closed game records in 2003-04 through 2003-10-05. Competitions remain separate.
+7 closed game records in 2003-04 through 2003-10-24. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -14,6 +14,7 @@ Activation: A declared, closed game result supplies observed participation and t
 
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
 | regular | 0 | N/A | N/A | N/A | N/A | N/A | Complete |
 
 ## Pooled shooting
@@ -22,13 +23,20 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
+| preseason | N/A | N/A | N/A | N/A | N/A | N/A |
 | regular | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ## Closed source games
 
 | Date | Competition | Opponent | Participation | Source |
 | --- | --- | --- | --- | --- |
-| No dated record | N/A | N/A | N/A | N/A |
+| 2003-10-07 | preseason | Philadelphia 76ers | Played | [Closed game](../2003-04/05_Preseason/Game_1.md) |
+| 2003-10-10 | preseason | Atlanta Hawks | Played | [Closed game](../2003-04/05_Preseason/Game_2.md) |
+| 2003-10-11 | preseason | Orlando Magic | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_3.md) |
+| 2003-10-14 | preseason | San Antonio Spurs | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_4.md) |
+| 2003-10-16 | preseason | Atlanta Hawks | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_5.md) |
+| 2003-10-17 | preseason | Detroit Pistons | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_6.md) |
+| 2003-10-21 | preseason | Memphis Grizzlies | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_7.md) |
 
 ## Evidence available for decisions
 
@@ -60,17 +68,24 @@ The next declared, closed game result or a chosen completed-period review.
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/05_Preseason/note.md)
+- [Owning event](../2003-04/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
 - [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
-- [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
+- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/rotation.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/mike_james.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/vladimir_stepania.json)
+- [Closed game](../2003-04/05_Preseason/Game_1.md)
+- [Closed game](../2003-04/05_Preseason/Game_2.md)
+- [Closed game](../2003-04/05_Preseason/Game_3.md)
+- [Closed game](../2003-04/05_Preseason/Game_4.md)
+- [Closed game](../2003-04/05_Preseason/Game_5.md)
+- [Closed game](../2003-04/05_Preseason/Game_6.md)
+- [Closed game](../2003-04/05_Preseason/Game_7.md)
 - [Dated milestone working records and player replies](../milestones.json)

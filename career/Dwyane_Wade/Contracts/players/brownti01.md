@@ -2,9 +2,9 @@
 
 # Contract | Tierre Brown
 
-Known through: 2003-10-05. [Open interactive contract](brownti01.html#contract) · [Contract history](brownti01.html#contract-history)
+Known through: 2003-10-24. [Open interactive contract](brownti01.html#contract) · [Contract history](brownti01.html#contract-history)
 
-Tierre Brown: free agent expiring. Evidence cutoff: 2003-10-05.
+Tierre Brown: free agent expiring. Evidence cutoff: 2003-10-24.
 
 ## Current contract
 

@@ -135,10 +135,12 @@ def ordered_players(camp, depth, values, on):
 def rotation_players(camp, depth, values, on, template, grades=None, game_index=0):
     """Miami's explicit `players` list for a game request: twelve actives, minutes summing to 240.
 
-    The core (starters and the first reserves) dresses every game; the remaining spots rotate through
-    the rest of the camp roster by game, so every invitee is seen in the preseason."""
+    The core (starters and the first reserves) and every signed roster player dress every game, so a
+    rookie without a 2002-03 line is never rotated out by his missing production value; the remaining
+    spots rotate through the camp invitees by game, so every invitee is seen in the preseason."""
     order = ordered_players(camp, depth, values, on)
-    core, tail = order[:CORE_SIZE], order[CORE_SIZE:]
+    core = order[:CORE_SIZE] + [p for p in order[CORE_SIZE:] if p.get("kind") != "invite"]
+    tail = [p for p in order[CORE_SIZE:] if p.get("kind") == "invite"]
     if tail:
         shift = game_index % len(tail)
         tail = tail[shift:] + tail[:shift]
