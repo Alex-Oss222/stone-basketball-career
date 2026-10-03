@@ -65,6 +65,35 @@ class FrontOffice:
             rows.append((p["player"], amount, kind, status))
         return total, rows
 
+    def committed_in(self, season):
+        """Salary Miami has already committed for a later season: signed amounts and options as scheduled.
+
+        Draft holds, camp contracts and players Miami no longer holds are left out. A later season's cap
+        is not known on the date, so the check against it uses the owner's payroll ceiling, not a guess."""
+        total = 0
+        for p in self.sheet["players"]:
+            amount, kind = p["schedule"].get(season), (p.get("amount_kind") or {}).get(season, "contract_salary")
+            if not amount or kind == "draft_hold" or p["status"] == "camp_contract":
+                continue
+            if any(w in p["status"] for w in ("declined", "renounced", "released", "traded", "signed_elsewhere", "unsigned")):
+                continue
+            total += amount
+        return total
+
+    def future_fit(self, schedule):
+        """Seasons of a proposed schedule that fit under the payroll ceiling with what is already committed.
+
+        Returns how many seasons, counted from the first, fit; the first season is checked by the plan's
+        cap and budget room, so this looks only at the later ones (the multi-season payroll rule)."""
+        start = int(SEASON[:4])
+        fits = 1
+        for i, amount in enumerate(schedule[1:], start=1):
+            season = f"{start + i}-{str(start + i + 1)[-2:]}"
+            if self.committed_in(season) + amount > self.payroll_ceiling():
+                break
+            fits += 1
+        return fits
+
     def holds(self):
         """Cap holds of unrenounced free agents (rights file), priced where the file prices them."""
         total, rows = 0, []
@@ -338,6 +367,12 @@ class FrontOffice:
             years = min(max(3, years), 7)    # at least three non-option seasons, at most the Bird length (1999 rules)
         raise_share = RAISE["bird" if route in ("bird", "early_bird", "sign_and_trade") else "other"]
         schedule = [int(round(first * (1 + raise_share * i))) for i in range(years)]
+        fits = self.future_fit(schedule)          # later seasons stay under the payroll ceiling too
+        if fits < years:
+            minimum = 3 if (restricted or route == "sign_and_trade") else 1
+            if fits < minimum:
+                return None                        # no legal length fits the later payrolls: Miami walks away
+            years, schedule = fits, schedule[:fits]
         last_guaranteed = not (years >= 4 and round_no == 1)
         guaranteed = sum(schedule) if last_guaranteed else sum(schedule[:-1])
         return {"first_year": first, "years": years, "schedule": schedule, "guaranteed": guaranteed,

@@ -42,8 +42,21 @@ def write_minimal_rotation(root, grade_from="2003-10-24"):
         if e["player"] in names:
             e["until"] = None
     holdings_path.write_text(json.dumps(holdings, indent=1) + "\n")
+    # ...and that they are signed: only players under a signed contract dress (camp.playable).
+    # The cut to fifteen this fixture skips: the rotation plus the next men on the depth chart stay signed.
+    dressed = [p["player_id"] for p in rotation["players"]]
+    keep = set((dressed + [n for n in names if n not in dressed])[:camp.ROSTER_MAX])
+    for p in roster["players"]:
+        if p["name"] in keep and not camp.playable(p.get("status")):
+            p["status"] = "under_contract"
+        elif p["name"] not in keep and camp.playable(p.get("status")):
+            p["status"] = "released"
+    (root / TEAM / "Roster/roster.json").write_text(json.dumps(roster, indent=1) + "\n")
     (root / TEAM / "Depth_Chart/depth_chart.json").write_text(json.dumps(depth, indent=1) + "\n")
     (root / TEAM / "Depth_Chart/rotation.json").write_text(json.dumps(rotation, indent=1) + "\n")
+    if (root / "library").is_dir():
+        from runtime.write_back import write_statistics_pages
+        write_statistics_pages(root)          # the not-started team pages follow the register
     grade = camp.wade_grade({})
     (root / TEAM / "defensive_grades.json").write_text(json.dumps(camp.grades_record([grade], grade_from), indent=1) + "\n")
     return rotation

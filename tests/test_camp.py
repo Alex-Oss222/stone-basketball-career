@@ -121,7 +121,7 @@ class CampRunTests(unittest.TestCase):
         self.assertEqual(CampRun(root).write("2003-10-27"), [])
         data = json.loads((root / camp.CAMP_ROSTER).read_text())
         self.assertEqual(data["status"], "closed")
-        self.assertLessEqual(sum(1 for p in data["players"] if p["status"] != "released"), camp.ROSTER_MAX)
+        self.assertLessEqual(sum(1 for p in data["players"] if p["status"] != "released" and camp.playable(p["status"])), camp.ROSTER_MAX)
         self.assertTrue((root / camp.PROMISES).exists())
         self.assertEqual(holdings_errors(root), [])
         self.assertEqual(ledger_errors(root), [])

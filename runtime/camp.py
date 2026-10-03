@@ -33,6 +33,7 @@ STATS_PATH = Path("library/2003/league/nba_2002_03_player_stats.json")
 
 # Judgement constants, named so they can be revisited.
 CAMP_MAX, ROSTER_MAX = 20, 15
+CUT_DAY_FALLBACK = "2003-10-27"                          # the 2003 cut date; later seasons read the calendar
 INVITE_MIN_VALUE = REPLACEMENT_EFF_PER_GAME + 1.0      # production value worth a camp look
 INVITE_YOUNG_AGE = 25                                   # a young player is worth a look at replacement value
 CAMP_INJURY_BASE, CAMP_INJURY_PER_YEAR_OVER_30 = 0.03, 0.005
@@ -347,15 +348,28 @@ def grades_record(entries, on):
 
 
 # -- cut and promises ------------------------------------------------------------------------------
-def cut_list(camp, scores, front_office):
-    """Players to release, lowest score and fit first, until the roster is ROSTER_MAX (non-guaranteed first)."""
+# Register statuses of players who cannot dress for Miami: not signed, or no longer Miami's.
+NOT_PLAYABLE = ("free_agent", "unsigned", "released", "waived", "traded", "renounced", "signed_elsewhere", "declined", "cut")
+
+
+def playable(status):
+    """A register status that lets a player dress for Miami: a signed contract Miami still holds."""
+    return bool(status) and not any(word in status for word in NOT_PLAYABLE)
+
+
+def cut_list(camp, scores, front_office, protected=()):
+    """Players to release until the signed roster is ROSTER_MAX: non-guaranteed first, lowest score and fit first.
+
+    Unsigned draft rights do not count toward the fifteen and are never released here: the rights stay
+    Miami's. Players in `protected` (the staff's written rotation) are released last, so a cut never
+    removes a player the staff has just given minutes."""
     needs = front_office.needs()
-    keep = [p for p in camp["players"] if p["status"] != "released"]
+    keep = [p for p in camp["players"] if p["status"] != "released" and playable(p.get("status", "camp_contract"))]
     if len(keep) <= ROSTER_MAX:
         return []
     def rank(p):
         guaranteed = p["kind"] == "roster"
-        return (guaranteed, scores[p["player"]] * (0.5 + front_office.fit(p["positions"][0], needs)))
+        return (p["player"] in protected, guaranteed, scores[p["player"]] * (0.5 + front_office.fit(p["positions"][0], needs)))
     ordered = sorted(keep, key=rank)
     return [p["player"] for p in ordered[:len(keep) - ROSTER_MAX]]
 

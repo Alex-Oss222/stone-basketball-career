@@ -108,6 +108,16 @@ The cap sheet (`00_Team/Finances/finance.json`, `contract_schedules.json`, `free
 
 `team_config.json` gains the owner's **payroll ceiling** for the season and a **tax tolerance** (whether the club will pay the dollar-for-dollar tax at all). For 2003, Miami's evidence is a club cutting payroll with about $7 million of room before June 30 (*judgement*: ceiling at the projected tax line, no tax).
 
+### 5.2a Standing roster and payroll rules
+
+These rules run without anyone's input, and validation checks them every time it runs.
+
+- **Later seasons.** Every offer's later seasons must fit under the owner's payroll ceiling, together with what Miami has already committed for that season (`FrontOffice.future_fit`). Later caps are not known on the date, so the ceiling is the yardstick, not a guessed cap. If only a shorter deal fits, the offer shrinks to it. If no legal length fits, Miami walks away; a sign-and-trade and an offer sheet need three seasons.
+- **Who may dress.** Only players Miami holds under a signed contract may dress (`camp.playable`). Unsigned draft rights, released, traded and departed players are out. A rotation player who is no longer playable is replaced by the next playable man on the depth chart.
+- **The cut.** The cut to fifteen counts signed players only. It releases camp invites before guaranteed players and the staff's rotation last.
+- **Validation.** Validation fails if a scheduled Miami game dresses a player who is not playable, or if Miami carries more than fifteen signed players after the cut.
+- **No routine renouncing.** Holds are renounced only when they buy room for a target. Over the cap, a hold costs nothing and keeps Bird rights, so the front office does not renounce routinely.
+
 ### 5.3 Needs
 
 From the depth chart: minutes available by position after the players under contract, the quality of the incumbent at each position (2002-03 production value), and the coach's stated structure (Spoelstra's preferences are unassessed until camp, so the first season uses a neutral structure). Need at a position = minutes short of a full rotation plus a gap term where the incumbent is below league average.

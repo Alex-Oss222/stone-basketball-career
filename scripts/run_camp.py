@@ -162,7 +162,8 @@ class CampRun:
         market = Market(day, self.root)
         fo = FrontOffice(day, market, self.root)
         scores = data.get("staff_scores") or camp.prior_values(data, market.valuation)
-        names = camp.cut_list(data, scores, fo)
+        rotation_names = [p["player_id"] for p in read(camp.ROTATION, self.root)["players"]] if (self.root / camp.ROTATION).exists() else []
+        names = camp.cut_list(data, scores, fo, protected=rotation_names)
         sheet, roster, holdings = self.writer.load(signing.TEAM / "Finances/contract_schedules.json"), self.writer.load(signing.TEAM / "Team/Roster/roster.json"), self.writer.load(signing.TEAM / "Team/Roster/holdings.json")
         for name in names:
             for p in data["players"]:
