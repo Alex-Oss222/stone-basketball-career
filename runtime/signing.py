@@ -11,6 +11,7 @@ anything; it records what the front office and the engine already decided.
 from datetime import date
 from copy import deepcopy
 import json
+import re
 from pathlib import Path
 
 from .valuation import read
@@ -416,6 +417,7 @@ def refresh_finance(writer, front_office, day):
                    cap_room=room["room"] if room["cap_known"] else None, projected_cap_room=room["room"],
                    cap_room_reason=[("Cap published July 15, 2003." if room["cap_known"] else "Cap not yet published; room is projected on the prior cap."),
                                     "Committed salary, unrenounced holds and the roster charge for empty spots are deducted (docs/front_office_design.md 5.1)."])
+    sync_cards(writer, day)
     sheet = writer.load(TEAM / "Finances/contract_schedules.json")
     outcomes = {"player_option_exercised": "exercised", "player_option_declined": "declined",
                 "team_option_exercised": "exercised", "team_option_declined": "declined"}
@@ -425,6 +427,32 @@ def refresh_finance(writer, front_office, day):
         if outcome and item.get("status") != outcome:
             item.update(status=outcome, decided=item.get("deadline"))
     writer.text(TEAM / "Finances/cap_sheet.md", cap_sheet_text(sheet, writer.load(TEAM / "Finances/free_agent_rights.json"), room, day))
+
+
+CONTROL_LINE = re.compile(r"^\*\*Contract/control:\*\*[^\n]*$", re.M)
+
+
+def card_control_line(control, day):
+    return f"**Contract/control:** {control} (register, {day}) [Finance record](../../Finances/cap_sheet.md)."
+
+
+def sync_cards(writer, day):
+    """Keep every personnel card's Contract/control line equal to the register's control text.
+
+    The register (`roster.json`) is what each transaction updates; the card shows the same control
+    with the register's date, so an exercised option, a departure or a signing never leaves a card
+    describing the June state. Assessments and statistics on the card are untouched.
+    """
+    roster = writer.load(TEAM / "Team/Roster/roster.json")
+    for p in roster["players"]:
+        rel = TEAM / "Team/Player_Cards" / f"{p['id']}.md"
+        path = writer.root / rel
+        text = writer.texts.get(Path(rel)) or (path.read_text(encoding="utf-8") if path.is_file() else None)
+        if text is None or not p.get("control"):
+            continue
+        updated = CONTROL_LINE.sub(lambda _: card_control_line(p["control"], roster["as_of"]), text, count=1)
+        if updated != text:
+            writer.text(rel, updated)
 
 
 def cap_sheet_text(sheet, rights, room, day):
