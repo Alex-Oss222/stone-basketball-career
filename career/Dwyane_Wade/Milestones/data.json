@@ -1,0 +1,1856 @@
+{
+  "schema_version": 1,
+  "mode": "live",
+  "as_of": "2003-06-26",
+  "season": "2003-04",
+  "identity": {
+    "name": "Dwyane Wade",
+    "team": "Miami Heat",
+    "position": "SG / PG",
+    "age": 19,
+    "contract_status": "draft_rights_unsigned"
+  },
+  "current_event": "2003-06-26-miami-selects-dwyane-wade-no-5",
+  "current_screen": "calendar",
+  "screens": [
+    {
+      "id": "calendar",
+      "title": "Your career calendar",
+      "status": "active",
+      "trigger": "The authoritative current date and recorded event determine what is open.",
+      "summary": "Dwyane Wade is at 09 Draft. All milestone pages remain accessible; inactive pages explain their opening event.",
+      "sections": [
+        {
+          "title": "What is happening now",
+          "columns": [
+            "Item",
+            "Current record"
+          ],
+          "rows": [
+            [
+              "Career date",
+              "2003-06-26"
+            ],
+            [
+              "Team",
+              "Miami Heat"
+            ],
+            [
+              "Contract status",
+              "draft_rights_unsigned"
+            ],
+            [
+              "Roster status",
+              "draft_rights"
+            ],
+            [
+              "Last closed event",
+              "2003-06-26-miami-selects-dwyane-wade-no-5"
+            ],
+            [
+              "Pending player decisions",
+              "None recorded"
+            ]
+          ]
+        },
+        {
+          "title": "Milestone calendar",
+          "columns": [
+            "Date / gate",
+            "Milestone",
+            "Who acts",
+            "Current meaning",
+            "Open record"
+          ],
+          "rows": [
+            [
+              "2003-06-26",
+              "Current checkpoint",
+              "2003-06-26-miami-selects-dwyane-wade-no-5",
+              "Recorded",
+              {
+                "label": "Owning event",
+                "href": "../2003-04/09_Draft/note.md"
+              }
+            ],
+            [
+              "2003-06-30",
+              "Option and qualifying-offer decisions",
+              "Owner depends on the actual contract",
+              "Scheduled gate; no outcome imported",
+              {
+                "label": "Workflow",
+                "href": "../../../docs/front_office.md"
+              }
+            ],
+            [
+              "2003-07-01",
+              "Free-agent negotiation window",
+              "Miami's roster work; Wade's own status follows his control record",
+              "Window does not create an offer",
+              {
+                "label": "Free-agency record",
+                "href": "../2003-04/01_Free_Agency/note.md"
+              }
+            ],
+            [
+              "Not yet recorded",
+              "Rookie-contract proposal",
+              "Player responds to an actual eligible proposal",
+              "inactive",
+              {
+                "label": "Contract desk",
+                "href": "#contract_negotiation"
+              }
+            ],
+            [
+              "Not yet verified",
+              "Camp reporting",
+              "Club records the date",
+              "inactive",
+              {
+                "label": "Training camp",
+                "href": "#training_camp"
+              }
+            ],
+            [
+              "After the actual final game",
+              "Season exit meeting",
+              "Player and staff review the closed season",
+              "inactive",
+              {
+                "label": "Exit meeting",
+                "href": "#exit_meeting"
+              }
+            ]
+          ]
+        },
+        {
+          "title": "Your recorded requests",
+          "columns": [
+            "Date",
+            "Subject",
+            "Player / target",
+            "Request",
+            "Explanation",
+            "Source"
+          ],
+          "rows": [
+            [
+              "2003-06-26",
+              "free_agent_target",
+              "Andre Miller",
+              "pursue",
+              "Wade asks the front office to go after Andre Miller (Los Angeles Clippers, rookie contract ending June 30, 2003) to run the point next to him.",
+              {
+                "label": "Recorded request",
+                "href": "../2003-04/01_Free_Agency/wade_requests.json"
+              }
+            ]
+          ]
+        },
+        {
+          "title": "Franchise consultations",
+          "columns": [
+            "Asked",
+            "Move",
+            "Target",
+            "Response",
+            "Basis",
+            "Source"
+          ],
+          "rows": []
+        },
+        {
+          "title": "What opens the other pages",
+          "items": [
+            "Contract: an actual offer, option, signing or verified expiry event.",
+            "Trade: a dated proposal or completed transaction; ordinary trades are club decisions.",
+            "Training and camp: a player/staff plan or actual club evaluation.",
+            "Stats: declared, closed game results, never future or historical Wade results.",
+            "Exit meeting: the actual season close and a recorded meeting."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "label": "Open the current event",
+          "href": "../2003-04/09_Draft/note.md",
+          "description": "Read the owning career note and record the player's actual response when one is due."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Authoritative career checkpoint",
+          "href": "../2003-04/current_state.json"
+        },
+        {
+          "label": "Dated professional identity",
+          "href": "../professional_identity.json"
+        },
+        {
+          "label": "Established player profile",
+          "href": "../Dwyane_Wade_Player_Profile.md"
+        },
+        {
+          "label": "Owning event",
+          "href": "../2003-04/09_Draft/note.md"
+        },
+        {
+          "label": "Dated contract control and fixed rookie-scale reference",
+          "href": "../2003-04/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Rookie-scale-only reference: no unpublished cap data",
+          "href": "rookie_scale_reference.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2003-04/01_Free_Agency/wade_requests.json"
+        },
+        {
+          "label": "Current dated staff depth chart",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+        },
+        {
+          "label": "Offseason player decisions and events",
+          "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Workflow",
+          "href": "../../../docs/front_office.md"
+        },
+        {
+          "label": "Free-agency record",
+          "href": "../2003-04/01_Free_Agency/note.md"
+        }
+      ],
+      "next_checkpoint": "The next actual dated career event; viewing these pages does not advance time.",
+      "metrics": [
+        {
+          "label": "Career date",
+          "value": "2003-06-26"
+        },
+        {
+          "label": "Team",
+          "value": "Miami Heat"
+        },
+        {
+          "label": "Season",
+          "value": "2003-04"
+        }
+      ]
+    },
+    {
+      "id": "contract_checkpoint",
+      "title": "Contract checkpoint",
+      "status": "active",
+      "trigger": "A dated contract, option, expiry or draft-rights change.",
+      "summary": "Your current control status and next contract gate are drawn from the career records.",
+      "sections": [
+        {
+          "title": "Your contract position",
+          "columns": [
+            "Item",
+            "Recorded position"
+          ],
+          "rows": [
+            [
+              "Live control",
+              "draft rights unsigned"
+            ],
+            [
+              "Signed professional contract",
+              "Not confirmed in the current control record"
+            ],
+            [
+              "Current cap hold",
+              "$2,197,000"
+            ],
+            [
+              "Cap hold meaning",
+              "Team accounting charge; not player earnings or an accepted offer"
+            ],
+            [
+              "Free-agent classification",
+              "Not a free agent: unsigned draft rights"
+            ],
+            [
+              "Actual signing date",
+              "Not recorded"
+            ],
+            [
+              "Source snapshot",
+              "2003-06-26"
+            ]
+          ]
+        },
+        {
+          "title": "Existing amounts on the club's record",
+          "columns": [
+            "Season",
+            "Amount",
+            "Nature"
+          ],
+          "rows": [
+            [
+              "2003-04",
+              "$2,197,000",
+              "draft_hold"
+            ]
+          ],
+          "notice": "A draft hold and an unexercised option are not signed guaranteed salary."
+        },
+        {
+          "title": "Upcoming decision ownership",
+          "columns": [
+            "Decision",
+            "Owner",
+            "Current gate"
+          ],
+          "rows": [
+            [
+              "Respond to a written contract proposal",
+              "You",
+              "No actual offer recorded"
+            ],
+            [
+              "Issue or revise a club offer",
+              "Miami front office",
+              "Club-owned decision"
+            ],
+            [
+              "Exercise a team option",
+              "Club",
+              "No current player-controlled team-option decision"
+            ],
+            [
+              "Verify UFA/RFA status",
+              "Contract/rights review",
+              "Draft rights are neither UFA nor RFA"
+            ],
+            [
+              "Register a signed contract",
+              "Verified execution workflow",
+              "No change occurs from reading this page"
+            ]
+          ]
+        },
+        {
+          "title": "Evidence required before signing",
+          "columns": [
+            "Check",
+            "Current result"
+          ],
+          "rows": [
+            [
+              "Actual written offer and version",
+              "Missing"
+            ],
+            [
+              "Player's actual response",
+              "Not recorded"
+            ],
+            [
+              "Terms, guarantees and option treatment",
+              "Review actual proposal; scale references are not guarantees"
+            ],
+            [
+              "Signing window and registration",
+              "Must be verified on the event date"
+            ],
+            [
+              "Replacement contract",
+              "Never generated by an expiry or an empty calendar page"
+            ]
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "label": "Review current contract record",
+          "href": "../2003-04/00_Team/Finances/contract_schedules.json",
+          "description": "Inspect the recorded obligations and their amount types."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Authoritative career checkpoint",
+          "href": "../2003-04/current_state.json"
+        },
+        {
+          "label": "Dated professional identity",
+          "href": "../professional_identity.json"
+        },
+        {
+          "label": "Established player profile",
+          "href": "../Dwyane_Wade_Player_Profile.md"
+        },
+        {
+          "label": "Owning event",
+          "href": "../2003-04/09_Draft/note.md"
+        },
+        {
+          "label": "Dated contract control and fixed rookie-scale reference",
+          "href": "../2003-04/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Rookie-scale-only reference: no unpublished cap data",
+          "href": "rookie_scale_reference.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2003-04/01_Free_Agency/wade_requests.json"
+        },
+        {
+          "label": "Current dated staff depth chart",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+        },
+        {
+          "label": "Offseason player decisions and events",
+          "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Workflow",
+          "href": "../../../docs/front_office.md"
+        },
+        {
+          "label": "Free-agency record",
+          "href": "../2003-04/01_Free_Agency/note.md"
+        }
+      ],
+      "next_checkpoint": "A real club offer, contract event or verified option/expiry deadline.",
+      "metrics": [
+        {
+          "label": "Career date",
+          "value": "2003-06-26"
+        },
+        {
+          "label": "Team",
+          "value": "Miami Heat"
+        },
+        {
+          "label": "Season",
+          "value": "2003-04"
+        }
+      ]
+    },
+    {
+      "id": "contract_negotiation",
+      "title": "Contract negotiation",
+      "status": "inactive",
+      "trigger": "A dated, actual offer opens the response desk; unsigned draft rights alone do not create one.",
+      "summary": "No written rookie-contract offer is recorded at this checkpoint. Your scale reference is available for preparation.",
+      "sections": [
+        {
+          "title": "Live eligibility and proposal",
+          "columns": [
+            "Item",
+            "Position"
+          ],
+          "rows": [
+            [
+              "Player status",
+              "draft rights unsigned"
+            ],
+            [
+              "Current proposal",
+              "None recorded"
+            ],
+            [
+              "Whose response is next",
+              "Miami records its actual first offer; the player then chooses a response."
+            ],
+            [
+              "Negotiation participants",
+              "You and Miami; draft rights remain with Miami"
+            ],
+            [
+              "Market-worth estimate",
+              "Rookie-scale signing; NBA-market value does not set this salary"
+            ],
+            [
+              "Player status selector",
+              "Live eligibility follows records; UFA/RFA cannot be selected here"
+            ]
+          ]
+        },
+        {
+          "title": "Actual latest club proposal",
+          "columns": [
+            "Season",
+            "Salary",
+            "Protection / option classification"
+          ],
+          "rows": [],
+          "notice": "No rows means no actual club offer. A player counter does not rewrite the club's proposal."
+        },
+        {
+          "title": "Fixed No. 5 rookie-scale reference",
+          "columns": [
+            "Season",
+            "80% of scale",
+            "100% of scale",
+            "120% of scale",
+            "Nature"
+          ],
+          "rows": [
+            [
+              "2003-04",
+              "$1,757,600",
+              "$2,197,000",
+              "$2,636,400",
+              "Rookie-scale reference"
+            ],
+            [
+              "2004-05",
+              "$1,889,440",
+              "$2,361,800",
+              "$2,834,160",
+              "Rookie-scale reference"
+            ],
+            [
+              "2005-06",
+              "$2,021,280",
+              "$2,526,600",
+              "$3,031,920",
+              "Rookie-scale reference"
+            ],
+            [
+              "2006-07",
+              "$2,560,962",
+              "$3,201,202",
+              "$3,841,443",
+              "Team option, not exercised"
+            ]
+          ],
+          "notice": "Legal scale reference only: not offers, signed salary or a future option decision."
+        },
+        {
+          "title": "Dated negotiation history",
+          "columns": [
+            "Date",
+            "Party",
+            "Action",
+            "Scale percentage",
+            "Recorded note"
+          ],
+          "rows": []
+        },
+        {
+          "title": "Your response and the separate club decision",
+          "columns": [
+            "Response",
+            "Available when",
+            "Consequence"
+          ],
+          "rows": [
+            [
+              "Accept the actual proposal",
+              "A live offer is recorded and timing/terms are verified",
+              "Your decision; execution requires its proper workflow"
+            ],
+            [
+              "Counter within the applicable scale",
+              "A live offer is recorded",
+              "Your proposal; Miami must separately answer"
+            ],
+            [
+              "Ask about timing, role or protection",
+              "The negotiation is open",
+              "An attributed request, not a guaranteed assignment"
+            ],
+            [
+              "Decline or continue discussions",
+              "An actual proposal is open",
+              "Does not turn draft rights into free agency"
+            ]
+          ]
+        },
+        {
+          "title": "Terms to inspect together",
+          "items": [
+            "Exact salary for every year; guaranteed and conditional amounts separately.",
+            "Option holder, exercise deadline and actual option decision.",
+            "Signing date, registration and any verified conditions.",
+            "Basketball role discussions remain separate from salary and legal principal terms."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "label": "Review the rookie-contract workflow",
+          "href": "../../../docs/front_office.md",
+          "description": "Explains the existing club-offer and player-response process."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Authoritative career checkpoint",
+          "href": "../2003-04/current_state.json"
+        },
+        {
+          "label": "Dated professional identity",
+          "href": "../professional_identity.json"
+        },
+        {
+          "label": "Established player profile",
+          "href": "../Dwyane_Wade_Player_Profile.md"
+        },
+        {
+          "label": "Owning event",
+          "href": "../2003-04/09_Draft/note.md"
+        },
+        {
+          "label": "Dated contract control and fixed rookie-scale reference",
+          "href": "../2003-04/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Rookie-scale-only reference: no unpublished cap data",
+          "href": "rookie_scale_reference.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2003-04/01_Free_Agency/wade_requests.json"
+        },
+        {
+          "label": "Current dated staff depth chart",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+        },
+        {
+          "label": "Offseason player decisions and events",
+          "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Workflow",
+          "href": "../../../docs/front_office.md"
+        },
+        {
+          "label": "Free-agency record",
+          "href": "../2003-04/01_Free_Agency/note.md"
+        }
+      ],
+      "next_checkpoint": "Miami records its actual first offer; the player then chooses a response.",
+      "metrics": [
+        {
+          "label": "Career date",
+          "value": "2003-06-26"
+        },
+        {
+          "label": "Team",
+          "value": "Miami Heat"
+        },
+        {
+          "label": "Season",
+          "value": "2003-04"
+        }
+      ]
+    },
+    {
+      "id": "free_agency",
+      "title": "Free agency",
+      "status": "inactive",
+      "trigger": "A verified player market window or actual dated Miami roster-market event.",
+      "summary": "Wade is not on the free-agent market while Miami holds his unsigned draft rights.",
+      "sections": [
+        {
+          "title": "Your market position",
+          "columns": [
+            "Item",
+            "Current evidence"
+          ],
+          "rows": [
+            [
+              "Control",
+              "draft_rights_unsigned"
+            ],
+            [
+              "UFA / RFA",
+              "Neither: unsigned draft rights"
+            ],
+            [
+              "Qualifying offer",
+              "Not applicable to this unsigned draft checkpoint"
+            ],
+            [
+              "Outside written offers",
+              "None established by the current player control record"
+            ],
+            [
+              "Market value",
+              "Rookie scale governs the first contract"
+            ]
+          ]
+        },
+        {
+          "title": "Your team-direction requests",
+          "columns": [
+            "Date",
+            "Subject",
+            "Target",
+            "Request",
+            "Explanation",
+            "Source"
+          ],
+          "rows": [
+            [
+              "2003-06-26",
+              "free_agent_target",
+              "Andre Miller",
+              "pursue",
+              "Wade asks the front office to go after Andre Miller (Los Angeles Clippers, rookie contract ending June 30, 2003) to run the point next to him.",
+              {
+                "label": "Recorded request",
+                "href": "../2003-04/01_Free_Agency/wade_requests.json"
+              }
+            ]
+          ]
+        },
+        {
+          "title": "Miami's actual negotiation records",
+          "columns": [
+            "Player",
+            "Opened",
+            "Dated rounds",
+            "Known position",
+            "Source"
+          ],
+          "rows": [],
+          "notice": "These are Miami's roster negotiations, not offers to Wade."
+        },
+        {
+          "title": "Recorded market events",
+          "columns": [
+            "Date",
+            "Event / player discussion"
+          ],
+          "rows": [
+            [
+              "2003-06-26",
+              "Wade asks the front office to pursue Andre Miller in free agency (`wade_requests.json`). Logged for the front office to weigh when free agency opens; a request never forces a decision."
+            ]
+          ]
+        },
+        {
+          "title": "Decision authority",
+          "columns": [
+            "Item",
+            "Who decides",
+            "Player response"
+          ],
+          "rows": [
+            [
+              "Targets, offers and roster construction",
+              "AI/GM",
+              "State a preference and ask for an answer"
+            ],
+            [
+              "Wade's actual eligible contract offer",
+              "Wade",
+              "Accept, counter or decline through the actual desk"
+            ],
+            [
+              "Adding another star at franchise standing",
+              "Recorded consultation premise",
+              "Answer the actual approve/object question"
+            ],
+            [
+              "RFA matching",
+              "Incumbent under verified rules",
+              "A valid offer sheet starts its binding workflow"
+            ]
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "label": "Open market events and your requests",
+          "href": "../2003-04/01_Free_Agency/note.md",
+          "description": "Review the actual dated roster-market discussion."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Authoritative career checkpoint",
+          "href": "../2003-04/current_state.json"
+        },
+        {
+          "label": "Dated professional identity",
+          "href": "../professional_identity.json"
+        },
+        {
+          "label": "Established player profile",
+          "href": "../Dwyane_Wade_Player_Profile.md"
+        },
+        {
+          "label": "Owning event",
+          "href": "../2003-04/09_Draft/note.md"
+        },
+        {
+          "label": "Dated contract control and fixed rookie-scale reference",
+          "href": "../2003-04/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Rookie-scale-only reference: no unpublished cap data",
+          "href": "rookie_scale_reference.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2003-04/01_Free_Agency/wade_requests.json"
+        },
+        {
+          "label": "Current dated staff depth chart",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+        },
+        {
+          "label": "Offseason player decisions and events",
+          "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Workflow",
+          "href": "../../../docs/front_office.md"
+        },
+        {
+          "label": "Free-agency record",
+          "href": "../2003-04/01_Free_Agency/note.md"
+        }
+      ],
+      "next_checkpoint": "Miami's next recorded market action or an actual proposal in Wade's own contract desk.",
+      "metrics": [
+        {
+          "label": "Career date",
+          "value": "2003-06-26"
+        },
+        {
+          "label": "Team",
+          "value": "Miami Heat"
+        },
+        {
+          "label": "Season",
+          "value": "2003-04"
+        }
+      ]
+    },
+    {
+      "id": "offseason_training",
+      "title": "Offseason training",
+      "status": "inactive",
+      "trigger": "A dated player priority and staff-supported development block.",
+      "summary": "Recorded goals, assigned work and measured results remain separate. No ability gain is awarded by a planning page.",
+      "sections": [
+        {
+          "title": "Starting point",
+          "columns": [
+            "Item",
+            "Recorded evidence"
+          ],
+          "rows": [
+            [
+              "Current role",
+              "Unassigned rookie; staff role decision pending"
+            ],
+            [
+              "Availability",
+              "No current restriction recorded in the established profile"
+            ],
+            [
+              "Chosen focus",
+              "Not recorded"
+            ],
+            [
+              "Baseline measurement",
+              "Not recorded"
+            ],
+            [
+              "Qualified staff restrictions",
+              "No current training-specific assessment recorded"
+            ],
+            [
+              "Agreed review",
+              "No review scheduled"
+            ]
+          ]
+        },
+        {
+          "title": "Dated development blocks",
+          "columns": [
+            "Date",
+            "Focus",
+            "Work / dose",
+            "Owner",
+            "Evidence",
+            "Result"
+          ],
+          "rows": []
+        },
+        {
+          "title": "Planning conversation still to record",
+          "columns": [
+            "Item",
+            "Who supplies it",
+            "Current position"
+          ],
+          "rows": [
+            [
+              "Main skill priority and why",
+              "Player",
+              "Not recorded"
+            ],
+            [
+              "Representative possession or drill",
+              "Player and staff",
+              "Not recorded"
+            ],
+            [
+              "Workload and recovery limits",
+              "Qualified staff",
+              "Not recorded"
+            ],
+            [
+              "Facilities, travel and protected time",
+              "Player and staff",
+              "Not recorded"
+            ],
+            [
+              "Success criterion and sample",
+              "Staff and player",
+              "Not recorded"
+            ],
+            [
+              "What receives less time",
+              "Player",
+              "Not recorded"
+            ]
+          ]
+        },
+        {
+          "title": "Recorded offseason discussion",
+          "columns": [
+            "Date",
+            "Event / player decision"
+          ],
+          "rows": []
+        },
+        {
+          "title": "Your legitimate response",
+          "items": [
+            "Choose a focus and explain the basketball problem you want to solve.",
+            "Report availability and request a staff-supported plan.",
+            "Return with recorded drill/game evidence at the agreed review.",
+            "A preference does not assign staff, prescribe an unsourced workload or change engine ability."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "label": "Open your recorded development work",
+          "href": "../2003-04/03_Offseason/note.md",
+          "description": "Record a real dated priority or review in the owning offseason record."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Authoritative career checkpoint",
+          "href": "../2003-04/current_state.json"
+        },
+        {
+          "label": "Dated professional identity",
+          "href": "../professional_identity.json"
+        },
+        {
+          "label": "Established player profile",
+          "href": "../Dwyane_Wade_Player_Profile.md"
+        },
+        {
+          "label": "Owning event",
+          "href": "../2003-04/09_Draft/note.md"
+        },
+        {
+          "label": "Dated contract control and fixed rookie-scale reference",
+          "href": "../2003-04/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Rookie-scale-only reference: no unpublished cap data",
+          "href": "rookie_scale_reference.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2003-04/01_Free_Agency/wade_requests.json"
+        },
+        {
+          "label": "Current dated staff depth chart",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+        },
+        {
+          "label": "Offseason player decisions and events",
+          "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Workflow",
+          "href": "../../../docs/front_office.md"
+        },
+        {
+          "label": "Free-agency record",
+          "href": "../2003-04/01_Free_Agency/note.md"
+        }
+      ],
+      "next_checkpoint": "The player and staff agree a dated first block and review criteria.",
+      "metrics": [
+        {
+          "label": "Career date",
+          "value": "2003-06-26"
+        },
+        {
+          "label": "Team",
+          "value": "Miami Heat"
+        },
+        {
+          "label": "Season",
+          "value": "2003-04"
+        }
+      ]
+    },
+    {
+      "id": "trade_update",
+      "title": "Trade update",
+      "status": "inactive",
+      "trigger": "An actual dated proposal, consultation or executed transaction.",
+      "summary": "No trade update is recorded at this checkpoint.",
+      "sections": [
+        {
+          "title": "Actual transaction register",
+          "columns": [
+            "Proposed",
+            "Known status",
+            "Partner",
+            "Miami sends",
+            "Miami receives",
+            "Applied",
+            "Outcome / reason",
+            "Source"
+          ],
+          "rows": []
+        },
+        {
+          "title": "What this changes for you",
+          "columns": [
+            "Item",
+            "Current evidence"
+          ],
+          "rows": [
+            [
+              "Current club",
+              "Miami Heat"
+            ],
+            [
+              "Trade involving Wade",
+              "Not established by a transaction record"
+            ],
+            [
+              "Staff role after a move",
+              "Unassigned rookie"
+            ],
+            [
+              "Report / travel deadline",
+              "No actual assignment notice supplied"
+            ],
+            [
+              "Physical or reporting requirements",
+              "Use the dated notice; no timer invented"
+            ],
+            [
+              "Contract or guarantees",
+              "Inspect executed transaction and contract records; no automatic rewrite"
+            ]
+          ]
+        },
+        {
+          "title": "Consent and consultation",
+          "columns": [
+            "Decision",
+            "Authority",
+            "Availability"
+          ],
+          "rows": [
+            [
+              "Ordinary club trade",
+              "AI/GM and league process",
+              "No universal player veto"
+            ],
+            [
+              "Actual contractual/CBA consent right",
+              "Verified source and exact transaction",
+              "Not assumed"
+            ],
+            [
+              "Franchise star-acquisition consultation",
+              "Career premise",
+              "Only an actual recorded question"
+            ],
+            [
+              "Player reaction or preference",
+              "Player",
+              "Request an explanation or role discussion"
+            ]
+          ]
+        },
+        {
+          "title": "Recorded franchise consultations",
+          "columns": [
+            "Asked",
+            "Move",
+            "Target",
+            "Response",
+            "Basis",
+            "Source"
+          ],
+          "rows": []
+        },
+        {
+          "title": "Your response when an update arrives",
+          "items": [
+            "Ask what changed, which obligations carry over and whom to contact.",
+            "State your view of the move or request a basketball discussion.",
+            "Exercise only an independently verified applicable consent right.",
+            "An ordinary trade is not paused for a fictional approve/reject button."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "label": "Open the current event discussion",
+          "href": "../2003-04/09_Draft/note.md",
+          "description": "Record a dated reaction to an actual transaction."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Authoritative career checkpoint",
+          "href": "../2003-04/current_state.json"
+        },
+        {
+          "label": "Dated professional identity",
+          "href": "../professional_identity.json"
+        },
+        {
+          "label": "Established player profile",
+          "href": "../Dwyane_Wade_Player_Profile.md"
+        },
+        {
+          "label": "Owning event",
+          "href": "../2003-04/09_Draft/note.md"
+        },
+        {
+          "label": "Dated contract control and fixed rookie-scale reference",
+          "href": "../2003-04/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Rookie-scale-only reference: no unpublished cap data",
+          "href": "rookie_scale_reference.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2003-04/01_Free_Agency/wade_requests.json"
+        },
+        {
+          "label": "Current dated staff depth chart",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+        },
+        {
+          "label": "Offseason player decisions and events",
+          "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Workflow",
+          "href": "../../../docs/front_office.md"
+        },
+        {
+          "label": "Free-agency record",
+          "href": "../2003-04/01_Free_Agency/note.md"
+        }
+      ],
+      "next_checkpoint": "An actual transaction update with its source and applicable player rights.",
+      "metrics": [
+        {
+          "label": "Career date",
+          "value": "2003-06-26"
+        },
+        {
+          "label": "Team",
+          "value": "Miami Heat"
+        },
+        {
+          "label": "Season",
+          "value": "2003-04"
+        }
+      ]
+    },
+    {
+      "id": "exit_meeting",
+      "title": "Season exit meeting",
+      "status": "inactive",
+      "trigger": "The player's season closes and a dated exit meeting is recorded.",
+      "summary": "No completed NBA season is implied by a calendar container. The review starts from closed simulated games and actual staff discussion.",
+      "sections": [
+        {
+          "title": "Meeting status",
+          "columns": [
+            "Item",
+            "Recorded position"
+          ],
+          "rows": [
+            [
+              "Meeting date",
+              "Not recorded"
+            ],
+            [
+              "Participants",
+              "Not recorded"
+            ],
+            [
+              "Player's main goal",
+              "Not recorded"
+            ],
+            [
+              "Season conclusion",
+              "Not recorded"
+            ],
+            [
+              "Staff observation",
+              "Not recorded"
+            ],
+            [
+              "Unresolved disagreement",
+              "Not recorded"
+            ]
+          ]
+        },
+        {
+          "title": "Basketball and contract discussion",
+          "columns": [
+            "Discussion",
+            "Current evidence",
+            "Needed before a conclusion"
+          ],
+          "rows": [
+            [
+              "Strength and limiting possession",
+              "Not recorded",
+              "Specific game or film references"
+            ],
+            [
+              "Communicated role and actual use",
+              "Unassigned rookie; staff role decision pending",
+              "Dated statements and closed minutes"
+            ],
+            [
+              "Availability and recovery",
+              "No current restriction recorded in the established profile",
+              "Current qualified assessment"
+            ],
+            [
+              "Contract outlook",
+              "draft_rights_unsigned",
+              "Actual terms, options and next verified gate"
+            ],
+            [
+              "Summer priorities",
+              "Not recorded",
+              "Player selection and staff-supported plan"
+            ]
+          ]
+        },
+        {
+          "title": "Follow-up ownership",
+          "columns": [
+            "Deliverable",
+            "Owner",
+            "Current response"
+          ],
+          "rows": [
+            [
+              "Development block",
+              "Player and development staff",
+              "Not recorded"
+            ],
+            [
+              "Role-evaluation criteria",
+              "Coach",
+              "Not recorded"
+            ],
+            [
+              "Contract review",
+              "Player and representative",
+              "Not recorded"
+            ],
+            [
+              "Team-direction request",
+              "Front office",
+              "Not recorded"
+            ]
+          ]
+        },
+        {
+          "title": "Your response when the meeting opens",
+          "items": [
+            "Name the main basketball goal and two offseason priorities.",
+            "Ask about a recorded promise, role change or unanswered request.",
+            "Leave disagreements visible until someone actually answers.",
+            "Agreement is not prefilled and priorities do not produce automatic improvement."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "label": "Open the owning offseason record",
+          "href": "../2003-04/03_Offseason/note.md",
+          "description": "Use a dated meeting and closed-season evidence when the review occurs."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Authoritative career checkpoint",
+          "href": "../2003-04/current_state.json"
+        },
+        {
+          "label": "Dated professional identity",
+          "href": "../professional_identity.json"
+        },
+        {
+          "label": "Established player profile",
+          "href": "../Dwyane_Wade_Player_Profile.md"
+        },
+        {
+          "label": "Owning event",
+          "href": "../2003-04/09_Draft/note.md"
+        },
+        {
+          "label": "Dated contract control and fixed rookie-scale reference",
+          "href": "../2003-04/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Rookie-scale-only reference: no unpublished cap data",
+          "href": "rookie_scale_reference.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2003-04/01_Free_Agency/wade_requests.json"
+        },
+        {
+          "label": "Current dated staff depth chart",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+        },
+        {
+          "label": "Offseason player decisions and events",
+          "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Workflow",
+          "href": "../../../docs/front_office.md"
+        },
+        {
+          "label": "Free-agency record",
+          "href": "../2003-04/01_Free_Agency/note.md"
+        }
+      ],
+      "next_checkpoint": "The actual season close and an agreed exit-meeting date.",
+      "metrics": [
+        {
+          "label": "Career date",
+          "value": "2003-06-26"
+        },
+        {
+          "label": "Team",
+          "value": "Miami Heat"
+        },
+        {
+          "label": "Season",
+          "value": "2003-04"
+        }
+      ]
+    },
+    {
+      "id": "training_camp",
+      "title": "Training camp",
+      "status": "inactive",
+      "trigger": "The club opens camp and records participation, evaluation or an actual role decision.",
+      "summary": "Staff ordering is visible; camp attendance, minutes and grades require their own dated records.",
+      "sections": [
+        {
+          "title": "Your camp position",
+          "columns": [
+            "Item",
+            "Recorded position"
+          ],
+          "rows": [
+            [
+              "Camp opened",
+              "Not recorded"
+            ],
+            [
+              "Participation",
+              "No camp participation record"
+            ],
+            [
+              "Current role",
+              "Unassigned rookie; staff role decision pending"
+            ],
+            [
+              "Staff rotation minutes",
+              null
+            ],
+            [
+              "Closed preseason games",
+              0
+            ],
+            [
+              "Camp availability",
+              "No camp assessment recorded"
+            ]
+          ]
+        },
+        {
+          "title": "Current depth chart",
+          "columns": [
+            "Position",
+            "Staff ordering",
+            "Interpretation"
+          ],
+          "rows": [
+            [
+              "PG",
+              "Travis Best, Mike James, Anthony Carter",
+              "Staff ordering; not a future minutes promise"
+            ],
+            [
+              "SG",
+              "Eddie Jones, Rasual Butler, Eddie House",
+              "Staff ordering; not a future minutes promise"
+            ],
+            [
+              "SF",
+              "Caron Butler, Sean Lampley",
+              "Staff ordering; not a future minutes promise"
+            ],
+            [
+              "PF",
+              "Malik Allen, LaPhonso Ellis, Sean Marks",
+              "Staff ordering; not a future minutes promise"
+            ],
+            [
+              "C",
+              "Brian Grant, Vladimir Stepania, Ken Johnson",
+              "Staff ordering; not a future minutes promise"
+            ]
+          ],
+          "notice": "Snapshot: 2003-06-26. Draft rights and unassigned arrivals are not assigned minutes."
+        },
+        {
+          "title": "Role and promise review",
+          "columns": [
+            "Item",
+            "Evidence needed",
+            "Current position"
+          ],
+          "rows": [
+            [
+              "Expected role",
+              "Attributed coach statement",
+              "Unassigned rookie; staff role decision pending"
+            ],
+            [
+              "Actual use",
+              "Closed preseason boxes",
+              "0 closed games"
+            ],
+            [
+              "Promised minutes",
+              "Written promise and date",
+              "Not recorded"
+            ],
+            [
+              "Promise review",
+              "Dated review against rotation",
+              "Not recorded"
+            ],
+            [
+              "Defensive evaluation",
+              "Dated staff assessment",
+              "Steals and blocks alone do not establish overall defense"
+            ]
+          ]
+        },
+        {
+          "title": "Recorded camp discussion",
+          "columns": [
+            "Date",
+            "Event / decision"
+          ],
+          "rows": []
+        },
+        {
+          "title": "Your response to the staff",
+          "items": [
+            "Ask which assignment you are being evaluated for and which evidence matters.",
+            "State the role you want and request a review of the actual sample.",
+            "Report availability to qualified staff.",
+            "The coach owns depth-chart position and rotation minutes; a request is not an assignment."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "label": "Open camp events and discussion",
+          "href": "../2003-04/04_Training_Camp/note.md",
+          "description": "Inspect the dated camp record."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Authoritative career checkpoint",
+          "href": "../2003-04/current_state.json"
+        },
+        {
+          "label": "Dated professional identity",
+          "href": "../professional_identity.json"
+        },
+        {
+          "label": "Established player profile",
+          "href": "../Dwyane_Wade_Player_Profile.md"
+        },
+        {
+          "label": "Owning event",
+          "href": "../2003-04/09_Draft/note.md"
+        },
+        {
+          "label": "Dated contract control and fixed rookie-scale reference",
+          "href": "../2003-04/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Rookie-scale-only reference: no unpublished cap data",
+          "href": "rookie_scale_reference.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2003-04/01_Free_Agency/wade_requests.json"
+        },
+        {
+          "label": "Current dated staff depth chart",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+        },
+        {
+          "label": "Offseason player decisions and events",
+          "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Workflow",
+          "href": "../../../docs/front_office.md"
+        },
+        {
+          "label": "Free-agency record",
+          "href": "../2003-04/01_Free_Agency/note.md"
+        }
+      ],
+      "next_checkpoint": "A verified camp-opening record, then actual preseason evidence and the coach's role review.",
+      "metrics": [
+        {
+          "label": "Career date",
+          "value": "2003-06-26"
+        },
+        {
+          "label": "Team",
+          "value": "Miami Heat"
+        },
+        {
+          "label": "Season",
+          "value": "2003-04"
+        }
+      ]
+    },
+    {
+      "id": "stats_review",
+      "title": "Stats review",
+      "status": "inactive",
+      "trigger": "A declared, closed game result supplies observed participation and the player box.",
+      "summary": "0 closed game records in 2003-04 through 2003-06-26. Competitions remain separate.",
+      "sections": [
+        {
+          "title": "Production by competition",
+          "columns": [
+            "Competition",
+            "G",
+            "MPG",
+            "PPG",
+            "RPG",
+            "APG",
+            "TOV/G",
+            "Coverage"
+          ],
+          "rows": [
+            [
+              "regular",
+              0,
+              null,
+              null,
+              null,
+              null,
+              null,
+              "Complete"
+            ]
+          ]
+        },
+        {
+          "title": "Pooled shooting",
+          "columns": [
+            "Competition",
+            "FGM",
+            "FGA",
+            "FG ratio",
+            "3PM",
+            "3PA",
+            "3P ratio"
+          ],
+          "rows": [
+            [
+              "regular",
+              0,
+              0,
+              null,
+              0,
+              0,
+              null
+            ]
+          ],
+          "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
+        },
+        {
+          "title": "Closed source games",
+          "columns": [
+            "Date",
+            "Competition",
+            "Opponent",
+            "Participation",
+            "Source"
+          ],
+          "rows": []
+        },
+        {
+          "title": "Evidence available for decisions",
+          "columns": [
+            "Question",
+            "Required evidence",
+            "Current treatment"
+          ],
+          "rows": [
+            [
+              "Period production",
+              "Closed simulated boxes",
+              "Summed and divided by recorded appearances"
+            ],
+            [
+              "Shot locations",
+              "Actual coordinates and outcomes",
+              "Never invented from a box score"
+            ],
+            [
+              "Defense or role improvement",
+              "Assignment, film and representative sample",
+              "Box-score events alone do not settle it"
+            ],
+            [
+              "Training effects",
+              "Dated plan and repeated comparable evidence",
+              "No automatic ability gain"
+            ]
+          ]
+        },
+        {
+          "title": "Your next useful question",
+          "items": [
+            "Choose a completed period and name the basketball question you want reviewed.",
+            "Compare the same competition and keep sample size visible.",
+            "Respond through training and role conversations; do not import historical Wade results."
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "label": "Open your complete statistics",
+          "href": "../Stats_and_Awards/README.md",
+          "description": "Follow season, month, week and source-game reports."
+        },
+        {
+          "label": "Open shooting and player cards",
+          "href": "../Stats_and_Awards/player_cards.html",
+          "description": "The live card dashboard uses the same canonical source records."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Authoritative career checkpoint",
+          "href": "../2003-04/current_state.json"
+        },
+        {
+          "label": "Dated professional identity",
+          "href": "../professional_identity.json"
+        },
+        {
+          "label": "Established player profile",
+          "href": "../Dwyane_Wade_Player_Profile.md"
+        },
+        {
+          "label": "Owning event",
+          "href": "../2003-04/09_Draft/note.md"
+        },
+        {
+          "label": "Dated contract control and fixed rookie-scale reference",
+          "href": "../2003-04/00_Team/Finances/contract_schedules.json"
+        },
+        {
+          "label": "Rookie-scale-only reference: no unpublished cap data",
+          "href": "rookie_scale_reference.json"
+        },
+        {
+          "label": "Recorded request",
+          "href": "../2003-04/01_Free_Agency/wade_requests.json"
+        },
+        {
+          "label": "Current dated staff depth chart",
+          "href": "../2003-04/00_Team/Team/Depth_Chart/depth_chart.json"
+        },
+        {
+          "label": "Offseason player decisions and events",
+          "href": "../2003-04/03_Offseason/note.md"
+        },
+        {
+          "label": "Training-camp events and player response",
+          "href": "../2003-04/04_Training_Camp/note.md"
+        },
+        {
+          "label": "Workflow",
+          "href": "../../../docs/front_office.md"
+        },
+        {
+          "label": "Free-agency record",
+          "href": "../2003-04/01_Free_Agency/note.md"
+        }
+      ],
+      "next_checkpoint": "The next declared, closed game result or a chosen completed-period review.",
+      "metrics": [
+        {
+          "label": "Career date",
+          "value": "2003-06-26"
+        },
+        {
+          "label": "Team",
+          "value": "Miami Heat"
+        },
+        {
+          "label": "Season",
+          "value": "2003-04"
+        }
+      ]
+    }
+  ],
+  "read_only": true,
+  "execution_enabled": false,
+  "rookie_scale_reference": {
+    "schema_version": 1,
+    "reference_only": true,
+    "as_of": "2003-06-26",
+    "player": "Dwyane Wade",
+    "draft_year": 2003,
+    "pick": 5,
+    "basis": "Fixed 1999-agreement rookie scale; no offer or option decision implied.",
+    "terms_by_scale_percent": {
+      "80": {
+        "pick": 5,
+        "percent_of_scale": 80,
+        "schedule": {
+          "2003-04": 1757600,
+          "2004-05": 1889440,
+          "2005-06": 2021280,
+          "2006-07": 2560962
+        },
+        "amount_kind": {
+          "2003-04": "contract_salary",
+          "2004-05": "contract_salary",
+          "2005-06": "contract_salary",
+          "2006-07": "team_option"
+        },
+        "fourth_year_option_deadline": "2005-10-31",
+        "qualifying_offer_increase_percent_after_fourth_year": 32.6
+      },
+      "100": {
+        "pick": 5,
+        "percent_of_scale": 100,
+        "schedule": {
+          "2003-04": 2197000,
+          "2004-05": 2361800,
+          "2005-06": 2526600,
+          "2006-07": 3201202
+        },
+        "amount_kind": {
+          "2003-04": "contract_salary",
+          "2004-05": "contract_salary",
+          "2005-06": "contract_salary",
+          "2006-07": "team_option"
+        },
+        "fourth_year_option_deadline": "2005-10-31",
+        "qualifying_offer_increase_percent_after_fourth_year": 32.6
+      },
+      "120": {
+        "pick": 5,
+        "percent_of_scale": 120,
+        "schedule": {
+          "2003-04": 2636400,
+          "2004-05": 2834160,
+          "2005-06": 3031920,
+          "2006-07": 3841443
+        },
+        "amount_kind": {
+          "2003-04": "contract_salary",
+          "2004-05": "contract_salary",
+          "2005-06": "contract_salary",
+          "2006-07": "team_option"
+        },
+        "fourth_year_option_deadline": "2005-10-31",
+        "qualifying_offer_increase_percent_after_fourth_year": 32.6
+      }
+    },
+    "source": "../2003-04/00_Team/Finances/contract_schedules.json"
+  },
+  "source_policy": "Canonical dated career records only. Reading a view creates no offer, decision, trade, workout result or future event."
+}

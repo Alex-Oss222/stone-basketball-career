@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "reference_only": true,
+  "as_of": "2003-06-26",
+  "player": "Dwyane Wade",
+  "draft_year": 2003,
+  "pick": 5,
+  "basis": "Fixed 1999-agreement rookie scale; no offer or option decision implied.",
+  "terms_by_scale_percent": {
+    "80": {
+      "pick": 5,
+      "percent_of_scale": 80,
+      "schedule": {
+        "2003-04": 1757600,
+        "2004-05": 1889440,
+        "2005-06": 2021280,
+        "2006-07": 2560962
+      },
+      "amount_kind": {
+        "2003-04": "contract_salary",
+        "2004-05": "contract_salary",
+        "2005-06": "contract_salary",
+        "2006-07": "team_option"
+      },
+      "fourth_year_option_deadline": "2005-10-31",
+      "qualifying_offer_increase_percent_after_fourth_year": 32.6
+    },
+    "100": {
+      "pick": 5,
+      "percent_of_scale": 100,
+      "schedule": {
+        "2003-04": 2197000,
+        "2004-05": 2361800,
+        "2005-06": 2526600,
+        "2006-07": 3201202
+      },
+      "amount_kind": {
+        "2003-04": "contract_salary",
+        "2004-05": "contract_salary",
+        "2005-06": "contract_salary",
+        "2006-07": "team_option"
+      },
+      "fourth_year_option_deadline": "2005-10-31",
+      "qualifying_offer_increase_percent_after_fourth_year": 32.6
+    },
+    "120": {
+      "pick": 5,
+      "percent_of_scale": 120,
+      "schedule": {
+        "2003-04": 2636400,
+        "2004-05": 2834160,
+        "2005-06": 3031920,
+        "2006-07": 3841443
+      },
+      "amount_kind": {
+        "2003-04": "contract_salary",
+        "2004-05": "contract_salary",
+        "2005-06": "contract_salary",
+        "2006-07": "team_option"
+      },
+      "fourth_year_option_deadline": "2005-10-31",
+      "qualifying_offer_increase_percent_after_fourth_year": 32.6
+    }
+  },
+  "source": "../2003-04/00_Team/Finances/contract_schedules.json"
+}

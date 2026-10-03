@@ -28,6 +28,7 @@ from runtime.negotiation import FOLDER, Negotiation, slug    # noqa: E402
 from runtime.trades import PARTNER_LOCATION, TradeDesk       # noqa: E402
 from runtime.valuation import read                           # noqa: E402
 from scripts import run_june30                               # noqa: E402
+from scripts.refresh_career_views import refresh_career_views # noqa: E402
 
 SEASON = "2003-04"
 PHASE = Path(f"career/Dwyane_Wade/{SEASON}/01_Free_Agency")
@@ -617,7 +618,8 @@ class Run:
         self.state["wade_offer_date"] = day
         signing.note_event(self.writer, PHASE / "note.md", day,
                            f"Miami offers Wade his rookie-scale contract at {offer['terms']['percent_of_scale']}% of scale with a promised role of "
-                           f"{role['role']} ({role['minutes_per_game']} minutes). Wade answers in `Wade_Rookie_Contract/negotiation_log.json`.")
+                           f"{role['role']} ({role['minutes_per_game']} minutes). Wade answers in `Wade_Rookie_Contract/negotiation_log.json`. "
+                           "[Open the detailed negotiation](../../Milestones/index.html#contract_negotiation).")
         state = self.writer.load(signing.STATE)
         state["pending_player_decisions"] = ["rookie_contract_offer"]
 
@@ -677,10 +679,12 @@ def main(argv):
         print(json.dumps(fo.plan(requests, standing.standing_on(ROOT, day)["standing"]), indent=1))
         return
     report = Run().advance(day)
+    refreshed = refresh_career_views(ROOT)
     for row in report["log"]:
         print(f"{row['date']}: {row['written']} files written" + (f"; pending {row['pending']}" if row["pending"] else "") + (f"; stopped: {row['stopped']}" if row["stopped"] else ""))
     if report["stopped"]:
         print(f"Stopped on {report['date']}: {report['stopped']}")
+    print(f"Updated {len(refreshed)} detailed career views; open career/Dwyane_Wade/Milestones/index.html.")
 
 
 if __name__ == "__main__":

@@ -8,6 +8,9 @@ journaled; the same event with the same packet replays identically, and the
 same event with changed inputs is refused, so a result cannot be re-rolled.
 
 Public (results are not secret; only the seed is):
+  GET /career                     detailed canonical milestone screens
+  GET /cards                      canonical Shooting and Awards
+  GET /career/status              current screen cutoff and deployed revision
   GET /health
   GET /games                       every request and its status
   GET /games/<event_id>            result JSON
@@ -188,7 +191,7 @@ def play_requests(store, root):
     return status
 
 
-def handler(store, token, games):
+def handler(store, token, games, career_site=None):
     if not token or len(token) < 32:
         raise ValueError("ENGINE_API_TOKEN must be at least 32 characters")
 
@@ -197,10 +200,14 @@ def handler(store, token, games):
             pass
 
         def send(self, status, body, content_type="application/json"):
-            raw = body.encode() if isinstance(body, str) else json.dumps(body, indent=1).encode()
+            raw = body if isinstance(body, bytes) else body.encode() if isinstance(body, str) else json.dumps(body, indent=1).encode()
             self.send_response(status)
             self.send_header("Content-Type", content_type + "; charset=utf-8")
             self.send_header("Content-Length", str(len(raw)))
+            self.send_header("X-Content-Type-Options", "nosniff")
+            self.send_header("Cache-Control", "no-cache")
+            if content_type == "text/html":
+                self.send_header("Content-Security-Policy", "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'")
             self.end_headers()
             self.wfile.write(raw)
 
@@ -215,6 +222,18 @@ def handler(store, token, games):
             path = urlsplit(self.path).path.rstrip("/") or "/"
             if path == "/health":
                 return self.send(200, {"service": SERVICE, "schema": SCHEMA_VERSION, "kernel": KERNEL_VERSION})
+            if career_site is not None:
+                if path in ("/", "/career", "/player", "/cards"):
+                    self.send_response(302)
+                    self.send_header("Location", career_site.cards if path in ("/player", "/cards") else career_site.home)
+                    self.send_header("Cache-Control", "no-cache")
+                    self.end_headers()
+                    return
+                if path == "/career/status":
+                    return self.send(200, career_site.status)
+                resource = career_site.resource(path)
+                if resource is not None:
+                    return self.send(200, resource[0], resource[1])
             if path in ("/", "/games"):
                 return self.send(200, {"kernel": KERNEL_VERSION, "games": games})
             if path.startswith("/decisions/"):

@@ -2,6 +2,16 @@
 
 Kernel `2003.5`, schema `1`.
 
+## Detailed live career screens
+
+The same deployment serves the actual player interface. `/` and `/career` open the detailed milestone desk; `/cards` and `/player` open Shooting and Awards. `/career/status` reports the career cutoff, season, screen version and deployed revision. `/games` remains the engine's JSON result listing.
+
+`runtime/live_site.py` builds the screens from the normal canonical report builder at startup. The Docker image includes the runtime UI assets and the report configuration. Current career READMEs link the same generated screens and their complete Markdown fallbacks. The nine milestone views contain dated facts, full evidence, player responses and next checkpoints. The player's UFA/RFA/control state comes from the career, never a demo selector.
+
+These are read-only views. The player answers through the established career workflow; owning event records and validated commands persist those decisions. Viewing a screen never runs a game, signs a contract or advances time. Generated source pages keep every table column. The real Shooting page uses only closed player boxes and explicitly recorded location feeds; an absent feed is visibly unavailable, and earned annual Awards exclude weekly/monthly recognition and unannounced results.
+
+The event CLIs refresh reports after writes; direct record edits require `python scripts/update_player_reports.py`. Deploying `milestone-1` refreshes the public snapshot. `/ready` and `/corrections` retain their existing authentication, and the public routes cannot read the engine database or arbitrary filesystem paths.
+
 ## How a game gets played
 
 1. A game request file, `Game_N.request.json`, is committed next to its `Game_N.md` note (format in `runtime/game_requests.py`). Repository validation checks every request, so a bad one fails the build and never deploys.

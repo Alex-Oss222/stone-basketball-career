@@ -2,32 +2,40 @@
 
 # Week 2: 2004-02-08 to 2004-02-14 | Detailed statistics
 
-[Week summary](README.md) · [Career](../../../../README.md) · [Professional identity](../../../../Professional_Identity.md) · [Earned honors](../../../../Awards.md) · [Stat definitions](../../../../../../docs/player_statistics.md)
+[Week summary](README.md) · [Career](../../../../README.md) · [Professional identity](../../../../Professional_Identity.md) · [Earned awards](../../../../Awards.md) · [Stat definitions](../../../../../../docs/player_statistics.md)
 
 ## Professional identity
 
-![Player personal information and earned career honors through 2003-06-26](../../../../assets/stat_reports/personal_2003-06-26.svg)
-
-<details>
-<summary>Personal information and earned honors: text version</summary>
+![Player personal information and earned career awards through 2003-06-26](../../../../assets/stat_reports/personal_2003-06-26.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
 | Dwyane Tyrone Wade Jr. | 19 | Miami Heat / NBA | SG / PG | Not assigned | Draft rights; unsigned |
 
-| Birth date | Height (in shoes) | Weight | Shoots | Prior program |
-| --- | --- | --- | --- | --- |
-| 1984-01-17 | 6 ft 6 in | 220 lb | Right | UConn (simulation canon) |
-
-NBA entry: 2003 draft, round 1, No. 5 overall, Miami Heat.
+| Identity field | Recorded value |
+| --- | --- |
+| Birth date | 1984-01-17 |
+| NBA entry | 2003 draft, round 1, No. 5 overall, Miami Heat |
+| Prior program | UConn (simulation canon) |
+| Height, in shoes / without shoes | 6 ft 6 in / 6 ft 4.75 in |
+| Weight | 220 lb |
+| Wingspan / standing reach | 6 ft 11.5 in / 8 ft 7.5 in |
+| Shooting hand | Right |
+| Contract | No executed professional contract |
+| Role | Unassigned rookie |
+| NBA debut | Not recorded |
+| Nationality | Not recorded |
+| National team | No selection recorded |
+| National-team eligibility | Not verified |
+| Availability | No current restriction recorded in the established profile |
+| Physical measurements recorded | 2003-06-25 |
+| Professional status effective | 2003-06-26 |
 
 Identity as of 2003-06-26; status snapshot dated 2003-06-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
-### Earned career honors
+### Earned career awards
 
-No earned professional honors recorded by this page's identity cutoff.
-
-</details>
+No earned professional awards recorded by this page's identity cutoff.
 
 ## Statistics
 
@@ -39,7 +47,9 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 ### Per game
 
-![Per-game player statistics](../../../../assets/stat_reports/per_game.svg)
+[![Shooting](../../../assets/shooting_link.svg)](../../../player_cards.html?period=regular-2003-04-season#shooting) [![Awards](../../../assets/awards_link.svg)](../../../player_cards.html#awards)
+
+[Shooting detail](../../../Shooting.md) · [Annual award record](../../../Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

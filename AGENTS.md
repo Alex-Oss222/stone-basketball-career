@@ -8,7 +8,9 @@ The user controls Wade's legitimate player decisions.
 
 The AI/GM controls Miami's organization, roster construction, cap accounting, contracts offered by the club, depth chart, rotation, tactics, staff decisions and transactions. The user can react to those decisions as Wade but cannot directly author them.
 
-## Current checkpoint
+## Opening checkpoint
+
+The current dated `current_state.json` is authoritative as play advances. The initial setup below describes the opening checkpoint, not a permanently fixed date.
 
 - Date: June 26, 2003
 - Event: 2003 NBA Draft
@@ -153,7 +155,11 @@ Games are played by the engine on Railway. To play a game, write `Game_N.request
 
 ## After an event
 
-For player-facing calendar milestones, use `docs/templates/player_milestones/` and its workflow: a compact identity, the actual event, decision-relevant evidence, the player's available response and the next checkpoint. Open a page only from a dated trigger. Ask for Wade's own contract/training/role preference; do not ask the user to approve an ordinary AI/GM trade or a coaching assignment. Verify any actual trade-consent right. Templates and filled previews are not simulation events, live offers, signed contracts or ability gains.
+The detailed screens are active career records, generated into `career/Dwyane_Wade/Milestones/` and `Stats_and_Awards/`. Use the current `Milestones/README.md` and the relevant full milestone page when opening a player decision or notification. Full detail is always the default: show the actual event, complete relevant terms and evidence, status, legitimate player responses and next checkpoint. Do not substitute a sample scenario or a compact summary for the live detailed screen.
+
+The standard event CLIs regenerate these views after a successful write. After a direct manual career-record update, run `python scripts/update_player_reports.py` before presenting the next screen. Generated pages are read-only projections of source records: edit the owning decision, negotiation, training or game record, then regenerate. The website's `/career` and `/cards` routes show the same canonical data. Browser reads never create offers, sign contracts, approve trades, simulate games or advance time.
+
+For player-facing calendar milestones, use `docs/templates/player_milestones/` and its workflow: a complete identity, the actual event, decision-relevant evidence, the player's available response and the next checkpoint. Open a page only from a dated trigger. Ask for Wade's own contract/training/role preference; do not ask the user to approve an ordinary AI/GM trade or a coaching assignment. Verify any actual trade-consent right. Templates and filled previews are not simulation events, live offers, signed contracts or ability gains.
 
 1. write the owning event note;
 2. update current state;

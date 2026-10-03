@@ -1,8 +1,33 @@
 # Player statistics and professional identity
 
-[Filled preview](examples/player_stats_preview.md) · [Interactive shooting and awards](examples/player_cards_preview.html) · [Current career](../career/Dwyane_Wade/README.md) · [Structure](season_structure.md)
+[Live Shooting and Awards](https://stone-basketball-career-production.up.railway.app/cards) · [Current career](../career/Dwyane_Wade/README.md) · [Filled preview](examples/player_stats_preview.md) · [Structure](season_structure.md)
 
 Reports contain professional identity and statistical performance. Decisions remain in their owning notes. Existing team, league and award records retain their paths and links.
+
+## Active detailed cards
+
+The ordinary `scripts/update_player_reports.py` build now generates `Stats_and_Awards/player_cards.html`, `player_cards_data.json`, `Shooting.md` and `Awards.md` from actual career evidence. The same build creates the detailed milestone desk. Every canonical player report links Shooting and Awards; the interactive view uses the corresponding period where available. Complete details and source tables are open by default.
+
+The live cards use `identity_at`, closed records from `collect_games`, and sourced earned awards. There is no fictional location generator on this path. Weekly and monthly awards stay in the complete award register; yearly banners use the recorded annual scope or recognized season-award/selection names. Unknown classifications remain in the complete register instead of becoming an invented annual trophy.
+
+### Recorded shot-location source
+
+A closed game note may declare `shot_file: Game_N.shots.json` in its metadata. This must be an existing adjacent JSON file within the same player career. Its envelope requires:
+
+| Field | Required value or meaning |
+| --- | --- |
+| `schema_version` | `1` |
+| `record_type` | `recorded_player_shots` |
+| `player_id`, `event_id`, `date`, `season`, `competition` | Exact match to the canonical player and closed game |
+| `recorded_on` | A date on or after the game and no later than the career cutoff |
+| `coordinate_system` | `nba_feet_from_basket` |
+| `source_type` | `recorded_event_feed` or `recorded_manual_tracking` |
+| `source_label` | Nonempty description of the recorded evidence |
+| `shots` | Attempts with unique `shot_id`, coordinates `x`/`y`, boolean `made`, and recorded `value` of 2 or 3 |
+
+Coordinates use the [documented court convention](shooting_and_awards_design.md). The adapter validates identity, dates, shot values, location geometry and made/missed buckets against the closed box. Synthetic/example records fail validation. Missing coordinates and partial feeds preserve observed coverage while withholding complete-period regional rates. A raw engine sidecar, a scheduled note, a player's position or a source-library shooting estimate cannot supply live locations.
+
+The current engine produces box scores without spatial tracking. Those real totals populate the Shooting card as games close; its court explicitly states that tracking is unavailable until an eligible shot file exists. Other court geometries require their own verified adapter before spatial plotting.
 
 League season/month/week pages also use the complete per-game column order, with recorded age, club/rights, league and position. Their shared red-and-black section header needs no player awards banner. `scripts/format_league_reports.py` preserves existing period values when migrating the layout; automated league result aggregation remains a separate roadmap item. Missing attempts and other new columns remain N/A until supported by branch games.
 

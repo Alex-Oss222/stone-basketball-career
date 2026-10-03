@@ -4,13 +4,13 @@
 
 ![Player career overview: professional identity, NBA regular-season statistics and playoff statistics](assets/career_overview.svg)
 
-![Earned professional honors through 2003-06-26](assets/stat_reports/awards_2003-06-26.svg)
+![Earned professional awards through 2003-06-26](assets/stat_reports/awards_2003-06-26.svg)
 
-[Professional identity](Professional_Identity.md) · [Career statistics](Stats_and_Awards/README.md) · [Earned honors](Awards.md) · [National team / FIBA](National_Team/README.md)
+[Professional identity](Professional_Identity.md) · [Career statistics](Stats_and_Awards/README.md) · [Earned awards](Awards.md) · [National team / FIBA](National_Team/README.md)
 
 **Season reports:** [2003-04](2003-04/README.md)
 
-<details>
+<details open>
 <summary>Professional identity: text version</summary>
 
 ## Professional identity
@@ -35,7 +35,9 @@ Career cutoff: **2003-06-26**. Club competitions and national-team events have s
 
 ### NBA regular season
 
-![Per-game player statistics](assets/stat_reports/per_game.svg)
+[![Shooting](Stats_and_Awards/assets/shooting_link.svg)](Stats_and_Awards/player_cards.html?period=regular-2003-04-season#shooting) [![Awards](Stats_and_Awards/assets/awards_link.svg)](Stats_and_Awards/player_cards.html#awards)
+
+[Shooting detail](Stats_and_Awards/Shooting.md) · [Annual award record](Stats_and_Awards/Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -46,7 +48,9 @@ G and GS are counts; MP and counting statistics are **per appearance**. Shooting
 
 ### NBA playoffs
 
-![Per-game player statistics](assets/stat_reports/per_game.svg)
+[![Shooting](Stats_and_Awards/assets/shooting_link.svg)](Stats_and_Awards/player_cards.html?period=regular-2003-04-season#shooting) [![Awards](Stats_and_Awards/assets/awards_link.svg)](Stats_and_Awards/player_cards.html#awards)
+
+[Shooting detail](Stats_and_Awards/Shooting.md) · [Annual award record](Stats_and_Awards/Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -59,4 +63,6 @@ G and GS are counts; MP and counting statistics are **per appearance**. Shooting
 
 [2003-04 all competitions](2003-04/README.md)
 
-[Earned honors](Awards.md) · [National team / FIBA](National_Team/README.md) · [Stats definitions](../../docs/player_statistics.md) · [Filled example](../../docs/examples/player_stats_preview.md) · [Miami records](Stats_and_Awards/Team/README.md) · [League records and awards](Stats_and_Awards/League/README.md)
+[Earned awards](Awards.md) · [National team / FIBA](National_Team/README.md) · [Stats definitions](../../docs/player_statistics.md) · [Filled example](../../docs/examples/player_stats_preview.md) · [Miami records](Stats_and_Awards/Team/README.md) · [League records and awards](Stats_and_Awards/League/README.md)
+
+[Open your live career milestones](Milestones/index.html) · [Detailed Shooting and Awards](Stats_and_Awards/player_cards.html)

@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime.season_rules import month_week, play_in_format, statistics_bucket
+from scripts.refresh_career_views import refresh_career_views
 
 
 def season_dir(requested: str | None = None) -> Path:
@@ -164,7 +165,9 @@ def main() -> int:
         parser.error("game numbers must be sequential within their owning folder")
     target_dir.mkdir(parents=True, exist_ok=True)
     target.write_text(game_text(title,args.status,args.date,args.opponent,args.venue,args.reason,play_in_game_1,kind,cup_stage), encoding="utf-8")
+    refreshed = refresh_career_views(ROOT)
     print(target.relative_to(ROOT))
+    print(f"Updated {len(refreshed)} detailed career views.")
     return 0
 
 

@@ -165,19 +165,45 @@ PER_GAME_COLUMNS = ["Scope", "Age", "Team", "Lg", "Pos", "G", "GS", "MP", "FG", 
 
 
 class ReportStyle:
-    def __init__(self, identity, awards, clock, outputs, asset_dir, player=None):
+    def __init__(self, identity, awards, clock, outputs, asset_dir, player=None, *, cards_root=None,
+                 card_periods=(), default_card_period=None, detailed=False):
         self.identity, self.awards, self.clock = identity, awards, clock
         self.outputs, self.asset_dir, self.player = outputs, asset_dir, player
+        self.cards_root, self.card_periods = cards_root, set(card_periods)
+        self.default_card_period, self.detailed = default_card_period, detailed
+
+    def award_terms(self, text):
+        if self.cards_root is None:
+            return text
+        return text.replace("Awards and honors", "Awards").replace("HONORS", "AWARDS").replace("Honors", "Awards").replace("honors", "awards").replace("| Honor |", "| Award |")
+
+    def cards_navigation(self, page, groups=(), heading="", cutoff=None):
+        if self.cards_root is None:
+            return ""
+        from .player_cards import period_for_scope
+        records = groups[0][1] if groups else []
+        explicit = groups[0][3] if groups and len(groups[0]) > 3 else None
+        scope = scope_for(page, records, cutoff or self.clock, heading=heading, explicit=explicit)
+        pid = period_for_scope(scope, records, page, self.player)
+        if pid not in self.card_periods:
+            pid = self.default_card_period
+        shooting_image = "!" + link(page, self.cards_root / "assets/shooting_link.svg", "Shooting")
+        awards_image = "!" + link(page, self.cards_root / "assets/awards_link.svg", "Awards")
+        shooting_path = Path(os.path.relpath(self.cards_root / "Shooting.md", page.parent)).as_posix()
+        awards_path = Path(os.path.relpath(self.cards_root / "Awards.md", page.parent)).as_posix()
+        html = Path(os.path.relpath(self.cards_root / "player_cards.html", page.parent)).as_posix()
+        return (f"[{shooting_image}]({html}?period={pid}#shooting) [{awards_image}]({html}#awards)\n\n"
+                f"[Shooting detail]({shooting_path}) · [Annual award record]({awards_path})\n\n")
 
     def header(self, page, cutoff):
         asset = self.asset_dir / f"personal_{cutoff}.svg"
-        self.outputs[asset] = personal_header(self.identity, cutoff, self.awards)
-        return "!" + link(page, asset, f"Player personal information and earned career honors through {cutoff}") + "\n\n"
+        self.outputs[asset] = self.award_terms(personal_header(self.identity, cutoff, self.awards))
+        return self.award_terms("!" + link(page, asset, f"Player personal information and earned career honors through {cutoff}") + "\n\n")
 
     def banner(self, page, cutoff):
         asset = self.asset_dir / f"awards_{cutoff}.svg"
-        self.outputs[asset] = honors_banner(self.awards, cutoff)
-        return "!" + link(page, asset, f"Earned professional honors through {cutoff}") + "\n\n"
+        self.outputs[asset] = self.award_terms(honors_banner(self.awards, cutoff))
+        return self.award_terms("!" + link(page, asset, f"Earned professional honors through {cutoff}") + "\n\n")
 
     def award_text(self, page, awards):
         if not awards:
@@ -217,12 +243,13 @@ class ReportStyle:
 
     def per_game(self, page, groups, heading="Per game", *, decorate=True, as_of=None):
         asset = self.asset_dir / "per_game.svg"
-        self.outputs[asset] = per_game_strip()
+        self.outputs[asset] = per_game_strip() if self.cards_root is None else self.award_terms(
+            per_game_strip().replace("Production · Shooting · Rebounding · Playmaking · Defense · Honors", "Complete recorded box-score statistics"))
         text = f"### {heading}\n\n"
         if decorate:
-            text += "!" + link(page, asset, "Per-game player statistics") + "\n\n"
+            text += self.cards_navigation(page, groups, heading, as_of) if self.cards_root else "!" + link(page, asset, "Per-game player statistics") + "\n\n"
         text += markdown_table(PER_GAME_COLUMNS, [self.row(page, group, heading, as_of) for group in groups])
         text += "G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.\n\n"
         if self.awards:
             text += f"Awards are confirmed through {self.clock}, filed by the honor's period-end date; the banner shows career honors known at the page's identity cutoff.\n\n"
-        return text
+        return self.award_terms(text)

@@ -2,32 +2,40 @@
 
 # Week 2: 2003-12-08 to 2003-12-14
 
-[Career](../../../../README.md) · [Professional identity](../../../../Professional_Identity.md) · [Earned honors](../../../../Awards.md) · [Stat definitions](../../../../../../docs/player_statistics.md) · [Month](../README.md) · [Miami](../../../Team/2003-04/12_December/Week_2/Team_Stats.md) · [NBA players](../../../League/2003-04/12_December/Week_2/League_Stats.md) · [NBA awards](../../../League/2003-04/12_December/Week_2/League_Awards.md) · [Period decisions](../../../../2003-04/06_Regular_Season/12_December/Week_2/note.md) · [Previous week](../Week_1/README.md) · [Next week](../Week_3/README.md)
+[Career](../../../../README.md) · [Professional identity](../../../../Professional_Identity.md) · [Earned awards](../../../../Awards.md) · [Stat definitions](../../../../../../docs/player_statistics.md) · [Month](../README.md) · [Miami](../../../Team/2003-04/12_December/Week_2/Team_Stats.md) · [NBA players](../../../League/2003-04/12_December/Week_2/League_Stats.md) · [NBA awards](../../../League/2003-04/12_December/Week_2/League_Awards.md) · [Period decisions](../../../../2003-04/06_Regular_Season/12_December/Week_2/note.md) · [Previous week](../Week_1/README.md) · [Next week](../Week_3/README.md)
 
 ## Professional identity
 
-![Player personal information and earned career honors through 2003-06-26](../../../../assets/stat_reports/personal_2003-06-26.svg)
-
-<details>
-<summary>Personal information and earned honors: text version</summary>
+![Player personal information and earned career awards through 2003-06-26](../../../../assets/stat_reports/personal_2003-06-26.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
 | Dwyane Tyrone Wade Jr. | 19 | Miami Heat / NBA | SG / PG | Not assigned | Draft rights; unsigned |
 
-| Birth date | Height (in shoes) | Weight | Shoots | Prior program |
-| --- | --- | --- | --- | --- |
-| 1984-01-17 | 6 ft 6 in | 220 lb | Right | UConn (simulation canon) |
-
-NBA entry: 2003 draft, round 1, No. 5 overall, Miami Heat.
+| Identity field | Recorded value |
+| --- | --- |
+| Birth date | 1984-01-17 |
+| NBA entry | 2003 draft, round 1, No. 5 overall, Miami Heat |
+| Prior program | UConn (simulation canon) |
+| Height, in shoes / without shoes | 6 ft 6 in / 6 ft 4.75 in |
+| Weight | 220 lb |
+| Wingspan / standing reach | 6 ft 11.5 in / 8 ft 7.5 in |
+| Shooting hand | Right |
+| Contract | No executed professional contract |
+| Role | Unassigned rookie |
+| NBA debut | Not recorded |
+| Nationality | Not recorded |
+| National team | No selection recorded |
+| National-team eligibility | Not verified |
+| Availability | No current restriction recorded in the established profile |
+| Physical measurements recorded | 2003-06-25 |
+| Professional status effective | 2003-06-26 |
 
 Identity as of 2003-06-26; status snapshot dated 2003-06-26. User-established alternate-history player; historical Wade's biography and results are not this record.
 
-### Earned career honors
+### Earned career awards
 
-No earned professional honors recorded by this page's identity cutoff.
-
-</details>
+No earned professional awards recorded by this page's identity cutoff.
 
 ## Statistics
 
@@ -39,7 +47,9 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 ### Per game
 
-![Per-game player statistics](../../../../assets/stat_reports/per_game.svg)
+[![Shooting](../../../assets/shooting_link.svg)](../../../player_cards.html?period=regular-2003-04-season#shooting) [![Awards](../../../assets/awards_link.svg)](../../../player_cards.html#awards)
+
+[Shooting detail](../../../Shooting.md) · [Annual award record](../../../Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -51,7 +61,9 @@ G and GS are counts; MP and counting statistics are **per appearance**. Shooting
 
 ### Period comparison
 
-![Per-game player statistics](../../../../assets/stat_reports/per_game.svg)
+[![Shooting](../../../assets/shooting_link.svg)](../../../player_cards.html?period=regular-2003-04-season#shooting) [![Awards](../../../assets/awards_link.svg)](../../../player_cards.html#awards)
+
+[Shooting detail](../../../Shooting.md) · [Annual award record](../../../Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -62,16 +74,84 @@ G and GS are counts; MP and counting statistics are **per appearance**. Shooting
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-### Shooting summary
+### Production
 
-| FG% | 2P% | 3P% | FT% | eFG% | TS% (est.) |
-| --- | --- | --- | --- | --- | --- |
-| N/A | N/A | N/A | N/A | N/A | N/A |
+| Metric | Total | Per appearance | Per 36 minutes |
+| --- | --- | --- | --- |
+| MIN | 0.0 | N/A | N/A |
+| PTS | 0 | N/A | N/A |
+| OREB | 0 | N/A | N/A |
+| DREB | 0 | N/A | N/A |
+| REB | 0 | N/A | N/A |
+| AST | 0 | N/A | N/A |
+| STL | 0 | N/A | N/A |
+| BLK | 0 | N/A | N/A |
+| TOV | 0 | N/A | N/A |
+| PF | 0 | N/A | N/A |
+| FGM | 0 | N/A | N/A |
+| FGA | 0 | N/A | N/A |
+| 2PM | 0 | N/A | N/A |
+| 2PA | 0 | N/A | N/A |
+| 3PM | 0 | N/A | N/A |
+| 3PA | 0 | N/A | N/A |
+| FTM | 0 | N/A | N/A |
+| FTA | 0 | N/A | N/A |
+| FT points | 0 | N/A | N/A |
+
+Per-36 rates standardize playing time; they are not a projection of playing 36 minutes. Use the actual minutes denominator in every competition.
+
+### Shooting
+
+| Shot type | Makes | Attempts | Percentage |
+| --- | --- | --- | --- |
+| All field goals | 0 | 0 | N/A |
+| Two-pointers | 0 | 0 | N/A |
+| Three-pointers | 0 | 0 | N/A |
+| Free throws | 0 | 0 | N/A |
+
+### Efficiency and shot selection
+
+| Metric | Value | Calculation / unit |
+| --- | --- | --- |
+| eFG% | N/A | (FGM + 0.5 × 3PM) / FGA |
+| TS% (estimated) | N/A | PTS / [2 × (FGA + 0.44 × FTA)] |
+| Three-point attempt share | N/A | 3PA / FGA |
+| Free-throw attempt rate | N/A | FTA / FGA; ratio |
+| Assist / turnover ratio | N/A | AST / TOV; N/A at zero turnovers |
+| Plus/minus total | N/A | Observed on-court score differential only |
+| Double-doubles | 0 | At least 10 in any two of PTS, REB, AST, STL, BLK |
+| Triple-doubles | 0 | At least 10 in any three; also included in double-doubles |
+
+Percentages use pooled makes and attempts. TS% uses an estimated free-throw weighting, not exact scoring possessions. Rounding is display-only.
+
+### Game highs
+
+| Metric | High | Date / opponent (all ties) |
+| --- | --- | --- |
+| PTS | N/A | N/A |
+| REB | N/A | N/A |
+| AST | N/A | N/A |
+| STL | N/A | N/A |
+| BLK | N/A | N/A |
+| TOV | N/A | N/A |
 
 ### Game log
 
 No game records in this scope.
 
-### Awards and honors
+### Additional data needed
 
-No NBA honors recorded for this period. [Conference and league award record](../../../League/2003-04/12_December/Week_2/League_Awards.md).
+| Statistic family | Current support | Required evidence |
+| --- | --- | --- |
+| Starts; plus/minus | N/A unless supplied in the player box | Explicit started and plus_minus fields |
+| Per 100 possessions; offensive / defensive / net rating | Unavailable in current box feed | Player on-court possessions and both teams' scoring during those possessions |
+| USG%; AST%; OREB%, DREB%, REB% | Unavailable in current box feed | Matching player/team/opponent opportunity counts and a declared method |
+| Rim, paint, midrange, corner / above-break threes | Unavailable in current box feed | Shot locations, attempts and makes |
+| Drives, touches, catch-and-shoot, pull-ups, play types | Unavailable in current box feed | Tracking or tagged play-by-play |
+| Clutch, on/off, lineup combinations, assisted baskets | Unavailable in current box feed | Timed events, score state, substitutions and possession attribution |
+| Deflections, charges, contested shots, box outs | Unavailable in current box feed | Observed hustle/defensive events |
+| League rank, percentile, relative TS%; impact models | Not derived by this report | Same-period simulated league baseline, eligibility rules and documented model |
+
+### Awards
+
+No NBA awards recorded for this period. [Conference and league award record](../../../League/2003-04/12_December/Week_2/League_Awards.md).
