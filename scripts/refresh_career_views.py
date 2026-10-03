@@ -7,6 +7,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from runtime.league_cards import CARDS_DIR, COLORS_FILE, build_cards
 from runtime.player_reports import build_reports
 
 
@@ -22,6 +23,8 @@ def refresh_career_views(root: Path) -> list[Path]:
     for player in sorted((root / "career").iterdir()):
         if player.is_dir() and (player / "professional_identity.json").is_file():
             outputs.update(build_reports(root, player))
+    if (root / CARDS_DIR).is_dir() and (root / COLORS_FILE).is_file():      # a partial test copy has no card sources
+        outputs.update(build_cards(root))   # league cards follow dated clubs and contracts, so every boundary rebuilds them
     changed = []
     for page, text in outputs.items():
         if not page.is_file() or page.read_text(encoding="utf-8") != text:
