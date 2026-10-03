@@ -2,10 +2,12 @@
 """Collect played games and drawn decisions from the Railway engine into the repository.
 
 Run by the results workflow after every push to the branch Railway tracks, and on
-a schedule. For every `Game_N.request.json` and `*.decision.json` that has no
-result file yet, it asks the public engine endpoints and writes:
+a schedule. For every `*.request.json` (Miami's `Game_N.request.json` next to its
+game note, and the league slate's `<game_id>.request.json` under
+`Stats_and_Awards/League/<season>/Games/`) and every `*.decision.json` that has
+no result file yet, it asks the public engine endpoints and writes:
 
-  Game_N.result.json            next to the request (the full result JSON)
+  <name>.result.json            next to the request (the full result JSON)
   <name>.decision.result.json   next to the decision request
 
 A result file is the engine's answer as served; writing it into the game note

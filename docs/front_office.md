@@ -114,6 +114,10 @@ Proposals to Miami from real clubs and injuries in the value are not built; the 
 | Cut | to fifteen, non-guaranteed contracts first, lowest score times fit; a released camp contract leaves no dead money |
 | Promises | every promised role (from signings) against the rotation: kept at 85% of the promised minutes, else logged as broken for the player's later decisions |
 
+## Regular-season games (roadmap items 10 and 11)
+
+Once the camp decision is written, `python scripts/build_season_games.py --write <date>` writes Miami's game notes and requests on their dates from `rotation.json` (injured players out, the depth chart's next man up, Wade's grade while in force) and `python scripts/build_league_slate.py --write <date>` writes the request for every other club's game; both are described in `runtime/README.md` (Game builders). The front office changes Miami's rotation only by a dated new `rotation.json`, which the builder reads for games from that date; a written request is never changed.
+
 ## Wade's rookie contract (roadmap item 5)
 
 Miami opens with 120% of the No. 5 scale, the customary level for first-round picks: $2,636,400, $2,834,160 and $3,031,920 over 2003-04 to 2005-06, plus a $3,841,443 team option for 2006-07, to be exercised by October 31, 2005 (October 31 after his second season, FAQ Q38). Miami intends to sign him after its July free-agency moves, because until he signs he counts at 100% of scale.

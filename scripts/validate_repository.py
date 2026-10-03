@@ -612,7 +612,10 @@ def validate():
 
     from runtime.game_requests import find_requests, request_errors
     errors.extend(request_errors(ROOT))
+    from runtime.season_games import is_league_slate
     for request in find_requests(ROOT):
+        if is_league_slate(request):
+            continue                      # the league slate has no game notes: its results are league records
         note=request.with_name(request.name.replace(".request.json",".md"))
         require(errors,note.is_file(),f"{request.relative_to(ROOT)}: no matching game note {note.name}")
 

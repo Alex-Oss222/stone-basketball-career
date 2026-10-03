@@ -104,15 +104,29 @@ def load_request(path, root=ROOT):
 
 
 def request_errors(root=ROOT):
-    errors, seen = [], {}
+    """Every request in the repository: the engine's full check for Miami's game requests (each has a
+    game note), structural checks for all of the league slate plus the engine's check on a sample
+    (`runtime/season_games.py`, since the slate has 1,189 requests), and unique event ids throughout."""
+    from .season_games import is_league_slate, slate_errors
+    errors, seen, slate = [], {}, []
     for path in find_requests(root):
         rel = path.relative_to(root)
-        try:
-            _, _, kwargs = load_request(path, root)
-        except (OSError, KeyError, TypeError, ValueError) as exc:
-            errors.append(f"{rel}: {exc}")
-            continue
-        if kwargs["event_id"] in seen:
-            errors.append(f"{rel}: event_id also used by {seen[kwargs['event_id']]}")
-        seen[kwargs["event_id"]] = rel
+        if is_league_slate(path):
+            slate.append(path)
+            try:
+                event_id = json.loads(path.read_text(encoding="utf-8"))["event_id"]
+            except (OSError, KeyError, TypeError, ValueError) as exc:
+                errors.append(f"{rel}: {exc}")
+                continue
+        else:
+            try:
+                _, _, kwargs = load_request(path, root)
+            except (OSError, KeyError, TypeError, ValueError) as exc:
+                errors.append(f"{rel}: {exc}")
+                continue
+            event_id = kwargs["event_id"]
+        if event_id in seen:
+            errors.append(f"{rel}: event_id also used by {seen[event_id]}")
+        seen[event_id] = rel
+    errors.extend(slate_errors(slate, root))
     return errors
