@@ -2,9 +2,9 @@
 
 # Contract | Danny Manning
 
-Known through: 2003-10-29. [Open interactive contract](mannida01.html#contract) · [Contract history](mannida01.html#contract-history)
+Known through: 2003-10-31. [Open interactive contract](mannida01.html#contract) · [Contract history](mannida01.html#contract-history)
 
-Danny Manning: free agent expiring. Evidence cutoff: 2003-10-29.
+Danny Manning: free agent expiring. Evidence cutoff: 2003-10-31.
 
 ## Current contract
 

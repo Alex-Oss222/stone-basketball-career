@@ -2,9 +2,9 @@
 
 # Contract | Bobby Simmons
 
-Known through: 2003-10-29. [Open interactive contract](simmobo01.html#contract) · [Contract history](simmobo01.html#contract-history)
+Known through: 2003-10-31. [Open interactive contract](simmobo01.html#contract) · [Contract history](simmobo01.html#contract-history)
 
-Bobby Simmons: free agent expiring. Evidence cutoff: 2003-10-29.
+Bobby Simmons: free agent expiring. Evidence cutoff: 2003-10-31.
 
 ## Current contract
 

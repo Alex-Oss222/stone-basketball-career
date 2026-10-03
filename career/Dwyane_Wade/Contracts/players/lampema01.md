@@ -2,9 +2,9 @@
 
 # Contract | Maciej Lampe
 
-Known through: 2003-10-29. [Open interactive contract](lampema01.html#contract) · [Contract history](lampema01.html#contract-history)
+Known through: 2003-10-31. [Open interactive contract](lampema01.html#contract) · [Contract history](lampema01.html#contract-history)
 
-Maciej Lampe: No verified contract record. Evidence cutoff: 2003-10-29.
+Maciej Lampe: No verified contract record. Evidence cutoff: 2003-10-31.
 
 ## Current contract
 

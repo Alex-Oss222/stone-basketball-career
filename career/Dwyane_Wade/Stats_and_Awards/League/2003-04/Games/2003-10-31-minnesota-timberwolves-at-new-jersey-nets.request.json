@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-10-31-minnesota-timberwolves-at-new-jersey-nets",
+ "game_date": "2003-10-31",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Minnesota Timberwolves",
+  "rotation": "real"
+ }
+}

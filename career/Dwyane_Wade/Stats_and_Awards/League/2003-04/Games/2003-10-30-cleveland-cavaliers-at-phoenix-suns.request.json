@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-10-30-cleveland-cavaliers-at-phoenix-suns",
+ "game_date": "2003-10-30",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ }
+}

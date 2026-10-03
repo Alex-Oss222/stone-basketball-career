@@ -2,9 +2,9 @@
 
 # Contract | Zydrunas Ilgauskas
 
-Known through: 2003-10-29. [Open interactive contract](ilgauzy01.html#contract) · [Contract history](ilgauzy01.html#contract-history)
+Known through: 2003-10-31. [Open interactive contract](ilgauzy01.html#contract) · [Contract history](ilgauzy01.html#contract-history)
 
-Zydrunas Ilgauskas: under contract. Evidence cutoff: 2003-10-29.
+Zydrunas Ilgauskas: under contract. Evidence cutoff: 2003-10-31.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Keith Van Horn
 
-Known through: 2003-10-29. [Open interactive contract](vanhoke01.html#contract) · [Contract history](vanhoke01.html#contract-history)
+Known through: 2003-10-31. [Open interactive contract](vanhoke01.html#contract) · [Contract history](vanhoke01.html#contract-history)
 
-Keith Van Horn: under contract. Evidence cutoff: 2003-10-29.
+Keith Van Horn: under contract. Evidence cutoff: 2003-10-31.
 
 ## Current contract
 
