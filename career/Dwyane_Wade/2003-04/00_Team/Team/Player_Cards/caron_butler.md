@@ -12,6 +12,12 @@
 
 **Contract/control:** Rookie contract through 2004-05, plus a 2005-06 team option; 2003-04 salary $1,804,680. [Finance record](../../Finances/cap_sheet.md).
 
+<!-- contract-navigation:start -->
+[Current contract](../../../../Contracts/players/butleca01.html#contract) · [Contract history](../../../../Contracts/players/butleca01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
+
+Contract pages follow the current career date; this personnel assessment retains its stated date.
+<!-- contract-navigation:end -->
+
 ## Scouting report
 
 **Role:** 2002-03 SF1 is the carried 2002-03 baseline; Miami has not finalized the 2003-04 role.

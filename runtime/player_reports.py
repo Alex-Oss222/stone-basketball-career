@@ -255,7 +255,11 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
     records = collect_games(player, identity, as_of)
     outputs = {}
     awards = load_awards(player, as_of)
-    outputs.update(build_player_cards(root, player, identity, records, awards, as_of))
+    from .player_contracts import build_contract_catalog
+    from .contract_pages import build_contract_pages
+    contract_catalog = build_contract_catalog(root, player, as_of)
+    outputs.update(build_player_cards(root, player, identity, records, awards, as_of, contract_catalog=contract_catalog))
+    outputs.update(build_contract_pages(root, player, as_of, catalog=contract_catalog))
     card_data = json.loads(outputs[player / "Stats_and_Awards/player_cards_data.json"])
     style = ReportStyle(identity, awards, as_of, outputs, player / "assets/stat_reports", player,
                         cards_root=player / "Stats_and_Awards", card_periods=[p["id"] for p in card_data["periods"]],
@@ -500,10 +504,13 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
     outputs.update(build_milestone_pages(player, identity, records, root=root))
     from .milestone_records import build_phase_navigation
     outputs.update(build_phase_navigation(root, player))
+    from .contract_navigation import build_contract_navigation
+    contract_navigation = build_contract_navigation(root, player)
+    outputs.update(contract_navigation)
     for page in (player / "README.md", stats / "README.md", *(s / "README.md" for s in seasons)):
         if page in outputs:
-            outputs[page] += "\n" + link(page, player / "Milestones/index.html", "Open your live career milestones") + " · " + link(page, stats / "player_cards.html", "Detailed Shooting and Awards") + "\n"
-    return {page: (style.award_terms(text) if page.suffix == ".md" else text).rstrip() + "\n" for page, text in outputs.items()}
+            outputs[page] += "\n" + link(page, player / "Milestones/index.html", "Open your live career milestones") + " · " + link(page, stats / "player_cards.html", "Detailed Shooting, Contract and Awards") + " · " + link(page, player / "Contracts/index.html", "Every player's contract") + "\n"
+    return {page: (style.award_terms(text) if page.suffix == ".md" and page not in contract_navigation else text).rstrip() + "\n" for page, text in outputs.items()}
 
 
 def report_errors(root: Path, player: Path) -> list[str]:

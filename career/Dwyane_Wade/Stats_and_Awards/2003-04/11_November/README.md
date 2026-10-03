@@ -47,9 +47,9 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 ### Per game
 
-[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-season#shooting) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
+[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-season#shooting) [![Contract](../../assets/contract_link.svg)](../../player_cards.html#contract) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
 
-[Shooting detail](../../Shooting.md) · [Annual award record](../../Awards.md)
+[Shooting detail](../../Shooting.md) · [Current contract](../../Contract.md#current-contract) · [Contract history](../../Contract.md#contract-history) · [Annual award record](../../Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -61,9 +61,9 @@ G and GS are counts; MP and counting statistics are **per appearance**. Shooting
 
 ### Period summary
 
-[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-season#shooting) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
+[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-season#shooting) [![Contract](../../assets/contract_link.svg)](../../player_cards.html#contract) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
 
-[Shooting detail](../../Shooting.md) · [Annual award record](../../Awards.md)
+[Shooting detail](../../Shooting.md) · [Current contract](../../Contract.md#current-contract) · [Contract history](../../Contract.md#contract-history) · [Annual award record](../../Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -76,9 +76,9 @@ G and GS are counts; MP and counting statistics are **per appearance**. Shooting
 
 ### Period comparison
 
-[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-season#shooting) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
+[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-season#shooting) [![Contract](../../assets/contract_link.svg)](../../player_cards.html#contract) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
 
-[Shooting detail](../../Shooting.md) · [Annual award record](../../Awards.md)
+[Shooting detail](../../Shooting.md) · [Current contract](../../Contract.md#current-contract) · [Contract history](../../Contract.md#contract-history) · [Annual award record](../../Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

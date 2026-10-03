@@ -9,7 +9,8 @@ same event with changed inputs is refused, so a result cannot be re-rolled.
 
 Public (results are not secret; only the seed is):
   GET /career                     detailed canonical milestone screens
-  GET /cards                      canonical Shooting and Awards
+  GET /cards                      canonical Shooting, Contract and Awards
+  GET /contracts                  every tracked player's contract page
   GET /career/status              current screen cutoff and deployed revision
   GET /health
   GET /games                       every request and its status
@@ -223,9 +224,10 @@ def handler(store, token, games, career_site=None):
             if path == "/health":
                 return self.send(200, {"service": SERVICE, "schema": SCHEMA_VERSION, "kernel": KERNEL_VERSION})
             if career_site is not None:
-                if path in ("/", "/career", "/player", "/cards"):
+                if path in ("/", "/career", "/player", "/cards", "/contracts"):
                     self.send_response(302)
-                    self.send_header("Location", career_site.cards if path in ("/player", "/cards") else career_site.home)
+                    self.send_header("Location", career_site.contracts if path == "/contracts" else
+                                     career_site.cards if path in ("/player", "/cards") else career_site.home)
                     self.send_header("Cache-Control", "no-cache")
                     self.end_headers()
                     return

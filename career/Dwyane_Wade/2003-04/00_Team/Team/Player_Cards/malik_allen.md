@@ -12,6 +12,12 @@
 
 **Contract/control:** 2002-03 contract reaches June 30; future qualifying-offer/free-agency action not yet recorded. [Finance record](../../Finances/cap_sheet.md).
 
+<!-- contract-navigation:start -->
+[Current contract](../../../../Contracts/players/allenma01.html#contract) · [Contract history](../../../../Contracts/players/allenma01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
+
+Contract pages follow the current career date; this personnel assessment retains its stated date.
+<!-- contract-navigation:end -->
+
 ## Scouting report
 
 **Role:** 2002-03 PF1 is the carried 2002-03 baseline; Miami has not finalized the 2003-04 role.

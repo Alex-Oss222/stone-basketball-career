@@ -2,7 +2,7 @@
 
 > **ILLUSTRATIVE TEMPLATE ONLY.** All games, teams, dates and performance figures below are invented for layout testing. They are not Wade's career results or a simulated future outcome.
 
-[Open interactive Awards](player_cards_preview.html#awards) · [Statistics index](player_stats_preview.md) · [Shooting](sample_shooting.md)
+[Open interactive Awards](player_cards_preview.html#awards) · [Statistics index](player_stats_preview.md) · [Shooting](sample_shooting.md) · [Contract](sample_contract.md)
 
 This page presents **annual awards by season**. Only records explicitly marked earned, scoped to that season, and announced on or before that scenario's cutoff receive a badge. Nominees and pending decisions are excluded.
 

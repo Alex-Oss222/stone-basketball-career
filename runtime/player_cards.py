@@ -1,4 +1,4 @@
-"""Live Shooting and Awards views from closed career evidence.
+"""Live Shooting, Contract and Awards views from dated career evidence.
 
 No preview fixture or historical player data is imported here. Coordinates are
 read only from an explicitly declared, dated shot_file beside a closed note.
@@ -264,11 +264,18 @@ def _table(headers, rows):
         "| " + " | ".join(clean(v) for v in row) + " |\n" for row in rows) + "\n"
 
 
-def build_player_cards(root, player, identity, records, awards, clock):
+def build_player_cards(root, player, identity, records, awards, clock, *, contract_catalog=None):
+    from .player_contracts import build_contract_catalog, contract_payload
+    from .contract_pages import contract_markdown
     payload = player_cards_data(player, identity, records, awards, clock)
     folder = player / "Stats_and_Awards"
     page = folder / "player_cards.html"
     payload["links"]["definitions"] = relative(page, root / "docs/player_statistics.md")
+    catalog = contract_catalog or build_contract_catalog(root, player, clock)
+    own = next(p for p in catalog["players"] if p["id"] == catalog["default_player_id"])
+    payload["contracts"] = contract_payload(own, page=page, root=root)
+    payload["links"].update(contract="Contract.md", contracts="../Contracts/index.html")
+    payload["notice"] = f"Career records through {clock}. Closed games, recorded contracts and earned awards. Missing evidence remains explicit."
     template = (Path(__file__).parent / "assets/player_cards.html").read_text(encoding="utf-8")
     if template.count("__PLAYER_CARD_DATA__") != 1:
         raise ValueError("runtime player-card template must contain exactly one data token")
@@ -276,9 +283,11 @@ def build_player_cards(root, player, identity, records, awards, clock):
     encoded = json.dumps(payload, ensure_ascii=False).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
     outputs = {page: template.replace("__PLAYER_CARD_DATA__", encoded), folder / "player_cards_data.json": data_json}
     outputs[folder / "assets/shooting_link.svg"] = navigation_badge("Shooting", "Recorded court locations · full zone statistics · period selector", "#e34e67")
+    outputs[folder / "assets/contract_link.svg"] = navigation_badge("Contract", "Current agreement · full terms · salary schedule · contract history", "#83bfc5")
     outputs[folder / "assets/awards_link.svg"] = navigation_badge("Awards", "Earned annual awards · season selector · dated source records", "#efbf58")
+    outputs[folder / "Contract.md"] = contract_markdown(payload["contracts"], payload["identity"]["name"], interactive="player_cards.html")
     shooting = GENERATED + f'\n# Shooting | {payload["identity"]["name"]}\n\n'
-    shooting += f'Career cutoff: **{clock}**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Awards](Awards.md)\n\n'
+    shooting += f'Career cutoff: **{clock}**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)\n\n'
     shooting += "The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.\n\n"
     for p in payload["periods"]:
         shooting += f'## {p["label"]}\n\n[Open this period](player_cards.html?period={p["id"]}#shooting)\n\n'

@@ -188,12 +188,15 @@ class ReportStyle:
         if pid not in self.card_periods:
             pid = self.default_card_period
         shooting_image = "!" + link(page, self.cards_root / "assets/shooting_link.svg", "Shooting")
+        contract_image = "!" + link(page, self.cards_root / "assets/contract_link.svg", "Contract")
         awards_image = "!" + link(page, self.cards_root / "assets/awards_link.svg", "Awards")
         shooting_path = Path(os.path.relpath(self.cards_root / "Shooting.md", page.parent)).as_posix()
+        contract_path = Path(os.path.relpath(self.cards_root / "Contract.md", page.parent)).as_posix()
         awards_path = Path(os.path.relpath(self.cards_root / "Awards.md", page.parent)).as_posix()
         html = Path(os.path.relpath(self.cards_root / "player_cards.html", page.parent)).as_posix()
-        return (f"[{shooting_image}]({html}?period={pid}#shooting) [{awards_image}]({html}#awards)\n\n"
-                f"[Shooting detail]({shooting_path}) · [Annual award record]({awards_path})\n\n")
+        return (f"[{shooting_image}]({html}?period={pid}#shooting) [{contract_image}]({html}#contract) [{awards_image}]({html}#awards)\n\n"
+                f"[Shooting detail]({shooting_path}) · [Current contract]({contract_path}#current-contract) · "
+                f"[Contract history]({contract_path}#contract-history) · [Annual award record]({awards_path})\n\n")
 
     def header(self, page, cutoff):
         asset = self.asset_dir / f"personal_{cutoff}.svg"

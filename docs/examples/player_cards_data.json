@@ -9102,6 +9102,1084 @@
       }
     }
   ],
+  "enabled_tabs": [
+    "shooting",
+    "contract",
+    "awards"
+  ],
+  "contracts": {
+    "as_of": "2003-11-12",
+    "player_id": "example_contract_player",
+    "status": "active",
+    "summary": "Three scheduled seasons at $15,750,000 in base salary. The first two years total $10,250,000 in guaranteed base salary; the third is a $5,500,000 team option. Annual incentives are tracked separately. No exercise decision is presumed.",
+    "notice": "INDEPENDENT FICTIONAL CONTRACT DESIGN SCENARIO. Example Contract Player is a 25-year-old veteran. These invented agreements are separate from the 19-year-old Shooting sample, the Awards scenarios and Wade's career. Amounts illustrate recorded terms; they are not a market quote or an approved NBA agreement.",
+    "identity": {
+      "name": "Example Contract Player",
+      "team": "Example Club",
+      "jersey": 7,
+      "position": "SG",
+      "age": 25,
+      "height": "6 ft 4 in",
+      "weight": "210 lb",
+      "shoots": "Right",
+      "entry": "Independent veteran contract design fixture",
+      "photo_url": null,
+      "initials": "EC",
+      "status": "Fictional contract illustration"
+    },
+    "current": {
+      "id": "example-veteran-2003",
+      "title": "Example Club | Veteran agreement",
+      "team": "Example Club",
+      "type": "Veteran free-agent signing (fictional)",
+      "status": "active",
+      "signed_on": "2003-07-17",
+      "start_season": "2003-04",
+      "end_season": "2005-06",
+      "summary": "Three scheduled seasons at $15,750,000 in base salary. The first two years total $10,250,000 in guaranteed base salary; the third is a $5,500,000 team option. Annual incentives are tracked separately. No exercise decision is presumed.",
+      "metrics": [
+        {
+          "label": "Scheduled base",
+          "value": "$15,750,000",
+          "detail": "Includes the unexercised $5,500,000 team option."
+        },
+        {
+          "label": "Guaranteed base",
+          "value": "$10,250,000",
+          "detail": "Two protected seasons; excludes incentives."
+        },
+        {
+          "label": "Base annual average",
+          "value": "$5,250,000",
+          "detail": "Scheduled base divided by three seasons."
+        },
+        {
+          "label": "Current base salary",
+          "value": "$5,000,000",
+          "detail": "2003-04 scheduled salary; not payroll paid."
+        },
+        {
+          "label": "Option decision",
+          "value": "Jun 29, 2005",
+          "detail": "Fictional contractual notice deadline."
+        },
+        {
+          "label": "Maximum incentives",
+          "value": "$450,000",
+          "detail": "Up to $150,000 per season; contingent."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Independent fictional agreement and term schedules",
+          "href": "sample_contract.md#current-agreement"
+        },
+        {
+          "label": "Machine-readable design fixture",
+          "href": "player_cards_data.json"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Agreement summary",
+          "columns": [
+            "Recorded term",
+            "Value",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "Player / age",
+              "Example Contract Player / 25",
+              "Independent veteran design identity."
+            ],
+            [
+              "Signed / effective",
+              "July 17, 2003 / 2003-04 season",
+              "Design fixture records both dates."
+            ],
+            [
+              "Signing method",
+              "Free-agent contract with Example Club",
+              "Cap-space route is asserted only inside this fictional fixture."
+            ],
+            [
+              "Contract length",
+              "3 seasons: 2003-04 through 2005-06",
+              "Final season is a team option, not an exercised commitment."
+            ],
+            [
+              "Total base / maximum compensation",
+              "$15,750,000 / $16,200,000",
+              "Maximum adds all $450,000 of contingent incentives."
+            ],
+            [
+              "Agent",
+              null,
+              "No invented representative or contact details."
+            ],
+            [
+              "Cap percentage",
+              null,
+              "No verified cap denominator is attached to this independent fixture."
+            ]
+          ],
+          "body": null,
+          "items": [],
+          "notice": null
+        },
+        {
+          "title": "Salary by season and option control",
+          "columns": [
+            "Season",
+            "Base salary",
+            "Guaranteed base",
+            "Likely bonus",
+            "Unlikely bonus",
+            "Illustrative cap charge",
+            "Option / control",
+            "Decision deadline"
+          ],
+          "rows": [
+            [
+              "2003-04",
+              "$5,000,000",
+              "$5,000,000",
+              "$50,000",
+              "$100,000",
+              "$5,050,000",
+              "No option",
+              "Not applicable"
+            ],
+            [
+              "2004-05",
+              "$5,250,000",
+              "$5,250,000",
+              "$50,000",
+              "$100,000",
+              "$5,300,000",
+              "No option",
+              "Not applicable"
+            ],
+            [
+              "2005-06",
+              "$5,500,000",
+              "$0",
+              "$50,000",
+              "$100,000",
+              "$5,550,000",
+              "Team option; not exercised",
+              "June 29, 2005"
+            ],
+            [
+              "Scheduled total",
+              "$15,750,000",
+              "$10,250,000",
+              "$150,000",
+              "$300,000",
+              "$15,900,000",
+              "Includes contingent final season",
+              "No decision entered"
+            ]
+          ],
+          "body": "Illustrative cap charges are base salary plus the fixture's likely bonus. They are distinct from guaranteed cash, earned compensation and spendable team room.",
+          "items": [],
+          "notice": "Option-year salary and cap charge are conditional. The $0 guaranteed base for 2005-06 does not erase the $5,500,000 option amount or resolve the club's future cap hold."
+        },
+        {
+          "title": "Guarantees and protection schedule",
+          "columns": [
+            "Protection",
+            "Amount / timing",
+            "Recorded condition"
+          ],
+          "rows": [
+            [
+              "2003-04 base",
+              "$5,000,000",
+              "Fully protected under the fictional signed schedule."
+            ],
+            [
+              "2004-05 base",
+              "$5,250,000",
+              "Fully protected under the fictional signed schedule."
+            ],
+            [
+              "2005-06 base",
+              "$5,500,000 if option exercised",
+              "No guarantee has vested at the November 12, 2003 cutoff."
+            ],
+            [
+              "Guarantee total",
+              "$10,250,000",
+              "Base only; does not assume an incentive is earned."
+            ],
+            [
+              "Payment timing",
+              null,
+              "Actual installments, escrow deductions and payroll paid are not supplied."
+            ],
+            [
+              "Waiver / set-off detail",
+              null,
+              "A protection amount is not a complete waiver calculation."
+            ]
+          ],
+          "body": null,
+          "items": [],
+          "notice": null
+        },
+        {
+          "title": "Incentives and performance conditions",
+          "columns": [
+            "Season",
+            "Bonus",
+            "Classification",
+            "Maximum",
+            "Earned status"
+          ],
+          "rows": [
+            [
+              "Each scheduled season",
+              "At least 65 appearances",
+              "Likely in this fixture",
+              "$50,000",
+              "Not determined at cutoff"
+            ],
+            [
+              "Each scheduled season",
+              "All-Defensive team selection",
+              "Unlikely in this fixture",
+              "$100,000",
+              "Not determined at cutoff"
+            ],
+            [
+              "All three seasons",
+              "Aggregate contingent maximum",
+              "Separate from base guarantee",
+              "$450,000",
+              "No bonus paid or earned is asserted"
+            ]
+          ],
+          "body": null,
+          "items": [],
+          "notice": "Thresholds and likely/unlikely labels are invented design data, not facts derived from the six Shooting games. Option-year bonuses exist only if that season becomes effective."
+        },
+        {
+          "title": "Rights, option deadlines and expiry",
+          "columns": [
+            "Checkpoint",
+            "Date / holder",
+            "Consequence"
+          ],
+          "rows": [
+            [
+              "Team-option holder",
+              "Example Club",
+              "The player cannot exercise or decline the club's option."
+            ],
+            [
+              "Option notice",
+              "June 29, 2005",
+              "A future fixture deadline, with no outcome entered."
+            ],
+            [
+              "Earliest contractual end",
+              "June 30, 2005",
+              "If the team option is not exercised."
+            ],
+            [
+              "Scheduled end if exercised",
+              "June 30, 2006",
+              "Would require a recorded option decision."
+            ],
+            [
+              "Projected free-agent classification",
+              null,
+              "Requires a dated service/control check at expiry."
+            ],
+            [
+              "Bird rights / extension eligibility",
+              null,
+              "Not established by this design fixture."
+            ],
+            [
+              "Current negotiation",
+              "None recorded",
+              "This is a signed example, not a new offer or editable counter."
+            ]
+          ],
+          "body": null,
+          "items": [],
+          "notice": null
+        },
+        {
+          "title": "Clauses, assignment and player control",
+          "columns": [
+            "Clause",
+            "Recorded term",
+            "Player-facing effect"
+          ],
+          "rows": [
+            [
+              "No-trade clause",
+              "Not granted in the fixture",
+              "No general player veto is displayed."
+            ],
+            [
+              "Trade bonus",
+              "No trade bonus in the fixture",
+              "No bonus is added to the scheduled figures."
+            ],
+            [
+              "Assignment",
+              "Agreement remains in force upon a permitted trade",
+              "A trade does not become a replacement signing."
+            ],
+            [
+              "Trade eligibility restriction",
+              null,
+              "Requires the applicable dated rules and transaction record."
+            ],
+            [
+              "Amendments",
+              "None recorded as of November 12, 2003",
+              "The original document remains the version shown."
+            ],
+            [
+              "Other negotiated clauses",
+              null,
+              "An absent clause field is not proof that no clause exists."
+            ]
+          ],
+          "body": null,
+          "items": [],
+          "notice": null
+        },
+        {
+          "title": "Transaction and document audit",
+          "columns": [
+            "Date",
+            "Recorded event",
+            "Effect",
+            "Source"
+          ],
+          "rows": [
+            [
+              "2003-06-30",
+              "Prior fictional agreement expired",
+              "History retained; no salary carried into this new agreement",
+              {
+                "label": "Prior agreement",
+                "href": "sample_contract.md#prior-agreement"
+              }
+            ],
+            [
+              "2003-07-17",
+              "Current fictional agreement signed",
+              "Base salary schedule and protections begin",
+              {
+                "label": "Current agreement",
+                "href": "sample_contract.md#current-agreement"
+              }
+            ],
+            [
+              "2003-11-12",
+              "Design record cutoff",
+              "No option exercise, trade, bonus award or amendment entered",
+              {
+                "label": "Fixture provenance",
+                "href": "sample_contract.md#fixture-provenance"
+              }
+            ]
+          ],
+          "body": null,
+          "items": [],
+          "notice": null
+        },
+        {
+          "title": "Signed document and evidence boundaries",
+          "columns": [
+            "Document field",
+            "Recorded value"
+          ],
+          "rows": [
+            [
+              "Document",
+              "Fictional current-agreement term sheet, version 1"
+            ],
+            [
+              "Signing evidence",
+              {
+                "label": "Complete fictional agreement schedule",
+                "href": "sample_contract.md#current-agreement"
+              }
+            ],
+            [
+              "Machine-readable record ID",
+              "example-veteran-2003"
+            ],
+            [
+              "Signature scan / registration confirmation",
+              null
+            ],
+            [
+              "Evidence status",
+              "Explicit design fixture only; no executed legal document or career event"
+            ]
+          ],
+          "body": null,
+          "items": [],
+          "notice": "INDEPENDENT FICTIONAL CONTRACT DESIGN SCENARIO. Example Contract Player is a 25-year-old veteran. These invented agreements are separate from the 19-year-old Shooting sample, the Awards scenarios and Wade's career. Amounts illustrate recorded terms; they are not a market quote or an approved NBA agreement."
+        }
+      ]
+    },
+    "history": [
+      {
+        "id": "example-veteran-2003",
+        "title": "Example Club | Veteran agreement",
+        "team": "Example Club",
+        "type": "Veteran free-agent signing (fictional)",
+        "status": "active",
+        "signed_on": "2003-07-17",
+        "start_season": "2003-04",
+        "end_season": "2005-06",
+        "summary": "Three scheduled seasons at $15,750,000 in base salary. The first two years total $10,250,000 in guaranteed base salary; the third is a $5,500,000 team option. Annual incentives are tracked separately. No exercise decision is presumed.",
+        "metrics": [
+          {
+            "label": "Scheduled base",
+            "value": "$15,750,000",
+            "detail": "Includes the unexercised $5,500,000 team option."
+          },
+          {
+            "label": "Guaranteed base",
+            "value": "$10,250,000",
+            "detail": "Two protected seasons; excludes incentives."
+          },
+          {
+            "label": "Base annual average",
+            "value": "$5,250,000",
+            "detail": "Scheduled base divided by three seasons."
+          },
+          {
+            "label": "Current base salary",
+            "value": "$5,000,000",
+            "detail": "2003-04 scheduled salary; not payroll paid."
+          },
+          {
+            "label": "Option decision",
+            "value": "Jun 29, 2005",
+            "detail": "Fictional contractual notice deadline."
+          },
+          {
+            "label": "Maximum incentives",
+            "value": "$450,000",
+            "detail": "Up to $150,000 per season; contingent."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Independent fictional agreement and term schedules",
+            "href": "sample_contract.md#current-agreement"
+          },
+          {
+            "label": "Machine-readable design fixture",
+            "href": "player_cards_data.json"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Agreement summary",
+            "columns": [
+              "Recorded term",
+              "Value",
+              "Meaning"
+            ],
+            "rows": [
+              [
+                "Player / age",
+                "Example Contract Player / 25",
+                "Independent veteran design identity."
+              ],
+              [
+                "Signed / effective",
+                "July 17, 2003 / 2003-04 season",
+                "Design fixture records both dates."
+              ],
+              [
+                "Signing method",
+                "Free-agent contract with Example Club",
+                "Cap-space route is asserted only inside this fictional fixture."
+              ],
+              [
+                "Contract length",
+                "3 seasons: 2003-04 through 2005-06",
+                "Final season is a team option, not an exercised commitment."
+              ],
+              [
+                "Total base / maximum compensation",
+                "$15,750,000 / $16,200,000",
+                "Maximum adds all $450,000 of contingent incentives."
+              ],
+              [
+                "Agent",
+                null,
+                "No invented representative or contact details."
+              ],
+              [
+                "Cap percentage",
+                null,
+                "No verified cap denominator is attached to this independent fixture."
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": null
+          },
+          {
+            "title": "Salary by season and option control",
+            "columns": [
+              "Season",
+              "Base salary",
+              "Guaranteed base",
+              "Likely bonus",
+              "Unlikely bonus",
+              "Illustrative cap charge",
+              "Option / control",
+              "Decision deadline"
+            ],
+            "rows": [
+              [
+                "2003-04",
+                "$5,000,000",
+                "$5,000,000",
+                "$50,000",
+                "$100,000",
+                "$5,050,000",
+                "No option",
+                "Not applicable"
+              ],
+              [
+                "2004-05",
+                "$5,250,000",
+                "$5,250,000",
+                "$50,000",
+                "$100,000",
+                "$5,300,000",
+                "No option",
+                "Not applicable"
+              ],
+              [
+                "2005-06",
+                "$5,500,000",
+                "$0",
+                "$50,000",
+                "$100,000",
+                "$5,550,000",
+                "Team option; not exercised",
+                "June 29, 2005"
+              ],
+              [
+                "Scheduled total",
+                "$15,750,000",
+                "$10,250,000",
+                "$150,000",
+                "$300,000",
+                "$15,900,000",
+                "Includes contingent final season",
+                "No decision entered"
+              ]
+            ],
+            "body": "Illustrative cap charges are base salary plus the fixture's likely bonus. They are distinct from guaranteed cash, earned compensation and spendable team room.",
+            "items": [],
+            "notice": "Option-year salary and cap charge are conditional. The $0 guaranteed base for 2005-06 does not erase the $5,500,000 option amount or resolve the club's future cap hold."
+          },
+          {
+            "title": "Guarantees and protection schedule",
+            "columns": [
+              "Protection",
+              "Amount / timing",
+              "Recorded condition"
+            ],
+            "rows": [
+              [
+                "2003-04 base",
+                "$5,000,000",
+                "Fully protected under the fictional signed schedule."
+              ],
+              [
+                "2004-05 base",
+                "$5,250,000",
+                "Fully protected under the fictional signed schedule."
+              ],
+              [
+                "2005-06 base",
+                "$5,500,000 if option exercised",
+                "No guarantee has vested at the November 12, 2003 cutoff."
+              ],
+              [
+                "Guarantee total",
+                "$10,250,000",
+                "Base only; does not assume an incentive is earned."
+              ],
+              [
+                "Payment timing",
+                null,
+                "Actual installments, escrow deductions and payroll paid are not supplied."
+              ],
+              [
+                "Waiver / set-off detail",
+                null,
+                "A protection amount is not a complete waiver calculation."
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": null
+          },
+          {
+            "title": "Incentives and performance conditions",
+            "columns": [
+              "Season",
+              "Bonus",
+              "Classification",
+              "Maximum",
+              "Earned status"
+            ],
+            "rows": [
+              [
+                "Each scheduled season",
+                "At least 65 appearances",
+                "Likely in this fixture",
+                "$50,000",
+                "Not determined at cutoff"
+              ],
+              [
+                "Each scheduled season",
+                "All-Defensive team selection",
+                "Unlikely in this fixture",
+                "$100,000",
+                "Not determined at cutoff"
+              ],
+              [
+                "All three seasons",
+                "Aggregate contingent maximum",
+                "Separate from base guarantee",
+                "$450,000",
+                "No bonus paid or earned is asserted"
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": "Thresholds and likely/unlikely labels are invented design data, not facts derived from the six Shooting games. Option-year bonuses exist only if that season becomes effective."
+          },
+          {
+            "title": "Rights, option deadlines and expiry",
+            "columns": [
+              "Checkpoint",
+              "Date / holder",
+              "Consequence"
+            ],
+            "rows": [
+              [
+                "Team-option holder",
+                "Example Club",
+                "The player cannot exercise or decline the club's option."
+              ],
+              [
+                "Option notice",
+                "June 29, 2005",
+                "A future fixture deadline, with no outcome entered."
+              ],
+              [
+                "Earliest contractual end",
+                "June 30, 2005",
+                "If the team option is not exercised."
+              ],
+              [
+                "Scheduled end if exercised",
+                "June 30, 2006",
+                "Would require a recorded option decision."
+              ],
+              [
+                "Projected free-agent classification",
+                null,
+                "Requires a dated service/control check at expiry."
+              ],
+              [
+                "Bird rights / extension eligibility",
+                null,
+                "Not established by this design fixture."
+              ],
+              [
+                "Current negotiation",
+                "None recorded",
+                "This is a signed example, not a new offer or editable counter."
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": null
+          },
+          {
+            "title": "Clauses, assignment and player control",
+            "columns": [
+              "Clause",
+              "Recorded term",
+              "Player-facing effect"
+            ],
+            "rows": [
+              [
+                "No-trade clause",
+                "Not granted in the fixture",
+                "No general player veto is displayed."
+              ],
+              [
+                "Trade bonus",
+                "No trade bonus in the fixture",
+                "No bonus is added to the scheduled figures."
+              ],
+              [
+                "Assignment",
+                "Agreement remains in force upon a permitted trade",
+                "A trade does not become a replacement signing."
+              ],
+              [
+                "Trade eligibility restriction",
+                null,
+                "Requires the applicable dated rules and transaction record."
+              ],
+              [
+                "Amendments",
+                "None recorded as of November 12, 2003",
+                "The original document remains the version shown."
+              ],
+              [
+                "Other negotiated clauses",
+                null,
+                "An absent clause field is not proof that no clause exists."
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": null
+          },
+          {
+            "title": "Transaction and document audit",
+            "columns": [
+              "Date",
+              "Recorded event",
+              "Effect",
+              "Source"
+            ],
+            "rows": [
+              [
+                "2003-06-30",
+                "Prior fictional agreement expired",
+                "History retained; no salary carried into this new agreement",
+                {
+                  "label": "Prior agreement",
+                  "href": "sample_contract.md#prior-agreement"
+                }
+              ],
+              [
+                "2003-07-17",
+                "Current fictional agreement signed",
+                "Base salary schedule and protections begin",
+                {
+                  "label": "Current agreement",
+                  "href": "sample_contract.md#current-agreement"
+                }
+              ],
+              [
+                "2003-11-12",
+                "Design record cutoff",
+                "No option exercise, trade, bonus award or amendment entered",
+                {
+                  "label": "Fixture provenance",
+                  "href": "sample_contract.md#fixture-provenance"
+                }
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": null
+          },
+          {
+            "title": "Signed document and evidence boundaries",
+            "columns": [
+              "Document field",
+              "Recorded value"
+            ],
+            "rows": [
+              [
+                "Document",
+                "Fictional current-agreement term sheet, version 1"
+              ],
+              [
+                "Signing evidence",
+                {
+                  "label": "Complete fictional agreement schedule",
+                  "href": "sample_contract.md#current-agreement"
+                }
+              ],
+              [
+                "Machine-readable record ID",
+                "example-veteran-2003"
+              ],
+              [
+                "Signature scan / registration confirmation",
+                null
+              ],
+              [
+                "Evidence status",
+                "Explicit design fixture only; no executed legal document or career event"
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": "INDEPENDENT FICTIONAL CONTRACT DESIGN SCENARIO. Example Contract Player is a 25-year-old veteran. These invented agreements are separate from the 19-year-old Shooting sample, the Awards scenarios and Wade's career. Amounts illustrate recorded terms; they are not a market quote or an approved NBA agreement."
+          }
+        ]
+      },
+      {
+        "id": "example-veteran-2001",
+        "title": "Former Example Club | Previous agreement",
+        "team": "Former Example Club",
+        "type": "Veteran free-agent signing (fictional)",
+        "status": "expired",
+        "signed_on": "2001-07-20",
+        "start_season": "2001-02",
+        "end_season": "2002-03",
+        "summary": "A separate two-year fictional agreement with $4,200,000 of scheduled and fully protected base salary. It expired June 30, 2003. The original terms remain available after the new signing; scheduled salary is not proof of payroll paid.",
+        "metrics": [
+          {
+            "label": "Original base value",
+            "value": "$4,200,000",
+            "detail": "Two years; retained original agreement."
+          },
+          {
+            "label": "Base annual average",
+            "value": "$2,100,000",
+            "detail": "$4,200,000 divided by two seasons."
+          },
+          {
+            "label": "Original guarantee",
+            "value": "$4,200,000",
+            "detail": "Fully protected base at signing."
+          },
+          {
+            "label": "Contract ended",
+            "value": "Jun 30, 2003",
+            "detail": "Expired before the separate current signing."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Full previous fictional agreement",
+            "href": "sample_contract.md#prior-agreement"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Original agreement summary",
+            "columns": [
+              "Recorded term",
+              "Value"
+            ],
+            "rows": [
+              [
+                "Signed with",
+                "Former Example Club on July 20, 2001"
+              ],
+              [
+                "Covered seasons",
+                "2001-02 and 2002-03"
+              ],
+              [
+                "Original base / guarantee",
+                "$4,200,000 / $4,200,000"
+              ],
+              [
+                "Signing method",
+                "Fictional veteran free-agent signing"
+              ],
+              [
+                "Agent and registration evidence",
+                null
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": null
+          },
+          {
+            "title": "Historical salary schedule",
+            "columns": [
+              "Season",
+              "Base salary",
+              "Guaranteed base",
+              "Incentives",
+              "Option",
+              "Illustrative cap charge"
+            ],
+            "rows": [
+              [
+                "2001-02",
+                "$2,000,000",
+                "$2,000,000",
+                "$0",
+                "None",
+                "$2,000,000"
+              ],
+              [
+                "2002-03",
+                "$2,200,000",
+                "$2,200,000",
+                "$0",
+                "None",
+                "$2,200,000"
+              ],
+              [
+                "Original total",
+                "$4,200,000",
+                "$4,200,000",
+                "$0",
+                "None",
+                "$4,200,000"
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": "These are the former agreement's own figures. Current-agreement salary and option terms are not backfilled into history."
+          },
+          {
+            "title": "Guarantees and incentives at signing",
+            "columns": [
+              "Term",
+              "Original record"
+            ],
+            "rows": [
+              [
+                "Protection",
+                "Both scheduled years fully protected in this fixture"
+              ],
+              [
+                "Incentives",
+                "No incentive compensation in this fixture"
+              ],
+              [
+                "Payroll paid, escrow and deductions",
+                null
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": null
+          },
+          {
+            "title": "Rights, deadlines and clauses",
+            "columns": [
+              "Term",
+              "Original record"
+            ],
+            "rows": [
+              [
+                "Contractual expiry",
+                "June 30, 2003"
+              ],
+              [
+                "Team or player option",
+                "None in the fixture"
+              ],
+              [
+                "No-trade clause / trade bonus",
+                "Neither granted in the fixture"
+              ],
+              [
+                "Historical Bird or restricted status",
+                null
+              ],
+              [
+                "Other clauses and waiver calculations",
+                null
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": null
+          },
+          {
+            "title": "Historical transaction audit",
+            "columns": [
+              "Date",
+              "Recorded event",
+              "Effect"
+            ],
+            "rows": [
+              [
+                "2001-07-20",
+                "Fictional original agreement signed",
+                "Two-year schedule established"
+              ],
+              [
+                "2003-06-30",
+                "Agreement expired",
+                "Original record remains archived"
+              ],
+              [
+                "2003-07-17",
+                "Separate new agreement signed",
+                "Does not overwrite this original contract"
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": null
+          },
+          {
+            "title": "Original signed-document source",
+            "columns": [
+              "Document field",
+              "Recorded value"
+            ],
+            "rows": [
+              [
+                "Document",
+                {
+                  "label": "Previous fictional agreement schedule",
+                  "href": "sample_contract.md#prior-agreement"
+                }
+              ],
+              [
+                "Record ID",
+                "example-veteran-2001"
+              ],
+              [
+                "Signature scan / registration confirmation",
+                null
+              ],
+              [
+                "Evidence status",
+                "Independent fictional design fixture, not a historical NBA contract"
+              ]
+            ],
+            "body": null,
+            "items": [],
+            "notice": null
+          }
+        ]
+      }
+    ],
+    "metrics": [],
+    "sections": [],
+    "sources": [
+      {
+        "label": "Contract fixture provenance",
+        "href": "sample_contract.md#fixture-provenance"
+      }
+    ]
+  },
   "awards": {
     "default_scenario": "current",
     "scenarios": [

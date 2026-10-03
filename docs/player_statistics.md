@@ -1,12 +1,12 @@
 # Player statistics and professional identity
 
-[Live Shooting and Awards](https://stone-basketball-career-production.up.railway.app/cards) · [Current career](../career/Dwyane_Wade/README.md) · [Filled preview](examples/player_stats_preview.md) · [Structure](season_structure.md)
+[Live Shooting, Contract and Awards](https://stone-basketball-career-production.up.railway.app/cards) · [Player contracts](https://stone-basketball-career-production.up.railway.app/contracts) · [Current career](../career/Dwyane_Wade/README.md) · [Filled preview](examples/player_stats_preview.md) · [Structure](season_structure.md)
 
 Reports contain professional identity and statistical performance. Decisions remain in their owning notes. Existing team, league and award records retain their paths and links.
 
 ## Active detailed cards
 
-The ordinary `scripts/update_player_reports.py` build now generates `Stats_and_Awards/player_cards.html`, `player_cards_data.json`, `Shooting.md` and `Awards.md` from actual career evidence. The same build creates the detailed milestone desk. Every canonical player report links Shooting and Awards; the interactive view uses the corresponding period where available. Complete details and source tables are open by default.
+The ordinary `scripts/update_player_reports.py` build generates `Stats_and_Awards/player_cards.html`, `player_cards_data.json`, `Shooting.md`, `Contract.md` and `Awards.md` from actual career evidence. The same build creates the detailed milestone desk and every tracked player's contract page under `Contracts/players/`. Every canonical player report links Shooting, Contract and Awards in that order; the shooting view uses the corresponding period where available. Contract has Current Contract and Contract History views, both tied to the dated agreement records described in [the contract guide](player_contract_pages.md). Complete details and source tables are open by default.
 
 The live cards use `identity_at`, closed records from `collect_games`, and sourced earned awards. There is no fictional location generator on this path. Weekly and monthly awards stay in the complete award register; yearly banners use the recorded annual scope or recognized season-award/selection names. Unknown classifications remain in the complete register instead of becoming an invented annual trophy.
 
