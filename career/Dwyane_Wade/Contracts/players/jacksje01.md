@@ -2,9 +2,9 @@
 
 # Contract | Jermaine Jackson
 
-Known through: 2003-07-02. [Open interactive contract](jacksje01.html#contract) · [Contract history](jacksje01.html#contract-history)
+Known through: 2003-07-03. [Open interactive contract](jacksje01.html#contract) · [Contract history](jacksje01.html#contract-history)
 
-Jermaine Jackson: free agent expiring. Evidence cutoff: 2003-07-02.
+Jermaine Jackson: free agent expiring. Evidence cutoff: 2003-07-03.
 
 ## Current contract
 

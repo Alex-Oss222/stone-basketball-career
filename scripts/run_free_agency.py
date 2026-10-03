@@ -41,7 +41,7 @@ MAX_ROSTER = 15
 RE_SIGN_TO = 13                                 # re-sign own free agents, best first, until the roster reaches this
 MORATORIUM_MIN_SCORE = 20.0                     # before the cap is published Miami opens talks only with targets this strong
 TRADES = signing.TRADES
-ALTERNATIVE_CONTEXT = {"role_minutes": 28, "strength": 41, "location": 0.5}   # judgement: an average situation elsewhere
+ALTERNATIVE_CONTEXT = {}   # the market fills the alternative club's 2002-03 wins and the player's own 2002-03 minutes
 
 
 def day_after(day):
@@ -310,7 +310,13 @@ class Run:
             outcome = self.decision_for_round(n, last, day)
             if outcome is None or day <= last["date"]:
                 return                      # the player answers the day after the offer at the earliest
-            n.apply_answer(outcome, day, last["decision_event"], ask=target["ask"])
+            if outcome == "walk":                 # a dealbreaker: he ends the talks without a draw
+                n.apply_answer("reject", day, f"dealbreaker:{last['decision_event']}")
+                n.end(f"walked away: {last['dealbreaker']}", day)
+                return
+            focus = last.get("counter_focus") or {}
+            premium = 0.0 if focus.get("factor") in (None, "money", "security") else focus.get("weighted_deficit", 0) / 100
+            n.apply_answer(outcome, day, last["decision_event"], ask=target["ask"], premium=premium)
             last = n.last_round()
             if outcome == "accept":
                 return
@@ -338,8 +344,14 @@ class Run:
     def decision_for_round(self, n, rnd, day):
         rec, target, bbr = n.record, n.record["plan"], n.record["bbr_id"]
         offer = {"first_year": rnd["terms"]["first_year"], "years": rnd["terms"]["years"], "guaranteed": rnd["terms"]["guaranteed"]}
-        packet = self.market.answer_packet(bbr, offer, self.fo.context_for(target), self.market.alternative(bbr, day),
-                                           dict(ALTERNATIVE_CONTEXT, ask=target["ask"]), rec["priorities"]["weights"], WINDOW, rnd["round"])
+        found = self.market.assess(bbr, offer, self.fo.context_for(target), self.market.alternative(bbr, day),
+                                   dict(ALTERNATIVE_CONTEXT, ask=target["ask"]), rec["priorities"], WINDOW, rnd["round"])
+        rnd["assessment"] = found["analysis"]
+        if found["dealbreaker"]:
+            rnd["dealbreaker"] = found["dealbreaker"]
+            return "walk"
+        rnd["counter_focus"] = found["counter_focus"]
+        packet = found["packet"]
         packet["event_id"] = rnd["decision_event"]
         packet["date"] = rnd["date"]
         return self.decision(packet)
@@ -492,11 +504,12 @@ class Run:
         position = desk.assets.positions.get(bbr, (None, target.get("position", "SF"), 9))[1].split("-")[0]
         depth = sum(1 for b, (c, pos, d) in desk.assets.positions.items() if c == club and pos.split("-")[0] == position and d <= 2)
         role_minutes = 32 if depth <= 1 else 20 if depth <= 3 else 12      # the partner's depth at his position (judgement)
-        context = {"role_minutes": role_minutes, "strength": desk.assets.standings.get(club, {}).get("wins", 41), "location": PARTNER_LOCATION,
+        context = {"club": club, "role_minutes": role_minutes, "strength": desk.assets.standings.get(club, {}).get("wins", 41), "location": PARTNER_LOCATION,
                    "ask": terms["first_year"]}
         alternative = {"guaranteed": terms["guaranteed"], "years": terms["years"], "club": "Miami Heat", "basis": "the agreed Miami contract"}
         alt_context = dict(fo.context_for(target), ask=terms["first_year"])
-        packet = self.market.answer_packet(bbr, offer, context, alternative, alt_context, rec["priorities"]["weights"], WINDOW, PATIENCE_ROUNDS)
+        found = self.market.assess(bbr, offer, context, alternative, alt_context, rec["priorities"], WINDOW, PATIENCE_ROUNDS)
+        packet = found["packet"] or {"options": {}, "decider": f"{rec['player']} (simulated player)", "basis": f"dealbreaker at {club}: {found['dealbreaker']}"}
         accept = packet["options"].get("accept", 0.02)
         accept = round(min(0.95, max(0.05, accept)), 3)
         packet.update(event_id=record["player_consent_event"], date=day, options={"accept": accept, "reject": round(1 - accept, 3)},

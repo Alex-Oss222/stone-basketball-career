@@ -2,9 +2,9 @@
 
 # Contract | Jason Terry
 
-Known through: 2003-07-02. [Open interactive contract](terryja01.html#contract) · [Contract history](terryja01.html#contract-history)
+Known through: 2003-07-03. [Open interactive contract](terryja01.html#contract) · [Contract history](terryja01.html#contract-history)
 
-Jason Terry: free agent expiring. Evidence cutoff: 2003-07-02.
+Jason Terry: free agent expiring. Evidence cutoff: 2003-07-03.
 
 ## Current contract
 

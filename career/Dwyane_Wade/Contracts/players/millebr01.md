@@ -2,9 +2,9 @@
 
 # Contract | Brad Miller
 
-Known through: 2003-07-02. [Open interactive contract](millebr01.html#contract) · [Contract history](millebr01.html#contract-history)
+Known through: 2003-07-03. [Open interactive contract](millebr01.html#contract) · [Contract history](millebr01.html#contract-history)
 
-Brad Miller: free agent expiring. Evidence cutoff: 2003-07-02.
+Brad Miller: free agent expiring. Evidence cutoff: 2003-07-03.
 
 ## Current contract
 

@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2003-07-02 · Miami Heat · inactive
+Career date: 2003-07-03 · Miami Heat · inactive
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-0 closed game records in 2003-04 through 2003-07-02. Competitions remain separate.
+0 closed game records in 2003-04 through 2003-07-03. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 

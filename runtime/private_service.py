@@ -171,25 +171,42 @@ def play_requests(store, root):
             status[event_id] = {"status": state, "request": rel}
         except Exception as exc:  # one bad request must not stop the others or the service
             status[rel] = {"status": "error", "request": rel, "error": str(exc)}
-    from .decisions import draw, find_decisions, load_decision, packet
+    from .decisions import find_decisions, load_decision
     for path in find_decisions(root):
         rel = str(path.relative_to(root))
         try:
             data = load_decision(path)
-            packet_hash = hashlib.sha256(canonical(packet(data))).hexdigest()
-            if store.result(data["event_id"]) is None:
-                store.save_result(data["event_id"], packet_hash,
-                                  {"event_id": data["event_id"], "kind": "decision", "date": data["date"],
-                                   "question": data["question"], "decider": data["decider"],
-                                   "options": data["options"], "outcome": draw(data, store)})
-                state = "decided"
-            else:
-                store.close_digest(data["event_id"], packet_hash)  # refuses an edited request
-                state = "already_decided"
+            state, _ = play_decision(store, data)
             status[data["event_id"]] = {"status": state, "request": rel}
         except Exception as exc:
             status[rel] = {"status": "error", "request": rel, "error": str(exc)}
     return status
+
+
+MAX_DECISION_BYTES = 65536
+
+
+def play_decision(store, data):
+    """Draw one decision packet once, or return the stored draw for the identical packet.
+
+    The single path for both the boot scan of committed `*.decision.json` files and the authenticated
+    `POST /decisions` route: the engine journals the packet before drawing, keeps the first result for
+    ever, and refuses a packet that differs from the one already drawn under the same event id.
+    Returns (status, result) with status "decided" or "already_decided".
+    """
+    from .decisions import decision_errors, draw, packet
+    errors = decision_errors(data)
+    if errors:
+        raise ValueError("; ".join(errors))
+    packet_hash = hashlib.sha256(canonical(packet(data))).hexdigest()
+    existing = store.result(data["event_id"])
+    if existing is not None:
+        store.close_digest(data["event_id"], packet_hash)      # refuses an edited request
+        return "already_decided", existing
+    result = {"event_id": data["event_id"], "kind": "decision", "date": data["date"], "question": data["question"],
+              "decider": data["decider"], "options": data["options"], "outcome": draw(data, store)}
+    store.save_result(data["event_id"], packet_hash, result)
+    return "decided", store.result(data["event_id"])
 
 
 def handler(store, token, games, career_site=None):
@@ -269,6 +286,18 @@ def handler(store, token, games, career_site=None):
                 if parsed.path == "/corrections":
                     store.correct(query["event_id"], query["reason"])
                     return self.send(201, {"recorded": True})
+                if parsed.path.rstrip("/") == "/decisions":
+                    # A decision drawn on demand: the same packet, journal and no-re-roll rule as a deploy scan.
+                    length = int(self.headers.get("Content-Length") or 0)
+                    if length <= 0 or length > MAX_DECISION_BYTES:
+                        return self.send(413 if length > 0 else 400, {"error": "a decision body of 1 to 65536 bytes is required"})
+                    try:
+                        data = json.loads(self.rfile.read(length).decode("utf-8"))
+                    except (UnicodeDecodeError, json.JSONDecodeError):
+                        return self.send(400, {"error": "the body must be a JSON decision packet"})
+                    state, result = play_decision(store, data)
+                    games[data["event_id"]] = {"status": state, "request": "POST /decisions"}
+                    return self.send(201 if state == "decided" else 200, dict(result, status=state))
                 self.send(404, {"error": "not found"})
             except (KeyError, ValueError) as exc:
                 self.send(409, {"error": str(exc)})

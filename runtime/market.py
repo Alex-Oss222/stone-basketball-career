@@ -15,6 +15,7 @@ import json
 import math
 from pathlib import Path
 
+from . import player_utility as pu
 from .player_stats import alias
 from .valuation import Valuation, read
 
@@ -63,6 +64,7 @@ class Market:
             for p in entry["free_agents"]:
                 self.players[p["bbr_id"]] = dict(p, club=club)
         self.exits = self._exits()
+        self.standings = read(Path("library/2003/league/nba_2002_03_standings.json"), root)["clubs"]   # strength known on the date
 
     # -- world data: exits ---------------------------------------------------------------
     def _exits(self):
@@ -205,23 +207,92 @@ class Market:
         total = int(round(sum(ask["comparables_price"] * (1 + 0.1 * i) for i in range(years))))
         return {"guaranteed": total, "years": years, "club": e[1] if e else None, "basis": "tier price (no reported terms)"}
 
+    @staticmethod
+    def trait_of(priorities):
+        """The drawn trait behind a priority record: a trait name, a record with 'trait', or its weight table."""
+        if isinstance(priorities, str):
+            return priorities
+        if priorities.get("trait"):
+            return priorities["trait"]
+        return next((t for t, w in PRIORITIES.items() if all(abs(w[k] - priorities.get(k, -1)) < 1e-9 for k in w)), "money")
+
+    def league(self):
+        """Every club's roster on the market date (built once per market)."""
+        if getattr(self, "_league", None) is None:
+            from .club_strength import League
+            self._league = League(self.on, self.valuation.value, self.root)
+        return self._league
+
+    def profile(self, bbr_id, on=None):
+        """What the player brings to every comparison: ask, years wanted, 2002-03 role and club, age."""
+        totals = (self.valuation.stats.get(bbr_id) or {}).get("totals") or {}
+        games = totals.get("games") or 0
+        return {"ask": self.asking(bbr_id, on)["first_year"], "years_wanted": self.years_wanted(bbr_id),
+                "prior_minutes": round(totals["minutes"] / games, 1) if games and totals.get("minutes") else None,
+                "start_share": round((totals.get("games_started") or 0) / games, 3) if games else 0.0,
+                "prior_club": self.players[bbr_id].get("club"), "age": self.valuation.age(bbr_id)}
+
     def answer_packet(self, bbr_id, offer, context, alternative, alt_context, priorities, window, round_no):
-        """Decision packet for a player's answer to an offer: accept, counter or reject."""
+        """The decision packet alone (see `assess`); None when a dealbreaker means he walks undrawn."""
+        return self.assess(bbr_id, offer, context, alternative, alt_context, priorities, window, round_no)["packet"]
+
+    def assess(self, bbr_id, offer, context, alternative, alt_context, priorities, window, round_no):
+        """A player's answer to an offer (runtime/player_utility.py): the factor analysis and the decision packet.
+
+        `context` describes the offering club (club, role_minutes, strength, ask); `alt_context` the club of his
+        best alternative. Returns {"packet", "analysis", "counter_focus", "dealbreaker"}; on a dealbreaker the
+        packet is None and he walks without a draw. The packet keeps the decision schema; its basis carries the
+        factor table so the journaled request explains itself.
+        """
         p = self.players[bbr_id]
-        u_offer = self.utility(offer, context, priorities)
-        u_alt = self.utility(alternative, alt_context, priorities)
-        accept = self.acceptance_probability(u_offer, u_alt)
-        if offer["first_year"] < INSULT_SHARE * context["ask"]:
-            accept = ACCEPT_LIMITS[0]
-        remaining = max(0.0, 1 - accept)
-        counter = round(remaining * (0.7 if round_no < PATIENCE_ROUNDS else 0.0), 3)
-        reject = round(1 - accept - counter, 3)
-        options = {k: v for k, v in (("accept", accept), ("counter", counter), ("reject", reject)) if v > 0}
+        player = dict(self.profile(bbr_id), ask=context.get("ask") or self.asking(bbr_id)["first_year"])
+        trait = self.trait_of(priorities)
+        weight = pu.weights(player["age"], trait)
+        here = dict(context, club=context.get("club", MIAMI))
+        there = dict(alt_context, club=alternative.get("club") or alt_context.get("club"))
+        league = self.league()
+        for side in (here, there):        # each club as its roster stands on the date, with him on it (runtime/club_strength.py)
+            if side["club"] in league.rosters:
+                found = league.situation(side["club"], bbr_id)
+                side["strength"] = found["strength"]
+                if side["club"] != MIAMI or "role_minutes" not in side:   # Miami's role is its own depth-chart promise
+                    side["role_minutes"] = found["role_minutes"]
+            side.setdefault("strength", self.standings.get(side["club"], {}).get("wins", 41))
+            side.setdefault("role_minutes", player["prior_minutes"] or pu.DEFAULT_MINUTES)
+        s_offer = pu.scores(offer, here, player)
+        s_alt = pu.scores(alternative, there, player)
+        u_offer, u_alt = pu.utility(s_offer, weight), pu.utility(s_alt, weight)
+        gap = round(u_offer - u_alt, 2)
+        analysis = {"model": pu.MODEL, "stage": pu.stage(player["age"])[0], "trait": trait, "weights": weight,
+                    "offer": s_offer, "alternative": s_alt, "offer_club": here["club"], "alternative_club": there["club"],
+                    "situations": {"offer": {k: here.get(k) for k in ("club", "strength", "role_minutes")},
+                                   "alternative": {k: there.get(k) for k in ("club", "strength", "role_minutes")}},
+                    "utility": {"offer": u_offer, "alternative": u_alt, "gap": gap}, "excluded": list(pu.EXCLUDED)}
+        reason = pu.dealbreaker(here, player)
+        if reason:
+            return {"packet": None, "analysis": analysis, "counter_focus": None, "dealbreaker": reason}
+        options = pu.odds(gap, round_no, PATIENCE_ROUNDS)
+        insult = offer["first_year"] < INSULT_SHARE * player["ask"]
+        if insult:
+            options = {"accept": pu.ACCEPT_LIMITS[0], "reject": round(1 - pu.ACCEPT_LIMITS[0], 3)}
         if len(options) == 1:
-            options = {"accept": min(0.95, accept), "reject": round(1 - min(0.95, accept), 3)}
-        return {"event_id": f"{window}-{bbr_id}-offer-{round_no}", "date": self.on,
-                "question": f"Does {p['player']} accept Miami's offer ({offer['years']} years, ${offer['guaranteed']:,} guaranteed)?",
-                "decider": f"{p['player']} (simulated player)", "options": options,
-                "basis": (f"Utility of Miami's offer {u_offer:.3f} against his alternative {u_alt:.3f} "
-                          f"({alternative['basis']}: {alternative['years']} years, ${alternative['guaranteed']:,} at {alternative.get('club')}); "
-                          f"priorities {priorities}; logistic slope {ACCEPT_SLOPE}, kept inside {ACCEPT_LIMITS}; round {round_no} of {PATIENCE_ROUNDS}.")}
+            only = next(iter(options))
+            options = ({"accept": pu.ACCEPT_LIMITS[1], "reject": round(1 - pu.ACCEPT_LIMITS[1], 3)} if only == "accept"
+                       else {"accept": pu.ACCEPT_LIMITS[0], "reject": round(1 - pu.ACCEPT_LIMITS[0], 3)})
+        focus, deficit = pu.counter_focus(s_offer, s_alt, weight)
+        table = "; ".join(f"{f} {weight[f]:.2f} x {s_offer[f]:g}/{s_alt[f]:g}" for f in weight)
+        packet = {"event_id": f"{window}-{bbr_id}-offer-{round_no}", "date": self.on,
+                  "question": f"Does {p['player']} accept {here['club']}'s offer ({offer['years']} years, ${offer['guaranteed']:,} guaranteed)?",
+                  "decider": f"{p['player']} (simulated player)", "options": options,
+                  "basis": (f"{pu.MODEL}: utility {u_offer} at {here['club']} against {u_alt} for his alternative "
+                            f"({alternative['basis']}: {alternative['years']} years, ${alternative['guaranteed']:,} at {there['club']}), "
+                            f"gap {gap:+} points. Rosters on the date with him: {here['club']} {here['strength']} projected wins, about "
+                            f"{here['role_minutes']} minutes; {there['club']} {there['strength']} wins, about {there['role_minutes']} minutes. "
+                            f"{analysis['stage'].capitalize()} stage, trait {trait}. Factors (weight x offer/alternative): "
+                            f"{table}. Ordered logistic: accept above {pu.ACCEPT_AT}, reject below {pu.REJECT_AT}, scale {pu.SCALE}; "
+                            f"round {round_no} of {PATIENCE_ROUNDS}"
+                            + ("; the offer is under 70% of his ask" if insult else "")
+                            + f". Weakest factor against the alternative: {focus}. Not scored (no dated evidence): scheme fit, "
+                              "organisation, coach and locker-room ties, medical staff, family.")}
+        return {"packet": packet, "analysis": analysis, "counter_focus": {"factor": focus, "weighted_deficit": deficit},
+                "dealbreaker": None}

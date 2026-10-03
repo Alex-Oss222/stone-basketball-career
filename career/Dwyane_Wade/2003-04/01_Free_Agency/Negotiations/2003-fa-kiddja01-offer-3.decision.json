@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-fa-kiddja01-offer-3",
+ "date": "2003-07-03",
+ "question": "Does Jason Kidd accept Miami Heat's offer (3 years, $35,811,159 guaranteed)?",
+ "decider": "Jason Kidd (simulated player)",
+ "options": {
+  "accept": 0.02,
+  "reject": 0.98
+ },
+ "basis": "utility-2003.2: utility 60.15 at Miami Heat against 80.18 for his alternative (real contract (world data): 6 years, $103,670,000 at New Jersey Nets), gap -20.03 points. Rosters on the date with him: Miami Heat 35.9 projected wins, about 32 minutes; New Jersey Nets 44.1 wins, about 34 minutes. Veteran stage, trait money. Factors (weight x offer/alternative): money 0.19 x 62.1/100; security 0.06 x 100/100; net_income 0.04 x 100/60; role 0.14 x 85.6/90.9; contention 0.33 x 39.7/60.2; loyalty 0.14 x 50/100; market 0.09 x 60/60. Ordered logistic: accept above 4.0, reject below -10.0, scale 4.0; round 3 of 3. Weakest factor against the alternative: money. Not scored (no dated evidence): scheme fit, organisation, coach and locker-room ties, medical staff, family."
+}

@@ -108,9 +108,169 @@
     "errors": []
    },
    "decision_event": "2003-fa-kiddja01-offer-2",
+   "answer": "counter",
+   "answered": "2003-07-03",
+   "counter": 10626721,
+   "assessment": {
+    "model": "utility-2003.2",
+    "stage": "veteran",
+    "trait": "money",
+    "weights": {
+     "money": 0.1944,
+     "security": 0.0598,
+     "net_income": 0.0449,
+     "role": 0.1402,
+     "contention": 0.3271,
+     "loyalty": 0.1402,
+     "market": 0.0935
+    },
+    "offer": {
+     "money": 56.0,
+     "security": 100.0,
+     "net_income": 100,
+     "role": 85.6,
+     "contention": 39.7,
+     "loyalty": 50,
+     "market": 60
+    },
+    "alternative": {
+     "money": 100.0,
+     "security": 100.0,
+     "net_income": 60,
+     "role": 90.9,
+     "contention": 60.2,
+     "loyalty": 100,
+     "market": 60
+    },
+    "offer_club": "Miami Heat",
+    "alternative_club": "New Jersey Nets",
+    "situations": {
+     "offer": {
+      "club": "Miami Heat",
+      "strength": 35.9,
+      "role_minutes": 32
+     },
+     "alternative": {
+      "club": "New Jersey Nets",
+      "strength": 44.1,
+      "role_minutes": 34
+     }
+    },
+    "utility": {
+     "offer": 58.96,
+     "alternative": 80.18,
+     "gap": -21.22
+    },
+    "excluded": [
+     "scheme fit: Miami's staff has not set an offensive or defensive scheme (team_config.json)",
+     "organisational stability, coach relationship and locker-room ties: no dated evidence",
+     "medical and training staff: no dated evidence",
+     "family and personal circumstances: no sourced evidence; never invented for a real person"
+    ]
+   },
+   "counter_focus": {
+    "factor": "money",
+    "weighted_deficit": 8.55
+   }
+  },
+  {
+   "round": 3,
+   "date": "2003-07-03",
+   "offer_id": "MIA-jason_kidd-1",
+   "version": 3,
+   "route": "sign_and_trade",
+   "terms": {
+    "first_year": 10610714,
+    "years": 3,
+    "schedule": [
+     10610714,
+     11937053,
+     13263392
+    ],
+    "guaranteed": 35811159,
+    "raise_percent": 12.5,
+    "last_year_guaranteed": true,
+    "round": 3,
+    "promise": {
+     "role": "starter",
+     "minutes_per_game": 32
+    },
+    "basis": "round 3: ask $10,626,721, Miami's valuation $10,418,354, ceiling $11,460,189, counter $10,626,721"
+   },
+   "legality": {
+    "checked_by": "miami_cap_adapter",
+    "rules": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "errors": []
+   },
+   "decision_event": "2003-fa-kiddja01-offer-3",
    "answer": null,
    "answered": null,
-   "counter": null
+   "counter": null,
+   "assessment": {
+    "model": "utility-2003.2",
+    "stage": "veteran",
+    "trait": "money",
+    "weights": {
+     "money": 0.1944,
+     "security": 0.0598,
+     "net_income": 0.0449,
+     "role": 0.1402,
+     "contention": 0.3271,
+     "loyalty": 0.1402,
+     "market": 0.0935
+    },
+    "offer": {
+     "money": 62.1,
+     "security": 100.0,
+     "net_income": 100,
+     "role": 85.6,
+     "contention": 39.7,
+     "loyalty": 50,
+     "market": 60
+    },
+    "alternative": {
+     "money": 100.0,
+     "security": 100.0,
+     "net_income": 60,
+     "role": 90.9,
+     "contention": 60.2,
+     "loyalty": 100,
+     "market": 60
+    },
+    "offer_club": "Miami Heat",
+    "alternative_club": "New Jersey Nets",
+    "situations": {
+     "offer": {
+      "club": "Miami Heat",
+      "strength": 35.9,
+      "role_minutes": 32
+     },
+     "alternative": {
+      "club": "New Jersey Nets",
+      "strength": 44.1,
+      "role_minutes": 34
+     }
+    },
+    "utility": {
+     "offer": 60.15,
+     "alternative": 80.18,
+     "gap": -20.03
+    },
+    "excluded": [
+     "scheme fit: Miami's staff has not set an offensive or defensive scheme (team_config.json)",
+     "organisational stability, coach relationship and locker-room ties: no dated evidence",
+     "medical and training staff: no dated evidence",
+     "family and personal circumstances: no sourced evidence; never invented for a real person"
+    ]
+   },
+   "counter_focus": {
+    "factor": "money",
+    "weighted_deficit": 7.37
+   }
   }
  ],
  "agreement": null,
@@ -124,7 +284,7 @@
   "trusted_issuers": [
    "miami_cap_adapter"
   ],
-  "last_at": "2003-07-02T12:00:00-04:00",
+  "last_at": "2003-07-03T12:00:00-04:00",
   "cba": "1999",
   "phase": "market",
   "market": {
@@ -157,6 +317,17 @@
     },
     "issued_at": "2003-07-02T12:00:00-04:00",
     "expires_at": "2003-07-05T12:00:00-04:00",
+    "status": "superseded"
+   },
+   {
+    "offer_id": "MIA-jason_kidd-1",
+    "version": 3,
+    "team": "Miami Heat",
+    "terms": {
+     "encoded": "{\"promise\":{\"minutes_per_game\":32,\"role\":\"starter\"},\"route\":\"sign_and_trade\",\"salary_schedule\":[{\"guaranteed\":10610714,\"option\":\"none\",\"salary\":10610714,\"season\":\"2003-04\"},{\"guaranteed\":11937053,\"option\":\"none\",\"salary\":11937053,\"season\":\"2004-05\"},{\"guaranteed\":13263392,\"option\":\"none\",\"salary\":13263392,\"season\":\"2005-06\"}]}"
+    },
+    "issued_at": "2003-07-03T12:00:00-04:00",
+    "expires_at": "2003-07-06T12:00:00-04:00",
     "status": "open"
    }
   ],
@@ -175,6 +346,15 @@
     },
     "requested_at": "2003-07-02T09:00:00-04:00",
     "decision_ref": "2003-fa-kiddja01-offer-1"
+   },
+   {
+    "offer_id": "MIA-jason_kidd-1",
+    "version": 2,
+    "terms": {
+     "encoded": "{\"salary_schedule\":[{\"guaranteed\":10626721,\"option\":\"none\",\"salary\":10626721,\"season\":\"2003-04\"},{\"guaranteed\":11955061,\"option\":\"none\",\"salary\":11955061,\"season\":\"2004-05\"},{\"guaranteed\":13283401,\"option\":\"none\",\"salary\":13283401,\"season\":\"2005-06\"}]}"
+    },
+    "requested_at": "2003-07-03T09:00:00-04:00",
+    "decision_ref": "2003-fa-kiddja01-offer-2"
    }
   ],
   "sheet": null,
@@ -269,6 +449,45 @@
      "valid_until": "2003-07-03T12:00:00-04:00",
      "scope": "club_offer",
      "subject_digest": "4feb7d649f9a3994554bcdb24f0eea85f9cc2ee991c9aeef37ea3379f72c0148"
+    }
+   },
+   {
+    "action": "counter_request",
+    "actor": {
+     "kind": "player",
+     "identity": "Jason Kidd"
+    },
+    "at": "2003-07-03T09:00:00-04:00",
+    "source_refs": [
+     "2003-fa-kiddja01-offer-2"
+    ],
+    "subject_digest": "5b3c4afdabf63e6154bec17b9c9b054689446d0afcab0735f3099776e397d40e",
+    "attestation": null
+   },
+   {
+    "action": "club_offer",
+    "actor": {
+     "kind": "club",
+     "identity": "Miami Heat"
+    },
+    "at": "2003-07-03T12:00:00-04:00",
+    "source_refs": [
+     "library/2003/league/nba_2003_04_cap_rules.json",
+     "library/2003/league/nba_1999_cba_rules.json",
+     "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+    ],
+    "subject_digest": "92503275cb2072558ece25e58a84455ddbea640559dafaf6752b74e5e795645a",
+    "attestation": {
+     "issuer": "miami_cap_adapter",
+     "source_refs": [
+      "library/2003/league/nba_2003_04_cap_rules.json",
+      "library/2003/league/nba_1999_cba_rules.json",
+      "career/Dwyane_Wade/2003-04/00_Team/Finances/contract_schedules.json"
+     ],
+     "verified_at": "2003-07-03T12:00:00-04:00",
+     "valid_until": "2003-07-04T12:00:00-04:00",
+     "scope": "club_offer",
+     "subject_digest": "92503275cb2072558ece25e58a84455ddbea640559dafaf6752b74e5e795645a"
     }
    }
   ]

@@ -2,9 +2,9 @@
 
 # Contract | Darrell Armstrong
 
-Known through: 2003-07-02. [Open interactive contract](armstda01.html#contract) · [Contract history](armstda01.html#contract-history)
+Known through: 2003-07-03. [Open interactive contract](armstda01.html#contract) · [Contract history](armstda01.html#contract-history)
 
-Darrell Armstrong: free agent expiring. Evidence cutoff: 2003-07-02.
+Darrell Armstrong: free agent expiring. Evidence cutoff: 2003-07-03.
 
 ## Current contract
 
