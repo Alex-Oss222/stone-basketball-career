@@ -25,7 +25,8 @@ def build(root=ROOT):
     average = cba["average_salary"]["2003-04_threshold"]
     minimums = json.loads((root / "library/2003/league/nba_1999_cba_minimum_salary_scale.json").read_text())["seasons"]["2003-04"]
     miami = {p["bbr_id"]: p for p in inventory["clubs"]["Miami Heat"]["players"] if p["status"] == "free_agent_expiring"}
-    tenure = list(csv.DictReader((root / "library/2003/league/miami_expiring_tenure.csv").open(encoding="utf-8")))
+    with (root / "library/2003/league/miami_expiring_tenure.csv").open(encoding="utf-8") as handle:
+        tenure = list(csv.DictReader(handle))
     players = []
     for row in (r for r in tenure if r["how_joined_miami"]):
         contract = miami[row["bbr_id"]]

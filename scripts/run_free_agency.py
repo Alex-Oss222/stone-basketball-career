@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Advance Miami's 2003 offseason day by day: June 30 decisions, the free-agency plan, offers,
-the players' drawn answers, signings, and Wade's rookie offer (docs/front_office.md).
+the players' drawn answers, signings, sign-and-trades and Wade's rookie offer (docs/front_office.md).
+Wade's standing is read from `career/Dwyane_Wade/standing.json` (runtime/standing.py); at `franchise`
+standing the front office asks him before it adds another star and the day stops until he answers
+(runtime/consultations.py).
 
   python scripts/run_free_agency.py --plan 2003-07-16      print Miami's plan on a date; writes nothing
   python scripts/run_free_agency.py --write 2003-07-20     advance the career clock to the date
@@ -16,12 +19,13 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from runtime import signing                                  # noqa: E402
+from runtime import consultations, signing, standing         # noqa: E402
 from runtime.decisions import decision_errors                # noqa: E402
 from runtime.front_office import rookie_offer                # noqa: E402
 from runtime.gm import MAX_ROUNDS, FrontOffice               # noqa: E402
 from runtime.market import PATIENCE_ROUNDS, Market           # noqa: E402
 from runtime.negotiation import FOLDER, Negotiation, slug    # noqa: E402
+from runtime.trades import PARTNER_LOCATION, TradeDesk       # noqa: E402
 from runtime.valuation import read                           # noqa: E402
 from scripts import run_june30                               # noqa: E402
 
@@ -34,7 +38,7 @@ PLAN_DAYS = (OPENS, SIGNING)                    # Miami plans when the market op
 MAX_ROSTER = 15
 RE_SIGN_TO = 13                                 # re-sign own free agents, best first, until the roster reaches this
 MORATORIUM_MIN_SCORE = 20.0                     # before the cap is published Miami opens talks only with targets this strong
-STANDING = "unsigned_rookie"
+TRADES = signing.TRADES
 ALTERNATIVE_CONTEXT = {"role_minutes": 28, "strength": 41, "location": 0.5}   # judgement: an average situation elsewhere
 
 
@@ -49,9 +53,10 @@ class Run:
         self.writer = signing.Writer(root)
         self.state = read(STATE_FILE, root) if (self.root / STATE_FILE).exists() else {
             "window": WINDOW, "june30_applied": False, "news_through": "2003-06-26", "plans": [], "wade_offer_date": None,
-            "standing": STANDING, "stopped": None}
+            "standing": None, "standing_as_of": None, "stopped": None}
         self.career = read(signing.STATE, root)
-        self.pending, self.log = [], []
+        self.pending, self.awaiting, self.log = [], [], []
+        self.standing, self.wade_signed = "unsigned_rookie", None
 
     # -- records -------------------------------------------------------------------------------
     def negotiations(self):
@@ -61,12 +66,12 @@ class Run:
         return [Negotiation.load(p, self.root) for p in sorted(folder.glob("*.json"))
                 if not (p.name.endswith(".decision.json") or p.name.endswith(".result.json"))]
 
-    def decision(self, packet):
+    def decision(self, packet, folder=FOLDER):
         """Write a decision request once; return its drawn outcome or None (then the run stops on this day)."""
         errors = decision_errors(packet)
         if errors:
             raise ValueError(f"{packet['event_id']}: " + "; ".join(errors))
-        folder = self.root / FOLDER
+        folder = self.root / folder
         folder.mkdir(parents=True, exist_ok=True)
         request, result = folder / f"{packet['event_id']}.decision.json", folder / f"{packet['event_id']}.decision.result.json"
         if not request.exists():
@@ -86,7 +91,12 @@ class Run:
         signing.set_state(self.writer, day)
         if day >= OPENS:
             self.writer.files[signing.STATE]["contract_status"] = self.writer.files[signing.STATE].get("contract_status", "draft_rights_unsigned")
-        return self.writer.commit()
+        written = self.writer.commit()
+        if self.wade_signed == day:
+            # The sheet's signed_date is on disk first; the snapshot replays from it (runtime/standing.py).
+            standing.record(self.root, day, "signing", f"{SEASON}/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json")
+            self.wade_signed = None
+        return written
 
     # -- days ------------------------------------------------------------------------------------
     def advance(self, until):
@@ -109,6 +119,9 @@ class Run:
                 return "awaiting the engine's June 30 draws"
         if day < OPENS:
             return None
+        snap = standing.standing_on(self.root, day)
+        self.standing, self.state["standing"], self.state["standing_as_of"] = snap["standing"], snap["standing"], snap["as_of"]
+        self.close_answered_consultations(day)
         self.market = Market(day, self.root)
         self.fo = FrontOffice(day, self.market, self.root)
         if day == OPENS:
@@ -116,14 +129,27 @@ class Run:
             self.writer.commit()
             self.fo = FrontOffice(day, self.market, self.root)
         self.news(day)
-        if day in PLAN_DAYS and day not in self.state["plans"]:
+        # A consultation Wade has not answered (asked by this driver or by scripts/run_trade.py) stops the clock:
+        # a re-run of the same day finds the same ids, the plan is not made and no other negotiation, draw or
+        # signing moves until he answers; nothing asks him a second question meanwhile.
+        for cid in consultations.unanswered(self.root, SEASON, day):
+            if cid not in self.awaiting:
+                self.awaiting.append(cid)
+        if not self.awaiting and day in PLAN_DAYS and day not in self.state["plans"]:
             self.plan(day)
-        for n in self.negotiations():
-            self.work(n, day)
+        if not self.awaiting:
+            for n in self.negotiations():
+                self.work(n, day)
         stop = None
-        if self.pending:
-            stop = "awaiting engine draws: " + ", ".join(self.pending)
-        elif day >= SIGNING and not self.state["wade_offer_date"] and not any(n.status in ("open", "agreed", "sheet_pending") for n in self.negotiations()):
+        if self.awaiting or self.pending:
+            # The clock stops for the whole day loop: every other Miami negotiation, draw and signing waits with it.
+            parts = []
+            if self.awaiting:
+                parts.append("awaiting Wade's answer on: " + ", ".join(self.awaiting))
+            if self.pending:
+                parts.append("awaiting engine draws: " + ", ".join(self.pending))
+            stop = "; ".join(parts)
+        elif day >= SIGNING and not self.state["wade_offer_date"] and not any(n.status in ("open", "agreed", "sheet_pending", "trade_pending") for n in self.negotiations()):
             self.wade_offer(day)
             stop = "awaiting Wade's answer to Miami's rookie offer"
         elif self.state["wade_offer_date"]:
@@ -180,12 +206,13 @@ class Run:
                 n.end(f"{row['kind'].replace('_', ' ')} with {row['to']} on {row['date']} (real move; Miami had no agreement)", row["date"])
                 n.save()
                 signing.note_event(self.writer, PHASE / "note.md", row["date"], f"{row['player']} agrees with {row['to']}; Miami's talks end.")
-            if row["bbr_id"] in own and row["kind"] in ("signing", "sign_and_trade", "offer_sheet", "match_declined") and not (n and n.status in ("agreed", "sheet_pending", "signed")):
+            if row["bbr_id"] in own and row["kind"] in ("signing", "sign_and_trade", "offer_sheet", "match_declined") and not (n and n.status in ("agreed", "sheet_pending", "trade_pending", "signed")):
                 signing.depart(self.writer, row["player"], row["date"], "signed_elsewhere", f"signs with {row['to']} ({row['kind'].replace('_', ' ')}, real move); his hold and rights leave Miami's books")
         self.state["news_through"] = day
 
     def plan(self, day):
-        plan = self.fo.plan(self.requests(), self.state["standing"])
+        plan = self.fo.plan(self.requests(), self.standing)
+        plan["standing"] = {"standing": self.standing, "as_of": self.state["standing_as_of"]}
         folder = self.root / PHASE / "Plans"
         folder.mkdir(parents=True, exist_ok=True)
         self.state["plans"].append(day)
@@ -200,6 +227,18 @@ class Run:
             if day < CAP_DAY and t["score"] < MORATORIUM_MIN_SCORE:
                 t["deferred_until_cap_published"] = True
                 continue
+            kind = "sign_and_trade" if t["route"] == "sign_and_trade" else "free_agent"
+            if consultations.consultation_required(self.standing, t["value"]):
+                if consultations.objected(self.root, SEASON, t["player"], day):
+                    t["consultation"] = "objected"
+                    signing.note_event(self.writer, PHASE / "note.md", day, f"{t['player']}: Wade objected to adding him this season; the front office does not pursue him.")
+                    continue
+                if not consultations.approved(self.root, SEASON, kind, t["player"], day):
+                    record = self.ask_consultation(day, kind, t, plan)
+                    self.awaiting.append(record["id"])
+                    t["consultation"] = "asked"
+                    continue
+                t["consultation"] = "approved"
             n = Negotiation.open(t["player"], t["bbr_id"], t["club"], day, t, restricted=t["rfa"], root=self.root)
             n.save()
         if day >= SIGNING:
@@ -212,7 +251,7 @@ class Run:
     def open_re_signings(self, plan, day, open_names):
         """Re-sign talks with own free agents Miami kept rights to, best first, down to a roster of RE_SIGN_TO."""
         active = sum(1 for p in self.fo.roster["players"] if p["status"] in signing.ACTIVE_STATUSES or "draft_rights" in p["status"])
-        live = sum(1 for n in self.negotiations() if n.status in ("open", "agreed", "sheet_pending"))
+        live = sum(1 for n in self.negotiations() if n.status in ("open", "agreed", "sheet_pending", "trade_pending"))
         spots = RE_SIGN_TO - active - live
         for r in sorted(plan["re_sign_candidates"], key=lambda r: -(r["valuation"] or 0)):
             if spots <= 0:
@@ -256,7 +295,7 @@ class Run:
             rec["priorities"] = {"trait": outcome, "weights": self.market.priorities(outcome)}
         if n.status == "open":
             self.negotiate(n, day)
-        if n.status == "agreed" and day >= SIGNING:
+        if n.status in ("agreed", "trade_pending") and day >= SIGNING:
             self.execute(n, day)
         if n.status == "sheet_pending":
             self.match(n, day)
@@ -311,10 +350,207 @@ class Run:
                 signing.note_event(self.writer, PHASE / "note.md", day,
                                    f"{rec['player']} signs Miami's offer sheet; {rec['incumbent']} has until {rec['sheet']['deadline']} to match.")
             return
+        if not n.outside() and self.shops(n):
+            self.shop_own(n, day)
+            return
+        if target.get("route") == "sign_and_trade" or rec.get("trade"):
+            self.sign_and_trade(n, day)
+            return
         if not self.make_room(n, day):
             return
         n.execute_agreement(day)
-        signing.sign(self.writer, n, day)
+        signing.sign(self.writer, n, day, cap=self.market.planning_cap(day))
+
+    # -- sign-and-trade ---------------------------------------------------------------------------
+    def shops(self, n):
+        """Whether the front office shops Miami's own agreed free agent as a sign-and-trade instead of simply
+        re-signing him: a proposal already stands, or his rights are full Bird, the route is Bird and his position
+        fit is below RESIGN_AND_TRADE_FIT (runtime/gm.py). The front office picks; the user only triggers the day."""
+        rec = n.record
+        if rec.get("trade") is not None:
+            return True
+        if rec["status"] != "agreed" or (rec.get("agreement") or {}).get("route") != "bird":
+            return False
+        rights = next((p for p in self.fo.rights["players"] if p["player"] == rec["player"]), {})
+        if rights.get("bird_status") != "larry_bird":
+            return False
+        position = rec["plan"].get("position") or self.fo._positions().get(rec["bbr_id"], "SF")
+        return self.fo.resign_and_trade(rec["bbr_id"], position)
+
+    def shop_own(self, n, day):
+        """Miami's own agreed free agent shopped as a sign-and-trade: the proposal, the two draws, and, when no
+        partner takes him or either draw declines, his ordinary re-signing on the agreed terms the same day.
+        Returns the trade record, or None while the draws or Wade's answer are awaited."""
+        record = self.sign_and_trade(n, day)
+        if n.status == "agreed" and not self.awaiting:
+            if not self.make_room(n, day):
+                return record
+            n.execute_agreement(day)
+            signing.sign(self.writer, n, day, cap=self.market.planning_cap(day))
+        return record
+
+    def sign_and_trade(self, n, day):
+        """Execute an agreed sign-and-trade: the acquisition of a real club's free agent (the incumbent signs
+        and trades him), or Miami's own agreed free agent whom Miami signs and trades in the same transaction
+        (`shop_own`; also `scripts/run_trade.py --shop`).
+
+        The packet's basis is built from committed records; the proposal is written once and re-read on a
+        re-run; the player's consent (own out only) and the club's answer are engine draws read from their
+        result files; both accepting signs the player and applies the trade in one commit, so the player is
+        never Miami's signed player before the trade. A decline ends an acquisition's talks and leaves an own
+        agreement standing (the negotiation returns to `agreed` for the ordinary re-signing)."""
+        rec = n.record
+        self.writer.commit()
+        fo = FrontOffice(day, self.market, self.root)
+        desk = TradeDesk(day, fo, self.root)
+        own = not n.outside()
+        if rec.get("trade") is None:
+            answers = consultations.answers(self.root, SEASON, day)
+            proposal, reasons = desk.sign_and_trade_proposal(rec, direction="out" if own else "in", standing=self.standing, consultations=answers)
+            if proposal is None:
+                if own:
+                    signing.note_event(self.writer, PHASE / "note.md", day,
+                                       f"The front office shopped {rec['player']} as a sign-and-trade and found no partner ({reasons[0] if reasons else 'no package'}); it re-signs him on the agreed terms.")
+                    return None
+                n.end("no legal sign-and-trade package: " + "; ".join(reasons[:3]), day)
+                return None
+            if own and proposal.get("consultation") == "required":
+                for name in proposal["consultation_players"]:
+                    p = desk.partner_player(proposal["trade"]["partner"], name)
+                    record = self.ask_consultation(day, "trade", {"player": name, "bbr_id": p.get("bbr_id"), "club": proposal["trade"]["partner"],
+                                                                 "value": desk.assets.valuation.value(p.get("bbr_id")), "ask": desk.assets.salary(p),
+                                                                 "position": desk.assets.positions.get(p.get("bbr_id"), (None, "SF", 9))[1].split("-")[0]},
+                                                   None, reason=f"arrives in the sign-and-trade of {rec['player']} to {proposal['trade']['partner']}")
+                    self.awaiting.append(record["id"])
+                return None
+            trade_id = desk.trade_id(proposal["trade"])
+            rec["trade"] = {"trade_id": trade_id, "decision_event": f"trade-{trade_id}", "kind": "sign_and_trade_out" if own else "sign_and_trade_in",
+                            "player_consent_event": f"{WINDOW}-{rec['bbr_id']}-sign-and-trade-{trade_id}" if own else None}
+            rec["status"] = "trade_pending"
+            n.save()
+            consultation = None
+            if not own:
+                r = consultations.answer_of(self.root, SEASON, rec["player"], day, "sign_and_trade")
+                consultation = r["id"] if r else None
+            signing.write_proposal(self.root, desk, proposal["trade"], proposal["ranking"], day, kind="sign_and_trade",
+                                   negotiation=str(FOLDER / f"{slug(rec['player'])}.json"), standing={"standing": self.standing, "as_of": self.state["standing_as_of"]},
+                                   consultation=consultation)
+        trade_id = rec["trade"]["trade_id"]
+        path = self.root / TRADES / f"{trade_id}.json"
+        record = json.loads(path.read_text(encoding="utf-8"))
+        if record["status"] != "proposed" or day < record["date"]:
+            return record
+        if own:
+            consent = self.decision(self.consent_packet(n, record, desk, fo, day))
+            if consent is None:
+                return None
+            if consent != "accept":
+                return self.close_sign_and_trade(n, record, path, day, "declined", f"{rec['player']} declines the move to {record['trade']['partner']}; Miami re-signs him on the agreed terms")
+        result = self.root / TRADES / f"{record['decision_event']}.decision.result.json"
+        if not result.exists():
+            self.pending.append(record["decision_event"])
+            return None
+        outcome = json.loads(result.read_text(encoding="utf-8"))["outcome"]
+        record["answer"] = {"outcome": outcome, "date": day}
+        if outcome != "accept":
+            text = (f"{record['trade']['partner']} declines the sign-and-trade of {rec['player']}; Miami re-signs him on the agreed terms" if own
+                    else f"{record['trade']['partner']} declines to sign and trade {rec['player']}; Miami's talks end")
+            return self.close_sign_and_trade(n, record, path, day, "declined", text)
+        n.execute_agreement(day)
+        signing.sign(self.writer, n, day, via_trade=record)      # the signing is part of the trade on both sides
+        signing.apply_trade(self.writer, record, day)
+        record["status"], record["applied"] = "completed", day
+        rec["trade"]["outcome"] = "completed"
+        path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        n.save()
+        self.writer.commit()
+        signing.refresh_finance(self.writer, FrontOffice(day, self.market, self.root), day)
+        return record
+
+    def close_sign_and_trade(self, n, record, path, day, status, text):
+        rec = n.record
+        record["status"] = status
+        rec["trade"]["outcome"] = status
+        if n.outside():
+            n.end(text, day)                       # the acquisition cannot happen without the sign-and-trade
+        else:
+            rec["status"] = "agreed"               # the own agreement stands: the ordinary re-signing follows (shop_own)
+        path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        signing.note_event(self.writer, PHASE / "note.md", day, text + f" ({record['trade_id']}).")
+        return record
+
+    def consent_packet(self, n, record, desk, fo, day):
+        """The own sign-and-trade player's consent as a decision packet: his agreed terms at the partner against
+        the same terms at Miami (role minutes from the partner's depth at his position, its 2002-03 wins,
+        PARTNER_LOCATION), through the market's answer rule; collapsed to accept/reject."""
+        rec, target = n.record, n.record["plan"]
+        terms = rec["agreement"]["terms"]
+        offer = {"first_year": terms["first_year"], "years": terms["years"], "guaranteed": terms["guaranteed"]}
+        club, bbr = record["trade"]["partner"], rec["bbr_id"]
+        position = desk.assets.positions.get(bbr, (None, target.get("position", "SF"), 9))[1].split("-")[0]
+        depth = sum(1 for b, (c, pos, d) in desk.assets.positions.items() if c == club and pos.split("-")[0] == position and d <= 2)
+        role_minutes = 32 if depth <= 1 else 20 if depth <= 3 else 12      # the partner's depth at his position (judgement)
+        context = {"role_minutes": role_minutes, "strength": desk.assets.standings.get(club, {}).get("wins", 41), "location": PARTNER_LOCATION,
+                   "ask": terms["first_year"]}
+        alternative = {"guaranteed": terms["guaranteed"], "years": terms["years"], "club": "Miami Heat", "basis": "the agreed Miami contract"}
+        alt_context = dict(fo.context_for(target), ask=terms["first_year"])
+        packet = self.market.answer_packet(bbr, offer, context, alternative, alt_context, rec["priorities"]["weights"], WINDOW, PATIENCE_ROUNDS)
+        accept = packet["options"].get("accept", 0.02)
+        accept = round(min(0.95, max(0.05, accept)), 3)
+        packet.update(event_id=record["player_consent_event"], date=day, options={"accept": accept, "reject": round(1 - accept, 3)},
+                      question=f"Does {rec['player']} consent to the sign-and-trade of his Miami contract to {club} ({record['trade_id']})?")
+        packet["basis"] = (f"The same agreed contract at {club} (role about {role_minutes} minutes from its depth at {position}, "
+                           f"{context['strength']} wins in 2002-03, location {PARTNER_LOCATION}) against it at Miami; " + packet["basis"])
+        return packet
+
+    # -- consultations (the user's premise; runtime/consultations.py) ---------------------------------------
+    def ask_consultation(self, day, kind, t, plan, reason=None):
+        stats = {r["bbr_id"]: r for r in read("library/2003/league/nba_2002_03_player_stats.json", self.root)["records"]}
+        line = "no 2002-03 line recorded"
+        tot = (stats.get(t.get("bbr_id")) or {}).get("totals")
+        if tot and tot.get("games"):
+            g = tot["games"]
+            line = (f"{g} games, {tot['minutes'] / g:.1f} minutes, {tot['points'] / g:.1f} points, "
+                    f"{(tot['offensive_rebounds'] + tot['defensive_rebounds']) / g:.1f} rebounds, {tot['assists'] / g:.1f} assists a game")
+        room = self.fo.cap_room()
+        evidence = {"value": t.get("value"), "line": line, "salary": f"${t.get('ask', 0):,} (ask or 2003-04 salary)",
+                    "cap_position": f"room ${room['room']:,} on the {'published' if room['cap_known'] else 'planning'} cap ${room['cap']:,}",
+                    "fit": f"{t.get('position', 'N/A')}: fit {self.fo.fit(t.get('position', 'SF'), self.fo.needs())}",
+                    "reason": reason or f"in the front office's plan on {day} (route {t.get('route', kind)}, score {t.get('score', 'N/A')})"}
+        state = self.writer.load(signing.STATE)
+        record = consultations.ask(self.root, state, day, kind, t["player"], t.get("bbr_id"), t.get("club"), terms=None, trade_id=None,
+                                   basis=evidence["reason"], evidence=evidence, season=SEASON,
+                                   standing={"standing": self.standing, "as_of": self.state["standing_as_of"]})
+        signing.note_event(self.writer, PHASE / "note.md", day,
+                           f"Franchise consultation: the front office asks Wade before it adds {t['player']} ({kind}). Record: `Wade_Consultations/{record['id']}.json`.")
+        return record
+
+    def close_answered_consultations(self, day):
+        """Close answered consultations and resume the plan's targets that waited for them."""
+        state = self.writer.load(signing.STATE)
+        answered = consultations.close_answered(self.root, state, SEASON)
+        for r in answered:
+            signing.note_event(self.writer, PHASE / "note.md", r["answered"] or day,
+                               f"Wade {'approves' if r['answer'] == 'approve' else 'objects to'} the front office adding {r['player']} ({r['kind']}).")
+        if not answered or not self.state["plans"]:
+            return
+        plan_path = self.root / PHASE / f"Plans/plan_{self.state['plans'][-1]}.json"
+        plan = json.loads(plan_path.read_text(encoding="utf-8"))
+        open_names = {n.record["player"] for n in self.negotiations()}
+        changed = False
+        for t in plan["targets"]:
+            if t.get("consultation") != "asked":
+                continue
+            kind = "sign_and_trade" if t["route"] == "sign_and_trade" else "free_agent"
+            if consultations.objected(self.root, SEASON, t["player"], day):
+                t["consultation"], changed = "objected", True
+                signing.note_event(self.writer, PHASE / "note.md", day, f"{t['player']}: Wade objected to adding him this season; the front office does not pursue him.")
+            elif consultations.approved(self.root, SEASON, kind, t["player"], day):
+                t["consultation"], changed = "approved", True
+                if t["player"] not in open_names:
+                    Negotiation.open(t["player"], t["bbr_id"], t["club"], day, t, restricted=t["rfa"], root=self.root).save()
+        if changed:
+            plan_path.write_text(json.dumps(plan, indent=1) + "\n", encoding="utf-8")
 
     def match(self, n, day):
         rec, target = n.record, n.record["plan"]
@@ -330,7 +566,7 @@ class Run:
             n.record["status"] = "matched"
             return
         if self.make_room(n, day):
-            signing.sign(self.writer, n, day)
+            signing.sign(self.writer, n, day, cap=self.market.planning_cap(day))
             signing.world_effect(self.writer, n, day, outcome)
 
     def make_room(self, n, day):
@@ -401,6 +637,7 @@ class Run:
             terms = last.get("terms") or next(e["terms"] for e in reversed(entries) if e["party"] == "miami" and e.get("terms"))
             signing.sign_rookie(self.writer, log, terms, day)
             self.writer.files[PHASE / "Wade_Rookie_Contract/negotiation_log.json"] = log
+            self.wade_signed = day
             return None
         if last["action"] == "counter":
             wanted = last["terms"]["percent_of_scale"]
@@ -437,7 +674,7 @@ def main(argv):
         market = Market(day)
         fo = FrontOffice(day, market)
         requests = read(PHASE / "wade_requests.json")["requests"] if (ROOT / PHASE / "wade_requests.json").exists() else []
-        print(json.dumps(fo.plan(requests, STANDING), indent=1))
+        print(json.dumps(fo.plan(requests, standing.standing_on(ROOT, day)["standing"]), indent=1))
         return
     report = Run().advance(day)
     for row in report["log"]:

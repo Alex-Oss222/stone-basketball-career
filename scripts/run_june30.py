@@ -17,12 +17,12 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime.front_office import (age_on, estimated_market_value, player_option_probability, qualifying_offer,
                                   request_override, team_option)
+from runtime.standing import standing_on
 
 DATE = "2003-06-30"
 SEASON = ROOT / "career/Dwyane_Wade/2003-04"
 OUT = SEASON / "01_Free_Agency/June_30"
 REQUESTS = SEASON / "01_Free_Agency/wade_requests.json"
-WADE_STANDING = "unsigned_rookie"
 
 
 def slug(name):
@@ -40,6 +40,7 @@ def build(root=ROOT):
     requests_path = season / "01_Free_Agency/wade_requests.json"
     requests = json.loads(requests_path.read_text())["requests"] if requests_path.exists() else []
     wants = {(r["subject"], r["player"]): r for r in requests}
+    wade = standing_on(root, DATE)["standing"]        # Wade's computed standing on the date (runtime/standing.py)
 
     def minutes(name):
         bbr = roster[name].get("bbr_id")
@@ -75,7 +76,7 @@ def build(root=ROOT):
             decisions.append(d)
     for d in decisions:
         wish = wants.get((d["kind"], d["player"]))
-        chance = request_override(d["decision"], wish and wish["requested"], d["margin"], WADE_STANDING)
+        chance = request_override(d["decision"], wish and wish["requested"], d["margin"], wade)
         d["wade_request"] = wish
         if chance > 0:
             d["status"] = "pending_engine_draw"
@@ -84,7 +85,7 @@ def build(root=ROOT):
                           "decider": "Miami front office",
                           "options": {d["decision"]: round(1 - chance, 3), wish["requested"]: chance},
                           "basis": (f"Rule decision '{d['decision']}' (margin {d['margin']:.2f}); Wade's standing "
-                                    f"'{WADE_STANDING}'. Chance = standing weight x (1 - margin).")})
+                                    f"'{wade}'. Chance = standing weight x (1 - margin).")})
         else:
             d["status"] = "final"
     return {"date": DATE, "team": "Miami Heat", "owner": "ai_gm", "decisions": decisions}, draws

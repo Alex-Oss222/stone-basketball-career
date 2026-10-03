@@ -38,7 +38,7 @@ from dataclasses import replace
 from .injuries import rest_days, simulated_ages
 from .player_stats import alias
 from .rosters import SIMULATED_CLUB
-from .rotations import club_pace, load_rosters, miami_departures, miami_holds, real_rotation, season_fraction
+from .rotations import club_pace, load_rosters, miami_departed, miami_departures, miami_holds, real_rotation, season_fraction
 from .schedule import games_per_team
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -61,10 +61,12 @@ def _club(spec, actives, root, rating_index, season=None, game_date=None):
         rosters = load_rosters(season, root)
         if spec["team"] not in rosters:
             raise ValueError(f"{spec['team']} has no real {season} roster (Miami is simulated)")
-        # Rule 2: players simulated Miami holds are not with their real club; rule 3: players Miami sent arrive.
+        # Rule 2: players simulated Miami holds are not with their real club; rule 3: players Miami sent arrive at the
+        # partner only (`arrivals` re-adds them there), never also at the club history gave them.
         team = real_rotation(spec["team"], rosters[spec["team"]], games_per_team(season, spec["team"]), rating_index,
                              fraction=season_fraction(season, game_date, root),
-                             exclude=miami_holds(season, game_date, root), arrivals=miami_departures(season, spec["team"], game_date, root),
+                             exclude=miami_holds(season, game_date, root) | miami_departed(season, game_date, root),
+                             arrivals=miami_departures(season, spec["team"], game_date, root),
                              pace=club_pace(season, spec["team"], root))
         return replace(team, rest_days=rest)
     if "baseline" in spec:

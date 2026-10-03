@@ -182,7 +182,8 @@ def real_rotation(club_name, club, season_games, rating_index=None, *, fraction,
     """TeamInput for a real club on the date at `fraction` of the season, rotation order first.
 
     `club` is the roster file entry; `season_games` the club's regular-season games.
-    `exclude`: bbr_ids or names not with this club in the simulation (rule 2).
+    `exclude`: bbr_ids or names not with this club in the simulation (rule 2: held by Miami; rule 3: sent by Miami to
+    another club, `miami_departed`).
     `arrivals`: roster entries (same shape) for players who joined in the simulation, such as a
     player simulated Miami trades to this club.
     """
@@ -190,8 +191,9 @@ def real_rotation(club_name, club, season_games, rating_index=None, *, fraction,
     gone = lambda p: p["bbr_id"] in exclude or alias(p["player_id"]) in exclude
     present = [p for p in club["players"] if _present(p, fraction)]
     staying = [p for p in present if not gone(p) and "returned" not in p]
+    # An arrival comes from Miami's dated departures ledger, so `exclude` (what Miami holds or sent elsewhere) never applies to it.
     incoming = [p for p in present if not gone(p) and "returned" in p] + [
-        a for a in arrivals if a["games"] >= 1 and a["minutes"] > 0 and not gone(a)]
+        a for a in arrivals if a["games"] >= 1 and a["minutes"] > 0]
     # Rule 3: departing minutes go to the incoming players up to their own previous share and the
     # rest raises the staying rotation; a shortfall comes out of it, both in proportion to real minutes.
     # A returned player Miami holds never played for this club in the real season, so he frees nothing.
@@ -216,6 +218,20 @@ def real_rotation(club_name, club, season_games, rating_index=None, *, fraction,
 
 def departures_path(season):
     return Path(f"career/Dwyane_Wade/{season}/00_Team/Team/Roster/departures.json")
+
+
+def miami_departed(season, game_date, root=ROOT):
+    """Players simulated Miami sent to a real club and active there on `game_date`, regardless of club:
+    keys (bbr_id, or the name alias without one) to exclude from every real club's own roster, so a
+    player Miami traded to club A never also plays for the club history gave him (rule 2 and 3)."""
+    path = Path(root) / departures_path(season)
+    if not path.exists():
+        return frozenset()
+    out = set()
+    for e in json.loads(path.read_text(encoding="utf-8"))["entries"]:
+        if e["from"] <= game_date and (e["until"] is None or game_date < e["until"]):
+            out.add(e["bbr_id"] or alias(e["player"]))
+    return frozenset(out)
 
 
 def miami_departures(season, club_name, game_date, root=ROOT):

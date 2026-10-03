@@ -11,9 +11,11 @@ from runtime.market import Market
 from runtime.negotiation import Negotiation, STATUSES, negotiation_errors
 from runtime.private_service import Store
 from runtime.rotations import holdings_errors
-from runtime.signing import ledger_errors
+from runtime.signing import ledger_errors, trade_record_errors
+from runtime.standing import standing_errors, standing_on
 from runtime.valuation import Valuation, age_factor, production_value
 from scripts.run_free_agency import Run, local_draw
+from scripts.validate_repository import rights_errors
 
 ROOT = Path(__file__).resolve().parents[1]
 REQUEST = [{"date": "2003-06-26", "subject": "free_agent_target", "player": "Andre Miller", "requested": "pursue"}]
@@ -86,7 +88,11 @@ class FrontOfficeTests(unittest.TestCase):
         self.assertEqual(plan["wade_requests"][0]["player"], "Andre Miller")
         self.assertIn("Alonzo Mourning", [r["player"] for r in plan["renounce_when_needed"]])
         for t in plan["targets"]:
-            self.assertIn(t["route"], ("room", "mid_level"))
+            self.assertIn(t["route"], ("room", "mid_level", "sign_and_trade"))
+            if t["route"] == "sign_and_trade":
+                self.assertTrue(t["sign_and_trade_feasible"])
+        self.assertIn("sign_and_trade_probes", plan)
+        self.assertLessEqual(sum(1 for t in plan["targets"] if t["route"] == "sign_and_trade"), 1)
 
     def test_offers_follow_the_policy(self):
         t = next(t for t in self.fo.targets(REQUEST, limit=50) if t["player"] == "Andre Miller")
@@ -179,6 +185,11 @@ class DriverTests(unittest.TestCase):
         self.assertEqual(negotiation_errors(root), [])
         self.assertEqual(ledger_errors(root), [])
         self.assertEqual(holdings_errors(root), [])
+        self.assertEqual(trade_record_errors(root), [])
+        self.assertEqual(rights_errors(root), [])                    # the rights check tolerates the drivers' state after June 30
+        self.assertEqual(standing_errors(root), [])
+        self.assertFalse((root / "career/Dwyane_Wade/2003-04/Wade_Consultations").exists())   # no gate below franchise standing
+        self.assertEqual(state["standing"], "unsigned_rookie")
         career = json.loads((root / "career/Dwyane_Wade/2003-04/current_state.json").read_text())
         self.assertGreaterEqual(career["current_date"], "2003-07-16")
         # Re-running the same day writes no new decision request: the run is idempotent.
@@ -208,8 +219,17 @@ class DriverTests(unittest.TestCase):
             self.assertEqual(wade["schedule"]["2003-04"], 2636400)
             state = json.loads((root / "career/Dwyane_Wade/2003-04/current_state.json").read_text())
             self.assertEqual(state["contract_status"], "rookie_scale_contract")
+            self.assertEqual(state["pending_player_decisions"], [])
             self.assertEqual(ledger_errors(root), [])
             self.assertEqual(holdings_errors(root), [])
+            # the signing dated a standing snapshot from the sheet, and it replays
+            snapshots = json.loads((root / "career/Dwyane_Wade/standing.json").read_text())["snapshots"]
+            self.assertEqual((snapshots[-1]["standing"], snapshots[-1]["trigger"]), ("rookie", "signing"))
+            self.assertEqual(standing_errors(root), [])
+            self.assertEqual(standing_on(root, "2003-07-31")["standing"], "rookie")
+            self.assertEqual(rights_errors(root), [])
+            self.assertEqual(trade_record_errors(root), [])
+            self.assertEqual(negotiation_errors(root), [])
 
 
 if __name__ == "__main__":

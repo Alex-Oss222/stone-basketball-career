@@ -77,7 +77,9 @@ def terms_errors(terms, *, route, years_of_service, prior_salary, cap_rules, cba
     """Why a proposed contract is illegal under the 1999 rules, or [] when it passes.
 
     terms: {"schedule": [first-year salary, ...], "guaranteed": int, "signing_bonus": int (optional)}.
-    route: "room", "bird", "early_bird", "non_bird", "mid_level", "million", "minimum", "rookie_scale".
+    route: "room", "bird", "early_bird", "non_bird", "mid_level", "million", "minimum", "rookie_scale", "sign_and_trade"
+    (the last is a contract signed by the incumbent with full Bird rights to be traded at once; the desk checks the
+    rights class and the clubs' cap positions, this function the contract's shape only).
     """
     errors = []
     schedule = terms.get("schedule") or []
@@ -95,12 +97,20 @@ def terms_errors(terms, *, route, years_of_service, prior_salary, cap_rules, cba
         errors.append(f"first-year salary {first:,} exceeds the maximum {maximum:,} for {years_of_service} years of service")
     if first < minimum:
         errors.append(f"first-year salary {first:,} is under the minimum {minimum:,}")
-    bird = route in ("bird", "early_bird")
-    max_years = cba["exceptions"]["larry_bird"]["max_years"] if route == "bird" else cba["exceptions"]["early_bird"]["max_years"] if route == "early_bird" else cba["exceptions"]["non_bird"]["max_years"]
+    bird = route in ("bird", "early_bird", "sign_and_trade")
+    max_years = (cba["exceptions"]["larry_bird"]["max_years"] if route in ("bird", "sign_and_trade")
+                 else cba["exceptions"]["early_bird"]["max_years"] if route == "early_bird" else cba["exceptions"]["non_bird"]["max_years"])
     if route == "minimum":
         max_years = cba["exceptions"]["minimum"]["max_years"]
     if years > max_years:
         errors.append(f"{years} seasons exceeds the {max_years} allowed by the {route} route")
+    if route == "sign_and_trade":
+        # A sign-and-trade contract is signed with full Bird rights (Bird raises and length) and must run at
+        # least three non-option seasons; no first-season guarantee is required under the 1999 rules (inferred).
+        rule = cba["trades"]["sign_and_trade"]
+        non_option = terms.get("non_option_seasons", years)
+        if non_option < rule["min_non_option_seasons"]:
+            errors.append(f"a sign-and-trade contract needs at least three non-option seasons ({rule['min_non_option_seasons_status']})")
     raise_limit = (cba["exceptions"]["larry_bird"]["raise_percent"] if bird else cba["exceptions"]["non_bird"]["raise_percent"]) / 100
     for i in range(1, years):
         if schedule[i] > schedule[i - 1] + first * raise_limit + 1 or schedule[i] < schedule[i - 1] - first * raise_limit - 1:

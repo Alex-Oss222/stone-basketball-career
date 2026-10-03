@@ -35,7 +35,7 @@ OFFER_DAYS = 3                      # an offer stays open this long
 HOURS = {"answer": 9, "reissue": 10, "accept": 11, "offer": 12, "sheet_reissue": 13, "sheet": 14, "receipt": 15}
 MATCH_DAYS = 15                     # 1999 rules: the incumbent's matching period after service of the sheet
 MARKET_OPENS, SIGNING_OPENS, MARKET_CLOSES = "2003-07-01", "2003-07-16", "2004-06-30"
-STATUSES = ("open", "agreed", "sheet_pending", "signed", "matched", "ended")
+STATUSES = ("open", "agreed", "sheet_pending", "trade_pending", "signed", "matched", "ended")
 
 
 def slug(name):
@@ -86,7 +86,7 @@ class Negotiation:
         state = desk.start(player, club, stamp(on), trusted_issuers=(ISSUER,))
         record = {"player": player, "bbr_id": bbr_id, "incumbent": club, "restricted": bool(restricted), "opened": on,
                   "status": "open", "plan": plan_entry, "priorities": None, "rounds": [], "agreement": None,
-                  "sheet": None, "signing": None, "ended": None, "state": serialize(state)}
+                  "sheet": None, "signing": None, "ended": None, "trade": None, "state": serialize(state)}
         return cls(record, root)
 
     @classmethod
@@ -200,7 +200,7 @@ class Negotiation:
 
     def execute_agreement(self, on):
         """An agreed unrestricted free agent (or Miami's own) accepts on the desk on the signing date."""
-        if self.record["status"] != "agreed" or (self.record["restricted"] and self.outside()):
+        if self.record["status"] not in ("agreed", "trade_pending") or (self.record["restricted"] and self.outside()):
             raise ValueError("execute_agreement is for an agreed player who is not another club's restricted free agent")
         state, rnd, offer = self._live_agreed_offer(self.state, on, HOURS["reissue"])
         at = stamp(on, HOURS["accept"])
@@ -292,10 +292,25 @@ def negotiation_errors(root=ROOT):
                 desk.latest_offer(state, rnd["offer_id"])
                 if rnd["answer"] is not None and not rnd.get("decision_event"):
                     errors.append(f"{rel}: round {rnd['round']} answered without a decision event")
-            if n.record["status"] in ("signed", "agreed", "sheet_pending", "matched") and not n.record.get("agreement"):
+            if n.record["status"] in ("signed", "agreed", "sheet_pending", "matched", "trade_pending") and not n.record.get("agreement"):
                 errors.append(f"{rel}: status {n.record['status']} needs an agreement")
             if n.record["status"] == "signed" and state.phase not in ("execution_pending", "binding_resolution_pending_registration"):
                 errors.append(f"{rel}: signed without a desk agreement or resolution")
+            trade = n.record.get("trade")
+            if n.record["status"] == "trade_pending" and not trade:
+                errors.append(f"{rel}: trade_pending needs the trade reference")
+            route = (n.record.get("agreement") or {}).get("route")
+            if n.record["status"] == "signed" and (route == "sign_and_trade" or trade):
+                record_path = Path(root) / f"career/Dwyane_Wade/{SEASON}/00_Team/Transactions/Trades/{(trade or {}).get('trade_id')}.json"
+                if not trade or not record_path.exists():
+                    errors.append(f"{rel}: a sign-and-trade signing needs its trade record")
+                else:
+                    tr = json.loads(record_path.read_text(encoding="utf-8"))
+                    back = tr.get("negotiation") == str(rel).replace("\\", "/")
+                    if route == "sign_and_trade" and tr.get("status") != "completed":
+                        errors.append(f"{rel}: a sign-and-trade acquisition needs a completed trade record")
+                    if not back:
+                        errors.append(f"{rel}: the trade record {trade.get('trade_id')} does not point back to this negotiation")
         except Exception as exc:  # a corrupt record is a validation failure, not a crash
             errors.append(f"{rel}: {exc}")
     return errors
