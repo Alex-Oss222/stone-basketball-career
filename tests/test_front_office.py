@@ -5,6 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from tests import checkpoint
 from runtime.decisions import decision_errors, draw
 from runtime.front_office import player_option_probability, request_override, rule_margin, team_option
 from runtime.private_service import Store, play_requests
@@ -24,6 +25,7 @@ def copy_repo():
     root = Path(tmp.name)
     shutil.copytree(ROOT / "library", root / "library")
     shutil.copytree(ROOT / "career", root / "career")
+    checkpoint.pin(root)                      # tests simulate from the June 26 checkpoint, not the live clock
     return tmp, root
 
 

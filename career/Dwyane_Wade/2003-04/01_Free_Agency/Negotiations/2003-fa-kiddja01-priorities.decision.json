@@ -1,0 +1,13 @@
+{
+ "event_id": "2003-fa-kiddja01-priorities",
+ "date": "2003-07-01",
+ "question": "What does Jason Kidd weigh most in choosing his next contract?",
+ "decider": "Jason Kidd (simulated player)",
+ "options": {
+  "money": 0.35,
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "winning": 0.25
+ },
+ "basis": "Trait odds by age (30): money, fame, loyalty, winning (docs/front_office_design.md 4.3). Drawn once per market window."
+}

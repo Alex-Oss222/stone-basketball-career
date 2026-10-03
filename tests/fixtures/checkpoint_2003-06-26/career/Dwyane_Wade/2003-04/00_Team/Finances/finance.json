@@ -1,0 +1,357 @@
+{
+  "schema_version": 5,
+  "owner": "ai_gm",
+  "as_of": "2003-06-26",
+  "season": "2003-04",
+  "team": "Miami Heat",
+  "cap_status": "pre_publication_and_pre_free_agency_reconciliation",
+  "live_official_salary_cap": null,
+  "historical_actual_salary_cap": 43840000,
+  "historical_actual_salary_cap_publication_date": "2003-07-15",
+  "league_cap_history_file": "league_cap_history.json",
+  "contract_schedules_file": "contract_schedules.json",
+  "known_counted_salary_before_free_agent_holds": 32066078,
+  "reference_difference_to_historical_actual_cap_before_free_agent_holds": 11773922,
+  "cap_space": null,
+  "cap_room": null,
+  "cap_room_reason": [
+    "The 2003-04 cap has not been published at the June 26 checkpoint.",
+    "Four priced options are pending: Anthony Carter, Rasual Butler, Sean Lampley and Ken Johnson.",
+    "Ellis remains under contract; the final-year amount is rounded reporting and exact amended guarantees are unverified.",
+    "Five projected free-agent holds are calculated; Mourning needs the applicable maximum and House has conflicting prior-salary reports.",
+    "June 30 option, qualifying-offer and waiver decisions, later renouncements and signings have not occurred.",
+    "Unused exceptions, waived salary and bonus adjustments still require reconciliation."
+  ],
+  "known_current_components": [
+    {
+      "player": "Eddie Jones",
+      "kind": "contract_salary",
+      "amount": 12333750,
+      "precision": "whole_dollars"
+    },
+    {
+      "player": "Brian Grant",
+      "kind": "contract_salary",
+      "amount": 12130648,
+      "precision": "whole_dollars"
+    },
+    {
+      "player": "Caron Butler",
+      "kind": "contract_salary",
+      "amount": 1804680,
+      "precision": "whole_dollars"
+    },
+    {
+      "player": "LaPhonso Ellis",
+      "kind": "contract_salary",
+      "amount": 3600000,
+      "precision": "reported_rounded"
+    },
+    {
+      "player": "Dwyane Wade",
+      "kind": "unsigned_first_round_scale_cap_hold",
+      "amount": 2197000,
+      "precision": "whole_dollars"
+    }
+  ],
+  "pending_control_items": [
+    {
+      "player": "Anthony Carter",
+      "type": "player_option",
+      "season": "2003-04",
+      "amount": 4100000,
+      "deadline": "2003-06-30",
+      "status": "pending"
+    },
+    {
+      "player": "Rasual Butler",
+      "type": "team_option",
+      "season": "2003-04",
+      "amount": 563679,
+      "deadline": "2003-06-30",
+      "status": "pending"
+    },
+    {
+      "player": "Sean Lampley",
+      "type": "team_option",
+      "season": "2003-04",
+      "amount": 563679,
+      "deadline": "2003-06-30",
+      "status": "pending"
+    },
+    {
+      "player": "Ken Johnson",
+      "type": "team_option",
+      "season": "2003-04",
+      "amount": 563679,
+      "deadline": "2003-06-30",
+      "status": "pending"
+    }
+  ],
+  "draft_rights": [
+    {
+      "player": "Dwyane Wade",
+      "pick": 5,
+      "first_year_rookie_scale": 2197000,
+      "current_cap_hold": 2197000,
+      "permitted_percent_of_scale": {
+        "min": 80,
+        "max": 120
+      },
+      "contract_status": "unsigned"
+    },
+    {
+      "player": "Jerome Beasley",
+      "pick": 33,
+      "current_cap_hold": 0,
+      "contract_status": "unsigned"
+    }
+  ],
+  "future_cap_policy": "The eight-season archive is gated historical reference. The commitment projection includes only terms already existing on June 26, 2003. Future signings, roster costs and usable cap room remain unprojected.",
+  "sources": [
+    "https://www.espn.com/nba/news/2003/0715/1581132.html",
+    "https://basketball.realgm.com/nba/info/salary_cap",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+    "https://basketball.realgm.com/nba/info/rookie_scale/2004",
+    "https://www.cbafaq.com/salarycap99.htm",
+    "https://www.espn.com/nba/columns/stein_marc/1577692.html",
+    "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf",
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+    "https://basketball.realgm.com/wiretap/151255/Likely-dilemma-Zo-or-Grant",
+    "https://www.rotowire.com/basketball/player/laphonso-ellis-1443"
+  ],
+  "cap_sheet_file": "cap_sheet.md",
+  "planning_horizon": [
+    "2003-04",
+    "2004-05",
+    "2005-06",
+    "2006-07",
+    "2007-08",
+    "2008-09",
+    "2009-10",
+    "2010-11"
+  ],
+  "currency": "USD",
+  "known_counted_salary_definition": "Non-option contract amounts plus the unsigned first-round hold; includes Ellis at the rounded reported $3.6M. Not a guarantee total or certified team salary.",
+  "scheduled_contract_salary_subtotal": 29869078,
+  "known_pending_option_salary": 5791037,
+  "known_base_plus_priced_options": 37857115,
+  "live_official_tax_threshold": null,
+  "tax_payroll": null,
+  "luxury_tax_bill": null,
+  "free_agent_holds": [
+    {
+      "player": "Alonzo Mourning",
+      "amount": null,
+      "rights_type": "bird",
+      "calculation_status": "maximum_salary_limit_pending",
+      "prior_season_salary": 20629800,
+      "formula": "min(1.50 * prior_salary, applicable_maximum_salary)",
+      "renouncement_status": "not_recorded",
+      "effective_no_earlier_than": "2003-07-01",
+      "condition": "Projection if rights are retained when the contract expires; no renouncement, offer or signing assumed.",
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+        "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+      ],
+      "calculation_inputs": {
+        "uncapped_bird_amount": 30944700,
+        "prior_salary_105_percent": 21661290,
+        "league_based_maximum_for_2003_04": null
+      },
+      "note": "Exact hold awaits the applicable maximum. The prior-salary branch is $21,661,290; the new league-derived maximum is not published on June 26."
+    },
+    {
+      "player": "Malik Allen",
+      "amount": 638679,
+      "rights_type": "early_bird",
+      "calculation_status": "minimum_salary_override",
+      "prior_season_salary": 512435,
+      "formula": "2003-04 two-year-service minimum",
+      "renouncement_status": "not_recorded",
+      "effective_no_earlier_than": "2003-07-01",
+      "condition": "Projection if rights are retained when the contract expires; no renouncement, offer or signing assumed.",
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+        "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+      ],
+      "applicable_minimum_cap_amount": 638679
+    },
+    {
+      "player": "Travis Best",
+      "amount": 1680000,
+      "rights_type": "non_bird",
+      "calculation_status": "derived_from_prior_salary",
+      "prior_season_salary": 1400000,
+      "formula": "1.20 * 1400000",
+      "renouncement_status": "not_recorded",
+      "effective_no_earlier_than": "2003-07-01",
+      "condition": "Projection if rights are retained when the contract expires; no renouncement, offer or signing assumed.",
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+        "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+      ]
+    },
+    {
+      "player": "Eddie House",
+      "amount": null,
+      "rights_type": "bird",
+      "calculation_status": "prior_salary_disputed",
+      "prior_season_salary": null,
+      "formula": "2.00 * verified_prior_salary, subject to CBA minimum/maximum limits",
+      "renouncement_status": "not_recorded",
+      "effective_no_earlier_than": "2003-07-01",
+      "condition": "Projection if rights are retained when the contract expires; no renouncement, offer or signing assumed.",
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+        "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf",
+        "https://realgm.freeservers.com/"
+      ],
+      "candidate_amounts": [
+        1274870,
+        1474870
+      ],
+      "note": "Candidates apply 200% to the competing exact prior-salary reports. Neither is booked pending source reconciliation."
+    },
+    {
+      "player": "Mike James",
+      "amount": 638679,
+      "rights_type": "early_bird",
+      "calculation_status": "minimum_salary_override",
+      "prior_season_salary": 512435,
+      "formula": "2003-04 two-year-service minimum",
+      "renouncement_status": "not_recorded",
+      "effective_no_earlier_than": "2003-07-01",
+      "condition": "Projection if rights are retained when the contract expires; no renouncement, offer or signing assumed.",
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+        "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+      ],
+      "applicable_minimum_cap_amount": 638679
+    },
+    {
+      "player": "Sean Marks",
+      "amount": 688679,
+      "rights_type": "early_bird",
+      "calculation_status": "minimum_salary_override",
+      "prior_season_salary": 612435,
+      "formula": "2003-04 minimum net of Article IV Section 1(l) reimbursement; four-year-service cap amount",
+      "renouncement_status": "not_recorded",
+      "effective_no_earlier_than": "2003-07-01",
+      "condition": "Projection if rights are retained when the contract expires; no renouncement, offer or signing assumed.",
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+        "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+      ],
+      "applicable_minimum_cap_amount": 688679
+    },
+    {
+      "player": "Vladimir Stepania",
+      "amount": 1755000,
+      "rights_type": "early_bird",
+      "calculation_status": "derived_from_prior_salary",
+      "prior_season_salary": 1350000,
+      "formula": "1.30 * 1350000",
+      "renouncement_status": "not_recorded",
+      "effective_no_earlier_than": "2003-07-01",
+      "condition": "Projection if rights are retained when the contract expires; no renouncement, offer or signing assumed.",
+      "sources": [
+        "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+        "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+        "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+        "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+      ]
+    }
+  ],
+  "other_cap_items": [
+    {
+      "item": "incomplete_roster_charges",
+      "amount": 0,
+      "status": "not_applicable_before_july_1",
+      "note": "Article VII Section 4(f) starts July 1. Recount contracts, retained holds and first-round picks after dated decisions; threshold is 11."
+    },
+    {
+      "item": "unused_exceptions",
+      "amount": null,
+      "status": "unreconciled"
+    },
+    {
+      "item": "waived_or_dead_salary",
+      "amount": null,
+      "status": "unreconciled"
+    },
+    {
+      "item": "bonuses_and_other_adjustments",
+      "amount": null,
+      "status": "unreconciled"
+    }
+  ],
+  "cap_room_calculation": {
+    "status": "blocked",
+    "formula": "published_salary_cap - reconciled_total_team_salary",
+    "required_inputs": [
+      "published_salary_cap",
+      "option_resolutions",
+      "free_agent_holds_and_renouncements",
+      "incomplete_roster_charges",
+      "unused_exceptions",
+      "waived_salary_and_other_adjustments"
+    ],
+    "rule": "Missing inputs propagate null. Cap holds are accounting allocations, not signed cash salary. Do not subtract only the known base subtotal and call the difference cap room."
+  },
+  "reference_difference_to_historical_actual_cap_note": "Approximate historical arithmetic only. Includes rounded Ellis reporting, excludes options and holds, and is not usable cap room.",
+  "known_free_agent_holds_subtotal": 5401037,
+  "unpriced_free_agent_hold_count": 2,
+  "free_agent_hold_total": null,
+  "free_agent_hold_timing": "Upcoming 2003-04 cap-year projection only. The seven contracts remain expiring contracts on June 26.",
+  "research_date": "2026-10-02",
+  "guarantee_review": [
+    {
+      "player": "LaPhonso Ellis",
+      "season": "2003-04",
+      "status": "existing_contract_amended_guarantee",
+      "reported_salary": 3600000,
+      "precision": "reported_rounded",
+      "protected_amount": null,
+      "note": "Keep salary scheduled until a dated decision. Exact guarantee rider is not available."
+    }
+  ],
+  "era_rules": {
+    "agreement": "1999 NBA/NBPA CBA",
+    "source": "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf",
+    "minimum_scale": {
+      "season": "2003-04",
+      "one_year_service": 563679,
+      "two_year_service": 638679,
+      "four_year_service": 688679
+    },
+    "early_bird_hold_multiplier": 1.3,
+    "non_bird_hold_multiplier": 1.2,
+    "bird_non_scale_below_average_hold_multiplier": 2.0,
+    "minimum_prior_salary_rule": "Use the upcoming minimum net of league reimbursement, not the Bird multiplier.",
+    "roster_charge_threshold": 11,
+    "roster_charge_starts": "2003-07-01",
+    "first_round_unsigned_hold_scale_percent": 100,
+    "second_round_unsigned_individual_hold": 0,
+    "sections": [
+      "IV.1(l)",
+      "VII.4(d)-(f)",
+      "Exhibits B and C"
+    ]
+  },
+  "subtotal_precision": "includes_rounded_report",
+  "reported_rounded_salary_count": 1
+}

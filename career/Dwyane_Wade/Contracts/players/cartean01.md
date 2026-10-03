@@ -2,9 +2,9 @@
 
 # Contract | Anthony Carter
 
-Known through: 2003-06-30. [Open interactive contract](cartean01.html#contract) · [Contract history](cartean01.html#contract-history)
+Known through: 2003-07-01. [Open interactive contract](cartean01.html#contract) · [Contract history](cartean01.html#contract-history)
 
-Anthony Carter: player option pending. Evidence cutoff: 2003-06-30.
+Anthony Carter: player option exercised. Evidence cutoff: 2003-07-01.
 
 ## Current contract
 
@@ -33,7 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
-| Status | player_option_pending |
+| Status | player_option_exercised |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -51,7 +51,7 @@ An option amount is conditional. No exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2003-04 | player_option | $4,100,000 | Not recorded | Not recorded | Not recorded |
+| 2003-04 | player_option | $4,100,000 | Not recorded | exercised | Not recorded |
 
 ### Additional recorded annual compensation
 
@@ -117,7 +117,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Anthony Carter |
 | Club / rights baseline | Miami Heat |
-| Control status | player_option_pending |
+| Control status | player_option_exercised |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -189,7 +189,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
-| Status | player_option_pending |
+| Status | player_option_exercised |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -207,7 +207,7 @@ An option amount is conditional. No exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2003-04 | player_option | $4,100,000 | Not recorded | Not recorded | Not recorded |
+| 2003-04 | player_option | $4,100,000 | Not recorded | exercised | Not recorded |
 
 ### Additional recorded annual compensation
 

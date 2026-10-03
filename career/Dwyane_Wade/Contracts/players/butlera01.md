@@ -2,9 +2,9 @@
 
 # Contract | Rasual Butler
 
-Known through: 2003-06-30. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
+Known through: 2003-07-01. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
 
-Rasual Butler: team option pending. Evidence cutoff: 2003-06-30.
+Rasual Butler: team option exercised. Evidence cutoff: 2003-07-01.
 
 ## Current contract
 
@@ -33,7 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
-| Status | team_option_pending |
+| Status | team_option_exercised |
 | Contract wording | Signed a partially guaranteed two year minimum salary contract with Miami. Included team option for 2003/04. |
 
 ### Salary by season
@@ -51,7 +51,7 @@ An option amount is conditional. No exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2003-04 | team_option | $563,679 | Not recorded | Not recorded | Not recorded |
+| 2003-04 | team_option | $563,679 | Not recorded | exercised | Not recorded |
 
 ### Additional recorded annual compensation
 
@@ -121,7 +121,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Rasual Butler |
 | Club / rights baseline | Miami Heat |
-| Control status | team_option_pending |
+| Control status | team_option_exercised |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -193,7 +193,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
-| Status | team_option_pending |
+| Status | team_option_exercised |
 | Contract wording | Signed a partially guaranteed two year minimum salary contract with Miami. Included team option for 2003/04. |
 
 ### Salary by season
@@ -211,7 +211,7 @@ An option amount is conditional. No exercise or decline is assumed.
 
 | Season | Option | Amount | Decision deadline | Outcome | Outcome date |
 | --- | --- | --- | --- | --- | --- |
-| 2003-04 | team_option | $563,679 | Not recorded | Not recorded | Not recorded |
+| 2003-04 | team_option | $563,679 | Not recorded | exercised | Not recorded |
 
 ### Additional recorded annual compensation
 

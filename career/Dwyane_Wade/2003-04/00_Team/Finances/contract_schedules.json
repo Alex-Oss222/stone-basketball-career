@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "owner": "ai_gm",
-  "as_of": "2003-06-26",
+  "as_of": "2003-06-30",
   "team": "Miami Heat",
   "horizon": [
     "2003-04",
@@ -185,7 +185,7 @@
     },
     {
       "player": "Anthony Carter",
-      "status": "player_option_pending",
+      "status": "player_option_exercised",
       "years_of_service": 4,
       "years_of_service_basis": {
         "seasons": [
@@ -221,7 +221,7 @@
     },
     {
       "player": "Rasual Butler",
-      "status": "team_option_pending",
+      "status": "team_option_exercised",
       "schedule": {
         "2003-04": 563679
       },
@@ -257,7 +257,7 @@
     },
     {
       "player": "Sean Lampley",
-      "status": "team_option_pending",
+      "status": "team_option_exercised",
       "schedule": {
         "2003-04": 563679
       },
@@ -293,7 +293,7 @@
     },
     {
       "player": "Ken Johnson",
-      "status": "team_option_pending",
+      "status": "team_option_declined",
       "schedule": {
         "2003-04": 563679
       },

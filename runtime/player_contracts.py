@@ -322,16 +322,16 @@ def build_contract_catalog(root, player, clock=None):
                     "source": _source(log_path, root, "Unsigned negotiation / player response")})
         for path in sorted((season / "01_Free_Agency/Negotiations").glob("*.json")):
             rec = _read(path)
-            signed = rec.get("signing", {}).get("date")
+            signed = (rec.get("signing") or {}).get("date")
             if rec.get("status") != "signed" or not _known(signed, cutoff):
                 continue
-            terms = rec.get("agreement", {}).get("terms", {})
+            terms = (rec.get("agreement") or {}).get("terms", {})
             first = int(season.name[:4])
             schedule = {f"{first+i}-{str(first+i+1)[-2:]}": v for i, v in enumerate(terms.get("schedule", []))}
             row = {"player": rec.get("player"), "bbr_id": rec.get("bbr_id"), "signed_date": signed,
                    "status": "signed_free_agent", "schedule": schedule,
                    "amount_kind": {s: "contract_salary" for s in schedule},
-                   "route": rec.get("agreement", {}).get("route"), "original_term_seasons": terms.get("years"),
+                   "route": (rec.get("agreement") or {}).get("route"), "original_term_seasons": terms.get("years"),
                    "full_original_schedule": True, "start_season": season.name,
                    "guaranteed": {s: (0 if i == len(schedule)-1 and terms.get("last_year_guaranteed") is False else v)
                                   for i, (s, v) in enumerate(schedule.items())}}

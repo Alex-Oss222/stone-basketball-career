@@ -1,0 +1,168 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2003-06-26",
+ "team": "Miami Heat",
+ "purpose": "Rights and cap holds for Miami's expiring contracts. Facts and rule computations only; no decision is recorded here.",
+ "rules": "library/2003/league/nba_1999_cba_rules.json",
+ "tenure_source": "library/2003/league/miami_expiring_tenure.csv",
+ "average_salary_threshold": 4917000,
+ "average_salary_note": "2003-04 mid-level exception, which equals the average salary under the 1999 agreement (rules file, average_salary).",
+ "special_cases": {
+  "Mike James": "Waived 2001-10-25 and re-signed 2001-12-18; a waiver restarts the Bird clock, so 2001-02 counts from the re-signing.",
+  "Alonzo Mourning": "Under contract through 2002-03 although he missed the season; his Bird clock continues."
+ },
+ "players": [
+  {
+   "player": "Eddie House",
+   "bbr_id": "houseed01",
+   "previous_salary": 637435,
+   "joined_miami": {
+    "how": "drafted (2nd round, 37th overall)",
+    "date": "2000-06-28",
+    "first_season": "2000-01"
+   },
+   "seasons_with_miami_for_bird": 3,
+   "nba_seasons_before_2003_04": 3,
+   "bird_status": "larry_bird",
+   "cap_hold": 1274870,
+   "cap_hold_percent": 200,
+   "above_league_average_salary": false,
+   "restricted_free_agency_eligible": true,
+   "qualifying_offer": 813679,
+   "qualifying_offer_basis": "minimum salary plus $150,000",
+   "notes": [
+    "previous salary is minimum-level; a separate minimum-contract hold rule is unverified (rules file, unverified[0])"
+   ]
+  },
+  {
+   "player": "Malik Allen",
+   "bbr_id": "allenma01",
+   "previous_salary": 512435,
+   "joined_miami": {
+    "how": "signed as free agent",
+    "date": "2001-07-20",
+    "first_season": "2001-02"
+   },
+   "seasons_with_miami_for_bird": 2,
+   "nba_seasons_before_2003_04": 2,
+   "bird_status": "early_bird",
+   "cap_hold": 666166,
+   "cap_hold_percent": 130,
+   "above_league_average_salary": false,
+   "restricted_free_agency_eligible": true,
+   "qualifying_offer": 788679,
+   "qualifying_offer_basis": "minimum salary plus $150,000",
+   "notes": [
+    "previous salary is minimum-level; a separate minimum-contract hold rule is unverified (rules file, unverified[0])"
+   ]
+  },
+  {
+   "player": "Mike James",
+   "bbr_id": "jamesmi01",
+   "previous_salary": 512435,
+   "joined_miami": {
+    "how": "signed as free agent (first signed 2001-07-20; waived 2001-10-25; signed again 2001-12-18)",
+    "date": "2001-12-18",
+    "first_season": "2001-02"
+   },
+   "seasons_with_miami_for_bird": 2,
+   "nba_seasons_before_2003_04": 2,
+   "bird_status": "early_bird",
+   "cap_hold": 666166,
+   "cap_hold_percent": 130,
+   "above_league_average_salary": false,
+   "restricted_free_agency_eligible": true,
+   "qualifying_offer": 788679,
+   "qualifying_offer_basis": "minimum salary plus $150,000",
+   "notes": [
+    "previous salary is minimum-level; a separate minimum-contract hold rule is unverified (rules file, unverified[0])"
+   ]
+  },
+  {
+   "player": "Alonzo Mourning",
+   "bbr_id": "mournal01",
+   "previous_salary": 20629800,
+   "joined_miami": {
+    "how": "traded (from Charlotte Hornets)",
+    "date": "1995-11-03",
+    "first_season": "1995-96"
+   },
+   "seasons_with_miami_for_bird": 8,
+   "nba_seasons_before_2003_04": 10,
+   "bird_status": "larry_bird",
+   "cap_hold": 21661290,
+   "cap_hold_percent": 150,
+   "above_league_average_salary": true,
+   "restricted_free_agency_eligible": false,
+   "qualifying_offer": null,
+   "qualifying_offer_basis": "not eligible for restricted free agency",
+   "notes": [
+    "capped at the player's maximum salary (21661290)"
+   ]
+  },
+  {
+   "player": "Travis Best",
+   "bbr_id": "besttr01",
+   "previous_salary": 1400000,
+   "joined_miami": {
+    "how": "signed as free agent",
+    "date": "2002-09-05",
+    "first_season": "2002-03"
+   },
+   "seasons_with_miami_for_bird": 1,
+   "nba_seasons_before_2003_04": 8,
+   "bird_status": "non_bird",
+   "cap_hold": 1680000,
+   "cap_hold_percent": 120,
+   "above_league_average_salary": false,
+   "restricted_free_agency_eligible": false,
+   "qualifying_offer": null,
+   "qualifying_offer_basis": "not eligible for restricted free agency",
+   "notes": []
+  },
+  {
+   "player": "Vladimir Stepania",
+   "bbr_id": "stepavl01",
+   "previous_salary": 1350000,
+   "joined_miami": {
+    "how": "signed as free agent",
+    "date": "2001-10-02",
+    "first_season": "2001-02"
+   },
+   "seasons_with_miami_for_bird": 2,
+   "nba_seasons_before_2003_04": 5,
+   "bird_status": "early_bird",
+   "cap_hold": 1755000,
+   "cap_hold_percent": 130,
+   "above_league_average_salary": false,
+   "restricted_free_agency_eligible": false,
+   "qualifying_offer": null,
+   "qualifying_offer_basis": "not eligible for restricted free agency",
+   "notes": []
+  },
+  {
+   "player": "Sean Marks",
+   "bbr_id": "marksse01",
+   "previous_salary": 612435,
+   "joined_miami": {
+    "how": "signed as free agent",
+    "date": "2001-10-01",
+    "first_season": "2001-02"
+   },
+   "seasons_with_miami_for_bird": 2,
+   "nba_seasons_before_2003_04": 4,
+   "bird_status": "early_bird",
+   "cap_hold": 796166,
+   "cap_hold_percent": 130,
+   "above_league_average_salary": false,
+   "restricted_free_agency_eligible": false,
+   "qualifying_offer": null,
+   "qualifying_offer_basis": "not eligible for restricted free agency",
+   "notes": [
+    "previous salary is minimum-level; a separate minimum-contract hold rule is unverified (rules file, unverified[0])"
+   ]
+  }
+ ],
+ "total_cap_holds": 28499658
+}

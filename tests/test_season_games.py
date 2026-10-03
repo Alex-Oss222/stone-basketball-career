@@ -2,6 +2,8 @@ import json
 import shutil
 import tempfile
 import unittest
+
+from tests import checkpoint
 from pathlib import Path
 
 from runtime import camp, season_games
@@ -18,6 +20,7 @@ def copy_repo():
     root = Path(tmp.name)
     for folder in ("library", "career", "foundation", "docs"):
         shutil.copytree(ROOT / folder, root / folder)
+    checkpoint.pin(root)                      # tests simulate from the June 26 checkpoint, not the live clock
     return tmp, root
 
 

@@ -2,9 +2,9 @@
 
 # Contract | Dwyane Wade
 
-Known through: 2003-06-30. [Open interactive contract](player_cards.html#contract) · [Contract history](player_cards.html#contract-history)
+Known through: 2003-07-01. [Open interactive contract](player_cards.html#contract) · [Contract history](player_cards.html#contract-history)
 
-Dwyane Wade: unsigned first round draft rights. Evidence cutoff: 2003-06-30.
+Dwyane Wade: unsigned first round draft rights. Evidence cutoff: 2003-07-01.
 
 ## Current contract
 

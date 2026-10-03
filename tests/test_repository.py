@@ -2,6 +2,8 @@ import json
 import shutil
 import tempfile
 import unittest
+
+from tests import checkpoint
 from copy import deepcopy
 from pathlib import Path
 
@@ -74,7 +76,7 @@ class InitializedCareerTests(unittest.TestCase):
         self.assertEqual(names,{"Dwyane Wade","Jerome Beasley"})
 
     def test_cap_room_stays_unresolved_on_draft_day(self):
-        finance=json.loads((TEAM/"Finances/finance.json").read_text(encoding="utf-8"))
+        finance=checkpoint.read("career/Dwyane_Wade/2003-04/00_Team/Finances/finance.json")
         self.assertIsNone(finance["cap_room"])
         carter=next(x for x in finance["pending_control_items"] if x["player"]=="Anthony Carter")
         self.assertEqual(carter["status"],"pending")
@@ -168,7 +170,7 @@ class InitializedCareerTests(unittest.TestCase):
         })
 
     def test_draft_day_finance_baseline(self):
-        finance=json.loads((TEAM/"Finances/finance.json").read_text(encoding="utf-8"))
+        finance=checkpoint.read("career/Dwyane_Wade/2003-04/00_Team/Finances/finance.json")
         self.assertIsNone(finance["live_official_salary_cap"])
         self.assertEqual(finance["historical_actual_salary_cap"],43840000)
         self.assertEqual(finance["known_counted_salary_before_free_agent_holds"],32066078)
@@ -195,11 +197,12 @@ class InitializedCareerTests(unittest.TestCase):
 
 
 class FinanceProjectionTests(unittest.TestCase):
+    """The draft-day projection rules, checked on the frozen June 26 files (tests/checkpoint.py)."""
     def setUp(self):
-        folder=TEAM/"Finances"
-        self.finance=json.loads((folder/"finance.json").read_text(encoding="utf-8"))
-        self.schedules=json.loads((folder/"contract_schedules.json").read_text(encoding="utf-8"))
-        self.history=json.loads((folder/"league_cap_history.json").read_text(encoding="utf-8"))
+        folder="career/Dwyane_Wade/2003-04/00_Team/Finances"
+        self.finance=checkpoint.read(f"{folder}/finance.json")
+        self.schedules=checkpoint.read(f"{folder}/contract_schedules.json")
+        self.history=json.loads((TEAM/"Finances/league_cap_history.json").read_text(encoding="utf-8"))
 
     def errors(self):
         return finance_errors(self.finance,self.schedules,self.history)
@@ -239,7 +242,7 @@ class FinanceProjectionTests(unittest.TestCase):
 
     def test_historical_contract_corrections(self):
         players={p["player"]:p for p in self.schedules["players"]}
-        roster=json.loads((TEAM/"Team/Roster/roster.json").read_text(encoding="utf-8"))
+        roster=checkpoint.read("career/Dwyane_Wade/2003-04/00_Team/Team/Roster/roster.json")
         control={p["name"]:p for p in roster["players"]}
         for name in ("Rasual Butler","Sean Lampley","Ken Johnson"):
             self.assertEqual(players[name]["schedule"]["2003-04"],563679)
@@ -284,7 +287,7 @@ class RightsCheckTests(unittest.TestCase):
         root = Path(tmp.name)
         shutil.copytree(ROOT / "library", root / "library")
         shutil.copytree(ROOT / "career", root / "career")
-        return root
+        return checkpoint.pin(root)
 
     def test_checkpoint_copy_passes_and_drivers_state_is_tolerated(self):
         root = self.copy()

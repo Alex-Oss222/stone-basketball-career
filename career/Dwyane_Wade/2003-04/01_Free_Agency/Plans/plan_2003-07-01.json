@@ -1,0 +1,219 @@
+{
+ "date": "2003-07-01",
+ "cap_room": {
+  "cap": 40271000,
+  "cap_known": false,
+  "committed": 37293436,
+  "holds": 6838368,
+  "roster_charge": 1467724,
+  "room": -5328528
+ },
+ "payroll_ceiling": 57000000,
+ "renounce_when_needed": [
+  {
+   "player": "Alonzo Mourning",
+   "hold": 21661290,
+   "valuation": null,
+   "bird_status": "larry_bird",
+   "reason": "no 2002-03 evidence; hold exceeds any offer Miami would make"
+  }
+ ],
+ "keep_rights": [
+  {
+   "player": "Eddie House",
+   "hold": 1274870,
+   "valuation": 3616321,
+   "bird_status": "larry_bird",
+   "reason": "hold is within what Miami would pay; rights worth keeping"
+  },
+  {
+   "player": "Malik Allen",
+   "hold": 666166,
+   "valuation": 4633480,
+   "bird_status": "early_bird",
+   "reason": "hold is within what Miami would pay; rights worth keeping"
+  },
+  {
+   "player": "Mike James",
+   "hold": 666166,
+   "valuation": 3872696,
+   "bird_status": "early_bird",
+   "reason": "hold is within what Miami would pay; rights worth keeping"
+  },
+  {
+   "player": "Travis Best",
+   "hold": 1680000,
+   "valuation": 4003318,
+   "bird_status": "non_bird",
+   "reason": "hold is within what Miami would pay; rights worth keeping"
+  },
+  {
+   "player": "Vladimir Stepania",
+   "hold": 1755000,
+   "valuation": 4369519,
+   "bird_status": "early_bird",
+   "reason": "hold is within what Miami would pay; rights worth keeping"
+  },
+  {
+   "player": "Sean Marks",
+   "hold": 796166,
+   "valuation": 3171133,
+   "bird_status": "early_bird",
+   "reason": "hold is within what Miami would pay; rights worth keeping"
+  }
+ ],
+ "needs": {
+  "PG": {
+   "minutes_short": 16,
+   "quality_gap": 0.38,
+   "incumbents": [
+    "Anthony Carter"
+   ]
+  },
+  "SG": {
+   "minutes_short": 0,
+   "quality_gap": 0.0,
+   "incumbents": [
+    "Rasual Butler",
+    "Eddie Jones",
+    "Dwyane Wade"
+   ]
+  },
+  "SF": {
+   "minutes_short": 0,
+   "quality_gap": 0.0,
+   "incumbents": [
+    "Caron Butler",
+    "Sean Lampley"
+   ]
+  },
+  "PF": {
+   "minutes_short": 0,
+   "quality_gap": 0.3,
+   "incumbents": [
+    "LaPhonso Ellis",
+    "Jerome Beasley"
+   ]
+  },
+  "C": {
+   "minutes_short": 16,
+   "quality_gap": 0.0,
+   "incumbents": [
+    "Brian Grant"
+   ]
+  }
+ },
+ "targets": [
+  {
+   "bbr_id": "kiddja01",
+   "player": "Jason Kidd",
+   "club": "New Jersey Nets",
+   "position": "PG",
+   "age": 30,
+   "value": 19.4,
+   "valuation": 10418354,
+   "ask": 10626721,
+   "years_asked": 3,
+   "surplus": -0.02,
+   "fit": 0.857,
+   "score": 21.78,
+   "wade_request": false,
+   "rfa": false,
+   "bird_class": "bird",
+   "route": "sign_and_trade",
+   "sign_and_trade_feasible": true,
+   "binding_constraint": null
+  },
+  {
+   "bbr_id": "clarkke01",
+   "player": "Keon Clark",
+   "club": "Sacramento Kings",
+   "position": "C",
+   "age": 28,
+   "value": 9.8,
+   "valuation": 4935640,
+   "ask": 3775765,
+   "years_asked": 4,
+   "surplus": 0.307,
+   "fit": 0.667,
+   "score": 9.138,
+   "wade_request": false,
+   "rfa": false,
+   "bird_class": "non_bird",
+   "route": "mid_level",
+   "deferred_until_cap_published": true
+  }
+ ],
+ "room_after_targets": -5328528,
+ "re_sign_candidates": [
+  {
+   "player": "Eddie House",
+   "bbr_id": "houseed01",
+   "route": "larry_bird",
+   "valuation": 3616321,
+   "hold": 1274870
+  },
+  {
+   "player": "Malik Allen",
+   "bbr_id": "allenma01",
+   "route": "early_bird",
+   "valuation": 4633480,
+   "hold": 666166
+  },
+  {
+   "player": "Mike James",
+   "bbr_id": "jamesmi01",
+   "route": "early_bird",
+   "valuation": 3872696,
+   "hold": 666166
+  },
+  {
+   "player": "Travis Best",
+   "bbr_id": "besttr01",
+   "route": "non_bird",
+   "valuation": 4003318,
+   "hold": 1680000
+  },
+  {
+   "player": "Vladimir Stepania",
+   "bbr_id": "stepavl01",
+   "route": "early_bird",
+   "valuation": 4369519,
+   "hold": 1755000
+  },
+  {
+   "player": "Sean Marks",
+   "bbr_id": "marksse01",
+   "route": "early_bird",
+   "valuation": 3171133,
+   "hold": 796166
+  }
+ ],
+ "wade_requests": [
+  {
+   "player": "Andre Miller",
+   "outcome": "not pursued",
+   "reason": "ask $5,780,236 does not fit the room ($-5,328,528 left) or the exceptions; score 21.456"
+  },
+  {
+   "player": "Lamar Odom",
+   "outcome": "not pursued",
+   "reason": "ask $6,142,338 does not fit the room ($-5,328,528 left) or the exceptions; score 13.412"
+  }
+ ],
+ "sign_and_trade_probes": [
+  {
+   "player": "Jason Kidd",
+   "bbr_id": "kiddja01",
+   "club": "New Jersey Nets",
+   "ask": 10626721,
+   "score": 21.78,
+   "sign_and_trade_feasible": true,
+   "binding_constraint": null
+  }
+ ],
+ "standing": {
+  "standing": "unsigned_rookie",
+  "as_of": null
+ }
+}

@@ -4,6 +4,8 @@ import shutil
 import tempfile
 import unittest
 
+from tests import checkpoint
+
 from runtime import consultations, signing
 from runtime.milestone_records import PLAYER, SCREEN_MAP, read, version
 from runtime.player_milestones import build_milestone_pages
@@ -24,6 +26,7 @@ class MilestoneReplyTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         shutil.copytree(ROOT / "career", self.root / "career")
+        checkpoint.pin(self.root)
         shutil.copytree(ROOT / "foundation", self.root / "foundation")
         (self.root / "library/2003/league").mkdir(parents=True)
         for filename in ("nba_2003_04_calendar.json", "nba_2003_04_cap_rules.json"):

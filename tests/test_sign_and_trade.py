@@ -3,6 +3,8 @@ import json
 import shutil
 import tempfile
 import unittest
+
+from tests import checkpoint
 from pathlib import Path
 from unittest import mock
 
@@ -31,6 +33,7 @@ def copy_repo(open_market=True):
     root = Path(tmp.name)
     shutil.copytree(ROOT / "library", root / "library")
     shutil.copytree(ROOT / "career", root / "career")
+    checkpoint.pin(root)                      # tests simulate from the June 26 checkpoint, not the live clock
     if open_market:
         writer = signing.Writer(root)
         signing.open_market(writer, "2003-07-01")
