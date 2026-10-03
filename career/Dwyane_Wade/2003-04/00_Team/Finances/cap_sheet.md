@@ -8,7 +8,7 @@ October 27, 2003 · 2003-04 through 2010-11 · USD
 
 | Cap (published) | Committed salary | Free-agent holds | Roster charge | Room |
 | ---: | ---: | ---: | ---: | ---: |
-| 43,840,000 | 44,607,030 | 666,166 | 0 | -1,433,196 |
+| 43,840,000 | 44,063,534 | 666,166 | 0 | -889,700 |
 
 Committed salary counts contracts, exercised options and the unsigned first-round hold on October 27, 2003. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
 
@@ -24,15 +24,15 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 | [Dwyane Wade](../Team/Player_Cards/dwyane_wade.md) | 2,197,000 | 2,361,800 | 2,526,600 | 3,201,202<sup>TO</sup> | — | — | — | — |
 | [Caron Butler](../Team/Player_Cards/caron_butler.md) | 1,804,680 | 1,930,680 | 2,461,617<sup>TO</sup> | — | — | — | — | — |
 | [Shawn Kemp](../Team/Player_Cards/shawn_kemp.md) | 1,070,000 | — | — | — | — | — | — | — |
-| [Keon Clark](../Team/Player_Cards/keon_clark.md) | 638,679 | — | — | — | — | — | — | — |
-| [Jumaine Jones](../Team/Player_Cards/jumaine_jones.md) | 638,679 | — | — | — | — | — | — | — |
 | [Stephen Jackson](../Team/Player_Cards/stephen_jackson.md) | 638,679 | — | — | — | — | — | — | — |
-| [Chris Andersen](../Team/Player_Cards/chris_andersen.md) | 638,679 | — | — | — | — | — | — | — |
 | [Scott Padgett](../Team/Player_Cards/scott_padgett.md) | 638,679 | — | — | — | — | — | — | — |
+| [Cherokee Parks](../Team/Player_Cards/cherokee_parks.md) | 638,679 | — | — | — | — | — | — | — |
 | [Rasual Butler](../Team/Player_Cards/rasual_butler.md) | 563,679<sup>TO</sup> | — | — | — | — | — | — | — |
 | [Sean Lampley](../Team/Player_Cards/sean_lampley.md) | 563,679<sup>TO</sup> | — | — | — | — | — | — | — |
+| [Udonis Haslem](../Team/Player_Cards/udonis_haslem.md) | 366,931 | — | — | — | — | — | — | — |
+| [John Wallace](../Team/Player_Cards/john_wallace.md) | 366,931 | — | — | — | — | — | — | — |
 | [Jerome Beasley](../Team/Player_Cards/jerome_beasley.md) | — | — | — | — | — | — | — | — |
-| Counted | 44,607,030 | 34,412,388 | 37,713,436 | 34,337,708 | 0 | 0 | 0 | 0 |
+| Counted | 44,063,534 | 34,412,388 | 37,713,436 | 34,337,708 | 0 | 0 | 0 | 0 |
 
 ## Free-agent holds
 

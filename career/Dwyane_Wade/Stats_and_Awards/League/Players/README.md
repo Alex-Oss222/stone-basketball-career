@@ -63,7 +63,7 @@ Card date: **2003-10-27**. 407 registry players, one Markdown card and one inter
 | [Mickael Pietrus](pietrmi01.md) | Golden State Warriors (draft rights) | 21 | sourced | [open](pietrmi01.html) |
 | [Mike Bibby](bibbymi01.md) | Sacramento Kings | 25 | sourced | [open](bibbymi01.html) |
 | [Mike James](jamesmi01.md) | Miami Heat | 28 | sourced | [open](jamesmi01.html) |
-| [Mike Wilks](wilksmi01.md) | Minnesota Timberwolves | 24 | sourced | [open](wilksmi01.html) |
+| [Mike Wilks](wilksmi01.md) | Houston Rockets | 24 | sourced | [open](wilksmi01.html) |
 | [Milt Palacio](palacmi01.md) | Toronto Raptors | 25 | sourced | [open](palacmi01.html) |
 | [Mo Williams](willima01.md) | Utah Jazz (draft rights) | 20 | sourced | [open](willima01.html) |
 | [Moochie Norris](norrimo01.md) | Houston Rockets | 30 | sourced | [open](norrimo01.html) |
@@ -223,7 +223,7 @@ Card date: **2003-10-27**. 407 registry players, one Markdown card and one inter
 | [Joe Smith](smithjo02.md) | Milwaukee Bucks | 28 | sourced | [open](smithjo02.html) |
 | [Jonathan Bender](bendejo01.md) | Indiana Pacers | 22 | silhouette | [open](bendejo01.html) |
 | [Josh Howard](howarjo01.md) | Dallas Mavericks (draft rights) | 23 | sourced | [open](howarjo01.html) |
-| [Jumaine Jones](jonesju01.md) | Miami Heat | 24 | sourced | [open](jonesju01.html) |
+| [Jumaine Jones](jonesju01.md) | Free agent | 24 | sourced | [open](jonesju01.html) |
 | [Kedrick Brown](brownke01.md) | Boston Celtics | 22 | sourced | [open](brownke01.html) |
 | [Lamar Odom](odomla01.md) | Los Angeles Clippers | 23 | sourced | [open](odomla01.html) |
 | [Latrell Sprewell](sprewla01.md) | Minnesota Timberwolves | 33 | silhouette | [open](sprewla01.html) |
@@ -380,7 +380,7 @@ Card date: **2003-10-27**. 407 registry players, one Markdown card and one inter
 | [Calvin Booth](boothca01.md) | Seattle SuperSonics | 27 | sourced | [open](boothca01.html) |
 | [Cezary Trybanski](trybace01.md) | Phoenix Suns | 24 | sourced | [open](trybace01.html) |
 | [Charles Oakley](oaklech01.md) | Washington Wizards | 39 | sourced | [open](oaklech01.html) |
-| [Chris Andersen](anderch01.md) | Miami Heat | 25 | sourced | [open](anderch01.html) |
+| [Chris Andersen](anderch01.md) | Free agent | 25 | sourced | [open](anderch01.html) |
 | [Chris Kaman](kamanch01.md) | Los Angeles Clippers (draft rights) | 21 | sourced | [open](kamanch01.html) |
 | [Chris Mihm](mihmch01.md) | Cleveland Cavaliers | 24 | sourced | [open](mihmch01.html) |
 | [Corie Blount](blounco01.md) | Chicago Bulls | 34 | silhouette | [open](blounco01.html) |
@@ -412,7 +412,7 @@ Card date: **2003-10-27**. 407 registry players, one Markdown card and one inter
 | [Kelvin Cato](catoke01.md) | Houston Rockets | 29 | sourced | [open](catoke01.html) |
 | [Ken Johnson](johnske03.md) | Free agent | 25 | sourced | [open](johnske03.html) |
 | [Kendrick Perkins](perkike01.md) | Boston Celtics (draft rights) | 18 | sourced | [open](perkike01.html) |
-| [Keon Clark](clarkke01.md) | Miami Heat | 28 | silhouette | [open](clarkke01.html) |
+| [Keon Clark](clarkke01.md) | Free agent | 28 | silhouette | [open](clarkke01.html) |
 | [Kevin Willis](willike02.md) | San Antonio Spurs | 41 | sourced | [open](willike02.html) |
 | [Kurt Thomas](thomaku01.md) | New York Knicks | 31 | sourced | [open](thomaku01.html) |
 | [Kwame Brown](brownkw01.md) | Washington Wizards | 21 | sourced | [open](brownkw01.html) |

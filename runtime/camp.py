@@ -63,7 +63,7 @@ def efficiency(line):
 # -- camp roster ---------------------------------------------------------------------------------
 def active_players(roster):
     return [p for p in roster["players"] if not any(w in p["status"] for w in
-            ("free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "pending", "camp"))]
+            ("free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "pending", "camp", "voided"))]
 
 
 def invite(on, front_office, market, root=ROOT):
@@ -351,7 +351,7 @@ def grades_record(entries, on):
 
 # -- cut and promises ------------------------------------------------------------------------------
 # Register statuses of players who cannot dress for Miami: not signed, or no longer Miami's.
-NOT_PLAYABLE = ("free_agent", "unsigned", "released", "waived", "traded", "renounced", "signed_elsewhere", "declined", "cut")
+NOT_PLAYABLE = ("free_agent", "unsigned", "released", "waived", "traded", "renounced", "signed_elsewhere", "declined", "cut", "voided")
 
 
 def playable(status):

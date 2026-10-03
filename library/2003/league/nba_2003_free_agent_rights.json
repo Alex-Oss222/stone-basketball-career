@@ -159,7 +159,9 @@
       "Tenure counted from seasons played for the club; transactions were not checked for a waiver and re-signing in between."
      ],
      "sources": [],
-     "rfa_eligible": true
+     "rfa_eligible": true,
+     "qualifying_offer_tendered": false,
+     "qualifying_offer_basis_note": "not marked restricted on the AP 2003 free-agent list (ESPN, June 30 / July 3, 2003)"
     },
     {
      "player": "Emanual Davis",
@@ -3785,7 +3787,9 @@
       "https://www.basketball-reference.com/leagues/NBA_2001_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
      ],
-     "rfa_eligible": null
+     "rfa_eligible": null,
+     "not_a_free_agent": true,
+     "not_a_free_agent_basis": "exercised his 2003-04 player option on June 30, 2003 (ShamSports; BBR salary table); traded to Utah 2003-08-05"
     },
     {
      "player": "Brent Price",
@@ -4555,7 +4559,9 @@
       "https://www.basketball-reference.com/leagues/NBA_2002_transactions.html",
       "https://www.basketball-reference.com/leagues/NBA_2003_transactions.html"
      ],
-     "rfa_eligible": true
+     "rfa_eligible": true,
+     "qualifying_offer_tendered": false,
+     "qualifying_offer_basis_note": "not marked restricted on the AP 2003 free-agent list (ESPN, June 30 / July 3, 2003)"
     }
    ],
    "total_cap_holds": 26030323,

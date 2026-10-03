@@ -19,19 +19,19 @@
     ],
     "SF": [
       "Caron Butler",
-      "Jumaine Jones",
-      "Sean Lampley"
+      "Sean Lampley",
+      "Cherokee Parks"
     ],
     "PF": [
       "Scott Padgett",
       "LaPhonso Ellis",
-      "Jerome Beasley"
+      "Jerome Beasley",
+      "Udonis Haslem",
+      "John Wallace"
     ],
     "C": [
       "Brian Grant",
-      "Keon Clark",
-      "Shawn Kemp",
-      "Chris Andersen"
+      "Shawn Kemp"
     ]
   },
   "battles_drawn": {
@@ -66,6 +66,31 @@
       "name": "Reggie Evans",
       "date": "2003-10-27",
       "status": "released"
+    },
+    {
+      "name": "Keon Clark",
+      "date": "2003-10-27",
+      "status": "voided"
+    },
+    {
+      "name": "Jumaine Jones",
+      "date": "2003-10-27",
+      "status": "voided"
+    },
+    {
+      "name": "Reggie Evans",
+      "date": "2003-10-27",
+      "status": "voided"
+    },
+    {
+      "name": "Chris Andersen",
+      "date": "2003-10-27",
+      "status": "voided"
+    },
+    {
+      "name": "Mike Batiste",
+      "date": "2003-10-27",
+      "status": "voided"
     }
   ]
 }

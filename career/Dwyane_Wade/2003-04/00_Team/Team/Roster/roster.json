@@ -290,8 +290,8 @@
         "C"
       ],
       "date_of_birth": "1975-04-16",
-      "status": "camp_contract",
-      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+      "status": "voided",
+      "control": "October 27, 2003: camp contract of September 30, 2003 voided: he was not a free agent on that date (world data corrected); real move: trade to Utah Jazz on 2003-08-05; he returns to his real club (rule 2 no longer applies).",
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/keon_clark.md",
       "bbr_id": "clarkke01"
@@ -303,8 +303,8 @@
         "SF"
       ],
       "date_of_birth": "1979-02-10",
-      "status": "camp_contract",
-      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+      "status": "voided",
+      "control": "October 27, 2003: camp contract of September 30, 2003 voided: Boston Celtics had already acquired him on 2003-07-29 (trade); he returns to his real club (rule 2 no longer applies).",
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/jumaine_jones.md",
       "bbr_id": "jonesju01"
@@ -329,8 +329,8 @@
         "PF"
       ],
       "date_of_birth": "1980-05-18",
-      "status": "released",
-      "control": "October 27, 2003: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
+      "status": "voided",
+      "control": "October 27, 2003: camp contract of September 30, 2003 voided: Seattle SuperSonics had already re-signed him on 2003-09-26 (re_sign); he returns to his real club (rule 2 no longer applies).",
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/reggie_evans.md",
       "bbr_id": "evansre01"
@@ -368,8 +368,8 @@
         "C"
       ],
       "date_of_birth": "1978-07-07",
-      "status": "camp_contract",
-      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+      "status": "voided",
+      "control": "October 27, 2003: camp contract of September 30, 2003 voided: Denver Nuggets had already re-signed him on 2003-09-29 (re_sign); he returns to his real club (rule 2 no longer applies).",
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/chris_andersen.md",
       "bbr_id": "anderch01"
@@ -381,8 +381,8 @@
         "PF"
       ],
       "date_of_birth": "1977-11-21",
-      "status": "released",
-      "control": "October 27, 2003: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
+      "status": "voided",
+      "control": "October 27, 2003: camp contract of September 30, 2003 voided: he was a restricted free agent; a camp contract bypassed his club's right to match; he returns to his real club (rule 2 no longer applies).",
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/mike_batiste.md",
       "bbr_id": "batismi01"
@@ -412,6 +412,45 @@
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/tyrone_hill.md",
       "bbr_id": "hillty01"
+    },
+    {
+      "id": "cherokee_parks",
+      "name": "Cherokee Parks",
+      "positions": [
+        "SF"
+      ],
+      "date_of_birth": null,
+      "status": "camp_contract",
+      "control": "Signed October 27, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+      "working_role": "Roster refill",
+      "player_card": "../Player_Cards/cherokee_parks.md",
+      "bbr_id": "parksch02"
+    },
+    {
+      "id": "udonis_haslem",
+      "name": "Udonis Haslem",
+      "positions": [
+        "PF"
+      ],
+      "date_of_birth": "1980-06-09",
+      "status": "camp_contract",
+      "control": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+      "working_role": "Roster refill",
+      "player_card": "../Player_Cards/udonis_haslem.md",
+      "bbr_id": "hasleud01"
+    },
+    {
+      "id": "john_wallace",
+      "name": "John Wallace",
+      "positions": [
+        "PF"
+      ],
+      "date_of_birth": "1974-02-09",
+      "status": "camp_contract",
+      "control": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+      "working_role": "Roster refill",
+      "player_card": "../Player_Cards/john_wallace.md",
+      "bbr_id": "wallajo01"
     }
   ],
   "sources": [

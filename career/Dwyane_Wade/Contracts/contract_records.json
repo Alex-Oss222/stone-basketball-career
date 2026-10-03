@@ -619,6 +619,99 @@
     ],
     "signing_team": "Miami Heat"
    }
+  },
+  {
+   "record_id": "parksch02-2003-10-27-signed",
+   "recorded_on": "2003-10-27",
+   "player_id": "parksch02",
+   "player": "Cherokee Parks",
+   "contract_id": "parksch02-2003-10-27",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "Cherokee Parks",
+    "bbr_id": "parksch02",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 638679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-10-27",
+    "route": "minimum",
+    "notes": "Signed October 27, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+    "sources": [
+     "04_Training_Camp/signing_corrections.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "hasleud01-2003-10-27-signed",
+   "recorded_on": "2003-10-27",
+   "player_id": "hasleud01",
+   "player": "Udonis Haslem",
+   "contract_id": "hasleud01-2003-10-27",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "Udonis Haslem",
+    "bbr_id": "hasleud01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 366931
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-10-27",
+    "route": "minimum",
+    "notes": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+    "sources": [
+     "04_Training_Camp/signing_corrections.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "wallajo01-2003-10-27-signed",
+   "recorded_on": "2003-10-27",
+   "player_id": "wallajo01",
+   "player": "John Wallace",
+   "contract_id": "wallajo01-2003-10-27",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "John Wallace",
+    "bbr_id": "wallajo01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 366931
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-10-27",
+    "route": "minimum",
+    "notes": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+    "sources": [
+     "04_Training_Camp/signing_corrections.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
   }
  ]
 }

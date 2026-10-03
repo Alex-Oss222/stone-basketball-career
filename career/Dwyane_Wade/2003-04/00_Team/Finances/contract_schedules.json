@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "owner": "ai_gm",
-  "as_of": "2003-09-30",
+  "as_of": "2003-10-27",
   "team": "Miami Heat",
   "horizon": [
     "2003-04",
@@ -511,7 +511,7 @@
     {
       "player": "Keon Clark",
       "bbr_id": "clarkke01",
-      "status": "camp_contract",
+      "status": "voided",
       "schedule": {
         "2003-04": 638679
       },
@@ -532,7 +532,7 @@
     {
       "player": "Jumaine Jones",
       "bbr_id": "jonesju01",
-      "status": "camp_contract",
+      "status": "voided",
       "schedule": {
         "2003-04": 638679
       },
@@ -574,7 +574,7 @@
     {
       "player": "Reggie Evans",
       "bbr_id": "evansre01",
-      "status": "released",
+      "status": "voided",
       "schedule": {
         "2003-04": 563679
       },
@@ -637,7 +637,7 @@
     {
       "player": "Chris Andersen",
       "bbr_id": "anderch01",
-      "status": "camp_contract",
+      "status": "voided",
       "schedule": {
         "2003-04": 638679
       },
@@ -658,7 +658,7 @@
     {
       "player": "Mike Batiste",
       "bbr_id": "batismi01",
-      "status": "released",
+      "status": "voided",
       "schedule": {
         "2003-04": 563679
       },
@@ -716,6 +716,69 @@
       "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10.",
       "sources": [
         "04_Training_Camp/camp_roster.json"
+      ]
+    },
+    {
+      "player": "Cherokee Parks",
+      "bbr_id": "parksch02",
+      "status": "camp_contract",
+      "schedule": {
+        "2003-04": 638679
+      },
+      "amount_kind": {
+        "2003-04": "contract_salary"
+      },
+      "guaranteed": {
+        "2003-04": 0
+      },
+      "guarantee_date": "2004-01-10",
+      "signed_date": "2003-10-27",
+      "route": "minimum",
+      "notes": "Signed October 27, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+      "sources": [
+        "04_Training_Camp/signing_corrections.json"
+      ]
+    },
+    {
+      "player": "Udonis Haslem",
+      "bbr_id": "hasleud01",
+      "status": "camp_contract",
+      "schedule": {
+        "2003-04": 366931
+      },
+      "amount_kind": {
+        "2003-04": "contract_salary"
+      },
+      "guaranteed": {
+        "2003-04": 0
+      },
+      "guarantee_date": "2004-01-10",
+      "signed_date": "2003-10-27",
+      "route": "minimum",
+      "notes": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+      "sources": [
+        "04_Training_Camp/signing_corrections.json"
+      ]
+    },
+    {
+      "player": "John Wallace",
+      "bbr_id": "wallajo01",
+      "status": "camp_contract",
+      "schedule": {
+        "2003-04": 366931
+      },
+      "amount_kind": {
+        "2003-04": "contract_salary"
+      },
+      "guaranteed": {
+        "2003-04": 0
+      },
+      "guarantee_date": "2004-01-10",
+      "signed_date": "2003-10-27",
+      "route": "minimum",
+      "notes": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+      "sources": [
+        "04_Training_Camp/signing_corrections.json"
       ]
     }
   ],

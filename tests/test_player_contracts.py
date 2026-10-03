@@ -322,7 +322,11 @@ class LiveContractCatalogTests(unittest.TestCase):
         player = ROOT / "career/Dwyane_Wade"
         before = {p: p.read_bytes() for p in player.rglob("*.json")}
         catalog = build_contract_catalog(ROOT, player)
-        self.assertEqual(410, len(catalog["players"]))
+        registry = json.loads((player / "Stats_and_Awards/League/player_registry.json").read_text())["players"]
+        names = {p["name"] for p in registry}
+        extra = {p["name"] for path in player.glob("*/00_Team/Team/Roster/roster.json")
+                 for p in json.loads(path.read_text())["players"] if p["name"] not in names}
+        self.assertEqual(len(registry) + len(extra), len(catalog["players"]))   # every registry player plus Miami's other register entries
         self.assertEqual("wadedw01", catalog["default_player_id"])
         wade = next(p for p in catalog["players"] if p["id"] == "wadedw01")
         log = player / "2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json"

@@ -28,6 +28,7 @@ TRANSACTIONS = Path("library/2003/league/nba_2003_offseason_transactions.json")
 STATS = Path("library/2003/league/nba_2002_03_player_stats.json")
 CAREERS = Path("library/careers/nba_player_careers.json")
 PROTAGONIST_IDS = {"wadedw01"}
+IDENTITIES = Path("library/2003/league/nba_2003_unattached_identities.json")
 MIAMI = "Miami Heat"
 UNATTACHED_ACCEPT = 0.90   # an undrafted player with no NBA club offered an NBA roster spot (judgement)
 VETERAN_ACCEPT = 0.75      # a veteran still unsigned at the end of October offered a non-guaranteed minimum (judgement)
@@ -37,14 +38,16 @@ def unattached(on, root=ROOT):
     """Players with no previous NBA club whose only real 2003 signing was with Miami (rule 1 skips it)."""
     stats = {r["bbr_id"] for r in read(STATS, root)["records"]}
     careers = read(CAREERS, root).get("players", {})
+    ident = Path(root) / IDENTITIES
+    identities = {p["bbr_id"]: p for p in json.loads(ident.read_text(encoding="utf-8"))["players"]} if ident.is_file() else {}
     out = {}
     for row in read(TRANSACTIONS, root)["signings"]:
         key = row.get("bbr_id")
         if not key or key in PROTAGONIST_IDS:
             continue
-        earlier = [s for s in (careers.get(key) or {}).get("seasons", {}) if s < "2003-04"]
-        if row.get("to") == MIAMI and not row.get("from") and key not in stats and not earlier:
-            out[key] = {"player": row["player"], "bbr_id": row.get("bbr_id"), "club": None, "unattached": True,
+        earlier = [s for s in (careers.get(key) or {}).get("seasons", {}) if s < "2003-04"] or identities.get(key, {}).get("nba_history")
+        if row.get("to") == MIAMI and not row.get("from") and key not in stats:
+            out[key] = {"player": row["player"], "bbr_id": row.get("bbr_id"), "club": None, "unattached": not earlier,
                         "nba_seasons_before_2003_04": 0, "basis": f"real signing with Miami on {row['date']} skipped (rule 1); no previous NBA club"}
     return out
 
@@ -53,8 +56,11 @@ def open_spots(roster):
     return max(0, ROSTER_MAX - sum(1 for p in roster["players"] if playable(p.get("status"))))
 
 
-def candidates(on, front_office, market, positions, root=ROOT):
-    """Available, unrestricted free agents not on Miami's books, ranked by value times fit."""
+def candidates(on, front_office, market, positions, root=ROOT, requested=()):
+    """Available, unrestricted free agents not on Miami's books, ranked by value times fit.
+
+    Equal scores are broken by Wade's requests first (the front office is indifferent between them, so the
+    request decides), then by the player's name for a stable order."""
     held = {p.get("bbr_id") for p in front_office.roster["players"]} | {p["name"] for p in front_office.roster["players"]}
     needs = front_office.needs()
     pool = {b: p for b, p in market.pool(on).items() if not market.restricted(b) and p.get("club") != MIAMI}
@@ -71,7 +77,9 @@ def candidates(on, front_office, market, positions, root=ROOT):
         rows.append({"player": p["player"], "bbr_id": bbr, "position": pos, "value": round(value, 2), "value_known": known,
                      "fit": fit, "score": round(value * fit, 3), "unattached": bool(p.get("unattached")),
                      "salary": market.valuation.minimum(p.get("nba_seasons_before_2003_04"))})
-    rows.sort(key=lambda r: -r["score"])
+    for r in rows:
+        r["wade_request"] = r["player"] in requested
+    rows.sort(key=lambda r: (-r["score"], not r["wade_request"], r["player"]))
     return rows
 
 

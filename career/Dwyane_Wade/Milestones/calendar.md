@@ -18,14 +18,14 @@ Activation: The authoritative current date and recorded event determine what is 
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2003-10-27-camp-cut |
+| Last closed event | 2003-10-27-camp-signings-corrected |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2003-10-27 | Current checkpoint | 2003-10-27-camp-cut | Recorded | [Owning event](../2003-04/04_Training_Camp/note.md) |
+| 2003-10-27 | Current checkpoint | 2003-10-27-camp-signings-corrected | Recorded | [Owning event](../2003-04/04_Training_Camp/note.md) |
 | 2003-07-19 | Next contract review | Player responds to an actual eligible proposal | recorded | [Contract desk](index.html#contract_negotiation) |
 | 2003-09-30 | Camp reporting | Club records the date | active | [Training camp](index.html#training_camp) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |

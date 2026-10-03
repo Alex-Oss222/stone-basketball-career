@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-10-27-refill-answer-wallajo01",
+ "date": "2003-10-27",
+ "question": "Does John Wallace accept Miami's non-guaranteed minimum contract ($366,931, 2003-04)?",
+ "decider": "John Wallace (simulated player)",
+ "options": {
+  "accept": 0.75,
+  "decline": 0.25
+ },
+ "basis": "A veteran still unsigned at the end of October offered a non-guaranteed minimum (judgement 0.75); guaranteed if he is still on the roster on January 10, 2004."
+}

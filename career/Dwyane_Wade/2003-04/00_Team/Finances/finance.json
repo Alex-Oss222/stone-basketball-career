@@ -13,7 +13,7 @@
   "known_counted_salary_before_free_agent_holds": 32066078,
   "reference_difference_to_historical_actual_cap_before_free_agent_holds": 11773922,
   "cap_space": null,
-  "cap_room": -1433196,
+  "cap_room": -889700,
   "cap_room_reason": [
     "Cap published July 15, 2003.",
     "Committed salary, unrenounced holds and the roster charge for empty spots are deducted (docs/front_office_design.md 5.1)."
@@ -220,7 +220,7 @@
   "subtotal_precision": "includes_rounded_report",
   "reported_rounded_salary_count": 1,
   "planning_cap": 43840000,
-  "known_counted_salary": 44607030,
+  "known_counted_salary": 44063534,
   "roster_charge": 0,
-  "projected_cap_room": -1433196
+  "projected_cap_room": -889700
 }

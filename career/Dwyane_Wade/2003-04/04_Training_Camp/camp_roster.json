@@ -117,7 +117,7 @@
    "positions": [
     "C"
    ],
-   "status": "camp_contract",
+   "status": "voided",
    "kind": "invite",
    "contract": {
     "salary": 638679,
@@ -134,7 +134,7 @@
    "positions": [
     "SF"
    ],
-   "status": "camp_contract",
+   "status": "voided",
    "kind": "invite",
    "contract": {
     "salary": 638679,
@@ -168,7 +168,7 @@
    "positions": [
     "PF"
    ],
-   "status": "released",
+   "status": "voided",
    "kind": "invite",
    "contract": {
     "salary": 563679,
@@ -219,7 +219,7 @@
    "positions": [
     "C"
    ],
-   "status": "camp_contract",
+   "status": "voided",
    "kind": "invite",
    "contract": {
     "salary": 638679,
@@ -236,7 +236,7 @@
    "positions": [
     "PF"
    ],
-   "status": "released",
+   "status": "voided",
    "kind": "invite",
    "contract": {
     "salary": 563679,
@@ -278,6 +278,57 @@
     "guarantee_date": "2004-01-10"
    },
    "value": 6.09,
+   "fit": 0.65,
+   "injured_through": null
+  },
+  {
+   "player": "Cherokee Parks",
+   "bbr_id": "parksch02",
+   "positions": [
+    "SF"
+   ],
+   "status": "camp_contract",
+   "kind": "refill",
+   "contract": {
+    "salary": 638679,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 7.13,
+   "fit": 0.5,
+   "injured_through": null
+  },
+  {
+   "player": "Udonis Haslem",
+   "bbr_id": "hasleud01",
+   "positions": [
+    "PF"
+   ],
+   "status": "camp_contract",
+   "kind": "refill",
+   "contract": {
+    "salary": 366931,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 5.0,
+   "fit": 0.65,
+   "injured_through": null
+  },
+  {
+   "player": "John Wallace",
+   "bbr_id": "wallajo01",
+   "positions": [
+    "PF"
+   ],
+   "status": "camp_contract",
+   "kind": "refill",
+   "contract": {
+    "salary": 366931,
+    "guaranteed": 0,
+    "guarantee_date": "2004-01-10"
+   },
+   "value": 5.0,
    "fit": 0.65,
    "injured_through": null
   }

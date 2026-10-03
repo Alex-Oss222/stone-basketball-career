@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-10-27-refill-answer-parksch02",
+ "date": "2003-10-27",
+ "question": "Does Cherokee Parks accept Miami's non-guaranteed minimum contract ($638,679, 2003-04)?",
+ "decider": "Cherokee Parks (simulated player)",
+ "options": {
+  "accept": 0.75,
+  "decline": 0.25
+ },
+ "basis": "A veteran still unsigned at the end of October offered a non-guaranteed minimum (judgement 0.75); guaranteed if he is still on the roster on January 10, 2004."
+}

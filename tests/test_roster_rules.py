@@ -100,3 +100,60 @@ class ValidatorTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CorrectionTests(unittest.TestCase):
+    def test_world_data_marks_the_researched_moves(self):
+        from runtime.market import Market
+        m = Market("2003-09-30")
+        self.assertNotIn("clarkke01", m.players)                         # exercised his option: never a free agent
+        self.assertFalse(m.available("anderch01"))                       # re-signed with Denver September 29
+        self.assertFalse(m.available("jonesju01"))                       # traded to Boston July 29
+        self.assertTrue(m.restricted("evansre01"))
+        self.assertFalse(m.restricted("glovedi01"))                      # unrestricted on the AP 2003 list
+        self.assertEqual(m.exit("glovedi01")[0], "2003-10-01")           # undated re-signing: from camp opening
+
+    def test_unattached_players_stay_free_agents_under_rule_1(self):
+        from runtime.market import Market
+        from runtime.refill import unattached
+        pool = unattached("2003-10-27")
+        self.assertTrue(pool["hasleud01"]["unattached"])
+        self.assertFalse(pool["wallajo01"]["unattached"])                # earlier NBA seasons: a veteran, not unattached
+        self.assertNotIn("wadedw01", pool)
+        self.assertIsNone(Market("2003-10-27").exit("hasleud01"))
+
+    def test_equal_scores_break_by_wade_request_then_name(self):
+        from runtime import refill
+
+        class Office:
+            roster = {"players": []}
+            def needs(self):
+                return {}
+            def fit(self, pos, needs):
+                return 1.0
+
+        class Val:
+            def value(self, b):
+                return None
+            def minimum(self, s):
+                return 1
+
+        class M:
+            valuation = Val()
+            def pool(self, on):
+                return {"b1": {"player": "Bee", "club": "X"}, "a1": {"player": "Aye", "club": "Y"}}
+            def restricted(self, b):
+                return False
+
+        with mock.patch.object(refill, "unattached", return_value={}):
+            plain = refill.candidates("2003-10-27", Office(), M(), {})
+            asked = refill.candidates("2003-10-27", Office(), M(), {}, requested={"Bee"})
+        self.assertEqual([r["player"] for r in plain], ["Aye", "Bee"])
+        self.assertEqual([r["player"] for r in asked], ["Bee", "Aye"])
+
+    def test_voided_players_leave_every_count(self):
+        self.assertFalse(camp.playable("voided"))
+        from runtime.signing import CLOSED_STATUSES
+        from runtime.write_back import register_names
+        self.assertIn("voided", CLOSED_STATUSES)
+        self.assertEqual(register_names([{"name": "A", "status": "voided"}, {"name": "B", "status": "camp_contract"}]), ["B"])

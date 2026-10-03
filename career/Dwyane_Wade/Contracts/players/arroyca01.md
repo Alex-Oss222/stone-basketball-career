@@ -50,7 +50,7 @@ Eligibility and a reference amount do not establish a tendered qualifying offer 
 | Qualifying-offer reference amount | $788,679 |
 | Qualifying-offer basis | 2003-04 minimum for his years of service plus $150,000 |
 | Free-agent cap hold reference | $655,200 |
-| Qualifying offer actually tendered | Not recorded |
+| Qualifying offer actually tendered | No |
 | Tender date | Not recorded |
 | Renounced | Not recorded |
 

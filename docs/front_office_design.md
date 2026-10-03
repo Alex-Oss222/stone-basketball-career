@@ -118,6 +118,18 @@ These rules run without anyone's input, and validation checks them every time it
 - **Validation.** Validation fails if a scheduled Miami game dresses a player who is not playable, or if Miami carries more than fifteen signed players after the cut.
 - **No routine renouncing.** Holds are renounced only when they buy room for a target. Over the cap, a hold costs nothing and keeps Bird rights, so the front office does not renounce routinely.
 
+### 5.2b Availability, voided signings and the roster refill
+
+- **Truly available.** A player is available to Miami on a date only if three things hold: he is a free agent in the world data, he has no real move dated on or before it, and he is not restricted. A real move with no dated source counts from the day camps open, as an inference, and is labelled on the row.
+- **Restricted free agents.** A restricted free agent can only be signed through an offer sheet his club may match (`Market.restricted`). Camp invites and refills skip restricted players.
+- **Voided signings.** A signing that broke one of these conditions is voided (`scripts/correct_camp_signings.py`). The player leaves Miami's books and is back with his real club. Played games keep their inputs.
+- **Refill.** Open spots are filled at the minimum, non-guaranteed until January 10, 2004 (`runtime/refill.py`).
+  - Candidates are unrestricted free agents available on the date, plus unattached players. An unattached player has no previous NBA club and his only real 2003 club was Miami, so rule 1 leaves him unsigned.
+  - The rule ranks candidates by 2002-03 production value times positional fit. A player with no NBA line counts at replacement level.
+  - Equal scores are broken by Wade's requests, because the front office is indifferent between those players.
+  - A request for a candidate the rule does not pick is drawn at standing weight times one minus the margin.
+  - Each player's answer is an engine draw.
+
 ### 5.3 Needs
 
 From the depth chart: minutes available by position after the players under contract, the quality of the incumbent at each position (2002-03 production value), and the coach's stated structure (Spoelstra's preferences are unassessed until camp, so the first season uses a neutral structure). Need at a position = minutes short of a full rotation plus a gap term where the incumbent is below league average.

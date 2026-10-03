@@ -1,0 +1,12 @@
+{
+ "date": "2003-10-27",
+ "decider": "Smush Parker (simulated player)",
+ "event_id": "2003-10-27-refill-answer-parkesm01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.75,
+  "decline": 0.25
+ },
+ "outcome": "decline",
+ "question": "Does Smush Parker accept Miami's non-guaranteed minimum contract ($563,679, 2003-04)?"
+}

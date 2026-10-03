@@ -78,9 +78,10 @@ class League:
         rosters = {club: set(players) for club, players in self.baseline.items()}
         moves = _read(TRANSACTIONS, self.root)
         events = []
+        from .market import UNDATED_EXIT
         for row in moves["signings"]:
-            if row["date"] <= self.on and not row.get("involves_miami"):
-                events.append((row["date"], "sign", row))
+            if (row["date"] or UNDATED_EXIT) <= self.on and not row.get("involves_miami"):
+                events.append((row["date"] or UNDATED_EXIT, "sign", row))
         for row in moves["trades"]:
             if row["date"] <= self.on and not row.get("involves_miami"):
                 events.append((row["date"], "trade", row))
