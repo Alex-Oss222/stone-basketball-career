@@ -2,9 +2,9 @@
 
 # Contract | Raja Bell
 
-Known through: 2003-07-31. [Open interactive contract](bellra01.html#contract) · [Contract history](bellra01.html#contract-history)
+Known through: 2003-10-05. [Open interactive contract](bellra01.html#contract) · [Contract history](bellra01.html#contract-history)
 
-Raja Bell: free agent expiring. Evidence cutoff: 2003-07-31.
+Raja Bell: free agent expiring. Evidence cutoff: 2003-10-05.
 
 ## Current contract
 

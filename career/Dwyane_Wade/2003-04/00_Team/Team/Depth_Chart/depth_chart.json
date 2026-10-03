@@ -1,21 +1,19 @@
 {
   "schema_version": 1,
   "owner": "ai_gm",
-  "as_of": "2003-07-21",
+  "as_of": "2003-09-29",
   "team": "Miami Heat",
   "status": "offseason_holding_chart",
   "game_ready": false,
   "basis": "final 2002-03 usage-based positional order",
   "positions": {
     "PG": [
-      "Travis Best",
       "Mike James",
       "Anthony Carter"
     ],
     "SG": [
       "Eddie Jones",
-      "Rasual Butler",
-      "Eddie House"
+      "Rasual Butler"
     ],
     "SF": [
       "Caron Butler",
@@ -23,8 +21,7 @@
     ],
     "PF": [
       "Malik Allen",
-      "LaPhonso Ellis",
-      "Sean Marks"
+      "LaPhonso Ellis"
     ],
     "C": [
       "Brian Grant",
@@ -56,6 +53,21 @@
     {
       "name": "Alonzo Mourning",
       "date": "2003-07-16",
+      "status": "signed_elsewhere"
+    },
+    {
+      "name": "Eddie House",
+      "date": "2003-08-13",
+      "status": "signed_elsewhere"
+    },
+    {
+      "name": "Travis Best",
+      "date": "2003-08-22",
+      "status": "signed_elsewhere"
+    },
+    {
+      "name": "Sean Marks",
+      "date": "2003-09-29",
       "status": "signed_elsewhere"
     }
   ]

@@ -4,7 +4,7 @@
 **Age at assessment:** 27 · **Height:** 6-10 · **Weight:** 250 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Free agent from July 1, 2003; Miami holds his rights and cap hold until he re-signs, signs elsewhere or is renounced (Finances/free_agent_rights.json). (register, 2003-07-21) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** September 29, 2003: signs with San Antonio Spurs (signing, real move); his hold and rights leave Miami's books. (register, 2003-09-30) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/marksse01.html#contract) · [Contract history](../../../../Contracts/players/marksse01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

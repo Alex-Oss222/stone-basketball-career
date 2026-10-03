@@ -1,0 +1,99 @@
+{
+ "event_id": "2003-10-17-miami-heat-at-detroit-pistons",
+ "game_date": "2003-10-17",
+ "game_type": "preseason",
+ "venue": "home",
+ "home": {
+  "team": "Detroit Pistons",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Miami Heat",
+  "players": [
+   {
+    "player_id": "Mike James",
+    "position": "PG",
+    "minutes": 29.16,
+    "ratings": {},
+    "bbr_id": "jamesmi01"
+   },
+   {
+    "player_id": "Eddie Jones",
+    "position": "SG",
+    "minutes": 29.16,
+    "ratings": {},
+    "bbr_id": "jonesed02"
+   },
+   {
+    "player_id": "Caron Butler",
+    "position": "SF",
+    "minutes": 29.16,
+    "ratings": {},
+    "bbr_id": "butleca01"
+   },
+   {
+    "player_id": "LaPhonso Ellis",
+    "position": "PF",
+    "minutes": 29.16,
+    "ratings": {},
+    "bbr_id": "ellisla01"
+   },
+   {
+    "player_id": "Brian Grant",
+    "position": "C",
+    "minutes": 29.16,
+    "ratings": {},
+    "bbr_id": "grantbr01"
+   },
+   {
+    "player_id": "Jumaine Jones",
+    "position": "SF",
+    "minutes": 20.19,
+    "ratings": {},
+    "bbr_id": "jonesju01"
+   },
+   {
+    "player_id": "Stephen Jackson",
+    "position": "SG",
+    "minutes": 17.94,
+    "ratings": {},
+    "bbr_id": "jacksst02"
+   },
+   {
+    "player_id": "Keon Clark",
+    "position": "C",
+    "minutes": 15.7,
+    "ratings": {},
+    "bbr_id": "clarkke01"
+   },
+   {
+    "player_id": "Mike Batiste",
+    "position": "PF",
+    "minutes": 13.46,
+    "ratings": {},
+    "bbr_id": "batismi01"
+   },
+   {
+    "player_id": "Scott Padgett",
+    "position": "PF",
+    "minutes": 11.21,
+    "ratings": {},
+    "bbr_id": "padgesc01"
+   },
+   {
+    "player_id": "Tyrone Hill",
+    "position": "PF",
+    "minutes": 8.97,
+    "ratings": {},
+    "bbr_id": "hillty01"
+   },
+   {
+    "player_id": "Rasual Butler",
+    "position": "SG",
+    "minutes": 6.73,
+    "ratings": {},
+    "bbr_id": "butlera01"
+   }
+  ]
+ }
+}

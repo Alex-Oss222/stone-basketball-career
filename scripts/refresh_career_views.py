@@ -25,6 +25,8 @@ def refresh_career_views(root: Path) -> list[Path]:
             outputs.update(build_reports(root, player))
     if (root / CARDS_DIR).is_dir() and (root / COLORS_FILE).is_file():      # a partial test copy has no card sources
         outputs.update(build_cards(root))   # league cards follow dated clubs and contracts, so every boundary rebuilds them
+        from runtime.write_back import statistics_pages
+        outputs.update(statistics_pages(root))   # not-started Miami pages follow the register; played periods their results
     changed = []
     for page, text in outputs.items():
         if not page.is_file() or page.read_text(encoding="utf-8") != text:

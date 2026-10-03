@@ -2,9 +2,9 @@
 
 # Contract | Rafer Alston
 
-Known through: 2003-07-31. [Open interactive contract](alstora01.html#contract) · [Contract history](alstora01.html#contract-history)
+Known through: 2003-10-05. [Open interactive contract](alstora01.html#contract) · [Contract history](alstora01.html#contract-history)
 
-Rafer Alston: free agent expiring. Evidence cutoff: 2003-07-31.
+Rafer Alston: free agent expiring. Evidence cutoff: 2003-10-05.
 
 ## Current contract
 

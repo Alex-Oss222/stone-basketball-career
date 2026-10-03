@@ -1,6 +1,6 @@
 # Miami Heat | Cap sheet
 
-July 21, 2003 · 2003-04 through 2010-11 · USD
+October 5, 2003 · 2003-04 through 2010-11 · USD
 
 [Finance guide](README.md) · [Roster and control](../Team/Roster/roster.json) · [Contract detail](contract_schedules.json)
 
@@ -8,9 +8,9 @@ July 21, 2003 · 2003-04 through 2010-11 · USD
 
 | Cap (published) | Committed salary | Free-agent holds | Roster charge | Room |
 | ---: | ---: | ---: | ---: | ---: |
-| 43,840,000 | 40,343,635 | 6,172,202 | 1,100,793 | -3,776,630 |
+| 43,840,000 | 47,443,067 | 2,421,166 | 0 | -6,024,233 |
 
-Committed salary counts contracts, exercised options and the unsigned first-round hold on July 21, 2003. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
+Committed salary counts contracts, exercised options and the unsigned first-round hold on October 5, 2003. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
 
 ## Eight-season commitments
 
@@ -23,20 +23,27 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 | [Mike James](../Team/Player_Cards/mike_james.md) | 3,050,199 | 3,431,474 | 3,812,749 | — | — | — | — | — |
 | [Dwyane Wade](../Team/Player_Cards/dwyane_wade.md) | 2,197,000 | 2,361,800 | 2,526,600 | 3,201,202<sup>TO</sup> | — | — | — | — |
 | [Caron Butler](../Team/Player_Cards/caron_butler.md) | 1,804,680 | 1,930,680 | 2,461,617<sup>TO</sup> | — | — | — | — | — |
+| [Shawn Kemp](../Team/Player_Cards/shawn_kemp.md) | 1,070,000 | — | — | — | — | — | — | — |
+| [Tyrone Hill](../Team/Player_Cards/tyrone_hill.md) | 1,070,000 | — | — | — | — | — | — | — |
+| [Keon Clark](../Team/Player_Cards/keon_clark.md) | 638,679 | — | — | — | — | — | — | — |
+| [Jumaine Jones](../Team/Player_Cards/jumaine_jones.md) | 638,679 | — | — | — | — | — | — | — |
+| [Stephen Jackson](../Team/Player_Cards/stephen_jackson.md) | 638,679 | — | — | — | — | — | — | — |
+| [Dion Glover](../Team/Player_Cards/dion_glover.md) | 638,679 | — | — | — | — | — | — | — |
+| [Chris Andersen](../Team/Player_Cards/chris_andersen.md) | 638,679 | — | — | — | — | — | — | — |
+| [Scott Padgett](../Team/Player_Cards/scott_padgett.md) | 638,679 | — | — | — | — | — | — | — |
 | [Rasual Butler](../Team/Player_Cards/rasual_butler.md) | 563,679<sup>TO</sup> | — | — | — | — | — | — | — |
 | [Sean Lampley](../Team/Player_Cards/sean_lampley.md) | 563,679<sup>TO</sup> | — | — | — | — | — | — | — |
+| [Reggie Evans](../Team/Player_Cards/reggie_evans.md) | 563,679 | — | — | — | — | — | — | — |
+| [Mike Batiste](../Team/Player_Cards/mike_batiste.md) | 563,679 | — | — | — | — | — | — | — |
 | [Jerome Beasley](../Team/Player_Cards/jerome_beasley.md) | — | — | — | — | — | — | — | — |
-| Counted | 40,343,635 | 34,412,388 | 37,713,436 | 34,337,708 | 0 | 0 | 0 | 0 |
+| Counted | 47,443,067 | 34,412,388 | 37,713,436 | 34,337,708 | 0 | 0 | 0 | 0 |
 
 ## Free-agent holds
 
 | Player | Hold | Rights |
 | --- | ---: | --- |
-| Eddie House | 1,274,870 | larry_bird |
 | Malik Allen | 666,166 | early_bird |
-| Travis Best | 1,680,000 | non_bird |
 | Vladimir Stepania | 1,755,000 | early_bird |
-| Sean Marks | 796,166 | early_bird |
 
 ## Payroll notes
 

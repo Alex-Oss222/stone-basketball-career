@@ -130,6 +130,76 @@
    "from": "2003-07-17",
    "until": null,
    "basis": "signed 2003-07-17 (early_bird); negotiation record Negotiations/mike_james.json"
+  },
+  {
+   "player": "Keon Clark",
+   "bbr_id": "clarkke01",
+   "from": "2003-09-30",
+   "until": null,
+   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+  },
+  {
+   "player": "Jumaine Jones",
+   "bbr_id": "jonesju01",
+   "from": "2003-09-30",
+   "until": null,
+   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+  },
+  {
+   "player": "Stephen Jackson",
+   "bbr_id": "jacksst02",
+   "from": "2003-09-30",
+   "until": null,
+   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+  },
+  {
+   "player": "Reggie Evans",
+   "bbr_id": "evansre01",
+   "from": "2003-09-30",
+   "until": null,
+   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+  },
+  {
+   "player": "Dion Glover",
+   "bbr_id": "glovedi01",
+   "from": "2003-09-30",
+   "until": null,
+   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+  },
+  {
+   "player": "Shawn Kemp",
+   "bbr_id": "kempsh01",
+   "from": "2003-09-30",
+   "until": null,
+   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+  },
+  {
+   "player": "Chris Andersen",
+   "bbr_id": "anderch01",
+   "from": "2003-09-30",
+   "until": null,
+   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+  },
+  {
+   "player": "Mike Batiste",
+   "bbr_id": "batismi01",
+   "from": "2003-09-30",
+   "until": null,
+   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+  },
+  {
+   "player": "Scott Padgett",
+   "bbr_id": "padgesc01",
+   "from": "2003-09-30",
+   "until": null,
+   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+  },
+  {
+   "player": "Tyrone Hill",
+   "bbr_id": "hillty01",
+   "from": "2003-09-30",
+   "until": null,
+   "basis": "camp contract 2003-09-30 (camp_roster.json)"
   }
  ]
 }

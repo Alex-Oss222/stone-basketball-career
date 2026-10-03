@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2003-07-31 · Miami Heat · needs evidence
+Career date: 2003-10-05 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -56,6 +56,9 @@ These are Miami's roster negotiations, not offers to Wade.
 | 2003-07-17 | Miami re-signs Mike James: 3 seasons, $10,294,422 ($10,294,422 guaranteed), route early_bird; promised role starter, 32 minutes a game. Record: `Negotiations/mike_james.json`. |
 | 2003-07-19 | Miami offers Wade his rookie-scale contract at 120% of scale with a promised role of rotation (20 minutes). Wade answers in `Wade_Rookie_Contract/negotiation_log.json`; the milestone screen shows the detailed negotiation. |
 | 2003-07-21 | Wade signs his rookie-scale contract (80% protected plus incentives to 120% of scale): $2,197,000 counted in 2003-04, three seasons plus a 2006-07 team option. Record: `Wade_Rookie_Contract/negotiation_log.json`. |
+| 2003-08-13 | Eddie House signs with Los Angeles Clippers (signing, real move); his hold and rights leave Miami's books. |
+| 2003-08-22 | Travis Best signs with Dallas Mavericks (signing, real move); his hold and rights leave Miami's books. |
+| 2003-09-29 | Sean Marks signs with San Antonio Spurs (signing, real move); his hold and rights leave Miami's books. |
 
 ## Decision authority
 
@@ -80,13 +83,14 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/01_Free_Agency/note.md)
+- [Owning event](../2003-04/05_Preseason/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
 - [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
+- [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)

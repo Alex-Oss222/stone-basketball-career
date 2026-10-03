@@ -208,6 +208,10 @@ class CampRun:
         if data:
             self.save_camp(data)
         self.writer.commit()
+        if data:                               # camp contracts change the ledger: the finance summary follows it
+            day = max(d for d in (INVITE_DAY, PRESEASON_DAY, EVALUATION_DAY, CUT_DAY) if d <= until)
+            signing.refresh_finance(self.writer, FrontOffice(day, Market(day, self.root), self.root), day)
+            self.writer.commit()
         return stops
 
 

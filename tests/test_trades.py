@@ -32,7 +32,12 @@ def copy_repo():
 class TradeDeskTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.desk = TradeDesk(DAY, FrontOffice(DAY, Market(DAY)))
+        cls.tmp, cls.root = copy_repo()                    # the desk on the June 26 checkpoint, not the live clock
+        cls.desk = TradeDesk(DAY, FrontOffice(DAY, Market(DAY, cls.root), cls.root), cls.root)
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.tmp.cleanup()
 
     def test_legality_names_its_rules(self):
         errors = self.desk.errors({"partner": "Los Angeles Lakers", "miami_out": ["Dwyane Wade", "Eddie Jones"], "miami_in": ["Kobe Bryant"],
@@ -41,9 +46,9 @@ class TradeDeskTests(unittest.TestCase):
         self.assertIn("Dwyane Wade", text)
         self.assertIn("cash above $3,000,000", text)
         self.assertIn("Stepien", text)
-        self.assertIn("after the 2004-02-19 trade deadline", " ".join(TradeDesk("2004-02-20", FrontOffice("2004-02-20", Market("2004-02-20"))).errors(
+        self.assertIn("after the 2004-02-19 trade deadline", " ".join(TradeDesk("2004-02-20", FrontOffice("2004-02-20", Market("2004-02-20", self.root), self.root), self.root).errors(
             {"partner": "Denver Nuggets", "miami_out": ["Eddie Jones"], "miami_in": ["Nene Hilario"]})))
-        self.assertIn("moratorium", " ".join(TradeDesk("2003-07-05", FrontOffice("2003-07-05", Market("2003-07-05"))).errors(
+        self.assertIn("moratorium", " ".join(TradeDesk("2003-07-05", FrontOffice("2003-07-05", Market("2003-07-05", self.root), self.root), self.root).errors(
             {"partner": "Denver Nuggets", "miami_out": ["Eddie Jones"], "miami_in": ["Nene Hilario"]})))
         self.assertEqual(self.desk.errors({"partner": "Denver Nuggets", "miami_out": ["Eddie Jones"], "miami_in": ["Nene Hilario"]}), [])
 
