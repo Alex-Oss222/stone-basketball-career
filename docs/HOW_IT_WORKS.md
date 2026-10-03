@@ -31,7 +31,7 @@ An alternate-history NBA career simulation of **Dwyane Wade**, starting at the J
 | `library/careers/nba_player_careers.json` | Real players' season rates, used by the engine for their ability |
 | `runtime/` | All logic (Python, standard library only) |
 | `scripts/` | Command-line drivers (each has a docstring with its usage) |
-| `tests/` | About 460 unit tests; `tests/checkpoint.py` freezes the June 26 checkpoint for tests |
+| `tests/` | 498 unit tests; `tests/checkpoint.py` freezes the June 26 checkpoint for tests |
 
 ## 3. The game engine and draws
 
@@ -85,14 +85,16 @@ Commit in batches, about every couple of weeks of career time or at any stop tha
   - **Generated pages.** `runtime/player_reports.py`, `runtime/write_back.py` and `runtime/league_cards.py`. Every page is generated: edit the source record, never the page.
   - **Refresh.** `scripts/refresh_career_views.py` rebuilds reports, league cards and statistics pages together.
 
-## 6. Where the career stands (October 27, 2003)
+## 6. Where the career stands (October 28, 2003)
 
 - **Wade.** Signed July 21, 2003 to his rookie-scale deal. The user's counter: 80% protected, incentives to 120% of scale, team option for 2006-07. His standing is `rookie`. In the rotation he comes off the bench at 20 minutes, as the first guard.
 - **Miami's 15.** Mike James, Eddie Jones, Caron Butler, Scott Padgett and Brian Grant start. The bench is Stephen Jackson, Shawn Kemp, LaPhonso Ellis, Cherokee Parks, Rasual Butler, Anthony Carter, Sean Lampley, Udonis Haslem and John Wallace. Jerome Beasley holds unsigned second-round rights.
 - **Preseason.** Miami went 2-5. Wade played only Games 1 and 2, because of a dressing rule since fixed.
 - **Free agency.** Kidd stayed in New Jersey. Miller and Odom were requested by Wade but not pursued for lack of cap room. Haslem was signed on October 27: Wade's request broke a tie at the last roster spot.
 - **The October 27 correction.** Five camp signings were voided because the players weren't truly available. Real moves, with sources, were added to the transactions file.
-- **Next.** Opening night is October 28, 2003, at Philadelphia.
+- **Opening night.** Philadelphia beat Miami 114-111 in overtime on October 28; Miami is 0-1. Wade came off the bench for 4 points, 5 rebounds, 1 assist and 1 steal in 18.4 minutes (1/4 FG, 2/2 FT, 0 turnovers). No injuries were drawn. The game and both other October 28 league results are closed records from Railway kernel 2003.6.
+- **Next.** Miami plays at Boston on October 29. The next scheduled staff rotation review is November 7.
+- **League report coverage.** The fixed player registry omits fourteen names present in the opening-night results, including Eddie Jones and Cherokee Parks. Their full box scores and Miami totals are recorded correctly; league individual tables remain limited to registry players.
 
 ## 7. Rotation reviews and remaining work (see `docs/ROADMAP.md`)
 

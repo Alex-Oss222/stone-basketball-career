@@ -12,19 +12,87 @@ The detailed court and tables open by default. Missing locations remain unavaila
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | 0 | 0 | 0 / 0 | N/A | 0 / 0 | 0 | complete |
+| 1 | 0 | 1 | 1 / 4 | 25.0% | 0 / 0 | 4 | unavailable |
 
-No closed games in this competition at the current career checkpoint. No appearance or shot sample is implied.
+Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 0 | 0 | N/A | N/A | N/A | 0 |
-| Outside paint, under 12 ft | 0 | 0 | N/A | N/A | N/A | 0 |
-| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | N/A | N/A | 0 |
-| 18 ft to the three-point line | 0 | 0 | N/A | N/A | N/A | 0 |
-| Three-point range | 0 | 0 | N/A | N/A | N/A | 0 |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
 
-No closed source games in this period. Zero appearances do not establish a 0.0% shooting percentage.
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2003-10-28 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.result.json) | Not recorded |
+
+## 2003-10 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-month-2003-10-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 1 / 4 | 25.0% | 0 / 0 | 4 | unavailable |
+
+Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2003-10-28 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.result.json) | Not recorded |
+
+## 2003-10-22 to 2003-10-28 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-week-2003-10-22#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 1 / 4 | 25.0% | 0 / 0 | 4 | unavailable |
+
+Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2003-10-28 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.result.json) | Not recorded |
+
+## 2003-10-28 vs Philadelphia 76ers · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-616c7182825da61e#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 1 / 4 | 25.0% | 0 / 0 | 4 | unavailable |
+
+Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2003-10-28 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.result.json) | Not recorded |
 
 ## 2003-04 · NBA preseason · through 2003-10-28
 

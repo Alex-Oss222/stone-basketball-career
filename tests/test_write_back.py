@@ -13,6 +13,7 @@ from runtime.league_cards import check_cards
 from runtime.player_reports import report_errors
 from runtime.private_service import Store, play_requests
 from scripts.validate_repository import markdown_tables
+from tests import checkpoint
 from tests.test_season_games import copy_repo, write_minimal_rotation
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -63,9 +64,28 @@ class WriteBackUnitTests(unittest.TestCase):
         self.assertEqual(write_back.add_card_row(added, "| again | `e1` | y |", "e1"), added)
 
     def test_zero_results_leave_the_statistics_pages_unchanged(self):
-        for page, text in write_back.statistics_pages(ROOT).items():
+        tmp, root = copy_repo()
+        self.addCleanup(tmp.cleanup)
+        write_back.write_statistics_pages(root)
+        self.assertEqual(write_back.closed_results(root), [])
+        for page, text in write_back.statistics_pages(root).items():
             self.assertEqual(page.read_text(encoding="utf-8"), text, page)
-        self.assertEqual(write_back.closed_results(ROOT), [])
+
+    def test_checkpoint_clears_future_game_logs_in_any_week_and_preseason(self):
+        tmp, root = copy_repo()
+        self.addCleanup(tmp.cleanup)
+        week = root / SEASON / "06_Regular_Season/11_November/Week_1/note.md"
+        preseason = root / SEASON / "05_Preseason/note.md"
+        for note in (week, preseason):
+            note.write_text(note.read_text().replace("status: not_started", "status: active")
+                            + "\n- Future fixture result (`future-game-log`)\n")
+        checkpoint.pin(root)
+        for note in (week, preseason):
+            self.assertNotIn("future-game-log", note.read_text())
+            self.assertIn("status: not_started", note.read_text())
+        self.assertIn("month: November\nweek: 1\ndays: 1-7", week.read_text())
+        self.assertIn("## Games and events", week.read_text())
+        self.assertIn("## Events", preseason.read_text())
 
 
 class WriteBackRunTests(unittest.TestCase):

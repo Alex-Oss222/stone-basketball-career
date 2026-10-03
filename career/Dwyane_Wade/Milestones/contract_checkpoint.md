@@ -88,4 +88,5 @@ A real club offer, contract event or verified option/expiry deadline.
 - [Closed game](../2003-04/05_Preseason/Game_5.md)
 - [Closed game](../2003-04/05_Preseason/Game_6.md)
 - [Closed game](../2003-04/05_Preseason/Game_7.md)
+- [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)
