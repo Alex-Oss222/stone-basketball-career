@@ -197,12 +197,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 9 | [2003-11-04 vs San Antonio Spurs](Game_2.md) |
-| REB | 2 | [2003-11-04 vs San Antonio Spurs](Game_2.md) |
-| AST | 1 | [2003-11-04 vs San Antonio Spurs](Game_2.md) |
-| STL | 1 | [2003-11-04 vs San Antonio Spurs](Game_2.md) |
-| BLK | 0 | [2003-11-04 vs San Antonio Spurs](Game_2.md) |
-| TOV | 1 | [2003-11-04 vs San Antonio Spurs](Game_2.md) |
+| PTS | 9 | [2003-11-04 at San Antonio Spurs](Game_2.md) |
+| REB | 2 | [2003-11-04 at San Antonio Spurs](Game_2.md) |
+| AST | 1 | [2003-11-04 at San Antonio Spurs](Game_2.md) |
+| STL | 1 | [2003-11-04 at San Antonio Spurs](Game_2.md) |
+| BLK | 0 | [2003-11-04 at San Antonio Spurs](Game_2.md) |
+| TOV | 1 | [2003-11-04 at San Antonio Spurs](Game_2.md) |
 
 ### Game log
 

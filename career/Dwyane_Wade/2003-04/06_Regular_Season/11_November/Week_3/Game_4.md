@@ -199,12 +199,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 27 | [2003-11-21 vs Golden State Warriors](Game_4.md) |
-| REB | 6 | [2003-11-21 vs Golden State Warriors](Game_4.md) |
-| AST | 4 | [2003-11-21 vs Golden State Warriors](Game_4.md) |
-| STL | 2 | [2003-11-21 vs Golden State Warriors](Game_4.md) |
-| BLK | 1 | [2003-11-21 vs Golden State Warriors](Game_4.md) |
-| TOV | 2 | [2003-11-21 vs Golden State Warriors](Game_4.md) |
+| PTS | 27 | [2003-11-21 at Golden State Warriors](Game_4.md) |
+| REB | 6 | [2003-11-21 at Golden State Warriors](Game_4.md) |
+| AST | 4 | [2003-11-21 at Golden State Warriors](Game_4.md) |
+| STL | 2 | [2003-11-21 at Golden State Warriors](Game_4.md) |
+| BLK | 1 | [2003-11-21 at Golden State Warriors](Game_4.md) |
+| TOV | 2 | [2003-11-21 at Golden State Warriors](Game_4.md) |
 
 ### Game log
 

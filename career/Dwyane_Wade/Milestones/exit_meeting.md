@@ -71,6 +71,7 @@ The actual season close and an agreed exit-meeting date.
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json)
+- [Rule](../../../docs/front_office.md)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)

@@ -197,12 +197,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 4 | [2003-10-28 vs Philadelphia 76ers](Game_1.md) |
-| REB | 5 | [2003-10-28 vs Philadelphia 76ers](Game_1.md) |
-| AST | 1 | [2003-10-28 vs Philadelphia 76ers](Game_1.md) |
-| STL | 1 | [2003-10-28 vs Philadelphia 76ers](Game_1.md) |
-| BLK | 0 | [2003-10-28 vs Philadelphia 76ers](Game_1.md) |
-| TOV | 0 | [2003-10-28 vs Philadelphia 76ers](Game_1.md) |
+| PTS | 4 | [2003-10-28 at Philadelphia 76ers](Game_1.md) |
+| REB | 5 | [2003-10-28 at Philadelphia 76ers](Game_1.md) |
+| AST | 1 | [2003-10-28 at Philadelphia 76ers](Game_1.md) |
+| STL | 1 | [2003-10-28 at Philadelphia 76ers](Game_1.md) |
+| BLK | 0 | [2003-10-28 at Philadelphia 76ers](Game_1.md) |
+| TOV | 0 | [2003-10-28 at Philadelphia 76ers](Game_1.md) |
 
 ### Game log
 

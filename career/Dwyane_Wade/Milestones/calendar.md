@@ -26,8 +26,14 @@ Activation: The authoritative current date and recorded event determine what is 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
 | 2003-12-01 | Current checkpoint | 2003-11-29-toronto-raptors-at-miami-heat | Recorded | [Owning event](../2003-04/06_Regular_Season/12_December/Week_1/note.md) |
-| 2003-07-19 | Next contract review | Player responds to an actual eligible proposal | recorded | [Contract desk](index.html#contract_negotiation) |
-| 2003-09-30 | Camp reporting | Club records the date | active | [Training camp](index.html#training_camp) |
+| 2003-07-19 | Rookie contract signed | Player and club | complete | [Contract desk](index.html#contract_negotiation) |
+| 2003-09-30 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
+| 2003-12-02 | League awards announced: Player of the Month, Rookie of the Month | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
+| 2003-12-03 | Next Miami game, at Detroit Pistons | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
+| 2003-12-05 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
+| 2004-01-07 | Keep-or-waive review of non-guaranteed contracts | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
+| 2004-01-10 | Kept contracts become guaranteed | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
+| By 2005-10-31 | Fourth-year (2006-07) team option on the rookie contract | Miami decides | Scheduled gate; no outcome implied | [Contract](index.html#contract_negotiation) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
 ## Your recorded requests
@@ -76,6 +82,7 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json)
+- [Rule](../../../docs/front_office.md)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)

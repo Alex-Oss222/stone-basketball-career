@@ -270,7 +270,7 @@ def player_cards_data(player, identity, records, awards, clock):
                               f"{lo} to {hi} · {COMPETITIONS.get(competition, competition)}")
         for r in rows:
             append_period(competition, season, "game", r["date"], r["date"], [r],
-                f'{r["date"]} vs {r["opponent"]} · {r["appearance"]} · {COMPETITIONS.get(competition, competition)}',
+                f'{r["date"]} {"at" if r.get("venue") == "away" else "vs"} {r["opponent"]} · {r["appearance"]} · {COMPETITIONS.get(competition, competition)}',
                 r["event_id"] or Path(r["note"]).relative_to(player).as_posix())
     scenarios = []
     for season in seasons:

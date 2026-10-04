@@ -362,7 +362,8 @@ def _basketball_views(c, contract):
     promises = c.snapshot(c.season / "04_Training_Camp/promise_log.json")
     promise_rows = [r for r in promises.get("promises", promises.get("players", [])) if r.get("player") == c.name]
     preseason = [r for r in c.records if r.get("competition") == "preseason"]
-    camp_view = c.view("training_camp", "Training camp", "active" if camp else "inactive",
+    camp_view = c.view("training_camp", "Training camp",
+        ("complete" if camp.get("status") == "closed" else "active") if camp else "inactive",
         "The club opens camp and records participation, evaluation or an actual role decision.",
         "Staff ordering is visible; camp attendance, minutes and grades require their own dated records.", [
             _table("Your camp position", ["Item", "Recorded position"], [
@@ -423,6 +424,49 @@ def _basketball_views(c, contract):
     return training_view, camp_view, exit_view
 
 
+def _season_gates(c) -> list:
+    """The next dated gates after the career date, each from its owning rule: Miami's next scheduled game, the next
+    rotation review, the next league award announcement, the guarantee dates and the rookie option deadline."""
+    if c.season.name != "2003-04" or c.on < "2003-10-28":
+        return []
+    from .award_decisions import AWARDS, periods
+    from .rotation_reviews import REVIEW_DAYS, assessment_date
+    from .season_games import MIAMI, season_games
+    rows = []
+    try:
+        game = next(g for g in season_games(c.season.name, c.root)
+                    if MIAMI in (g["home"], g["away"]) and g["date"] > c.on)
+        where = f"vs {game['away']}" if game["home"] == MIAMI else f"at {game['home']}"
+        rows.append([game["date"], f"Next Miami game, {where}", "Coach sets the rotation; the engine plays it",
+                     "Scheduled", {"label": "Season", "href": "#calendar"}])
+    except (OSError, KeyError, StopIteration, ValueError):
+        pass
+    try:
+        day = date.fromisoformat(assessment_date(c.root, c.season.name))
+        from datetime import timedelta
+        while day.isoformat() <= c.on:
+            day += timedelta(days=REVIEW_DAYS)
+        rows.append([day.isoformat(), "Staff rotation review", "Coaching staff (same rule for every player)",
+                     "Scheduled; a role request may be logged before it", c.link(c.root / "docs/front_office.md", "Rule")])
+    except (OSError, KeyError, ValueError):
+        pass
+    announced = sorted({(a, award) for award, _s, _e, a in periods() if a > c.on})
+    if announced:
+        first = announced[0][0]
+        names = sorted({AWARDS[award] for a, award in announced if a == first})
+        rows.append([first, "League awards announced: " + ", ".join(names), "League (closed results only)",
+                     "Scheduled", {"label": "Awards", "href": "#calendar"}])
+    for gate, what in (("2004-01-07", "Keep-or-waive review of non-guaranteed contracts"),
+                       ("2004-01-10", "Kept contracts become guaranteed")):
+        if gate > c.on:
+            rows.append([gate, what, "Miami front office", "Scheduled; does not involve Wade's guaranteed contract",
+                         c.link(c.root / "docs/front_office.md", "Rule")])
+    if c.on < "2005-10-31":
+        rows.append(["By 2005-10-31", "Fourth-year (2006-07) team option on the rookie contract", "Miami decides",
+                     "Scheduled gate; no outcome implied", {"label": "Contract", "href": "#contract_negotiation"}])
+    return sorted(rows, key=lambda r: r[0].replace("By ", ""))
+
+
 def build_milestone_payload(player: Path, identity: dict, records: list, *, root: Path | None = None) -> dict:
     """Build nine live views, preserving unknowns and omitting future evidence."""
     c = _Context(player, identity, records, root)
@@ -447,14 +491,17 @@ def build_milestone_payload(player: Path, identity: dict, records: list, *, root
     offer_date = next((r[1] for r in negotiation["sections"][0]["rows"] if r[0] == "Current proposal"), None)
     camp_date = next((r[1] for r in camp["sections"][0]["rows"] if r[0] == "Camp opened"), None)
     exit_date = next((r[1] for r in exit_view["sections"][0]["rows"] if r[0] == "Meeting date"), None)
+    signed = c.known(offer_date) and not draft_rights and offer_date <= c.on
     calendar_rows.extend([
         [offer_date if c.known(offer_date) else "Not yet recorded",
-         "Rookie-contract proposal" if draft_rights else "Next contract review",
-         "Player responds to an actual eligible proposal", negotiation["status"].replace("_", " "),
+         "Rookie contract signed" if signed else "Rookie-contract proposal" if draft_rights else "Next contract review",
+         "Player and club" if signed else "Player responds to an actual eligible proposal",
+         "complete" if signed else negotiation["status"].replace("_", " "),
          {"label": "Contract desk", "href": "#contract_negotiation"}],
         [camp_date if c.known(camp_date) else "Not yet verified", "Camp reporting",
          "Club records the date", camp["status"].replace("_", " "),
          {"label": "Training camp", "href": "#training_camp"}],
+        *_season_gates(c),
         [exit_date if c.known(exit_date) else "After the actual final game", "Season exit meeting",
          "Player and staff review the closed season", exit_view["status"].replace("_", " "),
          {"label": "Exit meeting", "href": "#exit_meeting"}]])

@@ -663,6 +663,10 @@ def validate():
     for card in refresh_miami_cards(ROOT, write=False):
         errors.append(f"{card.relative_to(ROOT)}: role, 2003-04 statistics or rotation notes are stale (python scripts/write_back_results.py --write)")
 
+    from runtime.team_status import refresh as refresh_team_status
+    for page in refresh_team_status(ROOT, write=False):
+        errors.append(f"{page.relative_to(ROOT)}: dated team status or standings are stale (python scripts/write_back_results.py --write)")
+
     from runtime.award_decisions import award_errors
     errors.extend(award_errors(ROOT))
 

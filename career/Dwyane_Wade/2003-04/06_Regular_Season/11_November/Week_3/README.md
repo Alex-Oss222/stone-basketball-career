@@ -145,12 +145,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 27 | [2003-11-21 vs Golden State Warriors](Game_4.md) |
-| REB | 6 | [2003-11-18 vs Seattle SuperSonics](Game_2.md); [2003-11-21 vs Golden State Warriors](Game_4.md) |
-| AST | 5 | [2003-11-16 vs Los Angeles Lakers](Game_1.md); [2003-11-19 vs Portland Trail Blazers](Game_3.md) |
-| STL | 2 | [2003-11-16 vs Los Angeles Lakers](Game_1.md); [2003-11-21 vs Golden State Warriors](Game_4.md) |
-| BLK | 2 | [2003-11-18 vs Seattle SuperSonics](Game_2.md) |
-| TOV | 2 | [2003-11-16 vs Los Angeles Lakers](Game_1.md); [2003-11-18 vs Seattle SuperSonics](Game_2.md); [2003-11-21 vs Golden State Warriors](Game_4.md) |
+| PTS | 27 | [2003-11-21 at Golden State Warriors](Game_4.md) |
+| REB | 6 | [2003-11-18 at Seattle SuperSonics](Game_2.md); [2003-11-21 at Golden State Warriors](Game_4.md) |
+| AST | 5 | [2003-11-16 at Los Angeles Lakers](Game_1.md); [2003-11-19 at Portland Trail Blazers](Game_3.md) |
+| STL | 2 | [2003-11-16 at Los Angeles Lakers](Game_1.md); [2003-11-21 at Golden State Warriors](Game_4.md) |
+| BLK | 2 | [2003-11-18 at Seattle SuperSonics](Game_2.md) |
+| TOV | 2 | [2003-11-16 at Los Angeles Lakers](Game_1.md); [2003-11-18 at Seattle SuperSonics](Game_2.md); [2003-11-21 at Golden State Warriors](Game_4.md) |
 
 ### Game log
 

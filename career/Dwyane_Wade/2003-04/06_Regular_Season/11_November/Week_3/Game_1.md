@@ -201,12 +201,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 25 | [2003-11-16 vs Los Angeles Lakers](Game_1.md) |
-| REB | 3 | [2003-11-16 vs Los Angeles Lakers](Game_1.md) |
-| AST | 5 | [2003-11-16 vs Los Angeles Lakers](Game_1.md) |
-| STL | 2 | [2003-11-16 vs Los Angeles Lakers](Game_1.md) |
-| BLK | 0 | [2003-11-16 vs Los Angeles Lakers](Game_1.md) |
-| TOV | 2 | [2003-11-16 vs Los Angeles Lakers](Game_1.md) |
+| PTS | 25 | [2003-11-16 at Los Angeles Lakers](Game_1.md) |
+| REB | 3 | [2003-11-16 at Los Angeles Lakers](Game_1.md) |
+| AST | 5 | [2003-11-16 at Los Angeles Lakers](Game_1.md) |
+| STL | 2 | [2003-11-16 at Los Angeles Lakers](Game_1.md) |
+| BLK | 0 | [2003-11-16 at Los Angeles Lakers](Game_1.md) |
+| TOV | 2 | [2003-11-16 at Los Angeles Lakers](Game_1.md) |
 
 ### Game log
 

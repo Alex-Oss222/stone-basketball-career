@@ -1,10 +1,14 @@
 # Miami Heat | Finance desk
 
-June 26, 2003 · 2003-04 through 2010-11 · AI/GM record
+<!-- team-status:start -->
+
+2003-04 through 2010-11 · AI/GM record · live position from [finance.json](finance.json) (as of 2003-11-11), shown on 2003-12-01
+
+Counted salary $44,128,961 against the published $43,840,000 cap: cap room -$955,127 (regular season). Tax threshold: not published at this date. Contract guarantee review: 2004-01-07 keep-or-waive, 2004-01-10 kept contracts guaranteed.
+
+<!-- team-status:end -->
 
 [Open the cap sheet](cap_sheet.md) · [Team hub](../README.md) · [Career checkpoint](../../current_state.json)
-
-The cap sheet records approximately $29.87M in scheduled salary, a $2.197M draft hold and $5.791M in pending options. Ellis’s salary is rounded reporting. Five projected free-agent holds are calculated; two remain unresolved. The next season’s cap is unpublished at this checkpoint.
 
 ## Files
 

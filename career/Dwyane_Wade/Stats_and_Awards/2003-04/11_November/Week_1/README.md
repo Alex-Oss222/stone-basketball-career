@@ -145,12 +145,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 11 | [2003-11-03 vs Dallas Mavericks](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) |
-| REB | 4 | [2003-11-03 vs Dallas Mavericks](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) |
-| AST | 1 | [2003-11-03 vs Dallas Mavericks](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md); [2003-11-04 vs San Antonio Spurs](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) |
-| STL | 2 | [2003-11-03 vs Dallas Mavericks](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) |
-| BLK | 1 | [2003-11-03 vs Dallas Mavericks](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) |
-| TOV | 1 | [2003-11-03 vs Dallas Mavericks](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md); [2003-11-04 vs San Antonio Spurs](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) |
+| PTS | 11 | [2003-11-03 at Dallas Mavericks](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) |
+| REB | 4 | [2003-11-03 at Dallas Mavericks](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) |
+| AST | 1 | [2003-11-03 at Dallas Mavericks](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md); [2003-11-04 at San Antonio Spurs](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) |
+| STL | 2 | [2003-11-03 at Dallas Mavericks](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) |
+| BLK | 1 | [2003-11-03 at Dallas Mavericks](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) |
+| TOV | 1 | [2003-11-03 at Dallas Mavericks](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md); [2003-11-04 at San Antonio Spurs](../../../../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) |
 
 ### Game log
 

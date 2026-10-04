@@ -201,12 +201,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 18 | [2003-11-19 vs Portland Trail Blazers](Game_3.md) |
-| REB | 2 | [2003-11-19 vs Portland Trail Blazers](Game_3.md) |
-| AST | 5 | [2003-11-19 vs Portland Trail Blazers](Game_3.md) |
-| STL | 1 | [2003-11-19 vs Portland Trail Blazers](Game_3.md) |
-| BLK | 0 | [2003-11-19 vs Portland Trail Blazers](Game_3.md) |
-| TOV | 1 | [2003-11-19 vs Portland Trail Blazers](Game_3.md) |
+| PTS | 18 | [2003-11-19 at Portland Trail Blazers](Game_3.md) |
+| REB | 2 | [2003-11-19 at Portland Trail Blazers](Game_3.md) |
+| AST | 5 | [2003-11-19 at Portland Trail Blazers](Game_3.md) |
+| STL | 1 | [2003-11-19 at Portland Trail Blazers](Game_3.md) |
+| BLK | 0 | [2003-11-19 at Portland Trail Blazers](Game_3.md) |
+| TOV | 1 | [2003-11-19 at Portland Trail Blazers](Game_3.md) |
 
 ### Game log
 

@@ -225,7 +225,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2003-11-28 | Atlanta Hawks | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.result.json) |
 | 2003-11-29 | Toronto Raptors | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.result.json) |
 
-## 2003-10-28 vs Philadelphia 76ers · Played · NBA regular season
+## 2003-10-28 at Philadelphia 76ers · Played · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-game-616c7182825da61e#shooting)
 
@@ -247,7 +247,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-28 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.result.json) | Not recorded |
 
-## 2003-10-29 vs Boston Celtics · Played · NBA regular season
+## 2003-10-29 at Boston Celtics · Played · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-game-73a879a1fdce093c#shooting)
 
@@ -291,7 +291,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-31 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.result.json) | Not recorded |
 
-## 2003-11-03 vs Dallas Mavericks · Played · NBA regular season
+## 2003-11-03 at Dallas Mavericks · Played · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-game-84cfd3f7e8c8f2ba#shooting)
 
@@ -313,7 +313,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-03 | Dallas Mavericks | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.result.json) | Not recorded |
 
-## 2003-11-04 vs San Antonio Spurs · Played · NBA regular season
+## 2003-11-04 at San Antonio Spurs · Played · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-game-3364a71a4da0183b#shooting)
 
@@ -357,7 +357,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-08 | Minnesota Timberwolves | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_2/Game_1.result.json) | Not recorded |
 
-## 2003-11-11 vs Houston Rockets · Played · NBA regular season
+## 2003-11-11 at Houston Rockets · Played · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-game-9141d2684bfed3ea#shooting)
 
@@ -423,7 +423,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-14 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_2/Game_4.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_2/Game_4.result.json) |
 
-## 2003-11-16 vs Los Angeles Lakers · Played · NBA regular season
+## 2003-11-16 at Los Angeles Lakers · Played · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-game-f159a8feff0cff1c#shooting)
 
@@ -445,7 +445,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-16 | Los Angeles Lakers | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_3/Game_1.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_3/Game_1.result.json) |
 
-## 2003-11-18 vs Seattle SuperSonics · Played · NBA regular season
+## 2003-11-18 at Seattle SuperSonics · Played · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-game-34ca459018714114#shooting)
 
@@ -467,7 +467,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-18 | Seattle SuperSonics | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_3/Game_2.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_3/Game_2.result.json) |
 
-## 2003-11-19 vs Portland Trail Blazers · Played · NBA regular season
+## 2003-11-19 at Portland Trail Blazers · Played · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-game-e1250a6d06f4e9b3#shooting)
 
@@ -489,7 +489,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-19 | Portland Trail Blazers | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_3/Game_3.result.json) |
 
-## 2003-11-21 vs Golden State Warriors · Played · NBA regular season
+## 2003-11-21 at Golden State Warriors · Played · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-game-b147c14b8e114c40#shooting)
 
@@ -511,7 +511,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-21 | Golden State Warriors | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_3/Game_4.result.json) |
 
-## 2003-11-22 vs Phoenix Suns · Played · NBA regular season
+## 2003-11-22 at Phoenix Suns · Played · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-game-842739cc16d6f5cb#shooting)
 
@@ -555,7 +555,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-25 | New Orleans Hornets | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_4/Game_2.result.json) |
 
-## 2003-11-28 vs Atlanta Hawks · Played · NBA regular season
+## 2003-11-28 at Atlanta Hawks · Played · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-game-f0d98aa2b9939cab#shooting)
 
@@ -769,7 +769,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-10 | Atlanta Hawks | Played | [Game](../2003-04/05_Preseason/Game_2.md) | [Result](../2003-04/05_Preseason/Game_2.result.json) | Not recorded |
 
-## 2003-10-11 vs Orlando Magic · Unknown: missing player box · NBA preseason
+## 2003-10-11 at Orlando Magic · Unknown: missing player box · NBA preseason
 
 [Open this period](player_cards.html?period=preseason-2003-04-game-c311f13397385e75#shooting)
 
@@ -813,7 +813,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-14 | San Antonio Spurs | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_4.md) | [Result](../2003-04/05_Preseason/Game_4.result.json) | Not recorded |
 
-## 2003-10-16 vs Atlanta Hawks · Unknown: missing player box · NBA preseason
+## 2003-10-16 at Atlanta Hawks · Unknown: missing player box · NBA preseason
 
 [Open this period](player_cards.html?period=preseason-2003-04-game-ed5da9cc30eb1915#shooting)
 
@@ -835,7 +835,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-16 | Atlanta Hawks | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_5.md) | [Result](../2003-04/05_Preseason/Game_5.result.json) | Not recorded |
 
-## 2003-10-17 vs Detroit Pistons · Unknown: missing player box · NBA preseason
+## 2003-10-17 at Detroit Pistons · Unknown: missing player box · NBA preseason
 
 [Open this period](player_cards.html?period=preseason-2003-04-game-67b6e9ec7d5b61df#shooting)
 

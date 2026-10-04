@@ -202,12 +202,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 15 | [2003-11-22 vs Phoenix Suns](Game_1.md) |
-| REB | 6 | [2003-11-22 vs Phoenix Suns](Game_1.md) |
-| AST | 6 | [2003-11-22 vs Phoenix Suns](Game_1.md) |
-| STL | 1 | [2003-11-22 vs Phoenix Suns](Game_1.md) |
-| BLK | 2 | [2003-11-22 vs Phoenix Suns](Game_1.md) |
-| TOV | 2 | [2003-11-22 vs Phoenix Suns](Game_1.md) |
+| PTS | 15 | [2003-11-22 at Phoenix Suns](Game_1.md) |
+| REB | 6 | [2003-11-22 at Phoenix Suns](Game_1.md) |
+| AST | 6 | [2003-11-22 at Phoenix Suns](Game_1.md) |
+| STL | 1 | [2003-11-22 at Phoenix Suns](Game_1.md) |
+| BLK | 2 | [2003-11-22 at Phoenix Suns](Game_1.md) |
+| TOV | 2 | [2003-11-22 at Phoenix Suns](Game_1.md) |
 
 ### Game log
 

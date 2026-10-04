@@ -128,12 +128,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 23 | [2003-11-28 vs Atlanta Hawks](../../../../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md) |
+| PTS | 23 | [2003-11-28 at Atlanta Hawks](../../../../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md) |
 | REB | 10 | [2003-11-25 vs New Orleans Hornets](../../../../2003-04/06_Regular_Season/11_November/Week_4/Game_2.md) |
-| AST | 8 | [2003-11-28 vs Atlanta Hawks](../../../../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md) |
+| AST | 8 | [2003-11-28 at Atlanta Hawks](../../../../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md) |
 | STL | 3 | [2003-11-25 vs New Orleans Hornets](../../../../2003-04/06_Regular_Season/11_November/Week_4/Game_2.md) |
-| BLK | 2 | [2003-11-22 vs Phoenix Suns](../../../../2003-04/06_Regular_Season/11_November/Week_4/Game_1.md) |
-| TOV | 2 | [2003-11-22 vs Phoenix Suns](../../../../2003-04/06_Regular_Season/11_November/Week_4/Game_1.md); [2003-11-28 vs Atlanta Hawks](../../../../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md) |
+| BLK | 2 | [2003-11-22 at Phoenix Suns](../../../../2003-04/06_Regular_Season/11_November/Week_4/Game_1.md) |
+| TOV | 2 | [2003-11-22 at Phoenix Suns](../../../../2003-04/06_Regular_Season/11_November/Week_4/Game_1.md); [2003-11-28 at Atlanta Hawks](../../../../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md) |
 
 ### Game log
 

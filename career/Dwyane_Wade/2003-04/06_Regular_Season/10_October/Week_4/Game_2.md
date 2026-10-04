@@ -197,12 +197,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 8 | [2003-10-29 vs Boston Celtics](Game_2.md) |
-| REB | 0 | [2003-10-29 vs Boston Celtics](Game_2.md) |
-| AST | 3 | [2003-10-29 vs Boston Celtics](Game_2.md) |
-| STL | 2 | [2003-10-29 vs Boston Celtics](Game_2.md) |
-| BLK | 1 | [2003-10-29 vs Boston Celtics](Game_2.md) |
-| TOV | 0 | [2003-10-29 vs Boston Celtics](Game_2.md) |
+| PTS | 8 | [2003-10-29 at Boston Celtics](Game_2.md) |
+| REB | 0 | [2003-10-29 at Boston Celtics](Game_2.md) |
+| AST | 3 | [2003-10-29 at Boston Celtics](Game_2.md) |
+| STL | 2 | [2003-10-29 at Boston Celtics](Game_2.md) |
+| BLK | 1 | [2003-10-29 at Boston Celtics](Game_2.md) |
+| TOV | 0 | [2003-10-29 at Boston Celtics](Game_2.md) |
 
 ### Game log
 

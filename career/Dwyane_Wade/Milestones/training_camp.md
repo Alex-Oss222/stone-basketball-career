@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2003-12-01 · Miami Heat · active
+Career date: 2003-12-01 · Miami Heat · complete
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -87,6 +87,7 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json)
+- [Rule](../../../docs/front_office.md)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)

@@ -190,7 +190,7 @@ def detail_body(page, records, *, style=None, as_of=None):
         text += rollup(page, splits, "Splits", style=style, as_of=as_of)
         text += "Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.\n\n"
     text += "### Game highs\n\n" + table(["Metric", "High", "Date / opponent (all ties)"], [
-        [key.upper(), fmt(a["highs"][key], 0), "; ".join(link(page, r["note"], f'{r["date"]} vs {r["opponent"]}')
+        [key.upper(), fmt(a["highs"][key], 0), "; ".join(link(page, r["note"], f'{r["date"]} {"at" if r.get("venue") == "away" else "vs"} {r["opponent"]}')
          for r in closed if a["highs"][key] is not None and r.get("line") and r["line"]["appeared"] and r["line"][key] == a["highs"][key]) or "N/A"]
         for key in ("pts", "reb", "ast", "stl", "blk", "tov")])
     text += game_log(page, records, detailed=True, style=style, as_of=as_of)

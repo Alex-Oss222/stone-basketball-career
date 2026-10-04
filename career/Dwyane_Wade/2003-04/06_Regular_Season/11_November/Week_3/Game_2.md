@@ -202,12 +202,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 13 | [2003-11-18 vs Seattle SuperSonics](Game_2.md) |
-| REB | 6 | [2003-11-18 vs Seattle SuperSonics](Game_2.md) |
-| AST | 3 | [2003-11-18 vs Seattle SuperSonics](Game_2.md) |
-| STL | 1 | [2003-11-18 vs Seattle SuperSonics](Game_2.md) |
-| BLK | 2 | [2003-11-18 vs Seattle SuperSonics](Game_2.md) |
-| TOV | 2 | [2003-11-18 vs Seattle SuperSonics](Game_2.md) |
+| PTS | 13 | [2003-11-18 at Seattle SuperSonics](Game_2.md) |
+| REB | 6 | [2003-11-18 at Seattle SuperSonics](Game_2.md) |
+| AST | 3 | [2003-11-18 at Seattle SuperSonics](Game_2.md) |
+| STL | 1 | [2003-11-18 at Seattle SuperSonics](Game_2.md) |
+| BLK | 2 | [2003-11-18 at Seattle SuperSonics](Game_2.md) |
+| TOV | 2 | [2003-11-18 at Seattle SuperSonics](Game_2.md) |
 
 ### Game log
 

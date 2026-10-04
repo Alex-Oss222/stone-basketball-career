@@ -147,10 +147,10 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | --- | --- | --- |
 | PTS | 17 | [2003-11-12 vs Cleveland Cavaliers](Game_3.md) |
 | REB | 8 | [2003-11-14 vs Washington Wizards](Game_4.md) |
-| AST | 8 | [2003-11-11 vs Houston Rockets](Game_2.md) |
-| STL | 2 | [2003-11-11 vs Houston Rockets](Game_2.md) |
-| BLK | 1 | [2003-11-11 vs Houston Rockets](Game_2.md); [2003-11-12 vs Cleveland Cavaliers](Game_3.md); [2003-11-14 vs Washington Wizards](Game_4.md) |
-| TOV | 2 | [2003-11-11 vs Houston Rockets](Game_2.md) |
+| AST | 8 | [2003-11-11 at Houston Rockets](Game_2.md) |
+| STL | 2 | [2003-11-11 at Houston Rockets](Game_2.md) |
+| BLK | 1 | [2003-11-11 at Houston Rockets](Game_2.md); [2003-11-12 vs Cleveland Cavaliers](Game_3.md); [2003-11-14 vs Washington Wizards](Game_4.md) |
+| TOV | 2 | [2003-11-11 at Houston Rockets](Game_2.md) |
 
 ### Game log
 

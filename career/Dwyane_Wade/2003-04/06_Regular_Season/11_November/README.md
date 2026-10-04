@@ -159,12 +159,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 27 | [2003-11-21 vs Golden State Warriors](Week_3/Game_4.md) |
+| PTS | 27 | [2003-11-21 at Golden State Warriors](Week_3/Game_4.md) |
 | REB | 10 | [2003-11-25 vs New Orleans Hornets](Week_4/Game_2.md) |
-| AST | 8 | [2003-11-11 vs Houston Rockets](Week_2/Game_2.md); [2003-11-28 vs Atlanta Hawks](Week_4/Game_3.md) |
+| AST | 8 | [2003-11-11 at Houston Rockets](Week_2/Game_2.md); [2003-11-28 at Atlanta Hawks](Week_4/Game_3.md) |
 | STL | 3 | [2003-11-25 vs New Orleans Hornets](Week_4/Game_2.md) |
-| BLK | 2 | [2003-11-18 vs Seattle SuperSonics](Week_3/Game_2.md); [2003-11-22 vs Phoenix Suns](Week_4/Game_1.md) |
-| TOV | 2 | [2003-11-11 vs Houston Rockets](Week_2/Game_2.md); [2003-11-16 vs Los Angeles Lakers](Week_3/Game_1.md); [2003-11-18 vs Seattle SuperSonics](Week_3/Game_2.md); [2003-11-21 vs Golden State Warriors](Week_3/Game_4.md); [2003-11-22 vs Phoenix Suns](Week_4/Game_1.md); [2003-11-28 vs Atlanta Hawks](Week_4/Game_3.md) |
+| BLK | 2 | [2003-11-18 at Seattle SuperSonics](Week_3/Game_2.md); [2003-11-22 at Phoenix Suns](Week_4/Game_1.md) |
+| TOV | 2 | [2003-11-11 at Houston Rockets](Week_2/Game_2.md); [2003-11-16 at Los Angeles Lakers](Week_3/Game_1.md); [2003-11-18 at Seattle SuperSonics](Week_3/Game_2.md); [2003-11-21 at Golden State Warriors](Week_3/Game_4.md); [2003-11-22 at Phoenix Suns](Week_4/Game_1.md); [2003-11-28 at Atlanta Hawks](Week_4/Game_3.md) |
 
 ### Game log
 

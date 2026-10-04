@@ -128,12 +128,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 27 | [2003-11-21 vs Golden State Warriors](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md) |
-| REB | 6 | [2003-11-18 vs Seattle SuperSonics](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_2.md); [2003-11-21 vs Golden State Warriors](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md) |
-| AST | 5 | [2003-11-16 vs Los Angeles Lakers](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_1.md); [2003-11-19 vs Portland Trail Blazers](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md) |
-| STL | 2 | [2003-11-16 vs Los Angeles Lakers](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_1.md); [2003-11-21 vs Golden State Warriors](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md) |
-| BLK | 2 | [2003-11-18 vs Seattle SuperSonics](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_2.md) |
-| TOV | 2 | [2003-11-16 vs Los Angeles Lakers](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_1.md); [2003-11-18 vs Seattle SuperSonics](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_2.md); [2003-11-21 vs Golden State Warriors](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md) |
+| PTS | 27 | [2003-11-21 at Golden State Warriors](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md) |
+| REB | 6 | [2003-11-18 at Seattle SuperSonics](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_2.md); [2003-11-21 at Golden State Warriors](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md) |
+| AST | 5 | [2003-11-16 at Los Angeles Lakers](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_1.md); [2003-11-19 at Portland Trail Blazers](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md) |
+| STL | 2 | [2003-11-16 at Los Angeles Lakers](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_1.md); [2003-11-21 at Golden State Warriors](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md) |
+| BLK | 2 | [2003-11-18 at Seattle SuperSonics](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_2.md) |
+| TOV | 2 | [2003-11-16 at Los Angeles Lakers](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_1.md); [2003-11-18 at Seattle SuperSonics](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_2.md); [2003-11-21 at Golden State Warriors](../../../../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md) |
 
 ### Game log
 

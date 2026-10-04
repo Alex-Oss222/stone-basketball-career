@@ -1,9 +1,12 @@
 # Miami Heat team
 
-Snapshot date: June 26, 2003.
+<!-- team-status:start -->
+
+**Status on 2003-12-01:** 15 under contract (12 active, 3 on the injured list), Miami 7-10, 9th in the East. The [register](Roster/README.md) labels every player's control and availability; expired, released and voided contracts stay on it as history.
+
+<!-- team-status:end -->
 
 - [Roster/control register](Roster/README.md)
 - [Working depth chart](Depth_Chart/README.md)
 - [Player cards](Player_Cards/README.md)
 
-The roster includes players still under 2002-03 control, pending options, expiring contracts, medically unavailable contract players and the two new draft-rights players. Status labels prevent expiring or unsigned players from being mistaken for a finalized 2003-04 active roster.

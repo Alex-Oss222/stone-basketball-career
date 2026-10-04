@@ -729,7 +729,7 @@ def team_page(text, page, lines, games, positions, now, register=None):
             out = []
             for name in names:
                 s = summaries.get(name, empty)
-                out.append([name, pos.get(name) or positions.get(name, "N/A"), _n(s["gp"], 0), _n(s["pg"]["minutes"]),
+                out.append([name, positions.get(name) or pos.get(name) or "N/A", _n(s["gp"], 0), _n(s["pg"]["minutes"]),
                             *(_n(s["pg"][k]) for k in ("pts", "reb", "ast", "stl", "blk", "tov"))])
             return _table(headers, out, aligns=[False, False] + [True] * 8)
         if headers == TEAM_SHOOTING:
@@ -808,6 +808,8 @@ def run(root=ROOT, season=SEASON, write=False):
         report["notes"] = sync_note_statuses(root, season)
         from .miami_cards import refresh as refresh_miami_cards
         report["miami_cards"] = refresh_miami_cards(root)
+        from .team_status import refresh as refresh_team_status
+        report["team_status"] = refresh_team_status(root)
     _, report["unmatched"] = closed_lines(root, season)
     if write:
         from .season_games import refresh_reports

@@ -6,12 +6,14 @@
 
 <!-- career-desk:end -->
 
-Snapshot date: June 26, 2003.
+<!-- team-status:start -->
+
+**Status on 2003-12-01** (generated from dated records): Miami 7-10, 9th in the East ([standings](../../../../career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Standings.md)). 15 players under contract, 3 on the injured list. Head coach Erik Spoelstra; the staff rotation in force and the register are in [Team](Team/README.md).
+
+<!-- team-status:end -->
 
 This area is AI/GM-owned.
 
 - [Organization](Organization/README.md): basketball decision makers from ownership through the head coach and personnel office.
 - [Team](Team/README.md): roster, working depth chart and player cards.
 - [Finances](Finances/README.md): contract-control facts and cap-room state known at this date.
-
-The snapshot stops at the draft. Later June 30 and July transactions are intentionally unresolved.

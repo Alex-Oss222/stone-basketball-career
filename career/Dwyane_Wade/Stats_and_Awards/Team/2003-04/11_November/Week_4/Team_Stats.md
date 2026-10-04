@@ -31,7 +31,7 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | Stephen Jackson | SG | 4 | 19.4 | 6.5 | 2.5 | 0.8 | 0.8 | 0.2 | 2.2 |
 | Shawn Kemp | C | 4 | 26.3 | 9.0 | 9.8 | 1.0 | 1.8 | 1.0 | 2.5 |
 | Scott Padgett | PF | 4 | 32.4 | 14.5 | 7.2 | 2.2 | 0.8 | 0.8 | 2.2 |
-| Cherokee Parks | SF | 4 | 12.4 | 2.8 | 2.8 | 1.0 | 0.8 | 0.0 | 1.2 |
+| Cherokee Parks | C | 4 | 12.4 | 2.8 | 2.8 | 1.0 | 0.8 | 0.0 | 1.2 |
 | Udonis Haslem | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | John Wallace | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
