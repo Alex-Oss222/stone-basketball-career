@@ -4,7 +4,7 @@
 
 ![Player career overview: professional identity, NBA regular-season statistics and playoff statistics](assets/career_overview.svg)
 
-![Earned professional awards through 2003-12-12](assets/stat_reports/awards_2003-12-12.svg)
+![Earned professional awards through 2003-12-13](assets/stat_reports/awards_2003-12-13.svg)
 
 [Professional identity](Professional_Identity.md) · [Career statistics](Stats_and_Awards/README.md) · [Earned awards](Awards.md) · [National team / FIBA](National_Team/README.md)
 
@@ -25,13 +25,13 @@
 
 NBA entry: 2003 draft, round 1, No. 5 overall, Miami Heat.
 
-Identity as of 2003-12-12; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-12-13; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 </details>
 
 ## Statistics
 
-Career cutoff: **2003-12-12**. Club competitions and national-team events have separate records.
+Career cutoff: **2003-12-13**. Club competitions and national-team events have separate records.
 
 ### NBA regular season
 
@@ -46,7 +46,7 @@ Career cutoff: **2003-12-12**. Club competitions and national-team events have s
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2003-12-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2003-12-13, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### NBA playoffs
 
@@ -61,7 +61,7 @@ Awards are confirmed through 2003-12-12, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2003-12-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2003-12-13, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Browse
 

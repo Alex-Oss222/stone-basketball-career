@@ -602,6 +602,46 @@
    "bbr_id": "woodsqy01",
    "from": "Portland Trail Blazers",
    "to": "New Orleans Hornets"
+  },
+  {
+   "id": "2003-04-market-2003-12-13-waive-rooksse01",
+   "date": "2003-12-13",
+   "kind": "waive",
+   "player": "Sean Rooks",
+   "bbr_id": "rooksse01",
+   "from": "New Orleans Hornets",
+   "to": null,
+   "role": {
+    "player_id": "Sean Rooks",
+    "bbr_id": "rooksse01",
+    "position": "C",
+    "games": 55,
+    "minutes": 595
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2003-12-15"
+  },
+  {
+   "id": "2003-04-market-2003-12-13-rest_of_season-udokaim01",
+   "date": "2003-12-13",
+   "kind": "rest_of_season",
+   "player": "Ime Udoka",
+   "bbr_id": "udokaim01",
+   "from": null,
+   "to": "New Orleans Hornets",
+   "role": {
+    "player_id": "Ime Udoka",
+    "bbr_id": "udokaim01",
+    "position": "SF",
+    "games": 4,
+    "minutes": 28
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.94 x fit"
   }
  ]
 }

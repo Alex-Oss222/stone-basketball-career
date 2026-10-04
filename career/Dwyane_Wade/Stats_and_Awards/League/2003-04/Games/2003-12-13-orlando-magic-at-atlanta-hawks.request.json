@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-13-orlando-magic-at-atlanta-hawks",
+ "game_date": "2003-12-13",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Atlanta Hawks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ }
+}

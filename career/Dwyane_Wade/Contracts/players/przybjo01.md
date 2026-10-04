@@ -2,9 +2,9 @@
 
 # Contract | Joel Przybilla
 
-Known through: 2003-12-12. [Open interactive contract](przybjo01.html#contract) · [Contract history](przybjo01.html#contract-history)
+Known through: 2003-12-13. [Open interactive contract](przybjo01.html#contract) · [Contract history](przybjo01.html#contract-history)
 
-Joel Przybilla: under rookie contract. Evidence cutoff: 2003-12-12.
+Joel Przybilla: under rookie contract. Evidence cutoff: 2003-12-13.
 
 ## Current contract
 

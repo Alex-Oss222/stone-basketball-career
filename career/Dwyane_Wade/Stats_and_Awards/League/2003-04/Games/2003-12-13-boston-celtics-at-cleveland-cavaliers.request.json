@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-13-boston-celtics-at-cleveland-cavaliers",
+ "game_date": "2003-12-13",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ }
+}
