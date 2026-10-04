@@ -48,16 +48,82 @@ def season_roles(season=SEASON, root=ROOT):
     return roles
 
 
-def clubs_at_activation(season=SEASON, root=ROOT, start=None):
-    """{bbr_id: club} from the real rosters on the activation date."""
+STRADDLE = 0.05        # season fraction (about 8 games): a real trade this close after the switch date is completed
+ROSTER_MAX = 15        # 1999 CBA: fifteen under contract (twelve active, up to three injured)
+
+
+def _activation(season, root, start):
+    """(holder {bbr_id: club}, extras [roster entries]) on the activation date.
+
+    A player is with the club whose real stint covers the date; if his next real stint begins within STRADDLE
+    after it, the trade that moved him is completed (stints are placed by order and games, not dates, so a trade
+    near the switch would otherwise be frozen half-done). Each club then keeps its ROSTER_MAX largest real roles
+    for the season; the others start as unsigned free agents whom the league market signs as clubs need players."""
     start = start or league_book.SYMMETRIC_FROM
     fraction = season_fraction(season, start, root)
-    out = {}
+    stints = {}
     for club, entry in load_rosters(season, root).items():
         for p in entry["players"]:
-            if _present(p, fraction):
-                out.setdefault(p["bbr_id"], club)
+            stints.setdefault(p["bbr_id"], []).append((club, p))
+    holder = {}
+    for bbr, rows in stints.items():
+        rows.sort(key=lambda r: (r[1].get("window") or [0.0, 1.0])[0])
+        present = [r for r in rows if _present(r[1], fraction)]
+        soon = [r for r in rows if fraction < (r[1].get("window") or [0.0, 1.0])[0] <= fraction + STRADDLE]
+        pick = soon[-1] if soon else (present[-1] if present else None)
+        if pick is None:
+            later = [r for r in rows if (r[1].get("window") or [0.0, 1.0])[0] > fraction]
+            pick = later[0] if later else rows[-1]
+        holder[bbr] = pick[0]
+    roles = season_roles(season, root)
+    protected = _protected_contracts(root)
+    extras = []
+    for club in {c for c in holder.values()}:
+        # Over fifteen, a club lets go of minimum and unsigned players first (smallest real role first); a first-round
+        # rookie or a contract above the minimum is kept (its salary would stay on the books anyway).
+        members = sorted((b for b, c in holder.items() if c == club),
+                         key=lambda b: (b not in protected, -roles[b]["minutes"], b))
+        for b in members[ROSTER_MAX:]:
+            extras.append(dict(roles[b], released_by=club))
+            del holder[b]
+    return holder, sorted(extras, key=lambda e: e["bbr_id"])
+
+
+def _protected_contracts(root):
+    """bbr_ids under a rookie-scale contract, a 2003 first-round pick, or a 2003-04 salary above the highest minimum."""
+    path = Path(root) / "library/2003/league/nba_2003_contracts.json"
+    # Above the highest minimum on the scale (10+ years of service): a veteran on his own minimum is not protected.
+    minimum = json.loads((Path(root) / "library/2003/league/nba_1999_cba_minimum_salary_scale.json").read_text(encoding="utf-8"))["seasons"][SEASON]["10_plus"] / 1.5 * 1.05
+    out = set()
+    for club in json.loads(path.read_text(encoding="utf-8"))["clubs"].values():
+        for p in club["players"]:
+            salary = (p.get("schedule") or {}).get(SEASON) or 0
+            if p.get("bbr_id") and (p.get("status") == "under_rookie_contract" or salary > 1.5 * minimum):
+                out.add(p["bbr_id"])
+    # The summer's rookie-scale and above-minimum signings (after the June inventory was compiled).
+    moves = json.loads((Path(root) / "library/2003/league/nba_2003_offseason_transactions.json").read_text(encoding="utf-8"))
+    for row in moves.get("signings", []):
+        per = (row.get("total") or 0) / max(1, row.get("years") or 1)
+        if row.get("bbr_id") and (row.get("kind") == "rookie_signing" or per > 1.5 * minimum):
+            out.add(row["bbr_id"])
+    # 2003 first-round picks (rookie scale is guaranteed for two seasons): names from the June draft-rights entries.
+    from .player_stats import alias
+    contracts = json.loads(path.read_text(encoding="utf-8"))["clubs"]
+    first_round = {alias(r["player"]) for club in contracts.values() for r in club.get("draft_rights", []) if r.get("pick", 99) <= 29}
+    draft = json.loads((Path(root) / "library/2003/league/nba_2003_draft_class.json").read_text(encoding="utf-8"))
+    out |= {p["bbr_id"] for club in draft["clubs"].values() for p in club["players"]
+            if p.get("bbr_id") and alias(p["player_id"]) in first_round}
     return out
+
+
+def clubs_at_activation(season=SEASON, root=ROOT, start=None):
+    """{bbr_id: club} on the activation date (`_activation`)."""
+    return _activation(season, root, start)[0]
+
+
+def activation_free_agents(season=SEASON, root=ROOT, start=None):
+    """Real players on no club at activation: beyond a club's fifteen. The league market signs them."""
+    return _activation(season, root, start)[1]
 
 
 def club_of(bbr_id, game_date, season=SEASON, root=ROOT, start=None):

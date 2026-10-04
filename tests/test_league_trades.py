@@ -14,6 +14,21 @@ ROOT = Path(__file__).resolve().parents[1]
 START, WEEK = "2003-12-01", "2003-12-08"
 
 
+class ActivationTests(unittest.TestCase):
+    def test_a_real_trade_straddling_the_switch_is_completed_and_rosters_hold_fifteen(self):
+        holder, extras = league_moves._activation("2003-04", ROOT, "2003-12-03")
+        self.assertEqual(holder["roseja01"], "Toronto Raptors")          # Rose-Marshall for Davis-Williams, December 1
+        self.assertEqual(holder["willije01"], "Chicago Bulls")
+        counts = {}
+        for club in holder.values():
+            counts[club] = counts.get(club, 0) + 1
+        self.assertLessEqual(max(counts.values()), league_moves.ROSTER_MAX)
+        protected = league_moves._protected_contracts(ROOT)
+        self.assertFalse({e["bbr_id"] for e in extras} & protected)          # a real contract is never let go
+        self.assertNotIn("waltolu01", {e["bbr_id"] for e in extras})        # a 72-game rookie stays
+        self.assertEqual(len({*holder} & {e["bbr_id"] for e in extras}), 0)
+
+
 class LeagueTradeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
