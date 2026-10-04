@@ -2,9 +2,9 @@
 
 # Contract | Charles Oakley
 
-Known through: 2003-11-18. [Open interactive contract](oaklech01.html#contract) · [Contract history](oaklech01.html#contract-history)
+Known through: 2003-11-19. [Open interactive contract](oaklech01.html#contract) · [Contract history](oaklech01.html#contract-history)
 
-Charles Oakley: free agent expiring. Evidence cutoff: 2003-11-18.
+Charles Oakley: free agent expiring. Evidence cutoff: 2003-11-19.
 
 ## Current contract
 

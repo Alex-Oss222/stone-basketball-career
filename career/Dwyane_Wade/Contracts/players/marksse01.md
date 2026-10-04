@@ -2,9 +2,9 @@
 
 # Contract | Sean Marks
 
-Known through: 2003-11-18. [Open interactive contract](marksse01.html#contract) · [Contract history](marksse01.html#contract-history)
+Known through: 2003-11-19. [Open interactive contract](marksse01.html#contract) · [Contract history](marksse01.html#contract-history)
 
-Sean Marks: free agent expiring. Evidence cutoff: 2003-11-18.
+Sean Marks: free agent expiring. Evidence cutoff: 2003-11-19.
 
 ## Current contract
 

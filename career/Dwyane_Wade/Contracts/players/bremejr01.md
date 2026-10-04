@@ -2,9 +2,9 @@
 
 # Contract | J.R. Bremer
 
-Known through: 2003-11-18. [Open interactive contract](bremejr01.html#contract) · [Contract history](bremejr01.html#contract-history)
+Known through: 2003-11-19. [Open interactive contract](bremejr01.html#contract) · [Contract history](bremejr01.html#contract-history)
 
-J.R. Bremer: No verified contract record. Evidence cutoff: 2003-11-18.
+J.R. Bremer: No verified contract record. Evidence cutoff: 2003-11-19.
 
 ## Current contract
 

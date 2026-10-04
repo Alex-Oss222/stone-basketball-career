@@ -61,6 +61,7 @@ Contract pages follow the current career date; this personnel assessment retains
 | --- | --- | --- |
 | June 26, 2003 | No material change established. Opening Miami offseason card created from the current control/depth baseline. | [Roster/control register](../Roster/roster.json) and [league baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json) |
 | June 26, 2003 | Added 2002-03 statistical estimates; no change to role or availability. | [Prior-season record](../../../../../../library/2003/league/nba_2002_03_player_stats.json) |
+| November 19, 2003 | Injured (short) in event `2003-11-19-miami-heat-at-portland-trail-blazers`: out 4 games; the game builder leaves him out of Miami's next 4 games. No grade change. | [Game 3 result](../../../06_Regular_Season/11_November/Week_3/Game_3.md) |
 
 ## Sources and uncertainty
 

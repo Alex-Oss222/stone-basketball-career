@@ -2,9 +2,9 @@
 
 # Contract | Corie Blount
 
-Known through: 2003-11-18. [Open interactive contract](blounco01.html#contract) · [Contract history](blounco01.html#contract-history)
+Known through: 2003-11-19. [Open interactive contract](blounco01.html#contract) · [Contract history](blounco01.html#contract-history)
 
-Corie Blount: free agent expiring. Evidence cutoff: 2003-11-18.
+Corie Blount: free agent expiring. Evidence cutoff: 2003-11-19.
 
 ## Current contract
 

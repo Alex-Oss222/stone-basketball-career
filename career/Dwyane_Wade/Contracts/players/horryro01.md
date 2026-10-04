@@ -2,9 +2,9 @@
 
 # Contract | Robert Horry
 
-Known through: 2003-11-18. [Open interactive contract](horryro01.html#contract) · [Contract history](horryro01.html#contract-history)
+Known through: 2003-11-19. [Open interactive contract](horryro01.html#contract) · [Contract history](horryro01.html#contract-history)
 
-Robert Horry: expired or unresolved. Evidence cutoff: 2003-11-18.
+Robert Horry: expired or unresolved. Evidence cutoff: 2003-11-19.
 
 ## Current contract
 
