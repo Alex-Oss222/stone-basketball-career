@@ -1,6 +1,6 @@
 ---
 type: regular_season_week
-status: not_started
+status: complete
 month: October
 week: 3
 days: 15-21

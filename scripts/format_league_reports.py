@@ -82,18 +82,31 @@ def format_page(text, page, registry, as_of, asset, league_dir=None):
                     raise ValueError(f"{page}: duplicate {name} row")
                 target[name] = row
         expected = {p["name"] for p in registry["players"] if p["position"] == pos}
-        if set(production) != expected:
-            raise ValueError(f"{page}: {pos} membership differs from the registry")
-        if shooting and set(shooting) != expected:
+        if set(production) - expected:
+            raise ValueError(f"{page}: {pos} has rows for players outside the registry")
+        if shooting and set(shooting) != set(production):
             raise ValueError(f"{page}: {pos} shooting coverage differs from production")
+        # A registry entry the page does not show yet (a dated 2003-04 addition) gets an empty row; the write-back fills
+        # it from closed results. Its club label is the club of his first appearance.
+        for name in sorted(expected - set(production)):
+            p = players[name]
+            production[name] = {key: "N/A" for key in COLUMNS}
+            production[name].update({"Player": name, "G": "0", "Club / rights": p.get("team_code") or p.get("team_name") or "N/A"})
         rows = []
         for name, old in production.items():
             old = {**shooting.get(name, {}), **old}
             p = players[name]
-            birth, on = date.fromisoformat(p["birth_date"]), date.fromisoformat(cutoff)
-            age = on.year - birth.year - ((on.month, on.day) < (birth.month, birth.day))
+            if p.get("birth_date"):
+                birth, on = date.fromisoformat(p["birth_date"]), date.fromisoformat(cutoff)
+                age = on.year - birth.year - ((on.month, on.day) < (birth.month, birth.day))
+            else:
+                age = "N/A"                                  # birth date not recorded for a dated addition
             values = {key: old.get(key, old.get(ALIASES.get(key, ""), "N/A")) for key in COLUMNS}
-            values.update(Player=card_link(page, p, league_dir), Age=old.get("Age", str(age)), Lg=old.get("Lg", "NBA"), Pos=old.get("Pos", pos))
+            recorded_age = old.get("Age")
+            values.update(Player=card_link(page, p, league_dir),
+                          Age=recorded_age if recorded_age not in (None, "N/A") else str(age),
+                          Lg=old.get("Lg") if old.get("Lg") not in (None, "N/A") else "NBA",
+                          Pos=old.get("Pos") if old.get("Pos") not in (None, "N/A") else pos)
             # The club/rights cell is an existing dated label, never a new roster decision.
             values["Club / rights"] = old["Club / rights"]
             for key in ("FG%", "3P%", "2P%", "eFG%", "FT%", "TS% (est.)"):

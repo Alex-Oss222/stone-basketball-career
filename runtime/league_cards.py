@@ -413,6 +413,8 @@ def per_game_row(label, age, team, pos, summary):
 # -- rendering ----------------------------------------------------------------------------------------
 
 def age_on(birth, on):
+    if not birth:
+        return None                       # not recorded (a dated registry addition without a sourced birth date): N/A
     b, d = _day(birth), _day(on)
     return d.year - b.year - ((d.month, d.day) < (b.month, b.day))
 

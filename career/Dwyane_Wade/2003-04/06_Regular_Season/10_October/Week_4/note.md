@@ -1,6 +1,6 @@
 ---
 type: regular_season_week
-status: active
+status: complete
 month: October
 week: 4
 days: 22-end

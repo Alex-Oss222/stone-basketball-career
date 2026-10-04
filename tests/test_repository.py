@@ -110,7 +110,8 @@ class InitializedCareerTests(unittest.TestCase):
     def test_league_stats_and_awards_hierarchy(self):
         root=PLAYER/"Stats_and_Awards"/"League"
         registry=json.loads((root/"player_registry.json").read_text(encoding="utf-8"))
-        self.assertEqual(registry["player_count"],407)
+        self.assertEqual(sum(p["cohort"] in ("end_2002_03_roster","2003_draft_rights") for p in registry["players"]),407)
+        self.assertEqual(registry["player_count"],len(registry["players"]))
         self.assertEqual(set(registry["positions"]),{"PG","SG","SF","F","PF","C"})
         year=root/"2003-04"
         self.assertTrue((year/"League_Stats.md").is_file())

@@ -19,7 +19,8 @@ class ContractNavigationTests(unittest.TestCase):
         expected = {entry["name"]: entry["registry_id"] for entry in registry["players"]}
         outputs = build_contract_navigation(ROOT, PLAYER)
         pages = list((PLAYER / "Stats_and_Awards/League").rglob("League_Stats.md"))
-        self.assertEqual(len(expected), 407)
+        self.assertEqual(len(expected), registry["player_count"])
+        self.assertGreaterEqual(len(expected), 407)
         self.assertGreater(len(pages), 1)
         for page in pages:
             before = [row for _, rows in read_tables(page.read_text()) for row in rows]

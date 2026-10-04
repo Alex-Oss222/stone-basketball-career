@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="180" viewBox="0 0 1280 180" role="img" aria-labelledby="t d">
+<title id="t">Alex Garcia</title><desc id="d">Alex Garcia, San Antonio Spurs, Shooting guard, —.</desc>
+<rect width="1280" height="180" rx="24" fill="#010101"/>
+<rect x="0" y="150" width="1280" height="30" fill="#8d9093" fill-opacity=".92"/>
+<rect x="0" y="150" width="1280" height="6" fill="#8d9093"/>
+<text x="48" y="78" font-family="sans-serif" font-size="54" font-weight="700" fill="#ffffff">Alex Garcia</text>
+<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Shooting guard · San Antonio Spurs</text>
+<text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">—</text>
+</svg>

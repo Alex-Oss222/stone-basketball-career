@@ -382,6 +382,141 @@ def registry(root=ROOT):
     return read_json(Path(root) / PLAYER_DIR / "Stats_and_Awards/League/player_registry.json")
 
 
+APPEARANCE_COHORT = "2003_04_appearance"
+ORIGINAL_COHORTS = ("end_2002_03_roster", "2003_draft_rights")
+
+
+def registry_additions(root=ROOT, season=SEASON, now=None):
+    """Players in closed results who are not in the registry, as dated registry entries (cohort APPEARANCE_COHORT):
+    identity from the season's rosters, Miami's register and the dated identity records; club and date of his first
+    closed appearance. The 407 original entries are never changed."""
+    from .rotations import primary_position
+    reg = registry(root)
+    by_bbr = {p["bbr_id"] for p in reg["players"] if p.get("bbr_id")}
+    by_name = {_key(p["name"]) for p in reg["players"]}
+    codes = {p["team_name"]: p["team_code"] for p in reg["players"] if p.get("team_code")}
+    codes.setdefault(MIAMI, "MIA")
+    conf_path = Path(root) / "library/2003/league/nba_2003_04_conferences.json"
+    conference = {t: c for c, ts in read_json(conf_path)["conferences"].items() for t in ts} if conf_path.is_file() else {}
+    lookup = bbr_lookup(root, season)
+    positions, births = {}, {}
+    try:
+        for club, data in load_rosters(season, root).items():
+            for p in data["players"]:
+                positions.setdefault(p["bbr_id"], p.get("position"))
+    except OSError:
+        pass
+    roster = Path(root) / season_base(season) / "00_Team/Team/Roster/roster.json"
+    if roster.is_file():
+        for p in read_json(roster)["players"]:
+            if p.get("bbr_id"):
+                positions.setdefault(p["bbr_id"], (p.get("positions") or [None])[0])
+                births[p["bbr_id"]] = p.get("date_of_birth")
+    for rel in ("library/2003/league/nba_2003_end_of_season.json",):
+        path = Path(root) / rel
+        if path.is_file():
+            for club in read_json(path)["clubs"].values():
+                for p in club["players"]:
+                    if p.get("bbr_id") and p.get("birth_date"):
+                        births.setdefault(p["bbr_id"], p["birth_date"])
+    unattached = Path(root) / "library/2003/league/nba_2003_unattached_identities.json"
+    if unattached.is_file():
+        for p in read_json(unattached)["players"]:
+            births.setdefault(p["bbr_id"], p.get("birth_date"))
+            positions.setdefault(p["bbr_id"], p.get("position"))
+    added = {}
+    for row in closed_results(root, season, now):
+        for side, pid, bbr, record in game_records(row, root, season):
+            club = row["result"][side]
+            bbr = bbr or lookup.get((club, _key(pid)))
+            if (bbr and bbr in by_bbr) or _key(pid) in by_name:
+                continue
+            key = bbr or _key(pid)
+            if key in added:
+                continue
+            pos = primary_position(positions.get(bbr) or "SF") if positions.get(bbr) else "SF"
+            added[key] = {"name": pid, "position": pos, "team_name": club, "team_code": codes.get(club),
+                          "conference": conference.get(club), "cohort": APPEARANCE_COHORT, "bbr_id": bbr, "espn_id": None,
+                          "birth_date": births.get(bbr), "registry_id": bbr or _key(pid).replace(" ", "_"),
+                          "added_on": row["result"]["game_date"],
+                          "added_basis": f"first closed 2003-04 appearance, {club}, {row['result']['event_id']}"}
+    return sorted(added.values(), key=lambda p: (p["added_on"], p["name"]))
+
+
+def extend_registry(root=ROOT, season=SEASON, write=True):
+    """Add every unregistered player from closed results to the registry. Returns the added entries."""
+    new = registry_additions(root, season)
+    if new and write:
+        path = Path(root) / PLAYER_DIR / "Stats_and_Awards/League/player_registry.json"
+        reg = read_json(path)
+        reg["players"] = reg["players"] + new
+        reg["player_count"] = len(reg["players"])
+        counts = reg.setdefault("coverage", {}).setdefault("source_counts", {})
+        counts[APPEARANCE_COHORT] = sum(1 for p in reg["players"] if p.get("cohort") == APPEARANCE_COHORT)
+        reg["coverage"]["population_policy"] = ("Retain all 407 original registry entries; add every player who appears in a "
+                                                 "closed 2003-04 result, dated by his first appearance (write_back.extend_registry).")
+        path.write_text(json.dumps(reg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return new
+
+
+def week_span(note_path):
+    """(first, last) ISO dates of a regular-season week note from its folders and `days` (1-7, 8-14, 15-21, 22-end)."""
+    import calendar
+    month_dir, week = note_path.parent.parent.name, int(note_path.parent.name.split("_")[1])
+    month = int(month_dir.split("_")[0])
+    year = 2003 if month >= 10 else 2004
+    last_day = calendar.monthrange(year, month)[1]
+    first, last = {1: (1, 7), 2: (8, 14), 3: (15, 21), 4: (22, last_day)}[week]
+    return f"{year}-{month:02d}-{first:02d}", f"{year}-{month:02d}-{last:02d}"
+
+
+def expected_statuses(root=ROOT, season=SEASON):
+    """{note path: status} for the season's preseason and regular-season week notes on the career clock:
+    complete once the period has passed, active while the clock is inside it, not_started before it."""
+    root = Path(root)
+    now = clock(root)
+    base = root / season_base(season)
+    out = {}
+    for note in sorted((base / "06_Regular_Season").glob("*/Week_*/note.md")):
+        first, last = week_span(note)
+        out[note] = "complete" if last < now else "active" if first <= now else "not_started"
+    pre = base / "05_Preseason/note.md"
+    if pre.is_file():
+        out[pre] = "complete" if now >= "2003-10-28" else "active" if now >= "2003-10-05" else "not_started"
+    return out
+
+
+def current_week_note(root=ROOT, season=SEASON):
+    """The week note (relative to the season folder) containing the career clock, or None outside the season."""
+    for note, status in expected_statuses(root, season).items():
+        if status == "active" and note.parent.name.startswith("Week_"):
+            return note.relative_to(Path(root) / season_base(season)).as_posix()
+    return None
+
+
+def sync_note_statuses(root=ROOT, season=SEASON, write=True):
+    """Set each period note's status and current_state.current_note to the clock. Returns the changed paths."""
+    import re
+    changed = []
+    for note, status in expected_statuses(root, season).items():
+        text = note.read_text(encoding="utf-8")
+        new = re.sub(r"^status: \S+$", f"status: {status}", text, count=1, flags=re.M)
+        if new != text:
+            changed.append(note)
+            if write:
+                note.write_text(new, encoding="utf-8")
+    current = current_week_note(root, season)
+    state_path = Path(root) / season_base(season) / "current_state.json"
+    if current and state_path.is_file():
+        state = read_json(state_path)
+        if state.get("current_area") == "06_Regular_Season" and state.get("current_note") != current:
+            state["current_note"] = current
+            changed.append(state_path)
+            if write:
+                state_path.write_text(json.dumps(state, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return changed
+
+
 def closed_lines(root=ROOT, season=SEASON, now=None):
     """Closed regular-season records per registry player: ({registry_id: [records]}, unmatched labels)."""
     reg = registry(root)
@@ -668,6 +803,9 @@ def run(root=ROOT, season=SEASON, write=False):
             continue
         report["problems"].extend(write_note(info, result, root, season, write=write))
         report["written"].append(f"{info['note'].relative_to(root)}: {MIAMI} {result_label(result, miami_side(result))} ({info['kind']})")
+    if write:
+        report["registered"] = extend_registry(root, season)
+        report["notes"] = sync_note_statuses(root, season)
     _, report["unmatched"] = closed_lines(root, season)
     if write:
         from .season_games import refresh_reports

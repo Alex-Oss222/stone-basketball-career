@@ -77,6 +77,15 @@ def pin(root):
                     if "06_Regular_Season/" not in line and "05_Preseason/Game_" not in line]
             if len(kept) != len(text.splitlines(keepends=True)):
                 card.write_text("".join(kept), encoding="utf-8")
+    # Dated registry additions (first 2003-04 appearances) come after the checkpoint.
+    reg_path = root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json"
+    if reg_path.is_file():
+        reg = json.loads(reg_path.read_text(encoding="utf-8"))
+        kept = [p for p in reg["players"] if p.get("cohort") != "2003_04_appearance"]
+        if len(kept) != len(reg["players"]):
+            reg["players"], reg["player_count"] = kept, len(kept)
+            reg.get("coverage", {}).get("source_counts", {}).pop("2003_04_appearance", None)
+            reg_path.write_text(json.dumps(reg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     state_path = root / SEASON / "current_state.json"
     state = json.loads(state_path.read_text(encoding="utf-8"))
     assert state["current_date"] == CHECKPOINT, state["current_date"]

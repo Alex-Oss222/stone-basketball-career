@@ -1,6 +1,6 @@
 ---
 type: phase
-status: active
+status: complete
 ---
 
 # Preseason

@@ -7,7 +7,7 @@
 **Contract/control:** July 16, 2003: signs with New Jersey Nets (signing, real move); his hold and rights leave Miami's books. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
-[Current contract](../../../../Contracts/players/alonzo_mourning.html#contract) · [Contract history](../../../../Contracts/players/alonzo_mourning.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
+[Current contract](../../../../Contracts/players/mournal01.html#contract) · [Contract history](../../../../Contracts/players/mournal01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
 
 Contract pages follow the current career date; this personnel assessment retains its stated date.
 <!-- contract-navigation:end -->

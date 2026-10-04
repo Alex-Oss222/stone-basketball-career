@@ -519,7 +519,14 @@ def validate():
     require(errors,league_registry.is_file(),"missing league player registry")
     if league_registry.is_file():
         registry=json.loads(league_registry.read_text(encoding="utf-8"))
-        require(errors,registry.get("player_count")==407,"league player registry count changed")
+        # The 407 original entries stay; dated 2003-04 additions (write_back.extend_registry) follow first appearances.
+        originals=[p for p in registry.get("players",[]) if p.get("cohort") in ("end_2002_03_roster","2003_draft_rights")]
+        additions=[p for p in registry.get("players",[]) if p.get("cohort")=="2003_04_appearance"]
+        require(errors,len(originals)==407,"league player registry lost an original entry")
+        require(errors,len(originals)+len(additions)==len(registry.get("players",[]))==registry.get("player_count"),"league player registry count or cohort mismatch")
+        require(errors,all(p.get("added_on") and p.get("registry_id") for p in additions),"a registry addition needs added_on and registry_id")
+        from runtime.write_back import registry_additions
+        require(errors,not registry_additions(ROOT),"players in closed results are missing from the league registry (python scripts/write_back_results.py --write)")
         positions=[p.get("position") for p in registry.get("players",[])]
         require(errors,all(pos in {"PG","SG","SF","F","PF","C"} for pos in positions),"league registry has unsupported position")
     league_year=league_stats_root/season.name
@@ -647,6 +654,10 @@ def validate():
 
     from runtime.schedule import schedule_errors
     errors.extend(schedule_errors(ROOT))
+
+    from runtime.write_back import sync_note_statuses
+    for path in sync_note_statuses(ROOT, write=False):
+        errors.append(f"{path.relative_to(ROOT)}: status or current note does not match the career clock (python scripts/write_back_results.py --write)")
 
     from runtime.award_decisions import award_errors
     errors.extend(award_errors(ROOT))
