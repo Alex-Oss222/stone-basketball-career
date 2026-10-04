@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-02-indiana-pacers-at-boston-celtics",
+ "game_date": "2004-01-02",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ }
+}

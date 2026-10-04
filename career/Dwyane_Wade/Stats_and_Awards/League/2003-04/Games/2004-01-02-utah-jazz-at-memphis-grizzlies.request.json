@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-02-utah-jazz-at-memphis-grizzlies",
+ "game_date": "2004-01-02",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ }
+}

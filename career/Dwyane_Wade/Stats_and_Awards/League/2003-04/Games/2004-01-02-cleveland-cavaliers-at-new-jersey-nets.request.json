@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-02-cleveland-cavaliers-at-new-jersey-nets",
+ "game_date": "2004-01-02",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ }
+}

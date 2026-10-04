@@ -1,0 +1,12 @@
+{
+ "date": "2004-01-02",
+ "decider": "Miami coaching staff (engine evaluation draw)",
+ "event_id": "2003-04-rotation-2004-01-02-c-starter",
+ "kind": "decision",
+ "options": {
+  "Brian Grant": 0.546843,
+  "Shawn Kemp": 0.453157
+ },
+ "outcome": "Brian Grant",
+ "question": "Who starts at C: Brian Grant or Shawn Kemp?"
+}

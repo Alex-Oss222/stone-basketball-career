@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2004-01-01 · Miami Heat · active
+Career date: 2004-01-02 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,25 +14,25 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2004-01-01 |
+| Career date | 2004-01-02 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2003-12-30-miami-heat-at-new-york-knicks |
+| Last closed event | 2004-01-02-orlando-magic-at-miami-heat |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2004-01-01 | Current checkpoint | 2003-12-30-miami-heat-at-new-york-knicks | Recorded | [Owning event](../2003-04/06_Regular_Season/01_January/Week_1/note.md) |
+| 2004-01-02 | Current checkpoint | 2004-01-02-orlando-magic-at-miami-heat | Recorded | [Owning event](../2003-04/06_Regular_Season/01_January/Week_1/note.md) |
 | 2003-07-19 | Rookie contract signed | Player and club | complete | [Contract desk](index.html#contract_negotiation) |
 | 2003-09-30 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2004-01-02 | Next Miami game, vs Orlando Magic | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
-| 2004-01-02 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
-| 2004-01-02 | League awards announced: Player of the Month, Rookie of the Month | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
+| 2004-01-05 | Next Miami game, vs Indiana Pacers | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
+| 2004-01-05 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2004-01-07 | Keep-or-waive review of non-guaranteed contracts | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
 | 2004-01-10 | Kept contracts become guaranteed | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
+| 2004-01-16 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | By 2005-10-31 | Fourth-year (2006-07) team option on the rookie contract | Miami decides | Scheduled gate; no outcome implied | [Contract](index.html#contract_negotiation) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
@@ -76,12 +76,12 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-12-19/review.json)
-- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-12-19/depth_chart.json)
+- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-01-02/review.json)
+- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-01-02/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-12-19/rotation.json)
+- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-01-02/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
@@ -127,4 +127,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.md)
 - [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_4.md)
 - [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_5.md)
+- [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

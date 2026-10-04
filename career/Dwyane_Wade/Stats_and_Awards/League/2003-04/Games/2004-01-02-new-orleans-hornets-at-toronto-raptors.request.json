@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-02-new-orleans-hornets-at-toronto-raptors",
+ "game_date": "2004-01-02",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Toronto Raptors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Orleans Hornets",
+  "rotation": "real"
+ }
+}

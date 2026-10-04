@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C  
 **Age at assessment:** 33 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-01-01 
+**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-01-02 
 
 **Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at C, staff plan 34 minutes (staff rotation dated 2003-12-19, [record](../Depth_Chart/Reviews/2003-12-19/rotation.json)).
+**Role:** Rotation at C, staff plan 20 minutes (staff rotation dated 2004-01-02, [record](../Depth_Chart/Reviews/2004-01-02/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -40,11 +40,12 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 | 2003-11-21 | Staff rotation of 2003-11-21: rotation at C, staff plan 20 minutes. | [Rotation](../Depth_Chart/Reviews/2003-11-21/rotation.json) |
 | 2003-12-05 | Staff rotation of 2003-12-05: rotation at C, staff plan 20 minutes. | [Rotation](../Depth_Chart/Reviews/2003-12-05/rotation.json) |
 | 2003-12-19 | Staff rotation of 2003-12-19: starter at C, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2003-12-19/rotation.json) |
+| 2004-01-02 | Staff rotation of 2004-01-02: rotation at C, staff plan 20 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-02/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [League baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json), [signing record](../../../04_Training_Camp/camp_roster.json).
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2003-12-19.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-01-02.
 
 <!-- yearly-statistics:start -->
 
@@ -57,7 +58,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Orlando Magic | 79 | N/A | 20.7 | 6.8 | 5.7 | 0.7 | 0.8 | 0.4 | 1.3 | 0.418 | 0.000 | 0.742 |
-| 2003-04 | MIA | 30 | 17 | 27.6 | 10.3 | 8.4 | 1.3 | 1.2 | 0.7 | 1.8 | 42.4% | 33.3% | 74.5% |
+| 2003-04 | MIA | 31 | 17 | 27.3 | 10.1 | 8.2 | 1.3 | 1.2 | 0.6 | 1.8 | 42.6% | 33.3% | 74.5% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

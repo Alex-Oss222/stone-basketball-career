@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-02-los-angeles-lakers-at-seattle-supersonics",
+ "game_date": "2004-01-02",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ }
+}

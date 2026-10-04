@@ -14,4 +14,6 @@ days: 1-7
 
 ## Games and events
 
+- 2004-01-02: Orlando Magic 90 at Miami Heat 107 — Miami Heat W 107-90 ([Game 1](Game_1.md), event `2004-01-02-orlando-magic-at-miami-heat`)
+
 ## Consequences
