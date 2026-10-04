@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-04-los-angeles-lakers-at-los-angeles-clippers",
+ "game_date": "2004-01-04",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Clippers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ }
+}

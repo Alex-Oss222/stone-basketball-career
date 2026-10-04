@@ -2,9 +2,9 @@
 
 # Contract | Corliss Williamson
 
-Known through: 2004-01-03. [Open interactive contract](willico02.html#contract) · [Contract history](willico02.html#contract-history)
+Known through: 2004-01-04. [Open interactive contract](willico02.html#contract) · [Contract history](willico02.html#contract-history)
 
-Corliss Williamson: under contract. Evidence cutoff: 2004-01-03.
+Corliss Williamson: under contract. Evidence cutoff: 2004-01-04.
 
 ## Current contract
 

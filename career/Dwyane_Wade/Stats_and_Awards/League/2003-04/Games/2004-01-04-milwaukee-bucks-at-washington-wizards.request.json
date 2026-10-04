@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-04-milwaukee-bucks-at-washington-wizards",
+ "game_date": "2004-01-04",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ }
+}
