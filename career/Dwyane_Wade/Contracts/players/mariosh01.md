@@ -2,9 +2,9 @@
 
 # Contract | Shawn Marion
 
-Known through: 2003-12-04. [Open interactive contract](mariosh01.html#contract) · [Contract history](mariosh01.html#contract-history)
+Known through: 2003-12-05. [Open interactive contract](mariosh01.html#contract) · [Contract history](mariosh01.html#contract-history)
 
-Shawn Marion: under contract unverified. Evidence cutoff: 2003-12-04.
+Shawn Marion: under contract unverified. Evidence cutoff: 2003-12-05.
 
 ## Current contract
 

@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-05-san-antonio-spurs-at-orlando-magic",
+ "game_date": "2003-12-05",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "San Antonio Spurs",
+  "rotation": "real"
+ }
+}

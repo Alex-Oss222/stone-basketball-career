@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-05-minnesota-timberwolves-at-sacramento-kings",
+ "game_date": "2003-12-05",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Minnesota Timberwolves",
+  "rotation": "real"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-05-houston-rockets-at-new-orleans-hornets",
+ "game_date": "2003-12-05",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New Orleans Hornets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Houston Rockets",
+  "rotation": "real"
+ }
+}

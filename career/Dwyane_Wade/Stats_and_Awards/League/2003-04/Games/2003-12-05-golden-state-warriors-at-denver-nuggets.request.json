@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-05-golden-state-warriors-at-denver-nuggets",
+ "game_date": "2003-12-05",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Denver Nuggets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Golden State Warriors",
+  "rotation": "real"
+ }
+}

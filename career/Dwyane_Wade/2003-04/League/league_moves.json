@@ -202,6 +202,276 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 5.0 x fit"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-claim-brunsri01",
+   "date": "2003-12-05",
+   "kind": "claim",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": null,
+   "to": "Denver Nuggets",
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 40,
+    "minutes": 412
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2004-04-14"
+   },
+   "note": "claimed off waivers from Chicago Bulls (worst record first)",
+   "waiver": "2003-04-market-2003-12-03-waive-brunsri01"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-claim-sundobr01",
+   "date": "2003-12-05",
+   "kind": "claim",
+   "player": "Bruno Šundov",
+   "bbr_id": "sundobr01",
+   "from": null,
+   "to": "Phoenix Suns",
+   "role": {
+    "player_id": "Bruno Šundov",
+    "bbr_id": "sundobr01",
+    "position": "C",
+    "games": 5,
+    "minutes": 33
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2004-04-14"
+   },
+   "note": "claimed off waivers from Cleveland Cavaliers (worst record first)",
+   "waiver": "2003-04-market-2003-12-03-waive-sundobr01"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-claim-breweja01",
+   "date": "2003-12-05",
+   "kind": "claim",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": null,
+   "to": "Boston Celtics",
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 13,
+    "minutes": 160
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2004-04-14"
+   },
+   "note": "claimed off waivers from Indiana Pacers (worst record first)",
+   "waiver": "2003-04-market-2003-12-03-waive-breweja01"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-claim-overtdo01",
+   "date": "2003-12-05",
+   "kind": "claim",
+   "player": "Doug Overton",
+   "bbr_id": "overtdo01",
+   "from": null,
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Doug Overton",
+    "bbr_id": "overtdo01",
+    "position": "PG",
+    "games": 61,
+    "minutes": 1033
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2004-04-14"
+   },
+   "note": "claimed off waivers from Los Angeles Clippers (worst record first)",
+   "waiver": "2003-04-market-2003-12-03-waive-overtdo01"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-claim-murratr01",
+   "date": "2003-12-05",
+   "kind": "claim",
+   "player": "Tracy Murray",
+   "bbr_id": "murratr01",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "Tracy Murray",
+    "bbr_id": "murratr01",
+    "position": "SF",
+    "games": 7,
+    "minutes": 35
+   },
+   "contract": {
+    "type": "claimed contract",
+    "until": "2004-04-14"
+   },
+   "note": "claimed off waivers from Portland Trail Blazers (worst record first)",
+   "waiver": "2003-04-market-2003-12-03-waive-murratr01"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-waive-colesbi01",
+   "date": "2003-12-05",
+   "kind": "waive",
+   "player": "Bimbo Coles",
+   "bbr_id": "colesbi01",
+   "from": "Boston Celtics",
+   "to": null,
+   "role": {
+    "player_id": "Bimbo Coles",
+    "bbr_id": "colesbi01",
+    "position": "PG",
+    "games": 35,
+    "minutes": 691
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2003-12-07"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-rest_of_season-davisjo02",
+   "date": "2003-12-05",
+   "kind": "rest_of_season",
+   "player": "Josh Davis",
+   "bbr_id": "davisjo02",
+   "from": null,
+   "to": "Boston Celtics",
+   "role": {
+    "player_id": "Josh Davis",
+    "bbr_id": "davisjo02",
+    "position": "PF",
+    "games": 4,
+    "minutes": 23
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.99 x fit"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-waive-popema01",
+   "date": "2003-12-05",
+   "kind": "waive",
+   "player": "Mark Pope",
+   "bbr_id": "popema01",
+   "from": "Denver Nuggets",
+   "to": null,
+   "role": {
+    "player_id": "Mark Pope",
+    "bbr_id": "popema01",
+    "position": "PF",
+    "games": 4,
+    "minutes": 20
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2003-12-07"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-rest_of_season-barroda01",
+   "date": "2003-12-05",
+   "kind": "rest_of_season",
+   "player": "Dana Barros",
+   "bbr_id": "barroda01",
+   "from": null,
+   "to": "Denver Nuggets",
+   "role": {
+    "player_id": "Dana Barros",
+    "bbr_id": "barroda01",
+    "position": "SG",
+    "games": 1,
+    "minutes": 11
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.98 x fit"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-waive-willisc01",
+   "date": "2003-12-05",
+   "kind": "waive",
+   "player": "Scott Williams",
+   "bbr_id": "willisc01",
+   "from": "Phoenix Suns",
+   "to": null,
+   "role": {
+    "player_id": "Scott Williams",
+    "bbr_id": "willisc01",
+    "position": "C",
+    "games": 43,
+    "minutes": 527
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2003-12-07"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-rest_of_season-lewisqu01",
+   "date": "2003-12-05",
+   "kind": "rest_of_season",
+   "player": "Quincy Lewis",
+   "bbr_id": "lewisqu01",
+   "from": null,
+   "to": "Phoenix Suns",
+   "role": {
+    "player_id": "Quincy Lewis",
+    "bbr_id": "lewisqu01",
+    "position": "SF",
+    "games": 14,
+    "minutes": 65
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.97 x fit"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-waive-willike02",
+   "date": "2003-12-05",
+   "kind": "waive",
+   "player": "Kevin Willis",
+   "bbr_id": "willike02",
+   "from": "San Antonio Spurs",
+   "to": null,
+   "role": {
+    "player_id": "Kevin Willis",
+    "bbr_id": "willike02",
+    "position": "C",
+    "games": 48,
+    "minutes": 373
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2003-12-07"
+  },
+  {
+   "id": "2003-04-market-2003-12-05-rest_of_season-fullehi01",
+   "date": "2003-12-05",
+   "kind": "rest_of_season",
+   "player": "Hiram Fuller",
+   "bbr_id": "fullehi01",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "Hiram Fuller",
+    "bbr_id": "fullehi01",
+    "position": "PF",
+    "games": 4,
+    "minutes": 43
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.97 x fit"
   }
  ]
 }
