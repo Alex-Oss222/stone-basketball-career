@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-04-chicago-bulls-at-philadelphia-76ers",
+ "game_date": "2003-12-04",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Philadelphia 76ers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Chicago Bulls",
+  "rotation": "real"
+ }
+}

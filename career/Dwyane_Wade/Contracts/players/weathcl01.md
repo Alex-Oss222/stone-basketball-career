@@ -2,9 +2,9 @@
 
 # Contract | Clarence Weatherspoon
 
-Known through: 2003-12-03. [Open interactive contract](weathcl01.html#contract) · [Contract history](weathcl01.html#contract-history)
+Known through: 2003-12-04. [Open interactive contract](weathcl01.html#contract) · [Contract history](weathcl01.html#contract-history)
 
-Clarence Weatherspoon: under contract. Evidence cutoff: 2003-12-03.
+Clarence Weatherspoon: under contract. Evidence cutoff: 2003-12-04.
 
 ## Current contract
 

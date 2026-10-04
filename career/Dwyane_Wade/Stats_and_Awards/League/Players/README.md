@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-03**. 501 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-04**. 501 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -43,7 +43,7 @@ Card date: **2003-12-03**. 501 registry players, one Markdown card and one inter
 | [Frank Williams](willifr02.md) | New York Knicks | 23 | silhouette | [open](willifr02.html) |
 | [Gary Payton](paytoga01.md) | Los Angeles Lakers | 35 | sourced | [open](paytoga01.html) |
 | [Gilbert Arenas](arenagi01.md) | Washington Wizards | 21 | sourced | [open](arenagi01.html) |
-| [Howard Eisley](eisleho01.md) | New York Knicks | 30 | sourced | [open](eisleho01.html) |
+| [Howard Eisley](eisleho01.md) | New York Knicks | 31 | sourced | [open](eisleho01.html) |
 | [J.R. Bremer](bremejr01.md) | Cleveland Cavaliers | 23 | silhouette | [open](bremejr01.html) |
 | [Jacque Vaughn](vaughja01.md) | Atlanta Hawks | 28 | sourced | [open](vaughja01.html) |
 | [Jamaal Tinsley](tinslja01.md) | Indiana Pacers | 25 | sourced | [open](tinslja01.html) |
@@ -226,7 +226,7 @@ Card date: **2003-12-03**. 501 registry players, one Markdown card and one inter
 | [Casey Jacobsen](jacobca01.md) | Phoenix Suns | 22 | silhouette | [open](jacobca01.html) |
 | [Chris Jefferies](jeffech01.md) | Toronto Raptors | 23 | silhouette | [open](jeffech01.html) |
 | [Chris Owens](owensch01.md) | Memphis Grizzlies | 24 | sourced | [open](owensch01.html) |
-| [Corliss Williamson](willico02.md) | Detroit Pistons | 29 | sourced | [open](willico02.html) |
+| [Corliss Williamson](willico02.md) | Detroit Pistons | 30 | sourced | [open](willico02.html) |
 | [Dan Langhi](langhda01.md) | San Antonio Spurs | None | silhouette | [open](langhda01.html) |
 | [Danny Ferry](ferryda01.md) | Indiana Pacers | 37 | sourced | [open](ferryda01.html) |
 | [Darius Miles](milesda01.md) | Cleveland Cavaliers | 22 | sourced | [open](milesda01.html) |
@@ -332,7 +332,7 @@ Card date: **2003-12-03**. 501 registry players, one Markdown card and one inter
 | [Boris Diaw](diawbo01.md) | Atlanta Hawks | 21 | sourced | [open](diawbo01.html) |
 | [Brandon Hunter](huntebr01.md) | Boston Celtics | 23 | sourced | [open](huntebr01.html) |
 | [Brian Cardinal](cardibr01.md) | Golden State Warriors | None | silhouette | [open](cardibr01.html) |
-| [Brian Cook](cookbr01.md) | Los Angeles Lakers | 22 | sourced | [open](cookbr01.html) |
+| [Brian Cook](cookbr01.md) | Los Angeles Lakers | 23 | sourced | [open](cookbr01.html) |
 | [Brian Scalabrine](scalabr01.md) | New Jersey Nets | 25 | sourced | [open](scalabr01.html) |
 | [Brian Skinner](skinnbr01.md) | Milwaukee Bucks | 27 | sourced | [open](skinnbr01.html) |
 | [Carlos Boozer](boozeca01.md) | Cleveland Cavaliers | 22 | sourced | [open](boozeca01.html) |
@@ -414,7 +414,7 @@ Card date: **2003-12-03**. 501 registry players, one Markdown card and one inter
 | [Szymon Szewczyk](szewcsz01.md) | Milwaukee Bucks (draft rights) | 20 | sourced | [open](szewcsz01.html) |
 | [Tim Duncan](duncati01.md) | San Antonio Spurs | 27 | sourced | [open](duncati01.html) |
 | [Tom Gugliotta](guglito01.md) | Phoenix Suns | 33 | sourced | [open](guglito01.html) |
-| [Tommy Smith](smithto03.md) | Chicago Bulls (draft rights) | 22 | silhouette | [open](smithto03.html) |
+| [Tommy Smith](smithto03.md) | Chicago Bulls (draft rights) | 23 | silhouette | [open](smithto03.html) |
 | [Toni Kukoc](kukocto01.md) | Milwaukee Bucks | 35 | sourced | [open](kukocto01.html) |
 | [Torraye Braggs](braggto01.md) | Houston Rockets | None | silhouette | [open](braggto01.html) |
 | [Troy Murphy](murphtr01.md) | Golden State Warriors | 23 | sourced | [open](murphtr01.html) |

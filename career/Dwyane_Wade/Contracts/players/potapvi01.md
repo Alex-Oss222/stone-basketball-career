@@ -2,9 +2,9 @@
 
 # Contract | Vitaly Potapenko
 
-Known through: 2003-12-03. [Open interactive contract](potapvi01.html#contract) · [Contract history](potapvi01.html#contract-history)
+Known through: 2003-12-04. [Open interactive contract](potapvi01.html#contract) · [Contract history](potapvi01.html#contract-history)
 
-Vitaly Potapenko: under contract. Evidence cutoff: 2003-12-03.
+Vitaly Potapenko: under contract. Evidence cutoff: 2003-12-04.
 
 ## Current contract
 
