@@ -247,7 +247,9 @@ class WriteBackRunTests(unittest.TestCase):
             league = (root / page).read_text()
             self.assertIn("2 closed games in this record · Through October 28, 2003.", league)
             rows = rows_by_first_cell(league, ["Player", "Age", "Club / rights"])
-            self.assertEqual(len(rows), 407, page)
+            registered = json.loads((root / STATS / "League/player_registry.json").read_text())["players"]
+            self.assertEqual({p["name"] for p in registered} - set(rows), set(), page)  # every registered player, additions included
+            self.assertGreater(len(registered), 407)                           # first appearances were registered
             for name, (club, r) in appeared.items():
                 row = rows[name]
                 self.assertEqual(row["G"], "1", (page, name))

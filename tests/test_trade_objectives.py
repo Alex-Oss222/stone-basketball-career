@@ -45,8 +45,12 @@ class LiveDeskTests(unittest.TestCase):
         self.assertIn("below its floor", why[0])
 
     def test_miami_values_this_season_while_it_tries_to_win(self):
+        # A club trying to win weighs a veteran's current production above his shared (now plus future) value.
         v = self.desk.valuation(trade("San Antonio Spurs", ["Eddie Jones"], ["Malik Rose"]))
-        self.assertLess(v["miami_gain"], 0)
+        jones = v["miami_out"][0]
+        self.assertEqual(jones["age"], 32)                       # aged from Miami's register like every player
+        self.assertGreater(v["miami_out_view"], jones["value"])
+        self.assertGreater(jones["now"], jones["future"])
 
     def test_partner_payroll_is_the_dated_roster_with_summer_terms(self):
         spurs = self.desk.assets.contracts["San Antonio Spurs"]["players"]

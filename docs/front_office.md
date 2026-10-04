@@ -167,7 +167,9 @@ A real club answers Miami on its own objective, not a league-wide talent score (
 
 A walk-year veteran (28 or older, last contract season) is worth less to his own club, by stance (`WALK_YEAR_DISCOUNT`: contending 0.9, middle 0.75, rebuilding 0.65). An injured player's current-season production counts at `INJURY_DISCOUNT` 0.75 to the club that would take him on, Miami or a real club. The evidence is dated: Miami's injured list with an injury reason (not a reserve listing), or a real club's regular (in at least half its earlier closed games) who missed all of its last three closed games. Real trade demands are not modelled; they would need a researched, dated list.
 
-On December 1, 2003 the live search returns one proposal, Anthony Carter and Rasual Butler to Golden State for Clifford Robinson (Golden State accepts 82.5%). No untouchable leaves and every proposal clears the partner's floor (`tests/test_trade_objectives.py`).
+**Ages.** Every player's value carries the same age factor. Five Miami players (Eddie Jones, Udonis Haslem, Cherokee Parks, John Wallace, Sean Marks) are missing from the end-of-season baseline, so until December 2003 Jones in particular was valued with no age; the valuation now also reads birth dates from Miami's register (`runtime/valuation.py`). Earlier drawn decisions are unchanged.
+
+On December 1, 2003 the live search returns one proposal, Anthony Carter and Rasual Butler to Golden State for Clifford Robinson (Golden State accepts 88.1%; 82.5% before every Miami player was aged, see below). No untouchable leaves and every proposal clears the partner's floor (`tests/test_trade_objectives.py`).
 
 ## Skill fit (from December 1, 2003)
 

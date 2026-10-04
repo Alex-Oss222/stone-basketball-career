@@ -3,7 +3,8 @@
 The team READMEs were written at the June 26, 2003 import. Write-back refreshes one generated block in each, on the
 career clock, from the owning records only:
 - the register (`Team/Roster/roster.json`), the injured list (`Transactions/injured_list.json`) and the rotation in
-  force (`rotation_reviews.rotation_in_force`): who is on Miami's books, who is available, who starts;
+  force (`rotation_reviews.rotation_in_force`): who is on Miami's books, who is available, who starts (the depth
+  chart itself, with injured starters marked, is `roster_moves.py`'s);
 - closed results (`standings.standings_on`): Miami's record and the league standings by conference;
 - `Finances/finance.json`: the live cap position.
 Text outside the markers is never touched. Nothing here decides anything; it is a projection of dated records.
@@ -138,13 +139,6 @@ def blocks(root, on):
         f"Availability below is on {on}, from the [injured list](../../Transactions/injured_list.json); role is the staff "
         f"rotation in force.\n\n" + _table(["Player", "Pos", "Control", f"Availability on {on}", "Staff role"], rows) +
         "\n\nPlayers whose contracts ended, were released or voided remain in roster.json with their labels as history.")
-    starters = [(p["name"], a) for p, a, role in reg if role.startswith("starter") and a != "Available"]
-    unavailable = [f"{p['name']} ({a.lower()})" for p, a, _ in reg if a.startswith("Injured list")]
-    out[TEAM / "Team/Depth_Chart/README.md"] = (
-        f"**Availability on {on}:** " + ("; ".join(unavailable) if unavailable else "every player available") + ". " +
-        (("Charted starters not available: " + ", ".join(n for n, _ in starters) +
-          "; the game builder dresses the healthy twelve and replacement starts count toward GS.") if starters
-         else "Every charted starter is available."))
     fin = _read(root / TEAM / "Finances/finance.json")
     out[TEAM / "Finances/README.md"] = (
         f"{SEASON} through 2010-11 · AI/GM record · live position from [finance.json](finance.json) (as of {fin.get('as_of')}), "

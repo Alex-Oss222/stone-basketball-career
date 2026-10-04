@@ -74,7 +74,8 @@ def pin(root):
             # A checkpoint player's card keeps no row sourced from a game the fixture removed (an injury, say).
             text = card.read_text(encoding="utf-8")
             kept = [line for line in text.splitlines(keepends=True)
-                    if "06_Regular_Season/" not in line and "05_Preseason/Game_" not in line]
+                    if "06_Regular_Season/" not in line and "05_Preseason/Game_" not in line
+                    and "Depth_Chart/Reviews/" not in line]
             if len(kept) != len(text.splitlines(keepends=True)):
                 card.write_text("".join(kept), encoding="utf-8")
     # Dated registry additions (first 2003-04 appearances) come after the checkpoint.
@@ -82,6 +83,16 @@ def pin(root):
     if reg_path.is_file():
         reg = json.loads(reg_path.read_text(encoding="utf-8"))
         kept = [p for p in reg["players"] if p.get("cohort") != "2003_04_appearance"]
+        added = {p["bbr_id"] for p in reg["players"] if p.get("cohort") == "2003_04_appearance"}
+        for b in added:                                             # their league cards are built on registration
+            for card in (root / "career/Dwyane_Wade/Stats_and_Awards/League/Players").glob(f"{b}.*"):
+                card.unlink()
+        for page in (root / "career/Dwyane_Wade/Stats_and_Awards/League").rglob("League_Stats.md"):
+            text = page.read_text(encoding="utf-8")
+            lines = [line for line in text.splitlines(keepends=True)
+                     if not any(f"(../" in line and f"/Players/{b}.md)" in line for b in added)]
+            if len(lines) != len(text.splitlines(keepends=True)):
+                page.write_text("".join(lines), encoding="utf-8")   # their rows arrive with their first appearance
         if len(kept) != len(reg["players"]):
             reg["players"], reg["player_count"] = kept, len(kept)
             reg.get("coverage", {}).get("source_counts", {}).pop("2003_04_appearance", None)

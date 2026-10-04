@@ -129,12 +129,12 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 | Metric | High | Date / opponent (all ties) |
 | --- | --- | --- |
-| PTS | 24 | [2003-11-12 vs Club B](sample_game_6.md) |
-| REB | 6 | [2003-11-12 vs Club B](sample_game_6.md) |
-| AST | 9 | [2003-11-12 vs Club B](sample_game_6.md) |
-| STL | 2 | [2003-11-12 vs Club B](sample_game_6.md) |
-| BLK | 1 | [2003-11-12 vs Club B](sample_game_6.md) |
-| TOV | 2 | [2003-11-12 vs Club B](sample_game_6.md) |
+| PTS | 24 | [2003-11-12 at Club B](sample_game_6.md) |
+| REB | 6 | [2003-11-12 at Club B](sample_game_6.md) |
+| AST | 9 | [2003-11-12 at Club B](sample_game_6.md) |
+| STL | 2 | [2003-11-12 at Club B](sample_game_6.md) |
+| BLK | 1 | [2003-11-12 at Club B](sample_game_6.md) |
+| TOV | 2 | [2003-11-12 at Club B](sample_game_6.md) |
 
 ### Game log
 

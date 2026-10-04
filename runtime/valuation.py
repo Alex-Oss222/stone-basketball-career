@@ -28,6 +28,7 @@ CONTRACTS_PATH = Path("library/2003/league/nba_2003_contracts.json")
 RIGHTS_PATH = Path("library/2003/league/nba_2003_free_agent_rights.json")
 END_OF_SEASON_PATH = Path("library/2003/league/nba_2003_end_of_season.json")
 REGISTRY_PATH = Path("career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json")
+MIAMI_REGISTER_PATH = Path("career/Dwyane_Wade/2003-04/00_Team/Team/Roster/roster.json")
 CAP_RULES_PATH = Path("library/2003/league/nba_2003_04_cap_rules.json")
 
 # Judgement constants, named so they can be revisited.
@@ -84,6 +85,13 @@ class Valuation:
         for p in read(REGISTRY_PATH, root)["players"]:
             if p.get("bbr_id") and p.get("birth_date"):
                 self.birth.setdefault(p["bbr_id"], p["birth_date"])
+        # Miami's register carries sourced birth dates for players the end-of-season baseline lacks (Eddie Jones,
+        # Haslem, Parks, Wallace, Marks); a birth date is identity known on every date, so every player is aged alike.
+        register = Path(root) / MIAMI_REGISTER_PATH
+        if register.is_file():
+            for p in read(MIAMI_REGISTER_PATH, root)["players"]:
+                if p.get("bbr_id") and p.get("date_of_birth"):
+                    self.birth.setdefault(p["bbr_id"], p["date_of_birth"])
         rules = read(CAP_RULES_PATH, root)
         self.maximums = rules["maximum_salary"]
         self.minimums = rules["minimum_salary"]

@@ -55,7 +55,7 @@ def fixture_context(root):
                     team_name="Home Club", team_code="HOM", cohort="end_2002_03_roster")
                for pid, name in (("tracked01", "Tracked Guard"), ("other01", "Other Guard"),
                                  ("opponent01", "Opponent"))]
-    return SimpleNamespace(root=root, on="2003-11-04", registry=dict(players=players), periods=[PERIOD],
+    return SimpleNamespace(root=root, on="2003-11-04", honors={}, registry=dict(players=players), periods=[PERIOD],
                            colors=dict(placeholder=dict(primary="#111111", secondary="#eeeeee"), eras=[]),
                            photos={}, baseline={}, prior={}, rights={}, signed={}, contracts={}, legend={}, miami_cards={},
                            template=(ROOT / TEMPLATE).read_text(),

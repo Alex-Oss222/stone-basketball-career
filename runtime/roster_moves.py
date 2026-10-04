@@ -278,10 +278,11 @@ def depth_views(root=ROOT, today=None):
     for pos, names in depth["positions"].items():
         cells = []
         for name in names:
-            tag = " (starter)" if name in starters else " (injured list)" if name in listed else ""
+            tag = (" (starter, on the injured list)" if name in starters and name in listed else " (starter)" if name in starters
+                   else " (injured list)" if name in listed else "")
             cells.append(name + tag)
         rows.append(f"| {pos} | " + " | ".join(cells + [""] * (width - len(cells))) + " |")
-    rot = "\n".join(f"| {p['player_id']} | {p['position']} | {p['minutes']:g} | {'yes' if p['player_id'] in starters else ''} |"
+    rot = "\n".join(f"| {p['player_id']} | {p['position']} | {p['minutes']:g} | {('yes, on the injured list' if p['player_id'] in listed else 'yes') if p['player_id'] in starters else ''} |"
                      for p in rotation["players"])
     others = [n for n, p in register.items() if _playable(p.get("status")) and n not in minutes]
     unsigned = [n for n, p in register.items() if "draft_rights" in (p.get("status") or "")]

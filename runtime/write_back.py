@@ -805,6 +805,9 @@ def run(root=ROOT, season=SEASON, write=False):
         report["written"].append(f"{info['note'].relative_to(root)}: {MIAMI} {result_label(result, miami_side(result))} ({info['kind']})")
     if write:
         report["registered"] = extend_registry(root, season)
+        if report["registered"]:
+            from scripts.format_league_reports import format_all
+            format_all(root)                     # newly registered players get their rows on every league page
         report["notes"] = sync_note_statuses(root, season)
         from .miami_cards import refresh as refresh_miami_cards
         report["miami_cards"] = refresh_miami_cards(root)

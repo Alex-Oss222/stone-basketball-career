@@ -133,9 +133,11 @@ def format_page(text, page, registry, as_of, asset, league_dir=None):
     return text
 
 
-def main():
+def format_all(root=ROOT):
+    """Reformat every league period page; a registry player without a row gets an empty one. Returns the pages written."""
+    root = Path(root)
     outputs = {}
-    for player in (ROOT / "career").iterdir():
+    for player in (root / "career").iterdir():
         league = player / "Stats_and_Awards/League"
         if not (league / "player_registry.json").is_file():
             continue
@@ -148,6 +150,11 @@ def main():
     for page, text in outputs.items():
         page.parent.mkdir(parents=True, exist_ok=True)
         page.write_text(text, encoding="utf-8")
+    return outputs
+
+
+def main():
+    outputs = format_all(ROOT)
     print(f"Formatted {len(outputs)-1} league period pages. No results, roster decisions or award winners changed.")
 
 

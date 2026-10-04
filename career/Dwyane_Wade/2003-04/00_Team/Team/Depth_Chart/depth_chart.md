@@ -7,7 +7,7 @@
 |---|---|---|---|---|
 | PG | Mike James (starter) | Anthony Carter |  |  |
 | SG | Dwyane Wade (starter) | Stephen Jackson | Eddie Jones | Rasual Butler |
-| SF | Caron Butler (starter) | Sean Lampley |  |  |
+| SF | Caron Butler (starter, on the injured list) | Sean Lampley |  |  |
 | PF | Scott Padgett (starter) | LaPhonso Ellis | John Wallace (injured list) | Udonis Haslem (injured list) |
 | C | Brian Grant (starter) | Shawn Kemp | Cherokee Parks |  |
 
@@ -17,7 +17,7 @@
 |---|---|---:|---|
 | Mike James | PG | 34 | yes |
 | Dwyane Wade | SG | 34 | yes |
-| Caron Butler | SF | 34 | yes |
+| Caron Butler | SF | 34 | yes, on the injured list |
 | Scott Padgett | PF | 34 | yes |
 | Brian Grant | C | 34 | yes |
 | Shawn Kemp | C | 20 |  |
