@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-05-milwaukee-bucks-at-philadelphia-76ers",
+ "game_date": "2004-01-05",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Philadelphia 76ers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ }
+}

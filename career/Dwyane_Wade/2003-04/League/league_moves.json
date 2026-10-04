@@ -765,6 +765,139 @@
    "bbr_id": "roseja01",
    "from": "New York Knicks",
    "to": "Boston Celtics"
+  },
+  {
+   "id": "2003-04-market-2004-01-05-ten_day-penigde01",
+   "date": "2004-01-05",
+   "kind": "ten_day",
+   "player": "Desmond Penigar",
+   "bbr_id": "penigde01",
+   "from": null,
+   "to": "Golden State Warriors",
+   "role": {
+    "player_id": "Desmond Penigar",
+    "bbr_id": "penigde01",
+    "position": "PF",
+    "games": 10,
+    "minutes": 89
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.92 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-05-ten_day-sampsja01",
+   "date": "2004-01-05",
+   "kind": "ten_day",
+   "player": "Jamal Sampson",
+   "bbr_id": "sampsja01",
+   "from": null,
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Jamal Sampson",
+    "bbr_id": "sampsja01",
+    "position": "C",
+    "games": 10,
+    "minutes": 130
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.91 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-05-waive-jacksma01",
+   "date": "2004-01-05",
+   "kind": "waive",
+   "player": "Mark Jackson",
+   "bbr_id": "jacksma01",
+   "from": "Houston Rockets",
+   "to": null,
+   "role": {
+    "player_id": "Mark Jackson",
+    "bbr_id": "jacksma01",
+    "position": "PG",
+    "games": 42,
+    "minutes": 577
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-01-07"
+  },
+  {
+   "id": "2003-04-market-2004-01-05-ten_day-livinra01",
+   "date": "2004-01-05",
+   "kind": "ten_day",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": null,
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 4,
+    "minutes": 48
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.92 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-05-ten_day-dickeka01",
+   "date": "2004-01-05",
+   "kind": "ten_day",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": null,
+   "to": "Toronto Raptors",
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.86 x fit"
+  },
+  {
+   "deal": "2003-04-league-trade-2004-01-05-horryro01-mercero01-vanexni01",
+   "date": "2004-01-05",
+   "kind": "trade",
+   "player": "Nick Van Exel",
+   "bbr_id": "vanexni01",
+   "from": "Golden State Warriors",
+   "to": "San Antonio Spurs"
+  },
+  {
+   "deal": "2003-04-league-trade-2004-01-05-horryro01-mercero01-vanexni01",
+   "date": "2004-01-05",
+   "kind": "trade",
+   "player": "Robert Horry",
+   "bbr_id": "horryro01",
+   "from": "San Antonio Spurs",
+   "to": "Golden State Warriors"
+  },
+  {
+   "deal": "2003-04-league-trade-2004-01-05-horryro01-mercero01-vanexni01",
+   "date": "2004-01-05",
+   "kind": "trade",
+   "player": "Ron Mercer",
+   "bbr_id": "mercero01",
+   "from": "San Antonio Spurs",
+   "to": "Golden State Warriors"
   }
  ]
 }

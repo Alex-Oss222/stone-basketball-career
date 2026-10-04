@@ -1,0 +1,39 @@
+{
+ "id": "2003-04-league-trade-2004-01-05-horryro01-mercero01-vanexni01",
+ "date": "2004-01-05",
+ "clubs": [
+  "Golden State Warriors",
+  "San Antonio Spurs"
+ ],
+ "a": {
+  "club": "Golden State Warriors",
+  "sends": [
+   "Nick Van Exel"
+  ],
+  "bbr_ids": [
+   "vanexni01"
+  ],
+  "salary": 11956625
+ },
+ "b": {
+  "club": "San Antonio Spurs",
+  "sends": [
+   "Robert Horry",
+   "Ron Mercer"
+  ],
+  "bbr_ids": [
+   "horryro01",
+   "mercero01"
+  ],
+  "salary": 11475000
+ },
+ "gain": {
+  "Golden State Warriors": 0.21,
+  "San Antonio Spurs": 0.093
+ },
+ "accept": {
+  "Golden State Warriors": 0.95,
+  "San Antonio Spurs": 0.695
+ },
+ "both": 0.66025
+}

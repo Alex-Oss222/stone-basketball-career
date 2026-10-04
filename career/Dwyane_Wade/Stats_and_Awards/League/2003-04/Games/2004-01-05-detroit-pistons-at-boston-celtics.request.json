@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-05-detroit-pistons-at-boston-celtics",
+ "game_date": "2004-01-05",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Detroit Pistons",
+  "rotation": "real"
+ }
+}
