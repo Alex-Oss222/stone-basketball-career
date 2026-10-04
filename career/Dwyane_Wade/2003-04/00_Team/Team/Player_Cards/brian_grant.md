@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C / PF  
 **Age at assessment:** 31 · **Height:** 6-9 · **Weight:** 254 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2003-12-13 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2003-12-14 
 
 **Contract/control:** Existing contract runs through 2006-07, with an early-termination option after 2005-06; 2003-04 salary $12,130,648. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at C, staff plan 34 minutes (staff rotation dated 2003-12-05, [record](../Depth_Chart/Reviews/2003-12-05/rotation.json)).
+**Role:** Starter at C, staff plan 34 minutes (staff rotation dated 2003-12-05, [record](../Depth_Chart/Reviews/2003-12-05/rotation.json)). On the injured list since 2003-12-14 (injury: 7 more game(s) out on the engine's draw).
 
 **Offense:** In 2002-03: 10.3 points and 1.3 assists per game; 55.2% true shooting at 16.0% usage.
 
@@ -75,7 +75,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 22 closed Miami game(s) through 2003-12-13.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 22 closed Miami game(s) through 2003-12-14.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |

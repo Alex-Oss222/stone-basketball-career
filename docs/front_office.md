@@ -118,6 +118,8 @@ Proposals to Miami from real clubs and injuries in the value are not built; the 
 
 Once the camp decision is written, `python scripts/build_season_games.py --write <date>` writes Miami's game notes and requests from the latest staff rotation dated on or before each game (injured players out, the depth chart's next man up, Wade's grade while in force). `python scripts/build_league_slate.py --write <date>` writes the request for every other club's game; both are described in `runtime/README.md` (Game builders). A written request is never changed. The Miami builder stops before a game whose due staff review remains unresolved.
 
+**Filling for injuries (from December 14, 2003).** When players are out, the game's plan scales every healthy player's staff minutes by one factor to fill 240, with nobody planned above 40 (`season_games.STAFF_MINUTES_CAP`, judgement); what a capped player cannot take is spread over the others. Before that date the plain proportional scale stays on the committed requests; it planned up to 48 minutes when three starters were out (Wade's 48 on December 12).
+
 ## Fortnightly staff rotation reviews
 
 `python scripts/review_rotation.py --write <date>` processes reviews every fourteen days after the camp rotation's `as_of` date, through the final regular-season game. For an October 24 camp decision, the first reviews are November 7 and November 21. The command cannot pass the career clock, advance it, or play games. `--check <date>` reports due work and validates existing reviews without writing.

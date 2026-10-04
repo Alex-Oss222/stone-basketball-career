@@ -2,9 +2,9 @@
 
 # Contract | Lee Nailon
 
-Known through: 2003-12-13. [Open interactive contract](nailole01.html#contract) · [Contract history](nailole01.html#contract-history)
+Known through: 2003-12-14. [Open interactive contract](nailole01.html#contract) · [Contract history](nailole01.html#contract-history)
 
-Lee Nailon: under contract. Evidence cutoff: 2003-12-13.
+Lee Nailon: under contract. Evidence cutoff: 2003-12-14.
 
 ## Current contract
 

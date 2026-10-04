@@ -121,6 +121,16 @@ class RotationUnitTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             season_games.rotation_for(self.rotation(), {f"P{i}": 1 for i in range(11)}, {})
 
+    def test_capped_fill_from_december_14_keeps_every_plan_at_or_under_40(self):
+        bench = [{"name": f"Sub {k}", "positions": ["F"]} for k in "ABC"]
+        injured = {"P0": 5, "P1": 5, "P2": 5}                        # three starters out
+        out = season_games.rotation_for(self.rotation(), injured, {}, bench, capped=True)
+        self.assertAlmostEqual(sum(p["minutes"] for p in out), 240)
+        self.assertTrue(all(p["minutes"] <= season_games.STAFF_MINUTES_CAP for p in out))
+        ranked = [p["minutes"] for p in out if not p["player_id"].startswith("Sub")]
+        self.assertEqual(ranked, sorted(ranked, reverse=True))      # the staff's order survives the fill
+        self.assertEqual(season_games.CAPPED_FILL_FROM, "2003-12-14")
+
     def test_week_folders_and_slate_paths(self):
         self.assertEqual(season_games.week_dir("2003-10-28").name, "Week_4")
         self.assertEqual(season_games.week_dir("2003-10-28").parent.name, "10_October")

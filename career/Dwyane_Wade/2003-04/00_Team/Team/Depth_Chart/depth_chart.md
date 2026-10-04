@@ -1,15 +1,15 @@
 # Miami Heat working depth chart
 
-**As of:** 2003-12-13 · **Staff decision in force:** 2003-12-05 (fortnightly review)  
+**As of:** 2003-12-14 · **Staff decision in force:** 2003-12-05 (fortnightly review)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
 | PG | Mike James (starter) | Anthony Carter |  |  |
 | SG | Dwyane Wade (starter) | Eddie Jones | Stephen Jackson | Rasual Butler |
-| SF | Caron Butler (starter, on the injured list) | Sean Lampley (injured list) |  |  |
+| SF | Caron Butler (starter, on the injured list) | Sean Lampley |  |  |
 | PF | Scott Padgett (starter, on the injured list) | LaPhonso Ellis | John Wallace | Udonis Haslem |
-| C | Brian Grant (starter) | Shawn Kemp | Cherokee Parks |  |
+| C | Brian Grant (starter, on the injured list) | Shawn Kemp | Cherokee Parks |  |
 
 ## Rotation in force
 
@@ -19,7 +19,7 @@
 | Dwyane Wade | SG | 34 | yes |
 | Caron Butler | SF | 34 | yes, on the injured list |
 | Scott Padgett | PF | 34 | yes, on the injured list |
-| Brian Grant | C | 34 | yes |
+| Brian Grant | C | 34 | yes, on the injured list |
 | Shawn Kemp | C | 20 |  |
 | Eddie Jones | SG | 16 |  |
 | Stephen Jackson | SG | 12 |  |
@@ -29,9 +29,9 @@
 
 Outside the rotation (dressing as the twelfth man or on the injured list): Anthony Carter, Sean Lampley, Udonis Haslem, John Wallace.
 
-## Injured list on 2003-12-13
+## Injured list on 2003-12-14
 
-Caron Butler, Scott Padgett, Sean Lampley ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
+Brian Grant, Caron Butler, Scott Padgett ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 
 ## Not on the active register
 

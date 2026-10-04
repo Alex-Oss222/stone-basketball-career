@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2003-12-13. [Search the contract directory](index.html)
+Known through 2003-12-14. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-13**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-14**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -441,7 +441,7 @@ Card date: **2003-12-13**. 503 registry players, one Markdown card and one inter
 | [Amal McCaskill](mccasam01.md) | Philadelphia 76ers | None | silhouette | [open](mccasam01.html) |
 | [Andreas Glyniadakis](glynian01.md) | Detroit Pistons (draft rights) | 22 | sourced | [open](glynian01.html) |
 | [Andrew DeClercq](declean01.md) | Orlando Magic | 30 | silhouette | [open](declean01.html) |
-| [Anthony Mason](masonan01.md) | Milwaukee Bucks | 36 | silhouette | [open](masonan01.html) |
+| [Anthony Mason](masonan01.md) | Milwaukee Bucks | 37 | silhouette | [open](masonan01.html) |
 | [Antonio Davis](davisan01.md) | Toronto Raptors | 35 | sourced | [open](davisan01.html) |
 | [Arvydas Sabonis](sabonar01.md) | Portland Trail Blazers | 38 | sourced | [open](sabonar01.html) |
 | [Ben Handlogten](handlbe01.md) | Utah Jazz | None | silhouette | [open](handlbe01.html) |
@@ -519,7 +519,7 @@ Card date: **2003-12-13**. 503 registry players, one Markdown card and one inter
 | [Nene](hilarne01.md) | Denver Nuggets | 21 | sourced | [open](hilarne01.html) |
 | [Olden Polynice](polynol01.md) | Los Angeles Clippers | None | silhouette | [open](polynol01.html) |
 | [Oliver Miller](milleol01.md) | Minnesota Timberwolves | None | silhouette | [open](milleol01.html) |
-| [Pat Burke](burkepa01.md) | Orlando Magic | 29 | sourced | [open](burkepa01.html) |
+| [Pat Burke](burkepa01.md) | Orlando Magic | 30 | sourced | [open](burkepa01.html) |
 | [Paul Grant](grantpa01.md) | Utah Jazz | None | silhouette | [open](grantpa01.html) |
 | [Predrag Drobnjak](drobnpr01.md) | Los Angeles Clippers | 28 | silhouette | [open](drobnpr01.html) |
 | [Primož Brezec](brezepr01.md) | Indiana Pacers | None | silhouette | [open](brezepr01.html) |

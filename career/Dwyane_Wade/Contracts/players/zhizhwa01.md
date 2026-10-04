@@ -2,9 +2,9 @@
 
 # Contract | Wang Zhizhi
 
-Known through: 2003-12-13. [Open interactive contract](zhizhwa01.html#contract) · [Contract history](zhizhwa01.html#contract-history)
+Known through: 2003-12-14. [Open interactive contract](zhizhwa01.html#contract) · [Contract history](zhizhwa01.html#contract-history)
 
-Wang Zhizhi: expired or unresolved. Evidence cutoff: 2003-12-13.
+Wang Zhizhi: expired or unresolved. Evidence cutoff: 2003-12-14.
 
 ## Current contract
 

@@ -43,6 +43,8 @@ PLAYER_DIR = Path("career/Dwyane_Wade")
 MONTH_FOLDERS = {10: "10_October", 11: "11_November", 12: "12_December", 1: "01_January", 2: "02_February",
                  3: "03_March", 4: "04_April"}
 GAME_DAY_ACTIVES = 12
+STAFF_MINUTES_CAP = 40.0         # judgement: no staff game plan above 40 minutes; what capped players cannot take is spread
+CAPPED_FILL_FROM = "2003-12-14"  # games from this date; earlier committed requests keep the plain proportional scale
 SIMULATION_SOURCE = "Railway engine (runtime/private_service.py)"
 SLATE_SAMPLE_EVERY = 25          # league slate: every 25th request (plus the first and last) gets the full engine check
 
@@ -209,7 +211,7 @@ def depth_order(depth, roster):
     return out
 
 
-def rotation_for(rotation, injured, grades, replacements=(), unavailable=()):
+def rotation_for(rotation, injured, grades, replacements=(), unavailable=(), capped=False):
     """Miami's players and actual starters from the staff rotation.
 
     Injured players (`injured`: player -> games still out) leave the list; for each, the next man on
@@ -283,11 +285,28 @@ def rotation_for(rotation, injured, grades, replacements=(), unavailable=()):
         starters.add(p["player_id"])
     if len(starters) != 5 or any(name not in by_id for name in assignments.values()):
         raise ValueError("staff rotation must name exactly five valid starters")
-    total = sum(p["minutes"] for p in kept)
-    scale = 240 / total
-    for p in kept:
-        p["minutes"] = round(p["minutes"] * scale, 2)
-    kept[0]["minutes"] = round(kept[0]["minutes"] + 240 - sum(p["minutes"] for p in kept), 2)
+    if capped:
+        # Scale every player's planned minutes by one factor, none above STAFF_MINUTES_CAP, to fill 240 (water-filling).
+        if STAFF_MINUTES_CAP * len(kept) < 240:
+            raise ValueError(f"{len(kept)} healthy players cannot cover 240 minutes at {STAFF_MINUTES_CAP:g} each")
+        base = {p["player_id"]: p["minutes"] for p in kept}
+        lo, hi = 0.0, 240.0 / min(base.values())
+        for _ in range(100):
+            mid = (lo + hi) / 2
+            if sum(min(STAFF_MINUTES_CAP, b * mid) for b in base.values()) < 240:
+                lo = mid
+            else:
+                hi = mid
+        for p in kept:
+            p["minutes"] = round(min(STAFF_MINUTES_CAP, base[p["player_id"]] * hi), 2)
+        room = [p for p in kept if p["minutes"] < STAFF_MINUTES_CAP]
+        room[0]["minutes"] = round(room[0]["minutes"] + 240 - sum(p["minutes"] for p in kept), 2)
+    else:
+        total = sum(p["minutes"] for p in kept)
+        scale = 240 / total
+        for p in kept:
+            p["minutes"] = round(p["minutes"] * scale, 2)
+        kept[0]["minutes"] = round(kept[0]["minutes"] + 240 - sum(p["minutes"] for p in kept), 2)
     for p in kept:
         if p["minutes"] > 48:
             raise ValueError(f"{p['player_id']} would play {p['minutes']} minutes; too few healthy players")
@@ -331,7 +350,8 @@ def miami_side(game_date, root=ROOT, season=SEASON, with_lists=False):
     if lists:
         unavailable |= roster_moves.held_on_list(data, game_date, dates)   # a five-game stay keeps him out
     order = depth_order(depth, {"players": active})
-    kept = rotation_for(rotation, injured, grades_in_force(game_date, root, season), order, unavailable)
+    kept = rotation_for(rotation, injured, grades_in_force(game_date, root, season), order, unavailable,
+                        capped=game_date >= CAPPED_FILL_FROM)
     if not lists:
         return (kept, injured, None) if with_lists else (kept, injured)
     # Every playable player in depth order, then anyone the depth chart does not list yet.
