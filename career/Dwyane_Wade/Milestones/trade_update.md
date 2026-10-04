@@ -2,7 +2,7 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2003-11-22 · Miami Heat · inactive
+Career date: 2003-11-25 · Miami Heat · inactive
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 
@@ -99,4 +99,5 @@ An actual transaction update with its source and applicable player rights.
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_1.md)
+- [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

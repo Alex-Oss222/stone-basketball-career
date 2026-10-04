@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-25-new-jersey-nets-at-seattle-supersonics",
+ "game_date": "2003-11-25",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ }
+}

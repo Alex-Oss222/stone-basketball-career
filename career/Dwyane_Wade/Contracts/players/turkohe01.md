@@ -2,9 +2,9 @@
 
 # Contract | Hedo Turkoglu
 
-Known through: 2003-11-22. [Open interactive contract](turkohe01.html#contract) · [Contract history](turkohe01.html#contract-history)
+Known through: 2003-11-25. [Open interactive contract](turkohe01.html#contract) · [Contract history](turkohe01.html#contract-history)
 
-Hedo Turkoglu: under rookie contract. Evidence cutoff: 2003-11-22.
+Hedo Turkoglu: under rookie contract. Evidence cutoff: 2003-11-25.
 
 ## Current contract
 

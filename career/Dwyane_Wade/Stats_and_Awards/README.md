@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2003-11-22](../assets/stat_reports/personal_2003-11-22.svg)
+![Player personal information and earned career awards through 2003-11-25](../assets/stat_reports/personal_2003-11-25.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-11-07 |
 
-Identity as of 2003-11-22; status snapshot dated 2003-11-07. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-11-25; status snapshot dated 2003-11-07. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Complete professional identity](../Professional_Identity.md)
 
@@ -39,7 +39,7 @@ No earned professional awards recorded by this page's identity cutoff.
 
 ## Statistics
 
-Career cutoff: **2003-11-22**. Club competitions and national-team events have separate records.
+Career cutoff: **2003-11-25**. Club competitions and national-team events have separate records.
 
 ### NBA regular season
 
@@ -49,8 +49,8 @@ Career cutoff: **2003-11-22**. Club competitions and national-team events have s
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04](2003-04/README.md) | 19 | Miami Heat | NBA | SG / PG | 14 | 9 | 30.7 | 5.0 | 9.8 | .511 | 0.6 | 2.1 | .267 | 4.4 | 7.6 | .579 | .540 | 4.1 | 4.3 | .950 | 1.4 | 3.0 | 4.4 | 3.8 | 1.2 | 0.7 | 1.1 | 2.4 | 14.6 | .627 | — |
-| Career total | 19 | Miami Heat | NBA | SG / PG | 14 | 9 | 30.7 | 5.0 | 9.8 | .511 | 0.6 | 2.1 | .267 | 4.4 | 7.6 | .579 | .540 | 4.1 | 4.3 | .950 | 1.4 | 3.0 | 4.4 | 3.8 | 1.2 | 0.7 | 1.1 | 2.4 | 14.6 | .627 | — |
+| [2003-04](2003-04/README.md) | 19 | Miami Heat | NBA | SG / PG | 15 | 10 | 31.4 | 5.3 | 10.1 | .520 | 0.5 | 2.1 | .258 | 4.7 | 8.1 | .587 | .546 | 3.9 | 4.1 | .935 | 1.4 | 3.3 | 4.7 | 3.9 | 1.3 | 0.7 | 1.1 | 2.3 | 14.9 | .625 | — |
+| Career total | 19 | Miami Heat | NBA | SG / PG | 15 | 10 | 31.4 | 5.3 | 10.1 | .520 | 0.5 | 2.1 | .258 | 4.7 | 8.1 | .587 | .546 | 3.9 | 4.1 | .935 | 1.4 | 3.3 | 4.7 | 3.9 | 1.3 | 0.7 | 1.1 | 2.3 | 14.9 | .625 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 

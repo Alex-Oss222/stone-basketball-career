@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-23-washington-wizards-at-seattle-supersonics",
+ "game_date": "2003-11-23",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ }
+}

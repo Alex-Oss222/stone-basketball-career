@@ -2,9 +2,9 @@
 
 # Contract | Casey Jacobsen
 
-Known through: 2003-11-22. [Open interactive contract](jacobca01.html#contract) · [Contract history](jacobca01.html#contract-history)
+Known through: 2003-11-25. [Open interactive contract](jacobca01.html#contract) · [Contract history](jacobca01.html#contract-history)
 
-Casey Jacobsen: under rookie contract. Evidence cutoff: 2003-11-22.
+Casey Jacobsen: under rookie contract. Evidence cutoff: 2003-11-25.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Jason Kidd
 
-Known through: 2003-11-22. [Open interactive contract](kiddja01.html#contract) · [Contract history](kiddja01.html#contract-history)
+Known through: 2003-11-25. [Open interactive contract](kiddja01.html#contract) · [Contract history](kiddja01.html#contract-history)
 
-Jason Kidd: free agent expiring. Evidence cutoff: 2003-11-22.
+Jason Kidd: free agent expiring. Evidence cutoff: 2003-11-25.
 
 ## Current contract
 
