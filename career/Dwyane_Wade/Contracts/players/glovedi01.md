@@ -2,9 +2,9 @@
 
 # Contract | Dion Glover
 
-Known through: 2003-12-22. [Open interactive contract](glovedi01.html#contract) · [Contract history](glovedi01.html#contract-history)
+Known through: 2003-12-23. [Open interactive contract](glovedi01.html#contract) · [Contract history](glovedi01.html#contract-history)
 
-Dion Glover: released. Evidence cutoff: 2003-12-22.
+Dion Glover: released. Evidence cutoff: 2003-12-23.
 
 ## Current contract
 

@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2003-12-22 · Miami Heat · active
+Career date: 2003-12-23 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-34 closed game records in 2003-04 through 2003-12-22. Competitions remain separate.
+35 closed game records in 2003-04 through 2003-12-23. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
-| regular | 27 | 34.9 | 16.7 | 4.9 | 4.9 | 1.1 | Complete |
+| regular | 28 | 34.5 | 16.8 | 4.8 | 4.8 | 1.1 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A |
-| regular | 155 | 308 | 0.503 | 23 | 67 | 0.343 |
+| regular | 161 | 314 | 0.513 | 23 | 67 | 0.343 |
 
 ## Closed source games
 
@@ -64,6 +64,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2003-12-17 | regular | Philadelphia 76ers | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_2.md) |
 | 2003-12-19 | regular | Memphis Grizzlies | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_3.md) |
 | 2003-12-21 | regular | Golden State Warriors | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.md) |
+| 2003-12-23 | regular | Washington Wizards | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.md) |
 
 ## Evidence available for decisions
 
@@ -145,4 +146,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_3.md)
 - [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.md)
+- [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

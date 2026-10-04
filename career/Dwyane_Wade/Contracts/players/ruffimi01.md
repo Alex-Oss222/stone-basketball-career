@@ -2,9 +2,9 @@
 
 # Contract | Michael Ruffin
 
-Known through: 2003-12-22. [Open interactive contract](ruffimi01.html#contract) · [Contract history](ruffimi01.html#contract-history)
+Known through: 2003-12-23. [Open interactive contract](ruffimi01.html#contract) · [Contract history](ruffimi01.html#contract-history)
 
-Michael Ruffin: under contract. Evidence cutoff: 2003-12-22.
+Michael Ruffin: under contract. Evidence cutoff: 2003-12-23.
 
 ## Current contract
 

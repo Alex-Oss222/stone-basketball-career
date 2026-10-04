@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-23-minnesota-timberwolves-at-new-york-knicks",
+ "game_date": "2003-12-23",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New York Knicks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Minnesota Timberwolves",
+  "rotation": "real"
+ }
+}

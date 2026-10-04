@@ -2,9 +2,9 @@
 
 # Contract | Reggie Miller
 
-Known through: 2003-12-22. [Open interactive contract](millere01.html#contract) · [Contract history](millere01.html#contract-history)
+Known through: 2003-12-23. [Open interactive contract](millere01.html#contract) · [Contract history](millere01.html#contract-history)
 
-Reggie Miller: under contract. Evidence cutoff: 2003-12-22.
+Reggie Miller: under contract. Evidence cutoff: 2003-12-23.
 
 ## Current contract
 

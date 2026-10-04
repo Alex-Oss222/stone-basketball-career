@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2003-12-22](../assets/stat_reports/personal_2003-12-22.svg)
+![Player personal information and earned career awards through 2003-12-23](../assets/stat_reports/personal_2003-12-23.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2003-12-22; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-12-23; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Complete professional identity](../Professional_Identity.md)
 
@@ -42,7 +42,7 @@ Identity as of 2003-12-22; status snapshot dated 2003-12-01. User-established al
 
 ## Statistics
 
-Career cutoff: **2003-12-22**. Club competitions and national-team events have separate records.
+Career cutoff: **2003-12-23**. Club competitions and national-team events have separate records.
 
 ### NBA regular season
 
@@ -52,12 +52,12 @@ Career cutoff: **2003-12-22**. Club competitions and national-team events have s
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04](2003-04/README.md) | 19 | Miami Heat | NBA | SG / PG | 27 | 22 | 34.9 | 5.7 | 11.4 | .503 | 0.9 | 2.5 | .343 | 4.9 | 8.9 | .548 | .541 | 4.4 | 4.7 | .922 | 1.3 | 3.6 | 4.9 | 4.9 | 1.6 | 0.7 | 1.1 | 2.8 | 16.7 | .619 | [East ROM](League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week) |
-| Career total | 19 | Miami Heat | NBA | SG / PG | 27 | 22 | 34.9 | 5.7 | 11.4 | .503 | 0.9 | 2.5 | .343 | 4.9 | 8.9 | .548 | .541 | 4.4 | 4.7 | .922 | 1.3 | 3.6 | 4.9 | 4.9 | 1.6 | 0.7 | 1.1 | 2.8 | 16.7 | .619 | [East ROM](League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week) |
+| [2003-04](2003-04/README.md) | 19 | Miami Heat | NBA | SG / PG | 28 | 23 | 34.5 | 5.8 | 11.2 | .513 | 0.8 | 2.4 | .343 | 4.9 | 8.8 | .559 | .549 | 4.4 | 4.8 | .919 | 1.3 | 3.5 | 4.8 | 4.8 | 1.6 | 0.7 | 1.1 | 2.9 | 16.8 | .628 | [East ROM](League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week) |
+| Career total | 19 | Miami Heat | NBA | SG / PG | 28 | 23 | 34.5 | 5.8 | 11.2 | .513 | 0.8 | 2.4 | .343 | 4.9 | 8.8 | .559 | .549 | 4.4 | 4.8 | .919 | 1.3 | 3.5 | 4.8 | 4.8 | 1.6 | 0.7 | 1.1 | 2.9 | 16.8 | .628 | [East ROM](League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2003-12-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2003-12-23, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### NBA playoffs
 
@@ -72,7 +72,7 @@ Awards are confirmed through 2003-12-22, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2003-12-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2003-12-23, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Browse
 
