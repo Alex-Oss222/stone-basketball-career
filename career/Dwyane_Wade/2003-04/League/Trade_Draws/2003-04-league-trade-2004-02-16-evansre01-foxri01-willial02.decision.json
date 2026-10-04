@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-04-league-trade-2004-02-16-evansre01-foxri01-willial02",
+ "date": "2004-02-16",
+ "question": "Do Seattle SuperSonics and Toronto Raptors trade Rick Fox and Reggie Evans for Alvin Williams?",
+ "decider": "Seattle SuperSonics and Toronto Raptors front offices (engine draw)",
+ "options": {
+  "accept": 0.373176,
+  "decline": 0.626824
+ },
+ "basis": "gains on own objectives {'Seattle SuperSonics': 0.071, 'Toronto Raptors': 0.086}; acceptance {'Seattle SuperSonics': 0.568, 'Toronto Raptors': 0.657}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

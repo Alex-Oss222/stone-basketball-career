@@ -1,0 +1,12 @@
+{
+ "date": "2004-02-16",
+ "decider": "Seattle SuperSonics and Toronto Raptors front offices (engine draw)",
+ "event_id": "2003-04-league-trade-2004-02-16-evansre01-foxri01-willial02",
+ "kind": "decision",
+ "options": {
+  "accept": 0.373176,
+  "decline": 0.626824
+ },
+ "outcome": "decline",
+ "question": "Do Seattle SuperSonics and Toronto Raptors trade Rick Fox and Reggie Evans for Alvin Williams?"
+}

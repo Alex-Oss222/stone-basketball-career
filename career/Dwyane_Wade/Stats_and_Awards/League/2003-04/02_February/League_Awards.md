@@ -42,7 +42,7 @@ No award closed. When settled, record the exact period, announcement date and li
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/League_Awards.md) | February 1-7, 2004 | 2 | Decided |
 | [Week 2](Week_2/League_Awards.md) | February 8-14, 2004 | 2 | Decided |
-| [Week 3](Week_3/League_Awards.md) | February 15-21, 2004 | 0 | No award filed |
+| [Week 3](Week_3/League_Awards.md) | February 15-21, 2004 | 2 | Decided |
 | [Week 4](Week_4/League_Awards.md) | February 22-29, 2004 | 0 | No award filed |
 
 [Awards procedure and research](../../README.md) · [Player evidence for this calendar period](League_Stats.md)

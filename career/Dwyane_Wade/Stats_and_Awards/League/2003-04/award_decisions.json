@@ -2188,6 +2188,110 @@
     }
    ],
    "winner": "Ray Allen"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-02-09-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-02-09",
+   "period_end": "2004-02-15",
+   "announced_on": "2004-02-16",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/02_February/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Richard Jefferson",
+     "team": "New Jersey Nets",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 21.0,
+     "reb": 5.0,
+     "ast": 5.5,
+     "game_score": 18.25,
+     "score": 42.5,
+     "rank": 1
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 2,
+     "wins": 1,
+     "losses": 1,
+     "pts": 20.0,
+     "reb": 4.0,
+     "ast": 9.0,
+     "game_score": 17.35,
+     "score": 37.7,
+     "rank": 2
+    },
+    {
+     "player": "Kenyon Martin",
+     "team": "New Jersey Nets",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 20.0,
+     "reb": 5.0,
+     "ast": 3.0,
+     "game_score": 15.5,
+     "score": 37.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Richard Jefferson"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-02-09-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-02-09",
+   "period_end": "2004-02-15",
+   "announced_on": "2004-02-16",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/02_February/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 32.0,
+     "reb": 13.0,
+     "ast": 7.5,
+     "game_score": 31.9,
+     "score": 69.8,
+     "rank": 1
+    },
+    {
+     "player": "Sam Cassell",
+     "team": "Minnesota Timberwolves",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 24.5,
+     "reb": 2.0,
+     "ast": 11.0,
+     "game_score": 23.35,
+     "score": 52.7,
+     "rank": 2
+    },
+    {
+     "player": "Andrei Kirilenko",
+     "team": "Utah Jazz",
+     "games": 2,
+     "wins": 0,
+     "losses": 2,
+     "pts": 23.0,
+     "reb": 11.5,
+     "ast": 5.0,
+     "game_score": 25.55,
+     "score": 51.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
   }
  ]
 }

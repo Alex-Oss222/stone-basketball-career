@@ -2167,6 +2167,33 @@
    },
    "contract": null,
    "note": "10-day contract ended (0.8 minutes a game)"
+  },
+  {
+   "deal": "2003-04-league-trade-2004-02-16-cambyma01-hoibefr01-olowomi01",
+   "date": "2004-02-16",
+   "kind": "trade",
+   "player": "Marcus Camby",
+   "bbr_id": "cambyma01",
+   "from": "Denver Nuggets",
+   "to": "Minnesota Timberwolves"
+  },
+  {
+   "deal": "2003-04-league-trade-2004-02-16-cambyma01-hoibefr01-olowomi01",
+   "date": "2004-02-16",
+   "kind": "trade",
+   "player": "Fred Hoiberg",
+   "bbr_id": "hoibefr01",
+   "from": "Minnesota Timberwolves",
+   "to": "Denver Nuggets"
+  },
+  {
+   "deal": "2003-04-league-trade-2004-02-16-cambyma01-hoibefr01-olowomi01",
+   "date": "2004-02-16",
+   "kind": "trade",
+   "player": "Michael Olowokandi",
+   "bbr_id": "olowomi01",
+   "from": "Minnesota Timberwolves",
+   "to": "Denver Nuggets"
   }
  ]
 }

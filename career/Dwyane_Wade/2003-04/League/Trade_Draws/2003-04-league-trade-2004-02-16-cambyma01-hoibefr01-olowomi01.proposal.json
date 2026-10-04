@@ -1,0 +1,39 @@
+{
+ "id": "2003-04-league-trade-2004-02-16-cambyma01-hoibefr01-olowomi01",
+ "date": "2004-02-16",
+ "clubs": [
+  "Denver Nuggets",
+  "Minnesota Timberwolves"
+ ],
+ "a": {
+  "club": "Denver Nuggets",
+  "sends": [
+   "Marcus Camby"
+  ],
+  "bbr_ids": [
+   "cambyma01"
+  ],
+  "salary": 7250000
+ },
+ "b": {
+  "club": "Minnesota Timberwolves",
+  "sends": [
+   "Fred Hoiberg",
+   "Michael Olowokandi"
+  ],
+  "bbr_ids": [
+   "hoibefr01",
+   "olowomi01"
+  ],
+  "salary": 6338679
+ },
+ "gain": {
+  "Denver Nuggets": 0.073,
+  "Minnesota Timberwolves": 0.11
+ },
+ "accept": {
+  "Denver Nuggets": 0.581,
+  "Minnesota Timberwolves": 0.777
+ },
+ "both": 0.451437
+}

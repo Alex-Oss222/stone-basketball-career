@@ -1,0 +1,12 @@
+{
+ "date": "2004-02-16",
+ "decider": "Denver Nuggets and Minnesota Timberwolves front offices (engine draw)",
+ "event_id": "2003-04-league-trade-2004-02-16-cambyma01-hoibefr01-olowomi01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.451437,
+  "decline": 0.548563
+ },
+ "outcome": "accept",
+ "question": "Do Denver Nuggets and Minnesota Timberwolves trade Marcus Camby for Fred Hoiberg and Michael Olowokandi?"
+}
