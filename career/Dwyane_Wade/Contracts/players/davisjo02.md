@@ -2,9 +2,9 @@
 
 # Contract | Josh Davis
 
-Known through: 2003-12-10. [Open interactive contract](davisjo02.html#contract) · [Contract history](davisjo02.html#contract-history)
+Known through: 2003-12-11. [Open interactive contract](davisjo02.html#contract) · [Contract history](davisjo02.html#contract-history)
 
-Josh Davis: No verified contract record. Evidence cutoff: 2003-12-10.
+Josh Davis: No verified contract record. Evidence cutoff: 2003-12-11.
 
 ## Current contract
 

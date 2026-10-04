@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-11-detroit-pistons-at-cleveland-cavaliers",
+ "game_date": "2003-12-11",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Detroit Pistons",
+  "rotation": "real"
+ }
+}

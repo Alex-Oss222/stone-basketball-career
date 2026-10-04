@@ -2,9 +2,9 @@
 
 # Contract | Antonio Daniels
 
-Known through: 2003-12-10. [Open interactive contract](daniean01.html#contract) · [Contract history](daniean01.html#contract-history)
+Known through: 2003-12-11. [Open interactive contract](daniean01.html#contract) · [Contract history](daniean01.html#contract-history)
 
-Antonio Daniels: under contract. Evidence cutoff: 2003-12-10.
+Antonio Daniels: under contract. Evidence cutoff: 2003-12-11.
 
 ## Current contract
 

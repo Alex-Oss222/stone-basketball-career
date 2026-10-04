@@ -2,9 +2,9 @@
 
 # Contract | Malik Rose
 
-Known through: 2003-12-10. [Open interactive contract](rosema01.html#contract) · [Contract history](rosema01.html#contract-history)
+Known through: 2003-12-11. [Open interactive contract](rosema01.html#contract) · [Contract history](rosema01.html#contract-history)
 
-Malik Rose: under contract. Evidence cutoff: 2003-12-10.
+Malik Rose: under contract. Evidence cutoff: 2003-12-11.
 
 ## Current contract
 

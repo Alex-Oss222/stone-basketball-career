@@ -2,9 +2,9 @@
 
 <!-- team-status:start -->
 
-[roster.json](roster.json) is the machine-readable register (team-control record dated 2003-11-11). Availability below is on 2003-12-10, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
+[roster.json](roster.json) is the machine-readable register (team-control record dated 2003-11-11). Availability below is on 2003-12-11, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
 
-| Player | Pos | Control | Availability on 2003-12-10 | Staff role |
+| Player | Pos | Control | Availability on 2003-12-11 | Staff role |
 | --- | --- | --- | --- | --- |
 | [Malik Allen](../Player_Cards/malik_allen.md) | PF | free agent rights held | Unsigned; Miami holds his free-agent rights | N/A |
 | [Caron Butler](../Player_Cards/caron_butler.md) | SF | under contract | Injured list since 2003-12-09, injured | starter at SF, staff plan 34 minutes |

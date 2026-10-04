@@ -2,9 +2,9 @@
 
 # Contract | Ray Allen
 
-Known through: 2003-12-10. [Open interactive contract](allenra02.html#contract) · [Contract history](allenra02.html#contract-history)
+Known through: 2003-12-11. [Open interactive contract](allenra02.html#contract) · [Contract history](allenra02.html#contract-history)
 
-Ray Allen: under contract. Evidence cutoff: 2003-12-10.
+Ray Allen: under contract. Evidence cutoff: 2003-12-11.
 
 ## Current contract
 

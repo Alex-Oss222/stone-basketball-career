@@ -4,7 +4,7 @@
 
 NBA regular season · December 1-31, 2003
 
-As of December 10, 2003: 4 closed Miami games in this period. Rows cover Miami's closed games only.
+As of December 11, 2003: 4 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
@@ -91,7 +91,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Period | Calendar dates | Closed games | Status |
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/Team_Stats.md) | December 1-7, 2003 | 3 | Complete |
-| [Week 2](Week_2/Team_Stats.md) | December 8-14, 2003 | 1 | Through December 10, 2003 |
+| [Week 2](Week_2/Team_Stats.md) | December 8-14, 2003 | 1 | Through December 11, 2003 |
 | [Week 3](Week_3/Team_Stats.md) | December 15-21, 2003 | 0 | Not started |
 | [Week 4](Week_4/Team_Stats.md) | December 22-31, 2003 | 0 | Not started |
 

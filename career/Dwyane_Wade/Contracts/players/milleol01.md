@@ -2,9 +2,9 @@
 
 # Contract | Oliver Miller
 
-Known through: 2003-12-10. [Open interactive contract](milleol01.html#contract) · [Contract history](milleol01.html#contract-history)
+Known through: 2003-12-11. [Open interactive contract](milleol01.html#contract) · [Contract history](milleol01.html#contract-history)
 
-Oliver Miller: No verified contract record. Evidence cutoff: 2003-12-10.
+Oliver Miller: No verified contract record. Evidence cutoff: 2003-12-11.
 
 ## Current contract
 

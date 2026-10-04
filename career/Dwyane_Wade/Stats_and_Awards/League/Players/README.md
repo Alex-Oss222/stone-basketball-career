@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-10**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-11**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -409,7 +409,7 @@ Card date: **2003-12-10**. 503 registry players, one Markdown card and one inter
 | [Ryan Bowen](bowenry01.md) | Denver Nuggets | None | silhouette | [open](bowenry01.html) |
 | [Ryan Humphrey](humphry01.md) | Memphis Grizzlies | 24 | sourced | [open](humphry01.html) |
 | [Scott Padgett](padgesc01.md) | Miami Heat | 27 | silhouette | [open](padgesc01.html) |
-| [Shareef Abdur-Rahim](abdursh01.md) | Atlanta Hawks | 26 | sourced | [open](abdursh01.html) |
+| [Shareef Abdur-Rahim](abdursh01.md) | Atlanta Hawks | 27 | sourced | [open](abdursh01.html) |
 | [Slava Medvedenko](medvest01.md) | Los Angeles Lakers | 24 | sourced | [open](medvest01.html) |
 | [Stromile Swift](swiftst01.md) | Memphis Grizzlies | 24 | sourced | [open](swiftst01.html) |
 | [Szymon Szewczyk](szewcsz01.md) | Milwaukee Bucks (draft rights) | 20 | sourced | [open](szewcsz01.html) |
