@@ -84,6 +84,7 @@ The data collector reported an ESPN cross-check for 423 players and live Basketb
 Draftees have no NBA record, so they get an estimate from pre-draft statistics instead (`runtime/prospects.py`). Model `rookie-2003.2` adds dated qualitative scouting. On this lineage it takes effect on **November 12, 2003**, after the last closed game at adoption. This is a prospective engine-model correction, not an in-season talent gain or new scouting evidence. Games through November 11 keep the byte-preserved [rookie-2003.1 archive](../library/2003/league/nba_2003_rookie_estimates_2003_1.json).
 
 - [Pre-draft statistics](../library/2003/league/nba_2003_prospect_stats.json): one record per draftee, with only evidence available on draft night. Wade's record is copied from his [career profile](../career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md), section 13. That profile is alternate history (UConn, born 1984), so it is the canonical source and the historical Wade's college numbers are not used.
+- [Original statistical inputs](../library/2003/league/nba_2003_prospect_stats_2003_1.json): byte-preserved source for the archived `rookie-2003.1` estimates. Replays before November 12 read this copy. The archived estimate keeps its original logical `source_file` and source hash; the loader resolves that hash against this archive, so earlier frozen packets remain identical.
 - [Generated estimates](../library/2003/league/nba_2003_rookie_estimates.json): rebuilt with `python scripts/import_prospect_stats.py`; `--update-card` refreshes the estimate block on Wade's card. Validation fails if the file is stale.
 - [Dated scouting](../library/2003/league/nba_2003_prospect_scouting.json) and [schema](../foundation/nba_prospect_scouting.schema.json): each trait has a qualitative classification, evidence date and exact profile sections. The profile is still canonical. Runtime checks reject unknown traits, unsupported classifications, evidence after June 26, unknown prospect IDs, changed profile hashes and missing sections. Review the traits before updating a source hash.
 
@@ -125,7 +126,7 @@ The rebound prior pools actual 2002-03 ORB/DRB totals for players with at least 
 
 Contact finishing, secondary creation, set shooting, limited off-dribble threes, guard rebounding, screen navigation, help discipline and weak-side event defense remain explicitly sourced evidence. They do not add another numerical bonus to box-score rates. Catch versus pull-up three accuracy and possession-level defensive assignments require new engine events before they can be estimated separately. Camp defense now stays at the profile baseline of 45 until assignment-level evidence exists; preseason steals plus blocks no longer move it. The already recorded October 24 grade and camp decisions remain unchanged.
 
-For this Wade, the correction moves FTA/FGA from .309 to .352 and ORB%/DRB% from .052/.130 to .044/.138. It leaves 2P% .500, 3P% .359, FT% .910, AST% .237 and base TOV/FGA .112 unchanged. These are expected rates before the same previously journaled season development swing, not targets for his simulated box scores.
+With Wade's revised college totals below, scouting moves FTA/FGA from the generic .308 to .352 and ORB%/DRB% from .052/.130 to .044/.138. The statistical translation supplies 2P% .539, 3P% .392, FT% .926, usage .208, AST% .237, 3PA/FGA .239 and base TOV/FGA .105; scouting adds no further change to those rates. These are expected rates before the same previously journaled season development swing, not targets for his simulated box scores.
 
 Generated estimates carry the statistical source hash plus the scouting JSON, canonical profile, prior-season statistics and roster hashes. The frozen game profile carries its dated traits, derived style and source hashes. Loading a new-game profile recomputes the expected artifact and rejects stale inputs. Earlier dates load and validate only the archived generic model, preserving closed packet hashes and the existing `development:2003-04:wadedw01` draw. No requests, results, rotations, career dates or awards are rewritten. A day-one replay would require a separate pre-season lineage, not changes to these completed games.
 
@@ -134,6 +135,21 @@ The missing calibration study remains separate work: a verified 1997-2002 draft 
 Coverage at June 26, 2003: Wade only. The other 57 players in the [draft-class file](../library/2003/league/nba_2003_draft_class.json) have identity data but no pre-draft statistics or pick numbers, so they play on the neutral fallback until their records are added. A level without a factor table (high school, international) is refused rather than guessed; LeBron James (high school) and Darko Milicic (international) need their own approach.
 
 New draft classes follow the same path: a `library/<year>/league/nba_<year>_prospect_stats.json` with draft-night evidence, gated by the draft date.
+
+### Authorized college totals revision
+
+The user set Wade's college career targets to 54.7 FG%, 44.2 3P%, 93.3 FT% and 21.2 PPG. The profile and statistical source use integer makes, attempts and points that round to all four targets across his existing 98 games:
+
+| Season | G | FGM/FGA | FG% | 3PM/3PA | 3P% | FTM/FTA | FT% | PTS | PPG |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 2000-01 | 34 | 194/369 | 52.6 | 42/98 | 42.9 | 98/110 | 89.1 | 528 | 15.5 |
+| 2001-02 | 30 | 210/389 | 54.0 | 48/115 | 41.7 | 117/128 | 91.4 | 585 | 19.5 |
+| 2002-03 | 34 | 327/578 | 56.6 | 92/199 | 46.2 | 219/227 | 96.5 | 965 | 28.4 |
+| Career | 98 | 731/1336 | 54.7 | 182/412 | 44.2 | 434/465 | 93.3 | 2078 | 21.2 |
+
+The season allocation is a modeling choice: attempt volume rises by about 8% with approximately the same shot mix and season shares, while retaining the freshman-to-junior improvement and sophomore three-point dip. Every season obeys `PTS = 2 × FGM + 3PM + FTM`. Career points are `2 × 731 + 182 + 434 = 2078`; `2078 / 98 = 21.2041`, displayed as 21.2. Percentages divide summed makes by summed attempts. Two-point totals are 549/924. The junior efficiency narrative, scouting shooting summary, statistical source, source hashes, current rookie estimates and personnel card all follow the revised counts.
+
+Games, starts, minutes, non-scoring totals, team results, NCAA Tournament subset and recorded honors retain their existing evidence. The original source and `rookie-2003.1` artifact remain archived for every closed game. No `rookie-2003.2` game has been played at this checkpoint, so the revised estimate retains the November 12 adoption gate and the existing development draw. Translation constants and scouting trait classifications are unchanged.
 
 ## Talent trajectories (option C)
 

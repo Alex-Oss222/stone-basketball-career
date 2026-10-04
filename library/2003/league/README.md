@@ -9,6 +9,11 @@ These files are source evidence, not live career state.
 | `nba_2002_03_player_stats.json` | All 428 players who appeared in the 2002-03 regular season | Original totals, advanced rates and source provenance |
 | `nba_2003_veteran_ratings.json` | June 26, 2003; based only on 2002-03 | Generated statistical estimates, display grades and sample sizes |
 | `nba_2003_veteran_import_report.json` | June 26, 2003 import coverage | Validation and roster matches |
+| `nba_2003_prospect_stats.json` | Alternate-history pre-draft college record, including the authorized career shooting and scoring revision | Current rookie statistical source; mirrored in Wade's canonical profile |
+| `nba_2003_prospect_stats_2003_1.json` | Original college source, preserved byte for byte | Replay source for `rookie-2003.1`; never regenerate from the revised profile |
+| `nba_2003_rookie_estimates.json` | Current `rookie-2003.2` estimates, effective November 12, 2003 | Generated rates from current college totals and dated scouting |
+| `nba_2003_rookie_estimates_2003_1.json` | Original `rookie-2003.1` estimates | Archived rates and source identity for games through November 11 |
+| `nba_2003_prospect_scouting.json` | Dated qualitative evidence through June 25, 2003 | Scouting traits and reviewed canonical-profile source hash |
 | `nba_2002_03_league_environment.json` | Supplied 2002-03 league averages | Engine calibration baseline for 2003-04 |
 | `nba_2003_04_schedule.json` | 2003-04 regular season, 1,189 games | Dates and matchups only; source: ESPN via SportsDataverse, as played |
 | `nba_2003_04_preseason_schedule.json` | 2003-04 preseason, 114 NBA-vs-NBA games | Dates and matchups only; source: NBA.com via Kaggle, as played |
@@ -46,4 +51,3 @@ The raw uploads were imported once with `scripts/import_contracts.py`, which rem
 | `nba_1999_cba_minimum_salary_scale.json` | Minimum salary by years of service, 1998-99 to 2004-05 |
 | `nba_2003_free_agent_rights.json` | Bird class, cap hold and qualifying-offer amount for all 129 expiring players, every club. Restricted marks are recast as eligibility. |
 | `miami_expiring_tenure.csv` | Tenure facts behind Miami's rights file (`00_Team/Finances/free_agent_rights.json`), which must agree with the league file |
-

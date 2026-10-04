@@ -4,7 +4,7 @@
   "as_of": "2003-06-26",
   "baseline_season": "2002-03",
   "source_file": "library/2003/league/nba_2003_prospect_stats.json",
-  "source_sha256": "a7a5ca4d69ecb5a2c418b95132ff2c1256bda093e25cf8a6a826fb7b8a8346f3",
+  "source_sha256": "0916663a304bb27ddc8b583ca1b3aa1e5b0d4b63ff3aaa246d6a6a2c1e8d7cd6",
   "veteran_model_version": "veteran-2003.1",
   "method": {
     "recency_weights": [
@@ -90,13 +90,13 @@
         "seasons": 3
       },
       "translated": {
-        "two_point_pct": 0.5083407079646017,
-        "three_point_pct": 0.36105263157894735,
-        "free_throw_pct": 0.9278350515463918,
-        "three_point_attempt_rate": 0.240799849793466,
-        "free_throw_attempt_rate": 0.35605520090123915,
-        "turnovers_per_fga": 0.1019151333082989,
-        "usage_pct": 0.19531392906647127,
+        "two_point_pct": 0.555480572597137,
+        "three_point_pct": 0.4028108108108108,
+        "free_throw_pct": 0.944603629417383,
+        "three_point_attempt_rate": 0.24080180492884412,
+        "free_throw_attempt_rate": 0.3552386324192988,
+        "turnovers_per_fga": 0.09420340159666782,
+        "usage_pct": 0.2101060610206666,
         "assist_pct": 0.25342470220087093,
         "offensive_rebound_pct": 0.04127208735846247,
         "defensive_rebound_pct": 0.13657928401893385,
@@ -105,25 +105,25 @@
         "fouls_per_minute": null
       },
       "estimated": {
-        "two_point_pct": 0.499682583631687,
-        "three_point_pct": 0.35864045158946023,
-        "free_throw_pct": 0.9101555009683678,
-        "usage_pct": 0.19586989241562713,
+        "two_point_pct": 0.5389737790264971,
+        "three_point_pct": 0.3923887864004013,
+        "free_throw_pct": 0.9264632552007245,
+        "usage_pct": 0.2083128239535924,
         "assist_pct": 0.23736092475949994,
         "offensive_rebound_pct": 0.04376939160171751,
         "defensive_rebound_pct": 0.1376187997378249,
         "steal_pct": 0.024079268884671698,
         "block_pct": 0.0208278518176587,
-        "three_point_attempt_rate": 0.23894668316794668,
-        "free_throw_attempt_rate": 0.3520396869285571,
-        "turnovers_per_fga": 0.11232892634552771,
+        "three_point_attempt_rate": 0.23908460605315204,
+        "free_throw_attempt_rate": 0.35156241075820094,
+        "turnovers_per_fga": 0.10493656523647875,
         "fouls_per_minute": 0.08989955163185152
       },
       "status": "estimate from pre-draft statistics; not NBA evidence",
       "scouting": {
         "as_of": "2003-06-25",
         "source_file": "career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md",
-        "source_sha256": "6ff53a564576013f2ee04e89950473a043d8329634894b1e1956429c966b244b",
+        "source_sha256": "da398371a07262892bc6938e0b594cb49c3ffafa7c33e2e2413e634a26f51499",
         "position": "SG",
         "traits": {
           "paint_pressure": {
@@ -233,9 +233,9 @@
   },
   "effective_from": "2003-11-12",
   "scouting_sources": {
-    "library/2003/league/nba_2003_prospect_scouting.json": "8bdb71088be25e0dc38ee9724c9ed90a03b944a46c51e4f272010dceedd39cfc",
+    "library/2003/league/nba_2003_prospect_scouting.json": "7b57d0b35e593d87159123fa978d8d939afc7452da7b95b9c493d1a18e8c9023",
     "library/2003/league/nba_2002_03_player_stats.json": "9602b0e89cc759895cb75f3c5d17176fcfd52388f3f68f135e409e216495e931",
     "library/2003/league/nba_2003_end_of_season.json": "5ef1e8f9aced5c1d5d2d381b18bf071efb033288a0690b4e8c65d4fd432aa2a0",
-    "career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md": "6ff53a564576013f2ee04e89950473a043d8329634894b1e1956429c966b244b"
+    "career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md": "da398371a07262892bc6938e0b594cb49c3ffafa7c33e2e2413e634a26f51499"
   }
 }

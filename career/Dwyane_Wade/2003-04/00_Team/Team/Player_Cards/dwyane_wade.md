@@ -58,16 +58,16 @@ Staff estimates against NBA rotation players at the assessment date. Scale: 1–
 
 | Rate | Grade (20-80) | Estimate | NBA average |
 | --- | ---: | ---: | ---: |
-| Two-point scoring | 73 | 0.500 | 0.463 |
-| Three-point shooting | 65 | 0.359 | 0.349 |
-| Free throws | 80 | 0.910 | 0.758 |
+| Two-point scoring | 80 | 0.539 | 0.463 |
+| Three-point shooting | 77 | 0.392 | 0.349 |
+| Free throws | 80 | 0.926 | 0.758 |
 | Assist production | 72 | 0.237 | 0.152 |
 | Offensive rebounding | 45 | 0.044 | 0.057 |
 | Defensive rebounding | 49 | 0.138 | 0.143 |
 | Steal production | 73 | 0.024 | 0.017 |
 | Block production | 66 | 0.021 | 0.015 |
 
-Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.112. Pressure concerns affect turnovers against positive team defense, not the base rate. Paint and pull-up location weights preserve aggregate shooting accuracy. Rebound-led transition applies only after his own defensive rebound. These are provisional model assumptions, not tracking data.
+Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.105. Pressure concerns affect turnovers against positive team defense, not the base rate. Paint and pull-up location weights preserve aggregate shooting accuracy. Rebound-led transition applies only after his own defensive rebound. These are provisional model assumptions, not tracking data.
 <!-- rookie-estimate:end -->
 
 ## Changes and coaching notes
