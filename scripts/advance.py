@@ -131,6 +131,9 @@ def play(day):
         if not refused:
             say("    " + out.splitlines()[-1])
             return
+        if all(("refused 502" in l or "refused 503" in l or "unreachable" in l) for l in refused):
+            time.sleep(30)                                   # the engine is restarting (a deploy); wait, do not push
+            continue
         if not pushed:
             say(f"    the engine refused a game ({refused[0][:100]}); pushing so it redeploys")
             run("scripts/write_back_results.py", "--write", show=False)

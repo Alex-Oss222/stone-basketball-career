@@ -2,7 +2,7 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2004-01-21 · Miami Heat · inactive
+Career date: 2004-01-22 · Miami Heat · inactive
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 
@@ -51,7 +51,7 @@ Activation: An actual dated proposal, consultation or executed transaction.
 
 ## Available response paths
 
-- [Open the current event discussion](../2003-04/06_Regular_Season/01_January/Week_3/note.md): Record a dated reaction to an actual transaction.
+- [Open the current event discussion](../2003-04/06_Regular_Season/01_January/Week_4/note.md): Record a dated reaction to an actual transaction.
 - [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
@@ -63,7 +63,7 @@ An actual transaction update with its source and applicable player rights.
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/01_January/Week_3/note.md)
+- [Owning event](../2003-04/06_Regular_Season/01_January/Week_4/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)

@@ -2,11 +2,11 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-01-21**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-01-22**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2004-01-21
+## 2003-04 · NBA regular season · through 2004-01-22
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
@@ -1413,7 +1413,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-01-20 | Boston Celtics | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_3/Game_4.result.json) |
 
-## 2003-04 · NBA preseason · through 2004-01-21
+## 2003-04 · NBA preseason · through 2004-01-22
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 
