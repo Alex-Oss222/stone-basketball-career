@@ -97,6 +97,13 @@ def pin(root):
             reg["players"], reg["player_count"] = kept, len(kept)
             reg.get("coverage", {}).get("source_counts", {}).pop("2003_04_appearance", None)
             reg_path.write_text(json.dumps(reg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    awards_path = root / "career/Dwyane_Wade/awards.json"
+    if awards_path.is_file():                     # honors announced after the checkpoint are not yet earned
+        awards = json.loads(awards_path.read_text(encoding="utf-8"))
+        kept = [a for a in awards["awards"] if (a.get("awarded_on") or "") <= CHECKPOINT]
+        if len(kept) != len(awards["awards"]):
+            awards["awards"] = kept
+            awards_path.write_text(json.dumps(awards, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     state_path = root / SEASON / "current_state.json"
     state = json.loads(state_path.read_text(encoding="utf-8"))
     assert state["current_date"] == CHECKPOINT, state["current_date"]

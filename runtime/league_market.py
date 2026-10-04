@@ -206,6 +206,8 @@ class LeagueMarket:
 
     def run(self):
         """Make today's moves. Returns the new entries."""
+        if any(e["date"] == self.day and "-market-" in e.get("id", "") for e in self.moves["entries"]):
+            return []                                   # the day's market already ran: once a day, never twice
         start = len(self.moves["entries"])
         pool = self.pool()
         self._resolve_waivers(pool)
