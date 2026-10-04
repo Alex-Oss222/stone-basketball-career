@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-25-dallas-mavericks-at-sacramento-kings",
+ "game_date": "2003-12-25",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Dallas Mavericks",
+  "rotation": "real"
+ }
+}
