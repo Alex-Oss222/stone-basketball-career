@@ -93,6 +93,10 @@ Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regul
 
 Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 5 of 11 closed games; 4 tracked appearances form the denominator below (2003-11-12 to 2003-11-19).
 
+### Tracked games only
+
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 1 of 7 closed games; 0 tracked appearances form the denominator below (2003-11-12 to 2003-11-12).
+
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
 | Paint | 13 | 23 | 56.5% | 6.50 | 5.75 |
