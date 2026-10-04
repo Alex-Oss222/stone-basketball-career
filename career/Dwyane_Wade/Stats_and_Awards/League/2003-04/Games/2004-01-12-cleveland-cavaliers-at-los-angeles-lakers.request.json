@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-12-cleveland-cavaliers-at-los-angeles-lakers",
+ "game_date": "2004-01-12",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ }
+}

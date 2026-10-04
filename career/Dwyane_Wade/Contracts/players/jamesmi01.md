@@ -2,9 +2,9 @@
 
 # Contract | Mike James
 
-Known through: 2004-01-11. [Open interactive contract](jamesmi01.html#contract) · [Contract history](jamesmi01.html#contract-history)
+Known through: 2004-01-12. [Open interactive contract](jamesmi01.html#contract) · [Contract history](jamesmi01.html#contract-history)
 
-Mike James: re signed. Evidence cutoff: 2004-01-11.
+Mike James: re signed. Evidence cutoff: 2004-01-12.
 
 ## Current contract
 
