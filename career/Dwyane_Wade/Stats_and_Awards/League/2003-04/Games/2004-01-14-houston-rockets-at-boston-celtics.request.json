@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-14-houston-rockets-at-boston-celtics",
+ "game_date": "2004-01-14",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Houston Rockets",
+  "rotation": "real"
+ }
+}

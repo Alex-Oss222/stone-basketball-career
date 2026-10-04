@@ -1189,6 +1189,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.08 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-14-ten_day-jacksma01",
+   "date": "2004-01-14",
+   "kind": "ten_day",
+   "player": "Mark Jackson",
+   "bbr_id": "jacksma01",
+   "from": null,
+   "to": "Milwaukee Bucks",
+   "role": {
+    "player_id": "Mark Jackson",
+    "bbr_id": "jacksma01",
+    "position": "PG",
+    "games": 42,
+    "minutes": 577
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-24",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.04 x fit"
   }
  ]
 }

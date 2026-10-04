@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-14-denver-nuggets-at-los-angeles-lakers",
+ "game_date": "2004-01-14",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Denver Nuggets",
+  "rotation": "real"
+ }
+}

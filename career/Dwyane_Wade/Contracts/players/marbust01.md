@@ -2,9 +2,9 @@
 
 # Contract | Stephon Marbury
 
-Known through: 2004-01-13. [Open interactive contract](marbust01.html#contract) · [Contract history](marbust01.html#contract-history)
+Known through: 2004-01-14. [Open interactive contract](marbust01.html#contract) · [Contract history](marbust01.html#contract-history)
 
-Stephon Marbury: under contract. Evidence cutoff: 2004-01-13.
+Stephon Marbury: under contract. Evidence cutoff: 2004-01-14.
 
 ## Current contract
 
