@@ -2,9 +2,9 @@
 
 # Contract | Milt Palacio
 
-Known through: 2003-11-11. [Open interactive contract](palacmi01.html#contract) · [Contract history](palacmi01.html#contract-history)
+Known through: 2003-11-12. [Open interactive contract](palacmi01.html#contract) · [Contract history](palacmi01.html#contract-history)
 
-Milt Palacio: free agent expiring. Evidence cutoff: 2003-11-11.
+Milt Palacio: free agent expiring. Evidence cutoff: 2003-11-12.
 
 ## Current contract
 

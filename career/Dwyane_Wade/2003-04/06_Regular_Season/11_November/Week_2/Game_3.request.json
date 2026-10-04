@@ -1,0 +1,112 @@
+{
+ "event_id": "2003-11-12-cleveland-cavaliers-at-miami-heat",
+ "game_date": "2003-11-12",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Miami Heat",
+  "players": [
+   {
+    "player_id": "Mike James",
+    "position": "PG",
+    "minutes": 34.0,
+    "ratings": {},
+    "bbr_id": "jamesmi01",
+    "starter": true
+   },
+   {
+    "player_id": "Dwyane Wade",
+    "position": "SG",
+    "minutes": 34.0,
+    "ratings": {
+     "perimeter_defense": 45
+    },
+    "starter": true
+   },
+   {
+    "player_id": "Caron Butler",
+    "position": "SF",
+    "minutes": 34.0,
+    "ratings": {},
+    "bbr_id": "butleca01",
+    "starter": true
+   },
+   {
+    "player_id": "Scott Padgett",
+    "position": "PF",
+    "minutes": 34.0,
+    "ratings": {},
+    "bbr_id": "padgesc01",
+    "starter": true
+   },
+   {
+    "player_id": "Shawn Kemp",
+    "position": "C",
+    "minutes": 34.0,
+    "ratings": {},
+    "bbr_id": "kempsh01",
+    "starter": true
+   },
+   {
+    "player_id": "Eddie Jones",
+    "position": "SG",
+    "minutes": 20.0,
+    "ratings": {},
+    "bbr_id": "jonesed02",
+    "starter": false
+   },
+   {
+    "player_id": "Stephen Jackson",
+    "position": "SG",
+    "minutes": 16.0,
+    "ratings": {},
+    "bbr_id": "jacksst02",
+    "starter": false
+   },
+   {
+    "player_id": "Brian Grant",
+    "position": "C",
+    "minutes": 12.0,
+    "ratings": {},
+    "bbr_id": "grantbr01",
+    "starter": false
+   },
+   {
+    "player_id": "Cherokee Parks",
+    "position": "C",
+    "minutes": 10.0,
+    "ratings": {},
+    "bbr_id": "parksch02",
+    "starter": false
+   },
+   {
+    "player_id": "LaPhonso Ellis",
+    "position": "PF",
+    "minutes": 8.0,
+    "ratings": {},
+    "bbr_id": "ellisla01",
+    "starter": false
+   },
+   {
+    "player_id": "Rasual Butler",
+    "position": "SG",
+    "minutes": 4.0,
+    "ratings": {},
+    "bbr_id": "butlera01",
+    "starter": false
+   },
+   {
+    "player_id": "Anthony Carter",
+    "position": "PG",
+    "minutes": 0,
+    "ratings": {},
+    "starter": false,
+    "bbr_id": "cartean01"
+   }
+  ]
+ },
+ "away": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ }
+}

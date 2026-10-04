@@ -4,7 +4,7 @@
 
 NBA regular season · November 1-30, 2003
 
-407 tracked players · 76 closed games in this record · Through November 11, 2003.
+407 tracked players · 76 closed games in this record · Through November 12, 2003.
 
 ## Leaders
 
@@ -496,7 +496,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | Period | Calendar dates | Closed games | Status |
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/League_Stats.md) | November 1-7, 2003 | 50 | Complete |
-| [Week 2](Week_2/League_Stats.md) | November 8-14, 2003 | 26 | Through November 11, 2003 |
+| [Week 2](Week_2/League_Stats.md) | November 8-14, 2003 | 26 | Through November 12, 2003 |
 | [Week 3](Week_3/League_Stats.md) | November 15-21, 2003 | 0 | Not started |
 | [Week 4](Week_4/League_Stats.md) | November 22-30, 2003 | 0 | Not started |
 

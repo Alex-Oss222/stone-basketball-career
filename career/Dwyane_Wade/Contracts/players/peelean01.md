@@ -2,9 +2,9 @@
 
 # Contract | Anthony Peeler
 
-Known through: 2003-11-11. [Open interactive contract](peelean01.html#contract) · [Contract history](peelean01.html#contract-history)
+Known through: 2003-11-12. [Open interactive contract](peelean01.html#contract) · [Contract history](peelean01.html#contract-history)
 
-Anthony Peeler: expired or unresolved. Evidence cutoff: 2003-11-11.
+Anthony Peeler: expired or unresolved. Evidence cutoff: 2003-11-12.
 
 ## Current contract
 

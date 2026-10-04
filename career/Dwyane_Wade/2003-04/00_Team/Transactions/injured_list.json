@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "kind": "injured_list",
+ "season": "2003-04",
+ "lists_from": "2003-11-12",
+ "rule": "12 active for each game, up to 3 on the injured list, at least 5 games on it once placed. Injured players are placed first; the remaining places go to the lowest healthy reserves (runtime/roster_moves.py).",
+ "entries": [
+  {
+   "player": "Udonis Haslem",
+   "placed": "2003-11-12",
+   "activated": null,
+   "first_game_missed": "2003-11-12-cleveland-cavaliers-at-miami-heat",
+   "reason": "reserve: not among the twelve the staff dresses (2003-04 clubs listed healthy reserves on the injured list)",
+   "minimum_games": 5
+  },
+  {
+   "player": "John Wallace",
+   "placed": "2003-11-12",
+   "activated": null,
+   "first_game_missed": "2003-11-12-cleveland-cavaliers-at-miami-heat",
+   "reason": "reserve: not among the twelve the staff dresses (2003-04 clubs listed healthy reserves on the injured list)",
+   "minimum_games": 5
+  },
+  {
+   "player": "Sean Lampley",
+   "placed": "2003-11-12",
+   "activated": null,
+   "first_game_missed": "2003-11-12-cleveland-cavaliers-at-miami-heat",
+   "reason": "reserve: not among the twelve the staff dresses (2003-04 clubs listed healthy reserves on the injured list)",
+   "minimum_games": 5
+  }
+ ],
+ "as_of": "2003-11-12"
+}

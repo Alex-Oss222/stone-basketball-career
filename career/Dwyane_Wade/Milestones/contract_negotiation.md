@@ -2,7 +2,7 @@
 
 # Contract negotiation | Dwyane Wade
 
-Career date: 2003-11-11 · Miami Heat · recorded
+Career date: 2003-11-12 · Miami Heat · recorded
 
 [Live milestone desk](index.html#contract_negotiation) · [All milestones](README.md)
 

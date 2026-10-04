@@ -2,9 +2,9 @@
 
 # Contract | Juaquin Hawkins
 
-Known through: 2003-11-11. [Open interactive contract](hawkiju01.html#contract) · [Contract history](hawkiju01.html#contract-history)
+Known through: 2003-11-12. [Open interactive contract](hawkiju01.html#contract) · [Contract history](hawkiju01.html#contract-history)
 
-Juaquin Hawkins: free agent expiring. Evidence cutoff: 2003-11-11.
+Juaquin Hawkins: free agent expiring. Evidence cutoff: 2003-11-12.
 
 ## Current contract
 

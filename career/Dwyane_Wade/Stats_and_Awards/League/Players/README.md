@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-11-11**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-11-12**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -113,7 +113,7 @@ Card date: **2003-11-11**. 407 registry players, one Markdown card and one inter
 | [Brent Barry](barrybr01.md) | Seattle SuperSonics | 31 | sourced | [open](barrybr01.html) |
 | [Calbert Cheaney](cheanca01.md) | Golden State Warriors | 32 | sourced | [open](cheanca01.html) |
 | [Carlos Delfino](delfica01.md) | Detroit Pistons (draft rights) | 21 | sourced | [open](delfica01.html) |
-| [Corey Maggette](maggeco01.md) | Los Angeles Clippers | 23 | sourced | [open](maggeco01.html) |
+| [Corey Maggette](maggeco01.md) | Los Angeles Clippers | 24 | sourced | [open](maggeco01.html) |
 | [Cuttino Mobley](moblecu01.md) | Houston Rockets | 28 | sourced | [open](moblecu01.html) |
 | [Dahntay Jones](jonesda02.md) | Memphis Grizzlies | 22 | sourced | [open](jonesda02.html) |
 | [Dajuan Wagner](wagneda02.md) | Cleveland Cavaliers | 20 | sourced | [open](wagneda02.html) |

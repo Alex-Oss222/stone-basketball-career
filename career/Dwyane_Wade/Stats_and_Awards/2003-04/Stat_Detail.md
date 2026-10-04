@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2003-11-11](../../assets/stat_reports/personal_2003-11-11.svg)
+![Player personal information and earned career awards through 2003-11-12](../../assets/stat_reports/personal_2003-11-12.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-11-07 |
 
-Identity as of 2003-11-11; status snapshot dated 2003-11-07. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-11-12; status snapshot dated 2003-11-07. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -39,7 +39,7 @@ No earned professional awards recorded by this page's identity cutoff.
 
 ## Statistics
 
-As of **2003-11-11**: 7 closed games; 7/7 have player participation and box coverage; recorded DNPs: 0.
+As of **2003-11-12**: 7 closed games; 7/7 have player participation and box coverage; recorded DNPs: 0.
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
@@ -146,6 +146,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2003-11-04](../../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) | San Antonio Spurs | away | L 95-106 | Played | 18.4 | 9 | 2 | 1 | 1 | 0 | 1 |
 | [2003-11-08](../../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md) | Minnesota Timberwolves | home | W 101-87 | Played | 34.8 | 15 | 5 | 6 | 1 | 0 | 1 |
 | [2003-11-11](../../2003-04/06_Regular_Season/11_November/Week_2/Game_2.md) | Houston Rockets | away | W 96-90 | Played | 34.4 | 13 | 5 | 8 | 2 | 1 | 2 |
+| [2003-11-12](../../2003-04/06_Regular_Season/11_November/Week_2/Game_3.md) | Cleveland Cavaliers | home | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ### Individual game boxes
 
@@ -158,6 +159,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2003-11-04](../../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) | 19 | Miami Heat | NBA | SG / PG | 1 | 0 | 18.4 | 2.0 | 7.0 | .286 | 1.0 | 4.0 | .250 | 1.0 | 3.0 | .333 | .357 | 4.0 | 4.0 | 1.000 | 1.0 | 1.0 | 2.0 | 1.0 | 1.0 | 0.0 | 1.0 | 3.0 | 9.0 | .514 | — |
 | [2003-11-08](../../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md) | 19 | Miami Heat | NBA | SG / PG | 1 | 1 | 34.8 | 6.0 | 11.0 | .545 | 3.0 | 5.0 | .600 | 3.0 | 6.0 | .500 | .682 | 0.0 | 0.0 | N/A | 1.0 | 4.0 | 5.0 | 6.0 | 1.0 | 0.0 | 1.0 | 4.0 | 15.0 | .682 | — |
 | [2003-11-11](../../2003-04/06_Regular_Season/11_November/Week_2/Game_2.md) | 19 | Miami Heat | NBA | SG / PG | 1 | 1 | 34.4 | 4.0 | 5.0 | .800 | 1.0 | 1.0 | 1.000 | 3.0 | 4.0 | .750 | .900 | 4.0 | 6.0 | .667 | 1.0 | 4.0 | 5.0 | 8.0 | 2.0 | 1.0 | 2.0 | 5.0 | 13.0 | .851 | — |
+| [2003-11-12](../../2003-04/06_Regular_Season/11_November/Week_2/Game_3.md) | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 

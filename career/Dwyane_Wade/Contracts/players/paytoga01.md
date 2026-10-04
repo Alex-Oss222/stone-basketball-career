@@ -2,9 +2,9 @@
 
 # Contract | Gary Payton
 
-Known through: 2003-11-11. [Open interactive contract](paytoga01.html#contract) · [Contract history](paytoga01.html#contract-history)
+Known through: 2003-11-12. [Open interactive contract](paytoga01.html#contract) · [Contract history](paytoga01.html#contract-history)
 
-Gary Payton: free agent expiring. Evidence cutoff: 2003-11-11.
+Gary Payton: free agent expiring. Evidence cutoff: 2003-11-12.
 
 ## Current contract
 

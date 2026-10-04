@@ -2,9 +2,9 @@
 
 # Contract | Nick Collison
 
-Known through: 2003-11-11. [Open interactive contract](collini01.html#contract) · [Contract history](collini01.html#contract-history)
+Known through: 2003-11-12. [Open interactive contract](collini01.html#contract) · [Contract history](collini01.html#contract-history)
 
-Nick Collison: No verified contract record. Evidence cutoff: 2003-11-11.
+Nick Collison: No verified contract record. Evidence cutoff: 2003-11-12.
 
 ## Current contract
 
