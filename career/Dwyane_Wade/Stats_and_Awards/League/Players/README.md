@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-09**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-10**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -257,7 +257,7 @@ Card date: **2004-02-09**. 504 registry players, one Markdown card and one inter
 | [Joe Smith](smithjo02.md) | Milwaukee Bucks | 28 | sourced | [open](smithjo02.html) |
 | [Jonathan Bender](bendejo01.md) | Indiana Pacers | 23 | silhouette | [open](bendejo01.html) |
 | [Josh Howard](howarjo01.md) | Dallas Mavericks | 23 | sourced | [open](howarjo01.html) |
-| [Jumaine Jones](jonesju01.md) | Boston Celtics | 24 | sourced | [open](jonesju01.html) |
+| [Jumaine Jones](jonesju01.md) | Boston Celtics | 25 | sourced | [open](jonesju01.html) |
 | [Kedrick Brown](brownke01.md) | Boston Celtics | 22 | sourced | [open](brownke01.html) |
 | [Lamar Odom](odomla01.md) | Los Angeles Clippers | 24 | sourced | [open](odomla01.html) |
 | [Lamond Murray](murrala01.md) | Toronto Raptors | None | silhouette | [open](murrala01.html) |
@@ -426,7 +426,7 @@ Card date: **2004-02-09**. 504 registry players, one Markdown card and one inter
 | [Vin Baker](bakervi01.md) | Boston Celtics | None | silhouette | [open](bakervi01.html) |
 | [Vladimir Radmanovic](radmavl01.md) | Seattle SuperSonics | 23 | sourced | [open](radmavl01.html) |
 | [Zach Randolph](randoza01.md) | Portland Trail Blazers | 22 | sourced | [open](randoza01.html) |
-| [Zaza Pachulia](pachuza01.md) | Orlando Magic | 19 | sourced | [open](pachuza01.html) |
+| [Zaza Pachulia](pachuza01.md) | Orlando Magic | 20 | sourced | [open](pachuza01.html) |
 
 </details>
 

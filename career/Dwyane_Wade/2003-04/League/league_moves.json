@@ -2108,6 +2108,25 @@
    "bbr_id": "dampier01",
    "from": "Golden State Warriors",
    "to": "Detroit Pistons"
+  },
+  {
+   "id": "2003-04-market-2004-02-10-clear-korveky01",
+   "date": "2004-02-10",
+   "kind": "clear",
+   "player": "Kyle Korver",
+   "bbr_id": "korveky01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Kyle Korver",
+    "bbr_id": "korveky01",
+    "position": "SF",
+    "games": 74,
+    "minutes": 882
+   },
+   "contract": null,
+   "note": "cleared waivers from Philadelphia 76ers: a free agent",
+   "waiver": "2003-04-market-2004-02-08-waive-korveky01"
   }
  ]
 }
