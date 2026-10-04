@@ -2000,6 +2000,47 @@
    },
    "contract": null,
    "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-02-07-clear-ricegl01",
+   "date": "2004-02-07",
+   "kind": "clear",
+   "player": "Glen Rice",
+   "bbr_id": "ricegl01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Glen Rice",
+    "bbr_id": "ricegl01",
+    "position": "SF",
+    "games": 18,
+    "minutes": 262
+   },
+   "contract": null,
+   "note": "cleared waivers from Los Angeles Clippers: a free agent",
+   "waiver": "2003-04-market-2004-02-05-waive-ricegl01"
+  },
+  {
+   "id": "2003-04-market-2004-02-07-ten_day-dickeka01",
+   "date": "2004-02-07",
+   "kind": "ten_day",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": null,
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-02-17",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.77 x fit"
   }
  ]
 }

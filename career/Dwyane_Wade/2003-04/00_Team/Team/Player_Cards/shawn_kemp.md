@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C  
 **Age at assessment:** 33 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-02-06 
+**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-02-07 
 
 **Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10; guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at C, staff plan 20 minutes (staff rotation dated 2004-01-30, [record](../Depth_Chart/Reviews/2004-01-30/rotation.json)). On the injured list since 2004-01-28 (injury: 1 more game(s) out on the engine's draw).
+**Role:** Rotation at C, staff plan 20 minutes (staff rotation dated 2004-01-30, [record](../Depth_Chart/Reviews/2004-01-30/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -61,7 +61,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Orlando Magic | 79 | N/A | 20.7 | 6.8 | 5.7 | 0.7 | 0.8 | 0.4 | 1.3 | 0.418 | 0.000 | 0.742 |
-| 2003-04 | MIA | 43 | 17 | 25.1 | 8.8 | 7.0 | 1.2 | 1.0 | 0.5 | 1.7 | 40.9% | 33.3% | 73.7% |
+| 2003-04 | MIA | 44 | 17 | 25.0 | 8.7 | 7.0 | 1.2 | 1.0 | 0.5 | 1.6 | 40.8% | 33.3% | 72.9% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

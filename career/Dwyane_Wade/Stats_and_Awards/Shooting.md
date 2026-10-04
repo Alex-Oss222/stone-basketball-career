@@ -2,27 +2,27 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-02-06**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-02-07**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2004-02-06
+## 2003-04 · NBA regular season · through 2004-02-07
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 50 | 0 | 50 | 294 / 584 | 50.3% | 48 / 124 | 881 | partial |
+| 51 | 0 | 51 | 302 / 597 | 50.6% | 49 / 126 | 900 | partial |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | N/A | N/A | N/A | N/A | N/A | 253 |
-| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 14 |
+| Paint | N/A | N/A | N/A | N/A | N/A | 261 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 15 |
 | Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 70 |
-| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 92 |
-| Three-point range | N/A | N/A | N/A | N/A | N/A | 106 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 94 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 108 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -76,6 +76,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-01-31 | New Orleans Hornets | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_4/Game_6.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_4/Game_6.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_4/Game_6.result.json) |
 | 2004-02-02 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_1/Game_1.result.json) |
 | 2004-02-04 | New Jersey Nets | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.result.json) |
+| 2004-02-07 | New York Knicks | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.result.json) |
 
 ## 2003-10 · NBA regular season
 
@@ -536,45 +537,47 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 2 | 15 / 28 | 53.6% | 7 / 10 | 47 | complete |
+| 3 | 0 | 3 | 23 / 41 | 56.1% | 8 / 12 | 66 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 5 | 9 | 55.6% | 5.00 | 4.50 | 9 |
-| Outside paint, under 12 ft | 1 | 1 | 100.0% | 1.00 | 0.50 | 1 |
-| Outside paint, 12 to under 18 ft | 1 | 6 | 16.7% | 1.00 | 3.00 | 6 |
-| 18 ft to the three-point line | 1 | 2 | 50.0% | 1.00 | 1.00 | 2 |
-| Three-point range | 7 | 10 | 70.0% | 10.50 | 5.00 | 10 |
+| Paint | 9 | 17 | 52.9% | 6.00 | 5.67 | 17 |
+| Outside paint, under 12 ft | 2 | 2 | 100.0% | 1.33 | 0.67 | 2 |
+| Outside paint, 12 to under 18 ft | 1 | 6 | 16.7% | 0.67 | 2.00 | 6 |
+| 18 ft to the three-point line | 3 | 4 | 75.0% | 2.00 | 1.33 | 4 |
+| Three-point range | 8 | 12 | 66.7% | 8.00 | 4.00 | 12 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2004-02-02 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_1/Game_1.result.json) |
 | 2004-02-04 | New Jersey Nets | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.result.json) |
+| 2004-02-07 | New York Knicks | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.result.json) |
 
-## 2004-02-01 to 2004-02-06 · NBA regular season
+## 2004-02-01 to 2004-02-07 · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-week-2004-02-01#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 2 | 15 / 28 | 53.6% | 7 / 10 | 47 | complete |
+| 3 | 0 | 3 | 23 / 41 | 56.1% | 8 / 12 | 66 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 5 | 9 | 55.6% | 5.00 | 4.50 | 9 |
-| Outside paint, under 12 ft | 1 | 1 | 100.0% | 1.00 | 0.50 | 1 |
-| Outside paint, 12 to under 18 ft | 1 | 6 | 16.7% | 1.00 | 3.00 | 6 |
-| 18 ft to the three-point line | 1 | 2 | 50.0% | 1.00 | 1.00 | 2 |
-| Three-point range | 7 | 10 | 70.0% | 10.50 | 5.00 | 10 |
+| Paint | 9 | 17 | 52.9% | 6.00 | 5.67 | 17 |
+| Outside paint, under 12 ft | 2 | 2 | 100.0% | 1.33 | 0.67 | 2 |
+| Outside paint, 12 to under 18 ft | 1 | 6 | 16.7% | 0.67 | 2.00 | 6 |
+| 18 ft to the three-point line | 3 | 4 | 75.0% | 2.00 | 1.33 | 4 |
+| Three-point range | 8 | 12 | 66.7% | 8.00 | 4.00 | 12 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2004-02-02 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_1/Game_1.result.json) |
 | 2004-02-04 | New Jersey Nets | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.result.json) |
+| 2004-02-07 | New York Knicks | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.result.json) |
 
 ## 2003-10-28 at Philadelphia 76ers · Played · NBA regular season
 
@@ -1676,7 +1679,29 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-02-04 | New Jersey Nets | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.result.json) |
 
-## 2003-04 · NBA preseason · through 2004-02-06
+## 2004-02-07 vs New York Knicks · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-f209c715b626c7c1#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 8 / 13 | 61.5% | 1 / 2 | 19 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 4 | 8 | 50.0% | 8.00 | 8.00 | 8 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| 18 ft to the three-point line | 2 | 2 | 100.0% | 4.00 | 2.00 | 2 |
+| Three-point range | 1 | 2 | 50.0% | 3.00 | 2.00 | 2 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-02-07 | New York Knicks | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.result.json) |
+
+## 2003-04 · NBA preseason · through 2004-02-07
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 
