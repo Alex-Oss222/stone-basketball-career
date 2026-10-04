@@ -4,7 +4,7 @@
 **Age at assessment:** 27 · **Height:** 7-0 · **Weight:** 236 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** October 23, 2003: signs with Portland Trail Blazers (signing, real move); his hold and rights leave Miami's books. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** October 23, 2003: signs with Portland Trail Blazers (signing, real move); his hold and rights leave Miami's books. (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/stepavl01.html#contract) · [Contract history](../../../../Contracts/players/stepavl01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

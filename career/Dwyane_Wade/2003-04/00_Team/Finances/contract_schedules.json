@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "owner": "ai_gm",
-  "as_of": "2004-01-07",
+  "as_of": "2004-01-10",
   "team": "Miami Heat",
   "horizon": [
     "2003-04",
@@ -561,12 +561,12 @@
         "2003-04": "contract_salary"
       },
       "guaranteed": {
-        "2003-04": 0
+        "2003-04": 663679
       },
       "guarantee_date": "2004-01-10",
       "signed_date": "2003-09-30",
       "route": "minimum",
-      "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $663,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 3 years of service is $663,679 (was $638,679); minimum_salary_corrections.json.",
+      "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $663,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 3 years of service is $663,679 (was $638,679); minimum_salary_corrections.json. Guaranteed 2004-01-10: on the roster on the guarantee date.",
       "sources": [
         "04_Training_Camp/camp_roster.json"
       ],
@@ -625,12 +625,12 @@
         "2003-04": "contract_salary"
       },
       "guaranteed": {
-        "2003-04": 0
+        "2003-04": 1070000
       },
       "guarantee_date": "2004-01-10",
       "signed_date": "2003-09-30",
       "route": "minimum",
-      "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).",
+      "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest). Guaranteed 2004-01-10: on the roster on the guarantee date.",
       "sources": [
         "04_Training_Camp/camp_roster.json"
       ],
@@ -692,12 +692,12 @@
         "2003-04": "contract_salary"
       },
       "guaranteed": {
-        "2003-04": 0
+        "2003-04": 688679
       },
       "guarantee_date": "2004-01-10",
       "signed_date": "2003-09-30",
       "route": "minimum",
-      "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 4 years of service is $688,679 (was $638,679); minimum_salary_corrections.json.",
+      "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 4 years of service is $688,679 (was $638,679); minimum_salary_corrections.json. Guaranteed 2004-01-10: on the roster on the guarantee date.",
       "sources": [
         "04_Training_Camp/camp_roster.json"
       ],
@@ -735,12 +735,12 @@
         "2003-04": "contract_salary"
       },
       "guaranteed": {
-        "2003-04": 0
+        "2003-04": 938679
       },
       "guarantee_date": "2004-01-10",
       "signed_date": "2003-10-27",
       "route": "minimum",
-      "notes": "Signed October 27, 2003: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 8 years of service is $938,679 (was $638,679); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).",
+      "notes": "Signed October 27, 2003: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 8 years of service is $938,679 (was $638,679); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest). Guaranteed 2004-01-10: on the roster on the guarantee date.",
       "sources": [
         "04_Training_Camp/signing_corrections.json"
       ],
@@ -760,12 +760,12 @@
         "2003-04": "contract_salary"
       },
       "guaranteed": {
-        "2003-04": 0
+        "2003-04": 366931
       },
       "guarantee_date": "2004-01-10",
       "signed_date": "2003-10-27",
       "route": "minimum",
-      "notes": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+      "notes": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Guaranteed 2004-01-10: on the roster on the guarantee date.",
       "sources": [
         "04_Training_Camp/signing_corrections.json"
       ],
@@ -782,12 +782,12 @@
         "2003-04": "contract_salary"
       },
       "guaranteed": {
-        "2003-04": 0
+        "2003-04": 813679
       },
       "guarantee_date": "2004-01-10",
       "signed_date": "2003-10-27",
       "route": "minimum",
-      "notes": "Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 6 years of service is $813,679 (was $366,931); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).",
+      "notes": "Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 6 years of service is $813,679 (was $366,931); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest). Guaranteed 2004-01-10: on the roster on the guarantee date.",
       "sources": [
         "04_Training_Camp/signing_corrections.json"
       ],
@@ -823,7 +823,7 @@
     "kind": "existing_obligations_only",
     "currency": "USD",
     "unit": "whole dollars",
-    "known_baseline_definition": "Counted 2003-04 team salary on 2004-01-07: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+    "known_baseline_definition": "Counted 2003-04 team salary on 2004-01-10: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
     "conditional_definition": "Priced PO, TO and ETO years shown separately; no exercise or termination decision is assumed.",
     "zero_definition": "No scheduled obligation in this contract inventory. Zero does not forecast a zero-cost roster or available cap space.",
     "missing_definition": "Null means unresolved or not yet projected, never zero.",

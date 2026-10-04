@@ -4,7 +4,7 @@
 **Age at assessment:** 33 · **Height:** 6-10 · **Weight:** 240 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** July 16, 2003: signs with New Jersey Nets (signing, real move); his hold and rights leave Miami's books. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** July 16, 2003: signs with New Jersey Nets (signing, real move); his hold and rights leave Miami's books. (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/mournal01.html#contract) · [Contract history](../../../../Contracts/players/mournal01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

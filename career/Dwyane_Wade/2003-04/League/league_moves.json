@@ -1123,6 +1123,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.42 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-10-ten_day-goldwan01",
+   "date": "2004-01-10",
+   "kind": "ten_day",
+   "player": "Anthony Goldwire",
+   "bbr_id": "goldwan01",
+   "from": null,
+   "to": "Dallas Mavericks",
+   "role": {
+    "player_id": "Anthony Goldwire",
+    "bbr_id": "goldwan01",
+    "position": "PG",
+    "games": 11,
+    "minutes": 85
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-20",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.32 x fit"
   }
  ]
 }

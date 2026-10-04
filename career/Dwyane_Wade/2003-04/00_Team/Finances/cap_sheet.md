@@ -1,6 +1,6 @@
 # Miami Heat | Cap sheet
 
-January 7, 2004 · 2003-04 through 2010-11 · USD
+January 10, 2004 · 2003-04 through 2010-11 · USD
 
 [Finance guide](README.md) · [Roster and control](../Team/Roster/roster.json) · [Contract detail](contract_schedules.json)
 
@@ -10,7 +10,7 @@ January 7, 2004 · 2003-04 through 2010-11 · USD
 | ---: | ---: | ---: | ---: | ---: |
 | 43,840,000 | 44,128,961 | 666,166 | 0 | -955,127 |
 
-Committed salary counts contracts, exercised options and the unsigned first-round hold on January 7, 2004. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
+Committed salary counts contracts, exercised options and the unsigned first-round hold on January 10, 2004. Holds are the unrenounced free agents' cap holds; the roster charge is the minimum salary for each spot under twelve.
 
 ## Eight-season commitments
 

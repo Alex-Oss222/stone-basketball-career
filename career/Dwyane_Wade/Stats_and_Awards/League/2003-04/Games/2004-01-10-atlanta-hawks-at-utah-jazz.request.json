@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-10-atlanta-hawks-at-utah-jazz",
+ "game_date": "2004-01-10",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Atlanta Hawks",
+  "rotation": "real"
+ }
+}

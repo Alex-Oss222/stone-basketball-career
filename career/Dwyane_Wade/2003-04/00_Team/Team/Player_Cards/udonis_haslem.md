@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 23 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 27, 2003 · **Statistics through:** 2004-01-09 
+**Opening assessment:** October 27, 2003 · **Statistics through:** 2004-01-10 
 
-**Contract/control:** Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/hasleud01.html#contract) · [Contract history](../../../../Contracts/players/hasleud01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

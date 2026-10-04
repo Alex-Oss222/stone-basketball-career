@@ -2,9 +2,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C / PF  
 **Age at assessment:** 31 · **Height:** 6-9 · **Weight:** 254 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-01-09 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-01-10 
 
-**Contract/control:** Existing contract runs through 2006-07, with an early-termination option after 2005-06; 2003-04 salary $12,130,648. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Existing contract runs through 2006-07, with an early-termination option after 2005-06; 2003-04 salary $12,130,648. (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/grantbr01.html#contract) · [Contract history](../../../../Contracts/players/grantbr01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
@@ -77,12 +77,12 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 29 closed Miami game(s) through 2004-01-09.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 30 closed Miami game(s) through 2004-01-10.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | MIA | 82 | 82 | 32.2 | 10.3 | 10.2 | 1.3 | 0.8 | 0.6 | 1.6 | 50.9% | N/A | 77.1% |
-| 2003-04 | MIA | 29 | 19 | 28.2 | 12.1 | 5.8 | 1.1 | 0.8 | 0.7 | 1.8 | 56.2% | 0.0% | 78.2% |
+| 2003-04 | MIA | 30 | 20 | 28.5 | 12.2 | 5.8 | 1.2 | 0.8 | 0.7 | 1.8 | 56.5% | 0.0% | 78.9% |
 
 <!-- veteran-details:start -->
 ### Additional statistics

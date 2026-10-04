@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "ai_gm",
-  "as_of": "2003-11-11",
+  "as_of": "2004-01-10",
   "season": "2003-04",
   "team": "Miami Heat",
   "roster_kind": "team_control_register",
@@ -317,7 +317,7 @@
       ],
       "date_of_birth": "1978-04-05",
       "status": "camp_contract",
-      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $663,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 3 years of service (minimum_salary_corrections.json).",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $663,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 3 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json).",
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/stephen_jackson.md",
       "bbr_id": "jacksst02"
@@ -356,7 +356,7 @@
       ],
       "date_of_birth": "1969-11-26",
       "status": "camp_contract",
-      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10.",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10; guaranteed 2004-01-10 (guarantee_review.json).",
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/shawn_kemp.md",
       "bbr_id": "kempsh01"
@@ -395,7 +395,7 @@
       ],
       "date_of_birth": "1976-04-19",
       "status": "camp_contract",
-      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 4 years of service (minimum_salary_corrections.json).",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 4 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json).",
       "working_role": "Camp invitee",
       "player_card": "../Player_Cards/scott_padgett.md",
       "bbr_id": "padgesc01"
@@ -421,7 +421,7 @@
       ],
       "date_of_birth": "1972-10-11",
       "status": "camp_contract",
-      "control": "Signed October 27, 2003: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 8 years of service (minimum_salary_corrections.json).",
+      "control": "Signed October 27, 2003: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 8 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json).",
       "working_role": "Roster refill",
       "player_card": "../Player_Cards/cherokee_parks.md",
       "bbr_id": "parksch02",
@@ -435,7 +435,7 @@
       ],
       "date_of_birth": "1980-06-09",
       "status": "camp_contract",
-      "control": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+      "control": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); guaranteed 2004-01-10 (guarantee_review.json).",
       "working_role": "Roster refill",
       "player_card": "../Player_Cards/udonis_haslem.md",
       "bbr_id": "hasleud01"
@@ -448,7 +448,7 @@
       ],
       "date_of_birth": "1974-02-09",
       "status": "camp_contract",
-      "control": "Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 6 years of service (minimum_salary_corrections.json).",
+      "control": "Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 6 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json).",
       "working_role": "Roster refill",
       "player_card": "../Player_Cards/john_wallace.md",
       "bbr_id": "wallajo01"

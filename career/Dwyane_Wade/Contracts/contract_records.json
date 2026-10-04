@@ -1112,6 +1112,207 @@
     "contract_id": "hillty01-2003-09-30",
     "ended_on": "2003-10-27"
    }
+  },
+  {
+   "record_id": "jacksst02-2003-09-30-amended-2004-01-10-ae7028ecbed9",
+   "recorded_on": "2004-01-10",
+   "player_id": "jacksst02",
+   "player": "Stephen Jackson",
+   "contract_id": "jacksst02-2003-09-30",
+   "event": "amended",
+   "source": "career/Dwyane_Wade/2003-04/00_Team/Transactions/guarantee_review.json",
+   "contract": {
+    "player": "Stephen Jackson",
+    "bbr_id": "jacksst02",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 663679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 663679
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $663,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 3 years of service is $663,679 (was $638,679); minimum_salary_corrections.json. Guaranteed 2004-01-10: on the roster on the guarantee date.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "years_of_service": 3,
+    "contract_id": "jacksst02-2003-09-30"
+   }
+  },
+  {
+   "record_id": "kempsh01-2003-09-30-amended-2004-01-10-daa6c8bc646a",
+   "recorded_on": "2004-01-10",
+   "player_id": "kempsh01",
+   "player": "Shawn Kemp",
+   "contract_id": "kempsh01-2003-09-30",
+   "event": "amended",
+   "source": "career/Dwyane_Wade/2003-04/00_Team/Transactions/guarantee_review.json",
+   "contract": {
+    "player": "Shawn Kemp",
+    "bbr_id": "kempsh01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 1070000
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 1070000
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest). Guaranteed 2004-01-10: on the roster on the guarantee date.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "years_of_service": 14,
+    "cap_amount": {
+     "2003-04": 688679
+    },
+    "contract_id": "kempsh01-2003-09-30"
+   }
+  },
+  {
+   "record_id": "padgesc01-2003-09-30-amended-2004-01-10-ef0a461f12d6",
+   "recorded_on": "2004-01-10",
+   "player_id": "padgesc01",
+   "player": "Scott Padgett",
+   "contract_id": "padgesc01-2003-09-30",
+   "event": "amended",
+   "source": "career/Dwyane_Wade/2003-04/00_Team/Transactions/guarantee_review.json",
+   "contract": {
+    "player": "Scott Padgett",
+    "bbr_id": "padgesc01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 688679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 688679
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 4 years of service is $688,679 (was $638,679); minimum_salary_corrections.json. Guaranteed 2004-01-10: on the roster on the guarantee date.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "years_of_service": 4,
+    "contract_id": "padgesc01-2003-09-30"
+   }
+  },
+  {
+   "record_id": "parksch02-2003-10-27-amended-2004-01-10-bfa91687039f",
+   "recorded_on": "2004-01-10",
+   "player_id": "parksch02",
+   "player": "Cherokee Parks",
+   "contract_id": "parksch02-2003-10-27",
+   "event": "amended",
+   "source": "career/Dwyane_Wade/2003-04/00_Team/Transactions/guarantee_review.json",
+   "contract": {
+    "player": "Cherokee Parks",
+    "bbr_id": "parksch02",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 938679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 938679
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-10-27",
+    "route": "minimum",
+    "notes": "Signed October 27, 2003: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 8 years of service is $938,679 (was $638,679); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest). Guaranteed 2004-01-10: on the roster on the guarantee date.",
+    "sources": [
+     "04_Training_Camp/signing_corrections.json"
+    ],
+    "years_of_service": 8,
+    "cap_amount": {
+     "2003-04": 688679
+    },
+    "contract_id": "parksch02-2003-10-27"
+   }
+  },
+  {
+   "record_id": "hasleud01-2003-10-27-amended-2004-01-10-4b3c2afc8120",
+   "recorded_on": "2004-01-10",
+   "player_id": "hasleud01",
+   "player": "Udonis Haslem",
+   "contract_id": "hasleud01-2003-10-27",
+   "event": "amended",
+   "source": "career/Dwyane_Wade/2003-04/00_Team/Transactions/guarantee_review.json",
+   "contract": {
+    "player": "Udonis Haslem",
+    "bbr_id": "hasleud01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 366931
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 366931
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-10-27",
+    "route": "minimum",
+    "notes": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Guaranteed 2004-01-10: on the roster on the guarantee date.",
+    "sources": [
+     "04_Training_Camp/signing_corrections.json"
+    ],
+    "years_of_service": 0,
+    "contract_id": "hasleud01-2003-10-27"
+   }
+  },
+  {
+   "record_id": "wallajo01-2003-10-27-amended-2004-01-10-8e77aad0e65f",
+   "recorded_on": "2004-01-10",
+   "player_id": "wallajo01",
+   "player": "John Wallace",
+   "contract_id": "wallajo01-2003-10-27",
+   "event": "amended",
+   "source": "career/Dwyane_Wade/2003-04/00_Team/Transactions/guarantee_review.json",
+   "contract": {
+    "player": "John Wallace",
+    "bbr_id": "wallajo01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 813679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 813679
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-10-27",
+    "route": "minimum",
+    "notes": "Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 6 years of service is $813,679 (was $366,931); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest). Guaranteed 2004-01-10: on the roster on the guarantee date.",
+    "sources": [
+     "04_Training_Camp/signing_corrections.json"
+    ],
+    "years_of_service": 6,
+    "cap_amount": {
+     "2003-04": 688679
+    },
+    "contract_id": "wallajo01-2003-10-27"
+   }
   }
  ]
 }

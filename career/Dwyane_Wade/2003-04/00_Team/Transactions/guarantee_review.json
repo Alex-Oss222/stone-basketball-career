@@ -38,5 +38,32 @@
    "decision": "keep",
    "basis": "payroll $44,128,961 stays under the owner's ceiling $57,000,000; he stays for depth"
   }
+ ],
+ "guaranteed_on": "2004-01-10",
+ "guaranteed": [
+  {
+   "player": "Stephen Jackson",
+   "guaranteed": 663679
+  },
+  {
+   "player": "Shawn Kemp",
+   "guaranteed": 1070000
+  },
+  {
+   "player": "Scott Padgett",
+   "guaranteed": 688679
+  },
+  {
+   "player": "Cherokee Parks",
+   "guaranteed": 938679
+  },
+  {
+   "player": "Udonis Haslem",
+   "guaranteed": 366931
+  },
+  {
+   "player": "John Wallace",
+   "guaranteed": 813679
+  }
  ]
 }

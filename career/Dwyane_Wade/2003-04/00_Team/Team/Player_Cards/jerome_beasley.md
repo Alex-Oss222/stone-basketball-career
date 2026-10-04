@@ -10,7 +10,7 @@
 **Age at assessment:** 23 · **Height:** 6-10 · **Weight:** 237 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** November 11, 2003: draft rights renounced: Miami's fifteen roster places are all filled by signed players, so there is no place to sign him (1999 CBA Art. X §3(f); his Required Tender's acceptance period had ended). He is a rookie free agent. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** November 11, 2003: draft rights renounced: Miami's fifteen roster places are all filled by signed players, so there is no place to sign him (1999 CBA Art. X §3(f); his Required Tender's acceptance period had ended). He is a rookie free agent. (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/beaslje01.html#contract) · [Contract history](../../../../Contracts/players/beaslje01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

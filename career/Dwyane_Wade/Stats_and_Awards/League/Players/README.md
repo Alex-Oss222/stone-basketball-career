@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-09**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-01-10**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -241,7 +241,7 @@ Card date: **2004-01-09**. 504 registry players, one Markdown card and one inter
 | [Gary Trent](trentga01.md) | Minnesota Timberwolves | 29 | silhouette | [open](trentga01.html) |
 | [Gerald Wallace](wallage01.md) | Sacramento Kings | 21 | sourced | [open](wallage01.html) |
 | [Glen Rice](ricegl01.md) | Los Angeles Clippers | 36 | sourced | [open](ricegl01.html) |
-| [Glenn Robinson](robingl01.md) | Philadelphia 76ers | 30 | sourced | [open](robingl01.html) |
+| [Glenn Robinson](robingl01.md) | Philadelphia 76ers | 31 | sourced | [open](robingl01.html) |
 | [Gordan Giricek](giricgo01.md) | Orlando Magic | 26 | sourced | [open](giricgo01.html) |
 | [Hedo Turkoglu](turkohe01.md) | San Antonio Spurs | 24 | sourced | [open](turkohe01.html) |
 | [Ime Udoka](udokaim01.md) | Los Angeles Lakers | None | silhouette | [open](udokaim01.html) |

@@ -4,7 +4,7 @@
 **Age at assessment:** 24 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** September 30, 2003 · **Statistics through:** September 30, 2003
 
-**Contract/control:** October 27, 2003: released at the cut to 15 (non-guaranteed camp contract; no dead money). (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** October 27, 2003: released at the cut to 15 (non-guaranteed camp contract; no dead money). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/glovedi01.html#contract) · [Contract history](../../../../Contracts/players/glovedi01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

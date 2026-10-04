@@ -8,9 +8,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 28 · **Height:** 6-1 · **Weight:** 190 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-01-09 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-01-10 
 
-**Contract/control:** Player option exercised on June 30, 2003 (engine draw 2003-06-30-anthony_carter-player-option). (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Player option exercised on June 30, 2003 (engine draw 2003-06-30-anthony_carter-player-option). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/cartean01.html#contract) · [Contract history](../../../../Contracts/players/cartean01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
@@ -82,12 +82,12 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 24 closed Miami game(s) through 2004-01-09.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 25 closed Miami game(s) through 2004-01-10.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | MIA | 49 | 26 | 18.6 | 4.1 | 1.7 | 4.1 | 0.9 | 0.1 | 1.7 | 35.6% | 0.0% | 66.0% |
-| 2003-04 | MIA | 24 | 1 | 8.0 | 2.8 | 1.1 | 0.9 | 0.5 | 0.1 | 0.5 | 40.0% | 20.0% | 100.0% |
+| 2003-04 | MIA | 25 | 1 | 7.9 | 2.7 | 1.2 | 0.9 | 0.5 | 0.1 | 0.5 | 39.4% | 18.8% | 100.0% |
 
 <!-- veteran-details:start -->
 ### Additional statistics

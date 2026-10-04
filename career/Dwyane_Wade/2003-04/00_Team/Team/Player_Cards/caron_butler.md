@@ -8,9 +8,9 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 23 · **Height:** 6-7 · **Weight:** 228 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-01-09 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-01-10 
 
-**Contract/control:** Rookie contract through 2004-05, plus a 2005-06 team option; 2003-04 salary $1,804,680. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Rookie contract through 2004-05, plus a 2005-06 team option; 2003-04 salary $1,804,680. (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/butleca01.html#contract) · [Contract history](../../../../Contracts/players/butleca01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
@@ -84,12 +84,12 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 21 closed Miami game(s) through 2004-01-09.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 22 closed Miami game(s) through 2004-01-10.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | MIA | 78 | 78 | 36.6 | 15.4 | 5.1 | 2.7 | 1.8 | 0.4 | 2.5 | 41.6% | 31.8% | 82.4% |
-| 2003-04 | MIA | 21 | 21 | 32.1 | 11.0 | 5.0 | 1.7 | 0.8 | 0.3 | 1.1 | 39.6% | 13.3% | 69.0% |
+| 2003-04 | MIA | 22 | 22 | 32.3 | 11.3 | 5.0 | 1.6 | 0.8 | 0.3 | 1.0 | 39.1% | 12.5% | 68.8% |
 
 <!-- veteran-details:start -->
 ### Additional statistics

@@ -2,9 +2,9 @@
 
 # Contract | Scott Padgett
 
-Known through: 2004-01-09. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
+Known through: 2004-01-10. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
 
-Scott Padgett: camp contract. Evidence cutoff: 2004-01-09.
+Scott Padgett: camp contract. Evidence cutoff: 2004-01-10.
 
 ## Current contract
 
@@ -291,7 +291,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | $688,679 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2003-04 | $688,679 | Not recorded | Not recorded | $688,679 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -346,7 +346,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 4 years of service is $688,679 (was $638,679); minimum_salary_corrections.json.
+Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 4 years of service is $688,679 (was $638,679); minimum_salary_corrections.json. Guaranteed 2004-01-10: on the roster on the guarantee date.
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -356,6 +356,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/00_Team/Transactions/guarantee_review.json)
 
 ### Scott Padgett · existing contract; signing date not recorded
 
@@ -467,3 +468,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
 - [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
+- [Signing / contract source](../../2003-04/00_Team/Transactions/guarantee_review.json)

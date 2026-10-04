@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-10-seattle-supersonics-at-golden-state-warriors",
+ "game_date": "2004-01-10",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Golden State Warriors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ }
+}
