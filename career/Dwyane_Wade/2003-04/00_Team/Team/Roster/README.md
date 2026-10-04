@@ -2,15 +2,15 @@
 
 <!-- team-status:start -->
 
-[roster.json](roster.json) is the machine-readable register (team-control record dated 2004-01-10). Availability below is on 2004-01-29, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
+[roster.json](roster.json) is the machine-readable register (team-control record dated 2004-01-10). Availability below is on 2004-01-30, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
 
-| Player | Pos | Control | Availability on 2004-01-29 | Staff role |
+| Player | Pos | Control | Availability on 2004-01-30 | Staff role |
 | --- | --- | --- | --- | --- |
 | [Malik Allen](../Player_Cards/malik_allen.md) | PF | free agent rights held | Unsigned; Miami holds his free-agent rights | N/A |
 | [Caron Butler](../Player_Cards/caron_butler.md) | SF | under contract | Available | starter at SF, staff plan 34 minutes |
 | [Rasual Butler](../Player_Cards/rasual_butler.md) | SG/SF | team option exercised | Available | reserve outside the planned rotation |
-| [Anthony Carter](../Player_Cards/anthony_carter.md) | PG | player option exercised | Available | rotation at PG, staff plan 8 minutes |
-| [LaPhonso Ellis](../Player_Cards/laphonso_ellis.md) | PF | under contract guarantee amended | Available | rotation at PF, staff plan 4 minutes |
+| [Anthony Carter](../Player_Cards/anthony_carter.md) | PG | player option exercised | Available | rotation at PG, staff plan 4 minutes |
+| [LaPhonso Ellis](../Player_Cards/laphonso_ellis.md) | PF | under contract guarantee amended | Available | rotation at PF, staff plan 8 minutes |
 | [Brian Grant](../Player_Cards/brian_grant.md) | C/PF | under contract | Available | starter at C, staff plan 34 minutes |
 | [Mike James](../Player_Cards/mike_james.md) | PG | re signed | Available | starter at PG, staff plan 34 minutes |
 | [Eddie Jones](../Player_Cards/eddie_jones.md) | SG/SF | under contract | Available | rotation at SG, staff plan 12 minutes |

@@ -1,0 +1,41 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2004-01-30",
+ "team": "Miami Heat",
+ "status": "staff_review",
+ "game_ready": true,
+ "basis": "Fortnightly staff review 2004-01-30; fixed preseason estimate plus closed production per minute",
+ "positions": {
+  "PG": [
+   "Mike James",
+   "Anthony Carter"
+  ],
+  "SG": [
+   "Dwyane Wade",
+   "Stephen Jackson",
+   "Eddie Jones",
+   "Rasual Butler"
+  ],
+  "SF": [
+   "Caron Butler",
+   "Sean Lampley"
+  ],
+  "PF": [
+   "Scott Padgett",
+   "LaPhonso Ellis",
+   "John Wallace",
+   "Udonis Haslem"
+  ],
+  "C": [
+   "Brian Grant",
+   "Shawn Kemp",
+   "Cherokee Parks"
+  ]
+ },
+ "battles_drawn": {},
+ "unassigned_draft_rights": [],
+ "unassigned_arrivals": [],
+ "unavailable": [],
+ "departed": []
+}

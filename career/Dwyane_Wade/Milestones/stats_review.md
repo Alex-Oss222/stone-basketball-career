@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-01-29 · Miami Heat · active
+Career date: 2004-01-30 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-53 closed game records in 2003-04 through 2004-01-29. Competitions remain separate.
+54 closed game records in 2003-04 through 2004-01-30. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
-| regular | 46 | 34.5 | 17.0 | 4.7 | 4.8 | 1.2 | Complete |
+| regular | 47 | 34.5 | 17.1 | 4.8 | 4.8 | 1.2 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A |
-| regular | 260 | 524 | 0.496 | 37 | 109 | 0.339 |
+| regular | 268 | 539 | 0.497 | 39 | 111 | 0.351 |
 
 ## Closed source games
 
@@ -83,6 +83,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-01-24 | regular | New York Knicks | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_2.md) |
 | 2004-01-26 | regular | Houston Rockets | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_3.md) |
 | 2004-01-28 | regular | Cleveland Cavaliers | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_4.md) |
+| 2004-01-30 | regular | Los Angeles Clippers | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_5.md) |
 
 ## Evidence available for decisions
 
@@ -118,12 +119,12 @@ The next declared, closed game result or a chosen completed-period review.
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-01-16/review.json)
-- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-01-16/depth_chart.json)
+- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-01-30/review.json)
+- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-01-30/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-01-16/rotation.json)
+- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-01-30/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
@@ -183,4 +184,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_3.md)
 - [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_4.md)
+- [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)

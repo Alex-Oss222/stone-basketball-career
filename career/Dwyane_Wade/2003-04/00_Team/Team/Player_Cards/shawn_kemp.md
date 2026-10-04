@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C  
 **Age at assessment:** 33 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-01-29 
+**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-01-30 
 
 **Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10; guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at C, staff plan 20 minutes (staff rotation dated 2004-01-16, [record](../Depth_Chart/Reviews/2004-01-16/rotation.json)). On the injured list since 2004-01-28 (injury: 1 more game(s) out on the engine's draw).
+**Role:** Rotation at C, staff plan 20 minutes (staff rotation dated 2004-01-30, [record](../Depth_Chart/Reviews/2004-01-30/rotation.json)). On the injured list since 2004-01-28 (injury: 1 more game(s) out on the engine's draw).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -43,11 +43,12 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 | 2004-01-02 | Staff rotation of 2004-01-02: rotation at C, staff plan 20 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-02/rotation.json) |
 | 2004-01-16 | Staff rotation of 2004-01-16: rotation at C, staff plan 20 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-16/rotation.json) |
 | January 26, 2004 | Injured (day-to-day) in event `2004-01-26-houston-rockets-at-miami-heat`: out 1 game; the game builder leaves him out of Miami's next 1 game. No grade change. | [Game 3 result](../../../06_Regular_Season/01_January/Week_4/Game_3.md) |
+| 2004-01-30 | Staff rotation of 2004-01-30: rotation at C, staff plan 20 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-30/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [League baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json), [signing record](../../../04_Training_Camp/camp_roster.json).
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-01-16.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-01-30.
 
 <!-- yearly-statistics:start -->
 

@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C (center and power forward; register corrected 2003-11-11, listed SF at signing)  
 **Born:** 1972-10-11 · **Age at assessment:** 31 · **Height:** 6-11 · **Weight:** 235 lb · Identity: [Basketball-Reference](https://www.basketball-reference.com/players/p/parksch02.html)  
-**Opening assessment:** October 27, 2003 · **Statistics through:** 2004-01-29 
+**Opening assessment:** October 27, 2003 · **Statistics through:** 2004-01-30 
 
 **Contract/control:** Signed October 27, 2003: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 8 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at C, staff plan 10 minutes (staff rotation dated 2004-01-16, [record](../Depth_Chart/Reviews/2004-01-16/rotation.json)).
+**Role:** Rotation at C, staff plan 10 minutes (staff rotation dated 2004-01-30, [record](../Depth_Chart/Reviews/2004-01-30/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -36,11 +36,12 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 | 2003-12-19 | Staff rotation of 2003-12-19: rotation at C, staff plan 10 minutes. | [Rotation](../Depth_Chart/Reviews/2003-12-19/rotation.json) |
 | 2004-01-02 | Staff rotation of 2004-01-02: rotation at C, staff plan 10 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-02/rotation.json) |
 | 2004-01-16 | Staff rotation of 2004-01-16: rotation at C, staff plan 10 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-16/rotation.json) |
+| 2004-01-30 | Staff rotation of 2004-01-30: rotation at C, staff plan 10 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-30/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [League baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json), [signing record](../../../04_Training_Camp/signing_corrections.json).
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-01-16.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-01-30.
 
 <!-- yearly-statistics:start -->
 
@@ -53,7 +54,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | N/A | 30 | N/A | 21.6 | 6.3 | 4.4 | 0.7 | 0.5 | 0.7 | 0.6 | 0.503 | 0.500 | 0.605 |
-| 2003-04 | MIA | 46 | 0 | 11.8 | 4.1 | 2.4 | 1.0 | 0.4 | 0.2 | 0.7 | 39.4% | 22.6% | 78.8% |
+| 2003-04 | MIA | 47 | 0 | 11.8 | 4.1 | 2.5 | 1.0 | 0.4 | 0.2 | 0.7 | 38.9% | 21.9% | 79.2% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

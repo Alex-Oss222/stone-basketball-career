@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 33 · **Height:** 6-8 · **Weight:** 240 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-01-29 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-01-30 
 
 **Contract/control:** Under contract for 2003-04 at a reported approximately $3.6M. Guarantee trigger amended in January; exact protected amount unverified. No waiver decision recorded. (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at PF, staff plan 4 minutes (staff rotation dated 2004-01-16, [record](../Depth_Chart/Reviews/2004-01-16/rotation.json)).
+**Role:** Rotation at PF, staff plan 8 minutes (staff rotation dated 2004-01-30, [record](../Depth_Chart/Reviews/2004-01-30/rotation.json)).
 
 **Offense:** In 2002-03: 5.0 points and 0.3 assists per game; 47.6% true shooting at 19.3% usage.
 
@@ -68,6 +68,7 @@ Contract pages follow the current career date; this personnel assessment retains
 | 2003-12-19 | Staff rotation of 2003-12-19: rotation at PF, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2003-12-19/rotation.json) |
 | 2004-01-02 | Staff rotation of 2004-01-02: rotation at PF, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-02/rotation.json) |
 | 2004-01-16 | Staff rotation of 2004-01-16: rotation at PF, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-16/rotation.json) |
+| 2004-01-30 | Staff rotation of 2004-01-30: rotation at PF, staff plan 8 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-30/rotation.json) |
 
 ## Sources and uncertainty
 
@@ -75,7 +76,7 @@ Contract pages follow the current career date; this personnel assessment retains
   - [Miami roster/control register](../Roster/roster.json)
   - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
   - https://www.basketball-reference.com/players/e/ellisla01.html
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-01-16.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-01-30.
 
 <!-- yearly-statistics:start -->
 
@@ -83,12 +84,12 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 46 closed Miami game(s) through 2004-01-29.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 47 closed Miami game(s) through 2004-01-30.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | MIA | 55 | 3 | 14.3 | 5.0 | 2.9 | 0.3 | 0.3 | 0.3 | 0.6 | 38.2% | 25.2% | 75.8% |
-| 2003-04 | MIA | 46 | 5 | 8.0 | 2.4 | 1.7 | 0.3 | 0.1 | 0.2 | 0.4 | 33.6% | 24.5% | 70.0% |
+| 2003-04 | MIA | 47 | 5 | 8.0 | 2.4 | 1.7 | 0.3 | 0.1 | 0.3 | 0.4 | 34.6% | 24.5% | 70.0% |
 
 <!-- veteran-details:start -->
 ### Additional statistics

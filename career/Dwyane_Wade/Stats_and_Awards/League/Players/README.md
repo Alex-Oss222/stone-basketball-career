@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-29**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-01-30**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -246,7 +246,7 @@ Card date: **2004-01-29**. 504 registry players, one Markdown card and one inter
 | [Hedo Turkoglu](turkohe01.md) | San Antonio Spurs | 24 | sourced | [open](turkohe01.html) |
 | [Ime Udoka](udokaim01.md) | Los Angeles Lakers | None | silhouette | [open](udokaim01.html) |
 | [Ira Newble](newblir01.md) | Cleveland Cavaliers | 29 | sourced | [open](newblir01.html) |
-| [Jalen Rose](roseja01.md) | Chicago Bulls | 30 | sourced | [open](roseja01.html) |
+| [Jalen Rose](roseja01.md) | Chicago Bulls | 31 | sourced | [open](roseja01.html) |
 | [Jamal Mashburn](mashbja01.md) | New Orleans Hornets | 31 | silhouette | [open](mashbja01.html) |
 | [James Jones](jonesja02.md) | Indiana Pacers | 23 | sourced | [open](jonesja02.html) |
 | [James Posey](poseyja01.md) | Memphis Grizzlies | 27 | sourced | [open](poseyja01.html) |
@@ -255,7 +255,7 @@ Card date: **2004-01-29**. 504 registry players, one Markdown card and one inter
 | [Jim Jackson](jacksji01.md) | Houston Rockets | 33 | sourced | [open](jacksji01.html) |
 | [Jiri Welsch](welscji01.md) | Boston Celtics | 24 | sourced | [open](welscji01.html) |
 | [Joe Smith](smithjo02.md) | Milwaukee Bucks | 28 | sourced | [open](smithjo02.html) |
-| [Jonathan Bender](bendejo01.md) | Indiana Pacers | 22 | silhouette | [open](bendejo01.html) |
+| [Jonathan Bender](bendejo01.md) | Indiana Pacers | 23 | silhouette | [open](bendejo01.html) |
 | [Josh Howard](howarjo01.md) | Dallas Mavericks | 23 | sourced | [open](howarjo01.html) |
 | [Jumaine Jones](jonesju01.md) | Boston Celtics | 24 | sourced | [open](jonesju01.html) |
 | [Kedrick Brown](brownke01.md) | Boston Celtics | 22 | sourced | [open](brownke01.html) |
@@ -349,7 +349,7 @@ Card date: **2004-01-29**. 504 registry players, one Markdown card and one inter
 | [Danny Manning](mannida01.md) | Detroit Pistons | 37 | sourced | [open](mannida01.html) |
 | [Darius Songaila](songada01.md) | Sacramento Kings | None | silhouette | [open](songada01.html) |
 | [David West](westda01.md) | New Orleans Hornets | 23 | sourced | [open](westda01.html) |
-| [DeSagana Diop](diopde01.md) | Cleveland Cavaliers | 21 | sourced | [open](diopde01.html) |
+| [DeSagana Diop](diopde01.md) | Cleveland Cavaliers | 22 | sourced | [open](diopde01.html) |
 | [Desmond Penigar](penigde01.md) | Orlando Magic | None | silhouette | [open](penigde01.html) |
 | [Dirk Nowitzki](nowitdi01.md) | Dallas Mavericks | 25 | sourced | [open](nowitdi01.html) |
 | [Don Reid](reiddo01.md) | Sacramento Kings | None | silhouette | [open](reiddo01.html) |
@@ -537,7 +537,7 @@ Card date: **2004-01-29**. 504 registry players, one Markdown card and one inter
 | [Shaquille O'Neal](onealsh01.md) | Los Angeles Lakers | 31 | sourced | [open](onealsh01.html) |
 | [Shawn Bradley](bradlsh01.md) | Dallas Mavericks | 31 | sourced | [open](bradlsh01.html) |
 | [Shawn Kemp](kempsh01.md) | Miami Heat | 34 | sourced | [open](kempsh01.html) |
-| [Slavko Vranes](vranesl01.md) | New York Knicks | 20 | sourced | [open](vranesl01.html) |
+| [Slavko Vranes](vranesl01.md) | New York Knicks | 21 | sourced | [open](vranesl01.html) |
 | [Sofoklis Schortsanitis](schorso01.md) | Los Angeles Clippers (draft rights) | 18 | sourced | [open](schorso01.html) |
 | [Steven Hunter](huntest01.md) | Orlando Magic | 22 | sourced | [open](huntest01.html) |
 | [Theo Ratliff](ratlith01.md) | Atlanta Hawks | 30 | sourced | [open](ratlith01.html) |
