@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-26**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-01-27**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -253,7 +253,7 @@ Card date: **2004-01-26**. 504 registry players, one Markdown card and one inter
 | [Jarvis Hayes](hayesja01.md) | Washington Wizards | 22 | sourced | [open](hayesja01.html) |
 | [Jason Kapono](kaponja01.md) | Cleveland Cavaliers | 22 | sourced | [open](kaponja01.html) |
 | [Jim Jackson](jacksji01.md) | Houston Rockets | 33 | sourced | [open](jacksji01.html) |
-| [Jiri Welsch](welscji01.md) | Boston Celtics | 23 | sourced | [open](welscji01.html) |
+| [Jiri Welsch](welscji01.md) | Boston Celtics | 24 | sourced | [open](welscji01.html) |
 | [Joe Smith](smithjo02.md) | Milwaukee Bucks | 28 | sourced | [open](smithjo02.html) |
 | [Jonathan Bender](bendejo01.md) | Indiana Pacers | 22 | silhouette | [open](bendejo01.html) |
 | [Josh Howard](howarjo01.md) | Dallas Mavericks | 23 | sourced | [open](howarjo01.html) |
@@ -503,7 +503,7 @@ Card date: **2004-01-26**. 504 registry players, one Markdown card and one inter
 | [Kurt Thomas](thomaku01.md) | New York Knicks | 31 | sourced | [open](thomaku01.html) |
 | [Kwame Brown](brownkw01.md) | Washington Wizards | 21 | sourced | [open](brownkw01.html) |
 | [Leon Smith](smithle01.md) | Seattle SuperSonics | None | silhouette | [open](smithle01.html) |
-| [Lonny Baxter](baxtelo01.md) | Chicago Bulls | 24 | sourced | [open](baxtelo01.html) |
+| [Lonny Baxter](baxtelo01.md) | Chicago Bulls | 25 | sourced | [open](baxtelo01.html) |
 | [Loren Woods](woodslo01.md) | Minnesota Timberwolves | 25 | sourced | [open](woodslo01.html) |
 | [Lorenzen Wright](wrighlo02.md) | Memphis Grizzlies | None | silhouette | [open](wrighlo02.html) |
 | [Mamadou N'diaye](ndiayma02.md) | Dallas Mavericks | 28 | silhouette | [open](ndiayma02.html) |

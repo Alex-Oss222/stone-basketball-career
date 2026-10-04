@@ -2,9 +2,9 @@
 
 # Contract | Greg Buckner
 
-Known through: 2004-01-26. [Open interactive contract](buckngr01.html#contract) · [Contract history](buckngr01.html#contract-history)
+Known through: 2004-01-27. [Open interactive contract](buckngr01.html#contract) · [Contract history](buckngr01.html#contract-history)
 
-Greg Buckner: under contract. Evidence cutoff: 2004-01-26.
+Greg Buckner: under contract. Evidence cutoff: 2004-01-27.
 
 ## Current contract
 

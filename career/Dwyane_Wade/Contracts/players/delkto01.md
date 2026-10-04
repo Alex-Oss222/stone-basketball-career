@@ -2,9 +2,9 @@
 
 # Contract | Tony Delk
 
-Known through: 2004-01-26. [Open interactive contract](delkto01.html#contract) · [Contract history](delkto01.html#contract-history)
+Known through: 2004-01-27. [Open interactive contract](delkto01.html#contract) · [Contract history](delkto01.html#contract-history)
 
-Tony Delk: under contract. Evidence cutoff: 2004-01-26.
+Tony Delk: under contract. Evidence cutoff: 2004-01-27.
 
 ## Current contract
 

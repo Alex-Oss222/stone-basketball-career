@@ -2,9 +2,9 @@
 
 # Contract | Dahntay Jones
 
-Known through: 2004-01-26. [Open interactive contract](jonesda02.html#contract) · [Contract history](jonesda02.html#contract-history)
+Known through: 2004-01-27. [Open interactive contract](jonesda02.html#contract) · [Contract history](jonesda02.html#contract-history)
 
-Dahntay Jones: No verified contract record. Evidence cutoff: 2004-01-26.
+Dahntay Jones: No verified contract record. Evidence cutoff: 2004-01-27.
 
 ## Current contract
 
