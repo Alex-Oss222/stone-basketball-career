@@ -97,7 +97,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2003-04 | MIA | 17 | 12 | 32.5 | 15.5 | 4.8 | 4.3 | 1.3 | 0.6 | 1.1 | 51.4% | 26.3% | 92.2% |
+| 2003-04 | MIA | 18 | 13 | 32.8 | 15.7 | 4.8 | 4.6 | 1.4 | 0.6 | 1.1 | 51.3% | 27.5% | 92.6% |
 
 Source: [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json) for roster status; detailed historical statistical lines have not yet been imported.
 

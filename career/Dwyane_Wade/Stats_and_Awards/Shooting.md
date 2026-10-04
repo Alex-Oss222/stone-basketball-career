@@ -12,17 +12,17 @@ The detailed court and tables open by default. Missing locations remain unavaila
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 17 | 0 | 17 | 91 / 177 | 51.4% | 10 / 38 | 263 | partial |
+| 18 | 0 | 18 | 98 / 191 | 51.3% | 11 / 40 | 282 | partial |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | N/A | N/A | N/A | N/A | N/A | 73 |
-| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 2 |
-| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 9 |
-| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 24 |
-| Three-point range | N/A | N/A | N/A | N/A | N/A | 20 |
+| Paint | N/A | N/A | N/A | N/A | N/A | 80 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 3 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 11 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 26 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 22 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -43,6 +43,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2003-11-25 | New Orleans Hornets | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_4/Game_2.result.json) |
 | 2003-11-28 | Atlanta Hawks | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.result.json) |
 | 2003-11-29 | Toronto Raptors | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.result.json) |
+| 2003-12-03 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
 
 ## 2003-10 · NBA regular season
 
@@ -224,6 +225,50 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2003-11-25 | New Orleans Hornets | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_4/Game_2.result.json) |
 | 2003-11-28 | Atlanta Hawks | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.result.json) |
 | 2003-11-29 | Toronto Raptors | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.result.json) |
+
+## 2003-12 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-month-2003-12-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 7 / 14 | 50.0% | 1 / 2 | 19 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 3 | 7 | 42.9% | 6.00 | 7.00 | 7 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 2 | 2 | 100.0% | 4.00 | 2.00 | 2 |
+| 18 ft to the three-point line | 0 | 2 | 0.0% | 0.00 | 2.00 | 2 |
+| Three-point range | 1 | 2 | 50.0% | 3.00 | 2.00 | 2 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2003-12-03 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
+
+## 2003-12-01 to 2003-12-03 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-week-2003-12-01#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 7 / 14 | 50.0% | 1 / 2 | 19 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 3 | 7 | 42.9% | 6.00 | 7.00 | 7 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 2 | 2 | 100.0% | 4.00 | 2.00 | 2 |
+| 18 ft to the three-point line | 0 | 2 | 0.0% | 0.00 | 2.00 | 2 |
+| Three-point range | 1 | 2 | 50.0% | 3.00 | 2.00 | 2 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2003-12-03 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
 
 ## 2003-10-28 at Philadelphia 76ers · Played · NBA regular season
 
@@ -598,6 +643,28 @@ Simulated engine shot locations come from the original closed game results. Part
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2003-11-29 | Toronto Raptors | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.result.json) |
+
+## 2003-12-03 at Detroit Pistons · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-c68205aca9b8c2ea#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 7 / 14 | 50.0% | 1 / 2 | 19 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 3 | 7 | 42.9% | 6.00 | 7.00 | 7 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 2 | 2 | 100.0% | 4.00 | 2.00 | 2 |
+| 18 ft to the three-point line | 0 | 2 | 0.0% | 0.00 | 2.00 | 2 |
+| Three-point range | 1 | 2 | 50.0% | 3.00 | 2.00 | 2 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2003-12-03 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
 
 ## 2003-04 · NBA preseason · through 2003-12-03
 

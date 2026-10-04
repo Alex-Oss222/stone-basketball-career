@@ -79,12 +79,12 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 17 closed Miami game(s) through 2003-12-03.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 18 closed Miami game(s) through 2003-12-03.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | MIA | 55 | 3 | 14.3 | 5.0 | 2.9 | 0.3 | 0.3 | 0.3 | 0.6 | 38.2% | 25.2% | 75.8% |
-| 2003-04 | MIA | 17 | 0 | 8.2 | 2.1 | 1.5 | 0.4 | 0.1 | 0.2 | 0.3 | 26.5% | 20.0% | 100.0% |
+| 2003-04 | MIA | 18 | 0 | 7.9 | 2.2 | 1.6 | 0.3 | 0.1 | 0.2 | 0.3 | 29.4% | 20.0% | 100.0% |
 
 <!-- veteran-details:start -->
 ### Additional statistics

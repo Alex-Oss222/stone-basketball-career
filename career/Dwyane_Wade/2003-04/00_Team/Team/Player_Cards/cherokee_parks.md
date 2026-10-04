@@ -49,7 +49,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | N/A | 30 | N/A | 21.6 | 6.3 | 4.4 | 0.7 | 0.5 | 0.7 | 0.6 | 0.503 | 0.500 | 0.605 |
-| 2003-04 | MIA | 17 | 0 | 10.4 | 3.5 | 1.8 | 0.9 | 0.4 | 0.2 | 0.5 | 39.0% | 28.6% | 75.0% |
+| 2003-04 | MIA | 18 | 0 | 10.4 | 3.3 | 1.9 | 0.9 | 0.4 | 0.2 | 0.5 | 38.3% | 28.6% | 75.0% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

@@ -119,8 +119,25 @@ def _lines(rows, start, end):
     return out, club_games
 
 
-def rank(award, start, end, rows, conf, first_years):
+def registry_names(root=ROOT):
+    """{name in the season's real roster file: the registry's name for the same bbr_id} where they differ. The roster
+    file keys a few players by a later name (Metta World Peace for the 2003-04 Ron Artest); records use the dated one."""
+    from .rotations import load_rosters
+    root = Path(root)
+    registry = json.loads((root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json").read_text(encoding="utf-8"))
+    by_bbr = {p["bbr_id"]: p["name"] for p in (registry["players"] if isinstance(registry, dict) else registry) if p.get("bbr_id")}
+    out = {}
+    for club in load_rosters(SEASON, root).values():
+        for p in club["players"]:
+            name = by_bbr.get(p.get("bbr_id"))
+            if name and name != p["player_id"]:
+                out[p["player_id"]] = name
+    return out
+
+
+def rank(award, start, end, rows, conf, first_years, names=None):
     lines, club_games = _lines(rows, start, end)
+    names = names or {}
     table = defaultdict(list)
     for player, games in lines.items():
         team = sorted(games, key=lambda g: g["date"])[-1]["team"]       # his club at the period's end
@@ -139,7 +156,7 @@ def rank(award, start, end, rows, conf, first_years):
             weight = MONTH_WIN_WEIGHT if award == "player_of_month" else ROOKIE_WIN_WEIGHT
             score = total / n + weight * wins / n
         table[conf[team]].append({
-            "player": player, "team": team, "games": n, "wins": wins, "losses": n - wins,
+            "player": names.get(player, player), "team": team, "games": n, "wins": wins, "losses": n - wins,
             "pts": round(sum(g["pts"] for g in games) / n, 1), "reb": round(sum(g["reb"] for g in games) / n, 1),
             "ast": round(sum(g["ast"] for g in games) / n, 1), "game_score": round(total / n, 2), "score": round(score, 3)})
     # Scores compare at two decimals; a tie at the top is drawn by the engine, never by name or float noise.
@@ -190,10 +207,10 @@ def decide(root=ROOT, clock=None):
     if not pending:
         return []
     rows = closed_results(root, SEASON, clock)
-    conf, first = conferences(root), rookies(root)
+    conf, first, names = conferences(root), rookies(root), registry_names(root)
     new = []
     for award, start, end, announced in pending:
-        shortlist = rank(award, start, end, rows, conf, first)
+        shortlist = rank(award, start, end, rows, conf, first, names)
         for c in ("East", "West"):
             if (award, start, c) in done:
                 continue
