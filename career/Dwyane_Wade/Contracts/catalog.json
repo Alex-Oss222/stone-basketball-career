@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-01-14",
+  "as_of": "2004-01-15",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2750,10 +2750,10 @@
     {
       "player_id": "jacksma01",
       "name": "Mark Jackson",
-      "team": "Utah Jazz",
-      "status": "on the 2003-04 roster; contract terms not in the dated records",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Houston Rockets",
+      "status": "under contract",
+      "current_contract_id": "jacksma01-2004-01-15",
+      "recorded_agreements": 2,
       "href": "players/jacksma01.html#contract"
     },
     {

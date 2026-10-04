@@ -2,9 +2,9 @@
 
 # Contract | Desmond Penigar
 
-Known through: 2004-01-14. [Open interactive contract](penigde01.html#contract) · [Contract history](penigde01.html#contract-history)
+Known through: 2004-01-15. [Open interactive contract](penigde01.html#contract) · [Contract history](penigde01.html#contract-history)
 
-Desmond Penigar: No verified contract record. Evidence cutoff: 2004-01-14.
+Desmond Penigar: No verified contract record. Evidence cutoff: 2004-01-15.
 
 ## Current contract
 

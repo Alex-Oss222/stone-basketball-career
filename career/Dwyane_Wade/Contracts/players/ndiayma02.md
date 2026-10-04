@@ -2,9 +2,9 @@
 
 # Contract | Mamadou N'diaye
 
-Known through: 2004-01-14. [Open interactive contract](ndiayma02.html#contract) · [Contract history](ndiayma02.html#contract-history)
+Known through: 2004-01-15. [Open interactive contract](ndiayma02.html#contract) · [Contract history](ndiayma02.html#contract-history)
 
-Mamadou N'diaye: under contract. Evidence cutoff: 2004-01-14.
+Mamadou N'diaye: under contract. Evidence cutoff: 2004-01-15.
 
 ## Current contract
 

@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-15-cleveland-cavaliers-at-golden-state-warriors",
+ "game_date": "2004-01-15",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Golden State Warriors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ }
+}

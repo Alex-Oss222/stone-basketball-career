@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-01-14. [Search the contract directory](index.html)
+Known through 2004-01-15. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -313,7 +313,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Mario Austin](players/austima01.md) | Chicago Bulls | No verified contract record | No verified current agreement | 0 |
 | [Mark Blount](players/blounma01.md) | Boston Celtics | under contract | Mark Blount · 2003-07-16 | 2 |
 | [Mark Bryant](players/bryanma01.md) | Free agent | not with an NBA club (status not established) (researched, date not recorded) | No verified current agreement | 1 |
-| [Mark Jackson](players/jacksma01.md) | Utah Jazz | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
+| [Mark Jackson](players/jacksma01.md) | Houston Rockets | under contract | Mark Jackson · 2004-01-15 | 2 |
 | [Mark Madsen](players/madsema01.md) | Minnesota Timberwolves | under contract | Mark Madsen · 2003-07-28 | 2 |
 | [Mark Pope](players/popema01.md) | Denver Nuggets | under contract | Mark Pope · 2003-09-20 | 2 |
 | [Marko Jaric](players/jaricma01.md) | Los Angeles Clippers | under contract | Marko Jaric · existing contract; signing date not recorded | 1 |

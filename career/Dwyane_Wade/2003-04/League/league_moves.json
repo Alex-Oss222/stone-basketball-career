@@ -1211,6 +1211,152 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.04 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-15-expire-penigde01",
+   "date": "2004-01-15",
+   "kind": "expire",
+   "player": "Desmond Penigar",
+   "bbr_id": "penigde01",
+   "from": "Golden State Warriors",
+   "to": null,
+   "role": {
+    "player_id": "Desmond Penigar",
+    "bbr_id": "penigde01",
+    "position": "PF",
+    "games": 10,
+    "minutes": 89
+   },
+   "contract": null,
+   "note": "10-day contract ended"
+  },
+  {
+   "id": "2003-04-market-2004-01-15-rest_of_season-sampsja01",
+   "date": "2004-01-15",
+   "kind": "rest_of_season",
+   "player": "Jamal Sampson",
+   "bbr_id": "sampsja01",
+   "from": "Houston Rockets",
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Jamal Sampson",
+    "bbr_id": "sampsja01",
+    "position": "C",
+    "games": 10,
+    "minutes": 130
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": ""
+  },
+  {
+   "id": "2003-04-market-2004-01-15-rest_of_season-livinra01",
+   "date": "2004-01-15",
+   "kind": "rest_of_season",
+   "player": "Randy Livingston",
+   "bbr_id": "livinra01",
+   "from": "Houston Rockets",
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Randy Livingston",
+    "bbr_id": "livinra01",
+    "position": "PG",
+    "games": 4,
+    "minutes": 48
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": ""
+  },
+  {
+   "id": "2003-04-market-2004-01-15-waive-russebr01",
+   "date": "2004-01-15",
+   "kind": "waive",
+   "player": "Bryon Russell",
+   "bbr_id": "russebr01",
+   "from": "Los Angeles Lakers",
+   "to": null,
+   "role": {
+    "player_id": "Bryon Russell",
+    "bbr_id": "russebr01",
+    "position": "SF",
+    "games": 72,
+    "minutes": 945
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-01-17"
+  },
+  {
+   "id": "2003-04-market-2004-01-15-ten_day-penigde01",
+   "date": "2004-01-15",
+   "kind": "ten_day",
+   "player": "Desmond Penigar",
+   "bbr_id": "penigde01",
+   "from": null,
+   "to": "Los Angeles Lakers",
+   "role": {
+    "player_id": "Desmond Penigar",
+    "bbr_id": "penigde01",
+    "position": "PF",
+    "games": 10,
+    "minutes": 89
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-25",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.9 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-15-ten_day-rooksse01",
+   "date": "2004-01-15",
+   "kind": "ten_day",
+   "player": "Sean Rooks",
+   "bbr_id": "rooksse01",
+   "from": null,
+   "to": "Milwaukee Bucks",
+   "role": {
+    "player_id": "Sean Rooks",
+    "bbr_id": "rooksse01",
+    "position": "C",
+    "games": 55,
+    "minutes": 595
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-25",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.02 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-15-ten_day-dickeka01",
+   "date": "2004-01-15",
+   "kind": "ten_day",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": "Toronto Raptors",
+   "to": "Toronto Raptors",
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-25",
+    "salary": "pro-rated minimum"
+   },
+   "note": "second 10-day contract"
   }
  ]
 }

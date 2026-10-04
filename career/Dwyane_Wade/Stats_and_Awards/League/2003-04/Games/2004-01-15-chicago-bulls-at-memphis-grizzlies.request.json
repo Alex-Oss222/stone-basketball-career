@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-15-chicago-bulls-at-memphis-grizzlies",
+ "game_date": "2004-01-15",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Chicago Bulls",
+  "rotation": "real"
+ }
+}

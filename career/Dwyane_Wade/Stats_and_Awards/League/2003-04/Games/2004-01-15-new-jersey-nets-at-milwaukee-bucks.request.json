@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-15-new-jersey-nets-at-milwaukee-bucks",
+ "game_date": "2004-01-15",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ }
+}
