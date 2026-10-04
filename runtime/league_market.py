@@ -41,7 +41,7 @@ SEASON_END = "2004-04-14"
 TEN_DAY_DAYS = 10
 # Judgement constants, calibrated against the 2003-04 volume in the rules file (docs/symmetric_league_design.md).
 INJURED_FOR_TEN_DAY = 1             # before NEED_RULE_FROM: one injured regular was enough (2.5x the real 10-day rate)
-NEED_RULE_FROM = "2004-01-19"       # from this date a 10-day is an emergency fill: healthy players under contract below 12
+NEED_RULE_FROM = "2004-01-20"       # from this date a 10-day is an emergency fill: healthy players under contract below 12
 CONTRIBUTOR_MINUTES = 10.0          # judgement: a 10-day player averaging this many minutes a club game is kept
 UPGRADE_MARGIN = 1.2
 WAIVER_DAYS = 2                      # 48-hour waivers (1999 CBA, nba_1999_in_season_rules.json)

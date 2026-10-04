@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-01-19",
+  "as_of": "2004-01-20",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-01-19"
+              "2004-01-20"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2004-01-19",
+              "2004-01-20",
               "Current checkpoint",
               "2004-01-18-miami-heat-at-denver-nuggets",
               "Recorded",
@@ -94,8 +94,8 @@
               }
             ],
             [
-              "2004-01-20",
-              "Next Miami game, vs Boston Celtics",
+              "2004-01-23",
+              "Next Miami game, vs New Jersey Nets",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
@@ -496,6 +496,10 @@
           "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -504,7 +508,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-19"
+          "value": "2004-01-20"
         },
         {
           "label": "Team",
@@ -938,6 +942,10 @@
           "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -946,7 +954,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-19"
+          "value": "2004-01-20"
         },
         {
           "label": "Team",
@@ -1433,6 +1441,10 @@
           "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1441,7 +1453,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-19"
+          "value": "2004-01-20"
         },
         {
           "label": "Team",
@@ -2036,6 +2048,10 @@
           "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2044,7 +2060,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-19"
+          "value": "2004-01-20"
         },
         {
           "label": "Team",
@@ -2448,6 +2464,10 @@
           "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2456,7 +2476,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-19"
+          "value": "2004-01-20"
         },
         {
           "label": "Team",
@@ -2856,6 +2876,10 @@
           "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2864,7 +2888,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-19"
+          "value": "2004-01-20"
         },
         {
           "label": "Team",
@@ -3273,6 +3297,10 @@
           "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3281,7 +3309,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-19"
+          "value": "2004-01-20"
         },
         {
           "label": "Team",
@@ -3738,6 +3766,10 @@
           "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3746,7 +3778,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-19"
+          "value": "2004-01-20"
         },
         {
           "label": "Team",
@@ -3763,7 +3795,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "48 closed game records in 2003-04 through 2004-01-19. Competitions remain separate.",
+      "summary": "49 closed game records in 2003-04 through 2004-01-20. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3790,12 +3822,12 @@
             ],
             [
               "regular",
-              41,
-              34.52576422764228,
-              17.21951219512195,
-              4.536585365853658,
-              4.902439024390244,
-              1.0975609756097562,
+              42,
+              34.56812619047619,
+              17.238095238095237,
+              4.595238095238095,
+              4.857142857142857,
+              1.0952380952380953,
               "Complete"
             ]
           ]
@@ -3823,12 +3855,12 @@
             ],
             [
               "regular",
-              238,
-              468,
-              0.5085470085470085,
-              31,
-              92,
-              0.33695652173913043
+              245,
+              481,
+              0.5093555093555093,
+              32,
+              95,
+              0.3368421052631579
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -4322,6 +4354,16 @@
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_3.md"
               }
+            ],
+            [
+              "2004-01-20",
+              "regular",
+              "Boston Celtics",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md"
+              }
             ]
           ]
         },
@@ -4651,6 +4693,10 @@
           "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4659,7 +4705,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-19"
+          "value": "2004-01-20"
         },
         {
           "label": "Team",

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-19**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-01-20**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -153,7 +153,7 @@ Card date: **2004-01-19**. 504 registry players, one Markdown card and one inter
 | [George Lynch](lynchge01.md) | New Orleans Hornets | 33 | silhouette | [open](lynchge01.html) |
 | [Greg Buckner](buckngr01.md) | Philadelphia 76ers | 27 | silhouette | [open](buckngr01.html) |
 | [Hubert Davis](davishu01.md) | Detroit Pistons | None | silhouette | [open](davishu01.html) |
-| [Jason Richardson](richaja01.md) | Golden State Warriors | 22 | sourced | [open](richaja01.html) |
+| [Jason Richardson](richaja01.md) | Golden State Warriors | 23 | sourced | [open](richaja01.html) |
 | [Jeff Trepagnier](trepaje01.md) | Denver Nuggets | 24 | silhouette | [open](trepaje01.html) |
 | [Jermaine Jackson](jacksje01.md) | Atlanta Hawks | 27 | sourced | [open](jacksje01.html) |
 | [Jerry Stackhouse](stackje01.md) | Washington Wizards | 29 | sourced | [open](stackje01.html) |
@@ -245,7 +245,7 @@ Card date: **2004-01-19**. 504 registry players, one Markdown card and one inter
 | [Gordan Giricek](giricgo01.md) | Orlando Magic | 26 | sourced | [open](giricgo01.html) |
 | [Hedo Turkoglu](turkohe01.md) | San Antonio Spurs | 24 | sourced | [open](turkohe01.html) |
 | [Ime Udoka](udokaim01.md) | Los Angeles Lakers | None | silhouette | [open](udokaim01.html) |
-| [Ira Newble](newblir01.md) | Cleveland Cavaliers | 28 | sourced | [open](newblir01.html) |
+| [Ira Newble](newblir01.md) | Cleveland Cavaliers | 29 | sourced | [open](newblir01.html) |
 | [Jalen Rose](roseja01.md) | Chicago Bulls | 30 | sourced | [open](roseja01.html) |
 | [Jamal Mashburn](mashbja01.md) | New Orleans Hornets | 31 | silhouette | [open](mashbja01.html) |
 | [James Jones](jonesja02.md) | Indiana Pacers | 23 | sourced | [open](jonesja02.html) |

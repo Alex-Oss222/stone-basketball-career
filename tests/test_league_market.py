@@ -73,6 +73,18 @@ class LeagueMarketTests(unittest.TestCase):
                     if w["bbr_id"] == e["bbr_id"]:
                         self.assertFalse(w["date"] <= e["date"] < (LM.date.fromisoformat(w["date"]) + LM.timedelta(days=LM.WAIVER_DAYS)).isoformat())
 
+    def test_from_january_20_a_ten_day_fills_a_short_club_and_a_contributor_is_kept(self):
+        self.assertEqual(LM.NEED_RULE_FROM, "2004-01-20")
+        day = "2004-01-25"                                          # a setUpClass market day under the need rule
+        desk = LM.LeagueMarket(day, Market(day, self.root), self.root)
+        for e in self.moves:
+            if e["date"] >= LM.NEED_RULE_FROM and e["kind"] == "rest_of_season" and e.get("from") == e.get("to"):
+                self.assertIn("kept:", e["note"])                       # a renewal names the minutes that earned it
+            if e["date"] >= LM.NEED_RULE_FROM and e["kind"] == "expire":
+                self.assertIn("minutes a game", e["note"])
+        with mock.patch.object(desk, "injured_regulars", return_value=0):
+            self.assertFalse(any(desk.short_handed(c) for c in desk.clubs if len(desk.rosters[c]) >= 12))
+
     def test_off_switch_writes_nothing(self):
         with mock.patch.object(LB, "SYMMETRIC_FROM", None), self.assertRaises(ValueError):
             LM.LeagueMarket("2004-01-05", Market("2004-01-05", self.root), self.root)

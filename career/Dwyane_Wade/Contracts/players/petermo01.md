@@ -2,9 +2,9 @@
 
 # Contract | Morris Peterson
 
-Known through: 2004-01-19. [Open interactive contract](petermo01.html#contract) · [Contract history](petermo01.html#contract-history)
+Known through: 2004-01-20. [Open interactive contract](petermo01.html#contract) · [Contract history](petermo01.html#contract-history)
 
-Morris Peterson: under rookie contract. Evidence cutoff: 2004-01-19.
+Morris Peterson: under rookie contract. Evidence cutoff: 2004-01-20.
 
 ## Current contract
 

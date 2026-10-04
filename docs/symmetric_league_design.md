@@ -32,6 +32,10 @@ Under option D the 28 other clubs follow history: real rosters, real minute shar
 
 On the activation date each club holds the players whose real stint covers it. A real trade whose next stint begins within 8 games after the date is completed (the Rose-Davis trade of December 1, 2003). Each club keeps its fifteen largest real roles, never letting go of a rookie-scale contract, a 2003 first-round pick or a salary above the highest minimum. The others start as free agents in the market's pool.
 
+## 10-day contracts from January 20, 2004
+
+The first rule signed a 10-day whenever one regular was injured: 20 in the first 14 days, about 2.5 times the real 2003-04 rate (about 60 from January 5 to the season's end). From January 20 a 10-day is an emergency fill: a club signs one only when its healthy players under contract fall below twelve (`NEED_RULE_FROM`). When a 10-day ends, a player who averaged `CONTRIBUTOR_MINUTES` (10, judgement) per club game is kept for the rest of the season; otherwise he gets a second 10-day only while the club is still short, or goes. Moves before January 20 stand.
+
 ## Calibration (against `nba_1999_in_season_rules.json`, calibration_2003_04)
 
 These are volume targets only, never decisions.

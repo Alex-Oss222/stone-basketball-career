@@ -2,9 +2,9 @@
 
 # Contract | Tim Duncan
 
-Known through: 2004-01-19. [Open interactive contract](duncati01.html#contract) · [Contract history](duncati01.html#contract-history)
+Known through: 2004-01-20. [Open interactive contract](duncati01.html#contract) · [Contract history](duncati01.html#contract-history)
 
-Tim Duncan: under contract. Evidence cutoff: 2004-01-19.
+Tim Duncan: under contract. Evidence cutoff: 2004-01-20.
 
 ## Current contract
 

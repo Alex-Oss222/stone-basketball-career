@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-20-portland-trail-blazers-at-sacramento-kings",
+ "game_date": "2004-01-20",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ }
+}

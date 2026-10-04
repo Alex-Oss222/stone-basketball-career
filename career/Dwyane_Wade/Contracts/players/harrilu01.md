@@ -2,9 +2,9 @@
 
 # Contract | Lucious Harris
 
-Known through: 2004-01-19. [Open interactive contract](harrilu01.html#contract) · [Contract history](harrilu01.html#contract-history)
+Known through: 2004-01-20. [Open interactive contract](harrilu01.html#contract) · [Contract history](harrilu01.html#contract-history)
 
-Lucious Harris: under contract. Evidence cutoff: 2004-01-19.
+Lucious Harris: under contract. Evidence cutoff: 2004-01-20.
 
 ## Current contract
 

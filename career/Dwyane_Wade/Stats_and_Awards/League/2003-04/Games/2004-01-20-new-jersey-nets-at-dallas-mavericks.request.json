@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-20-new-jersey-nets-at-dallas-mavericks",
+ "game_date": "2004-01-20",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Dallas Mavericks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ }
+}

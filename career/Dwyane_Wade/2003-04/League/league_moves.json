@@ -1607,6 +1607,43 @@
    "bbr_id": "anderch01",
    "from": "Denver Nuggets",
    "to": "Dallas Mavericks"
+  },
+  {
+   "id": "2003-04-market-2004-01-20-clear-jacksma01",
+   "date": "2004-01-20",
+   "kind": "clear",
+   "player": "Mark Jackson",
+   "bbr_id": "jacksma01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Mark Jackson",
+    "bbr_id": "jacksma01",
+    "position": "PG",
+    "games": 42,
+    "minutes": 577
+   },
+   "contract": null,
+   "note": "cleared waivers from Milwaukee Bucks: a free agent",
+   "waiver": "2003-04-market-2004-01-18-waive-jacksma01"
+  },
+  {
+   "id": "2003-04-market-2004-01-20-expire-goldwan01",
+   "date": "2004-01-20",
+   "kind": "expire",
+   "player": "Anthony Goldwire",
+   "bbr_id": "goldwan01",
+   "from": "Dallas Mavericks",
+   "to": null,
+   "role": {
+    "player_id": "Anthony Goldwire",
+    "bbr_id": "goldwan01",
+    "position": "PG",
+    "games": 11,
+    "minutes": 85
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
   }
  ]
 }

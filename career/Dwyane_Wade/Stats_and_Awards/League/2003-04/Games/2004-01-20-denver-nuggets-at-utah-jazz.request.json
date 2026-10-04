@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-20-denver-nuggets-at-utah-jazz",
+ "game_date": "2004-01-20",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Denver Nuggets",
+  "rotation": "real"
+ }
+}

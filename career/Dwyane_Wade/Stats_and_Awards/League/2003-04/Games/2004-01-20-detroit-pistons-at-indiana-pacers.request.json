@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-20-detroit-pistons-at-indiana-pacers",
+ "game_date": "2004-01-20",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Detroit Pistons",
+  "rotation": "real"
+ }
+}
