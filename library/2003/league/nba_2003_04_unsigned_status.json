@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "season": "2003-04",
+  "as_of": "2003-12-01",
+  "kind": "unsigned_free_agent_status",
+  "note": "Status of players on the July 1, 2003 expiring-contract list who never appeared for a non-Miami NBA club in 2003-04, as of December 1, 2003. Researched from dated public sources; unknown where no reliable source was found.",
+  "players": {
+    "bryanma01": {
+      "player": "Mark Bryant",
+      "status": "unknown",
+      "since": null,
+      "detail": "Last NBA game came with Boston in 2002-03 and he never played again (assistant coach from 2004-05), but no dated retirement announcement or 2003-04 playing/availability record was found.",
+      "sources": [
+        "https://www.basketball-reference.com/players/b/bryanma01.html",
+        "https://en.wikipedia.org/wiki/Mark_Bryant"
+      ]
+    },
+    "longgr01": {
+      "player": "Grant Long",
+      "status": "unknown",
+      "since": null,
+      "detail": "His career ended after the 2002-03 Boston season, but no dated retirement announcement or 2003-04 status report was found.",
+      "sources": [
+        "https://www.basketball-reference.com/players/l/longgr01.html",
+        "https://en.wikipedia.org/wiki/Grant_Long"
+      ]
+    },
+    "allenma01": {
+      "player": "Malik Allen",
+      "status": "played_nba_2003_04",
+      "since": "2003-04",
+      "detail": "Played 45 regular-season games for the real Miami Heat in 2003-04 (traded to Charlotte February 24, 2005).",
+      "sources": [
+        "https://www.basketball-reference.com/players/a/allenma01.html"
+      ]
+    },
+    "marksse01": {
+      "player": "Sean Marks",
+      "status": "injured_unavailable",
+      "since": "2003-11-17",
+      "detail": "Signed by San Antonio September 29, 2003, waived October 31, re-signed November 17, 2003, and did not play all season because of knee (patellar) tendinitis; on December 1 he was on the Spurs' roster but injured.",
+      "sources": [
+        "https://www.basketball-reference.com/players/m/marksse01.html",
+        "https://en.wikipedia.org/wiki/Sean_Marks"
+      ]
+    },
+    "marshdo02": {
+      "player": "Donny Marshall",
+      "status": "unknown",
+      "since": null,
+      "detail": "Wikipedia lists his playing career as ending in 2003 after the Nets, but no dated retirement announcement or 2003-04 status report was found.",
+      "sources": [
+        "https://www.basketball-reference.com/players/m/marshdo02.html",
+        "https://en.wikipedia.org/wiki/Donny_Marshall"
+      ]
+    },
+    "postela01": {
+      "player": "Lavor Postell",
+      "status": "unsigned_available",
+      "since": "2003-11-06",
+      "detail": "Waived by Utah October 16, 2003, then taken in the November 6, 2003 NBDL draft and played 2003-04 for the Asheville Altitude (NBDL, US), with no NBA contract.",
+      "sources": [
+        "https://www.basketball-reference.com/players/p/postela01.html",
+        "https://en.wikipedia.org/wiki/Lavor_Postell",
+        "https://en.wikipedia.org/wiki/2003_National_Basketball_Development_League_draft"
+      ]
+    },
+    "burkepa01": {
+      "player": "Pat Burke",
+      "status": "abroad",
+      "since": "2003-04",
+      "detail": "Played 2003-04 in Spain's Liga ACB, first for Gran Canaria and later in the season for Real Madrid; exact signing date not found.",
+      "sources": [
+        "https://www.basketball-reference.com/players/b/burkepa01.html",
+        "https://en.wikipedia.org/wiki/Pat_Burke",
+        "https://www.basketball-reference.com/international/players/pat-burke-1.html"
+      ]
+    },
+    "oyedeol01": {
+      "player": "Olumide Oyedeji",
+      "status": "abroad",
+      "since": "2003-04",
+      "detail": "Opened 2003-04 with Ilysiakos in the Greek A1 league (5 games) and signed with Union Olimpija (Slovenia) on December 15, 2003; exact Ilysiakos signing date not found.",
+      "sources": [
+        "https://www.basketball-reference.com/players/o/oyedeol01.html",
+        "https://en.wikipedia.org/wiki/Olumide_Oyedeji",
+        "https://english.sta.si/790269/olimpija-signs-nigerian-centre-with-nba-experience",
+        "https://www.basketball-reference.com/international/players/olumide-oyedeji-1.html"
+      ]
+    },
+    "davisem01": {
+      "player": "Emanual Davis",
+      "status": "retired",
+      "since": "2003-11-01",
+      "detail": "Reported by RealGM as retired from professional basketball on November 1, 2003; did not play anywhere in 2003-04.",
+      "sources": [
+        "https://www.basketball-reference.com/players/d/davisem01.html",
+        "https://en.wikipedia.org/wiki/Emanual_Davis",
+        "https://basketball.realgm.com/player/Emanual-Davis/Summary/1173"
+      ]
+    },
+    "jacksje01": {
+      "player": "Jermaine Jackson",
+      "status": "unknown",
+      "since": null,
+      "detail": "Spent 2003-04 outside the NBA (Great Lakes Storm of the CBA and Aris in Greece in 2003, then Benetton Treviso in Italy in 2004), but the dates are not sourced well enough to say where he was on December 1, 2003.",
+      "sources": [
+        "https://www.basketball-reference.com/players/j/jacksje01.html",
+        "https://en.wikipedia.org/wiki/Jermaine_Jackson_(basketball)",
+        "https://www.basketball-reference.com/international/players/jermaine-jackson-1.html"
+      ]
+    },
+    "parkesm01": {
+      "player": "Smush Parker",
+      "status": "unsigned_available",
+      "since": "2003-11",
+      "detail": "Was cut by Atlanta just before the season and signed with the CBA's Idaho Stampede (US) in November 2003, then left for Aris Thessaloniki (Greece) in December 2003; on December 1 he had no NBA contract and was playing in a US minor league.",
+      "sources": [
+        "https://www.basketball-reference.com/players/p/parkesm01.html",
+        "https://fordhamsports.com/news/2004/10/12/101204aaa_980.aspx",
+        "https://en.wikipedia.org/wiki/Smush_Parker"
+      ]
+    },
+    "mannida01": {
+      "player": "Danny Manning",
+      "status": "retired",
+      "since": "2003-09-12",
+      "detail": "Retired from the Detroit Pistons on September 12, 2003, and took a staff job with the Kansas program.",
+      "sources": [
+        "https://www.basketball-reference.com/players/m/mannida01.html",
+        "https://www2.kusports.com/news/2003/sep/12/its_official_nba/"
+      ]
+    },
+    "hardati01": {
+      "player": "Tim Hardaway",
+      "status": "retired",
+      "since": "2003-11",
+      "detail": "Was an unsigned free agent looking for one more season, set himself a mid-November 2003 deadline, and announced his retirement when no team signed him.",
+      "sources": [
+        "https://www.basketball-reference.com/players/h/hardati01.html",
+        "https://www.nbcsports.com/nba/tim-hardaway/00000188-9cf0-da6b-abd8-fcfdb59203c7/news",
+        "https://en.wikipedia.org/wiki/Tim_Hardaway"
+      ]
+    },
+    "reiddo01": {
+      "player": "Don Reid",
+      "status": "unsigned_available",
+      "since": "2003-07-01",
+      "detail": "Unrestricted free agent from July 1, 2003, who never played again; ShamSports notes Detroit almost re-signed him in February 2005, and no retirement or injury was reported.",
+      "sources": [
+        "https://www.basketball-reference.com/players/r/reiddo01.html",
+        "https://www.shamsports.com/players/don-reid"
+      ]
+    },
+    "williwa02": {
+      "player": "Walt Williams",
+      "status": "unknown",
+      "since": null,
+      "detail": "Last played for Dallas in 2002-03 and later moved into broadcasting, but no dated retirement announcement or 2003-04 status report was found.",
+      "sources": [
+        "https://www.basketball-reference.com/players/w/williwa02.html",
+        "https://en.wikipedia.org/wiki/Walt_Williams_(basketball)",
+        "https://www.shamsports.com/players/walt-williams"
+      ]
+    },
+    "harriad01": {
+      "player": "Adam Harrington",
+      "status": "abroad",
+      "since": "2003-11-20",
+      "detail": "Signed with Washington September 26, 2003 and was waived October 27, then signed with the Shaanxi Kylins (Chinese Basketball Association) on November 20, 2003 and was released in December 2003.",
+      "sources": [
+        "https://www.basketball-reference.com/players/h/harriad01.html",
+        "https://en.wikipedia.org/wiki/Adam_Harrington_(basketball)",
+        "https://www.shamsports.com/players/adam-harrington"
+      ]
+    },
+    "hawkiju01": {
+      "player": "Juaquin Hawkins",
+      "status": "unsigned_available",
+      "since": "2003-10-14",
+      "detail": "Signed by Golden State October 1, 2003, waived October 14, then played the 2003-04 ABA season (November-March) for the Long Beach Jam (US minor league) with no NBA contract.",
+      "sources": [
+        "https://www.basketball-reference.com/players/h/hawkiju01.html",
+        "https://en.wikipedia.org/wiki/Juaquin_Hawkins",
+        "https://en.wikipedia.org/wiki/2003%E2%80%9304_ABA_season"
+      ]
+    },
+    "batismi01": {
+      "player": "Mike Batiste",
+      "status": "abroad",
+      "since": "2003-07",
+      "detail": "Joined Panathinaikos (Greek A1 league / EuroLeague) in July 2003 and stayed there through 2012.",
+      "sources": [
+        "https://www.basketball-reference.com/players/b/batismi01.html",
+        "https://en.wikipedia.org/wiki/Michael_Batiste"
+      ]
+    },
+    "lopezfe01": {
+      "player": "Felipe Lopez",
+      "status": "unknown",
+      "since": null,
+      "detail": "Missed the whole 2002-03 season with a knee injury while under contract with Minnesota, and no club or status for 2003-04 was found (his next listed team is the 2004-05 Long Beach Jam).",
+      "sources": [
+        "https://www.basketball-reference.com/players/l/lopezfe01.html",
+        "https://en.wikipedia.org/wiki/Felipe_L%C3%B3pez_(basketball)",
+        "https://www.shamsports.com/players/felipe-lopez"
+      ]
+    },
+    "kerrst01": {
+      "player": "Steve Kerr",
+      "status": "retired",
+      "since": "2003-08-07",
+      "detail": "Retired from the San Antonio Spurs on August 7, 2003, and joined TNT as a commentator.",
+      "sources": [
+        "https://www.basketball-reference.com/players/k/kerrst01.html",
+        "https://en.wikipedia.org/wiki/List_of_2003%E2%80%9304_NBA_season_transactions"
+      ]
+    },
+    "shawbr01": {
+      "player": "Brian Shaw",
+      "status": "retired",
+      "since": "2003-09-24",
+      "detail": "Announced his retirement September 24, 2003, and joined the Lakers as a scout for 2003-04.",
+      "sources": [
+        "https://www.basketball-reference.com/players/s/shawbr01.html",
+        "https://en.wikipedia.org/wiki/Brian_Shaw_(basketball)"
+      ]
+    },
+    "brownra02": {
+      "player": "Randy Brown",
+      "status": "unknown",
+      "since": null,
+      "detail": "Sources say he retired after the 2002-03 Phoenix season, but no dated announcement or 2003-04 status report was found.",
+      "sources": [
+        "https://www.basketball-reference.com/players/b/brownra02.html",
+        "https://en.wikipedia.org/wiki/Randy_Brown_(basketball)"
+      ]
+    },
+    "dudlech02": {
+      "player": "Chris Dudley",
+      "status": "retired",
+      "since": "2003-09-30",
+      "detail": "The Trail Blazers announced his retirement on September 30, 2003, after 16 seasons.",
+      "sources": [
+        "https://www.basketball-reference.com/players/d/dudlech02.html",
+        "https://www.espn.com/nba/news/story?id=1627008",
+        "https://en.wikipedia.org/wiki/Chris_Dudley"
+      ]
+    },
+    "smithch04": {
+      "player": "Charles Smith",
+      "status": "abroad",
+      "since": "2003-04",
+      "detail": "Played 2003-04 in Europe: 2 Greek A1 games for Makedonikos and then Virtus Bologna (Italy); the exact switch date is not sourced, but he was abroad all season.",
+      "sources": [
+        "https://www.basketball-reference.com/players/s/smithch04.html",
+        "https://en.wikipedia.org/wiki/Charles_Smith_(basketball,_born_August_1975)",
+        "https://www.basketball-reference.com/international/players/charles-smith-1.html"
+      ]
+    },
+    "pricebr01": {
+      "player": "Brent Price",
+      "status": "unknown",
+      "since": null,
+      "detail": "Last NBA games came with Sacramento in 2001-02; he missed 2002-03 and played for the USBL's Oklahoma Storm in 2004, but no status for fall 2003 was found.",
+      "sources": [
+        "https://www.basketball-reference.com/players/p/pricebr01.html",
+        "https://en.wikipedia.org/wiki/Brent_Price"
+      ]
+    }
+  }
+}

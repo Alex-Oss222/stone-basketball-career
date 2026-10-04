@@ -24,7 +24,7 @@ class ReplacementTests(unittest.TestCase):
                                     "basis": "test fixture: acquired by trade"})
         (cls.root / holdings_path("2003-04")).write_text(json.dumps(holdings, indent=1))
         # Fixture statuses (the live file is researched): one healthy free agent, one retired.
-        (cls.root / R.STATUS_PATH).write_text(json.dumps({"schema_version": 1, "players": {
+        (cls.root / R.STATUS_PATH).write_text(json.dumps({"schema_version": 1, "as_of": "2003-12-01", "players": {
             "williwa02": {"player": "Walt Williams", "status": "unsigned_available", "since": "2003-07-01"},
             "kerrst01": {"player": "Steve Kerr", "status": "retired", "since": "2003-06"}}}))
 
@@ -62,6 +62,10 @@ class ReplacementTests(unittest.TestCase):
         self.assertNotIn("Clifford Robinson", names(DAY))
         self.assertNotIn("Walt Williams", names("2003-12-03"))
         self.assertIsNotNone(index)
+
+    def test_a_stale_status_snapshot_fails_closed(self):
+        with self.assertRaisesRegex(ValueError, "research a snapshot"):
+            R.pool("2004-02-01", "2003-04", self.root)
 
     def test_the_live_career_has_no_disturbed_club_yet(self):
         self.assertEqual(R.replacement_errors(ROOT), [])

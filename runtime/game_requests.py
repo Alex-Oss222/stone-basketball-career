@@ -70,7 +70,14 @@ def _club(spec, actives, root, rating_index, season=None, game_date=None):
         # partner only (`arrivals` re-adds them there), never also at the club history gave them.
         # A disturbed club's replacement (runtime/club_replacements.py) arrives there and leaves his later real club.
         from .club_replacements import arrivals as replacement_arrivals, held as replacements_held
-        team = real_rotation(spec["team"], rosters[spec["team"]], games_per_team(season, spec["team"]), rating_index,
+        # Symmetric league (docs/symmetric_league_design.md): the club's simulated roster, only once switched on.
+        from .league_book import active as symmetric_active
+        if symmetric_active(game_date):
+            from .league_moves import simulated_club
+            club_entry = simulated_club(spec["team"], game_date, season, root)
+        else:
+            club_entry = rosters[spec["team"]]
+        team = real_rotation(spec["team"], club_entry, games_per_team(season, spec["team"]), rating_index,
                              fraction=season_fraction(season, game_date, root),
                              exclude=(miami_holds(season, game_date, root) | miami_departed(season, game_date, root)
                                       | replacements_held(season, game_date, root)),

@@ -86,7 +86,13 @@ MAX_OUT, MAX_IN = 2, 2                   # players a search proposal moves each 
 # list with an injury reason, or a real player who missed all of his club's last INJURY_GAMES closed games.
 INJURY_DISCOUNT = 0.75
 INJURY_GAMES = 3
-INJURY_FROM = "2003-12-01"               # earlier trade decisions keep the values they were drawn with
+INJURY_FROM = "2003-12-01" 
+# Current form and control (from FORM_FROM; judgement): a club values a player on his closed 2003-04 production
+# as well as 2002-03, the new season counting as its games against FORM_PRIOR_GAMES of last season's; and a young
+# player's future runs past his contract through restricted free agency or Bird rights (CONTROL_AFTER_CONTRACT).
+FORM_FROM = "2003-12-01"
+FORM_PRIOR_GAMES = 20
+CONTROL_AFTER_CONTRACT = ((25, 2), (29, 1), (99, 0))   # by age: extra seasons a club expects to keep him               # earlier trade decisions keep the values they were drawn with
 SEARCH_SKILL_FIT = 1.10                  # a candidate this good a fit is searched even where Miami has the minutes
 SEARCH_MIN_GAIN = 0.05                   # Miami's value gain for a proposal to be worth making
 # Sign-and-trade (design 7.1 and 7.4)
@@ -120,6 +126,12 @@ def dated_inventory(on, valuation, root=ROOT):
     league = League(on, valuation.value, root)
     rosters = league.rosters
     on_date = {b: club for club, members in rosters.items() for b in members}
+    from .league_book import active
+    if active(on):
+        # Symmetric league: who holds each contract is the simulated league on the date (real moves after the
+        # activation date are not applied; docs/symmetric_league_design.md).
+        from .league_moves import effective_roster
+        on_date = {p["bbr_id"]: club for club in june if club != MIAMI for p in effective_roster(club, on, SEASON, root)}
     in_baseline = set().union(*league.baseline.values())
     # Terms of the summer's signings: reported years and total spread flat over the seasons, or, unreported,
     # the minimum for the player's service (an estimate, labelled so). Rule 1 skips moves involving Miami.
@@ -234,13 +246,14 @@ class Assets:
     def player_value(self, player, for_club=None):
         """Value points of a player under contract: production above replacement plus his contract term."""
         bbr = player.get("bbr_id")
-        value = self.valuation.value(bbr) if bbr else None
+        value = self.form_value(bbr) if bbr else None
         if value is None:
             production = 0.0
             basis = "no 2002-03 evidence: production counted at replacement"
         else:
             production = max(0.0, value - REPLACEMENT_VALUE) * POINTS_PER_EFFICIENCY
-            basis = f"2002-03 production value {value:.1f}"
+            basis = (f"production value {value:.1f} (2002-03 blended with closed 2003-04 games)" if self.on >= FORM_FROM
+                     else f"2002-03 production value {value:.1f}")
         salary, years = self.salary(player), min(CONTRACT_YEARS_COUNTED, max(1, self.years_left(player)))
         worth = self.valuation.comparables_price(value) if value is not None else self.valuation.minimum(0)
         term = (worth - salary) * years / self.valuation.mid_level * 0.5 if salary else 0.0
@@ -260,6 +273,8 @@ class Assets:
         # the years of control, plus the contract's surplus or burden).
         factor = next(f for limit, f in AGE_FACTOR if (age or 27) <= limit)
         control = years + (1 if player.get("status") == "under_rookie_contract" else 0)
+        if self.on >= FORM_FROM:
+            control = max(control, years + next(extra for limit, extra in CONTROL_AFTER_CONTRACT if (age or 27) <= limit))
         future = production * factor * min(CONTRACT_YEARS_COUNTED, control - 1) / 2 + term
         return {"player": player["player"], "bbr_id": bbr, "value": round(total, 3), "production": round(production, 3),
                 "contract_term": round(term, 3), "relief": round(relief, 3), "salary": salary, "years": years,
@@ -299,6 +314,51 @@ class Assets:
             regulars = {n for n in set().union(*before) if sum(n in g for g in before) >= len(before) / 2}
             for name in regulars - seen:
                 out.add((club, name))
+        return out
+
+    def form_value(self, bbr):
+        """Production value on the date: 2002-03, blended with closed 2003-04 games from FORM_FROM."""
+        prior = self.valuation.value(bbr)
+        if self.on < FORM_FROM or bbr is None:
+            return prior
+        if not hasattr(self, "_season_totals"):
+            self._season_totals = self._closed_totals()
+        totals = self._season_totals.get(bbr)
+        if not totals or not totals["games"]:
+            return prior
+        from .valuation import production_value
+        current = production_value(totals, self.valuation.age(bbr))
+        if prior is None:
+            return current
+        g = totals["games"]
+        return (prior * FORM_PRIOR_GAMES + current * g) / (FORM_PRIOR_GAMES + g)
+
+    def _closed_totals(self):
+        from .rotations import load_rosters
+        from .write_back import closed_results
+        names = {}
+        for entry in load_rosters(SEASON, self.root).values():
+            for p in entry["players"]:
+                names.setdefault(p["player_id"], p["bbr_id"])
+        roster = read_json(TEAM / "Team/Roster/roster.json", self.root)
+        for p in roster["players"]:
+            if p.get("bbr_id"):
+                names[p["name"]] = p["bbr_id"]
+        keys = {"points": "pts", "offensive_rebounds": "orb", "defensive_rebounds": "drb", "assists": "ast", "steals": "stl",
+                "blocks": "blk", "field_goals_attempted": "fga", "field_goals_made": "fgm", "free_throws_attempted": "fta",
+                "free_throws_made": "ftm", "turnovers": "tov"}
+        out = {}
+        for row in closed_results(self.root, SEASON, self.on):
+            for side in ("home", "away"):
+                for line in row["result"]["player_stats"][side]:
+                    bbr = names.get(line["player_id"])
+                    if not bbr or line["minutes"] <= 0:
+                        continue
+                    t = out.setdefault(bbr, dict({k: 0 for k in keys}, games=0, minutes=0.0))
+                    t["games"] += 1
+                    t["minutes"] += line["minutes"]
+                    for k, src in keys.items():
+                        t[k] += line[src]
         return out
 
     def pick_value(self, pick, owner_record_club, miami_own=False):
