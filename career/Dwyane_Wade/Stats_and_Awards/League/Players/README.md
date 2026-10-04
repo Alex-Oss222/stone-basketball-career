@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-05**. 501 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-06**. 501 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -487,7 +487,7 @@ Card date: **2003-12-05**. 501 registry players, one Markdown card and one inter
 | [Jason Collier](collija02.md) | Atlanta Hawks | None | silhouette | [open](collija02.html) |
 | [Jason Collins](collija04.md) | New Jersey Nets | 25 | sourced | [open](collija04.html) |
 | [Jeff Foster](fosteje01.md) | Indiana Pacers | 26 | sourced | [open](fosteje01.html) |
-| [Jelani McCoy](mccoyje01.md) | Toronto Raptors | 25 | sourced | [open](mccoyje01.html) |
+| [Jelani McCoy](mccoyje01.md) | Toronto Raptors | 26 | sourced | [open](mccoyje01.html) |
 | [Jerome James](jamesje01.md) | Seattle SuperSonics | 28 | sourced | [open](jamesje01.html) |
 | [Jerome Moiso](moisoje01.md) | Toronto Raptors | 25 | sourced | [open](moisoje01.html) |
 | [Joel Przybilla](przybjo01.md) | Milwaukee Bucks | 24 | sourced | [open](przybjo01.html) |

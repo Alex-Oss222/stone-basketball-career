@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-06-detroit-pistons-at-houston-rockets",
+ "game_date": "2003-12-06",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Houston Rockets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Detroit Pistons",
+  "rotation": "real"
+ }
+}

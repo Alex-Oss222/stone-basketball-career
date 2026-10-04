@@ -2,27 +2,27 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2003-12-05**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2003-12-06**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2003-12-05
+## 2003-04 · NBA regular season · through 2003-12-06
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 19 | 0 | 19 | 105 / 207 | 50.7% | 12 / 42 | 301 | partial |
+| 20 | 0 | 20 | 110 / 219 | 50.2% | 13 / 45 | 317 | partial |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | N/A | N/A | N/A | N/A | N/A | 84 |
+| Paint | N/A | N/A | N/A | N/A | N/A | 91 |
 | Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 4 |
 | Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 14 |
-| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 32 |
-| Three-point range | N/A | N/A | N/A | N/A | N/A | 24 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 34 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 27 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -45,6 +45,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2003-11-29 | Toronto Raptors | Played | [Game](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md) | [Result](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.result.json) |
 | 2003-12-03 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
 | 2003-12-05 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.result.json) |
+| 2003-12-06 | San Antonio Spurs | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.result.json) |
 
 ## 2003-10 · NBA regular season
 
@@ -233,45 +234,47 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 2 | 14 / 30 | 46.7% | 2 / 4 | 38 | complete |
+| 3 | 0 | 3 | 19 / 42 | 45.2% | 3 / 7 | 54 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 6 | 11 | 54.5% | 6.00 | 5.50 | 11 |
-| Outside paint, under 12 ft | 1 | 2 | 50.0% | 1.00 | 1.00 | 2 |
-| Outside paint, 12 to under 18 ft | 4 | 5 | 80.0% | 4.00 | 2.50 | 5 |
-| 18 ft to the three-point line | 1 | 8 | 12.5% | 1.00 | 4.00 | 8 |
-| Three-point range | 2 | 4 | 50.0% | 3.00 | 2.00 | 4 |
+| Paint | 10 | 18 | 55.6% | 6.67 | 6.00 | 18 |
+| Outside paint, under 12 ft | 1 | 2 | 50.0% | 0.67 | 0.67 | 2 |
+| Outside paint, 12 to under 18 ft | 4 | 5 | 80.0% | 2.67 | 1.67 | 5 |
+| 18 ft to the three-point line | 1 | 10 | 10.0% | 0.67 | 3.33 | 10 |
+| Three-point range | 3 | 7 | 42.9% | 3.00 | 2.33 | 7 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2003-12-03 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
 | 2003-12-05 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.result.json) |
+| 2003-12-06 | San Antonio Spurs | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.result.json) |
 
-## 2003-12-01 to 2003-12-05 · NBA regular season
+## 2003-12-01 to 2003-12-06 · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-week-2003-12-01#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 2 | 14 / 30 | 46.7% | 2 / 4 | 38 | complete |
+| 3 | 0 | 3 | 19 / 42 | 45.2% | 3 / 7 | 54 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 6 | 11 | 54.5% | 6.00 | 5.50 | 11 |
-| Outside paint, under 12 ft | 1 | 2 | 50.0% | 1.00 | 1.00 | 2 |
-| Outside paint, 12 to under 18 ft | 4 | 5 | 80.0% | 4.00 | 2.50 | 5 |
-| 18 ft to the three-point line | 1 | 8 | 12.5% | 1.00 | 4.00 | 8 |
-| Three-point range | 2 | 4 | 50.0% | 3.00 | 2.00 | 4 |
+| Paint | 10 | 18 | 55.6% | 6.67 | 6.00 | 18 |
+| Outside paint, under 12 ft | 1 | 2 | 50.0% | 0.67 | 0.67 | 2 |
+| Outside paint, 12 to under 18 ft | 4 | 5 | 80.0% | 2.67 | 1.67 | 5 |
+| 18 ft to the three-point line | 1 | 10 | 10.0% | 0.67 | 3.33 | 10 |
+| Three-point range | 3 | 7 | 42.9% | 3.00 | 2.33 | 7 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2003-12-03 | Detroit Pistons | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.result.json) |
 | 2003-12-05 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.result.json) |
+| 2003-12-06 | San Antonio Spurs | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.result.json) |
 
 ## 2003-10-28 at Philadelphia 76ers · Played · NBA regular season
 
@@ -691,7 +694,29 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2003-12-05 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.result.json) |
 
-## 2003-04 · NBA preseason · through 2003-12-05
+## 2003-12-06 vs San Antonio Spurs · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-9d1be7faf818ff78#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 5 / 12 | 41.7% | 1 / 3 | 16 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 4 | 7 | 57.1% | 8.00 | 7.00 | 7 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| 18 ft to the three-point line | 0 | 2 | 0.0% | 0.00 | 2.00 | 2 |
+| Three-point range | 1 | 3 | 33.3% | 3.00 | 3.00 | 3 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2003-12-06 | San Antonio Spurs | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.result.json) |
+
+## 2003-04 · NBA preseason · through 2003-12-06
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 

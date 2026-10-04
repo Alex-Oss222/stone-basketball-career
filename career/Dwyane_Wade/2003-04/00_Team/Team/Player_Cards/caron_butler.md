@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 23 · **Height:** 6-7 · **Weight:** 228 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2003-12-05 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2003-12-06 
 
 **Contract/control:** Rookie contract through 2004-05, plus a 2005-06 team option; 2003-04 salary $1,804,680. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
@@ -66,6 +66,7 @@ Contract pages follow the current career date; this personnel assessment retains
 | 2003-11-07 | Staff rotation of 2003-11-07: starter at SF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2003-11-07/rotation.json) |
 | 2003-11-21 | Staff rotation of 2003-11-21: starter at SF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2003-11-21/rotation.json) |
 | 2003-12-05 | Staff rotation of 2003-12-05: starter at SF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2003-12-05/rotation.json) |
+| December 6, 2003 | Injured (medium) in event `2003-12-06-san-antonio-spurs-at-miami-heat`: out 10 games; the game builder leaves him out of Miami's next 10 games. No grade change. | [Game 3 result](../../../06_Regular_Season/12_December/Week_1/Game_3.md) |
 
 ## Sources and uncertainty
 
@@ -81,12 +82,12 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 14 closed Miami game(s) through 2003-12-05.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 15 closed Miami game(s) through 2003-12-06.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | MIA | 78 | 78 | 36.6 | 15.4 | 5.1 | 2.7 | 1.8 | 0.4 | 2.5 | 41.6% | 31.8% | 82.4% |
-| 2003-04 | MIA | 14 | 14 | 33.1 | 10.9 | 5.6 | 1.9 | 0.9 | 0.3 | 1.4 | 37.8% | 8.3% | 61.8% |
+| 2003-04 | MIA | 15 | 15 | 32.3 | 10.6 | 5.5 | 1.8 | 0.9 | 0.3 | 1.3 | 37.6% | 7.7% | 63.2% |
 
 <!-- veteran-details:start -->
 ### Additional statistics

@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-06-washington-wizards-at-milwaukee-bucks",
+ "game_date": "2003-12-06",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ }
+}
