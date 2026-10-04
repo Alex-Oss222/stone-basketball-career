@@ -2,9 +2,9 @@
 
 # Contract | Sean Rooks
 
-Known through: 2003-11-12. [Open interactive contract](rooksse01.html#contract) · [Contract history](rooksse01.html#contract-history)
+Known through: 2003-11-14. [Open interactive contract](rooksse01.html#contract) · [Contract history](rooksse01.html#contract-history)
 
-Sean Rooks: free agent expiring. Evidence cutoff: 2003-11-12.
+Sean Rooks: free agent expiring. Evidence cutoff: 2003-11-14.
 
 ## Current contract
 

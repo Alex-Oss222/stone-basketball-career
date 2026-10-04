@@ -2,9 +2,9 @@
 
 # Contract | Tyronn Lue
 
-Known through: 2003-11-12. [Open interactive contract](luety01.html#contract) · [Contract history](luety01.html#contract-history)
+Known through: 2003-11-14. [Open interactive contract](luety01.html#contract) · [Contract history](luety01.html#contract-history)
 
-Tyronn Lue: free agent unlisted. Evidence cutoff: 2003-11-12.
+Tyronn Lue: free agent unlisted. Evidence cutoff: 2003-11-14.
 
 ## Current contract
 

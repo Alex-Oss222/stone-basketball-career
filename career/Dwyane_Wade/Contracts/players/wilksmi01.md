@@ -2,9 +2,9 @@
 
 # Contract | Mike Wilks
 
-Known through: 2003-11-12. [Open interactive contract](wilksmi01.html#contract) · [Contract history](wilksmi01.html#contract-history)
+Known through: 2003-11-14. [Open interactive contract](wilksmi01.html#contract) · [Contract history](wilksmi01.html#contract-history)
 
-Mike Wilks: free agent expiring. Evidence cutoff: 2003-11-12.
+Mike Wilks: free agent expiring. Evidence cutoff: 2003-11-14.
 
 ## Current contract
 

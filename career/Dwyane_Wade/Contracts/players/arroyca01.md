@@ -2,9 +2,9 @@
 
 # Contract | Carlos Arroyo
 
-Known through: 2003-11-12. [Open interactive contract](arroyca01.html#contract) · [Contract history](arroyca01.html#contract-history)
+Known through: 2003-11-14. [Open interactive contract](arroyca01.html#contract) · [Contract history](arroyca01.html#contract-history)
 
-Carlos Arroyo: free agent expiring. Evidence cutoff: 2003-11-12.
+Carlos Arroyo: free agent expiring. Evidence cutoff: 2003-11-14.
 
 ## Current contract
 

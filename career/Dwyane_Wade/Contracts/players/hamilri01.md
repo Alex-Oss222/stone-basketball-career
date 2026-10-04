@@ -2,9 +2,9 @@
 
 # Contract | Richard Hamilton
 
-Known through: 2003-11-12. [Open interactive contract](hamilri01.html#contract) · [Contract history](hamilri01.html#contract-history)
+Known through: 2003-11-14. [Open interactive contract](hamilri01.html#contract) · [Contract history](hamilri01.html#contract-history)
 
-Richard Hamilton: free agent expiring. Evidence cutoff: 2003-11-12.
+Richard Hamilton: free agent expiring. Evidence cutoff: 2003-11-14.
 
 ## Current contract
 

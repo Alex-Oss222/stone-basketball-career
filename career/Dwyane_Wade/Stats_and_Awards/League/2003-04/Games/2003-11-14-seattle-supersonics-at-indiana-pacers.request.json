@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-14-seattle-supersonics-at-indiana-pacers",
+ "game_date": "2003-11-14",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ }
+}

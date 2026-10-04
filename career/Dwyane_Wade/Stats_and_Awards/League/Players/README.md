@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-11-12**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-11-14**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -118,7 +118,7 @@ Card date: **2003-11-12**. 407 registry players, one Markdown card and one inter
 | [Dahntay Jones](jonesda02.md) | Memphis Grizzlies | 22 | sourced | [open](jonesda02.html) |
 | [Dajuan Wagner](wagneda02.md) | Cleveland Cavaliers | 20 | sourced | [open](wagneda02.html) |
 | [Darvin Ham](hamda01.md) | Detroit Pistons | 30 | sourced | [open](hamda01.html) |
-| [David Wesley](wesleda01.md) | New Orleans Hornets | 32 | sourced | [open](wesleda01.html) |
+| [David Wesley](wesleda01.md) | New Orleans Hornets | 33 | sourced | [open](wesleda01.html) |
 | [DeShawn Stevenson](stevede01.md) | Utah Jazz | 22 | sourced | [open](stevede01.html) |
 | [Dion Glover](glovedi01.md) | Atlanta Hawks | 25 | silhouette | [open](glovedi01.html) |
 | [Doug Christie](chrisdo01.md) | Sacramento Kings | 33 | sourced | [open](chrisdo01.html) |
@@ -245,7 +245,7 @@ Card date: **2003-11-12**. 407 registry players, one Markdown card and one inter
 | [Richard Jefferson](jefferi01.md) | New Jersey Nets | 23 | sourced | [open](jefferi01.html) |
 | [Rick Fox](foxri01.md) | Los Angeles Lakers | 34 | sourced | [open](foxri01.html) |
 | [Roger Mason Jr.](masonro01.md) | Chicago Bulls | 23 | sourced | [open](masonro01.html) |
-| [Ron Artest](artesro01.md) | Indiana Pacers | 23 | sourced | [open](artesro01.html) |
+| [Ron Artest](artesro01.md) | Indiana Pacers | 24 | sourced | [open](artesro01.html) |
 | [Ruben Patterson](patteru01.md) | Portland Trail Blazers | 28 | sourced | [open](patteru01.html) |
 | [Sasha Pavlovic](pavloal01.md) | Utah Jazz | 19 | sourced | [open](pavloal01.html) |
 | [Scottie Pippen](pippesc01.md) | Chicago Bulls | 38 | sourced | [open](pippesc01.html) |

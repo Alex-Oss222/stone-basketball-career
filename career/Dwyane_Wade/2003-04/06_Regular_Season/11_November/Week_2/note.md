@@ -18,5 +18,6 @@ days: 8-14
 - 2003-11-11: Miami Heat 96 at Houston Rockets 90 — Miami Heat W 96-90 ([Game 2](Game_2.md), event `2003-11-11-miami-heat-at-houston-rockets`)
 - 2003-11-11: Miami renounced its draft rights to Jerome Beasley (No. 33): draft rights renounced: Miami's fifteen roster places are all filled by signed players, so there is no place to sign him (1999 CBA Art. X §3(f); his Required Tender's acceptance period had ended).
 - 2003-11-12: Cleveland Cavaliers 82 at Miami Heat 97 — Miami Heat W 97-82 ([Game 3](Game_3.md), event `2003-11-12-cleveland-cavaliers-at-miami-heat`)
+- 2003-11-14: Washington Wizards 76 at Miami Heat 86 — Miami Heat W 86-76 ([Game 4](Game_4.md), event `2003-11-14-washington-wizards-at-miami-heat`)
 
 ## Consequences

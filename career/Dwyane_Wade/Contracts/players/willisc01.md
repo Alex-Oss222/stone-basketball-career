@@ -2,9 +2,9 @@
 
 # Contract | Scott Williams
 
-Known through: 2003-11-12. [Open interactive contract](willisc01.html#contract) · [Contract history](willisc01.html#contract-history)
+Known through: 2003-11-14. [Open interactive contract](willisc01.html#contract) · [Contract history](willisc01.html#contract-history)
 
-Scott Williams: free agent expiring. Evidence cutoff: 2003-11-12.
+Scott Williams: free agent expiring. Evidence cutoff: 2003-11-14.
 
 ## Current contract
 

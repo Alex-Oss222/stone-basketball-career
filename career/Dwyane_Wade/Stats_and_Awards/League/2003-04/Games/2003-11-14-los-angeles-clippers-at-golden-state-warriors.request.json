@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-14-los-angeles-clippers-at-golden-state-warriors",
+ "game_date": "2003-11-14",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Golden State Warriors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Los Angeles Clippers",
+  "rotation": "real"
+ }
+}
