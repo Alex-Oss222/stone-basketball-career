@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-09-sacramento-kings-at-phoenix-suns",
+ "game_date": "2004-01-09",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ }
+}

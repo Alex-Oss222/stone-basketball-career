@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-09-indiana-pacers-at-dallas-mavericks",
+ "game_date": "2004-01-09",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Dallas Mavericks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ }
+}

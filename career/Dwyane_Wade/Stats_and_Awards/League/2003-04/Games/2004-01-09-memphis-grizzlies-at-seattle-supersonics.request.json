@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-09-memphis-grizzlies-at-seattle-supersonics",
+ "game_date": "2004-01-09",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ }
+}

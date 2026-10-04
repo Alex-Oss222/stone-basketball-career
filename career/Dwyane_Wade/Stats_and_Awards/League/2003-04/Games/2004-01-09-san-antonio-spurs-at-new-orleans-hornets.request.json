@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-09-san-antonio-spurs-at-new-orleans-hornets",
+ "game_date": "2004-01-09",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New Orleans Hornets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "San Antonio Spurs",
+  "rotation": "real"
+ }
+}

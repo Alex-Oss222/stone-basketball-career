@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-09-washington-wizards-at-orlando-magic",
+ "game_date": "2004-01-09",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-09-cleveland-cavaliers-at-boston-celtics",
+ "game_date": "2004-01-09",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-09-atlanta-hawks-at-los-angeles-lakers",
+ "game_date": "2004-01-09",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Atlanta Hawks",
+  "rotation": "real"
+ }
+}

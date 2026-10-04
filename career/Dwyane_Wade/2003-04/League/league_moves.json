@@ -1063,6 +1063,66 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.63 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-09-clear-hamda01",
+   "date": "2004-01-09",
+   "kind": "clear",
+   "player": "Darvin Ham",
+   "bbr_id": "hamda01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Darvin Ham",
+    "bbr_id": "hamda01",
+    "position": "SF",
+    "games": 54,
+    "minutes": 484
+   },
+   "contract": null,
+   "note": "cleared waivers from Detroit Pistons: a free agent",
+   "waiver": "2003-04-market-2004-01-07-waive-hamda01"
+  },
+  {
+   "id": "2003-04-market-2004-01-09-clear-masseto01",
+   "date": "2004-01-09",
+   "kind": "clear",
+   "player": "Tony Massenburg",
+   "bbr_id": "masseto01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Tony Massenburg",
+    "bbr_id": "masseto01",
+    "position": "PF",
+    "games": 59,
+    "minutes": 789
+   },
+   "contract": null,
+   "note": "cleared waivers from Sacramento Kings: a free agent",
+   "waiver": "2003-04-market-2004-01-07-waive-masseto01"
+  },
+  {
+   "id": "2003-04-market-2004-01-09-ten_day-bateeme01",
+   "date": "2004-01-09",
+   "kind": "ten_day",
+   "player": "Mengke Bateer",
+   "bbr_id": "bateeme01",
+   "from": null,
+   "to": "Dallas Mavericks",
+   "role": {
+    "player_id": "Mengke Bateer",
+    "bbr_id": "bateeme01",
+    "position": "C",
+    "games": 7,
+    "minutes": 40
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-19",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.42 x fit"
   }
  ]
 }

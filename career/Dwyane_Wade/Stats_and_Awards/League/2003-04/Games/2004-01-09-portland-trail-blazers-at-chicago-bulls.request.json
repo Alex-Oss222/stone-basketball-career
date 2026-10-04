@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-09-portland-trail-blazers-at-chicago-bulls",
+ "game_date": "2004-01-09",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Chicago Bulls",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ }
+}
