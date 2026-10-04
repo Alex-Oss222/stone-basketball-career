@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2004-01-16 · Miami Heat · needs evidence
+Career date: 2004-01-17 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 

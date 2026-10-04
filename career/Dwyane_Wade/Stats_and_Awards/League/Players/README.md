@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-16**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-01-17**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -143,7 +143,7 @@ Card date: **2004-01-16**. 504 registry players, one Markdown card and one inter
 | [Devin Brown](brownde02.md) | San Antonio Spurs | None | silhouette | [open](brownde02.html) |
 | [Dion Glover](glovedi01.md) | Atlanta Hawks | 25 | silhouette | [open](glovedi01.html) |
 | [Doug Christie](chrisdo01.md) | Sacramento Kings | 33 | sourced | [open](chrisdo01.html) |
-| [Dwyane Wade](wadedw01.md) | Miami Heat | 19 | sourced | [open](wadedw01.html) |
+| [Dwyane Wade](wadedw01.md) | Miami Heat | 20 | sourced | [open](wadedw01.html) |
 | [Eddie House](houseed01.md) | Los Angeles Clippers | 25 | sourced | [open](houseed01.html) |
 | [Eddie Jones](jonesed02.md) | Miami Heat | 32 | silhouette | [open](jonesed02.html) |
 | [Eric Piatkowski](piatker01.md) | Houston Rockets | 33 | sourced | [open](piatker01.html) |

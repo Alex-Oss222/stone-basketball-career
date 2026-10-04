@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-17-indiana-pacers-at-new-jersey-nets",
+ "game_date": "2004-01-17",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ }
+}

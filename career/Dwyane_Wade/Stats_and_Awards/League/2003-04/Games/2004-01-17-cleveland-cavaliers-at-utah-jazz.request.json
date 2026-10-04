@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-17-cleveland-cavaliers-at-utah-jazz",
+ "game_date": "2004-01-17",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ }
+}

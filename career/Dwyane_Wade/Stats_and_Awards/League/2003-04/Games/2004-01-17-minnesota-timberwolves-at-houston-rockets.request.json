@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-17-minnesota-timberwolves-at-houston-rockets",
+ "game_date": "2004-01-17",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Houston Rockets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Minnesota Timberwolves",
+  "rotation": "real"
+ }
+}

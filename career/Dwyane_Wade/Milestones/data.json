@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-01-16",
+  "as_of": "2004-01-17",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
     "team": "Miami Heat",
     "position": "SG / PG",
-    "age": 19,
+    "age": 20,
     "contract_status": "rookie_scale_contract"
   },
   "current_event": "2004-01-16-miami-heat-at-los-angeles-clippers",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-01-16"
+              "2004-01-17"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2004-01-16",
+              "2004-01-17",
               "Current checkpoint",
               "2004-01-16-miami-heat-at-los-angeles-clippers",
               "Recorded",
@@ -500,7 +500,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-16"
+          "value": "2004-01-17"
         },
         {
           "label": "Team",
@@ -938,7 +938,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-16"
+          "value": "2004-01-17"
         },
         {
           "label": "Team",
@@ -1429,7 +1429,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-16"
+          "value": "2004-01-17"
         },
         {
           "label": "Team",
@@ -2028,7 +2028,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-16"
+          "value": "2004-01-17"
         },
         {
           "label": "Team",
@@ -2436,7 +2436,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-16"
+          "value": "2004-01-17"
         },
         {
           "label": "Team",
@@ -2840,7 +2840,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-16"
+          "value": "2004-01-17"
         },
         {
           "label": "Team",
@@ -3253,7 +3253,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-16"
+          "value": "2004-01-17"
         },
         {
           "label": "Team",
@@ -3714,7 +3714,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-16"
+          "value": "2004-01-17"
         },
         {
           "label": "Team",
@@ -3731,7 +3731,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "47 closed game records in 2003-04 through 2004-01-16. Competitions remain separate.",
+      "summary": "47 closed game records in 2003-04 through 2004-01-17. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -4613,7 +4613,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-16"
+          "value": "2004-01-17"
         },
         {
           "label": "Team",

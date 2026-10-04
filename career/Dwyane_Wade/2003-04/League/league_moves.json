@@ -1379,6 +1379,91 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 3.98 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-17-clear-russebr01",
+   "date": "2004-01-17",
+   "kind": "clear",
+   "player": "Bryon Russell",
+   "bbr_id": "russebr01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Bryon Russell",
+    "bbr_id": "russebr01",
+    "position": "SF",
+    "games": 72,
+    "minutes": 945
+   },
+   "contract": null,
+   "note": "cleared waivers from Los Angeles Lakers: a free agent",
+   "waiver": "2003-04-market-2004-01-15-waive-russebr01"
+  },
+  {
+   "id": "2003-04-market-2004-01-17-rest_of_season-smithth01",
+   "date": "2004-01-17",
+   "kind": "rest_of_season",
+   "player": "Theron Smith",
+   "bbr_id": "smithth01",
+   "from": "Atlanta Hawks",
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Theron Smith",
+    "bbr_id": "smithth01",
+    "position": "SF",
+    "games": 20,
+    "minutes": 178
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": ""
+  },
+  {
+   "id": "2003-04-market-2004-01-17-rest_of_season-shirlpa01",
+   "date": "2004-01-17",
+   "kind": "rest_of_season",
+   "player": "Paul Shirley",
+   "bbr_id": "shirlpa01",
+   "from": "Detroit Pistons",
+   "to": "Detroit Pistons",
+   "role": {
+    "player_id": "Paul Shirley",
+    "bbr_id": "shirlpa01",
+    "position": "PF",
+    "games": 7,
+    "minutes": 86
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": ""
+  },
+  {
+   "id": "2003-04-market-2004-01-17-rest_of_season-reiddo01",
+   "date": "2004-01-17",
+   "kind": "rest_of_season",
+   "player": "Don Reid",
+   "bbr_id": "reiddo01",
+   "from": "Sacramento Kings",
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Don Reid",
+    "bbr_id": "reiddo01",
+    "position": "PF",
+    "games": 1,
+    "minutes": 10
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": ""
   }
  ]
 }

@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-17-detroit-pistons-at-milwaukee-bucks",
+ "game_date": "2004-01-17",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Detroit Pistons",
+  "rotation": "real"
+ }
+}

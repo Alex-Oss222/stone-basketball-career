@@ -6,7 +6,7 @@
     "team": "Miami Heat",
     "jersey": null,
     "position": "SG / PG",
-    "age": 19,
+    "age": 20,
     "height": "6 ft 6 in",
     "weight": "220 lb",
     "shoots": "Right",
@@ -14,10 +14,10 @@
     "photo_url": null,
     "initials": "DW",
     "status": "Under contract",
-    "cutoff": "2004-01-16"
+    "cutoff": "2004-01-17"
   },
-  "clock": "2004-01-16",
-  "notice": "Career records through 2004-01-16. Closed games, recorded contracts and earned awards. Missing evidence remains explicit.",
+  "clock": "2004-01-17",
+  "notice": "Career records through 2004-01-17. Closed games, recorded contracts and earned awards. Missing evidence remains explicit.",
   "links": {
     "stats": "README.md",
     "shooting": "Shooting.md",
@@ -69,14 +69,14 @@
   "periods": [
     {
       "id": "regular-2003-04-season",
-      "label": "2003-04 · NBA regular season · through 2004-01-16",
+      "label": "2003-04 · NBA regular season · through 2004-01-17",
       "kind": "season",
       "season": "2003-04",
       "competition": "regular",
       "competition_label": "NBA regular season",
       "start": "2003-06-01",
-      "end": "2004-01-16",
-      "cutoff": "2004-01-16",
+      "end": "2004-01-17",
+      "cutoff": "2004-01-17",
       "games": 40,
       "appearances": 40,
       "dnp": 0,
@@ -11384,7 +11384,7 @@
         "team": "Miami Heat",
         "jersey": null,
         "position": "SG / PG",
-        "age": 19,
+        "age": 20,
         "height": "6 ft 6 in",
         "weight": "220 lb",
         "shoots": "Right",
@@ -11392,7 +11392,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-01-16"
+        "cutoff": "2004-01-17"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -66435,8 +66435,8 @@
       "competition": "regular",
       "competition_label": "NBA regular season",
       "start": "2004-01-01",
-      "end": "2004-01-16",
-      "cutoff": "2004-01-16",
+      "end": "2004-01-17",
+      "cutoff": "2004-01-17",
       "games": 8,
       "appearances": 8,
       "dnp": 0,
@@ -70012,7 +70012,7 @@
         "team": "Miami Heat",
         "jersey": null,
         "position": "SG / PG",
-        "age": 19,
+        "age": 20,
         "height": "6 ft 6 in",
         "weight": "220 lb",
         "shoots": "Right",
@@ -70020,7 +70020,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-01-16"
+        "cutoff": "2004-01-17"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -80459,14 +80459,14 @@
     },
     {
       "id": "regular-2003-04-week-2004-01-15",
-      "label": "2004-01-15 to 2004-01-16 · NBA regular season",
+      "label": "2004-01-15 to 2004-01-17 · NBA regular season",
       "kind": "week",
       "season": "2003-04",
       "competition": "regular",
       "competition_label": "NBA regular season",
       "start": "2004-01-15",
-      "end": "2004-01-16",
-      "cutoff": "2004-01-16",
+      "end": "2004-01-17",
+      "cutoff": "2004-01-17",
       "games": 2,
       "appearances": 2,
       "dnp": 0,
@@ -81446,7 +81446,7 @@
         "team": "Miami Heat",
         "jersey": null,
         "position": "SG / PG",
-        "age": 19,
+        "age": 20,
         "height": "6 ft 6 in",
         "weight": "220 lb",
         "shoots": "Right",
@@ -81454,7 +81454,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-01-16"
+        "cutoff": "2004-01-17"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -130492,14 +130492,14 @@
     },
     {
       "id": "preseason-2003-04-season",
-      "label": "2003-04 · NBA preseason · through 2004-01-16",
+      "label": "2003-04 · NBA preseason · through 2004-01-17",
       "kind": "season",
       "season": "2003-04",
       "competition": "preseason",
       "competition_label": "NBA preseason",
       "start": "2003-06-01",
-      "end": "2004-01-16",
-      "cutoff": "2004-01-16",
+      "end": "2004-01-17",
+      "cutoff": "2004-01-17",
       "games": 7,
       "appearances": null,
       "dnp": 0,
@@ -130804,7 +130804,7 @@
         "team": "Miami Heat",
         "jersey": null,
         "position": "SG / PG",
-        "age": 19,
+        "age": 20,
         "height": "6 ft 6 in",
         "weight": "220 lb",
         "shoots": "Right",
@@ -130812,7 +130812,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-01-16"
+        "cutoff": "2004-01-17"
       },
       "geometry_supported": true,
       "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
@@ -133985,14 +133985,14 @@
         "id": "2003-04",
         "label": "2003-04",
         "season": "2003-04",
-        "cutoff": "2004-01-16",
+        "cutoff": "2004-01-17",
         "records": [],
         "identity": {
           "name": "Dwyane Wade",
           "team": "Miami Heat",
           "jersey": null,
           "position": "SG / PG",
-          "age": 19,
+          "age": 20,
           "height": "6 ft 6 in",
           "weight": "220 lb",
           "shoots": "Right",
@@ -134000,17 +134000,17 @@
           "photo_url": null,
           "initials": "DW",
           "status": "Under contract",
-          "cutoff": "2004-01-16"
+          "cutoff": "2004-01-17"
         },
-        "notice": "Only earned annual awards announced on or before 2004-01-16 appear. Weekly, monthly and unclassified recognition remains in the full award register."
+        "notice": "Only earned annual awards announced on or before 2004-01-17 appear. Weekly, monthly and unclassified recognition remains in the full award register."
       }
     ]
   },
   "contracts": {
-    "as_of": "2004-01-16",
+    "as_of": "2004-01-17",
     "player_id": "wadedw01",
     "status": "under_contract",
-    "summary": "Dwyane Wade: under contract. Evidence cutoff: 2004-01-16.",
+    "summary": "Dwyane Wade: under contract. Evidence cutoff: 2004-01-17.",
     "current": {
       "id": "wadedw01-2003-07-21",
       "status": "under_contract",
@@ -134982,7 +134982,7 @@
     "metrics": [
       {
         "label": "Career date",
-        "value": "2004-01-16"
+        "value": "2004-01-17"
       },
       {
         "label": "Recorded contracts",
@@ -135180,7 +135180,7 @@
       "history_complete": false,
       "recorded_contract_count": 1,
       "current_contract_verified": true,
-      "as_of": "2004-01-16",
+      "as_of": "2004-01-17",
       "note": "Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed."
     }
   }

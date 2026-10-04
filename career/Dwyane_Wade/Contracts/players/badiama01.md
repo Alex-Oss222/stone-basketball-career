@@ -2,9 +2,9 @@
 
 # Contract | Malick Badiane
 
-Known through: 2004-01-16. [Open interactive contract](badiama01.html#contract) · [Contract history](badiama01.html#contract-history)
+Known through: 2004-01-17. [Open interactive contract](badiama01.html#contract) · [Contract history](badiama01.html#contract-history)
 
-Malick Badiane: No verified contract record. Evidence cutoff: 2004-01-16.
+Malick Badiane: No verified contract record. Evidence cutoff: 2004-01-17.
 
 ## Current contract
 
