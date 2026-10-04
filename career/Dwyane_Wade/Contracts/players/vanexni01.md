@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Nick Van Exel |
-| Club / rights baseline | Dallas Mavericks |
+| Club / rights baseline | Golden State Warriors |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

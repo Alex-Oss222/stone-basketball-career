@@ -4,7 +4,7 @@
 
 Known through: 2003-12-01. [Open interactive contract](marksse01.html#contract) · [Contract history](marksse01.html#contract-history)
 
-Sean Marks: free agent expiring. Evidence cutoff: 2003-12-01.
+Sean Marks: injured, unavailable (researched, 2003-11-17). Evidence cutoff: 2003-12-01.
 
 ## Current contract
 
@@ -17,8 +17,8 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Sean Marks |
-| Club / rights baseline | Miami Heat |
-| Control status | free_agent_expiring |
+| Club / rights baseline | San Antonio Spurs |
+| Control status | injured, unavailable (researched, 2003-11-17) |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | free_agent_expiring |
+| Status | injured, unavailable (researched, 2003-11-17) |
 | Contract wording | Not recorded |
 
 ### Salary by season

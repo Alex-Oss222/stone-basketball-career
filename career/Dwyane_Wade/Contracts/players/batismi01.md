@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Mike Batiste |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Memphis Grizzlies |
 | Control status | voided |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

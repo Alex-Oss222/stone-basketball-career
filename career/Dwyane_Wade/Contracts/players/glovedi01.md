@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Dion Glover |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Atlanta Hawks |
 | Control status | released |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

@@ -117,7 +117,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jake Tsakalidis |
-| Club / rights baseline | Phoenix Suns |
+| Club / rights baseline | Memphis Grizzlies |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

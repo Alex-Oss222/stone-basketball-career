@@ -4,7 +4,7 @@
 
 Known through: 2003-12-01. [Open interactive contract](walkesa01.html#contract) · [Contract history](walkesa01.html#contract-history)
 
-Samaki Walker: free agent expiring. Evidence cutoff: 2003-12-01.
+Samaki Walker: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-01.
 
 ## Current contract
 
@@ -18,7 +18,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Samaki Walker |
 | Club / rights baseline | Los Angeles Lakers |
-| Control status | free_agent_expiring |
+| Control status | on the 2003-04 roster; contract terms not in the dated records |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | free_agent_expiring |
+| Status | on the 2003-04 roster; contract terms not in the dated records |
 | Contract wording | Not recorded |
 
 ### Salary by season

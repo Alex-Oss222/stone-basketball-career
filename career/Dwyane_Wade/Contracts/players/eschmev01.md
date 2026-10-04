@@ -122,7 +122,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Evan Eschmeyer |
-| Club / rights baseline | Dallas Mavericks |
+| Club / rights baseline | Golden State Warriors |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

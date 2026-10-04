@@ -276,6 +276,24 @@ def build_contract_catalog(root, player, clock=None):
             for row in club.get("players", []):
                 if (row.get("player") or row.get("name")) != protagonist:
                     add(row, team, _source(path, root, "Dated league contract inventory"), data["as_of"], path.parent)
+    # The summer's dated signings by real clubs (rule 1 skips any involving Miami). Reported total and term are kept;
+    # an unreported per-season split stays unknown rather than estimated.
+    for path in sorted((root / "library").glob("*/league/nba_*_offseason_transactions.json")):
+        data = _read(path)
+        for row in data.get("signings", []):
+            if (row.get("kind") not in ("signing", "re_sign", "sign_and_trade", "match", "match_declined", "rookie_signing")
+                    or row.get("involves_miami") or row.get("to") in (None, "Miami Heat") or not _known(row.get("date"), cutoff)):
+                continue
+            years = row.get("years") if isinstance(row.get("years"), int) else None
+            first = int(str(data.get("season", "2003-04"))[:4]) if str(data.get("season", "")).strip()[:4].isdigit() else 2003
+            seasons = [f"{first + i}-{str(first + i + 1)[-2:]}" for i in range(years or 1)]
+            entry = {"player": row.get("player"), "bbr_id": row.get("bbr_id"), "status": "under_contract",
+                     "signed_date": row["date"], "signing_team": row["to"], "route": row["kind"].replace("_", " "),
+                     "original_term_seasons": years, "reported_total": {"amount": row.get("total"), "precision": "reported total"}
+                     if row.get("total") else None, "start_season": seasons[0], "end_season": seasons[-1] if years else None,
+                     "schedule": {season: None for season in seasons}, "amount_kind": {season: "contract_salary" for season in seasons},
+                     "notes": row.get("note")}
+            add(entry, row["to"], _source(path, root, "Dated 2003 offseason transaction"), row["date"], path.parent)
     # League rights are evidence of eligibility, not proof of a QO tender.
     for path in sorted((root / "library").glob("*/league/nba_*_free_agent_rights.json")):
         rights = _read(path)
@@ -403,6 +421,73 @@ def build_contract_catalog(root, player, clock=None):
                 if applied >= profile["_team_date"]:
                     profile["team"] = destination
                     profile["_team_date"] = applied
+    # Each registry player's recorded team is his dated club on the career date (`league_cards.club_on`: real moves to
+    # the date, Miami's holdings and departures), the same answer his league card gives.
+    from .league_cards import club_on
+    for profile in profiles.values():
+        ident = profile.get("identity") or {}
+        if ident.get("cohort") and profile["name"] != protagonist:
+            try:
+                on = club_on(ident, cutoff, root=root)
+            except (KeyError, ValueError, TypeError):
+                continue
+            profile["team"] = on.get("club") or "Free agent"
+    # An expired 2002-03 contract after June 30: researched status first (retired, abroad, unsigned), then the club whose
+    # real 2003-04 roster carries him with terms not in the dated records, else a free agent.
+    statuses = {}
+    if cutoff >= "2003-07-01":
+        try:
+            from .league_market import _status_on
+            statuses = _status_on(cutoff, root)
+        except (ValueError, KeyError, OSError):
+            statuses = {}
+        from .rotations import load_rosters
+        try:
+            carried = {pl["bbr_id"] for club in load_rosters("2003-04", root).values() for pl in club["players"]}
+        except (OSError, KeyError):
+            carried = set()
+        for profile in profiles.values():
+            control = profile.get("_control") or {}
+            ident = profile.get("identity") or {}
+            if control.get("status") not in ("free_agent_expiring", "expiring_contract") or profile["name"] == protagonist:
+                continue
+            if any(e.get("status") in SIGNED and (e.get("signed_date") or "") >= "2003-07-01" for e in profile["_entries"]):
+                continue
+            st = statuses.get(ident.get("bbr_id"))
+            if st and st["status"] in ("retired", "abroad", "unsigned_available", "injured_unavailable", "unknown"):
+                labels = {"retired": ("Retired", "retired"), "abroad": ("Abroad", "playing outside the NBA"),
+                          "unsigned_available": ("Free agent", "unsigned free agent"),
+                          "injured_unavailable": (profile.get("team") or "Free agent", "injured, unavailable"),
+                          "unknown": ("Free agent", "not with an NBA club (status not established)")}
+                profile["team"], label = labels[st["status"]]
+                control["status"] = label + f" (researched, {st.get('since') or 'date not recorded'})"
+            elif ident.get("bbr_id") in carried:
+                control["status"] = "on the 2003-04 roster; contract terms not in the dated records"
+            else:
+                profile["team"], control["status"] = "Free agent", "unsigned free agent"
+    # Miami's register decides its own former and unsigned players: a free agent who signed elsewhere is with that
+    # club, and one whose rights Miami keeps is an unsigned free agent with Miami's rights noted.
+    for path in sorted(player.glob("????-??/00_Team/Team/Roster/roster.json")):
+        roster = _read(path)
+        if not _snapshot(roster, cutoff):
+            continue
+        for row in roster.get("players", []):
+            key = by_bbr.get(row.get("bbr_id")) or by_name.get(row["name"])
+            if not key or row["name"] == protagonist:
+                continue
+            profile = profiles[key]
+            control = profile.get("_control") or {}
+            if row.get("status") == "signed_elsewhere":
+                found = re.search(r"signs with ([A-Z][A-Za-z0-9 .'-]+?) \(", row.get("control", ""))
+                if found:
+                    profile["team"] = found.group(1)
+                    if control.get("status") in ("free_agent_expiring", "expiring_contract", None) or "Miami" in str(control.get("status")):
+                        control["status"] = "signed elsewhere; contract terms not in the dated records"
+                        profile["_control"] = control or {"status": control.get("status")}
+            elif row.get("status") == "free_agent_rights_held":
+                profile["team"] = "Free agent"
+                control["status"] = "unsigned free agent; Miami holds his rights"
+                profile["_control"] = control
     output = []
     for profile in profiles.values():
         entries = profile.pop("_entries")

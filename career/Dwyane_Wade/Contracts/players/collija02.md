@@ -4,7 +4,7 @@
 
 Known through: 2003-12-01. [Open interactive contract](collija02.html#contract) · [Contract history](collija02.html#contract-history)
 
-Jason Collier: free agent expiring. Evidence cutoff: 2003-12-01.
+Jason Collier: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-01.
 
 ## Current contract
 
@@ -17,8 +17,8 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jason Collier |
-| Club / rights baseline | Houston Rockets |
-| Control status | free_agent_expiring |
+| Club / rights baseline | Atlanta Hawks |
+| Control status | on the 2003-04 roster; contract terms not in the dated records |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | free_agent_expiring |
+| Status | on the 2003-04 roster; contract terms not in the dated records |
 | Contract wording | Not recorded |
 
 ### Salary by season

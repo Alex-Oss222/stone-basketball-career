@@ -4,7 +4,7 @@
 
 Known through: 2003-12-01. [Open interactive contract](williwa02.html#contract) · [Contract history](williwa02.html#contract-history)
 
-Walt Williams: free agent expiring. Evidence cutoff: 2003-12-01.
+Walt Williams: not with an NBA club (status not established) (researched, date not recorded). Evidence cutoff: 2003-12-01.
 
 ## Current contract
 
@@ -17,8 +17,8 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Walt Williams |
-| Club / rights baseline | Dallas Mavericks |
-| Control status | free_agent_expiring |
+| Club / rights baseline | Free agent |
+| Control status | not with an NBA club (status not established) (researched, date not recorded) |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | free_agent_expiring |
+| Status | not with an NBA club (status not established) (researched, date not recorded) |
 | Contract wording | Not recorded |
 
 ### Salary by season

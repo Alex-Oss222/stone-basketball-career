@@ -125,7 +125,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Joe Smith |
-| Club / rights baseline | Minnesota Timberwolves |
+| Club / rights baseline | Milwaukee Bucks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

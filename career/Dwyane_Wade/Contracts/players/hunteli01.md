@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Lindsey Hunter |
-| Club / rights baseline | Toronto Raptors |
+| Club / rights baseline | Detroit Pistons |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

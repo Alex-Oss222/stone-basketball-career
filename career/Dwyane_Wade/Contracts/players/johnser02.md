@@ -119,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ervin Johnson |
-| Club / rights baseline | Milwaukee Bucks |
+| Club / rights baseline | Minnesota Timberwolves |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

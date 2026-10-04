@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Brian Cardinal |
-| Club / rights baseline | Washington Wizards |
+| Club / rights baseline | Golden State Warriors |
 | Control status | expired_or_unresolved |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

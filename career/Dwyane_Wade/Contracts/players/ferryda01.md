@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Danny Ferry |
-| Club / rights baseline | San Antonio Spurs |
+| Club / rights baseline | Indiana Pacers |
 | Control status | expired_or_unresolved |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

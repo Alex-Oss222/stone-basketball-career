@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ken Johnson |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Free agent |
 | Control status | team_option_declined |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

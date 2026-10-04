@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Brevin Knight |
-| Club / rights baseline | Memphis Grizzlies |
+| Club / rights baseline | Phoenix Suns |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

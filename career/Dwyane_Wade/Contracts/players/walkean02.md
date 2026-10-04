@@ -121,7 +121,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Antoine Walker |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | Dallas Mavericks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

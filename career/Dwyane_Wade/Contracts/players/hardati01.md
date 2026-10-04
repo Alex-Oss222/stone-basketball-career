@@ -4,7 +4,7 @@
 
 Known through: 2003-12-01. [Open interactive contract](hardati01.html#contract) · [Contract history](hardati01.html#contract-history)
 
-Tim Hardaway: free agent expiring. Evidence cutoff: 2003-12-01.
+Tim Hardaway: retired (researched, 2003-11). Evidence cutoff: 2003-12-01.
 
 ## Current contract
 
@@ -17,8 +17,8 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Tim Hardaway |
-| Club / rights baseline | Indiana Pacers |
-| Control status | free_agent_expiring |
+| Club / rights baseline | Retired |
+| Control status | retired (researched, 2003-11) |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | free_agent_expiring |
+| Status | retired (researched, 2003-11) |
 | Contract wording | Not recorded |
 
 ### Salary by season

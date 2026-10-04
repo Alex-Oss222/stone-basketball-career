@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Bruno Šundov |
-| Club / rights baseline | Boston Celtics |
+| Club / rights baseline | Cleveland Cavaliers |
 | Control status | minimum_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

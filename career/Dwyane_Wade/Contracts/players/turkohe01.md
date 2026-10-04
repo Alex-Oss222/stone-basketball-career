@@ -117,7 +117,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Hedo Turkoglu |
-| Club / rights baseline | Sacramento Kings |
+| Club / rights baseline | San Antonio Spurs |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

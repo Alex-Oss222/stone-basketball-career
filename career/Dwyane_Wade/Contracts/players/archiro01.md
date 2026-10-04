@@ -117,7 +117,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Robert Archibald |
-| Club / rights baseline | Memphis Grizzlies |
+| Club / rights baseline | Phoenix Suns |
 | Control status | team_option_pending |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

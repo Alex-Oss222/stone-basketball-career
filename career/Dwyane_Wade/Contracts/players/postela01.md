@@ -4,7 +4,7 @@
 
 Known through: 2003-12-01. [Open interactive contract](postela01.html#contract) · [Contract history](postela01.html#contract-history)
 
-Lavor Postell: free agent expiring. Evidence cutoff: 2003-12-01.
+Lavor Postell: unsigned free agent (researched, 2003-11-06). Evidence cutoff: 2003-12-01.
 
 ## Current contract
 
@@ -17,8 +17,8 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Lavor Postell |
-| Club / rights baseline | New York Knicks |
-| Control status | free_agent_expiring |
+| Club / rights baseline | Free agent |
+| Control status | unsigned free agent (researched, 2003-11-06) |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | free_agent_expiring |
+| Status | unsigned free agent (researched, 2003-11-06) |
 | Contract wording | Not recorded |
 
 ### Salary by season

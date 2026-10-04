@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jamal Sampson |
-| Club / rights baseline | Milwaukee Bucks |
+| Club / rights baseline | Los Angeles Lakers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

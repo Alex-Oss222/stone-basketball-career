@@ -119,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Latrell Sprewell |
-| Club / rights baseline | New York Knicks |
+| Club / rights baseline | Minnesota Timberwolves |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

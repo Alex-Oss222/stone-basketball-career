@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jerome Beasley |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Free agent |
 | Control status | renounced |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | $0 |
