@@ -642,6 +642,52 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.94 x fit"
+  },
+  {
+   "id": "2003-04-market-2003-12-15-clear-rooksse01",
+   "date": "2003-12-15",
+   "kind": "clear",
+   "player": "Sean Rooks",
+   "bbr_id": "rooksse01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Sean Rooks",
+    "bbr_id": "rooksse01",
+    "position": "C",
+    "games": 55,
+    "minutes": 595
+   },
+   "contract": null,
+   "note": "cleared waivers from New Orleans Hornets: a free agent",
+   "waiver": "2003-04-market-2003-12-13-waive-rooksse01"
+  },
+  {
+   "deal": "2003-04-league-trade-2003-12-15-barrybr01-foxri01-malonka01",
+   "date": "2003-12-15",
+   "kind": "trade",
+   "player": "Karl Malone",
+   "bbr_id": "malonka01",
+   "from": "Los Angeles Lakers",
+   "to": "Seattle SuperSonics"
+  },
+  {
+   "deal": "2003-04-league-trade-2003-12-15-barrybr01-foxri01-malonka01",
+   "date": "2003-12-15",
+   "kind": "trade",
+   "player": "Rick Fox",
+   "bbr_id": "foxri01",
+   "from": "Los Angeles Lakers",
+   "to": "Seattle SuperSonics"
+  },
+  {
+   "deal": "2003-04-league-trade-2003-12-15-barrybr01-foxri01-malonka01",
+   "date": "2003-12-15",
+   "kind": "trade",
+   "player": "Brent Barry",
+   "bbr_id": "barrybr01",
+   "from": "Seattle SuperSonics",
+   "to": "Los Angeles Lakers"
   }
  ]
 }

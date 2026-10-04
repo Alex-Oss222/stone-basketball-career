@@ -2,7 +2,7 @@
 
 <!-- team-status:start -->
 
-**Status on 2003-12-14:** 15 under contract (12 active, 3 on the injured list), Miami 8-15, 13th in the East. The [register](Roster/README.md) labels every player's control and availability; expired, released and voided contracts stay on it as history.
+**Status on 2003-12-15:** 15 under contract (12 active, 3 on the injured list), Miami 8-15, 13th in the East. The [register](Roster/README.md) labels every player's control and availability; expired, released and voided contracts stay on it as history.
 
 <!-- team-status:end -->
 

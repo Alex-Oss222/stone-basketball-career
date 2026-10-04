@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-14**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-15**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -374,7 +374,7 @@ Card date: **2003-12-14**. 503 registry players, one Markdown card and one inter
 | [Kenyon Martin](martike01.md) | New Jersey Nets | 25 | sourced | [open](martike01.html) |
 | [Kevin Garnett](garneke01.md) | Minnesota Timberwolves | 27 | sourced | [open](garneke01.html) |
 | [LaPhonso Ellis](ellisla01.md) | Miami Heat | 33 | sourced | [open](ellisla01.html) |
-| [Lawrence Funderburke](fundela01.md) | Sacramento Kings | 32 | silhouette | [open](fundela01.html) |
+| [Lawrence Funderburke](fundela01.md) | Sacramento Kings | 33 | silhouette | [open](fundela01.html) |
 | [Maceo Baston](bastoma01.md) | Toronto Raptors | 28 | sourced | [open](bastoma01.html) |
 | [Maciej Lampe](lampema01.md) | New York Knicks | 18 | sourced | [open](lampema01.html) |
 | [Malick Badiane](badiama01.md) | Houston Rockets (draft rights) | 19 | silhouette | [open](badiama01.html) |

@@ -1,0 +1,12 @@
+{
+ "date": "2003-12-15",
+ "decider": "Los Angeles Lakers and Seattle SuperSonics front offices (engine draw)",
+ "event_id": "2003-04-league-trade-2003-12-15-barrybr01-foxri01-malonka01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.635808,
+  "decline": 0.364192
+ },
+ "outcome": "accept",
+ "question": "Do Los Angeles Lakers and Seattle SuperSonics trade Karl Malone and Rick Fox for Brent Barry?"
+}

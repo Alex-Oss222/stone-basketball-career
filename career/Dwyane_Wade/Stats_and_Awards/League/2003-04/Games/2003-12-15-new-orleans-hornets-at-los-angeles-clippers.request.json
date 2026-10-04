@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-15-new-orleans-hornets-at-los-angeles-clippers",
+ "game_date": "2003-12-15",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Clippers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Orleans Hornets",
+  "rotation": "real"
+ }
+}

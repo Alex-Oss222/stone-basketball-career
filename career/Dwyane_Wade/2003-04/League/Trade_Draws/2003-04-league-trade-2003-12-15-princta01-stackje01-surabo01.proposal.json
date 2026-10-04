@@ -1,0 +1,39 @@
+{
+ "id": "2003-04-league-trade-2003-12-15-princta01-stackje01-surabo01",
+ "date": "2003-12-15",
+ "clubs": [
+  "Detroit Pistons",
+  "Washington Wizards"
+ ],
+ "a": {
+  "club": "Detroit Pistons",
+  "sends": [
+   "Tayshaun Prince",
+   "Bob Sura"
+  ],
+  "bbr_ids": [
+   "princta01",
+   "surabo01"
+  ],
+  "salary": 7237826
+ },
+ "b": {
+  "club": "Washington Wizards",
+  "sends": [
+   "Jerry Stackhouse"
+  ],
+  "bbr_ids": [
+   "stackje01"
+  ],
+  "salary": 6906250
+ },
+ "gain": {
+  "Detroit Pistons": 0.129,
+  "Washington Wizards": 0.093
+ },
+ "accept": {
+  "Detroit Pistons": 0.849,
+  "Washington Wizards": 0.695
+ },
+ "both": 0.590055
+}

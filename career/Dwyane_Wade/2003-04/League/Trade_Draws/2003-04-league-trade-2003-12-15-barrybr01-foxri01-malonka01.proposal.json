@@ -1,0 +1,39 @@
+{
+ "id": "2003-04-league-trade-2003-12-15-barrybr01-foxri01-malonka01",
+ "date": "2003-12-15",
+ "clubs": [
+  "Los Angeles Lakers",
+  "Seattle SuperSonics"
+ ],
+ "a": {
+  "club": "Los Angeles Lakers",
+  "sends": [
+   "Karl Malone",
+   "Rick Fox"
+  ],
+  "bbr_ids": [
+   "malonka01",
+   "foxri01"
+  ],
+  "salary": 6234797
+ },
+ "b": {
+  "club": "Seattle SuperSonics",
+  "sends": [
+   "Brent Barry"
+  ],
+  "bbr_ids": [
+   "barrybr01"
+  ],
+  "salary": 5400000
+ },
+ "gain": {
+  "Los Angeles Lakers": 0.097,
+  "Seattle SuperSonics": 0.143
+ },
+ "accept": {
+  "Los Angeles Lakers": 0.716,
+  "Seattle SuperSonics": 0.888
+ },
+ "both": 0.635808
+}

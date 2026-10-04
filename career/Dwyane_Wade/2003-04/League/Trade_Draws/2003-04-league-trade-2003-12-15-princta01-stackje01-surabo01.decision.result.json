@@ -1,0 +1,12 @@
+{
+ "date": "2003-12-15",
+ "decider": "Detroit Pistons and Washington Wizards front offices (engine draw)",
+ "event_id": "2003-04-league-trade-2003-12-15-princta01-stackje01-surabo01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.590055,
+  "decline": 0.409945
+ },
+ "outcome": "decline",
+ "question": "Do Detroit Pistons and Washington Wizards trade Tayshaun Prince and Bob Sura for Jerry Stackhouse?"
+}

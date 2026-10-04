@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-15-minnesota-timberwolves-at-boston-celtics",
+ "game_date": "2003-12-15",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Minnesota Timberwolves",
+  "rotation": "real"
+ }
+}

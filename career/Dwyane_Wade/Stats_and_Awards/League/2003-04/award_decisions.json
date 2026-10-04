@@ -836,6 +836,110 @@
     }
    ],
    "winner": "Andre Miller"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-12-08-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2003-12-08",
+   "period_end": "2003-12-14",
+   "announced_on": "2003-12-15",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/12_December/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Jason Kidd",
+     "team": "New Jersey Nets",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 19.3,
+     "reb": 8.7,
+     "ast": 10.0,
+     "game_score": 20.17,
+     "score": 69.5,
+     "rank": 1
+    },
+    {
+     "player": "Chauncey Billups",
+     "team": "Detroit Pistons",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 21.3,
+     "reb": 4.3,
+     "ast": 4.7,
+     "game_score": 18.97,
+     "score": 65.9,
+     "rank": 2
+    },
+    {
+     "player": "Desmond Mason",
+     "team": "Milwaukee Bucks",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 17.5,
+     "reb": 7.0,
+     "ast": 3.5,
+     "game_score": 14.05,
+     "score": 59.2,
+     "rank": 3
+    }
+   ],
+   "winner": "Jason Kidd"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-12-08-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2003-12-08",
+   "period_end": "2003-12-14",
+   "announced_on": "2003-12-15",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/12_December/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 5,
+     "wins": 2,
+     "losses": 3,
+     "pts": 20.0,
+     "reb": 8.0,
+     "ast": 1.4,
+     "game_score": 16.26,
+     "score": 87.3,
+     "rank": 1
+    },
+    {
+     "player": "Stephon Marbury",
+     "team": "Phoenix Suns",
+     "games": 5,
+     "wins": 2,
+     "losses": 3,
+     "pts": 17.8,
+     "reb": 3.6,
+     "ast": 9.8,
+     "game_score": 15.78,
+     "score": 84.9,
+     "rank": 2
+    },
+    {
+     "player": "Joe Johnson",
+     "team": "Phoenix Suns",
+     "games": 5,
+     "wins": 2,
+     "losses": 3,
+     "pts": 18.4,
+     "reb": 6.8,
+     "ast": 6.0,
+     "game_score": 15.56,
+     "score": 83.8,
+     "rank": 3
+    }
+   ],
+   "winner": "Shawn Marion"
   }
  ]
 }

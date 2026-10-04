@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-04-league-trade-2003-12-15-princta01-stackje01-surabo01",
+ "date": "2003-12-15",
+ "question": "Do Detroit Pistons and Washington Wizards trade Tayshaun Prince and Bob Sura for Jerry Stackhouse?",
+ "decider": "Detroit Pistons and Washington Wizards front offices (engine draw)",
+ "options": {
+  "accept": 0.590055,
+  "decline": 0.409945
+ },
+ "basis": "gains on own objectives {'Detroit Pistons': 0.129, 'Washington Wizards': 0.093}; acceptance {'Detroit Pistons': 0.849, 'Washington Wizards': 0.695}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

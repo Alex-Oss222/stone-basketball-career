@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-04-league-trade-2003-12-15-barrybr01-foxri01-malonka01",
+ "date": "2003-12-15",
+ "question": "Do Los Angeles Lakers and Seattle SuperSonics trade Karl Malone and Rick Fox for Brent Barry?",
+ "decider": "Los Angeles Lakers and Seattle SuperSonics front offices (engine draw)",
+ "options": {
+  "accept": 0.635808,
+  "decline": 0.364192
+ },
+ "basis": "gains on own objectives {'Los Angeles Lakers': 0.097, 'Seattle SuperSonics': 0.143}; acceptance {'Los Angeles Lakers': 0.716, 'Seattle SuperSonics': 0.888}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}
