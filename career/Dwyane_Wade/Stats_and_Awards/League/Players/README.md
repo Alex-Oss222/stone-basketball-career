@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-10**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-11**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -45,7 +45,7 @@ Card date: **2004-02-10**. 504 registry players, one Markdown card and one inter
 | [Gilbert Arenas](arenagi01.md) | Washington Wizards | 22 | sourced | [open](arenagi01.html) |
 | [Howard Eisley](eisleho01.md) | New York Knicks | 31 | sourced | [open](eisleho01.html) |
 | [J.R. Bremer](bremejr01.md) | Cleveland Cavaliers | 23 | silhouette | [open](bremejr01.html) |
-| [Jacque Vaughn](vaughja01.md) | Atlanta Hawks | 28 | sourced | [open](vaughja01.html) |
+| [Jacque Vaughn](vaughja01.md) | Atlanta Hawks | 29 | sourced | [open](vaughja01.html) |
 | [Jamaal Tinsley](tinslja01.md) | Indiana Pacers | 25 | sourced | [open](tinslja01.html) |
 | [Jamal Crawford](crawfja01.md) | Chicago Bulls | 23 | sourced | [open](crawfja01.html) |
 | [Jamison Brewer](breweja01.md) | Indiana Pacers | None | silhouette | [open](breweja01.html) |
@@ -403,7 +403,7 @@ Card date: **2004-02-10**. 504 registry players, one Markdown card and one inter
 | [Qyntel Woods](woodsqy01.md) | Portland Trail Blazers | 22 | sourced | [open](woodsqy01.html) |
 | [Rasheed Wallace](wallara01.md) | Portland Trail Blazers | 29 | sourced | [open](wallara01.html) |
 | [Reggie Evans](evansre01.md) | Seattle SuperSonics | 23 | sourced | [open](evansre01.html) |
-| [Rick Rickert](rickeri01.md) | Minnesota Timberwolves (draft rights) | 20 | sourced | [open](rickeri01.html) |
+| [Rick Rickert](rickeri01.md) | Minnesota Timberwolves (draft rights) | 21 | sourced | [open](rickeri01.html) |
 | [Robert Archibald](archiro01.md) | Phoenix Suns | 23 | sourced | [open](archiro01.html) |
 | [Robert Horry](horryro01.md) | San Antonio Spurs | 33 | sourced | [open](horryro01.html) |
 | [Rodney Rogers](rogerro01.md) | New Jersey Nets | 32 | silhouette | [open](rogerro01.html) |
@@ -541,7 +541,7 @@ Card date: **2004-02-10**. 504 registry players, one Markdown card and one inter
 | [Sofoklis Schortsanitis](schorso01.md) | Los Angeles Clippers (draft rights) | 18 | sourced | [open](schorso01.html) |
 | [Steven Hunter](huntest01.md) | Orlando Magic | 22 | sourced | [open](huntest01.html) |
 | [Theo Ratliff](ratlith01.md) | Atlanta Hawks | 30 | sourced | [open](ratlith01.html) |
-| [Tony Battie](battito01.md) | Boston Celtics | 27 | sourced | [open](battito01.html) |
+| [Tony Battie](battito01.md) | Boston Celtics | 28 | sourced | [open](battito01.html) |
 | [Tony Massenburg](masseto01.md) | Sacramento Kings | 36 | sourced | [open](masseto01.html) |
 | [Travis Knight](knightr01.md) | New York Knicks | 29 | silhouette | [open](knightr01.html) |
 | [Vitaly Potapenko](potapvi01.md) | Seattle SuperSonics | 28 | sourced | [open](potapvi01.html) |

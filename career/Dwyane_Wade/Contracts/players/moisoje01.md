@@ -2,9 +2,9 @@
 
 # Contract | Jerome Moiso
 
-Known through: 2004-02-10. [Open interactive contract](moisoje01.html#contract) · [Contract history](moisoje01.html#contract-history)
+Known through: 2004-02-11. [Open interactive contract](moisoje01.html#contract) · [Contract history](moisoje01.html#contract-history)
 
-Jerome Moiso: under contract. Evidence cutoff: 2004-02-10.
+Jerome Moiso: under contract. Evidence cutoff: 2004-02-11.
 
 ## Current contract
 

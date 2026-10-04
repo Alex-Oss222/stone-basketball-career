@@ -2,9 +2,9 @@
 
 # Contract | Brian Cardinal
 
-Known through: 2004-02-10. [Open interactive contract](cardibr01.html#contract) · [Contract history](cardibr01.html#contract-history)
+Known through: 2004-02-11. [Open interactive contract](cardibr01.html#contract) · [Contract history](cardibr01.html#contract-history)
 
-Brian Cardinal: expired or unresolved. Evidence cutoff: 2004-02-10.
+Brian Cardinal: expired or unresolved. Evidence cutoff: 2004-02-11.
 
 ## Current contract
 
