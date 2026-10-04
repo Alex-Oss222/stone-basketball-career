@@ -40,6 +40,7 @@ HOLDINGS = SEASON_DIR / "00_Team/Team/Roster/holdings.json"
 DEPARTURES = SEASON_DIR / "00_Team/Team/Roster/departures.json"
 MIAMI_ROSTER = SEASON_DIR / "00_Team/Team/Roster/roster.json"
 MIAMI_CARDS = SEASON_DIR / "00_Team/Team/Player_Cards"
+CONTRACT_RECORDS = PLAYER_DIR / "Contracts/contract_records.json"
 TEMPLATE = Path("runtime/assets/player_cards.html")
 SILHOUETTE = "assets/silhouette.svg"
 MIAMI = "Miami Heat"
@@ -125,13 +126,42 @@ def world_moves(player, transactions):
     return sorted(moves, key=lambda m: m[0])
 
 
-def club_on(player, on, *, holdings=None, departures=None, transactions=None, root=ROOT):
+def signings(root=ROOT):
+    """name key -> earliest signing date in the career's contract records."""
+    out = {}
+    if (Path(root) / CONTRACT_RECORDS).is_file():
+        for rec in _read(root, CONTRACT_RECORDS)["records"]:
+            if rec.get("event") == "signed" and rec.get("recorded_on"):
+                key = _key(rec["player"])
+                out[key] = min(out.get(key, rec["recorded_on"]), rec["recorded_on"])
+    return out
+
+
+def signed_evidence(name, on, records=(), signed=None):
+    """The dated evidence that a draft pick is under contract by `on`: (date, basis) or None.
+
+    A signing in the career's contract records counts from its date. The world data does not record
+    a real club's rookie signing date, but a box score lists only a club's roster, so a closed game
+    that lists the pick (played, DNP or inactive) shows his contract was in force by that game; until
+    then the June 26 draft-rights label stands."""
+    when = (signed or {}).get(_key(name))
+    if when and when <= on:
+        return when, f"signed {when} (career contract record)"
+    games = sorted((r["date"], r.get("team")) for r in records if r["date"] <= on)
+    if games:
+        when, club = games[0]
+        return when, f"on the {club} roster in a closed game on {when}; signing date not recorded"
+    return None
+
+
+def club_on(player, on, *, holdings=None, departures=None, transactions=None, root=ROOT, signed=None):
     """The club holding a registry player on `on` (YYYY-MM-DD), with the basis of the answer.
 
     Order: the registry's source club or draft rights, the world's dated real moves up to the date
     (rule 1 skips any move to Miami and any trade involving Miami), Miami's departures ledger
     (rule 3), then Miami's holdings (rule 2: a player Miami holds on the date is Miami's).
-    Returns {"club", "code", "basis", "rights"}; `club` is None for a free agent.
+    Returns {"club", "code", "basis", "rights"}; `club` is None for a free agent. `signed` is the
+    pick's `signed_evidence`: once it is dated on or before `on`, he holds a contract, not rights.
     """
     if holdings is None:
         holdings = _read(root, HOLDINGS) if (Path(root) / HOLDINGS).is_file() else {"entries": []}
@@ -162,6 +192,8 @@ def club_on(player, on, *, holdings=None, departures=None, transactions=None, ro
     if entry:
         club, basis = MIAMI, f'held by Miami ({entry.get("basis", "holdings ledger")})'
         rights = entry.get("basis") == "draft rights"
+    if rights and signed and signed[0] <= on:
+        rights, basis = False, ("held by Miami; " if club == MIAMI else "under contract: ") + signed[1]
     return {"club": club, "code": _code(club, transactions, player), "basis": basis, "rights": rights}
 
 
@@ -239,8 +271,20 @@ def contract_rows(root=ROOT):
     return rows, data["status_legend"]
 
 
-def contract_line(player, rows, legend, rights):
-    """Contract/control line from terms that existed at the checkpoint; never a later decision."""
+def wade_contract_line(signed):
+    if signed:
+        return (f"Rookie-scale contract signed {signed[0]} (career contract record); "
+                "terms and history are on the contract pages.")
+    return "Draft rights held by Miami; no executed professional contract (career record)."
+
+
+def contract_line(player, rows, legend, rights, signed=None, held=None):
+    """Contract/control line from terms that existed at the checkpoint; never a later decision.
+
+    A 2003 pick with `signed` evidence holds a contract whose terms the world data does not record."""
+    if rights is None and signed and player.get("cohort") == "2003_draft_rights":
+        return (f'Under contract with {held["club"]}: {signed[1]}. '
+                "The world data does not record this rookie contract's terms.")
     if rights is not None:
         pick = rights["pick"]
         round_label = "first-round" if pick <= 29 else "second-round"
@@ -408,6 +452,7 @@ class CardContext:
         self.baseline = baseline_entries(root)
         self.prior = prior_lines(root)
         self.rights = draft_rights(root)
+        self.signed = signings(root)
         self.contracts, self.legend = contract_rows(root)
         self.identity = _read(root, PLAYER_DIR / "professional_identity.json")
         self.holdings = _read(root, HOLDINGS) if (self.root / HOLDINGS).is_file() else {"entries": []}
@@ -418,15 +463,16 @@ class CardContext:
         self.periods = periods(self.config)
         self.template = (ROOT / TEMPLATE).read_text(encoding="utf-8")
 
-    def club(self, player):
+    def club(self, player, signed=None):
         return club_on(player, self.on, holdings=self.holdings, departures=self.departures,
-                       transactions=self.transactions, root=self.root)
+                       transactions=self.transactions, root=self.root, signed=signed)
 
 
 def card_data(ctx, player, records=(), shots=()):
     """The dated facts one card renders, shared by the Markdown and HTML outputs."""
     pid = player["registry_id"]
-    held = ctx.club(player)
+    signed = signed_evidence(player["name"], ctx.on, records, ctx.signed)
+    held = ctx.club(player, signed)
     # The 2003-04 season starts in 2003; the card date belongs to that season's colours.
     season_year = int(SEASON[:4])
     colors = club_colors(held["club"], season_year, ctx.colors)
@@ -447,18 +493,18 @@ def card_data(ctx, player, records=(), shots=()):
         measurements = None
     if held["club"] is None:
         label = "Free agent"
-    elif held["rights"] or rights:
+    elif held["rights"]:
         label = f'{held["club"]} (draft rights)'
     else:
         label = held["club"]
-    club_label = (f'{held["code"]} rights' if (held["rights"] or rights) and held["code"] else held["code"]) if held["club"] else "FA"
+    club_label = (f'{held["code"]} rights' if held["rights"] and held["code"] else held["code"]) if held["club"] else "FA"
     stats = {p["id"]: period_statistics(list(records), list(shots), p) for p in ctx.periods}
     closed = sum(1 for r in records if r.get("status") == "played")
     return dict(id=pid, player=player, on=ctx.on, club=held, label=label, club_label=club_label, colors=colors,
                 rights=rights, photo=photo, jersey=jersey, prior_program=prior_program, entry=entry, measurements=measurements,
                 age=age_on(player["birth_date"], ctx.on), prior=None if wade else ctx.prior.get(pid),
-                contract=contract_line(player, ctx.contracts, ctx.legend, rights) if not wade else
-                "Draft rights held by Miami; no executed professional contract (career record).",
+                contract=(contract_line(player, ctx.contracts, ctx.legend, rights if held["rights"] else None, signed, held)
+                          if not wade else wade_contract_line(signed)),
                 miami_card=("README.md" if wade else ctx.miami_cards.get(_key(player["name"]))),
                 wade=wade, bbr_page=base.get("page_url"), stats=stats, closed=closed)
 
@@ -512,7 +558,8 @@ def markdown_card(ctx, data):
         lines.append(f'**NBA entry:** {data["entry"]}. This is the simulation\'s alternate-history player; the historical Wade\'s statistics and biography are never used.\n')
     elif data["rights"]:
         r = data["rights"]
-        lines.append(f'**2003 draft entry:** No. {r["pick"]} overall, rights held by {r["club"]} (draft of June 26, 2003). No NBA statistics exist for this player on the card date.\n')
+        none = "" if data["closed"] else " No NBA statistics exist for this player on the card date."
+        lines.append(f'**2003 draft entry:** No. {r["pick"]} overall, rights held by {r["club"]} (draft of June 26, 2003).{none}\n')
     elif data["prior"]:
         pr = data["prior"]
         lines.append(f'**2002-03 (recorded, {"/".join(pr["team_codes"])}):** {_prior_summary(pr)}.\n')

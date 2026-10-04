@@ -6,7 +6,9 @@ import unittest
 from xml.etree import ElementTree
 
 from runtime.league_cards import (CARDS_DIR, FINAL_SECTIONS, CardContext, SILHOUETTE, build_cards, card_data,
-                                  card_errors, check_cards, club_colors, club_on, html_card, markdown_card)
+                                  card_errors, check_cards, club_colors, club_on, html_card, markdown_card,
+                                  signed_evidence, _key)
+from runtime.write_back import club_cell
 from scripts.format_league_reports import COLUMNS, format_page, player_name, read_tables
 from scripts.validate_repository import markdown_tables
 
@@ -71,6 +73,26 @@ class ClubOnTests(unittest.TestCase):
                                    "from": "2003-09-02", "until": None, "games": 60, "minutes": 1200}]}
         sent = self.on(self.vet, "2003-09-02", holdings=holdings, departures=departures, transactions=tx)
         self.assertEqual(sent["club"], "Dallas Mavericks")
+
+
+    def test_a_signed_pick_holds_a_contract_not_rights_from_the_evidence_date(self):
+        box = [{"date": "2003-10-29", "team": "Chicago Bulls", "appearance": "DNP: inactive (reason not specified)"}]
+        self.assertIsNone(signed_evidence("T.J. Rookie", "2003-10-28", box))
+        evidence = signed_evidence("T.J. Rookie", "2003-10-29", box)
+        self.assertEqual(evidence[0], "2003-10-29")
+        self.assertTrue(self.on(self.rookie, "2003-10-28", signed=evidence)["rights"])
+        held = self.on(self.rookie, "2003-11-01", signed=evidence)
+        self.assertEqual((held["club"], held["rights"]), ("Chicago Bulls", False))
+        # A recorded career signing counts from its own date, before any game.
+        self.assertEqual(signed_evidence("T.J. Rookie", "2003-08-01", (), {_key("T.J. Rookie"): "2003-07-21"})[0], "2003-07-21")
+        self.assertIsNone(signed_evidence("T.J. Rookie", "2003-07-20", (), {_key("T.J. Rookie"): "2003-07-21"}))
+
+    def test_league_page_club_cell_drops_rights_once_signed(self):
+        box = [{"date": "2003-10-29", "team": "Denver Nuggets", "appearance": "Played"}]
+        self.assertEqual(club_cell("DEN rights", "Carmelo Anthony", box, "2003-10-31", {}), "DEN")
+        self.assertEqual(club_cell("DEN rights", "Carmelo Anthony", box, "2003-10-19", {}), "DEN rights")
+        self.assertEqual(club_cell("CHI rights", "Mario Austin", (), "2003-11-11", {}), "CHI rights")
+        self.assertEqual(club_cell("BOS", "Example Veteran", (), "2003-11-11", {}), "BOS")
 
 
 class ColorTests(unittest.TestCase):
@@ -143,6 +165,9 @@ class CardContentTests(unittest.TestCase):
         self.assertIn("[Career page](../../../README.md)", md)
         self.assertIn("UConn (simulation canon)", md)
         self.assertEqual(data["club"]["club"], MIAMI)
+        if self.ctx.on >= "2003-07-21":     # his rookie contract record, not the June 26 rights
+            self.assertFalse(data["club"]["rights"])
+            self.assertIn("Rookie-scale contract signed 2003-07-21", md)
         self.assertNotIn("2002-03 (recorded", md)
         self.assertNotIn("Marquette", md)
         _, butler, _ = self.card("butleca01")

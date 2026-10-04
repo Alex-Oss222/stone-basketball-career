@@ -57,9 +57,9 @@ def fixture_context(root):
                                  ("opponent01", "Opponent"))]
     return SimpleNamespace(root=root, on="2003-11-04", registry=dict(players=players), periods=[PERIOD],
                            colors=dict(placeholder=dict(primary="#111111", secondary="#eeeeee"), eras=[]),
-                           photos={}, baseline={}, prior={}, rights={}, contracts={}, legend={}, miami_cards={},
+                           photos={}, baseline={}, prior={}, rights={}, signed={}, contracts={}, legend={}, miami_cards={},
                            template=(ROOT / TEMPLATE).read_text(),
-                           club=lambda player: dict(club=player["team_name"], code="HOM", rights=False,
+                           club=lambda player, signed=None: dict(club=player["team_name"], code="HOM", rights=False,
                                                     basis="fixture club record"))
 
 

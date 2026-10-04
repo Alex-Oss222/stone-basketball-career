@@ -32,6 +32,8 @@ A card's header uses the colours of the club holding the player on the card date
 3. Miami's departures ledger (`00_Team/Team/Roster/departures.json`, rule 3): a player Miami sent to a real club is that club's for the dates recorded;
 4. Miami's holdings (`00_Team/Team/Roster/holdings.json`, rule 2): a player Miami holds on the date is Miami's, and a real move cannot take him away while he is held. A Miami player whose holding has ended with no later club is a free agent.
 
+A 2003 pick holds a contract, not rights, from the first dated evidence of it (`signed_evidence`): a signing in `career/Dwyane_Wade/Contracts/contract_records.json` from its date, or else the first closed game whose box score lists him on a club's roster (played, DNP or inactive). The world data does not record real clubs' rookie signing dates or terms, so the card says so. League stats pages drop the "rights" from the Club / rights cell on the same evidence, dated at the period's end or the career date, whichever is earlier.
+
 A free agent, and unsigned rights with no club, use the placeholder: white text on near-black (`#1d1d1f`) with grey (`#c5c7cb`) accents.
 
 ## Regeneration and checks

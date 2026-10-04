@@ -488,9 +488,18 @@ def leaders_text(summaries, scope):
             + _table(["Category", "1", "2", "3"], rows).rstrip("\n"))
 
 
-def league_page(text, page, lines, now, results):
+def club_cell(cell, name, records, on, signed):
+    """The Club / rights cell on `on`: a 2003 pick's "rights" label ends once he is under contract."""
+    from .league_cards import signed_evidence
+    if cell.endswith(" rights") and signed_evidence(name, on, records, signed):
+        return cell[:-len(" rights")]
+    return cell
+
+
+def league_page(text, page, lines, now, results, signed=None):
     """One League_Stats.md page rebuilt from the closed results: header, leaders, position tables, period table."""
     scope = scope_for(page, [], now)
+    label_on = min(scope["end"], now)
     def games_in(sc):
         return sum(1 for r in results if sc["start"] <= r["game_date"] <= sc["end"])
     summaries = {}
@@ -509,7 +518,12 @@ def league_page(text, page, lines, now, results):
         def replacer(headers, rows):
             if headers != LEAGUE_COLUMNS:
                 raise ValueError(f"{page}: league table columns are not the shared layout")
-            return _table(headers, [[*row[:5], *stat_cells(summaries.get(_cell_name(row[0]), empty))] for row in rows])
+            out = []
+            for row in rows:
+                name = _cell_name(row[0])
+                club = club_cell(row[2], name, lines.get(name, ()), label_on, signed)
+                out.append([*row[:2], club, *row[3:5], *stat_cells(summaries.get(name, empty))])
+            return _table(headers, out)
         return head + _replace_tables(body, replacer) + tail
     text = re.sub(r"(<details>\n<summary>(?:PG|SG|SF|F|PF|C) ·[^\n]*</summary>\n)(.*?)(</details>)", position, text, flags=re.S)
     return period_rows(text, page, now, games_in)
@@ -600,8 +614,10 @@ def statistics_pages(root=ROOT, season=SEASON):
     results = [row["result"] for row in closed_results(root, season, now)]
     outputs = {}
     league = root / PLAYER_DIR / "Stats_and_Awards/League" / season
+    from .league_cards import signings
+    signed = signings(root)
     for page in sorted(league.rglob("League_Stats.md")):
-        outputs[page] = league_page(page.read_text(encoding="utf-8"), page, by_name, now, results)
+        outputs[page] = league_page(page.read_text(encoding="utf-8"), page, by_name, now, results, signed)
     team_lines, games = miami_lines(root, season, now)
     roster = root / season_base(season) / "00_Team/Team/Roster/roster.json"
     players = read_json(roster)["players"] if roster.is_file() else []
