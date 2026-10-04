@@ -2,9 +2,9 @@
 
 # Contract | Maurice Carter
 
-Known through: 2003-12-28. [Open interactive contract](cartema01.html#contract) · [Contract history](cartema01.html#contract-history)
+Known through: 2003-12-29. [Open interactive contract](cartema01.html#contract) · [Contract history](cartema01.html#contract-history)
 
-Maurice Carter: No verified contract record. Evidence cutoff: 2003-12-28.
+Maurice Carter: No verified contract record. Evidence cutoff: 2003-12-29.
 
 ## Current contract
 

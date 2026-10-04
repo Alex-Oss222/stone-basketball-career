@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-29-memphis-grizzlies-at-indiana-pacers",
+ "game_date": "2003-12-29",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ }
+}

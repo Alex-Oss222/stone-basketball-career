@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-29-philadelphia-76ers-at-utah-jazz",
+ "game_date": "2003-12-29",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Philadelphia 76ers",
+  "rotation": "real"
+ }
+}

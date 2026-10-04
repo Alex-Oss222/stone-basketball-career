@@ -2,9 +2,9 @@
 
 # Contract | Matt Barnes
 
-Known through: 2003-12-28. [Open interactive contract](barnema02.html#contract) · [Contract history](barnema02.html#contract-history)
+Known through: 2003-12-29. [Open interactive contract](barnema02.html#contract) · [Contract history](barnema02.html#contract-history)
 
-Matt Barnes: No verified contract record. Evidence cutoff: 2003-12-28.
+Matt Barnes: No verified contract record. Evidence cutoff: 2003-12-29.
 
 ## Current contract
 

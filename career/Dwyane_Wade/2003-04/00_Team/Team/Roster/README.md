@@ -2,19 +2,19 @@
 
 <!-- team-status:start -->
 
-[roster.json](roster.json) is the machine-readable register (team-control record dated 2003-11-11). Availability below is on 2003-12-28, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
+[roster.json](roster.json) is the machine-readable register (team-control record dated 2003-11-11). Availability below is on 2003-12-29, from the [injured list](../../Transactions/injured_list.json); role is the staff rotation in force.
 
-| Player | Pos | Control | Availability on 2003-12-28 | Staff role |
+| Player | Pos | Control | Availability on 2003-12-29 | Staff role |
 | --- | --- | --- | --- | --- |
 | [Malik Allen](../Player_Cards/malik_allen.md) | PF | free agent rights held | Unsigned; Miami holds his free-agent rights | N/A |
-| [Caron Butler](../Player_Cards/caron_butler.md) | SF | under contract | Injured list since 2003-12-09, injured | starter at SF, staff plan 34 minutes |
+| [Caron Butler](../Player_Cards/caron_butler.md) | SF | under contract | Available | starter at SF, staff plan 34 minutes |
 | [Rasual Butler](../Player_Cards/rasual_butler.md) | SG/SF | team option exercised | Available | reserve outside the planned rotation |
 | [Anthony Carter](../Player_Cards/anthony_carter.md) | PG | player option exercised | Available | rotation at PG, staff plan 8 minutes |
 | [LaPhonso Ellis](../Player_Cards/laphonso_ellis.md) | PF | under contract guarantee amended | Available | rotation at PF, staff plan 4 minutes |
 | [Brian Grant](../Player_Cards/brian_grant.md) | C/PF | under contract | Available | rotation at C, staff plan 20 minutes |
 | [Mike James](../Player_Cards/mike_james.md) | PG | re signed | Available | starter at PG, staff plan 34 minutes |
 | [Eddie Jones](../Player_Cards/eddie_jones.md) | SG/SF | under contract | Available | rotation at SG, staff plan 16 minutes |
-| [Sean Lampley](../Player_Cards/sean_lampley.md) | SF | team option exercised | Available | reserve outside the planned rotation |
+| [Sean Lampley](../Player_Cards/sean_lampley.md) | SF | team option exercised | Injured list since 2003-12-29, inactive reserve | reserve outside the planned rotation |
 | [Dwyane Wade](../Player_Cards/dwyane_wade.md) | SG/PG | under contract | Available | starter at SG, staff plan 34 minutes |
 | [Stephen Jackson](../Player_Cards/stephen_jackson.md) | SG | camp contract | Available | rotation at SG, staff plan 12 minutes |
 | [Shawn Kemp](../Player_Cards/shawn_kemp.md) | C | camp contract | Available | starter at C, staff plan 34 minutes |

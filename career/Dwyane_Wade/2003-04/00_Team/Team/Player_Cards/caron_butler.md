@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 23 · **Height:** 6-7 · **Weight:** 228 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2003-12-28 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2003-12-29 
 
 **Contract/control:** Rookie contract through 2004-05, plus a 2005-06 team option; 2003-04 salary $1,804,680. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at SF, staff plan 34 minutes (staff rotation dated 2003-12-19, [record](../Depth_Chart/Reviews/2003-12-19/rotation.json)). On the injured list since 2003-12-09 (injury: 10 more game(s) out on the engine's draw).
+**Role:** Starter at SF, staff plan 34 minutes (staff rotation dated 2003-12-19, [record](../Depth_Chart/Reviews/2003-12-19/rotation.json)).
 
 **Offense:** In 2002-03: 15.4 points and 2.7 assists per game; 50.2% true shooting at 22.9% usage.
 
@@ -83,12 +83,12 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 15 closed Miami game(s) through 2003-12-28.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 16 closed Miami game(s) through 2003-12-29.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | MIA | 78 | 78 | 36.6 | 15.4 | 5.1 | 2.7 | 1.8 | 0.4 | 2.5 | 41.6% | 31.8% | 82.4% |
-| 2003-04 | MIA | 15 | 15 | 32.3 | 10.6 | 5.5 | 1.8 | 0.9 | 0.3 | 1.3 | 37.6% | 7.7% | 63.2% |
+| 2003-04 | MIA | 16 | 16 | 31.8 | 10.6 | 5.4 | 1.8 | 0.8 | 0.3 | 1.2 | 36.7% | 7.7% | 68.2% |
 
 <!-- veteran-details:start -->
 ### Additional statistics

@@ -1,0 +1,12 @@
+{
+ "date": "2003-12-29",
+ "decider": "Golden State Warriors and San Antonio Spurs front offices (engine draw)",
+ "event_id": "2003-04-league-trade-2003-12-29-horryro01-mercero01-vanexni01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.6707,
+  "decline": 0.3293
+ },
+ "outcome": "decline",
+ "question": "Do Golden State Warriors and San Antonio Spurs trade Nick Van Exel for Robert Horry and Ron Mercer?"
+}

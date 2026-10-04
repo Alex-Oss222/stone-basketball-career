@@ -2,9 +2,9 @@
 
 # Contract | Bryon Russell
 
-Known through: 2003-12-28. [Open interactive contract](russebr01.html#contract) · [Contract history](russebr01.html#contract-history)
+Known through: 2003-12-29. [Open interactive contract](russebr01.html#contract) · [Contract history](russebr01.html#contract-history)
 
-Bryon Russell: under contract. Evidence cutoff: 2003-12-28.
+Bryon Russell: under contract. Evidence cutoff: 2003-12-29.
 
 ## Current contract
 
