@@ -1,0 +1,578 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2003-04",
+ "agreement": "1999 CBA",
+ "kind": "in_season_rules",
+ "retrieved": "2026-10-04",
+ "note": "Rules restate Larry Coon's 1999 Salary Cap FAQ. The live page at http://www.cbafaq.com/salarycap99.htm was read on 2026-10-04 (web.archive.org refused connections from this environment; its closest listed snapshot is from 2012). The page's revision history shows the questions used here on roster, injured reserve, 10-day contracts and waivers (Q53, Q62, Q63, Q64) were last revised in 1999, and no later revision touched them; Q17 was revised up to 2005 only for new figures. Facts found only in the 2005 FAQ (the 2005 CBA, which replaced the 1999 agreement from 2005-06) are marked inferred, not sourced. Status values: sourced (stated by the cited source), inferred (reasoned from sourced facts or a later agreement; see note), not found.",
+ "rules": {
+  "roster": {
+   "active_list_size": {
+    "value": 12,
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q62)",
+     "http://www.cbafaq.com/salarycap99.htm (Q64)"
+    ],
+    "note": "IR 'allows teams to keep their full complement of 12 players'."
+   },
+   "minimum_players_dressed_per_game": {
+    "value": 8,
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q64)"
+    ],
+    "note": "'A team must suit up eight players for each game.'"
+   },
+   "injured_list_max_players": {
+    "value": 3,
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q62)"
+    ],
+    "note": "'Teams may have a maximum of three players on IR at one time.' The FAQ treats injured reserve (IR) and injured list (IL) as one status."
+   },
+   "maximum_players_under_contract_regular_season": {
+    "value": 15,
+    "status": "inferred",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q62)"
+    ],
+    "note": "12 active plus at most 3 on IR. The FAQ does not state a 15-player ceiling in words."
+   },
+   "minimum_players_under_contract_regular_season": {
+    "value": 12,
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q64)"
+    ],
+    "note": "After a waiver or IR placement the team has two weeks to get back to 12 players. The FAQ gives no other minimum; the empty-roster charge below 11 players (Q33) is a team-salary rule, not a roster minimum."
+   },
+   "refill_window_days": {
+    "value": 14,
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q64)"
+    ],
+    "note": "'two weeks to get back to 12 players'."
+   },
+   "injured_list_minimum_games": {
+    "value": 5,
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q62)"
+    ],
+    "note": "'A player usually must spend at least five games (or until the end of the season if fewer than five games remain) on IR before being activated.'"
+   },
+   "injured_list_early_activation": {
+    "value": "allowed before five games only if his spot on the active roster has not been filled",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q62)"
+    ],
+    "note": "FAQ example: Vancouver, Bryant Reeves, December 1999."
+   },
+   "injured_list_medical_check": {
+    "value": "cause must be legitimate, but the league does not insist on an independent physician confirming the diagnosis; placing healthy surplus players on IR was common",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q62)"
+    ]
+   },
+   "hardship_exception": {
+    "value": "with league permission a team may temporarily add a 13th active player when a special hardship exists (FAQ example: three players already out for the season with serious injuries)",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q62)"
+    ],
+    "note": "No games threshold or duration is given."
+   }
+  },
+  "waivers": {
+   "waiver_period": {
+    "value": "48 hours for a player released between August 15 and the end of the regular season; 10 days at any other time",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q53)",
+     "http://www.cbafaq.com/salarycap99.htm (Q96)"
+    ]
+   },
+   "claim_priority": {
+    "value": "if more than one team claims, the team with the worst record gets him",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q53)"
+    ]
+   },
+   "claim_priority_early_season_standings": {
+    "value": "previous season's records until December 1, current-season records from December 1",
+    "status": "inferred",
+    "sources": [
+     "https://hoopsrumors.com/2018/11/hoops-rumors-glossary-waivers.html"
+    ],
+    "note": "Not found in the 1999 FAQ. The cited glossary describes later agreements; whether the same December 1 switch applied in 2003-04 was not verified."
+   },
+   "claiming_team_requirement": {
+    "value": [
+     "far enough under the salary cap to fit the player's entire salary",
+     "a disabled player exception for at least the player's salary",
+     "a traded player exception for at least the player's salary",
+     "the player's contract is for one or two seasons at the minimum salary"
+    ],
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q53)"
+    ],
+    "note": "Any one of the four suffices."
+   },
+   "claim_fee_dollars": {
+    "value": 1000,
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q53)"
+    ],
+    "note": "Paid to the league office."
+   },
+   "claimed_player_contract": {
+    "value": "the claiming team acquires his existing contract and pays the remainder of his salary",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q53)"
+    ]
+   },
+   "claimed_player_bird_clock": {
+    "value": "reset when claimed before clearing waivers",
+    "status": "inferred",
+    "sources": [
+     "http://www.cbafaq.com/salarycap05.htm (Q26)",
+     "http://www.cbafaq.com/salarycap99.htm (Q17)"
+    ],
+    "note": "The 1999 FAQ counts Bird seasons 'without being waived'; the explicit claimed-player reset is stated only in the 2005 FAQ."
+   },
+   "cleared_waivers": {
+    "value": "player may sign with any team; the new team pays only the pro-rated minimum salary and the original team continues to pay the balance",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q53)",
+     "http://www.cbafaq.com/salarycap99.htm (Q52)"
+    ],
+    "note": "Set-off (Q52): the waiving team reduces what it owes by one-half of (new salary minus the one-year-veteran minimum; rookie minimum for a rookie)."
+   },
+   "waiving_team_cap": {
+    "value": "guaranteed salary of a released player stays in the waiving team's team salary; non-guaranteed players count only for what they earned while with the team",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q52)"
+    ]
+   },
+   "playoff_eligibility_cutoff": {
+    "value": "a player waived after March 1 is ineligible for the playoff roster of any team that signs him for the rest of that season",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q53)",
+     "http://www.cbafaq.com/salarycap99.htm (Q96)"
+    ],
+    "date_2003_04": "2004-03-01"
+   },
+   "contract_guarantee_date": {
+    "value": "January 10: all contracts become guaranteed for the remainder of that season; a player terminated on or after January 10 is owed the rest of the season's salary (and before then if unfit because of a basketball-related injury)",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q90)",
+     "http://www.cbafaq.com/salarycap99.htm (Q96)",
+     "http://www.cbafaq.com/salarycap99.htm (Q57)"
+    ],
+    "date_2003_04": "2004-01-10",
+    "note": "Arbitration exception (John Starks, 1999-00): in a contract's last season team and player may agree to remove the January 10 guarantee in a buyout (Q57)."
+   }
+  },
+  "ten_day": {
+   "length": {
+    "value": "ten days or three games, whichever comes later",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q63)"
+    ]
+   },
+   "first_signing_date_rule": {
+    "value": "January 5, or the first business day thereafter",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q63)",
+     "http://www.cbafaq.com/salarycap99.htm (Q96)"
+    ]
+   },
+   "first_signing_date_2003_04": {
+    "value": "2004-01-05",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q63)",
+     "https://www.basketball-reference.com/leagues/NBA_2004_transactions.html"
+    ],
+    "note": "January 5, 2004 was a Monday. Basketball-Reference records the first 2003-04 10-day contracts that day (Orlando: Lee Nailon; Portland: Slavko Vranes)."
+   },
+   "max_per_player_per_club": {
+    "value": 2,
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q63)"
+    ],
+    "note": "Two per season with the same team, consecutive or not."
+   },
+   "after_second": {
+    "value": "the team may keep the player only by signing him for the remainder of the season; otherwise he leaves when the contract expires",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q63)"
+    ]
+   },
+   "salary": {
+    "value": "the player's minimum salary for his years of service, pro-rated to the days the contract covers",
+    "status": "inferred",
+    "sources": [
+     "http://www.cbafaq.com/salarycap05.htm (Q22)",
+     "http://www.cbafaq.com/salarycap99.htm (Q9)"
+    ],
+    "note": "Proration wording is from the 2005 FAQ. The 1999 FAQ (Q9) confirms ten-day contracts are minimum-salary contracts and that for a player with five or more seasons the team pays the four-year-veteran minimum and the league the rest, with only the four-year minimum in team salary. Scale: library/2003/league/nba_1999_cba_minimum_salary_scale.json."
+   },
+   "counts_on_cap": {
+    "value": "yes; salary earned stays in team salary through June 30 after the contract ends",
+    "status": "inferred",
+    "sources": [
+     "http://www.cbafaq.com/salarycap05.htm (Q14)",
+     "http://www.cbafaq.com/salarycap99.htm (Q52)"
+    ],
+    "note": "Completed-contract wording is from the 2005 FAQ; the 1999 FAQ (Q52) says released non-guaranteed players count for what they earned while with the team. Over-the-cap teams use the minimum salary exception (Q17)."
+   },
+   "counts_on_roster": {
+    "value": "yes, as one of the 12 active players",
+    "status": "inferred",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q63)"
+    ],
+    "note": "The FAQ says they 'are used to replace players who are on injured reserve'."
+   },
+   "signable_with_15_under_contract": {
+    "value": false,
+    "status": "inferred",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q62)",
+     "http://www.cbafaq.com/salarycap99.htm (Q63)"
+    ],
+    "note": "A 10-day player is an additional contract; with 12 active and 3 on IR no slot is open. The 2005 FAQ's limit (no more 10-day contracts than players on the inactive list) is not in the 1999 FAQ."
+   },
+   "bird_rights": {
+    "value": "10-day contracts do not count toward Bird rights",
+    "status": "inferred",
+    "sources": [
+     "http://www.cbafaq.com/salarycap05.htm (Q26)"
+    ],
+    "note": "Stated only in the 2005 FAQ."
+   }
+  },
+  "rest_of_season": {
+   "definition": {
+    "value": "a contract for the remainder of the current season; the only way to keep a player after his second 10-day contract",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q63)"
+    ]
+   },
+   "salary_at_minimum": {
+    "value": "pro-rated minimum based on the fraction of the season remaining when signed",
+    "status": "inferred",
+    "sources": [
+     "http://www.cbafaq.com/salarycap05.htm (Q22)"
+    ]
+   },
+   "league_pays_part_for_veterans": {
+    "value": "for players with five or more seasons on a one-year, ten-day or rest-of-season minimum contract, the team pays the four-year-veteran minimum and the league the rest; only the four-year minimum counts in team salary",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q9)"
+    ]
+   },
+   "minimum_salary_exception": {
+    "value": "over-the-cap teams may sign minimum-salary contracts of up to two seasons; second-season salary is that season's minimum; also allows minimum-salary players to be acquired by trade without salary matching",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q17)",
+     "http://www.cbafaq.com/salarycap99.htm (Q69)"
+    ]
+   },
+   "minimum_salary_exception_max_seasons": {
+    "value": 2,
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q17)"
+    ]
+   },
+   "minimum_salary_exception_uses": {
+    "value": "no limit on the number of players signed or acquired",
+    "status": "inferred",
+    "sources": [
+     "http://www.cbafaq.com/salarycap05.htm (Q19)",
+     "http://www.cbafaq.com/salarycap99.htm (Q17)"
+    ],
+    "note": "Stated in the 2005 FAQ; the 1999 FAQ states no limit either way."
+   },
+   "multiyear_from_prorated": {
+    "value": "a multiyear contract starting at the pro-rated minimum pays the full minimum in later seasons",
+    "status": "inferred",
+    "sources": [
+     "http://www.cbafaq.com/salarycap05.htm (Q22)"
+    ]
+   }
+  },
+  "disabled_player_exception": {
+   "existed_under_1999_cba": {
+    "value": true,
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q17)"
+    ]
+   },
+   "purpose": {
+    "value": "lets a team over the cap acquire one replacement for a disabled player who will be out for the remainder of the season; may also be granted on a player's death",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q17)",
+     "http://www.cbafaq.com/salarycap99.htm (Q56)"
+    ]
+   },
+   "amount": {
+    "value": "lesser of 50% of the injured player's salary or the average salary",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q17)"
+    ]
+   },
+   "approval": {
+    "value": "league approval based on an NBA-designated physician's determination; the FAQ adds that a Board of Governors vote is required",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q17)"
+    ],
+    "note": "Denied: Phoenix (Danny Manning, 1997-98), Orlando (Grant Hill, 2003). Granted: San Antonio (Sean Elliott, 1999), Charlotte (Bobby Phills)."
+   },
+   "use": {
+    "value": "one player only; sign a free agent for up to one season or absorb salary in a trade like a traded player exception; cannot be split",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q17)"
+    ]
+   },
+   "deadline": {
+    "value": "player disabled July 1 - November 30: replacement within 45 days; disabled December 1 - June 30 and out the following season too: until October 1",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q17)",
+     "http://www.cbafaq.com/salarycap99.htm (Q96)"
+    ]
+   },
+   "return_of_player": {
+    "value": "the disabled player may be activated immediately if he returns early; the replacement or unused exception is unaffected",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q17)"
+    ]
+   },
+   "under_cap_effect": {
+    "value": "counts in team salary while available if the team is under the cap; lost if team salary plus exceptions stays below the cap",
+    "status": "sourced",
+    "sources": [
+     "http://www.cbafaq.com/salarycap99.htm (Q17)",
+     "http://www.cbafaq.com/salarycap99.htm (Q18)"
+    ]
+   }
+  }
+ },
+ "calibration_2003_04": {
+  "counting_note": "Counted from Basketball-Reference's 2004 NBA transactions page read on 2026-10-04 (all dated entries parsed). The page may omit minor moves, so counts are Basketball-Reference counts. Real Miami moves appear as history only; under the career's world model they are not applied to simulated Miami.",
+  "trades_dec3_to_deadline": {
+   "count": 16,
+   "window": "2003-12-03 through 2004-02-19 inclusive",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/leagues/NBA_2004_transactions.html"
+   ],
+   "note": "Each multi-team trade counted once (3-team trades on Feb 15 and Feb 19). Four trades fell on deadline day. None involves Miami.",
+   "list": [
+    "2003-12-03: The Memphis Grizzlies traded Wesley Person and a 2004 1st round draft pick (Sergei Monia was later selected) to the Portland Trail Blazers for Bonzi Wells.",
+    "2003-12-15: The Boston Celtics traded Tony Battie, Kedrick Brown and Eric Williams to the Cleveland Cavaliers for Ricky Davis, Chris Mihm, Michael Stewart and a 2005 2nd round draft pick (Ryan Gomes was later selected).",
+    "2003-12-16: The Chicago Bulls traded Roger Mason to the Toronto Raptors for Rick Brunson.",
+    "2003-12-23: The Orlando Magic traded a 2004 2nd round draft pick to the Philadelphia 76ers for Monty Williams and a 2004 2nd round draft pick (Viktor Sanikidze was later selected). Conditional 2004 2nd-rd pick did not convey Philadelphia also received a trade exception from Orlando",
+    "2003-12-23: The Orlando Magic traded Donnell Harvey to the Phoenix Suns for a 2004 2nd round draft pick (Antonio Burks was later selected).",
+    "2003-12-26: The Orlando Magic traded a future 2nd round draft pick to the Phoenix Suns for Robert Archibald. The future 2nd round draft pick traded to Phoenix was conditional and was not exercised.",
+    "2003-12-30: The Houston Rockets traded John Amaechi and Moochie Norris to the New York Knicks for Clarence Weatherspoon.",
+    "2004-01-02: The Orlando Magic traded Robert Archibald and a 2005 2nd round draft pick (Roko Ukić was later selected) to the Toronto Raptors for Mengke Bateer, Remon Van der Hare and a 2005 2nd round draft pick (Travis Diener was later selected).",
+    "2004-01-05: The New York Knicks traded Howard Eisley, Maciej Lampe, Antonio McDyess, Milos Vujanic, Charlie Ward, a 2004 1st round draft pick (Kirk Snyder was later selected) and a 2010 1st round draft pick (Gordon Hayward was later selected) to the Phoenix Suns for Anfernee Hardaway, Stephon Marbury and Cezary Trybański.",
+    "2004-01-21: The Cleveland Cavaliers traded Darius Miles to the Portland Trail Blazers for Ruben Boumtje-Boumtje and Jeff McInnis.",
+    "2004-02-09: The Atlanta Hawks traded Shareef Abdur-Rahim, Dan Dickau and Theo Ratliff to the Portland Trail Blazers for Wesley Person and Rasheed Wallace.",
+    "2004-02-15: In a 3-team trade, the Atlanta Hawks traded Nazr Mohammed to the New York Knicks; the Milwaukee Bucks traded Joel Przybilla to the Atlanta Hawks; the Milwaukee Bucks traded Tim Thomas to the New York Knicks; the New York Knicks traded Michael Doleac and a 2005 2nd round draft pick (Ronny Turiaf was later selected) to the Atlanta Hawks; and  the New York Knicks traded Keith Van Horn to the Milwaukee Bucks.",
+    "2004-02-19: In a 3-team trade, the Atlanta Hawks traded Rasheed Wallace to the Detroit Pistons; the Boston Celtics traded Chris Mills to the Atlanta Hawks; the Boston Celtics traded Mike James to the Detroit Pistons; the Detroit Pistons traded Željko Rebrača, Bob Sura and a 2004 1st round draft pick (Josh Smith was later selected) to the Atlanta Hawks; and  the Detroit Pistons traded Chucky Atkins, Lindsey Hunter and a 2004 1st round draft pick (Tony Allen was later selected) to the Boston Celtics.",
+    "2004-02-19: The Orlando Magic traded Gordan Giriček to the Utah Jazz for DeShawn Stevenson and a 2007 2nd round draft pick (Stanko Barać was later selected).",
+    "2004-02-19: The Phoenix Suns traded Tom Gugliotta, a 2004 1st round draft pick (Kirk Snyder was later selected), a 2005 2nd round draft pick (Alex Acker was later selected) and a 2010 1st round draft pick (Gordon Hayward was later selected) to the Utah Jazz for Keon Clark and Ben Handlogten.",
+    "2004-02-19: The New Orleans Hornets traded Sean Rooks to the Orlando Magic for Shammond Williams."
+   ]
+  },
+  "ten_day_contracts": {
+   "count": 60,
+   "entries": 39,
+   "converted_to_rest_of_season": 18,
+   "status": "inferred",
+   "sources": [
+    "https://www.basketball-reference.com/leagues/NBA_2004_transactions.html"
+   ],
+   "note": "Approximate. 39 Basketball-Reference entries dated 2004-01-05 to 2004-03-29; 'two 10-day contracts' and 'the first of two 10-day contracts' counted as 2, other entries as 1 (Paul Grant's second Utah 10-day is its own entry). If the 9 'first of two' entries signed only one, the count is 51. 18 entries ended in a rest-of-season contract. None involves Miami.",
+   "list": [
+    "2004-01-05: The Orlando Magic signed Lee Nailon to the first of two 10-day contracts.",
+    "2004-01-05: The Portland Trail Blazers signed Slavko Vraneš to a 10-day contract.",
+    "2004-01-06: The Dallas Mavericks signed Mamadou N'Diaye to the first of two 10-day contracts.",
+    "2004-01-07: The Minnesota Timberwolves signed Anthony Goldwire to a 10-day contract.",
+    "2004-01-07: The Chicago Bulls signed Ronald Dupree to a 10-day contract, then signed to a contract for the rest of the season.",
+    "2004-01-08: The Utah Jazz signed Paul Grant to a 10-day contract.",
+    "2004-01-09: The Philadelphia 76ers signed Zendon Hamilton to two 10-day contracts, then signed to a contract for the rest of the season.",
+    "2004-01-10: The Sacramento Kings signed Jabari Smith to two 10-day contracts, then signed to a contract for the rest of the season.",
+    "2004-01-16: The Washington Wizards signed Torraye Braggs to the first of two 10-day contracts.",
+    "2004-01-18: The Utah Jazz signed Paul Grant to a 2nd 10-day contract.",
+    "2004-01-18: The Los Angeles Clippers signed Matt Barnes to two 10-day contracts, then signed to a contract for the rest of the season.",
+    "2004-01-19: The New Jersey Nets signed Robert Pack to the first of two 10-day contracts.",
+    "2004-01-26: The New Orleans Hornets signed Tierre Brown to a 10-day contract.",
+    "2004-01-26: The New Jersey Nets signed Hubert Davis to a 10-day contract, then signed to a contract for the rest of the season.",
+    "2004-01-28: The Utah Jazz signed Mikki Moore to two 10-day contracts, then signed to a contract for the rest of the season.",
+    "2004-01-30: The Minnesota Timberwolves signed Darrick Martin to two 10-day contracts, then signed to a contract for the rest of the season.",
+    "2004-01-30: The Los Angeles Lakers signed Maurice Carter to the first of two 10-day contracts.",
+    "2004-02-03: The Portland Trail Blazers signed Omar Cook to the first of two 10-day contracts.",
+    "2004-02-04: The New York Knicks signed DerMarr Johnson to a 10-day contract, then signed to a contract for the rest of the season.",
+    "2004-02-18: The Atlanta Hawks signed Mamadou N'Diaye to two 10-day contracts, then signed to a contract for the rest of the season.",
+    "2004-02-20: The Orlando Magic signed Desmond Penigar to the first of two 10-day contracts.",
+    "2004-02-21: The Sacramento Kings signed Rodney Buford to two 10-day contracts, then signed to a contract for the rest of the season.",
+    "2004-02-27: The Atlanta Hawks signed Hiram Fuller to a 10-day contract.",
+    "2004-02-28: The Milwaukee Bucks signed Anthony Goldwire to a 10-day contract.",
+    "2004-02-28: The Chicago Bulls signed Linton Johnson to two 10-day contracts, then signed to a contract for the rest of the season.",
+    "2004-03-01: The Golden State Warriors signed Rusty LaRue to a 10-day contract.",
+    "2004-03-03: The Cleveland Cavaliers signed Lee Nailon to two 10-day contracts, then signed to a contract for the rest of the season.",
+    "2004-03-04: The Chicago Bulls signed Paul Shirley to two 10-day contracts, then signed to a contract for the rest of the season.",
+    "2004-03-08: The Atlanta Hawks signed Jason Collier to two 10-day contracts, then signed to a contract for the rest of the season.",
+    "2004-03-09: The Atlanta Hawks signed Josh Davis to a 10-day contract.",
+    "2004-03-10: The Orlando Magic signed Britton Johnsen to a 10-day contract, then signed to a contract for the rest of the season.",
+    "2004-03-11: The Golden State Warriors signed J.R. Bremer to two 10-day contracts, then signed to a contract for the rest of the season.",
+    "2004-03-15: The Chicago Bulls signed Jannero Pargo to a 10-day contract, then signed to a contract for the rest of the season.",
+    "2004-03-18: The Houston Rockets signed Charles Oakley to the first of two 10-day contracts.",
+    "2004-03-22: The New Jersey Nets signed Anthony Goldwire to the first of two 10-day contracts.",
+    "2004-03-25: The New Orleans Hornets signed Maurice Carter to a 10-day contract, then signed to a contract for the rest of the season.",
+    "2004-03-26: The Portland Trail Blazers signed Desmond Ferguson to a 10-day contract.",
+    "2004-03-28: The Los Angeles Clippers signed Randy Livingston to a 10-day contract.",
+    "2004-03-29: The Cleveland Cavaliers signed Mateen Cleaves to a 10-day contract."
+   ]
+  },
+  "waivers": {
+   "count": 55,
+   "window": "regular season 2003-10-28 through 2004-04-14",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/leagues/NBA_2004_transactions.html"
+   ],
+   "note": "Entries reading 'waived' within the regular season, including buyouts and repeat players (Alton Ford twice by Houston; Dan Langhi by two clubs). Includes two real Miami waivers (Kirk Penney 2003-11-07, Tyrone Hill 2003-12-01). Twelve waivers fell on 2004-01-05 to 2004-01-07, just before the January 10 guarantee date. Six further entries read 'released' (listed separately; three are Anthony Goldwire leaving 10-day clubs).",
+   "list": [
+    "2003-10-31: The San Antonio Spurs waived Sean Marks.",
+    "2003-10-31: The Golden State Warriors waived Pepe Sánchez.",
+    "2003-11-06: The Cleveland Cavaliers waived Jelani McCoy.",
+    "2003-11-07: The Miami Heat waived Kirk Penney.",
+    "2003-11-13: The New Jersey Nets waived Doug Overton.",
+    "2003-11-16: The Orlando Magic waived Britton Johnsen.",
+    "2003-11-17: The San Antonio Spurs waived Shane Heal.",
+    "2003-11-19: The Houston Rockets waived Alton Ford.",
+    "2003-11-21: The Los Angeles Clippers waived Wang Zhizhi.",
+    "2003-11-21: The Golden State Warriors waived Dan Langhi.",
+    "2003-11-21: The Portland Trail Blazers waived Tracy Murray.",
+    "2003-11-23: The Houston Rockets waived Torraye Braggs.",
+    "2003-11-25: The Toronto Raptors waived Derrick Dial.",
+    "2003-12-01: The Miami Heat waived Tyrone Hill.",
+    "2003-12-08: The Sacramento Kings waived Rodney Buford.",
+    "2003-12-14: The Golden State Warriors waived Sean Lampley.",
+    "2003-12-20: The Minnesota Timberwolves waived Quincy Lewis.",
+    "2003-12-22: The New Jersey Nets waived Damone Brown.",
+    "2003-12-22: The Golden State Warriors waived Cherokee Parks.",
+    "2003-12-24: The New York Knicks waived Slavko Vraneš.",
+    "2003-12-26: The Orlando Magic waived Monty Williams.",
+    "2003-12-29: The Atlanta Hawks waived Lee Nailon.",
+    "2003-12-29: The New Orleans Hornets waived James Lang.",
+    "2004-01-05: The Orlando Magic waived Mengke Bateer.",
+    "2004-01-06: The Philadelphia 76ers waived Zendon Hamilton.",
+    "2004-01-06: The Phoenix Suns waived Charlie Ward.",
+    "2004-01-06: The Chicago Bulls waived Linton Johnson.",
+    "2004-01-06: The Houston Rockets waived Alton Ford.",
+    "2004-01-06: The Milwaukee Bucks waived Dan Langhi.",
+    "2004-01-06: The Utah Jazz waived Paul Grant.",
+    "2004-01-07: The Portland Trail Blazers waived Matt Carroll.",
+    "2004-01-07: The New Jersey Nets waived Mikki Moore.",
+    "2004-01-07: The Los Angeles Lakers waived Jannero Pargo.",
+    "2004-01-07: The Portland Trail Blazers waived Kaniel Dickens.",
+    "2004-01-07: The Minnesota Timberwolves waived Keith McLeod.",
+    "2004-01-16: The Los Angeles Clippers waived Glen Rice.",
+    "2004-01-20: The Detroit Pistons waived Hubert Davis.",
+    "2004-01-26: The New Jersey Nets waived Robert Pack.",
+    "2004-01-28: The Phoenix Suns waived Scott Williams.",
+    "2004-02-17: The Chicago Bulls waived Jay Williams.",
+    "2004-02-18: The Atlanta Hawks waived Michael Doleac.",
+    "2004-02-20: The Phoenix Suns waived Ben Handlogten.",
+    "2004-02-23: The Sacramento Kings waived Lawrence Funderburke.",
+    "2004-02-25: The Boston Celtics waived Lindsey Hunter.",
+    "2004-02-25: The Atlanta Hawks waived Dion Glover.",
+    "2004-02-26: The Los Angeles Clippers waived Olden Polynice.",
+    "2004-02-27: The Houston Rockets waived Eddie Griffin.",
+    "2004-02-27: The San Antonio Spurs waived Ron Mercer.",
+    "2004-02-29: The Toronto Raptors waived Lonny Baxter.",
+    "2004-03-02: The Chicago Bulls waived Corie Blount.",
+    "2004-03-02: The New Orleans Hornets waived Bryce Drew.",
+    "2004-03-12: The Toronto Raptors waived Michael Bradley.",
+    "2004-03-15: The Chicago Bulls waived Rick Brunson.",
+    "2004-03-15: The Atlanta Hawks waived Chris Mills.",
+    "2004-04-06: The Cleveland Cavaliers waived Mateen Cleaves."
+   ],
+   "released_entries": [
+    "2004-01-27: The Minnesota Timberwolves released Anthony Goldwire.",
+    "2004-02-18: The Boston Celtics released Vin Baker.",
+    "2004-03-02: The Washington Wizards released Brevin Knight.",
+    "2004-03-03: The Cleveland Cavaliers released J.R. Bremer.",
+    "2004-03-05: The Milwaukee Bucks released Anthony Goldwire.",
+    "2004-04-06: The New Jersey Nets released Anthony Goldwire."
+   ]
+  }
+ },
+ "sources": {
+  "coon_1999_faq": {
+   "url": "http://www.cbafaq.com/salarycap99.htm",
+   "title": "Larry Coon, NBA Salary Cap FAQ (1999 agreement)",
+   "retrieved": "2026-10-04",
+   "questions_used": "Q9, Q17, Q18, Q33, Q52, Q53, Q56, Q57, Q62, Q63, Q64, Q69, Q90, Q96",
+   "revision_check": "Revision history: Q53 last revised 10/15/99, Q62 12/16/99; Q63, Q64 and Q90 have no listed revision after the 8/30/99 release; Q96 revised 3/31/03."
+  },
+  "coon_2005_faq": {
+   "url": "http://www.cbafaq.com/salarycap05.htm",
+   "title": "Larry Coon, NBA Salary Cap FAQ (2005 agreement)",
+   "retrieved": "2026-10-04",
+   "use": "Only for items marked inferred."
+  },
+  "bbr_2004_transactions": {
+   "url": "https://www.basketball-reference.com/leagues/NBA_2004_transactions.html",
+   "title": "Basketball-Reference, 2003-04 NBA Transactions",
+   "retrieved": "2026-10-04"
+  },
+  "hoopsrumors_waivers": {
+   "url": "https://hoopsrumors.com/2018/11/hoops-rumors-glossary-waivers.html",
+   "title": "Hoops Rumors Glossary: Waivers (2018)",
+   "retrieved": "2026-10-04",
+   "use": "Early-season waiver order only, inferred for 2003-04."
+  },
+  "repo_files": [
+   "library/2003/league/nba_1999_cba_rules.json",
+   "library/2003/league/cba_1999_salary_cap_faq_extract.txt",
+   "library/2003/league/nba_1999_cba_minimum_salary_scale.json",
+   "library/2003/league/nba_2003_04_calendar.json"
+  ]
+ }
+}
