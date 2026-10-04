@@ -81,6 +81,9 @@ class GuaranteeReviewTests(unittest.TestCase):
         cls.root = Path(cls.tmp.name)
         for folder in ("library", "career", "foundation"):
             shutil.copytree(ROOT / folder, cls.root / folder)
+        live = cls.root / roster_moves.GUARANTEES               # the live career's own review is not this test's
+        if live.exists():
+            live.unlink()
 
     @classmethod
     def tearDownClass(cls):
