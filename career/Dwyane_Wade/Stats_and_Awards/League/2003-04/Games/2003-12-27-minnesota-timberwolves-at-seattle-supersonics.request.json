@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-27-minnesota-timberwolves-at-seattle-supersonics",
+ "game_date": "2003-12-27",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Minnesota Timberwolves",
+  "rotation": "real"
+ }
+}

@@ -2,27 +2,27 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2003-12-26**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2003-12-27**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2003-12-26
+## 2003-04 · NBA regular season · through 2003-12-27
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 29 | 0 | 29 | 166 / 324 | 51.2% | 24 / 69 | 480 | partial |
+| 30 | 0 | 30 | 169 / 329 | 51.4% | 24 / 70 | 490 | partial |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | N/A | N/A | N/A | N/A | N/A | 140 |
+| Paint | N/A | N/A | N/A | N/A | N/A | 142 |
 | Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 7 |
-| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 26 |
-| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 51 |
-| Three-point range | N/A | N/A | N/A | N/A | N/A | 51 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 27 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 52 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 52 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -55,6 +55,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2003-12-21 | Golden State Warriors | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.result.json) |
 | 2003-12-23 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.result.json) |
 | 2003-12-26 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.result.json) |
+| 2003-12-27 | New York Knicks | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.result.json) |
 
 ## 2003-10 · NBA regular season
 
@@ -243,17 +244,17 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 12 | 0 | 12 | 75 / 147 | 51.0% | 14 / 31 | 217 | complete |
+| 13 | 0 | 13 | 78 / 152 | 51.3% | 14 / 32 | 227 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 38 | 67 | 56.7% | 6.33 | 5.58 | 67 |
-| Outside paint, under 12 ft | 3 | 5 | 60.0% | 0.50 | 0.42 | 5 |
-| Outside paint, 12 to under 18 ft | 10 | 17 | 58.8% | 1.67 | 1.42 | 17 |
-| 18 ft to the three-point line | 10 | 27 | 37.0% | 1.67 | 2.25 | 27 |
-| Three-point range | 14 | 31 | 45.2% | 3.50 | 2.58 | 31 |
+| Paint | 39 | 69 | 56.5% | 6.00 | 5.31 | 69 |
+| Outside paint, under 12 ft | 3 | 5 | 60.0% | 0.46 | 0.38 | 5 |
+| Outside paint, 12 to under 18 ft | 11 | 18 | 61.1% | 1.69 | 1.38 | 18 |
+| 18 ft to the three-point line | 11 | 28 | 39.3% | 1.69 | 2.15 | 28 |
+| Three-point range | 14 | 32 | 43.8% | 3.23 | 2.46 | 32 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -269,6 +270,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2003-12-21 | Golden State Warriors | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.result.json) |
 | 2003-12-23 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.result.json) |
 | 2003-12-26 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.result.json) |
+| 2003-12-27 | New York Knicks | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.result.json) |
 
 ## 2003-12-01 to 2003-12-07 · NBA regular season
 
@@ -343,28 +345,29 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2003-12-19 | Memphis Grizzlies | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_3/Game_3.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_3/Game_3.result.json) |
 | 2003-12-21 | Golden State Warriors | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.result.json) |
 
-## 2003-12-22 to 2003-12-26 · NBA regular season
+## 2003-12-22 to 2003-12-27 · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-week-2003-12-22#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 2 | 11 / 16 | 68.8% | 1 / 2 | 29 | complete |
+| 3 | 0 | 3 | 14 / 21 | 66.7% | 1 / 3 | 39 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 7 | 10 | 70.0% | 7.00 | 5.00 | 10 |
+| Paint | 8 | 12 | 66.7% | 5.33 | 4.00 | 12 |
 | Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
-| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 1.00 | 0.50 | 1 |
-| 18 ft to the three-point line | 2 | 3 | 66.7% | 2.00 | 1.50 | 3 |
-| Three-point range | 1 | 2 | 50.0% | 1.50 | 1.00 | 2 |
+| Outside paint, 12 to under 18 ft | 2 | 2 | 100.0% | 1.33 | 0.67 | 2 |
+| 18 ft to the three-point line | 3 | 4 | 75.0% | 2.00 | 1.33 | 4 |
+| Three-point range | 1 | 3 | 33.3% | 1.00 | 1.00 | 3 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2003-12-23 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.result.json) |
 | 2003-12-26 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.result.json) |
+| 2003-12-27 | New York Knicks | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.result.json) |
 
 ## 2003-10-28 at Philadelphia 76ers · Played · NBA regular season
 
@@ -1004,7 +1007,29 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2003-12-26 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.result.json) |
 
-## 2003-04 · NBA preseason · through 2003-12-26
+## 2003-12-27 vs New York Knicks · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-bdc6ee1d4224d68e#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 3 / 5 | 60.0% | 0 / 1 | 10 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 1 | 2 | 50.0% | 2.00 | 2.00 | 2 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2003-12-27 | New York Knicks | Played | [Game](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.result.json) |
+
+## 2003-04 · NBA preseason · through 2003-12-27
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 

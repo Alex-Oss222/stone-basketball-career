@@ -2,9 +2,9 @@
 
 # Contract | Adam Harrington
 
-Known through: 2003-12-26. [Open interactive contract](harriad01.html#contract) · [Contract history](harriad01.html#contract-history)
+Known through: 2003-12-27. [Open interactive contract](harriad01.html#contract) · [Contract history](harriad01.html#contract-history)
 
-Adam Harrington: playing outside the NBA (researched, 2003-11-20). Evidence cutoff: 2003-12-26.
+Adam Harrington: playing outside the NBA (researched, 2003-11-20). Evidence cutoff: 2003-12-27.
 
 ## Current contract
 

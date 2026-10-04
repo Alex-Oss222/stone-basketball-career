@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-26**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-27**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -63,7 +63,7 @@ Card date: **2003-12-26**. 503 registry players, one Markdown card and one inter
 | [Kareem Rush](rushka01.md) | Los Angeles Lakers | 23 | sourced | [open](rushka01.html) |
 | [Keith McLeod](mcleoke01.md) | Minnesota Timberwolves | None | silhouette | [open](mcleoke01.html) |
 | [Kenny Anderson](anderke01.md) | Indiana Pacers | 33 | sourced | [open](anderke01.html) |
-| [Kevin Ollie](ollieke01.md) | Cleveland Cavaliers | 30 | sourced | [open](ollieke01.html) |
+| [Kevin Ollie](ollieke01.md) | Cleveland Cavaliers | 31 | sourced | [open](ollieke01.html) |
 | [Kirk Hinrich](hinriki01.md) | Chicago Bulls | 22 | sourced | [open](hinriki01.html) |
 | [Larry Hughes](hughela01.md) | Washington Wizards | 24 | sourced | [open](hughela01.html) |
 | [Lindsey Hunter](hunteli01.md) | Detroit Pistons | 33 | sourced | [open](hunteli01.html) |
@@ -133,7 +133,7 @@ Card date: **2003-12-26**. 503 registry players, one Markdown card and one inter
 | [Carlos Delfino](delfica01.md) | Detroit Pistons (draft rights) | 21 | sourced | [open](delfica01.html) |
 | [Corey Maggette](maggeco01.md) | Los Angeles Clippers | 24 | sourced | [open](maggeco01.html) |
 | [Cuttino Mobley](moblecu01.md) | Houston Rockets | 28 | sourced | [open](moblecu01.html) |
-| [Dahntay Jones](jonesda02.md) | Memphis Grizzlies | 22 | sourced | [open](jonesda02.html) |
+| [Dahntay Jones](jonesda02.md) | Memphis Grizzlies | 23 | sourced | [open](jonesda02.html) |
 | [Dajuan Wagner](wagneda02.md) | Cleveland Cavaliers | 20 | sourced | [open](wagneda02.html) |
 | [Dana Barros](barroda01.md) | Boston Celtics | None | silhouette | [open](barroda01.html) |
 | [Darvin Ham](hamda01.md) | Detroit Pistons | 30 | sourced | [open](hamda01.html) |

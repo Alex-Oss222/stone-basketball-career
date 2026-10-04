@@ -2,9 +2,9 @@
 
 # Contract | Scott Williams
 
-Known through: 2003-12-26. [Open interactive contract](willisc01.html#contract) · [Contract history](willisc01.html#contract-history)
+Known through: 2003-12-27. [Open interactive contract](willisc01.html#contract) · [Contract history](willisc01.html#contract-history)
 
-Scott Williams: under contract. Evidence cutoff: 2003-12-26.
+Scott Williams: under contract. Evidence cutoff: 2003-12-27.
 
 ## Current contract
 
