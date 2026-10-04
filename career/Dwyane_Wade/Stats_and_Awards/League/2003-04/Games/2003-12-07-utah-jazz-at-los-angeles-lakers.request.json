@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-07-utah-jazz-at-los-angeles-lakers",
+ "game_date": "2003-12-07",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ }
+}

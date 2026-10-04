@@ -2,9 +2,9 @@
 
 # Contract | Brent Barry
 
-Known through: 2003-12-06. [Open interactive contract](barrybr01.html#contract) · [Contract history](barrybr01.html#contract-history)
+Known through: 2003-12-07. [Open interactive contract](barrybr01.html#contract) · [Contract history](barrybr01.html#contract-history)
 
-Brent Barry: under contract. Evidence cutoff: 2003-12-06.
+Brent Barry: under contract. Evidence cutoff: 2003-12-07.
 
 ## Current contract
 

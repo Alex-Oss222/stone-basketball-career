@@ -472,6 +472,82 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.97 x fit"
+  },
+  {
+   "id": "2003-04-market-2003-12-07-clear-colesbi01",
+   "date": "2003-12-07",
+   "kind": "clear",
+   "player": "Bimbo Coles",
+   "bbr_id": "colesbi01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Bimbo Coles",
+    "bbr_id": "colesbi01",
+    "position": "PG",
+    "games": 35,
+    "minutes": 691
+   },
+   "contract": null,
+   "note": "cleared waivers from Boston Celtics: a free agent",
+   "waiver": "2003-04-market-2003-12-05-waive-colesbi01"
+  },
+  {
+   "id": "2003-04-market-2003-12-07-clear-popema01",
+   "date": "2003-12-07",
+   "kind": "clear",
+   "player": "Mark Pope",
+   "bbr_id": "popema01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Mark Pope",
+    "bbr_id": "popema01",
+    "position": "PF",
+    "games": 4,
+    "minutes": 20
+   },
+   "contract": null,
+   "note": "cleared waivers from Denver Nuggets: a free agent",
+   "waiver": "2003-04-market-2003-12-05-waive-popema01"
+  },
+  {
+   "id": "2003-04-market-2003-12-07-clear-willisc01",
+   "date": "2003-12-07",
+   "kind": "clear",
+   "player": "Scott Williams",
+   "bbr_id": "willisc01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Scott Williams",
+    "bbr_id": "willisc01",
+    "position": "C",
+    "games": 43,
+    "minutes": 527
+   },
+   "contract": null,
+   "note": "cleared waivers from Phoenix Suns: a free agent",
+   "waiver": "2003-04-market-2003-12-05-waive-willisc01"
+  },
+  {
+   "id": "2003-04-market-2003-12-07-clear-willike02",
+   "date": "2003-12-07",
+   "kind": "clear",
+   "player": "Kevin Willis",
+   "bbr_id": "willike02",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Kevin Willis",
+    "bbr_id": "willike02",
+    "position": "C",
+    "games": 48,
+    "minutes": 373
+   },
+   "contract": null,
+   "note": "cleared waivers from San Antonio Spurs: a free agent",
+   "waiver": "2003-04-market-2003-12-05-waive-willike02"
   }
  ]
 }
