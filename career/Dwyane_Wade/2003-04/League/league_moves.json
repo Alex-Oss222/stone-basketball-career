@@ -1774,6 +1774,64 @@
    },
    "contract": null,
    "note": "10-day contract ended (4.5 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-01-26-expire-zhizhwa01",
+   "date": "2004-01-26",
+   "kind": "expire",
+   "player": "Wang Zhizhi",
+   "bbr_id": "zhizhwa01",
+   "from": "Golden State Warriors",
+   "to": null,
+   "role": {
+    "player_id": "Wang Zhizhi",
+    "bbr_id": "zhizhwa01",
+    "position": "C",
+    "games": 2,
+    "minutes": 9
+   },
+   "contract": null,
+   "note": "10-day contract ended (1.2 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-01-26-waive-packro01",
+   "date": "2004-01-26",
+   "kind": "waive",
+   "player": "Robert Pack",
+   "bbr_id": "packro01",
+   "from": "New Jersey Nets",
+   "to": null,
+   "role": {
+    "player_id": "Robert Pack",
+    "bbr_id": "packro01",
+    "position": "PG",
+    "games": 26,
+    "minutes": 220
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-01-28"
+  },
+  {
+   "id": "2003-04-market-2004-01-26-ten_day-dickeka01",
+   "date": "2004-01-26",
+   "kind": "ten_day",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": null,
+   "to": "New Jersey Nets",
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-02-05",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.77 x fit"
   }
  ]
 }

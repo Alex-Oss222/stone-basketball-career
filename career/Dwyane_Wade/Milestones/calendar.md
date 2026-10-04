@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2004-01-25 · Miami Heat · active
+Career date: 2004-01-26 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,23 +14,23 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2004-01-25 |
+| Career date | 2004-01-26 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2004-01-24-miami-heat-at-new-york-knicks |
+| Last closed event | 2004-01-26-houston-rockets-at-miami-heat |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2004-01-25 | Current checkpoint | 2004-01-24-miami-heat-at-new-york-knicks | Recorded | [Owning event](../2003-04/06_Regular_Season/01_January/Week_4/note.md) |
+| 2004-01-26 | Current checkpoint | 2004-01-26-houston-rockets-at-miami-heat | Recorded | [Owning event](../2003-04/06_Regular_Season/01_January/Week_4/note.md) |
 | 2003-07-19 | Rookie contract signed | Player and club | complete | [Contract desk](index.html#contract_negotiation) |
 | 2003-09-30 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2004-01-26 | Next Miami game, vs Houston Rockets | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
-| 2004-01-26 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
+| 2004-01-28 | Next Miami game, at Cleveland Cavaliers | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
 | 2004-01-30 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
+| 2004-02-02 | League awards announced: Player of the Month, Player of the Week, Rookie of the Month | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | By 2005-10-31 | Fourth-year (2006-07) team option on the rookie contract | Miami decides | Scheduled gate; no outcome implied | [Contract](index.html#contract_negotiation) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
@@ -137,4 +137,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md)
 - [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_2.md)
+- [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

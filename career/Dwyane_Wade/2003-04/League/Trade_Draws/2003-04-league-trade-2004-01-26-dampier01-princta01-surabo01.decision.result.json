@@ -1,0 +1,12 @@
+{
+ "date": "2004-01-26",
+ "decider": "Detroit Pistons and Golden State Warriors front offices (engine draw)",
+ "event_id": "2003-04-league-trade-2004-01-26-dampier01-princta01-surabo01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.49612,
+  "decline": 0.50388
+ },
+ "outcome": "decline",
+ "question": "Do Detroit Pistons and Golden State Warriors trade Tayshaun Prince and Bob Sura for Erick Dampier?"
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-01-25",
+  "as_of": "2004-01-26",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -4091,10 +4091,10 @@
     {
       "player_id": "brownti01",
       "name": "Tierre Brown",
-      "team": "Cleveland Cavaliers",
-      "status": "on the 2003-04 roster; contract terms not in the dated records",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "New Orleans Hornets",
+      "status": "under contract",
+      "current_contract_id": "brownti01-2004-01-26",
+      "recorded_agreements": 2,
       "href": "players/brownti01.html#contract"
     },
     {

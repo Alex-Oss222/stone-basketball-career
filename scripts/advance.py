@@ -118,8 +118,17 @@ def draws_pending():
 
 
 def draw():
-    if draws_pending():
-        run("scripts/draw_decisions.py")
+    """Draw every pending decision packet; while the engine restarts (a deploy), wait and try again."""
+    for _ in range(40):
+        if not draws_pending():
+            return
+        out = run("scripts/draw_decisions.py", ok=(0, 1))
+        if not draws_pending():
+            return
+        if not any(code in out for code in ("error 502", "error 503", "unreachable", "timed out")):
+            raise Stop("a decision draw failed: " + out.splitlines()[-1][:200])
+        time.sleep(30)
+    raise Stop("decision draws still failing after waiting for the engine")
 
 
 def play(day):

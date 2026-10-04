@@ -2,9 +2,9 @@
 
 # Contract | Keon Clark
 
-Known through: 2004-01-25. [Open interactive contract](clarkke01.html#contract) · [Contract history](clarkke01.html#contract-history)
+Known through: 2004-01-26. [Open interactive contract](clarkke01.html#contract) · [Contract history](clarkke01.html#contract-history)
 
-Keon Clark: voided. Evidence cutoff: 2004-01-25.
+Keon Clark: voided. Evidence cutoff: 2004-01-26.
 
 ## Current contract
 

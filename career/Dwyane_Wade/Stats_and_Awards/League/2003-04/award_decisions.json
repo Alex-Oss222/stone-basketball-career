@@ -1668,6 +1668,110 @@
     }
    ],
    "winner": "Kobe Bryant"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-01-19-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-01-19",
+   "period_end": "2004-01-25",
+   "announced_on": "2004-01-26",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/01_January/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Jermaine O'Neal",
+     "team": "Indiana Pacers",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 18.8,
+     "reb": 8.2,
+     "ast": 2.5,
+     "game_score": 15.85,
+     "score": 72.4,
+     "rank": 1
+    },
+    {
+     "player": "Michael Redd",
+     "team": "Milwaukee Bucks",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 27.7,
+     "reb": 5.7,
+     "ast": 3.0,
+     "game_score": 20.97,
+     "score": 71.9,
+     "rank": 2
+    },
+    {
+     "player": "Scott Padgett",
+     "team": "Miami Heat",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 23.3,
+     "reb": 11.3,
+     "ast": 1.7,
+     "game_score": 20.57,
+     "score": 70.7,
+     "rank": 3
+    }
+   ],
+   "winner": "Jermaine O'Neal"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-01-19-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-01-19",
+   "period_end": "2004-01-25",
+   "announced_on": "2004-01-26",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/01_January/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Peja Stojakovic",
+     "team": "Sacramento Kings",
+     "games": 5,
+     "wins": 3,
+     "losses": 2,
+     "pts": 29.0,
+     "reb": 7.8,
+     "ast": 2.0,
+     "game_score": 22.48,
+     "score": 121.4,
+     "rank": 1
+    },
+    {
+     "player": "Pau Gasol",
+     "team": "Memphis Grizzlies",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 22.2,
+     "reb": 8.8,
+     "ast": 3.2,
+     "game_score": 20.8,
+     "score": 92.2,
+     "rank": 2
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 27.2,
+     "reb": 11.8,
+     "ast": 4.5,
+     "game_score": 19.0,
+     "score": 88.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Peja Stojakovic"
   }
  ]
 }

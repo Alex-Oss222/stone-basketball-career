@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-01-25. [Search the contract directory](index.html)
+Known through 2004-01-26. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -462,7 +462,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Terence Morris](players/morrite01.md) | Houston Rockets | expired or unresolved | No verified current agreement | 0 |
 | [Theo Ratliff](players/ratlith01.md) | Atlanta Hawks | under contract | Theo Ratliff · existing contract; signing date not recorded | 1 |
 | [Theron Smith](players/smithth01.md) | Memphis Grizzlies | under contract | Theron Smith · 2003-07-16 | 1 |
-| [Tierre Brown](players/brownti01.md) | Cleveland Cavaliers | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
+| [Tierre Brown](players/brownti01.md) | New Orleans Hornets | under contract | Tierre Brown · 2004-01-26 | 2 |
 | [Tim Duncan](players/duncati01.md) | San Antonio Spurs | under contract | Tim Duncan · 2003-07-16 | 2 |
 | [Tim Hardaway](players/hardati01.md) | Retired | retired (researched, 2003-11) | No verified current agreement | 1 |
 | [Tim Thomas](players/thomati01.md) | Milwaukee Bucks | under contract | Tim Thomas · existing contract; signing date not recorded | 1 |

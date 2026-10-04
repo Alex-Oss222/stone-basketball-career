@@ -1,0 +1,39 @@
+{
+ "id": "2003-04-league-trade-2004-01-26-dampier01-princta01-surabo01",
+ "date": "2004-01-26",
+ "clubs": [
+  "Detroit Pistons",
+  "Golden State Warriors"
+ ],
+ "a": {
+  "club": "Detroit Pistons",
+  "sends": [
+   "Tayshaun Prince",
+   "Bob Sura"
+  ],
+  "bbr_ids": [
+   "princta01",
+   "surabo01"
+  ],
+  "salary": 7237826
+ },
+ "b": {
+  "club": "Golden State Warriors",
+  "sends": [
+   "Erick Dampier"
+  ],
+  "bbr_ids": [
+   "dampier01"
+  ],
+  "salary": 7842000
+ },
+ "gain": {
+  "Detroit Pistons": 0.113,
+  "Golden State Warriors": 0.081
+ },
+ "accept": {
+  "Detroit Pistons": 0.79,
+  "Golden State Warriors": 0.628
+ },
+ "both": 0.49612
+}
