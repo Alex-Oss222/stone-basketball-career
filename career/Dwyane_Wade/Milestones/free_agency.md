@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2004-02-14 · Miami Heat · needs evidence
+Career date: 2004-02-15 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -97,7 +97,7 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/02_February/Week_2/note.md)
+- [Owning event](../2003-04/06_Regular_Season/02_February/Week_3/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)

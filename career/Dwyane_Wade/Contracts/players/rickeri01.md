@@ -2,9 +2,9 @@
 
 # Contract | Rick Rickert
 
-Known through: 2004-02-14. [Open interactive contract](rickeri01.html#contract) · [Contract history](rickeri01.html#contract-history)
+Known through: 2004-02-15. [Open interactive contract](rickeri01.html#contract) · [Contract history](rickeri01.html#contract-history)
 
-Rick Rickert: No verified contract record. Evidence cutoff: 2004-02-14.
+Rick Rickert: No verified contract record. Evidence cutoff: 2004-02-15.
 
 ## Current contract
 
