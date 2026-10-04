@@ -2,9 +2,9 @@
 
 # Contract | Leandro Barbosa
 
-Known through: 2004-02-02. [Open interactive contract](barbole01.html#contract) · [Contract history](barbole01.html#contract-history)
+Known through: 2004-02-03. [Open interactive contract](barbole01.html#contract) · [Contract history](barbole01.html#contract-history)
 
-Leandro Barbosa: No verified contract record. Evidence cutoff: 2004-02-02.
+Leandro Barbosa: No verified contract record. Evidence cutoff: 2004-02-03.
 
 ## Current contract
 

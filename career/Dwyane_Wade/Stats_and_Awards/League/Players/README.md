@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-02**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-03**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -86,7 +86,7 @@ Card date: **2004-02-02**. 504 registry players, one Markdown card and one inter
 | [Raül López](lopezra01.md) | Utah Jazz | None | silhouette | [open](lopezra01.html) |
 | [Reece Gaines](gainere01.md) | Orlando Magic | 23 | sourced | [open](gainere01.html) |
 | [Rick Brunson](brunsri01.md) | Toronto Raptors | 31 | sourced | [open](brunsri01.html) |
-| [Robert Pack](packro01.md) | New Jersey Nets | 34 | sourced | [open](packro01.html) |
+| [Robert Pack](packro01.md) | New Jersey Nets | 35 | sourced | [open](packro01.html) |
 | [Rod Strickland](stricro02.md) | Orlando Magic | 37 | sourced | [open](stricro02.html) |
 | [Rusty LaRue](larueru01.md) | Golden State Warriors | None | silhouette | [open](larueru01.html) |
 | [Sam Cassell](cassesa01.md) | Minnesota Timberwolves | 34 | sourced | [open](cassesa01.html) |
@@ -545,7 +545,7 @@ Card date: **2004-02-02**. 504 registry players, one Markdown card and one inter
 | [Tony Massenburg](masseto01.md) | Sacramento Kings | 36 | sourced | [open](masseto01.html) |
 | [Travis Knight](knightr01.md) | New York Knicks | 29 | silhouette | [open](knightr01.html) |
 | [Vitaly Potapenko](potapvi01.md) | Seattle SuperSonics | 28 | sourced | [open](potapvi01.html) |
-| [Vlade Divac](divacvl01.md) | Sacramento Kings | 35 | sourced | [open](divacvl01.html) |
+| [Vlade Divac](divacvl01.md) | Sacramento Kings | 36 | sourced | [open](divacvl01.html) |
 | [Vladimir Stepania](stepavl01.md) | Portland Trail Blazers | 27 | silhouette | [open](stepavl01.html) |
 | [Wang Zhizhi](zhizhwa01.md) | Los Angeles Clippers | 26 | sourced | [open](zhizhwa01.html) |
 | [Xue Yuyang](yuyanxu01.md) | Denver Nuggets (draft rights) | 21 | silhouette | [open](yuyanxu01.html) |
