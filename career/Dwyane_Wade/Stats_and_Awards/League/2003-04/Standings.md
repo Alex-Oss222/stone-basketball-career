@@ -36,8 +36,8 @@ Through 2004-01-18, from closed simulated results only (`runtime/standings.py`).
 | 8 | Seattle SuperSonics | 20 | 18 | .526 | 9 |
 | 9 | Golden State Warriors | 20 | 19 | .513 | 9.5 |
 | 10 | Memphis Grizzlies | 20 | 19 | .513 | 9.5 |
-| 11 | Phoenix Suns | 15 | 25 | .375 | 15 |
+| 11 | Phoenix Suns | 15 | 26 | .366 | 15.5 |
 | 12 | Utah Jazz | 13 | 26 | .333 | 16.5 |
-| 13 | Los Angeles Clippers | 11 | 26 | .297 | 17.5 |
-| 14 | Portland Trail Blazers | 11 | 27 | .289 | 18 |
+| 13 | Portland Trail Blazers | 12 | 27 | .308 | 17.5 |
+| 14 | Los Angeles Clippers | 11 | 26 | .297 | 17.5 |
 
