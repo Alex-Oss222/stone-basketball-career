@@ -4,7 +4,7 @@
 
 NBA regular season · November 1-7, 2003
 
-407 tracked players · 50 closed games in this record · Through December 8, 2003.
+407 tracked players · 50 closed games in this record · Through December 9, 2003.
 
 ## Leaders
 
@@ -454,6 +454,8 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Torraye Braggs](../../../Players/braggto01.md) | N/A | HOU | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Tyson Chandler](../../../Players/chandty01.md) | N/A | CHI | NBA | PF | 3 | 0 | 21.9 | 2.7 | 5.0 | .533 | 0.0 | 0.3 | .000 | 2.7 | 4.7 | .571 | .533 | 4.7 | 5.0 | .933 | 2.7 | 3.0 | 5.7 | 1.3 | 0.3 | 1.0 | 1.0 | 3.3 | 10.0 | .694 |
 | [Vin Baker](../../../Players/bakervi01.md) | N/A | BOS | NBA | PF | 2 | 2 | 31.5 | 3.0 | 7.0 | .429 | 0.0 | 2.0 | .000 | 3.0 | 5.0 | .600 | .429 | 1.5 | 4.0 | .375 | 2.0 | 3.5 | 5.5 | 0.5 | 1.0 | 0.5 | 1.0 | 2.5 | 7.5 | .428 |
+| [John Wallace](../../../Players/wallajo01.md) | 29 | MIA | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [Udonis Haslem](../../../Players/hasleud01.md) | 23 | MIA | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 

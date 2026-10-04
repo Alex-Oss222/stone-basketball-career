@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-09-portland-trail-blazers-at-houston-rockets",
+ "game_date": "2003-12-09",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Houston Rockets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ }
+}

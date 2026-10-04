@@ -2,9 +2,9 @@
 
 # Contract | Anthony Goldwire
 
-Known through: 2003-12-08. [Open interactive contract](goldwan01.html#contract) · [Contract history](goldwan01.html#contract-history)
+Known through: 2003-12-09. [Open interactive contract](goldwan01.html#contract) · [Contract history](goldwan01.html#contract-history)
 
-Anthony Goldwire: No verified contract record. Evidence cutoff: 2003-12-08.
+Anthony Goldwire: No verified contract record. Evidence cutoff: 2003-12-09.
 
 ## Current contract
 

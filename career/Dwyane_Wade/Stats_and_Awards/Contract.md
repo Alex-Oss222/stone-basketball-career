@@ -2,9 +2,9 @@
 
 # Contract | Dwyane Wade
 
-Known through: 2003-12-08. [Open interactive contract](player_cards.html#contract) · [Contract history](player_cards.html#contract-history)
+Known through: 2003-12-09. [Open interactive contract](player_cards.html#contract) · [Contract history](player_cards.html#contract-history)
 
-Dwyane Wade: under contract. Evidence cutoff: 2003-12-08.
+Dwyane Wade: under contract. Evidence cutoff: 2003-12-09.
 
 ## Current contract
 

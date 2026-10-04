@@ -2,9 +2,9 @@
 
 # Contract | Travis Hansen
 
-Known through: 2003-12-08. [Open interactive contract](hansetr01.html#contract) · [Contract history](hansetr01.html#contract-history)
+Known through: 2003-12-09. [Open interactive contract](hansetr01.html#contract) · [Contract history](hansetr01.html#contract-history)
 
-Travis Hansen: No verified contract record. Evidence cutoff: 2003-12-08.
+Travis Hansen: No verified contract record. Evidence cutoff: 2003-12-09.
 
 ## Current contract
 

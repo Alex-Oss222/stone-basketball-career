@@ -2,9 +2,9 @@
 
 # Contract | Curtis Borchardt
 
-Known through: 2003-12-08. [Open interactive contract](borchcu01.html#contract) · [Contract history](borchcu01.html#contract-history)
+Known through: 2003-12-09. [Open interactive contract](borchcu01.html#contract) · [Contract history](borchcu01.html#contract-history)
 
-Curtis Borchardt: under rookie contract. Evidence cutoff: 2003-12-08.
+Curtis Borchardt: under rookie contract. Evidence cutoff: 2003-12-09.
 
 ## Current contract
 

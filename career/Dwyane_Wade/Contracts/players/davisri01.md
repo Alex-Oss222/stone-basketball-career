@@ -2,9 +2,9 @@
 
 # Contract | Ricky Davis
 
-Known through: 2003-12-08. [Open interactive contract](davisri01.html#contract) · [Contract history](davisri01.html#contract-history)
+Known through: 2003-12-09. [Open interactive contract](davisri01.html#contract) · [Contract history](davisri01.html#contract-history)
 
-Ricky Davis: under contract. Evidence cutoff: 2003-12-08.
+Ricky Davis: under contract. Evidence cutoff: 2003-12-09.
 
 ## Current contract
 

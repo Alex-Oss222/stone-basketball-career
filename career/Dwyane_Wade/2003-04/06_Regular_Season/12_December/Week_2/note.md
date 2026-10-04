@@ -14,4 +14,6 @@ days: 8-14
 
 ## Games and events
 
+- 2003-12-09: Phoenix Suns 110 at Miami Heat 106 — Miami Heat L 106-110 ([Game 1](Game_1.md), event `2003-12-09-phoenix-suns-at-miami-heat`)
+
 ## Consequences
