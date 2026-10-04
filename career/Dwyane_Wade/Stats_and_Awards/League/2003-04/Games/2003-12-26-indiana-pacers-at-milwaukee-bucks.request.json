@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-26-indiana-pacers-at-milwaukee-bucks",
+ "game_date": "2003-12-26",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ }
+}

@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 27 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** September 30, 2003 · **Statistics through:** 2003-12-25 
+**Opening assessment:** September 30, 2003 · **Statistics through:** 2003-12-26 
 
 **Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 4 years of service (minimum_salary_corrections.json). (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
@@ -52,7 +52,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Utah Jazz | 82 | N/A | 16.1 | 5.7 | 3.3 | 1.0 | 0.5 | 0.3 | 0.9 | 0.402 | 0.338 | 0.757 |
-| 2003-04 | MIA | 23 | 23 | 33.9 | 14.7 | 8.8 | 2.7 | 0.7 | 0.5 | 2.0 | 45.3% | 38.3% | 73.7% |
+| 2003-04 | MIA | 24 | 24 | 34.2 | 15.2 | 9.0 | 2.6 | 0.7 | 0.5 | 2.0 | 46.6% | 39.5% | 73.4% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

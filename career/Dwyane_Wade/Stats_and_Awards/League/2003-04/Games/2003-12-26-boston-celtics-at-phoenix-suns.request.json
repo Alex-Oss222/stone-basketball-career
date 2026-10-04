@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-26-boston-celtics-at-phoenix-suns",
+ "game_date": "2003-12-26",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ }
+}

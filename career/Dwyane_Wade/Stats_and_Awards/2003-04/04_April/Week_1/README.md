@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2003-12-25](../../../../assets/stat_reports/personal_2003-12-25.svg)
+![Player personal information and earned career awards through 2003-12-26](../../../../assets/stat_reports/personal_2003-12-26.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2003-12-25; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-12-26; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -42,7 +42,7 @@ Identity as of 2003-12-25; status snapshot dated 2003-12-01. User-established al
 
 ## Statistics
 
-As of **2003-12-25**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2003-12-26**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -60,7 +60,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2003-12-25, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2003-12-26, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](Stat_Detail.md)
 
@@ -75,11 +75,11 @@ Awards are confirmed through 2003-12-25, filed by the honor's period-end date; t
 | This week | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [Previous week](../../03_March/Week_4/README.md) | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | Month through this week | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Season through this week | 19 | Miami Heat | NBA | SG / PG | 28 | 23 | 34.5 | 5.8 | 11.2 | .513 | 0.8 | 2.4 | .343 | 4.9 | 8.8 | .559 | .549 | 4.4 | 4.8 | .919 | 1.3 | 3.5 | 4.8 | 4.8 | 1.6 | 0.7 | 1.1 | 2.9 | 16.8 | .628 | [East ROM](../../../League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](../../../League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week) |
+| Season through this week | 19 | Miami Heat | NBA | SG / PG | 29 | 24 | 34.0 | 5.7 | 11.2 | .512 | 0.8 | 2.4 | .348 | 4.9 | 8.8 | .557 | .549 | 4.3 | 4.7 | .919 | 1.3 | 3.4 | 4.7 | 4.8 | 1.6 | 0.7 | 1.0 | 2.9 | 16.6 | .626 | [East ROM](../../../League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](../../../League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2003-12-25, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2003-12-26, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 

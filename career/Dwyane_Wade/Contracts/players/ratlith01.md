@@ -2,9 +2,9 @@
 
 # Contract | Theo Ratliff
 
-Known through: 2003-12-25. [Open interactive contract](ratlith01.html#contract) · [Contract history](ratlith01.html#contract-history)
+Known through: 2003-12-26. [Open interactive contract](ratlith01.html#contract) · [Contract history](ratlith01.html#contract-history)
 
-Theo Ratliff: under contract. Evidence cutoff: 2003-12-25.
+Theo Ratliff: under contract. Evidence cutoff: 2003-12-26.
 
 ## Current contract
 

@@ -1,0 +1,112 @@
+{
+ "event_id": "2003-12-26-miami-heat-at-washington-wizards",
+ "game_date": "2003-12-26",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Miami Heat",
+  "players": [
+   {
+    "player_id": "Mike James",
+    "position": "PG",
+    "minutes": 40.0,
+    "ratings": {},
+    "bbr_id": "jamesmi01",
+    "starter": true
+   },
+   {
+    "player_id": "Dwyane Wade",
+    "position": "SG",
+    "minutes": 40.0,
+    "ratings": {
+     "perimeter_defense": 45
+    },
+    "starter": true
+   },
+   {
+    "player_id": "Scott Padgett",
+    "position": "PF",
+    "minutes": 40.0,
+    "ratings": {},
+    "bbr_id": "padgesc01",
+    "starter": true
+   },
+   {
+    "player_id": "Shawn Kemp",
+    "position": "C",
+    "minutes": 40.0,
+    "ratings": {},
+    "bbr_id": "kempsh01",
+    "starter": true
+   },
+   {
+    "player_id": "Eddie Jones",
+    "position": "SG",
+    "minutes": 22.07,
+    "ratings": {},
+    "bbr_id": "jonesed02",
+    "starter": true
+   },
+   {
+    "player_id": "Stephen Jackson",
+    "position": "SG",
+    "minutes": 16.55,
+    "ratings": {},
+    "bbr_id": "jacksst02",
+    "starter": false
+   },
+   {
+    "player_id": "Cherokee Parks",
+    "position": "C",
+    "minutes": 13.79,
+    "ratings": {},
+    "bbr_id": "parksch02",
+    "starter": false
+   },
+   {
+    "player_id": "Anthony Carter",
+    "position": "PG",
+    "minutes": 11.03,
+    "ratings": {},
+    "bbr_id": "cartean01",
+    "starter": false
+   },
+   {
+    "player_id": "LaPhonso Ellis",
+    "position": "PF",
+    "minutes": 5.52,
+    "ratings": {},
+    "bbr_id": "ellisla01",
+    "starter": false
+   },
+   {
+    "player_id": "Rasual Butler",
+    "position": "SG",
+    "minutes": 5.52,
+    "ratings": {},
+    "bbr_id": "butlera01",
+    "starter": false
+   },
+   {
+    "player_id": "Sean Lampley",
+    "position": "SF",
+    "minutes": 5.52,
+    "ratings": {},
+    "bbr_id": "lamplse01",
+    "starter": false
+   },
+   {
+    "player_id": "John Wallace",
+    "position": "PF",
+    "minutes": 0,
+    "ratings": {},
+    "starter": false,
+    "bbr_id": "wallajo01"
+   }
+  ]
+ }
+}
