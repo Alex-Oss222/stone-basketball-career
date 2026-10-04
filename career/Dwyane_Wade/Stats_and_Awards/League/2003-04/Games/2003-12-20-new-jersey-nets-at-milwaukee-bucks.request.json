@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-20-new-jersey-nets-at-milwaukee-bucks",
+ "game_date": "2003-12-20",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ }
+}

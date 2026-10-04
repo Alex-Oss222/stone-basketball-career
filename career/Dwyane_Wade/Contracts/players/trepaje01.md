@@ -2,9 +2,9 @@
 
 # Contract | Jeff Trepagnier
 
-Known through: 2003-12-19. [Open interactive contract](trepaje01.html#contract) · [Contract history](trepaje01.html#contract-history)
+Known through: 2003-12-20. [Open interactive contract](trepaje01.html#contract) · [Contract history](trepaje01.html#contract-history)
 
-Jeff Trepagnier: No verified contract record. Evidence cutoff: 2003-12-19.
+Jeff Trepagnier: No verified contract record. Evidence cutoff: 2003-12-20.
 
 ## Current contract
 

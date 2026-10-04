@@ -2,9 +2,9 @@
 
 # Contract | Eddie Robinson
 
-Known through: 2003-12-19. [Open interactive contract](robined01.html#contract) · [Contract history](robined01.html#contract-history)
+Known through: 2003-12-20. [Open interactive contract](robined01.html#contract) · [Contract history](robined01.html#contract-history)
 
-Eddie Robinson: under contract. Evidence cutoff: 2003-12-19.
+Eddie Robinson: under contract. Evidence cutoff: 2003-12-20.
 
 ## Current contract
 

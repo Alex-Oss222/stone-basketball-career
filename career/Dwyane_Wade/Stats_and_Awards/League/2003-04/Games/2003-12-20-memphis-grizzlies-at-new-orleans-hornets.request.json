@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-20-memphis-grizzlies-at-new-orleans-hornets",
+ "game_date": "2003-12-20",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New Orleans Hornets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ }
+}

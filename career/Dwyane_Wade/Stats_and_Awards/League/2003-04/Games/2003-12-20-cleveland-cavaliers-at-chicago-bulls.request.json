@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-20-cleveland-cavaliers-at-chicago-bulls",
+ "game_date": "2003-12-20",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Chicago Bulls",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ }
+}

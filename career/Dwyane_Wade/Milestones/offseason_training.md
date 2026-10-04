@@ -2,7 +2,7 @@
 
 # Offseason training | Dwyane Wade
 
-Career date: 2003-12-19 · Miami Heat · inactive
+Career date: 2003-12-20 · Miami Heat · inactive
 
 [Live milestone desk](index.html#offseason_training) · [All milestones](README.md)
 

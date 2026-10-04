@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-20-houston-rockets-at-phoenix-suns",
+ "game_date": "2003-12-20",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Houston Rockets",
+  "rotation": "real"
+ }
+}

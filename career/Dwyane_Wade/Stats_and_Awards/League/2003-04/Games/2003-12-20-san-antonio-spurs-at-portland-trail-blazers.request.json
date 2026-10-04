@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-20-san-antonio-spurs-at-portland-trail-blazers",
+ "game_date": "2003-12-20",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "San Antonio Spurs",
+  "rotation": "real"
+ }
+}
