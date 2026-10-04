@@ -2,9 +2,9 @@
 
 # Contract | Derrick Zimmerman
 
-Known through: 2004-01-30. [Open interactive contract](zimmede01.html#contract) · [Contract history](zimmede01.html#contract-history)
+Known through: 2004-01-31. [Open interactive contract](zimmede01.html#contract) · [Contract history](zimmede01.html#contract-history)
 
-Derrick Zimmerman: No verified contract record. Evidence cutoff: 2004-01-30.
+Derrick Zimmerman: No verified contract record. Evidence cutoff: 2004-01-31.
 
 ## Current contract
 
