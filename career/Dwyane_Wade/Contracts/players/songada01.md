@@ -2,9 +2,9 @@
 
 # Contract | Darius Songaila
 
-Known through: 2003-12-02. [Open interactive contract](songada01.html#contract) · [Contract history](songada01.html#contract-history)
+Known through: 2003-12-03. [Open interactive contract](songada01.html#contract) · [Contract history](songada01.html#contract-history)
 
-Darius Songaila: No verified contract record. Evidence cutoff: 2003-12-02.
+Darius Songaila: No verified contract record. Evidence cutoff: 2003-12-03.
 
 ## Current contract
 

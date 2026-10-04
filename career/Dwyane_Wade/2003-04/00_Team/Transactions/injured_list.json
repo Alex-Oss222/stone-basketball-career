@@ -33,11 +33,19 @@
   {
    "player": "Caron Butler",
    "placed": "2003-11-21",
-   "activated": null,
+   "activated": "2003-12-03",
    "first_game_missed": "2003-11-21-miami-heat-at-golden-state-warriors",
    "reason": "injury: 4 more game(s) out on the engine's draw",
    "minimum_games": 5
+  },
+  {
+   "player": "Sean Lampley",
+   "placed": "2003-12-03",
+   "activated": null,
+   "first_game_missed": "2003-12-03-miami-heat-at-detroit-pistons",
+   "reason": "reserve: not among the twelve the staff dresses (2003-04 clubs listed healthy reserves on the injured list)",
+   "minimum_games": 5
   }
  ],
- "as_of": "2003-11-29"
+ "as_of": "2003-12-03"
 }

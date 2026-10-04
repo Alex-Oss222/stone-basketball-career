@@ -2,9 +2,9 @@
 
 # Contract | Mikki Moore
 
-Known through: 2003-12-02. [Open interactive contract](mooremi01.html#contract) · [Contract history](mooremi01.html#contract-history)
+Known through: 2003-12-03. [Open interactive contract](mooremi01.html#contract) · [Contract history](mooremi01.html#contract-history)
 
-Mikki Moore: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-02.
+Mikki Moore: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-03.
 
 ## Current contract
 

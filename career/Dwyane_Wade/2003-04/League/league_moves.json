@@ -1,0 +1,207 @@
+{
+ "schema_version": 1,
+ "kind": "league_moves",
+ "season": "2003-04",
+ "entries": [
+  {
+   "id": "2003-04-market-2003-12-03-waive-brunsri01",
+   "date": "2003-12-03",
+   "kind": "waive",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": "Chicago Bulls",
+   "to": null,
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 40,
+    "minutes": 412
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2003-12-05"
+  },
+  {
+   "id": "2003-04-market-2003-12-03-rest_of_season-clarkke01",
+   "date": "2003-12-03",
+   "kind": "rest_of_season",
+   "player": "Keon Clark",
+   "bbr_id": "clarkke01",
+   "from": null,
+   "to": "Chicago Bulls",
+   "role": {
+    "player_id": "Keon Clark",
+    "bbr_id": "clarkke01",
+    "position": "PF",
+    "games": 2,
+    "minutes": 27
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 9.56 x fit"
+  },
+  {
+   "id": "2003-04-market-2003-12-03-waive-sundobr01",
+   "date": "2003-12-03",
+   "kind": "waive",
+   "player": "Bruno Šundov",
+   "bbr_id": "sundobr01",
+   "from": "Cleveland Cavaliers",
+   "to": null,
+   "role": {
+    "player_id": "Bruno Šundov",
+    "bbr_id": "sundobr01",
+    "position": "C",
+    "games": 5,
+    "minutes": 33
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2003-12-05"
+  },
+  {
+   "id": "2003-04-market-2003-12-03-rest_of_season-mccoyje01",
+   "date": "2003-12-03",
+   "kind": "rest_of_season",
+   "player": "Jelani McCoy",
+   "bbr_id": "mccoyje01",
+   "from": null,
+   "to": "Cleveland Cavaliers",
+   "role": {
+    "player_id": "Jelani McCoy",
+    "bbr_id": "mccoyje01",
+    "position": "C",
+    "games": 2,
+    "minutes": 12
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 7.41 x fit"
+  },
+  {
+   "id": "2003-04-market-2003-12-03-waive-breweja01",
+   "date": "2003-12-03",
+   "kind": "waive",
+   "player": "Jamison Brewer",
+   "bbr_id": "breweja01",
+   "from": "Indiana Pacers",
+   "to": null,
+   "role": {
+    "player_id": "Jamison Brewer",
+    "bbr_id": "breweja01",
+    "position": "PG",
+    "games": 13,
+    "minutes": 160
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2003-12-05"
+  },
+  {
+   "id": "2003-04-market-2003-12-03-rest_of_season-parkesm01",
+   "date": "2003-12-03",
+   "kind": "rest_of_season",
+   "player": "Smush Parker",
+   "bbr_id": "parkesm01",
+   "from": null,
+   "to": "Indiana Pacers",
+   "role": {
+    "player_id": "Smush Parker",
+    "bbr_id": "parkesm01",
+    "position": "PG",
+    "games": 66,
+    "minutes": 1103
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 6.16 x fit"
+  },
+  {
+   "id": "2003-04-market-2003-12-03-waive-overtdo01",
+   "date": "2003-12-03",
+   "kind": "waive",
+   "player": "Doug Overton",
+   "bbr_id": "overtdo01",
+   "from": "Los Angeles Clippers",
+   "to": null,
+   "role": {
+    "player_id": "Doug Overton",
+    "bbr_id": "overtdo01",
+    "position": "PG",
+    "games": 61,
+    "minutes": 1033
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2003-12-05"
+  },
+  {
+   "id": "2003-04-market-2003-12-03-rest_of_season-boumtru01",
+   "date": "2003-12-03",
+   "kind": "rest_of_season",
+   "player": "Ruben Boumtje-Boumtje",
+   "bbr_id": "boumtru01",
+   "from": null,
+   "to": "Los Angeles Clippers",
+   "role": {
+    "player_id": "Ruben Boumtje-Boumtje",
+    "bbr_id": "boumtru01",
+    "position": "C",
+    "games": 9,
+    "minutes": 26
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.71 x fit"
+  },
+  {
+   "id": "2003-04-market-2003-12-03-waive-murratr01",
+   "date": "2003-12-03",
+   "kind": "waive",
+   "player": "Tracy Murray",
+   "bbr_id": "murratr01",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Tracy Murray",
+    "bbr_id": "murratr01",
+    "position": "SF",
+    "games": 7,
+    "minutes": 35
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2003-12-05"
+  },
+  {
+   "id": "2003-04-market-2003-12-03-rest_of_season-martida01",
+   "date": "2003-12-03",
+   "kind": "rest_of_season",
+   "player": "Darrick Martin",
+   "bbr_id": "martida01",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Darrick Martin",
+    "bbr_id": "martida01",
+    "position": "PG",
+    "games": 16,
+    "minutes": 172
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 5.0 x fit"
+  }
+ ]
+}

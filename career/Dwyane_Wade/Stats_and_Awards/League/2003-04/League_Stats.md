@@ -4,7 +4,7 @@
 
 NBA regular season · 2003-04
 
-407 tracked players · 245 closed games in this record · Through December 2, 2003.
+407 tracked players · 245 closed games in this record · Through December 3, 2003.
 
 ## Leaders
 
@@ -591,7 +591,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | --- | --- | ---: | --- |
 | [October 2003](10_October/League_Stats.md) | October 1-31, 2003 | 26 | Complete |
 | [November 2003](11_November/League_Stats.md) | November 1-30, 2003 | 208 | Complete |
-| [December 2003](12_December/League_Stats.md) | December 1-31, 2003 | 11 | Through December 2, 2003 |
+| [December 2003](12_December/League_Stats.md) | December 1-31, 2003 | 11 | Through December 3, 2003 |
 | [January 2004](01_January/League_Stats.md) | January 1-31, 2004 | 0 | Not started |
 | [February 2004](02_February/League_Stats.md) | February 1-29, 2004 | 0 | Not started |
 | [March 2004](03_March/League_Stats.md) | March 1-31, 2004 | 0 | Not started |

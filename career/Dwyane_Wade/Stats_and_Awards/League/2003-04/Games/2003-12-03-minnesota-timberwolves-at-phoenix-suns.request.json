@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-03-minnesota-timberwolves-at-phoenix-suns",
+ "game_date": "2003-12-03",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Minnesota Timberwolves",
+  "rotation": "real"
+ }
+}

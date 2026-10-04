@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-03-memphis-grizzlies-at-new-jersey-nets",
+ "game_date": "2003-12-03",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ }
+}

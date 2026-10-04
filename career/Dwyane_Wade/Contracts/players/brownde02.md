@@ -2,9 +2,9 @@
 
 # Contract | Devin Brown
 
-Known through: 2003-12-02. [Open interactive contract](brownde02.html#contract) · [Contract history](brownde02.html#contract-history)
+Known through: 2003-12-03. [Open interactive contract](brownde02.html#contract) · [Contract history](brownde02.html#contract-history)
 
-Devin Brown: under contract. Evidence cutoff: 2003-12-02.
+Devin Brown: under contract. Evidence cutoff: 2003-12-03.
 
 ## Current contract
 
