@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-08-houston-rockets-at-new-york-knicks",
+ "game_date": "2004-01-08",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New York Knicks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Houston Rockets",
+  "rotation": "real"
+ }
+}

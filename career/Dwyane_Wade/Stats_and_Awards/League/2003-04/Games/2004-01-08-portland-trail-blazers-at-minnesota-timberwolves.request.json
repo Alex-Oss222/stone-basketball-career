@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-08-portland-trail-blazers-at-minnesota-timberwolves",
+ "game_date": "2004-01-08",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Minnesota Timberwolves",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ }
+}

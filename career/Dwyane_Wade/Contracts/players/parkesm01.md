@@ -2,9 +2,9 @@
 
 # Contract | Smush Parker
 
-Known through: 2004-01-07. [Open interactive contract](parkesm01.html#contract) · [Contract history](parkesm01.html#contract-history)
+Known through: 2004-01-08. [Open interactive contract](parkesm01.html#contract) · [Contract history](parkesm01.html#contract-history)
 
-Smush Parker: playing outside the NBA (researched, 2003-12). Evidence cutoff: 2004-01-07.
+Smush Parker: playing outside the NBA (researched, 2003-12). Evidence cutoff: 2004-01-08.
 
 ## Current contract
 
