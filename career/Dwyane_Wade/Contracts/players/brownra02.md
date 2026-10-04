@@ -2,9 +2,9 @@
 
 # Contract | Randy Brown
 
-Known through: 2003-12-07. [Open interactive contract](brownra02.html#contract) · [Contract history](brownra02.html#contract-history)
+Known through: 2003-12-08. [Open interactive contract](brownra02.html#contract) · [Contract history](brownra02.html#contract-history)
 
-Randy Brown: not with an NBA club (status not established) (researched, date not recorded). Evidence cutoff: 2003-12-07.
+Randy Brown: not with an NBA club (status not established) (researched, date not recorded). Evidence cutoff: 2003-12-08.
 
 ## Current contract
 

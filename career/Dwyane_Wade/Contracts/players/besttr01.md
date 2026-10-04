@@ -2,9 +2,9 @@
 
 # Contract | Travis Best
 
-Known through: 2003-12-07. [Open interactive contract](besttr01.html#contract) · [Contract history](besttr01.html#contract-history)
+Known through: 2003-12-08. [Open interactive contract](besttr01.html#contract) · [Contract history](besttr01.html#contract-history)
 
-Travis Best: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-07.
+Travis Best: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-08.
 
 ## Current contract
 

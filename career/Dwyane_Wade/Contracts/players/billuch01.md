@@ -2,9 +2,9 @@
 
 # Contract | Chauncey Billups
 
-Known through: 2003-12-07. [Open interactive contract](billuch01.html#contract) · [Contract history](billuch01.html#contract-history)
+Known through: 2003-12-08. [Open interactive contract](billuch01.html#contract) · [Contract history](billuch01.html#contract-history)
 
-Chauncey Billups: under contract. Evidence cutoff: 2003-12-07.
+Chauncey Billups: under contract. Evidence cutoff: 2003-12-08.
 
 ## Current contract
 

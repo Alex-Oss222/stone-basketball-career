@@ -2,9 +2,9 @@
 
 # Contract | Lonny Baxter
 
-Known through: 2003-12-07. [Open interactive contract](baxtelo01.html#contract) · [Contract history](baxtelo01.html#contract-history)
+Known through: 2003-12-08. [Open interactive contract](baxtelo01.html#contract) · [Contract history](baxtelo01.html#contract-history)
 
-Lonny Baxter: minimum contract unverified. Evidence cutoff: 2003-12-07.
+Lonny Baxter: minimum contract unverified. Evidence cutoff: 2003-12-08.
 
 ## Current contract
 

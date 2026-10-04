@@ -1,0 +1,12 @@
+{
+ "date": "2003-12-08",
+ "decider": "New Orleans Hornets and Portland Trail Blazers front offices (engine draw)",
+ "event_id": "2003-04-league-trade-2003-12-08-mcinnje01-wesleda01-woodsqy01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.6802,
+  "decline": 0.3198
+ },
+ "outcome": "accept",
+ "question": "Do New Orleans Hornets and Portland Trail Blazers trade David Wesley for Jeff McInnis and Qyntel Woods?"
+}

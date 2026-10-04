@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2003-12-07",
+  "as_of": "2003-12-08",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2003-12-07"
+              "2003-12-08"
             ],
             [
               "Team",
@@ -64,13 +64,13 @@
           ],
           "rows": [
             [
-              "2003-12-07",
+              "2003-12-08",
               "Current checkpoint",
               "2003-12-06-san-antonio-spurs-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
-                "href": "../2003-04/06_Regular_Season/12_December/Week_1/note.md"
+                "href": "../2003-04/06_Regular_Season/12_December/Week_2/note.md"
               }
             ],
             [
@@ -94,22 +94,22 @@
               }
             ],
             [
-              "2003-12-08",
-              "League awards announced: Player of the Week",
-              "League (closed results only)",
-              "Scheduled",
-              {
-                "label": "Awards",
-                "href": "#calendar"
-              }
-            ],
-            [
               "2003-12-09",
               "Next Miami game, vs Phoenix Suns",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
                 "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2003-12-15",
+              "League awards announced: Player of the Week",
+              "League (closed results only)",
+              "Scheduled",
+              {
+                "label": "Awards",
                 "href": "#calendar"
               }
             ],
@@ -237,7 +237,7 @@
       "actions": [
         {
           "label": "Open the current event",
-          "href": "../2003-04/06_Regular_Season/12_December/Week_1/note.md",
+          "href": "../2003-04/06_Regular_Season/12_December/Week_2/note.md",
           "description": "Read the owning career note and record the player's actual response when one is due."
         },
         {
@@ -261,7 +261,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/12_December/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/12_December/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -440,7 +440,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-07"
+          "value": "2003-12-08"
         },
         {
           "label": "Team",
@@ -619,7 +619,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/12_December/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/12_December/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -798,7 +798,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-07"
+          "value": "2003-12-08"
         },
         {
           "label": "Team",
@@ -1030,7 +1030,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/12_December/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/12_December/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1209,7 +1209,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-07"
+          "value": "2003-12-08"
         },
         {
           "label": "Team",
@@ -1549,7 +1549,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/12_December/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/12_December/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1728,7 +1728,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-07"
+          "value": "2003-12-08"
         },
         {
           "label": "Team",
@@ -1877,7 +1877,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/12_December/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/12_December/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2056,7 +2056,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-07"
+          "value": "2003-12-08"
         },
         {
           "label": "Team",
@@ -2177,7 +2177,7 @@
       "actions": [
         {
           "label": "Open the current event discussion",
-          "href": "../2003-04/06_Regular_Season/12_December/Week_1/note.md",
+          "href": "../2003-04/06_Regular_Season/12_December/Week_2/note.md",
           "description": "Record a dated reaction to an actual transaction."
         },
         {
@@ -2201,7 +2201,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/12_December/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/12_December/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2380,7 +2380,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-07"
+          "value": "2003-12-08"
         },
         {
           "label": "Team",
@@ -2534,7 +2534,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/12_December/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/12_December/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2713,7 +2713,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-07"
+          "value": "2003-12-08"
         },
         {
           "label": "Team",
@@ -2915,7 +2915,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/12_December/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/12_December/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -3094,7 +3094,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-07"
+          "value": "2003-12-08"
         },
         {
           "label": "Team",
@@ -3111,7 +3111,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "27 closed game records in 2003-04 through 2003-12-07. Competitions remain separate.",
+      "summary": "27 closed game records in 2003-04 through 2003-12-08. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3534,7 +3534,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/12_December/Week_1/note.md"
+          "href": "../2003-04/06_Regular_Season/12_December/Week_2/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -3713,7 +3713,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-07"
+          "value": "2003-12-08"
         },
         {
           "label": "Team",

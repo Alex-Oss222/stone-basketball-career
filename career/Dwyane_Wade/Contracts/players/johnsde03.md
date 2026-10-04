@@ -2,9 +2,9 @@
 
 # Contract | DerMarr Johnson
 
-Known through: 2003-12-07. [Open interactive contract](johnsde03.html#contract) · [Contract history](johnsde03.html#contract-history)
+Known through: 2003-12-08. [Open interactive contract](johnsde03.html#contract) · [Contract history](johnsde03.html#contract-history)
 
-DerMarr Johnson: under contract. Evidence cutoff: 2003-12-07.
+DerMarr Johnson: under contract. Evidence cutoff: 2003-12-08.
 
 ## Current contract
 

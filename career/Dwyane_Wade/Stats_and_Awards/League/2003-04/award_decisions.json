@@ -732,6 +732,110 @@
     }
    ],
    "winner": "Carmelo Anthony"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-12-01-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2003-12-01",
+   "period_end": "2003-12-07",
+   "announced_on": "2003-12-08",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/12_December/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kenyon Martin",
+     "team": "New Jersey Nets",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 17.5,
+     "reb": 12.0,
+     "ast": 3.8,
+     "game_score": 20.4,
+     "score": 90.6,
+     "rank": 1
+    },
+    {
+     "player": "Tracy McGrady",
+     "team": "Orlando Magic",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 25.0,
+     "reb": 5.8,
+     "ast": 5.2,
+     "game_score": 20.55,
+     "score": 88.2,
+     "rank": 2
+    },
+    {
+     "player": "Michael Redd",
+     "team": "Milwaukee Bucks",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 26.8,
+     "reb": 5.0,
+     "ast": 2.0,
+     "game_score": 18.0,
+     "score": 81.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Kenyon Martin"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-12-01-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2003-12-01",
+   "period_end": "2003-12-07",
+   "announced_on": "2003-12-08",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/12_December/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Andre Miller",
+     "team": "Denver Nuggets",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 20.5,
+     "reb": 6.5,
+     "ast": 6.0,
+     "game_score": 20.52,
+     "score": 94.1,
+     "rank": 1
+    },
+    {
+     "player": "Shaquille O'Neal",
+     "team": "Los Angeles Lakers",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 28.0,
+     "reb": 10.0,
+     "ast": 5.0,
+     "game_score": 26.17,
+     "score": 87.5,
+     "rank": 2
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 29.0,
+     "reb": 17.3,
+     "ast": 5.3,
+     "game_score": 25.7,
+     "score": 83.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Andre Miller"
   }
  ]
 }

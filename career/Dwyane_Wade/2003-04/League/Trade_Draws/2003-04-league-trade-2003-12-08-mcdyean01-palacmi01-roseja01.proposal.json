@@ -1,0 +1,39 @@
+{
+ "id": "2003-04-league-trade-2003-12-08-mcdyean01-palacmi01-roseja01",
+ "date": "2003-12-08",
+ "clubs": [
+  "New York Knicks",
+  "Toronto Raptors"
+ ],
+ "a": {
+  "club": "New York Knicks",
+  "sends": [
+   "Antonio McDyess"
+  ],
+  "bbr_ids": [
+   "mcdyean01"
+  ],
+  "salary": 13500000
+ },
+ "b": {
+  "club": "Toronto Raptors",
+  "sends": [
+   "Jalen Rose",
+   "Milt Palacio"
+  ],
+  "bbr_ids": [
+   "roseja01",
+   "palacmi01"
+  ],
+  "salary": 13968429
+ },
+ "gain": {
+  "New York Knicks": 0.74,
+  "Toronto Raptors": 0.527
+ },
+ "accept": {
+  "New York Knicks": 0.95,
+  "Toronto Raptors": 0.95
+ },
+ "both": 0.9025
+}

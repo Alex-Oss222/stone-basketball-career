@@ -1,0 +1,39 @@
+{
+ "id": "2003-04-league-trade-2003-12-08-mcinnje01-wesleda01-woodsqy01",
+ "date": "2003-12-08",
+ "clubs": [
+  "New Orleans Hornets",
+  "Portland Trail Blazers"
+ ],
+ "a": {
+  "club": "New Orleans Hornets",
+  "sends": [
+   "David Wesley"
+  ],
+  "bbr_ids": [
+   "wesleda01"
+  ],
+  "salary": 3960000
+ },
+ "b": {
+  "club": "Portland Trail Blazers",
+  "sends": [
+   "Jeff McInnis",
+   "Qyntel Woods"
+  ],
+  "bbr_ids": [
+   "mcinnje01",
+   "woodsqy01"
+  ],
+  "salary": 4353720
+ },
+ "gain": {
+  "New Orleans Hornets": 0.197,
+  "Portland Trail Blazers": 0.097
+ },
+ "accept": {
+  "New Orleans Hornets": 0.95,
+  "Portland Trail Blazers": 0.716
+ },
+ "both": 0.6802
+}

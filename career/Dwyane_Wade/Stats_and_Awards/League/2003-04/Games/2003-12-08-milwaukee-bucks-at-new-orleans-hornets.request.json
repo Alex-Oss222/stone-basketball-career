@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-08-milwaukee-bucks-at-new-orleans-hornets",
+ "game_date": "2003-12-08",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New Orleans Hornets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2003-12-08",
+ "decider": "New York Knicks and Toronto Raptors front offices (engine draw)",
+ "event_id": "2003-04-league-trade-2003-12-08-mcdyean01-palacmi01-roseja01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "outcome": "accept",
+ "question": "Do New York Knicks and Toronto Raptors trade Antonio McDyess for Jalen Rose and Milt Palacio?"
+}

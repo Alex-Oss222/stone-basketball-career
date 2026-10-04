@@ -548,6 +548,60 @@
    "contract": null,
    "note": "cleared waivers from San Antonio Spurs: a free agent",
    "waiver": "2003-04-market-2003-12-05-waive-willike02"
+  },
+  {
+   "deal": "2003-04-league-trade-2003-12-08-mcdyean01-palacmi01-roseja01",
+   "date": "2003-12-08",
+   "kind": "trade",
+   "player": "Antonio McDyess",
+   "bbr_id": "mcdyean01",
+   "from": "New York Knicks",
+   "to": "Toronto Raptors"
+  },
+  {
+   "deal": "2003-04-league-trade-2003-12-08-mcdyean01-palacmi01-roseja01",
+   "date": "2003-12-08",
+   "kind": "trade",
+   "player": "Jalen Rose",
+   "bbr_id": "roseja01",
+   "from": "Toronto Raptors",
+   "to": "New York Knicks"
+  },
+  {
+   "deal": "2003-04-league-trade-2003-12-08-mcdyean01-palacmi01-roseja01",
+   "date": "2003-12-08",
+   "kind": "trade",
+   "player": "Milt Palacio",
+   "bbr_id": "palacmi01",
+   "from": "Toronto Raptors",
+   "to": "New York Knicks"
+  },
+  {
+   "deal": "2003-04-league-trade-2003-12-08-mcinnje01-wesleda01-woodsqy01",
+   "date": "2003-12-08",
+   "kind": "trade",
+   "player": "David Wesley",
+   "bbr_id": "wesleda01",
+   "from": "New Orleans Hornets",
+   "to": "Portland Trail Blazers"
+  },
+  {
+   "deal": "2003-04-league-trade-2003-12-08-mcinnje01-wesleda01-woodsqy01",
+   "date": "2003-12-08",
+   "kind": "trade",
+   "player": "Jeff McInnis",
+   "bbr_id": "mcinnje01",
+   "from": "Portland Trail Blazers",
+   "to": "New Orleans Hornets"
+  },
+  {
+   "deal": "2003-04-league-trade-2003-12-08-mcinnje01-wesleda01-woodsqy01",
+   "date": "2003-12-08",
+   "kind": "trade",
+   "player": "Qyntel Woods",
+   "bbr_id": "woodsqy01",
+   "from": "Portland Trail Blazers",
+   "to": "New Orleans Hornets"
   }
  ]
 }

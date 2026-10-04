@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `martike01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2003-12-07 · **Club on this date:** New Jersey Nets · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
+**Card date:** 2003-12-08 · **Club on this date:** New Jersey Nets · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
 **Position:** PF (Power forward) · **Jersey:** #6 · **Born:** 1977-12-30 · **Age on card date:** 25  
 **Registry ID:** `martike01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/martike01.html) · ESPN ID 515
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `martik
 
 ## Simulated statistics
 
-As of **2003-12-07**: 20 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2003-12-08**: 20 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -106,7 +106,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2003-04 is simulated: 20 closed regular-season games through 2003-12-07.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2003-04 is simulated: 20 closed regular-season games through 2003-12-08.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -123,9 +123,10 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated 2003-04 honors and shortlist placings through 2003-12-07, from closed award decisions (0 won). Historical awards are not imported.
+Simulated 2003-04 honors and shortlist placings through 2003-12-08, from closed award decisions (1 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |
 | East Player of the Week | 2003-10-28 to 2003-11-02 | 2003-11-03 | Shortlist, No. 3 | [Decision](../2003-04/11_November/Week_1/League_Awards.md) |
 | East Player of the Month | 2003-10-28 to 2003-11-30 | 2003-12-02 | Shortlist, No. 3 | [Decision](../2003-04/11_November/League_Awards.md) |
+| East Player of the Week | 2003-12-01 to 2003-12-07 | 2003-12-08 | **Winner** | [Decision](../2003-04/12_December/Week_1/League_Awards.md) |
