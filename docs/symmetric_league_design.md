@@ -1,6 +1,6 @@
 # Symmetric league: design
 
-Status: phases 1 to 4 built, tested and calibrated, switched off; phase 5 planned. The switch is the user's decision. Run `python scripts/league_day.py --write DATE` each day once it is on.
+Status: phases 1 to 4 built, tested and calibrated; **switched on from December 3, 2003** (the user's decision); phase 5 planned. Run `python scripts/league_day.py --write DATE` every day, before that day's games are built.
 
 ## What changes
 
@@ -19,14 +19,14 @@ Under option D the 28 other clubs follow history: real rosters, real minute shar
 | Phase | Scope | State |
 | --- | --- | --- |
 | 1. League cap book | Every club's dated contracts, payroll, cap room, tax position, exceptions used, roster count and owner ceiling (`runtime/league_book.py`) | built, read-only |
-| 2. League market | `runtime/league_market.py`, rules from the researched `nba_1999_in_season_rules.json`: 12-15 under contract, 48-hour waivers claimed worst record first (cap room or a minimum contract), 10-day contracts from January 5 (two per player with a club, then rest of season or release), the January 7 guarantee cut, injury-depth signings, upgrades at fifteen. The pool is researched unsigned players (December 1 and monthly snapshots to April 1), players left off at activation, cleared waivers and ended 10-days | built |
+| 2. League market | `runtime/league_market.py`, rules from the researched `nba_1999_in_season_rules.json`: 12-15 under contract, 48-hour waivers (a waived player is on nobody's roster and in nobody's pool for two days, then claimed by the worst record on that day's standings or cleared into the pool) (cap room or a minimum contract), 10-day contracts from January 5 (two per player with a club, then rest of season or release), the January 7 guarantee cut, injury-depth signings, upgrades at fifteen. The pool is researched unsigned players (December 1 and monthly snapshots to April 1), players left off at activation, cleared waivers and ended 10-days | built |
 | 3. AI-to-AI trades | `runtime/league_trades.py`: weekly (Mondays) to the February 19, 2004 deadline, one or two rotation players for one, both clubs gaining at least 6% on their own objectives (star premium on packages); a club or player in at most one deal a week. Values are stance weights, skill fit (symmetric), a 1.15 status-quo premium, the whole contract's burden by cash weight, current form and post-contract control. Legality is the 1999 salary rule. Untouchables stay. At most two deals a week, one engine decision packet each | built |
 | 4. Simulated rosters | `runtime/league_moves.py`: each club starts from its real roster on the activation date. Real moves after it are not applied; `league_moves.json` moves apply from their dates; Miami's rules and the replacements apply on top. `game_requests._club`, `trades.dated_inventory` and the league desk all read it. Each player keeps his whole-season real role | built |
 | 5. Rollover | Draft for all clubs, summer free agency for all clubs, owner ceilings by market, calibration of league-wide transaction volume against 2002-04 history | planned |
 
 ## Activation
 
-`runtime/league_book.SYMMETRIC_FROM = None`. Setting a date turns the league symmetric from that date. Played games keep their inputs. A date mid-season is allowed only after phases 3 and 4 are complete.
+`runtime/league_book.SYMMETRIC_FROM = "2003-12-03"`. Setting a date turns the league symmetric from that date; `None` restores option D. Played games keep their inputs. A date mid-season is allowed only after phases 3 and 4 are complete.
 
 ## Activation roster
 

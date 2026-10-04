@@ -42,6 +42,7 @@ TEN_DAY_DAYS = 10
 # Judgement constants, calibrated against the 2003-04 volume in the rules file (docs/symmetric_league_design.md).
 INJURED_FOR_TEN_DAY = 1
 UPGRADE_MARGIN = 1.2
+WAIVER_DAYS = 2                      # 48-hour waivers (1999 CBA, nba_1999_in_season_rules.json)
 GUARANTEE_CUT_DAY = "2004-01-07"     # the last day a 48-hour waiver clears before the January 10 guarantee
 GUARANTEE_CUT_KEEP = 13              # outside its top thirteen by value, an unprotected player can be let go
 GUARANTEE_CUT_MARGIN = 1.25          # ... when a free agent is this much more valuable
@@ -120,9 +121,10 @@ class LeagueMarket:
             if st["status"] == "unsigned_available":
                 out.setdefault(bbr, self._role_from_stats(bbr, st["player"]))
         for e in self.moves["entries"]:
-            if e.get("to") is None and e.get("role") and e["date"] <= self.day:
+            if e.get("to") is None and e.get("role") and e["date"] <= self.day and e["kind"] != "waive":
                 out.setdefault(e["bbr_id"], e["role"])         # cleared waivers, ended 10-day contracts
-        return {b: r for b, r in out.items() if b not in on_a_club and b not in held}
+        waiting = {e["bbr_id"] for e in self.on_waivers()}     # on waivers: nobody may sign him yet
+        return {b: r for b, r in out.items() if b not in on_a_club and b not in held and b not in waiting}
 
     def fit_value(self, club, bbr, without=None):
         held = [(p["bbr_id"], max(1.0, self.value(p["bbr_id"]))) for p in self.rosters[club] if p["bbr_id"] != without]
@@ -169,23 +171,44 @@ class LeagueMarket:
         return min(cands, key=lambda p: (self.value(p["bbr_id"]), p["bbr_id"])) if cands else None
 
     def _waive(self, club, player, pool):
+        """He goes on 48-hour waivers: off the club, in nobody's pool until the waivers resolve (`_resolve_waivers`)."""
         role = {k: player[k] for k in ("player_id", "bbr_id", "position", "games", "minutes")}
-        self._add("waive", player["bbr_id"], role, club, None, note="48-hour waivers")
-        for other in self.order:
-            if other == club or len(self.rosters[other]) >= self.rules["max"]:
+        clears = (date.fromisoformat(self.day) + timedelta(days=WAIVER_DAYS)).isoformat()
+        return self._add("waive", player["bbr_id"], role, club, None, note=f"48-hour waivers; resolve {clears}")
+
+    def on_waivers(self):
+        """Waive entries not yet resolved by a claim or a clearance."""
+        resolved = {e.get("waiver") for e in self.moves["entries"] if e["kind"] in ("claim", "clear")}
+        return [e for e in self.moves["entries"] if e["kind"] == "waive" and e["id"] not in resolved]
+
+    def _resolve_waivers(self, pool):
+        """Waivers placed WAIVER_DAYS or more ago resolve today: the worst record on today's standings with a roster
+        spot claims him when he beats its own weakest by CLAIM_MARGIN and the claim is legal (cap room, or a contract
+        that is not a protected one); otherwise he clears into the pool."""
+        for w in self.on_waivers():
+            if (date.fromisoformat(w["date"]) + timedelta(days=WAIVER_DAYS)).isoformat() > self.day:
                 continue
-            weakest = self._weakest(other)
-            legal = self.book.club(other)["cap_room"] > 0 or player["bbr_id"] not in self.protected
-            if legal and (weakest is None or self.value(player["bbr_id"]) > CLAIM_MARGIN * self.value(weakest["bbr_id"])):
-                return self._add("claim", player["bbr_id"], role, None, other, {"type": "claimed contract", "until": SEASON_END},
-                                 note=f"claimed off waivers from {club} (worst record first)")
-        pool[player["bbr_id"]] = role                               # cleared: a free agent
-        return None
+            role, bbr, club = w["role"], w["bbr_id"], w["from"]
+            claimed = None
+            for other in self.order:
+                if other == club or len(self.rosters[other]) >= self.rules["max"]:
+                    continue
+                weakest = self._weakest(other)
+                legal = self.book.club(other)["cap_room"] > 0 or bbr not in self.protected
+                if legal and (weakest is None or self.value(bbr) > CLAIM_MARGIN * self.value(weakest["bbr_id"])):
+                    claimed = self._add("claim", bbr, role, None, other, {"type": "claimed contract", "until": SEASON_END},
+                                        note=f"claimed off waivers from {club} (worst record first)")
+                    break
+            if claimed is None:
+                claimed = self._add("clear", bbr, role, None, None, note=f"cleared waivers from {club}: a free agent")
+                pool[bbr] = role
+            claimed["waiver"] = w["id"]
 
     def run(self):
         """Make today's moves. Returns the new entries."""
         start = len(self.moves["entries"])
         pool = self.pool()
+        self._resolve_waivers(pool)
         ten_open = self.day >= self.rules["ten_day_from"]
         for club in self.clubs:
             # 1. expiring 10-day contracts

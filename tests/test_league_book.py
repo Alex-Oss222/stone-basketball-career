@@ -25,8 +25,9 @@ class LeagueBookTests(unittest.TestCase):
     def test_owner_ceiling_and_the_switch(self):
         self.assertEqual(owner_ceiling(40000000, 57000000), 57000000)
         self.assertEqual(owner_ceiling(80000000, 57000000), 81600000)
-        self.assertIsNone(league_book.SYMMETRIC_FROM)                         # option D until the user sets a date
-        self.assertFalse(league_book.active("2004-02-01"))
+        self.assertEqual(league_book.SYMMETRIC_FROM, "2003-12-03")             # the user's activation date
+        self.assertFalse(league_book.active("2003-12-02"))                      # option D before it
+        self.assertTrue(league_book.active("2003-12-03"))
 
 
 if __name__ == "__main__":

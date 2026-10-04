@@ -75,6 +75,7 @@ Wade's ability: his rookie season uses the college estimate (`runtime/prospects.
 
 ## World model: real league, simulated Miami (option D, chosen by the user)
 
+- Symmetric league from December 3, 2003 (chosen by the user; `docs/symmetric_league_design.md`): every club starts from its real roster on that date and then signs, waives and trades on its own objectives (`runtime/league_book.SYMMETRIC_FROM`; run `python scripts/league_day.py --write DATE` each day before its games). Ability still follows each player's real career; the rules below describe the world before that date and still supply each player's role.
 - The 28 other clubs follow real history season by season: real rosters and real minute shares from `library/<year>/league/nba_<season>_team_rosters.json`. They have no simulated front office.
 - Miami is fully simulated by the AI/GM. Real transactions involving Miami are never applied.
 - Conflict rules, applied in this order:

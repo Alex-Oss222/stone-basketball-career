@@ -16,7 +16,7 @@ from .trades import (CAP_RULES_PATH, MIAMI, SEASON, TRANSACTIONS_PATH, UNDER_CON
                      read_json)
 
 ROOT = Path(__file__).resolve().parents[1]
-SYMMETRIC_FROM = None          # the user's switch: a date turns the league symmetric from then; None keeps option D
+SYMMETRIC_FROM = "2003-12-03"        # the user's switch: a date turns the league symmetric from then; None keeps option D
 OWNER_OVER_TAX_STRETCH = 1.02
 
 

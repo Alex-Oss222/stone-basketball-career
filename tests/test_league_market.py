@@ -54,6 +54,19 @@ class LeagueMarketTests(unittest.TestCase):
         protected = league_moves._protected_contracts(ROOT)
         self.assertFalse({e["bbr_id"] for e in self.moves if e["kind"] == "waive"} & protected)
 
+    def test_waivers_take_48_hours_and_nobody_signs_a_player_on_them(self):
+        waives = {e["id"]: e for e in self.moves if e["kind"] == "waive"}
+        self.assertTrue(waives)
+        for e in self.moves:
+            if e["kind"] in ("claim", "clear"):
+                w = waives[e["waiver"]]
+                self.assertEqual(w["bbr_id"], e["bbr_id"])
+                self.assertGreaterEqual(e["date"], (LM.date.fromisoformat(w["date"]) + LM.timedelta(days=LM.WAIVER_DAYS)).isoformat())
+            if e["kind"] in ("ten_day", "rest_of_season", "signing") and e.get("from") is None:
+                for w in waives.values():
+                    if w["bbr_id"] == e["bbr_id"]:
+                        self.assertFalse(w["date"] <= e["date"] < (LM.date.fromisoformat(w["date"]) + LM.timedelta(days=LM.WAIVER_DAYS)).isoformat())
+
     def test_off_switch_writes_nothing(self):
         with mock.patch.object(LB, "SYMMETRIC_FROM", None), self.assertRaises(ValueError):
             LM.LeagueMarket("2004-01-05", Market("2004-01-05", self.root), self.root)

@@ -126,6 +126,8 @@ class WriteBackRunTests(unittest.TestCase):
         (slate / f"{slate_game['game_id']}.request.json").write_text(json.dumps(season_games.slate_request(slate_game), indent=1) + "\n")
         self.assertEqual(request_errors(root), [])
         store = Store(root / "data/e.sqlite3")
+        with store.connect() as c:                  # a fixed test seed: a random one can draw Wade out of a game
+            c.execute("INSERT INTO meta VALUES('seed', ?)", (bytes(32),))
         store.initialize()
         status = play_local(store, root)
         self.assertEqual({v["status"] for k, v in status.items() if "-at-" in k}, {"played"})
