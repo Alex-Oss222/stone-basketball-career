@@ -2,9 +2,9 @@
 
 # Contract | Eric Snow
 
-Known through: 2003-12-01. [Open interactive contract](snower01.html#contract) · [Contract history](snower01.html#contract-history)
+Known through: 2003-12-02. [Open interactive contract](snower01.html#contract) · [Contract history](snower01.html#contract-history)
 
-Eric Snow: under contract. Evidence cutoff: 2003-12-01.
+Eric Snow: under contract. Evidence cutoff: 2003-12-02.
 
 ## Current contract
 

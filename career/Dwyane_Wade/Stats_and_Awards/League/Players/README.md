@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-01**. 501 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-02**. 501 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -34,7 +34,7 @@ Card date: **2003-12-01**. 501 registry players, one Markdown card and one inter
 | [Darrick Martin](martida01.md) | Minnesota Timberwolves | None | silhouette | [open](martida01.html) |
 | [Derek Anderson](anderde01.md) | Portland Trail Blazers | 29 | sourced | [open](anderde01.html) |
 | [Derek Fisher](fishede01.md) | Los Angeles Lakers | 29 | sourced | [open](fishede01.html) |
-| [Derrick Zimmerman](zimmede01.md) | Golden State Warriors (draft rights) | 21 | sourced | [open](zimmede01.html) |
+| [Derrick Zimmerman](zimmede01.md) | Golden State Warriors (draft rights) | 22 | sourced | [open](zimmede01.html) |
 | [Doug Overton](overtdo01.md) | New Jersey Nets | None | silhouette | [open](overtdo01.html) |
 | [Earl Boykins](boykiea01.md) | Denver Nuggets | 27 | sourced | [open](boykiea01.html) |
 | [Earl Watson](watsoea01.md) | Memphis Grizzlies | 24 | sourced | [open](watsoea01.html) |
@@ -434,7 +434,7 @@ Card date: **2003-12-01**. 501 registry players, one Markdown card and one inter
 | --- | --- | --- | --- | --- |
 | [Aaron Williams](williaa01.md) | New Jersey Nets | 32 | silhouette | [open](williaa01.html) |
 | [Adonal Foyle](foylead01.md) | Golden State Warriors | 28 | sourced | [open](foylead01.html) |
-| [Alan Henderson](hendeal01.md) | Atlanta Hawks | 30 | silhouette | [open](hendeal01.html) |
+| [Alan Henderson](hendeal01.md) | Atlanta Hawks | 31 | silhouette | [open](hendeal01.html) |
 | [Alonzo Mourning](mournal01.md) | New Jersey Nets | None | silhouette | [open](mournal01.html) |
 | [Amal McCaskill](mccasam01.md) | Philadelphia 76ers | None | silhouette | [open](mccasam01.html) |
 | [Andreas Glyniadakis](glynian01.md) | Detroit Pistons (draft rights) | 22 | sourced | [open](glynian01.html) |
@@ -485,7 +485,7 @@ Card date: **2003-12-01**. 501 registry players, one Markdown card and one inter
 | [James Lang](langja01.md) | New Orleans Hornets (draft rights) | 20 | sourced | [open](langja01.html) |
 | [Jarron Collins](collija03.md) | Utah Jazz | None | silhouette | [open](collija03.html) |
 | [Jason Collier](collija02.md) | Atlanta Hawks | None | silhouette | [open](collija02.html) |
-| [Jason Collins](collija04.md) | New Jersey Nets | 24 | sourced | [open](collija04.html) |
+| [Jason Collins](collija04.md) | New Jersey Nets | 25 | sourced | [open](collija04.html) |
 | [Jeff Foster](fosteje01.md) | Indiana Pacers | 26 | sourced | [open](fosteje01.html) |
 | [Jelani McCoy](mccoyje01.md) | Toronto Raptors | 25 | sourced | [open](mccoyje01.html) |
 | [Jerome James](jamesje01.md) | Seattle SuperSonics | 28 | sourced | [open](jamesje01.html) |

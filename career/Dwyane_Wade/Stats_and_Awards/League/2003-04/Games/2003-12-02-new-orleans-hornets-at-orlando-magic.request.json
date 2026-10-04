@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-02-new-orleans-hornets-at-orlando-magic",
+ "game_date": "2003-12-02",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Orleans Hornets",
+  "rotation": "real"
+ }
+}

@@ -2,9 +2,9 @@
 
 # Contract | Efthimios Rentzias
 
-Known through: 2003-12-01. [Open interactive contract](rentzef01.html#contract) · [Contract history](rentzef01.html#contract-history)
+Known through: 2003-12-02. [Open interactive contract](rentzef01.html#contract) · [Contract history](rentzef01.html#contract-history)
 
-Efthimios Rentzias: under contract unverified. Evidence cutoff: 2003-12-01.
+Efthimios Rentzias: under contract unverified. Evidence cutoff: 2003-12-02.
 
 ## Current contract
 

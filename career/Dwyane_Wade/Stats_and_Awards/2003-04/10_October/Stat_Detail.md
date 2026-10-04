@@ -55,6 +55,8 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
+Awards are confirmed through 2003-12-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+
 ### Production
 
 | Metric | Total | Per appearance | Per 36 minutes |
@@ -122,6 +124,8 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
+Awards are confirmed through 2003-12-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
 ### Game highs
@@ -152,6 +156,8 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2003-10-31](../../../2003-04/06_Regular_Season/10_October/Week_4/Game_3.md) | 19 | Miami Heat | NBA | SG / PG | 1 | 0 | 18.3 | 5.0 | 7.0 | .714 | 1.0 | 1.0 | 1.000 | 4.0 | 6.0 | .667 | .786 | 5.0 | 5.0 | 1.000 | 2.0 | 1.0 | 3.0 | 1.0 | 0.0 | 0.0 | 1.0 | 0.0 | 16.0 | .870 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2003-12-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 

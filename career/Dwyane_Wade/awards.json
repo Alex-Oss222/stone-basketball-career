@@ -1,4 +1,17 @@
 {
   "schema_version": 1,
-  "awards": []
+  "awards": [
+    {
+      "id": "2003-04-rookie_of_month-2003-10-28-east",
+      "name": "Eastern Conference Rookie of the Month",
+      "short_name": "East ROM",
+      "status": "earned",
+      "competition": "regular",
+      "season": "2003-04",
+      "period_start": "2003-10-28",
+      "period_end": "2003-11-30",
+      "awarded_on": "2003-12-02",
+      "source": "Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month"
+    }
+  ]
 }

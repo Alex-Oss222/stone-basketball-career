@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `vandera01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2003-12-01 · **Club on this date:** Toronto Raptors (draft rights) · **Basis:** 2003 draft rights · **League:** NBA  
+**Card date:** 2003-12-02 · **Club on this date:** Toronto Raptors (draft rights) · **Basis:** 2003 draft rights · **League:** NBA  
 **Position:** C (Center) · **Jersey:** Unassigned · **Born:** 1982-05-23 · **Age on card date:** 21  
 **Registry ID:** `vandera01` · [Basketball-Reference page](https://www.basketball-reference.com/players/v/vandera01.html) · ESPN ID 2025
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `vander
 
 ## Simulated statistics
 
-As of **2003-12-01**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2003-12-02**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -118,4 +118,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2003-12-01. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2003-12-02. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

@@ -51,9 +51,11 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| This scope | 19 | Miami Heat | NBA | SG / PG | 4 | 4 | 40.7 | 6.2 | 12.5 | .500 | 0.5 | 2.5 | .200 | 5.8 | 10.0 | .575 | .520 | 5.2 | 6.2 | .840 | 2.0 | 4.5 | 6.5 | 6.5 | 1.5 | 0.8 | 1.2 | 3.2 | 18.2 | .598 | — |
+| This scope | 19 | Miami Heat | NBA | SG / PG | 4 | 4 | 40.7 | 6.2 | 12.5 | .500 | 0.5 | 2.5 | .200 | 5.8 | 10.0 | .575 | .520 | 5.2 | 6.2 | .840 | 2.0 | 4.5 | 6.5 | 6.5 | 1.5 | 0.8 | 1.2 | 3.2 | 18.2 | .598 | [East ROM](../../../../Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2003-12-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](../../../../Stats_and_Awards/2003-04/11_November/Week_4/Stat_Detail.md)
 
@@ -65,12 +67,14 @@ G and GS are counts; MP and counting statistics are **per appearance**. Shooting
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| This week | 19 | Miami Heat | NBA | SG / PG | 4 | 4 | 40.7 | 6.2 | 12.5 | .500 | 0.5 | 2.5 | .200 | 5.8 | 10.0 | .575 | .520 | 5.2 | 6.2 | .840 | 2.0 | 4.5 | 6.5 | 6.5 | 1.5 | 0.8 | 1.2 | 3.2 | 18.2 | .598 | — |
+| This week | 19 | Miami Heat | NBA | SG / PG | 4 | 4 | 40.7 | 6.2 | 12.5 | .500 | 0.5 | 2.5 | .200 | 5.8 | 10.0 | .575 | .520 | 5.2 | 6.2 | .840 | 2.0 | 4.5 | 6.5 | 6.5 | 1.5 | 0.8 | 1.2 | 3.2 | 18.2 | .598 | [East ROM](../../../../Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
 | [Previous week](../../../../Stats_and_Awards/2003-04/11_November/Week_3/README.md) | 19 | Miami Heat | NBA | SG / PG | 4 | 4 | 38.0 | 7.2 | 12.5 | .580 | 0.0 | 1.0 | .000 | 7.2 | 11.5 | .630 | .580 | 6.2 | 6.2 | 1.000 | 1.2 | 3.0 | 4.2 | 4.2 | 1.5 | 0.8 | 1.8 | 3.2 | 20.8 | .680 | — |
-| Month through this week | 19 | Miami Heat | NBA | SG / PG | 14 | 12 | 35.3 | 5.9 | 11.4 | .519 | 0.6 | 2.5 | .257 | 5.3 | 8.9 | .592 | .547 | 4.3 | 4.7 | .909 | 1.4 | 3.8 | 5.2 | 4.9 | 1.4 | 0.7 | 1.3 | 3.0 | 16.8 | .622 | — |
-| Season through this week | 19 | Miami Heat | NBA | SG / PG | 17 | 12 | 32.5 | 5.4 | 10.4 | .514 | 0.6 | 2.2 | .263 | 4.8 | 8.2 | .583 | .542 | 4.2 | 4.5 | .922 | 1.5 | 3.3 | 4.8 | 4.3 | 1.3 | 0.6 | 1.1 | 2.6 | 15.5 | .624 | — |
+| Month through this week | 19 | Miami Heat | NBA | SG / PG | 14 | 12 | 35.3 | 5.9 | 11.4 | .519 | 0.6 | 2.5 | .257 | 5.3 | 8.9 | .592 | .547 | 4.3 | 4.7 | .909 | 1.4 | 3.8 | 5.2 | 4.9 | 1.4 | 0.7 | 1.3 | 3.0 | 16.8 | .622 | [East ROM](../../../../Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
+| Season through this week | 19 | Miami Heat | NBA | SG / PG | 17 | 12 | 32.5 | 5.4 | 10.4 | .514 | 0.6 | 2.2 | .263 | 4.8 | 8.2 | .583 | .542 | 4.2 | 4.5 | .922 | 1.5 | 3.3 | 4.8 | 4.3 | 1.3 | 0.6 | 1.1 | 2.6 | 15.5 | .624 | [East ROM](../../../../Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2003-12-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -139,6 +143,8 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
+Awards are confirmed through 2003-12-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
 ### Game highs
@@ -171,6 +177,8 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2003-11-29](Game_4.md) | 19 | Miami Heat | NBA | SG / PG | 1 | 1 | 39.8 | 3.0 | 13.0 | .231 | 1.0 | 4.0 | .250 | 2.0 | 9.0 | .222 | .269 | 9.0 | 10.0 | .900 | 4.0 | 2.0 | 6.0 | 6.0 | 1.0 | 0.0 | 1.0 | 5.0 | 16.0 | .460 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2003-12-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 

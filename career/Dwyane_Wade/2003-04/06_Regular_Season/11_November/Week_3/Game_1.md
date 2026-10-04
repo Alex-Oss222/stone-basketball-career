@@ -128,6 +128,8 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
+Awards are confirmed through 2003-12-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+
 ### Production
 
 | Metric | Total | Per appearance | Per 36 minutes |
@@ -194,6 +196,8 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 | Team: Miami Heat | 19 | Miami Heat | NBA | SG / PG | 1 | 1 | 36.9 | 10.0 | 17.0 | .588 | 0.0 | 2.0 | .000 | 10.0 | 15.0 | .667 | .588 | 5.0 | 5.0 | 1.000 | 1.0 | 2.0 | 3.0 | 5.0 | 2.0 | 0.0 | 2.0 | 3.0 | 25.0 | .651 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2003-12-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
