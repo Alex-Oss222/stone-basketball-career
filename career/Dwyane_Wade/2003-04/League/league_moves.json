@@ -1942,6 +1942,64 @@
    },
    "contract": null,
    "note": "10-day contract ended (1.0 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-02-05-waive-ricegl01",
+   "date": "2004-02-05",
+   "kind": "waive",
+   "player": "Glen Rice",
+   "bbr_id": "ricegl01",
+   "from": "Los Angeles Clippers",
+   "to": null,
+   "role": {
+    "player_id": "Glen Rice",
+    "bbr_id": "ricegl01",
+    "position": "SF",
+    "games": 18,
+    "minutes": 262
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-02-07"
+  },
+  {
+   "id": "2003-04-market-2004-02-05-ten_day-penigde01",
+   "date": "2004-02-05",
+   "kind": "ten_day",
+   "player": "Desmond Penigar",
+   "bbr_id": "penigde01",
+   "from": null,
+   "to": "Los Angeles Clippers",
+   "role": {
+    "player_id": "Desmond Penigar",
+    "bbr_id": "penigde01",
+    "position": "PF",
+    "games": 10,
+    "minutes": 89
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-02-15",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.87 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-02-05-expire-dickeka01",
+   "date": "2004-02-05",
+   "kind": "expire",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": "New Jersey Nets",
+   "to": null,
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
   }
  ]
 }
