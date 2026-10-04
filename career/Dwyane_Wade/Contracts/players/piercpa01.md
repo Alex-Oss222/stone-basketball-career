@@ -2,9 +2,9 @@
 
 # Contract | Paul Pierce
 
-Known through: 2004-02-16. [Open interactive contract](piercpa01.html#contract) · [Contract history](piercpa01.html#contract-history)
+Known through: 2004-02-17. [Open interactive contract](piercpa01.html#contract) · [Contract history](piercpa01.html#contract-history)
 
-Paul Pierce: under contract. Evidence cutoff: 2004-02-16.
+Paul Pierce: under contract. Evidence cutoff: 2004-02-17.
 
 ## Current contract
 

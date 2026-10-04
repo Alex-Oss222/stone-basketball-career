@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-02-16 · Miami Heat · active
+Career date: 2004-02-17 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-61 closed game records in 2003-04 through 2004-02-16. Competitions remain separate.
+62 closed game records in 2003-04 through 2004-02-17. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
-| regular | 54 | 34.8 | 17.6 | 4.7 | 4.6 | 1.1 | Complete |
+| regular | 55 | 34.8 | 17.4 | 4.7 | 4.6 | 1.1 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A |
-| regular | 319 | 630 | 0.506 | 53 | 136 | 0.390 |
+| regular | 322 | 636 | 0.506 | 54 | 139 | 0.388 |
 
 ## Closed source games
 
@@ -91,6 +91,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-02-08 | regular | Indiana Pacers | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_2/Game_1.md) |
 | 2004-02-10 | regular | Los Angeles Lakers | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_2/Game_2.md) |
 | 2004-02-11 | regular | Orlando Magic | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_2/Game_3.md) |
+| 2004-02-17 | regular | Utah Jazz | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_1.md) |
 
 ## Evidence available for decisions
 
@@ -199,4 +200,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/02_February/Week_2/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/02_February/Week_2/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/02_February/Week_2/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

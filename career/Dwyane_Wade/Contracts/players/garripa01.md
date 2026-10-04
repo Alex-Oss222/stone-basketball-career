@@ -2,9 +2,9 @@
 
 # Contract | Pat Garrity
 
-Known through: 2004-02-16. [Open interactive contract](garripa01.html#contract) · [Contract history](garripa01.html#contract-history)
+Known through: 2004-02-17. [Open interactive contract](garripa01.html#contract) · [Contract history](garripa01.html#contract-history)
 
-Pat Garrity: under contract. Evidence cutoff: 2004-02-16.
+Pat Garrity: under contract. Evidence cutoff: 2004-02-17.
 
 ## Current contract
 

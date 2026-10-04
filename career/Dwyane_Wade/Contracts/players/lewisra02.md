@@ -2,9 +2,9 @@
 
 # Contract | Rashard Lewis
 
-Known through: 2004-02-16. [Open interactive contract](lewisra02.html#contract) · [Contract history](lewisra02.html#contract-history)
+Known through: 2004-02-17. [Open interactive contract](lewisra02.html#contract) · [Contract history](lewisra02.html#contract-history)
 
-Rashard Lewis: under contract. Evidence cutoff: 2004-02-16.
+Rashard Lewis: under contract. Evidence cutoff: 2004-02-17.
 
 ## Current contract
 

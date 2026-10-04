@@ -2,9 +2,9 @@
 
 # Contract | Darrell Armstrong
 
-Known through: 2004-02-16. [Open interactive contract](armstda01.html#contract) · [Contract history](armstda01.html#contract-history)
+Known through: 2004-02-17. [Open interactive contract](armstda01.html#contract) · [Contract history](armstda01.html#contract-history)
 
-Darrell Armstrong: under contract. Evidence cutoff: 2004-02-16.
+Darrell Armstrong: under contract. Evidence cutoff: 2004-02-17.
 
 ## Current contract
 

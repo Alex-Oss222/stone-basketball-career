@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-16**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-17**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -214,7 +214,7 @@ Card date: **2004-02-16**. 504 registry players, one Markdown card and one inter
 | Player | Club on card date | Age | Photo | Interactive |
 | --- | --- | --- | --- | --- |
 | [Aaron McKie](mckieaa01.md) | Philadelphia 76ers | 31 | sourced | [open](mckieaa01.html) |
-| [Al Harrington](harrial01.md) | Indiana Pacers | 23 | sourced | [open](harrial01.html) |
+| [Al Harrington](harrial01.md) | Indiana Pacers | 24 | sourced | [open](harrial01.html) |
 | [Andrei Kirilenko](kirilan01.md) | Utah Jazz | 22 | sourced | [open](kirilan01.html) |
 | [Ansu Sesay](sesayan01.md) | Seattle SuperSonics | None | silhouette | [open](sesayan01.html) |
 | [Antawn Jamison](jamisan01.md) | Dallas Mavericks | 27 | sourced | [open](jamisan01.html) |
@@ -272,7 +272,7 @@ Card date: **2004-02-16**. 504 registry players, one Markdown card and one inter
 | [Matt Harpring](harprma01.md) | Utah Jazz | 27 | sourced | [open](harprma01.html) |
 | [Michael Curry](currymi01.md) | Toronto Raptors | 35 | silhouette | [open](currymi01.html) |
 | [Michael Finley](finlemi01.md) | Dallas Mavericks | 30 | sourced | [open](finlemi01.html) |
-| [Michael Jordan](jordami01.md) | Washington Wizards | 40 | sourced | [open](jordami01.html) |
+| [Michael Jordan](jordami01.md) | Washington Wizards | 41 | sourced | [open](jordami01.html) |
 | [Mike Dunleavy](dunlemi02.md) | Golden State Warriors | 23 | sourced | [open](dunlemi02.html) |
 | [Mike Miller](millemi01.md) | Memphis Grizzlies | None | silhouette | [open](millemi01.html) |
 | [Monty Williams](willimo01.md) | Philadelphia 76ers | 32 | sourced | [open](willimo01.html) |

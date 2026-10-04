@@ -14,4 +14,6 @@ days: 15-21
 
 ## Games and events
 
+- 2004-02-17: Utah Jazz 88 at Miami Heat 91 — Miami Heat W 91-88 ([Game 1](Game_1.md), event `2004-02-17-utah-jazz-at-miami-heat`)
+
 ## Consequences
