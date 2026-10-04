@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-01-02",
+  "as_of": "2004-01-03",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-01-02"
+              "2004-01-03"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2004-01-02",
+              "2004-01-03",
               "Current checkpoint",
               "2004-01-02-orlando-magic-at-miami-heat",
               "Recorded",
@@ -492,7 +492,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-02"
+          "value": "2004-01-03"
         },
         {
           "label": "Team",
@@ -902,7 +902,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-02"
+          "value": "2004-01-03"
         },
         {
           "label": "Team",
@@ -1365,7 +1365,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-02"
+          "value": "2004-01-03"
         },
         {
           "label": "Team",
@@ -1936,7 +1936,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-02"
+          "value": "2004-01-03"
         },
         {
           "label": "Team",
@@ -2316,7 +2316,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-02"
+          "value": "2004-01-03"
         },
         {
           "label": "Team",
@@ -2692,7 +2692,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-02"
+          "value": "2004-01-03"
         },
         {
           "label": "Team",
@@ -3077,7 +3077,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-02"
+          "value": "2004-01-03"
         },
         {
           "label": "Team",
@@ -3510,7 +3510,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-02"
+          "value": "2004-01-03"
         },
         {
           "label": "Team",
@@ -3527,7 +3527,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "40 closed game records in 2003-04 through 2004-01-02. Competitions remain separate.",
+      "summary": "40 closed game records in 2003-04 through 2004-01-03. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -4311,7 +4311,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-02"
+          "value": "2004-01-03"
         },
         {
           "label": "Team",

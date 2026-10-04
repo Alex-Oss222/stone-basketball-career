@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-03-golden-state-warriors-at-detroit-pistons",
+ "game_date": "2004-01-03",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Detroit Pistons",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Golden State Warriors",
+  "rotation": "real"
+ }
+}

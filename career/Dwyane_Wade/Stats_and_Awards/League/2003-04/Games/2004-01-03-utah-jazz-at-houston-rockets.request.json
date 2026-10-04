@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-03-utah-jazz-at-houston-rockets",
+ "game_date": "2004-01-03",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Houston Rockets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ }
+}

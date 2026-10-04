@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-03-orlando-magic-at-memphis-grizzlies",
+ "game_date": "2004-01-03",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ }
+}

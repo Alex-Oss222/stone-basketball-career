@@ -2,9 +2,9 @@
 
 # Contract | Kelvin Cato
 
-Known through: 2004-01-02. [Open interactive contract](catoke01.html#contract) · [Contract history](catoke01.html#contract-history)
+Known through: 2004-01-03. [Open interactive contract](catoke01.html#contract) · [Contract history](catoke01.html#contract-history)
 
-Kelvin Cato: under contract. Evidence cutoff: 2004-01-02.
+Kelvin Cato: under contract. Evidence cutoff: 2004-01-03.
 
 ## Current contract
 
