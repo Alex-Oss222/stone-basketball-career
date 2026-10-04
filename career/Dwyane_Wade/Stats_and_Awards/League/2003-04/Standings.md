@@ -9,8 +9,8 @@ Through 2003-12-08, from closed simulated results only (`runtime/standings.py`).
 | 1 | Detroit Pistons | 16 | 5 | .762 | — |
 | 2 | Indiana Pacers | 15 | 6 | .714 | 1 |
 | 3 | New Jersey Nets | 14 | 6 | .700 | 1.5 |
-| 4 | Milwaukee Bucks | 12 | 8 | .600 | 3.5 |
-| 5 | New Orleans Hornets | 12 | 9 | .571 | 4 |
+| 4 | New Orleans Hornets | 13 | 9 | .591 | 3.5 |
+| 5 | Milwaukee Bucks | 12 | 9 | .571 | 4 |
 | 6 | Atlanta Hawks | 10 | 11 | .476 | 6 |
 | 7 | Cleveland Cavaliers | 9 | 11 | .450 | 6.5 |
 | 8 | Philadelphia 76ers | 9 | 12 | .429 | 7 |

@@ -4,7 +4,7 @@
 
 NBA regular season · 2003-04
 
-407 tracked players · 287 closed games in this record · Through December 8, 2003.
+407 tracked players · 288 closed games in this record · Through December 8, 2003.
 
 ## Leaders
 
@@ -14,8 +14,8 @@ Period comparison among registry players with at least one appearance in this sc
 | --- | --- | --- | --- |
 | PPG | Kobe Bryant 26.2 (G 4) | Tracy McGrady 26.0 (G 21) | Allen Iverson 23.5 (G 4) |
 | RPG | Kevin Garnett 12.8 (G 20) | Erick Dampier 12.7 (G 17) | Ben Wallace 11.8 (G 21) |
-| APG | Stephon Marbury 10.3 (G 20) | Jason Kidd 8.5 (G 19) | Damon Stoudamire 8.4 (G 18) |
-| SPG | Baron Davis 3.3 (G 20) | Jamal Crawford 2.8 (G 20) | Mike James 2.5 (G 20) |
+| APG | Stephon Marbury 10.3 (G 20) | Baron Davis 8.6 (G 21) | Jason Kidd 8.5 (G 19) |
+| SPG | Baron Davis 3.2 (G 21) | Jamal Crawford 2.8 (G 20) | Mike James 2.5 (G 20) |
 | BPG | Theo Ratliff 3.7 (G 21) | Ben Wallace 3.7 (G 21) | Tim Duncan 3.1 (G 16) |
 
 ## Players by position
@@ -35,7 +35,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Andre Miller](../Players/millean02.md) | 27 | LAC | NBA | PG | 20 | 20 | 35.6 | 6.2 | 13.6 | .461 | 0.2 | 1.1 | .182 | 6.0 | 12.4 | .486 | .469 | 3.1 | 3.9 | .808 | 1.2 | 3.5 | 4.7 | 5.3 | 2.0 | 0.6 | 2.5 | 2.6 | 15.8 | .519 |
 | [Anthony Carter](../Players/cartean01.md) | 28 | MIA | NBA | PG | 9 | 0 | 4.3 | 0.4 | 1.4 | .308 | 0.1 | 0.3 | .333 | 0.3 | 1.1 | .300 | .346 | 0.9 | 0.9 | 1.000 | 0.2 | 0.6 | 0.8 | 0.3 | 0.3 | 0.0 | 0.4 | 0.4 | 1.9 | .515 |
 | [Anthony Johnson](../Players/johnsan02.md) | 28 | NJ | NBA | PG | 19 | 1 | 23.1 | 2.8 | 6.5 | .439 | 0.4 | 1.2 | .348 | 2.4 | 5.3 | .460 | .472 | 0.9 | 1.2 | .773 | 0.5 | 2.1 | 2.5 | 2.7 | 1.2 | 0.3 | 1.2 | 2.4 | 7.0 | .501 |
-| [Baron Davis](../Players/davisba01.md) | 24 | NO | NBA | PG | 20 | 20 | 40.2 | 7.2 | 18.9 | .382 | 1.8 | 6.2 | .280 | 5.5 | 12.6 | .433 | .428 | 3.5 | 5.1 | .686 | 1.6 | 3.0 | 4.5 | 8.4 | 3.3 | 0.3 | 2.9 | 2.3 | 19.6 | .466 |
+| [Baron Davis](../Players/davisba01.md) | 24 | NO | NBA | PG | 21 | 21 | 40.3 | 7.3 | 18.9 | .389 | 1.7 | 6.2 | .277 | 5.6 | 12.7 | .444 | .434 | 3.7 | 5.2 | .709 | 1.5 | 2.9 | 4.4 | 8.6 | 3.2 | 0.3 | 2.8 | 2.4 | 20.1 | .475 |
 | [Bimbo Coles](../Players/colesbi01.md) | 35 | BOS | NBA | PG | 12 | 0 | 9.8 | 1.3 | 3.2 | .410 | 0.4 | 0.6 | .714 | 0.9 | 2.7 | .344 | .474 | 0.3 | 0.3 | 1.000 | 0.1 | 0.7 | 0.8 | 0.8 | 0.4 | 0.2 | 0.5 | 1.2 | 3.4 | .503 |
 | [Bobby Jackson](../Players/jacksbo01.md) | 30 | SAC | NBA | PG | 14 | 1 | 23.3 | 4.1 | 9.1 | .453 | 1.3 | 2.5 | .514 | 2.9 | 6.6 | .430 | .523 | 1.7 | 2.2 | .774 | 1.1 | 2.7 | 3.8 | 2.1 | 1.3 | 0.1 | 1.0 | 2.1 | 11.3 | .558 |
 | [Brevin Knight](../Players/knighbr01.md) | 27 | MEM | NBA | PG | 15 | 0 | 13.0 | 1.5 | 3.4 | .431 | 0.1 | 0.3 | .200 | 1.4 | 3.1 | .457 | .441 | 0.9 | 1.3 | .684 | 0.2 | 1.3 | 1.5 | 2.1 | 0.6 | 0.0 | 0.9 | 1.6 | 3.9 | .489 |
@@ -48,7 +48,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Courtney Alexander](../Players/alexaco02.md) | 26 | NO | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Damon Stoudamire](../Players/stoudda01.md) | 29 | POR | NBA | PG | 18 | 18 | 41.2 | 5.6 | 13.3 | .421 | 2.2 | 6.1 | .355 | 3.4 | 7.2 | .477 | .502 | 2.7 | 3.0 | .907 | 0.8 | 4.4 | 5.2 | 8.4 | 1.2 | 0.1 | 2.6 | 2.3 | 16.1 | .550 |
 | [Dan Dickau](../Players/dickada01.md) | 24 | ATL | NBA | PG | 11 | 0 | 3.6 | 0.5 | 1.4 | .400 | 0.1 | 0.3 | .333 | 0.5 | 1.1 | .417 | .433 | 0.6 | 0.7 | .875 | 0.1 | 0.5 | 0.5 | 0.4 | 0.3 | 0.1 | 0.1 | 0.5 | 1.8 | .540 |
-| [Darrell Armstrong](../Players/armstda01.md) | 35 | ORL | NBA | PG | 21 | 21 | 29.2 | 4.6 | 10.6 | .430 | 1.6 | 4.8 | .327 | 3.0 | 5.8 | .516 | .504 | 2.0 | 2.4 | .804 | 0.8 | 2.5 | 3.3 | 4.8 | 1.5 | 0.0 | 1.6 | 2.5 | 12.7 | .542 |
+| [Darrell Armstrong](../Players/armstda01.md) | 35 | ORL | NBA | PG | 22 | 22 | 29.2 | 4.6 | 10.6 | .438 | 1.6 | 4.8 | .330 | 3.0 | 5.8 | .528 | .513 | 1.9 | 2.3 | .804 | 0.8 | 2.5 | 3.2 | 4.7 | 1.5 | 0.1 | 1.6 | 2.6 | 12.7 | .548 |
 | [Derek Anderson](../Players/anderde01.md) | 28 | POR | NBA | PG | 12 | 12 | 38.1 | 4.9 | 12.7 | .388 | 1.7 | 4.4 | .377 | 3.2 | 8.2 | .394 | .454 | 3.2 | 3.5 | .905 | 1.3 | 4.2 | 5.5 | 4.0 | 1.2 | 0.4 | 1.2 | 2.1 | 14.7 | .516 |
 | [Derek Fisher](../Players/fishede01.md) | 28 | LAL | NBA | PG | 20 | 11 | 23.4 | 2.6 | 7.0 | .381 | 0.5 | 2.0 | .250 | 2.1 | 5.0 | .434 | .417 | 1.9 | 2.3 | .826 | 0.3 | 1.4 | 1.8 | 2.6 | 1.9 | 0.1 | 1.0 | 1.7 | 7.7 | .484 |
 | [Derrick Zimmerman](../Players/zimmede01.md) | 21 | GS rights | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -68,7 +68,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Jason Terry](../Players/terryja01.md) | 25 | ATL | NBA | PG | 21 | 21 | 42.3 | 7.1 | 17.5 | .409 | 2.0 | 5.7 | .353 | 5.1 | 11.8 | .435 | .466 | 2.7 | 3.2 | .836 | 0.8 | 4.3 | 5.0 | 5.6 | 1.4 | 0.3 | 3.2 | 2.8 | 19.0 | .502 |
 | [Jason Williams](../Players/willija02.md) | 27 | MEM | NBA | PG | 16 | 16 | 32.1 | 5.2 | 12.2 | .431 | 1.6 | 5.2 | .310 | 3.6 | 6.9 | .523 | .497 | 1.8 | 2.4 | .763 | 0.4 | 2.4 | 2.9 | 6.9 | 1.4 | 0.1 | 2.1 | 1.6 | 13.9 | .527 |
 | [Jay Williams](../Players/willija03.md) | 21 | CHI | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [Jeff McInnis](../Players/mcinnje01.md) | 28 | POR | NBA | PG | 14 | 14 | 36.0 | 4.5 | 10.3 | .438 | 0.3 | 1.4 | .211 | 4.2 | 8.9 | .472 | .451 | 1.8 | 2.5 | .714 | 0.5 | 2.6 | 3.1 | 5.4 | 1.5 | 0.3 | 1.9 | 3.2 | 11.1 | .486 |
+| [Jeff McInnis](../Players/mcinnje01.md) | 28 | POR | NBA | PG | 15 | 15 | 35.9 | 4.4 | 10.1 | .434 | 0.3 | 1.5 | .182 | 4.1 | 8.7 | .477 | .447 | 1.8 | 2.5 | .730 | 0.5 | 2.5 | 3.0 | 5.3 | 1.5 | 0.3 | 1.9 | 3.0 | 10.9 | .484 |
 | [John Salmons](../Players/salmojo01.md) | 23 | PHI | NBA | PG | 20 | 0 | 18.7 | 2.0 | 5.2 | .398 | 0.4 | 1.6 | .258 | 1.6 | 3.6 | .458 | .437 | 1.0 | 1.3 | .769 | 0.5 | 2.0 | 2.5 | 1.6 | 0.8 | 0.1 | 1.1 | 1.1 | 5.5 | .481 |
 | [John Stockton](../Players/stockjo01.md) | 41 | UTAH | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Juan Dixon](../Players/dixonju01.md) | 24 | WSH | NBA | PG | 17 | 4 | 23.2 | 3.9 | 9.5 | .407 | 1.2 | 3.4 | .345 | 2.7 | 6.1 | .442 | .469 | 1.1 | 1.4 | .750 | 0.3 | 1.9 | 2.2 | 2.5 | 1.4 | 0.3 | 1.6 | 1.4 | 10.0 | .493 |
@@ -117,7 +117,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Anthony Goldwire](../Players/goldwan01.md) | N/A | MIN | NBA | PG | 1 | 0 | 12.6 | 2.0 | 4.0 | .500 | 0.0 | 0.0 | N/A | 2.0 | 4.0 | .500 | .500 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | 0.0 | 3.0 | 0.0 | 0.0 | 0.0 | 1.0 | 4.0 | .500 |
 | [Avery Johnson](../Players/johnsav01.md) | N/A | GS | NBA | PG | 9 | 0 | 10.2 | 1.3 | 3.6 | .375 | 0.0 | 0.2 | .000 | 1.3 | 3.3 | .400 | .375 | 0.4 | 0.7 | .667 | 0.2 | 0.8 | 1.0 | 2.1 | 0.4 | 0.0 | 1.2 | 1.4 | 3.1 | .404 |
 | [Bryce Drew](../Players/drewbr01.md) | N/A | NO | NBA | PG | 9 | 0 | 4.3 | 0.6 | 1.7 | .333 | 0.0 | 0.3 | .000 | 0.6 | 1.3 | .417 | .333 | 0.3 | 0.4 | .750 | 0.1 | 0.7 | 0.8 | 0.1 | 0.2 | 0.0 | 0.4 | 0.0 | 1.4 | .388 |
-| [Damon Jones](../Players/jonesda01.md) | N/A | MIL | NBA | PG | 20 | 8 | 30.3 | 3.6 | 7.7 | .477 | 1.7 | 4.1 | .415 | 1.9 | 3.5 | .549 | .588 | 0.9 | 1.8 | .514 | 0.3 | 3.4 | 3.7 | 5.1 | 0.7 | 0.3 | 2.1 | 1.6 | 9.9 | .588 |
+| [Damon Jones](../Players/jonesda01.md) | N/A | MIL | NBA | PG | 21 | 9 | 30.8 | 3.6 | 7.6 | .469 | 1.7 | 4.1 | .402 | 1.9 | 3.5 | .548 | .578 | 0.9 | 1.7 | .528 | 0.4 | 3.4 | 3.8 | 5.3 | 0.6 | 0.3 | 2.1 | 1.6 | 9.7 | .580 |
 | [Darrick Martin](../Players/martida01.md) | N/A | MIN | NBA | PG | 6 | 0 | 5.8 | 1.2 | 2.2 | .538 | 0.0 | 0.5 | .000 | 1.2 | 1.7 | .700 | .538 | 1.0 | 1.0 | 1.000 | 0.2 | 0.5 | 0.7 | 1.0 | 0.3 | 0.2 | 0.2 | 0.5 | 3.3 | .639 |
 | [Doug Overton](../Players/overtdo01.md) | N/A | NJ | NBA | PG | 15 | 0 | 12.0 | 0.8 | 2.4 | .333 | 0.0 | 0.4 | .000 | 0.8 | 2.0 | .400 | .333 | 0.5 | 0.5 | 1.000 | 0.2 | 0.7 | 0.9 | 1.7 | 0.2 | 0.1 | 0.9 | 0.7 | 2.1 | .405 |
 | [Eddie Gill](../Players/gilled01.md) | N/A | POR | NBA | PG | 10 | 0 | 4.9 | 0.8 | 1.9 | .421 | 0.2 | 0.4 | .500 | 0.6 | 1.5 | .400 | .474 | 0.3 | 0.3 | 1.000 | 0.1 | 0.6 | 0.7 | 0.6 | 0.3 | 0.1 | 0.3 | 0.2 | 2.1 | .517 |
@@ -165,9 +165,9 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Dwyane Wade](../Players/wadedw01.md) | 19 | MIA | NBA | SG | 20 | 15 | 32.7 | 5.5 | 10.9 | .502 | 0.7 | 2.2 | .289 | 4.8 | 8.7 | .557 | .532 | 4.2 | 4.7 | .903 | 1.4 | 3.4 | 4.8 | 4.4 | 1.4 | 0.6 | 1.1 | 2.7 | 15.8 | .610 |
 | [Eddie House](../Players/houseed01.md) | 25 | MIA | NBA | SG | 3 | 0 | 17.6 | 1.3 | 4.3 | .308 | 0.3 | 1.0 | .333 | 1.0 | 3.3 | .300 | .346 | 0.0 | 0.3 | .000 | 0.3 | 2.3 | 2.7 | 1.7 | 1.7 | 0.0 | 1.0 | 1.3 | 3.0 | .335 |
 | [Eric Piatkowski](../Players/piatker01.md) | 32 | LAC | NBA | SG | 13 | 0 | 14.9 | 2.0 | 5.5 | .361 | 1.2 | 3.0 | .385 | 0.8 | 2.5 | .333 | .465 | 0.7 | 0.8 | .900 | 0.8 | 1.0 | 1.8 | 0.3 | 0.2 | 0.2 | 0.6 | 1.2 | 5.8 | .497 |
-| [Erick Strickland](../Players/stricer01.md) | 29 | IND | NBA | SG | 16 | 0 | 11.7 | 1.2 | 4.0 | .312 | 0.3 | 0.8 | .385 | 0.9 | 3.2 | .294 | .352 | 0.2 | 0.2 | .750 | 0.6 | 1.7 | 2.2 | 2.0 | 0.8 | 0.1 | 1.6 | 1.3 | 3.0 | .365 |
+| [Erick Strickland](../Players/stricer01.md) | 29 | IND | NBA | SG | 17 | 0 | 12.0 | 1.2 | 4.0 | .309 | 0.4 | 0.8 | .429 | 0.9 | 3.2 | .278 | .353 | 0.2 | 0.2 | .750 | 0.6 | 1.7 | 2.3 | 1.9 | 0.7 | 0.1 | 1.6 | 1.4 | 3.0 | .366 |
 | [Fred Hoiberg](../Players/hoibefr01.md) | 30 | CHI | NBA | SG | 19 | 19 | 24.6 | 2.6 | 6.2 | .427 | 0.6 | 1.6 | .355 | 2.1 | 4.5 | .453 | .474 | 1.8 | 1.9 | .972 | 0.6 | 3.2 | 3.8 | 1.4 | 0.9 | 0.1 | 0.9 | 2.5 | 7.7 | .550 |
-| [George Lynch](../Players/lynchge01.md) | 32 | NO | NBA | SG | 19 | 7 | 23.1 | 2.6 | 6.1 | .426 | 0.7 | 1.9 | .378 | 1.8 | 4.1 | .449 | .487 | 0.7 | 0.9 | .765 | 0.8 | 2.8 | 3.6 | 2.1 | 0.9 | 0.3 | 0.7 | 2.3 | 6.6 | .510 |
+| [George Lynch](../Players/lynchge01.md) | 32 | NO | NBA | SG | 20 | 7 | 23.0 | 2.5 | 6.0 | .413 | 0.7 | 2.0 | .350 | 1.8 | 4.0 | .444 | .471 | 0.7 | 0.8 | .765 | 0.8 | 2.8 | 3.6 | 2.0 | 0.9 | 0.3 | 0.8 | 2.4 | 6.3 | .494 |
 | [Greg Buckner](../Players/buckngr01.md) | 26 | PHI | NBA | SG | 17 | 0 | 10.3 | 1.2 | 3.1 | .385 | 0.3 | 0.8 | .357 | 0.9 | 2.2 | .395 | .433 | 0.8 | 0.9 | .875 | 0.5 | 1.2 | 1.8 | 1.1 | 0.2 | 0.1 | 0.8 | 1.4 | 3.5 | .500 |
 | [Jason Richardson](../Players/richaja01.md) | 22 | GS | NBA | SG | 18 | 18 | 36.1 | 5.9 | 14.4 | .408 | 0.8 | 3.0 | .259 | 5.1 | 11.4 | .447 | .435 | 4.2 | 5.6 | .750 | 1.3 | 3.7 | 5.0 | 3.1 | 1.5 | 0.3 | 2.1 | 3.3 | 16.7 | .495 |
 | [Jeff Trepagnier](../Players/trepaje01.md) | 23 | DEN | NBA | SG | 3 | 0 | 3.3 | 1.0 | 1.3 | .750 | 0.3 | 0.3 | 1.000 | 0.7 | 1.0 | .667 | .875 | 0.0 | 0.0 | N/A | 0.0 | 0.3 | 0.3 | 0.0 | 0.0 | 0.7 | 0.3 | 0.3 | 2.3 | .875 |
@@ -188,7 +188,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Leandro Barbosa](../Players/barbole01.md) | 20 | PHX | NBA | SG | 18 | 0 | 12.0 | 2.2 | 5.0 | .444 | 0.6 | 1.4 | .440 | 1.6 | 3.6 | .446 | .506 | 0.1 | 0.3 | .400 | 0.4 | 0.8 | 1.3 | 1.2 | 0.9 | 0.2 | 0.7 | 1.8 | 5.2 | .504 |
 | [Lucious Harris](../Players/harrilu01.md) | 32 | NJ | NBA | SG | 16 | 5 | 23.7 | 2.9 | 7.3 | .393 | 0.6 | 1.9 | .300 | 2.3 | 5.4 | .425 | .432 | 1.4 | 1.5 | .958 | 1.2 | 2.3 | 3.6 | 2.2 | 0.9 | 0.1 | 0.9 | 2.0 | 7.8 | .486 |
 | [Manu Ginobili](../Players/ginobma01.md) | 25 | SA | NBA | SG | 22 | 22 | 31.0 | 4.4 | 11.3 | .391 | 1.2 | 3.0 | .394 | 3.2 | 8.3 | .390 | .444 | 4.4 | 5.7 | .768 | 1.0 | 4.1 | 5.2 | 3.5 | 1.9 | 0.3 | 2.3 | 2.5 | 14.4 | .521 |
-| [Michael Redd](../Players/reddmi01.md) | 23 | MIL | NBA | SG | 20 | 20 | 42.1 | 7.2 | 17.8 | .404 | 1.4 | 4.2 | .321 | 5.8 | 13.6 | .430 | .442 | 5.8 | 7.1 | .817 | 1.9 | 4.3 | 6.2 | 2.6 | 1.2 | 0.1 | 1.8 | 2.1 | 21.6 | .515 |
+| [Michael Redd](../Players/reddmi01.md) | 23 | MIL | NBA | SG | 21 | 21 | 42.4 | 7.2 | 18.0 | .403 | 1.4 | 4.2 | .330 | 5.9 | 13.8 | .426 | .442 | 5.7 | 7.0 | .822 | 2.0 | 4.3 | 6.4 | 2.7 | 1.2 | 0.1 | 1.8 | 2.0 | 21.6 | .513 |
 | [Nick Van Exel](../Players/vanexni01.md) | 31 | DAL | NBA | SG | 9 | 9 | 31.5 | 6.0 | 12.3 | .486 | 1.4 | 2.9 | .500 | 4.6 | 9.4 | .482 | .545 | 1.7 | 2.7 | .625 | 0.6 | 3.0 | 3.6 | 4.4 | 0.8 | 0.2 | 2.4 | 2.9 | 15.1 | .559 |
 | [Paul Pierce](../Players/piercpa01.md) | 25 | BOS | NBA | SG | 21 | 21 | 41.9 | 6.6 | 18.1 | .363 | 1.3 | 4.2 | .307 | 5.3 | 13.9 | .380 | .399 | 7.2 | 9.0 | .795 | 1.0 | 7.1 | 8.2 | 5.8 | 1.7 | 1.0 | 4.1 | 2.8 | 21.6 | .490 |
 | [Raja Bell](../Players/bellra01.md) | 26 | DAL | NBA | SG | 20 | 17 | 28.3 | 4.5 | 13.2 | .338 | 0.9 | 2.6 | .340 | 3.5 | 10.5 | .338 | .373 | 2.1 | 2.9 | .741 | 0.7 | 2.9 | 3.5 | 1.5 | 0.6 | 0.3 | 1.2 | 3.2 | 11.9 | .414 |
@@ -201,9 +201,9 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Ron Mercer](../Players/mercero01.md) | 27 | IND | NBA | SG | 12 | 0 | 14.2 | 1.9 | 4.8 | .397 | 0.1 | 0.2 | .333 | 1.8 | 4.6 | .400 | .405 | 0.7 | 1.0 | .667 | 0.4 | 1.4 | 1.8 | 1.4 | 0.8 | 0.2 | 1.2 | 0.9 | 4.6 | .435 |
 | [Ronald Murray](../Players/murraro01.md) | 23 | SEA | NBA | SG | 17 | 17 | 28.2 | 4.7 | 10.6 | .444 | 0.8 | 2.2 | .378 | 3.9 | 8.4 | .462 | .483 | 1.9 | 3.0 | .647 | 0.8 | 2.9 | 3.7 | 2.6 | 0.9 | 0.3 | 1.7 | 2.3 | 12.2 | .511 |
 | [Sani Becirovic](../Players/becirsa01.md) | 22 | DEN rights | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [Stacey Augmon](../Players/augmost01.md) | 34 | NO | NBA | SG | 15 | 0 | 22.0 | 3.0 | 6.1 | .495 | 0.3 | 0.5 | .500 | 2.7 | 5.5 | .494 | .516 | 2.4 | 2.7 | .900 | 0.7 | 2.5 | 3.3 | 1.6 | 1.1 | 0.1 | 1.6 | 1.5 | 8.7 | .599 |
+| [Stacey Augmon](../Players/augmost01.md) | 34 | NO | NBA | SG | 16 | 0 | 21.8 | 2.9 | 5.9 | .495 | 0.2 | 0.6 | .444 | 2.7 | 5.4 | .500 | .516 | 2.2 | 2.5 | .900 | 0.8 | 2.4 | 3.2 | 1.6 | 1.1 | 0.1 | 1.5 | 1.4 | 8.4 | .595 |
 | [Stephen Jackson](../Players/jacksst02.md) | 25 | SA | NBA | SG | 19 | 0 | 16.7 | 2.9 | 7.3 | .406 | 0.7 | 2.1 | .333 | 2.3 | 5.2 | .434 | .453 | 1.5 | 2.0 | .763 | 0.6 | 1.2 | 1.8 | 1.8 | 0.7 | 0.3 | 1.6 | 1.2 | 8.1 | .498 |
-| [Steve Smith](../Players/smithst01.md) | 34 | SA | NBA | SG | 21 | 0 | 11.3 | 1.7 | 4.1 | .414 | 0.6 | 1.4 | .433 | 1.1 | 2.7 | .404 | .489 | 1.4 | 1.7 | .833 | 0.5 | 1.0 | 1.4 | 1.0 | 0.4 | 0.0 | 0.4 | 0.9 | 5.5 | .559 |
+| [Steve Smith](../Players/smithst01.md) | 34 | SA | NBA | SG | 22 | 0 | 11.3 | 1.7 | 4.0 | .420 | 0.6 | 1.4 | .452 | 1.0 | 2.6 | .404 | .500 | 1.5 | 1.8 | .850 | 0.5 | 0.9 | 1.4 | 0.9 | 0.4 | 0.0 | 0.4 | 0.9 | 5.5 | .578 |
 | [Tamar Slay](../Players/slayta01.md) | 23 | NJ | NBA | SG | 10 | 0 | 2.9 | 0.3 | 0.7 | .429 | 0.0 | 0.3 | .000 | 0.3 | 0.4 | .750 | .429 | 0.2 | 0.4 | .500 | 0.5 | 0.3 | 0.8 | 0.5 | 0.0 | 0.0 | 0.2 | 0.1 | 0.8 | .457 |
 | [Tariq Abdul-Wahad](../Players/abdulta01.md) | 28 | DAL | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Tito Maddox](../Players/maddoti01.md) | 22 | HOU | NBA | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -254,7 +254,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Corliss Williamson](../Players/willico02.md) | 29 | DET | NBA | SF | 20 | 3 | 20.5 | 3.5 | 7.9 | .437 | 0.1 | 0.1 | .667 | 3.4 | 7.8 | .432 | .443 | 2.5 | 3.0 | .820 | 0.8 | 3.0 | 3.8 | 1.0 | 0.3 | 0.1 | 2.0 | 2.6 | 9.5 | .514 |
 | [Danny Ferry](../Players/ferryda01.md) | 36 | SA | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Darius Miles](../Players/milesda01.md) | 21 | CLE | NBA | SF | 19 | 19 | 28.3 | 3.9 | 9.1 | .430 | 0.1 | 0.8 | .067 | 3.8 | 8.3 | .465 | .433 | 2.2 | 3.4 | .631 | 1.1 | 3.9 | 4.9 | 1.8 | 0.7 | 0.9 | 1.5 | 2.3 | 10.0 | .474 |
-| [Desmond Mason](../Players/masonde01.md) | 25 | MIL | NBA | SF | 20 | 20 | 36.0 | 5.7 | 12.6 | .450 | 0.2 | 0.6 | .333 | 5.5 | 11.9 | .456 | .458 | 5.5 | 6.6 | .826 | 1.3 | 3.2 | 4.5 | 2.8 | 1.1 | 0.4 | 1.9 | 2.9 | 16.9 | .548 |
+| [Desmond Mason](../Players/masonde01.md) | 25 | MIL | NBA | SF | 21 | 21 | 36.4 | 6.0 | 13.0 | .462 | 0.2 | 0.7 | .333 | 5.8 | 12.3 | .469 | .471 | 5.5 | 6.8 | .810 | 1.2 | 3.3 | 4.6 | 2.7 | 1.0 | 0.4 | 2.0 | 2.8 | 17.7 | .554 |
 | [Devean George](../Players/georgde01.md) | 25 | LAL | NBA | SF | 20 | 20 | 25.9 | 3.0 | 7.1 | .415 | 0.7 | 1.9 | .351 | 2.3 | 5.2 | .438 | .461 | 1.1 | 1.3 | .885 | 0.9 | 4.1 | 5.0 | 1.7 | 0.8 | 0.8 | 1.4 | 3.3 | 7.7 | .502 |
 | [Donnell Harvey](../Players/harvedo01.md) | 22 | DEN | NBA | SF | 20 | 0 | 11.5 | 1.6 | 3.0 | .559 | 0.1 | 0.1 | 1.000 | 1.6 | 2.9 | .544 | .576 | 0.7 | 0.9 | .684 | 0.8 | 1.8 | 2.5 | 0.2 | 0.2 | 0.1 | 0.4 | 1.6 | 4.0 | .601 |
 | [Eddie Robinson](../Players/robined01.md) | 27 | CHI | NBA | SF | 16 | 5 | 22.5 | 3.4 | 6.6 | .524 | 0.1 | 0.4 | .286 | 3.3 | 6.1 | .541 | .533 | 0.6 | 0.8 | .833 | 1.6 | 2.6 | 4.2 | 1.5 | 0.7 | 0.1 | 0.8 | 1.8 | 7.6 | .553 |
@@ -310,7 +310,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Shawn Marion](../Players/mariosh01.md) | 25 | PHX | NBA | SF | 18 | 18 | 40.2 | 7.7 | 16.4 | .466 | 1.7 | 3.7 | .448 | 6.0 | 12.7 | .472 | .517 | 2.3 | 2.6 | .913 | 3.0 | 7.9 | 10.9 | 2.2 | 1.3 | 1.7 | 2.6 | 3.2 | 19.3 | .550 |
 | [Tayshaun Prince](../Players/princta01.md) | 23 | DET | NBA | SF | 21 | 21 | 34.3 | 4.7 | 10.0 | .471 | 0.9 | 2.0 | .439 | 3.9 | 8.0 | .479 | .514 | 1.7 | 2.2 | .783 | 1.5 | 3.7 | 5.1 | 1.9 | 1.0 | 0.7 | 1.4 | 2.9 | 12.0 | .547 |
 | [Terence Morris](../Players/morrite01.md) | 24 | HOU | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [Tim Thomas](../Players/thomati01.md) | 26 | MIL | NBA | SF | 14 | 14 | 31.6 | 4.6 | 9.7 | .471 | 0.8 | 2.6 | .306 | 3.8 | 7.1 | .530 | .511 | 1.6 | 2.2 | .742 | 1.4 | 5.4 | 6.7 | 1.6 | 0.8 | 0.5 | 1.9 | 3.8 | 11.6 | .541 |
+| [Tim Thomas](../Players/thomati01.md) | 26 | MIL | NBA | SF | 15 | 15 | 31.0 | 4.6 | 9.7 | .476 | 0.7 | 2.5 | .297 | 3.9 | 7.2 | .537 | .514 | 1.7 | 2.3 | .735 | 1.5 | 5.1 | 6.5 | 1.5 | 0.7 | 0.5 | 1.7 | 3.9 | 11.6 | .544 |
 | [Travis Outlaw](../Players/outlatr01.md) | 18 | POR | NBA | SF | 1 | 0 | 4.0 | 0.0 | 1.0 | .000 | 0.0 | 0.0 | N/A | 0.0 | 1.0 | .000 | .000 | 0.0 | 0.0 | N/A | 0.0 | 1.0 | 1.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | .000 |
 | [Tremaine Fowlkes](../Players/fowlktr01.md) | 27 | LAC | NBA | SF | 14 | 0 | 4.0 | 0.4 | 0.9 | .500 | 0.1 | 0.2 | .667 | 0.3 | 0.6 | .444 | .583 | 0.0 | 0.0 | N/A | 0.1 | 1.0 | 1.1 | 0.1 | 0.1 | 0.1 | 0.2 | 0.3 | 1.0 | .583 |
 | [Wally Szczerbiak](../Players/szczewa02.md) | 26 | MIN | NBA | SF | 6 | 0 | 21.6 | 3.3 | 8.7 | .385 | 0.5 | 1.8 | .273 | 2.8 | 6.8 | .415 | .413 | 0.5 | 0.8 | .600 | 1.7 | 1.5 | 3.2 | 1.2 | 0.3 | 0.0 | 1.3 | 2.7 | 7.7 | .424 |
@@ -372,7 +372,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Clifford Robinson](../Players/robincl02.md) | 36 | DET | NBA | PF | 18 | 18 | 36.7 | 6.0 | 14.1 | .425 | 2.1 | 5.6 | .380 | 3.9 | 8.6 | .455 | .500 | 2.1 | 2.9 | .731 | 0.8 | 3.5 | 4.3 | 3.1 | 1.1 | 0.9 | 2.4 | 2.7 | 16.2 | .527 |
 | [Danny Fortson](../Players/fortsda01.md) | 27 | GS | NBA | PF | 15 | 0 | 4.9 | 0.8 | 1.6 | .500 | 0.0 | 0.1 | .000 | 0.8 | 1.5 | .522 | .500 | 0.4 | 0.5 | .857 | 0.6 | 0.7 | 1.3 | 0.1 | 0.1 | 0.2 | 0.3 | 1.5 | 2.0 | .554 |
 | [Danny Manning](../Players/mannida01.md) | 37 | DET | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [David West](../Players/westda01.md) | 22 | NO | NBA | PF | 20 | 0 | 13.1 | 2.0 | 4.2 | .488 | 0.0 | 0.2 | .000 | 2.0 | 4.0 | .519 | .488 | 0.8 | 0.9 | .842 | 1.7 | 2.6 | 4.3 | 0.9 | 0.2 | 0.2 | 0.8 | 1.4 | 4.9 | .531 |
+| [David West](../Players/westda01.md) | 22 | NO | NBA | PF | 21 | 0 | 13.1 | 2.0 | 4.3 | .456 | 0.0 | 0.2 | .000 | 2.0 | 4.0 | .482 | .456 | 0.8 | 1.0 | .810 | 1.7 | 2.7 | 4.4 | 0.9 | 0.2 | 0.2 | 0.8 | 1.3 | 4.7 | .499 |
 | [DeSagana Diop](../Players/diopde01.md) | 21 | CLE | NBA | PF | 16 | 1 | 10.6 | 1.2 | 2.6 | .476 | 0.0 | 0.1 | .000 | 1.2 | 2.6 | .488 | .476 | 0.2 | 0.6 | .444 | 0.6 | 1.9 | 2.4 | 0.8 | 0.5 | 0.9 | 0.6 | 1.8 | 2.8 | .479 |
 | [Dirk Nowitzki](../Players/nowitdi01.md) | 25 | DAL | NBA | PF | 19 | 19 | 34.6 | 5.7 | 13.4 | .427 | 0.7 | 2.7 | .250 | 5.1 | 10.7 | .473 | .453 | 3.0 | 3.4 | .891 | 1.5 | 4.7 | 6.2 | 2.4 | 0.9 | 1.3 | 2.1 | 3.6 | 15.2 | .509 |
 | [Drew Gooden](../Players/goodedr01.md) | 21 | ORL | NBA | PF | 20 | 20 | 29.7 | 4.7 | 10.2 | .454 | 0.2 | 0.9 | .263 | 4.4 | 9.3 | .473 | .466 | 2.6 | 4.3 | .616 | 1.9 | 4.5 | 6.3 | 1.4 | 0.5 | 1.1 | 2.5 | 2.9 | 12.2 | .502 |
@@ -396,7 +396,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Malick Badiane](../Players/badiama01.md) | 19 | HOU rights | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Malik Allen](../Players/allenma01.md) | 24 | MIA | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Malik Rose](../Players/rosema01.md) | 28 | SA | NBA | PF | 20 | 0 | 19.0 | 2.9 | 7.2 | .400 | 0.1 | 0.2 | .200 | 2.9 | 7.0 | .407 | .403 | 2.1 | 2.8 | .750 | 1.6 | 2.5 | 4.0 | 1.0 | 1.1 | 0.4 | 1.8 | 2.0 | 8.0 | .469 |
-| [Marcus Haislip](../Players/haislma01.md) | 22 | MIL | NBA | PF | 14 | 0 | 7.1 | 0.7 | 1.7 | .417 | 0.0 | 0.1 | .000 | 0.7 | 1.6 | .455 | .417 | 0.6 | 0.6 | 1.000 | 0.1 | 1.1 | 1.2 | 0.4 | 0.5 | 0.2 | 0.0 | 0.8 | 2.0 | .509 |
+| [Marcus Haislip](../Players/haislma01.md) | 22 | MIL | NBA | PF | 15 | 0 | 7.5 | 0.7 | 1.8 | .407 | 0.0 | 0.1 | .000 | 0.7 | 1.7 | .440 | .407 | 0.7 | 0.8 | .917 | 0.1 | 1.2 | 1.3 | 0.5 | 0.6 | 0.2 | 0.0 | 0.9 | 2.2 | .511 |
 | [Mario Austin](../Players/austima01.md) | 21 | CHI rights | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Mark Bryant](../Players/bryanma01.md) | 38 | BOS | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Mark Madsen](../Players/madsema01.md) | 27 | LAL | NBA | PF | 16 | 0 | 18.0 | 2.1 | 4.0 | .516 | 0.1 | 0.2 | .333 | 2.0 | 3.8 | .525 | .523 | 1.7 | 2.4 | .692 | 1.2 | 2.2 | 3.4 | 0.7 | 0.9 | 0.2 | 0.6 | 2.5 | 5.9 | .579 |
@@ -406,10 +406,10 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Michael Sweetney](../Players/sweetmi01.md) | 20 | NY | NBA | PF | 14 | 0 | 8.1 | 0.4 | 1.7 | .250 | 0.0 | 0.1 | .000 | 0.4 | 1.6 | .273 | .250 | 0.5 | 0.9 | .538 | 0.7 | 0.9 | 1.6 | 0.3 | 0.5 | 0.1 | 0.4 | 0.8 | 1.4 | .320 |
 | [Mike Batiste](../Players/batismi01.md) | 25 | MEM | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Nick Collison](../Players/collini01.md) | 22 | SEA rights | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [P.J. Brown](../Players/brownpj01.md) | 33 | NO | NBA | PF | 21 | 21 | 35.1 | 4.3 | 9.2 | .472 | 0.0 | 0.0 | .000 | 4.3 | 9.1 | .474 | .472 | 2.4 | 2.8 | .864 | 3.0 | 6.0 | 9.0 | 1.7 | 0.9 | 0.9 | 1.7 | 2.3 | 11.1 | .532 |
+| [P.J. Brown](../Players/brownpj01.md) | 33 | NO | NBA | PF | 22 | 22 | 35.2 | 4.5 | 9.2 | .488 | 0.0 | 0.0 | .000 | 4.5 | 9.2 | .490 | .488 | 2.5 | 2.9 | .859 | 2.9 | 6.1 | 9.0 | 1.9 | 0.8 | 0.9 | 1.6 | 2.3 | 11.5 | .547 |
 | [Pat Garrity](../Players/garripa01.md) | 26 | ORL | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Pau Gasol](../Players/gasolpa01.md) | 22 | MEM | NBA | PF | 18 | 18 | 34.0 | 6.2 | 13.8 | .448 | 0.3 | 0.7 | .385 | 5.9 | 13.1 | .451 | .458 | 3.6 | 5.9 | .613 | 3.0 | 6.3 | 9.3 | 3.6 | 0.7 | 1.1 | 2.6 | 2.8 | 16.2 | .496 |
-| [Qyntel Woods](../Players/woodsqy01.md) | 22 | POR | NBA | PF | 16 | 0 | 10.7 | 1.2 | 2.9 | .404 | 0.1 | 0.4 | .143 | 1.1 | 2.5 | .450 | .415 | 0.5 | 0.8 | .667 | 0.4 | 1.4 | 1.8 | 0.8 | 0.4 | 0.2 | 0.4 | 1.2 | 2.9 | .450 |
+| [Qyntel Woods](../Players/woodsqy01.md) | 22 | POR | NBA | PF | 17 | 0 | 10.4 | 1.2 | 2.9 | .408 | 0.1 | 0.4 | .143 | 1.1 | 2.5 | .452 | .418 | 0.5 | 0.7 | .667 | 0.4 | 1.4 | 1.8 | 0.7 | 0.4 | 0.2 | 0.4 | 1.1 | 2.9 | .451 |
 | [Rasheed Wallace](../Players/wallara01.md) | 28 | POR | NBA | PF | 18 | 18 | 37.6 | 7.1 | 14.0 | .504 | 1.3 | 3.1 | .436 | 5.7 | 10.9 | .523 | .552 | 2.3 | 3.3 | .712 | 1.4 | 4.9 | 6.3 | 2.0 | 0.8 | 1.7 | 2.3 | 3.7 | 17.8 | .576 |
 | [Reggie Evans](../Players/evansre01.md) | 23 | SEA | NBA | PF | 13 | 0 | 17.1 | 1.1 | 3.2 | .341 | 0.0 | 0.2 | .000 | 1.1 | 3.0 | .359 | .341 | 0.7 | 1.5 | .474 | 1.8 | 2.8 | 4.5 | 0.5 | 0.8 | 0.2 | 1.1 | 1.8 | 2.8 | .375 |
 | [Rick Rickert](../Players/rickeri01.md) | 20 | MIN rights | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -486,7 +486,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Corie Blount](../Players/blounco01.md) | 34 | CHI | NBA | C | 19 | 1 | 13.9 | 1.8 | 4.2 | .443 | 0.1 | 0.2 | .333 | 1.8 | 4.0 | .447 | .449 | 0.4 | 0.7 | .615 | 0.6 | 2.7 | 3.3 | 0.5 | 0.5 | 0.2 | 0.5 | 1.6 | 4.2 | .466 |
 | [Dale Davis](../Players/davisda01.md) | 34 | POR | NBA | C | 12 | 0 | 20.4 | 1.8 | 4.4 | .396 | 0.1 | 0.2 | .500 | 1.7 | 4.2 | .392 | .406 | 1.5 | 2.3 | .643 | 0.9 | 2.2 | 3.2 | 0.8 | 0.4 | 0.7 | 0.3 | 2.2 | 5.1 | .467 |
 | [Dalibor Bagaric](../Players/bagarda01.md) | 23 | CHI | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [Dan Gadzuric](../Players/gadzuda01.md) | 25 | MIL | NBA | C | 19 | 3 | 17.1 | 2.1 | 4.3 | .494 | 0.0 | 0.1 | .000 | 2.1 | 4.2 | .506 | .494 | 0.8 | 1.4 | .593 | 1.3 | 2.7 | 3.9 | 0.3 | 0.3 | 1.5 | 0.6 | 2.6 | 5.1 | .517 |
+| [Dan Gadzuric](../Players/gadzuda01.md) | 25 | MIL | NBA | C | 20 | 4 | 17.9 | 2.2 | 4.7 | .473 | 0.0 | 0.1 | .000 | 2.2 | 4.5 | .489 | .473 | 0.8 | 1.4 | .593 | 1.4 | 2.7 | 4.0 | 0.5 | 0.4 | 1.4 | 0.7 | 2.6 | 5.2 | .496 |
 | [Darko Milicic](../Players/milicda01.md) | 18 | DET | NBA | C | 6 | 0 | 3.6 | 0.3 | 0.8 | .400 | 0.0 | 0.2 | .000 | 0.3 | 0.7 | .500 | .400 | 0.3 | 0.3 | 1.000 | 0.3 | 0.7 | 1.0 | 0.0 | 0.0 | 0.2 | 0.0 | 0.2 | 1.0 | .510 |
 | [David Robinson](../Players/robinda01.md) | 37 | SA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Derrick Coleman](../Players/colemde01.md) | 36 | PHI | NBA | C | 10 | 1 | 23.5 | 3.6 | 8.4 | .429 | 0.3 | 1.6 | .188 | 3.3 | 6.8 | .485 | .446 | 1.0 | 1.1 | .909 | 0.7 | 4.1 | 4.8 | 1.9 | 0.8 | 0.4 | 1.9 | 2.6 | 8.5 | .478 |
@@ -500,7 +500,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Jahidi White](../Players/whiteja01.md) | 27 | WSH | NBA | C | 16 | 1 | 5.5 | 0.6 | 1.7 | .370 | 0.0 | 0.0 | N/A | 0.6 | 1.7 | .370 | .370 | 0.4 | 0.9 | .467 | 0.9 | 1.2 | 2.1 | 0.1 | 0.0 | 0.3 | 0.5 | 1.3 | 1.7 | .402 |
 | [Jake Tsakalidis](../Players/tsakaja01.md) | 24 | PHX | NBA | C | 13 | 0 | 8.4 | 1.0 | 1.7 | .591 | 0.2 | 0.2 | 1.000 | 0.8 | 1.5 | .550 | .636 | 0.5 | 0.6 | .875 | 0.4 | 1.5 | 1.8 | 0.3 | 0.2 | 0.2 | 0.4 | 1.3 | 2.7 | .686 |
 | [Jake Voskuhl](../Players/voskuja01.md) | 25 | PHX | NBA | C | 18 | 4 | 23.7 | 2.7 | 5.2 | .511 | 0.1 | 0.3 | .200 | 2.6 | 4.9 | .528 | .516 | 1.6 | 2.1 | .763 | 1.2 | 3.5 | 4.7 | 0.6 | 0.9 | 0.4 | 1.5 | 3.3 | 7.0 | .569 |
-| [Jamaal Magloire](../Players/magloja01.md) | 25 | NO | NBA | C | 21 | 21 | 31.6 | 4.4 | 9.0 | .484 | 0.0 | 0.3 | .000 | 4.4 | 8.8 | .500 | .484 | 3.8 | 5.3 | .714 | 3.1 | 5.7 | 8.8 | 1.4 | 0.5 | 1.5 | 2.4 | 3.9 | 12.6 | .552 |
+| [Jamaal Magloire](../Players/magloja01.md) | 25 | NO | NBA | C | 22 | 22 | 31.2 | 4.4 | 9.0 | .485 | 0.0 | 0.3 | .000 | 4.4 | 8.7 | .500 | .485 | 3.8 | 5.3 | .709 | 3.0 | 5.7 | 8.6 | 1.3 | 0.5 | 1.5 | 2.4 | 3.9 | 12.5 | .551 |
 | [James Lang](../Players/langja01.md) | 19 | NO rights | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Jason Collins](../Players/collija04.md) | 24 | NJ | NBA | C | 17 | 17 | 29.2 | 1.9 | 5.9 | .317 | 0.0 | 0.2 | .000 | 1.9 | 5.8 | .327 | .317 | 2.4 | 3.4 | .702 | 2.4 | 3.4 | 5.8 | 2.2 | 1.0 | 0.7 | 1.8 | 3.7 | 6.1 | .412 |
 | [Jeff Foster](../Players/fosteje01.md) | 26 | IND | NBA | C | 21 | 15 | 27.0 | 2.9 | 5.2 | .555 | 0.0 | 0.2 | .000 | 2.9 | 5.0 | .581 | .555 | 1.4 | 2.1 | .667 | 2.4 | 5.0 | 7.5 | 1.0 | 1.6 | 0.5 | 0.7 | 2.2 | 7.2 | .586 |
@@ -537,7 +537,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Samaki Walker](../Players/walkesa01.md) | 27 | LAL | NBA | C | 17 | 0 | 16.7 | 1.3 | 3.8 | .344 | 0.1 | 0.4 | .143 | 1.2 | 3.4 | .368 | .352 | 1.4 | 1.9 | .750 | 1.0 | 3.1 | 4.1 | 0.6 | 0.3 | 0.4 | 0.7 | 1.3 | 4.1 | .442 |
 | [Scot Pollard](../Players/pollasc01.md) | 28 | SAC | NBA | C | 16 | 0 | 8.8 | 1.0 | 2.5 | .400 | 0.1 | 0.2 | .333 | 0.9 | 2.3 | .405 | .412 | 0.3 | 0.6 | .500 | 0.8 | 1.6 | 2.4 | 0.4 | 0.2 | 0.2 | 0.2 | 1.2 | 2.4 | .428 |
 | [Scott Williams](../Players/willisc01.md) | 35 | PHX | NBA | C | 8 | 0 | 9.4 | 0.8 | 2.8 | .273 | 0.0 | 0.0 | N/A | 0.8 | 2.8 | .273 | .273 | 0.2 | 0.4 | .667 | 1.1 | 1.1 | 2.2 | 0.5 | 0.6 | 0.2 | 0.1 | 0.9 | 1.8 | .300 |
-| [Sean Rooks](../Players/rooksse01.md) | 33 | LAC | NBA | C | 17 | 0 | 7.1 | 0.6 | 2.0 | .294 | 0.0 | 0.2 | .000 | 0.6 | 1.8 | .323 | .294 | 0.4 | 0.4 | .857 | 0.4 | 0.8 | 1.2 | 0.4 | 0.2 | 0.2 | 0.4 | 1.2 | 1.5 | .351 |
+| [Sean Rooks](../Players/rooksse01.md) | 33 | LAC | NBA | C | 18 | 0 | 7.0 | 0.6 | 1.9 | .314 | 0.0 | 0.2 | .000 | 0.6 | 1.8 | .344 | .314 | 0.3 | 0.4 | .857 | 0.3 | 0.9 | 1.2 | 0.4 | 0.2 | 0.2 | 0.4 | 1.2 | 1.6 | .368 |
 | [Shaquille O'Neal](../Players/onealsh01.md) | 31 | LAL | NBA | C | 20 | 20 | 36.2 | 8.4 | 14.8 | .569 | 0.2 | 0.5 | .500 | 8.2 | 14.3 | .571 | .577 | 3.9 | 7.5 | .523 | 3.2 | 7.2 | 10.4 | 2.8 | 0.8 | 2.4 | 2.2 | 3.0 | 21.1 | .581 |
 | [Shawn Bradley](../Players/bradlsh01.md) | 31 | DAL | NBA | C | 18 | 0 | 9.4 | 0.9 | 2.2 | .410 | 0.0 | 0.1 | .000 | 0.9 | 2.1 | .421 | .410 | 0.9 | 1.2 | .762 | 1.0 | 1.1 | 2.1 | 0.4 | 0.5 | 0.9 | 0.3 | 1.9 | 2.7 | .498 |
 | [Shawn Kemp](../Players/kempsh01.md) | 33 | ORL | NBA | C | 18 | 7 | 23.3 | 2.9 | 7.1 | .414 | 0.0 | 0.1 | .000 | 2.9 | 7.0 | .421 | .414 | 2.2 | 2.9 | .755 | 2.4 | 4.7 | 7.2 | 0.9 | 0.9 | 0.6 | 1.8 | 2.8 | 8.1 | .482 |
@@ -563,7 +563,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Bruno Šundov](../Players/sundobr01.md) | N/A | CLE | NBA | C | 1 | 0 | 8.3 | 1.0 | 2.0 | .500 | 0.0 | 0.0 | N/A | 1.0 | 2.0 | .500 | .500 | 2.0 | 3.0 | .667 | 0.0 | 2.0 | 2.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 4.0 | .602 |
 | [Cherokee Parks](../Players/parksch02.md) | 31 | MIA | NBA | C | 20 | 0 | 10.5 | 1.4 | 3.5 | .420 | 0.2 | 0.7 | .286 | 1.2 | 2.8 | .455 | .449 | 0.5 | 0.7 | .769 | 0.6 | 1.4 | 1.9 | 0.9 | 0.3 | 0.1 | 0.5 | 0.7 | 3.6 | .482 |
 | [Curtis Borchardt](../Players/borchcu01.md) | N/A | UTAH | NBA | C | 14 | 0 | 5.3 | 0.6 | 1.6 | .391 | 0.0 | 0.1 | .000 | 0.6 | 1.5 | .429 | .391 | 0.4 | 0.5 | .714 | 0.2 | 0.9 | 1.1 | 0.4 | 0.0 | 0.4 | 1.1 | 0.6 | 1.6 | .441 |
-| [Daniel Santiago](../Players/santida01.md) | N/A | MIL | NBA | C | 14 | 1 | 13.0 | 2.4 | 4.1 | .596 | 0.1 | 0.4 | .200 | 2.4 | 3.7 | .635 | .605 | 0.9 | 1.2 | .706 | 0.6 | 2.4 | 3.0 | 0.6 | 0.4 | 0.6 | 0.7 | 1.6 | 5.8 | .628 |
+| [Daniel Santiago](../Players/santida01.md) | N/A | MIL | NBA | C | 15 | 1 | 13.5 | 2.6 | 4.3 | .600 | 0.1 | 0.3 | .200 | 2.5 | 4.0 | .633 | .608 | 0.8 | 1.1 | .706 | 0.7 | 2.6 | 3.3 | 0.7 | 0.4 | 0.7 | 0.7 | 1.5 | 6.1 | .628 |
 | [Elden Campbell](../Players/campbel01.md) | N/A | DET | NBA | C | 18 | 0 | 14.7 | 2.8 | 6.0 | .472 | 0.1 | 0.4 | .143 | 2.8 | 5.6 | .495 | .477 | 1.6 | 1.9 | .829 | 0.8 | 1.9 | 2.7 | 0.8 | 0.5 | 0.4 | 0.9 | 1.8 | 7.3 | .535 |
 | [Etan Thomas](../Players/thomaet01.md) | N/A | WSH | NBA | C | 19 | 19 | 26.4 | 3.4 | 7.7 | .442 | 0.1 | 0.3 | .400 | 3.3 | 7.5 | .444 | .449 | 2.3 | 3.7 | .620 | 1.7 | 5.2 | 6.9 | 1.1 | 0.4 | 1.4 | 1.5 | 3.4 | 9.3 | .494 |
 | [Francisco Elson](../Players/elsonfr01.md) | N/A | DEN | NBA | C | 18 | 0 | 14.2 | 1.8 | 3.7 | .493 | 0.0 | 0.1 | .000 | 1.8 | 3.6 | .508 | .493 | 0.9 | 1.4 | .654 | 0.9 | 2.3 | 3.2 | 0.7 | 0.5 | 0.7 | 0.1 | 2.3 | 4.6 | .529 |
@@ -591,7 +591,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | --- | --- | ---: | --- |
 | [October 2003](10_October/League_Stats.md) | October 1-31, 2003 | 26 | Complete |
 | [November 2003](11_November/League_Stats.md) | November 1-30, 2003 | 208 | Complete |
-| [December 2003](12_December/League_Stats.md) | December 1-31, 2003 | 53 | Through December 8, 2003 |
+| [December 2003](12_December/League_Stats.md) | December 1-31, 2003 | 54 | Through December 8, 2003 |
 | [January 2004](01_January/League_Stats.md) | January 1-31, 2004 | 0 | Not started |
 | [February 2004](02_February/League_Stats.md) | February 1-29, 2004 | 0 | Not started |
 | [March 2004](03_March/League_Stats.md) | March 1-31, 2004 | 0 | Not started |
