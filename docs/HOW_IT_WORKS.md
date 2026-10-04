@@ -84,6 +84,7 @@ Commit in batches, about every couple of weeks of career time or at any stop tha
 - **Statistics and cards.**
   - **Generated pages.** `runtime/player_reports.py`, `runtime/write_back.py` and `runtime/league_cards.py`. Every page is generated: edit the source record, never the page.
   - **Refresh.** `scripts/refresh_career_views.py` rebuilds reports, league cards and statistics pages together.
+  - **Shot charts.** Kernel 2003.7 records every field-goal attempt's simulated location and outcome in future game results, using the sourced 2002–03 league shot distribution. Wade and league cards offer a separate tracked-games view with its own totals and appearance denominator. Earlier games keep their original results and unavailable locations; the career remains on November 11. See [shot environment sources](shot_environment_sources.md) and [calibration](spatial_calibration.md).
 
 ## 6. Where the career stands (November 11, 2003)
 

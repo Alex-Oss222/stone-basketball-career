@@ -4,7 +4,7 @@ A card shows only evidence dated on or before its date: the registry identity, t
 club holding the player on that date (``club_on``), the sourced photo, the contract or
 draft-rights line that existed at the checkpoint, the recorded 2002-03 line or the 2003
 draft entry, and the simulated 2003-04 statistics, which stay N/A until closed games
-exist. Nothing here reads a result, a later transaction or the historical Wade.
+exist. Later transactions and the historical Wade are never used as evidence.
 
 Club colours come from ``library/2003/league/nba_team_colors_2002_2014.json`` (presentation
 only). The dated club follows the registry's source club or draft rights, then Miami's
@@ -21,6 +21,7 @@ import re
 
 from .career_stats import aggregate
 from .shot_chart import NBA_GEOMETRY, ZONES, aggregate_shots
+from .shot_events import build_tracking_cohort, engine_result_shots, shot_source_type
 from .stat_layout import PER_GAME_COLUMNS, markdown_table
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -39,7 +40,7 @@ HOLDINGS = SEASON_DIR / "00_Team/Team/Roster/holdings.json"
 DEPARTURES = SEASON_DIR / "00_Team/Team/Roster/departures.json"
 MIAMI_ROSTER = SEASON_DIR / "00_Team/Team/Roster/roster.json"
 MIAMI_CARDS = SEASON_DIR / "00_Team/Team/Player_Cards"
-TEMPLATE = Path("docs/templates/player_cards_preview.html")
+TEMPLATE = Path("runtime/assets/player_cards.html")
 SILHOUETTE = "assets/silhouette.svg"
 MIAMI = "Miami Heat"
 SEASON = "2003-04"
@@ -299,8 +300,23 @@ def period_statistics(records, shots, period):
     selected = [r for r in records if period["start"] <= r["date"] <= period["end"]]
     ids = {r["event_id"] for r in selected}
     summary = aggregate(selected)
-    shooting = aggregate_shots(selected, [s for s in shots if s["game_id"] in ids])
-    return dict(summary=summary, shooting=shooting, selected=selected)
+    selected_shots = [s for s in shots if s["game_id"] in ids]
+    shooting = aggregate_shots(selected, selected_shots)
+    tracked_ids = {r["event_id"] for r in selected if r.get("shot_tracking_available")}
+    sources = _source_games(selected)
+    cohort = build_tracking_cohort(selected, selected_shots, tracked_game_ids=tracked_ids,
+                                   source_games=sources)
+    source_type = shot_source_type(selected_shots, source_games=sources)
+    return dict(summary=summary, shooting=shooting, selected=selected, shots=selected_shots,
+                shot_source_type=source_type, **cohort)
+
+
+def _source_games(records):
+    return [dict(id=r["event_id"], date=r["date"], opponent=r.get("opponent"), status=r["status"],
+                 appearance=r.get("appearance"), href=r.get("href"),
+                 result_href=r.get("result_href"), shot_href=r.get("shot_href"),
+                 shot_source_label=r.get("shot_source_label"),
+                 shot_source_type=r.get("shot_source_type", "unavailable")) for r in records]
 
 
 def _n(value, places=1):
@@ -400,7 +416,7 @@ class CardContext:
         roster = _read(root, MIAMI_ROSTER)["players"]
         self.miami_cards = {_key(p["name"]): p["id"] for p in roster if (self.root / MIAMI_CARDS / f'{p["id"]}.md').is_file()}
         self.periods = periods(self.config)
-        self.template = (self.root / TEMPLATE).read_text(encoding="utf-8")
+        self.template = (ROOT / TEMPLATE).read_text(encoding="utf-8")
 
     def club(self, player):
         return club_on(player, self.on, holdings=self.holdings, departures=self.departures,
@@ -522,9 +538,18 @@ def markdown_card(ctx, data):
         if kind != "season":
             lines.append("</details>\n")
     lines.append("## Shooting zones\n")
-    season = data["stats"]["season"]["shooting"]
+    season_stats = data["stats"]["season"]
+    season = season_stats["shooting"]
     cov = season["coverage"]
-    lines.append(f'Aggregated with `runtime/shot_chart.py` over closed results of the {SEASON} regular season. Coverage: **{cov["status"]}**; {cov["located_attempts"]} located attempts, {cov["unlocated_attempts"]} unlocated, {cov["outside_view_attempts"]} outside the view, {_n(cov["missing_attempts"], 0)} missing. Zone rates stay N/A until located attempts exist; nothing is estimated onto the court.\n')
+    lines.append(f'Aggregated with `runtime/shot_chart.py` over closed results of the {SEASON} regular season. Coverage: **{cov["status"]}**; {cov["located_attempts"]} located attempts, {cov["unlocated_attempts"]} unlocated, {cov["outside_view_attempts"]} outside the view, {_n(cov["missing_attempts"], 0)} missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.\n')
+    tracked = season_stats["tracked"]
+    if tracked is not None:
+        cohort = season_stats["tracking_cohort"]
+        lines.append(f'### Tracked games only\n\n{tracked["source_note"]} '
+                     f'{cohort["games"]} of {cohort["total_games"]} closed games; '
+                     f'{cohort["appearances"]} tracked appearances form the denominator below '
+                     f'({cohort["start"]} to {cohort["end"]}).\n')
+        season = tracked["shooting"]
     zone_rows = []
     for z in [*season["zones"], dict(id="total", label="All field goals", **season["totals"])]:
         zone_rows.append([z["label"], _n(z.get("fgm"), 0), _n(z.get("fga"), 0),
@@ -564,11 +589,11 @@ def _empty_period(period, stat):
     summary, shooting = stat["summary"], stat["shooting"]
     out = dict(id=period["id"], label=period["label"], kind=period["kind"], season=SEASON, start=period["start"],
                end=period["end"], cutoff=period["end"], games=summary["closed"], appearances=summary["gp"], dnp=summary["dnp"],
-               source_games=[dict(id=r["event_id"], date=r["date"], opponent=r.get("opponent"), status=r["status"],
-                                  appearance=r.get("appearance"), href=r.get("href")) for r in stat["selected"]])
+               source_games=_source_games(stat["selected"]), shot_source_type=stat["shot_source_type"],
+               tracked=stat["tracked"], tracking_cohort=stat["tracking_cohort"])
     if summary["closed"]:
         shots = {k: v for k, v in shooting.items() if k not in ("geometry", "notes")}
-        out.update(box=summary["totals"], rates=summary["rates"], shooting=shots)
+        out.update(box=summary["totals"], rates=summary["rates"], shooting=shots, shots=stat["shots"])
     return out
 
 
@@ -583,77 +608,53 @@ def html_payload(ctx, data):
         identity["photo_credit"] = f'{data["photo"].get("headshot_credit")} · {data["photo"].get("headshot_license")}'
     notice = (f"LEAGUE PLAYER CARD · Evidence dated on or before {ctx.on}. Simulated 2003-04 statistics only; "
               "no real 2003-04 results, no later-career facts. Shot locations appear only from recorded closed results.")
-    return dict(schema_version=1, record_type="league_player_card", card_date=ctx.on, identity=identity, notice=notice,
+    card_dir = ctx.root / CARDS_DIR
+    links = dict(stats=_rel(card_dir, ctx.root / LEAGUE_DIR / SEASON / "League_Stats.md"),
+                 shooting=f'{data["id"]}.md#shooting-zones', awards=f'{data["id"]}.md#awards-and-honors',
+                 definitions=_rel(card_dir, ctx.root / "docs/player_cards.md"),
+                 contract=_rel(card_dir, ctx.root / PLAYER_DIR / "Contracts/players" / f'{data["id"]}.html') + "#contract")
+    return dict(schema_version=1, mode="live", record_type="league_player_card", card_date=ctx.on,
+                identity=identity, notice=notice, enabled_tabs=["shooting", "awards"], links=links,
                 geometry=NBA_GEOMETRY, zones=ZONES, default_period="season",
-                periods=[_empty_period(period, data["stats"][period["id"]]) for period in ctx.periods],
+                periods=[dict(_empty_period(period, data["stats"][period["id"]]), cutoff=min(ctx.on, period["end"]))
+                         for period in ctx.periods],
                 awards=dict(default_scenario="current", scenarios=[dict(
                     id="current", label=f"{SEASON} season", season=SEASON, cutoff=ctx.on,
                     notice=f"No annual award has been recorded for this player through {ctx.on}. Weekly and monthly honors stay in the league award records.",
                     records=[])]))
 
 
-_REPLACEMENTS = [
-    ("<title>Example Player · Shooting & Awards</title>", "<title>__TITLE__</title>"),
-    ('<a href="player_stats_preview.md">All statistical reports ↗</a>', '<a href="__MD__">Markdown card ↗</a>'),
-    ('<div class="eyebrow">Illustrative player profile</div>', '<div class="eyebrow">__EYEBROW__</div>'),
-    ('<span class="portrait-note">No photo supplied</span>', '<span class="portrait-note">No sourced photo</span>'),
-    ("<footer class=\"footer\"><span>Example Player · Regular season only · Source-linked aggregation, fixed visual scales</span><span><a href=\"player_stats_preview.md\">Statistical reports</a> · <a href=\"../player_statistics.md\">Definitions</a> · <a href=\"player_milestones/career_milestones_preview.html\">Milestone screens</a></span></footer>",
-     "<footer class=\"footer\"><span>__NAME__ · Regular season only · Source-linked aggregation, fixed visual scales</span><span><a href=\"__MD__\">Markdown card</a> · <a href=\"__LEAGUE__\">League statistics</a> · <a href=\"__GUIDE__\">Card guide</a></span></footer>"),
-    ("const DATA=JSON.parse(document.getElementById('player-card-data').textContent);",
-     "const DATA=JSON.parse(document.getElementById('player-card-data').textContent);"
-     "const EMPTY_BOX={pts:0,fgm:0,fga:0,tpm:0,tpa:0,ftm:0,fta:0,orb:0,drb:0,ast:0,stl:0,blk:0,tov:0,pf:0,seconds:0,ft_points:0,two_pm:0,two_pa:0,reb:0};"
-     "const EMPTY_SHOOTING=p=>({schema_version:1,scope:{start:p.start,end:p.end},games:0,recorded_appearances:0,dnp:0,closed_games:0,"
-     "totals:{fgm:null,fga:null,tpm:null,tpa:null,fg_points:null,fg_pct:null,fg_ppg:null,fga_per_game:null},observed:{fgm:0,fga:0,tpm:0,tpa:0,fg_points:0},"
-     "zones:DATA.zones.map(z=>({...z,fgm:null,fga:null,tpm:null,tpa:null,fg_points:null,fg_pct:null,fg_ppg:null,fga_per_game:null,coverage:'unavailable',observed_fgm:0,observed_fga:0,observed_fg_points:0})),"
-     "bins:[],coverage:{status:'unavailable',located_attempts:0,unlocated_attempts:0,outside_view_attempts:0,missing_attempts:0,known_missing_attempts:0,recorded_attempts:0,box_fga:0,missing_box_games:[],missing_shot_games:[],location_fraction:null},source_refs:[]});"
-     "DATA.periods=DATA.periods.map(p=>p.shooting?p:{...p,box:{...EMPTY_BOX},rates:{},shooting:EMPTY_SHOOTING(p)});"
-     "if(DATA.identity.colors){document.documentElement.style.setProperty('--red',DATA.identity.colors.primary);document.documentElement.style.setProperty('--red-bright',DATA.identity.colors.secondary);const identityBox=document.querySelector('.identity');identityBox.style.background='linear-gradient(115deg,'+DATA.identity.colors.primary+' 0,#12151b 58%,'+DATA.identity.colors.primary+' 100%)';identityBox.style.borderColor=DATA.identity.colors.secondary;document.getElementById('player-number').style.color=DATA.identity.colors.secondary;}"),
-    ("$('identity-status').textContent='Fictional example';", "$('identity-status').textContent=DATA.identity.status;"),
-    ("$('identity-status').textContent=award&&award.id!=='current'?'Independent award scenario':'Fictional example';",
-     "$('identity-status').textContent=DATA.identity.status;"),
-    ("document.querySelector('.notice').textContent=award&&award.id!=='current'?'INDEPENDENT AWARD DESIGN SCENARIO · Fictional earned-year layout only. Separate from the six-game 2003 sample, Wade’s career and any future award outcome.':'FICTIONAL EXAMPLE · Same six sample appearances as the statistical reports. Shot locations demonstrate the interface; they are not recorded Wade shots or live career results.';",
-     "document.querySelector('.notice').textContent=DATA.notice;"),
-    ("FICTIONAL EXAMPLE · Same six sample appearances as the statistical reports. Shot locations demonstrate the interface; they are not recorded Wade shots or live career results.", "__NOTICE__"),
-    ("return `ILLUSTRATIVE LOCATION DATA · ${c.located_attempts??0} located attempts reconcile to ${p.box.fga??0} field-goal attempts in the same fictional report games. Locations and bin groupings are interface examples, not recorded career tracking. ${p.appearances??p.shooting.games} appearances; source games linked below.`;",
-     "return `RECORDED LOCATION DATA · ${c.located_attempts??0} located attempts reconcile to ${p.box.fga??0} field-goal attempts in the closed source games. ${p.appearances??p.shooting.games} appearances; source games linked below.`;"),
-    ("'A recorded DNP is not a zero-percent shooting game. There is no appearance denominator or shooting sample.'",
-     "'No closed game of this period includes the player. There is no appearance denominator or shooting sample; nothing is estimated.'"),
-    ("<p>The season remains open in this sample. No future selection, trophy or career honor is inferred from performance or copied from the reference image.</p>",
-     "<p>The season is open. No future selection, trophy or career honor is inferred from performance or imported from history.</p>"),
-    ("${independent?'This design scenario is separate from the six-game 2003 example. It does not add a future result to the player’s career.':'The November 2003 sample has short-period recognitions but no earned annual award. An empty annual section is the accurate result.'}",
-     "${independent?'':'Only a closed award decision in the league award records adds an honor here. An empty annual section is the accurate result until then.'}"),
-    ('href="player_stats_preview.md">Open period-by-period statistical reports ↗</a>', 'href="__LEAGUE__">Open the league statistical reports ↗</a>'),
-]
-
-
 def html_template(template):
-    """The preview's HTML/JS with its example-only wording replaced by card data hooks."""
-    text = template
-    for old, new in _REPLACEMENTS:
-        if text.count(old) != 1:
-            raise ValueError(f"player-card template changed; expected exactly one occurrence of: {old[:60]}")
-        text = text.replace(old, new)
-    if text.count("__PLAYER_CARD_DATA__") != 1:
-        raise ValueError("player-card HTML template must contain exactly one __PLAYER_CARD_DATA__ token")
-    return text
+    """Use the shared live renderer, retaining league colours and empty periods."""
+    marker = "const DATA=JSON.parse(document.getElementById('player-card-data').textContent);"
+    if template.count(marker) != 1 or template.count("__PLAYER_CARD_DATA__") != 1:
+        raise ValueError("shared player-card template must contain one data token and initializer")
+    text = template.replace(marker, marker +
+        "const EMPTY_BOX={pts:0,fgm:0,fga:0,tpm:0,tpa:0,ftm:0,fta:0,orb:0,drb:0,ast:0,stl:0,blk:0,tov:0,pf:0,seconds:0,ft_points:0,two_pm:0,two_pa:0,reb:0};"
+        "const EMPTY_SHOOTING=p=>({schema_version:1,scope:{start:p.start,end:p.end},games:0,recorded_appearances:0,dnp:0,closed_games:0,"
+        "totals:{fgm:null,fga:null,tpm:null,tpa:null,fg_points:null,fg_pct:null,fg_ppg:null,fga_per_game:null},observed:{fgm:0,fga:0,tpm:0,tpa:0,fg_points:0},"
+        "zones:DATA.zones.map(z=>({...z,fgm:null,fga:null,tpm:null,tpa:null,fg_points:null,fg_pct:null,fg_ppg:null,fga_per_game:null,coverage:'unavailable',observed_fgm:0,observed_fga:0,observed_fg_points:0})),"
+        "bins:[],coverage:{status:'unavailable',located_attempts:0,unlocated_attempts:0,outside_view_attempts:0,missing_attempts:0,known_missing_attempts:0,recorded_attempts:0,box_fga:0,missing_box_games:[],missing_shot_games:[],location_fraction:null},source_refs:[]});"
+        "DATA.periods=DATA.periods.map(p=>p.shooting?p:{...p,box:{...EMPTY_BOX},rates:{},shooting:EMPTY_SHOOTING(p)});"
+        "if(DATA.identity.colors){document.documentElement.style.setProperty('--red',DATA.identity.colors.primary);document.documentElement.style.setProperty('--red-bright',DATA.identity.colors.secondary);const identityBox=document.querySelector('.identity');identityBox.style.background='linear-gradient(115deg,'+DATA.identity.colors.primary+' 0,#12151b 58%,'+DATA.identity.colors.primary+' 100%)';identityBox.style.borderColor=DATA.identity.colors.secondary;document.getElementById('player-number').style.color=DATA.identity.colors.secondary;}")
+    # This renderer also serves illustrative fixtures. Live league cards never
+    # use that branch; remove its example notice from the published document.
+    return text.replace("FICTIONAL EXAMPLE · Same six sample appearances as the statistical reports. Shot locations demonstrate the interface; they are not recorded Wade shots or live career results.",
+                        "League player card: saved closed-game evidence only.")
 
 
 def html_card(ctx, data, template=None):
     template = template or html_template(ctx.template)
     payload = html_payload(ctx, data)
     encoded = json.dumps(payload, separators=(",", ":")).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
-    card_dir = ctx.root / CARDS_DIR
     p = data["player"]
     text = template.replace("__PLAYER_CARD_DATA__", encoded)
-    text = text.replace("__TITLE__", escape(f'{p["name"]} · NBA player card · {ctx.on}'))
-    text = text.replace("__NAME__", escape(p["name"]))
-    text = text.replace("__MD__", f'{data["id"]}.md')
-    text = text.replace("__EYEBROW__", escape(f'NBA player card · {data["label"]} · {ctx.on}'))
-    text = text.replace("__NOTICE__", escape(payload["notice"]))
-    text = text.replace("__LEAGUE__", _rel(card_dir, ctx.root / LEAGUE_DIR / SEASON / "League_Stats.md"))
-    text = text.replace("__GUIDE__", _rel(card_dir, ctx.root / "docs/player_cards.md"))
-    text = text.replace("<h1 id=\"player-name\">Example Player</h1>", f'<h1 id="player-name">{escape(p["name"])}</h1>')
-    text = text.replace('<span class="portrait-initials" id="player-initials">EP</span>',
+    text = text.replace("<title>Player · Shooting, Contract &amp; Awards</title>",
+                        f'<title>{escape(p["name"])} · NBA player card · {ctx.on}</title>')
+    text = text.replace("<title>Player · Shooting, Contract & Awards</title>",
+                        f'<title>{escape(p["name"])} · NBA player card · {ctx.on}</title>')
+    text = text.replace('<h1 id="player-name">Player</h1>', f'<h1 id="player-name">{escape(p["name"])}</h1>')
+    text = text.replace('<span class="portrait-initials" id="player-initials"></span>',
                         f'<span class="portrait-initials" id="player-initials">{escape(payload["identity"]["initials"])}</span>')
     return text
 
@@ -672,18 +673,71 @@ def index_page(ctx, cards):
     return "\n".join(lines)
 
 
-def closed_records(ctx):
-    """registry_id -> closed regular-season records on or before the card date (the write-back's matching).
+def closed_card_feeds(ctx):
+    """Closed box records and trusted engine shots, keyed by the same registry identity.
 
-    The engine's results carry no shot locations, so no shots are supplied and zone coverage stays unavailable."""
-    from .write_back import closed_lines
-    lines, _ = closed_lines(ctx.root, SEASON, ctx.on)
+    Resolve the box player once with the write-back's dated club/BBR mapping,
+    then select events by that exact result side and player ID. Matching boxes
+    alone never establishes shot ownership, and an old result gains no locations.
+    """
+    from .season_games import note_meta
+    from .write_back import bbr_lookup, closed_results, game_records
+    by_bbr = {p["bbr_id"]: p for p in ctx.registry["players"] if p.get("bbr_id")}
+    by_name = {}
+    for player in ctx.registry["players"]:
+        by_name.setdefault(_key(player["name"]), []).append(player)
+    lookup = bbr_lookup(ctx.root, SEASON)
+    lines, shots = {}, {}
     card_dir = ctx.root / CARDS_DIR
-    for records in lines.values():
-        for r in records:
-            if r.get("note") is not None:
-                r["href"] = _rel(card_dir, r["note"])
-    return lines
+    for row in closed_results(ctx.root, SEASON, ctx.on):
+        result = row["result"]
+        if row["note"] is not None:
+            note = row["note"]
+            source = note.parent / note_meta(note)["result_file"]
+        else:
+            source = ctx.root / LEAGUE_DIR / SEASON / "Games" / f'{result["event_id"]}.result.json'
+        events = engine_result_shots(result, source_ref=_rel(card_dir, source))
+        tracked = bool(result.get("shot_tracking"))
+        owners = set()
+        events_by_player = {}
+        for event in events:
+            events_by_player.setdefault((event["side"], event["player_id"]), []).append(event)
+        for side, player_id, bbr, record in game_records(row, ctx.root, SEASON):
+            known_bbr = lookup.get((result[side], _key(player_id)))
+            if tracked and bbr and known_bbr and bbr != known_bbr:
+                raise ValueError(f"{result['event_id']}: shot player identity disagrees with the club's recorded BBR ID")
+            bbr = bbr or known_bbr
+            matches = by_name.get(_key(player_id), [])
+            if (tracked and bbr and len(matches) == 1 and matches[0].get("bbr_id")
+                    and matches[0]["bbr_id"] != bbr):
+                raise ValueError(f"{result['event_id']}: shot player identity disagrees with the named registry player")
+            player = by_bbr.get(bbr) if bbr else None
+            if player is None:
+                if tracked and len(matches) > 1:
+                    raise ValueError(f"{result['event_id']}: ambiguous shot player identity {player_id}")
+                player = matches[0] if matches else None
+            if player is None:
+                continue
+            registry_id = player["registry_id"]
+            if tracked and registry_id in owners:
+                raise ValueError(f"{result['event_id']}: duplicate tracked registry player {registry_id}")
+            owners.add(registry_id)
+            if record.get("note") is not None:
+                record["href"] = _rel(card_dir, record["note"])
+            elif tracked:
+                record["href"] = _rel(card_dir, source)
+            if tracked:
+                record.update(shot_tracking_available=True, shot_source_type="engine_generated",
+                              result_href=_rel(card_dir, source), shot_href=_rel(card_dir, source),
+                              shot_source_label="Simulated engine shot data")
+            lines.setdefault(registry_id, []).append(record)
+            shots.setdefault(registry_id, []).extend(events_by_player.get((side, player_id), ()))
+    return lines, shots
+
+
+def closed_records(ctx):
+    """registry_id -> closed regular-season records on or before the card date."""
+    return closed_card_feeds(ctx)[0]
 
 
 def build_cards(root=ROOT, ctx=None):
@@ -693,9 +747,9 @@ def build_cards(root=ROOT, ctx=None):
     template = html_template(ctx.template)
     outputs = {folder / SILHOUETTE: silhouette_svg()}
     cards = []
-    records = closed_records(ctx)
+    records, shots = closed_card_feeds(ctx)
     for player in ctx.registry["players"]:
-        data = card_data(ctx, player, records.get(player["registry_id"], ()))
+        data = card_data(ctx, player, records.get(player["registry_id"], ()), shots.get(player["registry_id"], ()))
         cards.append(data)
         outputs[folder / f'{data["id"]}.md'] = markdown_card(ctx, data)
         outputs[folder / f'{data["id"]}.html'] = html_card(ctx, data, template)

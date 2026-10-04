@@ -5,6 +5,7 @@ import hashlib
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from runtime.era import environment_for, rules_for
 from runtime.game_requests import _club
@@ -175,10 +176,28 @@ class StatisticalKernelTests(unittest.TestCase):
             self.assertAlmostEqual(t["tpm"]/t["tpa"], accuracy, delta=.03)
 
     def test_free_throw_drawing_and_accuracy_are_independent(self):
-        for ftr, accuracy in ((.2, .52), (.7, .52), (.7, .9)):
-            t, _ = self.sample(self.team("H", free_throw_attempt_rate=ftr, free_throw_pct=accuracy))
-            self.assertAlmostEqual(t["fta"]/t["fga"], ftr, delta=.04)
-            self.assertAlmostEqual(t["ftm"]/t["fta"], accuracy, delta=.03)
+        observed = {}
+        # Isolate ordinary foul drawing from the score-dependent intentional
+        # fouls. Their calibration deduction must also be disabled: an extreme
+        # FTR=.7 club often wins comfortably and never receives the late fouls
+        # that restore the league-average deduction (ordinary FTR is then .660).
+        # A fixed 500-game sample supplies roughly 35,000+ FGA and 8,000+ FTA
+        # per condition. The tolerances are about four sampling standard errors
+        # at the least precise condition, with direct independence checks below.
+        with patch("runtime.kernel.FOUL_WINDOWS", ()), patch("runtime.kernel.LATE_FOUL_FTA", 0):
+            for ftr in (.2, .7):
+                for accuracy in (.52, .9):
+                    with self.subTest(ftr=ftr, accuracy=accuracy):
+                        t, _ = self.sample(self.team("H", free_throw_attempt_rate=ftr,
+                                                   free_throw_pct=accuracy), n=500)
+                        drawing, shooting = t["fta"] / t["fga"], t["ftm"] / t["fta"]
+                        observed[ftr, accuracy] = drawing, shooting
+                        self.assertAlmostEqual(drawing, ftr, delta=.03)
+                        self.assertAlmostEqual(shooting, accuracy, delta=.025)
+        for ftr in (.2, .7):
+            self.assertAlmostEqual(observed[ftr, .52][0], observed[ftr, .9][0], delta=.04)
+        for accuracy in (.52, .9):
+            self.assertAlmostEqual(observed[.2, accuracy][1], observed[.7, accuracy][1], delta=.03)
 
     def test_offensive_and_defensive_rebound_allocations_differ(self):
         team = self.team("H")

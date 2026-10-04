@@ -1,4 +1,4 @@
-# Engine model and calibration (kernel 2003.6)
+# Engine model and calibration (kernel 2003.7)
 
 What the possession engine does beyond the per-play rates, why, and how it was checked. Code: `runtime/kernel.py`, `runtime/rotations.py`. Check: `python scripts/engine_diagnostics.py 4 --check --summary-json /tmp/engine-summary.json`, plus `--defense-test` and `--home-test` (analysis only: made-up entropy, nothing written to the career). Reports and optional JSON contain league aggregates, never player results for the career or front office.
 
@@ -17,7 +17,17 @@ Players without DBPM count as average defenders (0): veteran and rookie estimate
 
 Kernel 2003.6 divides the shooting part of each player's existing defensive value into interior and perimeter channels. Block rate and steal rate are each measured relative to their league baseline. The specialization tilt is `(blocks - steals) / (blocks + steals + 2)`; the two added baseline events shrink extreme small-sample specialization. Interior and perimeter weights are `1 + tilt` and `1 - tilt`, normalized by the league's two-point and three-point shot values, including and-ones and offensive-rebound continuations. Thus specialization redistributes the shooting budget rather than adding more defense. The turnover budget and rebound probabilities retain their own rates.
 
-Interior means **all two-point shots** here. There is no recorded rim/midrange distinction, and this approximation does not create shot locations. Blocks and steals cannot give a player with zero defensive value new defensive ability. There are still no individual matchups, size mismatches, or lineup chemistry.
+Interior means **all two-point shots** in the defensive calculation. Kernel 2003.7 records distinct shooting locations, but this defensive approximation still applies the interior channel to every two-point zone. Blocks and steals cannot give a player with zero defensive value new defensive ability. There are still no individual matchups, size mismatches, or lineup chemistry.
+
+## Spatial shooting and live charts (kernel 2003.7)
+
+Every field-goal attempt selects a location before resolving its outcome. The six native source categories are 0–3 feet, 3–10 feet, 10–16 feet, 16 feet to the three-point line, corner three and arc three. The [2002–03 spatial source](shot_environment_sources.md) supplies league attempt shares and efficiencies; it is separate from the existing league environment and player profiles. Missing individual spatial profiles use the same league shape, conditioned on each player's own two-/three-point attempt share and ability. No historical Wade NBA statistics enter this model.
+
+The model shifts the zone make probabilities together until their attempt-weighted mean equals the existing possession's make probability. When a probability reaches zero or one, the remaining zones absorb the difference. Usage, passing, transition, defense and late-clock effects therefore retain their previous expected shooting value. Locations are sampled within legal court regions using explicit geometric assumptions: these are simulated coordinates, not historical tracking observations. The source distance bands are not interchangeable with the chart's geometric paint and distance regions.
+
+The immutable result contains complete `shot_tracking` provenance and a `shots` array: stable ID, player, side, period, remaining clock, coordinates, native zone, shot value, make/miss and transition flag. A missed shooting-foul trip is not an FGA; a blocked FGA is a recorded miss. Every made/missed two-/three-point bucket reconciles with the player and team boxes. The collector and chart adapters reject malformed or incomplete feeds. The chart reads only closed results and labels the locations as simulated engine events.
+
+Old games remain without spatial data. A separate **Tracked games only** selection aggregates only complete tracked games, with its own dates, appearances, attempts and rates. Full-period totals retain untracked games and their visible coverage gaps. Both Wade's card and league player cards use this rule. The [spatial calibration report](spatial_calibration.md) records the aggregate checks; diagnostics never write career results.
 
 ## Usage, passing and transition (kernel 2003.6)
 
@@ -51,7 +61,7 @@ Explicit requests may mark five staff starters. The engine records `started` fro
 
 ## Engine upgrades and closed games
 
-Kernel 2003.6 adds result fields while retaining schema 1. For a stored game, the service rebuilds and checks all dated inputs under that result's original kernel version, then serves the stored result verbatim. New optional starter inputs are absent from historical packets unless explicitly supplied. Editing an already played request still fails its journal hash check. An old journal entry without a saved result fails closed across a kernel change; it must not be silently redrawn under the new rules.
+Kernel 2003.7 retains schema 1 and freezes the full spatial environment in new game packets. The result identifies that configuration by its canonical SHA-256. For a stored game, the service selects the original kernel's input schema before loading additional sources, checks its original packet and serves the stored result verbatim. Pre-spatial packets contain no spatial environment; later data cannot change their hashes. Optional starter inputs remain absent from historical packets unless explicitly supplied. Editing an already played request or its frozen spatial inputs still fails the journal hash check. An old journal entry without a saved result fails closed across a kernel change; it must not be silently redrawn under new rules.
 
 ## Late game (problem E4)
 

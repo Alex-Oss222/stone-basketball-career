@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "model_version": "spatial-2003.1",
+  "league": "NBA",
+  "season": "2002-03",
+  "kind": "league_shot_environment",
+  "purpose": "Prior-season league spatial shape for 2003-04, conditioned on each simulated player's own two- and three-point rates. No historical Wade NBA statistics or individual spatial ability are imported.",
+  "published_after": "2003-04-16",
+  "publication_gate_basis": "Same completed-prior-regular-season cutoff as nba_2002_03_league_environment.json. This is an engine availability gate after the 2002-03 regular season, not a claimed archival publication timestamp for the later retrieved CSV.",
+  "player_profile_policy": "league_prior_conditioned_on_player_two_three_rates",
+  "count_kind": "estimates reconstructed from rounded source shares and percentages; not observed integer shot counts",
+  "zones": [
+    {
+      "id": "distance_0_3",
+      "shot_value": 2,
+      "attempt_share_within_value": 0.3496776048892334,
+      "fg_pct": 0.602761142913199,
+      "estimated_attempts": 54965.294,
+      "estimated_makes": 33130.943432
+    },
+    {
+      "id": "distance_3_10",
+      "shot_value": 2,
+      "attempt_share_within_value": 0.18305070788644523,
+      "fg_pct": 0.3838084398875297,
+      "estimated_attempts": 28773.464,
+      "estimated_makes": 11043.498328
+    },
+    {
+      "id": "distance_10_16",
+      "shot_value": 2,
+      "attempt_share_within_value": 0.17848628965754795,
+      "fg_pct": 0.38806917300013294,
+      "estimated_attempts": 28055.99,
+      "estimated_makes": 10887.664837
+    },
+    {
+      "id": "distance_16_three",
+      "shot_value": 2,
+      "attempt_share_within_value": 0.28878539756677346,
+      "fg_pct": 0.38932365894504395,
+      "estimated_attempts": 45393.74,
+      "estimated_makes": 17672.85695
+    },
+    {
+      "id": "corner_three",
+      "shot_value": 3,
+      "attempt_share_within_value": 0.25700730407882677,
+      "fg_pct": 0.3688310109210902,
+      "estimated_attempts": 8972.639,
+      "estimated_makes": 3309.387513
+    },
+    {
+      "id": "arc_three",
+      "shot_value": 3,
+      "attempt_share_within_value": 0.7429926959211732,
+      "fg_pct": 0.3427460100886834,
+      "estimated_attempts": 25939.361,
+      "estimated_makes": 8890.612487
+    }
+  ],
+  "two_point_fg_pct": 0.46272449383825104,
+  "three_point_fg_pct": 0.3494500458295142,
+  "league_totals": {
+    "fga": 192109,
+    "fg": 84937,
+    "x2pa": 157197,
+    "x2p": 72737,
+    "x3pa": 34912,
+    "x3p": 12200
+  },
+  "coverage": {
+    "source_rows_per_table": 483,
+    "unique_full_season_players": 428,
+    "aggregated_trade_rows_used": 27,
+    "reconstructed_two_point_attempts": 157188.488,
+    "reconstructed_two_point_makes": 72734.963547,
+    "two_point_attempt_rounding_residual": 8.512,
+    "two_point_make_rounding_residual": 2.036453
+  },
+  "provenance": {
+    "provider": "Basketball-Reference player shooting and totals, via the pinned sumitrodatta/nba-alt-awards mirror",
+    "reference_url": "https://www.basketball-reference.com/leagues/NBA_2003_shooting.html",
+    "retrieved_on": "2026-10-03",
+    "revision": "7f9b3375439b79cb4e62f66ae7d12160275c2863",
+    "sources": [
+      {
+        "table": "shooting",
+        "url": "https://raw.githubusercontent.com/sumitrodatta/nba-alt-awards/7f9b3375439b79cb4e62f66ae7d12160275c2863/2025/Data/Player%20Shooting.csv",
+        "upstream_sha256": "e7d16e3a1bc2fcb9bb07ee89310b438f27e12b25afa53f4e22c67c739ec08c5f",
+        "snapshot_file": "library/2003/league/sources/nba_2002_03_player_shooting.csv",
+        "snapshot_sha256": "fae8dcc21e67302e0b112d993efdceabfe6cb576ef7620b36d41a345b69d579b"
+      },
+      {
+        "table": "totals",
+        "url": "https://raw.githubusercontent.com/sumitrodatta/nba-alt-awards/7f9b3375439b79cb4e62f66ae7d12160275c2863/2025/Data/Player%20Totals.csv",
+        "upstream_sha256": "3406548a8be421dfd248edceb7efa8a7eba02aaf5eae26d1121e7f2484068cea",
+        "snapshot_file": "library/2003/league/sources/nba_2002_03_player_totals.csv",
+        "snapshot_sha256": "2971a07163924f75133d9c2daa16ffa040f12a07cad1329bbe35c3d7cfe88ae5"
+      }
+    ],
+    "snapshot_rule": "All source columns, season=2003 and lg=NBA rows only; original order; UTF-8 CSV with LF line endings.",
+    "method": [
+      "Select TOT once for traded players and the sole team row for everyone else; join shooting to totals by player_id with matching season, seas_id, player, team and league.",
+      "Distance-band attempts = total FGA times source percent_fga_from_band_range; band makes = estimated attempts times source fg_percent_from_band_range.",
+      "Corner-three attempts = exact total 3PA times percent_corner_3s_of_3pa; makes = estimated attempts times corner_3_point_percent.",
+      "Arc-three estimates are exact total 3PA and 3PM minus corner estimates, including the source's non-corner heaves.",
+      "Normalize the four reconstructed two-point attempt weights within two-pointers and the two three-point weights within three-pointers; do not replace the player's existing 3P attempt rate or aggregate two-/three-point ability.",
+      "Use the reconstructed weighted two-point FG percentage as the spatial two-point baseline so relative zone effects cancel in expectation despite rounded source percentages."
+    ]
+  },
+  "geometry_assumptions": [
+    "Distance bands 0-3, 3-10, 10-16 and 16 feet to the three-point line are the measured source categories. They are not measured restricted-area or paint categories.",
+    "No lateral, within-band radial, handedness, shot-type or exact-coordinate observations are available in these sources.",
+    "Two-point coordinates may be sampled with area-uniform radius inside the native distance band and uniform front-half angle, rejecting positions outside the court or two-point region. These are provisional structural choices, not measured tendencies.",
+    "Corner-three coordinates may be sampled uniformly inside the legal corner strips; arc-three coordinates may use area-uniform radius from 23.75 to 28 feet with court and corner rejection. The 28-foot cutoff and within-region distributions are provisional assumptions; deep heaves are not individually reconstructed.",
+    "Corner-three source labels are mapped to the court's straight three-point-line regions. The source does not supply exact coordinates to independently verify this boundary for each attempt.",
+    "Physical reporting zones are derived from simulated coordinates. Simulated coordinates never become historical tracking observations or evidence about an individual player's real shot-location distribution."
+  ]
+}

@@ -391,7 +391,18 @@
         "cutoff": "2003-11-11"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 7,
+        "total_appearances": 7,
+        "start": null,
+        "end": null,
+        "excluded_games": 7
+      }
     },
     {
       "id": "regular-2003-04-month-2003-10-01",
@@ -677,7 +688,18 @@
         "cutoff": "2003-10-31"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 3,
+        "total_appearances": 3,
+        "start": null,
+        "end": null,
+        "excluded_games": 3
+      }
     },
     {
       "id": "regular-2003-04-week-2003-10-22",
@@ -963,7 +985,18 @@
         "cutoff": "2003-10-31"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 3,
+        "total_appearances": 3,
+        "start": null,
+        "end": null,
+        "excluded_games": 3
+      }
     },
     {
       "id": "regular-2003-04-month-2003-11-01",
@@ -1259,7 +1292,18 @@
         "cutoff": "2003-11-11"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 4,
+        "total_appearances": 4,
+        "start": null,
+        "end": null,
+        "excluded_games": 4
+      }
     },
     {
       "id": "regular-2003-04-week-2003-11-01",
@@ -1535,7 +1579,18 @@
         "cutoff": "2003-11-07"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 2,
+        "total_appearances": 2,
+        "start": null,
+        "end": null,
+        "excluded_games": 2
+      }
     },
     {
       "id": "regular-2003-04-week-2003-11-08",
@@ -1811,7 +1866,18 @@
         "cutoff": "2003-11-11"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 2,
+        "total_appearances": 2,
+        "start": null,
+        "end": null,
+        "excluded_games": 2
+      }
     },
     {
       "id": "regular-2003-04-game-616c7182825da61e",
@@ -2077,7 +2143,18 @@
         "cutoff": "2003-10-28"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": 1,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "regular-2003-04-game-73a879a1fdce093c",
@@ -2343,7 +2420,18 @@
         "cutoff": "2003-10-29"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": 1,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "regular-2003-04-game-03fe73ce96501a01",
@@ -2609,7 +2697,18 @@
         "cutoff": "2003-10-31"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": 1,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "regular-2003-04-game-84cfd3f7e8c8f2ba",
@@ -2875,7 +2974,18 @@
         "cutoff": "2003-11-03"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": 1,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "regular-2003-04-game-3364a71a4da0183b",
@@ -3141,7 +3251,18 @@
         "cutoff": "2003-11-04"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": 1,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "regular-2003-04-game-1c0cb7432ed437f5",
@@ -3407,7 +3528,18 @@
         "cutoff": "2003-11-08"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": 1,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "regular-2003-04-game-9141d2684bfed3ea",
@@ -3673,7 +3805,18 @@
         "cutoff": "2003-11-11"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": 1,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "preseason-2003-04-season",
@@ -4000,7 +4143,18 @@
         "cutoff": "2003-11-11"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 7,
+        "total_appearances": null,
+        "start": null,
+        "end": null,
+        "excluded_games": 7
+      }
     },
     {
       "id": "preseason-2003-04-month-2003-10-01",
@@ -4327,7 +4481,18 @@
         "cutoff": "2003-10-31"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 7,
+        "total_appearances": null,
+        "start": null,
+        "end": null,
+        "excluded_games": 7
+      }
     },
     {
       "id": "preseason-2003-04-week-2003-10-01",
@@ -4593,7 +4758,18 @@
         "cutoff": "2003-10-07"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": 1,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "preseason-2003-04-week-2003-10-08",
@@ -4880,7 +5056,18 @@
         "cutoff": "2003-10-14"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 3,
+        "total_appearances": null,
+        "start": null,
+        "end": null,
+        "excluded_games": 3
+      }
     },
     {
       "id": "preseason-2003-04-week-2003-10-15",
@@ -5166,7 +5353,18 @@
         "cutoff": "2003-10-21"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 3,
+        "total_appearances": null,
+        "start": null,
+        "end": null,
+        "excluded_games": 3
+      }
     },
     {
       "id": "preseason-2003-04-game-f28cb3568b17eb3f",
@@ -5432,7 +5630,18 @@
         "cutoff": "2003-10-07"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": 1,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "preseason-2003-04-game-4ffcd3e3ba482927",
@@ -5698,7 +5907,18 @@
         "cutoff": "2003-10-10"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": 1,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "preseason-2003-04-game-c311f13397385e75",
@@ -5964,7 +6184,18 @@
         "cutoff": "2003-10-11"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": null,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "preseason-2003-04-game-1452cf56f5625671",
@@ -6230,7 +6461,18 @@
         "cutoff": "2003-10-14"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": null,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "preseason-2003-04-game-ed5da9cc30eb1915",
@@ -6496,7 +6738,18 @@
         "cutoff": "2003-10-16"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": null,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "preseason-2003-04-game-67b6e9ec7d5b61df",
@@ -6762,7 +7015,18 @@
         "cutoff": "2003-10-17"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": null,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     },
     {
       "id": "preseason-2003-04-game-d8df0ac9fa0b03b9",
@@ -7028,7 +7292,18 @@
         "cutoff": "2003-10-21"
       },
       "geometry_supported": true,
-      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
+      "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
+      "shot_source_type": "unavailable",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": null,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
     }
   ],
   "awards": {

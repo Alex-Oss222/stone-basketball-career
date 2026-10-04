@@ -1,7 +1,7 @@
 """Live Shooting, Contract and Awards views from dated career evidence.
 
 No preview fixture or historical player data is imported here. Coordinates are
-read only from an explicitly declared, dated shot_file beside a closed note.
+read from a closed engine result or a declared, dated external shot_file.
 The module returns artifacts; it never writes career state or runs the engine.
 """
 from __future__ import annotations
@@ -18,6 +18,7 @@ import re
 from .career_stats import aggregate, identity_at, metadata, select
 from .season_rules import month_week
 from .shot_chart import NBA_GEOMETRY, ZONES, aggregate_shots
+from .shot_events import ENGINE_SHOT_LABEL, build_tracking_cohort, engine_result_shots, shot_source_type
 
 GENERATED = "<!-- Generated from closed career records by scripts/update_player_reports.py. -->\n"
 NBA_SHOT_COMPETITIONS = {"regular", "preseason", "playoff", "play_in", "nba_cup_championship"}
@@ -96,7 +97,7 @@ def earned_annual_awards(awards, season, cutoff):
 
 
 def load_recorded_shots(player, identity, records, clock):
-    """Read only declared adjacent shot files for matching closed player boxes.
+    """Read immutable engine events or declared feeds for closed player boxes.
 
     Envelope schema: schema_version=1, record_type='recorded_player_shots',
     player_id, event_id, date, season, competition, recorded_on,
@@ -106,13 +107,48 @@ def load_recorded_shots(player, identity, records, clock):
     Missing feeds return no coordinates. Invalid or synthetic feeds fail closed.
     """
     shots, sources = [], {}
+    aliases = set(identity.get("aliases", ())) | {identity["player_id"]}
     for r in records:
         if r.get("status") != "played":
             continue
         if r.get("date", "") > clock:
             raise ValueError("shot source game is after the career cutoff")
         note = Path(r["note"])
-        declaration = metadata(note).get("shot_file")
+        meta = metadata(note)
+        declaration = meta.get("shot_file")
+        source = r.get("source")
+        if source:
+            path = Path(source).resolve()
+            declared = (note.parent / (meta.get("result_file") or "")).resolve()
+            if (path != declared or path.parent != note.parent.resolve() or not path.is_file()
+                    or not path.is_relative_to(player.resolve()) or meta.get("status") != "played"):
+                raise ValueError("engine shot source must be the adjacent result declared by its closed game note")
+            raw = json.loads(path.read_text(encoding="utf-8"))
+            if (raw.get("event_id") != r["event_id"] or raw.get("game_date") != r["date"]
+                    or meta.get("date") != r["date"] or raw.get("season") != r["season"]
+                    or (meta.get("competition") and raw.get("game_type") != meta["competition"])
+                    or (meta.get("event_id") and raw.get("event_id") != meta["event_id"])):
+                raise ValueError("engine shot source disagrees with its closed game")
+            # Validate all players before selecting this player's events. A corrupt
+            # opponent feed must not be hidden by a report's player filter.
+            events = engine_result_shots(raw, source_ref=path.relative_to(player.resolve()).as_posix())
+            if "shot_tracking" in raw:
+                if declaration:
+                    raise ValueError("a game cannot combine engine locations and a declared external shot feed")
+                if r.get("competition") not in NBA_SHOT_COMPETITIONS:
+                    raise ValueError("this competition requires a separately verified shot geometry adapter")
+                matches = [(side, row["player_id"]) for side in ("home", "away")
+                           for row in raw["player_stats"][side] if row["player_id"] in aliases]
+                if len(matches) > 1 or (r.get("line") is not None and len(matches) != 1):
+                    raise ValueError("engine shot source has ambiguous or missing player identity")
+                if matches and r.get("team") and raw[matches[0][0]] != r["team"]:
+                    raise ValueError("engine shot source player side disagrees with the closed game team")
+                game_shots = [s for s in events if (s["side"], s["player_id"]) in matches]
+                aggregate_shots([r], game_shots)
+                shots.extend(game_shots)
+                sources[r["event_id"]] = dict(path=path, label=ENGINE_SHOT_LABEL,
+                    recorded_on=r["date"], source_type="engine_generated")
+                continue
         if not declaration:
             continue
         if r.get("competition") not in NBA_SHOT_COMPETITIONS:
@@ -145,11 +181,13 @@ def load_recorded_shots(player, identity, records, clock):
             if any(key in shot and shot[key] != value for key, value in (("game_id", r["event_id"]), ("date", r["date"]))):
                 raise ValueError("shot record date or event disagrees with its envelope")
             game_shots.append({**shot, "game_id": r["event_id"], "date": r["date"],
-                               "source_ref": path.relative_to(player.resolve()).as_posix()})
+                               "source_ref": path.relative_to(player.resolve()).as_posix(),
+                               "source_type": raw["source_type"]})
         # Enforces type, geometry, made/missed buckets, DNP and box reconciliation.
         aggregate_shots([r], game_shots)
         shots.extend(game_shots)
-        sources[r["event_id"]] = dict(path=path, label=raw["source_label"], recorded_on=recorded_on)
+        sources[r["event_id"]] = dict(path=path, label=raw["source_label"], recorded_on=recorded_on,
+                                     source_type=raw["source_type"])
     ids = [s["shot_id"] for s in shots]
     if len(ids) != len(set(ids)):
         raise ValueError("recorded shot IDs must be unique across source games")
@@ -175,16 +213,22 @@ def player_cards_data(player, identity, records, awards, clock):
         summary = aggregate(rows)
         ids = {r["event_id"] for r in rows}
         current_shots = [s for s in shots if s["game_id"] in ids]
+        current_sources = [{"shot_source_type": source["source_type"]}
+                           for event, source in shot_sources.items() if event in ids]
         shooting = aggregate_shots(rows, current_shots)
         competition_label = COMPETITIONS.get(competition, competition)
         if not rows:
             source_note = "No closed games in this competition at the current career checkpoint. No appearance or shot sample is implied."
         elif competition not in NBA_SHOT_COMPETITIONS:
             source_note = "Box scores are available separately. This competition has no verified court-geometry adapter; no NBA shot locations are inferred."
-        elif not current_shots:
+        elif not current_sources:
             source_note = "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist."
         else:
-            source_note = "Shot locations come only from the declared recorded shot files linked with each closed source game. Partial feeds keep complete-period location rates unavailable."
+            source_kind = shot_source_type(current_shots, current_sources)
+            source_note = (ENGINE_SHOT_LABEL + " come from the original closed game results. " if source_kind == "engine_generated" else
+                "Locations combine simulated engine events and separately recorded shot files. " if source_kind == "mixed" else
+                "Shot locations come only from the declared recorded shot files linked with each closed source game. ")
+            source_note += "Partial feeds keep complete-period location rates unavailable."
         source_games = []
         for r in rows:
             item = dict(id=r["event_id"], date=r["date"], opponent=r["opponent"], status=r["status"],
@@ -193,13 +237,16 @@ def player_cards_data(player, identity, records, awards, clock):
                 item["result_href"] = relative(page, r["source"])
             if r["event_id"] in shot_sources:
                 item["shot_href"] = relative(page, shot_sources[r["event_id"]]["path"])
+                item["shot_source_type"] = shot_sources[r["event_id"]]["source_type"]
+                item["shot_source_label"] = shot_sources[r["event_id"]]["label"]
             source_games.append(item)
         periods.append(dict(id=pid, label=label, kind=kind, season=season, competition=competition,
             competition_label=competition_label, start=start, end=end, cutoff=end, games=summary["closed"],
             appearances=summary["gp"], dnp=summary["dnp"], box=summary["totals"], rates=summary["rates"],
             pg=summary["pg"], per36=summary["per36"], source_games=source_games, shots=current_shots, shooting=shooting,
             identity=identity_payload(identity, end), geometry_supported=competition in NBA_SHOT_COMPETITIONS,
-            source_note=source_note))
+            source_note=source_note, shot_source_type=shot_source_type(current_shots, source_games),
+            **build_tracking_cohort(rows, current_shots, tracked_game_ids=set(shot_sources), source_games=source_games)))
 
     for competition, season in groups:
         rows = select(closed, competition=competition, season=season)
@@ -238,7 +285,7 @@ def player_cards_data(player, identity, records, awards, clock):
             notice=f"Only earned annual awards announced on or before {cutoff} appear. Weekly, monthly and unclassified recognition remains in the full award register."))
     default = period_id("regular", seasons[-1])
     return dict(schema_version=1, mode="live", identity=identity_payload(identity, clock), clock=clock,
-        notice=f"Career evidence through {clock}. Closed games, recorded locations and earned awards only; no projected results or synthetic shot locations.",
+        notice=f"Career evidence through {clock}. Shot locations are recorded simulation events or separately sourced tracking; older games without locations remain untracked.",
         links=dict(stats="README.md", shooting="Shooting.md", awards="Awards.md",
                    definitions=relative(page, Path(__file__).resolve().parents[1] / "docs/player_statistics.md"),
                    milestones="../Milestones/index.html"),
@@ -303,7 +350,8 @@ def build_player_cards(root, player, identity, records, awards, clock, *, contra
             shooting += _table(["Date", "Opponent", "Participation", "Closed game", "Player box", "Shot source"], [[
                 g["date"], g["opponent"], g["appearance"], f'[Game]({g["href"]})',
                 f'[Result]({g["result_href"]})' if g.get("result_href") else "Not available",
-                f'[Recorded shots]({g["shot_href"]})' if g.get("shot_href") else "Not recorded"] for g in p["source_games"]])
+                (f'[{ENGINE_SHOT_LABEL if g.get("shot_source_type") == "engine_generated" else "Recorded shots"}]({g["shot_href"]})'
+                 if g.get("shot_href") else "Not recorded")] for g in p["source_games"]])
         else:
             shooting += "No closed source games in this period. Zero appearances do not establish a 0.0% shooting percentage.\n\n"
     outputs[folder / "Shooting.md"] = shooting

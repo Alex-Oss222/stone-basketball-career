@@ -87,7 +87,7 @@ As of **2003-11-11**: 8 closed games feed this card. Per-game columns use the re
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regular season. Coverage: **unavailable**; 0 located attempts, 0 unlocated, 0 outside the view, 74 missing. Zone rates stay N/A until located attempts exist; nothing is estimated onto the court.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regular season. Coverage: **unavailable**; 0 located attempts, 0 unlocated, 0 outside the view, 74 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
