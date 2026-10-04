@@ -9,7 +9,7 @@ Through 2003-12-15, from closed simulated results only (`runtime/standings.py`).
 | 1 | Detroit Pistons | 19 | 5 | .792 | — |
 | 2 | New Jersey Nets | 17 | 6 | .739 | 1.5 |
 | 3 | Indiana Pacers | 18 | 7 | .720 | 1.5 |
-| 4 | New Orleans Hornets | 14 | 10 | .583 | 5 |
+| 4 | New Orleans Hornets | 14 | 11 | .560 | 5.5 |
 | 5 | Milwaukee Bucks | 13 | 11 | .542 | 6 |
 | 6 | Cleveland Cavaliers | 10 | 14 | .417 | 9 |
 | 7 | Chicago Bulls | 9 | 13 | .409 | 9 |
@@ -37,7 +37,7 @@ Through 2003-12-15, from closed simulated results only (`runtime/standings.py`).
 | 9 | Memphis Grizzlies | 11 | 12 | .478 | 7 |
 | 10 | Utah Jazz | 11 | 12 | .478 | 7 |
 | 11 | Denver Nuggets | 10 | 13 | .435 | 8 |
-| 12 | Portland Trail Blazers | 8 | 13 | .381 | 9 |
-| 13 | Los Angeles Clippers | 7 | 12 | .368 | 9 |
+| 12 | Los Angeles Clippers | 8 | 12 | .400 | 8.5 |
+| 13 | Portland Trail Blazers | 8 | 13 | .381 | 9 |
 | 14 | Phoenix Suns | 8 | 16 | .333 | 10.5 |
 
