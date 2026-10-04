@@ -75,7 +75,6 @@ def disturbed(season=SEASON, root=ROOT):
 STATUS_PATH = Path("library/2003/league/nba_2003_04_unsigned_status.json")
 EXPIRING_PATH = Path("library/2003/league/nba_2003_expiring_contracts.json")
 STATS_PATH = Path("library/2003/league/nba_2002_03_player_stats.json")
-STATUS_FRESH_DAYS = 30               # a status snapshot is read for this long after its date (players move abroad, retire)
 
 
 def pool(day, season=SEASON, root=ROOT):
@@ -88,12 +87,11 @@ def pool(day, season=SEASON, root=ROOT):
     status_file = root / STATUS_PATH
     if not status_file.is_file():
         return {}
-    from datetime import date, timedelta
-    snapshot = json.loads(status_file.read_text(encoding="utf-8"))
-    if date.fromisoformat(day) > date.fromisoformat(snapshot["as_of"]) + timedelta(days=STATUS_FRESH_DAYS):
-        raise ValueError(f"the unsigned-player statuses are dated {snapshot['as_of']}; research a snapshot within "
-                         f"{STATUS_FRESH_DAYS} days of {day} before a club signs from the pool")
-    status = snapshot["players"]
+    from .league_market import _status_on
+    try:
+        status = _status_on(day, root)          # the newest researched snapshot within its freshness window
+    except ValueError as exc:
+        raise ValueError(f"{exc}; research a snapshot before a club signs from the pool") from exc
     expiring = {p["bbr_id"]: p for p in json.loads((root / EXPIRING_PATH).read_text(encoding="utf-8"))["players"] if p.get("bbr_id")}
     stats = {r["bbr_id"]: r for r in json.loads((root / STATS_PATH).read_text(encoding="utf-8"))["records"]}
     rosters = load_rosters(season, root)

@@ -65,7 +65,7 @@ class ReplacementTests(unittest.TestCase):
 
     def test_a_stale_status_snapshot_fails_closed(self):
         with self.assertRaisesRegex(ValueError, "research a snapshot"):
-            R.pool("2004-02-01", "2003-04", self.root)
+            R.pool("2004-05-15", "2003-04", self.root)
 
     def test_the_live_career_has_no_disturbed_club_yet(self):
         self.assertEqual(R.replacement_errors(ROOT), [])

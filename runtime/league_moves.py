@@ -143,9 +143,11 @@ def simulated_club(club, game_date, season=SEASON, root=ROOT, start=None):
     roles = season_roles(season, root)
     at_start = clubs_at_activation(season, root, start)
     holder = dict(at_start)
-    for e in sorted(read(season, root)["entries"], key=lambda e: e["date"]):
+    for e in sorted(read(season, root)["entries"], key=lambda e: e["date"]):     # stable: a day's moves keep their order
         if e["date"] <= game_date:
-            holder[e["bbr_id"]] = e["to"]
+            holder[e["bbr_id"]] = e["to"]                                         # None: waived, released, contract ended
+            if e.get("role") and e["bbr_id"] not in roles:
+                roles[e["bbr_id"]] = e["role"]                                    # a signed free agent's previous role
     players = [dict(roles[b], span=[0.0, 1.0], window=[0.0, 1.0]) for b, c in holder.items() if c == club and b in roles]
     players.sort(key=lambda p: -p["minutes"])
     return {"players": players}

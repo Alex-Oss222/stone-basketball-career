@@ -1,7 +1,7 @@
 """Symmetric league, phase 3: trades between two real clubs (docs/symmetric_league_design.md).
 
 Only while `league_book.active(date)`. Once a week (Mondays) up to the deadline, every pair of real clubs is
-searched for one-for-one swaps of rotation players that both clubs gain from on their own objectives:
+searched for deals of one or two rotation players for one that both clubs gain from on their own objectives:
 - values: `trades.Assets.player_value` split into this season and the future, weighted by each club's stance
   (`STANCE_WEIGHTS`), times its skill fit for the arriving player (`skill_fit.py`, the club's own needs);
 - legality: the 1999 salary rule (incoming at most 115% of outgoing plus $100,000, unless the club is under
@@ -25,10 +25,10 @@ ROOT = Path(__file__).resolve().parents[1]
 SEASON = "2003-04"
 DEADLINE = "2004-02-19"
 DRAWS = Path(f"career/Dwyane_Wade/{SEASON}/League/Trade_Draws")
-MAX_PER_WEEK = 1                     # judgement; calibrate in phase 5 against 2003-04 in-season trade volume
+MAX_PER_WEEK = 2                     # calibrated against 16 real trades from December 3 to the deadline (rules file)
 ROTATION_CANDIDATES = 9
 MATCH_PERCENT, MATCH_PLUS = 1.15, 100000
-MIN_MUTUAL_GAIN = 0.10              # a club changes its roster only for a clear gain on its own objective
+MIN_MUTUAL_GAIN = 0.06              # a club changes its roster only for a clear gain on its own objective (calibrated)
 STATUS_QUO = 1.15                   # judgement: a club values the player it has this much more than an equal arrival
 
 
@@ -55,13 +55,23 @@ class LeagueTradeDesk:
         self.rosters = {c: sorted(effective_roster(c, on, SEASON, root), key=lambda p: -(p["minutes"] / max(1, p["games"])))
                         for c in self.assets.contracts if c != MIAMI}
         self.payroll = {c: self.book.club(c)["payroll"] for c in self.rosters}
+        self._needs_cache, self._value_cache = {}, {}
 
     def _needs(self, club, without=None, adding=None):
-        held = [(p["bbr_id"], max(1.0, self.assets.valuation.value(p["bbr_id"]) or 1.0))
-                for p in self.rosters[club] if p["bbr_id"] != without]
-        return self.skills.needs(held)
+        key = (club, without)
+        if key not in self._needs_cache:
+            held = [(p["bbr_id"], max(1.0, self.assets.valuation.value(p["bbr_id"]) or 1.0))
+                    for p in self.rosters[club] if p["bbr_id"] != without]
+            self._needs_cache[key] = self.skills.needs(held)
+        return self._needs_cache[key]
 
     def value_to(self, club, bbr, own):
+        key = (club, bbr, own)
+        if key not in self._value_cache:
+            self._value_cache[key] = self._value_to(club, bbr, own)
+        return self._value_cache[key]
+
+    def _value_to(self, club, bbr, own):
         """The player's value to the club: stance-weighted now and future, times his skill fit for the club's
         needs without him (the same test for the player it has and the one it would get), and the status quo."""
         entry = self.contracts.get(bbr)
@@ -87,48 +97,64 @@ class LeagueTradeDesk:
         return in_salary <= out_salary * MATCH_PERCENT + MATCH_PLUS
 
     def proposals(self):
+        """Every legal deal of one or two rotation players for one, both clubs clearing MIN_MUTUAL_GAIN, best first."""
         clubs = sorted(self.rosters)
         found = []
         for i, a in enumerate(clubs):
             for b in clubs[i + 1:]:
-                for pa in self.rosters[a][:ROTATION_CANDIDATES]:
-                    for pb in self.rosters[b][:ROTATION_CANDIDATES]:
-                        row = self.evaluate(a, pa["bbr_id"], b, pb["bbr_id"])
+                ra = [p["bbr_id"] for p in self.rosters[a][:ROTATION_CANDIDATES]]
+                rb = [p["bbr_id"] for p in self.rosters[b][:ROTATION_CANDIDATES]]
+                packages_a = [[x] for x in ra] + [[x, y] for k, x in enumerate(ra) for y in ra[k + 1:]]
+                packages_b = [[x] for x in rb] + [[x, y] for k, x in enumerate(rb) for y in rb[k + 1:]]
+                for pa in packages_a:
+                    for pb in packages_b:
+                        if len(pa) + len(pb) > 3:
+                            continue                       # one or two for one
+                        row = self.evaluate(a, pa, b, pb)
                         if row:
                             found.append(row)
         found.sort(key=lambda r: (-min(r["gain"].values()), r["id"]))
         return found
 
-    def evaluate(self, a, a_bbr, b, b_bbr):
-        ca, cb = self.contracts.get(a_bbr), self.contracts.get(b_bbr)
-        if not ca or not cb:
+    def evaluate(self, a, a_out, b, b_out):
+        a_out, b_out = list(a_out) if isinstance(a_out, (list, tuple)) else [a_out], list(b_out) if isinstance(b_out, (list, tuple)) else [b_out]
+        ca, cb = [self.contracts.get(x) for x in a_out], [self.contracts.get(x) for x in b_out]
+        if not all(ca) or not all(cb):
             return None
-        sa, sb = int(ca["schedule"].get(SEASON) or 0), int(cb["schedule"].get(SEASON) or 0)
-        if not sa or not sb or not self.legal(a, sa, sb) or not self.legal(b, sb, sa):
+        sa = sum(int(c["schedule"].get(SEASON) or 0) for c in ca)
+        sb = sum(int(c["schedule"].get(SEASON) or 0) for c in cb)
+        if not all(int(c["schedule"].get(SEASON) or 0) for c in ca + cb) or not self.legal(a, sa, sb) or not self.legal(b, sb, sa):
             return None
-        a_out, a_in = self.value_to(a, a_bbr, own=True), self.value_to(a, b_bbr, own=False)
-        b_out, b_in = self.value_to(b, b_bbr, own=True), self.value_to(b, a_bbr, own=False)
-        if None in (a_out, a_in, b_out, b_in):
+        if len(self.rosters[a]) - len(a_out) + len(b_out) > 15 or len(self.rosters[b]) - len(b_out) + len(a_out) > 15:
             return None
+        vals = {}
+        for club, out, inc in ((a, a_out, b_out), (b, b_out, a_out)):
+            own = [self.value_to(club, x, own=True) for x in out]
+            got = [self.value_to(club, x, own=False) for x in inc]
+            if None in own or None in got:
+                return None
+            vals[club] = (Assets.effective([max(0.0, v) for v in got]) - sum(min(0.0, v) for v in got) * -1,
+                          Assets.effective([max(0.0, v) for v in own]) - sum(min(0.0, v) for v in own) * -1)
         rel = lambda after, before: (after - before) / max(abs(after), abs(before), 1.0)
-        gain = {a: round(rel(a_in, a_out), 3), b: round(rel(b_in, b_out), 3)}
+        gain = {club: round(rel(*vals[club]), 3) for club in (a, b)}
         if min(gain.values()) < max(ACCEPT_FLOOR, MIN_MUTUAL_GAIN):
             return None
-        untouchable = {a: self.assets.untouchable(a, ca), b: self.assets.untouchable(b, cb)}
         chances = {}
-        for club in (a, b):
-            p = acceptance({"objective_gain": gain[club], "untouchable": [("x", untouchable[club])] if untouchable[club] else []})
+        for club, out, cs in ((a, a_out, ca), (b, b_out, cb)):
+            held = [why for c in cs for why in [self.assets.untouchable(club, c)] if why]
+            p = acceptance({"objective_gain": gain[club], "untouchable": [("x", w) for w in held]})
             if p is None or p < SEARCH_MIN_ACCEPT:
                 return None
             chances[club] = p
-        return {"id": f"{SEASON}-league-trade-{self.on}-{a_bbr}-{b_bbr}", "date": self.on,
-                "clubs": [a, b], "a": {"club": a, "sends": ca["player"], "bbr_id": a_bbr, "salary": sa},
-                "b": {"club": b, "sends": cb["player"], "bbr_id": b_bbr, "salary": sb},
+        tag = "-".join(sorted(a_out + b_out))
+        return {"id": f"{SEASON}-league-trade-{self.on}-{tag}", "date": self.on, "clubs": [a, b],
+                "a": {"club": a, "sends": [c["player"] for c in ca], "bbr_ids": a_out, "salary": sa},
+                "b": {"club": b, "sends": [c["player"] for c in cb], "bbr_ids": b_out, "salary": sb},
                 "gain": gain, "accept": chances, "both": round(chances[a] * chances[b], 6)}
 
     def packet(self, row):
         return {"event_id": row["id"], "date": row["date"],
-                "question": f"Do {row['a']['club']} and {row['b']['club']} trade {row['a']['sends']} for {row['b']['sends']}?",
+                "question": f"Do {row['a']['club']} and {row['b']['club']} trade {' and '.join(row['a']['sends'])} for {' and '.join(row['b']['sends'])}?",
                 "decider": f"{row['a']['club']} and {row['b']['club']} front offices (engine draw)",
                 "options": {"accept": row["both"], "decline": round(1 - row["both"], 6)},
                 "basis": (f"gains on own objectives {row['gain']}; acceptance {row['accept']}; 1999 salary rule met; "
@@ -146,12 +172,21 @@ def weekly(root=ROOT, day=None, market=None):
     existing = sorted(draws.glob(f"*{day}*.decision.json"))
     written = []
     if not existing:
-        for row in desk.proposals()[:MAX_PER_WEEK]:
+        used = set()
+        chosen = []
+        for row in desk.proposals():
+            if len(chosen) >= MAX_PER_WEEK:
+                break
+            if used & (set(row["clubs"]) | set(row["a"]["bbr_ids"]) | set(row["b"]["bbr_ids"])):
+                continue                                   # a club or player is in at most one deal a week
+            used |= set(row["clubs"]) | set(row["a"]["bbr_ids"]) | set(row["b"]["bbr_ids"])
+            chosen.append(row)
+        for row in chosen:
             (draws / f"{row['id']}.decision.json").write_text(json.dumps(desk.packet(row), indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
             (draws / f"{row['id']}.proposal.json").write_text(json.dumps(row, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
             written.append(row["id"])
     moves = read_moves(SEASON, root)
-    done = {e["deal"] for e in moves["entries"]}
+    done = {e.get("deal") for e in moves["entries"]}
     executed = []
     for result in sorted(draws.glob("*.decision.result.json")):
         deal = result.name.replace(".decision.result.json", "")
@@ -159,9 +194,9 @@ def weekly(root=ROOT, day=None, market=None):
             continue
         row = json.loads((draws / f"{deal}.proposal.json").read_text(encoding="utf-8"))
         for side, other in (("a", "b"), ("b", "a")):
-            moves["entries"].append({"deal": deal, "date": row["date"], "kind": "trade", "player": row[side]["sends"],
-                                     "bbr_id": row[side]["bbr_id"], "from": row[side]["club"], "to": row[other]["club"],
-                                     "salary_2003_04": row[side]["salary"]})
+            for name, bbr in zip(row[side]["sends"], row[side]["bbr_ids"]):
+                moves["entries"].append({"deal": deal, "date": row["date"], "kind": "trade", "player": name, "bbr_id": bbr,
+                                         "from": row[side]["club"], "to": row[other]["club"]})
         executed.append(deal)
     if executed:
         path = root / ledger_path(SEASON)

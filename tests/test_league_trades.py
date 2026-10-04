@@ -52,8 +52,14 @@ class LeagueTradeTests(unittest.TestCase):
 
     def test_a_drawn_trade_moves_both_players_and_the_games_follow(self):
         written, executed = league_trades.weekly(self.root, WEEK)
-        self.assertEqual(len(written), league_trades.MAX_PER_WEEK)
+        self.assertTrue(1 <= len(written) <= league_trades.MAX_PER_WEEK)
         deal = written[0]
+        seen = set()
+        for w in written:                                                    # a club or player in one deal a week
+            row = json.loads((self.root / league_trades.DRAWS / f"{w}.proposal.json").read_text())
+            keys = set(row["clubs"]) | set(row["a"]["bbr_ids"]) | set(row["b"]["bbr_ids"])
+            self.assertFalse(keys & seen)
+            seen |= keys
         draws = self.root / league_trades.DRAWS
         proposal = json.loads((draws / f"{deal}.proposal.json").read_text())
         packet = json.loads((draws / f"{deal}.decision.json").read_text())
@@ -65,11 +71,14 @@ class LeagueTradeTests(unittest.TestCase):
         _, executed = league_trades.weekly(self.root, WEEK)
         self.assertEqual(executed, [deal])
         a, b = proposal["a"], proposal["b"]
-        self.assertEqual(league_moves.club_of(a["bbr_id"], WEEK, root=self.root), b["club"])
-        self.assertEqual(league_moves.club_of(b["bbr_id"], "2003-12-07", root=self.root), b["club"])  # before the date
+        for bbr in a["bbr_ids"]:
+            self.assertEqual(league_moves.club_of(bbr, WEEK, root=self.root), b["club"])
+        for bbr in b["bbr_ids"]:
+            self.assertEqual(league_moves.club_of(bbr, "2003-12-07", root=self.root), b["club"])  # before the date
         names = {p["player_id"] for p in league_moves.effective_roster(b["club"], WEEK, root=self.root)}
-        self.assertIn(a["sends"], names)
-        self.assertNotIn(b["sends"], names)
+        self.assertTrue(set(a["sends"]) <= names)
+        self.assertFalse(set(b["sends"]) & names)
+        self.assertLessEqual(len(a["sends"]) + len(b["sends"]), 3)
 
     def test_no_player_miami_holds_is_ever_traded_between_real_clubs(self):
         from runtime.rotations import miami_holds

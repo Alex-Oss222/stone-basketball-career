@@ -1,6 +1,6 @@
 # Symmetric league: design
 
-Status: phases 1, 3 and 4 built and tested, switched off; phase 2 partly built; phase 5 planned. The switch is the user's decision.
+Status: phases 1 to 4 built, tested and calibrated, switched off; phase 5 planned. The switch is the user's decision. Run `python scripts/league_day.py --write DATE` each day once it is on.
 
 ## What changes
 
@@ -19,8 +19,8 @@ Under option D the 28 other clubs follow history: real rosters, real minute shar
 | Phase | Scope | State |
 | --- | --- | --- |
 | 1. League cap book | Every club's dated contracts, payroll, cap room, tax position, exceptions used, roster count and owner ceiling (`runtime/league_book.py`) | built, read-only |
-| 2. League market | In-season free agents with researched availability, waivers, 10-day contracts from January 5 (1999 CBA), minimum and exception signings for every club | partly built: the pool and replacement signing (`club_replacements.py`) |
-| 3. AI-to-AI trades | `runtime/league_trades.py`: weekly (Mondays) to the February 19, 2004 deadline, one-for-one swaps of rotation players both clubs gain at least 10% from on their own objectives. Values are stance weights, skill fit (symmetric), a 1.15 status-quo premium, the whole contract's burden by cash weight, current form and post-contract control. Legality is the 1999 salary rule. Untouchables stay. At most one deal a week, one engine decision packet each | built |
+| 2. League market | `runtime/league_market.py`, rules from the researched `nba_1999_in_season_rules.json`: 12-15 under contract, 48-hour waivers claimed worst record first (cap room or a minimum contract), 10-day contracts from January 5 (two per player with a club, then rest of season or release), the January 7 guarantee cut, injury-depth signings, upgrades at fifteen. The pool is researched unsigned players (December 1 and monthly snapshots to April 1), players left off at activation, cleared waivers and ended 10-days | built |
+| 3. AI-to-AI trades | `runtime/league_trades.py`: weekly (Mondays) to the February 19, 2004 deadline, one or two rotation players for one, both clubs gaining at least 6% on their own objectives (star premium on packages); a club or player in at most one deal a week. Values are stance weights, skill fit (symmetric), a 1.15 status-quo premium, the whole contract's burden by cash weight, current form and post-contract control. Legality is the 1999 salary rule. Untouchables stay. At most two deals a week, one engine decision packet each | built |
 | 4. Simulated rosters | `runtime/league_moves.py`: each club starts from its real roster on the activation date. Real moves after it are not applied; `league_moves.json` moves apply from their dates; Miami's rules and the replacements apply on top. `game_requests._club`, `trades.dated_inventory` and the league desk all read it. Each player keeps his whole-season real role | built |
 | 5. Rollover | Draft for all clubs, summer free agency for all clubs, owner ceilings by market, calibration of league-wide transaction volume against 2002-04 history | planned |
 
@@ -28,13 +28,21 @@ Under option D the 28 other clubs follow history: real rosters, real minute shar
 
 `runtime/league_book.SYMMETRIC_FROM = None`. Setting a date turns the league symmetric from that date. Played games keep their inputs. A date mid-season is allowed only after phases 3 and 4 are complete.
 
-## Calibration targets (phase 5)
+## Activation roster
 
-These are season-level observations from 2002-03 and 2003-04, used only as targets for volume, never as decisions:
-- trades per season;
-- in-season signings;
-- waivers;
-- 10-day contracts.
+On the activation date each club holds the players whose real stint covers it. A real trade whose next stint begins within 8 games after the date is completed (the Rose-Davis trade of December 1, 2003). Each club keeps its fifteen largest real roles, never letting go of a rookie-scale contract, a 2003 first-round pick or a salary above the highest minimum. The others start as free agents in the market's pool.
+
+## Calibration (against `nba_1999_in_season_rules.json`, calibration_2003_04)
+
+These are volume targets only, never decisions.
+
+| Measure | 2003-04 real | Dry run, December 3 to April 14 (no new games) |
+| --- | ---: | ---: |
+| Trades, December 3 to February 19 | 16 | 8 (two-a-week cap, 6% mutual gain) |
+| 10-day contracts | about 60 | 62 |
+| Waivers, regular season | 55 | 13 |
+
+The dry run holds values and injuries fixed at December 1, so it understates trades: live form changes weekly and opens new deals. Waivers are low because the pool lacks the minor-league call-ups (CBA, NBDL) clubs churned through in 2003-04. Importing them needs researched records. Compare live volume after a month and adjust the constants prospectively.
 
 ## Shared valuation changes (live from December 1, 2003, for every club including Miami)
 
@@ -45,5 +53,5 @@ These are season-level observations from 2002-03 and 2003-04, used only as targe
 ## Known limits
 
 - The real rosters place a traded player's stints by order and games, not by date, so the activation roster can hold both halves of a real trade (Toronto on December 1 has Donyell Marshall but not Jalen Rose).
-- Phase 2 still lacks waivers, 10-day contracts and roster-minimum signings for every club. Phase 5 (draft, summer free agency for all clubs, calibration) is not built.
-- The free-agent pool reads a researched status snapshot (`nba_2003_04_unsigned_status.json`, as of December 1, 2003) and refuses dates more than 30 days past it.
+- Phase 5 (draft, summer free agency for all clubs) is not built; it is needed before the 2004 offseason.
+- The free-agent pool reads researched status snapshots (December 1, 2003 and the first of each month to April 1, 2004) and refuses a date more than 31 days past the newest.
