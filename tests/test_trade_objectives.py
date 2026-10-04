@@ -4,7 +4,8 @@ import unittest
 
 from runtime.gm import FrontOffice
 from runtime.market import Market
-from runtime.trades import (ACCEPT_FLOOR, SEARCH_MIN_ACCEPT, UNTOUCHABLE_MARGIN, TradeDesk, acceptance)
+from runtime.trades import (ACCEPT_FLOOR, INJURY_DISCOUNT, INJURY_FROM, SEARCH_MIN_ACCEPT, UNTOUCHABLE_MARGIN, TradeDesk,
+                            acceptance)
 
 ROOT = Path(__file__).resolve().parents[1]
 DAY = "2003-11-12"
@@ -61,6 +62,37 @@ class LiveDeskTests(unittest.TestCase):
             self.assertGreater(f["miami_gain"], 0)
             v = self.desk.valuation(f["trade"])
             self.assertTrue(not v["untouchable"] or v["objective_gain"] >= UNTOUCHABLE_MARGIN)
+
+
+
+class DistressAndProofTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.desk = TradeDesk(INJURY_FROM, FrontOffice(INJURY_FROM, Market(INJURY_FROM, ROOT), ROOT), ROOT)
+
+    def test_an_injured_player_counts_less_to_the_club_taking_him_on(self):
+        deal = trade("Golden State Warriors", ["Caron Butler"], ["Clifford Robinson"])
+        self.desk.assets._injured = set()
+        healthy = self.desk.valuation(deal)["partner_gain"]
+        self.desk.assets._injured = {("Miami Heat", "Caron Butler")}
+        hurt = self.desk.valuation(deal)["partner_gain"]
+        del self.desk.assets._injured
+        self.assertLess(hurt, healthy)
+        self.assertLess(INJURY_DISCOUNT, 0.86)                       # within the 15-40% discount
+        self.assertGreater(INJURY_DISCOUNT, 0.59)
+
+    def test_injury_evidence_is_dated_and_only_regulars_who_vanished(self):
+        before = TradeDesk("2003-11-30", FrontOffice("2003-11-30", Market("2003-11-30", ROOT), ROOT), ROOT)
+        self.assertFalse(before.assets.injured("Caron Butler", "Miami Heat"))     # before the adoption date
+        self.assertTrue(self.desk.assets.injured("Caron Butler", "Miami Heat"))   # on Miami's list with an injury
+        self.assertFalse(self.desk.assets.injured("Eddie Jones", "Miami Heat"))
+
+    def test_live_search_keeps_untouchables_and_clears_every_partner_floor(self):
+        for row in self.desk.search(limit=10):
+            v = self.desk.valuation(row["trade"])
+            self.assertEqual(v["untouchable"], [])
+            self.assertGreaterEqual(v["objective_gain"], ACCEPT_FLOOR)
+            self.assertGreaterEqual(row["accept"], SEARCH_MIN_ACCEPT)
 
 
 if __name__ == "__main__":

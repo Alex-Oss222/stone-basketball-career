@@ -163,6 +163,12 @@ The January 10, 2004 guarantee review (`scripts/guarantee_review.py`): decisions
 A real club answers Miami on its own objective, not a league-wide talent score (`docs/front_office_design.md` 7.4a): its stance (contending, middle, rebuilding) weights this season's production, the future, picks and cash; its young top picks and its two most valuable players are untouchable unless the package is 20% better for it; below a -3% floor it says no without a draw; a salary dump with a pick or prospect back is the one routine way it takes a loss on talent. Its payroll for salary matching is its roster on the trade date. Miami proposes only deals the partner would plausibly take, ranked by Miami's win-now objective.
 
 
+### Distressed assets (from December 1, 2003)
+
+A walk-year veteran (28 or older, last contract season) is worth less to his own club, by stance (`WALK_YEAR_DISCOUNT`: contending 0.9, middle 0.75, rebuilding 0.65). An injured player's current-season production counts at `INJURY_DISCOUNT` 0.75 to the club that would take him on, Miami or a real club. The evidence is dated: Miami's injured list with an injury reason (not a reserve listing), or a real club's regular (in at least half its earlier closed games) who missed all of its last three closed games. Real trade demands are not modelled; they would need a researched, dated list.
+
+On December 1, 2003 the live search returns one proposal, Anthony Carter and Rasual Butler to Golden State for Clifford Robinson (Golden State accepts 82.5%). No untouchable leaves and every proposal clears the partner's floor (`tests/test_trade_objectives.py`).
+
 ## Skill fit (from December 1, 2003)
 
 Positional fit asks only whether Miami is short of minutes at a position. Skill fit (`runtime/skill_fit.py`, `gm.SKILL_FIT_FROM`) adds what a player would bring to the players Miami holds. Six skills are standardized against the 2002-03 league (500+ minutes): spacing (threes made per field-goal attempt), rim protection (block percentage), rebounding (offensive plus defensive rebound percentage), defense (2002-03 DBPM, `library/2003/league/nba_2002_03_defense.json`), playmaking (assist percentage) and creation (usage). All are evidence known on the date; the engine's 2003-04 trajectories are never read.

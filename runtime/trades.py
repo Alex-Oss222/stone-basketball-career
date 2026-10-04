@@ -81,6 +81,12 @@ ACCEPT_BOUNDS = (0.02, 0.95)
 DUMP_VALUE_PER_5M = 0.25                 # value points per $5M of a season's salary a club sheds on purpose
 SEARCH_MIN_ACCEPT = 0.40                 # Miami proposes only what the partner would plausibly take
 MAX_OUT, MAX_IN = 2, 2                   # players a search proposal moves each way
+# Distressed assets (design 7.5 item 6): an injured player's current-season production counts at this share to the
+# club that would take him on (judgement, within the 15-40% discount). Evidence on the date only: Miami's injured
+# list with an injury reason, or a real player who missed all of his club's last INJURY_GAMES closed games.
+INJURY_DISCOUNT = 0.75
+INJURY_GAMES = 3
+INJURY_FROM = "2003-12-01"               # earlier trade decisions keep the values they were drawn with
 SEARCH_SKILL_FIT = 1.10                  # a candidate this good a fit is searched even where Miami has the minutes
 SEARCH_MIN_GAIN = 0.05                   # Miami's value gain for a proposal to be worth making
 # Sign-and-trade (design 7.1 and 7.4)
@@ -259,6 +265,41 @@ class Assets:
                 "contract_term": round(term, 3), "relief": round(relief, 3), "salary": salary, "years": years,
                 "age": age, "basis": basis, "now": round(production, 3), "future": round(future, 3),
                 "walk_year": years == 1 and (age or 0) >= 28 and player.get("status") != "under_rookie_contract"}
+
+    def injured(self, player_name, club):
+        """On-date evidence that a player is hurt: Miami's injured list (an injury, not a reserve listing),
+        or a real player absent from all of his club's last INJURY_GAMES closed games while it played."""
+        if self.on < INJURY_FROM:
+            return False
+        if not hasattr(self, "_injured"):
+            self._injured = self._injury_evidence()
+        return (club, player_name) in self._injured
+
+    def _injury_evidence(self):
+        out = set()
+        ledger = read_json(TEAM / "Transactions/injured_list.json", self.root) if (self.root / TEAM / "Transactions/injured_list.json").is_file() else {"entries": []}
+        for e in ledger["entries"]:
+            if e["placed"] <= self.on and (e["activated"] is None or e["activated"] > self.on) and e["reason"].startswith("injury"):
+                out.add((MIAMI, e["player"]))
+        from .write_back import closed_results
+        recent = {}
+        for row in closed_results(self.root, SEASON, self.on):
+            r = row["result"]
+            for side in ("home", "away"):
+                recent.setdefault(r[side], []).append({p["player_id"] for p in r["player_stats"][side] if p["minutes"] > 0})
+        for club, games in recent.items():
+            last = games[-INJURY_GAMES:]
+            if club == MIAMI or len(last) < INJURY_GAMES:
+                continue
+            before = games[:-INJURY_GAMES]
+            if len(before) < INJURY_GAMES:
+                continue
+            seen = set().union(*last)
+            # A regular (in at least half his club's earlier games) who then vanished, not a reserve's coach's decision.
+            regulars = {n for n in set().union(*before) if sum(n in g for g in before) >= len(before) / 2}
+            for name in regulars - seen:
+                out.add((club, name))
+        return out
 
     def pick_value(self, pick, owner_record_club, miami_own=False):
         """A draft pick from the chart, placed by the owning club's last record and regressed for later years."""
@@ -642,6 +683,8 @@ class TradeDesk:
             """The partner's objective: its stance weights; its own walk-year veterans are worth less to it."""
             vals = []
             for v in players:
+                if not own and self.assets.injured(v["player"], MIAMI):
+                    v = dict(v, now=v["now"] * INJURY_DISCOUNT)   # it would take on a hurt player
                 walk = WALK_YEAR_DISCOUNT[posture] if (own and v.get("walk_year")) else 1.0
                 vals.append(Assets.club_value(v, weights, walk) * v.get("partner_share", 1.0))
             vals += [p["value"] * weights["picks"] for p in picks]
@@ -652,6 +695,8 @@ class TradeDesk:
             needs = self.fo.needs()
             vals = []
             for v in players:
+                if self.assets.injured(v["player"], club):
+                    v = dict(v, now=v["now"] * INJURY_DISCOUNT)   # Miami would take on a hurt player
                 pos = self.assets.positions.get(v["bbr_id"], (None, "SF", 9))[1].split("-")[0]
                 fit = self.fo.fit(pos, needs)
                 value = Assets.club_value(v, MIAMI_WEIGHTS)
