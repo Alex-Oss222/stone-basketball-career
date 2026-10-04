@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-31-new-orleans-hornets-at-boston-celtics",
+ "game_date": "2003-12-31",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Orleans Hornets",
+  "rotation": "real"
+ }
+}

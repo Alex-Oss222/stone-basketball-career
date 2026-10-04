@@ -2,9 +2,9 @@
 
 # Contract | Leon Smith
 
-Known through: 2003-12-30. [Open interactive contract](smithle01.html#contract) · [Contract history](smithle01.html#contract-history)
+Known through: 2003-12-31. [Open interactive contract](smithle01.html#contract) · [Contract history](smithle01.html#contract-history)
 
-Leon Smith: No verified contract record. Evidence cutoff: 2003-12-30.
+Leon Smith: No verified contract record. Evidence cutoff: 2003-12-31.
 
 ## Current contract
 

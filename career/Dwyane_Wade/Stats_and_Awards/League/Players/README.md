@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-30**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-31**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -128,7 +128,7 @@ Card date: **2003-12-30**. 503 registry players, one Markdown card and one inter
 | [Bobby Simmons](simmobo01.md) | Los Angeles Clippers | 23 | sourced | [open](simmobo01.html) |
 | [Bonzi Wells](wellsbo01.md) | Portland Trail Blazers | 27 | sourced | [open](wellsbo01.html) |
 | [Brandon Armstrong](armstbr01.md) | New Jersey Nets | None | silhouette | [open](armstbr01.html) |
-| [Brent Barry](barrybr01.md) | Seattle SuperSonics | 31 | sourced | [open](barrybr01.html) |
+| [Brent Barry](barrybr01.md) | Seattle SuperSonics | 32 | sourced | [open](barrybr01.html) |
 | [Calbert Cheaney](cheanca01.md) | Golden State Warriors | 32 | sourced | [open](cheanca01.html) |
 | [Carlos Delfino](delfica01.md) | Detroit Pistons (draft rights) | 21 | sourced | [open](delfica01.html) |
 | [Corey Maggette](maggeco01.md) | Los Angeles Clippers | 24 | sourced | [open](maggeco01.html) |
@@ -220,7 +220,7 @@ Card date: **2003-12-30**. 503 registry players, one Markdown card and one inter
 | [Antawn Jamison](jamisan01.md) | Dallas Mavericks | 27 | sourced | [open](jamisan01.html) |
 | [Bostjan Nachbar](nachbbo01.md) | Houston Rockets | 23 | sourced | [open](nachbbo01.html) |
 | [Bruce Bowen](bowenbr01.md) | San Antonio Spurs | 32 | sourced | [open](bowenbr01.html) |
-| [Bryon Russell](russebr01.md) | Los Angeles Lakers | 32 | silhouette | [open](russebr01.html) |
+| [Bryon Russell](russebr01.md) | Los Angeles Lakers | 33 | silhouette | [open](russebr01.html) |
 | [Carmelo Anthony](anthoca01.md) | Denver Nuggets | 19 | sourced | [open](anthoca01.html) |
 | [Caron Butler](butleca01.md) | Miami Heat | 23 | sourced | [open](butleca01.html) |
 | [Casey Jacobsen](jacobca01.md) | Phoenix Suns | 22 | silhouette | [open](jacobca01.html) |
@@ -293,7 +293,7 @@ Card date: **2003-12-30**. 503 registry players, one Markdown card and one inter
 | [Sasha Pavlovic](pavloal01.md) | Utah Jazz | 20 | sourced | [open](pavloal01.html) |
 | [Scottie Pippen](pippesc01.md) | Chicago Bulls | 38 | sourced | [open](pippesc01.html) |
 | [Sean Lampley](lamplse01.md) | Miami Heat | 24 | silhouette | [open](lamplse01.html) |
-| [Shandon Anderson](andersh01.md) | New York Knicks | 29 | sourced | [open](andersh01.html) |
+| [Shandon Anderson](andersh01.md) | New York Knicks | 30 | sourced | [open](andersh01.html) |
 | [Shane Battier](battish01.md) | Memphis Grizzlies | 25 | sourced | [open](battish01.html) |
 | [Shawn Marion](mariosh01.md) | Phoenix Suns | 25 | sourced | [open](mariosh01.html) |
 | [Tayshaun Prince](princta01.md) | Detroit Pistons | 23 | sourced | [open](princta01.html) |

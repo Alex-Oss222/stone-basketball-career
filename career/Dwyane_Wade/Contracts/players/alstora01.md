@@ -2,9 +2,9 @@
 
 # Contract | Rafer Alston
 
-Known through: 2003-12-30. [Open interactive contract](alstora01.html#contract) · [Contract history](alstora01.html#contract-history)
+Known through: 2003-12-31. [Open interactive contract](alstora01.html#contract) · [Contract history](alstora01.html#contract-history)
 
-Rafer Alston: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-30.
+Rafer Alston: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-31.
 
 ## Current contract
 

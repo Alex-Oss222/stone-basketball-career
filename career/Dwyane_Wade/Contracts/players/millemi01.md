@@ -2,9 +2,9 @@
 
 # Contract | Mike Miller
 
-Known through: 2003-12-30. [Open interactive contract](millemi01.html#contract) · [Contract history](millemi01.html#contract-history)
+Known through: 2003-12-31. [Open interactive contract](millemi01.html#contract) · [Contract history](millemi01.html#contract-history)
 
-Mike Miller: under rookie contract. Evidence cutoff: 2003-12-30.
+Mike Miller: under rookie contract. Evidence cutoff: 2003-12-31.
 
 ## Current contract
 

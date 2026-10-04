@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-31-philadelphia-76ers-at-houston-rockets",
+ "game_date": "2003-12-31",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Houston Rockets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Philadelphia 76ers",
+  "rotation": "real"
+ }
+}

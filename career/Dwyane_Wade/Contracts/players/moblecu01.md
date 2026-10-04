@@ -2,9 +2,9 @@
 
 # Contract | Cuttino Mobley
 
-Known through: 2003-12-30. [Open interactive contract](moblecu01.html#contract) · [Contract history](moblecu01.html#contract-history)
+Known through: 2003-12-31. [Open interactive contract](moblecu01.html#contract) · [Contract history](moblecu01.html#contract-history)
 
-Cuttino Mobley: under contract. Evidence cutoff: 2003-12-30.
+Cuttino Mobley: under contract. Evidence cutoff: 2003-12-31.
 
 ## Current contract
 
