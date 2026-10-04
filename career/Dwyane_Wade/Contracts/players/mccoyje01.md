@@ -2,9 +2,9 @@
 
 # Contract | Jelani McCoy
 
-Known through: 2004-01-06. [Open interactive contract](mccoyje01.html#contract) · [Contract history](mccoyje01.html#contract-history)
+Known through: 2004-01-07. [Open interactive contract](mccoyje01.html#contract) · [Contract history](mccoyje01.html#contract-history)
 
-Jelani McCoy: expired or unresolved. Evidence cutoff: 2004-01-06.
+Jelani McCoy: expired or unresolved. Evidence cutoff: 2004-01-07.
 
 ## Current contract
 

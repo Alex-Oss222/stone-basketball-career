@@ -2,9 +2,9 @@
 
 # Contract | Travis Knight
 
-Known through: 2004-01-06. [Open interactive contract](knightr01.html#contract) · [Contract history](knightr01.html#contract-history)
+Known through: 2004-01-07. [Open interactive contract](knightr01.html#contract) · [Contract history](knightr01.html#contract-history)
 
-Travis Knight: under contract unverified. Evidence cutoff: 2004-01-06.
+Travis Knight: under contract unverified. Evidence cutoff: 2004-01-07.
 
 ## Current contract
 

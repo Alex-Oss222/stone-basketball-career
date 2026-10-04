@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-07-houston-rockets-at-detroit-pistons",
+ "game_date": "2004-01-07",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Detroit Pistons",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Houston Rockets",
+  "rotation": "real"
+ }
+}

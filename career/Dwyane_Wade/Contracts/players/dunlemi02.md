@@ -2,9 +2,9 @@
 
 # Contract | Mike Dunleavy
 
-Known through: 2004-01-06. [Open interactive contract](dunlemi02.html#contract) · [Contract history](dunlemi02.html#contract-history)
+Known through: 2004-01-07. [Open interactive contract](dunlemi02.html#contract) · [Contract history](dunlemi02.html#contract-history)
 
-Mike Dunleavy: under rookie contract. Evidence cutoff: 2004-01-06.
+Mike Dunleavy: under rookie contract. Evidence cutoff: 2004-01-07.
 
 ## Current contract
 

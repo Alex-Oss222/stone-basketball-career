@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-07-cleveland-cavaliers-at-toronto-raptors",
+ "game_date": "2004-01-07",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Toronto Raptors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ }
+}

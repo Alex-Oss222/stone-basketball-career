@@ -2,9 +2,9 @@
 
 # Contract | Greg Ostertag
 
-Known through: 2004-01-06. [Open interactive contract](ostergr01.html#contract) · [Contract history](ostergr01.html#contract-history)
+Known through: 2004-01-07. [Open interactive contract](ostergr01.html#contract) · [Contract history](ostergr01.html#contract-history)
 
-Greg Ostertag: under contract. Evidence cutoff: 2004-01-06.
+Greg Ostertag: under contract. Evidence cutoff: 2004-01-07.
 
 ## Current contract
 

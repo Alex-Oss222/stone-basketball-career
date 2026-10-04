@@ -898,6 +898,127 @@
    "bbr_id": "mercero01",
    "from": "San Antonio Spurs",
    "to": "Golden State Warriors"
+  },
+  {
+   "id": "2003-04-market-2004-01-07-clear-jacksma01",
+   "date": "2004-01-07",
+   "kind": "clear",
+   "player": "Mark Jackson",
+   "bbr_id": "jacksma01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Mark Jackson",
+    "bbr_id": "jacksma01",
+    "position": "PG",
+    "games": 42,
+    "minutes": 577
+   },
+   "contract": null,
+   "note": "cleared waivers from Houston Rockets: a free agent",
+   "waiver": "2003-04-market-2004-01-05-waive-jacksma01"
+  },
+  {
+   "id": "2003-04-market-2004-01-07-ten_day-smithth01",
+   "date": "2004-01-07",
+   "kind": "ten_day",
+   "player": "Theron Smith",
+   "bbr_id": "smithth01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Theron Smith",
+    "bbr_id": "smithth01",
+    "position": "SF",
+    "games": 20,
+    "minutes": 178
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-17",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.79 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-07-waive-hamda01",
+   "date": "2004-01-07",
+   "kind": "waive",
+   "player": "Darvin Ham",
+   "bbr_id": "hamda01",
+   "from": "Detroit Pistons",
+   "to": null,
+   "role": {
+    "player_id": "Darvin Ham",
+    "bbr_id": "hamda01",
+    "position": "SF",
+    "games": 54,
+    "minutes": 484
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-01-09"
+  },
+  {
+   "id": "2003-04-market-2004-01-07-ten_day-shirlpa01",
+   "date": "2004-01-07",
+   "kind": "ten_day",
+   "player": "Paul Shirley",
+   "bbr_id": "shirlpa01",
+   "from": null,
+   "to": "Detroit Pistons",
+   "role": {
+    "player_id": "Paul Shirley",
+    "bbr_id": "shirlpa01",
+    "position": "PF",
+    "games": 7,
+    "minutes": 86
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-17",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.91 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-07-waive-masseto01",
+   "date": "2004-01-07",
+   "kind": "waive",
+   "player": "Tony Massenburg",
+   "bbr_id": "masseto01",
+   "from": "Sacramento Kings",
+   "to": null,
+   "role": {
+    "player_id": "Tony Massenburg",
+    "bbr_id": "masseto01",
+    "position": "PF",
+    "games": 59,
+    "minutes": 789
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-01-09"
+  },
+  {
+   "id": "2003-04-market-2004-01-07-ten_day-reiddo01",
+   "date": "2004-01-07",
+   "kind": "ten_day",
+   "player": "Don Reid",
+   "bbr_id": "reiddo01",
+   "from": null,
+   "to": "Sacramento Kings",
+   "role": {
+    "player_id": "Don Reid",
+    "bbr_id": "reiddo01",
+    "position": "PF",
+    "games": 1,
+    "minutes": 10
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-17",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.79 x fit"
   }
  ]
 }

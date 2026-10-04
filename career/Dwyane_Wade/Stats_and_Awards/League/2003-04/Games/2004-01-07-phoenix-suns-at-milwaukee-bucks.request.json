@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-07-phoenix-suns-at-milwaukee-bucks",
+ "game_date": "2004-01-07",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ }
+}

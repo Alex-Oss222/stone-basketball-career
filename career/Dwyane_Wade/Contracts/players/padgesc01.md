@@ -2,9 +2,9 @@
 
 # Contract | Scott Padgett
 
-Known through: 2004-01-06. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
+Known through: 2004-01-07. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
 
-Scott Padgett: camp contract. Evidence cutoff: 2004-01-06.
+Scott Padgett: camp contract. Evidence cutoff: 2004-01-07.
 
 ## Current contract
 
@@ -353,9 +353,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
 
 ### Scott Padgett · existing contract; signing date not recorded
 

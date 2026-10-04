@@ -2,9 +2,9 @@
 
 # Contract | Shammond Williams
 
-Known through: 2004-01-06. [Open interactive contract](willish01.html#contract) · [Contract history](willish01.html#contract-history)
+Known through: 2004-01-07. [Open interactive contract](willish01.html#contract) · [Contract history](willish01.html#contract-history)
 
-Shammond Williams: under contract. Evidence cutoff: 2004-01-06.
+Shammond Williams: under contract. Evidence cutoff: 2004-01-07.
 
 ## Current contract
 

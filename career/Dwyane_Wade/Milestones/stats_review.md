@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-01-06 · Miami Heat · active
+Career date: 2004-01-07 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-41 closed game records in 2003-04 through 2004-01-06. Competitions remain separate.
+42 closed game records in 2003-04 through 2004-01-07. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
-| regular | 34 | 34.6 | 16.9 | 4.7 | 4.8 | 1.1 | Complete |
+| regular | 35 | 34.7 | 17.3 | 4.7 | 4.8 | 1.1 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A |
-| regular | 196 | 378 | 0.519 | 28 | 77 | 0.364 |
+| regular | 207 | 395 | 0.524 | 29 | 79 | 0.367 |
 
 ## Closed source games
 
@@ -71,6 +71,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2003-12-30 | regular | New York Knicks | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_5.md) |
 | 2004-01-02 | regular | Orlando Magic | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_1.md) |
 | 2004-01-05 | regular | Indiana Pacers | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_2.md) |
+| 2004-01-07 | regular | Chicago Bulls | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -159,4 +160,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_5.md)
 - [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_2.md)
+- [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

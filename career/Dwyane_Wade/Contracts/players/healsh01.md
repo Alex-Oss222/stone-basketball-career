@@ -2,9 +2,9 @@
 
 # Contract | Shane Heal
 
-Known through: 2004-01-06. [Open interactive contract](healsh01.html#contract) · [Contract history](healsh01.html#contract-history)
+Known through: 2004-01-07. [Open interactive contract](healsh01.html#contract) · [Contract history](healsh01.html#contract-history)
 
-Shane Heal: No verified contract record. Evidence cutoff: 2004-01-06.
+Shane Heal: No verified contract record. Evidence cutoff: 2004-01-07.
 
 ## Current contract
 

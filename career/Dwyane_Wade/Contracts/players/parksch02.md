@@ -2,9 +2,9 @@
 
 # Contract | Cherokee Parks
 
-Known through: 2004-01-06. [Open interactive contract](parksch02.html#contract) · [Contract history](parksch02.html#contract-history)
+Known through: 2004-01-07. [Open interactive contract](parksch02.html#contract) · [Contract history](parksch02.html#contract-history)
 
-Cherokee Parks: camp contract. Evidence cutoff: 2004-01-06.
+Cherokee Parks: camp contract. Evidence cutoff: 2004-01-07.
 
 ## Current contract
 
@@ -353,9 +353,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
 
 ### Cherokee Parks · existing contract; signing date not recorded
 

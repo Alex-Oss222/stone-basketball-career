@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-07-sacramento-kings-at-seattle-supersonics",
+ "game_date": "2004-01-07",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ }
+}

@@ -2,9 +2,9 @@
 
 # Contract | Allan Houston
 
-Known through: 2004-01-06. [Open interactive contract](houstal01.html#contract) · [Contract history](houstal01.html#contract-history)
+Known through: 2004-01-07. [Open interactive contract](houstal01.html#contract) · [Contract history](houstal01.html#contract-history)
 
-Allan Houston: under contract. Evidence cutoff: 2004-01-06.
+Allan Houston: under contract. Evidence cutoff: 2004-01-07.
 
 ## Current contract
 
