@@ -22,6 +22,7 @@ a time: a game is refused while an earlier Miami request has no result. The guar
 (`scripts/guarantee_review.py`) must be recorded before games after January 7, 2004.
 """
 import argparse
+import os
 from pathlib import Path
 import sys
 
@@ -47,7 +48,7 @@ def main():
         out = [p for p, n in row.get("injured_out", {}).items()]
         print(f"{row['request_path'].relative_to(ROOT)}  {row['game']['game_id']}" + (f"  out: {', '.join(out)}" if out else ""))
     if plan:
-        changed = season_games.refresh_reports(ROOT)
+        changed = 0 if os.getenv("ADVANCE_LIGHT") else season_games.refresh_reports(ROOT)
         print(f"{len(plan)} game(s) written; {changed} player report page(s) refreshed")
         waiting = season_games.miami_games_due(args.write, ROOT)
         if waiting:

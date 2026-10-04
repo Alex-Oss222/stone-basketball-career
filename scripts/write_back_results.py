@@ -34,6 +34,8 @@ def main():
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--write", action="store_true", help="write every collected result into the career record")
     group.add_argument("--check", action="store_true", help="verify without writing")
+    parser.add_argument("--light", action="store_true", help="with --write: notes, injuries, registry and team records only; "
+                        "leave the report, statistics-page and league-card rebuild to a later full run")
     args = parser.parse_args()
     if args.check:
         problems = write_back.write_back_errors(ROOT, cards=True) + report_errors(ROOT, ROOT / write_back.PLAYER_DIR)
@@ -41,7 +43,7 @@ def main():
             print(f"- {p}")
         print("Every collected result is written into the career record." if not problems else f"{len(problems)} problem(s)")
         return 1 if problems else 0
-    report = write_back.run(ROOT, write=True)
+    report = write_back.run(ROOT, write=True, pages=not args.light)
     for line in report["written"]:
         print(f"written  {line}")
     for line in report["waiting"]:

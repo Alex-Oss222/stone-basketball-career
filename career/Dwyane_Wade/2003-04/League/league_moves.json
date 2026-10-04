@@ -2431,6 +2431,61 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.77 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-02-29-clear-barnema02",
+   "date": "2004-02-29",
+   "kind": "clear",
+   "player": "Matt Barnes",
+   "bbr_id": "barnema02",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Matt Barnes",
+    "bbr_id": "barnema02",
+    "position": "SF",
+    "games": 38,
+    "minutes": 724
+   },
+   "contract": null,
+   "note": "cleared waivers from Los Angeles Clippers: a free agent",
+   "waiver": "2003-04-market-2004-02-27-waive-barnema02"
+  },
+  {
+   "id": "2003-04-market-2004-02-29-expire-dickeka01",
+   "date": "2004-02-29",
+   "kind": "expire",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": "Dallas Mavericks",
+   "to": null,
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-02-29-expire-harriad01",
+   "date": "2004-02-29",
+   "kind": "expire",
+   "player": "Adam Harrington",
+   "bbr_id": "harriad01",
+   "from": "Los Angeles Clippers",
+   "to": null,
+   "role": {
+    "player_id": "Adam Harrington",
+    "bbr_id": "harriad01",
+    "position": "SG",
+    "games": 19,
+    "minutes": 111
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.7 minutes a game)"
   }
  ]
 }

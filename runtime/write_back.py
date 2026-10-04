@@ -797,7 +797,7 @@ def write_statistics_pages(root=ROOT, season=SEASON):
 
 
 # -- the run and the checks ------------------------------------------------------------------------
-def run(root=ROOT, season=SEASON, write=False):
+def run(root=ROOT, season=SEASON, write=False, pages=True):
     """The write-back. With write=False nothing is touched; the report says what a run would do."""
     root = Path(root)
     report = dict(written=[], waiting=[], problems=[], unmatched=[], pages=0, reports=0, cards=0)
@@ -824,7 +824,7 @@ def run(root=ROOT, season=SEASON, write=False):
         from .team_status import refresh as refresh_team_status
         report["team_status"] = refresh_team_status(root)
     _, report["unmatched"] = closed_lines(root, season)
-    if write:
+    if write and pages:                     # light runs (scripts/advance.py, daily) leave the page rebuild to the checkpoint
         from .season_games import refresh_reports
         report["reports"] = refresh_reports(root)
         report["pages"] = write_statistics_pages(root, season)

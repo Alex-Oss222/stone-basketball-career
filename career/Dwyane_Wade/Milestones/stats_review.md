@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-02-28 · Miami Heat · active
+Career date: 2004-02-29 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-66 closed game records in 2003-04 through 2004-02-28. Competitions remain separate.
+67 closed game records in 2003-04 through 2004-02-29. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -96,6 +96,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-02-21 | regular | Denver Nuggets | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.md) |
 | 2004-02-23 | regular | Portland Trail Blazers | Unknown: missing player box | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md) |
 | 2004-02-28 | regular | New Jersey Nets | Unknown: missing player box | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md) |
+| 2004-02-29 | regular | Milwaukee Bucks | Unknown: missing player box | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -209,4 +210,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.md)
 - [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md)
+- [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

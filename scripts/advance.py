@@ -14,9 +14,10 @@ Each day runs the dated systems in order, each idempotent, so a stopped day can 
   5. awards announced that morning are decided (an exact tie is an engine draw);
   6. the day's games are played through the engine's direct route and written back into the career record.
 
-Every chance answer is an engine draw; nothing here chooses an outcome. The full page rebuild, repository
-validation and the full test suite run at week ends (Sundays), at the target date and before every push; a push
-happens at those checkpoints, or when the engine refuses a game because its deployed code or library differs.
+Every chance answer is an engine draw; nothing here chooses an outcome. Each day writes results back lightly (notes,
+injuries, registry, team records). Every Sunday the full write-back, page rebuild and repository validation run;
+every other Sunday and at the target date the full test suite runs too and the week is pushed. A push also happens
+when the engine refuses a game because its deployed code or library differs.
 
 Stops: a pending player decision or consultation for Wade (`current_state.pending_player_decisions`), any step
 that fails, failed validation or tests, or a game the engine still refuses after a push.
@@ -34,6 +35,7 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+os.environ.setdefault("ADVANCE_LIGHT", "1")         # builders skip the report rebuild; the checkpoint does it
 STATE = ROOT / "career/Dwyane_Wade/2003-04/current_state.json"
 MIAMI_RESULTS = "career/Dwyane_Wade/2003-04/06_Regular_Season/*/*/Game_*.result.json"
 
@@ -84,7 +86,8 @@ def commit(message):
 
 
 def checkpoint(day, push=True):
-    """Full pages, validation and the full suite; then push."""
+    """The full write-back and page rebuild, validation; with `push`, the full suite and the push."""
+    run("scripts/write_back_results.py", "--write", show=False)
     run("scripts/update_player_reports.py", show=False)
     if "passed" not in run("scripts/validate_repository.py", ok=(0, 1)):
         raise Stop("validation failed")
@@ -201,7 +204,7 @@ def advance_day(day):
         data = state()
         data["last_closed_event"] = json.loads(results[-1].read_text(encoding="utf-8"))["event_id"]
         write_state(data)
-    run("scripts/write_back_results.py", "--write", show=False)
+    run("scripts/write_back_results.py", "--write", "--light", show=False)
     summary(day)
     commit(f"Advance {day}")
     wade_waits()
@@ -217,8 +220,10 @@ def main():
     try:
         while day <= end:
             advance_day(day.isoformat())
-            if day.weekday() == 6 or day == end:
-                checkpoint(day.isoformat())
+            if day == end or (day.weekday() == 6 and day.isocalendar()[1] % 2 == 0):
+                checkpoint(day.isoformat())                  # every other Sunday: pages, validation, suite, push
+            elif day.weekday() == 6:
+                checkpoint(day.isoformat(), push=False)      # the Sundays between: pages and validation
             day += timedelta(days=1)
     except Stop as stop:
         say(f"STOPPED on {state()['current_date']}: {stop}")
