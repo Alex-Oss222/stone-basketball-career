@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-21**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-22**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -263,7 +263,7 @@ Card date: **2004-02-21**. 504 registry players, one Markdown card and one inter
 | [Lamond Murray](murrala01.md) | Toronto Raptors | None | silhouette | [open](murrala01.html) |
 | [Latrell Sprewell](sprewla01.md) | Minnesota Timberwolves | 33 | silhouette | [open](sprewla01.html) |
 | [LeBron James](jamesle01.md) | Cleveland Cavaliers | 19 | sourced | [open](jamesle01.html) |
-| [Lee Nailon](nailole01.md) | Atlanta Hawks | 28 | silhouette | [open](nailole01.html) |
+| [Lee Nailon](nailole01.md) | Atlanta Hawks | 29 | silhouette | [open](nailole01.html) |
 | [Linton Johnson](johnsli01.md) | Chicago Bulls | None | silhouette | [open](johnsli01.html) |
 | [Luke Walton](waltolu01.md) | Los Angeles Lakers | 23 | sourced | [open](waltolu01.html) |
 | [Marcus Fizer](fizerma01.md) | Chicago Bulls | None | silhouette | [open](fizerma01.html) |

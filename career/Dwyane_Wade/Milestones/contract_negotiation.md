@@ -2,7 +2,7 @@
 
 # Contract negotiation | Dwyane Wade
 
-Career date: 2004-02-21 · Miami Heat · recorded
+Career date: 2004-02-22 · Miami Heat · recorded
 
 [Live milestone desk](index.html#contract_negotiation) · [All milestones](README.md)
 
@@ -87,7 +87,7 @@ Verify registration and the authoritative contract record; no second player acce
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/02_February/Week_3/note.md)
+- [Owning event](../2003-04/06_Regular_Season/02_February/Week_4/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
