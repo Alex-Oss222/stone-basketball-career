@@ -2270,6 +2270,69 @@
    },
    "contract": null,
    "note": "10-day contract ended (3.2 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-02-19-clear-brunsri01",
+   "date": "2004-02-19",
+   "kind": "clear",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 40,
+    "minutes": 412
+   },
+   "contract": null,
+   "note": "cleared waivers from Denver Nuggets: a free agent",
+   "waiver": "2003-04-market-2004-02-17-waive-brunsri01"
+  },
+  {
+   "id": "2003-04-market-2004-02-19-ten_day-dickeka01",
+   "date": "2004-02-19",
+   "kind": "ten_day",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": null,
+   "to": "Dallas Mavericks",
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-02-29",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.77 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-02-19-ten_day-harriad01",
+   "date": "2004-02-19",
+   "kind": "ten_day",
+   "player": "Adam Harrington",
+   "bbr_id": "harriad01",
+   "from": null,
+   "to": "Los Angeles Clippers",
+   "role": {
+    "player_id": "Adam Harrington",
+    "bbr_id": "harriad01",
+    "position": "SG",
+    "games": 19,
+    "minutes": 111
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-02-29",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.53 x fit"
   }
  ]
 }

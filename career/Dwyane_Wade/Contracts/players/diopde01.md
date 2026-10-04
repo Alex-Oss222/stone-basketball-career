@@ -2,9 +2,9 @@
 
 # Contract | DeSagana Diop
 
-Known through: 2004-02-18. [Open interactive contract](diopde01.html#contract) · [Contract history](diopde01.html#contract-history)
+Known through: 2004-02-19. [Open interactive contract](diopde01.html#contract) · [Contract history](diopde01.html#contract-history)
 
-DeSagana Diop: under rookie contract. Evidence cutoff: 2004-02-18.
+DeSagana Diop: under rookie contract. Evidence cutoff: 2004-02-19.
 
 ## Current contract
 

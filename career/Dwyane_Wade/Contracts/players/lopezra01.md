@@ -2,9 +2,9 @@
 
 # Contract | Raül López
 
-Known through: 2004-02-18. [Open interactive contract](lopezra01.html#contract) · [Contract history](lopezra01.html#contract-history)
+Known through: 2004-02-19. [Open interactive contract](lopezra01.html#contract) · [Contract history](lopezra01.html#contract-history)
 
-Raül López: under rookie contract. Evidence cutoff: 2004-02-18.
+Raül López: under rookie contract. Evidence cutoff: 2004-02-19.
 
 ## Current contract
 

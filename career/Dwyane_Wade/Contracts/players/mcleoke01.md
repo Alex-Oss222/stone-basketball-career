@@ -2,9 +2,9 @@
 
 # Contract | Keith McLeod
 
-Known through: 2004-02-18. [Open interactive contract](mcleoke01.html#contract) · [Contract history](mcleoke01.html#contract-history)
+Known through: 2004-02-19. [Open interactive contract](mcleoke01.html#contract) · [Contract history](mcleoke01.html#contract-history)
 
-Keith McLeod: No verified contract record. Evidence cutoff: 2004-02-18.
+Keith McLeod: No verified contract record. Evidence cutoff: 2004-02-19.
 
 ## Current contract
 

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-18**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-19**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -480,7 +480,7 @@ Card date: **2004-02-18**. 504 registry players, one Markdown card and one inter
 | [Francisco Elson](elsonfr01.md) | Denver Nuggets | None | silhouette | [open](elsonfr01.html) |
 | [Greg Ostertag](ostergr01.md) | Utah Jazz | 30 | sourced | [open](ostergr01.html) |
 | [Jabari Smith](smithja01.md) | Sacramento Kings | None | silhouette | [open](smithja01.html) |
-| [Jahidi White](whiteja01.md) | Washington Wizards | 27 | silhouette | [open](whiteja01.html) |
+| [Jahidi White](whiteja01.md) | Washington Wizards | 28 | silhouette | [open](whiteja01.html) |
 | [Jake Tsakalidis](tsakaja01.md) | Memphis Grizzlies | 24 | sourced | [open](tsakaja01.html) |
 | [Jake Voskuhl](voskuja01.md) | Phoenix Suns | 26 | sourced | [open](voskuja01.html) |
 | [Jamaal Magloire](magloja01.md) | New Orleans Hornets | 25 | sourced | [open](magloja01.html) |

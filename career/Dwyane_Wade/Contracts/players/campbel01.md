@@ -2,9 +2,9 @@
 
 # Contract | Elden Campbell
 
-Known through: 2004-02-18. [Open interactive contract](campbel01.html#contract) · [Contract history](campbel01.html#contract-history)
+Known through: 2004-02-19. [Open interactive contract](campbel01.html#contract) · [Contract history](campbel01.html#contract-history)
 
-Elden Campbell: under contract. Evidence cutoff: 2004-02-18.
+Elden Campbell: under contract. Evidence cutoff: 2004-02-19.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Vladimir Stepania
 
-Known through: 2004-02-18. [Open interactive contract](stepavl01.html#contract) · [Contract history](stepavl01.html#contract-history)
+Known through: 2004-02-19. [Open interactive contract](stepavl01.html#contract) · [Contract history](stepavl01.html#contract-history)
 
-Vladimir Stepania: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-02-18.
+Vladimir Stepania: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-02-19.
 
 ## Current contract
 
