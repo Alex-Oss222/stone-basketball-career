@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-13-portland-trail-blazers-at-los-angeles-clippers",
+ "game_date": "2004-01-13",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Clippers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ }
+}

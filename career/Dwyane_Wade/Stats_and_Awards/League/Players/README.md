@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-12**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-01-13**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -249,7 +249,7 @@ Card date: **2004-01-12**. 504 registry players, one Markdown card and one inter
 | [Jalen Rose](roseja01.md) | Chicago Bulls | 30 | sourced | [open](roseja01.html) |
 | [Jamal Mashburn](mashbja01.md) | New Orleans Hornets | 31 | silhouette | [open](mashbja01.html) |
 | [James Jones](jonesja02.md) | Indiana Pacers | 23 | sourced | [open](jonesja02.html) |
-| [James Posey](poseyja01.md) | Memphis Grizzlies | 26 | sourced | [open](poseyja01.html) |
+| [James Posey](poseyja01.md) | Memphis Grizzlies | 27 | sourced | [open](poseyja01.html) |
 | [Jarvis Hayes](hayesja01.md) | Washington Wizards | 22 | sourced | [open](hayesja01.html) |
 | [Jason Kapono](kaponja01.md) | Cleveland Cavaliers | 22 | sourced | [open](kaponja01.html) |
 | [Jim Jackson](jacksji01.md) | Houston Rockets | 33 | sourced | [open](jacksji01.html) |

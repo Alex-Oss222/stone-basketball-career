@@ -2,9 +2,9 @@
 
 # Contract | Mark Blount
 
-Known through: 2004-01-12. [Open interactive contract](blounma01.html#contract) · [Contract history](blounma01.html#contract-history)
+Known through: 2004-01-13. [Open interactive contract](blounma01.html#contract) · [Contract history](blounma01.html#contract-history)
 
-Mark Blount: under contract. Evidence cutoff: 2004-01-12.
+Mark Blount: under contract. Evidence cutoff: 2004-01-13.
 
 ## Current contract
 

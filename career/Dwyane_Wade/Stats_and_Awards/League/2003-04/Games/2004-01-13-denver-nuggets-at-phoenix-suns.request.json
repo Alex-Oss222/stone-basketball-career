@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-13-denver-nuggets-at-phoenix-suns",
+ "game_date": "2004-01-13",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Denver Nuggets",
+  "rotation": "real"
+ }
+}

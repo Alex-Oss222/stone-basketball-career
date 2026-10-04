@@ -2,9 +2,9 @@
 
 # Contract | John Amaechi
 
-Known through: 2004-01-12. [Open interactive contract](amaecjo01.html#contract) · [Contract history](amaecjo01.html#contract-history)
+Known through: 2004-01-13. [Open interactive contract](amaecjo01.html#contract) · [Contract history](amaecjo01.html#contract-history)
 
-John Amaechi: under contract. Evidence cutoff: 2004-01-12.
+John Amaechi: under contract. Evidence cutoff: 2004-01-13.
 
 ## Current contract
 

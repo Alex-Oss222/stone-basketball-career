@@ -2,9 +2,9 @@
 
 # Contract | Chris Andersen
 
-Known through: 2004-01-12. [Open interactive contract](anderch01.html#contract) · [Contract history](anderch01.html#contract-history)
+Known through: 2004-01-13. [Open interactive contract](anderch01.html#contract) · [Contract history](anderch01.html#contract-history)
 
-Chris Andersen: voided. Evidence cutoff: 2004-01-12.
+Chris Andersen: voided. Evidence cutoff: 2004-01-13.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Bonzi Wells
 
-Known through: 2004-01-12. [Open interactive contract](wellsbo01.html#contract) · [Contract history](wellsbo01.html#contract-history)
+Known through: 2004-01-13. [Open interactive contract](wellsbo01.html#contract) · [Contract history](wellsbo01.html#contract-history)
 
-Bonzi Wells: under contract. Evidence cutoff: 2004-01-12.
+Bonzi Wells: under contract. Evidence cutoff: 2004-01-13.
 
 ## Current contract
 

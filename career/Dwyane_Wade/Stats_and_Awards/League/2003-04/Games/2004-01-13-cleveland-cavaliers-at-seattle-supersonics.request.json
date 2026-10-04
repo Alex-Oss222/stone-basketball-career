@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-13-cleveland-cavaliers-at-seattle-supersonics",
+ "game_date": "2004-01-13",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ }
+}

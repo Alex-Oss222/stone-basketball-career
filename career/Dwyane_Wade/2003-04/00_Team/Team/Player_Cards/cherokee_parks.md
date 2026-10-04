@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C (center and power forward; register corrected 2003-11-11, listed SF at signing)  
 **Born:** 1972-10-11 · **Age at assessment:** 31 · **Height:** 6-11 · **Weight:** 235 lb · Identity: [Basketball-Reference](https://www.basketball-reference.com/players/p/parksch02.html)  
-**Opening assessment:** October 27, 2003 · **Statistics through:** 2004-01-12 
+**Opening assessment:** October 27, 2003 · **Statistics through:** 2004-01-13 
 
 **Contract/control:** Signed October 27, 2003: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 8 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -52,7 +52,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | N/A | 30 | N/A | 21.6 | 6.3 | 4.4 | 0.7 | 0.5 | 0.7 | 0.6 | 0.503 | 0.500 | 0.605 |
-| 2003-04 | MIA | 37 | 0 | 12.2 | 4.4 | 2.5 | 1.0 | 0.4 | 0.1 | 0.6 | 40.0% | 24.0% | 76.6% |
+| 2003-04 | MIA | 38 | 0 | 12.1 | 4.3 | 2.4 | 1.0 | 0.4 | 0.1 | 0.6 | 38.7% | 22.2% | 76.6% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 
