@@ -1924,6 +1924,24 @@
    "bbr_id": "andersh01",
    "from": "New York Knicks",
    "to": "Detroit Pistons"
+  },
+  {
+   "id": "2003-04-market-2004-02-04-expire-penigde01",
+   "date": "2004-02-04",
+   "kind": "expire",
+   "player": "Desmond Penigar",
+   "bbr_id": "penigde01",
+   "from": "Minnesota Timberwolves",
+   "to": null,
+   "role": {
+    "player_id": "Desmond Penigar",
+    "bbr_id": "penigde01",
+    "position": "PF",
+    "games": 10,
+    "minutes": 89
+   },
+   "contract": null,
+   "note": "10-day contract ended (1.0 minutes a game)"
   }
  ]
 }

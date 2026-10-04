@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-02-03",
+  "as_of": "2004-02-04",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-02-02-detroit-pistons-at-miami-heat",
+  "current_event": "2004-02-04-miami-heat-at-new-jersey-nets",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-02-03"
+              "2004-02-04"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-02-02-detroit-pistons-at-miami-heat"
+              "2004-02-04-miami-heat-at-new-jersey-nets"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2004-02-03",
+              "2004-02-04",
               "Current checkpoint",
-              "2004-02-02-detroit-pistons-at-miami-heat",
+              "2004-02-04-miami-heat-at-new-jersey-nets",
               "Recorded",
               {
                 "label": "Owning event",
@@ -94,8 +94,8 @@
               }
             ],
             [
-              "2004-02-04",
-              "Next Miami game, at New Jersey Nets",
+              "2004-02-07",
+              "Next Miami game, vs New York Knicks",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
@@ -528,6 +528,10 @@
           "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -536,7 +540,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-03"
+          "value": "2004-02-04"
         },
         {
           "label": "Team",
@@ -1002,6 +1006,10 @@
           "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1010,7 +1018,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-03"
+          "value": "2004-02-04"
         },
         {
           "label": "Team",
@@ -1529,6 +1537,10 @@
           "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1537,7 +1549,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-03"
+          "value": "2004-02-04"
         },
         {
           "label": "Team",
@@ -2164,6 +2176,10 @@
           "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2172,7 +2188,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-03"
+          "value": "2004-02-04"
         },
         {
           "label": "Team",
@@ -2608,6 +2624,10 @@
           "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2616,7 +2636,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-03"
+          "value": "2004-02-04"
         },
         {
           "label": "Team",
@@ -3048,6 +3068,10 @@
           "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3056,7 +3080,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-03"
+          "value": "2004-02-04"
         },
         {
           "label": "Team",
@@ -3497,6 +3521,10 @@
           "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3505,7 +3533,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-03"
+          "value": "2004-02-04"
         },
         {
           "label": "Team",
@@ -3994,6 +4022,10 @@
           "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4002,7 +4034,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-03"
+          "value": "2004-02-04"
         },
         {
           "label": "Team",
@@ -4019,7 +4051,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "56 closed game records in 2003-04 through 2004-02-03. Competitions remain separate.",
+      "summary": "57 closed game records in 2003-04 through 2004-02-04. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -4046,12 +4078,12 @@
             ],
             [
               "regular",
-              49,
-              34.65819047619048,
-              17.53061224489796,
-              4.775510204081633,
-              4.73469387755102,
-              1.163265306122449,
+              50,
+              34.73569166666667,
+              17.62,
+              4.72,
+              4.68,
+              1.14,
               "Complete"
             ]
           ]
@@ -4079,12 +4111,12 @@
             ],
             [
               "regular",
-              287,
-              569,
-              0.5043936731107206,
-              45,
-              119,
-              0.37815126050420167
+              294,
+              584,
+              0.5034246575342466,
+              48,
+              124,
+              0.3870967741935484
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -4658,6 +4690,16 @@
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md"
               }
+            ],
+            [
+              "2004-02-04",
+              "regular",
+              "New Jersey Nets",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md"
+              }
             ]
           ]
         },
@@ -5019,6 +5061,10 @@
           "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -5027,7 +5073,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-03"
+          "value": "2004-02-04"
         },
         {
           "label": "Team",

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-03**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-04**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -134,7 +134,7 @@ Card date: **2004-02-03**. 504 registry players, one Markdown card and one inter
 | [Corey Maggette](maggeco01.md) | Los Angeles Clippers | 24 | sourced | [open](maggeco01.html) |
 | [Cuttino Mobley](moblecu01.md) | Houston Rockets | 28 | sourced | [open](moblecu01.html) |
 | [Dahntay Jones](jonesda02.md) | Memphis Grizzlies | 23 | sourced | [open](jonesda02.html) |
-| [Dajuan Wagner](wagneda02.md) | Cleveland Cavaliers | 20 | sourced | [open](wagneda02.html) |
+| [Dajuan Wagner](wagneda02.md) | Cleveland Cavaliers | 21 | sourced | [open](wagneda02.html) |
 | [Dana Barros](barroda01.md) | Boston Celtics | None | silhouette | [open](barroda01.html) |
 | [Darvin Ham](hamda01.md) | Detroit Pistons | 30 | sourced | [open](hamda01.html) |
 | [David Wesley](wesleda01.md) | New Orleans Hornets | 33 | sourced | [open](wesleda01.html) |
@@ -251,7 +251,7 @@ Card date: **2004-02-03**. 504 registry players, one Markdown card and one inter
 | [James Jones](jonesja02.md) | Indiana Pacers | 23 | sourced | [open](jonesja02.html) |
 | [James Posey](poseyja01.md) | Memphis Grizzlies | 27 | sourced | [open](poseyja01.html) |
 | [Jarvis Hayes](hayesja01.md) | Washington Wizards | 22 | sourced | [open](hayesja01.html) |
-| [Jason Kapono](kaponja01.md) | Cleveland Cavaliers | 22 | sourced | [open](kaponja01.html) |
+| [Jason Kapono](kaponja01.md) | Cleveland Cavaliers | 23 | sourced | [open](kaponja01.html) |
 | [Jim Jackson](jacksji01.md) | Houston Rockets | 33 | sourced | [open](jacksji01.html) |
 | [Jiri Welsch](welscji01.md) | Boston Celtics | 24 | sourced | [open](welscji01.html) |
 | [Joe Smith](smithjo02.md) | Milwaukee Bucks | 28 | sourced | [open](smithjo02.html) |

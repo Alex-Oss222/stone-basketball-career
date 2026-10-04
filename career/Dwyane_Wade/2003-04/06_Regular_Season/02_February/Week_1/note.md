@@ -15,5 +15,6 @@ days: 1-7
 ## Games and events
 
 - 2004-02-02: Detroit Pistons 92 at Miami Heat 97 — Miami Heat W 97-92 ([Game 1](Game_1.md), event `2004-02-02-detroit-pistons-at-miami-heat`)
+- 2004-02-04: Miami Heat 89 at New Jersey Nets 88 — Miami Heat W 89-88 ([Game 2](Game_2.md), event `2004-02-04-miami-heat-at-new-jersey-nets`)
 
 ## Consequences
