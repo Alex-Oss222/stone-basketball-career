@@ -2,9 +2,9 @@
 
 # Contract | Jumaine Jones
 
-Known through: 2004-02-23. [Open interactive contract](jonesju01.html#contract) · [Contract history](jonesju01.html#contract-history)
+Known through: 2004-02-24. [Open interactive contract](jonesju01.html#contract) · [Contract history](jonesju01.html#contract-history)
 
-Jumaine Jones: voided. Evidence cutoff: 2004-02-23.
+Jumaine Jones: voided. Evidence cutoff: 2004-02-24.
 
 ## Current contract
 
