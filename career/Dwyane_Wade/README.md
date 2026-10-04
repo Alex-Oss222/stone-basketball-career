@@ -41,8 +41,8 @@ Career cutoff: **2003-11-12**. Club competitions and national-team events have s
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04](Stats_and_Awards/2003-04/README.md) | 19 | Miami Heat | NBA | SG / PG | 7 | 2 | 23.9 | 3.3 | 7.0 | .469 | 1.0 | 2.6 | .389 | 2.3 | 4.4 | .516 | .541 | 3.3 | 3.6 | .920 | 1.1 | 2.3 | 3.4 | 3.0 | 1.3 | 0.4 | 0.9 | 2.3 | 10.9 | .633 | — |
-| Career total | 19 | Miami Heat | NBA | SG / PG | 7 | 2 | 23.9 | 3.3 | 7.0 | .469 | 1.0 | 2.6 | .389 | 2.3 | 4.4 | .516 | .541 | 3.3 | 3.6 | .920 | 1.1 | 2.3 | 3.4 | 3.0 | 1.3 | 0.4 | 0.9 | 2.3 | 10.9 | .633 | — |
+| [2003-04](Stats_and_Awards/2003-04/README.md) | 19 | Miami Heat | NBA | SG / PG | 8 | 3 | 25.2 | 3.9 | 7.9 | .492 | 1.0 | 2.6 | .381 | 2.9 | 5.2 | .548 | .556 | 2.9 | 3.1 | .920 | 1.4 | 2.4 | 3.8 | 3.5 | 1.1 | 0.5 | 0.8 | 2.1 | 11.6 | .628 | — |
+| Career total | 19 | Miami Heat | NBA | SG / PG | 8 | 3 | 25.2 | 3.9 | 7.9 | .492 | 1.0 | 2.6 | .381 | 2.9 | 5.2 | .548 | .556 | 2.9 | 3.1 | .920 | 1.4 | 2.4 | 3.8 | 3.5 | 1.1 | 0.5 | 0.8 | 2.1 | 11.6 | .628 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 

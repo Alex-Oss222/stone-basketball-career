@@ -95,4 +95,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_2.md)
+- [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

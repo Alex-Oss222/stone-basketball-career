@@ -70,7 +70,7 @@ G and GS are counts; MP and counting statistics are **per appearance**. Shooting
 | This week | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [Previous week](../../11_November/Week_4/README.md) | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | Month through this week | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Season through this week | 19 | Miami Heat | NBA | SG / PG | 7 | 2 | 23.9 | 3.3 | 7.0 | .469 | 1.0 | 2.6 | .389 | 2.3 | 4.4 | .516 | .541 | 3.3 | 3.6 | .920 | 1.1 | 2.3 | 3.4 | 3.0 | 1.3 | 0.4 | 0.9 | 2.3 | 10.9 | .633 | — |
+| Season through this week | 19 | Miami Heat | NBA | SG / PG | 8 | 3 | 25.2 | 3.9 | 7.9 | .492 | 1.0 | 2.6 | .381 | 2.9 | 5.2 | .548 | .556 | 2.9 | 3.1 | .920 | 1.4 | 2.4 | 3.8 | 3.5 | 1.1 | 0.5 | 0.8 | 2.1 | 11.6 | .628 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 

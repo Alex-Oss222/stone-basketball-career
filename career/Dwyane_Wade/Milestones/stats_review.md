@@ -6,7 +6,7 @@ Career date: 2003-11-12 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-14 closed game records in 2003-04 through 2003-11-12. Competitions remain separate.
+15 closed game records in 2003-04 through 2003-11-12. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
-| regular | 7 | 23.9 | 10.9 | 3.4 | 3.0 | 0.857 | Complete |
+| regular | 8 | 25.2 | 11.6 | 3.8 | 3.5 | 0.750 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A |
-| regular | 23 | 49 | 0.469 | 7 | 18 | 0.389 |
+| regular | 31 | 63 | 0.492 | 8 | 21 | 0.381 |
 
 ## Closed source games
 
@@ -44,6 +44,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2003-11-04 | regular | San Antonio Spurs | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) |
 | 2003-11-08 | regular | Minnesota Timberwolves | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md) |
 | 2003-11-11 | regular | Houston Rockets | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_2.md) |
+| 2003-11-12 | regular | Cleveland Cavaliers | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -104,4 +105,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_2.md)
+- [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)
