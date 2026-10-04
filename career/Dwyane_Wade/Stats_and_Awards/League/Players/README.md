@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-19**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-20**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -94,7 +94,7 @@ Card date: **2004-02-19**. 504 registry players, one Markdown card and one inter
 | [Shane Heal](healsh01.md) | San Antonio Spurs | None | silhouette | [open](healsh01.html) |
 | [Smush Parker](parkesm01.md) | Cleveland Cavaliers | 22 | sourced | [open](parkesm01.html) |
 | [Speedy Claxton](claxtsp01.md) | Golden State Warriors | 25 | sourced | [open](claxtsp01.html) |
-| [Stephon Marbury](marbust01.md) | Phoenix Suns | 26 | sourced | [open](marbust01.html) |
+| [Stephon Marbury](marbust01.md) | Phoenix Suns | 27 | sourced | [open](marbust01.html) |
 | [Steve Blake](blakest01.md) | Washington Wizards | 23 | sourced | [open](blakest01.html) |
 | [Steve Francis](francst01.md) | Houston Rockets | 26 | sourced | [open](francst01.html) |
 | [Steve Kerr](kerrst01.md) | San Antonio Spurs | 38 | sourced | [open](kerrst01.html) |

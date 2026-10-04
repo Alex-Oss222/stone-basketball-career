@@ -15,5 +15,6 @@ days: 15-21
 ## Games and events
 
 - 2004-02-17: Utah Jazz 88 at Miami Heat 91 — Miami Heat W 91-88 ([Game 1](Game_1.md), event `2004-02-17-utah-jazz-at-miami-heat`)
+- 2004-02-20: Atlanta Hawks 84 at Miami Heat 82 — Miami Heat L 82-84 ([Game 2](Game_2.md), event `2004-02-20-atlanta-hawks-at-miami-heat`)
 
 ## Consequences

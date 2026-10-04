@@ -2,9 +2,9 @@
 
 # Contract | Speedy Claxton
 
-Known through: 2004-02-19. [Open interactive contract](claxtsp01.html#contract) · [Contract history](claxtsp01.html#contract-history)
+Known through: 2004-02-20. [Open interactive contract](claxtsp01.html#contract) · [Contract history](claxtsp01.html#contract-history)
 
-Speedy Claxton: under contract. Evidence cutoff: 2004-02-19.
+Speedy Claxton: under contract. Evidence cutoff: 2004-02-20.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Jon Barry
 
-Known through: 2004-02-19. [Open interactive contract](barryjo01.html#contract) · [Contract history](barryjo01.html#contract-history)
+Known through: 2004-02-20. [Open interactive contract](barryjo01.html#contract) · [Contract history](barryjo01.html#contract-history)
 
-Jon Barry: under contract. Evidence cutoff: 2004-02-19.
+Jon Barry: under contract. Evidence cutoff: 2004-02-20.
 
 ## Current contract
 
