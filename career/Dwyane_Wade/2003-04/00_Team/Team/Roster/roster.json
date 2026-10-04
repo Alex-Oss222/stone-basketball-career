@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "owner": "ai_gm",
-  "as_of": "2003-10-27",
+  "as_of": "2003-11-11",
   "season": "2003-04",
   "team": "Miami Heat",
   "roster_kind": "team_control_register",
@@ -417,14 +417,15 @@
       "id": "cherokee_parks",
       "name": "Cherokee Parks",
       "positions": [
-        "SF"
+        "C"
       ],
-      "date_of_birth": null,
+      "date_of_birth": "1972-10-11",
       "status": "camp_contract",
       "control": "Signed October 27, 2003: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 8 years of service (minimum_salary_corrections.json).",
       "working_role": "Roster refill",
       "player_card": "../Player_Cards/cherokee_parks.md",
-      "bbr_id": "parksch02"
+      "bbr_id": "parksch02",
+      "date_of_birth_from": "2003-11-12"
     },
     {
       "id": "udonis_haslem",

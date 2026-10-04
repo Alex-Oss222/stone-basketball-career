@@ -10,7 +10,7 @@
 **Age at assessment:** 25 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** September 30, 2003 · **Statistics through:** September 30, 2003
 
-**Contract/control:** October 27, 2003: camp contract of September 30, 2003 voided: he was a restricted free agent; a camp contract bypassed his club's right to match; he returns to his real club (rule 2 no longer applies). (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** October 27, 2003: camp contract of September 30, 2003 voided: he was a restricted free agent; a camp contract bypassed his club's right to match; he returns to his real club (rule 2 no longer applies). (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/batismi01.html#contract) · [Contract history](../../../../Contracts/players/batismi01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

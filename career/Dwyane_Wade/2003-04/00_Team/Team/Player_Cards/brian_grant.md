@@ -4,7 +4,7 @@
 **Age at assessment:** 31 · **Height:** 6-9 · **Weight:** 254 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Existing contract runs through 2006-07, with an early-termination option after 2005-06; 2003-04 salary $12,130,648. (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Existing contract runs through 2006-07, with an early-termination option after 2005-06; 2003-04 salary $12,130,648. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/grantbr01.html#contract) · [Contract history](../../../../Contracts/players/grantbr01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

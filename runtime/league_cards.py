@@ -175,10 +175,16 @@ def club_on(player, on, *, holdings=None, departures=None, transactions=None, ro
     # A Miami holding that has ended leaves him a free agent until a move dated after the release;
     # real moves skipped while Miami held him (rule 2) do not come back.
     released = max((e["until"] for e in holdings.get("entries", [])
-                    if _matches(player, bbr_id=e.get("bbr_id"), name=e.get("player")) and e.get("until") and e["until"] <= on),
+                    if _matches(player, bbr_id=e.get("bbr_id"), name=e.get("player")) and e.get("until") and e["until"] <= on
+                    and not e.get("void")),
                    default=None)
     if released:
-        club, basis, rights = None, f"Miami's holding ended on {released}; no later club recorded", False
+        # His real career resumes: the club the season's real roster has him with on the date, as the games
+        # place him (`rotations.real_rotation`); a later dated move below overrides it.
+        club = _real_stint_club(player, on, root)
+        basis = (f"Miami's holding ended on {released}; back on his real {SEASON} path" if club else
+                 f"Miami's holding ended on {released}; no later club recorded")
+        rights = False
     for when, target, why, carries_rights in world_moves(player, transactions):
         if when > on:
             break
@@ -197,8 +203,27 @@ def club_on(player, on, *, holdings=None, departures=None, transactions=None, ro
     return {"club": club, "code": _code(club, transactions, player), "basis": basis, "rights": rights}
 
 
+def _real_stint_club(player, on, root=ROOT):
+    """The club whose real-season stint covers `on` for the player (the games' roster rule), or None."""
+    from .rotations import load_rosters, season_fraction
+    try:
+        rosters, fraction = load_rosters(SEASON, root), season_fraction(SEASON, on, root)
+    except (OSError, KeyError, ValueError):
+        return None
+    for club, entry in sorted(rosters.items()):
+        for p in entry["players"]:
+            if _matches(player, bbr_id=p.get("bbr_id"), name=p.get("player_id")):
+                start, end = p.get("window") or p.get("span") or [0.0, 1.0]
+                if start <= fraction < end or (end >= 1.0 and fraction >= start):
+                    return club
+    return None
+
+
 def _any_holding(player, holdings, on):
+    """Miami's holding on the date; a void entry (a camp contract that was never valid) is none."""
     for entry in holdings.get("entries", []):
+        if entry.get("void"):
+            continue
         if _matches(player, bbr_id=entry.get("bbr_id"), name=entry.get("player")) and _within(entry, on):
             return entry
     return None

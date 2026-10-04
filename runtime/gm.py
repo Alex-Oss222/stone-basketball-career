@@ -206,6 +206,12 @@ class FrontOffice:
         for p in read("career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json", self.root)["players"]:
             if p.get("bbr_id") and p.get("position"):
                 out.setdefault(p["bbr_id"], p["position"].split("-")[0].split("/")[0])
+        # Last: the listed position on a 2003-04 club roster (identity only, never minutes or results),
+        # for a player outside the 2002-03 baseline, so no signing falls back to a guessed position.
+        for club in read("library/2003/league/nba_2003_04_team_rosters.json", self.root)["clubs"].values():
+            for p in club["players"]:
+                if p.get("bbr_id") and p.get("position"):
+                    out.setdefault(p["bbr_id"], p["position"].split("-")[0].split("/")[0])
         return out
 
     def keep_holds(self):

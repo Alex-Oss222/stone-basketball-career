@@ -136,14 +136,16 @@
    "bbr_id": "clarkke01",
    "from": "2003-09-30",
    "until": "2003-10-27",
-   "basis": "camp contract 2003-09-30 (camp_roster.json); voided 2003-10-27 (signing_corrections.json)"
+   "basis": "camp contract 2003-09-30 (camp_roster.json); voided 2003-10-27 (signing_corrections.json)",
+   "void": true
   },
   {
    "player": "Jumaine Jones",
    "bbr_id": "jonesju01",
    "from": "2003-09-30",
    "until": "2003-10-27",
-   "basis": "camp contract 2003-09-30 (camp_roster.json); voided 2003-10-27 (signing_corrections.json)"
+   "basis": "camp contract 2003-09-30 (camp_roster.json); voided 2003-10-27 (signing_corrections.json)",
+   "void": true
   },
   {
    "player": "Stephen Jackson",
@@ -157,7 +159,8 @@
    "bbr_id": "evansre01",
    "from": "2003-09-30",
    "until": "2003-10-27",
-   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+   "basis": "camp contract 2003-09-30 (camp_roster.json)",
+   "void": true
   },
   {
    "player": "Dion Glover",
@@ -178,14 +181,16 @@
    "bbr_id": "anderch01",
    "from": "2003-09-30",
    "until": "2003-10-27",
-   "basis": "camp contract 2003-09-30 (camp_roster.json); voided 2003-10-27 (signing_corrections.json)"
+   "basis": "camp contract 2003-09-30 (camp_roster.json); voided 2003-10-27 (signing_corrections.json)",
+   "void": true
   },
   {
    "player": "Mike Batiste",
    "bbr_id": "batismi01",
    "from": "2003-09-30",
    "until": "2003-10-27",
-   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+   "basis": "camp contract 2003-09-30 (camp_roster.json)",
+   "void": true
   },
   {
    "player": "Scott Padgett",
@@ -222,5 +227,6 @@
    "until": null,
    "basis": "refill signing 2003-10-27 (signing_corrections.json)"
   }
- ]
+ ],
+ "void_definition": "An entry with void: true records a camp contract voided because the player was not truly available when Miami signed him (04_Training_Camp/signing_corrections.json). Its dates stay as played games used them, but it never made him Miami's: his real moves apply as if Miami had not signed him."
 }

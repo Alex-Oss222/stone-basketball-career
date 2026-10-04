@@ -10,7 +10,7 @@
 **Age at assessment:** 19 · **Height:** 6-6 in shoes · **Weight:** 220 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Rookie-scale contract signed July 21, 2003: $2,197,000 counted in 2003-04, three seasons plus a 2006-07 team option; 120% of scale at the maximum, 80% protected. (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Rookie-scale contract signed July 21, 2003: $2,197,000 counted in 2003-04, three seasons plus a 2006-07 team option; 120% of scale at the maximum, 80% protected. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/wadedw01.html#contract) · [Contract history](../../../../Contracts/players/wadedw01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

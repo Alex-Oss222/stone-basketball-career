@@ -10,7 +10,7 @@
 **Age at assessment:** 23 · **Height:** 6-7 · **Weight:** 228 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Rookie contract through 2004-05, plus a 2005-06 team option; 2003-04 salary $1,804,680. (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Rookie contract through 2004-05, plus a 2005-06 team option; 2003-04 salary $1,804,680. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/butleca01.html#contract) · [Contract history](../../../../Contracts/players/butleca01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

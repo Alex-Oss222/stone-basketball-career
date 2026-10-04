@@ -25,6 +25,7 @@ import json
 import math
 from pathlib import Path
 
+from .camp import playable
 from .contracts import club_ledger
 from .market import UNDATED_EXIT
 from .valuation import read
@@ -83,6 +84,38 @@ def seasons_from(first, years):
 
 
 # -- assets ------------------------------------------------------------------------------------
+def dated_inventory(on, valuation, root=ROOT):
+    """Each real club's contract inventory as its roster stands on `on`.
+
+    The June 26, 2003 inventory is the source of the terms; who holds each contract on the date comes from
+    the world's dated moves (`club_strength.League`: real signings, trades and waivers to the date, rule 1
+    skipping any involving Miami, rule 2 removing the players Miami holds). A traded contract travels with
+    its player. A player who joined by signing has no terms in the inventory, so he is listed with his old
+    entry's free-agent status and is never a trade candidate. Miami's own entry is never used here."""
+    from .club_strength import League
+    june = read_json(CONTRACTS_PATH, root)["clubs"]
+    league = League(on, valuation.value, root)
+    rosters = league.rosters
+    on_date = {b: club for club, members in rosters.items() for b in members}
+    in_baseline = set().union(*league.baseline.values())
+    placed = {club: [] for club in june}
+    for club, entry in june.items():
+        for p in entry["players"]:
+            b = p.get("bbr_id")
+            if not b:
+                placed[club].append(p)            # unidentified rows stay where June had them
+                continue
+            if b in on_date:
+                holder = on_date[b]
+            elif b in in_baseline:
+                continue                          # waived, or held by Miami: on no real club's roster
+            else:
+                holder = club                     # under contract but off the end-of-season list (injured all year)
+            if holder != MIAMI and holder in placed:
+                placed[holder].append(dict(p, held_on=on))
+    return {club: (entry if club == MIAMI else dict(entry, players=placed[club], as_of=on)) for club, entry in june.items()}
+
+
 class Assets:
     """Values of players and picks on a date, from on-date evidence."""
 
@@ -90,7 +123,7 @@ class Assets:
         self.on, self.market, self.root = on, market, Path(root)
         self.valuation = market.valuation
         self.standings = read_json(STANDINGS_PATH, root)["clubs"]
-        self.contracts = read_json(CONTRACTS_PATH, root)["clubs"]
+        self.contracts = dated_inventory(on, self.valuation, root)
         self.cap_rules = read_json(CAP_RULES_PATH, root)
         self.tax_line = self.cap_rules.get("luxury_tax_line_projection_july_2003", 57000000)
         self.positions = {}
@@ -413,7 +446,8 @@ class TradeDesk:
         if t["partner_after"] > self.cap and t["out_full"] > t["in_match"] * pct + plus:
             errors.append(f"{club} over the cap after the trade: incoming ${t['out_full']:,.0f} exceeds {pct:.0%} of its outgoing ${t['in_match']:,.0f} plus ${plus:,}" + byc)
         # Rosters of at most 15 after the trade (Miami; the partner's count is not on the inventory for the date).
-        active = sum(1 for r in self.fo.roster["players"] if not any(w in r["status"] for w in ("free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "pending", "voided")))
+        # The same rule as the cut and the game builder (camp.playable): unsigned draft rights are not a roster spot.
+        active = sum(1 for r in self.fo.roster["players"] if playable(r["status"]))
         leaving = [n for n in trade.get("miami_out", []) if not (own and own["player"] == n)]   # the own sign-and-trade player is not on the active register
         if active - len(leaving) + len(trade.get("miami_in", [])) > rules["roster_max_after_trade"]:
             errors.append(f"Miami would carry more than {rules['roster_max_after_trade']} players")

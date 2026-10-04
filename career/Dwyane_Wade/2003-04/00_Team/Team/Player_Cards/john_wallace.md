@@ -4,7 +4,7 @@
 **Age at assessment:** 29 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** October 27, 2003 · **Statistics through:** October 27, 2003
 
-**Contract/control:** Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 6 years of service (minimum_salary_corrections.json). (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 6 years of service (minimum_salary_corrections.json). (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/wallajo01.html#contract) · [Contract history](../../../../Contracts/players/wallajo01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

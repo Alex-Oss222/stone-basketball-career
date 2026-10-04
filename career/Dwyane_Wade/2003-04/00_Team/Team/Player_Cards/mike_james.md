@@ -10,7 +10,7 @@
 **Age at assessment:** 28 · **Height:** 6-2 · **Weight:** 188 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Signed July 17, 2003: 3 seasons, $10,294,422 ($3,050,199 in 2003-04), $10,294,422 guaranteed; route early_bird. (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed July 17, 2003: 3 seasons, $10,294,422 ($3,050,199 in 2003-04), $10,294,422 guaranteed; route early_bird. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/jamesmi01.html#contract) · [Contract history](../../../../Contracts/players/jamesmi01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

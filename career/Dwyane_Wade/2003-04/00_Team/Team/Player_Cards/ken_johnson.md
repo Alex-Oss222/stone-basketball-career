@@ -10,7 +10,7 @@
 **Age at assessment:** 25 · **Height:** 6-11 · **Weight:** 240 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
 
-**Contract/control:** Free agent from July 1, 2003 after Miami declined his team option on June 30; no cap hold is carried. (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Free agent from July 1, 2003 after Miami declined his team option on June 30; no cap hold is carried. (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/johnske03.html#contract) · [Contract history](../../../../Contracts/players/johnske03.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

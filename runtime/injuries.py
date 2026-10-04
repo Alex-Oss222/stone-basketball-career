@@ -43,12 +43,16 @@ def age_on(birth_date, game_date):
 
 
 def simulated_ages(season, game_date, root=ROOT):
-    """Name key -> age on the game date for the simulated club's register."""
+    """Name key -> age on the game date for the simulated club's register.
+
+    A birth date recorded later (`date_of_birth_from`) is used only for games from that date, so a
+    played game's inputs never change when the register gains an identity fact."""
     path = Path(root) / f"career/Dwyane_Wade/{season}/00_Team/Team/Roster/roster.json"
     if not path.exists():
         return {}
     return {alias(p["name"]): age_on(p["date_of_birth"], game_date)
-            for p in json.loads(path.read_text(encoding="utf-8"))["players"] if p.get("date_of_birth")}
+            for p in json.loads(path.read_text(encoding="utf-8"))["players"]
+            if p.get("date_of_birth") and p.get("date_of_birth_from", game_date) <= game_date}
 
 
 def injured_out(results, team=SIMULATED_CLUB):
