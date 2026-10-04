@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-11**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-12**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -531,7 +531,7 @@ Card date: **2004-02-11**. 504 registry players, one Markdown card and one inter
 | [Ruben Boumtje-Boumtje](boumtru01.md) | Portland Trail Blazers | None | silhouette | [open](boumtru01.html) |
 | [Samaki Walker](walkesa01.md) | Los Angeles Lakers | 27 | sourced | [open](walkesa01.html) |
 | [Samuel Dalembert](dalemsa01.md) | Philadelphia 76ers | None | silhouette | [open](dalemsa01.html) |
-| [Scot Pollard](pollasc01.md) | Indiana Pacers | 28 | sourced | [open](pollasc01.html) |
+| [Scot Pollard](pollasc01.md) | Indiana Pacers | 29 | sourced | [open](pollasc01.html) |
 | [Scott Williams](willisc01.md) | Phoenix Suns | 35 | sourced | [open](willisc01.html) |
 | [Sean Rooks](rooksse01.md) | New Orleans Hornets | 34 | sourced | [open](rooksse01.html) |
 | [Shaquille O'Neal](onealsh01.md) | Los Angeles Lakers | 31 | sourced | [open](onealsh01.html) |
