@@ -52,9 +52,9 @@ Staff estimates against NBA rotation players at the assessment date. Scale: 1–
 | Rim protection | Not assessed | Weak-side blocks are documented, but no NBA staff grade exists. |
 
 <!-- rookie-estimate:start -->
-### Statistical estimate from college record (rookie-2003.1)
+### Statistical estimate from college record (rookie-2003.2)
 
-**Estimate, not NBA evidence.** Translated from 3 UConn seasons (98 games, 3178 minutes) with provisional college-to-NBA factors and shrinkage toward the 2002-03 NBA average. Grades rank the estimate against 2002-03 NBA players with 500+ minutes (20-80, 50 = median). The engine uses the estimated rates. Method: [statistical ratings](../../../../../../docs/statistical_ratings.md#rookie-estimates).
+**Estimate, not NBA evidence.** Translated from 3 UConn seasons (98 games, 3178 minutes) with provisional college-to-NBA factors and shrinkage toward the 2002-03 NBA average. Grades rank the estimate against 2002-03 NBA players with 500+ minutes (20-80, 50 = median). Dated scouting adds paint-pressure and position-rebound priors. This model correction applies from 2003-11-12; earlier games retain rookie-2003.1. Method: [statistical ratings](../../../../../../docs/statistical_ratings.md#rookie-estimates).
 
 | Rate | Grade (20-80) | Estimate | NBA average |
 | --- | ---: | ---: | ---: |
@@ -62,10 +62,12 @@ Staff estimates against NBA rotation players at the assessment date. Scale: 1–
 | Three-point shooting | 65 | 0.359 | 0.349 |
 | Free throws | 80 | 0.910 | 0.758 |
 | Assist production | 72 | 0.237 | 0.152 |
-| Offensive rebounding | 50 | 0.052 | 0.057 |
-| Defensive rebounding | 47 | 0.130 | 0.143 |
+| Offensive rebounding | 45 | 0.044 | 0.057 |
+| Defensive rebounding | 49 | 0.138 | 0.143 |
 | Steal production | 73 | 0.024 | 0.017 |
 | Block production | 66 | 0.021 | 0.015 |
+
+Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.112. Pressure concerns affect turnovers against positive team defense, not the base rate. Paint and pull-up location weights preserve aggregate shooting accuracy. Rebound-led transition applies only after his own defensive rebound. These are provisional model assumptions, not tracking data.
 <!-- rookie-estimate:end -->
 
 ## Changes and coaching notes

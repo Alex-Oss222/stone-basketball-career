@@ -81,15 +81,16 @@ The data collector reported an ESPN cross-check for 423 players and live Basketb
 
 ## Rookie estimates
 
-Draftees have no NBA record, so they get an estimate from pre-draft statistics instead (model `rookie-2003.1`, `runtime/prospects.py`).
+Draftees have no NBA record, so they get an estimate from pre-draft statistics instead (`runtime/prospects.py`). Model `rookie-2003.2` adds dated qualitative scouting. On this lineage it takes effect on **November 12, 2003**, after the last closed game at adoption. This is a prospective engine-model correction, not an in-season talent gain or new scouting evidence. Games through November 11 keep the byte-preserved [rookie-2003.1 archive](../library/2003/league/nba_2003_rookie_estimates_2003_1.json).
 
 - [Pre-draft statistics](../library/2003/league/nba_2003_prospect_stats.json): one record per draftee, with only evidence available on draft night. Wade's record is copied from his [career profile](../career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md), section 13. That profile is alternate history (UConn, born 1984), so it is the canonical source and the historical Wade's college numbers are not used.
 - [Generated estimates](../library/2003/league/nba_2003_rookie_estimates.json): rebuilt with `python scripts/import_prospect_stats.py`; `--update-card` refreshes the estimate block on Wade's card. Validation fails if the file is stale.
+- [Dated scouting](../library/2003/league/nba_2003_prospect_scouting.json) and [schema](../foundation/nba_prospect_scouting.schema.json): each trait has a qualitative classification, evidence date and exact profile sections. The profile is still canonical. Runtime checks reject unknown traits, unsupported classifications, evidence after June 26, unknown prospect IDs, changed profile hashes and missing sections. Review the traits before updating a source hash.
 
 Method, per rate:
 
 1. Combine pre-draft seasons with recency weights 3, 2, 1 (most recent first).
-2. Translate. Shooting percentages and attempt tendencies are the observed rate times a level factor. Production rates (usage, assists, rebounds, steals, blocks) are the NBA baseline times the player's per-minute production relative to the NBA per-minute average, times a level factor. Pre-draft records give total rebounds only, so offensive and defensive rebounding share one relative rate. Fouls are not recorded, so the NBA baseline is used.
+2. Translate. Shooting percentages and attempt tendencies are the observed rate times a level factor. Production rates (usage, assists, rebounds, steals, blocks) are the NBA baseline times the player's per-minute production relative to the NBA per-minute average, times a level factor. Fouls are not recorded, so the NBA baseline is used. A scouted position supplies an ORB/DRB split prior; without scouting, total rebounds retain the original shared relative rate.
 3. Shrink toward the NBA baseline with the veteran priors above, counting each college attempt or minute as half of an NBA one.
 
 | NCAA level factor | Value | Reason |
@@ -104,6 +105,31 @@ Method, per rate:
 | Steals, blocks | 0.80 | |
 
 All of these are provisional judgement constants, not fitted values. Replacing them with factors fitted on pre-2003 drafts (college season against rookie season) is the obvious upgrade once that data is in the library. They must never be tuned to make a 2003 draftee match his real NBA career.
+
+### Scouting assumptions and their scope
+
+`runtime/prospect_scouting.py` supplies the same mapping for any prospect with the same evidence. No player-name check selects these modifiers. A player without a scouting record retains exactly the generic statistical rates and has no style modifiers.
+
+| Evidence | Model effect | Limitation |
+| --- | --- | --- |
+| Plus paint pressure | Multiply translated FTA/FGA by 1.15 before the existing sample shrinkage | A bounded judgment, not a fitted foul-drawing coefficient |
+| Concern about pressure decisions | Multiply only the positive team-defense turnover increment by 1.5 | Team defensive value is a coarse pressure proxy; there are no explicit trap or coverage events yet. Base TOV/FGA and the adjustment against ordinary or weak defense are unchanged |
+| Plus transition push | After that player's own defensive rebound, multiply the existing .22 break opportunity by 1.25, giving .275 | No change after teammates' rebounds or steals; ordinary pace, dead-ball and late-game gates still apply |
+| Plus paint pressure | Spatial multipliers 1.30 at 0-3 feet and 1.10 at 3-10 feet | Modeled style, not measured individual shot-location data |
+| Plus midrange pull-up | Spatial multipliers 1.10 at 10-16 feet and 1.05 at 16 feet to the arc | The six existing bands cannot isolate exactly 12-18 feet |
+| Scouted primary position | Redistribute total translated rebound production with a dated position split | No fabricated college ORB/DRB counts and no extra bonus for a plus rebounding trait |
+
+Spatial weights multiply the prior-season league shares and are normalized separately within two- and three-point attempts. The water-filling efficiency calculation uses those same new shares, preserving the player's exact aggregate make probability even near zero or one. These weights do not change three-point attempt rate, aggregate shooting accuracy or unrelated skills.
+
+The rebound prior pools actual 2002-03 ORB/DRB totals for players with at least 500 minutes and an unambiguous primary position in the end-of-season roster. IDs count once; ambiguous or unmatched positions are omitted. The SG cohort contains 57 players, 3,122 offensive rebounds and 10,331 defensive rebounds, giving an offensive share of .2321. The translated implied total rebounds per minute is conserved, as is the estimate after equal-sample shrinkage. This is a position split prior, not an empirically fitted NCAA-to-NBA translation.
+
+Contact finishing, secondary creation, set shooting, limited off-dribble threes, guard rebounding, screen navigation, help discipline and weak-side event defense remain explicitly sourced evidence. They do not add another numerical bonus to box-score rates. Catch versus pull-up three accuracy and possession-level defensive assignments require new engine events before they can be estimated separately. Camp defense now stays at the profile baseline of 45 until assignment-level evidence exists; preseason steals plus blocks no longer move it. The already recorded October 24 grade and camp decisions remain unchanged.
+
+For this Wade, the correction moves FTA/FGA from .309 to .352 and ORB%/DRB% from .052/.130 to .044/.138. It leaves 2P% .500, 3P% .359, FT% .910, AST% .237 and base TOV/FGA .112 unchanged. These are expected rates before the same previously journaled season development swing, not targets for his simulated box scores.
+
+Generated estimates carry the statistical source hash plus the scouting JSON, canonical profile, prior-season statistics and roster hashes. The frozen game profile carries its dated traits, derived style and source hashes. Loading a new-game profile recomputes the expected artifact and rejects stale inputs. Earlier dates load and validate only the archived generic model, preserving closed packet hashes and the existing `development:2003-04:wadedw01` draw. No requests, results, rotations, career dates or awards are rewritten. A day-one replay would require a separate pre-season lineage, not changes to these completed games.
+
+The missing calibration study remains separate work: a verified 1997-2002 draft cohort, using pre-draft college evidence and first NBA seasons only, with the full 2003 class held out. No such cohort was imported or fitted by this correction. The NCAA factors and scouting mappings remain provisional.
 
 Coverage at June 26, 2003: Wade only. The other 57 players in the [draft-class file](../library/2003/league/nba_2003_draft_class.json) have identity data but no pre-draft statistics or pick numbers, so they play on the neutral fallback until their records are added. A level without a factor table (high school, international) is refused rather than guessed; LeBron James (high school) and Darko Milicic (international) need their own approach.
 

@@ -45,8 +45,6 @@ PRIOR_WEIGHT, CAMP_WEIGHT = 0.6, 0.4                    # the staff's score: pri
 ROOKIE_PRIOR = {"top_ten": 9.0, "first_round": 7.0, "second_round": 5.5}   # a rookie's prior value by draft slot, before any NBA minutes (league average is about 9)
 CLOSE_BATTLE = 0.10                                     # top two within this share of each other: an evaluation draw
 WADE_GRADE_BASE, WADE_GRADE_LIMITS = 45, (35, 60)      # profile sections 6 and 14: tools and weak-side plays against positioning lapses
-WADE_GRADE_CAMP_SWING = 5                               # preseason steals and blocks per 36 move the grade by at most this
-LEAGUE_STL_BLK_PER_36 = 1.6                             # 2002-03 guards: about 1.2 steals and 0.4 blocks per 36 (judgement)
 DEFENSE_POINTS_PER_TEN_GRADE = 1.0                      # grade 60 plays as +1.0 point per 100 possessions, 40 as -1.0
 GUARANTEE_DATE = "2004-01-10"                           # a camp contract left on the roster becomes guaranteed (1999-era practice, judgement)
 
@@ -324,18 +322,17 @@ def season_rotation(camp, depth, scores, on, grades=None):
 
 
 def wade_grade(lines):
-    """Wade's perimeter-defense grade: the profile's base moved by his preseason steals and blocks per 36."""
-    t = lines.get("Dwyane Wade")
-    swing, evidence = 0, "no preseason minutes: profile evidence only"
-    if t and t["minutes"] >= 20:
-        per36 = (t["stl"] + t["blk"]) / t["minutes"] * 36
-        swing = max(-WADE_GRADE_CAMP_SWING, min(WADE_GRADE_CAMP_SWING, round((per36 - LEAGUE_STL_BLK_PER_36) / LEAGUE_STL_BLK_PER_36 * WADE_GRADE_CAMP_SWING)))
-        evidence = f"{t['stl']} steals and {t['blk']} blocks in {t['minutes']:.0f} preseason minutes ({per36:.2f} per 36 against {LEAGUE_STL_BLK_PER_36})"
-    grade = max(WADE_GRADE_LIMITS[0], min(WADE_GRADE_LIMITS[1], WADE_GRADE_BASE + swing))
+    """Keep the scouting baseline until completed defensive assignments exist.
+
+    Stocks cannot establish screen navigation or help discipline. Existing
+    dated camp decisions remain historical records and are never rewritten.
+    """
+    grade = WADE_GRADE_BASE
     return {"player": "Dwyane Wade", "bbr_id": None, "grade": grade, "from": None,
             "defense": round((grade - 50) / 10 * DEFENSE_POINTS_PER_TEN_GRADE, 2),
             "evidence": [f"profile sections 6 and 14: base {WADE_GRADE_BASE} (length and strength for guard matchups, weak-side blocks and deflections; "
-                         f"loses cutters, leaves shooters to help, caught on screens)", evidence],
+                         f"loses cutters, leaves shooters to help, caught on screens)",
+                         "No assignment-level defensive evidence; preseason steals and blocks do not change this grade."],
             "basis": f"grade 50 is an average defender; {DEFENSE_POINTS_PER_TEN_GRADE} point per 100 possessions per ten grade points (runtime/camp.py)"}
 
 

@@ -1,6 +1,6 @@
 # Game engine
 
-Kernel `2003.7`, schema `1`.
+Kernel `2003.8`, schema `1`.
 
 ## Detailed live career screens
 
@@ -41,6 +41,8 @@ Unmatched players retain optional legacy ratings on a 20–80 scale (`three_poin
 Kernels 2003.3 to 2003.5 add team defense, availability-based rotations, late-game logic, foul trouble, a score effect, team pace, back-to-back fatigue and injuries for Miami. The model, its constants and the calibration record are in [docs/engine_model.md](../docs/engine_model.md); `python scripts/engine_diagnostics.py 4` re-runs the check: four seasons of the real 2003-04 schedule between real rosters on their dates (analysis only, nothing is written; add `--defense-test` or `--home-test` for the paired checks).
 
 Kernel 2003.6 added usage-dependent shooting efficiency, teammate passing effects, interior/perimeter defensive specialization, and transition after steals and defensive rebounds. Kernel 2003.7 chooses a sourced distance band and modeled court location before each FGA, then records its outcome in the immutable result. The full prior-season spatial environment is journaled only in new packets. Zone efficiencies preserve the possession's existing mean make probability. Interior defense still uses all two-point shots as its proxy; individual matchups, size and chemistry are not modeled.
+
+Kernel 2003.8 adds optional prospect scouting style: extra turnover sensitivity to positive team defense, rebounder-specific transition opportunities and normalized spatial weights. `rookie-2003.2` also supplies a paint-pressure FTr prior and a dated position rebound split. These generic assumptions apply prospectively from November 12, 2003; earlier game inputs retain the archived rookie model. Wade's development event is unchanged. See [scouting assumptions](../docs/statistical_ratings.md#scouting-assumptions-and-their-scope).
 
 `python scripts/engine_diagnostics.py 4 --check --summary-json /tmp/engine-summary.json` checks aggregate boxes, shooting, spatial coverage and conditional zone shares against the real prior-season sources. New results contain actual `started` flags, `transition_stats`, complete `shot_tracking` provenance and `shots`. Closed events feed Wade's and league-player charts, with a separate **Tracked games only** cohort for periods containing older locationless games. Existing stored results stay unchanged across upgrades and edited packets are refused. See [spatial sources](../docs/shot_environment_sources.md) and [calibration](../docs/spatial_calibration.md).
 

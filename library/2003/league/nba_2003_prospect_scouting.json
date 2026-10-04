@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "model_version": "prospect-scouting-2003.1",
+  "as_of": "2003-06-26",
+  "players": {
+    "wadedw01": {
+      "as_of": "2003-06-25",
+      "source_file": "career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md",
+      "source_sha256": "6ff53a564576013f2ee04e89950473a043d8329634894b1e1956429c966b244b",
+      "position": "SG",
+      "traits": {
+        "paint_pressure": {
+          "value": "plus",
+          "as_of": "2003-06-25",
+          "sections": [
+            "4. Scoring",
+            "14. Draft Profile and Process"
+          ]
+        },
+        "contact_finishing": {
+          "value": "plus",
+          "as_of": "2003-06-25",
+          "sections": [
+            "4. Scoring"
+          ]
+        },
+        "secondary_creation": {
+          "value": "plus",
+          "as_of": "2003-06-25",
+          "sections": [
+            "5. Ball Handling and Playmaking",
+            "12. NBA Role and Development"
+          ]
+        },
+        "pressure_decisions": {
+          "value": "concern",
+          "as_of": "2003-06-25",
+          "sections": [
+            "5. Ball Handling and Playmaking",
+            "14. Draft Profile and Process"
+          ]
+        },
+        "set_perimeter_shooting": {
+          "value": "plus",
+          "as_of": "2003-06-25",
+          "sections": [
+            "4. Scoring"
+          ]
+        },
+        "off_dribble_three": {
+          "value": "limited",
+          "as_of": "2003-06-25",
+          "sections": [
+            "4. Scoring"
+          ]
+        },
+        "midrange_pull_up": {
+          "value": "plus",
+          "as_of": "2003-06-25",
+          "sections": [
+            "4. Scoring"
+          ]
+        },
+        "guard_rebounding": {
+          "value": "plus",
+          "as_of": "2003-06-25",
+          "sections": [
+            "7. Rebounding and Transition"
+          ]
+        },
+        "transition_push": {
+          "value": "plus",
+          "as_of": "2003-06-25",
+          "sections": [
+            "7. Rebounding and Transition"
+          ]
+        },
+        "screen_navigation": {
+          "value": "concern",
+          "as_of": "2003-06-25",
+          "sections": [
+            "6. Defense",
+            "14. Draft Profile and Process"
+          ]
+        },
+        "help_discipline": {
+          "value": "concern",
+          "as_of": "2003-06-25",
+          "sections": [
+            "6. Defense",
+            "14. Draft Profile and Process"
+          ]
+        },
+        "weak_side_event_defense": {
+          "value": "plus",
+          "as_of": "2003-06-25",
+          "sections": [
+            "6. Defense"
+          ]
+        }
+      }
+    }
+  }
+}

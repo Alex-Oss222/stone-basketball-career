@@ -1,8 +1,8 @@
 """Prospective NBA shot locations from a dated league distance-band prior.
 
 The prior describes attempt shares and make rates, not individual tracking.
-Coordinates within each band are explicit geometric model assumptions. Every
-player uses the same conditional spatial shape until sourced player data exists.
+Coordinates within each band are explicit geometric model assumptions. Optional
+scouting style weights change conditional geography, never aggregate accuracy.
 """
 from datetime import date
 import hashlib
@@ -96,7 +96,7 @@ def classify_spatial_zone(x, y):
     return "distance_16_three"
 
 
-def zone_probabilities(environment, value, target):
+def zone_probabilities(environment, value, target, spatial_weights=None):
     """Zone make probabilities whose attempt-weighted mean is exactly target.
 
     A common shift preserves sourced efficiency differences. At the bounds,
@@ -106,6 +106,14 @@ def zone_probabilities(environment, value, target):
     if value not in (2, 3) or type(target) not in (int, float) or not math.isfinite(target) or not 0 <= target <= 1:
         raise ValueError("shot value and target make probability are invalid")
     rows = [zone for zone in environment["zones"] if zone["shot_value"] == value]
+    if spatial_weights is not None:
+        from .prospect_scouting import style_errors
+        errors = style_errors({"spatial_weights": spatial_weights})
+        if errors:
+            raise ValueError("; ".join(errors))
+        weights = [row["attempt_share_within_value"] * spatial_weights[row["id"]] for row in rows]
+        total = sum(weights)
+        rows = [dict(row, attempt_share_within_value=weight / total) for row, weight in zip(rows, weights)]
     active = list(range(len(rows)))
     probabilities = [None] * len(rows)
     remaining = target
@@ -155,9 +163,9 @@ def draw_location(rng, zone):
     raise RuntimeError("could not sample a point inside its spatial zone")
 
 
-def draw_spatial_shot(rng, environment, value, target):
+def draw_spatial_shot(rng, environment, value, target, spatial_weights=None):
     """Return zone, x, y and its calibrated make probability; no outcome draw."""
-    probabilities = zone_probabilities(environment, value, target)
+    probabilities = zone_probabilities(environment, value, target, spatial_weights)
     draw = rng.random()
     chosen = probabilities[-1]
     for zone in probabilities:

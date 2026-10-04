@@ -1,4 +1,4 @@
-# Engine model and calibration (kernel 2003.7)
+# Engine model and calibration (kernel 2003.8)
 
 What the possession engine does beyond the per-play rates, why, and how it was checked. Code: `runtime/kernel.py`, `runtime/rotations.py`. Check: `python scripts/engine_diagnostics.py 4 --check --summary-json /tmp/engine-summary.json`, plus `--defense-test` and `--home-test` (analysis only: made-up entropy, nothing written to the career). Reports and optional JSON contain league aggregates, never player results for the career or front office.
 
@@ -60,6 +60,8 @@ Miami's staff reviews its rotation every fourteen days after the dated camp deci
 Explicit requests may mark five staff starters. The engine records `started` from the actual opening five after availability changes. Injury replacement starts receive the same GS credit as other starts, including in the existing season-close standing calculation. Legacy results without this field retain unknown starts; current lineups cannot fill the gap.
 
 ## Engine upgrades and closed games
+
+Kernel 2003.8 freezes optional dated scouting, its source hashes and derived style alongside each eligible rookie's rates. On the existing career lineage, `rookie-2003.2` begins November 12, 2003; earlier dates load the archived `rookie-2003.1` data with exactly the old profile shape. The season development packet is unchanged. [Scouting assumptions](statistical_ratings.md#scouting-assumptions-and-their-scope) specify the paint-pressure prior, conserved-total rebound split, pressure-turnover sensitivity, rebounder-specific transition probability and efficiency-preserving spatial weights. Team defensive value is only a coarse proxy for pressure, not evidence that a particular possession was trapped. Historical requests, closed results, camp decisions and rotations are not regenerated.
 
 Kernel 2003.7 retains schema 1 and freezes the full spatial environment in new game packets. The result identifies that configuration by its canonical SHA-256. For a stored game, the service selects the original kernel's input schema before loading additional sources, checks its original packet and serves the stored result verbatim. Pre-spatial packets contain no spatial environment; later data cannot change their hashes. Optional starter inputs remain absent from historical packets unless explicitly supplied. Editing an already played request or its frozen spatial inputs still fails the journal hash check. An old journal entry without a saved result fails closed across a kernel change; it must not be silently redrawn under new rules.
 

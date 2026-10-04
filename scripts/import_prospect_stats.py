@@ -8,7 +8,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from bisect import bisect_left, bisect_right
 from runtime.player_stats import GRADE_LABELS, MIN_COHORT_MINUTES, read_json
-from runtime.prospects import ROOKIE_PATH, VETERAN_PATH, expected_rookie_estimates
+from runtime.prospects import (ROOKIE_MODEL_VERSION, ROOKIE_PATH, SCOUTING_EFFECTIVE_FROM,
+                               VETERAN_PATH, expected_rookie_estimates, rookie_errors)
 
 CARD = ROOT / "career/Dwyane_Wade/2003-04/00_Team/Team/Player_Cards/dwyane_wade.md"
 START, END = "<!-- rookie-estimate:start -->", "<!-- rookie-estimate:end -->"
@@ -28,17 +29,24 @@ def card_block(player, veterans):
         rows.append(f"| {label} | {round(20 + 60 * rank)} | {value:.3f} | {base:.3f} |")
     return "\n".join([
         START,
-        "### Statistical estimate from college record (rookie-2003.1)",
+        f"### Statistical estimate from college record ({ROOKIE_MODEL_VERSION})",
         "",
         f"**Estimate, not NBA evidence.** Translated from {player['sample']['seasons']} UConn seasons "
         f"({player['sample']['games']} games, {player['sample']['minutes']} minutes) with provisional college-to-NBA "
         "factors and shrinkage toward the 2002-03 NBA average. Grades rank the estimate against 2002-03 NBA players "
-        "with 500+ minutes (20-80, 50 = median). The engine uses the estimated rates. "
+        "with 500+ minutes (20-80, 50 = median). Dated scouting adds paint-pressure and position-rebound priors. "
+        f"This model correction applies from {SCOUTING_EFFECTIVE_FROM}; earlier games retain rookie-2003.1. "
         "Method: [statistical ratings](../../../../../../docs/statistical_ratings.md#rookie-estimates).",
         "",
         "| Rate | Grade (20-80) | Estimate | NBA average |",
         "| --- | ---: | ---: | ---: |",
         *rows,
+        "",
+        f"Free-throw attempts/FGA: {player['estimated']['free_throw_attempt_rate']:.3f}; "
+        f"turnovers/FGA: {player['estimated']['turnovers_per_fga']:.3f}. "
+        "Pressure concerns affect turnovers against positive team defense, not the base rate. "
+        "Paint and pull-up location weights preserve aggregate shooting accuracy. Rebound-led transition "
+        "applies only after his own defensive rebound. These are provisional model assumptions, not tracking data.",
         END,
     ])
 
@@ -48,8 +56,9 @@ text = json.dumps(data, ensure_ascii=False, indent=2, allow_nan=False) + "\n"
 path = ROOT / ROOKIE_PATH
 if check:
     current = path.read_text(encoding="utf-8") if path.exists() else ""
-    print("Generated rookie estimates are current." if current == text else "Stale: " + str(ROOKIE_PATH))
-    raise SystemExit(0 if current == text else 1)
+    errors = rookie_errors(ROOT)
+    print("Generated and archived rookie estimates are current." if current == text and not errors else "\n".join(errors or ["Stale: " + str(ROOKIE_PATH)]))
+    raise SystemExit(0 if current == text and not errors else 1)
 path.write_text(text, encoding="utf-8")
 if "--update-card" in sys.argv:
     card = CARD.read_text(encoding="utf-8")

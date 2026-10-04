@@ -1,0 +1,420 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nba_prospect_scouting.schema.json",
+  "title": "Dated pre-draft scouting evidence",
+  "description": "Runtime validation also checks dates against draft cutoff, source hashes, section headings and player IDs. Traits without an engine representation remain evidence only.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "model_version",
+    "as_of",
+    "players"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "model_version": {
+      "const": "prospect-scouting-2003.1"
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date"
+    },
+    "players": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z]+[0-9]{2}$": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "as_of",
+            "source_file",
+            "source_sha256",
+            "position",
+            "traits"
+          ],
+          "properties": {
+            "as_of": {
+              "type": "string",
+              "format": "date"
+            },
+            "source_file": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "position": {
+              "enum": [
+                "PG",
+                "SG",
+                "SF",
+                "PF",
+                "C"
+              ]
+            },
+            "traits": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "paint_pressure": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "as_of",
+                    "sections"
+                  ],
+                  "properties": {
+                    "value": {
+                      "enum": [
+                        "neutral",
+                        "plus"
+                      ]
+                    },
+                    "as_of": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "contact_finishing": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "as_of",
+                    "sections"
+                  ],
+                  "properties": {
+                    "value": {
+                      "enum": [
+                        "neutral",
+                        "plus"
+                      ]
+                    },
+                    "as_of": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "secondary_creation": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "as_of",
+                    "sections"
+                  ],
+                  "properties": {
+                    "value": {
+                      "enum": [
+                        "neutral",
+                        "plus"
+                      ]
+                    },
+                    "as_of": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "pressure_decisions": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "as_of",
+                    "sections"
+                  ],
+                  "properties": {
+                    "value": {
+                      "enum": [
+                        "neutral",
+                        "concern"
+                      ]
+                    },
+                    "as_of": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "set_perimeter_shooting": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "as_of",
+                    "sections"
+                  ],
+                  "properties": {
+                    "value": {
+                      "enum": [
+                        "neutral",
+                        "plus"
+                      ]
+                    },
+                    "as_of": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "off_dribble_three": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "as_of",
+                    "sections"
+                  ],
+                  "properties": {
+                    "value": {
+                      "enum": [
+                        "neutral",
+                        "limited"
+                      ]
+                    },
+                    "as_of": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "midrange_pull_up": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "as_of",
+                    "sections"
+                  ],
+                  "properties": {
+                    "value": {
+                      "enum": [
+                        "neutral",
+                        "plus"
+                      ]
+                    },
+                    "as_of": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "guard_rebounding": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "as_of",
+                    "sections"
+                  ],
+                  "properties": {
+                    "value": {
+                      "enum": [
+                        "neutral",
+                        "plus"
+                      ]
+                    },
+                    "as_of": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "transition_push": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "as_of",
+                    "sections"
+                  ],
+                  "properties": {
+                    "value": {
+                      "enum": [
+                        "neutral",
+                        "plus"
+                      ]
+                    },
+                    "as_of": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "screen_navigation": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "as_of",
+                    "sections"
+                  ],
+                  "properties": {
+                    "value": {
+                      "enum": [
+                        "neutral",
+                        "concern"
+                      ]
+                    },
+                    "as_of": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "help_discipline": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "as_of",
+                    "sections"
+                  ],
+                  "properties": {
+                    "value": {
+                      "enum": [
+                        "neutral",
+                        "concern"
+                      ]
+                    },
+                    "as_of": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                },
+                "weak_side_event_defense": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "value",
+                    "as_of",
+                    "sections"
+                  ],
+                  "properties": {
+                    "value": {
+                      "enum": [
+                        "neutral",
+                        "plus"
+                      ]
+                    },
+                    "as_of": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "sections": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
