@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-28-houston-rockets-at-sacramento-kings",
+ "game_date": "2003-11-28",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Houston Rockets",
+  "rotation": "real"
+ }
+}

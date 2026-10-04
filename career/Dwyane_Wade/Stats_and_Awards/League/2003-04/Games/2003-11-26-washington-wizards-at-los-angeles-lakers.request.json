@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-26-washington-wizards-at-los-angeles-lakers",
+ "game_date": "2003-11-26",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ }
+}

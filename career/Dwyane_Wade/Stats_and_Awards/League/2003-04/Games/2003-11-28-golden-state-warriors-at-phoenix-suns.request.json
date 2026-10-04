@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-28-golden-state-warriors-at-phoenix-suns",
+ "game_date": "2003-11-28",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Golden State Warriors",
+  "rotation": "real"
+ }
+}

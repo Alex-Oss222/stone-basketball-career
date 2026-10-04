@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-26-cleveland-cavaliers-at-new-orleans-hornets",
+ "game_date": "2003-11-26",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New Orleans Hornets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ }
+}

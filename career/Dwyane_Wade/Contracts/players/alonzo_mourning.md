@@ -2,9 +2,9 @@
 
 # Contract | Alonzo Mourning
 
-Known through: 2003-11-25. [Open interactive contract](alonzo_mourning.html#contract) · [Contract history](alonzo_mourning.html#contract-history)
+Known through: 2003-11-28. [Open interactive contract](alonzo_mourning.html#contract) · [Contract history](alonzo_mourning.html#contract-history)
 
-Alonzo Mourning: free agent expiring. Evidence cutoff: 2003-11-25.
+Alonzo Mourning: free agent expiring. Evidence cutoff: 2003-11-28.
 
 ## Current contract
 

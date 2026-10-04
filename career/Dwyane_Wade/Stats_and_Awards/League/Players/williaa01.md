@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `williaa01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2003-11-25 · **Club on this date:** New Jersey Nets · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
+**Card date:** 2003-11-28 · **Club on this date:** New Jersey Nets · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
 **Position:** C (Center) · **Jersey:** #34 · **Born:** 1971-10-02 · **Age on card date:** 32  
 **Registry ID:** `williaa01` · [Basketball-Reference page](https://www.basketball-reference.com/players/w/williaa01.html) · ESPN ID 923
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `willia
 
 ## Simulated statistics
 
-As of **2003-11-25**: 13 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2003-11-28**: 15 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04 regular season](../2003-04/League_Stats.md) | 32 | NJ | NBA | C | 5 | 0 | 20.5 | 2.6 | 7.4 | .351 | 0.0 | 0.2 | .000 | 2.6 | 7.2 | .361 | .351 | 0.2 | 0.4 | .500 | 0.8 | 3.0 | 3.8 | 1.2 | 0.6 | 0.4 | 2.4 | 1.8 | 5.4 | .356 | — |
+| [2003-04 regular season](../2003-04/League_Stats.md) | 32 | NJ | NBA | C | 7 | 0 | 19.8 | 3.3 | 7.1 | .460 | 0.0 | 0.3 | .000 | 3.3 | 6.9 | .479 | .460 | 0.1 | 0.3 | .500 | 1.0 | 2.9 | 3.9 | 1.1 | 0.6 | 0.4 | 1.7 | 1.6 | 6.7 | .462 | — |
 
 ### Month
 
@@ -42,7 +42,7 @@ As of **2003-11-25**: 13 closed games feed this card. Per-game columns use the r
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [October 2003](../2003-04/10_October/League_Stats.md) | 32 | NJ | NBA | C | 2 | 0 | 23.4 | 3.0 | 10.5 | .286 | 0.0 | 0.5 | .000 | 3.0 | 10.0 | .300 | .286 | 0.0 | 0.0 | N/A | 1.0 | 3.5 | 4.5 | 1.0 | 0.0 | 0.5 | 2.5 | 2.5 | 6.0 | .286 | — |
-| [November 2003](../2003-04/11_November/League_Stats.md) | 32 | NJ | NBA | C | 3 | 0 | 18.6 | 2.3 | 5.3 | .438 | 0.0 | 0.0 | N/A | 2.3 | 5.3 | .438 | .438 | 0.3 | 0.7 | .500 | 0.7 | 2.7 | 3.3 | 1.3 | 1.0 | 0.3 | 2.3 | 1.3 | 5.0 | .444 | — |
+| [November 2003](../2003-04/11_November/League_Stats.md) | 32 | NJ | NBA | C | 5 | 0 | 18.4 | 3.4 | 5.8 | .586 | 0.0 | 0.2 | .000 | 3.4 | 5.6 | .607 | .586 | 0.2 | 0.4 | .500 | 1.0 | 2.6 | 3.6 | 1.2 | 0.8 | 0.4 | 1.4 | 1.2 | 7.0 | .586 | — |
 | [December 2003](../2003-04/12_December/League_Stats.md) | 32 | NJ | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [January 2004](../2003-04/01_January/League_Stats.md) | 32 | NJ | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [February 2004](../2003-04/02_February/League_Stats.md) | 32 | NJ | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -63,7 +63,7 @@ As of **2003-11-25**: 13 closed games feed this card. Per-game columns use the r
 | [November 2003 week 1 (01 to 07)](../2003-04/11_November/Week_1/League_Stats.md) | 32 | NJ | NBA | C | 1 | 0 | 19.1 | 0.0 | 3.0 | .000 | 0.0 | 0.0 | N/A | 0.0 | 3.0 | .000 | .000 | 0.0 | 0.0 | N/A | 0.0 | 3.0 | 3.0 | 2.0 | 1.0 | 1.0 | 2.0 | 3.0 | 0.0 | .000 | — |
 | [November 2003 week 2 (08 to 14)](../2003-04/11_November/Week_2/League_Stats.md) | 32 | NJ | NBA | C | 1 | 0 | 19.2 | 4.0 | 8.0 | .500 | 0.0 | 0.0 | N/A | 4.0 | 8.0 | .500 | .500 | 0.0 | 0.0 | N/A | 1.0 | 3.0 | 4.0 | 2.0 | 1.0 | 0.0 | 3.0 | 1.0 | 8.0 | .500 | — |
 | [November 2003 week 3 (15 to 21)](../2003-04/11_November/Week_3/League_Stats.md) | 32 | NJ | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [November 2003 week 4 (22 to 30)](../2003-04/11_November/Week_4/League_Stats.md) | 32 | NJ | NBA | C | 1 | 0 | 17.6 | 3.0 | 5.0 | .600 | 0.0 | 0.0 | N/A | 3.0 | 5.0 | .600 | .600 | 1.0 | 2.0 | .500 | 1.0 | 2.0 | 3.0 | 0.0 | 1.0 | 0.0 | 2.0 | 0.0 | 7.0 | .595 | — |
+| [November 2003 week 4 (22 to 30)](../2003-04/11_November/Week_4/League_Stats.md) | 32 | NJ | NBA | C | 3 | 0 | 17.9 | 4.3 | 6.0 | .722 | 0.0 | 0.3 | .000 | 4.3 | 5.7 | .765 | .722 | 0.3 | 0.7 | .500 | 1.3 | 2.3 | 3.7 | 0.7 | 0.7 | 0.3 | 0.7 | 0.7 | 9.0 | .715 | — |
 | [December 2003 week 1 (01 to 07)](../2003-04/12_December/Week_1/League_Stats.md) | 32 | NJ | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [December 2003 week 2 (08 to 14)](../2003-04/12_December/Week_2/League_Stats.md) | 32 | NJ | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [December 2003 week 3 (15 to 21)](../2003-04/12_December/Week_3/League_Stats.md) | 32 | NJ | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
@@ -87,31 +87,31 @@ As of **2003-11-25**: 13 closed games feed this card. Per-game columns use the r
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regular season. Coverage: **partial**; 5 located attempts, 0 unlocated, 0 outside the view, 32 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regular season. Coverage: **partial**; 18 located attempts, 0 unlocated, 0 outside the view, 32 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 6 of 13 closed games; 1 tracked appearances form the denominator below (2003-11-12 to 2003-11-25).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 8 of 15 closed games; 3 tracked appearances form the denominator below (2003-11-12 to 2003-11-28).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 0 | 1 | 0.0% | 0.00 | 1.00 |
+| Paint | 3 | 6 | 50.0% | 2.00 | 2.00 |
 | Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 |
-| Outside paint, 12 to under 18 ft | 2 | 3 | 66.7% | 4.00 | 3.00 |
-| 18 ft to the three-point line | 1 | 1 | 100.0% | 2.00 | 1.00 |
-| Three-point range | 0 | 0 | N/A | 0.00 | 0.00 |
-| All field goals | 3 | 5 | 60.0% | 6.00 | 5.00 |
+| Outside paint, 12 to under 18 ft | 3 | 4 | 75.0% | 2.00 | 1.33 |
+| 18 ft to the three-point line | 7 | 7 | 100.0% | 4.67 | 2.33 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 0.33 |
+| All field goals | 13 | 18 | 72.2% | 8.67 | 6.00 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2003-04 is simulated: 13 closed regular-season games through 2003-11-25.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2003-04 is simulated: 15 closed regular-season games through 2003-11-28.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | NJN | 81 | 0 | 19.7 | 6.2 | 4.1 | 1.1 | 0.3 | 0.7 | 1.0 | 45.3% | 0.0% | 78.5% |
-| 2003-04 | NJ | 5 | 0 | 20.5 | 5.4 | 3.8 | 1.2 | 0.6 | 0.4 | 2.4 | 35.1% | 0.0% | 50.0% |
+| 2003-04 | NJ | 7 | 0 | 19.8 | 6.7 | 3.9 | 1.1 | 0.6 | 0.4 | 1.7 | 46.0% | 0.0% | 50.0% |
 
 ## Playoff statistics by year
 
@@ -123,4 +123,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2003-11-25. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2003-11-28. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

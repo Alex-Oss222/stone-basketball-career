@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-11-25**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-11-28**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -145,11 +145,11 @@ Card date: **2003-11-25**. 407 registry players, one Markdown card and one inter
 | [Kobe Bryant](bryanko01.md) | Los Angeles Lakers | 25 | sourced | [open](bryanko01.html) |
 | [Kyle Korver](korveky01.md) | Philadelphia 76ers | 22 | sourced | [open](korveky01.html) |
 | [Lavor Postell](postela01.md) | New York Knicks | 25 | sourced | [open](postela01.html) |
-| [Leandro Barbosa](barbole01.md) | Phoenix Suns | 20 | sourced | [open](barbole01.html) |
+| [Leandro Barbosa](barbole01.md) | Phoenix Suns | 21 | sourced | [open](barbole01.html) |
 | [Lucious Harris](harrilu01.md) | New Jersey Nets | 32 | silhouette | [open](harrilu01.html) |
 | [Manu Ginobili](ginobma01.md) | San Antonio Spurs | 26 | sourced | [open](ginobma01.html) |
 | [Michael Redd](reddmi01.md) | Milwaukee Bucks | 24 | sourced | [open](reddmi01.html) |
-| [Nick Van Exel](vanexni01.md) | Golden State Warriors | 31 | sourced | [open](vanexni01.html) |
+| [Nick Van Exel](vanexni01.md) | Golden State Warriors | 32 | sourced | [open](vanexni01.html) |
 | [Paul Pierce](piercpa01.md) | Boston Celtics | 26 | sourced | [open](piercpa01.html) |
 | [Raja Bell](bellra01.md) | Utah Jazz | 27 | sourced | [open](bellra01.html) |
 | [Rasual Butler](butlera01.md) | Miami Heat | 24 | sourced | [open](butlera01.html) |
@@ -375,7 +375,7 @@ Card date: **2003-11-25**. 407 registry players, one Markdown card and one inter
 | [Ben Wallace](wallabe01.md) | Detroit Pistons | 29 | sourced | [open](wallabe01.html) |
 | [Bo Outlaw](outlabo01.md) | Memphis Grizzlies | 32 | sourced | [open](outlabo01.html) |
 | [Brad Miller](millebr01.md) | Sacramento Kings | 27 | sourced | [open](millebr01.html) |
-| [Brendan Haywood](haywobr01.md) | Washington Wizards | 23 | sourced | [open](haywobr01.html) |
+| [Brendan Haywood](haywobr01.md) | Washington Wizards | 24 | sourced | [open](haywobr01.html) |
 | [Brian Grant](grantbr01.md) | Miami Heat | 31 | silhouette | [open](grantbr01.html) |
 | [Calvin Booth](boothca01.md) | Seattle SuperSonics | 27 | sourced | [open](boothca01.html) |
 | [Cezary Trybanski](trybace01.md) | Phoenix Suns | 24 | sourced | [open](trybace01.html) |
@@ -408,7 +408,7 @@ Card date: **2003-11-25**. 407 registry players, one Markdown card and one inter
 | [Jerome James](jamesje01.md) | Seattle SuperSonics | 28 | sourced | [open](jamesje01.html) |
 | [Jerome Moiso](moisoje01.md) | Toronto Raptors | 25 | sourced | [open](moisoje01.html) |
 | [Joel Przybilla](przybjo01.md) | Milwaukee Bucks | 24 | sourced | [open](przybjo01.html) |
-| [John Amaechi](amaecjo01.md) | Houston Rockets | 32 | sourced | [open](amaecjo01.html) |
+| [John Amaechi](amaecjo01.md) | Houston Rockets | 33 | sourced | [open](amaecjo01.html) |
 | [Kelvin Cato](catoke01.md) | Houston Rockets | 29 | sourced | [open](catoke01.html) |
 | [Ken Johnson](johnske03.md) | Free agent | 25 | sourced | [open](johnske03.html) |
 | [Kendrick Perkins](perkike01.md) | Boston Celtics | 19 | sourced | [open](perkike01.html) |
@@ -440,7 +440,7 @@ Card date: **2003-11-25**. 407 registry players, one Markdown card and one inter
 | [Sean Rooks](rooksse01.md) | New Orleans Hornets | 34 | sourced | [open](rooksse01.html) |
 | [Shaquille O'Neal](onealsh01.md) | Los Angeles Lakers | 31 | sourced | [open](onealsh01.html) |
 | [Shawn Bradley](bradlsh01.md) | Dallas Mavericks | 31 | sourced | [open](bradlsh01.html) |
-| [Shawn Kemp](kempsh01.md) | Miami Heat | 33 | sourced | [open](kempsh01.html) |
+| [Shawn Kemp](kempsh01.md) | Miami Heat | 34 | sourced | [open](kempsh01.html) |
 | [Slavko Vranes](vranesl01.md) | New York Knicks | 20 | sourced | [open](vranesl01.html) |
 | [Sofoklis Schortsanitis](schorso01.md) | Los Angeles Clippers (draft rights) | 18 | sourced | [open](schorso01.html) |
 | [Steven Hunter](huntest01.md) | Orlando Magic | 22 | sourced | [open](huntest01.html) |

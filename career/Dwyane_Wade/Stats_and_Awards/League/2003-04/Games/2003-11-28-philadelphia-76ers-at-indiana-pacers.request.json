@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-28-philadelphia-76ers-at-indiana-pacers",
+ "game_date": "2003-11-28",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Philadelphia 76ers",
+  "rotation": "real"
+ }
+}

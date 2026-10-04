@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-27-new-york-knicks-at-indiana-pacers",
+ "game_date": "2003-11-27",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New York Knicks",
+  "rotation": "real"
+ }
+}

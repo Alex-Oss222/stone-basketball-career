@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-26-boston-celtics-at-orlando-magic",
+ "game_date": "2003-11-26",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ }
+}

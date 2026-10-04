@@ -2,9 +2,9 @@
 
 # Contract | Gordan Giricek
 
-Known through: 2003-11-25. [Open interactive contract](giricgo01.html#contract) · [Contract history](giricgo01.html#contract-history)
+Known through: 2003-11-28. [Open interactive contract](giricgo01.html#contract) · [Contract history](giricgo01.html#contract-history)
 
-Gordan Giricek: under contract unverified. Evidence cutoff: 2003-11-25.
+Gordan Giricek: under contract unverified. Evidence cutoff: 2003-11-28.
 
 ## Current contract
 

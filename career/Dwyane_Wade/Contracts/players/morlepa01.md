@@ -2,9 +2,9 @@
 
 # Contract | Paccelis Morlende
 
-Known through: 2003-11-25. [Open interactive contract](morlepa01.html#contract) · [Contract history](morlepa01.html#contract-history)
+Known through: 2003-11-28. [Open interactive contract](morlepa01.html#contract) · [Contract history](morlepa01.html#contract-history)
 
-Paccelis Morlende: No verified contract record. Evidence cutoff: 2003-11-25.
+Paccelis Morlende: No verified contract record. Evidence cutoff: 2003-11-28.
 
 ## Current contract
 

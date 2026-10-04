@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-28-dallas-mavericks-at-denver-nuggets",
+ "game_date": "2003-11-28",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Denver Nuggets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Dallas Mavericks",
+  "rotation": "real"
+ }
+}
