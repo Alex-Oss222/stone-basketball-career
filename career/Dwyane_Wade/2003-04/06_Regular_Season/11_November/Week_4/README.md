@@ -159,6 +159,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2003-11-22](Game_1.md) | Phoenix Suns | away | L 88-90 | Played | 40.5 | 15 | 6 | 6 | 1 | 2 | 2 |
 | [2003-11-25](Game_2.md) | New Orleans Hornets | home | W 90-73 | Played | 40.3 | 19 | 10 | 6 | 3 | 1 | 0 |
 | [2003-11-28](Game_3.md) | Atlanta Hawks | away | L 100-105 | Played | 42.2 | 23 | 4 | 8 | 1 | 0 | 2 |
+| [2003-11-29](Game_4.md) | Toronto Raptors | home | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ### Individual game boxes
 
@@ -167,6 +168,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2003-11-22](Game_1.md) | 19 | Miami Heat | NBA | SG / PG | 1 | 1 | 40.5 | 4.0 | 10.0 | .400 | 0.0 | 2.0 | .000 | 4.0 | 8.0 | .500 | .400 | 7.0 | 8.0 | .875 | 2.0 | 4.0 | 6.0 | 6.0 | 1.0 | 2.0 | 2.0 | 1.0 | 15.0 | .555 | — |
 | [2003-11-25](Game_2.md) | 19 | Miami Heat | NBA | SG / PG | 1 | 1 | 40.3 | 9.0 | 15.0 | .600 | 0.0 | 1.0 | .000 | 9.0 | 14.0 | .643 | .600 | 1.0 | 2.0 | .500 | 2.0 | 8.0 | 10.0 | 6.0 | 3.0 | 1.0 | 0.0 | 2.0 | 19.0 | .598 | — |
 | [2003-11-28](Game_3.md) | 19 | Miami Heat | NBA | SG / PG | 1 | 1 | 42.2 | 9.0 | 12.0 | .750 | 1.0 | 3.0 | .333 | 8.0 | 9.0 | .889 | .792 | 4.0 | 5.0 | .800 | 0.0 | 4.0 | 4.0 | 8.0 | 1.0 | 0.0 | 2.0 | 5.0 | 23.0 | .810 | — |
+| [2003-11-29](Game_4.md) | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 

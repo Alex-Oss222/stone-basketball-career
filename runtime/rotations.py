@@ -41,6 +41,7 @@ ROTATION_MODEL_2_FROM = "2003-11-12"
 RULE3_RAISE_CAP = 4.0           # rule 3: no staying player gains more than this per game from departed minutes (judgement)
 ROTATION_DEPTH = 9              # beyond the nine largest minutes, a missed game was mostly a coach's decision
 ROSTER_LIMIT = 15               # a 2003-04 club carries fifteen: twelve dress, three on the injured list
+REGULATION_MINUTES = 240        # five players for four twelve-minute quarters
 
 
 def rotation_model(game_date):
@@ -250,6 +251,20 @@ def real_rotation(club_name, club, season_games, rating_index=None, *, fraction,
             e[1], e[2] = e[1] * e[2], 1.0
         entries.sort(key=lambda e: -(e[1] * e[2]))
         entries = entries[:ROSTER_LIMIT]
+        # A stint gap (a trade placed by stint order, the old players gone before the new arrive) can leave fewer
+        # minutes than a game needs; the club then covers the game, each player in proportion, up to MAX_MINUTES_PER_GAME. Only an
+        # input the engine would refuse is raised, so no played game's packet changes.
+        total = sum(e[1] for e in entries)
+        if 0 < total < REGULATION_MINUTES - 1:
+            short = REGULATION_MINUTES - total
+            while short > 1e-9:
+                room = [e for e in entries if e[1] < MAX_MINUTES_PER_GAME]
+                if not room:
+                    break
+                weight = sum(e[1] for e in room)
+                for e in room:
+                    e[1] = min(MAX_MINUTES_PER_GAME, e[1] + short * e[1] / weight)
+                short = REGULATION_MINUTES - sum(e[1] for e in entries)
     players = []
     for p, per_game, availability in entries:
         profile = rating_index.engine_profile(p["player_id"], p["bbr_id"]) if rating_index else {}

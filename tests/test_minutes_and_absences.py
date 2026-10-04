@@ -25,7 +25,8 @@ class RotationModelTests(unittest.TestCase):
 
     def test_departed_minutes_raise_no_one_more_than_the_cap(self):
         rows = [("Star", 82, 82 * 37), ("Wing", 82, 82 * 30), ("Big", 82, 82 * 28), ("Gone", 82, 82 * 36),
-                ("Sixth", 82, 82 * 22), ("Seventh", 82, 82 * 18), ("Eighth", 82, 82 * 15), ("Ninth", 82, 82 * 12)]
+                ("Sixth", 82, 82 * 22), ("Seventh", 82, 82 * 18), ("Eighth", 82, 82 * 15), ("Ninth", 82, 82 * 12),
+                ("Tenth", 82, 82 * 30), ("Eleventh", 82, 82 * 25), ("Twelfth", 82, 82 * 25)]      # covers a game without Gone
         legacy = real_rotation("X", club(*rows), 82, fraction=0.2, exclude={"gone"}, model=1)
         capped = real_rotation("X", club(*rows), 82, fraction=0.2, exclude={"gone"}, model=2)
         star = lambda team: next(p.minutes for p in team.players if p.player_id == "Star")
@@ -41,6 +42,17 @@ class RotationModelTests(unittest.TestCase):
         self.assertEqual(reserve.availability, 1.0)
         self.assertAlmostEqual(reserve.minutes, 30 * 8 / 82, places=2)  # season total kept
         self.assertLess(real_rotation("X", club(*rows), 82, fraction=0.5, model=1).players[-1].availability, 1.0)
+
+    def test_a_stint_gap_short_of_a_game_is_raised_to_regulation_in_proportion(self):
+        rows = [("Star", 82, 82 * 30), ("Wing", 82, 82 * 28), ("Big", 82, 82 * 26), ("Guard", 82, 82 * 24),
+                ("Fifth", 82, 82 * 22), ("Sixth", 82, 82 * 20), ("Seventh", 82, 82 * 18), ("Eighth", 82, 82 * 16)]  # 184
+        team = real_rotation("X", club(*rows), 82, fraction=0.5, model=2)
+        self.assertAlmostEqual(sum(p.minutes for p in team.players), 240, places=1)
+        minutes = {p.player_id: p.minutes for p in team.players}
+        self.assertAlmostEqual(minutes["Star"] / minutes["Eighth"], 30 / 16, places=2)
+        full = [("Star", 82, 82 * 40), ("Wing", 82, 82 * 40), ("Big", 82, 82 * 40), ("Guard", 82, 82 * 40),
+                ("Fifth", 82, 82 * 40), ("Sixth", 82, 82 * 40)]                                  # already 240
+        self.assertEqual([p.minutes for p in real_rotation("X", club(*full), 82, fraction=0.5, model=2).players], [40.0] * 6)
 
 
 class AbsenceTests(unittest.TestCase):
