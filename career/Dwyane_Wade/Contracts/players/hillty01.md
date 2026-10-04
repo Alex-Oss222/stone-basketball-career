@@ -162,6 +162,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 
@@ -273,3 +274,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)

@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
   "owner": "ai_gm",
-  "as_of": "2003-10-27",
+  "as_of": "2003-11-11",
   "team": "Miami Heat",
   "horizon": [
     "2003-04",
@@ -15,9 +15,9 @@
   ],
   "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
   "known_baseline": {
-    "2003-04": 32066078,
-    "2004-05": 28619114,
-    "2005-06": 28912470,
+    "2003-04": 44128961,
+    "2004-05": 34412388,
+    "2005-06": 35251819,
     "2006-07": 15697500,
     "2007-08": 0,
     "2008-09": 0,
@@ -25,10 +25,10 @@
     "2010-11": 0
   },
   "conditional_known_amounts": {
-    "2003-04": 5791037,
+    "2003-04": 0,
     "2004-05": 0,
     "2005-06": 2461617,
-    "2006-07": 15439006,
+    "2006-07": 18640208,
     "2007-08": 0,
     "2008-09": 0,
     "2009-10": 0,
@@ -555,7 +555,7 @@
       "bbr_id": "jacksst02",
       "status": "camp_contract",
       "schedule": {
-        "2003-04": 638679
+        "2003-04": 663679
       },
       "amount_kind": {
         "2003-04": "contract_salary"
@@ -566,10 +566,11 @@
       "guarantee_date": "2004-01-10",
       "signed_date": "2003-09-30",
       "route": "minimum",
-      "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+      "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $663,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 3 years of service is $663,679 (was $638,679); minimum_salary_corrections.json.",
       "sources": [
         "04_Training_Camp/camp_roster.json"
-      ]
+      ],
+      "years_of_service": 3
     },
     {
       "player": "Reggie Evans",
@@ -629,10 +630,14 @@
       "guarantee_date": "2004-01-10",
       "signed_date": "2003-09-30",
       "route": "minimum",
-      "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10.",
+      "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).",
       "sources": [
         "04_Training_Camp/camp_roster.json"
-      ]
+      ],
+      "years_of_service": 14,
+      "cap_amount": {
+        "2003-04": 688679
+      }
     },
     {
       "player": "Chris Andersen",
@@ -681,7 +686,7 @@
       "bbr_id": "padgesc01",
       "status": "camp_contract",
       "schedule": {
-        "2003-04": 638679
+        "2003-04": 688679
       },
       "amount_kind": {
         "2003-04": "contract_salary"
@@ -692,10 +697,11 @@
       "guarantee_date": "2004-01-10",
       "signed_date": "2003-09-30",
       "route": "minimum",
-      "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+      "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 4 years of service is $688,679 (was $638,679); minimum_salary_corrections.json.",
       "sources": [
         "04_Training_Camp/camp_roster.json"
-      ]
+      ],
+      "years_of_service": 4
     },
     {
       "player": "Tyrone Hill",
@@ -723,7 +729,7 @@
       "bbr_id": "parksch02",
       "status": "camp_contract",
       "schedule": {
-        "2003-04": 638679
+        "2003-04": 938679
       },
       "amount_kind": {
         "2003-04": "contract_salary"
@@ -734,10 +740,14 @@
       "guarantee_date": "2004-01-10",
       "signed_date": "2003-10-27",
       "route": "minimum",
-      "notes": "Signed October 27, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+      "notes": "Signed October 27, 2003: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 8 years of service is $938,679 (was $638,679); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).",
       "sources": [
         "04_Training_Camp/signing_corrections.json"
-      ]
+      ],
+      "years_of_service": 8,
+      "cap_amount": {
+        "2003-04": 688679
+      }
     },
     {
       "player": "Udonis Haslem",
@@ -758,14 +768,15 @@
       "notes": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
       "sources": [
         "04_Training_Camp/signing_corrections.json"
-      ]
+      ],
+      "years_of_service": 0
     },
     {
       "player": "John Wallace",
       "bbr_id": "wallajo01",
       "status": "camp_contract",
       "schedule": {
-        "2003-04": 366931
+        "2003-04": 813679
       },
       "amount_kind": {
         "2003-04": "contract_salary"
@@ -776,10 +787,14 @@
       "guarantee_date": "2004-01-10",
       "signed_date": "2003-10-27",
       "route": "minimum",
-      "notes": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+      "notes": "Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 6 years of service is $813,679 (was $366,931); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).",
       "sources": [
         "04_Training_Camp/signing_corrections.json"
-      ]
+      ],
+      "years_of_service": 6,
+      "cap_amount": {
+        "2003-04": 688679
+      }
     }
   ],
   "expiring_or_unresolved_without_scheduled_2003_04_salary": [
@@ -808,7 +823,7 @@
     "kind": "existing_obligations_only",
     "currency": "USD",
     "unit": "whole dollars",
-    "known_baseline_definition": "Non-option contract amounts plus the unsigned first-round hold; includes Ellis at the rounded reported $3.6M. Not a guarantee total or certified team salary.",
+    "known_baseline_definition": "Counted 2003-04 team salary on 2003-11-11: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
     "conditional_definition": "Priced PO, TO and ETO years shown separately; no exercise or termination decision is assumed.",
     "zero_definition": "No scheduled obligation in this contract inventory. Zero does not forecast a zero-cost roster or available cap space.",
     "missing_definition": "Null means unresolved or not yet projected, never zero.",
@@ -819,24 +834,7 @@
   "projection": [
     {
       "season": "2003-04",
-      "scheduled_contract_salary": 29869078,
-      "unsigned_first_round_holds": 2197000,
-      "known_conditional_salary": 5791037,
-      "unpriced_option_count": 0,
-      "free_agent_holds": null,
-      "other_cap_charges": null,
-      "total_team_salary": null,
-      "cap_space": null,
-      "known_base_allocations": 32066078,
-      "base_plus_priced_options": 37857115,
-      "reported_rounded_salary_count": 1,
-      "subtotal_precision": "includes_rounded_report",
-      "known_free_agent_holds": 5401037,
-      "unpriced_free_agent_hold_count": 2
-    },
-    {
-      "season": "2004-05",
-      "scheduled_contract_salary": 28619114,
+      "scheduled_contract_salary": 44128961,
       "unsigned_first_round_holds": 0,
       "known_conditional_salary": 0,
       "unpriced_option_count": 0,
@@ -844,8 +842,25 @@
       "other_cap_charges": null,
       "total_team_salary": null,
       "cap_space": null,
-      "known_base_allocations": 28619114,
-      "base_plus_priced_options": 28619114,
+      "known_base_allocations": 44128961,
+      "base_plus_priced_options": 44128961,
+      "reported_rounded_salary_count": 1,
+      "subtotal_precision": "includes_rounded_report",
+      "known_free_agent_holds": 666166,
+      "unpriced_free_agent_hold_count": 0
+    },
+    {
+      "season": "2004-05",
+      "scheduled_contract_salary": 34412388,
+      "unsigned_first_round_holds": 0,
+      "known_conditional_salary": 0,
+      "unpriced_option_count": 0,
+      "free_agent_holds": null,
+      "other_cap_charges": null,
+      "total_team_salary": null,
+      "cap_space": null,
+      "known_base_allocations": 34412388,
+      "base_plus_priced_options": 34412388,
       "reported_rounded_salary_count": 0,
       "subtotal_precision": "whole_dollars",
       "known_free_agent_holds": null,
@@ -853,7 +868,7 @@
     },
     {
       "season": "2005-06",
-      "scheduled_contract_salary": 28912470,
+      "scheduled_contract_salary": 35251819,
       "unsigned_first_round_holds": 0,
       "known_conditional_salary": 2461617,
       "unpriced_option_count": 0,
@@ -861,8 +876,8 @@
       "other_cap_charges": null,
       "total_team_salary": null,
       "cap_space": null,
-      "known_base_allocations": 28912470,
-      "base_plus_priced_options": 31374087,
+      "known_base_allocations": 35251819,
+      "base_plus_priced_options": 37713436,
       "reported_rounded_salary_count": 0,
       "subtotal_precision": "whole_dollars",
       "known_free_agent_holds": null,
@@ -872,14 +887,14 @@
       "season": "2006-07",
       "scheduled_contract_salary": 15697500,
       "unsigned_first_round_holds": 0,
-      "known_conditional_salary": 15439006,
+      "known_conditional_salary": 18640208,
       "unpriced_option_count": 0,
       "free_agent_holds": null,
       "other_cap_charges": null,
       "total_team_salary": null,
       "cap_space": null,
       "known_base_allocations": 15697500,
-      "base_plus_priced_options": 31136506,
+      "base_plus_priced_options": 34337708,
       "reported_rounded_salary_count": 0,
       "subtotal_precision": "whole_dollars",
       "known_free_agent_holds": null,

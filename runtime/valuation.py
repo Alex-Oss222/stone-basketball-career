@@ -20,6 +20,8 @@ import math
 from pathlib import Path
 import statistics
 
+from .cba import minimum_salary
+
 ROOT = Path(__file__).resolve().parents[1]
 STATS_PATH = Path("library/2003/league/nba_2002_03_player_stats.json")
 CONTRACTS_PATH = Path("library/2003/league/nba_2003_contracts.json")
@@ -125,9 +127,15 @@ class Valuation:
         return max(base, round(prior_salary * 1.05)) if prior_salary else base
 
     def minimum(self, years_of_service):
-        y = years_of_service or 0
-        key = "10_plus_years" if y >= 10 else f"{min(y, 2)}_year{'s' if min(y, 2) != 1 else ''}"
-        return self.minimums.get(key) or self.minimums["2_years"]
+        """The 1999 CBA minimum for the years of service (unknown service prices at the rookie minimum;
+        a signing must pass recorded service, see `signing_minimum`)."""
+        return minimum_salary(years_of_service or 0, root=self.root)
+
+    def signing_minimum(self, years_of_service, nba_history=True):
+        """The minimum Miami must pay to sign him: a veteran without recorded service is refused."""
+        if years_of_service is None and nba_history:
+            raise ValueError("a veteran's years of NBA service must be recorded before a minimum contract")
+        return minimum_salary(years_of_service or 0, root=self.root)
 
     def comparables_price(self, value):
         """First-year salary the inventory pays for this production value."""

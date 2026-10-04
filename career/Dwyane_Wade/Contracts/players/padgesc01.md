@@ -18,7 +18,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | Not recorded |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $638,679 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | $688,679 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
@@ -42,7 +42,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | $638,679 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2003-04 | $688,679 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -97,7 +97,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.
+Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 4 years of service is $688,679 (was $638,679); minimum_salary_corrections.json.
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -106,6 +106,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated signed-contract archive](../contract_records.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
 
 ### Current control and contract coverage
 
@@ -172,7 +173,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | Not recorded |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $638,679 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | $688,679 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
@@ -196,7 +197,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | $638,679 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2003-04 | $688,679 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -251,7 +252,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.
+Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 4 years of service is $688,679 (was $638,679); minimum_salary_corrections.json.
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -260,6 +261,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated signed-contract archive](../contract_records.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
 
 ### Scott Padgett · existing contract; signing date not recorded
 
@@ -369,3 +371,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)

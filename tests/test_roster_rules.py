@@ -137,11 +137,14 @@ class CorrectionTests(unittest.TestCase):
                 return None
             def minimum(self, s):
                 return 1
+            def signing_minimum(self, s, nba_history=True):
+                return 1
 
         class M:
             valuation = Val()
             def pool(self, on):
-                return {"b1": {"player": "Bee", "club": "X"}, "a1": {"player": "Aye", "club": "Y"}}
+                return {"b1": {"player": "Bee", "club": "X", "nba_seasons_before_2003_04": 2},
+                        "a1": {"player": "Aye", "club": "Y", "nba_seasons_before_2003_04": 2}}
             def restricted(self, b):
                 return False
 

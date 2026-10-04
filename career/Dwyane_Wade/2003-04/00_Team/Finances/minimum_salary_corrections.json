@@ -1,0 +1,115 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "date": "2003-11-11",
+ "kind": "minimum_salary_correction",
+ "rule": "1999 CBA minimum salary by years of NBA service before the season (FAQ Q9; library/2003/league/nba_1999_cba_minimum_salary_scale.json). A one-year minimum for a player with five or more years counts the four-year minimum in team salary; the league reimburses the rest.",
+ "cause": "The front office priced every veteran with 3 to 9 years of service at the two-year minimum, and an unattached veteran without recorded service at the rookie minimum (runtime/valuation.py before this date).",
+ "answers": "Each signing, its date and its terms stand. No drawn answer is re-drawn: every corrected salary is at least the amount the player accepted.",
+ "contracts": [
+  {
+   "player": "Stephen Jackson",
+   "years_of_service": 3,
+   "service_source": "library/2003/league/nba_2003_free_agent_rights.json",
+   "signed": "2003-09-30",
+   "salary_before": 638679,
+   "salary_after": 663679,
+   "counted_in_team_salary": 663679,
+   "amended": true
+  },
+  {
+   "player": "Scott Padgett",
+   "years_of_service": 4,
+   "service_source": "library/2003/league/nba_2003_free_agent_rights.json",
+   "signed": "2003-09-30",
+   "salary_before": 638679,
+   "salary_after": 688679,
+   "counted_in_team_salary": 688679,
+   "amended": true
+  },
+  {
+   "player": "Cherokee Parks",
+   "years_of_service": 8,
+   "service_source": "library/2003/league/nba_2003_free_agent_rights.json",
+   "signed": "2003-10-27",
+   "salary_before": 638679,
+   "salary_after": 938679,
+   "counted_in_team_salary": 688679,
+   "amended": true
+  },
+  {
+   "player": "Shawn Kemp",
+   "years_of_service": 14,
+   "service_source": "library/2003/league/nba_2003_free_agent_rights.json",
+   "signed": "2003-09-30",
+   "salary_before": 1070000,
+   "salary_after": 1070000,
+   "counted_in_team_salary": 688679,
+   "amended": true
+  },
+  {
+   "player": "John Wallace",
+   "years_of_service": 6,
+   "service_source": "library/2003/league/nba_2003_unattached_identities.json",
+   "signed": "2003-10-27",
+   "salary_before": 366931,
+   "salary_after": 813679,
+   "counted_in_team_salary": 688679,
+   "amended": true
+  },
+  {
+   "player": "Udonis Haslem",
+   "years_of_service": 0,
+   "service_source": "library/2003/league/nba_2003_unattached_identities.json",
+   "signed": "2003-10-27",
+   "salary_before": 366931,
+   "salary_after": 366931,
+   "counted_in_team_salary": 366931,
+   "amended": false
+  }
+ ],
+ "contract_history_events": [
+  {
+   "player": "Keon Clark",
+   "event": "voided",
+   "date": "2003-10-27",
+   "contract_id": "clarkke01-2003-09-30"
+  },
+  {
+   "player": "Jumaine Jones",
+   "event": "voided",
+   "date": "2003-10-27",
+   "contract_id": "jonesju01-2003-09-30"
+  },
+  {
+   "player": "Reggie Evans",
+   "event": "voided",
+   "date": "2003-10-27",
+   "contract_id": "evansre01-2003-09-30"
+  },
+  {
+   "player": "Chris Andersen",
+   "event": "voided",
+   "date": "2003-10-27",
+   "contract_id": "anderch01-2003-09-30"
+  },
+  {
+   "player": "Mike Batiste",
+   "event": "voided",
+   "date": "2003-10-27",
+   "contract_id": "batismi01-2003-09-30"
+  },
+  {
+   "player": "Dion Glover",
+   "event": "released",
+   "date": "2003-10-27",
+   "contract_id": "glovedi01-2003-09-30"
+  },
+  {
+   "player": "Tyrone Hill",
+   "event": "released",
+   "date": "2003-10-27",
+   "contract_id": "hillty01-2003-09-30"
+  }
+ ]
+}

@@ -10,6 +10,7 @@ Every constant is a judgement constant, named here.
 import json
 from pathlib import Path
 
+from .contracts import counted_amount
 from .standing import STANDING_WEIGHT
 from .trades import SIGN_AND_TRADE_RIGHTS
 from .valuation import read
@@ -53,7 +54,7 @@ class FrontOffice:
         """Salary and holds Miami carries for the season on this date (options as decided)."""
         total, rows = 0, []
         for p in self.sheet["players"]:
-            amount, kind = p["schedule"].get(SEASON), p["amount_kind"].get(SEASON)
+            amount, kind = counted_amount(p, SEASON), p["amount_kind"].get(SEASON)
             status = p["status"]
             if amount is None:
                 continue

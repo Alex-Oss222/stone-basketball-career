@@ -1,19 +1,19 @@
 {
   "schema_version": 5,
   "owner": "ai_gm",
-  "as_of": "2003-10-27",
+  "as_of": "2003-11-11",
   "season": "2003-04",
   "team": "Miami Heat",
-  "cap_status": "free_agency",
+  "cap_status": "regular_season",
   "live_official_salary_cap": 43840000,
   "historical_actual_salary_cap": 43840000,
   "historical_actual_salary_cap_publication_date": "2003-07-15",
   "league_cap_history_file": "league_cap_history.json",
   "contract_schedules_file": "contract_schedules.json",
-  "known_counted_salary_before_free_agent_holds": 32066078,
-  "reference_difference_to_historical_actual_cap_before_free_agent_holds": 11773922,
+  "known_counted_salary_before_free_agent_holds": 44128961,
+  "reference_difference_to_historical_actual_cap_before_free_agent_holds": -288961,
   "cap_space": null,
-  "cap_room": -889700,
+  "cap_room": -955127,
   "cap_room_reason": [
     "Cap published July 15, 2003.",
     "Committed salary, unrenounced holds and the roster charge for empty spots are deducted (docs/front_office_design.md 5.1)."
@@ -23,31 +23,106 @@
       "player": "Eddie Jones",
       "kind": "contract_salary",
       "amount": 12333750,
-      "precision": "whole_dollars"
+      "precision": "whole_dollars",
+      "status": "under_contract"
     },
     {
       "player": "Brian Grant",
       "kind": "contract_salary",
       "amount": 12130648,
-      "precision": "whole_dollars"
+      "precision": "whole_dollars",
+      "status": "under_contract"
     },
     {
       "player": "Caron Butler",
       "kind": "contract_salary",
       "amount": 1804680,
-      "precision": "whole_dollars"
+      "precision": "whole_dollars",
+      "status": "under_rookie_contract"
     },
     {
       "player": "LaPhonso Ellis",
       "kind": "contract_salary",
       "amount": 3600000,
-      "precision": "reported_rounded"
+      "precision": "reported_rounded",
+      "status": "under_contract_guarantee_amended"
+    },
+    {
+      "player": "Anthony Carter",
+      "kind": "player_option",
+      "amount": 4100000,
+      "precision": "whole_dollars",
+      "status": "player_option_exercised"
+    },
+    {
+      "player": "Rasual Butler",
+      "kind": "team_option",
+      "amount": 563679,
+      "precision": "whole_dollars",
+      "status": "team_option_exercised"
+    },
+    {
+      "player": "Sean Lampley",
+      "kind": "team_option",
+      "amount": 563679,
+      "precision": "whole_dollars",
+      "status": "team_option_exercised"
     },
     {
       "player": "Dwyane Wade",
-      "kind": "unsigned_first_round_scale_cap_hold",
+      "kind": "contract_salary",
       "amount": 2197000,
-      "precision": "whole_dollars"
+      "precision": "whole_dollars",
+      "status": "under_contract"
+    },
+    {
+      "player": "Mike James",
+      "kind": "contract_salary",
+      "amount": 3050199,
+      "precision": "whole_dollars",
+      "status": "re_signed"
+    },
+    {
+      "player": "Stephen Jackson",
+      "kind": "contract_salary",
+      "amount": 663679,
+      "precision": "whole_dollars",
+      "status": "camp_contract"
+    },
+    {
+      "player": "Shawn Kemp",
+      "kind": "contract_salary",
+      "amount": 688679,
+      "precision": "whole_dollars",
+      "status": "camp_contract"
+    },
+    {
+      "player": "Scott Padgett",
+      "kind": "contract_salary",
+      "amount": 688679,
+      "precision": "whole_dollars",
+      "status": "camp_contract"
+    },
+    {
+      "player": "Cherokee Parks",
+      "kind": "contract_salary",
+      "amount": 688679,
+      "precision": "whole_dollars",
+      "status": "camp_contract"
+    },
+    {
+      "player": "Udonis Haslem",
+      "kind": "contract_salary",
+      "amount": 366931,
+      "precision": "whole_dollars",
+      "status": "camp_contract"
+    },
+    {
+      "player": "John Wallace",
+      "kind": "contract_salary",
+      "amount": 688679,
+      "precision": "whole_dollars",
+      "status": "camp_contract"
     }
   ],
   "pending_control_items": [
@@ -93,12 +168,13 @@
       "player": "Dwyane Wade",
       "pick": 5,
       "first_year_rookie_scale": 2197000,
-      "current_cap_hold": 2197000,
+      "current_cap_hold": 0,
       "permitted_percent_of_scale": {
         "min": 80,
         "max": 120
       },
-      "contract_status": "unsigned"
+      "contract_status": "signed",
+      "signed_date": "2003-07-21"
     },
     {
       "player": "Jerome Beasley",
@@ -133,10 +209,10 @@
     "2010-11"
   ],
   "currency": "USD",
-  "known_counted_salary_definition": "Non-option contract amounts plus the unsigned first-round hold; includes Ellis at the rounded reported $3.6M. Not a guarantee total or certified team salary.",
-  "scheduled_contract_salary_subtotal": 29869078,
-  "known_pending_option_salary": 5791037,
-  "known_base_plus_priced_options": 37857115,
+  "known_counted_salary_definition": "Counted 2003-04 team salary on 2003-11-11: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+  "scheduled_contract_salary_subtotal": 44128961,
+  "known_pending_option_salary": 0,
+  "known_base_plus_priced_options": 44128961,
   "live_official_tax_threshold": null,
   "tax_payroll": null,
   "luxury_tax_bill": null,
@@ -178,10 +254,10 @@
     "rule": "Missing inputs propagate null. Cap holds are accounting allocations, not signed cash salary. Do not subtract only the known base subtotal and call the difference cap room."
   },
   "reference_difference_to_historical_actual_cap_note": "Approximate historical arithmetic only. Includes rounded Ellis reporting, excludes options and holds, and is not usable cap room.",
-  "known_free_agent_holds_subtotal": 5401037,
-  "unpriced_free_agent_hold_count": 2,
+  "known_free_agent_holds_subtotal": 666166,
+  "unpriced_free_agent_hold_count": 0,
   "free_agent_hold_total": null,
-  "free_agent_hold_timing": "Upcoming 2003-04 cap-year projection only. The seven contracts remain expiring contracts on June 26.",
+  "free_agent_hold_timing": "Holds on 2003-11-11 are the unrenounced free agents' cap holds in free_agent_rights.json.",
   "research_date": "2026-10-02",
   "guarantee_review": [
     {
@@ -220,7 +296,7 @@
   "subtotal_precision": "includes_rounded_report",
   "reported_rounded_salary_count": 1,
   "planning_cap": 43840000,
-  "known_counted_salary": 44063534,
+  "known_counted_salary": 44128961,
   "roster_charge": 0,
-  "projected_cap_room": -889700
+  "projected_cap_room": -955127
 }

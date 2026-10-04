@@ -47,8 +47,9 @@ def unattached(on, root=ROOT):
             continue
         earlier = [s for s in (careers.get(key) or {}).get("seasons", {}) if s < "2003-04"] or identities.get(key, {}).get("nba_history")
         if row.get("to") == MIAMI and not row.get("from") and key not in stats:
+            service = identities.get(key, {}).get("nba_seasons_before_2003_04", None if earlier else 0)
             out[key] = {"player": row["player"], "bbr_id": row.get("bbr_id"), "club": None, "unattached": not earlier,
-                        "nba_seasons_before_2003_04": 0, "basis": f"real signing with Miami on {row['date']} skipped (rule 1); no previous NBA club"}
+                        "nba_history": bool(earlier), "nba_seasons_before_2003_04": service, "basis": f"real signing with Miami on {row['date']} skipped (rule 1); no previous NBA club"}
     return out
 
 
@@ -69,6 +70,8 @@ def candidates(on, front_office, market, positions, root=ROOT, requested=()):
     for bbr, p in pool.items():
         if bbr in held or p["player"] in held:
             continue
+        if p.get("nba_seasons_before_2003_04") is None and p.get("nba_history", True):
+            continue          # no recorded service: Miami cannot set the legal minimum (cba.minimum_salary)
         value = market.valuation.value(bbr)
         known = value is not None
         value = value if known else REPLACEMENT_EFF_PER_GAME
@@ -76,7 +79,8 @@ def candidates(on, front_office, market, positions, root=ROOT, requested=()):
         fit = front_office.fit(pos, needs)
         rows.append({"player": p["player"], "bbr_id": bbr, "position": pos, "value": round(value, 2), "value_known": known,
                      "fit": fit, "score": round(value * fit, 3), "unattached": bool(p.get("unattached")),
-                     "salary": market.valuation.minimum(p.get("nba_seasons_before_2003_04"))})
+                     "salary": market.valuation.signing_minimum(p.get("nba_seasons_before_2003_04"), p.get("nba_history", True)),
+                     "years_of_service": p.get("nba_seasons_before_2003_04")})
     for r in rows:
         r["wade_request"] = r["player"] in requested
     rows.sort(key=lambda r: (-r["score"], not r["wade_request"], r["player"]))

@@ -16,6 +16,7 @@ from pathlib import Path
 
 from .valuation import read
 from .contract_archive import archive_contract, archive_previous_contract
+from .contracts import counted_amount
 
 ROOT = Path(__file__).resolve().parents[1]
 SEASON = "2003-04"
@@ -412,11 +413,95 @@ def _seasons(years, first=SEASON):
 
 
 # -- finance summary ---------------------------------------------------------------------------------
+OPTION_KINDS = ("team_option", "player_option", "early_termination_option")
+# Cap-year phases the summary names; the dates are the 2003-04 calendar's (season_structure.json).
+CAP_PHASES = (("2003-10-28", "regular_season"), ("2003-09-30", "training_camp"), ("2003-07-01", "free_agency"))
+
+
+def cap_status(day):
+    return next((name for start, name in CAP_PHASES if day >= start), "pre_free_agency")
+
+
+def ledger_aggregates(sheet):
+    """Season totals of Miami's live ledger, the figures finance.json and the schedule's projection carry.
+
+    A released, voided, traded or declined entry counts nothing. An exercised option is a commitment; a
+    pending one is conditional (priced or unpriced). Amounts are counted amounts (`counted_amount`), so a
+    veteran's reimbursed minimum counts the four-year minimum. Draft holds stay separate."""
+    totals = {s: {"contract_salary": 0, "draft_hold": 0, "options": 0, "unknown_options": 0, "rounded": 0} for s in HORIZON}
+    components = []
+    for p in sheet["players"]:
+        if p["status"] in CLOSED_STATUSES:
+            continue
+        for s in HORIZON:
+            if s not in p["schedule"]:
+                continue
+            amount, kind = counted_amount(p, s), p.get("amount_kind", {}).get(s)
+            if p.get("amount_precision", {}).get(s) == "reported_rounded":
+                totals[s]["rounded"] += 1
+            if kind in OPTION_KINDS and "exercised" not in p["status"]:
+                if amount is None:
+                    totals[s]["unknown_options"] += 1
+                else:
+                    totals[s]["options"] += amount
+                continue
+            if amount is None or kind == "unsigned_rights":
+                continue
+            bucket = "draft_hold" if kind == "draft_hold" else "contract_salary"
+            totals[s][bucket] += amount
+            if s == SEASON:
+                components.append({"player": p["player"], "kind": kind, "amount": amount,
+                                   "precision": p.get("amount_precision", {}).get(s, "whole_dollars"), "status": p["status"]})
+    return totals, components
+
+
+def refresh_aggregates(finance, sheet, room, day):
+    """Write the ledger's season totals into finance.json and the schedule's projection on the date."""
+    totals, components = ledger_aggregates(sheet)
+    for row in sheet.get("projection", []):
+        t = totals.get(row["season"])
+        if t is None:
+            continue
+        base = t["contract_salary"] + t["draft_hold"]
+        row.update(scheduled_contract_salary=t["contract_salary"], unsigned_first_round_holds=t["draft_hold"],
+                   known_conditional_salary=t["options"], unpriced_option_count=t["unknown_options"],
+                   known_base_allocations=base, base_plus_priced_options=base + t["options"],
+                   reported_rounded_salary_count=t["rounded"],
+                   subtotal_precision="includes_rounded_report" if t["rounded"] else "whole_dollars",
+                   known_free_agent_holds=room["holds"] if row["season"] == SEASON else None,
+                   unpriced_free_agent_hold_count=0 if row["season"] == SEASON else None)
+    sheet["known_baseline"] = {s: t["contract_salary"] + t["draft_hold"] for s, t in totals.items()}
+    sheet["conditional_known_amounts"] = {s: t["options"] for s, t in totals.items()}
+    sheet["conditional_unknown_count"] = {s: t["unknown_options"] for s, t in totals.items()}
+    sheet["as_of"] = day
+    definition = (f"Counted 2003-04 team salary on {day}: signed contracts (camp contracts included), exercised options and "
+                  "unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year "
+                  "veteran's one-year minimum counts the four-year minimum. Not a guarantee total.")
+    sheet.setdefault("projection_basis", {})["known_baseline_definition"] = definition
+    cur = totals[SEASON]
+    base = cur["contract_salary"] + cur["draft_hold"]
+    finance.update(scheduled_contract_salary_subtotal=cur["contract_salary"], known_counted_salary_before_free_agent_holds=base,
+                   known_pending_option_salary=cur["options"], known_base_plus_priced_options=base + cur["options"],
+                   reported_rounded_salary_count=cur["rounded"],
+                   subtotal_precision="includes_rounded_report" if cur["rounded"] else "whole_dollars",
+                   known_current_components=components, known_counted_salary_definition=definition,
+                   reference_difference_to_historical_actual_cap_before_free_agent_holds=finance.get("historical_actual_salary_cap", room["cap"]) - base,
+                   known_free_agent_holds_subtotal=room["holds"], unpriced_free_agent_hold_count=0,
+                   free_agent_hold_timing=f"Holds on {day} are the unrenounced free agents' cap holds in free_agent_rights.json.")
+    by_name = {p["player"]: p for p in sheet["players"]}
+    for pick in finance.get("draft_rights", []):
+        entry = by_name.get(pick["player"], {})
+        if entry.get("signed_date"):
+            pick.update(contract_status="signed", signed_date=entry["signed_date"], current_cap_hold=0)
+        elif entry.get("status"):
+            pick["contract_status"] = "unsigned"
+
+
 def refresh_finance(writer, front_office, day):
     """Recompute the finance summary and cap sheet from the ledger on the date."""
     finance = writer.load(TEAM / "Finances/finance.json")
     room = front_office.cap_room()
-    finance.update(as_of=day, cap_status="free_agency" if day >= "2003-07-01" else "pre_free_agency",
+    finance.update(as_of=day, cap_status=cap_status(day),
                    live_official_salary_cap=room["cap"] if room["cap_known"] else None, planning_cap=room["cap"],
                    known_counted_salary=room["committed"], free_agent_holds=room["holds"], roster_charge=room["roster_charge"],
                    cap_room=room["room"] if room["cap_known"] else None, projected_cap_room=room["room"],
@@ -424,6 +509,7 @@ def refresh_finance(writer, front_office, day):
                                     "Committed salary, unrenounced holds and the roster charge for empty spots are deducted (docs/front_office_design.md 5.1)."])
     sync_cards(writer, day)
     sheet = writer.load(TEAM / "Finances/contract_schedules.json")
+    refresh_aggregates(finance, sheet, room, day)
     outcomes = {"player_option_exercised": "exercised", "player_option_declined": "declined",
                 "team_option_exercised": "exercised", "team_option_declined": "declined"}
     status = {p["player"]: p["status"] for p in sheet["players"]}
@@ -468,10 +554,12 @@ def cap_sheet_text(sheet, rights, room, day):
             continue
         cells = []
         for s in HORIZON:
-            v = p["schedule"].get(s)
+            v, counted = p["schedule"].get(s), counted_amount(p, s)
             kind = p.get("amount_kind", {}).get(s, "")
             tag = {"team_option": "TO", "player_option": "PO", "early_termination_option": "ETO", "draft_hold": "H"}.get(kind, "")
-            cells.append("—" if v is None else f"{v:,}" + (f"<sup>{tag}</sup>" if tag else ""))
+            cell = "—" if v is None else f"{v:,}" + (f"<sup>{tag}</sup>" if tag else "")
+            cells.append(cell + (f" (counts {counted:,})" if v is not None and counted != v else ""))
+            v = counted
             if v and kind in ("contract_salary", "draft_hold", "team_option", "player_option", "early_termination_option") and "pending" not in p["status"]:
                 totals[s] += v
         rows.append(f"| [{p['player']}](../Team/Player_Cards/{slug(p['player'])}.md) | " + " | ".join(cells) + " |")
@@ -519,7 +607,7 @@ def counted_salary(sheet_players, on, season=SEASON):
     """2003-04 salary counted on a date: contracts, exercised options and holds; pending options only before July 1."""
     total = 0
     for p in sheet_players:
-        amount, status = p["schedule"].get(season), p["status"]
+        amount, status = counted_amount(p, season), p["status"]
         if amount is None or status in CLOSED_STATUSES:
             continue
         if status in ("team_option_pending", "player_option_pending") and on >= "2003-07-01":
@@ -541,6 +629,23 @@ def ledger_errors(root=ROOT):
         errors.append("finance.json is dated after the career clock")
     if finance["as_of"] > "2003-06-26" and finance.get("known_counted_salary") != counted_salary(sheet["players"], finance["as_of"]):
         errors.append("finance.json: known_counted_salary does not reconcile to contract_schedules.json on its date")
+    if finance["as_of"] > "2003-06-26":
+        totals, components = ledger_aggregates(sheet)
+        cur = totals[SEASON]
+        base = cur["contract_salary"] + cur["draft_hold"]
+        if finance.get("known_counted_salary_before_free_agent_holds") != base or finance.get("known_counted_salary") != base:
+            errors.append("finance.json: counted salary totals do not reconcile to the live ledger")
+        if sum(c["amount"] for c in finance.get("known_current_components", [])) != base:
+            errors.append("finance.json: current salary components do not sum to the counted salary")
+        if finance.get("cap_status") != cap_status(finance["as_of"]):
+            errors.append(f"finance.json: cap_status should be {cap_status(finance['as_of'])} on {finance['as_of']}")
+        for s, t in totals.items():
+            if sheet.get("known_baseline", {}).get(s) != t["contract_salary"] + t["draft_hold"]:
+                errors.append(f"contract_schedules.json: {s} known_baseline does not reconcile to the live ledger")
+        signed = {p["player"] for p in sheet["players"] if p.get("signed_date")}
+        for pick in finance.get("draft_rights", []):
+            if pick["player"] in signed and pick.get("contract_status") != "signed":
+                errors.append(f"finance.json: {pick['player']} signed but still listed as unsigned draft rights")
     by_name = {p["player"]: p for p in sheet["players"]}
     for p in roster["players"]:
         if p["status"] not in ("signed_free_agent", "re_signed"):

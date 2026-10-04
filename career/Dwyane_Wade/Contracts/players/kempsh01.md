@@ -97,7 +97,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10.
+Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -106,6 +106,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated signed-contract archive](../contract_records.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
 
 ### Current control and contract coverage
 
@@ -251,7 +252,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10.
+Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
@@ -260,6 +261,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated signed-contract archive](../contract_records.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
 
 ### Shawn Kemp · existing contract; signing date not recorded
 
@@ -369,3 +371,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)

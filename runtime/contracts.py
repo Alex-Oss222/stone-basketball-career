@@ -30,6 +30,12 @@ LEAK_PATTERNS = (r"signed a new contract after", r"after the checkpoint\)", r"si
                  r"released \d+/\d+/0[4-9]", r"released (0?[7-9]|1[0-2])/\d+/03")
 
 
+def counted_amount(entry, season):
+    """Team salary an entry counts in a season: its `cap_amount` where the CBA counts less than the
+    salary paid (a 5+ year veteran's one-year minimum, cba.minimum_cap_amount), else the salary."""
+    return (entry.get("cap_amount") or {}).get(season, (entry.get("schedule") or {}).get(season))
+
+
 def read(path, root=ROOT):
     return json.loads((Path(root) / path).read_text(encoding="utf-8"))
 

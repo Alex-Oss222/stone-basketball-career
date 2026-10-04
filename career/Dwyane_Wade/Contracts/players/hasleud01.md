@@ -103,9 +103,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
+- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 
 ### Current control and contract coverage
 
@@ -257,9 +257,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
+- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 
 ## Source records
 

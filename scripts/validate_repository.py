@@ -488,7 +488,8 @@ def validate():
     schedules_path=team/"Finances/contract_schedules.json"
     if schedules_path.is_file():
         schedules=json.loads(schedules_path.read_text(encoding="utf-8"))
-        require(errors,schedules.get("known_baseline",{}).get("2003-04")==32066078,"contract schedule baseline mismatch")
+        if at_checkpoint:   # later dates reconcile to the live ledger (signing.ledger_errors)
+            require(errors,schedules.get("known_baseline",{}).get("2003-04")==32066078,"contract schedule baseline mismatch")
         wade=next((x for x in schedules.get("players",[]) if x.get("player")=="Dwyane Wade"),{})
         if wade.get("status")=="unsigned_first_round_draft_rights":
             require(errors,wade.get("current_cap_hold")==2197000,"Wade unsigned rookie-scale cap hold must be $2.197M")

@@ -18,7 +18,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | Not recorded |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $366,931 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | $813,679 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
@@ -42,7 +42,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | $366,931 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2003-04 | $813,679 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -97,15 +97,16 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).
+Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 6 years of service is $813,679 (was $366,931); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
+- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
 
 ### Current control and contract coverage
 
@@ -172,7 +173,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Original term | Not recorded |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $366,931 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Recorded schedule subtotal | $813,679 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
 | Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
@@ -196,7 +197,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | $366,931 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2003-04 | $813,679 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -251,18 +252,20 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).
+Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 6 years of service is $813,679 (was $366,931); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
+- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
 
 ## Source records
 
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)

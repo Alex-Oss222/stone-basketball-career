@@ -8,103 +8,7 @@ Jumaine Jones: voided. Evidence cutoff: 2003-11-11.
 
 ## Current contract
 
-### Jumaine Jones · 2003-09-30
-
-Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
-
-| Contract term | Recorded value | Basis |
-| --- | --- | --- |
-| Signing date | 2003-09-30 |  |
-| Original term | Not recorded |  |
-| Reported original value | Not recorded | Not recorded |
-| Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $638,679 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 0 |  |
-
-### Contract identity and execution
-
-| Field | Recorded detail |
-| --- | --- |
-| Assigned club | Miami Heat |
-| Signing club | Miami Heat |
-| Contract ID | jonesju01-2003-09-30 |
-| Signing route / evidence basis | minimum |
-| Signing date | 2003-09-30 |
-| Verified first season | Not recorded |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
-| Status | camp_contract |
-| Contract wording | Not recorded |
-
-### Salary by season
-
-Recorded salary is not automatically base salary, cap hit, cash paid or guaranteed compensation. Missing values are unknown. Only the same season's published and activated cap is displayed.
-
-| Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | $638,679 | Not recorded | Not recorded | $0 | Not recorded | Not recorded | $43,840,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-
-### Options and decision deadlines
-
-An option amount is conditional. No exercise or decline is assumed.
-
-| Season | Option | Amount | Decision deadline | Outcome | Outcome date |
-| --- | --- | --- | --- | --- | --- |
-
-### Additional recorded annual compensation
-
-Missing bonus, dead-cap and buyout fields do not establish zero liability or payment.
-
-| Season | Signing bonus | Dead cap | Buyout |
-| --- | --- | --- | --- |
-| 2003-04 | Not recorded | Not recorded | Not recorded |
-
-### Guarantees, incentives and payment terms
-
-| Term | Recorded detail |
-| --- | --- |
-| Guarantee rider / amendment | Not recorded |
-| Guarantee triggers | Not recorded |
-| Guarantee date | 2004-01-10 |
-| Waiver deadline | Not recorded |
-| Bonus terms | Not recorded |
-| Payment schedule | Not recorded |
-| Buyout terms | Not recorded |
-| Promise | Not recorded |
-| Percent of scale | Not recorded |
-
-### Free agency, Bird rights and trade terms
-
-No clause, consent right, unrestricted/restricted status or future qualifying-offer outcome is inferred from a missing field.
-
-| Term | Recorded detail |
-| --- | --- |
-| Free agency | Not recorded |
-| Bird rights | Not recorded |
-| No trade clause | Not recorded |
-| Trade consent | Not recorded |
-| Trade restrictions | Not recorded |
-| Trade kicker | Not recorded |
-| Trade clauses | Not recorded |
-| Base year compensation | Not recorded |
-
-### Assignment history
-
-A trade assigns this contract; it does not create a duplicate signing.
-
-| Date | From | To | Transaction | Source |
-| --- | --- | --- | --- | --- |
-
-### Evidence and coverage
-
-Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.
-
-Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
-
-#### Agreement evidence
-
-- [Dated signed-contract archive](../contract_records.json)
-- [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
+No verified current signed agreement is available in the dated record. The control and evidence sections below explain the recorded status.
 
 ### Current control and contract coverage
 
@@ -115,16 +19,17 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Player | Jumaine Jones |
 | Club / rights baseline | Miami Heat |
 | Control status | voided |
-| Executed current contract | Recorded |
+| Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
 
 ### Unsigned or unresolved salary evidence
 
-Current signed salary detail appears in the contract below.
+Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.
 
 | Season | Amount | Record kind |
 | --- | --- | --- |
+| 2003-04 | $638,679 | contract_salary |
 
 ### Draft-rights scale reference
 
@@ -186,7 +91,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
-| Status | camp_contract |
+| Status | voided |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -257,7 +162,9 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
+- [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 
 ### Jumaine Jones · existing contract; signing date not recorded
 
@@ -367,3 +274,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)

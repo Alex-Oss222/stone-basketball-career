@@ -20,6 +20,7 @@ AFTER_CHECKPOINT = (                       # records the clock writes after June
     f"{SEASON}/01_Free_Agency/Plans",
     f"{SEASON}/Wade_Consultations",
     f"{SEASON}/00_Team/Transactions",
+    f"{SEASON}/00_Team/Finances/minimum_salary_corrections.json",
     f"{SEASON}/04_Training_Camp/camp_roster.json",
     f"{SEASON}/04_Training_Camp/Decisions",
     f"{SEASON}/00_Team/Team/Depth_Chart/rotation.json",

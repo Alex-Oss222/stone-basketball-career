@@ -80,6 +80,8 @@ def invite(on, front_office, market, root=ROOT):
             continue
         if market.restricted(bbr):
             continue          # a camp contract is not an offer sheet: his club's right to match would be bypassed
+        if p.get("nba_seasons_before_2003_04") is None and p.get("nba_history", True):
+            continue          # no recorded service: Miami cannot set the legal minimum (cba.minimum_salary)
         value, age = market.valuation.value(bbr), market.valuation.age(bbr)
         if value is None:
             continue
@@ -88,7 +90,8 @@ def invite(on, front_office, market, root=ROOT):
         pos = positions.get(bbr, "SF")
         rows.append({"player": p["player"], "bbr_id": bbr, "position": pos, "age": age, "value": round(value, 2),
                      "fit": front_office.fit(pos, needs), "score": round(value * front_office.fit(pos, needs), 3),
-                     "salary": market.valuation.minimum(p.get("nba_seasons_before_2003_04"))})
+                     "salary": market.valuation.signing_minimum(p.get("nba_seasons_before_2003_04")),
+                     "years_of_service": p.get("nba_seasons_before_2003_04")})
     rows.sort(key=lambda r: -r["score"])
     return rows[:max(0, spots)]
 

@@ -11,10 +11,33 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RULES_PATH = Path("library/2003/league/nba_1999_cba_rules.json")
+MINIMUM_SCALE_PATH = Path("library/2003/league/nba_1999_cba_minimum_salary_scale.json")
+MINIMUM_CAP_SERVICE = 5        # FAQ Q9: a one-year minimum for a 5+ year veteran counts the 4-year minimum
 
 
 def rules(root=ROOT):
     return json.loads((Path(root) / RULES_PATH).read_text(encoding="utf-8"))
+
+
+def minimum_scale(root=ROOT):
+    return json.loads((Path(root) / MINIMUM_SCALE_PATH).read_text(encoding="utf-8"))
+
+
+def minimum_salary(years_of_service, season="2003-04", root=ROOT):
+    """The 1999 CBA minimum salary for a player's years of NBA service before the season (FAQ Q9)."""
+    if years_of_service is None:
+        raise ValueError("years of service are not recorded; the minimum salary cannot be set")
+    row = minimum_scale(root)["seasons"][season]
+    return row["10_plus"] if years_of_service >= 10 else row[str(max(0, int(years_of_service)))]
+
+
+def minimum_cap_amount(years_of_service, salary, seasons, season="2003-04", root=ROOT):
+    """Team salary counted for a contract: a one-year minimum for a 5+ year veteran counts the
+    4-year minimum (the league reimburses the rest); every other contract counts its salary."""
+    if (years_of_service is not None and years_of_service >= MINIMUM_CAP_SERVICE and seasons == 1
+            and salary == minimum_salary(years_of_service, season, root)):
+        return minimum_scale(root)["cap_treatment"]["amount_counted"][season]
+    return salary
 
 
 def bird_status(seasons_with_team):
@@ -90,9 +113,7 @@ def terms_errors(terms, *, route, years_of_service, prior_salary, cap_rules, cba
     maximum = cap_rules["maximum_salary"][tier]
     if prior_salary:
         maximum = max(maximum, round(prior_salary * 1.05))
-    minimums = cap_rules["minimum_salary"]
-    y = years_of_service or 0
-    minimum = minimums.get("10_plus_years" if y >= 10 else f"{min(y, 2)}_year{'s' if min(y, 2) != 1 else ''}") or minimums["2_years"]
+    minimum = minimum_salary(years_of_service or 0)
     if first > maximum:
         errors.append(f"first-year salary {first:,} exceeds the maximum {maximum:,} for {years_of_service} years of service")
     if first < minimum:

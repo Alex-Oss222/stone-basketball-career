@@ -565,7 +565,7 @@
       "name": "Chris Andersen",
       "team": "Miami Heat",
       "status": "voided",
-      "current_contract_id": "anderch01-2003-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/anderch01.html#contract"
     },
@@ -1771,7 +1771,7 @@
       "name": "Jumaine Jones",
       "team": "Miami Heat",
       "status": "voided",
-      "current_contract_id": "jonesju01-2003-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/jonesju01.html#contract"
     },
@@ -1906,7 +1906,7 @@
       "name": "Keon Clark",
       "team": "Miami Heat",
       "status": "voided",
-      "current_contract_id": "clarkke01-2003-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/clarkke01.html#contract"
     },
@@ -2410,7 +2410,7 @@
       "name": "Mike Batiste",
       "team": "Miami Heat",
       "status": "voided",
-      "current_contract_id": "batismi01-2003-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/batismi01.html#contract"
     },
@@ -2743,7 +2743,7 @@
       "name": "Reggie Evans",
       "team": "Miami Heat",
       "status": "voided",
-      "current_contract_id": "evansre01-2003-09-30",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/evansre01.html#contract"
     },

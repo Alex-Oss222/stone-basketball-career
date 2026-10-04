@@ -14,8 +14,9 @@ class ContractInventoryTests(unittest.TestCase):
         self.assertEqual(contract_errors(ROOT), [])
 
     def test_miami_ledger_matches_miami_sheet(self):
+        # The league inventory is the June 26 snapshot, so it matches Miami's June 26 finance summary.
         ledger = club_ledger("Miami Heat", "2003-04")
-        finance = json.loads((ROOT / "career/Dwyane_Wade/2003-04/00_Team/Finances/finance.json").read_text())
+        finance = json.loads((ROOT / "tests/fixtures/checkpoint_2003-06-26/career/Dwyane_Wade/2003-04/00_Team/Finances/finance.json").read_text())
         self.assertEqual(ledger["committed"] + ledger["holds"], finance["known_counted_salary_before_free_agent_holds"])
         self.assertEqual(ledger["conditional"], 1691037 + 4100000)   # three team options + Carter's player option
         self.assertEqual(ledger["unresolved"], [])

@@ -16,9 +16,9 @@ SIGNED = {"under_contract", "under_rookie_contract", "under_contract_guarantee_a
           "team_option_exercised", "player_option_exercised", "free_agent_expiring",
           "team_option_declined", "player_option_declined", "traded", "released",
           "retired_salary_on_books", "signed", "expired", "camp_contract",
-          "expiring_contract", "signed_elsewhere", "renounced"}
+          "expiring_contract", "signed_elsewhere", "renounced", "voided"}
 CLOSED = {"team_option_declined", "player_option_declined", "released", "expired",
-          "retired_salary_on_books", "signed_elsewhere", "renounced"}
+          "retired_salary_on_books", "signed_elsewhere", "renounced", "voided"}
 NON_SALARY = {"draft_hold", "unsigned_rights"}
 MONEY_FIELDS = ("base_salary", "cap_hit", "guaranteed", "likely_incentives",
                 "unlikely_incentives", "signing_bonus", "dead_cap", "buyout")
@@ -345,10 +345,10 @@ def build_contract_catalog(root, player, clock=None):
                    contract_id=record.get("contract_id") or row.get("contract_id"))
         key = match(row)
         event = record.get("event")
-        if event not in ("signed", "amended", "assigned", "recorded_existing") or not key:
+        if event not in ("signed", "amended", "assigned", "recorded_existing", "voided", "released") or not key:
             continue
         existing = next((e for e in profiles[key]["_entries"] if _contract_key(key, e) == row["contract_id"] or _same_contract(e, row)), None)
-        if event in ("amended", "assigned") and existing is None:
+        if event in ("amended", "assigned", "voided", "released") and existing is None:
             continue
         if event == "assigned" and not _known((record.get("assignment") or {}).get("date"), record["recorded_on"]):
             continue

@@ -4,7 +4,7 @@
 **Age at assessment:** 27 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** September 30, 2003 · **Statistics through:** September 30, 2003
 
-**Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10. (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 4 years of service (minimum_salary_corrections.json). (register, 2003-10-27) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/padgesc01.html#contract) · [Contract history](../../../../Contracts/players/padgesc01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

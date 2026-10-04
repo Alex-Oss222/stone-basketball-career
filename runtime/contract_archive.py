@@ -44,8 +44,11 @@ def archive_contract(writer, entry, day, *, event, source, player_id=None,
     Duplicate execution of the same event does not duplicate its history row.
     """
     date.fromisoformat(day)
-    if event not in {"signed", "assigned", "recorded_existing"}:
-        raise ValueError("The transaction archive accepts executed signings, assignments and existing contract snapshots only")
+    if event not in {"signed", "assigned", "recorded_existing", "amended", "voided", "released"}:
+        raise ValueError("The transaction archive accepts executed signings, assignments, amendments, "
+                         "voids, releases and existing contract snapshots only")
+    if event in {"amended", "voided", "released"} and not entry.get("contract_id"):
+        raise ValueError(f"An {event} record must name the contract it changes")
     signed = entry.get("signed_date")
     if signed:
         date.fromisoformat(signed)
@@ -75,6 +78,10 @@ def archive_contract(writer, entry, day, *, event, source, player_id=None,
         suffix = "signed"
     elif event == "assigned":
         suffix = f"assigned-{day}-{hashlib.sha256(source.encode()).hexdigest()[:12]}"
+    elif event in ("voided", "released"):
+        suffix = f"{event}-{day}"
+    elif event == "amended":
+        suffix = f"amended-{day}-{hashlib.sha256(json.dumps(contract, sort_keys=True).encode()).hexdigest()[:12]}"
     else:
         fingerprint = hashlib.sha256(json.dumps(contract, sort_keys=True).encode()).hexdigest()[:12]
         suffix = f"recorded-existing-{day}-{fingerprint}"

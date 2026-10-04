@@ -70,7 +70,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Charlie Ward](players/wardch01.md) | New York Knicks | under contract | Charlie Ward · existing contract; signing date not recorded | 1 |
 | [Chauncey Billups](players/billuch01.md) | Detroit Pistons | under contract | Chauncey Billups · existing contract; signing date not recorded | 1 |
 | [Cherokee Parks](players/parksch02.md) | Miami Heat | camp contract | Cherokee Parks · 2003-10-27 | 2 |
-| [Chris Andersen](players/anderch01.md) | Miami Heat | voided | Chris Andersen · 2003-09-30 | 2 |
+| [Chris Andersen](players/anderch01.md) | Miami Heat | voided | No verified current agreement | 2 |
 | [Chris Bosh](players/boshch01.md) | Toronto Raptors | No verified contract record | No verified current agreement | 0 |
 | [Chris Jefferies](players/jeffech01.md) | Toronto Raptors | under rookie contract | Chris Jefferies · 2002-09-30 | 1 |
 | [Chris Kaman](players/kamanch01.md) | Los Angeles Clippers | No verified contract record | No verified current agreement | 0 |
@@ -204,7 +204,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Josh Howard](players/howarjo01.md) | Dallas Mavericks | No verified contract record | No verified current agreement | 0 |
 | [Juan Dixon](players/dixonju01.md) | Washington Wizards | under rookie contract | Juan Dixon · 2002-07-11 | 1 |
 | [Juaquin Hawkins](players/hawkiju01.md) | Houston Rockets | free agent expiring | No verified current agreement | 1 |
-| [Jumaine Jones](players/jonesju01.md) | Miami Heat | voided | Jumaine Jones · 2003-09-30 | 2 |
+| [Jumaine Jones](players/jonesju01.md) | Miami Heat | voided | No verified current agreement | 2 |
 | [Junior Harrington](players/harriju01.md) | Denver Nuggets | expired or unresolved | No verified current agreement | 0 |
 | [Juwan Howard](players/howarju01.md) | Denver Nuggets | free agent expiring | No verified current agreement | 1 |
 | [Kareem Rush](players/rushka01.md) | Los Angeles Lakers | under rookie contract | Kareem Rush · 2002-07-03 | 1 |
@@ -219,7 +219,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Kenny Anderson](players/anderke01.md) | New Orleans Hornets | free agent expiring | No verified current agreement | 1 |
 | [Kenny Thomas](players/thomake01.md) | Philadelphia 76ers | free agent expiring | No verified current agreement | 1 |
 | [Kenyon Martin](players/martike01.md) | New Jersey Nets | under rookie contract | Kenyon Martin · 2000-08-22 | 1 |
-| [Keon Clark](players/clarkke01.md) | Miami Heat | voided | Keon Clark · 2003-09-30 | 2 |
+| [Keon Clark](players/clarkke01.md) | Miami Heat | voided | No verified current agreement | 2 |
 | [Kerry Kittles](players/kittlke01.md) | New Jersey Nets | under contract | Kerry Kittles · 1999-03-13 | 1 |
 | [Kevin Garnett](players/garneke01.md) | Minnesota Timberwolves | under contract | Kevin Garnett · 1997-10-01 | 1 |
 | [Kevin Ollie](players/ollieke01.md) | Seattle SuperSonics | free agent expiring | No verified current agreement | 1 |
@@ -275,7 +275,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Michael Stewart](players/stewami01.md) | Cleveland Cavaliers | under contract | Michael Stewart · 1999-08-12 | 1 |
 | [Michael Sweetney](players/sweetmi01.md) | New York Knicks | No verified contract record | No verified current agreement | 0 |
 | [Mickael Pietrus](players/pietrmi01.md) | Golden State Warriors | No verified contract record | No verified current agreement | 0 |
-| [Mike Batiste](players/batismi01.md) | Miami Heat | voided | Mike Batiste · 2003-09-30 | 2 |
+| [Mike Batiste](players/batismi01.md) | Miami Heat | voided | No verified current agreement | 2 |
 | [Mike Bibby](players/bibbymi01.md) | Sacramento Kings | under contract | Mike Bibby · 2002-08-16 | 1 |
 | [Mike Dunleavy](players/dunlemi02.md) | Golden State Warriors | under rookie contract | Mike Dunleavy · 2002-07-07 | 1 |
 | [Mike James](players/jamesmi01.md) | Miami Heat | re signed | Mike James · 2003-07-17 | 2 |
@@ -312,7 +312,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Rasual Butler](players/butlera01.md) | Miami Heat | team option exercised | Rasual Butler · 2002-08-15 | 1 |
 | [Ray Allen](players/allenra02.md) | Seattle SuperSonics | under contract | Ray Allen · 1999-03-08 | 1 |
 | [Reece Gaines](players/gainere01.md) | Orlando Magic | No verified contract record | No verified current agreement | 0 |
-| [Reggie Evans](players/evansre01.md) | Miami Heat | voided | Reggie Evans · 2003-09-30 | 2 |
+| [Reggie Evans](players/evansre01.md) | Miami Heat | voided | No verified current agreement | 2 |
 | [Reggie Miller](players/millere01.md) | Indiana Pacers | free agent expiring | No verified current agreement | 1 |
 | [Remon van de Hare](players/vandera01.md) | Toronto Raptors | No verified contract record | No verified current agreement | 0 |
 | [Richard Hamilton](players/hamilri01.md) | Detroit Pistons | free agent expiring | No verified current agreement | 1 |
