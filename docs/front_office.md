@@ -145,3 +145,12 @@ The free-agency driver opens `01_Free_Agency/Wade_Rookie_Contract/negotiation_lo
 Every minimum offer uses the 1999 CBA minimum for the player's years of NBA service before the season (`runtime/cba.minimum_salary`, `library/2003/league/nba_1999_cba_minimum_salary_scale.json`), one figure per year of service. A veteran whose service is not recorded is not offered a minimum (`Valuation.signing_minimum`); an undrafted player with no NBA history gets the rookie minimum. A one-year minimum for a player with five or more years counts only the four-year minimum in team salary (`cap_amount` on the contract schedule; the league reimburses the rest). The November 11, 2003 correction of the earlier camp and refill minimums is recorded in `00_Team/Finances/minimum_salary_corrections.json` (`scripts/correct_minimum_salaries.py`).
 
 `finance.json` and the projection in `contract_schedules.json` are rebuilt from the live ledger on every transaction (`signing.refresh_aggregates`), and validation reconciles them at every date after June 26.
+
+## In-season roster moves
+
+`runtime/roster_moves.py`. For each game from November 12, 2003, the staff dresses twelve: the rotation in force, then the next healthy players in depth order. Up to three more sit on the injured list, which takes injured players first (from the engine's injury draws), then players who must stay because they have missed fewer than five games on it, then the lowest healthy reserves, preferring those already listed. 2003-04 clubs used the list for healthy reserves too. Every placement and activation is dated in `00_Team/Transactions/injured_list.json`, and validation checks the three-place limit, the five-game minimum and that no listed player played. The engine request carries only the twelve who dress; the game note names the injured list.
+
+Waivers close a contract on their date. A non-guaranteed contract leaves the salary for the days he was on the regular-season roster (daily proration, judgement); a guaranteed one leaves its full salary. The waived player goes back to his real career path.
+
+The January 10, 2004 guarantee review (`scripts/guarantee_review.py`): decisions on January 7, the last day a waiver clears, then guarantees on January 10. The front office keeps every non-guaranteed player unless guaranteeing him would take the payroll over the owner's ceiling; then the lowest-valued go first. The game builder stops at each step until it is recorded.
+

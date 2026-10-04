@@ -16,9 +16,9 @@ SIGNED = {"under_contract", "under_rookie_contract", "under_contract_guarantee_a
           "team_option_exercised", "player_option_exercised", "free_agent_expiring",
           "team_option_declined", "player_option_declined", "traded", "released",
           "retired_salary_on_books", "signed", "expired", "camp_contract",
-          "expiring_contract", "signed_elsewhere", "renounced", "voided"}
+          "expiring_contract", "signed_elsewhere", "renounced", "voided", "waived"}
 CLOSED = {"team_option_declined", "player_option_declined", "released", "expired",
-          "retired_salary_on_books", "signed_elsewhere", "renounced", "voided"}
+          "retired_salary_on_books", "signed_elsewhere", "renounced", "voided", "waived"}
 NON_SALARY = {"draft_hold", "unsigned_rights"}
 MONEY_FIELDS = ("base_salary", "cap_hit", "guaranteed", "likely_incentives",
                 "unlikely_incentives", "signing_bonus", "dead_cap", "buyout")

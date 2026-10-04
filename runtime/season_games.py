@@ -298,8 +298,10 @@ def rotation_for(rotation, injured, grades, replacements=(), unavailable=()):
     return kept
 
 
-def miami_side(game_date, root=ROOT, season=SEASON):
-    """Miami's explicit players from the staff decision in force on this date."""
+def miami_side(game_date, root=ROOT, season=SEASON, with_lists=False):
+    """Miami's explicit players from the staff decision in force on this date, and the injured.
+
+    With `with_lists`, a third item: the game-day lists to record (`roster_moves.game_day`)."""
     from .rotation_reviews import rotation_in_force
     team = Path(root) / season_base(season) / "00_Team/Team"
     rotation, depth = rotation_in_force(game_date, root, season)
@@ -315,11 +317,47 @@ def miami_side(game_date, root=ROOT, season=SEASON):
     if roster.get("as_of", "") > game_date:
         raise ValueError("no historical roster for this game; the available register is dated after it")
     from .camp import playable
+    from . import roster_moves
+    waiting = roster_moves.required_before(game_date, root)
+    if waiting:
+        raise ValueError(waiting)
     active = [p for p in roster["players"] if playable(p.get("status"))]
     active_names = {p["name"] for p in active}
     unavailable = {p["player_id"] for p in rotation["players"]} - active_names
-    return rotation_for(rotation, injured, grades_in_force(game_date, root, season),
-                        depth_order(depth, {"players": active}), unavailable), injured
+    lists = game_date >= roster_moves.LISTS_FROM
+    data = roster_moves.ledger(root)
+    dates = [d for d in miami_game_dates(root, season) if d >= roster_moves.LISTS_FROM]
+    if lists:
+        unavailable |= roster_moves.held_on_list(data, game_date, dates)   # a five-game stay keeps him out
+    order = depth_order(depth, {"players": active})
+    kept = rotation_for(rotation, injured, grades_in_force(game_date, root, season), order, unavailable)
+    if not lists:
+        return (kept, injured, None) if with_lists else (kept, injured)
+    # Every playable player in depth order, then anyone the depth chart does not list yet.
+    listed = order + [dict(p, depth_position=p["positions"][0]) for p in active if p["name"] not in {e["name"] for e in order}]
+    actives, il, placements, activations = roster_moves.game_day(game_date, kept, listed, injured, data, dates)
+    by_name = {e["name"]: e for e in listed}
+    def entry(name):
+        e = by_name[name]
+        row = {"player_id": name, "position": e.get("depth_position") or e["positions"][0], "minutes": 0, "ratings": {}, "starter": False}
+        if e.get("bbr_id"):
+            row["bbr_id"] = e["bbr_id"]
+        return row
+    # The request carries the twelve who dress (the engine's 2003-04 limit); the injured list is the ledger's.
+    players = kept + [entry(n) for n in actives[len(kept):]]
+    if not with_lists:
+        return players, injured
+    return players, injured, {"injured_list": il, "placements": placements, "activations": activations}
+
+
+def miami_requests_without_results(root=ROOT, season=SEASON):
+    """(date, request path) of Miami's written requests that have no closed result yet."""
+    out = []
+    for event_id, (path, number, day) in written_notes(root, season).items():
+        request = path.with_name(f"Game_{number}.request.json")
+        if request.exists() and not path.with_name(f"Game_{number}.result.json").exists():
+            out.append((day, request))
+    return sorted(out)
 
 
 def miami_request(game, players):
@@ -370,17 +408,40 @@ def build_miami(until, root=ROOT, season=SEASON, write=False):
     """Write (or, with write=False, list) Miami's due game notes and requests. Returns the plan rows."""
     from .game_requests import load_request
     plan = miami_games_due(until, root, season)
+    written = []
     for row in plan:
         game, number, folder = row["game"], row["number"], row["folder"]
         row["note_path"] = folder / f"Game_{number}.md"
         row["request_path"] = folder / f"Game_{number}.request.json"
         if not write:
             continue
-        players, injured = miami_side(game["date"], root, season)
+        # One game at a time: an injury drawn in an unplayed earlier game must reach this one first.
+        earlier = [d for d, _ in miami_requests_without_results(root, season) if d < game["date"]]
+        if earlier:
+            if not written:
+                raise ValueError(f"Miami's game on {earlier[0]} has no closed result; play and collect it before building {game['date']}")
+            break
+        written.append(row)
+        side = miami_side(game["date"], root, season, with_lists=True)
+        players, injured = side[0], side[1]
         row["injured_out"] = dict(injured)
+        if side[2] is not None:
+            from . import roster_moves
+            lists = side[2]
+            data = roster_moves.record_lists(roster_moves.ledger(root), game["date"], lists["injured_list"],
+                                             lists["placements"], lists["activations"], injured, game["game_id"])
+            path = Path(root) / roster_moves.LEDGER
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
+            row["injured_list"] = lists["injured_list"]
         data = miami_request(game, players)
         if row["note"]:
-            row["note_path"].write_text(game_note(number, game, "home" if game["home"] == MIAMI else "away", season), encoding="utf-8")
+            text = game_note(number, game, "home" if game["home"] == MIAMI else "away", season)
+            if row.get("injured_list") is not None:
+                listed = ", ".join(row["injured_list"]) or "none"
+                text = text.rstrip("\n") + (f"\n\nMiami's injured list for this game: {listed} "
+                                            "(`00_Team/Transactions/injured_list.json`; twelve dress).\n")
+            row["note_path"].write_text(text, encoding="utf-8")
         row["request_path"].write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
         try:
             load_request(row["request_path"], root)
@@ -389,7 +450,7 @@ def build_miami(until, root=ROOT, season=SEASON, write=False):
             if row["note"]:
                 row["note_path"].unlink()
             raise
-    return plan
+    return written if write else plan
 
 
 def miami_check(until, root=ROOT, season=SEASON):

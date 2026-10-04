@@ -620,6 +620,9 @@ def validate():
     errors.extend(negotiation_errors(ROOT))
     from runtime.signing import ledger_errors
     errors.extend(ledger_errors(ROOT))
+    from runtime.roster_moves import guarantee_errors, ledger_errors as list_errors
+    errors.extend(list_errors(ROOT))
+    errors.extend(guarantee_errors(ROOT))
     from runtime.rotations import holdings_errors
     errors.extend(holdings_errors(ROOT))
     from runtime.signing import trade_record_errors

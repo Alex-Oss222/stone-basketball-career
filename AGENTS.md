@@ -46,6 +46,8 @@ Depth chart is a working basketball view, not a user choice and not a promise of
 
 During the regular season, the staff reviews the roster every fourteen days after its dated camp decision. Run `scripts/review_rotation.py` before building games past a due review. Rank closed production per minute blended with fixed preseason estimates; use the engine's journaled starting-battle decisions when the leaders are close. Apply the same rule to Eddie Jones, Wade and every other player, without a seniority or draft-slot bonus. Save each new rotation under its review date and preserve earlier requests/results. Actual injury replacement starts count toward GS and the established season-close standing rule. See `docs/front_office.md`, Fortnightly staff rotation reviews.
 
+For each game from November 12, 2003 the staff dresses twelve and lists up to three on the injured list (injured players first, then the lowest healthy reserves; at least five games once placed), dated in `00_Team/Transactions/injured_list.json` (`runtime/roster_moves.py`); that ledger is Miami's stored injury and roster state. Build one Miami game at a time: the builder refuses a game while an earlier Miami request has no result, so an injury always reaches the next game. Run `scripts/guarantee_review.py --write 2004-01-07` (keep-or-waive) and `--write 2004-01-10` (kept contracts guaranteed) on their dates; the builder stops at each until it is recorded.
+
 ## No hindsight
 
 Do not import:

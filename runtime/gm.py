@@ -76,7 +76,7 @@ class FrontOffice:
             amount, kind = p["schedule"].get(season), (p.get("amount_kind") or {}).get(season, "contract_salary")
             if not amount or kind == "draft_hold" or p["status"] == "camp_contract":
                 continue
-            if any(w in p["status"] for w in ("declined", "renounced", "released", "traded", "signed_elsewhere", "unsigned", "voided")):
+            if any(w in p["status"] for w in ("declined", "renounced", "released", "traded", "signed_elsewhere", "unsigned", "voided", "waived")):
                 continue
             total += amount
         return total
@@ -111,7 +111,7 @@ class FrontOffice:
         cap = self.market.planning_cap(self.on)
         committed, _ = self.committed()
         holds = sum(h for name, h, _ in self.holds()[1] if name not in renounce)
-        counted = sum(1 for p in self.sheet["players"] if p["status"] not in ("renounced", "released", "traded", "signed_elsewhere", "team_option_declined", "player_option_declined", "voided") and p["schedule"].get(SEASON))
+        counted = sum(1 for p in self.sheet["players"] if p["status"] not in ("renounced", "released", "traded", "signed_elsewhere", "team_option_declined", "player_option_declined", "voided", "waived") and p["schedule"].get(SEASON))
         charge = max(0, ROSTER_CHARGE_SPOTS - counted) * self.valuation.minimum(0)
         return {"cap": cap, "cap_known": self.market.cap_known(self.on), "committed": committed, "holds": holds,
                 "roster_charge": charge, "room": cap - committed - holds - charge}
@@ -128,7 +128,7 @@ class FrontOffice:
         out = {}
         for p in self.roster["players"]:
             status = p["status"]
-            if any(w in status for w in ("expiring", "free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "voided")):
+            if any(w in status for w in ("expiring", "free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "voided", "waived")):
                 continue                     # a free agent is not under Miami's control until he re-signs
             if "option_pending" in status and self.on >= "2003-07-01":
                 continue   # resolved on June 30; the register must say which way

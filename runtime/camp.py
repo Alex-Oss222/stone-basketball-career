@@ -61,7 +61,7 @@ def efficiency(line):
 # -- camp roster ---------------------------------------------------------------------------------
 def active_players(roster):
     return [p for p in roster["players"] if not any(w in p["status"] for w in
-            ("free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "pending", "camp", "voided"))]
+            ("free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "pending", "camp", "voided", "waived"))]
 
 
 def invite(on, front_office, market, root=ROOT):

@@ -165,7 +165,20 @@ class MiamiBuilderTests(unittest.TestCase):
         starter = first["away"]["players"][0]["player_id"]
         result["injuries"] = [{"side": "away", "player_id": starter, "kind": "test", "games_out": 2}]
         result_path.write_text(json.dumps(result) + "\n")
-        plan = season_games.build_miami("2003-11-03", root, write=True)
+        # One game at a time: each build writes the next game only, once the one before it has a result.
+        plan = []
+        for _ in range(3):
+            built = season_games.build_miami("2003-11-03", root, write=True)
+            self.assertEqual(len(built), 1)
+            plan += built
+            if season_games.miami_games_due("2003-11-03", root):
+                with self.assertRaises(ValueError):                # the next game waits for this one's result
+                    season_games.build_miami("2003-11-03", root, write=True)
+            play_local(store, root)
+            played = built[0]["request_path"].with_name(built[0]["request_path"].name.replace(".request.json", ".result.json"))
+            data = json.loads(played.read_text())
+            data["injuries"] = []                                  # only the injury injected above is under test
+            played.write_text(json.dumps(data) + "\n")
         self.assertEqual([(r["number"], r["folder"].name) for r in plan], [(2, "Week_4"), (3, "Week_4"), (1, "Week_1")])
         for row in plan[:2]:
             request = json.loads(row["request_path"].read_text())

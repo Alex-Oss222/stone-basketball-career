@@ -16,6 +16,10 @@ date, a request is never rewritten, and nothing is committed here (`runtime/seas
 Before crossing a due fortnightly review, complete `scripts/review_rotation.py`
 and collect any starting-battle draws. An injured starter's next healthy backup
 gets an explicit start in the request and in the engine box score.
+From November 12, 2003 each request carries the twelve who dress and the injured list
+is dated in `00_Team/Transactions/injured_list.json` (`runtime/roster_moves.py`). One game at
+a time: a game is refused while an earlier Miami request has no result. The guarantee review
+(`scripts/guarantee_review.py`) must be recorded before games after January 7, 2004.
 """
 import argparse
 from pathlib import Path
@@ -45,6 +49,9 @@ def main():
     if plan:
         changed = season_games.refresh_reports(ROOT)
         print(f"{len(plan)} game(s) written; {changed} player report page(s) refreshed")
+        waiting = season_games.miami_games_due(args.write, ROOT)
+        if waiting:
+            print(f"{len(waiting)} later game(s) wait for the result of {plan[-1]['game']['date']} (one game at a time)")
     else:
         print("nothing due: every Miami game through " + args.write + " is written")
     return 0

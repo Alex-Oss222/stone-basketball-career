@@ -279,7 +279,7 @@ class TradeDesk:
         out = []
         for entry in self.fo.sheet["players"]:
             p, r = self.miami_player(entry["player"])
-            if not r or not p["schedule"].get(SEASON) or p["status"] in ("renounced", "released", "traded", "signed_elsewhere", "voided"):
+            if not r or not p["schedule"].get(SEASON) or p["status"] in ("renounced", "released", "traded", "signed_elsewhere", "voided", "waived"):
                 continue
             if any(w in p["status"] for w in NOT_TRADEABLE_WORDS):
                 continue
