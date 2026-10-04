@@ -1,6 +1,6 @@
 # Build roadmap
 
-**Detailed player screens are active on `milestone-1`.** The normal report build now owns the canonical [milestone desk](../career/Dwyane_Wade/Milestones/README.md) and Shooting/Awards cards. Supported event CLIs refresh them after writes, and Railway serves the same career data at `/career` and `/cards`. The integration adds presentation and source-backed navigation; each existing mechanic retains its own completion status below. Live spatial shooting still requires recorded shot coordinates because the current game engine emits box scores.
+**Detailed player screens are active on `milestone-1`.** The normal report build owns the canonical [milestone desk](../career/Dwyane_Wade/Milestones/README.md) and Shooting/Awards cards. Supported event CLIs refresh them after writes, and Railway serves the same career data at `/career` and `/cards`. Kernel 2003.7 supplies prospective shot events to live charts; old games retain missing-location coverage, with a separate tracked-games view for newer results.
 
 Only what the career needs to move forward, in the order the career clock reaches it. World model: real league, simulated Miami (option D, see `AGENTS.md`). An item belongs here only if the career stops or plays wrong without it.
 
@@ -45,6 +45,7 @@ Found in the engine review on real 2003-04 rosters. Model and numbers: `docs/eng
 | E9 | Interior and perimeter defense use the same strength | Blocks and steals redistribute the existing defensive shooting budget across two-point and three-point shots | done (kernel 2003.6); two-point interior proxy, no invented shot locations or extra rebound defense |
 | E10 | No transition after live-ball changes | Faster, better shots after credited steals and defensive rebounds; recalibrated half-court rates and clock | done (kernel 2003.6); dead balls reset transition, aggregate checks in `scripts/engine_diagnostics.py` |
 | E11 | Passers do not improve teammate shots | The other four players’ passing changes shooting probability before the outcome | done (kernel 2003.6); shooter excluded, aggregate calibration against 2002-03 environment |
+| E12 | Games lack shot locations and live charts cannot populate | Sourced prior-season spatial bands, location selected before outcome, immutable event feed and separate tracked-games aggregates for Wade and league cards | done (kernel 2003.7); [sources](shot_environment_sources.md), [calibration](spatial_calibration.md); earlier games are never backfilled |
 
 ## During and after 2003-04
 

@@ -13,7 +13,8 @@ ENTROPY_DOMAIN = b"stone-basketball-career/event-entropy/v1\0"
 VENUES = ("home", "neutral")
 
 
-def build_game_packet(home, away, *, event_id, game_date, game_type="regular", venue="home", root=ROOT):
+def build_game_packet(home, away, *, event_id, game_date, game_type="regular", venue="home", root=ROOT,
+                      kernel_version=None, validation_only=False):
     """Validate every input and freeze the canonical packet. Fails before anything is journaled."""
     if not isinstance(event_id, str) or not event_id.strip():
         raise ValueError("event_id required")
@@ -48,14 +49,33 @@ def build_game_packet(home, away, *, event_id, game_date, game_type="regular", v
                 raise ValueError("statistical profile differs from the dated, generated source")
         if environment.get("player_rating_model") != MODEL_VERSION or environment.get("player_rate_baselines") != index.data["rate_baselines"]:
             raise ValueError("league environment and player rating model do not match")
+    # Request parsing checks common dated inputs without requiring a future
+    # kernel's spatial source to replay an older, already closed game.
+    if validation_only:
+        return None, rules, environment
+    procedure = kernel_version or KERNEL_VERSION
     packet = {
-        "procedure": KERNEL_VERSION, "event_id": event_id,
+        "procedure": procedure, "event_id": event_id,
         "season": season, "game_date": game_date, "game_type": game_type, "venue": venue,
         "baseline_season": environment["season"],
         "environment": environment,
         "home": team_packet(home), "away": team_packet(away),
     }
+    if spatial_kernel(procedure):
+        from .spatial_shots import load_spatial_environment
+        packet["spatial_environment"] = load_spatial_environment(season, game_date, root)
     return packet, rules, environment
+
+
+def spatial_kernel(version):
+    """Only new kernels journal spatial inputs; legacy packets retain their shape."""
+    try:
+        parts = tuple(int(part) for part in version.split("."))
+    except (AttributeError, ValueError) as exc:
+        raise ValueError("invalid kernel version") from exc
+    if len(parts) != 2:
+        raise ValueError("invalid kernel version")
+    return parts >= (2003, 7)
 
 
 def entropy_from_ref(result_ref):
@@ -78,7 +98,8 @@ def run_game(home, away, *, event_id, game_date, journal, game_type="regular", v
         raise RuntimeError("a developing player reached the journal without a development draw")
     result_ref = journal.close_event(packet)  # durable closure precedes the draw
     result = resolve_game(home, away, entropy=entropy_from_ref(result_ref), event_id=event_id,
-                          rules=rules, environment=environment, game_type=game_type, venue=venue)
+                          rules=rules, environment=environment, game_type=game_type, venue=venue,
+                          spatial_environment=packet.get("spatial_environment"))
     errors = validate_result(result)
     if errors:
         raise RuntimeError("kernel invariant failure: " + "; ".join(errors))
@@ -114,9 +135,9 @@ def replay_packet(home, away, journal, result, **kwargs):
     kernel = result.get("kernel")
     if not isinstance(kernel, str) or not kernel.strip():
         raise ValueError("stored game result has no kernel version")
-    packet = freeze_inputs(home, away, journal, **kwargs)[2]
-    packet["procedure"] = kernel
-    return packet
+    # Select the original input schema before loading additional data. Changing
+    # or adding a spatial prior must never modify a pre-tracking packet hash.
+    return freeze_inputs(home, away, journal, kernel_version=kernel, **kwargs)[2]
 
 
 def _developed(team, season, journal):

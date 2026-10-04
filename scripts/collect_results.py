@@ -53,7 +53,8 @@ def result_errors(request, result, kind):
     """The collector's check that a served result answers the committed request it is filed against.
 
     A decision result must repeat the request's event id, date, question, decider and options exactly and
-    carry an outcome among those options; a game result must carry the request's event id. A mismatch is
+    carry an outcome among those options; a game result must carry the request's event id and any
+    spatial event feed must reconcile with its boxes. A mismatch is
     never written: the request in the repository is the record, and the engine's answer must be to it.
     """
     errors = []
@@ -67,6 +68,21 @@ def result_errors(request, result, kind):
                 errors.append(f"result {key} differs from the committed request")
         if result.get("outcome") not in (request.get("options") or {}):
             errors.append(f"outcome {result.get('outcome')!r} is not one of the request's options")
+    elif kind == "game":
+        from runtime.shot_events import engine_result_shots, spatial_result_errors
+        if "shot_tracking" in result:
+            try:
+                engine_result_shots(result, source_ref=f"engine:{request['event_id']}")
+            except ValueError as exc:
+                errors.append(str(exc))
+            for key in ("game_date", "game_type"):
+                if key in request and result.get(key) != request[key]:
+                    errors.append(f"result {key} differs from the committed request")
+            for side in ("home", "away"):
+                if side in request and result.get(side) != request[side].get("team"):
+                    errors.append(f"result {side} team differs from the committed request")
+        else:
+            errors.extend(spatial_result_errors(result))
     return errors
 
 

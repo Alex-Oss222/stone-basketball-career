@@ -19,6 +19,9 @@ On top of the per-play rates (docs/engine_model.md):
 * Shot creation: usage above a player's own expected share lowers efficiency;
   teammates' passing improves it. Live steals and defensive rebounds can start
   shorter, easier transition plays, centered on the era's existing rates.
+* Spatial shots: each field-goal attempt selects a modeled location from the
+  prior season's league distance bands before its make/miss draw. Zone make
+  rates retain that attempt's mean two-/three-point efficiency after clipping.
 * Rotation: each player brings minutes per game and an availability; the engine
   draws who is available, dresses the top of the rotation and fills 240 minutes
   in rotation order, raising the rest within caps when short-handed.
@@ -38,6 +41,9 @@ import random
 from .packets import canonical
 from .player_stats import MODEL_VERSION, RATE_KEYS
 from .prospects import ROOKIE_MODEL_VERSION
+from .shot_events import spatial_result_errors
+from .spatial_shots import (draw_spatial_shot, load_spatial_environment,
+                            spatial_environment_errors, tracking_metadata)
 from .trajectories import TRAJECTORY_MODEL_VERSION, needs_development
 
 POSITIONS = ("PG", "SG", "SF", "PF", "C")
@@ -320,8 +326,8 @@ def _passing_adjustment(teammates, cal):
 def _defensive_split(player, cal):
     """Allocate existing DBPM, never infer defensive ability from blocks or steals.
 
-    The two-point side is an interior proxy: the inputs contain no rim/midrange
-    locations. A one-baseline-event prior in each channel shrinks specialization.
+    The two-point side remains an interior proxy: player ability inputs contain
+    no individual rim/midrange splits. A one-baseline-event prior in each channel shrinks specialization.
     League shot values normalize the split to the original shooting budget.
     """
     value = _defense(player)
@@ -559,13 +565,19 @@ def _choose_lineup(club, elapsed, game_seconds, mode="normal", sitting=frozenset
     return lineup
 
 
-def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type="regular", venue="home"):
+def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type="regular", venue="home",
+                 spatial_environment=None):
     if not isinstance(entropy, bytes) or len(entropy) < 32:
         raise ValueError("engine entropy required")
     for team in (home, away):
         errors = team_errors(team, rules)
         if errors:
             raise ValueError(f"{team.team_id}: " + "; ".join(errors))
+    if spatial_environment is None:
+        spatial_environment = load_spatial_environment(rules["season"])
+    spatial_errors = spatial_environment_errors(spatial_environment, rules["season"])
+    if spatial_errors:
+        raise ValueError("; ".join(spatial_errors))
     cal = calibrate(environment)
     if any(p.stat_profile for team in (home, away) for p in team.players):
         if any(not isinstance(cal["rate_baselines"].get(k), (int, float)) or
@@ -575,6 +587,11 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
     seed_material = entropy + canonical({"event_id": event_id, "home": team_packet(home),
                                          "away": team_packet(away), "game_type": game_type})
     rng = random.Random(int.from_bytes(hashlib.sha256(seed_material).digest(), "big"))
+    # Geometry has its own deterministic stream: extra coordinate samples must
+    # not consume availability, clock, injury or shooting-outcome draws.
+    spatial_rng = random.Random(int.from_bytes(hashlib.sha256(
+        seed_material + b"\0spatial-shots/v1\0" + canonical(spatial_environment)).digest(), "big"))
+    shots = []
 
     clubs = {"home": _Club(home, "home", rng, rules), "away": _Club(away, "away", rng, rules)}
     edge = {"home": cal["home_edge"], "away": -cal["home_edge"]} if venue == "home" else {"home": 0.0, "away": 0.0}
@@ -750,14 +767,23 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
                         + creation + _transition_adjustment(is_three, transition, cal)
                         - RATING_SLOPE * def_rating - cal["make_per_defense"] * shot_defense
                         - LEAD_EFFECT * lead + edge[offense], 0.0, 1.0) * (LAST_SHOT if last else 1.0)
+        # First select the attempted location, then use that zone's normalized
+        # make probability. All zones average back to the existing shot chance,
+        # including when one or more zone probabilities hit zero or one.
+        value = 3 if is_three else 2
+        zone, x, y, p_make = draw_spatial_shot(spatial_rng, spatial_environment, value, p_make)
         line = o.lines[shooter]
         line["fga"] += 1
         if transition:
             o.transition["fga"] += 1
         if is_three:
             line["tpa"] += 1
-        if rng.random() < p_make:
-            value = 3 if is_three else 2
+        made = rng.random() < p_make
+        shots.append({"shot_id": f"{event_id}:shot:{len(shots) + 1:06d}", "player_id": shooter,
+                      "side": offense, "period": state["period"], "clock_seconds": round(max(0.0, state["clock"]), 6),
+                      "x": x, "y": y, "zone": zone, "value": value, "made": made,
+                      "transition": bool(transition)})
+        if made:
             line["fgm"] += 1
             if transition:
                 o.transition["fgm"] += 1
@@ -966,6 +992,8 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
                              for side, club in clubs.items()},
         "game_seconds": elapsed,
         "injuries": injuries,
+        "shot_tracking": tracking_metadata(spatial_environment),
+        "shots": shots,
         "terminated": True,
     }
 
@@ -986,7 +1014,7 @@ def _replacement(club, out_pid, sitting=frozenset(), stay_if_none=False):
 
 
 def validate_result(result):
-    errors = []
+    errors = spatial_result_errors(result)
     if result["final_score"]["home"] == result["final_score"]["away"]:
         errors.append("game ended tied")
     for side in ("home", "away"):

@@ -271,9 +271,26 @@ class WriteBackRunTests(unittest.TestCase):
         payload = json.loads(re.search(r'type="application/json">(.*?)</script>', (root / STATS / "League/Players/wadedw01.html").read_text(), re.S).group(1)
                              .replace("\\u003c", "<").replace("\\u003e", ">").replace("\\u0026", "&"))
         season_period = next(p for p in payload["periods"] if p["id"] == "season")
-        # No shot-location feed exists, so coverage is unavailable; a game with no field-goal attempt has nothing to locate.
-        expected = "complete" if wade["fga"] == 0 else "unavailable"
-        self.assertEqual((season_period["games"], season_period["box"]["pts"], season_period["shooting"]["coverage"]["status"]), (1, wade["pts"], expected))
+        # New-kernel locations survive collection/write-back unchanged and cover
+        # precisely Wade's regular-season attempts, excluding preseason/others.
+        chart = season_period["shooting"]
+        self.assertEqual((season_period["games"], season_period["box"]["pts"], chart["coverage"]["status"]),
+                         (1, wade["pts"], "complete"))
+        self.assertEqual(season_period["shot_source_type"], "engine_generated")
+        source_shots = [s for s in result["shots"] if s["side"] == miami_side and s["player_id"] == wade["player_id"]]
+        displayed = {s["shot_id"]: s for s in season_period["shots"]}
+        self.assertEqual(set(displayed), {s["shot_id"] for s in source_shots})
+        for shot in source_shots:
+            self.assertEqual({key: displayed[shot["shot_id"]][key] for key in shot}, shot)
+            self.assertEqual(displayed[shot["shot_id"]]["game_id"], result["event_id"])
+        for key in ("fgm", "fga", "tpm", "tpa"):
+            self.assertEqual(chart["totals"][key], wade[key])
+            self.assertEqual(sum(z[key] for z in chart["zones"]), wade[key])
+            self.assertEqual(sum(b[key] for b in chart["bins"]), wade[key])
+        self.assertEqual(chart["totals"]["fg_points"], 2 * wade["fgm"] + wade["tpm"])
+        self.assertEqual((chart["coverage"]["located_attempts"], chart["coverage"]["missing_attempts"]), (wade["fga"], 0))
+        self.assertEqual(season_period["tracked"]["appearances"], 1)
+        self.assertEqual(season_period["tracked"]["box"]["fga"], wade["fga"])
         idle = rows_by_first_cell((root / STATS / "League/Players/willial02.md").read_text(), ["Scope"])
         self.assertEqual(idle["2003-04 regular season"]["G"], "0")
         self.assertEqual(check_cards(root), [])

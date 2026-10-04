@@ -129,7 +129,7 @@ class EngineHarness(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.root = Path(self.tmp.name)
         (self.root / "library/2003/league").mkdir(parents=True)
-        for name in ("nba_2003_end_of_season.json", "nba_2002_03_league_environment.json",
+        for name in ("nba_2003_end_of_season.json", "nba_2002_03_league_environment.json", "nba_2002_03_shot_environment.json",
                      "nba_2002_03_player_stats.json", "nba_2003_veteran_ratings.json"):
             (self.root / "library/2003/league" / name).write_bytes((ROOT / "library/2003/league" / name).read_bytes())
         self.week = self.root / "career/Dwyane_Wade/2003-04/06_Regular_Season/10_October/Week_4"

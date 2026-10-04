@@ -111,7 +111,7 @@ def load_request(path, root=ROOT):
     away = _club(data["away"], actives, root, index, season, data["game_date"])
     kwargs = {k: data[k] for k in ("event_id", "game_date", "game_type", "venue")}
     kwargs["root"] = root
-    build_game_packet(home, away, **kwargs)  # full validation, nothing journaled
+    build_game_packet(home, away, validation_only=True, **kwargs)  # common inputs only; runner freezes the selected kernel's sources
     return home, away, kwargs
 
 
