@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-17-golden-state-warriors-at-atlanta-hawks",
+ "game_date": "2003-12-17",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Atlanta Hawks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Golden State Warriors",
+  "rotation": "real"
+ }
+}

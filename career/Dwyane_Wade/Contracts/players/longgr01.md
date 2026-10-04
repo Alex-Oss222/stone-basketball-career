@@ -2,9 +2,9 @@
 
 # Contract | Grant Long
 
-Known through: 2003-12-16. [Open interactive contract](longgr01.html#contract) · [Contract history](longgr01.html#contract-history)
+Known through: 2003-12-17. [Open interactive contract](longgr01.html#contract) · [Contract history](longgr01.html#contract-history)
 
-Grant Long: not with an NBA club (status not established) (researched, date not recorded). Evidence cutoff: 2003-12-16.
+Grant Long: not with an NBA club (status not established) (researched, date not recorded). Evidence cutoff: 2003-12-17.
 
 ## Current contract
 

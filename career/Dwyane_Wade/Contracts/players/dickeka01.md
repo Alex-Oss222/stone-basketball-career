@@ -2,9 +2,9 @@
 
 # Contract | Kaniel Dickens
 
-Known through: 2003-12-16. [Open interactive contract](dickeka01.html#contract) · [Contract history](dickeka01.html#contract-history)
+Known through: 2003-12-17. [Open interactive contract](dickeka01.html#contract) · [Contract history](dickeka01.html#contract-history)
 
-Kaniel Dickens: No verified contract record. Evidence cutoff: 2003-12-16.
+Kaniel Dickens: No verified contract record. Evidence cutoff: 2003-12-17.
 
 ## Current contract
 

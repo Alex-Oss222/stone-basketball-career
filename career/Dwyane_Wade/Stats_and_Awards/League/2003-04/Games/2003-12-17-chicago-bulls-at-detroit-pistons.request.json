@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-17-chicago-bulls-at-detroit-pistons",
+ "game_date": "2003-12-17",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Detroit Pistons",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Chicago Bulls",
+  "rotation": "real"
+ }
+}

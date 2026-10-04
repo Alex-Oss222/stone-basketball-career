@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-17-denver-nuggets-at-seattle-supersonics",
+ "game_date": "2003-12-17",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Denver Nuggets",
+  "rotation": "real"
+ }
+}
