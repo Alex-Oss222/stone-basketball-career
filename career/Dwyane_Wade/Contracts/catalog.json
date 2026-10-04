@@ -1581,9 +1581,9 @@
       "player_id": "beaslje01",
       "name": "Jerome Beasley",
       "team": "Miami Heat",
-      "status": "unsigned second round draft rights",
+      "status": "renounced",
       "current_contract_id": null,
-      "recorded_agreements": 0,
+      "recorded_agreements": 1,
       "href": "players/beaslje01.html#contract"
     },
     {

@@ -278,8 +278,8 @@
       "weight_lb": 237,
       "date_of_birth": "1980-05-17",
       "college": "North Dakota",
-      "status": "draft_rights_unsigned",
-      "control": "Unsigned No. 33 draft rights; Required Tender of September 5, 2003 (one season, $366,931, reconstructed: Transactions/required_tenders.json); exclusive rights until the June 24, 2004 draft. No individual draft cap hold.",
+      "status": "renounced",
+      "control": "November 11, 2003: draft rights renounced: Miami's fifteen roster places are all filled by signed players, so there is no place to sign him (1999 CBA Art. X §3(f); his Required Tender's acceptance period had ended). He is a rookie free agent.",
       "working_role": "Unassigned rookie",
       "player_card": "../Player_Cards/jerome_beasley.md"
     },

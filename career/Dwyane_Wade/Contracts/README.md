@@ -183,7 +183,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jelani McCoy](players/mccoyje01.md) | Toronto Raptors | expired or unresolved | No verified current agreement | 0 |
 | [Jermaine Jackson](players/jacksje01.md) | Atlanta Hawks | free agent expiring | No verified current agreement | 1 |
 | [Jermaine O'Neal](players/onealje01.md) | Indiana Pacers | free agent expiring | No verified current agreement | 1 |
-| [Jerome Beasley](players/beaslje01.md) | Miami Heat | unsigned second round draft rights | No verified current agreement | 0 |
+| [Jerome Beasley](players/beaslje01.md) | Miami Heat | renounced | No verified current agreement | 1 |
 | [Jerome James](players/jamesje01.md) | Seattle SuperSonics | under contract | Jerome James · existing contract; signing date not recorded | 1 |
 | [Jerome Moiso](players/moisoje01.md) | New Orleans Hornets | free agent expiring | No verified current agreement | 1 |
 | [Jerome Williams](players/willije01.md) | Toronto Raptors | under contract | Jerome Williams · 2001-07-18 | 1 |

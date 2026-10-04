@@ -31,7 +31,6 @@ Committed salary counts contracts, exercised options and the unsigned first-roun
 | [Rasual Butler](../Team/Player_Cards/rasual_butler.md) | 563,679<sup>TO</sup> | — | — | — | — | — | — | — |
 | [Sean Lampley](../Team/Player_Cards/sean_lampley.md) | 563,679<sup>TO</sup> | — | — | — | — | — | — | — |
 | [Udonis Haslem](../Team/Player_Cards/udonis_haslem.md) | 366,931 | — | — | — | — | — | — | — |
-| [Jerome Beasley](../Team/Player_Cards/jerome_beasley.md) | — | — | — | — | — | — | — | — |
 | Counted | 44,128,961 | 34,412,388 | 37,713,436 | 34,337,708 | 0 | 0 | 0 | 0 |
 
 ## Free-agent holds

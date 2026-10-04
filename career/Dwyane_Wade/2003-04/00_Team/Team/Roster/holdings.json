@@ -121,8 +121,9 @@
    "player": "Jerome Beasley",
    "bbr_id": null,
    "from": "2003-06-26",
-   "until": null,
-   "basis": "draft rights"
+   "until": "2003-11-11",
+   "basis": "draft rights",
+   "note": "rights renounced 2003-11-11 (no roster place); he is on no real club's roster, so no game input changes"
   },
   {
    "player": "Mike James",

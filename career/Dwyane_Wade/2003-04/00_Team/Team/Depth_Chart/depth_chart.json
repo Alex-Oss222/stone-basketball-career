@@ -37,13 +37,7 @@
     "SG": "Eddie Jones",
     "PF": "Scott Padgett"
   },
-  "unassigned_draft_rights": [
-    {
-      "name": "Jerome Beasley",
-      "status": "draft_rights_unsigned",
-      "note": "No. 33 pick; unsigned, so not a game-day player"
-    }
-  ],
+  "unassigned_draft_rights": [],
   "unassigned_arrivals": [],
   "unavailable": [],
   "departed": [
@@ -96,6 +90,11 @@
       "name": "Mike Batiste",
       "date": "2003-10-27",
       "status": "voided"
+    },
+    {
+      "name": "Jerome Beasley",
+      "date": "2003-11-11",
+      "status": "renounced"
     }
   ],
   "corrections": [

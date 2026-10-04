@@ -306,7 +306,7 @@ Card date: **2003-11-11**. 407 registry players, one Markdown card and one inter
 | [Grant Long](longgr01.md) | Boston Celtics | 37 | silhouette | [open](longgr01.html) |
 | [Jason Caffey](caffeja01.md) | Milwaukee Bucks | 30 | silhouette | [open](caffeja01.html) |
 | [Jermaine O'Neal](onealje01.md) | Indiana Pacers | 25 | sourced | [open](onealje01.html) |
-| [Jerome Beasley](beaslje01.md) | Miami Heat (draft rights) | 23 | sourced | [open](beaslje01.html) |
+| [Jerome Beasley](beaslje01.md) | Free agent | 23 | sourced | [open](beaslje01.html) |
 | [Jerome Williams](willije01.md) | Toronto Raptors | 30 | sourced | [open](willije01.html) |
 | [Juwan Howard](howarju01.md) | Orlando Magic | 30 | sourced | [open](howarju01.html) |
 | [Karl Malone](malonka01.md) | Los Angeles Lakers | 40 | sourced | [open](malonka01.html) |
