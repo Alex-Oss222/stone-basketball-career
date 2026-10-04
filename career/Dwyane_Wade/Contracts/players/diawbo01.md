@@ -2,9 +2,9 @@
 
 # Contract | Boris Diaw
 
-Known through: 2003-11-16. [Open interactive contract](diawbo01.html#contract) · [Contract history](diawbo01.html#contract-history)
+Known through: 2003-11-18. [Open interactive contract](diawbo01.html#contract) · [Contract history](diawbo01.html#contract-history)
 
-Boris Diaw: No verified contract record. Evidence cutoff: 2003-11-16.
+Boris Diaw: No verified contract record. Evidence cutoff: 2003-11-18.
 
 ## Current contract
 

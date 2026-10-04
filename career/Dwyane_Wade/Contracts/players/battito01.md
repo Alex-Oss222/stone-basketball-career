@@ -2,9 +2,9 @@
 
 # Contract | Tony Battie
 
-Known through: 2003-11-16. [Open interactive contract](battito01.html#contract) · [Contract history](battito01.html#contract-history)
+Known through: 2003-11-18. [Open interactive contract](battito01.html#contract) · [Contract history](battito01.html#contract-history)
 
-Tony Battie: under contract. Evidence cutoff: 2003-11-16.
+Tony Battie: under contract. Evidence cutoff: 2003-11-18.
 
 ## Current contract
 

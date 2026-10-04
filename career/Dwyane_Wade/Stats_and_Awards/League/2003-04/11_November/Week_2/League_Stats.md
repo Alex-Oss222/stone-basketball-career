@@ -4,7 +4,7 @@
 
 NBA regular season · November 8-14, 2003
 
-407 tracked players · 49 closed games in this record · Through November 16, 2003.
+407 tracked players · 49 closed games in this record · Through November 18, 2003.
 
 ## Leaders
 

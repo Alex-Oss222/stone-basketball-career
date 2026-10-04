@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-11-16**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-11-18**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -44,7 +44,7 @@ Card date: **2003-11-16**. 407 registry players, one Markdown card and one inter
 | [Jannero Pargo](pargoja01.md) | Los Angeles Lakers | 24 | sourced | [open](pargoja01.html) |
 | [Jason Kidd](kiddja01.md) | New Jersey Nets | 30 | sourced | [open](kiddja01.html) |
 | [Jason Terry](terryja01.md) | Atlanta Hawks | 26 | sourced | [open](terryja01.html) |
-| [Jason Williams](willija02.md) | Memphis Grizzlies | 27 | sourced | [open](willija02.html) |
+| [Jason Williams](willija02.md) | Memphis Grizzlies | 28 | sourced | [open](willija02.html) |
 | [Jay Williams](willija03.md) | Chicago Bulls | 22 | sourced | [open](willija03.html) |
 | [Jeff McInnis](mcinnje01.md) | Portland Trail Blazers | 29 | sourced | [open](mcinnje01.html) |
 | [John Salmons](salmojo01.md) | Philadelphia 76ers | 23 | sourced | [open](salmojo01.html) |
@@ -74,7 +74,7 @@ Card date: **2003-11-16**. 407 registry players, one Markdown card and one inter
 | [Rick Brunson](brunsri01.md) | Toronto Raptors | 31 | sourced | [open](brunsri01.html) |
 | [Robert Pack](packro01.md) | New Orleans Hornets | 34 | sourced | [open](packro01.html) |
 | [Rod Strickland](stricro02.md) | Minnesota Timberwolves | 37 | sourced | [open](stricro02.html) |
-| [Sam Cassell](cassesa01.md) | Minnesota Timberwolves | 33 | sourced | [open](cassesa01.html) |
+| [Sam Cassell](cassesa01.md) | Minnesota Timberwolves | 34 | sourced | [open](cassesa01.html) |
 | [Shammond Williams](willish01.md) | Orlando Magic | 28 | sourced | [open](willish01.html) |
 | [Smush Parker](parkesm01.md) | Cleveland Cavaliers | 22 | sourced | [open](parkesm01.html) |
 | [Speedy Claxton](claxtsp01.md) | Golden State Warriors | 25 | sourced | [open](claxtsp01.html) |
@@ -405,7 +405,7 @@ Card date: **2003-11-16**. 407 registry players, one Markdown card and one inter
 | [Jason Collins](collija04.md) | New Jersey Nets | 24 | sourced | [open](collija04.html) |
 | [Jeff Foster](fosteje01.md) | Indiana Pacers | 26 | sourced | [open](fosteje01.html) |
 | [Jelani McCoy](mccoyje01.md) | Toronto Raptors | 25 | sourced | [open](mccoyje01.html) |
-| [Jerome James](jamesje01.md) | Seattle SuperSonics | 27 | sourced | [open](jamesje01.html) |
+| [Jerome James](jamesje01.md) | Seattle SuperSonics | 28 | sourced | [open](jamesje01.html) |
 | [Jerome Moiso](moisoje01.md) | Toronto Raptors | 25 | sourced | [open](moisoje01.html) |
 | [Joel Przybilla](przybjo01.md) | Milwaukee Bucks | 24 | sourced | [open](przybjo01.html) |
 | [John Amaechi](amaecjo01.md) | Houston Rockets | 32 | sourced | [open](amaecjo01.html) |

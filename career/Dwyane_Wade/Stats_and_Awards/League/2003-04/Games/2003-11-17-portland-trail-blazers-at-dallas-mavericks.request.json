@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-17-portland-trail-blazers-at-dallas-mavericks",
+ "game_date": "2003-11-17",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Dallas Mavericks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ }
+}

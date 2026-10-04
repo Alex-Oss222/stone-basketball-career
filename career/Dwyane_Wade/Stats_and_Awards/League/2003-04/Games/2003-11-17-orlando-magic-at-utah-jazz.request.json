@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-17-orlando-magic-at-utah-jazz",
+ "game_date": "2003-11-17",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ }
+}

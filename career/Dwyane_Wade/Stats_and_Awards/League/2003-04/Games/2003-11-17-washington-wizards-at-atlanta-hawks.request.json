@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-17-washington-wizards-at-atlanta-hawks",
+ "game_date": "2003-11-17",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Atlanta Hawks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ }
+}
