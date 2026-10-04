@@ -17,9 +17,9 @@ Through 2003-12-29, from closed simulated results only (`runtime/standings.py`).
 | 9 | Cleveland Cavaliers | 13 | 18 | .419 | 10 |
 | 10 | Philadelphia 76ers | 12 | 19 | .387 | 11 |
 | 11 | Atlanta Hawks | 12 | 20 | .375 | 11.5 |
-| 12 | New York Knicks | 11 | 20 | .355 | 12 |
-| 13 | Boston Celtics | 10 | 21 | .323 | 13 |
-| 14 | Orlando Magic | 9 | 22 | .290 | 14 |
+| 12 | Boston Celtics | 11 | 21 | .344 | 12.5 |
+| 13 | New York Knicks | 11 | 21 | .344 | 12.5 |
+| 14 | Orlando Magic | 10 | 22 | .312 | 13.5 |
 | 15 | Washington Wizards | 7 | 21 | .250 | 14.5 |
 
 ## Western Conference
@@ -31,8 +31,8 @@ Through 2003-12-29, from closed simulated results only (`runtime/standings.py`).
 | 3 | Los Angeles Lakers | 20 | 8 | .714 | 3 |
 | 4 | Sacramento Kings | 20 | 9 | .690 | 3.5 |
 | 5 | Dallas Mavericks | 18 | 11 | .621 | 5.5 |
-| 6 | Golden State Warriors | 16 | 12 | .571 | 7 |
-| 7 | Houston Rockets | 17 | 13 | .567 | 7 |
+| 6 | Houston Rockets | 17 | 13 | .567 | 7 |
+| 7 | Golden State Warriors | 16 | 13 | .552 | 7.5 |
 | 8 | Denver Nuggets | 15 | 15 | .500 | 9 |
 | 9 | Seattle SuperSonics | 14 | 14 | .500 | 9 |
 | 10 | Memphis Grizzlies | 14 | 17 | .452 | 10.5 |
