@@ -3,7 +3,7 @@
   "league": "NBA",
   "season": "2003-04",
   "as_of": "2003-06-26",
-  "player_count": 503,
+  "player_count": 504,
   "purpose": "League-wide player tracking pool for simulated statistics and awards.",
   "source_policy": "End-of-2002-03 club is a baseline roster location; 2003 draft entries identify post-draft rights. Neither source alone is a finalized 2003-04 opening-night roster.",
   "positions": [
@@ -6242,6 +6242,20 @@
       "registry_id": "hasleud01",
       "added_on": "2003-12-09",
       "added_basis": "first closed 2003-04 appearance, Miami Heat, 2003-12-09-phoenix-suns-at-miami-heat"
+    },
+    {
+      "name": "Don Reid",
+      "position": "SF",
+      "team_name": "Sacramento Kings",
+      "team_code": "SAC",
+      "conference": "West",
+      "cohort": "2003_04_appearance",
+      "bbr_id": null,
+      "espn_id": null,
+      "birth_date": null,
+      "registry_id": "donreid",
+      "added_on": "2004-01-07",
+      "added_basis": "first closed 2003-04 appearance, Sacramento Kings, 2004-01-07-sacramento-kings-at-seattle-supersonics"
     }
   ],
   "coverage": {
@@ -6249,7 +6263,7 @@
     "source_counts": {
       "end_2002_03_roster": 349,
       "2003_draft_rights": 58,
-      "2003_04_appearance": 96
+      "2003_04_appearance": 97
     },
     "population_policy": "Retain all 407 original registry entries; add every player who appears in a closed 2003-04 result, dated by his first appearance (write_back.extend_registry).",
     "changes_policy": "Use dated branch transactions; preserve completed-period team stints."

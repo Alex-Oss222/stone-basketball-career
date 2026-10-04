@@ -333,6 +333,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Ronald Dupree](../../Players/duprero01.md) | N/A | CHI | NBA | SF | 8 | 1 | 21.6 | 2.8 | 6.9 | .400 | 0.4 | 0.6 | .600 | 2.4 | 6.2 | .380 | .427 | 2.5 | 3.9 | .645 | 0.6 | 2.6 | 3.2 | 1.9 | 1.2 | 0.5 | 1.1 | 2.8 | 8.4 | .488 |
 | [Theron Smith](../../Players/smithth01.md) | N/A | MEM | NBA | SF | 1 | 0 | 1.8 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | N/A |
 | [Tracy Murray](../../Players/murratr01.md) | N/A | POR | NBA | SF | 1 | 0 | 1.7 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | N/A |
+| [Don Reid](../../Players/donreid.md) | N/A | SAC | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-07**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-01-07**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -209,7 +209,7 @@ Card date: **2004-01-07**. 503 registry players, one Markdown card and one inter
 </details>
 
 <details>
-<summary>SF · Small forwards · 94 players</summary>
+<summary>SF · Small forwards · 95 players</summary>
 
 | Player | Club on card date | Age | Photo | Interactive |
 | --- | --- | --- | --- | --- |
@@ -234,6 +234,7 @@ Card date: **2004-01-07**. 503 registry players, one Markdown card and one inter
 | [Desmond Ferguson](fergude01.md) | Portland Trail Blazers | None | silhouette | [open](fergude01.html) |
 | [Desmond Mason](masonde01.md) | Milwaukee Bucks | 26 | sourced | [open](masonde01.html) |
 | [Devean George](georgde01.md) | Los Angeles Lakers | 26 | sourced | [open](georgde01.html) |
+| [Don Reid](donreid.md) | Sacramento Kings | None | silhouette | [open](donreid.html) |
 | [Donnell Harvey](harvedo01.md) | Orlando Magic | 23 | silhouette | [open](harvedo01.html) |
 | [Eddie Robinson](robined01.md) | Chicago Bulls | 27 | sourced | [open](robined01.html) |
 | [Eduardo Najera](najered01.md) | Dallas Mavericks | 27 | sourced | [open](najered01.html) |

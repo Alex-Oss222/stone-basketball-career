@@ -1227,6 +1227,15 @@
       "href": "players/nowitdi01.html#contract"
     },
     {
+      "player_id": "donreid",
+      "name": "Don Reid",
+      "team": "Free agent",
+      "status": "unsigned free agent",
+      "current_contract_id": null,
+      "recorded_agreements": 1,
+      "href": "players/donreid.html#contract"
+    },
+    {
       "player_id": "harvedo01",
       "name": "Donnell Harvey",
       "team": "Orlando Magic",
