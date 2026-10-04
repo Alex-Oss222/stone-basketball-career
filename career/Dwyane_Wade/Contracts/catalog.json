@@ -1227,13 +1227,13 @@
       "href": "players/nowitdi01.html#contract"
     },
     {
-      "player_id": "donreid",
+      "player_id": "reiddo01",
       "name": "Don Reid",
       "team": "Free agent",
-      "status": "unsigned free agent",
+      "status": "unsigned free agent (researched, 2003-07-01)",
       "current_contract_id": null,
       "recorded_agreements": 1,
-      "href": "players/donreid.html#contract"
+      "href": "players/reiddo01.html#contract"
     },
     {
       "player_id": "harvedo01",

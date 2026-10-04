@@ -30,6 +30,11 @@ AFTER_CHECKPOINT = (                       # records the clock writes after June
     "career/Dwyane_Wade/standing.json",
     "career/Dwyane_Wade/Contracts/contract_records.json",
     "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Games",
+    f"{SEASON}/League/league_moves.json",
+    f"{SEASON}/League/Trade_Draws",
+    f"{SEASON}/League/club_replacements.json",
+    "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/award_decisions.json",
+    "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Award_Draws",
 )
 
 
@@ -83,7 +88,7 @@ def pin(root):
     if reg_path.is_file():
         reg = json.loads(reg_path.read_text(encoding="utf-8"))
         kept = [p for p in reg["players"] if p.get("cohort") != "2003_04_appearance"]
-        added = {p["bbr_id"] for p in reg["players"] if p.get("cohort") == "2003_04_appearance"}
+        added = {p.get("registry_id") or p["bbr_id"] for p in reg["players"] if p.get("cohort") == "2003_04_appearance"}
         for b in added:                                             # their league cards are built on registration
             for card in (root / "career/Dwyane_Wade/Stats_and_Awards/League/Players").glob(f"{b}.*"):
                 card.unlink()

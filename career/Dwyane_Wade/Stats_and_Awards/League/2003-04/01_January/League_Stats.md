@@ -333,7 +333,6 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Ronald Dupree](../../Players/duprero01.md) | N/A | CHI | NBA | SF | 5 | 0 | 18.3 | 2.8 | 5.2 | .538 | 0.0 | 0.0 | N/A | 2.8 | 5.2 | .538 | .538 | 0.4 | 1.2 | .333 | 0.8 | 2.6 | 3.4 | 1.2 | 0.0 | 0.2 | 0.8 | 2.4 | 6.0 | .524 |
 | [Theron Smith](../../Players/smithth01.md) | N/A | MEM | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Tracy Murray](../../Players/murratr01.md) | N/A | POR | NBA | SF | 3 | 0 | 4.2 | 0.0 | 0.7 | .000 | 0.0 | 0.0 | N/A | 0.0 | 0.7 | .000 | .000 | 0.0 | 0.0 | N/A | 0.0 | 1.7 | 1.7 | 0.0 | 0.3 | 0.0 | 0.0 | 0.3 | 0.0 | .000 |
-| [Don Reid](../../Players/donreid.md) | N/A | SAC | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 
@@ -457,6 +456,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Vin Baker](../../Players/bakervi01.md) | N/A | BOS | NBA | PF | 2 | 2 | 25.9 | 7.0 | 10.0 | .700 | 0.0 | 0.0 | N/A | 7.0 | 10.0 | .700 | .700 | 2.5 | 3.0 | .833 | 0.5 | 4.5 | 5.0 | 0.5 | 0.5 | 0.0 | 1.0 | 4.5 | 16.5 | .729 |
 | [John Wallace](../../Players/wallajo01.md) | 29 | MIA | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Udonis Haslem](../../Players/hasleud01.md) | 23 | MIA | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [Don Reid](../../Players/reiddo01.md) | N/A | SAC | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 

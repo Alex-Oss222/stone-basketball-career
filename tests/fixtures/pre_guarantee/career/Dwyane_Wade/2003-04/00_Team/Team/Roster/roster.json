@@ -1,0 +1,474 @@
+{
+  "schema_version": 1,
+  "owner": "ai_gm",
+  "as_of": "2003-11-11",
+  "season": "2003-04",
+  "team": "Miami Heat",
+  "roster_kind": "team_control_register",
+  "finalized_active_roster": false,
+  "players": [
+    {
+      "id": "alonzo_mourning",
+      "name": "Alonzo Mourning",
+      "positions": [
+        "C"
+      ],
+      "height": "6-10",
+      "weight_lb": 240,
+      "date_of_birth": "1970-02-08",
+      "college": "Georgetown",
+      "status": "signed_elsewhere",
+      "control": "July 16, 2003: signs with New Jersey Nets (signing, real move); his hold and rights leave Miami's books.",
+      "working_role": "Unavailable",
+      "player_card": "../Player_Cards/alonzo_mourning.md"
+    },
+    {
+      "id": "malik_allen",
+      "name": "Malik Allen",
+      "positions": [
+        "PF"
+      ],
+      "height": "6-10",
+      "weight_lb": 255,
+      "date_of_birth": "1978-06-27",
+      "college": "Villanova",
+      "status": "free_agent_rights_held",
+      "control": "Free agent from July 1, 2003; Miami holds his rights and cap hold until he re-signs, signs elsewhere or is renounced (Finances/free_agent_rights.json).",
+      "working_role": "2002-03 PF1",
+      "player_card": "../Player_Cards/malik_allen.md",
+      "bbr_id": "allenma01"
+    },
+    {
+      "id": "travis_best",
+      "name": "Travis Best",
+      "positions": [
+        "PG"
+      ],
+      "height": "5-11",
+      "weight_lb": 182,
+      "date_of_birth": "1972-07-12",
+      "college": "Georgia Tech",
+      "status": "signed_elsewhere",
+      "control": "August 22, 2003: signs with Dallas Mavericks (signing, real move); his hold and rights leave Miami's books.",
+      "working_role": "2002-03 PG1",
+      "player_card": "../Player_Cards/travis_best.md",
+      "bbr_id": "besttr01"
+    },
+    {
+      "id": "caron_butler",
+      "name": "Caron Butler",
+      "positions": [
+        "SF"
+      ],
+      "height": "6-7",
+      "weight_lb": 228,
+      "date_of_birth": "1980-03-13",
+      "college": "UConn",
+      "status": "under_contract",
+      "control": "Rookie contract through 2004-05, plus a 2005-06 team option; 2003-04 salary $1,804,680.",
+      "working_role": "2002-03 SF1",
+      "player_card": "../Player_Cards/caron_butler.md",
+      "bbr_id": "butleca01"
+    },
+    {
+      "id": "rasual_butler",
+      "name": "Rasual Butler",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "height": "6-7",
+      "weight_lb": 215,
+      "date_of_birth": "1979-05-23",
+      "college": "La Salle",
+      "status": "team_option_exercised",
+      "control": "Team option exercised on June 30, 2003 (front office rule; see June_30/front_office_decisions.json).",
+      "working_role": "2002-03 SG2",
+      "player_card": "../Player_Cards/rasual_butler.md",
+      "bbr_id": "butlera01"
+    },
+    {
+      "id": "anthony_carter",
+      "name": "Anthony Carter",
+      "positions": [
+        "PG"
+      ],
+      "height": "6-1",
+      "weight_lb": 190,
+      "date_of_birth": "1975-06-16",
+      "college": "Hawaii",
+      "status": "player_option_exercised",
+      "control": "Player option exercised on June 30, 2003 (engine draw 2003-06-30-anthony_carter-player-option).",
+      "working_role": "2002-03 PG3",
+      "player_card": "../Player_Cards/anthony_carter.md",
+      "bbr_id": "cartean01"
+    },
+    {
+      "id": "laphonso_ellis",
+      "name": "LaPhonso Ellis",
+      "positions": [
+        "PF"
+      ],
+      "height": "6-8",
+      "weight_lb": 240,
+      "date_of_birth": "1970-05-05",
+      "college": "Notre Dame",
+      "status": "under_contract_guarantee_amended",
+      "control": "Under contract for 2003-04 at a reported approximately $3.6M. Guarantee trigger amended in January; exact protected amount unverified. No waiver decision recorded.",
+      "working_role": "2002-03 PF2",
+      "player_card": "../Player_Cards/laphonso_ellis.md",
+      "bbr_id": "ellisla01"
+    },
+    {
+      "id": "brian_grant",
+      "name": "Brian Grant",
+      "positions": [
+        "C",
+        "PF"
+      ],
+      "height": "6-9",
+      "weight_lb": 254,
+      "date_of_birth": "1972-03-05",
+      "college": "Xavier",
+      "status": "under_contract",
+      "control": "Existing contract runs through 2006-07, with an early-termination option after 2005-06; 2003-04 salary $12,130,648.",
+      "working_role": "2002-03 C1",
+      "player_card": "../Player_Cards/brian_grant.md",
+      "bbr_id": "grantbr01"
+    },
+    {
+      "id": "eddie_house",
+      "name": "Eddie House",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "height": "6-1",
+      "weight_lb": 180,
+      "date_of_birth": "1978-05-14",
+      "college": "Arizona State",
+      "status": "signed_elsewhere",
+      "control": "August 13, 2003: signs with Los Angeles Clippers (signing, real move); his hold and rights leave Miami's books.",
+      "working_role": "2002-03 SG3",
+      "player_card": "../Player_Cards/eddie_house.md",
+      "bbr_id": "houseed01"
+    },
+    {
+      "id": "mike_james",
+      "name": "Mike James",
+      "positions": [
+        "PG"
+      ],
+      "height": "6-2",
+      "weight_lb": 188,
+      "date_of_birth": "1975-06-23",
+      "college": "Duquesne",
+      "status": "re_signed",
+      "control": "Signed July 17, 2003: 3 seasons, $10,294,422 ($3,050,199 in 2003-04), $10,294,422 guaranteed; route early_bird.",
+      "working_role": "2002-03 PG2",
+      "player_card": "../Player_Cards/mike_james.md",
+      "bbr_id": "jamesmi01"
+    },
+    {
+      "id": "ken_johnson",
+      "name": "Ken Johnson",
+      "positions": [
+        "C"
+      ],
+      "height": "6-11",
+      "weight_lb": 240,
+      "date_of_birth": "1978-02-01",
+      "college": "Ohio State",
+      "status": "free_agent_option_declined",
+      "control": "Free agent from July 1, 2003 after Miami declined his team option on June 30; no cap hold is carried.",
+      "working_role": "2002-03 C3",
+      "player_card": "../Player_Cards/ken_johnson.md",
+      "bbr_id": "johnske03"
+    },
+    {
+      "id": "eddie_jones",
+      "name": "Eddie Jones",
+      "positions": [
+        "SG",
+        "SF"
+      ],
+      "height": "6-6",
+      "weight_lb": 190,
+      "date_of_birth": "1971-10-20",
+      "college": "Temple",
+      "status": "under_contract",
+      "control": "Existing seven-year contract runs through 2006-07; 2003-04 salary $12,333,750.",
+      "working_role": "2002-03 SG1",
+      "player_card": "../Player_Cards/eddie_jones.md",
+      "bbr_id": "jonesed02"
+    },
+    {
+      "id": "sean_lampley",
+      "name": "Sean Lampley",
+      "positions": [
+        "SF"
+      ],
+      "height": "6-7",
+      "weight_lb": 227,
+      "date_of_birth": "1979-09-03",
+      "college": "California",
+      "status": "team_option_exercised",
+      "control": "Team option exercised on June 30, 2003 (front office rule; see June_30/front_office_decisions.json).",
+      "working_role": "2002-03 SF2",
+      "player_card": "../Player_Cards/sean_lampley.md",
+      "bbr_id": "lamplse01"
+    },
+    {
+      "id": "sean_marks",
+      "name": "Sean Marks",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "height": "6-10",
+      "weight_lb": 250,
+      "date_of_birth": "1975-08-23",
+      "college": "California",
+      "status": "signed_elsewhere",
+      "control": "September 29, 2003: signs with San Antonio Spurs (signing, real move); his hold and rights leave Miami's books.",
+      "working_role": "2002-03 PF3",
+      "player_card": "../Player_Cards/sean_marks.md",
+      "bbr_id": "marksse01"
+    },
+    {
+      "id": "vladimir_stepania",
+      "name": "Vladimir Stepania",
+      "positions": [
+        "C"
+      ],
+      "height": "7-0",
+      "weight_lb": 236,
+      "date_of_birth": "1976-05-08",
+      "college": null,
+      "status": "signed_elsewhere",
+      "control": "October 23, 2003: signs with Portland Trail Blazers (signing, real move); his hold and rights leave Miami's books.",
+      "working_role": "2002-03 C2",
+      "player_card": "../Player_Cards/vladimir_stepania.md",
+      "bbr_id": "stepavl01"
+    },
+    {
+      "id": "dwyane_wade",
+      "name": "Dwyane Wade",
+      "positions": [
+        "SG",
+        "PG"
+      ],
+      "height": "6-6 in shoes",
+      "weight_lb": 220,
+      "date_of_birth": "1984-01-17",
+      "college": "UConn (simulation canon)",
+      "status": "under_contract",
+      "control": "Rookie-scale contract signed July 21, 2003: $2,197,000 counted in 2003-04, three seasons plus a 2006-07 team option; 120% of scale at the maximum, 80% protected.",
+      "working_role": "Unassigned rookie",
+      "player_card": "../Player_Cards/dwyane_wade.md"
+    },
+    {
+      "id": "jerome_beasley",
+      "name": "Jerome Beasley",
+      "positions": [
+        "PF",
+        "C"
+      ],
+      "height": "6-10",
+      "weight_lb": 237,
+      "date_of_birth": "1980-05-17",
+      "college": "North Dakota",
+      "status": "renounced",
+      "control": "November 11, 2003: draft rights renounced: Miami's fifteen roster places are all filled by signed players, so there is no place to sign him (1999 CBA Art. X §3(f); his Required Tender's acceptance period had ended). He is a rookie free agent.",
+      "working_role": "Unassigned rookie",
+      "player_card": "../Player_Cards/jerome_beasley.md"
+    },
+    {
+      "id": "keon_clark",
+      "name": "Keon Clark",
+      "positions": [
+        "C"
+      ],
+      "date_of_birth": "1975-04-16",
+      "status": "voided",
+      "control": "October 27, 2003: camp contract of September 30, 2003 voided: he was not a free agent on that date (world data corrected); real move: trade to Utah Jazz on 2003-08-05; he returns to his real club (rule 2 no longer applies).",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/keon_clark.md",
+      "bbr_id": "clarkke01"
+    },
+    {
+      "id": "jumaine_jones",
+      "name": "Jumaine Jones",
+      "positions": [
+        "SF"
+      ],
+      "date_of_birth": "1979-02-10",
+      "status": "voided",
+      "control": "October 27, 2003: camp contract of September 30, 2003 voided: Boston Celtics had already acquired him on 2003-07-29 (trade); he returns to his real club (rule 2 no longer applies).",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/jumaine_jones.md",
+      "bbr_id": "jonesju01"
+    },
+    {
+      "id": "stephen_jackson",
+      "name": "Stephen Jackson",
+      "positions": [
+        "SG"
+      ],
+      "date_of_birth": "1978-04-05",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $663,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 3 years of service (minimum_salary_corrections.json).",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/stephen_jackson.md",
+      "bbr_id": "jacksst02"
+    },
+    {
+      "id": "reggie_evans",
+      "name": "Reggie Evans",
+      "positions": [
+        "PF"
+      ],
+      "date_of_birth": "1980-05-18",
+      "status": "voided",
+      "control": "October 27, 2003: camp contract of September 30, 2003 voided: Seattle SuperSonics had already re-signed him on 2003-09-26 (re_sign); he returns to his real club (rule 2 no longer applies).",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/reggie_evans.md",
+      "bbr_id": "evansre01"
+    },
+    {
+      "id": "dion_glover",
+      "name": "Dion Glover",
+      "positions": [
+        "SG"
+      ],
+      "date_of_birth": "1978-10-22",
+      "status": "released",
+      "control": "October 27, 2003: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/dion_glover.md",
+      "bbr_id": "glovedi01"
+    },
+    {
+      "id": "shawn_kemp",
+      "name": "Shawn Kemp",
+      "positions": [
+        "C"
+      ],
+      "date_of_birth": "1969-11-26",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10.",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/shawn_kemp.md",
+      "bbr_id": "kempsh01"
+    },
+    {
+      "id": "chris_andersen",
+      "name": "Chris Andersen",
+      "positions": [
+        "C"
+      ],
+      "date_of_birth": "1978-07-07",
+      "status": "voided",
+      "control": "October 27, 2003: camp contract of September 30, 2003 voided: Denver Nuggets had already re-signed him on 2003-09-29 (re_sign); he returns to his real club (rule 2 no longer applies).",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/chris_andersen.md",
+      "bbr_id": "anderch01"
+    },
+    {
+      "id": "mike_batiste",
+      "name": "Mike Batiste",
+      "positions": [
+        "PF"
+      ],
+      "date_of_birth": "1977-11-21",
+      "status": "voided",
+      "control": "October 27, 2003: camp contract of September 30, 2003 voided: he was a restricted free agent; a camp contract bypassed his club's right to match; he returns to his real club (rule 2 no longer applies).",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/mike_batiste.md",
+      "bbr_id": "batismi01"
+    },
+    {
+      "id": "scott_padgett",
+      "name": "Scott Padgett",
+      "positions": [
+        "PF"
+      ],
+      "date_of_birth": "1976-04-19",
+      "status": "camp_contract",
+      "control": "Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 4 years of service (minimum_salary_corrections.json).",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/scott_padgett.md",
+      "bbr_id": "padgesc01"
+    },
+    {
+      "id": "tyrone_hill",
+      "name": "Tyrone Hill",
+      "positions": [
+        "PF"
+      ],
+      "date_of_birth": "1968-03-19",
+      "status": "released",
+      "control": "October 27, 2003: released at the cut to 15 (non-guaranteed camp contract; no dead money).",
+      "working_role": "Camp invitee",
+      "player_card": "../Player_Cards/tyrone_hill.md",
+      "bbr_id": "hillty01"
+    },
+    {
+      "id": "cherokee_parks",
+      "name": "Cherokee Parks",
+      "positions": [
+        "C"
+      ],
+      "date_of_birth": "1972-10-11",
+      "status": "camp_contract",
+      "control": "Signed October 27, 2003: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 8 years of service (minimum_salary_corrections.json).",
+      "working_role": "Roster refill",
+      "player_card": "../Player_Cards/cherokee_parks.md",
+      "bbr_id": "parksch02",
+      "date_of_birth_from": "2003-11-12"
+    },
+    {
+      "id": "udonis_haslem",
+      "name": "Udonis Haslem",
+      "positions": [
+        "PF"
+      ],
+      "date_of_birth": "1980-06-09",
+      "status": "camp_contract",
+      "control": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+      "working_role": "Roster refill",
+      "player_card": "../Player_Cards/udonis_haslem.md",
+      "bbr_id": "hasleud01"
+    },
+    {
+      "id": "john_wallace",
+      "name": "John Wallace",
+      "positions": [
+        "PF"
+      ],
+      "date_of_birth": "1974-02-09",
+      "status": "camp_contract",
+      "control": "Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 6 years of service (minimum_salary_corrections.json).",
+      "working_role": "Roster refill",
+      "player_card": "../Player_Cards/john_wallace.md",
+      "bbr_id": "wallajo01"
+    }
+  ],
+  "sources": [
+    "https://www.basketball-reference.com/teams/MIA/2003.html",
+    "https://www.basketball-reference.com/teams/MIA/2003_transactions.html",
+    "https://leadersgroup-sbj-prod.web.arc-cdn.net/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+    "https://www.nba.com/player/2602/jerome-beasley",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+    "https://www.espn.com/nba/columns/stein_marc/1577692.html",
+    "https://www.shamsports.com/players/rasual-butler",
+    "https://www.shamsports.com/players/sean-lampley",
+    "https://basketball.realgm.com/nba/info/rookie_scale/2004",
+    "https://www.cbafaq.com/salarycap99.htm",
+    "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf",
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+    "https://basketball.realgm.com/wiretap/151255/Likely-dilemma-Zo-or-Grant",
+    "https://www.rotowire.com/basketball/player/laphonso-ellis-1443"
+  ]
+}

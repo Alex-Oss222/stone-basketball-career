@@ -1,0 +1,1117 @@
+{
+ "schema_version": 1,
+ "records": [
+  {
+   "record_id": "jamesmi01-2003-07-17-signed",
+   "recorded_on": "2003-07-17",
+   "player_id": "jamesmi01",
+   "player": "Mike James",
+   "contract_id": "jamesmi01-2003-07-17",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/01_Free_Agency/Negotiations/mike_james.json",
+   "contract": {
+    "player": "Mike James",
+    "bbr_id": "jamesmi01",
+    "status": "re_signed",
+    "schedule": {
+     "2003-04": 3050199,
+     "2004-05": 3431474,
+     "2005-06": 3812749
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary",
+     "2004-05": "contract_salary",
+     "2005-06": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 3050199,
+     "2004-05": 3431474,
+     "2005-06": 3812749
+    },
+    "signed_date": "2003-07-17",
+    "original_term_seasons": 3,
+    "route": "early_bird",
+    "promise": {
+     "role": "starter",
+     "minutes_per_game": 32
+    },
+    "base_year_compensation": {
+     "applies": true,
+     "status": "inferred for 1999: re-signed with Bird or Early Bird rights at a raise over 20% by a club over the cap (raise over 20% of $512,435; Miami $46,515,837 against the $43,840,000 cap with the contract counted); attached at the signing"
+    },
+    "notes": "Signed July 17, 2003 by simulated Miami via early_bird; agreed 2003-07-17 (engine decision 2003-fa-jamesmi01-offer-1).",
+    "sources": [
+     "career/Dwyane_Wade/2003-04/01_Free_Agency/Negotiations/mike_james.json"
+    ],
+    "prior_season_salary": {
+     "season": "2002-03",
+     "amount": 512435
+    },
+    "signing_team": "Miami Heat",
+    "executed_terms": {
+     "first_year": 3050199,
+     "years": 3,
+     "schedule": [
+      3050199,
+      3431474,
+      3812749
+     ],
+     "guaranteed": 10294422,
+     "raise_percent": 12.5,
+     "last_year_guaranteed": true,
+     "round": 1,
+     "promise": {
+      "role": "starter",
+      "minutes_per_game": 32
+     },
+     "basis": "round 1: ask $3,485,942, Miami's valuation $3,873,269, ceiling $4,260,595"
+    }
+   }
+  },
+  {
+   "record_id": "wadedw01-2003-07-21-signed",
+   "recorded_on": "2003-07-21",
+   "player_id": "wadedw01",
+   "player": "Dwyane Wade",
+   "contract_id": "wadedw01-2003-07-21",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json",
+   "contract": {
+    "player": "Dwyane Wade",
+    "status": "under_contract",
+    "schedule": {
+     "2003-04": 2197000,
+     "2004-05": 2361800,
+     "2005-06": 2526600,
+     "2006-07": 3201202
+    },
+    "rookie_scale_reference": {
+     "2003-04": 2197000,
+     "2004-05": 2361800,
+     "2005-06": 2526600,
+     "2006-07_option_increase_over_2005-06_percent": 26.7,
+     "allowed_signing_percent_of_scale": {
+      "min": 80,
+      "max": 120
+     }
+    },
+    "notes": "Rookie-scale contract signed July 21, 2003: 80% of the No. 5 scale as protected Current Cash Compensation plus incentives to 120%; the scheduled amounts are the counted Salary (protected cash, included incentives and bonuses classified Likely); Unlikely bonuses count only when earned. Three seasons plus a team option for 2006-07 at the third season's Salary raised 26.7%, to be exercised by 2005-10-31. The draft hold ends with the signing.",
+    "sources": [
+     "01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json",
+     "https://basketball.realgm.com/nba/info/rookie_scale/2004",
+     "https://www.cbafaq.com/salarycap99.htm",
+     "https://www.cbafaq.com/scale99.htm",
+     "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+    ],
+    "amount_kind": {
+     "2003-04": "contract_salary",
+     "2004-05": "contract_salary",
+     "2005-06": "contract_salary",
+     "2006-07": "team_option"
+    },
+    "signed_date": "2003-07-21",
+    "original_term_seasons": 3,
+    "team_option_season": "2006-07",
+    "fourth_year_option_deadline": "2005-10-31",
+    "percent_of_scale": 120,
+    "route": "rookie_scale",
+    "protected_schedule": {
+     "2003-04": 1757600,
+     "2004-05": 1889440,
+     "2005-06": 2021280
+    },
+    "maximum_schedule": {
+     "2003-04": 2636400,
+     "2004-05": 2834160,
+     "2005-06": 3031920
+    },
+    "incentives": [
+     {
+      "id": "conditioning_program",
+      "label": "Offseason skill and conditioning program (10% of scale)",
+      "kind": "conditioning_program",
+      "percent": 10,
+      "classification": "included",
+      "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+      "benchmarks": {
+       "2003-04": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+       "2004-05": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+       "2005-06": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "physical_condition",
+      "label": "Preseason conditioning standard (10% of scale)",
+      "kind": "physical_condition",
+      "percent": 10,
+      "classification": "included",
+      "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+      "benchmarks": {
+       "2003-04": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+       "2004-05": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+       "2005-06": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league)."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "minutes",
+      "label": "Regular-season minutes (10% of scale)",
+      "kind": "performance",
+      "percent": 10,
+      "classification": "unlikely",
+      "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+      "benchmarks": {
+       "2003-04": "At least 1,200 regular-season minutes played.",
+       "2004-05": "At least 1,200 regular-season minutes played.",
+       "2005-06": "At least 1,200 regular-season minutes played."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     },
+     {
+      "id": "achievement",
+      "label": "Achievement (10% of scale)",
+      "kind": "performance",
+      "percent": 10,
+      "classification": "unlikely",
+      "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+      "benchmarks": {
+       "2003-04": "Selection to an NBA All-Rookie Team.",
+       "2004-05": "At least 15.0 points per game while appearing in at least 60 games.",
+       "2005-06": "At least 17.0 points per game while appearing in at least 60 games."
+      },
+      "amounts": {
+       "2003-04": 219700,
+       "2004-05": 236180,
+       "2005-06": 252660
+      }
+     }
+    ],
+    "bonus_evaluation": "each season's incentives are evaluated against closed results at the season rollover (docs/ROADMAP.md item 18)",
+    "signing_team": "Miami Heat",
+    "executed_terms": {
+     "pick": 5,
+     "structure": "layered",
+     "protected_percent": 80,
+     "total_percent": 120,
+     "protected_schedule": {
+      "2003-04": 1757600,
+      "2004-05": 1889440,
+      "2005-06": 2021280
+     },
+     "incentives": [
+      {
+       "id": "conditioning_program",
+       "label": "Offseason skill and conditioning program (10% of scale)",
+       "kind": "conditioning_program",
+       "percent": 10,
+       "classification": "included",
+       "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+       "benchmarks": {
+        "2003-04": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+        "2004-05": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+        "2005-06": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league."
+       },
+       "amounts": {
+        "2003-04": 219700,
+        "2004-05": 236180,
+        "2005-06": 252660
+       }
+      },
+      {
+       "id": "physical_condition",
+       "label": "Preseason conditioning standard (10% of scale)",
+       "kind": "physical_condition",
+       "percent": 10,
+       "classification": "included",
+       "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+       "benchmarks": {
+        "2003-04": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+        "2004-05": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+        "2005-06": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league)."
+       },
+       "amounts": {
+        "2003-04": 219700,
+        "2004-05": 236180,
+        "2005-06": 252660
+       }
+      },
+      {
+       "id": "minutes",
+       "label": "Regular-season minutes (10% of scale)",
+       "kind": "performance",
+       "percent": 10,
+       "classification": "unlikely",
+       "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+       "benchmarks": {
+        "2003-04": "At least 1,200 regular-season minutes played.",
+        "2004-05": "At least 1,200 regular-season minutes played.",
+        "2005-06": "At least 1,200 regular-season minutes played."
+       },
+       "amounts": {
+        "2003-04": 219700,
+        "2004-05": 236180,
+        "2005-06": 252660
+       }
+      },
+      {
+       "id": "achievement",
+       "label": "Achievement (10% of scale)",
+       "kind": "performance",
+       "percent": 10,
+       "classification": "unlikely",
+       "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+       "benchmarks": {
+        "2003-04": "Selection to an NBA All-Rookie Team.",
+        "2004-05": "At least 15.0 points per game while appearing in at least 60 games.",
+        "2005-06": "At least 17.0 points per game while appearing in at least 60 games."
+       },
+       "amounts": {
+        "2003-04": 219700,
+        "2004-05": 236180,
+        "2005-06": 252660
+       }
+      }
+     ],
+     "maximum_schedule": {
+      "2003-04": 2636400,
+      "2004-05": 2834160,
+      "2005-06": 3031920
+     },
+     "schedule": {
+      "2003-04": 2197000,
+      "2004-05": 2361800,
+      "2005-06": 2526600,
+      "2006-07": 3201202
+     },
+     "amount_kind": {
+      "2003-04": "contract_salary",
+      "2004-05": "contract_salary",
+      "2005-06": "contract_salary",
+      "2006-07": "team_option"
+     },
+     "signing_bonus": 0,
+     "promised_role_contractual": false,
+     "fourth_year_option_deadline": "2005-10-31",
+     "fourth_year_option_basis": "third-season counted Salary raised 26.7% (pick 5)",
+     "qualifying_offer_increase_percent_after_fourth_year": 32.6
+    }
+   }
+  },
+  {
+   "record_id": "clarkke01-2003-09-30-signed",
+   "recorded_on": "2003-09-30",
+   "player_id": "clarkke01",
+   "player": "Keon Clark",
+   "contract_id": "clarkke01-2003-09-30",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Keon Clark",
+    "bbr_id": "clarkke01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 638679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "jonesju01-2003-09-30-signed",
+   "recorded_on": "2003-09-30",
+   "player_id": "jonesju01",
+   "player": "Jumaine Jones",
+   "contract_id": "jonesju01-2003-09-30",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Jumaine Jones",
+    "bbr_id": "jonesju01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 638679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "jacksst02-2003-09-30-signed",
+   "recorded_on": "2003-09-30",
+   "player_id": "jacksst02",
+   "player": "Stephen Jackson",
+   "contract_id": "jacksst02-2003-09-30",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Stephen Jackson",
+    "bbr_id": "jacksst02",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 638679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "evansre01-2003-09-30-signed",
+   "recorded_on": "2003-09-30",
+   "player_id": "evansre01",
+   "player": "Reggie Evans",
+   "contract_id": "evansre01-2003-09-30",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Reggie Evans",
+    "bbr_id": "evansre01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 563679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $563,679, guaranteed if still on the roster on 2004-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "glovedi01-2003-09-30-signed",
+   "recorded_on": "2003-09-30",
+   "player_id": "glovedi01",
+   "player": "Dion Glover",
+   "contract_id": "glovedi01-2003-09-30",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Dion Glover",
+    "bbr_id": "glovedi01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 638679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "kempsh01-2003-09-30-signed",
+   "recorded_on": "2003-09-30",
+   "player_id": "kempsh01",
+   "player": "Shawn Kemp",
+   "contract_id": "kempsh01-2003-09-30",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Shawn Kemp",
+    "bbr_id": "kempsh01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 1070000
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "anderch01-2003-09-30-signed",
+   "recorded_on": "2003-09-30",
+   "player_id": "anderch01",
+   "player": "Chris Andersen",
+   "contract_id": "anderch01-2003-09-30",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Chris Andersen",
+    "bbr_id": "anderch01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 638679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "batismi01-2003-09-30-signed",
+   "recorded_on": "2003-09-30",
+   "player_id": "batismi01",
+   "player": "Mike Batiste",
+   "contract_id": "batismi01-2003-09-30",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Mike Batiste",
+    "bbr_id": "batismi01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 563679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $563,679, guaranteed if still on the roster on 2004-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "padgesc01-2003-09-30-signed",
+   "recorded_on": "2003-09-30",
+   "player_id": "padgesc01",
+   "player": "Scott Padgett",
+   "contract_id": "padgesc01-2003-09-30",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Scott Padgett",
+    "bbr_id": "padgesc01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 638679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "hillty01-2003-09-30-signed",
+   "recorded_on": "2003-09-30",
+   "player_id": "hillty01",
+   "player": "Tyrone Hill",
+   "contract_id": "hillty01-2003-09-30",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/camp_roster.json",
+   "contract": {
+    "player": "Tyrone Hill",
+    "bbr_id": "hillty01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 1070000
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "parksch02-2003-10-27-signed",
+   "recorded_on": "2003-10-27",
+   "player_id": "parksch02",
+   "player": "Cherokee Parks",
+   "contract_id": "parksch02-2003-10-27",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "Cherokee Parks",
+    "bbr_id": "parksch02",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 638679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-10-27",
+    "route": "minimum",
+    "notes": "Signed October 27, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+    "sources": [
+     "04_Training_Camp/signing_corrections.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "hasleud01-2003-10-27-signed",
+   "recorded_on": "2003-10-27",
+   "player_id": "hasleud01",
+   "player": "Udonis Haslem",
+   "contract_id": "hasleud01-2003-10-27",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "Udonis Haslem",
+    "bbr_id": "hasleud01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 366931
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-10-27",
+    "route": "minimum",
+    "notes": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+    "sources": [
+     "04_Training_Camp/signing_corrections.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "wallajo01-2003-10-27-signed",
+   "recorded_on": "2003-10-27",
+   "player_id": "wallajo01",
+   "player": "John Wallace",
+   "contract_id": "wallajo01-2003-10-27",
+   "event": "signed",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "John Wallace",
+    "bbr_id": "wallajo01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 366931
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-10-27",
+    "route": "minimum",
+    "notes": "Signed October 27, 2003: non-guaranteed minimum $366,931, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json).",
+    "sources": [
+     "04_Training_Camp/signing_corrections.json"
+    ],
+    "signing_team": "Miami Heat"
+   }
+  },
+  {
+   "record_id": "jacksst02-2003-09-30-amended-2003-11-11-e54f179c8c9c",
+   "recorded_on": "2003-11-11",
+   "player_id": "jacksst02",
+   "player": "Stephen Jackson",
+   "contract_id": "jacksst02-2003-09-30",
+   "event": "amended",
+   "source": "career/Dwyane_Wade/2003-04/00_Team/Finances/minimum_salary_corrections.json",
+   "contract": {
+    "player": "Stephen Jackson",
+    "bbr_id": "jacksst02",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 663679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $663,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 3 years of service is $663,679 (was $638,679); minimum_salary_corrections.json.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "years_of_service": 3,
+    "contract_id": "jacksst02-2003-09-30"
+   }
+  },
+  {
+   "record_id": "padgesc01-2003-09-30-amended-2003-11-11-96aa3b6420db",
+   "recorded_on": "2003-11-11",
+   "player_id": "padgesc01",
+   "player": "Scott Padgett",
+   "contract_id": "padgesc01-2003-09-30",
+   "event": "amended",
+   "source": "career/Dwyane_Wade/2003-04/00_Team/Finances/minimum_salary_corrections.json",
+   "contract": {
+    "player": "Scott Padgett",
+    "bbr_id": "padgesc01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 688679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10. Amended 2003-11-11: the 1999 CBA minimum for 4 years of service is $688,679 (was $638,679); minimum_salary_corrections.json.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "years_of_service": 4,
+    "contract_id": "padgesc01-2003-09-30"
+   }
+  },
+  {
+   "record_id": "parksch02-2003-10-27-amended-2003-11-11-9631dcd447b2",
+   "recorded_on": "2003-11-11",
+   "player_id": "parksch02",
+   "player": "Cherokee Parks",
+   "contract_id": "parksch02-2003-10-27",
+   "event": "amended",
+   "source": "career/Dwyane_Wade/2003-04/00_Team/Finances/minimum_salary_corrections.json",
+   "contract": {
+    "player": "Cherokee Parks",
+    "bbr_id": "parksch02",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 938679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-10-27",
+    "route": "minimum",
+    "notes": "Signed October 27, 2003: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 8 years of service is $938,679 (was $638,679); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).",
+    "sources": [
+     "04_Training_Camp/signing_corrections.json"
+    ],
+    "years_of_service": 8,
+    "cap_amount": {
+     "2003-04": 688679
+    },
+    "contract_id": "parksch02-2003-10-27"
+   }
+  },
+  {
+   "record_id": "kempsh01-2003-09-30-amended-2003-11-11-1085a9159b5f",
+   "recorded_on": "2003-11-11",
+   "player_id": "kempsh01",
+   "player": "Shawn Kemp",
+   "contract_id": "kempsh01-2003-09-30",
+   "event": "amended",
+   "source": "career/Dwyane_Wade/2003-04/00_Team/Finances/minimum_salary_corrections.json",
+   "contract": {
+    "player": "Shawn Kemp",
+    "bbr_id": "kempsh01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 1070000
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "years_of_service": 14,
+    "cap_amount": {
+     "2003-04": 688679
+    },
+    "contract_id": "kempsh01-2003-09-30"
+   }
+  },
+  {
+   "record_id": "wallajo01-2003-10-27-amended-2003-11-11-65526ffced3b",
+   "recorded_on": "2003-11-11",
+   "player_id": "wallajo01",
+   "player": "John Wallace",
+   "contract_id": "wallajo01-2003-10-27",
+   "event": "amended",
+   "source": "career/Dwyane_Wade/2003-04/00_Team/Finances/minimum_salary_corrections.json",
+   "contract": {
+    "player": "John Wallace",
+    "bbr_id": "wallajo01",
+    "status": "camp_contract",
+    "schedule": {
+     "2003-04": 813679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-10-27",
+    "route": "minimum",
+    "notes": "Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json). Amended 2003-11-11: the 1999 CBA minimum for 6 years of service is $813,679 (was $366,931); minimum_salary_corrections.json. Counts $688,679 in team salary (one-year minimum, 5+ years: the league reimburses the rest).",
+    "sources": [
+     "04_Training_Camp/signing_corrections.json"
+    ],
+    "years_of_service": 6,
+    "cap_amount": {
+     "2003-04": 688679
+    },
+    "contract_id": "wallajo01-2003-10-27"
+   }
+  },
+  {
+   "record_id": "clarkke01-2003-09-30-voided-2003-10-27",
+   "recorded_on": "2003-10-27",
+   "player_id": "clarkke01",
+   "player": "Keon Clark",
+   "contract_id": "clarkke01-2003-09-30",
+   "event": "voided",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "Keon Clark",
+    "bbr_id": "clarkke01",
+    "status": "voided",
+    "schedule": {
+     "2003-04": 638679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10. Voided 2003-10-27 (career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json); no dead money.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat",
+    "contract_id": "clarkke01-2003-09-30",
+    "ended_on": "2003-10-27"
+   }
+  },
+  {
+   "record_id": "jonesju01-2003-09-30-voided-2003-10-27",
+   "recorded_on": "2003-10-27",
+   "player_id": "jonesju01",
+   "player": "Jumaine Jones",
+   "contract_id": "jonesju01-2003-09-30",
+   "event": "voided",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "Jumaine Jones",
+    "bbr_id": "jonesju01",
+    "status": "voided",
+    "schedule": {
+     "2003-04": 638679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10. Voided 2003-10-27 (career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json); no dead money.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat",
+    "contract_id": "jonesju01-2003-09-30",
+    "ended_on": "2003-10-27"
+   }
+  },
+  {
+   "record_id": "evansre01-2003-09-30-voided-2003-10-27",
+   "recorded_on": "2003-10-27",
+   "player_id": "evansre01",
+   "player": "Reggie Evans",
+   "contract_id": "evansre01-2003-09-30",
+   "event": "voided",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "Reggie Evans",
+    "bbr_id": "evansre01",
+    "status": "voided",
+    "schedule": {
+     "2003-04": 563679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $563,679, guaranteed if still on the roster on 2004-01-10. Voided 2003-10-27 (career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json); no dead money.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat",
+    "contract_id": "evansre01-2003-09-30",
+    "ended_on": "2003-10-27"
+   }
+  },
+  {
+   "record_id": "anderch01-2003-09-30-voided-2003-10-27",
+   "recorded_on": "2003-10-27",
+   "player_id": "anderch01",
+   "player": "Chris Andersen",
+   "contract_id": "anderch01-2003-09-30",
+   "event": "voided",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "Chris Andersen",
+    "bbr_id": "anderch01",
+    "status": "voided",
+    "schedule": {
+     "2003-04": 638679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10. Voided 2003-10-27 (career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json); no dead money.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat",
+    "contract_id": "anderch01-2003-09-30",
+    "ended_on": "2003-10-27"
+   }
+  },
+  {
+   "record_id": "batismi01-2003-09-30-voided-2003-10-27",
+   "recorded_on": "2003-10-27",
+   "player_id": "batismi01",
+   "player": "Mike Batiste",
+   "contract_id": "batismi01-2003-09-30",
+   "event": "voided",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "Mike Batiste",
+    "bbr_id": "batismi01",
+    "status": "voided",
+    "schedule": {
+     "2003-04": 563679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $563,679, guaranteed if still on the roster on 2004-01-10. Voided 2003-10-27 (career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json); no dead money.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat",
+    "contract_id": "batismi01-2003-09-30",
+    "ended_on": "2003-10-27"
+   }
+  },
+  {
+   "record_id": "glovedi01-2003-09-30-released-2003-10-27",
+   "recorded_on": "2003-10-27",
+   "player_id": "glovedi01",
+   "player": "Dion Glover",
+   "contract_id": "glovedi01-2003-09-30",
+   "event": "released",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "Dion Glover",
+    "bbr_id": "glovedi01",
+    "status": "released",
+    "schedule": {
+     "2003-04": 638679
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $638,679, guaranteed if still on the roster on 2004-01-10. Released 2003-10-27 (career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json); no dead money.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat",
+    "contract_id": "glovedi01-2003-09-30",
+    "ended_on": "2003-10-27"
+   }
+  },
+  {
+   "record_id": "hillty01-2003-09-30-released-2003-10-27",
+   "recorded_on": "2003-10-27",
+   "player_id": "hillty01",
+   "player": "Tyrone Hill",
+   "contract_id": "hillty01-2003-09-30",
+   "event": "released",
+   "source": "career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json",
+   "contract": {
+    "player": "Tyrone Hill",
+    "bbr_id": "hillty01",
+    "status": "released",
+    "schedule": {
+     "2003-04": 1070000
+    },
+    "amount_kind": {
+     "2003-04": "contract_salary"
+    },
+    "guaranteed": {
+     "2003-04": 0
+    },
+    "guarantee_date": "2004-01-10",
+    "signed_date": "2003-09-30",
+    "route": "minimum",
+    "notes": "Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10. Released 2003-10-27 (career/Dwyane_Wade/2003-04/04_Training_Camp/signing_corrections.json); no dead money.",
+    "sources": [
+     "04_Training_Camp/camp_roster.json"
+    ],
+    "signing_team": "Miami Heat",
+    "contract_id": "hillty01-2003-09-30",
+    "ended_on": "2003-10-27"
+   }
+  }
+ ]
+}

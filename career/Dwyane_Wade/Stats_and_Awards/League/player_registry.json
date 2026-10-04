@@ -6245,17 +6245,17 @@
     },
     {
       "name": "Don Reid",
-      "position": "SF",
+      "position": "PF",
       "team_name": "Sacramento Kings",
       "team_code": "SAC",
       "conference": "West",
       "cohort": "2003_04_appearance",
-      "bbr_id": null,
+      "bbr_id": "reiddo01",
       "espn_id": null,
       "birth_date": null,
-      "registry_id": "donreid",
+      "registry_id": "reiddo01",
       "added_on": "2004-01-07",
-      "added_basis": "first closed 2003-04 appearance, Sacramento Kings, 2004-01-07-sacramento-kings-at-seattle-supersonics"
+      "added_basis": "first closed 2003-04 appearance, Sacramento Kings, 2004-01-07-sacramento-kings-at-seattle-supersonics; identity from the dated market move 2003-04-market-2004-01-07-ten_day-reiddo01"
     }
   ],
   "coverage": {

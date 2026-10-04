@@ -333,7 +333,6 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Ronald Dupree](../../../Players/duprero01.md) | N/A | CHI | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Theron Smith](../../../Players/smithth01.md) | N/A | MEM | NBA | SF | 2 | 0 | 3.2 | 0.5 | 1.0 | .500 | 0.0 | 0.0 | N/A | 0.5 | 1.0 | .500 | .500 | 0.0 | 0.0 | N/A | 0.0 | 0.5 | 0.5 | 0.5 | 0.5 | 0.0 | 0.5 | 0.5 | 1.0 | .500 |
 | [Tracy Murray](../../../Players/murratr01.md) | N/A | POR | NBA | SF | 2 | 0 | 2.9 | 0.5 | 1.5 | .333 | 0.5 | 0.5 | 1.000 | 0.0 | 1.0 | .000 | .500 | 0.0 | 0.0 | N/A | 0.0 | 0.5 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 | 0.5 | 1.5 | .500 |
-| [Don Reid](../../../Players/donreid.md) | N/A | SAC | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 
@@ -457,6 +456,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Vin Baker](../../../Players/bakervi01.md) | N/A | BOS | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [John Wallace](../../../Players/wallajo01.md) | 29 | MIA | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Udonis Haslem](../../../Players/hasleud01.md) | 23 | MIA | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [Don Reid](../../../Players/reiddo01.md) | N/A | SAC | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 

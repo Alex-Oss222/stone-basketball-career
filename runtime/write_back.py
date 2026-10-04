@@ -400,6 +400,16 @@ def registry_additions(root=ROOT, season=SEASON, now=None):
     conference = {t: c for c, ts in read_json(conf_path)["conferences"].items() for t in ts} if conf_path.is_file() else {}
     lookup = bbr_lookup(root, season)
     positions, births = {}, {}
+    # Players a club signed in the symmetric market or as a disturbed-club replacement are on no real roster:
+    # their identity is the dated move that put them there.
+    for rel, kind in (("League/league_moves.json", "moves"), ("League/club_replacements.json", "replacements")):
+        path = Path(root) / season_base(season) / rel
+        if path.is_file():
+            for e in read_json(path)["entries"]:
+                club = e.get("to") or e.get("club")
+                if club and e.get("bbr_id"):
+                    lookup.setdefault((club, _key(e["player"])), e["bbr_id"])
+                    positions.setdefault(e["bbr_id"], (e.get("role") or {}).get("position") or e.get("position"))
     try:
         for club, data in load_rosters(season, root).items():
             for p in data["players"]:

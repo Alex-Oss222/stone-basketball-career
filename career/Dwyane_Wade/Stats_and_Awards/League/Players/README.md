@@ -209,7 +209,7 @@ Card date: **2004-01-09**. 504 registry players, one Markdown card and one inter
 </details>
 
 <details>
-<summary>SF · Small forwards · 95 players</summary>
+<summary>SF · Small forwards · 94 players</summary>
 
 | Player | Club on card date | Age | Photo | Interactive |
 | --- | --- | --- | --- | --- |
@@ -234,7 +234,6 @@ Card date: **2004-01-09**. 504 registry players, one Markdown card and one inter
 | [Desmond Ferguson](fergude01.md) | Portland Trail Blazers | None | silhouette | [open](fergude01.html) |
 | [Desmond Mason](masonde01.md) | Milwaukee Bucks | 26 | sourced | [open](masonde01.html) |
 | [Devean George](georgde01.md) | Los Angeles Lakers | 26 | sourced | [open](georgde01.html) |
-| [Don Reid](donreid.md) | Sacramento Kings | None | silhouette | [open](donreid.html) |
 | [Donnell Harvey](harvedo01.md) | Orlando Magic | 23 | silhouette | [open](harvedo01.html) |
 | [Eddie Robinson](robined01.md) | Chicago Bulls | 27 | sourced | [open](robined01.html) |
 | [Eduardo Najera](najered01.md) | Dallas Mavericks | 27 | sourced | [open](najered01.html) |
@@ -321,7 +320,7 @@ Card date: **2004-01-09**. 504 registry players, one Markdown card and one inter
 </details>
 
 <details>
-<summary>PF · Power forwards · 102 players</summary>
+<summary>PF · Power forwards · 103 players</summary>
 
 | Player | Club on card date | Age | Photo | Interactive |
 | --- | --- | --- | --- | --- |
@@ -353,6 +352,7 @@ Card date: **2004-01-09**. 504 registry players, one Markdown card and one inter
 | [DeSagana Diop](diopde01.md) | Cleveland Cavaliers | 21 | sourced | [open](diopde01.html) |
 | [Desmond Penigar](penigde01.md) | Orlando Magic | None | silhouette | [open](penigde01.html) |
 | [Dirk Nowitzki](nowitdi01.md) | Dallas Mavericks | 25 | sourced | [open](nowitdi01.html) |
+| [Don Reid](reiddo01.md) | Sacramento Kings | None | silhouette | [open](reiddo01.html) |
 | [Donyell Marshall](marshdo01.md) | Chicago Bulls | None | silhouette | [open](marshdo01.html) |
 | [Drew Gooden](goodedr01.md) | Orlando Magic | 22 | sourced | [open](goodedr01.html) |
 | [Eddie Griffin](griffed01.md) | Houston Rockets | 21 | silhouette | [open](griffed01.html) |

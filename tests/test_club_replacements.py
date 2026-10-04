@@ -20,6 +20,10 @@ class ReplacementTests(unittest.TestCase):
         for folder in ("library", "career", "foundation"):
             shutil.copytree(ROOT / folder, cls.root / folder, ignore=shutil.ignore_patterns("*.html", "Players"))
         holdings = json.loads((cls.root / holdings_path("2003-04")).read_text())
+        holdings["entries"] = [e for e in holdings["entries"] if e["from"] < R.REPLACEMENT_FROM]   # live acquisitions aside
+        live = cls.root / R.path_for("2003-04")
+        if live.exists():
+            live.unlink()
         holdings["entries"].append({"player": "Clifford Robinson", "bbr_id": "robincl02", "from": DAY, "until": None,
                                     "basis": "test fixture: acquired by trade"})
         (cls.root / holdings_path("2003-04")).write_text(json.dumps(holdings, indent=1))

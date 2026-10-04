@@ -2,9 +2,9 @@
 
 # Contract | Don Reid
 
-Known through: 2004-01-09. [Open interactive contract](donreid.html#contract) · [Contract history](donreid.html#contract-history)
+Known through: 2004-01-09. [Open interactive contract](reiddo01.html#contract) · [Contract history](reiddo01.html#contract-history)
 
-Don Reid: unsigned free agent. Evidence cutoff: 2004-01-09.
+Don Reid: unsigned free agent (researched, 2003-07-01). Evidence cutoff: 2004-01-09.
 
 ## Current contract
 
@@ -18,7 +18,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Don Reid |
 | Club / rights baseline | Free agent |
-| Control status | unsigned free agent |
+| Control status | unsigned free agent (researched, 2003-07-01) |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -84,13 +84,13 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | --- | --- |
 | Assigned club | Detroit Pistons |
 | Signing club | Not recorded |
-| Contract ID | donreid-existing-8351c4e4c545 |
+| Contract ID | reiddo01-existing-8351c4e4c545 |
 | Signing route / evidence basis | published_free_agent_list |
 | Signing date | Not recorded |
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | unsigned free agent |
+| Status | unsigned free agent (researched, 2003-07-01) |
 | Contract wording | Not recorded |
 
 ### Salary by season

@@ -333,7 +333,6 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Ronald Dupree](../../../Players/duprero01.md) | N/A | CHI | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Theron Smith](../../../Players/smithth01.md) | N/A | MEM | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Tracy Murray](../../../Players/murratr01.md) | N/A | POR | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [Don Reid](../../../Players/donreid.md) | N/A | SAC | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 
@@ -457,6 +456,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Vin Baker](../../../Players/bakervi01.md) | N/A | BOS | NBA | PF | 1 | 1 | 28.3 | 2.0 | 7.0 | .286 | 0.0 | 1.0 | .000 | 2.0 | 6.0 | .333 | .286 | 0.0 | 0.0 | N/A | 1.0 | 4.0 | 5.0 | 3.0 | 1.0 | 2.0 | 3.0 | 4.0 | 4.0 | .286 |
 | [John Wallace](../../../Players/wallajo01.md) | 29 | MIA | NBA | PF | 3 | 0 | 9.2 | 0.7 | 2.3 | .286 | 0.0 | 0.3 | .000 | 0.7 | 2.0 | .333 | .286 | 1.0 | 1.0 | 1.000 | 0.3 | 3.7 | 4.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.3 | 2.3 | .421 |
 | [Udonis Haslem](../../../Players/hasleud01.md) | 23 | MIA | NBA | PF | 2 | 0 | 3.4 | 0.0 | 0.5 | .000 | 0.0 | 0.0 | N/A | 0.0 | 0.5 | .000 | .000 | 0.0 | 0.0 | N/A | 0.0 | 0.5 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | .000 |
+| [Don Reid](../../../Players/reiddo01.md) | N/A | SAC | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 

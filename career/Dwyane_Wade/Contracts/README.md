@@ -144,7 +144,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Dikembe Mutombo](players/mutomdi01.md) | New York Knicks | under contract | Dikembe Mutombo · 2003-10-09 | 1 |
 | [Dion Glover](players/glovedi01.md) | Atlanta Hawks | released | No verified current agreement | 2 |
 | [Dirk Nowitzki](players/nowitdi01.md) | Dallas Mavericks | under contract | Dirk Nowitzki · 2001-10-22 | 1 |
-| [Don Reid](players/donreid.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
+| [Don Reid](players/reiddo01.md) | Free agent | unsigned free agent (researched, 2003-07-01) | No verified current agreement | 1 |
 | [Donnell Harvey](players/harvedo01.md) | Orlando Magic | under contract | Donnell Harvey · 2003-09-23 | 2 |
 | [Donyell Marshall](players/marshdo01.md) | Chicago Bulls | under contract | Donyell Marshall · 2002-08-16 | 1 |
 | [Doug Christie](players/chrisdo01.md) | Sacramento Kings | under contract | Doug Christie · existing contract; signing date not recorded | 1 |

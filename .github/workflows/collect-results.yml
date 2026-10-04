@@ -33,10 +33,19 @@ jobs:
         env:
           COLLECT_WAIT: "1200"
         run: python scripts/collect_results.py
-      - name: Refresh live player pages from canonical evidence
-        run: python scripts/update_player_reports.py
-      - name: Commit result files
+      - name: Write results into the career record and refresh live pages
         run: |
+          python scripts/write_back_results.py --write
+          python scripts/update_player_reports.py
+      - name: Commit result files only when the repository validates
+        run: |
+          # A half-written commit (results without their write-back) fails Railway's build and blocks the next
+          # deploy; if the record does not validate, commit nothing: the engine keeps every result and the next
+          # career run collects it.
+          if ! python scripts/validate_repository.py; then
+            echo "repository does not validate with these results; nothing committed"
+            exit 0
+          fi
           git add -A career
           if git diff --cached --quiet; then
             echo "no new results"

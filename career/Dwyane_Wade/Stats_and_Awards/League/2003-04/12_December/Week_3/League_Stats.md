@@ -333,7 +333,6 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Ronald Dupree](../../../Players/duprero01.md) | N/A | CHI | NBA | SF | 2 | 1 | 24.4 | 2.5 | 7.0 | .357 | 0.0 | 0.5 | .000 | 2.5 | 6.5 | .385 | .357 | 2.0 | 2.5 | .800 | 1.0 | 2.0 | 3.0 | 1.0 | 2.5 | 1.0 | 1.0 | 3.0 | 7.0 | .432 |
 | [Theron Smith](../../../Players/smithth01.md) | N/A | MEM | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Tracy Murray](../../../Players/murratr01.md) | N/A | POR | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| [Don Reid](../../../Players/donreid.md) | N/A | SAC | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 
@@ -457,6 +456,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Vin Baker](../../../Players/bakervi01.md) | N/A | BOS | NBA | PF | 1 | 0 | 28.3 | 4.0 | 4.0 | 1.000 | 0.0 | 0.0 | N/A | 4.0 | 4.0 | 1.000 | 1.000 | 0.0 | 0.0 | N/A | 0.0 | 4.0 | 4.0 | 2.0 | 0.0 | 0.0 | 2.0 | 5.0 | 8.0 | 1.000 |
 | [John Wallace](../../../Players/wallajo01.md) | 29 | MIA | NBA | PF | 3 | 0 | 8.2 | 1.0 | 2.0 | .500 | 0.3 | 0.7 | .500 | 0.7 | 1.3 | .500 | .583 | 1.0 | 1.0 | 1.000 | 0.3 | 0.0 | 0.3 | 0.7 | 0.0 | 0.0 | 0.3 | 0.3 | 3.3 | .683 |
 | [Udonis Haslem](../../../Players/hasleud01.md) | 23 | MIA | NBA | PF | 1 | 0 | 6.4 | 0.0 | 3.0 | .000 | 0.0 | 0.0 | N/A | 0.0 | 3.0 | .000 | .000 | 0.0 | 0.0 | N/A | 2.0 | 0.0 | 2.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | .000 |
+| [Don Reid](../../../Players/reiddo01.md) | N/A | SAC | NBA | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 

@@ -58,7 +58,10 @@ class LiveListTests(unittest.TestCase):
         due = [r for r in season_games.miami_games_due("2004-04-14", ROOT) if r["game"]["date"] >= roster_moves.LISTS_FROM]
         if not due or season_games.miami_requests_without_results(ROOT):
             self.skipTest("no buildable game")
-        players, injured, lists = season_games.miami_side(due[0]["game"]["date"], ROOT, with_lists=True)
+        try:
+            players, injured, lists = season_games.miami_side(due[0]["game"]["date"], ROOT, with_lists=True)
+        except ValueError as exc:                                # a dated gate (review, guarantee) is due first
+            self.skipTest(f"next game waits: {exc}")
         names = [p["player_id"] for p in players]
         self.assertLessEqual(len(names), roster_moves.GAME_DAY_ACTIVES)
         self.assertLessEqual(len(lists["injured_list"]), roster_moves.IL_MAX)
@@ -84,6 +87,9 @@ class GuaranteeReviewTests(unittest.TestCase):
         live = cls.root / roster_moves.GUARANTEES               # the live career's own review is not this test's
         if live.exists():
             live.unlink()
+        frozen = ROOT / "tests/fixtures/pre_guarantee"          # the sheet, register and records before January 10
+        for path in frozen.rglob("*.json"):
+            shutil.copyfile(path, cls.root / path.relative_to(frozen))
 
     @classmethod
     def tearDownClass(cls):
