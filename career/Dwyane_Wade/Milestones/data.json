@@ -10,7 +10,7 @@
     "age": 19,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2003-12-03-miami-heat-at-detroit-pistons",
+  "current_event": "2003-12-05-philadelphia-76ers-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2003-12-03-miami-heat-at-detroit-pistons"
+              "2003-12-05-philadelphia-76ers-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -66,7 +66,7 @@
             [
               "2003-12-05",
               "Current checkpoint",
-              "2003-12-03-miami-heat-at-detroit-pistons",
+              "2003-12-05-philadelphia-76ers-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
