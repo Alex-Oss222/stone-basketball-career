@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 23 · **Height:** 6-7 · **Weight:** 227 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-02-12 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-02-13 
 
 **Contract/control:** Team option exercised on June 30, 2003 (front office rule; see June_30/front_office_decisions.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Reserve outside the planned rotation (staff rotation dated 2004-01-30, [record](../Depth_Chart/Reviews/2004-01-30/rotation.json)). On the injured list since 2004-02-07 (reserve: not among the twelve the staff dresses (2003-04 clubs listed healthy reserves on the injured list)).
+**Role:** Reserve outside the planned rotation (staff rotation dated 2004-02-13, [record](../Depth_Chart/Reviews/2004-02-13/rotation.json)). On the injured list since 2004-02-07 (reserve: not among the twelve the staff dresses (2003-04 clubs listed healthy reserves on the injured list)).
 
 **Offense:** In 2002-03: 4.8 points and 0.9 assists per game; 51.2% true shooting at 18.4% usage.
 
@@ -63,6 +63,7 @@ Contract pages follow the current career date; this personnel assessment retains
 | 2004-01-02 | Staff rotation of 2004-01-02: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2004-01-02/rotation.json) |
 | 2004-01-16 | Staff rotation of 2004-01-16: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2004-01-16/rotation.json) |
 | 2004-01-30 | Staff rotation of 2004-01-30: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2004-01-30/rotation.json) |
+| 2004-02-13 | Staff rotation of 2004-02-13: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2004-02-13/rotation.json) |
 
 ## Sources and uncertainty
 
@@ -70,7 +71,7 @@ Contract pages follow the current career date; this personnel assessment retains
   - [Miami roster/control register](../Roster/roster.json)
   - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
   - https://www.basketball-reference.com/players/l/lamplse01.html
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-01-30.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-02-13.
 
 <!-- yearly-statistics:start -->
 
@@ -78,7 +79,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 13 closed Miami game(s) through 2004-02-12.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 13 closed Miami game(s) through 2004-02-13.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |

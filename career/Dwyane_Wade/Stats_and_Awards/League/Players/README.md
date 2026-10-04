@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-12**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-13**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -67,7 +67,7 @@ Card date: **2004-02-12**. 504 registry players, one Markdown card and one inter
 | [Kirk Hinrich](hinriki01.md) | Chicago Bulls | 23 | sourced | [open](hinriki01.html) |
 | [Larry Hughes](hughela01.md) | Washington Wizards | 25 | sourced | [open](hughela01.html) |
 | [Lindsey Hunter](hunteli01.md) | Detroit Pistons | 33 | sourced | [open](hunteli01.html) |
-| [Luke Ridnour](ridnolu01.md) | Seattle SuperSonics | 22 | sourced | [open](ridnolu01.html) |
+| [Luke Ridnour](ridnolu01.md) | Seattle SuperSonics | 23 | sourced | [open](ridnolu01.html) |
 | [Marcus Banks](banksma01.md) | Boston Celtics | 22 | sourced | [open](banksma01.html) |
 | [Mark Jackson](jacksma01.md) | Houston Rockets | 38 | sourced | [open](jacksma01.html) |
 | [Mateen Cleaves](cleavma01.md) | Cleveland Cavaliers | None | silhouette | [open](cleavma01.html) |
@@ -157,7 +157,7 @@ Card date: **2004-02-12**. 504 registry players, one Markdown card and one inter
 | [Jeff Trepagnier](trepaje01.md) | Denver Nuggets | 24 | silhouette | [open](trepaje01.html) |
 | [Jermaine Jackson](jacksje01.md) | Atlanta Hawks | 27 | sourced | [open](jacksje01.html) |
 | [Jerry Stackhouse](stackje01.md) | Washington Wizards | 29 | sourced | [open](stackje01.html) |
-| [Jeryl Sasser](sasseje01.md) | Orlando Magic | 24 | silhouette | [open](sasseje01.html) |
+| [Jeryl Sasser](sasseje01.md) | Orlando Magic | 25 | silhouette | [open](sasseje01.html) |
 | [Joe Johnson](johnsjo02.md) | Phoenix Suns | 22 | sourced | [open](johnsjo02.html) |
 | [Jon Barry](barryjo01.md) | Denver Nuggets | 34 | sourced | [open](barryjo01.html) |
 | [Joseph Forte](fortejo01.md) | Seattle SuperSonics | 22 | silhouette | [open](fortejo01.html) |
@@ -224,7 +224,7 @@ Card date: **2004-02-12**. 504 registry players, one Markdown card and one inter
 | [Carmelo Anthony](anthoca01.md) | Denver Nuggets | 19 | sourced | [open](anthoca01.html) |
 | [Caron Butler](butleca01.md) | Miami Heat | 23 | sourced | [open](butleca01.html) |
 | [Casey Jacobsen](jacobca01.md) | Phoenix Suns | 22 | silhouette | [open](jacobca01.html) |
-| [Chris Jefferies](jeffech01.md) | Toronto Raptors | 23 | silhouette | [open](jeffech01.html) |
+| [Chris Jefferies](jeffech01.md) | Toronto Raptors | 24 | silhouette | [open](jeffech01.html) |
 | [Chris Owens](owensch01.md) | Memphis Grizzlies | 24 | sourced | [open](owensch01.html) |
 | [Corliss Williamson](willico02.md) | Detroit Pistons | 30 | sourced | [open](willico02.html) |
 | [Dan Langhi](langhda01.md) | San Antonio Spurs | None | silhouette | [open](langhda01.html) |
