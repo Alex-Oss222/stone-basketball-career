@@ -209,7 +209,8 @@ def report_errors(root, player, team):
         if page.name=="League_Awards.md" and page.parent.name!="2003-04":
             shortlists=[rows for header,rows in tables if header[:2]==["Conference","Rank slot"]]
             expected_count=1 if page.parent.name.startswith("Week_") else 2
-            require(errors,len(shortlists)==expected_count,f"{label}: conference award shortlists missing")
+            # One table per award, or one per closed award period when a page files several (runtime/award_decisions.py).
+            require(errors,len(shortlists)>=expected_count,f"{label}: conference award shortlists missing")
             for rows in shortlists:
                 require(errors,Counter((r[0],r[1]) for r in rows)==Counter((conference,str(rank)) for conference in ("East","West") for rank in (1,2,3)),f"{label}: each conference needs three shortlist slots")
             require(errors,not any("First-place votes" in header or "Points" in header for header,_ in tables),f"{label}: weekly/monthly shortlists must not invent vote totals")
@@ -646,6 +647,9 @@ def validate():
 
     from runtime.schedule import schedule_errors
     errors.extend(schedule_errors(ROOT))
+
+    from runtime.award_decisions import award_errors
+    errors.extend(award_errors(ROOT))
 
     from runtime.game_requests import find_requests, request_errors
     errors.extend(request_errors(ROOT))

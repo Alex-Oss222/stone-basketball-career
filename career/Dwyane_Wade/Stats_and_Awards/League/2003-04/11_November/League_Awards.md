@@ -40,10 +40,10 @@ No award closed. When settled, record the exact period, announcement date and li
 
 | Period | Calendar dates | Closed decisions | Status |
 | --- | --- | ---: | --- |
-| [Week 1](Week_1/League_Awards.md) | November 1-7, 2003 | 0 | Not started |
-| [Week 2](Week_2/League_Awards.md) | November 8-14, 2003 | 0 | Not started |
-| [Week 3](Week_3/League_Awards.md) | November 15-21, 2003 | 0 | Not started |
-| [Week 4](Week_4/League_Awards.md) | November 22-30, 2003 | 0 | Not started |
+| [Week 1](Week_1/League_Awards.md) | November 1-7, 2003 | 2 | Decided |
+| [Week 2](Week_2/League_Awards.md) | November 8-14, 2003 | 2 | Decided |
+| [Week 3](Week_3/League_Awards.md) | November 15-21, 2003 | 2 | Decided |
+| [Week 4](Week_4/League_Awards.md) | November 22-30, 2003 | 4 | Decided |
 
 [Awards procedure and research](../../README.md) · [Player evidence for this calendar period](League_Stats.md)
 

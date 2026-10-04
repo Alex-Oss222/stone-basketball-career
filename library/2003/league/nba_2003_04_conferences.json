@@ -1,0 +1,41 @@
+{
+ "schema_version": 1,
+ "season": "2003-04",
+ "kind": "conference_alignment",
+ "note": "League alignment for 2003-04, fixed before the season: 29 clubs, New Orleans in the Eastern Conference (moved West in 2004-05). Structural league fact, not a result.",
+ "conferences": {
+  "East": [
+   "Atlanta Hawks",
+   "Boston Celtics",
+   "Chicago Bulls",
+   "Cleveland Cavaliers",
+   "Detroit Pistons",
+   "Indiana Pacers",
+   "Miami Heat",
+   "Milwaukee Bucks",
+   "New Jersey Nets",
+   "New Orleans Hornets",
+   "New York Knicks",
+   "Orlando Magic",
+   "Philadelphia 76ers",
+   "Toronto Raptors",
+   "Washington Wizards"
+  ],
+  "West": [
+   "Dallas Mavericks",
+   "Denver Nuggets",
+   "Golden State Warriors",
+   "Houston Rockets",
+   "Los Angeles Clippers",
+   "Los Angeles Lakers",
+   "Memphis Grizzlies",
+   "Minnesota Timberwolves",
+   "Phoenix Suns",
+   "Portland Trail Blazers",
+   "Sacramento Kings",
+   "San Antonio Spurs",
+   "Seattle SuperSonics",
+   "Utah Jazz"
+  ]
+ }
+}

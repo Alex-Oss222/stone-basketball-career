@@ -1,0 +1,529 @@
+{
+ "schema_version": 1,
+ "season": "2003-04",
+ "kind": "award_decisions",
+ "rule": "Each award is split East and West (from 2001-02, `nba_awards_catalog.json`). An award closes on its\nannouncement date and only from closed regular-season results dated inside its period\n(`write_back.closed_results`), so no later game, real winner or historical vote enters it.\n\nPeriods (judgement, from the NBA's calendar of the era):\n- Player of the Week: Monday to Sunday (the opening week runs from opening night, October 28), announced\n  the Monday after; the final week ends on the last regular-season day.\n- Player and Rookie of the Month: calendar months, October folded into November because the season opened\n  October 28; announced two days after the month ends. The exact announcement day is an assumption.\n\nSelection: the league office named the winners without a published ballot, so the branch ranks the\nevidence. Each game is scored with Hollinger's Game Score (PTS + 0.4 FGM - 0.7 FGA - 0.4 missed FT\n+ 0.7 ORB + 0.3 DRB + STL + 0.7 AST + 0.7 BLK - 0.4 PF - TOV), and winning counts:\n- Player of the Week: at least two games; total Game Score + 3 per club win in his games.\n- Player of the Month: at least 60% of his club's games in the period; Game Score per game + 12 x his club's\n  win share in his games.\n- Rookie of the Month: first-season players (the registry's 2003 draft class and sourced identities with no earlier\n  NBA season); at least\n  half his club's games; Game Score per game + 4 x win share.\nThe highest score wins; the next two are the published shortlist. Decisions are appended once to\n`award_decisions.json` and never recomputed. A Wade win is added to his `awards.json` with the page as its\nsource. Rules apply to every player alike: no seniority, reputation or market bonus.",
+ "decisions": [
+  {
+   "id": "2003-04-player_of_week-2003-10-28-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2003-10-28",
+   "period_end": "2003-11-02",
+   "announced_on": "2003-11-03",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/11_November/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Richard Jefferson",
+     "team": "New Jersey Nets",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 23.7,
+     "reb": 7.0,
+     "ast": 3.7,
+     "game_score": 20.7,
+     "score": 71.1,
+     "rank": 1
+    },
+    {
+     "player": "Baron Davis",
+     "team": "New Orleans Hornets",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 16.3,
+     "reb": 5.0,
+     "ast": 9.7,
+     "game_score": 16.83,
+     "score": 59.5,
+     "rank": 2
+    },
+    {
+     "player": "Kenyon Martin",
+     "team": "New Jersey Nets",
+     "games": 2,
+     "wins": 2,
+     "losses": 0,
+     "pts": 24.0,
+     "reb": 9.5,
+     "ast": 3.5,
+     "game_score": 24.4,
+     "score": 54.8,
+     "rank": 3
+    }
+   ],
+   "winner": "Richard Jefferson"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-10-28-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2003-10-28",
+   "period_end": "2003-11-02",
+   "announced_on": "2003-11-03",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/11_November/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Gary Payton",
+     "team": "Los Angeles Lakers",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 22.3,
+     "reb": 2.7,
+     "ast": 6.7,
+     "game_score": 20.03,
+     "score": 69.1,
+     "rank": 1
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 19.0,
+     "reb": 11.3,
+     "ast": 4.7,
+     "game_score": 20.27,
+     "score": 66.8,
+     "rank": 2
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 3,
+     "wins": 1,
+     "losses": 2,
+     "pts": 18.7,
+     "reb": 13.0,
+     "ast": 3.0,
+     "game_score": 18.2,
+     "score": 57.6,
+     "rank": 3
+    }
+   ],
+   "winner": "Gary Payton"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-11-03-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2003-11-03",
+   "period_end": "2003-11-09",
+   "announced_on": "2003-11-10",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/11_November/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Keith Van Horn",
+     "team": "New York Knicks",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 20.8,
+     "reb": 8.8,
+     "ast": 4.0,
+     "game_score": 19.3,
+     "score": 86.2,
+     "rank": 1
+    },
+    {
+     "player": "Jermaine O'Neal",
+     "team": "Indiana Pacers",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 20.5,
+     "reb": 9.5,
+     "ast": 1.5,
+     "game_score": 16.93,
+     "score": 79.7,
+     "rank": 2
+    },
+    {
+     "player": "Jamal Crawford",
+     "team": "Chicago Bulls",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 19.8,
+     "reb": 3.0,
+     "ast": 9.0,
+     "game_score": 17.4,
+     "score": 78.6,
+     "rank": 3
+    }
+   ],
+   "winner": "Keith Van Horn"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-11-03-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2003-11-03",
+   "period_end": "2003-11-09",
+   "announced_on": "2003-11-10",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/11_November/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Tim Duncan",
+     "team": "San Antonio Spurs",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 24.2,
+     "reb": 11.0,
+     "ast": 4.2,
+     "game_score": 22.5,
+     "score": 102.0,
+     "rank": 1
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 22.2,
+     "reb": 12.0,
+     "ast": 5.5,
+     "game_score": 22.57,
+     "score": 99.3,
+     "rank": 2
+    },
+    {
+     "player": "Zach Randolph",
+     "team": "Portland Trail Blazers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 23.0,
+     "reb": 13.0,
+     "ast": 3.2,
+     "game_score": 18.98,
+     "score": 81.9,
+     "rank": 3
+    }
+   ],
+   "winner": "Tim Duncan"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-11-10-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2003-11-10",
+   "period_end": "2003-11-16",
+   "announced_on": "2003-11-17",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/11_November/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Tracy McGrady",
+     "team": "Orlando Magic",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 32.0,
+     "reb": 7.3,
+     "ast": 7.3,
+     "game_score": 28.43,
+     "score": 91.3,
+     "rank": 1
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 30.5,
+     "reb": 6.5,
+     "ast": 5.0,
+     "game_score": 19.3,
+     "score": 83.2,
+     "rank": 2
+    },
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 26.2,
+     "reb": 6.0,
+     "ast": 5.0,
+     "game_score": 19.0,
+     "score": 82.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Tracy McGrady"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-11-10-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2003-11-10",
+   "period_end": "2003-11-16",
+   "announced_on": "2003-11-17",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/11_November/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Shaquille O'Neal",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 21.5,
+     "reb": 10.2,
+     "ast": 2.5,
+     "game_score": 17.57,
+     "score": 82.3,
+     "rank": 1
+    },
+    {
+     "player": "Gary Payton",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 19.8,
+     "reb": 3.5,
+     "ast": 6.2,
+     "game_score": 16.88,
+     "score": 79.5,
+     "rank": 2
+    },
+    {
+     "player": "Mike Bibby",
+     "team": "Sacramento Kings",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 21.5,
+     "reb": 4.5,
+     "ast": 6.2,
+     "game_score": 18.1,
+     "score": 78.4,
+     "rank": 3
+    }
+   ],
+   "winner": "Shaquille O'Neal"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-11-17-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2003-11-17",
+   "period_end": "2003-11-23",
+   "announced_on": "2003-11-24",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/11_November/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Shareef Abdur-Rahim",
+     "team": "Atlanta Hawks",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 22.5,
+     "reb": 11.0,
+     "ast": 3.8,
+     "game_score": 19.73,
+     "score": 84.9,
+     "rank": 1
+    },
+    {
+     "player": "Michael Redd",
+     "team": "Milwaukee Bucks",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 22.8,
+     "reb": 10.5,
+     "ast": 3.8,
+     "game_score": 19.45,
+     "score": 83.8,
+     "rank": 2
+    },
+    {
+     "player": "Tracy McGrady",
+     "team": "Orlando Magic",
+     "games": 3,
+     "wins": 1,
+     "losses": 2,
+     "pts": 30.0,
+     "reb": 6.3,
+     "ast": 6.0,
+     "game_score": 26.03,
+     "score": 81.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Shareef Abdur-Rahim"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-11-17-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2003-11-17",
+   "period_end": "2003-11-23",
+   "announced_on": "2003-11-24",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/11_November/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Ray Allen",
+     "team": "Seattle SuperSonics",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 32.7,
+     "reb": 4.7,
+     "ast": 5.0,
+     "game_score": 26.23,
+     "score": 84.7,
+     "rank": 1
+    },
+    {
+     "player": "Shaquille O'Neal",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 22.8,
+     "reb": 12.5,
+     "ast": 3.0,
+     "game_score": 19.38,
+     "score": 83.5,
+     "rank": 2
+    },
+    {
+     "player": "Carmelo Anthony",
+     "team": "Denver Nuggets",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 21.5,
+     "reb": 9.5,
+     "ast": 3.2,
+     "game_score": 16.55,
+     "score": 72.2,
+     "rank": 3
+    }
+   ],
+   "winner": "Ray Allen"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-11-24-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2003-11-24",
+   "period_end": "2003-11-30",
+   "announced_on": "2003-12-01",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/11_November/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 22.2,
+     "reb": 7.8,
+     "ast": 5.8,
+     "game_score": 17.4,
+     "score": 75.6,
+     "rank": 1
+    },
+    {
+     "player": "Ben Wallace",
+     "team": "Detroit Pistons",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 12.8,
+     "reb": 14.2,
+     "ast": 2.2,
+     "game_score": 16.65,
+     "score": 75.6,
+     "rank": 2
+    },
+    {
+     "player": "Jeff Foster",
+     "team": "Indiana Pacers",
+     "games": 5,
+     "wins": 4,
+     "losses": 1,
+     "pts": 9.8,
+     "reb": 8.2,
+     "ast": 1.6,
+     "game_score": 12.22,
+     "score": 73.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Paul Pierce",
+   "tie_draw": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Award_Draws/2003-04-player_of_week-2003-11-24-east.decision.result.json"
+  },
+  {
+   "id": "2003-04-player_of_week-2003-11-24-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2003-11-24",
+   "period_end": "2003-11-30",
+   "announced_on": "2003-12-01",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/11_November/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Sam Cassell",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 26.8,
+     "reb": 2.2,
+     "ast": 7.0,
+     "game_score": 21.83,
+     "score": 99.3,
+     "rank": 1
+    },
+    {
+     "player": "Latrell Sprewell",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 22.8,
+     "reb": 5.0,
+     "ast": 4.8,
+     "game_score": 19.38,
+     "score": 89.5,
+     "rank": 2
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 18.5,
+     "reb": 10.8,
+     "ast": 5.2,
+     "game_score": 17.0,
+     "score": 80.0,
+     "rank": 3
+    }
+   ],
+   "winner": "Sam Cassell"
+  }
+ ]
+}

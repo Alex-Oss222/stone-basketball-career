@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-04-player_of_week-2003-11-24-east",
+ "date": "2003-12-01",
+ "question": "Who is the East Player of the Week for 2003-11-24 to 2003-11-30: Ben Wallace or Paul Pierce?",
+ "decider": "NBA league office (engine draw between equal evidence)",
+ "options": {
+  "Ben Wallace": 0.5,
+  "Paul Pierce": 0.5
+ },
+ "basis": "Equal award scores at two decimals under runtime/award_decisions.py; no name, reputation or market tiebreak."
+}

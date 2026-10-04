@@ -138,7 +138,7 @@ League season/month/week tables share the full per-game column order and red-and
 
 Weekly and monthly NBA awards remain conference-specific. Their pages keep a visible top-three shortlist but do not pretend the NBA published vote totals where it did not. Season individual awards publish the top three vote-getters. The No. 1 row is labeled WINNER only after the vote closes.
 
-Weekly/monthly shortlist tables use evidence and result columns, not first-place-vote or points columns. Season voting records retain the electorate, scoring rule, close date and complete tally reference. Keep all 407 registry entries accessible by position; a source club or draft-rights label does not establish current active status.
+Weekly/monthly shortlist tables use evidence and result columns, not first-place-vote or points columns. Player of the Week (Monday to Sunday, announced the Monday after) and Player and Rookie of the Month (October folded into November, announced two days after the month) close on their announcement dates with `python scripts/decide_awards.py --write` (`runtime/award_decisions.py`): ranked by Game Score and club wins from closed results only, the same rule for every player, recorded once in `League/2003-04/award_decisions.json`; an exact tie at the top is an engine decision draw (`Award_Draws/`, `scripts/draw_decisions.py`); a Wade win is added to `awards.json`. Validation refuses an award announced on or before the clock and not decided. Season voting records retain the electorate, scoring rule, close date and complete tally reference. Keep all 407 registry entries accessible by position; a source club or draft-rights label does not establish current active status.
 
 ## Team stats
 
