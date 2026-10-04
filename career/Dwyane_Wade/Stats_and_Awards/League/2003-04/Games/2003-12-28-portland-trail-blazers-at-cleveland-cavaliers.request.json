@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-28-portland-trail-blazers-at-cleveland-cavaliers",
+ "game_date": "2003-12-28",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ }
+}

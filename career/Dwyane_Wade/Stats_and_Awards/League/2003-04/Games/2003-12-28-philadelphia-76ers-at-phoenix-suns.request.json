@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-28-philadelphia-76ers-at-phoenix-suns",
+ "game_date": "2003-12-28",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Philadelphia 76ers",
+  "rotation": "real"
+ }
+}

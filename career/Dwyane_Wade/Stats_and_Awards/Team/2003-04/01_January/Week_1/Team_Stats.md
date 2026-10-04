@@ -4,7 +4,7 @@
 
 NBA regular season · January 1-7, 2004
 
-As of December 27, 2003: not started. The 16-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 16-player active roster.
+As of December 28, 2003: not started. The 16-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 16-player active roster.
 
 ## Team record
 
