@@ -2,9 +2,9 @@
 
 # Contract | Kevin Ollie
 
-Known through: 2003-11-28. [Open interactive contract](ollieke01.html#contract) · [Contract history](ollieke01.html#contract-history)
+Known through: 2003-11-29. [Open interactive contract](ollieke01.html#contract) · [Contract history](ollieke01.html#contract-history)
 
-Kevin Ollie: free agent expiring. Evidence cutoff: 2003-11-28.
+Kevin Ollie: free agent expiring. Evidence cutoff: 2003-11-29.
 
 ## Current contract
 

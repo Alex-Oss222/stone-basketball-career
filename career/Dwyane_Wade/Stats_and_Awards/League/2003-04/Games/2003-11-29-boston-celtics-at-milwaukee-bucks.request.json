@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-29-boston-celtics-at-milwaukee-bucks",
+ "game_date": "2003-11-29",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ }
+}

@@ -2,9 +2,9 @@
 
 # Contract | Scottie Pippen
 
-Known through: 2003-11-28. [Open interactive contract](pippesc01.html#contract) · [Contract history](pippesc01.html#contract-history)
+Known through: 2003-11-29. [Open interactive contract](pippesc01.html#contract) · [Contract history](pippesc01.html#contract-history)
 
-Scottie Pippen: free agent expiring. Evidence cutoff: 2003-11-28.
+Scottie Pippen: free agent expiring. Evidence cutoff: 2003-11-29.
 
 ## Current contract
 

@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-29-detroit-pistons-at-washington-wizards",
+ "game_date": "2003-11-29",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Detroit Pistons",
+  "rotation": "real"
+ }
+}

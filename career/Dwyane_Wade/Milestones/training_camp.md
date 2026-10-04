@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2003-11-28 · Miami Heat · active
+Career date: 2003-11-29 · Miami Heat · active
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 

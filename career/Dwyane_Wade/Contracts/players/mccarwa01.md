@@ -2,9 +2,9 @@
 
 # Contract | Walter McCarty
 
-Known through: 2003-11-28. [Open interactive contract](mccarwa01.html#contract) · [Contract history](mccarwa01.html#contract-history)
+Known through: 2003-11-29. [Open interactive contract](mccarwa01.html#contract) · [Contract history](mccarwa01.html#contract-history)
 
-Walter McCarty: free agent expiring. Evidence cutoff: 2003-11-28.
+Walter McCarty: free agent expiring. Evidence cutoff: 2003-11-29.
 
 ## Current contract
 

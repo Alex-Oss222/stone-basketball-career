@@ -2,9 +2,9 @@
 
 # Contract | Michael Bradley
 
-Known through: 2003-11-28. [Open interactive contract](bradlmi01.html#contract) · [Contract history](bradlmi01.html#contract-history)
+Known through: 2003-11-29. [Open interactive contract](bradlmi01.html#contract) · [Contract history](bradlmi01.html#contract-history)
 
-Michael Bradley: under rookie contract. Evidence cutoff: 2003-11-28.
+Michael Bradley: under rookie contract. Evidence cutoff: 2003-11-29.
 
 ## Current contract
 

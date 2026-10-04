@@ -2,9 +2,9 @@
 
 # Contract | Reece Gaines
 
-Known through: 2003-11-28. [Open interactive contract](gainere01.html#contract) · [Contract history](gainere01.html#contract-history)
+Known through: 2003-11-29. [Open interactive contract](gainere01.html#contract) · [Contract history](gainere01.html#contract-history)
 
-Reece Gaines: No verified contract record. Evidence cutoff: 2003-11-28.
+Reece Gaines: No verified contract record. Evidence cutoff: 2003-11-29.
 
 ## Current contract
 

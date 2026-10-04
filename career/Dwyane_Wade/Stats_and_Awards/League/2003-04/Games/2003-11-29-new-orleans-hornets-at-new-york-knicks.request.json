@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-29-new-orleans-hornets-at-new-york-knicks",
+ "game_date": "2003-11-29",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New York Knicks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Orleans Hornets",
+  "rotation": "real"
+ }
+}

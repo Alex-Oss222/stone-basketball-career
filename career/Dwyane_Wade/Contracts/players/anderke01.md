@@ -2,9 +2,9 @@
 
 # Contract | Kenny Anderson
 
-Known through: 2003-11-28. [Open interactive contract](anderke01.html#contract) · [Contract history](anderke01.html#contract-history)
+Known through: 2003-11-29. [Open interactive contract](anderke01.html#contract) · [Contract history](anderke01.html#contract-history)
 
-Kenny Anderson: free agent expiring. Evidence cutoff: 2003-11-28.
+Kenny Anderson: free agent expiring. Evidence cutoff: 2003-11-29.
 
 ## Current contract
 

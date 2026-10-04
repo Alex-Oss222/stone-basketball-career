@@ -2,9 +2,9 @@
 
 # Contract | Gary Trent
 
-Known through: 2003-11-28. [Open interactive contract](trentga01.html#contract) · [Contract history](trentga01.html#contract-history)
+Known through: 2003-11-29. [Open interactive contract](trentga01.html#contract) · [Contract history](trentga01.html#contract-history)
 
-Gary Trent: free agent expiring. Evidence cutoff: 2003-11-28.
+Gary Trent: free agent expiring. Evidence cutoff: 2003-11-29.
 
 ## Current contract
 
