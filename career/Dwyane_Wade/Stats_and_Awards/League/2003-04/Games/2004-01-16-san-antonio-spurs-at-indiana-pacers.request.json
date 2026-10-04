@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-16-san-antonio-spurs-at-indiana-pacers",
+ "game_date": "2004-01-16",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "San Antonio Spurs",
+  "rotation": "real"
+ }
+}

@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 28 · **Height:** 6-1 · **Weight:** 190 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-01-15 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-01-16 
 
 **Contract/control:** Player option exercised on June 30, 2003 (engine draw 2003-06-30-anthony_carter-player-option). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at PG, staff plan 8 minutes (staff rotation dated 2004-01-02, [record](../Depth_Chart/Reviews/2004-01-02/rotation.json)).
+**Role:** Rotation at PG, staff plan 8 minutes (staff rotation dated 2004-01-16, [record](../Depth_Chart/Reviews/2004-01-16/rotation.json)).
 
 **Offense:** In 2002-03: 4.1 points and 4.1 assists per game; 39.0% true shooting at 17.3% usage.
 
@@ -67,6 +67,7 @@ Contract pages follow the current career date; this personnel assessment retains
 | 2003-12-05 | Staff rotation of 2003-12-05: reserve outside the planned rotation. | [Rotation](../Depth_Chart/Reviews/2003-12-05/rotation.json) |
 | 2003-12-19 | Staff rotation of 2003-12-19: rotation at PG, staff plan 8 minutes. | [Rotation](../Depth_Chart/Reviews/2003-12-19/rotation.json) |
 | 2004-01-02 | Staff rotation of 2004-01-02: rotation at PG, staff plan 8 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-02/rotation.json) |
+| 2004-01-16 | Staff rotation of 2004-01-16: rotation at PG, staff plan 8 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-16/rotation.json) |
 
 ## Sources and uncertainty
 
@@ -74,7 +75,7 @@ Contract pages follow the current career date; this personnel assessment retains
   - [Miami roster/control register](../Roster/roster.json)
   - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
   - https://www.basketball-reference.com/players/c/cartean01.html
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-01-02.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-01-16.
 
 <!-- yearly-statistics:start -->
 
@@ -82,12 +83,12 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 27 closed Miami game(s) through 2004-01-15.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 28 closed Miami game(s) through 2004-01-16.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | MIA | 49 | 26 | 18.6 | 4.1 | 1.7 | 4.1 | 0.9 | 0.1 | 1.7 | 35.6% | 0.0% | 66.0% |
-| 2003-04 | MIA | 27 | 1 | 8.1 | 2.7 | 1.2 | 0.9 | 0.5 | 0.1 | 0.5 | 40.0% | 16.7% | 92.9% |
+| 2003-04 | MIA | 28 | 1 | 8.1 | 2.7 | 1.2 | 0.8 | 0.5 | 0.1 | 0.5 | 40.3% | 16.7% | 93.8% |
 
 <!-- veteran-details:start -->
 ### Additional statistics

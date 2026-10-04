@@ -1357,6 +1357,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "second 10-day contract"
+  },
+  {
+   "id": "2003-04-market-2004-01-16-ten_day-zhizhwa01",
+   "date": "2004-01-16",
+   "kind": "ten_day",
+   "player": "Wang Zhizhi",
+   "bbr_id": "zhizhwa01",
+   "from": null,
+   "to": "Golden State Warriors",
+   "role": {
+    "player_id": "Wang Zhizhi",
+    "bbr_id": "zhizhwa01",
+    "position": "C",
+    "games": 2,
+    "minutes": 9
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-26",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 3.98 x fit"
   }
  ]
 }

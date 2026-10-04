@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-16-los-angeles-lakers-at-sacramento-kings",
+ "game_date": "2004-01-16",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ }
+}

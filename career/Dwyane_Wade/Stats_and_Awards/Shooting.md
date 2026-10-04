@@ -2,27 +2,27 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-01-15**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-01-16**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2004-01-15
+## 2003-04 · NBA regular season · through 2004-01-16
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 39 | 0 | 39 | 228 / 447 | 51.0% | 31 / 89 | 678 | partial |
+| 40 | 0 | 40 | 233 / 457 | 51.0% | 31 / 91 | 694 | partial |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | N/A | N/A | N/A | N/A | N/A | 190 |
+| Paint | N/A | N/A | N/A | N/A | N/A | 197 |
 | Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 12 |
-| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 52 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 53 |
 | 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 73 |
-| Three-point range | N/A | N/A | N/A | N/A | N/A | 71 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 73 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -65,6 +65,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-01-10 | Minnesota Timberwolves | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_2/Game_2.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_2/Game_2.result.json) |
 | 2004-01-13 | Sacramento Kings | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_2/Game_3.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_2/Game_3.result.json) |
 | 2004-01-15 | Utah Jazz | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.result.json) |
+| 2004-01-16 | Los Angeles Clippers | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.result.json) |
 
 ## 2003-10 · NBA regular season
 
@@ -388,17 +389,17 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 7 | 0 | 7 | 46 / 94 | 48.9% | 6 / 16 | 146 | complete |
+| 8 | 0 | 8 | 51 / 104 | 49.0% | 6 / 18 | 162 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 21 | 36 | 58.3% | 6.00 | 5.14 | 36 |
-| Outside paint, under 12 ft | 1 | 2 | 50.0% | 0.29 | 0.29 | 2 |
-| Outside paint, 12 to under 18 ft | 8 | 22 | 36.4% | 2.29 | 3.14 | 22 |
-| 18 ft to the three-point line | 10 | 18 | 55.6% | 2.86 | 2.57 | 18 |
-| Three-point range | 6 | 16 | 37.5% | 2.57 | 2.29 | 16 |
+| Paint | 25 | 43 | 58.1% | 6.25 | 5.38 | 43 |
+| Outside paint, under 12 ft | 1 | 2 | 50.0% | 0.25 | 0.25 | 2 |
+| Outside paint, 12 to under 18 ft | 9 | 23 | 39.1% | 2.25 | 2.88 | 23 |
+| 18 ft to the three-point line | 10 | 18 | 55.6% | 2.50 | 2.25 | 18 |
+| Three-point range | 6 | 18 | 33.3% | 2.25 | 2.25 | 18 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -409,6 +410,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-01-10 | Minnesota Timberwolves | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_2/Game_2.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_2/Game_2.result.json) |
 | 2004-01-13 | Sacramento Kings | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_2/Game_3.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_2/Game_3.result.json) |
 | 2004-01-15 | Utah Jazz | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.result.json) |
+| 2004-01-16 | Los Angeles Clippers | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.result.json) |
 
 ## 2004-01-01 to 2004-01-07 · NBA regular season
 
@@ -458,27 +460,28 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-01-10 | Minnesota Timberwolves | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_2/Game_2.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_2/Game_2.result.json) |
 | 2004-01-13 | Sacramento Kings | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_2/Game_3.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_2/Game_3.result.json) |
 
-## 2004-01-15 to 2004-01-15 · NBA regular season
+## 2004-01-15 to 2004-01-16 · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-week-2004-01-15#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 0 | 1 | 5 / 12 | 41.7% | 1 / 3 | 18 | complete |
+| 2 | 0 | 2 | 10 / 22 | 45.5% | 1 / 5 | 34 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 2 | 3 | 66.7% | 4.00 | 3.00 | 3 |
+| Paint | 6 | 10 | 60.0% | 6.00 | 5.00 | 10 |
 | Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
-| Outside paint, 12 to under 18 ft | 1 | 2 | 50.0% | 2.00 | 2.00 | 2 |
-| 18 ft to the three-point line | 1 | 4 | 25.0% | 2.00 | 4.00 | 4 |
-| Three-point range | 1 | 3 | 33.3% | 3.00 | 3.00 | 3 |
+| Outside paint, 12 to under 18 ft | 2 | 3 | 66.7% | 2.00 | 1.50 | 3 |
+| 18 ft to the three-point line | 1 | 4 | 25.0% | 1.00 | 2.00 | 4 |
+| Three-point range | 1 | 5 | 20.0% | 1.50 | 2.50 | 5 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2004-01-15 | Utah Jazz | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.result.json) |
+| 2004-01-16 | Los Angeles Clippers | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.result.json) |
 
 ## 2003-10-28 at Philadelphia 76ers · Played · NBA regular season
 
@@ -1338,7 +1341,29 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-01-15 | Utah Jazz | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.result.json) |
 
-## 2003-04 · NBA preseason · through 2004-01-15
+## 2004-01-16 at Los Angeles Clippers · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-7890b574108a95c4#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 5 / 10 | 50.0% | 0 / 2 | 16 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 4 | 7 | 57.1% | 8.00 | 7.00 | 7 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Three-point range | 0 | 2 | 0.0% | 0.00 | 2.00 | 2 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-01-16 | Los Angeles Clippers | Played | [Game](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.md) | [Result](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.result.json) |
+
+## 2003-04 · NBA preseason · through 2004-01-16
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 

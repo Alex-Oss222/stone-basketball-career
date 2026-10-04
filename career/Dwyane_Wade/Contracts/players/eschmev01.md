@@ -2,9 +2,9 @@
 
 # Contract | Evan Eschmeyer
 
-Known through: 2004-01-15. [Open interactive contract](eschmev01.html#contract) · [Contract history](eschmev01.html#contract-history)
+Known through: 2004-01-16. [Open interactive contract](eschmev01.html#contract) · [Contract history](eschmev01.html#contract-history)
 
-Evan Eschmeyer: under contract. Evidence cutoff: 2004-01-15.
+Evan Eschmeyer: under contract. Evidence cutoff: 2004-01-16.
 
 ## Current contract
 

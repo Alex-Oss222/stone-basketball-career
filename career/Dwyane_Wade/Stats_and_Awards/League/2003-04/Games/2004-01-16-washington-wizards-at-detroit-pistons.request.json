@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-16-washington-wizards-at-detroit-pistons",
+ "game_date": "2004-01-16",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Detroit Pistons",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ }
+}

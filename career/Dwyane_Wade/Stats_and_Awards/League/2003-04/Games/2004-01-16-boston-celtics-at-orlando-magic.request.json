@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-16-boston-celtics-at-orlando-magic",
+ "game_date": "2004-01-16",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ }
+}

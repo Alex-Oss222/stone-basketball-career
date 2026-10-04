@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-16-golden-state-warriors-at-phoenix-suns",
+ "game_date": "2004-01-16",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Golden State Warriors",
+  "rotation": "real"
+ }
+}
