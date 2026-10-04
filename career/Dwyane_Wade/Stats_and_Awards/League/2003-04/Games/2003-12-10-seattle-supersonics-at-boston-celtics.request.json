@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-10-seattle-supersonics-at-boston-celtics",
+ "game_date": "2003-12-10",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ }
+}

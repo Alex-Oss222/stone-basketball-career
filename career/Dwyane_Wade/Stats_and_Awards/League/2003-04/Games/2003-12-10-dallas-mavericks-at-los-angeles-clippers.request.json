@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-10-dallas-mavericks-at-los-angeles-clippers",
+ "game_date": "2003-12-10",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Clippers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Dallas Mavericks",
+  "rotation": "real"
+ }
+}
