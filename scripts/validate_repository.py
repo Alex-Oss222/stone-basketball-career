@@ -659,6 +659,10 @@ def validate():
     for path in sync_note_statuses(ROOT, write=False):
         errors.append(f"{path.relative_to(ROOT)}: status or current note does not match the career clock (python scripts/write_back_results.py --write)")
 
+    from runtime.miami_cards import refresh as refresh_miami_cards
+    for card in refresh_miami_cards(ROOT, write=False):
+        errors.append(f"{card.relative_to(ROOT)}: role, 2003-04 statistics or rotation notes are stale (python scripts/write_back_results.py --write)")
+
     from runtime.award_decisions import award_errors
     errors.extend(award_errors(ROOT))
 

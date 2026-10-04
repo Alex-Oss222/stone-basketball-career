@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG / SF  
 **Age at assessment:** 24 · **Height:** 6-7 · **Weight:** 215 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** June 26, 2003
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2003-12-01 
 
 **Contract/control:** Team option exercised on June 30, 2003 (front office rule; see June_30/front_office_decisions.json). (register, 2003-11-11) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** 2002-03 SG2 is the carried 2002-03 baseline; Miami has not finalized the 2003-04 role.
+**Role:** Rotation at SG, staff plan 8 minutes (staff rotation dated 2003-11-21, [record](../Depth_Chart/Reviews/2003-11-21/rotation.json)).
 
 **Offense:** In 2002-03: 7.5 points and 1.3 assists per game; 43.7% true shooting at 21.6% usage.
 
@@ -61,6 +61,9 @@ Contract pages follow the current career date; this personnel assessment retains
 | --- | --- | --- |
 | June 26, 2003 | No material change established. Opening Miami offseason card created from the current control/depth baseline. | [Roster/control register](../Roster/roster.json) and [league baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json) |
 | June 26, 2003 | Added 2002-03 statistical estimates; no change to role or availability. | [Prior-season record](../../../../../../library/2003/league/nba_2002_03_player_stats.json) |
+| 2003-10-27 | Staff rotation of 2003-10-27: rotation at SG, staff plan 4 minutes. | [Rotation](../Depth_Chart/rotation.json) |
+| 2003-11-07 | Staff rotation of 2003-11-07: rotation at SG, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2003-11-07/rotation.json) |
+| 2003-11-21 | Staff rotation of 2003-11-21: rotation at SG, staff plan 8 minutes. | [Rotation](../Depth_Chart/Reviews/2003-11-21/rotation.json) |
 
 ## Sources and uncertainty
 
@@ -68,7 +71,7 @@ Contract pages follow the current career date; this personnel assessment retains
   - [Miami roster/control register](../Roster/roster.json)
   - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
   - https://www.basketball-reference.com/players/b/butlera01.html
-- **Not yet established:** 2003-04 rotation role, minute target, closing role and Miami staff grades.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2003-11-21.
 
 <!-- yearly-statistics:start -->
 
@@ -76,12 +79,12 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04 has not started.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 17 closed Miami game(s) through 2003-12-01.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | MIA | 72 | 28 | 21.0 | 7.5 | 2.6 | 1.3 | 0.3 | 0.6 | 1.1 | 36.2% | 29.2% | 73.1% |
-| 2003-04 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2003-04 | MIA | 17 | 0 | 6.1 | 2.6 | 0.4 | 0.4 | 0.1 | 0.2 | 0.4 | 41.5% | 33.3% | 62.5% |
 
 <!-- veteran-details:start -->
 ### Additional statistics

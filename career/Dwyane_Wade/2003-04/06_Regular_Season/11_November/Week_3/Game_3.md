@@ -96,7 +96,7 @@ TEAM                     240.0  110  41-88  10-19  18-24   14  30  27   9   1  1
 | Shooting hand | Right |
 | Contract | Rookie scale signed 2003-07-21: three seasons plus a 2006-07 team option |
 | Role | Starter; staff plan 34 minutes |
-| NBA debut | Not recorded |
+| NBA debut | October 28, 2003 at Philadelphia 76ers (2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
 | Nationality | Not recorded |
 | National team | No selection recorded |
 | National-team eligibility | Not verified |

@@ -806,6 +806,8 @@ def run(root=ROOT, season=SEASON, write=False):
     if write:
         report["registered"] = extend_registry(root, season)
         report["notes"] = sync_note_statuses(root, season)
+        from .miami_cards import refresh as refresh_miami_cards
+        report["miami_cards"] = refresh_miami_cards(root)
     _, report["unmatched"] = closed_lines(root, season)
     if write:
         from .season_games import refresh_reports

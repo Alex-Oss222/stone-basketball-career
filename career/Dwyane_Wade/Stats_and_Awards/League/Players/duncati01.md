@@ -123,4 +123,8 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2003-12-01. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+Simulated 2003-04 honors and shortlist placings through 2003-12-01, from closed award decisions (1 won). Historical awards are not imported.
+
+| Award | Period | Announced | Result | Record |
+| --- | --- | --- | --- | --- |
+| West Player of the Week | 2003-11-03 to 2003-11-09 | 2003-11-10 | **Winner** | [Decision](../2003-04/11_November/Week_2/League_Awards.md) |

@@ -492,6 +492,15 @@ class CardContext:
         roster = _read(root, MIAMI_ROSTER)["players"]
         self.miami_cards = {_key(p["name"]): p["id"] for p in roster if (self.root / MIAMI_CARDS / f'{p["id"]}.md').is_file()}
         self.periods = periods(self.config)
+        # Closed weekly and monthly award decisions (runtime/award_decisions.py): winners and shortlist placings.
+        decisions = self.root / LEAGUE_DIR / SEASON / "award_decisions.json"
+        self.honors = {}
+        if decisions.is_file():
+            for d in json.loads(decisions.read_text(encoding="utf-8"))["decisions"]:
+                if d["announced_on"] > self.on:
+                    continue
+                for x in d["shortlist"]:
+                    self.honors.setdefault(_key(x["player"]), []).append(dict(d, rank=x["rank"], line=x))
         self.template = (ROOT / TEMPLATE).read_text(encoding="utf-8")
 
     def club(self, player, signed=None):
@@ -659,7 +668,20 @@ def markdown_card(ctx, data):
     lines.append(f"**Coverage:** {SEASON} playoffs have not started. Prior playoff history is not imported into this card.\n")
     lines.append(markdown_table(hist, [[SEASON, team, "0", *["N/A"] * (len(hist) - 3)]]).rstrip() + "\n")
     lines.append("## Awards and honors\n")
-    lines.append(f"No simulated honor has been recorded for this player through {ctx.on}. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.\n")
+    honors = ctx.honors.get(_key(p["name"]), [])
+    if not honors:
+        lines.append(f"No simulated honor has been recorded for this player through {ctx.on}. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.\n")
+    else:
+        won = sum(1 for h in honors if h["rank"] == 1)
+        lines.append(f"Simulated {SEASON} honors and shortlist placings through {ctx.on}, from closed award decisions "
+                     f"({won} won). Historical awards are not imported.\n")
+        rows = []
+        for h in sorted(honors, key=lambda h: (h["announced_on"], h["award"])):
+            page = _rel(ctx.root / CARDS_DIR, ctx.root / h["filed_on"])
+            result = "**Winner**" if h["rank"] == 1 else f"Shortlist, No. {h['rank']}"
+            rows.append([f"{h['conference']} {h['name']}", f"{h['period_start']} to {h['period_end']}", h["announced_on"], result,
+                         f"[Decision]({page})"])
+        lines.append(markdown_table(["Award", "Period", "Announced", "Result", "Record"], rows).rstrip() + "\n")
     return "\n".join(lines)
 
 
@@ -698,7 +720,11 @@ def html_payload(ctx, data):
                          for period in ctx.periods],
                 awards=dict(default_scenario="current", scenarios=[dict(
                     id="current", label=f"{SEASON} season", season=SEASON, cutoff=ctx.on,
-                    notice=f"No annual award has been recorded for this player through {ctx.on}. Weekly and monthly honors stay in the league award records.",
+                    notice=(f"No annual award has been recorded for this player through {ctx.on}. " + (
+                        "Weekly and monthly honors won: " + "; ".join(f"{h['conference']} {h['name']} ({h['period_start']} to {h['period_end']})"
+                                                                       for h in ctx.honors.get(_key(p["name"]), []) if h["rank"] == 1) + "."
+                        if any(h["rank"] == 1 for h in ctx.honors.get(_key(p["name"]), [])) else
+                        "Weekly and monthly honors stay in the league award records.")),
                     records=[])]))
 
 
