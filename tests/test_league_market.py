@@ -21,6 +21,12 @@ class LeagueMarketTests(unittest.TestCase):
         cls.root = Path(cls.tmp.name)
         for folder in ("library", "career", "foundation"):
             shutil.copytree(ROOT / folder, cls.root / folder, ignore=shutil.ignore_patterns("*.html", "Players"))
+        for live in ("league_moves.json", "Trade_Draws"):                  # the live league's own moves and draws
+            target = cls.root / "career/Dwyane_Wade/2003-04/League" / live
+            if target.is_dir():
+                shutil.rmtree(target)
+            elif target.exists():
+                target.unlink()
         cls.switch = mock.patch.object(LB, "SYMMETRIC_FROM", START)
         cls.switch.start()
         for day in (START, "2004-01-05", "2004-01-07", "2004-01-15", "2004-01-25"):
