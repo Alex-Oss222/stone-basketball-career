@@ -103,3 +103,33 @@ def carried_in(season, root=ROOT, team=SIMULATED_CLUB):
             out[pid] = max(1, round(days / DAYS_PER_GAME))
     return out
 
+
+LONG_INJURY_GAMES = 8           # an injury this long brings a ramp-up and a re-injury window on return
+RETURN_WINDOW = 10              # games back that carry the higher risk (kernel REINJURY_GAMES)
+RETURN_MINUTES = (0.7, 0.8, 0.9)   # the staff's minutes restriction for the first three games back (judgement)
+
+
+def returning_from(results, team=SIMULATED_CLUB, start=None):
+    """Player -> which game back the next one is (1 = first game back) after an injury of
+    LONG_INJURY_GAMES or more, within RETURN_WINDOW games; from the club's closed results in order."""
+    out, long_, back = dict(start or {}), {pid: True for pid in (start or {})}, {}
+    for result in results:
+        side = "home" if result["home"] == team else "away" if result["away"] == team else None
+        if side is None:
+            continue
+        missed = {pid for pid, n in out.items() if n > 0}
+        for pid in back:
+            if pid not in missed:
+                back[pid] += 1
+        out = {pid: n - 1 for pid, n in out.items() if n - 1 > 0}
+        for pid in missed:
+            if pid not in out and long_.get(pid):
+                back[pid] = 0
+        for injury in result.get("injuries", []):
+            if injury["side"] == side:
+                pid = injury["player_id"]
+                out[pid] = max(out.get(pid, 0), injury["games_out"])
+                long_[pid] = out[pid] >= LONG_INJURY_GAMES
+                back.pop(pid, None)
+    return {pid: n + 1 for pid, n in back.items() if n < RETURN_WINDOW and pid not in out}
+

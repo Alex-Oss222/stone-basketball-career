@@ -99,6 +99,7 @@ INJURY_PER_36 = 0.016           # chance of an injury per 36 minutes played
 ABSENCE_PER_GAME = 0.015
 INJURY_AGE = ((25, 0.85), (29, 1.0), (32, 1.2), (99, 1.45))     # (up to age, risk factor)
 BACK_TO_BACK_INJURY = 1.2       # risk factor on the second night of a back-to-back
+REINJURY_FACTOR, REINJURY_GAMES = 1.5, 10   # first ten games back from an 8+ game injury carry more risk (judgement)
 # (share of injuries, fewest and most games missed): day-to-day up to season-ending.
 INJURY_LENGTHS = ((0.55, 1, 2, "day-to-day"), (0.25, 3, 7, "short"), (0.13, 8, 20, "medium"),
                   (0.06, 21, 50, "long"), (0.01, 51, 82, "season"))
@@ -124,6 +125,7 @@ class PlayerInput:
     stat_profile: dict = field(default_factory=dict)
     availability: float = 1.0       # chance he is available for this game; the engine draws it
     age: int = None                 # age on the game date; sets injury risk where injuries are drawn
+    returning: int = 0              # games back from an injury of 8+ games (1-10); raises his injury risk (2003.10)
 
 
 @dataclass(frozen=True)
@@ -145,6 +147,9 @@ def team_errors(team, rules):
         errors.append("rest days must be a whole number from 0 to 10")
     if not isinstance(team.injuries, bool):
         errors.append("injuries must be true or false")
+    for p in team.players:
+        if type(p.returning) is not int or not 0 <= p.returning <= REINJURY_GAMES:
+            errors.append(f"{p.player_id}: returning must be a whole number of games from 0 to {REINJURY_GAMES}")
     for p in players:
         if p.age is not None and (isinstance(p.age, bool) or not isinstance(p.age, int) or not 15 <= p.age <= 50):
             errors.append(f"{p.player_id}: age must be a whole number from 15 to 50")
@@ -226,6 +231,9 @@ def team_packet(team):
         # Preserve the shape (and journal digest) of historical input packets.
         data.pop("starters")
     data["players"] = [dict(p, ratings=dict(sorted(p["ratings"].items()))) for p in data["players"]]
+    for p in data["players"]:
+        if not p.get("returning"):
+            p.pop("returning", None)        # historical packets have no such field
     return data
 
 
@@ -522,6 +530,7 @@ class _Club:
         self.lines = {pid: _blank_line() for pid in self.order}
         self.on_floor = []
         self.fouled_out = set()
+        self.injured = set()            # hurt during this game: out for the rest of it
         self.points = 0
         self.period_points = []
         self.team_turnovers = 0
@@ -543,13 +552,15 @@ def _weighted(rng, items, weights):
 
 def _eligible(club, sitting=frozenset()):
     """Players who may enter: not fouled out and not sitting with foul trouble, unless the bench runs dry."""
-    able = [pid for pid in club.order if pid not in club.fouled_out]
+    able = [pid for pid in club.order if pid not in club.fouled_out and pid not in club.injured]
     free = [pid for pid in able if pid not in sitting]
     if len(free) < 5:
         free += sorted((pid for pid in able if pid in sitting), key=lambda pid: club.lines[pid]["pf"])[:5 - len(free)]
     if len(free) < 5:
         # Every bench player is out: NBA rule lets the last eligible players stay in.
-        free += [pid for pid in club.order if pid not in free][:5 - len(free)]
+        free += [pid for pid in club.order if pid not in free and pid not in club.injured][:5 - len(free)]
+    if len(free) < 5:
+        free += [pid for pid in club.order if pid not in free][:5 - len(free)]   # nobody else left at all
     return free
 
 
@@ -964,36 +975,52 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         for club in clubs.values():
             club.period_points[-1] = club.points - club.period_points[-1]
 
+    injuries = []
+
+    def injury_draws(number, before):
+        """Injuries for the simulated club, drawn at the end of each period on the minutes played in it,
+        from the game's entropy (E7). A player hurt in a period sits out the rest of the game."""
+        for side, club in clubs.items():
+            if not club.team.injuries:
+                continue
+            for pid in club.order:
+                if pid in club.injured:
+                    continue
+                minutes = (club.lines[pid]["seconds"] - before[side].get(pid, 0.0)) / 60
+                if minutes <= 0:
+                    continue
+                player = club.players[pid]
+                risk = INJURY_PER_36 * minutes / 36 * (next(f for limit, f in INJURY_AGE if player.age <= limit) if player.age else 1.0)
+                if club.team.rest_days == 0:
+                    risk *= BACK_TO_BACK_INJURY
+                if 0 < player.returning <= REINJURY_GAMES:
+                    risk *= REINJURY_FACTOR
+                if rng.random() < risk:
+                    share, low, high, kind = _weighted(rng, INJURY_LENGTHS, [length[0] for length in INJURY_LENGTHS])
+                    club.injured.add(pid)
+                    injuries.append({"side": side, "player_id": pid, "kind": kind, "games_out": rng.randint(low, high),
+                                     "period": number})
+
+    def snapshot():
+        return {side: {pid: club.lines[pid]["seconds"] for pid in club.order} for side, club in clubs.items()}
+
     tip_winner = "home" if rng.random() < 0.5 else "away"
     starts = {1: tip_winner, 2: other(tip_winner), 3: other(tip_winner), 4: tip_winner}
     elapsed = 0
     for q in range(1, rules["quarters"] + 1):
+        before = snapshot()
         run_period(q, quarter_seconds, starts[q], regulation_seconds, elapsed)
+        injury_draws(q, before)
         elapsed += quarter_seconds
     overtimes = 0
     while clubs["home"].points == clubs["away"].points:
         overtimes += 1
         game_seconds = regulation_seconds + overtimes * ot_seconds
+        before = snapshot()
         run_period(rules["quarters"] + overtimes, ot_seconds,
                    "home" if rng.random() < 0.5 else "away", game_seconds, elapsed)
+        injury_draws(rules["quarters"] + overtimes, before)
         elapsed += ot_seconds
-
-    # Injuries for the simulated club, drawn after the final whistle from the same entropy (E7).
-    injuries = []
-    for side, club in clubs.items():
-        if not club.team.injuries:
-            continue
-        for pid in club.order:
-            minutes = club.lines[pid]["seconds"] / 60
-            if minutes <= 0:
-                continue
-            age = club.players[pid].age
-            risk = INJURY_PER_36 * minutes / 36 * (next(f for limit, f in INJURY_AGE if age <= limit) if age else 1.0)
-            if club.team.rest_days == 0:
-                risk *= BACK_TO_BACK_INJURY
-            if rng.random() < risk:
-                share, low, high, kind = _weighted(rng, INJURY_LENGTHS, [length[0] for length in INJURY_LENGTHS])
-                injuries.append({"side": side, "player_id": pid, "kind": kind, "games_out": rng.randint(low, high)})
 
     def team_totals(club):
         totals = _blank_line()

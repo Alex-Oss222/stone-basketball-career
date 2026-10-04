@@ -142,9 +142,11 @@ def terms_errors(terms, *, route, years_of_service, prior_salary, cap_rules, cba
     if route == "million" and (first > cap_rules["exceptions"]["biennial"] or years > 2):
         errors.append("the $1 million exception allows at most its amount for up to two seasons")
     if route == "early_bird":
+        # FAQ Q17: the greater of 175% of the previous salary or the average salary; the 2003-04 average
+        # salary is the mid-level amount ($4,917,000, rules file average_salary).
         floor = max(round((prior_salary or 0) * 1.75), cap_rules["exceptions"]["mid_level"])
-        if first > floor and first > maximum:
-            errors.append("early bird salary is limited to the greater of 175% of the prior salary and the average salary")
+        if first > floor:
+            errors.append(f"early bird salary is limited to {floor:,}, the greater of 175% of the prior salary and the average salary")
     if route == "non_bird":
         limit = max(round((prior_salary or 0) * 1.2), round(minimum * 1.2))
         if first > limit:

@@ -58,8 +58,10 @@ class WadeDevelopmentTests(unittest.TestCase):
 
     def test_next_season_moves_toward_simulated_play_and_ages(self):
         journal = Journal()
-        lines = [next(r for r in wade_game(f"t-season-{i}", journal)["player_stats"]["home"]
-                      if r["player_id"] == "Dwyane Wade") for i in range(40)]
+        games = [wade_game(f"t-season-{i}", journal)["player_stats"]["home"] for i in range(40)]
+        # A one-game absence (kernel 2003.9) can keep him out of a game; only games he played count.
+        lines = [r for g in games for r in g if r["player_id"] == "Dwyane Wade"]
+        self.assertGreater(len(lines), 30)
         nxt = next_season_rates(WADE, lines, "2004-05", VET["rate_baselines"], VET["source_totals"])
         self.assertEqual(set(nxt), set(RATE_KEYS))
         self.assertGreater(nxt["usage_pct"], 0)

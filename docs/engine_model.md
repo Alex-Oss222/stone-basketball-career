@@ -1,4 +1,4 @@
-# Engine model and calibration (kernel 2003.9)
+# Engine model and calibration (kernel 2003.10)
 
 What the possession engine does beyond the per-play rates, why, and how it was checked. Code: `runtime/kernel.py`, `runtime/rotations.py`. Check: `python scripts/engine_diagnostics.py 4 --check --summary-json /tmp/engine-summary.json`, plus `--defense-test` and `--home-test` (analysis only: made-up entropy, nothing written to the career). Reports and optional JSON contain league aggregates, never player results for the career or front office.
 
@@ -116,6 +116,12 @@ Four seasons of the real 2003-04 schedule without Miami's games (4,428 games, 79
 Box totals per team: FGA 81.1 (80.8), FTA 24.8 (24.4), turnovers 15.2 (14.9), offensive rebounds 12.1 (12.0), assists 21.7 (21.5), fouls 22.1 (21.8); environment values in brackets. Three-point attempts run at 15.1 against 14.7: the 2003-04 players' own three-point rates, weighted by their attempts, are about 3% above the 2002-03 environment.
 
 Later kernels (the record above was measured on 2003.3): with team pace and back-to-backs (2003.5), three seasons give margin SD 13.1, overtime 5.0%, home win 61.2%, foul-outs 0.22 and club spread 4.6.
+
+### Kernel 2003.10: injuries during the game, the return window and absence spells
+
+- **When an injury happens.** The simulated club's injuries are drawn at the end of each period on the minutes played in it (same risk per minute as before), and a player hurt in a period sits out the rest of the game. Before, the draw came after the final whistle and the player finished the game.
+- **Coming back.** After an injury of eight or more games, the next ten games carry 1.5 times the injury risk (`REINJURY_FACTOR`, judgement: re-injury risk is higher after a return, the size is not sourced). The staff restricts his minutes to 70%, 80% and 90% of his rotation minutes in his first three games back and gives the rest to the others (`season_games.return_restrictions`). The request carries `returning` (games back, 1-10), stored only when set so earlier packets keep their shape.
+- **Real clubs' absences.** A real player misses his real share of games as spells laid out by one journaled event per player, club and season (`runtime/absence_spells.py`), lengths from the injury-length bands; his availability input for a game is 1 or 0. Before, each game was drawn on its own, so absences came as scattered single games.
 
 ### Kernel 2003.9 and rotation model 2 (games from November 12, 2003)
 

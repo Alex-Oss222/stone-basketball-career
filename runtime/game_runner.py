@@ -117,6 +117,9 @@ def freeze_inputs(home, away, journal, **kwargs):
     season = season_for_date(kwargs["game_date"])
     # Real-career players (option C) and Wade get this season's journaled swing before inputs freeze.
     home, away = (_developed(team, season, journal) for team in (home, away))
+    # Real clubs' absences as journaled spells from November 12, 2003 (`absence_spells`); earlier games unchanged.
+    from .absence_spells import apply_spells
+    home, away = (apply_spells(team, season, kwargs["game_date"], journal, kwargs.get("root", ROOT)) for team in (home, away))
     packet, rules, environment = build_game_packet(home, away, **kwargs)
     return home, away, packet, rules, environment
 

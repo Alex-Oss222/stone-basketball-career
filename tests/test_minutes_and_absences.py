@@ -49,7 +49,7 @@ class AbsenceTests(unittest.TestCase):
                                      for i in range(12)), injuries=injuries)
 
     def test_only_the_simulated_club_draws_one_game_absences_at_the_calibrated_rate(self):
-        self.assertEqual(KERNEL_VERSION, "2003.9")
+        self.assertGreaterEqual(tuple(map(int, KERNEL_VERSION.split("."))), (2003, 9))
         rules, env = rules_for("2003-04"), environment_for("2003-04", "2003-11-12")
         absent = games = 0
         for i in range(150):

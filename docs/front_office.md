@@ -154,3 +154,7 @@ Waivers close a contract on their date. A non-guaranteed contract leaves the sal
 
 The January 10, 2004 guarantee review (`scripts/guarantee_review.py`): decisions on January 7, the last day a waiver clears, then guarantees on January 10. The front office keeps every non-guaranteed player unless guaranteeing him would take the payroll over the owner's ceiling; then the lowest-valued go first. The game builder stops at each step until it is recorded.
 
+## Draft rights and Required Tenders
+
+1999 CBA Article X, Section 3 (`runtime/draft_rights.py`): a club keeps its pick's exclusive rights until the next draft only with a Required Tender, by July 15 for a first-round pick (three seasons plus an option at 80% or more of scale) and in the two weeks before September 5 for a second-round pick (one season at the minimum). Without one, the pick becomes a rookie free agent on July 16 or September 6. A tendered pick who has not signed by the next draft leaves the club's rights. `00_Team/Transactions/required_tenders.json` holds Miami's tenders; validation refuses an unsigned pick on the register without a tender in its window, and one still held after the next draft (June 24, 2004). The 2003 tenders to Wade and Jerome Beasley were entered on November 11, 2003 as reconstructions of routine filings the record had omitted.
+

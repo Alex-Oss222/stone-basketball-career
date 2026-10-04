@@ -88,12 +88,12 @@ def _club(spec, actives, root, rating_index, season=None, game_date=None):
     if explicit_starters and any(type(flag) is not bool for flag in starter_flags):
         raise ValueError(f"{spec['team']}: starter must be a boolean for every player when supplied")
     for p in spec["players"]:
-        unknown = set(p) - {"player_id", "bbr_id", "position", "minutes", "ratings", "starter"}
+        unknown = set(p) - {"player_id", "bbr_id", "position", "minutes", "ratings", "starter", "returning"}
         if unknown:
             raise ValueError(f"{spec['team']}: unknown player fields {sorted(unknown)}")
         profile = rating_index.engine_profile(p["player_id"], p.get("bbr_id")) if rating_index else {}
         players.append(PlayerInput(p["player_id"], p["position"], p["minutes"], dict(p.get("ratings", {})), profile,
-                                   age=ages.get(alias(p["player_id"]))))
+                                   age=ages.get(alias(p["player_id"])), returning=p.get("returning", 0)))
     starters = tuple(p["player_id"] for p in spec["players"] if p.get("starter") is True)
     if explicit_starters and len(starters) != 5:
         raise ValueError(f"{spec['team']}: exactly five players must be marked starter")

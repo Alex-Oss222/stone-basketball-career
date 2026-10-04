@@ -1,0 +1,28 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "kind": "required_tenders",
+ "season": "2003-04",
+ "rule": "1999 CBA Article X, Section 3 and Article I (vv): see runtime/draft_rights.py.",
+ "reconstruction_note": "Recorded November 11, 2003. Miami's records had kept both 2003 picks under exclusive rights without a dated Required Tender; the tender is a routine filing every club made, and Miami's own conduct (rookie-scale talks with Wade, Beasley on the register and at camp) is consistent only with tenders in their windows. The two tenders are entered on their deadlines as reconstructions, not as new decisions.",
+ "tenders": [
+  {
+   "player": "Dwyane Wade",
+   "pick": 5,
+   "round": 1,
+   "date": "2003-07-15",
+   "reconstructed": true,
+   "terms": "three seasons plus a team option at 80% of the No. 5 rookie scale ($1,757,600 in 2003-04)",
+   "outcome": "signed 2003-07-21 (Wade_Rookie_Contract/negotiation_log.json)"
+  },
+  {
+   "player": "Jerome Beasley",
+   "pick": 33,
+   "round": 2,
+   "date": "2003-09-05",
+   "reconstructed": true,
+   "terms": "one season at the 2003-04 rookie minimum, $366,931",
+   "outcome": "unsigned; exclusive rights through the 2004 draft (June 24, 2004)"
+  }
+ ]
+}

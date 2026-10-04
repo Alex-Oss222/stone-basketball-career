@@ -623,6 +623,8 @@ def validate():
     from runtime.roster_moves import guarantee_errors, ledger_errors as list_errors
     errors.extend(list_errors(ROOT))
     errors.extend(guarantee_errors(ROOT))
+    from runtime.draft_rights import draft_rights_errors
+    errors.extend(draft_rights_errors(ROOT))
     from runtime.rotations import holdings_errors
     errors.extend(holdings_errors(ROOT))
     from runtime.signing import trade_record_errors

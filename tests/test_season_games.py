@@ -56,6 +56,12 @@ def write_minimal_rotation(root, grade_from="2003-10-24"):
             player["status"] = "released"
     (root / TEAM / "Roster/roster.json").write_text(json.dumps(roster, indent=1) + "\n")
     holdings_path.write_text(json.dumps(holdings, indent=1) + "\n")
+    # A completed camp also had its routine Required Tender to any pick still unsigned (1999 CBA Art. X §3).
+    unsigned = [p["name"] for p in roster["players"] if "draft_rights" in (p.get("status") or "")]
+    if unsigned:
+        tenders = root / TEAM.parent / "Transactions/required_tenders.json"
+        tenders.parent.mkdir(parents=True, exist_ok=True)
+        tenders.write_text(json.dumps({"tenders": [{"player": n, "round": 2, "date": "2003-09-05"} for n in unsigned]}) + "\n")
     # ...and that they are signed: only players under a signed contract dress (camp.playable).
     # The cut to fifteen this fixture skips: the rotation plus the next men on the depth chart stay signed.
     dressed = [p["player_id"] for p in rotation["players"]]
