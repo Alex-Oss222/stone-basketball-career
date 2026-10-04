@@ -1562,6 +1562,51 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.32 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-19-expire-bateeme01",
+   "date": "2004-01-19",
+   "kind": "expire",
+   "player": "Mengke Bateer",
+   "bbr_id": "bateeme01",
+   "from": "Dallas Mavericks",
+   "to": null,
+   "role": {
+    "player_id": "Mengke Bateer",
+    "bbr_id": "bateeme01",
+    "position": "C",
+    "games": 7,
+    "minutes": 40
+   },
+   "contract": null,
+   "note": "10-day contract ended"
+  },
+  {
+   "deal": "2003-04-league-trade-2004-01-19-anderch01-delkto01-lenarvo01",
+   "date": "2004-01-19",
+   "kind": "trade",
+   "player": "Tony Delk",
+   "bbr_id": "delkto01",
+   "from": "Dallas Mavericks",
+   "to": "Denver Nuggets"
+  },
+  {
+   "deal": "2003-04-league-trade-2004-01-19-anderch01-delkto01-lenarvo01",
+   "date": "2004-01-19",
+   "kind": "trade",
+   "player": "Voshon Lenard",
+   "bbr_id": "lenarvo01",
+   "from": "Denver Nuggets",
+   "to": "Dallas Mavericks"
+  },
+  {
+   "deal": "2003-04-league-trade-2004-01-19-anderch01-delkto01-lenarvo01",
+   "date": "2004-01-19",
+   "kind": "trade",
+   "player": "Chris Andersen",
+   "bbr_id": "anderch01",
+   "from": "Denver Nuggets",
+   "to": "Dallas Mavericks"
   }
  ]
 }

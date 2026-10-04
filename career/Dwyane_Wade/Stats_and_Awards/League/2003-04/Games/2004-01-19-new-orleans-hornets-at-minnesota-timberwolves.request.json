@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-19-new-orleans-hornets-at-minnesota-timberwolves",
+ "game_date": "2004-01-19",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Minnesota Timberwolves",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Orleans Hornets",
+  "rotation": "real"
+ }
+}

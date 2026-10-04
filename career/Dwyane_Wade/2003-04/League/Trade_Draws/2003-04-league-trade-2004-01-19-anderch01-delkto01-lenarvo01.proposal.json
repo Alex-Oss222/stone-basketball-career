@@ -1,0 +1,39 @@
+{
+ "id": "2003-04-league-trade-2004-01-19-anderch01-delkto01-lenarvo01",
+ "date": "2004-01-19",
+ "clubs": [
+  "Dallas Mavericks",
+  "Denver Nuggets"
+ ],
+ "a": {
+  "club": "Dallas Mavericks",
+  "sends": [
+   "Tony Delk"
+  ],
+  "bbr_ids": [
+   "delkto01"
+  ],
+  "salary": 2925000
+ },
+ "b": {
+  "club": "Denver Nuggets",
+  "sends": [
+   "Voshon Lenard",
+   "Chris Andersen"
+  ],
+  "bbr_ids": [
+   "lenarvo01",
+   "anderch01"
+  ],
+  "salary": 1577358
+ },
+ "gain": {
+  "Dallas Mavericks": 0.155,
+  "Denver Nuggets": 0.245
+ },
+ "accept": {
+  "Dallas Mavericks": 0.915,
+  "Denver Nuggets": 0.95
+ },
+ "both": 0.86925
+}

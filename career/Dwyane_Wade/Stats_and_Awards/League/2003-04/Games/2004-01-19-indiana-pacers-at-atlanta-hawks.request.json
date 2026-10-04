@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-19-indiana-pacers-at-atlanta-hawks",
+ "game_date": "2004-01-19",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Atlanta Hawks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ }
+}

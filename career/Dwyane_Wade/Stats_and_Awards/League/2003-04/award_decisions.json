@@ -1564,6 +1564,110 @@
     }
    ],
    "winner": "Peja Stojakovic"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-01-12-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-01-12",
+   "period_end": "2004-01-18",
+   "announced_on": "2004-01-19",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/01_January/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Gilbert Arenas",
+     "team": "Washington Wizards",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 24.0,
+     "reb": 5.0,
+     "ast": 5.8,
+     "game_score": 19.98,
+     "score": 82.9,
+     "rank": 1
+    },
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 23.8,
+     "reb": 7.0,
+     "ast": 6.0,
+     "game_score": 17.97,
+     "score": 77.9,
+     "rank": 2
+    },
+    {
+     "player": "Donyell Marshall",
+     "team": "Toronto Raptors",
+     "games": 3,
+     "wins": 2,
+     "losses": 1,
+     "pts": 20.7,
+     "reb": 8.3,
+     "ast": 2.3,
+     "game_score": 20.7,
+     "score": 68.1,
+     "rank": 3
+    }
+   ],
+   "winner": "Gilbert Arenas"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-01-12-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-01-12",
+   "period_end": "2004-01-18",
+   "announced_on": "2004-01-19",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/01_January/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kobe Bryant",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 23.2,
+     "reb": 6.0,
+     "ast": 4.8,
+     "game_score": 19.6,
+     "score": 84.4,
+     "rank": 1
+    },
+    {
+     "player": "Voshon Lenard",
+     "team": "Denver Nuggets",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 23.2,
+     "reb": 4.2,
+     "ast": 1.0,
+     "game_score": 17.6,
+     "score": 82.4,
+     "rank": 2
+    },
+    {
+     "player": "Shawn Marion",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 24.0,
+     "reb": 9.0,
+     "ast": 1.8,
+     "game_score": 18.98,
+     "score": 81.9,
+     "rank": 3
+    }
+   ],
+   "winner": "Kobe Bryant"
   }
  ]
 }

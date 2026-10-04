@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-01-18",
+  "as_of": "2004-01-19",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -3551,10 +3551,10 @@
     {
       "player_id": "packro01",
       "name": "Robert Pack",
-      "team": "New Orleans Hornets",
-      "status": "on the 2003-04 roster; contract terms not in the dated records",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "New Jersey Nets",
+      "status": "under contract",
+      "current_contract_id": "packro01-2004-01-19",
+      "recorded_agreements": 2,
       "href": "players/packro01.html#contract"
     },
     {

@@ -2,9 +2,9 @@
 
 # Contract | DeShawn Stevenson
 
-Known through: 2004-01-18. [Open interactive contract](stevede01.html#contract) · [Contract history](stevede01.html#contract-history)
+Known through: 2004-01-19. [Open interactive contract](stevede01.html#contract) · [Contract history](stevede01.html#contract-history)
 
-DeShawn Stevenson: under rookie contract. Evidence cutoff: 2004-01-18.
+DeShawn Stevenson: under rookie contract. Evidence cutoff: 2004-01-19.
 
 ## Current contract
 

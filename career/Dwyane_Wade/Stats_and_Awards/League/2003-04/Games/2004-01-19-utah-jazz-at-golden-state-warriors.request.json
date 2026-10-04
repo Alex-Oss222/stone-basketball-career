@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-19-utah-jazz-at-golden-state-warriors",
+ "game_date": "2004-01-19",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Golden State Warriors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ }
+}

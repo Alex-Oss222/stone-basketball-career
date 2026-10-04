@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-19-phoenix-suns-at-los-angeles-lakers",
+ "game_date": "2004-01-19",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ }
+}

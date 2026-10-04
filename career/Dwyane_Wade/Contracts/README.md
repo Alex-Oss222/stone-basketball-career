@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-01-18. [Search the contract directory](index.html)
+Known through 2004-01-19. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -402,7 +402,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Ricky Davis](players/davisri01.md) | Cleveland Cavaliers | under contract | Ricky Davis · existing contract; signing date not recorded | 1 |
 | [Robert Archibald](players/archiro01.md) | Phoenix Suns | team option pending | Robert Archibald · 2002-07-02 | 1 |
 | [Robert Horry](players/horryro01.md) | San Antonio Spurs | under contract | Robert Horry · 2003-07-24 | 1 |
-| [Robert Pack](players/packro01.md) | New Orleans Hornets | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
+| [Robert Pack](players/packro01.md) | New Jersey Nets | under contract | Robert Pack · 2004-01-19 | 2 |
 | [Robert Traylor](players/traylro01.md) | New Orleans Hornets | under contract unverified | No verified current agreement | 0 |
 | [Rod Strickland](players/stricro02.md) | Orlando Magic | under contract | Rod Strickland · 2003-11-25 | 2 |
 | [Rodney Buford](players/buforro01.md) | Sacramento Kings | No verified contract record | No verified current agreement | 0 |

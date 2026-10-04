@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-18**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-01-19**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -86,7 +86,7 @@ Card date: **2004-01-18**. 504 registry players, one Markdown card and one inter
 | [Raül López](lopezra01.md) | Utah Jazz | None | silhouette | [open](lopezra01.html) |
 | [Reece Gaines](gainere01.md) | Orlando Magic | 23 | sourced | [open](gainere01.html) |
 | [Rick Brunson](brunsri01.md) | Toronto Raptors | 31 | sourced | [open](brunsri01.html) |
-| [Robert Pack](packro01.md) | New Orleans Hornets | 34 | sourced | [open](packro01.html) |
+| [Robert Pack](packro01.md) | New Jersey Nets | 34 | sourced | [open](packro01.html) |
 | [Rod Strickland](stricro02.md) | Orlando Magic | 37 | sourced | [open](stricro02.html) |
 | [Rusty LaRue](larueru01.md) | Golden State Warriors | None | silhouette | [open](larueru01.html) |
 | [Sam Cassell](cassesa01.md) | Minnesota Timberwolves | 34 | sourced | [open](cassesa01.html) |

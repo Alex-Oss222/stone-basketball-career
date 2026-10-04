@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-19-seattle-supersonics-at-philadelphia-76ers",
+ "game_date": "2004-01-19",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Philadelphia 76ers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ }
+}

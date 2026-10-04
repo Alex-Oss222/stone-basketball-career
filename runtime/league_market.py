@@ -40,7 +40,9 @@ EXPIRING_PATH = Path("library/2003/league/nba_2003_expiring_contracts.json")
 SEASON_END = "2004-04-14"
 TEN_DAY_DAYS = 10
 # Judgement constants, calibrated against the 2003-04 volume in the rules file (docs/symmetric_league_design.md).
-INJURED_FOR_TEN_DAY = 1
+INJURED_FOR_TEN_DAY = 1             # before NEED_RULE_FROM: one injured regular was enough (2.5x the real 10-day rate)
+NEED_RULE_FROM = "2004-01-19"       # from this date a 10-day is an emergency fill: healthy players under contract below 12
+CONTRIBUTOR_MINUTES = 10.0          # judgement: a 10-day player averaging this many minutes a club game is kept
 UPGRADE_MARGIN = 1.2
 WAIVER_DAYS = 2                      # 48-hour waivers (1999 CBA, nba_1999_in_season_rules.json)
 GUARANTEE_CUT_DAY = "2004-01-07"     # the last day a 48-hour waiver clears before the January 10 guarantee
@@ -133,6 +135,26 @@ class LeagueMarket:
     def injured_regulars(self, club):
         return sum(1 for p in self.rosters[club] if self.assets.injured(p["player_id"], club))
 
+    def short_handed(self, club):
+        """Fewer than the minimum healthy players under contract: injured regulars do not count."""
+        return len(self.rosters[club]) - self.injured_regulars(club) < self.rules["min"]
+
+    def minutes_for(self, name, club, since):
+        """His average minutes per club game from `since` through the day before, from closed results only."""
+        if not hasattr(self, "_results"):
+            from .write_back import closed_results
+            prior = (date.fromisoformat(self.day) - timedelta(days=1)).isoformat()
+            self._results = [row["result"] for row in closed_results(self.root, SEASON, prior)]
+        games = minutes = 0
+        for r in self._results:
+            if r["game_date"] < since:
+                continue
+            for side in ("home", "away"):
+                if r[side] == club:
+                    games += 1
+                    minutes += sum(p.get("minutes") or 0 for p in r["player_stats"][side] if p["player_id"] == name)
+        return minutes / games if games else 0.0
+
     def contract_of(self, bbr, club):
         """The market contract a club holds on him, if any (10-day or rest-of-season), newest first."""
         for e in reversed(self.moves["entries"]):
@@ -219,6 +241,23 @@ class LeagueMarket:
                 if not c or c["kind"] != "ten_day" or c["contract"]["until"] > self.day:
                     continue
                 role = c["role"]
+                if self.day >= NEED_RULE_FROM:
+                    # Kept if he contributed; a second 10-day only while the club is still short; otherwise he goes.
+                    first = min(e["date"] for e in self.moves["entries"]
+                                if e["bbr_id"] == p["bbr_id"] and e.get("to") == club and e["kind"] == "ten_day")
+                    mpg = self.minutes_for(role["player_id"], club, first)
+                    if mpg >= CONTRIBUTOR_MINUTES:
+                        self._add("rest_of_season", p["bbr_id"], role, club, club,
+                                  {"type": "rest_of_season", "until": SEASON_END, "salary": "pro-rated minimum"},
+                                  note=f"kept: {mpg:.1f} minutes a game on his 10-day contracts")
+                    elif self.ten_days_with(p["bbr_id"], club) < self.rules["ten_day_per_club"] and self.short_handed(club):
+                        self._add("ten_day", p["bbr_id"], role, club, club,
+                                  {"type": "ten_day", "until": min((date.fromisoformat(self.day) + timedelta(days=TEN_DAY_DAYS)).isoformat(), SEASON_END),
+                                   "salary": "pro-rated minimum"}, note=f"second 10-day contract: still short-handed ({mpg:.1f} minutes a game)")
+                    else:
+                        self._add("expire", p["bbr_id"], role, club, None, note=f"10-day contract ended ({mpg:.1f} minutes a game)")
+                        pool[p["bbr_id"]] = role
+                    continue
                 if self.ten_days_with(p["bbr_id"], club) < self.rules["ten_day_per_club"] and self.injured_regulars(club) >= INJURED_FOR_TEN_DAY:
                     self._add("ten_day", p["bbr_id"], role, club, club,
                               {"type": "ten_day", "until": min((date.fromisoformat(self.day) + timedelta(days=TEN_DAY_DAYS)).isoformat(), SEASON_END),
@@ -235,7 +274,8 @@ class LeagueMarket:
             while len(self.rosters[club]) < self.rules["min"] and pool:
                 self._sign(club, pool, "ten_day" if ten_open else "rest_of_season")
             # 3. injury depth
-            if ten_open and self.injured_regulars(club) >= INJURED_FOR_TEN_DAY and len(self.rosters[club]) < self.rules["max"] and pool:
+            need = self.short_handed(club) if self.day >= NEED_RULE_FROM else self.injured_regulars(club) >= INJURED_FOR_TEN_DAY
+            if ten_open and need and len(self.rosters[club]) < self.rules["max"] and pool:
                 self._sign(club, pool, "ten_day")
             # 4. the guarantee cut: before contracts become guaranteed, a club lets go of non-guaranteed depth it can better
             if self.day == GUARANTEE_CUT_DAY:

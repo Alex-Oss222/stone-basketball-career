@@ -1,0 +1,12 @@
+{
+ "date": "2004-01-19",
+ "decider": "Dallas Mavericks and Denver Nuggets front offices (engine draw)",
+ "event_id": "2003-04-league-trade-2004-01-19-anderch01-delkto01-lenarvo01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.86925,
+  "decline": 0.13075
+ },
+ "outcome": "accept",
+ "question": "Do Dallas Mavericks and Denver Nuggets trade Tony Delk for Voshon Lenard and Chris Andersen?"
+}

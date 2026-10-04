@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-01-18",
+  "as_of": "2004-01-19",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-01-18"
+              "2004-01-19"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2004-01-18",
+              "2004-01-19",
               "Current checkpoint",
               "2004-01-18-miami-heat-at-denver-nuggets",
               "Recorded",
@@ -94,22 +94,22 @@
               }
             ],
             [
-              "2004-01-19",
-              "League awards announced: Player of the Week",
-              "League (closed results only)",
-              "Scheduled",
-              {
-                "label": "Awards",
-                "href": "#calendar"
-              }
-            ],
-            [
               "2004-01-20",
               "Next Miami game, vs Boston Celtics",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
                 "label": "Season",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2004-01-26",
+              "League awards announced: Player of the Week",
+              "League (closed results only)",
+              "Scheduled",
+              {
+                "label": "Awards",
                 "href": "#calendar"
               }
             ],
@@ -504,7 +504,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-18"
+          "value": "2004-01-19"
         },
         {
           "label": "Team",
@@ -946,7 +946,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-18"
+          "value": "2004-01-19"
         },
         {
           "label": "Team",
@@ -1441,7 +1441,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-18"
+          "value": "2004-01-19"
         },
         {
           "label": "Team",
@@ -2044,7 +2044,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-18"
+          "value": "2004-01-19"
         },
         {
           "label": "Team",
@@ -2456,7 +2456,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-18"
+          "value": "2004-01-19"
         },
         {
           "label": "Team",
@@ -2864,7 +2864,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-18"
+          "value": "2004-01-19"
         },
         {
           "label": "Team",
@@ -3281,7 +3281,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-18"
+          "value": "2004-01-19"
         },
         {
           "label": "Team",
@@ -3746,7 +3746,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-18"
+          "value": "2004-01-19"
         },
         {
           "label": "Team",
@@ -3763,7 +3763,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "48 closed game records in 2003-04 through 2004-01-18. Competitions remain separate.",
+      "summary": "48 closed game records in 2003-04 through 2004-01-19. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -4659,7 +4659,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-01-18"
+          "value": "2004-01-19"
         },
         {
           "label": "Team",
