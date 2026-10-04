@@ -83,8 +83,8 @@ G and GS are counts; MP and counting statistics are **per appearance**. Shooting
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | December 2003 | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [November 2003](../11_November/README.md) | 19 | Miami Heat | NBA | SG / PG | 13 | 11 | 34.9 | 6.2 | 11.3 | .544 | 0.6 | 2.4 | .258 | 5.5 | 8.9 | .621 | .571 | 3.9 | 4.3 | .911 | 1.2 | 3.9 | 5.2 | 4.8 | 1.4 | 0.8 | 1.3 | 2.8 | 16.8 | .638 | — |
-| Season through this month | 19 | Miami Heat | NBA | SG / PG | 16 | 11 | 32.0 | 5.5 | 10.2 | .537 | 0.6 | 2.1 | .265 | 4.9 | 8.1 | .608 | .564 | 3.9 | 4.2 | .925 | 1.3 | 3.4 | 4.7 | 4.2 | 1.3 | 0.7 | 1.1 | 2.5 | 15.4 | .638 | — |
+| [November 2003](../11_November/README.md) | 19 | Miami Heat | NBA | SG / PG | 14 | 12 | 35.3 | 5.9 | 11.4 | .519 | 0.6 | 2.5 | .257 | 5.3 | 8.9 | .592 | .547 | 4.3 | 4.7 | .909 | 1.4 | 3.8 | 5.2 | 4.9 | 1.4 | 0.7 | 1.3 | 3.0 | 16.8 | .622 | — |
+| Season through this month | 19 | Miami Heat | NBA | SG / PG | 17 | 12 | 32.5 | 5.4 | 10.4 | .514 | 0.6 | 2.2 | .263 | 4.8 | 8.2 | .583 | .542 | 4.2 | 4.5 | .922 | 1.5 | 3.3 | 4.8 | 4.3 | 1.3 | 0.6 | 1.1 | 2.6 | 15.5 | .624 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 

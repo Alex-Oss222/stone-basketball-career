@@ -352,6 +352,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -688,6 +692,10 @@
         {
           "label": "Closed game",
           "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md"
         },
         {
           "label": "Dated milestone working records and player replies",
@@ -1079,6 +1087,10 @@
         {
           "label": "Closed game",
           "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md"
         },
         {
           "label": "Dated milestone working records and player replies",
@@ -1580,6 +1592,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1888,6 +1904,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2190,6 +2210,10 @@
         {
           "label": "Closed game",
           "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md"
         },
         {
           "label": "Dated milestone working records and player replies",
@@ -2503,6 +2527,10 @@
         {
           "label": "Closed game",
           "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md"
         },
         {
           "label": "Dated milestone working records and player replies",
@@ -2866,6 +2894,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2891,7 +2923,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "23 closed game records in 2003-04 through 2003-11-29. Competitions remain separate.",
+      "summary": "24 closed game records in 2003-04 through 2003-11-29. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2918,12 +2950,12 @@
             ],
             [
               "regular",
-              16,
-              32.03485416666667,
-              15.4375,
-              4.6875,
-              4.1875,
-              1.125,
+              17,
+              32.49201666666667,
+              15.470588235294118,
+              4.764705882352941,
+              4.294117647058823,
+              1.1176470588235294,
               "Complete"
             ]
           ]
@@ -2951,12 +2983,12 @@
             ],
             [
               "regular",
-              88,
-              164,
-              0.5365853658536586,
-              9,
-              34,
-              0.2647058823529412
+              91,
+              177,
+              0.5141242937853108,
+              10,
+              38,
+              0.2631578947368421
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -3200,6 +3232,16 @@
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md"
               }
+            ],
+            [
+              "2003-11-29",
+              "regular",
+              "Toronto Raptors",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md"
+              }
             ]
           ]
         },
@@ -3423,6 +3465,10 @@
         {
           "label": "Closed game",
           "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md"
         },
         {
           "label": "Dated milestone working records and player replies",
