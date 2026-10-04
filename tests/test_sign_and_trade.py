@@ -162,9 +162,13 @@ class LegalityTests(unittest.TestCase):
 
     def test_ids_packets_and_the_rights_share(self):
         st = self.williams()
-        trade = {"partner": "Denver Nuggets", "miami_out": ["LaPhonso Ellis"], "miami_in": ["Shammond Williams"], "picks_out": [], "picks_in": [],
+        # A rebuilding Denver takes Ellis's salary only with a first-round pick (club objectives; it refuses him alone).
+        first = [{"year": 2005, "round": 1}]
+        alone = {"partner": "Denver Nuggets", "miami_out": ["LaPhonso Ellis"], "miami_in": ["Shammond Williams"], "picks_out": [], "picks_in": [],
                  "kind": "sign_and_trade", "sign_and_trade_in": st}
-        plain = {"partner": "Denver Nuggets", "miami_out": ["LaPhonso Ellis"], "miami_in": ["Shammond Williams"], "picks_out": [], "picks_in": []}
+        self.assertIsNone(self.desk.acceptance_packet(alone)[0])
+        trade = dict(alone, picks_out=first)
+        plain = {"partner": "Denver Nuggets", "miami_out": ["LaPhonso Ellis"], "miami_in": ["Shammond Williams"], "picks_out": first, "picks_in": []}
         self.assertNotEqual(self.desk.trade_id(trade), self.desk.trade_id(plain))                                   # kind and contract
         self.assertNotEqual(self.desk.trade_id(trade), self.desk.trade_id(dict(trade, sign_and_trade_in=self.williams(years=4))))
         packet, valuation = self.desk.acceptance_packet(trade)

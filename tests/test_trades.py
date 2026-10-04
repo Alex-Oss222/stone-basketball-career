@@ -12,7 +12,7 @@ from runtime.market import Market
 from runtime.private_service import Store
 from runtime.rotations import holdings_errors, miami_departures, real_rotation, load_rosters
 from runtime.signing import ledger_errors
-from runtime.trades import Assets, TradeDesk
+from runtime.trades import ACCEPT_BOUNDS, ACCEPT_FLOOR, SEARCH_MIN_ACCEPT, Assets, TradeDesk
 from scripts import run_trade
 from scripts.run_free_agency import local_draw
 
@@ -64,11 +64,16 @@ class TradeDeskTests(unittest.TestCase):
         self.assertEqual(Assets.premium([0.5, 2.0]), 0.5 + 2.0 ** 7)
         pick = self.desk.assets.pick_value({"year": 2004, "round": 1}, "Miami Heat", miami_own=True)
         self.assertGreater(pick["value"], self.desk.assets.pick_value({"year": 2004, "round": 1}, "San Antonio Spurs")["value"])
-        packet, valuation = self.desk.acceptance_packet({"partner": "Denver Nuggets", "miami_out": ["Eddie Jones"], "miami_in": ["Nene Hilario"]})
+        # Denver keeps Nene: a top-ten pick on his rookie scale goes only for clearly more on Denver's own objective.
+        refused, why = self.desk.acceptance_packet({"partner": "Denver Nuggets", "miami_out": ["Eddie Jones"], "miami_in": ["Nene Hilario"]})
+        self.assertIsNone(refused)
+        self.assertIn("keeps Nene Hilario", why[0])
+        trade = {"partner": "New York Knicks", "miami_out": ["Eddie Jones"], "miami_in": ["Latrell Sprewell"]}
+        packet, valuation = self.desk.acceptance_packet(trade)
         self.assertEqual(decision_errors(packet), [])
-        self.assertEqual(valuation["posture"], "rebuilding")
+        self.assertEqual(valuation["posture"], "middle")
         self.assertTrue(-1 <= valuation["partner_gain"] <= 1)
-        again, _ = self.desk.acceptance_packet({"partner": "Denver Nuggets", "miami_out": ["Eddie Jones"], "miami_in": ["Nene Hilario"]})
+        again, _ = self.desk.acceptance_packet(trade)
         self.assertEqual(packet, again)                                  # same proposal, same date, same packet
 
     def test_search_ranks_legal_proposals(self):
@@ -77,7 +82,8 @@ class TradeDeskTests(unittest.TestCase):
         for f in found:
             self.assertEqual(self.desk.errors(f["trade"]), [])
             self.assertGreater(f["miami_gain"], 0)
-            self.assertTrue(0.02 <= f["accept"] <= 0.9)
+            self.assertTrue(SEARCH_MIN_ACCEPT <= f["accept"] <= ACCEPT_BOUNDS[1])   # only deals the partner would take
+            self.assertGreaterEqual(f["partner_gain"], ACCEPT_FLOOR)
 
 
 class TradeWriteBackTests(unittest.TestCase):

@@ -63,12 +63,28 @@ POSTURE = {"contending": {"players": 1.15, "picks": 0.7, "old_players": 1.0}, "m
            "rebuilding": {"players": 0.9, "picks": 1.3, "old_players": 0.7}}
 POSTURE_ORDER = ("contending", "middle", "rebuilding")   # partners asked first in an own sign-and-trade-out
 CONTENDING_WINS, REBUILDING_WINS, OLD_AGE = 50, 30, 30
-ACCEPT_SLOPE, ACCEPT_LIMITS = 6.0, (0.02, 0.90)   # on the relative value change (-1 to 1)
+ACCEPT_SLOPE, ACCEPT_LIMITS = 6.0, (0.02, 0.90)   # legacy curve (closed decisions only); see the club objectives below
+# Club objectives (design 7.5, November 2003). A real club answers on its own objective, not on a league-wide
+# talent score: this season's production, future surplus and picks, weighted by its stance. Judgement constants.
+STANCE_WEIGHTS = {"contending": {"now": 1.0, "future": 0.35, "picks": 0.6, "cash": 0.2},
+                  "middle": {"now": 0.7, "future": 0.7, "picks": 1.0, "cash": 0.5},
+                  "rebuilding": {"now": 0.35, "future": 1.0, "picks": 1.4, "cash": 1.0}}
+MIAMI_WEIGHTS = {"now": 1.0, "future": 0.6, "picks": 0.8, "cash": 0.3}   # trying to win around a rookie Wade: now dominates
+STANCE_YOUNG_AGE = 25.5                  # a middle club whose top eight average this young or less is building
+AGE_FACTOR = ((23, 1.15), (28, 1.0), (30, 0.9), (32, 0.75), (99, 0.55))   # expected production ahead, by age
+WALK_YEAR_DISCOUNT = {"contending": 0.9, "middle": 0.75, "rebuilding": 0.65}  # a seller's own expiring veteran (28+): he walks in July
+TOP_PICK_ROOKIE_SALARY = 1800000         # rookie-scale 2003-04 salary at or above this stands for a top-ten pick
+UNTOUCHABLE_MARGIN = 0.20                # a club parts with an untouchable only for this much more on its own objective
+ACCEPT_FLOOR = -0.03                     # below this on the partner's objective: a flat no (no draw)
+ACCEPT_HURDLE, ACCEPT_STEEPNESS = 0.06, 25.0   # a flat deal is usually passed; 50% at +6%, about 90% at +15%
+ACCEPT_BOUNDS = (0.02, 0.95)
+DUMP_VALUE_PER_5M = 0.25                 # value points per $5M of a season's salary a club sheds on purpose
+SEARCH_MIN_ACCEPT = 0.40                 # Miami proposes only what the partner would plausibly take
 MAX_OUT, MAX_IN = 2, 2                   # players a search proposal moves each way
 SEARCH_MIN_GAIN = 0.05                   # Miami's value gain for a proposal to be worth making
 # Sign-and-trade (design 7.1 and 7.4)
 SIGN_AND_TRADE_RIGHTS = ("bird",)        # both directions; inferred (one 2003 observation: Miller, full Bird, 7 years); Early Bird / Non-Bird / room not found
-SIGN_AND_TRADE_RIGHTS_SHARE = 0.5        # judgement: the incumbent values the player it would otherwise lose for nothing at half his contract value
+SIGN_AND_TRADE_RIGHTS_SHARE = 0.25       # judgement: the incumbent values the player it would otherwise lose for nothing at a quarter of his value (club-objective model; real sign-and-trade returns were small, e.g. Boston for Walker in 2005)
 PARTNER_LOCATION = 0.5                   # judgement: a partner club's location appeal in the player's consent draw
 OWN_OUT_ACCEPT_MARGIN = 0.1              # judgement: an own sign-and-trade-out goes to the first partner whose acceptance clears the floor by this
 BIRD_RAISE = 0.125
@@ -98,6 +114,30 @@ def dated_inventory(on, valuation, root=ROOT):
     rosters = league.rosters
     on_date = {b: club for club, members in rosters.items() for b in members}
     in_baseline = set().union(*league.baseline.values())
+    # Terms of the summer's signings: reported years and total spread flat over the seasons, or, unreported,
+    # the minimum for the player's service (an estimate, labelled so). Rule 1 skips moves involving Miami.
+    signed = {}
+    for row in read_json(TRANSACTIONS_PATH, root)["signings"]:
+        if (row.get("kind") in ("signing", "re_sign", "sign_and_trade", "match", "match_declined", "offer_sheet", "rookie_signing") and row.get("bbr_id")
+                and not row.get("involves_miami") and row.get("to") != MIAMI and (row.get("date") or UNDATED_EXIT) <= on):
+            signed[row["bbr_id"]] = row
+    service = valuation.service
+
+    def signed_entry(p, holder):
+        row = signed.get(p["bbr_id"])
+        if row is None or row.get("to") != holder:
+            return None
+        start = int(SEASON[:4])
+        if row.get("years") and row.get("total"):
+            per = int(round(row["total"] / row["years"]))
+            seasons = [f"{start + i}-{str(start + i + 1)[-2:]}" for i in range(row["years"])]
+            return dict(p, status="under_contract", schedule={s_: per for s_ in seasons},
+                        amount_kind={s_: "contract_salary" for s_ in seasons}, terms_source="reported total, spread flat",
+                        signed_date=row.get("date"))
+        return dict(p, status="under_contract", schedule={SEASON: valuation.minimum(service.get(p["bbr_id"]))},
+                    amount_kind={SEASON: "contract_salary"}, terms_source="unreported: minimum for his service (estimate)",
+                    signed_date=row.get("date"))
+
     placed = {club: [] for club in june}
     for club, entry in june.items():
         for p in entry["players"]:
@@ -112,7 +152,7 @@ def dated_inventory(on, valuation, root=ROOT):
             else:
                 holder = club                     # under contract but off the end-of-season list (injured all year)
             if holder != MIAMI and holder in placed:
-                placed[holder].append(dict(p, held_on=on))
+                placed[holder].append(signed_entry(p, holder) or dict(p, held_on=on))
     return {club: (entry if club == MIAMI else dict(entry, players=placed[club], as_of=on)) for club, entry in june.items()}
 
 
@@ -128,21 +168,54 @@ class Assets:
         self.tax_line = self.cap_rules.get("luxury_tax_line_projection_july_2003", 57000000)
         self.positions = {}
         self._payroll = {}
+        self._stance = {}
         for club, entry in read_json(END_OF_SEASON_PATH, root)["clubs"].items():
             for p in entry["players"]:
                 if p.get("bbr_id"):
                     self.positions[p["bbr_id"]] = (club, p.get("position") or "SF", p.get("depth") or 9)
 
     def posture(self, club):
-        wins = self.standings.get(club, {}).get("wins", 41)
-        return "contending" if wins >= CONTENDING_WINS else "rebuilding" if wins <= REBUILDING_WINS else "middle"
+        """The club's stance on the date: its 2002-03 record, and a middle club whose core is young is building
+        (the top eight of its dated roster by production; judgement STANCE_YOUNG_AGE)."""
+        if club not in self._stance:
+            wins = self.standings.get(club, {}).get("wins", 41)
+            stance = "contending" if wins >= CONTENDING_WINS else "rebuilding" if wins <= REBUILDING_WINS else "middle"
+            if stance == "middle":
+                ages = sorted(((self.valuation.value(p["bbr_id"]) or 0.0, self.valuation.age(p["bbr_id"]))
+                               for p in self.contracts.get(club, {}).get("players", []) if p.get("bbr_id")), reverse=True)[:8]
+                ages = [a for _, a in ages if a is not None]
+                if ages and sum(ages) / len(ages) <= STANCE_YOUNG_AGE and wins < 41:
+                    stance = "rebuilding"
+            self._stance[club] = stance
+        return self._stance[club]
 
     def payroll(self, club):
+        """The club's 2003-04 salary on the date, from its dated inventory (`dated_inventory`), not the June list."""
         if club == MIAMI:
             return None   # Miami's ledger is the front office's
         if club not in self._payroll:
-            self._payroll[club] = club_ledger(club, SEASON, self.root)["known_total"]
+            entry = self.contracts.get(club, {})
+            self._payroll[club] = (sum(int(p["schedule"].get(SEASON) or 0) for p in entry.get("players", [])
+                                       if p.get("status") in UNDER_CONTRACT or "option_exercised" in (p.get("status") or ""))
+                                   # a first-round pick counts at his scale amount, signed or not (1999 CBA cap hold)
+                                   + sum(int(d.get("current_cap_hold") or 0) for d in entry.get("draft_rights", [])))
         return self._payroll[club]
+
+    def untouchable(self, club, player):
+        """A club's young top pick on his rookie scale, or one of its two most valuable players to itself."""
+        if player.get("status") == "under_rookie_contract" and self.salary(player) >= TOP_PICK_ROOKIE_SALARY:
+            return "top-ten pick on his rookie scale"
+        weights = STANCE_WEIGHTS[self.posture(club)]
+        ranked = sorted((self.club_value(self.player_value(p), weights), p.get("bbr_id"))
+                        for p in self.contracts.get(club, {}).get("players", []) if p.get("bbr_id") and p.get("status") in UNDER_CONTRACT)
+        top = {b for _, b in ranked[-2:]}
+        return "one of its two most valuable players" if player.get("bbr_id") in top else None
+
+    @staticmethod
+    def club_value(v, weights, walk_discount=1.0):
+        """One player's value to a club with these weights: this season's production and the future."""
+        total = (weights["now"] * v["now"] + weights["future"] * v["future"]) * walk_discount + weights["cash"] * v["relief"]
+        return total if total >= 0 else total * NEGATIVE_SHARE
 
     def salary(self, player):
         """2003-04 salary of a player entry (Miami sheet or inventory shape)."""
@@ -176,9 +249,15 @@ class Assets:
         total += relief
         if total < 0:
             total *= NEGATIVE_SHARE
+        # The club-objective split: this season's production, and the future (production ahead by age over
+        # the years of control, plus the contract's surplus or burden).
+        factor = next(f for limit, f in AGE_FACTOR if (age or 27) <= limit)
+        control = years + (1 if player.get("status") == "under_rookie_contract" else 0)
+        future = production * factor * min(CONTRACT_YEARS_COUNTED, control - 1) / 2 + term
         return {"player": player["player"], "bbr_id": bbr, "value": round(total, 3), "production": round(production, 3),
                 "contract_term": round(term, 3), "relief": round(relief, 3), "salary": salary, "years": years,
-                "age": age, "basis": basis}
+                "age": age, "basis": basis, "now": round(production, 3), "future": round(future, 3),
+                "walk_year": years == 1 and (age or 0) >= 28 and player.get("status") != "under_rookie_contract"}
 
     def pick_value(self, pick, owner_record_club, miami_own=False):
         """A draft pick from the chart, placed by the owning club's last record and regressed for later years."""
@@ -206,6 +285,18 @@ class Assets:
         package is compared as the single player it would be worth: two 2s make about a 2.2, not a 4."""
         total = Assets.premium(values)
         return total ** (1 / STAR_EXPONENT) if total > 1 else total
+
+
+def acceptance(v):
+    """The partner's chance of accepting, from its objective (`TradeDesk.valuation`), or None for a flat no:
+    below the floor (a salary dump counted), or an untouchable without UNTOUCHABLE_MARGIN more."""
+    gain = v["objective_gain"]
+    if v.get("untouchable") and gain < UNTOUCHABLE_MARGIN:
+        return None
+    if gain < ACCEPT_FLOOR:
+        return None
+    p = 1 / (1 + math.exp(-ACCEPT_STEEPNESS * (gain - ACCEPT_HURDLE)))
+    return round(min(ACCEPT_BOUNDS[1], max(ACCEPT_BOUNDS[0], p)), 3)
 
 
 # -- legality ------------------------------------------------------------------------------------
@@ -381,7 +472,11 @@ class TradeDesk:
             t["in_contracted"] += full
         room = self.fo.cap_room(renounce=(own["player"],) if own else ())
         t["miami_after"] = room["committed"] + room["holds"] - t["out_contracted"] + t["in_full"]
-        t["partner_after"] = (self.assets.payroll(club) or 0) + t["out_full"] - t["in_contracted"]
+        # The player a club signs only to trade to Miami is not also on its payroll under his real contract
+        # (the dated inventory may carry the real re-signing that the sign-and-trade replaces).
+        real = self.partner_player(club, acquired["player"]) if acquired else None
+        t["partner_after"] = ((self.assets.payroll(club) or 0) - (self.assets.salary(real) if real and real.get("terms_source") else 0)
+                              + t["out_full"] - t["in_contracted"])
         return t
 
     def errors(self, trade, ignore_timing=False):
@@ -530,7 +625,7 @@ class TradeDesk:
         incumbent signs only to trade counts for it at SIGN_AND_TRADE_RIGHTS_SHARE of his value."""
         club = trade["partner"]
         posture = self.assets.posture(club)
-        mult = POSTURE[posture]
+        weights = STANCE_WEIGHTS[posture]
         acquired = st_in(trade)
         miami_out = [self.assets.player_value(self.resolve(n, trade), for_club=club) for n in trade.get("miami_out", [])]
         miami_in = []
@@ -542,34 +637,50 @@ class TradeDesk:
         picks_out = [dict(self.assets.pick_value(p, MIAMI, miami_own=True), pick=p) for p in trade.get("picks_out", [])]
         picks_in = [dict(self.assets.pick_value(p, club), pick=p) for p in trade.get("picks_in", [])]
 
-        def partner_view(players, picks):
+        def partner_view(players, picks, own=False):
+            """The partner's objective: its stance weights; its own walk-year veterans are worth less to it."""
             vals = []
             for v in players:
-                factor = mult["old_players"] if (v["age"] or 0) >= OLD_AGE else mult["players"]
-                factor *= v.get("partner_share", 1.0)
-                vals.append(max(0.0, v["value"]) * factor if v["value"] > 0 else v["value"])
-            vals += [p["value"] * mult["picks"] for p in picks]
+                walk = WALK_YEAR_DISCOUNT[posture] if (own and v.get("walk_year")) else 1.0
+                vals.append(Assets.club_value(v, weights, walk) * v.get("partner_share", 1.0))
+            vals += [p["value"] * weights["picks"] for p in picks]
             return Assets.effective(vals)
 
         def miami_view(players, picks):
+            """Miami's objective (MIAMI_WEIGHTS: this season first) with its positional fit."""
             needs = self.fo.needs()
             vals = []
             for v in players:
                 pos = self.assets.positions.get(v["bbr_id"], (None, "SF", 9))[1].split("-")[0]
                 fit = self.fo.fit(pos, needs)
-                vals.append(v["value"] * (0.75 + 0.5 * fit) if v["value"] > 0 else v["value"])
-            vals += [p["value"] for p in picks]
+                value = Assets.club_value(v, MIAMI_WEIGHTS)
+                vals.append(value * (0.75 + 0.5 * fit) if value > 0 else value)
+            vals += [p["value"] * MIAMI_WEIGHTS["picks"] for p in picks]
             return Assets.effective(vals)
 
         # Relative change of the effective values, so a star-for-prospects deal and a swap of reserves sit on one scale.
         def relative(after, before):
             return (after - before) / max(after, before, 1.0)
 
-        partner_gain = relative(partner_view(miami_out, picks_out), partner_view(miami_in, picks_in))
+        partner_gain = relative(partner_view(miami_out, picks_out), partner_view(miami_in, picks_in, own=True))
         miami_gain = relative(miami_view(miami_in, picks_in), miami_view(miami_out, picks_out))
+        # A salary dump: a club not contending, or over the tax line, sheds real salary on purpose and gets a
+        # first-round pick or a prospect (23 or younger with production) back. The salary it sheds is worth
+        # something to it (DUMP_VALUE_PER_5M a season, by its cash weight); nothing else lets it take a loss.
+        # A sign-and-trade player's salary was never on his signing club's books, so it is not shed.
+        shed = (sum(v["salary"] * v["years"] for v in miami_in if not v.get("partner_share"))
+                - sum(v["salary"] * v["years"] for v in miami_out))
+        sweetener = any(p["pick"]["round"] == 1 for p in picks_out) or any((v["age"] or 99) <= 23 and v["now"] > 0 for v in miami_out)
+        payroll = self.assets.payroll(club) or 0
+        dump = bool(shed >= 5000000 and sweetener and (posture != "contending" or payroll > self.assets.tax_line))
+        dump_value = DUMP_VALUE_PER_5M * shed / 5000000 * weights["cash"] if dump else 0.0
+        objective_gain = partner_gain + dump_value / max(1.0, partner_view(miami_in, picks_in, own=True))
+        untouchable = [(n, why) for n in trade.get("miami_in", []) if not (acquired and acquired["player"] == n)
+                       for why in [self.assets.untouchable(club, self.resolve(n, trade) or {})] if why]
         return {"partner": club, "posture": posture, "miami_out": miami_out, "miami_in": miami_in, "picks_out": picks_out,
                 "picks_in": picks_in, "partner_gain": round(partner_gain, 3), "miami_gain": round(miami_gain, 3),
-                "miami_out_view": round(miami_view(miami_out, picks_out), 3)}
+                "miami_out_view": round(miami_view(miami_out, picks_out), 3), "dump": dump, "shed": shed,
+                "objective_gain": round(objective_gain, 3), "untouchable": untouchable}
 
     def fits_partner(self, trade):
         """The partner has minutes for the arriving positions (at most two incumbents at depth 1-2 there)
@@ -611,8 +722,13 @@ class TradeDesk:
         if not self.fits_partner(trade):
             return None, [f"{trade['partner']} has no minutes at the arriving positions"]
         v = self.valuation(trade)
-        p = 1 / (1 + math.exp(-ACCEPT_SLOPE * max(-10.0, min(10.0, v["partner_gain"]))))
-        p = round(min(ACCEPT_LIMITS[1], max(ACCEPT_LIMITS[0], p)), 3)
+        p = acceptance(v)
+        if p is None:
+            why = (f"{trade['partner']} keeps {', '.join(n for n, _ in v['untouchable'])} "
+                   f"({'; '.join(w for _, w in v['untouchable'])}): it needs {UNTOUCHABLE_MARGIN:.0%} more on its own objective"
+                   if v["untouchable"] and v["objective_gain"] < UNTOUCHABLE_MARGIN else
+                   f"{trade['partner']} ({v['posture']}) loses {v['objective_gain']:+.1%} on its own objective, below its floor {ACCEPT_FLOOR:+.0%}")
+            return None, [why]
         outs = ", ".join(trade.get("miami_out", []) + [f"{x['year']} round {x['round']}" for x in trade.get("picks_out", [])]) or "nothing"
         ins = ", ".join(trade.get("miami_in", []) + [f"{x['year']} round {x['round']}" for x in trade.get("picks_in", [])]) or "nothing"
         st = st_in(trade) or st_out(trade)
@@ -622,8 +738,10 @@ class TradeDesk:
             who = "it signs and trades" if st_in(trade) else "Miami re-signed and trades"
             contract = (f" {st['player']} on the contract {who} ({len(st['schedule'])} seasons, ${total:,}; sign-and-trade)")
         question = f"Does {trade['partner']} accept Miami's proposal: {outs} for {ins}?" + (f" The sign-and-trade covers{contract}." if contract else "")
-        basis = (f"{trade['partner']} posture {v['posture']} (2002-03 record); its relative value change {v['partner_gain']:+.3f} "
-                 f"(star premium {STAR_EXPONENT}, pick chart, contract terms); logistic slope {ACCEPT_SLOPE} kept inside {ACCEPT_LIMITS}. "
+        basis = (f"{trade['partner']} stance {v['posture']} (2002-03 record and the age of its core); its change on its own objective "
+                 f"{v['objective_gain']:+.3f} (weights {STANCE_WEIGHTS[v['posture']]}, star premium {STAR_EXPONENT}, pick chart, contract terms"
+                 + (f"; a salary dump shedding ${v['shed']:,} with a pick or prospect back" if v["dump"] else "") +
+                 f"). Floor {ACCEPT_FLOOR:+.0%}; above it, 50% at {ACCEPT_HURDLE:+.0%} (steepness {ACCEPT_STEEPNESS}) inside {ACCEPT_BOUNDS}. "
                  f"Miami's own gain {v['miami_gain']:+.3f}.")
         if st_in(trade):
             basis += (f" The incumbent counts the player it signs only to trade at {SIGN_AND_TRADE_RIGHTS_SHARE:.0%} of his value "
@@ -675,8 +793,8 @@ class TradeDesk:
                 for outs in combos:
                     trade = {"partner": club, "miami_out": outs, "miami_in": [name], "picks_out": [], "picks_in": []}
                     packet, v = self.acceptance_packet(trade)
-                    if packet is None:
-                        continue
+                    if packet is None or packet["options"]["accept"] < SEARCH_MIN_ACCEPT:
+                        continue                   # only deals the partner would plausibly take
                     gain = v["miami_gain"]
                     if name in wanted:
                         gain *= 1 + STANDING_WEIGHT[standing]
@@ -684,8 +802,8 @@ class TradeDesk:
                         gain *= 1 - STANDING_WEIGHT[standing]
                     if gain < SEARCH_MIN_GAIN:
                         continue
-                    row = {"trade": trade, "miami_gain": round(gain, 3), "partner_gain": v["partner_gain"],
-                           "accept": packet["options"]["accept"], "score": round(gain * packet["options"]["accept"], 3),
+                    row = {"trade": trade, "miami_gain": round(gain, 3), "partner_gain": v["objective_gain"],
+                           "accept": packet["options"]["accept"], "score": round(gain, 3),
                            "wade_request": name in wanted or any(o in opposed for o in outs)}
                     if star and answer != "approve":
                         self.needing_consultation.append(dict(row, consultation="required", star_value=round(self.assets.valuation.value(p["bbr_id"]), 3)))
