@@ -58,7 +58,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Orlando Magic | 79 | N/A | 20.7 | 6.8 | 5.7 | 0.7 | 0.8 | 0.4 | 1.3 | 0.418 | 0.000 | 0.742 |
-| 2003-04 | MIA | 36 | 17 | 26.2 | 9.3 | 7.4 | 1.2 | 1.1 | 0.6 | 1.7 | 42.7% | 33.3% | 73.0% |
+| 2003-04 | MIA | 37 | 17 | 26.0 | 9.3 | 7.4 | 1.2 | 1.0 | 0.6 | 1.7 | 42.9% | 33.3% | 73.3% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

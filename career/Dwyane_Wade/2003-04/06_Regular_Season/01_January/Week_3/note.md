@@ -14,4 +14,6 @@ days: 15-21
 
 ## Games and events
 
+- 2004-01-15: Miami Heat 86 at Utah Jazz 79 — Miami Heat W 86-79 ([Game 1](Game_1.md), event `2004-01-15-miami-heat-at-utah-jazz`)
+
 ## Consequences
