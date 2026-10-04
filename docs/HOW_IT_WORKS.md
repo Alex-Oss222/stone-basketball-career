@@ -50,7 +50,7 @@ Each driver processes days in order and **stops** when a draw is missing or Wade
    - Free agency: `python scripts/run_free_agency.py --write <date>`.
    - Camp and preseason: `python scripts/run_camp.py --write <date>`. Its stages are 2003-09-30 (invites and injuries), 10-05 (preseason requests), 10-24 (evaluation and rotation) and 10-27 (the cut).
    - Regular season: `python scripts/build_season_games.py --write <date>` for Miami and `python scripts/build_league_slate.py --write <date>` for the other games.
-2. If it stopped on pending draws, run `python scripts/draw_decisions.py`. For games, push and wait for Railway, then run `python scripts/collect_results.py`. Then run the driver again.
+2. If it stopped on pending draws, run `python scripts/draw_decisions.py`. For games, run `python scripts/play_games.py`; a game it refuses because its inputs changed since the deploy waits for a push and Railway, then `python scripts/collect_results.py`. Then run the driver again.
 3. If it stopped on a question for Wade, ask the user and record the reply. See `docs/live_player_milestones.md` and `scripts/player_milestone.py`.
 4. Write back results: `python scripts/write_back_results.py --write`.
 5. Before every commit: `python scripts/validate_repository.py`, `python scripts/update_player_reports.py --check`, `python scripts/build_league_cards.py --check`, and `python -m unittest discover -s tests`.

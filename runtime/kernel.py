@@ -136,6 +136,7 @@ class TeamInput:
     rest_days: int = 2              # days off before this game; 0 is the second night of a back-to-back
     injuries: bool = False          # draw injuries for this club's players (the simulated club; E7)
     starters: tuple = ()            # dated staff choice; availability may require replacements
+    season_roster: bool = False     # dressed by the engine even when every availability is 0 or 1 (absence spells)
 
 
 def team_errors(team, rules):
@@ -147,6 +148,8 @@ def team_errors(team, rules):
         errors.append("rest days must be a whole number from 0 to 10")
     if not isinstance(team.injuries, bool):
         errors.append("injuries must be true or false")
+    if not isinstance(team.season_roster, bool):
+        errors.append("season_roster must be true or false")
     for p in team.players:
         if type(p.returning) is not int or not 0 <= p.returning <= REINJURY_GAMES:
             errors.append(f"{p.player_id}: returning must be a whole number of games from 0 to {REINJURY_GAMES}")
@@ -162,12 +165,14 @@ def team_errors(team, rules):
     if len(players) < rules["players_on_floor"]:
         errors.append("fewer than five available players")
     availability = [p.availability for p in players]
-    if any(isinstance(a, bool) or not isinstance(a, (int, float)) or not math.isfinite(a) or not 0 < a <= 1
+    # A spell-flagged season roster may mark a player out for this game (availability 0).
+    floor_ok = (lambda a: 0 <= a <= 1) if team.season_roster is True else (lambda a: 0 < a <= 1)
+    if any(isinstance(a, bool) or not isinstance(a, (int, float)) or not math.isfinite(a) or not floor_ok(a)
            for a in availability):
         errors.append("availability must be greater than 0 and at most 1")
         season_roster = False
     else:
-        season_roster = any(a < 1 for a in availability)
+        season_roster = team.season_roster is True or any(a < 1 for a in availability)
     # A game-day list dresses everyone; a season roster with availabilities is dressed by the engine.
     limit = MAX_ROSTER_INPUT if season_roster else rules["game_day_actives"]
     if len(players) > limit:
@@ -230,6 +235,8 @@ def team_packet(team):
     if not team.starters:
         # Preserve the shape (and journal digest) of historical input packets.
         data.pop("starters")
+    if not team.season_roster:
+        data.pop("season_roster")       # historical packets have no such field
     data["players"] = [dict(p, ratings=dict(sorted(p["ratings"].items()))) for p in data["players"]]
     for p in data["players"]:
         if not p.get("returning"):

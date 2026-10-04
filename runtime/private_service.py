@@ -20,10 +20,13 @@ Public (results are not secret; only the seed is):
 Authenticated with ENGINE_API_TOKEN:
   GET  /ready
   POST /corrections?event_id=&reason=
+  POST /games                      play one request whose deployed inputs match the caller's
+  POST /decisions                  draw one decision packet
 """
 from contextlib import closing
 from http.server import BaseHTTPRequestHandler
 from pathlib import Path
+import re
 from urllib.parse import parse_qs, unquote, urlsplit
 import hashlib
 import hmac
@@ -187,6 +190,57 @@ def play_requests(store, root):
 
 
 MAX_DECISION_BYTES = 65536
+MAX_GAME_BYTES = 262144
+GAME_PATH = re.compile(r"^career/[A-Za-z0-9_\-./]+/Game_[0-9]+\.request\.json$|^career/[A-Za-z0-9_\-./]+/Games/[a-z0-9\-]+\.request\.json$")
+
+
+def play_posted_game(store, root, body):
+    """`POST /games`: play one game request now, from the engine's deployed copy of the repository.
+
+    The body is {"path", "request", "fingerprint"}: the request exactly as it will be committed at `path`,
+    and the caller's `game_requests.input_fingerprint`. The request is written into the deployed copy
+    (refused if a different request is already there), its inputs are fingerprinted here, and a
+    difference refuses the game: something the engine reads has changed since the deploy, so the game
+    waits for a push. Otherwise it is played (or, already played, its stored result returned) exactly as
+    the boot scan would, with the same journal and no-re-roll rule. Returns (status, result)."""
+    from .game_requests import input_fingerprint, load_request
+    from .game_runner import freeze_inputs, replay_packet, run_game
+    rel = body.get("path")
+    data = body.get("request")
+    if not isinstance(rel, str) or ".." in rel or not GAME_PATH.match(rel) or not isinstance(data, dict):
+        raise ValueError("path must be a career game request path and request a JSON object")
+    path = Path(root) / rel
+    text = json.dumps(data, indent=1) + "\n"
+    written = False
+    if path.exists():
+        if json.loads(path.read_text(encoding="utf-8")) != data:
+            raise ValueError("a different request is already at that path")
+    else:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8")
+        written = True
+    try:
+        mine = input_fingerprint(path, root)
+    except Exception:
+        if written:
+            path.unlink()
+        raise
+    if mine != body.get("fingerprint"):
+        if written:
+            path.unlink()                       # the deployed copy stays as it was deployed
+        raise ValueError("the engine's deployed inputs differ from the caller's for this game; push and redeploy first")
+    home, away, kwargs = load_request(path, root)
+    event_id = kwargs["event_id"]
+    existing = store.result(event_id)
+    if existing is not None:
+        packet = replay_packet(home, away, store, existing, **kwargs)
+        store.close_digest(event_id, hashlib.sha256(canonical(packet)).hexdigest())
+        return "already_played", existing
+    packet = freeze_inputs(home, away, store, **kwargs)[2]
+    packet_hash = hashlib.sha256(canonical(packet)).hexdigest()
+    result = run_game(home, away, journal=store, **kwargs)
+    store.save_result(event_id, packet_hash, result)
+    return "played", result
 
 
 def play_decision(store, data):
@@ -212,9 +266,11 @@ def play_decision(store, data):
     return "decided", store.result(data["event_id"])
 
 
-def handler(store, token, games, career_site=None):
+def handler(store, token, games, career_site=None, root=None):
     if not token or len(token) < 32:
         raise ValueError("ENGINE_API_TOKEN must be at least 32 characters")
+    root = Path(root) if root is not None else Path(__file__).resolve().parents[1]
+    game_lock = threading.Lock()
 
     class Handler(BaseHTTPRequestHandler):
         def log_message(self, fmt, *args):
@@ -289,6 +345,19 @@ def handler(store, token, games, career_site=None):
                 if parsed.path == "/corrections":
                     store.correct(query["event_id"], query["reason"])
                     return self.send(201, {"recorded": True})
+                if parsed.path.rstrip("/") == "/games":
+                    # A game played on demand from the deployed copy, refused unless its inputs match the caller's.
+                    length = int(self.headers.get("Content-Length") or 0)
+                    if length <= 0 or length > MAX_GAME_BYTES:
+                        return self.send(413 if length > 0 else 400, {"error": f"a game body of 1 to {MAX_GAME_BYTES} bytes is required"})
+                    try:
+                        body = json.loads(self.rfile.read(length).decode("utf-8"))
+                    except (UnicodeDecodeError, json.JSONDecodeError):
+                        return self.send(400, {"error": "the body must be JSON"})
+                    with game_lock:
+                        state, result = play_posted_game(store, root, body)
+                    games[result["event_id"]] = {"status": state, "request": body["path"]}
+                    return self.send(201 if state == "played" else 200, dict(result, status=state))
                 if parsed.path.rstrip("/") == "/decisions":
                     # A decision drawn on demand: the same packet, journal and no-re-roll rule as a deploy scan.
                     length = int(self.headers.get("Content-Length") or 0)
@@ -304,5 +373,7 @@ def handler(store, token, games, career_site=None):
                 self.send(404, {"error": "not found"})
             except (KeyError, ValueError) as exc:
                 self.send(409, {"error": str(exc)})
+            except Exception as exc:                 # an engine fault: report it, never drop the connection
+                self.send(500, {"error": f"{type(exc).__name__}: {exc}"})
 
     return Handler

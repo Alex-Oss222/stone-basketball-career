@@ -115,6 +115,26 @@ def load_request(path, root=ROOT):
     return home, away, kwargs
 
 
+def input_fingerprint(path, root=ROOT):
+    """SHA-256 of everything a game reads from the repository before the engine journal: both clubs' inputs
+    (rosters, rotations, ratings, ages, rest, pace), the request's fields, the league environment and the
+    spatial environment. The direct game route (`POST /games`) refuses a game whose fingerprint on the
+    engine's deployed copy differs from the caller's, so a game played there replays identically at the
+    next boot."""
+    import hashlib
+    from .era import environment_for, season_for_date
+    from .kernel import team_packet
+    from .packets import canonical
+    from .spatial_shots import load_spatial_environment
+    home, away, kwargs = load_request(path, root)
+    season = season_for_date(kwargs["game_date"])
+    material = {"home": team_packet(home), "away": team_packet(away),
+                "fields": {k: kwargs[k] for k in ("event_id", "game_date", "game_type", "venue")},
+                "environment": environment_for(season, kwargs["game_date"], root),
+                "spatial": load_spatial_environment(season, kwargs["game_date"], root)}
+    return hashlib.sha256(canonical(material)).hexdigest()
+
+
 def request_errors(root=ROOT):
     """Every request in the repository: the engine's full check for Miami's game requests (each has a
     game note), structural checks for all of the league slate plus the engine's check on a sample

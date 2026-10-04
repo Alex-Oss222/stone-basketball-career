@@ -6,7 +6,9 @@ games; real absences come in runs (an injury keeps a player out for a stretch). 
 club and season the engine journals one event, like a development swing, and its reference lays the
 season's missed games out as spells: lengths from the injury-length bands (`kernel.INJURY_LENGTHS`),
 starts spread over his stint's games. For each game the player is in or out of a spell, so his
-availability input is 1 or 0. The season total stays his real one; the draw cannot be chosen or
+availability input is 1 or 0, and the club is flagged as a season roster (`TeamInput.season_roster`)
+so the engine still dresses twelve and allocates minutes; a player out in a spell is recalled only as
+a hardship last resort. The season total stays his real one; the draw cannot be chosen or
 re-rolled; real injury dates are never used. The simulated club keeps its engine injuries instead.
 """
 import json
@@ -88,4 +90,4 @@ def apply_spells(team, season, game_date, journal, root=ROOT):
         ref = journal.close_event(spell_packet(team.team_id, key, season))
         out = plan(ref, len(stint_dates), missed)
         players.append(replace(p, availability=0.0 if stint_dates.index(game_date) in out else 1.0))
-    return replace(team, players=tuple(players))
+    return replace(team, players=tuple(players), season_roster=True)
