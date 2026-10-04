@@ -2084,6 +2084,110 @@
     }
    ],
    "winner": "Carmelo Anthony"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-02-02-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-02-02",
+   "period_end": "2004-02-08",
+   "announced_on": "2004-02-09",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/02_February/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Ron Artest",
+     "team": "Indiana Pacers",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 24.0,
+     "reb": 6.0,
+     "ast": 5.8,
+     "game_score": 21.88,
+     "score": 99.5,
+     "rank": 1
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 21.0,
+     "reb": 3.5,
+     "ast": 2.8,
+     "game_score": 18.3,
+     "score": 82.2,
+     "rank": 2
+    },
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 26.5,
+     "reb": 4.0,
+     "ast": 8.2,
+     "game_score": 17.92,
+     "score": 77.7,
+     "rank": 3
+    }
+   ],
+   "winner": "Ron Artest"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-02-02-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-02-02",
+   "period_end": "2004-02-08",
+   "announced_on": "2004-02-09",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/02_February/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Ray Allen",
+     "team": "Seattle SuperSonics",
+     "games": 5,
+     "wins": 3,
+     "losses": 2,
+     "pts": 21.6,
+     "reb": 6.2,
+     "ast": 5.4,
+     "game_score": 17.44,
+     "score": 96.2,
+     "rank": 1
+    },
+    {
+     "player": "Stephon Marbury",
+     "team": "Phoenix Suns",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 24.2,
+     "reb": 4.0,
+     "ast": 11.8,
+     "game_score": 20.77,
+     "score": 89.1,
+     "rank": 2
+    },
+    {
+     "player": "Sam Cassell",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 21.8,
+     "reb": 5.0,
+     "ast": 6.8,
+     "game_score": 17.1,
+     "score": 80.4,
+     "rank": 3
+    }
+   ],
+   "winner": "Ray Allen"
   }
  ]
 }

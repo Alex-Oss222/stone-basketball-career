@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-08**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-09**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -365,7 +365,7 @@ Card date: **2004-02-08**. 504 registry players, one Markdown card and one inter
 | [Jermaine O'Neal](onealje01.md) | Indiana Pacers | 25 | sourced | [open](onealje01.html) |
 | [Jerome Beasley](beaslje01.md) | Free agent | 23 | sourced | [open](beaslje01.html) |
 | [Jerome Williams](willije01.md) | Toronto Raptors | 30 | sourced | [open](willije01.html) |
-| [John Wallace](wallajo01.md) | Miami Heat | 29 | silhouette | [open](wallajo01.html) |
+| [John Wallace](wallajo01.md) | Miami Heat | 30 | silhouette | [open](wallajo01.html) |
 | [Josh Davis](davisjo02.md) | Atlanta Hawks | None | silhouette | [open](davisjo02.html) |
 | [Juwan Howard](howarju01.md) | Orlando Magic | 31 | sourced | [open](howarju01.html) |
 | [Kaniel Dickens](dickeka01.md) | Portland Trail Blazers | None | silhouette | [open](dickeka01.html) |

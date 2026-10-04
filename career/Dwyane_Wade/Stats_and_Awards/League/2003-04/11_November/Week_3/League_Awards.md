@@ -4,7 +4,7 @@
 
 2003-04 · Calendar coverage: November 15-21, 2003
 
-As of February 2, 2004: 2 award decision(s) closed, announced November 17, 2003.
+As of February 9, 2004: 2 award decision(s) closed, announced November 17, 2003.
 
 Official award window and announcement date: listed with each decision below.
 

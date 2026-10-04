@@ -1,0 +1,12 @@
+{
+ "date": "2004-02-09",
+ "decider": "Detroit Pistons and Golden State Warriors front offices (engine draw)",
+ "event_id": "2003-04-league-trade-2004-02-09-andersh01-dampier01-princta01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.463454,
+  "decline": 0.536546
+ },
+ "outcome": "accept",
+ "question": "Do Detroit Pistons and Golden State Warriors trade Tayshaun Prince and Shandon Anderson for Erick Dampier?"
+}

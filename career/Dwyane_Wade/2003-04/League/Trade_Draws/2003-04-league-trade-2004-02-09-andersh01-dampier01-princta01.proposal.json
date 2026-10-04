@@ -1,0 +1,39 @@
+{
+ "id": "2003-04-league-trade-2004-02-09-andersh01-dampier01-princta01",
+ "date": "2004-02-09",
+ "clubs": [
+  "Detroit Pistons",
+  "Golden State Warriors"
+ ],
+ "a": {
+  "club": "Detroit Pistons",
+  "sends": [
+   "Tayshaun Prince",
+   "Shandon Anderson"
+  ],
+  "bbr_ids": [
+   "princta01",
+   "andersh01"
+  ],
+  "salary": 7671160
+ },
+ "b": {
+  "club": "Golden State Warriors",
+  "sends": [
+   "Erick Dampier"
+  ],
+  "bbr_ids": [
+   "dampier01"
+  ],
+  "salary": 7842000
+ },
+ "gain": {
+  "Detroit Pistons": 0.082,
+  "Golden State Warriors": 0.1
+ },
+ "accept": {
+  "Detroit Pistons": 0.634,
+  "Golden State Warriors": 0.731
+ },
+ "both": 0.463454
+}

@@ -2081,6 +2081,33 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.81 x fit"
+  },
+  {
+   "deal": "2003-04-league-trade-2004-02-09-andersh01-dampier01-princta01",
+   "date": "2004-02-09",
+   "kind": "trade",
+   "player": "Tayshaun Prince",
+   "bbr_id": "princta01",
+   "from": "Detroit Pistons",
+   "to": "Golden State Warriors"
+  },
+  {
+   "deal": "2003-04-league-trade-2004-02-09-andersh01-dampier01-princta01",
+   "date": "2004-02-09",
+   "kind": "trade",
+   "player": "Shandon Anderson",
+   "bbr_id": "andersh01",
+   "from": "Detroit Pistons",
+   "to": "Golden State Warriors"
+  },
+  {
+   "deal": "2003-04-league-trade-2004-02-09-andersh01-dampier01-princta01",
+   "date": "2004-02-09",
+   "kind": "trade",
+   "player": "Erick Dampier",
+   "bbr_id": "dampier01",
+   "from": "Golden State Warriors",
+   "to": "Detroit Pistons"
   }
  ]
 }

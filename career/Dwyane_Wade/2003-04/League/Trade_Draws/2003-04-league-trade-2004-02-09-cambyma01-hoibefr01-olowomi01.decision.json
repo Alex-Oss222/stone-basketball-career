@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-04-league-trade-2004-02-09-cambyma01-hoibefr01-olowomi01",
+ "date": "2004-02-09",
+ "question": "Do Denver Nuggets and Minnesota Timberwolves trade Marcus Camby for Fred Hoiberg and Michael Olowokandi?",
+ "decider": "Denver Nuggets and Minnesota Timberwolves front offices (engine draw)",
+ "options": {
+  "accept": 0.477958,
+  "decline": 0.522042
+ },
+ "basis": "gains on own objectives {'Denver Nuggets': 0.117, 'Minnesota Timberwolves': 0.075}; acceptance {'Denver Nuggets': 0.806, 'Minnesota Timberwolves': 0.593}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}
