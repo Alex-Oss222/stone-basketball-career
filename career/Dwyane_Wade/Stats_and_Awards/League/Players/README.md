@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-17**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-18**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -215,7 +215,7 @@ Card date: **2004-02-17**. 504 registry players, one Markdown card and one inter
 | --- | --- | --- | --- | --- |
 | [Aaron McKie](mckieaa01.md) | Philadelphia 76ers | 31 | sourced | [open](mckieaa01.html) |
 | [Al Harrington](harrial01.md) | Indiana Pacers | 24 | sourced | [open](harrial01.html) |
-| [Andrei Kirilenko](kirilan01.md) | Utah Jazz | 22 | sourced | [open](kirilan01.html) |
+| [Andrei Kirilenko](kirilan01.md) | Utah Jazz | 23 | sourced | [open](kirilan01.html) |
 | [Ansu Sesay](sesayan01.md) | Seattle SuperSonics | None | silhouette | [open](sesayan01.html) |
 | [Antawn Jamison](jamisan01.md) | Dallas Mavericks | 27 | sourced | [open](jamisan01.html) |
 | [Bostjan Nachbar](nachbbo01.md) | Houston Rockets | 23 | sourced | [open](nachbbo01.html) |

@@ -2,9 +2,9 @@
 
 # Contract | Kenny Anderson
 
-Known through: 2004-02-17. [Open interactive contract](anderke01.html#contract) · [Contract history](anderke01.html#contract-history)
+Known through: 2004-02-18. [Open interactive contract](anderke01.html#contract) · [Contract history](anderke01.html#contract-history)
 
-Kenny Anderson: under contract. Evidence cutoff: 2004-02-17.
+Kenny Anderson: under contract. Evidence cutoff: 2004-02-18.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Kurt Thomas
 
-Known through: 2004-02-17. [Open interactive contract](thomaku01.html#contract) · [Contract history](thomaku01.html#contract-history)
+Known through: 2004-02-18. [Open interactive contract](thomaku01.html#contract) · [Contract history](thomaku01.html#contract-history)
 
-Kurt Thomas: under contract. Evidence cutoff: 2004-02-17.
+Kurt Thomas: under contract. Evidence cutoff: 2004-02-18.
 
 ## Current contract
 

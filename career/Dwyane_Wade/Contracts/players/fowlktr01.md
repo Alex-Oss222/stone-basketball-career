@@ -2,9 +2,9 @@
 
 # Contract | Tremaine Fowlkes
 
-Known through: 2004-02-17. [Open interactive contract](fowlktr01.html#contract) · [Contract history](fowlktr01.html#contract-history)
+Known through: 2004-02-18. [Open interactive contract](fowlktr01.html#contract) · [Contract history](fowlktr01.html#contract-history)
 
-Tremaine Fowlkes: under contract unverified. Evidence cutoff: 2004-02-17.
+Tremaine Fowlkes: under contract unverified. Evidence cutoff: 2004-02-18.
 
 ## Current contract
 

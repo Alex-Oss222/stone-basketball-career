@@ -2,9 +2,9 @@
 
 # Contract | Marcus Haislip
 
-Known through: 2004-02-17. [Open interactive contract](haislma01.html#contract) · [Contract history](haislma01.html#contract-history)
+Known through: 2004-02-18. [Open interactive contract](haislma01.html#contract) · [Contract history](haislma01.html#contract-history)
 
-Marcus Haislip: under rookie contract. Evidence cutoff: 2004-02-17.
+Marcus Haislip: under rookie contract. Evidence cutoff: 2004-02-18.
 
 ## Current contract
 
