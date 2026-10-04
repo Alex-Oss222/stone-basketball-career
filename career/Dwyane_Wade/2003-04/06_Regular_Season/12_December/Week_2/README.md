@@ -72,9 +72,9 @@ Awards are confirmed through 2003-12-05, filed by the honor's period-end date; t
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | This week | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [Previous week](../../../../Stats_and_Awards/2003-04/12_December/Week_1/README.md) | 19 | Miami Heat | NBA | SG / PG | 1 | 1 | 37.2 | 7.0 | 14.0 | .500 | 1.0 | 2.0 | .500 | 6.0 | 12.0 | .500 | .536 | 4.0 | 4.0 | 1.000 | 0.0 | 5.0 | 5.0 | 9.0 | 3.0 | 0.0 | 1.0 | 1.0 | 19.0 | .603 | — |
-| Month through this week | 19 | Miami Heat | NBA | SG / PG | 1 | 1 | 37.2 | 7.0 | 14.0 | .500 | 1.0 | 2.0 | .500 | 6.0 | 12.0 | .500 | .536 | 4.0 | 4.0 | 1.000 | 0.0 | 5.0 | 5.0 | 9.0 | 3.0 | 0.0 | 1.0 | 1.0 | 19.0 | .603 | — |
-| Season through this week | 19 | Miami Heat | NBA | SG / PG | 18 | 13 | 32.8 | 5.4 | 10.6 | .513 | 0.6 | 2.2 | .275 | 4.8 | 8.4 | .576 | .542 | 4.2 | 4.5 | .926 | 1.4 | 3.4 | 4.8 | 4.6 | 1.4 | 0.6 | 1.1 | 2.6 | 15.7 | .622 | [East ROM](../../../../Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
+| [Previous week](../../../../Stats_and_Awards/2003-04/12_December/Week_1/README.md) | 19 | Miami Heat | NBA | SG / PG | 2 | 2 | 37.8 | 7.0 | 15.0 | .467 | 1.0 | 2.0 | .500 | 6.0 | 13.0 | .462 | .500 | 4.0 | 5.0 | .800 | 0.5 | 4.5 | 5.0 | 7.5 | 3.0 | 0.5 | 1.0 | 2.0 | 19.0 | .552 | — |
+| Month through this week | 19 | Miami Heat | NBA | SG / PG | 2 | 2 | 37.8 | 7.0 | 15.0 | .467 | 1.0 | 2.0 | .500 | 6.0 | 13.0 | .462 | .500 | 4.0 | 5.0 | .800 | 0.5 | 4.5 | 5.0 | 7.5 | 3.0 | 0.5 | 1.0 | 2.0 | 19.0 | .552 | — |
+| Season through this week | 19 | Miami Heat | NBA | SG / PG | 19 | 14 | 33.1 | 5.5 | 10.9 | .507 | 0.6 | 2.2 | .286 | 4.9 | 8.7 | .564 | .536 | 4.2 | 4.6 | .908 | 1.4 | 3.4 | 4.8 | 4.6 | 1.5 | 0.6 | 1.1 | 2.6 | 15.8 | .614 | [East ROM](../../../../Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 

@@ -6,7 +6,7 @@ Career date: 2003-12-05 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-25 closed game records in 2003-04 through 2003-12-05. Competitions remain separate.
+26 closed game records in 2003-04 through 2003-12-05. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
-| regular | 18 | 32.8 | 15.7 | 4.8 | 4.6 | 1.1 | Complete |
+| regular | 19 | 33.1 | 15.8 | 4.8 | 4.6 | 1.1 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A |
-| regular | 98 | 191 | 0.513 | 11 | 40 | 0.275 |
+| regular | 105 | 207 | 0.507 | 12 | 42 | 0.286 |
 
 ## Closed source games
 
@@ -55,6 +55,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2003-11-28 | regular | Atlanta Hawks | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md) |
 | 2003-11-29 | regular | Toronto Raptors | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md) |
 | 2003-12-03 | regular | Detroit Pistons | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md) |
+| 2003-12-05 | regular | Philadelphia 76ers | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md) |
 
 ## Evidence available for decisions
 
@@ -127,4 +128,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md)
 - [Closed game](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md)
+- [Closed game](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

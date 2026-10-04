@@ -424,6 +424,10 @@
           "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -772,6 +776,10 @@
         {
           "label": "Closed game",
           "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md"
         },
         {
           "label": "Dated milestone working records and player replies",
@@ -1175,6 +1183,10 @@
         {
           "label": "Closed game",
           "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md"
         },
         {
           "label": "Dated milestone working records and player replies",
@@ -1688,6 +1700,10 @@
           "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2008,6 +2024,10 @@
           "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2322,6 +2342,10 @@
         {
           "label": "Closed game",
           "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md"
         },
         {
           "label": "Dated milestone working records and player replies",
@@ -2647,6 +2671,10 @@
         {
           "label": "Closed game",
           "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md"
         },
         {
           "label": "Dated milestone working records and player replies",
@@ -3022,6 +3050,10 @@
           "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3047,7 +3079,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "25 closed game records in 2003-04 through 2003-12-05. Competitions remain separate.",
+      "summary": "26 closed game records in 2003-04 through 2003-12-05. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3074,12 +3106,12 @@
             ],
             [
               "regular",
-              18,
-              32.75163888888889,
-              15.666666666666666,
-              4.777777777777778,
-              4.555555555555555,
-              1.1111111111111112,
+              19,
+              33.05311140350877,
+              15.842105263157896,
+              4.7894736842105265,
+              4.631578947368421,
+              1.105263157894737,
               "Complete"
             ]
           ]
@@ -3107,12 +3139,12 @@
             ],
             [
               "regular",
-              98,
-              191,
-              0.5130890052356021,
-              11,
-              40,
-              0.275
+              105,
+              207,
+              0.5072463768115942,
+              12,
+              42,
+              0.2857142857142857
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -3376,6 +3408,16 @@
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md"
               }
+            ],
+            [
+              "2003-12-05",
+              "regular",
+              "Philadelphia 76ers",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md"
+              }
             ]
           ]
         },
@@ -3611,6 +3653,10 @@
         {
           "label": "Closed game",
           "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md"
         },
         {
           "label": "Dated milestone working records and player replies",

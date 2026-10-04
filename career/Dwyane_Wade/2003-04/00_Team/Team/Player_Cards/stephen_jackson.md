@@ -56,7 +56,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | San Antonio Spurs | 80 | N/A | 28.2 | 11.8 | 3.6 | 2.3 | 1.6 | 0.4 | 2.2 | 0.435 | 0.320 | 0.760 |
-| 2003-04 | MIA | 18 | 0 | 17.1 | 8.2 | 1.9 | 1.7 | 0.8 | 0.2 | 1.7 | 39.7% | 31.6% | 77.8% |
+| 2003-04 | MIA | 19 | 0 | 16.7 | 8.1 | 1.8 | 1.8 | 0.7 | 0.3 | 1.6 | 40.6% | 33.3% | 76.3% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

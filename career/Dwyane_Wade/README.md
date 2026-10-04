@@ -41,8 +41,8 @@ Career cutoff: **2003-12-05**. Club competitions and national-team events have s
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04](Stats_and_Awards/2003-04/README.md) | 19 | Miami Heat | NBA | SG / PG | 18 | 13 | 32.8 | 5.4 | 10.6 | .513 | 0.6 | 2.2 | .275 | 4.8 | 8.4 | .576 | .542 | 4.2 | 4.5 | .926 | 1.4 | 3.4 | 4.8 | 4.6 | 1.4 | 0.6 | 1.1 | 2.6 | 15.7 | .622 | [East ROM](Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
-| Career total | 19 | Miami Heat | NBA | SG / PG | 18 | 13 | 32.8 | 5.4 | 10.6 | .513 | 0.6 | 2.2 | .275 | 4.8 | 8.4 | .576 | .542 | 4.2 | 4.5 | .926 | 1.4 | 3.4 | 4.8 | 4.6 | 1.4 | 0.6 | 1.1 | 2.6 | 15.7 | .622 | [East ROM](Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
+| [2003-04](Stats_and_Awards/2003-04/README.md) | 19 | Miami Heat | NBA | SG / PG | 19 | 14 | 33.1 | 5.5 | 10.9 | .507 | 0.6 | 2.2 | .286 | 4.9 | 8.7 | .564 | .536 | 4.2 | 4.6 | .908 | 1.4 | 3.4 | 4.8 | 4.6 | 1.5 | 0.6 | 1.1 | 2.6 | 15.8 | .614 | [East ROM](Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
+| Career total | 19 | Miami Heat | NBA | SG / PG | 19 | 14 | 33.1 | 5.5 | 10.9 | .507 | 0.6 | 2.2 | .286 | 4.9 | 8.7 | .564 | .536 | 4.2 | 4.6 | .908 | 1.4 | 3.4 | 4.8 | 4.6 | 1.5 | 0.6 | 1.1 | 2.6 | 15.8 | .614 | [East ROM](Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 

@@ -50,7 +50,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Utah Jazz | 82 | N/A | 16.1 | 5.7 | 3.3 | 1.0 | 0.5 | 0.3 | 0.9 | 0.402 | 0.338 | 0.757 |
-| 2003-04 | MIA | 18 | 18 | 33.5 | 13.8 | 8.6 | 2.6 | 0.7 | 0.6 | 2.0 | 44.3% | 33.3% | 66.7% |
+| 2003-04 | MIA | 19 | 19 | 33.8 | 13.9 | 8.7 | 2.5 | 0.7 | 0.6 | 2.2 | 43.8% | 35.3% | 68.5% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

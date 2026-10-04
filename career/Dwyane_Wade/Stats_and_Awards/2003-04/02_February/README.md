@@ -90,7 +90,7 @@ Awards are confirmed through 2003-12-05, filed by the honor's period-end date; t
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | February 2004 | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [January 2004](../01_January/README.md) | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Season through this month | 19 | Miami Heat | NBA | SG / PG | 18 | 13 | 32.8 | 5.4 | 10.6 | .513 | 0.6 | 2.2 | .275 | 4.8 | 8.4 | .576 | .542 | 4.2 | 4.5 | .926 | 1.4 | 3.4 | 4.8 | 4.6 | 1.4 | 0.6 | 1.1 | 2.6 | 15.7 | .622 | [East ROM](../../League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
+| Season through this month | 19 | Miami Heat | NBA | SG / PG | 19 | 14 | 33.1 | 5.5 | 10.9 | .507 | 0.6 | 2.2 | .286 | 4.9 | 8.7 | .564 | .536 | 4.2 | 4.6 | .908 | 1.4 | 3.4 | 4.8 | 4.6 | 1.5 | 0.6 | 1.1 | 2.6 | 15.8 | .614 | [East ROM](../../League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
