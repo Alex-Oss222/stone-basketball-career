@@ -2,9 +2,9 @@
 
 # Contract | Earl Boykins
 
-Known through: 2003-11-29. [Open interactive contract](boykiea01.html#contract) · [Contract history](boykiea01.html#contract-history)
+Known through: 2003-12-01. [Open interactive contract](boykiea01.html#contract) · [Contract history](boykiea01.html#contract-history)
 
-Earl Boykins: free agent expiring. Evidence cutoff: 2003-11-29.
+Earl Boykins: free agent expiring. Evidence cutoff: 2003-12-01.
 
 ## Current contract
 

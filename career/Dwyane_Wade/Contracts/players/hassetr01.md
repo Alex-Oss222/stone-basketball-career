@@ -2,9 +2,9 @@
 
 # Contract | Trenton Hassell
 
-Known through: 2003-11-29. [Open interactive contract](hassetr01.html#contract) · [Contract history](hassetr01.html#contract-history)
+Known through: 2003-12-01. [Open interactive contract](hassetr01.html#contract) · [Contract history](hassetr01.html#contract-history)
 
-Trenton Hassell: under contract. Evidence cutoff: 2003-11-29.
+Trenton Hassell: under contract. Evidence cutoff: 2003-12-01.
 
 ## Current contract
 

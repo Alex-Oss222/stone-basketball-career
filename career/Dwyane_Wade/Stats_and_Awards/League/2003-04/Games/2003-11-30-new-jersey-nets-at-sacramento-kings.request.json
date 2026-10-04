@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-30-new-jersey-nets-at-sacramento-kings",
+ "game_date": "2003-11-30",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ }
+}

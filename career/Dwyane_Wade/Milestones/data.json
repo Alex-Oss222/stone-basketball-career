@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2003-11-29",
+  "as_of": "2003-12-01",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 19,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2003-11-28-miami-heat-at-atlanta-hawks",
+  "current_event": "2003-11-29-toronto-raptors-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2003-11-29"
+              "2003-12-01"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2003-11-28-miami-heat-at-atlanta-hawks"
+              "2003-11-29-toronto-raptors-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2003-11-29",
+              "2003-12-01",
               "Current checkpoint",
-              "2003-11-28-miami-heat-at-atlanta-hawks",
+              "2003-11-29-toronto-raptors-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -364,7 +364,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-29"
+          "value": "2003-12-01"
         },
         {
           "label": "Team",
@@ -706,7 +706,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-29"
+          "value": "2003-12-01"
         },
         {
           "label": "Team",
@@ -1101,7 +1101,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-29"
+          "value": "2003-12-01"
         },
         {
           "label": "Team",
@@ -1604,7 +1604,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-29"
+          "value": "2003-12-01"
         },
         {
           "label": "Team",
@@ -1916,7 +1916,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-29"
+          "value": "2003-12-01"
         },
         {
           "label": "Team",
@@ -2224,7 +2224,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-29"
+          "value": "2003-12-01"
         },
         {
           "label": "Team",
@@ -2541,7 +2541,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-29"
+          "value": "2003-12-01"
         },
         {
           "label": "Team",
@@ -2906,7 +2906,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-29"
+          "value": "2003-12-01"
         },
         {
           "label": "Team",
@@ -2923,7 +2923,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "24 closed game records in 2003-04 through 2003-11-29. Competitions remain separate.",
+      "summary": "24 closed game records in 2003-04 through 2003-12-01. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3479,7 +3479,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-29"
+          "value": "2003-12-01"
         },
         {
           "label": "Team",

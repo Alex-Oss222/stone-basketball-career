@@ -2,9 +2,9 @@
 
 # Contract | Vladimir Stepania
 
-Known through: 2003-11-29. [Open interactive contract](stepavl01.html#contract) · [Contract history](stepavl01.html#contract-history)
+Known through: 2003-12-01. [Open interactive contract](stepavl01.html#contract) · [Contract history](stepavl01.html#contract-history)
 
-Vladimir Stepania: free agent expiring. Evidence cutoff: 2003-11-29.
+Vladimir Stepania: free agent expiring. Evidence cutoff: 2003-12-01.
 
 ## Current contract
 

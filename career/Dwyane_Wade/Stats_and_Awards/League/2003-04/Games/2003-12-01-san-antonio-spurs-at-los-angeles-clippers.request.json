@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-01-san-antonio-spurs-at-los-angeles-clippers",
+ "game_date": "2003-12-01",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Clippers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "San Antonio Spurs",
+  "rotation": "real"
+ }
+}

@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2003-11-29 · Miami Heat · active
+Career date: 2003-12-01 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,18 +14,18 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2003-11-29 |
+| Career date | 2003-12-01 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2003-11-28-miami-heat-at-atlanta-hawks |
+| Last closed event | 2003-11-29-toronto-raptors-at-miami-heat |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2003-11-29 | Current checkpoint | 2003-11-28-miami-heat-at-atlanta-hawks | Recorded | [Owning event](../2003-04/06_Regular_Season/11_November/Week_2/note.md) |
+| 2003-12-01 | Current checkpoint | 2003-11-29-toronto-raptors-at-miami-heat | Recorded | [Owning event](../2003-04/06_Regular_Season/11_November/Week_2/note.md) |
 | 2003-07-19 | Next contract review | Player responds to an actual eligible proposal | recorded | [Contract desk](index.html#contract_negotiation) |
 | 2003-09-30 | Camp reporting | Club records the date | active | [Training camp](index.html#training_camp) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |

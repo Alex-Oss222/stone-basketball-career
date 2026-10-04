@@ -2,9 +2,9 @@
 
 # Contract | Chris Webber
 
-Known through: 2003-11-29. [Open interactive contract](webbech01.html#contract) · [Contract history](webbech01.html#contract-history)
+Known through: 2003-12-01. [Open interactive contract](webbech01.html#contract) · [Contract history](webbech01.html#contract-history)
 
-Chris Webber: under contract. Evidence cutoff: 2003-11-29.
+Chris Webber: under contract. Evidence cutoff: 2003-12-01.
 
 ## Current contract
 
