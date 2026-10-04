@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-21-los-angeles-lakers-at-memphis-grizzlies",
+ "game_date": "2004-01-21",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ }
+}

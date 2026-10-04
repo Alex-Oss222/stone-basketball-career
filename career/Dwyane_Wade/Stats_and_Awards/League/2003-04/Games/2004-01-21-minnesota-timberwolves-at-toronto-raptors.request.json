@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-21-minnesota-timberwolves-at-toronto-raptors",
+ "game_date": "2004-01-21",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Toronto Raptors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Minnesota Timberwolves",
+  "rotation": "real"
+ }
+}

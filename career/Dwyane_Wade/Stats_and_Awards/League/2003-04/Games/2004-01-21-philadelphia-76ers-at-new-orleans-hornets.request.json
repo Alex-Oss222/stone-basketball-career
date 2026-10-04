@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-21-philadelphia-76ers-at-new-orleans-hornets",
+ "game_date": "2004-01-21",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New Orleans Hornets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Philadelphia 76ers",
+  "rotation": "real"
+ }
+}

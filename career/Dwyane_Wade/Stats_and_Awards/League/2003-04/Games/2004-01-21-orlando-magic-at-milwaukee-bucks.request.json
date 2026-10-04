@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-21-orlando-magic-at-milwaukee-bucks",
+ "game_date": "2004-01-21",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ }
+}

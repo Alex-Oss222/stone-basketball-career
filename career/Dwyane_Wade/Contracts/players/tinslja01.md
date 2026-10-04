@@ -2,9 +2,9 @@
 
 # Contract | Jamaal Tinsley
 
-Known through: 2004-01-20. [Open interactive contract](tinslja01.html#contract) · [Contract history](tinslja01.html#contract-history)
+Known through: 2004-01-21. [Open interactive contract](tinslja01.html#contract) · [Contract history](tinslja01.html#contract-history)
 
-Jamaal Tinsley: under rookie contract. Evidence cutoff: 2004-01-20.
+Jamaal Tinsley: under rookie contract. Evidence cutoff: 2004-01-21.
 
 ## Current contract
 

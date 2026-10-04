@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2004-01-20 · Miami Heat · active
+Career date: 2004-01-21 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,7 +14,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2004-01-20 |
+| Career date | 2004-01-21 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
@@ -25,7 +25,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2004-01-20 | Current checkpoint | 2004-01-20-boston-celtics-at-miami-heat | Recorded | [Owning event](../2003-04/06_Regular_Season/01_January/Week_3/note.md) |
+| 2004-01-21 | Current checkpoint | 2004-01-20-boston-celtics-at-miami-heat | Recorded | [Owning event](../2003-04/06_Regular_Season/01_January/Week_3/note.md) |
 | 2003-07-19 | Rookie contract signed | Player and club | complete | [Contract desk](index.html#contract_negotiation) |
 | 2003-09-30 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
 | 2004-01-23 | Next Miami game, vs New Jersey Nets | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |

@@ -1644,6 +1644,42 @@
    },
    "contract": null,
    "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-01-21-expire-postela01",
+   "date": "2004-01-21",
+   "kind": "expire",
+   "player": "Lavor Postell",
+   "bbr_id": "postela01",
+   "from": "San Antonio Spurs",
+   "to": null,
+   "role": {
+    "player_id": "Lavor Postell",
+    "bbr_id": "postela01",
+    "position": "SG",
+    "games": 12,
+    "minutes": 98
+   },
+   "contract": null,
+   "note": "10-day contract ended (3.2 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-01-21-expire-greenwi01",
+   "date": "2004-01-21",
+   "kind": "expire",
+   "player": "Willie Green",
+   "bbr_id": "greenwi01",
+   "from": "Washington Wizards",
+   "to": null,
+   "role": {
+    "player_id": "Willie Green",
+    "bbr_id": "greenwi01",
+    "position": "SG",
+    "games": 53,
+    "minutes": 767
+   },
+   "contract": null,
+   "note": "10-day contract ended (7.9 minutes a game)"
   }
  ]
 }

@@ -2,9 +2,9 @@
 
 # Contract | Tito Maddox
 
-Known through: 2004-01-20. [Open interactive contract](maddoti01.html#contract) · [Contract history](maddoti01.html#contract-history)
+Known through: 2004-01-21. [Open interactive contract](maddoti01.html#contract) · [Contract history](maddoti01.html#contract-history)
 
-Tito Maddox: team option pending. Evidence cutoff: 2004-01-20.
+Tito Maddox: team option pending. Evidence cutoff: 2004-01-21.
 
 ## Current contract
 

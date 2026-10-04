@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-21-chicago-bulls-at-atlanta-hawks",
+ "game_date": "2004-01-21",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Atlanta Hawks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Chicago Bulls",
+  "rotation": "real"
+ }
+}
