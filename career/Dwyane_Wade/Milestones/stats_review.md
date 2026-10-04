@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-02-22 · Miami Heat · active
+Career date: 2004-02-23 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-64 closed game records in 2003-04 through 2004-02-22. Competitions remain separate.
+65 closed game records in 2003-04 through 2004-02-23. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
-| regular | 57 | 34.8 | 17.3 | 4.7 | 4.6 | 1.1 | Complete |
+| regular | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A |
-| regular | 331 | 657 | 0.504 | 55 | 147 | 0.374 |
+| regular | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ## Closed source games
 
@@ -94,6 +94,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-02-17 | regular | Utah Jazz | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_1.md) |
 | 2004-02-20 | regular | Atlanta Hawks | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.md) |
 | 2004-02-21 | regular | Denver Nuggets | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.md) |
+| 2004-02-23 | regular | Portland Trail Blazers | Unknown: missing player box | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md) |
 
 ## Evidence available for decisions
 
@@ -205,4 +206,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

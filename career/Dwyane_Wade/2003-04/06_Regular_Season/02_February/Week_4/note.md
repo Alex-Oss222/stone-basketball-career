@@ -14,4 +14,6 @@ days: 22-end
 
 ## Games and events
 
+- 2004-02-23: Portland Trail Blazers 104 at Miami Heat 113 — Miami Heat W 113-104 ([Game 1](Game_1.md), event `2004-02-23-portland-trail-blazers-at-miami-heat`)
+
 ## Consequences
