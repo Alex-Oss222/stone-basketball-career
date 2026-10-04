@@ -14,13 +14,13 @@ Through 2003-12-22, from closed simulated results only (`runtime/standings.py`).
 | 6 | Chicago Bulls | 12 | 14 | .462 | 8.5 |
 | 7 | Cleveland Cavaliers | 11 | 16 | .407 | 10 |
 | 8 | **Miami Heat** | 11 | 16 | .407 | 10 |
-| 9 | Philadelphia 76ers | 11 | 16 | .407 | 10 |
-| 10 | Toronto Raptors | 11 | 16 | .407 | 10 |
-| 11 | New York Knicks | 11 | 17 | .393 | 10.5 |
+| 9 | Toronto Raptors | 11 | 16 | .407 | 10 |
+| 10 | New York Knicks | 11 | 17 | .393 | 10.5 |
+| 11 | Philadelphia 76ers | 11 | 17 | .393 | 10.5 |
 | 12 | Atlanta Hawks | 11 | 18 | .379 | 11 |
 | 13 | Boston Celtics | 10 | 18 | .357 | 11.5 |
 | 14 | Washington Wizards | 7 | 18 | .280 | 13 |
-| 15 | Orlando Magic | 7 | 21 | .250 | 14.5 |
+| 15 | Orlando Magic | 8 | 21 | .276 | 14 |
 
 ## Western Conference
 
