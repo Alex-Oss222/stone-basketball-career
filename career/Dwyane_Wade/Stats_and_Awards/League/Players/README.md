@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-27**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-28**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -46,7 +46,7 @@ Card date: **2004-02-27**. 504 registry players, one Markdown card and one inter
 | [Howard Eisley](eisleho01.md) | New York Knicks | 31 | sourced | [open](eisleho01.html) |
 | [J.R. Bremer](bremejr01.md) | Cleveland Cavaliers | 23 | silhouette | [open](bremejr01.html) |
 | [Jacque Vaughn](vaughja01.md) | Atlanta Hawks | 29 | sourced | [open](vaughja01.html) |
-| [Jamaal Tinsley](tinslja01.md) | Indiana Pacers | 25 | sourced | [open](tinslja01.html) |
+| [Jamaal Tinsley](tinslja01.md) | Indiana Pacers | 26 | sourced | [open](tinslja01.html) |
 | [Jamal Crawford](crawfja01.md) | Chicago Bulls | 23 | sourced | [open](crawfja01.html) |
 | [Jamison Brewer](breweja01.md) | Indiana Pacers | None | silhouette | [open](breweja01.html) |
 | [Jannero Pargo](pargoja01.md) | Los Angeles Lakers | 24 | sourced | [open](pargoja01.html) |
@@ -296,7 +296,7 @@ Card date: **2004-02-27**. 504 registry players, one Markdown card and one inter
 | [Shandon Anderson](andersh01.md) | New York Knicks | 30 | sourced | [open](andersh01.html) |
 | [Shane Battier](battish01.md) | Memphis Grizzlies | 25 | sourced | [open](battish01.html) |
 | [Shawn Marion](mariosh01.md) | Phoenix Suns | 25 | sourced | [open](mariosh01.html) |
-| [Tayshaun Prince](princta01.md) | Detroit Pistons | 23 | sourced | [open](princta01.html) |
+| [Tayshaun Prince](princta01.md) | Detroit Pistons | 24 | sourced | [open](princta01.html) |
 | [Terence Morris](morrite01.md) | Houston Rockets | 25 | sourced | [open](morrite01.html) |
 | [Theron Smith](smithth01.md) | Memphis Grizzlies | None | silhouette | [open](smithth01.html) |
 | [Tim Thomas](thomati01.md) | Milwaukee Bucks | 27 | sourced | [open](thomati01.html) |

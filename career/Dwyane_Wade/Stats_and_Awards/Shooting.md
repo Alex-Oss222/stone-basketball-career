@@ -2,17 +2,17 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-02-27**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-02-28**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2004-02-27
+## 2003-04 · NBA regular season · through 2004-02-28
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| N/A | 0 | 58 | N/A / N/A | N/A | N/A / N/A | N/A | partial |
+| N/A | 0 | 59 | N/A / N/A | N/A | N/A / N/A | N/A | partial |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
@@ -84,6 +84,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-02-20 | Atlanta Hawks | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.result.json) |
 | 2004-02-21 | Denver Nuggets | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.result.json) |
 | 2004-02-23 | Portland Trail Blazers | Unknown: missing player box | [Game](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json) |
+| 2004-02-28 | New Jersey Nets | Unknown: missing player box | [Game](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json) |
 
 ## 2003-10 · NBA regular season
 
@@ -544,7 +545,7 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| N/A | 0 | 10 | N/A / N/A | N/A | N/A / N/A | N/A | partial |
+| N/A | 0 | 11 | N/A / N/A | N/A | N/A / N/A | N/A | partial |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
@@ -568,6 +569,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-02-20 | Atlanta Hawks | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.result.json) |
 | 2004-02-21 | Denver Nuggets | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.result.json) |
 | 2004-02-23 | Portland Trail Blazers | Unknown: missing player box | [Game](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json) |
+| 2004-02-28 | New Jersey Nets | Unknown: missing player box | [Game](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json) |
 
 ## 2004-02-01 to 2004-02-07 · NBA regular season
 
@@ -641,13 +643,13 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-02-20 | Atlanta Hawks | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.result.json) |
 | 2004-02-21 | Denver Nuggets | Played | [Game](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.result.json) |
 
-## 2004-02-22 to 2004-02-27 · NBA regular season
+## 2004-02-22 to 2004-02-28 · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-week-2004-02-22#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| N/A | 0 | 1 | N/A / N/A | N/A | N/A / N/A | N/A | unavailable |
+| N/A | 0 | 2 | N/A / N/A | N/A | N/A / N/A | N/A | unavailable |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
@@ -662,6 +664,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2004-02-23 | Portland Trail Blazers | Unknown: missing player box | [Game](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json) |
+| 2004-02-28 | New Jersey Nets | Unknown: missing player box | [Game](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json) |
 
 ## 2003-10-28 at Philadelphia 76ers · Played · NBA regular season
 
@@ -1939,7 +1942,29 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-02-23 | Portland Trail Blazers | Unknown: missing player box | [Game](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json) |
 
-## 2003-04 · NBA preseason · through 2004-02-27
+## 2004-02-28 at New Jersey Nets · Unknown: missing player box · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-aad86f9b0a4da435#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| N/A | 0 | 1 | N/A / N/A | N/A | N/A / N/A | N/A | unavailable |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 0 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-02-28 | New Jersey Nets | Unknown: missing player box | [Game](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json) |
+
+## 2003-04 · NBA preseason · through 2004-02-28
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 

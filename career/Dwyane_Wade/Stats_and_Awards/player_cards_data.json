@@ -14,10 +14,10 @@
     "photo_url": null,
     "initials": "DW",
     "status": "Under contract",
-    "cutoff": "2004-02-27"
+    "cutoff": "2004-02-28"
   },
-  "clock": "2004-02-27",
-  "notice": "Career records through 2004-02-27. Closed games, recorded contracts and earned awards. Missing evidence remains explicit.",
+  "clock": "2004-02-28",
+  "notice": "Career records through 2004-02-28. Closed games, recorded contracts and earned awards. Missing evidence remains explicit.",
   "links": {
     "stats": "README.md",
     "shooting": "Shooting.md",
@@ -69,15 +69,15 @@
   "periods": [
     {
       "id": "regular-2003-04-season",
-      "label": "2003-04 · NBA regular season · through 2004-02-27",
+      "label": "2003-04 · NBA regular season · through 2004-02-28",
       "kind": "season",
       "season": "2003-04",
       "competition": "regular",
       "competition_label": "NBA regular season",
       "start": "2003-06-01",
-      "end": "2004-02-27",
-      "cutoff": "2004-02-27",
-      "games": 58,
+      "end": "2004-02-28",
+      "cutoff": "2004-02-28",
+      "games": 59,
       "appearances": null,
       "dnp": 0,
       "box": {
@@ -827,6 +827,18 @@
           "href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md",
           "result_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json",
           "shot_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json",
+          "shot_source_type": "engine_generated",
+          "shot_source_label": "Simulated engine shot locations"
+        },
+        {
+          "id": "2004-02-28-miami-heat-at-new-jersey-nets",
+          "date": "2004-02-28",
+          "opponent": "New Jersey Nets",
+          "status": "played",
+          "appearance": "Unknown: missing player box",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md",
+          "result_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json",
+          "shot_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json",
           "shot_source_type": "engine_generated",
           "shot_source_label": "Simulated engine shot locations"
         }
@@ -11802,7 +11814,7 @@
         "games": null,
         "recorded_appearances": 57,
         "dnp": 0,
-        "closed_games": 58,
+        "closed_games": 59,
         "totals": {
           "fgm": null,
           "fga": null,
@@ -15882,7 +15894,8 @@
           "recorded_attempts": 608,
           "box_fga": null,
           "missing_box_games": [
-            "2004-02-23-portland-trail-blazers-at-miami-heat"
+            "2004-02-23-portland-trail-blazers-at-miami-heat",
+            "2004-02-28-miami-heat-at-new-jersey-nets"
           ],
           "missing_shot_games": [
             "2003-10-28-miami-heat-at-philadelphia-76ers",
@@ -15967,7 +15980,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-02-27"
+        "cutoff": "2004-02-28"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -31775,11 +31788,11 @@
       "tracking_cohort": {
         "games": 50,
         "appearances": 50,
-        "total_games": 58,
+        "total_games": 59,
         "total_appearances": null,
         "start": "2003-11-12",
         "end": "2004-02-21",
-        "excluded_games": 8
+        "excluded_games": 9
       }
     },
     {
@@ -103921,9 +103934,9 @@
       "competition": "regular",
       "competition_label": "NBA regular season",
       "start": "2004-02-01",
-      "end": "2004-02-27",
-      "cutoff": "2004-02-27",
-      "games": 10,
+      "end": "2004-02-28",
+      "cutoff": "2004-02-28",
+      "games": 11,
       "appearances": null,
       "dnp": 0,
       "box": {
@@ -104118,6 +104131,18 @@
           "href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md",
           "result_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json",
           "shot_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json",
+          "shot_source_type": "engine_generated",
+          "shot_source_label": "Simulated engine shot locations"
+        },
+        {
+          "id": "2004-02-28-miami-heat-at-new-jersey-nets",
+          "date": "2004-02-28",
+          "opponent": "New Jersey Nets",
+          "status": "played",
+          "appearance": "Unknown: missing player box",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md",
+          "result_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json",
+          "shot_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json",
           "shot_source_type": "engine_generated",
           "shot_source_label": "Simulated engine shot locations"
         }
@@ -105967,7 +105992,7 @@
         "games": null,
         "recorded_appearances": 9,
         "dnp": 0,
-        "closed_games": 10,
+        "closed_games": 11,
         "totals": {
           "fgm": null,
           "fga": null,
@@ -107340,7 +107365,8 @@
           "recorded_attempts": 101,
           "box_fga": null,
           "missing_box_games": [
-            "2004-02-23-portland-trail-blazers-at-miami-heat"
+            "2004-02-23-portland-trail-blazers-at-miami-heat",
+            "2004-02-28-miami-heat-at-new-jersey-nets"
           ],
           "missing_shot_games": [],
           "location_fraction": null
@@ -107376,7 +107402,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-02-27"
+        "cutoff": "2004-02-28"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -110818,11 +110844,11 @@
       "tracking_cohort": {
         "games": 9,
         "appearances": 9,
-        "total_games": 10,
+        "total_games": 11,
         "total_appearances": null,
         "start": "2004-02-02",
         "end": "2004-02-21",
-        "excluded_games": 1
+        "excluded_games": 2
       }
     },
     {
@@ -119457,15 +119483,15 @@
     },
     {
       "id": "regular-2003-04-week-2004-02-22",
-      "label": "2004-02-22 to 2004-02-27 · NBA regular season",
+      "label": "2004-02-22 to 2004-02-28 · NBA regular season",
       "kind": "week",
       "season": "2003-04",
       "competition": "regular",
       "competition_label": "NBA regular season",
       "start": "2004-02-22",
-      "end": "2004-02-27",
-      "cutoff": "2004-02-27",
-      "games": 1,
+      "end": "2004-02-28",
+      "cutoff": "2004-02-28",
+      "games": 2,
       "appearances": null,
       "dnp": 0,
       "box": {
@@ -119554,6 +119580,18 @@
           "shot_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_1.result.json",
           "shot_source_type": "engine_generated",
           "shot_source_label": "Simulated engine shot locations"
+        },
+        {
+          "id": "2004-02-28-miami-heat-at-new-jersey-nets",
+          "date": "2004-02-28",
+          "opponent": "New Jersey Nets",
+          "status": "played",
+          "appearance": "Unknown: missing player box",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md",
+          "result_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json",
+          "shot_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json",
+          "shot_source_type": "engine_generated",
+          "shot_source_label": "Simulated engine shot locations"
         }
       ],
       "shots": [],
@@ -119582,7 +119620,7 @@
         "games": null,
         "recorded_appearances": 0,
         "dnp": 0,
-        "closed_games": 1,
+        "closed_games": 2,
         "totals": {
           "fgm": null,
           "fga": null,
@@ -119693,7 +119731,8 @@
           "recorded_attempts": 0,
           "box_fga": null,
           "missing_box_games": [
-            "2004-02-23-portland-trail-blazers-at-miami-heat"
+            "2004-02-23-portland-trail-blazers-at-miami-heat",
+            "2004-02-28-miami-heat-at-new-jersey-nets"
           ],
           "missing_shot_games": [],
           "location_fraction": null
@@ -119719,7 +119758,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-02-27"
+        "cutoff": "2004-02-28"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -119728,11 +119767,11 @@
       "tracking_cohort": {
         "games": 0,
         "appearances": 0,
-        "total_games": 1,
+        "total_games": 2,
         "total_appearances": null,
         "start": null,
         "end": null,
-        "excluded_games": 1
+        "excluded_games": 2
       }
     },
     {
@@ -191459,15 +191498,295 @@
       }
     },
     {
+      "id": "regular-2003-04-game-aad86f9b0a4da435",
+      "label": "2004-02-28 at New Jersey Nets · Unknown: missing player box · NBA regular season",
+      "kind": "game",
+      "season": "2003-04",
+      "competition": "regular",
+      "competition_label": "NBA regular season",
+      "start": "2004-02-28",
+      "end": "2004-02-28",
+      "cutoff": "2004-02-28",
+      "games": 1,
+      "appearances": null,
+      "dnp": 0,
+      "box": {
+        "pts": null,
+        "fgm": null,
+        "fga": null,
+        "tpm": null,
+        "tpa": null,
+        "ftm": null,
+        "fta": null,
+        "orb": null,
+        "drb": null,
+        "ast": null,
+        "stl": null,
+        "blk": null,
+        "tov": null,
+        "pf": null,
+        "seconds": null,
+        "ft_points": null,
+        "two_pm": null,
+        "two_pa": null,
+        "reb": null
+      },
+      "rates": {
+        "fg_pct": null,
+        "two_pct": null,
+        "three_pct": null,
+        "ft_pct": null,
+        "efg_pct": null,
+        "ts_pct": null,
+        "ast_to": null,
+        "three_rate": null,
+        "ft_rate": null
+      },
+      "pg": {
+        "pts": null,
+        "fgm": null,
+        "fga": null,
+        "tpm": null,
+        "tpa": null,
+        "ftm": null,
+        "fta": null,
+        "orb": null,
+        "drb": null,
+        "ast": null,
+        "stl": null,
+        "blk": null,
+        "tov": null,
+        "pf": null,
+        "seconds": null,
+        "ft_points": null,
+        "two_pm": null,
+        "two_pa": null,
+        "reb": null,
+        "minutes": null
+      },
+      "per36": {
+        "pts": null,
+        "fgm": null,
+        "fga": null,
+        "tpm": null,
+        "tpa": null,
+        "ftm": null,
+        "fta": null,
+        "orb": null,
+        "drb": null,
+        "ast": null,
+        "stl": null,
+        "blk": null,
+        "tov": null,
+        "pf": null,
+        "ft_points": null,
+        "two_pm": null,
+        "two_pa": null,
+        "reb": null
+      },
+      "source_games": [
+        {
+          "id": "2004-02-28-miami-heat-at-new-jersey-nets",
+          "date": "2004-02-28",
+          "opponent": "New Jersey Nets",
+          "status": "played",
+          "appearance": "Unknown: missing player box",
+          "href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md",
+          "result_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json",
+          "shot_href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.result.json",
+          "shot_source_type": "engine_generated",
+          "shot_source_label": "Simulated engine shot locations"
+        }
+      ],
+      "shots": [],
+      "shooting": {
+        "schema_version": 1,
+        "scope": {
+          "start": null,
+          "end": null
+        },
+        "geometry": {
+          "units": "feet",
+          "origin": "basket_center",
+          "x_min": -25.0,
+          "x_max": 25.0,
+          "baseline_y": -5.25,
+          "half_court_y": 41.75,
+          "paint_half_width": 8.0,
+          "paint_top_y": 13.75,
+          "three_point_radius": 23.75,
+          "corner_three_x": 22.0,
+          "three_point_join_y": 8.94776508408664,
+          "under_12_radius": 12.0,
+          "midrange_radius": 18.0,
+          "line_policy": "A coordinate on the three-point line is inside the two-point region."
+        },
+        "games": null,
+        "recorded_appearances": 0,
+        "dnp": 0,
+        "closed_games": 1,
+        "totals": {
+          "fgm": null,
+          "fga": null,
+          "tpm": null,
+          "tpa": null,
+          "fg_points": null,
+          "fg_pct": null,
+          "fg_ppg": null,
+          "fga_per_game": null
+        },
+        "observed": {
+          "fgm": 0,
+          "fga": 0,
+          "tpm": 0,
+          "tpa": 0,
+          "fg_points": 0
+        },
+        "zones": [
+          {
+            "id": "paint",
+            "label": "Paint",
+            "fgm": null,
+            "fga": null,
+            "tpm": null,
+            "tpa": null,
+            "fg_points": null,
+            "fg_pct": null,
+            "fg_ppg": null,
+            "fga_per_game": null,
+            "coverage": "unavailable",
+            "observed_fgm": 0,
+            "observed_fga": 0,
+            "observed_fg_points": 0
+          },
+          {
+            "id": "under_12",
+            "label": "Outside paint, under 12 ft",
+            "fgm": null,
+            "fga": null,
+            "tpm": null,
+            "tpa": null,
+            "fg_points": null,
+            "fg_pct": null,
+            "fg_ppg": null,
+            "fga_per_game": null,
+            "coverage": "unavailable",
+            "observed_fgm": 0,
+            "observed_fga": 0,
+            "observed_fg_points": 0
+          },
+          {
+            "id": "12_to_18",
+            "label": "Outside paint, 12 to under 18 ft",
+            "fgm": null,
+            "fga": null,
+            "tpm": null,
+            "tpa": null,
+            "fg_points": null,
+            "fg_pct": null,
+            "fg_ppg": null,
+            "fga_per_game": null,
+            "coverage": "unavailable",
+            "observed_fgm": 0,
+            "observed_fga": 0,
+            "observed_fg_points": 0
+          },
+          {
+            "id": "18_to_3pt",
+            "label": "18 ft to the three-point line",
+            "fgm": null,
+            "fga": null,
+            "tpm": null,
+            "tpa": null,
+            "fg_points": null,
+            "fg_pct": null,
+            "fg_ppg": null,
+            "fga_per_game": null,
+            "coverage": "unavailable",
+            "observed_fgm": 0,
+            "observed_fga": 0,
+            "observed_fg_points": 0
+          },
+          {
+            "id": "three",
+            "label": "Three-point range",
+            "fgm": null,
+            "fga": null,
+            "tpm": null,
+            "tpa": null,
+            "fg_points": null,
+            "fg_pct": null,
+            "fg_ppg": null,
+            "fga_per_game": null,
+            "coverage": "unavailable",
+            "observed_fgm": 0,
+            "observed_fga": 0,
+            "observed_fg_points": 0
+          }
+        ],
+        "bins": [],
+        "coverage": {
+          "status": "unavailable",
+          "located_attempts": 0,
+          "unlocated_attempts": 0,
+          "outside_view_attempts": 0,
+          "missing_attempts": null,
+          "known_missing_attempts": 0,
+          "recorded_attempts": 0,
+          "box_fga": null,
+          "missing_box_games": [
+            "2004-02-28-miami-heat-at-new-jersey-nets"
+          ],
+          "missing_shot_games": [],
+          "location_fraction": null
+        },
+        "source_refs": [],
+        "notes": [
+          "Zone points count made field goals only; free throws are excluded.",
+          "All recorded appearances in the selected period are in the denominator; DNPs are excluded.",
+          "Incomplete tracking leaves full-period zone and bin per-game rates unavailable.",
+          "Bin area is proportional to attempts per appearance using a fixed display scale, not its radius."
+        ]
+      },
+      "identity": {
+        "name": "Dwyane Wade",
+        "team": "Miami Heat",
+        "jersey": null,
+        "position": "SG / PG",
+        "age": 20,
+        "height": "6 ft 6 in",
+        "weight": "220 lb",
+        "shoots": "Right",
+        "entry": "2003 draft, round 1, No. 5 overall, Miami Heat",
+        "photo_url": null,
+        "initials": "DW",
+        "status": "Under contract",
+        "cutoff": "2004-02-28"
+      },
+      "geometry_supported": true,
+      "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
+      "shot_source_type": "engine_generated",
+      "tracked": null,
+      "tracking_cohort": {
+        "games": 0,
+        "appearances": 0,
+        "total_games": 1,
+        "total_appearances": null,
+        "start": null,
+        "end": null,
+        "excluded_games": 1
+      }
+    },
+    {
       "id": "preseason-2003-04-season",
-      "label": "2003-04 · NBA preseason · through 2004-02-27",
+      "label": "2003-04 · NBA preseason · through 2004-02-28",
       "kind": "season",
       "season": "2003-04",
       "competition": "preseason",
       "competition_label": "NBA preseason",
       "start": "2003-06-01",
-      "end": "2004-02-27",
-      "cutoff": "2004-02-27",
+      "end": "2004-02-28",
+      "cutoff": "2004-02-28",
       "games": 7,
       "appearances": null,
       "dnp": 0,
@@ -191780,7 +192099,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-02-27"
+        "cutoff": "2004-02-28"
       },
       "geometry_supported": true,
       "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
@@ -194953,7 +195272,7 @@
         "id": "2003-04",
         "label": "2003-04",
         "season": "2003-04",
-        "cutoff": "2004-02-27",
+        "cutoff": "2004-02-28",
         "records": [],
         "identity": {
           "name": "Dwyane Wade",
@@ -194968,17 +195287,17 @@
           "photo_url": null,
           "initials": "DW",
           "status": "Under contract",
-          "cutoff": "2004-02-27"
+          "cutoff": "2004-02-28"
         },
-        "notice": "Only earned annual awards announced on or before 2004-02-27 appear. Weekly, monthly and unclassified recognition remains in the full award register."
+        "notice": "Only earned annual awards announced on or before 2004-02-28 appear. Weekly, monthly and unclassified recognition remains in the full award register."
       }
     ]
   },
   "contracts": {
-    "as_of": "2004-02-27",
+    "as_of": "2004-02-28",
     "player_id": "wadedw01",
     "status": "under_contract",
-    "summary": "Dwyane Wade: under contract. Evidence cutoff: 2004-02-27.",
+    "summary": "Dwyane Wade: under contract. Evidence cutoff: 2004-02-28.",
     "current": {
       "id": "wadedw01-2003-07-21",
       "status": "under_contract",
@@ -195950,7 +196269,7 @@
     "metrics": [
       {
         "label": "Career date",
-        "value": "2004-02-27"
+        "value": "2004-02-28"
       },
       {
         "label": "Recorded contracts",
@@ -196148,7 +196467,7 @@
       "history_complete": false,
       "recorded_contract_count": 1,
       "current_contract_verified": true,
-      "as_of": "2004-02-27",
+      "as_of": "2004-02-28",
       "note": "Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed."
     }
   }

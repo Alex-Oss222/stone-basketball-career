@@ -2,7 +2,7 @@
  "schema_version": 1,
  "initialized": true,
  "season": "2003-04",
- "current_date": "2004-02-27",
+ "current_date": "2004-02-28",
  "current_area": "06_Regular_Season",
  "current_note": "06_Regular_Season/02_February/Week_4/note.md",
  "team": "Miami Heat",
@@ -15,6 +15,6 @@
  },
  "contract_status": "rookie_scale_contract",
  "roster_status": "under_contract",
- "last_closed_event": "2004-02-23-portland-trail-blazers-at-miami-heat",
+ "last_closed_event": "2004-02-28-miami-heat-at-new-jersey-nets",
  "pending_player_decisions": []
 }
