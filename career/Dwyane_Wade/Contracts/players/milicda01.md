@@ -2,9 +2,9 @@
 
 # Contract | Darko Milicic
 
-Known through: 2004-02-13. [Open interactive contract](milicda01.html#contract) · [Contract history](milicda01.html#contract-history)
+Known through: 2004-02-14. [Open interactive contract](milicda01.html#contract) · [Contract history](milicda01.html#contract-history)
 
-Darko Milicic: No verified contract record. Evidence cutoff: 2004-02-13.
+Darko Milicic: No verified contract record. Evidence cutoff: 2004-02-14.
 
 ## Current contract
 
