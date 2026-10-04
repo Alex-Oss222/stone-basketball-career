@@ -1,0 +1,219 @@
+#!/usr/bin/env python3
+"""Advance the career day by day until a target date, stopping whenever Wade has a decision to make.
+
+    python scripts/advance.py --to 2004-04-14
+
+Each day runs the dated systems in order, each idempotent, so a stopped day can simply be run again:
+  1. the clock moves to the day; the January 7 and 10 guarantee steps run on their dates;
+  2. a due fortnightly staff rotation review is written, its close starting battles drawn by the engine, and
+     the review completed;
+  3. the league's market day (waivers, claims, 10-day contracts) and, on Mondays to the deadline, the trade scan,
+     its packets drawn and accepted deals executed; disturbed clubs replace players Miami took;
+  4. the day's Miami game (one at a time, so an injury reaches the next game) and league games are built, their
+     inputs frozen (`game_requests.freeze`) and checked against the dated records;
+  5. awards announced that morning are decided (an exact tie is an engine draw);
+  6. the day's games are played through the engine's direct route and written back into the career record.
+
+Every chance answer is an engine draw; nothing here chooses an outcome. The full page rebuild, repository
+validation and the full test suite run at week ends (Sundays), at the target date and before every push; a push
+happens at those checkpoints, or when the engine refuses a game because its deployed code or library differs.
+
+Stops: a pending player decision or consultation for Wade (`current_state.pending_player_decisions`), any step
+that fails, failed validation or tests, or a game the engine still refuses after a push.
+
+Environment: ENGINE_API_TOKEN (never printed), and optionally ADVANCE_COMMIT_TRAILER appended to each commit.
+"""
+import argparse
+from datetime import date, timedelta
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+import time
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+STATE = ROOT / "career/Dwyane_Wade/2003-04/current_state.json"
+MIAMI_RESULTS = "career/Dwyane_Wade/2003-04/06_Regular_Season/*/*/Game_*.result.json"
+
+
+class Stop(Exception):
+    pass
+
+
+def say(msg):
+    print(msg, flush=True)
+
+
+def run(*args, ok=(0,), show=True):
+    p = subprocess.run([sys.executable, *args], cwd=ROOT, capture_output=True, text=True)
+    out = (p.stdout + p.stderr).strip()
+    if show and out:
+        say("\n".join("    " + line for line in out.splitlines()[-12:]))
+    if p.returncode not in ok:
+        raise Stop(f"{' '.join(args)} exited {p.returncode}")
+    return out
+
+
+def git(*args):
+    p = subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True)
+    return p.returncode, (p.stdout + p.stderr).strip()
+
+
+def state():
+    return json.loads(STATE.read_text(encoding="utf-8"))
+
+
+def write_state(data):
+    STATE.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def wade_waits():
+    pending = state().get("pending_player_decisions") or []
+    if pending:
+        raise Stop("Wade has a decision to make: " + "; ".join(map(str, pending)))
+
+
+def commit(message):
+    git("add", "-A")
+    code, _ = git("diff", "--cached", "--quiet")
+    if code:
+        trailer = os.getenv("ADVANCE_COMMIT_TRAILER", "")
+        git("commit", "-q", "-m", message + (f"\n\n{trailer}" if trailer else ""))
+
+
+def checkpoint(day, push=True):
+    """Full pages, validation and the full suite; then push."""
+    run("scripts/update_player_reports.py", show=False)
+    if "passed" not in run("scripts/validate_repository.py", ok=(0, 1)):
+        raise Stop("validation failed")
+    commit(f"Advance {day}: checkpoint")
+    if not push:
+        return
+    tests = run("scripts/run_tests.py", ok=(0, 1), show=False)
+    say("    " + tests.splitlines()[-1])
+    if not tests.splitlines()[-1].endswith("OK"):
+        raise Stop("test suite failed")
+    for attempt in range(5):
+        code, out = git("push", "-q", "origin", "HEAD:milestone-1")
+        if code == 0:
+            return
+        if "rejected" in out or "fetch first" in out:
+            # The results collector may have committed engine results meanwhile: keep ours, then validate the merge.
+            git("fetch", "-q", "origin", "milestone-1")
+            code, out = git("merge", "-q", "-X", "ours", "--no-edit", "origin/milestone-1")
+            if code:
+                raise Stop("merge with origin failed: " + out)
+            if "passed" not in run("scripts/validate_repository.py", ok=(0, 1), show=False):
+                raise Stop("validation failed after merging origin")
+            continue
+        time.sleep(2 ** (attempt + 1))
+    raise Stop("push failed")
+
+
+def draws_pending():
+    return any(not p.with_name(p.name.replace(".decision.json", ".decision.result.json")).exists()
+               for p in (ROOT / "career").rglob("*.decision.json"))
+
+
+def draw():
+    if draws_pending():
+        run("scripts/draw_decisions.py")
+
+
+def play(day):
+    """Every pending game through `day`; if the engine refuses (its code or library differs), push and wait."""
+    pushed = False
+    for _ in range(40):
+        out = run("scripts/play_games.py", day, ok=(0, 1), show=False)
+        refused = [l for l in out.splitlines() if l and not l.startswith(("played", "already_played")) and "written" not in l]
+        if not refused:
+            say("    " + out.splitlines()[-1])
+            return
+        if not pushed:
+            say(f"    the engine refused a game ({refused[0][:100]}); pushing so it redeploys")
+            run("scripts/write_back_results.py", "--write", show=False)
+            checkpoint(day)
+            pushed = True
+        time.sleep(30)
+    raise Stop("games still refused after the push: " + refused[0][:200])
+
+
+def summary(day):
+    for path in sorted(ROOT.glob(MIAMI_RESULTS)):
+        r = json.loads(path.read_text(encoding="utf-8"))
+        if r["game_date"] != day:
+            continue
+        side = "home" if r["home"] == "Miami Heat" else "away"
+        other = "away" if side == "home" else "home"
+        won = r["final_score"][side] > r["final_score"][other]
+        say(f"    Miami {'W' if won else 'L'} {r['final_score'][side]}-{r['final_score'][other]} "
+            f"{'vs' if side == 'home' else 'at'} {r[other]}")
+        for p in r["player_stats"][side]:
+            if p["player_id"] == "Dwyane Wade":
+                say(f"    Wade {p['minutes']:.1f} min, {p['pts']} pts, {p['orb'] + p['drb']} reb, {p['ast']} ast, "
+                    f"FG {p['fgm']}-{p['fga']}, 3P {p['tpm']}-{p['tpa']}, FT {p['ftm']}-{p['fta']}")
+
+
+def advance_day(day):
+    from runtime import roster_moves
+    say(f"== {day}")
+    wade_waits()
+    data = state()
+    data["current_date"] = day
+    write_state(data)
+    if day in (roster_moves.WAIVE_BY, roster_moves.GUARANTEE_DATE):
+        run("scripts/guarantee_review.py", "--write", day)
+    if run("scripts/review_rotation.py", "--check", day, ok=(0, 1), show=False).startswith("staff review due"):
+        run("scripts/review_rotation.py", "--write", day, ok=(0, 1))
+        draw()
+        run("scripts/review_rotation.py", "--write", day)
+    run("scripts/league_day.py", "--write", day)
+    if draws_pending():
+        draw()
+        run("scripts/league_day.py", "--write", day)
+    run("scripts/club_replacements.py", "--write", ok=(0, 1), show=False)
+    run("scripts/build_season_games.py", "--write", day)
+    run("scripts/build_league_slate.py", "--write", day, show=False)
+    problems = run("-c", "from runtime.game_requests import frozen_errors; print('\\n'.join(frozen_errors()))", show=False)
+    if problems:
+        raise Stop("frozen inputs differ from the records: " + "; ".join(problems.splitlines()[:3]))
+    run("scripts/decide_awards.py", "--write", ok=(0, 1))
+    draw()
+    run("scripts/decide_awards.py", "--write", show=False)
+    wade_waits()
+    play(day)
+    results = sorted(ROOT.glob(MIAMI_RESULTS), key=lambda p: json.loads(p.read_text(encoding="utf-8"))["game_date"])
+    if results:
+        data = state()
+        data["last_closed_event"] = json.loads(results[-1].read_text(encoding="utf-8"))["event_id"]
+        write_state(data)
+    run("scripts/write_back_results.py", "--write", show=False)
+    summary(day)
+    commit(f"Advance {day}")
+    wade_waits()
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    parser.add_argument("--to", required=True, help="the last day to play")
+    parser.add_argument("--from", dest="start", help="first day (default: the career clock's day, rerun safely)")
+    args = parser.parse_args()
+    day = date.fromisoformat(args.start or state()["current_date"])
+    end = date.fromisoformat(args.to)
+    try:
+        while day <= end:
+            advance_day(day.isoformat())
+            if day.weekday() == 6 or day == end:
+                checkpoint(day.isoformat())
+            day += timedelta(days=1)
+    except Stop as stop:
+        say(f"STOPPED on {state()['current_date']}: {stop}")
+        return 1
+    say(f"DONE through {end.isoformat()}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

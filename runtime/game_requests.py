@@ -48,6 +48,38 @@ from .schedule import games_per_team
 
 ROOT = Path(__file__).resolve().parents[1]
 FIELDS = {"event_id", "game_date", "game_type", "venue", "home", "away"}
+# From this date each request also carries both clubs' engine inputs as the builder computed them from the dated
+# records (rosters, minutes, availability, ratings, ages, rest, pace), frozen before the engine's own draws
+# (development swings and absence spells stay in the engine). The engine then needs no deployed copy of the
+# changing career records to play a game, so a roster move no longer forces a redeploy. Validation recomputes the
+# frozen inputs from the committed records and refuses any difference.
+FROZEN_FROM = "2004-01-22"
+
+
+def team_from_packet(data):
+    """A TeamInput from its `kernel.team_packet` form (the inverse of team_packet)."""
+    players = tuple(PlayerInput(**p) for p in data["players"])
+    return TeamInput(data["team_id"], players, pace=data["pace"], rest_days=data["rest_days"], injuries=data["injuries"],
+                     starters=tuple(data.get("starters", ())), season_roster=data.get("season_roster", False))
+
+
+def computed_inputs(data, root=ROOT):
+    """Both clubs' engine inputs computed from the request's club specs and the dated records."""
+    season = season_for_date(data["game_date"])
+    actives = rules_for(season)["game_day_actives"]
+    index = load_rating_index(data["game_date"], season, root)
+    return (_club(data["home"], actives, root, index, season, data["game_date"]),
+            _club(data["away"], actives, root, index, season, data["game_date"]))
+
+
+def freeze(data, root=ROOT):
+    """The request with its clubs' inputs frozen, for a game on or after FROZEN_FROM; otherwise unchanged."""
+    if data["game_date"] < FROZEN_FROM:
+        return data
+    from .kernel import team_packet
+    home, away = computed_inputs(data, root)
+    frozen = json.loads(json.dumps({"home": team_packet(home), "away": team_packet(away)}))
+    return {**{k: v for k, v in data.items() if k != "frozen"}, "frozen": frozen}
 
 
 def find_requests(root=ROOT):
@@ -113,13 +145,21 @@ def _club(spec, actives, root, rating_index, season=None, game_date=None):
 
 def load_request(path, root=ROOT):
     data = json.loads(Path(path).read_text(encoding="utf-8"))
-    if not isinstance(data, dict) or set(data) != FIELDS:
-        raise ValueError(f"request fields must be exactly {sorted(FIELDS)}")
-    season = season_for_date(data["game_date"])
-    actives = rules_for(season)["game_day_actives"]
-    index = load_rating_index(data["game_date"], season, root)
-    home = _club(data["home"], actives, root, index, season, data["game_date"])
-    away = _club(data["away"], actives, root, index, season, data["game_date"])
+    if not isinstance(data, dict) or set(data) not in (FIELDS, FIELDS | {"frozen"}):
+        raise ValueError(f"request fields must be exactly {sorted(FIELDS)} (plus frozen from {FROZEN_FROM})")
+    if "frozen" in data:
+        if data["game_date"] < FROZEN_FROM:
+            raise ValueError(f"frozen inputs start with games on {FROZEN_FROM}")
+        frozen = data["frozen"]
+        if not isinstance(frozen, dict) or set(frozen) != {"home", "away"}:
+            raise ValueError("frozen must hold exactly the home and away inputs")
+        home, away = team_from_packet(frozen["home"]), team_from_packet(frozen["away"])
+        if (home.team_id, away.team_id) != (data["home"]["team"], data["away"]["team"]):
+            raise ValueError("frozen inputs name different clubs from the request")
+    else:
+        if data["game_date"] >= FROZEN_FROM:
+            raise ValueError(f"a game on or after {FROZEN_FROM} carries its frozen inputs")
+        home, away = computed_inputs(data, root)
     kwargs = {k: data[k] for k in ("event_id", "game_date", "game_type", "venue")}
     kwargs["root"] = root
     build_game_packet(home, away, validation_only=True, **kwargs)  # common inputs only; runner freezes the selected kernel's sources
@@ -144,6 +184,31 @@ def input_fingerprint(path, root=ROOT):
                 "environment": environment_for(season, kwargs["game_date"], root),
                 "spatial": load_spatial_environment(season, kwargs["game_date"], root)}
     return hashlib.sha256(canonical(material)).hexdigest()
+
+
+def frozen_errors(root=ROOT, recent_days=3, every=25):
+    """Frozen inputs that differ from what the committed records give for the same request: every request not yet
+    played, every one dated within `recent_days` of the career clock, and every `every`th of the rest."""
+    from datetime import date, timedelta
+    from .kernel import team_packet
+    state = json.loads((Path(root) / "career/Dwyane_Wade/2003-04/current_state.json").read_text(encoding="utf-8"))
+    since = (date.fromisoformat(state["current_date"]) - timedelta(days=recent_days)).isoformat()
+    errors, k = [], 0
+    for path in find_requests(root):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if "frozen" not in data:
+            continue
+        k += 1
+        played = path.with_name(path.name.replace(".request.json", ".result.json")).exists()
+        if played and data["game_date"] < since and k % every:
+            continue
+        try:
+            home, away = computed_inputs(data, root)
+            if json.loads(json.dumps({"home": team_packet(home), "away": team_packet(away)})) != data["frozen"]:
+                errors.append(f"{path.relative_to(root)}: frozen inputs differ from the committed records")
+        except (OSError, KeyError, TypeError, ValueError) as exc:
+            errors.append(f"{path.relative_to(root)}: cannot recompute frozen inputs: {exc}")
+    return errors
 
 
 def request_errors(root=ROOT):

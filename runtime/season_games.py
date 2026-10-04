@@ -486,7 +486,8 @@ def build_miami(until, root=ROOT, season=SEASON, write=False):
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
             row["injured_list"] = lists["injured_list"]
-        data = miami_request(game, players)
+        from .game_requests import freeze
+        data = freeze(miami_request(game, players), root)
         if row["note"]:
             text = game_note(number, game, "home" if game["home"] == MIAMI else "away", season)
             if row.get("injured_list") is not None:
@@ -579,8 +580,12 @@ def slate_structure_errors(path, data, schedule_by_id, clubs, root=ROOT):
     rel = Path(path).relative_to(root) if Path(path).is_absolute() else path
     errors = []
     expected_fields = {"event_id", "game_date", "game_type", "venue", "home", "away"}
+    from .game_requests import FROZEN_FROM
+    if isinstance(data, dict) and data.get("game_date", "") >= FROZEN_FROM:
+        expected_fields = expected_fields | {"frozen"}             # inputs frozen at build (game_requests.freeze)
     if not isinstance(data, dict) or set(data) != expected_fields:
         return [f"{rel}: request fields must be exactly {sorted(expected_fields)}"]
+    data = {k: v for k, v in data.items() if k != "frozen"}
     game = schedule_by_id.get(data["event_id"])
     if game is None:
         errors.append(f"{rel}: event_id is not a regular-season game in the schedule")
@@ -654,7 +659,8 @@ def build_slate(until, root=ROOT, season=SEASON, write=False, every=SLATE_SAMPLE
         readme.write_text(slate_readme(season), encoding="utf-8")
     written = []
     for game, path in todo:
-        path.write_text(json.dumps(slate_request(game), indent=1) + "\n", encoding="utf-8")
+        from .game_requests import freeze
+        path.write_text(json.dumps(freeze(slate_request(game), root), indent=1) + "\n", encoding="utf-8")
         written.append(path)
     errors = slate_errors(written, root, season, every)
     if errors:

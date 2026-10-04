@@ -667,6 +667,9 @@ def validate():
     for page in refresh_team_status(ROOT, write=False):
         errors.append(f"{page.relative_to(ROOT)}: dated team status or standings are stale (python scripts/write_back_results.py --write)")
 
+    from runtime.game_requests import frozen_errors
+    errors.extend(frozen_errors(ROOT))
+
     from runtime.award_decisions import award_errors
     errors.extend(award_errors(ROOT))
 
