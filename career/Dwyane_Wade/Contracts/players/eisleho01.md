@@ -2,9 +2,9 @@
 
 # Contract | Howard Eisley
 
-Known through: 2003-12-17. [Open interactive contract](eisleho01.html#contract) · [Contract history](eisleho01.html#contract-history)
+Known through: 2003-12-18. [Open interactive contract](eisleho01.html#contract) · [Contract history](eisleho01.html#contract-history)
 
-Howard Eisley: under contract. Evidence cutoff: 2003-12-17.
+Howard Eisley: under contract. Evidence cutoff: 2003-12-18.
 
 ## Current contract
 

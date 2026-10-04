@@ -2,9 +2,9 @@
 
 # Contract | Bob Sura
 
-Known through: 2003-12-17. [Open interactive contract](surabo01.html#contract) · [Contract history](surabo01.html#contract-history)
+Known through: 2003-12-18. [Open interactive contract](surabo01.html#contract) · [Contract history](surabo01.html#contract-history)
 
-Bob Sura: under contract unverified. Evidence cutoff: 2003-12-17.
+Bob Sura: under contract unverified. Evidence cutoff: 2003-12-18.
 
 ## Current contract
 

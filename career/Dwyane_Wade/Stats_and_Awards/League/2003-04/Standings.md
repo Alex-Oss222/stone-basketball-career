@@ -1,6 +1,6 @@
 # 2003-04 standings
 
-Through 2003-12-17, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2003-12-18, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
@@ -10,7 +10,7 @@ Through 2003-12-17, from closed simulated results only (`runtime/standings.py`).
 | 2 | Indiana Pacers | 19 | 7 | .731 | 1.5 |
 | 3 | New Jersey Nets | 17 | 7 | .708 | 2.5 |
 | 4 | Milwaukee Bucks | 14 | 12 | .538 | 6.5 |
-| 5 | New Orleans Hornets | 14 | 12 | .538 | 6.5 |
+| 5 | New Orleans Hornets | 14 | 13 | .519 | 7 |
 | 6 | Cleveland Cavaliers | 11 | 14 | .440 | 9 |
 | 7 | Chicago Bulls | 10 | 14 | .417 | 9.5 |
 | 8 | Atlanta Hawks | 11 | 16 | .407 | 10 |
@@ -28,16 +28,16 @@ Through 2003-12-17, from closed simulated results only (`runtime/standings.py`).
 | --- | --- | --- | --- | --- | --- |
 | 1 | Los Angeles Lakers | 18 | 5 | .783 | — |
 | 2 | San Antonio Spurs | 20 | 7 | .741 | — |
-| 3 | Minnesota Timberwolves | 17 | 7 | .708 | 1.5 |
-| 4 | Sacramento Kings | 14 | 8 | .636 | 3.5 |
-| 5 | Dallas Mavericks | 15 | 9 | .625 | 3.5 |
+| 3 | Minnesota Timberwolves | 18 | 7 | .720 | 1 |
+| 4 | Sacramento Kings | 15 | 8 | .652 | 3 |
+| 5 | Dallas Mavericks | 15 | 10 | .600 | 4 |
 | 6 | Seattle SuperSonics | 13 | 10 | .565 | 5 |
 | 7 | Golden State Warriors | 12 | 11 | .522 | 6 |
 | 8 | Houston Rockets | 12 | 12 | .500 | 6.5 |
 | 9 | Utah Jazz | 12 | 13 | .480 | 7 |
 | 10 | Memphis Grizzlies | 11 | 13 | .458 | 7.5 |
 | 11 | Denver Nuggets | 11 | 14 | .440 | 8 |
-| 12 | Portland Trail Blazers | 9 | 13 | .409 | 8.5 |
+| 12 | Portland Trail Blazers | 10 | 13 | .435 | 8 |
 | 13 | Los Angeles Clippers | 8 | 13 | .381 | 9 |
-| 14 | Phoenix Suns | 8 | 17 | .320 | 11 |
+| 14 | Phoenix Suns | 8 | 18 | .308 | 11.5 |
 

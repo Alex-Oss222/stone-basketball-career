@@ -2,9 +2,9 @@
 
 # Contract | Gerald Wallace
 
-Known through: 2003-12-17. [Open interactive contract](wallage01.html#contract) · [Contract history](wallage01.html#contract-history)
+Known through: 2003-12-18. [Open interactive contract](wallage01.html#contract) · [Contract history](wallage01.html#contract-history)
 
-Gerald Wallace: under rookie contract. Evidence cutoff: 2003-12-17.
+Gerald Wallace: under rookie contract. Evidence cutoff: 2003-12-18.
 
 ## Current contract
 

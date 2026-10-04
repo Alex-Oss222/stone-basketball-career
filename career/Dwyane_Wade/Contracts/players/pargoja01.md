@@ -2,9 +2,9 @@
 
 # Contract | Jannero Pargo
 
-Known through: 2003-12-17. [Open interactive contract](pargoja01.html#contract) · [Contract history](pargoja01.html#contract-history)
+Known through: 2003-12-18. [Open interactive contract](pargoja01.html#contract) · [Contract history](pargoja01.html#contract-history)
 
-Jannero Pargo: under contract. Evidence cutoff: 2003-12-17.
+Jannero Pargo: under contract. Evidence cutoff: 2003-12-18.
 
 ## Current contract
 

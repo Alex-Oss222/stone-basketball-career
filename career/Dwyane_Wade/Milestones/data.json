@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2003-12-17",
+  "as_of": "2003-12-18",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2003-12-17"
+              "2003-12-18"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2003-12-17",
+              "2003-12-18",
               "Current checkpoint",
               "2003-12-17-miami-heat-at-philadelphia-76ers",
               "Recorded",
@@ -460,7 +460,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-17"
+          "value": "2003-12-18"
         },
         {
           "label": "Team",
@@ -838,7 +838,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-17"
+          "value": "2003-12-18"
         },
         {
           "label": "Team",
@@ -1269,7 +1269,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-17"
+          "value": "2003-12-18"
         },
         {
           "label": "Team",
@@ -1808,7 +1808,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-17"
+          "value": "2003-12-18"
         },
         {
           "label": "Team",
@@ -2156,7 +2156,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-17"
+          "value": "2003-12-18"
         },
         {
           "label": "Team",
@@ -2500,7 +2500,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-17"
+          "value": "2003-12-18"
         },
         {
           "label": "Team",
@@ -2853,7 +2853,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-17"
+          "value": "2003-12-18"
         },
         {
           "label": "Team",
@@ -3254,7 +3254,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-17"
+          "value": "2003-12-18"
         },
         {
           "label": "Team",
@@ -3271,7 +3271,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "32 closed game records in 2003-04 through 2003-12-17. Competitions remain separate.",
+      "summary": "32 closed game records in 2003-04 through 2003-12-18. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3943,7 +3943,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-12-17"
+          "value": "2003-12-18"
         },
         {
           "label": "Team",

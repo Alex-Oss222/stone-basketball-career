@@ -2,9 +2,9 @@
 
 # Contract | Tierre Brown
 
-Known through: 2003-12-17. [Open interactive contract](brownti01.html#contract) · [Contract history](brownti01.html#contract-history)
+Known through: 2003-12-18. [Open interactive contract](brownti01.html#contract) · [Contract history](brownti01.html#contract-history)
 
-Tierre Brown: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-17.
+Tierre Brown: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-18.
 
 ## Current contract
 

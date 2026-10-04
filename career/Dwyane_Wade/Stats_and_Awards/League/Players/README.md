@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-17**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-18**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -170,7 +170,7 @@ Card date: **2003-12-17**. 503 registry players, one Markdown card and one inter
 | [Kyle Korver](korveky01.md) | Philadelphia 76ers | 22 | sourced | [open](korveky01.html) |
 | [Lavor Postell](postela01.md) | New York Knicks | 25 | sourced | [open](postela01.html) |
 | [Leandro Barbosa](barbole01.md) | Phoenix Suns | 21 | sourced | [open](barbole01.html) |
-| [Lucious Harris](harrilu01.md) | New Jersey Nets | 32 | silhouette | [open](harrilu01.html) |
+| [Lucious Harris](harrilu01.md) | New Jersey Nets | 33 | silhouette | [open](harrilu01.html) |
 | [Manu Ginobili](ginobma01.md) | San Antonio Spurs | 26 | sourced | [open](ginobma01.html) |
 | [Marquis Daniels](daniema01.md) | Dallas Mavericks | None | silhouette | [open](daniema01.html) |
 | [Matt Carroll](carroma01.md) | Portland Trail Blazers | None | silhouette | [open](carroma01.html) |
@@ -454,7 +454,7 @@ Card date: **2003-12-17**. 503 registry players, one Markdown card and one inter
 | [Bruno Šundov](sundobr01.md) | Cleveland Cavaliers | None | silhouette | [open](sundobr01.html) |
 | [Calvin Booth](boothca01.md) | Seattle SuperSonics | 27 | sourced | [open](boothca01.html) |
 | [Cezary Trybanski](trybace01.md) | Phoenix Suns | 24 | sourced | [open](trybace01.html) |
-| [Charles Oakley](oaklech01.md) | Washington Wizards | 39 | sourced | [open](oaklech01.html) |
+| [Charles Oakley](oaklech01.md) | Washington Wizards | 40 | sourced | [open](oaklech01.html) |
 | [Cherokee Parks](parksch02.md) | Miami Heat | 31 | silhouette | [open](parksch02.html) |
 | [Chris Andersen](anderch01.md) | Denver Nuggets | 25 | sourced | [open](anderch01.html) |
 | [Chris Kaman](kamanch01.md) | Los Angeles Clippers | 21 | sourced | [open](kamanch01.html) |
