@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG  
 **Age at assessment:** 25 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-02-26 
+**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-02-27 
 
 **Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $663,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 3 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at SG, staff plan 20 minutes (staff rotation dated 2004-02-13, [record](../Depth_Chart/Reviews/2004-02-13/rotation.json)).
+**Role:** Rotation at SG, staff plan 16 minutes (staff rotation dated 2004-02-27, [record](../Depth_Chart/Reviews/2004-02-27/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -44,11 +44,12 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 | 2004-01-16 | Staff rotation of 2004-01-16: rotation at SG, staff plan 16 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-16/rotation.json) |
 | 2004-01-30 | Staff rotation of 2004-01-30: rotation at SG, staff plan 16 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-30/rotation.json) |
 | 2004-02-13 | Staff rotation of 2004-02-13: rotation at SG, staff plan 20 minutes. | [Rotation](../Depth_Chart/Reviews/2004-02-13/rotation.json) |
+| 2004-02-27 | Staff rotation of 2004-02-27: rotation at SG, staff plan 16 minutes. | [Rotation](../Depth_Chart/Reviews/2004-02-27/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [League baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json), [signing record](../../../04_Training_Camp/camp_roster.json).
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-02-13.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-02-27.
 
 <!-- yearly-statistics:start -->
 

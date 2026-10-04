@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-02-26",
+  "as_of": "2004-02-27",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-02-26"
+              "2004-02-27"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2004-02-26",
+              "2004-02-27",
               "Current checkpoint",
               "2004-02-23-portland-trail-blazers-at-miami-heat",
               "Recorded",
@@ -94,16 +94,6 @@
               }
             ],
             [
-              "2004-02-27",
-              "Staff rotation review",
-              "Coaching staff (same rule for every player)",
-              "Scheduled; a role request may be logged before it",
-              {
-                "label": "Rule",
-                "href": "../../../docs/front_office.md"
-              }
-            ],
-            [
               "2004-02-28",
               "Next Miami game, at New Jersey Nets",
               "Coach sets the rotation; the engine plays it",
@@ -121,6 +111,16 @@
               {
                 "label": "Awards",
                 "href": "#calendar"
+              }
+            ],
+            [
+              "2004-03-12",
+              "Staff rotation review",
+              "Coaching staff (same rule for every player)",
+              "Scheduled; a role request may be logged before it",
+              {
+                "label": "Rule",
+                "href": "../../../docs/front_office.md"
               }
             ],
             [
@@ -257,11 +257,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -277,7 +277,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json"
         },
         {
           "label": "Rule",
@@ -572,7 +572,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-26"
+          "value": "2004-02-27"
         },
         {
           "label": "Team",
@@ -767,11 +767,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -787,7 +787,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json"
         },
         {
           "label": "Rule",
@@ -1082,7 +1082,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-26"
+          "value": "2004-02-27"
         },
         {
           "label": "Team",
@@ -1330,11 +1330,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1350,7 +1350,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json"
         },
         {
           "label": "Rule",
@@ -1645,7 +1645,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-26"
+          "value": "2004-02-27"
         },
         {
           "label": "Team",
@@ -2001,11 +2001,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2021,7 +2021,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json"
         },
         {
           "label": "Rule",
@@ -2316,7 +2316,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-26"
+          "value": "2004-02-27"
         },
         {
           "label": "Team",
@@ -2481,11 +2481,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2501,7 +2501,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json"
         },
         {
           "label": "Rule",
@@ -2796,7 +2796,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-26"
+          "value": "2004-02-27"
         },
         {
           "label": "Team",
@@ -2957,11 +2957,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2977,7 +2977,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json"
         },
         {
           "label": "Rule",
@@ -3272,7 +3272,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-26"
+          "value": "2004-02-27"
         },
         {
           "label": "Team",
@@ -3442,11 +3442,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -3462,7 +3462,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json"
         },
         {
           "label": "Rule",
@@ -3757,7 +3757,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-26"
+          "value": "2004-02-27"
         },
         {
           "label": "Team",
@@ -3839,11 +3839,11 @@
             ],
             [
               "C",
-              "Brian Grant, Shawn Kemp, Cherokee Parks",
+              "Shawn Kemp, Brian Grant, Cherokee Parks",
               "Staff ordering; not a future minutes promise"
             ]
           ],
-          "notice": "Snapshot: 2004-02-13. Draft rights and unassigned arrivals are not assigned minutes."
+          "notice": "Snapshot: 2004-02-27. Draft rights and unassigned arrivals are not assigned minutes."
         },
         {
           "title": "Role and promise review",
@@ -3975,11 +3975,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -3995,7 +3995,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json"
         },
         {
           "label": "Rule",
@@ -4290,7 +4290,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-26"
+          "value": "2004-02-27"
         },
         {
           "label": "Team",
@@ -4307,7 +4307,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "65 closed game records in 2003-04 through 2004-02-26. Competitions remain separate.",
+      "summary": "65 closed game records in 2003-04 through 2004-02-27. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -5126,11 +5126,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -5146,7 +5146,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-13/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json"
         },
         {
           "label": "Rule",
@@ -5441,7 +5441,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-02-26"
+          "value": "2004-02-27"
         },
         {
           "label": "Team",

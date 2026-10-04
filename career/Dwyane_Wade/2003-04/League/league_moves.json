@@ -2373,6 +2373,64 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.35 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-02-27-expire-penigde01",
+   "date": "2004-02-27",
+   "kind": "expire",
+   "player": "Desmond Penigar",
+   "bbr_id": "penigde01",
+   "from": "Denver Nuggets",
+   "to": null,
+   "role": {
+    "player_id": "Desmond Penigar",
+    "bbr_id": "penigde01",
+    "position": "PF",
+    "games": 10,
+    "minutes": 89
+   },
+   "contract": null,
+   "note": "10-day contract ended (2.1 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-02-27-waive-barnema02",
+   "date": "2004-02-27",
+   "kind": "waive",
+   "player": "Matt Barnes",
+   "bbr_id": "barnema02",
+   "from": "Los Angeles Clippers",
+   "to": null,
+   "role": {
+    "player_id": "Matt Barnes",
+    "bbr_id": "barnema02",
+    "position": "SF",
+    "games": 38,
+    "minutes": 724
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-02-29"
+  },
+  {
+   "id": "2003-04-market-2004-02-27-ten_day-penigde01",
+   "date": "2004-02-27",
+   "kind": "ten_day",
+   "player": "Desmond Penigar",
+   "bbr_id": "penigde01",
+   "from": null,
+   "to": "Los Angeles Clippers",
+   "role": {
+    "player_id": "Desmond Penigar",
+    "bbr_id": "penigde01",
+    "position": "PF",
+    "games": 10,
+    "minutes": 89
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-03-08",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.77 x fit"
   }
  ]
 }

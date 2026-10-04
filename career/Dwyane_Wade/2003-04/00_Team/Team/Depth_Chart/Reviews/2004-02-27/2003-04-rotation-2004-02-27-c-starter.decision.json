@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-04-rotation-2004-02-27-c-starter",
+ "date": "2004-02-27",
+ "question": "Who starts at C: Brian Grant or Shawn Kemp?",
+ "decider": "Miami coaching staff (engine evaluation draw)",
+ "options": {
+  "Brian Grant": 0.628925,
+  "Shawn Kemp": 0.371075
+ },
+ "basis": "Dated staff scores 13.434922 and 12.742082 within 10%; closed production per 30 minutes blended with 300 preseason prior minutes. No seniority, draft-slot or incumbent bonus."
+}
