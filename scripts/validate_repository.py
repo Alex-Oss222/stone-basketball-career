@@ -651,6 +651,9 @@ def validate():
     from runtime.award_decisions import award_errors
     errors.extend(award_errors(ROOT))
 
+    from runtime.club_replacements import replacement_errors
+    errors.extend(replacement_errors(ROOT))
+
     from runtime.game_requests import find_requests, request_errors
     errors.extend(request_errors(ROOT))
     from runtime.rotation_reviews import review_errors

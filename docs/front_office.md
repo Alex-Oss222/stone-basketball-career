@@ -176,3 +176,14 @@ Positional fit asks only whether Miami is short of minutes at a position. Skill 
 Miami's need for a skill is how far its held players, weighted by production, fall below the league on it, capped at 1.5 standard deviations. A candidate's multiplier is `1 + 0.12 x sum(need x his standardized skill) - 0.10 x crowding`, bounded to 0.6-1.4, where crowding is his usage above average times Miami's own. A second high-usage scorer next to Wade is marked down; the big who protects the rim is marked up. The multiplier scales the free-agent target weight (`FrontOffice.targets`, shown as `skill_fit`) and Miami's own value of a player in a trade (`TradeDesk.valuation`), and a candidate at 1.10 or better is searched even at a position Miami has covered (`SEARCH_SKILL_FIT`). The same rule applies to every player. A draftee without an NBA defensive record counts as average on defense.
 
 On December 1, 2003 Miami's need is rim protection (0.24) and a little playmaking; its creation load is 0.17. Ben Wallace scores 1.08 and Theo Ratliff 1.08, while Allen Iverson scores 0.93 and Ray Allen 0.95.
+
+## Disturbed clubs replace what Miami takes (from December 1, 2003)
+
+Real clubs follow history (option D), so a club Miami takes a rotation player from would otherwise just play shorter. From December 1, 2003 (`runtime/club_replacements.py`), when Miami acquires a player who was one of a real club's nine largest minutes the day before, that club signs a replacement the same day.
+
+- **Pool.** Players on the July 1, 2003 expiring-contract list whom no real club carried in 2003-04 and whose researched status on the date is a healthy unsigned free agent (`library/2003/league/nba_2003_04_unsigned_status.json`, sourced per player). Retired, abroad, injured or unknown players are never signed. Players Miami holds and earlier replacements are excluded.
+- **Choice.** 2002-03 production value times skill fit for the club's own needs, times 1.25 at the departing player's position. The same rule applies to every club.
+- **Terms.** Under the cap, a cap-room signing at his comparables price up to the room; otherwise the minimum exception for his years of service.
+- **Effect.** He arrives with his 2002-03 minutes per game and games share (rule 3) in `game_requests._club`, and `league_cards.club_on` dates him to his new club.
+
+Records live in `career/Dwyane_Wade/<season>/League/club_replacements.json`. Run `python scripts/club_replacements.py --write` after any Miami acquisition; validation refuses a disturbed club without a replacement while the pool has one. Undisturbed clubs keep following history.

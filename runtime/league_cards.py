@@ -194,6 +194,10 @@ def club_on(player, on, *, holdings=None, departures=None, transactions=None, ro
     for entry in departures.get("entries", []):
         if _matches(player, bbr_id=entry.get("bbr_id"), name=entry.get("player")) and _within(entry, on):
             club, basis, rights = entry["club"], f'sent by Miami to {entry["club"]} on {entry["from"]}', False
+    from .club_replacements import read as read_replacements
+    for entry in read_replacements(SEASON, root)["entries"]:
+        if _matches(player, bbr_id=entry.get("bbr_id"), name=entry.get("player")) and _within(entry, on):
+            club, basis, rights = entry["club"], f'signed by {entry["club"]} on {entry["from"]} to replace {entry["replaces"]}', False
     entry = _any_holding(player, holdings, on)
     if entry:
         club, basis = MIAMI, f'held by Miami ({entry.get("basis", "holdings ledger")})'

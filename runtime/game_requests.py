@@ -68,10 +68,14 @@ def _club(spec, actives, root, rating_index, season=None, game_date=None):
             raise ValueError(f"{spec['team']} has no real {season} roster (Miami is simulated)")
         # Rule 2: players simulated Miami holds are not with their real club; rule 3: players Miami sent arrive at the
         # partner only (`arrivals` re-adds them there), never also at the club history gave them.
+        # A disturbed club's replacement (runtime/club_replacements.py) arrives there and leaves his later real club.
+        from .club_replacements import arrivals as replacement_arrivals, held as replacements_held
         team = real_rotation(spec["team"], rosters[spec["team"]], games_per_team(season, spec["team"]), rating_index,
                              fraction=season_fraction(season, game_date, root),
-                             exclude=miami_holds(season, game_date, root) | miami_departed(season, game_date, root),
-                             arrivals=miami_departures(season, spec["team"], game_date, root),
+                             exclude=(miami_holds(season, game_date, root) | miami_departed(season, game_date, root)
+                                      | replacements_held(season, game_date, root)),
+                             arrivals=(miami_departures(season, spec["team"], game_date, root)
+                                       + replacement_arrivals(season, spec["team"], game_date, root)),
                              pace=club_pace(season, spec["team"], root), model=rotation_model(game_date))
         return replace(team, rest_days=rest)
     if "baseline" in spec:
