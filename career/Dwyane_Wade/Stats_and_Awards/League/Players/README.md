@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-05**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-01-06**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -42,7 +42,7 @@ Card date: **2004-01-05**. 503 registry players, one Markdown card and one inter
 | [Eric Snow](snower01.md) | Philadelphia 76ers | 30 | sourced | [open](snower01.html) |
 | [Frank Williams](willifr02.md) | New York Knicks | 23 | silhouette | [open](willifr02.html) |
 | [Gary Payton](paytoga01.md) | Los Angeles Lakers | 35 | sourced | [open](paytoga01.html) |
-| [Gilbert Arenas](arenagi01.md) | Washington Wizards | 21 | sourced | [open](arenagi01.html) |
+| [Gilbert Arenas](arenagi01.md) | Washington Wizards | 22 | sourced | [open](arenagi01.html) |
 | [Howard Eisley](eisleho01.md) | New York Knicks | 31 | sourced | [open](eisleho01.html) |
 | [J.R. Bremer](bremejr01.md) | Cleveland Cavaliers | 23 | silhouette | [open](bremejr01.html) |
 | [Jacque Vaughn](vaughja01.md) | Atlanta Hawks | 28 | sourced | [open](vaughja01.html) |
@@ -505,7 +505,7 @@ Card date: **2004-01-05**. 503 registry players, one Markdown card and one inter
 | [Lonny Baxter](baxtelo01.md) | Chicago Bulls | 24 | sourced | [open](baxtelo01.html) |
 | [Loren Woods](woodslo01.md) | Minnesota Timberwolves | 25 | sourced | [open](woodslo01.html) |
 | [Lorenzen Wright](wrighlo02.md) | Memphis Grizzlies | None | silhouette | [open](wrighlo02.html) |
-| [Mamadou N'diaye](ndiayma02.md) | Toronto Raptors | 28 | silhouette | [open](ndiayma02.html) |
+| [Mamadou N'diaye](ndiayma02.md) | Dallas Mavericks | 28 | silhouette | [open](ndiayma02.html) |
 | [Marc Jackson](jacksma02.md) | Philadelphia 76ers | 28 | sourced | [open](jacksma02.html) |
 | [Marcus Camby](cambyma01.md) | Denver Nuggets | 29 | sourced | [open](cambyma01.html) |
 | [Mark Blount](blounma01.md) | Boston Celtics | 28 | sourced | [open](blounma01.html) |

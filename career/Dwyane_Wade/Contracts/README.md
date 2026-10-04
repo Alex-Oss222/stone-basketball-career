@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-01-05. [Search the contract directory](index.html)
+Known through 2004-01-06. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -302,7 +302,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Malick Badiane](players/badiama01.md) | Houston Rockets | No verified contract record | No verified current agreement | 0 |
 | [Malik Allen](players/allenma01.md) | Free agent | unsigned free agent; Miami holds his rights | No verified current agreement | 1 |
 | [Malik Rose](players/rosema01.md) | San Antonio Spurs | under contract | Malik Rose · existing contract; signing date not recorded | 1 |
-| [Mamadou N'diaye](players/ndiayma02.md) | Toronto Raptors | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
+| [Mamadou N'diaye](players/ndiayma02.md) | Dallas Mavericks | under contract | Mamadou N'diaye · 2004-01-06 | 2 |
 | [Manu Ginobili](players/ginobma01.md) | San Antonio Spurs | under contract | Manu Ginobili · 2002-07-18 | 1 |
 | [Marc Jackson](players/jacksma02.md) | Philadelphia 76ers | under contract | Marc Jackson · existing contract; signing date not recorded | 1 |
 | [Marcus Banks](players/banksma01.md) | Boston Celtics | No verified contract record | No verified current agreement | 0 |

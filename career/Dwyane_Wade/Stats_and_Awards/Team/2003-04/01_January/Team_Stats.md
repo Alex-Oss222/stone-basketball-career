@@ -4,7 +4,7 @@
 
 NBA regular season · January 1-31, 2004
 
-As of January 5, 2004: 2 closed Miami games in this period. Rows cover Miami's closed games only.
+As of January 6, 2004: 2 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
@@ -90,7 +90,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Period | Calendar dates | Closed games | Status |
 | --- | --- | ---: | --- |
-| [Week 1](Week_1/Team_Stats.md) | January 1-7, 2004 | 2 | Through January 5, 2004 |
+| [Week 1](Week_1/Team_Stats.md) | January 1-7, 2004 | 2 | Through January 6, 2004 |
 | [Week 2](Week_2/Team_Stats.md) | January 8-14, 2004 | 0 | Not started |
 | [Week 3](Week_3/Team_Stats.md) | January 15-21, 2004 | 0 | Not started |
 | [Week 4](Week_4/Team_Stats.md) | January 22-31, 2004 | 0 | Not started |

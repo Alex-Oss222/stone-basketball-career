@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-01-05",
+  "as_of": "2004-01-06",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2651,10 +2651,10 @@
     {
       "player_id": "ndiayma02",
       "name": "Mamadou N'diaye",
-      "team": "Toronto Raptors",
-      "status": "on the 2003-04 roster; contract terms not in the dated records",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Dallas Mavericks",
+      "status": "under contract",
+      "current_contract_id": "ndiayma02-2004-01-06",
+      "recorded_agreements": 2,
       "href": "players/ndiayma02.html#contract"
     },
     {

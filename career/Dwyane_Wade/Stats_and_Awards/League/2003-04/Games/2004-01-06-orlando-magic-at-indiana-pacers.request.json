@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-06-orlando-magic-at-indiana-pacers",
+ "game_date": "2004-01-06",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Indiana Pacers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ }
+}

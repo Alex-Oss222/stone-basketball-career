@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-06-atlanta-hawks-at-sacramento-kings",
+ "game_date": "2004-01-06",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Atlanta Hawks",
+  "rotation": "real"
+ }
+}

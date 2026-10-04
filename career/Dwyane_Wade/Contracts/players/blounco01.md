@@ -2,9 +2,9 @@
 
 # Contract | Corie Blount
 
-Known through: 2004-01-05. [Open interactive contract](blounco01.html#contract) · [Contract history](blounco01.html#contract-history)
+Known through: 2004-01-06. [Open interactive contract](blounco01.html#contract) · [Contract history](blounco01.html#contract-history)
 
-Corie Blount: under contract. Evidence cutoff: 2004-01-05.
+Corie Blount: under contract. Evidence cutoff: 2004-01-06.
 
 ## Current contract
 
