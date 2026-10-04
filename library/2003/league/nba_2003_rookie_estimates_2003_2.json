@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "model_version": "rookie-2003.3",
+  "model_version": "rookie-2003.2",
   "as_of": "2003-06-26",
   "baseline_season": "2002-03",
   "source_file": "library/2003/league/nba_2003_prospect_stats.json",
@@ -123,7 +123,7 @@
       "scouting": {
         "as_of": "2003-06-25",
         "source_file": "career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md",
-        "source_sha256": "33b714c811827771a7e39d79eb9e9c98b785b94779f2ec6495f0734b8fb88c8b",
+        "source_sha256": "da398371a07262892bc6938e0b594cb49c3ffafa7c33e2e2413e634a26f51499",
         "position": "SG",
         "traits": {
           "paint_pressure": {
@@ -214,48 +214,6 @@
             "sections": [
               "6. Defense"
             ]
-          },
-          "curl_jumper": {
-            "value": "plus",
-            "as_of": "2003-06-25",
-            "sections": [
-              "4. Scoring"
-            ]
-          },
-          "mid_post_turnaround": {
-            "value": "plus",
-            "as_of": "2003-06-25",
-            "sections": [
-              "4. Scoring"
-            ]
-          },
-          "floater": {
-            "value": "plus",
-            "as_of": "2003-06-25",
-            "sections": [
-              "4. Scoring"
-            ]
-          },
-          "face_up_jumper": {
-            "value": "plus",
-            "as_of": "2003-06-25",
-            "sections": [
-              "4. Scoring"
-            ]
-          },
-          "step_back_jumper": {
-            "value": "plus",
-            "as_of": "2003-06-25",
-            "sections": [
-              "4. Scoring"
-            ]
-          },
-          "catch_and_shoot_accuracy": {
-            "value": "elite",
-            "as_of": "2003-06-25",
-            "sections": [
-              "4. Scoring"
-            ]
           }
         }
       },
@@ -264,23 +222,20 @@
         "rebound_transition_multiplier": 1.25,
         "spatial_weights": {
           "distance_0_3": 1.3,
-          "distance_3_10": 1.394663,
-          "distance_10_16": 1.39755,
-          "distance_16_three": 1.21275,
-          "corner_three": 1.15,
-          "arc_three": 0.95
-        },
-        "zone_accuracy": {
-          "corner_three": 0.13
+          "distance_3_10": 1.1,
+          "distance_10_16": 1.1,
+          "distance_16_three": 1.05,
+          "corner_three": 1.0,
+          "arc_three": 1.0
         }
       }
     }
   },
-  "effective_from": "2003-12-03",
+  "effective_from": "2003-11-12",
   "scouting_sources": {
-    "library/2003/league/nba_2003_prospect_scouting.json": "4e3a95ac5c36826528274006efafe395537c0481bcf79a60d2bbc6e36a997820",
+    "library/2003/league/nba_2003_prospect_scouting.json": "7b57d0b35e593d87159123fa978d8d939afc7452da7b95b9c493d1a18e8c9023",
     "library/2003/league/nba_2002_03_player_stats.json": "9602b0e89cc759895cb75f3c5d17176fcfd52388f3f68f135e409e216495e931",
     "library/2003/league/nba_2003_end_of_season.json": "5ef1e8f9aced5c1d5d2d381b18bf071efb033288a0690b4e8c65d4fd432aa2a0",
-    "career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md": "33b714c811827771a7e39d79eb9e9c98b785b94779f2ec6495f0734b8fb88c8b"
+    "career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md": "da398371a07262892bc6938e0b594cb49c3ffafa7c33e2e2413e634a26f51499"
   }
 }

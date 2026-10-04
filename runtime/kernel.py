@@ -40,7 +40,7 @@ import random
 
 from .packets import canonical
 from .player_stats import MODEL_VERSION, RATE_KEYS
-from .prospects import LEGACY_ROOKIE_MODEL_VERSION, ROOKIE_MODEL_VERSION
+from .prospects import ARCHIVED_ROOKIE_MODEL_VERSION, LEGACY_ROOKIE_MODEL_VERSION, ROOKIE_MODEL_VERSION, SCOUTED_MODEL_VERSIONS
 from .prospect_scouting import style_errors
 from .shot_events import spatial_result_errors
 from .spatial_shots import (draw_spatial_shot, load_spatial_environment,
@@ -200,13 +200,14 @@ def team_errors(team, rules):
                 errors.append(f"{p.player_id}: feedback applies only to real-career profiles")
             scouting_keys = {"scouting", "style", "scouting_sources"}
             if set(profile) & scouting_keys:
-                if profile.get("model_version") != ROOKIE_MODEL_VERSION or not scouting_keys <= set(profile):
+                if profile.get("model_version") not in SCOUTED_MODEL_VERSIONS or not scouting_keys <= set(profile):
                     errors.append(f"{p.player_id}: scouting requires a complete current rookie profile")
                 errors.extend(f"{p.player_id}: {e}" for e in style_errors(profile.get("style")))
             if (set(profile) - {"development", "defense", "feedback_sha256"} - scouting_keys != base_keys
                     or ("development" in profile and not needs_development(profile))
                     or profile.get("model_version") not in (MODEL_VERSION, LEGACY_ROOKIE_MODEL_VERSION,
-                                                             ROOKIE_MODEL_VERSION, TRAJECTORY_MODEL_VERSION)
+                                                             ARCHIVED_ROOKIE_MODEL_VERSION, ROOKIE_MODEL_VERSION,
+                                                             TRAJECTORY_MODEL_VERSION)
                     or (not trajectory and profile.get("season_end_year") != 2003)
                     or (trajectory and profile.get("season_end_year") != int(rules["season"][:4]) + 1)):
                 errors.append(f"{p.player_id}: invalid statistical profile metadata")
@@ -829,10 +830,14 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         # including when one or more zone probabilities hit zero or one.
         value = 3 if is_three else 2
         spatial_weights = player.stat_profile.get("style", {}).get("spatial_weights")
-        if spatial_weights is None:
+        zone_accuracy = player.stat_profile.get("style", {}).get("zone_accuracy")
+        if spatial_weights is None and zone_accuracy is None:
             zone, x, y, p_make = draw_spatial_shot(spatial_rng, spatial_environment, value, p_make)
-        else:
+        elif zone_accuracy is None:
             zone, x, y, p_make = draw_spatial_shot(spatial_rng, spatial_environment, value, p_make, spatial_weights)
+        else:
+            zone, x, y, p_make = draw_spatial_shot(spatial_rng, spatial_environment, value, p_make, spatial_weights,
+                                                   zone_accuracy)
         line = o.lines[shooter]
         line["fga"] += 1
         if transition:

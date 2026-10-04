@@ -52,9 +52,9 @@ Staff estimates against NBA rotation players at the assessment date. Scale: 1–
 | Rim protection | Not assessed | Weak-side blocks are documented, but no NBA staff grade exists. |
 
 <!-- rookie-estimate:start -->
-### Statistical estimate from college record (rookie-2003.2)
+### Statistical estimate from college record (rookie-2003.3)
 
-**Estimate, not NBA evidence.** Translated from 3 UConn seasons (98 games, 3178 minutes) with provisional college-to-NBA factors and shrinkage toward the 2002-03 NBA average. Grades rank the estimate against 2002-03 NBA players with 500+ minutes (20-80, 50 = median). Dated scouting adds paint-pressure and position-rebound priors. This model correction applies from 2003-11-12; earlier games retain rookie-2003.1. Method: [statistical ratings](../../../../../../docs/statistical_ratings.md#rookie-estimates).
+**Estimate, not NBA evidence.** Translated from 3 UConn seasons (98 games, 3178 minutes) with provisional college-to-NBA factors and shrinkage toward the 2002-03 NBA average. Grades rank the estimate against 2002-03 NBA players with 500+ minutes (20-80, 50 = median). Dated scouting adds paint-pressure and position-rebound priors. This model applies from 2003-12-03; games from 2003-11-12 keep the archived rookie-2003.2 and earlier games rookie-2003.1. Method: [statistical ratings](../../../../../../docs/statistical_ratings.md#rookie-estimates).
 
 | Rate | Grade (20-80) | Estimate | NBA average |
 | --- | ---: | ---: | ---: |
@@ -67,7 +67,7 @@ Staff estimates against NBA rotation players at the assessment date. Scale: 1–
 | Steal production | 73 | 0.024 | 0.017 |
 | Block production | 66 | 0.021 | 0.015 |
 
-Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.105. Pressure concerns affect turnovers against positive team defense, not the base rate. Paint and pull-up location weights preserve aggregate shooting accuracy. Rebound-led transition applies only after his own defensive rebound. These are provisional model assumptions, not tracking data.
+Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.105. Pressure concerns affect turnovers against positive team defense, not the base rate. Shot-making traits (paint pressure, pull-up, catch-and-shoot, curl, mid-post turnaround, floater, face-up, step-back) move only where his attempts come from and preserve aggregate shooting accuracy. Rebound-led transition applies only after his own defensive rebound. These are provisional model assumptions, not tracking data.
 <!-- rookie-estimate:end -->
 
 ## Changes and coaching notes

@@ -25,11 +25,19 @@ from .player_stats import (PRIOR_ATTEMPTS, PRIOR_MINUTES, RATE_KEYS, ROOT, STATS
 from .prospect_scouting import (PAINT_FTR_FACTOR, POSITION_PATH, SCOUTING_PATH,
                                 position_rebound_priors, style_for, trait_value, validate_scouting)
 
-ROOKIE_MODEL_VERSION = "rookie-2003.2"
+ROOKIE_MODEL_VERSION = "rookie-2003.3"
+ARCHIVED_ROOKIE_MODEL_VERSION = "rookie-2003.2"
 LEGACY_ROOKIE_MODEL_VERSION = "rookie-2003.1"
+SCOUTED_MODEL_VERSIONS = (ARCHIVED_ROOKIE_MODEL_VERSION, ROOKIE_MODEL_VERSION)
 # Model adoption, not a change in the player's talent or a new scouting date.
-# All already played preseason and regular-season games predate this gate.
+# Games before SCOUTING_EFFECTIVE_FROM keep rookie-2003.1; games from it until STYLE_EFFECTIVE_FROM keep the
+# archived rookie-2003.2 (first scouting); games from STYLE_EFFECTIVE_FROM use rookie-2003.3 (shot-making
+# traits expressed, Wade's revised scoring canon; the user's premise of December 2003).
 SCOUTING_EFFECTIVE_FROM = "2003-11-12"
+STYLE_EFFECTIVE_FROM = "2003-12-03"
+ARCHIVED_ROOKIE_PATH = Path("library/2003/league/nba_2003_rookie_estimates_2003_2.json")
+# The archive is immutable closed-game evidence: its bytes are pinned, not rebuilt from today's sources.
+ARCHIVED_ROOKIE_SHA256 = "1d2d2d9cfc88fd97b3a54a70e0508a3903640cc78950d2fb4cd31495c63a1dd1"
 PROSPECTS_PATH = Path("library/2003/league/nba_2003_prospect_stats.json")
 LEGACY_PROSPECTS_PATH = Path("library/2003/league/nba_2003_prospect_stats_2003_1.json")
 ROOKIE_PATH = Path("library/2003/league/nba_2003_rookie_estimates.json")
@@ -167,7 +175,7 @@ def build_rookie_estimates(prospects, prospects_hash, veterans, *, scouting=None
         "players": players,
     }
     if not legacy:
-        data["effective_from"] = SCOUTING_EFFECTIVE_FROM
+        data["effective_from"] = STYLE_EFFECTIVE_FROM
         data["scouting_sources"] = source_hashes or {}
         data["method"]["position_rebound_priors"] = rebound_priors or {}
         data["method"]["paint_pressure_ftr_factor"] = PAINT_FTR_FACTOR
@@ -198,6 +206,8 @@ def rookie_errors(root=ROOT):
             return ["generated rookie estimates are stale; run scripts/import_prospect_stats.py"]
         if read_json(Path(root) / LEGACY_ROOKIE_PATH) != expected_rookie_estimates(root, legacy=True):
             return ["archived rookie-2003.1 inputs changed; preserve closed-game evidence"]
+        if sha256(Path(root) / ARCHIVED_ROOKIE_PATH) != ARCHIVED_ROOKIE_SHA256:
+            return ["archived rookie-2003.2 estimates changed; preserve closed-game evidence"]
         return []
     except (OSError, ValueError, KeyError, TypeError, ZeroDivisionError) as exc:
         return [f"cannot validate rookie estimates: {exc}"]

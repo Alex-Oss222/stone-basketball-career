@@ -1,0 +1,1726 @@
+{
+ "schema_version": 1,
+ "season": "2002-03",
+ "kind": "defensive_box_plus_minus",
+ "as_of": "2003-06-26",
+ "note": "Defensive Box Plus/Minus for the completed 2002-03 regular season (a traded player's season total row), for the front office's skill-fit read. Known on the date: the season had closed. Never 2003-04 or later values; the engine's talent trajectories keep their own DBPM and are never read by the front office.",
+ "source": {
+  "url": "https://raw.githubusercontent.com/sumitrodatta/nba-alt-awards/7f9b3375439b79cb4e62f66ae7d12160275c2863/2026/Data/Advanced.csv",
+  "provider": "Basketball-Reference advanced table (NBA_2003_advanced.html), via the sumitrodatta/nba-alt-awards GitHub copy",
+  "retrieved_on": "2026-10-04"
+ },
+ "players": {
+  "abdulta01": {
+   "dbpm": 0.2,
+   "minutes": 204
+  },
+  "abdursh01": {
+   "dbpm": -0.7,
+   "minutes": 3087
+  },
+  "alexaco02": {
+   "dbpm": -1.2,
+   "minutes": 1360
+  },
+  "allenma01": {
+   "dbpm": -0.4,
+   "minutes": 2318
+  },
+  "allenra02": {
+   "dbpm": -1.0,
+   "minutes": 2880
+  },
+  "alstora01": {
+   "dbpm": -1.0,
+   "minutes": 980
+  },
+  "amaecjo01": {
+   "dbpm": -1.6,
+   "minutes": 474
+  },
+  "anderch01": {
+   "dbpm": 0.4,
+   "minutes": 907
+  },
+  "anderde01": {
+   "dbpm": 0.1,
+   "minutes": 2556
+  },
+  "anderke01": {
+   "dbpm": 0.9,
+   "minutes": 1135
+  },
+  "andersh01": {
+   "dbpm": 0.2,
+   "minutes": 1731
+  },
+  "archiro01": {
+   "dbpm": -3.3,
+   "minutes": 72
+  },
+  "arenagi01": {
+   "dbpm": -1.3,
+   "minutes": 2866
+  },
+  "armstbr01": {
+   "dbpm": -0.7,
+   "minutes": 69
+  },
+  "armstda01": {
+   "dbpm": 0.7,
+   "minutes": 2350
+  },
+  "arroyca01": {
+   "dbpm": -1.0,
+   "minutes": 287
+  },
+  "artesro01": {
+   "dbpm": 2.3,
+   "minutes": 2317
+  },
+  "atkinch01": {
+   "dbpm": -1.1,
+   "minutes": 1398
+  },
+  "augmost01": {
+   "dbpm": 0.8,
+   "minutes": 862
+  },
+  "bagarda01": {
+   "dbpm": -1.1,
+   "minutes": 76
+  },
+  "bakervi01": {
+   "dbpm": -0.4,
+   "minutes": 942
+  },
+  "barrybr01": {
+   "dbpm": 1.5,
+   "minutes": 2480
+  },
+  "barryjo01": {
+   "dbpm": 1.6,
+   "minutes": 1473
+  },
+  "bastoma01": {
+   "dbpm": 2.7,
+   "minutes": 106
+  },
+  "bateeme01": {
+   "dbpm": -2.0,
+   "minutes": 46
+  },
+  "batismi01": {
+   "dbpm": -1.4,
+   "minutes": 1248
+  },
+  "battish01": {
+   "dbpm": 0.8,
+   "minutes": 2383
+  },
+  "battito01": {
+   "dbpm": 0.8,
+   "minutes": 1683
+  },
+  "baxtelo01": {
+   "dbpm": -1.4,
+   "minutes": 682
+  },
+  "bellra01": {
+   "dbpm": 1.4,
+   "minutes": 1173
+  },
+  "bendejo01": {
+   "dbpm": 0.7,
+   "minutes": 819
+  },
+  "benjaco01": {
+   "dbpm": -2.0,
+   "minutes": 152
+  },
+  "besttr01": {
+   "dbpm": -0.3,
+   "minutes": 1807
+  },
+  "bibbymi01": {
+   "dbpm": -0.1,
+   "minutes": 1835
+  },
+  "billuch01": {
+   "dbpm": 0.3,
+   "minutes": 2327
+  },
+  "blounco01": {
+   "dbpm": 0.8,
+   "minutes": 836
+  },
+  "blounma01": {
+   "dbpm": 1.2,
+   "minutes": 1403
+  },
+  "boothca01": {
+   "dbpm": 0.6,
+   "minutes": 575
+  },
+  "boozeca01": {
+   "dbpm": -0.6,
+   "minutes": 2049
+  },
+  "boumtru01": {
+   "dbpm": 4.5,
+   "minutes": 5
+  },
+  "bowenbr01": {
+   "dbpm": 1.0,
+   "minutes": 2566
+  },
+  "bowenry01": {
+   "dbpm": 3.1,
+   "minutes": 996
+  },
+  "boykiea01": {
+   "dbpm": -2.1,
+   "minutes": 1321
+  },
+  "bradlmi01": {
+   "dbpm": -1.8,
+   "minutes": 1314
+  },
+  "bradlsh01": {
+   "dbpm": 3.0,
+   "minutes": 1731
+  },
+  "brandel01": {
+   "dbpm": 0.5,
+   "minutes": 2454
+  },
+  "bremejr01": {
+   "dbpm": -0.5,
+   "minutes": 1503
+  },
+  "breweja01": {
+   "dbpm": -0.3,
+   "minutes": 80
+  },
+  "brezepr01": {
+   "dbpm": -1.8,
+   "minutes": 111
+  },
+  "brownda02": {
+   "dbpm": -1.8,
+   "minutes": 115
+  },
+  "brownde02": {
+   "dbpm": 0.1,
+   "minutes": 93
+  },
+  "brownke01": {
+   "dbpm": 0.6,
+   "minutes": 666
+  },
+  "brownkw01": {
+   "dbpm": -0.1,
+   "minutes": 1773
+  },
+  "brownpj01": {
+   "dbpm": 1.0,
+   "minutes": 2609
+  },
+  "brownra02": {
+   "dbpm": 2.8,
+   "minutes": 262
+  },
+  "brownti01": {
+   "dbpm": 1.1,
+   "minutes": 168
+  },
+  "brunsri01": {
+   "dbpm": 0.4,
+   "minutes": 196
+  },
+  "bryanko01": {
+   "dbpm": 0.7,
+   "minutes": 3401
+  },
+  "bryanma01": {
+   "dbpm": -1.5,
+   "minutes": 100
+  },
+  "buckngr01": {
+   "dbpm": 1.0,
+   "minutes": 1514
+  },
+  "burkepa01": {
+   "dbpm": -1.7,
+   "minutes": 783
+  },
+  "butleca01": {
+   "dbpm": 1.0,
+   "minutes": 2858
+  },
+  "butlera01": {
+   "dbpm": -0.6,
+   "minutes": 1514
+  },
+  "caffeja01": {
+   "dbpm": -1.8,
+   "minutes": 894
+  },
+  "cambyma01": {
+   "dbpm": 1.0,
+   "minutes": 616
+  },
+  "campbel01": {
+   "dbpm": 1.4,
+   "minutes": 869
+  },
+  "cardibr01": {
+   "dbpm": -4.5,
+   "minutes": 15
+  },
+  "cartean01": {
+   "dbpm": -0.3,
+   "minutes": 912
+  },
+  "cartevi01": {
+   "dbpm": -0.2,
+   "minutes": 1471
+  },
+  "cassesa01": {
+   "dbpm": -1.2,
+   "minutes": 2700
+  },
+  "catoke01": {
+   "dbpm": 1.5,
+   "minutes": 1247
+  },
+  "chandty01": {
+   "dbpm": 0.2,
+   "minutes": 1827
+  },
+  "cheanca01": {
+   "dbpm": -0.3,
+   "minutes": 2351
+  },
+  "childch01": {
+   "dbpm": 3.4,
+   "minutes": 106
+  },
+  "chrisdo01": {
+   "dbpm": 3.2,
+   "minutes": 2710
+  },
+  "clarkke01": {
+   "dbpm": 2.1,
+   "minutes": 1780
+  },
+  "claxtsp01": {
+   "dbpm": 1.1,
+   "minutes": 471
+  },
+  "cleavma01": {
+   "dbpm": -3.8,
+   "minutes": 55
+  },
+  "colemde01": {
+   "dbpm": 0.3,
+   "minutes": 1742
+  },
+  "colesbi01": {
+   "dbpm": -0.7,
+   "minutes": 691
+  },
+  "collija02": {
+   "dbpm": -1.9,
+   "minutes": 104
+  },
+  "collija03": {
+   "dbpm": -0.9,
+   "minutes": 421
+  },
+  "collija04": {
+   "dbpm": 0.9,
+   "minutes": 1900
+  },
+  "crawfch01": {
+   "dbpm": 2.8,
+   "minutes": 38
+  },
+  "crawfja01": {
+   "dbpm": -0.8,
+   "minutes": 1992
+  },
+  "croshau01": {
+   "dbpm": 0.0,
+   "minutes": 633
+  },
+  "crottjo01": {
+   "dbpm": -0.9,
+   "minutes": 180
+  },
+  "curryed01": {
+   "dbpm": -1.3,
+   "minutes": 1571
+  },
+  "currymi01": {
+   "dbpm": 1.4,
+   "minutes": 1555
+  },
+  "dampier01": {
+   "dbpm": -0.6,
+   "minutes": 1978
+  },
+  "daniean01": {
+   "dbpm": 0.9,
+   "minutes": 872
+  },
+  "davisan01": {
+   "dbpm": -1.0,
+   "minutes": 1894
+  },
+  "davisba01": {
+   "dbpm": 0.7,
+   "minutes": 1889
+  },
+  "davisda01": {
+   "dbpm": 0.1,
+   "minutes": 2282
+  },
+  "davisem01": {
+   "dbpm": -0.5,
+   "minutes": 340
+  },
+  "davishu01": {
+   "dbpm": -0.3,
+   "minutes": 328
+  },
+  "davisri01": {
+   "dbpm": -1.4,
+   "minutes": 3131
+  },
+  "declean01": {
+   "dbpm": -0.3,
+   "minutes": 1327
+  },
+  "delkto01": {
+   "dbpm": 0.8,
+   "minutes": 1873
+  },
+  "dickada01": {
+   "dbpm": -2.4,
+   "minutes": 515
+  },
+  "dickemi01": {
+   "dbpm": 1.1,
+   "minutes": 87
+  },
+  "diopde01": {
+   "dbpm": 1.9,
+   "minutes": 943
+  },
+  "divacvl01": {
+   "dbpm": 2.4,
+   "minutes": 2384
+  },
+  "dixonju01": {
+   "dbpm": -1.2,
+   "minutes": 647
+  },
+  "doleami01": {
+   "dbpm": -1.1,
+   "minutes": 1041
+  },
+  "doolike01": {
+   "dbpm": -1.3,
+   "minutes": 969
+  },
+  "drewbr01": {
+   "dbpm": -0.1,
+   "minutes": 79
+  },
+  "drobnpr01": {
+   "dbpm": -1.0,
+   "minutes": 1984
+  },
+  "dudlech02": {
+   "dbpm": -4.2,
+   "minutes": 11
+  },
+  "duncati01": {
+   "dbpm": 2.5,
+   "minutes": 3181
+  },
+  "dunlemi02": {
+   "dbpm": -0.5,
+   "minutes": 1305
+  },
+  "eisleho01": {
+   "dbpm": -0.6,
+   "minutes": 2243
+  },
+  "ellisla01": {
+   "dbpm": -0.6,
+   "minutes": 784
+  },
+  "elyme01": {
+   "dbpm": -1.1,
+   "minutes": 802
+  },
+  "eschmev01": {
+   "dbpm": 3.9,
+   "minutes": 135
+  },
+  "evansre01": {
+   "dbpm": -0.3,
+   "minutes": 1365
+  },
+  "ferryda01": {
+   "dbpm": -0.1,
+   "minutes": 601
+  },
+  "finlemi01": {
+   "dbpm": -0.8,
+   "minutes": 2642
+  },
+  "fishede01": {
+   "dbpm": -0.3,
+   "minutes": 2829
+  },
+  "fizerma01": {
+   "dbpm": -1.6,
+   "minutes": 809
+  },
+  "fordal02": {
+   "dbpm": -2.2,
+   "minutes": 31
+  },
+  "fortejo01": {
+   "dbpm": -1.1,
+   "minutes": 86
+  },
+  "fortsda01": {
+   "dbpm": -1.1,
+   "minutes": 223
+  },
+  "fostegr01": {
+   "dbpm": -2.2,
+   "minutes": 539
+  },
+  "fosteje01": {
+   "dbpm": 0.2,
+   "minutes": 802
+  },
+  "fowlktr01": {
+   "dbpm": 0.5,
+   "minutes": 573
+  },
+  "foxri01": {
+   "dbpm": -0.3,
+   "minutes": 2181
+  },
+  "foylead01": {
+   "dbpm": 1.7,
+   "minutes": 1787
+  },
+  "francst01": {
+   "dbpm": 0.3,
+   "minutes": 3318
+  },
+  "fundela01": {
+   "dbpm": -0.1,
+   "minutes": 229
+  },
+  "gadzuda01": {
+   "dbpm": 0.1,
+   "minutes": 760
+  },
+  "garneke01": {
+   "dbpm": 2.4,
+   "minutes": 3321
+  },
+  "garripa01": {
+   "dbpm": -1.0,
+   "minutes": 2584
+  },
+  "gasolpa01": {
+   "dbpm": -0.3,
+   "minutes": 2948
+  },
+  "georgde01": {
+   "dbpm": -0.3,
+   "minutes": 1613
+  },
+  "gillke01": {
+   "dbpm": 0.0,
+   "minutes": 2068
+  },
+  "ginobma01": {
+   "dbpm": 2.6,
+   "minutes": 1431
+  },
+  "giricgo01": {
+   "dbpm": -1.8,
+   "minutes": 2148
+  },
+  "glovedi01": {
+   "dbpm": -0.6,
+   "minutes": 1890
+  },
+  "goldwan01": {
+   "dbpm": -0.2,
+   "minutes": 85
+  },
+  "goodedr01": {
+   "dbpm": -1.9,
+   "minutes": 1873
+  },
+  "grantbr01": {
+   "dbpm": 0.4,
+   "minutes": 2641
+  },
+  "grantho01": {
+   "dbpm": 0.9,
+   "minutes": 85
+  },
+  "griffad01": {
+   "dbpm": 1.8,
+   "minutes": 1373
+  },
+  "griffed01": {
+   "dbpm": 0.6,
+   "minutes": 1890
+  },
+  "guglito01": {
+   "dbpm": 0.8,
+   "minutes": 447
+  },
+  "guytoaj01": {
+   "dbpm": -2.3,
+   "minutes": 9
+  },
+  "haislma01": {
+   "dbpm": -2.3,
+   "minutes": 441
+  },
+  "hamda01": {
+   "dbpm": -1.1,
+   "minutes": 926
+  },
+  "hamilri01": {
+   "dbpm": -0.8,
+   "minutes": 2640
+  },
+  "hamilze01": {
+   "dbpm": 0.0,
+   "minutes": 12
+  },
+  "hardaan01": {
+   "dbpm": 1.0,
+   "minutes": 1777
+  },
+  "hardati01": {
+   "dbpm": 1.1,
+   "minutes": 127
+  },
+  "harprma01": {
+   "dbpm": -1.1,
+   "minutes": 2557
+  },
+  "harriad01": {
+   "dbpm": -1.2,
+   "minutes": 111
+  },
+  "harrial01": {
+   "dbpm": -0.5,
+   "minutes": 2467
+  },
+  "harriju01": {
+   "dbpm": 0.9,
+   "minutes": 2003
+  },
+  "harrilu01": {
+   "dbpm": -0.1,
+   "minutes": 1973
+  },
+  "harriot01": {
+   "dbpm": -1.3,
+   "minutes": 1850
+  },
+  "harvean01": {
+   "dbpm": 2.0,
+   "minutes": 32
+  },
+  "harvedo01": {
+   "dbpm": 0.2,
+   "minutes": 1613
+  },
+  "hassetr01": {
+   "dbpm": 0.5,
+   "minutes": 1999
+  },
+  "hastoki01": {
+   "dbpm": -1.1,
+   "minutes": 57
+  },
+  "hawkiju01": {
+   "dbpm": 1.6,
+   "minutes": 685
+  },
+  "haywobr01": {
+   "dbpm": -0.2,
+   "minutes": 1930
+  },
+  "hendeal01": {
+   "dbpm": -1.2,
+   "minutes": 1494
+  },
+  "hilarne01": {
+   "dbpm": 1.9,
+   "minutes": 2258
+  },
+  "hillgr01": {
+   "dbpm": 0.5,
+   "minutes": 843
+  },
+  "hillty01": {
+   "dbpm": -0.5,
+   "minutes": 1351
+  },
+  "hoibefr01": {
+   "dbpm": 2.3,
+   "minutes": 784
+  },
+  "horryro01": {
+   "dbpm": 1.1,
+   "minutes": 2343
+  },
+  "houseed01": {
+   "dbpm": 0.3,
+   "minutes": 1025
+  },
+  "houstal01": {
+   "dbpm": -1.8,
+   "minutes": 3108
+  },
+  "howarju01": {
+   "dbpm": -0.1,
+   "minutes": 2730
+  },
+  "hudsotr01": {
+   "dbpm": -1.7,
+   "minutes": 2600
+  },
+  "huffmna01": {
+   "dbpm": -2.3,
+   "minutes": 76
+  },
+  "hughela01": {
+   "dbpm": 0.2,
+   "minutes": 2137
+  },
+  "humphry01": {
+   "dbpm": -1.5,
+   "minutes": 444
+  },
+  "hunteli01": {
+   "dbpm": -1.1,
+   "minutes": 673
+  },
+  "huntest01": {
+   "dbpm": 0.1,
+   "minutes": 447
+  },
+  "ilgauzy01": {
+   "dbpm": -0.8,
+   "minutes": 2432
+  },
+  "iversal01": {
+   "dbpm": 0.2,
+   "minutes": 3485
+  },
+  "jacksbo01": {
+   "dbpm": 0.5,
+   "minutes": 1676
+  },
+  "jacksje01": {
+   "dbpm": -0.5,
+   "minutes": 559
+  },
+  "jacksji01": {
+   "dbpm": -0.4,
+   "minutes": 1309
+  },
+  "jacksma01": {
+   "dbpm": -1.2,
+   "minutes": 1467
+  },
+  "jacksma02": {
+   "dbpm": -1.0,
+   "minutes": 1041
+  },
+  "jacksst02": {
+   "dbpm": 1.4,
+   "minutes": 2254
+  },
+  "jacobca01": {
+   "dbpm": -0.3,
+   "minutes": 1147
+  },
+  "jamesje01": {
+   "dbpm": 1.8,
+   "minutes": 766
+  },
+  "jamesmi01": {
+   "dbpm": 0.1,
+   "minutes": 1722
+  },
+  "jamisan01": {
+   "dbpm": -2.1,
+   "minutes": 3226
+  },
+  "jaricma01": {
+   "dbpm": 1.2,
+   "minutes": 1379
+  },
+  "jeffech01": {
+   "dbpm": -1.7,
+   "minutes": 666
+  },
+  "jefferi01": {
+   "dbpm": 0.6,
+   "minutes": 2879
+  },
+  "jeffrja01": {
+   "dbpm": -0.6,
+   "minutes": 292
+  },
+  "johnsan02": {
+   "dbpm": 1.5,
+   "minutes": 842
+  },
+  "johnsav01": {
+   "dbpm": -1.0,
+   "minutes": 430
+  },
+  "johnser02": {
+   "dbpm": -0.1,
+   "minutes": 1170
+  },
+  "johnsjo02": {
+   "dbpm": -0.4,
+   "minutes": 2255
+  },
+  "johnske03": {
+   "dbpm": 0.3,
+   "minutes": 156
+  },
+  "jonesda01": {
+   "dbpm": 0.1,
+   "minutes": 709
+  },
+  "jonesed02": {
+   "dbpm": 1.5,
+   "minutes": 1789
+  },
+  "jonesfr01": {
+   "dbpm": 1.1,
+   "minutes": 115
+  },
+  "jonesju01": {
+   "dbpm": -1.1,
+   "minutes": 2204
+  },
+  "jonespo01": {
+   "dbpm": -2.7,
+   "minutes": 222
+  },
+  "jordami01": {
+   "dbpm": 0.0,
+   "minutes": 3031
+  },
+  "kempsh01": {
+   "dbpm": -0.7,
+   "minutes": 1633
+  },
+  "kerrst01": {
+   "dbpm": 0.2,
+   "minutes": 952
+  },
+  "kiddja01": {
+   "dbpm": 1.8,
+   "minutes": 2989
+  },
+  "kirilan01": {
+   "dbpm": 2.9,
+   "minutes": 2213
+  },
+  "kittlke01": {
+   "dbpm": 2.1,
+   "minutes": 1951
+  },
+  "knighbr01": {
+   "dbpm": 0.5,
+   "minutes": 928
+  },
+  "knightr01": {
+   "dbpm": 0.6,
+   "minutes": 287
+  },
+  "kukocto01": {
+   "dbpm": 0.0,
+   "minutes": 1704
+  },
+  "laettch01": {
+   "dbpm": 1.6,
+   "minutes": 2215
+  },
+  "lafrera01": {
+   "dbpm": 0.6,
+   "minutes": 1611
+  },
+  "lamplse01": {
+   "dbpm": -0.8,
+   "minutes": 487
+  },
+  "langhda01": {
+   "dbpm": -0.4,
+   "minutes": 541
+  },
+  "lenarvo01": {
+   "dbpm": -1.4,
+   "minutes": 1929
+  },
+  "lewisra02": {
+   "dbpm": -0.5,
+   "minutes": 3044
+  },
+  "livinra01": {
+   "dbpm": -2.0,
+   "minutes": 12
+  },
+  "longar01": {
+   "dbpm": -0.3,
+   "minutes": 211
+  },
+  "longgr01": {
+   "dbpm": 0.3,
+   "minutes": 488
+  },
+  "luety01": {
+   "dbpm": -1.1,
+   "minutes": 1986
+  },
+  "lynchge01": {
+   "dbpm": 1.2,
+   "minutes": 1497
+  },
+  "maccuto01": {
+   "dbpm": 0.1,
+   "minutes": 812
+  },
+  "maddoti01": {
+   "dbpm": 3.8,
+   "minutes": 35
+  },
+  "madsema01": {
+   "dbpm": -1.3,
+   "minutes": 781
+  },
+  "maggeco01": {
+   "dbpm": -1.1,
+   "minutes": 2006
+  },
+  "magloja01": {
+   "dbpm": 0.2,
+   "minutes": 2443
+  },
+  "malonka01": {
+   "dbpm": 1.0,
+   "minutes": 2936
+  },
+  "malonma01": {
+   "dbpm": -1.4,
+   "minutes": 103
+  },
+  "mannida01": {
+   "dbpm": 3.9,
+   "minutes": 89
+  },
+  "marbust01": {
+   "dbpm": -0.7,
+   "minutes": 3240
+  },
+  "mariosh01": {
+   "dbpm": 1.7,
+   "minutes": 3373
+  },
+  "marksse01": {
+   "dbpm": 0.1,
+   "minutes": 223
+  },
+  "marshdo01": {
+   "dbpm": 0.1,
+   "minutes": 2378
+  },
+  "marshdo02": {
+   "dbpm": -7.9,
+   "minutes": 6
+  },
+  "martike01": {
+   "dbpm": 1.2,
+   "minutes": 2628
+  },
+  "mashbja01": {
+   "dbpm": -0.4,
+   "minutes": 3321
+  },
+  "masonan01": {
+   "dbpm": -0.8,
+   "minutes": 2119
+  },
+  "masonde01": {
+   "dbpm": -1.3,
+   "minutes": 2763
+  },
+  "masonro01": {
+   "dbpm": -0.8,
+   "minutes": 113
+  },
+  "masseto01": {
+   "dbpm": -1.3,
+   "minutes": 792
+  },
+  "mccarwa01": {
+   "dbpm": 1.1,
+   "minutes": 1949
+  },
+  "mccasam01": {
+   "dbpm": -0.5,
+   "minutes": 70
+  },
+  "mccoyje01": {
+   "dbpm": -0.5,
+   "minutes": 1367
+  },
+  "mcgratr01": {
+   "dbpm": 0.7,
+   "minutes": 2954
+  },
+  "mcinnje01": {
+   "dbpm": -1.5,
+   "minutes": 1311
+  },
+  "mckieaa01": {
+   "dbpm": 1.6,
+   "minutes": 2374
+  },
+  "medvest01": {
+   "dbpm": -2.6,
+   "minutes": 620
+  },
+  "mercero01": {
+   "dbpm": -0.3,
+   "minutes": 1671
+  },
+  "mihmch01": {
+   "dbpm": -1.6,
+   "minutes": 809
+  },
+  "milesda01": {
+   "dbpm": -0.5,
+   "minutes": 2008
+  },
+  "millean02": {
+   "dbpm": -1.3,
+   "minutes": 2913
+  },
+  "millebr01": {
+   "dbpm": 0.8,
+   "minutes": 2270
+  },
+  "millemi01": {
+   "dbpm": -1.3,
+   "minutes": 2186
+  },
+  "millere01": {
+   "dbpm": 0.1,
+   "minutes": 2117
+  },
+  "millsch01": {
+   "dbpm": -1.8,
+   "minutes": 262
+  },
+  "mingya01": {
+   "dbpm": 0.9,
+   "minutes": 2382
+  },
+  "moblecu01": {
+   "dbpm": -0.2,
+   "minutes": 3044
+  },
+  "mohamna01": {
+   "dbpm": -1.0,
+   "minutes": 445
+  },
+  "moisoje01": {
+   "dbpm": 1.5,
+   "minutes": 644
+  },
+  "mooremi01": {
+   "dbpm": 0.0,
+   "minutes": 43
+  },
+  "morrite01": {
+   "dbpm": -0.5,
+   "minutes": 632
+  },
+  "murphtr01": {
+   "dbpm": -1.2,
+   "minutes": 2510
+  },
+  "murraro01": {
+   "dbpm": -2.0,
+   "minutes": 62
+  },
+  "murratr01": {
+   "dbpm": -1.8,
+   "minutes": 193
+  },
+  "mutomdi01": {
+   "dbpm": 0.3,
+   "minutes": 514
+  },
+  "nachbbo01": {
+   "dbpm": -1.3,
+   "minutes": 77
+  },
+  "nailole01": {
+   "dbpm": -2.2,
+   "minutes": 405
+  },
+  "najered01": {
+   "dbpm": 1.1,
+   "minutes": 1103
+  },
+  "nashst01": {
+   "dbpm": -0.8,
+   "minutes": 2711
+  },
+  "ndiayma02": {
+   "dbpm": 0.2,
+   "minutes": 364
+  },
+  "nestera01": {
+   "dbpm": 0.5,
+   "minutes": 2337
+  },
+  "newblir01": {
+   "dbpm": -0.5,
+   "minutes": 1931
+  },
+  "norrimo01": {
+   "dbpm": 0.4,
+   "minutes": 1375
+  },
+  "nowitdi01": {
+   "dbpm": 1.4,
+   "minutes": 3117
+  },
+  "oaklech01": {
+   "dbpm": 0.9,
+   "minutes": 514
+  },
+  "odomla01": {
+   "dbpm": -0.2,
+   "minutes": 1679
+  },
+  "okurme01": {
+   "dbpm": 0.0,
+   "minutes": 1366
+  },
+  "olivede01": {
+   "dbpm": -0.1,
+   "minutes": 93
+  },
+  "ollieke01": {
+   "dbpm": 0.2,
+   "minutes": 1897
+  },
+  "olowomi01": {
+   "dbpm": 0.3,
+   "minutes": 1369
+  },
+  "onealje01": {
+   "dbpm": 0.9,
+   "minutes": 2864
+  },
+  "onealsh01": {
+   "dbpm": 0.1,
+   "minutes": 2535
+  },
+  "ostergr01": {
+   "dbpm": 0.9,
+   "minutes": 1926
+  },
+  "outlabo01": {
+   "dbpm": 1.8,
+   "minutes": 1800
+  },
+  "owensch01": {
+   "dbpm": -4.2,
+   "minutes": 6
+  },
+  "oyedeol01": {
+   "dbpm": 0.6,
+   "minutes": 145
+  },
+  "packro01": {
+   "dbpm": 0.4,
+   "minutes": 440
+  },
+  "padgesc01": {
+   "dbpm": -0.3,
+   "minutes": 1321
+  },
+  "palacmi01": {
+   "dbpm": -0.3,
+   "minutes": 1976
+  },
+  "pargoja01": {
+   "dbpm": -0.4,
+   "minutes": 342
+  },
+  "parkesm01": {
+   "dbpm": -1.2,
+   "minutes": 1103
+  },
+  "parketo01": {
+   "dbpm": -1.0,
+   "minutes": 2774
+  },
+  "parksch02": {
+   "dbpm": -0.8,
+   "minutes": 648
+  },
+  "patteru01": {
+   "dbpm": 0.0,
+   "minutes": 1655
+  },
+  "paytoga01": {
+   "dbpm": -0.6,
+   "minutes": 3208
+  },
+  "peelean01": {
+   "dbpm": 0.3,
+   "minutes": 2245
+  },
+  "persowe01": {
+   "dbpm": -1.4,
+   "minutes": 1941
+  },
+  "petermo01": {
+   "dbpm": -1.2,
+   "minutes": 2949
+  },
+  "piatker01": {
+   "dbpm": -1.2,
+   "minutes": 1360
+  },
+  "piercpa01": {
+   "dbpm": 0.7,
+   "minutes": 3096
+  },
+  "pippesc01": {
+   "dbpm": 1.6,
+   "minutes": 1911
+  },
+  "pollasc01": {
+   "dbpm": 0.4,
+   "minutes": 325
+  },
+  "poseyja01": {
+   "dbpm": 1.0,
+   "minutes": 2518
+  },
+  "postela01": {
+   "dbpm": -2.9,
+   "minutes": 98
+  },
+  "potapvi01": {
+   "dbpm": -0.8,
+   "minutes": 403
+  },
+  "princta01": {
+   "dbpm": 0.5,
+   "minutes": 435
+  },
+  "przybjo01": {
+   "dbpm": 0.3,
+   "minutes": 546
+  },
+  "radmavl01": {
+   "dbpm": -0.3,
+   "minutes": 1910
+  },
+  "rakocig01": {
+   "dbpm": -1.8,
+   "minutes": 244
+  },
+  "randoza01": {
+   "dbpm": -1.3,
+   "minutes": 1301
+  },
+  "ratlith01": {
+   "dbpm": 1.8,
+   "minutes": 2518
+  },
+  "rebraze01": {
+   "dbpm": 0.2,
+   "minutes": 488
+  },
+  "reddmi01": {
+   "dbpm": -1.2,
+   "minutes": 2316
+  },
+  "reiddo01": {
+   "dbpm": -7.0,
+   "minutes": 10
+  },
+  "rentzef01": {
+   "dbpm": -1.2,
+   "minutes": 144
+  },
+  "ricegl01": {
+   "dbpm": -0.9,
+   "minutes": 1532
+  },
+  "richaja01": {
+   "dbpm": -1.6,
+   "minutes": 2698
+  },
+  "richaqu01": {
+   "dbpm": -2.2,
+   "minutes": 1368
+  },
+  "rigauan01": {
+   "dbpm": -3.7,
+   "minutes": 91
+  },
+  "robincl02": {
+   "dbpm": 0.9,
+   "minutes": 2825
+  },
+  "robinda01": {
+   "dbpm": 1.7,
+   "minutes": 1676
+  },
+  "robined01": {
+   "dbpm": 0.7,
+   "minutes": 1355
+  },
+  "robingl01": {
+   "dbpm": -1.5,
+   "minutes": 2591
+  },
+  "rogerro01": {
+   "dbpm": 1.3,
+   "minutes": 1303
+  },
+  "rooksse01": {
+   "dbpm": 0.2,
+   "minutes": 1344
+  },
+  "roseja01": {
+   "dbpm": -2.1,
+   "minutes": 3351
+  },
+  "rosema01": {
+   "dbpm": 0.4,
+   "minutes": 1933
+  },
+  "ruckegu01": {
+   "dbpm": 7.2,
+   "minutes": 4
+  },
+  "rushka01": {
+   "dbpm": -2.3,
+   "minutes": 872
+  },
+  "russebr01": {
+   "dbpm": 1.1,
+   "minutes": 1388
+  },
+  "sabonar01": {
+   "dbpm": 3.0,
+   "minutes": 1209
+  },
+  "salmojo01": {
+   "dbpm": 0.6,
+   "minutes": 504
+  },
+  "samakso01": {
+   "dbpm": -0.9,
+   "minutes": 77
+  },
+  "sampsja01": {
+   "dbpm": -0.3,
+   "minutes": 8
+  },
+  "sanchpe01": {
+   "dbpm": 6.4,
+   "minutes": 37
+  },
+  "sasseje01": {
+   "dbpm": 0.3,
+   "minutes": 1025
+  },
+  "satteke01": {
+   "dbpm": -0.2,
+   "minutes": 502
+  },
+  "savovpr01": {
+   "dbpm": 0.6,
+   "minutes": 256
+  },
+  "scalabr01": {
+   "dbpm": 0.8,
+   "minutes": 724
+  },
+  "sesayan01": {
+   "dbpm": -0.4,
+   "minutes": 448
+  },
+  "shawbr01": {
+   "dbpm": 0.1,
+   "minutes": 900
+  },
+  "shirlpa01": {
+   "dbpm": -9.6,
+   "minutes": 5
+  },
+  "simmobo01": {
+   "dbpm": -1.2,
+   "minutes": 378
+  },
+  "skinnbr01": {
+   "dbpm": 0.0,
+   "minutes": 1381
+  },
+  "slatere01": {
+   "dbpm": -0.6,
+   "minutes": 141
+  },
+  "slayta01": {
+   "dbpm": 0.7,
+   "minutes": 274
+  },
+  "smithch04": {
+   "dbpm": 1.4,
+   "minutes": 13
+  },
+  "smithjo02": {
+   "dbpm": -0.5,
+   "minutes": 1117
+  },
+  "smithst01": {
+   "dbpm": 0.1,
+   "minutes": 1032
+  },
+  "snower01": {
+   "dbpm": 0.3,
+   "minutes": 3108
+  },
+  "sprewla01": {
+   "dbpm": -0.6,
+   "minutes": 2859
+  },
+  "stackje01": {
+   "dbpm": -1.6,
+   "minutes": 2747
+  },
+  "stepavl01": {
+   "dbpm": -0.5,
+   "minutes": 1594
+  },
+  "stevede01": {
+   "dbpm": -1.6,
+   "minutes": 760
+  },
+  "stewami01": {
+   "dbpm": -0.2,
+   "minutes": 251
+  },
+  "stockjo01": {
+   "dbpm": 1.1,
+   "minutes": 2275
+  },
+  "stojape01": {
+   "dbpm": -0.1,
+   "minutes": 2450
+  },
+  "stoudam01": {
+   "dbpm": -0.4,
+   "minutes": 2570
+  },
+  "stoudda01": {
+   "dbpm": -0.6,
+   "minutes": 1315
+  },
+  "stricer01": {
+   "dbpm": -0.1,
+   "minutes": 1275
+  },
+  "stricma01": {
+   "dbpm": -5.3,
+   "minutes": 13
+  },
+  "stricro02": {
+   "dbpm": 0.3,
+   "minutes": 956
+  },
+  "sundobr01": {
+   "dbpm": -1.1,
+   "minutes": 138
+  },
+  "surabo01": {
+   "dbpm": -0.9,
+   "minutes": 1130
+  },
+  "swiftst01": {
+   "dbpm": 0.5,
+   "minutes": 1478
+  },
+  "szczewa02": {
+   "dbpm": -0.9,
+   "minutes": 1836
+  },
+  "tayloma01": {
+   "dbpm": -1.6,
+   "minutes": 1377
+  },
+  "terryja01": {
+   "dbpm": -1.2,
+   "minutes": 3081
+  },
+  "thomaet01": {
+   "dbpm": -1.5,
+   "minutes": 513
+  },
+  "thomake01": {
+   "dbpm": -0.4,
+   "minutes": 1978
+  },
+  "thomaku01": {
+   "dbpm": 0.7,
+   "minutes": 2577
+  },
+  "thomati01": {
+   "dbpm": -1.7,
+   "minutes": 2358
+  },
+  "tinslja01": {
+   "dbpm": 0.8,
+   "minutes": 2237
+  },
+  "torreos01": {
+   "dbpm": -0.8,
+   "minutes": 109
+  },
+  "traylro01": {
+   "dbpm": 1.7,
+   "minutes": 851
+  },
+  "trentga01": {
+   "dbpm": -0.1,
+   "minutes": 1222
+  },
+  "trepaje01": {
+   "dbpm": 1.6,
+   "minutes": 97
+  },
+  "trybace01": {
+   "dbpm": -2.6,
+   "minutes": 86
+  },
+  "tsakaja01": {
+   "dbpm": 0.0,
+   "minutes": 543
+  },
+  "tskitni01": {
+   "dbpm": -0.7,
+   "minutes": 1320
+  },
+  "turkohe01": {
+   "dbpm": -0.1,
+   "minutes": 1175
+  },
+  "vanexni01": {
+   "dbpm": -1.6,
+   "minutes": 2026
+  },
+  "vanhoke01": {
+   "dbpm": -0.9,
+   "minutes": 2337
+  },
+  "vaughja01": {
+   "dbpm": -0.5,
+   "minutes": 1686
+  },
+  "voskuja01": {
+   "dbpm": 0.4,
+   "minutes": 947
+  },
+  "wagneda02": {
+   "dbpm": -2.8,
+   "minutes": 1385
+  },
+  "walkean02": {
+   "dbpm": -0.6,
+   "minutes": 3235
+  },
+  "walkesa01": {
+   "dbpm": -0.2,
+   "minutes": 1243
+  },
+  "wallabe01": {
+   "dbpm": 3.5,
+   "minutes": 2873
+  },
+  "wallage01": {
+   "dbpm": 0.8,
+   "minutes": 571
+  },
+  "wallara01": {
+   "dbpm": 0.2,
+   "minutes": 2684
+  },
+  "wardch01": {
+   "dbpm": 0.9,
+   "minutes": 1465
+  },
+  "watsoea01": {
+   "dbpm": 1.3,
+   "minutes": 1366
+  },
+  "weathcl01": {
+   "dbpm": -0.2,
+   "minutes": 2024
+  },
+  "webbech01": {
+   "dbpm": 1.5,
+   "minutes": 2622
+  },
+  "wellsbo01": {
+   "dbpm": 0.4,
+   "minutes": 2396
+  },
+  "welscji01": {
+   "dbpm": -1.9,
+   "minutes": 234
+  },
+  "wesleda01": {
+   "dbpm": 0.1,
+   "minutes": 2710
+  },
+  "whiteja01": {
+   "dbpm": -2.4,
+   "minutes": 230
+  },
+  "whitero02": {
+   "dbpm": -0.6,
+   "minutes": 1563
+  },
+  "whitnch01": {
+   "dbpm": -1.5,
+   "minutes": 1052
+  },
+  "wilcoch01": {
+   "dbpm": -1.1,
+   "minutes": 479
+  },
+  "wilksmi01": {
+   "dbpm": 0.6,
+   "minutes": 688
+  },
+  "williaa01": {
+   "dbpm": 0.6,
+   "minutes": 1597
+  },
+  "willial02": {
+   "dbpm": -0.4,
+   "minutes": 2638
+  },
+  "willibr01": {
+   "dbpm": -4.1,
+   "minutes": 19
+  },
+  "willico02": {
+   "dbpm": -0.8,
+   "minutes": 2061
+  },
+  "willier01": {
+   "dbpm": 0.3,
+   "minutes": 2350
+  },
+  "willifr02": {
+   "dbpm": -0.1,
+   "minutes": 167
+  },
+  "willija02": {
+   "dbpm": -1.7,
+   "minutes": 2407
+  },
+  "willija03": {
+   "dbpm": -0.8,
+   "minutes": 1961
+  },
+  "willije01": {
+   "dbpm": 0.0,
+   "minutes": 2346
+  },
+  "willike02": {
+   "dbpm": -0.6,
+   "minutes": 840
+  },
+  "willimo01": {
+   "dbpm": 1.1,
+   "minutes": 276
+  },
+  "willisc01": {
+   "dbpm": 0.1,
+   "minutes": 872
+  },
+  "willish01": {
+   "dbpm": 0.0,
+   "minutes": 1881
+  },
+  "williwa02": {
+   "dbpm": 0.6,
+   "minutes": 1161
+  },
+  "wolkoru01": {
+   "dbpm": -2.5,
+   "minutes": 24
+  },
+  "woodslo01": {
+   "dbpm": 0.7,
+   "minutes": 353
+  },
+  "woodsqy01": {
+   "dbpm": -0.7,
+   "minutes": 334
+  },
+  "wrighlo02": {
+   "dbpm": -1.4,
+   "minutes": 1982
+  },
+  "yarbrvi01": {
+   "dbpm": 0.9,
+   "minutes": 1381
+  },
+  "zhizhwa01": {
+   "dbpm": -2.2,
+   "minutes": 412
+  }
+ }
+}

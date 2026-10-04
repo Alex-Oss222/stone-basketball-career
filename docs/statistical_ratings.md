@@ -151,6 +151,17 @@ The season allocation is a modeling choice: attempt volume rises by about 8% wit
 
 Games, starts, minutes, non-scoring totals, team results, NCAA Tournament subset and recorded honors retain their existing evidence. The original source and `rookie-2003.1` artifact remain archived for every closed game. No `rookie-2003.2` game has been played at this checkpoint, so the revised estimate retains the November 12 adoption gate and the existing development draw. Translation constants and scouting trait classifications are unchanged.
 
+### Shot-making traits and the revised scoring canon (rookie-2003.3)
+
+Model `rookie-2003.3` (scouting `prospect-scouting-2003.2`) applies from **December 3, 2003**, Miami's first game after the last closed one. Games from November 12 to December 2 keep the [archived rookie-2003.2 estimates](../library/2003/league/nba_2003_rookie_estimates_2003_2.json), whose bytes are pinned (`prospects.ARCHIVED_ROOKIE_SHA256`), with their [scouting](../library/2003/league/nba_2003_prospect_scouting_2003_2.json) and [profile source](../library/2003/league/sources/Dwyane_Wade_Player_Profile_rookie_2003_2.md) archived beside them.
+
+Two changes, both authorized by the user on December 1, 2003 (career clock):
+
+1. Documented shot-making traits now move shot locations for every scouted prospect (`prospect_scouting.SHOT_TRAIT_WEIGHTS`, judgement multipliers within one shot value): catch-and-shoot spots (`set_perimeter_shooting`: corner three 1.15), a limited off-dribble three (arc 0.95), curl (10-16 ft 1.10, 3-10 ft 1.05), mid-post turnaround (same), floater (3-10 ft 1.15), face-up (10-16 ft and 16 ft to the line 1.05) and step-back (16 ft to the line 1.10), alongside the existing paint and pull-up weights. They change where attempts come from, never how many or the mean make probability.
+2. Wade's scoring canon (profile section 4) was revised to a full midrange package: face-up, step-back, floater and mid-post turnaround as regular weapons, off-ball curls and flashes, and a consistent catch-and-shoot three (more than half made at UConn). The trait `catch_and_shoot_accuracy: elite` adds a relative accuracy tilt of +0.13 at the corner three (`CATCH_SHOOT_CORNER_TILT`, limit 0.15) before the shift that keeps his three-point mean: about 50% from the corner and 35% above the break for a 39% three-point shooter against average defense. The kernel reads it as `style.zone_accuracy` (kernel 2003.11).
+
+His rates, development draw and translation constants are unchanged; the revision moves location and relative zone accuracy only. Expected two-point mix: rim 34.7%, 3-10 ft 19.5%, 10-16 ft 19.0%, 16 ft to the line 26.7% (league 35.0, 18.3, 17.8, 28.9).
+
 ## Talent trajectories (option C)
 
 The user chose the hybrid model: real players' ability follows their real careers, with simulated development around it. Model `trajectory-hybrid.1`, `runtime/trajectories.py`. The scope rules are in `AGENTS.md` under "Talent-trajectory exception".

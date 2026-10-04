@@ -81,6 +81,7 @@ ACCEPT_BOUNDS = (0.02, 0.95)
 DUMP_VALUE_PER_5M = 0.25                 # value points per $5M of a season's salary a club sheds on purpose
 SEARCH_MIN_ACCEPT = 0.40                 # Miami proposes only what the partner would plausibly take
 MAX_OUT, MAX_IN = 2, 2                   # players a search proposal moves each way
+SEARCH_SKILL_FIT = 1.10                  # a candidate this good a fit is searched even where Miami has the minutes
 SEARCH_MIN_GAIN = 0.05                   # Miami's value gain for a proposal to be worth making
 # Sign-and-trade (design 7.1 and 7.4)
 SIGN_AND_TRADE_RIGHTS = ("bird",)        # both directions; inferred (one 2003 observation: Miller, full Bird, 7 years); Early Bird / Non-Bird / room not found
@@ -654,7 +655,8 @@ class TradeDesk:
                 pos = self.assets.positions.get(v["bbr_id"], (None, "SF", 9))[1].split("-")[0]
                 fit = self.fo.fit(pos, needs)
                 value = Assets.club_value(v, MIAMI_WEIGHTS)
-                vals.append(value * (0.75 + 0.5 * fit) if value > 0 else value)
+                # Skill fit (spacing, rim protection, rebounding, defense, playmaking; crowding Wade) from SKILL_FIT_FROM.
+                vals.append(value * (0.75 + 0.5 * fit) * self.fo.skill_fit(v["bbr_id"]) if value > 0 else value)
             vals += [p["value"] * MIAMI_WEIGHTS["picks"] for p in picks]
             return Assets.effective(vals)
 
@@ -782,7 +784,8 @@ class TradeDesk:
                     continue
                 pos = self.assets.positions.get(p["bbr_id"], (None, "SF", 9))[1].split("-")[0]
                 value = self.assets.player_value(p, for_club=MIAMI)
-                if (pos in need_positions and value["production"] >= 0.5) or p["player"] in wanted:
+                helps = self.fo.skill_fit(p["bbr_id"]) >= SEARCH_SKILL_FIT     # a skill Miami lacks, at any position
+                if ((pos in need_positions or helps) and value["production"] >= 0.5) or p["player"] in wanted:
                     candidates.append(p)
             for p in candidates[:8]:
                 name = p["player"]

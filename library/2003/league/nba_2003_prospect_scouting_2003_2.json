@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "model_version": "prospect-scouting-2003.2",
+  "model_version": "prospect-scouting-2003.1",
   "as_of": "2003-06-26",
   "players": {
     "wadedw01": {
       "as_of": "2003-06-25",
       "source_file": "career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md",
-      "source_sha256": "33b714c811827771a7e39d79eb9e9c98b785b94779f2ec6495f0734b8fb88c8b",
+      "source_sha256": "da398371a07262892bc6938e0b594cb49c3ffafa7c33e2e2413e634a26f51499",
       "position": "SG",
       "traits": {
         "paint_pressure": {
@@ -96,48 +96,6 @@
           "as_of": "2003-06-25",
           "sections": [
             "6. Defense"
-          ]
-        },
-        "curl_jumper": {
-          "value": "plus",
-          "as_of": "2003-06-25",
-          "sections": [
-            "4. Scoring"
-          ]
-        },
-        "mid_post_turnaround": {
-          "value": "plus",
-          "as_of": "2003-06-25",
-          "sections": [
-            "4. Scoring"
-          ]
-        },
-        "floater": {
-          "value": "plus",
-          "as_of": "2003-06-25",
-          "sections": [
-            "4. Scoring"
-          ]
-        },
-        "face_up_jumper": {
-          "value": "plus",
-          "as_of": "2003-06-25",
-          "sections": [
-            "4. Scoring"
-          ]
-        },
-        "step_back_jumper": {
-          "value": "plus",
-          "as_of": "2003-06-25",
-          "sections": [
-            "4. Scoring"
-          ]
-        },
-        "catch_and_shoot_accuracy": {
-          "value": "elite",
-          "as_of": "2003-06-25",
-          "sections": [
-            "4. Scoring"
           ]
         }
       }

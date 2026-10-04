@@ -17,7 +17,8 @@ from runtime.player_stats import RATE_KEYS, STATS_PATH, load_rating_index, read_
 from runtime.prospect_scouting import (POSITION_PATH, SCOUTING_PATH, position_rebound_priors,
                                        style_errors, validate_scouting)
 from runtime.prospects import (LEGACY_PROSPECTS_PATH, LEGACY_ROOKIE_MODEL_VERSION, LEGACY_ROOKIE_PATH, PROSPECTS_PATH,
-                               ROOKIE_MODEL_VERSION, ROOKIE_PATH, SCOUTING_EFFECTIVE_FROM,
+                               ROOKIE_MODEL_VERSION, ROOKIE_PATH, SCOUTING_EFFECTIVE_FROM, STYLE_EFFECTIVE_FROM,
+                               ARCHIVED_ROOKIE_MODEL_VERSION, ARCHIVED_ROOKIE_PATH,
                                VETERAN_PATH, build_rookie_estimates, expected_rookie_estimates)
 from runtime.spatial_shots import draw_spatial_shot, load_spatial_environment, zone_probabilities
 from runtime.trajectories import develop_profile, development_packet
@@ -126,14 +127,14 @@ class ScoutingEvidenceTests(unittest.TestCase):
         def read(path):
             return tampered if Path(path) == ROOT / ROOKIE_PATH else read_json(path)
         with patch("runtime.player_stats.read_json", side_effect=read), self.assertRaisesRegex(ValueError, "stale"):
-            load_rating_index(SCOUTING_EFFECTIVE_FROM, "2003-04", ROOT)
+            load_rating_index(STYLE_EFFECTIVE_FROM, "2003-04", ROOT)
         with patch("runtime.prospect_scouting.sha256", return_value="0" * 64), self.assertRaisesRegex(ValueError, "source changed"):
-            load_rating_index(SCOUTING_EFFECTIVE_FROM, "2003-04", ROOT)
+            load_rating_index(STYLE_EFFECTIVE_FROM, "2003-04", ROOT)
 
 
 class ScoutingKernelTests(unittest.TestCase):
     def setUp(self):
-        self.profile = load_rating_index(SCOUTING_EFFECTIVE_FROM, "2003-04", ROOT).engine_profile("Dwyane Wade")
+        self.profile = load_rating_index(STYLE_EFFECTIVE_FROM, "2003-04", ROOT).engine_profile("Dwyane Wade")
         self.style = self.profile["style"]
         self.cal = calibrate(ENV)
 
@@ -160,6 +161,18 @@ class ScoutingKernelTests(unittest.TestCase):
         pressured = sum(g["team_stats"]["home"]["tov"] for g in games(concern, opponent, 60, tag="pressure-style"))
         self.assertGreater(pressured, ordinary)
 
+    def test_zone_accuracy_moves_makes_between_zones_and_keeps_the_mean(self):
+        environment = load_spatial_environment("2003-04")
+        tilt = self.style["zone_accuracy"]
+        for target in (0, .2, .392, .9, 1):
+            rows = zone_probabilities(environment, 3, target, self.style["spatial_weights"], tilt)
+            self.assertAlmostEqual(sum(share * chance for _, share, chance in rows), target, places=12)
+        rows = {zone: chance for zone, _, chance in zone_probabilities(environment, 3, .392, self.style["spatial_weights"], tilt)}
+        self.assertGreater(rows["corner_three"], .5)
+        self.assertLess(rows["arc_three"], .392)
+        self.assertEqual(style_errors({"zone_accuracy": {"corner_three": .2}}),
+                         ["zone accuracy requires known zones with finite tilts from 0 to 0.15"])
+
     def test_spatial_style_changes_geography_not_aggregate_accuracy(self):
         environment = load_spatial_environment("2003-04")
         weights = self.style["spatial_weights"]
@@ -169,10 +182,12 @@ class ScoutingKernelTests(unittest.TestCase):
                 self.assertAlmostEqual(sum(share for _, share, _ in result), 1, places=14)
                 self.assertAlmostEqual(sum(share * chance for _, share, chance in result), target, places=12)
         generic = zone_probabilities(environment, 2, .5)
-        paint = zone_probabilities(environment, 2, .5, weights)
-        self.assertGreater(paint[0][1], generic[0][1])
-        self.assertEqual(zone_probabilities(environment, 3, .359, weights),
-                         zone_probabilities(environment, 3, .359))
+        styled_twos = zone_probabilities(environment, 2, .5, weights)
+        self.assertGreater(styled_twos[1][1], generic[1][1])          # floater range gains attempts
+        self.assertNotEqual(styled_twos, generic)
+        corner = lambda rows: next(share for zone, share, _ in rows if zone == "corner_three")
+        self.assertGreater(corner(zone_probabilities(environment, 3, .359, weights)),
+                           corner(zone_probabilities(environment, 3, .359)))    # catch-and-shoot spots
         calls = []
         def draw(rng, env, value, target, spatial_weights=None):
             calls.append(spatial_weights)
@@ -232,24 +247,24 @@ class ScoutingReplayTests(unittest.TestCase):
         with patch.object(Path, "exists", without_archive):
             with self.assertRaisesRegex(ValueError, "missing dated prospect"):
                 load_rating_index("2003-11-11", "2003-04", ROOT)
-            load_rating_index(SCOUTING_EFFECTIVE_FROM, "2003-04", ROOT)
+            load_rating_index(STYLE_EFFECTIVE_FROM, "2003-04", ROOT)
         def changed_archive(path):
             return "0" * 64 if Path(path) == ROOT / LEGACY_PROSPECTS_PATH else sha256(path)
         with patch("runtime.player_stats.sha256", side_effect=changed_archive):
             with self.assertRaisesRegex(ValueError, "stale"):
                 load_rating_index("2003-11-11", "2003-04", ROOT)
-            load_rating_index(SCOUTING_EFFECTIVE_FROM, "2003-04", ROOT)
+            load_rating_index(STYLE_EFFECTIVE_FROM, "2003-04", ROOT)
 
     def test_missing_dated_estimate_cannot_fall_back_to_neutral(self):
         exists = Path.exists
-        for date, missing in (("2003-11-11", LEGACY_ROOKIE_PATH), (SCOUTING_EFFECTIVE_FROM, ROOKIE_PATH)):
+        for date, missing in (("2003-11-11", LEGACY_ROOKIE_PATH), (STYLE_EFFECTIVE_FROM, ROOKIE_PATH)):
             with self.subTest(date=date), patch.object(Path, "exists", lambda path: False if path == ROOT / missing else exists(path)):
                 with self.assertRaisesRegex(ValueError, "missing dated rookie"):
                     load_rating_index(date, "2003-04", ROOT)
 
     def test_legacy_archive_and_adoption_gate_preserve_the_same_development_draw(self):
         old = load_rating_index("2003-11-11", "2003-04", ROOT).engine_profile("Dwyane Wade")
-        new = load_rating_index(SCOUTING_EFFECTIVE_FROM, "2003-04", ROOT).engine_profile("Dwyane Wade")
+        new = load_rating_index(STYLE_EFFECTIVE_FROM, "2003-04", ROOT).engine_profile("Dwyane Wade")
         self.assertEqual(old["model_version"], LEGACY_ROOKIE_MODEL_VERSION)
         self.assertEqual(new["model_version"], ROOKIE_MODEL_VERSION)
         self.assertNotIn("style", old)
@@ -280,7 +295,7 @@ class ScoutingReplayTests(unittest.TestCase):
 
     def test_future_packet_freezes_sources_styles_and_replays(self):
         request = read_json(ROOT / "career/Dwyane_Wade/2003-04/06_Regular_Season/11_November/Week_2/Game_2.request.json")
-        request.update(game_date=SCOUTING_EFFECTIVE_FROM, event_id="scouting-fixture-only")
+        request.update(game_date=STYLE_EFFECTIVE_FROM, event_id="scouting-fixture-only")
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "fixture.request.json"
             path.write_bytes(canonical(request))
@@ -297,6 +312,31 @@ class ScoutingReplayTests(unittest.TestCase):
                           if p.player_id == "Dwyane Wade" else p for p in away.players))
         with self.assertRaisesRegex(ValueError, "differs from"):
             build_game_packet(home, changed, **kwargs)
+
+
+
+class ArchivedScoutingTests(unittest.TestCase):
+    """Games from November 12 to December 2, 2003 keep the archived rookie-2003.2 profile byte for byte."""
+
+    def test_archived_window_reads_the_pinned_file_and_the_new_model_starts_on_its_date(self):
+        archived = load_rating_index("2003-11-20", "2003-04", ROOT).engine_profile("Dwyane Wade")
+        self.assertEqual(archived["model_version"], ARCHIVED_ROOKIE_MODEL_VERSION)
+        self.assertEqual(archived["style"], read_json(ROOT / ARCHIVED_ROOKIE_PATH)["players"]["wadedw01"]["style"])
+        self.assertNotIn("floater", archived["scouting"]["traits"])
+        current = load_rating_index(STYLE_EFFECTIVE_FROM, "2003-04", ROOT).engine_profile("Dwyane Wade")
+        self.assertEqual(current["model_version"], ROOKIE_MODEL_VERSION)
+        self.assertEqual(current["scouting"]["traits"]["floater"]["value"], "plus")
+        self.assertEqual(current["rates"], archived["rates"])           # shot traits move locations, not ability
+
+    def test_a_changed_or_missing_archive_fails_closed(self):
+        def changed(path):
+            return "0" * 64 if Path(path) == ROOT / ARCHIVED_ROOKIE_PATH else sha256(path)
+        with patch("runtime.player_stats.sha256", side_effect=changed), self.assertRaisesRegex(ValueError, "archived"):
+            load_rating_index("2003-11-20", "2003-04", ROOT)
+        exists = Path.exists
+        with patch.object(Path, "exists", lambda path: False if path == ROOT / ARCHIVED_ROOKIE_PATH else exists(path)):
+            with self.assertRaisesRegex(ValueError, "missing dated rookie"):
+                load_rating_index("2003-11-20", "2003-04", ROOT)
 
 
 if __name__ == "__main__":

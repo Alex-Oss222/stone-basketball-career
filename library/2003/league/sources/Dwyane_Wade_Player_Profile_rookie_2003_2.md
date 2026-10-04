@@ -79,31 +79,17 @@ The trouble begins when he commits to the gather before reading the help. A defe
 
 ### Perimeter Shooting
 
-His most dependable three comes from a catch with his feet set, most often from the corners and the wing after he has given the ball up and relocated a few steps to open a return pass. The defender has to close under control. A hard closeout gives him the drive, a one-dribble pull-up or a shot fake into a side-step. The catch-and-shoot three is consistent: he made more than half of them at UConn with the same release on every catch, most of all from the corners, while his pull-up threes went in far less often.
+His most dependable three comes from a catch with his feet set. After giving the ball up, he will move a few steps along the perimeter to open a return pass. The defender has to close under control. A hard closeout gives him the drive or a one-dribble pull-up.
 
-He can make a pull-up three or a step-back three. Those remain occasional attempts. His junior shooting numbers come from a college offense in which he gets prepared catches as well as shots he creates himself; the percentages do not establish equal accuracy on every type of jumper.
+The pull-up is most useful from about 12 to 18 feet, particularly when a big defender retreats toward the rim. Wade gets enough elevation to shoot over the recovering guard. His balance becomes less reliable when he stops from full speed or turns sharply into the attempt. Coming off a pin-down, he is more comfortable curling into a two-pointer than turning straight into a three.
 
-### Midrange Game
-
-The pull-up is his main jumper, from about 12 to 18 feet. He gets into it off one or two dribbles, off a hesitation, off a crossover going either way and off a hard drive that he stops with an inside-foot brake. Against a big who retreats toward the rim in a ball screen, he stops at the elbow or the nail before the big can step up. Wade gets enough elevation to shoot over the recovering guard.
-
-From the elbow and the extended post he plays out of triple threat. A jab step tells him whether the defender will give ground. If the defender sits back, he rises from the jab or after one rip-through dribble. If the defender crowds him, he goes past the top foot. A rocker step and a shot fake into a one-dribble pull-up are the counters he uses most.
-
-The step-back is a regular part of the midrange package. He uses it going right and going left when a defender cuts off the drive, and when a switch puts a bigger player on him. A side-step serves the same purpose against a contest from one side.
-
-Inside the lane, before the rim protector arrives, he uses a floater or a runner. He shoots it off one foot or two, with either hand, high enough to clear a shot blocker from eight to twelve feet. It is his answer to drop coverage when the pull-up is taken away and the rim is not open.
-
-His balance becomes less reliable when he stops from full speed after a long sprint or turns sharply into the attempt. His better possessions slow down first: a hang dribble, a retreat dribble or a bump into the defender's chest creates the room before he rises.
+He can make a pull-up three or a stepback. Those remain occasional attempts. His junior shooting numbers come from a college offense in which he gets prepared catches as well as shots he creates himself; the percentages do not establish equal accuracy on every type of jumper.
 
 ### Post Play
 
-A smaller guard gives him a reason to catch in the mid-post, and he uses it regularly against that matchup. He takes one or two dribbles, feels the defender's position and turns over either shoulder to shoot right-handed. He has a turnaround fade along the baseline, a middle fade, a bank shot from the short corner and an up-and-under when the defender leaves his feet early. He will also pass to a cutter when the weak-side defender watches the ball.
+A smaller guard gives him a reason to catch in the mid-post. He takes one or two dribbles, feels the defender's position and turns over either shoulder to shoot right-handed. He will also pass to a cutter when the weak-side defender watches the ball.
 
-He stays too long on some post-ups. Once the second defender has arrived, another backing dribble can leave him with less room to turn and a harder pass out.
-
-### Off-Ball Scoring
-
-He scores without holding the ball. Coming off a pin-down he curls into a pull-up or a short jumper from the elbow, and he is more comfortable curling into a two-pointer than turning straight into a three. He flashes to the elbow and the nail for a catch-and-shoot two, cuts backdoor when a defender overplays the wing and relocates along the baseline when his man helps on a drive.
+He stays too long on some post-ups. Once the second defender has arrived, another backing dribble can leave him with less room to turn and a harder pass out. The post is a useful change against the right matchup. It occupies a small part of his offense.
 
 ## 5. Ball Handling and Playmaking
 

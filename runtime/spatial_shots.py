@@ -96,7 +96,7 @@ def classify_spatial_zone(x, y):
     return "distance_16_three"
 
 
-def zone_probabilities(environment, value, target, spatial_weights=None):
+def zone_probabilities(environment, value, target, spatial_weights=None, zone_accuracy=None):
     """Zone make probabilities whose attempt-weighted mean is exactly target.
 
     A common shift preserves sourced efficiency differences. At the bounds,
@@ -114,6 +114,14 @@ def zone_probabilities(environment, value, target, spatial_weights=None):
         weights = [row["attempt_share_within_value"] * spatial_weights[row["id"]] for row in rows]
         total = sum(weights)
         rows = [dict(row, attempt_share_within_value=weight / total) for row, weight in zip(rows, weights)]
+    if zone_accuracy is not None:
+        # A player's relative accuracy by zone (an elite catch-and-shoot corner, say): added before the common
+        # shift, so his mean make probability for the shot value is still exactly the target.
+        from .prospect_scouting import style_errors
+        errors = style_errors({"zone_accuracy": zone_accuracy})
+        if errors:
+            raise ValueError("; ".join(errors))
+        rows = [dict(row, fg_pct=row["fg_pct"] + zone_accuracy.get(row["id"], 0.0)) for row in rows]
     active = list(range(len(rows)))
     probabilities = [None] * len(rows)
     remaining = target
@@ -163,9 +171,9 @@ def draw_location(rng, zone):
     raise RuntimeError("could not sample a point inside its spatial zone")
 
 
-def draw_spatial_shot(rng, environment, value, target, spatial_weights=None):
+def draw_spatial_shot(rng, environment, value, target, spatial_weights=None, zone_accuracy=None):
     """Return zone, x, y and its calibrated make probability; no outcome draw."""
-    probabilities = zone_probabilities(environment, value, target, spatial_weights)
+    probabilities = zone_probabilities(environment, value, target, spatial_weights, zone_accuracy)
     draw = rng.random()
     chosen = probabilities[-1]
     for zone in probabilities:

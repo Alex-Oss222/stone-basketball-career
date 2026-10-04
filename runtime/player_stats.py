@@ -303,21 +303,27 @@ def load_rating_index(game_date, season, root=ROOT):
     if data["model_version"] != MODEL_VERSION or data["source_sha256"] != sha256(Path(root)/STATS_PATH):
         raise ValueError("statistical ratings are stale; rebuild from the current source")
     from .prospects import (PROSPECTS_PATH, LEGACY_PROSPECTS_PATH, ROOKIE_MODEL_VERSION, ROOKIE_PATH, LEGACY_ROOKIE_PATH,
-                            LEGACY_ROOKIE_MODEL_VERSION, SCOUTING_EFFECTIVE_FROM, expected_rookie_estimates)
+                            LEGACY_ROOKIE_MODEL_VERSION, SCOUTING_EFFECTIVE_FROM, STYLE_EFFECTIVE_FROM,
+                            ARCHIVED_ROOKIE_PATH, ARCHIVED_ROOKIE_MODEL_VERSION, ARCHIVED_ROOKIE_SHA256,
+                            expected_rookie_estimates)
     rookies = None
     legacy = game_date < SCOUTING_EFFECTIVE_FROM
-    rookie_path = Path(root)/(LEGACY_ROOKIE_PATH if legacy else ROOKIE_PATH)
+    archived = not legacy and game_date < STYLE_EFFECTIVE_FROM
+    rookie_path = Path(root)/(LEGACY_ROOKIE_PATH if legacy else ARCHIVED_ROOKIE_PATH if archived else ROOKIE_PATH)
     prospects_path = Path(root)/(LEGACY_PROSPECTS_PATH if legacy else PROSPECTS_PATH)
     if rookie_path.exists():
         if not prospects_path.exists():
             raise ValueError(f"missing dated prospect statistics: {prospects_path.name}")
         rookies = read_json(rookie_path)
-        model = LEGACY_ROOKIE_MODEL_VERSION if legacy else ROOKIE_MODEL_VERSION
+        model = LEGACY_ROOKIE_MODEL_VERSION if legacy else ARCHIVED_ROOKIE_MODEL_VERSION if archived else ROOKIE_MODEL_VERSION
         if (rookies["model_version"] != model or rookies["as_of"] > game_date
                 or rookies["veteran_model_version"] != MODEL_VERSION
                 or rookies["source_sha256"] != sha256(prospects_path)):
             raise ValueError("rookie estimates are stale or not yet available; rebuild from the current source")
-        if rookies != expected_rookie_estimates(root, legacy=legacy):
+        if archived:
+            if sha256(rookie_path) != ARCHIVED_ROOKIE_SHA256:
+                raise ValueError("archived rookie-2003.2 estimates changed; closed games cannot replay")
+        elif rookies != expected_rookie_estimates(root, legacy=legacy):
             raise ValueError("rookie estimates or scouting sources are stale; rebuild from the current source")
     elif prospects_path.exists() or (Path(root)/PROSPECTS_PATH).exists():
         raise ValueError(f"missing dated rookie estimates: {rookie_path.name}")

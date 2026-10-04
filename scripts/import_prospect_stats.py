@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from bisect import bisect_left, bisect_right
 from runtime.player_stats import GRADE_LABELS, MIN_COHORT_MINUTES, read_json
-from runtime.prospects import (ROOKIE_MODEL_VERSION, ROOKIE_PATH, SCOUTING_EFFECTIVE_FROM,
+from runtime.prospects import (ROOKIE_MODEL_VERSION, ROOKIE_PATH, SCOUTING_EFFECTIVE_FROM, STYLE_EFFECTIVE_FROM,
                                VETERAN_PATH, expected_rookie_estimates, rookie_errors)
 
 CARD = ROOT / "career/Dwyane_Wade/2003-04/00_Team/Team/Player_Cards/dwyane_wade.md"
@@ -35,7 +35,8 @@ def card_block(player, veterans):
         f"({player['sample']['games']} games, {player['sample']['minutes']} minutes) with provisional college-to-NBA "
         "factors and shrinkage toward the 2002-03 NBA average. Grades rank the estimate against 2002-03 NBA players "
         "with 500+ minutes (20-80, 50 = median). Dated scouting adds paint-pressure and position-rebound priors. "
-        f"This model correction applies from {SCOUTING_EFFECTIVE_FROM}; earlier games retain rookie-2003.1. "
+        f"This model applies from {STYLE_EFFECTIVE_FROM}; games from {SCOUTING_EFFECTIVE_FROM} keep the archived rookie-2003.2 "
+        "and earlier games rookie-2003.1. "
         "Method: [statistical ratings](../../../../../../docs/statistical_ratings.md#rookie-estimates).",
         "",
         "| Rate | Grade (20-80) | Estimate | NBA average |",
@@ -45,7 +46,8 @@ def card_block(player, veterans):
         f"Free-throw attempts/FGA: {player['estimated']['free_throw_attempt_rate']:.3f}; "
         f"turnovers/FGA: {player['estimated']['turnovers_per_fga']:.3f}. "
         "Pressure concerns affect turnovers against positive team defense, not the base rate. "
-        "Paint and pull-up location weights preserve aggregate shooting accuracy. Rebound-led transition "
+        "Shot-making traits (paint pressure, pull-up, catch-and-shoot, curl, mid-post turnaround, floater, face-up, "
+        "step-back) move only where his attempts come from and preserve aggregate shooting accuracy. Rebound-led transition "
         "applies only after his own defensive rebound. These are provisional model assumptions, not tracking data.",
         END,
     ])

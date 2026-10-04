@@ -11,7 +11,8 @@ from .player_stats import CUTOFF, MIN_COHORT_MINUTES, sha256
 
 SCOUTING_PATH = Path("library/2003/league/nba_2003_prospect_scouting.json")
 POSITION_PATH = Path("library/2003/league/nba_2003_end_of_season.json")
-SCOUTING_MODEL_VERSION = "prospect-scouting-2003.1"
+SCOUTING_MODEL_VERSION = "prospect-scouting-2003.2"
+ARCHIVED_SCOUTING_PATH = Path("library/2003/league/nba_2003_prospect_scouting_2003_2.json")   # rookie-2003.2 games
 POSITIONS = ("PG", "SG", "SF", "PF", "C")
 TRAIT_VALUES = {
     "paint_pressure": ("neutral", "plus"),
@@ -26,14 +27,40 @@ TRAIT_VALUES = {
     "screen_navigation": ("neutral", "concern"),
     "help_discipline": ("neutral", "concern"),
     "weak_side_event_defense": ("neutral", "plus"),
+    # Shot-making families (prospect-scouting-2003.2): expressed only through shot locations.
+    "curl_jumper": ("neutral", "plus"),
+    "mid_post_turnaround": ("neutral", "plus"),
+    "floater": ("neutral", "plus"),
+    "face_up_jumper": ("neutral", "plus"),
+    "step_back_jumper": ("neutral", "plus"),
+    "catch_and_shoot_accuracy": ("neutral", "elite"),
 }
 STYLE_ZONES = ("distance_0_3", "distance_3_10", "distance_10_16", "distance_16_three",
                "corner_three", "arc_three")
 PAINT_FTR_FACTOR = 1.15
+# Elite catch-and-shoot accuracy: relative make probability added at his catch spot (the corner three) before
+# the shift that keeps his three-point mean; against league zones this is about 50% from the corner for a 39%
+# three-point shooter, paid for above the break (judgement; docs/statistical_ratings.md).
+CATCH_SHOOT_CORNER_TILT = 0.13
+ZONE_ACCURACY_LIMIT = 0.15
 PRESSURE_SENSITIVITY = 1.5
 REBOUND_TRANSITION_FACTOR = 1.25
 PAINT_WEIGHTS = {"distance_0_3": 1.30, "distance_3_10": 1.10}
 PULL_UP_WEIGHTS = {"distance_10_16": 1.10, "distance_16_three": 1.05}
+# Zone multipliers per documented skill (judgement, bounded; docs/statistical_ratings.md). They move where a
+# player's two- or three-point attempts come from within that shot value, never how many he takes or how
+# often they go in: `spatial_shots.zone_probabilities` keeps his mean make probability.
+SHOT_TRAIT_WEIGHTS = (
+    ("paint_pressure", "plus", PAINT_WEIGHTS),
+    ("midrange_pull_up", "plus", PULL_UP_WEIGHTS),
+    ("set_perimeter_shooting", "plus", {"corner_three": 1.15}),        # catch-and-shoot spots
+    ("off_dribble_three", "limited", {"arc_three": 0.95}),
+    ("curl_jumper", "plus", {"distance_10_16": 1.10, "distance_3_10": 1.05}),
+    ("mid_post_turnaround", "plus", {"distance_10_16": 1.10, "distance_3_10": 1.05}),
+    ("floater", "plus", {"distance_3_10": 1.15}),
+    ("face_up_jumper", "plus", {"distance_10_16": 1.05, "distance_16_three": 1.05}),
+    ("step_back_jumper", "plus", {"distance_16_three": 1.10}),
+)
 
 
 def validate_scouting(data, prospects, root=None):
@@ -100,18 +127,21 @@ def style_for(entry):
     if trait_value(entry, "transition_push") == "plus":
         style["rebound_transition_multiplier"] = REBOUND_TRANSITION_FACTOR
     weights = {zone: 1.0 for zone in STYLE_ZONES}
-    for trait, modifiers in (("paint_pressure", PAINT_WEIGHTS), ("midrange_pull_up", PULL_UP_WEIGHTS)):
-        if trait_value(entry, trait) == "plus":
+    for trait, value, modifiers in SHOT_TRAIT_WEIGHTS:
+        if trait_value(entry, trait) == value:
             for zone, multiplier in modifiers.items():
                 weights[zone] *= multiplier
+    weights = {zone: round(w, 6) for zone, w in weights.items()}
     if any(value != 1 for value in weights.values()):
         style["spatial_weights"] = weights
+    if trait_value(entry, "catch_and_shoot_accuracy") == "elite":
+        style["zone_accuracy"] = {"corner_three": CATCH_SHOOT_CORNER_TILT}
     return style
 
 
 def style_errors(style):
     if not isinstance(style, dict) or set(style) - {
-            "pressure_turnover_sensitivity", "rebound_transition_multiplier", "spatial_weights"}:
+            "pressure_turnover_sensitivity", "rebound_transition_multiplier", "spatial_weights", "zone_accuracy"}:
         return ["unsupported player style"]
     errors = []
     for key in ("pressure_turnover_sensitivity", "rebound_transition_multiplier"):
@@ -124,6 +154,12 @@ def style_errors(style):
                 or any(type(w) not in (int, float) or not math.isfinite(w) or not .5 <= w <= 2
                        for w in weights.values())):
             errors.append("spatial weights require six finite multipliers between 0.5 and 2")
+    if "zone_accuracy" in style:
+        tilt = style["zone_accuracy"]
+        if (not isinstance(tilt, dict) or not tilt or set(tilt) - set(STYLE_ZONES)
+                or any(type(t) not in (int, float) or not math.isfinite(t) or not 0 <= t <= ZONE_ACCURACY_LIMIT
+                       for t in tilt.values())):
+            errors.append(f"zone accuracy requires known zones with finite tilts from 0 to {ZONE_ACCURACY_LIMIT}")
     return errors
 
 

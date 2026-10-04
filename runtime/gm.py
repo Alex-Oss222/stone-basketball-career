@@ -35,6 +35,7 @@ MATCH_SURPLUS_SLOPE, MATCH_OVER_TAX_FACTOR = 2.5, 0.3   # a real incumbent match
 ROLE_CEILING_SHARE = {"starter": None, "rotation": 1.0, "reserve": 0.3}   # of the mid-level: what a role is worth to Miami
 HOLD_KEEP_FACTOR = 1.5                   # keep a free agent's rights while his hold is under this times his valuation
 SIGN_AND_TRADE_MIN_SCORE = 20.0          # a target worth a sign-and-trade package scores at least ROOM_OVER_RIGHTS_SCORE
+SKILL_FIT_FROM = "2003-12-01"            # skill fit (runtime/skill_fit.py) joins positional fit from this career date; earlier decisions keep theirs
 RESIGN_AND_TRADE_FIT = 0.6               # Miami signs-and-trades an agreed own free agent only when his position fit is below this (run_free_agency shop_own, run_trade --shop)
 
 
@@ -155,6 +156,23 @@ class FrontOffice:
                           "incumbents": [n for n, v in held.items() if v["position"] == pos][:3]}
         return needs
 
+    # -- skill fit (from SKILL_FIT_FROM) --------------------------------------------------------
+    def skill_needs(self):
+        """Miami's skill needs from the players it holds, weighted by production (runtime/skill_fit.py)."""
+        if self.on < SKILL_FIT_FROM:
+            return None
+        if not hasattr(self, "_skill_needs"):
+            from .skill_fit import SkillFit
+            self._skills = SkillFit(self.root)
+            bbrs = {p["name"]: p.get("bbr_id") for p in self.roster["players"]}
+            held = [(bbrs.get(n), max(1.0, v["value"])) for n, v in self.roster_values().items() if bbrs.get(n)]
+            self._skill_needs = self._skills.needs(held)
+        return self._skill_needs
+
+    def skill_fit(self, bbr_id):
+        needs = self.skill_needs()
+        return 1.0 if needs is None or not bbr_id else self._skills.fit(bbr_id, needs)
+
     def fit(self, position, needs):
         n = needs.get(position, {"minutes_short": 0, "quality_gap": 0})
         return round(0.5 + 0.5 * min(1.0, n["minutes_short"] / 48) + 0.5 * n["quality_gap"], 3)
@@ -181,7 +199,7 @@ class FrontOffice:
             ask = self.market.asking(bbr, self.on)
             pos = positions.get(bbr, "SF")
             surplus = (own - ask["first_year"]) / max(ask["first_year"], 1)
-            weight = self.fit(pos, needs)
+            weight = round(self.fit(pos, needs) * self.skill_fit(bbr), 3)
             # Contribution above replacement per dollar, with a star premium (quality^1.5): one star
             # is worth more than two role players, and a cheap ask helps but cannot make a bad player good.
             above = max(0.0, (self.valuation.value(bbr) or 0) - REPLACEMENT_VALUE)
@@ -191,6 +209,7 @@ class FrontOffice:
                 score *= 1 + STANDING_WEIGHT[standing]
             rows.append({"bbr_id": bbr, "player": p["player"], "club": p["club"], "position": pos, "age": self.valuation.age(bbr),
                          "value": round(self.valuation.value(bbr) or 0, 1), "valuation": own, "ask": ask["first_year"],
+                         "skill_fit": self.skill_fit(bbr),
                          "years_asked": ask["years"], "surplus": round(surplus, 3), "fit": weight, "score": round(score, 3),
                          "wade_request": bool(wish), "rfa": bool(p.get("rfa_eligible")), "bird_class": p.get("bird_class")})
         rows.sort(key=lambda r: -r["score"])
@@ -293,7 +312,7 @@ class FrontOffice:
         re_sign = [{"player": k["player"], "bbr_id": rights[k["player"]].get("bbr_id"), "route": k["bird_status"],
                     "valuation": k["valuation"], "hold": k["hold"]} for k in keep]
         return {"date": self.on, "cap_room": room, "payroll_ceiling": self.payroll_ceiling(),
-                "renounce_when_needed": drop, "keep_rights": keep, "needs": self.needs(),
+                "renounce_when_needed": drop, "keep_rights": keep, "needs": self.needs(), "skill_needs": self.skill_needs(),
                 "targets": chosen, "room_after_targets": remaining, "re_sign_candidates": re_sign, "wade_requests": review,
                 "sign_and_trade_probes": probes}
 
