@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-15-dallas-mavericks-at-memphis-grizzlies",
+ "game_date": "2003-11-15",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Dallas Mavericks",
+  "rotation": "real"
+ }
+}

@@ -2,9 +2,9 @@
 
 # Contract | James Posey
 
-Known through: 2003-11-14. [Open interactive contract](poseyja01.html#contract) · [Contract history](poseyja01.html#contract-history)
+Known through: 2003-11-16. [Open interactive contract](poseyja01.html#contract) · [Contract history](poseyja01.html#contract-history)
 
-James Posey: free agent expiring. Evidence cutoff: 2003-11-14.
+James Posey: free agent expiring. Evidence cutoff: 2003-11-16.
 
 ## Current contract
 

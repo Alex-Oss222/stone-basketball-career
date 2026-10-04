@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2003-11-14 · Miami Heat · active
+Career date: 2003-11-16 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,18 +14,18 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2003-11-14 |
+| Career date | 2003-11-16 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2003-11-12-cleveland-cavaliers-at-miami-heat |
+| Last closed event | 2003-11-16-miami-heat-at-los-angeles-lakers |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2003-11-14 | Current checkpoint | 2003-11-12-cleveland-cavaliers-at-miami-heat | Recorded | [Owning event](../2003-04/06_Regular_Season/11_November/Week_2/note.md) |
+| 2003-11-16 | Current checkpoint | 2003-11-16-miami-heat-at-los-angeles-lakers | Recorded | [Owning event](../2003-04/06_Regular_Season/11_November/Week_2/note.md) |
 | 2003-07-19 | Next contract review | Player responds to an actual eligible proposal | recorded | [Contract desk](index.html#contract_negotiation) |
 | 2003-09-30 | Camp reporting | Club records the date | active | [Training camp](index.html#training_camp) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
@@ -97,4 +97,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_3.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_4.md)
+- [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_1.md)
 - [Dated milestone working records and player replies](../milestones.json)

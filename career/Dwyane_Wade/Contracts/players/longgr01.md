@@ -2,9 +2,9 @@
 
 # Contract | Grant Long
 
-Known through: 2003-11-14. [Open interactive contract](longgr01.html#contract) · [Contract history](longgr01.html#contract-history)
+Known through: 2003-11-16. [Open interactive contract](longgr01.html#contract) · [Contract history](longgr01.html#contract-history)
 
-Grant Long: free agent expiring. Evidence cutoff: 2003-11-14.
+Grant Long: free agent expiring. Evidence cutoff: 2003-11-16.
 
 ## Current contract
 

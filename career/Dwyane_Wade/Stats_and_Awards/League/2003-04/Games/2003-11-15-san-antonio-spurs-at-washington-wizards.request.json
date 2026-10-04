@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-15-san-antonio-spurs-at-washington-wizards",
+ "game_date": "2003-11-15",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "San Antonio Spurs",
+  "rotation": "real"
+ }
+}

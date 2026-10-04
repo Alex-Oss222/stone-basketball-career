@@ -2,9 +2,9 @@
 
 # Contract | Juan Dixon
 
-Known through: 2003-11-14. [Open interactive contract](dixonju01.html#contract) · [Contract history](dixonju01.html#contract-history)
+Known through: 2003-11-16. [Open interactive contract](dixonju01.html#contract) · [Contract history](dixonju01.html#contract-history)
 
-Juan Dixon: under rookie contract. Evidence cutoff: 2003-11-14.
+Juan Dixon: under rookie contract. Evidence cutoff: 2003-11-16.
 
 ## Current contract
 

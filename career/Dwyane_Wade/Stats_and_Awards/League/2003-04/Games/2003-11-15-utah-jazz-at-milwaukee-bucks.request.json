@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-15-utah-jazz-at-milwaukee-bucks",
+ "game_date": "2003-11-15",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Milwaukee Bucks",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ }
+}

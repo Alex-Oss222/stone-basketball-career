@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-15-philadelphia-76ers-at-cleveland-cavaliers",
+ "game_date": "2003-11-15",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Philadelphia 76ers",
+  "rotation": "real"
+ }
+}

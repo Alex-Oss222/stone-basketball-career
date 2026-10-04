@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-11-14**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-11-16**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -247,7 +247,7 @@ Card date: **2003-11-14**. 407 registry players, one Markdown card and one inter
 | [Roger Mason Jr.](masonro01.md) | Chicago Bulls | 23 | sourced | [open](masonro01.html) |
 | [Ron Artest](artesro01.md) | Indiana Pacers | 24 | sourced | [open](artesro01.html) |
 | [Ruben Patterson](patteru01.md) | Portland Trail Blazers | 28 | sourced | [open](patteru01.html) |
-| [Sasha Pavlovic](pavloal01.md) | Utah Jazz | 19 | sourced | [open](pavloal01.html) |
+| [Sasha Pavlovic](pavloal01.md) | Utah Jazz | 20 | sourced | [open](pavloal01.html) |
 | [Scottie Pippen](pippesc01.md) | Chicago Bulls | 38 | sourced | [open](pippesc01.html) |
 | [Sean Lampley](lamplse01.md) | Miami Heat | 24 | silhouette | [open](lamplse01.html) |
 | [Shandon Anderson](andersh01.md) | New York Knicks | 29 | sourced | [open](andersh01.html) |
@@ -279,7 +279,7 @@ Card date: **2003-11-14**. 407 registry players, one Markdown card and one inter
 
 | Player | Club on card date | Age | Photo | Interactive |
 | --- | --- | --- | --- | --- |
-| [Amar'e Stoudemire](stoudam01.md) | Phoenix Suns | 20 | sourced | [open](stoudam01.html) |
+| [Amar'e Stoudemire](stoudam01.md) | Phoenix Suns | 21 | sourced | [open](stoudam01.html) |
 | [Antoine Walker](walkean02.md) | Dallas Mavericks | 27 | sourced | [open](walkean02.html) |
 | [Austin Croshere](croshau01.md) | Indiana Pacers | 28 | sourced | [open](croshau01.html) |
 | [Boris Diaw](diawbo01.md) | Atlanta Hawks | 21 | sourced | [open](diawbo01.html) |
