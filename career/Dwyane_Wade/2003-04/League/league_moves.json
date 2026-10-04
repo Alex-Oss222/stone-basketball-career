@@ -1680,6 +1680,100 @@
    },
    "contract": null,
    "note": "10-day contract ended (7.9 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-01-25-expire-penigde01",
+   "date": "2004-01-25",
+   "kind": "expire",
+   "player": "Desmond Penigar",
+   "bbr_id": "penigde01",
+   "from": "Los Angeles Lakers",
+   "to": null,
+   "role": {
+    "player_id": "Desmond Penigar",
+    "bbr_id": "penigde01",
+    "position": "PF",
+    "games": 10,
+    "minutes": 89
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-01-25-expire-rooksse01",
+   "date": "2004-01-25",
+   "kind": "expire",
+   "player": "Sean Rooks",
+   "bbr_id": "rooksse01",
+   "from": "Milwaukee Bucks",
+   "to": null,
+   "role": {
+    "player_id": "Sean Rooks",
+    "bbr_id": "rooksse01",
+    "position": "C",
+    "games": 55,
+    "minutes": 595
+   },
+   "contract": null,
+   "note": "10-day contract ended (2.9 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-01-25-waive-mcleoke01",
+   "date": "2004-01-25",
+   "kind": "waive",
+   "player": "Keith McLeod",
+   "bbr_id": "mcleoke01",
+   "from": "Minnesota Timberwolves",
+   "to": null,
+   "role": {
+    "player_id": "Keith McLeod",
+    "bbr_id": "mcleoke01",
+    "position": "PG",
+    "games": 33,
+    "minutes": 391
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-01-27"
+  },
+  {
+   "id": "2003-04-market-2004-01-25-ten_day-penigde01",
+   "date": "2004-01-25",
+   "kind": "ten_day",
+   "player": "Desmond Penigar",
+   "bbr_id": "penigde01",
+   "from": null,
+   "to": "Minnesota Timberwolves",
+   "role": {
+    "player_id": "Desmond Penigar",
+    "bbr_id": "penigde01",
+    "position": "PF",
+    "games": 10,
+    "minutes": 89
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-02-04",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.9 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-25-expire-dickeka01",
+   "date": "2004-01-25",
+   "kind": "expire",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": "Toronto Raptors",
+   "to": null,
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": null,
+   "note": "10-day contract ended (4.5 minutes a game)"
   }
  ]
 }
