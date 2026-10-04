@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2003-12-21. [Search the contract directory](index.html)
+Known through 2003-12-22. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -344,7 +344,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Mike James](players/jamesmi01.md) | Miami Heat | re signed | Mike James · 2003-07-17 | 2 |
 | [Mike Miller](players/millemi01.md) | Memphis Grizzlies | under rookie contract | Mike Miller · 2000-08-11 | 1 |
 | [Mike Wilks](players/wilksmi01.md) | Houston Rockets | under contract | Mike Wilks · 2003-09-08 | 2 |
-| [Mikki Moore](players/mooremi01.md) | Atlanta Hawks | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
+| [Mikki Moore](players/mooremi01.md) | New Jersey Nets | under contract | Mikki Moore · 2003-12-22 | 2 |
 | [Milt Palacio](players/palacmi01.md) | Toronto Raptors | under contract | Milt Palacio · 2003-07-16 | 2 |
 | [Mitchell Butler](players/butlemi02.md) | Washington Wizards | No verified contract record | No verified current agreement | 0 |
 | [Mo Williams](players/willima01.md) | Utah Jazz | No verified contract record | No verified current agreement | 0 |

@@ -2,9 +2,9 @@
 
 # Contract | Alex Garcia
 
-Known through: 2003-12-21. [Open interactive contract](garcial01.html#contract) · [Contract history](garcial01.html#contract-history)
+Known through: 2003-12-22. [Open interactive contract](garcial01.html#contract) · [Contract history](garcial01.html#contract-history)
 
-Alex Garcia: No verified contract record. Evidence cutoff: 2003-12-21.
+Alex Garcia: No verified contract record. Evidence cutoff: 2003-12-22.
 
 ## Current contract
 

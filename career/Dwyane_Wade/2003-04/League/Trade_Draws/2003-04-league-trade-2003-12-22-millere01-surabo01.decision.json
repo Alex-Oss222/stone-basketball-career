@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-04-league-trade-2003-12-22-millere01-surabo01",
+ "date": "2003-12-22",
+ "question": "Do Detroit Pistons and Indiana Pacers trade Bob Sura for Reggie Miller?",
+ "decider": "Detroit Pistons and Indiana Pacers front offices (engine draw)",
+ "options": {
+  "accept": 0.427707,
+  "decline": 0.572293
+ },
+ "basis": "gains on own objectives {'Detroit Pistons': 0.085, 'Indiana Pacers': 0.086}; acceptance {'Detroit Pistons': 0.651, 'Indiana Pacers': 0.657}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

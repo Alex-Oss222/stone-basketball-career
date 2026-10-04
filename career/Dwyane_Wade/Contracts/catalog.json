@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2003-12-21",
+  "as_of": "2003-12-22",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -3029,10 +3029,10 @@
     {
       "player_id": "mooremi01",
       "name": "Mikki Moore",
-      "team": "Atlanta Hawks",
-      "status": "on the 2003-04 roster; contract terms not in the dated records",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "New Jersey Nets",
+      "status": "under contract",
+      "current_contract_id": "mooremi01-2003-12-22",
+      "recorded_agreements": 2,
       "href": "players/mooremi01.html#contract"
     },
     {

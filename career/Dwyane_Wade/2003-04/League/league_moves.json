@@ -688,6 +688,46 @@
    "bbr_id": "barrybr01",
    "from": "Seattle SuperSonics",
    "to": "Los Angeles Lakers"
+  },
+  {
+   "id": "2003-04-market-2003-12-22-waive-greenwi01",
+   "date": "2003-12-22",
+   "kind": "waive",
+   "player": "Willie Green",
+   "bbr_id": "greenwi01",
+   "from": "Philadelphia 76ers",
+   "to": null,
+   "role": {
+    "player_id": "Willie Green",
+    "bbr_id": "greenwi01",
+    "position": "SG",
+    "games": 53,
+    "minutes": 767
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2003-12-24"
+  },
+  {
+   "id": "2003-04-market-2003-12-22-rest_of_season-cartema01",
+   "date": "2003-12-22",
+   "kind": "rest_of_season",
+   "player": "Maurice Carter",
+   "bbr_id": "cartema01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "role": {
+    "player_id": "Maurice Carter",
+    "bbr_id": "cartema01",
+    "position": "SG",
+    "games": 10,
+    "minutes": 110
+   },
+   "contract": {
+    "type": "rest_of_season",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.93 x fit"
   }
  ]
 }

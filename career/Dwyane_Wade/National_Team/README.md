@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2003-12-21](../assets/stat_reports/personal_2003-12-21.svg)
+![Player personal information and earned career awards through 2003-12-22](../assets/stat_reports/personal_2003-12-22.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -29,13 +29,14 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2003-12-21; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-12-22; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
 | Award | Period | Announced | Decision record |
 | --- | --- | --- | --- |
 | Eastern Conference Rookie of the Month | 2003-10-28 to 2003-11-30 | 2003-12-02 | [East ROM](../Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
+| Eastern Conference Player of the Week | 2003-12-15 to 2003-12-21 | 2003-12-22 | [East POW](../Stats_and_Awards/League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week) |
 
 ## Statistics
 
@@ -59,4 +60,4 @@ FIBA is the governing body; the World Cup, Olympic tournament, continental event
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2003-12-21, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2003-12-22, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.

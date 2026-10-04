@@ -1,0 +1,12 @@
+{
+ "date": "2003-12-22",
+ "decider": "Detroit Pistons and Indiana Pacers front offices (engine draw)",
+ "event_id": "2003-04-league-trade-2003-12-22-millere01-surabo01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.427707,
+  "decline": 0.572293
+ },
+ "outcome": "decline",
+ "question": "Do Detroit Pistons and Indiana Pacers trade Bob Sura for Reggie Miller?"
+}

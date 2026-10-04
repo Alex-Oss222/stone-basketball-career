@@ -1,0 +1,37 @@
+{
+ "id": "2003-04-league-trade-2003-12-22-bakervi01-roseja01",
+ "date": "2003-12-22",
+ "clubs": [
+  "Boston Celtics",
+  "New York Knicks"
+ ],
+ "a": {
+  "club": "Boston Celtics",
+  "sends": [
+   "Vin Baker"
+  ],
+  "bbr_ids": [
+   "bakervi01"
+  ],
+  "salary": 13500000
+ },
+ "b": {
+  "club": "New York Knicks",
+  "sends": [
+   "Jalen Rose"
+  ],
+  "bbr_ids": [
+   "roseja01"
+  ],
+  "salary": 13279750
+ },
+ "gain": {
+  "Boston Celtics": 0.089,
+  "New York Knicks": 0.109
+ },
+ "accept": {
+  "Boston Celtics": 0.674,
+  "New York Knicks": 0.773
+ },
+ "both": 0.521002
+}

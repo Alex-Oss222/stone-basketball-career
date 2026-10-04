@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-04-league-trade-2003-12-22-bakervi01-roseja01",
+ "date": "2003-12-22",
+ "question": "Do Boston Celtics and New York Knicks trade Vin Baker for Jalen Rose?",
+ "decider": "Boston Celtics and New York Knicks front offices (engine draw)",
+ "options": {
+  "accept": 0.521002,
+  "decline": 0.478998
+ },
+ "basis": "gains on own objectives {'Boston Celtics': 0.089, 'New York Knicks': 0.109}; acceptance {'Boston Celtics': 0.674, 'New York Knicks': 0.773}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

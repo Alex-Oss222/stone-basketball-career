@@ -1,0 +1,37 @@
+{
+ "id": "2003-04-league-trade-2003-12-22-millere01-surabo01",
+ "date": "2003-12-22",
+ "clubs": [
+  "Detroit Pistons",
+  "Indiana Pacers"
+ ],
+ "a": {
+  "club": "Detroit Pistons",
+  "sends": [
+   "Bob Sura"
+  ],
+  "bbr_ids": [
+   "surabo01"
+  ],
+  "salary": 6266666
+ },
+ "b": {
+  "club": "Indiana Pacers",
+  "sends": [
+   "Reggie Miller"
+  ],
+  "bbr_ids": [
+   "millere01"
+  ],
+  "salary": 5500000
+ },
+ "gain": {
+  "Detroit Pistons": 0.085,
+  "Indiana Pacers": 0.086
+ },
+ "accept": {
+  "Detroit Pistons": 0.651,
+  "Indiana Pacers": 0.657
+ },
+ "both": 0.427707
+}

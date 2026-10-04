@@ -1,0 +1,12 @@
+{
+ "date": "2003-12-22",
+ "decider": "Boston Celtics and New York Knicks front offices (engine draw)",
+ "event_id": "2003-04-league-trade-2003-12-22-bakervi01-roseja01",
+ "kind": "decision",
+ "options": {
+  "accept": 0.521002,
+  "decline": 0.478998
+ },
+ "outcome": "decline",
+ "question": "Do Boston Celtics and New York Knicks trade Vin Baker for Jalen Rose?"
+}
