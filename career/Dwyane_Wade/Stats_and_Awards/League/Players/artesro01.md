@@ -123,4 +123,8 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2003-12-03. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+Simulated 2003-04 honors and shortlist placings through 2003-12-03, from closed award decisions (1 won). Historical awards are not imported.
+
+| Award | Period | Announced | Result | Record |
+| --- | --- | --- | --- | --- |
+| East Player of the Month | 2003-10-28 to 2003-11-30 | 2003-12-02 | **Winner** | [Decision](../2003-04/11_November/League_Awards.md) |
