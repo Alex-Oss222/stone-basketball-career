@@ -124,7 +124,10 @@ def registry_names(root=ROOT):
     file keys a few players by a later name (Metta World Peace for the 2003-04 Ron Artest); records use the dated one."""
     from .rotations import load_rosters
     root = Path(root)
-    registry = json.loads((root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json").read_text(encoding="utf-8"))
+    path = root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json"
+    if not path.is_file():
+        return {}
+    registry = json.loads(path.read_text(encoding="utf-8"))
     by_bbr = {p["bbr_id"]: p["name"] for p in (registry["players"] if isinstance(registry, dict) else registry) if p.get("bbr_id")}
     out = {}
     for club in load_rosters(SEASON, root).values():
