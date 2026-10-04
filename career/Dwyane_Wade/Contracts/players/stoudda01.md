@@ -2,9 +2,9 @@
 
 # Contract | Damon Stoudamire
 
-Known through: 2003-12-18. [Open interactive contract](stoudda01.html#contract) · [Contract history](stoudda01.html#contract-history)
+Known through: 2003-12-19. [Open interactive contract](stoudda01.html#contract) · [Contract history](stoudda01.html#contract-history)
 
-Damon Stoudamire: under contract. Evidence cutoff: 2003-12-18.
+Damon Stoudamire: under contract. Evidence cutoff: 2003-12-19.
 
 ## Current contract
 

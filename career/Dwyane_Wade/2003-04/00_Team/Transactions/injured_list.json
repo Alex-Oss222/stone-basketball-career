@@ -57,7 +57,7 @@
   {
    "player": "Scott Padgett",
    "placed": "2003-12-09",
-   "activated": null,
+   "activated": "2003-12-19",
    "first_game_missed": "2003-12-09-phoenix-suns-at-miami-heat",
    "reason": "injury: 1 more game(s) out on the engine's draw",
    "minimum_games": 5
@@ -69,7 +69,15 @@
    "first_game_missed": "2003-12-14-miami-heat-at-toronto-raptors",
    "reason": "injury: 7 more game(s) out on the engine's draw",
    "minimum_games": 5
+  },
+  {
+   "player": "Udonis Haslem",
+   "placed": "2003-12-19",
+   "activated": null,
+   "first_game_missed": "2003-12-19-miami-heat-at-memphis-grizzlies",
+   "reason": "reserve: not among the twelve the staff dresses (2003-04 clubs listed healthy reserves on the injured list)",
+   "minimum_games": 5
   }
  ],
- "as_of": "2003-12-17"
+ "as_of": "2003-12-19"
 }

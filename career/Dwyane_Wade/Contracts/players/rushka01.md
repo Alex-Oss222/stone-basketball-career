@@ -2,9 +2,9 @@
 
 # Contract | Kareem Rush
 
-Known through: 2003-12-18. [Open interactive contract](rushka01.html#contract) · [Contract history](rushka01.html#contract-history)
+Known through: 2003-12-19. [Open interactive contract](rushka01.html#contract) · [Contract history](rushka01.html#contract-history)
 
-Kareem Rush: under rookie contract. Evidence cutoff: 2003-12-18.
+Kareem Rush: under rookie contract. Evidence cutoff: 2003-12-19.
 
 ## Current contract
 

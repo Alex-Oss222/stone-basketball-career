@@ -4,7 +4,7 @@
 
 ![Player career overview: professional identity, NBA regular-season statistics and playoff statistics](assets/career_overview.svg)
 
-![Earned professional awards through 2003-12-18](assets/stat_reports/awards_2003-12-18.svg)
+![Earned professional awards through 2003-12-19](assets/stat_reports/awards_2003-12-19.svg)
 
 [Professional identity](Professional_Identity.md) · [Career statistics](Stats_and_Awards/README.md) · [Earned awards](Awards.md) · [National team / FIBA](National_Team/README.md)
 
@@ -25,13 +25,13 @@
 
 NBA entry: 2003 draft, round 1, No. 5 overall, Miami Heat.
 
-Identity as of 2003-12-18; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-12-19; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 </details>
 
 ## Statistics
 
-Career cutoff: **2003-12-18**. Club competitions and national-team events have separate records.
+Career cutoff: **2003-12-19**. Club competitions and national-team events have separate records.
 
 ### NBA regular season
 
@@ -41,12 +41,12 @@ Career cutoff: **2003-12-18**. Club competitions and national-team events have s
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04](Stats_and_Awards/2003-04/README.md) | 19 | Miami Heat | NBA | SG / PG | 25 | 20 | 34.2 | 5.4 | 11.1 | .489 | 0.8 | 2.4 | .333 | 4.6 | 8.7 | .532 | .525 | 4.3 | 4.7 | .915 | 1.4 | 3.6 | 4.9 | 4.5 | 1.6 | 0.6 | 1.1 | 2.8 | 16.0 | .605 | [East ROM](Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
-| Career total | 19 | Miami Heat | NBA | SG / PG | 25 | 20 | 34.2 | 5.4 | 11.1 | .489 | 0.8 | 2.4 | .333 | 4.6 | 8.7 | .532 | .525 | 4.3 | 4.7 | .915 | 1.4 | 3.6 | 4.9 | 4.5 | 1.6 | 0.6 | 1.1 | 2.8 | 16.0 | .605 | [East ROM](Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
+| [2003-04](Stats_and_Awards/2003-04/README.md) | 19 | Miami Heat | NBA | SG / PG | 26 | 21 | 34.8 | 5.7 | 11.4 | .500 | 0.8 | 2.5 | .323 | 4.9 | 8.9 | .550 | .535 | 4.2 | 4.6 | .916 | 1.3 | 3.6 | 4.9 | 4.7 | 1.5 | 0.7 | 1.1 | 2.8 | 16.4 | .611 | [East ROM](Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
+| Career total | 19 | Miami Heat | NBA | SG / PG | 26 | 21 | 34.8 | 5.7 | 11.4 | .500 | 0.8 | 2.5 | .323 | 4.9 | 8.9 | .550 | .535 | 4.2 | 4.6 | .916 | 1.3 | 3.6 | 4.9 | 4.7 | 1.5 | 0.7 | 1.1 | 2.8 | 16.4 | .611 | [East ROM](Stats_and_Awards/League/2003-04/11_November/League_Awards.md#rookie-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2003-12-18, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2003-12-19, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### NBA playoffs
 
@@ -61,7 +61,7 @@ Awards are confirmed through 2003-12-18, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2003-12-18, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2003-12-19, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Browse
 

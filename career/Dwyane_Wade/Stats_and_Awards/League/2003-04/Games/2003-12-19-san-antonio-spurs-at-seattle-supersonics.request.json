@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-19-san-antonio-spurs-at-seattle-supersonics",
+ "game_date": "2003-12-19",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "San Antonio Spurs",
+  "rotation": "real"
+ }
+}

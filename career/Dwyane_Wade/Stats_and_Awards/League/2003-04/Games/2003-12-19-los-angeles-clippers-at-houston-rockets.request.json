@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-19-los-angeles-clippers-at-houston-rockets",
+ "game_date": "2003-12-19",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Houston Rockets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Los Angeles Clippers",
+  "rotation": "real"
+ }
+}

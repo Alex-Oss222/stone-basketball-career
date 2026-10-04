@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-19-new-york-knicks-at-toronto-raptors",
+ "game_date": "2003-12-19",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Toronto Raptors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New York Knicks",
+  "rotation": "real"
+ }
+}

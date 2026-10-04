@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-18**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-19**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -76,7 +76,7 @@ Card date: **2003-12-18**. 503 registry players, one Markdown card and one inter
 | [Mike James](jamesmi01.md) | Miami Heat | 28 | sourced | [open](jamesmi01.html) |
 | [Mike Wilks](wilksmi01.md) | Houston Rockets | 24 | sourced | [open](wilksmi01.html) |
 | [Milt Palacio](palacmi01.md) | Toronto Raptors | 25 | sourced | [open](palacmi01.html) |
-| [Mo Williams](willima01.md) | Utah Jazz | 20 | sourced | [open](willima01.html) |
+| [Mo Williams](willima01.md) | Utah Jazz | 21 | sourced | [open](willima01.html) |
 | [Moochie Norris](norrimo01.md) | Houston Rockets | 30 | sourced | [open](norrimo01.html) |
 | [Omar Cook](cookom01.md) | Portland Trail Blazers | None | silhouette | [open](cookom01.html) |
 | [Paccelis Morlende](morlepa01.md) | Seattle SuperSonics (draft rights) | 22 | sourced | [open](morlepa01.html) |
@@ -414,7 +414,7 @@ Card date: **2003-12-18**. 503 registry players, one Markdown card and one inter
 | [Stromile Swift](swiftst01.md) | Memphis Grizzlies | 24 | sourced | [open](swiftst01.html) |
 | [Szymon Szewczyk](szewcsz01.md) | Milwaukee Bucks (draft rights) | 20 | sourced | [open](szewcsz01.html) |
 | [Tim Duncan](duncati01.md) | San Antonio Spurs | 27 | sourced | [open](duncati01.html) |
-| [Tom Gugliotta](guglito01.md) | Phoenix Suns | 33 | sourced | [open](guglito01.html) |
+| [Tom Gugliotta](guglito01.md) | Phoenix Suns | 34 | sourced | [open](guglito01.html) |
 | [Tommy Smith](smithto03.md) | Chicago Bulls (draft rights) | 23 | silhouette | [open](smithto03.html) |
 | [Toni Kukoc](kukocto01.md) | Milwaukee Bucks | 35 | sourced | [open](kukocto01.html) |
 | [Torraye Braggs](braggto01.md) | Houston Rockets | None | silhouette | [open](braggto01.html) |
@@ -443,7 +443,7 @@ Card date: **2003-12-18**. 503 registry players, one Markdown card and one inter
 | [Andrew DeClercq](declean01.md) | Orlando Magic | 30 | silhouette | [open](declean01.html) |
 | [Anthony Mason](masonan01.md) | Milwaukee Bucks | 37 | silhouette | [open](masonan01.html) |
 | [Antonio Davis](davisan01.md) | Toronto Raptors | 35 | sourced | [open](davisan01.html) |
-| [Arvydas Sabonis](sabonar01.md) | Portland Trail Blazers | 38 | sourced | [open](sabonar01.html) |
+| [Arvydas Sabonis](sabonar01.md) | Portland Trail Blazers | 39 | sourced | [open](sabonar01.html) |
 | [Ben Handlogten](handlbe01.md) | Utah Jazz | None | silhouette | [open](handlbe01.html) |
 | [Ben Wallace](wallabe01.md) | Detroit Pistons | 29 | sourced | [open](wallabe01.html) |
 | [Bo Outlaw](outlabo01.md) | Memphis Grizzlies | 32 | sourced | [open](outlabo01.html) |
