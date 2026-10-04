@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-28**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-01-29**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -516,7 +516,7 @@ Card date: **2004-01-28**. 504 registry players, one Markdown card and one inter
 | [Michael Olowokandi](olowomi01.md) | Minnesota Timberwolves | None | silhouette | [open](olowomi01.html) |
 | [Mikki Moore](mooremi01.md) | New Jersey Nets | 28 | sourced | [open](mooremi01.html) |
 | [Nazr Mohammed](mohamna01.md) | Atlanta Hawks | 26 | sourced | [open](mohamna01.html) |
-| [Nedzad Sinanovic](sinanne01.md) | Portland Trail Blazers (draft rights) | 20 | sourced | [open](sinanne01.html) |
+| [Nedzad Sinanovic](sinanne01.md) | Portland Trail Blazers (draft rights) | 21 | sourced | [open](sinanne01.html) |
 | [Nene](hilarne01.md) | Denver Nuggets | 21 | sourced | [open](hilarne01.html) |
 | [Olden Polynice](polynol01.md) | Los Angeles Clippers | None | silhouette | [open](polynol01.html) |
 | [Oliver Miller](milleol01.md) | Minnesota Timberwolves | None | silhouette | [open](milleol01.html) |
