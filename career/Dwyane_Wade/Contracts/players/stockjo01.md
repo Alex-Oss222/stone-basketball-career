@@ -2,9 +2,9 @@
 
 # Contract | John Stockton
 
-Known through: 2004-01-22. [Open interactive contract](stockjo01.html#contract) · [Contract history](stockjo01.html#contract-history)
+Known through: 2004-01-23. [Open interactive contract](stockjo01.html#contract) · [Contract history](stockjo01.html#contract-history)
 
-John Stockton: expired or unresolved. Evidence cutoff: 2004-01-22.
+John Stockton: expired or unresolved. Evidence cutoff: 2004-01-23.
 
 ## Current contract
 

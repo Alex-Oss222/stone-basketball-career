@@ -2,9 +2,9 @@
 
 # Contract | Jermaine O'Neal
 
-Known through: 2004-01-22. [Open interactive contract](onealje01.html#contract) · [Contract history](onealje01.html#contract-history)
+Known through: 2004-01-23. [Open interactive contract](onealje01.html#contract) · [Contract history](onealje01.html#contract-history)
 
-Jermaine O'Neal: under contract. Evidence cutoff: 2004-01-22.
+Jermaine O'Neal: under contract. Evidence cutoff: 2004-01-23.
 
 ## Current contract
 

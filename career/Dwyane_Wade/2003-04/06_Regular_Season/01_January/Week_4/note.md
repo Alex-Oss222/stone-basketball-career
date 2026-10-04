@@ -14,4 +14,6 @@ days: 22-end
 
 ## Games and events
 
+- 2004-01-23: New Jersey Nets 84 at Miami Heat 85 — Miami Heat W 85-84 ([Game 1](Game_1.md), event `2004-01-23-new-jersey-nets-at-miami-heat`)
+
 ## Consequences
