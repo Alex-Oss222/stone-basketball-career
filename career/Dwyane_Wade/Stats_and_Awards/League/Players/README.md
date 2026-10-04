@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-27**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-01-28**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -102,7 +102,7 @@ Card date: **2004-01-27**. 504 registry players, one Markdown card and one inter
 | [T.J. Ford](fordtj01.md) | Milwaukee Bucks | 20 | sourced | [open](fordtj01.html) |
 | [Tierre Brown](brownti01.md) | New Orleans Hornets | 24 | silhouette | [open](brownti01.html) |
 | [Tim Hardaway](hardati01.md) | Indiana Pacers | 37 | sourced | [open](hardati01.html) |
-| [Tony Delk](delkto01.md) | Dallas Mavericks | 29 | sourced | [open](delkto01.html) |
+| [Tony Delk](delkto01.md) | Dallas Mavericks | 30 | sourced | [open](delkto01.html) |
 | [Tony Parker](parketo01.md) | San Antonio Spurs | 21 | sourced | [open](parketo01.html) |
 | [Travis Best](besttr01.md) | Dallas Mavericks | 31 | sourced | [open](besttr01.html) |
 | [Troy Bell](belltr01.md) | Memphis Grizzlies | 23 | silhouette | [open](belltr01.html) |
@@ -384,7 +384,7 @@ Card date: **2004-01-27**. 504 registry players, one Markdown card and one inter
 | [Marcus Haislip](haislma01.md) | Milwaukee Bucks | 23 | sourced | [open](haislma01.html) |
 | [Mario Austin](austima01.md) | Chicago Bulls (draft rights) | 21 | silhouette | [open](austima01.html) |
 | [Mark Bryant](bryanma01.md) | Boston Celtics | 38 | silhouette | [open](bryanma01.html) |
-| [Mark Madsen](madsema01.md) | Minnesota Timberwolves | 27 | sourced | [open](madsema01.html) |
+| [Mark Madsen](madsema01.md) | Minnesota Timberwolves | 28 | sourced | [open](madsema01.html) |
 | [Mark Pope](popema01.md) | Denver Nuggets | None | silhouette | [open](popema01.html) |
 | [Maurice Taylor](tayloma01.md) | Houston Rockets | None | silhouette | [open](tayloma01.html) |
 | [Mehmet Okur](okurme01.md) | Detroit Pistons | 24 | sourced | [open](okurme01.html) |

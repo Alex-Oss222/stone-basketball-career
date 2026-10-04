@@ -1851,6 +1851,61 @@
    "contract": null,
    "note": "cleared waivers from Minnesota Timberwolves: a free agent",
    "waiver": "2003-04-market-2004-01-25-waive-mcleoke01"
+  },
+  {
+   "id": "2003-04-market-2004-01-28-clear-packro01",
+   "date": "2004-01-28",
+   "kind": "clear",
+   "player": "Robert Pack",
+   "bbr_id": "packro01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Robert Pack",
+    "bbr_id": "packro01",
+    "position": "PG",
+    "games": 26,
+    "minutes": 220
+   },
+   "contract": null,
+   "note": "cleared waivers from New Jersey Nets: a free agent",
+   "waiver": "2003-04-market-2004-01-26-waive-packro01"
+  },
+  {
+   "id": "2003-04-market-2004-01-28-expire-harriad01",
+   "date": "2004-01-28",
+   "kind": "expire",
+   "player": "Adam Harrington",
+   "bbr_id": "harriad01",
+   "from": "Milwaukee Bucks",
+   "to": null,
+   "role": {
+    "player_id": "Adam Harrington",
+    "bbr_id": "harriad01",
+    "position": "SG",
+    "games": 19,
+    "minutes": 111
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-01-28-expire-brownda02",
+   "date": "2004-01-28",
+   "kind": "expire",
+   "player": "Damone Brown",
+   "bbr_id": "brownda02",
+   "from": "Portland Trail Blazers",
+   "to": null,
+   "role": {
+    "player_id": "Damone Brown",
+    "bbr_id": "brownda02",
+    "position": "PF",
+    "games": 3,
+    "minutes": 17
+   },
+   "contract": null,
+   "note": "10-day contract ended (3.9 minutes a game)"
   }
  ]
 }

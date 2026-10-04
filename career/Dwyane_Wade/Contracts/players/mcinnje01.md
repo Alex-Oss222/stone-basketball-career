@@ -2,9 +2,9 @@
 
 # Contract | Jeff McInnis
 
-Known through: 2004-01-27. [Open interactive contract](mcinnje01.html#contract) · [Contract history](mcinnje01.html#contract-history)
+Known through: 2004-01-28. [Open interactive contract](mcinnje01.html#contract) · [Contract history](mcinnje01.html#contract-history)
 
-Jeff McInnis: under contract. Evidence cutoff: 2004-01-27.
+Jeff McInnis: under contract. Evidence cutoff: 2004-01-28.
 
 ## Current contract
 

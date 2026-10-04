@@ -2,9 +2,9 @@
 
 # Contract | Shareef Abdur-Rahim
 
-Known through: 2004-01-27. [Open interactive contract](abdursh01.html#contract) · [Contract history](abdursh01.html#contract-history)
+Known through: 2004-01-28. [Open interactive contract](abdursh01.html#contract) · [Contract history](abdursh01.html#contract-history)
 
-Shareef Abdur-Rahim: under contract. Evidence cutoff: 2004-01-27.
+Shareef Abdur-Rahim: under contract. Evidence cutoff: 2004-01-28.
 
 ## Current contract
 
