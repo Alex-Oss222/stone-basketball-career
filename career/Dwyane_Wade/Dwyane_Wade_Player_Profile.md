@@ -51,7 +51,7 @@ UConn recruits him to play on the wing, defend and earn more responsibility with
 
 ### Freshman Season, 2000-01
 
-At 16, Wade enters an offense with older players ahead of him. He scores from cuts, transition and catches after the defense has already moved. He plays all 34 games, starts 24 and averages 13.2 points, 4.6 rebounds and 3.6 assists. UConn finishes 28-6 and reaches the Sweet 16.
+At 16, Wade enters an offense with older players ahead of him. He scores from cuts, transition and catches after the defense has already moved. He plays all 34 games, starts 24 and averages 15.5 points, 4.6 rebounds and 3.6 assists. UConn finishes 28-6 and reaches the Sweet 16.
 
 He can beat the first defender and make the nearby pass. The next decision takes longer. Against a second defender, he sometimes stops his dribble and waits for a teammate to rescue the possession. The staff uses him alongside another handler and lets him attack after the initial action.
 
@@ -59,11 +59,11 @@ He can beat the first defender and make the nearby pass. The next decision takes
 
 Wade starts all 30 games and handles more ball screens. Taliek Brown organizes the offense, Ben Gordon supplies shooting, and Wade takes possessions that require someone to get into the lane. Those responsibilities overlap. In smaller lineups, he also defends college wings.
 
-He averages 16.7 points and 4.8 assists. His free-throw percentage improves to 89.9, while his three-point percentage slips to 37.7 as he takes more difficult attempts. UConn goes 23-7 and again exits in the Sweet 16. Wade is becoming more useful with the ball, though the turnovers that do occur still tend to come when a second defender changes the first read.
+He averages 19.5 points and 4.8 assists. His free-throw percentage improves to 91.4, while his three-point percentage slips to 41.7 as he takes more difficult attempts. UConn goes 23-7 and again exits in the Sweet 16. Wade is becoming more useful with the ball, though the turnovers that do occur still tend to come when a second defender changes the first read.
 
 ### Junior Season, 2002-03
 
-Wade becomes UConn's leading scorer. Brown still brings order to the half-court offense, Gordon draws attention on the perimeter, and Emeka Okafor gives Wade a target rolling to the basket. Wade averages 24.3 points, 7.1 rebounds and 7.2 assists. He makes 76 of 184 threes and 199 of 210 free throws. He earns first-team All-Big East and second-team national All-America recognition in this simulation.
+Wade becomes UConn's leading scorer. Brown still brings order to the half-court offense, Gordon draws attention on the perimeter, and Emeka Okafor gives Wade a target rolling to the basket. Wade averages 28.4 points, 7.1 rebounds and 7.2 assists. He makes 92 of 199 threes and 219 of 227 free throws. He earns first-team All-Big East and second-team national All-America recognition in this simulation.
 
 UConn finishes 25-9 and reaches the Elite Eight. Michigan State ends the season with a 79-72 win. Wade scores 22 points on 8-for-20 shooting, with seven rebounds, four assists and six turnovers. Several of those turnovers come after he leaves the floor and finds the intended pass covered. He finishes his college career with seven NCAA Tournament wins in ten games.
 
@@ -205,17 +205,17 @@ Varsity totals: 2,241 points, 691 rebounds, 502 assists, 263 steals, 97 blocks a
 
 | Season | Age | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2000-01 | 16-17 | 34 | 28.4 | 13.2 | 4.6 | 3.6 | 1.3 | 0.9 | 1.2 |
-| 2001-02 | 17-18 | 30 | 34.1 | 16.7 | 5.4 | 4.8 | 2.1 | 1.2 | 1.2 |
-| 2002-03 | 18-19 | 34 | 35.0 | 24.3 | 7.1 | 7.2 | 2.2 | 1.4 | 1.2 |
-| Career | 16-19 | 98 | 32.4 | 18.1 | 5.7 | 5.2 | 1.9 | 1.2 | 1.2 |
+| 2000-01 | 16-17 | 34 | 28.4 | 15.5 | 4.6 | 3.6 | 1.3 | 0.9 | 1.2 |
+| 2001-02 | 17-18 | 30 | 34.1 | 19.5 | 5.4 | 4.8 | 2.1 | 1.2 | 1.2 |
+| 2002-03 | 18-19 | 34 | 35.0 | 28.4 | 7.1 | 7.2 | 2.2 | 1.4 | 1.2 |
+| Career | 16-19 | 98 | 32.4 | 21.2 | 5.7 | 5.2 | 1.9 | 1.2 | 1.2 |
 
 | Season | FGM/FGA | FG% | 3PM/3PA | 3P% | FTM/FTA | FT% | PTS |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2000-01 | 163/341 | 47.8 | 35/91 | 38.5 | 89/102 | 87.3 | 450 |
-| 2001-02 | 177/360 | 49.2 | 40/106 | 37.7 | 107/119 | 89.9 | 501 |
-| 2002-03 | 275/534 | 51.5 | 76/184 | 41.3 | 199/210 | 94.8 | 825 |
-| Career | 615/1235 | 49.8 | 151/381 | 39.6 | 395/431 | 91.6 | 1776 |
+| 2000-01 | 194/369 | 52.6 | 42/98 | 42.9 | 98/110 | 89.1 | 528 |
+| 2001-02 | 210/389 | 54.0 | 48/115 | 41.7 | 117/128 | 91.4 | 585 |
+| 2002-03 | 327/578 | 56.6 | 92/199 | 46.2 | 219/227 | 96.5 | 965 |
+| Career | 731/1336 | 54.7 | 182/412 | 44.2 | 434/465 | 93.3 | 2078 |
 
 | Season | Team record | NCAA finish | NCAA wins |
 | --- | --- | --- | --- |
@@ -224,15 +224,15 @@ Varsity totals: 2,241 points, 691 rebounds, 502 assists, 263 steals, 97 blocks a
 | 2002-03 | 25-9 | Elite Eight | 3 |
 | Total | 76-22 | 3 appearances | 7 |
 
-College totals: 1,776 points, 559 rebounds, 511 assists, 182 steals, 115 blocks and 118 turnovers. He makes 88 starts in 98 appearances and plays 3,178 minutes.
+College totals: 2,078 points, 559 rebounds, 511 assists, 182 steals, 115 blocks and 118 turnovers. He makes 88 starts in 98 appearances and plays 3,178 minutes.
 
 The 2003 NCAA Tournament is included in the junior totals. In four games he averages 26.0 points, 7.0 rebounds, 5.5 assists and 4.3 turnovers. He shoots 34-for-71 from the field, 9-for-26 from three and 27-for-31 at the line. His 17 turnovers include six in the Elite Eight loss.
 
 ### Junior Shooting and Ball Security
 
-His 275 field goals include 199 two-pointers on 350 attempts, or 56.9 percent. He takes 5.4 threes and 6.2 free throws per game. Three-point attempts account for 34.5 percent of his field-goal attempts; his free-throw attempt rate is 0.393. With 245 assists and 41 turnovers, his assist-to-turnover ratio is 5.98.
+His 327 field goals include 235 two-pointers on 379 attempts, or 62.0 percent. He takes 5.9 threes and 6.7 free throws per game. Three-point attempts account for 34.4 percent of his field-goal attempts; his free-throw attempt rate is 0.393. With 245 assists and 41 turnovers, his assist-to-turnover ratio is 5.98.
 
-Calculated from the same totals, his effective field-goal percentage is 58.6 and estimated true shooting is 65.9. Effective field-goal percentage adds half the made threes to field goals before dividing by attempts. True shooting divides points by twice the sum of field-goal attempts and 0.44 times free-throw attempts. These are calculations for the simulation record.
+Calculated from the same totals, his effective field-goal percentage is 64.5 and estimated true shooting is 71.2. Effective field-goal percentage adds half the made threes to field goals before dividing by attempts. True shooting divides points by twice the sum of field-goal attempts and 0.44 times free-throw attempts. These are calculations for the simulation record.
 
 Career averages use total production divided by total games. Percentages use total makes and attempts. Rounding to one decimal place can produce small differences when displayed averages are added. G means games; MPG means minutes per game; PPG, RPG, APG, SPG, BPG and TOV/G are points, rebounds, assists, steals, blocks and turnovers per game. Shooting columns show makes and attempts.
 
@@ -274,7 +274,7 @@ He expects to earn minutes and continue his education. He asks how a team plans 
 
 The strongest reasons to select him are his ability to reach the paint, finish through guard contact and find a teammate when the help commits. He can rebound and start a break. His weak-side blocks and deflections give him another way to change possession. Three college seasons provide a substantial record for a 19-year-old.
 
-The shooting improvement gives him a way to stay involved when another guard has the ball. His junior season produces 41.3 percent from three and 94.8 percent at the line. The college arc in 2003 is 19 feet 9 inches. NBA distance is 23'9" above the break and 22' in the corners.[^range] An NBA projection has to allow for that distance and for fewer easy catches against longer defenders.
+The shooting improvement gives him a way to stay involved when another guard has the ball. His junior season produces 46.2 percent from three and 96.5 percent at the line. The college arc in 2003 is 19 feet 9 inches. NBA distance is 23'9" above the break and 22' in the corners.[^range] An NBA projection has to allow for that distance and for fewer easy catches against longer defenders.
 
 The main offensive question is how well his regular-season control survives more aggressive pressure. His junior assist-to-turnover ratio is 5.98, but his NCAA Tournament turnover average rises to 4.3. That contrast gives teams a reason to test him against traps and changing coverages before giving him full-time point-guard duties immediately. His scoring and passing production are further along than his experience organizing every possession against NBA pressure.
 

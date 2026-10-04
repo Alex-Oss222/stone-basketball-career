@@ -31,6 +31,7 @@ LEGACY_ROOKIE_MODEL_VERSION = "rookie-2003.1"
 # All already played preseason and regular-season games predate this gate.
 SCOUTING_EFFECTIVE_FROM = "2003-11-12"
 PROSPECTS_PATH = Path("library/2003/league/nba_2003_prospect_stats.json")
+LEGACY_PROSPECTS_PATH = Path("library/2003/league/nba_2003_prospect_stats_2003_1.json")
 ROOKIE_PATH = Path("library/2003/league/nba_2003_rookie_estimates.json")
 LEGACY_ROOKIE_PATH = Path("library/2003/league/nba_2003_rookie_estimates_2003_1.json")
 VETERAN_PATH = Path("library/2003/league/nba_2003_veteran_ratings.json")
@@ -176,9 +177,12 @@ def build_rookie_estimates(prospects, prospects_hash, veterans, *, scouting=None
 
 def expected_rookie_estimates(root=ROOT, *, legacy=False):
     root = Path(root)
-    prospects, veterans = read_json(root / PROSPECTS_PATH), read_json(root / VETERAN_PATH)
+    source_path = LEGACY_PROSPECTS_PATH if legacy else PROSPECTS_PATH
+    prospects, veterans = read_json(root / source_path), read_json(root / VETERAN_PATH)
     if legacy:
-        return build_rookie_estimates(prospects, sha256(root / PROSPECTS_PATH), veterans, legacy=True)
+        # Keep the original logical source_file and hash in the archived artifact
+        # and closed packets; resolve those bytes from the immutable source copy.
+        return build_rookie_estimates(prospects, sha256(root / source_path), veterans, legacy=True)
     scouting = read_json(root / SCOUTING_PATH)
     validate_scouting(scouting, prospects, root)
     priors = position_rebound_priors(read_json(root / STATS_PATH), read_json(root / POSITION_PATH))

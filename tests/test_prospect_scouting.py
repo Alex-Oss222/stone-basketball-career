@@ -13,10 +13,10 @@ from runtime.game_runner import build_game_packet, freeze_inputs, run_game
 from runtime.kernel import (_Club, _expected_points, _pressure_turnover_adjustment,
                             _rebound_transition_chance, calibrate, team_errors, validate_result)
 from runtime.packets import canonical
-from runtime.player_stats import RATE_KEYS, STATS_PATH, load_rating_index, read_json
+from runtime.player_stats import RATE_KEYS, STATS_PATH, load_rating_index, read_json, sha256
 from runtime.prospect_scouting import (POSITION_PATH, SCOUTING_PATH, position_rebound_priors,
                                        style_errors, validate_scouting)
-from runtime.prospects import (LEGACY_ROOKIE_MODEL_VERSION, LEGACY_ROOKIE_PATH, PROSPECTS_PATH,
+from runtime.prospects import (LEGACY_PROSPECTS_PATH, LEGACY_ROOKIE_MODEL_VERSION, LEGACY_ROOKIE_PATH, PROSPECTS_PATH,
                                ROOKIE_MODEL_VERSION, ROOKIE_PATH, SCOUTING_EFFECTIVE_FROM,
                                VETERAN_PATH, build_rookie_estimates, expected_rookie_estimates)
 from runtime.spatial_shots import draw_spatial_shot, load_spatial_environment, zone_probabilities
@@ -51,10 +51,11 @@ class ScoutingEvidenceTests(unittest.TestCase):
         self.veterans = read_json(ROOT / VETERAN_PATH)
         self.current = expected_rookie_estimates(ROOT)
         self.legacy = expected_rookie_estimates(ROOT, legacy=True)
+        self.generic = build_rookie_estimates(self.prospects, "fixture", self.veterans, legacy=True)
 
     def test_unscouted_prospect_is_exactly_the_generic_translation(self):
         generic = build_rookie_estimates(self.prospects, "fixture", self.veterans)
-        self.assertEqual(generic["players"], self.legacy["players"])
+        self.assertEqual(generic["players"], self.generic["players"])
         empty = dict(self.scouting, players={})
         self.assertEqual(build_rookie_estimates(self.prospects, "fixture", self.veterans,
                                                scouting=empty)["players"], generic["players"])
@@ -69,7 +70,7 @@ class ScoutingEvidenceTests(unittest.TestCase):
             self.assertEqual(result["players"]["prospectxx01"][key], self.current["players"]["wadedw01"][key])
 
     def test_scouting_changes_only_supported_rates(self):
-        old = self.legacy["players"]["wadedw01"]["estimated"]
+        old = self.generic["players"]["wadedw01"]["estimated"]
         new = self.current["players"]["wadedw01"]["estimated"]
         affected = {"free_throw_attempt_rate", "offensive_rebound_pct", "defensive_rebound_pct"}
         for key in set(RATE_KEYS) - affected:
@@ -212,12 +213,39 @@ class ScoutingReplayTests(unittest.TestCase):
     def test_legacy_replay_does_not_require_new_model_files(self):
         old = load_rating_index("2003-11-11", "2003-04", ROOT).engine_profile("Dwyane Wade")
         exists = Path.exists
+        current_files = (ROOT / ROOKIE_PATH, ROOT / SCOUTING_PATH, ROOT / PROSPECTS_PATH)
         def without_current(path):
-            return False if path in (ROOT / ROOKIE_PATH, ROOT / SCOUTING_PATH) else exists(path)
-        with patch.object(Path, "exists", without_current):
+            return False if path in current_files else exists(path)
+        def read_legacy(path):
+            self.assertNotIn(Path(path), current_files)
+            return read_json(path)
+        with patch.object(Path, "exists", without_current), patch("runtime.prospects.read_json", side_effect=read_legacy):
             self.assertEqual(load_rating_index("2003-11-11", "2003-04", ROOT).engine_profile("Dwyane Wade"), old)
-            with self.assertRaisesRegex(ValueError, "missing dated rookie"):
-                load_rating_index(SCOUTING_EFFECTIVE_FROM, "2003-04", ROOT)
+
+    def test_legacy_source_is_separate_and_missing_or_changed_archive_fails_closed(self):
+        old = read_json(ROOT / LEGACY_ROOKIE_PATH)
+        self.assertEqual(old["source_sha256"], sha256(ROOT / LEGACY_PROSPECTS_PATH))
+        self.assertNotEqual(old["source_sha256"], sha256(ROOT / PROSPECTS_PATH))
+        exists = Path.exists
+        def without_archive(path):
+            return False if path == ROOT / LEGACY_PROSPECTS_PATH else exists(path)
+        with patch.object(Path, "exists", without_archive):
+            with self.assertRaisesRegex(ValueError, "missing dated prospect"):
+                load_rating_index("2003-11-11", "2003-04", ROOT)
+            load_rating_index(SCOUTING_EFFECTIVE_FROM, "2003-04", ROOT)
+        def changed_archive(path):
+            return "0" * 64 if Path(path) == ROOT / LEGACY_PROSPECTS_PATH else sha256(path)
+        with patch("runtime.player_stats.sha256", side_effect=changed_archive):
+            with self.assertRaisesRegex(ValueError, "stale"):
+                load_rating_index("2003-11-11", "2003-04", ROOT)
+            load_rating_index(SCOUTING_EFFECTIVE_FROM, "2003-04", ROOT)
+
+    def test_missing_dated_estimate_cannot_fall_back_to_neutral(self):
+        exists = Path.exists
+        for date, missing in (("2003-11-11", LEGACY_ROOKIE_PATH), (SCOUTING_EFFECTIVE_FROM, ROOKIE_PATH)):
+            with self.subTest(date=date), patch.object(Path, "exists", lambda path: False if path == ROOT / missing else exists(path)):
+                with self.assertRaisesRegex(ValueError, "missing dated rookie"):
+                    load_rating_index(date, "2003-04", ROOT)
 
     def test_legacy_archive_and_adoption_gate_preserve_the_same_development_draw(self):
         old = load_rating_index("2003-11-11", "2003-04", ROOT).engine_profile("Dwyane Wade")
@@ -229,9 +257,12 @@ class ScoutingReplayTests(unittest.TestCase):
         self.assertEqual(read_json(ROOT / LEGACY_ROOKIE_PATH), expected_rookie_estimates(ROOT, legacy=True))
         journal = Journal()
         refs = {"2003-04": journal.close_event(development_packet("wadedw01", "2003-04"))}
+        old_base, new_base = old["rates"]["three_point_pct"], new["rates"]["three_point_pct"]
         old, new = develop_profile(old, refs), develop_profile(new, refs)
         self.assertEqual(old["development"], new["development"])
-        self.assertEqual(old["rates"]["three_point_pct"], new["rates"]["three_point_pct"])
+        self.assertGreater(new["rates"]["three_point_pct"], old["rates"]["three_point_pct"])
+        self.assertAlmostEqual(old["rates"]["three_point_pct"] / old_base,
+                               new["rates"]["three_point_pct"] / new_base, places=14)
         self.assertEqual(len(journal.packets), 1)
 
     def test_pre_upgrade_wade_packet_hashes_are_unchanged(self):
