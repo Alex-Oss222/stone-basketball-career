@@ -257,7 +257,9 @@ class ArchitectureTests(unittest.TestCase):
         railway = json.loads((ROOT / "railway.json").read_text())
         self.assertEqual(railway["build"]["dockerfilePath"], "Dockerfile.engine")
         dockerfile = (ROOT / "Dockerfile.engine").read_text()
-        self.assertIn("unittest discover", dockerfile)
+        self.assertIn("RUN python scripts/run_tests.py", dockerfile)            # the whole suite gates the image
+        runner = (ROOT / "scripts/run_tests.py").read_text()
+        self.assertIn('glob("test_*.py")', runner)                               # every test module, none skipped
         self.assertIn("COPY --from=verify /app/career/ career/", dockerfile)
         self.assertNotIn("ENGINE_API_TOKEN=", dockerfile)
 
