@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-18-san-antonio-spurs-at-boston-celtics",
+ "game_date": "2004-01-18",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "San Antonio Spurs",
+  "rotation": "real"
+ }
+}

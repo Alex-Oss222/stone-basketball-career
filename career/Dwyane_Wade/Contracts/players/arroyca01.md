@@ -2,9 +2,9 @@
 
 # Contract | Carlos Arroyo
 
-Known through: 2004-01-17. [Open interactive contract](arroyca01.html#contract) · [Contract history](arroyca01.html#contract-history)
+Known through: 2004-01-18. [Open interactive contract](arroyca01.html#contract) · [Contract history](arroyca01.html#contract-history)
 
-Carlos Arroyo: under contract. Evidence cutoff: 2004-01-17.
+Carlos Arroyo: under contract. Evidence cutoff: 2004-01-18.
 
 ## Current contract
 

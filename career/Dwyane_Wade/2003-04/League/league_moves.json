@@ -1464,6 +1464,104 @@
     "salary": "pro-rated minimum"
    },
    "note": ""
+  },
+  {
+   "id": "2003-04-market-2004-01-18-expire-harriad01",
+   "date": "2004-01-18",
+   "kind": "expire",
+   "player": "Adam Harrington",
+   "bbr_id": "harriad01",
+   "from": "Dallas Mavericks",
+   "to": null,
+   "role": {
+    "player_id": "Adam Harrington",
+    "bbr_id": "harriad01",
+    "position": "SG",
+    "games": 19,
+    "minutes": 111
+   },
+   "contract": null,
+   "note": "10-day contract ended"
+  },
+  {
+   "id": "2003-04-market-2004-01-18-expire-brownda02",
+   "date": "2004-01-18",
+   "kind": "expire",
+   "player": "Damone Brown",
+   "bbr_id": "brownda02",
+   "from": "Los Angeles Lakers",
+   "to": null,
+   "role": {
+    "player_id": "Damone Brown",
+    "bbr_id": "brownda02",
+    "position": "PF",
+    "games": 3,
+    "minutes": 17
+   },
+   "contract": null,
+   "note": "10-day contract ended"
+  },
+  {
+   "id": "2003-04-market-2004-01-18-waive-jacksma01",
+   "date": "2004-01-18",
+   "kind": "waive",
+   "player": "Mark Jackson",
+   "bbr_id": "jacksma01",
+   "from": "Milwaukee Bucks",
+   "to": null,
+   "role": {
+    "player_id": "Mark Jackson",
+    "bbr_id": "jacksma01",
+    "position": "PG",
+    "games": 42,
+    "minutes": 577
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-01-20"
+  },
+  {
+   "id": "2003-04-market-2004-01-18-ten_day-harriad01",
+   "date": "2004-01-18",
+   "kind": "ten_day",
+   "player": "Adam Harrington",
+   "bbr_id": "harriad01",
+   "from": null,
+   "to": "Milwaukee Bucks",
+   "role": {
+    "player_id": "Adam Harrington",
+    "bbr_id": "harriad01",
+    "position": "SG",
+    "games": 19,
+    "minutes": 111
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-28",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.39 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-18-ten_day-brownda02",
+   "date": "2004-01-18",
+   "kind": "ten_day",
+   "player": "Damone Brown",
+   "bbr_id": "brownda02",
+   "from": null,
+   "to": "Portland Trail Blazers",
+   "role": {
+    "player_id": "Damone Brown",
+    "bbr_id": "brownda02",
+    "position": "PF",
+    "games": 3,
+    "minutes": 17
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-28",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.32 x fit"
   }
  ]
 }
