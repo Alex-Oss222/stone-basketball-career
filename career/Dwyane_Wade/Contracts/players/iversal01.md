@@ -2,9 +2,9 @@
 
 # Contract | Allen Iverson
 
-Known through: 2003-12-15. [Open interactive contract](iversal01.html#contract) · [Contract history](iversal01.html#contract-history)
+Known through: 2003-12-16. [Open interactive contract](iversal01.html#contract) · [Contract history](iversal01.html#contract-history)
 
-Allen Iverson: under contract. Evidence cutoff: 2003-12-15.
+Allen Iverson: under contract. Evidence cutoff: 2003-12-16.
 
 ## Current contract
 

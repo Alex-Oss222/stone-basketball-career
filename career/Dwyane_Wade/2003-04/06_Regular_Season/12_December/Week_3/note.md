@@ -14,4 +14,6 @@ days: 15-21
 
 ## Games and events
 
+- 2003-12-16: Atlanta Hawks 76 at Miami Heat 103 — Miami Heat W 103-76 ([Game 1](Game_1.md), event `2003-12-16-atlanta-hawks-at-miami-heat`)
+
 ## Consequences

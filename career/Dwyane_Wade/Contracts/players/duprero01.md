@@ -2,9 +2,9 @@
 
 # Contract | Ronald Dupree
 
-Known through: 2003-12-15. [Open interactive contract](duprero01.html#contract) · [Contract history](duprero01.html#contract-history)
+Known through: 2003-12-16. [Open interactive contract](duprero01.html#contract) · [Contract history](duprero01.html#contract-history)
 
-Ronald Dupree: No verified contract record. Evidence cutoff: 2003-12-15.
+Ronald Dupree: No verified contract record. Evidence cutoff: 2003-12-16.
 
 ## Current contract
 

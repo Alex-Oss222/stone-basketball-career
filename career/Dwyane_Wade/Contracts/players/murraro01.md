@@ -2,9 +2,9 @@
 
 # Contract | Ronald Murray
 
-Known through: 2003-12-15. [Open interactive contract](murraro01.html#contract) · [Contract history](murraro01.html#contract-history)
+Known through: 2003-12-16. [Open interactive contract](murraro01.html#contract) · [Contract history](murraro01.html#contract-history)
 
-Ronald Murray: minimum contract unverified. Evidence cutoff: 2003-12-15.
+Ronald Murray: minimum contract unverified. Evidence cutoff: 2003-12-16.
 
 ## Current contract
 

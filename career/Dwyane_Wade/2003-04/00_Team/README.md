@@ -8,7 +8,7 @@
 
 <!-- team-status:start -->
 
-**Status on 2003-12-15** (generated from dated records): Miami 8-15, 13th in the East ([standings](../../../../career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Standings.md)). 15 players under contract, 3 on the injured list. Head coach Erik Spoelstra; the staff rotation in force and the register are in [Team](Team/README.md).
+**Status on 2003-12-16** (generated from dated records): Miami 9-15, 10th in the East ([standings](../../../../career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Standings.md)). 15 players under contract, 3 on the injured list. Head coach Erik Spoelstra; the staff rotation in force and the register are in [Team](Team/README.md).
 
 <!-- team-status:end -->
 

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-15**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-16**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -343,7 +343,7 @@ Card date: **2003-12-15**. 503 registry players, one Markdown card and one inter
 | [Chris Wilcox](wilcoch01.md) | Los Angeles Clippers | 21 | sourced | [open](wilcoch01.html) |
 | [Christian Laettner](laettch01.md) | Washington Wizards | 34 | sourced | [open](laettch01.html) |
 | [Clarence Weatherspoon](weathcl01.md) | New York Knicks | 33 | sourced | [open](weathcl01.html) |
-| [Clifford Robinson](robincl02.md) | Golden State Warriors | 36 | silhouette | [open](robincl02.html) |
+| [Clifford Robinson](robincl02.md) | Golden State Warriors | 37 | silhouette | [open](robincl02.html) |
 | [Damone Brown](brownda02.md) | New Jersey Nets | None | silhouette | [open](brownda02.html) |
 | [Danny Fortson](fortsda01.md) | Dallas Mavericks | 27 | sourced | [open](fortsda01.html) |
 | [Danny Manning](mannida01.md) | Detroit Pistons | 37 | sourced | [open](mannida01.html) |

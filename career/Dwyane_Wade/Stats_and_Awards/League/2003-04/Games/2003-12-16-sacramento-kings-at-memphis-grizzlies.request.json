@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-16-sacramento-kings-at-memphis-grizzlies",
+ "game_date": "2003-12-16",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Memphis Grizzlies",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ }
+}

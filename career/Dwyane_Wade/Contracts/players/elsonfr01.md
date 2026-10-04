@@ -2,9 +2,9 @@
 
 # Contract | Francisco Elson
 
-Known through: 2003-12-15. [Open interactive contract](elsonfr01.html#contract) · [Contract history](elsonfr01.html#contract-history)
+Known through: 2003-12-16. [Open interactive contract](elsonfr01.html#contract) · [Contract history](elsonfr01.html#contract-history)
 
-Francisco Elson: No verified contract record. Evidence cutoff: 2003-12-15.
+Francisco Elson: No verified contract record. Evidence cutoff: 2003-12-16.
 
 ## Current contract
 

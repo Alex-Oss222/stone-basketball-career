@@ -2,9 +2,9 @@
 
 # Contract | Stephen Jackson
 
-Known through: 2003-12-15. [Open interactive contract](jacksst02.html#contract) · [Contract history](jacksst02.html#contract-history)
+Known through: 2003-12-16. [Open interactive contract](jacksst02.html#contract) · [Contract history](jacksst02.html#contract-history)
 
-Stephen Jackson: camp contract. Evidence cutoff: 2003-12-15.
+Stephen Jackson: camp contract. Evidence cutoff: 2003-12-16.
 
 ## Current contract
 

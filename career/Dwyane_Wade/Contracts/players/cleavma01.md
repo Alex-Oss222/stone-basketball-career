@@ -2,9 +2,9 @@
 
 # Contract | Mateen Cleaves
 
-Known through: 2003-12-15. [Open interactive contract](cleavma01.html#contract) · [Contract history](cleavma01.html#contract-history)
+Known through: 2003-12-16. [Open interactive contract](cleavma01.html#contract) · [Contract history](cleavma01.html#contract-history)
 
-Mateen Cleaves: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-15.
+Mateen Cleaves: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-16.
 
 ## Current contract
 

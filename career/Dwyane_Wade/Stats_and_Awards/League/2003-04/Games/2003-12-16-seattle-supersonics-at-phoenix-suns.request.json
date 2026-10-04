@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-16-seattle-supersonics-at-phoenix-suns",
+ "game_date": "2003-12-16",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Seattle SuperSonics",
+  "rotation": "real"
+ }
+}
