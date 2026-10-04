@@ -70,6 +70,13 @@ def pin(root):
     for card in (root / SEASON / "00_Team/Team/Player_Cards").glob("*.md"):
         if card.name not in ("README.md", "TEMPLATE.md") and card.stem not in ids:
             card.unlink()                        # personnel cards of players who joined after the checkpoint
+        elif card.name not in ("README.md", "TEMPLATE.md"):
+            # A checkpoint player's card keeps no row sourced from a game the fixture removed (an injury, say).
+            text = card.read_text(encoding="utf-8")
+            kept = [line for line in text.splitlines(keepends=True)
+                    if "06_Regular_Season/" not in line and "05_Preseason/Game_" not in line]
+            if len(kept) != len(text.splitlines(keepends=True)):
+                card.write_text("".join(kept), encoding="utf-8")
     state_path = root / SEASON / "current_state.json"
     state = json.loads(state_path.read_text(encoding="utf-8"))
     assert state["current_date"] == CHECKPOINT, state["current_date"]
