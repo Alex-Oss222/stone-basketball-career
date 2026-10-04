@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2003-12-31",
+  "as_of": "2004-01-01",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -23,8 +23,8 @@
     {
       "player_id": "harriad01",
       "name": "Adam Harrington",
-      "team": "Abroad",
-      "status": "playing outside the NBA (researched, 2003-11-20)",
+      "team": "Free agent",
+      "status": "unsigned free agent (researched, 2003-12)",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/harriad01.html#contract"
@@ -3893,8 +3893,8 @@
     {
       "player_id": "parkesm01",
       "name": "Smush Parker",
-      "team": "Free agent",
-      "status": "unsigned free agent (researched, 2003-11)",
+      "team": "Abroad",
+      "status": "playing outside the NBA (researched, 2003-12)",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/parkesm01.html#contract"

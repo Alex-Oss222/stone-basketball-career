@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2003-12-31. [Search the contract directory](index.html)
+Known through 2004-01-01. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -10,7 +10,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | --- | --- | --- | --- | --- |
 | [Aaron McKie](players/mckieaa01.md) | Philadelphia 76ers | under contract | Aaron McKie · existing contract; signing date not recorded | 1 |
 | [Aaron Williams](players/williaa01.md) | New Jersey Nets | under contract | Aaron Williams · existing contract; signing date not recorded | 1 |
-| [Adam Harrington](players/harriad01.md) | Abroad | playing outside the NBA (researched, 2003-11-20) | No verified current agreement | 1 |
+| [Adam Harrington](players/harriad01.md) | Free agent | unsigned free agent (researched, 2003-12) | No verified current agreement | 1 |
 | [Adonal Foyle](players/foylead01.md) | Golden State Warriors | under contract | Adonal Foyle · existing contract; signing date not recorded | 1 |
 | [Adrian Griffin](players/griffad01.md) | Houston Rockets | under contract | Adrian Griffin · 2003-08-07 | 2 |
 | [Al Harrington](players/harrial01.md) | Indiana Pacers | under contract | Al Harrington · 2001-11-01 | 1 |
@@ -440,7 +440,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Shawn Marion](players/mariosh01.md) | Phoenix Suns | under contract unverified | No verified current agreement | 0 |
 | [Slava Medvedenko](players/medvest01.md) | Los Angeles Lakers | under contract | Slava Medvedenko · 2002-07-26 | 1 |
 | [Slavko Vranes](players/vranesl01.md) | New York Knicks | No verified contract record | No verified current agreement | 0 |
-| [Smush Parker](players/parkesm01.md) | Free agent | unsigned free agent (researched, 2003-11) | No verified current agreement | 1 |
+| [Smush Parker](players/parkesm01.md) | Abroad | playing outside the NBA (researched, 2003-12) | No verified current agreement | 1 |
 | [Sofoklis Schortsanitis](players/schorso01.md) | Los Angeles Clippers | No verified contract record | No verified current agreement | 0 |
 | [Speedy Claxton](players/claxtsp01.md) | Golden State Warriors | under contract | Speedy Claxton · 2003-07-23 | 2 |
 | [Stacey Augmon](players/augmost01.md) | New Orleans Hornets | under contract | Stacey Augmon · existing contract; signing date not recorded | 1 |

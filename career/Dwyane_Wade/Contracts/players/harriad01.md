@@ -2,9 +2,9 @@
 
 # Contract | Adam Harrington
 
-Known through: 2003-12-31. [Open interactive contract](harriad01.html#contract) · [Contract history](harriad01.html#contract-history)
+Known through: 2004-01-01. [Open interactive contract](harriad01.html#contract) · [Contract history](harriad01.html#contract-history)
 
-Adam Harrington: playing outside the NBA (researched, 2003-11-20). Evidence cutoff: 2003-12-31.
+Adam Harrington: unsigned free agent (researched, 2003-12). Evidence cutoff: 2004-01-01.
 
 ## Current contract
 
@@ -17,8 +17,8 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Adam Harrington |
-| Club / rights baseline | Abroad |
-| Control status | playing outside the NBA (researched, 2003-11-20) |
+| Club / rights baseline | Free agent |
+| Control status | unsigned free agent (researched, 2003-12) |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | playing outside the NBA (researched, 2003-11-20) |
+| Status | unsigned free agent (researched, 2003-12) |
 | Contract wording | Not recorded |
 
 ### Salary by season

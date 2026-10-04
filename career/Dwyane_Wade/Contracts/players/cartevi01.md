@@ -2,9 +2,9 @@
 
 # Contract | Vince Carter
 
-Known through: 2003-12-31. [Open interactive contract](cartevi01.html#contract) · [Contract history](cartevi01.html#contract-history)
+Known through: 2004-01-01. [Open interactive contract](cartevi01.html#contract) · [Contract history](cartevi01.html#contract-history)
 
-Vince Carter: under contract. Evidence cutoff: 2003-12-31.
+Vince Carter: under contract. Evidence cutoff: 2004-01-01.
 
 ## Current contract
 

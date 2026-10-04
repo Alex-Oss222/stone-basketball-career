@@ -1,6 +1,6 @@
 # 2003-04 standings
 
-Through 2003-12-31, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2004-01-01, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 

@@ -2,9 +2,9 @@
 
 # Contract | Jason Collier
 
-Known through: 2003-12-31. [Open interactive contract](collija02.html#contract) · [Contract history](collija02.html#contract-history)
+Known through: 2004-01-01. [Open interactive contract](collija02.html#contract) · [Contract history](collija02.html#contract-history)
 
-Jason Collier: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2003-12-31.
+Jason Collier: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-01-01.
 
 ## Current contract
 
