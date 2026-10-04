@@ -2,9 +2,9 @@
 
 # Contract | Christian Laettner
 
-Known through: 2004-02-25. [Open interactive contract](laettch01.html#contract) · [Contract history](laettch01.html#contract-history)
+Known through: 2004-02-26. [Open interactive contract](laettch01.html#contract) · [Contract history](laettch01.html#contract-history)
 
-Christian Laettner: under contract. Evidence cutoff: 2004-02-25.
+Christian Laettner: under contract. Evidence cutoff: 2004-02-26.
 
 ## Current contract
 

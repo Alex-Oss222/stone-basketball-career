@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-25**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-26**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -95,7 +95,7 @@ Card date: **2004-02-25**. 504 registry players, one Markdown card and one inter
 | [Smush Parker](parkesm01.md) | Cleveland Cavaliers | 22 | sourced | [open](parkesm01.html) |
 | [Speedy Claxton](claxtsp01.md) | Golden State Warriors | 25 | sourced | [open](claxtsp01.html) |
 | [Stephon Marbury](marbust01.md) | Phoenix Suns | 27 | sourced | [open](marbust01.html) |
-| [Steve Blake](blakest01.md) | Washington Wizards | 23 | sourced | [open](blakest01.html) |
+| [Steve Blake](blakest01.md) | Washington Wizards | 24 | sourced | [open](blakest01.html) |
 | [Steve Francis](francst01.md) | Houston Rockets | 27 | sourced | [open](francst01.html) |
 | [Steve Kerr](kerrst01.md) | San Antonio Spurs | 38 | sourced | [open](kerrst01.html) |
 | [Steve Nash](nashst01.md) | Dallas Mavericks | 30 | sourced | [open](nashst01.html) |
@@ -168,7 +168,7 @@ Card date: **2004-02-25**. 504 registry players, one Markdown card and one inter
 | [Keyon Dooling](doolike01.md) | Los Angeles Clippers | 23 | sourced | [open](doolike01.html) |
 | [Kobe Bryant](bryanko01.md) | Los Angeles Lakers | 25 | sourced | [open](bryanko01.html) |
 | [Kyle Korver](korveky01.md) | Philadelphia 76ers | 22 | sourced | [open](korveky01.html) |
-| [Lavor Postell](postela01.md) | New York Knicks | 25 | sourced | [open](postela01.html) |
+| [Lavor Postell](postela01.md) | New York Knicks | 26 | sourced | [open](postela01.html) |
 | [Leandro Barbosa](barbole01.md) | Phoenix Suns | 21 | sourced | [open](barbole01.html) |
 | [Lucious Harris](harrilu01.md) | New Jersey Nets | 33 | silhouette | [open](harrilu01.html) |
 | [Manu Ginobili](ginobma01.md) | San Antonio Spurs | 26 | sourced | [open](ginobma01.html) |
@@ -299,7 +299,7 @@ Card date: **2004-02-25**. 504 registry players, one Markdown card and one inter
 | [Tayshaun Prince](princta01.md) | Detroit Pistons | 23 | sourced | [open](princta01.html) |
 | [Terence Morris](morrite01.md) | Houston Rockets | 25 | sourced | [open](morrite01.html) |
 | [Theron Smith](smithth01.md) | Memphis Grizzlies | None | silhouette | [open](smithth01.html) |
-| [Tim Thomas](thomati01.md) | Milwaukee Bucks | 26 | sourced | [open](thomati01.html) |
+| [Tim Thomas](thomati01.md) | Milwaukee Bucks | 27 | sourced | [open](thomati01.html) |
 | [Tracy Murray](murratr01.md) | Portland Trail Blazers | None | silhouette | [open](murratr01.html) |
 | [Travis Outlaw](outlatr01.md) | Portland Trail Blazers | 19 | sourced | [open](outlatr01.html) |
 | [Tremaine Fowlkes](fowlktr01.md) | Los Angeles Clippers | 27 | silhouette | [open](fowlktr01.html) |
@@ -382,7 +382,7 @@ Card date: **2004-02-25**. 504 registry players, one Markdown card and one inter
 | [Malik Allen](allenma01.md) | Free agent | 25 | sourced | [open](allenma01.html) |
 | [Malik Rose](rosema01.md) | San Antonio Spurs | 29 | sourced | [open](rosema01.html) |
 | [Marcus Haislip](haislma01.md) | Milwaukee Bucks | 23 | sourced | [open](haislma01.html) |
-| [Mario Austin](austima01.md) | Chicago Bulls (draft rights) | 21 | silhouette | [open](austima01.html) |
+| [Mario Austin](austima01.md) | Chicago Bulls (draft rights) | 22 | silhouette | [open](austima01.html) |
 | [Mark Bryant](bryanma01.md) | Boston Celtics | 38 | silhouette | [open](bryanma01.html) |
 | [Mark Madsen](madsema01.md) | Minnesota Timberwolves | 28 | sourced | [open](madsema01.html) |
 | [Mark Pope](popema01.md) | Denver Nuggets | None | silhouette | [open](popema01.html) |

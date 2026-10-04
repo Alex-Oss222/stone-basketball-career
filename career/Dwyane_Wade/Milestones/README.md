@@ -2,7 +2,7 @@
 
 # Dwyane Wade | Live milestones
 
-Career date: 2004-02-25. [Open the detailed milestone desk](index.html).
+Career date: 2004-02-26. [Open the detailed milestone desk](index.html).
 
 These are current career views, with activation gates and actual evidence. An inactive view does not imply its event occurred.
 
