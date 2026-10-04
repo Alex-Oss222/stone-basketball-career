@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `austima01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-02-07 · **Club on this date:** Chicago Bulls (draft rights) · **Basis:** 2003 draft rights · **League:** NBA  
+**Card date:** 2004-02-08 · **Club on this date:** Chicago Bulls (draft rights) · **Basis:** 2003 draft rights · **League:** NBA  
 **Position:** PF (Power forward) · **Jersey:** Unassigned · **Born:** 1982-02-26 · **Age on card date:** 21  
 **Registry ID:** `austima01` · [Basketball-Reference page](https://www.basketball-reference.com/players/a/austima01.html) · ESPN ID 1988
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `austim
 
 ## Simulated statistics
 
-As of **2004-02-07**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-02-08**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -118,4 +118,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2004-02-07. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2004-02-08. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

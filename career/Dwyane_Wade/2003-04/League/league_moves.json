@@ -2041,6 +2041,46 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.77 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-02-08-waive-korveky01",
+   "date": "2004-02-08",
+   "kind": "waive",
+   "player": "Kyle Korver",
+   "bbr_id": "korveky01",
+   "from": "Philadelphia 76ers",
+   "to": null,
+   "role": {
+    "player_id": "Kyle Korver",
+    "bbr_id": "korveky01",
+    "position": "SF",
+    "games": 74,
+    "minutes": 882
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-02-10"
+  },
+  {
+   "id": "2003-04-market-2004-02-08-ten_day-harriad01",
+   "date": "2004-02-08",
+   "kind": "ten_day",
+   "player": "Adam Harrington",
+   "bbr_id": "harriad01",
+   "from": null,
+   "to": "Philadelphia 76ers",
+   "role": {
+    "player_id": "Adam Harrington",
+    "bbr_id": "harriad01",
+    "position": "SG",
+    "games": 19,
+    "minutes": 111
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-02-18",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.81 x fit"
   }
  ]
 }

@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2004-02-07](../../../../assets/stat_reports/personal_2004-02-07.svg)
+![Player personal information and earned career awards through 2004-02-08](../../../../assets/stat_reports/personal_2004-02-08.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2004-02-07; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-02-08; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -47,7 +47,7 @@ Identity as of 2004-02-07; status snapshot dated 2003-12-01. User-established al
 
 ## Statistics
 
-As of **2004-02-07**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2004-02-08**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -65,7 +65,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-02-07, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-02-08, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](Stat_Detail.md)
 
@@ -78,13 +78,13 @@ Awards are confirmed through 2004-02-07, filed by the honor's period-end date; t
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | This week | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [Previous week](../Week_2/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Month through this week | 20 | Miami Heat | NBA | SG / PG | 3 | 3 | 37.4 | 7.7 | 13.7 | .561 | 2.7 | 4.0 | .667 | 5.0 | 9.7 | .517 | .659 | 4.0 | 4.7 | .857 | 1.0 | 3.0 | 4.0 | 2.7 | 1.7 | 1.7 | 0.0 | 3.0 | 22.0 | .700 | — |
-| Season through this week | 20 | Miami Heat | NBA | SG / PG | 51 | 46 | 34.7 | 5.9 | 11.7 | .506 | 1.0 | 2.5 | .389 | 5.0 | 9.2 | .537 | .547 | 4.8 | 5.4 | .901 | 1.3 | 3.4 | 4.7 | 4.6 | 1.6 | 0.9 | 1.1 | 2.9 | 17.6 | .627 | [East ROM](../../../League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](../../../League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week), [East POM](../../../League/2003-04/12_December/League_Awards.md#player-of-the-month), [East ROM](../../../League/2003-04/12_December/League_Awards.md#rookie-of-the-month), [East POW](../../../League/2003-04/01_January/Week_1/League_Awards.md#player-of-the-week), [East POM](../../../League/2003-04/01_January/League_Awards.md#player-of-the-month), [East ROM](../../../League/2003-04/01_January/League_Awards.md#rookie-of-the-month) |
+| [Previous week](../Week_2/README.md) | 20 | Miami Heat | NBA | SG / PG | 1 | 1 | 35.5 | 7.0 | 12.0 | .583 | 2.0 | 5.0 | .400 | 5.0 | 7.0 | .714 | .667 | 2.0 | 2.0 | 1.000 | 1.0 | 1.0 | 2.0 | 3.0 | 0.0 | 1.0 | 2.0 | 5.0 | 18.0 | .699 | — |
+| Month through this week | 20 | Miami Heat | NBA | SG / PG | 4 | 4 | 36.9 | 7.5 | 13.2 | .566 | 2.5 | 4.2 | .588 | 5.0 | 9.0 | .556 | .660 | 3.5 | 4.0 | .875 | 1.0 | 2.5 | 3.5 | 2.8 | 1.2 | 1.5 | 0.5 | 3.5 | 21.0 | .700 | — |
+| Season through this week | 20 | Miami Heat | NBA | SG / PG | 52 | 47 | 34.8 | 5.9 | 11.7 | .507 | 1.0 | 2.5 | .389 | 5.0 | 9.2 | .540 | .549 | 4.8 | 5.3 | .902 | 1.3 | 3.3 | 4.7 | 4.6 | 1.6 | 0.9 | 1.1 | 2.9 | 17.7 | .628 | [East ROM](../../../League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](../../../League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week), [East POM](../../../League/2003-04/12_December/League_Awards.md#player-of-the-month), [East ROM](../../../League/2003-04/12_December/League_Awards.md#rookie-of-the-month), [East POW](../../../League/2003-04/01_January/Week_1/League_Awards.md#player-of-the-week), [East POM](../../../League/2003-04/01_January/League_Awards.md#player-of-the-month), [East ROM](../../../League/2003-04/01_January/League_Awards.md#rookie-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-02-07, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-02-08, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
