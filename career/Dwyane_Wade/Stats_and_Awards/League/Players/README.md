@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-24**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-25**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -40,7 +40,7 @@ Card date: **2004-02-24**. 504 registry players, one Markdown card and one inter
 | [Earl Watson](watsoea01.md) | Memphis Grizzlies | 24 | sourced | [open](watsoea01.html) |
 | [Eddie Gill](gilled01.md) | Portland Trail Blazers | None | silhouette | [open](gilled01.html) |
 | [Eric Snow](snower01.md) | Philadelphia 76ers | 30 | sourced | [open](snower01.html) |
-| [Frank Williams](willifr02.md) | New York Knicks | 23 | silhouette | [open](willifr02.html) |
+| [Frank Williams](willifr02.md) | New York Knicks | 24 | silhouette | [open](willifr02.html) |
 | [Gary Payton](paytoga01.md) | Los Angeles Lakers | 35 | sourced | [open](paytoga01.html) |
 | [Gilbert Arenas](arenagi01.md) | Washington Wizards | 22 | sourced | [open](arenagi01.html) |
 | [Howard Eisley](eisleho01.md) | New York Knicks | 31 | sourced | [open](eisleho01.html) |
@@ -529,7 +529,7 @@ Card date: **2004-02-24**. 504 registry players, one Markdown card and one inter
 | [Remon van de Hare](vandera01.md) | Toronto Raptors (draft rights) | 21 | silhouette | [open](vandera01.html) |
 | [Robert Traylor](traylro01.md) | New Orleans Hornets | 27 | sourced | [open](traylro01.html) |
 | [Ruben Boumtje-Boumtje](boumtru01.md) | Portland Trail Blazers | None | silhouette | [open](boumtru01.html) |
-| [Samaki Walker](walkesa01.md) | Los Angeles Lakers | 27 | sourced | [open](walkesa01.html) |
+| [Samaki Walker](walkesa01.md) | Los Angeles Lakers | 28 | sourced | [open](walkesa01.html) |
 | [Samuel Dalembert](dalemsa01.md) | Philadelphia 76ers | None | silhouette | [open](dalemsa01.html) |
 | [Scot Pollard](pollasc01.md) | Indiana Pacers | 29 | sourced | [open](pollasc01.html) |
 | [Scott Williams](willisc01.md) | Phoenix Suns | 35 | sourced | [open](willisc01.html) |

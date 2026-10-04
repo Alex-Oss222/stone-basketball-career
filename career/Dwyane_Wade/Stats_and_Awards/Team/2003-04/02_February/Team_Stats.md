@@ -4,7 +4,7 @@
 
 NBA regular season · February 1-29, 2004
 
-As of February 24, 2004: 10 closed Miami games in this period. Rows cover Miami's closed games only.
+As of February 25, 2004: 10 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
@@ -93,7 +93,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | [Week 1](Week_1/Team_Stats.md) | February 1-7, 2004 | 3 | Complete |
 | [Week 2](Week_2/Team_Stats.md) | February 8-14, 2004 | 3 | Complete |
 | [Week 3](Week_3/Team_Stats.md) | February 15-21, 2004 | 3 | Complete |
-| [Week 4](Week_4/Team_Stats.md) | February 22-29, 2004 | 1 | Through February 24, 2004 |
+| [Week 4](Week_4/Team_Stats.md) | February 22-29, 2004 | 1 | Through February 25, 2004 |
 
 Departures retain their completed Miami appearances. Arrivals enter from their first applicable period. Team wins and losses count games once, not once per player.
 
