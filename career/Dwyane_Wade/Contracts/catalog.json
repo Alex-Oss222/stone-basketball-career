@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-01-31",
+  "as_of": "2004-02-01",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -24,7 +24,7 @@
       "player_id": "harriad01",
       "name": "Adam Harrington",
       "team": "Free agent",
-      "status": "unsigned free agent (researched, 2003-12)",
+      "status": "unsigned free agent (researched, 2004-01-15)",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/harriad01.html#contract"
@@ -1976,8 +1976,8 @@
     {
       "player_id": "jacksje01",
       "name": "Jermaine Jackson",
-      "team": "Free agent",
-      "status": "not with an NBA club (status not established) (researched, date not recorded)",
+      "team": "Abroad",
+      "status": "playing outside the NBA (researched, 2004-01)",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/jacksje01.html#contract"

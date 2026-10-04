@@ -2,9 +2,9 @@
 
 # Contract | Stromile Swift
 
-Known through: 2004-01-31. [Open interactive contract](swiftst01.html#contract) · [Contract history](swiftst01.html#contract-history)
+Known through: 2004-02-01. [Open interactive contract](swiftst01.html#contract) · [Contract history](swiftst01.html#contract-history)
 
-Stromile Swift: under rookie contract. Evidence cutoff: 2004-01-31.
+Stromile Swift: under rookie contract. Evidence cutoff: 2004-02-01.
 
 ## Current contract
 

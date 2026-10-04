@@ -2,9 +2,9 @@
 
 # Contract | Sean Lampley
 
-Known through: 2004-01-31. [Open interactive contract](lamplse01.html#contract) · [Contract history](lamplse01.html#contract-history)
+Known through: 2004-02-01. [Open interactive contract](lamplse01.html#contract) · [Contract history](lamplse01.html#contract-history)
 
-Sean Lampley: team option exercised. Evidence cutoff: 2004-01-31.
+Sean Lampley: team option exercised. Evidence cutoff: 2004-02-01.
 
 ## Current contract
 

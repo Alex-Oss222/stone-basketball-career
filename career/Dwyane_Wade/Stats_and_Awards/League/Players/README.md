@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-31**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-01**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -305,7 +305,7 @@ Card date: **2004-01-31**. 504 registry players, one Markdown card and one inter
 | [Tremaine Fowlkes](fowlktr01.md) | Los Angeles Clippers | 27 | silhouette | [open](fowlktr01.html) |
 | [Wally Szczerbiak](szczewa02.md) | Minnesota Timberwolves | 26 | sourced | [open](szczewa02.html) |
 | [Walt Williams](williwa02.md) | Dallas Mavericks | 33 | silhouette | [open](williwa02.html) |
-| [Walter McCarty](mccarwa01.md) | Boston Celtics | 29 | silhouette | [open](mccarwa01.html) |
+| [Walter McCarty](mccarwa01.md) | Boston Celtics | 30 | silhouette | [open](mccarwa01.html) |
 | [Zarko Cabarkapa](cabarza01.md) | Phoenix Suns | 22 | sourced | [open](cabarza01.html) |
 
 </details>
@@ -441,7 +441,7 @@ Card date: **2004-01-31**. 504 registry players, one Markdown card and one inter
 | [Alonzo Mourning](mournal01.md) | New Jersey Nets | None | silhouette | [open](mournal01.html) |
 | [Amal McCaskill](mccasam01.md) | Philadelphia 76ers | None | silhouette | [open](mccasam01.html) |
 | [Andreas Glyniadakis](glynian01.md) | Detroit Pistons (draft rights) | 22 | sourced | [open](glynian01.html) |
-| [Andrew DeClercq](declean01.md) | Orlando Magic | 30 | silhouette | [open](declean01.html) |
+| [Andrew DeClercq](declean01.md) | Orlando Magic | 31 | silhouette | [open](declean01.html) |
 | [Anthony Mason](masonan01.md) | Milwaukee Bucks | 37 | silhouette | [open](masonan01.html) |
 | [Antonio Davis](davisan01.md) | Toronto Raptors | 35 | sourced | [open](davisan01.html) |
 | [Arvydas Sabonis](sabonar01.md) | Portland Trail Blazers | 39 | sourced | [open](sabonar01.html) |
@@ -496,7 +496,7 @@ Card date: **2004-01-31**. 504 registry players, one Markdown card and one inter
 | [Joel Przybilla](przybjo01.md) | Milwaukee Bucks | 24 | sourced | [open](przybjo01.html) |
 | [John Amaechi](amaecjo01.md) | Houston Rockets | 33 | sourced | [open](amaecjo01.html) |
 | [Kelvin Cato](catoke01.md) | Houston Rockets | 29 | sourced | [open](catoke01.html) |
-| [Ken Johnson](johnske03.md) | Free agent | 25 | sourced | [open](johnske03.html) |
+| [Ken Johnson](johnske03.md) | Free agent | 26 | sourced | [open](johnske03.html) |
 | [Kendrick Perkins](perkike01.md) | Boston Celtics | 19 | sourced | [open](perkike01.html) |
 | [Keon Clark](clarkke01.md) | Utah Jazz | 28 | silhouette | [open](clarkke01.html) |
 | [Kevin Willis](willike02.md) | San Antonio Spurs | 41 | sourced | [open](willike02.html) |
@@ -527,7 +527,7 @@ Card date: **2004-01-31**. 504 registry players, one Markdown card and one inter
 | [Raef LaFrentz](lafrera01.md) | Boston Celtics | 27 | sourced | [open](lafrera01.html) |
 | [Rasho Nesterovic](nestera01.md) | San Antonio Spurs | 27 | sourced | [open](nestera01.html) |
 | [Remon van de Hare](vandera01.md) | Toronto Raptors (draft rights) | 21 | silhouette | [open](vandera01.html) |
-| [Robert Traylor](traylro01.md) | New Orleans Hornets | 26 | sourced | [open](traylro01.html) |
+| [Robert Traylor](traylro01.md) | New Orleans Hornets | 27 | sourced | [open](traylro01.html) |
 | [Ruben Boumtje-Boumtje](boumtru01.md) | Portland Trail Blazers | None | silhouette | [open](boumtru01.html) |
 | [Samaki Walker](walkesa01.md) | Los Angeles Lakers | 27 | sourced | [open](walkesa01.html) |
 | [Samuel Dalembert](dalemsa01.md) | Philadelphia 76ers | None | silhouette | [open](dalemsa01.html) |

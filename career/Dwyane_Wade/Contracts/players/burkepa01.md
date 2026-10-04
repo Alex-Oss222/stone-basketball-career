@@ -2,9 +2,9 @@
 
 # Contract | Pat Burke
 
-Known through: 2004-01-31. [Open interactive contract](burkepa01.html#contract) · [Contract history](burkepa01.html#contract-history)
+Known through: 2004-02-01. [Open interactive contract](burkepa01.html#contract) · [Contract history](burkepa01.html#contract-history)
 
-Pat Burke: playing outside the NBA (researched, 2003-04). Evidence cutoff: 2004-01-31.
+Pat Burke: playing outside the NBA (researched, 2003-04). Evidence cutoff: 2004-02-01.
 
 ## Current contract
 

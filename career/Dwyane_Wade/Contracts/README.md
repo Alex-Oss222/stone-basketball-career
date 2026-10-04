@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-01-31. [Search the contract directory](index.html)
+Known through 2004-02-01. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -10,7 +10,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | --- | --- | --- | --- | --- |
 | [Aaron McKie](players/mckieaa01.md) | Philadelphia 76ers | under contract | Aaron McKie · existing contract; signing date not recorded | 1 |
 | [Aaron Williams](players/williaa01.md) | New Jersey Nets | under contract | Aaron Williams · existing contract; signing date not recorded | 1 |
-| [Adam Harrington](players/harriad01.md) | Free agent | unsigned free agent (researched, 2003-12) | No verified current agreement | 1 |
+| [Adam Harrington](players/harriad01.md) | Free agent | unsigned free agent (researched, 2004-01-15) | No verified current agreement | 1 |
 | [Adonal Foyle](players/foylead01.md) | Golden State Warriors | under contract | Adonal Foyle · existing contract; signing date not recorded | 1 |
 | [Adrian Griffin](players/griffad01.md) | Houston Rockets | under contract | Adrian Griffin · 2003-08-07 | 2 |
 | [Al Harrington](players/harrial01.md) | Indiana Pacers | under contract | Al Harrington · 2001-11-01 | 1 |
@@ -227,7 +227,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jeff McInnis](players/mcinnje01.md) | Portland Trail Blazers | under contract | Jeff McInnis · existing contract; signing date not recorded | 1 |
 | [Jeff Trepagnier](players/trepaje01.md) | Denver Nuggets | No verified contract record | No verified current agreement | 0 |
 | [Jelani McCoy](players/mccoyje01.md) | Toronto Raptors | expired or unresolved | No verified current agreement | 0 |
-| [Jermaine Jackson](players/jacksje01.md) | Free agent | not with an NBA club (status not established) (researched, date not recorded) | No verified current agreement | 1 |
+| [Jermaine Jackson](players/jacksje01.md) | Abroad | playing outside the NBA (researched, 2004-01) | No verified current agreement | 1 |
 | [Jermaine O'Neal](players/onealje01.md) | Indiana Pacers | under contract | Jermaine O'Neal · 2003-07-16 | 2 |
 | [Jerome Beasley](players/beaslje01.md) | Free agent | renounced | No verified current agreement | 1 |
 | [Jerome James](players/jamesje01.md) | Seattle SuperSonics | under contract | Jerome James · existing contract; signing date not recorded | 1 |
