@@ -68,11 +68,11 @@ class CampUnitTests(unittest.TestCase):
             self.assertIn(f"P{i}", [p["player_id"] for p in second])
         self.assertEqual(camp.rotation_players(data, depth, values, "2003-10-07", camp.PRESEASON_MINUTES, {"P0": 55})[0]["ratings"], {"perimeter_defense": 55})
 
-    def test_wade_grade_stays_inside_its_limits(self):
+    def test_stocks_do_not_change_assignment_defense_grade(self):
         quiet = camp.wade_grade({})
         self.assertEqual(quiet["grade"], camp.WADE_GRADE_BASE)
         busy = camp.wade_grade({"Dwyane Wade": {"minutes": 120.0, "games": 5, "efficiency": 60, "stl": 12, "blk": 4}})
-        self.assertEqual(busy["grade"], camp.WADE_GRADE_BASE + camp.WADE_GRADE_CAMP_SWING)
+        self.assertEqual(busy, quiet)
         self.assertAlmostEqual(busy["defense"], (busy["grade"] - 50) / 10)
         for g in (quiet, busy):
             self.assertTrue(camp.WADE_GRADE_LIMITS[0] <= g["grade"] <= camp.WADE_GRADE_LIMITS[1])

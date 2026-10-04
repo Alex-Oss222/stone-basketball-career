@@ -40,7 +40,8 @@ import random
 
 from .packets import canonical
 from .player_stats import MODEL_VERSION, RATE_KEYS
-from .prospects import ROOKIE_MODEL_VERSION
+from .prospects import LEGACY_ROOKIE_MODEL_VERSION, ROOKIE_MODEL_VERSION
+from .prospect_scouting import style_errors
 from .shot_events import spatial_result_errors
 from .spatial_shots import (draw_spatial_shot, load_spatial_environment,
                             spatial_environment_errors, tracking_metadata)
@@ -183,9 +184,15 @@ def team_errors(team, rules):
             if ("feedback_sha256" in profile and (not trajectory or not isinstance(profile["feedback_sha256"], str)
                                                   or len(profile["feedback_sha256"]) != 64)):
                 errors.append(f"{p.player_id}: feedback applies only to real-career profiles")
-            if (set(profile) - {"development", "defense", "feedback_sha256"} != base_keys
+            scouting_keys = {"scouting", "style", "scouting_sources"}
+            if set(profile) & scouting_keys:
+                if profile.get("model_version") != ROOKIE_MODEL_VERSION or not scouting_keys <= set(profile):
+                    errors.append(f"{p.player_id}: scouting requires a complete current rookie profile")
+                errors.extend(f"{p.player_id}: {e}" for e in style_errors(profile.get("style")))
+            if (set(profile) - {"development", "defense", "feedback_sha256"} - scouting_keys != base_keys
                     or ("development" in profile and not needs_development(profile))
-                    or profile.get("model_version") not in (MODEL_VERSION, ROOKIE_MODEL_VERSION, TRAJECTORY_MODEL_VERSION)
+                    or profile.get("model_version") not in (MODEL_VERSION, LEGACY_ROOKIE_MODEL_VERSION,
+                                                             ROOKIE_MODEL_VERSION, TRAJECTORY_MODEL_VERSION)
                     or (not trajectory and profile.get("season_end_year") != 2003)
                     or (trajectory and profile.get("season_end_year") != int(rules["season"][:4]) + 1)):
                 errors.append(f"{p.player_id}: invalid statistical profile metadata")
@@ -349,6 +356,21 @@ def _transition_adjustment(is_three, transition, cal):
     return bonus * (int(transition) - cal["transition_play_share"])
 
 
+def _pressure_turnover_adjustment(player, team_defense, cal):
+    """Pressure concerns amplify only the positive defense term, not base TOV.
+
+    Team defensive value is a coarse proxy until actual trap/coverage events
+    exist. Weak defense gives no extra ball-security reward for the concern.
+    """
+    sensitivity = player.stat_profile.get("style", {}).get("pressure_turnover_sensitivity", 1.0)
+    return cal["tov_per_defense"] * team_defense * (sensitivity if team_defense > 0 else 1.0)
+
+
+def _rebound_transition_chance(player):
+    multiplier = player.stat_profile.get("style", {}).get("rebound_transition_multiplier", 1.0)
+    return min(1.0, TRANSITION_AFTER_REBOUND * multiplier)
+
+
 def _expected_play_rates(club, opponent, cal, transition_share=None):
     """Minute-weighted points, misses, rebounds and steals for one play."""
     presence = {pid: club.targets[pid] / 48 for pid in club.order}
@@ -383,7 +405,7 @@ def _expected_play_rates(club, opponent, cal, transition_share=None):
             p2 = cal["p_two"] + RATING_SLOPE * (_rating(player, "rim_finishing") + _rating(player, "mid_range_shooting")) / 2
             p3 = cal["p_three"] + RATING_SLOPE * _rating(player, "three_point_shooting")
             ft = _clamp(cal["p_ft"] + RATING_SLOPE * _rating(player, "free_throws"), 0.3, 0.97)
-        p_tov = _clamp(p_tov + cal["tov_per_defense"] * team_defense, 0.005, 0.6)
+        p_tov = _clamp(p_tov + _pressure_turnover_adjustment(player, team_defense, cal), 0.005, 0.6)
         creation = _usage_adjustment(player, total, cal) + _passing_adjustment(
             [(club.players[mate], presence[mate]) for mate in club.order if mate != pid], cal)
         transition_delta = (transition_share - cal["transition_play_share"]) if transition_share is not None else 0.0
@@ -419,7 +441,16 @@ def _expected_points(club, opponent, cal):
     other_continuation = 1 - other_misses * other_orb
     steals /= other_continuation
     drb = other_misses * (1 - other_orb) * cal["p_player_drb"] / other_continuation
-    transitions = (steals * TRANSITION_AFTER_STEAL + drb * TRANSITION_AFTER_REBOUND)
+    rebound_chance = TRANSITION_AFTER_REBOUND
+    if any(p.stat_profile.get("style", {}).get("rebound_transition_multiplier", 1) != 1
+           for p in club.players.values()):
+        weights = {pid: club.targets[pid] / 48 * _rate_weight(
+            club.players[pid], "defensive_rebound_pct", 2, cal, "rebounding") for pid in club.order}
+        total = sum(weights.values())
+        if total:
+            rebound_chance = sum(w * _rebound_transition_chance(club.players[pid])
+                                 for pid, w in weights.items()) / total
+    transitions = (steals * TRANSITION_AFTER_STEAL + drb * rebound_chance)
     transitions *= 1 - cal["p_extra_foul"]       # common fouls stop the break
     transition_share = transitions * (1 - misses * p_orb)
     value, misses, p_orb, _ = _expected_play_rates(club, opponent, cal, transition_share)
@@ -690,7 +721,7 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         pid = _weighted(rng, club.on_floor, weights)
         club.lines[pid]["orb" if side == offense else "drb"] += 1
         if side == defense:
-            state["transition"] = (defense, "rebound")
+            state["transition"] = (defense, "rebound", pid)
         return side == offense
 
     def intentional_foul(offense):
@@ -725,7 +756,7 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
             p_trip = trips_per_fga / plays_per_fga
             fg_pct = rates["three_point_attempt_rate"]*rates["three_point_pct"] + (1-rates["three_point_attempt_rate"])*rates["two_point_pct"]
             p_and_one = _clamp(rates["free_throw_attempt_rate"] * cal["and_one_share_of_fta"] / max(.01, fg_pct), 0, 1)
-        p_tov = _clamp(p_tov + cal["tov_per_defense"] * team_defense, 0.005, 0.6)
+        p_tov = _clamp(p_tov + _pressure_turnover_adjustment(player, team_defense, cal), 0.005, 0.6)
         if roll < p_tov:
             o.lines[shooter]["tov"] += 1
             weights = weights_for(d, "steal_pct", 4, "perimeter_defense")
@@ -771,7 +802,11 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         # make probability. All zones average back to the existing shot chance,
         # including when one or more zone probabilities hit zero or one.
         value = 3 if is_three else 2
-        zone, x, y, p_make = draw_spatial_shot(spatial_rng, spatial_environment, value, p_make)
+        spatial_weights = player.stat_profile.get("style", {}).get("spatial_weights")
+        if spatial_weights is None:
+            zone, x, y, p_make = draw_spatial_shot(spatial_rng, spatial_environment, value, p_make)
+        else:
+            zone, x, y, p_make = draw_spatial_shot(spatial_rng, spatial_environment, value, p_make, spatial_weights)
         line = o.lines[shooter]
         line["fga"] += 1
         if transition:
@@ -871,7 +906,8 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
                 offense = other(offense)
                 continue
             if origin is not None and origin[0] == offense and clock > shot_clock:
-                chance = TRANSITION_AFTER_STEAL if origin[1] == "steal" else TRANSITION_AFTER_REBOUND
+                chance = (TRANSITION_AFTER_STEAL if origin[1] == "steal" else
+                          _rebound_transition_chance(clubs[offense].players[origin[2]]))
                 transition = rng.random() < chance
                 if late and lead > 0 and clock <= LATE_SECONDS:
                     transition = False           # protect the lead and use the clock

@@ -4,7 +4,7 @@ Only evidence available on draft night is used. A draftee without a pre-draft
 record gets no profile and plays on the engine's neutral fallback, which is not
 a claim that he is an average player.
 
-Method (model rookie-2003.1), per rate:
+Method (model rookie-2003.2), per rate:
 
 1. Combine the player's pre-draft seasons with recency weights.
 2. Translate to an NBA-equivalent rate: shooting percentages and attempt
@@ -21,11 +21,18 @@ replace them.
 """
 from pathlib import Path
 
-from .player_stats import (PRIOR_ATTEMPTS, PRIOR_MINUTES, RATE_KEYS, ROOT, read_json, sha256)
+from .player_stats import (PRIOR_ATTEMPTS, PRIOR_MINUTES, RATE_KEYS, ROOT, STATS_PATH, read_json, sha256)
+from .prospect_scouting import (PAINT_FTR_FACTOR, POSITION_PATH, SCOUTING_PATH,
+                                position_rebound_priors, style_for, trait_value, validate_scouting)
 
-ROOKIE_MODEL_VERSION = "rookie-2003.1"
+ROOKIE_MODEL_VERSION = "rookie-2003.2"
+LEGACY_ROOKIE_MODEL_VERSION = "rookie-2003.1"
+# Model adoption, not a change in the player's talent or a new scouting date.
+# All already played preseason and regular-season games predate this gate.
+SCOUTING_EFFECTIVE_FROM = "2003-11-12"
 PROSPECTS_PATH = Path("library/2003/league/nba_2003_prospect_stats.json")
 ROOKIE_PATH = Path("library/2003/league/nba_2003_rookie_estimates.json")
+LEGACY_ROOKIE_PATH = Path("library/2003/league/nba_2003_rookie_estimates_2003_1.json")
 VETERAN_PATH = Path("library/2003/league/nba_2003_veteran_ratings.json")
 
 RECENCY_WEIGHTS = (3, 2, 1)       # most recent season first
@@ -69,7 +76,7 @@ def _nba_per_minute(source_totals):
     }
 
 
-def translate(record, baselines, source_totals):
+def translate(record, baselines, source_totals, scouting=None, rebound_priors=None):
     level = record["level"]
     if level not in LEVEL_FACTORS:
         raise ValueError(f"{record['player_id']}: no translation factors for level {level!r}")
@@ -95,6 +102,18 @@ def translate(record, baselines, source_totals):
         "block_pct": baselines["block_pct"] * per_min("blocks") / nba["blocks"] * f["block_pct"],
         "fouls_per_minute": None,  # not recorded before the draft
     }
+    if trait_value(scouting, "paint_pressure") == "plus":
+        translated["free_throw_attempt_rate"] *= PAINT_FTR_FACTOR
+    if scouting:
+        prior = (rebound_priors or {}).get(scouting["position"])
+        if prior is None:
+            raise ValueError(f"{record['player_id']}: missing dated position rebound prior")
+        # Redistribute translated total rebounds, preserving the implied total
+        # per-minute production. No second rebounding bonus from a plus trait.
+        league_orb_share = source_totals["offensive_rebounds"] / (
+            source_totals["offensive_rebounds"] + source_totals["defensive_rebounds"])
+        translated["offensive_rebound_pct"] *= prior["offensive_share"] / league_orb_share
+        translated["defensive_rebound_pct"] *= (1 - prior["offensive_share"]) / (1 - league_orb_share)
     samples = {
         "two_point_pct": raw["field_goals_attempted"] - raw["three_pointers_attempted"],
         "three_point_pct": raw["three_pointers_attempted"], "free_throw_pct": raw["free_throws_attempted"],
@@ -113,13 +132,19 @@ def translate(record, baselines, source_totals):
     return translated, estimated, raw
 
 
-def build_rookie_estimates(prospects, prospects_hash, veterans):
+def build_rookie_estimates(prospects, prospects_hash, veterans, *, scouting=None,
+                           rebound_priors=None, source_hashes=None, legacy=False):
+    if scouting is not None:
+        validate_scouting(scouting, prospects)
+    if legacy and scouting is not None:
+        raise ValueError("legacy rookie estimates cannot consume scouting")
     baselines, totals = veterans["rate_baselines"], veterans["source_totals"]
     players = {}
     for record in prospects["records"]:
         if record["bbr_id"] in veterans["players"]:
             raise ValueError(f"{record['player_id']} already has an NBA record")
-        translated, estimated, raw = translate(record, baselines, totals)
+        entry = (scouting or {}).get("players", {}).get(record["bbr_id"])
+        translated, estimated, raw = translate(record, baselines, totals, entry, rebound_priors)
         players[record["bbr_id"]] = {
             "player_name": record["player_id"], "bbr_id": record["bbr_id"], "level": record["level"],
             "school": record.get("school"), "season_end_year": 2003,
@@ -127,8 +152,12 @@ def build_rookie_estimates(prospects, prospects_hash, veterans):
             "translated": translated, "estimated": estimated,
             "status": "estimate from pre-draft statistics; not NBA evidence",
         }
-    return {
-        "schema_version": 1, "model_version": ROOKIE_MODEL_VERSION, "as_of": prospects["as_of"],
+        if entry:
+            players[record["bbr_id"]]["scouting"] = entry
+            players[record["bbr_id"]]["style"] = style_for(entry)
+    data = {
+        "schema_version": 1, "model_version": LEGACY_ROOKIE_MODEL_VERSION if legacy else ROOKIE_MODEL_VERSION,
+        "as_of": prospects["as_of"],
         "baseline_season": veterans["baseline_season"], "source_file": str(PROSPECTS_PATH),
         "source_sha256": prospects_hash, "veteran_model_version": veterans["model_version"],
         "method": {"recency_weights": list(RECENCY_WEIGHTS), "evidence_weight": EVIDENCE_WEIGHT,
@@ -136,17 +165,35 @@ def build_rookie_estimates(prospects, prospects_hash, veterans):
                    "status": "provisional judgement constants; see docs/statistical_ratings.md"},
         "players": players,
     }
+    if not legacy:
+        data["effective_from"] = SCOUTING_EFFECTIVE_FROM
+        data["scouting_sources"] = source_hashes or {}
+        data["method"]["position_rebound_priors"] = rebound_priors or {}
+        data["method"]["paint_pressure_ftr_factor"] = PAINT_FTR_FACTOR
+        data["method"]["scouting_status"] = "dated qualitative priors; bounded assumptions, not fitted translations or measured tracking"
+    return data
 
 
-def expected_rookie_estimates(root=ROOT):
-    return build_rookie_estimates(read_json(Path(root) / PROSPECTS_PATH), sha256(Path(root) / PROSPECTS_PATH),
-                                  read_json(Path(root) / VETERAN_PATH))
+def expected_rookie_estimates(root=ROOT, *, legacy=False):
+    root = Path(root)
+    prospects, veterans = read_json(root / PROSPECTS_PATH), read_json(root / VETERAN_PATH)
+    if legacy:
+        return build_rookie_estimates(prospects, sha256(root / PROSPECTS_PATH), veterans, legacy=True)
+    scouting = read_json(root / SCOUTING_PATH)
+    validate_scouting(scouting, prospects, root)
+    priors = position_rebound_priors(read_json(root / STATS_PATH), read_json(root / POSITION_PATH))
+    hashes = {str(path): sha256(root / path) for path in (SCOUTING_PATH, STATS_PATH, POSITION_PATH)}
+    hashes.update({entry["source_file"]: entry["source_sha256"] for entry in scouting["players"].values()})
+    return build_rookie_estimates(prospects, sha256(root / PROSPECTS_PATH), veterans,
+                                  scouting=scouting, rebound_priors=priors, source_hashes=hashes)
 
 
 def rookie_errors(root=ROOT):
     try:
         if read_json(Path(root) / ROOKIE_PATH) != expected_rookie_estimates(root):
             return ["generated rookie estimates are stale; run scripts/import_prospect_stats.py"]
+        if read_json(Path(root) / LEGACY_ROOKIE_PATH) != expected_rookie_estimates(root, legacy=True):
+            return ["archived rookie-2003.1 inputs changed; preserve closed-game evidence"]
         return []
     except (OSError, ValueError, KeyError, TypeError, ZeroDivisionError) as exc:
         return [f"cannot validate rookie estimates: {exc}"]

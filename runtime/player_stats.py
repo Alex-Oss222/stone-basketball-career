@@ -5,6 +5,7 @@ the engine uses estimated rates, never the ranks. Model choices are documented
 in docs/statistical_ratings.md and are not claimed to be measured abilities.
 """
 from bisect import bisect_left, bisect_right
+from copy import deepcopy
 from datetime import date
 import hashlib
 import json
@@ -243,6 +244,8 @@ class RatingIndex:
                 raise ValueError(f"{p['player_name']} has both a veteran and a rookie profile")
             self.players[pid] = dict(p, model_version=rookies["model_version"], as_of=rookies["as_of"],
                                      source_sha256=rookies["source_sha256"])
+            if "scouting" in p:
+                self.players[pid]["scouting_sources"] = rookies["scouting_sources"]
         if trajectories is not None:
             # Players known only from real careers (later draftees) still need a name lookup.
             for pid, p in trajectories.data["players"].items():
@@ -275,6 +278,12 @@ class RatingIndex:
                    "as_of": p["as_of"], "season_end_year": p["season_end_year"],
                    "source_sha256": p["source_sha256"],
                    "rates": {k:p["estimated"][k] for k in RATE_KEYS}}
+        if "scouting" in p:
+            # Qualitative inputs and source identity travel in the packet;
+            # later source changes cannot silently pass the replay check.
+            profile["scouting"] = deepcopy(p["scouting"])
+            profile["style"] = deepcopy(p["style"])
+            profile["scouting_sources"] = dict(p["scouting_sources"])
         graded = self.grades.get(alias(p["player_name"])) if getattr(self, "grades", None) else None
         if graded is not None:
             profile["defense"] = graded      # a dated staff grade (Wade's camp grade, roadmap item 9)
@@ -293,14 +302,22 @@ def load_rating_index(game_date, season, root=ROOT):
         raise ValueError("player statistics are not available at this game date")
     if data["model_version"] != MODEL_VERSION or data["source_sha256"] != sha256(Path(root)/STATS_PATH):
         raise ValueError("statistical ratings are stale; rebuild from the current source")
-    from .prospects import PROSPECTS_PATH, ROOKIE_MODEL_VERSION, ROOKIE_PATH
+    from .prospects import (PROSPECTS_PATH, ROOKIE_MODEL_VERSION, ROOKIE_PATH, LEGACY_ROOKIE_PATH,
+                            LEGACY_ROOKIE_MODEL_VERSION, SCOUTING_EFFECTIVE_FROM, expected_rookie_estimates)
     rookies = None
-    if (Path(root)/ROOKIE_PATH).exists():
-        rookies = read_json(Path(root)/ROOKIE_PATH)
-        if (rookies["model_version"] != ROOKIE_MODEL_VERSION or rookies["as_of"] > game_date
+    legacy = game_date < SCOUTING_EFFECTIVE_FROM
+    rookie_path = Path(root)/(LEGACY_ROOKIE_PATH if legacy else ROOKIE_PATH)
+    if rookie_path.exists():
+        rookies = read_json(rookie_path)
+        model = LEGACY_ROOKIE_MODEL_VERSION if legacy else ROOKIE_MODEL_VERSION
+        if (rookies["model_version"] != model or rookies["as_of"] > game_date
                 or rookies["veteran_model_version"] != MODEL_VERSION
                 or rookies["source_sha256"] != sha256(Path(root)/PROSPECTS_PATH)):
             raise ValueError("rookie estimates are stale or not yet available; rebuild from the current source")
+        if rookies != expected_rookie_estimates(root, legacy=legacy):
+            raise ValueError("rookie estimates or scouting sources are stale; rebuild from the current source")
+    elif (Path(root)/PROSPECTS_PATH).exists():
+        raise ValueError(f"missing dated rookie estimates: {rookie_path.name}")
     from .trajectories import load_trajectories
     index = RatingIndex(data, rookies, load_trajectories(root, season), season)
     index.grades = staff_defensive_grades(game_date, season, root)
