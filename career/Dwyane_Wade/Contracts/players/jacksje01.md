@@ -2,9 +2,9 @@
 
 # Contract | Jermaine Jackson
 
-Known through: 2004-01-23. [Open interactive contract](jacksje01.html#contract) · [Contract history](jacksje01.html#contract-history)
+Known through: 2004-01-24. [Open interactive contract](jacksje01.html#contract) · [Contract history](jacksje01.html#contract-history)
 
-Jermaine Jackson: not with an NBA club (status not established) (researched, date not recorded). Evidence cutoff: 2004-01-23.
+Jermaine Jackson: not with an NBA club (status not established) (researched, date not recorded). Evidence cutoff: 2004-01-24.
 
 ## Current contract
 
