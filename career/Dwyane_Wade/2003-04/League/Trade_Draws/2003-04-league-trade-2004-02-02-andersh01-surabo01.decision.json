@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-04-league-trade-2004-02-02-andersh01-surabo01",
+ "date": "2004-02-02",
+ "question": "Do Detroit Pistons and New York Knicks trade Bob Sura for Shandon Anderson?",
+ "decider": "Detroit Pistons and New York Knicks front offices (engine draw)",
+ "options": {
+  "accept": 0.632314,
+  "decline": 0.367686
+ },
+ "basis": "gains on own objectives {'Detroit Pistons': 0.109, 'New York Knicks': 0.12}; acceptance {'Detroit Pistons': 0.773, 'New York Knicks': 0.818}; 1999 salary rule met; symmetric league phase 3 (runtime/league_trades.py)"
+}

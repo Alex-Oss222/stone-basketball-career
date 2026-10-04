@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-02-01**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-02-02**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -464,7 +464,7 @@ Card date: **2004-02-01**. 504 registry players, one Markdown card and one inter
 | [Curtis Borchardt](borchcu01.md) | Utah Jazz | None | silhouette | [open](borchcu01.html) |
 | [Dale Davis](davisda01.md) | Portland Trail Blazers | 34 | silhouette | [open](davisda01.html) |
 | [Dalibor Bagaric](bagarda01.md) | Chicago Bulls | 23 | sourced | [open](bagarda01.html) |
-| [Dan Gadzuric](gadzuda01.md) | Milwaukee Bucks | 25 | sourced | [open](gadzuda01.html) |
+| [Dan Gadzuric](gadzuda01.md) | Milwaukee Bucks | 26 | sourced | [open](gadzuda01.html) |
 | [Daniel Santiago](santida01.md) | Milwaukee Bucks | None | silhouette | [open](santida01.html) |
 | [Darko Milicic](milicda01.md) | Detroit Pistons | 18 | sourced | [open](milicda01.html) |
 | [David Robinson](robinda01.md) | San Antonio Spurs | 38 | sourced | [open](robinda01.html) |

@@ -1,0 +1,37 @@
+{
+ "id": "2003-04-league-trade-2004-02-02-andersh01-surabo01",
+ "date": "2004-02-02",
+ "clubs": [
+  "Detroit Pistons",
+  "New York Knicks"
+ ],
+ "a": {
+  "club": "Detroit Pistons",
+  "sends": [
+   "Bob Sura"
+  ],
+  "bbr_ids": [
+   "surabo01"
+  ],
+  "salary": 6266666
+ },
+ "b": {
+  "club": "New York Knicks",
+  "sends": [
+   "Shandon Anderson"
+  ],
+  "bbr_ids": [
+   "andersh01"
+  ],
+  "salary": 6700000
+ },
+ "gain": {
+  "Detroit Pistons": 0.109,
+  "New York Knicks": 0.12
+ },
+ "accept": {
+  "Detroit Pistons": 0.773,
+  "New York Knicks": 0.818
+ },
+ "both": 0.632314
+}

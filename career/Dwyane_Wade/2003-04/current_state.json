@@ -2,7 +2,7 @@
  "schema_version": 1,
  "initialized": true,
  "season": "2003-04",
- "current_date": "2004-02-01",
+ "current_date": "2004-02-02",
  "current_area": "06_Regular_Season",
  "current_note": "06_Regular_Season/02_February/Week_1/note.md",
  "team": "Miami Heat",
@@ -15,6 +15,6 @@
  },
  "contract_status": "rookie_scale_contract",
  "roster_status": "under_contract",
- "last_closed_event": "2004-01-31-miami-heat-at-new-orleans-hornets",
+ "last_closed_event": "2004-02-02-detroit-pistons-at-miami-heat",
  "pending_player_decisions": []
 }

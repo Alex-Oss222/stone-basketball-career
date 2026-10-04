@@ -1772,6 +1772,318 @@
     }
    ],
    "winner": "Peja Stojakovic"
+  },
+  {
+   "id": "2003-04-player_of_month-2004-01-01-east",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "East",
+   "period_start": "2004-01-01",
+   "period_end": "2004-01-31",
+   "announced_on": "2004-02-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/01_January/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 16,
+     "wins": 11,
+     "losses": 5,
+     "pts": 18.9,
+     "reb": 4.8,
+     "ast": 4.7,
+     "game_score": 16.98,
+     "score": 25.231,
+     "rank": 1
+    },
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 16,
+     "wins": 7,
+     "losses": 9,
+     "pts": 24.3,
+     "reb": 6.8,
+     "ast": 6.2,
+     "game_score": 19.12,
+     "score": 24.375,
+     "rank": 2
+    },
+    {
+     "player": "Allen Iverson",
+     "team": "Philadelphia 76ers",
+     "games": 11,
+     "wins": 5,
+     "losses": 6,
+     "pts": 25.8,
+     "reb": 4.2,
+     "ast": 6.6,
+     "game_score": 18.81,
+     "score": 24.264,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwyane Wade"
+  },
+  {
+   "id": "2003-04-player_of_month-2004-01-01-west",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "West",
+   "period_start": "2004-01-01",
+   "period_end": "2004-01-31",
+   "announced_on": "2004-02-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/01_January/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 15,
+     "wins": 12,
+     "losses": 3,
+     "pts": 24.6,
+     "reb": 12.3,
+     "ast": 5.1,
+     "game_score": 22.34,
+     "score": 31.94,
+     "rank": 1
+    },
+    {
+     "player": "Peja Stojakovic",
+     "team": "Sacramento Kings",
+     "games": 16,
+     "wins": 11,
+     "losses": 5,
+     "pts": 25.5,
+     "reb": 7.6,
+     "ast": 2.1,
+     "game_score": 19.81,
+     "score": 28.056,
+     "rank": 2
+    },
+    {
+     "player": "Sam Cassell",
+     "team": "Minnesota Timberwolves",
+     "games": 14,
+     "wins": 11,
+     "losses": 3,
+     "pts": 20.6,
+     "reb": 4.2,
+     "ast": 7.2,
+     "game_score": 16.56,
+     "score": 25.986,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-01-26-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-01-26",
+   "period_end": "2004-02-01",
+   "announced_on": "2004-02-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/02_February/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Tracy McGrady",
+     "team": "Orlando Magic",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 26.8,
+     "reb": 4.8,
+     "ast": 6.5,
+     "game_score": 19.95,
+     "score": 85.8,
+     "rank": 1
+    },
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 21.2,
+     "reb": 6.8,
+     "ast": 3.8,
+     "game_score": 18.4,
+     "score": 82.6,
+     "rank": 2
+    },
+    {
+     "player": "Allen Iverson",
+     "team": "Philadelphia 76ers",
+     "games": 3,
+     "wins": 1,
+     "losses": 2,
+     "pts": 29.0,
+     "reb": 4.3,
+     "ast": 4.7,
+     "game_score": 22.93,
+     "score": 71.8,
+     "rank": 3
+    }
+   ],
+   "winner": "Tracy McGrady"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-01-26-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-01-26",
+   "period_end": "2004-02-01",
+   "announced_on": "2004-02-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/02_February/Week_1/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Andrei Kirilenko",
+     "team": "Utah Jazz",
+     "games": 4,
+     "wins": 1,
+     "losses": 3,
+     "pts": 25.2,
+     "reb": 8.8,
+     "ast": 4.2,
+     "game_score": 26.8,
+     "score": 110.2,
+     "rank": 1
+    },
+    {
+     "player": "Sam Cassell",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 30.2,
+     "reb": 4.0,
+     "ast": 8.2,
+     "game_score": 23.38,
+     "score": 99.5,
+     "rank": 2
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 21.5,
+     "reb": 10.0,
+     "ast": 5.2,
+     "game_score": 21.8,
+     "score": 93.2,
+     "rank": 3
+    }
+   ],
+   "winner": "Andrei Kirilenko"
+  },
+  {
+   "id": "2003-04-rookie_of_month-2004-01-01-east",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "East",
+   "period_start": "2004-01-01",
+   "period_end": "2004-01-31",
+   "announced_on": "2004-02-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/01_January/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 16,
+     "wins": 11,
+     "losses": 5,
+     "pts": 18.9,
+     "reb": 4.8,
+     "ast": 4.7,
+     "game_score": 16.98,
+     "score": 19.731,
+     "rank": 1
+    },
+    {
+     "player": "Chris Bosh",
+     "team": "Toronto Raptors",
+     "games": 12,
+     "wins": 6,
+     "losses": 6,
+     "pts": 14.6,
+     "reb": 7.2,
+     "ast": 1.4,
+     "game_score": 12.92,
+     "score": 14.925,
+     "rank": 2
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 14,
+     "wins": 4,
+     "losses": 10,
+     "pts": 20.7,
+     "reb": 4.3,
+     "ast": 5.6,
+     "game_score": 13.12,
+     "score": 14.264,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwyane Wade"
+  },
+  {
+   "id": "2003-04-rookie_of_month-2004-01-01-west",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "West",
+   "period_start": "2004-01-01",
+   "period_end": "2004-01-31",
+   "announced_on": "2004-02-02",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/01_January/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Carmelo Anthony",
+     "team": "Denver Nuggets",
+     "games": 17,
+     "wins": 11,
+     "losses": 6,
+     "pts": 18.5,
+     "reb": 7.7,
+     "ast": 3.5,
+     "game_score": 12.17,
+     "score": 14.759,
+     "rank": 1
+    },
+    {
+     "player": "Josh Howard",
+     "team": "Dallas Mavericks",
+     "games": 16,
+     "wins": 12,
+     "losses": 4,
+     "pts": 9.8,
+     "reb": 5.6,
+     "ast": 1.1,
+     "game_score": 8.04,
+     "score": 11.044,
+     "rank": 2
+    },
+    {
+     "player": "Luke Ridnour",
+     "team": "Seattle SuperSonics",
+     "games": 16,
+     "wins": 9,
+     "losses": 7,
+     "pts": 4.3,
+     "reb": 1.6,
+     "ast": 1.4,
+     "game_score": 3.36,
+     "score": 5.606,
+     "rank": 3
+    }
+   ],
+   "winner": "Carmelo Anthony"
   }
  ]
 }

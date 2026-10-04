@@ -2,9 +2,9 @@
 
 # Contract | Etan Thomas
 
-Known through: 2004-02-01. [Open interactive contract](thomaet01.html#contract) · [Contract history](thomaet01.html#contract-history)
+Known through: 2004-02-02. [Open interactive contract](thomaet01.html#contract) · [Contract history](thomaet01.html#contract-history)
 
-Etan Thomas: under rookie contract. Evidence cutoff: 2004-02-01.
+Etan Thomas: under rookie contract. Evidence cutoff: 2004-02-02.
 
 ## Current contract
 
