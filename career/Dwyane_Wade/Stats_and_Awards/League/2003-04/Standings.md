@@ -33,10 +33,10 @@ Through 2004-01-16, from closed simulated results only (`runtime/standings.py`).
 | 5 | Dallas Mavericks | 25 | 14 | .641 | 4 |
 | 6 | Denver Nuggets | 25 | 16 | .610 | 5 |
 | 7 | Houston Rockets | 21 | 17 | .553 | 7.5 |
-| 8 | Golden State Warriors | 20 | 18 | .526 | 8.5 |
-| 9 | Seattle SuperSonics | 19 | 18 | .514 | 9 |
+| 8 | Seattle SuperSonics | 19 | 18 | .514 | 9 |
+| 9 | Golden State Warriors | 20 | 19 | .513 | 9 |
 | 10 | Memphis Grizzlies | 19 | 19 | .500 | 9.5 |
-| 11 | Phoenix Suns | 14 | 25 | .359 | 15 |
+| 11 | Phoenix Suns | 15 | 25 | .375 | 14.5 |
 | 12 | Utah Jazz | 12 | 26 | .316 | 16.5 |
 | 13 | Los Angeles Clippers | 11 | 25 | .306 | 16.5 |
 | 14 | Portland Trail Blazers | 11 | 26 | .297 | 17 |
