@@ -2,9 +2,9 @@
 
 # Contract | Bimbo Coles
 
-Known through: 2003-11-21. [Open interactive contract](colesbi01.html#contract) · [Contract history](colesbi01.html#contract-history)
+Known through: 2003-11-22. [Open interactive contract](colesbi01.html#contract) · [Contract history](colesbi01.html#contract-history)
 
-Bimbo Coles: free agent expiring. Evidence cutoff: 2003-11-21.
+Bimbo Coles: free agent expiring. Evidence cutoff: 2003-11-22.
 
 ## Current contract
 

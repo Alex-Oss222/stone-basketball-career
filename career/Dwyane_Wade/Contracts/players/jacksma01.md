@@ -2,9 +2,9 @@
 
 # Contract | Mark Jackson
 
-Known through: 2003-11-21. [Open interactive contract](jacksma01.html#contract) · [Contract history](jacksma01.html#contract-history)
+Known through: 2003-11-22. [Open interactive contract](jacksma01.html#contract) · [Contract history](jacksma01.html#contract-history)
 
-Mark Jackson: free agent expiring. Evidence cutoff: 2003-11-21.
+Mark Jackson: free agent expiring. Evidence cutoff: 2003-11-22.
 
 ## Current contract
 

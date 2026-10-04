@@ -2,9 +2,9 @@
 
 # Contract | Eddie House
 
-Known through: 2003-11-21. [Open interactive contract](houseed01.html#contract) · [Contract history](houseed01.html#contract-history)
+Known through: 2003-11-22. [Open interactive contract](houseed01.html#contract) · [Contract history](houseed01.html#contract-history)
 
-Eddie House: free agent expiring. Evidence cutoff: 2003-11-21.
+Eddie House: free agent expiring. Evidence cutoff: 2003-11-22.
 
 ## Current contract
 

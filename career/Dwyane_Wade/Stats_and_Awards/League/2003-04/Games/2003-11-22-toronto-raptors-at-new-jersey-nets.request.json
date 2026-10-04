@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-22-toronto-raptors-at-new-jersey-nets",
+ "game_date": "2003-11-22",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Toronto Raptors",
+  "rotation": "real"
+ }
+}

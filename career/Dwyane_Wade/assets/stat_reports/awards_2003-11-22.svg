@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="154" viewBox="0 0 1280 154" role="img" aria-labelledby="title desc">
+<title id="title">Earned professional awards</title><desc id="desc">Confirmed career awards through 2003-11-22.</desc>
+<rect x="0" y="0" width="1280" height="154" rx="24" fill="#141517"/>
+<rect x="20" y="18" width="1240" height="42" rx="10" fill="#a71930"/>
+<text x="40" y="46" font-family="sans-serif" font-size="19" fill="#ffffff" font-weight="700" text-anchor="start">EARNED PROFESSIONAL AWARDS</text>
+<text x="1240" y="46" font-family="sans-serif" font-size="17" fill="#f4ccd3" font-weight="400" text-anchor="end">Through 2003-11-22</text>
+<rect x="20" y="76" width="1240" height="62" rx="10" fill="#34363a"/>
+<text x="640.0" y="113" font-family="sans-serif" font-size="18" fill="#d0d1d4" font-weight="400" text-anchor="middle">No earned professional awards</text>
+</svg>

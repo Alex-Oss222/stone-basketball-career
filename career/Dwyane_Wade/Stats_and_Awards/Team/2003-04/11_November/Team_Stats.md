@@ -4,13 +4,13 @@
 
 NBA regular season · November 1-30, 2003
 
-As of November 21, 2003: 10 closed Miami games in this period. Rows cover Miami's closed games only.
+As of November 22, 2003: 11 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
 | G | W | L | WIN% | PPG | OPP PPG | DIFF |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 10 | 4 | 6 | .400 | 95.9 | 98.2 | -2.3 |
+| 11 | 4 | 7 | .364 | 95.2 | 97.5 | -2.3 |
 
 ## Player production
 
@@ -20,19 +20,19 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Malik Allen | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Caron Butler | SF | 9 | 32.4 | 10.4 | 4.9 | 1.6 | 1.1 | 0.2 | 1.0 |
-| Rasual Butler | SG/SF | 10 | 5.3 | 2.2 | 0.4 | 0.4 | 0.2 | 0.1 | 0.4 |
+| Rasual Butler | SG/SF | 11 | 5.6 | 2.0 | 0.5 | 0.4 | 0.2 | 0.1 | 0.5 |
 | Anthony Carter | PG | 5 | 3.1 | 1.4 | 0.6 | 0.4 | 0.2 | 0.0 | 0.4 |
-| LaPhonso Ellis | PF | 10 | 8.5 | 2.1 | 1.6 | 0.5 | 0.1 | 0.3 | 0.4 |
-| Brian Grant | C/PF | 10 | 17.7 | 8.8 | 3.4 | 0.6 | 0.3 | 0.2 | 1.4 |
-| Mike James | PG | 10 | 35.2 | 11.3 | 4.7 | 4.6 | 2.6 | 0.2 | 2.1 |
-| Eddie Jones | SG/SF | 10 | 22.8 | 10.9 | 2.4 | 2.1 | 0.8 | 0.1 | 1.3 |
+| LaPhonso Ellis | PF | 11 | 8.2 | 2.1 | 1.6 | 0.5 | 0.1 | 0.3 | 0.4 |
+| Brian Grant | C/PF | 11 | 19.9 | 9.3 | 3.9 | 0.6 | 0.5 | 0.2 | 1.5 |
+| Mike James | PG | 11 | 35.8 | 11.7 | 4.6 | 4.6 | 2.5 | 0.3 | 2.3 |
+| Eddie Jones | SG/SF | 11 | 21.9 | 10.9 | 2.2 | 1.9 | 0.7 | 0.1 | 1.3 |
 | Sean Lampley | SF | 1 | 2.6 | 3.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 |
-| Dwyane Wade | SG/PG | 10 | 33.1 | 16.2 | 4.7 | 4.2 | 1.3 | 0.7 | 1.3 |
+| Dwyane Wade | SG/PG | 11 | 33.8 | 16.1 | 4.8 | 4.4 | 1.3 | 0.8 | 1.4 |
 | Jerome Beasley | PF/C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Stephen Jackson | SG | 10 | 16.6 | 8.6 | 1.8 | 2.3 | 0.8 | 0.3 | 1.6 |
-| Shawn Kemp | C | 10 | 25.9 | 8.6 | 7.3 | 0.8 | 0.9 | 0.6 | 1.9 |
-| Scott Padgett | PF | 10 | 33.8 | 13.4 | 9.0 | 2.7 | 0.6 | 0.5 | 2.0 |
-| Cherokee Parks | SF | 10 | 10.1 | 3.4 | 1.3 | 1.0 | 0.3 | 0.2 | 0.2 |
+| Stephen Jackson | SG | 11 | 16.8 | 8.4 | 2.0 | 2.2 | 0.8 | 0.3 | 1.7 |
+| Shawn Kemp | C | 11 | 25.9 | 8.4 | 7.4 | 0.8 | 1.1 | 0.5 | 1.9 |
+| Scott Padgett | PF | 11 | 33.5 | 13.5 | 8.9 | 2.5 | 0.6 | 0.5 | 1.9 |
+| Cherokee Parks | SF | 11 | 10.4 | 3.5 | 1.5 | 0.9 | 0.3 | 0.2 | 0.2 |
 | Udonis Haslem | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | John Wallace | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
@@ -45,19 +45,19 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Malik Allen | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Caron Butler | 9 | 39/108 | .361 | 1/8 | .125 | 15/22 | .682 | 15 | 29 |
-| Rasual Butler | 0 | 8/19 | .421 | 3/8 | .375 | 3/5 | .600 | 1 | 3 |
+| Rasual Butler | 0 | 8/21 | .381 | 3/10 | .300 | 3/5 | .600 | 1 | 4 |
 | Anthony Carter | 0 | 2/8 | .250 | 1/2 | .500 | 2/2 | 1.000 | 1 | 2 |
-| LaPhonso Ellis | 0 | 7/29 | .241 | 3/15 | .200 | 4/4 | 1.000 | 1 | 15 |
-| Brian Grant | 3 | 40/61 | .656 | 0/1 | .000 | 8/10 | .800 | 13 | 21 |
-| Mike James | 10 | 45/100 | .450 | 14/40 | .350 | 9/14 | .643 | 4 | 43 |
-| Eddie Jones | 3 | 38/90 | .422 | 15/32 | .469 | 18/29 | .621 | 7 | 17 |
+| LaPhonso Ellis | 0 | 8/33 | .242 | 3/17 | .176 | 4/4 | 1.000 | 1 | 17 |
+| Brian Grant | 4 | 46/72 | .639 | 0/2 | .000 | 10/13 | .769 | 16 | 27 |
+| Mike James | 11 | 50/112 | .446 | 19/48 | .396 | 10/15 | .667 | 5 | 46 |
+| Eddie Jones | 4 | 41/95 | .432 | 16/34 | .471 | 22/35 | .629 | 7 | 17 |
 | Sean Lampley | 0 | 1/1 | 1.000 | 1/1 | 1.000 | 0/0 | N/A | 0 | 1 |
-| Dwyane Wade | 8 | 58/110 | .527 | 7/25 | .280 | 39/41 | .951 | 12 | 35 |
+| Dwyane Wade | 9 | 62/120 | .517 | 7/27 | .259 | 46/49 | .939 | 14 | 39 |
 | Jerome Beasley | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Stephen Jackson | 0 | 33/83 | .398 | 6/24 | .250 | 14/17 | .824 | 7 | 11 |
-| Shawn Kemp | 7 | 30/69 | .435 | 0/2 | .000 | 26/34 | .765 | 24 | 49 |
-| Scott Padgett | 10 | 55/124 | .444 | 11/36 | .306 | 13/20 | .650 | 24 | 66 |
-| Cherokee Parks | 0 | 14/38 | .368 | 3/8 | .375 | 3/4 | .750 | 3 | 10 |
+| Stephen Jackson | 0 | 36/89 | .404 | 6/25 | .240 | 14/17 | .824 | 9 | 13 |
+| Shawn Kemp | 7 | 33/81 | .407 | 0/2 | .000 | 26/34 | .765 | 27 | 54 |
+| Scott Padgett | 11 | 60/137 | .438 | 13/39 | .333 | 15/22 | .682 | 25 | 73 |
+| Cherokee Parks | 0 | 15/41 | .366 | 3/8 | .375 | 5/6 | .833 | 3 | 13 |
 | Udonis Haslem | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | John Wallace | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 
@@ -94,8 +94,8 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/Team_Stats.md) | November 1-7, 2003 | 2 | Complete |
 | [Week 2](Week_2/Team_Stats.md) | November 8-14, 2003 | 4 | Complete |
-| [Week 3](Week_3/Team_Stats.md) | November 15-21, 2003 | 4 | Through November 21, 2003 |
-| [Week 4](Week_4/Team_Stats.md) | November 22-30, 2003 | 0 | Not started |
+| [Week 3](Week_3/Team_Stats.md) | November 15-21, 2003 | 4 | Complete |
+| [Week 4](Week_4/Team_Stats.md) | November 22-30, 2003 | 1 | Through November 22, 2003 |
 
 Departures retain their completed Miami appearances. Arrivals enter from their first applicable period. Team wins and losses count games once, not once per player.
 

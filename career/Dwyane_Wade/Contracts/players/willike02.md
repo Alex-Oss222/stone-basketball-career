@@ -2,9 +2,9 @@
 
 # Contract | Kevin Willis
 
-Known through: 2003-11-21. [Open interactive contract](willike02.html#contract) · [Contract history](willike02.html#contract-history)
+Known through: 2003-11-22. [Open interactive contract](willike02.html#contract) · [Contract history](willike02.html#contract-history)
 
-Kevin Willis: free agent expiring. Evidence cutoff: 2003-11-21.
+Kevin Willis: free agent expiring. Evidence cutoff: 2003-11-22.
 
 ## Current contract
 

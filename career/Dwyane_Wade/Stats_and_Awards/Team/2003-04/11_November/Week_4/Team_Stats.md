@@ -4,13 +4,13 @@
 
 NBA regular season · November 22-30, 2003
 
-As of November 21, 2003: not started. The 16-player control register includes contracts, options, camp contracts and unsigned rights; it is not a 16-player active roster.
+As of November 22, 2003: 1 closed Miami game in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
 | G | W | L | WIN% | PPG | OPP PPG | DIFF |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 0 | 0 | 0 | N/A | N/A | N/A | N/A |
+| 1 | 0 | 1 | .000 | 88.0 | 90.0 | -2.0 |
 
 ## Player production
 
@@ -20,18 +20,18 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Malik Allen | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Caron Butler | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Rasual Butler | SG/SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Rasual Butler | SG/SF | 1 | 9.0 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 1.0 |
 | Anthony Carter | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| LaPhonso Ellis | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Brian Grant | C/PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Mike James | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Eddie Jones | SG/SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| LaPhonso Ellis | PF | 1 | 5.6 | 2.0 | 2.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Brian Grant | C/PF | 1 | 41.7 | 14.0 | 9.0 | 1.0 | 3.0 | 0.0 | 3.0 |
+| Mike James | PG | 1 | 41.5 | 16.0 | 4.0 | 5.0 | 2.0 | 1.0 | 4.0 |
+| Eddie Jones | SG/SF | 1 | 12.6 | 11.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 |
 | Sean Lampley | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Dwyane Wade | SG/PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Stephen Jackson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Shawn Kemp | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Scott Padgett | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Cherokee Parks | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Dwyane Wade | SG/PG | 1 | 40.5 | 15.0 | 6.0 | 6.0 | 1.0 | 2.0 | 2.0 |
+| Stephen Jackson | SG | 1 | 19.5 | 6.0 | 4.0 | 1.0 | 1.0 | 0.0 | 3.0 |
+| Shawn Kemp | C | 1 | 26.1 | 6.0 | 8.0 | 1.0 | 3.0 | 0.0 | 2.0 |
+| Scott Padgett | PF | 1 | 30.6 | 14.0 | 8.0 | 1.0 | 1.0 | 0.0 | 1.0 |
+| Cherokee Parks | SF | 1 | 12.8 | 4.0 | 3.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | Udonis Haslem | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | John Wallace | PF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
@@ -44,18 +44,18 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Malik Allen | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Caron Butler | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Rasual Butler | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
+| Rasual Butler | 0 | 0/2 | .000 | 0/2 | .000 | 0/0 | N/A | 0 | 1 |
 | Anthony Carter | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| LaPhonso Ellis | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Brian Grant | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Mike James | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Eddie Jones | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
+| LaPhonso Ellis | 0 | 1/4 | .250 | 0/2 | .000 | 0/0 | N/A | 0 | 2 |
+| Brian Grant | 1 | 6/11 | .545 | 0/1 | .000 | 2/3 | .667 | 3 | 6 |
+| Mike James | 1 | 5/12 | .417 | 5/8 | .625 | 1/1 | 1.000 | 1 | 3 |
+| Eddie Jones | 1 | 3/5 | .600 | 1/2 | .500 | 4/6 | .667 | 0 | 0 |
 | Sean Lampley | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Dwyane Wade | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Stephen Jackson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Shawn Kemp | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Scott Padgett | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Cherokee Parks | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
+| Dwyane Wade | 1 | 4/10 | .400 | 0/2 | .000 | 7/8 | .875 | 2 | 4 |
+| Stephen Jackson | 0 | 3/6 | .500 | 0/1 | .000 | 0/0 | N/A | 2 | 2 |
+| Shawn Kemp | 0 | 3/12 | .250 | 0/0 | N/A | 0/0 | N/A | 3 | 5 |
+| Scott Padgett | 1 | 5/13 | .385 | 2/3 | .667 | 2/2 | 1.000 | 1 | 7 |
+| Cherokee Parks | 0 | 1/3 | .333 | 0/0 | N/A | 2/2 | 1.000 | 0 | 3 |
 | Udonis Haslem | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | John Wallace | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 

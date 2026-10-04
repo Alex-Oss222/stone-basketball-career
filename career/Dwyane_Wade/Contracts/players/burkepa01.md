@@ -2,9 +2,9 @@
 
 # Contract | Pat Burke
 
-Known through: 2003-11-21. [Open interactive contract](burkepa01.html#contract) · [Contract history](burkepa01.html#contract-history)
+Known through: 2003-11-22. [Open interactive contract](burkepa01.html#contract) · [Contract history](burkepa01.html#contract-history)
 
-Pat Burke: free agent expiring. Evidence cutoff: 2003-11-21.
+Pat Burke: free agent expiring. Evidence cutoff: 2003-11-22.
 
 ## Current contract
 
