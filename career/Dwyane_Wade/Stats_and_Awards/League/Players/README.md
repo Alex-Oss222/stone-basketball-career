@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-01-10**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-01-11**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -297,7 +297,7 @@ Card date: **2004-01-10**. 504 registry players, one Markdown card and one inter
 | [Shane Battier](battish01.md) | Memphis Grizzlies | 25 | sourced | [open](battish01.html) |
 | [Shawn Marion](mariosh01.md) | Phoenix Suns | 25 | sourced | [open](mariosh01.html) |
 | [Tayshaun Prince](princta01.md) | Detroit Pistons | 23 | sourced | [open](princta01.html) |
-| [Terence Morris](morrite01.md) | Houston Rockets | 24 | sourced | [open](morrite01.html) |
+| [Terence Morris](morrite01.md) | Houston Rockets | 25 | sourced | [open](morrite01.html) |
 | [Theron Smith](smithth01.md) | Memphis Grizzlies | None | silhouette | [open](smithth01.html) |
 | [Tim Thomas](thomati01.md) | Milwaukee Bucks | 26 | sourced | [open](thomati01.html) |
 | [Tracy Murray](murratr01.md) | Portland Trail Blazers | None | silhouette | [open](murratr01.html) |
@@ -471,7 +471,7 @@ Card date: **2004-01-10**. 504 registry players, one Markdown card and one inter
 | [Derrick Coleman](colemde01.md) | Philadelphia 76ers | 36 | sourced | [open](colemde01.html) |
 | [Dikembe Mutombo](mutomdi01.md) | New York Knicks | 37 | sourced | [open](mutomdi01.html) |
 | [Eddy Curry](curryed01.md) | Chicago Bulls | 21 | sourced | [open](curryed01.html) |
-| [Efthimios Rentzias](rentzef01.md) | Philadelphia 76ers | 27 | sourced | [open](rentzef01.html) |
+| [Efthimios Rentzias](rentzef01.md) | Philadelphia 76ers | 28 | sourced | [open](rentzef01.html) |
 | [Elden Campbell](campbel01.md) | Detroit Pistons | None | silhouette | [open](campbel01.html) |
 | [Erick Dampier](dampier01.md) | Golden State Warriors | 28 | sourced | [open](dampier01.html) |
 | [Ervin Johnson](johnser02.md) | Minnesota Timberwolves | 36 | sourced | [open](johnser02.html) |

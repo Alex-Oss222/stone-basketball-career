@@ -1145,6 +1145,50 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.32 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-11-ten_day-postela01",
+   "date": "2004-01-11",
+   "kind": "ten_day",
+   "player": "Lavor Postell",
+   "bbr_id": "postela01",
+   "from": null,
+   "to": "San Antonio Spurs",
+   "role": {
+    "player_id": "Lavor Postell",
+    "bbr_id": "postela01",
+    "position": "SG",
+    "games": 12,
+    "minutes": 98
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-21",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.52 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-01-11-ten_day-greenwi01",
+   "date": "2004-01-11",
+   "kind": "ten_day",
+   "player": "Willie Green",
+   "bbr_id": "greenwi01",
+   "from": null,
+   "to": "Washington Wizards",
+   "role": {
+    "player_id": "Willie Green",
+    "bbr_id": "greenwi01",
+    "position": "SG",
+    "games": 53,
+    "minutes": 767
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-01-21",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.08 x fit"
   }
  ]
 }

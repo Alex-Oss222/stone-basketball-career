@@ -2,9 +2,9 @@
 
 # Contract | Robert Horry
 
-Known through: 2004-01-10. [Open interactive contract](horryro01.html#contract) · [Contract history](horryro01.html#contract-history)
+Known through: 2004-01-11. [Open interactive contract](horryro01.html#contract) · [Contract history](horryro01.html#contract-history)
 
-Robert Horry: under contract. Evidence cutoff: 2004-01-10.
+Robert Horry: under contract. Evidence cutoff: 2004-01-11.
 
 ## Current contract
 

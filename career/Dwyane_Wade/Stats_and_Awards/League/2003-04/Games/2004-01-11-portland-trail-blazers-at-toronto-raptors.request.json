@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-11-portland-trail-blazers-at-toronto-raptors",
+ "game_date": "2004-01-11",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Toronto Raptors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Portland Trail Blazers",
+  "rotation": "real"
+ }
+}

@@ -2,9 +2,9 @@
 
 # Contract | Matt Carroll
 
-Known through: 2004-01-10. [Open interactive contract](carroma01.html#contract) · [Contract history](carroma01.html#contract-history)
+Known through: 2004-01-11. [Open interactive contract](carroma01.html#contract) · [Contract history](carroma01.html#contract-history)
 
-Matt Carroll: No verified contract record. Evidence cutoff: 2004-01-10.
+Matt Carroll: No verified contract record. Evidence cutoff: 2004-01-11.
 
 ## Current contract
 

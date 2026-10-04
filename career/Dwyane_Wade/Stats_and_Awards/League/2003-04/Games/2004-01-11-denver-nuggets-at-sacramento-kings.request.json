@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-01-11-denver-nuggets-at-sacramento-kings",
+ "game_date": "2004-01-11",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Denver Nuggets",
+  "rotation": "real"
+ }
+}
