@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-20**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-21**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -412,7 +412,7 @@ Card date: **2003-12-20**. 503 registry players, one Markdown card and one inter
 | [Shareef Abdur-Rahim](abdursh01.md) | Atlanta Hawks | 27 | sourced | [open](abdursh01.html) |
 | [Slava Medvedenko](medvest01.md) | Los Angeles Lakers | 24 | sourced | [open](medvest01.html) |
 | [Stromile Swift](swiftst01.md) | Memphis Grizzlies | 24 | sourced | [open](swiftst01.html) |
-| [Szymon Szewczyk](szewcsz01.md) | Milwaukee Bucks (draft rights) | 20 | sourced | [open](szewcsz01.html) |
+| [Szymon Szewczyk](szewcsz01.md) | Milwaukee Bucks (draft rights) | 21 | sourced | [open](szewcsz01.html) |
 | [Tim Duncan](duncati01.md) | San Antonio Spurs | 27 | sourced | [open](duncati01.html) |
 | [Tom Gugliotta](guglito01.md) | Phoenix Suns | 34 | sourced | [open](guglito01.html) |
 | [Tommy Smith](smithto03.md) | Chicago Bulls (draft rights) | 23 | silhouette | [open](smithto03.html) |
@@ -473,7 +473,7 @@ Card date: **2003-12-20**. 503 registry players, one Markdown card and one inter
 | [Efthimios Rentzias](rentzef01.md) | Philadelphia 76ers | 27 | sourced | [open](rentzef01.html) |
 | [Elden Campbell](campbel01.md) | Detroit Pistons | None | silhouette | [open](campbel01.html) |
 | [Erick Dampier](dampier01.md) | Golden State Warriors | 28 | sourced | [open](dampier01.html) |
-| [Ervin Johnson](johnser02.md) | Minnesota Timberwolves | 35 | sourced | [open](johnser02.html) |
+| [Ervin Johnson](johnser02.md) | Minnesota Timberwolves | 36 | sourced | [open](johnser02.html) |
 | [Etan Thomas](thomaet01.md) | Washington Wizards | None | silhouette | [open](thomaet01.html) |
 | [Evan Eschmeyer](eschmev01.md) | Golden State Warriors | 28 | silhouette | [open](eschmev01.html) |
 | [Francisco Elson](elsonfr01.md) | Denver Nuggets | None | silhouette | [open](elsonfr01.html) |

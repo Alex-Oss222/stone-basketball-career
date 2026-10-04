@@ -2,9 +2,9 @@
 
 # Contract | Earl Watson
 
-Known through: 2003-12-20. [Open interactive contract](watsoea01.html#contract) · [Contract history](watsoea01.html#contract-history)
+Known through: 2003-12-21. [Open interactive contract](watsoea01.html#contract) · [Contract history](watsoea01.html#contract-history)
 
-Earl Watson: under contract. Evidence cutoff: 2003-12-20.
+Earl Watson: under contract. Evidence cutoff: 2003-12-21.
 
 ## Current contract
 

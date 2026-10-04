@@ -2,9 +2,9 @@
 
 # Contract | Udonis Haslem
 
-Known through: 2003-12-20. [Open interactive contract](hasleud01.html#contract) · [Contract history](hasleud01.html#contract-history)
+Known through: 2003-12-21. [Open interactive contract](hasleud01.html#contract) · [Contract history](hasleud01.html#contract-history)
 
-Udonis Haslem: camp contract. Evidence cutoff: 2003-12-20.
+Udonis Haslem: camp contract. Evidence cutoff: 2003-12-21.
 
 ## Current contract
 

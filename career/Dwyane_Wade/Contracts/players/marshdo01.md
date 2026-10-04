@@ -2,9 +2,9 @@
 
 # Contract | Donyell Marshall
 
-Known through: 2003-12-20. [Open interactive contract](marshdo01.html#contract) · [Contract history](marshdo01.html#contract-history)
+Known through: 2003-12-21. [Open interactive contract](marshdo01.html#contract) · [Contract history](marshdo01.html#contract-history)
 
-Donyell Marshall: under contract. Evidence cutoff: 2003-12-20.
+Donyell Marshall: under contract. Evidence cutoff: 2003-12-21.
 
 ## Current contract
 

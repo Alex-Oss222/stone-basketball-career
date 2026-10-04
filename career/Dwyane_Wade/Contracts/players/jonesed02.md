@@ -2,9 +2,9 @@
 
 # Contract | Eddie Jones
 
-Known through: 2003-12-20. [Open interactive contract](jonesed02.html#contract) · [Contract history](jonesed02.html#contract-history)
+Known through: 2003-12-21. [Open interactive contract](jonesed02.html#contract) · [Contract history](jonesed02.html#contract-history)
 
-Eddie Jones: under contract. Evidence cutoff: 2003-12-20.
+Eddie Jones: under contract. Evidence cutoff: 2003-12-21.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Kendrick Perkins
 
-Known through: 2003-12-20. [Open interactive contract](perkike01.html#contract) · [Contract history](perkike01.html#contract-history)
+Known through: 2003-12-21. [Open interactive contract](perkike01.html#contract) · [Contract history](perkike01.html#contract-history)
 
-Kendrick Perkins: No verified contract record. Evidence cutoff: 2003-12-20.
+Kendrick Perkins: No verified contract record. Evidence cutoff: 2003-12-21.
 
 ## Current contract
 
