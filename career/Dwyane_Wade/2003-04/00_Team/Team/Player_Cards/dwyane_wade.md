@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG / PG  
 **Age at assessment:** 19 · **Height:** 6-6 in shoes · **Weight:** 220 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-02-20 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-02-21 
 
 **Contract/control:** Rookie-scale contract signed July 21, 2003: $2,197,000 counted in 2003-04, three seasons plus a 2006-07 team option; 120% of scale at the maximum, 80% protected. (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -84,6 +84,7 @@ Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.105. Pressure concerns affect t
 | 2004-01-16 | Staff rotation of 2004-01-16: starter at SG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-16/rotation.json) |
 | 2004-01-30 | Staff rotation of 2004-01-30: starter at SG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-30/rotation.json) |
 | 2004-02-13 | Staff rotation of 2004-02-13: starter at SG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-02-13/rotation.json) |
+| February 21, 2004 | Injured (day-to-day) in event `2004-02-21-denver-nuggets-at-miami-heat`: out 1 game; the game builder leaves him out of Miami's next 1 game. No grade change. | [Game 3 result](../../../06_Regular_Season/02_February/Week_3/Game_3.md) |
 
 ## Sources and uncertainty
 
@@ -103,7 +104,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2003-04 | MIA | 56 | 51 | 34.9 | 17.4 | 4.7 | 4.6 | 1.6 | 0.9 | 1.1 | 50.4% | 37.9% | 89.9% |
+| 2003-04 | MIA | 57 | 52 | 34.8 | 17.3 | 4.7 | 4.6 | 1.7 | 0.9 | 1.1 | 50.4% | 37.4% | 89.9% |
 
 Source: [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json) for roster status; detailed historical statistical lines have not yet been imported.
 

@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG  
 **Age at assessment:** 25 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-02-20 
+**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-02-21 
 
 **Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $663,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 3 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -61,7 +61,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | San Antonio Spurs | 80 | N/A | 28.2 | 11.8 | 3.6 | 2.3 | 1.6 | 0.4 | 2.2 | 0.435 | 0.320 | 0.760 |
-| 2003-04 | MIA | 53 | 0 | 17.0 | 8.6 | 2.3 | 1.2 | 0.8 | 0.2 | 1.5 | 43.8% | 38.6% | 77.0% |
+| 2003-04 | MIA | 54 | 0 | 17.1 | 9.0 | 2.3 | 1.3 | 0.8 | 0.2 | 1.5 | 44.6% | 40.2% | 78.9% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

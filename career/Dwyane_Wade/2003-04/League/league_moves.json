@@ -2333,6 +2333,46 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.53 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-02-21-expire-goldwan01",
+   "date": "2004-02-21",
+   "kind": "expire",
+   "player": "Anthony Goldwire",
+   "bbr_id": "goldwan01",
+   "from": "Milwaukee Bucks",
+   "to": null,
+   "role": {
+    "player_id": "Anthony Goldwire",
+    "bbr_id": "goldwan01",
+    "position": "PG",
+    "games": 11,
+    "minutes": 85
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-02-21-ten_day-brunsri01",
+   "date": "2004-02-21",
+   "kind": "ten_day",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": null,
+   "to": "Milwaukee Bucks",
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 40,
+    "minutes": 412
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-03-02",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.35 x fit"
   }
  ]
 }
