@@ -18,5 +18,6 @@ days: 22-end
 - 2003-12-26: Miami Heat 104 at Washington Wizards 93 — Miami Heat W 104-93 ([Game 2](Game_2.md), event `2003-12-26-miami-heat-at-washington-wizards`)
 - 2003-12-27: New York Knicks 74 at Miami Heat 87 — Miami Heat W 87-74 ([Game 3](Game_3.md), event `2003-12-27-new-york-knicks-at-miami-heat`)
 - 2003-12-29: Miami Heat 96 at Chicago Bulls 78 — Miami Heat W 96-78 ([Game 4](Game_4.md), event `2003-12-29-miami-heat-at-chicago-bulls`)
+- 2003-12-30: Miami Heat 103 at New York Knicks 97 — Miami Heat W 103-97 ([Game 5](Game_5.md), event `2003-12-30-miami-heat-at-new-york-knicks`)
 
 ## Consequences

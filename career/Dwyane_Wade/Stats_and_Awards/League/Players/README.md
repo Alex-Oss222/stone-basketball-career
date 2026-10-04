@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-29**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-30**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -262,7 +262,7 @@ Card date: **2003-12-29**. 503 registry players, one Markdown card and one inter
 | [Lamar Odom](odomla01.md) | Los Angeles Clippers | 24 | sourced | [open](odomla01.html) |
 | [Lamond Murray](murrala01.md) | Toronto Raptors | None | silhouette | [open](murrala01.html) |
 | [Latrell Sprewell](sprewla01.md) | Minnesota Timberwolves | 33 | silhouette | [open](sprewla01.html) |
-| [LeBron James](jamesle01.md) | Cleveland Cavaliers | 18 | sourced | [open](jamesle01.html) |
+| [LeBron James](jamesle01.md) | Cleveland Cavaliers | 19 | sourced | [open](jamesle01.html) |
 | [Lee Nailon](nailole01.md) | Atlanta Hawks | 28 | silhouette | [open](nailole01.html) |
 | [Linton Johnson](johnsli01.md) | Chicago Bulls | None | silhouette | [open](johnsli01.html) |
 | [Luke Walton](waltolu01.md) | Los Angeles Lakers | 23 | sourced | [open](waltolu01.html) |
@@ -371,7 +371,7 @@ Card date: **2003-12-29**. 503 registry players, one Markdown card and one inter
 | [Karl Malone](malonka01.md) | Los Angeles Lakers | 40 | sourced | [open](malonka01.html) |
 | [Keith Van Horn](vanhoke01.md) | New York Knicks | 28 | sourced | [open](vanhoke01.html) |
 | [Kenny Thomas](thomake01.md) | Philadelphia 76ers | 26 | sourced | [open](thomake01.html) |
-| [Kenyon Martin](martike01.md) | New Jersey Nets | 25 | sourced | [open](martike01.html) |
+| [Kenyon Martin](martike01.md) | New Jersey Nets | 26 | sourced | [open](martike01.html) |
 | [Kevin Garnett](garneke01.md) | Minnesota Timberwolves | 27 | sourced | [open](garneke01.html) |
 | [LaPhonso Ellis](ellisla01.md) | Miami Heat | 33 | sourced | [open](ellisla01.html) |
 | [Lawrence Funderburke](fundela01.md) | Sacramento Kings | 33 | silhouette | [open](fundela01.html) |

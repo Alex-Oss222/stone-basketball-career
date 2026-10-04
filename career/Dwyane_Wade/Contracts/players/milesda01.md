@@ -2,9 +2,9 @@
 
 # Contract | Darius Miles
 
-Known through: 2003-12-29. [Open interactive contract](milesda01.html#contract) · [Contract history](milesda01.html#contract-history)
+Known through: 2003-12-30. [Open interactive contract](milesda01.html#contract) · [Contract history](milesda01.html#contract-history)
 
-Darius Miles: under rookie contract. Evidence cutoff: 2003-12-29.
+Darius Miles: under rookie contract. Evidence cutoff: 2003-12-30.
 
 ## Current contract
 
