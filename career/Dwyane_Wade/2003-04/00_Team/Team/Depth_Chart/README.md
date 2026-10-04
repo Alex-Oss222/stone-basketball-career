@@ -1,10 +1,6 @@
 # Working depth chart
 
-This is the June 26 holding chart.
-
-The position order is carried from Miami's final 2002-03 usage-based depth chart. It is a continuity baseline, not Pat Riley's final 2003-04 decision.
-
-Dwyane Wade and Jerome Beasley are listed as unassigned draft-rights players until the coaching staff establishes their new-season place. Alonzo Mourning is separately listed as unavailable because he did not play in 2002-03 due illness.
+The staff's chart in force on 2003-11-11 comes from its 2003-11-07 decision. The staff reviews the roster every fourteen days (`scripts/review_rotation.py`); each review is kept under `Reviews/<date>/`.
 
 - [Readable depth chart](depth_chart.md)
-- [Machine-readable depth chart](depth_chart.json)
+- [Camp decision (machine-readable)](depth_chart.json) and [camp rotation](rotation.json)

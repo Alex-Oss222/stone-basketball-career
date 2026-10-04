@@ -168,7 +168,7 @@ def miami_results(root=ROOT, season=SEASON):
     so both folders feed `injured_out`."""
     base = Path(root) / season_base(season)
     results = []
-    for folder in ("05_Preseason", "06_Regular_Season"):
+    for folder in ("05_Preseason", "06_Regular_Season", "07_Play_In_Tournament", "08_Playoffs"):
         for path in (base / folder).rglob("Game_*.result.json"):
             data = read_json(path)
             if MIAMI in (data.get("home"), data.get("away")):
@@ -306,7 +306,8 @@ def miami_side(game_date, root=ROOT, season=SEASON, with_lists=False):
     team = Path(root) / season_base(season) / "00_Team/Team"
     rotation, depth = rotation_in_force(game_date, root, season)
     results = [r for r in miami_results(root, season) if r.get("game_date", "") < game_date]
-    injured = injured_out(results)
+    from .injuries import carried_in
+    injured = injured_out(results, start=carried_in(season, root))
     if injured:
         # `injured_out` counts closed results only; the Miami games already on the calendar between the last
         # closed result and this game (requests written in the same run, not yet played) are games missed too.
@@ -345,6 +346,10 @@ def miami_side(game_date, root=ROOT, season=SEASON, with_lists=False):
         return row
     # The request carries the twelve who dress (the engine's 2003-04 limit); the injured list is the ledger's.
     players = kept + [entry(n) for n in actives[len(kept):]]
+    # The engine plays each man at his listed position (rebounding, blocks, the guard-and-big rule); the
+    # staff's slot assignments decide starts and minutes only.
+    listed_position = {p["name"]: p["positions"][0] for p in active if p.get("positions")}
+    players = [dict(p, position=listed_position.get(p["player_id"], p["position"])) for p in players]
     if not with_lists:
         return players, injured
     return players, injured, {"injured_list": il, "placements": placements, "activations": activations}

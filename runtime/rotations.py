@@ -36,6 +36,15 @@ from .player_stats import alias
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_MINUTES_PER_GAME = 44.0     # input sanity bound; the kernel's caps decide game minutes
+# Rotation model 2 (games from ROTATION_MODEL_2_FROM; earlier games keep the inputs they were played with).
+ROTATION_MODEL_2_FROM = "2003-11-12"
+RULE3_RAISE_CAP = 4.0           # rule 3: no staying player gains more than this per game from departed minutes (judgement)
+ROTATION_DEPTH = 9              # beyond the nine largest minutes, a missed game was mostly a coach's decision
+ROSTER_LIMIT = 15               # a 2003-04 club carries fifteen: twelve dress, three on the injured list
+
+
+def rotation_model(game_date):
+    return 2 if game_date >= ROTATION_MODEL_2_FROM else 1
 NOT_HELD = ("free_agent", "released", "waived", "renounced", "traded", "retired", "signed_elsewhere", "voided")
 
 
@@ -178,7 +187,29 @@ def _share(p, season_games):
     return p["minutes"] / p["games"] * _availability(p, season_games)
 
 
-def real_rotation(club_name, club, season_games, rating_index=None, *, fraction, exclude=(), arrivals=(), pace=1.0):
+def _raise_capped(staying, season_games, extra):
+    """Model 2 of rule 3: per-game raises from departed minutes, spread in proportion to real minutes,
+    no player above RULE3_RAISE_CAP more; what a capped player cannot take goes to the others."""
+    raise_by = {id(p): 0.0 for p in staying}
+    weights = {id(p): _share(p, season_games) for p in staying}
+    left = extra
+    while left > 1e-9:
+        open_ = [p for p in staying if raise_by[id(p)] < RULE3_RAISE_CAP - 1e-9 and weights[id(p)] > 0]
+        if not open_:
+            break
+        total = sum(weights[id(p)] for p in open_)
+        given = 0.0
+        for p in open_:
+            # A raise in expected minutes per club game becomes a raise per game played.
+            share = left * weights[id(p)] / total / max(_availability(p, season_games), 1e-9)
+            add = min(RULE3_RAISE_CAP - raise_by[id(p)], share)
+            raise_by[id(p)] += add
+            given += add * _availability(p, season_games)
+        left -= given
+    return raise_by
+
+
+def real_rotation(club_name, club, season_games, rating_index=None, *, fraction, exclude=(), arrivals=(), pace=1.0, model=1):
     """TeamInput for a real club on the date at `fraction` of the season, rotation order first.
 
     `club` is the roster file entry; `season_games` the club's regular-season games.
@@ -201,12 +232,26 @@ def real_rotation(club_name, club, season_games, rating_index=None, *, fraction,
     wanted = sum(_share(p, season_games) for p in incoming)
     stay_share = sum(_share(p, season_games) for p in staying)
     factor = max(0.25, 1 + (freed - wanted) / stay_share) if stay_share else 1.0
-    players = []
+    raises = _raise_capped(staying, season_games, freed - wanted) if model >= 2 and factor > 1 else {}
+    entries = []
     for p, scale in [(p, factor) for p in staying] + [(p, 1.0) for p in incoming]:
-        per_game = min(MAX_MINUTES_PER_GAME, p["minutes"] / p["games"] * scale)
+        if raises or (model >= 2 and factor > 1):
+            per_game = min(MAX_MINUTES_PER_GAME, p["minutes"] / p["games"] + raises.get(id(p), 0.0))
+        else:
+            per_game = min(MAX_MINUTES_PER_GAME, p["minutes"] / p["games"] * scale)
         if per_game <= 0:
             continue
-        availability = _availability(p, season_games)
+        entries.append([p, per_game, _availability(p, season_games)])
+    if model >= 2:
+        # Reserves: a missed game was mostly a coach's decision, so he dresses with his minutes per club game
+        # (season total kept); the fifteen with the largest expected minutes make up the club.
+        entries.sort(key=lambda e: -e[1])
+        for e in entries[ROTATION_DEPTH:]:
+            e[1], e[2] = e[1] * e[2], 1.0
+        entries.sort(key=lambda e: -(e[1] * e[2]))
+        entries = entries[:ROSTER_LIMIT]
+    players = []
+    for p, per_game, availability in entries:
         profile = rating_index.engine_profile(p["player_id"], p["bbr_id"]) if rating_index else {}
         players.append((per_game, availability, PlayerInput(p["player_id"], primary_position(p["position"]),
                                                             round(per_game, 2), {}, profile,

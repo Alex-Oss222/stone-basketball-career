@@ -43,7 +43,7 @@ from dataclasses import replace
 from .injuries import rest_days, simulated_ages
 from .player_stats import alias
 from .rosters import SIMULATED_CLUB
-from .rotations import club_pace, load_rosters, miami_departed, miami_departures, miami_holds, real_rotation, season_fraction
+from .rotations import club_pace, load_rosters, miami_departed, miami_departures, miami_holds, real_rotation, rotation_model, season_fraction
 from .schedule import games_per_team
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -72,7 +72,7 @@ def _club(spec, actives, root, rating_index, season=None, game_date=None):
                              fraction=season_fraction(season, game_date, root),
                              exclude=miami_holds(season, game_date, root) | miami_departed(season, game_date, root),
                              arrivals=miami_departures(season, spec["team"], game_date, root),
-                             pace=club_pace(season, spec["team"], root))
+                             pace=club_pace(season, spec["team"], root), model=rotation_model(game_date))
         return replace(team, rest_days=rest)
     if "baseline" in spec:
         clubs = load_clubs(Path(root) / spec["baseline"])

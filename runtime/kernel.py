@@ -79,7 +79,7 @@ MINUTES_CAP = 42.0              # short-handed raises stop here (or at a player'
 SHORT_HANDED_RAISE = 8.0        # and at most this far above his average
 SUB_SECONDS = 180
 CLOSING_SECONDS, CLOSING_MARGIN = 300, 10       # 4th quarter: closing lineup in the last 5:00 of a 10-point game
-GARBAGE_MARGIN, GARBAGE_PER_MINUTE = 15, 1.0    # 4th quarter: bench when the lead reaches 15 + 1 per minute left
+GARBAGE_MARGIN, GARBAGE_PER_MINUTE = 20, 1.0    # 4th quarter: bench when the lead reaches 20 + 1 per minute left (kernel 2003.9; was 15)
 FOUL_WINDOWS = ((3, 24), (6, 45), (10, 75))     # trailing by at most N: foul with at most S seconds left
 LATE_SECONDS = 150              # leaders run the clock and trailers hurry inside the last 2:30
 HEAVE_SECONDS = 3.0             # a possession with less time than this gets a shot off only in proportion
@@ -93,6 +93,10 @@ LAST_SHOT = 0.7                # make probability factor on a period's final, fu
 # Fatigue and injuries (problem E7, roadmap item 12).
 BACK_TO_BACK_POINTS = 1.5       # a club on the second night of a back-to-back plays this much worse
 INJURY_PER_36 = 0.016           # chance of an injury per 36 minutes played
+# A one-game absence (illness, personal) for the simulated club, drawn before the game (kernel 2003.9).
+# Its injuries already match 2002-03 regulars' missed games at 30+ minutes; 25-30 minute regulars missed
+# about 1.3 more of 82 than the injury model loses, so 1.5% a game (judgement; docs/engine_model.md).
+ABSENCE_PER_GAME = 0.015
 INJURY_AGE = ((25, 0.85), (29, 1.0), (32, 1.2), (99, 1.45))     # (up to age, risk factor)
 BACK_TO_BACK_INJURY = 1.2       # risk factor on the second night of a back-to-back
 # (share of injuries, fewest and most games missed): day-to-day up to season-ending.
@@ -500,6 +504,10 @@ class _Club:
         self.players = {p.player_id: p for p in team.players}
         # Availability is drawn in roster order before anything else in the game.
         available = [p.player_id for p in team.players if p.availability >= 1 or rng.random() < p.availability]
+        self.absences = []
+        if team.injuries:
+            self.absences = [pid for pid in available if rng.random() < ABSENCE_PER_GAME]
+            available = [pid for pid in available if pid not in self.absences]
         need = min(len(team.players), MIN_DRESSED)
         if len(available) < need:
             # Hardship: the missing players most likely to have been available come back first
@@ -1028,6 +1036,8 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
                              for side, club in clubs.items()},
         "game_seconds": elapsed,
         "injuries": injuries,
+        "absences": [{"side": side, "player_id": pid, "kind": "illness or personal", "games_out": 1}
+                     for side, club in clubs.items() for pid in club.absences],
         "shot_tracking": tracking_metadata(spatial_environment),
         "shots": shots,
         "terminated": True,

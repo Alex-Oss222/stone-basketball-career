@@ -1,4 +1,4 @@
-# Engine model and calibration (kernel 2003.8)
+# Engine model and calibration (kernel 2003.9)
 
 What the possession engine does beyond the per-play rates, why, and how it was checked. Code: `runtime/kernel.py`, `runtime/rotations.py`. Check: `python scripts/engine_diagnostics.py 4 --check --summary-json /tmp/engine-summary.json`, plus `--defense-test` and `--home-test` (analysis only: made-up entropy, nothing written to the career). Reports and optional JSON contain league aggregates, never player results for the career or front office.
 
@@ -116,6 +116,17 @@ Four seasons of the real 2003-04 schedule without Miami's games (4,428 games, 79
 Box totals per team: FGA 81.1 (80.8), FTA 24.8 (24.4), turnovers 15.2 (14.9), offensive rebounds 12.1 (12.0), assists 21.7 (21.5), fouls 22.1 (21.8); environment values in brackets. Three-point attempts run at 15.1 against 14.7: the 2003-04 players' own three-point rates, weighted by their attempts, are about 3% above the 2002-03 environment.
 
 Later kernels (the record above was measured on 2003.3): with team pace and back-to-backs (2003.5), three seasons give margin SD 13.1, overtime 5.0%, home win 61.2%, foul-outs 0.22 and club spread 4.6.
+
+### Kernel 2003.9 and rotation model 2 (games from November 12, 2003)
+
+Three problems from the November 2003 audit, fixed together and checked on the same diagnostic schedule. Games before November 12 keep the inputs and kernel they were played with.
+
+- **Rule 3 raises (rotation model 2, `runtime/rotations.py`).** Minutes a departed player leaves are spread over the staying rotation in proportion to real minutes, but no one gains more than `RULE3_RAISE_CAP` = 4 a game; the rest goes to the others. Before, Atlanta's uniform factor of 1.16 put Jason Terry at 43.2 input minutes against a real 37.3.
+- **Reserves dress (model 2).** Beyond a club's nine largest minutes, a missed game was mostly a coach's decision, so the reserve dresses every night at his real minutes per club game (season total kept), and a club carries at most fifteen. Clubs now dress 11.8 a game on average, against 10.1 before, and only 1.4% of team-games dress nine or fewer, against 32.5%.
+- **Garbage time (kernel 2003.9).** Real minutes already include real blowouts, so the bench now takes over at a 20-point lead plus one per minute left (was 15). Per game played against real minutes, rotation ranks 1 and 2 moved from 0.97-0.98 to 0.996 and 1.002; ranks 3 to 7 sit 2-5% above (short-handed raises). Season totals in the diagnostics run about 3.7% low for everyone because the schedule leaves out Miami's games.
+- **One-game absences for the simulated club (kernel 2003.9).** Miami's injuries already lose about what 2002-03 regulars at 30+ minutes missed (7.7 games of 82, median 4); 25-30 minute regulars missed about 1.3 more than the injury model loses. `ABSENCE_PER_GAME` = 1.5% a game (illness or personal, one game), drawn before the game and reported in the result's `absences`. Larger gaps below 25 minutes are mostly coach's decisions, which Miami's own rotation makes.
+
+Four seasons (4,428 games) on kernel 2003.9 with model 2 pass `--check`: points 94.9 (95.1), margin SD 13.4, overtime 5.2%, home win 60.0%, foul-outs 0.22 a game, club spread 4.7; FGA 80.9 (80.8), FTA 24.8 (24.4), turnovers 15.1 (14.9), assists 21.6 (21.5); FG 43.9% (44.2%); players with 30+ input minutes 35.6 against 35.3.
 
 ### Kernel 2003.6 recalibration
 

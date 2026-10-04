@@ -19,26 +19,31 @@
     ],
     "SF": [
       "Caron Butler",
-      "Sean Lampley",
-      "Cherokee Parks"
+      "Sean Lampley"
     ],
     "PF": [
       "Scott Padgett",
       "LaPhonso Ellis",
-      "Jerome Beasley",
       "Udonis Haslem",
       "John Wallace"
     ],
     "C": [
       "Brian Grant",
-      "Shawn Kemp"
+      "Shawn Kemp",
+      "Cherokee Parks"
     ]
   },
   "battles_drawn": {
     "SG": "Eddie Jones",
     "PF": "Scott Padgett"
   },
-  "unassigned_draft_rights": [],
+  "unassigned_draft_rights": [
+    {
+      "name": "Jerome Beasley",
+      "status": "draft_rights_unsigned",
+      "note": "No. 33 pick; unsigned, so not a game-day player"
+    }
+  ],
   "unassigned_arrivals": [],
   "unavailable": [],
   "departed": [
@@ -91,6 +96,12 @@
       "name": "Mike Batiste",
       "date": "2003-10-27",
       "status": "voided"
+    }
+  ],
+  "corrections": [
+    {
+      "date": "2003-11-11",
+      "change": "Jerome Beasley (unsigned draft rights) moved off the PF depth to unassigned_draft_rights; Cherokee Parks listed at C (register correction, he was signed as SF on a guessed position). Dated reviews keep their own charts."
     }
   ]
 }

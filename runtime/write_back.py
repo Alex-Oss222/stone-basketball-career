@@ -139,14 +139,23 @@ def miami_injuries(result):
     return [i for i in result.get("injuries", []) if side and i.get("side") == side]
 
 
+def miami_absences(result):
+    """Miami players the engine kept out of this game only (illness or personal, kernel 2003.9)."""
+    side = miami_side(result)
+    return [a for a in result.get("absences", []) if side and a.get("side") == side]
+
+
 def injuries_table(result):
     rows = miami_injuries(result)
+    away = miami_absences(result)
+    absent = ("Did not dress: " + ", ".join(f"{a['player_id']} ({a.get('kind', 'absence')}, this game only)" for a in away) + ".\n"
+              if away else "")
     if not rows:
-        return "No Miami injury was drawn in this game.\n"
+        return "No Miami injury was drawn in this game.\n" + ("\n" + absent if absent else "")
     text = "| Player | Injury | Games out |\n| --- | --- | ---: |\n"
     for i in rows:
         text += f"| {i['player_id']} | {i.get('kind', 'injury')} | {i['games_out']} |\n"
-    return text
+    return text + ("\n" + absent if absent else "")
 
 
 def result_block(info, result):

@@ -55,9 +55,12 @@ def simulated_ages(season, game_date, root=ROOT):
             if p.get("date_of_birth") and p.get("date_of_birth_from", game_date) <= game_date}
 
 
-def injured_out(results, team=SIMULATED_CLUB):
-    """Player -> games still to miss after the last of `results` (the club's closed results, in order)."""
-    out = {}
+def injured_out(results, team=SIMULATED_CLUB, start=None):
+    """Player -> games still to miss after the last of `results` (the club's closed results, in order).
+
+    `start`: games still to miss when the first of `results` begins (an injury carried in from the
+    previous season, `carried_in`)."""
+    out = dict(start or {})
     for result in results:
         side = "home" if result["home"] == team else "away" if result["away"] == team else None
         if side is None:
@@ -67,3 +70,36 @@ def injured_out(results, team=SIMULATED_CLUB):
             if injury["side"] == side:
                 out[injury["player_id"]] = max(out.get(injury["player_id"], 0), injury["games_out"])
     return out
+
+
+DAYS_PER_GAME = 170 / 82        # a regular season's days per game: an injury's games become days of recovery
+
+
+def previous_season(season):
+    start = int(season[:4]) - 1
+    return f"{start}-{str(start + 1)[-2:]}"
+
+
+def carried_in(season, root=ROOT, team=SIMULATED_CLUB):
+    """Games a player still misses at the start of `season` from an injury drawn in the previous one.
+
+    The games left after the club's last game (regular season, Play-In or playoffs) become days at the
+    regular season's pace; the offseason's days until the club's first game of the new season count as
+    recovery (judgement). An injury that heals in the summer carries nothing."""
+    from .season_games import miami_game_dates, miami_results
+    before = previous_season(season)
+    results = miami_results(root, before) if (Path(root) / f"career/Dwyane_Wade/{before}").is_dir() else []
+    if not results:
+        return {}
+    left = injured_out(results, team)
+    dates = miami_game_dates(root, season)
+    if not left or not dates:
+        return {}
+    gap = (date.fromisoformat(dates[0]) - date.fromisoformat(results[-1]["game_date"])).days
+    out = {}
+    for pid, games in left.items():
+        days = games * DAYS_PER_GAME - gap
+        if days > 0:
+            out[pid] = max(1, round(days / DAYS_PER_GAME))
+    return out
+
