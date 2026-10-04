@@ -2,9 +2,9 @@
 
 # Contract | Quentin Richardson
 
-Known through: 2003-12-23. [Open interactive contract](richaqu01.html#contract) · [Contract history](richaqu01.html#contract-history)
+Known through: 2003-12-24. [Open interactive contract](richaqu01.html#contract) · [Contract history](richaqu01.html#contract-history)
 
-Quentin Richardson: under rookie contract. Evidence cutoff: 2003-12-23.
+Quentin Richardson: under rookie contract. Evidence cutoff: 2003-12-24.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Derek Anderson
 
-Known through: 2003-12-23. [Open interactive contract](anderde01.html#contract) · [Contract history](anderde01.html#contract-history)
+Known through: 2003-12-24. [Open interactive contract](anderde01.html#contract) · [Contract history](anderde01.html#contract-history)
 
-Derek Anderson: under contract. Evidence cutoff: 2003-12-23.
+Derek Anderson: under contract. Evidence cutoff: 2003-12-24.
 
 ## Current contract
 

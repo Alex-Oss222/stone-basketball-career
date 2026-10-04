@@ -2,9 +2,9 @@
 
 # Contract | George Lynch
 
-Known through: 2003-12-23. [Open interactive contract](lynchge01.html#contract) · [Contract history](lynchge01.html#contract-history)
+Known through: 2003-12-24. [Open interactive contract](lynchge01.html#contract) · [Contract history](lynchge01.html#contract-history)
 
-George Lynch: under contract. Evidence cutoff: 2003-12-23.
+George Lynch: under contract. Evidence cutoff: 2003-12-24.
 
 ## Current contract
 

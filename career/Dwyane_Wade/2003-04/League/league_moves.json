@@ -728,6 +728,25 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.93 x fit"
+  },
+  {
+   "id": "2003-04-market-2003-12-24-clear-greenwi01",
+   "date": "2003-12-24",
+   "kind": "clear",
+   "player": "Willie Green",
+   "bbr_id": "greenwi01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Willie Green",
+    "bbr_id": "greenwi01",
+    "position": "SG",
+    "games": 53,
+    "minutes": 767
+   },
+   "contract": null,
+   "note": "cleared waivers from Philadelphia 76ers: a free agent",
+   "waiver": "2003-04-market-2003-12-22-waive-greenwi01"
   }
  ]
 }
