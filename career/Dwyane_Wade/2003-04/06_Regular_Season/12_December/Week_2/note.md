@@ -15,5 +15,6 @@ days: 8-14
 ## Games and events
 
 - 2003-12-09: Phoenix Suns 110 at Miami Heat 106 — Miami Heat L 106-110 ([Game 1](Game_1.md), event `2003-12-09-phoenix-suns-at-miami-heat`)
+- 2003-12-12: Memphis Grizzlies 102 at Miami Heat 100 — Miami Heat L 100-102 ([Game 2](Game_2.md), event `2003-12-12-memphis-grizzlies-at-miami-heat`); injuries: Brian Grant (short, out 7 games)
 
 ## Consequences

@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-12-sacramento-kings-at-utah-jazz",
+ "game_date": "2003-12-12",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Utah Jazz",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ }
+}

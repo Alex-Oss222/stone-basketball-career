@@ -2,9 +2,9 @@
 
 # Contract | Mike Wilks
 
-Known through: 2003-12-11. [Open interactive contract](wilksmi01.html#contract) · [Contract history](wilksmi01.html#contract-history)
+Known through: 2003-12-12. [Open interactive contract](wilksmi01.html#contract) · [Contract history](wilksmi01.html#contract-history)
 
-Mike Wilks: under contract. Evidence cutoff: 2003-12-11.
+Mike Wilks: under contract. Evidence cutoff: 2003-12-12.
 
 ## Current contract
 

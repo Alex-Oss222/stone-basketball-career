@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-12-11**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-12-12**. 503 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -56,7 +56,7 @@ Card date: **2003-12-11**. 503 registry players, one Markdown card and one inter
 | [Jason Williams](willija02.md) | Memphis Grizzlies | 28 | sourced | [open](willija02.html) |
 | [Jay Williams](willija03.md) | Chicago Bulls | 22 | sourced | [open](willija03.html) |
 | [Jeff McInnis](mcinnje01.md) | Portland Trail Blazers | 29 | sourced | [open](mcinnje01.html) |
-| [John Salmons](salmojo01.md) | Philadelphia 76ers | 23 | sourced | [open](salmojo01.html) |
+| [John Salmons](salmojo01.md) | Philadelphia 76ers | 24 | sourced | [open](salmojo01.html) |
 | [John Stockton](stockjo01.md) | Utah Jazz | 41 | sourced | [open](stockjo01.html) |
 | [Juan Dixon](dixonju01.md) | Washington Wizards | 25 | sourced | [open](dixonju01.html) |
 | [Junior Harrington](harriju01.md) | Denver Nuggets | 23 | silhouette | [open](harriju01.html) |

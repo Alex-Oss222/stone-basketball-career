@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-12-12-new-jersey-nets-at-orlando-magic",
+ "game_date": "2003-12-12",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "New Jersey Nets",
+  "rotation": "real"
+ }
+}
