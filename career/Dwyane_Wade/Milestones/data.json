@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2003-11-19",
+  "as_of": "2003-11-21",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 19,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2003-11-19-miami-heat-at-portland-trail-blazers",
+  "current_event": "2003-11-21-miami-heat-at-golden-state-warriors",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2003-11-19"
+              "2003-11-21"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2003-11-19-miami-heat-at-portland-trail-blazers"
+              "2003-11-21-miami-heat-at-golden-state-warriors"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2003-11-19",
+              "2003-11-21",
               "Current checkpoint",
-              "2003-11-19-miami-heat-at-portland-trail-blazers",
+              "2003-11-21-miami-heat-at-golden-state-warriors",
               "Recorded",
               {
                 "label": "Owning event",
@@ -217,11 +217,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -237,7 +237,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -336,6 +336,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -344,7 +348,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-19"
+          "value": "2003-11-21"
         },
         {
           "label": "Team",
@@ -539,11 +543,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -559,7 +563,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -658,6 +662,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -666,7 +674,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-19"
+          "value": "2003-11-21"
         },
         {
           "label": "Team",
@@ -914,11 +922,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -934,7 +942,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -1033,6 +1041,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1041,7 +1053,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-19"
+          "value": "2003-11-21"
         },
         {
           "label": "Team",
@@ -1397,11 +1409,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1417,7 +1429,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -1516,6 +1528,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1524,7 +1540,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-19"
+          "value": "2003-11-21"
         },
         {
           "label": "Team",
@@ -1689,11 +1705,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1709,7 +1725,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -1808,6 +1824,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1816,7 +1836,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-19"
+          "value": "2003-11-21"
         },
         {
           "label": "Team",
@@ -1977,11 +1997,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1997,7 +2017,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -2096,6 +2116,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2104,7 +2128,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-19"
+          "value": "2003-11-21"
         },
         {
           "label": "Team",
@@ -2274,11 +2298,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2294,7 +2318,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -2393,6 +2417,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2401,7 +2429,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-19"
+          "value": "2003-11-21"
         },
         {
           "label": "Team",
@@ -2468,12 +2496,12 @@
             ],
             [
               "SG",
-              "Dwyane Wade, Eddie Jones, Stephen Jackson, Rasual Butler",
+              "Dwyane Wade, Stephen Jackson, Eddie Jones, Rasual Butler",
               "Staff ordering; not a future minutes promise"
             ],
             [
               "SF",
-              "Caron Butler, Cherokee Parks, Sean Lampley",
+              "Caron Butler, Sean Lampley",
               "Staff ordering; not a future minutes promise"
             ],
             [
@@ -2483,11 +2511,11 @@
             ],
             [
               "C",
-              "Shawn Kemp, Brian Grant",
+              "Brian Grant, Shawn Kemp, Cherokee Parks",
               "Staff ordering; not a future minutes promise"
             ]
           ],
-          "notice": "Snapshot: 2003-11-07. Draft rights and unassigned arrivals are not assigned minutes."
+          "notice": "Snapshot: 2003-11-21. Draft rights and unassigned arrivals are not assigned minutes."
         },
         {
           "title": "Role and promise review",
@@ -2619,11 +2647,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2639,7 +2667,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -2738,6 +2766,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2746,7 +2778,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-19"
+          "value": "2003-11-21"
         },
         {
           "label": "Team",
@@ -2763,7 +2795,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "19 closed game records in 2003-04 through 2003-11-19. Competitions remain separate.",
+      "summary": "20 closed game records in 2003-04 through 2003-11-21. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2790,12 +2822,12 @@
             ],
             [
               "regular",
-              12,
-              28.93466388888889,
-              13.583333333333334,
-              4.083333333333333,
-              3.5833333333333335,
-              1.0,
+              13,
+              29.96796153846154,
+              14.615384615384615,
+              4.230769230769231,
+              3.6153846153846154,
+              1.0769230769230769,
               "Complete"
             ]
           ]
@@ -2823,9 +2855,9 @@
             ],
             [
               "regular",
-              58,
-              115,
-              0.5043478260869565,
+              66,
+              127,
+              0.5196850393700787,
               8,
               28,
               0.2857142857142857
@@ -3032,6 +3064,16 @@
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md"
               }
+            ],
+            [
+              "2003-11-21",
+              "regular",
+              "Golden State Warriors",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md"
+              }
             ]
           ]
         },
@@ -3122,11 +3164,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -3142,7 +3184,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json"
         },
         {
           "label": "Negotiation source",
@@ -3241,6 +3283,10 @@
           "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3249,7 +3295,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2003-11-19"
+          "value": "2003-11-21"
         },
         {
           "label": "Team",

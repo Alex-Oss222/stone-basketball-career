@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-21-orlando-magic-at-sacramento-kings",
+ "game_date": "2003-11-21",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Sacramento Kings",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-21-chicago-bulls-at-los-angeles-lakers",
+ "game_date": "2003-11-21",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Los Angeles Lakers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Chicago Bulls",
+  "rotation": "real"
+ }
+}

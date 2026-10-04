@@ -2,9 +2,9 @@
 
 # Contract | Eric Williams
 
-Known through: 2003-11-19. [Open interactive contract](willier01.html#contract) · [Contract history](willier01.html#contract-history)
+Known through: 2003-11-21. [Open interactive contract](willier01.html#contract) · [Contract history](willier01.html#contract-history)
 
-Eric Williams: under contract unverified. Evidence cutoff: 2003-11-19.
+Eric Williams: under contract unverified. Evidence cutoff: 2003-11-21.
 
 ## Current contract
 

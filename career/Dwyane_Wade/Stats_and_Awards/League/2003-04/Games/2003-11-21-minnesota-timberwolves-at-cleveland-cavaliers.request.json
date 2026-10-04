@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-21-minnesota-timberwolves-at-cleveland-cavaliers",
+ "game_date": "2003-11-21",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Cleveland Cavaliers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Minnesota Timberwolves",
+  "rotation": "real"
+ }
+}

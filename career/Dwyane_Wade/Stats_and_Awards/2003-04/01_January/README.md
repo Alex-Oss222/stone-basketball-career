@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2003-11-19](../../../assets/stat_reports/personal_2003-11-19.svg)
+![Player personal information and earned career awards through 2003-11-21](../../../assets/stat_reports/personal_2003-11-21.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-11-07 |
 
-Identity as of 2003-11-19; status snapshot dated 2003-11-07. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2003-11-21; status snapshot dated 2003-11-07. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -39,7 +39,7 @@ No earned professional awards recorded by this page's identity cutoff.
 
 ## Statistics
 
-As of **2003-11-19**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2003-11-21**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -84,7 +84,7 @@ G and GS are counts; MP and counting statistics are **per appearance**. Shooting
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | January 2004 | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [December 2003](../12_December/README.md) | 19 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Season through this month | 19 | Miami Heat | NBA | SG / PG | 12 | 7 | 28.9 | 4.8 | 9.6 | .504 | 0.7 | 2.3 | .286 | 4.2 | 7.2 | .575 | .539 | 3.2 | 3.4 | .951 | 1.2 | 2.8 | 4.1 | 3.6 | 1.2 | 0.6 | 1.0 | 2.3 | 13.6 | .613 | — |
+| Season through this month | 19 | Miami Heat | NBA | SG / PG | 13 | 8 | 30.0 | 5.1 | 9.8 | .520 | 0.6 | 2.2 | .286 | 4.5 | 7.6 | .586 | .551 | 3.8 | 4.0 | .962 | 1.3 | 2.9 | 4.2 | 3.6 | 1.2 | 0.6 | 1.1 | 2.5 | 14.6 | .634 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 

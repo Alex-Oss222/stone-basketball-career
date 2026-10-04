@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2003-11-19**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2003-11-21**. 407 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 83 players</summary>
@@ -287,7 +287,7 @@ Card date: **2003-11-19**. 407 registry players, one Markdown card and one inter
 | [Brian Cook](cookbr01.md) | Los Angeles Lakers | 22 | sourced | [open](cookbr01.html) |
 | [Brian Scalabrine](scalabr01.md) | New Jersey Nets | 25 | sourced | [open](scalabr01.html) |
 | [Brian Skinner](skinnbr01.md) | Milwaukee Bucks | 27 | sourced | [open](skinnbr01.html) |
-| [Carlos Boozer](boozeca01.md) | Cleveland Cavaliers | 21 | sourced | [open](boozeca01.html) |
+| [Carlos Boozer](boozeca01.md) | Cleveland Cavaliers | 22 | sourced | [open](boozeca01.html) |
 | [Chris Bosh](boshch01.md) | Toronto Raptors | 19 | sourced | [open](boshch01.html) |
 | [Chris Mills](millsch01.md) | Boston Celtics | 33 | silhouette | [open](millsch01.html) |
 | [Chris Webber](webbech01.md) | Sacramento Kings | 30 | sourced | [open](webbech01.html) |
@@ -329,7 +329,7 @@ Card date: **2003-11-19**. 407 registry players, one Markdown card and one inter
 | [Michael Bradley](bradlmi01.md) | Toronto Raptors | 24 | silhouette | [open](bradlmi01.html) |
 | [Michael Stewart](stewami01.md) | Cleveland Cavaliers | 28 | silhouette | [open](stewami01.html) |
 | [Michael Sweetney](sweetmi01.md) | New York Knicks | 21 | silhouette | [open](sweetmi01.html) |
-| [Mike Batiste](batismi01.md) | Memphis Grizzlies | 25 | sourced | [open](batismi01.html) |
+| [Mike Batiste](batismi01.md) | Memphis Grizzlies | 26 | sourced | [open](batismi01.html) |
 | [Nick Collison](collini01.md) | Seattle SuperSonics (draft rights) | 23 | sourced | [open](collini01.html) |
 | [P.J. Brown](brownpj01.md) | New Orleans Hornets | 34 | sourced | [open](brownpj01.html) |
 | [Pat Garrity](garripa01.md) | Orlando Magic | 27 | sourced | [open](garripa01.html) |
@@ -345,7 +345,7 @@ Card date: **2003-11-19**. 407 registry players, one Markdown card and one inter
 | [Scott Padgett](padgesc01.md) | Miami Heat | 27 | silhouette | [open](padgesc01.html) |
 | [Shareef Abdur-Rahim](abdursh01.md) | Atlanta Hawks | 26 | sourced | [open](abdursh01.html) |
 | [Slava Medvedenko](medvest01.md) | Los Angeles Lakers | 24 | sourced | [open](medvest01.html) |
-| [Stromile Swift](swiftst01.md) | Memphis Grizzlies | 23 | sourced | [open](swiftst01.html) |
+| [Stromile Swift](swiftst01.md) | Memphis Grizzlies | 24 | sourced | [open](swiftst01.html) |
 | [Szymon Szewczyk](szewcsz01.md) | Milwaukee Bucks (draft rights) | 20 | sourced | [open](szewcsz01.html) |
 | [Tim Duncan](duncati01.md) | San Antonio Spurs | 27 | sourced | [open](duncati01.html) |
 | [Tom Gugliotta](guglito01.md) | Phoenix Suns | 33 | sourced | [open](guglito01.html) |

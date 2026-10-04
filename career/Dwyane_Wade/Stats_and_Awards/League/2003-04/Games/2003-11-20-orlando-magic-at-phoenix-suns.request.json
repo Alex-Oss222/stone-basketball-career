@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-20-orlando-magic-at-phoenix-suns",
+ "game_date": "2003-11-20",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Phoenix Suns",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Orlando Magic",
+  "rotation": "real"
+ }
+}

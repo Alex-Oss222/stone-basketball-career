@@ -2,9 +2,9 @@
 
 # Contract | Mark Bryant
 
-Known through: 2003-11-19. [Open interactive contract](bryanma01.html#contract) · [Contract history](bryanma01.html#contract-history)
+Known through: 2003-11-21. [Open interactive contract](bryanma01.html#contract) · [Contract history](bryanma01.html#contract-history)
 
-Mark Bryant: free agent expiring. Evidence cutoff: 2003-11-19.
+Mark Bryant: free agent expiring. Evidence cutoff: 2003-11-21.
 
 ## Current contract
 

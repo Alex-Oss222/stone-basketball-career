@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-21-boston-celtics-at-philadelphia-76ers",
+ "game_date": "2003-11-21",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Philadelphia 76ers",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Boston Celtics",
+  "rotation": "real"
+ }
+}

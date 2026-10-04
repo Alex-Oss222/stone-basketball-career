@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-21-atlanta-hawks-at-san-antonio-spurs",
+ "game_date": "2003-11-21",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "San Antonio Spurs",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Atlanta Hawks",
+  "rotation": "real"
+ }
+}

@@ -2,7 +2,7 @@
 
 # Free agency | Dwyane Wade
 
-Career date: 2003-11-19 · Miami Heat · needs evidence
+Career date: 2003-11-21 · Miami Heat · needs evidence
 
 [Live milestone desk](index.html#free_agency) · [All milestones](README.md)
 
@@ -101,12 +101,12 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/review.json)
-- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/depth_chart.json)
+- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/review.json)
+- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-07/rotation.json)
+- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2003-11-21/rotation.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)
@@ -131,4 +131,5 @@ Miami's next recorded market action or an actual proposal in Wade's own contract
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

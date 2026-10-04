@@ -1,0 +1,14 @@
+{
+ "event_id": "2003-11-21-washington-wizards-at-denver-nuggets",
+ "game_date": "2003-11-21",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Denver Nuggets",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Washington Wizards",
+  "rotation": "real"
+ }
+}

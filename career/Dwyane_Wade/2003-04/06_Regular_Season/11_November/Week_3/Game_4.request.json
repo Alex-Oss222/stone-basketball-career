@@ -1,0 +1,112 @@
+{
+ "event_id": "2003-11-21-miami-heat-at-golden-state-warriors",
+ "game_date": "2003-11-21",
+ "game_type": "regular",
+ "venue": "home",
+ "home": {
+  "team": "Golden State Warriors",
+  "rotation": "real"
+ },
+ "away": {
+  "team": "Miami Heat",
+  "players": [
+   {
+    "player_id": "Mike James",
+    "position": "PG",
+    "minutes": 38.85,
+    "ratings": {},
+    "bbr_id": "jamesmi01",
+    "starter": true
+   },
+   {
+    "player_id": "Dwyane Wade",
+    "position": "SG",
+    "minutes": 38.86,
+    "ratings": {
+     "perimeter_defense": 45
+    },
+    "starter": true
+   },
+   {
+    "player_id": "Scott Padgett",
+    "position": "PF",
+    "minutes": 38.86,
+    "ratings": {},
+    "bbr_id": "padgesc01",
+    "starter": true
+   },
+   {
+    "player_id": "Brian Grant",
+    "position": "C",
+    "minutes": 38.86,
+    "ratings": {},
+    "bbr_id": "grantbr01",
+    "starter": true
+   },
+   {
+    "player_id": "Shawn Kemp",
+    "position": "C",
+    "minutes": 22.86,
+    "ratings": {},
+    "bbr_id": "kempsh01",
+    "starter": false
+   },
+   {
+    "player_id": "Stephen Jackson",
+    "position": "SG",
+    "minutes": 18.29,
+    "ratings": {},
+    "bbr_id": "jacksst02",
+    "starter": false
+   },
+   {
+    "player_id": "Eddie Jones",
+    "position": "SG",
+    "minutes": 13.71,
+    "ratings": {},
+    "bbr_id": "jonesed02",
+    "starter": true
+   },
+   {
+    "player_id": "Cherokee Parks",
+    "position": "C",
+    "minutes": 11.43,
+    "ratings": {},
+    "bbr_id": "parksch02",
+    "starter": false
+   },
+   {
+    "player_id": "Rasual Butler",
+    "position": "SG",
+    "minutes": 9.14,
+    "ratings": {},
+    "bbr_id": "butlera01",
+    "starter": false
+   },
+   {
+    "player_id": "LaPhonso Ellis",
+    "position": "PF",
+    "minutes": 4.57,
+    "ratings": {},
+    "bbr_id": "ellisla01",
+    "starter": false
+   },
+   {
+    "player_id": "Anthony Carter",
+    "position": "PG",
+    "minutes": 4.57,
+    "ratings": {},
+    "bbr_id": "cartean01",
+    "starter": false
+   },
+   {
+    "player_id": "Sean Lampley",
+    "position": "SF",
+    "minutes": 0,
+    "ratings": {},
+    "starter": false,
+    "bbr_id": "lamplse01"
+   }
+  ]
+ }
+}
