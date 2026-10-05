@@ -1038,9 +1038,9 @@
    "home_court": "San Antonio Spurs",
    "wins": {
     "San Antonio Spurs": 1,
-    "Los Angeles Lakers": 3
+    "Los Angeles Lakers": 4
    },
-   "winner": null,
+   "winner": "Los Angeles Lakers",
    "games": [
     {
      "game": 1,
@@ -1088,7 +1088,9 @@
      "home": "San Antonio Spurs",
      "away": "Los Angeles Lakers",
      "conditional": true,
-     "event_id": "2004-05-11-los-angeles-lakers-at-san-antonio-spurs"
+     "event_id": "2004-05-11-los-angeles-lakers-at-san-antonio-spurs",
+     "result": "Los Angeles Lakers 102, San Antonio Spurs 80",
+     "winner": "Los Angeles Lakers"
     },
     {
      "game": 6,
@@ -1096,7 +1098,8 @@
      "home": "Los Angeles Lakers",
      "away": "San Antonio Spurs",
      "conditional": true,
-     "event_id": "2004-05-13-san-antonio-spurs-at-los-angeles-lakers"
+     "event_id": "2004-05-13-san-antonio-spurs-at-los-angeles-lakers",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -1104,9 +1107,11 @@
      "home": "San Antonio Spurs",
      "away": "Los Angeles Lakers",
      "conditional": true,
-     "event_id": "2004-05-15-los-angeles-lakers-at-san-antonio-spurs"
+     "event_id": "2004-05-15-los-angeles-lakers-at-san-antonio-spurs",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2004-05-11"
   },
   {
    "id": "east-semi-a",
@@ -1190,6 +1195,83 @@
      "away": "Milwaukee Bucks",
      "conditional": true,
      "event_id": "2004-05-16-milwaukee-bucks-at-indiana-pacers"
+    }
+   ]
+  },
+  {
+   "id": "west-final",
+   "round": "conference_finals",
+   "conference": "West",
+   "seeds": [
+    1,
+    7
+   ],
+   "clubs": [
+    "Minnesota Timberwolves",
+    "Los Angeles Lakers"
+   ],
+   "home_court": "Minnesota Timberwolves",
+   "wins": {
+    "Minnesota Timberwolves": 0,
+    "Los Angeles Lakers": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-05-21",
+     "home": "Minnesota Timberwolves",
+     "away": "Los Angeles Lakers",
+     "conditional": false,
+     "event_id": "2004-05-21-los-angeles-lakers-at-minnesota-timberwolves"
+    },
+    {
+     "game": 2,
+     "date": "2004-05-23",
+     "home": "Minnesota Timberwolves",
+     "away": "Los Angeles Lakers",
+     "conditional": false,
+     "event_id": "2004-05-23-los-angeles-lakers-at-minnesota-timberwolves"
+    },
+    {
+     "game": 3,
+     "date": "2004-05-25",
+     "home": "Los Angeles Lakers",
+     "away": "Minnesota Timberwolves",
+     "conditional": false,
+     "event_id": "2004-05-25-minnesota-timberwolves-at-los-angeles-lakers"
+    },
+    {
+     "game": 4,
+     "date": "2004-05-27",
+     "home": "Los Angeles Lakers",
+     "away": "Minnesota Timberwolves",
+     "conditional": false,
+     "event_id": "2004-05-27-minnesota-timberwolves-at-los-angeles-lakers"
+    },
+    {
+     "game": 5,
+     "date": "2004-05-29",
+     "home": "Minnesota Timberwolves",
+     "away": "Los Angeles Lakers",
+     "conditional": true,
+     "event_id": "2004-05-29-los-angeles-lakers-at-minnesota-timberwolves"
+    },
+    {
+     "game": 6,
+     "date": "2004-05-31",
+     "home": "Los Angeles Lakers",
+     "away": "Minnesota Timberwolves",
+     "conditional": true,
+     "event_id": "2004-05-31-minnesota-timberwolves-at-los-angeles-lakers"
+    },
+    {
+     "game": 7,
+     "date": "2004-06-02",
+     "home": "Minnesota Timberwolves",
+     "away": "Los Angeles Lakers",
+     "conditional": true,
+     "event_id": "2004-06-02-los-angeles-lakers-at-minnesota-timberwolves"
     }
    ]
   }

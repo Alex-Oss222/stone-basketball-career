@@ -209,7 +209,7 @@ Home court: New Jersey Nets. New Jersey Nets wins 4-0.
 
 ### West: (3) San Antonio Spurs vs (7) Los Angeles Lakers
 
-Home court: San Antonio Spurs. Series San Antonio Spurs 1, Los Angeles Lakers 3.
+Home court: San Antonio Spurs. Los Angeles Lakers wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -217,9 +217,9 @@ Home court: San Antonio Spurs. Series San Antonio Spurs 1, Los Angeles Lakers 3.
 | 2 | Tue May 4 | San Antonio Spurs | Los Angeles Lakers | Los Angeles Lakers 104, San Antonio Spurs 96 |
 | 3 | Fri May 7 | Los Angeles Lakers | San Antonio Spurs | San Antonio Spurs 89, Los Angeles Lakers 87 |
 | 4 | Sun May 9 | Los Angeles Lakers | San Antonio Spurs | San Antonio Spurs 90, Los Angeles Lakers 100 |
-| 5 | Tue May 11 | San Antonio Spurs | Los Angeles Lakers | if needed |
-| 6 | Thu May 13 | Los Angeles Lakers | San Antonio Spurs | if needed |
-| 7 | Sat May 15 | San Antonio Spurs | Los Angeles Lakers | if needed |
+| 5 | Tue May 11 | San Antonio Spurs | Los Angeles Lakers | Los Angeles Lakers 102, San Antonio Spurs 80 |
+| 6 | Thu May 13 | Los Angeles Lakers | San Antonio Spurs | not needed |
+| 7 | Sat May 15 | San Antonio Spurs | Los Angeles Lakers | not needed |
 
 ### East: (1) Indiana Pacers vs (5) Milwaukee Bucks
 
@@ -234,3 +234,19 @@ Home court: Indiana Pacers. Series Indiana Pacers 3, Milwaukee Bucks 1.
 | 5 | Wed May 12 | Indiana Pacers | Milwaukee Bucks | if needed |
 | 6 | Fri May 14 | Milwaukee Bucks | Indiana Pacers | if needed |
 | 7 | Sun May 16 | Indiana Pacers | Milwaukee Bucks | if needed |
+
+## Conference finals
+
+### West: (1) Minnesota Timberwolves vs (7) Los Angeles Lakers
+
+Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 0, Los Angeles Lakers 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Fri May 21 | Minnesota Timberwolves | Los Angeles Lakers |  |
+| 2 | Sun May 23 | Minnesota Timberwolves | Los Angeles Lakers |  |
+| 3 | Tue May 25 | Los Angeles Lakers | Minnesota Timberwolves |  |
+| 4 | Thu May 27 | Los Angeles Lakers | Minnesota Timberwolves |  |
+| 5 | Sat May 29 | Minnesota Timberwolves | Los Angeles Lakers | if needed |
+| 6 | Mon May 31 | Los Angeles Lakers | Minnesota Timberwolves | if needed |
+| 7 | Wed Jun 2 | Minnesota Timberwolves | Los Angeles Lakers | if needed |
