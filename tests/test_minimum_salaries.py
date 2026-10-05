@@ -67,12 +67,17 @@ class LiveLedgerTests(unittest.TestCase):
 
     def test_voided_and_released_camp_contracts_are_not_current(self):
         catalog = json.loads((ROOT / "career/Dwyane_Wade/Contracts/catalog.json").read_text())
-        ended = {p["player"] for p in self.sheet["players"] if p["status"] in ("voided", "released")}
+        ended = {p["player"]: p for p in self.sheet["players"] if p["status"] in ("voided", "released")}
         rows = [p for p in catalog["players"] if p["name"] in ended]
         self.assertTrue(rows)
         for row in rows:
-            self.assertIsNone(row["current_contract_id"], row["name"])
-            self.assertIn(row["status"], ("voided", "released"))
+            current = row["current_contract_id"]
+            if current is None:
+                self.assertIn(row["status"], ("voided", "released"))
+                continue
+            # A later contract with another club (a summer signing) may be current; the ended Miami one never is.
+            self.assertNotEqual(row["team"], "Miami Heat", row["name"])
+            self.assertGreater(current.rsplit("-", 3)[-3:], ended[row["name"]]["signed_date"].split("-"), row["name"])
 
 
 if __name__ == "__main__":
