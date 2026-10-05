@@ -196,6 +196,13 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
             raise ValueError(f"{note}: invalid final score")
         matches = [(side, r) for side in ("home", "away") for r in raw["player_stats"][side] if r["player_id"] in aliases]
         inactive = [s for s in ("home", "away") if aliases.intersection(raw.get("inactive", {}).get(s, []))]
+        listed = None
+        if not matches and not inactive:
+            # Not in the box because his club had him on its dated injured list for this game (Miami's ledger,
+            # `00_Team/Transactions/injured_list.json`): a recorded non-appearance, not missing data.
+            listed = _injured_list_entry(Path(note), aliases, raw.get("game_date"))
+            if listed:
+                inactive = [s for s in ("home", "away") if raw[s] == listed["club"]]
         if len(matches) + len(inactive) > 1:
             raise ValueError(f"{note}: duplicate or contradictory player participation")
         record.update(event_id=event_id, source=source)
@@ -218,11 +225,26 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
             if line["seconds"] > raw["game_seconds"] + .01:
                 raise ValueError(f"{note}: player minutes exceed game duration")
             record.update(line=line, coverage="complete", appearance="Played" if line["appeared"] else "DNP: active")
+        elif inactive and listed:
+            record.update(coverage="complete", appearance=f"DNP: injured list since {listed['placed']}")
         elif inactive:
             record.update(coverage="complete", appearance="DNP: inactive (reason not specified)")
         # An absent player row is not evidence of either an appearance or a DNP.
         records.append(record)
     return sorted(records, key=lambda r: (r["date"], str(r["note"])))
+
+
+def _injured_list_entry(note, aliases, game_date):
+    """The dated injured-list entry covering `game_date` for the player, from the season's Miami ledger, or None."""
+    season = next((p for p in note.parents if p.parent.name == "Dwyane_Wade" and p.name[:2] in ("19", "20")), None)
+    ledger = season / "00_Team/Transactions/injured_list.json" if season else None
+    if not ledger or not game_date or not ledger.is_file():
+        return None
+    import json as _json
+    for e in _json.loads(ledger.read_text(encoding="utf-8")).get("entries", []):
+        if e["player"] in aliases and e["placed"] <= game_date and (e.get("activated") is None or game_date < e["activated"]):
+            return {**e, "club": "Miami Heat"}
+    return None
 
 
 def ratio(numerator, denominator):

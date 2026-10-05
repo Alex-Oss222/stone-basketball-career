@@ -242,6 +242,18 @@ class ReportTests(unittest.TestCase):
         self.assertEqual(played, [])          # no closed game before the first preseason date
         self.assertGreaterEqual(clock, "2003-06-26")
 
+    def test_a_game_missed_on_the_injured_list_is_a_recorded_non_appearance(self):
+        from runtime.career_stats import _injured_list_entry
+        ledger = PLAYER / "2003-04/00_Team/Transactions/injured_list.json"
+        entries = [e for e in json.loads(ledger.read_text())["entries"] if e["player"] == "Dwyane Wade"] if ledger.is_file() else []
+        note = PLAYER / "2003-04/06_Regular_Season/10_October/Week_4/Game_1.md"
+        for e in entries:
+            self.assertEqual(_injured_list_entry(note, {"Dwyane Wade"}, e["placed"])["club"], "Miami Heat")
+        self.assertIsNone(_injured_list_entry(note, {"Dwyane Wade"}, "2003-10-28"))
+        clock = json.loads((PLAYER / "2003-04/current_state.json").read_text())["current_date"]
+        played = [g for g in collect_games(PLAYER, IDENTITY, clock) if g["status"] == "played" and g["competition"] == "regular"]
+        self.assertFalse([g["date"] for g in played if g["coverage"] != "complete"])   # every closed game is accounted for
+
     def test_preview_is_reproducible_and_outside_career(self):
         for path, text in build_preview(ROOT).items():
             self.assertNotIn("career", path.relative_to(ROOT).parts)
