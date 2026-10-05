@@ -228,8 +228,9 @@ class LeagueMarket:
 
     def run(self):
         """Make today's moves. Returns the new entries."""
-        if any(e["date"] == self.day and "-market-" in e.get("id", "") for e in self.moves["entries"]):
-            return []                                   # the day's market already ran: once a day, never twice
+        if self.day in self.moves.get("market_days", []) or any(
+                e["date"] == self.day and "-market-" in e.get("id", "") for e in self.moves["entries"]):
+            return []                                   # the day's market already ran (with or without moves): never twice
         start = len(self.moves["entries"])
         pool = self.pool()
         self._resolve_waivers(pool)
@@ -295,8 +296,8 @@ class LeagueMarket:
                     self._waive(club, weakest, pool)
                     self._sign(club, pool, "ten_day" if ten_open else "rest_of_season")
         new = self.moves["entries"][start:]
-        if new:
-            path = self.root / ledger_path(SEASON)
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(json.dumps(self.moves, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        self.moves["market_days"] = sorted(set(self.moves.get("market_days", [])) | {self.day})
+        path = self.root / ledger_path(SEASON)                  # written even without moves: the day is recorded as run,
+        path.parent.mkdir(parents=True, exist_ok=True)          # so a rerun of the day cannot act again
+        path.write_text(json.dumps(self.moves, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         return new

@@ -64,7 +64,9 @@ def normalize_line(row: dict, *, weighted_free_throws=False) -> dict:
     if isinstance(seconds, bool) or not isinstance(seconds, (int, float)) or not math.isfinite(seconds) or seconds < 0:
         raise ValueError("seconds: expected exact nonnegative playing time")
     line["seconds"] = seconds
-    appeared = row.get("appeared", seconds > 0)
+    # An engine line without an explicit flag appeared if it has playing time or any box-score contribution: a stint
+    # under a second rounds to 0 seconds but can still carry a credited steal (2004-03-05, Dallas at San Antonio).
+    appeared = row.get("appeared", seconds > 0 or any(line[k] for k in COUNTS))
     if type(appeared) is not bool:
         raise ValueError("appeared must be a boolean")
     line["appeared"] = appeared

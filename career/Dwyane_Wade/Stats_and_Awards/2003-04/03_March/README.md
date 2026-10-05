@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2004-03-02](../../../assets/stat_reports/personal_2004-03-02.svg)
+![Player personal information and earned career awards through 2004-03-05](../../../assets/stat_reports/personal_2004-03-05.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2004-03-02; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-03-05; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -48,84 +48,84 @@ Identity as of 2004-03-02; status snapshot dated 2003-12-01. User-established al
 
 ## Statistics
 
-As of **2004-03-02**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2004-03-05**: 2 closed games; 0/2 have player participation and box coverage; recorded DNPs: 0.
 
-No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
+**Incomplete source coverage.** Full-period totals and rates are N/A until every closed game has a verified player box or explicit DNP. Known games remain visible below.
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
 ### Per game
 
-[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-season#shooting) [![Contract](../../assets/contract_link.svg)](../../player_cards.html#contract) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
+[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-month-2004-03-01#shooting) [![Contract](../../assets/contract_link.svg)](../../player_cards.html#contract) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
 
 [Shooting detail](../../Shooting.md) · [Current contract](../../Contract.md#current-contract) · [Contract history](../../Contract.md#contract-history) · [Annual award record](../../Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| This scope | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| This scope | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-03-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-03-05, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](Stat_Detail.md)
 
 ### Period summary
 
-[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-season#shooting) [![Contract](../../assets/contract_link.svg)](../../player_cards.html#contract) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
+[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-month-2004-03-01#shooting) [![Contract](../../assets/contract_link.svg)](../../player_cards.html#contract) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
 
 [Shooting detail](../../Shooting.md) · [Current contract](../../Contract.md#current-contract) · [Contract history](../../Contract.md#contract-history) · [Annual award record](../../Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Week 1: 2004-03-01 to 2004-03-07](Week_1/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [Week 1: 2004-03-01 to 2004-03-07](Week_1/README.md) | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [Week 2: 2004-03-08 to 2004-03-14](Week_2/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [Week 3: 2004-03-15 to 2004-03-21](Week_3/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [Week 4: 2004-03-22 to 2004-03-31](Week_4/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-03-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-03-05, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Period comparison
 
-[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-season#shooting) [![Contract](../../assets/contract_link.svg)](../../player_cards.html#contract) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
+[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-month-2004-03-01#shooting) [![Contract](../../assets/contract_link.svg)](../../player_cards.html#contract) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
 
 [Shooting detail](../../Shooting.md) · [Current contract](../../Contract.md#current-contract) · [Contract history](../../Contract.md#contract-history) · [Annual award record](../../Awards.md)
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| March 2004 | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| March 2004 | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [February 2004](../02_February/README.md) | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | [East ROM](../../League/2003-04/02_February/League_Awards.md#rookie-of-the-month) |
 | Season through this month | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | [East ROM](../../League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](../../League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week), [East POM](../../League/2003-04/12_December/League_Awards.md#player-of-the-month), [East ROM](../../League/2003-04/12_December/League_Awards.md#rookie-of-the-month), [East POW](../../League/2003-04/01_January/Week_1/League_Awards.md#player-of-the-week), [East POM](../../League/2003-04/01_January/League_Awards.md#player-of-the-month), [East ROM](../../League/2003-04/01_January/League_Awards.md#rookie-of-the-month), [East ROM](../../League/2003-04/02_February/League_Awards.md#rookie-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-03-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-03-05, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
 | Metric | Total | Per appearance | Per 36 minutes |
 | --- | --- | --- | --- |
-| MIN | 0.0 | N/A | N/A |
-| PTS | 0 | N/A | N/A |
-| OREB | 0 | N/A | N/A |
-| DREB | 0 | N/A | N/A |
-| REB | 0 | N/A | N/A |
-| AST | 0 | N/A | N/A |
-| STL | 0 | N/A | N/A |
-| BLK | 0 | N/A | N/A |
-| TOV | 0 | N/A | N/A |
-| PF | 0 | N/A | N/A |
-| FGM | 0 | N/A | N/A |
-| FGA | 0 | N/A | N/A |
-| 2PM | 0 | N/A | N/A |
-| 2PA | 0 | N/A | N/A |
-| 3PM | 0 | N/A | N/A |
-| 3PA | 0 | N/A | N/A |
-| FTM | 0 | N/A | N/A |
-| FTA | 0 | N/A | N/A |
-| FT points | 0 | N/A | N/A |
+| MIN | N/A | N/A | N/A |
+| PTS | N/A | N/A | N/A |
+| OREB | N/A | N/A | N/A |
+| DREB | N/A | N/A | N/A |
+| REB | N/A | N/A | N/A |
+| AST | N/A | N/A | N/A |
+| STL | N/A | N/A | N/A |
+| BLK | N/A | N/A | N/A |
+| TOV | N/A | N/A | N/A |
+| PF | N/A | N/A | N/A |
+| FGM | N/A | N/A | N/A |
+| FGA | N/A | N/A | N/A |
+| 2PM | N/A | N/A | N/A |
+| 2PA | N/A | N/A | N/A |
+| 3PM | N/A | N/A | N/A |
+| 3PA | N/A | N/A | N/A |
+| FTM | N/A | N/A | N/A |
+| FTA | N/A | N/A | N/A |
+| FT points | N/A | N/A | N/A |
 
 Per-36 rates standardize playing time; they are not a projection of playing 36 minutes. Use the actual minutes denominator in every competition.
 
@@ -133,10 +133,10 @@ Per-36 rates standardize playing time; they are not a projection of playing 36 m
 
 | Shot type | Makes | Attempts | Percentage |
 | --- | --- | --- | --- |
-| All field goals | 0 | 0 | N/A |
-| Two-pointers | 0 | 0 | N/A |
-| Three-pointers | 0 | 0 | N/A |
-| Free throws | 0 | 0 | N/A |
+| All field goals | N/A | N/A | N/A |
+| Two-pointers | N/A | N/A | N/A |
+| Three-pointers | N/A | N/A | N/A |
+| Free throws | N/A | N/A | N/A |
 
 ### Efficiency and shot selection
 
@@ -148,10 +148,31 @@ Per-36 rates standardize playing time; they are not a projection of playing 36 m
 | Free-throw attempt rate | N/A | FTA / FGA; ratio |
 | Assist / turnover ratio | N/A | AST / TOV; N/A at zero turnovers |
 | Plus/minus total | N/A | Observed on-court score differential only |
-| Double-doubles | 0 | At least 10 in any two of PTS, REB, AST, STL, BLK |
-| Triple-doubles | 0 | At least 10 in any three; also included in double-doubles |
+| Double-doubles | N/A | At least 10 in any two of PTS, REB, AST, STL, BLK |
+| Triple-doubles | N/A | At least 10 in any three; also included in double-doubles |
 
 Percentages use pooled makes and attempts. TS% uses an estimated free-throw weighting, not exact scoring possessions. Rounding is display-only.
+
+### Splits
+
+[![Shooting](../../assets/shooting_link.svg)](../../player_cards.html?period=regular-2003-04-month-2004-03-01#shooting) [![Contract](../../assets/contract_link.svg)](../../player_cards.html#contract) [![Awards](../../assets/awards_link.svg)](../../player_cards.html#awards)
+
+[Shooting detail](../../Shooting.md) · [Current contract](../../Contract.md#current-contract) · [Contract history](../../Contract.md#contract-history) · [Annual award record](../../Awards.md)
+
+| Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Home | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Away | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Neutral | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Wins | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Losses | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Team: Miami Heat | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+
+G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2004-03-05, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+
+Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
 ### Game highs
 
@@ -168,7 +189,19 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 | Date / source | Opponent | Venue | Result | Participation | MIN | PTS | REB | AST | STL | BLK | TOV |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2004-03-02](../../../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md) | Toronto Raptors | home | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [2004-03-02](../../../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md) | Toronto Raptors | home | W 86-80 | Unknown: missing player box | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [2004-03-04](../../../2003-04/06_Regular_Season/03_March/Week_1/Game_2.md) | Milwaukee Bucks | home | L 92-99 | Unknown: missing player box | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+### Individual game boxes
+
+| Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [2004-03-02](../../../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md) | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [2004-03-04](../../../2003-04/06_Regular_Season/03_March/Week_1/Game_2.md) | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+
+G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2004-03-05, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Additional data needed
 

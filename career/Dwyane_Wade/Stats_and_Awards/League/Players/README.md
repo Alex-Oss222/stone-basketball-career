@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-03-02**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-03-05**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -198,7 +198,7 @@ Card date: **2004-03-02**. 504 registry players, one Markdown card and one inter
 | [Tito Maddox](maddoti01.md) | Houston Rockets | 22 | silhouette | [open](maddoti01.html) |
 | [Tracy McGrady](mcgratr01.md) | Orlando Magic | 24 | sourced | [open](mcgratr01.html) |
 | [Travis Hansen](hansetr01.md) | Atlanta Hawks | 25 | sourced | [open](hansetr01.html) |
-| [Trenton Hassell](hassetr01.md) | Minnesota Timberwolves | 24 | sourced | [open](hassetr01.html) |
+| [Trenton Hassell](hassetr01.md) | Minnesota Timberwolves | 25 | sourced | [open](hassetr01.html) |
 | [Vince Carter](cartevi01.md) | Toronto Raptors | 27 | sourced | [open](cartevi01.html) |
 | [Vincent Yarbrough](yarbrvi01.md) | Denver Nuggets | 22 | silhouette | [open](yarbrvi01.html) |
 | [Voshon Lenard](lenarvo01.md) | Denver Nuggets | 30 | silhouette | [open](lenarvo01.html) |
@@ -303,7 +303,7 @@ Card date: **2004-03-02**. 504 registry players, one Markdown card and one inter
 | [Tracy Murray](murratr01.md) | Portland Trail Blazers | None | silhouette | [open](murratr01.html) |
 | [Travis Outlaw](outlatr01.md) | Portland Trail Blazers | 19 | sourced | [open](outlatr01.html) |
 | [Tremaine Fowlkes](fowlktr01.md) | Los Angeles Clippers | 27 | silhouette | [open](fowlktr01.html) |
-| [Wally Szczerbiak](szczewa02.md) | Minnesota Timberwolves | 26 | sourced | [open](szczewa02.html) |
+| [Wally Szczerbiak](szczewa02.md) | Minnesota Timberwolves | 27 | sourced | [open](szczewa02.html) |
 | [Walt Williams](williwa02.md) | Dallas Mavericks | 33 | silhouette | [open](williwa02.html) |
 | [Walter McCarty](mccarwa01.md) | Boston Celtics | 30 | silhouette | [open](mccarwa01.html) |
 | [Zarko Cabarkapa](cabarza01.md) | Phoenix Suns | 22 | sourced | [open](cabarza01.html) |
@@ -450,7 +450,7 @@ Card date: **2004-03-02**. 504 registry players, one Markdown card and one inter
 | [Bo Outlaw](outlabo01.md) | Memphis Grizzlies | 32 | sourced | [open](outlabo01.html) |
 | [Brad Miller](millebr01.md) | Sacramento Kings | 27 | sourced | [open](millebr01.html) |
 | [Brendan Haywood](haywobr01.md) | Washington Wizards | 24 | sourced | [open](haywobr01.html) |
-| [Brian Grant](grantbr01.md) | Miami Heat | 31 | silhouette | [open](grantbr01.html) |
+| [Brian Grant](grantbr01.md) | Miami Heat | 32 | silhouette | [open](grantbr01.html) |
 | [Britton Johnsen](johnsbr01.md) | Orlando Magic | None | silhouette | [open](johnsbr01.html) |
 | [Bruno Šundov](sundobr01.md) | Cleveland Cavaliers | None | silhouette | [open](sundobr01.html) |
 | [Calvin Booth](boothca01.md) | Seattle SuperSonics | 27 | sourced | [open](boothca01.html) |

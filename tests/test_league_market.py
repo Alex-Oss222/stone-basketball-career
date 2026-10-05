@@ -85,6 +85,12 @@ class LeagueMarketTests(unittest.TestCase):
         with mock.patch.object(desk, "injured_regulars", return_value=0):
             self.assertFalse(any(desk.short_handed(c) for c in desk.clubs if len(desk.rosters[c]) >= 12))
 
+    def test_a_market_day_runs_once_even_without_moves(self):
+        ledger = league_moves.read("2003-04", self.root)
+        self.assertIn(START, ledger["market_days"])
+        for day in ledger["market_days"]:
+            self.assertEqual(LM.LeagueMarket(day, Market(day, self.root), self.root).run(), [])
+
     def test_off_switch_writes_nothing(self):
         with mock.patch.object(LB, "SYMMETRIC_FROM", None), self.assertRaises(ValueError):
             LM.LeagueMarket("2004-01-05", Market("2004-01-05", self.root), self.root)

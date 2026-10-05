@@ -2,9 +2,9 @@
 
 # Contract | Steven Hunter
 
-Known through: 2004-03-02. [Open interactive contract](huntest01.html#contract) · [Contract history](huntest01.html#contract-history)
+Known through: 2004-03-05. [Open interactive contract](huntest01.html#contract) · [Contract history](huntest01.html#contract-history)
 
-Steven Hunter: under rookie contract. Evidence cutoff: 2004-03-02.
+Steven Hunter: under rookie contract. Evidence cutoff: 2004-03-05.
 
 ## Current contract
 
