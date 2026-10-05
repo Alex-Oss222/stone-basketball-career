@@ -23,6 +23,9 @@ def season_dir(requested: str | None = None) -> Path:
              and (p / "current_state.json").is_file()]          # a next-season folder before the rollover is not live
     if requested:
         years = [p for p in years if p.name == requested]
+    elif len(years) > 1:                                         # earlier seasons keep their state: the live one
+        from runtime.seasons import active
+        years = [p for p in years if p.name == active(ROOT)]
     if len(years) != 1:
         raise SystemExit("select one existing season with --season YYYY-YY")
     return years[0]

@@ -102,7 +102,7 @@ def next_season_rates(prior_rates, lines, next_season, baselines, source_totals)
     return out
 
 
-PROFILE_MODEL = "protagonist-2004.1"
+from .prospects import PROTAGONIST_MODEL_VERSION as PROFILE_MODEL
 
 
 def build_profile(root, from_season="2003-04", to_season="2004-05", on=None):

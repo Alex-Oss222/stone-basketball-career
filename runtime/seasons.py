@@ -178,7 +178,14 @@ def live_seasons(root=ROOT):
 
 def active(root=ROOT):
     """The career's live season: the latest folder with a current state. A scratch copy without any state (a test
-    scaffold) follows the repository's own live season."""
+    scaffold) follows the repository's own live season.
+
+    The regression suite pins the season it was written for (`CAREER_TEST_SEASON`, set only by `tests/__init__.py`):
+    its scenarios replay the first season from its checkpoint whatever season the career has reached since."""
+    import os
+    pinned = os.environ.get("CAREER_TEST_SEASON")
+    if pinned:
+        return pinned
     live = live_seasons(root) if (Path(root) / PLAYER).is_dir() else []
     if live:
         return live[-1]

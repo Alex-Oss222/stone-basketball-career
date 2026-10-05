@@ -30,6 +30,9 @@ def finish():
     pages = season_pages.write(signing.SEASON, day, ROOT)
     print(f"{len(pages)} statistics and award pages written for {signing.SEASON}")
     from runtime import write_back
+    from runtime.playoff_stats import write_pages as write_playoff_pages
+    from runtime.seasons import previous_season
+    write_playoff_pages(ROOT, previous_season(signing.SEASON))      # the closed season's pages, as of its close
     report = write_back.run(ROOT, write=True)
     print(f"write-back: {len(report['written'])} result(s), {report['pages']} page(s), {report['reports']} report(s)")
     from scripts.refresh_career_views import refresh_career_views

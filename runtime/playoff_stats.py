@@ -209,8 +209,12 @@ def pages(root=ROOT, season=None, now=None):
     season = season or _active_season(root)
     from .playoffs import read
     root = Path(root)
-    if read(root) is None:
+    if read(root, season) is None:
         return {}
+    close = root / f"career/Dwyane_Wade/{season}/season_close.json"
+    if close.is_file():                     # a closed season's pages stand as of its close, whatever the clock says
+        from .write_back import clock
+        now = min(now or clock(root), json.loads(close.read_text(encoding="utf-8"))["close_date"])
     return {root / league_page_path(season): league_page(root, season, now), root / team_page_path(season): team_page(root, season, now)}
 
 
