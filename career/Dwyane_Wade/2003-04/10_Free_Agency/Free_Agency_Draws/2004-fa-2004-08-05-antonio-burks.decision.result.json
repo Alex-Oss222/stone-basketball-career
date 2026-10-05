@@ -1,0 +1,18 @@
+{
+ "date": "2004-08-05",
+ "decider": "Antonio Burks (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-05-antonio-burks",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.137599,
+  "Golden State Warriors": 0.053884,
+  "Houston Rockets": 0.164324,
+  "Miami Heat": 0.164324,
+  "Minnesota Timberwolves": 0.013692,
+  "Toronto Raptors": 0.053884,
+  "Utah Jazz": 0.062292,
+  "wait": 0.350001
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-08-05: which offer does Antonio Burks accept (Atlanta Hawks $385,277 x 1, Golden State Warriors $385,277 x 1, Houston Rockets $385,277 x 1, Miami Heat $385,277 x 1, Minnesota Timberwolves $385,277 x 1, Toronto Raptors $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?"
+}

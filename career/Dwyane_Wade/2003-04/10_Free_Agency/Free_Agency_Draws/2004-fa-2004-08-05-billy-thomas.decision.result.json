@@ -1,0 +1,16 @@
+{
+ "date": "2004-08-05",
+ "decider": "Billy Thomas (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-05-billy-thomas",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.035035,
+  "Los Angeles Lakers": 0.30532,
+  "New Jersey Nets": 0.035035,
+  "Portland Trail Blazers": 0.239574,
+  "Washington Wizards": 0.035035,
+  "wait": 0.350001
+ },
+ "outcome": "Los Angeles Lakers",
+ "question": "2004 free agency, 2004-08-05: which offer does Billy Thomas accept (Denver Nuggets $385,277 x 1, Los Angeles Lakers $385,277 x 1, New Jersey Nets $385,277 x 1, Portland Trail Blazers $385,277 x 1, Washington Wizards $385,277 x 1), or does he wait?"
+}

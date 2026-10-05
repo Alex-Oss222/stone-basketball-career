@@ -1,0 +1,16 @@
+{
+ "date": "2004-08-05",
+ "decider": "Andre Emmett (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-05-andre-emmett",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.100624,
+  "Miami Heat": 0.306859,
+  "Minnesota Timberwolves": 0.025569,
+  "Toronto Raptors": 0.100624,
+  "Utah Jazz": 0.116325,
+  "wait": 0.349999
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-08-05: which offer does Andre Emmett accept (Golden State Warriors $385,277 x 1, Miami Heat $385,277 x 1, Minnesota Timberwolves $385,277 x 1, Toronto Raptors $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?"
+}

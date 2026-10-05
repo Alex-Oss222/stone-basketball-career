@@ -1,0 +1,13 @@
+{
+ "date": "2004-08-05",
+ "decider": "Maurice Evans (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-05-maurice-evans",
+ "kind": "decision",
+ "options": {
+  "Miami Heat": 0.591039,
+  "Minnesota Timberwolves": 0.058961,
+  "wait": 0.35
+ },
+ "outcome": "Miami Heat",
+ "question": "2004 free agency, 2004-08-05: which offer does Maurice Evans accept (Miami Heat $720,046 x 1, Minnesota Timberwolves $720,046 x 1), or does he wait?"
+}

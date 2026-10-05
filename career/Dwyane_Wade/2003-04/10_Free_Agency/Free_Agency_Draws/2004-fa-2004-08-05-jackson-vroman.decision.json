@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-fa-2004-08-05-jackson-vroman",
+ "date": "2004-08-05",
+ "question": "2004 free agency, 2004-08-05: which offer does Jackson Vroman accept (Milwaukee Bucks $385,277 x 1, New Orleans Hornets $385,277 x 1, Sacramento Kings $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?",
+ "decider": "Jackson Vroman (simulated player, engine draw)",
+ "options": {
+  "Milwaukee Bucks": 0.214958,
+  "New Orleans Hornets": 0.214958,
+  "Sacramento Kings": 0.185944,
+  "Utah Jazz": 0.034139,
+  "wait": 0.350001
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.650; priority money; utility Milwaukee Bucks 41.8, New Orleans Hornets 41.8, Sacramento Kings 41.2, Utah Jazz 34.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

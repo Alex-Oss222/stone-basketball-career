@@ -1,0 +1,19 @@
+{
+ "date": "2004-08-05",
+ "decider": "Brent Barry (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-05-brent-barry",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.033914,
+  "Denver Nuggets": 0.033914,
+  "Los Angeles Clippers": 0.065616,
+  "Memphis Grizzlies": 0.029336,
+  "Miami Heat": 0.049965,
+  "Milwaukee Bucks": 0.019912,
+  "Toronto Raptors": 0.027975,
+  "Washington Wizards": 0.015011,
+  "wait": 0.724357
+ },
+ "outcome": "Washington Wizards",
+ "question": "2004 free agency, 2004-08-05: which offer does Brent Barry accept (Cleveland Cavaliers $4,903,000 x 3, Denver Nuggets $4,903,000 x 3, Los Angeles Clippers $4,903,000 x 3, Memphis Grizzlies $4,903,000 x 3, Miami Heat $4,903,000 x 3, Milwaukee Bucks $4,903,000 x 3, Toronto Raptors $4,903,000 x 3, Washington Wizards $4,903,000 x 3), or does he wait?"
+}

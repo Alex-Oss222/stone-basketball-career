@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-fa-2004-08-05-james-thomas",
+ "date": "2004-08-05",
+ "question": "2004 free agency, 2004-08-05: which offer does James Thomas accept (Denver Nuggets $385,277 x 1, Portland Trail Blazers $385,277 x 1), or does he wait?",
+ "decider": "James Thomas (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.088508,
+  "Portland Trail Blazers": 0.561492,
+  "wait": 0.35
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.650; priority money; utility Denver Nuggets 37.6, Portland Trail Blazers 45.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
