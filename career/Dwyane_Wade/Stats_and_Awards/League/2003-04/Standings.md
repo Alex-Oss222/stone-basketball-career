@@ -1,43 +1,43 @@
 # 2003-04 standings
 
-Through 2004-03-02, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2004-03-03, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
 | # | Club | W | L | Pct | GB |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Indiana Pacers | 42 | 18 | .700 | — |
-| 2 | New Jersey Nets | 40 | 19 | .678 | 1.5 |
-| 3 | Milwaukee Bucks | 36 | 23 | .610 | 5.5 |
-| 4 | Detroit Pistons | 37 | 26 | .587 | 6.5 |
-| 5 | **Miami Heat** | 35 | 26 | .574 | 7.5 |
-| 6 | New Orleans Hornets | 31 | 29 | .517 | 11 |
-| 7 | Chicago Bulls | 28 | 32 | .467 | 14 |
-| 8 | Philadelphia 76ers | 28 | 32 | .467 | 14 |
-| 9 | Toronto Raptors | 27 | 33 | .450 | 15 |
-| 10 | Atlanta Hawks | 25 | 35 | .417 | 17 |
-| 11 | Cleveland Cavaliers | 24 | 36 | .400 | 18 |
-| 12 | Boston Celtics | 23 | 39 | .371 | 20 |
-| 13 | New York Knicks | 20 | 41 | .328 | 22.5 |
-| 14 | Washington Wizards | 17 | 41 | .293 | 24 |
-| 15 | Orlando Magic | 16 | 46 | .258 | 27 |
+| 1 | Indiana Pacers | 43 | 18 | .705 | — |
+| 2 | New Jersey Nets | 41 | 19 | .683 | 1.5 |
+| 3 | Milwaukee Bucks | 36 | 24 | .600 | 6.5 |
+| 4 | Detroit Pistons | 37 | 26 | .587 | 7 |
+| 5 | **Miami Heat** | 35 | 26 | .574 | 8 |
+| 6 | New Orleans Hornets | 31 | 30 | .508 | 12 |
+| 7 | Chicago Bulls | 29 | 32 | .475 | 14 |
+| 8 | Philadelphia 76ers | 29 | 32 | .475 | 14 |
+| 9 | Toronto Raptors | 27 | 34 | .443 | 16 |
+| 10 | Atlanta Hawks | 25 | 36 | .410 | 18 |
+| 11 | Cleveland Cavaliers | 25 | 36 | .410 | 18 |
+| 12 | Boston Celtics | 23 | 39 | .371 | 20.5 |
+| 13 | New York Knicks | 20 | 42 | .323 | 23.5 |
+| 14 | Washington Wizards | 18 | 41 | .305 | 24 |
+| 15 | Orlando Magic | 17 | 46 | .270 | 27 |
 
 ## Western Conference
 
 | # | Club | W | L | Pct | GB |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Minnesota Timberwolves | 46 | 14 | .767 | — |
-| 2 | San Antonio Spurs | 43 | 17 | .717 | 3 |
-| 3 | Dallas Mavericks | 40 | 19 | .678 | 5.5 |
-| 4 | Sacramento Kings | 39 | 20 | .661 | 6.5 |
-| 5 | Los Angeles Lakers | 35 | 24 | .593 | 10.5 |
-| 6 | Denver Nuggets | 36 | 26 | .581 | 11 |
-| 7 | Golden State Warriors | 33 | 26 | .559 | 12.5 |
-| 8 | Memphis Grizzlies | 33 | 27 | .550 | 13 |
-| 9 | Houston Rockets | 30 | 29 | .508 | 15.5 |
-| 10 | Seattle SuperSonics | 30 | 30 | .500 | 16 |
-| 11 | Phoenix Suns | 22 | 39 | .361 | 24.5 |
-| 12 | Utah Jazz | 20 | 41 | .328 | 26.5 |
-| 13 | Portland Trail Blazers | 19 | 40 | .322 | 26.5 |
-| 14 | Los Angeles Clippers | 16 | 43 | .271 | 29.5 |
+| 1 | Minnesota Timberwolves | 47 | 14 | .770 | — |
+| 2 | San Antonio Spurs | 44 | 17 | .721 | 3 |
+| 3 | Dallas Mavericks | 40 | 20 | .667 | 6.5 |
+| 4 | Sacramento Kings | 39 | 20 | .661 | 7 |
+| 5 | Los Angeles Lakers | 35 | 25 | .583 | 11.5 |
+| 6 | Denver Nuggets | 36 | 26 | .581 | 11.5 |
+| 7 | Golden State Warriors | 33 | 26 | .559 | 13 |
+| 8 | Memphis Grizzlies | 33 | 28 | .541 | 14 |
+| 9 | Houston Rockets | 31 | 29 | .517 | 15.5 |
+| 10 | Seattle SuperSonics | 30 | 31 | .492 | 17 |
+| 11 | Phoenix Suns | 22 | 40 | .355 | 25.5 |
+| 12 | Portland Trail Blazers | 20 | 40 | .333 | 26.5 |
+| 13 | Utah Jazz | 20 | 41 | .328 | 27 |
+| 14 | Los Angeles Clippers | 16 | 44 | .267 | 30.5 |
 
