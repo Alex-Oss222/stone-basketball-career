@@ -12,6 +12,7 @@ import os
 from pathlib import Path
 import re
 
+from .stable_json import stable
 from .career_stats import aggregate, identity_at
 from .rookie_contract import rookie_terms
 
@@ -685,7 +686,7 @@ def build_milestone_pages(player: Path, identity: dict, records: list, *, root: 
     """Return artifacts for the normal report build; the caller persists them."""
     payload = build_milestone_payload(player, identity, records, root=root)
     folder = Path(player) / "Milestones"
-    encoded = json.dumps(payload, ensure_ascii=False, indent=2, allow_nan=False)
+    encoded = json.dumps(stable(payload), ensure_ascii=False, indent=2, allow_nan=False)
     safe = encoded.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
     template = TEMPLATE.read_text(encoding="utf-8")
     if template.count("__CAREER_MILESTONES_DATA__") != 1:

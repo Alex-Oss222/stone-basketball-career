@@ -19,6 +19,7 @@ import json
 from pathlib import Path
 import re
 
+from .stable_json import stable
 from .career_stats import aggregate
 from .shot_chart import NBA_GEOMETRY, ZONES, aggregate_shots
 from .shot_events import build_tracking_cohort, engine_result_shots, shot_source_type
@@ -778,7 +779,7 @@ def html_template(template):
 def html_card(ctx, data, template=None):
     template = template or html_template(ctx.template)
     payload = html_payload(ctx, data)
-    encoded = json.dumps(payload, separators=(",", ":")).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+    encoded = json.dumps(stable(payload), separators=(",", ":")).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
     p = data["player"]
     text = template.replace("__PLAYER_CARD_DATA__", encoded)
     text = text.replace("<title>Player · Shooting, Contract &amp; Awards</title>",

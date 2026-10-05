@@ -15,6 +15,7 @@ import os
 from pathlib import Path
 import re
 
+from .stable_json import stable
 from .career_stats import aggregate, identity_at, metadata, select
 from .season_rules import month_week
 from .shot_chart import NBA_GEOMETRY, ZONES, aggregate_shots
@@ -326,6 +327,7 @@ def build_player_cards(root, player, identity, records, awards, clock, *, contra
     template = (Path(__file__).parent / "assets/player_cards.html").read_text(encoding="utf-8")
     if template.count("__PLAYER_CARD_DATA__") != 1:
         raise ValueError("runtime player-card template must contain exactly one data token")
+    payload = stable(payload)                          # machine-independent float digits (runtime/stable_json.py)
     data_json = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
     encoded = json.dumps(payload, ensure_ascii=False).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
     outputs = {page: template.replace("__PLAYER_CARD_DATA__", encoded), folder / "player_cards_data.json": data_json}
