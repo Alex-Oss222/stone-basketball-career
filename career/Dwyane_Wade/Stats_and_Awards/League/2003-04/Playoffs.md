@@ -36,25 +36,25 @@ Division winners take seeds 1 and 2; seeds 3 to 8 are the next six records. Ties
 EAST
   (1) Indiana Pacers           2
   (8) New Orleans Hornets      1
-  (4) Miami Heat               0
+  (4) Miami Heat               1
   (5) Milwaukee Bucks          2
         conference semifinal: winners meet
   (3) Detroit Pistons          1
-  (6) Toronto Raptors          1
+  (6) Toronto Raptors          2
   (2) New Jersey Nets          2
   (7) Atlanta Hawks            1
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
 WEST
-  (1) Minnesota Timberwolves   2
+  (1) Minnesota Timberwolves   3
   (8) Memphis Grizzlies        0
   (4) Dallas Mavericks         3
   (5) Denver Nuggets           0
         conference semifinal: winners meet
   (3) San Antonio Spurs        3
   (6) Golden State Warriors    0
-  (2) Sacramento Kings         1
+  (2) Sacramento Kings         2
   (7) Los Angeles Lakers       1
         conference semifinal: winners meet
     conference final, then the NBA Finals
@@ -79,13 +79,13 @@ Home court: Indiana Pacers. Series Indiana Pacers 2, New Orleans Hornets 1.
 
 ### East: (4) Miami Heat vs (5) Milwaukee Bucks
 
-Home court: Miami Heat. Series Miami Heat 0, Milwaukee Bucks 2.
+Home court: Miami Heat. Series Miami Heat 1, Milwaukee Bucks 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 18 | Miami Heat | Milwaukee Bucks | Milwaukee Bucks 109, Miami Heat 91 |
 | 2 | Wed Apr 21 | Miami Heat | Milwaukee Bucks | Milwaukee Bucks 105, Miami Heat 95 |
-| 3 | Sat Apr 24 | Milwaukee Bucks | Miami Heat |  |
+| 3 | Sat Apr 24 | Milwaukee Bucks | Miami Heat | Miami Heat 99, Milwaukee Bucks 96 |
 | 4 | Mon Apr 26 | Milwaukee Bucks | Miami Heat |  |
 | 5 | Wed Apr 28 | Miami Heat | Milwaukee Bucks | if needed |
 | 6 | Fri Apr 30 | Milwaukee Bucks | Miami Heat | if needed |
@@ -93,13 +93,13 @@ Home court: Miami Heat. Series Miami Heat 0, Milwaukee Bucks 2.
 
 ### East: (3) Detroit Pistons vs (6) Toronto Raptors
 
-Home court: Detroit Pistons. Series Detroit Pistons 1, Toronto Raptors 1.
+Home court: Detroit Pistons. Series Detroit Pistons 1, Toronto Raptors 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 18 | Detroit Pistons | Toronto Raptors | Toronto Raptors 73, Detroit Pistons 96 |
 | 2 | Wed Apr 21 | Detroit Pistons | Toronto Raptors | Toronto Raptors 94, Detroit Pistons 87 |
-| 3 | Sat Apr 24 | Toronto Raptors | Detroit Pistons |  |
+| 3 | Sat Apr 24 | Toronto Raptors | Detroit Pistons | Detroit Pistons 69, Toronto Raptors 84 |
 | 4 | Mon Apr 26 | Toronto Raptors | Detroit Pistons |  |
 | 5 | Wed Apr 28 | Detroit Pistons | Toronto Raptors | if needed |
 | 6 | Fri Apr 30 | Toronto Raptors | Detroit Pistons | if needed |
@@ -121,13 +121,13 @@ Home court: New Jersey Nets. Series New Jersey Nets 2, Atlanta Hawks 1.
 
 ### West: (1) Minnesota Timberwolves vs (8) Memphis Grizzlies
 
-Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 2, Memphis Grizzlies 0.
+Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 3, Memphis Grizzlies 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 18 | Minnesota Timberwolves | Memphis Grizzlies | Memphis Grizzlies 79, Minnesota Timberwolves 91 |
 | 2 | Wed Apr 21 | Minnesota Timberwolves | Memphis Grizzlies | Memphis Grizzlies 88, Minnesota Timberwolves 103 |
-| 3 | Sat Apr 24 | Memphis Grizzlies | Minnesota Timberwolves |  |
+| 3 | Sat Apr 24 | Memphis Grizzlies | Minnesota Timberwolves | Minnesota Timberwolves 120, Memphis Grizzlies 100 |
 | 4 | Mon Apr 26 | Memphis Grizzlies | Minnesota Timberwolves |  |
 | 5 | Wed Apr 28 | Minnesota Timberwolves | Memphis Grizzlies | if needed |
 | 6 | Fri Apr 30 | Memphis Grizzlies | Minnesota Timberwolves | if needed |
@@ -163,13 +163,13 @@ Home court: San Antonio Spurs. Series San Antonio Spurs 3, Golden State Warriors
 
 ### West: (2) Sacramento Kings vs (7) Los Angeles Lakers
 
-Home court: Sacramento Kings. Series Sacramento Kings 1, Los Angeles Lakers 1.
+Home court: Sacramento Kings. Series Sacramento Kings 2, Los Angeles Lakers 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 18 | Sacramento Kings | Los Angeles Lakers | Los Angeles Lakers 131, Sacramento Kings 124 (1OT) |
 | 2 | Wed Apr 21 | Sacramento Kings | Los Angeles Lakers | Los Angeles Lakers 79, Sacramento Kings 88 |
-| 3 | Sat Apr 24 | Los Angeles Lakers | Sacramento Kings |  |
+| 3 | Sat Apr 24 | Los Angeles Lakers | Sacramento Kings | Sacramento Kings 103, Los Angeles Lakers 84 |
 | 4 | Mon Apr 26 | Los Angeles Lakers | Sacramento Kings |  |
 | 5 | Wed Apr 28 | Sacramento Kings | Los Angeles Lakers | if needed |
 | 6 | Fri Apr 30 | Los Angeles Lakers | Sacramento Kings | if needed |

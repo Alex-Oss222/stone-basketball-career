@@ -220,7 +220,7 @@
    ],
    "home_court": "Miami Heat",
    "wins": {
-    "Miami Heat": 0,
+    "Miami Heat": 1,
     "Milwaukee Bucks": 2
    },
    "winner": null,
@@ -251,7 +251,9 @@
      "home": "Milwaukee Bucks",
      "away": "Miami Heat",
      "conditional": false,
-     "event_id": "2004-04-24-miami-heat-at-milwaukee-bucks"
+     "event_id": "2004-04-24-miami-heat-at-milwaukee-bucks",
+     "result": "Miami Heat 99, Milwaukee Bucks 96",
+     "winner": "Miami Heat"
     },
     {
      "game": 4,
@@ -302,7 +304,7 @@
    "home_court": "Detroit Pistons",
    "wins": {
     "Detroit Pistons": 1,
-    "Toronto Raptors": 1
+    "Toronto Raptors": 2
    },
    "winner": null,
    "games": [
@@ -332,7 +334,9 @@
      "home": "Toronto Raptors",
      "away": "Detroit Pistons",
      "conditional": false,
-     "event_id": "2004-04-24-detroit-pistons-at-toronto-raptors"
+     "event_id": "2004-04-24-detroit-pistons-at-toronto-raptors",
+     "result": "Detroit Pistons 69, Toronto Raptors 84",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 4,
@@ -465,7 +469,7 @@
    ],
    "home_court": "Minnesota Timberwolves",
    "wins": {
-    "Minnesota Timberwolves": 2,
+    "Minnesota Timberwolves": 3,
     "Memphis Grizzlies": 0
    },
    "winner": null,
@@ -496,7 +500,9 @@
      "home": "Memphis Grizzlies",
      "away": "Minnesota Timberwolves",
      "conditional": false,
-     "event_id": "2004-04-24-minnesota-timberwolves-at-memphis-grizzlies"
+     "event_id": "2004-04-24-minnesota-timberwolves-at-memphis-grizzlies",
+     "result": "Minnesota Timberwolves 120, Memphis Grizzlies 100",
+     "winner": "Minnesota Timberwolves"
     },
     {
      "game": 4,
@@ -712,7 +718,7 @@
    ],
    "home_court": "Sacramento Kings",
    "wins": {
-    "Sacramento Kings": 1,
+    "Sacramento Kings": 2,
     "Los Angeles Lakers": 1
    },
    "winner": null,
@@ -743,7 +749,9 @@
      "home": "Los Angeles Lakers",
      "away": "Sacramento Kings",
      "conditional": false,
-     "event_id": "2004-04-24-sacramento-kings-at-los-angeles-lakers"
+     "event_id": "2004-04-24-sacramento-kings-at-los-angeles-lakers",
+     "result": "Sacramento Kings 103, Los Angeles Lakers 84",
+     "winner": "Sacramento Kings"
     },
     {
      "game": 4,
