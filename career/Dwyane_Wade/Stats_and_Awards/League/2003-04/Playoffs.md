@@ -57,7 +57,7 @@ WEST
   (3) San Antonio Spurs        4
   (6) Golden State Warriors    1   -> San Antonio Spurs
   (2) Sacramento Kings         2
-  (7) Los Angeles Lakers       3
+  (7) Los Angeles Lakers       4   -> Los Angeles Lakers
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
@@ -165,7 +165,7 @@ Home court: San Antonio Spurs. San Antonio Spurs wins 4-1.
 
 ### West: (2) Sacramento Kings vs (7) Los Angeles Lakers
 
-Home court: Sacramento Kings. Series Sacramento Kings 2, Los Angeles Lakers 3.
+Home court: Sacramento Kings. Los Angeles Lakers wins 4-2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -174,8 +174,8 @@ Home court: Sacramento Kings. Series Sacramento Kings 2, Los Angeles Lakers 3.
 | 3 | Sat Apr 24 | Los Angeles Lakers | Sacramento Kings | Sacramento Kings 103, Los Angeles Lakers 84 |
 | 4 | Mon Apr 26 | Los Angeles Lakers | Sacramento Kings | Sacramento Kings 100, Los Angeles Lakers 103 |
 | 5 | Wed Apr 28 | Sacramento Kings | Los Angeles Lakers | Los Angeles Lakers 105, Sacramento Kings 98 |
-| 6 | Fri Apr 30 | Los Angeles Lakers | Sacramento Kings | if needed |
-| 7 | Sun May 2 | Sacramento Kings | Los Angeles Lakers | if needed |
+| 6 | Fri Apr 30 | Los Angeles Lakers | Sacramento Kings | Sacramento Kings 106, Los Angeles Lakers 116 |
+| 7 | Sun May 2 | Sacramento Kings | Los Angeles Lakers | not needed |
 
 ## Conference semifinals
 
@@ -206,3 +206,17 @@ Home court: New Jersey Nets. Series Toronto Raptors 0, New Jersey Nets 0.
 | 5 | Wed May 12 | New Jersey Nets | Toronto Raptors | if needed |
 | 6 | Fri May 14 | Toronto Raptors | New Jersey Nets | if needed |
 | 7 | Sun May 16 | New Jersey Nets | Toronto Raptors | if needed |
+
+### West: (3) San Antonio Spurs vs (7) Los Angeles Lakers
+
+Home court: San Antonio Spurs. Series San Antonio Spurs 0, Los Angeles Lakers 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Sun May 2 | San Antonio Spurs | Los Angeles Lakers |  |
+| 2 | Tue May 4 | San Antonio Spurs | Los Angeles Lakers |  |
+| 3 | Fri May 7 | Los Angeles Lakers | San Antonio Spurs |  |
+| 4 | Sun May 9 | Los Angeles Lakers | San Antonio Spurs |  |
+| 5 | Tue May 11 | San Antonio Spurs | Los Angeles Lakers | if needed |
+| 6 | Thu May 13 | Los Angeles Lakers | San Antonio Spurs | if needed |
+| 7 | Sat May 15 | San Antonio Spurs | Los Angeles Lakers | if needed |

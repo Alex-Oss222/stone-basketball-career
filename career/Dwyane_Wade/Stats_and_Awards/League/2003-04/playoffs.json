@@ -766,9 +766,9 @@
    "home_court": "Sacramento Kings",
    "wins": {
     "Sacramento Kings": 2,
-    "Los Angeles Lakers": 3
+    "Los Angeles Lakers": 4
    },
-   "winner": null,
+   "winner": "Los Angeles Lakers",
    "games": [
     {
      "game": 1,
@@ -826,7 +826,9 @@
      "home": "Los Angeles Lakers",
      "away": "Sacramento Kings",
      "conditional": true,
-     "event_id": "2004-04-30-sacramento-kings-at-los-angeles-lakers"
+     "event_id": "2004-04-30-sacramento-kings-at-los-angeles-lakers",
+     "result": "Sacramento Kings 106, Los Angeles Lakers 116",
+     "winner": "Los Angeles Lakers"
     },
     {
      "game": 7,
@@ -834,9 +836,11 @@
      "home": "Sacramento Kings",
      "away": "Los Angeles Lakers",
      "conditional": true,
-     "event_id": "2004-05-02-los-angeles-lakers-at-sacramento-kings"
+     "event_id": "2004-05-02-los-angeles-lakers-at-sacramento-kings",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2004-04-30"
   },
   {
    "id": "west-semi-a",
@@ -989,6 +993,83 @@
      "away": "Toronto Raptors",
      "conditional": true,
      "event_id": "2004-05-16-toronto-raptors-at-new-jersey-nets"
+    }
+   ]
+  },
+  {
+   "id": "west-semi-b",
+   "round": "conference_semifinals",
+   "conference": "West",
+   "seeds": [
+    3,
+    7
+   ],
+   "clubs": [
+    "San Antonio Spurs",
+    "Los Angeles Lakers"
+   ],
+   "home_court": "San Antonio Spurs",
+   "wins": {
+    "San Antonio Spurs": 0,
+    "Los Angeles Lakers": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-05-02",
+     "home": "San Antonio Spurs",
+     "away": "Los Angeles Lakers",
+     "conditional": false,
+     "event_id": "2004-05-02-los-angeles-lakers-at-san-antonio-spurs"
+    },
+    {
+     "game": 2,
+     "date": "2004-05-04",
+     "home": "San Antonio Spurs",
+     "away": "Los Angeles Lakers",
+     "conditional": false,
+     "event_id": "2004-05-04-los-angeles-lakers-at-san-antonio-spurs"
+    },
+    {
+     "game": 3,
+     "date": "2004-05-07",
+     "home": "Los Angeles Lakers",
+     "away": "San Antonio Spurs",
+     "conditional": false,
+     "event_id": "2004-05-07-san-antonio-spurs-at-los-angeles-lakers"
+    },
+    {
+     "game": 4,
+     "date": "2004-05-09",
+     "home": "Los Angeles Lakers",
+     "away": "San Antonio Spurs",
+     "conditional": false,
+     "event_id": "2004-05-09-san-antonio-spurs-at-los-angeles-lakers"
+    },
+    {
+     "game": 5,
+     "date": "2004-05-11",
+     "home": "San Antonio Spurs",
+     "away": "Los Angeles Lakers",
+     "conditional": true,
+     "event_id": "2004-05-11-los-angeles-lakers-at-san-antonio-spurs"
+    },
+    {
+     "game": 6,
+     "date": "2004-05-13",
+     "home": "Los Angeles Lakers",
+     "away": "San Antonio Spurs",
+     "conditional": true,
+     "event_id": "2004-05-13-san-antonio-spurs-at-los-angeles-lakers"
+    },
+    {
+     "game": 7,
+     "date": "2004-05-15",
+     "home": "San Antonio Spurs",
+     "away": "Los Angeles Lakers",
+     "conditional": true,
+     "event_id": "2004-05-15-los-angeles-lakers-at-san-antonio-spurs"
     }
    ]
   }
