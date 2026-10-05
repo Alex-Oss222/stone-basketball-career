@@ -859,7 +859,7 @@
    ],
    "home_court": "Minnesota Timberwolves",
    "wins": {
-    "Minnesota Timberwolves": 2,
+    "Minnesota Timberwolves": 3,
     "Dallas Mavericks": 0
    },
    "winner": null,
@@ -890,7 +890,9 @@
      "home": "Dallas Mavericks",
      "away": "Minnesota Timberwolves",
      "conditional": false,
-     "event_id": "2004-05-07-minnesota-timberwolves-at-dallas-mavericks"
+     "event_id": "2004-05-07-minnesota-timberwolves-at-dallas-mavericks",
+     "result": "Minnesota Timberwolves 107, Dallas Mavericks 84",
+     "winner": "Minnesota Timberwolves"
     },
     {
      "game": 4,
@@ -1021,7 +1023,7 @@
    ],
    "home_court": "San Antonio Spurs",
    "wins": {
-    "San Antonio Spurs": 0,
+    "San Antonio Spurs": 1,
     "Los Angeles Lakers": 2
    },
    "winner": null,
@@ -1052,7 +1054,9 @@
      "home": "Los Angeles Lakers",
      "away": "San Antonio Spurs",
      "conditional": false,
-     "event_id": "2004-05-07-san-antonio-spurs-at-los-angeles-lakers"
+     "event_id": "2004-05-07-san-antonio-spurs-at-los-angeles-lakers",
+     "result": "San Antonio Spurs 89, Los Angeles Lakers 87",
+     "winner": "San Antonio Spurs"
     },
     {
      "game": 4,

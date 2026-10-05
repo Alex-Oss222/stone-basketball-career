@@ -181,13 +181,13 @@ Home court: Sacramento Kings. Los Angeles Lakers wins 4-2.
 
 ### West: (1) Minnesota Timberwolves vs (4) Dallas Mavericks
 
-Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 2, Dallas Mavericks 0.
+Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 3, Dallas Mavericks 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun May 2 | Minnesota Timberwolves | Dallas Mavericks | Dallas Mavericks 96, Minnesota Timberwolves 107 |
 | 2 | Tue May 4 | Minnesota Timberwolves | Dallas Mavericks | Dallas Mavericks 92, Minnesota Timberwolves 101 |
-| 3 | Fri May 7 | Dallas Mavericks | Minnesota Timberwolves |  |
+| 3 | Fri May 7 | Dallas Mavericks | Minnesota Timberwolves | Minnesota Timberwolves 107, Dallas Mavericks 84 |
 | 4 | Sun May 9 | Dallas Mavericks | Minnesota Timberwolves |  |
 | 5 | Tue May 11 | Minnesota Timberwolves | Dallas Mavericks | if needed |
 | 6 | Thu May 13 | Dallas Mavericks | Minnesota Timberwolves | if needed |
@@ -209,13 +209,13 @@ Home court: New Jersey Nets. Series Toronto Raptors 0, New Jersey Nets 2.
 
 ### West: (3) San Antonio Spurs vs (7) Los Angeles Lakers
 
-Home court: San Antonio Spurs. Series San Antonio Spurs 0, Los Angeles Lakers 2.
+Home court: San Antonio Spurs. Series San Antonio Spurs 1, Los Angeles Lakers 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun May 2 | San Antonio Spurs | Los Angeles Lakers | Los Angeles Lakers 89, San Antonio Spurs 81 |
 | 2 | Tue May 4 | San Antonio Spurs | Los Angeles Lakers | Los Angeles Lakers 104, San Antonio Spurs 96 |
-| 3 | Fri May 7 | Los Angeles Lakers | San Antonio Spurs |  |
+| 3 | Fri May 7 | Los Angeles Lakers | San Antonio Spurs | San Antonio Spurs 89, Los Angeles Lakers 87 |
 | 4 | Sun May 9 | Los Angeles Lakers | San Antonio Spurs |  |
 | 5 | Tue May 11 | San Antonio Spurs | Los Angeles Lakers | if needed |
 | 6 | Thu May 13 | Los Angeles Lakers | San Antonio Spurs | if needed |
