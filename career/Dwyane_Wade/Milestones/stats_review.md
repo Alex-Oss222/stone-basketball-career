@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-09-12 · Miami Heat · active
+Career date: 2004-09-19 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-94 closed game records in 2003-04 through 2004-09-12. Competitions remain separate.
+94 closed game records in 2003-04 through 2004-09-19. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 

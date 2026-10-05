@@ -1,6 +1,6 @@
 # Miami Heat working depth chart
 
-**As of:** 2004-09-12 · **Staff decision in force:** 2004-04-09 (fortnightly review)  
+**As of:** 2004-09-19 · **Staff decision in force:** 2004-04-09 (fortnightly review)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
@@ -29,7 +29,7 @@
 
 Outside the rotation (dressing as the twelfth man or on the injured list): Anthony Carter, Sean Lampley, Udonis Haslem, John Wallace.
 
-## Injured list on 2004-09-12
+## Injured list on 2004-09-19
 
 John Wallace, Sean Lampley, Udonis Haslem ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 

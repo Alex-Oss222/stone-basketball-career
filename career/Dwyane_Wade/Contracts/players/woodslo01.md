@@ -2,9 +2,9 @@
 
 # Contract | Loren Woods
 
-Known through: 2004-09-12. [Open interactive contract](woodslo01.html#contract) · [Contract history](woodslo01.html#contract-history)
+Known through: 2004-09-19. [Open interactive contract](woodslo01.html#contract) · [Contract history](woodslo01.html#contract-history)
 
-Loren Woods: under contract. Evidence cutoff: 2004-09-12.
+Loren Woods: under contract. Evidence cutoff: 2004-09-19.
 
 ## Current contract
 

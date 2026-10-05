@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-09-12",
+  "as_of": "2004-09-19",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2131,8 +2131,8 @@
       "name": "Jon Barry",
       "team": "Denver Nuggets",
       "status": "under contract",
-      "current_contract_id": "barryjo01-2003-08-19",
-      "recorded_agreements": 2,
+      "current_contract_id": "barryjo01-2004-09-16",
+      "recorded_agreements": 3,
       "href": "players/barryjo01.html#contract"
     },
     {
@@ -2320,8 +2320,8 @@
       "name": "Kenny Anderson",
       "team": "Indiana Pacers",
       "status": "under contract",
-      "current_contract_id": "anderke01-2003-09-19",
-      "recorded_agreements": 2,
+      "current_contract_id": "anderke01-2004-09-16",
+      "recorded_agreements": 3,
       "href": "players/anderke01.html#contract"
     },
     {
@@ -3994,8 +3994,8 @@
       "name": "Steve Smith",
       "team": "New Orleans Hornets",
       "status": "under contract",
-      "current_contract_id": "smithst01-2003-10-29",
-      "recorded_agreements": 2,
+      "current_contract_id": "smithst01-2004-09-16",
+      "recorded_agreements": 3,
       "href": "players/smithst01.html#contract"
     },
     {

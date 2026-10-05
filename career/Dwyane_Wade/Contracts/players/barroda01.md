@@ -2,9 +2,9 @@
 
 # Contract | Dana Barros
 
-Known through: 2004-09-12. [Open interactive contract](barroda01.html#contract) · [Contract history](barroda01.html#contract-history)
+Known through: 2004-09-19. [Open interactive contract](barroda01.html#contract) · [Contract history](barroda01.html#contract-history)
 
-Dana Barros: under contract. Evidence cutoff: 2004-09-12.
+Dana Barros: under contract. Evidence cutoff: 2004-09-19.
 
 ## Current contract
 

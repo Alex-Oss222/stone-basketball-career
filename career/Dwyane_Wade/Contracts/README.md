@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-09-12. [Search the contract directory](index.html)
+Known through 2004-09-19. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -244,7 +244,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [John Salmons](players/salmojo01.md) | Philadelphia 76ers | under rookie contract | John Salmons · 2002-07-12 | 1 |
 | [John Stockton](players/stockjo01.md) | Utah Jazz | expired or unresolved | No verified current agreement | 0 |
 | [John Wallace](players/wallajo01.md) | Miami Heat | camp contract | John Wallace · 2003-10-27 | 1 |
-| [Jon Barry](players/barryjo01.md) | Denver Nuggets | under contract | Jon Barry · 2003-08-19 | 2 |
+| [Jon Barry](players/barryjo01.md) | Denver Nuggets | under contract | Jon Barry · 2004-09-16 | 3 |
 | [Jonathan Bender](players/bendejo01.md) | Indiana Pacers | under contract | Jonathan Bender · 2002-10-31 | 1 |
 | [Joseph Forte](players/fortejo01.md) | Seattle SuperSonics | under rookie contract | Joseph Forte · existing contract; signing date not recorded | 1 |
 | [Josh Davis](players/davisjo02.md) | Atlanta Hawks | No verified contract record | No verified current agreement | 0 |
@@ -265,7 +265,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Ken Johnson](players/johnske03.md) | Miami Heat | team option declined | No verified current agreement | 1 |
 | [Kendall Gill](players/gillke01.md) | Chicago Bulls | under contract | Kendall Gill · 2003-08-20 | 2 |
 | [Kendrick Perkins](players/perkike01.md) | Boston Celtics | No verified contract record | No verified current agreement | 0 |
-| [Kenny Anderson](players/anderke01.md) | Indiana Pacers | under contract | Kenny Anderson · 2003-09-19 | 2 |
+| [Kenny Anderson](players/anderke01.md) | Indiana Pacers | under contract | Kenny Anderson · 2004-09-16 | 3 |
 | [Kenny Thomas](players/thomake01.md) | Philadelphia 76ers | under contract | Kenny Thomas · 2003-07-16 | 2 |
 | [Kenyon Martin](players/martike01.md) | New Jersey Nets | under contract | Kenyon Martin · 2004-07-15 | 2 |
 | [Keon Clark](players/clarkke01.md) | Utah Jazz | voided | No verified current agreement | 2 |
@@ -451,7 +451,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Steve Francis](players/francst01.md) | Houston Rockets | under contract | Steve Francis · 2002-08-26 | 1 |
 | [Steve Kerr](players/kerrst01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Steve Nash](players/nashst01.md) | Dallas Mavericks | under contract | Steve Nash · 2004-07-14 | 2 |
-| [Steve Smith](players/smithst01.md) | New Orleans Hornets | under contract | Steve Smith · 2003-10-29 | 2 |
+| [Steve Smith](players/smithst01.md) | New Orleans Hornets | under contract | Steve Smith · 2004-09-16 | 3 |
 | [Steven Hunter](players/huntest01.md) | Orlando Magic | under contract | Steven Hunter · 2004-08-20 | 3 |
 | [Stromile Swift](players/swiftst01.md) | Memphis Grizzlies | under rookie contract | Stromile Swift · 2000-07-18 | 1 |
 | [Szymon Szewczyk](players/szewcsz01.md) | Milwaukee Bucks | No verified contract record | No verified current agreement | 0 |
