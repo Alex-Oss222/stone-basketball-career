@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-08-29",
+  "as_of": "2004-09-05",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -457,8 +457,8 @@
       "name": "Brevin Knight",
       "team": "Phoenix Suns",
       "status": "under contract",
-      "current_contract_id": "knighbr01-1999-11-01",
-      "recorded_agreements": 1,
+      "current_contract_id": "knighbr01-2004-08-31",
+      "recorded_agreements": 2,
       "href": "players/knighbr01.html#contract"
     },
     {
@@ -1005,9 +1005,9 @@
       "player_id": "milesda01",
       "name": "Darius Miles",
       "team": "Cleveland Cavaliers",
-      "status": "under rookie contract",
-      "current_contract_id": "milesda01-2000-08-08",
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "milesda01-2004-08-31",
+      "recorded_agreements": 2,
       "href": "players/milesda01.html#contract"
     },
     {

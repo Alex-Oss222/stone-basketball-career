@@ -2,9 +2,9 @@
 
 # Contract | Derrick Dial
 
-Known through: 2004-08-29. [Open interactive contract](dialde01.html#contract) · [Contract history](dialde01.html#contract-history)
+Known through: 2004-09-05. [Open interactive contract](dialde01.html#contract) · [Contract history](dialde01.html#contract-history)
 
-Derrick Dial: No verified contract record. Evidence cutoff: 2004-08-29.
+Derrick Dial: No verified contract record. Evidence cutoff: 2004-09-05.
 
 ## Current contract
 

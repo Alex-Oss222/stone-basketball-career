@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-08-29. [Search the contract directory](index.html)
+Known through 2004-09-05. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -58,7 +58,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Brandon Hunter](players/huntebr01.md) | Boston Celtics | No verified contract record | No verified current agreement | 0 |
 | [Brendan Haywood](players/haywobr01.md) | Washington Wizards | under rookie contract | Brendan Haywood · existing contract; signing date not recorded | 1 |
 | [Brent Barry](players/barrybr01.md) | Seattle SuperSonics | under contract | Brent Barry · 2004-07-15 | 2 |
-| [Brevin Knight](players/knighbr01.md) | Phoenix Suns | under contract | Brevin Knight · 1999-11-01 | 1 |
+| [Brevin Knight](players/knighbr01.md) | Phoenix Suns | under contract | Brevin Knight · 2004-08-31 | 2 |
 | [Brian Cardinal](players/cardibr01.md) | Golden State Warriors | under contract | Brian Cardinal · 2004-07-14 | 1 |
 | [Brian Cook](players/cookbr01.md) | Los Angeles Lakers | No verified contract record | No verified current agreement | 0 |
 | [Brian Grant](players/grantbr01.md) | Miami Heat | under contract | Brian Grant · 2000-08-30 | 1 |
@@ -119,7 +119,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Danny Ferry](players/ferryda01.md) | Indiana Pacers | expired or unresolved | No verified current agreement | 0 |
 | [Danny Fortson](players/fortsda01.md) | Dallas Mavericks | under contract | Danny Fortson · existing contract; signing date not recorded | 1 |
 | [Danny Manning](players/mannida01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
-| [Darius Miles](players/milesda01.md) | Cleveland Cavaliers | under rookie contract | Darius Miles · 2000-08-08 | 1 |
+| [Darius Miles](players/milesda01.md) | Cleveland Cavaliers | under contract | Darius Miles · 2004-08-31 | 2 |
 | [Darius Songaila](players/songada01.md) | Sacramento Kings | under contract | Darius Songaila · 2004-07-23 | 1 |
 | [Darko Milicic](players/milicda01.md) | Detroit Pistons | No verified contract record | No verified current agreement | 0 |
 | [Darrell Armstrong](players/armstda01.md) | New Orleans Hornets | under contract | Darrell Armstrong · 2003-07-29 | 2 |
