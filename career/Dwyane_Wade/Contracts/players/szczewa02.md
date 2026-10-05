@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Minnesota Timberwolves |
+| Assigned club | Denver Nuggets |
 | Signing club | Not recorded |
 | Contract ID | szczewa02-2002-10-30 |
 | Signing route / evidence basis | contract_history |
@@ -106,6 +106,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-07-15 | Minnesota Timberwolves | Denver Nuggets | 2004-summer-trade-2004-07-15-delkto01-madsema01-szczewa02 | [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json) |
 
 ### Evidence and coverage
 
@@ -121,6 +122,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.shamsports.com/players/wally-szczerbiak)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
 
@@ -194,7 +196,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Minnesota Timberwolves |
+| Assigned club | Denver Nuggets |
 | Signing club | Not recorded |
 | Contract ID | szczewa02-2002-10-30 |
 | Signing route / evidence basis | contract_history |
@@ -275,6 +277,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-07-15 | Minnesota Timberwolves | Denver Nuggets | 2004-summer-trade-2004-07-15-delkto01-madsema01-szczewa02 | [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json) |
 
 ### Evidence and coverage
 
@@ -290,6 +293,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Contract source document](https://www.shamsports.com/players/wally-szczerbiak)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ## Source records
 

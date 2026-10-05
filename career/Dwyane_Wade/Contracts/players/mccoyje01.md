@@ -8,31 +8,31 @@ Jelani McCoy: under contract. Evidence cutoff: 2004-09-30.
 
 ## Current contract
 
-### Jelani McCoy · 2004-09-23
+### Jelani McCoy · 2004-07-15
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2004-09-23 |  |
-| Original term | Not recorded |  |
+| Signing date | 2004-07-15 |  |
+| Original term | 1 seasons |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 1 |  |
+| Recorded schedule subtotal | $870,046 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Milwaukee Bucks |
-| Signing club | Milwaukee Bucks |
-| Contract ID | mccoyje01-2004-09-23 |
-| Signing route / evidence basis | signing |
-| Signing date | 2004-09-23 |
+| Assigned club | Indiana Pacers |
+| Signing club | Indiana Pacers |
+| Contract ID | mccoyje01-2004-07-15 |
+| Signing route / evidence basis | minimum |
+| Signing date | 2004-07-15 |
 | Verified first season | 2004-05 |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2004-05 |
+| Verified expiry date | 2005-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -42,7 +42,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $870,046 | Not recorded | Not recorded | $870,046 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -97,13 +97,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2004 summer market: signing on 2004-07-15, from Cleveland Cavaliers. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
 
@@ -160,31 +160,31 @@ An offer, counteroffer or acceptance is not an executed contract.
 
 The register preserves distinct agreements. An assignment by trade is part of the same agreement.
 
-### Jelani McCoy · 2004-09-23
+### Jelani McCoy · 2004-07-15
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2004-09-23 |  |
-| Original term | Not recorded |  |
+| Signing date | 2004-07-15 |  |
+| Original term | 1 seasons |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 1 |  |
+| Recorded schedule subtotal | $870,046 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Milwaukee Bucks |
-| Signing club | Milwaukee Bucks |
-| Contract ID | mccoyje01-2004-09-23 |
-| Signing route / evidence basis | signing |
-| Signing date | 2004-09-23 |
+| Assigned club | Indiana Pacers |
+| Signing club | Indiana Pacers |
+| Contract ID | mccoyje01-2004-07-15 |
+| Signing route / evidence basis | minimum |
+| Signing date | 2004-07-15 |
 | Verified first season | 2004-05 |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2004-05 |
+| Verified expiry date | 2005-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -194,7 +194,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $870,046 | Not recorded | Not recorded | $870,046 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -249,16 +249,16 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2004 summer market: signing on 2004-07-15, from Cleveland Cavaliers. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ## Source records
 
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)

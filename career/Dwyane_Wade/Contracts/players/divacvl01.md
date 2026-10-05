@@ -8,31 +8,31 @@ Vlade Divac: under contract. Evidence cutoff: 2004-09-30.
 
 ## Current contract
 
-### Vlade Divac · 2004-07-20
+### Vlade Divac · 2004-07-22
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2004-07-20 |  |
-| Original term | 2 seasons |  |
+| Signing date | 2004-07-22 |  |
+| Original term | 1 seasons |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 2 |  |
+| Recorded schedule subtotal | $5,597,035 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Los Angeles Lakers |
-| Signing club | Los Angeles Lakers |
-| Contract ID | divacvl01-2004-07-20 |
-| Signing route / evidence basis | signing |
-| Signing date | 2004-07-20 |
+| Assigned club | Toronto Raptors |
+| Signing club | Toronto Raptors |
+| Contract ID | divacvl01-2004-07-22 |
+| Signing route / evidence basis | cap room |
+| Signing date | 2004-07-22 |
 | Verified first season | 2004-05 |
-| Verified final season | 2005-06 |
-| Verified expiry date | 2006-06-30 |
+| Verified final season | 2004-05 |
+| Verified expiry date | 2005-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -42,8 +42,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $5,597,035 | Not recorded | Not recorded | $5,597,035 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -59,7 +58,6 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 | Season | Signing bonus | Dead cap | Buyout |
 | --- | --- | --- | --- |
 | 2004-05 | Not recorded | Not recorded | Not recorded |
-| 2005-06 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
@@ -99,13 +97,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2004 summer market: signing on 2004-07-22, from Sacramento Kings. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
 
@@ -162,31 +160,31 @@ An offer, counteroffer or acceptance is not an executed contract.
 
 The register preserves distinct agreements. An assignment by trade is part of the same agreement.
 
-### Vlade Divac · 2004-07-20
+### Vlade Divac · 2004-07-22
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2004-07-20 |  |
-| Original term | 2 seasons |  |
+| Signing date | 2004-07-22 |  |
+| Original term | 1 seasons |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 2 |  |
+| Recorded schedule subtotal | $5,597,035 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Los Angeles Lakers |
-| Signing club | Los Angeles Lakers |
-| Contract ID | divacvl01-2004-07-20 |
-| Signing route / evidence basis | signing |
-| Signing date | 2004-07-20 |
+| Assigned club | Toronto Raptors |
+| Signing club | Toronto Raptors |
+| Contract ID | divacvl01-2004-07-22 |
+| Signing route / evidence basis | cap room |
+| Signing date | 2004-07-22 |
 | Verified first season | 2004-05 |
-| Verified final season | 2005-06 |
-| Verified expiry date | 2006-06-30 |
+| Verified final season | 2004-05 |
+| Verified expiry date | 2005-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -196,8 +194,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $5,597,035 | Not recorded | Not recorded | $5,597,035 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -213,7 +210,6 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 | Season | Signing bonus | Dead cap | Buyout |
 | --- | --- | --- | --- |
 | 2004-05 | Not recorded | Not recorded | Not recorded |
-| 2005-06 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
@@ -253,13 +249,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2004 summer market: signing on 2004-07-22, from Sacramento Kings. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Vlade Divac · existing contract; signing date not recorded
 
@@ -367,5 +363,5 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)

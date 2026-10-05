@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Seattle SuperSonics |
+| Assigned club | Golden State Warriors |
 | Signing club | Not recorded |
 | Contract ID | boothca01-existing-ac0b4076eeb1 |
 | Signing route / evidence basis | salary_pattern |
@@ -102,6 +102,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-07-15 | Seattle SuperSonics | Golden State Warriors | 2004-summer-trade-2004-07-15-andersh01-boothca01-potapvi01 | [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json) |
 
 ### Evidence and coverage
 
@@ -116,6 +117,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
 
@@ -189,7 +191,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Seattle SuperSonics |
+| Assigned club | Golden State Warriors |
 | Signing club | Not recorded |
 | Contract ID | boothca01-existing-ac0b4076eeb1 |
 | Signing route / evidence basis | salary_pattern |
@@ -266,6 +268,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-07-15 | Seattle SuperSonics | Golden State Warriors | 2004-summer-trade-2004-07-15-andersh01-boothca01-potapvi01 | [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json) |
 
 ### Evidence and coverage
 
@@ -280,6 +283,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ## Source records
 

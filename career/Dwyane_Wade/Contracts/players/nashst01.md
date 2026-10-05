@@ -15,24 +15,24 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
 | Signing date | 2004-07-14 |  |
-| Original term | 6 seasons |  |
-| Reported original value | $65,625,000 | reported total |
+| Original term | 3 seasons |  |
+| Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 6 |  |
+| Recorded schedule subtotal | $44,418,375 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Phoenix Suns |
-| Signing club | Phoenix Suns |
+| Assigned club | Dallas Mavericks |
+| Signing club | Dallas Mavericks |
 | Contract ID | nashst01-2004-07-14 |
-| Signing route / evidence basis | signing |
+| Signing route / evidence basis | bird |
 | Signing date | 2004-07-14 |
 | Verified first season | 2004-05 |
-| Verified final season | 2009-10 |
-| Verified expiry date | 2010-06-30 |
+| Verified final season | 2006-07 |
+| Verified expiry date | 2007-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -42,12 +42,9 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2006-07 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2007-08 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2008-09 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2009-10 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $13,161,000 | Not recorded | Not recorded | $13,161,000 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $14,806,125 | Not recorded | Not recorded | $14,806,125 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $16,451,250 | Not recorded | Not recorded | $16,451,250 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -65,9 +62,6 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 | 2004-05 | Not recorded | Not recorded | Not recorded |
 | 2005-06 | Not recorded | Not recorded | Not recorded |
 | 2006-07 | Not recorded | Not recorded | Not recorded |
-| 2007-08 | Not recorded | Not recorded | Not recorded |
-| 2008-09 | Not recorded | Not recorded | Not recorded |
-| 2009-10 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
@@ -107,13 +101,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2004 summer market: re sign on 2004-07-14. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
 
@@ -177,24 +171,24 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
 | Signing date | 2004-07-14 |  |
-| Original term | 6 seasons |  |
-| Reported original value | $65,625,000 | reported total |
+| Original term | 3 seasons |  |
+| Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 6 |  |
+| Recorded schedule subtotal | $44,418,375 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Phoenix Suns |
-| Signing club | Phoenix Suns |
+| Assigned club | Dallas Mavericks |
+| Signing club | Dallas Mavericks |
 | Contract ID | nashst01-2004-07-14 |
-| Signing route / evidence basis | signing |
+| Signing route / evidence basis | bird |
 | Signing date | 2004-07-14 |
 | Verified first season | 2004-05 |
-| Verified final season | 2009-10 |
-| Verified expiry date | 2010-06-30 |
+| Verified final season | 2006-07 |
+| Verified expiry date | 2007-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -204,12 +198,9 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2006-07 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2007-08 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2008-09 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2009-10 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $13,161,000 | Not recorded | Not recorded | $13,161,000 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $14,806,125 | Not recorded | Not recorded | $14,806,125 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $16,451,250 | Not recorded | Not recorded | $16,451,250 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -227,9 +218,6 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 | 2004-05 | Not recorded | Not recorded | Not recorded |
 | 2005-06 | Not recorded | Not recorded | Not recorded |
 | 2006-07 | Not recorded | Not recorded | Not recorded |
-| 2007-08 | Not recorded | Not recorded | Not recorded |
-| 2008-09 | Not recorded | Not recorded | Not recorded |
-| 2009-10 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
@@ -269,13 +257,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2004 summer market: re sign on 2004-07-14. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Steve Nash · 1999-01-25
 
@@ -387,5 +375,5 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.shamsports.com/players/steve-nash)
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)

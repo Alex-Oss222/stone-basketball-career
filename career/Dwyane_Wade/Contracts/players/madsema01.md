@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Minnesota Timberwolves |
+| Assigned club | Denver Nuggets |
 | Signing club | Minnesota Timberwolves |
 | Contract ID | madsema01-2003-07-28 |
 | Signing route / evidence basis | signing |
@@ -94,6 +94,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-07-15 | Minnesota Timberwolves | Denver Nuggets | 2004-summer-trade-2004-07-15-delkto01-madsema01-szczewa02 | [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json) |
 
 ### Evidence and coverage
 
@@ -104,6 +105,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
 
@@ -177,7 +179,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Minnesota Timberwolves |
+| Assigned club | Denver Nuggets |
 | Signing club | Minnesota Timberwolves |
 | Contract ID | madsema01-2003-07-28 |
 | Signing route / evidence basis | signing |
@@ -246,6 +248,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-07-15 | Minnesota Timberwolves | Denver Nuggets | 2004-summer-trade-2004-07-15-delkto01-madsema01-szczewa02 | [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json) |
 
 ### Evidence and coverage
 
@@ -256,6 +259,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Mark Madsen · existing contract; signing date not recorded
 

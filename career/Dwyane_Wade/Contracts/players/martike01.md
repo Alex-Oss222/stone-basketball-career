@@ -8,31 +8,31 @@ Kenyon Martin: under contract. Evidence cutoff: 2004-09-30.
 
 ## Current contract
 
-### Kenyon Martin · 2004-07-15
+### Kenyon Martin · 2004-07-14
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2004-07-15 |  |
-| Original term | 7 seasons |  |
-| Reported original value | $91,000,000 | reported total |
+| Signing date | 2004-07-14 |  |
+| Original term | 5 seasons |  |
+| Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 7 |  |
+| Recorded schedule subtotal | $58,550,518 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Denver Nuggets |
-| Signing club | Denver Nuggets |
-| Contract ID | martike01-2004-07-15 |
-| Signing route / evidence basis | sign and trade |
-| Signing date | 2004-07-15 |
+| Assigned club | New Jersey Nets |
+| Signing club | New Jersey Nets |
+| Contract ID | martike01-2004-07-14 |
+| Signing route / evidence basis | bird |
+| Signing date | 2004-07-14 |
 | Verified first season | 2004-05 |
-| Verified final season | 2010-11 |
-| Verified expiry date | 2011-06-30 |
+| Verified final season | 2008-09 |
+| Verified expiry date | 2009-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -42,13 +42,11 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2006-07 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2007-08 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2008-09 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2009-10 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2010-11 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $9,368,083 | Not recorded | Not recorded | $9,368,083 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $10,539,093 | Not recorded | Not recorded | $10,539,093 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $11,710,104 | Not recorded | Not recorded | $11,710,104 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2007-08 | $12,881,114 | Not recorded | Not recorded | $12,881,114 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2008-09 | $14,052,124 | Not recorded | Not recorded | $14,052,124 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -68,8 +66,6 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 | 2006-07 | Not recorded | Not recorded | Not recorded |
 | 2007-08 | Not recorded | Not recorded | Not recorded |
 | 2008-09 | Not recorded | Not recorded | Not recorded |
-| 2009-10 | Not recorded | Not recorded | Not recorded |
-| 2010-11 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
@@ -109,13 +105,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2004 summer market: offer sheet matched on 2004-07-14, from Denver Nuggets. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
 
@@ -172,31 +168,31 @@ An offer, counteroffer or acceptance is not an executed contract.
 
 The register preserves distinct agreements. An assignment by trade is part of the same agreement.
 
-### Kenyon Martin · 2004-07-15
+### Kenyon Martin · 2004-07-14
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2004-07-15 |  |
-| Original term | 7 seasons |  |
-| Reported original value | $91,000,000 | reported total |
+| Signing date | 2004-07-14 |  |
+| Original term | 5 seasons |  |
+| Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 7 |  |
+| Recorded schedule subtotal | $58,550,518 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Denver Nuggets |
-| Signing club | Denver Nuggets |
-| Contract ID | martike01-2004-07-15 |
-| Signing route / evidence basis | sign and trade |
-| Signing date | 2004-07-15 |
+| Assigned club | New Jersey Nets |
+| Signing club | New Jersey Nets |
+| Contract ID | martike01-2004-07-14 |
+| Signing route / evidence basis | bird |
+| Signing date | 2004-07-14 |
 | Verified first season | 2004-05 |
-| Verified final season | 2010-11 |
-| Verified expiry date | 2011-06-30 |
+| Verified final season | 2008-09 |
+| Verified expiry date | 2009-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -206,13 +202,11 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2006-07 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2007-08 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2008-09 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2009-10 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2010-11 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $9,368,083 | Not recorded | Not recorded | $9,368,083 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $10,539,093 | Not recorded | Not recorded | $10,539,093 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $11,710,104 | Not recorded | Not recorded | $11,710,104 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2007-08 | $12,881,114 | Not recorded | Not recorded | $12,881,114 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2008-09 | $14,052,124 | Not recorded | Not recorded | $14,052,124 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -232,8 +226,6 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 | 2006-07 | Not recorded | Not recorded | Not recorded |
 | 2007-08 | Not recorded | Not recorded | Not recorded |
 | 2008-09 | Not recorded | Not recorded | Not recorded |
-| 2009-10 | Not recorded | Not recorded | Not recorded |
-| 2010-11 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
@@ -273,13 +265,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2004 summer market: offer sheet matched on 2004-07-14, from Denver Nuggets. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Kenyon Martin · 2000-08-22
 
@@ -389,5 +381,5 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.shamsports.com/players/kenyon-martin)
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)

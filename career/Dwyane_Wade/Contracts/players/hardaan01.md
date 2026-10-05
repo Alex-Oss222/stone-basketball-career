@@ -25,7 +25,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Phoenix Suns |
+| Assigned club | Denver Nuggets |
 | Signing club | Not recorded |
 | Contract ID | hardaan01-existing-440992846d5f |
 | Signing route / evidence basis | salary_pattern |
@@ -100,6 +100,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-07-22 | Phoenix Suns | Denver Nuggets | 2004-summer-trade-2004-07-22-hardaan01-olowomi01-tskitni01 | [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json) |
 
 ### Evidence and coverage
 
@@ -114,6 +115,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
 
@@ -187,7 +189,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Phoenix Suns |
+| Assigned club | Denver Nuggets |
 | Signing club | Not recorded |
 | Contract ID | hardaan01-existing-440992846d5f |
 | Signing route / evidence basis | salary_pattern |
@@ -262,6 +264,7 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 | Date | From | To | Transaction | Source |
 | --- | --- | --- | --- | --- |
+| 2004-07-22 | Phoenix Suns | Denver Nuggets | 2004-summer-trade-2004-07-22-hardaan01-olowomi01-tskitni01 | [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json) |
 
 ### Evidence and coverage
 
@@ -276,6 +279,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ## Source records
 

@@ -8,31 +8,31 @@ Brian Cardinal: under contract. Evidence cutoff: 2004-09-30.
 
 ## Current contract
 
-### Brian Cardinal · 2004-07-14
+### Brian Cardinal · 2004-07-15
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2004-07-14 |  |
-| Original term | 6 seasons |  |
-| Reported original value | $33,750,000 | reported total |
+| Signing date | 2004-07-15 |  |
+| Original term | 4 seasons |  |
+| Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 6 |  |
+| Recorded schedule subtotal | $17,829,250 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Memphis Grizzlies |
-| Signing club | Memphis Grizzlies |
-| Contract ID | cardibr01-2004-07-14 |
-| Signing route / evidence basis | signing |
-| Signing date | 2004-07-14 |
+| Assigned club | Chicago Bulls |
+| Signing club | Chicago Bulls |
+| Contract ID | cardibr01-2004-07-15 |
+| Signing route / evidence basis | mid level |
+| Signing date | 2004-07-15 |
 | Verified first season | 2004-05 |
-| Verified final season | 2009-10 |
-| Verified expiry date | 2010-06-30 |
+| Verified final season | 2007-08 |
+| Verified expiry date | 2008-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -42,12 +42,10 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2006-07 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2007-08 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2008-09 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2009-10 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $3,875,924 | Not recorded | Not recorded | $3,875,924 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $4,263,516 | Not recorded | Not recorded | $4,263,516 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $4,651,109 | Not recorded | Not recorded | $4,651,109 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2007-08 | $5,038,701 | Not recorded | Not recorded | $5,038,701 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -66,8 +64,6 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 | 2005-06 | Not recorded | Not recorded | Not recorded |
 | 2006-07 | Not recorded | Not recorded | Not recorded |
 | 2007-08 | Not recorded | Not recorded | Not recorded |
-| 2008-09 | Not recorded | Not recorded | Not recorded |
-| 2009-10 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
@@ -107,13 +103,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2004 summer market: signing on 2004-07-15, from Golden State Warriors. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
 
@@ -170,31 +166,31 @@ An offer, counteroffer or acceptance is not an executed contract.
 
 The register preserves distinct agreements. An assignment by trade is part of the same agreement.
 
-### Brian Cardinal · 2004-07-14
+### Brian Cardinal · 2004-07-15
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2004-07-14 |  |
-| Original term | 6 seasons |  |
-| Reported original value | $33,750,000 | reported total |
+| Signing date | 2004-07-15 |  |
+| Original term | 4 seasons |  |
+| Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 6 |  |
+| Recorded schedule subtotal | $17,829,250 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Memphis Grizzlies |
-| Signing club | Memphis Grizzlies |
-| Contract ID | cardibr01-2004-07-14 |
-| Signing route / evidence basis | signing |
-| Signing date | 2004-07-14 |
+| Assigned club | Chicago Bulls |
+| Signing club | Chicago Bulls |
+| Contract ID | cardibr01-2004-07-15 |
+| Signing route / evidence basis | mid level |
+| Signing date | 2004-07-15 |
 | Verified first season | 2004-05 |
-| Verified final season | 2009-10 |
-| Verified expiry date | 2010-06-30 |
+| Verified final season | 2007-08 |
+| Verified expiry date | 2008-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -204,12 +200,10 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2005-06 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2006-07 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2007-08 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2008-09 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
-| 2009-10 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $3,875,924 | Not recorded | Not recorded | $3,875,924 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2005-06 | $4,263,516 | Not recorded | Not recorded | $4,263,516 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2006-07 | $4,651,109 | Not recorded | Not recorded | $4,651,109 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2007-08 | $5,038,701 | Not recorded | Not recorded | $5,038,701 | Not recorded | Not recorded | Not recorded | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -228,8 +222,6 @@ Missing bonus, dead-cap and buyout fields do not establish zero liability or pay
 | 2005-06 | Not recorded | Not recorded | Not recorded |
 | 2006-07 | Not recorded | Not recorded | Not recorded |
 | 2007-08 | Not recorded | Not recorded | Not recorded |
-| 2008-09 | Not recorded | Not recorded | Not recorded |
-| 2009-10 | Not recorded | Not recorded | Not recorded |
 
 ### Guarantees, incentives and payment terms
 
@@ -269,17 +261,17 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2004 summer market: signing on 2004-07-15, from Golden State Warriors. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ## Source records
 
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)

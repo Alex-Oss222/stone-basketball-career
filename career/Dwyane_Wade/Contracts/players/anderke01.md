@@ -8,31 +8,31 @@ Kenny Anderson: under contract. Evidence cutoff: 2004-09-30.
 
 ## Current contract
 
-### Kenny Anderson · 2004-09-16
+### Kenny Anderson · 2004-08-12
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2004-09-16 |  |
-| Original term | Not recorded |  |
+| Signing date | 2004-08-12 |  |
+| Original term | 1 seasons |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 1 |  |
+| Recorded schedule subtotal | $1,100,000 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Atlanta Hawks |
-| Signing club | Atlanta Hawks |
-| Contract ID | anderke01-2004-09-16 |
-| Signing route / evidence basis | signing |
-| Signing date | 2004-09-16 |
+| Assigned club | Toronto Raptors |
+| Signing club | Toronto Raptors |
+| Contract ID | anderke01-2004-08-12 |
+| Signing route / evidence basis | minimum |
+| Signing date | 2004-08-12 |
 | Verified first season | 2004-05 |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2004-05 |
+| Verified expiry date | 2005-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -42,7 +42,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $1,100,000 | Not recorded | Not recorded | $1,100,000 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -97,13 +97,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2004 summer market: signing on 2004-08-12, from Indiana Pacers. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
 
@@ -160,31 +160,31 @@ An offer, counteroffer or acceptance is not an executed contract.
 
 The register preserves distinct agreements. An assignment by trade is part of the same agreement.
 
-### Kenny Anderson · 2004-09-16
+### Kenny Anderson · 2004-08-12
 
 Recorded terms only. Unreported amounts and clauses remain unknown; conditional years are identified separately.
 
 | Contract term | Recorded value | Basis |
 | --- | --- | --- |
-| Signing date | 2004-09-16 |  |
-| Original term | Not recorded |  |
+| Signing date | 2004-08-12 |  |
+| Original term | 1 seasons |  |
 | Reported original value | Not recorded | Not recorded |
 | Original AAV | Not recorded | Requires complete original schedule and term. |
-| Recorded schedule subtotal | $0 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
-| Missing scheduled amounts | 1 |  |
+| Recorded schedule subtotal | $1,100,000 | Includes conditional years; excludes prior-salary reference. Not career earnings or original value. |
+| Missing scheduled amounts | 0 |  |
 
 ### Contract identity and execution
 
 | Field | Recorded detail |
 | --- | --- |
-| Assigned club | Atlanta Hawks |
-| Signing club | Atlanta Hawks |
-| Contract ID | anderke01-2004-09-16 |
-| Signing route / evidence basis | signing |
-| Signing date | 2004-09-16 |
+| Assigned club | Toronto Raptors |
+| Signing club | Toronto Raptors |
+| Contract ID | anderke01-2004-08-12 |
+| Signing route / evidence basis | minimum |
+| Signing date | 2004-08-12 |
 | Verified first season | 2004-05 |
-| Verified final season | Not recorded |
-| Verified expiry date | Not recorded |
+| Verified final season | 2004-05 |
+| Verified expiry date | 2005-06-30 |
 | Status | under_contract |
 | Contract wording | Not recorded |
 
@@ -194,7 +194,7 @@ Recorded salary is not automatically base salary, cap hit, cash paid or guarante
 
 | Season | Recorded salary | Base salary | Cap hit | Guaranteed | Likely incentives | Unlikely incentives | Published season cap | Cap hit / cap | Amount kind | Precision | Condition |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
+| 2004-05 | $1,100,000 | Not recorded | Not recorded | $1,100,000 | Not recorded | Not recorded | $43,870,000 | Not recorded | contract_salary | Not recorded | Not recorded |
 
 ### Options and decision deadlines
 
@@ -249,13 +249,13 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Not recorded
+Simulated 2004 summer market: signing on 2004-08-12, from Indiana Pacers. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Kenny Anderson · 2003-09-19
 
@@ -459,6 +459,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/)
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
-- [Dated 2003 offseason transaction](../../../../library/2004/league/nba_2004_offseason_transactions.json)
 - [Dated league rights evidence](../../../../library/2003/league/nba_2003_free_agent_rights.json)
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
+- [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
