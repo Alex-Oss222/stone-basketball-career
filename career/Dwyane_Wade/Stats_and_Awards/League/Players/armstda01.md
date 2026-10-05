@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `armstda01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-03-22 · **Club on this date:** New Orleans Hornets · **Basis:** signing to New Orleans Hornets on 2003-07-29 (world data) · **League:** NBA  
+**Card date:** 2004-03-28 · **Club on this date:** New Orleans Hornets · **Basis:** signing to New Orleans Hornets on 2003-07-29 (world data) · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #10 · **Born:** 1968-06-22 · **Age on card date:** 35  
 **Registry ID:** `armstda01` · [Basketball-Reference page](https://www.basketball-reference.com/players/a/armstda01.html) · ESPN ID 24
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `armstd
 
 ## Simulated statistics
 
-As of **2004-03-22**: 70 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-03-28**: 73 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04 regular season](../2003-04/League_Stats.md) | 35 | NO | NBA | PG | 67 | 60 | 30.6 | 4.8 | 11.0 | .436 | 1.7 | 5.0 | .344 | 3.1 | 6.0 | .512 | .514 | 1.9 | 2.4 | .792 | 0.9 | 2.9 | 3.7 | 4.6 | 1.6 | 0.3 | 2.2 | 2.2 | 13.2 | .548 | — |
+| [2003-04 regular season](../2003-04/League_Stats.md) | 35 | NO | NBA | PG | 70 | 62 | 30.6 | 4.8 | 10.9 | .436 | 1.8 | 5.0 | .349 | 3.0 | 5.9 | .510 | .516 | 2.0 | 2.4 | .801 | 0.8 | 2.8 | 3.7 | 4.6 | 1.6 | 0.2 | 2.2 | 2.2 | 13.3 | .552 | — |
 
 ### Month
 
@@ -46,7 +46,7 @@ As of **2004-03-22**: 70 closed games feed this card. Per-game columns use the r
 | [December 2003](../2003-04/12_December/League_Stats.md) | 35 | NO | NBA | PG | 15 | 13 | 30.7 | 5.3 | 11.1 | .482 | 1.7 | 4.8 | .361 | 3.6 | 6.3 | .574 | .560 | 2.0 | 2.3 | .857 | 0.7 | 1.9 | 2.7 | 4.9 | 1.9 | 0.5 | 2.4 | 3.0 | 14.4 | .595 | — |
 | [January 2004](../2003-04/01_January/League_Stats.md) | 35 | NO | NBA | PG | 15 | 12 | 30.8 | 4.7 | 11.0 | .430 | 1.8 | 5.1 | .351 | 2.9 | 5.9 | .500 | .512 | 1.8 | 2.4 | .750 | 0.8 | 3.1 | 3.9 | 3.7 | 1.5 | 0.3 | 2.5 | 1.6 | 13.1 | .542 | — |
 | [February 2004](../2003-04/02_February/League_Stats.md) | 35 | NO | NBA | PG | 12 | 11 | 31.1 | 5.1 | 11.3 | .449 | 1.9 | 5.2 | .371 | 3.2 | 6.2 | .514 | .533 | 2.2 | 2.9 | .771 | 0.8 | 3.5 | 4.3 | 4.4 | 1.6 | 0.3 | 2.2 | 2.2 | 14.3 | .568 | — |
-| [March 2004](../2003-04/03_March/League_Stats.md) | 35 | NO | NBA | PG | 8 | 7 | 32.3 | 4.5 | 11.5 | .391 | 1.5 | 4.8 | .316 | 3.0 | 6.8 | .444 | .457 | 1.1 | 1.4 | .818 | 1.4 | 3.6 | 5.0 | 4.9 | 1.8 | 0.1 | 3.0 | 2.2 | 11.6 | .480 | — |
+| [March 2004](../2003-04/03_March/League_Stats.md) | 35 | NO | NBA | PG | 11 | 9 | 31.8 | 4.4 | 10.9 | .400 | 1.8 | 5.1 | .357 | 2.5 | 5.8 | .438 | .483 | 1.8 | 2.1 | .870 | 1.1 | 3.1 | 4.2 | 5.3 | 1.8 | 0.1 | 2.7 | 2.3 | 12.4 | .523 | — |
 | [April 2004](../2003-04/04_April/League_Stats.md) | 35 | NO | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 </details>
@@ -79,7 +79,7 @@ As of **2004-03-22**: 70 closed games feed this card. Per-game columns use the r
 | [March 2004 week 1 (01 to 07)](../2003-04/03_March/Week_1/League_Stats.md) | 35 | NO | NBA | PG | 4 | 3 | 32.3 | 4.2 | 10.2 | .415 | 1.2 | 4.8 | .263 | 3.0 | 5.5 | .545 | .476 | 2.2 | 2.8 | .818 | 1.2 | 2.8 | 4.0 | 4.5 | 2.8 | 0.2 | 4.8 | 1.8 | 12.0 | .524 | — |
 | [March 2004 week 2 (08 to 14)](../2003-04/03_March/Week_2/League_Stats.md) | 35 | NO | NBA | PG | 1 | 1 | 36.0 | 4.0 | 12.0 | .333 | 1.0 | 4.0 | .250 | 3.0 | 8.0 | .375 | .375 | 0.0 | 0.0 | N/A | 2.0 | 3.0 | 5.0 | 7.0 | 1.0 | 0.0 | 2.0 | 0.0 | 9.0 | .375 | — |
 | [March 2004 week 3 (15 to 21)](../2003-04/03_March/Week_3/League_Stats.md) | 35 | NO | NBA | PG | 3 | 3 | 30.9 | 5.0 | 13.0 | .385 | 2.0 | 5.0 | .400 | 3.0 | 8.0 | .375 | .462 | 0.0 | 0.0 | N/A | 1.3 | 5.0 | 6.3 | 4.7 | 0.7 | 0.0 | 1.0 | 3.7 | 12.0 | .462 | — |
-| [March 2004 week 4 (22 to 31)](../2003-04/03_March/Week_4/League_Stats.md) | 35 | NO | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [March 2004 week 4 (22 to 31)](../2003-04/03_March/Week_4/League_Stats.md) | 35 | NO | NBA | PG | 3 | 2 | 30.6 | 4.0 | 9.3 | .429 | 2.7 | 6.0 | .444 | 1.3 | 3.3 | .400 | .571 | 3.7 | 4.0 | .917 | 0.3 | 1.7 | 2.0 | 6.3 | 2.0 | 0.0 | 2.0 | 2.3 | 14.3 | .646 | — |
 | [April 2004 week 1 (01 to 07)](../2003-04/04_April/Week_1/League_Stats.md) | 35 | NO | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [April 2004 week 2 (08 to 14)](../2003-04/04_April/Week_2/League_Stats.md) | 35 | NO | NBA | PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
@@ -87,31 +87,31 @@ As of **2004-03-22**: 70 closed games feed this card. Per-game columns use the r
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regular season. Coverage: **partial**; 645 located attempts, 0 unlocated, 0 outside the view, 93 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regular season. Coverage: **partial**; 673 located attempts, 0 unlocated, 0 outside the view, 93 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 62 of 70 closed games; 59 tracked appearances form the denominator below (2003-11-12 to 2004-03-21).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 65 of 73 closed games; 62 tracked appearances form the denominator below (2003-11-12 to 2004-03-26).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 114 | 209 | 54.5% | 3.86 | 3.54 |
-| Outside paint, under 12 ft | 6 | 13 | 46.2% | 0.20 | 0.22 |
-| Outside paint, 12 to under 18 ft | 29 | 65 | 44.6% | 0.98 | 1.10 |
-| 18 ft to the three-point line | 30 | 69 | 43.5% | 1.02 | 1.17 |
-| Three-point range | 101 | 289 | 34.9% | 5.14 | 4.90 |
-| All field goals | 280 | 645 | 43.4% | 11.20 | 10.93 |
+| Paint | 116 | 213 | 54.5% | 3.74 | 3.44 |
+| Outside paint, under 12 ft | 6 | 13 | 46.2% | 0.19 | 0.21 |
+| Outside paint, 12 to under 18 ft | 30 | 66 | 45.5% | 0.97 | 1.06 |
+| 18 ft to the three-point line | 31 | 74 | 41.9% | 1.00 | 1.19 |
+| Three-point range | 109 | 307 | 35.5% | 5.27 | 4.95 |
+| All field goals | 292 | 673 | 43.4% | 11.18 | 10.85 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2003-04 is simulated: 70 closed regular-season games through 2004-03-22.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2003-04 is simulated: 73 closed regular-season games through 2004-03-28.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2002-03 | ORL | 82 | 23 | 28.7 | 9.4 | 3.6 | 3.9 | 1.6 | 0.2 | 2.0 | 40.9% | 33.6% | 87.8% |
-| 2003-04 | NO | 67 | 60 | 30.6 | 13.2 | 3.7 | 4.6 | 1.6 | 0.3 | 2.2 | 43.6% | 34.4% | 79.2% |
+| 2003-04 | NO | 70 | 62 | 30.6 | 13.3 | 3.7 | 4.6 | 1.6 | 0.2 | 2.2 | 43.6% | 34.9% | 80.1% |
 
 ## Playoff statistics by year
 
@@ -123,4 +123,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2004-03-22. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2004-03-28. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

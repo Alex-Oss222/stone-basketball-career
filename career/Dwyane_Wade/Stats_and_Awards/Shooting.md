@@ -2,27 +2,27 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-03-22**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-03-28**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2004-03-22
+## 2003-04 · NBA regular season · through 2004-03-28
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| N/A | 0 | 70 | N/A / N/A | N/A | N/A / N/A | N/A | partial |
+| N/A | 0 | 73 | N/A / N/A | N/A | N/A / N/A | N/A | partial |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | N/A | N/A | N/A | N/A | N/A | 336 |
-| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 19 |
-| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 93 |
-| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 121 |
-| Three-point range | N/A | N/A | N/A | N/A | N/A | 143 |
+| Paint | N/A | N/A | N/A | N/A | N/A | 356 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 21 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 98 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 126 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 150 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -96,6 +96,9 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-03-16 | New Orleans Hornets | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.result.json) |
 | 2004-03-20 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.result.json) |
 | 2004-03-21 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.result.json) |
+| 2004-03-24 | Orlando Magic | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.result.json) |
+| 2004-03-26 | Dallas Mavericks | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.result.json) |
+| 2004-03-28 | Indiana Pacers | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.result.json) |
 
 ## 2003-10 · NBA regular season
 
@@ -685,17 +688,17 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| N/A | 0 | 10 | N/A / N/A | N/A | N/A / N/A | N/A | partial |
+| N/A | 0 | 13 | N/A / N/A | N/A | N/A / N/A | N/A | partial |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | N/A | N/A | N/A | N/A | N/A | 52 |
-| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 2 |
-| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 17 |
-| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 19 |
-| Three-point range | N/A | N/A | N/A | N/A | N/A | 14 |
+| Paint | N/A | N/A | N/A | N/A | N/A | 72 |
+| Outside paint, under 12 ft | N/A | N/A | N/A | N/A | N/A | 4 |
+| Outside paint, 12 to under 18 ft | N/A | N/A | N/A | N/A | N/A | 22 |
+| 18 ft to the three-point line | N/A | N/A | N/A | N/A | N/A | 24 |
+| Three-point range | N/A | N/A | N/A | N/A | N/A | 21 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -709,6 +712,9 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-03-16 | New Orleans Hornets | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.result.json) |
 | 2004-03-20 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.result.json) |
 | 2004-03-21 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.result.json) |
+| 2004-03-24 | Orlando Magic | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.result.json) |
+| 2004-03-26 | Dallas Mavericks | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.result.json) |
+| 2004-03-28 | Indiana Pacers | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.result.json) |
 
 ## 2004-03-01 to 2004-03-07 · NBA regular season
 
@@ -782,6 +788,30 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-03-16 | New Orleans Hornets | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.result.json) |
 | 2004-03-20 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.result.json) |
 | 2004-03-21 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.result.json) |
+
+## 2004-03-22 to 2004-03-28 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-week-2004-03-22#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 3 | 0 | 3 | 19 / 39 | 48.7% | 4 / 7 | 66 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 11 | 20 | 55.0% | 7.33 | 6.67 | 20 |
+| Outside paint, under 12 ft | 2 | 2 | 100.0% | 1.33 | 0.67 | 2 |
+| Outside paint, 12 to under 18 ft | 1 | 5 | 20.0% | 0.67 | 1.67 | 5 |
+| 18 ft to the three-point line | 1 | 5 | 20.0% | 0.67 | 1.67 | 5 |
+| Three-point range | 4 | 7 | 57.1% | 4.00 | 2.33 | 7 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-03-24 | Orlando Magic | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.result.json) |
+| 2004-03-26 | Dallas Mavericks | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.result.json) |
+| 2004-03-28 | Indiana Pacers | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.result.json) |
 
 ## 2003-10-28 at Philadelphia 76ers · Played · NBA regular season
 
@@ -2323,7 +2353,73 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-03-21 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.result.json) |
 
-## 2003-04 · NBA preseason · through 2004-03-22
+## 2004-03-24 at Orlando Magic · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-7a2fefb436ad55ef#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 5 / 12 | 41.7% | 0 / 1 | 13 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 4 | 8 | 50.0% | 8.00 | 8.00 | 8 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-03-24 | Orlando Magic | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.result.json) |
+
+## 2004-03-26 vs Dallas Mavericks · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-9551b20fb11fb788#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 9 / 16 | 56.2% | 4 / 5 | 31 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 4 | 9 | 44.4% | 8.00 | 9.00 | 9 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Three-point range | 4 | 5 | 80.0% | 12.00 | 5.00 | 5 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-03-26 | Dallas Mavericks | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.result.json) |
+
+## 2004-03-28 at Indiana Pacers · Played · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-06db5043d1b360e2#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 5 / 11 | 45.5% | 0 / 1 | 22 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 3 | 3 | 100.0% | 6.00 | 3.00 | 3 |
+| Outside paint, under 12 ft | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 1 | 3 | 33.3% | 2.00 | 3.00 | 3 |
+| 18 ft to the three-point line | 0 | 3 | 0.0% | 0.00 | 3.00 | 3 |
+| Three-point range | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-03-28 | Indiana Pacers | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.result.json) |
+
+## 2003-04 · NBA preseason · through 2004-03-28
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 

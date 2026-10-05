@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-03-22",
+  "as_of": "2004-03-28",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-03-21-miami-heat-at-washington-wizards",
+  "current_event": "2004-03-28-miami-heat-at-indiana-pacers",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-03-22"
+              "2004-03-28"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-03-21-miami-heat-at-washington-wizards"
+              "2004-03-28-miami-heat-at-indiana-pacers"
             ],
             [
               "Pending player decisions",
@@ -64,13 +64,13 @@
           ],
           "rows": [
             [
-              "2004-03-22",
+              "2004-03-28",
               "Current checkpoint",
-              "2004-03-21-miami-heat-at-washington-wizards",
+              "2004-03-28-miami-heat-at-indiana-pacers",
               "Recorded",
               {
                 "label": "Owning event",
-                "href": "../2003-04/06_Regular_Season/03_March/Week_3/note.md"
+                "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
               }
             ],
             [
@@ -94,23 +94,13 @@
               }
             ],
             [
-              "2004-03-24",
-              "Next Miami game, at Orlando Magic",
+              "2004-03-29",
+              "Next Miami game, vs Chicago Bulls",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
                 "label": "Season",
                 "href": "#calendar"
-              }
-            ],
-            [
-              "2004-03-26",
-              "Staff rotation review",
-              "Coaching staff (same rule for every player)",
-              "Scheduled; a role request may be logged before it",
-              {
-                "label": "Rule",
-                "href": "../../../docs/front_office.md"
               }
             ],
             [
@@ -121,6 +111,16 @@
               {
                 "label": "Awards",
                 "href": "#calendar"
+              }
+            ],
+            [
+              "2004-04-09",
+              "Staff rotation review",
+              "Coaching staff (same rule for every player)",
+              "Scheduled; a role request may be logged before it",
+              {
+                "label": "Rule",
+                "href": "../../../docs/front_office.md"
               }
             ],
             [
@@ -217,7 +217,7 @@
       "actions": [
         {
           "label": "Open the current event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_3/note.md",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md",
           "description": "Read the owning career note and record the player's actual response when one is due."
         },
         {
@@ -241,7 +241,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_3/note.md"
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -257,11 +257,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -277,7 +277,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/rotation.json"
         },
         {
           "label": "Rule",
@@ -612,6 +612,18 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -620,7 +632,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-22"
+          "value": "2004-03-28"
         },
         {
           "label": "Team",
@@ -799,7 +811,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_3/note.md"
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -815,11 +827,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -835,7 +847,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/rotation.json"
         },
         {
           "label": "Rule",
@@ -1170,6 +1182,18 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1178,7 +1202,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-22"
+          "value": "2004-03-28"
         },
         {
           "label": "Team",
@@ -1410,7 +1434,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_3/note.md"
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1426,11 +1450,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1446,7 +1470,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/rotation.json"
         },
         {
           "label": "Rule",
@@ -1781,6 +1805,18 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1789,7 +1825,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-22"
+          "value": "2004-03-28"
         },
         {
           "label": "Team",
@@ -2129,7 +2165,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_3/note.md"
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2145,11 +2181,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2165,7 +2201,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/rotation.json"
         },
         {
           "label": "Rule",
@@ -2500,6 +2536,18 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2508,7 +2556,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-22"
+          "value": "2004-03-28"
         },
         {
           "label": "Team",
@@ -2657,7 +2705,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_3/note.md"
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2673,11 +2721,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2693,7 +2741,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/rotation.json"
         },
         {
           "label": "Rule",
@@ -3028,6 +3076,18 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3036,7 +3096,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-22"
+          "value": "2004-03-28"
         },
         {
           "label": "Team",
@@ -3157,7 +3217,7 @@
       "actions": [
         {
           "label": "Open the current event discussion",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_3/note.md",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md",
           "description": "Record a dated reaction to an actual transaction."
         },
         {
@@ -3181,7 +3241,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_3/note.md"
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -3197,11 +3257,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -3217,7 +3277,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/rotation.json"
         },
         {
           "label": "Rule",
@@ -3552,6 +3612,18 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3560,7 +3632,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-22"
+          "value": "2004-03-28"
         },
         {
           "label": "Team",
@@ -3714,7 +3786,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_3/note.md"
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -3730,11 +3802,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -3750,7 +3822,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/rotation.json"
         },
         {
           "label": "Rule",
@@ -4085,6 +4157,18 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4093,7 +4177,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-22"
+          "value": "2004-03-28"
         },
         {
           "label": "Team",
@@ -4175,11 +4259,11 @@
             ],
             [
               "C",
-              "Brian Grant, Shawn Kemp, Cherokee Parks",
+              "Shawn Kemp, Brian Grant, Cherokee Parks",
               "Staff ordering; not a future minutes promise"
             ]
           ],
-          "notice": "Snapshot: 2004-03-12. Draft rights and unassigned arrivals are not assigned minutes."
+          "notice": "Snapshot: 2004-03-26. Draft rights and unassigned arrivals are not assigned minutes."
         },
         {
           "title": "Role and promise review",
@@ -4295,7 +4379,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_3/note.md"
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -4311,11 +4395,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -4331,7 +4415,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/rotation.json"
         },
         {
           "label": "Rule",
@@ -4666,6 +4750,18 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4674,7 +4770,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-22"
+          "value": "2004-03-28"
         },
         {
           "label": "Team",
@@ -4691,7 +4787,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "77 closed game records in 2003-04 through 2004-03-22. Competitions remain separate.",
+      "summary": "80 closed game records in 2003-04 through 2004-03-28. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -5540,6 +5636,36 @@
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md"
               }
+            ],
+            [
+              "2004-03-24",
+              "regular",
+              "Orlando Magic",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md"
+              }
+            ],
+            [
+              "2004-03-26",
+              "regular",
+              "Dallas Mavericks",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md"
+              }
+            ],
+            [
+              "2004-03-28",
+              "regular",
+              "Indiana Pacers",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
+              }
             ]
           ]
         },
@@ -5614,7 +5740,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_3/note.md"
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -5630,11 +5756,11 @@
         },
         {
           "label": "Dated staff rotation review",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/review.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/review.json"
         },
         {
           "label": "Current dated staff depth chart",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/depth_chart.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -5650,7 +5776,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json"
+          "href": "../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-26/rotation.json"
         },
         {
           "label": "Rule",
@@ -5985,6 +6111,18 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -5993,7 +6131,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-22"
+          "value": "2004-03-28"
         },
         {
           "label": "Team",
