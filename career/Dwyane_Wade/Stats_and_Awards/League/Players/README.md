@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-04-12**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-04-14**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -15,7 +15,7 @@ Card date: **2004-04-12**. 504 registry players, one Markdown card and one inter
 | [Anthony Goldwire](goldwan01.md) | Minnesota Timberwolves | None | silhouette | [open](goldwan01.html) |
 | [Anthony Johnson](johnsan02.md) | Indiana Pacers | 29 | sourced | [open](johnsan02.html) |
 | [Avery Johnson](johnsav01.md) | Golden State Warriors | None | silhouette | [open](johnsav01.html) |
-| [Baron Davis](davisba01.md) | New Orleans Hornets | 24 | sourced | [open](davisba01.html) |
+| [Baron Davis](davisba01.md) | New Orleans Hornets | 25 | sourced | [open](davisba01.html) |
 | [Bimbo Coles](colesbi01.md) | Boston Celtics | 35 | sourced | [open](colesbi01.html) |
 | [Bobby Jackson](jacksbo01.md) | Sacramento Kings | 31 | sourced | [open](jacksbo01.html) |
 | [Brevin Knight](knighbr01.md) | Phoenix Suns | 28 | sourced | [open](knighbr01.html) |
@@ -278,7 +278,7 @@ Card date: **2004-04-12**. 504 registry players, one Markdown card and one inter
 | [Monty Williams](willimo01.md) | Philadelphia 76ers | 32 | sourced | [open](willimo01.html) |
 | [Morris Peterson](petermo01.md) | Toronto Raptors | 26 | sourced | [open](petermo01.html) |
 | [Ndudi Ebi](ebind01.md) | Minnesota Timberwolves | 19 | sourced | [open](ebind01.html) |
-| [Nikoloz Tskitishvili](tskitni01.md) | Denver Nuggets | 20 | sourced | [open](tskitni01.html) |
+| [Nikoloz Tskitishvili](tskitni01.md) | Denver Nuggets | 21 | sourced | [open](tskitni01.html) |
 | [Peja Stojakovic](stojape01.md) | Sacramento Kings | 26 | sourced | [open](stojape01.html) |
 | [Quincy Lewis](lewisqu01.md) | Minnesota Timberwolves | None | silhouette | [open](lewisqu01.html) |
 | [Rashard Lewis](lewisra02.md) | Seattle SuperSonics | 24 | sourced | [open](lewisra02.html) |
@@ -447,7 +447,7 @@ Card date: **2004-04-12**. 504 registry players, one Markdown card and one inter
 | [Arvydas Sabonis](sabonar01.md) | Portland Trail Blazers | 39 | sourced | [open](sabonar01.html) |
 | [Ben Handlogten](handlbe01.md) | Utah Jazz | None | silhouette | [open](handlbe01.html) |
 | [Ben Wallace](wallabe01.md) | Detroit Pistons | 29 | sourced | [open](wallabe01.html) |
-| [Bo Outlaw](outlabo01.md) | Memphis Grizzlies | 32 | sourced | [open](outlabo01.html) |
+| [Bo Outlaw](outlabo01.md) | Memphis Grizzlies | 33 | sourced | [open](outlabo01.html) |
 | [Brad Miller](millebr01.md) | Sacramento Kings | 28 | sourced | [open](millebr01.html) |
 | [Brendan Haywood](haywobr01.md) | Washington Wizards | 24 | sourced | [open](haywobr01.html) |
 | [Brian Grant](grantbr01.md) | Miami Heat | 32 | silhouette | [open](grantbr01.html) |

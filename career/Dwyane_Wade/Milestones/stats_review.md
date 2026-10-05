@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-04-12 · Miami Heat · active
+Career date: 2004-04-14 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-87 closed game records in 2003-04 through 2004-04-12. Competitions remain separate.
+89 closed game records in 2003-04 through 2004-04-14. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -117,6 +117,8 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-04-07 | regular | Boston Celtics | Played | [Closed game](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.md) |
 | 2004-04-09 | regular | Cleveland Cavaliers | Played | [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.md) |
 | 2004-04-10 | regular | Cleveland Cavaliers | Played | [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.md) |
+| 2004-04-12 | regular | Boston Celtics | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.md) |
+| 2004-04-14 | regular | New Jersey Nets | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md) |
 
 ## Evidence available for decisions
 
@@ -251,4 +253,6 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.md)
 - [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.md)
+- [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

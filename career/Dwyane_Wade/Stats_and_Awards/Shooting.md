@@ -2,17 +2,17 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-04-12**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-04-14**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2004-04-12
+## 2003-04 · NBA regular season · through 2004-04-14
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 75 | 5 | 80 | 457 / 879 | 52.0% | 71 / 179 | 1345 | partial |
+| 75 | 7 | 82 | 457 / 879 | 52.0% | 71 / 179 | 1345 | partial |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
@@ -106,6 +106,8 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-04-07 | Boston Celtics | Played | [Game](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.result.json) |
 | 2004-04-09 | Cleveland Cavaliers | Played | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.result.json) |
 | 2004-04-10 | Cleveland Cavaliers | Played | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.result.json) |
+| 2004-04-12 | Boston Celtics | DNP: injured list since 2004-04-12 | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.result.json) |
+| 2004-04-14 | New Jersey Nets | DNP: injured list since 2004-04-12 | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) |
 
 ## 2003-10 · NBA regular season
 
@@ -830,7 +832,7 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 5 | 0 | 5 | 29 / 45 | 64.4% | 2 / 3 | 73 | complete |
+| 5 | 2 | 7 | 29 / 45 | 64.4% | 2 / 3 | 73 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
@@ -849,6 +851,8 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-04-07 | Boston Celtics | Played | [Game](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.result.json) |
 | 2004-04-09 | Cleveland Cavaliers | Played | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.result.json) |
 | 2004-04-10 | Cleveland Cavaliers | Played | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.result.json) |
+| 2004-04-12 | Boston Celtics | DNP: injured list since 2004-04-12 | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.result.json) |
+| 2004-04-14 | New Jersey Nets | DNP: injured list since 2004-04-12 | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) |
 
 ## 2004-04-01 to 2004-04-07 · NBA regular season
 
@@ -874,13 +878,13 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-04-03 | Chicago Bulls | Played | [Game](../2003-04/06_Regular_Season/04_April/Week_1/Game_2.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_1/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_1/Game_2.result.json) |
 | 2004-04-07 | Boston Celtics | Played | [Game](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.result.json) |
 
-## 2004-04-08 to 2004-04-12 · NBA regular season
+## 2004-04-08 to 2004-04-14 · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-week-2004-04-08#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 0 | 2 | 5 / 7 | 71.4% | 0 / 0 | 10 | complete |
+| 2 | 2 | 4 | 5 / 7 | 71.4% | 0 / 0 | 10 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
@@ -896,6 +900,8 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-04-09 | Cleveland Cavaliers | Played | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.result.json) |
 | 2004-04-10 | Cleveland Cavaliers | Played | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.result.json) |
+| 2004-04-12 | Boston Celtics | DNP: injured list since 2004-04-12 | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.result.json) |
+| 2004-04-14 | New Jersey Nets | DNP: injured list since 2004-04-12 | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) |
 
 ## 2003-10-28 at Philadelphia 76ers · Played · NBA regular season
 
@@ -2657,7 +2663,51 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-04-10 | Cleveland Cavaliers | Played | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.result.json) |
 
-## 2003-04 · NBA preseason · through 2004-04-12
+## 2004-04-12 at Boston Celtics · DNP: injured list since 2004-04-12 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-6a6fce82b72a15c1#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | 1 | 0 / 0 | N/A | 0 / 0 | 0 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | 0 | 0 | N/A | N/A | N/A | 0 |
+| Three-point range | 0 | 0 | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-04-12 | Boston Celtics | DNP: injured list since 2004-04-12 | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.result.json) |
+
+## 2004-04-14 vs New Jersey Nets · DNP: injured list since 2004-04-12 · NBA regular season
+
+[Open this period](player_cards.html?period=regular-2003-04-game-2fb2d47ed3a42879#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | 1 | 0 / 0 | N/A | 0 / 0 | 0 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | 0 | 0 | N/A | N/A | N/A | 0 |
+| Three-point range | 0 | 0 | N/A | N/A | N/A | 0 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-04-14 | New Jersey Nets | DNP: injured list since 2004-04-12 | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) |
+
+## 2003-04 · NBA preseason · through 2004-04-14
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 

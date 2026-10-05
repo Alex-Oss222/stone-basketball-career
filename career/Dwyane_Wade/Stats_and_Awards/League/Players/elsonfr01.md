@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `elsonfr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-04-12 · **Club on this date:** Denver Nuggets · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
+**Card date:** 2004-04-14 · **Club on this date:** Denver Nuggets · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
 **Position:** C (Center) · **Jersey:** Unassigned · **Born:** None · **Age on card date:** None  
 **Registry ID:** `elsonfr01`
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `elsonf
 
 ## Simulated statistics
 
-As of **2004-04-12**: 80 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-04-14**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04 regular season](../2003-04/League_Stats.md) | None | DEN | NBA | C | 58 | 4 | 15.6 | 1.7 | 3.6 | .469 | 0.0 | 0.2 | .182 | 1.6 | 3.4 | .485 | .473 | 0.8 | 1.3 | .618 | 1.2 | 2.4 | 3.6 | 0.7 | 0.4 | 0.5 | 0.4 | 2.0 | 4.2 | .505 | — |
+| [2003-04 regular season](../2003-04/League_Stats.md) | None | DEN | NBA | C | 60 | 4 | 15.6 | 1.7 | 3.6 | .467 | 0.0 | 0.2 | .167 | 1.6 | 3.4 | .485 | .472 | 0.8 | 1.3 | .618 | 1.2 | 2.4 | 3.5 | 0.7 | 0.4 | 0.5 | 0.5 | 2.0 | 4.2 | .503 | — |
 
 ### Month
 
@@ -47,7 +47,7 @@ As of **2004-04-12**: 80 closed games feed this card. Per-game columns use the r
 | [January 2004](../2003-04/01_January/League_Stats.md) | None | DEN | NBA | C | 10 | 0 | 15.0 | 1.8 | 2.9 | .621 | 0.0 | 0.1 | .000 | 1.8 | 2.8 | .643 | .621 | 0.7 | 1.4 | .500 | 0.7 | 2.0 | 2.7 | 0.4 | 0.3 | 0.2 | 0.5 | 1.5 | 4.3 | .611 | — |
 | [February 2004](../2003-04/02_February/League_Stats.md) | None | DEN | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [March 2004](../2003-04/03_March/League_Stats.md) | None | DEN | NBA | C | 14 | 3 | 18.3 | 1.7 | 4.4 | .393 | 0.1 | 0.3 | .500 | 1.6 | 4.1 | .386 | .410 | 0.9 | 1.2 | .706 | 1.5 | 3.1 | 4.6 | 1.1 | 0.4 | 0.8 | 0.5 | 2.4 | 4.4 | .453 | — |
-| [April 2004](../2003-04/04_April/League_Stats.md) | None | DEN | NBA | C | 4 | 1 | 16.6 | 1.5 | 3.2 | .462 | 0.0 | 0.2 | .000 | 1.5 | 3.0 | .500 | .462 | 0.5 | 1.0 | .500 | 1.8 | 2.2 | 4.0 | 0.2 | 0.8 | 0.2 | 0.8 | 2.2 | 3.5 | .474 | — |
+| [April 2004](../2003-04/04_April/League_Stats.md) | None | DEN | NBA | C | 6 | 1 | 16.6 | 1.5 | 3.3 | .450 | 0.0 | 0.3 | .000 | 1.5 | 3.0 | .500 | .450 | 0.3 | 0.7 | .500 | 1.3 | 2.0 | 3.3 | 0.3 | 0.5 | 0.5 | 0.8 | 2.0 | 3.3 | .460 | — |
 
 </details>
 
@@ -81,36 +81,36 @@ As of **2004-04-12**: 80 closed games feed this card. Per-game columns use the r
 | [March 2004 week 3 (15 to 21)](../2003-04/03_March/Week_3/League_Stats.md) | None | DEN | NBA | C | 3 | 0 | 16.8 | 1.3 | 3.0 | .444 | 0.0 | 0.0 | N/A | 1.3 | 3.0 | .444 | .444 | 1.3 | 1.3 | 1.000 | 1.7 | 2.3 | 4.0 | 1.0 | 0.3 | 0.7 | 0.7 | 2.7 | 4.0 | .558 | — |
 | [March 2004 week 4 (22 to 31)](../2003-04/03_March/Week_4/League_Stats.md) | None | DEN | NBA | C | 5 | 0 | 15.9 | 1.4 | 3.0 | .467 | 0.2 | 0.4 | .500 | 1.2 | 2.6 | .462 | .500 | 1.0 | 1.4 | .714 | 1.0 | 1.2 | 2.2 | 1.2 | 0.2 | 0.4 | 0.4 | 2.6 | 4.0 | .553 | — |
 | [April 2004 week 1 (01 to 07)](../2003-04/04_April/Week_1/League_Stats.md) | None | DEN | NBA | C | 2 | 1 | 17.6 | 0.5 | 2.5 | .200 | 0.0 | 0.0 | N/A | 0.5 | 2.5 | .200 | .200 | 0.0 | 0.0 | N/A | 1.5 | 1.0 | 2.5 | 0.0 | 0.5 | 0.5 | 0.5 | 3.5 | 1.0 | .200 | — |
-| [April 2004 week 2 (08 to 14)](../2003-04/04_April/Week_2/League_Stats.md) | None | DEN | NBA | C | 2 | 0 | 15.7 | 2.5 | 4.0 | .625 | 0.0 | 0.5 | .000 | 2.5 | 3.5 | .714 | .625 | 1.0 | 2.0 | .500 | 2.0 | 3.5 | 5.5 | 0.5 | 1.0 | 0.0 | 1.0 | 1.0 | 6.0 | .615 | — |
+| [April 2004 week 2 (08 to 14)](../2003-04/04_April/Week_2/League_Stats.md) | None | DEN | NBA | C | 4 | 0 | 16.1 | 2.0 | 3.8 | .533 | 0.0 | 0.5 | .000 | 2.0 | 3.2 | .615 | .533 | 0.5 | 1.0 | .500 | 1.2 | 2.5 | 3.8 | 0.5 | 0.5 | 0.5 | 1.0 | 1.2 | 4.5 | .537 | — |
 
 </details>
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regular season. Coverage: **partial**; 181 located attempts, 0 unlocated, 0 outside the view, 26 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regular season. Coverage: **partial**; 188 located attempts, 0 unlocated, 0 outside the view, 26 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 72 of 80 closed games; 52 tracked appearances form the denominator below (2003-11-14 to 2004-04-10).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 74 of 82 closed games; 54 tracked appearances form the denominator below (2003-11-14 to 2004-04-14).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 52 | 96 | 54.2% | 2.00 | 1.85 |
-| Outside paint, under 12 ft | 5 | 11 | 45.5% | 0.19 | 0.21 |
-| Outside paint, 12 to under 18 ft | 11 | 23 | 47.8% | 0.42 | 0.44 |
-| 18 ft to the three-point line | 14 | 40 | 35.0% | 0.54 | 0.77 |
-| Three-point range | 2 | 11 | 18.2% | 0.12 | 0.21 |
-| All field goals | 84 | 181 | 46.4% | 3.27 | 3.48 |
+| Paint | 53 | 99 | 53.5% | 1.96 | 1.83 |
+| Outside paint, under 12 ft | 5 | 11 | 45.5% | 0.19 | 0.20 |
+| Outside paint, 12 to under 18 ft | 13 | 25 | 52.0% | 0.48 | 0.46 |
+| 18 ft to the three-point line | 14 | 41 | 34.1% | 0.52 | 0.76 |
+| Three-point range | 2 | 12 | 16.7% | 0.11 | 0.22 |
+| All field goals | 87 | 188 | 46.3% | 3.26 | 3.48 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No 2002-03 record in the supplied statistics file. 2003-04 is simulated: 80 closed regular-season games through 2004-04-12.
+**Coverage:** No 2002-03 record in the supplied statistics file. 2003-04 is simulated: 82 closed regular-season games through 2004-04-14.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | DEN | 58 | 4 | 15.6 | 4.2 | 3.6 | 0.7 | 0.4 | 0.5 | 0.4 | 46.9% | 18.2% | 61.8% |
+| 2003-04 | DEN | 60 | 4 | 15.6 | 4.2 | 3.5 | 0.7 | 0.4 | 0.5 | 0.5 | 46.7% | 16.7% | 61.8% |
 
 ## Playoff statistics by year
 
@@ -122,4 +122,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2004-04-12. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2004-04-14. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

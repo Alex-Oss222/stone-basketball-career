@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2004-04-12](../../../assets/stat_reports/personal_2004-04-12.svg)
+![Player personal information and earned career awards through 2004-04-14](../../../assets/stat_reports/personal_2004-04-14.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2004-04-12; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-04-14; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -51,7 +51,7 @@ Identity as of 2004-04-12; status snapshot dated 2003-12-01. User-established al
 
 ## Statistics
 
-As of **2004-04-12**: 5 closed games; 5/5 have player participation and box coverage; recorded DNPs: 0.
+As of **2004-04-14**: 7 closed games; 7/7 have player participation and box coverage; recorded DNPs: 2.
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
@@ -67,7 +67,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-04-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-04-14, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](../../../Stats_and_Awards/2003-04/04_April/Stat_Detail.md)
 
@@ -84,7 +84,7 @@ Awards are confirmed through 2004-04-12, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-04-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-04-14, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Period comparison
 
@@ -100,7 +100,7 @@ Awards are confirmed through 2004-04-12, filed by the honor's period-end date; t
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-04-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-04-14, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -169,7 +169,7 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-04-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-04-14, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
@@ -193,7 +193,8 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2004-04-07](Week_1/Game_3.md) | Boston Celtics | home | L 83-99 | Played | 40.7 | 24 | 7 | 3 | 2 | 1 | 1 |
 | [2004-04-09](Week_2/Game_1.md) | Cleveland Cavaliers | home | W 108-107 | Played | 26.2 | 8 | 7 | 2 | 1 | 2 | 3 |
 | [2004-04-10](Week_2/Game_2.md) | Cleveland Cavaliers | away | W 88-79 | Played | 6.5 | 2 | 0 | 0 | 0 | 0 | 0 |
-| [2004-04-12](Week_2/Game_3.md) | Boston Celtics | away | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [2004-04-12](Week_2/Game_3.md) | Boston Celtics | away | W 95-88 | DNP: injured list since 2004-04-12 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [2004-04-14](Week_2/Game_4.md) | New Jersey Nets | home | W 118-112 | DNP: injured list since 2004-04-12 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ### Individual game boxes
 
@@ -205,10 +206,11 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2004-04-09](Week_2/Game_1.md) | 20 | Miami Heat | NBA | SG / PG | 1 | 1 | 26.2 | 4.0 | 5.0 | .800 | 0.0 | 0.0 | N/A | 4.0 | 5.0 | .800 | .800 | 0.0 | 0.0 | N/A | 3.0 | 4.0 | 7.0 | 2.0 | 1.0 | 2.0 | 3.0 | 6.0 | 8.0 | .800 | — |
 | [2004-04-10](Week_2/Game_2.md) | 20 | Miami Heat | NBA | SG / PG | 1 | 1 | 6.5 | 1.0 | 2.0 | .500 | 0.0 | 0.0 | N/A | 1.0 | 2.0 | .500 | .500 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 2.0 | 2.0 | .500 | — |
 | [2004-04-12](Week_2/Game_3.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [2004-04-14](Week_2/Game_4.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-04-12, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-04-14, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 
