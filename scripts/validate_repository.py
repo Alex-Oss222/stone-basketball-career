@@ -675,8 +675,11 @@ def validate():
         from runtime.playoff_stats import page_errors as playoff_page_errors
         errors.extend(playoff_page_errors(ROOT))
 
-    from runtime.game_requests import frozen_errors
+    from runtime.game_requests import frozen_errors, schedule_id_errors
     errors.extend(frozen_errors(ROOT))
+    errors.extend(schedule_id_errors(ROOT))
+    from runtime.decisions import key_errors
+    errors.extend(key_errors(ROOT))
 
     from runtime.award_decisions import award_errors
     errors.extend(award_errors(ROOT))

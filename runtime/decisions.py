@@ -22,6 +22,33 @@ ROOT = Path(__file__).resolve().parents[1]
 FIELDS = {"event_id", "date", "question", "decider", "options", "basis"}
 ENTROPY_DOMAIN = b"stone-basketball-career/decision-entropy/v1\0"
 PROCEDURE = "decision-v1"
+# Roadmap 18b: from this date every decision has a semantic key (its date and the hash of its question, normalised),
+# unique across the journal, so the same question cannot be drawn again under a new event id.
+HARDEN_FROM = "2004-07-01"
+
+
+def semantic_key(data):
+    """kind / subject / date in one key: the decision date and the normalised question it answers."""
+    question = " ".join(str(data.get("question", "")).lower().split())
+    return f"{data.get('date')}:{hashlib.sha256(question.encode()).hexdigest()[:24]}"
+
+
+def hardened(data):
+    return isinstance(data.get("date"), str) and data["date"] >= HARDEN_FROM
+
+
+def key_errors(root=ROOT):
+    """Committed decisions dated from HARDEN_FROM whose semantic key repeats under another event id."""
+    seen, errors = {}, []
+    for path in find_decisions(root):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not hardened(data):
+            continue
+        key = semantic_key(data)
+        if key in seen and seen[key] != data["event_id"]:
+            errors.append(f"{path.relative_to(root)}: the same question on {data['date']} was already asked as {seen[key]}")
+        seen.setdefault(key, data["event_id"])
+    return errors
 
 
 def find_decisions(root=ROOT):

@@ -57,7 +57,8 @@ class Store:
             CREATE TABLE IF NOT EXISTS corrections(id INTEGER PRIMARY KEY AUTOINCREMENT,
                 event_id TEXT NOT NULL, reason TEXT NOT NULL, created INTEGER NOT NULL);
             CREATE TABLE IF NOT EXISTS kernel_transitions(id INTEGER PRIMARY KEY AUTOINCREMENT,
-                previous_kernel TEXT NOT NULL, next_kernel TEXT NOT NULL, created INTEGER NOT NULL);""")
+                previous_kernel TEXT NOT NULL, next_kernel TEXT NOT NULL, created INTEGER NOT NULL);
+            CREATE TABLE IF NOT EXISTS decision_keys(key TEXT PRIMARY KEY, event_id TEXT NOT NULL, created INTEGER NOT NULL);""")
 
     def connect(self):
         return sqlite3.connect(self.path)
@@ -133,6 +134,25 @@ class Store:
         with self.lock, closing(self.connect()) as c, c:
             c.execute("INSERT OR IGNORE INTO results VALUES(?, ?, ?, ?)",
                       (event_id, packet_hash, json.dumps(result, sort_keys=True), int(time.time())))
+
+    def claim_key(self, key, event_id):
+        """Roadmap 18b: a decision's semantic key belongs to its first event id for ever."""
+        with self.lock, closing(self.connect()) as c, c:
+            row = c.execute("SELECT event_id FROM decision_keys WHERE key=?", (key,)).fetchone()
+            if row and row[0] != event_id:
+                raise ValueError(f"this question was already drawn on its date as {row[0]}; a new event id cannot re-draw it")
+            if not row:
+                c.execute("INSERT INTO decision_keys VALUES(?, ?, ?)", (key, event_id, int(time.time())))
+
+    def journal(self):
+        """Every journaled event: id, packet hash and creation time (published, roadmap 18b)."""
+        with closing(self.connect()) as c:
+            return [{"event_id": e, "packet_hash": h, "created": t}
+                    for e, h, t in c.execute("SELECT event_id, packet_hash, created FROM events ORDER BY created, event_id")]
+
+    def seed_sha256(self):
+        with closing(self.connect()) as c:
+            return hashlib.sha256(self._meta(c, "seed")).hexdigest()
 
     def result(self, event_id):
         with closing(self.connect()) as c:
@@ -260,6 +280,9 @@ def play_decision(store, data):
     if existing is not None:
         store.close_digest(data["event_id"], packet_hash)      # refuses an edited request
         return "already_decided", existing
+    from .decisions import hardened, semantic_key
+    if hardened(data):
+        store.claim_key(semantic_key(data), data["event_id"])
     result = {"event_id": data["event_id"], "kind": "decision", "date": data["date"], "question": data["question"],
               "decider": data["decider"], "options": data["options"], "outcome": draw(data, store)}
     store.save_result(data["event_id"], packet_hash, result)
@@ -330,6 +353,9 @@ def handler(store, token, games, career_site=None, root=None):
                     return self.send(200, render(result), "text/plain")
                 if len(parts) == 1:
                     return self.send(200, result)
+            if path == "/journal":
+                # Roadmap 18b: the full journal and the career seed's hash are public; the seed itself never is.
+                return self.send(200, {"kernel": KERNEL_VERSION, "seed_sha256": store.seed_sha256(), "events": store.journal()})
             if path == "/ready":
                 if not self.authorized():
                     return

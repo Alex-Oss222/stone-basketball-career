@@ -105,6 +105,12 @@ def run_game(home, away, *, event_id, game_date, journal, game_type="regular", v
         raise RuntimeError("kernel invariant failure: " + "; ".join(errors))
     result["game_date"] = game_date
     result["kernel"] = KERNEL_VERSION
+    if rules["season"] >= "2004-05":
+        # Roadmap 18b: new results carry their audit trail; committed results are never rewritten.
+        import hashlib
+        from .packets import canonical
+        result["audit"] = {"packet_sha256": hashlib.sha256(canonical(packet)).hexdigest(), "procedure": packet["procedure"],
+                           "kernel": KERNEL_VERSION, "engine": "runtime/private_service.py"}
     return result
 
 

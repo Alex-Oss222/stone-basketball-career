@@ -245,3 +245,36 @@ def request_errors(root=ROOT):
         seen[event_id] = rel
     errors.extend(slate_errors(slate, root))
     return errors
+
+
+HARDEN_SEASON = "2004-05"
+
+
+def schedule_id_errors(root=ROOT):
+    """Roadmap 18b: from 2004-05 every game request's event id is a scheduled game's id (regular season or preseason
+    schedule, or a game the playoff bracket created), so a game cannot be re-drawn under a new id."""
+    from .era import season_for_date
+    root = Path(root)
+    errors, known = [], {}
+    for path in find_requests(root):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        day = data.get("game_date")
+        if not isinstance(day, str):
+            continue
+        season = season_for_date(day)
+        if season < HARDEN_SEASON:
+            continue
+        if season not in known:
+            ids = set()
+            start = int(season[:4])
+            for name in (f"nba_{start}_{str(start + 1)[-2:]}_schedule.json", f"nba_{start}_{str(start + 1)[-2:]}_preseason_schedule.json"):
+                f = root / "library" / str(start) / "league" / name
+                if f.is_file():
+                    ids |= {g.get("game_id") for g in json.loads(f.read_text(encoding="utf-8"))["games"]}
+            bracket = root / f"career/Dwyane_Wade/Stats_and_Awards/League/{season}/playoffs.json"
+            if bracket.is_file():
+                ids |= {g.get("event_id") for s in json.loads(bracket.read_text(encoding="utf-8"))["series"] for g in s["games"]}
+            known[season] = ids
+        if data.get("event_id") not in known[season]:
+            errors.append(f"{path.relative_to(root)}: event id {data.get('event_id')} is not a scheduled {season} game")
+    return errors
