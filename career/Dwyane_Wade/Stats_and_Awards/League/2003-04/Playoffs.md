@@ -195,17 +195,17 @@ Home court: Minnesota Timberwolves. Minnesota Timberwolves wins 4-0.
 
 ### East: (6) Toronto Raptors vs (2) New Jersey Nets
 
-Home court: New Jersey Nets. Series Toronto Raptors 0, New Jersey Nets 3.
+Home court: New Jersey Nets. New Jersey Nets wins 4-0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Mon May 3 | New Jersey Nets | Toronto Raptors | Toronto Raptors 87, New Jersey Nets 98 |
 | 2 | Wed May 5 | New Jersey Nets | Toronto Raptors | Toronto Raptors 78, New Jersey Nets 99 |
 | 3 | Sat May 8 | Toronto Raptors | New Jersey Nets | New Jersey Nets 97, Toronto Raptors 93 |
-| 4 | Mon May 10 | Toronto Raptors | New Jersey Nets |  |
-| 5 | Wed May 12 | New Jersey Nets | Toronto Raptors | if needed |
-| 6 | Fri May 14 | Toronto Raptors | New Jersey Nets | if needed |
-| 7 | Sun May 16 | New Jersey Nets | Toronto Raptors | if needed |
+| 4 | Mon May 10 | Toronto Raptors | New Jersey Nets | New Jersey Nets 90, Toronto Raptors 89 |
+| 5 | Wed May 12 | New Jersey Nets | Toronto Raptors | not needed |
+| 6 | Fri May 14 | Toronto Raptors | New Jersey Nets | not needed |
+| 7 | Sun May 16 | New Jersey Nets | Toronto Raptors | not needed |
 
 ### West: (3) San Antonio Spurs vs (7) Los Angeles Lakers
 
@@ -223,14 +223,14 @@ Home court: San Antonio Spurs. Series San Antonio Spurs 1, Los Angeles Lakers 3.
 
 ### East: (1) Indiana Pacers vs (5) Milwaukee Bucks
 
-Home court: Indiana Pacers. Series Indiana Pacers 2, Milwaukee Bucks 1.
+Home court: Indiana Pacers. Series Indiana Pacers 3, Milwaukee Bucks 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Mon May 3 | Indiana Pacers | Milwaukee Bucks | Milwaukee Bucks 87, Indiana Pacers 103 |
 | 2 | Wed May 5 | Indiana Pacers | Milwaukee Bucks | Milwaukee Bucks 92, Indiana Pacers 88 |
 | 3 | Sat May 8 | Milwaukee Bucks | Indiana Pacers | Indiana Pacers 93, Milwaukee Bucks 81 |
-| 4 | Mon May 10 | Milwaukee Bucks | Indiana Pacers |  |
+| 4 | Mon May 10 | Milwaukee Bucks | Indiana Pacers | Indiana Pacers 95, Milwaukee Bucks 84 |
 | 5 | Wed May 12 | Indiana Pacers | Milwaukee Bucks | if needed |
 | 6 | Fri May 14 | Milwaukee Bucks | Indiana Pacers | if needed |
 | 7 | Sun May 16 | Indiana Pacers | Milwaukee Bucks | if needed |

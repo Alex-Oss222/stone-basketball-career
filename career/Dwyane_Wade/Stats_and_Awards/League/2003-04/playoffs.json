@@ -949,9 +949,9 @@
    "home_court": "New Jersey Nets",
    "wins": {
     "Toronto Raptors": 0,
-    "New Jersey Nets": 3
+    "New Jersey Nets": 4
    },
-   "winner": null,
+   "winner": "New Jersey Nets",
    "games": [
     {
      "game": 1,
@@ -989,7 +989,9 @@
      "home": "Toronto Raptors",
      "away": "New Jersey Nets",
      "conditional": false,
-     "event_id": "2004-05-10-new-jersey-nets-at-toronto-raptors"
+     "event_id": "2004-05-10-new-jersey-nets-at-toronto-raptors",
+     "result": "New Jersey Nets 90, Toronto Raptors 89",
+     "winner": "New Jersey Nets"
     },
     {
      "game": 5,
@@ -997,7 +999,8 @@
      "home": "New Jersey Nets",
      "away": "Toronto Raptors",
      "conditional": true,
-     "event_id": "2004-05-12-toronto-raptors-at-new-jersey-nets"
+     "event_id": "2004-05-12-toronto-raptors-at-new-jersey-nets",
+     "not_needed": true
     },
     {
      "game": 6,
@@ -1005,7 +1008,8 @@
      "home": "Toronto Raptors",
      "away": "New Jersey Nets",
      "conditional": true,
-     "event_id": "2004-05-14-new-jersey-nets-at-toronto-raptors"
+     "event_id": "2004-05-14-new-jersey-nets-at-toronto-raptors",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -1013,9 +1017,11 @@
      "home": "New Jersey Nets",
      "away": "Toronto Raptors",
      "conditional": true,
-     "event_id": "2004-05-16-toronto-raptors-at-new-jersey-nets"
+     "event_id": "2004-05-16-toronto-raptors-at-new-jersey-nets",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2004-05-10"
   },
   {
    "id": "west-semi-b",
@@ -1116,7 +1122,7 @@
    ],
    "home_court": "Indiana Pacers",
    "wins": {
-    "Indiana Pacers": 2,
+    "Indiana Pacers": 3,
     "Milwaukee Bucks": 1
    },
    "winner": null,
@@ -1157,7 +1163,9 @@
      "home": "Milwaukee Bucks",
      "away": "Indiana Pacers",
      "conditional": false,
-     "event_id": "2004-05-10-indiana-pacers-at-milwaukee-bucks"
+     "event_id": "2004-05-10-indiana-pacers-at-milwaukee-bucks",
+     "result": "Indiana Pacers 95, Milwaukee Bucks 84",
+     "winner": "Indiana Pacers"
     },
     {
      "game": 5,
