@@ -2,9 +2,9 @@
 
 # Contract | Jay Williams
 
-Known through: 2004-07-25. [Open interactive contract](willija03.html#contract) · [Contract history](willija03.html#contract-history)
+Known through: 2004-08-01. [Open interactive contract](willija03.html#contract) · [Contract history](willija03.html#contract-history)
 
-Jay Williams: under rookie contract. Evidence cutoff: 2004-07-25.
+Jay Williams: under rookie contract. Evidence cutoff: 2004-08-01.
 
 ## Current contract
 

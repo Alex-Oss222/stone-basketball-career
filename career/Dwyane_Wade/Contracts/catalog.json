@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-07-25",
+  "as_of": "2004-08-01",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -241,8 +241,8 @@
       "name": "Anthony Peeler",
       "team": "Sacramento Kings",
       "status": "under contract",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "current_contract_id": "peelean01-2004-07-29",
+      "recorded_agreements": 2,
       "href": "players/peelean01.html#contract"
     },
     {
@@ -592,8 +592,8 @@
       "name": "Carlos Boozer",
       "team": "Cleveland Cavaliers",
       "status": "under contract",
-      "current_contract_id": "boozeca01-2002-08-07",
-      "recorded_agreements": 1,
+      "current_contract_id": "boozeca01-2004-07-30",
+      "recorded_agreements": 2,
       "href": "players/boozeca01.html#contract"
     },
     {
@@ -1311,9 +1311,9 @@
       "player_id": "gilled01",
       "name": "Eddie Gill",
       "team": "Portland Trail Blazers",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "gilled01-2004-07-28",
+      "recorded_agreements": 1,
       "href": "players/gilled01.html#contract"
     },
     {
@@ -1690,8 +1690,8 @@
       "name": "Jacque Vaughn",
       "team": "Atlanta Hawks",
       "status": "under contract",
-      "current_contract_id": "vaughja01-2003-09-04",
-      "recorded_agreements": 2,
+      "current_contract_id": "vaughja01-2004-07-29",
+      "recorded_agreements": 3,
       "href": "players/vaughja01.html#contract"
     },
     {
@@ -2859,9 +2859,9 @@
       "player_id": "okurme01",
       "name": "Mehmet Okur",
       "team": "Detroit Pistons",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "okurme01-2004-07-27",
+      "recorded_agreements": 1,
       "href": "players/okurme01.html#contract"
     },
     {
@@ -2886,9 +2886,9 @@
       "player_id": "bradlmi01",
       "name": "Michael Bradley",
       "team": "Toronto Raptors",
-      "status": "under rookie contract",
-      "current_contract_id": "bradlmi01-2001-07-23",
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "bradlmi01-2004-07-29",
+      "recorded_agreements": 2,
       "href": "players/bradlmi01.html#contract"
     },
     {
@@ -3093,9 +3093,9 @@
       "player_id": "petermo01",
       "name": "Morris Peterson",
       "team": "Toronto Raptors",
-      "status": "under rookie contract",
-      "current_contract_id": "petermo01-2000-10-02",
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "petermo01-2004-07-30",
+      "recorded_agreements": 2,
       "href": "players/petermo01.html#contract"
     },
     {
@@ -3309,9 +3309,9 @@
       "player_id": "richaqu01",
       "name": "Quentin Richardson",
       "team": "Los Angeles Clippers",
-      "status": "under rookie contract",
-      "current_contract_id": "richaqu01-2000-08-08",
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "richaqu01-2004-07-29",
+      "recorded_agreements": 2,
       "href": "players/richaqu01.html#contract"
     },
     {
@@ -3579,9 +3579,9 @@
       "player_id": "buforro01",
       "name": "Rodney Buford",
       "team": "Sacramento Kings",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "buforro01-2004-07-29",
+      "recorded_agreements": 1,
       "href": "players/buforro01.html#contract"
     },
     {

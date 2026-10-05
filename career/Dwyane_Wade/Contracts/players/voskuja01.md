@@ -2,9 +2,9 @@
 
 # Contract | Jake Voskuhl
 
-Known through: 2004-07-25. [Open interactive contract](voskuja01.html#contract) · [Contract history](voskuja01.html#contract-history)
+Known through: 2004-08-01. [Open interactive contract](voskuja01.html#contract) · [Contract history](voskuja01.html#contract-history)
 
-Jake Voskuhl: under contract. Evidence cutoff: 2004-07-25.
+Jake Voskuhl: under contract. Evidence cutoff: 2004-08-01.
 
 ## Current contract
 

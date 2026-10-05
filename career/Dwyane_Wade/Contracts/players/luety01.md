@@ -2,9 +2,9 @@
 
 # Contract | Tyronn Lue
 
-Known through: 2004-07-25. [Open interactive contract](luety01.html#contract) · [Contract history](luety01.html#contract-history)
+Known through: 2004-08-01. [Open interactive contract](luety01.html#contract) · [Contract history](luety01.html#contract-history)
 
-Tyronn Lue: under contract. Evidence cutoff: 2004-07-25.
+Tyronn Lue: under contract. Evidence cutoff: 2004-08-01.
 
 ## Current contract
 

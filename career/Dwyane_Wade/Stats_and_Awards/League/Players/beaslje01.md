@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `beaslje01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-07-25 · **Club on this date:** Free agent · **Basis:** Miami's holding ended on 2003-11-11; no later club recorded · **League:** NBA  
+**Card date:** 2004-08-01 · **Club on this date:** Free agent · **Basis:** Miami's holding ended on 2003-11-11; no later club recorded · **League:** NBA  
 **Position:** PF (Power forward) · **Jersey:** #24 · **Born:** 1980-05-17 · **Age on card date:** 24  
 **Registry ID:** `beaslje01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/beaslje01.html) · ESPN ID 1991
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `beaslj
 
 ## Simulated statistics
 
-As of **2004-07-25**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-08-01**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -110,7 +110,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2003-04 playoffs ([bracket](../2003-04/Playoffs.md)): no playoff appearance through 2004-07-25. Prior playoff history is not imported into this card.
+**Coverage:** 2003-04 playoffs ([bracket](../2003-04/Playoffs.md)): no playoff appearance through 2004-08-01. Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -118,4 +118,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2004-07-25. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2004-08-01. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

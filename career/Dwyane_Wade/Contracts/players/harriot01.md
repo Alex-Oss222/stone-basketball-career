@@ -2,9 +2,9 @@
 
 # Contract | Othella Harrington
 
-Known through: 2004-07-25. [Open interactive contract](harriot01.html#contract) · [Contract history](harriot01.html#contract-history)
+Known through: 2004-08-01. [Open interactive contract](harriot01.html#contract) · [Contract history](harriot01.html#contract-history)
 
-Othella Harrington: under contract. Evidence cutoff: 2004-07-25.
+Othella Harrington: under contract. Evidence cutoff: 2004-08-01.
 
 ## Current contract
 
