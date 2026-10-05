@@ -1217,7 +1217,7 @@
    ],
    "home_court": "Minnesota Timberwolves",
    "wins": {
-    "Minnesota Timberwolves": 2,
+    "Minnesota Timberwolves": 3,
     "Los Angeles Lakers": 2
    },
    "winner": null,
@@ -1268,7 +1268,9 @@
      "home": "Minnesota Timberwolves",
      "away": "Los Angeles Lakers",
      "conditional": true,
-     "event_id": "2004-05-29-los-angeles-lakers-at-minnesota-timberwolves"
+     "event_id": "2004-05-29-los-angeles-lakers-at-minnesota-timberwolves",
+     "result": "Los Angeles Lakers 85, Minnesota Timberwolves 91",
+     "winner": "Minnesota Timberwolves"
     },
     {
      "game": 6,
