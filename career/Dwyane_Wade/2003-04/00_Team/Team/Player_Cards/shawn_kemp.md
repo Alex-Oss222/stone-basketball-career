@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C  
 **Age at assessment:** 33 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-03-09 
+**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-03-10 
 
 **Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $1,070,000, guaranteed if still on the roster on 2004-01-10; guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -46,6 +46,7 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 | 2004-01-30 | Staff rotation of 2004-01-30: rotation at C, staff plan 20 minutes. | [Rotation](../Depth_Chart/Reviews/2004-01-30/rotation.json) |
 | 2004-02-13 | Staff rotation of 2004-02-13: rotation at C, staff plan 16 minutes. | [Rotation](../Depth_Chart/Reviews/2004-02-13/rotation.json) |
 | 2004-02-27 | Staff rotation of 2004-02-27: starter at C, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-02-27/rotation.json) |
+| March 10, 2004 | Injured (day-to-day) in event `2004-03-10-miami-heat-at-new-orleans-hornets`: out 2 games; the game builder leaves him out of Miami's next 2 games. No grade change. | [Game 2 result](../../../06_Regular_Season/03_March/Week_2/Game_2.md) |
 
 ## Sources and uncertainty
 
@@ -63,7 +64,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Orlando Magic | 79 | N/A | 20.7 | 6.8 | 5.7 | 0.7 | 0.8 | 0.4 | 1.3 | 0.418 | 0.000 | 0.742 |
-| 2003-04 | MIA | 57 | 23 | 25.2 | 8.8 | 6.8 | 1.1 | 1.0 | 0.5 | 1.6 | 41.2% | 25.0% | 70.9% |
+| 2003-04 | MIA | 58 | 24 | 25.1 | 8.8 | 6.8 | 1.1 | 1.0 | 0.5 | 1.6 | 41.1% | 25.0% | 71.7% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 
