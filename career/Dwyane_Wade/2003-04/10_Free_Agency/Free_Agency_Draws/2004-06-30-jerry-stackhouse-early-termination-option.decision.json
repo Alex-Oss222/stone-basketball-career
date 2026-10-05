@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-06-30-jerry-stackhouse-early-termination-option",
+ "date": "2004-06-30",
+ "question": "Does Jerry Stackhouse exercise his 2004-05 early termination option with Washington Wizards ($7,437,500)?",
+ "decider": "Jerry Stackhouse (simulated player, engine draw)",
+ "options": {
+  "exercise": 0.91843,
+  "opt_out": 0.08157
+ },
+ "basis": "Market price $3,835,949 from simulated 2003-04 production against the option salary; P(opt out) = logistic(5.0 x -0.484) (runtime/free_agency_2004.py)."
+}

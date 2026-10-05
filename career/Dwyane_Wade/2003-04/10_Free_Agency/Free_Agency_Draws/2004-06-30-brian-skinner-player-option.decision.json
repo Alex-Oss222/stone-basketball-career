@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-06-30-brian-skinner-player-option",
+ "date": "2004-06-30",
+ "question": "Does Brian Skinner exercise his 2004-05 player option with Milwaukee Bucks ($1,666,667)?",
+ "decider": "Brian Skinner (simulated player, engine draw)",
+ "options": {
+  "exercise": 0.03,
+  "opt_out": 0.97
+ },
+ "basis": "Market price $5,589,618 from simulated 2003-04 production against the option salary; P(opt out) = logistic(5.0 x +2.354) (runtime/free_agency_2004.py)."
+}

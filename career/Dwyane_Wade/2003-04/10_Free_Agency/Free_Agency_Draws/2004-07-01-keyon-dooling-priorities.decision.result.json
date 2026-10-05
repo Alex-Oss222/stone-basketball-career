@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-01",
+ "decider": "Keyon Dooling (simulated player, engine draw)",
+ "event_id": "2004-07-01-keyon-dooling-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.2,
+  "loyalty": 0.2,
+  "money": 0.3,
+  "winning": 0.3
+ },
+ "outcome": "money",
+ "question": "What does Keyon Dooling weigh most in choosing his 2004 contract?"
+}

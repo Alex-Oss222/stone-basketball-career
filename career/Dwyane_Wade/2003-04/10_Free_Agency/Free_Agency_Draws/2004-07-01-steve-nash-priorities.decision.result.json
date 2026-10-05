@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-01",
+ "decider": "Steve Nash (simulated player, engine draw)",
+ "event_id": "2004-07-01-steve-nash-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "fame",
+ "question": "What does Steve Nash weigh most in choosing his 2004 contract?"
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-06-30-udonis-haslem-qualifying-offer-request",
+ "date": "2004-06-30",
+ "question": "Does Miami tender Udonis Haslem a qualifying offer at Wade's request?",
+ "decider": "Miami front office (engine draw on Wade's request)",
+ "options": {
+  "tender": 0.533,
+  "let_go": 0.467
+ },
+ "basis": "Rule: no tender (price $620,046 under the bar $930,069; margin 0.333). Wade asked to keep him (10_Free_Agency/wade_requests.json); standing weight 0.8 x (1 - margin) (docs/front_office.md, Wade's requests)."
+}

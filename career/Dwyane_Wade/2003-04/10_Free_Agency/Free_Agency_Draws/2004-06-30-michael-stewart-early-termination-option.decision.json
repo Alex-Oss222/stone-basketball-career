@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-06-30-michael-stewart-early-termination-option",
+ "date": "2004-06-30",
+ "question": "Does Michael Stewart exercise his 2004-05 early termination option with Cleveland Cavaliers ($4,800,000)?",
+ "decider": "Michael Stewart (simulated player, engine draw)",
+ "options": {
+  "exercise": 0.97,
+  "opt_out": 0.03
+ },
+ "basis": "Market price $932,546 from simulated 2003-04 production against the option salary; P(opt out) = logistic(5.0 x -0.806) (runtime/free_agency_2004.py)."
+}

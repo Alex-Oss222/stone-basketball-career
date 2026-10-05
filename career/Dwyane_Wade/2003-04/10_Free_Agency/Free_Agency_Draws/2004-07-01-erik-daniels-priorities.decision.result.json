@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-01",
+ "decider": "Erik Daniels (simulated player, engine draw)",
+ "event_id": "2004-07-01-erik-daniels-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "money",
+ "question": "What does Erik Daniels weigh most in choosing his 2004 contract?"
+}

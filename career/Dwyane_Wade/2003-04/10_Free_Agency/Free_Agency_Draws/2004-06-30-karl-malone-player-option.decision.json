@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-06-30-karl-malone-player-option",
+ "date": "2004-06-30",
+ "question": "Does Karl Malone exercise his 2004-05 player option with Seattle SuperSonics ($1,500,000)?",
+ "decider": "Karl Malone (simulated player, engine draw)",
+ "options": {
+  "exercise": 0.03,
+  "opt_out": 0.97
+ },
+ "basis": "Market price $3,334,575 from simulated 2003-04 production against the option salary; P(opt out) = logistic(5.0 x +1.223) (runtime/free_agency_2004.py)."
+}

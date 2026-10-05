@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-30",
+ "decider": "Michael Doleac (simulated player, engine draw)",
+ "event_id": "2004-06-30-michael-doleac-player-option",
+ "kind": "decision",
+ "options": {
+  "exercise": 0.619186,
+  "opt_out": 0.380814
+ },
+ "outcome": "exercise",
+ "question": "Does Michael Doleac exercise his 2004-05 player option with New York Knicks ($1,680,000)?"
+}

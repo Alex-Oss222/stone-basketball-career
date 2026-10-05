@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-06-30-antoine-walker-early-termination-option",
+ "date": "2004-06-30",
+ "question": "Does Antoine Walker exercise his 2004-05 early termination option with Dallas Mavericks ($14,625,000)?",
+ "decider": "Antoine Walker (simulated player, engine draw)",
+ "options": {
+  "exercise": 0.85644,
+  "opt_out": 0.14356
+ },
+ "basis": "Market price $9,400,857 from simulated 2003-04 production against the option salary; P(opt out) = logistic(5.0 x -0.357) (runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-30",
+ "decider": "Steve Nash (simulated player, engine draw)",
+ "event_id": "2004-06-30-steve-nash-early-termination-option",
+ "kind": "decision",
+ "options": {
+  "exercise": 0.03,
+  "opt_out": 0.97
+ },
+ "outcome": "opt_out",
+ "question": "Does Steve Nash exercise his 2004-05 early termination option with Dallas Mavericks ($5,750,000)?"
+}

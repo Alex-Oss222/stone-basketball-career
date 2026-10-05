@@ -1,0 +1,13 @@
+{
+ "event_id": "2004-07-01-ibo-kutluay-priorities",
+ "date": "2004-07-01",
+ "question": "What does Ibo Kutluay weigh most in choosing his 2004 contract?",
+ "decider": "Ibo Kutluay (simulated player, engine draw)",
+ "options": {
+  "money": 0.35,
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "winning": 0.25
+ },
+ "basis": "Trait odds by age (27): money, fame, loyalty, winning (runtime/market.py TRAIT_ODDS; docs/front_office_design.md 4.3). Drawn once for the 2004 market."
+}

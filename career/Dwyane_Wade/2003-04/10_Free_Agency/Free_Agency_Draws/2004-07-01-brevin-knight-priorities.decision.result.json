@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-01",
+ "decider": "Brevin Knight (simulated player, engine draw)",
+ "event_id": "2004-07-01-brevin-knight-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "money",
+ "question": "What does Brevin Knight weigh most in choosing his 2004 contract?"
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-06-30-eric-snow-early-termination-option",
+ "date": "2004-06-30",
+ "question": "Does Eric Snow exercise his 2004-05 early termination option with Philadelphia 76ers ($4,875,000)?",
+ "decider": "Eric Snow (simulated player, engine draw)",
+ "options": {
+  "exercise": 0.208466,
+  "opt_out": 0.791534
+ },
+ "basis": "Market price $6,175,844 from simulated 2003-04 production against the option salary; P(opt out) = logistic(5.0 x +0.267) (runtime/free_agency_2004.py)."
+}

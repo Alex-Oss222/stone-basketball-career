@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-01",
+ "decider": "Kirk Penney (simulated player, engine draw)",
+ "event_id": "2004-07-01-kirk-penney-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "winning",
+ "question": "What does Kirk Penney weigh most in choosing his 2004 contract?"
+}

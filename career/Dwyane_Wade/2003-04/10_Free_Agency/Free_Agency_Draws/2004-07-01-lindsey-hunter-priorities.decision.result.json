@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-01",
+ "decider": "Lindsey Hunter (simulated player, engine draw)",
+ "event_id": "2004-07-01-lindsey-hunter-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.05,
+  "loyalty": 0.25,
+  "money": 0.3,
+  "winning": 0.4
+ },
+ "outcome": "loyalty",
+ "question": "What does Lindsey Hunter weigh most in choosing his 2004 contract?"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-30",
+ "decider": "Karl Malone (simulated player, engine draw)",
+ "event_id": "2004-06-30-karl-malone-player-option",
+ "kind": "decision",
+ "options": {
+  "exercise": 0.03,
+  "opt_out": 0.97
+ },
+ "outcome": "opt_out",
+ "question": "Does Karl Malone exercise his 2004-05 player option with Seattle SuperSonics ($1,500,000)?"
+}

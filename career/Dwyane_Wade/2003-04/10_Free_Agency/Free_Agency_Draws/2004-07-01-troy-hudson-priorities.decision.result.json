@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-01",
+ "decider": "Troy Hudson (simulated player, engine draw)",
+ "event_id": "2004-07-01-troy-hudson-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.15,
+  "loyalty": 0.25,
+  "money": 0.35,
+  "winning": 0.25
+ },
+ "outcome": "winning",
+ "question": "What does Troy Hudson weigh most in choosing his 2004 contract?"
+}

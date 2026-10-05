@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-01",
+ "decider": "Robert Horry (simulated player, engine draw)",
+ "event_id": "2004-07-01-robert-horry-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.05,
+  "loyalty": 0.25,
+  "money": 0.3,
+  "winning": 0.4
+ },
+ "outcome": "fame",
+ "question": "What does Robert Horry weigh most in choosing his 2004 contract?"
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-06-30-kobe-bryant-early-termination-option",
+ "date": "2004-06-30",
+ "question": "Does Kobe Bryant exercise his 2004-05 early termination option with Los Angeles Lakers ($14,625,000)?",
+ "decider": "Kobe Bryant (simulated player, engine draw)",
+ "options": {
+  "exercise": 0.538386,
+  "opt_out": 0.461614
+ },
+ "basis": "Market price $14,175,000 from simulated 2003-04 production against the option salary; P(opt out) = logistic(5.0 x -0.031) (runtime/free_agency_2004.py)."
+}

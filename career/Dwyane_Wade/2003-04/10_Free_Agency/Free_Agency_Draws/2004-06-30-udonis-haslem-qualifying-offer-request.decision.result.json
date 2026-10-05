@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-30",
+ "decider": "Miami front office (engine draw on Wade's request)",
+ "event_id": "2004-06-30-udonis-haslem-qualifying-offer-request",
+ "kind": "decision",
+ "options": {
+  "let_go": 0.467,
+  "tender": 0.533
+ },
+ "outcome": "tender",
+ "question": "Does Miami tender Udonis Haslem a qualifying offer at Wade's request?"
+}

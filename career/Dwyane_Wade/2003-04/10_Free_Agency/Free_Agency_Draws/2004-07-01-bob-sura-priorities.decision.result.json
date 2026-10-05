@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-01",
+ "decider": "Bob Sura (simulated player, engine draw)",
+ "event_id": "2004-07-01-bob-sura-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.05,
+  "loyalty": 0.25,
+  "money": 0.3,
+  "winning": 0.4
+ },
+ "outcome": "fame",
+ "question": "What does Bob Sura weigh most in choosing his 2004 contract?"
+}

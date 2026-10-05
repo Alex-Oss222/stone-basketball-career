@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-01",
+ "decider": "Vlade Divac (simulated player, engine draw)",
+ "event_id": "2004-07-01-vlade-divac-priorities",
+ "kind": "decision",
+ "options": {
+  "fame": 0.05,
+  "loyalty": 0.25,
+  "money": 0.3,
+  "winning": 0.4
+ },
+ "outcome": "money",
+ "question": "What does Vlade Divac weigh most in choosing his 2004 contract?"
+}
