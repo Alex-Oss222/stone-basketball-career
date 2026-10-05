@@ -1309,9 +1309,9 @@
    "home_court": "Indiana Pacers",
    "wins": {
     "Indiana Pacers": 3,
-    "New Jersey Nets": 3
+    "New Jersey Nets": 4
    },
-   "winner": null,
+   "winner": "New Jersey Nets",
    "games": [
     {
      "game": 1,
@@ -1379,7 +1379,87 @@
      "home": "Indiana Pacers",
      "away": "New Jersey Nets",
      "conditional": true,
-     "event_id": "2004-06-03-new-jersey-nets-at-indiana-pacers"
+     "event_id": "2004-06-03-new-jersey-nets-at-indiana-pacers",
+     "result": "New Jersey Nets 94, Indiana Pacers 91",
+     "winner": "New Jersey Nets"
+    }
+   ],
+   "clinched_on": "2004-06-03"
+  },
+  {
+   "id": "finals",
+   "round": "finals",
+   "conference": "Finals",
+   "seeds": [
+    2,
+    1
+   ],
+   "clubs": [
+    "New Jersey Nets",
+    "Minnesota Timberwolves"
+   ],
+   "home_court": "Minnesota Timberwolves",
+   "wins": {
+    "New Jersey Nets": 0,
+    "Minnesota Timberwolves": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-06-06",
+     "home": "Minnesota Timberwolves",
+     "away": "New Jersey Nets",
+     "conditional": false,
+     "event_id": "2004-06-06-new-jersey-nets-at-minnesota-timberwolves"
+    },
+    {
+     "game": 2,
+     "date": "2004-06-08",
+     "home": "Minnesota Timberwolves",
+     "away": "New Jersey Nets",
+     "conditional": false,
+     "event_id": "2004-06-08-new-jersey-nets-at-minnesota-timberwolves"
+    },
+    {
+     "game": 3,
+     "date": "2004-06-10",
+     "home": "New Jersey Nets",
+     "away": "Minnesota Timberwolves",
+     "conditional": false,
+     "event_id": "2004-06-10-minnesota-timberwolves-at-new-jersey-nets"
+    },
+    {
+     "game": 4,
+     "date": "2004-06-13",
+     "home": "New Jersey Nets",
+     "away": "Minnesota Timberwolves",
+     "conditional": false,
+     "event_id": "2004-06-13-minnesota-timberwolves-at-new-jersey-nets"
+    },
+    {
+     "game": 5,
+     "date": "2004-06-15",
+     "home": "New Jersey Nets",
+     "away": "Minnesota Timberwolves",
+     "conditional": true,
+     "event_id": "2004-06-15-minnesota-timberwolves-at-new-jersey-nets"
+    },
+    {
+     "game": 6,
+     "date": "2004-06-17",
+     "home": "Minnesota Timberwolves",
+     "away": "New Jersey Nets",
+     "conditional": true,
+     "event_id": "2004-06-17-new-jersey-nets-at-minnesota-timberwolves"
+    },
+    {
+     "game": 7,
+     "date": "2004-06-20",
+     "home": "Minnesota Timberwolves",
+     "away": "New Jersey Nets",
+     "conditional": true,
+     "event_id": "2004-06-20-new-jersey-nets-at-minnesota-timberwolves"
     }
    ]
   }

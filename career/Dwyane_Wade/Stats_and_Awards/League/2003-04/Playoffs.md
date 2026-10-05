@@ -253,7 +253,7 @@ Home court: Minnesota Timberwolves. Minnesota Timberwolves wins 4-2.
 
 ### East: (1) Indiana Pacers vs (2) New Jersey Nets
 
-Home court: Indiana Pacers. Series Indiana Pacers 3, New Jersey Nets 3.
+Home court: Indiana Pacers. New Jersey Nets wins 4-3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -263,4 +263,20 @@ Home court: Indiana Pacers. Series Indiana Pacers 3, New Jersey Nets 3.
 | 4 | Fri May 28 | New Jersey Nets | Indiana Pacers | Indiana Pacers 87, New Jersey Nets 92 |
 | 5 | Sun May 30 | Indiana Pacers | New Jersey Nets | New Jersey Nets 85, Indiana Pacers 88 |
 | 6 | Tue Jun 1 | New Jersey Nets | Indiana Pacers | Indiana Pacers 113, New Jersey Nets 122 |
-| 7 | Thu Jun 3 | Indiana Pacers | New Jersey Nets | if needed |
+| 7 | Thu Jun 3 | Indiana Pacers | New Jersey Nets | New Jersey Nets 94, Indiana Pacers 91 |
+
+## NBA Finals
+
+### Finals: (2) New Jersey Nets vs (1) Minnesota Timberwolves
+
+Home court: Minnesota Timberwolves. Series New Jersey Nets 0, Minnesota Timberwolves 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Sun Jun 6 | Minnesota Timberwolves | New Jersey Nets |  |
+| 2 | Tue Jun 8 | Minnesota Timberwolves | New Jersey Nets |  |
+| 3 | Thu Jun 10 | New Jersey Nets | Minnesota Timberwolves |  |
+| 4 | Sun Jun 13 | New Jersey Nets | Minnesota Timberwolves |  |
+| 5 | Tue Jun 15 | New Jersey Nets | Minnesota Timberwolves | if needed |
+| 6 | Thu Jun 17 | Minnesota Timberwolves | New Jersey Nets | if needed |
+| 7 | Sun Jun 20 | Minnesota Timberwolves | New Jersey Nets | if needed |
