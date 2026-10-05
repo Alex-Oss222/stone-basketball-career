@@ -222,7 +222,12 @@ class Rollover:
                 h["basis"] = (h.get("basis", "") + f"; left Miami in the {self.new} summer market").lstrip("; ")
         held = {h.get("bbr_id") for h in new_entries}
         for e in entries:
-            if e["status"] == "unsigned_draft_rights" or e.get("bbr_id") in held or not e.get("bbr_id"):
+            if e.get("bbr_id") in held or not e.get("bbr_id"):
+                continue
+            if e["status"] == "unsigned_draft_rights":
+                # Miami holds his rights from the draft: he plays for no other club (world rule 2).
+                new_entries.append({"player": e["player"], "bbr_id": e["bbr_id"], "from": "2004-06-24", "until": None,
+                                    "basis": f"draft rights (No. {e.get('draft_pick')} pick), unsigned"})
                 continue
             new_entries.append({"player": e["player"], "bbr_id": e["bbr_id"], "from": e.get("signed_date") or self.day,
                                 "until": None, "basis": f"{e.get('route')} signing {e.get('signed_date')} ({self.new} summer market)"})
@@ -242,8 +247,11 @@ class Rollover:
                 "basis": f"{self.old} closing order ({source.relative_to(self.root).as_posix()}) for the players who stay; "
                          "training camp decides the new order.",
                 "positions": positions,
-                "unassigned_draft_rights": [p["name"] for p in register["players"] if p["status"] == "unsigned_draft_rights"],
-                "unassigned_arrivals": sorted(names - placed), "unavailable": [], "departed": [], "corrections": []}
+                "unassigned_draft_rights": [{"name": p["name"], "positions": p["positions"], "status": "draft_rights_unsigned"}
+                                            for p in register["players"] if p["status"] == "unsigned_draft_rights"],
+                "unassigned_arrivals": [{"name": p["name"], "positions": p["positions"], "status": p["status"], "date": self.day}
+                                        for p in register["players"] if p["name"] in names - placed],
+                "unavailable": [], "departed": [], "corrections": []}
 
     def card(self, entry, ident, prior):
         """A new arrival's card in the template's section order; grades stay unassessed until evidence exists."""

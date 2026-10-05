@@ -29,6 +29,9 @@ def finish():
     writer.commit()
     pages = season_pages.write(signing.SEASON, day, ROOT)
     print(f"{len(pages)} statistics and award pages written for {signing.SEASON}")
+    from runtime import write_back
+    report = write_back.run(ROOT, write=True)
+    print(f"write-back: {len(report['written'])} result(s), {report['pages']} page(s), {report['reports']} report(s)")
     from scripts.refresh_career_views import refresh_career_views
     print(f"Updated {len(refresh_career_views(ROOT))} detailed career views.")
 

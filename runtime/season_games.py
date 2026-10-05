@@ -606,7 +606,7 @@ def league_games_due(until, root=ROOT, season=None):
     return rows
 
 
-def slate_structure_errors(path, data, schedule_by_id, clubs, root=ROOT):
+def slate_structure_errors(path, data, schedule_by_id, clubs, root=ROOT, season=None):
     """Structural checks for one league-slate request: shape, clubs, and agreement with the schedule."""
     rel = Path(path).relative_to(root) if Path(path).is_absolute() else path
     errors = []
@@ -650,11 +650,19 @@ def slate_errors(paths, root=ROOT, season=None, every=SLATE_SAMPLE_EVERY):
     `load_request` builds both real rotations and the full packet (about 0.2 s each), so the whole
     1,189-game slate would take minutes; the structural checks catch every shape, club and schedule
     problem, and the sample proves the engine inputs on the dates. `every=1` checks everything."""
-    season = season or _active_season(root)
     from .game_requests import load_request
     paths = sorted(Path(p) for p in paths)
     if not paths:
         return []
+    if season is None:
+        # Requests of several seasons (the repository-wide check): each answers to its own season's schedule.
+        by_season = {}
+        for p in paths:
+            s = next((part for part in p.parts if len(part) == 7 and part[4] == "-" and part[:4].isdigit()), None)
+            by_season.setdefault(s or _active_season(root), []).append(p)
+        if len(by_season) > 1:
+            return [e for s, ps in sorted(by_season.items()) for e in slate_errors(ps, root, s, every)]
+        season = next(iter(by_season))
     schedule_by_id = {g["game_id"]: g for g in season_games(season, root)}
     clubs = set(load_rosters(season, root))
     errors = []
@@ -664,7 +672,7 @@ def slate_errors(paths, root=ROOT, season=None, every=SLATE_SAMPLE_EVERY):
         except (OSError, ValueError) as exc:
             errors.append(f"{path.relative_to(root)}: {exc}")
             continue
-        errors.extend(slate_structure_errors(path, data, schedule_by_id, clubs, root))
+        errors.extend(slate_structure_errors(path, data, schedule_by_id, clubs, root, season))
     for path in slate_sample(paths, every):
         try:
             load_request(path, root)
