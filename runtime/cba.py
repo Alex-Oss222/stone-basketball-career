@@ -13,10 +13,40 @@ ROOT = Path(__file__).resolve().parents[1]
 RULES_PATH = Path("library/2003/league/nba_1999_cba_rules.json")
 MINIMUM_SCALE_PATH = Path("library/2003/league/nba_1999_cba_minimum_salary_scale.json")
 MINIMUM_CAP_SERVICE = 5        # FAQ Q9: a one-year minimum for a 5+ year veteran counts the 4-year minimum
+CBA_2005_PATH = Path("library/2005/league/nba_2005_cba_rules.json")
+# The 2005 agreement governs contracts signed from its ratification (sourced: UPI, July 30, 2005; roadmap 19); every
+# earlier contract, decision and check stays under the 1999 rules, so no later rule reaches an earlier date.
+RATIFIED_2005 = "2005-07-30"
 
 
 def rules(root=ROOT):
     return json.loads((Path(root) / RULES_PATH).read_text(encoding="utf-8"))
+
+
+def rules_on(on, root=ROOT):
+    """The agreement in force for a contract signed on `on`, in the 1999 file's shape (so `terms_errors` and the
+    desks read either): the 1999 rules before RATIFIED_2005; from it, the 2005 structural changes laid over them:
+    Bird re-signings up to six seasons with 10.5% raises, Early Bird up to five with 10.5%, every other route up to
+    five with 8%, sign-and-trades at least three seasons. Rules the 2005 file does not restate keep the 1999 text."""
+    base = rules(root)
+    if on < RATIFIED_2005:
+        return base
+    new = json.loads((Path(root) / CBA_2005_PATH).read_text(encoding="utf-8"))
+    length, raises = new["contract_length"], new["annual_raises"]
+    out = json.loads(json.dumps(base))
+    out["agreement"] = "2005 NBA collective bargaining agreement"
+    out["in_force"] = f"from {RATIFIED_2005} (ratified and signed); 2005-06 through 2010-11"
+    ex = out["exceptions"]
+    ex["larry_bird"].update(max_years=length["bird_rights_re_signing_max_years"]["value"], raise_percent=raises["larry_bird_pct"]["value"],
+                            source="2005 FAQ Q19, Q47")
+    ex["early_bird"].update(max_years=length["early_bird"]["value"]["max_years"], raise_percent=raises["early_bird_pct"]["value"],
+                            source="2005 FAQ Q19")
+    ex["non_bird"].update(max_years=length["other_free_agents_max_years"]["value"], raise_percent=raises["non_bird_pct"]["value"],
+                          source="2005 FAQ Q19")
+    ex["minimum"]["max_years"] = length["minimum_exception_max_years"]["value"]
+    out["trades"]["sign_and_trade"]["min_non_option_seasons"] = length["sign_and_trade_min_years"]["value"]
+    out["source"] = "library/2005/league/nba_2005_cba_rules.json over library/2003/league/nba_1999_cba_rules.json"
+    return out
 
 
 def minimum_scale(root=ROOT):
@@ -24,10 +54,15 @@ def minimum_scale(root=ROOT):
 
 
 def minimum_salary(years_of_service, season="2003-04", root=ROOT):
-    """The 1999 CBA minimum salary for a player's years of NBA service before the season (FAQ Q9)."""
+    """The minimum salary for a player's years of NBA service before the season (1999 FAQ Q9; from 2005-06 the 2005
+    agreement's scale, 2005 FAQ Q11)."""
     if years_of_service is None:
         raise ValueError("years of service are not recorded; the minimum salary cannot be set")
-    row = minimum_scale(root)["seasons"][season]
+    seasons = minimum_scale(root)["seasons"]
+    if season not in seasons and season == "2005-06":
+        row = json.loads((Path(root) / CBA_2005_PATH).read_text(encoding="utf-8"))["minimum_salary_2005_06"]["value"]
+        return row["10_plus"] if years_of_service >= 10 else row[str(max(0, int(years_of_service)))]
+    row = seasons[season]
     return row["10_plus"] if years_of_service >= 10 else row[str(max(0, int(years_of_service)))]
 
 

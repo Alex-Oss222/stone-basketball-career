@@ -1,0 +1,24 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "season": "2004-05",
+ "kind": "real_miami_transactions_skipped",
+ "purpose": "Real Miami transactions between the 2004 draft and the 2004-05 season that move players OUT of Miami to another club. AGENTS.md rule 1 skips every real Miami transaction: a player in one stays with the club that had him before it. The 2004-05 roster file already returns players real Miami acquired to their previous clubs ('returned'); this list names the players real Miami sent away, so the offseason does not move them with history. World data only: never a reason for a simulated decision.",
+ "transactions": [
+  {
+   "date": "2004-07-14",
+   "kind": "trade",
+   "description": "The Los Angeles Lakers traded Shaquille O'Neal to Miami for Caron Butler, Lamar Odom, Brian Grant and a future first-round pick.",
+   "players_out_of_miami": [
+    {"player": "Caron Butler", "bbr_id": "butleca01", "to": "Los Angeles Lakers"},
+    {"player": "Lamar Odom", "bbr_id": "odomla01", "to": "Los Angeles Lakers"},
+    {"player": "Brian Grant", "bbr_id": "grantbr01", "to": "Los Angeles Lakers"}
+   ],
+   "players_into_miami": [
+    {"player": "Shaquille O'Neal", "bbr_id": "onealsh01", "from": "Los Angeles Lakers"}
+   ],
+   "status": "sourced",
+   "sources": ["https://en.wikipedia.org/wiki/2004%E2%80%9305_Miami_Heat_season", "https://www.basketball-reference.com/teams/MIA/2005_transactions.html"]
+  }
+ ]
+}

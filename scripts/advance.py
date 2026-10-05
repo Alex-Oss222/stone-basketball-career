@@ -241,6 +241,10 @@ def close_day(day, playoffs=False):
     run("scripts/write_back_results.py", "--write", "--light", show=False)
     if playoffs:
         say("    " + run("scripts/playoff_day.py", "--refresh", show=False).splitlines()[-1])
+        run("scripts/decide_awards.py", "--write", ok=(0, 1))        # the Finals MVP is named on the clinching night
+        draw()
+        run("scripts/decide_awards.py", "--write", show=False)
+        run("scripts/playoff_day.py", "--close")
     summary(day)
     commit(f"Advance {day}")
     wade_waits()
