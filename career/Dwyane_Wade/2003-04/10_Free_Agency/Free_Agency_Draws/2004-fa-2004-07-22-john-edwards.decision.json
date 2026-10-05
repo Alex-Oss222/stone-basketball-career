@@ -1,0 +1,18 @@
+{
+ "event_id": "2004-fa-2004-07-22-john-edwards",
+ "date": "2004-07-22",
+ "question": "2004 free agency, 2004-07-22: which offer does John Edwards accept (Los Angeles Clippers $385,277 x 1, Memphis Grizzlies $385,277 x 1, Miami Heat $385,277 x 1, Milwaukee Bucks $385,277 x 1, New Orleans Hornets $385,277 x 1, Sacramento Kings $385,277 x 1, Toronto Raptors $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?",
+ "decider": "John Edwards (simulated player, engine draw)",
+ "options": {
+  "Los Angeles Clippers": 0.078239,
+  "Memphis Grizzlies": 0.065843,
+  "Miami Heat": 0.092969,
+  "Milwaukee Bucks": 0.043479,
+  "New Orleans Hornets": 0.043479,
+  "Sacramento Kings": 0.044915,
+  "Toronto Raptors": 0.117598,
+  "Utah Jazz": 0.043479,
+  "wait": 0.469999
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.530; priority loyalty; utility Los Angeles Clippers 49.8, Memphis Grizzlies 49.1, Miami Heat 50.5, Milwaukee Bucks 47.5, New Orleans Hornets 47.5, Sacramento Kings 47.6, Toronto Raptors 51.5, Utah Jazz 47.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,16 @@
+{
+ "date": "2004-07-22",
+ "decider": "Anthony Miller (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-22-anthony-miller",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.015126,
+  "Los Angeles Lakers": 0.205189,
+  "New Jersey Nets": 0.10088,
+  "Portland Trail Blazers": 0.10088,
+  "San Antonio Spurs": 0.107925,
+  "wait": 0.47
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-22: which offer does Anthony Miller accept (Denver Nuggets $1,100,000 x 1, Los Angeles Lakers $1,100,000 x 1, New Jersey Nets $1,100,000 x 1, Portland Trail Blazers $1,100,000 x 1, San Antonio Spurs $1,100,000 x 1), or does he wait?"
+}

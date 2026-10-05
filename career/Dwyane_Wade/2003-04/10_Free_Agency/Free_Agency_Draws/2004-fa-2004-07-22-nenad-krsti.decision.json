@@ -1,0 +1,18 @@
+{
+ "event_id": "2004-fa-2004-07-22-nenad-krsti",
+ "date": "2004-07-22",
+ "question": "2004 free agency, 2004-07-22: which offer does Nenad Krstić accept (Denver Nuggets $385,277 x 1, Houston Rockets $385,277 x 1, Los Angeles Lakers $385,277 x 1, New Jersey Nets $385,277 x 1, New York Knicks $385,277 x 1, Portland Trail Blazers $385,277 x 1, San Antonio Spurs $385,277 x 1, Washington Wizards $385,277 x 1), or does he wait?",
+ "decider": "Nenad Krstić (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.010072,
+  "Houston Rockets": 0.015253,
+  "Los Angeles Lakers": 0.141495,
+  "New Jersey Nets": 0.068873,
+  "New York Knicks": 0.141495,
+  "Portland Trail Blazers": 0.068873,
+  "San Antonio Spurs": 0.073867,
+  "Washington Wizards": 0.010072,
+  "wait": 0.47
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.530; priority loyalty; utility Denver Nuggets 43.1, Houston Rockets 44.8, Los Angeles Lakers 53.7, New Jersey Nets 50.8, New York Knicks 53.7, Portland Trail Blazers 50.8, San Antonio Spurs 51.1, Washington Wizards 43.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

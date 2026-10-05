@@ -1,0 +1,13 @@
+{
+ "date": "2004-07-22",
+ "decider": "Mark Pope (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-22-mark-pope",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.03522,
+  "Los Angeles Lakers": 0.49478,
+  "wait": 0.47
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-22: which offer does Mark Pope accept (Denver Nuggets $807,546 x 1, Los Angeles Lakers $807,546 x 1), or does he wait?"
+}

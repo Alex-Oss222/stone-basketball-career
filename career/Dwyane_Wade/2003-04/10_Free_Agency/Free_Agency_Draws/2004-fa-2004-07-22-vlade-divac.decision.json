@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-22-vlade-divac",
+ "date": "2004-07-22",
+ "question": "2004 free agency, 2004-07-22: which offer does Vlade Divac accept (Toronto Raptors $5,597,035 x 1), or does he wait?",
+ "decider": "Vlade Divac (simulated player, engine draw)",
+ "options": {
+  "Toronto Raptors": 0.53,
+  "wait": 0.47
+ },
+ "basis": "Ask $5,597,035; best offer 1.00 of the ask in total; accept chance 0.530; priority money; utility Toronto Raptors 62.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

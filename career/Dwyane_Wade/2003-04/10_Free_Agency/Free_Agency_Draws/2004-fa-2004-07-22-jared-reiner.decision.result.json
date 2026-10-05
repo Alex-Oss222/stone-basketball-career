@@ -1,0 +1,16 @@
+{
+ "date": "2004-07-22",
+ "decider": "Jared Reiner (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-22-jared-reiner",
+ "kind": "decision",
+ "options": {
+  "Miami Heat": 0.14389,
+  "Milwaukee Bucks": 0.067293,
+  "Sacramento Kings": 0.069516,
+  "Toronto Raptors": 0.182008,
+  "Utah Jazz": 0.067293,
+  "wait": 0.47
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-22: which offer does Jared Reiner accept (Miami Heat $385,277 x 1, Milwaukee Bucks $385,277 x 1, Sacramento Kings $385,277 x 1, Toronto Raptors $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?"
+}

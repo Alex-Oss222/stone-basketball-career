@@ -1,0 +1,15 @@
+{
+ "event_id": "2004-fa-2004-07-22-tierre-brown",
+ "date": "2004-07-22",
+ "question": "2004 free agency, 2004-07-22: which offer does Tierre Brown accept (Atlanta Hawks $720,046 x 1, Boston Celtics $720,046 x 1, Golden State Warriors $720,046 x 1, Minnesota Timberwolves $720,046 x 1, Philadelphia 76ers $720,046 x 1), or does he wait?",
+ "decider": "Tierre Brown (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.11471,
+  "Boston Celtics": 0.11471,
+  "Golden State Warriors": 0.071159,
+  "Minnesota Timberwolves": 0.11471,
+  "Philadelphia 76ers": 0.11471,
+  "wait": 0.470001
+ },
+ "basis": "Ask $720,046; best offer 1.00 of the ask in total; accept chance 0.530; priority money; utility Atlanta Hawks 46.4, Boston Celtics 46.4, Golden State Warriors 44.5, Minnesota Timberwolves 46.4, Philadelphia 76ers 46.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

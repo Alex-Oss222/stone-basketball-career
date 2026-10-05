@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-22",
+ "decider": "Vlade Divac (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-22-vlade-divac",
+ "kind": "decision",
+ "options": {
+  "Toronto Raptors": 0.53,
+  "wait": 0.47
+ },
+ "outcome": "Toronto Raptors",
+ "question": "2004 free agency, 2004-07-22: which offer does Vlade Divac accept (Toronto Raptors $5,597,035 x 1), or does he wait?"
+}

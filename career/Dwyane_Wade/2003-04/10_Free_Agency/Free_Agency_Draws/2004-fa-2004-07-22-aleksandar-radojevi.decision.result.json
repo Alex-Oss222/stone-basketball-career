@@ -1,0 +1,17 @@
+{
+ "date": "2004-07-22",
+ "decider": "Aleksandar Radojevi\u0107 (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-22-aleksandar-radojevi",
+ "kind": "decision",
+ "options": {
+  "Miami Heat": 0.127679,
+  "Milwaukee Bucks": 0.059711,
+  "New Orleans Hornets": 0.059711,
+  "Sacramento Kings": 0.061684,
+  "Toronto Raptors": 0.161503,
+  "Utah Jazz": 0.059711,
+  "wait": 0.470001
+ },
+ "outcome": "Toronto Raptors",
+ "question": "2004 free agency, 2004-07-22: which offer does Aleksandar Radojevi\u0107 accept (Miami Heat $807,546 x 1, Milwaukee Bucks $807,546 x 1, New Orleans Hornets $807,546 x 1, Sacramento Kings $807,546 x 1, Toronto Raptors $807,546 x 1, Utah Jazz $807,546 x 1), or does he wait?"
+}

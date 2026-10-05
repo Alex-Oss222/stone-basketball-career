@@ -1,0 +1,21 @@
+{
+ "event_id": "2004-fa-2004-07-22-jackie-butler",
+ "date": "2004-07-22",
+ "question": "2004 free agency, 2004-07-22: which offer does Jackie Butler accept (Cleveland Cavaliers $385,277 x 1, Indiana Pacers $385,277 x 1, Los Angeles Clippers $385,277 x 1, Memphis Grizzlies $385,277 x 1, Miami Heat $385,277 x 1, Milwaukee Bucks $385,277 x 1, New Orleans Hornets $385,277 x 1, Sacramento Kings $385,277 x 1, Seattle SuperSonics $385,277 x 1, Toronto Raptors $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?",
+ "decider": "Jackie Butler (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.050572,
+  "Indiana Pacers": 0.004172,
+  "Los Angeles Clippers": 0.111989,
+  "Memphis Grizzlies": 0.038317,
+  "Miami Heat": 0.076585,
+  "Milwaukee Bucks": 0.025302,
+  "New Orleans Hornets": 0.025302,
+  "Sacramento Kings": 0.036999,
+  "Seattle SuperSonics": 0.006318,
+  "Toronto Raptors": 0.12914,
+  "Utah Jazz": 0.025302,
+  "wait": 0.470002
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.530; priority fame; utility Cleveland Cavaliers 51.7, Indiana Pacers 41.7, Los Angeles Clippers 54.9, Memphis Grizzlies 50.6, Miami Heat 53.4, Milwaukee Bucks 48.9, New Orleans Hornets 48.9, Sacramento Kings 50.5, Seattle SuperSonics 43.4, Toronto Raptors 55.5, Utah Jazz 48.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

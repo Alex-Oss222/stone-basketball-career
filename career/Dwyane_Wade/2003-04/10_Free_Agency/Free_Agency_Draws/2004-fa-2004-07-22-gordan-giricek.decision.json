@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-22-gordan-giricek",
+ "date": "2004-07-22",
+ "question": "2004 free agency, 2004-07-22: which offer does Gordan Giricek accept (Houston Rockets $4,483,102 x 4), or does he wait?",
+ "decider": "Gordan Giricek (simulated player, engine draw)",
+ "options": {
+  "Houston Rockets": 0.497653,
+  "wait": 0.502347
+ },
+ "basis": "Ask $4,556,886; best offer 0.98 of the ask in total; accept chance 0.498; priority winning; utility Houston Rockets 63.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

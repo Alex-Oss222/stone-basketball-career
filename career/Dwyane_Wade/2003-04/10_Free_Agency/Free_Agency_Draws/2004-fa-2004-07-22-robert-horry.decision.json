@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-22-robert-horry",
+ "date": "2004-07-22",
+ "question": "2004 free agency, 2004-07-22: which offer does Robert Horry accept (New Jersey Nets $1,235,972 x 2), or does he wait?",
+ "decider": "Robert Horry (simulated player, engine draw)",
+ "options": {
+  "New Jersey Nets": 0.484641,
+  "wait": 0.515359
+ },
+ "basis": "Ask $1,264,680; best offer 0.98 of the ask in total; accept chance 0.485; priority fame; utility New Jersey Nets 64.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

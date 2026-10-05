@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-22-richie-frahm",
+ "date": "2004-07-22",
+ "question": "2004 free agency, 2004-07-22: which offer does Richie Frahm accept (Seattle SuperSonics $695,892 x 4), or does he wait?",
+ "decider": "Richie Frahm (simulated player, engine draw)",
+ "options": {
+  "Seattle SuperSonics": 0.436886,
+  "wait": 0.563114
+ },
+ "basis": "Ask $730,016; best offer 0.95 of the ask in total; accept chance 0.437; priority winning; utility Seattle SuperSonics 65.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

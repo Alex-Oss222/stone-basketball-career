@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-22-lionel-chalmers",
+ "date": "2004-07-22",
+ "question": "2004 free agency, 2004-07-22: which offer does Lionel Chalmers accept (Minnesota Timberwolves $385,277 x 1), or does he wait?",
+ "decider": "Lionel Chalmers (simulated player, engine draw)",
+ "options": {
+  "Minnesota Timberwolves": 0.53,
+  "wait": 0.47
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.530; priority money; utility Minnesota Timberwolves 45.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

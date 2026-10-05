@@ -1,0 +1,20 @@
+{
+ "date": "2004-07-22",
+ "decider": "Malik Allen (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-22-malik-allen",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.004105,
+  "Denver Nuggets": 0.009971,
+  "Houston Rockets": 0.015099,
+  "Los Angeles Lakers": 0.140423,
+  "New Jersey Nets": 0.068351,
+  "New York Knicks": 0.140423,
+  "Portland Trail Blazers": 0.068351,
+  "San Antonio Spurs": 0.073307,
+  "Washington Wizards": 0.009971,
+  "wait": 0.469999
+ },
+ "outcome": "Los Angeles Lakers",
+ "question": "2004 free agency, 2004-07-22: which offer does Malik Allen accept (Chicago Bulls $720,046 x 1, Denver Nuggets $720,046 x 1, Houston Rockets $720,046 x 1, Los Angeles Lakers $720,046 x 1, New Jersey Nets $720,046 x 1, New York Knicks $720,046 x 1, Portland Trail Blazers $720,046 x 1, San Antonio Spurs $720,046 x 1, Washington Wizards $720,046 x 1), or does he wait?"
+}

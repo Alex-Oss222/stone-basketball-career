@@ -1,0 +1,13 @@
+{
+ "event_id": "2004-fa-2004-07-22-tony-bobbitt",
+ "date": "2004-07-22",
+ "question": "2004 free agency, 2004-07-22: which offer does Tony Bobbitt accept (Atlanta Hawks $385,277 x 1, Golden State Warriors $385,277 x 1, Minnesota Timberwolves $385,277 x 1), or does he wait?",
+ "decider": "Tony Bobbitt (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.254582,
+  "Golden State Warriors": 0.116702,
+  "Minnesota Timberwolves": 0.158717,
+  "wait": 0.469999
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.530; priority winning; utility Atlanta Hawks 53.0, Golden State Warriors 49.9, Minnesota Timberwolves 51.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

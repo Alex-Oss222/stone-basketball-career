@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-summer-trade-2004-07-22-hardaan01-olowomi01-tskitni01",
+ "date": "2004-07-22",
+ "question": "Do Denver Nuggets and Phoenix Suns trade Michael Olowokandi and Nikoloz Tskitishvili for Anfernee Hardaway on 2004-07-22?",
+ "decider": "Denver Nuggets and Phoenix Suns front offices (engine draw)",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "basis": "Gains on own objectives {'Denver Nuggets': 0.189, 'Phoenix Suns': 0.408}; acceptance {'Denver Nuggets': 0.95, 'Phoenix Suns': 0.95}; 1999 salary rule met (runtime/free_agency_2004.py summer trades)."
+}

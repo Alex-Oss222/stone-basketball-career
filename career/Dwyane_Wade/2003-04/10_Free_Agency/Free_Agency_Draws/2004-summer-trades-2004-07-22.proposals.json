@@ -1,0 +1,85 @@
+{
+ "schema_version": 1,
+ "date": "2004-07-22",
+ "rule": "runtime/free_agency_2004.py Market.trade_proposals",
+ "deals": [
+  {
+   "date": "2004-07-22",
+   "clubs": [
+    "Denver Nuggets",
+    "Phoenix Suns"
+   ],
+   "a": {
+    "club": "Denver Nuggets",
+    "sends": [
+     "Michael Olowokandi",
+     "Nikoloz Tskitishvili"
+    ],
+    "bbr_ids": [
+     "olowomi01",
+     "tskitni01"
+    ],
+    "salary": 8310600
+   },
+   "b": {
+    "club": "Phoenix Suns",
+    "sends": [
+     "Anfernee Hardaway"
+    ],
+    "bbr_ids": [
+     "hardaan01"
+    ],
+    "salary": 14625000
+   },
+   "gain": {
+    "Denver Nuggets": 0.189,
+    "Phoenix Suns": 0.408
+   },
+   "accept": {
+    "Denver Nuggets": 0.95,
+    "Phoenix Suns": 0.95
+   },
+   "both": 0.9025,
+   "id": "2004-summer-trade-2004-07-22-hardaan01-olowomi01-tskitni01"
+  },
+  {
+   "date": "2004-07-22",
+   "clubs": [
+    "Boston Celtics",
+    "Utah Jazz"
+   ],
+   "a": {
+    "club": "Boston Celtics",
+    "sends": [
+     "Raef LaFrentz"
+    ],
+    "bbr_ids": [
+     "lafrera01"
+    ],
+    "salary": 9714538
+   },
+   "b": {
+    "club": "Utah Jazz",
+    "sends": [
+     "Sasha Pavlovic",
+     "Curtis Borchardt"
+    ],
+    "bbr_ids": [
+     "pavloal01",
+     "borchcu01"
+    ],
+    "salary": 2471880
+   },
+   "gain": {
+    "Boston Celtics": 0.114,
+    "Utah Jazz": 0.141
+   },
+   "accept": {
+    "Boston Celtics": 0.796,
+    "Utah Jazz": 0.883
+   },
+   "both": 0.702868,
+   "id": "2004-summer-trade-2004-07-22-borchcu01-lafrera01-pavloal01"
+  }
+ ]
+}

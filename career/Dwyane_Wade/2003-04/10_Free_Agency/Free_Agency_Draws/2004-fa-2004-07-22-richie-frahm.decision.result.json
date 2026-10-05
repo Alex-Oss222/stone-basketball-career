@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-22",
+ "decider": "Richie Frahm (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-22-richie-frahm",
+ "kind": "decision",
+ "options": {
+  "Seattle SuperSonics": 0.436886,
+  "wait": 0.563114
+ },
+ "outcome": "Seattle SuperSonics",
+ "question": "2004 free agency, 2004-07-22: which offer does Richie Frahm accept (Seattle SuperSonics $695,892 x 4), or does he wait?"
+}

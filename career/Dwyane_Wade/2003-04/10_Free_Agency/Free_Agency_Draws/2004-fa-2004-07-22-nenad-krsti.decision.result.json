@@ -1,0 +1,19 @@
+{
+ "date": "2004-07-22",
+ "decider": "Nenad Krsti\u0107 (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-22-nenad-krsti",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.010072,
+  "Houston Rockets": 0.015253,
+  "Los Angeles Lakers": 0.141495,
+  "New Jersey Nets": 0.068873,
+  "New York Knicks": 0.141495,
+  "Portland Trail Blazers": 0.068873,
+  "San Antonio Spurs": 0.073867,
+  "Washington Wizards": 0.010072,
+  "wait": 0.47
+ },
+ "outcome": "New York Knicks",
+ "question": "2004 free agency, 2004-07-22: which offer does Nenad Krsti\u0107 accept (Denver Nuggets $385,277 x 1, Houston Rockets $385,277 x 1, Los Angeles Lakers $385,277 x 1, New Jersey Nets $385,277 x 1, New York Knicks $385,277 x 1, Portland Trail Blazers $385,277 x 1, San Antonio Spurs $385,277 x 1, Washington Wizards $385,277 x 1), or does he wait?"
+}

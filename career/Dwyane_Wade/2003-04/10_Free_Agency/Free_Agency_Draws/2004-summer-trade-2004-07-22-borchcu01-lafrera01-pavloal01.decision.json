@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-summer-trade-2004-07-22-borchcu01-lafrera01-pavloal01",
+ "date": "2004-07-22",
+ "question": "Do Boston Celtics and Utah Jazz trade Raef LaFrentz for Sasha Pavlovic and Curtis Borchardt on 2004-07-22?",
+ "decider": "Boston Celtics and Utah Jazz front offices (engine draw)",
+ "options": {
+  "accept": 0.702868,
+  "decline": 0.297132
+ },
+ "basis": "Gains on own objectives {'Boston Celtics': 0.114, 'Utah Jazz': 0.141}; acceptance {'Boston Celtics': 0.796, 'Utah Jazz': 0.883}; 1999 salary rule met (runtime/free_agency_2004.py summer trades)."
+}

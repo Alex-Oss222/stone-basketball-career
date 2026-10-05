@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-22",
+ "decider": "Andre Barrett (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-22-andre-barrett",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.274587,
+  "Golden State Warriors": 0.108069,
+  "Minnesota Timberwolves": 0.147344,
+  "wait": 0.47
+ },
+ "outcome": "Atlanta Hawks",
+ "question": "2004 free agency, 2004-07-22: which offer does Andre Barrett accept (Atlanta Hawks $385,277 x 1, Golden State Warriors $385,277 x 1, Minnesota Timberwolves $385,277 x 1), or does he wait?"
+}

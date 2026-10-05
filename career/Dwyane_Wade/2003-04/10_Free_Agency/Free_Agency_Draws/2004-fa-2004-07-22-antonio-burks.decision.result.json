@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-22",
+ "decider": "Antonio Burks (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-22-antonio-burks",
+ "kind": "decision",
+ "options": {
+  "Minnesota Timberwolves": 0.53,
+  "wait": 0.47
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-22: which offer does Antonio Burks accept (Minnesota Timberwolves $385,277 x 1), or does he wait?"
+}
