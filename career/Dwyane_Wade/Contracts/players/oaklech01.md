@@ -2,9 +2,9 @@
 
 # Contract | Charles Oakley
 
-Known through: 2004-08-15. [Open interactive contract](oaklech01.html#contract) · [Contract history](oaklech01.html#contract-history)
+Known through: 2004-08-22. [Open interactive contract](oaklech01.html#contract) · [Contract history](oaklech01.html#contract-history)
 
-Charles Oakley: under contract. Evidence cutoff: 2004-08-15.
+Charles Oakley: under contract. Evidence cutoff: 2004-08-22.
 
 ## Current contract
 

@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-08-15**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-08-22**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -270,7 +270,7 @@ Card date: **2004-08-15**. 504 registry players, one Markdown card and one inter
 | [Marko Jaric](jaricma01.md) | Los Angeles Clippers | 25 | sourced | [open](jaricma01.html) |
 | [Matt Barnes](barnema02.md) | Los Angeles Clippers | None | silhouette | [open](barnema02.html) |
 | [Matt Harpring](harprma01.md) | Utah Jazz | 28 | sourced | [open](harprma01.html) |
-| [Michael Curry](currymi01.md) | Toronto Raptors | 35 | silhouette | [open](currymi01.html) |
+| [Michael Curry](currymi01.md) | Toronto Raptors | 36 | silhouette | [open](currymi01.html) |
 | [Michael Finley](finlemi01.md) | Dallas Mavericks | 31 | sourced | [open](finlemi01.html) |
 | [Michael Jordan](jordami01.md) | Washington Wizards | 41 | sourced | [open](jordami01.html) |
 | [Mike Dunleavy](dunlemi02.md) | Golden State Warriors | 23 | sourced | [open](dunlemi02.html) |
@@ -341,7 +341,7 @@ Card date: **2004-08-15**. 504 registry players, one Markdown card and one inter
 | [Chris Mills](millsch01.md) | Boston Celtics | 34 | silhouette | [open](millsch01.html) |
 | [Chris Webber](webbech01.md) | Sacramento Kings | 31 | sourced | [open](webbech01.html) |
 | [Chris Wilcox](wilcoch01.md) | Los Angeles Clippers | 21 | sourced | [open](wilcoch01.html) |
-| [Christian Laettner](laettch01.md) | Washington Wizards | 34 | sourced | [open](laettch01.html) |
+| [Christian Laettner](laettch01.md) | Washington Wizards | 35 | sourced | [open](laettch01.html) |
 | [Clarence Weatherspoon](weathcl01.md) | New York Knicks | 33 | sourced | [open](weathcl01.html) |
 | [Clifford Robinson](robincl02.md) | Golden State Warriors | 37 | silhouette | [open](robincl02.html) |
 | [Damone Brown](brownda02.md) | New Jersey Nets | None | silhouette | [open](brownda02.html) |

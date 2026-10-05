@@ -2,9 +2,9 @@
 
 # Contract | Chris Kaman
 
-Known through: 2004-08-15. [Open interactive contract](kamanch01.html#contract) · [Contract history](kamanch01.html#contract-history)
+Known through: 2004-08-22. [Open interactive contract](kamanch01.html#contract) · [Contract history](kamanch01.html#contract-history)
 
-Chris Kaman: No verified contract record. Evidence cutoff: 2004-08-15.
+Chris Kaman: No verified contract record. Evidence cutoff: 2004-08-22.
 
 ## Current contract
 

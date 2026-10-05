@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-08-15",
+  "as_of": "2004-08-22",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2571,9 +2571,9 @@
       "player_id": "woodslo01",
       "name": "Loren Woods",
       "team": "Minnesota Timberwolves",
-      "status": "on the 2003-04 roster; contract terms not in the dated records",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "woodslo01-2004-08-18",
+      "recorded_agreements": 2,
       "href": "players/woodslo01.html#contract"
     },
     {
@@ -2662,8 +2662,8 @@
       "name": "Mamadou N'diaye",
       "team": "Dallas Mavericks",
       "status": "under contract",
-      "current_contract_id": "ndiayma02-2004-01-06",
-      "recorded_agreements": 2,
+      "current_contract_id": "ndiayma02-2004-08-16",
+      "recorded_agreements": 3,
       "href": "players/ndiayma02.html#contract"
     },
     {
@@ -3040,8 +3040,8 @@
       "name": "Mikki Moore",
       "team": "New Jersey Nets",
       "status": "under contract",
-      "current_contract_id": "mooremi01-2003-12-22",
-      "recorded_agreements": 2,
+      "current_contract_id": "mooremi01-2004-08-20",
+      "recorded_agreements": 3,
       "href": "players/mooremi01.html#contract"
     },
     {
@@ -3066,9 +3066,9 @@
       "player_id": "willima01",
       "name": "Mo Williams",
       "team": "Utah Jazz",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "willima01-2004-08-21",
+      "recorded_agreements": 1,
       "href": "players/willima01.html#contract"
     },
     {
@@ -3750,9 +3750,9 @@
       "player_id": "padgesc01",
       "name": "Scott Padgett",
       "team": "Houston Rockets",
-      "status": "camp contract",
-      "current_contract_id": "padgesc01-2003-10-28",
-      "recorded_agreements": 3,
+      "status": "under contract",
+      "current_contract_id": "padgesc01-2004-08-19",
+      "recorded_agreements": 4,
       "href": "players/padgesc01.html#contract"
     },
     {
@@ -4003,8 +4003,8 @@
       "name": "Steven Hunter",
       "team": "Orlando Magic",
       "status": "under contract",
-      "current_contract_id": "huntest01-2004-07-23",
-      "recorded_agreements": 2,
+      "current_contract_id": "huntest01-2004-08-20",
+      "recorded_agreements": 3,
       "href": "players/huntest01.html#contract"
     },
     {
@@ -4138,8 +4138,8 @@
       "name": "Tom Gugliotta",
       "team": "Phoenix Suns",
       "status": "under contract",
-      "current_contract_id": "guglito01-existing-c0eee2ba853a",
-      "recorded_agreements": 1,
+      "current_contract_id": "guglito01-2004-08-16",
+      "recorded_agreements": 2,
       "href": "players/guglito01.html#contract"
     },
     {
@@ -4345,8 +4345,8 @@
       "name": "Vin Baker",
       "team": "Boston Celtics",
       "status": "under contract",
-      "current_contract_id": "bakervi01-existing-b64aa8a6308d",
-      "recorded_agreements": 1,
+      "current_contract_id": "bakervi01-2004-08-18",
+      "recorded_agreements": 2,
       "href": "players/bakervi01.html#contract"
     },
     {

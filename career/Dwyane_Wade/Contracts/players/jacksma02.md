@@ -2,9 +2,9 @@
 
 # Contract | Marc Jackson
 
-Known through: 2004-08-15. [Open interactive contract](jacksma02.html#contract) · [Contract history](jacksma02.html#contract-history)
+Known through: 2004-08-22. [Open interactive contract](jacksma02.html#contract) · [Contract history](jacksma02.html#contract-history)
 
-Marc Jackson: under contract. Evidence cutoff: 2004-08-15.
+Marc Jackson: under contract. Evidence cutoff: 2004-08-22.
 
 ## Current contract
 
