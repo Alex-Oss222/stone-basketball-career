@@ -2,9 +2,9 @@
 
 # Contract | Anthony Carter
 
-Known through: 2004-06-27. [Open interactive contract](cartean01.html#contract) · [Contract history](cartean01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](cartean01.html#contract) · [Contract history](cartean01.html#contract-history)
 
-Anthony Carter: player option exercised. Evidence cutoff: 2004-06-27.
+Anthony Carter: player option exercised. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Anthony Carter |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | San Antonio Spurs |
 | Control status | player_option_exercised |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

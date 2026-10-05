@@ -2,9 +2,9 @@
 
 # Contract | Dion Glover
 
-Known through: 2004-06-27. [Open interactive contract](glovedi01.html#contract) · [Contract history](glovedi01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](glovedi01.html#contract) · [Contract history](glovedi01.html#contract-history)
 
-Dion Glover: released. Evidence cutoff: 2004-06-27.
+Dion Glover: released. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Dion Glover |
-| Club / rights baseline | Toronto Raptors |
+| Club / rights baseline | Atlanta Hawks |
 | Control status | released |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
@@ -44,14 +44,14 @@ Eligibility and a reference amount do not establish a tendered qualifying offer 
 
 | Field | Recorded detail |
 | --- | --- |
-| Bird classification | bird |
-| Bird classification basis | seasons_with_club |
-| Recorded Bird-clock seasons | 4 |
-| Restricted-free-agency eligibility | Yes |
-| Qualifying-offer reference amount | $2,270,319 |
-| Qualifying-offer basis | rookie scale: 2002-03 salary plus 43.3% (1999 pick No. 20) |
-| Free-agent cap hold reference | $4,752,936 |
-| Qualifying offer actually tendered | No |
+| Bird classification | Not recorded |
+| Bird classification basis | Not recorded |
+| Recorded Bird-clock seasons | Not recorded |
+| Restricted-free-agency eligibility | Not recorded |
+| Qualifying-offer reference amount | Not recorded |
+| Qualifying-offer basis | Not recorded |
+| Free-agent cap hold reference | Not recorded |
+| Qualifying offer actually tendered | Not recorded |
 | Tender date | Not recorded |
 | Renounced | Not recorded |
 
@@ -271,6 +271,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/)
 - [Dated league rights evidence](../../../../library/2003/league/nba_2003_free_agent_rights.json)
+- [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
 - [Dated signed-contract archive](../contract_records.json)

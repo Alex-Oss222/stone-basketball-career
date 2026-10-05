@@ -2,9 +2,9 @@
 
 # Contract | Travis Best
 
-Known through: 2004-06-27. [Open interactive contract](besttr01.html#contract) · [Contract history](besttr01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](besttr01.html#contract) · [Contract history](besttr01.html#contract-history)
 
-Travis Best: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-06-27.
+Travis Best: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -170,4 +170,5 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/)
 - [Dated league rights evidence](../../../../library/2003/league/nba_2003_free_agent_rights.json)
+- [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
 - [Recorded free-agent rights](../../2003-04/00_Team/Finances/free_agent_rights.json)

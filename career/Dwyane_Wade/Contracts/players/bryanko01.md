@@ -2,9 +2,9 @@
 
 # Contract | Kobe Bryant
 
-Known through: 2004-06-27. [Open interactive contract](bryanko01.html#contract) · [Contract history](bryanko01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](bryanko01.html#contract) · [Contract history](bryanko01.html#contract-history)
 
-Kobe Bryant: under contract. Evidence cutoff: 2004-06-27.
+Kobe Bryant: under contract. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -279,3 +279,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.shamsports.com/players/kobe-bryant)
+- [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)

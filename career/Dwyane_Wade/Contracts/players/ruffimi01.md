@@ -2,9 +2,9 @@
 
 # Contract | Michael Ruffin
 
-Known through: 2004-06-27. [Open interactive contract](ruffimi01.html#contract) · [Contract history](ruffimi01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](ruffimi01.html#contract) · [Contract history](ruffimi01.html#contract-history)
 
-Michael Ruffin: under contract. Evidence cutoff: 2004-06-27.
+Michael Ruffin: under contract. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -260,3 +260,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 ## Source records
 
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
+- [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)

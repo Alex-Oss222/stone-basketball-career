@@ -2,9 +2,9 @@
 
 # Contract | Shawn Kemp
 
-Known through: 2004-06-27. [Open interactive contract](kempsh01.html#contract) · [Contract history](kempsh01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](kempsh01.html#contract) · [Contract history](kempsh01.html#contract-history)
 
-Shawn Kemp: camp contract. Evidence cutoff: 2004-06-27.
+Shawn Kemp: camp contract. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Shawn Kemp |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Orlando Magic |
 | Control status | camp_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

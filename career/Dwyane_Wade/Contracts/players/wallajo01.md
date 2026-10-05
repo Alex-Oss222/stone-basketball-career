@@ -2,9 +2,9 @@
 
 # Contract | John Wallace
 
-Known through: 2004-06-27. [Open interactive contract](wallajo01.html#contract) · [Contract history](wallajo01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](wallajo01.html#contract) · [Contract history](wallajo01.html#contract-history)
 
-John Wallace: camp contract. Evidence cutoff: 2004-06-27.
+John Wallace: camp contract. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -267,6 +267,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 ## Source records
 
+- [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/signing_corrections.json)
 - [Dated signed-contract archive](../contract_records.json)

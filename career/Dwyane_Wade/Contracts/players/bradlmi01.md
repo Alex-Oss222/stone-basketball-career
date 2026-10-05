@@ -2,9 +2,9 @@
 
 # Contract | Michael Bradley
 
-Known through: 2004-06-27. [Open interactive contract](bradlmi01.html#contract) · [Contract history](bradlmi01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](bradlmi01.html#contract) · [Contract history](bradlmi01.html#contract-history)
 
-Michael Bradley: under rookie contract. Evidence cutoff: 2004-06-27.
+Michael Bradley: under rookie contract. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -279,3 +279,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.shamsports.com/players/michael-bradley)
+- [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)

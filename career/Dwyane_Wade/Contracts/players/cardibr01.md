@@ -2,9 +2,9 @@
 
 # Contract | Brian Cardinal
 
-Known through: 2004-06-27. [Open interactive contract](cardibr01.html#contract) · [Contract history](cardibr01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](cardibr01.html#contract) · [Contract history](cardibr01.html#contract-history)
 
-Brian Cardinal: expired or unresolved. Evidence cutoff: 2004-06-27.
+Brian Cardinal: expired or unresolved. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -69,3 +69,4 @@ No executed agreement is recorded in the available contract history.
 
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
+- [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)

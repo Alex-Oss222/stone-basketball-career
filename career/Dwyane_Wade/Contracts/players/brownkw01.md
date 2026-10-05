@@ -2,9 +2,9 @@
 
 # Contract | Kwame Brown
 
-Known through: 2004-06-27. [Open interactive contract](brownkw01.html#contract) · [Contract history](brownkw01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](brownkw01.html#contract) · [Contract history](brownkw01.html#contract-history)
 
-Kwame Brown: under rookie contract. Evidence cutoff: 2004-06-27.
+Kwame Brown: under rookie contract. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 

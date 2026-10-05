@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-06-27**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-07-04**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -117,7 +117,7 @@ Card date: **2004-06-27**. 504 registry players, one Markdown card and one inter
 | Player | Club on card date | Age | Photo | Interactive |
 | --- | --- | --- | --- | --- |
 | [Adam Harrington](harriad01.md) | Denver Nuggets | 23 | silhouette | [open](harriad01.html) |
-| [Adrian Griffin](griffad01.md) | Houston Rockets | 29 | sourced | [open](griffad01.html) |
+| [Adrian Griffin](griffad01.md) | Houston Rockets | 30 | sourced | [open](griffad01.html) |
 | [Alex Garcia](garcial01.md) | San Antonio Spurs | None | silhouette | [open](garcial01.html) |
 | [Allan Houston](houstal01.md) | New York Knicks | 33 | sourced | [open](houstal01.html) |
 | [Allen Iverson](iversal01.md) | Philadelphia 76ers | 29 | sourced | [open](iversal01.html) |
@@ -141,7 +141,7 @@ Card date: **2004-06-27**. 504 registry players, one Markdown card and one inter
 | [DeShawn Stevenson](stevede01.md) | Utah Jazz | 23 | sourced | [open](stevede01.html) |
 | [Derrick Dial](dialde01.md) | Orlando Magic | None | silhouette | [open](dialde01.html) |
 | [Devin Brown](brownde02.md) | San Antonio Spurs | None | silhouette | [open](brownde02.html) |
-| [Dion Glover](glovedi01.md) | Toronto Raptors | 25 | silhouette | [open](glovedi01.html) |
+| [Dion Glover](glovedi01.md) | San Antonio Spurs | 25 | silhouette | [open](glovedi01.html) |
 | [Doug Christie](chrisdo01.md) | Sacramento Kings | 34 | sourced | [open](chrisdo01.html) |
 | [Dwyane Wade](wadedw01.md) | Miami Heat | 20 | sourced | [open](wadedw01.html) |
 | [Eddie House](houseed01.md) | Los Angeles Clippers | 26 | sourced | [open](houseed01.html) |
@@ -158,10 +158,10 @@ Card date: **2004-06-27**. 504 registry players, one Markdown card and one inter
 | [Jermaine Jackson](jacksje01.md) | Atlanta Hawks | 28 | sourced | [open](jacksje01.html) |
 | [Jerry Stackhouse](stackje01.md) | Washington Wizards | 29 | sourced | [open](stackje01.html) |
 | [Jeryl Sasser](sasseje01.md) | Orlando Magic | 25 | silhouette | [open](sasseje01.html) |
-| [Joe Johnson](johnsjo02.md) | Phoenix Suns | 22 | sourced | [open](johnsjo02.html) |
+| [Joe Johnson](johnsjo02.md) | Phoenix Suns | 23 | sourced | [open](johnsjo02.html) |
 | [Jon Barry](barryjo01.md) | Denver Nuggets | 34 | sourced | [open](barryjo01.html) |
 | [Joseph Forte](fortejo01.md) | Seattle SuperSonics | 23 | silhouette | [open](fortejo01.html) |
-| [Juaquin Hawkins](hawkiju01.md) | Houston Rockets | 30 | silhouette | [open](hawkiju01.html) |
+| [Juaquin Hawkins](hawkiju01.md) | Houston Rockets | 31 | silhouette | [open](hawkiju01.html) |
 | [Keith Bogans](boganke01.md) | Orlando Magic | 24 | sourced | [open](boganke01.html) |
 | [Kendall Gill](gillke01.md) | Chicago Bulls | 36 | sourced | [open](gillke01.html) |
 | [Kerry Kittles](kittlke01.md) | New Jersey Nets | 30 | silhouette | [open](kittlke01.html) |
@@ -186,7 +186,7 @@ Card date: **2004-06-27**. 504 registry players, one Markdown card and one inter
 | [Reggie Miller](millere01.md) | Indiana Pacers | 38 | sourced | [open](millere01.html) |
 | [Richard Hamilton](hamilri01.md) | Detroit Pistons | 26 | sourced | [open](hamilri01.html) |
 | [Ricky Davis](davisri01.md) | Cleveland Cavaliers | 24 | sourced | [open](davisri01.html) |
-| [Rodney White](whitero02.md) | Denver Nuggets | 23 | silhouette | [open](whitero02.html) |
+| [Rodney White](whitero02.md) | Denver Nuggets | 24 | silhouette | [open](whitero02.html) |
 | [Ron Mercer](mercero01.md) | San Antonio Spurs | 28 | silhouette | [open](mercero01.html) |
 | [Ronald Murray](murraro01.md) | Seattle SuperSonics | 24 | sourced | [open](murraro01.html) |
 | [Sani Becirovic](becirsa01.md) | Denver Nuggets (draft rights) | 23 | sourced | [open](becirsa01.html) |
@@ -218,7 +218,7 @@ Card date: **2004-06-27**. 504 registry players, one Markdown card and one inter
 | [Andrei Kirilenko](kirilan01.md) | Utah Jazz | 23 | sourced | [open](kirilan01.html) |
 | [Ansu Sesay](sesayan01.md) | Seattle SuperSonics | None | silhouette | [open](sesayan01.html) |
 | [Antawn Jamison](jamisan01.md) | Dallas Mavericks | 28 | sourced | [open](jamisan01.html) |
-| [Bostjan Nachbar](nachbbo01.md) | Houston Rockets | 23 | sourced | [open](nachbbo01.html) |
+| [Bostjan Nachbar](nachbbo01.md) | Houston Rockets | 24 | sourced | [open](nachbbo01.html) |
 | [Bruce Bowen](bowenbr01.md) | San Antonio Spurs | 33 | sourced | [open](bowenbr01.html) |
 | [Bryon Russell](russebr01.md) | Los Angeles Lakers | 33 | silhouette | [open](russebr01.html) |
 | [Carmelo Anthony](anthoca01.md) | Denver Nuggets | 20 | sourced | [open](anthoca01.html) |
@@ -420,7 +420,7 @@ Card date: **2004-06-27**. 504 registry players, one Markdown card and one inter
 | [Toni Kukoc](kukocto01.md) | Milwaukee Bucks | 35 | sourced | [open](kukocto01.html) |
 | [Torraye Braggs](braggto01.md) | Houston Rockets | None | silhouette | [open](braggto01.html) |
 | [Troy Murphy](murphtr01.md) | Golden State Warriors | 24 | sourced | [open](murphtr01.html) |
-| [Tyrone Hill](hillty01.md) | Philadelphia 76ers | 36 | silhouette | [open](hillty01.html) |
+| [Tyrone Hill](hillty01.md) | Free agent | 36 | silhouette | [open](hillty01.html) |
 | [Tyson Chandler](chandty01.md) | Chicago Bulls | None | silhouette | [open](chandty01.html) |
 | [Udonis Haslem](hasleud01.md) | Miami Heat | 24 | silhouette | [open](hasleud01.html) |
 | [Vin Baker](bakervi01.md) | Boston Celtics | None | silhouette | [open](bakervi01.html) |

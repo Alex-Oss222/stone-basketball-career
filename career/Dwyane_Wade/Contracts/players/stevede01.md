@@ -2,9 +2,9 @@
 
 # Contract | DeShawn Stevenson
 
-Known through: 2004-06-27. [Open interactive contract](stevede01.html#contract) · [Contract history](stevede01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](stevede01.html#contract) · [Contract history](stevede01.html#contract-history)
 
-DeShawn Stevenson: under rookie contract. Evidence cutoff: 2004-06-27.
+DeShawn Stevenson: under rookie contract. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -273,3 +273,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://basketball.realgm.com/nba/info/rookie_scale/2004)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
+- [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)

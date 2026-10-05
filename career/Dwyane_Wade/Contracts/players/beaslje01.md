@@ -2,9 +2,9 @@
 
 # Contract | Jerome Beasley
 
-Known through: 2004-06-27. [Open interactive contract](beaslje01.html#contract) · [Contract history](beaslje01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](beaslje01.html#contract) · [Contract history](beaslje01.html#contract-history)
 
-Jerome Beasley: renounced. Evidence cutoff: 2004-06-27.
+Jerome Beasley: renounced. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jerome Beasley |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Miami Heat |
 | Control status | renounced |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | $0 |

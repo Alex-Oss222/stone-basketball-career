@@ -2,9 +2,9 @@
 
 # Contract | Richie Frahm
 
-Known through: 2004-06-27. [Open interactive contract](frahmri01.html#contract) · [Contract history](frahmri01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](frahmri01.html#contract) · [Contract history](frahmri01.html#contract-history)
 
-Richie Frahm: No verified contract record. Evidence cutoff: 2004-06-27.
+Richie Frahm: No verified contract record. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -67,4 +67,4 @@ No executed agreement is recorded in the available contract history.
 
 ## Source records
 
-No additional signed document is recorded.
+- [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)

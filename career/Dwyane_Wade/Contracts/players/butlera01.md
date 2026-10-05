@@ -2,9 +2,9 @@
 
 # Contract | Rasual Butler
 
-Known through: 2004-06-27. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
 
-Rasual Butler: team option exercised. Evidence cutoff: 2004-06-27.
+Rasual Butler: team option exercised. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -278,6 +278,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.shamsports.com/players/rasual-butler)
+- [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Contract source document](https://basketball.realgm.com/nba/info/salary_cap)
 - [Contract source document](https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf)

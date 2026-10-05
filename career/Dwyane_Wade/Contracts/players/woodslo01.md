@@ -2,9 +2,9 @@
 
 # Contract | Loren Woods
 
-Known through: 2004-06-27. [Open interactive contract](woodslo01.html#contract) · [Contract history](woodslo01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](woodslo01.html#contract) · [Contract history](woodslo01.html#contract-history)
 
-Loren Woods: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-06-27.
+Loren Woods: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -43,13 +43,13 @@ Eligibility and a reference amount do not establish a tendered qualifying offer 
 
 | Field | Recorded detail |
 | --- | --- |
-| Bird classification | early_bird |
-| Bird classification basis | entered_league_in_window_no_signing_listed |
-| Recorded Bird-clock seasons | 2 |
-| Restricted-free-agency eligibility | Yes |
-| Qualifying-offer reference amount | $828,044 |
-| Qualifying-offer basis | 125% of 2002-03 salary |
-| Free-agent cap hold reference | $861,166 |
+| Bird classification | Not recorded |
+| Bird classification basis | Not recorded |
+| Recorded Bird-clock seasons | Not recorded |
+| Restricted-free-agency eligibility | Not recorded |
+| Qualifying-offer reference amount | Not recorded |
+| Qualifying-offer basis | Not recorded |
+| Free-agent cap hold reference | Not recorded |
 | Qualifying offer actually tendered | Not recorded |
 | Tender date | Not recorded |
 | Renounced | Not recorded |
@@ -170,3 +170,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/)
 - [Dated league rights evidence](../../../../library/2003/league/nba_2003_free_agent_rights.json)
+- [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-06-27",
+  "as_of": "2004-07-04",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -203,7 +203,7 @@
     {
       "player_id": "cartean01",
       "name": "Anthony Carter",
-      "team": "Miami Heat",
+      "team": "San Antonio Spurs",
       "status": "player option exercised",
       "current_contract_id": "cartean01-existing-a6261cf04017",
       "recorded_agreements": 1,
@@ -223,7 +223,7 @@
       "name": "Anthony Johnson",
       "team": "Indiana Pacers",
       "status": "under contract",
-      "current_contract_id": "johnsan02-2003-07-24",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/johnsan02.html#contract"
     },
@@ -241,7 +241,7 @@
       "name": "Anthony Peeler",
       "team": "Sacramento Kings",
       "status": "under contract",
-      "current_contract_id": "peelean01-2003-08-15",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/peelean01.html#contract"
     },
@@ -583,7 +583,7 @@
       "name": "Carlos Arroyo",
       "team": "Utah Jazz",
       "status": "under contract",
-      "current_contract_id": "arroyca01-2003-07-31",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/arroyca01.html#contract"
     },
@@ -671,7 +671,7 @@
     {
       "player_id": "parksch02",
       "name": "Cherokee Parks",
-      "team": "Miami Heat",
+      "team": "Golden State Warriors",
       "status": "camp contract",
       "current_contract_id": "parksch02-2003-11-09",
       "recorded_agreements": 3,
@@ -1211,7 +1211,7 @@
     {
       "player_id": "glovedi01",
       "name": "Dion Glover",
-      "team": "Toronto Raptors",
+      "team": "Atlanta Hawks",
       "status": "released",
       "current_contract_id": null,
       "recorded_agreements": 2,
@@ -1492,7 +1492,7 @@
       "name": "Fred Hoiberg",
       "team": "Minnesota Timberwolves",
       "status": "under contract",
-      "current_contract_id": "hoibefr01-2003-07-28",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/hoibefr01.html#contract"
     },
@@ -1994,7 +1994,7 @@
     {
       "player_id": "beaslje01",
       "name": "Jerome Beasley",
-      "team": "Free agent",
+      "team": "Miami Heat",
       "status": "renounced",
       "current_contract_id": null,
       "recorded_agreements": 1,
@@ -2291,7 +2291,7 @@
     {
       "player_id": "johnske03",
       "name": "Ken Johnson",
-      "team": "Free agent",
+      "team": "Miami Heat",
       "status": "team option declined",
       "current_contract_id": null,
       "recorded_agreements": 1,
@@ -2788,7 +2788,7 @@
       "name": "Marquis Daniels",
       "team": "Dallas Mavericks",
       "status": "under contract",
-      "current_contract_id": "daniema01-2003-07-29",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/daniema01.html#contract"
     },
@@ -3011,7 +3011,7 @@
     {
       "player_id": "jamesmi01",
       "name": "Mike James",
-      "team": "Miami Heat",
+      "team": "Boston Celtics",
       "status": "re signed",
       "current_contract_id": "jamesmi01-2003-07-17",
       "recorded_agreements": 2,
@@ -3166,7 +3166,7 @@
       "name": "Olden Polynice",
       "team": "Los Angeles Clippers",
       "status": "under contract",
-      "current_contract_id": "polynol01-2003-08-04",
+      "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/polynol01.html#contract"
     },
@@ -3749,7 +3749,7 @@
     {
       "player_id": "padgesc01",
       "name": "Scott Padgett",
-      "team": "Miami Heat",
+      "team": "Houston Rockets",
       "status": "camp contract",
       "current_contract_id": "padgesc01-2003-10-28",
       "recorded_agreements": 3,
@@ -3760,7 +3760,7 @@
       "name": "Scott Williams",
       "team": "Phoenix Suns",
       "status": "under contract",
-      "current_contract_id": "willisc01-2003-07-16",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/willisc01.html#contract"
     },
@@ -3796,7 +3796,7 @@
       "name": "Sean Rooks",
       "team": "New Orleans Hornets",
       "status": "under contract",
-      "current_contract_id": "rooksse01-2003-07-21",
+      "current_contract_id": null,
       "recorded_agreements": 2,
       "href": "players/rooksse01.html#contract"
     },
@@ -3866,7 +3866,7 @@
     {
       "player_id": "kempsh01",
       "name": "Shawn Kemp",
-      "team": "Miami Heat",
+      "team": "Orlando Magic",
       "status": "camp contract",
       "current_contract_id": "kempsh01-2003-09-30",
       "recorded_agreements": 2,
@@ -3938,7 +3938,7 @@
     {
       "player_id": "jacksst02",
       "name": "Stephen Jackson",
-      "team": "Miami Heat",
+      "team": "Atlanta Hawks",
       "status": "camp contract",
       "current_contract_id": "jacksst02-2003-10-03",
       "recorded_agreements": 3,

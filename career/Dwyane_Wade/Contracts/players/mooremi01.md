@@ -2,9 +2,9 @@
 
 # Contract | Mikki Moore
 
-Known through: 2004-06-27. [Open interactive contract](mooremi01.html#contract) · [Contract history](mooremi01.html#contract-history)
+Known through: 2004-07-04. [Open interactive contract](mooremi01.html#contract) · [Contract history](mooremi01.html#contract-history)
 
-Mikki Moore: under contract. Evidence cutoff: 2004-06-27.
+Mikki Moore: under contract. Evidence cutoff: 2004-07-04.
 
 ## Current contract
 
@@ -138,13 +138,13 @@ Eligibility and a reference amount do not establish a tendered qualifying offer 
 
 | Field | Recorded detail |
 | --- | --- |
-| Bird classification | non_bird |
-| Bird classification basis | last_free_agent_signing_or_waiver |
-| Recorded Bird-clock seasons | 1 |
+| Bird classification | Not recorded |
+| Bird classification basis | Not recorded |
+| Recorded Bird-clock seasons | Not recorded |
 | Restricted-free-agency eligibility | Not recorded |
 | Qualifying-offer reference amount | Not recorded |
 | Qualifying-offer basis | Not recorded |
-| Free-agent cap hold reference | $2,895,000 |
+| Free-agent cap hold reference | Not recorded |
 | Qualifying offer actually tendered | Not recorded |
 | Tender date | Not recorded |
 | Renounced | Not recorded |
@@ -361,3 +361,4 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.deseret.com/2003/7/1/19732311/basketball-nba-free-agents/)
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 - [Dated league rights evidence](../../../../library/2003/league/nba_2003_free_agent_rights.json)
+- [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
