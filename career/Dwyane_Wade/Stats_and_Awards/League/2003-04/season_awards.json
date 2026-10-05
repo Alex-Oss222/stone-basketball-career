@@ -364,6 +364,89 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2003-04-smoy",
+   "award": "smoy",
+   "name": "Sixth Man of the Year",
+   "announced_on": "2004-04-23",
+   "electorate": 120,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.1,
+    0.3
+   ],
+   "evidence_through": "2004-04-14",
+   "winners": [
+    "Hedo Turkoglu"
+   ],
+   "tally": [
+    {
+     "player": "Hedo Turkoglu",
+     "team": "San Antonio Spurs",
+     "games": 80,
+     "mpg": 26.1,
+     "pts": 9.6,
+     "reb": 4.7,
+     "ast": 2.0,
+     "stl": 1.4,
+     "blk": 0.5,
+     "game_score": 7.69,
+     "starts": 11,
+     "points": 502,
+     "first_place": 71,
+     "votes_by_place": [
+      71,
+      49,
+      0
+     ]
+    },
+    {
+     "player": "Josh Howard",
+     "team": "Dallas Mavericks",
+     "games": 67,
+     "mpg": 23.6,
+     "pts": 9.7,
+     "reb": 5.7,
+     "ast": 1.2,
+     "stl": 0.9,
+     "blk": 0.8,
+     "game_score": 7.93,
+     "starts": 8,
+     "points": 458,
+     "first_place": 49,
+     "votes_by_place": [
+      49,
+      71,
+      0
+     ]
+    },
+    {
+     "player": "Lucious Harris",
+     "team": "New Jersey Nets",
+     "games": 69,
+     "mpg": 23.9,
+     "pts": 9.7,
+     "reb": 3.1,
+     "ast": 2.8,
+     "stl": 0.8,
+     "blk": 0.1,
+     "game_score": 7.64,
+     "starts": 30,
+     "points": 120,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      120
+     ]
+    }
+   ]
   }
  ]
 }

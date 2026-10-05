@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-04-22",
+  "as_of": "2004-04-23",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-04-22"
+              "2004-04-23"
             ],
             [
               "Team",
@@ -64,7 +64,7 @@
           ],
           "rows": [
             [
-              "2004-04-22",
+              "2004-04-23",
               "Current checkpoint",
               "2004-04-21-milwaukee-bucks-at-miami-heat",
               "Recorded",
@@ -94,7 +94,7 @@
               }
             ],
             [
-              "2004-04-23",
+              "2004-05-07",
               "Staff rotation review",
               "Coaching staff (same rule for every player)",
               "Scheduled; a role request may be logged before it",
@@ -656,7 +656,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-22"
+          "value": "2004-04-23"
         },
         {
           "label": "Team",
@@ -1270,7 +1270,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-22"
+          "value": "2004-04-23"
         },
         {
           "label": "Team",
@@ -1937,7 +1937,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-22"
+          "value": "2004-04-23"
         },
         {
           "label": "Team",
@@ -2712,7 +2712,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-22"
+          "value": "2004-04-23"
         },
         {
           "label": "Team",
@@ -3296,7 +3296,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-22"
+          "value": "2004-04-23"
         },
         {
           "label": "Team",
@@ -3876,7 +3876,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-22"
+          "value": "2004-04-23"
         },
         {
           "label": "Team",
@@ -4465,7 +4465,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-22"
+          "value": "2004-04-23"
         },
         {
           "label": "Team",
@@ -5102,7 +5102,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-22"
+          "value": "2004-04-23"
         },
         {
           "label": "Team",
@@ -5119,7 +5119,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "91 closed game records in 2003-04 through 2004-04-22. Competitions remain separate.",
+      "summary": "91 closed game records in 2003-04 through 2004-04-23. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -6636,7 +6636,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-22"
+          "value": "2004-04-23"
         },
         {
           "label": "Team",

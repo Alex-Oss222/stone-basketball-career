@@ -35,24 +35,24 @@ Division winners take seeds 1 and 2; seeds 3 to 8 are the next six records. Ties
 ```
 EAST
   (1) Indiana Pacers           2
-  (8) New Orleans Hornets      0
+  (8) New Orleans Hornets      1
   (4) Miami Heat               0
   (5) Milwaukee Bucks          2
         conference semifinal: winners meet
   (3) Detroit Pistons          1
   (6) Toronto Raptors          1
   (2) New Jersey Nets          2
-  (7) Atlanta Hawks            0
+  (7) Atlanta Hawks            1
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
 WEST
   (1) Minnesota Timberwolves   2
   (8) Memphis Grizzlies        0
-  (4) Dallas Mavericks         2
+  (4) Dallas Mavericks         3
   (5) Denver Nuggets           0
         conference semifinal: winners meet
-  (3) San Antonio Spurs        2
+  (3) San Antonio Spurs        3
   (6) Golden State Warriors    0
   (2) Sacramento Kings         1
   (7) Los Angeles Lakers       1
@@ -65,13 +65,13 @@ WEST
 
 ### East: (1) Indiana Pacers vs (8) New Orleans Hornets
 
-Home court: Indiana Pacers. Series Indiana Pacers 2, New Orleans Hornets 0.
+Home court: Indiana Pacers. Series Indiana Pacers 2, New Orleans Hornets 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 17 | Indiana Pacers | New Orleans Hornets | New Orleans Hornets 85, Indiana Pacers 88 |
 | 2 | Tue Apr 20 | Indiana Pacers | New Orleans Hornets | New Orleans Hornets 77, Indiana Pacers 80 |
-| 3 | Fri Apr 23 | New Orleans Hornets | Indiana Pacers |  |
+| 3 | Fri Apr 23 | New Orleans Hornets | Indiana Pacers | Indiana Pacers 91, New Orleans Hornets 95 |
 | 4 | Sun Apr 25 | New Orleans Hornets | Indiana Pacers |  |
 | 5 | Tue Apr 27 | Indiana Pacers | New Orleans Hornets | if needed |
 | 6 | Thu Apr 29 | New Orleans Hornets | Indiana Pacers | if needed |
@@ -107,13 +107,13 @@ Home court: Detroit Pistons. Series Detroit Pistons 1, Toronto Raptors 1.
 
 ### East: (2) New Jersey Nets vs (7) Atlanta Hawks
 
-Home court: New Jersey Nets. Series New Jersey Nets 2, Atlanta Hawks 0.
+Home court: New Jersey Nets. Series New Jersey Nets 2, Atlanta Hawks 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 17 | New Jersey Nets | Atlanta Hawks | Atlanta Hawks 85, New Jersey Nets 115 |
 | 2 | Tue Apr 20 | New Jersey Nets | Atlanta Hawks | Atlanta Hawks 76, New Jersey Nets 87 |
-| 3 | Fri Apr 23 | Atlanta Hawks | New Jersey Nets |  |
+| 3 | Fri Apr 23 | Atlanta Hawks | New Jersey Nets | New Jersey Nets 83, Atlanta Hawks 96 |
 | 4 | Sun Apr 25 | Atlanta Hawks | New Jersey Nets |  |
 | 5 | Tue Apr 27 | New Jersey Nets | Atlanta Hawks | if needed |
 | 6 | Thu Apr 29 | Atlanta Hawks | New Jersey Nets | if needed |
@@ -135,13 +135,13 @@ Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 2, Memphis Gri
 
 ### West: (4) Dallas Mavericks vs (5) Denver Nuggets
 
-Home court: Dallas Mavericks. Series Dallas Mavericks 2, Denver Nuggets 0.
+Home court: Dallas Mavericks. Series Dallas Mavericks 3, Denver Nuggets 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 17 | Dallas Mavericks | Denver Nuggets | Denver Nuggets 104, Dallas Mavericks 105 |
 | 2 | Tue Apr 20 | Dallas Mavericks | Denver Nuggets | Denver Nuggets 89, Dallas Mavericks 104 |
-| 3 | Fri Apr 23 | Denver Nuggets | Dallas Mavericks |  |
+| 3 | Fri Apr 23 | Denver Nuggets | Dallas Mavericks | Dallas Mavericks 97, Denver Nuggets 89 |
 | 4 | Sun Apr 25 | Denver Nuggets | Dallas Mavericks |  |
 | 5 | Tue Apr 27 | Dallas Mavericks | Denver Nuggets | if needed |
 | 6 | Thu Apr 29 | Denver Nuggets | Dallas Mavericks | if needed |
@@ -149,13 +149,13 @@ Home court: Dallas Mavericks. Series Dallas Mavericks 2, Denver Nuggets 0.
 
 ### West: (3) San Antonio Spurs vs (6) Golden State Warriors
 
-Home court: San Antonio Spurs. Series San Antonio Spurs 2, Golden State Warriors 0.
+Home court: San Antonio Spurs. Series San Antonio Spurs 3, Golden State Warriors 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 17 | San Antonio Spurs | Golden State Warriors | Golden State Warriors 89, San Antonio Spurs 90 |
 | 2 | Tue Apr 20 | San Antonio Spurs | Golden State Warriors | Golden State Warriors 75, San Antonio Spurs 100 |
-| 3 | Fri Apr 23 | Golden State Warriors | San Antonio Spurs |  |
+| 3 | Fri Apr 23 | Golden State Warriors | San Antonio Spurs | San Antonio Spurs 99, Golden State Warriors 91 |
 | 4 | Sun Apr 25 | Golden State Warriors | San Antonio Spurs |  |
 | 5 | Tue Apr 27 | San Antonio Spurs | Golden State Warriors | if needed |
 | 6 | Thu Apr 29 | Golden State Warriors | San Antonio Spurs | if needed |
