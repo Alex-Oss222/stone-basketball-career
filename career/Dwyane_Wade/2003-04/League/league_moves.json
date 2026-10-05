@@ -2895,6 +2895,64 @@
    "contract": null,
    "note": "cleared waivers from Atlanta Hawks: a free agent",
    "waiver": "2003-04-market-2004-03-27-waive-hansetr01"
+  },
+  {
+   "id": "2003-04-market-2004-04-06-expire-dickeka01",
+   "date": "2004-04-06",
+   "kind": "expire",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-04-06-waive-huntebr01",
+   "date": "2004-04-06",
+   "kind": "waive",
+   "player": "Brandon Hunter",
+   "bbr_id": "huntebr01",
+   "from": "Boston Celtics",
+   "to": null,
+   "role": {
+    "player_id": "Brandon Hunter",
+    "bbr_id": "huntebr01",
+    "position": "PF",
+    "games": 36,
+    "minutes": 406
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-04-08"
+  },
+  {
+   "id": "2003-04-market-2004-04-06-ten_day-dickeka01",
+   "date": "2004-04-06",
+   "kind": "ten_day",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": null,
+   "to": "Boston Celtics",
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-04-14",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.74 x fit"
   }
  ],
  "market_days": [
@@ -2969,6 +3027,7 @@
   "2004-04-02",
   "2004-04-03",
   "2004-04-04",
-  "2004-04-05"
+  "2004-04-05",
+  "2004-04-06"
  ]
 }

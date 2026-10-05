@@ -8,7 +8,7 @@
 
 <!-- team-status:start -->
 
-**Status on 2004-04-05** (generated from dated records): Miami 44-33, 4th in the East ([standings](../../../../career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Standings.md)). 15 players under contract, 3 on the injured list. Head coach Erik Spoelstra; the staff rotation in force and the register are in [Team](Team/README.md).
+**Status on 2004-04-06** (generated from dated records): Miami 44-33, 4th in the East ([standings](../../../../career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Standings.md)). 15 players under contract, 3 on the injured list. Head coach Erik Spoelstra; the staff rotation in force and the register are in [Team](Team/README.md).
 
 <!-- team-status:end -->
 
