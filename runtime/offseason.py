@@ -19,7 +19,7 @@ For each real player, in this order:
    (salary, not an option) stays with his simulated club, as an assigned agreement; otherwise he is a free agent and
    signs where history signed him.
 6. **New to the league** (2004 draftees, returning or overseas players with no 2003-04 NBA club): his real club.
-   A 2004 draftee whose real pick Miami's choice displaced goes to the displaced club instead (`draft.py`).
+   A 2004 prospect drafted in the simulated draft (`draft.py`) goes to the club that drafted him.
 A player's real 2004-05 opening club is his first 2004-05 stint; a later real arrival is placed with that club from
 opening day (his games share keeps his real part of the season). Each club then keeps its fifteen largest real
 2004-05 roles (never letting go of a rookie-scale contract); the rest start in the free-agent pool, as at the
@@ -78,9 +78,8 @@ def miami_players(root=ROOT, on=SEASON_END):
     """Players simulated Miami holds (rule 2), including the draft rights it took on June 24 (`runtime/draft.py`)."""
     from .rotations import miami_holds
     held = set(miami_holds(OLD, on, root))
-    record = Path(root) / "career/Dwyane_Wade/2003-04/09_Draft/draft_2004.json"
-    if record.is_file() and on >= _read(record)["date"]:
-        held |= {c["bbr_id"] for c in _read(record)["choices"] if c.get("bbr_id")}
+    from .draft import miami_choices
+    held |= {c["bbr_id"] for c in miami_choices(root) if c.get("bbr_id")}
     return held
 
 
@@ -107,12 +106,9 @@ def continuing(root=ROOT, on=SEASON_END):
 
 
 def draft_swaps(root=ROOT):
-    """{bbr_id: club} for 2004 draftees placed by the draft's conflict rule (`runtime/draft.py`), else {}."""
-    try:
-        from .draft import displaced_rights
-    except ImportError:
-        return {}
-    return displaced_rights(root)
+    """{bbr_id: club} for every player the simulated 2004 draft gave to a club (`runtime/draft.py`), else {}."""
+    from .draft import drafted_clubs
+    return {b: c for b, c in drafted_clubs(root).items() if c != MIAMI}
 
 
 def placements(root=ROOT, on=SEASON_END):
@@ -132,7 +128,7 @@ def placements(root=ROOT, on=SEASON_END):
             continue
         r_open = role_new[0]
         if b in swaps:
-            out.append(dict(bbr_id=b, player_id=name, club=swaps[b], rule="6_draft_conflict", from_club=None))
+            out.append(dict(bbr_id=b, player_id=name, club=swaps[b], rule="6_drafted_in_the_simulated_draft", from_club=None))
         elif b in skip and s_club:
             out.append(dict(bbr_id=b, player_id=name, club=s_club, rule="3_real_miami_move_skipped", from_club=s_club))
         elif s_club is None:

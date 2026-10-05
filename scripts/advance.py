@@ -193,7 +193,12 @@ def playoff_day(day):
     draw()
     run("scripts/decide_awards.py", "--write", show=False)
     run("scripts/playoff_day.py", "--refresh", show=False)
-    run("scripts/offseason_day.py", "--write", day)
+    for _ in range(150):                                                # lottery draws and draft picks, one at a time
+        run("scripts/offseason_day.py", "--write", day, show=False)
+        if not draws_pending():
+            break
+        draw()
+    say("    " + run("scripts/offseason_day.py", "--write", day, show=False).splitlines()[0])
     run("scripts/playoff_day.py", "--build", day, show=False)
     problems = run("-c", "from runtime.game_requests import frozen_errors; print('\\n'.join(frozen_errors()))", show=False)
     if problems:

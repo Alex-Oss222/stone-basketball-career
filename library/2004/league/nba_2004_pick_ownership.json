@@ -1,0 +1,100 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "pick_ownership",
+ "draft": "2004",
+ "rule": "A 2004 pick belongs to the club that held it on the symmetric league's activation date (2003-12-03): every real trade link dated before that day and not involving real Miami applies; links on or after it are real moves the simulated clubs did not make (docs/symmetric_league_design.md), and the June 2004 Charlotte-Clippers swap of No. 2 for Nos. 4 and 33 is one of them. Ownership is by the original club's pick, whatever slot the simulated lottery and records give it.",
+ "status": "derived from library/2004/league/nba_2004_draft_class.json (pick_acquisition chains)",
+ "forfeited": {
+  "round_1": [
+   "MIN"
+  ],
+  "note": "Minnesota's 2004 first-round pick was forfeited by league sanction (2000), before the career; it applies."
+ },
+ "expansion": {
+  "club": "CHA",
+  "round_1_slot": 4,
+  "round_2_slot": 33,
+  "note": "Charlotte holds No. 4 in each round by expansion terms (sourced in the draft class file) and does not enter the lottery."
+ },
+ "round_1": {
+  "LAC": {
+   "owner": "LAC"
+  },
+  "CHA": {
+   "owner": "CHA"
+  },
+  "NYK": {
+   "owner": "NYK"
+  },
+  "MIL": {
+   "owner": "DET"
+  },
+  "HOU": {
+   "owner": "UTA"
+  },
+  "MEM": {
+   "owner": "MEM"
+  },
+  "DAL": {
+   "owner": "BOS"
+  },
+  "DET": {
+   "owner": "DET"
+  }
+ },
+ "round_2": {
+  "CHA": {
+   "owner": "CHA"
+  },
+  "LAC": {
+   "owner": "SEA"
+  },
+  "PHO": {
+   "owner": "PHO"
+  },
+  "PHI": {
+   "owner": "ATL"
+  },
+  "TOR": {
+   "owner": "CHI"
+  },
+  "CLE": {
+   "owner": "TOR"
+  },
+  "GSW": {
+   "owner": "PHI"
+  },
+  "MIL": {
+   "owner": "MIL"
+  },
+  "UTA": {
+   "owner": "SAC"
+  },
+  "DEN": {
+   "owner": "MEM"
+  },
+  "HOU": {
+   "owner": "DAL"
+  },
+  "MEM": {
+   "owner": "SAS"
+  },
+  "DAL": {
+   "owner": "MIA"
+  },
+  "SAC": {
+   "owner": "HOU"
+  }
+ },
+ "notes": {
+  "16": "NYK keeps its 1st: NYK->PHO (Jan 5, 2004) and PHO->UTA (Feb 19, 2004) are after activation.",
+  "17": "MIL's 1st is Detroit's (MIL->DEN 2001, DEN->DET 2002); DET->ATL (Feb 2004) is after activation.",
+  "23": "MEM keeps its 1st: the Wesley Person/Bonzi Wells trade is dated on the activation day itself.",
+  "25": "DET keeps its own 1st: the Feb 2004 Rasheed Wallace trade is after activation.",
+  "36": "PHO keeps its 2nd: PHO->ORL (Dec 23, 2003) is after activation.",
+  "42": "GSW's 2nd is Philadelphia's (June 26, 2002); PHI->ORL (Dec 23, 2003) is after activation.",
+  "45": "MIL keeps its 2nd: MIL->CHA (June 23, 2004) is after activation.",
+  "53": "DAL's 2nd is Miami's (Aug 22, 2001 Tim Hardaway trade, before the career)."
+ }
+}

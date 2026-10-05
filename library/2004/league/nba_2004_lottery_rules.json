@@ -1,0 +1,240 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "lottery_rules",
+ "draft": "2004",
+ "lottery_date": "2004-05-26",
+ "purpose": "Rules of the 2004 draft lottery (rules only; the real result is never used). runtime/lottery.py applies them to the simulated league.",
+ "lottery_clubs": 13,
+ "picks_drawn": 3,
+ "combinations_by_seed": [
+  250,
+  200,
+  157,
+  120,
+  89,
+  64,
+  44,
+  29,
+  18,
+  11,
+  7,
+  6,
+  5
+ ],
+ "combinations_status": "seed 1 = 250 and seed 13 = 5 and the 20.00% / 15.70% chances of seeds 2-3 sourced (NBA.com 2004); the rest derived from NBA.com's 2002-2004 odds tables",
+ "ties": "Tied clubs split the combinations of the seeds they occupy evenly; an uneven remainder and the order of tied clubs that do not win a top-3 pick are settled by a drawing (sourced). In the second round tied clubs pick in the opposite order (derived from the 2003 draft).",
+ "after_the_lottery": "Clubs that do not win a top-3 pick choose in reverse order of record; with Charlotte fixed at No. 4 a club can fall at most four places (sourced). Playoff clubs follow in reverse order of record (non-lottery ties by drawing); the second round is in reverse order of record, unaffected by the lottery (sourced).",
+ "research": {
+  "topic": "NBA draft lottery rules in force for the 2004 draft lottery (May 26, 2004)",
+  "scope_note": "Rules only. Real 2004 lottery results, real 2003-04 records, real seedings, real tie-break outcomes and real draft order are deliberately omitted (hindsight). Several cited pages also contain those results; the caller must not import them.",
+  "event": {
+   "date": "2004-05-26",
+   "place": "NBA Entertainment Studios, Secaucus, New Jersey",
+   "edition": "20th annual NBA Draft Lottery",
+   "draft_date": "2004-06-24",
+   "status": "sourced",
+   "source": "https://www.nba.com/features/lottery2004_details.html (archived: https://web.archive.org/web/2008/http://www.nba.com/features/lottery2004_details.html)"
+  },
+  "participants": {
+   "rule": "All clubs that missed the 2004 playoffs. The league had 29 playing clubs in 2003-04 and 16 made the playoffs, so 13 clubs took part.",
+   "lottery_club_count": 13,
+   "status": "sourced",
+   "quote": "Prior to the Lottery, 1,000 combinations will be assigned to the 13 participating Lottery teams by a computer.",
+   "source": "https://www.nba.com/features/lottery2004_details.html (archived: https://web.archive.org/web/2008/http://www.nba.com/features/lottery2004_details.html)"
+  },
+  "charlotte_expansion": {
+   "rule": "The Charlotte Bobcats (expansion club, first season 2004-05) were assigned the No. 4 selection in the 2004 draft by their expansion agreement and did not take part in the lottery. The lottery still drew only picks 1-3; the 13 lottery clubs filled picks 1-3 and 5-14.",
+   "quote": "The Charlotte Bobcats have already been assigned the fourth selection in the 2004 NBA Draft and will not participate in the 2004 NBA Draft Lottery. The results of the lottery will therefore determine selections 1-3 and 5-14.",
+   "status": "sourced",
+   "sources": [
+    "https://www.nba.com/features/lottery2004_details.html (archived: https://web.archive.org/web/2008/http://www.nba.com/features/lottery2004_details.html)",
+    "https://www.deseret.com/2002/12/21/19695058/draft-rules-favorable-for-charlotte-franchise/ (Dec 21, 2002: 'will have the fourth overall pick in the 2004 draft'; eligible for No. 1 pick in 2005 and 2006)",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "consequence": "Because No. 4 is taken, a lottery club can fall up to four places (not three) from its seed: seed 1 no lower than 5th, seed 2 no lower than 6th, seed 3 no lower than 7th (stated by NBA.com); in general seed k no lower than min(k+4, 14) (derived).",
+   "second_round": {
+    "rule": "Charlotte also held a second-round pick, No. 33 overall, i.e. 4th in the 2004 second round (the first round had 29 picks because of Minnesota's forfeit, so round 2 began at No. 30).",
+    "status": "derived",
+    "note": "No. 33 being Charlotte's own pick is stated in the June 21, 2004 Clippers-Bobcats trade description; that it was fixed by the expansion agreement as the 4th second-round slot is unverified.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/2004_NBA_draft",
+     "https://www.nba.com/hornets/news/acquire_number_two_pick_062104.html"
+    ]
+   }
+  },
+  "mechanics": {
+   "rule": "14 ping-pong balls numbered 1-14; four drawn; 1,001 combinations regardless of order; 1,000 assigned to the 13 lottery clubs by computer, the one unassigned combination (11-12-13-14 per Wikipedia) is redrawn. Draw for No. 1, balls returned, repeat for No. 2 and No. 3; a combination belonging to a club that already won a pick is ignored and redrawn.",
+   "status": "sourced",
+   "quote": "Four balls will be drawn to the top to determine a four-digit combination... The four balls are placed back in the drum and the process is repeated to determine the number two and three picks. (Note: If the one unassigned combination is drawn, the balls are drawn to the top again.)",
+   "sources": [
+    "https://www.nba.com/features/lottery2004_details.html (archived: https://web.archive.org/web/2008/http://www.nba.com/features/lottery2004_details.html)",
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery"
+   ],
+   "redraw_same_club_status": "sourced (Wikipedia general description; implied by NBA.com's 'can pick no lower than' guarantees)"
+  },
+  "combination_table_13_clubs": {
+   "seeds_worst_first": [
+    {
+     "seed": 1,
+     "combinations": 250,
+     "chance_no1": 0.25,
+     "lowest_possible_pick": 5,
+     "status": "sourced",
+     "note": "NBA.com 2004 How It Works: worst record assigned 250 combinations; can pick no lower than fifth."
+    },
+    {
+     "seed": 2,
+     "combinations": 200,
+     "chance_no1": 0.2,
+     "lowest_possible_pick": 6,
+     "status": "derived",
+     "note": "Combination count read from NBA.com Year-by-Year Lottery Probabilities (13-team tables 2002-2004, untied seeds; tied seeds there show the averaged split). Lowest pick = seed+4 capped at 14 because Charlotte holds No. 4. NBA.com 2004 How It Works: second seed 20.00% for No. 1, no lower than sixth."
+    },
+    {
+     "seed": 3,
+     "combinations": 157,
+     "chance_no1": 0.157,
+     "lowest_possible_pick": 7,
+     "status": "derived",
+     "note": "Combination count read from NBA.com Year-by-Year Lottery Probabilities (13-team tables 2002-2004, untied seeds; tied seeds there show the averaged split). Lowest pick = seed+4 capped at 14 because Charlotte holds No. 4. NBA.com 2004 How It Works: third seed 15.70% for No. 1, no lower than seventh."
+    },
+    {
+     "seed": 4,
+     "combinations": 120,
+     "chance_no1": 0.12,
+     "lowest_possible_pick": 8,
+     "status": "derived",
+     "note": "Combination count read from NBA.com Year-by-Year Lottery Probabilities (13-team tables 2002-2004, untied seeds; tied seeds there show the averaged split). Lowest pick = seed+4 capped at 14 because Charlotte holds No. 4."
+    },
+    {
+     "seed": 5,
+     "combinations": 89,
+     "chance_no1": 0.089,
+     "lowest_possible_pick": 9,
+     "status": "derived",
+     "note": "Combination count read from NBA.com Year-by-Year Lottery Probabilities (13-team tables 2002-2004, untied seeds; tied seeds there show the averaged split). Lowest pick = seed+4 capped at 14 because Charlotte holds No. 4."
+    },
+    {
+     "seed": 6,
+     "combinations": 64,
+     "chance_no1": 0.064,
+     "lowest_possible_pick": 10,
+     "status": "derived",
+     "note": "Combination count read from NBA.com Year-by-Year Lottery Probabilities (13-team tables 2002-2004, untied seeds; tied seeds there show the averaged split). Lowest pick = seed+4 capped at 14 because Charlotte holds No. 4."
+    },
+    {
+     "seed": 7,
+     "combinations": 44,
+     "chance_no1": 0.044,
+     "lowest_possible_pick": 11,
+     "status": "derived",
+     "note": "Combination count read from NBA.com Year-by-Year Lottery Probabilities (13-team tables 2002-2004, untied seeds; tied seeds there show the averaged split). Lowest pick = seed+4 capped at 14 because Charlotte holds No. 4."
+    },
+    {
+     "seed": 8,
+     "combinations": 29,
+     "chance_no1": 0.029,
+     "lowest_possible_pick": 12,
+     "status": "derived",
+     "note": "Combination count read from NBA.com Year-by-Year Lottery Probabilities (13-team tables 2002-2004, untied seeds; tied seeds there show the averaged split). Lowest pick = seed+4 capped at 14 because Charlotte holds No. 4."
+    },
+    {
+     "seed": 9,
+     "combinations": 18,
+     "chance_no1": 0.018,
+     "lowest_possible_pick": 13,
+     "status": "derived",
+     "note": "Combination count read from NBA.com Year-by-Year Lottery Probabilities (13-team tables 2002-2004, untied seeds; tied seeds there show the averaged split). Lowest pick = seed+4 capped at 14 because Charlotte holds No. 4."
+    },
+    {
+     "seed": 10,
+     "combinations": 11,
+     "chance_no1": 0.011,
+     "lowest_possible_pick": 14,
+     "status": "derived",
+     "note": "Combination count read from NBA.com Year-by-Year Lottery Probabilities (13-team tables 2002-2004, untied seeds; tied seeds there show the averaged split). Lowest pick = seed+4 capped at 14 because Charlotte holds No. 4."
+    },
+    {
+     "seed": 11,
+     "combinations": 7,
+     "chance_no1": 0.007,
+     "lowest_possible_pick": 14,
+     "status": "derived",
+     "note": "Combination count read from NBA.com Year-by-Year Lottery Probabilities (13-team tables 2002-2004, untied seeds; tied seeds there show the averaged split). Lowest pick = seed+4 capped at 14 because Charlotte holds No. 4."
+    },
+    {
+     "seed": 12,
+     "combinations": 6,
+     "chance_no1": 0.006,
+     "lowest_possible_pick": 14,
+     "status": "derived",
+     "note": "Combination count read from NBA.com Year-by-Year Lottery Probabilities (13-team tables 2002-2004, untied seeds; tied seeds there show the averaged split). Lowest pick = seed+4 capped at 14 because Charlotte holds No. 4."
+    },
+    {
+     "seed": 13,
+     "combinations": 5,
+     "chance_no1": 0.005,
+     "lowest_possible_pick": 14,
+     "status": "sourced",
+     "note": "NBA.com 2004 How It Works: best lottery team has five combinations out of 1,000 (0.50%)."
+    }
+   ],
+   "total": 1000,
+   "status": "derived",
+   "derivation": "Seed 1 = 250 and seed 13 = 5 and the 2004 No. 1 chances of seeds 2 and 3 (20.00%, 15.70%) are stated in NBA.com's 2004 How It Works. The full untied 13-club sequence 250-200-157-120-89-64-44-29-18-11-7-6-5 (sum 1,000) is read from NBA.com's Year-by-Year Lottery Probabilities 2002-2004 tables; every tied pair there equals the average of these seed values (e.g. a tie at seeds 1-2 gives 225 each in 2002 and 2003).",
+   "sources": [
+    "https://www.nba.com/features/lottery2004_details.html (archived: https://web.archive.org/web/2008/http://www.nba.com/features/lottery2004_details.html)",
+    "https://www.nba.com/history/lottery_probabilities.html (archived: https://web.archive.org/web/20121104090733/http://www.nba.com/history/lottery_probabilities.html)"
+   ],
+   "correction_to_brief": "The table 250, 199, 156, 119, 88, 63, 43, 28, 17, 11, 8, 7, 6 (+5) is the 14-club table used from 2005 to 2018. It does NOT apply to 2004. With only 13 lottery clubs in 1995-2004 there was no 14th share: the 1,000 combinations were spread 250, 200, 157, 120, 89, 64, 44, 29, 18, 11, 7, 6, 5.",
+   "correction_status": "derived",
+   "chances_no2_no3": "NBA.com also published No. 2/No. 3 chances per club; these follow from the drawing procedure (sequential draw without the previous winners) and can be computed from the combination counts."
+  },
+  "ties": {
+   "rule": "Clubs with identical records split the combinations of the seeds they occupy equally (average). If the average is not an integer, a random drawing / coin flip decides which club gets the extra combination. That same drawing decides which tied club picks earlier if neither wins a top-3 pick, and the order of the tied clubs is reversed in the second round.",
+   "status": "sourced (averaging and drawing); derived (second-round reversal)",
+   "timing": "Ties were broken by random drawing shortly after the regular season (the 2004 drawings were held April 15, 2004, before the May 26 lottery).",
+   "timing_status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery",
+    "https://wikipedia.classicistranieri.com/en/articles/n/b/a/NBA_Draft_Lottery_0357.html (c.2006 Wikipedia copy, same wording: coin flip for extra combination and for earlier pick)",
+    "https://www.heraldnet.com/?p=403982 (Everett Herald, April 15, 2004: tie decided by coin toss)",
+    "https://www.nbcsports.com/nba/news/draft-ties-broken-let-lotto-fever-begin"
+   ],
+   "second_round_reversal_evidence": "2003 draft (prior year, same rules): two clubs tied at 37-45 picked 9th and 10th in round 1 and in the opposite order (38th, 39th) in round 2 (https://en.wikipedia.org/wiki/2003_NBA_draft). Wikipedia's general rule text describes the same reversal (2020 example). No 2004-specific rule text found: status derived.",
+   "ties_among_playoff_clubs": "Ties among non-lottery clubs (picks 15-29) were also broken by random drawing; status sourced for drawings in general (NBC Sports/NBA.com 'ties broken' notices), derived for exact application to playoff clubs."
+  },
+  "no_drop_more_than": {
+   "rule": "Clubs not winning a top-3 pick select in inverse order of regular-season record after the three winners. Normally this means no club falls more than three places; in 2004, because Charlotte held No. 4, the non-winners filled picks 5-14, so a club could fall up to four places.",
+   "quote": "The order of selection for the teams that do not win one of the top three picks will be determined by inverse order of their regular season record. Thus, Orlando can pick no lower than fifth, Chicago (23-59) no lower than sixth and Washington (25-57) no lower than seventh.",
+   "status": "sourced",
+   "sources": [
+    "https://www.nba.com/features/lottery2004_details.html (archived: https://web.archive.org/web/2008/http://www.nba.com/features/lottery2004_details.html)",
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery"
+   ]
+  },
+  "non_lottery_and_second_round": {
+   "first_round_15_on": "Playoff clubs pick after the lottery in inverse order of regular-season record (playoff results do not matter), ties by random drawing. In 2004 these were picks 15-29: Minnesota's 2004 first-round pick was forfeited (salary-cap violation penalty from the Joe Smith case, Oct 2000), so the first round had 29 selections.",
+   "first_round_status": "sourced (inverse record: NBA.com/Wikipedia; Minnesota forfeit: Wikipedia 2004 draft citing NBA.com)",
+   "second_round": "All 29 existing clubs plus Charlotte pick in inverse order of regular-season record; the lottery does not affect round 2 (a lottery winner picks in round 2 at its record position). Tied clubs reverse their round-1 order. Charlotte's 2004 second-round slot was No. 33 (4th in round 2).",
+   "second_round_status": "sourced (inverse record, lottery not applied: NBC Sports/NBA explainer); derived (tie reversal, Charlotte slot)",
+   "sources": [
+    "https://www.nbcsports.com/nba/news/draft-ties-broken-let-lotto-fever-begin",
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft",
+    "https://www.nba.com/news/smith_wolves_001025.html"
+   ]
+  },
+  "traded_picks": {
+   "rule": "A traded lottery pick keeps the original club's seed and combinations; a non-playoff club holding another lottery club's pick gets both seeds' combinations.",
+   "status": "sourced",
+   "source": "https://en.wikipedia.org/wiki/NBA_draft_lottery"
+  },
+  "larry_coon_cbafaq": {
+   "status": "unverified",
+   "note": "Coon's Salary Cap FAQ (2004 edition, archived members.cox.net/lmcoon/salarycap.htm; current www.cbafaq.com) covers draft-pick trading (5-year limit, Stepien rule, protections) but does not describe lottery odds, tie-breaks or draft order; the lottery is governed by the NBA (Board of Governors), not the CBA. Nothing taken from it."
+  },
+  "hindsight_warning": "NBA.com How It Works (2004), NBA.com Year-by-Year Probabilities, Wikipedia 2004 NBA draft, the Everett Herald and NBC Sports pages contain the real 2003-04 records, tie-break winners and lottery winners. None of those results is recorded here."
+ }
+}
