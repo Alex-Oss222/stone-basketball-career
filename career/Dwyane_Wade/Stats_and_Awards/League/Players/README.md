@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-03-05**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-03-07**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -271,7 +271,7 @@ Card date: **2004-03-05**. 504 registry players, one Markdown card and one inter
 | [Matt Barnes](barnema02.md) | Los Angeles Clippers | None | silhouette | [open](barnema02.html) |
 | [Matt Harpring](harprma01.md) | Utah Jazz | 27 | sourced | [open](harprma01.html) |
 | [Michael Curry](currymi01.md) | Toronto Raptors | 35 | silhouette | [open](currymi01.html) |
-| [Michael Finley](finlemi01.md) | Dallas Mavericks | 30 | sourced | [open](finlemi01.html) |
+| [Michael Finley](finlemi01.md) | Dallas Mavericks | 31 | sourced | [open](finlemi01.html) |
 | [Michael Jordan](jordami01.md) | Washington Wizards | 41 | sourced | [open](jordami01.html) |
 | [Mike Dunleavy](dunlemi02.md) | Golden State Warriors | 23 | sourced | [open](dunlemi02.html) |
 | [Mike Miller](millemi01.md) | Memphis Grizzlies | None | silhouette | [open](millemi01.html) |
@@ -478,7 +478,7 @@ Card date: **2004-03-05**. 504 registry players, one Markdown card and one inter
 | [Etan Thomas](thomaet01.md) | Washington Wizards | None | silhouette | [open](thomaet01.html) |
 | [Evan Eschmeyer](eschmev01.md) | Golden State Warriors | 28 | silhouette | [open](eschmev01.html) |
 | [Francisco Elson](elsonfr01.md) | Denver Nuggets | None | silhouette | [open](elsonfr01.html) |
-| [Greg Ostertag](ostergr01.md) | Utah Jazz | 30 | sourced | [open](ostergr01.html) |
+| [Greg Ostertag](ostergr01.md) | Utah Jazz | 31 | sourced | [open](ostergr01.html) |
 | [Jabari Smith](smithja01.md) | Sacramento Kings | None | silhouette | [open](smithja01.html) |
 | [Jahidi White](whiteja01.md) | Washington Wizards | 28 | silhouette | [open](whiteja01.html) |
 | [Jake Tsakalidis](tsakaja01.md) | Memphis Grizzlies | 24 | sourced | [open](tsakaja01.html) |
@@ -534,7 +534,7 @@ Card date: **2004-03-05**. 504 registry players, one Markdown card and one inter
 | [Scot Pollard](pollasc01.md) | Indiana Pacers | 29 | sourced | [open](pollasc01.html) |
 | [Scott Williams](willisc01.md) | Phoenix Suns | 35 | sourced | [open](willisc01.html) |
 | [Sean Rooks](rooksse01.md) | New Orleans Hornets | 34 | sourced | [open](rooksse01.html) |
-| [Shaquille O'Neal](onealsh01.md) | Los Angeles Lakers | 31 | sourced | [open](onealsh01.html) |
+| [Shaquille O'Neal](onealsh01.md) | Los Angeles Lakers | 32 | sourced | [open](onealsh01.html) |
 | [Shawn Bradley](bradlsh01.md) | Dallas Mavericks | 31 | sourced | [open](bradlsh01.html) |
 | [Shawn Kemp](kempsh01.md) | Miami Heat | 34 | sourced | [open](kempsh01.html) |
 | [Slavko Vranes](vranesl01.md) | New York Knicks | 21 | sourced | [open](vranesl01.html) |

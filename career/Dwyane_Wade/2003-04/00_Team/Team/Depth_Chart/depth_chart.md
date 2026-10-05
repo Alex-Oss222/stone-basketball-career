@@ -1,13 +1,13 @@
 # Miami Heat working depth chart
 
-**As of:** 2004-03-05 · **Staff decision in force:** 2004-02-27 (fortnightly review)  
+**As of:** 2004-03-07 · **Staff decision in force:** 2004-02-27 (fortnightly review)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
 | PG | Mike James (starter) | Anthony Carter |  |  |
-| SG | Dwyane Wade (starter, on the injured list) | Stephen Jackson | Eddie Jones | Rasual Butler |
-| SF | Caron Butler (starter) | Sean Lampley |  |  |
+| SG | Dwyane Wade (starter) | Stephen Jackson | Eddie Jones | Rasual Butler |
+| SF | Caron Butler (starter) | Sean Lampley (injured list) |  |  |
 | PF | Scott Padgett (starter) | LaPhonso Ellis | John Wallace (injured list) | Udonis Haslem (injured list) |
 | C | Shawn Kemp (starter) | Brian Grant | Cherokee Parks |  |
 
@@ -16,7 +16,7 @@
 | Player | Slot | Minutes | Starter |
 |---|---|---:|---|
 | Mike James | PG | 34 | yes |
-| Dwyane Wade | SG | 34 | yes, on the injured list |
+| Dwyane Wade | SG | 34 | yes |
 | Caron Butler | SF | 34 | yes |
 | Scott Padgett | PF | 34 | yes |
 | Shawn Kemp | C | 34 | yes |
@@ -29,9 +29,9 @@
 
 Outside the rotation (dressing as the twelfth man or on the injured list): Rasual Butler, Sean Lampley, Udonis Haslem, John Wallace.
 
-## Injured list on 2004-03-05
+## Injured list on 2004-03-07
 
-Dwyane Wade, John Wallace, Udonis Haslem ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
+John Wallace, Sean Lampley, Udonis Haslem ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 
 ## Not on the active register
 
