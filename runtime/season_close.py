@@ -16,6 +16,12 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def _active_season(root=None):
+    """The career's live season (runtime/seasons.py), read from the repository a call works on."""
+    from .seasons import active
+    return active(root or ROOT)
 SEASON = "2003-04"
 PLAYER = Path("career/Dwyane_Wade")
 
@@ -24,7 +30,8 @@ def _read(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
-def path(season=SEASON, root=ROOT):
+def path(season=None, root=ROOT):
+    season = season or _active_season(root)
     return Path(root) / PLAYER / season / "season_close.json"
 
 
@@ -42,8 +49,9 @@ def wade_contract(root=ROOT):
     return signed[-1]["contract"] if signed else None
 
 
-def build(season=SEASON, root=ROOT, on=None):
+def build(season=None, root=ROOT, on=None):
     """The season-close record for `on` (default: the Finals' clinching date), or None if the season is still open."""
+    season = season or _active_season(root)
     from .career_stats import aggregate, collect_games, select
     from .incentives import evaluate, earned_honors
     from .season_games import season_games
@@ -72,8 +80,9 @@ def build(season=SEASON, root=ROOT, on=None):
     }
 
 
-def close(season=SEASON, root=ROOT, write=True):
+def close(season=None, root=ROOT, write=True):
     """Write the record and the standing snapshot once the Finals are over and the clock has reached them."""
+    season = season or _active_season(root)
     from .write_back import clock
     from . import standing
     root = Path(root)
@@ -99,9 +108,10 @@ def close(season=SEASON, root=ROOT, write=True):
     return record
 
 
-def feedback(root=ROOT, season=SEASON, next_season="2004-05", on=None):
+def feedback(root=ROOT, season=None, next_season="2004-05", on=None):
     """Real players' capped 20% feedback for the next season (`trajectories.season_feedback`) from every closed
     regular-season result of the season: each player's box lines against the rates the engine expected for him."""
+    season = season or _active_season(root)
     from .player_stats import SEASON_SOURCES, read_json
     from .trajectories import load_trajectories, season_feedback
     from .write_back import _key, bbr_lookup, closed_results, game_records, registry

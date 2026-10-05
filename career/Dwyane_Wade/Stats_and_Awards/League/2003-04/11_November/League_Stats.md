@@ -8,7 +8,7 @@ NBA regular season · November 1-30, 2003
 
 ## Leaders
 
-Period comparison among registry players with at least one appearance in this scope; G is shown with each value. These are not official season leaders: 2003-04 qualification rules are not applied.
+Period comparison among registry players with at least one appearance in this scope; G is shown with each value. These are not official season leaders: the season's qualification rules are not applied.
 
 | Category | 1 | 2 | 3 |
 | --- | --- | --- | --- |

@@ -45,7 +45,7 @@ def main():
         for row in record["seeds"][conf]:
             print(f"  {row['seed']}. {row['club']} {row['wins']}-{row['losses']}{'  division winner' if row['division_winner'] else ''}")
     if args.write:
-        print(f"written: {playoffs.RECORD} and {playoffs.PAGE}")
+        print(f"written: {playoffs.record_path(record['season'])} and {playoffs.page_path(record['season'])}")
     return 0
 
 

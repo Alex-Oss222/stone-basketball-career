@@ -2,12 +2,12 @@
 
 The playoffs are a separate statistical record from the regular season (AGENTS.md, Stats and awards): these pages
 read only `game_type == "playoff"` results — Miami's from its played notes under `08_Playoffs/<Round>/`, the league's
-from `Stats_and_Awards/League/2003-04/Playoffs/Games/` — and never mix them into a regular-season page. Each game
+from `Stats_and_Awards/League/<season>/Playoffs/Games/` — and never mix them into a regular-season page. Each game
 counts once. Pages are generated whole (no template) and checked by validation against a fresh build:
 
-- `Stats_and_Awards/League/2003-04/Playoffs/Playoff_Stats.md`: every player with a playoff game, by club (clubs in
+- `Stats_and_Awards/League/<season>/Playoffs/Playoff_Stats.md`: every player with a playoff game, by club (clubs in
   order of playoff wins), per-game production and shooting totals; then a table per round.
-- `Stats_and_Awards/Team/2003-04/Playoffs/Team_Playoff_Stats.md`: Miami's record by round and its players.
+- `Stats_and_Awards/Team/<season>/Playoffs/Team_Playoff_Stats.md`: Miami's record by round and its players.
 
 Percentages are recomputed from summed makes and attempts (`career_stats.aggregate`).
 """
@@ -20,10 +20,21 @@ from pathlib import Path
 from .career_stats import aggregate
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
+
+
+def _active_season(root=None):
+    """The career's live season (runtime/seasons.py), read from the repository a call works on."""
+    from .seasons import active
+    return active(root or ROOT)
 PLAYER_DIR = Path("career/Dwyane_Wade")
-LEAGUE_PAGE = PLAYER_DIR / f"Stats_and_Awards/League/{SEASON}/Playoffs/Playoff_Stats.md"
-TEAM_PAGE = PLAYER_DIR / f"Stats_and_Awards/Team/{SEASON}/Playoffs/Team_Playoff_Stats.md"
+
+
+def league_page_path(season):
+    return PLAYER_DIR / f"Stats_and_Awards/League/{season}/Playoffs/Playoff_Stats.md"
+
+
+def team_page_path(season):
+    return PLAYER_DIR / f"Stats_and_Awards/Team/{season}/Playoffs/Team_Playoff_Stats.md"
 MIAMI = "Miami Heat"
 ROUND_LABELS = {"first_round": "First round", "conference_semifinals": "Conference semifinals",
                 "conference_finals": "Conference finals", "finals": "NBA Finals"}
@@ -34,8 +45,9 @@ def _read(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
-def closed_playoff_results(root=ROOT, season=SEASON, now=None):
+def closed_playoff_results(root=ROOT, season=None, now=None):
     """Closed playoff results dated on or before the clock: [{result, request, note, source}] in date order."""
+    season = season or _active_season(root)
     from .write_back import clock, miami_notes
     root = Path(root)
     now = now or clock(root)
@@ -77,8 +89,9 @@ def _round_of(record):
     return out
 
 
-def player_lines(rows, root=ROOT, season=SEASON):
+def player_lines(rows, root=ROOT, season=None):
     """{(name, club): [career_stats records]} with each record's competition set to "playoff"."""
+    season = season or _active_season(root)
     from .write_back import game_records
     from .award_decisions import registry_names
     names = registry_names(root)
@@ -122,12 +135,13 @@ def _section(lines, keep=lambda rec: True, clubs_order=None):
     return [_row(name, club, s) for club, name, s in rows]
 
 
-def league_page(root=ROOT, season=SEASON, now=None):
+def league_page(root=ROOT, season=None, now=None):
+    season = season or _active_season(root)
     from .playoffs import read
     from .write_back import clock
     root = Path(root)
     now = now or clock(root)
-    record = read(root)
+    record = read(root, season)
     rows = closed_playoff_results(root, season, now)
     lines = player_lines(rows, root, season)
     rounds = _round_of(record)
@@ -152,18 +166,19 @@ def league_page(root=ROOT, season=SEASON, now=None):
     return "\n".join(out).rstrip() + "\n"
 
 
-def team_page(root=ROOT, season=SEASON, now=None):
+def team_page(root=ROOT, season=None, now=None):
+    season = season or _active_season(root)
     from .playoffs import read
     from .write_back import clock
     root = Path(root)
     now = now or clock(root)
-    record = read(root)
+    record = read(root, season)
     rows = [r for r in closed_playoff_results(root, season, now) if MIAMI in (r["result"]["home"], r["result"]["away"])]
     lines = {k: v for k, v in player_lines(rows, root, season).items() if k[1] == MIAMI}
     out = [f"# Miami Heat {season} playoff statistics", "",
            f"Through {now}: {len(rows)} closed Miami playoff game(s). Playoff games only (`runtime/playoff_stats.py`). "
-           "[League playoff statistics](../../../League/2003-04/Playoffs/Playoff_Stats.md) · "
-           "[bracket](../../../League/2003-04/Playoffs.md).", ""]
+           f"[League playoff statistics](../../../League/{season}/Playoffs/Playoff_Stats.md) · "
+           f"[bracket](../../../League/{season}/Playoffs.md).", ""]
     series = [s for s in (record or {}).get("series", []) if MIAMI in s["clubs"]]
     if series:
         srows = []
@@ -189,16 +204,18 @@ def team_page(root=ROOT, season=SEASON, now=None):
     return "\n".join(out).rstrip() + "\n"
 
 
-def pages(root=ROOT, season=SEASON, now=None):
+def pages(root=ROOT, season=None, now=None):
     """{path: text} for both pages, or {} before the playoffs are seeded."""
+    season = season or _active_season(root)
     from .playoffs import read
     root = Path(root)
     if read(root) is None:
         return {}
-    return {root / LEAGUE_PAGE: league_page(root, season, now), root / TEAM_PAGE: team_page(root, season, now)}
+    return {root / league_page_path(season): league_page(root, season, now), root / team_page_path(season): team_page(root, season, now)}
 
 
-def write_pages(root=ROOT, season=SEASON):
+def write_pages(root=ROOT, season=None):
+    season = season or _active_season(root)
     changed = 0
     for path, text in pages(root, season).items():
         if not path.is_file() or path.read_text(encoding="utf-8") != text:
@@ -208,7 +225,8 @@ def write_pages(root=ROOT, season=SEASON):
     return changed
 
 
-def page_errors(root=ROOT, season=SEASON):
+def page_errors(root=ROOT, season=None):
+    season = season or _active_season(root)
     root = Path(root)
     return [f"{path.relative_to(root)}: stale playoff statistics page (python scripts/write_back_results.py --write)"
             for path, text in pages(root, season).items()

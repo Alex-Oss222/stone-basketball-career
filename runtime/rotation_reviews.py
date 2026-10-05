@@ -14,7 +14,7 @@ from pathlib import Path
 from . import camp
 from .career_stats import normalize_line
 from .decisions import decision_errors
-from .season_games import (MIAMI, ROOT, SEASON, check_date, read_json,
+from .season_games import (MIAMI, ROOT, check_date, read_json,
                            season_base, season_games, written_notes, note_meta)
 
 REVIEW_DAYS = 14
@@ -23,23 +23,33 @@ SCORE_MINUTES = 30.0
 CLOSE_BATTLE = camp.CLOSE_BATTLE
 
 
-def depth_dir(root=ROOT, season=SEASON):
+
+def _active_season(root=None):
+    """The career's live season (runtime/seasons.py), read from the repository a call works on."""
+    from .seasons import active
+    return active(root or ROOT)
+
+def depth_dir(root=ROOT, season=None):
+    season = season or _active_season(root)
     return Path(root) / season_base(season) / "00_Team/Team/Depth_Chart"
 
 
-def review_dir(on, root=ROOT, season=SEASON):
+def review_dir(on, root=ROOT, season=None):
+    season = season or _active_season(root)
     return depth_dir(root, season) / "Reviews" / check_date(on)
 
 
-def assessment_date(root=ROOT, season=SEASON):
+def assessment_date(root=ROOT, season=None):
     """Camp's assessment fixes the cadence; a later roster correction does not reset it."""
+    season = season or _active_season(root)
     camp_path = Path(root) / season_base(season) / "04_Training_Camp/camp_roster.json"
     assessed = read_json(camp_path) if camp_path.exists() else {}
     return check_date(assessed.get("evaluated") or read_json(depth_dir(root, season) / "rotation.json")["as_of"])
 
 
-def review_dates(until, root=ROOT, season=SEASON):
+def review_dates(until, root=ROOT, season=None):
     """Every review due, on the camp decision's fixed fourteen-day cadence."""
+    season = season or _active_season(root)
     check_date(until)
     baseline = depth_dir(root, season) / "rotation.json"
     if not baseline.exists():
@@ -55,14 +65,16 @@ def review_dates(until, root=ROOT, season=SEASON):
     return out
 
 
-def pending_reviews(until, root=ROOT, season=SEASON):
+def pending_reviews(until, root=ROOT, season=None):
+    season = season or _active_season(root)
     return [on for on in review_dates(until, root, season)
             if not all((review_dir(on, root, season) / name).exists()
                        for name in ("review.json", "depth_chart.json", "rotation.json"))]
 
 
-def rotation_in_force(on, root=ROOT, season=SEASON, require_review=True):
+def rotation_in_force(on, root=ROOT, season=None, require_review=True):
     """The dated rotation and depth chart, without changing the camp baseline."""
+    season = season or _active_season(root)
     folder = depth_dir(root, season)
     baseline = folder / "rotation.json"
     if not baseline.exists():
@@ -95,8 +107,9 @@ def rotation_in_force(on, root=ROOT, season=SEASON, require_review=True):
     return rotation, depth
 
 
-def closed_evidence(on, root=ROOT, season=SEASON):
+def closed_evidence(on, root=ROOT, season=None):
     """Require the earlier schedule closed; only played notes own result evidence."""
+    season = season or _active_season(root)
     notes = written_notes(root, season)
     results, sources, pending = [], [], []
     for game in season_games(season, root):
@@ -165,7 +178,8 @@ def staff_scores(players, priors, results):
     return scores, evidence
 
 
-def battle_packets(players, scores, on, season=SEASON):
+def battle_packets(players, scores, on, season=None):
+    season = season or _active_season()
     packets = []
     for pos in camp.POSITIONS:
         names = sorted((p["player"] for p in players if p["positions"][0] == pos),
@@ -189,13 +203,14 @@ def battle_packets(players, scores, on, season=SEASON):
     return packets
 
 
-def preseason_priors(on, root=ROOT, season=SEASON):
+def preseason_priors(on, root=ROOT, season=None):
     """Dated staff estimates, preserving the first frozen prior for each player.
 
     Camp evaluation scores lead. Players signed in a later camp refill retain
     the recorded basketball value on that signing decision, before fit or a
     Wade request affects recruitment. No later season ability is consulted.
     """
+    season = season or _active_season(root)
     base = Path(root) / season_base(season)
     camp_path = base / "04_Training_Camp/camp_roster.json"
     assessed = read_json(camp_path) if camp_path.exists() else {}
@@ -224,8 +239,9 @@ def preseason_priors(on, root=ROOT, season=SEASON):
     return priors
 
 
-def review_input(on, root=ROOT, season=SEASON):
+def review_input(on, root=ROOT, season=None):
     """Freeze basketball evidence before any engine battle draw is requested."""
+    season = season or _active_season(root)
     base = Path(root) / season_base(season)
     roster = read_json(base / "00_Team/Team/Roster/roster.json")
     if roster.get("as_of", "") > on:
@@ -268,8 +284,9 @@ def decision_outcome(packet, path):
     return result["outcome"]
 
 
-def validate_evidence(snapshot, root=ROOT, season=SEASON):
+def validate_evidence(snapshot, root=ROOT, season=None):
     """Replay frozen scores and require their canonical evidence still unchanged."""
+    season = season or _active_season(root)
     if snapshot.get("prior_minutes") != PRIOR_MINUTES or snapshot.get("score_minutes") != SCORE_MINUTES:
         raise ValueError("saved scoring rule differs from the staff rule")
     for value in snapshot["prior_scores"].values():
@@ -303,8 +320,9 @@ def review_rotation(snapshot, winners):
     return depth, rotation
 
 
-def write_review(on, root=ROOT, season=SEASON):
+def write_review(on, root=ROOT, season=None):
     """Write a due review, or its battle requests and pending IDs. Never draws."""
+    season = season or _active_season(root)
     if on not in review_dates(on, root, season):
         raise ValueError(f"{on} is not a fortnightly staff review date")
     earlier = [day for day in pending_reviews(on, root, season) if day < on]
@@ -347,8 +365,9 @@ def write_review(on, root=ROOT, season=SEASON):
     return []
 
 
-def run_reviews(until, root=ROOT, season=SEASON):
+def run_reviews(until, root=ROOT, season=None):
     """Complete reviews in date order, stopping at the first unresolved draw."""
+    season = season or _active_season(root)
     written = []
     for on in pending_reviews(until, root, season):
         pending = write_review(on, root, season)
@@ -358,8 +377,9 @@ def run_reviews(until, root=ROOT, season=SEASON):
     return written, []
 
 
-def review_errors(root=ROOT, season=SEASON, until=None):
+def review_errors(root=ROOT, season=None, until=None):
     """Replay saved outputs from frozen evidence and checked engine answers."""
+    season = season or _active_season(root)
     errors = []
     known_priors = {}
     for path in sorted((depth_dir(root, season) / "Reviews").glob("*/rotation.json")):

@@ -1,0 +1,96 @@
+{
+ "schema_version": 1,
+ "season": "2004-05",
+ "kind": "conference_alignment",
+ "note": "League alignment for 2004-05, fixed before the season: 30 clubs (Charlotte Bobcats join as an expansion club), New Orleans moves from the Eastern to the Western Conference, and each conference has three divisions of five clubs. Structural league fact, not a result. Club names are spelled exactly as in library/2004/league/nba_2004_05_schedule.json; lists are alphabetical (the source orders by final 2004-05 standings, which was not carried over).",
+ "status": "sourced",
+ "sources": [
+  "https://www.basketball-reference.com/leagues/NBA_2005_standings.html",
+  "https://en.wikipedia.org/wiki/2004%E2%80%9305_NBA_season",
+  "library/2004/league/nba_2004_offseason_calendar.json#alignment_2004_05"
+ ],
+ "conferences": {
+  "East": [
+   "Atlanta Hawks",
+   "Boston Celtics",
+   "Charlotte Bobcats",
+   "Chicago Bulls",
+   "Cleveland Cavaliers",
+   "Detroit Pistons",
+   "Indiana Pacers",
+   "Miami Heat",
+   "Milwaukee Bucks",
+   "New Jersey Nets",
+   "New York Knicks",
+   "Orlando Magic",
+   "Philadelphia 76ers",
+   "Toronto Raptors",
+   "Washington Wizards"
+  ],
+  "West": [
+   "Dallas Mavericks",
+   "Denver Nuggets",
+   "Golden State Warriors",
+   "Houston Rockets",
+   "Los Angeles Clippers",
+   "Los Angeles Lakers",
+   "Memphis Grizzlies",
+   "Minnesota Timberwolves",
+   "New Orleans Hornets",
+   "Phoenix Suns",
+   "Portland Trail Blazers",
+   "Sacramento Kings",
+   "San Antonio Spurs",
+   "Seattle SuperSonics",
+   "Utah Jazz"
+  ]
+ },
+ "divisions": {
+  "East": {
+   "Atlantic": [
+    "Boston Celtics",
+    "New Jersey Nets",
+    "New York Knicks",
+    "Philadelphia 76ers",
+    "Toronto Raptors"
+   ],
+   "Central": [
+    "Chicago Bulls",
+    "Cleveland Cavaliers",
+    "Detroit Pistons",
+    "Indiana Pacers",
+    "Milwaukee Bucks"
+   ],
+   "Southeast": [
+    "Atlanta Hawks",
+    "Charlotte Bobcats",
+    "Miami Heat",
+    "Orlando Magic",
+    "Washington Wizards"
+   ]
+  },
+  "West": {
+   "Northwest": [
+    "Denver Nuggets",
+    "Minnesota Timberwolves",
+    "Portland Trail Blazers",
+    "Seattle SuperSonics",
+    "Utah Jazz"
+   ],
+   "Pacific": [
+    "Golden State Warriors",
+    "Los Angeles Clippers",
+    "Los Angeles Lakers",
+    "Phoenix Suns",
+    "Sacramento Kings"
+   ],
+   "Southwest": [
+    "Dallas Mavericks",
+    "Houston Rockets",
+    "Memphis Grizzlies",
+    "New Orleans Hornets",
+    "San Antonio Spurs"
+   ]
+  }
+ }
+}

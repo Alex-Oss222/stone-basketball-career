@@ -23,6 +23,12 @@ from .rotations import ROTATION_DEPTH, holdings_path, load_rosters, season_fract
 from .player_stats import alias
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def _active_season(root=None):
+    """The career's live season (runtime/seasons.py), read from the repository a call works on."""
+    from .seasons import active
+    return active(root or ROOT)
 SEASON = "2003-04"
 REPLACEMENT_FROM = "2003-12-01"
 SAME_POSITION_BONUS = 1.25
@@ -33,7 +39,8 @@ def path_for(season):
     return Path(f"career/Dwyane_Wade/{season}/League/club_replacements.json")
 
 
-def read(season=SEASON, root=ROOT):
+def read(season=None, root=ROOT):
+    season = season or _active_season(root)
     path = Path(root) / path_for(season)
     if path.is_file():
         return json.loads(path.read_text(encoding="utf-8"))
@@ -51,9 +58,10 @@ def _day_before(day):
     return (date.fromisoformat(day) - timedelta(days=1)).isoformat()
 
 
-def disturbed(season=SEASON, root=ROOT):
+def disturbed(season=None, root=ROOT):
     """Miami acquisitions from REPLACEMENT_FROM that took a player out of a real club's rotation:
     [(holding entry, club, his stint)]."""
+    season = season or _active_season(root)
     holdings = json.loads((Path(root) / holdings_path(season)).read_text(encoding="utf-8"))["entries"]
     rosters = load_rosters(season, root)
     out = []
@@ -77,11 +85,12 @@ EXPIRING_PATH = Path("library/2003/league/nba_2003_expiring_contracts.json")
 STATS_PATH = Path("library/2003/league/nba_2002_03_player_stats.json")
 
 
-def pool(day, season=SEASON, root=ROOT):
+def pool(day, season=None, root=ROOT):
     """Healthy unsigned free agents on `day`: players on the July 1, 2003 expiring list whom no real club
     carries and whose researched status on the date is unsigned_available (`nba_2003_04_unsigned_status.json`;
     retired, abroad, injured or unknown players are never signed), minus Miami's and earlier replacements.
     {bbr_id: {player_id, bbr_id, position, games, minutes (2002-03: his previous minute share)}}."""
+    season = season or _active_season(root)
     from .rotations import miami_holds
     root = Path(root)
     status_file = root / STATUS_PATH
@@ -111,8 +120,9 @@ def pool(day, season=SEASON, root=ROOT):
     return out
 
 
-def choose(club, departing, day, season=SEASON, root=ROOT):
+def choose(club, departing, day, season=None, root=ROOT):
     """The replacement a disturbed club signs and his terms, or None when the pool is empty."""
+    season = season or _active_season(root)
     from .market import Market
     from .skill_fit import SkillFit
     from .trades import Assets
@@ -154,8 +164,9 @@ def choose(club, departing, day, season=SEASON, root=ROOT):
                       f"(score {round(score(bbr, p), 3)}); payroll {payroll:,} against a {cap:,} cap")}
 
 
-def replace(root=ROOT, season=SEASON, write=True):
+def replace(root=ROOT, season=None, write=True):
     """Make every replacement due. Returns the new entries."""
+    season = season or _active_season(root)
     record = read(season, root)
     done = {e["replaces_bbr"] for e in record["entries"]}
     new = []
@@ -190,8 +201,9 @@ def arrivals(season, club, game_date, root=ROOT):
     return tuple(out)
 
 
-def replacement_errors(root=ROOT, season=SEASON):
+def replacement_errors(root=ROOT, season=None):
     """A disturbed club without its replacement (python scripts/club_replacements.py --write)."""
+    season = season or _active_season(root)
     root = Path(root)
     if not (root / holdings_path(season)).is_file():
         return []

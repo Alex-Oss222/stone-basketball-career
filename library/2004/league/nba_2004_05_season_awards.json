@@ -1,0 +1,234 @@
+{
+ "schema_version": 1,
+ "season": "2004-05",
+ "kind": "season_award_calendar",
+ "purpose": "When each 2004-05 end-of-season award was announced, who voted and how ballots were scored, researched October 2026. Dates and rules only: no real 2005 winner or vote is recorded or used.",
+ "status_values": {
+  "sourced": "a cited source states it",
+  "derived": "inferred from cited sources, reasoning given",
+  "design_choice": "not verifiable for 2004-05; the simulation's documented choice"
+ },
+ "regular_season_last_day": "2005-04-20",
+ "ballot_due": {
+  "value": "2005-04-21",
+  "status": "derived",
+  "note": "After the last regular-season games (2005-04-20) and before the first media award (2005-04-28); no source states the deadline."
+ },
+ "awards": [
+  {
+   "id": "mip",
+   "name": "Most Improved Player",
+   "announced": "2005-04-28",
+   "electorate": 123,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "electorate_status": "derived",
+   "status": "sourced",
+   "note": "Announced Thursday, April 28, 2005 (AP wire brief dated April 28; 5-3-1 scoring stated). Electorate: the first-place votes on the Basketball-Reference tally sum to 123 and its maximum is 615 (123 x 5); no release stating the panel size was read.",
+   "sources": [
+    "https://www.semissourian.com/sports/sports-briefs-4-29-05-161434",
+    "https://www.washingtonpost.com/archive/sports/2005/04/29/simmons-wins-most-improved-player-award/aedbed12-4e6e-47d2-a1d9-24757337c472/",
+    "https://www.basketball-reference.com/awards/awards_2005.html"
+   ]
+  },
+  {
+   "id": "dpoy",
+   "name": "Defensive Player of the Year",
+   "announced": "2005-05-02",
+   "electorate": 125,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "electorate_status": "derived",
+   "status": "sourced",
+   "note": "Announced Monday, May 2, 2005 at an afternoon news conference (AP wire brief of May 3). Electorate: Basketball-Reference first-place votes sum to 125 and its maximum is 625 (125 x 5). Scoring 5-3-1 as for the other media awards (derived).",
+   "sources": [
+    "https://www.semissourian.com/sports/sports-briefs-5-3-05-161701",
+    "https://www.basketball-reference.com/awards/awards_2005.html"
+   ]
+  },
+  {
+   "id": "smoy",
+   "name": "Sixth Man of the Year",
+   "announced": "2005-05-03",
+   "electorate": 125,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "status": "sourced",
+   "note": "Announced Tuesday, May 3, 2005; 'of 125 first-place votes ... from a panel of sportswriters and broadcasters' (AP via CBC). Basketball-Reference maximum 625 (125 x 5).",
+   "sources": [
+    "https://www.cbc.ca/sports/basketball/bulls-gordon-first-rookie-to-win-nba-sixth-man-award-1.533418",
+    "https://www.basketball-reference.com/awards/awards_2005.html"
+   ]
+  },
+  {
+   "id": "roy",
+   "name": "Rookie of the Year",
+   "announced": "2005-05-04",
+   "electorate": 126,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "status": "sourced",
+   "note": "NBA release May 4, 2005: '126 possible first-place votes'; five, three and one points.",
+   "sources": [
+    "https://www.nba.com/hornets/news/okafor_roy_050504.html",
+    "https://www.basketball-reference.com/awards/awards_2005.html"
+   ]
+  },
+  {
+   "id": "all_rookie",
+   "name": "All-Rookie Teams",
+   "announced": "2005-05-05",
+   "electorate": 30,
+   "voters": "head coaches, not for their own players",
+   "ballot": [
+    2,
+    1
+   ],
+   "teams": 2,
+   "picks_per_team": 5,
+   "status": "sourced",
+   "note": "SportsTicker via ESPN, May 5, 2005: selected Thursday 'in voting by 30 coaches. Coaches were not permitted to vote for players on their own team.' A unanimous player therefore receives 58 points (29 x 2), the Basketball-Reference maximum. Scoring 2-1 as in 2003-04 (derived).",
+   "sources": [
+    "https://www.espn.com/nba/news/story?id=2054120",
+    "https://www.basketball-reference.com/awards/awards_2005.html"
+   ]
+  },
+  {
+   "id": "mvp",
+   "name": "Most Valuable Player",
+   "announced": "2005-05-08",
+   "electorate": 127,
+   "voters": "media",
+   "ballot": [
+    10,
+    7,
+    5,
+    3,
+    1
+   ],
+   "status": "sourced",
+   "note": "NBA release May 8, 2005: 'A panel of 127 sportswriters and broadcasters'; 10, 7, 5, 3 and 1 points.",
+   "sources": [
+    "https://www.nba.com/suns/news/nash_mvp_050508.html",
+    "https://www.basketball-reference.com/awards/awards_2005.html"
+   ]
+  },
+  {
+   "id": "coy",
+   "name": "Coach of the Year",
+   "announced": "2005-05-10",
+   "electorate": 126,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "electorate_status": "derived",
+   "status": "sourced",
+   "note": "NBA release dated May 10, 2005 (published 9:37 p.m. ET): panel of sportswriters and broadcasters, five, three and one points. Electorate: Basketball-Reference first-place votes sum to 126 and its maximum is 630 (126 x 5).",
+   "sources": [
+    "https://www.nba.com/suns/news/dantoni_release_050510.html",
+    "https://www.basketball-reference.com/awards/awards_2005.html"
+   ]
+  },
+  {
+   "id": "all_defensive",
+   "name": "All-Defensive Teams",
+   "announced": "2005-05-12",
+   "electorate": 30,
+   "voters": "head coaches, not for their own players",
+   "ballot": [
+    2,
+    1
+   ],
+   "teams": 2,
+   "by_position": {
+    "G": 2,
+    "F": 2,
+    "C": 1
+   },
+   "status": "sourced",
+   "note": "NBA club release published May 12, 2005: 'a voting panel that consisted of the NBA's 30 head coaches, who were asked to select NBA All-Defensive First and Second Teams by position'. Two points for a first-team vote, one for a second-team vote (sourced in the published tally). Own-player exclusion as in 2003-04 (derived).",
+   "sources": [
+    "https://www.nba.com/timberwolves/news/garnett_all_defensive.html",
+    "https://www.deseret.com/2005/5/13/19892190/nba-all-defensive-team-voting/",
+    "https://www.basketball-reference.com/awards/awards_2005.html"
+   ]
+  },
+  {
+   "id": "all_nba",
+   "name": "All-NBA Teams",
+   "announced": "2005-05-18",
+   "electorate": 124,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "teams": 3,
+   "by_position": {
+    "G": 2,
+    "F": 2,
+    "C": 1
+   },
+   "status": "sourced",
+   "note": "NBA release May 18, 2005: 'The 124-member voting panel ... voted for All-NBA First, Second and Third Teams by position with points awarded on a 5-3-1 basis.'",
+   "sources": [
+    "https://www.nba.com/suns/news/allnba_050518.html",
+    "https://www.basketball-reference.com/awards/awards_2005.html"
+   ]
+  },
+  {
+   "id": "finals_mvp",
+   "name": "Finals MVP",
+   "announced": "finals_clinch",
+   "electorate": 10,
+   "voters": "media panel",
+   "ballot": [
+    1
+   ],
+   "status": "design_choice",
+   "note": "Announced on court the night the Finals are clinched (sourced). Each panelist names one player (sourced). Ten ballots were counted in 2005 (bballhistorydatabase; contemporaneous Argentine coverage describes one of them as an online fan ballot), so the electorate is 10 (derived); treating all ten as media voters is the design choice. An even panel can split: a tie at the top is an engine decision draw (no published tie rule; the award has never been shared). A player on the losing club may win (Jerry West, 1969).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Bill_Russell_NBA_Finals_Most_Valuable_Player_Award",
+    "https://bballhistorydatabase.com/finals-mvp-voting-history/",
+    "https://www.pagina12.com.ar/diario/deportes/8-52367-2005-06-14.html"
+   ]
+  }
+ ],
+ "not_decided": [
+  {
+   "name": "Sportsmanship Award",
+   "announced": "unverified",
+   "reason": "a player-ballot character award with no evidence basis in simulated results; no sourced 2005 date"
+  },
+  {
+   "name": "Executive of the Year",
+   "announced": "unverified",
+   "reason": "no sourced 2005 date"
+  },
+  {
+   "name": "J. Walter Kennedy Citizenship Award",
+   "announced": "unverified",
+   "reason": "no sourced 2005 date; a community-service award with no evidence basis in simulated results"
+  }
+ ]
+}

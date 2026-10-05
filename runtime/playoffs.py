@@ -19,24 +19,50 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
-RULES = Path("library/2003/league/nba_2003_04_playoff_rules.json")
-LEAGUE = Path(f"career/Dwyane_Wade/Stats_and_Awards/League/{SEASON}")
-RECORD = LEAGUE / "playoffs.json"
-PAGE = LEAGUE / "Playoffs.md"
-DRAWS = LEAGUE / "Playoff_Draws"
+
+
+def _active_season(root=None):
+    """The career's live season (runtime/seasons.py), read from the repository a call works on."""
+    from .seasons import active
+    return active(root or ROOT)
+
+
+def rules_path(season):
+    from .seasons import path
+    return path(season, "playoff_rules")
+
+
+def league_dir(season):
+    return Path(f"career/Dwyane_Wade/Stats_and_Awards/League/{season}")
+
+
+def record_path(season):
+    return league_dir(season) / "playoffs.json"
+
+
+def page_path(season):
+    return league_dir(season) / "Playoffs.md"
+
+
+def draws_dir(season):
+    return league_dir(season) / "Playoff_Draws"
+
+
+def games_dir(season):
+    return league_dir(season) / "Playoffs/Games"
 ROUNDS = (("first_round", "First round", "First_Round"), ("conference_semifinals", "Conference semifinals", "Conference_Semifinals"),
           ("conference_finals", "Conference finals", "Conference_Finals"), ("finals", "NBA Finals", "Finals"))
 
 
-def rules(root=ROOT):
-    return json.loads((Path(root) / RULES).read_text(encoding="utf-8"))
+def rules(root=ROOT, season=None):
+    season = season or _active_season(root)
+    return json.loads((Path(root) / rules_path(season)).read_text(encoding="utf-8"))
 
 
-def divisions(root=ROOT):
+def divisions(root=ROOT, season=None):
     """{club: (conference, division)}."""
     out = {}
-    for conf, divs in rules(root)["divisions"].items():
+    for conf, divs in rules(root, season)["divisions"].items():
         if conf in ("East", "West"):
             for div, clubs in divs.items():
                 for c in clubs:
@@ -48,10 +74,11 @@ def divisions(root=ROOT):
 class Table:
     """Every club's closed regular-season results: record, head-to-head, division and conference records, points."""
 
-    def __init__(self, root=ROOT, season=SEASON, through=None):
+    def __init__(self, root=ROOT, season=None, through=None):
+        season = season or _active_season(root)
         from .write_back import closed_results
-        self.root = Path(root)
-        self.where = divisions(root)
+        self.root, self.season = Path(root), season
+        self.where = divisions(root, season)
         self.games = []
         for row in closed_results(root, season, through):
             r = row["result"]
@@ -147,8 +174,9 @@ class Ranker:
         """A drawing: an engine decision packet; until it is drawn the order is pending."""
         from .decisions import load_decision
         key = "-".join(sorted(c.lower().replace(" ", "-") for c in tied))
-        event = f"{SEASON}-playoff-tiebreak-{key}"
-        path = self.root / DRAWS / f"{event}.decision.json"
+        season = getattr(self.t, "season", None) or _active_season(self.root)
+        event = f"{season}-playoff-tiebreak-{key}"
+        path = self.root / draws_dir(season) / f"{event}.decision.json"
         result = path.with_name(f"{event}.decision.result.json")
         if result.is_file():
             first = json.loads(result.read_text(encoding="utf-8"))["outcome"]
@@ -158,7 +186,7 @@ class Ranker:
             share = round(1 / len(tied), 6)
             options = {c: share for c in sorted(tied)}
             options[sorted(tied)[-1]] = round(1 - share * (len(tied) - 1), 6)
-            path.write_text(json.dumps({"event_id": event, "date": rules(self.root)["calendar"]["regular_season_last_day"],
+            path.write_text(json.dumps({"event_id": event, "date": rules(self.root, season)["calendar"]["regular_season_last_day"],
                                         "question": f"Tiebreak drawing: who ranks first among {', '.join(sorted(tied))}?",
                                         "decider": "NBA drawing (engine draw)", "options": options,
                                         "basis": "every tiebreak step in the 2003-04 procedure left them level (runtime/playoffs.py)"},
@@ -168,12 +196,15 @@ class Ranker:
         return sorted(tied)
 
 
-def seeds(root=ROOT, season=SEASON):
+def seeds(root=ROOT, season=None):
     """{conference: [(seed, club, wins, losses, division winner?)]} and the pending tiebreak draws."""
+    season = season or _active_season(root)
     table = Table(root, season)
     winners = []
     plain = Ranker(table, root)
-    for conf, divs in rules(root)["divisions"].items():
+    cfg = rules(root, season)
+    per_conference = cfg.get("qualification", {}).get("teams_per_conference", 8)
+    for conf, divs in cfg["divisions"].items():
         if conf not in ("East", "West"):
             continue
         for div, clubs in divs.items():
@@ -183,14 +214,21 @@ def seeds(root=ROOT, season=SEASON):
     for conf in ("East", "West"):
         clubs = table.conference(next(c for c in table.clubs if table.where[c][0] == conf))
         div_winners = ranker.order([c for c in clubs if c in winners])
-        rest = ranker.order([c for c in clubs if c not in winners])[:6]
+        rest = ranker.order([c for c in clubs if c not in winners])[:per_conference - len(div_winners)]
         out[conf] = [(i + 1, c, *table.record(c), c in winners) for i, c in enumerate(div_winners + rest)]
     return out, plain.pending + ranker.pending, table, ranker
 
 
-def home_court(a, b, table, ranker):
-    """The club with home court in a series: better record, equal records by the tiebreak procedure."""
+def home_court(a, b, table, ranker, seed_of=None, basis="record", same_conference=True):
+    """The club with home court in a series. By record (the tiebreak procedure for equal records), or, where the
+    season's rules say `basis: seed`, the better seed within a conference (the Finals stay by record)."""
+    if basis == "seed" and same_conference and seed_of and a in seed_of and b in seed_of:
+        return a if seed_of[a] < seed_of[b] else b
     return ranker.order([a, b])[0]
+
+
+def seed_map(record_seeds):
+    return {r["club"]: r["seed"] for rows in record_seeds.values() for r in rows}
 
 
 def series_games(home, road, dates, home_games):
@@ -213,12 +251,13 @@ def dates_from(first, gaps):
     return out
 
 
-def first_round(root=ROOT, season=SEASON):
+def first_round(root=ROOT, season=None):
     """The bracket's first round with each series' home-court team and its calendar of possible games."""
+    season = season or _active_season(root)
     seeded, pending, table, ranker = seeds(root, season)
     if pending:
         return None, pending
-    cfg = rules(root)
+    cfg = rules(root, season)
     openers = {}
     for day, pairs in cfg["calendar"]["first_round"]["openers"].items():
         for conf, pair in pairs:
@@ -230,7 +269,7 @@ def first_round(root=ROOT, season=SEASON):
         by_seed = {s: c for s, c, *_ in seeded[conf]}
         for high, low in cfg["bracket"]["first_round"]:
             a, b = by_seed[high], by_seed[low]
-            home = home_court(a, b, table, ranker)
+            home = home_court(a, b, table, ranker, {a: high, b: low}, cfg["home_court"].get("basis", "record"))
             road = b if home == a else a
             games = series_games(home, road, dates_from(openers[(conf, (high, low))], gaps), home_games)
             series.append({"id": f"{conf.lower()}-{high}-{low}", "round": "first_round", "conference": conf,
@@ -239,26 +278,26 @@ def first_round(root=ROOT, season=SEASON):
     return {"seeded": seeded, "series": series}, []
 
 
-def build(root=ROOT, season=SEASON, write=True):
+def build(root=ROOT, season=None, write=True):
     """Seed the playoffs and write the record and its page once the regular season is complete."""
+    season = season or _active_season(root)
     root = Path(root)
     bracket, pending = first_round(root, season)
     if bracket is None:
         return None, pending
-    cfg = rules(root)
+    cfg = rules(root, season)
     record = {"schema_version": 1, "kind": "playoffs", "season": season,
-              "rules": RULES.as_posix(), "seeded_on": cfg["calendar"]["regular_season_last_day"],
+              "rules": rules_path(season).as_posix(), "seeded_on": cfg["calendar"]["regular_season_last_day"],
               "seeds": {conf: [{"seed": s, "club": c, "wins": w, "losses": l, "division_winner": d}
                                for s, c, w, l, d in rows] for conf, rows in bracket["seeded"].items()},
               "series": bracket["series"], "champion": None}
     if write:
-        (root / RECORD).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-        (root / PAGE).write_text(page(record, root), encoding="utf-8")
-        readme = root / LEAGUE.parent / "README.md"                    # the league hub links the bracket once it exists
+        write(record, root)
+        readme = root / league_dir(season).parent / "README.md"         # the league hub links the bracket once it exists
         text = readme.read_text(encoding="utf-8") if readme.is_file() else ""
         hub = f"[{season} standings]({season}/Standings.md)"
         if hub in text and f"({season}/Playoffs.md)" not in text:
-            readme.write_text(text.replace(hub, hub + f" · [2004 playoffs]({season}/Playoffs.md)", 1), encoding="utf-8")
+            readme.write_text(text.replace(hub, hub + f" · [{int(season[:4]) + 1} playoffs]({season}/Playoffs.md)", 1), encoding="utf-8")
     return record, []
 
 
@@ -318,38 +357,41 @@ def page(record, root=ROOT):
 
 
 # -- the running playoffs -------------------------------------------------------------------------
-GAMES = LEAGUE / "Playoffs/Games"
 MIAMI = "Miami Heat"
 FOLDERS = {key: folder for key, _, folder in ROUNDS}
 LABELS = {key: label for key, label, _ in ROUNDS}
 
 
-def read(root=ROOT):
-    path = Path(root) / RECORD
+def read(root=ROOT, season=None):
+    season = season or _active_season(root)
+    path = Path(root) / record_path(season)
     return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else None
 
 
 def write(record, root=ROOT):
     root = Path(root)
-    (root / RECORD).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-    (root / PAGE).write_text(page(record, root), encoding="utf-8")
+    (root / record_path(record["season"])).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    (root / page_path(record["season"])).write_text(page(record, root), encoding="utf-8")
 
 
-def miami_paths(series, game, root=ROOT, season=SEASON):
+def miami_paths(series, game, root=ROOT, season=None):
+    season = season or _active_season(root)
     base = Path(root) / f"career/Dwyane_Wade/{season}/08_Playoffs" / FOLDERS[series["round"]]
     return base / f"Game_{game['game']}.md", base / f"Game_{game['game']}.request.json", base / f"Game_{game['game']}.result.json"
 
 
-def game_paths(series, game, root=ROOT, season=SEASON):
+def game_paths(series, game, root=ROOT, season=None):
     """(note or None, request, result) for one playoff game."""
+    season = season or _active_season(root)
     if MIAMI in (game["home"], game["away"]):
         return miami_paths(series, game, root, season)
-    folder = Path(root) / GAMES
+    folder = Path(root) / games_dir(season)
     return None, folder / f"{game['event_id']}.request.json", folder / f"{game['event_id']}.result.json"
 
 
-def apply_results(record, root=ROOT, season=SEASON):
+def apply_results(record, root=ROOT, season=None):
     """Series scores from the closed results; a decided series drops its unplayed games."""
+    season = season or _active_season(root)
     for s in record["series"]:
         a, b = s["clubs"]
         wins = {a: 0, b: 0}
@@ -377,9 +419,10 @@ def apply_results(record, root=ROOT, season=SEASON):
     return record
 
 
-def advance_bracket(record, root=ROOT, season=SEASON):
+def advance_bracket(record, root=ROOT, season=None):
     """Create each later-round series once both of its feeders are decided."""
-    cfg = rules(root)
+    season = season or _active_season(root)
+    cfg = rules(root, season)
     table = Table(root, season, cfg["calendar"]["regular_season_last_day"])
     ranker = Ranker(table, root, [r["club"] for rows in record["seeds"].values() for r in rows if r["division_winner"]])
     by_id = {s["id"]: s for s in record["series"]}
@@ -395,7 +438,7 @@ def advance_bracket(record, root=ROOT, season=SEASON):
         if sid in by_id or not all(f in by_id and by_id[f]["winner"] for f in feeders):
             continue
         a, b = (by_id[f]["winner"] for f in feeders)
-        home = home_court(a, b, table, ranker)
+        home = home_court(a, b, table, ranker, seed_map(record["seeds"]), cfg["home_court"].get("basis", "record"), rnd != "finals")
         road = b if home == a else a
         last = max(by_id[f]["clinched_on"] for f in feeders)
         rest = (date.fromisoformat(last) + timedelta(days=2)).isoformat()
@@ -422,8 +465,9 @@ def advance_bracket(record, root=ROOT, season=SEASON):
     return record
 
 
-def refresh(root=ROOT, season=SEASON, write_record=True):
+def refresh(root=ROOT, season=None, write_record=True):
     """Apply closed results and open later rounds; write the record and page. Returns the record."""
+    season = season or _active_season(root)
     record = read(root)
     if record is None:
         return None
@@ -434,8 +478,9 @@ def refresh(root=ROOT, season=SEASON, write_record=True):
     return record
 
 
-def due(record, day, root=ROOT, season=SEASON):
+def due(record, day, root=ROOT, season=None):
     """[(series, game)] scheduled on `day` in undecided series, not yet built."""
+    season = season or _active_season(root)
     out = []
     for s in record["series"]:
         if s["winner"]:
@@ -455,7 +500,8 @@ def club_dates(record, club):
     return sorted(g["date"] for s in record["series"] if club in s["clubs"] for g in s["games"] if not g.get("not_needed"))
 
 
-def playoff_note(series, game, season=SEASON):
+def playoff_note(series, game, season=None):
+    season = season or _active_season()
     venue = "home" if game["home"] == MIAMI else "away"
     opponent = game["away"] if venue == "home" else game["home"]
     a, b = series["clubs"]
@@ -482,7 +528,8 @@ Player identity and statistics are generated here by `python scripts/update_play
 """
 
 
-def phase_note(series, season=SEASON):
+def phase_note(series, season=None):
+    season = season or _active_season()
     return f"""---
 type: playoff_round
 round: {series['round']}
@@ -500,8 +547,9 @@ round: {series['round']}
 """
 
 
-def build_games(day, root=ROOT, season=SEASON):
+def build_games(day, root=ROOT, season=None):
     """Write the requests (and Miami's notes) for the day's due playoff games. Returns the written paths."""
+    season = season or _active_season(root)
     from .game_requests import freeze, load_request
     from .season_games import miami_side, miami_request
     from . import roster_moves

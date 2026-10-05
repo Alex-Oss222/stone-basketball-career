@@ -8,7 +8,7 @@ NBA regular season · October 15-21, 2003
 
 ## Leaders
 
-No eligible results yet. Publish period leaders with G and sample size; apply verified 2003-04 qualifications before calling a result an official season leader.
+No eligible results yet. Publish period leaders with G and sample size; apply the season's verified qualifications before calling a result an official season leader.
 
 ## Players by position
 

@@ -6,11 +6,18 @@ Used where a rule needs the order of clubs on a date (waiver claim priority in t
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def _active_season(root=None):
+    """The career's live season (runtime/seasons.py), read from the repository a call works on."""
+    from .seasons import active
+    return active(root or ROOT)
 SEASON = "2003-04"
 
 
-def standings_on(day, root=ROOT, season=SEASON):
+def standings_on(day, root=ROOT, season=None):
     """{club: {"wins", "losses", "pct"}} from closed results dated on or before `day`."""
+    season = season or _active_season(root)
     from .write_back import closed_results
     table = {}
     for row in closed_results(root, season, day):
@@ -24,8 +31,9 @@ def standings_on(day, root=ROOT, season=SEASON):
     return table
 
 
-def worst_first(day, root=ROOT, season=SEASON, clubs=None):
+def worst_first(day, root=ROOT, season=None, clubs=None):
     """Clubs from the worst record to the best on the date (ties: fewer wins, then name)."""
+    season = season or _active_season(root)
     table = standings_on(day, root, season)
     names = clubs or sorted(table)
     return sorted(names, key=lambda c: (table.get(c, {}).get("pct", 0.0), table.get(c, {}).get("wins", 0), c))

@@ -1,0 +1,4096 @@
+{
+ "schema_version": 1,
+ "season": "2004-05",
+ "kind": "jersey_numbers",
+ "researched": "2026-10-05",
+ "source_pattern": "https://www.basketball-reference.com/teams/{ABBR}/2005.html",
+ "players": {
+  "abdursh01": [
+   {
+    "player": "Shareef Abdur-Rahim",
+    "club": "Portland Trail Blazers",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "alexaco01": [
+   {
+    "player": "Cory Alexander",
+    "club": "Charlotte Bobcats",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "allenma01": [
+   {
+    "player": "Malik Allen",
+    "club": "Charlotte Bobcats",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   },
+   {
+    "player": "Malik Allen",
+    "club": "Miami Heat",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "allenra02": [
+   {
+    "player": "Ray Allen",
+    "club": "Seattle SuperSonics",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "allento01": [
+   {
+    "player": "Tony Allen",
+    "club": "Boston Celtics",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   }
+  ],
+  "alstora01": [
+   {
+    "player": "Rafer Alston",
+    "club": "Toronto Raptors",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "anderch01": [
+   {
+    "player": "Chris Andersen",
+    "club": "New Orleans Hornets",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "anderde01": [
+   {
+    "player": "Derek Anderson",
+    "club": "Portland Trail Blazers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "anderke01": [
+   {
+    "player": "Kenny Anderson",
+    "club": "Atlanta Hawks",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   },
+   {
+    "player": "Kenny Anderson",
+    "club": "Los Angeles Clippers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "andersh01": [
+   {
+    "player": "Shandon Anderson",
+    "club": "Miami Heat",
+    "number": "49",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   },
+   {
+    "player": "Shandon Anderson",
+    "club": "New York Knicks",
+    "number": "49",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "anthoca01": [
+   {
+    "player": "Carmelo Anthony",
+    "club": "Denver Nuggets",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   }
+  ],
+  "araujra01": [
+   {
+    "player": "Rafael Araújo",
+    "club": "Toronto Raptors",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "arenagi01": [
+   {
+    "player": "Gilbert Arenas",
+    "club": "Washington Wizards",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "arizatr01": [
+   {
+    "player": "Trevor Ariza",
+    "club": "New York Knicks",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "armstda01": [
+   {
+    "player": "Darrell Armstrong",
+    "club": "Dallas Mavericks",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   },
+   {
+    "player": "Darrell Armstrong",
+    "club": "New Orleans Hornets",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "arroyca01": [
+   {
+    "player": "Carlos Arroyo",
+    "club": "Detroit Pistons",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   },
+   {
+    "player": "Carlos Arroyo",
+    "club": "Utah Jazz",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "artesro01": [
+   {
+    "player": "Metta World Peace",
+    "club": "Indiana Pacers",
+    "number": "91",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "atkinch01": [
+   {
+    "player": "Chucky Atkins",
+    "club": "Los Angeles Lakers",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "augmost01": [
+   {
+    "player": "Stacey Augmon",
+    "club": "Orlando Magic",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "bakerma01": [
+   {
+    "player": "Maurice Baker",
+    "club": "Los Angeles Clippers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   },
+   {
+    "player": "Maurice Baker",
+    "club": "Portland Trail Blazers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "bakervi01": [
+   {
+    "player": "Vin Baker",
+    "club": "Houston Rockets",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   },
+   {
+    "player": "Vin Baker",
+    "club": "New York Knicks",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "banksma01": [
+   {
+    "player": "Marcus Banks",
+    "club": "Boston Celtics",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   }
+  ],
+  "barbole01": [
+   {
+    "player": "Leandro Barbosa",
+    "club": "Phoenix Suns",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "barnema02": [
+   {
+    "player": "Matt Barnes",
+    "club": "Sacramento Kings",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "barrean01": [
+   {
+    "player": "Andre Barrett",
+    "club": "Houston Rockets",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   },
+   {
+    "player": "Andre Barrett",
+    "club": "Orlando Magic",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "barrybr01": [
+   {
+    "player": "Brent Barry",
+    "club": "San Antonio Spurs",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "barryjo01": [
+   {
+    "player": "Jon Barry",
+    "club": "Atlanta Hawks",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   },
+   {
+    "player": "Jon Barry",
+    "club": "Houston Rockets",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "battish01": [
+   {
+    "player": "Shane Battier",
+    "club": "Memphis Grizzlies",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "battito01": [
+   {
+    "player": "Tony Battie",
+    "club": "Orlando Magic",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "baxtelo01": [
+   {
+    "player": "Lonny Baxter",
+    "club": "New Orleans Hornets",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "bellra01": [
+   {
+    "player": "Raja Bell",
+    "club": "Utah Jazz",
+    "number": "19",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "bendejo01": [
+   {
+    "player": "Jonathan Bender",
+    "club": "Indiana Pacers",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "besttr01": [
+   {
+    "player": "Travis Best",
+    "club": "New Jersey Nets",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "bibbymi01": [
+   {
+    "player": "Mike Bibby",
+    "club": "Sacramento Kings",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "biedran01": [
+   {
+    "player": "Andris Biedriņš",
+    "club": "Golden State Warriors",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "billuch01": [
+   {
+    "player": "Chauncey Billups",
+    "club": "Detroit Pistons",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "blakest01": [
+   {
+    "player": "Steve Blake",
+    "club": "Washington Wizards",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "blounma01": [
+   {
+    "player": "Mark Blount",
+    "club": "Boston Celtics",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   }
+  ],
+  "bobbito01": [
+   {
+    "player": "Tony Bobbitt",
+    "club": "Los Angeles Lakers",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "boganke01": [
+   {
+    "player": "Keith Bogans",
+    "club": "Charlotte Bobcats",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "bonnema01": [
+   {
+    "player": "Matt Bonner",
+    "club": "Toronto Raptors",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "boothca01": [
+   {
+    "player": "Calvin Booth",
+    "club": "Dallas Mavericks",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   },
+   {
+    "player": "Calvin Booth",
+    "club": "Milwaukee Bucks",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "boozeca01": [
+   {
+    "player": "Carlos Boozer",
+    "club": "Utah Jazz",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "borchcu01": [
+   {
+    "player": "Curtis Borchardt",
+    "club": "Utah Jazz",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "boshch01": [
+   {
+    "player": "Chris Bosh",
+    "club": "Toronto Raptors",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "bowenbr01": [
+   {
+    "player": "Bruce Bowen",
+    "club": "San Antonio Spurs",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "bowenry01": [
+   {
+    "player": "Ryan Bowen",
+    "club": "Houston Rockets",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "boykiea01": [
+   {
+    "player": "Earl Boykins",
+    "club": "Denver Nuggets",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   }
+  ],
+  "bradlmi01": [
+   {
+    "player": "Michael Bradley",
+    "club": "Orlando Magic",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   },
+   {
+    "player": "Michael Bradley",
+    "club": "Philadelphia 76ers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   },
+   {
+    "player": "Michael Bradley",
+    "club": "Sacramento Kings",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "bradlsh01": [
+   {
+    "player": "Shawn Bradley",
+    "club": "Dallas Mavericks",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   }
+  ],
+  "braggto01": [
+   {
+    "player": "Torraye Braggs",
+    "club": "Houston Rockets",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "brandel01": [
+   {
+    "player": "Elton Brand",
+    "club": "Los Angeles Clippers",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "breweja01": [
+   {
+    "player": "Jamison Brewer",
+    "club": "New York Knicks",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "brezepr01": [
+   {
+    "player": "Primož Brezec",
+    "club": "Charlotte Bobcats",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "brownda02": [
+   {
+    "player": "Damone Brown",
+    "club": "Washington Wizards",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "brownde02": [
+   {
+    "player": "Devin Brown",
+    "club": "San Antonio Spurs",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "brownke01": [
+   {
+    "player": "Kedrick Brown",
+    "club": "Philadelphia 76ers",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   }
+  ],
+  "brownkw01": [
+   {
+    "player": "Kwame Brown",
+    "club": "Washington Wizards",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "brownpj01": [
+   {
+    "player": "P.J. Brown",
+    "club": "New Orleans Hornets",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "brownti01": [
+   {
+    "player": "Tierre Brown",
+    "club": "Los Angeles Lakers",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "brunsri01": [
+   {
+    "player": "Rick Brunson",
+    "club": "Los Angeles Clippers",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "bryanko01": [
+   {
+    "player": "Kobe Bryant",
+    "club": "Los Angeles Lakers",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "buckngr01": [
+   {
+    "player": "Greg Buckner",
+    "club": "Denver Nuggets",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   }
+  ],
+  "buforro01": [
+   {
+    "player": "Rodney Buford",
+    "club": "New Jersey Nets",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "burksan01": [
+   {
+    "player": "Antonio Burks",
+    "club": "Memphis Grizzlies",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "butleca01": [
+   {
+    "player": "Caron Butler",
+    "club": "Los Angeles Lakers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "butleja01": [
+   {
+    "player": "Jackie Butler",
+    "club": "New York Knicks",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "butlera01": [
+   {
+    "player": "Rasual Butler",
+    "club": "Miami Heat",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "cabarza01": [
+   {
+    "player": "Žarko Čabarkapa",
+    "club": "Golden State Warriors",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   },
+   {
+    "player": "Žarko Čabarkapa",
+    "club": "Phoenix Suns",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "cambyma01": [
+   {
+    "player": "Marcus Camby",
+    "club": "Denver Nuggets",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   }
+  ],
+  "campbel01": [
+   {
+    "player": "Elden Campbell",
+    "club": "Detroit Pistons",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   },
+   {
+    "player": "Elden Campbell",
+    "club": "New Jersey Nets",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "cardibr01": [
+   {
+    "player": "Brian Cardinal",
+    "club": "Memphis Grizzlies",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "carlige01": [
+   {
+    "player": "Geno Carlisle",
+    "club": "Portland Trail Blazers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "carroma01": [
+   {
+    "player": "Matt Carroll",
+    "club": "Charlotte Bobcats",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "cartean01": [
+   {
+    "player": "Anthony Carter",
+    "club": "Minnesota Timberwolves",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "cartevi01": [
+   {
+    "player": "Vince Carter",
+    "club": "New Jersey Nets",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   },
+   {
+    "player": "Vince Carter",
+    "club": "Toronto Raptors",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "cassesa01": [
+   {
+    "player": "Sam Cassell",
+    "club": "Minnesota Timberwolves",
+    "number": "19",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "catoke01": [
+   {
+    "player": "Kelvin Cato",
+    "club": "Orlando Magic",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "chalmli01": [
+   {
+    "player": "Lionel Chalmers",
+    "club": "Los Angeles Clippers",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "chandty01": [
+   {
+    "player": "Tyson Chandler",
+    "club": "Chicago Bulls",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "cheanca01": [
+   {
+    "player": "Calbert Cheaney",
+    "club": "Golden State Warriors",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "childjo01": [
+   {
+    "player": "Josh Childress",
+    "club": "Atlanta Hawks",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "chrisdo01": [
+   {
+    "player": "Doug Christie",
+    "club": "Orlando Magic",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   },
+   {
+    "player": "Doug Christie",
+    "club": "Sacramento Kings",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "claxtsp01": [
+   {
+    "player": "Speedy Claxton",
+    "club": "Golden State Warriors",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   },
+   {
+    "player": "Speedy Claxton",
+    "club": "New Orleans Hornets",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "cleavma01": [
+   {
+    "player": "Mateen Cleaves",
+    "club": "Seattle SuperSonics",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "colemde01": [
+   {
+    "player": "Derrick Coleman",
+    "club": "Detroit Pistons",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "collija02": [
+   {
+    "player": "Jason Collier",
+    "club": "Atlanta Hawks",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "collija03": [
+   {
+    "player": "Jarron Collins",
+    "club": "Utah Jazz",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "collija04": [
+   {
+    "player": "Jason Collins",
+    "club": "New Jersey Nets",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "collini01": [
+   {
+    "player": "Nick Collison",
+    "club": "Seattle SuperSonics",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "cookbr01": [
+   {
+    "player": "Brian Cook",
+    "club": "Los Angeles Lakers",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "cookom01": [
+   {
+    "player": "Omar Cook",
+    "club": "Toronto Raptors",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "crawfja01": [
+   {
+    "player": "Jamal Crawford",
+    "club": "New York Knicks",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "croshau01": [
+   {
+    "player": "Austin Croshere",
+    "club": "Indiana Pacers",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "curryed01": [
+   {
+    "player": "Eddy Curry",
+    "club": "Chicago Bulls",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "currymi01": [
+   {
+    "player": "Michael Curry",
+    "club": "Indiana Pacers",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "dalemsa01": [
+   {
+    "player": "Samuel Dalembert",
+    "club": "Philadelphia 76ers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   }
+  ],
+  "dampier01": [
+   {
+    "player": "Erick Dampier",
+    "club": "Dallas Mavericks",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   }
+  ],
+  "daniean01": [
+   {
+    "player": "Antonio Daniels",
+    "club": "Seattle SuperSonics",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "danieer01": [
+   {
+    "player": "Erik Daniels",
+    "club": "Sacramento Kings",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "daniema01": [
+   {
+    "player": "Marquis Daniels",
+    "club": "Dallas Mavericks",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   }
+  ],
+  "davisan01": [
+   {
+    "player": "Antonio Davis",
+    "club": "Chicago Bulls",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "davisba01": [
+   {
+    "player": "Baron Davis",
+    "club": "Golden State Warriors",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   },
+   {
+    "player": "Baron Davis",
+    "club": "New Orleans Hornets",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "davisda01": [
+   {
+    "player": "Dale Davis",
+    "club": "Golden State Warriors",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   },
+   {
+    "player": "Dale Davis",
+    "club": "Indiana Pacers",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "davisjo02": [
+   {
+    "player": "Josh Davis",
+    "club": "Philadelphia 76ers",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   }
+  ],
+  "davisri01": [
+   {
+    "player": "Ricky Davis",
+    "club": "Boston Celtics",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   }
+  ],
+  "declean01": [
+   {
+    "player": "Andrew DeClercq",
+    "club": "Orlando Magic",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "delfica01": [
+   {
+    "player": "Carlos Delfino",
+    "club": "Detroit Pistons",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "delkto01": [
+   {
+    "player": "Tony Delk",
+    "club": "Atlanta Hawks",
+    "number": "00",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "denglu01": [
+   {
+    "player": "Luol Deng",
+    "club": "Chicago Bulls",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "diawbo01": [
+   {
+    "player": "Boris Diaw",
+    "club": "Atlanta Hawks",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "dickada01": [
+   {
+    "player": "Dan Dickau",
+    "club": "Dallas Mavericks",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   },
+   {
+    "player": "Dan Dickau",
+    "club": "New Orleans Hornets",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "dickeka01": [
+   {
+    "player": "Kaniel Dickens",
+    "club": "New Jersey Nets",
+    "number": "28",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "diopde01": [
+   {
+    "player": "DeSagana Diop",
+    "club": "Cleveland Cavaliers",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "divacvl01": [
+   {
+    "player": "Vlade Divac",
+    "club": "Los Angeles Lakers",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "dixonju01": [
+   {
+    "player": "Juan Dixon",
+    "club": "Washington Wizards",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "doleami01": [
+   {
+    "player": "Michael Doleac",
+    "club": "Miami Heat",
+    "number": "51",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "doolike01": [
+   {
+    "player": "Keyon Dooling",
+    "club": "Miami Heat",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "drobnpr01": [
+   {
+    "player": "Predrag Drobnjak",
+    "club": "Atlanta Hawks",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "duhonch01": [
+   {
+    "player": "Chris Duhon",
+    "club": "Chicago Bulls",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "duncati01": [
+   {
+    "player": "Tim Duncan",
+    "club": "San Antonio Spurs",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "dunlemi02": [
+   {
+    "player": "Mike Dunleavy",
+    "club": "Golden State Warriors",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "duprero01": [
+   {
+    "player": "Ronald Dupree",
+    "club": "Detroit Pistons",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "ebind01": [
+   {
+    "player": "Ndudi Ebi",
+    "club": "Minnesota Timberwolves",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "edwarco01": [
+   {
+    "player": "Corsley Edwards",
+    "club": "New Orleans Hornets",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "edwarjo01": [
+   {
+    "player": "John Edwards",
+    "club": "Indiana Pacers",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "eisleho01": [
+   {
+    "player": "Howard Eisley",
+    "club": "Utah Jazz",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "ekeziob01": [
+   {
+    "player": "Obinna Ekezie",
+    "club": "Atlanta Hawks",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "elsonfr01": [
+   {
+    "player": "Francisco Elson",
+    "club": "Denver Nuggets",
+    "number": "56",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   }
+  ],
+  "elyme01": [
+   {
+    "player": "Melvin Ely",
+    "club": "Charlotte Bobcats",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "emmetan01": [
+   {
+    "player": "Andre Emmett",
+    "club": "Memphis Grizzlies",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "evansma01": [
+   {
+    "player": "Maurice Evans",
+    "club": "Sacramento Kings",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "evansre01": [
+   {
+    "player": "Reggie Evans",
+    "club": "Seattle SuperSonics",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "finlemi01": [
+   {
+    "player": "Michael Finley",
+    "club": "Dallas Mavericks",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   }
+  ],
+  "fishede01": [
+   {
+    "player": "Derek Fisher",
+    "club": "Golden State Warriors",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "fizerma01": [
+   {
+    "player": "Marcus Fizer",
+    "club": "Milwaukee Bucks",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "florelu01": [
+   {
+    "player": "Luis Flores",
+    "club": "Denver Nuggets",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   },
+   {
+    "player": "Luis Flores",
+    "club": "Golden State Warriors",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "fortsda01": [
+   {
+    "player": "Danny Fortson",
+    "club": "Seattle SuperSonics",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "fosteje01": [
+   {
+    "player": "Jeff Foster",
+    "club": "Indiana Pacers",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "fowlktr01": [
+   {
+    "player": "Tremaine Fowlkes",
+    "club": "Indiana Pacers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "foylead01": [
+   {
+    "player": "Adonal Foyle",
+    "club": "Golden State Warriors",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "frahmri01": [
+   {
+    "player": "Richie Frahm",
+    "club": "Portland Trail Blazers",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "francst01": [
+   {
+    "player": "Steve Francis",
+    "club": "Orlando Magic",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "freijma01": [
+   {
+    "player": "Matt Freije",
+    "club": "New Orleans Hornets",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "fundela01": [
+   {
+    "player": "Lawrence Funderburke",
+    "club": "Chicago Bulls",
+    "number": "51",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "gadzuda01": [
+   {
+    "player": "Dan Gadzuric",
+    "club": "Milwaukee Bucks",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "gainere01": [
+   {
+    "player": "Reece Gaines",
+    "club": "Houston Rockets",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   },
+   {
+    "player": "Reece Gaines",
+    "club": "Milwaukee Bucks",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "garcial01": [
+   {
+    "player": "Alex Garcia",
+    "club": "New Orleans Hornets",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "garneke01": [
+   {
+    "player": "Kevin Garnett",
+    "club": "Minnesota Timberwolves",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "garripa01": [
+   {
+    "player": "Pat Garrity",
+    "club": "Orlando Magic",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "gasolpa01": [
+   {
+    "player": "Pau Gasol",
+    "club": "Memphis Grizzlies",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "georgde01": [
+   {
+    "player": "Devean George",
+    "club": "Los Angeles Lakers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "gilled01": [
+   {
+    "player": "Eddie Gill",
+    "club": "Indiana Pacers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "gillke01": [
+   {
+    "player": "Kendall Gill",
+    "club": "Milwaukee Bucks",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "ginobma01": [
+   {
+    "player": "Manu Ginóbili",
+    "club": "San Antonio Spurs",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "giricgo01": [
+   {
+    "player": "Gordan Giriček",
+    "club": "Utah Jazz",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "glovedi01": [
+   {
+    "player": "Dion Glover",
+    "club": "San Antonio Spurs",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "goldwan01": [
+   {
+    "player": "Anthony Goldwire",
+    "club": "Detroit Pistons",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   },
+   {
+    "player": "Anthony Goldwire",
+    "club": "Milwaukee Bucks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "goodedr01": [
+   {
+    "player": "Drew Gooden",
+    "club": "Cleveland Cavaliers",
+    "number": "90",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "gordobe01": [
+   {
+    "player": "Ben Gordon",
+    "club": "Chicago Bulls",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "grantbr01": [
+   {
+    "player": "Brian Grant",
+    "club": "Los Angeles Lakers",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "greenwi01": [
+   {
+    "player": "Willie Green",
+    "club": "Philadelphia 76ers",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   }
+  ],
+  "griffad01": [
+   {
+    "player": "Adrian Griffin",
+    "club": "Chicago Bulls",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "griffed01": [
+   {
+    "player": "Eddie Griffin",
+    "club": "Minnesota Timberwolves",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "guglito01": [
+   {
+    "player": "Tom Gugliotta",
+    "club": "Atlanta Hawks",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   },
+   {
+    "player": "Tom Gugliotta",
+    "club": "Boston Celtics",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   }
+  ],
+  "haislma01": [
+   {
+    "player": "Marcus Haislip",
+    "club": "Indiana Pacers",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "hamda01": [
+   {
+    "player": "Darvin Ham",
+    "club": "Detroit Pistons",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "hamilri01": [
+   {
+    "player": "Richard Hamilton",
+    "club": "Detroit Pistons",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "hamilze01": [
+   {
+    "player": "Zendon Hamilton",
+    "club": "Milwaukee Bucks",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "handlbe01": [
+   {
+    "player": "Ben Handlogten",
+    "club": "Utah Jazz",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "hardaan01": [
+   {
+    "player": "Anfernee Hardaway",
+    "club": "New York Knicks",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "harprma01": [
+   {
+    "player": "Matt Harpring",
+    "club": "Utah Jazz",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "harrial01": [
+   {
+    "player": "Al Harrington",
+    "club": "Atlanta Hawks",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "harrida01": [
+   {
+    "player": "David Harrison",
+    "club": "Indiana Pacers",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "harride01": [
+   {
+    "player": "Devin Harris",
+    "club": "Dallas Mavericks",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   }
+  ],
+  "harriju01": [
+   {
+    "player": "Junior Harrington",
+    "club": "New Orleans Hornets",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "harrilu01": [
+   {
+    "player": "Lucious Harris",
+    "club": "Cleveland Cavaliers",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "harriot01": [
+   {
+    "player": "Othella Harrington",
+    "club": "Chicago Bulls",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "hartja01": [
+   {
+    "player": "Jason Hart",
+    "club": "Charlotte Bobcats",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "harvedo01": [
+   {
+    "player": "Donnell Harvey",
+    "club": "New Jersey Nets",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "hasleud01": [
+   {
+    "player": "Udonis Haslem",
+    "club": "Miami Heat",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "hassetr01": [
+   {
+    "player": "Trenton Hassell",
+    "club": "Minnesota Timberwolves",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "hayesja01": [
+   {
+    "player": "Jarvis Hayes",
+    "club": "Washington Wizards",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "haywobr01": [
+   {
+    "player": "Brendan Haywood",
+    "club": "Washington Wizards",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "hendeal01": [
+   {
+    "player": "Alan Henderson",
+    "club": "Dallas Mavericks",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   }
+  ],
+  "hilarne01": [
+   {
+    "player": "Nenê",
+    "club": "Denver Nuggets",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   }
+  ],
+  "hillgr01": [
+   {
+    "player": "Grant Hill",
+    "club": "Orlando Magic",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "hinriki01": [
+   {
+    "player": "Kirk Hinrich",
+    "club": "Chicago Bulls",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "hoibefr01": [
+   {
+    "player": "Fred Hoiberg",
+    "club": "Minnesota Timberwolves",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "horryro01": [
+   {
+    "player": "Robert Horry",
+    "club": "San Antonio Spurs",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "houseed01": [
+   {
+    "player": "Eddie House",
+    "club": "Charlotte Bobcats",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   },
+   {
+    "player": "Eddie House",
+    "club": "Milwaukee Bucks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   },
+   {
+    "player": "Eddie House",
+    "club": "Sacramento Kings",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "houstal01": [
+   {
+    "player": "Allan Houston",
+    "club": "New York Knicks",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "howardw01": [
+   {
+    "player": "Dwight Howard",
+    "club": "Orlando Magic",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "howarjo01": [
+   {
+    "player": "Josh Howard",
+    "club": "Dallas Mavericks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   }
+  ],
+  "howarju01": [
+   {
+    "player": "Juwan Howard",
+    "club": "Houston Rockets",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "hudsotr01": [
+   {
+    "player": "Troy Hudson",
+    "club": "Minnesota Timberwolves",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "hughela01": [
+   {
+    "player": "Larry Hughes",
+    "club": "Washington Wizards",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "humphkr01": [
+   {
+    "player": "Kris Humphries",
+    "club": "Utah Jazz",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "humphry01": [
+   {
+    "player": "Ryan Humphrey",
+    "club": "Memphis Grizzlies",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "huntebr01": [
+   {
+    "player": "Brandon Hunter",
+    "club": "Orlando Magic",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "hunteli01": [
+   {
+    "player": "Lindsey Hunter",
+    "club": "Detroit Pistons",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "huntest01": [
+   {
+    "player": "Steven Hunter",
+    "club": "Phoenix Suns",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "iguodan01": [
+   {
+    "player": "Andre Iguodala",
+    "club": "Philadelphia 76ers",
+    "number": "4, 9",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html",
+    "note": "Two numbers listed on the team page: changed number during the season."
+   }
+  ],
+  "ilgauzy01": [
+   {
+    "player": "Zydrunas Ilgauskas",
+    "club": "Cleveland Cavaliers",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "iversal01": [
+   {
+    "player": "Allen Iverson",
+    "club": "Philadelphia 76ers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   }
+  ],
+  "iveyro01": [
+   {
+    "player": "Royal Ivey",
+    "club": "Atlanta Hawks",
+    "number": "36",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "jacksbo01": [
+   {
+    "player": "Bobby Jackson",
+    "club": "Sacramento Kings",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "jacksje01": [
+   {
+    "player": "Jermaine Jackson",
+    "club": "New York Knicks",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "jacksji01": [
+   {
+    "player": "Jim Jackson",
+    "club": "Houston Rockets",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   },
+   {
+    "player": "Jim Jackson",
+    "club": "Phoenix Suns",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "jackslu02": [
+   {
+    "player": "Luke Jackson",
+    "club": "Cleveland Cavaliers",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "jacksma02": [
+   {
+    "player": "Marc Jackson",
+    "club": "Philadelphia 76ers",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   }
+  ],
+  "jacksst02": [
+   {
+    "player": "Stephen Jackson",
+    "club": "Indiana Pacers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "jacobca01": [
+   {
+    "player": "Casey Jacobsen",
+    "club": "New Orleans Hornets",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   },
+   {
+    "player": "Casey Jacobsen",
+    "club": "Phoenix Suns",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "jamesje01": [
+   {
+    "player": "Jerome James",
+    "club": "Seattle SuperSonics",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "jamesle01": [
+   {
+    "player": "LeBron James",
+    "club": "Cleveland Cavaliers",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "jamesmi01": [
+   {
+    "player": "Mike James",
+    "club": "Houston Rockets",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   },
+   {
+    "player": "Mike James",
+    "club": "Milwaukee Bucks",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "jamisan01": [
+   {
+    "player": "Antawn Jamison",
+    "club": "Washington Wizards",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "jaricma01": [
+   {
+    "player": "Marko Jarić",
+    "club": "Los Angeles Clippers",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "jeffeal01": [
+   {
+    "player": "Al Jefferson",
+    "club": "Boston Celtics",
+    "number": "7, 8",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html",
+    "note": "Two numbers listed on the team page: changed number during the season."
+   }
+  ],
+  "jefferi01": [
+   {
+    "player": "Richard Jefferson",
+    "club": "New Jersey Nets",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "jeffrja01": [
+   {
+    "player": "Jared Jeffries",
+    "club": "Washington Wizards",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "jenkiho01": [
+   {
+    "player": "Horace Jenkins",
+    "club": "Detroit Pistons",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "johnsan02": [
+   {
+    "player": "Anthony Johnson",
+    "club": "Indiana Pacers",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "johnsbr01": [
+   {
+    "player": "Britton Johnsen",
+    "club": "Indiana Pacers",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "johnsde03": [
+   {
+    "player": "DerMarr Johnson",
+    "club": "Denver Nuggets",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   }
+  ],
+  "johnser02": [
+   {
+    "player": "Ervin Johnson",
+    "club": "Minnesota Timberwolves",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "johnsjo02": [
+   {
+    "player": "Joe Johnson",
+    "club": "Phoenix Suns",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "johnsli01": [
+   {
+    "player": "Linton Johnson",
+    "club": "San Antonio Spurs",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "jonesda01": [
+   {
+    "player": "Damon Jones",
+    "club": "Miami Heat",
+    "number": "19",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "jonesda02": [
+   {
+    "player": "Dahntay Jones",
+    "club": "Memphis Grizzlies",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "jonesed02": [
+   {
+    "player": "Eddie Jones",
+    "club": "Miami Heat",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "jonesfr01": [
+   {
+    "player": "Fred Jones",
+    "club": "Indiana Pacers",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "jonesja02": [
+   {
+    "player": "James Jones",
+    "club": "Indiana Pacers",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "jonesju01": [
+   {
+    "player": "Jumaine Jones",
+    "club": "Los Angeles Lakers",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "jonesma03": [
+   {
+    "player": "Mark Jones",
+    "club": "Orlando Magic",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "kamanch01": [
+   {
+    "player": "Chris Kaman",
+    "club": "Los Angeles Clippers",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "kaponja01": [
+   {
+    "player": "Jason Kapono",
+    "club": "Charlotte Bobcats",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "kasunma01": [
+   {
+    "player": "Mario Kasun",
+    "club": "Orlando Magic",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "khryavi01": [
+   {
+    "player": "Viktor Khryapa",
+    "club": "Portland Trail Blazers",
+    "number": "38",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "kiddja01": [
+   {
+    "player": "Jason Kidd",
+    "club": "New Jersey Nets",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "kirilan01": [
+   {
+    "player": "Andrei Kirilenko",
+    "club": "Utah Jazz",
+    "number": "47",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "kittlke01": [
+   {
+    "player": "Kerry Kittles",
+    "club": "Los Angeles Clippers",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "knighbr01": [
+   {
+    "player": "Brevin Knight",
+    "club": "Charlotte Bobcats",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "knighbr02": [
+   {
+    "player": "Brandin Knight",
+    "club": "Houston Rockets",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "korveky01": [
+   {
+    "player": "Kyle Korver",
+    "club": "Philadelphia 76ers",
+    "number": "26",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   }
+  ],
+  "krstine01": [
+   {
+    "player": "Nenad Krstić",
+    "club": "New Jersey Nets",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "kukocto01": [
+   {
+    "player": "Toni Kukoč",
+    "club": "Milwaukee Bucks",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "kutluib01": [
+   {
+    "player": "Ibo Kutluay",
+    "club": "Seattle SuperSonics",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "laettch01": [
+   {
+    "player": "Christian Laettner",
+    "club": "Miami Heat",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "lafrera01": [
+   {
+    "player": "Raef LaFrentz",
+    "club": "Boston Celtics",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   }
+  ],
+  "lampema01": [
+   {
+    "player": "Maciej Lampe",
+    "club": "New Orleans Hornets",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   },
+   {
+    "player": "Maciej Lampe",
+    "club": "Phoenix Suns",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "lenarvo01": [
+   {
+    "player": "Voshon Lenard",
+    "club": "Denver Nuggets",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   }
+  ],
+  "lewisra02": [
+   {
+    "player": "Rashard Lewis",
+    "club": "Seattle SuperSonics",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "livinra01": [
+   {
+    "player": "Randy Livingston",
+    "club": "Utah Jazz",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "livinsh01": [
+   {
+    "player": "Shaun Livingston",
+    "club": "Los Angeles Clippers",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "lopezra01": [
+   {
+    "player": "Raül López",
+    "club": "Utah Jazz",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "luety01": [
+   {
+    "player": "Tyronn Lue",
+    "club": "Atlanta Hawks",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   },
+   {
+    "player": "Tyronn Lue",
+    "club": "Houston Rockets",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "lynchge01": [
+   {
+    "player": "George Lynch",
+    "club": "New Orleans Hornets",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "madsema01": [
+   {
+    "player": "Mark Madsen",
+    "club": "Minnesota Timberwolves",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "maggeco01": [
+   {
+    "player": "Corey Maggette",
+    "club": "Los Angeles Clippers",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "magloja01": [
+   {
+    "player": "Jamaal Magloire",
+    "club": "New Orleans Hornets",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "marbust01": [
+   {
+    "player": "Stephon Marbury",
+    "club": "New York Knicks",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "mariosh01": [
+   {
+    "player": "Shawn Marion",
+    "club": "Phoenix Suns",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "marksse01": [
+   {
+    "player": "Sean Marks",
+    "club": "San Antonio Spurs",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "marshdo01": [
+   {
+    "player": "Donyell Marshall",
+    "club": "Toronto Raptors",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "martida01": [
+   {
+    "player": "Darrick Martin",
+    "club": "Los Angeles Clippers",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "martike01": [
+   {
+    "player": "Kenyon Martin",
+    "club": "Denver Nuggets",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   }
+  ],
+  "martike02": [
+   {
+    "player": "Kevin Martin",
+    "club": "Sacramento Kings",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "masonde01": [
+   {
+    "player": "Desmond Mason",
+    "club": "Milwaukee Bucks",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "masseto01": [
+   {
+    "player": "Tony Massenburg",
+    "club": "San Antonio Spurs",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "mbengdj01": [
+   {
+    "player": "D.J. Mbenga",
+    "club": "Dallas Mavericks",
+    "number": "28",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   }
+  ],
+  "mccarwa01": [
+   {
+    "player": "Walter McCarty",
+    "club": "Boston Celtics",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   },
+   {
+    "player": "Walter McCarty",
+    "club": "Phoenix Suns",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "mccoyje01": [
+   {
+    "player": "Jelani McCoy",
+    "club": "Atlanta Hawks",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "mcdyean01": [
+   {
+    "player": "Antonio McDyess",
+    "club": "Detroit Pistons",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "mcgratr01": [
+   {
+    "player": "Tracy McGrady",
+    "club": "Houston Rockets",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "mcinnje01": [
+   {
+    "player": "Jeff McInnis",
+    "club": "Cleveland Cavaliers",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "mckieaa01": [
+   {
+    "player": "Aaron McKie",
+    "club": "Philadelphia 76ers",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   }
+  ],
+  "mcleoke01": [
+   {
+    "player": "Keith McLeod",
+    "club": "Utah Jazz",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "medvest01": [
+   {
+    "player": "Stanislav Medvedenko",
+    "club": "Los Angeles Lakers",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "mercero01": [
+   {
+    "player": "Ron Mercer",
+    "club": "New Jersey Nets",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "mihmch01": [
+   {
+    "player": "Chris Mihm",
+    "club": "Los Angeles Lakers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "milesda01": [
+   {
+    "player": "Darius Miles",
+    "club": "Portland Trail Blazers",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "milicda01": [
+   {
+    "player": "Darko Miličić",
+    "club": "Detroit Pistons",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "millean01": [
+   {
+    "player": "Anthony Miller",
+    "club": "Atlanta Hawks",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "millean02": [
+   {
+    "player": "Andre Miller",
+    "club": "Denver Nuggets",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   }
+  ],
+  "millebr01": [
+   {
+    "player": "Brad Miller",
+    "club": "Sacramento Kings",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "millemi01": [
+   {
+    "player": "Mike Miller",
+    "club": "Memphis Grizzlies",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "millere01": [
+   {
+    "player": "Reggie Miller",
+    "club": "Indiana Pacers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "mingya01": [
+   {
+    "player": "Yao Ming",
+    "club": "Houston Rockets",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "moblecu01": [
+   {
+    "player": "Cuttino Mobley",
+    "club": "Orlando Magic",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   },
+   {
+    "player": "Cuttino Mobley",
+    "club": "Sacramento Kings",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "mohamna01": [
+   {
+    "player": "Nazr Mohammed",
+    "club": "New York Knicks",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   },
+   {
+    "player": "Nazr Mohammed",
+    "club": "San Antonio Spurs",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "moisoje01": [
+   {
+    "player": "Jérôme Moïso",
+    "club": "Cleveland Cavaliers",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   },
+   {
+    "player": "Jérôme Moïso",
+    "club": "New Jersey Nets",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   },
+   {
+    "player": "Jérôme Moïso",
+    "club": "Toronto Raptors",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "mooremi01": [
+   {
+    "player": "Mikki Moore",
+    "club": "Los Angeles Clippers",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "mournal01": [
+   {
+    "player": "Alonzo Mourning",
+    "club": "Miami Heat",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   },
+   {
+    "player": "Alonzo Mourning",
+    "club": "New Jersey Nets",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "murphtr01": [
+   {
+    "player": "Troy Murphy",
+    "club": "Golden State Warriors",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "murrala01": [
+   {
+    "player": "Lamond Murray",
+    "club": "Toronto Raptors",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "murraro01": [
+   {
+    "player": "Ronald Murray",
+    "club": "Seattle SuperSonics",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "mutomdi01": [
+   {
+    "player": "Dikembe Mutombo",
+    "club": "Houston Rockets",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "nachbbo01": [
+   {
+    "player": "Boštjan Nachbar",
+    "club": "Houston Rockets",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   },
+   {
+    "player": "Boštjan Nachbar",
+    "club": "New Orleans Hornets",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "nailole01": [
+   {
+    "player": "Lee Nailon",
+    "club": "New Orleans Hornets",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "najered01": [
+   {
+    "player": "Eduardo Nájera",
+    "club": "Denver Nuggets",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   },
+   {
+    "player": "Eduardo Nájera",
+    "club": "Golden State Warriors",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "nashst01": [
+   {
+    "player": "Steve Nash",
+    "club": "Phoenix Suns",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "ndiayma02": [
+   {
+    "player": "Mamadou N'Diaye",
+    "club": "Los Angeles Clippers",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "nelsoja01": [
+   {
+    "player": "Jameer Nelson",
+    "club": "Orlando Magic",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "nestera01": [
+   {
+    "player": "Rasho Nesterović",
+    "club": "San Antonio Spurs",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "newblir01": [
+   {
+    "player": "Ira Newble",
+    "club": "Cleveland Cavaliers",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "nocioan01": [
+   {
+    "player": "Andrés Nocioni",
+    "club": "Chicago Bulls",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "norrimo01": [
+   {
+    "player": "Moochie Norris",
+    "club": "Houston Rockets",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   },
+   {
+    "player": "Moochie Norris",
+    "club": "New York Knicks",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "nowitdi01": [
+   {
+    "player": "Dirk Nowitzki",
+    "club": "Dallas Mavericks",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   }
+  ],
+  "odomla01": [
+   {
+    "player": "Lamar Odom",
+    "club": "Los Angeles Lakers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "okafoem01": [
+   {
+    "player": "Emeka Okafor",
+    "club": "Charlotte Bobcats",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "okurme01": [
+   {
+    "player": "Mehmet Okur",
+    "club": "Utah Jazz",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "ollieke01": [
+   {
+    "player": "Kevin Ollie",
+    "club": "Philadelphia 76ers",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   }
+  ],
+  "olowomi01": [
+   {
+    "player": "Michael Olowokandi",
+    "club": "Minnesota Timberwolves",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "onealje01": [
+   {
+    "player": "Jermaine O'Neal",
+    "club": "Indiana Pacers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "onealsh01": [
+   {
+    "player": "Shaquille O'Neal",
+    "club": "Miami Heat",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "ostergr01": [
+   {
+    "player": "Greg Ostertag",
+    "club": "Sacramento Kings",
+    "number": "00",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "outlabo01": [
+   {
+    "player": "Bo Outlaw",
+    "club": "Phoenix Suns",
+    "number": "46",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "outlatr01": [
+   {
+    "player": "Travis Outlaw",
+    "club": "Portland Trail Blazers",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "pachuza01": [
+   {
+    "player": "Zaza Pachulia",
+    "club": "Milwaukee Bucks",
+    "number": "27",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "padgesc01": [
+   {
+    "player": "Scott Padgett",
+    "club": "Houston Rockets",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "palacmi01": [
+   {
+    "player": "Milt Palacio",
+    "club": "Toronto Raptors",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "pargoja01": [
+   {
+    "player": "Jannero Pargo",
+    "club": "Chicago Bulls",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "parkesm01": [
+   {
+    "player": "Smush Parker",
+    "club": "Detroit Pistons",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   },
+   {
+    "player": "Smush Parker",
+    "club": "Phoenix Suns",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "parketo01": [
+   {
+    "player": "Tony Parker",
+    "club": "San Antonio Spurs",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "patteru01": [
+   {
+    "player": "Ruben Patterson",
+    "club": "Portland Trail Blazers",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "pavloal01": [
+   {
+    "player": "Sasha Pavlović",
+    "club": "Cleveland Cavaliers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "paytoga01": [
+   {
+    "player": "Gary Payton",
+    "club": "Boston Celtics",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   }
+  ],
+  "peelean01": [
+   {
+    "player": "Anthony Peeler",
+    "club": "Washington Wizards",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "penneki01": [
+   {
+    "player": "Kirk Penney",
+    "club": "Los Angeles Clippers",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "perkike01": [
+   {
+    "player": "Kendrick Perkins",
+    "club": "Boston Celtics",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   }
+  ],
+  "persowe01": [
+   {
+    "player": "Wesley Person",
+    "club": "Denver Nuggets",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   },
+   {
+    "player": "Wesley Person",
+    "club": "Miami Heat",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "petermo01": [
+   {
+    "player": "Morris Peterson",
+    "club": "Toronto Raptors",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "piatker01": [
+   {
+    "player": "Eric Piatkowski",
+    "club": "Chicago Bulls",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "piercpa01": [
+   {
+    "player": "Paul Pierce",
+    "club": "Boston Celtics",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   }
+  ],
+  "pietrmi01": [
+   {
+    "player": "Mickaël Piétrus",
+    "club": "Golden State Warriors",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "planizo01": [
+   {
+    "player": "Zoran Planinić",
+    "club": "New Jersey Nets",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "podkopa01": [
+   {
+    "player": "Pavel Podkolzin",
+    "club": "Dallas Mavericks",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   }
+  ],
+  "pollasc01": [
+   {
+    "player": "Scot Pollard",
+    "club": "Indiana Pacers",
+    "number": "62",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "popema01": [
+   {
+    "player": "Mark Pope",
+    "club": "Denver Nuggets",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   }
+  ],
+  "poseyja01": [
+   {
+    "player": "James Posey",
+    "club": "Memphis Grizzlies",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "potapvi01": [
+   {
+    "player": "Vitaly Potapenko",
+    "club": "Seattle SuperSonics",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "princta01": [
+   {
+    "player": "Tayshaun Prince",
+    "club": "Detroit Pistons",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "profila01": [
+   {
+    "player": "Laron Profit",
+    "club": "Washington Wizards",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "przybjo01": [
+   {
+    "player": "Joel Przybilla",
+    "club": "Portland Trail Blazers",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "radmavl01": [
+   {
+    "player": "Vladimir Radmanović",
+    "club": "Seattle SuperSonics",
+    "number": "77",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "radojal01": [
+   {
+    "player": "Aleksandar Radojević",
+    "club": "Utah Jazz",
+    "number": "51",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "ramospe01": [
+   {
+    "player": "Peter John Ramos",
+    "club": "Washington Wizards",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "randoza01": [
+   {
+    "player": "Zach Randolph",
+    "club": "Portland Trail Blazers",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "ratlith01": [
+   {
+    "player": "Theo Ratliff",
+    "club": "Portland Trail Blazers",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "rebraze01": [
+   {
+    "player": "Željko Rebrača",
+    "club": "Los Angeles Clippers",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "reddmi01": [
+   {
+    "player": "Michael Redd",
+    "club": "Milwaukee Bucks",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "reedju01": [
+   {
+    "player": "Justin Reed",
+    "club": "Boston Celtics",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   }
+  ],
+  "reineja01": [
+   {
+    "player": "Jared Reiner",
+    "club": "Chicago Bulls",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "richaja01": [
+   {
+    "player": "Jason Richardson",
+    "club": "Golden State Warriors",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "richaqu01": [
+   {
+    "player": "Quentin Richardson",
+    "club": "Phoenix Suns",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "ridnolu01": [
+   {
+    "player": "Luke Ridnour",
+    "club": "Seattle SuperSonics",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "robinbe01": [
+   {
+    "player": "Bernard Robinson",
+    "club": "Charlotte Bobcats",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "robincl02": [
+   {
+    "player": "Clifford Robinson",
+    "club": "Golden State Warriors",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   },
+   {
+    "player": "Clifford Robinson",
+    "club": "New Jersey Nets",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "robingl01": [
+   {
+    "player": "Glenn Robinson",
+    "club": "San Antonio Spurs",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "rogerro01": [
+   {
+    "player": "Rodney Rogers",
+    "club": "New Orleans Hornets",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   },
+   {
+    "player": "Rodney Rogers",
+    "club": "Philadelphia 76ers",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   }
+  ],
+  "roseja01": [
+   {
+    "player": "Jalen Rose",
+    "club": "Toronto Raptors",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "rosema01": [
+   {
+    "player": "Malik Rose",
+    "club": "New York Knicks",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   },
+   {
+    "player": "Malik Rose",
+    "club": "San Antonio Spurs",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "rossqu01": [
+   {
+    "player": "Quinton Ross",
+    "club": "Los Angeles Clippers",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "ruffimi01": [
+   {
+    "player": "Michael Ruffin",
+    "club": "Washington Wizards",
+    "number": "51",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "rushka01": [
+   {
+    "player": "Kareem Rush",
+    "club": "Charlotte Bobcats",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   },
+   {
+    "player": "Kareem Rush",
+    "club": "Los Angeles Lakers",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "russebr01": [
+   {
+    "player": "Bryon Russell",
+    "club": "Denver Nuggets",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   }
+  ],
+  "salmojo01": [
+   {
+    "player": "John Salmons",
+    "club": "Philadelphia 76ers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   }
+  ],
+  "sampsja01": [
+   {
+    "player": "Jamal Sampson",
+    "club": "Charlotte Bobcats",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "santida01": [
+   {
+    "player": "Daniel Santiago",
+    "club": "Milwaukee Bucks",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "scalabr01": [
+   {
+    "player": "Brian Scalabrine",
+    "club": "New Jersey Nets",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "sesayan01": [
+   {
+    "player": "Ansu Sesay",
+    "club": "Golden State Warriors",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "seungha01": [
+   {
+    "player": "Ha Seung-Jin",
+    "club": "Portland Trail Blazers",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "shirlpa01": [
+   {
+    "player": "Paul Shirley",
+    "club": "Phoenix Suns",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "simmobo01": [
+   {
+    "player": "Bobby Simmons",
+    "club": "Los Angeles Clippers",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "skinnbr01": [
+   {
+    "player": "Brian Skinner",
+    "club": "Philadelphia 76ers",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   },
+   {
+    "player": "Brian Skinner",
+    "club": "Sacramento Kings",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "slayta01": [
+   {
+    "player": "Tamar Slay",
+    "club": "Charlotte Bobcats",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "smithdo04": [
+   {
+    "player": "Donta Smith",
+    "club": "Atlanta Hawks",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "smithja01": [
+   {
+    "player": "Jabari Smith",
+    "club": "New Jersey Nets",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "smithjo02": [
+   {
+    "player": "Joe Smith",
+    "club": "Milwaukee Bucks",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "smithjo03": [
+   {
+    "player": "Josh Smith",
+    "club": "Atlanta Hawks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "smithjr01": [
+   {
+    "player": "J.R. Smith",
+    "club": "New Orleans Hornets",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "smithst01": [
+   {
+    "player": "Steve Smith",
+    "club": "Charlotte Bobcats",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   },
+   {
+    "player": "Steve Smith",
+    "club": "Miami Heat",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "smithth01": [
+   {
+    "player": "Theron Smith",
+    "club": "Charlotte Bobcats",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "snower01": [
+   {
+    "player": "Eric Snow",
+    "club": "Cleveland Cavaliers",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "snydeki01": [
+   {
+    "player": "Kirk Snyder",
+    "club": "Utah Jazz",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/UTA/2005.html"
+   }
+  ],
+  "songada01": [
+   {
+    "player": "Darius Songaila",
+    "club": "Sacramento Kings",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "sowpa01": [
+   {
+    "player": "Pape Sow",
+    "club": "Toronto Raptors",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "sprewla01": [
+   {
+    "player": "Latrell Sprewell",
+    "club": "Minnesota Timberwolves",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "stackje01": [
+   {
+    "player": "Jerry Stackhouse",
+    "club": "Dallas Mavericks",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   }
+  ],
+  "stevede01": [
+   {
+    "player": "DeShawn Stevenson",
+    "club": "Orlando Magic",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "stewami01": [
+   {
+    "player": "Michael Stewart",
+    "club": "Atlanta Hawks",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "stojape01": [
+   {
+    "player": "Peja Stojaković",
+    "club": "Sacramento Kings",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "storeaw01": [
+   {
+    "player": "Awvee Storey",
+    "club": "New Jersey Nets",
+    "number": "26",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "stoudam01": [
+   {
+    "player": "Amar'e Stoudemire",
+    "club": "Phoenix Suns",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "stoudda01": [
+   {
+    "player": "Damon Stoudamire",
+    "club": "Portland Trail Blazers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "stricer01": [
+   {
+    "player": "Erick Strickland",
+    "club": "Milwaukee Bucks",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "stricro02": [
+   {
+    "player": "Rod Strickland",
+    "club": "Houston Rockets",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "sundobr01": [
+   {
+    "player": "Bruno Šundov",
+    "club": "New York Knicks",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "surabo01": [
+   {
+    "player": "Bob Sura",
+    "club": "Houston Rockets",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "sweetmi01": [
+   {
+    "player": "Mike Sweetney",
+    "club": "New York Knicks",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "swiftro01": [
+   {
+    "player": "Robert Swift",
+    "club": "Seattle SuperSonics",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "swiftst01": [
+   {
+    "player": "Stromile Swift",
+    "club": "Memphis Grizzlies",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "szczewa02": [
+   {
+    "player": "Wally Szczerbiak",
+    "club": "Minnesota Timberwolves",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "tabusyu01": [
+   {
+    "player": "Yuta Tabuse",
+    "club": "Phoenix Suns",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "tayloma01": [
+   {
+    "player": "Maurice Taylor",
+    "club": "Houston Rockets",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   },
+   {
+    "player": "Maurice Taylor",
+    "club": "New York Knicks",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "telfase01": [
+   {
+    "player": "Sebastian Telfair",
+    "club": "Portland Trail Blazers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "terryja01": [
+   {
+    "player": "Jason Terry",
+    "club": "Dallas Mavericks",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   }
+  ],
+  "thomabi01": [
+   {
+    "player": "Billy Thomas",
+    "club": "New Jersey Nets",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "thomaet01": [
+   {
+    "player": "Etan Thomas",
+    "club": "Washington Wizards",
+    "number": "36",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "thomaja02": [
+   {
+    "player": "James Thomas",
+    "club": "Atlanta Hawks",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   },
+   {
+    "player": "James Thomas",
+    "club": "Portland Trail Blazers",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "thomajo02": [
+   {
+    "player": "John Thomas",
+    "club": "Minnesota Timberwolves",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/MIN/2005.html"
+   }
+  ],
+  "thomake01": [
+   {
+    "player": "Kenny Thomas",
+    "club": "Philadelphia 76ers",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   },
+   {
+    "player": "Kenny Thomas",
+    "club": "Sacramento Kings",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "thomaku01": [
+   {
+    "player": "Kurt Thomas",
+    "club": "New York Knicks",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "thomati01": [
+   {
+    "player": "Tim Thomas",
+    "club": "New York Knicks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "tinslja01": [
+   {
+    "player": "Jamaal Tinsley",
+    "club": "Indiana Pacers",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/IND/2005.html"
+   }
+  ],
+  "traylro01": [
+   {
+    "player": "Robert Traylor",
+    "club": "Cleveland Cavaliers",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "tsakaja01": [
+   {
+    "player": "Jake Tsakalidis",
+    "club": "Memphis Grizzlies",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "tskitni01": [
+   {
+    "player": "Nikoloz Tskitishvili",
+    "club": "Denver Nuggets",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   },
+   {
+    "player": "Nikoloz Tskitishvili",
+    "club": "Golden State Warriors",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "turkohe01": [
+   {
+    "player": "Hedo Türkoğlu",
+    "club": "Orlando Magic",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/ORL/2005.html"
+   }
+  ],
+  "udrihbe01": [
+   {
+    "player": "Beno Udrih",
+    "club": "San Antonio Spurs",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "vanexni01": [
+   {
+    "player": "Nick Van Exel",
+    "club": "Portland Trail Blazers",
+    "number": "19",
+    "source": "https://www.basketball-reference.com/teams/POR/2005.html"
+   }
+  ],
+  "vanhoke01": [
+   {
+    "player": "Keith Van Horn",
+    "club": "Dallas Mavericks",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/DAL/2005.html"
+   },
+   {
+    "player": "Keith Van Horn",
+    "club": "Milwaukee Bucks",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "varejan01": [
+   {
+    "player": "Anderson Varejão",
+    "club": "Cleveland Cavaliers",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "vaughja01": [
+   {
+    "player": "Jacque Vaughn",
+    "club": "New Jersey Nets",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   }
+  ],
+  "voskuja01": [
+   {
+    "player": "Jake Voskuhl",
+    "club": "Phoenix Suns",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "vromaja01": [
+   {
+    "player": "Jackson Vroman",
+    "club": "New Orleans Hornets",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   },
+   {
+    "player": "Jackson Vroman",
+    "club": "Phoenix Suns",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/PHO/2005.html"
+   }
+  ],
+  "vujacsa01": [
+   {
+    "player": "Sasha Vujačić",
+    "club": "Los Angeles Lakers",
+    "number": "18",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "wagneda02": [
+   {
+    "player": "Dajuan Wagner",
+    "club": "Cleveland Cavaliers",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "walkean02": [
+   {
+    "player": "Antoine Walker",
+    "club": "Atlanta Hawks",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   },
+   {
+    "player": "Antoine Walker",
+    "club": "Boston Celtics",
+    "number": "88",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   }
+  ],
+  "walkesa01": [
+   {
+    "player": "Samaki Walker",
+    "club": "Washington Wizards",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/WAS/2005.html"
+   }
+  ],
+  "wallabe01": [
+   {
+    "player": "Ben Wallace",
+    "club": "Detroit Pistons",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "wallage01": [
+   {
+    "player": "Gerald Wallace",
+    "club": "Charlotte Bobcats",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "wallara01": [
+   {
+    "player": "Rasheed Wallace",
+    "club": "Detroit Pistons",
+    "number": "36",
+    "source": "https://www.basketball-reference.com/teams/DET/2005.html"
+   }
+  ],
+  "waltolu01": [
+   {
+    "player": "Luke Walton",
+    "club": "Los Angeles Lakers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/LAL/2005.html"
+   }
+  ],
+  "wardch01": [
+   {
+    "player": "Charlie Ward",
+    "club": "Houston Rockets",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "watsoea01": [
+   {
+    "player": "Earl Watson",
+    "club": "Memphis Grizzlies",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "weathcl01": [
+   {
+    "player": "Clarence Weatherspoon",
+    "club": "Houston Rockets",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   }
+  ],
+  "webbech01": [
+   {
+    "player": "Chris Webber",
+    "club": "Philadelphia 76ers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   },
+   {
+    "player": "Chris Webber",
+    "club": "Sacramento Kings",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "wellsbo01": [
+   {
+    "player": "Bonzi Wells",
+    "club": "Memphis Grizzlies",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "welscji01": [
+   {
+    "player": "Jiří Welsch",
+    "club": "Boston Celtics",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   },
+   {
+    "player": "Jiří Welsch",
+    "club": "Cleveland Cavaliers",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "wesleda01": [
+   {
+    "player": "David Wesley",
+    "club": "Houston Rockets",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/HOU/2005.html"
+   },
+   {
+    "player": "David Wesley",
+    "club": "New Orleans Hornets",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "westda01": [
+   {
+    "player": "David West",
+    "club": "New Orleans Hornets",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/NOH/2005.html"
+   }
+  ],
+  "westde01": [
+   {
+    "player": "Delonte West",
+    "club": "Boston Celtics",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/BOS/2005.html"
+   }
+  ],
+  "whiteja01": [
+   {
+    "player": "Jahidi White",
+    "club": "Charlotte Bobcats",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/CHA/2005.html"
+   }
+  ],
+  "whitero02": [
+   {
+    "player": "Rodney White",
+    "club": "Denver Nuggets",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/DEN/2005.html"
+   },
+   {
+    "player": "Rodney White",
+    "club": "Golden State Warriors",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/GSW/2005.html"
+   }
+  ],
+  "wilcoch01": [
+   {
+    "player": "Chris Wilcox",
+    "club": "Los Angeles Clippers",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/LAC/2005.html"
+   }
+  ],
+  "wilkida02": [
+   {
+    "player": "Damien Wilkins",
+    "club": "Seattle SuperSonics",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/SEA/2005.html"
+   }
+  ],
+  "wilksmi01": [
+   {
+    "player": "Mike Wilks",
+    "club": "San Antonio Spurs",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/SAS/2005.html"
+   }
+  ],
+  "williaa01": [
+   {
+    "player": "Aaron Williams",
+    "club": "New Jersey Nets",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   },
+   {
+    "player": "Aaron Williams",
+    "club": "Toronto Raptors",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "willico02": [
+   {
+    "player": "Corliss Williamson",
+    "club": "Philadelphia 76ers",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/PHI/2005.html"
+   },
+   {
+    "player": "Corliss Williamson",
+    "club": "Sacramento Kings",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/SAC/2005.html"
+   }
+  ],
+  "willier01": [
+   {
+    "player": "Eric Williams",
+    "club": "New Jersey Nets",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/NJN/2005.html"
+   },
+   {
+    "player": "Eric Williams",
+    "club": "Toronto Raptors",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "willifr02": [
+   {
+    "player": "Frank Williams",
+    "club": "Chicago Bulls",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/CHI/2005.html"
+   }
+  ],
+  "willija02": [
+   {
+    "player": "Jason Williams",
+    "club": "Memphis Grizzlies",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "willije01": [
+   {
+    "player": "Jerome Williams",
+    "club": "New York Knicks",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/NYK/2005.html"
+   }
+  ],
+  "willike02": [
+   {
+    "player": "Kevin Willis",
+    "club": "Atlanta Hawks",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/ATL/2005.html"
+   }
+  ],
+  "willima01": [
+   {
+    "player": "Mo Williams",
+    "club": "Milwaukee Bucks",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/MIL/2005.html"
+   }
+  ],
+  "willisc01": [
+   {
+    "player": "Scott Williams",
+    "club": "Cleveland Cavaliers",
+    "number": "47",
+    "source": "https://www.basketball-reference.com/teams/CLE/2005.html"
+   }
+  ],
+  "woodslo01": [
+   {
+    "player": "Loren Woods",
+    "club": "Toronto Raptors",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/TOR/2005.html"
+   }
+  ],
+  "woodsqy01": [
+   {
+    "player": "Qyntel Woods",
+    "club": "Miami Heat",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "wrighdo01": [
+   {
+    "player": "Dorell Wright",
+    "club": "Miami Heat",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ],
+  "wrighlo02": [
+   {
+    "player": "Lorenzen Wright",
+    "club": "Memphis Grizzlies",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/MEM/2005.html"
+   }
+  ],
+  "zhizhwa01": [
+   {
+    "player": "Wang Zhizhi",
+    "club": "Miami Heat",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/MIA/2005.html"
+   }
+  ]
+ },
+ "unresolved": [
+  {
+   "bbr_id": "wadedw01",
+   "player": "Dwyane Wade",
+   "club": "Miami Heat",
+   "source": "https://www.basketball-reference.com/teams/MIA/2005.html",
+   "note": "The real Dwyane Wade is not recorded here: the simulated Wade's uniform number is set by a simulated decision (runtime/jerseys.py)."
+  }
+ ]
+}

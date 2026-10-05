@@ -25,7 +25,7 @@ def main():
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--write", metavar="DATE")
     group.add_argument("--check", metavar="DATE")
-    parser.add_argument("--season", default=reviews.SEASON)
+    parser.add_argument("--season", default=None, help="default: the career's live season")
     args = parser.parse_args()
     on = args.write or args.check
     try:

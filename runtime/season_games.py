@@ -37,7 +37,12 @@ from .schedule import game_id as schedule_game_id, schedule_path
 from .season_rules import month_week
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
+
+
+def _active_season(root=None):
+    """The career's live season (runtime/seasons.py), read from the repository a call works on."""
+    from .seasons import active
+    return active(root or ROOT)
 MIAMI = SIMULATED_CLUB
 PLAYER_DIR = Path("career/Dwyane_Wade")
 MONTH_FOLDERS = {10: "10_October", 11: "11_November", 12: "12_December", 1: "01_January", 2: "02_February",
@@ -49,15 +54,18 @@ SIMULATION_SOURCE = "Railway engine (runtime/private_service.py)"
 SLATE_SAMPLE_EVERY = 25          # league slate: every 25th request (plus the first and last) gets the full engine check
 
 
-def season_base(season=SEASON):
+def season_base(season=None):
+    season = season or _active_season()
     return PLAYER_DIR / season
 
 
-def regular_season_dir(season=SEASON):
+def regular_season_dir(season=None):
+    season = season or _active_season()
     return season_base(season) / "06_Regular_Season"
 
 
-def slate_dir(season=SEASON):
+def slate_dir(season=None):
+    season = season or _active_season()
     return PLAYER_DIR / "Stats_and_Awards/League" / season / "Games"
 
 
@@ -78,8 +86,9 @@ def read_json(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
-def season_games(season=SEASON, root=ROOT):
+def season_games(season=None, root=ROOT):
     """The season's regular-season schedule, in date order."""
+    season = season or _active_season(root)
     games = read_json(schedule_path(season, root))["games"]
     return sorted(games, key=lambda g: (g["date"], g["game_id"]))
 
@@ -108,8 +117,9 @@ def note_meta(path):
     return data
 
 
-def week_dir(day, season=SEASON):
+def week_dir(day, season=None):
     """The season folder that owns a regular-season date."""
+    season = season or _active_season()
     d = date.fromisoformat(day)
     if d.month not in MONTH_FOLDERS:
         raise ValueError(f"{day} is outside the regular-season calendar")
@@ -120,8 +130,9 @@ def month_name(day):
     return date.fromisoformat(day).strftime("%B")
 
 
-def game_note(number, game, venue, season=SEASON):
+def game_note(number, game, venue, season=None):
     """The scheduled game note, as scripts/create_game_note.py writes it, with the engine fields filled."""
+    season = season or _active_season()
     opponent = game["away"] if venue == "home" else game["home"]
     title = f"{month_name(game['date'])} Week {month_week(date.fromisoformat(game['date']).day)} Game {number}"
     return f"""---
@@ -147,8 +158,9 @@ Decisions remain in the owning phase/week note. A scheduled game has no statisti
 """
 
 
-def written_notes(root=ROOT, season=SEASON):
+def written_notes(root=ROOT, season=None):
     """Every regular-season game note: event_id -> (path, number, date)."""
+    season = season or _active_season(root)
     out = {}
     for path in sorted((Path(root) / regular_season_dir(season)).rglob("Game_*.md")):
         if not path.stem.startswith("Game_") or not path.stem[5:].isdigit():
@@ -170,11 +182,12 @@ def week_numbers(folder):
 
 
 # -- Miami's side --------------------------------------------------------------------------------
-def miami_results(root=ROOT, season=SEASON):
+def miami_results(root=ROOT, season=None):
     """Miami's closed results in order: preseason, then regular season, by game date.
 
     An injury drawn in the last preseason game keeps a player out of the first regular-season games,
     so both folders feed `injured_out`."""
+    season = season or _active_season(root)
     base = Path(root) / season_base(season)
     results = []
     for folder in ("05_Preseason", "06_Regular_Season", "07_Play_In_Tournament", "08_Playoffs"):
@@ -185,20 +198,21 @@ def miami_results(root=ROOT, season=SEASON):
     return [data for _, _, data in sorted(results, key=lambda r: (r[0], r[1]))]
 
 
-def miami_game_dates(root=ROOT, season=SEASON):
+def miami_game_dates(root=ROOT, season=None):
     """Every Miami game date on the season's calendars (preseason and regular season)."""
-    from .camp import PRESEASON_SCHEDULE
+    season = season or _active_season(root)
     dates = [g["date"] for g in season_games(season, root) if MIAMI in (g["home"], g["away"])]
     from . import playoffs
-    dates += playoffs.club_dates(playoffs.read(root), MIAMI)           # Miami's playoff games still to be played or played
-    preseason = Path(root) / PRESEASON_SCHEDULE
+    dates += playoffs.club_dates(playoffs.read(root, season), MIAMI)   # Miami's playoff games still to be played or played
+    preseason = schedule_path(season, root, "preseason_schedule")
     if preseason.exists():
         dates += [g["date"] for g in read_json(preseason)["games"] if MIAMI in (g["home"], g["away"])]
     return sorted(dates)
 
 
-def grades_in_force(game_date, root=ROOT, season=SEASON):
+def grades_in_force(game_date, root=ROOT, season=None):
     """Player -> perimeter-defense grade from the staff's dated grades in force on the game date."""
+    season = season or _active_season(root)
     path = Path(root) / season_base(season) / "00_Team/Team/defensive_grades.json"
     if not path.exists():
         return {}
@@ -326,10 +340,11 @@ def rotation_for(rotation, injured, grades, replacements=(), unavailable=(), cap
     return kept
 
 
-def miami_side(game_date, root=ROOT, season=SEASON, with_lists=False):
+def miami_side(game_date, root=ROOT, season=None, with_lists=False):
     """Miami's explicit players from the staff decision in force on this date, and the injured.
 
     With `with_lists`, a third item: the game-day lists to record (`roster_moves.game_day`)."""
+    season = season or _active_season(root)
     from .rotation_reviews import rotation_in_force
     team = Path(root) / season_base(season) / "00_Team/Team"
     rotation, depth = rotation_in_force(game_date, root, season)
@@ -385,8 +400,9 @@ def miami_side(game_date, root=ROOT, season=SEASON, with_lists=False):
     return players, injured, {"injured_list": il, "placements": placements, "activations": activations}
 
 
-def miami_requests_without_results(root=ROOT, season=SEASON):
+def miami_requests_without_results(root=ROOT, season=None):
     """(date, request path) of Miami's written requests that have no closed result yet."""
+    season = season or _active_season(root)
     out = []
     for event_id, (path, number, day) in written_notes(root, season).items():
         request = path.with_name(f"Game_{number}.request.json")
@@ -395,10 +411,11 @@ def miami_requests_without_results(root=ROOT, season=SEASON):
     return sorted(out)
 
 
-def return_restrictions(players, results, season=SEASON, root=ROOT):
+def return_restrictions(players, results, season=None, root=ROOT):
     """A player back from an injury of eight or more games: the request marks which game back it is (the
     engine's re-injury risk) and the staff restricts his minutes in his first three games back, giving the
     rest to the others in proportion (RETURN_MINUTES, judgement)."""
+    season = season or _active_season(root)
     from .injuries import RETURN_MINUTES, carried_in, returning_from
     back = returning_from(results, start=carried_in(season, root))
     players = [dict(p) for p in players]
@@ -430,8 +447,9 @@ def miami_request(game, players):
             "home": miami if venue == "home" else other, "away": other if venue == "home" else miami}
 
 
-def miami_games_due(until, root=ROOT, season=SEASON):
+def miami_games_due(until, root=ROOT, season=None):
     """Miami's regular-season games on or before `until` that have no note or request yet, with their numbers."""
+    season = season or _active_season(root)
     check_date(until)
     notes = written_notes(root, season)
     plan = []
@@ -465,8 +483,9 @@ def miami_games_due(until, root=ROOT, season=SEASON):
     return plan
 
 
-def build_miami(until, root=ROOT, season=SEASON, write=False):
+def build_miami(until, root=ROOT, season=None, write=False):
     """Write (or, with write=False, list) Miami's due game notes and requests. Returns the plan rows."""
+    season = season or _active_season(root)
     from .game_requests import load_request
     plan = miami_games_due(until, root, season)
     written = []
@@ -515,8 +534,9 @@ def build_miami(until, root=ROOT, season=SEASON, write=False):
     return written if write else plan
 
 
-def miami_check(until, root=ROOT, season=SEASON):
+def miami_check(until, root=ROOT, season=None):
     """Problems a `--check` run reports: games due but not written, notes and requests that disagree."""
+    season = season or _active_season(root)
     problems = []
     for row in miami_games_due(until, root, season):
         what = "note and request" if row["note"] else "request"
@@ -553,7 +573,8 @@ def slate_request(game):
             "home": {"team": game["home"], "rotation": "real"}, "away": {"team": game["away"], "rotation": "real"}}
 
 
-def slate_readme(season=SEASON):
+def slate_readme(season=None):
+    season = season or _active_season()
     return f"""# NBA {season} | League slate
 
 [League records](../../README.md) · [{season} players](../League_Stats.md) · [{season} awards](../League_Awards.md) · [Game engine](../../../../../../runtime/README.md)
@@ -571,8 +592,9 @@ edited once written.
 """
 
 
-def league_games_due(until, root=ROOT, season=SEASON):
+def league_games_due(until, root=ROOT, season=None):
     """Non-Miami games on or before `until`: (game, path, exists)."""
+    season = season or _active_season(root)
     check_date(until)
     folder = Path(root) / slate_dir(season)
     rows = []
@@ -609,7 +631,7 @@ def slate_structure_errors(path, data, schedule_by_id, clubs, root=ROOT):
         elif club["team"] == MIAMI:
             errors.append(f"{rel}: Miami's games belong in the season folder")
         elif club["team"] not in clubs:
-            errors.append(f"{rel}: {club['team']} has no real {SEASON} roster")
+            errors.append(f"{rel}: {club['team']} has no real {season} roster")
     return errors
 
 
@@ -622,12 +644,13 @@ def slate_sample(paths, every=SLATE_SAMPLE_EVERY):
     return sorted(picked)
 
 
-def slate_errors(paths, root=ROOT, season=SEASON, every=SLATE_SAMPLE_EVERY):
+def slate_errors(paths, root=ROOT, season=None, every=SLATE_SAMPLE_EVERY):
     """Validate league-slate requests: structure for all, the engine's load_request on a sample.
 
     `load_request` builds both real rotations and the full packet (about 0.2 s each), so the whole
     1,189-game slate would take minutes; the structural checks catch every shape, club and schedule
     problem, and the sample proves the engine inputs on the dates. `every=1` checks everything."""
+    season = season or _active_season(root)
     from .game_requests import load_request
     paths = sorted(Path(p) for p in paths)
     if not paths:
@@ -650,8 +673,9 @@ def slate_errors(paths, root=ROOT, season=SEASON, every=SLATE_SAMPLE_EVERY):
     return errors
 
 
-def build_slate(until, root=ROOT, season=SEASON, write=False, every=SLATE_SAMPLE_EVERY):
+def build_slate(until, root=ROOT, season=None, write=False, every=SLATE_SAMPLE_EVERY):
     """Write (or list) the league requests due by `until`. Returns (written paths, validation errors)."""
+    season = season or _active_season(root)
     rows = league_games_due(until, root, season)
     clubs = set(load_rosters(season, root))
     for game, _, _ in rows:
@@ -679,16 +703,18 @@ def build_slate(until, root=ROOT, season=SEASON, write=False, every=SLATE_SAMPLE
     return written, errors
 
 
-def slate_check(until, root=ROOT, season=SEASON, every=SLATE_SAMPLE_EVERY):
+def slate_check(until, root=ROOT, season=None, every=SLATE_SAMPLE_EVERY):
     """Problems a `--check` run reports: games due but not written, and validation of the written ones."""
+    season = season or _active_season(root)
     rows = league_games_due(until, root, season)
     problems = [f"{game['game_id']}: request not written (due {game['date']})" for game, _, exists in rows if not exists]
     problems.extend(slate_errors([path for _, path, exists in rows if exists], root, season, every))
     return problems
 
 
-def club_name_errors(root=ROOT, season=SEASON):
+def club_name_errors(root=ROOT, season=None):
     """The schedule's club names must be the roster file's (plus Miami)."""
+    season = season or _active_season(root)
     names = {t for g in season_games(season, root) for t in (g["home"], g["away"])}
     clubs = set(load_rosters(season, root))
     errors = []

@@ -40,10 +40,16 @@ from .boxscore import render
 from .career_stats import aggregate, normalize_line
 from .rosters import SIMULATED_CLUB
 from .rotations import load_rosters
-from .season_games import PLAYER_DIR, SEASON, note_meta, read_json, season_base, slate_dir
+from .season_games import PLAYER_DIR, note_meta, read_json, season_base, slate_dir
 from .stat_layout import PER_GAME_COLUMNS, scope_for
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def _active_season(root=None):
+    """The career's live season (runtime/seasons.py), read from the repository a call works on."""
+    from .seasons import active
+    return active(root or ROOT)
 MIAMI = SIMULATED_CLUB
 PHASES = {"05_Preseason": ("preseason", "## Events"), "06_Regular_Season": ("regular", "## Games and events"),
           "08_Playoffs": ("playoff", "## Games and events")}
@@ -55,7 +61,7 @@ TEAM_PRODUCTION = ["Player", "Pos", "G", "MPG", "PPG", "RPG", "APG", "SPG", "BPG
 TEAM_SHOOTING = ["Player", "GS", "FG", "FG%", "3P", "3P%", "FT", "FT%", "OREB", "DREB"]
 TEAM_RECORD = ["G", "W", "L", "WIN%", "PPG", "OPP PPG", "DIFF"]
 LEADER_CATEGORIES = (("PPG", "pts"), ("RPG", "reb"), ("APG", "ast"), ("SPG", "stl"), ("BPG", "blk"))
-NO_LEADERS = ("No eligible results yet. Publish period leaders with G and sample size; apply verified 2003-04 "
+NO_LEADERS = ("No eligible results yet. Publish period leaders with G and sample size; apply the season's verified "
               "qualifications before calling a result an official season leader.")
 
 
@@ -106,8 +112,9 @@ def score_line(result):
 
 
 # -- the Miami game notes --------------------------------------------------------------------------
-def miami_notes(root=ROOT, season=SEASON):
+def miami_notes(root=ROOT, season=None):
     """Every Miami game note the write-back owns, in date order, with its result file and phase note."""
+    season = season or _active_season(root)
     base = Path(root) / season_base(season)
     rows = []
     for folder, (kind, heading) in PHASES.items():
@@ -124,8 +131,9 @@ def miami_notes(root=ROOT, season=SEASON):
     return sorted(rows, key=lambda r: (r["meta"].get("date", ""), str(r["note"])))
 
 
-def pending_notes(root=ROOT, season=SEASON):
+def pending_notes(root=ROOT, season=None):
     """Scheduled notes with a result beside them: (ready to write, waiting for the clock)."""
+    season = season or _active_season(root)
     now = clock(root)
     ready, waiting = [], []
     for info in miami_notes(root, season):
@@ -237,8 +245,9 @@ def event_line(info, result):
     return text
 
 
-def miami_card_paths(root=ROOT, season=SEASON):
+def miami_card_paths(root=ROOT, season=None):
     """Player name key -> Miami card path, from the team-control register."""
+    season = season or _active_season(root)
     team = Path(root) / season_base(season) / "00_Team/Team"
     out = {}
     roster = team / "Roster/roster.json"
@@ -277,8 +286,9 @@ def add_card_row(text, row, key):
     return "\n".join(lines[:j] + [row] + lines[j:])
 
 
-def write_note(info, result, root=ROOT, season=SEASON, write=True):
+def write_note(info, result, root=ROOT, season=None, write=True):
     """Write one result into its note, the phase note and the injured players' cards. Returns problems."""
+    season = season or _active_season(root)
     problems = []
     note, phase = info["note"], info["phase_note"]
     if write:
@@ -304,9 +314,10 @@ def write_note(info, result, root=ROOT, season=SEASON, write=True):
 
 
 # -- closed results and registry matching ---------------------------------------------------------
-def closed_results(root=ROOT, season=SEASON, now=None):
+def closed_results(root=ROOT, season=None, now=None):
     """Closed regular-season results dated on or before the clock: Miami's from played notes, the league's
     from the slate. Each row: result, source ('miami' or 'league'), note, request."""
+    season = season or _active_season(root)
     now = now or clock(root)
     rows, seen = [], set()
     for info in miami_notes(root, season):
@@ -334,8 +345,9 @@ def closed_results(root=ROOT, season=SEASON, now=None):
     return out
 
 
-def bbr_lookup(root=ROOT, season=SEASON):
+def bbr_lookup(root=ROOT, season=None):
     """(club, name key) -> bbr_id from the real roster file and Miami's register."""
+    season = season or _active_season(root)
     lookup = {}
     try:
         for club, data in load_rosters(season, root).items():
@@ -352,8 +364,9 @@ def bbr_lookup(root=ROOT, season=SEASON):
     return lookup
 
 
-def game_records(row, root=ROOT, season=SEASON):
+def game_records(row, root=ROOT, season=None):
     """career_stats-style records for every player row of one closed result: (side, player_id, bbr_id, record)."""
+    season = season or _active_season(root)
     result, request = row["result"], row["request"]
     weighted = result.get("free_throw_mode") == "weighted"
     out = []
@@ -387,17 +400,19 @@ APPEARANCE_COHORT = "2003_04_appearance"
 ORIGINAL_COHORTS = ("end_2002_03_roster", "2003_draft_rights")
 
 
-def registry_additions(root=ROOT, season=SEASON, now=None):
+def registry_additions(root=ROOT, season=None, now=None):
     """Players in closed results who are not in the registry, as dated registry entries (cohort APPEARANCE_COHORT):
     identity from the season's rosters, Miami's register and the dated identity records; club and date of his first
     closed appearance. The 407 original entries are never changed."""
+    season = season or _active_season(root)
     from .rotations import primary_position
     reg = registry(root)
     by_bbr = {p["bbr_id"] for p in reg["players"] if p.get("bbr_id")}
     by_name = {_key(p["name"]) for p in reg["players"]}
     codes = {p["team_name"]: p["team_code"] for p in reg["players"] if p.get("team_code")}
     codes.setdefault(MIAMI, "MIA")
-    conf_path = Path(root) / "library/2003/league/nba_2003_04_conferences.json"
+    from .seasons import path as season_path
+    conf_path = Path(root) / season_path(season, "conferences")
     conference = {t: c for c, ts in read_json(conf_path)["conferences"].items() for t in ts} if conf_path.is_file() else {}
     lookup = bbr_lookup(root, season)
     positions, births = {}, {}
@@ -423,15 +438,12 @@ def registry_additions(root=ROOT, season=SEASON, now=None):
             if p.get("bbr_id"):
                 positions.setdefault(p["bbr_id"], (p.get("positions") or [None])[0])
                 births[p["bbr_id"]] = p.get("date_of_birth")
-    for rel in ("library/2003/league/nba_2003_end_of_season.json",):
-        path = Path(root) / rel
-        if path.is_file():
-            for club in read_json(path)["clubs"].values():
-                for p in club["players"]:
-                    if p.get("bbr_id") and p.get("birth_date"):
-                        births.setdefault(p["bbr_id"], p["birth_date"])
-    unattached = Path(root) / "library/2003/league/nba_2003_unattached_identities.json"
-    if unattached.is_file():
+    for path in sorted(Path(root).glob("library/*/league/nba_*_end_of_season.json")) + sorted(Path(root).glob("library/*/league/nba_*_draft_class.json")):
+        for club in (read_json(path).get("clubs") or {}).values():
+            for p in club["players"]:
+                if p.get("bbr_id") and p.get("birth_date"):
+                    births.setdefault(p["bbr_id"], p["birth_date"])
+    for unattached in sorted(Path(root).glob("library/*/league/nba_*_unattached_identities.json")):
         for p in read_json(unattached)["players"]:
             births.setdefault(p["bbr_id"], p.get("birth_date"))
             positions.setdefault(p["bbr_id"], p.get("position"))
@@ -450,12 +462,13 @@ def registry_additions(root=ROOT, season=SEASON, now=None):
                           "conference": conference.get(club), "cohort": APPEARANCE_COHORT, "bbr_id": bbr, "espn_id": None,
                           "birth_date": births.get(bbr), "registry_id": bbr or _key(pid).replace(" ", "_"),
                           "added_on": row["result"]["game_date"],
-                          "added_basis": f"first closed 2003-04 appearance, {club}, {row['result']['event_id']}"}
+                          "added_basis": f"first closed {season} appearance, {club}, {row['result']['event_id']}"}
     return sorted(added.values(), key=lambda p: (p["added_on"], p["name"]))
 
 
-def extend_registry(root=ROOT, season=SEASON, write=True):
+def extend_registry(root=ROOT, season=None, write=True):
     """Add every unregistered player from closed results to the registry. Returns the added entries."""
+    season = season or _active_season(root)
     new = registry_additions(root, season)
     if new and write:
         path = Path(root) / PLAYER_DIR / "Stats_and_Awards/League/player_registry.json"
@@ -465,7 +478,7 @@ def extend_registry(root=ROOT, season=SEASON, write=True):
         counts = reg.setdefault("coverage", {}).setdefault("source_counts", {})
         counts[APPEARANCE_COHORT] = sum(1 for p in reg["players"] if p.get("cohort") == APPEARANCE_COHORT)
         reg["coverage"]["population_policy"] = ("Retain all 407 original registry entries; add every player who appears in a "
-                                                 "closed 2003-04 result, dated by his first appearance (write_back.extend_registry).")
+                                                 "closed result, dated by his first appearance (write_back.extend_registry).")
         path.write_text(json.dumps(reg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return new
 
@@ -475,15 +488,17 @@ def week_span(note_path):
     import calendar
     month_dir, week = note_path.parent.parent.name, int(note_path.parent.name.split("_")[1])
     month = int(month_dir.split("_")[0])
-    year = 2003 if month >= 10 else 2004
+    start = int(note_path.parents[3].name[:4])                      # the season folder, e.g. 2003-04
+    year = start if month >= 7 else start + 1
     last_day = calendar.monthrange(year, month)[1]
     first, last = {1: (1, 7), 2: (8, 14), 3: (15, 21), 4: (22, last_day)}[week]
     return f"{year}-{month:02d}-{first:02d}", f"{year}-{month:02d}-{last:02d}"
 
 
-def expected_statuses(root=ROOT, season=SEASON):
+def expected_statuses(root=ROOT, season=None):
     """{note path: status} for the season's preseason and regular-season week notes on the career clock:
     complete once the period has passed, active while the clock is inside it, not_started before it."""
+    season = season or _active_season(root)
     root = Path(root)
     now = clock(root)
     base = root / season_base(season)
@@ -493,20 +508,25 @@ def expected_statuses(root=ROOT, season=SEASON):
         out[note] = "complete" if last < now else "active" if first <= now else "not_started"
     pre = base / "05_Preseason/note.md"
     if pre.is_file():
-        out[pre] = "complete" if now >= "2003-10-28" else "active" if now >= "2003-10-05" else "not_started"
+        from .seasons import dates
+        gates = dates(season, root)
+        opening, preseason = gates["opening_night"], gates["preseason"] or gates["opening_night"]
+        out[pre] = "complete" if now >= opening else "active" if now >= preseason else "not_started"
     return out
 
 
-def current_week_note(root=ROOT, season=SEASON):
+def current_week_note(root=ROOT, season=None):
     """The week note (relative to the season folder) containing the career clock, or None outside the season."""
+    season = season or _active_season(root)
     for note, status in expected_statuses(root, season).items():
         if status == "active" and note.parent.name.startswith("Week_"):
             return note.relative_to(Path(root) / season_base(season)).as_posix()
     return None
 
 
-def sync_note_statuses(root=ROOT, season=SEASON, write=True):
+def sync_note_statuses(root=ROOT, season=None, write=True):
     """Set each period note's status and current_state.current_note to the clock. Returns the changed paths."""
+    season = season or _active_season(root)
     import re
     changed = []
     for note, status in expected_statuses(root, season).items():
@@ -528,8 +548,9 @@ def sync_note_statuses(root=ROOT, season=SEASON, write=True):
     return changed
 
 
-def closed_lines(root=ROOT, season=SEASON, now=None):
+def closed_lines(root=ROOT, season=None, now=None):
     """Closed regular-season records per registry player: ({registry_id: [records]}, unmatched labels)."""
+    season = season or _active_season(root)
     reg = registry(root)
     by_bbr = {p["bbr_id"]: p for p in reg["players"] if p.get("bbr_id")}
     by_name = {}
@@ -551,8 +572,9 @@ def closed_lines(root=ROOT, season=SEASON, now=None):
     return lines, sorted(unmatched)
 
 
-def miami_lines(root=ROOT, season=SEASON, now=None):
+def miami_lines(root=ROOT, season=None, now=None):
     """Closed regular-season records of Miami's games per Miami player name, plus the team results."""
+    season = season or _active_season(root)
     lines, games = {}, []
     for row in closed_results(root, season, now):
         if row["source"] != "miami":
@@ -639,7 +661,7 @@ def leaders_text(summaries, scope):
         top = sorted(played, key=lambda item: (-item[1]["pg"][key], item[0]))[:3]
         rows.append([label, *(f"{name} {s['pg'][key]:.1f} (G {s['gp']})" for name, s in top), *[""] * (3 - len(top))])
     return ("Period comparison among registry players with at least one appearance in this scope; G is shown with each value. "
-            "These are not official season leaders: 2003-04 qualification rules are not applied.\n\n"
+            "These are not official season leaders: the season's qualification rules are not applied.\n\n"
             + _table(["Category", "1", "2", "3"], rows).rstrip("\n"))
 
 
@@ -758,8 +780,9 @@ def team_page(text, page, lines, games, positions, now, register=None):
     return period_rows(text, page, now, lambda sc: sum(1 for g in games if sc["start"] <= g["game_date"] <= sc["end"]))
 
 
-def statistics_pages(root=ROOT, season=SEASON):
+def statistics_pages(root=ROOT, season=None):
     """Every League_Stats.md and Team_Stats.md page of the season rebuilt from closed results: {path: text}."""
+    season = season or _active_season(root)
     root = Path(root)
     now = clock(root)
     reg = registry(root)
@@ -788,7 +811,8 @@ def statistics_pages(root=ROOT, season=SEASON):
     return outputs
 
 
-def write_statistics_pages(root=ROOT, season=SEASON):
+def write_statistics_pages(root=ROOT, season=None):
+    season = season or _active_season(root)
     changed = 0
     for page, text in statistics_pages(root, season).items():
         if page.read_text(encoding="utf-8") != text:
@@ -798,8 +822,9 @@ def write_statistics_pages(root=ROOT, season=SEASON):
 
 
 # -- the run and the checks ------------------------------------------------------------------------
-def run(root=ROOT, season=SEASON, write=False, pages=True):
+def run(root=ROOT, season=None, write=False, pages=True):
     """The write-back. With write=False nothing is touched; the report says what a run would do."""
+    season = season or _active_season(root)
     root = Path(root)
     report = dict(written=[], waiting=[], problems=[], unmatched=[], pages=0, reports=0, cards=0)
     ready, waiting = pending_notes(root, season)
@@ -836,11 +861,12 @@ def run(root=ROOT, season=SEASON, write=False, pages=True):
     return report
 
 
-def write_back_errors(root=ROOT, season=SEASON, cards=False):
+def write_back_errors(root=ROOT, season=None, cards=False):
     """Validation: no unwritten result, every played note reflects its result, injuries and events logged,
     statistics pages fresh; with `cards`, the league cards too (the script's --check; the cards also move
     with the clock, so repository validation leaves them to `build_league_cards.py --check`). The
     reporter's own freshness check is separate."""
+    season = season or _active_season(root)
     root = Path(root)
     errors = []
     try:

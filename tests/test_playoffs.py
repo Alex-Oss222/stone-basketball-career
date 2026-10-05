@@ -39,13 +39,13 @@ class PlayoffRuleTests(unittest.TestCase):
     def test_an_unbreakable_tie_is_an_engine_drawing(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            (root / P.RULES).parent.mkdir(parents=True)
-            (root / P.RULES).write_text((ROOT / P.RULES).read_text())
+            (root / P.rules_path('2003-04')).parent.mkdir(parents=True)
+            (root / P.rules_path('2003-04')).write_text((ROOT / P.rules_path('2003-04')).read_text())
             t = table([])
             ranker = P.Ranker(t, root)
             ranker.order(["Boston Celtics", "Miami Heat"])
             self.assertEqual(len(ranker.pending), 1)
-            packet = json.loads(next((root / P.DRAWS).glob("*.decision.json")).read_text())
+            packet = json.loads(next((root / P.draws_dir('2003-04')).glob("*.decision.json")).read_text())
             self.assertAlmostEqual(sum(packet["options"].values()), 1.0)
 
     def test_the_seeded_record_shape_and_calendar(self):

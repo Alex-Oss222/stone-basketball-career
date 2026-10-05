@@ -17,6 +17,12 @@ from .league_book import active
 from .rotations import load_rosters, season_fraction
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def _active_season(root=None):
+    """The career's live season (runtime/seasons.py), read from the repository a call works on."""
+    from .seasons import active
+    return active(root or ROOT)
 SEASON = "2003-04"
 
 
@@ -24,7 +30,8 @@ def ledger_path(season):
     return Path(f"career/Dwyane_Wade/{season}/League/league_moves.json")
 
 
-def read(season=SEASON, root=ROOT):
+def read(season=None, root=ROOT):
+    season = season or _active_season(root)
     path = Path(root) / ledger_path(season)
     if path.is_file():
         return json.loads(path.read_text(encoding="utf-8"))
@@ -36,8 +43,9 @@ def _present(stint, fraction):
     return lo <= fraction and (fraction < hi or hi >= 1.0)
 
 
-def season_roles(season=SEASON, root=ROOT):
+def season_roles(season=None, root=ROOT):
     """Each real player's season role: games and minutes summed over his real stints."""
+    season = season or _active_season(root)
     roles = {}
     for club, entry in load_rosters(season, root).items():
         for p in entry["players"]:
@@ -116,18 +124,21 @@ def _protected_contracts(root):
     return out
 
 
-def clubs_at_activation(season=SEASON, root=ROOT, start=None):
+def clubs_at_activation(season=None, root=ROOT, start=None):
     """{bbr_id: club} on the activation date (`_activation`)."""
+    season = season or _active_season(root)
     return _activation(season, root, start)[0]
 
 
-def activation_free_agents(season=SEASON, root=ROOT, start=None):
+def activation_free_agents(season=None, root=ROOT, start=None):
     """Real players on no club at activation: beyond a club's fifteen. The league market signs them."""
+    season = season or _active_season(root)
     return _activation(season, root, start)[1]
 
 
-def club_of(bbr_id, game_date, season=SEASON, root=ROOT, start=None):
+def club_of(bbr_id, game_date, season=None, root=ROOT, start=None):
     """A real player's club on the date in the symmetric league (before Miami's rules and replacements)."""
+    season = season or _active_season(root)
     club = clubs_at_activation(season, root, start).get(bbr_id)
     for e in sorted(read(season, root)["entries"], key=lambda e: e["date"]):
         if e["bbr_id"] == bbr_id and e["date"] <= game_date:
@@ -135,9 +146,10 @@ def club_of(bbr_id, game_date, season=SEASON, root=ROOT, start=None):
     return club
 
 
-def simulated_club(club, game_date, season=SEASON, root=ROOT, start=None):
+def simulated_club(club, game_date, season=None, root=ROOT, start=None):
     """A roster entry shaped like `load_rosters` for the club on the date: its activation roster plus the
     simulated moves to the date. Each player carries his whole-season real role, window [0, 1]."""
+    season = season or _active_season(root)
     if start is None and not active(game_date):
         raise ValueError("the symmetric league is not active on this date")
     roles = season_roles(season, root)
@@ -153,9 +165,10 @@ def simulated_club(club, game_date, season=SEASON, root=ROOT, start=None):
     return {"players": players}
 
 
-def effective_roster(club, game_date, season=SEASON, root=ROOT, start=None):
+def effective_roster(club, game_date, season=None, root=ROOT, start=None):
     """The club as its games and its front office see it: the simulated roster with Miami's rules 2 and 3 and
     the disturbed-club replacements applied, exactly as `game_requests._club` builds the game input."""
+    season = season or _active_season(root)
     from .club_replacements import arrivals as replacement_arrivals, held as replacements_held
     from .rotations import alias, miami_departed, miami_departures, miami_holds
     gone = set(miami_holds(season, game_date, root)) | set(miami_departed(season, game_date, root)) \

@@ -671,10 +671,11 @@ def validate():
         errors.append(f"{page.relative_to(ROOT)}: dated team status or standings are stale (python scripts/write_back_results.py --write)")
 
     from runtime import playoffs
-    if (ROOT / playoffs.RECORD).is_file():
-        record = json.loads((ROOT / playoffs.RECORD).read_text(encoding="utf-8"))
-        if not (ROOT / playoffs.PAGE).is_file() or (ROOT / playoffs.PAGE).read_text(encoding="utf-8") != playoffs.page(record, ROOT):
-            errors.append(f"{playoffs.PAGE}: the playoff page differs from playoffs.json (python scripts/seed_playoffs.py --write)")
+    record = playoffs.read(ROOT)
+    if record is not None:
+        page_path = playoffs.page_path(record["season"])
+        if not (ROOT / page_path).is_file() or (ROOT / page_path).read_text(encoding="utf-8") != playoffs.page(record, ROOT):
+            errors.append(f"{page_path}: the playoff page differs from playoffs.json (python scripts/seed_playoffs.py --write)")
         from runtime.playoff_stats import page_errors as playoff_page_errors
         errors.extend(playoff_page_errors(ROOT))
 
