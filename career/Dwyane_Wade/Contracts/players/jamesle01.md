@@ -2,9 +2,9 @@
 
 # Contract | LeBron James
 
-Known through: 2004-07-11. [Open interactive contract](jamesle01.html#contract) · [Contract history](jamesle01.html#contract-history)
+Known through: 2004-07-18. [Open interactive contract](jamesle01.html#contract) · [Contract history](jamesle01.html#contract-history)
 
-LeBron James: No verified contract record. Evidence cutoff: 2004-07-11.
+LeBron James: No verified contract record. Evidence cutoff: 2004-07-18.
 
 ## Current contract
 
