@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Run the dated offseason events due on a day (2004): the draft lottery on May 26 (runtime/lottery.py) and the draft
-on June 24 (runtime/draft.py), for every club.
+"""Run the dated offseason events due on a day (2004): the draft lottery on May 26 (runtime/lottery.py), the expansion
+draft on June 22 (runtime/expansion.py) and the draft on June 24 (runtime/draft.py), for every club.
 
     python scripts/offseason_day.py --write DATE
 
@@ -15,7 +15,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from runtime import draft, lottery                                      # noqa: E402
+from runtime import draft, expansion, lottery                                      # noqa: E402
 
 
 def main():
@@ -25,6 +25,9 @@ def main():
     order = lottery.run(ROOT, args.write)
     if order:
         print("2004 draft lottery: " + ", ".join(f"No. {i + 1} {c}" for i, c in enumerate(order["lottery_winners"])))
+    taken = expansion.run(ROOT, args.write)
+    if taken:
+        print(f"2004 expansion draft: Charlotte selects {len(taken['selections'])} players")
     made = draft.run(ROOT, args.write)
     if made:
         for p in made["picks"]:

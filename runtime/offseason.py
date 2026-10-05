@@ -34,6 +34,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OLD, NEW = "2003-04", "2004-05"
 SEASON_END = "2004-06-30"
+CHARLOTTE = "Charlotte Bobcats"
 MIAMI = "Miami Heat"
 SKIPPED = Path("library/2004/league/nba_2004_miami_transactions.json")
 DRAFT = Path("library/2004/league/nba_2004_draft_class.json")
@@ -92,17 +93,9 @@ def skipped_moves(root=ROOT):
 
 def continuing(root=ROOT, on=SEASON_END):
     """{bbr_id: club} for contracts with a 2004-05 salary (not an option) on the date, as the league book holds them."""
-    from .trades import dated_inventory
-    from .valuation import Valuation
-    out = {}
-    for club, entry in dated_inventory(on, Valuation(on, root), root).items():
-        if club == MIAMI:
-            continue
-        for p in entry.get("players", []):
-            kind = (p.get("amount_kind") or {}).get(NEW)
-            if p.get("bbr_id") and (p.get("schedule") or {}).get(NEW) and kind in (None, "contract_salary", "guaranteed_salary"):
-                out[p["bbr_id"]] = club
-    return out
+    from .contract_terms import existing_terms
+    sim = simulated_clubs(root, on)
+    return {b: sim[b] for b, t in existing_terms(root).items() if t["kind"] == "contract" and sim.get(b) and sim[b] != MIAMI}
 
 
 def draft_swaps(root=ROOT):
@@ -115,6 +108,8 @@ def placements(root=ROOT, on=SEASON_END):
     """[{bbr_id, player_id, club, rule, from_club}] for every real player with a 2004-05 role or a 2003-04 club."""
     old, new = real_clubs(OLD, root), real_clubs(NEW, root)
     sim, miami, skip, cont, swaps = simulated_clubs(root, on), miami_players(root, on), skipped_moves(root), continuing(root, on), draft_swaps(root)
+    from .expansion import charlotte_players
+    expanded = charlotte_players(root)
     out = []
     for b in sorted(set(old) | set(new) | set(sim)):
         role_new = new.get(b)
@@ -129,6 +124,8 @@ def placements(root=ROOT, on=SEASON_END):
         r_open = role_new[0]
         if b in swaps:
             out.append(dict(bbr_id=b, player_id=name, club=swaps[b], rule="6_drafted_in_the_simulated_draft", from_club=None))
+        elif b in expanded:
+            out.append(dict(bbr_id=b, player_id=name, club=CHARLOTTE, rule="5_expansion_draft", from_club=s_club))
         elif b in skip and s_club:
             out.append(dict(bbr_id=b, player_id=name, club=s_club, rule="3_real_miami_move_skipped", from_club=s_club))
         elif s_club is None:

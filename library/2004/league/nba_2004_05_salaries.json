@@ -1,0 +1,3059 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "season_salaries",
+ "season": "2004-05",
+ "source": "https://www.eskimo.com/~pbender/misc/salaries05.txt",
+ "source_basis": "Based on the rosters for 12/20/04",
+ "use": "Writes `library/<start>/league/nba_<YYYY>_<YY>_salaries.json`: per club, each player's listed salary, its note\n(minimum, released, prorated) and his Basketball-Reference id where the name matches the registry, the season's real\nrosters or the 2004 offseason files. Use is restricted by AGENTS.md: a later source may reconstruct the term of a\ncontract that already existed, never reveal a later choice. `runtime/contract_terms.py` therefore reads a 2004-05\nsalary only for a player who did not sign, re-sign, receive an offer sheet or sign his rookie contract in the 2004\noffseason, and never for an option year.",
+ "clubs": {
+  "Atlanta Hawks": {
+   "listed_total": 40684848,
+   "players": [
+    {
+     "player": "Antoine Walker",
+     "salary": 14625000,
+     "note": null,
+     "bbr_id": "walkean02"
+    },
+    {
+     "player": "Al Harrington",
+     "salary": 6325000,
+     "note": null,
+     "bbr_id": "harrial01"
+    },
+    {
+     "player": "Chris Crawford",
+     "salary": 3250000,
+     "note": null,
+     "bbr_id": "crawfch01"
+    },
+    {
+     "player": "Tony Delk",
+     "salary": 2700000,
+     "note": null,
+     "bbr_id": "delkto01"
+    },
+    {
+     "player": "Predrag Drobnjak",
+     "salary": 2550000,
+     "note": null,
+     "bbr_id": "drobnpr01"
+    },
+    {
+     "player": "Josh Childress",
+     "salary": 2490360,
+     "note": null,
+     "bbr_id": "childjo01"
+    },
+    {
+     "player": "Jon Barry",
+     "salary": 1800000,
+     "note": null,
+     "bbr_id": "barryjo01"
+    },
+    {
+     "player": "Jason Collier",
+     "salary": 1500000,
+     "note": null,
+     "bbr_id": "collija02"
+    },
+    {
+     "player": "Kevin Willis",
+     "salary": 1300000,
+     "note": null,
+     "bbr_id": "willike02"
+    },
+    {
+     "player": "Josh Smith",
+     "salary": 1270080,
+     "note": null,
+     "bbr_id": "smithjo03"
+    },
+    {
+     "player": "Kenny Anderson",
+     "salary": 1100000,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "anderke01"
+    },
+    {
+     "player": "Boris Diaw",
+     "salary": 1097640,
+     "note": null,
+     "bbr_id": "diawbo01"
+    },
+    {
+     "player": "Royal Ivey",
+     "salary": 425000,
+     "note": null,
+     "bbr_id": "iveyro01"
+    },
+    {
+     "player": "Donta Smith",
+     "salary": 425000,
+     "note": null,
+     "bbr_id": "smithdo04"
+    },
+    {
+     "player": "Jelani McCoy",
+     "salary": 167418,
+     "note": "min, c $154,461, s 11/8, r 12/14",
+     "bbr_id": "mccoyje01"
+    },
+    {
+     "player": "Anthony Miller",
+     "salary": 34118,
+     "note": "min, counts $27,258, rel 11/8",
+     "bbr_id": "millean01"
+    }
+   ]
+  },
+  "Boston Celtics": {
+   "listed_total": 64577356,
+   "players": [
+    {
+     "player": "Paul Pierce",
+     "salary": 12584688,
+     "note": null,
+     "bbr_id": "piercpa01"
+    },
+    {
+     "player": "Raef LaFrentz",
+     "salary": 9714538,
+     "note": null,
+     "bbr_id": "lafrera01"
+    },
+    {
+     "player": "Ricky Davis",
+     "salary": 5455200,
+     "note": null,
+     "bbr_id": "davisri01"
+    },
+    {
+     "player": "Gary Payton",
+     "salary": 5408700,
+     "note": null,
+     "bbr_id": "paytoga01"
+    },
+    {
+     "player": "Vin Baker",
+     "salary": 5333333,
+     "note": "released",
+     "bbr_id": "bakervi01"
+    },
+    {
+     "player": "Mark Blount",
+     "salary": 4903000,
+     "note": null,
+     "bbr_id": "blounma01"
+    },
+    {
+     "player": "Rick Fox",
+     "salary": 4800000,
+     "note": "retired",
+     "bbr_id": "foxri01"
+    },
+    {
+     "player": "Michael Stewart",
+     "salary": 4800000,
+     "note": null,
+     "bbr_id": "stewami01"
+    },
+    {
+     "player": "Tom Gugliotta",
+     "salary": 2700000,
+     "note": null,
+     "bbr_id": "guglito01"
+    },
+    {
+     "player": "Marcus Banks",
+     "salary": 1611840,
+     "note": null,
+     "bbr_id": "banksma01"
+    },
+    {
+     "player": "Jiri Welsch",
+     "salary": 1419240,
+     "note": null,
+     "bbr_id": "welscji01"
+    },
+    {
+     "player": "Al Jefferson",
+     "salary": 1407240,
+     "note": null,
+     "bbr_id": "jeffeal01"
+    },
+    {
+     "player": "Walter McCarty",
+     "salary": 1337500,
+     "note": null,
+     "bbr_id": "mccarwa01"
+    },
+    {
+     "player": "Delonte West",
+     "salary": 939480,
+     "note": null,
+     "bbr_id": "westde01"
+    },
+    {
+     "player": "Tony Allen",
+     "salary": 901920,
+     "note": null,
+     "bbr_id": "allento01"
+    },
+    {
+     "player": "Kendrick Perkins",
+     "salary": 875400,
+     "note": null,
+     "bbr_id": "perkike01"
+    },
+    {
+     "player": "Justin Reed",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "reedju01"
+    }
+   ]
+  },
+  "Charlotte Bobcats": {
+   "listed_total": 23380124,
+   "players": [
+    {
+     "player": "Jahidi White",
+     "salary": 6166466,
+     "note": null,
+     "bbr_id": "whiteja01"
+    },
+    {
+     "player": "Emeka Okafor",
+     "salary": 3739680,
+     "note": null,
+     "bbr_id": "okafoem01"
+    },
+    {
+     "player": "Melvin Ely",
+     "salary": 1742400,
+     "note": null,
+     "bbr_id": "elyme01"
+    },
+    {
+     "player": "Gerald Wallace",
+     "salary": 1652453,
+     "note": null,
+     "bbr_id": "wallage01"
+    },
+    {
+     "player": "Primoz Brezec",
+     "salary": 1554326,
+     "note": null,
+     "bbr_id": "brezepr01"
+    },
+    {
+     "player": "Jason Hart",
+     "salary": 1400000,
+     "note": null,
+     "bbr_id": "hartja01"
+    },
+    {
+     "player": "Kareem Rush",
+     "salary": 1174200,
+     "note": null,
+     "bbr_id": "rushka01"
+    },
+    {
+     "player": "Steve Smith",
+     "salary": 1100000,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "smithst01"
+    },
+    {
+     "player": "Brevin Knight",
+     "salary": 932546,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "knighbr01"
+    },
+    {
+     "player": "Eddie House",
+     "salary": 825000,
+     "note": "released 12/4",
+     "bbr_id": "houseed01"
+    },
+    {
+     "player": "Jamal Sampson",
+     "salary": 695046,
+     "note": "minimum",
+     "bbr_id": "sampsja01"
+    },
+    {
+     "player": "Tamar Slay",
+     "salary": 695046,
+     "note": "minimum",
+     "bbr_id": "slayta01"
+    },
+    {
+     "player": "Keith Bogans",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "boganke01"
+    },
+    {
+     "player": "Jason Kapono",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "kaponja01"
+    },
+    {
+     "player": "Theron Smith",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "smithth01"
+    },
+    {
+     "player": "Bernard Robinson",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "robinbe01"
+    }
+   ]
+  },
+  "Chicago Bulls": {
+   "listed_total": 57276136,
+   "players": [
+    {
+     "player": "Antonio Davis",
+     "salary": 12925000,
+     "note": null,
+     "bbr_id": "davisan01"
+    },
+    {
+     "player": "Scottie Pippen",
+     "salary": 5408700,
+     "note": "retired",
+     "bbr_id": "pippesc01"
+    },
+    {
+     "player": "Eddie Robinson",
+     "salary": 5055556,
+     "note": "released",
+     "bbr_id": "robined01"
+    },
+    {
+     "player": "Tyson Chandler",
+     "salary": 4801102,
+     "note": null,
+     "bbr_id": "chandty01"
+    },
+    {
+     "player": "Eddy Curry",
+     "salary": 3896402,
+     "note": null,
+     "bbr_id": "curryed01"
+    },
+    {
+     "player": "Ben Gordon",
+     "salary": 3358320,
+     "note": null,
+     "bbr_id": "gordobe01"
+    },
+    {
+     "player": "Othella Harrington",
+     "salary": 3150000,
+     "note": null,
+     "bbr_id": "harriot01"
+    },
+    {
+     "player": "Eric Piatkowski",
+     "salary": 2750000,
+     "note": null,
+     "bbr_id": "piatker01"
+    },
+    {
+     "player": "Andres Nocioni",
+     "salary": 2525000,
+     "note": null,
+     "bbr_id": "nocioan01"
+    },
+    {
+     "player": "Kirk Hinrich",
+     "salary": 2349840,
+     "note": null,
+     "bbr_id": "hinriki01"
+    },
+    {
+     "player": "Luol Deng",
+     "salary": 2273400,
+     "note": null,
+     "bbr_id": "denglu01"
+    },
+    {
+     "player": "Cezary Trybanski",
+     "salary": 1700000,
+     "note": "released",
+     "bbr_id": "trybace01"
+    },
+    {
+     "player": "Jay Williams",
+     "salary": 1550551,
+     "note": "released",
+     "bbr_id": "willija03"
+    },
+    {
+     "player": "Frank Williams",
+     "salary": 957480,
+     "note": null,
+     "bbr_id": "willifr02"
+    },
+    {
+     "player": "Chris Jeffries",
+     "salary": 899040,
+     "note": "released",
+     "bbr_id": "jeffech01"
+    },
+    {
+     "player": "Adrian Griffin",
+     "salary": 870046,
+     "note": "minimum",
+     "bbr_id": "griffad01"
+    },
+    {
+     "player": "Mike Wilks",
+     "salary": 720046,
+     "note": "minimum, released",
+     "bbr_id": "wilksmi01"
+    },
+    {
+     "player": "Jannero Pargo",
+     "salary": 695046,
+     "note": "minimum",
+     "bbr_id": "pargoja01"
+    },
+    {
+     "player": "Tommy Smith",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "smithto03"
+    },
+    {
+     "player": "Chris Duhon",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "duhonch01"
+    },
+    {
+     "player": "Jared Reiner",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "reineja01"
+    }
+   ]
+  },
+  "Cleveland Cavaliers": {
+   "listed_total": 49175272,
+   "players": [
+    {
+     "player": "Zydrunas Ilgauskas",
+     "salary": 14625000,
+     "note": null,
+     "bbr_id": "ilgauzy01"
+    },
+    {
+     "player": "Eric Snow",
+     "salary": 4875000,
+     "note": null,
+     "bbr_id": "snower01"
+    },
+    {
+     "player": "LeBron James",
+     "salary": 4320360,
+     "note": null,
+     "bbr_id": "jamesle01"
+    },
+    {
+     "player": "Jeff McInnis",
+     "salary": 3600000,
+     "note": null,
+     "bbr_id": "mcinnje01"
+    },
+    {
+     "player": "Drew Gooden",
+     "salary": 3214080,
+     "note": null,
+     "bbr_id": "goodedr01"
+    },
+    {
+     "player": "Ira Newble",
+     "salary": 2704350,
+     "note": null,
+     "bbr_id": "newblir01"
+    },
+    {
+     "player": "DeSagana Diop",
+     "salary": 2695164,
+     "note": null,
+     "bbr_id": "diopde01"
+    },
+    {
+     "player": "Dajuan Wagner",
+     "salary": 2643600,
+     "note": null,
+     "bbr_id": "wagneda02"
+    },
+    {
+     "player": "Lucious Harris",
+     "salary": 2500000,
+     "note": null,
+     "bbr_id": "harrilu01"
+    },
+    {
+     "player": "Luke Jackson",
+     "salary": 1818720,
+     "note": null,
+     "bbr_id": "jackslu02"
+    },
+    {
+     "player": "Robert Traylor",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": "traylro01"
+    },
+    {
+     "player": "Scott Williams",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": "willisc01"
+    },
+    {
+     "player": "Aleksandar Pavlovic",
+     "salary": 1191000,
+     "note": null,
+     "bbr_id": "pavloal01"
+    },
+    {
+     "player": "Steven Hunter",
+     "salary": 1000000,
+     "note": "released",
+     "bbr_id": "huntest01"
+    },
+    {
+     "player": "Anderson Varejao",
+     "salary": 788000,
+     "note": null,
+     "bbr_id": "varejan01"
+    }
+   ]
+  },
+  "Dallas Mavericks": {
+   "listed_total": 91553496,
+   "players": [
+    {
+     "player": "Michael Finley",
+     "salary": 14609375,
+     "note": null,
+     "bbr_id": "finlemi01"
+    },
+    {
+     "player": "Dirk Nowitzki",
+     "salary": 12584688,
+     "note": null,
+     "bbr_id": "nowitdi01"
+    },
+    {
+     "player": "Alan Henderson",
+     "salary": 8273125,
+     "note": null,
+     "bbr_id": "hendeal01"
+    },
+    {
+     "player": "Erick Dampier",
+     "salary": 7700000,
+     "note": null,
+     "bbr_id": "dampier01"
+    },
+    {
+     "player": "Jason Terry",
+     "salary": 7500000,
+     "note": null,
+     "bbr_id": "terryja01"
+    },
+    {
+     "player": "Jerry Stackhouse",
+     "salary": 7437500,
+     "note": null,
+     "bbr_id": "stackje01"
+    },
+    {
+     "player": "Tariq Abdul-Wahad",
+     "salary": 6750000,
+     "note": null,
+     "bbr_id": "abdulta01"
+    },
+    {
+     "player": "Calvin Booth",
+     "salary": 5900700,
+     "note": null,
+     "bbr_id": "boothca01"
+    },
+    {
+     "player": "Marquis Daniels",
+     "salary": 4903000,
+     "note": null,
+     "bbr_id": "daniema01"
+    },
+    {
+     "player": "Shawn Bradley",
+     "salary": 4000000,
+     "note": null,
+     "bbr_id": "bradlsh01"
+    },
+    {
+     "player": "Evan Eschmeyer",
+     "salary": 3407655,
+     "note": "retired",
+     "bbr_id": "eschmev01"
+    },
+    {
+     "player": "Devin Harris",
+     "salary": 2741880,
+     "note": null,
+     "bbr_id": "harride01"
+    },
+    {
+     "player": "Darrell Armstrong",
+     "salary": 2275000,
+     "note": null,
+     "bbr_id": "armstda01"
+    },
+    {
+     "player": "Avery Johnson",
+     "salary": 1100000,
+     "note": "min, counts $745,046, retired",
+     "bbr_id": "johnsav01"
+    },
+    {
+     "player": "Pavel Podkolzin",
+     "salary": 1061880,
+     "note": null,
+     "bbr_id": "podkopa01"
+    },
+    {
+     "player": "Josh Howard",
+     "salary": 863640,
+     "note": null,
+     "bbr_id": "howarjo01"
+    },
+    {
+     "player": "DJ Mbenga",
+     "salary": 800000,
+     "note": null,
+     "bbr_id": "mbengdj01"
+    }
+   ]
+  },
+  "Denver Nuggets": {
+   "listed_total": 45621812,
+   "players": [
+    {
+     "player": "Kenyon Martin",
+     "salary": 9454546,
+     "note": null,
+     "bbr_id": "martike01"
+    },
+    {
+     "player": "Marcus Camby",
+     "salary": 8500000,
+     "note": null,
+     "bbr_id": "cambyma01"
+    },
+    {
+     "player": "Andre Miller",
+     "salary": 7366667,
+     "note": null,
+     "bbr_id": "millean02"
+    },
+    {
+     "player": "Carmelo Anthony",
+     "salary": 3471360,
+     "note": null,
+     "bbr_id": "anthoca01"
+    },
+    {
+     "player": "Voshon Lenard",
+     "salary": 3250000,
+     "note": null,
+     "bbr_id": "lenarvo01"
+    },
+    {
+     "player": "Nikoloz Tskitishvili",
+     "salary": 2910600,
+     "note": null,
+     "bbr_id": "tskitni01"
+    },
+    {
+     "player": "Earl Boykins",
+     "salary": 2500000,
+     "note": null,
+     "bbr_id": "boykiea01"
+    },
+    {
+     "player": "Nene",
+     "salary": 2260280,
+     "note": null,
+     "bbr_id": "hilarne01"
+    },
+    {
+     "player": "Rodney White",
+     "salary": 1797845,
+     "note": null,
+     "bbr_id": "whitero02"
+    },
+    {
+     "player": "Bryon Russell",
+     "salary": 1100000,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "russebr01"
+    },
+    {
+     "player": "Greg Buckner",
+     "salary": 870046,
+     "note": "minimum",
+     "bbr_id": "buckngr01"
+    },
+    {
+     "player": "Mark Pope",
+     "salary": 870046,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "popema01"
+    },
+    {
+     "player": "DerMarr Johnson",
+     "salary": 745046,
+     "note": "minimum",
+     "bbr_id": "johnsde03"
+    },
+    {
+     "player": "Francisco Elson",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "elsonfr01"
+    },
+    {
+     "player": "Arthur Johnson",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": null
+    }
+   ]
+  },
+  "Detroit Pistons": {
+   "listed_total": 54574980,
+   "players": [
+    {
+     "player": "Rasheed Wallace",
+     "salary": 9720000,
+     "note": null,
+     "bbr_id": "wallara01"
+    },
+    {
+     "player": "Richard Hamilton",
+     "salary": 7812500,
+     "note": null,
+     "bbr_id": "hamilri01"
+    },
+    {
+     "player": "Ben Wallace",
+     "salary": 7000000,
+     "note": null,
+     "bbr_id": "wallabe01"
+    },
+    {
+     "player": "Chauncey Billups",
+     "salary": 5455200,
+     "note": null,
+     "bbr_id": "billuch01"
+    },
+    {
+     "player": "Antonio McDyess",
+     "salary": 4903000,
+     "note": null,
+     "bbr_id": "mcdyean01"
+    },
+    {
+     "player": "Derrick Coleman",
+     "salary": 4500000,
+     "note": null,
+     "bbr_id": "colemde01"
+    },
+    {
+     "player": "Elden Campbell",
+     "salary": 4400000,
+     "note": null,
+     "bbr_id": "campbel01"
+    },
+    {
+     "player": "Darko Milicic",
+     "salary": 3865440,
+     "note": null,
+     "bbr_id": "milicda01"
+    },
+    {
+     "player": "Lindsey Hunter",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": "hunteli01"
+    },
+    {
+     "player": "Tayshaun Prince",
+     "salary": 1038960,
+     "note": null,
+     "bbr_id": "princta01"
+    },
+    {
+     "player": "Carlos Delfino",
+     "salary": 901920,
+     "note": null,
+     "bbr_id": "delfica01"
+    },
+    {
+     "player": "Darvin Ham",
+     "salary": 932546,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "hamda01"
+    },
+    {
+     "player": "Amal McCaskill",
+     "salary": 932546,
+     "note": "minimum, released",
+     "bbr_id": "mccasam01"
+    },
+    {
+     "player": "Smush Parker",
+     "salary": 695046,
+     "note": "minimum",
+     "bbr_id": "parkesm01"
+    },
+    {
+     "player": "Ronald Dupree",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "duprero01"
+    },
+    {
+     "player": "Horace Jenkins",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "jenkiho01"
+    }
+   ]
+  },
+  "Golden State Warriors": {
+   "listed_total": 54943724,
+   "players": [
+    {
+     "player": "Dale Davis",
+     "salary": 10068750,
+     "note": null,
+     "bbr_id": "davisda01"
+    },
+    {
+     "player": "Adonal Foyle",
+     "salary": 6500000,
+     "note": null,
+     "bbr_id": "foylead01"
+    },
+    {
+     "player": "Christian Laettner",
+     "salary": 5500000,
+     "note": "released",
+     "bbr_id": "laettch01"
+    },
+    {
+     "player": "Clifford Robinson",
+     "salary": 5287500,
+     "note": null,
+     "bbr_id": "robincl02"
+    },
+    {
+     "player": "Derek Fisher",
+     "salary": 4903000,
+     "note": null,
+     "bbr_id": "fishede01"
+    },
+    {
+     "player": "Eduardo Najera",
+     "salary": 3809524,
+     "note": null,
+     "bbr_id": "najered01"
+    },
+    {
+     "player": "Mike Dunleavy",
+     "salary": 3565080,
+     "note": null,
+     "bbr_id": "dunlemi02"
+    },
+    {
+     "player": "Jason Richardson",
+     "salary": 3534018,
+     "note": null,
+     "bbr_id": "richaja01"
+    },
+    {
+     "player": "Speedy Claxton",
+     "salary": 3300000,
+     "note": null,
+     "bbr_id": "claxtsp01"
+    },
+    {
+     "player": "Troy Murphy",
+     "salary": 2231808,
+     "note": null,
+     "bbr_id": "murphtr01"
+    },
+    {
+     "player": "Mickael Pietrus",
+     "salary": 1785960,
+     "note": null,
+     "bbr_id": "pietrmi01"
+    },
+    {
+     "player": "Andris Biedrins",
+     "salary": 1727760,
+     "note": null,
+     "bbr_id": "biedran01"
+    },
+    {
+     "player": "Calbert Cheaney",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": "cheanca01"
+    },
+    {
+     "player": "Ansu Sesay",
+     "salary": 745046,
+     "note": "minimum",
+     "bbr_id": "sesayan01"
+    },
+    {
+     "player": "Luis Flores",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "florelu01"
+    }
+   ]
+  },
+  "Houston Rockets": {
+   "listed_total": 60222300,
+   "players": [
+    {
+     "player": "Tracy McGrady",
+     "salary": 14487000,
+     "note": null,
+     "bbr_id": "mcgratr01"
+    },
+    {
+     "player": "Maurice Taylor",
+     "salary": 8450000,
+     "note": null,
+     "bbr_id": "tayloma01"
+    },
+    {
+     "player": "Clarence Weatherspoon",
+     "salary": 5899400,
+     "note": null,
+     "bbr_id": "weathcl01"
+    },
+    {
+     "player": "Juwan Howard",
+     "salary": 5408700,
+     "note": null,
+     "bbr_id": "howarju01"
+    },
+    {
+     "player": "Dikembe Mutombo",
+     "salary": 4496434,
+     "note": null,
+     "bbr_id": "mutomdi01"
+    },
+    {
+     "player": "Yao Ming",
+     "salary": 4436880,
+     "note": null,
+     "bbr_id": "mingya01"
+    },
+    {
+     "player": "Matt Maloney",
+     "salary": 3237500,
+     "note": "released",
+     "bbr_id": null
+    },
+    {
+     "player": "Bob Sura",
+     "salary": 3200000,
+     "note": null,
+     "bbr_id": "surabo01"
+    },
+    {
+     "player": "Jim Jackson",
+     "salary": 2420000,
+     "note": null,
+     "bbr_id": "jacksji01"
+    },
+    {
+     "player": "Charlie Ward",
+     "salary": 1700000,
+     "note": null,
+     "bbr_id": "wardch01"
+    },
+    {
+     "player": "Tyronn Lue",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": "luety01"
+    },
+    {
+     "player": "Bostjan Nachbar",
+     "salary": 1493880,
+     "note": null,
+     "bbr_id": "nachbbo01"
+    },
+    {
+     "player": "Reece Gaines",
+     "salary": 1454640,
+     "note": null,
+     "bbr_id": "gainere01"
+    },
+    {
+     "player": "Ryan Bowen",
+     "salary": 807046,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "bowenry01"
+    },
+    {
+     "player": "Scott Padgett",
+     "salary": 807546,
+     "note": "minimum",
+     "bbr_id": "padgesc01"
+    },
+    {
+     "player": "Andre Barrett",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "barrean01"
+    }
+   ]
+  },
+  "Indiana Pacers": {
+   "listed_total": 65792068,
+   "players": [
+    {
+     "player": "Jermaine O'Neal",
+     "salary": 14796000,
+     "note": null,
+     "bbr_id": "onealje01"
+    },
+    {
+     "player": "Austin Croshere",
+     "salary": 8260000,
+     "note": null,
+     "bbr_id": "croshau01"
+    },
+    {
+     "player": "Jonathan Bender",
+     "salary": 6525000,
+     "note": null,
+     "bbr_id": "bendejo01"
+    },
+    {
+     "player": "Ron Artest",
+     "salary": 6157895,
+     "note": null,
+     "bbr_id": "artesro01"
+    },
+    {
+     "player": "Scot Pollard",
+     "salary": 5792250,
+     "note": null,
+     "bbr_id": "pollasc01"
+    },
+    {
+     "player": "Reggie Miller",
+     "salary": 5500000,
+     "note": null,
+     "bbr_id": "millere01"
+    },
+    {
+     "player": "Stephen Jackson",
+     "salary": 5100000,
+     "note": null,
+     "bbr_id": "jacksst02"
+    },
+    {
+     "player": "Jeff Foster",
+     "salary": 4500000,
+     "note": null,
+     "bbr_id": "fosteje01"
+    },
+    {
+     "player": "Anthony Johnson",
+     "salary": 2200000,
+     "note": null,
+     "bbr_id": "johnsan02"
+    },
+    {
+     "player": "Fred Jones",
+     "salary": 1572480,
+     "note": null,
+     "bbr_id": "jonesfr01"
+    },
+    {
+     "player": "Jamaal Tinsley",
+     "salary": 1554326,
+     "note": null,
+     "bbr_id": "tinslja01"
+    },
+    {
+     "player": "Michael Curry",
+     "salary": 845122,
+     "note": "min, counts $572,413, s 12/13",
+     "bbr_id": "currymi01"
+    },
+    {
+     "player": "David Harrison",
+     "salary": 835560,
+     "note": null,
+     "bbr_id": "harrida01"
+    },
+    {
+     "player": "Eddie Gill",
+     "salary": 720046,
+     "note": "minimum",
+     "bbr_id": "gilled01"
+    },
+    {
+     "player": "James Jones",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "jonesja02"
+    },
+    {
+     "player": "Marcus Haislip",
+     "salary": 576380,
+     "note": "minimum, signed 12/1",
+     "bbr_id": "haislma01"
+    },
+    {
+     "player": "John Edwards",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "edwarjo01"
+    },
+    {
+     "player": "Tremaine Fowlkes",
+     "salary": 79029,
+     "note": "signed 11/25, released 12/13",
+     "bbr_id": "fowlktr01"
+    },
+    {
+     "player": "Britton Johnsen",
+     "salary": 45369,
+     "note": "signed 11/25, released 12/7",
+     "bbr_id": "johnsbr01"
+    }
+   ]
+  },
+  "Los Angeles Clippers": {
+   "listed_total": 45170768,
+   "players": [
+    {
+     "player": "Elton Brand",
+     "salary": 12056000,
+     "note": null,
+     "bbr_id": "brandel01"
+    },
+    {
+     "player": "Kerry Kittles",
+     "salary": 9566667,
+     "note": null,
+     "bbr_id": "kittlke01"
+    },
+    {
+     "player": "Corey Maggette",
+     "salary": 7000000,
+     "note": null,
+     "bbr_id": "maggeco01"
+    },
+    {
+     "player": "Shaun Livingston",
+     "salary": 3027840,
+     "note": null,
+     "bbr_id": "livinsh01"
+    },
+    {
+     "player": "Chris Kaman",
+     "salary": 2574240,
+     "note": null,
+     "bbr_id": "kamanch01"
+    },
+    {
+     "player": "Zeljko Rebraca",
+     "salary": 2500000,
+     "note": null,
+     "bbr_id": "rebraze01"
+    },
+    {
+     "player": "Chris Wilcox",
+     "salary": 2210880,
+     "note": null,
+     "bbr_id": "wilcoch01"
+    },
+    {
+     "player": "Marko Jaric",
+     "salary": 2100000,
+     "note": null,
+     "bbr_id": "jaricma01"
+    },
+    {
+     "player": "Rick Brunson",
+     "salary": 932546,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "brunsri01"
+    },
+    {
+     "player": "Mikki Moore",
+     "salary": 870046,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "mooremi01"
+    },
+    {
+     "player": "Bobby Simmons",
+     "salary": 825000,
+     "note": null,
+     "bbr_id": "simmobo01"
+    },
+    {
+     "player": "Mamadou N'diaye",
+     "salary": 750000,
+     "note": null,
+     "bbr_id": "ndiayma02"
+    },
+    {
+     "player": "Quinton Ross",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "rossqu01"
+    },
+    {
+     "player": "Lionel Chalmers",
+     "salary": 450000,
+     "note": null,
+     "bbr_id": "chalmli01"
+    }
+   ]
+  },
+  "Los Angeles Lakers": {
+   "listed_total": 65059100,
+   "players": [
+    {
+     "player": "Kobe Bryant",
+     "salary": 14175000,
+     "note": null,
+     "bbr_id": "bryanko01"
+    },
+    {
+     "player": "Brian Grant",
+     "salary": 13233434,
+     "note": null,
+     "bbr_id": "grantbr01"
+    },
+    {
+     "player": "Lamar Odom",
+     "salary": 10548596,
+     "note": null,
+     "bbr_id": "odomla01"
+    },
+    {
+     "player": "Vlade Divac",
+     "salary": 4903000,
+     "note": null,
+     "bbr_id": "divacvl01"
+    },
+    {
+     "player": "Devean George",
+     "salary": 4546000,
+     "note": null,
+     "bbr_id": "georgde01"
+    },
+    {
+     "player": "Chucky Atkins",
+     "salary": 4200000,
+     "note": null,
+     "bbr_id": "atkinch01"
+    },
+    {
+     "player": "Chris Mihm",
+     "salary": 3371393,
+     "note": null,
+     "bbr_id": "mihmch01"
+    },
+    {
+     "player": "Stanislav Medvedenko",
+     "salary": 3000000,
+     "note": null,
+     "bbr_id": "medvest01"
+    },
+    {
+     "player": "Caron Butler",
+     "salary": 1930680,
+     "note": null,
+     "bbr_id": "butleca01"
+    },
+    {
+     "player": "Jumaine Jones",
+     "salary": 1687500,
+     "note": null,
+     "bbr_id": "jonesju01"
+    },
+    {
+     "player": "Brian Cook",
+     "salary": 971160,
+     "note": null,
+     "bbr_id": "cookbr01"
+    },
+    {
+     "player": "Sasha Vujacic",
+     "salary": 846840,
+     "note": null,
+     "bbr_id": "vujacsa01"
+    },
+    {
+     "player": "Tierre Brown",
+     "salary": 720046,
+     "note": "minimum",
+     "bbr_id": "brownti01"
+    },
+    {
+     "player": "Luke Walton",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "waltolu01"
+    },
+    {
+     "player": "Tony Bobbitt",
+     "salary": 305403,
+     "note": "minimum, signed 12/6",
+     "bbr_id": "bobbito01"
+    }
+   ]
+  },
+  "Memphis Grizzlies": {
+   "listed_total": 67010824,
+   "players": [
+    {
+     "player": "Bonzi Wells",
+     "salary": 7700000,
+     "note": null,
+     "bbr_id": "wellsbo01"
+    },
+    {
+     "player": "Lorenzen Wright",
+     "salary": 7150000,
+     "note": null,
+     "bbr_id": "wrighlo02"
+    },
+    {
+     "player": "Jason Williams",
+     "salary": 6875000,
+     "note": null,
+     "bbr_id": "willija02"
+    },
+    {
+     "player": "Bo Outlaw",
+     "salary": 6573148,
+     "note": "released",
+     "bbr_id": "outlabo01"
+    },
+    {
+     "player": "Mike Miller",
+     "salary": 6000000,
+     "note": null,
+     "bbr_id": "millemi01"
+    },
+    {
+     "player": "Stromile Swift",
+     "salary": 5993105,
+     "note": null,
+     "bbr_id": "swiftst01"
+    },
+    {
+     "player": "James Posey",
+     "salary": 5408700,
+     "note": null,
+     "bbr_id": "poseyja01"
+    },
+    {
+     "player": "Brian Cardinal",
+     "salary": 4903000,
+     "note": null,
+     "bbr_id": "cardibr01"
+    },
+    {
+     "player": "Pau Gasol",
+     "salary": 4318481,
+     "note": null,
+     "bbr_id": "gasolpa01"
+    },
+    {
+     "player": "Shane Battier",
+     "salary": 3212402,
+     "note": null,
+     "bbr_id": "battish01"
+    },
+    {
+     "player": "Jake Tsakalidis",
+     "salary": 2900000,
+     "note": null,
+     "bbr_id": "tsakaja01"
+    },
+    {
+     "player": "Earl Watson",
+     "salary": 1458000,
+     "note": null,
+     "bbr_id": "watsoea01"
+    },
+    {
+     "player": "Troy Bell",
+     "salary": 1381920,
+     "note": "released",
+     "bbr_id": "belltr01"
+    },
+    {
+     "player": "Ryan Humphrey",
+     "salary": 1223160,
+     "note": null,
+     "bbr_id": "humphry01"
+    },
+    {
+     "player": "Dahntay Jones",
+     "salary": 1143360,
+     "note": null,
+     "bbr_id": "jonesda02"
+    },
+    {
+     "player": "Antonio Burks",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "burksan01"
+    },
+    {
+     "player": "Andre Emmett",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "emmetan01"
+    }
+   ]
+  },
+  "Miami Heat": {
+   "listed_total": 58949072,
+   "players": [
+    {
+     "player": "Shaquille O'Neal",
+     "salary": 27696430,
+     "note": null,
+     "bbr_id": "onealsh01"
+    },
+    {
+     "player": "Eddie Jones",
+     "salary": 13455000,
+     "note": null,
+     "bbr_id": "jonesed02"
+    },
+    {
+     "player": "Dwyane Wade",
+     "salary": 2834160,
+     "note": null,
+     "bbr_id": "wadedw01"
+    },
+    {
+     "player": "Damon Jones",
+     "salary": 2503000,
+     "note": null,
+     "bbr_id": "jonesda01"
+    },
+    {
+     "player": "Michael Doleac",
+     "salary": 2400000,
+     "note": null,
+     "bbr_id": "doleami01"
+    },
+    {
+     "player": "Malik Allen",
+     "salary": 1950625,
+     "note": null,
+     "bbr_id": "allenma01"
+    },
+    {
+     "player": "Wesley Person",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": "persowe01"
+    },
+    {
+     "player": "Rasual Butler",
+     "salary": 1200000,
+     "note": null,
+     "bbr_id": "butlera01"
+    },
+    {
+     "player": "Dorrell Wright",
+     "salary": 1152240,
+     "note": null,
+     "bbr_id": "wrighdo01"
+    },
+    {
+     "player": "Christian Laettner",
+     "salary": 1100000,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "laettch01"
+    },
+    {
+     "player": "Shandon Anderson",
+     "salary": 873699,
+     "note": "min, counts $654,187, s 11/14",
+     "bbr_id": "andersh01"
+    },
+    {
+     "player": "Keyon Dooling",
+     "salary": 745046,
+     "note": "minimum",
+     "bbr_id": "doolike01"
+    },
+    {
+     "player": "Wang Zhizhi",
+     "salary": 745046,
+     "note": "minimum",
+     "bbr_id": "zhizhwa01"
+    },
+    {
+     "player": "Jerome Beasley",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "beaslje01"
+    },
+    {
+     "player": "Udonis Haslem",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "hasleud01"
+    },
+    {
+     "player": "Matt Freije",
+     "salary": 28191,
+     "note": "released 11/14",
+     "bbr_id": "freijma01"
+    }
+   ]
+  },
+  "Milwaukee Bucks": {
+   "listed_total": 57137128,
+   "players": [
+    {
+     "player": "Keith Van Horn",
+     "salary": 14487000,
+     "note": null,
+     "bbr_id": "vanhoke01"
+    },
+    {
+     "player": "Desmond Mason",
+     "salary": 6529630,
+     "note": null,
+     "bbr_id": "masonde01"
+    },
+    {
+     "player": "Joe Smith",
+     "salary": 5899400,
+     "note": null,
+     "bbr_id": "smithjo02"
+    },
+    {
+     "player": "Anthony Mason",
+     "salary": 4710435,
+     "note": "released",
+     "bbr_id": "masonan01"
+    },
+    {
+     "player": "Jason Caffey",
+     "salary": 4148148,
+     "note": "released",
+     "bbr_id": "caffeja01"
+    },
+    {
+     "player": "Mike James",
+     "salary": 3100000,
+     "note": null,
+     "bbr_id": "jamesmi01"
+    },
+    {
+     "player": "Toni Kukoc",
+     "salary": 3000000,
+     "note": null,
+     "bbr_id": "kukocto01"
+    },
+    {
+     "player": "Michael Redd",
+     "salary": 3000000,
+     "note": null,
+     "bbr_id": "reddmi01"
+    },
+    {
+     "player": "T.J. Ford",
+     "salary": 2152800,
+     "note": null,
+     "bbr_id": "fordtj01"
+    },
+    {
+     "player": "Erick Strickland",
+     "salary": 1650000,
+     "note": null,
+     "bbr_id": "stricer01"
+    },
+    {
+     "player": "Maurice Williams",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": "willima01"
+    },
+    {
+     "player": "Marcus Haislip",
+     "salary": 1400000,
+     "note": "released 11/4",
+     "bbr_id": "haislma01"
+    },
+    {
+     "player": "Daniel Santiago",
+     "salary": 1320000,
+     "note": null,
+     "bbr_id": "santida01"
+    },
+    {
+     "player": "Kendall Gill",
+     "salary": 912195,
+     "note": "min, counts $617,843, s 12/6",
+     "bbr_id": "gillke01"
+    },
+    {
+     "player": "Zendon Hamilton",
+     "salary": 807546,
+     "note": "minimum",
+     "bbr_id": "hamilze01"
+    },
+    {
+     "player": "Marcus Fizer",
+     "salary": 735960,
+     "note": "minimum, signed 11/4",
+     "bbr_id": "fizerma01"
+    },
+    {
+     "player": "Eddie House",
+     "salary": 563327,
+     "note": "minimum, signed 12/18",
+     "bbr_id": "houseed01"
+    },
+    {
+     "player": "Dan Gadzuric",
+     "salary": 695046,
+     "note": "minimum",
+     "bbr_id": "gadzuda01"
+    },
+    {
+     "player": "Zaza Pachulia",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "pachuza01"
+    },
+    {
+     "player": "Anthony Goldwire",
+     "salary": 116713,
+     "note": "min, c $99,945, s 11/3, r 11/29",
+     "bbr_id": "goldwan01"
+    }
+   ]
+  },
+  "Minnesota Timberwolves": {
+   "listed_total": 70060920,
+   "players": [
+    {
+     "player": "Kevin Garnett",
+     "salary": 16000000,
+     "note": null,
+     "bbr_id": "garneke01"
+    },
+    {
+     "player": "Latrell Sprewell",
+     "salary": 14625000,
+     "note": null,
+     "bbr_id": "sprewla01"
+    },
+    {
+     "player": "Wally Szczerbiak",
+     "salary": 9000000,
+     "note": null,
+     "bbr_id": "szczewa02"
+    },
+    {
+     "player": "Sam Cassell",
+     "salary": 6250000,
+     "note": null,
+     "bbr_id": "cassesa01"
+    },
+    {
+     "player": "Michael Olowokandi",
+     "salary": 5408700,
+     "note": null,
+     "bbr_id": "olowomi01"
+    },
+    {
+     "player": "Troy Hudson",
+     "salary": 4903000,
+     "note": null,
+     "bbr_id": "hudsotr01"
+    },
+    {
+     "player": "Ervin Johnson",
+     "salary": 4837633,
+     "note": null,
+     "bbr_id": "johnser02"
+    },
+    {
+     "player": "Trenton Hassell",
+     "salary": 4350000,
+     "note": null,
+     "bbr_id": "hassetr01"
+    },
+    {
+     "player": "Fred Hoiberg",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": "hoibefr01"
+    },
+    {
+     "player": "Ndudi Ebi",
+     "salary": 901440,
+     "note": null,
+     "bbr_id": "ebind01"
+    },
+    {
+     "player": "Anthony Carter",
+     "salary": 807546,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "cartean01"
+    },
+    {
+     "player": "Mark Madsen",
+     "salary": 745046,
+     "note": "minimum",
+     "bbr_id": "madsema01"
+    },
+    {
+     "player": "Eddie Griffin",
+     "salary": 695046,
+     "note": "minimum",
+     "bbr_id": "griffed01"
+    }
+   ]
+  },
+  "New Jersey Nets": {
+   "listed_total": 54729028,
+   "players": [
+    {
+     "player": "Dikembe Mutombo",
+     "salary": 14989285,
+     "note": "released",
+     "bbr_id": "mutomdi01"
+    },
+    {
+     "player": "Jason Kidd",
+     "salary": 14796000,
+     "note": null,
+     "bbr_id": "kiddja01"
+    },
+    {
+     "player": "Vince Carter",
+     "salary": 12584688,
+     "note": null,
+     "bbr_id": "cartevi01"
+    },
+    {
+     "player": "Richard Jefferson",
+     "salary": 2266794,
+     "note": null,
+     "bbr_id": "jefferi01"
+    },
+    {
+     "player": "Jason Collins",
+     "salary": 1887864,
+     "note": null,
+     "bbr_id": "collija04"
+    },
+    {
+     "player": "Ron Mercer",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": "mercero01"
+    },
+    {
+     "player": "Zoran Planinic",
+     "salary": 1053720,
+     "note": null,
+     "bbr_id": "planizo01"
+    },
+    {
+     "player": "Travis Best",
+     "salary": 1000000,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "besttr01"
+    },
+    {
+     "player": "Nenad Krstic",
+     "salary": 939480,
+     "note": null,
+     "bbr_id": "krstine01"
+    },
+    {
+     "player": "Jacque Vaughn",
+     "salary": 932546,
+     "note": null,
+     "bbr_id": "vaughja01"
+    },
+    {
+     "player": "Brian Scalabrine",
+     "salary": 900000,
+     "note": null,
+     "bbr_id": "scalabr01"
+    },
+    {
+     "player": "Rodney Buford",
+     "salary": 745046,
+     "note": "minimum",
+     "bbr_id": "buforro01"
+    },
+    {
+     "player": "Jabari Smith",
+     "salary": 720046,
+     "note": "minimum",
+     "bbr_id": "smithja01"
+    },
+    {
+     "player": "Kaniel Dickens",
+     "salary": 483938,
+     "note": "minimum, signed 12/8",
+     "bbr_id": "dickeka01"
+    },
+    {
+     "player": "Awvee Storey",
+     "salary": 84573,
+     "note": "released 12/8",
+     "bbr_id": "storeaw01"
+    }
+   ]
+  },
+  "New Orleans Hornets": {
+   "listed_total": 56572880,
+   "players": [
+    {
+     "player": "Baron Davis",
+     "salary": 12330000,
+     "note": null,
+     "bbr_id": "davisba01"
+    },
+    {
+     "player": "Jamal Mashburn",
+     "salary": 9300000,
+     "note": null,
+     "bbr_id": "mashbja01"
+    },
+    {
+     "player": "Jamaal Magloire",
+     "salary": 8533333,
+     "note": null,
+     "bbr_id": "magloja01"
+    },
+    {
+     "player": "P.J. Brown",
+     "salary": 8000000,
+     "note": null,
+     "bbr_id": "brownpj01"
+    },
+    {
+     "player": "David Wesley",
+     "salary": 4455000,
+     "note": null,
+     "bbr_id": "wesleda01"
+    },
+    {
+     "player": "George Lynch",
+     "salary": 3000000,
+     "note": null,
+     "bbr_id": "lynchge01"
+    },
+    {
+     "player": "Rodney Rogers",
+     "salary": 2700000,
+     "note": null,
+     "bbr_id": "rogerro01"
+    },
+    {
+     "player": "Chris Andersen",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": "anderch01"
+    },
+    {
+     "player": "David West",
+     "salary": 1247160,
+     "note": null,
+     "bbr_id": "westda01"
+    },
+    {
+     "player": "J.R. Smith",
+     "salary": 1206600,
+     "note": null,
+     "bbr_id": "smithjr01"
+    },
+    {
+     "player": "Dan Dickau",
+     "salary": 893400,
+     "note": null,
+     "bbr_id": "dickada01"
+    },
+    {
+     "player": "Lee Nailon",
+     "salary": 745046,
+     "note": "minimum",
+     "bbr_id": "nailole01"
+    },
+    {
+     "player": "Junior Harrington",
+     "salary": 695046,
+     "note": "minimum",
+     "bbr_id": "harriju01"
+    },
+    {
+     "player": "Alex Garcia",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "garcial01"
+    },
+    {
+     "player": "Lonny Baxter",
+     "salary": 542475,
+     "note": "signed 12/12",
+     "bbr_id": "baxtelo01"
+    },
+    {
+     "player": "Matt Freije",
+     "salary": 352388,
+     "note": "signed 11/19",
+     "bbr_id": "freijma01"
+    },
+    {
+     "player": "Corsley Edwards",
+     "salary": 319498,
+     "note": "signed 12/4",
+     "bbr_id": "edwarco01"
+    },
+    {
+     "player": "Tim Pickett",
+     "salary": 32890,
+     "note": "released 11/19",
+     "bbr_id": "picketi02"
+    }
+   ]
+  },
+  "New York Knicks": {
+   "listed_total": 102442544,
+   "players": [
+    {
+     "player": "Allan Houston",
+     "salary": 17531250,
+     "note": null,
+     "bbr_id": "houstal01"
+    },
+    {
+     "player": "Anfernee Hardaway",
+     "salary": 14625000,
+     "note": null,
+     "bbr_id": "hardaan01"
+    },
+    {
+     "player": "Stephon Marbury",
+     "salary": 14625000,
+     "note": null,
+     "bbr_id": "marbust01"
+    },
+    {
+     "player": "Tim Thomas",
+     "salary": 12900000,
+     "note": null,
+     "bbr_id": "thomati01"
+    },
+    {
+     "player": "Shandon Anderson",
+     "salary": 7300000,
+     "note": "released 11/10",
+     "bbr_id": "andersh01"
+    },
+    {
+     "player": "Jerome Williams",
+     "salary": 6187500,
+     "note": null,
+     "bbr_id": "willije01"
+    },
+    {
+     "player": "Kurt Thomas",
+     "salary": 5884500,
+     "note": null,
+     "bbr_id": "thomaku01"
+    },
+    {
+     "player": "Jamal Crawford",
+     "salary": 5760000,
+     "note": null,
+     "bbr_id": "crawfja01"
+    },
+    {
+     "player": "Nazr Mohammed",
+     "salary": 5250000,
+     "note": null,
+     "bbr_id": "mohamna01"
+    },
+    {
+     "player": "Moochie Norris",
+     "salary": 3850000,
+     "note": null,
+     "bbr_id": "norrimo01"
+    },
+    {
+     "player": "Vin Baker",
+     "salary": 3500000,
+     "note": null,
+     "bbr_id": "bakervi01"
+    },
+    {
+     "player": "Mike Sweetney",
+     "salary": 1978920,
+     "note": null,
+     "bbr_id": "sweetmi01"
+    },
+    {
+     "player": "John Amaechi",
+     "salary": 1200000,
+     "note": "released",
+     "bbr_id": "amaecjo01"
+    },
+    {
+     "player": "Bruno Sundov",
+     "salary": 870046,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "sundobr01"
+    },
+    {
+     "player": "Jamison Brewer",
+     "salary": 720046,
+     "note": "minimum",
+     "bbr_id": "breweja01"
+    },
+    {
+     "player": "Trevor Ariza",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "arizatr01"
+    }
+   ]
+  },
+  "Orlando Magic": {
+   "listed_total": 66445252,
+   "players": [
+    {
+     "player": "Grant Hill",
+     "salary": 14487000,
+     "note": null,
+     "bbr_id": "hillgr01"
+    },
+    {
+     "player": "Steve Francis",
+     "salary": 12330000,
+     "note": null,
+     "bbr_id": "francst01"
+    },
+    {
+     "player": "Kelvin Cato",
+     "salary": 7992000,
+     "note": null,
+     "bbr_id": "catoke01"
+    },
+    {
+     "player": "Cuttino Mobley",
+     "salary": 5884500,
+     "note": null,
+     "bbr_id": "moblecu01"
+    },
+    {
+     "player": "Hedo Turkoglu",
+     "salary": 4903000,
+     "note": null,
+     "bbr_id": "turkohe01"
+    },
+    {
+     "player": "Tony Battie",
+     "salary": 4800000,
+     "note": null,
+     "bbr_id": "battito01"
+    },
+    {
+     "player": "Dwight Howard",
+     "salary": 4179720,
+     "note": null,
+     "bbr_id": "howardw01"
+    },
+    {
+     "player": "Pat Garrity",
+     "salary": 2937500,
+     "note": null,
+     "bbr_id": "garripa01"
+    },
+    {
+     "player": "Andrew DeClercq",
+     "salary": 2500000,
+     "note": null,
+     "bbr_id": "declean01"
+    },
+    {
+     "player": "DeShawn Stevenson",
+     "salary": 2500000,
+     "note": null,
+     "bbr_id": "stevede01"
+    },
+    {
+     "player": "Jameer Nelson",
+     "salary": 1106160,
+     "note": null,
+     "bbr_id": "nelsoja01"
+    },
+    {
+     "player": "Stacey Augmon",
+     "salary": 1100000,
+     "note": null,
+     "bbr_id": "augmost01"
+    },
+    {
+     "player": "Michael Bradley",
+     "salary": 720046,
+     "note": "minimum",
+     "bbr_id": "bradlmi01"
+    },
+    {
+     "player": "Brandon Hunter",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "huntebr01"
+    },
+    {
+     "player": "Mario Kasun",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "kasunma01"
+    }
+   ]
+  },
+  "Philadelphia 76ers": {
+   "listed_total": 71951888,
+   "players": [
+    {
+     "player": "Allen Iverson",
+     "salary": 14625000,
+     "note": null,
+     "bbr_id": "iversal01"
+    },
+    {
+     "player": "Glenn Robinson",
+     "salary": 12071250,
+     "note": null,
+     "bbr_id": "robingl01"
+    },
+    {
+     "player": "Kenny Thomas",
+     "salary": 6000000,
+     "note": null,
+     "bbr_id": "thomake01"
+    },
+    {
+     "player": "Todd MacCulloch",
+     "salary": 5899400,
+     "note": "retired",
+     "bbr_id": null
+    },
+    {
+     "player": "Aaron McKie",
+     "salary": 5500000,
+     "note": null,
+     "bbr_id": "mckieaa01"
+    },
+    {
+     "player": "Corliss Williamson",
+     "salary": 5500000,
+     "note": null,
+     "bbr_id": "willico02"
+    },
+    {
+     "player": "Brian Skinner",
+     "salary": 4500000,
+     "note": null,
+     "bbr_id": "skinnbr01"
+    },
+    {
+     "player": "Marc Jackson",
+     "salary": 4225000,
+     "note": null,
+     "bbr_id": "jacksma02"
+    },
+    {
+     "player": "Kevin Ollie",
+     "salary": 2704350,
+     "note": null,
+     "bbr_id": "ollieke01"
+    },
+    {
+     "player": "Kedrick Brown",
+     "salary": 2332388,
+     "note": null,
+     "bbr_id": "brownke01"
+    },
+    {
+     "player": "Andre Iguodala",
+     "salary": 1914480,
+     "note": null,
+     "bbr_id": "iguodan01"
+    },
+    {
+     "player": "Greg Buckner",
+     "salary": 1777778,
+     "note": "released",
+     "bbr_id": "buckngr01"
+    },
+    {
+     "player": "Samuel Dalembert",
+     "salary": 1599549,
+     "note": null,
+     "bbr_id": "dalemsa01"
+    },
+    {
+     "player": "John Salmons",
+     "salary": 925680,
+     "note": null,
+     "bbr_id": "salmojo01"
+    },
+    {
+     "player": "Josh Davis",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "davisjo02"
+    },
+    {
+     "player": "Willie Green",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "greenwi01"
+    },
+    {
+     "player": "Kyle Korver",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "korveky01"
+    },
+    {
+     "player": "Efthimios Rentzias",
+     "salary": 516865,
+     "note": "released",
+     "bbr_id": "rentzef01"
+    }
+   ]
+  },
+  "Phoenix Suns": {
+   "listed_total": 44256720,
+   "players": [
+    {
+     "player": "Shawn Marion",
+     "salary": 12330000,
+     "note": null,
+     "bbr_id": "mariosh01"
+    },
+    {
+     "player": "Steve Nash",
+     "salary": 8750000,
+     "note": null,
+     "bbr_id": "nashst01"
+    },
+    {
+     "player": "Quentin Richardson",
+     "salary": 5800000,
+     "note": null,
+     "bbr_id": "richaqu01"
+    },
+    {
+     "player": "Howard Eisley",
+     "salary": 5201923,
+     "note": "released",
+     "bbr_id": "eisleho01"
+    },
+    {
+     "player": "Joe Johnson",
+     "salary": 2358954,
+     "note": null,
+     "bbr_id": "johnsjo02"
+    },
+    {
+     "player": "Amare Stoudemire",
+     "salary": 2032200,
+     "note": null,
+     "bbr_id": "stoudam01"
+    },
+    {
+     "player": "Jake Voskuhl",
+     "salary": 1687500,
+     "note": null,
+     "bbr_id": "voskuja01"
+    },
+    {
+     "player": "Zarko Cabarkapa",
+     "salary": 1312800,
+     "note": null,
+     "bbr_id": "cabarza01"
+    },
+    {
+     "player": "Bo Outlaw",
+     "salary": 1059756,
+     "note": "min, counts $717,788, s 11/8",
+     "bbr_id": "outlabo01"
+    },
+    {
+     "player": "Casey Jacobsen",
+     "salary": 1082160,
+     "note": null,
+     "bbr_id": "jacobca01"
+    },
+    {
+     "player": "Maciej Lampe",
+     "salary": 900000,
+     "note": null,
+     "bbr_id": "lampema01"
+    },
+    {
+     "player": "Leandro Barbosa",
+     "salary": 870000,
+     "note": null,
+     "bbr_id": "barbole01"
+    },
+    {
+     "player": "Steven Hunter",
+     "salary": 720046,
+     "note": "minimum",
+     "bbr_id": "huntest01"
+    },
+    {
+     "player": "Jackson Vroman",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "vromaja01"
+    },
+    {
+     "player": "Yuta Tabuse",
+     "salary": 108066,
+     "note": "released 12/18",
+     "bbr_id": "tabusyu01"
+    }
+   ]
+  },
+  "Portland Trail Blazers": {
+   "listed_total": 83671312,
+   "players": [
+    {
+     "player": "Shareef Abdur-Rahim",
+     "salary": 14625000,
+     "note": null,
+     "bbr_id": "abdursh01"
+    },
+    {
+     "player": "Damon Stoudamire",
+     "salary": 12500000,
+     "note": null,
+     "bbr_id": "stoudda01"
+    },
+    {
+     "player": "Nick Van Exel",
+     "salary": 11933252,
+     "note": null,
+     "bbr_id": "vanexni01"
+    },
+    {
+     "player": "Theo Ratliff",
+     "salary": 10937500,
+     "note": null,
+     "bbr_id": "ratlith01"
+    },
+    {
+     "player": "Derek Anderson",
+     "salary": 8443500,
+     "note": null,
+     "bbr_id": "anderde01"
+    },
+    {
+     "player": "Darius Miles",
+     "salary": 6750000,
+     "note": null,
+     "bbr_id": "milesda01"
+    },
+    {
+     "player": "Ruben Patterson",
+     "salary": 5899400,
+     "note": null,
+     "bbr_id": "patteru01"
+    },
+    {
+     "player": "Arvydas Sabonis",
+     "salary": 3000000,
+     "note": "released",
+     "bbr_id": "sabonar01"
+    },
+    {
+     "player": "Sebastian Telfair",
+     "salary": 1559280,
+     "note": null,
+     "bbr_id": "telfase01"
+    },
+    {
+     "player": "Zach Randolph",
+     "salary": 1504272,
+     "note": null,
+     "bbr_id": "randoza01"
+    },
+    {
+     "player": "Joel Przybilla",
+     "salary": 1500000,
+     "note": null,
+     "bbr_id": "przybjo01"
+    },
+    {
+     "player": "Qyntel Woods",
+     "salary": 1127280,
+     "note": null,
+     "bbr_id": "woodsqy01"
+    },
+    {
+     "player": "Vladimir Stepania",
+     "salary": 1100000,
+     "note": null,
+     "bbr_id": "stepavl01"
+    },
+    {
+     "player": "Viktor Khryapa",
+     "salary": 1019400,
+     "note": null,
+     "bbr_id": "khryavi01"
+    },
+    {
+     "player": "Travis Outlaw",
+     "salary": 1011600,
+     "note": null,
+     "bbr_id": "outlatr01"
+    },
+    {
+     "player": "Richie Frahm",
+     "salary": 695046,
+     "note": "minimum",
+     "bbr_id": "frahmri01"
+    },
+    {
+     "player": "Geno Carlisle",
+     "salary": 65779,
+     "note": "min, signed 11/13, rel 12/14",
+     "bbr_id": "carlige01"
+    }
+   ]
+  },
+  "Sacramento Kings": {
+   "listed_total": 61807688,
+   "players": [
+    {
+     "player": "Chris Webber",
+     "salary": 17531250,
+     "note": null,
+     "bbr_id": "webbech01"
+    },
+    {
+     "player": "Mike Bibby",
+     "salary": 10500000,
+     "note": null,
+     "bbr_id": "bibbymi01"
+    },
+    {
+     "player": "Brad Miller",
+     "salary": 7875000,
+     "note": null,
+     "bbr_id": "millebr01"
+    },
+    {
+     "player": "Doug Christie",
+     "salary": 7550000,
+     "note": null,
+     "bbr_id": "chrisdo01"
+    },
+    {
+     "player": "Peja Stojakovic",
+     "salary": 6875000,
+     "note": null,
+     "bbr_id": "stojape01"
+    },
+    {
+     "player": "Greg Ostertag",
+     "salary": 4000000,
+     "note": null,
+     "bbr_id": "ostergr01"
+    },
+    {
+     "player": "Bobby Jackson",
+     "salary": 3150000,
+     "note": null,
+     "bbr_id": "jacksbo01"
+    },
+    {
+     "player": "Darius Songaila",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": "songada01"
+    },
+    {
+     "player": "Kevin Martin",
+     "salary": 872040,
+     "note": null,
+     "bbr_id": "martike02"
+    },
+    {
+     "player": "Matt Barnes",
+     "salary": 695046,
+     "note": "minimum",
+     "bbr_id": "barnema02"
+    },
+    {
+     "player": "Maurice Evans",
+     "salary": 695046,
+     "note": "minimum",
+     "bbr_id": "evansma01"
+    },
+    {
+     "player": "Erik Daniels",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "danieer01"
+    },
+    {
+     "player": "Courtney Alexander",
+     "salary": 79029,
+     "note": "released 11/20",
+     "bbr_id": "alexaco02"
+    }
+   ]
+  },
+  "San Antonio Spurs": {
+   "listed_total": 47149172,
+   "players": [
+    {
+     "player": "Tim Duncan",
+     "salary": 14260641,
+     "note": null,
+     "bbr_id": "duncati01"
+    },
+    {
+     "player": "Manu Ginobili",
+     "salary": 6603500,
+     "note": null,
+     "bbr_id": "ginobma01"
+    },
+    {
+     "player": "Rasho Nesterovic",
+     "salary": 6160000,
+     "note": null,
+     "bbr_id": "nestera01"
+    },
+    {
+     "player": "Malik Rose",
+     "salary": 5462500,
+     "note": null,
+     "bbr_id": "rosema01"
+    },
+    {
+     "player": "Brent Barry",
+     "salary": 4264900,
+     "note": null,
+     "bbr_id": "barrybr01"
+    },
+    {
+     "player": "Bruce Bowen",
+     "salary": 3000000,
+     "note": null,
+     "bbr_id": "bowenbr01"
+    },
+    {
+     "player": "Tony Parker",
+     "salary": 1545441,
+     "note": null,
+     "bbr_id": "parketo01"
+    },
+    {
+     "player": "Robert Horry",
+     "salary": 1100000,
+     "note": "minimum",
+     "bbr_id": "horryro01"
+    },
+    {
+     "player": "Tony Massenburg",
+     "salary": 1100000,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "masseto01"
+    },
+    {
+     "player": "Beno Udrih",
+     "salary": 841680,
+     "note": null,
+     "bbr_id": "udrihbe01"
+    },
+    {
+     "player": "Sean Marks",
+     "salary": 745046,
+     "note": "minimum",
+     "bbr_id": "marksse01"
+    },
+    {
+     "player": "Mike Wilks",
+     "salary": 720046,
+     "note": "minimum",
+     "bbr_id": "wilksmi01"
+    },
+    {
+     "player": "Devin Brown",
+     "salary": 695046,
+     "note": "minimum",
+     "bbr_id": "brownde02"
+    },
+    {
+     "player": "Linton Johnson",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "johnsli01"
+    },
+    {
+     "player": "Romain Sato",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "satoro01"
+    }
+   ]
+  },
+  "Seattle Sonics": {
+   "listed_total": 53821300,
+   "players": [
+    {
+     "player": "Ray Allen",
+     "salary": 14625000,
+     "note": null,
+     "bbr_id": "allenra02"
+    },
+    {
+     "player": "Rashard Lewis",
+     "salary": 7792208,
+     "note": null,
+     "bbr_id": "lewisra02"
+    },
+    {
+     "player": "Vitaly Potapenko",
+     "salary": 6191250,
+     "note": null,
+     "bbr_id": "potapvi01"
+    },
+    {
+     "player": "Danny Fortson",
+     "salary": 5818136,
+     "note": null,
+     "bbr_id": "fortsda01"
+    },
+    {
+     "player": "Jerome James",
+     "salary": 5455200,
+     "note": null,
+     "bbr_id": "jamesje01"
+    },
+    {
+     "player": "Vladimir Radmanovic",
+     "salary": 2300984,
+     "note": null,
+     "bbr_id": "radmavl01"
+    },
+    {
+     "player": "Antonio Daniels",
+     "salary": 2200000,
+     "note": null,
+     "bbr_id": "daniean01"
+    },
+    {
+     "player": "Nick Collison",
+     "salary": 1969680,
+     "note": null,
+     "bbr_id": "collini01"
+    },
+    {
+     "player": "Robert Swift",
+     "salary": 1641360,
+     "note": null,
+     "bbr_id": "swiftro01"
+    },
+    {
+     "player": "Ibrahim Kutluay",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": null
+    },
+    {
+     "player": "Luke Ridnour",
+     "salary": 1531200,
+     "note": null,
+     "bbr_id": "ridnolu01"
+    },
+    {
+     "player": "Reggie Evans",
+     "salary": 880000,
+     "note": null,
+     "bbr_id": "evansre01"
+    },
+    {
+     "player": "Mateen Cleaves",
+     "salary": 735960,
+     "note": "signed 11/5",
+     "bbr_id": "cleavma01"
+    },
+    {
+     "player": "Ronald Murray",
+     "salary": 695046,
+     "note": "minimum",
+     "bbr_id": "murraro01"
+    },
+    {
+     "player": "Damien Wilkins",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "wilkida02"
+    }
+   ]
+  },
+  "Toronto Raptors": {
+   "listed_total": 61703772,
+   "players": [
+    {
+     "player": "Jalen Rose",
+     "salary": 14487000,
+     "note": null,
+     "bbr_id": "roseja01"
+    },
+    {
+     "player": "Alvin Williams",
+     "salary": 5850000,
+     "note": null,
+     "bbr_id": "willial02"
+    },
+    {
+     "player": "Alonzo Mourning",
+     "salary": 5408700,
+     "note": null,
+     "bbr_id": "mournal01"
+    },
+    {
+     "player": "Donyell Marshall",
+     "salary": 5023850,
+     "note": null,
+     "bbr_id": "marshdo01"
+    },
+    {
+     "player": "Lamond Murray",
+     "salary": 4875000,
+     "note": null,
+     "bbr_id": "murrala01"
+    },
+    {
+     "player": "Morris Peterson",
+     "salary": 4400000,
+     "note": null,
+     "bbr_id": "petermo01"
+    },
+    {
+     "player": "Aaron Williams",
+     "salary": 3790257,
+     "note": null,
+     "bbr_id": "williaa01"
+    },
+    {
+     "player": "Eric Williams",
+     "salary": 3580000,
+     "note": null,
+     "bbr_id": "willier01"
+    },
+    {
+     "player": "Rafer Alston",
+     "salary": 3500000,
+     "note": null,
+     "bbr_id": "alstora01"
+    },
+    {
+     "player": "Chris Bosh",
+     "salary": 3129720,
+     "note": null,
+     "bbr_id": "boshch01"
+    },
+    {
+     "player": "Rafael Araujo",
+     "salary": 2082720,
+     "note": null,
+     "bbr_id": "araujra01"
+    },
+    {
+     "player": "Jerome Moiso",
+     "salary": 1760000,
+     "note": "released 12/17",
+     "bbr_id": "moisoje01"
+    },
+    {
+     "player": "Nate Huffman",
+     "salary": 1280000,
+     "note": "released",
+     "bbr_id": null
+    },
+    {
+     "player": "Milt Palacio",
+     "salary": 807546,
+     "note": "minimum",
+     "bbr_id": "palacmi01"
+    },
+    {
+     "player": "Loren Woods",
+     "salary": 755000,
+     "note": null,
+     "bbr_id": "woodslo01"
+    },
+    {
+     "player": "Matt Bonner",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "bonnema01"
+    },
+    {
+     "player": "Pape Sow",
+     "salary": 385277,
+     "note": "minimum",
+     "bbr_id": "sowpa01"
+    },
+    {
+     "player": "Roger Mason",
+     "salary": 203428,
+     "note": "released 12/16",
+     "bbr_id": "masonro01"
+    }
+   ]
+  },
+  "Utah Jazz": {
+   "listed_total": 43160808,
+   "players": [
+    {
+     "player": "Carlos Boozer",
+     "salary": 10967500,
+     "note": null,
+     "bbr_id": "boozeca01"
+    },
+    {
+     "player": "Mehmet Okur",
+     "salary": 7500000,
+     "note": null,
+     "bbr_id": "okurme01"
+    },
+    {
+     "player": "Matt Harpring",
+     "salary": 4690000,
+     "note": null,
+     "bbr_id": "harprma01"
+    },
+    {
+     "player": "Carlos Arroyo",
+     "salary": 4000000,
+     "note": null,
+     "bbr_id": "arroyca01"
+    },
+    {
+     "player": "Gordan Giricek",
+     "salary": 4000000,
+     "note": null,
+     "bbr_id": "giricgo01"
+    },
+    {
+     "player": "Jarron Collins",
+     "salary": 1700000,
+     "note": null,
+     "bbr_id": "collija03"
+    },
+    {
+     "player": "Andrei Kirilenko",
+     "salary": 1671694,
+     "note": null,
+     "bbr_id": "kirilan01"
+    },
+    {
+     "player": "Kris Humphries",
+     "salary": 1481400,
+     "note": null,
+     "bbr_id": "humphkr01"
+    },
+    {
+     "player": "Kirk Snyder",
+     "salary": 1336920,
+     "note": null,
+     "bbr_id": "snydeki01"
+    },
+    {
+     "player": "Raja Bell",
+     "salary": 1320000,
+     "note": null,
+     "bbr_id": "bellra01"
+    },
+    {
+     "player": "Curtis Borchardt",
+     "salary": 1280880,
+     "note": null,
+     "bbr_id": "borchcu01"
+    },
+    {
+     "player": "Howard Eisley",
+     "salary": 1100000,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "eisleho01"
+    },
+    {
+     "player": "Raul Lopez",
+     "salary": 997320,
+     "note": null,
+     "bbr_id": "lopezra01"
+    },
+    {
+     "player": "Keith McLeod",
+     "salary": 750000,
+     "note": null,
+     "bbr_id": "mcleoke01"
+    },
+    {
+     "player": "Aleksandar Radojevic",
+     "salary": 720046,
+     "note": "minimum",
+     "bbr_id": "radojal01"
+    }
+   ]
+  },
+  "Washington Wizards": {
+   "listed_total": 49547056,
+   "players": [
+    {
+     "player": "Antawn Jamison",
+     "salary": 12584688,
+     "note": null,
+     "bbr_id": "jamisan01"
+    },
+    {
+     "player": "Gilbert Arenas",
+     "salary": 9389600,
+     "note": null,
+     "bbr_id": "arenagi01"
+    },
+    {
+     "player": "Larry Hughes",
+     "salary": 5455200,
+     "note": null,
+     "bbr_id": "hughela01"
+    },
+    {
+     "player": "Kwame Brown",
+     "salary": 5361873,
+     "note": null,
+     "bbr_id": "brownkw01"
+    },
+    {
+     "player": "Etan Thomas",
+     "salary": 4903000,
+     "note": null,
+     "bbr_id": "thomaet01"
+    },
+    {
+     "player": "Jarvis Hayes",
+     "salary": 1879920,
+     "note": null,
+     "bbr_id": "hayesja01"
+    },
+    {
+     "player": "Jared Jeffries",
+     "salary": 1834080,
+     "note": null,
+     "bbr_id": "jeffrja01"
+    },
+    {
+     "player": "Brendan Haywood",
+     "salary": 1735305,
+     "note": null,
+     "bbr_id": "haywobr01"
+    },
+    {
+     "player": "Anthony Peeler",
+     "salary": 1600000,
+     "note": null,
+     "bbr_id": "peelean01"
+    },
+    {
+     "player": "Juan Dixon",
+     "salary": 1348200,
+     "note": null,
+     "bbr_id": "dixonju01"
+    },
+    {
+     "player": "Samaki Walker",
+     "salary": 995046,
+     "note": "minimum, counts $745,046",
+     "bbr_id": "walkesa01"
+    },
+    {
+     "player": "Laron Profit",
+     "salary": 745046,
+     "note": "minimum",
+     "bbr_id": "profila01"
+    },
+    {
+     "player": "Michael Ruffin",
+     "salary": 745046,
+     "note": "minimum",
+     "bbr_id": "ruffimi01"
+    },
+    {
+     "player": "Steve Blake",
+     "salary": 620046,
+     "note": "minimum",
+     "bbr_id": "blakest01"
+    },
+    {
+     "player": "Peter John Ramos",
+     "salary": 600000,
+     "note": null,
+     "bbr_id": "ramospe01"
+    }
+   ]
+  }
+ }
+}
