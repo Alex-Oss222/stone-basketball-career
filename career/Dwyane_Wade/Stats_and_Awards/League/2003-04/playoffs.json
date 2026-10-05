@@ -138,7 +138,7 @@
    "home_court": "Indiana Pacers",
    "wins": {
     "Indiana Pacers": 3,
-    "New Orleans Hornets": 2
+    "New Orleans Hornets": 3
    },
    "winner": null,
    "games": [
@@ -198,7 +198,9 @@
      "home": "New Orleans Hornets",
      "away": "Indiana Pacers",
      "conditional": true,
-     "event_id": "2004-04-29-indiana-pacers-at-new-orleans-hornets"
+     "event_id": "2004-04-29-indiana-pacers-at-new-orleans-hornets",
+     "result": "Indiana Pacers 79, New Orleans Hornets 87",
+     "winner": "New Orleans Hornets"
     },
     {
      "game": 7,

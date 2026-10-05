@@ -37,7 +37,7 @@ Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · [Miam
 ```
 EAST
   (1) Indiana Pacers           3
-  (8) New Orleans Hornets      2
+  (8) New Orleans Hornets      3
   (4) Miami Heat               1
   (5) Milwaukee Bucks          4   -> Milwaukee Bucks
         conference semifinal: winners meet
@@ -67,7 +67,7 @@ WEST
 
 ### East: (1) Indiana Pacers vs (8) New Orleans Hornets
 
-Home court: Indiana Pacers. Series Indiana Pacers 3, New Orleans Hornets 2.
+Home court: Indiana Pacers. Series Indiana Pacers 3, New Orleans Hornets 3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -76,7 +76,7 @@ Home court: Indiana Pacers. Series Indiana Pacers 3, New Orleans Hornets 2.
 | 3 | Fri Apr 23 | New Orleans Hornets | Indiana Pacers | Indiana Pacers 91, New Orleans Hornets 95 |
 | 4 | Sun Apr 25 | New Orleans Hornets | Indiana Pacers | Indiana Pacers 96, New Orleans Hornets 90 |
 | 5 | Tue Apr 27 | Indiana Pacers | New Orleans Hornets | New Orleans Hornets 99, Indiana Pacers 98 |
-| 6 | Thu Apr 29 | New Orleans Hornets | Indiana Pacers | if needed |
+| 6 | Thu Apr 29 | New Orleans Hornets | Indiana Pacers | Indiana Pacers 79, New Orleans Hornets 87 |
 | 7 | Sat May 1 | Indiana Pacers | New Orleans Hornets | if needed |
 
 ### East: (4) Miami Heat vs (5) Milwaukee Bucks
