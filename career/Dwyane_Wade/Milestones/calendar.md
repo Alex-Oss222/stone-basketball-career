@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2004-04-21 · Miami Heat · active
+Career date: 2004-04-22 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,18 +14,18 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2004-04-21 |
+| Career date | 2004-04-22 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2004-04-18-milwaukee-bucks-at-miami-heat |
+| Last closed event | 2004-04-21-milwaukee-bucks-at-miami-heat |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2004-04-21 | Current checkpoint | 2004-04-18-milwaukee-bucks-at-miami-heat | Recorded | [Owning event](../2003-04/06_Regular_Season/04_April/Week_2/note.md) |
+| 2004-04-22 | Current checkpoint | 2004-04-21-milwaukee-bucks-at-miami-heat | Recorded | [Owning event](../2003-04/06_Regular_Season/04_April/Week_2/note.md) |
 | 2003-07-19 | Rookie contract signed | Player and club | complete | [Contract desk](index.html#contract_negotiation) |
 | 2003-09-30 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
 | 2004-04-23 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
@@ -174,4 +174,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.md)
 - [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md)
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_1.md)
+- [Closed game](../2003-04/08_Playoffs/First_Round/Game_2.md)
 - [Dated milestone working records and player replies](../milestones.json)

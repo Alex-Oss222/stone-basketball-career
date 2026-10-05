@@ -2,9 +2,9 @@
 
 # Contract | Tim Thomas
 
-Known through: 2004-04-21. [Open interactive contract](thomati01.html#contract) · [Contract history](thomati01.html#contract-history)
+Known through: 2004-04-22. [Open interactive contract](thomati01.html#contract) · [Contract history](thomati01.html#contract-history)
 
-Tim Thomas: under contract. Evidence cutoff: 2004-04-21.
+Tim Thomas: under contract. Evidence cutoff: 2004-04-22.
 
 ## Current contract
 

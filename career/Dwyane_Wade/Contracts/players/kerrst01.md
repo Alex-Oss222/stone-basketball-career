@@ -2,9 +2,9 @@
 
 # Contract | Steve Kerr
 
-Known through: 2004-04-21. [Open interactive contract](kerrst01.html#contract) · [Contract history](kerrst01.html#contract-history)
+Known through: 2004-04-22. [Open interactive contract](kerrst01.html#contract) · [Contract history](kerrst01.html#contract-history)
 
-Steve Kerr: retired (researched, 2003-08-07). Evidence cutoff: 2004-04-21.
+Steve Kerr: retired (researched, 2003-08-07). Evidence cutoff: 2004-04-22.
 
 ## Current contract
 

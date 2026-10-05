@@ -2,9 +2,9 @@
 
 # Contract | Scottie Pippen
 
-Known through: 2004-04-21. [Open interactive contract](pippesc01.html#contract) · [Contract history](pippesc01.html#contract-history)
+Known through: 2004-04-22. [Open interactive contract](pippesc01.html#contract) · [Contract history](pippesc01.html#contract-history)
 
-Scottie Pippen: under contract. Evidence cutoff: 2004-04-21.
+Scottie Pippen: under contract. Evidence cutoff: 2004-04-22.
 
 ## Current contract
 

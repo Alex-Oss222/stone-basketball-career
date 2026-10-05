@@ -261,6 +261,109 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2003-04-mip",
+   "award": "mip",
+   "name": "Most Improved Player",
+   "announced_on": "2004-04-22",
+   "electorate": 121,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.1,
+    0.4
+   ],
+   "evidence_through": "2004-04-14",
+   "winners": [
+    "Zach Randolph"
+   ],
+   "tally": [
+    {
+     "player": "Zach Randolph",
+     "team": "Portland Trail Blazers",
+     "games": 81,
+     "mpg": 38.1,
+     "pts": 21.1,
+     "reb": 10.8,
+     "ast": 2.0,
+     "stl": 1.2,
+     "blk": 0.5,
+     "game_score": 14.58,
+     "prior_game_score": 6.49,
+     "points": 605,
+     "first_place": 121,
+     "votes_by_place": [
+      121,
+      0,
+      0
+     ]
+    },
+    {
+     "player": "Damon Stoudamire",
+     "team": "Portland Trail Blazers",
+     "games": 82,
+     "mpg": 40.5,
+     "pts": 16.0,
+     "reb": 4.4,
+     "ast": 7.2,
+     "stl": 1.3,
+     "blk": 0.1,
+     "game_score": 13.07,
+     "prior_game_score": 5.34,
+     "points": 273,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      76,
+      45
+     ]
+    },
+    {
+     "player": "Andrei Kirilenko",
+     "team": "Utah Jazz",
+     "games": 77,
+     "mpg": 38.9,
+     "pts": 18.9,
+     "reb": 8.7,
+     "ast": 3.4,
+     "stl": 2.2,
+     "blk": 3.1,
+     "game_score": 17.93,
+     "prior_game_score": 11.52,
+     "points": 192,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      45,
+      57
+     ]
+    },
+    {
+     "player": "Jiri Welsch",
+     "team": "Boston Celtics",
+     "games": 81,
+     "mpg": 31.8,
+     "pts": 10.9,
+     "reb": 4.8,
+     "ast": 2.6,
+     "stl": 1.5,
+     "blk": 0.1,
+     "game_score": 8.16,
+     "prior_game_score": 0.62,
+     "points": 19,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      19
+     ]
+    }
+   ]
   }
  ]
 }
