@@ -18,7 +18,9 @@ from .kernel import POSITIONS
 from .valuation import REPLACEMENT_EFF_PER_GAME, age_on, read
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
+from .seasons import active as _live_season, dates as _season_dates, path as _season_path
+SEASON = _live_season(ROOT)          # the live season (runtime/seasons.py): camp writes into its folder
+FIRST = SEASON == "2003-04"
 MIAMI = "Miami Heat"
 BASE = Path(f"career/Dwyane_Wade/{SEASON}")
 TEAM = BASE / "00_Team"
@@ -28,12 +30,12 @@ CAMP_ROSTER = CAMP / "camp_roster.json"
 ROTATION = TEAM / "Team/Depth_Chart/rotation.json"
 GRADES = TEAM / "Team/defensive_grades.json"
 PROMISES = CAMP / "promise_log.json"
-PRESEASON_SCHEDULE = Path("library/2003/league/nba_2003_04_preseason_schedule.json")
-STATS_PATH = Path("library/2003/league/nba_2002_03_player_stats.json")
+PRESEASON_SCHEDULE = _season_path(SEASON, "preseason_schedule")
+STATS_PATH = Path("library/2003/league/nba_2002_03_player_stats.json")     # positions of last resort (first season)
 
 # Judgement constants, named so they can be revisited.
 CAMP_MAX, ROSTER_MAX = 20, 15
-CUT_DAY_FALLBACK = "2003-10-27"                          # the 2003 cut date; later seasons read the calendar
+CUT_DAY_FALLBACK = "2003-10-27" if FIRST else _season_dates(SEASON, ROOT)["roster_cut"]   # the 2003 cut date; later seasons read the calendar
 INVITE_MIN_VALUE = REPLACEMENT_EFF_PER_GAME + 1.0      # production value worth a camp look
 INVITE_YOUNG_AGE = 25                                   # a young player is worth a look at replacement value
 CAMP_INJURY_BASE, CAMP_INJURY_PER_YEAR_OVER_30 = 0.03, 0.005
@@ -46,7 +48,8 @@ ROOKIE_PRIOR = {"top_ten": 9.0, "first_round": 7.0, "second_round": 5.5}   # a r
 CLOSE_BATTLE = 0.10                                     # top two within this share of each other: an evaluation draw
 WADE_GRADE_BASE, WADE_GRADE_LIMITS = 45, (35, 60)      # profile sections 6 and 14: tools and weak-side plays against positioning lapses
 DEFENSE_POINTS_PER_TEN_GRADE = 1.0                      # grade 60 plays as +1.0 point per 100 possessions, 40 as -1.0
-GUARANTEE_DATE = "2004-01-10"                           # a camp contract left on the roster becomes guaranteed (1999-era practice, judgement)
+GUARANTEE_DATE = _season_dates(SEASON, ROOT)["guarantee"]   # a camp contract left on the roster becomes guaranteed (1999-era practice, judgement)
+CAMP_WINDOW = f"{SEASON[:4]}-camp"                      # decision ids: one camp per season
 
 
 def slug(name):
@@ -71,9 +74,15 @@ def invite(on, front_office, market, root=ROOT):
     spots = CAMP_MAX - len(active)
     needs = front_office.needs()
     positions = front_office._positions()
-    for r in read(STATS_PATH, root)["records"]:          # last resort for a player without a club listing
-        if r.get("position"):
-            positions.setdefault(r["bbr_id"], str(r["position"]).split("-")[0])
+    if FIRST:
+        for r in read(STATS_PATH, root)["records"]:      # last resort for a player without a club listing
+            if r.get("position"):
+                positions.setdefault(r["bbr_id"], str(r["position"]).split("-")[0])
+    else:
+        from .free_agency_2004 import identity
+        for b, e in identity(root).items():
+            if e.get("position"):
+                positions.setdefault(b, str(e["position"]).split("-")[0])
     rows = []
     for bbr, p in market.pool(on).items():
         if p["club"] == MIAMI or any(r.get("bbr_id") == bbr for r in roster["players"]):
@@ -111,11 +120,12 @@ def camp_roster(on, front_office, invitees):
             "players": players, "cuts": []}
 
 
-def injury_packet(player, age, window="2003-camp"):
+def injury_packet(player, age, window=None, day=None):
+    window = window or CAMP_WINDOW
     p = CAMP_INJURY_BASE + max(0, (age or 27) - 30) * CAMP_INJURY_PER_YEAR_OVER_30
     p = round(min(0.5, p), 3)
     key = player.get("bbr_id") or slug(player["player"])
-    return {"event_id": f"{window}-{key}-injury", "date": "2003-09-30",
+    return {"event_id": f"{window}-{key}-injury", "date": day or ("2003-09-30" if FIRST else _season_dates(SEASON, ROOT)["training_camp_opens"]),
             "question": f"Is {player['player']} hurt in training camp?", "decider": "engine (camp injury draw)",
             "options": {"healthy": round(1 - p, 3), "injured": p},
             "basis": f"Camp injury chance {CAMP_INJURY_BASE} plus {CAMP_INJURY_PER_YEAR_OVER_30} a year over 30 (age {age}); an injured player misses the preseason (judgement, docs/front_office_design.md 8)."}
@@ -209,7 +219,8 @@ def preseason_requests(camp, depth, values, root=ROOT, grades=None):
         # The request's venue is the home club's: "home" for an arena game (neutral sites are not in the source).
         data = {"event_id": game["game_id"], "game_date": game["date"], "game_type": "preseason", "venue": "home",
                 "home": miami if venue == "home" else other, "away": other if venue == "home" else miami}
-        from .game_requests import load_request
+        from .game_requests import freeze, load_request
+        data = freeze(data, root)                          # inputs frozen at build from the dated records (game_requests)
         request.write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
         try:
             load_request(request, root)
@@ -231,7 +242,15 @@ def preseason_results(root=ROOT):
 
 # -- evaluation ---------------------------------------------------------------------------------
 def rookie_prior(player, root=ROOT):
-    """A rookie's prior by his draft slot, from the June 26 contract inventory's draft rights."""
+    """A rookie's prior by his draft slot: the June 26, 2003 contract inventory's draft rights in the first season,
+    the season's simulated draft after it."""
+    if not FIRST:
+        draft = Path(root) / f"career/Dwyane_Wade/2003-04/09_Draft/draft_{SEASON[:4]}.json"
+        picks = read(draft.relative_to(root), root)["picks"] if draft.is_file() else []
+        pick = next((p for p in picks if p["player"] == player), None)
+        if pick is None:
+            return ROOKIE_PRIOR["second_round"]
+        return ROOKIE_PRIOR["top_ten" if pick["round"] == 1 and pick["pick"] <= 10 else "first_round" if pick["round"] == 1 else "second_round"]
     for club in read("library/2003/league/nba_2003_contracts.json", root)["clubs"].values():
         for pick in club.get("draft_rights", []):
             if pick.get("player") == player:
@@ -244,7 +263,9 @@ def rookie_prior(player, root=ROOT):
 def prior_values(camp, valuation, root=ROOT):
     out = {}
     for p in camp["players"]:
-        v = valuation.value(p["bbr_id"]) if p.get("bbr_id") else None
+        # Wade's record key is his career id (alternate history: no real Basketball-Reference id).
+        key = p.get("bbr_id") or ("dwyane_wade" if p["player"] == "Dwyane Wade" else None)
+        v = valuation.value(key) if key else None
         if v is None:
             v = rookie_prior(p["player"], root) if ("draft" in p["status"] or not p.get("bbr_id")) else REPLACEMENT_EFF_PER_GAME
         out[p["player"]] = v
@@ -295,7 +316,7 @@ def battle_packets(camp, scores, on):
         if sa <= 0 or (sa - sb) / sa > CLOSE_BATTLE:
             continue
         pa = round(0.5 + 0.5 * (sa - sb) / (sa * CLOSE_BATTLE) * 0.5, 3)
-        packets.append({"event_id": f"2003-camp-{pos.lower()}-starter", "date": on,
+        packets.append({"event_id": f"{CAMP_WINDOW}-{pos.lower()}-starter", "date": on,
                         "question": f"Who starts at {pos}: {a['player']} or {b['player']}?",
                         "decider": "Miami coaching staff (evaluation draw)",
                         "options": {a["player"]: pa, b["player"]: round(1 - pa, 3)},

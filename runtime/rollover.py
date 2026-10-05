@@ -254,82 +254,9 @@ class Rollover:
                 "unavailable": [], "departed": [], "corrections": []}
 
     def card(self, entry, ident, prior):
-        """A new arrival's card in the template's section order; grades stay unassessed until evidence exists."""
-        name = entry["player"]
-        pos = " / ".join(ident.get("position", "N/A").replace("-", "/").split("/")) if ident.get("position") else "N/A"
-        born = ident.get("birth_date")
-        d = date.fromisoformat(self.day)
-        age = (d.year - int(born[:4]) - ((d.month, d.day) < (int(born[5:7]), int(born[8:10])))) if born else "N/A"
-        rows = ""
-        if prior:
-            t = prior["totals"]
-            g = max(t.get("games") or 0, 1)
-
-            def pct(m, a):
-                return f"{t[m] / t[a]:.3f}" if t.get(a) else "N/A"
-            rows = (f"| {self.old} | {', '.join(prior.get('team_codes') or []) or 'N/A'} | {t.get('games', 0)} | {t.get('games_started', 'N/A')} | "
-                    f"{t['minutes'] / g:.1f} | {t['points'] / g:.1f} | {(t['offensive_rebounds'] + t['defensive_rebounds']) / g:.1f} | "
-                    f"{t['assists'] / g:.1f} | {t['steals'] / g:.1f} | {t['blocks'] / g:.1f} | {t['turnovers'] / g:.1f} | "
-                    f"{pct('field_goals_made', 'field_goals_attempted')} | {pct('three_point_field_goals_made', 'three_point_field_goals_attempted')} | "
-                    f"{pct('free_throws_made', 'free_throws_attempted')} |\n")
         source = f"../../../../../../{self.record_path.relative_to(self.root).as_posix()}"
-        return f"""# {name} | {self.new} Player Profile
-
-**Team:** Miami Heat · **League:** NBA · **Position:** {pos}
-**Age at assessment:** {age} · **Height:** N/A · **Weight:** N/A
-**Opening assessment:** {_long(self.day)} · **Statistics through:** {_long(self.day)}
-
-**Contract/control:** {self.control_text(entry)} (register, {self.day}) [Finance record](../../Finances/cap_sheet.md).
-
-## Scouting report
-
-**Role:** Arrival on {_long(self.day)}; Miami's coaching staff has not assigned a role. The depth chart lists him as an unassigned arrival.
-
-**Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
-
-**Defense:** Unassessed.
-
-## Player grades
-
-Unassessed.
-
-## Changes and coaching notes
-
-| Date | Finding and effect on role or grade | Evidence |
-| --- | --- | --- |
-| {_long(self.day)} | Joined Miami for {self.new}. Card opened from the summer market record; no role assigned. | [Market record]({source}) |
-
-## Sources and uncertainty
-
-- **Assessment evidence:** [summer market record]({source}){', ' + self.old + ' simulated season totals' if prior else ''}.
-- **Not yet established:** height, weight, role, staff grades.
-
-<!-- yearly-statistics:start -->
-
-## Regular-season statistics by year
-
-G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
-
-**Coverage:** {self.old + ' from the simulated league record; ' if prior else ''}{self.new} not started.
-
-| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
-| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-{rows}| {self.new} | Miami Heat | 0 | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-
-Source: {self.old} from closed simulated results (`Stats_and_Awards/League/{self.old}/season_totals.json`); {self.new} from closed Miami game results.
-
-## Playoff statistics by year
-
-**Coverage:** No playoff appearances recorded for Miami.
-
-<!-- yearly-statistics:end -->
-
-## Awards and honors
-
-| Season / year | Award or honor | Source |
-| --- | --- | --- |
-| — | No verified awards or honors recorded on this card. | — |
-"""
+        return arrival_card(entry["player"], ident, self.day, self.control_text(entry), source, prior, self.new,
+                            f"Joined Miami for {self.new}. Card opened from the summer market record")
 
     @staticmethod
     def _repoint(text, src, dst):
@@ -464,6 +391,86 @@ Source: {self.old} from closed simulated results (`Stats_and_Awards/League/{self
         return {"season": self.new, "day": self.day, "players": [p["name"] for p in register["players"]],
                 "departed": [h["player"] for h in old_holdings["entries"] if h.get("until") and h["until"] >= f"{self.new[:4]}-06-30"
                              and h.get("basis", "").endswith("summer market")]}
+
+
+def arrival_card(name, ident, day, control, source_rel, prior, season, how):
+    """A new Miami player's card in the template's section order; grades stay unassessed until evidence exists.
+    `prior` is his previous season's record (simulated totals once the career has played it)."""
+    from .seasons import previous_season
+    old = previous_season(season)
+    pos = " / ".join(ident.get("position", "N/A").replace("-", "/").split("/")) if ident.get("position") else "N/A"
+    born = ident.get("birth_date")
+    d = date.fromisoformat(day)
+    age = (d.year - int(born[:4]) - ((d.month, d.day) < (int(born[5:7]), int(born[8:10])))) if born else "N/A"
+    rows = ""
+    if prior:
+        t = prior["totals"]
+        g = max(t.get("games") or 0, 1)
+
+        def pct(m, a):
+            return f"{t[m] / t[a]:.3f}" if t.get(a) else "N/A"
+        rows = (f"| {old} | {', '.join(prior.get('team_codes') or []) or 'N/A'} | {t.get('games', 0)} | {t.get('games_started', 'N/A')} | "
+                f"{t['minutes'] / g:.1f} | {t['points'] / g:.1f} | {(t['offensive_rebounds'] + t['defensive_rebounds']) / g:.1f} | "
+                f"{t['assists'] / g:.1f} | {t['steals'] / g:.1f} | {t['blocks'] / g:.1f} | {t['turnovers'] / g:.1f} | "
+                f"{pct('field_goals_made', 'field_goals_attempted')} | {pct('three_point_field_goals_made', 'three_point_field_goals_attempted')} | "
+                f"{pct('free_throws_made', 'free_throws_attempted')} |\n")
+    return f"""# {name} | {season} Player Profile
+
+**Team:** Miami Heat · **League:** NBA · **Position:** {pos}  
+**Age at assessment:** {age} · **Height:** N/A · **Weight:** N/A  
+**Opening assessment:** {_long(day)} · **Statistics through:** {_long(day)}
+
+**Contract/control:** {control} (register, {day}) [Finance record](../../Finances/cap_sheet.md).
+
+## Scouting report
+
+**Role:** Arrival on {_long(day)}; Miami's coaching staff has not assigned a role. The depth chart lists him as an unassigned arrival.
+
+**Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
+
+**Defense:** Unassessed.
+
+## Player grades
+
+Unassessed.
+
+## Changes and coaching notes
+
+| Date | Finding and effect on role or grade | Evidence |
+| --- | --- | --- |
+| {_long(day)} | {how}; no role assigned. | [Record]({source_rel}) |
+
+## Sources and uncertainty
+
+- **Assessment evidence:** [signing record]({source_rel}){', ' + old + ' simulated season totals' if prior else ''}.
+- **Not yet established:** height, weight, role, staff grades.
+
+<!-- yearly-statistics:start -->
+
+## Regular-season statistics by year
+
+G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
+
+**Coverage:** {old + ' from the simulated league record; ' if prior else ''}{season} not started.
+
+| Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+{rows}| {season} | Miami Heat | 0 | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+Source: {old} from closed simulated results (`Stats_and_Awards/League/{old}/season_totals.json`); {season} from closed Miami game results.
+
+## Playoff statistics by year
+
+**Coverage:** No playoff appearances recorded for Miami.
+
+<!-- yearly-statistics:end -->
+
+## Awards and honors
+
+| Season / year | Award or honor | Source |
+| --- | --- | --- |
+| — | No verified awards or honors recorded on this card. | — |
+"""
 
 
 def miami_summer(record, old_register):
