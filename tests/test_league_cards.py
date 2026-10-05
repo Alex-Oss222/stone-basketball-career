@@ -155,9 +155,10 @@ class CardContentTests(unittest.TestCase):
         self.assertIn(f'<img src="{SILHOUETTE}"', md)
         self.assertNotIn("http", md.split("<!-- /photo -->")[0].split("<!-- photo -->")[1])
         rookie, rookie_md, _ = self.card("austima01")
-        self.assertEqual((rookie["club"]["club"], rookie["club"]["rights"]), ("Chicago Bulls", True))
+        if self.ctx.on < "2004-07-01":          # his 2003-04 rights; a later season's card follows that season
+            self.assertEqual((rookie["club"]["club"], rookie["club"]["rights"]), ("Chicago Bulls", True))
+            self.assertIn("Unsigned No. 36 second-round draft rights", rookie_md)
         self.assertIn("**2003 draft entry:** No. 36 overall, rights held by Chicago Bulls", rookie_md)
-        self.assertIn("Unsigned No. 36 second-round draft rights", rookie_md)
         self.assertNotIn("2002-03 (recorded", rookie_md)
 
     def test_wade_and_miami_cards_link_home_and_never_use_history(self):
@@ -188,8 +189,10 @@ class CardContentTests(unittest.TestCase):
                     self.assertTrue(src == SILHOUETTE or src in self.allowed, src)
         photos = sum(1 for path, text in outputs.items() if path.suffix == ".md" and 'src="https://' in text)
         self.assertEqual(photos, 331)
-        self.assertEqual(check_cards(ROOT), [])
-        self.assertEqual(card_errors(ROOT), [])
+        from tests import live_season
+        with live_season():                      # the repository's cards are built for the career's live season
+            self.assertEqual(check_cards(ROOT), [])
+            self.assertEqual(card_errors(ROOT), [])
 
 
 class PageLinkTests(unittest.TestCase):

@@ -265,8 +265,7 @@ def prior_records(root):
         from .seasons import dates
         from .standings import standings_on
         table = standings_on(dates(ctx.previous, root)["regular_season_end"], root, ctx.previous)
-        rows = table if isinstance(table, list) else [r for conf in table.values() for r in conf]
-        return {r["club"]: {"wins": r["wins"], "losses": r["losses"]} for r in rows}
+        return {club: {"wins": r["wins"], "losses": r["losses"]} for club, r in table.items()}
     from .seasons import library, tag, previous_season
     return _read(Path(root) / library(ctx.season) / f"nba_{tag(previous_season(ctx.season))}_standings.json")["clubs"]
 

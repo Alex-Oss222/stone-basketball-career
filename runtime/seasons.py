@@ -248,8 +248,8 @@ def structure(season, root=ROOT):
     """The season's folder structure: the foundation file, with the regular-season months and weeks of this season's
     own calendar (`month_weeks`) for every season after the first (whose folders were laid out from the file)."""
     cfg = json.loads((ROOT / "foundation/season_structure.json").read_text(encoding="utf-8"))
-    if season == FIRST:
-        return cfg
+    if season == FIRST or not exists(season, "schedule", root):
+        return cfg                       # the first season, or a season without a researched schedule yet
     base = cfg["regular_season"]
     cfg["regular_season"] = {name: dict(base.get(name, {}), folder=folder, weeks=weeks)
                              for name, m, y, folder, weeks in month_weeks(season, root)}

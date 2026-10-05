@@ -64,6 +64,13 @@ def pin(root):
         data = json.loads(registry.read_text(encoding="utf-8"))
         data["events"] = [e for e in data.get("events", []) if e.get("recorded_on", "") <= CHECKPOINT]
         registry.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    # Every later season's folders (career, statistics, league and team pages) come after the checkpoint too.
+    import re
+    for base in (root / "career/Dwyane_Wade", root / "career/Dwyane_Wade/Stats_and_Awards",
+                 root / "career/Dwyane_Wade/Stats_and_Awards/League", root / "career/Dwyane_Wade/Stats_and_Awards/Team"):
+        for folder in (sorted(base.iterdir()) if base.is_dir() else []):
+            if folder.is_dir() and re.fullmatch(r"\d{4}-\d{2}", folder.name) and folder.name > Path(SEASON).name:
+                shutil.rmtree(folder)
     for rel in AFTER_CHECKPOINT:
         target = root / rel
         if target.is_dir():

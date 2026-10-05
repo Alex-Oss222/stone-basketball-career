@@ -7,3 +7,16 @@ the season it was written for after the career rolls on. The live season's own r
 import os
 
 os.environ.setdefault("CAREER_TEST_SEASON", "2003-04")
+
+
+def live_season():
+    """A context in which the career's real live season applies (for tests of the repository's current outputs)."""
+    from contextlib import contextmanager
+    from unittest import mock
+
+    @contextmanager
+    def unpinned():
+        with mock.patch.dict(os.environ):
+            os.environ.pop("CAREER_TEST_SEASON", None)
+            yield
+    return unpinned()

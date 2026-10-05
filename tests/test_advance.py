@@ -16,11 +16,11 @@ class AdvanceTests(unittest.TestCase):
 
     def test_a_pending_decision_or_consultation_stops_the_clock(self):
         self.state.write_text(json.dumps({"current_date": "2004-01-22", "pending_player_decisions": ["consultation:x"]}))
-        with mock.patch.object(A, "STATE", self.state), self.assertRaises(A.Stop) as stop:
+        with mock.patch.object(A, "state_file", lambda: self.state), self.assertRaises(A.Stop) as stop:
             A.wade_waits()
         self.assertIn("consultation:x", str(stop.exception))
         self.state.write_text(json.dumps({"current_date": "2004-01-22", "pending_player_decisions": []}))
-        with mock.patch.object(A, "STATE", self.state):
+        with mock.patch.object(A, "state_file", lambda: self.state):
             A.wade_waits()                                       # nothing pending: the day goes on
 
     def test_the_driver_never_passes_a_seed_or_chooses_an_outcome(self):

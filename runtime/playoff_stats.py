@@ -94,7 +94,7 @@ def player_lines(rows, root=ROOT, season=None):
     season = season or _active_season(root)
     from .write_back import game_records
     from .award_decisions import registry_names
-    names = registry_names(root)
+    names = registry_names(root, season)
     lines = defaultdict(list)
     for row in rows:
         for side, pid, _bbr, record in game_records(dict(row, note=row["note"]), root, season):
