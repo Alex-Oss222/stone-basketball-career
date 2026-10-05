@@ -1127,10 +1127,10 @@
    ],
    "home_court": "Indiana Pacers",
    "wins": {
-    "Indiana Pacers": 3,
+    "Indiana Pacers": 4,
     "Milwaukee Bucks": 1
    },
-   "winner": null,
+   "winner": "Indiana Pacers",
    "games": [
     {
      "game": 1,
@@ -1178,7 +1178,9 @@
      "home": "Indiana Pacers",
      "away": "Milwaukee Bucks",
      "conditional": true,
-     "event_id": "2004-05-12-milwaukee-bucks-at-indiana-pacers"
+     "event_id": "2004-05-12-milwaukee-bucks-at-indiana-pacers",
+     "result": "Milwaukee Bucks 102, Indiana Pacers 113",
+     "winner": "Indiana Pacers"
     },
     {
      "game": 6,
@@ -1186,7 +1188,8 @@
      "home": "Milwaukee Bucks",
      "away": "Indiana Pacers",
      "conditional": true,
-     "event_id": "2004-05-14-indiana-pacers-at-milwaukee-bucks"
+     "event_id": "2004-05-14-indiana-pacers-at-milwaukee-bucks",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -1194,9 +1197,11 @@
      "home": "Indiana Pacers",
      "away": "Milwaukee Bucks",
      "conditional": true,
-     "event_id": "2004-05-16-milwaukee-bucks-at-indiana-pacers"
+     "event_id": "2004-05-16-milwaukee-bucks-at-indiana-pacers",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2004-05-12"
   },
   {
    "id": "west-final",
@@ -1272,6 +1277,83 @@
      "away": "Los Angeles Lakers",
      "conditional": true,
      "event_id": "2004-06-02-los-angeles-lakers-at-minnesota-timberwolves"
+    }
+   ]
+  },
+  {
+   "id": "east-final",
+   "round": "conference_finals",
+   "conference": "East",
+   "seeds": [
+    1,
+    2
+   ],
+   "clubs": [
+    "Indiana Pacers",
+    "New Jersey Nets"
+   ],
+   "home_court": "Indiana Pacers",
+   "wins": {
+    "Indiana Pacers": 0,
+    "New Jersey Nets": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-05-22",
+     "home": "Indiana Pacers",
+     "away": "New Jersey Nets",
+     "conditional": false,
+     "event_id": "2004-05-22-new-jersey-nets-at-indiana-pacers"
+    },
+    {
+     "game": 2,
+     "date": "2004-05-24",
+     "home": "Indiana Pacers",
+     "away": "New Jersey Nets",
+     "conditional": false,
+     "event_id": "2004-05-24-new-jersey-nets-at-indiana-pacers"
+    },
+    {
+     "game": 3,
+     "date": "2004-05-26",
+     "home": "New Jersey Nets",
+     "away": "Indiana Pacers",
+     "conditional": false,
+     "event_id": "2004-05-26-indiana-pacers-at-new-jersey-nets"
+    },
+    {
+     "game": 4,
+     "date": "2004-05-28",
+     "home": "New Jersey Nets",
+     "away": "Indiana Pacers",
+     "conditional": false,
+     "event_id": "2004-05-28-indiana-pacers-at-new-jersey-nets"
+    },
+    {
+     "game": 5,
+     "date": "2004-05-30",
+     "home": "Indiana Pacers",
+     "away": "New Jersey Nets",
+     "conditional": true,
+     "event_id": "2004-05-30-new-jersey-nets-at-indiana-pacers"
+    },
+    {
+     "game": 6,
+     "date": "2004-06-01",
+     "home": "New Jersey Nets",
+     "away": "Indiana Pacers",
+     "conditional": true,
+     "event_id": "2004-06-01-indiana-pacers-at-new-jersey-nets"
+    },
+    {
+     "game": 7,
+     "date": "2004-06-03",
+     "home": "Indiana Pacers",
+     "away": "New Jersey Nets",
+     "conditional": true,
+     "event_id": "2004-06-03-new-jersey-nets-at-indiana-pacers"
     }
    ]
   }

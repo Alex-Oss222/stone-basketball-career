@@ -223,7 +223,7 @@ Home court: San Antonio Spurs. Los Angeles Lakers wins 4-1.
 
 ### East: (1) Indiana Pacers vs (5) Milwaukee Bucks
 
-Home court: Indiana Pacers. Series Indiana Pacers 3, Milwaukee Bucks 1.
+Home court: Indiana Pacers. Indiana Pacers wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -231,9 +231,9 @@ Home court: Indiana Pacers. Series Indiana Pacers 3, Milwaukee Bucks 1.
 | 2 | Wed May 5 | Indiana Pacers | Milwaukee Bucks | Milwaukee Bucks 92, Indiana Pacers 88 |
 | 3 | Sat May 8 | Milwaukee Bucks | Indiana Pacers | Indiana Pacers 93, Milwaukee Bucks 81 |
 | 4 | Mon May 10 | Milwaukee Bucks | Indiana Pacers | Indiana Pacers 95, Milwaukee Bucks 84 |
-| 5 | Wed May 12 | Indiana Pacers | Milwaukee Bucks | if needed |
-| 6 | Fri May 14 | Milwaukee Bucks | Indiana Pacers | if needed |
-| 7 | Sun May 16 | Indiana Pacers | Milwaukee Bucks | if needed |
+| 5 | Wed May 12 | Indiana Pacers | Milwaukee Bucks | Milwaukee Bucks 102, Indiana Pacers 113 |
+| 6 | Fri May 14 | Milwaukee Bucks | Indiana Pacers | not needed |
+| 7 | Sun May 16 | Indiana Pacers | Milwaukee Bucks | not needed |
 
 ## Conference finals
 
@@ -250,3 +250,17 @@ Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 0, Los Angeles
 | 5 | Sat May 29 | Minnesota Timberwolves | Los Angeles Lakers | if needed |
 | 6 | Mon May 31 | Los Angeles Lakers | Minnesota Timberwolves | if needed |
 | 7 | Wed Jun 2 | Minnesota Timberwolves | Los Angeles Lakers | if needed |
+
+### East: (1) Indiana Pacers vs (2) New Jersey Nets
+
+Home court: Indiana Pacers. Series Indiana Pacers 0, New Jersey Nets 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Sat May 22 | Indiana Pacers | New Jersey Nets |  |
+| 2 | Mon May 24 | Indiana Pacers | New Jersey Nets |  |
+| 3 | Wed May 26 | New Jersey Nets | Indiana Pacers |  |
+| 4 | Fri May 28 | New Jersey Nets | Indiana Pacers |  |
+| 5 | Sun May 30 | Indiana Pacers | New Jersey Nets | if needed |
+| 6 | Tue Jun 1 | New Jersey Nets | Indiana Pacers | if needed |
+| 7 | Thu Jun 3 | Indiana Pacers | New Jersey Nets | if needed |

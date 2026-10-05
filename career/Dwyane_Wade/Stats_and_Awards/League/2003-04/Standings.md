@@ -1,6 +1,6 @@
 # 2003-04 standings
 
-Through 2004-05-11, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2004-05-12, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 The playoffs are seeded: [bracket, seeds and schedule](Playoffs.md).
 
