@@ -2,7 +2,7 @@
 
 # Trade update | Dwyane Wade
 
-Career date: 2004-03-08 · Miami Heat · inactive
+Career date: 2004-03-14 · Miami Heat · inactive
 
 [Live milestone desk](index.html#trade_update) · [All milestones](README.md)
 
@@ -51,7 +51,7 @@ Activation: An actual dated proposal, consultation or executed transaction.
 
 ## Available response paths
 
-- [Open the current event discussion](../2003-04/06_Regular_Season/03_March/Week_1/note.md): Record a dated reaction to an actual transaction.
+- [Open the current event discussion](../2003-04/06_Regular_Season/03_March/Week_2/note.md): Record a dated reaction to an actual transaction.
 - [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
@@ -63,16 +63,16 @@ An actual transaction update with its source and applicable player rights.
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/03_March/Week_1/note.md)
+- [Owning event](../2003-04/06_Regular_Season/03_March/Week_2/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/review.json)
-- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/depth_chart.json)
+- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/review.json)
+- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json)
+- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
@@ -149,4 +149,8 @@ An actual transaction update with its source and applicable player rights.
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_1.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_2.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

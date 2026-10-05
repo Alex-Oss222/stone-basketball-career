@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-03-08. [Search the contract directory](index.html)
+Known through 2004-03-14. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -142,7 +142,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Devean George](players/georgde01.md) | Los Angeles Lakers | under contract | Devean George · existing contract; signing date not recorded | 1 |
 | [Devin Brown](players/brownde02.md) | San Antonio Spurs | under contract | Devin Brown · 2003-07-31 | 1 |
 | [Dikembe Mutombo](players/mutomdi01.md) | New York Knicks | under contract | Dikembe Mutombo · 2003-10-09 | 1 |
-| [Dion Glover](players/glovedi01.md) | Atlanta Hawks | released | No verified current agreement | 2 |
+| [Dion Glover](players/glovedi01.md) | Toronto Raptors | released | No verified current agreement | 2 |
 | [Dirk Nowitzki](players/nowitdi01.md) | Dallas Mavericks | under contract | Dirk Nowitzki · 2001-10-22 | 1 |
 | [Don Reid](players/reiddo01.md) | Free agent | unsigned free agent (researched, 2003-07-01) | No verified current agreement | 1 |
 | [Donnell Harvey](players/harvedo01.md) | Orlando Magic | under contract | Donnell Harvey · 2003-09-23 | 2 |

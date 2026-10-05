@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-03-08 · Miami Heat · active
+Career date: 2004-03-14 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-70 closed game records in 2003-04 through 2004-03-08. Competitions remain separate.
+74 closed game records in 2003-04 through 2004-03-14. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -100,6 +100,10 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-03-02 | regular | Toronto Raptors | Unknown: missing player box | [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md) |
 | 2004-03-04 | regular | Milwaukee Bucks | Unknown: missing player box | [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_2.md) |
 | 2004-03-06 | regular | Sacramento Kings | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_3.md) |
+| 2004-03-09 | regular | Orlando Magic | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_1.md) |
+| 2004-03-10 | regular | New Orleans Hornets | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_2.md) |
+| 2004-03-12 | regular | Seattle SuperSonics | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_3.md) |
+| 2004-03-14 | regular | New Jersey Nets | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_4.md) |
 
 ## Evidence available for decisions
 
@@ -131,16 +135,16 @@ The next declared, closed game result or a chosen completed-period review.
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/03_March/Week_1/note.md)
+- [Owning event](../2003-04/06_Regular_Season/03_March/Week_2/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/review.json)
-- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/depth_chart.json)
+- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/review.json)
+- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json)
+- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
@@ -217,4 +221,8 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_1.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_2.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

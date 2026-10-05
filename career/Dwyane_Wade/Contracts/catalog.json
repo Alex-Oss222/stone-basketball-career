@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-03-08",
+  "as_of": "2004-03-14",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1211,7 +1211,7 @@
     {
       "player_id": "glovedi01",
       "name": "Dion Glover",
-      "team": "Atlanta Hawks",
+      "team": "Toronto Raptors",
       "status": "released",
       "current_contract_id": null,
       "recorded_agreements": 2,

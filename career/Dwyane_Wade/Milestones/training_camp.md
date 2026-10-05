@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2004-03-08 · Miami Heat · complete
+Career date: 2004-03-14 · Miami Heat · complete
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -23,7 +23,7 @@ Activation: The club opens camp and records participation, evaluation or an actu
 
 ## Current depth chart
 
-Snapshot: 2004-02-27. Draft rights and unassigned arrivals are not assigned minutes.
+Snapshot: 2004-03-12. Draft rights and unassigned arrivals are not assigned minutes.
 
 | Position | Staff ordering | Interpretation |
 | --- | --- | --- |
@@ -31,7 +31,7 @@ Snapshot: 2004-02-27. Draft rights and unassigned arrivals are not assigned minu
 | SG | Dwyane Wade, Stephen Jackson, Eddie Jones, Rasual Butler | Staff ordering; not a future minutes promise |
 | SF | Caron Butler, Sean Lampley | Staff ordering; not a future minutes promise |
 | PF | Scott Padgett, LaPhonso Ellis, John Wallace, Udonis Haslem | Staff ordering; not a future minutes promise |
-| C | Shawn Kemp, Brian Grant, Cherokee Parks | Staff ordering; not a future minutes promise |
+| C | Brian Grant, Shawn Kemp, Cherokee Parks | Staff ordering; not a future minutes promise |
 
 ## Role and promise review
 
@@ -77,16 +77,16 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/03_March/Week_1/note.md)
+- [Owning event](../2003-04/06_Regular_Season/03_March/Week_2/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/review.json)
-- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/depth_chart.json)
+- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/review.json)
+- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
 - [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
 - [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-02-27/rotation.json)
+- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-03-12/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
 - [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
@@ -163,4 +163,8 @@ A verified camp-opening record, then actual preseason evidence and the coach's r
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_1.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_2.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

@@ -2,9 +2,9 @@
 
 # Contract | Dion Glover
 
-Known through: 2004-03-08. [Open interactive contract](glovedi01.html#contract) · [Contract history](glovedi01.html#contract-history)
+Known through: 2004-03-14. [Open interactive contract](glovedi01.html#contract) · [Contract history](glovedi01.html#contract-history)
 
-Dion Glover: released. Evidence cutoff: 2004-03-08.
+Dion Glover: released. Evidence cutoff: 2004-03-14.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Dion Glover |
-| Club / rights baseline | Atlanta Hawks |
+| Club / rights baseline | Toronto Raptors |
 | Control status | released |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

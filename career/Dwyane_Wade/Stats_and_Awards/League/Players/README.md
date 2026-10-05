@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-03-08**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-03-14**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -17,7 +17,7 @@ Card date: **2004-03-08**. 504 registry players, one Markdown card and one inter
 | [Avery Johnson](johnsav01.md) | Golden State Warriors | None | silhouette | [open](johnsav01.html) |
 | [Baron Davis](davisba01.md) | New Orleans Hornets | 24 | sourced | [open](davisba01.html) |
 | [Bimbo Coles](colesbi01.md) | Boston Celtics | 35 | sourced | [open](colesbi01.html) |
-| [Bobby Jackson](jacksbo01.md) | Sacramento Kings | 30 | sourced | [open](jacksbo01.html) |
+| [Bobby Jackson](jacksbo01.md) | Sacramento Kings | 31 | sourced | [open](jacksbo01.html) |
 | [Brevin Knight](knighbr01.md) | Phoenix Suns | 28 | sourced | [open](knighbr01.html) |
 | [Brian Shaw](shawbr01.md) | Los Angeles Lakers | 37 | sourced | [open](shawbr01.html) |
 | [Bryce Drew](drewbr01.md) | New Orleans Hornets | None | silhouette | [open](drewbr01.html) |
@@ -106,7 +106,7 @@ Card date: **2004-03-08**. 504 registry players, one Markdown card and one inter
 | [Tony Parker](parketo01.md) | San Antonio Spurs | 21 | sourced | [open](parketo01.html) |
 | [Travis Best](besttr01.md) | Dallas Mavericks | 31 | sourced | [open](besttr01.html) |
 | [Troy Bell](belltr01.md) | Memphis Grizzlies | 23 | silhouette | [open](belltr01.html) |
-| [Troy Hudson](hudsotr01.md) | Minnesota Timberwolves | 27 | sourced | [open](hudsotr01.html) |
+| [Troy Hudson](hudsotr01.md) | Minnesota Timberwolves | 28 | sourced | [open](hudsotr01.html) |
 | [Tyronn Lue](luety01.md) | Orlando Magic | 26 | sourced | [open](luety01.html) |
 
 </details>
@@ -141,7 +141,7 @@ Card date: **2004-03-08**. 504 registry players, one Markdown card and one inter
 | [DeShawn Stevenson](stevede01.md) | Utah Jazz | 22 | sourced | [open](stevede01.html) |
 | [Derrick Dial](dialde01.md) | Orlando Magic | None | silhouette | [open](dialde01.html) |
 | [Devin Brown](brownde02.md) | San Antonio Spurs | None | silhouette | [open](brownde02.html) |
-| [Dion Glover](glovedi01.md) | Atlanta Hawks | 25 | silhouette | [open](glovedi01.html) |
+| [Dion Glover](glovedi01.md) | Toronto Raptors | 25 | silhouette | [open](glovedi01.html) |
 | [Doug Christie](chrisdo01.md) | Sacramento Kings | 33 | sourced | [open](chrisdo01.html) |
 | [Dwyane Wade](wadedw01.md) | Miami Heat | 20 | sourced | [open](wadedw01.html) |
 | [Eddie House](houseed01.md) | Los Angeles Clippers | 25 | sourced | [open](houseed01.html) |
@@ -222,7 +222,7 @@ Card date: **2004-03-08**. 504 registry players, one Markdown card and one inter
 | [Bruce Bowen](bowenbr01.md) | San Antonio Spurs | 32 | sourced | [open](bowenbr01.html) |
 | [Bryon Russell](russebr01.md) | Los Angeles Lakers | 33 | silhouette | [open](russebr01.html) |
 | [Carmelo Anthony](anthoca01.md) | Denver Nuggets | 19 | sourced | [open](anthoca01.html) |
-| [Caron Butler](butleca01.md) | Miami Heat | 23 | sourced | [open](butleca01.html) |
+| [Caron Butler](butleca01.md) | Miami Heat | 24 | sourced | [open](butleca01.html) |
 | [Casey Jacobsen](jacobca01.md) | Phoenix Suns | 22 | silhouette | [open](jacobca01.html) |
 | [Chris Jefferies](jeffech01.md) | Toronto Raptors | 24 | silhouette | [open](jeffech01.html) |
 | [Chris Owens](owensch01.md) | Memphis Grizzlies | 25 | sourced | [open](owensch01.html) |
@@ -356,8 +356,8 @@ Card date: **2004-03-08**. 504 registry players, one Markdown card and one inter
 | [Donyell Marshall](marshdo01.md) | Chicago Bulls | None | silhouette | [open](marshdo01.html) |
 | [Drew Gooden](goodedr01.md) | Orlando Magic | 22 | sourced | [open](goodedr01.html) |
 | [Eddie Griffin](griffed01.md) | Houston Rockets | 21 | silhouette | [open](griffed01.html) |
-| [Elton Brand](brandel01.md) | Los Angeles Clippers | 24 | sourced | [open](brandel01.html) |
-| [Grant Long](longgr01.md) | Boston Celtics | 37 | silhouette | [open](longgr01.html) |
+| [Elton Brand](brandel01.md) | Los Angeles Clippers | 25 | sourced | [open](brandel01.html) |
+| [Grant Long](longgr01.md) | Boston Celtics | 38 | silhouette | [open](longgr01.html) |
 | [Hiram Fuller](fullehi01.md) | Atlanta Hawks | None | silhouette | [open](fullehi01.html) |
 | [Horace Grant](grantho01.md) | Los Angeles Lakers | None | silhouette | [open](grantho01.html) |
 | [Jared Jeffries](jeffrja01.md) | Washington Wizards | None | silhouette | [open](jeffrja01.html) |
@@ -436,7 +436,7 @@ Card date: **2004-03-08**. 504 registry players, one Markdown card and one inter
 | Player | Club on card date | Age | Photo | Interactive |
 | --- | --- | --- | --- | --- |
 | [Aaron Williams](williaa01.md) | New Jersey Nets | 32 | silhouette | [open](williaa01.html) |
-| [Adonal Foyle](foylead01.md) | Golden State Warriors | 28 | sourced | [open](foylead01.html) |
+| [Adonal Foyle](foylead01.md) | Golden State Warriors | 29 | sourced | [open](foylead01.html) |
 | [Alan Henderson](hendeal01.md) | Atlanta Hawks | 31 | silhouette | [open](hendeal01.html) |
 | [Alonzo Mourning](mournal01.md) | New Jersey Nets | None | silhouette | [open](mournal01.html) |
 | [Amal McCaskill](mccasam01.md) | Philadelphia 76ers | None | silhouette | [open](mccasam01.html) |
@@ -501,7 +501,7 @@ Card date: **2004-03-08**. 504 registry players, one Markdown card and one inter
 | [Keon Clark](clarkke01.md) | Utah Jazz | 28 | silhouette | [open](clarkke01.html) |
 | [Kevin Willis](willike02.md) | San Antonio Spurs | 41 | sourced | [open](willike02.html) |
 | [Kurt Thomas](thomaku01.md) | New York Knicks | 31 | sourced | [open](thomaku01.html) |
-| [Kwame Brown](brownkw01.md) | Washington Wizards | 21 | sourced | [open](brownkw01.html) |
+| [Kwame Brown](brownkw01.md) | Washington Wizards | 22 | sourced | [open](brownkw01.html) |
 | [Leon Smith](smithle01.md) | Seattle SuperSonics | None | silhouette | [open](smithle01.html) |
 | [Lonny Baxter](baxtelo01.md) | Chicago Bulls | 25 | sourced | [open](baxtelo01.html) |
 | [Loren Woods](woodslo01.md) | Minnesota Timberwolves | 25 | sourced | [open](woodslo01.html) |
