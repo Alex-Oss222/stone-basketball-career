@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-04-04**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-04-05**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -90,7 +90,7 @@ Card date: **2004-04-04**. 504 registry players, one Markdown card and one inter
 | [Rod Strickland](stricro02.md) | Orlando Magic | 37 | sourced | [open](stricro02.html) |
 | [Rusty LaRue](larueru01.md) | Golden State Warriors | None | silhouette | [open](larueru01.html) |
 | [Sam Cassell](cassesa01.md) | Minnesota Timberwolves | 34 | sourced | [open](cassesa01.html) |
-| [Shammond Williams](willish01.md) | Orlando Magic | 28 | sourced | [open](willish01.html) |
+| [Shammond Williams](willish01.md) | Orlando Magic | 29 | sourced | [open](willish01.html) |
 | [Shane Heal](healsh01.md) | San Antonio Spurs | None | silhouette | [open](healsh01.html) |
 | [Smush Parker](parkesm01.md) | Cleveland Cavaliers | 22 | sourced | [open](parkesm01.html) |
 | [Speedy Claxton](claxtsp01.md) | Golden State Warriors | 25 | sourced | [open](claxtsp01.html) |
@@ -191,7 +191,7 @@ Card date: **2004-04-04**. 504 registry players, one Markdown card and one inter
 | [Ronald Murray](murraro01.md) | Seattle SuperSonics | 24 | sourced | [open](murraro01.html) |
 | [Sani Becirovic](becirsa01.md) | Denver Nuggets (draft rights) | 22 | sourced | [open](becirsa01.html) |
 | [Stacey Augmon](augmost01.md) | New Orleans Hornets | 35 | sourced | [open](augmost01.html) |
-| [Stephen Jackson](jacksst02.md) | Miami Heat | 25 | sourced | [open](jacksst02.html) |
+| [Stephen Jackson](jacksst02.md) | Miami Heat | 26 | sourced | [open](jacksst02.html) |
 | [Steve Smith](smithst01.md) | New Orleans Hornets | 35 | sourced | [open](smithst01.html) |
 | [Tamar Slay](slayta01.md) | New Jersey Nets | 24 | sourced | [open](slayta01.html) |
 | [Tariq Abdul-Wahad](abdulta01.md) | Dallas Mavericks | 29 | sourced | [open](abdulta01.html) |
@@ -315,7 +315,7 @@ Card date: **2004-04-04**. 504 registry players, one Markdown card and one inter
 
 | Player | Club on card date | Age | Photo | Interactive |
 | --- | --- | --- | --- | --- |
-| [Matt Bonner](bonnema01.md) | Toronto Raptors (draft rights) | 23 | sourced | [open](bonnema01.html) |
+| [Matt Bonner](bonnema01.md) | Toronto Raptors (draft rights) | 24 | sourced | [open](bonnema01.html) |
 
 </details>
 

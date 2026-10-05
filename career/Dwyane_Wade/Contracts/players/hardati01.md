@@ -2,9 +2,9 @@
 
 # Contract | Tim Hardaway
 
-Known through: 2004-04-04. [Open interactive contract](hardati01.html#contract) · [Contract history](hardati01.html#contract-history)
+Known through: 2004-04-05. [Open interactive contract](hardati01.html#contract) · [Contract history](hardati01.html#contract-history)
 
-Tim Hardaway: retired (researched, 2003-11). Evidence cutoff: 2004-04-04.
+Tim Hardaway: retired (researched, 2003-11). Evidence cutoff: 2004-04-05.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Jason Collier
 
-Known through: 2004-04-04. [Open interactive contract](collija02.html#contract) · [Contract history](collija02.html#contract-history)
+Known through: 2004-04-05. [Open interactive contract](collija02.html#contract) · [Contract history](collija02.html#contract-history)
 
-Jason Collier: under contract. Evidence cutoff: 2004-04-04.
+Jason Collier: under contract. Evidence cutoff: 2004-04-05.
 
 ## Current contract
 

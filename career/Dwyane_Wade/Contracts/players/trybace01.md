@@ -2,9 +2,9 @@
 
 # Contract | Cezary Trybanski
 
-Known through: 2004-04-04. [Open interactive contract](trybace01.html#contract) · [Contract history](trybace01.html#contract-history)
+Known through: 2004-04-05. [Open interactive contract](trybace01.html#contract) · [Contract history](trybace01.html#contract-history)
 
-Cezary Trybanski: under contract. Evidence cutoff: 2004-04-04.
+Cezary Trybanski: under contract. Evidence cutoff: 2004-04-05.
 
 ## Current contract
 

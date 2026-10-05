@@ -1,6 +1,6 @@
 # 2003-04 standings
 
-Through 2004-04-04, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2004-04-05, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
@@ -33,11 +33,11 @@ Through 2004-04-04, from closed simulated results only (`runtime/standings.py`).
 | 5 | Los Angeles Lakers | 46 | 31 | .597 | 12.5 |
 | 6 | Golden State Warriors | 44 | 32 | .579 | 14 |
 | 7 | Denver Nuggets | 44 | 33 | .571 | 14.5 |
-| 8 | Memphis Grizzlies | 42 | 34 | .553 | 16 |
+| 8 | Memphis Grizzlies | 43 | 34 | .558 | 15.5 |
 | 9 | Seattle SuperSonics | 37 | 40 | .481 | 21.5 |
 | 10 | Houston Rockets | 36 | 40 | .474 | 22 |
 | 11 | Phoenix Suns | 29 | 48 | .377 | 29.5 |
 | 12 | Portland Trail Blazers | 28 | 48 | .368 | 30 |
-| 13 | Utah Jazz | 25 | 52 | .325 | 33.5 |
+| 13 | Utah Jazz | 25 | 53 | .321 | 34 |
 | 14 | Los Angeles Clippers | 24 | 54 | .308 | 35 |
 
