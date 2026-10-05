@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** C (center and power forward; register corrected 2003-11-11, listed SF at signing)  
 **Born:** 1972-10-11 · **Age at assessment:** 31 · **Height:** 6-11 · **Weight:** 235 lb · Identity: [Basketball-Reference](https://www.basketball-reference.com/players/p/parksch02.html)  
-**Opening assessment:** October 27, 2003 · **Statistics through:** 2004-09-15 
+**Opening assessment:** October 27, 2003 · **Statistics through:** 2004-09-16 
 
 **Contract/control:** Signed October 27, 2003: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 8 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 

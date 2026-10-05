@@ -1,0 +1,15 @@
+{
+ "event_id": "2004-fa-2004-09-16-robert-traylor",
+ "date": "2004-09-16",
+ "question": "2004 free agency, 2004-09-16: which offer does Robert Traylor accept (Los Angeles Clippers $870,046 x 1, Milwaukee Bucks $870,046 x 1, New Jersey Nets $870,046 x 1, Portland Trail Blazers $870,046 x 1, Utah Jazz $870,046 x 1), or does he wait?",
+ "decider": "Robert Traylor (simulated player, engine draw)",
+ "options": {
+  "Los Angeles Clippers": 0.283995,
+  "Milwaukee Bucks": 0.157819,
+  "New Jersey Nets": 0.12697,
+  "Portland Trail Blazers": 0.223397,
+  "Utah Jazz": 0.157819,
+  "wait": 0.05
+ },
+ "basis": "Ask $870,046; best offer 1.00 of the ask in total; accept chance 0.950; priority loyalty; utility Los Angeles Clippers 53.7, Milwaukee Bucks 51.3, New Jersey Nets 50.4, Portland Trail Blazers 52.7, Utah Jazz 51.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

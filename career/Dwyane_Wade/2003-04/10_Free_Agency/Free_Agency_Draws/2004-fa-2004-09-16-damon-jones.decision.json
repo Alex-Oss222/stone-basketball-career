@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-fa-2004-09-16-damon-jones",
+ "date": "2004-09-16",
+ "question": "2004 free agency, 2004-09-16: which offer does Damon Jones accept (Cleveland Cavaliers $3,000,360 x 4, Milwaukee Bucks $3,000,360 x 4), or does he wait?",
+ "decider": "Damon Jones (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.20226,
+  "Milwaukee Bucks": 0.74774,
+  "wait": 0.05
+ },
+ "basis": "Ask $3,000,360; best offer 1.00 of the ask in total; accept chance 0.950; priority loyalty; utility Cleveland Cavaliers 67.6, Milwaukee Bucks 72.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

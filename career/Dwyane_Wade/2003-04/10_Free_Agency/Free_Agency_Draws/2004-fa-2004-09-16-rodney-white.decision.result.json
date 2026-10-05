@@ -1,0 +1,12 @@
+{
+ "date": "2004-09-16",
+ "decider": "Rodney White (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-09-16-rodney-white",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "Denver Nuggets",
+ "question": "2004 free agency, 2004-09-16: which offer does Rodney White accept (Denver Nuggets $896,066 x 5), or does he wait?"
+}

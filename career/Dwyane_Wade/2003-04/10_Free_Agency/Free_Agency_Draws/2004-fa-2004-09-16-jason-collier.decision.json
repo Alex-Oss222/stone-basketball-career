@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-09-16-jason-collier",
+ "date": "2004-09-16",
+ "question": "2004 free agency, 2004-09-16: which offer does Jason Collier accept (Utah Jazz $2,482,344 x 4), or does he wait?",
+ "decider": "Jason Collier (simulated player, engine draw)",
+ "options": {
+  "Utah Jazz": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $2,482,344; best offer 1.00 of the ask in total; accept chance 0.950; priority loyalty; utility Utah Jazz 66.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

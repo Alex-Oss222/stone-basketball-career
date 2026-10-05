@@ -1,0 +1,16 @@
+{
+ "date": "2004-09-16",
+ "decider": "Jon Barry (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-09-16-jon-barry",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.467324,
+  "Indiana Pacers": 0.161503,
+  "New Jersey Nets": 0.161503,
+  "New Orleans Hornets": 0.094824,
+  "Washington Wizards": 0.064846,
+  "wait": 0.05
+ },
+ "outcome": "Indiana Pacers",
+ "question": "2004 free agency, 2004-09-16: which offer does Jon Barry accept (Cleveland Cavaliers $1,100,000 x 1, Indiana Pacers $1,100,000 x 1, New Jersey Nets $1,100,000 x 1, New Orleans Hornets $1,100,000 x 1, Washington Wizards $1,100,000 x 1), or does he wait?"
+}

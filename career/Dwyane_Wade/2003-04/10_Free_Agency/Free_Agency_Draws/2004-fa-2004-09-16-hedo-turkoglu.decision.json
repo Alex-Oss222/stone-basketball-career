@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-fa-2004-09-16-hedo-turkoglu",
+ "date": "2004-09-16",
+ "question": "2004 free agency, 2004-09-16: which offer does Hedo Turkoglu accept (Golden State Warriors $3,320,625 x 5, Los Angeles Clippers $3,320,625 x 5, Miami Heat $3,320,625 x 5, Toronto Raptors $3,320,625 x 5), or does he wait?",
+ "decider": "Hedo Turkoglu (simulated player, engine draw)",
+ "options": {
+  "Golden State Warriors": 0.128147,
+  "Los Angeles Clippers": 0.038023,
+  "Miami Heat": 0.655683,
+  "Toronto Raptors": 0.128147,
+  "wait": 0.05
+ },
+ "basis": "Ask $3,320,625; best offer 1.00 of the ask in total; accept chance 0.950; priority loyalty; utility Golden State Warriors 62.8, Los Angeles Clippers 57.9, Miami Heat 69.3, Toronto Raptors 62.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
