@@ -2876,6 +2876,25 @@
    },
    "contract": null,
    "note": "10-day contract ended (0.7 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-03-29-clear-hansetr01",
+   "date": "2004-03-29",
+   "kind": "clear",
+   "player": "Travis Hansen",
+   "bbr_id": "hansetr01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Travis Hansen",
+    "bbr_id": "hansetr01",
+    "position": "SF",
+    "games": 41,
+    "minutes": 507
+   },
+   "contract": null,
+   "note": "cleared waivers from Atlanta Hawks: a free agent",
+   "waiver": "2003-04-market-2004-03-27-waive-hansetr01"
   }
  ],
  "market_days": [
@@ -2942,6 +2961,7 @@
   "2004-03-25",
   "2004-03-26",
   "2004-03-27",
-  "2004-03-28"
+  "2004-03-28",
+  "2004-03-29"
  ]
 }

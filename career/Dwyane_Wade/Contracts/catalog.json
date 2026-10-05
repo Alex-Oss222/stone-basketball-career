@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-03-28",
+  "as_of": "2004-03-29",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2796,9 +2796,9 @@
       "player_id": "cleavma01",
       "name": "Mateen Cleaves",
       "team": "Cleveland Cavaliers",
-      "status": "on the 2003-04 roster; contract terms not in the dated records",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "cleavma01-2004-03-29",
+      "recorded_agreements": 2,
       "href": "players/cleavma01.html#contract"
     },
     {

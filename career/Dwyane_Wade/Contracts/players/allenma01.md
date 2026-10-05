@@ -2,9 +2,9 @@
 
 # Contract | Malik Allen
 
-Known through: 2004-03-28. [Open interactive contract](allenma01.html#contract) · [Contract history](allenma01.html#contract-history)
+Known through: 2004-03-29. [Open interactive contract](allenma01.html#contract) · [Contract history](allenma01.html#contract-history)
 
-Malik Allen: unsigned free agent; Miami holds his rights. Evidence cutoff: 2004-03-28.
+Malik Allen: unsigned free agent; Miami holds his rights. Evidence cutoff: 2004-03-29.
 
 ## Current contract
 

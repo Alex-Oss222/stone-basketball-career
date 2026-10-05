@@ -2,9 +2,9 @@
 
 # Contract | Doug Christie
 
-Known through: 2004-03-28. [Open interactive contract](chrisdo01.html#contract) · [Contract history](chrisdo01.html#contract-history)
+Known through: 2004-03-29. [Open interactive contract](chrisdo01.html#contract) · [Contract history](chrisdo01.html#contract-history)
 
-Doug Christie: under contract. Evidence cutoff: 2004-03-28.
+Doug Christie: under contract. Evidence cutoff: 2004-03-29.
 
 ## Current contract
 

@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2004-03-28 · Miami Heat · active
+Career date: 2004-03-29 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,7 +14,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2004-03-28 |
+| Career date | 2004-03-29 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
@@ -25,11 +25,11 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2004-03-28 | Current checkpoint | 2004-03-28-miami-heat-at-indiana-pacers | Recorded | [Owning event](../2003-04/06_Regular_Season/03_March/Week_4/note.md) |
+| 2004-03-29 | Current checkpoint | 2004-03-28-miami-heat-at-indiana-pacers | Recorded | [Owning event](../2003-04/06_Regular_Season/03_March/Week_4/note.md) |
 | 2003-07-19 | Rookie contract signed | Player and club | complete | [Contract desk](index.html#contract_negotiation) |
 | 2003-09-30 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2004-03-29 | Next Miami game, vs Chicago Bulls | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
-| 2004-03-29 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
+| 2004-03-31 | Next Miami game, at Atlanta Hawks | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
+| 2004-04-02 | League awards announced: Player of the Month, Rookie of the Month | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2004-04-09 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | By 2005-10-31 | Fourth-year (2006-07) team option on the rookie contract | Miami decides | Scheduled gate; no outcome implied | [Contract](index.html#contract_negotiation) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |

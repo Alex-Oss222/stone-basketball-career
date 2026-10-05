@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-03-28**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-03-29**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -404,7 +404,7 @@ Card date: **2004-03-28**. 504 registry players, one Markdown card and one inter
 | [Rasheed Wallace](wallara01.md) | Portland Trail Blazers | 29 | sourced | [open](wallara01.html) |
 | [Reggie Evans](evansre01.md) | Seattle SuperSonics | 23 | sourced | [open](evansre01.html) |
 | [Rick Rickert](rickeri01.md) | Minnesota Timberwolves (draft rights) | 21 | sourced | [open](rickeri01.html) |
-| [Robert Archibald](archiro01.md) | Phoenix Suns | 23 | sourced | [open](archiro01.html) |
+| [Robert Archibald](archiro01.md) | Phoenix Suns | 24 | sourced | [open](archiro01.html) |
 | [Robert Horry](horryro01.md) | San Antonio Spurs | 33 | sourced | [open](horryro01.html) |
 | [Rodney Rogers](rogerro01.md) | New Jersey Nets | 32 | silhouette | [open](rogerro01.html) |
 | [Ryan Bowen](bowenry01.md) | Denver Nuggets | None | silhouette | [open](bowenry01.html) |

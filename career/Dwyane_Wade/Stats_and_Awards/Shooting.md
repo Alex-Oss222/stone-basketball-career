@@ -2,11 +2,11 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-03-28**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-03-29**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2004-03-28
+## 2003-04 · NBA regular season · through 2004-03-29
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
@@ -789,7 +789,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-03-20 | Philadelphia 76ers | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.result.json) |
 | 2004-03-21 | Washington Wizards | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.result.json) |
 
-## 2004-03-22 to 2004-03-28 · NBA regular season
+## 2004-03-22 to 2004-03-29 · NBA regular season
 
 [Open this period](player_cards.html?period=regular-2003-04-week-2004-03-22#shooting)
 
@@ -2419,7 +2419,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-03-28 | Indiana Pacers | Played | [Game](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md) | [Result](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.result.json) |
 
-## 2003-04 · NBA preseason · through 2004-03-28
+## 2003-04 · NBA preseason · through 2004-03-29
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 

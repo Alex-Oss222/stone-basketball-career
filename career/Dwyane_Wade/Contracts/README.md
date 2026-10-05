@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-03-28. [Search the contract directory](index.html)
+Known through 2004-03-29. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -318,7 +318,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Mark Pope](players/popema01.md) | Denver Nuggets | under contract | Mark Pope · 2003-09-20 | 2 |
 | [Marko Jaric](players/jaricma01.md) | Los Angeles Clippers | under contract | Marko Jaric · existing contract; signing date not recorded | 1 |
 | [Marquis Daniels](players/daniema01.md) | Dallas Mavericks | under contract | Marquis Daniels · 2003-07-29 | 1 |
-| [Mateen Cleaves](players/cleavma01.md) | Cleveland Cavaliers | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
+| [Mateen Cleaves](players/cleavma01.md) | Cleveland Cavaliers | under contract | Mateen Cleaves · 2004-03-29 | 2 |
 | [Matt Barnes](players/barnema02.md) | Los Angeles Clippers | No verified contract record | No verified current agreement | 0 |
 | [Matt Bonner](players/bonnema01.md) | Toronto Raptors | No verified contract record | No verified current agreement | 0 |
 | [Matt Carroll](players/carroma01.md) | Portland Trail Blazers | No verified contract record | No verified current agreement | 0 |
