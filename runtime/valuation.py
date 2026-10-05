@@ -85,8 +85,12 @@ class Valuation:
     """Values and prices on a career date, from the dated evidence files."""
 
     def __init__(self, on, root=ROOT):
+        from .season_evidence import market_season, prior_records
         self.on, self.root = on, Path(root)
-        self.stats = {r["bbr_id"]: r for r in read(STATS_PATH, root)["records"]}
+        self.season = market_season(on) if on >= "2003-06-01" else "2003-04"
+        self.first = self.season == "2003-04"            # the June 2003 import's sources; later seasons read the sim
+        self.stats = ({r["bbr_id"]: r for r in read(STATS_PATH, root)["records"]} if self.first
+                      else prior_records(self.season, root))
         self.birth = {}
         for club in read(END_OF_SEASON_PATH, root)["clubs"].values():
             for p in club["players"]:
@@ -102,26 +106,36 @@ class Valuation:
             for p in read(MIAMI_REGISTER_PATH, root)["players"]:
                 if p.get("bbr_id") and p.get("date_of_birth"):
                     self.birth.setdefault(p["bbr_id"], p["date_of_birth"])
-        rules = read(CAP_RULES_PATH, root)
+        from .seasons import path as season_path
+        rules = read(CAP_RULES_PATH if self.first else season_path(self.season, "cap_rules"), root)
         self.maximums = rules["maximum_salary"]
         self.minimums = rules["minimum_salary"]
         self.mid_level = rules["exceptions"]["mid_level"]
         self.service = {}
-        for club in read(RIGHTS_PATH, root)["clubs"].values():
-            for p in club["free_agents"]:
-                self.service[p["bbr_id"]] = p.get("nba_seasons_before_2003_04")
+        if self.first:
+            for club in read(RIGHTS_PATH, root)["clubs"].values():
+                for p in club["free_agents"]:
+                    self.service[p["bbr_id"]] = p.get("nba_seasons_before_2003_04")
+        else:
+            from .free_agency_2004 import identity
+            self.service = {b: e.get("service") for b, e in identity(root).items()}
+            for b, e in identity(root).items():
+                if e.get("birth_date"):
+                    self.birth.setdefault(b, e["birth_date"])
         self.fit = self._fit_comparables()
         self.honors = self._honors()
 
     def _honors(self):
-        """{bbr_id: [honor names]} from the season awards announced on or before the date."""
-        path = self.root / SEASON_AWARDS_PATH
+        """{bbr_id: [honor names]} from the most recent season's awards announced on or before the date."""
+        from .seasons import previous_season
+        rel = SEASON_AWARDS_PATH if self.first else Path(f"career/Dwyane_Wade/Stats_and_Awards/League/{previous_season(self.season)}/season_awards.json")
+        path = self.root / rel
         if not path.is_file():
             return {}
         from .season_awards import honors
         by_name = {p["name"]: p["bbr_id"] for p in read(REGISTRY_PATH, self.root)["players"] if p.get("bbr_id")}
         out = {}
-        for d in read(SEASON_AWARDS_PATH, self.root)["decisions"]:
+        for d in read(rel, self.root)["decisions"]:
             if d["announced_on"] > self.on:
                 continue
             for player, name, _ in honors(d):
@@ -151,8 +165,20 @@ class Valuation:
         return production_value(record["totals"], self.age(bbr_id))
 
     def _fit_comparables(self):
-        """log(2003-04 salary) against production value, on players under contract (median-based fit)."""
+        """log(salary) against production value, on players under contract for the season (median-based fit): the June
+        2003 inventory for the first season, the league's contracts for the season after it."""
         xs, ys = [], []
+        if not self.first:
+            from .league_contracts import under_contract
+            for b, c in under_contract(self.season, self.root).items():
+                record = self.stats.get(b)
+                if not c.get("salary") or record is None or record["totals"]["minutes"] < MIN_FIT_MINUTES:
+                    continue
+                xs.append(production_value(record["totals"], self.age(b)))
+                ys.append(math.log(c["salary"]))
+            mx, my = statistics.mean(xs), statistics.mean(ys)
+            slope = sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / sum((x - mx) ** 2 for x in xs)
+            return {"intercept": my - slope * mx, "slope": slope, "n": len(xs)}
         for club in read(CONTRACTS_PATH, self.root)["clubs"].values():
             for p in club["players"]:
                 salary = p.get("schedule", {}).get("2003-04")

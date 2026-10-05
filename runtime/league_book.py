@@ -28,21 +28,40 @@ class LeagueBook:
     def __init__(self, on, market, root=ROOT):
         self.on, self.root = on, Path(root)
         self.valuation = market.valuation
-        rules = read_json(CAP_RULES_PATH, root)
-        self.cap, self.tax_line = rules["salary_cap"], rules.get("luxury_tax_line_projection_july_2003", 57000000)
+        from .seasons import path as season_path, season_of_date, start_year
+        self.season = season_of_date(on)
+        if self.season == SEASON:
+            rules = read_json(CAP_RULES_PATH, root)
+            self.cap, self.tax_line = rules["salary_cap"], rules.get("luxury_tax_line_projection_july_2003", 57000000)
+            self.signings = [r for r in read_json(TRANSACTIONS_PATH, root)["signings"]
+                             if not r.get("involves_miami") and (r.get("date") or "9999") <= on]
+        else:
+            rules = read_json(season_path(self.season, "cap_rules"), root)
+            year = start_year(self.season)
+            calendar = read_json(f"library/{year}/league/nba_{year}_offseason_calendar.json", root)
+            self.cap = rules["salary_cap"]
+            self.tax_line = rules.get("luxury_tax_line") or calendar[f"luxury_tax_threshold_{self.season.replace('-', '_')}"]["value"]
+            market_path = root / f"career/Dwyane_Wade/{self.previous()}/10_Free_Agency/free_agency_{year}.json"
+            events = read_json(market_path.relative_to(root), root)["events"] if market_path.is_file() else []
+            self.signings = [{"to": e["club"], "kind": "mid_level"} for e in events if e.get("route") == "mid_level"]
         self.minimum = self.valuation.minimum(0)
         self.inventory = dated_inventory(on, self.valuation, root)
-        self.signings = [r for r in read_json(TRANSACTIONS_PATH, root)["signings"]
-                         if not r.get("involves_miami") and (r.get("date") or "9999") <= on]
+
+    def previous(self):
+        from .seasons import previous_season
+        return previous_season(self.season)
 
     def club(self, name):
         if name == MIAMI:
             raise ValueError("Miami's book is its own ledger (runtime/gm.py, runtime/signing.py)")
         players = self.inventory.get(name, {}).get("players", [])
         signed = [p for p in players if p.get("status") in UNDER_CONTRACT or "option_exercised" in (p.get("status") or "")]
-        payroll = sum(int(p["schedule"].get(SEASON) or 0) for p in signed)
-        mle_used = any(r.get("to") == name and r.get("kind") == "signing" and (r.get("total") or 0) / max(1, r.get("years") or 1) > self.minimum * 1.5
-                       for r in self.signings) and payroll > self.cap
+        payroll = sum(int(p["schedule"].get(self.season) or 0) for p in signed)
+        if self.season == SEASON:
+            mle_used = any(r.get("to") == name and r.get("kind") == "signing" and (r.get("total") or 0) / max(1, r.get("years") or 1) > self.minimum * 1.5
+                           for r in self.signings) and payroll > self.cap
+        else:
+            mle_used = any(r["to"] == name for r in self.signings)
         return {"club": name, "on": self.on, "payroll": payroll, "cap_room": max(0, self.cap - payroll),
                 "over_tax": payroll > self.tax_line, "roster": len([p for p in players if p.get("bbr_id")]),
                 "under_contract": len(signed), "mid_level_open": payroll > self.cap and not mle_used,

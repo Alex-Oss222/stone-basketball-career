@@ -31,13 +31,9 @@ from .league_moves import activation_free_agents, effective_roster, ledger_path,
 from .trades import Assets, MIAMI
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
 RULES = Path("library/2003/league/nba_1999_in_season_rules.json")
-STATUS_DEC = Path("library/2003/league/nba_2003_04_unsigned_status.json")
-STATUS_MONTHLY = Path("library/2003/league/nba_2003_04_unsigned_status_monthly.json")
 STATS_PATH = Path("library/2003/league/nba_2002_03_player_stats.json")
 EXPIRING_PATH = Path("library/2003/league/nba_2003_expiring_contracts.json")
-SEASON_END = "2004-04-14"
 TEN_DAY_DAYS = 10
 # Judgement constants, calibrated against the 2003-04 volume in the rules file (docs/symmetric_league_design.md).
 INJURED_FOR_TEN_DAY = 1             # before NEED_RULE_FROM: one injured regular was enough (2.5x the real 10-day rate)
@@ -45,33 +41,37 @@ NEED_RULE_FROM = "2004-01-20"       # from this date a 10-day is an emergency fi
 CONTRIBUTOR_MINUTES = 10.0          # judgement: a 10-day player averaging this many minutes a club game is kept
 UPGRADE_MARGIN = 1.2
 WAIVER_DAYS = 2                      # 48-hour waivers (1999 CBA, nba_1999_in_season_rules.json)
-GUARANTEE_CUT_DAY = "2004-01-07"     # the last day a 48-hour waiver clears before the January 10 guarantee
 GUARANTEE_CUT_KEEP = 13              # outside its top thirteen by value, an unprotected player can be let go
 GUARANTEE_CUT_MARGIN = 1.25          # ... when a free agent is this much more valuable
 CLAIM_MARGIN = 1.2
 SNAPSHOT_FRESH_DAYS = 31
 
 
-def _rules(root):
+def _rules(root, season):
+    """The agreement's in-season rules (roster limits) with the season's dates (runtime/seasons.py)."""
+    from .seasons import dates
     data = json.loads((Path(root) / RULES).read_text(encoding="utf-8"))["rules"]
-    roster, ten = data["roster"], data["ten_day"]
-    first = ten.get("first_signing_date_2003_04", {})
+    roster = data["roster"]
+    gates = dates(season, root)
     return {"min": roster["minimum_players_under_contract_regular_season"]["value"],
             "max": roster["maximum_players_under_contract_regular_season"]["value"],
-            "ten_day_from": first.get("value", first) if isinstance(first, dict) else first or "2004-01-05",
-            "ten_day_per_club": 2,
-            "guarantee": data["waivers"]["contract_guarantee_date"].get("date_2003_04", "2004-01-10")}
+            "ten_day_from": gates["ten_day_contracts_from"], "ten_day_per_club": 2, "guarantee": gates["guarantee"],
+            "cut_day": gates["waive_by"], "season_end": gates["regular_season_end"]}
 
 
 def _status_on(day, root):
-    """The newest researched snapshot dated on or before `day` and within SNAPSHOT_FRESH_DAYS: {bbr: status}."""
+    """The newest researched snapshot of unsigned players dated on or before `day` and within SNAPSHOT_FRESH_DAYS:
+    {bbr: status}. A season without researched snapshots has none (its pool is the league's own free agents)."""
+    from .seasons import path as season_path, season_of_date
     root = Path(root)
+    season = season_of_date(day)
+    status_dec, status_monthly = season_path(season, "unsigned_status"), season_path(season, "unsigned_status_monthly")
     snaps = {}
-    if (root / STATUS_DEC).is_file():
-        d = json.loads((root / STATUS_DEC).read_text(encoding="utf-8"))
+    if (root / status_dec).is_file():
+        d = json.loads((root / status_dec).read_text(encoding="utf-8"))
         snaps[d["as_of"]] = d["players"]
-    if (root / STATUS_MONTHLY).is_file():
-        snaps.update(json.loads((root / STATUS_MONTHLY).read_text(encoding="utf-8"))["snapshots"])
+    if (root / status_monthly).is_file():
+        snaps.update(json.loads((root / status_monthly).read_text(encoding="utf-8"))["snapshots"])
     dated = [k for k in snaps if k <= day]
     if not dated:
         return {}
@@ -85,19 +85,21 @@ class LeagueMarket:
     def __init__(self, day, market, root=ROOT):
         if not active(day):
             raise ValueError("the symmetric league is not active on this date")
+        from .seasons import season_of_date
         self.day, self.root = day, Path(root)
-        self.rules = _rules(root)
+        self.season = season_of_date(day)
+        self.rules = _rules(root, self.season)
         self.assets = Assets(day, market, root)
         self.book = LeagueBook(day, market, root)
         from .skill_fit import SkillFit
         self.skills = SkillFit(root)
-        self.moves = read_moves(SEASON, root)
+        self.moves = read_moves(self.season, root)
         self.clubs = sorted(c for c in self.book.inventory if c != MIAMI)
-        self.rosters = {c: effective_roster(c, day, SEASON, root) for c in self.clubs}
+        self.rosters = {c: effective_roster(c, day, self.season, root) for c in self.clubs}
         from .league_moves import _protected_contracts
-        self.protected = _protected_contracts(root)
+        self.protected = _protected_contracts(root, self.season)
         from .standings import worst_first
-        self.order = worst_first(day, root, SEASON, self.clubs)
+        self.order = worst_first(day, root, self.season, self.clubs)
 
     # -- evidence --------------------------------------------------------------------------------
     def value(self, bbr):
@@ -115,9 +117,9 @@ class LeagueMarket:
         """{bbr: role} of players any club may sign today."""
         on_a_club = {p["bbr_id"] for players in self.rosters.values() for p in players}
         from .rotations import miami_holds
-        held = set(miami_holds(SEASON, self.day, self.root))
+        held = set(miami_holds(self.season, self.day, self.root))
         out = {}
-        for e in activation_free_agents(SEASON, self.root):
+        for e in activation_free_agents(self.season, self.root):
             out[e["bbr_id"]] = {k: e[k] for k in ("player_id", "bbr_id", "position", "games", "minutes")}
         for bbr, st in _status_on(self.day, self.root).items():
             if st["status"] == "unsigned_available":
@@ -144,7 +146,7 @@ class LeagueMarket:
         if not hasattr(self, "_results"):
             from .write_back import closed_results
             prior = (date.fromisoformat(self.day) - timedelta(days=1)).isoformat()
-            self._results = [row["result"] for row in closed_results(self.root, SEASON, prior)]
+            self._results = [row["result"] for row in closed_results(self.root, self.season, prior)]
         games = minutes = 0
         for r in self._results:
             if r["game_date"] < since:
@@ -167,7 +169,7 @@ class LeagueMarket:
 
     # -- moves -----------------------------------------------------------------------------------
     def _add(self, kind, bbr, role, frm, to, contract=None, note=""):
-        entry = {"id": f"{SEASON}-market-{self.day}-{kind}-{bbr}", "date": self.day, "kind": kind,
+        entry = {"id": f"{self.season}-market-{self.day}-{kind}-{bbr}", "date": self.day, "kind": kind,
                  "player": role["player_id"], "bbr_id": bbr, "from": frm, "to": to, "role": role,
                  "contract": contract, "note": note}
         self.moves["entries"].append(entry)
@@ -184,8 +186,8 @@ class LeagueMarket:
             return None
         bbr = max(eligible, key=lambda b: (self.fit_value(club, b), b))
         role = pool.pop(bbr)
-        until = (date.fromisoformat(self.day) + timedelta(days=TEN_DAY_DAYS)).isoformat() if kind == "ten_day" else SEASON_END
-        return self._add(kind, bbr, role, None, club, {"type": kind, "until": min(until, SEASON_END), "salary": "pro-rated minimum"},
+        until = (date.fromisoformat(self.day) + timedelta(days=TEN_DAY_DAYS)).isoformat() if kind == "ten_day" else self.rules["season_end"]
+        return self._add(kind, bbr, role, None, club, {"type": kind, "until": min(until, self.rules["season_end"]), "salary": "pro-rated minimum"},
                          note=f"value {round(self.fit_value(club, bbr), 2)} x fit")
 
     def _weakest(self, club):
@@ -218,7 +220,7 @@ class LeagueMarket:
                 weakest = self._weakest(other)
                 legal = self.book.club(other)["cap_room"] > 0 or bbr not in self.protected
                 if legal and (weakest is None or self.value(bbr) > CLAIM_MARGIN * self.value(weakest["bbr_id"])):
-                    claimed = self._add("claim", bbr, role, None, other, {"type": "claimed contract", "until": SEASON_END},
+                    claimed = self._add("claim", bbr, role, None, other, {"type": "claimed contract", "until": self.rules["season_end"]},
                                         note=f"claimed off waivers from {club} (worst record first)")
                     break
             if claimed is None:
@@ -249,11 +251,11 @@ class LeagueMarket:
                     mpg = self.minutes_for(role["player_id"], club, first)
                     if mpg >= CONTRIBUTOR_MINUTES:
                         self._add("rest_of_season", p["bbr_id"], role, club, club,
-                                  {"type": "rest_of_season", "until": SEASON_END, "salary": "pro-rated minimum"},
+                                  {"type": "rest_of_season", "until": self.rules["season_end"], "salary": "pro-rated minimum"},
                                   note=f"kept: {mpg:.1f} minutes a game on his 10-day contracts")
                     elif self.ten_days_with(p["bbr_id"], club) < self.rules["ten_day_per_club"] and self.short_handed(club):
                         self._add("ten_day", p["bbr_id"], role, club, club,
-                                  {"type": "ten_day", "until": min((date.fromisoformat(self.day) + timedelta(days=TEN_DAY_DAYS)).isoformat(), SEASON_END),
+                                  {"type": "ten_day", "until": min((date.fromisoformat(self.day) + timedelta(days=TEN_DAY_DAYS)).isoformat(), self.rules["season_end"]),
                                    "salary": "pro-rated minimum"}, note=f"second 10-day contract: still short-handed ({mpg:.1f} minutes a game)")
                     else:
                         self._add("expire", p["bbr_id"], role, club, None, note=f"10-day contract ended ({mpg:.1f} minutes a game)")
@@ -261,7 +263,7 @@ class LeagueMarket:
                     continue
                 if self.ten_days_with(p["bbr_id"], club) < self.rules["ten_day_per_club"] and self.injured_regulars(club) >= INJURED_FOR_TEN_DAY:
                     self._add("ten_day", p["bbr_id"], role, club, club,
-                              {"type": "ten_day", "until": min((date.fromisoformat(self.day) + timedelta(days=TEN_DAY_DAYS)).isoformat(), SEASON_END),
+                              {"type": "ten_day", "until": min((date.fromisoformat(self.day) + timedelta(days=TEN_DAY_DAYS)).isoformat(), self.rules["season_end"]),
                                "salary": "pro-rated minimum"}, note="second 10-day contract")
                     continue
                 ranked = sorted((self.value(q["bbr_id"]) for q in self.rosters[club]), reverse=True)
@@ -269,7 +271,7 @@ class LeagueMarket:
                     self._add("expire", p["bbr_id"], role, club, None, note="10-day contract ended")
                     pool[p["bbr_id"]] = role
                 else:
-                    self._add("rest_of_season", p["bbr_id"], role, club, club, {"type": "rest_of_season", "until": SEASON_END,
+                    self._add("rest_of_season", p["bbr_id"], role, club, club, {"type": "rest_of_season", "until": self.rules["season_end"],
                                                                                "salary": "pro-rated minimum"})
             # 2. the twelve-man minimum
             while len(self.rosters[club]) < self.rules["min"] and pool:
@@ -279,7 +281,7 @@ class LeagueMarket:
             if ten_open and need and len(self.rosters[club]) < self.rules["max"] and pool:
                 self._sign(club, pool, "ten_day")
             # 4. the guarantee cut: before contracts become guaranteed, a club lets go of non-guaranteed depth it can better
-            if self.day == GUARANTEE_CUT_DAY:
+            if self.day == self.rules["cut_day"]:
                 ranked = sorted(self.rosters[club], key=lambda q: (-self.value(q["bbr_id"]), q["bbr_id"]))
                 for q in ranked[GUARANTEE_CUT_KEEP:]:
                     if q["bbr_id"] in self.protected or not pool:
@@ -297,7 +299,7 @@ class LeagueMarket:
                     self._sign(club, pool, "ten_day" if ten_open else "rest_of_season")
         new = self.moves["entries"][start:]
         self.moves["market_days"] = sorted(set(self.moves.get("market_days", [])) | {self.day})
-        path = self.root / ledger_path(SEASON)                  # written even without moves: the day is recorded as run,
+        path = self.root / ledger_path(self.season)                  # written even without moves: the day is recorded as run,
         path.parent.mkdir(parents=True, exist_ok=True)          # so a rerun of the day cannot act again
         path.write_text(json.dumps(self.moves, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         return new

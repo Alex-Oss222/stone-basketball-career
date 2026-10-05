@@ -113,6 +113,39 @@ def seasons_from(first, years):
 
 
 # -- assets ------------------------------------------------------------------------------------
+def _ledger_inventory(on, season, ledger, valuation, root=ROOT):
+    """A season after the first: each club's contracts from the league ledger (`runtime/league_contracts.py`), held by
+    the club the simulated league puts the player with on the date (a trade assigns the contract). A player a club
+    signed in the season (a ten-day, rest-of-season or minimum signing) has no ledger entry: he is listed at the
+    minimum for his service, labelled as such."""
+    from .league_moves import effective_roster
+    from .seasons import clubs as season_clubs
+    out = {}
+    for club in season_clubs(season, root):
+        if club == MIAMI:
+            continue
+        players = []
+        for p in effective_roster(club, on, season, root):
+            b = p.get("bbr_id")
+            c = ledger.get(b)
+            if c:
+                players.append({"player": c["player"], "bbr_id": b, "status": "under_contract", "schedule": c["schedule"],
+                                "amount_kind": {s_: "contract_salary" for s_ in c["schedule"]}, "held_on": on,
+                                "terms_source": ledger_path_label(season)})
+            elif b:
+                players.append({"player": p.get("player_id"), "bbr_id": b, "status": "under_contract",
+                                "schedule": {season: valuation.minimum(valuation.service.get(b))},
+                                "amount_kind": {season: "contract_salary"}, "held_on": on,
+                                "terms_source": "in-season signing: minimum for his service (estimate)"})
+        out[club] = {"players": players, "as_of": on}
+    return out
+
+
+def ledger_path_label(season):
+    from .league_contracts import ledger_path
+    return ledger_path(season).as_posix()
+
+
 def dated_inventory(on, valuation, root=ROOT):
     """Each real club's contract inventory as its roster stands on `on`.
 
@@ -121,6 +154,15 @@ def dated_inventory(on, valuation, root=ROOT):
     skipping any involving Miami, rule 2 removing the players Miami holds). A traded contract travels with
     its player. A player who joined by signing has no terms in the inventory, so he is listed with his old
     entry's free-agent status and is never a trade candidate. Miami's own entry is never used here."""
+    from .seasons import season_of_date
+    from .league_contracts import read as read_ledger
+    season = season_of_date(on)
+    ledger = read_ledger(season, root) if season != SEASON else None
+    if ledger is not None:
+        return _ledger_inventory(on, season, ledger, valuation, root)
+    if season != SEASON:
+        raise RuntimeError(f"{on}: the {season} league contract ledger is written at the rollover "
+                           "(runtime/league_contracts.py); the summer market prices trades before it")
     from .club_strength import League
     june = read_json(CONTRACTS_PATH, root)["clubs"]
     league = League(on, valuation.value, root)
@@ -179,19 +221,46 @@ class Assets:
     """Values of players and picks on a date, from on-date evidence."""
 
     def __init__(self, on, market, root=ROOT):
+        from .seasons import season_of_date
         self.on, self.market, self.root = on, market, Path(root)
+        self.season = season_of_date(on) if on >= "2003-07-01" else SEASON
+        self.team = Path(f"career/Dwyane_Wade/{self.season}/00_Team")
+        if not (self.root / self.team).is_dir():
+            # The summer before the rollover writes the new season's folder: Miami's records are still the last season's.
+            from .seasons import active
+            self.team = Path(f"career/Dwyane_Wade/{active(self.root)}/00_Team")
         self.valuation = market.valuation
-        self.standings = read_json(STANDINGS_PATH, root)["clubs"]
         self.contracts = dated_inventory(on, self.valuation, root)
-        self.cap_rules = read_json(CAP_RULES_PATH, root)
-        self.tax_line = self.cap_rules.get("luxury_tax_line_projection_july_2003", 57000000)
         self.positions = {}
         self._payroll = {}
         self._stance = {}
-        for club, entry in read_json(END_OF_SEASON_PATH, root)["clubs"].items():
-            for p in entry["players"]:
-                if p.get("bbr_id"):
-                    self.positions[p["bbr_id"]] = (club, p.get("position") or "SF", p.get("depth") or 9)
+        if self.season == SEASON:
+            self.standings = read_json(STANDINGS_PATH, root)["clubs"]
+            self.cap_rules = read_json(CAP_RULES_PATH, root)
+            self.tax_line = self.cap_rules.get("luxury_tax_line_projection_july_2003", 57000000)
+            for club, entry in read_json(END_OF_SEASON_PATH, root)["clubs"].items():
+                for p in entry["players"]:
+                    if p.get("bbr_id"):
+                        self.positions[p["bbr_id"]] = (club, p.get("position") or "SF", p.get("depth") or 9)
+        else:
+            # A season after the first: last season's simulated records and the season's cap rules (runtime/seasons.py).
+            from .league_book import LeagueBook
+            from .seasons import dates, path as season_path, previous_season
+            from .standings import standings_on
+            prev = previous_season(self.season)
+            self.standings = standings_on(dates(prev, root)["regular_season_end"], root, prev)
+            self.cap_rules = read_json(season_path(self.season, "cap_rules"), root)
+            year = int(self.season[:4])
+            calendar = read_json(f"library/{year}/league/nba_{year}_offseason_calendar.json", root)
+            self.tax_line = self.cap_rules.get("luxury_tax_line") or calendar[f"luxury_tax_threshold_{self.season.replace('-', '_')}"]["value"]
+            for club, entry in self.contracts.items():
+                for p in entry.get("players", []):
+                    if p.get("bbr_id"):
+                        self.positions[p["bbr_id"]] = (club, "SF", 9)
+            from .league_moves import effective_roster
+            for club in self.contracts:
+                for p in effective_roster(club, on, self.season, root):
+                    self.positions[p["bbr_id"]] = (club, p.get("position") or "SF", 9)
 
     def posture(self, club):
         """The club's stance on the date: its 2002-03 record, and a middle club whose core is young is building
@@ -214,7 +283,7 @@ class Assets:
             return None   # Miami's ledger is the front office's
         if club not in self._payroll:
             entry = self.contracts.get(club, {})
-            self._payroll[club] = (sum(int(p["schedule"].get(SEASON) or 0) for p in entry.get("players", [])
+            self._payroll[club] = (sum(int(p["schedule"].get(self.season) or 0) for p in entry.get("players", [])
                                        if p.get("status") in UNDER_CONTRACT or "option_exercised" in (p.get("status") or ""))
                                    # a first-round pick counts at his scale amount, signed or not (1999 CBA cap hold)
                                    + sum(int(d.get("current_cap_hold") or 0) for d in entry.get("draft_rights", [])))
@@ -238,10 +307,10 @@ class Assets:
 
     def salary(self, player):
         """2003-04 salary of a player entry (Miami sheet or inventory shape)."""
-        return int(player["schedule"].get(SEASON) or 0)
+        return int(player["schedule"].get(self.season) or 0)
 
     def years_left(self, player):
-        return sum(1 for s, v in player["schedule"].items() if s >= SEASON and v and player.get("amount_kind", {}).get(s) == "contract_salary")
+        return sum(1 for s, v in player["schedule"].items() if s >= self.season and v and player.get("amount_kind", {}).get(s) == "contract_salary")
 
     def player_value(self, player, for_club=None):
         """Value points of a player under contract: production above replacement plus his contract term."""
@@ -292,13 +361,13 @@ class Assets:
 
     def _injury_evidence(self):
         out = set()
-        ledger = read_json(TEAM / "Transactions/injured_list.json", self.root) if (self.root / TEAM / "Transactions/injured_list.json").is_file() else {"entries": []}
+        ledger = read_json(self.team / "Transactions/injured_list.json", self.root) if (self.root / self.team / "Transactions/injured_list.json").is_file() else {"entries": []}
         for e in ledger["entries"]:
             if e["placed"] <= self.on and (e["activated"] is None or e["activated"] > self.on) and e["reason"].startswith("injury"):
                 out.add((MIAMI, e["player"]))
         from .write_back import closed_results
         recent = {}
-        for row in closed_results(self.root, SEASON, self.on):
+        for row in closed_results(self.root, self.season, self.on):
             r = row["result"]
             for side in ("home", "away"):
                 recent.setdefault(r[side], []).append({p["player_id"] for p in r["player_stats"][side] if p["minutes"] > 0})
@@ -337,10 +406,10 @@ class Assets:
         from .rotations import load_rosters
         from .write_back import closed_results
         names = {}
-        for entry in load_rosters(SEASON, self.root).values():
+        for entry in load_rosters(self.season, self.root).values():
             for p in entry["players"]:
                 names.setdefault(p["player_id"], p["bbr_id"])
-        roster = read_json(TEAM / "Team/Roster/roster.json", self.root)
+        roster = read_json(self.team / "Team/Roster/roster.json", self.root)
         for p in roster["players"]:
             if p.get("bbr_id"):
                 names[p["name"]] = p["bbr_id"]
@@ -348,7 +417,7 @@ class Assets:
                 "blocks": "blk", "field_goals_attempted": "fga", "field_goals_made": "fgm", "free_throws_attempted": "fta",
                 "free_throws_made": "ftm", "turnovers": "tov"}
         out = {}
-        for row in closed_results(self.root, SEASON, self.on):
+        for row in closed_results(self.root, self.season, self.on):
             for side in ("home", "away"):
                 for line in row["result"]["player_stats"][side]:
                     bbr = names.get(line["player_id"])
@@ -427,14 +496,46 @@ class TradeDesk:
         self.on, self.fo, self.root = on, front_office, Path(root)
         self.market = front_office.market
         self.assets = Assets(on, self.market, root)
+        self.season = self.assets.season
         self.cba = read_json(CBA_PATH, root)
-        self.cap_rules = read_json(CAP_RULES_PATH, root)
+        self.cap_rules = self.assets.cap_rules
         self.cap = self.market.planning_cap(on)
-        self.signings = {r["bbr_id"]: r for r in read_json(TRANSACTIONS_PATH, root)["signings"]
-                         if r.get("bbr_id") and r["kind"] in ("signing", "re_sign", "sign_and_trade", "match", "match_declined", "rookie_signing")
-                         and r["to"] != MIAMI and (r["date"] or UNDATED_EXIT) <= on}
-        self.picks = read_json(PICKS_PATH, root) if (self.root / PICKS_PATH).exists() else {"picks": []}
+        if self.season == SEASON:
+            self.signings = {r["bbr_id"]: r for r in read_json(TRANSACTIONS_PATH, root)["signings"]
+                             if r.get("bbr_id") and r["kind"] in ("signing", "re_sign", "sign_and_trade", "match", "match_declined", "rookie_signing")
+                             and r["to"] != MIAMI and (r["date"] or UNDATED_EXIT) <= on}
+        else:
+            self.signings = self._market_signings(on)
+        picks = self.assets.team / "Finances/draft_picks.json"
+        self.picks = read_json(picks, root) if (self.root / picks).exists() else {"picks": []}
         self.needing_consultation = []
+
+    def _market_signings(self, on):
+        """New contracts other clubs signed in the season's summer market (its record's dated rows), for the
+        newly-signed trade restriction. Existing contracts and exercised options carry no restriction."""
+        from .free_agency_2004 import RECORD
+        path = self.root / RECORD
+        if not path.is_file() or self.season != "2004-05":
+            return {}
+        out = {}
+        for club, rows in read_json(RECORD, self.root)["clubs"].items():
+            for r in rows:
+                if club != MIAMI and r.get("bbr_id") and r.get("date") and r.get("route") not in ("existing", "option") and r["date"] <= on:
+                    out[r["bbr_id"]] = dict(r, kind="rookie_signing" if r.get("route") == "rookie_scale" else "signing", to=club)
+        return out
+
+    def _moratorium(self):
+        """(first, last) day of the season's July moratorium and the first signing day."""
+        if self.season == SEASON:
+            return MORATORIUM, SIGNING_OPENS
+        from .free_agency_2004 import OPEN, SIGN_FROM
+        if self.season != "2004-05":
+            raise NotImplementedError(f"{self.season}: no summer market calendar (roadmap R5)")
+        last = (date.fromisoformat(SIGN_FROM) - timedelta(days=1)).isoformat()
+        return (OPEN, last), SIGN_FROM
+
+    def _december_15(self):
+        return f"{self.season[:4]}-12-15"
 
     # -- lookups ------------------------------------------------------------------------------
     def miami_player(self, name):
@@ -472,7 +573,7 @@ class TradeDesk:
         out = []
         for entry in self.fo.sheet["players"]:
             p, r = self.miami_player(entry["player"])
-            if not r or not p["schedule"].get(SEASON) or p["status"] in ("renounced", "released", "traded", "signed_elsewhere", "voided", "waived"):
+            if not r or not p["schedule"].get(self.season) or p["status"] in ("renounced", "released", "traded", "signed_elsewhere", "voided", "waived"):
                 continue
             if any(w in p["status"] for w in NOT_TRADEABLE_WORDS):
                 continue
@@ -486,22 +587,22 @@ class TradeDesk:
         if player["player"] == PROTAGONIST:
             return "Wade's trade would change the simulated club (AGENTS.md); not supported"
         signed = player.get("signed_date")
-        if signed and signed >= "2003-07-01":
+        if signed and signed >= f"{self.season[:4]}-07-01":
             rule = self.cba["trades"]
             if player.get("route") == "rookie_scale":
                 until = (date.fromisoformat(signed) + timedelta(days=rule["signed_first_round_pick_restriction_days"]["days"])).isoformat()
                 if self.on < until:
                     return f"signed first-round pick: not tradable until {until} ({rule['signed_first_round_pick_restriction_days']['status']})"
             else:
-                until = max(months_after(signed, 3), "2003-12-15")
+                until = max(months_after(signed, 3), self._december_15())
                 if self.on < until:
                     return f"newly signed: not tradable until {until} ({rule['newly_signed_free_agent_restriction']['status']})"
         return None
 
     def partner_blocked(self, club, player):
         row = self.signings.get(player.get("bbr_id"))
-        if row and row["date"] >= "2003-07-01":
-            until = max(months_after(row["date"], 3), "2003-12-15")
+        if row and row["date"] >= f"{self.season[:4]}-07-01":
+            until = max(months_after(row["date"], 3), self._december_15())
             if self.on < until:
                 return f"newly signed on {row['date']}: not tradable until {until}"
         return None
@@ -584,14 +685,19 @@ class TradeDesk:
     def errors(self, trade, ignore_timing=False):
         """Everything that makes the proposal illegal on the date, each naming its rule (totals: `totals`)."""
         errors, rules = [], self.cba["trades"]
-        deadline = rules["deadline_2003_04"][:10]
+        if self.season == SEASON:
+            deadline = rules["deadline_2003_04"][:10]
+        else:
+            from .seasons import date_of
+            deadline = date_of(self.season, "trade_deadline", self.root)
         if self.on > deadline:
             errors.append(f"after the {deadline} trade deadline")
         if not ignore_timing:
-            if MORATORIUM[0] <= self.on <= MORATORIUM[1]:
+            moratorium, signing_opens = self._moratorium()
+            if moratorium[0] <= self.on <= moratorium[1]:
                 errors.append(f"no trade during the July moratorium (calendar; {rules['moratorium_trade_ban']['status']})")
-            if is_sign_and_trade(trade) and self.on < SIGNING_OPENS:
-                errors.append("no contract may be signed before July 16, 2003 (calendar)")
+            if is_sign_and_trade(trade) and self.on < signing_opens:
+                errors.append(f"no contract may be signed before {signing_opens} (calendar)")
         club = trade["partner"]
         if club == MIAMI or club not in self.assets.contracts:
             errors.append(f"unknown partner club {club!r}")
@@ -711,7 +817,7 @@ class TradeDesk:
         if acquired.get("route") != "sign_and_trade":
             errors.append(f"{name}: the contract route must be sign_and_trade")
         terms = acquired.get("terms") or {}
-        schedule = [int(acquired["schedule"][s]) for s in seasons_from(SEASON, len(acquired["schedule"]))]
+        schedule = [int(acquired["schedule"][s]) for s in seasons_from(self.season, len(acquired["schedule"]))]
         legal = terms_errors({"schedule": schedule, "guaranteed": acquired.get("guaranteed", sum(schedule)),
                               "non_option_seasons": acquired.get("non_option_seasons", len(schedule))},
                              route="sign_and_trade", years_of_service=p.get("nba_seasons_before_2003_04"),
@@ -926,7 +1032,7 @@ class TradeDesk:
         """The sign-and-trade entry for agreed terms: schedule, guarantee, the player's rights and the
         base-year compensation attached at the signing by the signing club's cap position."""
         p = self.market.players.get(bbr_id, {})
-        schedule = {s: int(v) for s, v in zip(seasons_from(SEASON, terms["years"]), terms["schedule"])}
+        schedule = {s: int(v) for s, v in zip(seasons_from(self.season, terms["years"]), terms["schedule"])}
         prior = p.get("prior_salary_2002_03")
         if club == MIAMI:
             # Miami's own flag, from its ledger on the date (the same rule signing.sign applies; the record carries it

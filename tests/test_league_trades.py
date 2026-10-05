@@ -62,11 +62,11 @@ class LeagueTradeTests(unittest.TestCase):
         deal = written[0]
         seen = set()
         for w in written:                                                    # a club or player in one deal a week
-            row = json.loads((self.root / league_trades.DRAWS / f"{w}.proposal.json").read_text())
+            row = json.loads((self.root / league_trades.draws_dir("2003-04") / f"{w}.proposal.json").read_text())
             keys = set(row["clubs"]) | set(row["a"]["bbr_ids"]) | set(row["b"]["bbr_ids"])
             self.assertFalse(keys & seen)
             seen |= keys
-        draws = self.root / league_trades.DRAWS
+        draws = self.root / league_trades.draws_dir("2003-04")
         proposal = json.loads((draws / f"{deal}.proposal.json").read_text())
         packet = json.loads((draws / f"{deal}.decision.json").read_text())
         self.assertAlmostEqual(packet["options"]["accept"] + packet["options"]["decline"], 1.0, places=5)

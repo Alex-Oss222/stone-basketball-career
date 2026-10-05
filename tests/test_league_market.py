@@ -39,7 +39,7 @@ class LeagueMarketTests(unittest.TestCase):
         cls.tmp.cleanup()
 
     def test_rules_come_from_the_researched_file(self):
-        rules = LM._rules(ROOT)
+        rules = LM._rules(ROOT, "2003-04")
         self.assertEqual((rules["min"], rules["max"], rules["ten_day_per_club"]), (12, 15, 2))
         self.assertEqual(rules["ten_day_from"], "2004-01-05")
 

@@ -22,9 +22,16 @@ from .trades import (ACCEPT_FLOOR, MIAMI, SEARCH_MIN_ACCEPT, STANCE_WEIGHTS, UND
                      Assets, acceptance)
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
-DEADLINE = "2004-02-19"
-DRAWS = Path(f"career/Dwyane_Wade/{SEASON}/League/Trade_Draws")
+
+
+def deadline(day, root=ROOT):
+    """The trade deadline of the season `day` belongs to (runtime/seasons.py)."""
+    from .seasons import dates, season_of_date
+    return dates(season_of_date(day), root)["trade_deadline"]
+
+
+def draws_dir(season):
+    return Path(f"career/Dwyane_Wade/{season}/League/Trade_Draws")
 MAX_PER_WEEK = 2                     # calibrated against 16 real trades from December 3 to the deadline (rules file)
 ROTATION_CANDIDATES = 9
 MATCH_PERCENT, MATCH_PLUS = 1.15, 100000
@@ -32,7 +39,8 @@ MIN_MUTUAL_GAIN = 0.06              # a club changes its roster only for a clear
 STATUS_QUO = 1.15                   # judgement: a club values the player it has this much more than an equal arrival
 
 
-def scan_days(start, until=DEADLINE):
+def scan_days(start, until=None):
+    until = until or deadline(start)
     d = date.fromisoformat(start)
     d += timedelta(days=(7 - d.weekday()) % 7)
     out = []
@@ -46,13 +54,15 @@ class LeagueTradeDesk:
     def __init__(self, on, market, root=ROOT):
         if not active(on):
             raise ValueError("the symmetric league is not active on this date")
+        from .seasons import season_of_date
         self.on, self.root = on, Path(root)
+        self.season = season_of_date(on)
         self.assets = Assets(on, market, root)
         self.book = LeagueBook(on, market, root)
         from .skill_fit import SkillFit
         self.skills = SkillFit(root)
         self.contracts = {p["bbr_id"]: p for entry in self.assets.contracts.values() for p in entry.get("players", []) if p.get("bbr_id")}
-        self.rosters = {c: sorted(effective_roster(c, on, SEASON, root), key=lambda p: -(p["minutes"] / max(1, p["games"])))
+        self.rosters = {c: sorted(effective_roster(c, on, self.season, root), key=lambda p: -(p["minutes"] / max(1, p["games"])))
                         for c in self.assets.contracts if c != MIAMI}
         self.payroll = {c: self.book.club(c)["payroll"] for c in self.rosters}
         self._needs_cache, self._value_cache = {}, {}
@@ -82,7 +92,7 @@ class LeagueTradeDesk:
         # counts, weighted by the club's cash weight (a rebuilder guards its flexibility).
         worth = self.assets.valuation.market_price(self.assets.form_value(bbr), bbr) if self.assets.form_value(bbr) is not None \
             else self.assets.valuation.minimum(0)
-        seasons = [int(x) for season_, x in entry["schedule"].items() if season_ >= SEASON and x]
+        seasons = [int(x) for season_, x in entry["schedule"].items() if season_ >= self.season and x]
         burden = sum(max(0, x - worth) for x in seasons) / self.assets.valuation.mid_level * 0.5
         counted = max(0.0, -v["contract_term"])
         extra = max(0.0, burden - counted) * STANCE_WEIGHTS[self.assets.posture(club)]["cash"]
@@ -121,9 +131,9 @@ class LeagueTradeDesk:
         ca, cb = [self.contracts.get(x) for x in a_out], [self.contracts.get(x) for x in b_out]
         if not all(ca) or not all(cb):
             return None
-        sa = sum(int(c["schedule"].get(SEASON) or 0) for c in ca)
-        sb = sum(int(c["schedule"].get(SEASON) or 0) for c in cb)
-        if not all(int(c["schedule"].get(SEASON) or 0) for c in ca + cb) or not self.legal(a, sa, sb) or not self.legal(b, sb, sa):
+        sa = sum(int(c["schedule"].get(self.season) or 0) for c in ca)
+        sb = sum(int(c["schedule"].get(self.season) or 0) for c in cb)
+        if not all(int(c["schedule"].get(self.season) or 0) for c in ca + cb) or not self.legal(a, sa, sb) or not self.legal(b, sb, sa):
             return None
         if len(self.rosters[a]) - len(a_out) + len(b_out) > 15 or len(self.rosters[b]) - len(b_out) + len(a_out) > 15:
             return None
@@ -147,7 +157,7 @@ class LeagueTradeDesk:
                 return None
             chances[club] = p
         tag = "-".join(sorted(a_out + b_out))
-        return {"id": f"{SEASON}-league-trade-{self.on}-{tag}", "date": self.on, "clubs": [a, b],
+        return {"id": f"{self.season}-league-trade-{self.on}-{tag}", "date": self.on, "clubs": [a, b],
                 "a": {"club": a, "sends": [c["player"] for c in ca], "bbr_ids": a_out, "salary": sa},
                 "b": {"club": b, "sends": [c["player"] for c in cb], "bbr_ids": b_out, "salary": sb},
                 "gain": gain, "accept": chances, "both": round(chances[a] * chances[b], 6)}
@@ -167,7 +177,8 @@ def weekly(root=ROOT, day=None, market=None):
     root = Path(root)
     market = market or Market(day, root)
     desk = LeagueTradeDesk(day, market, root)
-    draws = root / DRAWS
+    SEASON = desk.season
+    draws = root / draws_dir(SEASON)
     draws.mkdir(parents=True, exist_ok=True)
     existing = sorted(draws.glob(f"*{day}*.decision.json"))
     written = []

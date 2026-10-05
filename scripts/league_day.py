@@ -29,8 +29,8 @@ def main():
     for e in LeagueMarket(day, Market(day, ROOT), ROOT).run():
         print(f"{e['date']}  {e['kind']:15} {e['player']}  {e['from'] or 'free agent'} -> {e['to'] or 'free agent'}")
     if date.fromisoformat(day).weekday() == 0:
-        from runtime.league_trades import DEADLINE, weekly
-        if day <= DEADLINE:
+        from runtime.league_trades import deadline, weekly
+        if day <= deadline(day, ROOT):
             written, executed = weekly(ROOT, day)
             print(f"trade scan: {len(written)} packet(s) written, {len(executed)} deal(s) executed")
     return 0

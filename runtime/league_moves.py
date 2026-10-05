@@ -137,7 +137,15 @@ def _activation(season, root, start):
 
 def _protected_contracts(root, season="2003-04"):
     """bbr_ids under a rookie-scale contract, a 2003 first-round pick, or a 2003-04 salary above the highest minimum
-    (the first season's activation; later seasons open from their book)."""
+    (the first season's activation; later seasons read their contract ledger: a rookie-scale contract or a salary above
+    1.5 times the highest minimum on the season's scale)."""
+    if season != "2003-04":
+        from .league_contracts import read as read_ledger
+        from .seasons import path as season_path
+        ledger = read_ledger(season, root) or {}
+        rules = json.loads((Path(root) / season_path(season, "cap_rules")).read_text(encoding="utf-8"))
+        top_minimum = max(v for v in rules["minimum_salary"].values() if isinstance(v, (int, float)))
+        return {b for b, c in ledger.items() if c.get("kind") == "rookie_scale" or (c["schedule"].get(season) or 0) > 1.5 * top_minimum}
     path = Path(root) / "library/2003/league/nba_2003_contracts.json"
     # Above the highest minimum on the scale (10+ years of service): a veteran on his own minimum is not protected.
     minimum = json.loads((Path(root) / "library/2003/league/nba_1999_cba_minimum_salary_scale.json").read_text(encoding="utf-8"))["seasons"][season]["10_plus"] / 1.5 * 1.05
