@@ -2,7 +2,7 @@
 
 # Contract checkpoint | Dwyane Wade
 
-Career date: 2004-03-29 · Miami Heat · active
+Career date: 2004-04-02 · Miami Heat · active
 
 [Live milestone desk](index.html#contract_checkpoint) · [All milestones](README.md)
 
@@ -67,7 +67,7 @@ A real club offer, contract event or verified option/expiry deadline.
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/03_March/Week_4/note.md)
+- [Owning event](../2003-04/06_Regular_Season/04_April/Week_1/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
@@ -163,4 +163,6 @@ A real club offer, contract event or verified option/expiry deadline.
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)

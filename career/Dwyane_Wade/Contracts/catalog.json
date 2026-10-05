@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-03-29",
+  "as_of": "2004-04-02",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -24,7 +24,7 @@
       "player_id": "harriad01",
       "name": "Adam Harrington",
       "team": "Free agent",
-      "status": "unsigned free agent (researched, 2004-01-15)",
+      "status": "unsigned free agent (researched, 2004-03-31)",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/harriad01.html#contract"

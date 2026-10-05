@@ -2,9 +2,9 @@
 
 # Contract | Mitchell Butler
 
-Known through: 2004-03-29. [Open interactive contract](butlemi02.html#contract) · [Contract history](butlemi02.html#contract-history)
+Known through: 2004-04-02. [Open interactive contract](butlemi02.html#contract) · [Contract history](butlemi02.html#contract-history)
 
-Mitchell Butler: No verified contract record. Evidence cutoff: 2004-03-29.
+Mitchell Butler: No verified contract record. Evidence cutoff: 2004-04-02.
 
 ## Current contract
 

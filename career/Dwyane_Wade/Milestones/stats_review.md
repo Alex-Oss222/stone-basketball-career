@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-03-29 · Miami Heat · active
+Career date: 2004-04-02 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-80 closed game records in 2003-04 through 2004-03-29. Competitions remain separate.
+82 closed game records in 2003-04 through 2004-04-02. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
-| regular | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
+| regular | 70 | 35.2 | 18.2 | 4.7 | 4.6 | 1.1 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A |
-| regular | N/A | N/A | N/A | N/A | N/A | N/A |
+| regular | 428 | 834 | 0.513 | 69 | 176 | 0.392 |
 
 ## Closed source games
 
@@ -94,11 +94,11 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-02-17 | regular | Utah Jazz | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_1.md) |
 | 2004-02-20 | regular | Atlanta Hawks | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.md) |
 | 2004-02-21 | regular | Denver Nuggets | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.md) |
-| 2004-02-23 | regular | Portland Trail Blazers | Unknown: missing player box | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md) |
-| 2004-02-28 | regular | New Jersey Nets | Unknown: missing player box | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md) |
-| 2004-02-29 | regular | Milwaukee Bucks | Unknown: missing player box | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_3.md) |
-| 2004-03-02 | regular | Toronto Raptors | Unknown: missing player box | [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md) |
-| 2004-03-04 | regular | Milwaukee Bucks | Unknown: missing player box | [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_2.md) |
+| 2004-02-23 | regular | Portland Trail Blazers | DNP: injured list since 2004-02-23 | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md) |
+| 2004-02-28 | regular | New Jersey Nets | DNP: injured list since 2004-02-23 | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md) |
+| 2004-02-29 | regular | Milwaukee Bucks | DNP: injured list since 2004-02-23 | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_3.md) |
+| 2004-03-02 | regular | Toronto Raptors | DNP: injured list since 2004-02-23 | [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md) |
+| 2004-03-04 | regular | Milwaukee Bucks | DNP: injured list since 2004-02-23 | [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_2.md) |
 | 2004-03-06 | regular | Sacramento Kings | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_3.md) |
 | 2004-03-09 | regular | Orlando Magic | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_1.md) |
 | 2004-03-10 | regular | New Orleans Hornets | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_2.md) |
@@ -110,6 +110,8 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-03-24 | regular | Orlando Magic | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md) |
 | 2004-03-26 | regular | Dallas Mavericks | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md) |
 | 2004-03-28 | regular | Indiana Pacers | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md) |
+| 2004-03-29 | regular | Chicago Bulls | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md) |
+| 2004-03-31 | regular | Atlanta Hawks | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md) |
 
 ## Evidence available for decisions
 
@@ -141,7 +143,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/03_March/Week_4/note.md)
+- [Owning event](../2003-04/06_Regular_Season/04_April/Week_1/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
@@ -237,4 +239,6 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md)
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)

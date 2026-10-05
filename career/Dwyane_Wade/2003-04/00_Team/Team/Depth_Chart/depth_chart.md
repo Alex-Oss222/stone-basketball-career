@@ -1,6 +1,6 @@
 # Miami Heat working depth chart
 
-**As of:** 2004-03-29 · **Staff decision in force:** 2004-03-26 (fortnightly review)  
+**As of:** 2004-04-02 · **Staff decision in force:** 2004-03-26 (fortnightly review)  
 **Status:** game-ready working view; a working basketball view, not a promise of minutes
 
 | Position | 1 | 2 | 3 | 4 |
@@ -8,7 +8,7 @@
 | PG | Mike James (starter) | Anthony Carter |  |  |
 | SG | Dwyane Wade (starter) | Stephen Jackson | Eddie Jones | Rasual Butler |
 | SF | Caron Butler (starter) | Sean Lampley |  |  |
-| PF | Scott Padgett (starter, on the injured list) | LaPhonso Ellis | John Wallace (injured list) | Udonis Haslem (injured list) |
+| PF | Scott Padgett (starter, on the injured list) | LaPhonso Ellis (injured list) | John Wallace | Udonis Haslem (injured list) |
 | C | Shawn Kemp (starter) | Brian Grant | Cherokee Parks |  |
 
 ## Rotation in force
@@ -29,9 +29,9 @@
 
 Outside the rotation (dressing as the twelfth man or on the injured list): Rasual Butler, Sean Lampley, Udonis Haslem, John Wallace.
 
-## Injured list on 2004-03-29
+## Injured list on 2004-04-02
 
-John Wallace, Scott Padgett, Udonis Haslem ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
+LaPhonso Ellis, Scott Padgett, Udonis Haslem ([ledger](../../Transactions/injured_list.json)). Up to three; at least five games once placed (`runtime/roster_moves.py`).
 
 ## Not on the active register
 

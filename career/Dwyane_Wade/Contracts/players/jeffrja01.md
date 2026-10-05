@@ -2,9 +2,9 @@
 
 # Contract | Jared Jeffries
 
-Known through: 2004-03-29. [Open interactive contract](jeffrja01.html#contract) · [Contract history](jeffrja01.html#contract-history)
+Known through: 2004-04-02. [Open interactive contract](jeffrja01.html#contract) · [Contract history](jeffrja01.html#contract-history)
 
-Jared Jeffries: under rookie contract. Evidence cutoff: 2004-03-29.
+Jared Jeffries: under rookie contract. Evidence cutoff: 2004-04-02.
 
 ## Current contract
 

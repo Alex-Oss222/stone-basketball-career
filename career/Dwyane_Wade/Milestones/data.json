@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-03-29",
+  "as_of": "2004-04-02",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-03-28-miami-heat-at-indiana-pacers",
+  "current_event": "2004-03-31-miami-heat-at-atlanta-hawks",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-03-29"
+              "2004-04-02"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-03-28-miami-heat-at-indiana-pacers"
+              "2004-03-31-miami-heat-at-atlanta-hawks"
             ],
             [
               "Pending player decisions",
@@ -64,13 +64,13 @@
           ],
           "rows": [
             [
-              "2004-03-29",
+              "2004-04-02",
               "Current checkpoint",
-              "2004-03-28-miami-heat-at-indiana-pacers",
+              "2004-03-31-miami-heat-at-atlanta-hawks",
               "Recorded",
               {
                 "label": "Owning event",
-                "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
+                "href": "../2003-04/06_Regular_Season/04_April/Week_1/note.md"
               }
             ],
             [
@@ -94,8 +94,8 @@
               }
             ],
             [
-              "2004-03-31",
-              "Next Miami game, at Atlanta Hawks",
+              "2004-04-03",
+              "Next Miami game, at Chicago Bulls",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
@@ -104,8 +104,8 @@
               }
             ],
             [
-              "2004-04-02",
-              "League awards announced: Player of the Month, Rookie of the Month",
+              "2004-04-05",
+              "League awards announced: Player of the Week",
               "League (closed results only)",
               "Scheduled",
               {
@@ -217,7 +217,7 @@
       "actions": [
         {
           "label": "Open the current event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md",
+          "href": "../2003-04/06_Regular_Season/04_April/Week_1/note.md",
           "description": "Read the owning career note and record the player's actual response when one is due."
         },
         {
@@ -241,7 +241,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
+          "href": "../2003-04/06_Regular_Season/04_April/Week_1/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -624,6 +624,14 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -632,7 +640,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-29"
+          "value": "2004-04-02"
         },
         {
           "label": "Team",
@@ -811,7 +819,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
+          "href": "../2003-04/06_Regular_Season/04_April/Week_1/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1194,6 +1202,14 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1202,7 +1218,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-29"
+          "value": "2004-04-02"
         },
         {
           "label": "Team",
@@ -1434,7 +1450,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
+          "href": "../2003-04/06_Regular_Season/04_April/Week_1/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -1817,6 +1833,14 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1825,7 +1849,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-29"
+          "value": "2004-04-02"
         },
         {
           "label": "Team",
@@ -2165,7 +2189,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
+          "href": "../2003-04/06_Regular_Season/04_April/Week_1/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -2548,6 +2572,14 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2556,7 +2588,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-29"
+          "value": "2004-04-02"
         },
         {
           "label": "Team",
@@ -2705,7 +2737,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
+          "href": "../2003-04/06_Regular_Season/04_April/Week_1/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -3088,6 +3120,14 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3096,7 +3136,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-29"
+          "value": "2004-04-02"
         },
         {
           "label": "Team",
@@ -3217,7 +3257,7 @@
       "actions": [
         {
           "label": "Open the current event discussion",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md",
+          "href": "../2003-04/06_Regular_Season/04_April/Week_1/note.md",
           "description": "Record a dated reaction to an actual transaction."
         },
         {
@@ -3241,7 +3281,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
+          "href": "../2003-04/06_Regular_Season/04_April/Week_1/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -3624,6 +3664,14 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3632,7 +3680,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-29"
+          "value": "2004-04-02"
         },
         {
           "label": "Team",
@@ -3786,7 +3834,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
+          "href": "../2003-04/06_Regular_Season/04_April/Week_1/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -4169,6 +4217,14 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4177,7 +4233,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-29"
+          "value": "2004-04-02"
         },
         {
           "label": "Team",
@@ -4379,7 +4435,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
+          "href": "../2003-04/06_Regular_Season/04_April/Week_1/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -4762,6 +4818,14 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4770,7 +4834,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-29"
+          "value": "2004-04-02"
         },
         {
           "label": "Team",
@@ -4787,7 +4851,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "80 closed game records in 2003-04 through 2004-03-29. Competitions remain separate.",
+      "summary": "82 closed game records in 2003-04 through 2004-04-02. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -4814,13 +4878,13 @@
             ],
             [
               "regular",
-              null,
-              null,
-              null,
-              null,
-              null,
-              null,
-              "Missing source coverage"
+              70,
+              35.21409285714286,
+              18.17142857142857,
+              4.7,
+              4.628571428571429,
+              1.0857142857142856,
+              "Complete"
             ]
           ]
         },
@@ -4847,12 +4911,12 @@
             ],
             [
               "regular",
-              null,
-              null,
-              null,
-              null,
-              null,
-              null
+              428,
+              834,
+              0.513189448441247,
+              69,
+              176,
+              0.39204545454545453
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -5511,7 +5575,7 @@
               "2004-02-23",
               "regular",
               "Portland Trail Blazers",
-              "Unknown: missing player box",
+              "DNP: injured list since 2004-02-23",
               {
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md"
@@ -5521,7 +5585,7 @@
               "2004-02-28",
               "regular",
               "New Jersey Nets",
-              "Unknown: missing player box",
+              "DNP: injured list since 2004-02-23",
               {
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md"
@@ -5531,7 +5595,7 @@
               "2004-02-29",
               "regular",
               "Milwaukee Bucks",
-              "Unknown: missing player box",
+              "DNP: injured list since 2004-02-23",
               {
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/02_February/Week_4/Game_3.md"
@@ -5541,7 +5605,7 @@
               "2004-03-02",
               "regular",
               "Toronto Raptors",
-              "Unknown: missing player box",
+              "DNP: injured list since 2004-02-23",
               {
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md"
@@ -5551,7 +5615,7 @@
               "2004-03-04",
               "regular",
               "Milwaukee Bucks",
-              "Unknown: missing player box",
+              "DNP: injured list since 2004-02-23",
               {
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/03_March/Week_1/Game_2.md"
@@ -5666,6 +5730,26 @@
                 "label": "Closed game",
                 "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
               }
+            ],
+            [
+              "2004-03-29",
+              "regular",
+              "Chicago Bulls",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md"
+              }
+            ],
+            [
+              "2004-03-31",
+              "regular",
+              "Atlanta Hawks",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md"
+              }
             ]
           ]
         },
@@ -5740,7 +5824,7 @@
         },
         {
           "label": "Owning event",
-          "href": "../2003-04/06_Regular_Season/03_March/Week_4/note.md"
+          "href": "../2003-04/06_Regular_Season/04_April/Week_1/note.md"
         },
         {
           "label": "Current contract and cap-control record",
@@ -6123,6 +6207,14 @@
           "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -6131,7 +6223,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-03-29"
+          "value": "2004-04-02"
         },
         {
           "label": "Team",

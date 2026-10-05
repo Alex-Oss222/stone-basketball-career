@@ -108,6 +108,30 @@
       "period_end": "2004-03-14",
       "awarded_on": "2004-03-15",
       "source": "Stats_and_Awards/League/2003-04/03_March/Week_2/League_Awards.md#player-of-the-week"
+    },
+    {
+      "id": "2003-04-player_of_month-2004-03-01-east",
+      "name": "Eastern Conference Player of the Month",
+      "short_name": "East POM",
+      "status": "earned",
+      "competition": "regular",
+      "season": "2003-04",
+      "period_start": "2004-03-01",
+      "period_end": "2004-03-31",
+      "awarded_on": "2004-04-02",
+      "source": "Stats_and_Awards/League/2003-04/03_March/League_Awards.md#player-of-the-month"
+    },
+    {
+      "id": "2003-04-rookie_of_month-2004-03-01-east",
+      "name": "Eastern Conference Rookie of the Month",
+      "short_name": "East ROM",
+      "status": "earned",
+      "competition": "regular",
+      "season": "2003-04",
+      "period_start": "2004-03-01",
+      "period_end": "2004-03-31",
+      "awarded_on": "2004-04-02",
+      "source": "Stats_and_Awards/League/2003-04/03_March/League_Awards.md#rookie-of-the-month"
     }
   ]
 }

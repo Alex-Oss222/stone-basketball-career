@@ -2,9 +2,9 @@
 
 # Contract | Adam Harrington
 
-Known through: 2004-03-29. [Open interactive contract](harriad01.html#contract) · [Contract history](harriad01.html#contract-history)
+Known through: 2004-04-02. [Open interactive contract](harriad01.html#contract) · [Contract history](harriad01.html#contract-history)
 
-Adam Harrington: unsigned free agent (researched, 2004-01-15). Evidence cutoff: 2004-03-29.
+Adam Harrington: unsigned free agent (researched, 2004-03-31). Evidence cutoff: 2004-04-02.
 
 ## Current contract
 
@@ -18,7 +18,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Adam Harrington |
 | Club / rights baseline | Free agent |
-| Control status | unsigned free agent (researched, 2004-01-15) |
+| Control status | unsigned free agent (researched, 2004-03-31) |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | unsigned free agent (researched, 2004-01-15) |
+| Status | unsigned free agent (researched, 2004-03-31) |
 | Contract wording | Not recorded |
 
 ### Salary by season
