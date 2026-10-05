@@ -41,6 +41,22 @@ SEASON_RULES = {
         "first_round_best_of": 7,             # first round became best-of-seven in 2003
         "playoff_teams_per_conference": 8,
     },
+    "2004-05": {
+        # 30 clubs in six divisions (Charlotte joins); hand-checking crackdown recorded as a rule flag only, with no
+        # engine effect (the user's decision: sizing it from 2004-05 results would be hindsight). Roster limits and the
+        # injured list are unchanged until 2005-06 (inactive list). Sources: library/2004/league/nba_2004_offseason_calendar.json,
+        # library/2005/league/nba_2005_cba_rules.json game_rules.
+        "game_day_actives": 12,
+        "roster_maximum": 15,
+        "reserve_list": "injured_list",
+        "zone_defense_legal": True,
+        "defensive_three_seconds": True,
+        "hand_check_emphasis": True,
+        "play_in_tournament": False,
+        "first_round_best_of": 7,
+        "playoff_teams_per_conference": 8,
+        "clubs": 30,
+    },
 }
 
 GAME_TYPES = ("preseason", "regular", "play_in", "playoff")

@@ -5,7 +5,7 @@ import inspect
 from . import KERNEL_VERSION
 from .era import allowed_game_types, environment_for, rules_for, season_for_date
 from .kernel import resolve_game, team_errors, team_packet, validate_result
-from .player_stats import ROOT, MODEL_VERSION, load_rating_index
+from .player_stats import ROOT, SEASON_SOURCES, load_rating_index
 from .trajectories import develop_profile, development_refs, development_seasons, needs_development
 from dataclasses import replace
 
@@ -47,7 +47,7 @@ def build_game_packet(home, away, *, event_id, game_date, game_type="regular", v
                 expected = develop_profile(expected, refs)
             if profile != expected:
                 raise ValueError("statistical profile differs from the dated, generated source")
-        if environment.get("player_rating_model") != MODEL_VERSION or environment.get("player_rate_baselines") != index.data["rate_baselines"]:
+        if environment.get("player_rating_model") != SEASON_SOURCES[season]["model"] or environment.get("player_rate_baselines") != index.data["rate_baselines"]:
             raise ValueError("league environment and player rating model do not match")
     # Request parsing checks common dated inputs without requiring a future
     # kernel's spatial source to replay an older, already closed game.

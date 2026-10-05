@@ -100,3 +100,45 @@ def next_season_rates(prior_rates, lines, next_season, baselines, source_totals)
             prior /= production
         out[key] = min(prior, 0.99) if key in ACCURACY else prior
     return out
+
+
+PROFILE_MODEL = "protagonist-2004.1"
+
+
+def build_profile(root, from_season="2003-04", to_season="2004-05", on=None):
+    """Wade's expected profile for `to_season` (roadmap 18): his `from_season` expectation, his closed simulated
+    regular-season box lines, and the generic age step; written beside the season as a one-player rookie-shaped file
+    that `player_stats.load_rating_index` reads. The engine then draws the season's development swing."""
+    import hashlib
+    import json
+    from pathlib import Path
+    from .player_stats import SEASON_SOURCES, load_rating_index, read_json
+    from .write_back import closed_results
+    root = Path(root)
+    src = SEASON_SOURCES[from_season]
+    # The expectation in force at the season's last regular-season game: for 2003-04 the rookie-2003.3 estimate built
+    # from the Player Profile (its scouting traits and shot style carry forward unchanged; only rates are updated).
+    last_day = {"2003-04": "2004-04-14"}[from_season]
+    index = load_rating_index(last_day, from_season, root)
+    prior = index.engine_profile("Dwyane Wade", "wadedw01")
+    ratings = read_json(root / src["ratings"])
+    lines = []
+    for row in closed_results(root, from_season, on):
+        r = row["result"]
+        for side in ("home", "away"):
+            if r[side] == "Miami Heat":
+                lines += [p for p in r["player_stats"][side] if p["player_id"] == "Dwyane Wade" and p.get("seconds")]
+    rates = next_season_rates(prior["rates"], lines, to_season, ratings["rate_baselines"], ratings["source_totals"])
+    payload = {"prior": prior["rates"], "games": len(lines), "to_season": to_season}
+    player = {"player_name": "Dwyane Wade", "bbr_id": "wadedw01", "season_end_year": int(to_season[:4]) + 1,
+              "sample": {"games": len(lines), "minutes": round(sum(p["seconds"] for p in lines) / 60, 1)},
+              "estimated": rates, "basis": "runtime/protagonist.py: previous expectation + closed simulated season + age step"}
+    for key in ("scouting", "style"):
+        if key in prior:
+            player[key] = prior[key]
+    out = {"schema_version": 1, "model_version": PROFILE_MODEL, "as_of": on, "season": to_season,
+           "source_sha256": hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest(),
+           "players": {"wadedw01": player}}
+    if "scouting_sources" in prior:
+        out["scouting_sources"] = prior["scouting_sources"]
+    return out

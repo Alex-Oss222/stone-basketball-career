@@ -40,7 +40,8 @@ class EraTests(unittest.TestCase):
 
     def test_unencoded_season_fails_closed(self):
         with self.assertRaises(ValueError):
-            rules_for("2004-05")
+            rules_for("2005-06")
+        self.assertTrue(rules_for("2004-05")["hand_check_emphasis"])      # encoded at the rollover, flag only
 
     def test_environment_is_prior_season_and_date_gated(self):
         env = environment_for("2003-04", GAME_DATE)

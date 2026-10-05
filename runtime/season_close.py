@@ -87,4 +87,40 @@ def close(season=SEASON, root=ROOT, write=True):
     if write:
         target.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         standing.record(root, clock(root), "season_close", f"{season}/season_close.json")
+        # The next season's expectations (roadmap 18): Wade's own update and real players' capped feedback.
+        from .protagonist import build_profile
+        from .trajectories import feedback_path
+        nxt = root / PLAYER / "2004-05"
+        nxt.mkdir(parents=True, exist_ok=True)
+        (nxt / "wade_expected_profile.json").write_text(
+            json.dumps(build_profile(root, season, "2004-05", day), indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        (root / feedback_path("2004-05")).write_text(
+            json.dumps(feedback(root, season, "2004-05", day), indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return record
+
+
+def feedback(root=ROOT, season=SEASON, next_season="2004-05", on=None):
+    """Real players' capped 20% feedback for the next season (`trajectories.season_feedback`) from every closed
+    regular-season result of the season: each player's box lines against the rates the engine expected for him."""
+    from .player_stats import SEASON_SOURCES, read_json
+    from .trajectories import load_trajectories, season_feedback
+    from .write_back import _key, bbr_lookup, closed_results, game_records, registry
+    root = Path(root)
+    lookup = bbr_lookup(root, season)
+    by_name = {}
+    for p in registry(root)["players"]:
+        if p.get("bbr_id"):
+            by_name.setdefault(_key(p["name"]), p["bbr_id"])
+    baselines = read_json(root / SEASON_SOURCES[season]["ratings"])["rate_baselines"]
+    trajectories = load_trajectories(root, season)
+    lines = {}
+    for row in closed_results(root, season, on):
+        r = row["result"]
+        raw = {(side, p["player_id"]): p for side in ("home", "away") for p in r["player_stats"][side]}
+        for side, pid, bbr, _record in game_records(row, root, season):
+            bbr = bbr or lookup.get((r[side], _key(pid))) or by_name.get(_key(pid))
+            line = raw.get((side, pid))
+            if bbr and line and line.get("seconds"):
+                lines.setdefault(bbr, []).append(line)
+    expected = {b: trajectories.expected_profile(b, season, baselines)["rates"] for b in lines if trajectories.has(b, season)}
+    return season_feedback(lines, expected, baselines, season, next_season)

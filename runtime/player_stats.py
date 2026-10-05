@@ -19,6 +19,17 @@ MODEL_VERSION = "veteran-2003.1"
 STATS_PATH = Path("library/2003/league/nba_2002_03_player_stats.json")
 RATINGS_PATH = Path("library/2003/league/nba_2003_veteran_ratings.json")
 CUTOFF = "2003-06-26"
+# Each simulated season reads the completed season before it (roadmap 18): its real totals, the ratings built from
+# them, the date they are known from, and the model label. 2003-04 keeps exactly its original sources.
+SEASON_SOURCES = {
+    "2003-04": {"stats": STATS_PATH, "ratings": RATINGS_PATH, "cutoff": CUTOFF, "model": MODEL_VERSION,
+                "baseline": "2002-03", "end_year": 2003},
+    "2004-05": {"stats": Path("library/2004/league/nba_2003_04_player_stats.json"),
+                "ratings": Path("library/2004/league/nba_2004_veteran_ratings.json"), "cutoff": "2004-04-15",
+                "model": "veteran-2004.1", "baseline": "2003-04", "end_year": 2004},
+}
+# Wade's expected profile for a season after his rookie year (`runtime/protagonist.py`, written at the rollover).
+PROTAGONIST_PATH = "career/Dwyane_Wade/{season}/wade_expected_profile.json"
 MIN_COHORT_MINUTES = 500
 PRIOR_MINUTES = 300
 PRIOR_ATTEMPTS = {"two_point_pct": 100, "three_point_pct": 50, "free_throw_pct": 25,
@@ -61,13 +72,14 @@ def ratio(numerator, denominator):
     return numerator / denominator if denominator else None
 
 
-def data_errors(data):
+def data_errors(data, season="2003-04"):
     """Domain checks in addition to the published JSON Schema. No data is repaired."""
     if not isinstance(data, dict):
         return ["statistics must be a JSON object"]
+    src = SEASON_SOURCES[season]
     errors, seen = [], set()
     for key, value in {"schema_version": "1.0", "dataset_kind": "collected_stats",
-                       "league": "NBA", "season_type": "regular", "as_of_date": CUTOFF}.items():
+                       "league": "NBA", "season_type": "regular", "as_of_date": src["cutoff"]}.items():
         if data.get(key) != value:
             errors.append(f"{key} must be {value!r}")
     records = data.get("records")
@@ -83,7 +95,7 @@ def data_errors(data):
             errors.append(f"{label}: missing name")
         if not isinstance(pid, str) or not re.fullmatch(r"[a-z]+[0-9]{2}", pid):
             errors.append(f"{label}: verified Basketball-Reference ID required for import")
-        if type(year) is not int or year != 2003:
+        if type(year) is not int or year != src["end_year"]:
             errors.append(f"{label}: this model accepts only the completed 2002-03 season")
         key = (str(pid), str(year))
         if key in seen:
@@ -145,7 +157,7 @@ def data_errors(data):
             if (value is None) != (a[field] is None) or value is not None and abs(value - a[field]) > .000501:
                 errors.append(f"{label}: {field} disagrees with totals or has wrong units")
     league = data.get("league_averages", [])
-    if not isinstance(league, list) or len(league) != 1 or not isinstance(league[0], dict) or league[0].get("season_end_year") != 2003:
+    if not isinstance(league, list) or len(league) != 1 or not isinstance(league[0], dict) or league[0].get("season_end_year") != src["end_year"]:
         errors.append("one 2002-03 league-average record required")
     else:
         averages = league[0].get("averages", {})
@@ -196,8 +208,9 @@ def estimates(record, mean):
     return out
 
 
-def build_ratings(data, data_hash):
-    errors = data_errors(data)
+def build_ratings(data, data_hash, season="2003-04"):
+    src = SEASON_SOURCES[season]
+    errors = data_errors(data, season)
     if errors:
         raise ValueError("\n".join(errors))
     mean, sums = baselines(data["records"])
@@ -223,8 +236,8 @@ def build_ratings(data, data_hash):
             "season_end_year": r["season_end_year"], "sample": {k:r["totals"][k] for k in ("games", "minutes")},
             "observed": observed, "estimated": estimated, "grades": grades,
         }
-    return {"schema_version": 1, "model_version": MODEL_VERSION, "as_of": CUTOFF,
-            "baseline_season": "2002-03", "source_file": str(STATS_PATH), "source_sha256": data_hash,
+    return {"schema_version": 1, "model_version": src["model"], "as_of": src["cutoff"],
+            "baseline_season": src["baseline"], "source_file": str(src["stats"]), "source_sha256": data_hash,
             "method": {"grade_scale": [20, 80], "grade_50": "median statistical estimate in the reference cohort",
                        "cohort_min_minutes": MIN_COHORT_MINUTES, "prior_minutes": PRIOR_MINUTES,
                        "prior_attempts": PRIOR_ATTEMPTS, "status": "provisional model estimates; source statistics are observations"},
@@ -292,16 +305,26 @@ class RatingIndex:
 
 def load_rating_index(game_date, season, root=ROOT):
     date.fromisoformat(game_date)
-    if season != "2003-04":
-        return None  # Never silently reuse the 2002-03 player baseline in a later season.
-    path = Path(root)/RATINGS_PATH
+    if season not in SEASON_SOURCES:
+        return None  # Never silently reuse an earlier season's player baseline.
+    src = SEASON_SOURCES[season]
+    path = Path(root)/src["ratings"]
     if not path.exists():
-        raise ValueError(f"missing statistical ratings: {RATINGS_PATH}")
+        raise ValueError(f"missing statistical ratings: {src['ratings']}")
     data = read_json(path)
-    if data["as_of"] > game_date or data["baseline_season"] != "2002-03":
+    if data["as_of"] > game_date or data["baseline_season"] != src["baseline"]:
         raise ValueError("player statistics are not available at this game date")
-    if data["model_version"] != MODEL_VERSION or data["source_sha256"] != sha256(Path(root)/STATS_PATH):
+    if data["model_version"] != src["model"] or data["source_sha256"] != sha256(Path(root)/src["stats"]):
         raise ValueError("statistical ratings are stale; rebuild from the current source")
+    if season != "2003-04":
+        # After the rookie season the 2003 draft-class estimates no longer apply; Wade's profile is his own
+        # year-end expectation (`runtime/protagonist.py`), other players follow their real careers (option C).
+        protagonist = Path(root) / PROTAGONIST_PATH.format(season=season)
+        rookies = read_json(protagonist) if protagonist.exists() else None
+        from .trajectories import load_trajectories
+        index = RatingIndex(data, rookies, load_trajectories(root, season), season)
+        index.grades = staff_defensive_grades(game_date, season, root)
+        return index
     from .prospects import (PROSPECTS_PATH, LEGACY_PROSPECTS_PATH, ROOKIE_MODEL_VERSION, ROOKIE_PATH, LEGACY_ROOKIE_PATH,
                             LEGACY_ROOKIE_MODEL_VERSION, SCOUTING_EFFECTIVE_FROM, STYLE_EFFECTIVE_FROM,
                             ARCHIVED_ROOKIE_PATH, ARCHIVED_ROOKIE_MODEL_VERSION, ARCHIVED_ROOKIE_SHA256,

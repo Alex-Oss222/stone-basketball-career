@@ -67,3 +67,41 @@ class OpeningBookTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class NextSeasonExpectationTests(unittest.TestCase):
+    def test_wade_profile_uses_only_simulated_evidence(self):
+        from runtime.protagonist import build_profile
+        profile = build_profile(ROOT, on="2004-04-28")
+        wade = profile["players"]["wadedw01"]
+        self.assertEqual(wade["season_end_year"], 2005)
+        self.assertGreater(wade["sample"]["games"], 0)
+        self.assertEqual(set(wade["estimated"]), set(__import__("runtime.player_stats", fromlist=["RATE_KEYS"]).RATE_KEYS))
+
+    def test_real_player_feedback_is_capped_and_excludes_wade(self):
+        from runtime.trajectories import feedback_errors
+        data = season_close.feedback(ROOT, on="2004-04-14")
+        self.assertEqual(feedback_errors(data), [])
+        self.assertNotIn("wadedw01", data["players"])
+        self.assertEqual((data["from_season"], data["applies_to"]), ("2003-04", "2004-05"))
+
+    def test_2004_05_rating_index_loads_after_the_cutoff_only(self):
+        from runtime.player_stats import load_rating_index
+        with self.assertRaises(ValueError):
+            load_rating_index("2004-04-01", "2004-05", ROOT)
+        self.assertIsNotNone(load_rating_index("2004-11-02", "2004-05", ROOT))
+
+
+class HistoricalWadeExcludedTests(unittest.TestCase):
+    def test_real_wade_is_never_in_season_baselines(self):
+        import json
+        for rel in ("library/2004/league/nba_2003_04_player_stats.json", "library/2004/league/nba_2004_veteran_ratings.json"):
+            data = json.loads((ROOT / rel).read_text(encoding="utf-8"))
+            ids = {r["bbr_id"] for r in data["records"]} if "records" in data else set(data["players"])
+            self.assertNotIn("wadedw01", ids, rel)
+
+    def test_wade_profile_keeps_the_player_profile_traits(self):
+        from runtime.protagonist import build_profile
+        wade = build_profile(ROOT, on="2004-04-28")["players"]["wadedw01"]
+        self.assertIn("paint_pressure", wade["scouting"]["traits"])
+        self.assertIn("spatial_weights", wade["style"])

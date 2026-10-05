@@ -79,7 +79,9 @@ class ImportTests(unittest.TestCase):
     def test_date_and_source_gates(self):
         with self.assertRaisesRegex(ValueError, "not available"):
             load_rating_index("2003-06-25", "2003-04")
-        self.assertIsNone(load_rating_index("2004-10-28", "2004-05"))
+        self.assertIsNone(load_rating_index("2005-10-28", "2005-06"))      # no baseline encoded yet
+        with self.assertRaisesRegex(ValueError, "not available"):
+            load_rating_index("2004-04-14", "2004-05")                       # 2003-04 totals known from April 15
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             (root/STATS_PATH).parent.mkdir(parents=True)
