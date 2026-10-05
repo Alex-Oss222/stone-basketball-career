@@ -1401,7 +1401,7 @@
    "home_court": "Minnesota Timberwolves",
    "wins": {
     "New Jersey Nets": 3,
-    "Minnesota Timberwolves": 1
+    "Minnesota Timberwolves": 2
    },
    "winner": null,
    "games": [
@@ -1451,7 +1451,9 @@
      "home": "New Jersey Nets",
      "away": "Minnesota Timberwolves",
      "conditional": true,
-     "event_id": "2004-06-15-minnesota-timberwolves-at-new-jersey-nets"
+     "event_id": "2004-06-15-minnesota-timberwolves-at-new-jersey-nets",
+     "result": "Minnesota Timberwolves 92, New Jersey Nets 90",
+     "winner": "Minnesota Timberwolves"
     },
     {
      "game": 6,
