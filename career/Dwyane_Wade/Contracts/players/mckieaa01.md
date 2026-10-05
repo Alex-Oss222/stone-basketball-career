@@ -2,9 +2,9 @@
 
 # Contract | Aaron McKie
 
-Known through: 2004-06-06. [Open interactive contract](mckieaa01.html#contract) · [Contract history](mckieaa01.html#contract-history)
+Known through: 2004-06-13. [Open interactive contract](mckieaa01.html#contract) · [Contract history](mckieaa01.html#contract-history)
 
-Aaron McKie: under contract. Evidence cutoff: 2004-06-06.
+Aaron McKie: under contract. Evidence cutoff: 2004-06-13.
 
 ## Current contract
 
