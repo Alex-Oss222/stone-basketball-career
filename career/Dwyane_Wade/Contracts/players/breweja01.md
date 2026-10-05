@@ -2,9 +2,9 @@
 
 # Contract | Jamison Brewer
 
-Known through: 2004-09-26. [Open interactive contract](breweja01.html#contract) · [Contract history](breweja01.html#contract-history)
+Known through: 2004-09-30. [Open interactive contract](breweja01.html#contract) · [Contract history](breweja01.html#contract-history)
 
-Jamison Brewer: under contract. Evidence cutoff: 2004-09-26.
+Jamison Brewer: under contract. Evidence cutoff: 2004-09-30.
 
 ## Current contract
 

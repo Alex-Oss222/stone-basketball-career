@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-09-26",
+  "as_of": "2004-09-30",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -304,8 +304,8 @@
       "name": "Avery Johnson",
       "team": "Golden State Warriors",
       "status": "under contract",
-      "current_contract_id": "johnsav01-existing-64a98e942712",
-      "recorded_agreements": 1,
+      "current_contract_id": "johnsav01-2004-09-30",
+      "recorded_agreements": 2,
       "href": "players/johnsav01.html#contract"
     },
     {
@@ -519,9 +519,9 @@
       "player_id": "johnsbr01",
       "name": "Britton Johnsen",
       "team": "Orlando Magic",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "johnsbr01-2004-09-29",
+      "recorded_agreements": 1,
       "href": "players/johnsbr01.html#contract"
     },
     {
@@ -2202,9 +2202,9 @@
       "player_id": "harriju01",
       "name": "Junior Harrington",
       "team": "Denver Nuggets",
-      "status": "expired or unresolved",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "harriju01-2004-09-30",
+      "recorded_agreements": 1,
       "href": "players/harriju01.html#contract"
     },
     {
@@ -2265,9 +2265,9 @@
       "player_id": "mcleoke01",
       "name": "Keith McLeod",
       "team": "Minnesota Timberwolves",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "mcleoke01-2004-09-30",
+      "recorded_agreements": 1,
       "href": "players/mcleoke01.html#contract"
     },
     {
@@ -2527,8 +2527,8 @@
       "name": "Lee Nailon",
       "team": "Atlanta Hawks",
       "status": "under contract",
-      "current_contract_id": "nailole01-2003-09-30",
-      "recorded_agreements": 2,
+      "current_contract_id": "nailole01-2004-09-30",
+      "recorded_agreements": 3,
       "href": "players/nailole01.html#contract"
     },
     {
@@ -3264,9 +3264,9 @@
       "player_id": "shirlpa01",
       "name": "Paul Shirley",
       "team": "Chicago Bulls",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "shirlpa01-2004-09-30",
+      "recorded_agreements": 1,
       "href": "players/shirlpa01.html#contract"
     },
     {
@@ -3678,9 +3678,9 @@
       "player_id": "bowenry01",
       "name": "Ryan Bowen",
       "team": "Denver Nuggets",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "bowenry01-2004-09-30",
+      "recorded_agreements": 1,
       "href": "players/bowenry01.html#contract"
     },
     {
@@ -3760,8 +3760,8 @@
       "name": "Scott Williams",
       "team": "Phoenix Suns",
       "status": "under contract",
-      "current_contract_id": null,
-      "recorded_agreements": 2,
+      "current_contract_id": "willisc01-2004-09-28",
+      "recorded_agreements": 3,
       "href": "players/willisc01.html#contract"
     },
     {
@@ -4065,9 +4065,9 @@
       "player_id": "morrite01",
       "name": "Terence Morris",
       "team": "Houston Rockets",
-      "status": "expired or unresolved",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "morrite01-2004-09-30",
+      "recorded_agreements": 1,
       "href": "players/morrite01.html#contract"
     },
     {
@@ -4263,9 +4263,9 @@
       "player_id": "fowlktr01",
       "name": "Tremaine Fowlkes",
       "team": "Los Angeles Clippers",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "fowlktr01-2004-09-29",
+      "recorded_agreements": 1,
       "href": "players/fowlktr01.html#contract"
     },
     {

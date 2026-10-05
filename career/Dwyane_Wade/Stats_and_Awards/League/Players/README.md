@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-09-26**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-09-30**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -97,7 +97,7 @@ Card date: **2004-09-26**. 504 registry players, one Markdown card and one inter
 | [Stephon Marbury](marbust01.md) | Phoenix Suns | 27 | sourced | [open](marbust01.html) |
 | [Steve Blake](blakest01.md) | Washington Wizards | 24 | sourced | [open](blakest01.html) |
 | [Steve Francis](francst01.md) | Houston Rockets | 27 | sourced | [open](francst01.html) |
-| [Steve Kerr](kerrst01.md) | San Antonio Spurs | 38 | sourced | [open](kerrst01.html) |
+| [Steve Kerr](kerrst01.md) | San Antonio Spurs | 39 | sourced | [open](kerrst01.html) |
 | [Steve Nash](nashst01.md) | Dallas Mavericks | 30 | sourced | [open](nashst01.html) |
 | [T.J. Ford](fordtj01.md) | Milwaukee Bucks | 21 | sourced | [open](fordtj01.html) |
 | [Tierre Brown](brownti01.md) | New Orleans Hornets | 25 | silhouette | [open](brownti01.html) |
@@ -126,7 +126,7 @@ Card date: **2004-09-26**. 504 registry players, one Markdown card and one inter
 | [Antonio Daniels](daniean01.md) | Seattle SuperSonics | 29 | sourced | [open](daniean01.html) |
 | [Bob Sura](surabo01.md) | Detroit Pistons | 31 | silhouette | [open](surabo01.html) |
 | [Bobby Simmons](simmobo01.md) | Los Angeles Clippers | 24 | sourced | [open](simmobo01.html) |
-| [Bonzi Wells](wellsbo01.md) | Portland Trail Blazers | 27 | sourced | [open](wellsbo01.html) |
+| [Bonzi Wells](wellsbo01.md) | Portland Trail Blazers | 28 | sourced | [open](wellsbo01.html) |
 | [Brandon Armstrong](armstbr01.md) | New Jersey Nets | None | silhouette | [open](armstbr01.html) |
 | [Brent Barry](barrybr01.md) | Seattle SuperSonics | 32 | sourced | [open](barrybr01.html) |
 | [Calbert Cheaney](cheanca01.md) | Golden State Warriors | 33 | sourced | [open](cheanca01.html) |
@@ -146,7 +146,7 @@ Card date: **2004-09-26**. 504 registry players, one Markdown card and one inter
 | [Dwyane Wade](wadedw01.md) | Miami Heat | 20 | sourced | [open](wadedw01.html) |
 | [Eddie House](houseed01.md) | Los Angeles Clippers | 26 | sourced | [open](houseed01.html) |
 | [Eddie Jones](jonesed02.md) | Miami Heat | 32 | silhouette | [open](jonesed02.html) |
-| [Eric Piatkowski](piatker01.md) | Houston Rockets | 33 | sourced | [open](piatker01.html) |
+| [Eric Piatkowski](piatker01.md) | Houston Rockets | 34 | sourced | [open](piatker01.html) |
 | [Erick Strickland](stricer01.md) | Milwaukee Bucks | 30 | silhouette | [open](stricer01.html) |
 | [Fred Hoiberg](hoibefr01.md) | Minnesota Timberwolves | 31 | sourced | [open](hoibefr01.html) |
 | [Fred Jones](jonesfr01.md) | Indiana Pacers | None | silhouette | [open](jonesfr01.html) |
