@@ -1,6 +1,6 @@
 # 2003-04 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2004-04-14 (`runtime/season_awards.py`); no real 2004 vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2004-04-25.
+Decided on each award's real announcement date from closed simulated results through 2004-04-14 (`runtime/season_awards.py`); no real 2004 vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2004-04-26.
 
 ## Calendar
 
@@ -12,7 +12,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2004-04-22 | Most Improved Player | 121 media | 5-3-1 | decided |
 | 2004-04-23 | Sixth Man of the Year | 120 media | 5-3-1 | decided |
 | 2004-04-25 | All-NBA Teams | 123 media | 5-3-1 | decided |
-| 2004-04-26 | All-Defensive Teams | 29 head coaches, not for their own players | 2-1 | pending |
+| 2004-04-26 | All-Defensive Teams | 29 head coaches, not for their own players | 2-1 | decided |
 | 2004-04-27 | All-Rookie Teams | 29 head coaches, not for their own players | 2-1 | pending |
 | 2004-05-03 | Most Valuable Player | 123 media | 10-7-5-3-1 | pending |
 
@@ -111,3 +111,29 @@ Announced 2004-04-25; 123 media, ballot 5-3-1.
 | Richard Jefferson | F | New Jersey Nets | 82 | 37.3 | 18.5 | 5.6 | 4.0 | 1.1 | 0.3 | 14.26 | 63 | 0 |
 
 Also receiving votes: Chauncey Billups (Detroit Pistons) 65, Latrell Sprewell (Minnesota Timberwolves) 60, Erick Dampier (Detroit Pistons) 48, Paul Pierce (Boston Celtics) 44, Michael Redd (Milwaukee Bucks) 13, Steve Nash (Dallas Mavericks) 5.
+
+## All-Defensive Teams
+
+Announced 2004-04-26; 29 head coaches, not for their own players, ballot 2-1.
+
+### First Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Ben Wallace | C | Detroit Pistons | 81 | 38.7 | 10.2 | 11.7 | 2.1 | 1.8 | 3.3 | 11.7 | 56 | 28 |
+| Manu Ginobili | G | San Antonio Spurs | 77 | 31.4 | 14.3 | 5.2 | 3.7 | 2.3 | 0.4 | 11.87 | 56 | 28 |
+| Tim Duncan | F | San Antonio Spurs | 76 | 37.5 | 21.9 | 11.5 | 2.9 | 1.2 | 2.8 | 18.2 | 56 | 28 |
+| Vince Carter | G | Toronto Raptors | 71 | 38.8 | 22.8 | 5.6 | 5.6 | 1.7 | 1.1 | 15.84 | 51 | 23 |
+| Kevin Garnett | F | Minnesota Timberwolves | 82 | 38.2 | 23.2 | 12.6 | 5.2 | 1.8 | 1.6 | 21.4 | 44 | 16 |
+
+### Second Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Jermaine O'Neal | F | Indiana Pacers | 78 | 35.3 | 19.6 | 9.8 | 1.6 | 1.1 | 2.3 | 14.24 | 42 | 14 |
+| Marcus Camby | C | Minnesota Timberwolves | 76 | 30.5 | 8.5 | 9.8 | 2.4 | 1.1 | 2.5 | 10.34 | 29 | 1 |
+| Richard Hamilton | G | Detroit Pistons | 78 | 35.3 | 15.8 | 3.9 | 4.2 | 1.6 | 0.4 | 11.02 | 25 | 7 |
+| Kerry Kittles | G | New Jersey Nets | 82 | 37.2 | 15.5 | 4.3 | 2.6 | 1.9 | 0.7 | 12.23 | 22 | 0 |
+| Andrei Kirilenko | F | Utah Jazz | 77 | 38.9 | 18.9 | 8.7 | 3.4 | 2.2 | 3.1 | 17.93 | 16 | 0 |
+
+Also receiving votes: Kenyon Martin (New Jersey Nets) 11, Jason Kidd (New Jersey Nets) 7, Tony Parker (San Antonio Spurs) 7, Paul Pierce (Boston Celtics) 5, Ron Artest (Indiana Pacers) 5, Theo Ratliff (Atlanta Hawks) 2, Chauncey Billups (Detroit Pistons) 1.

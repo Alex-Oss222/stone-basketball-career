@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `collini01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-04-25 · **Club on this date:** Seattle SuperSonics (draft rights) · **Basis:** 2003 draft rights · **League:** NBA  
+**Card date:** 2004-04-26 · **Club on this date:** Seattle SuperSonics (draft rights) · **Basis:** 2003 draft rights · **League:** NBA  
 **Position:** PF (Power forward) · **Jersey:** Unassigned · **Born:** 1980-10-26 · **Age on card date:** 23  
 **Registry ID:** `collini01` · [Basketball-Reference page](https://www.basketball-reference.com/players/c/collini01.html) · ESPN ID 1978
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `collin
 
 ## Simulated statistics
 
-As of **2004-04-25**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-04-26**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -118,4 +118,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2004-04-25. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2004-04-26. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

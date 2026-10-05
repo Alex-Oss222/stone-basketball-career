@@ -161,7 +161,7 @@
   {
    "player": "Dwyane Wade",
    "placed": "2004-04-12",
-   "activated": null,
+   "activated": "2004-04-26",
    "first_game_missed": "2004-04-12-miami-heat-at-boston-celtics",
    "reason": "injury: 2 more game(s) out on the engine's draw",
    "minimum_games": 5
@@ -173,7 +173,15 @@
    "first_game_missed": "2004-04-14-new-jersey-nets-at-miami-heat",
    "reason": "reserve: not among the twelve the staff dresses (2003-04 clubs listed healthy reserves on the injured list)",
    "minimum_games": 5
+  },
+  {
+   "player": "Sean Lampley",
+   "placed": "2004-04-26",
+   "activated": null,
+   "first_game_missed": "2004-04-26-miami-heat-at-milwaukee-bucks",
+   "reason": "reserve: not among the twelve the staff dresses (2003-04 clubs listed healthy reserves on the injured list)",
+   "minimum_games": 5
   }
  ],
- "as_of": "2004-04-24"
+ "as_of": "2004-04-26"
 }

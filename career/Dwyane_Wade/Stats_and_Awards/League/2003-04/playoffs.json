@@ -223,7 +223,7 @@
    "home_court": "Miami Heat",
    "wins": {
     "Miami Heat": 1,
-    "Milwaukee Bucks": 2
+    "Milwaukee Bucks": 3
    },
    "winner": null,
    "games": [
@@ -263,7 +263,9 @@
      "home": "Milwaukee Bucks",
      "away": "Miami Heat",
      "conditional": false,
-     "event_id": "2004-04-26-miami-heat-at-milwaukee-bucks"
+     "event_id": "2004-04-26-miami-heat-at-milwaukee-bucks",
+     "result": "Miami Heat 81, Milwaukee Bucks 95",
+     "winner": "Milwaukee Bucks"
     },
     {
      "game": 5,
@@ -306,7 +308,7 @@
    "home_court": "Detroit Pistons",
    "wins": {
     "Detroit Pistons": 1,
-    "Toronto Raptors": 2
+    "Toronto Raptors": 3
    },
    "winner": null,
    "games": [
@@ -346,7 +348,9 @@
      "home": "Toronto Raptors",
      "away": "Detroit Pistons",
      "conditional": false,
-     "event_id": "2004-04-26-detroit-pistons-at-toronto-raptors"
+     "event_id": "2004-04-26-detroit-pistons-at-toronto-raptors",
+     "result": "Detroit Pistons 72, Toronto Raptors 86",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 5,
@@ -473,10 +477,10 @@
    ],
    "home_court": "Minnesota Timberwolves",
    "wins": {
-    "Minnesota Timberwolves": 3,
+    "Minnesota Timberwolves": 4,
     "Memphis Grizzlies": 0
    },
-   "winner": null,
+   "winner": "Minnesota Timberwolves",
    "games": [
     {
      "game": 1,
@@ -514,7 +518,9 @@
      "home": "Memphis Grizzlies",
      "away": "Minnesota Timberwolves",
      "conditional": false,
-     "event_id": "2004-04-26-minnesota-timberwolves-at-memphis-grizzlies"
+     "event_id": "2004-04-26-minnesota-timberwolves-at-memphis-grizzlies",
+     "result": "Minnesota Timberwolves 95, Memphis Grizzlies 82",
+     "winner": "Minnesota Timberwolves"
     },
     {
      "game": 5,
@@ -522,7 +528,8 @@
      "home": "Minnesota Timberwolves",
      "away": "Memphis Grizzlies",
      "conditional": true,
-     "event_id": "2004-04-28-memphis-grizzlies-at-minnesota-timberwolves"
+     "event_id": "2004-04-28-memphis-grizzlies-at-minnesota-timberwolves",
+     "not_needed": true
     },
     {
      "game": 6,
@@ -530,7 +537,8 @@
      "home": "Memphis Grizzlies",
      "away": "Minnesota Timberwolves",
      "conditional": true,
-     "event_id": "2004-04-30-minnesota-timberwolves-at-memphis-grizzlies"
+     "event_id": "2004-04-30-minnesota-timberwolves-at-memphis-grizzlies",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -538,9 +546,11 @@
      "home": "Minnesota Timberwolves",
      "away": "Memphis Grizzlies",
      "conditional": true,
-     "event_id": "2004-05-02-memphis-grizzlies-at-minnesota-timberwolves"
+     "event_id": "2004-05-02-memphis-grizzlies-at-minnesota-timberwolves",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2004-04-26"
   },
   {
    "id": "west-4-5",
@@ -727,7 +737,7 @@
    "home_court": "Sacramento Kings",
    "wins": {
     "Sacramento Kings": 2,
-    "Los Angeles Lakers": 1
+    "Los Angeles Lakers": 2
    },
    "winner": null,
    "games": [
@@ -767,7 +777,9 @@
      "home": "Los Angeles Lakers",
      "away": "Sacramento Kings",
      "conditional": false,
-     "event_id": "2004-04-26-sacramento-kings-at-los-angeles-lakers"
+     "event_id": "2004-04-26-sacramento-kings-at-los-angeles-lakers",
+     "result": "Sacramento Kings 100, Los Angeles Lakers 103",
+     "winner": "Los Angeles Lakers"
     },
     {
      "game": 5,

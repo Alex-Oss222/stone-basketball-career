@@ -2,9 +2,9 @@
 
 # Contract | Mark Bryant
 
-Known through: 2004-04-25. [Open interactive contract](bryanma01.html#contract) · [Contract history](bryanma01.html#contract-history)
+Known through: 2004-04-26. [Open interactive contract](bryanma01.html#contract) · [Contract history](bryanma01.html#contract-history)
 
-Mark Bryant: not with an NBA club (status not established) (researched, date not recorded). Evidence cutoff: 2004-04-25.
+Mark Bryant: not with an NBA club (status not established) (researched, date not recorded). Evidence cutoff: 2004-04-26.
 
 ## Current contract
 

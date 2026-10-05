@@ -739,6 +739,222 @@
      "points": 5
     }
    ]
+  },
+  {
+   "id": "2003-04-all_defensive",
+   "award": "all_defensive",
+   "name": "All-Defensive Teams",
+   "announced_on": "2004-04-26",
+   "electorate": 29,
+   "voters": "head coaches, not for their own players",
+   "ballot": [
+    2,
+    1
+   ],
+   "lens": [
+    0.3,
+    0.6
+   ],
+   "evidence_through": "2004-04-14",
+   "teams": [
+    {
+     "team": "First Team",
+     "players": [
+      {
+       "player": "Ben Wallace",
+       "team": "Detroit Pistons",
+       "games": 81,
+       "mpg": 38.7,
+       "pts": 10.2,
+       "reb": 11.7,
+       "ast": 2.1,
+       "stl": 1.8,
+       "blk": 3.3,
+       "game_score": 11.7,
+       "position": "C",
+       "points": 56,
+       "first_team_votes": 28
+      },
+      {
+       "player": "Manu Ginobili",
+       "team": "San Antonio Spurs",
+       "games": 77,
+       "mpg": 31.4,
+       "pts": 14.3,
+       "reb": 5.2,
+       "ast": 3.7,
+       "stl": 2.3,
+       "blk": 0.4,
+       "game_score": 11.87,
+       "position": "G",
+       "points": 56,
+       "first_team_votes": 28
+      },
+      {
+       "player": "Tim Duncan",
+       "team": "San Antonio Spurs",
+       "games": 76,
+       "mpg": 37.5,
+       "pts": 21.9,
+       "reb": 11.5,
+       "ast": 2.9,
+       "stl": 1.2,
+       "blk": 2.8,
+       "game_score": 18.2,
+       "position": "F",
+       "points": 56,
+       "first_team_votes": 28
+      },
+      {
+       "player": "Vince Carter",
+       "team": "Toronto Raptors",
+       "games": 71,
+       "mpg": 38.8,
+       "pts": 22.8,
+       "reb": 5.6,
+       "ast": 5.6,
+       "stl": 1.7,
+       "blk": 1.1,
+       "game_score": 15.84,
+       "position": "G",
+       "points": 51,
+       "first_team_votes": 23
+      },
+      {
+       "player": "Kevin Garnett",
+       "team": "Minnesota Timberwolves",
+       "games": 82,
+       "mpg": 38.2,
+       "pts": 23.2,
+       "reb": 12.6,
+       "ast": 5.2,
+       "stl": 1.8,
+       "blk": 1.6,
+       "game_score": 21.4,
+       "position": "F",
+       "points": 44,
+       "first_team_votes": 16
+      }
+     ]
+    },
+    {
+     "team": "Second Team",
+     "players": [
+      {
+       "player": "Jermaine O'Neal",
+       "team": "Indiana Pacers",
+       "games": 78,
+       "mpg": 35.3,
+       "pts": 19.6,
+       "reb": 9.8,
+       "ast": 1.6,
+       "stl": 1.1,
+       "blk": 2.3,
+       "game_score": 14.24,
+       "position": "F",
+       "points": 42,
+       "first_team_votes": 14
+      },
+      {
+       "player": "Marcus Camby",
+       "team": "Minnesota Timberwolves",
+       "games": 76,
+       "mpg": 30.5,
+       "pts": 8.5,
+       "reb": 9.8,
+       "ast": 2.4,
+       "stl": 1.1,
+       "blk": 2.5,
+       "game_score": 10.34,
+       "position": "C",
+       "points": 29,
+       "first_team_votes": 1
+      },
+      {
+       "player": "Richard Hamilton",
+       "team": "Detroit Pistons",
+       "games": 78,
+       "mpg": 35.3,
+       "pts": 15.8,
+       "reb": 3.9,
+       "ast": 4.2,
+       "stl": 1.6,
+       "blk": 0.4,
+       "game_score": 11.02,
+       "position": "G",
+       "points": 25,
+       "first_team_votes": 7
+      },
+      {
+       "player": "Kerry Kittles",
+       "team": "New Jersey Nets",
+       "games": 82,
+       "mpg": 37.2,
+       "pts": 15.5,
+       "reb": 4.3,
+       "ast": 2.6,
+       "stl": 1.9,
+       "blk": 0.7,
+       "game_score": 12.23,
+       "position": "G",
+       "points": 22,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Andrei Kirilenko",
+       "team": "Utah Jazz",
+       "games": 77,
+       "mpg": 38.9,
+       "pts": 18.9,
+       "reb": 8.7,
+       "ast": 3.4,
+       "stl": 2.2,
+       "blk": 3.1,
+       "game_score": 17.93,
+       "position": "F",
+       "points": 16,
+       "first_team_votes": 0
+      }
+     ]
+    }
+   ],
+   "others": [
+    {
+     "player": "Kenyon Martin",
+     "team": "New Jersey Nets",
+     "points": 11
+    },
+    {
+     "player": "Jason Kidd",
+     "team": "New Jersey Nets",
+     "points": 7
+    },
+    {
+     "player": "Tony Parker",
+     "team": "San Antonio Spurs",
+     "points": 7
+    },
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "points": 5
+    },
+    {
+     "player": "Ron Artest",
+     "team": "Indiana Pacers",
+     "points": 5
+    },
+    {
+     "player": "Theo Ratliff",
+     "team": "Atlanta Hawks",
+     "points": 2
+    },
+    {
+     "player": "Chauncey Billups",
+     "team": "Detroit Pistons",
+     "points": 1
+    }
+   ]
   }
  ]
 }

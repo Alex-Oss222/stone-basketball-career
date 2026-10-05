@@ -2,7 +2,7 @@
  "schema_version": 1,
  "initialized": true,
  "season": "2003-04",
- "current_date": "2004-04-25",
+ "current_date": "2004-04-26",
  "current_area": "08_Playoffs",
  "current_note": "06_Regular_Season/04_April/Week_2/note.md",
  "team": "Miami Heat",
@@ -15,6 +15,6 @@
  },
  "contract_status": "rookie_scale_contract",
  "roster_status": "under_contract",
- "last_closed_event": "2004-04-24-miami-heat-at-milwaukee-bucks",
+ "last_closed_event": "2004-04-26-miami-heat-at-milwaukee-bucks",
  "pending_player_decisions": []
 }
