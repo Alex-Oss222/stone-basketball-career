@@ -2723,6 +2723,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.74 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-03-17-ten_day-penigde01",
+   "date": "2004-03-17",
+   "kind": "ten_day",
+   "player": "Desmond Penigar",
+   "bbr_id": "penigde01",
+   "from": null,
+   "to": "Milwaukee Bucks",
+   "role": {
+    "player_id": "Desmond Penigar",
+    "bbr_id": "penigde01",
+    "position": "PF",
+    "games": 10,
+    "minutes": 89
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-03-27",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.65 x fit"
   }
  ],
  "market_days": [
@@ -2777,6 +2799,7 @@
   "2004-03-13",
   "2004-03-14",
   "2004-03-15",
-  "2004-03-16"
+  "2004-03-16",
+  "2004-03-17"
  ]
 }
