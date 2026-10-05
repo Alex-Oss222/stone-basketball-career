@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-02-29",
+  "as_of": "2004-03-01",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -3219,7 +3219,7 @@
       "player_id": "burkepa01",
       "name": "Pat Burke",
       "team": "Abroad",
-      "status": "playing outside the NBA (researched, 2003-04)",
+      "status": "playing outside the NBA (researched, 2004-02)",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/burkepa01.html#contract"

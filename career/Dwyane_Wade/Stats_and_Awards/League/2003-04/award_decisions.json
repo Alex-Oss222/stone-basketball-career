@@ -2396,6 +2396,110 @@
     }
    ],
    "winner": "Sam Cassell"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-02-23-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-02-23",
+   "period_end": "2004-02-29",
+   "announced_on": "2004-03-01",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/02_February/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Baron Davis",
+     "team": "New Orleans Hornets",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 24.2,
+     "reb": 4.8,
+     "ast": 6.8,
+     "game_score": 20.48,
+     "score": 87.9,
+     "rank": 1
+    },
+    {
+     "player": "Richard Jefferson",
+     "team": "New Jersey Nets",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 23.8,
+     "reb": 6.0,
+     "ast": 3.2,
+     "game_score": 18.22,
+     "score": 81.9,
+     "rank": 2
+    },
+    {
+     "player": "Chauncey Billups",
+     "team": "Detroit Pistons",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 23.8,
+     "reb": 2.8,
+     "ast": 3.5,
+     "game_score": 14.95,
+     "score": 65.8,
+     "rank": 3
+    }
+   ],
+   "winner": "Baron Davis"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-02-23-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-02-23",
+   "period_end": "2004-02-29",
+   "announced_on": "2004-03-01",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/02_February/Week_4/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Sam Cassell",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 24.2,
+     "reb": 3.5,
+     "ast": 9.5,
+     "game_score": 20.45,
+     "score": 90.8,
+     "rank": 1
+    },
+    {
+     "player": "Peja Stojakovic",
+     "team": "Sacramento Kings",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 26.5,
+     "reb": 8.2,
+     "ast": 1.8,
+     "game_score": 21.15,
+     "score": 90.6,
+     "rank": 2
+    },
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 22.2,
+     "reb": 15.8,
+     "ast": 4.5,
+     "game_score": 18.55,
+     "score": 83.2,
+     "rank": 3
+    }
+   ],
+   "winner": "Sam Cassell"
   }
  ]
 }

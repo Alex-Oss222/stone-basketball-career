@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-02-29. [Search the contract directory](index.html)
+Known through 2004-03-01. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -365,7 +365,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Othella Harrington](players/harriot01.md) | New York Knicks | under contract | Othella Harrington · existing contract; signing date not recorded | 1 |
 | [P.J. Brown](players/brownpj01.md) | New Orleans Hornets | under contract | P.J. Brown · 2003-07-16 | 2 |
 | [Paccelis Morlende](players/morlepa01.md) | Seattle SuperSonics | No verified contract record | No verified current agreement | 0 |
-| [Pat Burke](players/burkepa01.md) | Abroad | playing outside the NBA (researched, 2003-04) | No verified current agreement | 1 |
+| [Pat Burke](players/burkepa01.md) | Abroad | playing outside the NBA (researched, 2004-02) | No verified current agreement | 1 |
 | [Pat Garrity](players/garripa01.md) | Orlando Magic | under contract | Pat Garrity · existing contract; signing date not recorded | 1 |
 | [Pau Gasol](players/gasolpa01.md) | Memphis Grizzlies | under rookie contract | Pau Gasol · 2001-09-06 | 1 |
 | [Paul Grant](players/grantpa01.md) | Utah Jazz | No verified contract record | No verified current agreement | 0 |

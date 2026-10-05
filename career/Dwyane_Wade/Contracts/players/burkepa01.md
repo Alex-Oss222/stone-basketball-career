@@ -2,9 +2,9 @@
 
 # Contract | Pat Burke
 
-Known through: 2004-02-29. [Open interactive contract](burkepa01.html#contract) · [Contract history](burkepa01.html#contract-history)
+Known through: 2004-03-01. [Open interactive contract](burkepa01.html#contract) · [Contract history](burkepa01.html#contract-history)
 
-Pat Burke: playing outside the NBA (researched, 2003-04). Evidence cutoff: 2004-02-29.
+Pat Burke: playing outside the NBA (researched, 2004-02). Evidence cutoff: 2004-03-01.
 
 ## Current contract
 
@@ -18,7 +18,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Pat Burke |
 | Club / rights baseline | Abroad |
-| Control status | playing outside the NBA (researched, 2003-04) |
+| Control status | playing outside the NBA (researched, 2004-02) |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | playing outside the NBA (researched, 2003-04) |
+| Status | playing outside the NBA (researched, 2004-02) |
 | Contract wording | Not recorded |
 
 ### Salary by season

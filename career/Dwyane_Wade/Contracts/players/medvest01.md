@@ -2,9 +2,9 @@
 
 # Contract | Slava Medvedenko
 
-Known through: 2004-02-29. [Open interactive contract](medvest01.html#contract) · [Contract history](medvest01.html#contract-history)
+Known through: 2004-03-01. [Open interactive contract](medvest01.html#contract) · [Contract history](medvest01.html#contract-history)
 
-Slava Medvedenko: under contract. Evidence cutoff: 2004-02-29.
+Slava Medvedenko: under contract. Evidence cutoff: 2004-03-01.
 
 ## Current contract
 
