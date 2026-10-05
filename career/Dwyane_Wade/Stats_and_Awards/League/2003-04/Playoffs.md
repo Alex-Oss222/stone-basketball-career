@@ -253,7 +253,7 @@ Home court: Minnesota Timberwolves. Minnesota Timberwolves wins 4-2.
 
 ### East: (1) Indiana Pacers vs (2) New Jersey Nets
 
-Home court: Indiana Pacers. Series Indiana Pacers 3, New Jersey Nets 2.
+Home court: Indiana Pacers. Series Indiana Pacers 3, New Jersey Nets 3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -262,5 +262,5 @@ Home court: Indiana Pacers. Series Indiana Pacers 3, New Jersey Nets 2.
 | 3 | Wed May 26 | New Jersey Nets | Indiana Pacers | Indiana Pacers 105, New Jersey Nets 104 |
 | 4 | Fri May 28 | New Jersey Nets | Indiana Pacers | Indiana Pacers 87, New Jersey Nets 92 |
 | 5 | Sun May 30 | Indiana Pacers | New Jersey Nets | New Jersey Nets 85, Indiana Pacers 88 |
-| 6 | Tue Jun 1 | New Jersey Nets | Indiana Pacers | if needed |
+| 6 | Tue Jun 1 | New Jersey Nets | Indiana Pacers | Indiana Pacers 113, New Jersey Nets 122 |
 | 7 | Thu Jun 3 | Indiana Pacers | New Jersey Nets | if needed |
