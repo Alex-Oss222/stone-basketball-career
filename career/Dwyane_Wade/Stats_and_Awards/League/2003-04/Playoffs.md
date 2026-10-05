@@ -195,12 +195,12 @@ Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 2, Dallas Mave
 
 ### East: (6) Toronto Raptors vs (2) New Jersey Nets
 
-Home court: New Jersey Nets. Series Toronto Raptors 0, New Jersey Nets 1.
+Home court: New Jersey Nets. Series Toronto Raptors 0, New Jersey Nets 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Mon May 3 | New Jersey Nets | Toronto Raptors | Toronto Raptors 87, New Jersey Nets 98 |
-| 2 | Wed May 5 | New Jersey Nets | Toronto Raptors |  |
+| 2 | Wed May 5 | New Jersey Nets | Toronto Raptors | Toronto Raptors 78, New Jersey Nets 99 |
 | 3 | Sat May 8 | Toronto Raptors | New Jersey Nets |  |
 | 4 | Mon May 10 | Toronto Raptors | New Jersey Nets |  |
 | 5 | Wed May 12 | New Jersey Nets | Toronto Raptors | if needed |
@@ -223,12 +223,12 @@ Home court: San Antonio Spurs. Series San Antonio Spurs 0, Los Angeles Lakers 2.
 
 ### East: (1) Indiana Pacers vs (5) Milwaukee Bucks
 
-Home court: Indiana Pacers. Series Indiana Pacers 1, Milwaukee Bucks 0.
+Home court: Indiana Pacers. Series Indiana Pacers 1, Milwaukee Bucks 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Mon May 3 | Indiana Pacers | Milwaukee Bucks | Milwaukee Bucks 87, Indiana Pacers 103 |
-| 2 | Wed May 5 | Indiana Pacers | Milwaukee Bucks |  |
+| 2 | Wed May 5 | Indiana Pacers | Milwaukee Bucks | Milwaukee Bucks 92, Indiana Pacers 88 |
 | 3 | Sat May 8 | Milwaukee Bucks | Indiana Pacers |  |
 | 4 | Mon May 10 | Milwaukee Bucks | Indiana Pacers |  |
 | 5 | Wed May 12 | Indiana Pacers | Milwaukee Bucks | if needed |

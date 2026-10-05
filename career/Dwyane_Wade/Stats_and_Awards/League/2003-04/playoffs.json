@@ -941,7 +941,7 @@
    "home_court": "New Jersey Nets",
    "wins": {
     "Toronto Raptors": 0,
-    "New Jersey Nets": 1
+    "New Jersey Nets": 2
    },
    "winner": null,
    "games": [
@@ -961,7 +961,9 @@
      "home": "New Jersey Nets",
      "away": "Toronto Raptors",
      "conditional": false,
-     "event_id": "2004-05-05-toronto-raptors-at-new-jersey-nets"
+     "event_id": "2004-05-05-toronto-raptors-at-new-jersey-nets",
+     "result": "Toronto Raptors 78, New Jersey Nets 99",
+     "winner": "New Jersey Nets"
     },
     {
      "game": 3,
@@ -1101,7 +1103,7 @@
    "home_court": "Indiana Pacers",
    "wins": {
     "Indiana Pacers": 1,
-    "Milwaukee Bucks": 0
+    "Milwaukee Bucks": 1
    },
    "winner": null,
    "games": [
@@ -1121,7 +1123,9 @@
      "home": "Indiana Pacers",
      "away": "Milwaukee Bucks",
      "conditional": false,
-     "event_id": "2004-05-05-milwaukee-bucks-at-indiana-pacers"
+     "event_id": "2004-05-05-milwaukee-bucks-at-indiana-pacers",
+     "result": "Milwaukee Bucks 92, Indiana Pacers 88",
+     "winner": "Milwaukee Bucks"
     },
     {
      "game": 3,
