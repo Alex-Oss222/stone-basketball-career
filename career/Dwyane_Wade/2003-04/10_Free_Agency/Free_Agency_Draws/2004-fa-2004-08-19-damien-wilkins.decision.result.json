@@ -1,0 +1,17 @@
+{
+ "date": "2004-08-19",
+ "decider": "Damien Wilkins (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-19-damien-wilkins",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.026193,
+  "New Jersey Nets": 0.026193,
+  "New York Knicks": 0.367962,
+  "Sacramento Kings": 0.131365,
+  "San Antonio Spurs": 0.192094,
+  "Washington Wizards": 0.026193,
+  "wait": 0.23
+ },
+ "outcome": "New York Knicks",
+ "question": "2004 free agency, 2004-08-19: which offer does Damien Wilkins accept (Denver Nuggets $385,277 x 1, New Jersey Nets $385,277 x 1, New York Knicks $385,277 x 1, Sacramento Kings $385,277 x 1, San Antonio Spurs $385,277 x 1, Washington Wizards $385,277 x 1), or does he wait?"
+}

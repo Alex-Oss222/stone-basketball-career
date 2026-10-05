@@ -1,0 +1,20 @@
+{
+ "date": "2004-08-19",
+ "decider": "Carlos Arroyo (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-19-carlos-arroyo",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.07486,
+  "Denver Nuggets": 0.07486,
+  "Golden State Warriors": 0.052359,
+  "Los Angeles Clippers": 0.156119,
+  "Memphis Grizzlies": 0.060984,
+  "Miami Heat": 0.120677,
+  "Milwaukee Bucks": 0.037925,
+  "Toronto Raptors": 0.052359,
+  "Utah Jazz": 0.139857,
+  "wait": 0.23
+ },
+ "outcome": "Los Angeles Clippers",
+ "question": "2004 free agency, 2004-08-19: which offer does Carlos Arroyo accept (Cleveland Cavaliers $4,774,224 x 5, Denver Nuggets $4,774,224 x 5, Golden State Warriors $4,774,224 x 5, Los Angeles Clippers $4,774,224 x 5, Memphis Grizzlies $4,774,224 x 5, Miami Heat $4,774,224 x 5, Milwaukee Bucks $4,774,224 x 5, Toronto Raptors $4,774,224 x 5, Utah Jazz $4,774,224 x 5), or does he wait?"
+}

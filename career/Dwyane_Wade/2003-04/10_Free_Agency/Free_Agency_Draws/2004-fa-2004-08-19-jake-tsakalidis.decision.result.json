@@ -1,0 +1,14 @@
+{
+ "date": "2004-08-19",
+ "decider": "Jake Tsakalidis (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-19-jake-tsakalidis",
+ "kind": "decision",
+ "options": {
+  "Memphis Grizzlies": 0.717917,
+  "Milwaukee Bucks": 0.001991,
+  "Portland Trail Blazers": 0.050092,
+  "wait": 0.23
+ },
+ "outcome": "Memphis Grizzlies",
+ "question": "2004 free agency, 2004-08-19: which offer does Jake Tsakalidis accept (Memphis Grizzlies $745,046 x 1, Milwaukee Bucks $745,046 x 1, Portland Trail Blazers $745,046 x 1), or does he wait?"
+}

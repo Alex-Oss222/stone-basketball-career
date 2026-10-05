@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-fa-2004-08-19-jermaine-jackson",
+ "date": "2004-08-19",
+ "question": "2004 free agency, 2004-08-19: which offer does Jermaine Jackson accept (Minnesota Timberwolves $745,046 x 1, Utah Jazz $745,046 x 1), or does he wait?",
+ "decider": "Jermaine Jackson (simulated player, engine draw)",
+ "options": {
+  "Minnesota Timberwolves": 0.133984,
+  "Utah Jazz": 0.636016,
+  "wait": 0.23
+ },
+ "basis": "Ask $745,046; best offer 1.00 of the ask in total; accept chance 0.770; priority winning; utility Minnesota Timberwolves 43.5, Utah Jazz 49.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

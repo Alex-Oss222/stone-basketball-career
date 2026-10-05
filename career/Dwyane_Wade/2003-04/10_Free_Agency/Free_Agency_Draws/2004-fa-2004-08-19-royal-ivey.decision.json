@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-fa-2004-08-19-royal-ivey",
+ "date": "2004-08-19",
+ "question": "2004 free agency, 2004-08-19: which offer does Royal Ivey accept (Minnesota Timberwolves $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?",
+ "decider": "Royal Ivey (simulated player, engine draw)",
+ "options": {
+  "Minnesota Timberwolves": 0.138753,
+  "Utah Jazz": 0.631247,
+  "wait": 0.23
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.770; priority money; utility Minnesota Timberwolves 37.6, Utah Jazz 43.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

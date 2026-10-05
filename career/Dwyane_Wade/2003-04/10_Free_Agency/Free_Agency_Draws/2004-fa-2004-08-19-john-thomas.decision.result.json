@@ -1,0 +1,22 @@
+{
+ "date": "2004-08-19",
+ "decider": "John Thomas (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-19-john-thomas",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.085586,
+  "Indiana Pacers": 0.012897,
+  "Los Angeles Clippers": 0.10853,
+  "Memphis Grizzlies": 0.091563,
+  "Miami Heat": 0.128963,
+  "Milwaukee Bucks": 0.060918,
+  "New Orleans Hornets": 0.060918,
+  "Portland Trail Blazers": 0.085586,
+  "Sacramento Kings": 0.06293,
+  "Toronto Raptors": 0.06293,
+  "Utah Jazz": 0.00918,
+  "wait": 0.229999
+ },
+ "outcome": "Miami Heat",
+ "question": "2004 free agency, 2004-08-19: which offer does John Thomas accept (Cleveland Cavaliers $932,546 x 1, Indiana Pacers $932,546 x 1, Los Angeles Clippers $932,546 x 1, Memphis Grizzlies $932,546 x 1, Miami Heat $932,546 x 1, Milwaukee Bucks $932,546 x 1, New Orleans Hornets $932,546 x 1, Portland Trail Blazers $932,546 x 1, Sacramento Kings $932,546 x 1, Toronto Raptors $932,546 x 1, Utah Jazz $932,546 x 1), or does he wait?"
+}

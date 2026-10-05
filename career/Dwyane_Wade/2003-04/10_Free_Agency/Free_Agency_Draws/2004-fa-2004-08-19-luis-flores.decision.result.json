@@ -1,0 +1,18 @@
+{
+ "date": "2004-08-19",
+ "decider": "Luis Flores (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-19-luis-flores",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.441617,
+  "Golden State Warriors": 0.072817,
+  "Houston Rockets": 0.148851,
+  "Los Angeles Clippers": 0.01883,
+  "Minnesota Timberwolves": 0.014849,
+  "New Orleans Hornets": 0.002548,
+  "Utah Jazz": 0.070488,
+  "wait": 0.23
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-08-19: which offer does Luis Flores accept (Atlanta Hawks $385,277 x 1, Golden State Warriors $385,277 x 1, Houston Rockets $385,277 x 1, Los Angeles Clippers $385,277 x 1, Minnesota Timberwolves $385,277 x 1, New Orleans Hornets $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?"
+}

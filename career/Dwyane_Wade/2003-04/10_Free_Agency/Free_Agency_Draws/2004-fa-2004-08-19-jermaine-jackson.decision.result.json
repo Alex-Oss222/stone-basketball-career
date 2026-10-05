@@ -1,0 +1,13 @@
+{
+ "date": "2004-08-19",
+ "decider": "Jermaine Jackson (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-19-jermaine-jackson",
+ "kind": "decision",
+ "options": {
+  "Minnesota Timberwolves": 0.133984,
+  "Utah Jazz": 0.636016,
+  "wait": 0.23
+ },
+ "outcome": "Utah Jazz",
+ "question": "2004 free agency, 2004-08-19: which offer does Jermaine Jackson accept (Minnesota Timberwolves $745,046 x 1, Utah Jazz $745,046 x 1), or does he wait?"
+}

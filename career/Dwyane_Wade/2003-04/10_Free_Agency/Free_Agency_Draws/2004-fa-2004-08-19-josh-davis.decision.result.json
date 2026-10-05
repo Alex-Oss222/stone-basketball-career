@@ -1,0 +1,14 @@
+{
+ "date": "2004-08-19",
+ "decider": "Josh Davis (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-19-josh-davis",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.110152,
+  "New Jersey Nets": 0.110152,
+  "Sacramento Kings": 0.549696,
+  "wait": 0.23
+ },
+ "outcome": "Sacramento Kings",
+ "question": "2004 free agency, 2004-08-19: which offer does Josh Davis accept (Denver Nuggets $620,046 x 1, New Jersey Nets $620,046 x 1, Sacramento Kings $620,046 x 1), or does he wait?"
+}
