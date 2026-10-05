@@ -2953,6 +2953,25 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.74 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-04-08-clear-huntebr01",
+   "date": "2004-04-08",
+   "kind": "clear",
+   "player": "Brandon Hunter",
+   "bbr_id": "huntebr01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Brandon Hunter",
+    "bbr_id": "huntebr01",
+    "position": "PF",
+    "games": 36,
+    "minutes": 406
+   },
+   "contract": null,
+   "note": "cleared waivers from Boston Celtics: a free agent",
+   "waiver": "2003-04-market-2004-04-06-waive-huntebr01"
   }
  ],
  "market_days": [
@@ -3029,6 +3048,7 @@
   "2004-04-04",
   "2004-04-05",
   "2004-04-06",
-  "2004-04-07"
+  "2004-04-07",
+  "2004-04-08"
  ]
 }
