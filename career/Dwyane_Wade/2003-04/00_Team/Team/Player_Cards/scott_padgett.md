@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 27 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-03-25 
+**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-03-26 
 
 **Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 4 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at PF, staff plan 34 minutes (staff rotation dated 2004-03-12, [record](../Depth_Chart/Reviews/2004-03-12/rotation.json)).
+**Role:** Starter at PF, staff plan 34 minutes (staff rotation dated 2004-03-26, [record](../Depth_Chart/Reviews/2004-03-26/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -41,11 +41,13 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 | 2004-02-13 | Staff rotation of 2004-02-13: starter at PF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-02-13/rotation.json) |
 | 2004-02-27 | Staff rotation of 2004-02-27: starter at PF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-02-27/rotation.json) |
 | 2004-03-12 | Staff rotation of 2004-03-12: starter at PF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-03-12/rotation.json) |
+| March 26, 2004 | Injured (medium) in event `2004-03-26-dallas-mavericks-at-miami-heat`: out 9 games; the game builder leaves him out of Miami's next 9 games. No grade change. | [Game 2 result](../../../06_Regular_Season/03_March/Week_4/Game_2.md) |
+| 2004-03-26 | Staff rotation of 2004-03-26: starter at PF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-03-26/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [League baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json), [signing record](../../../04_Training_Camp/camp_roster.json).
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-03-12.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-03-26.
 
 <!-- yearly-statistics:start -->
 
@@ -58,7 +60,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Utah Jazz | 82 | N/A | 16.1 | 5.7 | 3.3 | 1.0 | 0.5 | 0.3 | 0.9 | 0.402 | 0.338 | 0.757 |
-| 2003-04 | MIA | 66 | 66 | 34.6 | 13.9 | 8.8 | 2.4 | 0.7 | 0.7 | 1.8 | 43.9% | 37.3% | 78.5% |
+| 2003-04 | MIA | 67 | 67 | 34.3 | 13.7 | 8.7 | 2.4 | 0.8 | 0.7 | 1.8 | 43.8% | 37.2% | 78.7% |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 

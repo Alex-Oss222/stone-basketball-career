@@ -2800,6 +2800,24 @@
    },
    "contract": null,
    "note": "10-day contract ended (1.8 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-03-26-expire-dickeka01",
+   "date": "2004-03-26",
+   "kind": "expire",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": "Houston Rockets",
+   "to": null,
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.0 minutes a game)"
   }
  ],
  "market_days": [
@@ -2863,6 +2881,7 @@
   "2004-03-22",
   "2004-03-23",
   "2004-03-24",
-  "2004-03-25"
+  "2004-03-25",
+  "2004-03-26"
  ]
 }
