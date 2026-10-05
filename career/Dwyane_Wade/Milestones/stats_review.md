@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-03-15 · Miami Heat · active
+Career date: 2004-03-21 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-74 closed game records in 2003-04 through 2004-03-15. Competitions remain separate.
+77 closed game records in 2003-04 through 2004-03-21. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -104,6 +104,9 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-03-10 | regular | New Orleans Hornets | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_2.md) |
 | 2004-03-12 | regular | Seattle SuperSonics | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_3.md) |
 | 2004-03-14 | regular | New Jersey Nets | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_4.md) |
+| 2004-03-16 | regular | New Orleans Hornets | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.md) |
+| 2004-03-20 | regular | Philadelphia 76ers | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.md) |
+| 2004-03-21 | regular | Washington Wizards | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -135,7 +138,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/03_March/Week_2/note.md)
+- [Owning event](../2003-04/06_Regular_Season/03_March/Week_3/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
@@ -225,4 +228,7 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_2.md)
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_3.md)
 - [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_4.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.md)
+- [Closed game](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

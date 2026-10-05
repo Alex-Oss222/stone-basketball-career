@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-03-15. [Search the contract directory](index.html)
+Known through 2004-03-21. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -79,7 +79,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Caron Butler](players/butleca01.md) | Miami Heat | under rookie contract | Caron Butler · 2002-07-02 | 1 |
 | [Casey Jacobsen](players/jacobca01.md) | Phoenix Suns | under rookie contract | Casey Jacobsen · 2002-07-05 | 1 |
 | [Cezary Trybanski](players/trybace01.md) | Phoenix Suns | under contract | Cezary Trybanski · existing contract; signing date not recorded | 1 |
-| [Charles Oakley](players/oaklech01.md) | Washington Wizards | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
+| [Charles Oakley](players/oaklech01.md) | Houston Rockets | under contract | Charles Oakley · 2004-03-18 | 2 |
 | [Charlie Ward](players/wardch01.md) | New York Knicks | under contract | Charlie Ward · existing contract; signing date not recorded | 1 |
 | [Chauncey Billups](players/billuch01.md) | Detroit Pistons | under contract | Chauncey Billups · existing contract; signing date not recorded | 1 |
 | [Cherokee Parks](players/parksch02.md) | Miami Heat | camp contract | Cherokee Parks · 2003-11-09 | 3 |

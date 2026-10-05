@@ -2,9 +2,9 @@
 
 # Contract | Austin Croshere
 
-Known through: 2004-03-15. [Open interactive contract](croshau01.html#contract) · [Contract history](croshau01.html#contract-history)
+Known through: 2004-03-21. [Open interactive contract](croshau01.html#contract) · [Contract history](croshau01.html#contract-history)
 
-Austin Croshere: under contract. Evidence cutoff: 2004-03-15.
+Austin Croshere: under contract. Evidence cutoff: 2004-03-21.
 
 ## Current contract
 

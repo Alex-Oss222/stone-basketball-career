@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-03-15",
+  "as_of": "2004-03-21",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -644,10 +644,10 @@
     {
       "player_id": "oaklech01",
       "name": "Charles Oakley",
-      "team": "Washington Wizards",
-      "status": "on the 2003-04 roster; contract terms not in the dated records",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "team": "Houston Rockets",
+      "status": "under contract",
+      "current_contract_id": "oaklech01-2004-03-18",
+      "recorded_agreements": 2,
       "href": "players/oaklech01.html#contract"
     },
     {
