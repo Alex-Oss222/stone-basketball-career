@@ -2,9 +2,9 @@
 
 # Contract | Antonio Davis
 
-Known through: 2004-09-30. [Open interactive contract](davisan01.html#contract) · [Contract history](davisan01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](davisan01.html#contract) · [Contract history](davisan01.html#contract-history)
 
-Antonio Davis: under contract unverified. Evidence cutoff: 2004-09-30.
+Antonio Davis: under contract unverified. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Antonio Davis |
-| Club / rights baseline | Toronto Raptors |
+| Club / rights baseline | Chicago Bulls |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

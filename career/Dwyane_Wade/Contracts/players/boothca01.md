@@ -2,9 +2,9 @@
 
 # Contract | Calvin Booth
 
-Known through: 2004-09-30. [Open interactive contract](boothca01.html#contract) · [Contract history](boothca01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](boothca01.html#contract) · [Contract history](boothca01.html#contract-history)
 
-Calvin Booth: under contract. Evidence cutoff: 2004-09-30.
+Calvin Booth: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -126,7 +126,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Calvin Booth |
-| Club / rights baseline | Seattle SuperSonics |
+| Club / rights baseline | Golden State Warriors |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

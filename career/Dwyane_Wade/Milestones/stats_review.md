@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-09-30 · Miami Heat · active
+Career date: 2004-10-01 · Miami Heat · inactive
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-94 closed game records in 2003-04 through 2004-09-30. Competitions remain separate.
+0 closed game records in 2004-05 through 2004-10-01. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -14,9 +14,7 @@ Activation: A declared, closed game result supplies observed participation and t
 
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| playoff | 2 | 26.0 | 10.5 | 4.0 | 4.0 | 1.0 | Complete |
-| preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
-| regular | 75 | 35.0 | 17.9 | 4.8 | 4.5 | 1.1 | Complete |
+| regular | 0 | N/A | N/A | N/A | N/A | N/A | Complete |
 
 ## Pooled shooting
 
@@ -24,108 +22,13 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
-| playoff | 7 | 13 | 0.538 | 3 | 4 | 0.750 |
-| preseason | N/A | N/A | N/A | N/A | N/A | N/A |
-| regular | 457 | 879 | 0.520 | 71 | 179 | 0.397 |
+| regular | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ## Closed source games
 
 | Date | Competition | Opponent | Participation | Source |
 | --- | --- | --- | --- | --- |
-| 2003-10-07 | preseason | Philadelphia 76ers | Played | [Closed game](../2003-04/05_Preseason/Game_1.md) |
-| 2003-10-10 | preseason | Atlanta Hawks | Played | [Closed game](../2003-04/05_Preseason/Game_2.md) |
-| 2003-10-11 | preseason | Orlando Magic | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_3.md) |
-| 2003-10-14 | preseason | San Antonio Spurs | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_4.md) |
-| 2003-10-16 | preseason | Atlanta Hawks | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_5.md) |
-| 2003-10-17 | preseason | Detroit Pistons | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_6.md) |
-| 2003-10-21 | preseason | Memphis Grizzlies | Unknown: missing player box | [Closed game](../2003-04/05_Preseason/Game_7.md) |
-| 2003-10-28 | regular | Philadelphia 76ers | Played | [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md) |
-| 2003-10-29 | regular | Boston Celtics | Played | [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.md) |
-| 2003-10-31 | regular | Detroit Pistons | Played | [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.md) |
-| 2003-11-03 | regular | Dallas Mavericks | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md) |
-| 2003-11-04 | regular | San Antonio Spurs | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md) |
-| 2003-11-08 | regular | Minnesota Timberwolves | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md) |
-| 2003-11-11 | regular | Houston Rockets | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_2.md) |
-| 2003-11-12 | regular | Cleveland Cavaliers | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_3.md) |
-| 2003-11-14 | regular | Washington Wizards | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_4.md) |
-| 2003-11-16 | regular | Los Angeles Lakers | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_1.md) |
-| 2003-11-18 | regular | Seattle SuperSonics | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_2.md) |
-| 2003-11-19 | regular | Portland Trail Blazers | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md) |
-| 2003-11-21 | regular | Golden State Warriors | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md) |
-| 2003-11-22 | regular | Phoenix Suns | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_1.md) |
-| 2003-11-25 | regular | New Orleans Hornets | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_2.md) |
-| 2003-11-28 | regular | Atlanta Hawks | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md) |
-| 2003-11-29 | regular | Toronto Raptors | Played | [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md) |
-| 2003-12-03 | regular | Detroit Pistons | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md) |
-| 2003-12-05 | regular | Philadelphia 76ers | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md) |
-| 2003-12-06 | regular | San Antonio Spurs | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.md) |
-| 2003-12-09 | regular | Phoenix Suns | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_2/Game_1.md) |
-| 2003-12-12 | regular | Memphis Grizzlies | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_2/Game_2.md) |
-| 2003-12-14 | regular | Toronto Raptors | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_2/Game_3.md) |
-| 2003-12-16 | regular | Atlanta Hawks | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_1.md) |
-| 2003-12-17 | regular | Philadelphia 76ers | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_2.md) |
-| 2003-12-19 | regular | Memphis Grizzlies | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_3.md) |
-| 2003-12-21 | regular | Golden State Warriors | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.md) |
-| 2003-12-23 | regular | Washington Wizards | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.md) |
-| 2003-12-26 | regular | Washington Wizards | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.md) |
-| 2003-12-27 | regular | New York Knicks | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.md) |
-| 2003-12-29 | regular | Chicago Bulls | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_4.md) |
-| 2003-12-30 | regular | New York Knicks | Played | [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_5.md) |
-| 2004-01-02 | regular | Orlando Magic | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_1.md) |
-| 2004-01-05 | regular | Indiana Pacers | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_2.md) |
-| 2004-01-07 | regular | Chicago Bulls | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_3.md) |
-| 2004-01-09 | regular | Milwaukee Bucks | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_2/Game_1.md) |
-| 2004-01-10 | regular | Minnesota Timberwolves | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_2/Game_2.md) |
-| 2004-01-13 | regular | Sacramento Kings | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_2/Game_3.md) |
-| 2004-01-15 | regular | Utah Jazz | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.md) |
-| 2004-01-16 | regular | Los Angeles Clippers | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.md) |
-| 2004-01-18 | regular | Denver Nuggets | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_3/Game_3.md) |
-| 2004-01-20 | regular | Boston Celtics | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md) |
-| 2004-01-23 | regular | New Jersey Nets | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_1.md) |
-| 2004-01-24 | regular | New York Knicks | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_2.md) |
-| 2004-01-26 | regular | Houston Rockets | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_3.md) |
-| 2004-01-28 | regular | Cleveland Cavaliers | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_4.md) |
-| 2004-01-30 | regular | Los Angeles Clippers | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_5.md) |
-| 2004-01-31 | regular | New Orleans Hornets | Played | [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_6.md) |
-| 2004-02-02 | regular | Detroit Pistons | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md) |
-| 2004-02-04 | regular | New Jersey Nets | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md) |
-| 2004-02-07 | regular | New York Knicks | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.md) |
-| 2004-02-08 | regular | Indiana Pacers | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_2/Game_1.md) |
-| 2004-02-10 | regular | Los Angeles Lakers | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_2/Game_2.md) |
-| 2004-02-11 | regular | Orlando Magic | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_2/Game_3.md) |
-| 2004-02-17 | regular | Utah Jazz | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_1.md) |
-| 2004-02-20 | regular | Atlanta Hawks | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.md) |
-| 2004-02-21 | regular | Denver Nuggets | Played | [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.md) |
-| 2004-02-23 | regular | Portland Trail Blazers | DNP: injured list since 2004-02-23 | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md) |
-| 2004-02-28 | regular | New Jersey Nets | DNP: injured list since 2004-02-23 | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md) |
-| 2004-02-29 | regular | Milwaukee Bucks | DNP: injured list since 2004-02-23 | [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_3.md) |
-| 2004-03-02 | regular | Toronto Raptors | DNP: injured list since 2004-02-23 | [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md) |
-| 2004-03-04 | regular | Milwaukee Bucks | DNP: injured list since 2004-02-23 | [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_2.md) |
-| 2004-03-06 | regular | Sacramento Kings | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_3.md) |
-| 2004-03-09 | regular | Orlando Magic | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_1.md) |
-| 2004-03-10 | regular | New Orleans Hornets | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_2.md) |
-| 2004-03-12 | regular | Seattle SuperSonics | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_3.md) |
-| 2004-03-14 | regular | New Jersey Nets | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_4.md) |
-| 2004-03-16 | regular | New Orleans Hornets | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.md) |
-| 2004-03-20 | regular | Philadelphia 76ers | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.md) |
-| 2004-03-21 | regular | Washington Wizards | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md) |
-| 2004-03-24 | regular | Orlando Magic | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md) |
-| 2004-03-26 | regular | Dallas Mavericks | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md) |
-| 2004-03-28 | regular | Indiana Pacers | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md) |
-| 2004-03-29 | regular | Chicago Bulls | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md) |
-| 2004-03-31 | regular | Atlanta Hawks | Played | [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md) |
-| 2004-04-02 | regular | Detroit Pistons | Played | [Closed game](../2003-04/06_Regular_Season/04_April/Week_1/Game_1.md) |
-| 2004-04-03 | regular | Chicago Bulls | Played | [Closed game](../2003-04/06_Regular_Season/04_April/Week_1/Game_2.md) |
-| 2004-04-07 | regular | Boston Celtics | Played | [Closed game](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.md) |
-| 2004-04-09 | regular | Cleveland Cavaliers | Played | [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.md) |
-| 2004-04-10 | regular | Cleveland Cavaliers | Played | [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.md) |
-| 2004-04-12 | regular | Boston Celtics | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.md) |
-| 2004-04-14 | regular | New Jersey Nets | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md) |
-| 2004-04-18 | playoff | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/08_Playoffs/First_Round/Game_1.md) |
-| 2004-04-21 | playoff | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/08_Playoffs/First_Round/Game_2.md) |
-| 2004-04-24 | playoff | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/08_Playoffs/First_Round/Game_3.md) |
-| 2004-04-26 | playoff | Milwaukee Bucks | Played | [Closed game](../2003-04/08_Playoffs/First_Round/Game_4.md) |
-| 2004-04-28 | playoff | Milwaukee Bucks | Played | [Closed game](../2003-04/08_Playoffs/First_Round/Game_5.md) |
+| No dated record | N/A | N/A | N/A | N/A |
 
 ## Evidence available for decisions
 
@@ -154,119 +57,11 @@ The next declared, closed game result or a chosen completed-period review.
 
 ## Evidence
 
-- [Authoritative career checkpoint](../2003-04/current_state.json)
+- [Authoritative career checkpoint](../2004-05/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/04_April/Week_2/note.md)
-- [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
-- [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
-- [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
-- [Recorded request](../2003-04/10_Free_Agency/wade_requests.json)
-- [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-04-09/review.json)
-- [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-04-09/depth_chart.json)
-- [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
-- [Training-camp events and player response](../2003-04/04_Training_Camp/note.md)
-- [Recorded camp roster](../2003-04/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-04-09/rotation.json)
-- [Rule](../../../docs/front_office.md)
-- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/jason_kidd.json)
-- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/keon_clark.json)
-- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/malik_allen.json)
-- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/mike_james.json)
-- [Negotiation source](../2003-04/01_Free_Agency/Negotiations/vladimir_stepania.json)
-- [Closed game](../2003-04/05_Preseason/Game_1.md)
-- [Closed game](../2003-04/05_Preseason/Game_2.md)
-- [Closed game](../2003-04/05_Preseason/Game_3.md)
-- [Closed game](../2003-04/05_Preseason/Game_4.md)
-- [Closed game](../2003-04/05_Preseason/Game_5.md)
-- [Closed game](../2003-04/05_Preseason/Game_6.md)
-- [Closed game](../2003-04/05_Preseason/Game_7.md)
-- [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/10_October/Week_4/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_1/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_1/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_2/Game_4.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_3/Game_4.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/11_November/Week_4/Game_4.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_1/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_1/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_1/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_2/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_2/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_2/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_3/Game_4.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_4.md)
-- [Closed game](../2003-04/06_Regular_Season/12_December/Week_4/Game_5.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_1/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_2/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_2/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_2/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_3/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_3/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_3/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_3/Game_4.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_4.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_5.md)
-- [Closed game](../2003-04/06_Regular_Season/01_January/Week_4/Game_6.md)
-- [Closed game](../2003-04/06_Regular_Season/02_February/Week_1/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/02_February/Week_1/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/02_February/Week_1/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/02_February/Week_2/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/02_February/Week_2/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/02_February/Week_2/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/02_February/Week_3/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/02_February/Week_4/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_1/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_2/Game_4.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_3/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_3/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_3/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_4.md)
-- [Closed game](../2003-04/06_Regular_Season/03_March/Week_4/Game_5.md)
-- [Closed game](../2003-04/06_Regular_Season/04_April/Week_1/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/04_April/Week_1/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/04_April/Week_1/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_1.md)
-- [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_2.md)
-- [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_3.md)
-- [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md)
-- [Closed game](../2003-04/08_Playoffs/First_Round/Game_1.md)
-- [Closed game](../2003-04/08_Playoffs/First_Round/Game_2.md)
-- [Closed game](../2003-04/08_Playoffs/First_Round/Game_3.md)
-- [Closed game](../2003-04/08_Playoffs/First_Round/Game_4.md)
-- [Closed game](../2003-04/08_Playoffs/First_Round/Game_5.md)
+- [Owning event](../2004-05/04_Training_Camp/note.md)
+- [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
+- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/depth_chart.json)
+- [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Dated milestone working records and player replies](../milestones.json)
-- [Owning dated record](../2003-04/03_Offseason/Wade_Summer_Plan_2004.md)

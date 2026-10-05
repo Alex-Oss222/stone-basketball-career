@@ -2,9 +2,9 @@
 
 # Contract | Sean Lampley
 
-Known through: 2004-09-30. [Open interactive contract](lamplse01.html#contract) · [Contract history](lamplse01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](lamplse01.html#contract) · [Contract history](lamplse01.html#contract-history)
 
-Sean Lampley: team option exercised. Evidence cutoff: 2004-09-30.
+Sean Lampley: team option exercised. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -119,7 +119,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Sean Lampley |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Free agent |
 | Control status | team_option_exercised |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

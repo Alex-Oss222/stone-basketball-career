@@ -2,9 +2,9 @@
 
 # Contract | Robert Traylor
 
-Known through: 2004-09-30. [Open interactive contract](traylro01.html#contract) · [Contract history](traylro01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](traylro01.html#contract) · [Contract history](traylro01.html#contract-history)
 
-Robert Traylor: under contract. Evidence cutoff: 2004-09-30.
+Robert Traylor: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Robert Traylor |
-| Club / rights baseline | New Orleans Hornets |
+| Club / rights baseline | Los Angeles Clippers |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

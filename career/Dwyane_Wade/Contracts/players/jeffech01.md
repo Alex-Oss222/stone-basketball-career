@@ -2,9 +2,9 @@
 
 # Contract | Chris Jefferies
 
-Known through: 2004-09-30. [Open interactive contract](jeffech01.html#contract) · [Contract history](jeffech01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](jeffech01.html#contract) · [Contract history](jeffech01.html#contract-history)
 
-Chris Jefferies: under rookie contract. Evidence cutoff: 2004-09-30.
+Chris Jefferies: under rookie contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -123,7 +123,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Chris Jefferies |
-| Club / rights baseline | Toronto Raptors |
+| Club / rights baseline | Chicago Bulls |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

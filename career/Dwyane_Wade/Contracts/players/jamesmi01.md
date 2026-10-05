@@ -2,9 +2,9 @@
 
 # Contract | Mike James
 
-Known through: 2004-09-30. [Open interactive contract](jamesmi01.html#contract) · [Contract history](jamesmi01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](jamesmi01.html#contract) · [Contract history](jamesmi01.html#contract-history)
 
-Mike James: re signed. Evidence cutoff: 2004-09-30.
+Mike James: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -33,7 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2003-04 |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
-| Status | re_signed |
+| Status | under_contract |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -113,6 +113,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Signing / contract source](../../2003-04/01_Free_Agency/Negotiations/mike_james.json)
 - [Executed free-agent signing](../../2003-04/01_Free_Agency/Negotiations/mike_james.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 
 ### Current control and contract coverage
 
@@ -121,8 +122,8 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Mike James |
-| Club / rights baseline | Boston Celtics |
-| Control status | re_signed |
+| Club / rights baseline | Miami Heat |
+| Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -194,7 +195,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2003-04 |
 | Verified final season | Not recorded |
 | Verified expiry date | Not recorded |
-| Status | re_signed |
+| Status | under_contract |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -274,6 +275,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Signing / contract source](../../2003-04/01_Free_Agency/Negotiations/mike_james.json)
 - [Executed free-agent signing](../../2003-04/01_Free_Agency/Negotiations/mike_james.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 
 ### Mike James · existing contract; signing date not recorded
 
@@ -385,4 +387,5 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Signing / contract source](../../2003-04/01_Free_Agency/Negotiations/mike_james.json)
 - [Recorded free-agent rights](../../2003-04/00_Team/Finances/free_agent_rights.json)
 - [Executed free-agent signing](../../2003-04/01_Free_Agency/Negotiations/mike_james.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Dated signed-contract archive](../contract_records.json)

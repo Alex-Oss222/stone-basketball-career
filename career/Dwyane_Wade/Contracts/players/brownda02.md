@@ -2,9 +2,9 @@
 
 # Contract | Damone Brown
 
-Known through: 2004-09-30. [Open interactive contract](brownda02.html#contract) · [Contract history](brownda02.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](brownda02.html#contract) · [Contract history](brownda02.html#contract-history)
 
-Damone Brown: under contract. Evidence cutoff: 2004-09-30.
+Damone Brown: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Damone Brown |
-| Club / rights baseline | New Jersey Nets |
+| Club / rights baseline | Sacramento Kings |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

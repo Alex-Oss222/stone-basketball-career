@@ -2,9 +2,9 @@
 
 # Contract | Voshon Lenard
 
-Known through: 2004-09-30. [Open interactive contract](lenarvo01.html#contract) · [Contract history](lenarvo01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](lenarvo01.html#contract) · [Contract history](lenarvo01.html#contract-history)
 
-Voshon Lenard: under contract. Evidence cutoff: 2004-09-30.
+Voshon Lenard: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Voshon Lenard |
-| Club / rights baseline | Denver Nuggets |
+| Club / rights baseline | Dallas Mavericks |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

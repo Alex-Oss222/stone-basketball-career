@@ -2,9 +2,9 @@
 
 # Contract | Brandon Armstrong
 
-Known through: 2004-09-30. [Open interactive contract](armstbr01.html#contract) · [Contract history](armstbr01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](armstbr01.html#contract) · [Contract history](armstbr01.html#contract-history)
 
-Brandon Armstrong: under rookie contract. Evidence cutoff: 2004-09-30.
+Brandon Armstrong: under rookie contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Brandon Armstrong |
-| Club / rights baseline | New Jersey Nets |
+| Club / rights baseline | Free agent |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

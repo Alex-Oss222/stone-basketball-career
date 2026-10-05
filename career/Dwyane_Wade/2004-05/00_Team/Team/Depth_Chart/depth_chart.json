@@ -1,0 +1,105 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2004-10-01",
+ "team": "Miami Heat",
+ "status": "carried_over",
+ "game_ready": false,
+ "basis": "2003-04 closing order (career/Dwyane_Wade/2003-04/00_Team/Team/Depth_Chart/Reviews/2004-04-09/depth_chart.json) for the players who stay; training camp decides the new order.",
+ "positions": {
+  "PG": [
+   "Mike James"
+  ],
+  "SG": [
+   "Dwyane Wade",
+   "Eddie Jones"
+  ],
+  "SF": [
+   "Caron Butler"
+  ],
+  "PF": [
+   "Scott Padgett",
+   "Udonis Haslem"
+  ],
+  "C": [
+   "Brian Grant"
+  ]
+ },
+ "unassigned_draft_rights": [
+  {
+   "name": "Bernard Robinson",
+   "positions": [
+    "SG"
+   ],
+   "status": "draft_rights_unsigned"
+  },
+  {
+   "name": "Christian Drejer",
+   "positions": [
+    "SF"
+   ],
+   "status": "draft_rights_unsigned"
+  }
+ ],
+ "unassigned_arrivals": [
+  {
+   "name": "Mehmet Okur",
+   "positions": [
+    "PF"
+   ],
+   "status": "under_contract",
+   "date": "2004-10-01"
+  },
+  {
+   "name": "Kendall Gill",
+   "positions": [
+    "SG"
+   ],
+   "status": "under_contract",
+   "date": "2004-10-01"
+  },
+  {
+   "name": "Dorell Wright",
+   "positions": [
+    "SF"
+   ],
+   "status": "under_contract",
+   "date": "2004-10-01"
+  },
+  {
+   "name": "John Thomas",
+   "positions": [
+    "C"
+   ],
+   "status": "under_contract",
+   "date": "2004-10-01"
+  },
+  {
+   "name": "Maurice Evans",
+   "positions": [
+    "SG"
+   ],
+   "status": "under_contract",
+   "date": "2004-10-01"
+  },
+  {
+   "name": "Maurice Baker",
+   "positions": [
+    "PG"
+   ],
+   "status": "under_contract",
+   "date": "2004-10-01"
+  },
+  {
+   "name": "John Edwards",
+   "positions": [
+    "C"
+   ],
+   "status": "under_contract",
+   "date": "2004-10-01"
+  }
+ ],
+ "unavailable": [],
+ "departed": [],
+ "corrections": []
+}

@@ -1,0 +1,888 @@
+{
+ "schema_version": 3,
+ "owner": "ai_gm",
+ "as_of": "2004-10-01",
+ "team": "Miami Heat",
+ "horizon": [
+  "2004-05",
+  "2005-06",
+  "2006-07",
+  "2007-08",
+  "2008-09",
+  "2009-10",
+  "2010-11",
+  "2011-12"
+ ],
+ "accounting_rule": "Only contract terms, options and draft holds that already exist at this checkpoint are scheduled. Later historical signings, trades, option decisions and extensions are not imported.",
+ "known_baseline": {
+  "2004-05": 52068805,
+  "2005-06": 36222517,
+  "2006-07": 32798231,
+  "2007-08": 17022873,
+  "2008-09": 3958667,
+  "2009-10": 0,
+  "2010-11": 0,
+  "2011-12": 0
+ },
+ "conditional_known_amounts": {
+  "2004-05": 0,
+  "2005-06": 0,
+  "2006-07": 3201202,
+  "2007-08": 0,
+  "2008-09": 0,
+  "2009-10": 0,
+  "2010-11": 0,
+  "2011-12": 0
+ },
+ "conditional_unknown_count": {
+  "2004-05": 0,
+  "2005-06": 0,
+  "2006-07": 0,
+  "2007-08": 0,
+  "2008-09": 0,
+  "2009-10": 0,
+  "2010-11": 0,
+  "2011-12": 0
+ },
+ "players": [
+  {
+   "player": "Eddie Jones",
+   "bbr_id": "jonesed02",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 13455000,
+    "2005-06": 14800500,
+    "2006-07": 16146000
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary",
+    "2005-06": "contract_salary",
+    "2006-07": "contract_salary"
+   },
+   "guaranteed": {
+    "2004-05": 13455000,
+    "2005-06": 14800500,
+    "2006-07": 16146000
+   },
+   "signed_date": "2004-10-01",
+   "route": "existing",
+   "original_term_seasons": 3,
+   "notes": "Signed October 1, 2004 in the 2004-05 summer market (signing, route existing); schedule from the league contract ledger (raises by route).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+    "2004-05/League/contracts.json"
+   ]
+  },
+  {
+   "player": "Brian Grant",
+   "bbr_id": "grantbr01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 13233434
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary"
+   },
+   "guaranteed": {
+    "2004-05": 13233434
+   },
+   "signed_date": "2004-10-01",
+   "route": "existing",
+   "original_term_seasons": 1,
+   "notes": "Signed October 1, 2004 in the 2004-05 summer market (signing, route existing); schedule from the league contract ledger (raises by route).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+    "2004-05/League/contracts.json"
+   ]
+  },
+  {
+   "player": "Scott Padgett",
+   "bbr_id": "padgesc01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 9706886,
+    "2005-06": 10920247,
+    "2006-07": 12133608,
+    "2007-08": 13346968
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary",
+    "2005-06": "contract_salary",
+    "2006-07": "contract_salary",
+    "2007-08": "contract_salary"
+   },
+   "guaranteed": {
+    "2004-05": 9706886,
+    "2005-06": 10920247,
+    "2006-07": 12133608,
+    "2007-08": 13346968
+   },
+   "signed_date": "2004-07-14",
+   "route": "bird",
+   "original_term_seasons": 4,
+   "notes": "Signed July 14, 2004 in the 2004-05 summer market (re sign, route bird); schedule from the league contract ledger (raises by route).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+    "2004-05/League/contracts.json"
+   ]
+  },
+  {
+   "player": "Mike James",
+   "bbr_id": "jamesmi01",
+   "status": "under_contract",
+   "schedule": {
+    "2003-04": 3050199,
+    "2004-05": 3431474,
+    "2005-06": 3812749
+   },
+   "amount_kind": {
+    "2003-04": "contract_salary",
+    "2004-05": "contract_salary",
+    "2005-06": "contract_salary"
+   },
+   "guaranteed": {
+    "2003-04": 3050199,
+    "2004-05": 3431474,
+    "2005-06": 3812749
+   },
+   "signed_date": "2003-07-17",
+   "original_term_seasons": 3,
+   "route": "early_bird",
+   "promise": {
+    "role": "starter",
+    "minutes_per_game": 32
+   },
+   "base_year_compensation": {
+    "applies": true,
+    "status": "inferred for 1999: re-signed with Bird or Early Bird rights at a raise over 20% by a club over the cap (raise over 20% of $512,435; Miami $46,515,837 against the $43,840,000 cap with the contract counted); attached at the signing"
+   },
+   "notes": "Signed July 17, 2003 by simulated Miami via early_bird; agreed 2003-07-17 (engine decision 2003-fa-jamesmi01-offer-1).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/01_Free_Agency/Negotiations/mike_james.json"
+   ],
+   "prior_season_salary": {
+    "season": "2002-03",
+    "amount": 512435
+   },
+   "contract_id": "jamesmi01-2003-07-17"
+  },
+  {
+   "player": "Mehmet Okur",
+   "bbr_id": "okurme01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 2827619,
+    "2005-06": 3110381,
+    "2006-07": 3393143,
+    "2007-08": 3675905,
+    "2008-09": 3958667
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary",
+    "2005-06": "contract_salary",
+    "2006-07": "contract_salary",
+    "2007-08": "contract_salary",
+    "2008-09": "contract_salary"
+   },
+   "guaranteed": {
+    "2004-05": 2827619,
+    "2005-06": 3110381,
+    "2006-07": 3393143,
+    "2007-08": 3675905,
+    "2008-09": 3958667
+   },
+   "signed_date": "2004-09-23",
+   "route": "mid_level",
+   "original_term_seasons": 5,
+   "notes": "Signed September 23, 2004 in the 2004-05 summer market (signing, route mid_level); schedule from the league contract ledger (raises by route).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+    "2004-05/League/contracts.json"
+   ],
+   "previous_club": "Detroit Pistons"
+  },
+  {
+   "player": "Dwyane Wade",
+   "status": "under_contract",
+   "schedule": {
+    "2003-04": 2197000,
+    "2004-05": 2361800,
+    "2005-06": 2526600,
+    "2006-07": 3201202
+   },
+   "rookie_scale_reference": {
+    "2003-04": 2197000,
+    "2004-05": 2361800,
+    "2005-06": 2526600,
+    "2006-07_option_increase_over_2005-06_percent": 26.7,
+    "allowed_signing_percent_of_scale": {
+     "min": 80,
+     "max": 120
+    }
+   },
+   "notes": "Rookie-scale contract signed July 21, 2003: 80% of the No. 5 scale as protected Current Cash Compensation plus incentives to 120%; the scheduled amounts are the counted Salary (protected cash, included incentives and bonuses classified Likely); Unlikely bonuses count only when earned. Three seasons plus a team option for 2006-07 at the third season's Salary raised 26.7%, to be exercised by 2005-10-31. The draft hold ends with the signing.",
+   "sources": [
+    "01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json",
+    "https://basketball.realgm.com/nba/info/rookie_scale/2004",
+    "https://www.cbafaq.com/salarycap99.htm",
+    "https://www.cbafaq.com/scale99.htm",
+    "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+   ],
+   "amount_kind": {
+    "2003-04": "contract_salary",
+    "2004-05": "contract_salary",
+    "2005-06": "contract_salary",
+    "2006-07": "team_option"
+   },
+   "signed_date": "2003-07-21",
+   "original_term_seasons": 3,
+   "team_option_season": "2006-07",
+   "fourth_year_option_deadline": "2005-10-31",
+   "percent_of_scale": 120,
+   "route": "rookie_scale",
+   "protected_schedule": {
+    "2003-04": 1757600,
+    "2004-05": 1889440,
+    "2005-06": 2021280
+   },
+   "maximum_schedule": {
+    "2003-04": 2636400,
+    "2004-05": 2834160,
+    "2005-06": 3031920
+   },
+   "incentives": [
+    {
+     "id": "conditioning_program",
+     "label": "Offseason skill and conditioning program (10% of scale)",
+     "kind": "conditioning_program",
+     "percent": 10,
+     "classification": "included",
+     "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+     "benchmarks": {
+      "2003-04": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+      "2004-05": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+      "2005-06": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league."
+     },
+     "amounts": {
+      "2003-04": 219700,
+      "2004-05": 236180,
+      "2005-06": 252660
+     }
+    },
+    {
+     "id": "physical_condition",
+     "label": "Preseason conditioning standard (10% of scale)",
+     "kind": "physical_condition",
+     "percent": 10,
+     "classification": "included",
+     "classified_by": "1999 rules: physical-condition, academic and designated program incentives are Salary",
+     "benchmarks": {
+      "2003-04": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+      "2004-05": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+      "2005-06": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league)."
+     },
+     "amounts": {
+      "2003-04": 219700,
+      "2004-05": 236180,
+      "2005-06": 252660
+     }
+    },
+    {
+     "id": "minutes",
+     "label": "Regular-season minutes (10% of scale)",
+     "kind": "performance",
+     "percent": 10,
+     "classification": "unlikely",
+     "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+     "benchmarks": {
+      "2003-04": "At least 1,200 regular-season minutes played.",
+      "2004-05": "At least 1,200 regular-season minutes played.",
+      "2005-06": "At least 1,200 regular-season minutes played."
+     },
+     "amounts": {
+      "2003-04": 219700,
+      "2004-05": 236180,
+      "2005-06": 252660
+     }
+    },
+    {
+     "id": "achievement",
+     "label": "Achievement (10% of scale)",
+     "kind": "performance",
+     "percent": 10,
+     "classification": "unlikely",
+     "classified_by": "league determination (NBA/NBPA; an expert if they disagree): a rookie's performance bonus is Unlikely unless the prior season's record would have earned it",
+     "benchmarks": {
+      "2003-04": "Selection to an NBA All-Rookie Team.",
+      "2004-05": "At least 15.0 points per game while appearing in at least 60 games.",
+      "2005-06": "At least 17.0 points per game while appearing in at least 60 games."
+     },
+     "amounts": {
+      "2003-04": 219700,
+      "2004-05": 236180,
+      "2005-06": 252660
+     }
+    }
+   ],
+   "bonus_evaluation": "each season's incentives are evaluated against closed results at the season rollover (docs/ROADMAP.md item 18)",
+   "contract_id": "wadedw01-2003-07-21"
+  },
+  {
+   "player": "Caron Butler",
+   "bbr_id": "butleca01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 1930680
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary"
+   },
+   "guaranteed": {
+    "2004-05": 1930680
+   },
+   "signed_date": "2004-10-01",
+   "route": "existing",
+   "original_term_seasons": 1,
+   "notes": "Signed October 1, 2004 in the 2004-05 summer market (signing, route existing); schedule from the league contract ledger (raises by route).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+    "2004-05/League/contracts.json"
+   ]
+  },
+  {
+   "player": "Kendall Gill",
+   "bbr_id": "gillke01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 1100000
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary"
+   },
+   "guaranteed": {
+    "2004-05": 1100000
+   },
+   "signed_date": "2004-08-12",
+   "route": "minimum",
+   "original_term_seasons": 1,
+   "notes": "Signed August 12, 2004 in the 2004-05 summer market (signing, route minimum); schedule from the league contract ledger (raises by route).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+    "2004-05/League/contracts.json"
+   ],
+   "previous_club": "Chicago Bulls"
+  },
+  {
+   "player": "Dorell Wright",
+   "bbr_id": "wrighdo01",
+   "status": "under_rookie_contract",
+   "schedule": {
+    "2004-05": 978720,
+    "2005-06": 1052040,
+    "2006-07": 1125480
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary",
+    "2005-06": "contract_salary",
+    "2006-07": "contract_salary"
+   },
+   "guaranteed": {
+    "2004-05": 978720,
+    "2005-06": 1052040,
+    "2006-07": 1125480
+   },
+   "signed_date": "2004-07-01",
+   "route": "rookie_scale",
+   "original_term_seasons": 3,
+   "notes": "Signed July 1, 2004 in the 2004-05 summer market (rookie scale signing, route rookie_scale); schedule from the league contract ledger (raises by route).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+    "2004-05/League/contracts.json"
+   ],
+   "team_option_season": "2007-08"
+  },
+  {
+   "player": "John Thomas",
+   "bbr_id": "thomajo02",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 932546
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary"
+   },
+   "guaranteed": {
+    "2004-05": 932546
+   },
+   "signed_date": "2004-08-19",
+   "route": "minimum",
+   "original_term_seasons": 1,
+   "notes": "Signed August 19, 2004 in the 2004-05 summer market (signing, route minimum); schedule from the league contract ledger (raises by route).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+    "2004-05/League/contracts.json"
+   ]
+  },
+  {
+   "player": "Maurice Evans",
+   "bbr_id": "evansma01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 720046
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary"
+   },
+   "guaranteed": {
+    "2004-05": 720046
+   },
+   "signed_date": "2004-08-05",
+   "route": "minimum",
+   "original_term_seasons": 1,
+   "notes": "Signed August 5, 2004 in the 2004-05 summer market (signing, route minimum); schedule from the league contract ledger (raises by route).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+    "2004-05/League/contracts.json"
+   ]
+  },
+  {
+   "player": "Udonis Haslem",
+   "bbr_id": "hasleud01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 620046
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary"
+   },
+   "guaranteed": {
+    "2004-05": 620046
+   },
+   "signed_date": "2004-07-14",
+   "route": "minimum",
+   "original_term_seasons": 1,
+   "notes": "Signed July 14, 2004 in the 2004-05 summer market (re sign, route minimum); schedule from the league contract ledger (raises by route).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+    "2004-05/League/contracts.json"
+   ]
+  },
+  {
+   "player": "Maurice Baker",
+   "bbr_id": "bakerma01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 385277
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary"
+   },
+   "guaranteed": {
+    "2004-05": 385277
+   },
+   "signed_date": "2004-07-15",
+   "route": "minimum",
+   "original_term_seasons": 1,
+   "notes": "Signed July 15, 2004 in the 2004-05 summer market (signing, route minimum); schedule from the league contract ledger (raises by route).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+    "2004-05/League/contracts.json"
+   ]
+  },
+  {
+   "player": "John Edwards",
+   "bbr_id": "edwarjo01",
+   "status": "under_contract",
+   "schedule": {
+    "2004-05": 385277
+   },
+   "amount_kind": {
+    "2004-05": "contract_salary"
+   },
+   "guaranteed": {
+    "2004-05": 385277
+   },
+   "signed_date": "2004-07-22",
+   "route": "minimum",
+   "original_term_seasons": 1,
+   "notes": "Signed July 22, 2004 in the 2004-05 summer market (signing, route minimum); schedule from the league contract ledger (raises by route).",
+   "sources": [
+    "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json",
+    "2004-05/League/contracts.json"
+   ]
+  },
+  {
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "status": "unsigned_draft_rights",
+   "schedule": {},
+   "amount_kind": {},
+   "draft_pick": 51,
+   "draft_round": 2,
+   "notes": "No. 51 pick of the 2004 draft; Miami holds his rights, unsigned when the summer market closed.",
+   "sources": [
+    "2003-04/09_Draft/draft_2004.json"
+   ]
+  },
+  {
+   "player": "Christian Drejer",
+   "bbr_id": "drejech01",
+   "status": "unsigned_draft_rights",
+   "schedule": {},
+   "amount_kind": {},
+   "draft_pick": 54,
+   "draft_round": 2,
+   "notes": "No. 54 pick of the 2004 draft; Miami holds his rights, unsigned when the summer market closed.",
+   "sources": [
+    "2003-04/09_Draft/draft_2004.json"
+   ]
+  }
+ ],
+ "expiring_or_unresolved_without_scheduled_2003_04_salary": [
+  "Alonzo Mourning",
+  "Malik Allen",
+  "Travis Best",
+  "Eddie House",
+  "Mike James",
+  "Sean Marks",
+  "Vladimir Stepania"
+ ],
+ "sources": [
+  "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+  "https://www.espn.com/nba/columns/stein_marc/1577692.html",
+  "https://www.shamsports.com/players/rasual-butler",
+  "https://www.shamsports.com/players/sean-lampley",
+  "https://basketball.realgm.com/nba/info/rookie_scale/2004",
+  "https://www.cbafaq.com/salarycap99.htm",
+  "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf",
+  "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+  "https://basketball.realgm.com/nba/teams/Miami-Heat/15/Rosters/Regular/2003",
+  "https://basketball.realgm.com/wiretap/151255/Likely-dilemma-Zo-or-Grant",
+  "https://www.rotowire.com/basketball/player/laphonso-ellis-1443"
+ ],
+ "projection_basis": {
+  "kind": "existing_obligations_only",
+  "currency": "USD",
+  "unit": "whole dollars",
+  "known_baseline_definition": "Counted 2004-05 team salary on 2004-10-01: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+  "conditional_definition": "Priced PO, TO and ETO years shown separately; no exercise or termination decision is assumed.",
+  "zero_definition": "No scheduled obligation in this contract inventory. Zero does not forecast a zero-cost roster or available cap space.",
+  "missing_definition": "Null means unresolved or not yet projected, never zero.",
+  "future_signings_assumed": false,
+  "precision_rule": "reported_rounded amounts and every subtotal containing them must be displayed as approximate.",
+  "free_agent_hold_basis": "Projected for the coming cap year if expiring rights are retained; no July transaction is assumed."
+ },
+ "projection": [
+  {
+   "season": "2003-04",
+   "scheduled_contract_salary": 44128961,
+   "unsigned_first_round_holds": 0,
+   "known_conditional_salary": 0,
+   "unpriced_option_count": 0,
+   "free_agent_holds": null,
+   "other_cap_charges": null,
+   "total_team_salary": null,
+   "cap_space": null,
+   "known_base_allocations": 44128961,
+   "base_plus_priced_options": 44128961,
+   "reported_rounded_salary_count": 1,
+   "subtotal_precision": "includes_rounded_report",
+   "known_free_agent_holds": 666166,
+   "unpriced_free_agent_hold_count": 0
+  },
+  {
+   "season": "2004-05",
+   "scheduled_contract_salary": 52068805,
+   "unsigned_first_round_holds": 0,
+   "known_conditional_salary": 0,
+   "unpriced_option_count": 0,
+   "free_agent_holds": null,
+   "other_cap_charges": null,
+   "total_team_salary": null,
+   "cap_space": null,
+   "known_base_allocations": 52068805,
+   "base_plus_priced_options": 52068805,
+   "reported_rounded_salary_count": 0,
+   "subtotal_precision": "whole_dollars",
+   "known_free_agent_holds": 0,
+   "unpriced_free_agent_hold_count": 0
+  },
+  {
+   "season": "2005-06",
+   "scheduled_contract_salary": 36222517,
+   "unsigned_first_round_holds": 0,
+   "known_conditional_salary": 0,
+   "unpriced_option_count": 0,
+   "free_agent_holds": null,
+   "other_cap_charges": null,
+   "total_team_salary": null,
+   "cap_space": null,
+   "known_base_allocations": 36222517,
+   "base_plus_priced_options": 36222517,
+   "reported_rounded_salary_count": 0,
+   "subtotal_precision": "whole_dollars",
+   "known_free_agent_holds": null,
+   "unpriced_free_agent_hold_count": null
+  },
+  {
+   "season": "2006-07",
+   "scheduled_contract_salary": 32798231,
+   "unsigned_first_round_holds": 0,
+   "known_conditional_salary": 3201202,
+   "unpriced_option_count": 0,
+   "free_agent_holds": null,
+   "other_cap_charges": null,
+   "total_team_salary": null,
+   "cap_space": null,
+   "known_base_allocations": 32798231,
+   "base_plus_priced_options": 35999433,
+   "reported_rounded_salary_count": 0,
+   "subtotal_precision": "whole_dollars",
+   "known_free_agent_holds": null,
+   "unpriced_free_agent_hold_count": null
+  },
+  {
+   "season": "2007-08",
+   "scheduled_contract_salary": 17022873,
+   "unsigned_first_round_holds": 0,
+   "known_conditional_salary": 0,
+   "unpriced_option_count": 0,
+   "free_agent_holds": null,
+   "other_cap_charges": null,
+   "total_team_salary": null,
+   "cap_space": null,
+   "known_base_allocations": 17022873,
+   "base_plus_priced_options": 17022873,
+   "reported_rounded_salary_count": 0,
+   "subtotal_precision": "whole_dollars",
+   "known_free_agent_holds": null,
+   "unpriced_free_agent_hold_count": null
+  },
+  {
+   "season": "2008-09",
+   "scheduled_contract_salary": 3958667,
+   "unsigned_first_round_holds": 0,
+   "known_conditional_salary": 0,
+   "unpriced_option_count": 0,
+   "free_agent_holds": null,
+   "other_cap_charges": null,
+   "total_team_salary": null,
+   "cap_space": null,
+   "known_base_allocations": 3958667,
+   "base_plus_priced_options": 3958667,
+   "reported_rounded_salary_count": 0,
+   "subtotal_precision": "whole_dollars",
+   "known_free_agent_holds": null,
+   "unpriced_free_agent_hold_count": null
+  },
+  {
+   "season": "2009-10",
+   "scheduled_contract_salary": 0,
+   "unsigned_first_round_holds": 0,
+   "known_conditional_salary": 0,
+   "unpriced_option_count": 0,
+   "free_agent_holds": null,
+   "other_cap_charges": null,
+   "total_team_salary": null,
+   "cap_space": null,
+   "known_base_allocations": 0,
+   "base_plus_priced_options": 0,
+   "reported_rounded_salary_count": 0,
+   "subtotal_precision": "whole_dollars",
+   "known_free_agent_holds": null,
+   "unpriced_free_agent_hold_count": null
+  },
+  {
+   "season": "2010-11",
+   "scheduled_contract_salary": 0,
+   "unsigned_first_round_holds": 0,
+   "known_conditional_salary": 0,
+   "unpriced_option_count": 0,
+   "free_agent_holds": null,
+   "other_cap_charges": null,
+   "total_team_salary": null,
+   "cap_space": null,
+   "known_base_allocations": 0,
+   "base_plus_priced_options": 0,
+   "reported_rounded_salary_count": 0,
+   "subtotal_precision": "whole_dollars",
+   "known_free_agent_holds": null,
+   "unpriced_free_agent_hold_count": null
+  }
+ ],
+ "research_date": "2026-10-02",
+ "research_cutoff": "Contract terms existing by 2003-06-26 only. Later sources reconstruct terms, never later decisions.",
+ "prior_season_salaries": [
+  {
+   "player": "Alonzo Mourning",
+   "season": "2002-03",
+   "amount": 20629800,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  },
+  {
+   "player": "Eddie Jones",
+   "season": "2002-03",
+   "amount": 11212500,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  },
+  {
+   "player": "Brian Grant",
+   "season": "2002-03",
+   "amount": 11027862,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  },
+  {
+   "player": "Anthony Carter",
+   "season": "2002-03",
+   "amount": 3656250,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  },
+  {
+   "player": "LaPhonso Ellis",
+   "season": "2002-03",
+   "amount": 3100000,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  },
+  {
+   "player": "Caron Butler",
+   "season": "2002-03",
+   "amount": 1678800,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  },
+  {
+   "player": "Travis Best",
+   "season": "2002-03",
+   "amount": 1400000,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  },
+  {
+   "player": "Vladimir Stepania",
+   "season": "2002-03",
+   "amount": 1350000,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  },
+  {
+   "player": "Eddie House",
+   "season": "2002-03",
+   "amount": null,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment.",
+   "reported_candidates": [
+    {
+     "amount": 637435,
+     "source": "https://www.eskimo.com/~pbender/misc/salaries03.txt"
+    },
+    {
+     "amount": 737000,
+     "precision": "rounded",
+     "source": "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+    },
+    {
+     "amount": 737435,
+     "source": "https://realgm.freeservers.com/",
+     "verification": "search-index excerpt only; full archive unavailable"
+    }
+   ],
+   "notes": "The $737,435 candidate is consistent with the reported qualifying-offer acceptance and the CBA minimum-plus-$150,000 formula. The contemporary salary lists conflict; do not certify an exact prior salary or resulting hold."
+  },
+  {
+   "player": "Sean Marks",
+   "season": "2002-03",
+   "amount": 612435,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  },
+  {
+   "player": "Malik Allen",
+   "season": "2002-03",
+   "amount": 512435,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  },
+  {
+   "player": "Mike James",
+   "season": "2002-03",
+   "amount": 512435,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  },
+  {
+   "player": "Rasual Butler",
+   "season": "2002-03",
+   "amount": 349458,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  },
+  {
+   "player": "Sean Lampley",
+   "season": "2002-03",
+   "amount": 349458,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/",
+    "https://www.basketball-reference.com/players/l/lamplse01.html",
+    "https://www.shamsports.com/players/sean-lampley",
+    "https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment.",
+   "notes": "SBJ lists $512,435. Bender and Basketball-Reference list $349,458, consistent with his first NBA season and the documented minimum contract. Use the latter."
+  },
+  {
+   "player": "Ken Johnson",
+   "season": "2002-03",
+   "amount": 349458,
+   "sources": [
+    "https://www.eskimo.com/~pbender/misc/salaries03.txt",
+    "https://www.sportsbusinessjournal.com/Daily/Issues/2003/03/26/Ratings-Research/NBA-EASTERN-CONFERENCE-PLAYER-SALARIES/"
+   ],
+   "use": "Historical salary evidence, not a 2003-04 commitment."
+  }
+ ]
+}

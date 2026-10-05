@@ -2,9 +2,9 @@
 
 # Contract | Samaki Walker
 
-Known through: 2004-09-30. [Open interactive contract](walkesa01.html#contract) · [Contract history](walkesa01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](walkesa01.html#contract) · [Contract history](walkesa01.html#contract-history)
 
-Samaki Walker: under contract. Evidence cutoff: 2004-09-30.
+Samaki Walker: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Samaki Walker |
-| Club / rights baseline | Los Angeles Lakers |
+| Club / rights baseline | New Orleans Hornets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

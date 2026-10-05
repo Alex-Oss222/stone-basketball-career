@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="180" viewBox="0 0 1280 180" role="img" aria-labelledby="t d">
-<title id="t">Jamal Crawford</title><desc id="d">Jamal Crawford, Chicago Bulls, Point guard, #1.</desc>
+<title id="t">Jamal Crawford</title><desc id="d">Jamal Crawford, Chicago Bulls, Point guard, #11.</desc>
 <rect width="1280" height="180" rx="24" fill="#ba0c2f"/>
 <rect x="0" y="150" width="1280" height="30" fill="#010101" fill-opacity=".92"/>
 <rect x="0" y="150" width="1280" height="6" fill="#010101"/>
 <text x="48" y="78" font-family="sans-serif" font-size="54" font-weight="700" fill="#ffffff">Jamal Crawford</text>
 <text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Point guard · Chicago Bulls</text>
-<text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#1</text>
+<text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#11</text>
 </svg>

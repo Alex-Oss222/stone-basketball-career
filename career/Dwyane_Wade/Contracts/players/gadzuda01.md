@@ -2,9 +2,9 @@
 
 # Contract | Dan Gadzuric
 
-Known through: 2004-09-30. [Open interactive contract](gadzuda01.html#contract) · [Contract history](gadzuda01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](gadzuda01.html#contract) · [Contract history](gadzuda01.html#contract-history)
 
-Dan Gadzuric: minimum contract unverified. Evidence cutoff: 2004-09-30.
+Dan Gadzuric: minimum contract unverified. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 

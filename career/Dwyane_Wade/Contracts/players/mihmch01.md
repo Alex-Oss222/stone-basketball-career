@@ -2,9 +2,9 @@
 
 # Contract | Chris Mihm
 
-Known through: 2004-09-30. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
 
-Chris Mihm: team option pending. Evidence cutoff: 2004-09-30.
+Chris Mihm: team option pending. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -118,7 +118,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Chris Mihm |
-| Club / rights baseline | Cleveland Cavaliers |
+| Club / rights baseline | Free agent |
 | Control status | team_option_pending |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | Keon Clark
 
-Known through: 2004-09-30. [Open interactive contract](clarkke01.html#contract) · [Contract history](clarkke01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](clarkke01.html#contract) · [Contract history](clarkke01.html#contract-history)
 
-Keon Clark: voided. Evidence cutoff: 2004-09-30.
+Keon Clark: voided. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Keon Clark |
-| Club / rights baseline | Utah Jazz |
+| Club / rights baseline | Free agent |
 | Control status | voided |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | Jahidi White
 
-Known through: 2004-09-30. [Open interactive contract](whiteja01.html#contract) · [Contract history](whiteja01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](whiteja01.html#contract) · [Contract history](whiteja01.html#contract-history)
 
-Jahidi White: under contract unverified. Evidence cutoff: 2004-09-30.
+Jahidi White: under contract unverified. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jahidi White |
-| Club / rights baseline | Washington Wizards |
+| Club / rights baseline | Phoenix Suns |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

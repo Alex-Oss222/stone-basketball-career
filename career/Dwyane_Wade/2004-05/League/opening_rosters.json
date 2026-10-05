@@ -1,0 +1,5333 @@
+{
+ "schema_version": 1,
+ "season": "2004-05",
+ "kind": "opening_rosters",
+ "as_of": "2004-06-30",
+ "rule": "The result is the 2004-05 opening book: every club's players on the first day of the 2004-05 season, each with the\nrule that placed him, written to `career/Dwyane_Wade/2004-05/League/opening_rosters.json` and read by the 2004-05\nleague (`league_moves` activation for the season). Miami is never placed here: its offseason is its own front office.\n\nPrinciples (unchanged from phases 1 to 4): ability follows real careers; no real player with real 2004-05 minutes is\nleft without a club; no club decides on hindsight; Miami's real transactions are skipped (AGENTS.md rule 1).\n\nOnce the simulated 2004 market is complete (`runtime/free_agency_2004.py`, the user's choice of a fully simulated\noffseason), it alone places every player: rule 7, his club under a 2004-05 contract after the market (Miami's\nincluded, which its rollover reads); rule 8, a player with a real 2004-05 role left unsigned starts in the free-agent\npool for the in-season market. The rules below are the history-following book used before then.\n\nFor each real player, in this order:\n1. **Miami holds him** on the opening date (rule 2): he is Miami's, not placed here.\n2. **No real 2004-05 minutes** (retired, abroad, out of the league): he leaves the league with history.\n3. **Real Miami sent him away** (`nba_2004_miami_transactions.json`, the July 14 Shaquille O'Neal trade): rule 1\n   skips the move; he stays with his simulated 2003-04 club.\n4. **Undrifted** (his simulated club at the season's end is his real club at the season's end): he follows history\n   to his real 2004-05 opening club — re-signings, option outcomes, real summer trades, free-agent moves, Charlotte's\n   expansion draft and the draft itself — because nothing simulated conflicts.\n5. **Drifted** (a simulated trade, claim or signing moved him in 2003-04): a contract that runs through 2004-05\n   (salary, not an option) stays with his simulated club, as an assigned agreement; otherwise he is a free agent and\n   signs where history signed him.\n6. **New to the league** (2004 draftees, returning or overseas players with no 2003-04 NBA club): his real club.\n   A 2004 prospect drafted in the simulated draft (`draft.py`) goes to the club that drafted him.\nA player's real 2004-05 opening club is his first 2004-05 stint; a later real arrival is placed with that club from\nopening day (his games share keeps his real part of the season). Each club then keeps its fifteen largest real\n2004-05 roles (never letting go of a rookie-scale contract); the rest start in the free-agent pool, as at the\nDecember 3, 2003 activation.",
+ "clubs": {
+  "Atlanta Hawks": [
+   {
+    "bbr_id": "terryja01",
+    "player_id": "Jason Terry",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Atlanta Hawks",
+    "games": 80,
+    "minutes": 2401,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "dickada01",
+    "player_id": "Dan Dickau",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Atlanta Hawks",
+    "games": 71,
+    "minutes": 2090,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "mohamna01",
+    "player_id": "Nazr Mohammed",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Atlanta Hawks",
+    "games": 77,
+    "minutes": 1933,
+    "position": "C"
+   },
+   {
+    "bbr_id": "abdursh01",
+    "player_id": "Shareef Abdur-Rahim",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Atlanta Hawks",
+    "games": 54,
+    "minutes": 1867,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "ratlith01",
+    "player_id": "Theo Ratliff",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Atlanta Hawks",
+    "games": 63,
+    "minutes": 1731,
+    "position": "C"
+   },
+   {
+    "bbr_id": "hendeal01",
+    "player_id": "Alan Henderson",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Atlanta Hawks",
+    "games": 78,
+    "minutes": 1203,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "diawbo01",
+    "player_id": "Boris Diaw",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Atlanta Hawks",
+    "games": 66,
+    "minutes": 1201,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "smithth01",
+    "player_id": "Theron Smith",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Atlanta Hawks",
+    "games": 33,
+    "minutes": 510,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "barrean01",
+    "player_id": "Andre Barrett",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 38,
+    "minutes": 483,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "florelu01",
+    "player_id": "Luis Flores",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 16,
+    "minutes": 77,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "bobbito01",
+    "player_id": "Tony Bobbitt",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 2,
+    "minutes": 12,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "crawfch01",
+    "player_id": "Chris Crawford",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Atlanta Hawks",
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   },
+   {
+    "bbr_id": "moniase01",
+    "player_id": "moniase01",
+    "club": "Atlanta Hawks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Boston Celtics": [
+   {
+    "bbr_id": "piercpa01",
+    "player_id": "Paul Pierce",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 82,
+    "minutes": 2960,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "roseja01",
+    "player_id": "Jalen Rose",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 81,
+    "minutes": 2710,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "blounma01",
+    "player_id": "Mark Blount",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 82,
+    "minutes": 2130,
+    "position": "C"
+   },
+   {
+    "bbr_id": "battito01",
+    "player_id": "Tony Battie",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 81,
+    "minutes": 1894,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jonesju01",
+    "player_id": "Jumaine Jones",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 76,
+    "minutes": 1830,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "denglu01",
+    "player_id": "Luol Deng",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 61,
+    "minutes": 1663,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "welscji01",
+    "player_id": "Jiří Welsch",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 71,
+    "minutes": 1317,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "banksma01",
+    "player_id": "Marcus Banks",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 81,
+    "minutes": 1145,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "mccarwa01",
+    "player_id": "Walter McCarty",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 72,
+    "minutes": 906,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "pavloal01",
+    "player_id": "Sasha Pavlović",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Utah Jazz",
+    "games": 65,
+    "minutes": 862,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "borchcu01",
+    "player_id": "Curtis Borchardt",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Utah Jazz",
+    "games": 67,
+    "minutes": 859,
+    "position": "C"
+   },
+   {
+    "bbr_id": "perkike01",
+    "player_id": "Kendrick Perkins",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 60,
+    "minutes": 548,
+    "position": "C"
+   },
+   {
+    "bbr_id": "brownke01",
+    "player_id": "Kedrick Brown",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 8,
+    "minutes": 55,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "ramospe01",
+    "player_id": "Peter John Ramos",
+    "club": "Boston Celtics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 6,
+    "minutes": 20,
+    "position": "C"
+   }
+  ],
+  "Charlotte Bobcats": [
+   {
+    "bbr_id": "korveky01",
+    "player_id": "Kyle Korver",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2667,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "ridnolu01",
+    "player_id": "Luke Ridnour",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Seattle SuperSonics",
+    "games": 82,
+    "minutes": 2571,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "brunsri01",
+    "player_id": "Rick Brunson",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 1945,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "kaponja01",
+    "player_id": "Jason Kapono",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 81,
+    "minutes": 1491,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "jonesja02",
+    "player_id": "James Jones",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 75,
+    "minutes": 1330,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "livinsh01",
+    "player_id": "Shaun Livingston",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 30,
+    "minutes": 814,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "woodsqy01",
+    "player_id": "Qyntel Woods",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Orleans Hornets",
+    "games": 62,
+    "minutes": 673,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "blakest01",
+    "player_id": "Steve Blake",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Washington Wizards",
+    "games": 44,
+    "minutes": 648,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "planizo01",
+    "player_id": "Zoran Planinić",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Jersey Nets",
+    "games": 43,
+    "minutes": 515,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "pargoja01",
+    "player_id": "Jannero Pargo",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Lakers",
+    "games": 32,
+    "minutes": 453,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "norrimo01",
+    "player_id": "Moochie Norris",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Houston Rockets",
+    "games": 38,
+    "minutes": 360,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "huntebr01",
+    "player_id": "Brandon Hunter",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 31,
+    "minutes": 224,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "outlabo01",
+    "player_id": "Bo Outlaw",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 39,
+    "minutes": 214,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "willifr02",
+    "player_id": "Frank Williams",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 9,
+    "minutes": 71,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "trybace01",
+    "player_id": "Cezary Trybański",
+    "club": "Charlotte Bobcats",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Chicago Bulls": [
+   {
+    "bbr_id": "hinriki01",
+    "player_id": "Kirk Hinrich",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Chicago Bulls",
+    "games": 77,
+    "minutes": 2800,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "crawfja01",
+    "player_id": "Jamal Crawford",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Chicago Bulls",
+    "games": 70,
+    "minutes": 2688,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "chandty01",
+    "player_id": "Tyson Chandler",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Chicago Bulls",
+    "games": 80,
+    "minutes": 2189,
+    "position": "C"
+   },
+   {
+    "bbr_id": "davisan01",
+    "player_id": "Antonio Davis",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Chicago Bulls",
+    "games": 72,
+    "minutes": 1843,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "curryed01",
+    "player_id": "Eddy Curry",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Chicago Bulls",
+    "games": 63,
+    "minutes": 1808,
+    "position": "C"
+   },
+   {
+    "bbr_id": "cardibr01",
+    "player_id": "Brian Cardinal",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Golden State Warriors",
+    "games": 58,
+    "minutes": 1433,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "willije01",
+    "player_id": "Jerome Williams",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Chicago Bulls",
+    "games": 79,
+    "minutes": 1211,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "snydeki01",
+    "player_id": "Kirk Snyder",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 68,
+    "minutes": 906,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "duprero01",
+    "player_id": "Ronald Dupree",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Chicago Bulls",
+    "games": 47,
+    "minutes": 472,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "emmetan01",
+    "player_id": "Andre Emmett",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 8,
+    "minutes": 28,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "jeffech01",
+    "player_id": "Chris Jefferies",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Chicago Bulls",
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   },
+   {
+    "bbr_id": "pippesc01",
+    "player_id": "Scottie Pippen",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Chicago Bulls",
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   },
+   {
+    "bbr_id": "smithto03",
+    "player_id": "smithto03",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   },
+   {
+    "bbr_id": "willija03",
+    "player_id": "willija03",
+    "club": "Chicago Bulls",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Cleveland Cavaliers": [
+   {
+    "bbr_id": "jamesle01",
+    "player_id": "LeBron James",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 80,
+    "minutes": 3388,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "davisri01",
+    "player_id": "Ricky Davis",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 82,
+    "minutes": 2696,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "ilgauzy01",
+    "player_id": "Zydrunas Ilgauskas",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 78,
+    "minutes": 2615,
+    "position": "C"
+   },
+   {
+    "bbr_id": "newblir01",
+    "player_id": "Ira Newble",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 74,
+    "minutes": 1832,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "boozeca01",
+    "player_id": "Carlos Boozer",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 51,
+    "minutes": 1772,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "milesda01",
+    "player_id": "Darius Miles",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 63,
+    "minutes": 1699,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "stackje01",
+    "player_id": "Jerry Stackhouse",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Washington Wizards",
+    "games": 56,
+    "minutes": 1617,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "harride01",
+    "player_id": "Devin Harris",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 76,
+    "minutes": 1173,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "diopde01",
+    "player_id": "DeSagana Diop",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 39,
+    "minutes": 306,
+    "position": "C"
+   },
+   {
+    "bbr_id": "ollieke01",
+    "player_id": "Kevin Ollie",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 26,
+    "minutes": 158,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "stewami01",
+    "player_id": "Michael Stewart",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 12,
+    "minutes": 145,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "wagneda02",
+    "player_id": "Dajuan Wagner",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 11,
+    "minutes": 102,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "cleavma01",
+    "player_id": "Mateen Cleaves",
+    "club": "Cleveland Cavaliers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 14,
+    "minutes": 65,
+    "position": "PG"
+   }
+  ],
+  "Dallas Mavericks": [
+   {
+    "bbr_id": "nowitdi01",
+    "player_id": "Dirk Nowitzki",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Dallas Mavericks",
+    "games": 78,
+    "minutes": 3020,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "walkean02",
+    "player_id": "Antoine Walker",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Dallas Mavericks",
+    "games": 77,
+    "minutes": 2955,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "jamisan01",
+    "player_id": "Antawn Jamison",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Dallas Mavericks",
+    "games": 68,
+    "minutes": 2605,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "nashst01",
+    "player_id": "Steve Nash",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Dallas Mavericks",
+    "games": 75,
+    "minutes": 2573,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "howarjo01",
+    "player_id": "Josh Howard",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Dallas Mavericks",
+    "games": 76,
+    "minutes": 2446,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "finlemi01",
+    "player_id": "Michael Finley",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Dallas Mavericks",
+    "games": 64,
+    "minutes": 2358,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "daniema01",
+    "player_id": "Marquis Daniels",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Dallas Mavericks",
+    "games": 60,
+    "minutes": 1412,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "najered01",
+    "player_id": "Eduardo Nájera",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Dallas Mavericks",
+    "games": 68,
+    "minutes": 1185,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "fortsda01",
+    "player_id": "Danny Fortson",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Dallas Mavericks",
+    "games": 62,
+    "minutes": 1047,
+    "position": "C"
+   },
+   {
+    "bbr_id": "bradlsh01",
+    "player_id": "Shawn Bradley",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Dallas Mavericks",
+    "games": 77,
+    "minutes": 885,
+    "position": "C"
+   },
+   {
+    "bbr_id": "harriju01",
+    "player_id": "Junior Harrington",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 29,
+    "minutes": 550,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "delfica01",
+    "player_id": "Carlos Delfino",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 30,
+    "minutes": 459,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "burksan01",
+    "player_id": "Antonio Burks",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 24,
+    "minutes": 219,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "lenarvo01",
+    "player_id": "Voshon Lenard",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Dallas Mavericks",
+    "games": 3,
+    "minutes": 54,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "abdulta01",
+    "player_id": "abdulta01",
+    "club": "Dallas Mavericks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Denver Nuggets": [
+   {
+    "bbr_id": "millean02",
+    "player_id": "Andre Miller",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Denver Nuggets",
+    "games": 82,
+    "minutes": 2852,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "anthoca01",
+    "player_id": "Carmelo Anthony",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Denver Nuggets",
+    "games": 75,
+    "minutes": 2608,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "szczewa02",
+    "player_id": "Wally Szczerbiak",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Minnesota Timberwolves",
+    "games": 81,
+    "minutes": 2558,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "boykiea01",
+    "player_id": "Earl Boykins",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Denver Nuggets",
+    "games": 82,
+    "minutes": 2162,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "hilarne01",
+    "player_id": "Nenê",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Denver Nuggets",
+    "games": 55,
+    "minutes": 1317,
+    "position": "C"
+   },
+   {
+    "bbr_id": "hoibefr01",
+    "player_id": "Fred Hoiberg",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Denver Nuggets",
+    "games": 76,
+    "minutes": 1272,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "elsonfr01",
+    "player_id": "Francisco Elson",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Denver Nuggets",
+    "games": 67,
+    "minutes": 939,
+    "position": "C"
+   },
+   {
+    "bbr_id": "hardaan01",
+    "player_id": "Anfernee Hardaway",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 37,
+    "minutes": 894,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "araujra01",
+    "player_id": "Rafael Araújo",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 59,
+    "minutes": 736,
+    "position": "C"
+   },
+   {
+    "bbr_id": "whitero02",
+    "player_id": "Rodney White",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Denver Nuggets",
+    "games": 58,
+    "minutes": 677,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "madsema01",
+    "player_id": "Mark Madsen",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Minnesota Timberwolves",
+    "games": 41,
+    "minutes": 601,
+    "position": "C"
+   },
+   {
+    "bbr_id": "bakervi01",
+    "player_id": "Vin Baker",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 27,
+    "minutes": 204,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "reedju01",
+    "player_id": "Justin Reed",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 121,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "thomaja02",
+    "player_id": "James Thomas",
+    "club": "Denver Nuggets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 11,
+    "minutes": 117,
+    "position": "PF"
+   }
+  ],
+  "Detroit Pistons": [
+   {
+    "bbr_id": "hamilri01",
+    "player_id": "Richard Hamilton",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Detroit Pistons",
+    "games": 76,
+    "minutes": 2926,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "atkinch01",
+    "player_id": "Chucky Atkins",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Detroit Pistons",
+    "games": 82,
+    "minutes": 2903,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "billuch01",
+    "player_id": "Chauncey Billups",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Detroit Pistons",
+    "games": 80,
+    "minutes": 2866,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "wallabe01",
+    "player_id": "Ben Wallace",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Detroit Pistons",
+    "games": 74,
+    "minutes": 2671,
+    "position": "C"
+   },
+   {
+    "bbr_id": "dampier01",
+    "player_id": "Erick Dampier",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Detroit Pistons",
+    "games": 59,
+    "minutes": 1609,
+    "position": "C"
+   },
+   {
+    "bbr_id": "willico02",
+    "player_id": "Corliss Williamson",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Detroit Pistons",
+    "games": 72,
+    "minutes": 1527,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "arizatr01",
+    "player_id": "Trevor Ariza",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 1382,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "telfase01",
+    "player_id": "Sebastian Telfair",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 68,
+    "minutes": 1330,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "humphkr01",
+    "player_id": "Kris Humphries",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 67,
+    "minutes": 873,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "medvest01",
+    "player_id": "Stanislav Medvedenko",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Lakers",
+    "games": 43,
+    "minutes": 423,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "campbel01",
+    "player_id": "Elden Campbell",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Detroit Pistons",
+    "games": 40,
+    "minutes": 390,
+    "position": "C"
+   },
+   {
+    "bbr_id": "milicda01",
+    "player_id": "Darko Miličić",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Detroit Pistons",
+    "games": 37,
+    "minutes": 254,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jonesma03",
+    "player_id": "Mark Jones",
+    "club": "Detroit Pistons",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 10,
+    "minutes": 116,
+    "position": "SF"
+   }
+  ],
+  "Golden State Warriors": [
+   {
+    "bbr_id": "princta01",
+    "player_id": "Tayshaun Prince",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Golden State Warriors",
+    "games": 82,
+    "minutes": 3039,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "richaja01",
+    "player_id": "Jason Richardson",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Golden State Warriors",
+    "games": 72,
+    "minutes": 2724,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "dunlemi02",
+    "player_id": "Mike Dunleavy",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Golden State Warriors",
+    "games": 79,
+    "minutes": 2570,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "murphtr01",
+    "player_id": "Troy Murphy",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Golden State Warriors",
+    "games": 70,
+    "minutes": 2375,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "claxtsp01",
+    "player_id": "Speedy Claxton",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Golden State Warriors",
+    "games": 62,
+    "minutes": 1866,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "snower01",
+    "player_id": "Eric Snow",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Philadelphia 76ers",
+    "games": 81,
+    "minutes": 1844,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "robincl02",
+    "player_id": "Clifford Robinson",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Golden State Warriors",
+    "games": 71,
+    "minutes": 1689,
+    "position": "C"
+   },
+   {
+    "bbr_id": "pietrmi01",
+    "player_id": "Mickaël Piétrus",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Golden State Warriors",
+    "games": 67,
+    "minutes": 1340,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "varejan01",
+    "player_id": "Anderson Varejão",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 54,
+    "minutes": 863,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "boothca01",
+    "player_id": "Calvin Booth",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Seattle SuperSonics",
+    "games": 51,
+    "minutes": 451,
+    "position": "C"
+   },
+   {
+    "bbr_id": "chalmli01",
+    "player_id": "Lionel Chalmers",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 36,
+    "minutes": 433,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "potapvi01",
+    "player_id": "Vitaly Potapenko",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Seattle SuperSonics",
+    "games": 33,
+    "minutes": 335,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jenkiho01",
+    "player_id": "Horace Jenkins",
+    "club": "Golden State Warriors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 15,
+    "minutes": 104,
+    "position": "PG"
+   }
+  ],
+  "Houston Rockets": [
+   {
+    "bbr_id": "francst01",
+    "player_id": "Steve Francis",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Houston Rockets",
+    "games": 78,
+    "minutes": 2978,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "mingya01",
+    "player_id": "Yao Ming",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Houston Rockets",
+    "games": 80,
+    "minutes": 2447,
+    "position": "C"
+   },
+   {
+    "bbr_id": "moblecu01",
+    "player_id": "Cuttino Mobley",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Houston Rockets",
+    "games": 66,
+    "minutes": 2388,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "jacksji01",
+    "player_id": "Jim Jackson",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Houston Rockets",
+    "games": 64,
+    "minutes": 1987,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "giricgo01",
+    "player_id": "Gordan Giriček",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 81,
+    "minutes": 1660,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "catoke01",
+    "player_id": "Kelvin Cato",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Houston Rockets",
+    "games": 62,
+    "minutes": 1525,
+    "position": "C"
+   },
+   {
+    "bbr_id": "griffed01",
+    "player_id": "Eddie Griffin",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 70,
+    "minutes": 1492,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "nachbbo01",
+    "player_id": "Boštjan Nachbar",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Houston Rockets",
+    "games": 71,
+    "minutes": 1341,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "tayloma01",
+    "player_id": "Maurice Taylor",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Houston Rockets",
+    "games": 65,
+    "minutes": 1336,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "piatker01",
+    "player_id": "Eric Piatkowski",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Houston Rockets",
+    "games": 68,
+    "minutes": 841,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "griffad01",
+    "player_id": "Adrian Griffin",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Houston Rockets",
+    "games": 69,
+    "minutes": 667,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "peelean01",
+    "player_id": "Anthony Peeler",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Sacramento Kings",
+    "games": 40,
+    "minutes": 529,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "sampsja01",
+    "player_id": "Jamal Sampson",
+    "club": "Houston Rockets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Houston Rockets",
+    "games": 23,
+    "minutes": 329,
+    "position": "PF"
+   }
+  ],
+  "Indiana Pacers": [
+   {
+    "bbr_id": "harrial01",
+    "player_id": "Al Harrington",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 66,
+    "minutes": 2550,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "brezepr01",
+    "player_id": "Primož Brezec",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 72,
+    "minutes": 2276,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jonesfr01",
+    "player_id": "Fred Jones",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 77,
+    "minutes": 2268,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "millere01",
+    "player_id": "Reggie Miller",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 66,
+    "minutes": 2105,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "croshau01",
+    "player_id": "Austin Croshere",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 73,
+    "minutes": 1827,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "fosteje01",
+    "player_id": "Jeff Foster",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 61,
+    "minutes": 1594,
+    "position": "C"
+   },
+   {
+    "bbr_id": "onealje01",
+    "player_id": "Jermaine O'Neal",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 44,
+    "minutes": 1530,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "barryjo01",
+    "player_id": "Jon Barry",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Denver Nuggets",
+    "games": 69,
+    "minutes": 1505,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "tinslja01",
+    "player_id": "Jamaal Tinsley",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 40,
+    "minutes": 1301,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "pollasc01",
+    "player_id": "Scot Pollard",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 49,
+    "minutes": 865,
+    "position": "C"
+   },
+   {
+    "bbr_id": "artesro01",
+    "player_id": "Metta World Peace",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 7,
+    "minutes": 291,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "parkesm01",
+    "player_id": "Smush Parker",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 16,
+    "minutes": 144,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "bendejo01",
+    "player_id": "Jonathan Bender",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 7,
+    "minutes": 93,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "mccoyje01",
+    "player_id": "Jelani McCoy",
+    "club": "Indiana Pacers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Cleveland Cavaliers",
+    "games": 10,
+    "minutes": 88,
+    "position": "C"
+   }
+  ],
+  "Los Angeles Clippers": [
+   {
+    "bbr_id": "brandel01",
+    "player_id": "Elton Brand",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Clippers",
+    "games": 81,
+    "minutes": 3001,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "richaqu01",
+    "player_id": "Quentin Richardson",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Clippers",
+    "games": 79,
+    "minutes": 2839,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "simmobo01",
+    "player_id": "Bobby Simmons",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Clippers",
+    "games": 75,
+    "minutes": 2799,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "maggeco01",
+    "player_id": "Corey Maggette",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Clippers",
+    "games": 66,
+    "minutes": 2436,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "odomla01",
+    "player_id": "Lamar Odom",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Clippers",
+    "games": 64,
+    "minutes": 2320,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "jaricma01",
+    "player_id": "Marko Jarić",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Clippers",
+    "games": 50,
+    "minutes": 1656,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "elyme01",
+    "player_id": "Melvin Ely",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Clippers",
+    "games": 79,
+    "minutes": 1649,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "kamanch01",
+    "player_id": "Chris Kaman",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Clippers",
+    "games": 63,
+    "minutes": 1632,
+    "position": "C"
+   },
+   {
+    "bbr_id": "drobnpr01",
+    "player_id": "Predrag Drobnjak",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Clippers",
+    "games": 71,
+    "minutes": 1435,
+    "position": "C"
+   },
+   {
+    "bbr_id": "traylro01",
+    "player_id": "Robert Traylor",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Orleans Hornets",
+    "games": 74,
+    "minutes": 1327,
+    "position": "C"
+   },
+   {
+    "bbr_id": "wilcoch01",
+    "player_id": "Chris Wilcox",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Clippers",
+    "games": 54,
+    "minutes": 1005,
+    "position": "C"
+   },
+   {
+    "bbr_id": "houseed01",
+    "player_id": "Eddie House",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Clippers",
+    "games": 68,
+    "minutes": 891,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "biedran01",
+    "player_id": "Andris Biedriņš",
+    "club": "Los Angeles Clippers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 30,
+    "minutes": 384,
+    "position": "C"
+   }
+  ],
+  "Los Angeles Lakers": [
+   {
+    "bbr_id": "bryanko01",
+    "player_id": "Kobe Bryant",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Lakers",
+    "games": 66,
+    "minutes": 2689,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "paytoga01",
+    "player_id": "Gary Payton",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Lakers",
+    "games": 77,
+    "minutes": 2541,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "onealsh01",
+    "player_id": "Shaquille O'Neal",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Lakers",
+    "games": 67,
+    "minutes": 2464,
+    "position": "C"
+   },
+   {
+    "bbr_id": "cookbr01",
+    "player_id": "Brian Cook",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Lakers",
+    "games": 72,
+    "minutes": 1087,
+    "position": "C"
+   },
+   {
+    "bbr_id": "rushka01",
+    "player_id": "Kareem Rush",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Lakers",
+    "games": 48,
+    "minutes": 968,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "waltolu01",
+    "player_id": "Luke Walton",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Lakers",
+    "games": 61,
+    "minutes": 768,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "khryavi01",
+    "player_id": "Viktor Khryapa",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 32,
+    "minutes": 523,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "wilkida02",
+    "player_id": "Damien Wilkins",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 29,
+    "minutes": 520,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "profila01",
+    "player_id": "Laron Profit",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 42,
+    "minutes": 428,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "thomabi01",
+    "player_id": "Billy Thomas",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 25,
+    "minutes": 356,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "georgde01",
+    "player_id": "Devean George",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Lakers",
+    "games": 15,
+    "minutes": 306,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "marksse01",
+    "player_id": "Sean Marks",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 244,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "popema01",
+    "player_id": "Mark Pope",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 9,
+    "minutes": 27,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "allenma01",
+    "player_id": "allenma01",
+    "club": "Los Angeles Lakers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Memphis Grizzlies": [
+   {
+    "bbr_id": "battish01",
+    "player_id": "Shane Battier",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 80,
+    "minutes": 2516,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "wrighlo02",
+    "player_id": "Lorenzen Wright",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 80,
+    "minutes": 2287,
+    "position": "C"
+   },
+   {
+    "bbr_id": "millemi01",
+    "player_id": "Mike Miller",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 76,
+    "minutes": 2278,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "willija02",
+    "player_id": "Jason Williams",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 71,
+    "minutes": 1952,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "smithjr01",
+    "player_id": "J.R. Smith",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 76,
+    "minutes": 1859,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "watsoea01",
+    "player_id": "Earl Watson",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 80,
+    "minutes": 1808,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "gasolpa01",
+    "player_id": "Pau Gasol",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 56,
+    "minutes": 1790,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "wellsbo01",
+    "player_id": "Bonzi Wells",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 69,
+    "minutes": 1489,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "poseyja01",
+    "player_id": "James Posey",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 50,
+    "minutes": 1382,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "swiftst01",
+    "player_id": "Stromile Swift",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 60,
+    "minutes": 1279,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "jonesda02",
+    "player_id": "Dahntay Jones",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 52,
+    "minutes": 649,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "humphry01",
+    "player_id": "Ryan Humphrey",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 35,
+    "minutes": 317,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "tsakaja01",
+    "player_id": "Jake Tsakalidis",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Memphis Grizzlies",
+    "games": 31,
+    "minutes": 278,
+    "position": "C"
+   },
+   {
+    "bbr_id": "glovedi01",
+    "player_id": "Dion Glover",
+    "club": "Memphis Grizzlies",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Atlanta Hawks",
+    "games": 7,
+    "minutes": 68,
+    "position": "SG"
+   }
+  ],
+  "Milwaukee Bucks": [
+   {
+    "bbr_id": "masonde01",
+    "player_id": "Desmond Mason",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 80,
+    "minutes": 2893,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "reddmi01",
+    "player_id": "Michael Redd",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 75,
+    "minutes": 2848,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "smithjo02",
+    "player_id": "Joe Smith",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 74,
+    "minutes": 2265,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "jonesda01",
+    "player_id": "Damon Jones",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 82,
+    "minutes": 2016,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "thomati01",
+    "player_id": "Tim Thomas",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 71,
+    "minutes": 1940,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "gadzuda01",
+    "player_id": "Dan Gadzuric",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 81,
+    "minutes": 1783,
+    "position": "C"
+   },
+   {
+    "bbr_id": "stricer01",
+    "player_id": "Erick Strickland",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 62,
+    "minutes": 1014,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "vromaja01",
+    "player_id": "Jackson Vroman",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 46,
+    "minutes": 705,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "sowpa01",
+    "player_id": "Pape Sow",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 27,
+    "minutes": 255,
+    "position": "C"
+   },
+   {
+    "bbr_id": "haislma01",
+    "player_id": "Marcus Haislip",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 9,
+    "minutes": 106,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "santida01",
+    "player_id": "Daniel Santiago",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 11,
+    "minutes": 105,
+    "position": "C"
+   },
+   {
+    "bbr_id": "johnsbr01",
+    "player_id": "Britton Johnsen",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 6,
+    "minutes": 87,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "fordtj01",
+    "player_id": "T.J. Ford",
+    "club": "Milwaukee Bucks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Minnesota Timberwolves": [
+   {
+    "bbr_id": "garneke01",
+    "player_id": "Kevin Garnett",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Minnesota Timberwolves",
+    "games": 82,
+    "minutes": 3121,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "sprewla01",
+    "player_id": "Latrell Sprewell",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Minnesota Timberwolves",
+    "games": 80,
+    "minutes": 2450,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "hassetr01",
+    "player_id": "Trenton Hassell",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Minnesota Timberwolves",
+    "games": 82,
+    "minutes": 2068,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "cambyma01",
+    "player_id": "Marcus Camby",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Minnesota Timberwolves",
+    "games": 66,
+    "minutes": 2015,
+    "position": "C"
+   },
+   {
+    "bbr_id": "cassesa01",
+    "player_id": "Sam Cassell",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Minnesota Timberwolves",
+    "games": 59,
+    "minutes": 1522,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "vaughja01",
+    "player_id": "Jacque Vaughn",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Atlanta Hawks",
+    "games": 71,
+    "minutes": 1410,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "delkto01",
+    "player_id": "Tony Delk",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Denver Nuggets",
+    "games": 56,
+    "minutes": 1340,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "brownti01",
+    "player_id": "Tierre Brown",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Orleans Hornets",
+    "games": 76,
+    "minutes": 1066,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "johnser02",
+    "player_id": "Ervin Johnson",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Minnesota Timberwolves",
+    "games": 46,
+    "minutes": 410,
+    "position": "C"
+   },
+   {
+    "bbr_id": "wardch01",
+    "player_id": "Charlie Ward",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 14,
+    "minutes": 360,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "alexaco01",
+    "player_id": "Cory Alexander",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 16,
+    "minutes": 201,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "ebind01",
+    "player_id": "Ndudi Ebi",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Minnesota Timberwolves",
+    "games": 2,
+    "minutes": 54,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "kutluib01",
+    "player_id": "Ibo Kutluay",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 5,
+    "minutes": 12,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "knighbr02",
+    "player_id": "Brandin Knight",
+    "club": "Minnesota Timberwolves",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 1,
+    "minutes": 3,
+    "position": "PG"
+   }
+  ],
+  "New Jersey Nets": [
+   {
+    "bbr_id": "collija04",
+    "player_id": "Jason Collins",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Jersey Nets",
+    "games": 80,
+    "minutes": 2542,
+    "position": "C"
+   },
+   {
+    "bbr_id": "kiddja01",
+    "player_id": "Jason Kidd",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Jersey Nets",
+    "games": 66,
+    "minutes": 2435,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "martike01",
+    "player_id": "Kenyon Martin",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Jersey Nets",
+    "games": 70,
+    "minutes": 2272,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "horryro01",
+    "player_id": "Robert Horry",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Golden State Warriors",
+    "games": 75,
+    "minutes": 1396,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "jefferi01",
+    "player_id": "Richard Jefferson",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Jersey Nets",
+    "games": 33,
+    "minutes": 1355,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "ruffimi01",
+    "player_id": "Michael Ruffin",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Utah Jazz",
+    "games": 79,
+    "minutes": 1262,
+    "position": "C"
+   },
+   {
+    "bbr_id": "scalabr01",
+    "player_id": "Brian Scalabrine",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Jersey Nets",
+    "games": 54,
+    "minutes": 1167,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "harrilu01",
+    "player_id": "Lucious Harris",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Jersey Nets",
+    "games": 73,
+    "minutes": 1128,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "kukocto01",
+    "player_id": "Toni Kukoč",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 53,
+    "minutes": 1099,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "mournal01",
+    "player_id": "Alonzo Mourning",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Jersey Nets",
+    "games": 18,
+    "minutes": 457,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "williaa01",
+    "player_id": "Aaron Williams",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Jersey Nets",
+    "games": 42,
+    "minutes": 315,
+    "position": "C"
+   },
+   {
+    "bbr_id": "kittlke01",
+    "player_id": "Kerry Kittles",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Jersey Nets",
+    "games": 11,
+    "minutes": 243,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "danieer01",
+    "player_id": "Erik Daniels",
+    "club": "New Jersey Nets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 21,
+    "minutes": 72,
+    "position": "SF"
+   }
+  ],
+  "New Orleans Hornets": [
+   {
+    "bbr_id": "brownpj01",
+    "player_id": "P.J. Brown",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Orleans Hornets",
+    "games": 82,
+    "minutes": 2817,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "mcinnje01",
+    "player_id": "Jeff McInnis",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Orleans Hornets",
+    "games": 76,
+    "minutes": 2651,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "mcdyean01",
+    "player_id": "Antonio McDyess",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Toronto Raptors",
+    "games": 77,
+    "minutes": 1797,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "davisba01",
+    "player_id": "Baron Davis",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Orleans Hornets",
+    "games": 46,
+    "minutes": 1581,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "willier01",
+    "player_id": "Eric Williams",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 55,
+    "minutes": 1322,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "huntest01",
+    "player_id": "Steven Hunter",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 76,
+    "minutes": 1046,
+    "position": "C"
+   },
+   {
+    "bbr_id": "armstda01",
+    "player_id": "Darrell Armstrong",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Orleans Hornets",
+    "games": 66,
+    "minutes": 988,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "lynchge01",
+    "player_id": "George Lynch",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Orleans Hornets",
+    "games": 44,
+    "minutes": 933,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "magloja01",
+    "player_id": "Jamaal Magloire",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Orleans Hornets",
+    "games": 23,
+    "minutes": 703,
+    "position": "C"
+   },
+   {
+    "bbr_id": "westda01",
+    "player_id": "David West",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Orleans Hornets",
+    "games": 30,
+    "minutes": 552,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "walkesa01",
+    "player_id": "Samaki Walker",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Lakers",
+    "games": 14,
+    "minutes": 134,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "swiftro01",
+    "player_id": "Robert Swift",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 16,
+    "minutes": 72,
+    "position": "C"
+   },
+   {
+    "bbr_id": "mashbja01",
+    "player_id": "Jamal Mashburn",
+    "club": "New Orleans Hornets",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New Orleans Hornets",
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "New York Knicks": [
+   {
+    "bbr_id": "thomaku01",
+    "player_id": "Kurt Thomas",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 80,
+    "minutes": 2855,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "iguodan01",
+    "player_id": "Andre Iguodala",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2686,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "krstine01",
+    "player_id": "Nenad Krstić",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 75,
+    "minutes": 1965,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "palacmi01",
+    "player_id": "Milt Palacio",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 80,
+    "minutes": 1533,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "sweetmi01",
+    "player_id": "Mike Sweetney",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 77,
+    "minutes": 1509,
+    "position": "C"
+   },
+   {
+    "bbr_id": "vanhoke01",
+    "player_id": "Keith Van Horn",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 62,
+    "minutes": 1502,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "eisleho01",
+    "player_id": "Howard Eisley",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 74,
+    "minutes": 1428,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "harriot01",
+    "player_id": "Othella Harrington",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 70,
+    "minutes": 1271,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "mutomdi01",
+    "player_id": "Dikembe Mutombo",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 80,
+    "minutes": 1212,
+    "position": "C"
+   },
+   {
+    "bbr_id": "doleami01",
+    "player_id": "Michael Doleac",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 72,
+    "minutes": 1029,
+    "position": "C"
+   },
+   {
+    "bbr_id": "houstal01",
+    "player_id": "Allan Houston",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 20,
+    "minutes": 532,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "weathcl01",
+    "player_id": "Clarence Weatherspoon",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "New York Knicks",
+    "games": 40,
+    "minutes": 525,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "martike02",
+    "player_id": "Kevin Martin",
+    "club": "New York Knicks",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 45,
+    "minutes": 455,
+    "position": "PG"
+   }
+  ],
+  "Orlando Magic": [
+   {
+    "bbr_id": "mcgratr01",
+    "player_id": "Tracy McGrady",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 78,
+    "minutes": 3182,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "howardw01",
+    "player_id": "Dwight Howard",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2670,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "goodedr01",
+    "player_id": "Drew Gooden",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 82,
+    "minutes": 2523,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "hillgr01",
+    "player_id": "Grant Hill",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 67,
+    "minutes": 2338,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "luety01",
+    "player_id": "Tyronn Lue",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 70,
+    "minutes": 2007,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "boganke01",
+    "player_id": "Keith Bogans",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 74,
+    "minutes": 1791,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "howarju01",
+    "player_id": "Juwan Howard",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 61,
+    "minutes": 1624,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "anderch01",
+    "player_id": "Chris Andersen",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Dallas Mavericks",
+    "games": 67,
+    "minutes": 1430,
+    "position": "C"
+   },
+   {
+    "bbr_id": "pachuza01",
+    "player_id": "Zaza Pachulia",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 74,
+    "minutes": 1397,
+    "position": "C"
+   },
+   {
+    "bbr_id": "garripa01",
+    "player_id": "Pat Garrity",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 71,
+    "minutes": 955,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "harrida01",
+    "player_id": "David Harrison",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 43,
+    "minutes": 760,
+    "position": "C"
+   },
+   {
+    "bbr_id": "kasunma01",
+    "player_id": "Mario Kasun",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 45,
+    "minutes": 356,
+    "position": "C"
+   },
+   {
+    "bbr_id": "gainere01",
+    "player_id": "Reece Gaines",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 21,
+    "minutes": 187,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "declean01",
+    "player_id": "Andrew DeClercq",
+    "club": "Orlando Magic",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 8,
+    "minutes": 49,
+    "position": "C"
+   }
+  ],
+  "Philadelphia 76ers": [
+   {
+    "bbr_id": "iversal01",
+    "player_id": "Allen Iverson",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Philadelphia 76ers",
+    "games": 75,
+    "minutes": 3174,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "thomake01",
+    "player_id": "Kenny Thomas",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Philadelphia 76ers",
+    "games": 73,
+    "minutes": 2167,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "jacksma02",
+    "player_id": "Marc Jackson",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Philadelphia 76ers",
+    "games": 81,
+    "minutes": 1976,
+    "position": "C"
+   },
+   {
+    "bbr_id": "dalemsa01",
+    "player_id": "Samuel Dalembert",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Philadelphia 76ers",
+    "games": 72,
+    "minutes": 1785,
+    "position": "C"
+   },
+   {
+    "bbr_id": "buckngr01",
+    "player_id": "Greg Buckner",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Philadelphia 76ers",
+    "games": 70,
+    "minutes": 1522,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "mckieaa01",
+    "player_id": "Aaron McKie",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Philadelphia 76ers",
+    "games": 68,
+    "minutes": 1118,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "greenwi01",
+    "player_id": "Willie Green",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 57,
+    "minutes": 1066,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "salmojo01",
+    "player_id": "John Salmons",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Philadelphia 76ers",
+    "games": 58,
+    "minutes": 993,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "robingl01",
+    "player_id": "Glenn Robinson",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Philadelphia 76ers",
+    "games": 9,
+    "minutes": 157,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "colemde01",
+    "player_id": "Derrick Coleman",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Philadelphia 76ers",
+    "games": 5,
+    "minutes": 50,
+    "position": "C"
+   },
+   {
+    "bbr_id": "podkopa01",
+    "player_id": "Pavel Podkolzin",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 5,
+    "minutes": 10,
+    "position": "C"
+   },
+   {
+    "bbr_id": "butleja01",
+    "player_id": "Jackie Butler",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 3,
+    "minutes": 5,
+    "position": "C"
+   },
+   {
+    "bbr_id": "maccuto01",
+    "player_id": "maccuto01",
+    "club": "Philadelphia 76ers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Phoenix Suns": [
+   {
+    "bbr_id": "marbust01",
+    "player_id": "Stephon Marbury",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 82,
+    "minutes": 3281,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "johnsjo02",
+    "player_id": "Joe Johnson",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 82,
+    "minutes": 3240,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "mariosh01",
+    "player_id": "Shawn Marion",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 81,
+    "minutes": 3146,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "stoudam01",
+    "player_id": "Amar'e Stoudemire",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 80,
+    "minutes": 2889,
+    "position": "C"
+   },
+   {
+    "bbr_id": "childjo01",
+    "player_id": "Josh Childress",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 2376,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "duhonch01",
+    "player_id": "Chris Duhon",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2177,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "jacobca01",
+    "player_id": "Casey Jacobsen",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 84,
+    "minutes": 1798,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "olowomi01",
+    "player_id": "Michael Olowokandi",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Denver Nuggets",
+    "games": 62,
+    "minutes": 1215,
+    "position": "C"
+   },
+   {
+    "bbr_id": "barbole01",
+    "player_id": "Leandro Barbosa",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 63,
+    "minutes": 1087,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "cabarza01",
+    "player_id": "Žarko Čabarkapa",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 40,
+    "minutes": 475,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "lampema01",
+    "player_id": "Maciej Lampe",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 37,
+    "minutes": 380,
+    "position": "C"
+   },
+   {
+    "bbr_id": "voskuja01",
+    "player_id": "Jake Voskuhl",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 38,
+    "minutes": 360,
+    "position": "C"
+   },
+   {
+    "bbr_id": "tskitni01",
+    "player_id": "Nikoloz Tskitishvili",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Denver Nuggets",
+    "games": 35,
+    "minutes": 220,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "whiteja01",
+    "player_id": "Jahidi White",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 17,
+    "minutes": 135,
+    "position": "C"
+   },
+   {
+    "bbr_id": "sundobr01",
+    "player_id": "Bruno Šundov",
+    "club": "Phoenix Suns",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Phoenix Suns",
+    "games": 21,
+    "minutes": 73,
+    "position": "C"
+   }
+  ],
+  "Portland Trail Blazers": [
+   {
+    "bbr_id": "wesleda01",
+    "player_id": "David Wesley",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Portland Trail Blazers",
+    "games": 80,
+    "minutes": 2774,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "stoudda01",
+    "player_id": "Damon Stoudamire",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Portland Trail Blazers",
+    "games": 81,
+    "minutes": 2762,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "wallara01",
+    "player_id": "Rasheed Wallace",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Portland Trail Blazers",
+    "games": 79,
+    "minutes": 2687,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "patteru01",
+    "player_id": "Ruben Patterson",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Portland Trail Blazers",
+    "games": 70,
+    "minutes": 1957,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "przybjo01",
+    "player_id": "Joel Przybilla",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 76,
+    "minutes": 1858,
+    "position": "C"
+   },
+   {
+    "bbr_id": "randoza01",
+    "player_id": "Zach Randolph",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Portland Trail Blazers",
+    "games": 46,
+    "minutes": 1603,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "davisda01",
+    "player_id": "Dale Davis",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Portland Trail Blazers",
+    "games": 61,
+    "minutes": 1307,
+    "position": "C"
+   },
+   {
+    "bbr_id": "anderde01",
+    "player_id": "Derek Anderson",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Portland Trail Blazers",
+    "games": 47,
+    "minutes": 1239,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "outlatr01",
+    "player_id": "Travis Outlaw",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Portland Trail Blazers",
+    "games": 59,
+    "minutes": 793,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "handlbe01",
+    "player_id": "Ben Handlogten",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Utah Jazz",
+    "games": 21,
+    "minutes": 297,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jackslu02",
+    "player_id": "Luke Jackson",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 10,
+    "minutes": 43,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "carlige01",
+    "player_id": "Geno Carlisle",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 6,
+    "minutes": 16,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "stepavl01",
+    "player_id": "Vladimir Stepania",
+    "club": "Portland Trail Blazers",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Portland Trail Blazers",
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Sacramento Kings": [
+   {
+    "bbr_id": "bibbymi01",
+    "player_id": "Mike Bibby",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Sacramento Kings",
+    "games": 80,
+    "minutes": 3084,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "stojape01",
+    "player_id": "Peja Stojaković",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Sacramento Kings",
+    "games": 66,
+    "minutes": 2534,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "webbech01",
+    "player_id": "Chris Webber",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Sacramento Kings",
+    "games": 67,
+    "minutes": 2370,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "wallage01",
+    "player_id": "Gerald Wallace",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Sacramento Kings",
+    "games": 70,
+    "minutes": 2147,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "millebr01",
+    "player_id": "Brad Miller",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Sacramento Kings",
+    "games": 56,
+    "minutes": 2089,
+    "position": "C"
+   },
+   {
+    "bbr_id": "songada01",
+    "player_id": "Darius Songaila",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Sacramento Kings",
+    "games": 81,
+    "minutes": 1668,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "chrisdo01",
+    "player_id": "Doug Christie",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Sacramento Kings",
+    "games": 52,
+    "minutes": 1525,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "udrihbe01",
+    "player_id": "Beno Udrih",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 80,
+    "minutes": 1149,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "jacksbo01",
+    "player_id": "Bobby Jackson",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Sacramento Kings",
+    "games": 25,
+    "minutes": 536,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "vujacsa01",
+    "player_id": "Sasha Vujačić",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 35,
+    "minutes": 403,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "davisjo02",
+    "player_id": "Josh Davis",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 42,
+    "minutes": 328,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "brownda02",
+    "player_id": "Damone Brown",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 14,
+    "minutes": 152,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "reineja01",
+    "player_id": "Jared Reiner",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 19,
+    "minutes": 132,
+    "position": "C"
+   },
+   {
+    "bbr_id": "dickeka01",
+    "player_id": "Kaniel Dickens",
+    "club": "Sacramento Kings",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 11,
+    "minutes": 61,
+    "position": "SF"
+   }
+  ],
+  "San Antonio Spurs": [
+   {
+    "bbr_id": "parketo01",
+    "player_id": "Tony Parker",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "San Antonio Spurs",
+    "games": 80,
+    "minutes": 2735,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "duncati01",
+    "player_id": "Tim Duncan",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "San Antonio Spurs",
+    "games": 66,
+    "minutes": 2203,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "ginobma01",
+    "player_id": "Manu Ginóbili",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "San Antonio Spurs",
+    "games": 74,
+    "minutes": 2193,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "nocioan01",
+    "player_id": "Andrés Nocioni",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 81,
+    "minutes": 1892,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "nestera01",
+    "player_id": "Rasho Nesterović",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "San Antonio Spurs",
+    "games": 70,
+    "minutes": 1785,
+    "position": "C"
+   },
+   {
+    "bbr_id": "vanexni01",
+    "player_id": "Nick Van Exel",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "San Antonio Spurs",
+    "games": 53,
+    "minutes": 1619,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "rosema01",
+    "player_id": "Malik Rose",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "San Antonio Spurs",
+    "games": 76,
+    "minutes": 1475,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "allento01",
+    "player_id": "Tony Allen",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 77,
+    "minutes": 1262,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "brownde02",
+    "player_id": "Devin Brown",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "San Antonio Spurs",
+    "games": 67,
+    "minutes": 1238,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "garcial01",
+    "player_id": "Alex Garcia",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "San Antonio Spurs",
+    "games": 8,
+    "minutes": 146,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "mbengdj01",
+    "player_id": "D.J. Mbenga",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 15,
+    "minutes": 58,
+    "position": "C"
+   },
+   {
+    "bbr_id": "harvedo01",
+    "player_id": "Donnell Harvey",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Orlando Magic",
+    "games": 3,
+    "minutes": 16,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "millean01",
+    "player_id": "Anthony Miller",
+    "club": "San Antonio Spurs",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 2,
+    "minutes": 9,
+    "position": "PF"
+   }
+  ],
+  "Seattle SuperSonics": [
+   {
+    "bbr_id": "allenra02",
+    "player_id": "Ray Allen",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Seattle SuperSonics",
+    "games": 78,
+    "minutes": 3064,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "lewisra02",
+    "player_id": "Rashard Lewis",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Seattle SuperSonics",
+    "games": 71,
+    "minutes": 2697,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "daniean01",
+    "player_id": "Antonio Daniels",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Seattle SuperSonics",
+    "games": 75,
+    "minutes": 2026,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "evansre01",
+    "player_id": "Reggie Evans",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Seattle SuperSonics",
+    "games": 79,
+    "minutes": 1881,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "radmavl01",
+    "player_id": "Vladimir Radmanović",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Seattle SuperSonics",
+    "games": 63,
+    "minutes": 1856,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "nelsoja01",
+    "player_id": "Jameer Nelson",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 79,
+    "minutes": 1612,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "collini01",
+    "player_id": "Nick Collison",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 1396,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jamesje01",
+    "player_id": "Jerome James",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Seattle SuperSonics",
+    "games": 80,
+    "minutes": 1330,
+    "position": "C"
+   },
+   {
+    "bbr_id": "murraro01",
+    "player_id": "Ronald Murray",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Seattle SuperSonics",
+    "games": 49,
+    "minutes": 883,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "ostergr01",
+    "player_id": "Greg Ostertag",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Utah Jazz",
+    "games": 56,
+    "minutes": 556,
+    "position": "C"
+   },
+   {
+    "bbr_id": "frahmri01",
+    "player_id": "Richie Frahm",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Seattle SuperSonics",
+    "games": 43,
+    "minutes": 499,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "edwarco01",
+    "player_id": "Corsley Edwards",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 10,
+    "minutes": 110,
+    "position": "C"
+   },
+   {
+    "bbr_id": "seungha01",
+    "player_id": "Ha Seung-Jin",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 19,
+    "minutes": 104,
+    "position": "C"
+   },
+   {
+    "bbr_id": "andersh01",
+    "player_id": "Shandon Anderson",
+    "club": "Seattle SuperSonics",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Golden State Warriors",
+    "games": 1,
+    "minutes": 20,
+    "position": "SG"
+   }
+  ],
+  "Toronto Raptors": [
+   {
+    "bbr_id": "boshch01",
+    "player_id": "Chris Bosh",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Toronto Raptors",
+    "games": 81,
+    "minutes": 3017,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "cartevi01",
+    "player_id": "Vince Carter",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Toronto Raptors",
+    "games": 77,
+    "minutes": 2828,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "petermo01",
+    "player_id": "Morris Peterson",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Toronto Raptors",
+    "games": 82,
+    "minutes": 2510,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "turkohe01",
+    "player_id": "Hedo Türkoğlu",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "San Antonio Spurs",
+    "games": 67,
+    "minutes": 1757,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "marshdo01",
+    "player_id": "Donyell Marshall",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Toronto Raptors",
+    "games": 65,
+    "minutes": 1645,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "bonnema01",
+    "player_id": "Matt Bonner",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 1553,
+    "position": "C"
+   },
+   {
+    "bbr_id": "jeffeal01",
+    "player_id": "Al Jefferson",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 71,
+    "minutes": 1051,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "murrala01",
+    "player_id": "Lamond Murray",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Toronto Raptors",
+    "games": 62,
+    "minutes": 918,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "anderke01",
+    "player_id": "Kenny Anderson",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Indiana Pacers",
+    "games": 43,
+    "minutes": 743,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "ekeziob01",
+    "player_id": "Obinna Ekezie",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 42,
+    "minutes": 732,
+    "position": "C"
+   },
+   {
+    "bbr_id": "freijma01",
+    "player_id": "Matt Freije",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 23,
+    "minutes": 441,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "divacvl01",
+    "player_id": "Vlade Divac",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Sacramento Kings",
+    "games": 15,
+    "minutes": 130,
+    "position": "C"
+   },
+   {
+    "bbr_id": "radojal01",
+    "player_id": "Aleksandar Radojević",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 12,
+    "minutes": 128,
+    "position": "C"
+   },
+   {
+    "bbr_id": "baxtelo01",
+    "player_id": "Lonny Baxter",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Toronto Raptors",
+    "games": 4,
+    "minutes": 36,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "willial02",
+    "player_id": "Alvin Williams",
+    "club": "Toronto Raptors",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Toronto Raptors",
+    "games": 0,
+    "minutes": 0,
+    "position": null
+   }
+  ],
+  "Utah Jazz": [
+   {
+    "bbr_id": "harprma01",
+    "player_id": "Matt Harpring",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Utah Jazz",
+    "games": 78,
+    "minutes": 2584,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "lafrera01",
+    "player_id": "Raef LaFrentz",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Boston Celtics",
+    "games": 80,
+    "minutes": 2196,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "smithjo03",
+    "player_id": "Josh Smith",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 74,
+    "minutes": 2050,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "gordobe01",
+    "player_id": "Ben Gordon",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 82,
+    "minutes": 2002,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "bellra01",
+    "player_id": "Raja Bell",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Utah Jazz",
+    "games": 63,
+    "minutes": 1790,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "arroyca01",
+    "player_id": "Carlos Arroyo",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Utah Jazz",
+    "games": 70,
+    "minutes": 1448,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "kirilan01",
+    "player_id": "Andrei Kirilenko",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Utah Jazz",
+    "games": 41,
+    "minutes": 1349,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "stevede01",
+    "player_id": "DeShawn Stevenson",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Utah Jazz",
+    "games": 55,
+    "minutes": 1089,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "collija03",
+    "player_id": "Jarron Collins",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Utah Jazz",
+    "games": 50,
+    "minutes": 961,
+    "position": "C"
+   },
+   {
+    "bbr_id": "collija02",
+    "player_id": "Jason Collier",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Atlanta Hawks",
+    "games": 70,
+    "minutes": 942,
+    "position": "C"
+   },
+   {
+    "bbr_id": "iveyro01",
+    "player_id": "Royal Ivey",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 62,
+    "minutes": 809,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "goldwan01",
+    "player_id": "Anthony Goldwire",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 33,
+    "minutes": 537,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "lopezra01",
+    "player_id": "Raül López",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Utah Jazz",
+    "games": 31,
+    "minutes": 518,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "jacksje01",
+    "player_id": "Jermaine Jackson",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 21,
+    "minutes": 230,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "zhizhwa01",
+    "player_id": "Wang Zhizhi",
+    "club": "Utah Jazz",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 16,
+    "minutes": 114,
+    "position": "C"
+   }
+  ],
+  "Washington Wizards": [
+   {
+    "bbr_id": "arenagi01",
+    "player_id": "Gilbert Arenas",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Washington Wizards",
+    "games": 80,
+    "minutes": 3274,
+    "position": "PG"
+   },
+   {
+    "bbr_id": "okafoem01",
+    "player_id": "Emeka Okafor",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 73,
+    "minutes": 2600,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "hughela01",
+    "player_id": "Larry Hughes",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Washington Wizards",
+    "games": 61,
+    "minutes": 2358,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "jeffrja01",
+    "player_id": "Jared Jeffries",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Washington Wizards",
+    "games": 77,
+    "minutes": 2007,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "haywobr01",
+    "player_id": "Brendan Haywood",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Washington Wizards",
+    "games": 68,
+    "minutes": 1865,
+    "position": "C"
+   },
+   {
+    "bbr_id": "barrybr01",
+    "player_id": "Brent Barry",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Los Angeles Lakers",
+    "games": 81,
+    "minutes": 1742,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "hayesja01",
+    "player_id": "Jarvis Hayes",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Washington Wizards",
+    "games": 54,
+    "minutes": 1560,
+    "position": "SF"
+   },
+   {
+    "bbr_id": "dixonju01",
+    "player_id": "Juan Dixon",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Washington Wizards",
+    "games": 63,
+    "minutes": 1054,
+    "position": "SG"
+   },
+   {
+    "bbr_id": "laettch01",
+    "player_id": "Christian Laettner",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Washington Wizards",
+    "games": 48,
+    "minutes": 984,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "thomaet01",
+    "player_id": "Etan Thomas",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Washington Wizards",
+    "games": 47,
+    "minutes": 976,
+    "position": "C"
+   },
+   {
+    "bbr_id": "skinnbr01",
+    "player_id": "Brian Skinner",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Milwaukee Bucks",
+    "games": 49,
+    "minutes": 941,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "brownkw01",
+    "player_id": "Kwame Brown",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": "Washington Wizards",
+    "games": 42,
+    "minutes": 908,
+    "position": "PF"
+   },
+   {
+    "bbr_id": "smithdo04",
+    "player_id": "Donta Smith",
+    "club": "Washington Wizards",
+    "rule": "7_contract_after_the_2004_market",
+    "from_club": null,
+    "games": 38,
+    "minutes": 433,
+    "position": "SG"
+   }
+  ]
+ },
+ "pool": [
+  {
+   "bbr_id": "alstora01",
+   "player_id": "Rafer Alston",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Toronto Raptors",
+   "games": 80,
+   "minutes": 2717,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "bowenbr01",
+   "player_id": "Bruce Bowen",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "San Antonio Spurs",
+   "games": 82,
+   "minutes": 2627,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "willima01",
+   "player_id": "Mo Williams",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Utah Jazz",
+   "games": 80,
+   "minutes": 2254,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "fishede01",
+   "player_id": "Derek Fisher",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Los Angeles Lakers",
+   "games": 74,
+   "minutes": 2222,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "nailole01",
+   "player_id": "Lee Nailon",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Atlanta Hawks",
+   "games": 68,
+   "minutes": 2017,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "knighbr01",
+   "player_id": "Brevin Knight",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Washington Wizards",
+   "games": 66,
+   "minutes": 1944,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "surabo01",
+   "player_id": "Bob Sura",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "New York Knicks",
+   "games": 61,
+   "minutes": 1922,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "hartja01",
+   "player_id": "Jason Hart",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "San Antonio Spurs",
+   "games": 74,
+   "minutes": 1887,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "mihmch01",
+   "player_id": "Chris Mihm",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Cleveland Cavaliers",
+   "games": 75,
+   "minutes": 1870,
+   "position": "C"
+  },
+  {
+   "bbr_id": "jacksst02",
+   "player_id": "Stephen Jackson",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 51,
+   "minutes": 1806,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "johnsan02",
+   "player_id": "Anthony Johnson",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Indiana Pacers",
+   "games": 63,
+   "minutes": 1747,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "hudsotr01",
+   "player_id": "Troy Hudson",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Minnesota Timberwolves",
+   "games": 79,
+   "minutes": 1729,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "foylead01",
+   "player_id": "Adonal Foyle",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Golden State Warriors",
+   "games": 78,
+   "minutes": 1700,
+   "position": "C"
+  },
+  {
+   "bbr_id": "rossqu01",
+   "player_id": "Quinton Ross",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 78,
+   "minutes": 1659,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "besttr01",
+   "player_id": "Travis Best",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Dallas Mavericks",
+   "games": 76,
+   "minutes": 1461,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "mcleoke01",
+   "player_id": "Keith McLeod",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 53,
+   "minutes": 1382,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "rogerro01",
+   "player_id": "Rodney Rogers",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "New Jersey Nets",
+   "games": 58,
+   "minutes": 1367,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "buforro01",
+   "player_id": "Rodney Buford",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Sacramento Kings",
+   "games": 64,
+   "minutes": 1313,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "johnsde03",
+   "player_id": "DerMarr Johnson",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "New York Knicks",
+   "games": 71,
+   "minutes": 1232,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "mooremi01",
+   "player_id": "Mikki Moore",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Utah Jazz",
+   "games": 74,
+   "minutes": 1178,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "hunteli01",
+   "player_id": "Lindsey Hunter",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Detroit Pistons",
+   "games": 76,
+   "minutes": 1144,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "doolike01",
+   "player_id": "Keyon Dooling",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Los Angeles Clippers",
+   "games": 58,
+   "minutes": 1137,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "persowe01",
+   "player_id": "Wesley Person",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Memphis Grizzlies",
+   "games": 58,
+   "minutes": 1037,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "russebr01",
+   "player_id": "Bryon Russell",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 70,
+   "minutes": 1026,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "gilled01",
+   "player_id": "Eddie Gill",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Portland Trail Blazers",
+   "games": 73,
+   "minutes": 1021,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "guglito01",
+   "player_id": "Tom Gugliotta",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Phoenix Suns",
+   "games": 47,
+   "minutes": 966,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "cheanca01",
+   "player_id": "Calbert Cheaney",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Golden State Warriors",
+   "games": 55,
+   "minutes": 951,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "rebraze01",
+   "player_id": "Željko Rebrača",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Detroit Pistons",
+   "games": 58,
+   "minutes": 928,
+   "position": "C"
+  },
+  {
+   "bbr_id": "fizerma01",
+   "player_id": "Marcus Fizer",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Chicago Bulls",
+   "games": 54,
+   "minutes": 903,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "cartean01",
+   "player_id": "Anthony Carter",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 66,
+   "minutes": 742,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "barnema02",
+   "player_id": "Matt Barnes",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 43,
+   "minutes": 715,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "woodslo01",
+   "player_id": "Loren Woods",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Minnesota Timberwolves",
+   "games": 45,
+   "minutes": 712,
+   "position": "C"
+  },
+  {
+   "bbr_id": "masseto01",
+   "player_id": "Tony Massenburg",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 61,
+   "minutes": 699,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "augmost01",
+   "player_id": "Stacey Augmon",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "New Orleans Hornets",
+   "games": 55,
+   "minutes": 663,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "smithja01",
+   "player_id": "Jabari Smith",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Sacramento Kings",
+   "games": 45,
+   "minutes": 648,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "smithst01",
+   "player_id": "Steve Smith",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 37,
+   "minutes": 636,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "bowenry01",
+   "player_id": "Ryan Bowen",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Denver Nuggets",
+   "games": 66,
+   "minutes": 604,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "westde01",
+   "player_id": "Delonte West",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 39,
+   "minutes": 507,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "carroma01",
+   "player_id": "Matt Carroll",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Portland Trail Blazers",
+   "games": 25,
+   "minutes": 430,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "mercero01",
+   "player_id": "Ron Mercer",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Golden State Warriors",
+   "games": 18,
+   "minutes": 390,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "willike02",
+   "player_id": "Kevin Willis",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 29,
+   "minutes": 344,
+   "position": "C"
+  },
+  {
+   "bbr_id": "robinbe01",
+   "player_id": "Bernard Robinson",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 31,
+   "minutes": 328,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "wilksmi01",
+   "player_id": "Mike Wilks",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Houston Rockets",
+   "games": 48,
+   "minutes": 278,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "hamda01",
+   "player_id": "Darvin Ham",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 47,
+   "minutes": 275,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "currymi01",
+   "player_id": "Michael Curry",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Toronto Raptors",
+   "games": 18,
+   "minutes": 249,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "livinra01",
+   "player_id": "Randy Livingston",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Houston Rockets",
+   "games": 17,
+   "minutes": 227,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "stricro02",
+   "player_id": "Rod Strickland",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Orlando Magic",
+   "games": 16,
+   "minutes": 196,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "martida01",
+   "player_id": "Darrick Martin",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Portland Trail Blazers",
+   "games": 11,
+   "minutes": 190,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "breweja01",
+   "player_id": "Jamison Brewer",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Boston Celtics",
+   "games": 18,
+   "minutes": 185,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "hamilze01",
+   "player_id": "Zendon Hamilton",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Philadelphia 76ers",
+   "games": 16,
+   "minutes": 159,
+   "position": "C"
+  },
+  {
+   "bbr_id": "willisc01",
+   "player_id": "Scott Williams",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 19,
+   "minutes": 152,
+   "position": "C"
+  },
+  {
+   "bbr_id": "sesayan01",
+   "player_id": "Ansu Sesay",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Seattle SuperSonics",
+   "games": 16,
+   "minutes": 128,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "moisoje01",
+   "player_id": "Jérôme Moïso",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Toronto Raptors",
+   "games": 20,
+   "minutes": 120,
+   "position": "C"
+  },
+  {
+   "bbr_id": "bradlmi01",
+   "player_id": "Michael Bradley",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Toronto Raptors",
+   "games": 18,
+   "minutes": 119,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "slayta01",
+   "player_id": "Tamar Slay",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "New Jersey Nets",
+   "games": 8,
+   "minutes": 78,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "cookom01",
+   "player_id": "Omar Cook",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Portland Trail Blazers",
+   "games": 5,
+   "minutes": 74,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "ndiayma02",
+   "player_id": "Mamadou N'Diaye",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Atlanta Hawks",
+   "games": 11,
+   "minutes": 72,
+   "position": "C"
+  },
+  {
+   "bbr_id": "fowlktr01",
+   "player_id": "Tremaine Fowlkes",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Detroit Pistons",
+   "games": 8,
+   "minutes": 56,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "storeaw01",
+   "player_id": "Awvee Storey",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 9,
+   "minutes": 32,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "shirlpa01",
+   "player_id": "Paul Shirley",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Detroit Pistons",
+   "games": 9,
+   "minutes": 30,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "braggto01",
+   "player_id": "Torraye Braggs",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 7,
+   "minutes": 24,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "fundela01",
+   "player_id": "Lawrence Funderburke",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 2,
+   "minutes": 21,
+   "position": "PF"
+  },
+  {
+   "bbr_id": "tabusyu01",
+   "player_id": "Yuta Tabuse",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 4,
+   "minutes": 17,
+   "position": "PG"
+  },
+  {
+   "bbr_id": "johnsli01",
+   "player_id": "Linton Johnson",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Chicago Bulls",
+   "games": 2,
+   "minutes": 15,
+   "position": "SF"
+  },
+  {
+   "bbr_id": "penneki01",
+   "player_id": "Kirk Penney",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 4,
+   "minutes": 12,
+   "position": "SG"
+  },
+  {
+   "bbr_id": "eschmev01",
+   "player_id": "eschmev01",
+   "club": "Dallas Mavericks",
+   "rule": "7_contract_after_the_2004_market+pool_over_fifteen",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "archiro01",
+   "player_id": "Robert Archibald",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Toronto Raptors",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "armstbr01",
+   "player_id": "Brandon Armstrong",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "New Jersey Nets",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "barroda01",
+   "player_id": "Dana Barros",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Denver Nuggets",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "bateeme01",
+   "player_id": "Mengke Bateer",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "belltr01",
+   "player_id": "Troy Bell",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Memphis Grizzlies",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "blounco01",
+   "player_id": "Corie Blount",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Chicago Bulls",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "boumtru01",
+   "player_id": "Ruben Boumtje-Boumtje",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Los Angeles Clippers",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "bremejr01",
+   "player_id": "J.R. Bremer",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Cleveland Cavaliers",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "butlemi02",
+   "player_id": "Mitchell Butler",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Washington Wizards",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "cartema01",
+   "player_id": "Maurice Carter",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Philadelphia 76ers",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "clarkke01",
+   "player_id": "Keon Clark",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Chicago Bulls",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "colesbi01",
+   "player_id": "Bimbo Coles",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "davishu01",
+   "player_id": "Hubert Davis",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "New Jersey Nets",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "dialde01",
+   "player_id": "Derrick Dial",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "drewbr01",
+   "player_id": "Bryce Drew",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "New Orleans Hornets",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "fergude01",
+   "player_id": "Desmond Ferguson",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Portland Trail Blazers",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "fordal02",
+   "player_id": "Alton Ford",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Houston Rockets",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "foxri01",
+   "player_id": "Rick Fox",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Seattle SuperSonics",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "fullehi01",
+   "player_id": "Hiram Fuller",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "San Antonio Spurs",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "grantho01",
+   "player_id": "Horace Grant",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Los Angeles Lakers",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "grantpa01",
+   "player_id": "Paul Grant",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Utah Jazz",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "hansetr01",
+   "player_id": "Travis Hansen",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "healsh01",
+   "player_id": "Shane Heal",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "San Antonio Spurs",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "hillty01",
+   "player_id": "Tyrone Hill",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Philadelphia 76ers",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "jacksma01",
+   "player_id": "Mark Jackson",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "johnsav01",
+   "player_id": "Avery Johnson",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Golden State Warriors",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "jonespo01",
+   "player_id": "Popeye Jones",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "lamplse01",
+   "player_id": "Sean Lampley",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "langhda01",
+   "player_id": "Dan Langhi",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Golden State Warriors",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "larueru01",
+   "player_id": "Rusty LaRue",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "lewisqu01",
+   "player_id": "Quincy Lewis",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Phoenix Suns",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "malonka01",
+   "player_id": "Karl Malone",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Seattle SuperSonics",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "masonro01",
+   "player_id": "Roger Mason",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Toronto Raptors",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "mccasam01",
+   "player_id": "Amal McCaskill",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Philadelphia 76ers",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "milleol01",
+   "player_id": "Oliver Miller",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Minnesota Timberwolves",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "murratr01",
+   "player_id": "Tracy Murray",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "San Antonio Spurs",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "oaklech01",
+   "player_id": "Charles Oakley",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "overtdo01",
+   "player_id": "Doug Overton",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Sacramento Kings",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "packro01",
+   "player_id": "Robert Pack",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "parksch02",
+   "player_id": "Cherokee Parks",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "penigde01",
+   "player_id": "Desmond Penigar",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "polynol01",
+   "player_id": "Olden Polynice",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "reiddo01",
+   "player_id": "reiddo01",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Sacramento Kings",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "ricegl01",
+   "player_id": "Glen Rice",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "robined01",
+   "player_id": "Eddie Robinson",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Chicago Bulls",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "rooksse01",
+   "player_id": "Sean Rooks",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "smithle01",
+   "player_id": "Leon Smith",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Seattle SuperSonics",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "trentga01",
+   "player_id": "Gary Trent",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Minnesota Timberwolves",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "trepaje01",
+   "player_id": "Jeff Trepagnier",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Denver Nuggets",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "udokaim01",
+   "player_id": "Ime Udoka",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "New Orleans Hornets",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "vranesl01",
+   "player_id": "Slavko Vraneš",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": null,
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "whitnch01",
+   "player_id": "Chris Whitney",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Washington Wizards",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  },
+  {
+   "bbr_id": "willish01",
+   "player_id": "Shammond Williams",
+   "club": null,
+   "rule": "8_unsigned_after_the_2004_market+pool_unsigned",
+   "from_club": "Orlando Magic",
+   "games": 0,
+   "minutes": 0,
+   "position": null
+  }
+ ],
+ "not_placed": [
+  {
+   "bbr_id": "bakerma01",
+   "player_id": "Maurice Baker",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": null
+  },
+  {
+   "bbr_id": "butleca01",
+   "player_id": "Caron Butler",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": null
+  },
+  {
+   "bbr_id": "dwyane_wade",
+   "player_id": "dwyane_wade",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": null
+  },
+  {
+   "bbr_id": "edwarjo01",
+   "player_id": "John Edwards",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": null
+  },
+  {
+   "bbr_id": "evansma01",
+   "player_id": "Maurice Evans",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": null
+  },
+  {
+   "bbr_id": "gillke01",
+   "player_id": "Kendall Gill",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": "Chicago Bulls"
+  },
+  {
+   "bbr_id": "grantbr01",
+   "player_id": "Brian Grant",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": null
+  },
+  {
+   "bbr_id": "hasleud01",
+   "player_id": "hasleud01",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": null
+  },
+  {
+   "bbr_id": "jamesmi01",
+   "player_id": "Mike James",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": null
+  },
+  {
+   "bbr_id": "jonesed02",
+   "player_id": "jonesed02",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": null
+  },
+  {
+   "bbr_id": "okurme01",
+   "player_id": "Mehmet Okur",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": "Detroit Pistons"
+  },
+  {
+   "bbr_id": "padgesc01",
+   "player_id": "Scott Padgett",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": null
+  },
+  {
+   "bbr_id": "thomajo02",
+   "player_id": "John Thomas",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": null
+  },
+  {
+   "bbr_id": "wrighdo01",
+   "player_id": "wrighdo01",
+   "club": "Miami Heat",
+   "rule": "7_contract_after_the_2004_market",
+   "from_club": null
+  }
+ ],
+ "counts": {
+  "7_contract_after_the_2004_market": 412,
+  "8_unsigned_after_the_2004_market": 118
+ }
+}

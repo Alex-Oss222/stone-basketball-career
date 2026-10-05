@@ -2,9 +2,9 @@
 
 # Contract | Anthony Mason
 
-Known through: 2004-09-30. [Open interactive contract](masonan01.html#contract) · [Contract history](masonan01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](masonan01.html#contract) · [Contract history](masonan01.html#contract-history)
 
-Anthony Mason: under contract unverified. Evidence cutoff: 2004-09-30.
+Anthony Mason: under contract unverified. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Anthony Mason |
-| Club / rights baseline | Milwaukee Bucks |
+| Club / rights baseline | Free agent |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

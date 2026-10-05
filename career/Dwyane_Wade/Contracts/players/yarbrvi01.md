@@ -2,9 +2,9 @@
 
 # Contract | Vincent Yarbrough
 
-Known through: 2004-09-30. [Open interactive contract](yarbrvi01.html#contract) · [Contract history](yarbrvi01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](yarbrvi01.html#contract) · [Contract history](yarbrvi01.html#contract-history)
 
-Vincent Yarbrough: expired or unresolved. Evidence cutoff: 2004-09-30.
+Vincent Yarbrough: expired or unresolved. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Vincent Yarbrough |
-| Club / rights baseline | Denver Nuggets |
+| Club / rights baseline | Free agent |
 | Control status | expired_or_unresolved |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

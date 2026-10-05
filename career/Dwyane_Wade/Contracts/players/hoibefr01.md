@@ -2,9 +2,9 @@
 
 # Contract | Fred Hoiberg
 
-Known through: 2004-09-30. [Open interactive contract](hoibefr01.html#contract) · [Contract history](hoibefr01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](hoibefr01.html#contract) · [Contract history](hoibefr01.html#contract-history)
 
-Fred Hoiberg: under contract. Evidence cutoff: 2004-09-30.
+Fred Hoiberg: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Fred Hoiberg |
-| Club / rights baseline | Minnesota Timberwolves |
+| Club / rights baseline | Denver Nuggets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

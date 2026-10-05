@@ -2,9 +2,9 @@
 
 # Contract | Tito Maddox
 
-Known through: 2004-09-30. [Open interactive contract](maddoti01.html#contract) · [Contract history](maddoti01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](maddoti01.html#contract) · [Contract history](maddoti01.html#contract-history)
 
-Tito Maddox: team option pending. Evidence cutoff: 2004-09-30.
+Tito Maddox: team option pending. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -117,7 +117,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Tito Maddox |
-| Club / rights baseline | Houston Rockets |
+| Club / rights baseline | Free agent |
 | Control status | team_option_pending |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

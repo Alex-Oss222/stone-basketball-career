@@ -2,9 +2,9 @@
 
 # Contract | Ken Johnson
 
-Known through: 2004-09-30. [Open interactive contract](johnske03.html#contract) · [Contract history](johnske03.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](johnske03.html#contract) · [Contract history](johnske03.html#contract-history)
 
-Ken Johnson: team option declined. Evidence cutoff: 2004-09-30.
+Ken Johnson: team option declined. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Ken Johnson |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Free agent |
 | Control status | team_option_declined |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

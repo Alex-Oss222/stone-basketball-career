@@ -37,22 +37,22 @@
    "player": "Rasual Butler",
    "bbr_id": "butlera01",
    "from": "2003-06-26",
-   "until": null,
-   "basis": "held until the June 30 team-option decision; closed then if declined"
+   "until": "2004-07-01",
+   "basis": "held until the June 30 team-option decision; closed then if declined; left Miami in the 2004-05 summer market"
   },
   {
    "player": "Anthony Carter",
    "bbr_id": "cartean01",
    "from": "2003-06-26",
-   "until": null,
-   "basis": "held until his June 30 player-option decision; closed then if he declines"
+   "until": "2004-07-01",
+   "basis": "held until his June 30 player-option decision; closed then if he declines; left Miami in the 2004-05 summer market"
   },
   {
    "player": "LaPhonso Ellis",
    "bbr_id": "ellisla01",
    "from": "2003-06-26",
-   "until": null,
-   "basis": "under contract"
+   "until": "2004-07-01",
+   "basis": "under contract; left Miami in the 2004-05 summer market"
   },
   {
    "player": "Brian Grant",
@@ -93,8 +93,8 @@
    "player": "Sean Lampley",
    "bbr_id": "lamplse01",
    "from": "2003-06-26",
-   "until": null,
-   "basis": "held until the June 30 team-option decision; closed then if declined"
+   "until": "2004-07-01",
+   "basis": "held until the June 30 team-option decision; closed then if declined; left Miami in the 2004-05 summer market"
   },
   {
    "player": "Sean Marks",
@@ -152,8 +152,8 @@
    "player": "Stephen Jackson",
    "bbr_id": "jacksst02",
    "from": "2003-09-30",
-   "until": null,
-   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+   "until": "2004-07-01",
+   "basis": "camp contract 2003-09-30 (camp_roster.json); left Miami in the 2004-05 summer market"
   },
   {
    "player": "Reggie Evans",
@@ -174,8 +174,8 @@
    "player": "Shawn Kemp",
    "bbr_id": "kempsh01",
    "from": "2003-09-30",
-   "until": null,
-   "basis": "camp contract 2003-09-30 (camp_roster.json)"
+   "until": "2004-07-01",
+   "basis": "camp contract 2003-09-30 (camp_roster.json); left Miami in the 2004-05 summer market"
   },
   {
    "player": "Chris Andersen",
@@ -211,8 +211,8 @@
    "player": "Cherokee Parks",
    "bbr_id": "parksch02",
    "from": "2003-10-27",
-   "until": null,
-   "basis": "refill signing 2003-10-27 (signing_corrections.json)"
+   "until": "2004-07-01",
+   "basis": "refill signing 2003-10-27 (signing_corrections.json); left Miami in the 2004-05 summer market"
   },
   {
    "player": "Udonis Haslem",
@@ -225,8 +225,8 @@
    "player": "John Wallace",
    "bbr_id": "wallajo01",
    "from": "2003-10-27",
-   "until": null,
-   "basis": "refill signing 2003-10-27 (signing_corrections.json)"
+   "until": "2004-07-01",
+   "basis": "refill signing 2003-10-27 (signing_corrections.json); left Miami in the 2004-05 summer market"
   }
  ],
  "void_definition": "An entry with void: true records a camp contract voided because the player was not truly available when Miami signed him (04_Training_Camp/signing_corrections.json). Its dates stay as played games used them, but it never made him Miami's: his real moves apply as if Miami had not signed him."

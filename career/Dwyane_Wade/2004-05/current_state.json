@@ -1,0 +1,22 @@
+{
+ "schema_version": 1,
+ "initialized": true,
+ "season": "2004-05",
+ "current_date": "2004-10-01",
+ "current_area": "04_Training_Camp",
+ "current_note": "04_Training_Camp/note.md",
+ "team": "Miami Heat",
+ "team_abbreviation": "MIA",
+ "draft": {
+  "round": 1,
+  "pick": 5,
+  "overall": 5,
+  "status": "selected"
+ },
+ "contract_status": "rookie_scale_contract",
+ "roster_status": "under_contract",
+ "last_closed_event": "2004-04-28-milwaukee-bucks-at-miami-heat",
+ "pending_player_decisions": [],
+ "rolled_over_from": "2003-04",
+ "rolled_over_on": "2004-10-01"
+}

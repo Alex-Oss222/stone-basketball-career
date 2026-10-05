@@ -2,9 +2,9 @@
 
 # Contract | Dwyane Wade
 
-Known through: 2004-09-30. [Open interactive contract](wadedw01.html#contract) · [Contract history](wadedw01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](wadedw01.html#contract) · [Contract history](wadedw01.html#contract-history)
 
-Dwyane Wade: under contract. Evidence cutoff: 2004-09-30.
+Dwyane Wade: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -118,6 +118,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Signing / contract source](../../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Executed rookie signing log](../../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 
 ### Current control and contract coverage
 
@@ -287,6 +288,7 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Signing / contract source](../../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Executed rookie signing log](../../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 
 ## Source records
 
@@ -297,4 +299,5 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Contract source document](https://www.cbafaq.com/scale99.htm)
 - [Contract source document](https://ipmall.law.unh.edu/sites/default/files/hosted_resources/SportsEntLaw_Institute/1999NBA_NBPA_CBA.pdf)
 - [Executed rookie signing log](../../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Dated signed-contract archive](../contract_records.json)

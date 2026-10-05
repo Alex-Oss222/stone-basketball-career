@@ -2,9 +2,9 @@
 
 # Contract | Mike Batiste
 
-Known through: 2004-09-30. [Open interactive contract](batismi01.html#contract) · [Contract history](batismi01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](batismi01.html#contract) · [Contract history](batismi01.html#contract-history)
 
-Mike Batiste: voided. Evidence cutoff: 2004-09-30.
+Mike Batiste: voided. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Mike Batiste |
-| Club / rights baseline | Memphis Grizzlies |
+| Club / rights baseline | Free agent |
 | Control status | voided |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

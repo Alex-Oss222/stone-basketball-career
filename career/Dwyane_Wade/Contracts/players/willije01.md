@@ -2,9 +2,9 @@
 
 # Contract | Jerome Williams
 
-Known through: 2004-09-30. [Open interactive contract](willije01.html#contract) · [Contract history](willije01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](willije01.html#contract) · [Contract history](willije01.html#contract-history)
 
-Jerome Williams: under contract. Evidence cutoff: 2004-09-30.
+Jerome Williams: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -125,7 +125,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jerome Williams |
-| Club / rights baseline | Toronto Raptors |
+| Club / rights baseline | Chicago Bulls |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

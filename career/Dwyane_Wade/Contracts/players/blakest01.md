@@ -2,9 +2,9 @@
 
 # Contract | Steve Blake
 
-Known through: 2004-09-30. [Open interactive contract](blakest01.html#contract) · [Contract history](blakest01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](blakest01.html#contract) · [Contract history](blakest01.html#contract-history)
 
-Steve Blake: No verified contract record. Evidence cutoff: 2004-09-30.
+Steve Blake: No verified contract record. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Steve Blake |
-| Club / rights baseline | Washington Wizards |
+| Club / rights baseline | Charlotte Bobcats |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | Kendall Gill
 
-Known through: 2004-09-30. [Open interactive contract](gillke01.html#contract) · [Contract history](gillke01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](gillke01.html#contract) · [Contract history](gillke01.html#contract-history)
 
-Kendall Gill: under contract. Evidence cutoff: 2004-09-30.
+Kendall Gill: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -97,13 +97,15 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Simulated 2004 summer market: signing on 2004-08-12, from Chicago Bulls. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+Signed August 12, 2004 in the 2004-05 summer market (signing, route minimum); schedule from the league contract ledger (raises by route).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
 
@@ -112,7 +114,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Kendall Gill |
-| Club / rights baseline | Chicago Bulls |
+| Club / rights baseline | Miami Heat |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -249,13 +251,15 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Simulated 2004 summer market: signing on 2004-08-12, from Chicago Bulls. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+Signed August 12, 2004 in the 2004-05 summer market (signing, route minimum); schedule from the league contract ledger (raises by route).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Kendall Gill · 2003-08-20
 
@@ -461,4 +465,6 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated 2003 offseason transaction](../../../../library/2003/league/nba_2003_offseason_transactions.json)
 - [Dated league rights evidence](../../../../library/2003/league/nba_2003_free_agent_rights.json)
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)

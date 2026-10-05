@@ -2,9 +2,9 @@
 
 # Contract | Remon van de Hare
 
-Known through: 2004-09-30. [Open interactive contract](vandera01.html#contract) · [Contract history](vandera01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](vandera01.html#contract) · [Contract history](vandera01.html#contract-history)
 
-Remon van de Hare: No verified contract record. Evidence cutoff: 2004-09-30.
+Remon van de Hare: No verified contract record. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Remon van de Hare |
-| Club / rights baseline | Toronto Raptors |
+| Club / rights baseline | Free agent |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

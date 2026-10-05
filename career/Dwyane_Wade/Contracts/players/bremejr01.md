@@ -2,9 +2,9 @@
 
 # Contract | J.R. Bremer
 
-Known through: 2004-09-30. [Open interactive contract](bremejr01.html#contract) · [Contract history](bremejr01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](bremejr01.html#contract) · [Contract history](bremejr01.html#contract-history)
 
-J.R. Bremer: No verified contract record. Evidence cutoff: 2004-09-30.
+J.R. Bremer: No verified contract record. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | J.R. Bremer |
-| Club / rights baseline | Cleveland Cavaliers |
+| Club / rights baseline | Free agent |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

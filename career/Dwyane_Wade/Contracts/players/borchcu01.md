@@ -2,9 +2,9 @@
 
 # Contract | Curtis Borchardt
 
-Known through: 2004-09-30. [Open interactive contract](borchcu01.html#contract) · [Contract history](borchcu01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](borchcu01.html#contract) · [Contract history](borchcu01.html#contract-history)
 
-Curtis Borchardt: under rookie contract. Evidence cutoff: 2004-09-30.
+Curtis Borchardt: under rookie contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -126,7 +126,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Curtis Borchardt |
-| Club / rights baseline | Utah Jazz |
+| Club / rights baseline | Boston Celtics |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | Rasual Butler
 
-Known through: 2004-09-30. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](butlera01.html#contract) · [Contract history](butlera01.html#contract-history)
 
-Rasual Butler: team option exercised. Evidence cutoff: 2004-09-30.
+Rasual Butler: team option exercised. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Rasual Butler |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Free agent |
 | Control status | team_option_exercised |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

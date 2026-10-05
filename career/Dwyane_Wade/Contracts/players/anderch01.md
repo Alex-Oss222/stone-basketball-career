@@ -2,9 +2,9 @@
 
 # Contract | Chris Andersen
 
-Known through: 2004-09-30. [Open interactive contract](anderch01.html#contract) · [Contract history](anderch01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](anderch01.html#contract) · [Contract history](anderch01.html#contract-history)
 
-Chris Andersen: under contract. Evidence cutoff: 2004-09-30.
+Chris Andersen: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Chris Andersen |
-| Club / rights baseline | Denver Nuggets |
+| Club / rights baseline | Orlando Magic |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | Loren Woods
 
-Known through: 2004-09-30. [Open interactive contract](woodslo01.html#contract) · [Contract history](woodslo01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](woodslo01.html#contract) · [Contract history](woodslo01.html#contract-history)
 
-Loren Woods: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-09-30.
+Loren Woods: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Loren Woods |
-| Club / rights baseline | Minnesota Timberwolves |
+| Club / rights baseline | Free agent |
 | Control status | on the 2003-04 roster; contract terms not in the dated records |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | Bo Outlaw
 
-Known through: 2004-09-30. [Open interactive contract](outlabo01.html#contract) · [Contract history](outlabo01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](outlabo01.html#contract) · [Contract history](outlabo01.html#contract-history)
 
-Bo Outlaw: under contract unverified. Evidence cutoff: 2004-09-30.
+Bo Outlaw: under contract unverified. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Bo Outlaw |
-| Club / rights baseline | Memphis Grizzlies |
+| Club / rights baseline | Charlotte Bobcats |
 | Control status | under_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

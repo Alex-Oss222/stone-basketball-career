@@ -2,9 +2,9 @@
 
 # Contract | Kenny Anderson
 
-Known through: 2004-09-30. [Open interactive contract](anderke01.html#contract) · [Contract history](anderke01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](anderke01.html#contract) · [Contract history](anderke01.html#contract-history)
 
-Kenny Anderson: under contract. Evidence cutoff: 2004-09-30.
+Kenny Anderson: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -112,7 +112,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Kenny Anderson |
-| Club / rights baseline | Indiana Pacers |
+| Club / rights baseline | Toronto Raptors |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

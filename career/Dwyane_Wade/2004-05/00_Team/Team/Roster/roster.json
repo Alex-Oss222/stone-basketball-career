@@ -1,0 +1,232 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "as_of": "2004-10-01",
+ "season": "2004-05",
+ "team": "Miami Heat",
+ "roster_kind": "team_control_register",
+ "finalized_active_roster": false,
+ "players": [
+  {
+   "id": "eddie_jones",
+   "name": "Eddie Jones",
+   "positions": [
+    "SG",
+    "SF"
+   ],
+   "height": "6-6",
+   "weight_lb": 190,
+   "date_of_birth": "1971-10-20",
+   "college": "Temple",
+   "status": "under_contract",
+   "control": "Existing contract: 3 season(s) from 2004-05, $44,401,500 scheduled ($13,455,000 in 2004-05).",
+   "working_role": "2002-03 SG1",
+   "player_card": "../Player_Cards/eddie_jones.md",
+   "bbr_id": "jonesed02"
+  },
+  {
+   "id": "brian_grant",
+   "name": "Brian Grant",
+   "positions": [
+    "C",
+    "PF"
+   ],
+   "height": "6-9",
+   "weight_lb": 254,
+   "date_of_birth": "1972-03-05",
+   "college": "Xavier",
+   "status": "under_contract",
+   "control": "Existing contract: 1 season(s) from 2004-05, $13,233,434 scheduled ($13,233,434 in 2004-05).",
+   "working_role": "2002-03 C1",
+   "player_card": "../Player_Cards/brian_grant.md",
+   "bbr_id": "grantbr01"
+  },
+  {
+   "id": "scott_padgett",
+   "name": "Scott Padgett",
+   "positions": [
+    "PF"
+   ],
+   "date_of_birth": "1976-04-19",
+   "status": "under_contract",
+   "control": "Signed July 14, 2004 (bird): 4 season(s) from 2004-05, $46,107,709 scheduled ($9,706,886 in 2004-05).",
+   "working_role": "Camp invitee",
+   "player_card": "../Player_Cards/scott_padgett.md",
+   "bbr_id": "padgesc01"
+  },
+  {
+   "id": "mike_james",
+   "name": "Mike James",
+   "positions": [
+    "PG"
+   ],
+   "height": "6-2",
+   "weight_lb": 188,
+   "date_of_birth": "1975-06-23",
+   "college": "Duquesne",
+   "status": "under_contract",
+   "control": "Existing contract: 2 season(s) from 2004-05, $7,244,223 scheduled ($3,431,474 in 2004-05).",
+   "working_role": "2002-03 PG2",
+   "player_card": "../Player_Cards/mike_james.md",
+   "bbr_id": "jamesmi01"
+  },
+  {
+   "id": "mehmet_okur",
+   "name": "Mehmet Okur",
+   "positions": [
+    "PF"
+   ],
+   "date_of_birth": "1979-05-26",
+   "working_role": "Unassigned arrival",
+   "player_card": "../Player_Cards/mehmet_okur.md",
+   "bbr_id": "okurme01",
+   "status": "under_contract",
+   "control": "Signed September 23, 2004 (mid_level): 5 season(s) from 2004-05, $16,965,715 scheduled ($2,827,619 in 2004-05)."
+  },
+  {
+   "id": "dwyane_wade",
+   "name": "Dwyane Wade",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "height": "6-6 in shoes",
+   "weight_lb": 220,
+   "date_of_birth": "1984-01-17",
+   "college": "UConn (simulation canon)",
+   "status": "under_contract",
+   "control": "Existing contract: 3 season(s) from 2004-05, $8,089,602 scheduled ($2,361,800 in 2004-05).",
+   "working_role": "Unassigned rookie",
+   "player_card": "../Player_Cards/dwyane_wade.md"
+  },
+  {
+   "id": "caron_butler",
+   "name": "Caron Butler",
+   "positions": [
+    "SF"
+   ],
+   "height": "6-7",
+   "weight_lb": 228,
+   "date_of_birth": "1980-03-13",
+   "college": "UConn",
+   "status": "under_contract",
+   "control": "Existing contract: 1 season(s) from 2004-05, $1,930,680 scheduled ($1,930,680 in 2004-05).",
+   "working_role": "2002-03 SF1",
+   "player_card": "../Player_Cards/caron_butler.md",
+   "bbr_id": "butleca01"
+  },
+  {
+   "id": "kendall_gill",
+   "name": "Kendall Gill",
+   "positions": [
+    "SG"
+   ],
+   "date_of_birth": "1968-05-25",
+   "working_role": "Unassigned arrival",
+   "player_card": "../Player_Cards/kendall_gill.md",
+   "bbr_id": "gillke01",
+   "status": "under_contract",
+   "control": "Signed August 12, 2004 (minimum): 1 season(s) from 2004-05, $1,100,000 scheduled ($1,100,000 in 2004-05)."
+  },
+  {
+   "id": "dorell_wright",
+   "name": "Dorell Wright",
+   "positions": [
+    "SF"
+   ],
+   "working_role": "Unassigned arrival",
+   "player_card": "../Player_Cards/dorell_wright.md",
+   "bbr_id": "wrighdo01",
+   "status": "under_contract",
+   "control": "Signed July 1, 2004 (rookie_scale): 3 season(s) from 2004-05, $3,156,240 scheduled ($978,720 in 2004-05)."
+  },
+  {
+   "id": "john_thomas",
+   "name": "John Thomas",
+   "positions": [
+    "C"
+   ],
+   "working_role": "Unassigned arrival",
+   "player_card": "../Player_Cards/john_thomas.md",
+   "bbr_id": "thomajo02",
+   "status": "under_contract",
+   "control": "Signed August 19, 2004 (minimum): 1 season(s) from 2004-05, $932,546 scheduled ($932,546 in 2004-05)."
+  },
+  {
+   "id": "maurice_evans",
+   "name": "Maurice Evans",
+   "positions": [
+    "SG"
+   ],
+   "working_role": "Unassigned arrival",
+   "player_card": "../Player_Cards/maurice_evans.md",
+   "bbr_id": "evansma01",
+   "status": "under_contract",
+   "control": "Signed August 5, 2004 (minimum): 1 season(s) from 2004-05, $720,046 scheduled ($720,046 in 2004-05)."
+  },
+  {
+   "id": "udonis_haslem",
+   "name": "Udonis Haslem",
+   "positions": [
+    "PF"
+   ],
+   "date_of_birth": "1980-06-09",
+   "status": "under_contract",
+   "control": "Signed July 14, 2004 (minimum): 1 season(s) from 2004-05, $620,046 scheduled ($620,046 in 2004-05).",
+   "working_role": "Roster refill",
+   "player_card": "../Player_Cards/udonis_haslem.md",
+   "bbr_id": "hasleud01"
+  },
+  {
+   "id": "maurice_baker",
+   "name": "Maurice Baker",
+   "positions": [
+    "PG"
+   ],
+   "working_role": "Unassigned arrival",
+   "player_card": "../Player_Cards/maurice_baker.md",
+   "bbr_id": "bakerma01",
+   "status": "under_contract",
+   "control": "Signed July 15, 2004 (minimum): 1 season(s) from 2004-05, $385,277 scheduled ($385,277 in 2004-05)."
+  },
+  {
+   "id": "john_edwards",
+   "name": "John Edwards",
+   "positions": [
+    "C"
+   ],
+   "working_role": "Unassigned arrival",
+   "player_card": "../Player_Cards/john_edwards.md",
+   "bbr_id": "edwarjo01",
+   "status": "under_contract",
+   "control": "Signed July 22, 2004 (minimum): 1 season(s) from 2004-05, $385,277 scheduled ($385,277 in 2004-05)."
+  },
+  {
+   "id": "bernard_robinson",
+   "name": "Bernard Robinson",
+   "positions": [
+    "SG"
+   ],
+   "working_role": "Unassigned arrival",
+   "player_card": "../Player_Cards/bernard_robinson.md",
+   "bbr_id": "robinbe01",
+   "status": "unsigned_draft_rights",
+   "control": "Unsigned draft rights: No. 51 pick of the 2004 draft."
+  },
+  {
+   "id": "christian_drejer",
+   "name": "Christian Drejer",
+   "positions": [
+    "SF"
+   ],
+   "working_role": "Unassigned arrival",
+   "player_card": "../Player_Cards/christian_drejer.md",
+   "bbr_id": "drejech01",
+   "status": "unsigned_draft_rights",
+   "control": "Unsigned draft rights: No. 54 pick of the 2004 draft."
+  }
+ ],
+ "sources": [
+  "career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json"
+ ]
+}

@@ -2,9 +2,9 @@
 
 # Contract | Courtney Alexander
 
-Known through: 2004-09-30. [Open interactive contract](alexaco02.html#contract) · [Contract history](alexaco02.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](alexaco02.html#contract) · [Contract history](alexaco02.html#contract-history)
 
-Courtney Alexander: under rookie contract. Evidence cutoff: 2004-09-30.
+Courtney Alexander: under rookie contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -117,7 +117,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Courtney Alexander |
-| Club / rights baseline | New Orleans Hornets |
+| Club / rights baseline | Free agent |
 | Control status | under_rookie_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

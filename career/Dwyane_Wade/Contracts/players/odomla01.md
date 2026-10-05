@@ -2,9 +2,9 @@
 
 # Contract | Lamar Odom
 
-Known through: 2004-09-30. [Open interactive contract](odomla01.html#contract) · [Contract history](odomla01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](odomla01.html#contract) · [Contract history](odomla01.html#contract-history)
 
-Lamar Odom: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-09-30.
+Lamar Odom: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 

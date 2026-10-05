@@ -2,9 +2,9 @@
 
 # Contract | Mark Jackson
 
-Known through: 2004-09-30. [Open interactive contract](jacksma01.html#contract) · [Contract history](jacksma01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](jacksma01.html#contract) · [Contract history](jacksma01.html#contract-history)
 
-Mark Jackson: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-09-30.
+Mark Jackson: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Mark Jackson |
-| Club / rights baseline | Houston Rockets |
+| Club / rights baseline | Free agent |
 | Control status | on the 2003-04 roster; contract terms not in the dated records |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

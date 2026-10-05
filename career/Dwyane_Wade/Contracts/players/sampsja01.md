@@ -2,9 +2,9 @@
 
 # Contract | Jamal Sampson
 
-Known through: 2004-09-30. [Open interactive contract](sampsja01.html#contract) · [Contract history](sampsja01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](sampsja01.html#contract) · [Contract history](sampsja01.html#contract-history)
 
-Jamal Sampson: under contract. Evidence cutoff: 2004-09-30.
+Jamal Sampson: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Jamal Sampson |
-| Club / rights baseline | Los Angeles Lakers |
+| Club / rights baseline | Houston Rockets |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | John Wallace
 
-Known through: 2004-09-30. [Open interactive contract](wallajo01.html#contract) · [Contract history](wallajo01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](wallajo01.html#contract) · [Contract history](wallajo01.html#contract-history)
 
-John Wallace: camp contract. Evidence cutoff: 2004-09-30.
+John Wallace: camp contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -116,7 +116,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | John Wallace |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Free agent |
 | Control status | camp_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |

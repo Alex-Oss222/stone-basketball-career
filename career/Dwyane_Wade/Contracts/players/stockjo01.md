@@ -2,9 +2,9 @@
 
 # Contract | John Stockton
 
-Known through: 2004-09-30. [Open interactive contract](stockjo01.html#contract) · [Contract history](stockjo01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](stockjo01.html#contract) · [Contract history](stockjo01.html#contract-history)
 
-John Stockton: expired or unresolved. Evidence cutoff: 2004-09-30.
+John Stockton: expired or unresolved. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | John Stockton |
-| Club / rights baseline | Utah Jazz |
+| Club / rights baseline | Free agent |
 | Control status | expired_or_unresolved |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

@@ -2,9 +2,9 @@
 
 # Contract | Scott Padgett
 
-Known through: 2004-09-30. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
 
-Scott Padgett: under contract. Evidence cutoff: 2004-09-30.
+Scott Padgett: under contract. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -103,13 +103,15 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Simulated 2004 summer market: re sign on 2004-07-14. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+Signed July 14, 2004 in the 2004-05 summer market (re sign, route bird); schedule from the league contract ledger (raises by route).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Current control and contract coverage
 
@@ -118,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Scott Padgett |
-| Club / rights baseline | Houston Rockets |
+| Club / rights baseline | Miami Heat |
 | Control status | under_contract |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
@@ -261,13 +263,15 @@ A trade assigns this contract; it does not create a duplicate signing.
 
 ### Evidence and coverage
 
-Simulated 2004 summer market: re sign on 2004-07-14. Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).
+Signed July 14, 2004 in the 2004-05 summer market (re sign, route bird); schedule from the league contract ledger (raises by route).
 
 Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed.
 
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
 
 ### Scott Padgett · 2003-10-28
 
@@ -576,6 +580,8 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 - [Dated league rights evidence](../../../../library/2004/league/nba_2004_free_agent_rights.json)
 - [Authoritative club contract schedule](../../2003-04/00_Team/Finances/contract_schedules.json)
 - [Signing / contract source](../../2003-04/04_Training_Camp/camp_roster.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
+- [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Dated signed-contract archive](../contract_records.json)
 - [Signing / contract source](../../2003-04/00_Team/Finances/minimum_salary_corrections.json)
 - [Signing / contract source](../../2003-04/00_Team/Transactions/guarantee_review.json)

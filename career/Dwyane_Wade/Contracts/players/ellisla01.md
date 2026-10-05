@@ -2,9 +2,9 @@
 
 # Contract | LaPhonso Ellis
 
-Known through: 2004-09-30. [Open interactive contract](ellisla01.html#contract) · [Contract history](ellisla01.html#contract-history)
+Known through: 2004-10-01. [Open interactive contract](ellisla01.html#contract) · [Contract history](ellisla01.html#contract-history)
 
-LaPhonso Ellis: under contract guarantee amended. Evidence cutoff: 2004-09-30.
+LaPhonso Ellis: under contract guarantee amended. Evidence cutoff: 2004-10-01.
 
 ## Current contract
 
@@ -117,7 +117,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | LaPhonso Ellis |
-| Club / rights baseline | Miami Heat |
+| Club / rights baseline | Free agent |
 | Control status | under_contract_guarantee_amended |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
