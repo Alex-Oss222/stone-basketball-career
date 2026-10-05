@@ -2,9 +2,9 @@
 
 # Contract | Robert Pack
 
-Known through: 2004-08-08. [Open interactive contract](packro01.html#contract) · [Contract history](packro01.html#contract-history)
+Known through: 2004-08-15. [Open interactive contract](packro01.html#contract) · [Contract history](packro01.html#contract-history)
 
-Robert Pack: under contract. Evidence cutoff: 2004-08-08.
+Robert Pack: under contract. Evidence cutoff: 2004-08-15.
 
 ## Current contract
 

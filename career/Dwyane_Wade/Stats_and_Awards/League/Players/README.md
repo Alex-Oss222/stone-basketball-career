@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-08-08**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-08-15**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -25,7 +25,7 @@ Card date: **2004-08-08**. 504 registry players, one Markdown card and one inter
 | [Charlie Ward](wardch01.md) | New York Knicks | 33 | sourced | [open](wardch01.html) |
 | [Chauncey Billups](billuch01.md) | Detroit Pistons | 27 | sourced | [open](billuch01.html) |
 | [Chris Whitney](whitnch01.md) | Washington Wizards | 32 | silhouette | [open](whitnch01.html) |
-| [Chucky Atkins](atkinch01.md) | Detroit Pistons | 29 | sourced | [open](atkinch01.html) |
+| [Chucky Atkins](atkinch01.md) | Detroit Pistons | 30 | sourced | [open](atkinch01.html) |
 | [Courtney Alexander](alexaco02.md) | New Orleans Hornets | 27 | silhouette | [open](alexaco02.html) |
 | [Damon Jones](jonesda01.md) | Milwaukee Bucks | None | silhouette | [open](jonesda01.html) |
 | [Damon Stoudamire](stoudda01.md) | Portland Trail Blazers | 30 | sourced | [open](stoudda01.html) |
@@ -33,7 +33,7 @@ Card date: **2004-08-08**. 504 registry players, one Markdown card and one inter
 | [Darrell Armstrong](armstda01.md) | New Orleans Hornets | 36 | sourced | [open](armstda01.html) |
 | [Darrick Martin](martida01.md) | Minnesota Timberwolves | None | silhouette | [open](martida01.html) |
 | [Derek Anderson](anderde01.md) | Portland Trail Blazers | 30 | sourced | [open](anderde01.html) |
-| [Derek Fisher](fishede01.md) | Los Angeles Lakers | 29 | sourced | [open](fishede01.html) |
+| [Derek Fisher](fishede01.md) | Los Angeles Lakers | 30 | sourced | [open](fishede01.html) |
 | [Derrick Zimmerman](zimmede01.md) | Golden State Warriors (draft rights) | 22 | sourced | [open](zimmede01.html) |
 | [Doug Overton](overtdo01.md) | New Jersey Nets | None | silhouette | [open](overtdo01.html) |
 | [Earl Boykins](boykiea01.md) | Denver Nuggets | 28 | sourced | [open](boykiea01.html) |
@@ -250,7 +250,7 @@ Card date: **2004-08-08**. 504 registry players, one Markdown card and one inter
 | [Jamal Mashburn](mashbja01.md) | New Orleans Hornets | 31 | silhouette | [open](mashbja01.html) |
 | [James Jones](jonesja02.md) | Indiana Pacers | 23 | sourced | [open](jonesja02.html) |
 | [James Posey](poseyja01.md) | Memphis Grizzlies | 27 | sourced | [open](poseyja01.html) |
-| [Jarvis Hayes](hayesja01.md) | Washington Wizards | 22 | sourced | [open](hayesja01.html) |
+| [Jarvis Hayes](hayesja01.md) | Washington Wizards | 23 | sourced | [open](hayesja01.html) |
 | [Jason Kapono](kaponja01.md) | Cleveland Cavaliers | 23 | sourced | [open](kaponja01.html) |
 | [Jim Jackson](jacksji01.md) | Houston Rockets | 33 | sourced | [open](jacksji01.html) |
 | [Jiri Welsch](welscji01.md) | Boston Celtics | 24 | sourced | [open](welscji01.html) |
@@ -326,7 +326,7 @@ Card date: **2004-08-08**. 504 registry players, one Markdown card and one inter
 | --- | --- | --- | --- | --- |
 | [Alton Ford](fordal02.md) | Orlando Magic | None | silhouette | [open](fordal02.html) |
 | [Amar'e Stoudemire](stoudam01.md) | Phoenix Suns | 21 | sourced | [open](stoudam01.html) |
-| [Antoine Walker](walkean02.md) | Dallas Mavericks | 27 | sourced | [open](walkean02.html) |
+| [Antoine Walker](walkean02.md) | Dallas Mavericks | 28 | sourced | [open](walkean02.html) |
 | [Antonio McDyess](mcdyean01.md) | New York Knicks | None | silhouette | [open](mcdyean01.html) |
 | [Austin Croshere](croshau01.md) | Indiana Pacers | 29 | sourced | [open](croshau01.html) |
 | [Boris Diaw](diawbo01.md) | Atlanta Hawks | 22 | sourced | [open](diawbo01.html) |

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-08-08",
+  "as_of": "2004-08-15",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -357,9 +357,9 @@
       "player_id": "surabo01",
       "name": "Bob Sura",
       "team": "Detroit Pistons",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "surabo01-2004-08-09",
+      "recorded_agreements": 1,
       "href": "players/surabo01.html#contract"
     },
     {
@@ -565,8 +565,8 @@
       "name": "Calbert Cheaney",
       "team": "Golden State Warriors",
       "status": "under contract",
-      "current_contract_id": "cheanca01-2003-08-27",
-      "recorded_agreements": 2,
+      "current_contract_id": "cheanca01-2004-08-11",
+      "recorded_agreements": 3,
       "href": "players/cheanca01.html#contract"
     },
     {
@@ -655,8 +655,8 @@
       "name": "Charlie Ward",
       "team": "New York Knicks",
       "status": "under contract",
-      "current_contract_id": "wardch01-existing-9f0957b8e75c",
-      "recorded_agreements": 1,
+      "current_contract_id": "wardch01-2004-08-09",
+      "recorded_agreements": 2,
       "href": "players/wardch01.html#contract"
     },
     {
@@ -960,9 +960,9 @@
       "player_id": "barroda01",
       "name": "Dana Barros",
       "team": "Boston Celtics",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "barroda01-2004-08-14",
+      "recorded_agreements": 1,
       "href": "players/barroda01.html#contract"
     },
     {
@@ -1051,8 +1051,8 @@
       "name": "Darvin Ham",
       "team": "Detroit Pistons",
       "status": "under contract",
-      "current_contract_id": "hamda01-2003-09-23",
-      "recorded_agreements": 2,
+      "current_contract_id": "hamda01-2004-08-09",
+      "recorded_agreements": 3,
       "href": "players/hamda01.html#contract"
     },
     {
@@ -1095,9 +1095,9 @@
       "player_id": "stevede01",
       "name": "DeShawn Stevenson",
       "team": "Utah Jazz",
-      "status": "under rookie contract",
-      "current_contract_id": "stevede01-existing-0ba8566d48cd",
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "stevede01-2004-08-12",
+      "recorded_agreements": 2,
       "href": "players/stevede01.html#contract"
     },
     {
@@ -2544,9 +2544,9 @@
       "player_id": "hunteli01",
       "name": "Lindsey Hunter",
       "team": "Detroit Pistons",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "hunteli01-2004-08-13",
+      "recorded_agreements": 1,
       "href": "players/hunteli01.html#contract"
     },
     {
@@ -3625,8 +3625,8 @@
       "name": "Ron Mercer",
       "team": "San Antonio Spurs",
       "status": "under contract",
-      "current_contract_id": "mercero01-2000-08-02",
-      "recorded_agreements": 1,
+      "current_contract_id": "mercero01-2004-08-12",
+      "recorded_agreements": 2,
       "href": "players/mercero01.html#contract"
     },
     {
@@ -4290,9 +4290,9 @@
       "player_id": "hudsotr01",
       "name": "Troy Hudson",
       "team": "Minnesota Timberwolves",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "hudsotr01-2004-08-09",
+      "recorded_agreements": 1,
       "href": "players/hudsotr01.html#contract"
     },
     {
@@ -4516,8 +4516,8 @@
       "name": "Zeljko Rebraca",
       "team": "Detroit Pistons",
       "status": "under contract",
-      "current_contract_id": "rebraze01-existing-2f9ec69151a0",
-      "recorded_agreements": 1,
+      "current_contract_id": "rebraze01-2004-08-12",
+      "recorded_agreements": 2,
       "href": "players/rebraze01.html#contract"
     },
     {
