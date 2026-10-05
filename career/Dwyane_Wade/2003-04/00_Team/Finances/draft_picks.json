@@ -21,6 +21,20 @@
    "history": []
   },
   {
+   "year": 2004,
+   "round": 2,
+   "owned": true,
+   "original_club": "Dallas Mavericks",
+   "history": [
+    {
+     "date": "2001-08-22",
+     "event": "acquired from Dallas in the Tim Hardaway trade, before the career began",
+     "source": "library/2004/league/nba_2004_draft_class.json (pick 53, pick_acquisition)",
+     "recorded_on": "2004-04-28"
+    }
+   ]
+  },
+  {
    "year": 2005,
    "round": 1,
    "owned": true,

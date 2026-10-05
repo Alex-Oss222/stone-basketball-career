@@ -190,6 +190,7 @@ def playoff_day(day):
     draw()
     run("scripts/decide_awards.py", "--write", show=False)
     run("scripts/playoff_day.py", "--refresh", show=False)
+    run("scripts/offseason_day.py", "--write", day)
     run("scripts/playoff_day.py", "--build", day, show=False)
     problems = run("-c", "from runtime.game_requests import frozen_errors; print('\\n'.join(frozen_errors()))", show=False)
     if problems:

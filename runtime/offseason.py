@@ -75,8 +75,13 @@ def simulated_clubs(root=ROOT, on=SEASON_END):
 
 
 def miami_players(root=ROOT, on=SEASON_END):
+    """Players simulated Miami holds (rule 2), including the draft rights it took on June 24 (`runtime/draft.py`)."""
     from .rotations import miami_holds
-    return set(miami_holds(OLD, on, root))
+    held = set(miami_holds(OLD, on, root))
+    record = Path(root) / "career/Dwyane_Wade/2003-04/09_Draft/draft_2004.json"
+    if record.is_file() and on >= _read(record)["date"]:
+        held |= {c["bbr_id"] for c in _read(record)["choices"] if c.get("bbr_id")}
+    return held
 
 
 def skipped_moves(root=ROOT):
