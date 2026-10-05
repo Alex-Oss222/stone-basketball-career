@@ -6,7 +6,9 @@
 - Within a club a number is held once: the player already there keeps it; a later arrival whose numbers are all
   taken takes the lowest number from 0 to 55 not in use (the equipment manager's choice; judgement, documented).
 - The simulated Wade has no real number: his is set by his own request and, when another player holds it, that
-  player's answer, an engine decision draw (`Wade_Jersey/`). Until a number is settled he is "not assigned".
+  player's answer, an engine decision draw (`Wade_Jersey/`). After a decline Wade may choose to wait for the number
+  (`Wade_Jersey/wade_choice.json`): he takes it the first date no other Miami player holds it. Until a number is
+  settled he is "not assigned".
 """
 import json
 from pathlib import Path
@@ -43,8 +45,26 @@ def candidates(bbr, club, root=ROOT):
     return seen
 
 
+CHOICE = WADE_REQUESTS / "wade_choice.json"
+
+
 def wade_number(root=ROOT):
-    """(number or None, the decision that settled it or None)."""
+    """(number or None, the decision that settled it or None): an accepted request, else Wade's recorded choice to wait
+    for a number, once no other player on Miami's register holds it."""
+    number, source = _requested_number(root)
+    if number:
+        return number, source
+    choice = _read(CHOICE, root)
+    if choice.get("number"):
+        register = _read(REGISTER, root).get("players", [])
+        holders = [p for p in register if p["name"] != WADE and not any(w in (p.get("status") or "") for w in GONE)
+                   and choice["number"] in candidates(p.get("bbr_id"), MIAMI, root)[:1]]
+        if not holders:
+            return choice["number"], CHOICE.name
+    return None, None
+
+
+def _requested_number(root=ROOT):
     folder = Path(root) / WADE_REQUESTS
     for packet in sorted(folder.glob("*.decision.json")) if folder.is_dir() else []:
         result = packet.with_name(packet.name.replace(".decision.json", ".decision.result.json"))

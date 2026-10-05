@@ -29,6 +29,22 @@ class JerseyTests(unittest.TestCase):
         held = [n for n in numbers.values() if n]
         self.assertEqual(len(held), len(set(held)))
 
+    def test_wade_takes_the_number_he_waits_for_once_it_is_free(self):
+        import json, shutil, tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            for rel in (J.REGISTER, J.REAL, J.BASELINE):
+                (tmp / rel).parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy(ROOT / rel, tmp / rel)
+            shutil.copytree(ROOT / J.WADE_REQUESTS, tmp / J.WADE_REQUESTS)
+            self.assertEqual(J.wade_number(tmp), (None, None))          # LaPhonso Ellis still wears #3
+            register = json.loads((tmp / J.REGISTER).read_text(encoding="utf-8"))
+            for p in register["players"]:
+                if p["name"] == "LaPhonso Ellis":
+                    p["status"] = "contract_expired_released"
+            (tmp / J.REGISTER).write_text(json.dumps(register), encoding="utf-8")
+            self.assertEqual(J.wade_number(tmp)[0], "3")
+
     def test_request_packet_is_a_two_way_draw(self):
         packet = J.request_packet("3", "Someone", "2004-04-14", "rookie")
         self.assertAlmostEqual(sum(packet["options"].values()), 1.0)

@@ -1,0 +1,11 @@
+{
+ "schema_version": 1,
+ "kind": "wade_jersey_choice",
+ "player": "Dwyane Wade",
+ "decided_on": "2004-04-28",
+ "decided_by": "the user, for Wade",
+ "number": "3",
+ "after": "2003-04-wade-jersey-request-3 (LaPhonso Ellis declined)",
+ "choice": "Wade keeps waiting for #3 rather than taking another number. He wears #3 from the first date no other player on Miami's register holds it; until then his number stays not assigned.",
+ "rule": "runtime/jerseys.py wade_number: an accepted request first, else this choice once #3 is free on Miami"
+}
