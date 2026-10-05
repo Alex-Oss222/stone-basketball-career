@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-09-23-deshawn-stevenson",
+ "date": "2004-09-23",
+ "question": "2004 free agency, 2004-09-23: which offer does DeShawn Stevenson accept (Cleveland Cavaliers $2,657,306 x 5), or does he wait?",
+ "decider": "DeShawn Stevenson (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $2,657,306; best offer 1.00 of the ask in total; accept chance 0.950; priority fame; utility Cleveland Cavaliers 71.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

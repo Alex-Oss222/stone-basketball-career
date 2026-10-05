@@ -1,0 +1,12 @@
+{
+ "date": "2004-09-23",
+ "decider": "Michael Ruffin (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-09-23-michael-ruffin",
+ "kind": "decision",
+ "options": {
+  "New Jersey Nets": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "New Jersey Nets",
+ "question": "2004 free agency, 2004-09-23: which offer does Michael Ruffin accept (New Jersey Nets $745,046 x 1), or does he wait?"
+}

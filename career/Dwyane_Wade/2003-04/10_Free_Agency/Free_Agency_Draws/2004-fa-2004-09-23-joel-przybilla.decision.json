@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-fa-2004-09-23-joel-przybilla",
+ "date": "2004-09-23",
+ "question": "2004 free agency, 2004-09-23: which offer does Joel Przybilla accept (Cleveland Cavaliers $745,046 x 1, Portland Trail Blazers $745,046 x 1), or does he wait?",
+ "decider": "Joel Przybilla (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.475,
+  "Portland Trail Blazers": 0.475,
+  "wait": 0.05
+ },
+ "basis": "Ask $745,046; best offer 1.00 of the ask in total; accept chance 0.950; priority winning; utility Cleveland Cavaliers 53.1, Portland Trail Blazers 53.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

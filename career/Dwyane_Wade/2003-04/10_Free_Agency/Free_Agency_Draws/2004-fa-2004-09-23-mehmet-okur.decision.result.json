@@ -1,0 +1,16 @@
+{
+ "date": "2004-09-23",
+ "decider": "Mehmet Okur (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-09-23-mehmet-okur",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.159598,
+  "Los Angeles Clippers": 0.042634,
+  "Miami Heat": 0.569728,
+  "Milwaukee Bucks": 0.023931,
+  "Utah Jazz": 0.154109,
+  "wait": 0.05
+ },
+ "outcome": "Miami Heat",
+ "question": "2004 free agency, 2004-09-23: which offer does Mehmet Okur accept (Golden State Warriors $2,827,619 x 5, Los Angeles Clippers $2,827,619 x 5, Miami Heat $2,827,619 x 5, Milwaukee Bucks $2,827,619 x 5, Utah Jazz $2,827,619 x 5), or does he wait?"
+}

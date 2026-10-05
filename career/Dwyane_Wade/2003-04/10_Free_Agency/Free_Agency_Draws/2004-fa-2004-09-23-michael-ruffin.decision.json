@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-09-23-michael-ruffin",
+ "date": "2004-09-23",
+ "question": "2004 free agency, 2004-09-23: which offer does Michael Ruffin accept (New Jersey Nets $745,046 x 1), or does he wait?",
+ "decider": "Michael Ruffin (simulated player, engine draw)",
+ "options": {
+  "New Jersey Nets": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $745,046; best offer 1.00 of the ask in total; accept chance 0.950; priority fame; utility New Jersey Nets 56.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

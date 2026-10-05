@@ -1,0 +1,12 @@
+{
+ "date": "2004-09-23",
+ "decider": "Morris Peterson (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-09-23-morris-peterson",
+ "kind": "decision",
+ "options": {
+  "Toronto Raptors": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "Toronto Raptors",
+ "question": "2004 free agency, 2004-09-23: which offer does Morris Peterson accept (Toronto Raptors $2,727,600 x 5), or does he wait?"
+}

@@ -1,0 +1,14 @@
+{
+ "date": "2004-09-23",
+ "decider": "Toni Kukoc (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-09-23-toni-kukoc",
+ "kind": "decision",
+ "options": {
+  "New Jersey Nets": 0.618968,
+  "New Orleans Hornets": 0.121882,
+  "Washington Wizards": 0.20915,
+  "wait": 0.05
+ },
+ "outcome": "New Jersey Nets",
+ "question": "2004 free agency, 2004-09-23: which offer does Toni Kukoc accept (New Jersey Nets $1,100,000 x 1, New Orleans Hornets $1,100,000 x 1, Washington Wizards $1,100,000 x 1), or does he wait?"
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-09-23-morris-peterson",
+ "date": "2004-09-23",
+ "question": "2004 free agency, 2004-09-23: which offer does Morris Peterson accept (Toronto Raptors $2,727,600 x 5), or does he wait?",
+ "decider": "Morris Peterson (simulated player, engine draw)",
+ "options": {
+  "Toronto Raptors": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $2,727,600; best offer 1.00 of the ask in total; accept chance 0.950; priority loyalty; utility Toronto Raptors 64.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
