@@ -3644,6 +3644,214 @@
     }
    ],
    "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2003-04-player_of_month-2004-04-01-east",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "East",
+   "period_start": "2004-04-01",
+   "period_end": "2004-04-14",
+   "announced_on": "2004-04-16",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/04_April/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 8,
+     "wins": 6,
+     "losses": 2,
+     "pts": 24.9,
+     "reb": 4.9,
+     "ast": 6.5,
+     "game_score": 19.86,
+     "score": 28.863,
+     "rank": 1
+    },
+    {
+     "player": "Ron Artest",
+     "team": "Indiana Pacers",
+     "games": 7,
+     "wins": 6,
+     "losses": 1,
+     "pts": 23.0,
+     "reb": 4.6,
+     "ast": 5.0,
+     "game_score": 17.91,
+     "score": 28.2,
+     "rank": 2
+    },
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "games": 7,
+     "wins": 4,
+     "losses": 3,
+     "pts": 23.6,
+     "reb": 7.7,
+     "ast": 8.4,
+     "game_score": 19.64,
+     "score": 26.5,
+     "rank": 3
+    }
+   ],
+   "winner": "Vince Carter"
+  },
+  {
+   "id": "2003-04-player_of_month-2004-04-01-west",
+   "award": "player_of_month",
+   "name": "Player of the Month",
+   "conference": "West",
+   "period_start": "2004-04-01",
+   "period_end": "2004-04-14",
+   "announced_on": "2004-04-16",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/04_April/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 6,
+     "wins": 5,
+     "losses": 1,
+     "pts": 28.0,
+     "reb": 15.2,
+     "ast": 5.3,
+     "game_score": 23.32,
+     "score": 33.317,
+     "rank": 1
+    },
+    {
+     "player": "Sam Cassell",
+     "team": "Minnesota Timberwolves",
+     "games": 6,
+     "wins": 5,
+     "losses": 1,
+     "pts": 20.8,
+     "reb": 4.0,
+     "ast": 9.8,
+     "game_score": 19.88,
+     "score": 29.883,
+     "rank": 2
+    },
+    {
+     "player": "Peja Stojakovic",
+     "team": "Sacramento Kings",
+     "games": 8,
+     "wins": 6,
+     "losses": 2,
+     "pts": 23.1,
+     "reb": 7.5,
+     "ast": 2.2,
+     "game_score": 17.71,
+     "score": 26.712,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2003-04-rookie_of_month-2004-04-01-east",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "East",
+   "period_start": "2004-04-01",
+   "period_end": "2004-04-14",
+   "announced_on": "2004-04-16",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/04_April/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 5,
+     "wins": 3,
+     "losses": 2,
+     "pts": 14.6,
+     "reb": 6.0,
+     "ast": 2.8,
+     "game_score": 14.76,
+     "score": 17.16,
+     "rank": 1
+    },
+    {
+     "player": "Chris Bosh",
+     "team": "Toronto Raptors",
+     "games": 7,
+     "wins": 5,
+     "losses": 2,
+     "pts": 12.9,
+     "reb": 9.3,
+     "ast": 1.1,
+     "game_score": 10.26,
+     "score": 13.114,
+     "rank": 2
+    },
+    {
+     "player": "Boris Diaw",
+     "team": "Atlanta Hawks",
+     "games": 7,
+     "wins": 5,
+     "losses": 2,
+     "pts": 9.0,
+     "reb": 4.1,
+     "ast": 2.6,
+     "game_score": 7.36,
+     "score": 10.214,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwyane Wade"
+  },
+  {
+   "id": "2003-04-rookie_of_month-2004-04-01-west",
+   "award": "rookie_of_month",
+   "name": "Rookie of the Month",
+   "conference": "West",
+   "period_start": "2004-04-01",
+   "period_end": "2004-04-14",
+   "announced_on": "2004-04-16",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/04_April/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Carmelo Anthony",
+     "team": "Denver Nuggets",
+     "games": 6,
+     "wins": 4,
+     "losses": 2,
+     "pts": 22.3,
+     "reb": 7.8,
+     "ast": 2.8,
+     "game_score": 14.88,
+     "score": 17.55,
+     "rank": 1
+    },
+    {
+     "player": "Leandro Barbosa",
+     "team": "Phoenix Suns",
+     "games": 5,
+     "wins": 2,
+     "losses": 3,
+     "pts": 9.8,
+     "reb": 1.8,
+     "ast": 2.2,
+     "game_score": 7.1,
+     "score": 8.7,
+     "rank": 2
+    },
+    {
+     "player": "Chris Kaman",
+     "team": "Los Angeles Clippers",
+     "games": 6,
+     "wins": 4,
+     "losses": 2,
+     "pts": 5.8,
+     "reb": 3.5,
+     "ast": 1.5,
+     "game_score": 4.07,
+     "score": 6.733,
+     "rank": 3
+    }
+   ],
+   "winner": "Carmelo Anthony"
   }
  ]
 }

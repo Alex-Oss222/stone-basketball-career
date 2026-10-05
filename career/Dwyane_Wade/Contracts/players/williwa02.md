@@ -2,9 +2,9 @@
 
 # Contract | Walt Williams
 
-Known through: 2004-04-15. [Open interactive contract](williwa02.html#contract) · [Contract history](williwa02.html#contract-history)
+Known through: 2004-04-16. [Open interactive contract](williwa02.html#contract) · [Contract history](williwa02.html#contract-history)
 
-Walt Williams: not with an NBA club (status not established) (researched, date not recorded). Evidence cutoff: 2004-04-15.
+Walt Williams: not with an NBA club (status not established) (researched, date not recorded). Evidence cutoff: 2004-04-16.
 
 ## Current contract
 

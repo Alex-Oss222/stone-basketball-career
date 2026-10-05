@@ -2,9 +2,9 @@
 
 # Contract | Tayshaun Prince
 
-Known through: 2004-04-15. [Open interactive contract](princta01.html#contract) · [Contract history](princta01.html#contract-history)
+Known through: 2004-04-16. [Open interactive contract](princta01.html#contract) · [Contract history](princta01.html#contract-history)
 
-Tayshaun Prince: under rookie contract. Evidence cutoff: 2004-04-15.
+Tayshaun Prince: under rookie contract. Evidence cutoff: 2004-04-16.
 
 ## Current contract
 

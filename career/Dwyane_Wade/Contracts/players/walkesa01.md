@@ -2,9 +2,9 @@
 
 # Contract | Samaki Walker
 
-Known through: 2004-04-15. [Open interactive contract](walkesa01.html#contract) · [Contract history](walkesa01.html#contract-history)
+Known through: 2004-04-16. [Open interactive contract](walkesa01.html#contract) · [Contract history](walkesa01.html#contract-history)
 
-Samaki Walker: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-04-15.
+Samaki Walker: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-04-16.
 
 ## Current contract
 

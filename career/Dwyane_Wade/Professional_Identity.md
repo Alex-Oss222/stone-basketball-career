@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2004-04-15](assets/stat_reports/personal_2004-04-15.svg)
+![Player personal information and earned career awards through 2004-04-16](assets/stat_reports/personal_2004-04-16.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2004-04-15; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-04-16; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 [Established full player profile](Dwyane_Wade_Player_Profile.md)
 
@@ -48,3 +48,4 @@ Identity as of 2004-04-15; status snapshot dated 2003-12-01. User-established al
 | Eastern Conference Player of the Week | 2004-03-08 to 2004-03-14 | 2004-03-15 | [East POW](Stats_and_Awards/League/2003-04/03_March/Week_2/League_Awards.md#player-of-the-week) |
 | Eastern Conference Player of the Month | 2004-03-01 to 2004-03-31 | 2004-04-02 | [East POM](Stats_and_Awards/League/2003-04/03_March/League_Awards.md#player-of-the-month) |
 | Eastern Conference Rookie of the Month | 2004-03-01 to 2004-03-31 | 2004-04-02 | [East ROM](Stats_and_Awards/League/2003-04/03_March/League_Awards.md#rookie-of-the-month) |
+| Eastern Conference Rookie of the Month | 2004-04-01 to 2004-04-14 | 2004-04-16 | [East ROM](Stats_and_Awards/League/2003-04/04_April/League_Awards.md#rookie-of-the-month) |

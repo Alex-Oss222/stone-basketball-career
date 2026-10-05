@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-04-15**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-04-16**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -304,7 +304,7 @@ Card date: **2004-04-15**. 504 registry players, one Markdown card and one inter
 | [Travis Outlaw](outlatr01.md) | Portland Trail Blazers | 19 | sourced | [open](outlatr01.html) |
 | [Tremaine Fowlkes](fowlktr01.md) | Los Angeles Clippers | 28 | silhouette | [open](fowlktr01.html) |
 | [Wally Szczerbiak](szczewa02.md) | Minnesota Timberwolves | 27 | sourced | [open](szczewa02.html) |
-| [Walt Williams](williwa02.md) | Dallas Mavericks | 33 | silhouette | [open](williwa02.html) |
+| [Walt Williams](williwa02.md) | Dallas Mavericks | 34 | silhouette | [open](williwa02.html) |
 | [Walter McCarty](mccarwa01.md) | Boston Celtics | 30 | silhouette | [open](mccarwa01.html) |
 | [Zarko Cabarkapa](cabarza01.md) | Phoenix Suns | 22 | sourced | [open](cabarza01.html) |
 
@@ -329,7 +329,7 @@ Card date: **2004-04-15**. 504 registry players, one Markdown card and one inter
 | [Antoine Walker](walkean02.md) | Dallas Mavericks | 27 | sourced | [open](walkean02.html) |
 | [Antonio McDyess](mcdyean01.md) | New York Knicks | None | silhouette | [open](mcdyean01.html) |
 | [Austin Croshere](croshau01.md) | Indiana Pacers | 28 | sourced | [open](croshau01.html) |
-| [Boris Diaw](diawbo01.md) | Atlanta Hawks | 21 | sourced | [open](diawbo01.html) |
+| [Boris Diaw](diawbo01.md) | Atlanta Hawks | 22 | sourced | [open](diawbo01.html) |
 | [Brandon Hunter](huntebr01.md) | Boston Celtics | 23 | sourced | [open](huntebr01.html) |
 | [Brian Cardinal](cardibr01.md) | Golden State Warriors | None | silhouette | [open](cardibr01.html) |
 | [Brian Cook](cookbr01.md) | Los Angeles Lakers | 23 | sourced | [open](cookbr01.html) |
@@ -498,7 +498,7 @@ Card date: **2004-04-15**. 504 registry players, one Markdown card and one inter
 | [Kelvin Cato](catoke01.md) | Houston Rockets | 29 | sourced | [open](catoke01.html) |
 | [Ken Johnson](johnske03.md) | Free agent | 26 | sourced | [open](johnske03.html) |
 | [Kendrick Perkins](perkike01.md) | Boston Celtics | 19 | sourced | [open](perkike01.html) |
-| [Keon Clark](clarkke01.md) | Utah Jazz | 28 | silhouette | [open](clarkke01.html) |
+| [Keon Clark](clarkke01.md) | Utah Jazz | 29 | silhouette | [open](clarkke01.html) |
 | [Kevin Willis](willike02.md) | San Antonio Spurs | 41 | sourced | [open](willike02.html) |
 | [Kurt Thomas](thomaku01.md) | New York Knicks | 31 | sourced | [open](thomaku01.html) |
 | [Kwame Brown](brownkw01.md) | Washington Wizards | 22 | sourced | [open](brownkw01.html) |
