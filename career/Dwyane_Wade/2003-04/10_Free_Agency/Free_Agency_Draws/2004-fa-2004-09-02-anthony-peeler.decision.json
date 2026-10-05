@@ -1,0 +1,18 @@
+{
+ "event_id": "2004-fa-2004-09-02-anthony-peeler",
+ "date": "2004-09-02",
+ "question": "2004 free agency, 2004-09-02: which offer does Anthony Peeler accept (Denver Nuggets $1,100,000 x 1, Golden State Warriors $1,100,000 x 1, Houston Rockets $1,100,000 x 1, Minnesota Timberwolves $1,100,000 x 1, New Jersey Nets $1,100,000 x 1, New Orleans Hornets $1,100,000 x 1, New York Knicks $1,100,000 x 1, Washington Wizards $1,100,000 x 1), or does he wait?",
+ "decider": "Anthony Peeler (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.068182,
+  "Golden State Warriors": 0.112976,
+  "Houston Rockets": 0.176299,
+  "Minnesota Timberwolves": 0.136617,
+  "New Jersey Nets": 0.068182,
+  "New Orleans Hornets": 0.040032,
+  "New York Knicks": 0.264325,
+  "Washington Wizards": 0.023387,
+  "wait": 0.11
+ },
+ "basis": "Ask $1,100,000; best offer 1.00 of the ask in total; accept chance 0.890; priority loyalty; utility Denver Nuggets 49.9, Golden State Warriors 51.9, Houston Rockets 53.7, Minnesota Timberwolves 52.7, New Jersey Nets 49.9, New Orleans Hornets 47.8, New York Knicks 55.3, Washington Wizards 45.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

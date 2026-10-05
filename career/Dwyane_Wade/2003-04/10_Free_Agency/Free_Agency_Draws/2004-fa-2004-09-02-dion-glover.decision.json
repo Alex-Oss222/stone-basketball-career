@@ -1,0 +1,17 @@
+{
+ "event_id": "2004-fa-2004-09-02-dion-glover",
+ "date": "2004-09-02",
+ "question": "2004 free agency, 2004-09-02: which offer does Dion Glover accept (Cleveland Cavaliers $4,023,328 x 5, Golden State Warriors $4,023,328 x 5, Memphis Grizzlies $4,023,328 x 5, Miami Heat $4,023,328 x 5, Milwaukee Bucks $4,023,328 x 5, Toronto Raptors $4,023,328 x 5, Utah Jazz $4,023,328 x 5), or does he wait?",
+ "decider": "Dion Glover (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.128552,
+  "Golden State Warriors": 0.079745,
+  "Memphis Grizzlies": 0.174396,
+  "Miami Heat": 0.243186,
+  "Milwaukee Bucks": 0.092188,
+  "Toronto Raptors": 0.079745,
+  "Utah Jazz": 0.092188,
+  "wait": 0.11
+ },
+ "basis": "Ask $4,023,328; best offer 1.00 of the ask in total; accept chance 0.890; priority money; utility Cleveland Cavaliers 69.8, Golden State Warriors 67.9, Memphis Grizzlies 71.0, Miami Heat 72.3, Milwaukee Bucks 68.5, Toronto Raptors 67.9, Utah Jazz 68.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,13 @@
+{
+ "date": "2004-09-02",
+ "decider": "Vin Baker (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-09-02-vin-baker",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.829883,
+  "Los Angeles Clippers": 0.060117,
+  "wait": 0.11
+ },
+ "outcome": "Denver Nuggets",
+ "question": "2004 free agency, 2004-09-02: which offer does Vin Baker accept (Denver Nuggets $3,753,898 x 4, Los Angeles Clippers $3,753,898 x 4), or does he wait?"
+}

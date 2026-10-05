@@ -1,0 +1,12 @@
+{
+ "date": "2004-09-02",
+ "decider": "Steven Hunter (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-09-02-steven-hunter",
+ "kind": "decision",
+ "options": {
+  "New Orleans Hornets": 0.89,
+  "wait": 0.11
+ },
+ "outcome": "New Orleans Hornets",
+ "question": "2004 free agency, 2004-09-02: which offer does Steven Hunter accept (New Orleans Hornets $720,046 x 1), or does he wait?"
+}

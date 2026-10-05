@@ -1,0 +1,22 @@
+{
+ "event_id": "2004-fa-2004-09-02-samaki-walker",
+ "date": "2004-09-02",
+ "question": "2004 free agency, 2004-09-02: which offer does Samaki Walker accept (Cleveland Cavaliers $995,046 x 1, Denver Nuggets $995,046 x 1, Indiana Pacers $995,046 x 1, Los Angeles Clippers $995,046 x 1, Memphis Grizzlies $995,046 x 1, Milwaukee Bucks $995,046 x 1, New Jersey Nets $995,046 x 1, New Orleans Hornets $995,046 x 1, Portland Trail Blazers $995,046 x 1, San Antonio Spurs $995,046 x 1, Toronto Raptors $995,046 x 1, Utah Jazz $995,046 x 1), or does he wait?",
+ "decider": "Samaki Walker (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.092348,
+  "Denver Nuggets": 0.017341,
+  "Indiana Pacers": 0.092348,
+  "Los Angeles Clippers": 0.117397,
+  "Memphis Grizzlies": 0.098797,
+  "Milwaukee Bucks": 0.06524,
+  "New Jersey Nets": 0.017341,
+  "New Orleans Hornets": 0.06524,
+  "Portland Trail Blazers": 0.092348,
+  "San Antonio Spurs": 0.098797,
+  "Toronto Raptors": 0.067563,
+  "Utah Jazz": 0.06524,
+  "wait": 0.11
+ },
+ "basis": "Ask $995,046; best offer 1.00 of the ask in total; accept chance 0.890; priority loyalty; utility Cleveland Cavaliers 52.7, Denver Nuggets 46.0, Indiana Pacers 52.7, Los Angeles Clippers 53.7, Memphis Grizzlies 53.0, Milwaukee Bucks 51.3, New Jersey Nets 46.0, New Orleans Hornets 51.3, Portland Trail Blazers 52.7, San Antonio Spurs 53.0, Toronto Raptors 51.5, Utah Jazz 51.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
