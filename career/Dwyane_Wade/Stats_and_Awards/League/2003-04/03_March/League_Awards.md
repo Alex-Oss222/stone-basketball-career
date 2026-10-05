@@ -41,7 +41,7 @@ No award closed. When settled, record the exact period, announcement date and li
 | Period | Calendar dates | Closed decisions | Status |
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/League_Awards.md) | March 1-7, 2004 | 2 | Decided |
-| [Week 2](Week_2/League_Awards.md) | March 8-14, 2004 | 0 | No award filed |
+| [Week 2](Week_2/League_Awards.md) | March 8-14, 2004 | 2 | Decided |
 | [Week 3](Week_3/League_Awards.md) | March 15-21, 2004 | 0 | No award filed |
 | [Week 4](Week_4/League_Awards.md) | March 22-31, 2004 | 0 | No award filed |
 

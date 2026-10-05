@@ -2,9 +2,9 @@
 
 # Contract | Drew Gooden
 
-Known through: 2004-03-14. [Open interactive contract](goodedr01.html#contract) · [Contract history](goodedr01.html#contract-history)
+Known through: 2004-03-15. [Open interactive contract](goodedr01.html#contract) · [Contract history](goodedr01.html#contract-history)
 
-Drew Gooden: under rookie contract. Evidence cutoff: 2004-03-14.
+Drew Gooden: under rookie contract. Evidence cutoff: 2004-03-15.
 
 ## Current contract
 

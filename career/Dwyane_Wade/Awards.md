@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2004-03-14](assets/stat_reports/personal_2004-03-14.svg)
+![Player personal information and earned career awards through 2004-03-15](assets/stat_reports/personal_2004-03-15.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2004-03-14; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-03-15; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -43,6 +43,7 @@ Identity as of 2004-03-14; status snapshot dated 2003-12-01. User-established al
 | Eastern Conference Player of the Month | 2004-01-01 to 2004-01-31 | 2004-02-02 | [East POM](Stats_and_Awards/League/2003-04/01_January/League_Awards.md#player-of-the-month) |
 | Eastern Conference Rookie of the Month | 2004-01-01 to 2004-01-31 | 2004-02-02 | [East ROM](Stats_and_Awards/League/2003-04/01_January/League_Awards.md#rookie-of-the-month) |
 | Eastern Conference Rookie of the Month | 2004-02-01 to 2004-02-29 | 2004-03-02 | [East ROM](Stats_and_Awards/League/2003-04/02_February/League_Awards.md#rookie-of-the-month) |
+| Eastern Conference Player of the Week | 2004-03-08 to 2004-03-14 | 2004-03-15 | [East POW](Stats_and_Awards/League/2003-04/03_March/Week_2/League_Awards.md#player-of-the-week) |
 
 ## Statistics
 
@@ -58,5 +59,6 @@ Identity as of 2004-03-14; status snapshot dated 2003-12-01. User-established al
 | Eastern Conference Player of the Month | NBA regular season | 2003-04 | 2004-01-01 to 2004-01-31 | 2004-02-02 | [East POM](Stats_and_Awards/League/2003-04/01_January/League_Awards.md#player-of-the-month) |
 | Eastern Conference Rookie of the Month | NBA regular season | 2003-04 | 2004-01-01 to 2004-01-31 | 2004-02-02 | [East ROM](Stats_and_Awards/League/2003-04/01_January/League_Awards.md#rookie-of-the-month) |
 | Eastern Conference Rookie of the Month | NBA regular season | 2003-04 | 2004-02-01 to 2004-02-29 | 2004-03-02 | [East ROM](Stats_and_Awards/League/2003-04/02_February/League_Awards.md#rookie-of-the-month) |
+| Eastern Conference Player of the Week | NBA regular season | 2003-04 | 2004-03-08 to 2004-03-14 | 2004-03-15 | [East POW](Stats_and_Awards/League/2003-04/03_March/Week_2/League_Awards.md#player-of-the-week) |
 
 [Award source and date rules](../../docs/player_statistics.md)

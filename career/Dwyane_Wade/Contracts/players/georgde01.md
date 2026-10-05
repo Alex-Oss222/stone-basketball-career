@@ -2,9 +2,9 @@
 
 # Contract | Devean George
 
-Known through: 2004-03-14. [Open interactive contract](georgde01.html#contract) · [Contract history](georgde01.html#contract-history)
+Known through: 2004-03-15. [Open interactive contract](georgde01.html#contract) · [Contract history](georgde01.html#contract-history)
 
-Devean George: under contract. Evidence cutoff: 2004-03-14.
+Devean George: under contract. Evidence cutoff: 2004-03-15.
 
 ## Current contract
 

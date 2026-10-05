@@ -2812,6 +2812,110 @@
     }
    ],
    "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-03-08-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-03-08",
+   "period_end": "2004-03-14",
+   "announced_on": "2004-03-15",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/03_March/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 23.2,
+     "reb": 2.2,
+     "ast": 4.5,
+     "game_score": 21.5,
+     "score": 95.0,
+     "rank": 1
+    },
+    {
+     "player": "Allen Iverson",
+     "team": "Philadelphia 76ers",
+     "games": 3,
+     "wins": 1,
+     "losses": 2,
+     "pts": 32.7,
+     "reb": 6.3,
+     "ast": 7.7,
+     "game_score": 25.27,
+     "score": 78.8,
+     "rank": 2
+    },
+    {
+     "player": "Gilbert Arenas",
+     "team": "Washington Wizards",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 22.5,
+     "reb": 6.0,
+     "ast": 5.2,
+     "game_score": 18.1,
+     "score": 78.4,
+     "rank": 3
+    }
+   ],
+   "winner": "Dwyane Wade"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-03-08-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-03-08",
+   "period_end": "2004-03-14",
+   "announced_on": "2004-03-15",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/03_March/Week_2/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 25.8,
+     "reb": 13.0,
+     "ast": 6.0,
+     "game_score": 25.2,
+     "score": 109.8,
+     "rank": 1
+    },
+    {
+     "player": "Earl Boykins",
+     "team": "Denver Nuggets",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 20.5,
+     "reb": 2.8,
+     "ast": 6.8,
+     "game_score": 18.2,
+     "score": 81.8,
+     "rank": 2
+    },
+    {
+     "player": "Peja Stojakovic",
+     "team": "Sacramento Kings",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 26.0,
+     "reb": 4.8,
+     "ast": 1.5,
+     "game_score": 18.45,
+     "score": 79.8,
+     "rank": 3
+    }
+   ],
+   "winner": "Kevin Garnett"
   }
  ]
 }

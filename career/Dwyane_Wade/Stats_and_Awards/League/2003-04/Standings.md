@@ -1,6 +1,6 @@
 # 2003-04 standings
 
-Through 2004-03-14, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2004-03-15, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
@@ -20,23 +20,23 @@ Through 2004-03-14, from closed simulated results only (`runtime/standings.py`).
 | 12 | Boston Celtics | 25 | 43 | .368 | 21 |
 | 13 | Washington Wizards | 22 | 43 | .338 | 22.5 |
 | 14 | New York Knicks | 20 | 47 | .299 | 25.5 |
-| 15 | Orlando Magic | 18 | 50 | .265 | 28 |
+| 15 | Orlando Magic | 18 | 51 | .261 | 28.5 |
 
 ## Western Conference
 
 | # | Club | W | L | Pct | GB |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Minnesota Timberwolves | 52 | 15 | .776 | — |
-| 2 | San Antonio Spurs | 46 | 21 | .687 | 6 |
+| 2 | San Antonio Spurs | 46 | 22 | .676 | 6.5 |
 | 3 | Dallas Mavericks | 44 | 22 | .667 | 7.5 |
 | 4 | Sacramento Kings | 42 | 24 | .636 | 9.5 |
 | 5 | Denver Nuggets | 40 | 28 | .588 | 12.5 |
-| 6 | Los Angeles Lakers | 38 | 28 | .576 | 13.5 |
-| 7 | Golden State Warriors | 36 | 29 | .554 | 15 |
+| 6 | Los Angeles Lakers | 39 | 28 | .582 | 13 |
+| 7 | Golden State Warriors | 37 | 29 | .561 | 14.5 |
 | 8 | Memphis Grizzlies | 36 | 30 | .545 | 15.5 |
-| 9 | Houston Rockets | 32 | 33 | .492 | 19 |
+| 9 | Houston Rockets | 33 | 33 | .500 | 18.5 |
 | 10 | Seattle SuperSonics | 32 | 34 | .485 | 19.5 |
-| 11 | Phoenix Suns | 26 | 40 | .394 | 25.5 |
+| 11 | Phoenix Suns | 26 | 41 | .388 | 26 |
 | 12 | Utah Jazz | 23 | 44 | .343 | 29 |
 | 13 | Portland Trail Blazers | 22 | 44 | .333 | 29.5 |
 | 14 | Los Angeles Clippers | 18 | 48 | .273 | 33.5 |
