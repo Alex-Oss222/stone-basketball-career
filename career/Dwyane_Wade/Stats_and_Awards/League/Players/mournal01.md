@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `mournal01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-06-13 · **Club on this date:** New Jersey Nets · **Basis:** signing to New Jersey Nets on 2003-07-16 (world data) · **League:** NBA  
+**Card date:** 2004-06-20 · **Club on this date:** New Jersey Nets · **Basis:** signing to New Jersey Nets on 2003-07-16 (world data) · **League:** NBA  
 **Position:** C (Center) · **Jersey:** #33 · **Born:** None · **Age on card date:** None  
 **Registry ID:** `mournal01`
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `mourna
 
 ## Simulated statistics
 
-As of **2004-06-13**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-06-20**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -106,7 +106,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No 2002-03 record in the supplied statistics file. 2003-04 is simulated: 82 closed regular-season games through 2004-06-13.
+**Coverage:** No 2002-03 record in the supplied statistics file. 2003-04 is simulated: 82 closed regular-season games through 2004-06-20.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -114,12 +114,12 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2003-04 playoffs from closed playoff results through 2004-06-13 ([bracket](../2003-04/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
+**Coverage:** 2003-04 playoffs from closed playoff results through 2004-06-20 ([bracket](../2003-04/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | New Jersey Nets | 20 | 0 | 7.3 | 3.2 | 1.3 | 0.7 | 0.5 | 0.3 | 0.6 | 50.0% | 60.0% | 92.9% |
+| 2003-04 | New Jersey Nets | 23 | 0 | 7.2 | 3.0 | 1.3 | 0.7 | 0.4 | 0.3 | 0.5 | 48.1% | 42.9% | 85.0% |
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2004-06-13. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2004-06-20. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

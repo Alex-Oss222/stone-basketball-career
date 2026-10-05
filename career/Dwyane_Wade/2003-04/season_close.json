@@ -1,0 +1,143 @@
+{
+ "schema_version": 1,
+ "season": "2003-04",
+ "close_date": "2004-06-20",
+ "competitions_closed": [
+  "regular",
+  "playoff"
+ ],
+ "regular_season_games_scheduled": 82,
+ "source": "08_Playoffs/README.md",
+ "rule": "Close a season the night its Finals end (roadmap 18): the season-close record, Wade's incentive evaluation and the `season_close` standing snapshot.",
+ "wade": {
+  "regular": {
+   "gp": 75,
+   "gs": 70,
+   "minutes_per_game": 35.0,
+   "points_per_game": 17.93,
+   "complete": true
+  },
+  "playoff": {
+   "gp": 2,
+   "gs": 2,
+   "minutes_per_game": 26.01,
+   "points_per_game": 10.5,
+   "complete": true
+  },
+  "honors": [
+   {
+    "name": "Eastern Conference Rookie of the Month",
+    "awarded_on": "2003-12-02",
+    "id": "2003-04-rookie_of_month-2003-10-28-east"
+   },
+   {
+    "name": "Eastern Conference Player of the Week",
+    "awarded_on": "2003-12-22",
+    "id": "2003-04-player_of_week-2003-12-15-east"
+   },
+   {
+    "name": "Eastern Conference Player of the Month",
+    "awarded_on": "2004-01-02",
+    "id": "2003-04-player_of_month-2003-12-01-east"
+   },
+   {
+    "name": "Eastern Conference Rookie of the Month",
+    "awarded_on": "2004-01-02",
+    "id": "2003-04-rookie_of_month-2003-12-01-east"
+   },
+   {
+    "name": "Eastern Conference Player of the Week",
+    "awarded_on": "2004-01-05",
+    "id": "2003-04-player_of_week-2003-12-29-east"
+   },
+   {
+    "name": "Eastern Conference Player of the Month",
+    "awarded_on": "2004-02-02",
+    "id": "2003-04-player_of_month-2004-01-01-east"
+   },
+   {
+    "name": "Eastern Conference Rookie of the Month",
+    "awarded_on": "2004-02-02",
+    "id": "2003-04-rookie_of_month-2004-01-01-east"
+   },
+   {
+    "name": "Eastern Conference Rookie of the Month",
+    "awarded_on": "2004-03-02",
+    "id": "2003-04-rookie_of_month-2004-02-01-east"
+   },
+   {
+    "name": "Eastern Conference Player of the Week",
+    "awarded_on": "2004-03-15",
+    "id": "2003-04-player_of_week-2004-03-08-east"
+   },
+   {
+    "name": "Eastern Conference Player of the Month",
+    "awarded_on": "2004-04-02",
+    "id": "2003-04-player_of_month-2004-03-01-east"
+   },
+   {
+    "name": "Eastern Conference Rookie of the Month",
+    "awarded_on": "2004-04-02",
+    "id": "2003-04-rookie_of_month-2004-03-01-east"
+   },
+   {
+    "name": "Eastern Conference Rookie of the Month",
+    "awarded_on": "2004-04-16",
+    "id": "2003-04-rookie_of_month-2004-04-01-east"
+   },
+   {
+    "name": "Rookie of the Year",
+    "awarded_on": "2004-04-20",
+    "id": "2003-04-roy"
+   },
+   {
+    "name": "All-NBA First Team",
+    "awarded_on": "2004-04-25",
+    "id": "2003-04-all_nba-first"
+   },
+   {
+    "name": "All-Rookie First Team",
+    "awarded_on": "2004-04-27",
+    "id": "2003-04-all_rookie-first"
+   }
+  ]
+ },
+ "incentive_evaluation": [
+  {
+   "id": "conditioning_program",
+   "kind": "conditioning_program",
+   "classification": "included",
+   "benchmark": "Satisfactory attendance and participation in Miami's designated offseason skill and conditioning program (at most two weeks); for 2003-04 Miami provides a post-signing opportunity before camp, with no retroactive credit for summer league.",
+   "amount": 219700,
+   "status": "met",
+   "evidence": "2003-04/04_Training_Camp/wade_reply.json (Wade took Miami's designated program) and 2003-04/04_Training_Camp/Wade_Camp_Review.md (cleared)"
+  },
+  {
+   "id": "physical_condition",
+   "kind": "physical_condition",
+   "classification": "included",
+   "benchmark": "Satisfying the Miami preseason conditioning test specified in Exhibit 1 (an objective measurement agreed by the player, Miami and the league).",
+   "amount": 219700,
+   "status": "met",
+   "evidence": "2003-04/04_Training_Camp/Wade_Camp_Review.md: | Conditioning / availability | cleared | camp injury draw: healthy | — |"
+  },
+  {
+   "id": "minutes",
+   "kind": "performance",
+   "classification": "unlikely",
+   "benchmark": "At least 1,200 regular-season minutes played.",
+   "amount": 219700,
+   "status": "met",
+   "evidence": "2,625 closed regular-season minutes in 75 games (career_stats, through 2004-06-20)"
+  },
+  {
+   "id": "achievement",
+   "kind": "performance",
+   "classification": "unlikely",
+   "benchmark": "Selection to an NBA All-Rookie Team.",
+   "amount": 219700,
+   "status": "met",
+   "evidence": "All-Rookie First Team (2004-04-27, Stats_and_Awards/League/2003-04/Season_Awards.md#all-rookie-teams)"
+  }
+ ]
+}

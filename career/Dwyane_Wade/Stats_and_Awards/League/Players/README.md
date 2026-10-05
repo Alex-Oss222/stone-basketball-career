@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-06-13**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-06-20**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -11,7 +11,7 @@ Card date: **2004-06-13**. 504 registry players, one Markdown card and one inter
 | --- | --- | --- | --- | --- |
 | [Alvin Williams](willial02.md) | Toronto Raptors | 29 | sourced | [open](willial02.html) |
 | [Andre Miller](millean02.md) | Denver Nuggets | 28 | sourced | [open](millean02.html) |
-| [Anthony Carter](cartean01.md) | Miami Heat | 28 | sourced | [open](cartean01.html) |
+| [Anthony Carter](cartean01.md) | Miami Heat | 29 | sourced | [open](cartean01.html) |
 | [Anthony Goldwire](goldwan01.md) | Minnesota Timberwolves | None | silhouette | [open](goldwan01.html) |
 | [Anthony Johnson](johnsan02.md) | Indiana Pacers | 29 | sourced | [open](johnsan02.html) |
 | [Avery Johnson](johnsav01.md) | Golden State Warriors | None | silhouette | [open](johnsav01.html) |
@@ -85,7 +85,7 @@ Card date: **2004-06-13**. 504 registry players, one Markdown card and one inter
 | [Randy Livingston](livinra01.md) | Los Angeles Clippers | None | silhouette | [open](livinra01.html) |
 | [Raül López](lopezra01.md) | Utah Jazz | None | silhouette | [open](lopezra01.html) |
 | [Reece Gaines](gainere01.md) | Orlando Magic | 23 | sourced | [open](gainere01.html) |
-| [Rick Brunson](brunsri01.md) | Toronto Raptors | 31 | sourced | [open](brunsri01.html) |
+| [Rick Brunson](brunsri01.md) | Toronto Raptors | 32 | sourced | [open](brunsri01.html) |
 | [Robert Pack](packro01.md) | New Jersey Nets | 35 | sourced | [open](packro01.html) |
 | [Rod Strickland](stricro02.md) | Orlando Magic | 37 | sourced | [open](stricro02.html) |
 | [Rusty LaRue](larueru01.md) | Golden State Warriors | None | silhouette | [open](larueru01.html) |
@@ -219,7 +219,7 @@ Card date: **2004-06-13**. 504 registry players, one Markdown card and one inter
 | [Ansu Sesay](sesayan01.md) | Seattle SuperSonics | None | silhouette | [open](sesayan01.html) |
 | [Antawn Jamison](jamisan01.md) | Dallas Mavericks | 28 | sourced | [open](jamisan01.html) |
 | [Bostjan Nachbar](nachbbo01.md) | Houston Rockets | 23 | sourced | [open](nachbbo01.html) |
-| [Bruce Bowen](bowenbr01.md) | San Antonio Spurs | 32 | sourced | [open](bowenbr01.html) |
+| [Bruce Bowen](bowenbr01.md) | San Antonio Spurs | 33 | sourced | [open](bowenbr01.html) |
 | [Bryon Russell](russebr01.md) | Los Angeles Lakers | 33 | silhouette | [open](russebr01.html) |
 | [Carmelo Anthony](anthoca01.md) | Denver Nuggets | 20 | sourced | [open](anthoca01.html) |
 | [Caron Butler](butleca01.md) | Miami Heat | 24 | sourced | [open](butleca01.html) |
@@ -242,7 +242,7 @@ Card date: **2004-06-13**. 504 registry players, one Markdown card and one inter
 | [Gerald Wallace](wallage01.md) | Sacramento Kings | 21 | sourced | [open](wallage01.html) |
 | [Glen Rice](ricegl01.md) | Los Angeles Clippers | 37 | sourced | [open](ricegl01.html) |
 | [Glenn Robinson](robingl01.md) | Philadelphia 76ers | 31 | sourced | [open](robingl01.html) |
-| [Gordan Giricek](giricgo01.md) | Orlando Magic | 26 | sourced | [open](giricgo01.html) |
+| [Gordan Giricek](giricgo01.md) | Orlando Magic | 27 | sourced | [open](giricgo01.html) |
 | [Hedo Turkoglu](turkohe01.md) | San Antonio Spurs | 25 | sourced | [open](turkohe01.html) |
 | [Ime Udoka](udokaim01.md) | Los Angeles Lakers | None | silhouette | [open](udokaim01.html) |
 | [Ira Newble](newblir01.md) | Cleveland Cavaliers | 29 | sourced | [open](newblir01.html) |
@@ -277,7 +277,7 @@ Card date: **2004-06-13**. 504 registry players, one Markdown card and one inter
 | [Mike Miller](millemi01.md) | Memphis Grizzlies | None | silhouette | [open](millemi01.html) |
 | [Monty Williams](willimo01.md) | Philadelphia 76ers | 32 | sourced | [open](willimo01.html) |
 | [Morris Peterson](petermo01.md) | Toronto Raptors | 26 | sourced | [open](petermo01.html) |
-| [Ndudi Ebi](ebind01.md) | Minnesota Timberwolves | 19 | sourced | [open](ebind01.html) |
+| [Ndudi Ebi](ebind01.md) | Minnesota Timberwolves | 20 | sourced | [open](ebind01.html) |
 | [Nikoloz Tskitishvili](tskitni01.md) | Denver Nuggets | 21 | sourced | [open](tskitni01.html) |
 | [Peja Stojakovic](stojape01.md) | Sacramento Kings | 27 | sourced | [open](stojape01.html) |
 | [Quincy Lewis](lewisqu01.md) | Minnesota Timberwolves | None | silhouette | [open](lewisqu01.html) |
@@ -351,7 +351,7 @@ Card date: **2004-06-13**. 504 registry players, one Markdown card and one inter
 | [David West](westda01.md) | New Orleans Hornets | 23 | sourced | [open](westda01.html) |
 | [DeSagana Diop](diopde01.md) | Cleveland Cavaliers | 22 | sourced | [open](diopde01.html) |
 | [Desmond Penigar](penigde01.md) | Orlando Magic | None | silhouette | [open](penigde01.html) |
-| [Dirk Nowitzki](nowitdi01.md) | Dallas Mavericks | 25 | sourced | [open](nowitdi01.html) |
+| [Dirk Nowitzki](nowitdi01.md) | Dallas Mavericks | 26 | sourced | [open](nowitdi01.html) |
 | [Don Reid](reiddo01.md) | Sacramento Kings | None | silhouette | [open](reiddo01.html) |
 | [Donyell Marshall](marshdo01.md) | Chicago Bulls | None | silhouette | [open](marshdo01.html) |
 | [Drew Gooden](goodedr01.md) | Orlando Magic | 22 | sourced | [open](goodedr01.html) |
@@ -406,7 +406,7 @@ Card date: **2004-06-13**. 504 registry players, one Markdown card and one inter
 | [Rick Rickert](rickeri01.md) | Minnesota Timberwolves (draft rights) | 21 | sourced | [open](rickeri01.html) |
 | [Robert Archibald](archiro01.md) | Phoenix Suns | 24 | sourced | [open](archiro01.html) |
 | [Robert Horry](horryro01.md) | San Antonio Spurs | 33 | sourced | [open](horryro01.html) |
-| [Rodney Rogers](rogerro01.md) | New Jersey Nets | 32 | silhouette | [open](rogerro01.html) |
+| [Rodney Rogers](rogerro01.md) | New Jersey Nets | 33 | silhouette | [open](rogerro01.html) |
 | [Ryan Bowen](bowenry01.md) | Denver Nuggets | None | silhouette | [open](bowenry01.html) |
 | [Ryan Humphrey](humphry01.md) | Memphis Grizzlies | 24 | sourced | [open](humphry01.html) |
 | [Scott Padgett](padgesc01.md) | Miami Heat | 28 | silhouette | [open](padgesc01.html) |
@@ -466,7 +466,7 @@ Card date: **2004-06-13**. 504 registry players, one Markdown card and one inter
 | [Dalibor Bagaric](bagarda01.md) | Chicago Bulls | 24 | sourced | [open](bagarda01.html) |
 | [Dan Gadzuric](gadzuda01.md) | Milwaukee Bucks | 26 | sourced | [open](gadzuda01.html) |
 | [Daniel Santiago](santida01.md) | Milwaukee Bucks | None | silhouette | [open](santida01.html) |
-| [Darko Milicic](milicda01.md) | Detroit Pistons | 18 | sourced | [open](milicda01.html) |
+| [Darko Milicic](milicda01.md) | Detroit Pistons | 19 | sourced | [open](milicda01.html) |
 | [David Robinson](robinda01.md) | San Antonio Spurs | 38 | sourced | [open](robinda01.html) |
 | [Derrick Coleman](colemde01.md) | Philadelphia 76ers | 36 | sourced | [open](colemde01.html) |
 | [Dikembe Mutombo](mutomdi01.md) | New York Knicks | 37 | sourced | [open](mutomdi01.html) |
@@ -492,7 +492,7 @@ Card date: **2004-06-13**. 504 registry players, one Markdown card and one inter
 | [Jeff Foster](fosteje01.md) | Indiana Pacers | 27 | sourced | [open](fosteje01.html) |
 | [Jelani McCoy](mccoyje01.md) | Toronto Raptors | 26 | sourced | [open](mccoyje01.html) |
 | [Jerome James](jamesje01.md) | Seattle SuperSonics | 28 | sourced | [open](jamesje01.html) |
-| [Jerome Moiso](moisoje01.md) | Toronto Raptors | 25 | sourced | [open](moisoje01.html) |
+| [Jerome Moiso](moisoje01.md) | Toronto Raptors | 26 | sourced | [open](moisoje01.html) |
 | [Joel Przybilla](przybjo01.md) | Milwaukee Bucks | 24 | sourced | [open](przybjo01.html) |
 | [John Amaechi](amaecjo01.md) | Houston Rockets | 33 | sourced | [open](amaecjo01.html) |
 | [Kelvin Cato](catoke01.md) | Houston Rockets | 29 | sourced | [open](catoke01.html) |
@@ -506,13 +506,13 @@ Card date: **2004-06-13**. 504 registry players, one Markdown card and one inter
 | [Lonny Baxter](baxtelo01.md) | Chicago Bulls | 25 | sourced | [open](baxtelo01.html) |
 | [Loren Woods](woodslo01.md) | Minnesota Timberwolves | 25 | sourced | [open](woodslo01.html) |
 | [Lorenzen Wright](wrighlo02.md) | Memphis Grizzlies | None | silhouette | [open](wrighlo02.html) |
-| [Mamadou N'diaye](ndiayma02.md) | Dallas Mavericks | 28 | silhouette | [open](ndiayma02.html) |
+| [Mamadou N'diaye](ndiayma02.md) | Dallas Mavericks | 29 | silhouette | [open](ndiayma02.html) |
 | [Marc Jackson](jacksma02.md) | Philadelphia 76ers | 29 | sourced | [open](jacksma02.html) |
 | [Marcus Camby](cambyma01.md) | Denver Nuggets | 30 | sourced | [open](cambyma01.html) |
 | [Mark Blount](blounma01.md) | Boston Celtics | 28 | sourced | [open](blounma01.html) |
 | [Melvin Ely](elyme01.md) | Los Angeles Clippers | 26 | silhouette | [open](elyme01.html) |
 | [Mengke Bateer](bateeme01.md) | Toronto Raptors | None | silhouette | [open](bateeme01.html) |
-| [Michael Doleac](doleami01.md) | New York Knicks | 26 | sourced | [open](doleami01.html) |
+| [Michael Doleac](doleami01.md) | New York Knicks | 27 | sourced | [open](doleami01.html) |
 | [Michael Olowokandi](olowomi01.md) | Minnesota Timberwolves | None | silhouette | [open](olowomi01.html) |
 | [Mikki Moore](mooremi01.md) | New Jersey Nets | 28 | sourced | [open](mooremi01.html) |
 | [Nazr Mohammed](mohamna01.md) | Atlanta Hawks | 26 | sourced | [open](mohamna01.html) |

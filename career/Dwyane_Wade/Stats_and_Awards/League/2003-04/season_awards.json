@@ -1303,6 +1303,48 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2003-04-finals_mvp",
+   "award": "finals_mvp",
+   "name": "Finals MVP",
+   "announced_on": "2004-06-20",
+   "electorate": 9,
+   "voters": "media panel",
+   "ballot": [
+    1
+   ],
+   "lens": [
+    0.3,
+    0.6
+   ],
+   "evidence_through": "2004-06-20",
+   "competition": "playoff",
+   "finals_games": 7,
+   "period_start": "2004-06-06",
+   "winners": [
+    "Kevin Garnett"
+   ],
+   "tally": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 7,
+     "mpg": 39.6,
+     "pts": 22.1,
+     "reb": 12.6,
+     "ast": 6.7,
+     "stl": 2.3,
+     "blk": 2.4,
+     "game_score": 23.07,
+     "champion": true,
+     "points": 9,
+     "first_place": 9,
+     "votes_by_place": [
+      9
+     ]
+    }
+   ]
   }
  ]
 }

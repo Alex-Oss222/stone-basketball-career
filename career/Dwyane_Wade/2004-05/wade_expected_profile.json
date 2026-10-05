@@ -1,0 +1,194 @@
+{
+ "schema_version": 1,
+ "model_version": "protagonist-2004.1",
+ "as_of": "2004-06-20",
+ "season": "2004-05",
+ "source_sha256": "5def91ebeb0f122074793fc0e4114f80b0d5b52087d3bdb6b7046d9f69786083",
+ "players": {
+  "wadedw01": {
+   "player_name": "Dwyane Wade",
+   "bbr_id": "wadedw01",
+   "season_end_year": 2005,
+   "sample": {
+    "games": 75,
+    "minutes": 2624.9
+   },
+   "estimated": {
+    "two_point_pct": 0.5581197982139867,
+    "three_point_pct": 0.4016538467677745,
+    "free_throw_pct": 0.9237743589090697,
+    "usage_pct": 0.20773441368649967,
+    "assist_pct": 0.23348973245934487,
+    "offensive_rebound_pct": 0.04662476402490987,
+    "defensive_rebound_pct": 0.12042481679731681,
+    "steal_pct": 0.02533935268021555,
+    "block_pct": 0.021885107756459028,
+    "three_point_attempt_rate": 0.2044290234939522,
+    "free_throw_attempt_rate": 0.4451863514939828,
+    "turnovers_per_fga": 0.08997875044860924,
+    "fouls_per_minute": 0.08074171432627089
+   },
+   "basis": "runtime/protagonist.py: previous expectation + closed simulated season + age step",
+   "scouting": {
+    "as_of": "2003-06-25",
+    "source_file": "career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md",
+    "source_sha256": "33b714c811827771a7e39d79eb9e9c98b785b94779f2ec6495f0734b8fb88c8b",
+    "position": "SG",
+    "traits": {
+     "paint_pressure": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "4. Scoring",
+       "14. Draft Profile and Process"
+      ]
+     },
+     "contact_finishing": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "4. Scoring"
+      ]
+     },
+     "secondary_creation": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "5. Ball Handling and Playmaking",
+       "12. NBA Role and Development"
+      ]
+     },
+     "pressure_decisions": {
+      "value": "concern",
+      "as_of": "2003-06-25",
+      "sections": [
+       "5. Ball Handling and Playmaking",
+       "14. Draft Profile and Process"
+      ]
+     },
+     "set_perimeter_shooting": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "4. Scoring"
+      ]
+     },
+     "off_dribble_three": {
+      "value": "limited",
+      "as_of": "2003-06-25",
+      "sections": [
+       "4. Scoring"
+      ]
+     },
+     "midrange_pull_up": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "4. Scoring"
+      ]
+     },
+     "guard_rebounding": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "7. Rebounding and Transition"
+      ]
+     },
+     "transition_push": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "7. Rebounding and Transition"
+      ]
+     },
+     "screen_navigation": {
+      "value": "concern",
+      "as_of": "2003-06-25",
+      "sections": [
+       "6. Defense",
+       "14. Draft Profile and Process"
+      ]
+     },
+     "help_discipline": {
+      "value": "concern",
+      "as_of": "2003-06-25",
+      "sections": [
+       "6. Defense",
+       "14. Draft Profile and Process"
+      ]
+     },
+     "weak_side_event_defense": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "6. Defense"
+      ]
+     },
+     "curl_jumper": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "4. Scoring"
+      ]
+     },
+     "mid_post_turnaround": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "4. Scoring"
+      ]
+     },
+     "floater": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "4. Scoring"
+      ]
+     },
+     "face_up_jumper": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "4. Scoring"
+      ]
+     },
+     "step_back_jumper": {
+      "value": "plus",
+      "as_of": "2003-06-25",
+      "sections": [
+       "4. Scoring"
+      ]
+     },
+     "catch_and_shoot_accuracy": {
+      "value": "elite",
+      "as_of": "2003-06-25",
+      "sections": [
+       "4. Scoring"
+      ]
+     }
+    }
+   },
+   "style": {
+    "pressure_turnover_sensitivity": 1.5,
+    "rebound_transition_multiplier": 1.25,
+    "spatial_weights": {
+     "distance_0_3": 1.3,
+     "distance_3_10": 1.394663,
+     "distance_10_16": 1.39755,
+     "distance_16_three": 1.21275,
+     "corner_three": 1.15,
+     "arc_three": 0.95
+    },
+    "zone_accuracy": {
+     "corner_three": 0.13
+    }
+   }
+  }
+ },
+ "scouting_sources": {
+  "library/2003/league/nba_2003_prospect_scouting.json": "4e3a95ac5c36826528274006efafe395537c0481bcf79a60d2bbc6e36a997820",
+  "library/2003/league/nba_2002_03_player_stats.json": "9602b0e89cc759895cb75f3c5d17176fcfd52388f3f68f135e409e216495e931",
+  "library/2003/league/nba_2003_end_of_season.json": "5ef1e8f9aced5c1d5d2d381b18bf071efb033288a0690b4e8c65d4fd432aa2a0",
+  "career/Dwyane_Wade/Dwyane_Wade_Player_Profile.md": "33b714c811827771a7e39d79eb9e9c98b785b94779f2ec6495f0734b8fb88c8b"
+ }
+}
