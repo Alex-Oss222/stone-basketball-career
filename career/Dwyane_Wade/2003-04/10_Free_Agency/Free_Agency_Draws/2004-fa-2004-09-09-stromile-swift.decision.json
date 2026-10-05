@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-09-09-stromile-swift",
+ "date": "2004-09-09",
+ "question": "2004 free agency, 2004-09-09: which offer does Stromile Swift accept (Memphis Grizzlies $3,273,120 x 5), or does he wait?",
+ "decider": "Stromile Swift (simulated player, engine draw)",
+ "options": {
+  "Memphis Grizzlies": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $3,273,120; best offer 1.00 of the ask in total; accept chance 0.950; priority winning; utility Memphis Grizzlies 59.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,18 @@
+{
+ "date": "2004-09-09",
+ "decider": "Eric Snow (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-09-09-eric-snow",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.160408,
+  "Golden State Warriors": 0.114459,
+  "Los Angeles Clippers": 0.131003,
+  "Miami Heat": 0.250943,
+  "Milwaukee Bucks": 0.089364,
+  "Toronto Raptors": 0.114459,
+  "Utah Jazz": 0.089364,
+  "wait": 0.05
+ },
+ "outcome": "Golden State Warriors",
+ "question": "2004 free agency, 2004-09-09: which offer does Eric Snow accept (Cleveland Cavaliers $3,705,506 x 3, Golden State Warriors $3,705,506 x 3, Los Angeles Clippers $3,705,506 x 3, Miami Heat $3,705,506 x 3, Milwaukee Bucks $3,705,506 x 3, Toronto Raptors $3,705,506 x 3, Utah Jazz $3,705,506 x 3), or does he wait?"
+}

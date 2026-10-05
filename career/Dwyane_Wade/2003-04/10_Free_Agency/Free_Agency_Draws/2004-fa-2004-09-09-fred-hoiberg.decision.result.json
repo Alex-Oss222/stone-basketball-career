@@ -1,0 +1,12 @@
+{
+ "date": "2004-09-09",
+ "decider": "Fred Hoiberg (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-09-09-fred-hoiberg",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "Denver Nuggets",
+ "question": "2004 free agency, 2004-09-09: which offer does Fred Hoiberg accept (Denver Nuggets $2,573,381 x 3), or does he wait?"
+}

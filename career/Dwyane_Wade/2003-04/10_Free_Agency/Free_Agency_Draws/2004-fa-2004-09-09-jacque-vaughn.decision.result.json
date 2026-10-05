@@ -1,0 +1,13 @@
+{
+ "date": "2004-09-09",
+ "decider": "Jacque Vaughn (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-09-09-jacque-vaughn",
+ "kind": "decision",
+ "options": {
+  "Minnesota Timberwolves": 0.793383,
+  "New Jersey Nets": 0.156617,
+  "wait": 0.05
+ },
+ "outcome": "Minnesota Timberwolves",
+ "question": "2004 free agency, 2004-09-09: which offer does Jacque Vaughn accept (Minnesota Timberwolves $932,546 x 1, New Jersey Nets $932,546 x 1), or does he wait?"
+}

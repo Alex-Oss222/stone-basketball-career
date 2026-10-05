@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-fa-2004-09-09-lonny-baxter",
+ "date": "2004-09-09",
+ "question": "2004 free agency, 2004-09-09: which offer does Lonny Baxter accept (Los Angeles Clippers $695,046 x 1, Utah Jazz $695,046 x 1), or does he wait?",
+ "decider": "Lonny Baxter (simulated player, engine draw)",
+ "options": {
+  "Los Angeles Clippers": 0.609014,
+  "Utah Jazz": 0.340986,
+  "wait": 0.05
+ },
+ "basis": "Ask $695,046; best offer 1.00 of the ask in total; accept chance 0.950; priority winning; utility Los Angeles Clippers 53.7, Utah Jazz 51.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

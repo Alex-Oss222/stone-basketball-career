@@ -1,0 +1,12 @@
+{
+ "date": "2004-09-09",
+ "decider": "Stromile Swift (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-09-09-stromile-swift",
+ "kind": "decision",
+ "options": {
+  "Memphis Grizzlies": 0.95,
+  "wait": 0.05
+ },
+ "outcome": "Memphis Grizzlies",
+ "question": "2004 free agency, 2004-09-09: which offer does Stromile Swift accept (Memphis Grizzlies $3,273,120 x 5), or does he wait?"
+}

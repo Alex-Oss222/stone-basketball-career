@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-09-09-donnell-harvey",
+ "date": "2004-09-09",
+ "question": "2004 free agency, 2004-09-09: which offer does Donnell Harvey accept (San Antonio Spurs $745,046 x 1), or does he wait?",
+ "decider": "Donnell Harvey (simulated player, engine draw)",
+ "options": {
+  "San Antonio Spurs": 0.95,
+  "wait": 0.05
+ },
+ "basis": "Ask $745,046; best offer 1.00 of the ask in total; accept chance 0.950; priority winning; utility San Antonio Spurs 44.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

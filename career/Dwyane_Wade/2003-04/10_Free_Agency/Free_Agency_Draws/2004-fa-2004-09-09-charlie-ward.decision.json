@@ -1,0 +1,21 @@
+{
+ "event_id": "2004-fa-2004-09-09-charlie-ward",
+ "date": "2004-09-09",
+ "question": "2004 free agency, 2004-09-09: which offer does Charlie Ward accept (Cleveland Cavaliers $995,046 x 1, Denver Nuggets $995,046 x 1, Golden State Warriors $995,046 x 1, Indiana Pacers $995,046 x 1, Milwaukee Bucks $995,046 x 1, Minnesota Timberwolves $995,046 x 1, New Jersey Nets $995,046 x 1, New Orleans Hornets $995,046 x 1, Portland Trail Blazers $995,046 x 1, Toronto Raptors $995,046 x 1, Washington Wizards $995,046 x 1), or does he wait?",
+ "decider": "Charlie Ward (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.155705,
+  "Denver Nuggets": 0.063463,
+  "Golden State Warriors": 0.12844,
+  "Indiana Pacers": 0.063463,
+  "Milwaukee Bucks": 0.090964,
+  "Minnesota Timberwolves": 0.155705,
+  "New Jersey Nets": 0.063463,
+  "New Orleans Hornets": 0.013605,
+  "Portland Trail Blazers": 0.063463,
+  "Toronto Raptors": 0.12844,
+  "Washington Wizards": 0.023289,
+  "wait": 0.05
+ },
+ "basis": "Ask $995,046; best offer 1.00 of the ask in total; accept chance 0.950; priority winning; utility Cleveland Cavaliers 53.2, Denver Nuggets 49.6, Golden State Warriors 52.4, Indiana Pacers 49.6, Milwaukee Bucks 51.0, Minnesota Timberwolves 53.2, New Jersey Nets 49.6, New Orleans Hornets 43.4, Portland Trail Blazers 49.6, Toronto Raptors 52.4, Washington Wizards 45.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
