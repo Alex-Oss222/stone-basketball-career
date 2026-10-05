@@ -1,0 +1,6 @@
+{
+ "schema_version": 1,
+ "seed_sha256": "5957d505491b77122c2557799eee1ff219d6ef467439d555b093a474dc910ff7",
+ "published_on": "2026-10-05",
+ "purpose": "SHA-256 of the engine's career seed (roadmap 18b). Every later game and draw must come from this seed; scripts/audit_journal.py compares it."
+}

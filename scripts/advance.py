@@ -103,6 +103,9 @@ def checkpoint(day, push=True):
     commit(f"Advance {day}: checkpoint")
     if not push:
         return
+    audit = run("scripts/audit_journal.py", ok=(0, 1), show=False)          # roadmap 18b: journal and seed hash
+    if "no problems" not in audit:
+        raise Stop("the engine journal audit failed: " + audit.splitlines()[-1][:200])
     tests = run("scripts/run_tests.py", ok=(0, 1), show=False)
     say("    " + tests.splitlines()[-1])
     if not tests.splitlines()[-1].endswith("OK"):
