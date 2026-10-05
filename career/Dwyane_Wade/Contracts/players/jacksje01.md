@@ -2,9 +2,9 @@
 
 # Contract | Jermaine Jackson
 
-Known through: 2004-04-19. [Open interactive contract](jacksje01.html#contract) · [Contract history](jacksje01.html#contract-history)
+Known through: 2004-04-20. [Open interactive contract](jacksje01.html#contract) · [Contract history](jacksje01.html#contract-history)
 
-Jermaine Jackson: playing outside the NBA (researched, 2004-01). Evidence cutoff: 2004-04-19.
+Jermaine Jackson: playing outside the NBA (researched, 2004-01). Evidence cutoff: 2004-04-20.
 
 ## Current contract
 

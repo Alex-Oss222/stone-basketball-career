@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2004-04-19](../../../assets/stat_reports/personal_2004-04-19.svg)
+![Player personal information and earned career awards through 2004-04-20](../../../assets/stat_reports/personal_2004-04-20.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2004-04-19; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-04-20; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -49,10 +49,11 @@ Identity as of 2004-04-19; status snapshot dated 2003-12-01. User-established al
 | Eastern Conference Player of the Month | 2004-03-01 to 2004-03-31 | 2004-04-02 | [East POM](../../League/2003-04/03_March/League_Awards.md#player-of-the-month) |
 | Eastern Conference Rookie of the Month | 2004-03-01 to 2004-03-31 | 2004-04-02 | [East ROM](../../League/2003-04/03_March/League_Awards.md#rookie-of-the-month) |
 | Eastern Conference Rookie of the Month | 2004-04-01 to 2004-04-14 | 2004-04-16 | [East ROM](../../League/2003-04/04_April/League_Awards.md#rookie-of-the-month) |
+| Rookie of the Year | 2003-10-28 to 2004-04-14 | 2004-04-20 | [ROY](../../League/2003-04/Season_Awards.md#rookie-of-the-year) |
 
 ## Statistics
 
-As of **2004-04-19**: 7 closed games; 7/7 have player participation and box coverage; recorded DNPs: 2.
+As of **2004-04-20**: 7 closed games; 7/7 have player participation and box coverage; recorded DNPs: 2.
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
@@ -64,11 +65,11 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| This scope | 20 | Miami Heat | NBA | SG / PG | 5 | 5 | 32.0 | 5.8 | 9.0 | .644 | 0.4 | 0.6 | .667 | 5.4 | 8.4 | .643 | .667 | 2.6 | 2.6 | 1.000 | 2.4 | 3.6 | 6.0 | 2.8 | 0.8 | 1.8 | 1.2 | 3.6 | 14.6 | .720 | [East ROM](../../League/2003-04/04_April/League_Awards.md#rookie-of-the-month) |
+| This scope | 20 | Miami Heat | NBA | SG / PG | 5 | 5 | 32.0 | 5.8 | 9.0 | .644 | 0.4 | 0.6 | .667 | 5.4 | 8.4 | .643 | .667 | 2.6 | 2.6 | 1.000 | 2.4 | 3.6 | 6.0 | 2.8 | 0.8 | 1.8 | 1.2 | 3.6 | 14.6 | .720 | [East ROM](../../League/2003-04/04_April/League_Awards.md#rookie-of-the-month), [ROY](../../League/2003-04/Season_Awards.md#rookie-of-the-year) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-04-19, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-04-20, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -137,7 +138,7 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-04-19, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-04-20, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
@@ -178,7 +179,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-04-19, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-04-20, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 

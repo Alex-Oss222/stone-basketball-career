@@ -19,6 +19,24 @@
     "statistics": {}
    },
    "source": "2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json"
+  },
+  {
+   "as_of": "2004-04-20",
+   "standing": "rookie",
+   "trigger": "honor_recorded",
+   "basis": {
+    "closed_seasons": [],
+    "window": [],
+    "starter_lines": {},
+    "honors": [],
+    "conflicts": [],
+    "ignored_honors": [],
+    "rule": "no closed season",
+    "signed_date": "2003-07-21",
+    "season_folder": "2003-04",
+    "statistics": {}
+   },
+   "source": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Season_Awards.md"
   }
  ]
 }

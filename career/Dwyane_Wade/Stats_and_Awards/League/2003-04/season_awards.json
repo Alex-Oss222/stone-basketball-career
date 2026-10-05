@@ -87,6 +87,89 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2003-04-roy",
+   "award": "roy",
+   "name": "Rookie of the Year",
+   "announced_on": "2004-04-20",
+   "electorate": 118,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.0,
+    0.25
+   ],
+   "evidence_through": "2004-04-14",
+   "winners": [
+    "Dwyane Wade"
+   ],
+   "tally": [
+    {
+     "player": "Dwyane Wade",
+     "team": "Miami Heat",
+     "games": 75,
+     "mpg": 35.0,
+     "pts": 17.9,
+     "reb": 4.8,
+     "ast": 4.5,
+     "stl": 1.6,
+     "blk": 1.0,
+     "game_score": 17.14,
+     "club_pct": 0.585,
+     "points": 590,
+     "first_place": 118,
+     "votes_by_place": [
+      118,
+      0,
+      0
+     ]
+    },
+    {
+     "player": "Carmelo Anthony",
+     "team": "Denver Nuggets",
+     "games": 82,
+     "mpg": 37.7,
+     "pts": 18.9,
+     "reb": 7.0,
+     "ast": 3.1,
+     "stl": 1.0,
+     "blk": 0.4,
+     "game_score": 12.04,
+     "club_pct": 0.585,
+     "points": 250,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      66,
+      52
+     ]
+    },
+    {
+     "player": "LeBron James",
+     "team": "Cleveland Cavaliers",
+     "games": 79,
+     "mpg": 39.5,
+     "pts": 20.6,
+     "reb": 5.0,
+     "ast": 5.4,
+     "stl": 1.2,
+     "blk": 0.6,
+     "game_score": 12.49,
+     "club_pct": 0.378,
+     "points": 222,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      52,
+      66
+     ]
+    }
+   ]
   }
  ]
 }

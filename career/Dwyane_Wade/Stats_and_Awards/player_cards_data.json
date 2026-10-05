@@ -14,10 +14,10 @@
     "photo_url": null,
     "initials": "DW",
     "status": "Under contract",
-    "cutoff": "2004-04-19"
+    "cutoff": "2004-04-20"
   },
-  "clock": "2004-04-19",
-  "notice": "Career records through 2004-04-19. Closed games, recorded contracts and earned awards. Missing evidence remains explicit.",
+  "clock": "2004-04-20",
+  "notice": "Career records through 2004-04-20. Closed games, recorded contracts and earned awards. Missing evidence remains explicit.",
   "links": {
     "stats": "README.md",
     "shooting": "Shooting.md",
@@ -69,14 +69,14 @@
   "periods": [
     {
       "id": "regular-2003-04-season",
-      "label": "2003-04 · NBA regular season · through 2004-04-19",
+      "label": "2003-04 · NBA regular season · through 2004-04-20",
       "kind": "season",
       "season": "2003-04",
       "competition": "regular",
       "competition_label": "NBA regular season",
       "start": "2003-06-01",
-      "end": "2004-04-19",
-      "cutoff": "2004-04-19",
+      "end": "2004-04-20",
+      "cutoff": "2004-04-20",
       "games": 82,
       "appearances": 75,
       "dnp": 7,
@@ -20789,7 +20789,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-04-19"
+        "cutoff": "2004-04-20"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -154345,8 +154345,8 @@
       "competition": "regular",
       "competition_label": "NBA regular season",
       "start": "2004-04-01",
-      "end": "2004-04-19",
-      "cutoff": "2004-04-19",
+      "end": "2004-04-20",
+      "cutoff": "2004-04-20",
       "games": 7,
       "appearances": 5,
       "dnp": 2,
@@ -156114,7 +156114,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-04-19"
+        "cutoff": "2004-04-20"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -262116,14 +262116,14 @@
     },
     {
       "id": "playoff-2003-04-season",
-      "label": "2003-04 · NBA playoffs · through 2004-04-19",
+      "label": "2003-04 · NBA playoffs · through 2004-04-20",
       "kind": "season",
       "season": "2003-04",
       "competition": "playoff",
       "competition_label": "NBA playoffs",
       "start": "2003-06-01",
-      "end": "2004-04-19",
-      "cutoff": "2004-04-19",
+      "end": "2004-04-20",
+      "cutoff": "2004-04-20",
       "games": 1,
       "appearances": 0,
       "dnp": 1,
@@ -262376,7 +262376,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-04-19"
+        "cutoff": "2004-04-20"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -262646,8 +262646,8 @@
       "competition": "playoff",
       "competition_label": "NBA playoffs",
       "start": "2004-04-01",
-      "end": "2004-04-19",
-      "cutoff": "2004-04-19",
+      "end": "2004-04-20",
+      "cutoff": "2004-04-20",
       "games": 1,
       "appearances": 0,
       "dnp": 1,
@@ -262900,7 +262900,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-04-19"
+        "cutoff": "2004-04-20"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -263164,14 +263164,14 @@
     },
     {
       "id": "playoff-2003-04-week-2004-04-15",
-      "label": "2004-04-15 to 2004-04-19 · NBA playoffs",
+      "label": "2004-04-15 to 2004-04-20 · NBA playoffs",
       "kind": "week",
       "season": "2003-04",
       "competition": "playoff",
       "competition_label": "NBA playoffs",
       "start": "2004-04-15",
-      "end": "2004-04-19",
-      "cutoff": "2004-04-19",
+      "end": "2004-04-20",
+      "cutoff": "2004-04-20",
       "games": 1,
       "appearances": 0,
       "dnp": 1,
@@ -263424,7 +263424,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-04-19"
+        "cutoff": "2004-04-20"
       },
       "geometry_supported": true,
       "source_note": "Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.",
@@ -264212,14 +264212,14 @@
     },
     {
       "id": "preseason-2003-04-season",
-      "label": "2003-04 · NBA preseason · through 2004-04-19",
+      "label": "2003-04 · NBA preseason · through 2004-04-20",
       "kind": "season",
       "season": "2003-04",
       "competition": "preseason",
       "competition_label": "NBA preseason",
       "start": "2003-06-01",
-      "end": "2004-04-19",
-      "cutoff": "2004-04-19",
+      "end": "2004-04-20",
+      "cutoff": "2004-04-20",
       "games": 7,
       "appearances": null,
       "dnp": 0,
@@ -264532,7 +264532,7 @@
         "photo_url": null,
         "initials": "DW",
         "status": "Under contract",
-        "cutoff": "2004-04-19"
+        "cutoff": "2004-04-20"
       },
       "geometry_supported": true,
       "source_note": "Only closed box-score evidence is available. No declared recorded shot feed supplies locations; all location statistics remain unavailable where attempts exist.",
@@ -267705,8 +267705,25 @@
         "id": "2003-04",
         "label": "2003-04",
         "season": "2003-04",
-        "cutoff": "2004-04-19",
-        "records": [],
+        "cutoff": "2004-04-20",
+        "records": [
+          {
+            "id": "2003-04-roy",
+            "name": "Rookie of the Year",
+            "short_name": "ROY",
+            "status": "earned",
+            "competition": "regular",
+            "season": "2003-04",
+            "period_start": "2003-10-28",
+            "period_end": "2004-04-14",
+            "awarded_on": "2004-04-20",
+            "source": "Stats_and_Awards/League/2003-04/Season_Awards.md#rookie-of-the-year",
+            "scope": "annual",
+            "source_href": "League/2003-04/Season_Awards.md#rookie-of-the-year",
+            "source_label": "Stats_and_Awards/League/2003-04/Season_Awards.md#rookie-of-the-year",
+            "description": "Earned annual recognition from the dated career award record."
+          }
+        ],
         "identity": {
           "name": "Dwyane Wade",
           "team": "Miami Heat",
@@ -267720,17 +267737,17 @@
           "photo_url": null,
           "initials": "DW",
           "status": "Under contract",
-          "cutoff": "2004-04-19"
+          "cutoff": "2004-04-20"
         },
-        "notice": "Only earned annual awards announced on or before 2004-04-19 appear. Weekly, monthly and unclassified recognition remains in the full award register."
+        "notice": "Only earned annual awards announced on or before 2004-04-20 appear. Weekly, monthly and unclassified recognition remains in the full award register."
       }
     ]
   },
   "contracts": {
-    "as_of": "2004-04-19",
+    "as_of": "2004-04-20",
     "player_id": "wadedw01",
     "status": "under_contract",
-    "summary": "Dwyane Wade: under contract. Evidence cutoff: 2004-04-19.",
+    "summary": "Dwyane Wade: under contract. Evidence cutoff: 2004-04-20.",
     "current": {
       "id": "wadedw01-2003-07-21",
       "status": "under_contract",
@@ -268702,7 +268719,7 @@
     "metrics": [
       {
         "label": "Career date",
-        "value": "2004-04-19"
+        "value": "2004-04-20"
       },
       {
         "label": "Recorded contracts",
@@ -268900,7 +268917,7 @@
       "history_complete": false,
       "recorded_contract_count": 1,
       "current_contract_verified": true,
-      "as_of": "2004-04-19",
+      "as_of": "2004-04-20",
       "note": "Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed."
     }
   }

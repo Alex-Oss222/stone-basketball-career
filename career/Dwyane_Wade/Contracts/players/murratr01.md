@@ -2,9 +2,9 @@
 
 # Contract | Tracy Murray
 
-Known through: 2004-04-19. [Open interactive contract](murratr01.html#contract) · [Contract history](murratr01.html#contract-history)
+Known through: 2004-04-20. [Open interactive contract](murratr01.html#contract) · [Contract history](murratr01.html#contract-history)
 
-Tracy Murray: under contract. Evidence cutoff: 2004-04-19.
+Tracy Murray: under contract. Evidence cutoff: 2004-04-20.
 
 ## Current contract
 
