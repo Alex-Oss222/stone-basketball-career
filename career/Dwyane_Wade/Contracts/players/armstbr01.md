@@ -2,9 +2,9 @@
 
 # Contract | Brandon Armstrong
 
-Known through: 2004-04-18. [Open interactive contract](armstbr01.html#contract) · [Contract history](armstbr01.html#contract-history)
+Known through: 2004-04-19. [Open interactive contract](armstbr01.html#contract) · [Contract history](armstbr01.html#contract-history)
 
-Brandon Armstrong: under rookie contract. Evidence cutoff: 2004-04-18.
+Brandon Armstrong: under rookie contract. Evidence cutoff: 2004-04-19.
 
 ## Current contract
 

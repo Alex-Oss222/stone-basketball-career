@@ -1,0 +1,92 @@
+{
+ "schema_version": 1,
+ "season": "2003-04",
+ "kind": "season_awards",
+ "rule": "The calendar, electorates and ballot scoring are researched (`library/2003/league/nba_2003_04_season_awards.json`);\nno real 2004 winner, vote or ballot is read. Each award closes on its announcement date. Its ballots use only closed\nregular-season results (`write_back.closed_results`, through April 14), standings from those results, the 2002-03\nseason as the prior-year baseline (Most Improved, Coach of the Year), and the season's head coaches.\n\nVoters (design choice, documented here and in `docs/player_statistics.md`): every voter in the real electorate files a\nballot. Voters differ only in how much they weigh two published criteria, spread evenly across a fixed range, so the\nelectorate is a deterministic panel: no chance enters a vote and nothing is re-rolled. Each criterion is a z-score\namong the eligible candidates; a voter ranks candidates by (1 - t) x first criterion + t x second, t his lens.\n\n  Award        first criterion                                  second criterion           lens t       eligible\n  MVP          production x durability                          club win share             0.20-0.50    55+ games\n  ROY          production x durability                          club win share             0.00-0.25    first-season player, 41+ games\n  DPOY         defensive box stocks per 36 x minutes factor     club defensive rating      0.30-0.60    55+ games, 24+ minutes\n  6MOY         production                                       club win share             0.10-0.30    55+ games, more off the bench than started\n  MIP          rise in Game Score per game over 2002-03         Game Score per game        0.10-0.40    55+ games, 25+ games in 2002-03, not a rookie\n  COY          club win share above its 2002-03 expectation      club win share             0.20-0.50    head coach for at least half the season and at its end\n  All-NBA      the MVP score, by position (2 G, 2 F, 1 C a team)                           MVP lens     55+ games\n  All-Defense  the DPOY score, by position; a coach never votes for his own players         DPOY lens    55+ games, 24+ minutes\n  All-Rookie   the ROY score, five a team regardless of position; not his own players       ROY lens     first-season player, 30+ games\n\nProduction = the mean of the z-scores of Game Score per game and points per game (voters weigh scoring);\ndurability = min(1, games / 70); minutes factor = min(1, minutes per game / 32); defensive box stocks = steals + blocks\n+ 0.3 x defensive rebounds; club defensive rating = points allowed per 100 opponent possessions (lower is better);\n2002-03 expectation = 0.5 + 0.6 x (2002-03 win share - 0.5). Positions are the registry's primary positions\n(PG/SG -> G, SF/PF/F -> F, C -> C).\n\nBallots score as published (5-3-1, 10-7-5-3-1, or team points 5/3/1 and 2/1). The highest total wins; first-place\nvotes break a points tie; a tie that remains names co-winners, as the NBA did (1994-95 and 1999-2000 Rookie of the\nYear). A team spot tied at the cut names both players, as the league did when ballots tied. Every rule applies to\nevery player alike; Wade gets no bonus. Decisions are recorded once in `season_awards.json` and never recomputed;\na Wade honor is added to `awards.json`.",
+ "calendar": "library/2003/league/nba_2003_04_season_awards.json",
+ "decisions": [
+  {
+   "id": "2003-04-dpoy",
+   "award": "dpoy",
+   "name": "Defensive Player of the Year",
+   "announced_on": "2004-04-19",
+   "electorate": 121,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.3,
+    0.6
+   ],
+   "evidence_through": "2004-04-14",
+   "winners": [
+    "Ben Wallace"
+   ],
+   "tally": [
+    {
+     "player": "Ben Wallace",
+     "team": "Detroit Pistons",
+     "games": 81,
+     "mpg": 38.7,
+     "pts": 10.2,
+     "reb": 11.7,
+     "ast": 2.1,
+     "stl": 1.8,
+     "blk": 3.3,
+     "game_score": 11.7,
+     "club_drtg": 93.7,
+     "points": 605,
+     "first_place": 121,
+     "votes_by_place": [
+      121,
+      0,
+      0
+     ]
+    },
+    {
+     "player": "Tim Duncan",
+     "team": "San Antonio Spurs",
+     "games": 76,
+     "mpg": 37.5,
+     "pts": 21.9,
+     "reb": 11.5,
+     "ast": 2.9,
+     "stl": 1.2,
+     "blk": 2.8,
+     "game_score": 18.2,
+     "club_drtg": 92.2,
+     "points": 363,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      121,
+      0
+     ]
+    },
+    {
+     "player": "Marcus Camby",
+     "team": "Minnesota Timberwolves",
+     "games": 76,
+     "mpg": 30.5,
+     "pts": 8.5,
+     "reb": 9.8,
+     "ast": 2.4,
+     "stl": 1.1,
+     "blk": 2.5,
+     "game_score": 10.34,
+     "club_drtg": 94.5,
+     "points": 121,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      121
+     ]
+    }
+   ]
+  }
+ ]
+}
