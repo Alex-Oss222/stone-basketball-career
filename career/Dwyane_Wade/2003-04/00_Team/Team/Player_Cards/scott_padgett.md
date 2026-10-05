@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 27 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-03-27 
+**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-03-28 
 
 **Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 4 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at PF, staff plan 34 minutes (staff rotation dated 2004-03-26, [record](../Depth_Chart/Reviews/2004-03-26/rotation.json)).
+**Role:** Starter at PF, staff plan 34 minutes (staff rotation dated 2004-03-26, [record](../Depth_Chart/Reviews/2004-03-26/rotation.json)). On the injured list since 2004-03-28 (injury: 9 more game(s) out on the engine's draw).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 

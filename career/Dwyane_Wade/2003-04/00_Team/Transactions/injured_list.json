@@ -121,7 +121,7 @@
   {
    "player": "Sean Lampley",
    "placed": "2004-03-06",
-   "activated": null,
+   "activated": "2004-03-28",
    "first_game_missed": "2004-03-06-sacramento-kings-at-miami-heat",
    "reason": "reserve: not among the twelve the staff dresses (2003-04 clubs listed healthy reserves on the injured list)",
    "minimum_games": 5
@@ -141,7 +141,15 @@
    "first_game_missed": "2004-03-24-miami-heat-at-orlando-magic",
    "reason": "reserve: not among the twelve the staff dresses (2003-04 clubs listed healthy reserves on the injured list)",
    "minimum_games": 5
+  },
+  {
+   "player": "Scott Padgett",
+   "placed": "2004-03-28",
+   "activated": null,
+   "first_game_missed": "2004-03-28-miami-heat-at-indiana-pacers",
+   "reason": "injury: 9 more game(s) out on the engine's draw",
+   "minimum_games": 5
   }
  ],
- "as_of": "2004-03-26"
+ "as_of": "2004-03-28"
 }
