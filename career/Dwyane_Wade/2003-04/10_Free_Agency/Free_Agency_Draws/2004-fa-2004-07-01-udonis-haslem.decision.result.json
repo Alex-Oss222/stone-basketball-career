@@ -1,0 +1,23 @@
+{
+ "date": "2004-07-01",
+ "decider": "Udonis Haslem (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-udonis-haslem",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.035388,
+  "Denver Nuggets": 0.019863,
+  "Detroit Pistons": 0.019863,
+  "Houston Rockets": 0.032913,
+  "Los Angeles Lakers": 0.0242,
+  "Miami Heat": 0.097161,
+  "New Jersey Nets": 0.019863,
+  "New Orleans Hornets": 0.013858,
+  "New York Knicks": 0.0242,
+  "Portland Trail Blazers": 0.019863,
+  "San Antonio Spurs": 0.022963,
+  "Washington Wizards": 0.019863,
+  "wait": 0.650002
+ },
+ "outcome": "Miami Heat",
+ "question": "2004 free agency, 2004-07-01: which offer does Udonis Haslem accept (Chicago Bulls $620,046 x 1, Denver Nuggets $620,046 x 1, Detroit Pistons $620,046 x 1, Houston Rockets $620,046 x 1, Los Angeles Lakers $620,046 x 1, Miami Heat $620,046 x 1, New Jersey Nets $620,046 x 1, New Orleans Hornets $620,046 x 1, New York Knicks $620,046 x 1, Portland Trail Blazers $620,046 x 1, San Antonio Spurs $620,046 x 1, Washington Wizards $620,046 x 1), or does he wait?"
+}

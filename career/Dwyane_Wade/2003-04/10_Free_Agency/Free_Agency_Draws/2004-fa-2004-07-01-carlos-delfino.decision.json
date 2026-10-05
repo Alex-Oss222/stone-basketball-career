@@ -1,0 +1,17 @@
+{
+ "event_id": "2004-fa-2004-07-01-carlos-delfino",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Carlos Delfino accept (Atlanta Hawks $385,277 x 1, Boston Celtics $385,277 x 1, Chicago Bulls $385,277 x 1, Dallas Mavericks $385,277 x 1, Miami Heat $385,277 x 1, Minnesota Timberwolves $385,277 x 1, Philadelphia 76ers $385,277 x 1), or does he wait?",
+ "decider": "Carlos Delfino (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.043168,
+  "Boston Celtics": 0.025219,
+  "Chicago Bulls": 0.072248,
+  "Dallas Mavericks": 0.088908,
+  "Miami Heat": 0.052071,
+  "Minnesota Timberwolves": 0.043168,
+  "Philadelphia 76ers": 0.025219,
+  "wait": 0.649999
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.350; priority money; utility Atlanta Hawks 45.9, Boston Celtics 43.8, Chicago Bulls 48.0, Dallas Mavericks 48.8, Miami Heat 46.7, Minnesota Timberwolves 45.9, Philadelphia 76ers 43.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

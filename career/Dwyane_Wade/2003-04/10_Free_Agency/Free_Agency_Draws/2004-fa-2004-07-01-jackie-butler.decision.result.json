@@ -1,0 +1,18 @@
+{
+ "date": "2004-07-01",
+ "decider": "Jackie Butler (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-jackie-butler",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.072466,
+  "Milwaukee Bucks": 0.014198,
+  "Minnesota Timberwolves": 0.099049,
+  "Sacramento Kings": 0.020762,
+  "San Antonio Spurs": 0.021501,
+  "Toronto Raptors": 0.072466,
+  "Utah Jazz": 0.049557,
+  "wait": 0.650001
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-01: which offer does Jackie Butler accept (Golden State Warriors $385,277 x 1, Milwaukee Bucks $385,277 x 1, Minnesota Timberwolves $385,277 x 1, Sacramento Kings $385,277 x 1, San Antonio Spurs $385,277 x 1, Toronto Raptors $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?"
+}

@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-fa-2004-07-01-kenyon-martin",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Kenyon Martin accept (Denver Nuggets $9,368,083 x 5, New Jersey Nets $10,966,513 x 5), or does he wait?",
+ "decider": "Kenyon Martin (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.066874,
+  "New Jersey Nets": 0.282962,
+  "wait": 0.650164
+ },
+ "basis": "Ask $10,967,500; best offer 1.00 of the ask in total; accept chance 0.350; priority money; utility Denver Nuggets 65.2, New Jersey Nets 71.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

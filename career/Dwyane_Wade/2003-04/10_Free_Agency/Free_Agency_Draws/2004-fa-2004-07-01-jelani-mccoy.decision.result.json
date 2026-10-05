@@ -1,0 +1,26 @@
+{
+ "date": "2004-07-01",
+ "decider": "Jelani McCoy (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-jelani-mccoy",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.054822,
+  "Golden State Warriors": 0.012574,
+  "Indiana Pacers": 0.020269,
+  "Los Angeles Clippers": 0.021362,
+  "Memphis Grizzlies": 0.027497,
+  "Miami Heat": 0.038344,
+  "Milwaukee Bucks": 0.014535,
+  "Minnesota Timberwolves": 0.020269,
+  "New Orleans Hornets": 0.014535,
+  "Portland Trail Blazers": 0.020269,
+  "Sacramento Kings": 0.012574,
+  "San Antonio Spurs": 0.027497,
+  "Seattle SuperSonics": 0.038344,
+  "Toronto Raptors": 0.012574,
+  "Utah Jazz": 0.014535,
+  "wait": 0.65
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-01: which offer does Jelani McCoy accept (Cleveland Cavaliers $870,046 x 1, Golden State Warriors $870,046 x 1, Indiana Pacers $870,046 x 1, Los Angeles Clippers $870,046 x 1, Memphis Grizzlies $870,046 x 1, Miami Heat $870,046 x 1, Milwaukee Bucks $870,046 x 1, Minnesota Timberwolves $870,046 x 1, New Orleans Hornets $870,046 x 1, Portland Trail Blazers $870,046 x 1, Sacramento Kings $870,046 x 1, San Antonio Spurs $870,046 x 1, Seattle SuperSonics $870,046 x 1, Toronto Raptors $870,046 x 1, Utah Jazz $870,046 x 1), or does he wait?"
+}

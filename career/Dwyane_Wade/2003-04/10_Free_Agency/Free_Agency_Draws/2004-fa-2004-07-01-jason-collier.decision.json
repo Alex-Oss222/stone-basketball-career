@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-01-jason-collier",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Jason Collier accept (Seattle SuperSonics $4,246,614 x 4), or does he wait?",
+ "decider": "Jason Collier (simulated player, engine draw)",
+ "options": {
+  "Seattle SuperSonics": 0.251272,
+  "wait": 0.748728
+ },
+ "basis": "Ask $4,513,352; best offer 0.94 of the ask in total; accept chance 0.251; priority loyalty; utility Seattle SuperSonics 68.2;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

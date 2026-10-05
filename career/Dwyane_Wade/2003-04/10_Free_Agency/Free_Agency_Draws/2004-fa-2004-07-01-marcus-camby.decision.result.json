@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-01",
+ "decider": "Marcus Camby (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-marcus-camby",
+ "kind": "decision",
+ "options": {
+  "Minnesota Timberwolves": 0.35,
+  "wait": 0.65
+ },
+ "outcome": "Minnesota Timberwolves",
+ "question": "2004 free agency, 2004-07-01: which offer does Marcus Camby accept (Minnesota Timberwolves $11,096,720 x 3), or does he wait?"
+}

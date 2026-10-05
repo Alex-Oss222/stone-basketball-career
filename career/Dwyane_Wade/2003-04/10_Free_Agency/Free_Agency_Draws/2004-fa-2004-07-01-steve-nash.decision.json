@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-01-steve-nash",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Steve Nash accept (Dallas Mavericks $13,161,000 x 3), or does he wait?",
+ "decider": "Steve Nash (simulated player, engine draw)",
+ "options": {
+  "Dallas Mavericks": 0.35,
+  "wait": 0.65
+ },
+ "basis": "Ask $13,161,000; best offer 1.00 of the ask in total; accept chance 0.350; priority fame; utility Dallas Mavericks 72.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

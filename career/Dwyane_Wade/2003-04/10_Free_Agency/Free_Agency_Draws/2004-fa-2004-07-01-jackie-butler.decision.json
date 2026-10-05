@@ -1,0 +1,17 @@
+{
+ "event_id": "2004-fa-2004-07-01-jackie-butler",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Jackie Butler accept (Golden State Warriors $385,277 x 1, Milwaukee Bucks $385,277 x 1, Minnesota Timberwolves $385,277 x 1, Sacramento Kings $385,277 x 1, San Antonio Spurs $385,277 x 1, Toronto Raptors $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?",
+ "decider": "Jackie Butler (simulated player, engine draw)",
+ "options": {
+  "Golden State Warriors": 0.072466,
+  "Milwaukee Bucks": 0.014198,
+  "Minnesota Timberwolves": 0.099049,
+  "Sacramento Kings": 0.020762,
+  "San Antonio Spurs": 0.021501,
+  "Toronto Raptors": 0.072466,
+  "Utah Jazz": 0.049557,
+  "wait": 0.650001
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.350; priority fame; utility Golden State Warriors 55.5, Milwaukee Bucks 48.9, Minnesota Timberwolves 56.7, Sacramento Kings 50.5, San Antonio Spurs 50.6, Toronto Raptors 55.5, Utah Jazz 53.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-01-jamal-crawford",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Jamal Crawford accept (Chicago Bulls $10,798,144 x 5), or does he wait?",
+ "decider": "Jamal Crawford (simulated player, engine draw)",
+ "options": {
+  "Chicago Bulls": 0.322442,
+  "wait": 0.677558
+ },
+ "basis": "Ask $10,967,500; best offer 0.98 of the ask in total; accept chance 0.322; priority loyalty; utility Chicago Bulls 80.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

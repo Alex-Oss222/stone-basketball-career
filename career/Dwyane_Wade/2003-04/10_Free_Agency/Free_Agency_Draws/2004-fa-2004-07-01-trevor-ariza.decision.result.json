@@ -1,0 +1,17 @@
+{
+ "date": "2004-07-01",
+ "decider": "Trevor Ariza (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-trevor-ariza",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.057943,
+  "Detroit Pistons": 0.057943,
+  "Los Angeles Lakers": 0.061066,
+  "Miami Heat": 0.109339,
+  "New Jersey Nets": 0.057943,
+  "Washington Wizards": 0.005766,
+  "wait": 0.65
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-01: which offer does Trevor Ariza accept (Denver Nuggets $385,277 x 1, Detroit Pistons $385,277 x 1, Los Angeles Lakers $385,277 x 1, Miami Heat $385,277 x 1, New Jersey Nets $385,277 x 1, Washington Wizards $385,277 x 1), or does he wait?"
+}

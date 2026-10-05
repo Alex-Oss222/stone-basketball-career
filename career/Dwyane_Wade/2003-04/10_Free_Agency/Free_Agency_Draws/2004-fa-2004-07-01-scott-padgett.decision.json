@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-01-scott-padgett",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Scott Padgett accept (Miami Heat $9,706,886 x 4), or does he wait?",
+ "decider": "Scott Padgett (simulated player, engine draw)",
+ "options": {
+  "Miami Heat": 0.325307,
+  "wait": 0.674693
+ },
+ "basis": "Ask $9,842,775; best offer 0.99 of the ask in total; accept chance 0.325; priority fame; utility Miami Heat 76.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

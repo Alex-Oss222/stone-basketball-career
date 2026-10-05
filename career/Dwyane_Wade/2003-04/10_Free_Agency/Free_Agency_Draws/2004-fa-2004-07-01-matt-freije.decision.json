@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-fa-2004-07-01-matt-freije",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Matt Freije accept (Los Angeles Lakers $385,277 x 1, New Jersey Nets $385,277 x 1), or does he wait?",
+ "decider": "Matt Freije (simulated player, engine draw)",
+ "options": {
+  "Los Angeles Lakers": 0.195684,
+  "New Jersey Nets": 0.154316,
+  "wait": 0.65
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.350; priority winning; utility Los Angeles Lakers 54.0, New Jersey Nets 53.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

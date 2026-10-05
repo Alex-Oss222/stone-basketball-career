@@ -1,0 +1,13 @@
+{
+ "event_id": "2004-fa-2004-07-01-erick-dampier",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Erick Dampier accept (Detroit Pistons $9,870,750 x 4, Golden State Warriors $10,967,500 x 4, Utah Jazz $9,717,019 x 4), or does he wait?",
+ "decider": "Erick Dampier (simulated player, engine draw)",
+ "options": {
+  "Detroit Pistons": 0.307798,
+  "Golden State Warriors": 0.02703,
+  "Utah Jazz": 0.015172,
+  "wait": 0.65
+ },
+ "basis": "Ask $10,967,500; best offer 1.00 of the ask in total; accept chance 0.350; priority loyalty; utility Detroit Pistons 74.3, Golden State Warriors 64.6, Utah Jazz 62.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

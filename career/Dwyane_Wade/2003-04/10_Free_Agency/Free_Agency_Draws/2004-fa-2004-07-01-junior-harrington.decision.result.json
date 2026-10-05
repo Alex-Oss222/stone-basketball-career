@@ -1,0 +1,16 @@
+{
+ "date": "2004-07-01",
+ "decider": "Junior Harrington (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-junior-harrington",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.050436,
+  "Chicago Bulls": 0.084412,
+  "Dallas Mavericks": 0.103877,
+  "Miami Heat": 0.060838,
+  "Minnesota Timberwolves": 0.050436,
+  "wait": 0.650001
+ },
+ "outcome": "Dallas Mavericks",
+ "question": "2004 free agency, 2004-07-01: which offer does Junior Harrington accept (Atlanta Hawks $695,046 x 1, Chicago Bulls $695,046 x 1, Dallas Mavericks $695,046 x 1, Miami Heat $695,046 x 1, Minnesota Timberwolves $695,046 x 1), or does he wait?"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-01",
+ "decider": "Obinna Ekezie (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-obinna-ekezie",
+ "kind": "decision",
+ "options": {
+  "Toronto Raptors": 0.35,
+  "wait": 0.65
+ },
+ "outcome": "Toronto Raptors",
+ "question": "2004 free agency, 2004-07-01: which offer does Obinna Ekezie accept (Toronto Raptors $720,046 x 1), or does he wait?"
+}

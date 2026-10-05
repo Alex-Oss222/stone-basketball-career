@@ -1,0 +1,25 @@
+{
+ "date": "2004-07-01",
+ "decider": "Wang Zhizhi (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-wang-zhizhi",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.024033,
+  "Golden State Warriors": 0.014909,
+  "Indiana Pacers": 0.024033,
+  "Los Angeles Clippers": 0.025329,
+  "Memphis Grizzlies": 0.032604,
+  "Miami Heat": 0.045465,
+  "Milwaukee Bucks": 0.017235,
+  "Minnesota Timberwolves": 0.024033,
+  "New Orleans Hornets": 0.017235,
+  "Sacramento Kings": 0.014909,
+  "San Antonio Spurs": 0.032604,
+  "Seattle SuperSonics": 0.045465,
+  "Toronto Raptors": 0.014909,
+  "Utah Jazz": 0.017235,
+  "wait": 0.650002
+ },
+ "outcome": "Utah Jazz",
+ "question": "2004 free agency, 2004-07-01: which offer does Wang Zhizhi accept (Cleveland Cavaliers $745,046 x 1, Golden State Warriors $745,046 x 1, Indiana Pacers $745,046 x 1, Los Angeles Clippers $745,046 x 1, Memphis Grizzlies $745,046 x 1, Miami Heat $745,046 x 1, Milwaukee Bucks $745,046 x 1, Minnesota Timberwolves $745,046 x 1, New Orleans Hornets $745,046 x 1, Sacramento Kings $745,046 x 1, San Antonio Spurs $745,046 x 1, Seattle SuperSonics $745,046 x 1, Toronto Raptors $745,046 x 1, Utah Jazz $745,046 x 1), or does he wait?"
+}

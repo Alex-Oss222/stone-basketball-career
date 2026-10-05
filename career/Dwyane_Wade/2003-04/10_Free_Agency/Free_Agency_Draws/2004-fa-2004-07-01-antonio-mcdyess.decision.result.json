@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-01",
+ "decider": "Antonio McDyess (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-antonio-mcdyess",
+ "kind": "decision",
+ "options": {
+  "New Orleans Hornets": 0.223045,
+  "wait": 0.776955
+ },
+ "outcome": "New Orleans Hornets",
+ "question": "2004 free agency, 2004-07-01: which offer does Antonio McDyess accept (New Orleans Hornets $3,643,294 x 4), or does he wait?"
+}

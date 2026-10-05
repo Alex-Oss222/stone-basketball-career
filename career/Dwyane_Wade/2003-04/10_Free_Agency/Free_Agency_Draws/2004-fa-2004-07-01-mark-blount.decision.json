@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-01-mark-blount",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Mark Blount accept (Boston Celtics $9,097,804 x 4), or does he wait?",
+ "decider": "Mark Blount (simulated player, engine draw)",
+ "options": {
+  "Boston Celtics": 0.230683,
+  "wait": 0.769317
+ },
+ "basis": "Ask $9,816,119; best offer 0.93 of the ask in total; accept chance 0.231; priority loyalty; utility Boston Celtics 75.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-01",
+ "decider": "Tierre Brown (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-tierre-brown",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.35,
+  "wait": 0.65
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-01: which offer does Tierre Brown accept (Atlanta Hawks $720,046 x 1), or does he wait?"
+}

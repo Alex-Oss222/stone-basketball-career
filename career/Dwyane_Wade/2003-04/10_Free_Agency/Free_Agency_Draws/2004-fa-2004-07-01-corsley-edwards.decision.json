@@ -1,0 +1,17 @@
+{
+ "event_id": "2004-fa-2004-07-01-corsley-edwards",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Corsley Edwards accept (Golden State Warriors $385,277 x 1, Milwaukee Bucks $385,277 x 1, Minnesota Timberwolves $385,277 x 1, Sacramento Kings $385,277 x 1, San Antonio Spurs $385,277 x 1, Toronto Raptors $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?",
+ "decider": "Corsley Edwards (simulated player, engine draw)",
+ "options": {
+  "Golden State Warriors": 0.053927,
+  "Milwaukee Bucks": 0.024721,
+  "Minnesota Timberwolves": 0.086933,
+  "Sacramento Kings": 0.021384,
+  "San Antonio Spurs": 0.046765,
+  "Toronto Raptors": 0.053927,
+  "Utah Jazz": 0.062342,
+  "wait": 0.650001
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.350; priority money; utility Golden State Warriors 44.9, Milwaukee Bucks 41.8, Minnesota Timberwolves 46.9, Sacramento Kings 41.2, San Antonio Spurs 44.4, Toronto Raptors 44.9, Utah Jazz 45.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

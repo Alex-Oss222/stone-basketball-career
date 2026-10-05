@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-01-mo-williams",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Mo Williams accept (Atlanta Hawks $805,325 x 5), or does he wait?",
+ "decider": "Mo Williams (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.35,
+  "wait": 0.65
+ },
+ "basis": "Ask $805,325; best offer 1.00 of the ask in total; accept chance 0.350; priority winning; utility Atlanta Hawks 71.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

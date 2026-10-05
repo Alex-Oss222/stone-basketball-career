@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-fa-2004-07-01-erik-daniels",
+ "date": "2004-07-01",
+ "question": "2004 free agency, 2004-07-01: which offer does Erik Daniels accept (Denver Nuggets $385,277 x 1, Detroit Pistons $385,277 x 1, Los Angeles Lakers $385,277 x 1, New Jersey Nets $385,277 x 1), or does he wait?",
+ "decider": "Erik Daniels (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.086337,
+  "Detroit Pistons": 0.086337,
+  "Los Angeles Lakers": 0.09099,
+  "New Jersey Nets": 0.086337,
+  "wait": 0.649999
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.350; priority money; utility Denver Nuggets 46.9, Detroit Pistons 46.9, Los Angeles Lakers 47.1, New Jersey Nets 46.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

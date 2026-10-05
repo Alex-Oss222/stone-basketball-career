@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-01",
+ "decider": "Jason Collier (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-jason-collier",
+ "kind": "decision",
+ "options": {
+  "Seattle SuperSonics": 0.251272,
+  "wait": 0.748728
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-01: which offer does Jason Collier accept (Seattle SuperSonics $4,246,614 x 4), or does he wait?"
+}

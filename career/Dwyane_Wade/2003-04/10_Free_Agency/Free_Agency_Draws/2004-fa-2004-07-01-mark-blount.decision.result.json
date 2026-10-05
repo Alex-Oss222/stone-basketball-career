@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-01",
+ "decider": "Mark Blount (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-mark-blount",
+ "kind": "decision",
+ "options": {
+  "Boston Celtics": 0.230683,
+  "wait": 0.769317
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-01: which offer does Mark Blount accept (Boston Celtics $9,097,804 x 4), or does he wait?"
+}

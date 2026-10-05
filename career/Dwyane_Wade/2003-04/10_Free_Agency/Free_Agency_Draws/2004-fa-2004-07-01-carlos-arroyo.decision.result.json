@@ -1,0 +1,13 @@
+{
+ "date": "2004-07-01",
+ "decider": "Carlos Arroyo (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-01-carlos-arroyo",
+ "kind": "decision",
+ "options": {
+  "Cleveland Cavaliers": 0.025619,
+  "Los Angeles Clippers": 0.053295,
+  "wait": 0.921086
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-01: which offer does Carlos Arroyo accept (Cleveland Cavaliers $4,903,000 x 5, Los Angeles Clippers $4,903,000 x 5), or does he wait?"
+}
