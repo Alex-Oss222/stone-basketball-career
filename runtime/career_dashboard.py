@@ -128,11 +128,10 @@ def career_overview(identity: dict, as_of: str, regular: dict, playoffs: dict, h
         text(1236, 828, "first game listed; (+n) more games at the same high", 15, muted, anchor="end")
         line(44, 847, 1236, 847)
         for i, (label, value, game) in enumerate(highs[:9]):
-            cx = 44 + (i % 5) * 244 if i < 5 else 44 + (i - 5) * 244
-            cy = 892 if i < 5 else 992
-            text(cx, cy, value, 30, weight=700)
-            text(cx + 62, cy - 8, label.upper(), 14, muted, 700)
-            text(cx + 62, cy + 14, game, 15, white)
+            cx, cy = 44 + (i % 3) * 400, 898 + (i // 3) * 68         # three columns of three
+            text(cx + 52, cy, value, 32, weight=700, anchor="end")
+            text(cx + 66, cy - 13, label.upper(), 14, muted, 700)
+            text(cx + 66, cy + 9, game, 16, white)
         footer = 1091
     text(32, footer, "NBA regular season and playoffs are separate records. N/A = no denominator or unavailable data.", 16, "#aeb0b5")
     parts.extend(["</g>", "</svg>"])

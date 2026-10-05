@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SEASON = "2003-04"
 TEAM = Path(f"career/Dwyane_Wade/{SEASON}/00_Team")
 STANDINGS = Path(f"career/Dwyane_Wade/Stats_and_Awards/League/{SEASON}/Standings.md")
+LEAGUE_DIR = STANDINGS.parent
 CONFERENCES = Path("library/2003/league/nba_2003_04_conferences.json")
 START, END = "<!-- team-status:start -->", "<!-- team-status:end -->"
 GONE = ("released", "traded", "signed_elsewhere", "voided", "waived", "renounced", "declined")
@@ -149,6 +150,8 @@ def blocks(root, on):
         f"Contract guarantee review: 2004-01-07 keep-or-waive, 2004-01-10 kept contracts guaranteed.")
     page = [f"# {SEASON} standings", "", f"Through {on}, from closed simulated results only (`runtime/standings.py`). "
             "Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.", ""]
+    if (root / LEAGUE_DIR / "playoffs.json").is_file():
+        page += ["The playoffs are seeded: [bracket, seeds and schedule](Playoffs.md).", ""]
     for conf, crows in conf_rows.items():
         page += [f"## {conf}ern Conference", "", _table(["#", "Club", "W", "L", "Pct", "GB"], crows), ""]
     out[STANDINGS] = "\n".join(page)

@@ -1,0 +1,73 @@
+{
+ "schema_version": 1,
+ "season": "2003-04",
+ "kind": "playoff_rules",
+ "purpose": "Structural rules and calendar of the 2004 NBA playoffs, researched October 2026. Rules and dates only: no real 2004 seeds, matchups or results are recorded here or used by the simulation.",
+ "status_values": {"sourced": "a cited source states it", "derived": "inferred from cited sources, reasoning given", "design_choice": "not verifiable for 2003-04; the simulation's documented choice"},
+ "divisions": {
+  "status": "sourced",
+  "sources": ["https://www.basketball-reference.com/leagues/NBA_2004_standings.html"],
+  "East": {
+   "Atlantic": ["Boston Celtics", "Miami Heat", "New Jersey Nets", "New York Knicks", "Orlando Magic", "Philadelphia 76ers", "Washington Wizards"],
+   "Central": ["Atlanta Hawks", "Chicago Bulls", "Cleveland Cavaliers", "Detroit Pistons", "Indiana Pacers", "Milwaukee Bucks", "New Orleans Hornets", "Toronto Raptors"]
+  },
+  "West": {
+   "Midwest": ["Dallas Mavericks", "Denver Nuggets", "Houston Rockets", "Memphis Grizzlies", "Minnesota Timberwolves", "San Antonio Spurs", "Utah Jazz"],
+   "Pacific": ["Golden State Warriors", "Los Angeles Clippers", "Los Angeles Lakers", "Phoenix Suns", "Portland Trail Blazers", "Sacramento Kings", "Seattle SuperSonics"]
+  },
+  "note": "Last season with two divisions per conference; six divisions from 2004-05."
+ },
+ "qualification": {
+  "teams_per_conference": 8,
+  "seeding": "The two division winners take seeds 1 and 2, ordered by record; seeds 3 to 8 are the next six records in the conference.",
+  "status": "sourced",
+  "sources": ["https://en.wikipedia.org/wiki/NBA_playoffs", "https://en.wikipedia.org/wiki/2004_NBA_playoffs"],
+  "quote": "Prior to 2004, when the NBA was aligned into two conferences with two divisions each, the division champions were guaranteed the top two seeds."
+ },
+ "bracket": {
+  "first_round": [[1, 8], [4, 5], [3, 6], [2, 7]],
+  "semifinals": [[[1, 8], [4, 5]], [[3, 6], [2, 7]]],
+  "reseeding": false,
+  "status": "derived",
+  "note": "The fixed bracket used 1984-2004: winners of 1-8 and 4-5 meet; winners of 3-6 and 2-7 meet; no reseeding."
+ },
+ "series": {
+  "best_of": 7,
+  "status": "sourced",
+  "sources": ["https://en.wikipedia.org/wiki/NBA_playoffs"],
+  "note": "The first round became best-of-seven in 2003."
+ },
+ "home_court": {
+  "conference_rounds": {"format": "2-2-1-1-1", "home_team_games": [1, 2, 5, 7], "status": "sourced"},
+  "finals": {"format": "2-3-2", "home_team_games": [1, 2, 6, 7], "status": "sourced",
+             "sources": ["https://en.wikipedia.org/wiki/NBA_playoffs"]},
+  "who": "the better regular-season record; equal records by the tiebreak procedure",
+  "who_status": "sourced for the Finals (better record); design_choice for the conference rounds, where 2003-04 seed versus record is unverified (record is used, as from 2004-05)",
+  "sources": ["https://en.wikipedia.org/wiki/2004_NBA_playoffs"]
+ },
+ "tiebreakers": {
+  "status": "design_choice",
+  "basis": "The long-standing NBA order as NBA.com publishes it, with the pre-2016 rule that division winner applies in a two-team tie only after head-to-head; the exact 2003-04 wording could not be read from an archive.",
+  "two_team": ["head_to_head", "division_winner", "division_record_if_same_division", "conference_record", "playoff_teams_own_conference", "playoff_teams_other_conference", "point_differential", "drawing"],
+  "multi_team": ["division_winner", "record_among_tied", "division_record_if_all_same_division", "conference_record", "playoff_teams_own_conference", "point_differential", "drawing"],
+  "restart": "Once a team is separated, the remaining tied teams start the procedure again (two-team or multi-team).",
+  "drawing": "an engine decision draw, journaled like any other, so it cannot be chosen or re-rolled",
+  "sources": ["https://www.nba.com/standings?Season=2003-04", "https://en.wikipedia.org/wiki/NBA_playoffs"]
+ },
+ "calendar": {
+  "status": "sourced for the opening days; derived for the gap template (matchups and television set the real days)",
+  "sources": ["https://www.basketball-reference.com/playoffs/NBA_2004_games.html", "https://www.basketball-reference.com/leagues/NBA_2004_games-april.html",
+              "https://www.basketball-reference.com/leagues/NBA_2004_games-may.html", "https://www.basketball-reference.com/leagues/NBA_2004_games-june.html"],
+  "regular_season_last_day": "2004-04-14",
+  "first_round": {"openers": {"2004-04-17": [["East", [1, 8]], ["East", [2, 7]], ["West", [3, 6]], ["West", [4, 5]]],
+                               "2004-04-18": [["East", [3, 6]], ["East", [4, 5]], ["West", [1, 8]], ["West", [2, 7]]]},
+                  "gaps_days": [3, 3, 2, 2, 2, 2],
+                  "note": "Four series open each day, each conference two and two (sourced); which pairs open which day is a design choice. Gaps G1-G2 and G2-G3 of three days, then every other day (derived)."},
+  "conference_semifinals": {"earliest_game_1": {"West": "2004-05-02", "East": "2004-05-03"}, "rest_after_feeders_days": 2,
+                            "gaps_days": [2, 3, 2, 2, 2, 2],
+                            "note": "Game 1 on the conference's opening day or two days after both feeding series end, whichever is later (derived)."},
+  "conference_finals": {"game_1": {"West": "2004-05-21", "East": "2004-05-22"}, "gaps_days": [2, 2, 2, 2, 2, 2]},
+  "finals": {"game_1": "2004-06-06", "dates": ["2004-06-06", "2004-06-08", "2004-06-10", "2004-06-13", "2004-06-15", "2004-06-17", "2004-06-20"],
+             "note": "Games 1-5 sourced; games 6 and 7 derived from the Sunday/Tuesday/Thursday pattern."}
+ }
+}

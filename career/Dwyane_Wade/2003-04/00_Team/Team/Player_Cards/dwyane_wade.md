@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG / PG  
 **Age at assessment:** 19 · **Height:** 6-6 in shoes · **Weight:** 220 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-04-09 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-04-10 
 
 **Contract/control:** Rookie-scale contract signed July 21, 2003: $2,197,000 counted in 2003-04, three seasons plus a 2006-07 team option; 120% of scale at the maximum, 80% protected. (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -89,6 +89,7 @@ Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.105. Pressure concerns affect t
 | 2004-03-12 | Staff rotation of 2004-03-12: starter at SG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-03-12/rotation.json) |
 | 2004-03-26 | Staff rotation of 2004-03-26: starter at SG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-03-26/rotation.json) |
 | 2004-04-09 | Staff rotation of 2004-04-09: starter at SG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-04-09/rotation.json) |
+| April 10, 2004 | Injured (day-to-day) in event `2004-04-10-miami-heat-at-cleveland-cavaliers`: out 2 games; the game builder leaves him out of Miami's next 2 games. No grade change. | [Game 2 result](../../../06_Regular_Season/04_April/Week_2/Game_2.md) |
 
 ## Sources and uncertainty
 
@@ -108,7 +109,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2003-04 | MIA | 74 | 69 | 35.4 | 18.1 | 4.9 | 4.6 | 1.6 | 1.0 | 1.1 | 52.0% | 39.7% | 90.9% |
+| 2003-04 | MIA | 75 | 70 | 35.0 | 17.9 | 4.8 | 4.5 | 1.6 | 1.0 | 1.1 | 52.0% | 39.7% | 90.9% |
 
 Source: [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json) for roster status; detailed historical statistical lines have not yet been imported.
 
