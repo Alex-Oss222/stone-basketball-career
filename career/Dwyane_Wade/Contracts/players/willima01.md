@@ -2,9 +2,9 @@
 
 # Contract | Mo Williams
 
-Known through: 2004-04-02. [Open interactive contract](willima01.html#contract) · [Contract history](willima01.html#contract-history)
+Known through: 2004-04-04. [Open interactive contract](willima01.html#contract) · [Contract history](willima01.html#contract-history)
 
-Mo Williams: No verified contract record. Evidence cutoff: 2004-04-02.
+Mo Williams: No verified contract record. Evidence cutoff: 2004-04-04.
 
 ## Current contract
 
