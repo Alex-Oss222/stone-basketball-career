@@ -2,9 +2,9 @@
 
 # Contract | Alonzo Mourning
 
-Known through: 2004-09-05. [Open interactive contract](mournal01.html#contract) · [Contract history](mournal01.html#contract-history)
+Known through: 2004-09-12. [Open interactive contract](mournal01.html#contract) · [Contract history](mournal01.html#contract-history)
 
-Alonzo Mourning: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-09-05.
+Alonzo Mourning: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2004-09-12.
 
 ## Current contract
 

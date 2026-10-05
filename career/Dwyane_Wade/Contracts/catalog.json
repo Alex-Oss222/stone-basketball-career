@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-09-05",
+  "as_of": "2004-09-12",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1707,9 +1707,9 @@
       "player_id": "tsakaja01",
       "name": "Jake Tsakalidis",
       "team": "Memphis Grizzlies",
-      "status": "under rookie contract",
-      "current_contract_id": "tsakaja01-2000-10-02",
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "tsakaja01-2004-09-10",
+      "recorded_agreements": 2,
       "href": "players/tsakaja01.html#contract"
     },
     {
@@ -3031,8 +3031,8 @@
       "name": "Mike Wilks",
       "team": "Houston Rockets",
       "status": "under contract",
-      "current_contract_id": "wilksmi01-2003-09-08",
-      "recorded_agreements": 2,
+      "current_contract_id": "wilksmi01-2004-09-07",
+      "recorded_agreements": 3,
       "href": "players/wilksmi01.html#contract"
     },
     {

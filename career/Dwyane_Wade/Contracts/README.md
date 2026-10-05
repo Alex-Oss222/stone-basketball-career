@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-09-05. [Search the contract directory](index.html)
+Known through 2004-09-12. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -197,7 +197,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jabari Smith](players/smithja01.md) | Sacramento Kings | No verified contract record | No verified current agreement | 0 |
 | [Jacque Vaughn](players/vaughja01.md) | Atlanta Hawks | under contract | Jacque Vaughn · 2004-07-29 | 3 |
 | [Jahidi White](players/whiteja01.md) | Washington Wizards | under contract unverified | No verified current agreement | 0 |
-| [Jake Tsakalidis](players/tsakaja01.md) | Memphis Grizzlies | under rookie contract | Jake Tsakalidis · 2000-10-02 | 1 |
+| [Jake Tsakalidis](players/tsakaja01.md) | Memphis Grizzlies | under contract | Jake Tsakalidis · 2004-09-10 | 2 |
 | [Jake Voskuhl](players/voskuja01.md) | Phoenix Suns | under contract | Jake Voskuhl · 2003-07-16 | 2 |
 | [Jalen Rose](players/roseja01.md) | Chicago Bulls | under contract | Jalen Rose · existing contract; signing date not recorded | 1 |
 | [Jamaal Magloire](players/magloja01.md) | New Orleans Hornets | under rookie contract | Jamaal Magloire · 2000-07-18 | 1 |
@@ -344,7 +344,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Mike Dunleavy](players/dunlemi02.md) | Golden State Warriors | under rookie contract | Mike Dunleavy · 2002-07-07 | 1 |
 | [Mike James](players/jamesmi01.md) | Boston Celtics | under contract | Mike James · 2004-08-05 | 3 |
 | [Mike Miller](players/millemi01.md) | Memphis Grizzlies | under rookie contract | Mike Miller · 2000-08-11 | 1 |
-| [Mike Wilks](players/wilksmi01.md) | Houston Rockets | under contract | Mike Wilks · 2003-09-08 | 2 |
+| [Mike Wilks](players/wilksmi01.md) | Houston Rockets | under contract | Mike Wilks · 2004-09-07 | 3 |
 | [Mikki Moore](players/mooremi01.md) | New Jersey Nets | under contract | Mikki Moore · 2004-08-20 | 3 |
 | [Milt Palacio](players/palacmi01.md) | Toronto Raptors | under contract | Milt Palacio · 2003-07-16 | 2 |
 | [Mitchell Butler](players/butlemi02.md) | Washington Wizards | No verified contract record | No verified current agreement | 0 |
