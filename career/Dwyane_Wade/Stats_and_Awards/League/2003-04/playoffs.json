@@ -1303,7 +1303,7 @@
    "home_court": "Indiana Pacers",
    "wins": {
     "Indiana Pacers": 2,
-    "New Jersey Nets": 1
+    "New Jersey Nets": 2
    },
    "winner": null,
    "games": [
@@ -1343,7 +1343,9 @@
      "home": "New Jersey Nets",
      "away": "Indiana Pacers",
      "conditional": false,
-     "event_id": "2004-05-28-indiana-pacers-at-new-jersey-nets"
+     "event_id": "2004-05-28-indiana-pacers-at-new-jersey-nets",
+     "result": "Indiana Pacers 87, New Jersey Nets 92",
+     "winner": "New Jersey Nets"
     },
     {
      "game": 5,

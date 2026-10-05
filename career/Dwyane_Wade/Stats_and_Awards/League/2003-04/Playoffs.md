@@ -253,14 +253,14 @@ Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 2, Los Angeles
 
 ### East: (1) Indiana Pacers vs (2) New Jersey Nets
 
-Home court: Indiana Pacers. Series Indiana Pacers 2, New Jersey Nets 1.
+Home court: Indiana Pacers. Series Indiana Pacers 2, New Jersey Nets 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat May 22 | Indiana Pacers | New Jersey Nets | New Jersey Nets 92, Indiana Pacers 69 |
 | 2 | Mon May 24 | Indiana Pacers | New Jersey Nets | New Jersey Nets 84, Indiana Pacers 101 |
 | 3 | Wed May 26 | New Jersey Nets | Indiana Pacers | Indiana Pacers 105, New Jersey Nets 104 |
-| 4 | Fri May 28 | New Jersey Nets | Indiana Pacers |  |
+| 4 | Fri May 28 | New Jersey Nets | Indiana Pacers | Indiana Pacers 87, New Jersey Nets 92 |
 | 5 | Sun May 30 | Indiana Pacers | New Jersey Nets | if needed |
 | 6 | Tue Jun 1 | New Jersey Nets | Indiana Pacers | if needed |
 | 7 | Thu Jun 3 | Indiana Pacers | New Jersey Nets | if needed |
