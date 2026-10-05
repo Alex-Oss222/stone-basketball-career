@@ -14,4 +14,6 @@ days: 22-end
 
 ## Games and events
 
+- 2004-03-24: Miami Heat 101 at Orlando Magic 109 — Miami Heat L 101-109 ([Game 1](Game_1.md), event `2004-03-24-miami-heat-at-orlando-magic`)
+
 ## Consequences

@@ -2782,6 +2782,24 @@
    },
    "contract": null,
    "note": "10-day contract ended (1.5 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-03-24-expire-harriad01",
+   "date": "2004-03-24",
+   "kind": "expire",
+   "player": "Adam Harrington",
+   "bbr_id": "harriad01",
+   "from": "New Orleans Hornets",
+   "to": null,
+   "role": {
+    "player_id": "Adam Harrington",
+    "bbr_id": "harriad01",
+    "position": "SG",
+    "games": 19,
+    "minutes": 111
+   },
+   "contract": null,
+   "note": "10-day contract ended (1.8 minutes a game)"
   }
  ],
  "market_days": [
@@ -2843,6 +2861,7 @@
   "2004-03-20",
   "2004-03-21",
   "2004-03-22",
-  "2004-03-23"
+  "2004-03-23",
+  "2004-03-24"
  ]
 }
