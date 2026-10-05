@@ -2,9 +2,9 @@
 
 # Contract | Grant Long
 
-Known through: 2004-05-02. [Open interactive contract](longgr01.html#contract) · [Contract history](longgr01.html#contract-history)
+Known through: 2004-05-03. [Open interactive contract](longgr01.html#contract) · [Contract history](longgr01.html#contract-history)
 
-Grant Long: not with an NBA club (status not established) (researched, date not recorded). Evidence cutoff: 2004-05-02.
+Grant Long: unsigned free agent. Evidence cutoff: 2004-05-03.
 
 ## Current contract
 
@@ -18,7 +18,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Grant Long |
 | Club / rights baseline | Free agent |
-| Control status | not with an NBA club (status not established) (researched, date not recorded) |
+| Control status | unsigned free agent |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | not with an NBA club (status not established) (researched, date not recorded) |
+| Status | unsigned free agent |
 | Contract wording | Not recorded |
 
 ### Salary by season

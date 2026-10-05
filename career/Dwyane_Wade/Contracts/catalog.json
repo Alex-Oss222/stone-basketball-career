@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-05-02",
+  "as_of": "2004-05-03",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -24,7 +24,7 @@
       "player_id": "harriad01",
       "name": "Adam Harrington",
       "team": "Free agent",
-      "status": "unsigned free agent (researched, 2004-03-31)",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/harriad01.html#contract"
@@ -500,8 +500,8 @@
     {
       "player_id": "shawbr01",
       "name": "Brian Shaw",
-      "team": "Retired",
-      "status": "retired (researched, 2003-09-24)",
+      "team": "Free agent",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/shawbr01.html#contract"
@@ -995,8 +995,8 @@
     {
       "player_id": "mannida01",
       "name": "Danny Manning",
-      "team": "Retired",
-      "status": "retired (researched, 2003-09-12)",
+      "team": "Free agent",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/mannida01.html#contract"
@@ -1230,7 +1230,7 @@
       "player_id": "reiddo01",
       "name": "Don Reid",
       "team": "Free agent",
-      "status": "unsigned free agent (researched, 2003-07-01)",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/reiddo01.html#contract"
@@ -1581,7 +1581,7 @@
       "player_id": "longgr01",
       "name": "Grant Long",
       "team": "Free agent",
-      "status": "not with an NBA club (status not established) (researched, date not recorded)",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/longgr01.html#contract"
@@ -1976,8 +1976,8 @@
     {
       "player_id": "jacksje01",
       "name": "Jermaine Jackson",
-      "team": "Abroad",
-      "status": "playing outside the NBA (researched, 2004-01)",
+      "team": "Free agent",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/jacksje01.html#contract"
@@ -2184,7 +2184,7 @@
       "player_id": "hawkiju01",
       "name": "Juaquin Hawkins",
       "team": "Free agent",
-      "status": "unsigned free agent (researched, 2003-10-14)",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/hawkiju01.html#contract"
@@ -2490,7 +2490,7 @@
       "player_id": "postela01",
       "name": "Lavor Postell",
       "team": "Free agent",
-      "status": "unsigned free agent (researched, 2003-11-06)",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/postela01.html#contract"
@@ -2742,7 +2742,7 @@
       "player_id": "bryanma01",
       "name": "Mark Bryant",
       "team": "Free agent",
-      "status": "not with an NBA club (status not established) (researched, date not recorded)",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/bryanma01.html#contract"
@@ -3218,8 +3218,8 @@
     {
       "player_id": "burkepa01",
       "name": "Pat Burke",
-      "team": "Abroad",
-      "status": "playing outside the NBA (researched, 2004-02)",
+      "team": "Free agent",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/burkepa01.html#contract"
@@ -3363,7 +3363,7 @@
       "player_id": "brownra02",
       "name": "Randy Brown",
       "team": "Free agent",
-      "status": "not with an NBA club (status not established) (researched, date not recorded)",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/brownra02.html#contract"
@@ -3786,7 +3786,7 @@
       "player_id": "marksse01",
       "name": "Sean Marks",
       "team": "San Antonio Spurs",
-      "status": "injured, unavailable (researched, 2003-11-17)",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/marksse01.html#contract"
@@ -3902,8 +3902,8 @@
     {
       "player_id": "parkesm01",
       "name": "Smush Parker",
-      "team": "Abroad",
-      "status": "playing outside the NBA (researched, 2003-12)",
+      "team": "Free agent",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/parkesm01.html#contract"
@@ -3974,8 +3974,8 @@
     {
       "player_id": "kerrst01",
       "name": "Steve Kerr",
-      "team": "Retired",
-      "status": "retired (researched, 2003-08-07)",
+      "team": "Free agent",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/kerrst01.html#contract"
@@ -4109,8 +4109,8 @@
     {
       "player_id": "hardati01",
       "name": "Tim Hardaway",
-      "team": "Retired",
-      "status": "retired (researched, 2003-11)",
+      "team": "Free agent",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/hardati01.html#contract"
@@ -4425,7 +4425,7 @@
       "player_id": "williwa02",
       "name": "Walt Williams",
       "team": "Free agent",
-      "status": "not with an NBA club (status not established) (researched, date not recorded)",
+      "status": "unsigned free agent",
       "current_contract_id": null,
       "recorded_agreements": 1,
       "href": "players/williwa02.html#contract"

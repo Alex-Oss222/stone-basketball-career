@@ -1,6 +1,6 @@
 # 2003-04 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2004-04-14 (`runtime/season_awards.py`); no real 2004 vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2004-04-27.
+Decided on each award's real announcement date from closed simulated results through 2004-04-14 (`runtime/season_awards.py`); no real 2004 vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2004-05-03.
 
 ## Calendar
 
@@ -14,7 +14,8 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2004-04-25 | All-NBA Teams | 123 media | 5-3-1 | decided |
 | 2004-04-26 | All-Defensive Teams | 29 head coaches, not for their own players | 2-1 | decided |
 | 2004-04-27 | All-Rookie Teams | 29 head coaches, not for their own players | 2-1 | decided |
-| 2004-05-03 | Most Valuable Player | 123 media | 10-7-5-3-1 | pending |
+| 2004-05-03 | Most Valuable Player | 123 media | 10-7-5-3-1 | decided |
+| the night the Finals are clinched | Finals MVP | 9 media panel | 1 | pending |
 
 ## Defensive Player of the Year
 
@@ -163,3 +164,15 @@ Announced 2004-04-27; 29 head coaches, not for their own players, ballot 2-1.
 | Keith Bogans | G | Orlando Magic | 73 | 25.2 | 7.5 | 4.3 | 1.4 | 0.5 | 0.3 | 5.92 | 23 | 0 |
 
 Also receiving votes: Leandro Barbosa (Phoenix Suns) 13, Mickael Pietrus (Golden State Warriors) 3.
+
+## Most Valuable Player
+
+Announced 2004-05-03; 123 media, ballot 10-7-5-3-1.
+
+| # | Player | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| WINNER | Kevin Garnett | Minnesota Timberwolves | 82 | 38.2 | 23.2 | 12.6 | 5.2 | 1.8 | 1.6 | 21.4 | 1230 | 123 |
+| 2 | Sam Cassell | Minnesota Timberwolves | 81 | 36.4 | 21.8 | 3.5 | 7.5 | 1.6 | 0.2 | 17.3 | 813 | 0 |
+| 3 | Peja Stojakovic | Sacramento Kings | 81 | 40.2 | 23.9 | 6.5 | 2.1 | 1.2 | 0.3 | 18.01 | 625 | 0 |
+
+Complete tally: `season_awards.json` (6 receiving votes).

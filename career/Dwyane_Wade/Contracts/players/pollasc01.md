@@ -2,9 +2,9 @@
 
 # Contract | Scot Pollard
 
-Known through: 2004-05-02. [Open interactive contract](pollasc01.html#contract) · [Contract history](pollasc01.html#contract-history)
+Known through: 2004-05-03. [Open interactive contract](pollasc01.html#contract) · [Contract history](pollasc01.html#contract-history)
 
-Scot Pollard: under contract. Evidence cutoff: 2004-05-02.
+Scot Pollard: under contract. Evidence cutoff: 2004-05-03.
 
 ## Current contract
 

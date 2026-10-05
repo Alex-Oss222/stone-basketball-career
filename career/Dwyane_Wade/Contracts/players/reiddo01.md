@@ -2,9 +2,9 @@
 
 # Contract | Don Reid
 
-Known through: 2004-05-02. [Open interactive contract](reiddo01.html#contract) · [Contract history](reiddo01.html#contract-history)
+Known through: 2004-05-03. [Open interactive contract](reiddo01.html#contract) · [Contract history](reiddo01.html#contract-history)
 
-Don Reid: unsigned free agent (researched, 2003-07-01). Evidence cutoff: 2004-05-02.
+Don Reid: unsigned free agent. Evidence cutoff: 2004-05-03.
 
 ## Current contract
 
@@ -18,7 +18,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Don Reid |
 | Club / rights baseline | Free agent |
-| Control status | unsigned free agent (researched, 2003-07-01) |
+| Control status | unsigned free agent |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | unsigned free agent (researched, 2003-07-01) |
+| Status | unsigned free agent |
 | Contract wording | Not recorded |
 
 ### Salary by season

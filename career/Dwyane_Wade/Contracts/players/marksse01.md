@@ -2,9 +2,9 @@
 
 # Contract | Sean Marks
 
-Known through: 2004-05-02. [Open interactive contract](marksse01.html#contract) · [Contract history](marksse01.html#contract-history)
+Known through: 2004-05-03. [Open interactive contract](marksse01.html#contract) · [Contract history](marksse01.html#contract-history)
 
-Sean Marks: injured, unavailable (researched, 2003-11-17). Evidence cutoff: 2004-05-02.
+Sean Marks: unsigned free agent. Evidence cutoff: 2004-05-03.
 
 ## Current contract
 
@@ -18,7 +18,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Sean Marks |
 | Club / rights baseline | San Antonio Spurs |
-| Control status | injured, unavailable (researched, 2003-11-17) |
+| Control status | unsigned free agent |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | injured, unavailable (researched, 2003-11-17) |
+| Status | unsigned free agent |
 | Contract wording | Not recorded |
 
 ### Salary by season

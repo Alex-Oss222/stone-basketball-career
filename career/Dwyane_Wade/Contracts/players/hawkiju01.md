@@ -2,9 +2,9 @@
 
 # Contract | Juaquin Hawkins
 
-Known through: 2004-05-02. [Open interactive contract](hawkiju01.html#contract) · [Contract history](hawkiju01.html#contract-history)
+Known through: 2004-05-03. [Open interactive contract](hawkiju01.html#contract) · [Contract history](hawkiju01.html#contract-history)
 
-Juaquin Hawkins: unsigned free agent (researched, 2003-10-14). Evidence cutoff: 2004-05-02.
+Juaquin Hawkins: unsigned free agent. Evidence cutoff: 2004-05-03.
 
 ## Current contract
 
@@ -18,7 +18,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Juaquin Hawkins |
 | Club / rights baseline | Free agent |
-| Control status | unsigned free agent (researched, 2003-10-14) |
+| Control status | unsigned free agent |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -90,7 +90,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | Not recorded |
 | Verified final season | Not recorded |
 | Verified expiry date | 2003-06-30 |
-| Status | unsigned free agent (researched, 2003-10-14) |
+| Status | unsigned free agent |
 | Contract wording | Not recorded |
 
 ### Salary by season

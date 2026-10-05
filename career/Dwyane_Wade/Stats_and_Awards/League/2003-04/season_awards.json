@@ -1146,6 +1146,163 @@
      "points": 3
     }
    ]
+  },
+  {
+   "id": "2003-04-mvp",
+   "award": "mvp",
+   "name": "Most Valuable Player",
+   "announced_on": "2004-05-03",
+   "electorate": 123,
+   "voters": "media",
+   "ballot": [
+    10,
+    7,
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.2,
+    0.5
+   ],
+   "evidence_through": "2004-04-14",
+   "winners": [
+    "Kevin Garnett"
+   ],
+   "tally": [
+    {
+     "player": "Kevin Garnett",
+     "team": "Minnesota Timberwolves",
+     "games": 82,
+     "mpg": 38.2,
+     "pts": 23.2,
+     "reb": 12.6,
+     "ast": 5.2,
+     "stl": 1.8,
+     "blk": 1.6,
+     "game_score": 21.4,
+     "club_pct": 0.756,
+     "points": 1230,
+     "first_place": 123,
+     "votes_by_place": [
+      123,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "player": "Sam Cassell",
+     "team": "Minnesota Timberwolves",
+     "games": 81,
+     "mpg": 36.4,
+     "pts": 21.8,
+     "reb": 3.5,
+     "ast": 7.5,
+     "stl": 1.6,
+     "blk": 0.2,
+     "game_score": 17.3,
+     "club_pct": 0.756,
+     "points": 813,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      99,
+      24,
+      0,
+      0
+     ]
+    },
+    {
+     "player": "Peja Stojakovic",
+     "team": "Sacramento Kings",
+     "games": 81,
+     "mpg": 40.2,
+     "pts": 23.9,
+     "reb": 6.5,
+     "ast": 2.1,
+     "stl": 1.2,
+     "blk": 0.3,
+     "game_score": 18.01,
+     "club_pct": 0.659,
+     "points": 625,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      24,
+      80,
+      19,
+      0
+     ]
+    },
+    {
+     "player": "Tim Duncan",
+     "team": "San Antonio Spurs",
+     "games": 76,
+     "mpg": 37.5,
+     "pts": 21.9,
+     "reb": 11.5,
+     "ast": 2.9,
+     "stl": 1.2,
+     "blk": 2.8,
+     "game_score": 18.2,
+     "club_pct": 0.683,
+     "points": 407,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      19,
+      104,
+      0
+     ]
+    },
+    {
+     "player": "Ron Artest",
+     "team": "Indiana Pacers",
+     "games": 73,
+     "mpg": 36.7,
+     "pts": 18.8,
+     "reb": 5.5,
+     "ast": 4.1,
+     "stl": 2.3,
+     "blk": 0.7,
+     "game_score": 15.19,
+     "club_pct": 0.72,
+     "points": 119,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      0,
+      0,
+      119
+     ]
+    },
+    {
+     "player": "Vince Carter",
+     "team": "Toronto Raptors",
+     "games": 71,
+     "mpg": 38.8,
+     "pts": 22.8,
+     "reb": 5.6,
+     "ast": 5.6,
+     "stl": 1.7,
+     "blk": 1.1,
+     "game_score": 15.84,
+     "club_pct": 0.512,
+     "points": 4,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      0,
+      0,
+      4
+     ]
+    }
+   ]
   }
  ]
 }
