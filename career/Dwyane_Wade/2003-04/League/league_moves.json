@@ -2548,6 +2548,46 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.77 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-03-08-expire-penigde01",
+   "date": "2004-03-08",
+   "kind": "expire",
+   "player": "Desmond Penigar",
+   "bbr_id": "penigde01",
+   "from": "Los Angeles Clippers",
+   "to": null,
+   "role": {
+    "player_id": "Desmond Penigar",
+    "bbr_id": "penigde01",
+    "position": "PF",
+    "games": 10,
+    "minutes": 89
+   },
+   "contract": null,
+   "note": "10-day contract ended (1.0 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-03-08-ten_day-brownda02",
+   "date": "2004-03-08",
+   "kind": "ten_day",
+   "player": "Damone Brown",
+   "bbr_id": "brownda02",
+   "from": null,
+   "to": "Los Angeles Clippers",
+   "role": {
+    "player_id": "Damone Brown",
+    "bbr_id": "brownda02",
+    "position": "PF",
+    "games": 3,
+    "minutes": 17
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-03-18",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.38 x fit"
   }
  ],
  "market_days": [
@@ -2593,6 +2633,7 @@
   "2004-03-02",
   "2004-03-05",
   "2004-03-06",
-  "2004-03-07"
+  "2004-03-07",
+  "2004-03-08"
  ]
 }

@@ -2,9 +2,9 @@
 
 # Contract | Brian Shaw
 
-Known through: 2004-03-07. [Open interactive contract](shawbr01.html#contract) · [Contract history](shawbr01.html#contract-history)
+Known through: 2004-03-08. [Open interactive contract](shawbr01.html#contract) · [Contract history](shawbr01.html#contract-history)
 
-Brian Shaw: retired (researched, 2003-09-24). Evidence cutoff: 2004-03-07.
+Brian Shaw: retired (researched, 2003-09-24). Evidence cutoff: 2004-03-08.
 
 ## Current contract
 

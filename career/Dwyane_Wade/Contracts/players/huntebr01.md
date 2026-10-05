@@ -2,9 +2,9 @@
 
 # Contract | Brandon Hunter
 
-Known through: 2004-03-07. [Open interactive contract](huntebr01.html#contract) · [Contract history](huntebr01.html#contract-history)
+Known through: 2004-03-08. [Open interactive contract](huntebr01.html#contract) · [Contract history](huntebr01.html#contract-history)
 
-Brandon Hunter: No verified contract record. Evidence cutoff: 2004-03-07.
+Brandon Hunter: No verified contract record. Evidence cutoff: 2004-03-08.
 
 ## Current contract
 

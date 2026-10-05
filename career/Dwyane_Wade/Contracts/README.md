@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-03-07. [Search the contract directory](index.html)
+Known through 2004-03-08. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -214,7 +214,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jarron Collins](players/collija03.md) | Utah Jazz | under contract | Jarron Collins · 2002-07-24 | 1 |
 | [Jarvis Hayes](players/hayesja01.md) | Washington Wizards | No verified contract record | No verified current agreement | 0 |
 | [Jason Caffey](players/caffeja01.md) | Milwaukee Bucks | under contract | Jason Caffey · existing contract; signing date not recorded | 1 |
-| [Jason Collier](players/collija02.md) | Atlanta Hawks | on the 2003-04 roster; contract terms not in the dated records | No verified current agreement | 1 |
+| [Jason Collier](players/collija02.md) | Atlanta Hawks | under contract | Jason Collier · 2004-03-08 | 2 |
 | [Jason Collins](players/collija04.md) | New Jersey Nets | under rookie contract | Jason Collins · 2001-07-13 | 1 |
 | [Jason Hart](players/hartja01.md) | San Antonio Spurs | No verified contract record | No verified current agreement | 0 |
 | [Jason Kapono](players/kaponja01.md) | Cleveland Cavaliers | No verified contract record | No verified current agreement | 0 |

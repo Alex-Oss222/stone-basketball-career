@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-03-07",
+  "as_of": "2004-03-08",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1860,9 +1860,9 @@
       "player_id": "collija02",
       "name": "Jason Collier",
       "team": "Atlanta Hawks",
-      "status": "on the 2003-04 roster; contract terms not in the dated records",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "collija02-2004-03-08",
+      "recorded_agreements": 2,
       "href": "players/collija02.html#contract"
     },
     {

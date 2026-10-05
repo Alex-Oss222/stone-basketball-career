@@ -2,9 +2,9 @@
 
 # Contract | Earl Boykins
 
-Known through: 2004-03-07. [Open interactive contract](boykiea01.html#contract) · [Contract history](boykiea01.html#contract-history)
+Known through: 2004-03-08. [Open interactive contract](boykiea01.html#contract) · [Contract history](boykiea01.html#contract-history)
 
-Earl Boykins: under contract. Evidence cutoff: 2004-03-07.
+Earl Boykins: under contract. Evidence cutoff: 2004-03-08.
 
 ## Current contract
 
