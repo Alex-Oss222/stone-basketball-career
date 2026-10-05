@@ -225,9 +225,9 @@
    "home_court": "Miami Heat",
    "wins": {
     "Miami Heat": 1,
-    "Milwaukee Bucks": 3
+    "Milwaukee Bucks": 4
    },
-   "winner": null,
+   "winner": "Milwaukee Bucks",
    "games": [
     {
      "game": 1,
@@ -275,7 +275,9 @@
      "home": "Miami Heat",
      "away": "Milwaukee Bucks",
      "conditional": true,
-     "event_id": "2004-04-28-milwaukee-bucks-at-miami-heat"
+     "event_id": "2004-04-28-milwaukee-bucks-at-miami-heat",
+     "result": "Milwaukee Bucks 87, Miami Heat 86",
+     "winner": "Milwaukee Bucks"
     },
     {
      "game": 6,
@@ -283,7 +285,8 @@
      "home": "Milwaukee Bucks",
      "away": "Miami Heat",
      "conditional": true,
-     "event_id": "2004-04-30-miami-heat-at-milwaukee-bucks"
+     "event_id": "2004-04-30-miami-heat-at-milwaukee-bucks",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -291,9 +294,11 @@
      "home": "Miami Heat",
      "away": "Milwaukee Bucks",
      "conditional": true,
-     "event_id": "2004-05-02-milwaukee-bucks-at-miami-heat"
+     "event_id": "2004-05-02-milwaukee-bucks-at-miami-heat",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2004-04-28"
   },
   {
    "id": "east-3-6",
@@ -310,9 +315,9 @@
    "home_court": "Detroit Pistons",
    "wins": {
     "Detroit Pistons": 1,
-    "Toronto Raptors": 3
+    "Toronto Raptors": 4
    },
-   "winner": null,
+   "winner": "Toronto Raptors",
    "games": [
     {
      "game": 1,
@@ -360,7 +365,9 @@
      "home": "Detroit Pistons",
      "away": "Toronto Raptors",
      "conditional": true,
-     "event_id": "2004-04-28-toronto-raptors-at-detroit-pistons"
+     "event_id": "2004-04-28-toronto-raptors-at-detroit-pistons",
+     "result": "Toronto Raptors 95, Detroit Pistons 86",
+     "winner": "Toronto Raptors"
     },
     {
      "game": 6,
@@ -368,7 +375,8 @@
      "home": "Toronto Raptors",
      "away": "Detroit Pistons",
      "conditional": true,
-     "event_id": "2004-04-30-detroit-pistons-at-toronto-raptors"
+     "event_id": "2004-04-30-detroit-pistons-at-toronto-raptors",
+     "not_needed": true
     },
     {
      "game": 7,
@@ -376,9 +384,11 @@
      "home": "Detroit Pistons",
      "away": "Toronto Raptors",
      "conditional": true,
-     "event_id": "2004-05-02-toronto-raptors-at-detroit-pistons"
+     "event_id": "2004-05-02-toronto-raptors-at-detroit-pistons",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2004-04-28"
   },
   {
    "id": "east-2-7",
@@ -754,7 +764,7 @@
    "home_court": "Sacramento Kings",
    "wins": {
     "Sacramento Kings": 2,
-    "Los Angeles Lakers": 2
+    "Los Angeles Lakers": 3
    },
    "winner": null,
    "games": [
@@ -804,7 +814,9 @@
      "home": "Sacramento Kings",
      "away": "Los Angeles Lakers",
      "conditional": true,
-     "event_id": "2004-04-28-los-angeles-lakers-at-sacramento-kings"
+     "event_id": "2004-04-28-los-angeles-lakers-at-sacramento-kings",
+     "result": "Los Angeles Lakers 105, Sacramento Kings 98",
+     "winner": "Los Angeles Lakers"
     },
     {
      "game": 6,
@@ -898,6 +910,83 @@
      "away": "Dallas Mavericks",
      "conditional": true,
      "event_id": "2004-05-15-dallas-mavericks-at-minnesota-timberwolves"
+    }
+   ]
+  },
+  {
+   "id": "east-semi-b",
+   "round": "conference_semifinals",
+   "conference": "East",
+   "seeds": [
+    6,
+    2
+   ],
+   "clubs": [
+    "Toronto Raptors",
+    "New Jersey Nets"
+   ],
+   "home_court": "New Jersey Nets",
+   "wins": {
+    "Toronto Raptors": 0,
+    "New Jersey Nets": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-05-03",
+     "home": "New Jersey Nets",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2004-05-03-toronto-raptors-at-new-jersey-nets"
+    },
+    {
+     "game": 2,
+     "date": "2004-05-05",
+     "home": "New Jersey Nets",
+     "away": "Toronto Raptors",
+     "conditional": false,
+     "event_id": "2004-05-05-toronto-raptors-at-new-jersey-nets"
+    },
+    {
+     "game": 3,
+     "date": "2004-05-08",
+     "home": "Toronto Raptors",
+     "away": "New Jersey Nets",
+     "conditional": false,
+     "event_id": "2004-05-08-new-jersey-nets-at-toronto-raptors"
+    },
+    {
+     "game": 4,
+     "date": "2004-05-10",
+     "home": "Toronto Raptors",
+     "away": "New Jersey Nets",
+     "conditional": false,
+     "event_id": "2004-05-10-new-jersey-nets-at-toronto-raptors"
+    },
+    {
+     "game": 5,
+     "date": "2004-05-12",
+     "home": "New Jersey Nets",
+     "away": "Toronto Raptors",
+     "conditional": true,
+     "event_id": "2004-05-12-toronto-raptors-at-new-jersey-nets"
+    },
+    {
+     "game": 6,
+     "date": "2004-05-14",
+     "home": "Toronto Raptors",
+     "away": "New Jersey Nets",
+     "conditional": true,
+     "event_id": "2004-05-14-new-jersey-nets-at-toronto-raptors"
+    },
+    {
+     "game": 7,
+     "date": "2004-05-16",
+     "home": "New Jersey Nets",
+     "away": "Toronto Raptors",
+     "conditional": true,
+     "event_id": "2004-05-16-toronto-raptors-at-new-jersey-nets"
     }
    ]
   }

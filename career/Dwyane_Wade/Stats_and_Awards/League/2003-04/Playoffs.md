@@ -37,10 +37,10 @@ EAST
   (1) Indiana Pacers           3
   (8) New Orleans Hornets      2
   (4) Miami Heat               1
-  (5) Milwaukee Bucks          3
+  (5) Milwaukee Bucks          4   -> Milwaukee Bucks
         conference semifinal: winners meet
   (3) Detroit Pistons          1
-  (6) Toronto Raptors          3
+  (6) Toronto Raptors          4   -> Toronto Raptors
   (2) New Jersey Nets          4
   (7) Atlanta Hawks            1   -> New Jersey Nets
         conference semifinal: winners meet
@@ -55,7 +55,7 @@ WEST
   (3) San Antonio Spurs        4
   (6) Golden State Warriors    1   -> San Antonio Spurs
   (2) Sacramento Kings         2
-  (7) Los Angeles Lakers       2
+  (7) Los Angeles Lakers       3
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
@@ -79,7 +79,7 @@ Home court: Indiana Pacers. Series Indiana Pacers 3, New Orleans Hornets 2.
 
 ### East: (4) Miami Heat vs (5) Milwaukee Bucks
 
-Home court: Miami Heat. Series Miami Heat 1, Milwaukee Bucks 3.
+Home court: Miami Heat. Milwaukee Bucks wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -87,13 +87,13 @@ Home court: Miami Heat. Series Miami Heat 1, Milwaukee Bucks 3.
 | 2 | Wed Apr 21 | Miami Heat | Milwaukee Bucks | Milwaukee Bucks 105, Miami Heat 95 |
 | 3 | Sat Apr 24 | Milwaukee Bucks | Miami Heat | Miami Heat 99, Milwaukee Bucks 96 |
 | 4 | Mon Apr 26 | Milwaukee Bucks | Miami Heat | Miami Heat 81, Milwaukee Bucks 95 |
-| 5 | Wed Apr 28 | Miami Heat | Milwaukee Bucks | if needed |
-| 6 | Fri Apr 30 | Milwaukee Bucks | Miami Heat | if needed |
-| 7 | Sun May 2 | Miami Heat | Milwaukee Bucks | if needed |
+| 5 | Wed Apr 28 | Miami Heat | Milwaukee Bucks | Milwaukee Bucks 87, Miami Heat 86 |
+| 6 | Fri Apr 30 | Milwaukee Bucks | Miami Heat | not needed |
+| 7 | Sun May 2 | Miami Heat | Milwaukee Bucks | not needed |
 
 ### East: (3) Detroit Pistons vs (6) Toronto Raptors
 
-Home court: Detroit Pistons. Series Detroit Pistons 1, Toronto Raptors 3.
+Home court: Detroit Pistons. Toronto Raptors wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -101,9 +101,9 @@ Home court: Detroit Pistons. Series Detroit Pistons 1, Toronto Raptors 3.
 | 2 | Wed Apr 21 | Detroit Pistons | Toronto Raptors | Toronto Raptors 94, Detroit Pistons 87 |
 | 3 | Sat Apr 24 | Toronto Raptors | Detroit Pistons | Detroit Pistons 69, Toronto Raptors 84 |
 | 4 | Mon Apr 26 | Toronto Raptors | Detroit Pistons | Detroit Pistons 72, Toronto Raptors 86 |
-| 5 | Wed Apr 28 | Detroit Pistons | Toronto Raptors | if needed |
-| 6 | Fri Apr 30 | Toronto Raptors | Detroit Pistons | if needed |
-| 7 | Sun May 2 | Detroit Pistons | Toronto Raptors | if needed |
+| 5 | Wed Apr 28 | Detroit Pistons | Toronto Raptors | Toronto Raptors 95, Detroit Pistons 86 |
+| 6 | Fri Apr 30 | Toronto Raptors | Detroit Pistons | not needed |
+| 7 | Sun May 2 | Detroit Pistons | Toronto Raptors | not needed |
 
 ### East: (2) New Jersey Nets vs (7) Atlanta Hawks
 
@@ -163,7 +163,7 @@ Home court: San Antonio Spurs. San Antonio Spurs wins 4-1.
 
 ### West: (2) Sacramento Kings vs (7) Los Angeles Lakers
 
-Home court: Sacramento Kings. Series Sacramento Kings 2, Los Angeles Lakers 2.
+Home court: Sacramento Kings. Series Sacramento Kings 2, Los Angeles Lakers 3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -171,7 +171,7 @@ Home court: Sacramento Kings. Series Sacramento Kings 2, Los Angeles Lakers 2.
 | 2 | Wed Apr 21 | Sacramento Kings | Los Angeles Lakers | Los Angeles Lakers 79, Sacramento Kings 88 |
 | 3 | Sat Apr 24 | Los Angeles Lakers | Sacramento Kings | Sacramento Kings 103, Los Angeles Lakers 84 |
 | 4 | Mon Apr 26 | Los Angeles Lakers | Sacramento Kings | Sacramento Kings 100, Los Angeles Lakers 103 |
-| 5 | Wed Apr 28 | Sacramento Kings | Los Angeles Lakers | if needed |
+| 5 | Wed Apr 28 | Sacramento Kings | Los Angeles Lakers | Los Angeles Lakers 105, Sacramento Kings 98 |
 | 6 | Fri Apr 30 | Los Angeles Lakers | Sacramento Kings | if needed |
 | 7 | Sun May 2 | Sacramento Kings | Los Angeles Lakers | if needed |
 
@@ -190,3 +190,17 @@ Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 0, Dallas Mave
 | 5 | Tue May 11 | Minnesota Timberwolves | Dallas Mavericks | if needed |
 | 6 | Thu May 13 | Dallas Mavericks | Minnesota Timberwolves | if needed |
 | 7 | Sat May 15 | Minnesota Timberwolves | Dallas Mavericks | if needed |
+
+### East: (6) Toronto Raptors vs (2) New Jersey Nets
+
+Home court: New Jersey Nets. Series Toronto Raptors 0, New Jersey Nets 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Mon May 3 | New Jersey Nets | Toronto Raptors |  |
+| 2 | Wed May 5 | New Jersey Nets | Toronto Raptors |  |
+| 3 | Sat May 8 | Toronto Raptors | New Jersey Nets |  |
+| 4 | Mon May 10 | Toronto Raptors | New Jersey Nets |  |
+| 5 | Wed May 12 | New Jersey Nets | Toronto Raptors | if needed |
+| 6 | Fri May 14 | Toronto Raptors | New Jersey Nets | if needed |
+| 7 | Sun May 16 | New Jersey Nets | Toronto Raptors | if needed |
