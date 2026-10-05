@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2004-03-01 · Miami Heat · active
+Career date: 2004-03-02 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,7 +14,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2004-03-01 |
+| Career date | 2004-03-02 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
@@ -25,11 +25,11 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2004-03-01 | Current checkpoint | 2004-02-29-miami-heat-at-milwaukee-bucks | Recorded | [Owning event](../2003-04/06_Regular_Season/02_February/Week_4/note.md) |
+| 2004-03-02 | Current checkpoint | 2004-02-29-miami-heat-at-milwaukee-bucks | Recorded | [Owning event](../2003-04/06_Regular_Season/03_March/Week_1/note.md) |
 | 2003-07-19 | Rookie contract signed | Player and club | complete | [Contract desk](index.html#contract_negotiation) |
 | 2003-09-30 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2004-03-02 | Next Miami game, vs Toronto Raptors | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
-| 2004-03-02 | League awards announced: Player of the Month, Rookie of the Month | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
+| 2004-03-04 | Next Miami game, vs Milwaukee Bucks | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
+| 2004-03-08 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2004-03-12 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | By 2005-10-31 | Fourth-year (2006-07) team option on the rookie contract | Miami decides | Scheduled gate; no outcome implied | [Contract](index.html#contract_negotiation) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
@@ -58,7 +58,7 @@ Activation: The authoritative current date and recorded event determine what is 
 
 ## Available response paths
 
-- [Open the current event](../2003-04/06_Regular_Season/02_February/Week_4/note.md): Read the owning career note and record the player's actual response when one is due.
+- [Open the current event](../2003-04/06_Regular_Season/03_March/Week_1/note.md): Read the owning career note and record the player's actual response when one is due.
 - [Record your authorized reply](../../../docs/live_player_milestones.md): Use the dated source and current record version; a browser visit does not submit a decision.
 
 ## Next checkpoint
@@ -70,7 +70,7 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Authoritative career checkpoint](../2003-04/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2003-04/06_Regular_Season/02_February/Week_4/note.md)
+- [Owning event](../2003-04/06_Regular_Season/03_March/Week_1/note.md)
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)

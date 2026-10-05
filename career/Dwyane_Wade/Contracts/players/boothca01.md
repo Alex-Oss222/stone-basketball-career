@@ -2,9 +2,9 @@
 
 # Contract | Calvin Booth
 
-Known through: 2004-03-01. [Open interactive contract](boothca01.html#contract) · [Contract history](boothca01.html#contract-history)
+Known through: 2004-03-02. [Open interactive contract](boothca01.html#contract) · [Contract history](boothca01.html#contract-history)
 
-Calvin Booth: under contract. Evidence cutoff: 2004-03-01.
+Calvin Booth: under contract. Evidence cutoff: 2004-03-02.
 
 ## Current contract
 

@@ -2508,6 +2508,24 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.68 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-03-02-expire-brunsri01",
+   "date": "2004-03-02",
+   "kind": "expire",
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": "Milwaukee Bucks",
+   "to": null,
+   "role": {
+    "player_id": "Rick Brunson",
+    "bbr_id": "brunsri01",
+    "position": "PG",
+    "games": 40,
+    "minutes": 412
+   },
+   "contract": null,
+   "note": "10-day contract ended (3.8 minutes a game)"
   }
  ]
 }

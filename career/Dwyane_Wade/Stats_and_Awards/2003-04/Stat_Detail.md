@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2004-03-01](../../assets/stat_reports/personal_2004-03-01.svg)
+![Player personal information and earned career awards through 2004-03-02](../../assets/stat_reports/personal_2004-03-02.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2004-03-01; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-03-02; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -44,10 +44,11 @@ Identity as of 2004-03-01; status snapshot dated 2003-12-01. User-established al
 | Eastern Conference Player of the Week | 2003-12-29 to 2004-01-04 | 2004-01-05 | [East POW](../League/2003-04/01_January/Week_1/League_Awards.md#player-of-the-week) |
 | Eastern Conference Player of the Month | 2004-01-01 to 2004-01-31 | 2004-02-02 | [East POM](../League/2003-04/01_January/League_Awards.md#player-of-the-month) |
 | Eastern Conference Rookie of the Month | 2004-01-01 to 2004-01-31 | 2004-02-02 | [East ROM](../League/2003-04/01_January/League_Awards.md#rookie-of-the-month) |
+| Eastern Conference Rookie of the Month | 2004-02-01 to 2004-02-29 | 2004-03-02 | [East ROM](../League/2003-04/02_February/League_Awards.md#rookie-of-the-month) |
 
 ## Statistics
 
-As of **2004-03-01**: 60 closed games; 57/60 have player participation and box coverage; recorded DNPs: 0.
+As of **2004-03-02**: 60 closed games; 57/60 have player participation and box coverage; recorded DNPs: 0.
 
 **Incomplete source coverage.** Full-period totals and rates are N/A until every closed game has a verified player box or explicit DNP. Known games remain visible below.
 
@@ -61,11 +62,11 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| This scope | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | [East ROM](../League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](../League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week), [East POM](../League/2003-04/12_December/League_Awards.md#player-of-the-month), [East ROM](../League/2003-04/12_December/League_Awards.md#rookie-of-the-month), [East POW](../League/2003-04/01_January/Week_1/League_Awards.md#player-of-the-week), [East POM](../League/2003-04/01_January/League_Awards.md#player-of-the-month), [East ROM](../League/2003-04/01_January/League_Awards.md#rookie-of-the-month) |
+| This scope | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | [East ROM](../League/2003-04/11_November/League_Awards.md#rookie-of-the-month), [East POW](../League/2003-04/12_December/Week_3/League_Awards.md#player-of-the-week), [East POM](../League/2003-04/12_December/League_Awards.md#player-of-the-month), [East ROM](../League/2003-04/12_December/League_Awards.md#rookie-of-the-month), [East POW](../League/2003-04/01_January/Week_1/League_Awards.md#player-of-the-week), [East POM](../League/2003-04/01_January/League_Awards.md#player-of-the-month), [East ROM](../League/2003-04/01_January/League_Awards.md#rookie-of-the-month), [East ROM](../League/2003-04/02_February/League_Awards.md#rookie-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-03-01, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-03-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -134,7 +135,7 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-03-01, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-03-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
 
@@ -213,6 +214,7 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2004-02-23](../../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md) | Portland Trail Blazers | home | W 113-104 | Unknown: missing player box | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [2004-02-28](../../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md) | New Jersey Nets | away | L 77-94 | Unknown: missing player box | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [2004-02-29](../../2003-04/06_Regular_Season/02_February/Week_4/Game_3.md) | Milwaukee Bucks | away | L 74-85 | Unknown: missing player box | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [2004-03-02](../../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md) | Toronto Raptors | home | Not played | scheduled | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ### Individual game boxes
 
@@ -278,10 +280,11 @@ Splits overlap and are not additive. Each row has its own appearance denominator
 | [2004-02-23](../../2003-04/06_Regular_Season/02_February/Week_4/Game_1.md) | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [2004-02-28](../../2003-04/06_Regular_Season/02_February/Week_4/Game_2.md) | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 | [2004-02-29](../../2003-04/06_Regular_Season/02_February/Week_4/Game_3.md) | 20 | Miami Heat | NBA | SG / PG | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [2004-03-02](../../2003-04/06_Regular_Season/03_March/Week_1/Game_1.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-03-01, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-03-02, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Game shooting detail
 
