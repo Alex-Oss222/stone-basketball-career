@@ -1,0 +1,13 @@
+{
+ "event_id": "2004-fa-2004-07-15-nenad-krsti",
+ "date": "2004-07-15",
+ "question": "2004 free agency, 2004-07-15: which offer does Nenad Krstić accept (Los Angeles Lakers $385,277 x 1, New Jersey Nets $385,277 x 1, San Antonio Spurs $385,277 x 1), or does he wait?",
+ "decider": "Nenad Krstić (simulated player, engine draw)",
+ "options": {
+  "Los Angeles Lakers": 0.233971,
+  "New Jersey Nets": 0.113886,
+  "San Antonio Spurs": 0.122143,
+  "wait": 0.53
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.470; priority loyalty; utility Los Angeles Lakers 53.7, New Jersey Nets 50.8, San Antonio Spurs 51.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

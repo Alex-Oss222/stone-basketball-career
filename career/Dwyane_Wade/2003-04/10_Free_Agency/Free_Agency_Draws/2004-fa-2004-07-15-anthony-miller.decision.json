@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-fa-2004-07-15-anthony-miller",
+ "date": "2004-07-15",
+ "question": "2004 free agency, 2004-07-15: which offer does Anthony Miller accept (Los Angeles Lakers $1,100,000 x 1, San Antonio Spurs $1,100,000 x 1), or does he wait?",
+ "decider": "Anthony Miller (simulated player, engine draw)",
+ "options": {
+  "Los Angeles Lakers": 0.308,
+  "San Antonio Spurs": 0.162,
+  "wait": 0.53
+ },
+ "basis": "Ask $1,100,000; best offer 1.00 of the ask in total; accept chance 0.470; priority winning; utility Los Angeles Lakers 54.0, San Antonio Spurs 51.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

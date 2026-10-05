@@ -1,0 +1,17 @@
+{
+ "date": "2004-07-15",
+ "decider": "Corsley Edwards (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-15-corsley-edwards",
+ "kind": "decision",
+ "options": {
+  "Milwaukee Bucks": 0.05412,
+  "New Orleans Hornets": 0.05412,
+  "Sacramento Kings": 0.046815,
+  "Seattle SuperSonics": 0.142765,
+  "Toronto Raptors": 0.118061,
+  "Utah Jazz": 0.05412,
+  "wait": 0.529999
+ },
+ "outcome": "Seattle SuperSonics",
+ "question": "2004 free agency, 2004-07-15: which offer does Corsley Edwards accept (Milwaukee Bucks $385,277 x 1, New Orleans Hornets $385,277 x 1, Sacramento Kings $385,277 x 1, Seattle SuperSonics $385,277 x 1, Toronto Raptors $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?"
+}

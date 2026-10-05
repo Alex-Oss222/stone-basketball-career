@@ -1,0 +1,15 @@
+{
+ "date": "2004-07-15",
+ "decider": "John Edwards (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-15-john-edwards",
+ "kind": "decision",
+ "options": {
+  "Milwaukee Bucks": 0.081914,
+  "Sacramento Kings": 0.084619,
+  "Toronto Raptors": 0.221554,
+  "Utah Jazz": 0.081914,
+  "wait": 0.529999
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-15: which offer does John Edwards accept (Milwaukee Bucks $385,277 x 1, Sacramento Kings $385,277 x 1, Toronto Raptors $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?"
+}

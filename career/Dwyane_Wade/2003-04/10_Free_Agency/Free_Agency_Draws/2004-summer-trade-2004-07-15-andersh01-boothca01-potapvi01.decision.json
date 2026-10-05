@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-summer-trade-2004-07-15-andersh01-boothca01-potapvi01",
+ "date": "2004-07-15",
+ "question": "Do Golden State Warriors and Seattle SuperSonics trade Shandon Anderson for Vitaly Potapenko and Calvin Booth on 2004-07-15?",
+ "decider": "Golden State Warriors and Seattle SuperSonics front offices (engine draw)",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "basis": "Gains on own objectives {'Golden State Warriors': 0.368, 'Seattle SuperSonics': 0.275}; acceptance {'Golden State Warriors': 0.95, 'Seattle SuperSonics': 0.95}; 1999 salary rule met (runtime/free_agency_2004.py summer trades)."
+}

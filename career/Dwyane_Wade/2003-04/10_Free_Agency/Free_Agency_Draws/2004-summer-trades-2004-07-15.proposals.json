@@ -1,0 +1,85 @@
+{
+ "schema_version": 1,
+ "date": "2004-07-15",
+ "rule": "runtime/free_agency_2004.py Market.trade_proposals",
+ "deals": [
+  {
+   "date": "2004-07-15",
+   "clubs": [
+    "Denver Nuggets",
+    "Minnesota Timberwolves"
+   ],
+   "a": {
+    "club": "Denver Nuggets",
+    "sends": [
+     "Tony Delk"
+    ],
+    "bbr_ids": [
+     "delkto01"
+    ],
+    "salary": 3150000
+   },
+   "b": {
+    "club": "Minnesota Timberwolves",
+    "sends": [
+     "Wally Szczerbiak",
+     "Mark Madsen"
+    ],
+    "bbr_ids": [
+     "szczewa02",
+     "madsema01"
+    ],
+    "salary": 9745046
+   },
+   "gain": {
+    "Denver Nuggets": 0.743,
+    "Minnesota Timberwolves": 0.651
+   },
+   "accept": {
+    "Denver Nuggets": 0.95,
+    "Minnesota Timberwolves": 0.95
+   },
+   "both": 0.9025,
+   "id": "2004-summer-trade-2004-07-15-delkto01-madsema01-szczewa02"
+  },
+  {
+   "date": "2004-07-15",
+   "clubs": [
+    "Golden State Warriors",
+    "Seattle SuperSonics"
+   ],
+   "a": {
+    "club": "Golden State Warriors",
+    "sends": [
+     "Shandon Anderson"
+    ],
+    "bbr_ids": [
+     "andersh01"
+    ],
+    "salary": 7300000
+   },
+   "b": {
+    "club": "Seattle SuperSonics",
+    "sends": [
+     "Vitaly Potapenko",
+     "Calvin Booth"
+    ],
+    "bbr_ids": [
+     "potapvi01",
+     "boothca01"
+    ],
+    "salary": 12091950
+   },
+   "gain": {
+    "Golden State Warriors": 0.368,
+    "Seattle SuperSonics": 0.275
+   },
+   "accept": {
+    "Golden State Warriors": 0.95,
+    "Seattle SuperSonics": 0.95
+   },
+   "both": 0.9025,
+   "id": "2004-summer-trade-2004-07-15-andersh01-boothca01-potapvi01"
+  }
+ ]
+}

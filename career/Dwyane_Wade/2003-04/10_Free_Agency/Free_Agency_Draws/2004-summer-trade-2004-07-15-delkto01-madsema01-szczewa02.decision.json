@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-summer-trade-2004-07-15-delkto01-madsema01-szczewa02",
+ "date": "2004-07-15",
+ "question": "Do Denver Nuggets and Minnesota Timberwolves trade Tony Delk for Wally Szczerbiak and Mark Madsen on 2004-07-15?",
+ "decider": "Denver Nuggets and Minnesota Timberwolves front offices (engine draw)",
+ "options": {
+  "accept": 0.9025,
+  "decline": 0.0975
+ },
+ "basis": "Gains on own objectives {'Denver Nuggets': 0.743, 'Minnesota Timberwolves': 0.651}; acceptance {'Denver Nuggets': 0.95, 'Minnesota Timberwolves': 0.95}; 1999 salary rule met (runtime/free_agency_2004.py summer trades)."
+}

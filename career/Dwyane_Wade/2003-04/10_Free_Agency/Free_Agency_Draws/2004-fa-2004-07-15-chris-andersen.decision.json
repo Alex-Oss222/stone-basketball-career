@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-15-chris-andersen",
+ "date": "2004-07-15",
+ "question": "2004 free agency, 2004-07-15: which offer does Chris Andersen accept (Orlando Magic $1,629,154 x 5), or does he wait?",
+ "decider": "Chris Andersen (simulated player, engine draw)",
+ "options": {
+  "Orlando Magic": 0.443173,
+  "wait": 0.556827
+ },
+ "basis": "Ask $1,651,480; best offer 0.99 of the ask in total; accept chance 0.443; priority money; utility Orlando Magic 72.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

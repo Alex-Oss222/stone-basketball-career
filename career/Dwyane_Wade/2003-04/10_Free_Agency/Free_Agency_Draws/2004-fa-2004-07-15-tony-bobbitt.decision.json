@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-15-tony-bobbitt",
+ "date": "2004-07-15",
+ "question": "2004 free agency, 2004-07-15: which offer does Tony Bobbitt accept (Minnesota Timberwolves $385,277 x 1), or does he wait?",
+ "decider": "Tony Bobbitt (simulated player, engine draw)",
+ "options": {
+  "Minnesota Timberwolves": 0.47,
+  "wait": 0.53
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.470; priority winning; utility Minnesota Timberwolves 51.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

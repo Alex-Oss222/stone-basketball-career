@@ -1,0 +1,19 @@
+{
+ "event_id": "2004-fa-2004-07-15-mark-jones",
+ "date": "2004-07-15",
+ "question": "2004 free agency, 2004-07-15: which offer does Mark Jones accept (Chicago Bulls $385,277 x 1, Detroit Pistons $385,277 x 1, Houston Rockets $385,277 x 1, Los Angeles Lakers $385,277 x 1, New Jersey Nets $385,277 x 1, New York Knicks $385,277 x 1, Portland Trail Blazers $385,277 x 1, San Antonio Spurs $385,277 x 1, Washington Wizards $385,277 x 1), or does he wait?",
+ "decider": "Mark Jones (simulated player, engine draw)",
+ "options": {
+  "Chicago Bulls": 0.014014,
+  "Detroit Pistons": 0.082688,
+  "Houston Rockets": 0.015566,
+  "Los Angeles Lakers": 0.087145,
+  "New Jersey Nets": 0.052199,
+  "New York Knicks": 0.087145,
+  "Portland Trail Blazers": 0.052199,
+  "San Antonio Spurs": 0.070815,
+  "Washington Wizards": 0.008228,
+  "wait": 0.530001
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.470; priority money; utility Chicago Bulls 39.8, Detroit Pistons 46.9, Houston Rockets 40.2, Los Angeles Lakers 47.1, New Jersey Nets 45.0, New York Knicks 47.1, Portland Trail Blazers 45.0, San Antonio Spurs 46.2, Washington Wizards 37.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

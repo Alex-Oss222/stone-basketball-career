@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-15",
+ "decider": "Slava Medvedenko (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-15-slava-medvedenko",
+ "kind": "decision",
+ "options": {
+  "Detroit Pistons": 0.47,
+  "wait": 0.53
+ },
+ "outcome": "Detroit Pistons",
+ "question": "2004 free agency, 2004-07-15: which offer does Slava Medvedenko accept (Detroit Pistons $3,542,166 x 5), or does he wait?"
+}

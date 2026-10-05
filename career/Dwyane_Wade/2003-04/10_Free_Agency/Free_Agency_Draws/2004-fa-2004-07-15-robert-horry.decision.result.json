@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-15",
+ "decider": "Robert Horry (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-15-robert-horry",
+ "kind": "decision",
+ "options": {
+  "New Jersey Nets": 0.333441,
+  "wait": 0.666559
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-15: which offer does Robert Horry accept (New Jersey Nets $1,235,972 x 2), or does he wait?"
+}

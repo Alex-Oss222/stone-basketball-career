@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-15-brian-cardinal",
+ "date": "2004-07-15",
+ "question": "2004 free agency, 2004-07-15: which offer does Brian Cardinal accept (Chicago Bulls $3,875,924 x 4), or does he wait?",
+ "decider": "Brian Cardinal (simulated player, engine draw)",
+ "options": {
+  "Chicago Bulls": 0.431033,
+  "wait": 0.568967
+ },
+ "basis": "Ask $3,953,761; best offer 0.98 of the ask in total; accept chance 0.431; priority money; utility Chicago Bulls 71.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

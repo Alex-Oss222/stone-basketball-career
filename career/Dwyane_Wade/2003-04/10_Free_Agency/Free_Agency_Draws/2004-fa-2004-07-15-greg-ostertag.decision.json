@@ -1,0 +1,13 @@
+{
+ "event_id": "2004-fa-2004-07-15-greg-ostertag",
+ "date": "2004-07-15",
+ "question": "2004 free agency, 2004-07-15: which offer does Greg Ostertag accept (Memphis Grizzlies $4,903,000 x 3, Seattle SuperSonics $4,903,000 x 3, Toronto Raptors $5,734,440 x 3), or does he wait?",
+ "decider": "Greg Ostertag (simulated player, engine draw)",
+ "options": {
+  "Memphis Grizzlies": 0.106765,
+  "Seattle SuperSonics": 0.182752,
+  "Toronto Raptors": 0.180482,
+  "wait": 0.530001
+ },
+ "basis": "Ask $5,734,440; best offer 1.00 of the ask in total; accept chance 0.470; priority winning; utility Memphis Grizzlies 58.8, Seattle SuperSonics 60.9, Toronto Raptors 60.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

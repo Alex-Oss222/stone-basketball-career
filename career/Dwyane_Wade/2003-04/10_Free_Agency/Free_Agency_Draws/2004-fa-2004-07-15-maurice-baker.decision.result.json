@@ -1,0 +1,13 @@
+{
+ "date": "2004-07-15",
+ "decider": "Maurice Baker (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-15-maurice-baker",
+ "kind": "decision",
+ "options": {
+  "Miami Heat": 0.282229,
+  "Minnesota Timberwolves": 0.187771,
+  "wait": 0.53
+ },
+ "outcome": "Miami Heat",
+ "question": "2004 free agency, 2004-07-15: which offer does Maurice Baker accept (Miami Heat $385,277 x 1, Minnesota Timberwolves $385,277 x 1), or does he wait?"
+}

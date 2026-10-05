@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-fa-2004-07-15-maurice-baker",
+ "date": "2004-07-15",
+ "question": "2004 free agency, 2004-07-15: which offer does Maurice Baker accept (Miami Heat $385,277 x 1, Minnesota Timberwolves $385,277 x 1), or does he wait?",
+ "decider": "Maurice Baker (simulated player, engine draw)",
+ "options": {
+  "Miami Heat": 0.282229,
+  "Minnesota Timberwolves": 0.187771,
+  "wait": 0.53
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.470; priority winning; utility Miami Heat 52.7, Minnesota Timberwolves 51.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

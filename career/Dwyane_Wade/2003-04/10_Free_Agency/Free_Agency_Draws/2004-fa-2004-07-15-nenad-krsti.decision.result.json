@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-15",
+ "decider": "Nenad Krsti\u0107 (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-15-nenad-krsti",
+ "kind": "decision",
+ "options": {
+  "Los Angeles Lakers": 0.233971,
+  "New Jersey Nets": 0.113886,
+  "San Antonio Spurs": 0.122143,
+  "wait": 0.53
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-15: which offer does Nenad Krsti\u0107 accept (Los Angeles Lakers $385,277 x 1, New Jersey Nets $385,277 x 1, San Antonio Spurs $385,277 x 1), or does he wait?"
+}

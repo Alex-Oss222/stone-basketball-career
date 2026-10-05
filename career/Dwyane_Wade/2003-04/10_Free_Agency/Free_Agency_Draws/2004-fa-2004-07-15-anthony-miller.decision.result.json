@@ -1,0 +1,13 @@
+{
+ "date": "2004-07-15",
+ "decider": "Anthony Miller (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-15-anthony-miller",
+ "kind": "decision",
+ "options": {
+  "Los Angeles Lakers": 0.308,
+  "San Antonio Spurs": 0.162,
+  "wait": 0.53
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-15: which offer does Anthony Miller accept (Los Angeles Lakers $1,100,000 x 1, San Antonio Spurs $1,100,000 x 1), or does he wait?"
+}

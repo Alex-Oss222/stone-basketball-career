@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-15-brent-barry",
+ "date": "2004-07-15",
+ "question": "2004 free agency, 2004-07-15: which offer does Brent Barry accept (Milwaukee Bucks $5,046,356 x 3), or does he wait?",
+ "decider": "Brent Barry (simulated player, engine draw)",
+ "options": {
+  "Milwaukee Bucks": 0.075288,
+  "wait": 0.924712
+ },
+ "basis": "Ask $7,193,682; best offer 0.70 of the ask in total; accept chance 0.075; priority loyalty; utility Milwaukee Bucks 54.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-15-slava-medvedenko",
+ "date": "2004-07-15",
+ "question": "2004 free agency, 2004-07-15: which offer does Slava Medvedenko accept (Detroit Pistons $3,542,166 x 5), or does he wait?",
+ "decider": "Slava Medvedenko (simulated player, engine draw)",
+ "options": {
+  "Detroit Pistons": 0.47,
+  "wait": 0.53
+ },
+ "basis": "Ask $3,542,166; best offer 1.00 of the ask in total; accept chance 0.470; priority fame; utility Detroit Pistons 71.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

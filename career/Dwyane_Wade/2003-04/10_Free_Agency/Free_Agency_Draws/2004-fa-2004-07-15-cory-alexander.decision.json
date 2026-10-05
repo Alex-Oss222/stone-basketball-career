@@ -1,0 +1,15 @@
+{
+ "event_id": "2004-fa-2004-07-15-cory-alexander",
+ "date": "2004-07-15",
+ "question": "2004 free agency, 2004-07-15: which offer does Cory Alexander accept (Atlanta Hawks $1,000,000 x 1, Denver Nuggets $1,000,000 x 1, Golden State Warriors $1,000,000 x 1, Miami Heat $1,000,000 x 1, Minnesota Timberwolves $1,000,000 x 1), or does he wait?",
+ "decider": "Cory Alexander (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.129531,
+  "Denver Nuggets": 0.080152,
+  "Golden State Warriors": 0.058787,
+  "Miami Heat": 0.121379,
+  "Minnesota Timberwolves": 0.080152,
+  "wait": 0.529999
+ },
+ "basis": "Ask $1,000,000; best offer 1.00 of the ask in total; accept chance 0.470; priority loyalty; utility Atlanta Hawks 52.7, Denver Nuggets 50.8, Golden State Warriors 49.5, Miami Heat 52.4, Minnesota Timberwolves 50.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
