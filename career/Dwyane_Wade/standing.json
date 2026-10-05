@@ -55,6 +55,24 @@
     "statistics": {}
    },
    "source": "Stats_and_Awards/League/2003-04/Season_Awards.md"
+  },
+  {
+   "as_of": "2004-04-27",
+   "standing": "rookie",
+   "trigger": "honor_recorded",
+   "basis": {
+    "closed_seasons": [],
+    "window": [],
+    "starter_lines": {},
+    "honors": [],
+    "conflicts": [],
+    "ignored_honors": [],
+    "rule": "no closed season",
+    "signed_date": "2003-07-21",
+    "season_folder": "2003-04",
+    "statistics": {}
+   },
+   "source": "Stats_and_Awards/League/2003-04/Season_Awards.md"
   }
  ]
 }

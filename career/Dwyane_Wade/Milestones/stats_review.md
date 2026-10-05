@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-04-26 · Miami Heat · active
+Career date: 2004-04-27 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-92 closed game records in 2003-04 through 2004-04-26. Competitions remain separate.
+93 closed game records in 2003-04 through 2004-04-27. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -14,7 +14,7 @@ Activation: A declared, closed game result supplies observed participation and t
 
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| playoff | 0 | N/A | N/A | N/A | N/A | N/A | Complete |
+| playoff | 1 | 24.8 | 9.0 | 2.0 | 5.0 | 1.0 | Complete |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A | Missing source coverage |
 | regular | 75 | 35.0 | 17.9 | 4.8 | 4.5 | 1.1 | Complete |
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
-| playoff | 0 | 0 | N/A | 0 | 0 | N/A |
+| playoff | 3 | 6 | 0.500 | 1 | 1 | 1.0 |
 | preseason | N/A | N/A | N/A | N/A | N/A | N/A |
 | regular | 457 | 879 | 0.520 | 71 | 179 | 0.397 |
 
@@ -124,6 +124,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-04-18 | playoff | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/08_Playoffs/First_Round/Game_1.md) |
 | 2004-04-21 | playoff | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/08_Playoffs/First_Round/Game_2.md) |
 | 2004-04-24 | playoff | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/08_Playoffs/First_Round/Game_3.md) |
+| 2004-04-26 | playoff | Milwaukee Bucks | Played | [Closed game](../2003-04/08_Playoffs/First_Round/Game_4.md) |
 
 ## Evidence available for decisions
 
@@ -263,4 +264,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_1.md)
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_2.md)
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_3.md)
+- [Closed game](../2003-04/08_Playoffs/First_Round/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)

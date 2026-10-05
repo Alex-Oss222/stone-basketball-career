@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2004-04-26](../../../assets/stat_reports/personal_2004-04-26.svg)
+![Player personal information and earned career awards through 2004-04-27](../../../assets/stat_reports/personal_2004-04-27.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2004-04-26; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-04-27; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -51,10 +51,11 @@ Identity as of 2004-04-26; status snapshot dated 2003-12-01. User-established al
 | Eastern Conference Rookie of the Month | 2004-04-01 to 2004-04-14 | 2004-04-16 | [East ROM](../../../Stats_and_Awards/League/2003-04/04_April/League_Awards.md#rookie-of-the-month) |
 | Rookie of the Year | 2003-10-28 to 2004-04-14 | 2004-04-20 | [ROY](../../../Stats_and_Awards/League/2003-04/Season_Awards.md#rookie-of-the-year) |
 | All-NBA First Team | 2003-10-28 to 2004-04-14 | 2004-04-25 | [All-NBA 1st](../../../Stats_and_Awards/League/2003-04/Season_Awards.md#all-nba-teams) |
+| All-Rookie First Team | 2003-10-28 to 2004-04-14 | 2004-04-27 | [All-Rookie 1st](../../../Stats_and_Awards/League/2003-04/Season_Awards.md#all-rookie-teams) |
 
 ## Statistics
 
-As of **2004-04-26**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2004-04-27**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -72,7 +73,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-04-26, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-04-27, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](Stat_Detail.md)
 

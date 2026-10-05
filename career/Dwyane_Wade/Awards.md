@@ -4,7 +4,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2004-04-26](assets/stat_reports/personal_2004-04-26.svg)
+![Player personal information and earned career awards through 2004-04-27](assets/stat_reports/personal_2004-04-27.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -29,7 +29,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2004-04-26; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-04-27; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -49,6 +49,7 @@ Identity as of 2004-04-26; status snapshot dated 2003-12-01. User-established al
 | Eastern Conference Rookie of the Month | 2004-04-01 to 2004-04-14 | 2004-04-16 | [East ROM](Stats_and_Awards/League/2003-04/04_April/League_Awards.md#rookie-of-the-month) |
 | Rookie of the Year | 2003-10-28 to 2004-04-14 | 2004-04-20 | [ROY](Stats_and_Awards/League/2003-04/Season_Awards.md#rookie-of-the-year) |
 | All-NBA First Team | 2003-10-28 to 2004-04-14 | 2004-04-25 | [All-NBA 1st](Stats_and_Awards/League/2003-04/Season_Awards.md#all-nba-teams) |
+| All-Rookie First Team | 2003-10-28 to 2004-04-14 | 2004-04-27 | [All-Rookie 1st](Stats_and_Awards/League/2003-04/Season_Awards.md#all-rookie-teams) |
 
 ## Statistics
 
@@ -70,5 +71,6 @@ Identity as of 2004-04-26; status snapshot dated 2003-12-01. User-established al
 | Eastern Conference Rookie of the Month | NBA regular season | 2003-04 | 2004-04-01 to 2004-04-14 | 2004-04-16 | [East ROM](Stats_and_Awards/League/2003-04/04_April/League_Awards.md#rookie-of-the-month) |
 | Rookie of the Year | NBA regular season | 2003-04 | 2003-10-28 to 2004-04-14 | 2004-04-20 | [ROY](Stats_and_Awards/League/2003-04/Season_Awards.md#rookie-of-the-year) |
 | All-NBA First Team | NBA regular season | 2003-04 | 2003-10-28 to 2004-04-14 | 2004-04-25 | [All-NBA 1st](Stats_and_Awards/League/2003-04/Season_Awards.md#all-nba-teams) |
+| All-Rookie First Team | NBA regular season | 2003-04 | 2003-10-28 to 2004-04-14 | 2004-04-27 | [All-Rookie 1st](Stats_and_Awards/League/2003-04/Season_Awards.md#all-rookie-teams) |
 
 [Award source and date rules](../../docs/player_statistics.md)

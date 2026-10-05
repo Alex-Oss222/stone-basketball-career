@@ -168,6 +168,18 @@
       "period_end": "2004-04-14",
       "awarded_on": "2004-04-25",
       "source": "Stats_and_Awards/League/2003-04/Season_Awards.md#all-nba-teams"
+    },
+    {
+      "id": "2003-04-all_rookie-first",
+      "name": "All-Rookie First Team",
+      "short_name": "All-Rookie 1st",
+      "status": "earned",
+      "competition": "regular",
+      "season": "2003-04",
+      "period_start": "2003-10-28",
+      "period_end": "2004-04-14",
+      "awarded_on": "2004-04-27",
+      "source": "Stats_and_Awards/League/2003-04/Season_Awards.md#all-rookie-teams"
     }
   ]
 }

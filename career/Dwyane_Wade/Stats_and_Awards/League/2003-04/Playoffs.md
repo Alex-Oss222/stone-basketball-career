@@ -35,25 +35,25 @@ Division winners take seeds 1 and 2; seeds 3 to 8 are the next six records. Ties
 ```
 EAST
   (1) Indiana Pacers           3
-  (8) New Orleans Hornets      1
+  (8) New Orleans Hornets      2
   (4) Miami Heat               1
   (5) Milwaukee Bucks          3
         conference semifinal: winners meet
   (3) Detroit Pistons          1
   (6) Toronto Raptors          3
-  (2) New Jersey Nets          3
-  (7) Atlanta Hawks            1
+  (2) New Jersey Nets          4
+  (7) Atlanta Hawks            1   -> New Jersey Nets
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
 WEST
   (1) Minnesota Timberwolves   4
   (8) Memphis Grizzlies        0   -> Minnesota Timberwolves
-  (4) Dallas Mavericks         3
-  (5) Denver Nuggets           1
+  (4) Dallas Mavericks         4
+  (5) Denver Nuggets           1   -> Dallas Mavericks
         conference semifinal: winners meet
-  (3) San Antonio Spurs        3
-  (6) Golden State Warriors    1
+  (3) San Antonio Spurs        4
+  (6) Golden State Warriors    1   -> San Antonio Spurs
   (2) Sacramento Kings         2
   (7) Los Angeles Lakers       2
         conference semifinal: winners meet
@@ -65,7 +65,7 @@ WEST
 
 ### East: (1) Indiana Pacers vs (8) New Orleans Hornets
 
-Home court: Indiana Pacers. Series Indiana Pacers 3, New Orleans Hornets 1.
+Home court: Indiana Pacers. Series Indiana Pacers 3, New Orleans Hornets 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -73,7 +73,7 @@ Home court: Indiana Pacers. Series Indiana Pacers 3, New Orleans Hornets 1.
 | 2 | Tue Apr 20 | Indiana Pacers | New Orleans Hornets | New Orleans Hornets 77, Indiana Pacers 80 |
 | 3 | Fri Apr 23 | New Orleans Hornets | Indiana Pacers | Indiana Pacers 91, New Orleans Hornets 95 |
 | 4 | Sun Apr 25 | New Orleans Hornets | Indiana Pacers | Indiana Pacers 96, New Orleans Hornets 90 |
-| 5 | Tue Apr 27 | Indiana Pacers | New Orleans Hornets | if needed |
+| 5 | Tue Apr 27 | Indiana Pacers | New Orleans Hornets | New Orleans Hornets 99, Indiana Pacers 98 |
 | 6 | Thu Apr 29 | New Orleans Hornets | Indiana Pacers | if needed |
 | 7 | Sat May 1 | Indiana Pacers | New Orleans Hornets | if needed |
 
@@ -107,7 +107,7 @@ Home court: Detroit Pistons. Series Detroit Pistons 1, Toronto Raptors 3.
 
 ### East: (2) New Jersey Nets vs (7) Atlanta Hawks
 
-Home court: New Jersey Nets. Series New Jersey Nets 3, Atlanta Hawks 1.
+Home court: New Jersey Nets. New Jersey Nets wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -115,9 +115,9 @@ Home court: New Jersey Nets. Series New Jersey Nets 3, Atlanta Hawks 1.
 | 2 | Tue Apr 20 | New Jersey Nets | Atlanta Hawks | Atlanta Hawks 76, New Jersey Nets 87 |
 | 3 | Fri Apr 23 | Atlanta Hawks | New Jersey Nets | New Jersey Nets 83, Atlanta Hawks 96 |
 | 4 | Sun Apr 25 | Atlanta Hawks | New Jersey Nets | New Jersey Nets 89, Atlanta Hawks 86 |
-| 5 | Tue Apr 27 | New Jersey Nets | Atlanta Hawks | if needed |
-| 6 | Thu Apr 29 | Atlanta Hawks | New Jersey Nets | if needed |
-| 7 | Sat May 1 | New Jersey Nets | Atlanta Hawks | if needed |
+| 5 | Tue Apr 27 | New Jersey Nets | Atlanta Hawks | Atlanta Hawks 82, New Jersey Nets 98 |
+| 6 | Thu Apr 29 | Atlanta Hawks | New Jersey Nets | not needed |
+| 7 | Sat May 1 | New Jersey Nets | Atlanta Hawks | not needed |
 
 ### West: (1) Minnesota Timberwolves vs (8) Memphis Grizzlies
 
@@ -135,7 +135,7 @@ Home court: Minnesota Timberwolves. Minnesota Timberwolves wins 4-0.
 
 ### West: (4) Dallas Mavericks vs (5) Denver Nuggets
 
-Home court: Dallas Mavericks. Series Dallas Mavericks 3, Denver Nuggets 1.
+Home court: Dallas Mavericks. Dallas Mavericks wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -143,13 +143,13 @@ Home court: Dallas Mavericks. Series Dallas Mavericks 3, Denver Nuggets 1.
 | 2 | Tue Apr 20 | Dallas Mavericks | Denver Nuggets | Denver Nuggets 89, Dallas Mavericks 104 |
 | 3 | Fri Apr 23 | Denver Nuggets | Dallas Mavericks | Dallas Mavericks 97, Denver Nuggets 89 |
 | 4 | Sun Apr 25 | Denver Nuggets | Dallas Mavericks | Dallas Mavericks 97, Denver Nuggets 109 |
-| 5 | Tue Apr 27 | Dallas Mavericks | Denver Nuggets | if needed |
-| 6 | Thu Apr 29 | Denver Nuggets | Dallas Mavericks | if needed |
-| 7 | Sat May 1 | Dallas Mavericks | Denver Nuggets | if needed |
+| 5 | Tue Apr 27 | Dallas Mavericks | Denver Nuggets | Denver Nuggets 90, Dallas Mavericks 103 |
+| 6 | Thu Apr 29 | Denver Nuggets | Dallas Mavericks | not needed |
+| 7 | Sat May 1 | Dallas Mavericks | Denver Nuggets | not needed |
 
 ### West: (3) San Antonio Spurs vs (6) Golden State Warriors
 
-Home court: San Antonio Spurs. Series San Antonio Spurs 3, Golden State Warriors 1.
+Home court: San Antonio Spurs. San Antonio Spurs wins 4-1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -157,9 +157,9 @@ Home court: San Antonio Spurs. Series San Antonio Spurs 3, Golden State Warriors
 | 2 | Tue Apr 20 | San Antonio Spurs | Golden State Warriors | Golden State Warriors 75, San Antonio Spurs 100 |
 | 3 | Fri Apr 23 | Golden State Warriors | San Antonio Spurs | San Antonio Spurs 99, Golden State Warriors 91 |
 | 4 | Sun Apr 25 | Golden State Warriors | San Antonio Spurs | San Antonio Spurs 93, Golden State Warriors 103 |
-| 5 | Tue Apr 27 | San Antonio Spurs | Golden State Warriors | if needed |
-| 6 | Thu Apr 29 | Golden State Warriors | San Antonio Spurs | if needed |
-| 7 | Sat May 1 | San Antonio Spurs | Golden State Warriors | if needed |
+| 5 | Tue Apr 27 | San Antonio Spurs | Golden State Warriors | Golden State Warriors 79, San Antonio Spurs 90 |
+| 6 | Thu Apr 29 | Golden State Warriors | San Antonio Spurs | not needed |
+| 7 | Sat May 1 | San Antonio Spurs | Golden State Warriors | not needed |
 
 ### West: (2) Sacramento Kings vs (7) Los Angeles Lakers
 
@@ -174,3 +174,19 @@ Home court: Sacramento Kings. Series Sacramento Kings 2, Los Angeles Lakers 2.
 | 5 | Wed Apr 28 | Sacramento Kings | Los Angeles Lakers | if needed |
 | 6 | Fri Apr 30 | Los Angeles Lakers | Sacramento Kings | if needed |
 | 7 | Sun May 2 | Sacramento Kings | Los Angeles Lakers | if needed |
+
+## Conference semifinals
+
+### West: (1) Minnesota Timberwolves vs (4) Dallas Mavericks
+
+Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 0, Dallas Mavericks 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Sun May 2 | Minnesota Timberwolves | Dallas Mavericks |  |
+| 2 | Tue May 4 | Minnesota Timberwolves | Dallas Mavericks |  |
+| 3 | Fri May 7 | Dallas Mavericks | Minnesota Timberwolves |  |
+| 4 | Sun May 9 | Dallas Mavericks | Minnesota Timberwolves |  |
+| 5 | Tue May 11 | Minnesota Timberwolves | Dallas Mavericks | if needed |
+| 6 | Thu May 13 | Dallas Mavericks | Minnesota Timberwolves | if needed |
+| 7 | Sat May 15 | Minnesota Timberwolves | Dallas Mavericks | if needed |

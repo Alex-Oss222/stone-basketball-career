@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-04-26**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-04-27**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -26,7 +26,7 @@ Card date: **2004-04-26**. 504 registry players, one Markdown card and one inter
 | [Chauncey Billups](billuch01.md) | Detroit Pistons | 27 | sourced | [open](billuch01.html) |
 | [Chris Whitney](whitnch01.md) | Washington Wizards | 32 | silhouette | [open](whitnch01.html) |
 | [Chucky Atkins](atkinch01.md) | Detroit Pistons | 29 | sourced | [open](atkinch01.html) |
-| [Courtney Alexander](alexaco02.md) | New Orleans Hornets | 26 | silhouette | [open](alexaco02.html) |
+| [Courtney Alexander](alexaco02.md) | New Orleans Hornets | 27 | silhouette | [open](alexaco02.html) |
 | [Damon Jones](jonesda01.md) | Milwaukee Bucks | None | silhouette | [open](jonesda01.html) |
 | [Damon Stoudamire](stoudda01.md) | Portland Trail Blazers | 30 | sourced | [open](stoudda01.html) |
 | [Dan Dickau](dickada01.md) | Atlanta Hawks | 25 | silhouette | [open](dickada01.html) |

@@ -955,6 +955,197 @@
      "points": 1
     }
    ]
+  },
+  {
+   "id": "2003-04-all_rookie",
+   "award": "all_rookie",
+   "name": "All-Rookie Teams",
+   "announced_on": "2004-04-27",
+   "electorate": 29,
+   "voters": "head coaches, not for their own players",
+   "ballot": [
+    2,
+    1
+   ],
+   "lens": [
+    0.0,
+    0.25
+   ],
+   "evidence_through": "2004-04-14",
+   "teams": [
+    {
+     "team": "First Team",
+     "players": [
+      {
+       "player": "Carmelo Anthony",
+       "team": "Denver Nuggets",
+       "games": 82,
+       "mpg": 37.7,
+       "pts": 18.9,
+       "reb": 7.0,
+       "ast": 3.1,
+       "stl": 1.0,
+       "blk": 0.4,
+       "game_score": 12.04,
+       "position": "F",
+       "points": 56,
+       "first_team_votes": 28
+      },
+      {
+       "player": "Chris Bosh",
+       "team": "Toronto Raptors",
+       "games": 75,
+       "mpg": 35.7,
+       "pts": 13.9,
+       "reb": 7.9,
+       "ast": 1.4,
+       "stl": 1.0,
+       "blk": 1.4,
+       "game_score": 11.02,
+       "position": "F",
+       "points": 56,
+       "first_team_votes": 28
+      },
+      {
+       "player": "Dwyane Wade",
+       "team": "Miami Heat",
+       "games": 75,
+       "mpg": 35.0,
+       "pts": 17.9,
+       "reb": 4.8,
+       "ast": 4.5,
+       "stl": 1.6,
+       "blk": 1.0,
+       "game_score": 17.14,
+       "position": "G",
+       "points": 56,
+       "first_team_votes": 28
+      },
+      {
+       "player": "Kirk Hinrich",
+       "team": "Chicago Bulls",
+       "games": 75,
+       "mpg": 35.4,
+       "pts": 11.9,
+       "reb": 4.1,
+       "ast": 6.8,
+       "stl": 1.4,
+       "blk": 0.3,
+       "game_score": 10.09,
+       "position": "G",
+       "points": 56,
+       "first_team_votes": 28
+      },
+      {
+       "player": "LeBron James",
+       "team": "Cleveland Cavaliers",
+       "games": 79,
+       "mpg": 39.5,
+       "pts": 20.6,
+       "reb": 5.0,
+       "ast": 5.4,
+       "stl": 1.2,
+       "blk": 0.6,
+       "game_score": 12.49,
+       "position": "F",
+       "points": 56,
+       "first_team_votes": 28
+      }
+     ]
+    },
+    {
+     "team": "Second Team",
+     "players": [
+      {
+       "player": "Josh Howard",
+       "team": "Dallas Mavericks",
+       "games": 67,
+       "mpg": 23.6,
+       "pts": 9.7,
+       "reb": 5.7,
+       "ast": 1.2,
+       "stl": 0.9,
+       "blk": 0.8,
+       "game_score": 7.93,
+       "position": "F",
+       "points": 33,
+       "first_team_votes": 5
+      },
+      {
+       "player": "Boris Diaw",
+       "team": "Atlanta Hawks",
+       "games": 76,
+       "mpg": 29.8,
+       "pts": 7.2,
+       "reb": 4.8,
+       "ast": 2.2,
+       "stl": 1.0,
+       "blk": 0.6,
+       "game_score": 5.09,
+       "position": "F",
+       "points": 28,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Jarvis Hayes",
+       "team": "Washington Wizards",
+       "games": 72,
+       "mpg": 30.7,
+       "pts": 8.7,
+       "reb": 4.5,
+       "ast": 1.4,
+       "stl": 0.9,
+       "blk": 0.3,
+       "game_score": 5.24,
+       "position": "F",
+       "points": 28,
+       "first_team_votes": 0
+      },
+      {
+       "player": "T.J. Ford",
+       "team": "Milwaukee Bucks",
+       "games": 54,
+       "mpg": 27.2,
+       "pts": 7.1,
+       "reb": 3.8,
+       "ast": 6.2,
+       "stl": 1.2,
+       "blk": 0.1,
+       "game_score": 6.35,
+       "position": "G",
+       "points": 27,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Keith Bogans",
+       "team": "Orlando Magic",
+       "games": 73,
+       "mpg": 25.2,
+       "pts": 7.5,
+       "reb": 4.3,
+       "ast": 1.4,
+       "stl": 0.5,
+       "blk": 0.3,
+       "game_score": 5.92,
+       "position": "G",
+       "points": 23,
+       "first_team_votes": 0
+      }
+     ]
+    }
+   ],
+   "others": [
+    {
+     "player": "Leandro Barbosa",
+     "team": "Phoenix Suns",
+     "points": 13
+    },
+    {
+     "player": "Mickael Pietrus",
+     "team": "Golden State Warriors",
+     "points": 3
+    }
+   ]
   }
  ]
 }

@@ -1,6 +1,6 @@
 # 2003-04 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2004-04-14 (`runtime/season_awards.py`); no real 2004 vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2004-04-26.
+Decided on each award's real announcement date from closed simulated results through 2004-04-14 (`runtime/season_awards.py`); no real 2004 vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2004-04-27.
 
 ## Calendar
 
@@ -13,7 +13,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | 2004-04-23 | Sixth Man of the Year | 120 media | 5-3-1 | decided |
 | 2004-04-25 | All-NBA Teams | 123 media | 5-3-1 | decided |
 | 2004-04-26 | All-Defensive Teams | 29 head coaches, not for their own players | 2-1 | decided |
-| 2004-04-27 | All-Rookie Teams | 29 head coaches, not for their own players | 2-1 | pending |
+| 2004-04-27 | All-Rookie Teams | 29 head coaches, not for their own players | 2-1 | decided |
 | 2004-05-03 | Most Valuable Player | 123 media | 10-7-5-3-1 | pending |
 
 ## Defensive Player of the Year
@@ -137,3 +137,29 @@ Announced 2004-04-26; 29 head coaches, not for their own players, ballot 2-1.
 | Andrei Kirilenko | F | Utah Jazz | 77 | 38.9 | 18.9 | 8.7 | 3.4 | 2.2 | 3.1 | 17.93 | 16 | 0 |
 
 Also receiving votes: Kenyon Martin (New Jersey Nets) 11, Jason Kidd (New Jersey Nets) 7, Tony Parker (San Antonio Spurs) 7, Paul Pierce (Boston Celtics) 5, Ron Artest (Indiana Pacers) 5, Theo Ratliff (Atlanta Hawks) 2, Chauncey Billups (Detroit Pistons) 1.
+
+## All-Rookie Teams
+
+Announced 2004-04-27; 29 head coaches, not for their own players, ballot 2-1.
+
+### First Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Carmelo Anthony | F | Denver Nuggets | 82 | 37.7 | 18.9 | 7.0 | 3.1 | 1.0 | 0.4 | 12.04 | 56 | 28 |
+| Chris Bosh | F | Toronto Raptors | 75 | 35.7 | 13.9 | 7.9 | 1.4 | 1.0 | 1.4 | 11.02 | 56 | 28 |
+| Dwyane Wade | G | Miami Heat | 75 | 35.0 | 17.9 | 4.8 | 4.5 | 1.6 | 1.0 | 17.14 | 56 | 28 |
+| Kirk Hinrich | G | Chicago Bulls | 75 | 35.4 | 11.9 | 4.1 | 6.8 | 1.4 | 0.3 | 10.09 | 56 | 28 |
+| LeBron James | F | Cleveland Cavaliers | 79 | 39.5 | 20.6 | 5.0 | 5.4 | 1.2 | 0.6 | 12.49 | 56 | 28 |
+
+### Second Team
+
+| Player | Pos | Club | G | MPG | PTS | REB | AST | STL | BLK | GmSc | Points | 1st-team votes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Josh Howard | F | Dallas Mavericks | 67 | 23.6 | 9.7 | 5.7 | 1.2 | 0.9 | 0.8 | 7.93 | 33 | 5 |
+| Boris Diaw | F | Atlanta Hawks | 76 | 29.8 | 7.2 | 4.8 | 2.2 | 1.0 | 0.6 | 5.09 | 28 | 0 |
+| Jarvis Hayes | F | Washington Wizards | 72 | 30.7 | 8.7 | 4.5 | 1.4 | 0.9 | 0.3 | 5.24 | 28 | 0 |
+| T.J. Ford | G | Milwaukee Bucks | 54 | 27.2 | 7.1 | 3.8 | 6.2 | 1.2 | 0.1 | 6.35 | 27 | 0 |
+| Keith Bogans | G | Orlando Magic | 73 | 25.2 | 7.5 | 4.3 | 1.4 | 0.5 | 0.3 | 5.92 | 23 | 0 |
+
+Also receiving votes: Leandro Barbosa (Phoenix Suns) 13, Mickael Pietrus (Golden State Warriors) 3.

@@ -2,7 +2,7 @@
 
 # Offseason training | Dwyane Wade
 
-Career date: 2004-04-26 · Miami Heat · inactive
+Career date: 2004-04-27 · Miami Heat · inactive
 
 [Live milestone desk](index.html#offseason_training) · [All milestones](README.md)
 
@@ -173,4 +173,5 @@ The player and staff agree a dated first block and review criteria.
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_1.md)
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_2.md)
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_3.md)
+- [Closed game](../2003-04/08_Playoffs/First_Round/Game_4.md)
 - [Dated milestone working records and player replies](../milestones.json)
