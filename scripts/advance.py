@@ -246,16 +246,34 @@ def close_day(day, playoffs=False):
     wade_waits()
 
 
+def miami_series_decided(day):
+    """The Miami series decided on `day`, as text, or None."""
+    from runtime import playoffs
+    record = playoffs.read(ROOT)
+    for s in (record or {}).get("series", []):
+        if "Miami Heat" in s["clubs"] and s.get("winner") and s.get("clinched_on") == day:
+            other = next(c for c in s["clubs"] if c != "Miami Heat")
+            return (f"{s.get('round', s['id'])}: {s['winner']} won the series "
+                    f"{max(s['wins'].values())}-{min(s['wins'].values())} (Miami vs {other})")
+    return None
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--to", required=True, help="the last day to play")
     parser.add_argument("--from", dest="start", help="first day (default: the career clock's day, rerun safely)")
+    parser.add_argument("--series-end", action="store_true",
+                        help="also stop (with the checkpoint and push) on the day a Miami playoff series is decided")
     args = parser.parse_args()
     day = date.fromisoformat(args.start or state()["current_date"])
     end = date.fromisoformat(args.to)
     try:
         while day <= end:
             advance_day(day.isoformat())
+            if args.series_end and miami_series_decided(day.isoformat()):
+                checkpoint(day.isoformat())
+                say(f"DONE: {miami_series_decided(day.isoformat())}")
+                return 0
             if day == end or (day.weekday() == 6 and day.isocalendar()[1] % 2 == 0):
                 checkpoint(day.isoformat())                  # every other Sunday: pages, validation, suite, push
             elif day.weekday() == 6:

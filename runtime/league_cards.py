@@ -501,6 +501,21 @@ class CardContext:
                     continue
                 for x in d["shortlist"]:
                     self.honors.setdefault(_key(x["player"]), []).append(dict(d, rank=x["rank"], line=x))
+        # Closed season awards (runtime/season_awards.py): winners, team selections and the next vote-getters.
+        from .season_awards import RECORD as SEASON_RECORD, honors as season_honors
+        if (self.root / SEASON_RECORD).is_file():
+            for d in json.loads((self.root / SEASON_RECORD).read_text(encoding="utf-8"))["decisions"]:
+                if d["announced_on"] > self.on:
+                    continue
+                base = dict(conference="", period_start="2003-10-28", period_end=d["evidence_through"],
+                            announced_on=d["announced_on"], award=d["award"], filed_on=(LEAGUE_DIR / SEASON / "Season_Awards.md").as_posix(),
+                            annual=True)
+                for player, name, _ in season_honors(d):
+                    self.honors.setdefault(_key(player), []).append(dict(base, name=name, rank=1))
+                for i, v in enumerate(d.get("tally", [])[:3]):
+                    who = v.get("player")
+                    if who and who not in d["winners"]:
+                        self.honors.setdefault(_key(who), []).append(dict(base, name=d["name"], rank=i + 1))
         self.template = (ROOT / TEMPLATE).read_text(encoding="utf-8")
 
     def club(self, player, signed=None):
@@ -667,7 +682,10 @@ def markdown_card(ctx, data):
     lines.append(f"**Coverage:** {coverage}\n")
     lines.append(markdown_table(hist, rows).rstrip() + "\n")
     lines.append("## Playoff statistics by year\n")
-    lines.append(f"**Coverage:** {SEASON} playoffs have not started. Prior playoff history is not imported into this card.\n")
+    started = ctx.on >= "2004-04-17"                        # first-round opening day (nba_2003_04_playoff_rules.json)
+    lines.append(f"**Coverage:** {SEASON} playoffs " + ("are recorded game by game in the league playoff records "
+                 f"([bracket]({_rel(ctx.root / CARDS_DIR, ctx.root / LEAGUE_DIR / SEASON / 'Playoffs.md')})); this card does not "
+                 "total them yet." if started else "have not started.") + " Prior playoff history is not imported into this card.\n")
     lines.append(markdown_table(hist, [[SEASON, team, "0", *["N/A"] * (len(hist) - 3)]]).rstrip() + "\n")
     lines.append("## Awards and honors\n")
     honors = ctx.honors.get(_key(p["name"]), [])
@@ -680,8 +698,9 @@ def markdown_card(ctx, data):
         rows = []
         for h in sorted(honors, key=lambda h: (h["announced_on"], h["award"])):
             page = _rel(ctx.root / CARDS_DIR, ctx.root / h["filed_on"])
-            result = "**Winner**" if h["rank"] == 1 else f"Shortlist, No. {h['rank']}"
-            rows.append([f"{h['conference']} {h['name']}", f"{h['period_start']} to {h['period_end']}", h["announced_on"], result,
+            result = ("**Selected**" if h.get("annual") and "Team" in h["name"] else "**Winner**") if h["rank"] == 1 else \
+                (f"No. {h['rank']} in the vote" if h.get("annual") else f"Shortlist, No. {h['rank']}")
+            rows.append([f"{h['conference']} {h['name']}".strip(), f"{h['period_start']} to {h['period_end']}", h["announced_on"], result,
                          f"[Decision]({page})"])
         lines.append(markdown_table(["Award", "Period", "Announced", "Result", "Record"], rows).rstrip() + "\n")
     return "\n".join(lines)
@@ -697,6 +716,17 @@ def _empty_period(period, stat):
         shots = {k: v for k, v in shooting.items() if k not in ("geometry", "notes")}
         out.update(box=summary["totals"], rates=summary["rates"], shooting=shots, shots=stat["shots"])
     return out
+
+
+def award_notice(ctx, p):
+    honors = ctx.honors.get(_key(p["name"]), [])
+    annual = [h["name"] for h in honors if h.get("annual") and h["rank"] == 1]
+    periodic = [f"{h['conference']} {h['name']} ({h['period_start']} to {h['period_end']})"
+                for h in honors if h["rank"] == 1 and not h.get("annual")]
+    first = ("Season honors: " + "; ".join(annual) + ". ") if annual else \
+        f"No annual award has been recorded for this player through {ctx.on}. "
+    return first + ("Weekly and monthly honors won: " + "; ".join(periodic) + "." if periodic
+                    else "Weekly and monthly honors stay in the league award records.")
 
 
 def html_payload(ctx, data):
@@ -722,11 +752,7 @@ def html_payload(ctx, data):
                          for period in ctx.periods],
                 awards=dict(default_scenario="current", scenarios=[dict(
                     id="current", label=f"{SEASON} season", season=SEASON, cutoff=ctx.on,
-                    notice=(f"No annual award has been recorded for this player through {ctx.on}. " + (
-                        "Weekly and monthly honors won: " + "; ".join(f"{h['conference']} {h['name']} ({h['period_start']} to {h['period_end']})"
-                                                                       for h in ctx.honors.get(_key(p["name"]), []) if h["rank"] == 1) + "."
-                        if any(h["rank"] == 1 for h in ctx.honors.get(_key(p["name"]), [])) else
-                        "Weekly and monthly honors stay in the league award records.")),
+                    notice=award_notice(ctx, p),
                     records=[])]))
 
 
