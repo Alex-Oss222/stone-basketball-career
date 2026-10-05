@@ -1,0 +1,23 @@
+{
+ "date": "2004-05-26",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2004-draft-lottery-pick-1",
+ "kind": "decision",
+ "options": {
+  "Boston Celtics": 0.064,
+  "Chicago Bulls": 0.011,
+  "Cleveland Cavaliers": 0.031,
+  "Houston Rockets": 0.007,
+  "Los Angeles Clippers": 0.12,
+  "New York Knicks": 0.089,
+  "Orlando Magic": 0.25,
+  "Philadelphia 76ers": 0.005,
+  "Phoenix Suns": 0.03,
+  "Portland Trail Blazers": 0.03,
+  "Seattle SuperSonics": 0.006,
+  "Utah Jazz": 0.157,
+  "Washington Wizards": 0.2
+ },
+ "outcome": "Orlando Magic",
+ "question": "2004 NBA draft lottery: which club wins pick No. 1?"
+}

@@ -1,0 +1,22 @@
+{
+ "date": "2004-05-26",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2004-draft-lottery-pick-2",
+ "kind": "decision",
+ "options": {
+  "Boston Celtics": 0.085333,
+  "Chicago Bulls": 0.014667,
+  "Cleveland Cavaliers": 0.041333,
+  "Houston Rockets": 0.009333,
+  "Los Angeles Clippers": 0.16,
+  "New York Knicks": 0.118667,
+  "Philadelphia 76ers": 0.006667,
+  "Phoenix Suns": 0.04,
+  "Portland Trail Blazers": 0.04,
+  "Seattle SuperSonics": 0.008,
+  "Utah Jazz": 0.209333,
+  "Washington Wizards": 0.266667
+ },
+ "outcome": "Washington Wizards",
+ "question": "2004 NBA draft lottery: which club wins pick No. 2?"
+}

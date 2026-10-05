@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-lottery-seeding-tie-phi-sea",
+ "date": "2004-05-26",
+ "question": "2004 draft order (lottery-seeding): which of Philadelphia 76ers, Seattle SuperSonics (tied at 0.476) goes first?",
+ "decider": "NBA draft lottery (engine draw)",
+ "options": {
+  "Philadelphia 76ers": 0.5,
+  "Seattle SuperSonics": 0.5
+ },
+ "basis": "Equal simulated records; ordered by a drawing (runtime/lottery.py)."
+}

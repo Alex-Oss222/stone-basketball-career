@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-playoff-clubs-tie-gsw-lal",
+ "date": "2004-05-26",
+ "question": "2004 draft order (playoff-clubs): which of Golden State Warriors, Los Angeles Lakers (tied at 0.573) goes first?",
+ "decider": "NBA draft lottery (engine draw)",
+ "options": {
+  "Golden State Warriors": 0.5,
+  "Los Angeles Lakers": 0.5
+ },
+ "basis": "Equal simulated records; ordered by a drawing (runtime/lottery.py)."
+}

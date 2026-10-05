@@ -1,0 +1,21 @@
+{
+ "date": "2004-05-26",
+ "decider": "NBA draft lottery (engine draw)",
+ "event_id": "2004-draft-lottery-pick-3",
+ "kind": "decision",
+ "options": {
+  "Boston Celtics": 0.116364,
+  "Chicago Bulls": 0.02,
+  "Cleveland Cavaliers": 0.056364,
+  "Houston Rockets": 0.012727,
+  "Los Angeles Clippers": 0.218182,
+  "New York Knicks": 0.161818,
+  "Philadelphia 76ers": 0.009091,
+  "Phoenix Suns": 0.054545,
+  "Portland Trail Blazers": 0.054545,
+  "Seattle SuperSonics": 0.010909,
+  "Utah Jazz": 0.285455
+ },
+ "outcome": "Boston Celtics",
+ "question": "2004 NBA draft lottery: which club wins pick No. 3?"
+}

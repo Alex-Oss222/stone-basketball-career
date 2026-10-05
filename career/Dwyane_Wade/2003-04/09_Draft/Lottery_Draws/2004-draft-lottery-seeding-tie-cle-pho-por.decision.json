@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-lottery-seeding-tie-cle-pho-por",
+ "date": "2004-05-26",
+ "question": "2004 draft order (lottery-seeding): which of Cleveland Cavaliers, Phoenix Suns, Portland Trail Blazers (tied at 0.378) goes first?",
+ "decider": "NBA draft lottery (engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.333334,
+  "Phoenix Suns": 0.333333,
+  "Portland Trail Blazers": 0.333333
+ },
+ "basis": "Equal simulated records; ordered by a drawing (runtime/lottery.py)."
+}

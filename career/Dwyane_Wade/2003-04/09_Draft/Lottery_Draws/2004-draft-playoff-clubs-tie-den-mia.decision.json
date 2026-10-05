@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-playoff-clubs-tie-den-mia",
+ "date": "2004-05-26",
+ "question": "2004 draft order (playoff-clubs): which of Denver Nuggets, Miami Heat (tied at 0.585) goes first?",
+ "decider": "NBA draft lottery (engine draw)",
+ "options": {
+  "Denver Nuggets": 0.5,
+  "Miami Heat": 0.5
+ },
+ "basis": "Equal simulated records; ordered by a drawing (runtime/lottery.py)."
+}
