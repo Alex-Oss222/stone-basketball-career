@@ -15,5 +15,6 @@ days: 1-7
 ## Games and events
 
 - 2004-03-02: Toronto Raptors 80 at Miami Heat 86 — Miami Heat W 86-80 ([Game 1](Game_1.md), event `2004-03-02-toronto-raptors-at-miami-heat`)
+- 2004-03-04: Milwaukee Bucks 99 at Miami Heat 92 — Miami Heat L 92-99 ([Game 2](Game_2.md), event `2004-03-04-milwaukee-bucks-at-miami-heat`)
 
 ## Consequences
