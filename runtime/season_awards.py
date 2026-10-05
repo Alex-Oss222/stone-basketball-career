@@ -428,7 +428,7 @@ def decide(root=ROOT, clock=None):
     (root / RECORD).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     if _record_wade(root, record):
         from . import standing
-        standing.record(root, clock, "honor_recorded", PAGE.as_posix())
+        standing.record(root, clock, "honor_recorded", PAGE.relative_to(PLAYER).as_posix())
     (root / PAGE).write_text(page(record, clock, root), encoding="utf-8")
     return new
 
