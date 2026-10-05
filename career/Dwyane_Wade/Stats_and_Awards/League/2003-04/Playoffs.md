@@ -269,11 +269,11 @@ Home court: Indiana Pacers. New Jersey Nets wins 4-3.
 
 ### Finals: (2) New Jersey Nets vs (1) Minnesota Timberwolves
 
-Home court: Minnesota Timberwolves. Series New Jersey Nets 0, Minnesota Timberwolves 0.
+Home court: Minnesota Timberwolves. Series New Jersey Nets 1, Minnesota Timberwolves 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
-| 1 | Sun Jun 6 | Minnesota Timberwolves | New Jersey Nets |  |
+| 1 | Sun Jun 6 | Minnesota Timberwolves | New Jersey Nets | New Jersey Nets 106, Minnesota Timberwolves 96 |
 | 2 | Tue Jun 8 | Minnesota Timberwolves | New Jersey Nets |  |
 | 3 | Thu Jun 10 | New Jersey Nets | Minnesota Timberwolves |  |
 | 4 | Sun Jun 13 | New Jersey Nets | Minnesota Timberwolves |  |
