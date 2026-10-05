@@ -1,0 +1,12 @@
+{
+ "requests": [
+  {
+   "date": "2004-06-24",
+   "subject": "free_agent_target",
+   "player": "Trevor Ariza",
+   "bbr_id": "arizatr01",
+   "requested": "pursue",
+   "note": "Wade asks the front office to scout Trevor Ariza seriously and, if the scouts agree, to get him. On the career date he is an undrafted free agent: no club selected him in the simulated June 24 draft (Miami's No. 54 draw had him as one of three options and took Christian Drejer). Evidence Wade cites, as of the date: one UCLA season, about 6'7\" and 205 pounds, 11.6 points, 6.5 rebounds, 2.1 assists and 1.68 steals; against him, 23.7% from three, 50.4% at the line, strength questions and a single college season. Wade does not set the terms: the front office grades him and decides (source: 03_Offseason/Wade_Summer_Plan_2004.md)."
+  }
+ ]
+}

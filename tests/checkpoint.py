@@ -57,6 +57,11 @@ def pin(root):
         target = root / path.relative_to(FIXTURE)
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy(path, target)
+    registry = root / "career/Dwyane_Wade/milestones.json"       # working events recorded after the checkpoint go too
+    if registry.is_file():
+        data = json.loads(registry.read_text(encoding="utf-8"))
+        data["events"] = [e for e in data.get("events", []) if e.get("recorded_on", "") <= CHECKPOINT]
+        registry.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     for rel in AFTER_CHECKPOINT:
         target = root / rel
         if target.is_dir():

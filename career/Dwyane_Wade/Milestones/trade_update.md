@@ -67,6 +67,7 @@ An actual transaction update with its source and applicable player rights.
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
+- [Recorded request](../2003-04/10_Free_Agency/wade_requests.json)
 - [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-04-09/review.json)
 - [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-04-09/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
@@ -174,3 +175,4 @@ An actual transaction update with its source and applicable player rights.
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_4.md)
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)
+- [Owning dated record](../2003-04/03_Offseason/Wade_Summer_Plan_2004.md)

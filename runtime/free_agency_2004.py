@@ -39,8 +39,11 @@ Club decisions are judgement rules with no chance element; a player's answers ar
   positional fit; salary against worth; a status-quo premium on players they hold), legal under the 1999 salary
   rule, each deal an engine draw on both clubs' acceptance (`runtime/trades.acceptance`). Players signed this summer
   are not tradable; a first-round pick is after 30 days. Miami's trades for a star wait for Wade's consultation. An offer sheet to a restricted player is matched when his club values him at the offer and can pay.
-- Miami is one of the thirty clubs, run by the same AI/GM rules. Once Wade's standing is `franchise`, Miami asks him
-  before offering to a star (`runtime/consultations.py`); the market waits for his answer.
+- Miami is one of the thirty clubs, run by the same AI/GM rules. Wade's free-agent requests (`10_Free_Agency/
+  wade_requests.json`) move a requested player up Miami's list by his standing weight and let Miami pay up to 110% of
+  its own valuation, and a requested minimum player may take a roster spot up to the fifteenth; the front office still
+  decides and the player still answers. Once Wade's standing is `franchise`, Miami asks him before offering to a star
+  (`runtime/consultations.py`); the market waits for his answer.
 The record is `10_Free_Agency/free_agency_2004.json`, rebuilt by replaying every round from its recorded draws.
 """
 from __future__ import annotations
@@ -97,6 +100,8 @@ MIN_MUTUAL_GAIN = 0.10
 STATUS_QUO = 1.15
 ROOKIE_TRADE_DAYS = 30                  # a first-round pick can be traded 30 days after he signs
 NEW_SIGNING_TRADABLE = "2004-12-15"     # a free agent signed this summer cannot be traded before December 15
+REQUEST_PRICE_CEILING = 1.10           # Miami pays a player Wade asked for up to this share of its own valuation (docs/front_office.md)
+REQUESTS = FOLDER / "wade_requests.json"
 UNTOUCHABLE = {"dwyane_wade"}           # Miami's AI/GM keeps its franchise cornerstone off the market (judgement)
 HOLD_SHARE = 1.5                        # cap hold: 150% of the prior salary
 NEED_FLOOR = 0.6                        # a club with no positional need still values talent at this share
@@ -602,24 +607,38 @@ class Market:
             return self.cal["mle"], "mid_level"
         return 0, None
 
+    def requested(self, day):
+        """{bbr_id: standing weight} for Wade's free-agent requests dated on or before the day (Miami only)."""
+        path = self.root / REQUESTS
+        if not path.is_file():
+            return {}
+        from .standing import STANDING_WEIGHT, standing_on
+        weight = STANDING_WEIGHT.get(standing_on(self.root, day).get("standing"), 0.0)
+        return {r["bbr_id"]: weight for r in _read(path)["requests"]
+                if r.get("subject") == "free_agent_target" and r.get("requested") == "pursue" and r["date"] <= day and r.get("bbr_id")}
+
     def offers_for(self, club, week, day, open_players):
         out, short = [], ROSTER_TARGET - self.roster(club)
         if self.roster(club) >= ROSTER_MAX:
             return out
-        ranked = sorted(open_players, key=lambda b: (-self.pricing.value(b) * (NEED_FLOOR + (1 - NEED_FLOOR) * self.need(club, self.group(b))), b))
+        wanted = self.requested(day) if club == MIAMI else {}
+        ranked = sorted(open_players, key=lambda b: (-self.pricing.value(b) * (NEED_FLOOR + (1 - NEED_FLOOR) * self.need(club, self.group(b)))
+                                                     * (1 + wanted.get(b, 0.0)), b))
         made_big = False
         for b in ranked:
             ask = self.ask(b, week)
             need = self.need(club, self.group(b))
             willing = int(round(self.price[b] * (0.9 + 0.2 * need)))
+            if b in wanted:                                # Wade asked: up to 110% of the club's valuation
+                willing = max(willing, int(round(self.price[b] * min(REQUEST_PRICE_CEILING, 1 + 0.2 * wanted[b]))))
             amount = max(minimum(self.service(b), self.cal), min(ask, willing))
             if amount < INSULT_SHARE * ask:
                 continue
             minimum_deal = amount <= minimum(self.service(b), self.cal)
             if not minimum_deal and made_big:
                 continue
-            if minimum_deal and short <= 0:
-                continue
+            if minimum_deal and short <= 0 and b not in wanted:
+                continue                                   # a requested player may take a spot up to the fifteenth
             route = self.means(club, b, day, amount)
             if route is None and not minimum_deal:
                 amount, route = self.most_affordable(club, b, day)

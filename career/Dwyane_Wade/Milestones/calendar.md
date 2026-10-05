@@ -39,6 +39,7 @@ Activation: The authoritative current date and recorded event determine what is 
 | 2003-06-26 | free_agent_target | Andre Miller | pursue | Wade asks the front office to go after Andre Miller (Los Angeles Clippers, rookie contract ending June 30, 2003) to run the point next to him. | [Recorded request](../2003-04/01_Free_Agency/wade_requests.json) |
 | 2003-06-26 | free_agent_target | Lamar Odom | pursue | Wade asks the front office to pursue Lamar Odom (Los Angeles Clippers, restricted free agent). Under world rule 1 his real August 2003 move to Miami never happens; he stays a Clippers free agent unless simulated Miami signs him, through an offer sheet the Clippers may match. | [Recorded request](../2003-04/01_Free_Agency/wade_requests.json) |
 | 2003-10-27 | free_agent_target | Udonis Haslem | pursue | Wade asks the front office to sign Udonis Haslem (undrafted in 2002, played in France in 2002-03; no NBA club). Under world rule 1 his real August 2003 signing with Miami never happens, so he is an unsigned free agent unless simulated Miami signs him. Weighed at the post-camp roster refill. | [Recorded request](../2003-04/01_Free_Agency/wade_requests.json) |
+| 2004-06-24 | free_agent_target | Trevor Ariza | pursue | Wade asks the front office to scout Trevor Ariza seriously and, if the scouts agree, to get him. On the career date he is an undrafted free agent: no club selected him in the simulated June 24 draft (Miami's No. 54 draw had him as one of three options and took Christian Drejer). Evidence Wade cites, as of the date: one UCLA season, about 6'7" and 205 pounds, 11.6 points, 6.5 rebounds, 2.1 assists and 1.68 steals; against him, 23.7% from three, 50.4% at the line, strength questions and a single college season. Wade does not set the terms: the front office grades him and decides (source: 03_Offseason/Wade_Summer_Plan_2004.md). | [Recorded request](../2003-04/10_Free_Agency/wade_requests.json) |
 
 ## Franchise consultations
 
@@ -53,6 +54,12 @@ Activation: The authoritative current date and recorded event determine what is 
 - Training and camp: a player/staff plan or actual club evaluation.
 - Stats: declared, closed game results, never future or historical Wade results.
 - Exit meeting: the actual season close and a recorded meeting.
+
+## Your working calendar
+
+| Event | Dates | Status | Next checkpoint | Open |
+| --- | --- | --- | --- | --- |
+| Wade's 2004 summer plan | 2004-06-24 to 2004-10-04 | Planned | Date not set: Miami schedules its designated offseason program and the staff confirm the baselines | [Working record](index.html#offseason_training) |
 
 ## Available response paths
 
@@ -72,6 +79,7 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Current contract and cap-control record](../2003-04/00_Team/Finances/contract_schedules.json)
 - [Rookie negotiation log](../2003-04/01_Free_Agency/Wade_Rookie_Contract/negotiation_log.json)
 - [Recorded request](../2003-04/01_Free_Agency/wade_requests.json)
+- [Recorded request](../2003-04/10_Free_Agency/wade_requests.json)
 - [Dated staff rotation review](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-04-09/review.json)
 - [Current dated staff depth chart](../2003-04/00_Team/Team/Depth_Chart/Reviews/2004-04-09/depth_chart.json)
 - [Offseason player decisions and events](../2003-04/03_Offseason/note.md)
@@ -179,3 +187,4 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_4.md)
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)
+- [Owning dated record](../2003-04/03_Offseason/Wade_Summer_Plan_2004.md)

@@ -99,6 +99,16 @@ class MarketTests(unittest.TestCase):
         moved = [e["bbr_id"] for e in self.record["events"] if e["kind"] == "trade"]
         self.assertEqual(len(moved), len(set(moved)))                 # nobody is traded twice in a summer
 
+    def test_wades_requests_are_weighed_by_standing(self):
+        from runtime.standing import STANDING_WEIGHT, standing_on
+        path = ROOT / F.REQUESTS
+        if not path.is_file():
+            self.skipTest("no 2004 request recorded")
+        wanted = self.market.requested("2004-07-01")
+        weight = STANDING_WEIGHT[standing_on(ROOT, "2004-07-01")["standing"]]
+        self.assertTrue(wanted and all(w == weight for w in wanted.values()))
+        self.assertEqual(self.market.requested("2004-06-23"), {})                 # nothing before it was asked
+
     def test_real_2004_moves_are_never_read(self):
         source = (ROOT / "runtime/free_agency_2004.py").read_text(encoding="utf-8")
         self.assertNotIn("nba_2004_offseason_transactions", source)
