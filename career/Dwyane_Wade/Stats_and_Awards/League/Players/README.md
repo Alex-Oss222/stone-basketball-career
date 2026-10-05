@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-06-20**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-06-24**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -30,7 +30,7 @@ Card date: **2004-06-20**. 504 registry players, one Markdown card and one inter
 | [Damon Jones](jonesda01.md) | Milwaukee Bucks | None | silhouette | [open](jonesda01.html) |
 | [Damon Stoudamire](stoudda01.md) | Portland Trail Blazers | 30 | sourced | [open](stoudda01.html) |
 | [Dan Dickau](dickada01.md) | Atlanta Hawks | 25 | silhouette | [open](dickada01.html) |
-| [Darrell Armstrong](armstda01.md) | New Orleans Hornets | 35 | sourced | [open](armstda01.html) |
+| [Darrell Armstrong](armstda01.md) | New Orleans Hornets | 36 | sourced | [open](armstda01.html) |
 | [Darrick Martin](martida01.md) | Minnesota Timberwolves | None | silhouette | [open](martida01.html) |
 | [Derek Anderson](anderde01.md) | Portland Trail Blazers | 29 | sourced | [open](anderde01.html) |
 | [Derek Fisher](fishede01.md) | Los Angeles Lakers | 29 | sourced | [open](fishede01.html) |
@@ -73,7 +73,7 @@ Card date: **2004-06-20**. 504 registry players, one Markdown card and one inter
 | [Mateen Cleaves](cleavma01.md) | Cleveland Cavaliers | None | silhouette | [open](cleavma01.html) |
 | [Mickael Pietrus](pietrmi01.md) | Golden State Warriors | 22 | sourced | [open](pietrmi01.html) |
 | [Mike Bibby](bibbymi01.md) | Sacramento Kings | 26 | sourced | [open](bibbymi01.html) |
-| [Mike James](jamesmi01.md) | Miami Heat | 28 | sourced | [open](jamesmi01.html) |
+| [Mike James](jamesmi01.md) | Miami Heat | 29 | sourced | [open](jamesmi01.html) |
 | [Mike Wilks](wilksmi01.md) | Houston Rockets | 25 | sourced | [open](wilksmi01.html) |
 | [Milt Palacio](palacmi01.md) | Toronto Raptors | 26 | sourced | [open](palacmi01.html) |
 | [Mo Williams](willima01.md) | Utah Jazz | 21 | sourced | [open](willima01.html) |
@@ -282,7 +282,7 @@ Card date: **2004-06-20**. 504 registry players, one Markdown card and one inter
 | [Peja Stojakovic](stojape01.md) | Sacramento Kings | 27 | sourced | [open](stojape01.html) |
 | [Quincy Lewis](lewisqu01.md) | Minnesota Timberwolves | None | silhouette | [open](lewisqu01.html) |
 | [Rashard Lewis](lewisra02.md) | Seattle SuperSonics | 24 | sourced | [open](lewisra02.html) |
-| [Richard Jefferson](jefferi01.md) | New Jersey Nets | 23 | sourced | [open](jefferi01.html) |
+| [Richard Jefferson](jefferi01.md) | New Jersey Nets | 24 | sourced | [open](jefferi01.html) |
 | [Richie Frahm](frahmri01.md) | Seattle SuperSonics | None | silhouette | [open](frahmri01.html) |
 | [Rick Fox](foxri01.md) | Los Angeles Lakers | 34 | sourced | [open](foxri01.html) |
 | [Rodney Buford](buforro01.md) | Sacramento Kings | None | silhouette | [open](buforro01.html) |
@@ -468,7 +468,7 @@ Card date: **2004-06-20**. 504 registry players, one Markdown card and one inter
 | [Daniel Santiago](santida01.md) | Milwaukee Bucks | None | silhouette | [open](santida01.html) |
 | [Darko Milicic](milicda01.md) | Detroit Pistons | 19 | sourced | [open](milicda01.html) |
 | [David Robinson](robinda01.md) | San Antonio Spurs | 38 | sourced | [open](robinda01.html) |
-| [Derrick Coleman](colemde01.md) | Philadelphia 76ers | 36 | sourced | [open](colemde01.html) |
+| [Derrick Coleman](colemde01.md) | Philadelphia 76ers | 37 | sourced | [open](colemde01.html) |
 | [Dikembe Mutombo](mutomdi01.md) | New York Knicks | 37 | sourced | [open](mutomdi01.html) |
 | [Eddy Curry](curryed01.md) | Chicago Bulls | 21 | sourced | [open](curryed01.html) |
 | [Efthimios Rentzias](rentzef01.md) | Philadelphia 76ers | 28 | sourced | [open](rentzef01.html) |
@@ -504,7 +504,7 @@ Card date: **2004-06-20**. 504 registry players, one Markdown card and one inter
 | [Kwame Brown](brownkw01.md) | Washington Wizards | 22 | sourced | [open](brownkw01.html) |
 | [Leon Smith](smithle01.md) | Seattle SuperSonics | None | silhouette | [open](smithle01.html) |
 | [Lonny Baxter](baxtelo01.md) | Chicago Bulls | 25 | sourced | [open](baxtelo01.html) |
-| [Loren Woods](woodslo01.md) | Minnesota Timberwolves | 25 | sourced | [open](woodslo01.html) |
+| [Loren Woods](woodslo01.md) | Minnesota Timberwolves | 26 | sourced | [open](woodslo01.html) |
 | [Lorenzen Wright](wrighlo02.md) | Memphis Grizzlies | None | silhouette | [open](wrighlo02.html) |
 | [Mamadou N'diaye](ndiayma02.md) | Dallas Mavericks | 29 | silhouette | [open](ndiayma02.html) |
 | [Marc Jackson](jacksma02.md) | Philadelphia 76ers | 29 | sourced | [open](jacksma02.html) |
@@ -538,7 +538,7 @@ Card date: **2004-06-20**. 504 registry players, one Markdown card and one inter
 | [Shawn Bradley](bradlsh01.md) | Dallas Mavericks | 32 | sourced | [open](bradlsh01.html) |
 | [Shawn Kemp](kempsh01.md) | Miami Heat | 34 | sourced | [open](kempsh01.html) |
 | [Slavko Vranes](vranesl01.md) | New York Knicks | 21 | sourced | [open](vranesl01.html) |
-| [Sofoklis Schortsanitis](schorso01.md) | Los Angeles Clippers (draft rights) | 18 | sourced | [open](schorso01.html) |
+| [Sofoklis Schortsanitis](schorso01.md) | Los Angeles Clippers (draft rights) | 19 | sourced | [open](schorso01.html) |
 | [Steven Hunter](huntest01.md) | Orlando Magic | 22 | sourced | [open](huntest01.html) |
 | [Theo Ratliff](ratlith01.md) | Atlanta Hawks | 31 | sourced | [open](ratlith01.html) |
 | [Tony Battie](battito01.md) | Boston Celtics | 28 | sourced | [open](battito01.html) |

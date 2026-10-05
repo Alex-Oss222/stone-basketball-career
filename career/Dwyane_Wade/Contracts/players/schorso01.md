@@ -2,9 +2,9 @@
 
 # Contract | Sofoklis Schortsanitis
 
-Known through: 2004-06-20. [Open interactive contract](schorso01.html#contract) · [Contract history](schorso01.html#contract-history)
+Known through: 2004-06-24. [Open interactive contract](schorso01.html#contract) · [Contract history](schorso01.html#contract-history)
 
-Sofoklis Schortsanitis: No verified contract record. Evidence cutoff: 2004-06-20.
+Sofoklis Schortsanitis: No verified contract record. Evidence cutoff: 2004-06-24.
 
 ## Current contract
 

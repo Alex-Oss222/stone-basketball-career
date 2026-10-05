@@ -2,9 +2,9 @@
 
 # Contract | Jarron Collins
 
-Known through: 2004-06-20. [Open interactive contract](collija03.html#contract) · [Contract history](collija03.html#contract-history)
+Known through: 2004-06-24. [Open interactive contract](collija03.html#contract) · [Contract history](collija03.html#contract-history)
 
-Jarron Collins: under contract. Evidence cutoff: 2004-06-20.
+Jarron Collins: under contract. Evidence cutoff: 2004-06-24.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | John Salmons
 
-Known through: 2004-06-20. [Open interactive contract](salmojo01.html#contract) · [Contract history](salmojo01.html#contract-history)
+Known through: 2004-06-24. [Open interactive contract](salmojo01.html#contract) · [Contract history](salmojo01.html#contract-history)
 
-John Salmons: under rookie contract. Evidence cutoff: 2004-06-20.
+John Salmons: under rookie contract. Evidence cutoff: 2004-06-24.
 
 ## Current contract
 

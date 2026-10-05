@@ -2,11 +2,11 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-06-20**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-06-24**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2004-06-20
+## 2003-04 · NBA regular season · through 2004-06-24
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
@@ -2707,7 +2707,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-04-14 | New Jersey Nets | DNP: injured list since 2004-04-12 | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) |
 
-## 2003-04 · NBA playoffs · through 2004-06-20
+## 2003-04 · NBA playoffs · through 2004-06-24
 
 [Open this period](player_cards.html?period=playoff-2003-04-season#shooting)
 
@@ -2916,7 +2916,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-04-28 | Milwaukee Bucks | Played | [Game](../2003-04/08_Playoffs/First_Round/Game_5.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_5.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_5.result.json) |
 
-## 2003-04 · NBA preseason · through 2004-06-20
+## 2003-04 · NBA preseason · through 2004-06-24
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 
@@ -3196,7 +3196,7 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-21 | Memphis Grizzlies | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_7.md) | [Result](../2003-04/05_Preseason/Game_7.result.json) | Not recorded |
 
-## 2004-05 · NBA regular season · through 2004-06-20
+## 2004-05 · NBA regular season · through 2004-06-24
 
 [Open this period](player_cards.html?period=regular-2004-05-season#shooting)
 

@@ -2,9 +2,9 @@
 
 # Contract | Dan Dickau
 
-Known through: 2004-06-20. [Open interactive contract](dickada01.html#contract) · [Contract history](dickada01.html#contract-history)
+Known through: 2004-06-24. [Open interactive contract](dickada01.html#contract) · [Contract history](dickada01.html#contract-history)
 
-Dan Dickau: under rookie contract. Evidence cutoff: 2004-06-20.
+Dan Dickau: under rookie contract. Evidence cutoff: 2004-06-24.
 
 ## Current contract
 
