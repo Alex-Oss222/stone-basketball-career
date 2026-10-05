@@ -1,0 +1,417 @@
+{
+ "schema_version": 1,
+ "kind": "expansion_draft",
+ "club": "Charlotte Bobcats",
+ "date": "2004-06-22",
+ "rule": "Rules (`library/2004/league/nba_2004_expansion_draft.json`, sourced): each of the 29 clubs protects up to eight\nplayers; Charlotte takes from 14 to 29 players, at most one from any club; a club that loses a player gets a trade\nexception equal to his salary.\n\nDecisions (AI front offices, judgement, no chance element):\n- Pool: every player with an existing contract or team option for 2004-05 (`runtime/contract_terms.py`) on the club\n  the symmetric league holds him with at the end of 2003-04.\n- Protection: each club protects its eight most valuable players under contract for 2004-05, valued on evidence of the\n  date (simulated 2003-04 Game Score per game x minutes per game, youth weighted: x1.1 at 24 or younger, x0.85 at 32+).\n- Charlotte (rebuilding, cap $29.25M for 2004-05): for each club, its best exposed player by value per million of\n  2004-05 salary (expiring and cheap contracts preferred); Charlotte takes them best first until it has 14, then\n  keeps taking while a player's value per million is at least MIN_VALUE_PER_MILLION and its payroll stays under the cap.\nThe result is `09_Draft/expansion_2004.json`; the selected players are Charlotte's in the 2004-05 opening book.",
+ "protected": {
+  "Dallas Mavericks": [
+   "Dirk Nowitzki",
+   "Michael Finley",
+   "Antawn Jamison",
+   "Voshon Lenard",
+   "Josh Howard",
+   "Shawn Bradley",
+   "Eduardo Najera",
+   "Danny Fortson"
+  ],
+  "Atlanta Hawks": [
+   "Jason Terry",
+   "Shareef Abdur-Rahim",
+   "Theo Ratliff",
+   "Boris Diaw",
+   "Chris Crawford",
+   "Nazr Mohammed",
+   "Dan Dickau",
+   "Alan Henderson"
+  ],
+  "Seattle SuperSonics": [
+   "Ray Allen",
+   "Rashard Lewis",
+   "Vladimir Radmanovic",
+   "Ronald Murray",
+   "Antonio Daniels",
+   "Vitaly Potapenko",
+   "Calvin Booth",
+   "Reggie Evans"
+  ],
+  "Portland Trail Blazers": [
+   "Zach Randolph",
+   "Damon Stoudamire",
+   "Derek Anderson",
+   "David Wesley",
+   "Ruben Patterson",
+   "Dale Davis",
+   "Vladimir Stepania",
+   "Travis Outlaw"
+  ],
+  "Golden State Warriors": [
+   "Jason Richardson",
+   "Mike Dunleavy",
+   "Tayshaun Prince",
+   "Clifford Robinson",
+   "Speedy Claxton",
+   "Troy Murphy",
+   "Shandon Anderson",
+   "Mickael Pietrus"
+  ],
+  "Denver Nuggets": [
+   "Carmelo Anthony",
+   "Andre Miller",
+   "Nene",
+   "Earl Boykins",
+   "Michael Olowokandi",
+   "Tony Delk",
+   "Francisco Elson",
+   "Nikoloz Tskitishvili"
+  ],
+  "Washington Wizards": [
+   "Gilbert Arenas",
+   "Larry Hughes",
+   "Kwame Brown",
+   "Jarvis Hayes",
+   "Brendan Haywood",
+   "Juan Dixon",
+   "Jared Jeffries",
+   "Christian Laettner"
+  ],
+  "New Orleans Hornets": [
+   "Baron Davis",
+   "Jamal Mashburn",
+   "Jamaal Magloire",
+   "Jeff McInnis",
+   "P.J. Brown",
+   "Darrell Armstrong",
+   "George Lynch",
+   "David West"
+  ],
+  "Indiana Pacers": [
+   "Ron Artest",
+   "Jermaine O'Neal",
+   "Al Harrington",
+   "Reggie Miller",
+   "Jamaal Tinsley",
+   "Jeff Foster",
+   "Fred Jones",
+   "Austin Croshere"
+  ],
+  "Detroit Pistons": [
+   "Chauncey Billups",
+   "Ben Wallace",
+   "Richard Hamilton",
+   "Chucky Atkins",
+   "Corliss Williamson",
+   "Elden Campbell",
+   "Darko Milicic"
+  ],
+  "Boston Celtics": [
+   "Paul Pierce",
+   "Jalen Rose",
+   "Jiri Welsch",
+   "Walter McCarty",
+   "Tony Battie",
+   "Raef LaFrentz",
+   "Marcus Banks",
+   "Kedrick Brown"
+  ],
+  "Phoenix Suns": [
+   "Stephon Marbury",
+   "Shawn Marion",
+   "Joe Johnson",
+   "Amar'e Stoudemire",
+   "Anfernee Hardaway",
+   "Jake Voskuhl",
+   "Casey Jacobsen",
+   "Leandro Barbosa"
+  ],
+  "Memphis Grizzlies": [
+   "Pau Gasol",
+   "Jason Williams",
+   "James Posey",
+   "Mike Miller",
+   "Bonzi Wells",
+   "Shane Battier",
+   "Lorenzen Wright",
+   "Earl Watson"
+  ],
+  "Utah Jazz": [
+   "Andrei Kirilenko",
+   "Matt Harpring",
+   "Raja Bell",
+   "Raül López",
+   "Sasha Pavlovic",
+   "Curtis Borchardt"
+  ],
+  "Sacramento Kings": [
+   "Peja Stojakovic",
+   "Mike Bibby",
+   "Brad Miller",
+   "Chris Webber",
+   "Doug Christie",
+   "Bobby Jackson",
+   "Gerald Wallace"
+  ],
+  "Orlando Magic": [
+   "Tracy McGrady",
+   "Tyronn Lue",
+   "Juwan Howard",
+   "Drew Gooden",
+   "Keith Bogans",
+   "Andrew DeClercq",
+   "Zaza Pachulia",
+   "Reece Gaines"
+  ],
+  "Toronto Raptors": [
+   "Vince Carter",
+   "Donyell Marshall",
+   "Chris Bosh",
+   "Alvin Williams",
+   "Lamond Murray",
+   "Matt Bonner"
+  ],
+  "Cleveland Cavaliers": [
+   "LeBron James",
+   "Carlos Boozer",
+   "Ricky Davis",
+   "Zydrunas Ilgauskas",
+   "Mateen Cleaves",
+   "Kevin Ollie",
+   "Ira Newble",
+   "DeSagana Diop"
+  ],
+  "Los Angeles Clippers": [
+   "Elton Brand",
+   "Corey Maggette",
+   "Lamar Odom",
+   "Marko Jaric",
+   "Bobby Simmons",
+   "Chris Wilcox",
+   "Chris Kaman",
+   "Eddie House"
+  ],
+  "San Antonio Spurs": [
+   "Tim Duncan",
+   "Tony Parker",
+   "Nick Van Exel",
+   "Rasho Nesterovic",
+   "Malik Rose",
+   "Devin Brown",
+   "Alex Garcia"
+  ],
+  "Philadelphia 76ers": [
+   "Allen Iverson",
+   "Kenny Thomas",
+   "Glenn Robinson",
+   "Samuel Dalembert",
+   "Aaron McKie",
+   "Marc Jackson",
+   "Derrick Coleman",
+   "John Salmons"
+  ],
+  "Los Angeles Lakers": [
+   "Shaquille O'Neal",
+   "Gary Payton",
+   "Caron Butler",
+   "Brian Grant",
+   "Devean George",
+   "Kareem Rush",
+   "Luke Walton",
+   "Brian Cook"
+  ],
+  "Minnesota Timberwolves": [
+   "Kevin Garnett",
+   "Sam Cassell",
+   "Latrell Sprewell",
+   "Wally Szczerbiak",
+   "Mark Madsen",
+   "Ervin Johnson",
+   "Ndudi Ebi"
+  ],
+  "Houston Rockets": [
+   "Yao Ming",
+   "Steve Francis",
+   "Cuttino Mobley",
+   "Jim Jackson",
+   "Maurice Taylor",
+   "Kelvin Cato",
+   "Jamal Sampson",
+   "Eric Piatkowski"
+  ],
+  "Chicago Bulls": [
+   "Kirk Hinrich",
+   "Eddy Curry",
+   "Antonio Davis",
+   "Jerome Williams",
+   "Tyson Chandler",
+   "Scottie Pippen",
+   "Chris Jefferies",
+   "Jay Williams"
+  ],
+  "New Jersey Nets": [
+   "Richard Jefferson",
+   "Jason Kidd",
+   "Kerry Kittles",
+   "Jason Collins",
+   "Lucious Harris",
+   "Aaron Williams",
+   "Alonzo Mourning",
+   "Brian Scalabrine"
+  ],
+  "New York Knicks": [
+   "Keith Van Horn",
+   "Allan Houston",
+   "Kurt Thomas",
+   "Dikembe Mutombo",
+   "Howard Eisley",
+   "Milt Palacio",
+   "Clarence Weatherspoon",
+   "Othella Harrington"
+  ],
+  "Milwaukee Bucks": [
+   "Michael Redd",
+   "Desmond Mason",
+   "Tim Thomas",
+   "Joe Smith",
+   "T.J. Ford",
+   "Dan Gadzuric",
+   "Daniel Santiago",
+   "Erick Strickland"
+  ],
+  "Miami Heat": [
+   "Dwyane Wade",
+   "Mike James",
+   "Caron Butler",
+   "Brian Grant",
+   "Eddie Jones"
+  ]
+ },
+ "selections": [
+  {
+   "player": "Steve Blake",
+   "bbr_id": "blakest01",
+   "from": "Washington Wizards",
+   "salary_2004_05": 620046,
+   "years_left": 1,
+   "value": 1.391,
+   "trade_exception": 620046
+  },
+  {
+   "player": "Bo Outlaw",
+   "bbr_id": "outlabo01",
+   "from": "Memphis Grizzlies",
+   "salary_2004_05": 1059756,
+   "years_left": 1,
+   "value": 1.617,
+   "trade_exception": 1059756
+  },
+  {
+   "player": "Kyle Korver",
+   "bbr_id": "korveky01",
+   "from": "Philadelphia 76ers",
+   "salary_2004_05": 620046,
+   "years_left": 1,
+   "value": 0.486,
+   "trade_exception": 620046
+  },
+  {
+   "player": "Luke Ridnour",
+   "bbr_id": "ridnolu01",
+   "from": "Seattle SuperSonics",
+   "salary_2004_05": 1531200,
+   "years_left": 2,
+   "value": 1.49,
+   "trade_exception": 1531200
+  },
+  {
+   "player": "Jannero Pargo",
+   "bbr_id": "pargoja01",
+   "from": "Los Angeles Lakers",
+   "salary_2004_05": 695046,
+   "years_left": 1,
+   "value": 0.307,
+   "trade_exception": 695046
+  },
+  {
+   "player": "Frank Williams",
+   "bbr_id": "willifr02",
+   "from": "New York Knicks",
+   "salary_2004_05": 957480,
+   "years_left": 2,
+   "value": 0.742,
+   "trade_exception": 957480
+  },
+  {
+   "player": "Rick Brunson",
+   "bbr_id": "brunsri01",
+   "from": "Los Angeles Clippers",
+   "salary_2004_05": 932546,
+   "years_left": 1,
+   "value": 0.341,
+   "trade_exception": 932546
+  },
+  {
+   "player": "James Jones",
+   "bbr_id": "jonesja02",
+   "from": "Indiana Pacers",
+   "salary_2004_05": 620046,
+   "years_left": 1,
+   "value": 0.196,
+   "trade_exception": 620046
+  },
+  {
+   "player": "Jason Kapono",
+   "bbr_id": "kaponja01",
+   "from": "Cleveland Cavaliers",
+   "salary_2004_05": 620046,
+   "years_left": 1,
+   "value": 0.138,
+   "trade_exception": 620046
+  },
+  {
+   "player": "Brandon Hunter",
+   "bbr_id": "huntebr01",
+   "from": "Orlando Magic",
+   "salary_2004_05": 620046,
+   "years_left": 1,
+   "value": 0.131,
+   "trade_exception": 620046
+  },
+  {
+   "player": "Qyntel Woods",
+   "bbr_id": "woodsqy01",
+   "from": "New Orleans Hornets",
+   "salary_2004_05": 1127280,
+   "years_left": 2,
+   "value": 0.418,
+   "trade_exception": 1127280
+  },
+  {
+   "player": "Moochie Norris",
+   "bbr_id": "norrimo01",
+   "from": "Houston Rockets",
+   "salary_2004_05": 3850000,
+   "years_left": 2,
+   "value": 1.201,
+   "trade_exception": 3850000
+  },
+  {
+   "player": "Zoran Planinic",
+   "bbr_id": "planizo01",
+   "from": "New Jersey Nets",
+   "salary_2004_05": 1053720,
+   "years_left": 2,
+   "value": 0.326,
+   "trade_exception": 1053720
+  },
+  {
+   "player": "Cezary Trybanski",
+   "bbr_id": "trybace01",
+   "from": "Phoenix Suns",
+   "salary_2004_05": 1700000,
+   "years_left": 1,
+   "value": 0.248,
+   "trade_exception": 1700000
+  }
+ ],
+ "payroll_2004_05": 16007258
+}
