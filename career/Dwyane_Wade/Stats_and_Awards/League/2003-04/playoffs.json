@@ -1,0 +1,688 @@
+{
+ "schema_version": 1,
+ "kind": "playoffs",
+ "season": "2003-04",
+ "rules": "library/2003/league/nba_2003_04_playoff_rules.json",
+ "seeded_on": "2004-04-14",
+ "seeds": {
+  "East": [
+   {
+    "seed": 1,
+    "club": "Indiana Pacers",
+    "wins": 59,
+    "losses": 23,
+    "division_winner": true
+   },
+   {
+    "seed": 2,
+    "club": "New Jersey Nets",
+    "wins": 53,
+    "losses": 29,
+    "division_winner": true
+   },
+   {
+    "seed": 3,
+    "club": "Detroit Pistons",
+    "wins": 50,
+    "losses": 32,
+    "division_winner": false
+   },
+   {
+    "seed": 4,
+    "club": "Miami Heat",
+    "wins": 48,
+    "losses": 34,
+    "division_winner": false
+   },
+   {
+    "seed": 5,
+    "club": "Milwaukee Bucks",
+    "wins": 44,
+    "losses": 38,
+    "division_winner": false
+   },
+   {
+    "seed": 6,
+    "club": "Toronto Raptors",
+    "wins": 42,
+    "losses": 40,
+    "division_winner": false
+   },
+   {
+    "seed": 7,
+    "club": "Atlanta Hawks",
+    "wins": 40,
+    "losses": 42,
+    "division_winner": false
+   },
+   {
+    "seed": 8,
+    "club": "New Orleans Hornets",
+    "wins": 39,
+    "losses": 43,
+    "division_winner": false
+   }
+  ],
+  "West": [
+   {
+    "seed": 1,
+    "club": "Minnesota Timberwolves",
+    "wins": 62,
+    "losses": 20,
+    "division_winner": true
+   },
+   {
+    "seed": 2,
+    "club": "Sacramento Kings",
+    "wins": 54,
+    "losses": 28,
+    "division_winner": true
+   },
+   {
+    "seed": 3,
+    "club": "San Antonio Spurs",
+    "wins": 56,
+    "losses": 26,
+    "division_winner": false
+   },
+   {
+    "seed": 4,
+    "club": "Dallas Mavericks",
+    "wins": 52,
+    "losses": 30,
+    "division_winner": false
+   },
+   {
+    "seed": 5,
+    "club": "Denver Nuggets",
+    "wins": 48,
+    "losses": 34,
+    "division_winner": false
+   },
+   {
+    "seed": 6,
+    "club": "Golden State Warriors",
+    "wins": 47,
+    "losses": 35,
+    "division_winner": false
+   },
+   {
+    "seed": 7,
+    "club": "Los Angeles Lakers",
+    "wins": 47,
+    "losses": 35,
+    "division_winner": false
+   },
+   {
+    "seed": 8,
+    "club": "Memphis Grizzlies",
+    "wins": 46,
+    "losses": 36,
+    "division_winner": false
+   }
+  ]
+ },
+ "series": [
+  {
+   "id": "east-1-8",
+   "round": "first_round",
+   "conference": "East",
+   "seeds": [
+    1,
+    8
+   ],
+   "clubs": [
+    "Indiana Pacers",
+    "New Orleans Hornets"
+   ],
+   "home_court": "Indiana Pacers",
+   "wins": {
+    "Indiana Pacers": 0,
+    "New Orleans Hornets": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-04-17",
+     "home": "Indiana Pacers",
+     "away": "New Orleans Hornets",
+     "conditional": false
+    },
+    {
+     "game": 2,
+     "date": "2004-04-20",
+     "home": "Indiana Pacers",
+     "away": "New Orleans Hornets",
+     "conditional": false
+    },
+    {
+     "game": 3,
+     "date": "2004-04-23",
+     "home": "New Orleans Hornets",
+     "away": "Indiana Pacers",
+     "conditional": false
+    },
+    {
+     "game": 4,
+     "date": "2004-04-25",
+     "home": "New Orleans Hornets",
+     "away": "Indiana Pacers",
+     "conditional": false
+    },
+    {
+     "game": 5,
+     "date": "2004-04-27",
+     "home": "Indiana Pacers",
+     "away": "New Orleans Hornets",
+     "conditional": true
+    },
+    {
+     "game": 6,
+     "date": "2004-04-29",
+     "home": "New Orleans Hornets",
+     "away": "Indiana Pacers",
+     "conditional": true
+    },
+    {
+     "game": 7,
+     "date": "2004-05-01",
+     "home": "Indiana Pacers",
+     "away": "New Orleans Hornets",
+     "conditional": true
+    }
+   ]
+  },
+  {
+   "id": "east-4-5",
+   "round": "first_round",
+   "conference": "East",
+   "seeds": [
+    4,
+    5
+   ],
+   "clubs": [
+    "Miami Heat",
+    "Milwaukee Bucks"
+   ],
+   "home_court": "Miami Heat",
+   "wins": {
+    "Miami Heat": 0,
+    "Milwaukee Bucks": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-04-18",
+     "home": "Miami Heat",
+     "away": "Milwaukee Bucks",
+     "conditional": false
+    },
+    {
+     "game": 2,
+     "date": "2004-04-21",
+     "home": "Miami Heat",
+     "away": "Milwaukee Bucks",
+     "conditional": false
+    },
+    {
+     "game": 3,
+     "date": "2004-04-24",
+     "home": "Milwaukee Bucks",
+     "away": "Miami Heat",
+     "conditional": false
+    },
+    {
+     "game": 4,
+     "date": "2004-04-26",
+     "home": "Milwaukee Bucks",
+     "away": "Miami Heat",
+     "conditional": false
+    },
+    {
+     "game": 5,
+     "date": "2004-04-28",
+     "home": "Miami Heat",
+     "away": "Milwaukee Bucks",
+     "conditional": true
+    },
+    {
+     "game": 6,
+     "date": "2004-04-30",
+     "home": "Milwaukee Bucks",
+     "away": "Miami Heat",
+     "conditional": true
+    },
+    {
+     "game": 7,
+     "date": "2004-05-02",
+     "home": "Miami Heat",
+     "away": "Milwaukee Bucks",
+     "conditional": true
+    }
+   ]
+  },
+  {
+   "id": "east-3-6",
+   "round": "first_round",
+   "conference": "East",
+   "seeds": [
+    3,
+    6
+   ],
+   "clubs": [
+    "Detroit Pistons",
+    "Toronto Raptors"
+   ],
+   "home_court": "Detroit Pistons",
+   "wins": {
+    "Detroit Pistons": 0,
+    "Toronto Raptors": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-04-18",
+     "home": "Detroit Pistons",
+     "away": "Toronto Raptors",
+     "conditional": false
+    },
+    {
+     "game": 2,
+     "date": "2004-04-21",
+     "home": "Detroit Pistons",
+     "away": "Toronto Raptors",
+     "conditional": false
+    },
+    {
+     "game": 3,
+     "date": "2004-04-24",
+     "home": "Toronto Raptors",
+     "away": "Detroit Pistons",
+     "conditional": false
+    },
+    {
+     "game": 4,
+     "date": "2004-04-26",
+     "home": "Toronto Raptors",
+     "away": "Detroit Pistons",
+     "conditional": false
+    },
+    {
+     "game": 5,
+     "date": "2004-04-28",
+     "home": "Detroit Pistons",
+     "away": "Toronto Raptors",
+     "conditional": true
+    },
+    {
+     "game": 6,
+     "date": "2004-04-30",
+     "home": "Toronto Raptors",
+     "away": "Detroit Pistons",
+     "conditional": true
+    },
+    {
+     "game": 7,
+     "date": "2004-05-02",
+     "home": "Detroit Pistons",
+     "away": "Toronto Raptors",
+     "conditional": true
+    }
+   ]
+  },
+  {
+   "id": "east-2-7",
+   "round": "first_round",
+   "conference": "East",
+   "seeds": [
+    2,
+    7
+   ],
+   "clubs": [
+    "New Jersey Nets",
+    "Atlanta Hawks"
+   ],
+   "home_court": "New Jersey Nets",
+   "wins": {
+    "New Jersey Nets": 0,
+    "Atlanta Hawks": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-04-17",
+     "home": "New Jersey Nets",
+     "away": "Atlanta Hawks",
+     "conditional": false
+    },
+    {
+     "game": 2,
+     "date": "2004-04-20",
+     "home": "New Jersey Nets",
+     "away": "Atlanta Hawks",
+     "conditional": false
+    },
+    {
+     "game": 3,
+     "date": "2004-04-23",
+     "home": "Atlanta Hawks",
+     "away": "New Jersey Nets",
+     "conditional": false
+    },
+    {
+     "game": 4,
+     "date": "2004-04-25",
+     "home": "Atlanta Hawks",
+     "away": "New Jersey Nets",
+     "conditional": false
+    },
+    {
+     "game": 5,
+     "date": "2004-04-27",
+     "home": "New Jersey Nets",
+     "away": "Atlanta Hawks",
+     "conditional": true
+    },
+    {
+     "game": 6,
+     "date": "2004-04-29",
+     "home": "Atlanta Hawks",
+     "away": "New Jersey Nets",
+     "conditional": true
+    },
+    {
+     "game": 7,
+     "date": "2004-05-01",
+     "home": "New Jersey Nets",
+     "away": "Atlanta Hawks",
+     "conditional": true
+    }
+   ]
+  },
+  {
+   "id": "west-1-8",
+   "round": "first_round",
+   "conference": "West",
+   "seeds": [
+    1,
+    8
+   ],
+   "clubs": [
+    "Minnesota Timberwolves",
+    "Memphis Grizzlies"
+   ],
+   "home_court": "Minnesota Timberwolves",
+   "wins": {
+    "Minnesota Timberwolves": 0,
+    "Memphis Grizzlies": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-04-18",
+     "home": "Minnesota Timberwolves",
+     "away": "Memphis Grizzlies",
+     "conditional": false
+    },
+    {
+     "game": 2,
+     "date": "2004-04-21",
+     "home": "Minnesota Timberwolves",
+     "away": "Memphis Grizzlies",
+     "conditional": false
+    },
+    {
+     "game": 3,
+     "date": "2004-04-24",
+     "home": "Memphis Grizzlies",
+     "away": "Minnesota Timberwolves",
+     "conditional": false
+    },
+    {
+     "game": 4,
+     "date": "2004-04-26",
+     "home": "Memphis Grizzlies",
+     "away": "Minnesota Timberwolves",
+     "conditional": false
+    },
+    {
+     "game": 5,
+     "date": "2004-04-28",
+     "home": "Minnesota Timberwolves",
+     "away": "Memphis Grizzlies",
+     "conditional": true
+    },
+    {
+     "game": 6,
+     "date": "2004-04-30",
+     "home": "Memphis Grizzlies",
+     "away": "Minnesota Timberwolves",
+     "conditional": true
+    },
+    {
+     "game": 7,
+     "date": "2004-05-02",
+     "home": "Minnesota Timberwolves",
+     "away": "Memphis Grizzlies",
+     "conditional": true
+    }
+   ]
+  },
+  {
+   "id": "west-4-5",
+   "round": "first_round",
+   "conference": "West",
+   "seeds": [
+    4,
+    5
+   ],
+   "clubs": [
+    "Dallas Mavericks",
+    "Denver Nuggets"
+   ],
+   "home_court": "Dallas Mavericks",
+   "wins": {
+    "Dallas Mavericks": 0,
+    "Denver Nuggets": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-04-17",
+     "home": "Dallas Mavericks",
+     "away": "Denver Nuggets",
+     "conditional": false
+    },
+    {
+     "game": 2,
+     "date": "2004-04-20",
+     "home": "Dallas Mavericks",
+     "away": "Denver Nuggets",
+     "conditional": false
+    },
+    {
+     "game": 3,
+     "date": "2004-04-23",
+     "home": "Denver Nuggets",
+     "away": "Dallas Mavericks",
+     "conditional": false
+    },
+    {
+     "game": 4,
+     "date": "2004-04-25",
+     "home": "Denver Nuggets",
+     "away": "Dallas Mavericks",
+     "conditional": false
+    },
+    {
+     "game": 5,
+     "date": "2004-04-27",
+     "home": "Dallas Mavericks",
+     "away": "Denver Nuggets",
+     "conditional": true
+    },
+    {
+     "game": 6,
+     "date": "2004-04-29",
+     "home": "Denver Nuggets",
+     "away": "Dallas Mavericks",
+     "conditional": true
+    },
+    {
+     "game": 7,
+     "date": "2004-05-01",
+     "home": "Dallas Mavericks",
+     "away": "Denver Nuggets",
+     "conditional": true
+    }
+   ]
+  },
+  {
+   "id": "west-3-6",
+   "round": "first_round",
+   "conference": "West",
+   "seeds": [
+    3,
+    6
+   ],
+   "clubs": [
+    "San Antonio Spurs",
+    "Golden State Warriors"
+   ],
+   "home_court": "San Antonio Spurs",
+   "wins": {
+    "San Antonio Spurs": 0,
+    "Golden State Warriors": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-04-17",
+     "home": "San Antonio Spurs",
+     "away": "Golden State Warriors",
+     "conditional": false
+    },
+    {
+     "game": 2,
+     "date": "2004-04-20",
+     "home": "San Antonio Spurs",
+     "away": "Golden State Warriors",
+     "conditional": false
+    },
+    {
+     "game": 3,
+     "date": "2004-04-23",
+     "home": "Golden State Warriors",
+     "away": "San Antonio Spurs",
+     "conditional": false
+    },
+    {
+     "game": 4,
+     "date": "2004-04-25",
+     "home": "Golden State Warriors",
+     "away": "San Antonio Spurs",
+     "conditional": false
+    },
+    {
+     "game": 5,
+     "date": "2004-04-27",
+     "home": "San Antonio Spurs",
+     "away": "Golden State Warriors",
+     "conditional": true
+    },
+    {
+     "game": 6,
+     "date": "2004-04-29",
+     "home": "Golden State Warriors",
+     "away": "San Antonio Spurs",
+     "conditional": true
+    },
+    {
+     "game": 7,
+     "date": "2004-05-01",
+     "home": "San Antonio Spurs",
+     "away": "Golden State Warriors",
+     "conditional": true
+    }
+   ]
+  },
+  {
+   "id": "west-2-7",
+   "round": "first_round",
+   "conference": "West",
+   "seeds": [
+    2,
+    7
+   ],
+   "clubs": [
+    "Sacramento Kings",
+    "Los Angeles Lakers"
+   ],
+   "home_court": "Sacramento Kings",
+   "wins": {
+    "Sacramento Kings": 0,
+    "Los Angeles Lakers": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-04-18",
+     "home": "Sacramento Kings",
+     "away": "Los Angeles Lakers",
+     "conditional": false
+    },
+    {
+     "game": 2,
+     "date": "2004-04-21",
+     "home": "Sacramento Kings",
+     "away": "Los Angeles Lakers",
+     "conditional": false
+    },
+    {
+     "game": 3,
+     "date": "2004-04-24",
+     "home": "Los Angeles Lakers",
+     "away": "Sacramento Kings",
+     "conditional": false
+    },
+    {
+     "game": 4,
+     "date": "2004-04-26",
+     "home": "Los Angeles Lakers",
+     "away": "Sacramento Kings",
+     "conditional": false
+    },
+    {
+     "game": 5,
+     "date": "2004-04-28",
+     "home": "Sacramento Kings",
+     "away": "Los Angeles Lakers",
+     "conditional": true
+    },
+    {
+     "game": 6,
+     "date": "2004-04-30",
+     "home": "Los Angeles Lakers",
+     "away": "Sacramento Kings",
+     "conditional": true
+    },
+    {
+     "game": 7,
+     "date": "2004-05-02",
+     "home": "Sacramento Kings",
+     "away": "Los Angeles Lakers",
+     "conditional": true
+    }
+   ]
+  }
+ ],
+ "champion": null
+}

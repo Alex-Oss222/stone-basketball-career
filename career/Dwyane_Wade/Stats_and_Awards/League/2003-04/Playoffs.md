@@ -1,0 +1,176 @@
+# 2003-04 NBA playoffs
+
+Seeded 2004-04-14 from closed simulated regular-season results only ([standings](Standings.md); rules and sources: `library/2003/league/nba_2003_04_playoff_rules.json`, `runtime/playoffs.py`). Real 2004 seeds, matchups and results are never used.
+
+Division winners take seeds 1 and 2; seeds 3 to 8 are the next six records. Ties: the 2003-04 tiebreak procedure, an engine drawing if it cannot separate them. Best of seven; home court to the better record; 2-2-1-1-1 in the conference rounds, 2-3-2 in the Finals. Games 5 to 7 are played only if needed.
+
+## Eastern Conference seeds
+
+| Seed | Club | W | L | Note |
+| ---: | --- | ---: | ---: | --- |
+| 1 | Indiana Pacers | 59 | 23 | division winner |
+| 2 | New Jersey Nets | 53 | 29 | division winner |
+| 3 | Detroit Pistons | 50 | 32 |  |
+| 4 | **Miami Heat** | 48 | 34 |  |
+| 5 | Milwaukee Bucks | 44 | 38 |  |
+| 6 | Toronto Raptors | 42 | 40 |  |
+| 7 | Atlanta Hawks | 40 | 42 |  |
+| 8 | New Orleans Hornets | 39 | 43 |  |
+
+## Western Conference seeds
+
+| Seed | Club | W | L | Note |
+| ---: | --- | ---: | ---: | --- |
+| 1 | Minnesota Timberwolves | 62 | 20 | division winner |
+| 2 | Sacramento Kings | 54 | 28 | division winner |
+| 3 | San Antonio Spurs | 56 | 26 |  |
+| 4 | Dallas Mavericks | 52 | 30 |  |
+| 5 | Denver Nuggets | 48 | 34 |  |
+| 6 | Golden State Warriors | 47 | 35 |  |
+| 7 | Los Angeles Lakers | 47 | 35 |  |
+| 8 | Memphis Grizzlies | 46 | 36 |  |
+
+## Bracket
+
+```
+EAST
+  (1) Indiana Pacers           0
+  (8) New Orleans Hornets      0
+  (4) Miami Heat               0
+  (5) Milwaukee Bucks          0
+        conference semifinal: winners meet
+  (3) Detroit Pistons          0
+  (6) Toronto Raptors          0
+  (2) New Jersey Nets          0
+  (7) Atlanta Hawks            0
+        conference semifinal: winners meet
+    conference final, then the NBA Finals
+
+WEST
+  (1) Minnesota Timberwolves   0
+  (8) Memphis Grizzlies        0
+  (4) Dallas Mavericks         0
+  (5) Denver Nuggets           0
+        conference semifinal: winners meet
+  (3) San Antonio Spurs        0
+  (6) Golden State Warriors    0
+  (2) Sacramento Kings         0
+  (7) Los Angeles Lakers       0
+        conference semifinal: winners meet
+    conference final, then the NBA Finals
+
+```
+
+## First-round schedule
+
+### East (1) Indiana Pacers vs (8) New Orleans Hornets
+
+Home court: Indiana Pacers. Series 0-0.
+
+| Game | Date | Home | Away | |
+| ---: | --- | --- | --- | --- |
+| 1 | Sat Apr 17 | Indiana Pacers | New Orleans Hornets |  |
+| 2 | Tue Apr 20 | Indiana Pacers | New Orleans Hornets |  |
+| 3 | Fri Apr 23 | New Orleans Hornets | Indiana Pacers |  |
+| 4 | Sun Apr 25 | New Orleans Hornets | Indiana Pacers |  |
+| 5 | Tue Apr 27 | Indiana Pacers | New Orleans Hornets | if needed |
+| 6 | Thu Apr 29 | New Orleans Hornets | Indiana Pacers | if needed |
+| 7 | Sat May 1 | Indiana Pacers | New Orleans Hornets | if needed |
+
+### East (4) Miami Heat vs (5) Milwaukee Bucks
+
+Home court: Miami Heat. Series 0-0.
+
+| Game | Date | Home | Away | |
+| ---: | --- | --- | --- | --- |
+| 1 | Sun Apr 18 | Miami Heat | Milwaukee Bucks |  |
+| 2 | Wed Apr 21 | Miami Heat | Milwaukee Bucks |  |
+| 3 | Sat Apr 24 | Milwaukee Bucks | Miami Heat |  |
+| 4 | Mon Apr 26 | Milwaukee Bucks | Miami Heat |  |
+| 5 | Wed Apr 28 | Miami Heat | Milwaukee Bucks | if needed |
+| 6 | Fri Apr 30 | Milwaukee Bucks | Miami Heat | if needed |
+| 7 | Sun May 2 | Miami Heat | Milwaukee Bucks | if needed |
+
+### East (3) Detroit Pistons vs (6) Toronto Raptors
+
+Home court: Detroit Pistons. Series 0-0.
+
+| Game | Date | Home | Away | |
+| ---: | --- | --- | --- | --- |
+| 1 | Sun Apr 18 | Detroit Pistons | Toronto Raptors |  |
+| 2 | Wed Apr 21 | Detroit Pistons | Toronto Raptors |  |
+| 3 | Sat Apr 24 | Toronto Raptors | Detroit Pistons |  |
+| 4 | Mon Apr 26 | Toronto Raptors | Detroit Pistons |  |
+| 5 | Wed Apr 28 | Detroit Pistons | Toronto Raptors | if needed |
+| 6 | Fri Apr 30 | Toronto Raptors | Detroit Pistons | if needed |
+| 7 | Sun May 2 | Detroit Pistons | Toronto Raptors | if needed |
+
+### East (2) New Jersey Nets vs (7) Atlanta Hawks
+
+Home court: New Jersey Nets. Series 0-0.
+
+| Game | Date | Home | Away | |
+| ---: | --- | --- | --- | --- |
+| 1 | Sat Apr 17 | New Jersey Nets | Atlanta Hawks |  |
+| 2 | Tue Apr 20 | New Jersey Nets | Atlanta Hawks |  |
+| 3 | Fri Apr 23 | Atlanta Hawks | New Jersey Nets |  |
+| 4 | Sun Apr 25 | Atlanta Hawks | New Jersey Nets |  |
+| 5 | Tue Apr 27 | New Jersey Nets | Atlanta Hawks | if needed |
+| 6 | Thu Apr 29 | Atlanta Hawks | New Jersey Nets | if needed |
+| 7 | Sat May 1 | New Jersey Nets | Atlanta Hawks | if needed |
+
+### West (1) Minnesota Timberwolves vs (8) Memphis Grizzlies
+
+Home court: Minnesota Timberwolves. Series 0-0.
+
+| Game | Date | Home | Away | |
+| ---: | --- | --- | --- | --- |
+| 1 | Sun Apr 18 | Minnesota Timberwolves | Memphis Grizzlies |  |
+| 2 | Wed Apr 21 | Minnesota Timberwolves | Memphis Grizzlies |  |
+| 3 | Sat Apr 24 | Memphis Grizzlies | Minnesota Timberwolves |  |
+| 4 | Mon Apr 26 | Memphis Grizzlies | Minnesota Timberwolves |  |
+| 5 | Wed Apr 28 | Minnesota Timberwolves | Memphis Grizzlies | if needed |
+| 6 | Fri Apr 30 | Memphis Grizzlies | Minnesota Timberwolves | if needed |
+| 7 | Sun May 2 | Minnesota Timberwolves | Memphis Grizzlies | if needed |
+
+### West (4) Dallas Mavericks vs (5) Denver Nuggets
+
+Home court: Dallas Mavericks. Series 0-0.
+
+| Game | Date | Home | Away | |
+| ---: | --- | --- | --- | --- |
+| 1 | Sat Apr 17 | Dallas Mavericks | Denver Nuggets |  |
+| 2 | Tue Apr 20 | Dallas Mavericks | Denver Nuggets |  |
+| 3 | Fri Apr 23 | Denver Nuggets | Dallas Mavericks |  |
+| 4 | Sun Apr 25 | Denver Nuggets | Dallas Mavericks |  |
+| 5 | Tue Apr 27 | Dallas Mavericks | Denver Nuggets | if needed |
+| 6 | Thu Apr 29 | Denver Nuggets | Dallas Mavericks | if needed |
+| 7 | Sat May 1 | Dallas Mavericks | Denver Nuggets | if needed |
+
+### West (3) San Antonio Spurs vs (6) Golden State Warriors
+
+Home court: San Antonio Spurs. Series 0-0.
+
+| Game | Date | Home | Away | |
+| ---: | --- | --- | --- | --- |
+| 1 | Sat Apr 17 | San Antonio Spurs | Golden State Warriors |  |
+| 2 | Tue Apr 20 | San Antonio Spurs | Golden State Warriors |  |
+| 3 | Fri Apr 23 | Golden State Warriors | San Antonio Spurs |  |
+| 4 | Sun Apr 25 | Golden State Warriors | San Antonio Spurs |  |
+| 5 | Tue Apr 27 | San Antonio Spurs | Golden State Warriors | if needed |
+| 6 | Thu Apr 29 | Golden State Warriors | San Antonio Spurs | if needed |
+| 7 | Sat May 1 | San Antonio Spurs | Golden State Warriors | if needed |
+
+### West (2) Sacramento Kings vs (7) Los Angeles Lakers
+
+Home court: Sacramento Kings. Series 0-0.
+
+| Game | Date | Home | Away | |
+| ---: | --- | --- | --- | --- |
+| 1 | Sun Apr 18 | Sacramento Kings | Los Angeles Lakers |  |
+| 2 | Wed Apr 21 | Sacramento Kings | Los Angeles Lakers |  |
+| 3 | Sat Apr 24 | Los Angeles Lakers | Sacramento Kings |  |
+| 4 | Mon Apr 26 | Los Angeles Lakers | Sacramento Kings |  |
+| 5 | Wed Apr 28 | Sacramento Kings | Los Angeles Lakers | if needed |
+| 6 | Fri Apr 30 | Los Angeles Lakers | Sacramento Kings | if needed |
+| 7 | Sun May 2 | Sacramento Kings | Los Angeles Lakers | if needed |

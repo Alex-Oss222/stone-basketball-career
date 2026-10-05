@@ -277,7 +277,7 @@ def page(record, root=ROOT):
                 s = firsts[pair]
                 a, b = s["clubs"]
                 lines.append(f"  ({pair[0]}) {a:<24} {s['wins'][a]}")
-                lines.append(f"  ({pair[1]}) {b:<24} {s['wins'][b]}   {'-> ' + s['winner'] if s['winner'] else ''}")
+                lines.append((f"  ({pair[1]}) {b:<24} {s['wins'][b]}   " + ("-> " + s["winner"] if s["winner"] else "")).rstrip())
             lines.append("        conference semifinal: winners meet")
         lines.append("    conference final, then the NBA Finals")
         lines.append("")
