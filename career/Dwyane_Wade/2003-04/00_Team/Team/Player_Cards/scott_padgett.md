@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 27 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-04-08 
+**Opening assessment:** September 30, 2003 · **Statistics through:** 2004-04-09 
 
 **Contract/control:** Camp contract from September 30, 2003: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2004-01-10; amended 2003-11-11 to the CBA minimum for 4 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at PF, staff plan 34 minutes (staff rotation dated 2004-03-26, [record](../Depth_Chart/Reviews/2004-03-26/rotation.json)). On the injured list since 2004-03-28 (injury: 9 more game(s) out on the engine's draw).
+**Role:** Starter at PF, staff plan 34 minutes (staff rotation dated 2004-04-09, [record](../Depth_Chart/Reviews/2004-04-09/rotation.json)). On the injured list since 2004-03-28 (injury: 9 more game(s) out on the engine's draw).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -43,11 +43,12 @@ Unassessed. Statistical estimates can be generated from his 2002-03 record with 
 | 2004-03-12 | Staff rotation of 2004-03-12: starter at PF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-03-12/rotation.json) |
 | March 26, 2004 | Injured (medium) in event `2004-03-26-dallas-mavericks-at-miami-heat`: out 9 games; the game builder leaves him out of Miami's next 9 games. No grade change. | [Game 2 result](../../../06_Regular_Season/03_March/Week_4/Game_2.md) |
 | 2004-03-26 | Staff rotation of 2004-03-26: starter at PF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-03-26/rotation.json) |
+| 2004-04-09 | Staff rotation of 2004-04-09: starter at PF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-04-09/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [League baseline](../../../../../../library/2003/league/nba_2003_end_of_season.json), [signing record](../../../04_Training_Camp/camp_roster.json).
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-03-26.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-04-09.
 
 <!-- yearly-statistics:start -->
 

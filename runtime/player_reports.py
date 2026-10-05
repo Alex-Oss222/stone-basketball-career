@@ -475,8 +475,12 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
             ("Stats definitions", manual), ("Filled example", root / "docs/examples/player_stats_preview.md"),
             ("Miami records", stats / "Team/README.md"), ("League records and awards", stats / "League/README.md")]) + "\n"
     overview = player / "assets/career_overview.svg"
+    from .career_dashboard import season_highs
+    current = max((r["season"] for r in records if r.get("competition") == "regular" and r.get("status") == "played"), default=None)
+    highs = season_highs(records, current) if current else []
     outputs[overview] = career_overview(identity, as_of, aggregate(select(records, competition="regular")),
-                                        aggregate(select(records, competition="playoff")))
+                                        aggregate(select(records, competition="playoff")), highs,
+                                        f"{current} regular-season highs" if current else "Season highs")
     page = player / "README.md"
     statistics = outputs[page].split("## Statistics\n\n", 1)[1]
     navigation = [("Professional identity", profile), ("Career statistics", stats / "README.md"), ("Earned honors", award_page),

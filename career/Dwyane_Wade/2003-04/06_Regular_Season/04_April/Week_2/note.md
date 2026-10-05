@@ -14,4 +14,6 @@ days: 8-14
 
 ## Games and events
 
+- 2004-04-09: Cleveland Cavaliers 107 at Miami Heat 108 — Miami Heat W 108-107 ([Game 1](Game_1.md), event `2004-04-09-cleveland-cavaliers-at-miami-heat`)
+
 ## Consequences

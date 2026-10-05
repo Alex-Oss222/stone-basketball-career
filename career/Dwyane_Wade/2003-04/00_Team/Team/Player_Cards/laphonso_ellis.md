@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 33 · **Height:** 6-8 · **Weight:** 240 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-04-08 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-04-09 
 
 **Contract/control:** Under contract for 2003-04 at a reported approximately $3.6M. Guarantee trigger amended in January; exact protected amount unverified. No waiver decision recorded. (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at PF, staff plan 8 minutes (staff rotation dated 2004-03-26, [record](../Depth_Chart/Reviews/2004-03-26/rotation.json)). On the injured list since 2004-04-02 (injury: 1 more game(s) out on the engine's draw).
+**Role:** Rotation at PF, staff plan 8 minutes (staff rotation dated 2004-04-09, [record](../Depth_Chart/Reviews/2004-04-09/rotation.json)). On the injured list since 2004-04-02 (injury: 1 more game(s) out on the engine's draw).
 
 **Offense:** In 2002-03: 5.0 points and 0.3 assists per game; 47.6% true shooting at 19.3% usage.
 
@@ -74,6 +74,7 @@ Contract pages follow the current career date; this personnel assessment retains
 | 2004-03-12 | Staff rotation of 2004-03-12: rotation at PF, staff plan 8 minutes. | [Rotation](../Depth_Chart/Reviews/2004-03-12/rotation.json) |
 | 2004-03-26 | Staff rotation of 2004-03-26: rotation at PF, staff plan 8 minutes. | [Rotation](../Depth_Chart/Reviews/2004-03-26/rotation.json) |
 | March 31, 2004 | Injured (day-to-day) in event `2004-03-31-miami-heat-at-atlanta-hawks`: out 1 game; the game builder leaves him out of Miami's next 1 game. No grade change. | [Game 5 result](../../../06_Regular_Season/03_March/Week_4/Game_5.md) |
+| 2004-04-09 | Staff rotation of 2004-04-09: rotation at PF, staff plan 8 minutes. | [Rotation](../Depth_Chart/Reviews/2004-04-09/rotation.json) |
 
 ## Sources and uncertainty
 
@@ -81,7 +82,7 @@ Contract pages follow the current career date; this personnel assessment retains
   - [Miami roster/control register](../Roster/roster.json)
   - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
   - https://www.basketball-reference.com/players/e/ellisla01.html
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-03-26.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-04-09.
 
 <!-- yearly-statistics:start -->
 
@@ -89,7 +90,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 75 closed Miami game(s) through 2004-04-08.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 75 closed Miami game(s) through 2004-04-09.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |

@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG / PG  
 **Age at assessment:** 19 · **Height:** 6-6 in shoes · **Weight:** 220 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-04-08 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-04-09 
 
 **Contract/control:** Rookie-scale contract signed July 21, 2003: $2,197,000 counted in 2003-04, three seasons plus a 2006-07 team option; 120% of scale at the maximum, 80% protected. (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at SG, staff plan 34 minutes (staff rotation dated 2004-03-26, [record](../Depth_Chart/Reviews/2004-03-26/rotation.json)).
+**Role:** Starter at SG, staff plan 34 minutes (staff rotation dated 2004-04-09, [record](../Depth_Chart/Reviews/2004-04-09/rotation.json)).
 
 **Offense:** Attacks closeouts and ball screens, gets to the paint, finishes through guard contact and can create passes when help commits.
 
@@ -88,6 +88,7 @@ Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.105. Pressure concerns affect t
 | 2004-02-27 | Staff rotation of 2004-02-27: starter at SG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-02-27/rotation.json) |
 | 2004-03-12 | Staff rotation of 2004-03-12: starter at SG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-03-12/rotation.json) |
 | 2004-03-26 | Staff rotation of 2004-03-26: starter at SG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-03-26/rotation.json) |
+| 2004-04-09 | Staff rotation of 2004-04-09: starter at SG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-04-09/rotation.json) |
 
 ## Sources and uncertainty
 
@@ -95,7 +96,7 @@ Free-throw attempts/FGA: 0.352; turnovers/FGA: 0.105. Pressure concerns affect t
   - [Dwyane Wade career profile](../../../../Dwyane_Wade_Player_Profile.md)
   - [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json)
   - https://www.basketball-reference.com/players/w/wadedw01.html
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-03-26.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-04-09.
 
 <!-- yearly-statistics:start -->
 
@@ -107,7 +108,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2003-04 | MIA | 73 | 68 | 35.5 | 18.3 | 4.8 | 4.6 | 1.6 | 1.0 | 1.1 | 51.8% | 39.7% | 90.9% |
+| 2003-04 | MIA | 74 | 69 | 35.4 | 18.1 | 4.9 | 4.6 | 1.6 | 1.0 | 1.1 | 52.0% | 39.7% | 90.9% |
 
 Source: [2003 draft-class source](../../../../../../library/2003/league/nba_2003_draft_class.json) for roster status; detailed historical statistical lines have not yet been imported.
 

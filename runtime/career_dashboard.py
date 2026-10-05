@@ -8,14 +8,37 @@ import textwrap
 from .career_stats import identity_at
 
 
-def career_overview(identity: dict, as_of: str, regular: dict, playoffs: dict) -> str:
+def season_highs(records: list[dict], season: str, competition: str = "regular") -> list[tuple]:
+    """[(label, value, 'date vs/at opponent')] for the season's closed appearances; ties list the earliest game."""
+    played = [r for r in records if r.get("season") == season and r.get("competition") == competition
+              and r.get("status") == "played" and r.get("line") and r["line"].get("appeared")]
+    out = []
+    for key, label in (("pts", "Points"), ("reb", "Rebounds"), ("ast", "Assists"), ("stl", "Steals"), ("blk", "Blocks"),
+                       ("fgm", "Field goals"), ("tpm", "Threes"), ("ftm", "Free throws"), ("seconds", "Minutes")):
+        value = lambda r: r["line"].get(key) if key != "reb" else (r["line"].get("reb") if r["line"].get("reb") is not None
+                                                                   else (r["line"].get("orb") or 0) + (r["line"].get("drb") or 0))
+        rows = [r for r in played if value(r) is not None]
+        if not rows:
+            continue
+        best = max(value(r) for r in rows)
+        games = sorted((r for r in rows if value(r) == best), key=lambda r: r["date"])
+        first = games[0]
+        where = f'{"at" if first.get("venue") == "away" else "vs"} {first.get("opponent")}'
+        when = date.fromisoformat(first["date"]).strftime("%b %d")
+        shown = f"{best / 60:.0f}" if key == "seconds" else str(best)
+        out.append((label, shown, f"{when} {where}" + (f" (+{len(games) - 1})" if len(games) > 1 else "")))
+    return out
+
+
+def career_overview(identity: dict, as_of: str, regular: dict, playoffs: dict, highs: list | None = None,
+                    highs_title: str = "Season highs") -> str:
     p = identity_at(identity, as_of)
     red, dark, white, muted = "#a71930", "#222326", "#ffffff", "#d0d1d4"
     parts = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="{1110 if highs else 820}" viewBox="0 0 1280 {1110 if highs else 820}" role="img" aria-labelledby="title desc">',
         f'<title id="title">{escape(p.get("display_name", p["full_name"]))} career overview</title>',
         f'<desc id="desc">Simulation career as of {escape(as_of)}. Professional identity, NBA regular-season and playoff statistics. N/A means no qualifying denominator or missing data. An accessible text version follows this image in the README.</desc>',
-        '<rect width="1280" height="820" rx="28" fill="#141517"/>',
+        f'<rect width="1280" height="{1110 if highs else 820}" rx="28" fill="#141517"/>',
         '<g>',
     ]
 
@@ -98,6 +121,19 @@ def career_overview(identity: dict, as_of: str, regular: dict, playoffs: dict) -
     text(674, last + 61, p["roster_status"], 21, weight=500)
     text(674, 741, p["prior_program"], 18, muted)
 
-    text(32, 801, "NBA regular season and playoffs are separate records. N/A = no denominator or unavailable data.", 16, "#aeb0b5")
+    footer = 801
+    if highs:
+        rect(20, 790, 1240, 280, dark)
+        text(44, 828, highs_title, 24, weight=700)
+        text(1236, 828, "first game listed; (+n) more games at the same high", 15, muted, anchor="end")
+        line(44, 847, 1236, 847)
+        for i, (label, value, game) in enumerate(highs[:9]):
+            cx = 44 + (i % 5) * 244 if i < 5 else 44 + (i - 5) * 244
+            cy = 892 if i < 5 else 992
+            text(cx, cy, value, 30, weight=700)
+            text(cx + 62, cy - 8, label.upper(), 14, muted, 700)
+            text(cx + 62, cy + 14, game, 15, white)
+        footer = 1091
+    text(32, footer, "NBA regular season and playoffs are separate records. N/A = no denominator or unavailable data.", 16, "#aeb0b5")
     parts.extend(["</g>", "</svg>"])
     return "\n".join(parts) + "\n"
