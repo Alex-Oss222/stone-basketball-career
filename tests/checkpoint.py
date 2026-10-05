@@ -39,6 +39,14 @@ AFTER_CHECKPOINT = (                       # records the clock writes after June
     "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/season_awards.json",
     "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Season_Awards.md",
     f"{SEASON}/00_Team/Team/Roster/Wade_Jersey",
+    f"{SEASON}/season_close.json",
+    f"{SEASON}/09_Draft/draft_order_2004.json",
+    f"{SEASON}/09_Draft/Lottery_Draws",
+    f"{SEASON}/09_Draft/expansion_2004.json",
+    f"{SEASON}/09_Draft/draft_2004.json",
+    f"{SEASON}/09_Draft/Draft_Draws",
+    f"{SEASON}/10_Free_Agency",
+    "career/Dwyane_Wade/2004-05",
 )
 
 

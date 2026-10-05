@@ -249,7 +249,10 @@ def month_window(season, month):
 def build_reports(root: Path, player: Path) -> dict[Path, str]:
     config = json.loads((root / "foundation/season_structure.json").read_text(encoding="utf-8"))
     identity = json.loads((player / "professional_identity.json").read_text(encoding="utf-8"))
-    seasons = sorted(p for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name))
+    # A season is live once it has a current state; the next season's folder can exist earlier (the season close
+    # writes its expectations there) and is not a season to report yet.
+    seasons = sorted(p for p in player.iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)
+                     and (p / "current_state.json").is_file())
     states = {s.name: json.loads((s / "current_state.json").read_text(encoding="utf-8")) for s in seasons}
     as_of = max(s["current_date"] for s in states.values())
     records = collect_games(player, identity, as_of)

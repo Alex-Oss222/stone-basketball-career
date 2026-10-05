@@ -19,7 +19,8 @@ def season_dir(requested: str | None = None) -> Path:
     players = [p for p in career.iterdir() if p.is_dir()]
     if len(players) != 1:
         raise SystemExit("expected exactly one player directory under career")
-    years = [p for p in players[0].iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)]
+    years = [p for p in players[0].iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)
+             and (p / "current_state.json").is_file()]          # a next-season folder before the rollover is not live
     if requested:
         years = [p for p in years if p.name == requested]
     if len(years) != 1:

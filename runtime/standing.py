@@ -56,7 +56,7 @@ def season_folder(root, on):
     """The season folder that holds the records on a date: the date's season, or the latest earlier one."""
     root = Path(root)
     wanted = season_of_date(date.fromisoformat(on))
-    folders = sorted(p.name for p in (root / PLAYER).iterdir() if p.is_dir() and SEASON_RE.match(p.name))
+    folders = live_folders(root)
     if wanted in folders:
         return wanted
     if not folders:
@@ -65,9 +65,15 @@ def season_folder(root, on):
     return earlier[-1] if earlier else folders[0]      # the clock sits in the offseason before the first season
 
 
+def live_folders(root):
+    """Season folders with a current state, oldest first. The next season's folder can exist before the rollover
+    (the season close writes its expectations there) and is not live until its state is written."""
+    return sorted(p.name for p in (Path(root) / PLAYER).iterdir()
+                  if p.is_dir() and SEASON_RE.match(p.name) and (p / "current_state.json").is_file())
+
+
 def current_date(root):
-    folders = sorted(p.name for p in (Path(root) / PLAYER).iterdir() if p.is_dir() and SEASON_RE.match(p.name))
-    return read(PLAYER / folders[-1] / "current_state.json", root)["current_date"]
+    return read(PLAYER / live_folders(root)[-1] / "current_state.json", root)["current_date"]
 
 
 def signed_on(root, on, folder):

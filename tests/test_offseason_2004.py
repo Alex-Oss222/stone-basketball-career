@@ -105,3 +105,13 @@ class HistoricalWadeExcludedTests(unittest.TestCase):
         wade = build_profile(ROOT, on="2004-04-28")["players"]["wadedw01"]
         self.assertIn("paint_pressure", wade["scouting"]["traits"])
         self.assertIn("spatial_weights", wade["style"])
+
+
+class NextSeasonFolderTests(unittest.TestCase):
+    def test_a_season_folder_without_a_state_is_not_live(self):
+        """The season close writes 2004-05 expectations before the rollover; the live season stays 2003-04."""
+        from runtime import standing
+        live = standing.live_folders(ROOT)
+        self.assertTrue(all((ROOT / "career/Dwyane_Wade" / f / "current_state.json").is_file() for f in live))
+        if (ROOT / "career/Dwyane_Wade/2004-05").is_dir() and not (ROOT / "career/Dwyane_Wade/2004-05/current_state.json").is_file():
+            self.assertNotIn("2004-05", live)

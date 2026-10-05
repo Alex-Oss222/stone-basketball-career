@@ -239,9 +239,12 @@ def discover():
     players = [p for p in career.iterdir() if p.is_dir()]
     if len(players) != 1:
         raise ValueError("career must contain exactly one player directory")
-    years = [p for p in players[0].iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)]
+    # The active season is the one with a current state. The next season's folder can exist before the rollover
+    # (the season close writes its expectations there); it becomes active when the rollover writes its state.
+    years = [p for p in players[0].iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)
+             and (p / "current_state.json").is_file()]
     if len(years) != 1:
-        raise ValueError("player directory must contain exactly one active season directory")
+        raise ValueError("player directory must contain exactly one active season directory (one with current_state.json)")
     return players[0], years[0]
 
 
