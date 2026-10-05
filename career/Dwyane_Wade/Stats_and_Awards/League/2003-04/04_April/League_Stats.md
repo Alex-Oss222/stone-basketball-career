@@ -4,7 +4,7 @@
 
 NBA regular season · April 1-30, 2004
 
-407 tracked players · 105 closed games in this record · Through April 14, 2004.
+407 tracked players · 105 closed games in this record · Through April 15, 2004.
 
 ## Leaders
 
@@ -593,7 +593,7 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | Period | Calendar dates | Closed games | Status |
 | --- | --- | ---: | --- |
 | [Week 1](Week_1/League_Stats.md) | April 1-7, 2004 | 48 | Complete |
-| [Week 2](Week_2/League_Stats.md) | April 8-14, 2004 | 57 | Through April 14, 2004 |
+| [Week 2](Week_2/League_Stats.md) | April 8-14, 2004 | 57 | Complete |
 
 ## Coverage
 

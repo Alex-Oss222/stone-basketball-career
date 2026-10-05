@@ -4,7 +4,7 @@
 
 2003-04 · Calendar coverage: April 8-14, 2004
 
-As of April 12, 2004: 2 award decision(s) closed, announced April 12, 2004.
+As of April 15, 2004: 4 award decision(s) closed, announced April 12, 2004, April 15, 2004.
 
 Official award window and announcement date: listed with each decision below.
 
@@ -23,10 +23,23 @@ The rows below are an internal shortlist, not published NBA vote totals. A calen
 | West | 2 | Peja Stojakovic | Sacramento Kings | 4 G, 4-0 in his games, 22.0 PTS, 7.8 REB, 2.0 AST, Game Score 16.72 a game; score 78.9 | Shortlist |
 | West | 3 | Damon Stoudamire | Portland Trail Blazers | 4 G, 3-1 in his games, 15.8 PTS, 6.0 REB, 9.8 AST, Game Score 16.02 a game; score 73.1 | Shortlist |
 
+### April 12, 2004 to April 14, 2004 (announced April 15, 2004)
+
+| Conference | Rank slot | Player | Team | Evidence | Result |
+| --- | ---: | --- | --- | --- | --- |
+| East | 1 | Mike James | Miami Heat | 2 G, 2-0 in his games, 23.0 PTS, 6.0 REB, 8.0 AST, Game Score 19.5 a game; score 45.0 | **WINNER** |
+| East | 2 | Ron Artest | Indiana Pacers | 2 G, 2-0 in his games, 21.5 PTS, 3.5 REB, 5.5 AST, Game Score 18.05 a game; score 42.1 | Shortlist |
+| East | 3 | Vince Carter | Toronto Raptors | 2 G, 2-0 in his games, 24.0 PTS, 5.0 REB, 3.5 AST, Game Score 17.8 a game; score 41.6 | Shortlist |
+| West | 1 | Kevin Garnett | Minnesota Timberwolves | 2 G, 2-0 in his games, 32.5 PTS, 18.0 REB, 7.0 AST, Game Score 29.65 a game; score 65.3 | **WINNER** |
+| West | 2 | Tim Duncan | San Antonio Spurs | 2 G, 1-1 in his games, 25.0 PTS, 15.5 REB, 2.5 AST, Game Score 23.1 a game; score 49.2 | Shortlist |
+| West | 3 | Sam Cassell | Minnesota Timberwolves | 2 G, 2-0 in his games, 24.0 PTS, 2.5 REB, 8.0 AST, Game Score 21.0 a game; score 48.0 | Shortlist |
+
 ## Decision record
 
 - East Player of the Week, April 5, 2004 to April 11, 2004, announced April 12, 2004: **Vince Carter**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
 - West Player of the Week, April 5, 2004 to April 11, 2004, announced April 12, 2004: **Mike Bibby**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
+- East Player of the Week, April 12, 2004 to April 14, 2004, announced April 15, 2004: **Mike James**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
+- West Player of the Week, April 12, 2004 to April 14, 2004, announced April 15, 2004: **Kevin Garnett**. Ranked from closed branch results only (`award_decisions.json`, rule in `runtime/award_decisions.py`).
 
 
 [Awards procedure and research](../../../README.md) · [Player evidence for this calendar period](League_Stats.md)
