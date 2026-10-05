@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-04-28**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-05-02**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -328,7 +328,7 @@ Card date: **2004-04-28**. 504 registry players, one Markdown card and one inter
 | [Amar'e Stoudemire](stoudam01.md) | Phoenix Suns | 21 | sourced | [open](stoudam01.html) |
 | [Antoine Walker](walkean02.md) | Dallas Mavericks | 27 | sourced | [open](walkean02.html) |
 | [Antonio McDyess](mcdyean01.md) | New York Knicks | None | silhouette | [open](mcdyean01.html) |
-| [Austin Croshere](croshau01.md) | Indiana Pacers | 28 | sourced | [open](croshau01.html) |
+| [Austin Croshere](croshau01.md) | Indiana Pacers | 29 | sourced | [open](croshau01.html) |
 | [Boris Diaw](diawbo01.md) | Atlanta Hawks | 22 | sourced | [open](diawbo01.html) |
 | [Brandon Hunter](huntebr01.md) | Boston Celtics | 23 | sourced | [open](huntebr01.html) |
 | [Brian Cardinal](cardibr01.md) | Golden State Warriors | None | silhouette | [open](cardibr01.html) |
@@ -419,7 +419,7 @@ Card date: **2004-04-28**. 504 registry players, one Markdown card and one inter
 | [Tommy Smith](smithto03.md) | Chicago Bulls (draft rights) | 23 | silhouette | [open](smithto03.html) |
 | [Toni Kukoc](kukocto01.md) | Milwaukee Bucks | 35 | sourced | [open](kukocto01.html) |
 | [Torraye Braggs](braggto01.md) | Houston Rockets | None | silhouette | [open](braggto01.html) |
-| [Troy Murphy](murphtr01.md) | Golden State Warriors | 23 | sourced | [open](murphtr01.html) |
+| [Troy Murphy](murphtr01.md) | Golden State Warriors | 24 | sourced | [open](murphtr01.html) |
 | [Tyrone Hill](hillty01.md) | Philadelphia 76ers | 36 | silhouette | [open](hillty01.html) |
 | [Tyson Chandler](chandty01.md) | Chicago Bulls | None | silhouette | [open](chandty01.html) |
 | [Udonis Haslem](hasleud01.md) | Miami Heat | 23 | silhouette | [open](hasleud01.html) |
@@ -510,7 +510,7 @@ Card date: **2004-04-28**. 504 registry players, one Markdown card and one inter
 | [Marc Jackson](jacksma02.md) | Philadelphia 76ers | 29 | sourced | [open](jacksma02.html) |
 | [Marcus Camby](cambyma01.md) | Denver Nuggets | 30 | sourced | [open](cambyma01.html) |
 | [Mark Blount](blounma01.md) | Boston Celtics | 28 | sourced | [open](blounma01.html) |
-| [Melvin Ely](elyme01.md) | Los Angeles Clippers | 25 | silhouette | [open](elyme01.html) |
+| [Melvin Ely](elyme01.md) | Los Angeles Clippers | 26 | silhouette | [open](elyme01.html) |
 | [Mengke Bateer](bateeme01.md) | Toronto Raptors | None | silhouette | [open](bateeme01.html) |
 | [Michael Doleac](doleami01.md) | New York Knicks | 26 | sourced | [open](doleami01.html) |
 | [Michael Olowokandi](olowomi01.md) | Minnesota Timberwolves | None | silhouette | [open](olowomi01.html) |
