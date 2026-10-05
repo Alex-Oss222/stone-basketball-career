@@ -2,9 +2,9 @@
 
 # Contract | Karl Malone
 
-Known through: 2004-05-16. [Open interactive contract](malonka01.html#contract) · [Contract history](malonka01.html#contract-history)
+Known through: 2004-05-23. [Open interactive contract](malonka01.html#contract) · [Contract history](malonka01.html#contract-history)
 
-Karl Malone: under contract. Evidence cutoff: 2004-05-16.
+Karl Malone: under contract. Evidence cutoff: 2004-05-23.
 
 ## Current contract
 

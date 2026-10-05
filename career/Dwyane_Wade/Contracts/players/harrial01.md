@@ -2,9 +2,9 @@
 
 # Contract | Al Harrington
 
-Known through: 2004-05-16. [Open interactive contract](harrial01.html#contract) · [Contract history](harrial01.html#contract-history)
+Known through: 2004-05-23. [Open interactive contract](harrial01.html#contract) · [Contract history](harrial01.html#contract-history)
 
-Al Harrington: under contract. Evidence cutoff: 2004-05-16.
+Al Harrington: under contract. Evidence cutoff: 2004-05-23.
 
 ## Current contract
 

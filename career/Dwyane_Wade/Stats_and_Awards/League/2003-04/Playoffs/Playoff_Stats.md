@@ -1,59 +1,59 @@
 # 2003-04 playoff statistics
 
-Through 2004-05-16: 60 closed playoff game(s). Playoff games only, from closed results (`runtime/playoff_stats.py`); the regular season is a separate record. Clubs in order of playoff wins; percentages from summed makes and attempts. [Bracket and schedule](../Playoffs.md).
+Through 2004-05-23: 63 closed playoff game(s). Playoff games only, from closed results (`runtime/playoff_stats.py`); the regular season is a separate record. Clubs in order of playoff wins; percentages from summed makes and attempts. [Bracket and schedule](../Playoffs.md).
 
 ## All playoff games
 
 | Player | Club | G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G | FG | FG% | 3P | 3P% | FT | FT% | TS% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Ron Artest | Indiana Pacers | 12 | 12 | 36.3 | 15.6 | 5.2 | 4.8 | 2.3 | 0.7 | 2.2 | 68-172 | .395 | 9-29 | .310 | 42-60 | .700 | .471 |
-| Jermaine O'Neal | Indiana Pacers | 12 | 12 | 35.1 | 20.0 | 10.5 | 1.0 | 1.0 | 1.8 | 1.8 | 84-194 | .433 | 1-3 | .333 | 71-87 | .816 | .517 |
-| Al Harrington | Indiana Pacers | 12 | 12 | 29.8 | 10.9 | 6.8 | 1.2 | 1.0 | 0.4 | 1.1 | 53-125 | .424 | 4-6 | .667 | 21-32 | .656 | .471 |
-| Reggie Miller | Indiana Pacers | 12 | 12 | 29.3 | 11.2 | 2.8 | 4.1 | 1.3 | 0.1 | 0.8 | 42-103 | .408 | 25-59 | .424 | 26-27 | .963 | .588 |
-| Jamaal Tinsley | Indiana Pacers | 12 | 12 | 27.7 | 10.9 | 3.5 | 6.1 | 1.3 | 0.4 | 3.0 | 43-108 | .398 | 26-66 | .394 | 19-23 | .826 | .555 |
-| Jeff Foster | Indiana Pacers | 12 | 0 | 22.8 | 7.5 | 6.7 | 0.5 | 0.9 | 1.0 | 0.6 | 40-71 | .563 | 0-1 | .000 | 10-19 | .526 | .567 |
-| Anthony Johnson | Indiana Pacers | 12 | 0 | 20.8 | 7.2 | 2.8 | 2.4 | 0.9 | 0.3 | 1.1 | 33-85 | .388 | 5-14 | .357 | 16-22 | .727 | .459 |
-| Kenny Anderson | Indiana Pacers | 12 | 0 | 19.4 | 5.1 | 2.6 | 2.2 | 0.3 | 0.2 | 1.2 | 26-68 | .382 | 0-2 | .000 | 9-13 | .692 | .414 |
-| Fred Jones | Indiana Pacers | 12 | 0 | 14.6 | 4.2 | 1.3 | 1.9 | 0.4 | 0.3 | 0.6 | 16-38 | .421 | 4-10 | .400 | 14-17 | .824 | .550 |
-| Austin Croshere | Indiana Pacers | 9 | 0 | 3.8 | 1.4 | 1.0 | 0.2 | 0.1 | 0.1 | 0.1 | 3-11 | .273 | 2-5 | .400 | 5-5 | 1.000 | .492 |
-| Smush Parker | Indiana Pacers | 5 | 0 | 1.9 | 0.0 | 0.4 | 0.0 | 0.2 | 0.0 | 0.2 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
-| Scot Pollard | Indiana Pacers | 3 | 0 | 1.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
-| Kobe Bryant | Los Angeles Lakers | 11 | 11 | 38.6 | 22.7 | 5.5 | 5.9 | 1.6 | 0.2 | 2.5 | 75-187 | .401 | 13-37 | .351 | 87-111 | .784 | .530 |
-| Shaquille O'Neal | Los Angeles Lakers | 11 | 11 | 35.3 | 19.6 | 10.7 | 3.3 | 0.5 | 1.6 | 2.1 | 83-139 | .597 | 1-1 | 1.000 | 49-102 | .480 | .587 |
-| Gary Payton | Los Angeles Lakers | 11 | 11 | 34.5 | 11.9 | 3.8 | 5.8 | 1.1 | 0.2 | 2.2 | 53-120 | .442 | 4-17 | .235 | 21-30 | .700 | .492 |
-| Brent Barry | Los Angeles Lakers | 11 | 11 | 31.2 | 10.7 | 5.3 | 5.3 | 1.1 | 0.5 | 2.8 | 36-61 | .590 | 21-32 | .656 | 25-28 | .893 | .805 |
-| Devean George | Los Angeles Lakers | 11 | 11 | 25.3 | 7.0 | 4.4 | 1.3 | 1.4 | 0.5 | 0.6 | 28-80 | .350 | 9-27 | .333 | 12-13 | .923 | .449 |
-| Derek Fisher | Los Angeles Lakers | 11 | 0 | 21.1 | 7.5 | 1.9 | 2.1 | 1.0 | 0.5 | 1.5 | 29-70 | .414 | 8-19 | .421 | 16-22 | .727 | .515 |
-| Horace Grant | Los Angeles Lakers | 11 | 0 | 19.7 | 5.5 | 3.9 | 0.8 | 0.5 | 0.4 | 0.6 | 26-64 | .406 | 0-2 | .000 | 9-11 | .818 | .443 |
-| Slava Medvedenko | Los Angeles Lakers | 11 | 0 | 19.3 | 10.4 | 5.0 | 0.8 | 0.5 | 0.4 | 0.4 | 47-97 | .485 | 1-4 | .250 | 19-21 | .905 | .537 |
-| Samaki Walker | Los Angeles Lakers | 11 | 0 | 13.3 | 2.5 | 2.9 | 0.8 | 0.4 | 0.3 | 0.5 | 11-34 | .324 | 1-3 | .333 | 4-7 | .571 | .364 |
-| Jannero Pargo | Los Angeles Lakers | 7 | 0 | 2.9 | 1.7 | 0.4 | 0.4 | 0.1 | 0.1 | 0.1 | 4-9 | .444 | 2-3 | .667 | 2-2 | 1.000 | .607 |
-| Kareem Rush | Los Angeles Lakers | 8 | 0 | 2.0 | 1.5 | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 5-7 | .714 | 1-1 | 1.000 | 1-2 | .500 | .761 |
+| Kobe Bryant | Los Angeles Lakers | 13 | 13 | 38.6 | 22.3 | 5.9 | 6.3 | 1.9 | 0.2 | 2.3 | 86-217 | .396 | 15-45 | .333 | 103-132 | .780 | .527 |
+| Shaquille O'Neal | Los Angeles Lakers | 13 | 13 | 35.5 | 19.2 | 10.5 | 3.6 | 0.6 | 1.7 | 2.0 | 97-168 | .577 | 1-1 | 1.000 | 54-110 | .491 | .575 |
+| Gary Payton | Los Angeles Lakers | 13 | 13 | 34.2 | 12.5 | 3.5 | 6.0 | 1.2 | 0.2 | 2.1 | 64-143 | .448 | 4-22 | .182 | 30-41 | .732 | .503 |
+| Brent Barry | Los Angeles Lakers | 13 | 13 | 31.3 | 10.7 | 5.4 | 4.9 | 1.2 | 0.7 | 2.9 | 44-74 | .595 | 24-37 | .649 | 27-32 | .844 | .789 |
+| Devean George | Los Angeles Lakers | 13 | 13 | 25.6 | 7.8 | 4.1 | 1.3 | 1.2 | 0.5 | 0.5 | 36-93 | .387 | 12-32 | .375 | 17-21 | .810 | .494 |
+| Derek Fisher | Los Angeles Lakers | 13 | 0 | 20.8 | 7.6 | 1.8 | 2.0 | 1.0 | 0.5 | 1.3 | 34-82 | .415 | 10-24 | .417 | 21-27 | .778 | .527 |
+| Horace Grant | Los Angeles Lakers | 13 | 0 | 19.5 | 5.5 | 3.8 | 0.8 | 0.4 | 0.5 | 0.5 | 30-72 | .417 | 0-3 | .000 | 11-13 | .846 | .457 |
+| Slava Medvedenko | Los Angeles Lakers | 13 | 0 | 19.2 | 9.7 | 4.8 | 0.8 | 0.6 | 0.3 | 0.4 | 53-115 | .461 | 1-5 | .200 | 19-21 | .905 | .507 |
+| Samaki Walker | Los Angeles Lakers | 13 | 0 | 13.2 | 2.6 | 2.7 | 0.8 | 0.4 | 0.2 | 0.7 | 14-41 | .341 | 1-3 | .333 | 5-8 | .625 | .382 |
+| Jannero Pargo | Los Angeles Lakers | 9 | 0 | 3.1 | 2.2 | 0.4 | 0.3 | 0.1 | 0.1 | 0.3 | 8-14 | .571 | 2-3 | .667 | 2-2 | 1.000 | .672 |
+| Kareem Rush | Los Angeles Lakers | 9 | 0 | 1.8 | 1.3 | 0.0 | 0.0 | 0.0 | 0.1 | 0.1 | 5-7 | .714 | 1-1 | 1.000 | 1-2 | .500 | .761 |
 | Luke Walton | Los Angeles Lakers | 5 | 0 | 1.6 | 0.0 | 0.6 | 0.0 | 0.2 | 0.0 | 0.0 | 0-1 | .000 | 0-1 | .000 | 0-0 | N/A | .000 |
-| Kevin Garnett | Minnesota Timberwolves | 8 | 8 | 38.6 | 22.4 | 13.6 | 6.1 | 1.2 | 0.9 | 2.5 | 75-141 | .532 | 2-6 | .333 | 27-38 | .711 | .567 |
-| Latrell Sprewell | Minnesota Timberwolves | 8 | 8 | 38.4 | 18.8 | 4.6 | 6.0 | 1.5 | 0.4 | 1.2 | 57-115 | .496 | 14-28 | .500 | 22-29 | .759 | .587 |
-| Sam Cassell | Minnesota Timberwolves | 8 | 8 | 34.0 | 20.0 | 3.0 | 8.4 | 2.2 | 0.2 | 2.9 | 62-125 | .496 | 6-18 | .333 | 30-32 | .938 | .575 |
-| Marcus Camby | Minnesota Timberwolves | 8 | 8 | 29.7 | 11.5 | 9.9 | 0.9 | 1.0 | 2.5 | 0.9 | 39-72 | .542 | 0-3 | .000 | 14-16 | .875 | .582 |
-| Trenton Hassell | Minnesota Timberwolves | 8 | 8 | 25.9 | 5.4 | 3.5 | 2.1 | 0.9 | 0.4 | 0.2 | 19-39 | .487 | 1-1 | 1.000 | 4-4 | 1.000 | .527 |
-| Wally Szczerbiak | Minnesota Timberwolves | 8 | 0 | 22.8 | 9.0 | 2.9 | 2.4 | 0.6 | 0.1 | 0.8 | 31-72 | .431 | 4-14 | .286 | 6-9 | .667 | .474 |
-| Troy Hudson | Minnesota Timberwolves | 8 | 0 | 18.0 | 8.8 | 1.9 | 2.5 | 0.6 | 0.0 | 0.9 | 24-58 | .414 | 7-14 | .500 | 15-18 | .833 | .531 |
-| Mark Madsen | Minnesota Timberwolves | 8 | 0 | 17.3 | 4.8 | 3.8 | 0.6 | 0.4 | 0.2 | 1.2 | 15-36 | .417 | 0-1 | .000 | 8-12 | .667 | .460 |
-| Gary Trent | Minnesota Timberwolves | 8 | 0 | 13.2 | 4.0 | 2.9 | 0.8 | 0.4 | 0.5 | 1.0 | 12-28 | .429 | 0-1 | .000 | 8-14 | .571 | .468 |
+| Kevin Garnett | Minnesota Timberwolves | 10 | 10 | 38.9 | 23.1 | 13.2 | 6.0 | 1.0 | 1.2 | 2.7 | 94-176 | .534 | 2-9 | .222 | 41-55 | .745 | .577 |
+| Latrell Sprewell | Minnesota Timberwolves | 10 | 10 | 38.7 | 17.8 | 4.8 | 5.4 | 1.3 | 0.3 | 1.3 | 69-144 | .479 | 16-34 | .471 | 24-32 | .750 | .563 |
+| Sam Cassell | Minnesota Timberwolves | 10 | 10 | 34.8 | 21.9 | 3.3 | 7.9 | 2.0 | 0.2 | 3.0 | 82-164 | .500 | 8-24 | .333 | 47-50 | .940 | .589 |
+| Marcus Camby | Minnesota Timberwolves | 10 | 10 | 29.5 | 10.3 | 9.3 | 1.3 | 1.2 | 2.4 | 0.9 | 43-86 | .500 | 0-4 | .000 | 17-21 | .810 | .541 |
+| Trenton Hassell | Minnesota Timberwolves | 10 | 10 | 26.7 | 5.6 | 3.4 | 2.2 | 0.9 | 0.3 | 0.3 | 25-48 | .521 | 1-1 | 1.000 | 5-6 | .833 | .553 |
+| Wally Szczerbiak | Minnesota Timberwolves | 10 | 0 | 22.4 | 8.8 | 2.7 | 2.2 | 0.5 | 0.1 | 1.0 | 39-91 | .429 | 4-17 | .235 | 6-9 | .667 | .463 |
+| Troy Hudson | Minnesota Timberwolves | 10 | 0 | 17.4 | 7.5 | 2.1 | 2.1 | 0.5 | 0.1 | 0.9 | 26-67 | .388 | 7-15 | .467 | 16-20 | .800 | .495 |
+| Mark Madsen | Minnesota Timberwolves | 10 | 0 | 17.0 | 4.1 | 3.3 | 0.7 | 0.3 | 0.2 | 1.1 | 16-39 | .410 | 0-1 | .000 | 9-16 | .562 | .445 |
+| Gary Trent | Minnesota Timberwolves | 10 | 0 | 12.7 | 3.9 | 2.9 | 0.8 | 0.3 | 0.5 | 1.0 | 15-32 | .469 | 0-1 | .000 | 9-16 | .562 | .499 |
 | Loren Woods | Minnesota Timberwolves | 1 | 0 | 2.6 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
-| Ervin Johnson | Minnesota Timberwolves | 4 | 0 | 1.8 | 0.0 | 0.5 | 0.2 | 0.0 | 0.0 | 0.2 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Oliver Miller | Minnesota Timberwolves | 4 | 0 | 1.8 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 1-3 | .333 | 0-1 | .000 | 0-0 | N/A | .333 |
-| Richard Jefferson | New Jersey Nets | 9 | 9 | 37.5 | 15.7 | 5.8 | 4.0 | 1.3 | 0.3 | 1.8 | 54-117 | .462 | 8-12 | .667 | 25-32 | .781 | .538 |
-| Jason Kidd | New Jersey Nets | 9 | 9 | 35.8 | 14.7 | 7.4 | 7.0 | 1.1 | 0.1 | 3.2 | 50-130 | .385 | 7-26 | .269 | 25-32 | .781 | .458 |
-| Kerry Kittles | New Jersey Nets | 9 | 9 | 33.0 | 14.0 | 3.0 | 2.1 | 2.0 | 0.3 | 1.6 | 47-95 | .495 | 11-26 | .423 | 21-26 | .808 | .592 |
-| Kenyon Martin | New Jersey Nets | 9 | 9 | 30.7 | 17.4 | 8.8 | 2.0 | 0.9 | 1.4 | 2.3 | 62-118 | .525 | 1-9 | .111 | 32-48 | .667 | .564 |
-| Jason Collins | New Jersey Nets | 9 | 9 | 28.5 | 6.7 | 5.3 | 2.7 | 1.0 | 1.0 | 0.8 | 23-52 | .442 | 0-1 | .000 | 14-22 | .636 | .486 |
-| Lucious Harris | New Jersey Nets | 9 | 0 | 22.5 | 6.1 | 2.4 | 2.1 | 1.4 | 0.0 | 1.3 | 23-66 | .348 | 7-22 | .318 | 2-3 | .667 | .408 |
-| Rodney Rogers | New Jersey Nets | 9 | 0 | 20.2 | 6.3 | 4.7 | 2.6 | 0.6 | 0.6 | 1.3 | 21-59 | .356 | 3-15 | .200 | 12-13 | .923 | .440 |
-| Aaron Williams | New Jersey Nets | 9 | 0 | 18.2 | 7.3 | 4.2 | 1.3 | 0.6 | 0.2 | 1.3 | 30-47 | .638 | 1-2 | .500 | 5-11 | .455 | .637 |
-| Alonzo Mourning | New Jersey Nets | 9 | 0 | 8.3 | 4.7 | 1.4 | 0.7 | 0.4 | 0.2 | 0.7 | 16-27 | .593 | 1-2 | .500 | 9-10 | .900 | .669 |
-| Brian Scalabrine | New Jersey Nets | 7 | 0 | 3.9 | 1.0 | 0.9 | 0.4 | 0.1 | 0.0 | 0.0 | 2-9 | .222 | 0-2 | .000 | 3-3 | 1.000 | .339 |
+| Ervin Johnson | Minnesota Timberwolves | 6 | 0 | 1.7 | 0.0 | 0.3 | 0.2 | 0.0 | 0.0 | 0.2 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Richard Jefferson | New Jersey Nets | 10 | 10 | 37.5 | 15.6 | 5.6 | 3.8 | 1.2 | 0.3 | 1.8 | 61-130 | .469 | 8-13 | .615 | 26-34 | .765 | .538 |
+| Jason Kidd | New Jersey Nets | 10 | 10 | 35.6 | 14.7 | 7.5 | 7.3 | 1.0 | 0.1 | 3.3 | 54-139 | .388 | 8-28 | .286 | 31-38 | .816 | .472 |
+| Kerry Kittles | New Jersey Nets | 10 | 10 | 33.0 | 13.8 | 3.1 | 2.0 | 2.1 | 0.3 | 1.5 | 52-104 | .500 | 13-29 | .448 | 21-26 | .808 | .598 |
+| Kenyon Martin | New Jersey Nets | 10 | 10 | 31.0 | 17.5 | 8.8 | 2.2 | 1.0 | 1.6 | 2.2 | 69-131 | .527 | 1-10 | .100 | 36-54 | .667 | .565 |
+| Jason Collins | New Jersey Nets | 10 | 10 | 28.4 | 6.8 | 5.1 | 2.7 | 1.0 | 1.0 | 0.7 | 27-61 | .443 | 0-2 | .000 | 14-22 | .636 | .481 |
+| Lucious Harris | New Jersey Nets | 10 | 0 | 22.5 | 6.1 | 2.3 | 1.9 | 1.3 | 0.0 | 1.3 | 25-73 | .342 | 7-22 | .318 | 4-5 | .800 | .406 |
+| Rodney Rogers | New Jersey Nets | 10 | 0 | 20.2 | 6.9 | 5.0 | 2.4 | 0.5 | 0.5 | 1.3 | 27-69 | .391 | 3-18 | .167 | 12-13 | .923 | .462 |
+| Aaron Williams | New Jersey Nets | 10 | 0 | 18.3 | 7.0 | 3.9 | 1.4 | 0.6 | 0.2 | 1.4 | 32-50 | .640 | 1-3 | .333 | 5-11 | .455 | .638 |
+| Alonzo Mourning | New Jersey Nets | 10 | 0 | 8.2 | 4.2 | 1.5 | 0.7 | 0.5 | 0.3 | 0.8 | 16-27 | .593 | 1-2 | .500 | 9-10 | .900 | .669 |
+| Brian Scalabrine | New Jersey Nets | 8 | 0 | 3.6 | 0.9 | 0.8 | 0.4 | 0.1 | 0.0 | 0.0 | 2-10 | .200 | 0-3 | .000 | 3-3 | 1.000 | .309 |
 | Brandon Armstrong | New Jersey Nets | 3 | 0 | 3.2 | 2.7 | 0.3 | 0.3 | 0.0 | 0.0 | 0.0 | 4-5 | .800 | 0-0 | N/A | 0-0 | N/A | .800 |
-| Zoran Planinic | New Jersey Nets | 4 | 0 | 2.8 | 1.2 | 0.8 | 0.2 | 0.0 | 0.0 | 0.5 | 2-8 | .250 | 1-2 | .500 | 0-0 | N/A | .312 |
+| Zoran Planinic | New Jersey Nets | 5 | 0 | 2.6 | 1.4 | 0.8 | 0.2 | 0.0 | 0.0 | 0.4 | 3-9 | .333 | 1-2 | .500 | 0-0 | N/A | .389 |
+| Ron Artest | Indiana Pacers | 13 | 13 | 36.2 | 15.2 | 5.2 | 4.9 | 2.4 | 0.8 | 2.1 | 72-191 | .377 | 10-35 | .286 | 44-64 | .688 | .452 |
+| Jermaine O'Neal | Indiana Pacers | 13 | 13 | 35.0 | 19.2 | 10.5 | 1.1 | 1.0 | 1.6 | 2.1 | 88-208 | .423 | 1-4 | .250 | 73-89 | .820 | .506 |
+| Al Harrington | Indiana Pacers | 13 | 13 | 29.8 | 10.9 | 6.9 | 1.2 | 0.9 | 0.4 | 1.3 | 57-135 | .422 | 5-8 | .625 | 23-34 | .676 | .473 |
+| Reggie Miller | Indiana Pacers | 13 | 13 | 29.1 | 10.7 | 2.5 | 3.8 | 1.3 | 0.1 | 0.8 | 43-106 | .406 | 25-61 | .410 | 28-29 | .966 | .585 |
+| Jamaal Tinsley | Indiana Pacers | 13 | 13 | 27.6 | 10.4 | 3.4 | 5.7 | 1.2 | 0.5 | 3.0 | 44-112 | .393 | 26-68 | .382 | 21-25 | .840 | .549 |
+| Jeff Foster | Indiana Pacers | 13 | 0 | 22.9 | 7.5 | 6.5 | 0.6 | 0.9 | 1.1 | 0.5 | 43-75 | .573 | 0-1 | .000 | 12-21 | .571 | .582 |
+| Anthony Johnson | Indiana Pacers | 13 | 0 | 21.0 | 6.9 | 2.8 | 2.6 | 0.8 | 0.3 | 1.0 | 34-89 | .382 | 5-14 | .357 | 17-24 | .708 | .452 |
+| Kenny Anderson | Indiana Pacers | 13 | 0 | 19.6 | 5.6 | 2.4 | 2.2 | 0.3 | 0.3 | 1.2 | 32-78 | .410 | 0-4 | .000 | 9-13 | .692 | .436 |
+| Fred Jones | Indiana Pacers | 13 | 0 | 14.6 | 4.2 | 1.4 | 1.8 | 0.4 | 0.3 | 0.6 | 18-42 | .429 | 4-11 | .364 | 14-17 | .824 | .546 |
+| Austin Croshere | Indiana Pacers | 10 | 0 | 3.6 | 1.5 | 1.0 | 0.2 | 0.1 | 0.1 | 0.1 | 3-12 | .250 | 2-5 | .400 | 7-7 | 1.000 | .497 |
+| Scot Pollard | Indiana Pacers | 3 | 0 | 1.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Smush Parker | Indiana Pacers | 6 | 0 | 1.9 | 0.0 | 0.3 | 0.0 | 0.2 | 0.0 | 0.2 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Michael Redd | Milwaukee Bucks | 10 | 10 | 37.3 | 19.8 | 6.8 | 2.5 | 1.0 | 0.1 | 1.8 | 68-165 | .412 | 6-31 | .194 | 56-64 | .875 | .513 |
 | Tim Thomas | Milwaukee Bucks | 10 | 10 | 32.3 | 13.1 | 4.5 | 2.7 | 0.6 | 0.3 | 1.3 | 47-115 | .409 | 10-31 | .323 | 27-33 | .818 | .506 |
 | Desmond Mason | Milwaukee Bucks | 10 | 10 | 31.1 | 13.7 | 4.8 | 2.3 | 1.1 | 0.2 | 0.9 | 48-95 | .505 | 2-4 | .500 | 39-48 | .812 | .590 |
@@ -204,17 +204,6 @@ Through 2004-05-16: 60 closed playoff game(s). Playoff games only, from closed r
 
 | Player | Club | G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G | FG | FG% | 3P | 3P% | FT | FT% | TS% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Ron Artest | Indiana Pacers | 7 | 7 | 37.4 | 13.6 | 5.0 | 5.0 | 2.7 | 0.7 | 2.6 | 34-86 | .395 | 6-15 | .400 | 21-26 | .808 | .487 |
-| Jermaine O'Neal | Indiana Pacers | 7 | 7 | 36.6 | 21.0 | 11.0 | 1.3 | 1.1 | 1.7 | 1.7 | 54-127 | .425 | 0-1 | .000 | 39-46 | .848 | .499 |
-| Al Harrington | Indiana Pacers | 7 | 7 | 31.8 | 12.6 | 6.4 | 1.3 | 1.0 | 0.7 | 1.1 | 34-77 | .442 | 4-5 | .800 | 16-27 | .593 | .495 |
-| Reggie Miller | Indiana Pacers | 7 | 7 | 29.1 | 9.3 | 3.1 | 3.1 | 1.6 | 0.1 | 0.7 | 19-49 | .388 | 11-30 | .367 | 16-16 | 1.000 | .580 |
-| Jamaal Tinsley | Indiana Pacers | 7 | 7 | 28.1 | 12.3 | 4.0 | 6.1 | 1.3 | 0.6 | 3.7 | 28-64 | .438 | 16-37 | .432 | 14-17 | .824 | .602 |
-| Jeff Foster | Indiana Pacers | 7 | 0 | 21.7 | 5.7 | 6.9 | 0.7 | 0.9 | 1.0 | 1.0 | 18-37 | .486 | 0-0 | N/A | 4-8 | .500 | .494 |
-| Anthony Johnson | Indiana Pacers | 7 | 0 | 19.9 | 7.4 | 2.7 | 2.4 | 0.7 | 0.3 | 0.9 | 19-56 | .339 | 1-8 | .125 | 13-18 | .722 | .407 |
-| Kenny Anderson | Indiana Pacers | 7 | 0 | 18.9 | 3.4 | 1.6 | 2.0 | 0.4 | 0.3 | 1.1 | 10-28 | .357 | 0-2 | .000 | 4-5 | .800 | .397 |
-| Fred Jones | Indiana Pacers | 7 | 0 | 14.1 | 4.4 | 1.3 | 1.9 | 0.3 | 0.3 | 0.6 | 9-26 | .346 | 1-5 | .200 | 12-14 | .857 | .482 |
-| Austin Croshere | Indiana Pacers | 5 | 0 | 2.7 | 1.0 | 0.4 | 0.0 | 0.2 | 0.0 | 0.2 | 1-6 | .167 | 1-2 | .500 | 2-2 | 1.000 | .363 |
-| Smush Parker | Indiana Pacers | 2 | 0 | 1.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Kobe Bryant | Los Angeles Lakers | 6 | 6 | 39.2 | 25.0 | 5.8 | 6.3 | 2.3 | 0.2 | 2.3 | 46-114 | .404 | 10-24 | .417 | 48-61 | .787 | .533 |
 | Shaquille O'Neal | Los Angeles Lakers | 6 | 6 | 38.1 | 23.0 | 11.8 | 3.2 | 0.8 | 2.2 | 1.8 | 55-88 | .625 | 1-1 | 1.000 | 27-63 | .429 | .596 |
 | Gary Payton | Los Angeles Lakers | 6 | 6 | 34.8 | 12.7 | 3.2 | 6.5 | 1.0 | 0.2 | 2.0 | 31-71 | .437 | 2-8 | .250 | 12-18 | .667 | .482 |
@@ -251,6 +240,17 @@ Through 2004-05-16: 60 closed playoff game(s). Playoff games only, from closed r
 | Zoran Planinic | New Jersey Nets | 1 | 0 | 6.7 | 3.0 | 2.0 | 1.0 | 0.0 | 0.0 | 2.0 | 1-4 | .250 | 1-2 | .500 | 0-0 | N/A | .375 |
 | Brandon Armstrong | New Jersey Nets | 1 | 0 | 6.2 | 6.0 | 1.0 | 1.0 | 0.0 | 0.0 | 0.0 | 3-4 | .750 | 0-0 | N/A | 0-0 | N/A | .750 |
 | Brian Scalabrine | New Jersey Nets | 3 | 0 | 3.3 | 1.7 | 0.3 | 0.0 | 0.3 | 0.0 | 0.0 | 1-2 | .500 | 0-0 | N/A | 3-3 | 1.000 | .753 |
+| Ron Artest | Indiana Pacers | 7 | 7 | 37.4 | 13.6 | 5.0 | 5.0 | 2.7 | 0.7 | 2.6 | 34-86 | .395 | 6-15 | .400 | 21-26 | .808 | .487 |
+| Jermaine O'Neal | Indiana Pacers | 7 | 7 | 36.6 | 21.0 | 11.0 | 1.3 | 1.1 | 1.7 | 1.7 | 54-127 | .425 | 0-1 | .000 | 39-46 | .848 | .499 |
+| Al Harrington | Indiana Pacers | 7 | 7 | 31.8 | 12.6 | 6.4 | 1.3 | 1.0 | 0.7 | 1.1 | 34-77 | .442 | 4-5 | .800 | 16-27 | .593 | .495 |
+| Reggie Miller | Indiana Pacers | 7 | 7 | 29.1 | 9.3 | 3.1 | 3.1 | 1.6 | 0.1 | 0.7 | 19-49 | .388 | 11-30 | .367 | 16-16 | 1.000 | .580 |
+| Jamaal Tinsley | Indiana Pacers | 7 | 7 | 28.1 | 12.3 | 4.0 | 6.1 | 1.3 | 0.6 | 3.7 | 28-64 | .438 | 16-37 | .432 | 14-17 | .824 | .602 |
+| Jeff Foster | Indiana Pacers | 7 | 0 | 21.7 | 5.7 | 6.9 | 0.7 | 0.9 | 1.0 | 1.0 | 18-37 | .486 | 0-0 | N/A | 4-8 | .500 | .494 |
+| Anthony Johnson | Indiana Pacers | 7 | 0 | 19.9 | 7.4 | 2.7 | 2.4 | 0.7 | 0.3 | 0.9 | 19-56 | .339 | 1-8 | .125 | 13-18 | .722 | .407 |
+| Kenny Anderson | Indiana Pacers | 7 | 0 | 18.9 | 3.4 | 1.6 | 2.0 | 0.4 | 0.3 | 1.1 | 10-28 | .357 | 0-2 | .000 | 4-5 | .800 | .397 |
+| Fred Jones | Indiana Pacers | 7 | 0 | 14.1 | 4.4 | 1.3 | 1.9 | 0.3 | 0.3 | 0.6 | 9-26 | .346 | 1-5 | .200 | 12-14 | .857 | .482 |
+| Austin Croshere | Indiana Pacers | 5 | 0 | 2.7 | 1.0 | 0.4 | 0.0 | 0.2 | 0.0 | 0.2 | 1-6 | .167 | 1-2 | .500 | 2-2 | 1.000 | .363 |
+| Smush Parker | Indiana Pacers | 2 | 0 | 1.6 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Michael Redd | Milwaukee Bucks | 5 | 5 | 37.4 | 19.8 | 7.8 | 3.6 | 1.2 | 0.2 | 1.0 | 36-87 | .414 | 3-17 | .176 | 24-28 | .857 | .498 |
 | Tim Thomas | Milwaukee Bucks | 5 | 5 | 33.4 | 13.6 | 5.4 | 3.2 | 0.8 | 0.4 | 1.6 | 25-55 | .455 | 5-12 | .417 | 13-17 | .765 | .544 |
 | Desmond Mason | Milwaukee Bucks | 5 | 5 | 31.8 | 13.8 | 5.6 | 3.0 | 2.0 | 0.2 | 0.8 | 25-51 | .490 | 2-4 | .500 | 17-22 | .773 | .569 |
@@ -399,18 +399,6 @@ Through 2004-05-16: 60 closed playoff game(s). Playoff games only, from closed r
 
 | Player | Club | G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G | FG | FG% | 3P | 3P% | FT | FT% | TS% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Ron Artest | Indiana Pacers | 5 | 5 | 34.8 | 18.4 | 5.4 | 4.4 | 1.8 | 0.6 | 1.6 | 34-86 | .395 | 3-14 | .214 | 21-34 | .618 | .456 |
-| Jermaine O'Neal | Indiana Pacers | 5 | 5 | 33.0 | 18.6 | 9.8 | 0.6 | 0.8 | 1.8 | 2.0 | 30-67 | .448 | 1-2 | .500 | 32-41 | .780 | .547 |
-| Reggie Miller | Indiana Pacers | 5 | 5 | 29.7 | 14.0 | 2.2 | 5.4 | 1.0 | 0.0 | 0.8 | 23-54 | .426 | 14-29 | .483 | 10-11 | .909 | .595 |
-| Jamaal Tinsley | Indiana Pacers | 5 | 5 | 27.2 | 9.0 | 2.8 | 6.0 | 1.4 | 0.2 | 2.0 | 15-44 | .341 | 10-29 | .345 | 5-6 | .833 | .482 |
-| Al Harrington | Indiana Pacers | 5 | 5 | 27.0 | 8.6 | 7.4 | 1.2 | 1.0 | 0.0 | 1.0 | 19-48 | .396 | 0-1 | .000 | 5-5 | 1.000 | .428 |
-| Jeff Foster | Indiana Pacers | 5 | 0 | 24.3 | 10.0 | 6.4 | 0.2 | 1.0 | 1.0 | 0.0 | 22-34 | .647 | 0-1 | .000 | 6-11 | .545 | .644 |
-| Anthony Johnson | Indiana Pacers | 5 | 0 | 22.2 | 7.0 | 2.8 | 2.4 | 1.2 | 0.4 | 1.4 | 14-29 | .483 | 4-6 | .667 | 3-4 | .750 | .569 |
-| Kenny Anderson | Indiana Pacers | 5 | 0 | 20.1 | 7.4 | 4.0 | 2.6 | 0.2 | 0.2 | 1.2 | 16-40 | .400 | 0-0 | N/A | 5-8 | .625 | .425 |
-| Fred Jones | Indiana Pacers | 5 | 0 | 15.2 | 3.8 | 1.4 | 2.0 | 0.6 | 0.4 | 0.6 | 7-12 | .583 | 3-5 | .600 | 2-3 | .667 | .713 |
-| Austin Croshere | Indiana Pacers | 4 | 0 | 5.2 | 2.0 | 1.8 | 0.5 | 0.0 | 0.2 | 0.0 | 2-5 | .400 | 1-3 | .333 | 3-3 | 1.000 | .633 |
-| Smush Parker | Indiana Pacers | 3 | 0 | 2.2 | 0.0 | 0.7 | 0.0 | 0.3 | 0.0 | 0.3 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
-| Scot Pollard | Indiana Pacers | 3 | 0 | 1.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Kobe Bryant | Los Angeles Lakers | 5 | 5 | 37.9 | 20.0 | 5.2 | 5.4 | 0.8 | 0.2 | 2.6 | 29-73 | .397 | 3-13 | .231 | 39-50 | .780 | .526 |
 | Gary Payton | Los Angeles Lakers | 5 | 5 | 34.0 | 11.0 | 4.6 | 5.0 | 1.2 | 0.2 | 2.4 | 22-49 | .449 | 2-9 | .222 | 9-12 | .750 | .507 |
 | Shaquille O'Neal | Los Angeles Lakers | 5 | 5 | 31.9 | 15.6 | 9.4 | 3.4 | 0.2 | 1.0 | 2.4 | 28-51 | .549 | 0-0 | N/A | 22-39 | .564 | .572 |
@@ -446,6 +434,18 @@ Through 2004-05-16: 60 closed playoff game(s). Playoff games only, from closed r
 | Brian Scalabrine | New Jersey Nets | 4 | 0 | 4.3 | 0.5 | 1.2 | 0.8 | 0.0 | 0.0 | 0.0 | 1-7 | .143 | 0-2 | .000 | 0-0 | N/A | .143 |
 | Brandon Armstrong | New Jersey Nets | 2 | 0 | 1.6 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1-1 | 1.000 | 0-0 | N/A | 0-0 | N/A | 1.000 |
 | Zoran Planinic | New Jersey Nets | 3 | 0 | 1.5 | 0.7 | 0.3 | 0.0 | 0.0 | 0.0 | 0.0 | 1-4 | .250 | 0-0 | N/A | 0-0 | N/A | .250 |
+| Ron Artest | Indiana Pacers | 5 | 5 | 34.8 | 18.4 | 5.4 | 4.4 | 1.8 | 0.6 | 1.6 | 34-86 | .395 | 3-14 | .214 | 21-34 | .618 | .456 |
+| Jermaine O'Neal | Indiana Pacers | 5 | 5 | 33.0 | 18.6 | 9.8 | 0.6 | 0.8 | 1.8 | 2.0 | 30-67 | .448 | 1-2 | .500 | 32-41 | .780 | .547 |
+| Reggie Miller | Indiana Pacers | 5 | 5 | 29.7 | 14.0 | 2.2 | 5.4 | 1.0 | 0.0 | 0.8 | 23-54 | .426 | 14-29 | .483 | 10-11 | .909 | .595 |
+| Jamaal Tinsley | Indiana Pacers | 5 | 5 | 27.2 | 9.0 | 2.8 | 6.0 | 1.4 | 0.2 | 2.0 | 15-44 | .341 | 10-29 | .345 | 5-6 | .833 | .482 |
+| Al Harrington | Indiana Pacers | 5 | 5 | 27.0 | 8.6 | 7.4 | 1.2 | 1.0 | 0.0 | 1.0 | 19-48 | .396 | 0-1 | .000 | 5-5 | 1.000 | .428 |
+| Jeff Foster | Indiana Pacers | 5 | 0 | 24.3 | 10.0 | 6.4 | 0.2 | 1.0 | 1.0 | 0.0 | 22-34 | .647 | 0-1 | .000 | 6-11 | .545 | .644 |
+| Anthony Johnson | Indiana Pacers | 5 | 0 | 22.2 | 7.0 | 2.8 | 2.4 | 1.2 | 0.4 | 1.4 | 14-29 | .483 | 4-6 | .667 | 3-4 | .750 | .569 |
+| Kenny Anderson | Indiana Pacers | 5 | 0 | 20.1 | 7.4 | 4.0 | 2.6 | 0.2 | 0.2 | 1.2 | 16-40 | .400 | 0-0 | N/A | 5-8 | .625 | .425 |
+| Fred Jones | Indiana Pacers | 5 | 0 | 15.2 | 3.8 | 1.4 | 2.0 | 0.6 | 0.4 | 0.6 | 7-12 | .583 | 3-5 | .600 | 2-3 | .667 | .713 |
+| Austin Croshere | Indiana Pacers | 4 | 0 | 5.2 | 2.0 | 1.8 | 0.5 | 0.0 | 0.2 | 0.0 | 2-5 | .400 | 1-3 | .333 | 3-3 | 1.000 | .633 |
+| Smush Parker | Indiana Pacers | 3 | 0 | 2.2 | 0.0 | 0.7 | 0.0 | 0.3 | 0.0 | 0.3 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Scot Pollard | Indiana Pacers | 3 | 0 | 1.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Michael Redd | Milwaukee Bucks | 5 | 5 | 37.2 | 19.8 | 5.8 | 1.4 | 0.8 | 0.0 | 2.6 | 32-78 | .410 | 3-14 | .214 | 32-36 | .889 | .527 |
 | Tim Thomas | Milwaukee Bucks | 5 | 5 | 31.2 | 12.6 | 3.6 | 2.2 | 0.4 | 0.2 | 1.0 | 22-60 | .367 | 5-19 | .263 | 14-16 | .875 | .470 |
 | Joe Smith | Milwaukee Bucks | 5 | 5 | 31.1 | 13.4 | 8.4 | 1.2 | 0.4 | 1.4 | 0.8 | 22-50 | .440 | 1-4 | .250 | 22-24 | .917 | .553 |
@@ -494,3 +494,51 @@ Through 2004-05-16: 60 closed playoff game(s). Playoff games only, from closed r
 | Jerome Moiso | Toronto Raptors | 2 | 0 | 3.2 | 0.0 | 1.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0-2 | .000 | 0-0 | N/A | 0-0 | N/A | .000 |
 | Roger Mason Jr. | Toronto Raptors | 2 | 0 | 3.2 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1-3 | .333 | 0-0 | N/A | 0-0 | N/A | .333 |
 | Lonny Baxter | Toronto Raptors | 3 | 0 | 2.6 | 0.0 | 1.3 | 0.0 | 0.0 | 0.0 | 0.0 | 0-2 | .000 | 0-0 | N/A | 0-2 | .000 | .000 |
+
+## Conference finals
+
+| Player | Club | G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G | FG | FG% | 3P | 3P% | FT | FT% | TS% |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Kobe Bryant | Los Angeles Lakers | 2 | 2 | 38.5 | 20.0 | 8.0 | 8.5 | 3.5 | 0.5 | 1.5 | 11-30 | .367 | 2-8 | .250 | 16-21 | .762 | .510 |
+| Shaquille O'Neal | Los Angeles Lakers | 2 | 2 | 36.5 | 16.5 | 9.5 | 5.5 | 1.0 | 2.0 | 1.5 | 14-29 | .483 | 0-0 | N/A | 5-8 | .625 | .507 |
+| Gary Payton | Los Angeles Lakers | 2 | 2 | 32.4 | 15.5 | 2.0 | 7.0 | 1.5 | 0.5 | 1.5 | 11-23 | .478 | 0-5 | .000 | 9-11 | .818 | .557 |
+| Brent Barry | Los Angeles Lakers | 2 | 2 | 32.1 | 10.5 | 6.0 | 3.0 | 1.5 | 1.5 | 3.5 | 8-13 | .615 | 3-5 | .600 | 2-4 | .500 | .711 |
+| Devean George | Los Angeles Lakers | 2 | 2 | 27.2 | 12.0 | 2.5 | 1.5 | 0.5 | 0.0 | 0.0 | 8-13 | .615 | 3-5 | .600 | 5-8 | .625 | .726 |
+| Derek Fisher | Los Angeles Lakers | 2 | 0 | 19.4 | 8.5 | 1.5 | 1.5 | 1.0 | 0.5 | 0.0 | 5-12 | .417 | 2-5 | .400 | 5-5 | 1.000 | .599 |
+| Slava Medvedenko | Los Angeles Lakers | 2 | 0 | 18.8 | 6.0 | 4.0 | 0.5 | 1.5 | 0.0 | 0.5 | 6-18 | .333 | 0-1 | .000 | 0-0 | N/A | .333 |
+| Horace Grant | Los Angeles Lakers | 2 | 0 | 18.3 | 5.0 | 3.5 | 0.5 | 0.0 | 1.0 | 0.0 | 4-8 | .500 | 0-1 | .000 | 2-2 | 1.000 | .563 |
+| Samaki Walker | Los Angeles Lakers | 2 | 0 | 12.8 | 3.5 | 1.5 | 0.5 | 0.5 | 0.0 | 1.5 | 3-7 | .429 | 0-0 | N/A | 1-1 | 1.000 | .470 |
+| Jannero Pargo | Los Angeles Lakers | 2 | 0 | 4.0 | 4.0 | 0.5 | 0.0 | 0.0 | 0.0 | 1.0 | 4-5 | .800 | 0-0 | N/A | 0-0 | N/A | .800 |
+| Kareem Rush | Los Angeles Lakers | 1 | 0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Kevin Garnett | Minnesota Timberwolves | 2 | 2 | 40.4 | 26.0 | 11.5 | 5.5 | 0.0 | 2.5 | 3.5 | 19-35 | .543 | 0-3 | .000 | 14-17 | .824 | .612 |
+| Latrell Sprewell | Minnesota Timberwolves | 2 | 2 | 39.6 | 14.0 | 5.5 | 3.0 | 0.5 | 0.0 | 1.5 | 12-29 | .414 | 2-6 | .333 | 2-3 | .667 | .462 |
+| Sam Cassell | Minnesota Timberwolves | 2 | 2 | 37.8 | 29.5 | 4.5 | 6.0 | 1.0 | 0.0 | 3.5 | 20-39 | .513 | 2-6 | .333 | 17-18 | .944 | .629 |
+| Trenton Hassell | Minnesota Timberwolves | 2 | 2 | 29.7 | 6.5 | 3.0 | 2.5 | 1.0 | 0.0 | 0.5 | 6-9 | .667 | 0-0 | N/A | 1-2 | .500 | .658 |
+| Marcus Camby | Minnesota Timberwolves | 2 | 2 | 28.5 | 5.5 | 7.0 | 3.0 | 2.0 | 2.0 | 1.0 | 4-14 | .286 | 0-1 | .000 | 3-5 | .600 | .340 |
+| Wally Szczerbiak | Minnesota Timberwolves | 2 | 0 | 20.8 | 8.0 | 2.0 | 1.5 | 0.0 | 0.0 | 2.0 | 8-19 | .421 | 0-3 | .000 | 0-0 | N/A | .421 |
+| Mark Madsen | Minnesota Timberwolves | 2 | 0 | 16.0 | 1.5 | 1.5 | 1.0 | 0.0 | 0.0 | 0.5 | 1-3 | .333 | 0-0 | N/A | 1-4 | .250 | .315 |
+| Troy Hudson | Minnesota Timberwolves | 2 | 0 | 15.3 | 2.5 | 3.0 | 0.5 | 0.0 | 0.5 | 1.0 | 2-9 | .222 | 0-1 | .000 | 1-2 | .500 | .253 |
+| Gary Trent | Minnesota Timberwolves | 2 | 0 | 10.5 | 3.5 | 3.0 | 1.0 | 0.0 | 0.5 | 1.0 | 3-4 | .750 | 0-0 | N/A | 1-2 | .500 | .717 |
+| Ervin Johnson | Minnesota Timberwolves | 2 | 0 | 1.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Richard Jefferson | New Jersey Nets | 1 | 1 | 37.4 | 15.0 | 4.0 | 2.0 | 0.0 | 0.0 | 2.0 | 7-13 | .538 | 0-1 | .000 | 1-2 | .500 | .540 |
+| Jason Kidd | New Jersey Nets | 1 | 1 | 33.9 | 15.0 | 8.0 | 10.0 | 0.0 | 0.0 | 4.0 | 4-9 | .444 | 1-2 | .500 | 6-6 | 1.000 | .644 |
+| Kerry Kittles | New Jersey Nets | 1 | 1 | 33.6 | 12.0 | 4.0 | 1.0 | 3.0 | 0.0 | 1.0 | 5-9 | .556 | 2-3 | .667 | 0-0 | N/A | .667 |
+| Kenyon Martin | New Jersey Nets | 1 | 1 | 33.5 | 18.0 | 9.0 | 4.0 | 2.0 | 3.0 | 1.0 | 7-13 | .538 | 0-1 | .000 | 4-6 | .667 | .575 |
+| Jason Collins | New Jersey Nets | 1 | 1 | 27.5 | 8.0 | 3.0 | 3.0 | 1.0 | 1.0 | 0.0 | 4-9 | .444 | 0-1 | .000 | 0-0 | N/A | .444 |
+| Lucious Harris | New Jersey Nets | 1 | 0 | 23.0 | 6.0 | 1.0 | 0.0 | 0.0 | 0.0 | 1.0 | 2-7 | .286 | 0-0 | N/A | 2-2 | 1.000 | .381 |
+| Rodney Rogers | New Jersey Nets | 1 | 0 | 20.8 | 12.0 | 8.0 | 1.0 | 0.0 | 0.0 | 1.0 | 6-10 | .600 | 0-3 | .000 | 0-0 | N/A | .600 |
+| Aaron Williams | New Jersey Nets | 1 | 0 | 19.0 | 4.0 | 1.0 | 2.0 | 1.0 | 0.0 | 2.0 | 2-3 | .667 | 0-1 | .000 | 0-0 | N/A | .667 |
+| Alonzo Mourning | New Jersey Nets | 1 | 0 | 7.9 | 0.0 | 2.0 | 1.0 | 1.0 | 1.0 | 2.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Brian Scalabrine | New Jersey Nets | 1 | 0 | 1.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-1 | .000 | 0-1 | .000 | 0-0 | N/A | .000 |
+| Zoran Planinic | New Jersey Nets | 1 | 0 | 1.7 | 2.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1-1 | 1.000 | 0-0 | N/A | 0-0 | N/A | 1.000 |
+| Ron Artest | Indiana Pacers | 1 | 1 | 34.6 | 11.0 | 6.0 | 7.0 | 3.0 | 2.0 | 1.0 | 4-19 | .211 | 1-6 | .167 | 2-4 | .500 | .265 |
+| Jermaine O'Neal | Indiana Pacers | 1 | 1 | 34.1 | 10.0 | 11.0 | 2.0 | 1.0 | 0.0 | 5.0 | 4-14 | .286 | 0-1 | .000 | 2-2 | 1.000 | .336 |
+| Al Harrington | Indiana Pacers | 1 | 1 | 30.3 | 11.0 | 8.0 | 0.0 | 0.0 | 0.0 | 4.0 | 4-10 | .400 | 1-2 | .500 | 2-2 | 1.000 | .506 |
+| Reggie Miller | Indiana Pacers | 1 | 1 | 26.8 | 4.0 | 0.0 | 1.0 | 1.0 | 0.0 | 2.0 | 1-3 | .333 | 0-2 | .000 | 2-2 | 1.000 | .515 |
+| Jamaal Tinsley | Indiana Pacers | 1 | 1 | 26.0 | 4.0 | 2.0 | 1.0 | 0.0 | 1.0 | 3.0 | 1-4 | .250 | 0-2 | .000 | 2-2 | 1.000 | .410 |
+| Jeff Foster | Indiana Pacers | 1 | 0 | 24.5 | 8.0 | 4.0 | 2.0 | 1.0 | 2.0 | 0.0 | 3-4 | .750 | 0-0 | N/A | 2-2 | 1.000 | .820 |
+| Anthony Johnson | Indiana Pacers | 1 | 0 | 23.0 | 3.0 | 3.0 | 5.0 | 0.0 | 0.0 | 0.0 | 1-4 | .250 | 0-0 | N/A | 1-2 | .500 | .307 |
+| Kenny Anderson | Indiana Pacers | 1 | 0 | 21.9 | 12.0 | 0.0 | 1.0 | 0.0 | 1.0 | 2.0 | 6-10 | .600 | 0-2 | .000 | 0-0 | N/A | .600 |
+| Fred Jones | Indiana Pacers | 1 | 0 | 15.3 | 4.0 | 2.0 | 0.0 | 0.0 | 0.0 | 1.0 | 2-4 | .500 | 0-1 | .000 | 0-0 | N/A | .500 |
+| Austin Croshere | Indiana Pacers | 1 | 0 | 1.7 | 2.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-1 | .000 | 0-0 | N/A | 2-2 | 1.000 | .532 |
+| Smush Parker | Indiana Pacers | 1 | 0 | 1.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |

@@ -2,9 +2,9 @@
 
 # Contract | Smush Parker
 
-Known through: 2004-05-16. [Open interactive contract](parkesm01.html#contract) · [Contract history](parkesm01.html#contract-history)
+Known through: 2004-05-23. [Open interactive contract](parkesm01.html#contract) · [Contract history](parkesm01.html#contract-history)
 
-Smush Parker: unsigned free agent. Evidence cutoff: 2004-05-16.
+Smush Parker: unsigned free agent. Evidence cutoff: 2004-05-23.
 
 ## Current contract
 

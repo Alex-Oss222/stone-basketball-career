@@ -2,9 +2,9 @@
 
 # Contract | Jason Caffey
 
-Known through: 2004-05-16. [Open interactive contract](caffeja01.html#contract) · [Contract history](caffeja01.html#contract-history)
+Known through: 2004-05-23. [Open interactive contract](caffeja01.html#contract) · [Contract history](caffeja01.html#contract-history)
 
-Jason Caffey: under contract. Evidence cutoff: 2004-05-16.
+Jason Caffey: under contract. Evidence cutoff: 2004-05-23.
 
 ## Current contract
 
