@@ -2,9 +2,9 @@
 
 # Contract | Britton Johnsen
 
-Known through: 2004-05-03. [Open interactive contract](johnsbr01.html#contract) · [Contract history](johnsbr01.html#contract-history)
+Known through: 2004-05-09. [Open interactive contract](johnsbr01.html#contract) · [Contract history](johnsbr01.html#contract-history)
 
-Britton Johnsen: No verified contract record. Evidence cutoff: 2004-05-03.
+Britton Johnsen: No verified contract record. Evidence cutoff: 2004-05-09.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Jason Kidd
 
-Known through: 2004-05-03. [Open interactive contract](kiddja01.html#contract) · [Contract history](kiddja01.html#contract-history)
+Known through: 2004-05-09. [Open interactive contract](kiddja01.html#contract) · [Contract history](kiddja01.html#contract-history)
 
-Jason Kidd: under contract. Evidence cutoff: 2004-05-03.
+Jason Kidd: under contract. Evidence cutoff: 2004-05-09.
 
 ## Current contract
 

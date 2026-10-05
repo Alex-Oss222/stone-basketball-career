@@ -2,9 +2,9 @@
 
 # Contract | Milt Palacio
 
-Known through: 2004-05-03. [Open interactive contract](palacmi01.html#contract) · [Contract history](palacmi01.html#contract-history)
+Known through: 2004-05-09. [Open interactive contract](palacmi01.html#contract) · [Contract history](palacmi01.html#contract-history)
 
-Milt Palacio: under contract. Evidence cutoff: 2004-05-03.
+Milt Palacio: under contract. Evidence cutoff: 2004-05-09.
 
 ## Current contract
 
