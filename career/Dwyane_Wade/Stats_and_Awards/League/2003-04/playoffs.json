@@ -1217,10 +1217,10 @@
    ],
    "home_court": "Minnesota Timberwolves",
    "wins": {
-    "Minnesota Timberwolves": 3,
+    "Minnesota Timberwolves": 4,
     "Los Angeles Lakers": 2
    },
-   "winner": null,
+   "winner": "Minnesota Timberwolves",
    "games": [
     {
      "game": 1,
@@ -1278,7 +1278,9 @@
      "home": "Los Angeles Lakers",
      "away": "Minnesota Timberwolves",
      "conditional": true,
-     "event_id": "2004-05-31-minnesota-timberwolves-at-los-angeles-lakers"
+     "event_id": "2004-05-31-minnesota-timberwolves-at-los-angeles-lakers",
+     "result": "Minnesota Timberwolves 96, Los Angeles Lakers 91",
+     "winner": "Minnesota Timberwolves"
     },
     {
      "game": 7,
@@ -1286,9 +1288,11 @@
      "home": "Minnesota Timberwolves",
      "away": "Los Angeles Lakers",
      "conditional": true,
-     "event_id": "2004-06-02-los-angeles-lakers-at-minnesota-timberwolves"
+     "event_id": "2004-06-02-los-angeles-lakers-at-minnesota-timberwolves",
+     "not_needed": true
     }
-   ]
+   ],
+   "clinched_on": "2004-05-31"
   },
   {
    "id": "east-final",

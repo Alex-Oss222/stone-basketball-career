@@ -239,7 +239,7 @@ Home court: Indiana Pacers. Indiana Pacers wins 4-1.
 
 ### West: (1) Minnesota Timberwolves vs (7) Los Angeles Lakers
 
-Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 3, Los Angeles Lakers 2.
+Home court: Minnesota Timberwolves. Minnesota Timberwolves wins 4-2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -248,8 +248,8 @@ Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 3, Los Angeles
 | 3 | Tue May 25 | Los Angeles Lakers | Minnesota Timberwolves | Minnesota Timberwolves 88, Los Angeles Lakers 103 |
 | 4 | Thu May 27 | Los Angeles Lakers | Minnesota Timberwolves | Minnesota Timberwolves 90, Los Angeles Lakers 87 |
 | 5 | Sat May 29 | Minnesota Timberwolves | Los Angeles Lakers | Los Angeles Lakers 85, Minnesota Timberwolves 91 |
-| 6 | Mon May 31 | Los Angeles Lakers | Minnesota Timberwolves | if needed |
-| 7 | Wed Jun 2 | Minnesota Timberwolves | Los Angeles Lakers | if needed |
+| 6 | Mon May 31 | Los Angeles Lakers | Minnesota Timberwolves | Minnesota Timberwolves 96, Los Angeles Lakers 91 |
+| 7 | Wed Jun 2 | Minnesota Timberwolves | Los Angeles Lakers | not needed |
 
 ### East: (1) Indiana Pacers vs (2) New Jersey Nets
 
