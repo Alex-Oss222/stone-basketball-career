@@ -7,8 +7,8 @@ Evidence is the simulated 2003-04 season (closed results) and the honors announc
 Calendar (`library/2004/league/nba_2004_offseason_calendar.json`): options and qualifying offers on June 30; the
 market opens July 1; agreements made during the moratorium are signed July 14, when the $43,870,000 cap (Charlotte
 $29,250,000) becomes known; before then clubs plan on the 2003-04 cap. Rounds run weekly to September 29; on
-September 30 a club still short of thirteen signs the best unsigned players at the minimum, each with the club that
-needs him most while it has fewer than thirteen; the rest stay in the unsigned pool, which the in-season market
+September 30 a club still short of thirteen signs the best unsigned players (at what it can still pay, from the
+minimum up to its room or mid-level), each with the club that needs him most while it has fewer than thirteen; the rest stay in the unsigned pool, which the in-season market
 draws on (career continuity). Players without a real 2004-05 role leave the league as history has them.
 
 Club decisions are judgement rules with no chance element; a player's answers are engine draws:
@@ -27,9 +27,18 @@ Club decisions are judgement rules with no chance element; a player's answers ar
   smaller of his ask and its own price, for the years he wants; it adds minimum offers while it is short of
   ROSTER_TARGET. A club stops paying above the minimum at the payroll ceiling (the tax line; contenders may go
   CONTENDER_TAX_ROOM over it with Bird rights).
-- A player with offers answers in one engine draw: accept one club (softmax over money, role and winning, with a
-  loyalty weight to his own club) or wait; his willingness to accept rises as the ask meets the offer and as the
-  summer passes. An offer sheet to a restricted player is matched when his club values him at the offer and can pay.
+- Every free agent's priority is drawn once on July 1 (money, fame, loyalty or winning, with the 2003 odds by age;
+  `runtime/market.py`). A player with offers answers in one engine draw: accept one club or wait. Each club's share
+  comes from the 2003 factor model (`runtime/player_utility.py`): money and security against his ask and the years
+  he wants, net income by state tax, his role (minutes by rank in his position group), contention (projected wins),
+  loyalty to the club holding his rights and market size, weighted by his career stage and tilted by his drawn
+  priority; a prime starter offered a bench role walks from that club. His willingness to accept at all rises as
+  the ask meets the best offer and as the summer passes.
+- From July 14 the clubs trade, one search a round: one or two contracted players for one, both clubs gaining on
+  their own objective (stance from the simulated record: contenders value the present, rebuilders youth and cash;
+  positional fit; salary against worth; a status-quo premium on players they hold), legal under the 1999 salary
+  rule, each deal an engine draw on both clubs' acceptance (`runtime/trades.acceptance`). Players signed this summer
+  are not tradable; a first-round pick is after 30 days. Miami's trades for a star wait for Wade's consultation. An offer sheet to a restricted player is matched when his club values him at the offer and can pay.
 - Miami is one of the thirty clubs, run by the same AI/GM rules. Once Wade's standing is `franchise`, Miami asks him
   before offering to a star (`runtime/consultations.py`); the market waits for his answer.
 The record is `10_Free_Agency/free_agency_2004.json`, rebuilt by replaying every round from its recorded draws.
@@ -68,15 +77,27 @@ ROSTER_TARGET, ROSTER_MAX = 13, 15
 CONTENDER_TAX_ROOM = 0.10
 STAR_PRICE_MLES, STAR_TAX_ROOM = 2.0, 0.35  # a club pays well into the tax to keep a player priced at two mid-levels
 ASK_DECAY_PER_WEEK = 0.05
-ASK_FLOOR_SHARE = 0.55                  # the ask never falls below this share of the price
+ASK_FLOOR_SHARE = 0.55                  # the ask never falls below this share of the price before September
+LATE_WEEK, LATE_DECAY = 9, 0.15         # from the tenth round (September) the floor falls this much a week toward the minimum
 INSULT_SHARE = 0.70                     # a club does not offer below this share of the ask
 ACCEPT_SLOPE = 8.0                      # logistic slope on (offer / ask - 1)
 ACCEPT_BASE, ACCEPT_WEEKLY = 0.35, 0.06 # P(accept an offer at the ask) in round 1 and its weekly rise
-TEMPERATURE = 0.15
-WEIGHTS = {"money": 0.60, "role": 0.20, "winning": 0.20}
-WINNING_FROM_AGE = 30                   # at 30 and older winning weighs WEIGHTS_VETERAN
-WEIGHTS_VETERAN = {"money": 0.50, "role": 0.15, "winning": 0.35}
-LOYALTY = 0.05                          # added utility for the club that holds his rights
+CHOICE_TEMPERATURE = 4.0               # utility points (0-100 scale, runtime/player_utility.py) per e-fold in a club's share
+ROLE_LADDER = {"G": (34, 30, 22, 14, 8), "F": (34, 30, 22, 14, 8), "C": (32, 20, 12, 6)}   # minutes by rank in his group
+CHARLOTTE_WINS = 20                     # an expansion club's projected wins (judgement)
+# Summer trades (from the first signing day): one search a round on the market's own values.
+TRADE_FROM = SIGN_FROM
+TRADE_CANDIDATES = 8                    # a club's most valuable tradable contracts
+MAX_TRADES_PER_ROUND = 2                # proposals a round; about half pass the two clubs' draws
+STAR_EXPONENT = 1.6                     # trade worth grows faster than production above replacement (a star is scarce)
+PACKAGE_WEIGHTS = (1.0, 0.45)           # a second player in a package counts at this share (roster spots, consolidation)
+SALARY_POINTS_PER_MILLION = 0.35        # trade worth points one million dollars of salary costs, times the stance's cash weight
+TRADE_MATCH, TRADE_PLUS = 1.15, 100_000 # 1999 agreement: incoming salary at most 115% of outgoing plus $100,000 over the cap
+MIN_MUTUAL_GAIN = 0.10
+STATUS_QUO = 1.15
+ROOKIE_TRADE_DAYS = 30                  # a first-round pick can be traded 30 days after he signs
+NEW_SIGNING_TRADABLE = "2004-12-15"     # a free agent signed this summer cannot be traded before December 15
+UNTOUCHABLE = {"dwyane_wade"}           # Miami's AI/GM keeps its franchise cornerstone off the market (judgement)
 HOLD_SHARE = 1.5                        # cap hold: 150% of the prior salary
 NEED_FLOOR = 0.6                        # a club with no positional need still values talent at this share
 YEARS_WANTED = ((26, 5), (29, 4), (32, 3), (34, 2), (99, 1))
@@ -139,10 +160,12 @@ def season_evidence(root=ROOT):
                     continue
                 t = out[bbr]
                 t["games"] += 1
+                t["starts"] += bool(p.get("started"))
                 t["minutes"] += p["minutes"]
                 t["eff"] += (p["pts"] + p["orb"] + p["drb"] + p["ast"] + p["stl"] + p["blk"]
                              - (p["fga"] - p["fgm"]) - (p["fta"] - p["ftm"]) - p["tov"])
-    return {b: {"games": int(t["games"]), "minutes": round(t["minutes"], 1), "eff": t["eff"], "mpg": t["minutes"] / t["games"]}
+    return {b: {"games": int(t["games"]), "starts": int(t["starts"]), "minutes": round(t["minutes"], 1), "eff": t["eff"],
+                "mpg": t["minutes"] / t["games"]}
             for b, t in out.items()}
 
 
@@ -388,6 +411,7 @@ class Market:
         self.rookie_scale = rookie_scale_players(root)
         self.clubs = sorted({c["club"] for c in self.book["contracts"].values()} | set(self.book["rights"].values()) | {CHARLOTTE})
         self.events, self.pending = [], False
+        self.store = True                               # stored trade proposals (False only in tests)
         self.standings = self._standings()
 
     # ---- helpers
@@ -423,10 +447,11 @@ class Market:
 
     def ceiling(self, club, bird=False, b=None):
         """Payroll a club will reach: the tax line; with Bird rights a contender goes CONTENDER_TAX_ROOM over it, and
-        any club keeps a player priced at STAR_PRICE_MLES mid-levels or more up to STAR_TAX_ROOM over it."""
+        any club keeps a player priced at STAR_PRICE_MLES mid-levels or more up to STAR_TAX_ROOM over it (a club already
+        that far over goes half that share over its June 30 payroll)."""
         tax = self.cal["tax"]
         if bird and b is not None and self.price.get(b, 0) >= STAR_PRICE_MLES * self.cal["mle"]:
-            return tax * (1 + STAR_TAX_ROOM)
+            return max(tax * (1 + STAR_TAX_ROOM), self.june_payroll.get(club, 0) * (1 + STAR_TAX_ROOM / 2))
         contender = self.standings.get(club, 0.5) >= 50 / 82
         return tax * (1 + CONTENDER_TAX_ROOM) if (bird and contender) else tax
 
@@ -452,7 +477,8 @@ class Market:
         return total
 
     def ask(self, b, week):
-        decay = max(ASK_FLOOR_SHARE, 1 - ASK_DECAY_PER_WEEK * max(0, week - 2))      # falls after the moratorium
+        floor = ASK_FLOOR_SHARE - LATE_DECAY * max(0, week - LATE_WEEK + 1)
+        decay = max(floor, 1 - ASK_DECAY_PER_WEEK * max(0, week - 2))                 # falls after the moratorium
         return max(minimum(self.service(b), self.cal), int(round(self.price[b] * decay)))
 
     def draw(self, packet):
@@ -521,8 +547,15 @@ class Market:
             if b in drafted and b not in self.contracts:
                 self.qualifying[b] = {"club": drafted[b], "amount": minimum(0, self.cal), "draft_rights": True}
         self.mle_used = set()
+        self.traded = set()
+        self.june_payroll = {c: self.payroll(c) for c in self.clubs}
+        self.draw_priorities()
+        if self.pending:
+            return None
         for week, day in enumerate(rounds()):
             if day > self.clock:
+                return None
+            if day >= TRADE_FROM and not self.trade_round(day):
                 return None
             if not self.round(week, day):
                 return None
@@ -560,6 +593,15 @@ class Market:
             return "mid_level"
         return None
 
+    def most_affordable(self, club, b, on):
+        """The largest first-year salary the club can pay a player who is not its own: cap room, else the mid-level."""
+        room = self.cap(club, on) - self.payroll(club) - self.holds(club, on)
+        if room > self.cal["mle"]:
+            return int(room), "cap_room"
+        if club not in self.mle_used and self.payroll(club) + self.cal["mle"] <= self.ceiling(club):
+            return self.cal["mle"], "mid_level"
+        return 0, None
+
     def offers_for(self, club, week, day, open_players):
         out, short = [], ROSTER_TARGET - self.roster(club)
         if self.roster(club) >= ROSTER_MAX:
@@ -579,6 +621,10 @@ class Market:
             if minimum_deal and short <= 0:
                 continue
             route = self.means(club, b, day, amount)
+            if route is None and not minimum_deal:
+                amount, route = self.most_affordable(club, b, day)
+                if route is None or amount < INSULT_SHARE * ask or amount <= minimum(self.service(b), self.cal):
+                    continue
             if route is None:
                 continue
             if not minimum_deal and not self.consulted(club, b, day, amount):
@@ -626,15 +672,225 @@ class Market:
             return "no simulated 2003-04 line"
         return f"{e['games']} games, {e['mpg']:.1f} minutes, efficiency {e['eff'] / e['games']:.1f} a game (simulated 2003-04)"
 
-    def utility(self, b, offer):
+    def draw_priorities(self):
+        """Each free agent's priority, drawn once on July 1 with the 2003 odds by age (runtime/market.py)."""
+        from .market import TRAIT_ODDS
+        self.trait = {}
+        for b in self.pool:
+            a = self.pricing.age(b) or 27
+            odds = next(o for limit, o in TRAIT_ODDS if a <= limit)
+            t = self.draw({"event_id": f"2004-07-01-{_slug(self.name(b))}-priorities", "date": OPEN,
+                           "question": f"What does {self.name(b)} weigh most in choosing his 2004 contract?",
+                           "decider": f"{self.name(b)} (simulated player, engine draw)", "options": dict(odds),
+                           "basis": f"Trait odds by age ({a}): money, fame, loyalty, winning (runtime/market.py TRAIT_ODDS; "
+                                    "docs/front_office_design.md 4.3). Drawn once for the 2004 market."})
+            if t is not None:
+                self.trait[b] = t
+
+    def wins(self, club):
+        return CHARLOTTE_WINS if club == CHARLOTTE else round(82 * self.standings.get(club, 0.5))
+
+    def role_minutes(self, club, b):
+        g, v = self.group(b), self.pricing.value(b)
+        rank = sum(1 for x, c in self.contracts.items() if c["club"] == club and x != b and self.group(x) == g and self.pricing.value(x) > v)
+        ladder = ROLE_LADDER[g]
+        return ladder[min(rank, len(ladder) - 1)]
+
+    def profile(self, b, week):
+        e = self.pricing.evidence.get(b)
+        return {"ask": self.ask(b, week), "years_wanted": years_wanted(self.pricing.age(b)), "age": self.pricing.age(b),
+                "prior_minutes": round(e["mpg"], 1) if e else None, "start_share": e["starts"] / e["games"] if e else 0.0,
+                "prior_club": self.rights.get(b)}
+
+    def assess(self, b, offer, week):
+        """(utility points, dealbreaker or None) of an offer, by the 2003 factor model with his drawn priority."""
+        from . import player_utility as pu
+        player = self.profile(b, week)
+        situation = {"club": offer["club"], "role_minutes": self.role_minutes(offer["club"], b), "strength": self.wins(offer["club"])}
+        terms = {"guaranteed": sum(offer["salary"] * (1 + pu.ASK_RAISE * i) for i in range(offer["years"])), "years": offer["years"]}
+        score = pu.scores(terms, situation, player)
+        return pu.utility(score, pu.weights(player["age"], self.trait.get(b, "money"))), pu.dealbreaker(situation, player)
+
+    # ---- summer trades
+    def stance(self, club):
+        if club == CHARLOTTE:
+            return "rebuilding"
+        pct = self.standings.get(club, 0.5)
+        return "contending" if pct >= 50 / 82 else "rebuilding" if pct <= 30 / 82 else "middle"
+
+    def tradable(self, b, c, day):
+        if b in UNTOUCHABLE or b in self.traded:
+            return False                               # a player traded this summer is not moved again before camp
+        if c.get("route") in ("existing", "option"):
+            return True
+        if c.get("route") == "rookie_scale":
+            return (date.fromisoformat(day) - date.fromisoformat(c["date"])).days >= ROOKIE_TRADE_DAYS
+        return day >= NEW_SIGNING_TRADABLE
+
+    def group_value(self, club, g, without=(), adding=()):
+        vals = sorted([self.pricing.value(x) for x, c in self.contracts.items()
+                       if c["club"] == club and self.group(x) == g and x not in without] + [self.pricing.value(x) for x in adding if self.group(x) == g],
+                      reverse=True)
+        return vals
+
+    def worth(self, club, b, own):
+        """A contract's trade worth to a club, in production points over this season and up to two more: production
+        above replacement raised to STAR_EXPONENT, times the honor factor (defense the box score misses), positional fit and the stance's age weight, less salary at
+        the stance's cash weight; a held player carries the status-quo premium."""
+        from .trades import STANCE_WEIGHTS
+        from .valuation import REPLACEMENT_EFF_PER_GAME
+        c = self.contracts[b]
+        stance = self.stance(club)
+        w = STANCE_WEIGHTS[stance]
         a = self.pricing.age(b) or 27
-        w = WEIGHTS_VETERAN if a >= WINNING_FROM_AGE else WEIGHTS
-        money = math.log(max(1, offer["salary"] * offer["years"]) / max(1, self.ask(b, 0) * years_wanted(a)))
-        better = sum(1 for x, c in self.contracts.items()
-                     if c["club"] == offer["club"] and self.group(x) == self.group(b) and self.pricing.value(x) > self.pricing.value(b))
-        role = 1 - min(1.0, better / 3)
-        win = self.standings.get(offer["club"], 0.3 if offer["club"] == CHARLOTTE else 0.5)
-        return w["money"] * money + w["role"] * role + w["winning"] * win + (LOYALTY if self.rights.get(b) == offer["club"] else 0)
+        age_w = (1.2 if a <= 25 else 0.8 if a >= 31 else 1.0) if stance == "rebuilding" else \
+                (0.85 if a <= 23 else 1.0) if stance == "contending" else 1.0
+        need = self.need_without(club, self.group(b), b if own else None)
+        fit = NEED_FLOOR + (1 - NEED_FLOOR) * need
+        talent = max(0.0, self.pricing.value(b) - REPLACEMENT_EFF_PER_GAME) ** STAR_EXPONENT * self.pricing.honors.honor_factor(b)
+        seasons = min(3, max(1, c.get("years", 1)))
+        per = talent * fit * age_w * (w["now"] + w["future"]) / 2 - c["salary"] / 1e6 * SALARY_POINTS_PER_MILLION * w["cash"]
+        value = per * seasons
+        return value * STATUS_QUO if own and value > 0 else value
+
+    @staticmethod
+    def package(values):
+        """A package's worth: its best player in full, the next at PACKAGE_WEIGHTS[1]; negative worth counts in full."""
+        pos = sorted((v for v in values if v > 0), reverse=True)
+        return sum(v * PACKAGE_WEIGHTS[min(i, len(PACKAGE_WEIGHTS) - 1)] for i, v in enumerate(pos)) + sum(v for v in values if v <= 0)
+
+    def need_without(self, club, g, b):
+        key = (club, g, b)
+        if key not in self._need_cache:
+            mins = sorted((self.mpg(x) for x, c in self.contracts.items() if c["club"] == club and self.group(x) == g and x != b), reverse=True)
+            covered = sum(mins[:3 if g != "C" else 2])
+            self._need_cache[key] = max(0.0, min(1.0, (TARGET_MINUTES[g] - covered) / TARGET_MINUTES[g]))
+        return self._need_cache[key]
+
+    def legal_trade(self, club, out_salary, in_salary, day):
+        if self.payroll(club) - out_salary + in_salary <= self.cap(club, day):
+            return True
+        return in_salary <= out_salary * TRADE_MATCH + TRADE_PLUS
+
+    def trade_proposals(self, day):
+        from .trades import SEARCH_MIN_ACCEPT, acceptance
+        self._need_cache = {}
+        cands = {}
+        for club in self.clubs:
+            own = [b for b, c in self.contracts.items() if c["club"] == club and self.tradable(b, c, day)]
+            cands[club] = sorted(own, key=lambda b: (-self.pricing.value(b), b))[:TRADE_CANDIDATES]
+        worth = {}
+        def wv(club, b, own):
+            k = (club, b, own)
+            if k not in worth:
+                worth[k] = self.worth(club, b, own)
+            return worth[k]
+        found = []
+        clubs = sorted(c for c in self.clubs if cands.get(c))
+        for i, a in enumerate(clubs):
+            pa_list = [(x,) for x in cands[a]] + [(x, y) for k, x in enumerate(cands[a]) for y in cands[a][k + 1:]]
+            for bclub in clubs[i + 1:]:
+                pb_list = [(x,) for x in cands[bclub]] + [(x, y) for k, x in enumerate(cands[bclub]) for y in cands[bclub][k + 1:]]
+                for pa in pa_list:
+                    sa = sum(self.contracts[x]["salary"] for x in pa)
+                    for pb in pb_list:
+                        if len(pa) + len(pb) > 3:
+                            continue
+                        sb = sum(self.contracts[x]["salary"] for x in pb)
+                        if not self.legal_trade(a, sa, sb, day) or not self.legal_trade(bclub, sb, sa, day):
+                            continue
+                        if self.roster(a) - len(pa) + len(pb) > ROSTER_MAX and len(pb) > len(pa):
+                            continue
+                        if self.roster(bclub) - len(pb) + len(pa) > ROSTER_MAX and len(pa) > len(pb):
+                            continue
+                        gain = {}
+                        for club, out, inc in ((a, pa, pb), (bclub, pb, pa)):
+                            before = self.package([wv(club, x, True) for x in out])
+                            after = self.package([wv(club, x, False) for x in inc])
+                            gain[club] = (after - before) / max(abs(after), abs(before), 1.0)
+                        if min(gain.values()) < MIN_MUTUAL_GAIN:
+                            continue
+                        chances = {c: acceptance({"objective_gain": g}) for c, g in gain.items()}
+                        if any(p is None or p < SEARCH_MIN_ACCEPT for p in chances.values()):
+                            continue
+                        found.append({"date": day, "clubs": [a, bclub],
+                                      "a": {"club": a, "sends": [self.name(x) for x in pa], "bbr_ids": list(pa), "salary": sa},
+                                      "b": {"club": bclub, "sends": [self.name(x) for x in pb], "bbr_ids": list(pb), "salary": sb},
+                                      "gain": {c: round(g, 3) for c, g in gain.items()}, "accept": chances,
+                                      "both": round(chances[a] * chances[bclub], 6)})
+        found.sort(key=lambda r: (-min(r["gain"].values()), r["a"]["bbr_ids"], r["b"]["bbr_ids"]))
+        chosen, used = [], set()
+        for row in found:
+            if len(chosen) >= MAX_TRADES_PER_ROUND:
+                break
+            keys = set(row["clubs"]) | set(row["a"]["bbr_ids"]) | set(row["b"]["bbr_ids"])
+            if used & keys:
+                continue
+            used |= keys
+            row["id"] = f"2004-summer-trade-{day}-" + "-".join(sorted(row["a"]["bbr_ids"] + row["b"]["bbr_ids"]))
+            chosen.append(row)
+        return chosen
+
+    def trade_round(self, day):
+        """The round's proposals (searched once and stored), each an engine draw; accepted deals move the contracts."""
+        path = self.root / DRAWS / f"2004-summer-trades-{day}.proposals.json"
+        if self.store and path.is_file():
+            chosen = _read(path)["deals"]
+        else:
+            chosen = []
+            for row in self.trade_proposals(day):
+                answer = self.trade_consulted(row, day) if MIAMI in row["clubs"] else "ok"
+                if answer == "asked":
+                    return False
+                if answer == "ok":
+                    chosen.append(row)                     # an objection by Wade drops the deal
+            if self.store:
+                _write(path, {"schema_version": 1, "date": day, "rule": "runtime/free_agency_2004.py Market.trade_proposals", "deals": chosen})
+        for row in chosen:
+            if any(self.contracts.get(b, {}).get("club") != row[side]["club"] for side in ("a", "b") for b in row[side]["bbr_ids"]):
+                raise ValueError(f"{row['id']}: a stored deal no longer matches the contracts it moves")
+            answer = self.draw({"event_id": row["id"], "date": day,
+                                "question": f"Do {row['a']['club']} and {row['b']['club']} trade {' and '.join(row['a']['sends'])} "
+                                            f"for {' and '.join(row['b']['sends'])} on {day}?",
+                                "decider": f"{row['a']['club']} and {row['b']['club']} front offices (engine draw)",
+                                "options": {"accept": row["both"], "decline": round(1 - row["both"], 6)},
+                                "basis": f"Gains on own objectives {row['gain']}; acceptance {row['accept']}; 1999 salary rule met "
+                                         "(runtime/free_agency_2004.py summer trades)."})
+            if answer != "accept":
+                continue
+            for side, other in (("a", "b"), ("b", "a")):
+                for name, b in zip(row[side]["sends"], row[side]["bbr_ids"]):
+                    self.contracts[b] = dict(self.contracts[b], club=row[other]["club"], source=self.contracts[b]["source"] + f"; traded {day}")
+                    self.traded.add(b)
+                    self.events.append({"date": day, "kind": "trade", "player": name, "bbr_id": b, "club": row[other]["club"],
+                                        "from": row[side]["club"], "salary": self.contracts[b]["salary"], "deal": row["id"]})
+        return not self.pending
+
+    def trade_consulted(self, row, day):
+        side = "b" if row["a"]["club"] == MIAMI else "a"
+        for b in row[side]["bbr_ids"]:
+            from . import consultations as C
+            from .standing import standing_on
+            value = self.pricing.value(b)
+            standing = standing_on(self.root, day)
+            if not C.consultation_required(standing.get("standing"), value):
+                continue
+            name = self.name(b)
+            if C.objected(self.root, SEASON, name, day):
+                return "objected"
+            if C.approved(self.root, SEASON, "trade", name, day):
+                continue
+            state_path = self.root / f"career/Dwyane_Wade/{SEASON}/current_state.json"
+            state = _read(state_path)
+            C.ask(self.root, state, day, "trade", name, b, row[side]["club"], basis=f"Miami's summer trade search on {day}: "
+                  f"{' and '.join(row['a']['sends'])} for {' and '.join(row['b']['sends'])}",
+                  evidence={"value": round(value, 2), "line": self.line(b), "salary": f"${self.contracts[b]['salary']:,}",
+                            "cap_position": f"payroll ${self.payroll(MIAMI):,}", "fit": self.group(b), "reason": "2004 summer trade"},
+                  season=SEASON, standing=standing)
+            _write(state_path, state)
+            self.pending = True
+            return "asked"
+        return "ok"
 
     def round(self, week, day):
         open_players = [b for b in self.pool if b not in self.contracts]
@@ -652,9 +908,12 @@ class Market:
             base = min(0.95, ACCEPT_BASE + ACCEPT_WEEKLY * week)
             p_accept = _sigmoid(ACCEPT_SLOPE * (ratio - 1) + math.log(base / (1 - base)))
             p_accept = min(0.97, max(0.03, p_accept))
-            us = {o["club"]: self.utility(b, o) for o in options}
+            assessed = {o["club"]: self.assess(b, o, week) for o in options}
+            us = {c: u for c, (u, walk) in assessed.items() if not walk}
+            if not us:
+                continue                                   # every offer is a role he will not take: he waits, undrawn
             m = max(us.values())
-            ex = {c: math.exp((u - m) / TEMPERATURE) for c, u in us.items()}
+            ex = {c: math.exp((u - m) / CHOICE_TEMPERATURE) for c, u in us.items()}
             z = sum(ex.values())
             probs = {c: p_accept * v / z for c, v in ex.items()}
             probs["wait"] = 1 - p_accept
@@ -663,10 +922,12 @@ class Market:
                                             + ", ".join(f"{o['club']} ${o['salary']:,} x {o['years']}" for o in options) + "), or does he wait?",
                                 "decider": f"{self.name(b)} (simulated player, engine draw)", "options": probs,
                                 "basis": f"Ask ${self.ask(b, week):,}; best offer {ratio:.2f} of the ask in total; accept chance {p_accept:.3f}; "
-                                         "club shares by money, role and winning (runtime/free_agency_2004.py)."})
+                                         f"priority {self.trait.get(b, 'money')}; utility " + ", ".join(f"{c} {u:.1f}" for c, u in us.items())
+                                         + "; " + "; ".join(f"{c} walks: {w}" for c, (_, w) in assessed.items() if w)
+                                         + " (runtime/player_utility.py, runtime/free_agency_2004.py)."})
             if answer is None or answer == "wait":
                 continue
-            accepted.append(next(o for o in options if o["club"] == answer))
+            accepted.append(dict(next(o for o in options if o["club"] == answer), trait=self.trait.get(b)))
         if self.pending:
             return False
         for o in accepted:
@@ -718,11 +979,16 @@ class Market:
             if not short:
                 break
             club = min(short, key=lambda c: (-self.need(c, self.group(b)), self.roster(c), c))
-            salary = minimum(self.service(b), self.cal)
-            self.contracts[b] = {"club": club, "salary": salary, "years": 1, "date": PLACEMENT, "route": "minimum",
+            salary, route = minimum(self.service(b), self.cal), "minimum"
+            top, how = self.most_affordable(club, b, PLACEMENT) if self.rights.get(b) != club else (self.price[b], "bird")
+            if how and top > salary:
+                salary, route = max(salary, min(top, int(round(self.price[b] * ASK_FLOOR_SHARE)))), how
+                if route == "mid_level":
+                    self.mle_used.add(club)
+            self.contracts[b] = {"club": club, "salary": salary, "years": 1, "date": PLACEMENT, "route": route,
                                  "source": "2004 camp signing (roster minimum)"}
             self.events.append({"date": PLACEMENT, "kind": "camp_signing", "player": self.name(b), "bbr_id": b, "club": club,
-                                "from": self.rights.get(b), "salary": salary, "years": 1})
+                                "from": self.rights.get(b), "salary": salary, "years": 1, "route": route})
         self.unsigned = [b for b in left if b not in self.contracts]
 
     def record(self):

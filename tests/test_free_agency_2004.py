@@ -15,15 +15,17 @@ def favourite(root, packet):
 class MarketTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.saved = F._draw, F.Market.consulted
+        cls.saved = F._draw, F.Market.consulted, F.Market.trade_consulted
         F._draw = favourite
-        F.Market.consulted = lambda self, club, b, day, amount: True
+        F.Market.consulted = lambda self, club, b, day, amount: True          # Wade's consultations are never written by tests
+        F.Market.trade_consulted = lambda self, row, day: "ok"
         cls.market = F.Market(ROOT, "2004-10-01")
+        cls.market.store = False
         cls.record = cls.market.run()
 
     @classmethod
     def tearDownClass(cls):
-        F._draw, F.Market.consulted = cls.saved
+        F._draw, F.Market.consulted, F.Market.trade_consulted = cls.saved
 
     def test_nothing_before_june_30(self):
         self.assertIsNone(F.run(ROOT, "2004-06-29"))
@@ -39,7 +41,7 @@ class MarketTests(unittest.TestCase):
     def test_contracts_respect_the_scale_and_exceptions(self):
         cal, mle = self.market.cal, {}
         for e in self.record["events"]:
-            if e["kind"] in ("signing", "re_sign"):
+            if e["kind"] in ("signing", "re_sign") and e.get("route") != "trade":
                 b = e["bbr_id"]
                 self.assertGreaterEqual(e["salary"], F.minimum(self.market.service(b), cal) - 1)
                 if e["route"] == "mid_level":
@@ -71,6 +73,31 @@ class MarketTests(unittest.TestCase):
             for r in rows:
                 if r["route"] not in ("existing", "option", "rookie_scale"):
                     self.assertIn(r["bbr_id"], self.market.roles)
+
+    def test_every_free_agent_has_a_drawn_priority(self):
+        self.assertEqual(set(self.market.trait), set(self.market.pool))
+        self.assertTrue(set(self.market.trait.values()) <= {"money", "fame", "loyalty", "winning"})
+
+    def test_location_and_priority_change_a_players_view(self):
+        b = next(iter(self.market.pool))
+        offer = {"club": "Miami Heat", "salary": 2_000_000, "years": 2}
+        other = dict(offer, club="Toronto Raptors")                  # no state tax vs the high tier, mid market both
+        self.assertNotEqual(self.market.assess(b, offer, 3)[0], self.market.assess(b, other, 3)[0])
+        saved = self.market.trait.get(b)
+        self.market.trait[b] = "money"
+        money = self.market.assess(b, offer, 3)[0]
+        self.market.trait[b] = "loyalty"
+        loyalty = self.market.assess(b, offer, 3)[0]
+        self.market.trait[b] = saved
+        self.assertNotEqual(money, loyalty)
+
+    def test_summer_trades_are_legal_and_mutual(self):
+        for e in self.record["events"]:
+            if e["kind"] == "trade":
+                self.assertGreaterEqual(e["date"], F.TRADE_FROM)
+                self.assertNotIn(e["bbr_id"], F.UNTOUCHABLE)
+        moved = [e["bbr_id"] for e in self.record["events"] if e["kind"] == "trade"]
+        self.assertEqual(len(moved), len(set(moved)))                 # nobody is traded twice in a summer
 
     def test_real_2004_moves_are_never_read(self):
         source = (ROOT / "runtime/free_agency_2004.py").read_text(encoding="utf-8")
