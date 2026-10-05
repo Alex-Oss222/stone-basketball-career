@@ -59,7 +59,7 @@ def club_lists(root=ROOT):
     clubs = simulated_clubs(root)
     out = {}
     for b, t in sorted(existing_terms(root).items()):
-        club = clubs.get(b)
+        club = clubs.get(b) or t["club"]                  # a player who missed 2003-04 stays with his contract's club
         # A player or early-termination option is the player's to decide on June 30, after the draft: not exposable.
         if not club or club == MIAMI or t["option_kind"] in ("player_option", "early_termination_option"):
             continue

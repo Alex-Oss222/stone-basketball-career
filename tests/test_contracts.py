@@ -26,7 +26,8 @@ class ContractInventoryTests(unittest.TestCase):
             cap_rules("2003-04", "2003-07-14")
         self.assertEqual(cap_rules("2003-04", "2003-07-15")["salary_cap"], 43840000)
         with self.assertRaises(ValueError):
-            cap_rules("2004-05", "2004-09-01")   # publication date not yet researched
+            cap_rules("2004-05", "2004-07-12")   # announced July 13, 2004 (nba_2004_offseason_calendar.json)
+        self.assertEqual(cap_rules("2004-05", "2004-07-13")["salary_cap"], 43870000)
 
     def test_rookie_scale(self):
         self.assertEqual(rookie_scale(5)["year_1"], 2197000)

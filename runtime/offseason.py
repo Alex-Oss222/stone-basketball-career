@@ -7,6 +7,11 @@ league (`league_moves` activation for the season). Miami is never placed here: i
 Principles (unchanged from phases 1 to 4): ability follows real careers; no real player with real 2004-05 minutes is
 left without a club; no club decides on hindsight; Miami's real transactions are skipped (AGENTS.md rule 1).
 
+Once the simulated 2004 market is complete (`runtime/free_agency_2004.py`, the user's choice of a fully simulated
+offseason), it alone places every player: rule 7, his club under a 2004-05 contract after the market (Miami's
+included, which its rollover reads); rule 8, a player with a real 2004-05 role left unsigned starts in the free-agent
+pool for the in-season market. The rules below are the history-following book used before then.
+
 For each real player, in this order:
 1. **Miami holds him** on the opening date (rule 2): he is Miami's, not placed here.
 2. **No real 2004-05 minutes** (retired, abroad, out of the league): he leaves the league with history.
@@ -95,7 +100,8 @@ def continuing(root=ROOT, on=SEASON_END):
     """{bbr_id: club} for contracts with a 2004-05 salary (not an option) on the date, as the league book holds them."""
     from .contract_terms import existing_terms
     sim = simulated_clubs(root, on)
-    return {b: sim[b] for b, t in existing_terms(root).items() if t["kind"] == "contract" and sim.get(b) and sim[b] != MIAMI}
+    out = {b: sim.get(b) or t["club"] for b, t in existing_terms(root).items() if t["kind"] == "contract"}
+    return {b: c for b, c in out.items() if c and c != MIAMI}
 
 
 def draft_swaps(root=ROOT):
@@ -109,12 +115,19 @@ def placements(root=ROOT, on=SEASON_END):
     old, new = real_clubs(OLD, root), real_clubs(NEW, root)
     sim, miami, skip, cont, swaps = simulated_clubs(root, on), miami_players(root, on), skipped_moves(root), continuing(root, on), draft_swaps(root)
     from .expansion import charlotte_players
-    expanded = charlotte_players(root)
+    from .free_agency_2004 import signed_clubs
+    expanded, market = charlotte_players(root), signed_clubs(root)
     out = []
-    for b in sorted(set(old) | set(new) | set(sim)):
+    for b in sorted(set(old) | set(new) | set(sim) | set(market)):
         role_new = new.get(b)
         name = (role_new or old.get(b) or (None, None, {"player_id": b}))[2]["player_id"]
         s_club = sim.get(b)
+        if market:                                      # the simulated 2004 market decides every 2004-05 club
+            if b in market:
+                out.append(dict(bbr_id=b, player_id=name, club=market[b], rule="7_contract_after_the_2004_market", from_club=s_club))
+            else:
+                out.append(dict(bbr_id=b, player_id=name, club=None, rule="8_unsigned_after_the_2004_market", from_club=s_club))
+            continue
         if b in miami:
             out.append(dict(bbr_id=b, player_id=name, club=MIAMI, rule="1_miami_holds", from_club=s_club))
             continue

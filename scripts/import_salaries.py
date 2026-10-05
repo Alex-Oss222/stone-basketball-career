@@ -20,7 +20,7 @@ from urllib.request import urlopen
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 URLS = {"2004-05": "https://www.eskimo.com/~pbender/misc/salaries05.txt"}
-ALIASES = {"Portland Trailblazers": "Portland Trail Blazers", "Charlotte Bobcats": "Charlotte Bobcats"}
+ALIASES = {"Portland Trailblazers": "Portland Trail Blazers", "Seattle Sonics": "Seattle SuperSonics"}
 SPELLING = {"Chris Jeffries": "Chris Jefferies", "Aleksandar Pavlovic": "Sasha Pavlovic", "Dorrell Wright": "Dorell Wright",
             "Maurice Williams": "Mo Williams", "Amare Stoudemire": "Amar'e Stoudemire", "DJ Mbenga": "D.J. Mbenga"}
 

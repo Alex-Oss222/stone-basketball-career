@@ -24,6 +24,10 @@ class ContractTermsTests(unittest.TestCase):
         self.assertIn("2005-06", t["schedule"])
         self.assertEqual(t["team_option"], "2006-07")
 
+    def test_the_free_agent_list_fixes_contract_length(self):
+        self.assertEqual(self.terms["nashst01"]["option_kind"], "early_termination_option")   # a term, not its outcome
+        self.assertNotIn("horryro01", self.terms)                                             # no guaranteed 2004-05 year
+
     def test_options_after_june_2004_stay_open(self):
         options = [t for t in self.terms.values() if t["kind"] == "option"]
         self.assertTrue(options)

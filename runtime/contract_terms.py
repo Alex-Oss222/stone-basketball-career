@@ -8,7 +8,8 @@ later choice):
 3. the 2004-05 salary list (`nba_2004_05_salaries.json`), only for a player who made no 2004 offseason move
    (signing, re-signing, offer sheet or match, sign-and-trade, rookie or undrafted signing, accepted qualifying offer)
    and was not a 2004 free agent or option case (`nba_2004_free_agent_rights.json`).
-An option year for 2004-05 (team, player or early termination) is an `option`: decided in the simulated offseason,
+The 2004 free-agent list fixes contract length: a listed player had no guaranteed 2004-05 year (an option it records
+for him stays an option). An option year for 2004-05 (team, player or early termination) is an `option`: decided in the simulated offseason,
 never by the real outcome, with one exception: a rookie-scale fourth-year team option (1999 agreement) was due by
 October 31 of the third season, so a 2004-05 rookie option was decided in history on or before October 31, 2003, before
 the simulated league began; it counts as exercised when the player is on the 2004-05 salary list, else declined.
@@ -39,12 +40,23 @@ def _read(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
+def _option_kind(text):
+    text = (text or "").lower()
+    if "early" in text:
+        return "early_termination_option"
+    if "player" in text:
+        return "player_option"
+    if "team" in text:
+        return "team_option"
+    return None
+
+
 def _later_seasons(schedule):
     return {s: v for s, v in schedule.items() if s >= SEASON and v}
 
 
 def existing_terms(root=ROOT):
-    """{bbr_id: {"salary", "kind" ("contract" or "option"), "option_kind", "schedule", "source"}}."""
+    """{bbr_id: {"club" (on the source's date), "salary", "kind" ("contract" or "option"), "option_kind", "schedule", "source"}}."""
     root = Path(root)
     out = {}
     listed = {p.get("bbr_id"): p["salary"] for e in _read(root / SALARIES)["clubs"].values() for p in e["players"] if p.get("bbr_id")}
@@ -59,10 +71,10 @@ def existing_terms(root=ROOT):
             if kind == "team_option" and p.get("status") == "under_rookie_contract":
                 if b not in listed:                         # declined by October 31, 2003, in history
                     continue
-                out[b] = {"salary": int(sched[SEASON]), "kind": "contract", "option_kind": None, "schedule": {SEASON: int(sched[SEASON])},
+                out[b] = {"club": club, "salary": int(sched[SEASON]), "kind": "contract", "option_kind": None, "schedule": {SEASON: int(sched[SEASON])},
                           "source": f"{INVENTORY.as_posix()} (rookie option exercised by 2003-10-31: on the 2004-05 list)"}
                 continue
-            out[b] = {"salary": int(sched[SEASON]), "kind": "option" if kind in OPTION_KINDS else "contract",
+            out[b] = {"club": club, "salary": int(sched[SEASON]), "kind": "option" if kind in OPTION_KINDS else "contract",
                       "option_kind": kind if kind in OPTION_KINDS else None, "schedule": _later_seasons(sched),
                       "source": INVENTORY.as_posix()}
     for row in _read(root / SIGNINGS_2003)["signings"]:
@@ -72,11 +84,24 @@ def existing_terms(root=ROOT):
         if row["years"] >= 2:                               # a 2003 signing that covers 2004-05
             per = int(round(row["total"] / row["years"]))
             seasons = [f"{2003 + i}-{str(2004 + i)[-2:]}" for i in range(row["years"])]
-            out[b] = {"salary": per, "kind": "contract", "option_kind": None, "schedule": {s: per for s in seasons if s >= SEASON},
+            out[b] = {"club": row.get("to"), "salary": per, "kind": "contract", "option_kind": None, "schedule": {s: per for s in seasons if s >= SEASON},
                       "source": f"{SIGNINGS_2003.as_posix()} (reported total, spread flat)"}
     moved = {r.get("bbr_id") for r in _read(root / SIGNINGS_2004)["signings"] if r.get("kind") in MOVE_KINDS}
     rights = _read(root / RIGHTS_2004)
     free = {fa.get("bbr_id") for club in rights.get("clubs", {}).values() for fa in club.get("free_agents", [])}
+    # The 2004 free-agent list fixes the length of contracts that already existed: a listed player had no guaranteed
+    # 2004-05 year. Where it records an option for 2004-05, the option is a term of his existing contract and stays a
+    # simulated decision (its real outcome is never read); otherwise the 2004-05 year a source above inferred is dropped.
+    for club in rights.get("clubs", {}).values():
+        for fa in club.get("free_agents", []):
+            b, opt = fa.get("bbr_id"), fa.get("option_outcome")
+            if b not in out:
+                continue
+            kind = _option_kind((opt or {}).get("option"))
+            if kind:
+                out[b].update(kind="option", option_kind=kind, source=out[b]["source"] + "; option year per the 2004 free-agent list")
+            else:
+                del out[b]
     registry = _read(root / REGISTRY)
     rookies = {p["bbr_id"] for p in (registry["players"] if isinstance(registry, dict) else registry)
                if p.get("cohort") == "2003_draft_rights" and p.get("bbr_id")}
@@ -87,7 +112,7 @@ def existing_terms(root=ROOT):
             b = p.get("bbr_id")
             if not b or b in out or b in moved or b in free or (p.get("note") or "").startswith(("released", "retired")):
                 continue
-            row = {"salary": p["salary"], "kind": "contract", "option_kind": None, "schedule": {SEASON: p["salary"]},
+            row = {"club": club, "salary": p["salary"], "kind": "contract", "option_kind": None, "schedule": {SEASON: p["salary"]},
                    "source": f"{SALARIES.as_posix()} (reconstructed: no 2004 offseason move)"}
             if b in rookies and p["salary"] > SECOND_YEAR_MINIMUM:
                 row["schedule"]["2005-06"] = None           # guaranteed, amount unknown

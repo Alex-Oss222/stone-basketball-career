@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Run the dated offseason events due on a day (2004): the draft lottery on May 26 (runtime/lottery.py), the expansion
-draft on June 22 (runtime/expansion.py) and the draft on June 24 (runtime/draft.py), for every club.
+draft on June 22 (runtime/expansion.py), the draft on June 24 (runtime/draft.py) and the summer market from June 30
+(runtime/free_agency_2004.py) for every club.
 
     python scripts/offseason_day.py --write DATE
 
@@ -15,7 +16,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from runtime import draft, expansion, lottery                                      # noqa: E402
+from runtime import draft, expansion, free_agency_2004, lottery                                      # noqa: E402
 
 
 def main():
@@ -34,6 +35,11 @@ def main():
             if p["club"] == draft.MIAMI:
                 print(f"Miami selects {p['player']} ({p['position']}) at No. {p['pick']}")
         print(f"2004 draft complete: {len(made['picks'])} picks, {len(made['trades'])} draft-night trade(s)")
+    market = free_agency_2004.run(ROOT, args.write)
+    if market:
+        miami = market["clubs"].get(draft.MIAMI, [])
+        print(f"2004 free agency complete: {sum(len(v) for v in market['clubs'].values())} contracts; Miami {len(miami)} players, "
+              f"payroll ${market['payroll'].get(draft.MIAMI, 0):,}")
     print("offseason events checked for", args.write)
     return 0
 
