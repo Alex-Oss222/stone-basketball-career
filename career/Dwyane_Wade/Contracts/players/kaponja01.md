@@ -2,9 +2,9 @@
 
 # Contract | Jason Kapono
 
-Known through: 2004-05-30. [Open interactive contract](kaponja01.html#contract) · [Contract history](kaponja01.html#contract-history)
+Known through: 2004-06-06. [Open interactive contract](kaponja01.html#contract) · [Contract history](kaponja01.html#contract-history)
 
-Jason Kapono: No verified contract record. Evidence cutoff: 2004-05-30.
+Jason Kapono: No verified contract record. Evidence cutoff: 2004-06-06.
 
 ## Current contract
 

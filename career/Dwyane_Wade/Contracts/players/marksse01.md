@@ -2,9 +2,9 @@
 
 # Contract | Sean Marks
 
-Known through: 2004-05-30. [Open interactive contract](marksse01.html#contract) · [Contract history](marksse01.html#contract-history)
+Known through: 2004-06-06. [Open interactive contract](marksse01.html#contract) · [Contract history](marksse01.html#contract-history)
 
-Sean Marks: unsigned free agent. Evidence cutoff: 2004-05-30.
+Sean Marks: unsigned free agent. Evidence cutoff: 2004-06-06.
 
 ## Current contract
 
