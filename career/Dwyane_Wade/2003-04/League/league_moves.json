@@ -2646,6 +2646,83 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.7 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-03-16-clear-smithst01",
+   "date": "2004-03-16",
+   "kind": "clear",
+   "player": "Steve Smith",
+   "bbr_id": "smithst01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Steve Smith",
+    "bbr_id": "smithst01",
+    "position": "SG",
+    "games": 71,
+    "minutes": 929
+   },
+   "contract": null,
+   "note": "cleared waivers from New Orleans Hornets: a free agent",
+   "waiver": "2003-04-market-2004-03-14-waive-smithst01"
+  },
+  {
+   "id": "2003-04-market-2004-03-16-expire-dickeka01",
+   "date": "2004-03-16",
+   "kind": "expire",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": "Dallas Mavericks",
+   "to": null,
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.1 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-03-16-waive-braggto01",
+   "date": "2004-03-16",
+   "kind": "waive",
+   "player": "Torraye Braggs",
+   "bbr_id": "braggto01",
+   "from": "Houston Rockets",
+   "to": null,
+   "role": {
+    "player_id": "Torraye Braggs",
+    "bbr_id": "braggto01",
+    "position": "PF",
+    "games": 15,
+    "minutes": 154
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-03-18"
+  },
+  {
+   "id": "2003-04-market-2004-03-16-ten_day-dickeka01",
+   "date": "2004-03-16",
+   "kind": "ten_day",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": null,
+   "to": "Houston Rockets",
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-03-26",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.74 x fit"
   }
  ],
  "market_days": [
@@ -2699,6 +2776,7 @@
   "2004-03-12",
   "2004-03-13",
   "2004-03-14",
-  "2004-03-15"
+  "2004-03-15",
+  "2004-03-16"
  ]
 }
