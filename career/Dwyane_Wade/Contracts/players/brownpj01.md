@@ -2,9 +2,9 @@
 
 # Contract | P.J. Brown
 
-Known through: 2004-06-24. [Open interactive contract](brownpj01.html#contract) · [Contract history](brownpj01.html#contract-history)
+Known through: 2004-06-27. [Open interactive contract](brownpj01.html#contract) · [Contract history](brownpj01.html#contract-history)
 
-P.J. Brown: under contract. Evidence cutoff: 2004-06-24.
+P.J. Brown: under contract. Evidence cutoff: 2004-06-27.
 
 ## Current contract
 

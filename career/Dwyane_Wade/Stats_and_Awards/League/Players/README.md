@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-06-24**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-06-27**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -379,7 +379,7 @@ Card date: **2004-06-24**. 504 registry players, one Markdown card and one inter
 | [Maceo Baston](bastoma01.md) | Toronto Raptors | 29 | sourced | [open](bastoma01.html) |
 | [Maciej Lampe](lampema01.md) | New York Knicks | 19 | sourced | [open](lampema01.html) |
 | [Malick Badiane](badiama01.md) | Houston Rockets (draft rights) | 20 | silhouette | [open](badiama01.html) |
-| [Malik Allen](allenma01.md) | Free agent | 25 | sourced | [open](allenma01.html) |
+| [Malik Allen](allenma01.md) | Free agent | 26 | sourced | [open](allenma01.html) |
 | [Malik Rose](rosema01.md) | San Antonio Spurs | 29 | sourced | [open](rosema01.html) |
 | [Marcus Haislip](haislma01.md) | Milwaukee Bucks | 23 | sourced | [open](haislma01.html) |
 | [Mario Austin](austima01.md) | Chicago Bulls (draft rights) | 22 | silhouette | [open](austima01.html) |
@@ -469,7 +469,7 @@ Card date: **2004-06-24**. 504 registry players, one Markdown card and one inter
 | [Darko Milicic](milicda01.md) | Detroit Pistons | 19 | sourced | [open](milicda01.html) |
 | [David Robinson](robinda01.md) | San Antonio Spurs | 38 | sourced | [open](robinda01.html) |
 | [Derrick Coleman](colemde01.md) | Philadelphia 76ers | 37 | sourced | [open](colemde01.html) |
-| [Dikembe Mutombo](mutomdi01.md) | New York Knicks | 37 | sourced | [open](mutomdi01.html) |
+| [Dikembe Mutombo](mutomdi01.md) | New York Knicks | 38 | sourced | [open](mutomdi01.html) |
 | [Eddy Curry](curryed01.md) | Chicago Bulls | 21 | sourced | [open](curryed01.html) |
 | [Efthimios Rentzias](rentzef01.md) | Philadelphia 76ers | 28 | sourced | [open](rentzef01.html) |
 | [Elden Campbell](campbel01.md) | Detroit Pistons | None | silhouette | [open](campbel01.html) |

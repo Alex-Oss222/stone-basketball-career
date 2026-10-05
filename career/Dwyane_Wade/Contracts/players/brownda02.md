@@ -2,9 +2,9 @@
 
 # Contract | Damone Brown
 
-Known through: 2004-06-24. [Open interactive contract](brownda02.html#contract) · [Contract history](brownda02.html#contract-history)
+Known through: 2004-06-27. [Open interactive contract](brownda02.html#contract) · [Contract history](brownda02.html#contract-history)
 
-Damone Brown: No verified contract record. Evidence cutoff: 2004-06-24.
+Damone Brown: No verified contract record. Evidence cutoff: 2004-06-27.
 
 ## Current contract
 
