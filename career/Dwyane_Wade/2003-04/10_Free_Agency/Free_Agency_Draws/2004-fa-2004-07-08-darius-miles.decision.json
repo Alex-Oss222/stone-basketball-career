@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-fa-2004-07-08-darius-miles",
+ "date": "2004-07-08",
+ "question": "2004 free agency, 2004-07-08: which offer does Darius Miles accept (Portland Trail Blazers $4,903,000 x 5, Washington Wizards $4,903,000 x 5), or does he wait?",
+ "decider": "Darius Miles (simulated player, engine draw)",
+ "options": {
+  "Portland Trail Blazers": 0.059572,
+  "Washington Wizards": 0.059572,
+  "wait": 0.880856
+ },
+ "basis": "Ask $6,164,005; best offer 0.80 of the ask in total; accept chance 0.119; priority fame; utility Portland Trail Blazers 70.1, Washington Wizards 70.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

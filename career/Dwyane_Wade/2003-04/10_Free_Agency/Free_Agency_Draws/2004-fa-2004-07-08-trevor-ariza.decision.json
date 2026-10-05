@@ -1,0 +1,19 @@
+{
+ "event_id": "2004-fa-2004-07-08-trevor-ariza",
+ "date": "2004-07-08",
+ "question": "2004 free agency, 2004-07-08: which offer does Trevor Ariza accept (Denver Nuggets $385,277 x 1, Detroit Pistons $385,277 x 1, Houston Rockets $385,277 x 1, Los Angeles Lakers $385,277 x 1, Miami Heat $385,277 x 1, New Jersey Nets $385,277 x 1, New York Knicks $385,277 x 1, Portland Trail Blazers $385,277 x 1, Washington Wizards $385,277 x 1), or does he wait?",
+ "decider": "Trevor Ariza (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.059833,
+  "Detroit Pistons": 0.059833,
+  "Houston Rockets": 0.011263,
+  "Los Angeles Lakers": 0.063059,
+  "Miami Heat": 0.071455,
+  "New Jersey Nets": 0.037772,
+  "New York Knicks": 0.063059,
+  "Portland Trail Blazers": 0.037772,
+  "Washington Wizards": 0.005954,
+  "wait": 0.59
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.410; priority money; utility Denver Nuggets 46.9, Detroit Pistons 46.9, Houston Rockets 40.2, Los Angeles Lakers 47.1, Miami Heat 47.6, New Jersey Nets 45.0, New York Knicks 47.1, Portland Trail Blazers 45.0, Washington Wizards 37.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

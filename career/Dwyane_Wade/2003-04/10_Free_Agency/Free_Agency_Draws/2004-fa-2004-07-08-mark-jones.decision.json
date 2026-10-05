@@ -1,0 +1,15 @@
+{
+ "event_id": "2004-fa-2004-07-08-mark-jones",
+ "date": "2004-07-08",
+ "question": "2004 free agency, 2004-07-08: which offer does Mark Jones accept (Denver Nuggets $385,277 x 1, Detroit Pistons $385,277 x 1, Los Angeles Lakers $385,277 x 1, New Jersey Nets $385,277 x 1, Washington Wizards $385,277 x 1), or does he wait?",
+ "decider": "Mark Jones (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.108331,
+  "Detroit Pistons": 0.108331,
+  "Los Angeles Lakers": 0.11417,
+  "New Jersey Nets": 0.068388,
+  "Washington Wizards": 0.01078,
+  "wait": 0.59
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.410; priority money; utility Denver Nuggets 46.9, Detroit Pistons 46.9, Los Angeles Lakers 47.1, New Jersey Nets 45.0, Washington Wizards 37.6;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

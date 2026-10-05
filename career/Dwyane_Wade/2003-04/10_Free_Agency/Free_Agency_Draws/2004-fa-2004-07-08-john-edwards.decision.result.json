@@ -1,0 +1,17 @@
+{
+ "date": "2004-07-08",
+ "decider": "John Edwards (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-08-john-edwards",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.111374,
+  "Milwaukee Bucks": 0.041178,
+  "Sacramento Kings": 0.042538,
+  "San Antonio Spurs": 0.062358,
+  "Toronto Raptors": 0.111374,
+  "Utah Jazz": 0.041178,
+  "wait": 0.59
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-08: which offer does John Edwards accept (Golden State Warriors $385,277 x 1, Milwaukee Bucks $385,277 x 1, Sacramento Kings $385,277 x 1, San Antonio Spurs $385,277 x 1, Toronto Raptors $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?"
+}

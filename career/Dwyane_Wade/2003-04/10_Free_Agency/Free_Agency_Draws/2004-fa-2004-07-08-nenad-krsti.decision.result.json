@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-08",
+ "decider": "Nenad Krsti\u0107 (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-08-nenad-krsti",
+ "kind": "decision",
+ "options": {
+  "Denver Nuggets": 0.125334,
+  "Detroit Pistons": 0.125334,
+  "Los Angeles Lakers": 0.159331,
+  "wait": 0.590001
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-08: which offer does Nenad Krsti\u0107 accept (Denver Nuggets $385,277 x 1, Detroit Pistons $385,277 x 1, Los Angeles Lakers $385,277 x 1), or does he wait?"
+}

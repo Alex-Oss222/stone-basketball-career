@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-08-d-j-mbenga",
+ "date": "2004-07-08",
+ "question": "2004 free agency, 2004-07-08: which offer does D.J. Mbenga accept (San Antonio Spurs $385,277 x 1), or does he wait?",
+ "decider": "D.J. Mbenga (simulated player, engine draw)",
+ "options": {
+  "San Antonio Spurs": 0.41,
+  "wait": 0.59
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.410; priority loyalty; utility San Antonio Spurs 49.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

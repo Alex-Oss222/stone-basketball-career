@@ -1,0 +1,16 @@
+{
+ "event_id": "2004-fa-2004-07-08-tierre-brown",
+ "date": "2004-07-08",
+ "question": "2004 free agency, 2004-07-08: which offer does Tierre Brown accept (Atlanta Hawks $720,046 x 1, Boston Celtics $720,046 x 1, Chicago Bulls $720,046 x 1, Miami Heat $720,046 x 1, Minnesota Timberwolves $720,046 x 1, Philadelphia 76ers $720,046 x 1), or does he wait?",
+ "decider": "Tierre Brown (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.053983,
+  "Boston Celtics": 0.053983,
+  "Chicago Bulls": 0.091944,
+  "Miami Heat": 0.102123,
+  "Minnesota Timberwolves": 0.053983,
+  "Philadelphia 76ers": 0.053983,
+  "wait": 0.590001
+ },
+ "basis": "Ask $720,046; best offer 1.00 of the ask in total; accept chance 0.410; priority money; utility Atlanta Hawks 46.4, Boston Celtics 46.4, Chicago Bulls 48.5, Miami Heat 49.0, Minnesota Timberwolves 46.4, Philadelphia 76ers 46.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

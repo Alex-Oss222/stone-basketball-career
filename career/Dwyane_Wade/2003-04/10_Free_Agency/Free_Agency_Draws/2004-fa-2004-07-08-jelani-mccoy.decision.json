@@ -1,0 +1,24 @@
+{
+ "event_id": "2004-fa-2004-07-08-jelani-mccoy",
+ "date": "2004-07-08",
+ "question": "2004 free agency, 2004-07-08: which offer does Jelani McCoy accept (Cleveland Cavaliers $870,046 x 1, Golden State Warriors $870,046 x 1, Indiana Pacers $870,046 x 1, Los Angeles Clippers $870,046 x 1, Memphis Grizzlies $870,046 x 1, Miami Heat $870,046 x 1, Milwaukee Bucks $870,046 x 1, New Orleans Hornets $870,046 x 1, Portland Trail Blazers $870,046 x 1, Sacramento Kings $870,046 x 1, San Antonio Spurs $870,046 x 1, Seattle SuperSonics $870,046 x 1, Toronto Raptors $870,046 x 1, Utah Jazz $870,046 x 1), or does he wait?",
+ "decider": "Jelani McCoy (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.068168,
+  "Golden State Warriors": 0.015634,
+  "Indiana Pacers": 0.025203,
+  "Los Angeles Clippers": 0.026562,
+  "Memphis Grizzlies": 0.034191,
+  "Miami Heat": 0.047678,
+  "Milwaukee Bucks": 0.018074,
+  "New Orleans Hornets": 0.018074,
+  "Portland Trail Blazers": 0.025203,
+  "Sacramento Kings": 0.015634,
+  "San Antonio Spurs": 0.034191,
+  "Seattle SuperSonics": 0.047678,
+  "Toronto Raptors": 0.015634,
+  "Utah Jazz": 0.018074,
+  "wait": 0.590002
+ },
+ "basis": "Ask $870,046; best offer 1.00 of the ask in total; accept chance 0.410; priority money; utility Cleveland Cavaliers 50.4, Golden State Warriors 44.5, Indiana Pacers 46.4, Los Angeles Clippers 46.6, Memphis Grizzlies 47.6, Miami Heat 49.0, Milwaukee Bucks 45.1, New Orleans Hornets 45.1, Portland Trail Blazers 46.4, Sacramento Kings 44.5, San Antonio Spurs 47.6, Seattle SuperSonics 49.0, Toronto Raptors 44.5, Utah Jazz 45.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

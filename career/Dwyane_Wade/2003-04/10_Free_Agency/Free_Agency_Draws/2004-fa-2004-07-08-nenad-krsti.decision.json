@@ -1,0 +1,13 @@
+{
+ "event_id": "2004-fa-2004-07-08-nenad-krsti",
+ "date": "2004-07-08",
+ "question": "2004 free agency, 2004-07-08: which offer does Nenad Krstić accept (Denver Nuggets $385,277 x 1, Detroit Pistons $385,277 x 1, Los Angeles Lakers $385,277 x 1), or does he wait?",
+ "decider": "Nenad Krstić (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.125334,
+  "Detroit Pistons": 0.125334,
+  "Los Angeles Lakers": 0.159331,
+  "wait": 0.590001
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.410; priority loyalty; utility Denver Nuggets 52.7, Detroit Pistons 52.7, Los Angeles Lakers 53.7;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

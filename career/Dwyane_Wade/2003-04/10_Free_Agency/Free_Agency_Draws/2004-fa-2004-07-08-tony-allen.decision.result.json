@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-08",
+ "decider": "Tony Allen (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-08-tony-allen",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.145772,
+  "Miami Heat": 0.118456,
+  "Minnesota Timberwolves": 0.145772,
+  "wait": 0.59
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-08: which offer does Tony Allen accept (Atlanta Hawks $385,277 x 1, Miami Heat $385,277 x 1, Minnesota Timberwolves $385,277 x 1), or does he wait?"
+}

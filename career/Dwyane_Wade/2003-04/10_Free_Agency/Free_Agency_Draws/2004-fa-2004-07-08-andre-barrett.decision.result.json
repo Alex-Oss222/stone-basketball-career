@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-08",
+ "decider": "Andre Barrett (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-08-andre-barrett",
+ "kind": "decision",
+ "options": {
+  "Minnesota Timberwolves": 0.41,
+  "wait": 0.59
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-08: which offer does Andre Barrett accept (Minnesota Timberwolves $385,277 x 1), or does he wait?"
+}

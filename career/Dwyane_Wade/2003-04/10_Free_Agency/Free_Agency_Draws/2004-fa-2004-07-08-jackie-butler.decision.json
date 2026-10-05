@@ -1,0 +1,22 @@
+{
+ "event_id": "2004-fa-2004-07-08-jackie-butler",
+ "date": "2004-07-08",
+ "question": "2004 free agency, 2004-07-08: which offer does Jackie Butler accept (Cleveland Cavaliers $385,277 x 1, Golden State Warriors $385,277 x 1, Indiana Pacers $385,277 x 1, Los Angeles Clippers $385,277 x 1, Memphis Grizzlies $385,277 x 1, Milwaukee Bucks $385,277 x 1, New Orleans Hornets $385,277 x 1, Sacramento Kings $385,277 x 1, San Antonio Spurs $385,277 x 1, Seattle SuperSonics $385,277 x 1, Toronto Raptors $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?",
+ "decider": "Jackie Butler (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.031324,
+  "Golden State Warriors": 0.07999,
+  "Indiana Pacers": 0.031324,
+  "Los Angeles Clippers": 0.069366,
+  "Memphis Grizzlies": 0.023734,
+  "Milwaukee Bucks": 0.015672,
+  "New Orleans Hornets": 0.015672,
+  "Sacramento Kings": 0.022917,
+  "San Antonio Spurs": 0.023734,
+  "Seattle SuperSonics": 0.000603,
+  "Toronto Raptors": 0.07999,
+  "Utah Jazz": 0.015672,
+  "wait": 0.590002
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.410; priority fame; utility Cleveland Cavaliers 51.7, Golden State Warriors 55.5, Indiana Pacers 51.7, Los Angeles Clippers 54.9, Memphis Grizzlies 50.6, Milwaukee Bucks 48.9, New Orleans Hornets 48.9, Sacramento Kings 50.5, San Antonio Spurs 50.6, Seattle SuperSonics 35.9, Toronto Raptors 55.5, Utah Jazz 48.9;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

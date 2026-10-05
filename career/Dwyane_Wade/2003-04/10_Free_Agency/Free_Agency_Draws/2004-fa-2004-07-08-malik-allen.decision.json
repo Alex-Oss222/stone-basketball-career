@@ -1,0 +1,21 @@
+{
+ "event_id": "2004-fa-2004-07-08-malik-allen",
+ "date": "2004-07-08",
+ "question": "2004 free agency, 2004-07-08: which offer does Malik Allen accept (Chicago Bulls $720,046 x 1, Denver Nuggets $720,046 x 1, Detroit Pistons $720,046 x 1, Houston Rockets $720,046 x 1, Los Angeles Lakers $720,046 x 1, Miami Heat $720,046 x 1, New Jersey Nets $720,046 x 1, New York Knicks $720,046 x 1, Portland Trail Blazers $720,046 x 1, San Antonio Spurs $720,046 x 1, Washington Wizards $720,046 x 1), or does he wait?",
+ "decider": "Malik Allen (simulated player, engine draw)",
+ "options": {
+  "Chicago Bulls": 0.008287,
+  "Denver Nuggets": 0.052706,
+  "Detroit Pistons": 0.052706,
+  "Houston Rockets": 0.007223,
+  "Los Angeles Lakers": 0.06717,
+  "Miami Heat": 0.049513,
+  "New Jersey Nets": 0.032695,
+  "New York Knicks": 0.06717,
+  "Portland Trail Blazers": 0.032695,
+  "San Antonio Spurs": 0.035066,
+  "Washington Wizards": 0.004769,
+  "wait": 0.59
+ },
+ "basis": "Ask $720,046; best offer 1.00 of the ask in total; accept chance 0.410; priority loyalty; utility Chicago Bulls 45.0, Denver Nuggets 52.4, Detroit Pistons 52.4, Houston Rockets 44.5, Los Angeles Lakers 53.4, Miami Heat 52.2, New Jersey Nets 50.5, New York Knicks 53.4, Portland Trail Blazers 50.5, San Antonio Spurs 50.8, Washington Wizards 42.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

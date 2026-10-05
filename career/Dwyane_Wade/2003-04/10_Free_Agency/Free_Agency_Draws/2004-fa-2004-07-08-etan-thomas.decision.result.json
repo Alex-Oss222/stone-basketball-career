@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-08",
+ "decider": "Etan Thomas (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-08-etan-thomas",
+ "kind": "decision",
+ "options": {
+  "Memphis Grizzlies": 0.137168,
+  "Milwaukee Bucks": 0.084877,
+  "Toronto Raptors": 0.187955,
+  "wait": 0.59
+ },
+ "outcome": "Memphis Grizzlies",
+ "question": "2004 free agency, 2004-07-08: which offer does Etan Thomas accept (Memphis Grizzlies $4,903,000 x 4, Milwaukee Bucks $5,016,356 x 4, Toronto Raptors $5,750,000 x 4), or does he wait?"
+}
