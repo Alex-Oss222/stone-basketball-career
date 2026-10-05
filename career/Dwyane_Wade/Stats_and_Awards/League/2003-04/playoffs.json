@@ -137,10 +137,10 @@
    ],
    "home_court": "Indiana Pacers",
    "wins": {
-    "Indiana Pacers": 3,
+    "Indiana Pacers": 4,
     "New Orleans Hornets": 3
    },
-   "winner": null,
+   "winner": "Indiana Pacers",
    "games": [
     {
      "game": 1,
@@ -208,9 +208,12 @@
      "home": "Indiana Pacers",
      "away": "New Orleans Hornets",
      "conditional": true,
-     "event_id": "2004-05-01-new-orleans-hornets-at-indiana-pacers"
+     "event_id": "2004-05-01-new-orleans-hornets-at-indiana-pacers",
+     "result": "New Orleans Hornets 97, Indiana Pacers 101",
+     "winner": "Indiana Pacers"
     }
-   ]
+   ],
+   "clinched_on": "2004-05-01"
   },
   {
    "id": "east-4-5",
@@ -1070,6 +1073,83 @@
      "away": "Los Angeles Lakers",
      "conditional": true,
      "event_id": "2004-05-15-los-angeles-lakers-at-san-antonio-spurs"
+    }
+   ]
+  },
+  {
+   "id": "east-semi-a",
+   "round": "conference_semifinals",
+   "conference": "East",
+   "seeds": [
+    1,
+    5
+   ],
+   "clubs": [
+    "Indiana Pacers",
+    "Milwaukee Bucks"
+   ],
+   "home_court": "Indiana Pacers",
+   "wins": {
+    "Indiana Pacers": 0,
+    "Milwaukee Bucks": 0
+   },
+   "winner": null,
+   "games": [
+    {
+     "game": 1,
+     "date": "2004-05-03",
+     "home": "Indiana Pacers",
+     "away": "Milwaukee Bucks",
+     "conditional": false,
+     "event_id": "2004-05-03-milwaukee-bucks-at-indiana-pacers"
+    },
+    {
+     "game": 2,
+     "date": "2004-05-05",
+     "home": "Indiana Pacers",
+     "away": "Milwaukee Bucks",
+     "conditional": false,
+     "event_id": "2004-05-05-milwaukee-bucks-at-indiana-pacers"
+    },
+    {
+     "game": 3,
+     "date": "2004-05-08",
+     "home": "Milwaukee Bucks",
+     "away": "Indiana Pacers",
+     "conditional": false,
+     "event_id": "2004-05-08-indiana-pacers-at-milwaukee-bucks"
+    },
+    {
+     "game": 4,
+     "date": "2004-05-10",
+     "home": "Milwaukee Bucks",
+     "away": "Indiana Pacers",
+     "conditional": false,
+     "event_id": "2004-05-10-indiana-pacers-at-milwaukee-bucks"
+    },
+    {
+     "game": 5,
+     "date": "2004-05-12",
+     "home": "Indiana Pacers",
+     "away": "Milwaukee Bucks",
+     "conditional": true,
+     "event_id": "2004-05-12-milwaukee-bucks-at-indiana-pacers"
+    },
+    {
+     "game": 6,
+     "date": "2004-05-14",
+     "home": "Milwaukee Bucks",
+     "away": "Indiana Pacers",
+     "conditional": true,
+     "event_id": "2004-05-14-indiana-pacers-at-milwaukee-bucks"
+    },
+    {
+     "game": 7,
+     "date": "2004-05-16",
+     "home": "Indiana Pacers",
+     "away": "Milwaukee Bucks",
+     "conditional": true,
+     "event_id": "2004-05-16-milwaukee-bucks-at-indiana-pacers"
     }
    ]
   }

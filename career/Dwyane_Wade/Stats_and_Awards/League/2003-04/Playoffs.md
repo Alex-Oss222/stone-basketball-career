@@ -36,8 +36,8 @@ Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · [Miam
 
 ```
 EAST
-  (1) Indiana Pacers           3
-  (8) New Orleans Hornets      3
+  (1) Indiana Pacers           4
+  (8) New Orleans Hornets      3   -> Indiana Pacers
   (4) Miami Heat               1
   (5) Milwaukee Bucks          4   -> Milwaukee Bucks
         conference semifinal: winners meet
@@ -67,7 +67,7 @@ WEST
 
 ### East: (1) Indiana Pacers vs (8) New Orleans Hornets
 
-Home court: Indiana Pacers. Series Indiana Pacers 3, New Orleans Hornets 3.
+Home court: Indiana Pacers. Indiana Pacers wins 4-3.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
@@ -77,7 +77,7 @@ Home court: Indiana Pacers. Series Indiana Pacers 3, New Orleans Hornets 3.
 | 4 | Sun Apr 25 | New Orleans Hornets | Indiana Pacers | Indiana Pacers 96, New Orleans Hornets 90 |
 | 5 | Tue Apr 27 | Indiana Pacers | New Orleans Hornets | New Orleans Hornets 99, Indiana Pacers 98 |
 | 6 | Thu Apr 29 | New Orleans Hornets | Indiana Pacers | Indiana Pacers 79, New Orleans Hornets 87 |
-| 7 | Sat May 1 | Indiana Pacers | New Orleans Hornets | if needed |
+| 7 | Sat May 1 | Indiana Pacers | New Orleans Hornets | New Orleans Hornets 97, Indiana Pacers 101 |
 
 ### East: (4) Miami Heat vs (5) Milwaukee Bucks
 
@@ -220,3 +220,17 @@ Home court: San Antonio Spurs. Series San Antonio Spurs 0, Los Angeles Lakers 0.
 | 5 | Tue May 11 | San Antonio Spurs | Los Angeles Lakers | if needed |
 | 6 | Thu May 13 | Los Angeles Lakers | San Antonio Spurs | if needed |
 | 7 | Sat May 15 | San Antonio Spurs | Los Angeles Lakers | if needed |
+
+### East: (1) Indiana Pacers vs (5) Milwaukee Bucks
+
+Home court: Indiana Pacers. Series Indiana Pacers 0, Milwaukee Bucks 0.
+
+| Game | Date | Home | Away | Result |
+| ---: | --- | --- | --- | --- |
+| 1 | Mon May 3 | Indiana Pacers | Milwaukee Bucks |  |
+| 2 | Wed May 5 | Indiana Pacers | Milwaukee Bucks |  |
+| 3 | Sat May 8 | Milwaukee Bucks | Indiana Pacers |  |
+| 4 | Mon May 10 | Milwaukee Bucks | Indiana Pacers |  |
+| 5 | Wed May 12 | Indiana Pacers | Milwaukee Bucks | if needed |
+| 6 | Fri May 14 | Milwaukee Bucks | Indiana Pacers | if needed |
+| 7 | Sun May 16 | Indiana Pacers | Milwaukee Bucks | if needed |
