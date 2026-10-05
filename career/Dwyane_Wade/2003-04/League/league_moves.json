@@ -2606,6 +2606,46 @@
    },
    "contract": null,
    "note": "10-day contract ended (2.3 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-03-14-waive-smithst01",
+   "date": "2004-03-14",
+   "kind": "waive",
+   "player": "Steve Smith",
+   "bbr_id": "smithst01",
+   "from": "New Orleans Hornets",
+   "to": null,
+   "role": {
+    "player_id": "Steve Smith",
+    "bbr_id": "smithst01",
+    "position": "SG",
+    "games": 71,
+    "minutes": 929
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-03-16"
+  },
+  {
+   "id": "2003-04-market-2004-03-14-ten_day-harriad01",
+   "date": "2004-03-14",
+   "kind": "ten_day",
+   "player": "Adam Harrington",
+   "bbr_id": "harriad01",
+   "from": null,
+   "to": "New Orleans Hornets",
+   "role": {
+    "player_id": "Adam Harrington",
+    "bbr_id": "harriad01",
+    "position": "SG",
+    "games": 19,
+    "minutes": 111
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-03-24",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.7 x fit"
   }
  ],
  "market_days": [
@@ -2657,6 +2697,7 @@
   "2004-03-10",
   "2004-03-11",
   "2004-03-12",
-  "2004-03-13"
+  "2004-03-13",
+  "2004-03-14"
  ]
 }
