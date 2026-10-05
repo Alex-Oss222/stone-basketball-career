@@ -2,9 +2,9 @@
 
 # Contract | Chris Mihm
 
-Known through: 2004-03-21. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
+Known through: 2004-03-22. [Open interactive contract](mihmch01.html#contract) · [Contract history](mihmch01.html#contract-history)
 
-Chris Mihm: team option pending. Evidence cutoff: 2004-03-21.
+Chris Mihm: team option pending. Evidence cutoff: 2004-03-22.
 
 ## Current contract
 

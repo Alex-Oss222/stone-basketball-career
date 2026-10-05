@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-03-21**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-03-22**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -19,7 +19,7 @@ Card date: **2004-03-21**. 504 registry players, one Markdown card and one inter
 | [Bimbo Coles](colesbi01.md) | Boston Celtics | 35 | sourced | [open](colesbi01.html) |
 | [Bobby Jackson](jacksbo01.md) | Sacramento Kings | 31 | sourced | [open](jacksbo01.html) |
 | [Brevin Knight](knighbr01.md) | Phoenix Suns | 28 | sourced | [open](knighbr01.html) |
-| [Brian Shaw](shawbr01.md) | Los Angeles Lakers | 37 | sourced | [open](shawbr01.html) |
+| [Brian Shaw](shawbr01.md) | Los Angeles Lakers | 38 | sourced | [open](shawbr01.html) |
 | [Bryce Drew](drewbr01.md) | New Orleans Hornets | None | silhouette | [open](drewbr01.html) |
 | [Carlos Arroyo](arroyca01.md) | Utah Jazz | 24 | sourced | [open](arroyca01.html) |
 | [Charlie Ward](wardch01.md) | New York Knicks | 33 | sourced | [open](wardch01.html) |
@@ -508,7 +508,7 @@ Card date: **2004-03-21**. 504 registry players, one Markdown card and one inter
 | [Lorenzen Wright](wrighlo02.md) | Memphis Grizzlies | None | silhouette | [open](wrighlo02.html) |
 | [Mamadou N'diaye](ndiayma02.md) | Dallas Mavericks | 28 | silhouette | [open](ndiayma02.html) |
 | [Marc Jackson](jacksma02.md) | Philadelphia 76ers | 29 | sourced | [open](jacksma02.html) |
-| [Marcus Camby](cambyma01.md) | Denver Nuggets | 29 | sourced | [open](cambyma01.html) |
+| [Marcus Camby](cambyma01.md) | Denver Nuggets | 30 | sourced | [open](cambyma01.html) |
 | [Mark Blount](blounma01.md) | Boston Celtics | 28 | sourced | [open](blounma01.html) |
 | [Melvin Ely](elyme01.md) | Los Angeles Clippers | 25 | silhouette | [open](elyme01.html) |
 | [Mengke Bateer](bateeme01.md) | Toronto Raptors | None | silhouette | [open](bateeme01.html) |
@@ -535,7 +535,7 @@ Card date: **2004-03-21**. 504 registry players, one Markdown card and one inter
 | [Scott Williams](willisc01.md) | Phoenix Suns | 36 | sourced | [open](willisc01.html) |
 | [Sean Rooks](rooksse01.md) | New Orleans Hornets | 34 | sourced | [open](rooksse01.html) |
 | [Shaquille O'Neal](onealsh01.md) | Los Angeles Lakers | 32 | sourced | [open](onealsh01.html) |
-| [Shawn Bradley](bradlsh01.md) | Dallas Mavericks | 31 | sourced | [open](bradlsh01.html) |
+| [Shawn Bradley](bradlsh01.md) | Dallas Mavericks | 32 | sourced | [open](bradlsh01.html) |
 | [Shawn Kemp](kempsh01.md) | Miami Heat | 34 | sourced | [open](kempsh01.html) |
 | [Slavko Vranes](vranesl01.md) | New York Knicks | 21 | sourced | [open](vranesl01.html) |
 | [Sofoklis Schortsanitis](schorso01.md) | Los Angeles Clippers (draft rights) | 18 | sourced | [open](schorso01.html) |

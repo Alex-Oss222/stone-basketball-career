@@ -2916,6 +2916,110 @@
     }
    ],
    "winner": "Kevin Garnett"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-03-15-east",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "East",
+   "period_start": "2004-03-15",
+   "period_end": "2004-03-21",
+   "announced_on": "2004-03-22",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/03_March/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Jason Kidd",
+     "team": "New Jersey Nets",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 24.0,
+     "reb": 8.8,
+     "ast": 9.8,
+     "game_score": 21.35,
+     "score": 91.4,
+     "rank": 1
+    },
+    {
+     "player": "Jason Terry",
+     "team": "Atlanta Hawks",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 22.2,
+     "reb": 3.5,
+     "ast": 7.2,
+     "game_score": 16.12,
+     "score": 76.5,
+     "rank": 2
+    },
+    {
+     "player": "Richard Hamilton",
+     "team": "Detroit Pistons",
+     "games": 3,
+     "wins": 3,
+     "losses": 0,
+     "pts": 28.0,
+     "reb": 4.0,
+     "ast": 4.7,
+     "game_score": 20.8,
+     "score": 71.4,
+     "rank": 3
+    }
+   ],
+   "winner": "Jason Kidd"
+  },
+  {
+   "id": "2003-04-player_of_week-2004-03-15-west",
+   "award": "player_of_week",
+   "name": "Player of the Week",
+   "conference": "West",
+   "period_start": "2004-03-15",
+   "period_end": "2004-03-21",
+   "announced_on": "2004-03-22",
+   "filed_on": "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/03_March/Week_3/League_Awards.md",
+   "shortlist": [
+    {
+     "player": "Shaquille O'Neal",
+     "team": "Los Angeles Lakers",
+     "games": 4,
+     "wins": 4,
+     "losses": 0,
+     "pts": 24.0,
+     "reb": 11.8,
+     "ast": 3.5,
+     "game_score": 18.9,
+     "score": 87.6,
+     "rank": 1
+    },
+    {
+     "player": "Brad Miller",
+     "team": "Sacramento Kings",
+     "games": 4,
+     "wins": 3,
+     "losses": 1,
+     "pts": 18.5,
+     "reb": 13.0,
+     "ast": 3.8,
+     "game_score": 18.73,
+     "score": 83.9,
+     "rank": 2
+    },
+    {
+     "player": "Elton Brand",
+     "team": "Los Angeles Clippers",
+     "games": 4,
+     "wins": 2,
+     "losses": 2,
+     "pts": 18.2,
+     "reb": 12.5,
+     "ast": 2.5,
+     "game_score": 16.95,
+     "score": 73.8,
+     "rank": 3
+    }
+   ],
+   "winner": "Shaquille O'Neal"
   }
  ]
 }
