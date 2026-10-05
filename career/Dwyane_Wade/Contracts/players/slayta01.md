@@ -2,9 +2,9 @@
 
 # Contract | Tamar Slay
 
-Known through: 2004-07-18. [Open interactive contract](slayta01.html#contract) · [Contract history](slayta01.html#contract-history)
+Known through: 2004-07-25. [Open interactive contract](slayta01.html#contract) · [Contract history](slayta01.html#contract-history)
 
-Tamar Slay: under contract. Evidence cutoff: 2004-07-18.
+Tamar Slay: under contract. Evidence cutoff: 2004-07-25.
 
 ## Current contract
 

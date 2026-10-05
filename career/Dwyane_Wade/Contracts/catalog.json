@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-07-18",
+  "as_of": "2004-07-25",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -681,9 +681,9 @@
       "player_id": "anderch01",
       "name": "Chris Andersen",
       "team": "Denver Nuggets",
-      "status": "voided",
-      "current_contract_id": null,
-      "recorded_agreements": 3,
+      "status": "under contract",
+      "current_contract_id": "anderch01-2004-07-19",
+      "recorded_agreements": 4,
       "href": "players/anderch01.html#contract"
     },
     {
@@ -1014,9 +1014,9 @@
       "player_id": "songada01",
       "name": "Darius Songaila",
       "team": "Sacramento Kings",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "songada01-2004-07-23",
+      "recorded_agreements": 1,
       "href": "players/songada01.html#contract"
     },
     {
@@ -1455,9 +1455,9 @@
       "player_id": "thomaet01",
       "name": "Etan Thomas",
       "team": "Washington Wizards",
-      "status": "under rookie contract",
-      "current_contract_id": "thomaet01-2000-07-07",
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "thomaet01-2004-07-25",
+      "recorded_agreements": 2,
       "href": "players/thomaet01.html#contract"
     },
     {
@@ -1492,8 +1492,8 @@
       "name": "Fred Hoiberg",
       "team": "Minnesota Timberwolves",
       "status": "under contract",
-      "current_contract_id": null,
-      "recorded_agreements": 2,
+      "current_contract_id": "hoibefr01-2004-07-23",
+      "recorded_agreements": 3,
       "href": "players/hoibefr01.html#contract"
     },
     {
@@ -1572,9 +1572,9 @@
       "player_id": "giricgo01",
       "name": "Gordan Giricek",
       "team": "Orlando Magic",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "giricgo01-2004-07-19",
+      "recorded_agreements": 1,
       "href": "players/giricgo01.html#contract"
     },
     {
@@ -1600,8 +1600,8 @@
       "name": "Greg Ostertag",
       "team": "Utah Jazz",
       "status": "under contract",
-      "current_contract_id": "ostergr01-existing-d190b00bef8d",
-      "recorded_agreements": 1,
+      "current_contract_id": "ostergr01-2004-07-20",
+      "recorded_agreements": 2,
       "href": "players/ostergr01.html#contract"
     },
     {
@@ -1834,8 +1834,8 @@
       "name": "Jarron Collins",
       "team": "Utah Jazz",
       "status": "under contract",
-      "current_contract_id": "collija03-2002-07-24",
-      "recorded_agreements": 1,
+      "current_contract_id": "collija03-2004-07-23",
+      "recorded_agreements": 2,
       "href": "players/collija03.html#contract"
     },
     {
@@ -3391,8 +3391,8 @@
       "name": "Rasheed Wallace",
       "team": "Portland Trail Blazers",
       "status": "under contract",
-      "current_contract_id": "wallara01-1997-09-29",
-      "recorded_agreements": 1,
+      "current_contract_id": "wallara01-2004-07-23",
+      "recorded_agreements": 2,
       "href": "players/wallara01.html#contract"
     },
     {
@@ -3633,9 +3633,9 @@
       "player_id": "duprero01",
       "name": "Ronald Dupree",
       "team": "Chicago Bulls",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "duprero01-2004-07-21",
+      "recorded_agreements": 1,
       "href": "players/duprero01.html#contract"
     },
     {
@@ -4002,9 +4002,9 @@
       "player_id": "huntest01",
       "name": "Steven Hunter",
       "team": "Orlando Magic",
-      "status": "under rookie contract",
-      "current_contract_id": "huntest01-2001-08-23",
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "huntest01-2004-07-23",
+      "recorded_agreements": 2,
       "href": "players/huntest01.html#contract"
     },
     {
@@ -4381,8 +4381,8 @@
       "name": "Vlade Divac",
       "team": "Sacramento Kings",
       "status": "under contract",
-      "current_contract_id": "divacvl01-existing-03aec9bf91a7",
-      "recorded_agreements": 1,
+      "current_contract_id": "divacvl01-2004-07-20",
+      "recorded_agreements": 2,
       "href": "players/divacvl01.html#contract"
     },
     {

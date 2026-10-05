@@ -2,9 +2,9 @@
 
 # Contract | Ben Handlogten
 
-Known through: 2004-07-18. [Open interactive contract](handlbe01.html#contract) · [Contract history](handlbe01.html#contract-history)
+Known through: 2004-07-25. [Open interactive contract](handlbe01.html#contract) · [Contract history](handlbe01.html#contract-history)
 
-Ben Handlogten: No verified contract record. Evidence cutoff: 2004-07-18.
+Ben Handlogten: No verified contract record. Evidence cutoff: 2004-07-25.
 
 ## Current contract
 
