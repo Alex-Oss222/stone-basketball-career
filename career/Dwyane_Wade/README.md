@@ -35,7 +35,7 @@ Career cutoff: **2004-06-20**. Club competitions and national-team events have s
 
 ### NBA regular season
 
-[![Shooting](Stats_and_Awards/assets/shooting_link.svg)](Stats_and_Awards/player_cards.html?period=regular-2003-04-season#shooting) [![Contract](Stats_and_Awards/assets/contract_link.svg)](Stats_and_Awards/player_cards.html#contract) [![Awards](Stats_and_Awards/assets/awards_link.svg)](Stats_and_Awards/player_cards.html#awards)
+[![Shooting](Stats_and_Awards/assets/shooting_link.svg)](Stats_and_Awards/player_cards.html?period=regular-2004-05-season#shooting) [![Contract](Stats_and_Awards/assets/contract_link.svg)](Stats_and_Awards/player_cards.html#contract) [![Awards](Stats_and_Awards/assets/awards_link.svg)](Stats_and_Awards/player_cards.html#awards)
 
 [Shooting detail](Stats_and_Awards/Shooting.md) · [Current contract](Stats_and_Awards/Contract.md#current-contract) · [Contract history](Stats_and_Awards/Contract.md#contract-history) · [Annual award record](Stats_and_Awards/Awards.md)
 
@@ -50,7 +50,7 @@ Awards are confirmed through 2004-06-20, filed by the honor's period-end date; t
 
 ### NBA playoffs
 
-[![Shooting](Stats_and_Awards/assets/shooting_link.svg)](Stats_and_Awards/player_cards.html?period=regular-2003-04-season#shooting) [![Contract](Stats_and_Awards/assets/contract_link.svg)](Stats_and_Awards/player_cards.html#contract) [![Awards](Stats_and_Awards/assets/awards_link.svg)](Stats_and_Awards/player_cards.html#awards)
+[![Shooting](Stats_and_Awards/assets/shooting_link.svg)](Stats_and_Awards/player_cards.html?period=regular-2004-05-season#shooting) [![Contract](Stats_and_Awards/assets/contract_link.svg)](Stats_and_Awards/player_cards.html#contract) [![Awards](Stats_and_Awards/assets/awards_link.svg)](Stats_and_Awards/player_cards.html#awards)
 
 [Shooting detail](Stats_and_Awards/Shooting.md) · [Current contract](Stats_and_Awards/Contract.md#current-contract) · [Contract history](Stats_and_Awards/Contract.md#contract-history) · [Annual award record](Stats_and_Awards/Awards.md)
 

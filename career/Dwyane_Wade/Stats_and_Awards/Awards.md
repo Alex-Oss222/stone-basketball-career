@@ -19,3 +19,9 @@ Only earned annual awards announced on or before 2004-06-20 appear. Weekly, mont
 ![All-NBA First Team](assets/annual_3e15f146a074bc58.svg)
 
 ![All-Rookie First Team](assets/annual_460469067b9e7fe2.svg)
+
+## 2004-05
+
+Only earned annual awards announced on or before 2004-06-20 appear. Weekly, monthly and unclassified recognition remains in the full award register.
+
+No earned annual awards are recorded by this season's displayed cutoff. Nominations, pending decisions and historical Wade awards are not earned career awards.

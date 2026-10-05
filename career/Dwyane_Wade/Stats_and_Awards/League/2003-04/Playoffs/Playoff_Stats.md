@@ -1,35 +1,35 @@
 # 2003-04 playoff statistics
 
-Through 2004-06-13: 77 closed playoff game(s). Playoff games only, from closed results (`runtime/playoff_stats.py`); the regular season is a separate record. Clubs in order of playoff wins; percentages from summed makes and attempts. [Bracket and schedule](../Playoffs.md).
+Through 2004-06-20: 80 closed playoff game(s). Playoff games only, from closed results (`runtime/playoff_stats.py`); the regular season is a separate record. Clubs in order of playoff wins; percentages from summed makes and attempts. [Bracket and schedule](../Playoffs.md).
 
 ## All playoff games
 
 | Player | Club | G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G | FG | FG% | 3P | 3P% | FT | FT% | TS% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Richard Jefferson | New Jersey Nets | 20 | 20 | 38.1 | 18.0 | 5.8 | 4.0 | 0.9 | 0.2 | 2.3 | 137-279 | .491 | 16-34 | .471 | 70-92 | .761 | .563 |
-| Jason Kidd | New Jersey Nets | 20 | 20 | 36.1 | 16.4 | 7.2 | 7.7 | 1.4 | 0.3 | 3.7 | 117-290 | .403 | 19-72 | .264 | 75-85 | .882 | .501 |
-| Kerry Kittles | New Jersey Nets | 20 | 20 | 33.9 | 13.7 | 3.5 | 2.4 | 1.7 | 0.5 | 1.4 | 110-223 | .493 | 23-60 | .383 | 31-39 | .795 | .570 |
-| Kenyon Martin | New Jersey Nets | 20 | 20 | 32.4 | 17.0 | 9.8 | 2.0 | 1.4 | 1.6 | 2.5 | 132-258 | .512 | 5-19 | .263 | 71-105 | .676 | .559 |
-| Jason Collins | New Jersey Nets | 20 | 20 | 29.2 | 6.3 | 5.3 | 2.1 | 0.8 | 1.0 | 1.0 | 45-115 | .391 | 0-3 | .000 | 36-50 | .720 | .460 |
-| Lucious Harris | New Jersey Nets | 20 | 0 | 21.9 | 7.0 | 1.9 | 1.9 | 0.9 | 0.0 | 1.1 | 54-130 | .415 | 11-31 | .355 | 20-25 | .800 | .493 |
-| Rodney Rogers | New Jersey Nets | 20 | 0 | 19.4 | 6.5 | 4.0 | 2.4 | 0.6 | 0.6 | 1.2 | 50-128 | .391 | 7-34 | .206 | 24-25 | .960 | .471 |
-| Aaron Williams | New Jersey Nets | 20 | 0 | 18.1 | 6.5 | 3.3 | 1.5 | 0.8 | 0.2 | 1.1 | 54-90 | .600 | 2-5 | .400 | 19-30 | .633 | .625 |
-| Alonzo Mourning | New Jersey Nets | 20 | 0 | 7.3 | 3.2 | 1.3 | 0.7 | 0.5 | 0.3 | 0.6 | 24-48 | .500 | 3-5 | .600 | 13-14 | .929 | .591 |
-| Brian Scalabrine | New Jersey Nets | 14 | 0 | 3.2 | 0.9 | 0.6 | 0.3 | 0.1 | 0.0 | 0.1 | 4-13 | .308 | 0-3 | .000 | 4-4 | 1.000 | .407 |
-| Brandon Armstrong | New Jersey Nets | 5 | 0 | 2.0 | 1.6 | 0.2 | 0.2 | 0.0 | 0.0 | 0.0 | 4-5 | .800 | 0-0 | N/A | 0-0 | N/A | .800 |
-| Zoran Planinic | New Jersey Nets | 11 | 0 | 1.8 | 0.8 | 0.4 | 0.2 | 0.0 | 0.0 | 0.3 | 4-11 | .364 | 1-2 | .500 | 0-2 | .000 | .379 |
-| Kevin Garnett | Minnesota Timberwolves | 18 | 18 | 39.2 | 23.4 | 12.8 | 5.7 | 1.3 | 1.4 | 2.7 | 168-319 | .527 | 4-14 | .286 | 82-111 | .739 | .574 |
-| Latrell Sprewell | Minnesota Timberwolves | 18 | 18 | 38.8 | 16.6 | 4.1 | 4.5 | 1.3 | 0.2 | 1.8 | 119-262 | .454 | 26-62 | .419 | 34-47 | .723 | .527 |
-| Sam Cassell | Minnesota Timberwolves | 18 | 18 | 33.7 | 20.1 | 4.1 | 6.9 | 1.8 | 0.2 | 2.8 | 142-286 | .497 | 16-38 | .421 | 62-70 | .886 | .571 |
-| Marcus Camby | Minnesota Timberwolves | 18 | 18 | 28.5 | 9.6 | 8.1 | 2.1 | 1.5 | 2.4 | 0.8 | 70-145 | .483 | 0-6 | .000 | 32-41 | .780 | .527 |
-| Trenton Hassell | Minnesota Timberwolves | 18 | 18 | 27.0 | 6.1 | 3.0 | 2.3 | 0.9 | 0.4 | 0.4 | 48-94 | .511 | 2-5 | .400 | 11-12 | .917 | .549 |
-| Wally Szczerbiak | Minnesota Timberwolves | 18 | 0 | 22.4 | 8.0 | 3.1 | 1.8 | 0.3 | 0.1 | 1.2 | 62-161 | .385 | 8-33 | .242 | 12-18 | .667 | .426 |
-| Troy Hudson | Minnesota Timberwolves | 18 | 0 | 17.6 | 6.4 | 1.9 | 2.1 | 0.4 | 0.1 | 0.9 | 39-120 | .325 | 13-30 | .433 | 24-29 | .828 | .433 |
-| Mark Madsen | Minnesota Timberwolves | 18 | 0 | 17.2 | 3.6 | 3.4 | 0.9 | 0.3 | 0.3 | 1.0 | 25-61 | .410 | 0-5 | .000 | 15-33 | .455 | .430 |
-| Gary Trent | Minnesota Timberwolves | 18 | 0 | 13.0 | 4.4 | 2.8 | 1.0 | 0.2 | 0.4 | 1.0 | 32-66 | .485 | 0-1 | .000 | 15-25 | .600 | .513 |
+| Kevin Garnett | Minnesota Timberwolves | 21 | 21 | 39.3 | 23.0 | 13.0 | 6.0 | 1.4 | 1.6 | 2.6 | 192-370 | .519 | 4-18 | .222 | 94-128 | .734 | .565 |
+| Latrell Sprewell | Minnesota Timberwolves | 21 | 21 | 38.7 | 17.2 | 3.9 | 4.2 | 1.3 | 0.1 | 1.9 | 146-315 | .463 | 32-73 | .438 | 37-53 | .698 | .534 |
+| Sam Cassell | Minnesota Timberwolves | 21 | 21 | 33.8 | 19.4 | 4.2 | 7.1 | 1.8 | 0.3 | 2.7 | 161-336 | .479 | 17-44 | .386 | 68-80 | .850 | .548 |
+| Marcus Camby | Minnesota Timberwolves | 21 | 21 | 28.8 | 9.4 | 8.2 | 2.0 | 1.4 | 2.5 | 0.8 | 82-167 | .491 | 0-7 | .000 | 34-44 | .773 | .531 |
+| Trenton Hassell | Minnesota Timberwolves | 21 | 21 | 27.3 | 6.0 | 3.1 | 2.3 | 1.0 | 0.5 | 0.4 | 56-113 | .496 | 3-6 | .500 | 12-14 | .857 | .533 |
+| Wally Szczerbiak | Minnesota Timberwolves | 21 | 0 | 22.3 | 8.3 | 3.1 | 2.0 | 0.3 | 0.1 | 1.1 | 75-184 | .408 | 8-33 | .242 | 16-22 | .727 | .449 |
+| Troy Hudson | Minnesota Timberwolves | 21 | 0 | 17.5 | 6.4 | 1.7 | 2.2 | 0.5 | 0.2 | 0.8 | 46-147 | .313 | 16-40 | .400 | 27-33 | .818 | .418 |
+| Mark Madsen | Minnesota Timberwolves | 21 | 0 | 17.1 | 4.0 | 3.6 | 1.0 | 0.4 | 0.3 | 1.0 | 33-73 | .452 | 0-5 | .000 | 19-38 | .500 | .474 |
+| Gary Trent | Minnesota Timberwolves | 21 | 0 | 13.0 | 4.2 | 2.9 | 1.0 | 0.2 | 0.5 | 1.0 | 36-78 | .462 | 0-1 | .000 | 17-27 | .630 | .495 |
 | Loren Woods | Minnesota Timberwolves | 4 | 0 | 2.8 | 0.2 | 1.0 | 0.2 | 0.0 | 0.0 | 0.2 | 0-2 | .000 | 0-0 | N/A | 1-2 | .500 | .174 |
 | Oliver Miller | Minnesota Timberwolves | 8 | 0 | 2.3 | 0.9 | 0.6 | 0.1 | 0.0 | 0.0 | 0.0 | 3-6 | .500 | 0-1 | .000 | 1-2 | .500 | .509 |
 | Ervin Johnson | Minnesota Timberwolves | 10 | 0 | 1.9 | 0.0 | 0.6 | 0.1 | 0.0 | 0.0 | 0.1 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Richard Jefferson | New Jersey Nets | 23 | 23 | 38.1 | 18.3 | 5.7 | 3.7 | 1.0 | 0.3 | 2.6 | 160-316 | .506 | 16-36 | .444 | 86-112 | .768 | .578 |
+| Jason Kidd | New Jersey Nets | 23 | 23 | 36.2 | 16.2 | 6.9 | 7.7 | 1.5 | 0.4 | 3.7 | 131-332 | .395 | 23-81 | .284 | 87-98 | .888 | .496 |
+| Kerry Kittles | New Jersey Nets | 23 | 23 | 34.0 | 13.7 | 3.6 | 2.3 | 1.5 | 0.5 | 1.4 | 129-260 | .496 | 26-73 | .356 | 32-41 | .780 | .568 |
+| Kenyon Martin | New Jersey Nets | 23 | 23 | 32.8 | 17.0 | 10.3 | 2.0 | 1.4 | 1.7 | 2.5 | 155-309 | .502 | 5-20 | .250 | 76-111 | .685 | .546 |
+| Jason Collins | New Jersey Nets | 23 | 23 | 29.2 | 6.0 | 5.3 | 2.1 | 0.7 | 1.0 | 1.0 | 51-133 | .383 | 0-3 | .000 | 37-53 | .698 | .445 |
+| Lucious Harris | New Jersey Nets | 23 | 0 | 21.8 | 6.5 | 2.2 | 2.2 | 0.9 | 0.0 | 1.2 | 57-154 | .370 | 12-38 | .316 | 24-29 | .828 | .450 |
+| Rodney Rogers | New Jersey Nets | 23 | 0 | 19.3 | 6.6 | 4.1 | 2.3 | 0.6 | 0.5 | 1.1 | 58-150 | .387 | 8-39 | .205 | 28-30 | .933 | .466 |
+| Aaron Williams | New Jersey Nets | 23 | 0 | 18.1 | 6.3 | 3.3 | 1.5 | 0.7 | 0.3 | 1.1 | 61-101 | .604 | 3-7 | .429 | 21-33 | .636 | .632 |
+| Alonzo Mourning | New Jersey Nets | 23 | 0 | 7.2 | 3.0 | 1.3 | 0.7 | 0.4 | 0.3 | 0.5 | 25-52 | .481 | 3-7 | .429 | 17-20 | .850 | .576 |
+| Brian Scalabrine | New Jersey Nets | 16 | 0 | 2.9 | 0.8 | 0.6 | 0.2 | 0.1 | 0.0 | 0.1 | 4-14 | .286 | 0-3 | .000 | 4-4 | 1.000 | .381 |
+| Brandon Armstrong | New Jersey Nets | 5 | 0 | 2.0 | 1.6 | 0.2 | 0.2 | 0.0 | 0.0 | 0.0 | 4-5 | .800 | 0-0 | N/A | 0-0 | N/A | .800 |
+| Zoran Planinic | New Jersey Nets | 11 | 0 | 1.8 | 0.8 | 0.4 | 0.2 | 0.0 | 0.0 | 0.3 | 4-11 | .364 | 1-2 | .500 | 0-2 | .000 | .379 |
 | Ron Artest | Indiana Pacers | 19 | 19 | 36.8 | 15.7 | 5.1 | 4.9 | 2.6 | 0.7 | 1.9 | 107-279 | .384 | 11-43 | .256 | 73-104 | .702 | .459 |
 | Jermaine O'Neal | Indiana Pacers | 19 | 19 | 35.0 | 20.2 | 10.1 | 1.4 | 0.9 | 1.9 | 1.9 | 138-314 | .439 | 1-5 | .200 | 107-133 | .805 | .515 |
 | Al Harrington | Indiana Pacers | 19 | 19 | 30.4 | 12.4 | 7.3 | 1.6 | 0.8 | 0.4 | 1.6 | 95-208 | .457 | 8-14 | .571 | 37-51 | .725 | .510 |
@@ -204,18 +204,6 @@ Through 2004-06-13: 77 closed playoff game(s). Playoff games only, from closed r
 
 | Player | Club | G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G | FG | FG% | 3P | 3P% | FT | FT% | TS% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Richard Jefferson | New Jersey Nets | 5 | 5 | 37.1 | 14.6 | 4.0 | 4.6 | 1.2 | 0.4 | 2.6 | 29-57 | .509 | 4-4 | 1.000 | 11-15 | .733 | .574 |
-| Jason Kidd | New Jersey Nets | 5 | 5 | 34.6 | 17.4 | 5.6 | 6.2 | 1.2 | 0.0 | 2.8 | 34-79 | .430 | 6-18 | .333 | 13-18 | .722 | .500 |
-| Kenyon Martin | New Jersey Nets | 5 | 5 | 32.0 | 17.8 | 8.8 | 1.8 | 1.0 | 1.6 | 2.8 | 38-71 | .535 | 1-6 | .167 | 12-20 | .600 | .558 |
-| Kerry Kittles | New Jersey Nets | 5 | 5 | 31.9 | 12.0 | 3.2 | 2.2 | 2.2 | 0.6 | 1.6 | 22-46 | .478 | 3-11 | .273 | 13-18 | .722 | .556 |
-| Jason Collins | New Jersey Nets | 5 | 5 | 28.0 | 6.2 | 5.4 | 2.6 | 1.2 | 1.2 | 0.8 | 11-26 | .423 | 0-1 | .000 | 9-14 | .643 | .482 |
-| Lucious Harris | New Jersey Nets | 5 | 0 | 23.4 | 4.8 | 2.2 | 2.2 | 1.4 | 0.0 | 1.2 | 11-40 | .275 | 1-10 | .100 | 1-1 | 1.000 | .297 |
-| Rodney Rogers | New Jersey Nets | 5 | 0 | 21.5 | 6.6 | 5.4 | 2.8 | 0.6 | 0.6 | 1.2 | 14-41 | .341 | 3-12 | .250 | 2-2 | 1.000 | .394 |
-| Aaron Williams | New Jersey Nets | 5 | 0 | 18.1 | 6.8 | 4.4 | 1.4 | 0.8 | 0.0 | 1.2 | 15-24 | .625 | 1-1 | 1.000 | 3-7 | .429 | .628 |
-| Alonzo Mourning | New Jersey Nets | 5 | 0 | 8.7 | 5.4 | 1.8 | 0.8 | 0.4 | 0.2 | 0.8 | 9-16 | .562 | 0-0 | N/A | 9-10 | .900 | .662 |
-| Zoran Planinic | New Jersey Nets | 1 | 0 | 6.7 | 3.0 | 2.0 | 1.0 | 0.0 | 0.0 | 2.0 | 1-4 | .250 | 1-2 | .500 | 0-0 | N/A | .375 |
-| Brandon Armstrong | New Jersey Nets | 1 | 0 | 6.2 | 6.0 | 1.0 | 1.0 | 0.0 | 0.0 | 0.0 | 3-4 | .750 | 0-0 | N/A | 0-0 | N/A | .750 |
-| Brian Scalabrine | New Jersey Nets | 3 | 0 | 3.3 | 1.7 | 0.3 | 0.0 | 0.3 | 0.0 | 0.0 | 1-2 | .500 | 0-0 | N/A | 3-3 | 1.000 | .753 |
 | Latrell Sprewell | Minnesota Timberwolves | 4 | 4 | 38.6 | 15.0 | 2.2 | 5.8 | 1.5 | 0.5 | 1.5 | 21-52 | .404 | 3-13 | .231 | 15-19 | .789 | .497 |
 | Kevin Garnett | Minnesota Timberwolves | 4 | 4 | 37.7 | 20.8 | 13.0 | 6.0 | 1.8 | 1.2 | 2.5 | 35-65 | .538 | 2-4 | .500 | 11-18 | .611 | .569 |
 | Sam Cassell | Minnesota Timberwolves | 4 | 4 | 32.7 | 17.0 | 3.8 | 8.8 | 2.0 | 0.2 | 2.8 | 28-59 | .475 | 4-8 | .500 | 8-8 | 1.000 | .544 |
@@ -228,6 +216,18 @@ Through 2004-06-13: 77 closed playoff game(s). Playoff games only, from closed r
 | Ervin Johnson | Minnesota Timberwolves | 1 | 0 | 3.1 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Oliver Miller | Minnesota Timberwolves | 1 | 0 | 3.1 | 2.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1-1 | 1.000 | 0-0 | N/A | 0-0 | N/A | 1.000 |
 | Loren Woods | Minnesota Timberwolves | 1 | 0 | 2.6 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Richard Jefferson | New Jersey Nets | 5 | 5 | 37.1 | 14.6 | 4.0 | 4.6 | 1.2 | 0.4 | 2.6 | 29-57 | .509 | 4-4 | 1.000 | 11-15 | .733 | .574 |
+| Jason Kidd | New Jersey Nets | 5 | 5 | 34.6 | 17.4 | 5.6 | 6.2 | 1.2 | 0.0 | 2.8 | 34-79 | .430 | 6-18 | .333 | 13-18 | .722 | .500 |
+| Kenyon Martin | New Jersey Nets | 5 | 5 | 32.0 | 17.8 | 8.8 | 1.8 | 1.0 | 1.6 | 2.8 | 38-71 | .535 | 1-6 | .167 | 12-20 | .600 | .558 |
+| Kerry Kittles | New Jersey Nets | 5 | 5 | 31.9 | 12.0 | 3.2 | 2.2 | 2.2 | 0.6 | 1.6 | 22-46 | .478 | 3-11 | .273 | 13-18 | .722 | .556 |
+| Jason Collins | New Jersey Nets | 5 | 5 | 28.0 | 6.2 | 5.4 | 2.6 | 1.2 | 1.2 | 0.8 | 11-26 | .423 | 0-1 | .000 | 9-14 | .643 | .482 |
+| Lucious Harris | New Jersey Nets | 5 | 0 | 23.4 | 4.8 | 2.2 | 2.2 | 1.4 | 0.0 | 1.2 | 11-40 | .275 | 1-10 | .100 | 1-1 | 1.000 | .297 |
+| Rodney Rogers | New Jersey Nets | 5 | 0 | 21.5 | 6.6 | 5.4 | 2.8 | 0.6 | 0.6 | 1.2 | 14-41 | .341 | 3-12 | .250 | 2-2 | 1.000 | .394 |
+| Aaron Williams | New Jersey Nets | 5 | 0 | 18.1 | 6.8 | 4.4 | 1.4 | 0.8 | 0.0 | 1.2 | 15-24 | .625 | 1-1 | 1.000 | 3-7 | .429 | .628 |
+| Alonzo Mourning | New Jersey Nets | 5 | 0 | 8.7 | 5.4 | 1.8 | 0.8 | 0.4 | 0.2 | 0.8 | 9-16 | .562 | 0-0 | N/A | 9-10 | .900 | .662 |
+| Zoran Planinic | New Jersey Nets | 1 | 0 | 6.7 | 3.0 | 2.0 | 1.0 | 0.0 | 0.0 | 2.0 | 1-4 | .250 | 1-2 | .500 | 0-0 | N/A | .375 |
+| Brandon Armstrong | New Jersey Nets | 1 | 0 | 6.2 | 6.0 | 1.0 | 1.0 | 0.0 | 0.0 | 0.0 | 3-4 | .750 | 0-0 | N/A | 0-0 | N/A | .750 |
+| Brian Scalabrine | New Jersey Nets | 3 | 0 | 3.3 | 1.7 | 0.3 | 0.0 | 0.3 | 0.0 | 0.0 | 1-2 | .500 | 0-0 | N/A | 3-3 | 1.000 | .753 |
 | Ron Artest | Indiana Pacers | 7 | 7 | 37.4 | 13.6 | 5.0 | 5.0 | 2.7 | 0.7 | 2.6 | 34-86 | .395 | 6-15 | .400 | 21-26 | .808 | .487 |
 | Jermaine O'Neal | Indiana Pacers | 7 | 7 | 36.6 | 21.0 | 11.0 | 1.3 | 1.1 | 1.7 | 1.7 | 54-127 | .425 | 0-1 | .000 | 39-46 | .848 | .499 |
 | Al Harrington | Indiana Pacers | 7 | 7 | 31.8 | 12.6 | 6.4 | 1.3 | 1.0 | 0.7 | 1.1 | 34-77 | .442 | 4-5 | .800 | 16-27 | .593 | .495 |
@@ -399,6 +399,17 @@ Through 2004-06-13: 77 closed playoff game(s). Playoff games only, from closed r
 
 | Player | Club | G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G | FG | FG% | 3P | 3P% | FT | FT% | TS% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Kevin Garnett | Minnesota Timberwolves | 4 | 4 | 39.5 | 24.0 | 14.2 | 6.2 | 0.8 | 0.5 | 2.5 | 40-76 | .526 | 0-2 | .000 | 16-20 | .800 | .566 |
+| Latrell Sprewell | Minnesota Timberwolves | 4 | 4 | 38.3 | 22.5 | 7.0 | 6.2 | 1.5 | 0.2 | 1.0 | 36-63 | .571 | 11-15 | .733 | 7-10 | .700 | .668 |
+| Sam Cassell | Minnesota Timberwolves | 4 | 4 | 35.3 | 23.0 | 2.2 | 8.0 | 2.5 | 0.2 | 3.0 | 34-66 | .515 | 2-10 | .200 | 22-24 | .917 | .601 |
+| Marcus Camby | Minnesota Timberwolves | 4 | 4 | 28.2 | 11.0 | 8.8 | 0.5 | 1.2 | 2.0 | 0.8 | 20-37 | .541 | 0-2 | .000 | 4-6 | .667 | .555 |
+| Trenton Hassell | Minnesota Timberwolves | 4 | 4 | 24.2 | 4.5 | 3.5 | 2.5 | 0.5 | 0.0 | 0.0 | 8-14 | .571 | 0-0 | N/A | 2-2 | 1.000 | .605 |
+| Wally Szczerbiak | Minnesota Timberwolves | 4 | 0 | 22.7 | 6.2 | 3.0 | 2.8 | 0.5 | 0.2 | 1.0 | 11-33 | .333 | 1-6 | .167 | 2-3 | .667 | .364 |
+| Mark Madsen | Minnesota Timberwolves | 4 | 0 | 18.3 | 5.2 | 4.0 | 0.8 | 0.2 | 0.2 | 1.2 | 8-18 | .444 | 0-1 | .000 | 5-5 | 1.000 | .520 |
+| Troy Hudson | Minnesota Timberwolves | 4 | 0 | 18.2 | 7.0 | 1.8 | 2.8 | 0.0 | 0.0 | 0.8 | 8-24 | .333 | 1-5 | .200 | 11-13 | .846 | .471 |
+| Gary Trent | Minnesota Timberwolves | 4 | 0 | 13.4 | 3.8 | 2.2 | 0.8 | 0.2 | 0.8 | 1.5 | 5-15 | .333 | 0-0 | N/A | 5-8 | .625 | .405 |
+| Ervin Johnson | Minnesota Timberwolves | 3 | 0 | 1.3 | 0.0 | 0.3 | 0.3 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Oliver Miller | Minnesota Timberwolves | 3 | 0 | 1.3 | 0.0 | 0.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0-2 | .000 | 0-1 | .000 | 0-0 | N/A | .000 |
 | Richard Jefferson | New Jersey Nets | 4 | 4 | 38.0 | 17.0 | 8.0 | 3.2 | 1.5 | 0.2 | 0.8 | 25-60 | .417 | 4-8 | .500 | 14-17 | .824 | .504 |
 | Jason Kidd | New Jersey Nets | 4 | 4 | 37.3 | 11.2 | 9.8 | 8.0 | 1.0 | 0.2 | 3.8 | 16-51 | .314 | 1-8 | .125 | 12-14 | .857 | .394 |
 | Kerry Kittles | New Jersey Nets | 4 | 4 | 34.3 | 16.5 | 2.8 | 2.0 | 1.8 | 0.0 | 1.5 | 25-49 | .510 | 8-15 | .533 | 8-8 | 1.000 | .628 |
@@ -411,17 +422,6 @@ Through 2004-06-13: 77 closed playoff game(s). Playoff games only, from closed r
 | Brian Scalabrine | New Jersey Nets | 4 | 0 | 4.3 | 0.5 | 1.2 | 0.8 | 0.0 | 0.0 | 0.0 | 1-7 | .143 | 0-2 | .000 | 0-0 | N/A | .143 |
 | Brandon Armstrong | New Jersey Nets | 2 | 0 | 1.6 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 1-1 | 1.000 | 0-0 | N/A | 0-0 | N/A | 1.000 |
 | Zoran Planinic | New Jersey Nets | 3 | 0 | 1.5 | 0.7 | 0.3 | 0.0 | 0.0 | 0.0 | 0.0 | 1-4 | .250 | 0-0 | N/A | 0-0 | N/A | .250 |
-| Kevin Garnett | Minnesota Timberwolves | 4 | 4 | 39.5 | 24.0 | 14.2 | 6.2 | 0.8 | 0.5 | 2.5 | 40-76 | .526 | 0-2 | .000 | 16-20 | .800 | .566 |
-| Latrell Sprewell | Minnesota Timberwolves | 4 | 4 | 38.3 | 22.5 | 7.0 | 6.2 | 1.5 | 0.2 | 1.0 | 36-63 | .571 | 11-15 | .733 | 7-10 | .700 | .668 |
-| Sam Cassell | Minnesota Timberwolves | 4 | 4 | 35.3 | 23.0 | 2.2 | 8.0 | 2.5 | 0.2 | 3.0 | 34-66 | .515 | 2-10 | .200 | 22-24 | .917 | .601 |
-| Marcus Camby | Minnesota Timberwolves | 4 | 4 | 28.2 | 11.0 | 8.8 | 0.5 | 1.2 | 2.0 | 0.8 | 20-37 | .541 | 0-2 | .000 | 4-6 | .667 | .555 |
-| Trenton Hassell | Minnesota Timberwolves | 4 | 4 | 24.2 | 4.5 | 3.5 | 2.5 | 0.5 | 0.0 | 0.0 | 8-14 | .571 | 0-0 | N/A | 2-2 | 1.000 | .605 |
-| Wally Szczerbiak | Minnesota Timberwolves | 4 | 0 | 22.7 | 6.2 | 3.0 | 2.8 | 0.5 | 0.2 | 1.0 | 11-33 | .333 | 1-6 | .167 | 2-3 | .667 | .364 |
-| Mark Madsen | Minnesota Timberwolves | 4 | 0 | 18.3 | 5.2 | 4.0 | 0.8 | 0.2 | 0.2 | 1.2 | 8-18 | .444 | 0-1 | .000 | 5-5 | 1.000 | .520 |
-| Troy Hudson | Minnesota Timberwolves | 4 | 0 | 18.2 | 7.0 | 1.8 | 2.8 | 0.0 | 0.0 | 0.8 | 8-24 | .333 | 1-5 | .200 | 11-13 | .846 | .471 |
-| Gary Trent | Minnesota Timberwolves | 4 | 0 | 13.4 | 3.8 | 2.2 | 0.8 | 0.2 | 0.8 | 1.5 | 5-15 | .333 | 0-0 | N/A | 5-8 | .625 | .405 |
-| Ervin Johnson | Minnesota Timberwolves | 3 | 0 | 1.3 | 0.0 | 0.3 | 0.3 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
-| Oliver Miller | Minnesota Timberwolves | 3 | 0 | 1.3 | 0.0 | 0.7 | 0.0 | 0.0 | 0.0 | 0.0 | 0-2 | .000 | 0-1 | .000 | 0-0 | N/A | .000 |
 | Ron Artest | Indiana Pacers | 5 | 5 | 34.8 | 18.4 | 5.4 | 4.4 | 1.8 | 0.6 | 1.6 | 34-86 | .395 | 3-14 | .214 | 21-34 | .618 | .456 |
 | Jermaine O'Neal | Indiana Pacers | 5 | 5 | 33.0 | 18.6 | 9.8 | 0.6 | 0.8 | 1.8 | 2.0 | 30-67 | .448 | 1-2 | .500 | 32-41 | .780 | .547 |
 | Reggie Miller | Indiana Pacers | 5 | 5 | 29.7 | 14.0 | 2.2 | 5.4 | 1.0 | 0.0 | 0.8 | 23-54 | .426 | 14-29 | .483 | 10-11 | .909 | .595 |
@@ -499,18 +499,6 @@ Through 2004-06-13: 77 closed playoff game(s). Playoff games only, from closed r
 
 | Player | Club | G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G | FG | FG% | 3P | 3P% | FT | FT% | TS% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Richard Jefferson | New Jersey Nets | 7 | 7 | 38.7 | 19.3 | 5.9 | 3.4 | 0.7 | 0.0 | 2.6 | 51-101 | .505 | 7-15 | .467 | 26-32 | .812 | .587 |
-| Jason Kidd | New Jersey Nets | 7 | 7 | 37.2 | 19.6 | 7.4 | 8.9 | 1.3 | 0.3 | 4.4 | 44-102 | .431 | 7-30 | .233 | 42-45 | .933 | .562 |
-| Kerry Kittles | New Jersey Nets | 7 | 7 | 34.3 | 12.7 | 3.9 | 2.4 | 1.3 | 0.3 | 1.3 | 36-77 | .468 | 8-23 | .348 | 9-10 | .900 | .547 |
-| Kenyon Martin | New Jersey Nets | 7 | 7 | 33.0 | 16.6 | 10.4 | 2.3 | 2.0 | 1.7 | 2.7 | 42-86 | .488 | 4-9 | .444 | 28-41 | .683 | .557 |
-| Jason Collins | New Jersey Nets | 7 | 7 | 29.9 | 6.1 | 5.1 | 1.7 | 1.0 | 1.1 | 0.6 | 15-43 | .349 | 0-2 | .000 | 13-16 | .812 | .430 |
-| Lucious Harris | New Jersey Nets | 7 | 0 | 21.5 | 5.4 | 1.6 | 1.7 | 0.6 | 0.0 | 1.0 | 14-33 | .424 | 0-3 | .000 | 10-13 | .769 | .491 |
-| Aaron Williams | New Jersey Nets | 7 | 0 | 17.8 | 6.0 | 2.6 | 1.7 | 0.7 | 0.1 | 0.9 | 16-29 | .552 | 1-3 | .333 | 9-14 | .643 | .597 |
-| Rodney Rogers | New Jersey Nets | 7 | 0 | 17.7 | 7.0 | 3.1 | 1.7 | 0.4 | 0.6 | 1.3 | 20-40 | .500 | 1-11 | .091 | 8-8 | 1.000 | .563 |
-| Alonzo Mourning | New Jersey Nets | 7 | 0 | 6.6 | 2.1 | 1.0 | 0.6 | 0.6 | 0.4 | 0.4 | 7-14 | .500 | 1-2 | .500 | 0-0 | N/A | .536 |
-| Brian Scalabrine | New Jersey Nets | 6 | 0 | 2.7 | 0.8 | 0.5 | 0.2 | 0.0 | 0.0 | 0.2 | 2-4 | .500 | 0-1 | .000 | 1-1 | 1.000 | .563 |
-| Zoran Planinic | New Jersey Nets | 5 | 0 | 1.1 | 0.8 | 0.2 | 0.0 | 0.0 | 0.0 | 0.2 | 2-2 | 1.000 | 0-0 | N/A | 0-0 | N/A | 1.000 |
-| Brandon Armstrong | New Jersey Nets | 2 | 0 | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Kevin Garnett | Minnesota Timberwolves | 6 | 6 | 39.9 | 24.7 | 12.5 | 5.0 | 0.7 | 1.7 | 2.8 | 56-106 | .528 | 2-6 | .333 | 34-48 | .708 | .582 |
 | Latrell Sprewell | Minnesota Timberwolves | 6 | 6 | 39.5 | 14.2 | 4.2 | 3.3 | 1.0 | 0.0 | 2.3 | 35-87 | .402 | 4-15 | .267 | 11-17 | .647 | .450 |
 | Sam Cassell | Minnesota Timberwolves | 6 | 6 | 32.2 | 20.7 | 4.7 | 4.8 | 1.5 | 0.2 | 1.8 | 48-92 | .522 | 5-12 | .417 | 23-27 | .852 | .597 |
@@ -523,6 +511,18 @@ Through 2004-06-13: 77 closed playoff game(s). Playoff games only, from closed r
 | Loren Woods | Minnesota Timberwolves | 3 | 0 | 2.9 | 0.3 | 1.0 | 0.3 | 0.0 | 0.0 | 0.3 | 0-2 | .000 | 0-0 | N/A | 1-2 | .500 | .174 |
 | Oliver Miller | Minnesota Timberwolves | 3 | 0 | 2.7 | 1.7 | 0.7 | 0.3 | 0.0 | 0.0 | 0.0 | 2-3 | .667 | 0-0 | N/A | 1-2 | .500 | .644 |
 | Ervin Johnson | Minnesota Timberwolves | 5 | 0 | 2.0 | 0.0 | 0.8 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Richard Jefferson | New Jersey Nets | 7 | 7 | 38.7 | 19.3 | 5.9 | 3.4 | 0.7 | 0.0 | 2.6 | 51-101 | .505 | 7-15 | .467 | 26-32 | .812 | .587 |
+| Jason Kidd | New Jersey Nets | 7 | 7 | 37.2 | 19.6 | 7.4 | 8.9 | 1.3 | 0.3 | 4.4 | 44-102 | .431 | 7-30 | .233 | 42-45 | .933 | .562 |
+| Kerry Kittles | New Jersey Nets | 7 | 7 | 34.3 | 12.7 | 3.9 | 2.4 | 1.3 | 0.3 | 1.3 | 36-77 | .468 | 8-23 | .348 | 9-10 | .900 | .547 |
+| Kenyon Martin | New Jersey Nets | 7 | 7 | 33.0 | 16.6 | 10.4 | 2.3 | 2.0 | 1.7 | 2.7 | 42-86 | .488 | 4-9 | .444 | 28-41 | .683 | .557 |
+| Jason Collins | New Jersey Nets | 7 | 7 | 29.9 | 6.1 | 5.1 | 1.7 | 1.0 | 1.1 | 0.6 | 15-43 | .349 | 0-2 | .000 | 13-16 | .812 | .430 |
+| Lucious Harris | New Jersey Nets | 7 | 0 | 21.5 | 5.4 | 1.6 | 1.7 | 0.6 | 0.0 | 1.0 | 14-33 | .424 | 0-3 | .000 | 10-13 | .769 | .491 |
+| Aaron Williams | New Jersey Nets | 7 | 0 | 17.8 | 6.0 | 2.6 | 1.7 | 0.7 | 0.1 | 0.9 | 16-29 | .552 | 1-3 | .333 | 9-14 | .643 | .597 |
+| Rodney Rogers | New Jersey Nets | 7 | 0 | 17.7 | 7.0 | 3.1 | 1.7 | 0.4 | 0.6 | 1.3 | 20-40 | .500 | 1-11 | .091 | 8-8 | 1.000 | .563 |
+| Alonzo Mourning | New Jersey Nets | 7 | 0 | 6.6 | 2.1 | 1.0 | 0.6 | 0.6 | 0.4 | 0.4 | 7-14 | .500 | 1-2 | .500 | 0-0 | N/A | .536 |
+| Brian Scalabrine | New Jersey Nets | 6 | 0 | 2.7 | 0.8 | 0.5 | 0.2 | 0.0 | 0.0 | 0.2 | 2-4 | .500 | 0-1 | .000 | 1-1 | 1.000 | .563 |
+| Zoran Planinic | New Jersey Nets | 5 | 0 | 1.1 | 0.8 | 0.2 | 0.0 | 0.0 | 0.0 | 0.2 | 2-2 | 1.000 | 0-0 | N/A | 0-0 | N/A | 1.000 |
+| Brandon Armstrong | New Jersey Nets | 2 | 0 | 0.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Ron Artest | Indiana Pacers | 7 | 7 | 37.7 | 15.9 | 4.9 | 5.1 | 3.1 | 0.9 | 1.6 | 39-107 | .364 | 2-14 | .143 | 31-44 | .705 | .439 |
 | Jermaine O'Neal | Indiana Pacers | 7 | 7 | 34.9 | 20.6 | 9.4 | 2.0 | 0.9 | 2.1 | 2.1 | 54-120 | .450 | 0-2 | .000 | 36-46 | .783 | .513 |
 | Al Harrington | Indiana Pacers | 7 | 7 | 31.4 | 14.9 | 8.0 | 2.1 | 0.4 | 0.4 | 2.4 | 42-83 | .506 | 4-8 | .500 | 16-19 | .842 | .569 |
@@ -551,25 +551,25 @@ Through 2004-06-13: 77 closed playoff game(s). Playoff games only, from closed r
 
 | Player | Club | G | GS | MPG | PPG | RPG | APG | SPG | BPG | TOV/G | FG | FG% | 3P | 3P% | FT | FT% | TS% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Richard Jefferson | New Jersey Nets | 4 | 4 | 38.4 | 21.0 | 6.0 | 5.0 | 0.5 | 0.5 | 3.0 | 32-61 | .525 | 1-7 | .143 | 19-28 | .679 | .573 |
-| Kenyon Martin | New Jersey Nets | 4 | 4 | 35.4 | 16.8 | 11.2 | 1.5 | 1.8 | 2.0 | 2.8 | 28-54 | .519 | 0-1 | .000 | 11-16 | .688 | .549 |
-| Kerry Kittles | New Jersey Nets | 4 | 4 | 35.2 | 14.8 | 4.0 | 3.0 | 1.8 | 1.0 | 1.2 | 27-51 | .529 | 4-11 | .364 | 1-3 | .333 | .564 |
-| Jason Kidd | New Jersey Nets | 4 | 4 | 34.7 | 14.8 | 6.5 | 7.2 | 2.2 | 0.8 | 3.5 | 23-58 | .397 | 5-16 | .312 | 8-8 | 1.000 | .480 |
-| Jason Collins | New Jersey Nets | 4 | 4 | 29.2 | 5.8 | 5.5 | 1.8 | 0.0 | 0.8 | 2.2 | 7-20 | .350 | 0-0 | N/A | 9-12 | .750 | .455 |
-| Lucious Harris | New Jersey Nets | 4 | 0 | 21.1 | 11.5 | 1.5 | 1.8 | 0.5 | 0.0 | 1.0 | 17-31 | .548 | 4-6 | .667 | 8-9 | .889 | .658 |
-| Rodney Rogers | New Jersey Nets | 4 | 0 | 20.3 | 6.2 | 3.8 | 3.0 | 1.0 | 0.5 | 0.8 | 9-29 | .310 | 3-8 | .375 | 4-4 | 1.000 | .406 |
-| Aaron Williams | New Jersey Nets | 4 | 0 | 18.4 | 5.2 | 2.5 | 1.5 | 1.2 | 0.2 | 1.0 | 8-14 | .571 | 0-0 | N/A | 5-5 | 1.000 | .648 |
-| Alonzo Mourning | New Jersey Nets | 4 | 0 | 6.2 | 1.8 | 1.5 | 1.0 | 0.2 | 0.2 | 0.5 | 1-7 | .143 | 1-1 | 1.000 | 4-4 | 1.000 | .400 |
-| Zoran Planinic | New Jersey Nets | 2 | 0 | 1.4 | 0.0 | 0.0 | 0.5 | 0.0 | 0.0 | 0.0 | 0-1 | .000 | 0-0 | N/A | 0-2 | .000 | .000 |
-| Brian Scalabrine | New Jersey Nets | 1 | 0 | 1.4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
-| Kevin Garnett | Minnesota Timberwolves | 4 | 4 | 39.5 | 23.8 | 11.8 | 6.0 | 2.5 | 2.0 | 2.8 | 37-72 | .514 | 0-2 | .000 | 21-25 | .840 | .572 |
-| Latrell Sprewell | Minnesota Timberwolves | 4 | 4 | 38.3 | 15.8 | 3.0 | 3.2 | 1.2 | 0.0 | 2.2 | 27-60 | .450 | 8-19 | .421 | 1-1 | 1.000 | .521 |
-| Sam Cassell | Minnesota Timberwolves | 4 | 4 | 35.3 | 19.5 | 5.2 | 7.0 | 1.2 | 0.2 | 4.0 | 32-69 | .464 | 5-8 | .625 | 9-11 | .818 | .528 |
-| Trenton Hassell | Minnesota Timberwolves | 4 | 4 | 26.5 | 5.0 | 2.2 | 3.2 | 1.0 | 0.8 | 0.5 | 9-16 | .562 | 0-0 | N/A | 2-2 | 1.000 | .592 |
-| Marcus Camby | Minnesota Timberwolves | 4 | 4 | 25.8 | 8.5 | 6.5 | 2.2 | 2.2 | 2.5 | 0.8 | 14-28 | .500 | 0-1 | .000 | 6-8 | .750 | .539 |
-| Wally Szczerbiak | Minnesota Timberwolves | 4 | 0 | 23.7 | 10.0 | 4.0 | 0.8 | 0.0 | 0.0 | 1.2 | 16-40 | .400 | 4-11 | .364 | 4-7 | .571 | .464 |
-| Troy Hudson | Minnesota Timberwolves | 4 | 0 | 17.9 | 4.5 | 0.8 | 1.8 | 0.5 | 0.2 | 1.5 | 6-22 | .273 | 1-4 | .250 | 5-6 | .833 | .365 |
-| Mark Madsen | Minnesota Timberwolves | 4 | 0 | 17.9 | 3.0 | 3.2 | 1.8 | 0.0 | 0.5 | 1.2 | 5-12 | .417 | 0-3 | .000 | 2-5 | .400 | .423 |
-| Gary Trent | Minnesota Timberwolves | 4 | 0 | 13.7 | 4.2 | 3.2 | 1.5 | 0.2 | 0.5 | 1.0 | 8-17 | .471 | 0-0 | N/A | 1-2 | .500 | .475 |
+| Kevin Garnett | Minnesota Timberwolves | 7 | 7 | 39.6 | 22.1 | 12.6 | 6.7 | 2.3 | 2.4 | 2.4 | 61-123 | .496 | 0-6 | .000 | 33-42 | .786 | .548 |
+| Latrell Sprewell | Minnesota Timberwolves | 7 | 7 | 38.1 | 18.0 | 2.9 | 3.0 | 1.3 | 0.0 | 2.3 | 54-113 | .478 | 14-30 | .467 | 4-7 | .571 | .543 |
+| Sam Cassell | Minnesota Timberwolves | 7 | 7 | 34.9 | 17.6 | 5.1 | 7.6 | 1.6 | 0.4 | 3.1 | 51-119 | .429 | 6-14 | .429 | 15-21 | .714 | .480 |
+| Marcus Camby | Minnesota Timberwolves | 7 | 7 | 28.0 | 8.6 | 7.6 | 2.1 | 1.6 | 2.9 | 0.7 | 26-50 | .520 | 0-2 | .000 | 8-11 | .727 | .547 |
+| Trenton Hassell | Minnesota Timberwolves | 7 | 7 | 27.5 | 5.4 | 2.9 | 2.7 | 1.1 | 0.7 | 0.4 | 17-35 | .486 | 1-1 | 1.000 | 3-4 | .750 | .517 |
+| Wally Szczerbiak | Minnesota Timberwolves | 7 | 0 | 22.7 | 10.0 | 3.7 | 1.7 | 0.0 | 0.1 | 1.0 | 29-63 | .460 | 4-11 | .364 | 8-11 | .727 | .516 |
+| Troy Hudson | Minnesota Timberwolves | 7 | 0 | 17.5 | 5.4 | 0.7 | 2.3 | 0.6 | 0.4 | 0.9 | 13-49 | .265 | 4-14 | .286 | 8-10 | .800 | .356 |
+| Mark Madsen | Minnesota Timberwolves | 7 | 0 | 17.4 | 4.6 | 3.7 | 1.7 | 0.3 | 0.4 | 1.3 | 13-24 | .542 | 0-3 | .000 | 6-10 | .600 | .563 |
+| Gary Trent | Minnesota Timberwolves | 7 | 0 | 13.4 | 3.9 | 3.3 | 1.3 | 0.1 | 0.6 | 1.0 | 12-29 | .414 | 0-0 | N/A | 3-4 | .750 | .439 |
 | Oliver Miller | Minnesota Timberwolves | 1 | 0 | 3.2 | 0.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
 | Ervin Johnson | Minnesota Timberwolves | 1 | 0 | 2.1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-0 | N/A | 0-0 | N/A | 0-0 | N/A | N/A |
+| Richard Jefferson | New Jersey Nets | 7 | 7 | 38.1 | 20.9 | 5.6 | 3.6 | 0.7 | 0.4 | 3.6 | 55-98 | .561 | 1-9 | .111 | 35-48 | .729 | .613 |
+| Jason Kidd | New Jersey Nets | 7 | 7 | 35.8 | 14.7 | 5.7 | 7.3 | 2.3 | 0.9 | 3.4 | 37-100 | .370 | 9-25 | .360 | 20-21 | .952 | .471 |
+| Kenyon Martin | New Jersey Nets | 7 | 7 | 35.4 | 16.9 | 12.0 | 1.9 | 1.4 | 2.0 | 2.6 | 51-105 | .486 | 0-2 | .000 | 16-22 | .727 | .514 |
+| Kerry Kittles | New Jersey Nets | 7 | 7 | 35.1 | 14.4 | 4.0 | 2.3 | 1.1 | 1.0 | 1.4 | 46-88 | .523 | 7-24 | .292 | 2-5 | .400 | .560 |
+| Jason Collins | New Jersey Nets | 7 | 7 | 29.2 | 5.1 | 5.4 | 1.9 | 0.1 | 0.9 | 1.7 | 13-38 | .342 | 0-0 | N/A | 10-15 | .667 | .404 |
+| Lucious Harris | New Jersey Nets | 7 | 0 | 21.2 | 8.1 | 2.4 | 2.7 | 0.4 | 0.0 | 1.1 | 20-55 | .364 | 5-13 | .385 | 12-13 | .923 | .469 |
+| Rodney Rogers | New Jersey Nets | 7 | 0 | 19.9 | 6.6 | 4.3 | 2.7 | 0.7 | 0.4 | 0.7 | 17-51 | .333 | 4-13 | .308 | 8-9 | .889 | .418 |
+| Aaron Williams | New Jersey Nets | 7 | 0 | 18.2 | 5.4 | 2.9 | 1.4 | 1.0 | 0.6 | 1.0 | 15-25 | .600 | 1-2 | .500 | 7-8 | .875 | .666 |
+| Alonzo Mourning | New Jersey Nets | 7 | 0 | 6.4 | 1.9 | 1.3 | 1.0 | 0.3 | 0.1 | 0.3 | 2-11 | .182 | 1-3 | .333 | 8-10 | .800 | .422 |
+| Zoran Planinic | New Jersey Nets | 2 | 0 | 1.4 | 0.0 | 0.0 | 0.5 | 0.0 | 0.0 | 0.0 | 0-1 | .000 | 0-0 | N/A | 0-2 | .000 | .000 |
+| Brian Scalabrine | New Jersey Nets | 3 | 0 | 0.9 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0-1 | .000 | 0-0 | N/A | 0-0 | N/A | .000 |

@@ -3195,3 +3195,23 @@ Only closed box-score evidence is available. No declared recorded shot feed supp
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2003-10-21 | Memphis Grizzlies | Unknown: missing player box | [Game](../2003-04/05_Preseason/Game_7.md) | [Result](../2003-04/05_Preseason/Game_7.result.json) | Not recorded |
+
+## 2004-05 · NBA regular season · through 2004-06-20
+
+[Open this period](player_cards.html?period=regular-2004-05-season#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 / 0 | N/A | 0 / 0 | 0 | complete |
+
+No closed games in this competition at the current career checkpoint. No appearance or shot sample is implied.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | N/A | N/A | 0 |
+| 18 ft to the three-point line | 0 | 0 | N/A | N/A | N/A | 0 |
+| Three-point range | 0 | 0 | N/A | N/A | N/A | 0 |
+
+No closed source games in this period. Zero appearances do not establish a 0.0% shooting percentage.
