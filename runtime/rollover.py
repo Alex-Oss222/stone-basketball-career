@@ -331,6 +331,24 @@ Source: {self.old} from closed simulated results (`Stats_and_Awards/League/{self
 | — | No verified awards or honors recorded on this card. | — |
 """
 
+    @staticmethod
+    def _repoint(text, src, dst):
+        """Relative links in a carried card still name last season's records: point them there from the new card."""
+        import os
+
+        def fix(m):
+            href = m.group(2)
+            if re.match(r"^[a-z]+:|^#|^/", href):
+                return m.group(0)
+            path, _, frag = href.partition("#")
+            old_target = (src.parent / path).resolve()
+            new_target = (dst.parent / path).resolve()
+            if new_target.exists() or not old_target.exists():
+                return m.group(0)
+            rel = os.path.relpath(old_target, dst.parent.resolve()).replace(os.sep, "/")
+            return f"{m.group(1)}({rel}{'#' + frag if frag else ''})"
+        return re.sub(r"(\[[^\]]*\])\(([^)\s]+)\)", fix, text)
+
     # -- folders ---------------------------------------------------------------------------------
     PHASES = {"01_Free_Agency": "Free Agency", "02_Summer_League": "Summer League", "03_Offseason": "Offseason",
               "04_Training_Camp": "Training Camp", "05_Preseason": "Preseason", "09_Draft": "Draft"}
@@ -410,7 +428,7 @@ Source: {self.old} from closed simulated results (`Stats_and_Awards/League/{self
             src = self.old_team / "Team/Player_Cards" / f"{p['id']}.md"
             dst = cards / f"{p['id']}.md"
             if src.is_file():
-                text = src.read_text(encoding="utf-8")
+                text = self._repoint(src.read_text(encoding="utf-8"), src, dst)
                 text = re.sub(r"^(# .*? \| )\d{4}-\d{2}( Player Profile)$", lambda m: m.group(1) + self.new + m.group(2), text, count=1, flags=re.M)
                 dst.write_text(text, encoding="utf-8")
             else:
@@ -450,7 +468,9 @@ Source: {self.old} from closed simulated results (`Stats_and_Awards/League/{self
 
 def miami_summer(record, old_register):
     """Miami's summer in plain terms: re-signed, signed, drafted, traded in and out, and who left (for the report)."""
-    held = {p.get("bbr_id"): p["name"] for p in old_register["players"] if p.get("bbr_id")}
+    gone = ("voided", "released", "signed_elsewhere", "renounced", "traded", "waived", "declined")
+    held = {p.get("bbr_id"): p["name"] for p in old_register["players"]
+            if p.get("bbr_id") and not any(w in (p.get("status") or "") for w in gone)}
     out = {"re_signed": [], "signed": [], "rookies": [], "traded_in": [], "traded_out": [], "options": [], "left": []}
     for e in record["events"]:
         if e.get("club") == MIAMI:

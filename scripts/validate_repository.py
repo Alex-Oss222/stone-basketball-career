@@ -193,7 +193,12 @@ def report_errors(root, player, team):
             if page.name=="League_Stats.md":
                 require(errors,actual==expected_league,f"{label}: player production rows missing or duplicated")
             elif re.search(r"^As of [^\n]*: not started\.",text,re.M):
-                require(errors,actual==expected_team,f"{label}: Miami control-register coverage mismatch on a not-started page")
+                # A not-started page lists its own season's register (an earlier season's empty weeks keep theirs).
+                page_season=next((part for part in page.parts if re.fullmatch(r"\d{4}-\d{2}",part)),None)
+                own=player/page_season/"00_Team/Team/Roster/roster.json" if page_season else None
+                expected=(Counter(register_names(json.loads(own.read_text(encoding="utf-8"))["players"]))
+                          if own is not None and own.is_file() else expected_team)
+                require(errors,actual==expected,f"{label}: Miami control-register coverage mismatch on a not-started page")
         if page.name=="League_Stats.md":
             for pos in {p["position"] for p in registry}:
                 group=re.search(rf"<summary>{pos} ·.*?</summary>(.*?)</details>",text,re.S)
