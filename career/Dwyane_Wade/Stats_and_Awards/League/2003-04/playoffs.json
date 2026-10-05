@@ -217,7 +217,7 @@
    "home_court": "Miami Heat",
    "wins": {
     "Miami Heat": 0,
-    "Milwaukee Bucks": 0
+    "Milwaukee Bucks": 1
    },
    "winner": null,
    "games": [
@@ -227,7 +227,9 @@
      "home": "Miami Heat",
      "away": "Milwaukee Bucks",
      "conditional": false,
-     "event_id": "2004-04-18-milwaukee-bucks-at-miami-heat"
+     "event_id": "2004-04-18-milwaukee-bucks-at-miami-heat",
+     "result": "Milwaukee Bucks 109, Miami Heat 91",
+     "winner": "Milwaukee Bucks"
     },
     {
      "game": 2,
@@ -293,7 +295,7 @@
    ],
    "home_court": "Detroit Pistons",
    "wins": {
-    "Detroit Pistons": 0,
+    "Detroit Pistons": 1,
     "Toronto Raptors": 0
    },
    "winner": null,
@@ -304,7 +306,9 @@
      "home": "Detroit Pistons",
      "away": "Toronto Raptors",
      "conditional": false,
-     "event_id": "2004-04-18-toronto-raptors-at-detroit-pistons"
+     "event_id": "2004-04-18-toronto-raptors-at-detroit-pistons",
+     "result": "Toronto Raptors 73, Detroit Pistons 96",
+     "winner": "Detroit Pistons"
     },
     {
      "game": 2,
@@ -449,7 +453,7 @@
    ],
    "home_court": "Minnesota Timberwolves",
    "wins": {
-    "Minnesota Timberwolves": 0,
+    "Minnesota Timberwolves": 1,
     "Memphis Grizzlies": 0
    },
    "winner": null,
@@ -460,7 +464,9 @@
      "home": "Minnesota Timberwolves",
      "away": "Memphis Grizzlies",
      "conditional": false,
-     "event_id": "2004-04-18-memphis-grizzlies-at-minnesota-timberwolves"
+     "event_id": "2004-04-18-memphis-grizzlies-at-minnesota-timberwolves",
+     "result": "Memphis Grizzlies 79, Minnesota Timberwolves 91",
+     "winner": "Minnesota Timberwolves"
     },
     {
      "game": 2,
@@ -685,7 +691,7 @@
    "home_court": "Sacramento Kings",
    "wins": {
     "Sacramento Kings": 0,
-    "Los Angeles Lakers": 0
+    "Los Angeles Lakers": 1
    },
    "winner": null,
    "games": [
@@ -695,7 +701,9 @@
      "home": "Sacramento Kings",
      "away": "Los Angeles Lakers",
      "conditional": false,
-     "event_id": "2004-04-18-los-angeles-lakers-at-sacramento-kings"
+     "event_id": "2004-04-18-los-angeles-lakers-at-sacramento-kings",
+     "result": "Los Angeles Lakers 131, Sacramento Kings 124 (1OT)",
+     "winner": "Los Angeles Lakers"
     },
     {
      "game": 2,
