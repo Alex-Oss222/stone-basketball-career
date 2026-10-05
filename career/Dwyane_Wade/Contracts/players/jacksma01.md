@@ -2,9 +2,9 @@
 
 # Contract | Mark Jackson
 
-Known through: 2004-08-01. [Open interactive contract](jacksma01.html#contract) · [Contract history](jacksma01.html#contract-history)
+Known through: 2004-08-08. [Open interactive contract](jacksma01.html#contract) · [Contract history](jacksma01.html#contract-history)
 
-Mark Jackson: under contract. Evidence cutoff: 2004-08-01.
+Mark Jackson: under contract. Evidence cutoff: 2004-08-08.
 
 ## Current contract
 

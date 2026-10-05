@@ -2,14 +2,14 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-08-01**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-08-08**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
 
 | Player | Club on card date | Age | Photo | Interactive |
 | --- | --- | --- | --- | --- |
-| [Alvin Williams](willial02.md) | Toronto Raptors | 29 | sourced | [open](willial02.html) |
+| [Alvin Williams](willial02.md) | Toronto Raptors | 30 | sourced | [open](willial02.html) |
 | [Andre Miller](millean02.md) | Denver Nuggets | 28 | sourced | [open](millean02.html) |
 | [Anthony Carter](cartean01.md) | Miami Heat | 29 | sourced | [open](cartean01.html) |
 | [Anthony Goldwire](goldwan01.md) | Minnesota Timberwolves | None | silhouette | [open](goldwan01.html) |
@@ -281,7 +281,7 @@ Card date: **2004-08-01**. 504 registry players, one Markdown card and one inter
 | [Nikoloz Tskitishvili](tskitni01.md) | Denver Nuggets | 21 | sourced | [open](tskitni01.html) |
 | [Peja Stojakovic](stojape01.md) | Sacramento Kings | 27 | sourced | [open](stojape01.html) |
 | [Quincy Lewis](lewisqu01.md) | Minnesota Timberwolves | None | silhouette | [open](lewisqu01.html) |
-| [Rashard Lewis](lewisra02.md) | Seattle SuperSonics | 24 | sourced | [open](lewisra02.html) |
+| [Rashard Lewis](lewisra02.md) | Seattle SuperSonics | 25 | sourced | [open](lewisra02.html) |
 | [Richard Jefferson](jefferi01.md) | New Jersey Nets | 24 | sourced | [open](jefferi01.html) |
 | [Richie Frahm](frahmri01.md) | Seattle SuperSonics | None | silhouette | [open](frahmri01.html) |
 | [Rick Fox](foxri01.md) | Los Angeles Lakers | 35 | sourced | [open](foxri01.html) |
@@ -467,7 +467,7 @@ Card date: **2004-08-01**. 504 registry players, one Markdown card and one inter
 | [Dan Gadzuric](gadzuda01.md) | Milwaukee Bucks | 26 | sourced | [open](gadzuda01.html) |
 | [Daniel Santiago](santida01.md) | Milwaukee Bucks | None | silhouette | [open](santida01.html) |
 | [Darko Milicic](milicda01.md) | Detroit Pistons | 19 | sourced | [open](milicda01.html) |
-| [David Robinson](robinda01.md) | San Antonio Spurs | 38 | sourced | [open](robinda01.html) |
+| [David Robinson](robinda01.md) | San Antonio Spurs | 39 | sourced | [open](robinda01.html) |
 | [Derrick Coleman](colemde01.md) | Philadelphia 76ers | 37 | sourced | [open](colemde01.html) |
 | [Dikembe Mutombo](mutomdi01.md) | New York Knicks | 38 | sourced | [open](mutomdi01.html) |
 | [Eddy Curry](curryed01.md) | Chicago Bulls | 21 | sourced | [open](curryed01.html) |

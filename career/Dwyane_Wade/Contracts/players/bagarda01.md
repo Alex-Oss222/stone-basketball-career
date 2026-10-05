@@ -2,9 +2,9 @@
 
 # Contract | Dalibor Bagaric
 
-Known through: 2004-08-01. [Open interactive contract](bagarda01.html#contract) · [Contract history](bagarda01.html#contract-history)
+Known through: 2004-08-08. [Open interactive contract](bagarda01.html#contract) · [Contract history](bagarda01.html#contract-history)
 
-Dalibor Bagaric: under rookie contract. Evidence cutoff: 2004-08-01.
+Dalibor Bagaric: under rookie contract. Evidence cutoff: 2004-08-08.
 
 ## Current contract
 

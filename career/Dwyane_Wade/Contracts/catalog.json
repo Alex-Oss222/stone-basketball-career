@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-08-01",
+  "as_of": "2004-08-08",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -726,9 +726,9 @@
       "player_id": "mihmch01",
       "name": "Chris Mihm",
       "team": "Cleveland Cavaliers",
-      "status": "team option pending",
-      "current_contract_id": "mihmch01-2000-07-13",
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "mihmch01-2004-08-06",
+      "recorded_agreements": 2,
       "href": "players/mihmch01.html#contract"
     },
     {
@@ -1419,9 +1419,9 @@
       "player_id": "willier01",
       "name": "Eric Williams",
       "team": "Boston Celtics",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "willier01-2004-08-06",
+      "recorded_agreements": 1,
       "href": "players/willier01.html#contract"
     },
     {
@@ -1752,9 +1752,9 @@
       "player_id": "crawfja01",
       "name": "Jamal Crawford",
       "team": "Chicago Bulls",
-      "status": "under rookie contract",
-      "current_contract_id": "crawfja01-2000-09-25",
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "crawfja01-2004-08-05",
+      "recorded_agreements": 2,
       "href": "players/crawfja01.html#contract"
     },
     {
@@ -2950,8 +2950,8 @@
       "name": "Michael Ruffin",
       "team": "Utah Jazz",
       "status": "under contract",
-      "current_contract_id": "ruffimi01-2003-08-06",
-      "recorded_agreements": 1,
+      "current_contract_id": "ruffimi01-2004-08-02",
+      "recorded_agreements": 2,
       "href": "players/ruffimi01.html#contract"
     },
     {
@@ -3012,9 +3012,9 @@
       "player_id": "jamesmi01",
       "name": "Mike James",
       "team": "Boston Celtics",
-      "status": "re signed",
-      "current_contract_id": "jamesmi01-2003-07-17",
-      "recorded_agreements": 2,
+      "status": "under contract",
+      "current_contract_id": "jamesmi01-2004-08-05",
+      "recorded_agreements": 3,
       "href": "players/jamesmi01.html#contract"
     },
     {
@@ -3183,9 +3183,9 @@
       "player_id": "cookom01",
       "name": "Omar Cook",
       "team": "Portland Trail Blazers",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "cookom01-2004-08-03",
+      "recorded_agreements": 1,
       "href": "players/cookom01.html#contract"
     },
     {
@@ -3544,8 +3544,8 @@
       "name": "Robert Horry",
       "team": "San Antonio Spurs",
       "status": "under contract",
-      "current_contract_id": "horryro01-2003-07-24",
-      "recorded_agreements": 1,
+      "current_contract_id": "horryro01-2004-08-03",
+      "recorded_agreements": 2,
       "href": "players/horryro01.html#contract"
     },
     {
@@ -3561,9 +3561,9 @@
       "player_id": "traylro01",
       "name": "Robert Traylor",
       "team": "New Orleans Hornets",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "traylro01-2004-08-05",
+      "recorded_agreements": 1,
       "href": "players/traylro01.html#contract"
     },
     {
@@ -3588,9 +3588,9 @@
       "player_id": "rogerro01",
       "name": "Rodney Rogers",
       "team": "New Jersey Nets",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "rogerro01-2004-08-03",
+      "recorded_agreements": 1,
       "href": "players/rogerro01.html#contract"
     },
     {
@@ -3786,9 +3786,9 @@
       "player_id": "marksse01",
       "name": "Sean Marks",
       "team": "San Antonio Spurs",
-      "status": "unsigned free agent",
-      "current_contract_id": null,
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "marksse01-2004-08-03",
+      "recorded_agreements": 2,
       "href": "players/marksse01.html#contract"
     },
     {
@@ -3886,8 +3886,8 @@
       "name": "Slava Medvedenko",
       "team": "Los Angeles Lakers",
       "status": "under contract",
-      "current_contract_id": "medvest01-2002-07-26",
-      "recorded_agreements": 1,
+      "current_contract_id": "medvest01-2004-08-02",
+      "recorded_agreements": 2,
       "href": "players/medvest01.html#contract"
     },
     {
@@ -3931,8 +3931,8 @@
       "name": "Stacey Augmon",
       "team": "New Orleans Hornets",
       "status": "under contract",
-      "current_contract_id": "augmost01-existing-38245c5a6a8a",
-      "recorded_agreements": 1,
+      "current_contract_id": "augmost01-2004-08-02",
+      "recorded_agreements": 2,
       "href": "players/augmost01.html#contract"
     },
     {
@@ -4183,8 +4183,8 @@
       "name": "Tony Massenburg",
       "team": "Sacramento Kings",
       "status": "under contract",
-      "current_contract_id": "masseto01-2003-08-22",
-      "recorded_agreements": 2,
+      "current_contract_id": "masseto01-2004-08-04",
+      "recorded_agreements": 3,
       "href": "players/masseto01.html#contract"
     },
     {
@@ -4273,8 +4273,8 @@
       "name": "Trenton Hassell",
       "team": "Minnesota Timberwolves",
       "status": "under contract",
-      "current_contract_id": "hassetr01-2003-10-28",
-      "recorded_agreements": 2,
+      "current_contract_id": "hassetr01-2004-08-04",
+      "recorded_agreements": 3,
       "href": "players/hassetr01.html#contract"
     },
     {
@@ -4524,9 +4524,9 @@
       "player_id": "hamilze01",
       "name": "Zendon Hamilton",
       "team": "Philadelphia 76ers",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "hamilze01-2004-08-05",
+      "recorded_agreements": 1,
       "href": "players/hamilze01.html#contract"
     },
     {
