@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-04-16**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-04-18**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -388,7 +388,7 @@ Card date: **2004-04-16**. 504 registry players, one Markdown card and one inter
 | [Mark Pope](popema01.md) | Denver Nuggets | None | silhouette | [open](popema01.html) |
 | [Maurice Taylor](tayloma01.md) | Houston Rockets | None | silhouette | [open](tayloma01.html) |
 | [Mehmet Okur](okurme01.md) | Detroit Pistons | 24 | sourced | [open](okurme01.html) |
-| [Michael Bradley](bradlmi01.md) | Toronto Raptors | 24 | silhouette | [open](bradlmi01.html) |
+| [Michael Bradley](bradlmi01.md) | Toronto Raptors | 25 | silhouette | [open](bradlmi01.html) |
 | [Michael Ruffin](ruffimi01.md) | Utah Jazz | None | silhouette | [open](ruffimi01.html) |
 | [Michael Stewart](stewami01.md) | Cleveland Cavaliers | 28 | silhouette | [open](stewami01.html) |
 | [Michael Sweetney](sweetmi01.md) | New York Knicks | 21 | silhouette | [open](sweetmi01.html) |
@@ -540,7 +540,7 @@ Card date: **2004-04-16**. 504 registry players, one Markdown card and one inter
 | [Slavko Vranes](vranesl01.md) | New York Knicks | 21 | sourced | [open](vranesl01.html) |
 | [Sofoklis Schortsanitis](schorso01.md) | Los Angeles Clippers (draft rights) | 18 | sourced | [open](schorso01.html) |
 | [Steven Hunter](huntest01.md) | Orlando Magic | 22 | sourced | [open](huntest01.html) |
-| [Theo Ratliff](ratlith01.md) | Atlanta Hawks | 30 | sourced | [open](ratlith01.html) |
+| [Theo Ratliff](ratlith01.md) | Atlanta Hawks | 31 | sourced | [open](ratlith01.html) |
 | [Tony Battie](battito01.md) | Boston Celtics | 28 | sourced | [open](battito01.html) |
 | [Tony Massenburg](masseto01.md) | Sacramento Kings | 36 | sourced | [open](masseto01.html) |
 | [Travis Knight](knightr01.md) | New York Knicks | 29 | silhouette | [open](knightr01.html) |

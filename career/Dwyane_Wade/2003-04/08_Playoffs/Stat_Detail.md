@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned career awards through 2004-04-16](../../assets/stat_reports/personal_2004-04-16.svg)
+![Player personal information and earned career awards through 2004-04-18](../../assets/stat_reports/personal_2004-04-18.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2003-12-01 |
 
-Identity as of 2004-04-16; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-04-18; status snapshot dated 2003-12-01. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned career awards
 
@@ -52,15 +52,13 @@ Identity as of 2004-04-16; status snapshot dated 2003-12-01. User-established al
 
 ## Statistics
 
-As of **2004-04-16**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
-
-No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
+As of **2004-04-18**: 1 closed games; 1/1 have player participation and box coverage; recorded DNPs: 1.
 
 G counts appearances; GS counts recorded starts. DNPs, scheduled games and canceled games do not enter per-game denominators.
 
 ### Per game
 
-[![Shooting](../../Stats_and_Awards/assets/shooting_link.svg)](../../Stats_and_Awards/player_cards.html?period=regular-2003-04-season#shooting) [![Contract](../../Stats_and_Awards/assets/contract_link.svg)](../../Stats_and_Awards/player_cards.html#contract) [![Awards](../../Stats_and_Awards/assets/awards_link.svg)](../../Stats_and_Awards/player_cards.html#awards)
+[![Shooting](../../Stats_and_Awards/assets/shooting_link.svg)](../../Stats_and_Awards/player_cards.html?period=playoff-2003-04-season#shooting) [![Contract](../../Stats_and_Awards/assets/contract_link.svg)](../../Stats_and_Awards/player_cards.html#contract) [![Awards](../../Stats_and_Awards/assets/awards_link.svg)](../../Stats_and_Awards/player_cards.html#awards)
 
 [Shooting detail](../../Stats_and_Awards/Shooting.md) · [Current contract](../../Stats_and_Awards/Contract.md#current-contract) · [Contract history](../../Stats_and_Awards/Contract.md#contract-history) · [Annual award record](../../Stats_and_Awards/Awards.md)
 
@@ -70,7 +68,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-04-16, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-04-18, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 
@@ -122,6 +120,27 @@ Per-36 rates standardize playing time; they are not a projection of playing 36 m
 
 Percentages use pooled makes and attempts. TS% uses an estimated free-throw weighting, not exact scoring possessions. Rounding is display-only.
 
+### Splits
+
+[![Shooting](../../Stats_and_Awards/assets/shooting_link.svg)](../../Stats_and_Awards/player_cards.html?period=playoff-2003-04-season#shooting) [![Contract](../../Stats_and_Awards/assets/contract_link.svg)](../../Stats_and_Awards/player_cards.html#contract) [![Awards](../../Stats_and_Awards/assets/awards_link.svg)](../../Stats_and_Awards/player_cards.html#awards)
+
+[Shooting detail](../../Stats_and_Awards/Shooting.md) · [Current contract](../../Stats_and_Awards/Contract.md#current-contract) · [Contract history](../../Stats_and_Awards/Contract.md#contract-history) · [Annual award record](../../Stats_and_Awards/Awards.md)
+
+| Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Home | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Away | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Neutral | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Wins | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Losses | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| Team: Miami Heat | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+
+G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
+
+Awards are confirmed through 2004-04-18, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+
+Splits overlap and are not additive. Each row has its own appearance denominator; games with unknown result classification are excluded from win/loss splits.
+
 ### Game highs
 
 | Metric | High | Date / opponent (all ties) |
@@ -135,7 +154,9 @@ Percentages use pooled makes and attempts. TS% uses an estimated free-throw weig
 
 ### Game log
 
-No game records in this scope.
+| Date / source | Opponent | Venue | Result | Participation | MIN | PTS | REB | AST | STL | BLK | TOV |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [2004-04-18](First_Round/Game_1.md) | Milwaukee Bucks | home | L 91-109 | DNP: injured list since 2004-04-12 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ### Additional data needed
 

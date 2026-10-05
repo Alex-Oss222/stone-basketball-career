@@ -2,9 +2,9 @@
 
 # Contract | Rasheed Wallace
 
-Known through: 2004-04-16. [Open interactive contract](wallara01.html#contract) · [Contract history](wallara01.html#contract-history)
+Known through: 2004-04-18. [Open interactive contract](wallara01.html#contract) · [Contract history](wallara01.html#contract-history)
 
-Rasheed Wallace: under contract. Evidence cutoff: 2004-04-16.
+Rasheed Wallace: under contract. Evidence cutoff: 2004-04-18.
 
 ## Current contract
 
