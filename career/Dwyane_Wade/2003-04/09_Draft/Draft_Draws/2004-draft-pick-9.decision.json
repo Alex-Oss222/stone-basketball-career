@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-pick-9",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 9: whom does Phoenix Suns select (Luke Jackson, Josh Childress)?",
+ "decider": "Phoenix Suns front office (engine draw)",
+ "options": {
+  "Luke Jackson": 0.550984,
+  "Josh Childress": 0.449016
+ },
+ "basis": "Tier 2 of the draft-night board; middle club; utilities Luke Jackson 2.70, Josh Childress 2.67 (runtime/draft.py)."
+}

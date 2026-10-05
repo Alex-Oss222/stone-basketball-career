@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-24",
+ "decider": "New Jersey Nets front office (engine draw)",
+ "event_id": "2004-draft-pick-26-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "accept",
+ "question": "2004 draft: does New Jersey Nets trade No. 26 to Orlando Magic for No. 30 and its 2005 second-round pick?"
+}

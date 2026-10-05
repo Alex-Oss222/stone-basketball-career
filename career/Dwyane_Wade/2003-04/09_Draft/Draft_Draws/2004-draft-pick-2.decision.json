@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-2",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 2: whom does Washington Wizards select (Emeka Okafor, Luol Deng, Shaun Livingston)?",
+ "decider": "Washington Wizards front office (engine draw)",
+ "options": {
+  "Emeka Okafor": 0.99148,
+  "Luol Deng": 0.008392,
+  "Shaun Livingston": 0.000128
+ },
+ "basis": "Tier 1 of the draft-night board; rebuilding club; utilities Emeka Okafor 6.50, Luol Deng 5.93, Shaun Livingston 5.43 (runtime/draft.py)."
+}

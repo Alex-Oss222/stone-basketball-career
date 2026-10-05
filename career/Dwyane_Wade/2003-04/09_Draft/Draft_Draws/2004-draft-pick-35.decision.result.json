@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "San Antonio Spurs front office (engine draw)",
+ "event_id": "2004-draft-pick-35",
+ "kind": "decision",
+ "options": {
+  "Antonio Burks": 0.287316,
+  "Tim Pickett": 0.437363,
+  "Tony Allen": 0.275321
+ },
+ "outcome": "Tony Allen",
+ "question": "2004 draft, No. 35: whom does San Antonio Spurs select (Tim Pickett, Antonio Burks, Tony Allen)?"
+}

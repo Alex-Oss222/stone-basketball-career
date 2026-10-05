@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-24",
+ "decider": "Miami Heat front office (engine draw)",
+ "event_id": "2004-draft-pick-23",
+ "kind": "decision",
+ "options": {
+  "Dorell Wright": 0.954561,
+  "Sebastian Telfair": 0.045439
+ },
+ "outcome": "Dorell Wright",
+ "question": "2004 draft, No. 23: whom does Miami Heat select (Dorell Wright, Sebastian Telfair)?"
+}

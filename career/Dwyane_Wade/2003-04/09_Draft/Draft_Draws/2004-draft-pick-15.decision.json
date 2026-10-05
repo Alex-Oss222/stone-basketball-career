@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-15",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 15: whom does New Orleans Hornets select (Robert Swift, Al Jefferson, Kris Humphries)?",
+ "decider": "New Orleans Hornets front office (engine draw)",
+ "options": {
+  "Robert Swift": 0.804216,
+  "Al Jefferson": 0.170657,
+  "Kris Humphries": 0.025127
+ },
+ "basis": "Tier 3 of the draft-night board; middle club; utilities Robert Swift 1.95, Al Jefferson 1.77, Kris Humphries 1.54 (runtime/draft.py)."
+}

@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-47",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 47: whom does Milwaukee Bucks select (Romain Sato, Marcus Douthit, Darius Rice)?",
+ "decider": "Milwaukee Bucks front office (engine draw)",
+ "options": {
+  "Romain Sato": 0.362974,
+  "Marcus Douthit": 0.348247,
+  "Darius Rice": 0.288779
+ },
+ "basis": "Tier 6 of the draft-night board; middle club; utilities Romain Sato 0.78, Marcus Douthit 0.77, Darius Rice 0.75 (runtime/draft.py)."
+}

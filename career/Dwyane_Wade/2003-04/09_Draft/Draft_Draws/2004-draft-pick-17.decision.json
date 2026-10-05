@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-17",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 17: whom does Toronto Raptors select (Al Jefferson, J.R. Smith, Kris Humphries)?",
+ "decider": "Toronto Raptors front office (engine draw)",
+ "options": {
+  "Al Jefferson": 0.62813,
+  "J.R. Smith": 0.287833,
+  "Kris Humphries": 0.084037
+ },
+ "basis": "Tier 3 of the draft-night board; middle club; utilities Al Jefferson 1.86, J.R. Smith 1.76, Kris Humphries 1.62 (runtime/draft.py)."
+}

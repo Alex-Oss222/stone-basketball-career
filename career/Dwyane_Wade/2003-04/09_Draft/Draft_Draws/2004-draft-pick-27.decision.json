@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-27",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 27: whom does Sacramento Kings select (Beno Udrih, Sasha Vujačić, Kevin Martin)?",
+ "decider": "Sacramento Kings front office (engine draw)",
+ "options": {
+  "Beno Udrih": 0.371648,
+  "Sasha Vujačić": 0.331895,
+  "Kevin Martin": 0.296457
+ },
+ "basis": "Tier 5 of the draft-night board; contending club; utilities Beno Udrih 0.82, Sasha Vujačić 0.80, Kevin Martin 0.79 (runtime/draft.py)."
+}

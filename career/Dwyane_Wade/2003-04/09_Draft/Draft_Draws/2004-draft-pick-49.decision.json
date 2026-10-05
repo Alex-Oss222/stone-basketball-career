@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-49",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 49: whom does Philadelphia 76ers select (Marcus Douthit, Jackie Butler, Mo Ke)?",
+ "decider": "Philadelphia 76ers front office (engine draw)",
+ "options": {
+  "Marcus Douthit": 0.402265,
+  "Jackie Butler": 0.300639,
+  "Mo Ke": 0.297096
+ },
+ "basis": "Tier 6 of the draft-night board; middle club; utilities Marcus Douthit 0.81, Jackie Butler 0.77, Mo Ke 0.77 (runtime/draft.py)."
+}

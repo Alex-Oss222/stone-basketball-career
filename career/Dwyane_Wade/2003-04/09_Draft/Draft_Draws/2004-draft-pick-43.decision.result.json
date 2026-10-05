@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Atlanta Hawks front office (engine draw)",
+ "event_id": "2004-draft-pick-43",
+ "kind": "decision",
+ "options": {
+  "Luis Flores": 0.36104,
+  "Rashad Wright": 0.269006,
+  "Romain Sato": 0.369954
+ },
+ "outcome": "Rashad Wright",
+ "question": "2004 draft, No. 43: whom does Atlanta Hawks select (Romain Sato, Luis Flores, Rashad Wright)?"
+}

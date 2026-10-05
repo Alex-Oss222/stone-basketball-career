@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-24",
+ "decider": "Phoenix Suns front office (engine draw)",
+ "event_id": "2004-draft-pick-9",
+ "kind": "decision",
+ "options": {
+  "Josh Childress": 0.449016,
+  "Luke Jackson": 0.550984
+ },
+ "outcome": "Josh Childress",
+ "question": "2004 draft, No. 9: whom does Phoenix Suns select (Luke Jackson, Josh Childress)?"
+}

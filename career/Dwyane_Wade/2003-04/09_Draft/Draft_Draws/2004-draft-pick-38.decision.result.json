@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Phoenix Suns front office (engine draw)",
+ "event_id": "2004-draft-pick-38",
+ "kind": "decision",
+ "options": {
+  "Bryant Matthews": 0.260806,
+  "Chris Duhon": 0.247703,
+  "Tim Pickett": 0.491491
+ },
+ "outcome": "Chris Duhon",
+ "question": "2004 draft, No. 38: whom does Phoenix Suns select (Tim Pickett, Bryant Matthews, Chris Duhon)?"
+}

@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Boston Celtics front office (engine draw)",
+ "event_id": "2004-draft-pick-22",
+ "kind": "decision",
+ "options": {
+  "Dorell Wright": 0.009948,
+  "Peter John Ramos": 0.989667,
+  "Sebastian Telfair": 0.000385
+ },
+ "outcome": "Peter John Ramos",
+ "question": "2004 draft, No. 22: whom does Boston Celtics select (Peter John Ramos, Dorell Wright, Sebastian Telfair)?"
+}

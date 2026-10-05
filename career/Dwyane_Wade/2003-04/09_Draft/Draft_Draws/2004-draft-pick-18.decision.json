@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-pick-18",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 18: whom does Detroit Pistons select (Kris Humphries, J.R. Smith)?",
+ "decider": "Detroit Pistons front office (engine draw)",
+ "options": {
+  "Kris Humphries": 0.873856,
+  "J.R. Smith": 0.126144
+ },
+ "basis": "Tier 3 of the draft-night board; contending club; utilities Kris Humphries 1.24, J.R. Smith 1.01 (runtime/draft.py)."
+}

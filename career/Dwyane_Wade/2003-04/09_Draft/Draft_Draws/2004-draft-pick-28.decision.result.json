@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Washington Wizards front office (engine draw)",
+ "event_id": "2004-draft-pick-28",
+ "kind": "decision",
+ "options": {
+  "Beno Udrih": 0.116592,
+  "Donta Smith": 0.600838,
+  "Viktor Sanikidze": 0.28257
+ },
+ "outcome": "Donta Smith",
+ "question": "2004 draft, No. 28: whom does Washington Wizards select (Donta Smith, Viktor Sanikidze, Beno Udrih)?"
+}

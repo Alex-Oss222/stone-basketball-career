@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Dallas Mavericks front office (engine draw)",
+ "event_id": "2004-draft-pick-41",
+ "kind": "decision",
+ "options": {
+  "Antonio Burks": 0.477736,
+  "Luis Flores": 0.258693,
+  "Romain Sato": 0.263571
+ },
+ "outcome": "Antonio Burks",
+ "question": "2004 draft, No. 41: whom does Dallas Mavericks select (Antonio Burks, Romain Sato, Luis Flores)?"
+}

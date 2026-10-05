@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-3",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 3: whom does Boston Celtics select (Luol Deng, Shaun Livingston, Ben Gordon)?",
+ "decider": "Boston Celtics front office (engine draw)",
+ "options": {
+  "Luol Deng": 0.999881,
+  "Shaun Livingston": 0.000118,
+  "Ben Gordon": 1e-06
+ },
+ "basis": "Tier 1 of the draft-night board; rebuilding club; utilities Luol Deng 5.16, Shaun Livingston 4.07, Ben Gordon 3.52 (runtime/draft.py)."
+}

@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Los Angeles Clippers front office (engine draw)",
+ "event_id": "2004-draft-pick-6",
+ "kind": "decision",
+ "options": {
+  "Andre Iguodala": 0.012561,
+  "Andris Biedri\u0146\u0161": 0.977401,
+  "Devin Harris": 0.010038
+ },
+ "outcome": "Andris Biedri\u0146\u0161",
+ "question": "2004 draft, No. 6: whom does Los Angeles Clippers select (Andris Biedri\u0146\u0161, Andre Iguodala, Devin Harris)?"
+}

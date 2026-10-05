@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-24",
+ "decider": "Orlando Magic front office (engine draw)",
+ "event_id": "2004-draft-pick-1-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "decline",
+ "question": "2004 draft: does Orlando Magic trade No. 1 to Boston Celtics for No. 3 and its 2005 second-round pick?"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-24",
+ "decider": "Los Angeles Lakers front office (engine draw)",
+ "event_id": "2004-draft-pick-20-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "decline",
+ "question": "2004 draft: does Los Angeles Lakers trade No. 20 to Golden State Warriors for No. 21 and its 2005 second-round pick?"
+}

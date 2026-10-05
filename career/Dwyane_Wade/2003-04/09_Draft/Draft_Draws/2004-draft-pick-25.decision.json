@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-25",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 25: whom does Golden State Warriors select (Anderson Varejão, Sasha Vujačić, Beno Udrih)?",
+ "decider": "Golden State Warriors front office (engine draw)",
+ "options": {
+  "Anderson Varejão": 0.44915,
+  "Sasha Vujačić": 0.313705,
+  "Beno Udrih": 0.237145
+ },
+ "basis": "Tier 5 of the draft-night board; middle club; utilities Anderson Varejão 1.19, Sasha Vujačić 1.14, Beno Udrih 1.11 (runtime/draft.py)."
+}

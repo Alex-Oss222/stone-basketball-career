@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-pick-31-trade-down",
+ "date": "2004-06-24",
+ "question": "2004 draft: does San Antonio Spurs trade No. 31 to New York Knicks for No. 35 and its 2005 second-round pick?",
+ "decider": "San Antonio Spurs front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "4 players left in tier 5; New York Knicks values its target 1.25x its expected pick; chart value No. 31 0.76 vs No. 35 0.61 + a 2005 second-rounder (runtime/draft.py)."
+}

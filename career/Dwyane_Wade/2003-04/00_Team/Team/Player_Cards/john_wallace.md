@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 29 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 27, 2003 · **Statistics through:** 2004-06-23 
+**Opening assessment:** October 27, 2003 · **Statistics through:** 2004-06-24 
 
 **Contract/control:** Signed October 27, 2003: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2004-01-10 (roster refill, signing_corrections.json); amended 2003-11-11 to the CBA minimum for 6 years of service (minimum_salary_corrections.json); guaranteed 2004-01-10 (guarantee_review.json). (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 

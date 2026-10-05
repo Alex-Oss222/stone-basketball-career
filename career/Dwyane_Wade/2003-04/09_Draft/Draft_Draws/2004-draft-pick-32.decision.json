@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-32",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 32: whom does Indiana Pacers select (Delonte West, Ha Seung-Jin, Viktor Sanikidze)?",
+ "decider": "Indiana Pacers front office (engine draw)",
+ "options": {
+  "Delonte West": 0.688224,
+  "Ha Seung-Jin": 0.200656,
+  "Viktor Sanikidze": 0.11112
+ },
+ "basis": "Tier 5 of the draft-night board; contending club; utilities Delonte West 0.73, Ha Seung-Jin 0.59, Viktor Sanikidze 0.51 (runtime/draft.py)."
+}

@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Detroit Pistons front office (engine draw)",
+ "event_id": "2004-draft-pick-53",
+ "kind": "decision",
+ "options": {
+  "Marcus Douthit": 0.606195,
+  "Mo Ke": 0.208104,
+  "Sergei Lishouk": 0.185701
+ },
+ "outcome": "Marcus Douthit",
+ "question": "2004 draft, No. 53: whom does Detroit Pistons select (Marcus Douthit, Mo Ke, Sergei Lishouk)?"
+}

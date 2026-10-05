@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Chicago Bulls front office (engine draw)",
+ "event_id": "2004-draft-pick-46",
+ "kind": "decision",
+ "options": {
+  "Andre Emmett": 0.282665,
+  "Marcus Douthit": 0.299012,
+  "Romain Sato": 0.418323
+ },
+ "outcome": "Andre Emmett",
+ "question": "2004 draft, No. 46: whom does Chicago Bulls select (Romain Sato, Marcus Douthit, Andre Emmett)?"
+}

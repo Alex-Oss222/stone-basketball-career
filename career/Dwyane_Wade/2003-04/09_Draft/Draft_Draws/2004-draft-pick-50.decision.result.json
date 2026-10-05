@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Los Angeles Lakers front office (engine draw)",
+ "event_id": "2004-draft-pick-50",
+ "kind": "decision",
+ "options": {
+  "Damien Wilkins": 0.265417,
+  "Marcus Douthit": 0.427693,
+  "Mo Ke": 0.30689
+ },
+ "outcome": "Damien Wilkins",
+ "question": "2004 draft, No. 50: whom does Los Angeles Lakers select (Marcus Douthit, Mo Ke, Damien Wilkins)?"
+}

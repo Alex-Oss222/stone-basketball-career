@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-20",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 20: whom does Los Angeles Lakers select (Viktor Khryapa, Sebastian Telfair, Dorell Wright)?",
+ "decider": "Los Angeles Lakers front office (engine draw)",
+ "options": {
+  "Viktor Khryapa": 0.441776,
+  "Sebastian Telfair": 0.316935,
+  "Dorell Wright": 0.241289
+ },
+ "basis": "Tier 4 of the draft-night board; middle club; utilities Viktor Khryapa 1.43, Sebastian Telfair 1.39, Dorell Wright 1.36 (runtime/draft.py)."
+}

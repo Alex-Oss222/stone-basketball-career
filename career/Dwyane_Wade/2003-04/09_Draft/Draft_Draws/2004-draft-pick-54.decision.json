@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-54",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 54: whom does Miami Heat select (Mo Ke, Christian Drejer, Trevor Ariza)?",
+ "decider": "Miami Heat front office (engine draw)",
+ "options": {
+  "Mo Ke": 0.426477,
+  "Christian Drejer": 0.292147,
+  "Trevor Ariza": 0.281376
+ },
+ "basis": "Tier 6 of the draft-night board; middle club; utilities Mo Ke 0.85, Christian Drejer 0.80, Trevor Ariza 0.80 (runtime/draft.py)."
+}

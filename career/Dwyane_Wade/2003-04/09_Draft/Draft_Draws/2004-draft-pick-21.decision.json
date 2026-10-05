@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-21",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 21: whom does Denver Nuggets select (Rafael Araújo, Peter John Ramos, Dorell Wright)?",
+ "decider": "Denver Nuggets front office (engine draw)",
+ "options": {
+  "Rafael Araújo": 0.928289,
+  "Peter John Ramos": 0.046925,
+  "Dorell Wright": 0.024786
+ },
+ "basis": "Tier 4 of the draft-night board; middle club; utilities Rafael Araújo 1.80, Peter John Ramos 1.44, Dorell Wright 1.36 (runtime/draft.py)."
+}

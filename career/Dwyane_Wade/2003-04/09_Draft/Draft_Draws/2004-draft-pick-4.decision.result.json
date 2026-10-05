@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-24",
+ "decider": "Charlotte Bobcats front office (engine draw)",
+ "event_id": "2004-draft-pick-4",
+ "kind": "decision",
+ "options": {
+  "Ben Gordon": 0.00084,
+  "Shaun Livingston": 0.99916
+ },
+ "outcome": "Shaun Livingston",
+ "question": "2004 draft, No. 4: whom does Charlotte Bobcats select (Shaun Livingston, Ben Gordon)?"
+}

@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-26",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 26: whom does Orlando Magic select (Ha Seung-Jin, Donta Smith, David Harrison)?",
+ "decider": "Orlando Magic front office (engine draw)",
+ "options": {
+  "Ha Seung-Jin": 0.389348,
+  "Donta Smith": 0.326129,
+  "David Harrison": 0.284523
+ },
+ "basis": "Tier 5 of the draft-night board; rebuilding club; utilities Ha Seung-Jin 1.63, Donta Smith 1.61, David Harrison 1.59 (runtime/draft.py)."
+}

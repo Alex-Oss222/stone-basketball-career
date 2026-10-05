@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "New Orleans Hornets front office (engine draw)",
+ "event_id": "2004-draft-pick-15",
+ "kind": "decision",
+ "options": {
+  "Al Jefferson": 0.170657,
+  "Kris Humphries": 0.025127,
+  "Robert Swift": 0.804216
+ },
+ "outcome": "Robert Swift",
+ "question": "2004 draft, No. 15: whom does New Orleans Hornets select (Robert Swift, Al Jefferson, Kris Humphries)?"
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-24",
+ "decider": "Golden State Warriors front office (engine draw)",
+ "event_id": "2004-draft-pick-22-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "accept",
+ "question": "2004 draft: does Golden State Warriors trade No. 22 to Boston Celtics for No. 25 and its 2005 second-round pick?"
+}

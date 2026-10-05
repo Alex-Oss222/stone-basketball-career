@@ -1,0 +1,1817 @@
+{
+ "schema_version": 1,
+ "kind": "draft",
+ "draft": "2004 NBA Draft",
+ "date": "2004-06-24",
+ "rule": "Every club drafts for itself on June 24, 2004, in the order the simulated lottery and records set\n(`runtime/lottery.py`). Each pick and each draft-night trade is an engine decision draw: journaled once, never\nre-rolled, and nothing is decided before the draft date. Real 2004 picks are never consulted.\n\nEvidence (draft-night only): eight pre-draft boards and mocks (`nba_2004_predraft_boards.json`, five user-supplied\nboards; `nba_2004_prospect_evidence.json`, three dated mocks) and each prospect's last pre-draft season and age.\nMedical, work-ethic and basketball-IQ grades are not in any sourced record for this class, so they are neutral\n(1.0); nothing is invented.\n\n1. Board and translation. Consensus slot = the mean of the eight sources (a first-round-only board that omits a\n   player counts him 31st; a two-round mock, 61st). Median value = MEDIAN_TOP x exp(-MEDIAN_DECAY x (consensus - 1)),\n   moved by the translated college line: shooting = 0.55 FT% + 0.30 3P% + 0.15 three-point volume, defence = steals\n   and blocks per 40 minutes, each as a z-score within the class (SHOOT_WEIGHT, DEF_WEIGHT of the median).\n2. Outcome distribution. Spread = SPREAD_BASE x median x (1 + (23 - age) / 4): floor = median - 1.0 spread (not\n   below FLOOR_MIN), ceiling = median + 1.6 spread. Younger prospects get wider, higher ceilings.\n3. Risk. Medical and intangible multipliers are 1.0 (no sourced grades).\n4. Club utility. Timeline weights by the club's simulated 2003-04 record (50+ wins contending, 30 or fewer\n   rebuilding, else middle): contending 0.50/0.35/0.15 (floor/median/ceiling), middle 0.30/0.45/0.25, rebuilding\n   0.10/0.30/0.60. Fit over three seasons: the share of the position group's minutes (G 96, F 96, C 48 a game) not\n   covered by players under contract, from their simulated 2003-04 minutes, weighted 0.5/0.3/0.2 for 2004-05 to\n   2006-07 (x1.15 for the club's largest need at half or more, x1.05 at 30%+, x0.90 at 5% or less); a cornerstone at\n   that position under contract two more seasons (simulated Game Score 16+ a game) costs x0.75, or x0.88 for a\n   prospect with a second position.\n5. Tiers and the pick. The board (0.6 median + 0.4 ceiling) is cut into tiers: a new tier starts where the score falls\n   TIER_BREAK below the tier's first player. A\n   club takes from the best tier still available (cross-tier dominance); within it, its top three by utility are\n   offered to the engine with probabilities proportional to exp(utility / TEMPERATURE).\n6. Trades. Trade down: with three or more players left in the club's top tier, the next club within six slots whose\n   best player is in that tier and worth TRADE_UP_GAIN more to it than what it expects at its own slot offers its pick\n   plus its 2005 second-rounder; the trade must hold up on the pick-value chart (`trades.TOP_PICK_VALUE`, PICK_DECAY);\n   the on-clock club's answer is an engine draw (TRADE_DOWN_ACCEPT). At most MAX_TRADES a draft.\n\nDrafted players' rights go to the drafting club (first-rounders sign rookie-scale contracts with the club's free\nagency); a real prospect nobody drafts is an undrafted free agent and enters the summer market.",
+ "picks": [
+  {
+   "pick": 1,
+   "round": 1,
+   "club": "Orlando Magic",
+   "player": "Dwight Howard",
+   "bbr_id": "howardw01",
+   "position": "C/PF",
+   "tier": 1,
+   "consensus_slot": 1.62,
+   "floor": -0.0424,
+   "median": 3.3932,
+   "ceiling": 8.8901
+  },
+  {
+   "pick": 2,
+   "round": 1,
+   "club": "Washington Wizards",
+   "player": "Emeka Okafor",
+   "bbr_id": "okafoem01",
+   "position": "PF/C",
+   "tier": 1,
+   "consensus_slot": 1.38,
+   "floor": 1.1628,
+   "median": 3.5779,
+   "ceiling": 7.4421
+  },
+  {
+   "pick": 3,
+   "round": 1,
+   "club": "Boston Celtics",
+   "player": "Luol Deng",
+   "bbr_id": "denglu01",
+   "position": "SF",
+   "tier": 1,
+   "consensus_slot": 5.38,
+   "floor": 0.2907,
+   "median": 2.907,
+   "ceiling": 7.093
+  },
+  {
+   "pick": 4,
+   "round": 1,
+   "club": "Charlotte Bobcats",
+   "player": "Shaun Livingston",
+   "bbr_id": "livinsh01",
+   "position": "PG",
+   "tier": 1,
+   "consensus_slot": 4.75,
+   "floor": -0.0363,
+   "median": 2.9016,
+   "ceiling": 7.6022
+  },
+  {
+   "pick": 5,
+   "round": 1,
+   "club": "Utah Jazz",
+   "player": "Ben Gordon",
+   "bbr_id": "gordobe01",
+   "position": "SG",
+   "tier": 1,
+   "consensus_slot": 5.25,
+   "floor": 0.9643,
+   "median": 2.9669,
+   "ceiling": 6.1712
+  },
+  {
+   "pick": 6,
+   "round": 1,
+   "club": "Los Angeles Clippers",
+   "player": "Andris Biedriņš",
+   "bbr_id": "biedran01",
+   "position": "C",
+   "tier": 2,
+   "consensus_slot": 8.5,
+   "floor": -0.0301,
+   "median": 2.4055,
+   "ceiling": 6.3024
+  },
+  {
+   "pick": 7,
+   "round": 1,
+   "club": "New York Knicks",
+   "player": "Andre Iguodala",
+   "bbr_id": "iguodan01",
+   "position": "SF",
+   "tier": 2,
+   "consensus_slot": 5.62,
+   "floor": 0.5895,
+   "median": 2.7739,
+   "ceiling": 6.2691
+  },
+  {
+   "pick": 8,
+   "round": 1,
+   "club": "Cleveland Cavaliers",
+   "player": "Devin Harris",
+   "bbr_id": "harride01",
+   "position": "PG",
+   "tier": 2,
+   "consensus_slot": 6.38,
+   "floor": 0.9059,
+   "median": 2.7873,
+   "ceiling": 5.7977
+  },
+  {
+   "pick": 9,
+   "round": 1,
+   "club": "Phoenix Suns",
+   "player": "Josh Childress",
+   "bbr_id": "childjo01",
+   "position": "G/F",
+   "tier": 2,
+   "consensus_slot": 11,
+   "floor": 0.775,
+   "median": 2.3846,
+   "ceiling": 4.9599
+  },
+  {
+   "pick": 10,
+   "round": 1,
+   "club": "Portland Trail Blazers",
+   "player": "Luke Jackson",
+   "bbr_id": "jackslu02",
+   "position": "SF",
+   "tier": 2,
+   "consensus_slot": 8.38,
+   "floor": 1.1173,
+   "median": 2.5537,
+   "ceiling": 4.8521
+  },
+  {
+   "pick": 11,
+   "round": 1,
+   "club": "Chicago Bulls",
+   "player": "Kirk Snyder",
+   "bbr_id": "snydeki01",
+   "position": "SG",
+   "tier": 3,
+   "consensus_slot": 12.12,
+   "floor": 0.6559,
+   "median": 2.0181,
+   "ceiling": 4.1977
+  },
+  {
+   "pick": 12,
+   "round": 1,
+   "club": "Utah Jazz",
+   "player": "Josh Smith",
+   "bbr_id": "smithjo03",
+   "position": "SF",
+   "tier": 3,
+   "consensus_slot": 15.12,
+   "floor": -0.0216,
+   "median": 1.7277,
+   "ceiling": 4.5264
+  },
+  {
+   "pick": 13,
+   "round": 1,
+   "club": "Seattle SuperSonics",
+   "player": "Jameer Nelson",
+   "bbr_id": "nelsoja01",
+   "position": "PG",
+   "tier": 3,
+   "consensus_slot": 14.62,
+   "floor": 0.8817,
+   "median": 2.0153,
+   "ceiling": 3.8291
+  },
+  {
+   "pick": 14,
+   "round": 1,
+   "club": "Philadelphia 76ers",
+   "player": "Pavel Podkolzin",
+   "bbr_id": "podkopa01",
+   "position": "C",
+   "tier": 3,
+   "consensus_slot": 11.12,
+   "floor": 0.18,
+   "median": 1.7999,
+   "ceiling": 4.3917
+  },
+  {
+   "pick": 15,
+   "round": 1,
+   "club": "New Orleans Hornets",
+   "player": "Robert Swift",
+   "bbr_id": "swiftro01",
+   "position": "C",
+   "tier": 3,
+   "consensus_slot": 17.38,
+   "floor": -0.0193,
+   "median": 1.5431,
+   "ceiling": 4.0428
+  },
+  {
+   "pick": 16,
+   "round": 1,
+   "club": "Atlanta Hawks",
+   "player": "Sergei Monia",
+   "bbr_id": "moniase01",
+   "position": "SG",
+   "tier": 3,
+   "consensus_slot": 15.12,
+   "floor": 0.5477,
+   "median": 1.6852,
+   "ceiling": 3.5053
+  },
+  {
+   "pick": 17,
+   "round": 1,
+   "club": "Toronto Raptors",
+   "player": "Al Jefferson",
+   "bbr_id": "jeffeal01",
+   "position": "PF/C",
+   "tier": 3,
+   "consensus_slot": 16.38,
+   "floor": 0.1622,
+   "median": 1.6222,
+   "ceiling": 3.9581
+  },
+  {
+   "pick": 18,
+   "round": 1,
+   "club": "Detroit Pistons",
+   "player": "Kris Humphries",
+   "bbr_id": "humphkr01",
+   "position": "PF",
+   "tier": 3,
+   "consensus_slot": 18.5,
+   "floor": 0.1411,
+   "median": 1.4113,
+   "ceiling": 3.4435
+  },
+  {
+   "pick": 19,
+   "round": 1,
+   "club": "Memphis Grizzlies",
+   "player": "J.R. Smith",
+   "bbr_id": "smithjr01",
+   "position": "SG",
+   "tier": 3,
+   "consensus_slot": 17.62,
+   "floor": -0.0191,
+   "median": 1.5246,
+   "ceiling": 3.9946
+  },
+  {
+   "pick": 20,
+   "round": 1,
+   "club": "Los Angeles Lakers",
+   "player": "Viktor Khryapa",
+   "bbr_id": "khryavi01",
+   "position": "SF",
+   "tier": 4,
+   "consensus_slot": 24.75,
+   "floor": 0.3794,
+   "median": 1.1675,
+   "ceiling": 2.4284
+  },
+  {
+   "pick": 21,
+   "round": 1,
+   "club": "Denver Nuggets",
+   "player": "Rafael Araújo",
+   "bbr_id": "araujra01",
+   "position": "C",
+   "tier": 4,
+   "consensus_slot": 15.62,
+   "floor": 0.9,
+   "median": 1.6363,
+   "ceiling": 2.8144
+  },
+  {
+   "pick": 22,
+   "round": 1,
+   "club": "Boston Celtics",
+   "player": "Peter John Ramos",
+   "bbr_id": "ramospe01",
+   "position": "C",
+   "tier": 4,
+   "consensus_slot": 21.5,
+   "floor": 0.1256,
+   "median": 1.2558,
+   "ceiling": 3.0641
+  },
+  {
+   "pick": 23,
+   "round": 1,
+   "club": "Miami Heat",
+   "player": "Dorell Wright",
+   "bbr_id": "wrighdo01",
+   "position": "SF",
+   "tier": 4,
+   "consensus_slot": 24.62,
+   "floor": -0.0134,
+   "median": 1.0744,
+   "ceiling": 2.8149
+  },
+  {
+   "pick": 24,
+   "round": 1,
+   "club": "Detroit Pistons",
+   "player": "Sebastian Telfair",
+   "bbr_id": "telfase01",
+   "position": "PG",
+   "tier": 4,
+   "consensus_slot": 22.12,
+   "floor": 0.1217,
+   "median": 1.2175,
+   "ceiling": 2.9706
+  },
+  {
+   "pick": 25,
+   "round": 1,
+   "club": "Golden State Warriors",
+   "player": "Anderson Varejão",
+   "bbr_id": "varejan01",
+   "position": "C",
+   "tier": 5,
+   "consensus_slot": 24.75,
+   "floor": 0.3139,
+   "median": 0.9659,
+   "ceiling": 2.009
+  },
+  {
+   "pick": 26,
+   "round": 1,
+   "club": "Orlando Magic",
+   "player": "David Harrison",
+   "bbr_id": "harrida01",
+   "position": "C",
+   "tier": 5,
+   "consensus_slot": 27,
+   "floor": 0.2845,
+   "median": 0.8754,
+   "ceiling": 1.8209
+  },
+  {
+   "pick": 27,
+   "round": 1,
+   "club": "Sacramento Kings",
+   "player": "Sasha Vujačić",
+   "bbr_id": "vujacsa01",
+   "position": "SG",
+   "tier": 5,
+   "consensus_slot": 25.88,
+   "floor": 0.2144,
+   "median": 1.0088,
+   "ceiling": 2.2799
+  },
+  {
+   "pick": 28,
+   "round": 1,
+   "club": "Washington Wizards",
+   "player": "Donta Smith",
+   "bbr_id": "smithdo04",
+   "position": "SF",
+   "tier": 5,
+   "consensus_slot": 27.88,
+   "floor": 0.194,
+   "median": 0.9128,
+   "ceiling": 2.0629
+  },
+  {
+   "pick": 29,
+   "round": 1,
+   "club": "Sacramento Kings",
+   "player": "Beno Udrih",
+   "bbr_id": "udrihbe01",
+   "position": "PG",
+   "tier": 5,
+   "consensus_slot": 29.88,
+   "floor": 0.3216,
+   "median": 0.9895,
+   "ceiling": 2.0581
+  },
+  {
+   "pick": 30,
+   "round": 2,
+   "club": "New Jersey Nets",
+   "player": "Ricky Minard",
+   "bbr_id": "minarri01",
+   "position": "SG",
+   "tier": 5,
+   "consensus_slot": 31.62,
+   "floor": 0.268,
+   "median": 0.8247,
+   "ceiling": 1.7154
+  },
+  {
+   "pick": 31,
+   "round": 2,
+   "club": "New York Knicks",
+   "player": "Kevin Martin",
+   "bbr_id": "martike02",
+   "position": "SG",
+   "tier": 5,
+   "consensus_slot": 28.75,
+   "floor": 0.3109,
+   "median": 0.9566,
+   "ceiling": 1.9897
+  },
+  {
+   "pick": 32,
+   "round": 2,
+   "club": "Indiana Pacers",
+   "player": "Viktor Sanikidze",
+   "bbr_id": "sanikvi01",
+   "position": "SF",
+   "tier": 5,
+   "consensus_slot": 31.12,
+   "floor": -0.0097,
+   "median": 0.7763,
+   "ceiling": 2.0339
+  },
+  {
+   "pick": 33,
+   "round": 2,
+   "club": "Charlotte Bobcats",
+   "player": "Delonte West",
+   "bbr_id": "westde01",
+   "position": "PG",
+   "tier": 5,
+   "consensus_slot": 30.38,
+   "floor": 0.1867,
+   "median": 0.8785,
+   "ceiling": 1.9854
+  },
+  {
+   "pick": 34,
+   "round": 2,
+   "club": "Seattle SuperSonics",
+   "player": "Ha Seung-Jin",
+   "bbr_id": "seungha01",
+   "position": "C",
+   "tier": 5,
+   "consensus_slot": 31.62,
+   "floor": -0.0095,
+   "median": 0.7571,
+   "ceiling": 1.9836
+  },
+  {
+   "pick": 35,
+   "round": 2,
+   "club": "San Antonio Spurs",
+   "player": "Tony Allen",
+   "bbr_id": "allento01",
+   "position": "SG",
+   "tier": 6,
+   "consensus_slot": 31,
+   "floor": 0.3523,
+   "median": 0.8052,
+   "ceiling": 1.5298
+  },
+  {
+   "pick": 36,
+   "round": 2,
+   "club": "Boston Celtics",
+   "player": "David Hawkins",
+   "bbr_id": null,
+   "position": "F",
+   "tier": 6,
+   "consensus_slot": 32.62,
+   "floor": 0.2544,
+   "median": 0.7828,
+   "ceiling": 1.6283
+  },
+  {
+   "pick": 37,
+   "round": 2,
+   "club": "Portland Trail Blazers",
+   "player": "Michel Morandais",
+   "bbr_id": null,
+   "position": "F",
+   "tier": 6,
+   "consensus_slot": 32.38,
+   "floor": 0.2489,
+   "median": 0.7657,
+   "ceiling": 1.5927
+  },
+  {
+   "pick": 38,
+   "round": 2,
+   "club": "Phoenix Suns",
+   "player": "Chris Duhon",
+   "bbr_id": "duhonch01",
+   "position": "PG",
+   "tier": 6,
+   "consensus_slot": 31.75,
+   "floor": 0.2412,
+   "median": 0.7423,
+   "ceiling": 1.544
+  },
+  {
+   "pick": 39,
+   "round": 2,
+   "club": "Toronto Raptors",
+   "player": "Matt Freije",
+   "bbr_id": "freijma01",
+   "position": "SF",
+   "tier": 6,
+   "consensus_slot": 32,
+   "floor": 0.3304,
+   "median": 0.7553,
+   "ceiling": 1.435
+  },
+  {
+   "pick": 40,
+   "round": 2,
+   "club": "Chicago Bulls",
+   "player": "Tim Pickett",
+   "bbr_id": "picketi02",
+   "position": "SG",
+   "tier": 6,
+   "consensus_slot": 32.75,
+   "floor": 0.4583,
+   "median": 0.8332,
+   "ceiling": 1.4331
+  },
+  {
+   "pick": 41,
+   "round": 2,
+   "club": "Dallas Mavericks",
+   "player": "Antonio Burks",
+   "bbr_id": "burksan01",
+   "position": "PG",
+   "tier": 6,
+   "consensus_slot": 32.5,
+   "floor": 0.5025,
+   "median": 0.7584,
+   "ceiling": 1.168
+  },
+  {
+   "pick": 42,
+   "round": 2,
+   "club": "New Orleans Hornets",
+   "player": "Bryant Matthews",
+   "bbr_id": null,
+   "position": "F",
+   "tier": 6,
+   "consensus_slot": 32.12,
+   "floor": 0.2552,
+   "median": 0.7852,
+   "ceiling": 1.6332
+  },
+  {
+   "pick": 43,
+   "round": 2,
+   "club": "Atlanta Hawks",
+   "player": "Rashad Wright",
+   "bbr_id": "wrighra01",
+   "position": "G",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.2921,
+   "median": 0.6676,
+   "ceiling": 1.2684
+  },
+  {
+   "pick": 44,
+   "round": 2,
+   "club": "Seattle SuperSonics",
+   "player": "Jaber Rouzbahani",
+   "bbr_id": null,
+   "position": "F",
+   "tier": 6,
+   "consensus_slot": 33,
+   "floor": 0.2297,
+   "median": 0.7066,
+   "ceiling": 1.4698
+  },
+  {
+   "pick": 45,
+   "round": 2,
+   "club": "Atlanta Hawks",
+   "player": "Luis Flores",
+   "bbr_id": "florelu01",
+   "position": "PG",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.3873,
+   "median": 0.7042,
+   "ceiling": 1.2111
+  },
+  {
+   "pick": 46,
+   "round": 2,
+   "club": "Chicago Bulls",
+   "player": "Andre Emmett",
+   "bbr_id": "emmetan01",
+   "position": "F/G",
+   "tier": 6,
+   "consensus_slot": 30.75,
+   "floor": 0.2326,
+   "median": 0.7156,
+   "ceiling": 1.4885
+  },
+  {
+   "pick": 47,
+   "round": 2,
+   "club": "Milwaukee Bucks",
+   "player": "Darius Rice",
+   "bbr_id": null,
+   "position": "F",
+   "tier": 6,
+   "consensus_slot": 33.62,
+   "floor": 0.2277,
+   "median": 0.7006,
+   "ceiling": 1.4572
+  },
+  {
+   "pick": 48,
+   "round": 2,
+   "club": "San Antonio Spurs",
+   "player": "Blake Stepp",
+   "bbr_id": "steppbl01",
+   "position": "PG",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.2882,
+   "median": 0.6588,
+   "ceiling": 1.2517
+  },
+  {
+   "pick": 49,
+   "round": 2,
+   "club": "Philadelphia 76ers",
+   "player": "Jackie Butler",
+   "bbr_id": "butleja01",
+   "position": "F",
+   "tier": 6,
+   "consensus_slot": 33.88,
+   "floor": 0.0676,
+   "median": 0.6762,
+   "ceiling": 1.65
+  },
+  {
+   "pick": 50,
+   "round": 2,
+   "club": "Los Angeles Lakers",
+   "player": "Damien Wilkins",
+   "bbr_id": "wilkida02",
+   "position": "F",
+   "tier": 6,
+   "consensus_slot": 32.88,
+   "floor": 0.4618,
+   "median": 0.697,
+   "ceiling": 1.0735
+  },
+  {
+   "pick": 51,
+   "round": 2,
+   "club": "Miami Heat",
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "position": "SF",
+   "tier": 6,
+   "consensus_slot": 33.38,
+   "floor": 0.3757,
+   "median": 0.6831,
+   "ceiling": 1.1749
+  },
+  {
+   "pick": 52,
+   "round": 2,
+   "club": "Memphis Grizzlies",
+   "player": "Romain Sato",
+   "bbr_id": "satoro01",
+   "position": "SG",
+   "tier": 6,
+   "consensus_slot": 33.25,
+   "floor": 0.3886,
+   "median": 0.7066,
+   "ceiling": 1.2154
+  },
+  {
+   "pick": 53,
+   "round": 2,
+   "club": "Detroit Pistons",
+   "player": "Marcus Douthit",
+   "bbr_id": "douthma01",
+   "position": "PF",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.4937,
+   "median": 0.7452,
+   "ceiling": 1.1476
+  },
+  {
+   "pick": 54,
+   "round": 2,
+   "club": "Miami Heat",
+   "player": "Christian Drejer",
+   "bbr_id": "drejech01",
+   "position": "SF",
+   "tier": 6,
+   "consensus_slot": 33.75,
+   "floor": 0.212,
+   "median": 0.6522,
+   "ceiling": 1.3566
+  },
+  {
+   "pick": 55,
+   "round": 2,
+   "club": "New Jersey Nets",
+   "player": "Mo Ke",
+   "bbr_id": null,
+   "position": "F",
+   "tier": 6,
+   "consensus_slot": 33.5,
+   "floor": 0.224,
+   "median": 0.6892,
+   "ceiling": 1.4335
+  },
+  {
+   "pick": 56,
+   "round": 2,
+   "club": "Houston Rockets",
+   "player": "Sergei Lishouk",
+   "bbr_id": "lishcse01",
+   "position": "PF",
+   "tier": 6,
+   "consensus_slot": 34.62,
+   "floor": 0.2851,
+   "median": 0.6517,
+   "ceiling": 1.2381
+  },
+  {
+   "pick": 57,
+   "round": 2,
+   "club": "San Antonio Spurs",
+   "player": "Vassilis Spanoulis",
+   "bbr_id": "spanova01",
+   "position": "PG",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.2104,
+   "median": 0.6474,
+   "ceiling": 1.3467
+  },
+  {
+   "pick": 58,
+   "round": 2,
+   "club": "Indiana Pacers",
+   "player": "Desmon Farmer",
+   "bbr_id": "farmede01",
+   "position": "F",
+   "tier": 6,
+   "consensus_slot": 34.38,
+   "floor": 0.2834,
+   "median": 0.6478,
+   "ceiling": 1.2309
+  },
+  {
+   "pick": 59,
+   "round": 2,
+   "club": "Minnesota Timberwolves",
+   "player": "Sergei Karaulov",
+   "bbr_id": "karause01",
+   "position": "G",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.2833,
+   "median": 0.6474,
+   "ceiling": 1.2301
+  }
+ ],
+ "trades": [
+  {
+   "slot": 21,
+   "from": "Golden State Warriors",
+   "to": "Denver Nuggets",
+   "for_slot": 22,
+   "plus": "Denver Nuggets 2005 second-round pick"
+  },
+  {
+   "slot": 22,
+   "from": "Golden State Warriors",
+   "to": "Boston Celtics",
+   "for_slot": 25,
+   "plus": "Boston Celtics 2005 second-round pick"
+  },
+  {
+   "slot": 26,
+   "from": "New Jersey Nets",
+   "to": "Orlando Magic",
+   "for_slot": 30,
+   "plus": "Orlando Magic 2005 second-round pick"
+  },
+  {
+   "slot": 28,
+   "from": "San Antonio Spurs",
+   "to": "Washington Wizards",
+   "for_slot": 31,
+   "plus": "Washington Wizards 2005 second-round pick"
+  },
+  {
+   "slot": 29,
+   "from": "Indiana Pacers",
+   "to": "Sacramento Kings",
+   "for_slot": 32,
+   "plus": "Sacramento Kings 2005 second-round pick"
+  },
+  {
+   "slot": 31,
+   "from": "San Antonio Spurs",
+   "to": "New York Knicks",
+   "for_slot": 35,
+   "plus": "New York Knicks 2005 second-round pick"
+  }
+ ],
+ "undrafted": [
+  "Albert Miralles",
+  "Arthur Johnson",
+  "David Young",
+  "Jackson Vroman",
+  "Justin Reed",
+  "Lionel Chalmers",
+  "Nigel Dixon",
+  "Pape Sow",
+  "Rickey Paulding",
+  "Royal Ivey",
+  "Trevor Ariza"
+ ],
+ "board": [
+  {
+   "player": "Emeka Okafor",
+   "tier": 1,
+   "consensus_slot": 1.38,
+   "floor": 1.1628,
+   "median": 3.5779,
+   "ceiling": 7.4421
+  },
+  {
+   "player": "Dwight Howard",
+   "tier": 1,
+   "consensus_slot": 1.62,
+   "floor": -0.0424,
+   "median": 3.3932,
+   "ceiling": 8.8901
+  },
+  {
+   "player": "Shaun Livingston",
+   "tier": 1,
+   "consensus_slot": 4.75,
+   "floor": -0.0363,
+   "median": 2.9016,
+   "ceiling": 7.6022
+  },
+  {
+   "player": "Ben Gordon",
+   "tier": 1,
+   "consensus_slot": 5.25,
+   "floor": 0.9643,
+   "median": 2.9669,
+   "ceiling": 6.1712
+  },
+  {
+   "player": "Luol Deng",
+   "tier": 1,
+   "consensus_slot": 5.38,
+   "floor": 0.2907,
+   "median": 2.907,
+   "ceiling": 7.093
+  },
+  {
+   "player": "Andre Iguodala",
+   "tier": 2,
+   "consensus_slot": 5.62,
+   "floor": 0.5895,
+   "median": 2.7739,
+   "ceiling": 6.2691
+  },
+  {
+   "player": "Devin Harris",
+   "tier": 2,
+   "consensus_slot": 6.38,
+   "floor": 0.9059,
+   "median": 2.7873,
+   "ceiling": 5.7977
+  },
+  {
+   "player": "Luke Jackson",
+   "tier": 2,
+   "consensus_slot": 8.38,
+   "floor": 1.1173,
+   "median": 2.5537,
+   "ceiling": 4.8521
+  },
+  {
+   "player": "Andris Biedriņš",
+   "tier": 2,
+   "consensus_slot": 8.5,
+   "floor": -0.0301,
+   "median": 2.4055,
+   "ceiling": 6.3024
+  },
+  {
+   "player": "Josh Childress",
+   "tier": 2,
+   "consensus_slot": 11,
+   "floor": 0.775,
+   "median": 2.3846,
+   "ceiling": 4.9599
+  },
+  {
+   "player": "Pavel Podkolzin",
+   "tier": 3,
+   "consensus_slot": 11.12,
+   "floor": 0.18,
+   "median": 1.7999,
+   "ceiling": 4.3917
+  },
+  {
+   "player": "Kirk Snyder",
+   "tier": 3,
+   "consensus_slot": 12.12,
+   "floor": 0.6559,
+   "median": 2.0181,
+   "ceiling": 4.1977
+  },
+  {
+   "player": "Jameer Nelson",
+   "tier": 3,
+   "consensus_slot": 14.62,
+   "floor": 0.8817,
+   "median": 2.0153,
+   "ceiling": 3.8291
+  },
+  {
+   "player": "Josh Smith",
+   "tier": 3,
+   "consensus_slot": 15.12,
+   "floor": -0.0216,
+   "median": 1.7277,
+   "ceiling": 4.5264
+  },
+  {
+   "player": "Sergei Monia",
+   "tier": 3,
+   "consensus_slot": 15.12,
+   "floor": 0.5477,
+   "median": 1.6852,
+   "ceiling": 3.5053
+  },
+  {
+   "player": "Al Jefferson",
+   "tier": 3,
+   "consensus_slot": 16.38,
+   "floor": 0.1622,
+   "median": 1.6222,
+   "ceiling": 3.9581
+  },
+  {
+   "player": "Robert Swift",
+   "tier": 3,
+   "consensus_slot": 17.38,
+   "floor": -0.0193,
+   "median": 1.5431,
+   "ceiling": 4.0428
+  },
+  {
+   "player": "J.R. Smith",
+   "tier": 3,
+   "consensus_slot": 17.62,
+   "floor": -0.0191,
+   "median": 1.5246,
+   "ceiling": 3.9946
+  },
+  {
+   "player": "Kris Humphries",
+   "tier": 3,
+   "consensus_slot": 18.5,
+   "floor": 0.1411,
+   "median": 1.4113,
+   "ceiling": 3.4435
+  },
+  {
+   "player": "Rafael Araújo",
+   "tier": 4,
+   "consensus_slot": 15.62,
+   "floor": 0.9,
+   "median": 1.6363,
+   "ceiling": 2.8144
+  },
+  {
+   "player": "Peter John Ramos",
+   "tier": 4,
+   "consensus_slot": 21.5,
+   "floor": 0.1256,
+   "median": 1.2558,
+   "ceiling": 3.0641
+  },
+  {
+   "player": "Sebastian Telfair",
+   "tier": 4,
+   "consensus_slot": 22.12,
+   "floor": 0.1217,
+   "median": 1.2175,
+   "ceiling": 2.9706
+  },
+  {
+   "player": "Dorell Wright",
+   "tier": 4,
+   "consensus_slot": 24.62,
+   "floor": -0.0134,
+   "median": 1.0744,
+   "ceiling": 2.8149
+  },
+  {
+   "player": "Viktor Khryapa",
+   "tier": 4,
+   "consensus_slot": 24.75,
+   "floor": 0.3794,
+   "median": 1.1675,
+   "ceiling": 2.4284
+  },
+  {
+   "player": "Anderson Varejão",
+   "tier": 5,
+   "consensus_slot": 24.75,
+   "floor": 0.3139,
+   "median": 0.9659,
+   "ceiling": 2.009
+  },
+  {
+   "player": "Sasha Vujačić",
+   "tier": 5,
+   "consensus_slot": 25.88,
+   "floor": 0.2144,
+   "median": 1.0088,
+   "ceiling": 2.2799
+  },
+  {
+   "player": "David Harrison",
+   "tier": 5,
+   "consensus_slot": 27,
+   "floor": 0.2845,
+   "median": 0.8754,
+   "ceiling": 1.8209
+  },
+  {
+   "player": "Donta Smith",
+   "tier": 5,
+   "consensus_slot": 27.88,
+   "floor": 0.194,
+   "median": 0.9128,
+   "ceiling": 2.0629
+  },
+  {
+   "player": "Kevin Martin",
+   "tier": 5,
+   "consensus_slot": 28.75,
+   "floor": 0.3109,
+   "median": 0.9566,
+   "ceiling": 1.9897
+  },
+  {
+   "player": "Beno Udrih",
+   "tier": 5,
+   "consensus_slot": 29.88,
+   "floor": 0.3216,
+   "median": 0.9895,
+   "ceiling": 2.0581
+  },
+  {
+   "player": "Delonte West",
+   "tier": 5,
+   "consensus_slot": 30.38,
+   "floor": 0.1867,
+   "median": 0.8785,
+   "ceiling": 1.9854
+  },
+  {
+   "player": "Viktor Sanikidze",
+   "tier": 5,
+   "consensus_slot": 31.12,
+   "floor": -0.0097,
+   "median": 0.7763,
+   "ceiling": 2.0339
+  },
+  {
+   "player": "Ha Seung-Jin",
+   "tier": 5,
+   "consensus_slot": 31.62,
+   "floor": -0.0095,
+   "median": 0.7571,
+   "ceiling": 1.9836
+  },
+  {
+   "player": "Ricky Minard",
+   "tier": 5,
+   "consensus_slot": 31.62,
+   "floor": 0.268,
+   "median": 0.8247,
+   "ceiling": 1.7154
+  },
+  {
+   "player": "Andre Emmett",
+   "tier": 6,
+   "consensus_slot": 30.75,
+   "floor": 0.2326,
+   "median": 0.7156,
+   "ceiling": 1.4885
+  },
+  {
+   "player": "Tony Allen",
+   "tier": 6,
+   "consensus_slot": 31,
+   "floor": 0.3523,
+   "median": 0.8052,
+   "ceiling": 1.5298
+  },
+  {
+   "player": "Chris Duhon",
+   "tier": 6,
+   "consensus_slot": 31.75,
+   "floor": 0.2412,
+   "median": 0.7423,
+   "ceiling": 1.544
+  },
+  {
+   "player": "Matt Freije",
+   "tier": 6,
+   "consensus_slot": 32,
+   "floor": 0.3304,
+   "median": 0.7553,
+   "ceiling": 1.435
+  },
+  {
+   "player": "Bryant Matthews",
+   "tier": 6,
+   "consensus_slot": 32.12,
+   "floor": 0.2552,
+   "median": 0.7852,
+   "ceiling": 1.6332
+  },
+  {
+   "player": "Michel Morandais",
+   "tier": 6,
+   "consensus_slot": 32.38,
+   "floor": 0.2489,
+   "median": 0.7657,
+   "ceiling": 1.5927
+  },
+  {
+   "player": "Antonio Burks",
+   "tier": 6,
+   "consensus_slot": 32.5,
+   "floor": 0.5025,
+   "median": 0.7584,
+   "ceiling": 1.168
+  },
+  {
+   "player": "David Hawkins",
+   "tier": 6,
+   "consensus_slot": 32.62,
+   "floor": 0.2544,
+   "median": 0.7828,
+   "ceiling": 1.6283
+  },
+  {
+   "player": "Tim Pickett",
+   "tier": 6,
+   "consensus_slot": 32.75,
+   "floor": 0.4583,
+   "median": 0.8332,
+   "ceiling": 1.4331
+  },
+  {
+   "player": "Damien Wilkins",
+   "tier": 6,
+   "consensus_slot": 32.88,
+   "floor": 0.4618,
+   "median": 0.697,
+   "ceiling": 1.0735
+  },
+  {
+   "player": "Jaber Rouzbahani",
+   "tier": 6,
+   "consensus_slot": 33,
+   "floor": 0.2297,
+   "median": 0.7066,
+   "ceiling": 1.4698
+  },
+  {
+   "player": "Trevor Ariza",
+   "tier": 6,
+   "consensus_slot": 33.12,
+   "floor": -0.0079,
+   "median": 0.6287,
+   "ceiling": 1.6471
+  },
+  {
+   "player": "Romain Sato",
+   "tier": 6,
+   "consensus_slot": 33.25,
+   "floor": 0.3886,
+   "median": 0.7066,
+   "ceiling": 1.2154
+  },
+  {
+   "player": "Bernard Robinson",
+   "tier": 6,
+   "consensus_slot": 33.38,
+   "floor": 0.3757,
+   "median": 0.6831,
+   "ceiling": 1.1749
+  },
+  {
+   "player": "Mo Ke",
+   "tier": 6,
+   "consensus_slot": 33.5,
+   "floor": 0.224,
+   "median": 0.6892,
+   "ceiling": 1.4335
+  },
+  {
+   "player": "Darius Rice",
+   "tier": 6,
+   "consensus_slot": 33.62,
+   "floor": 0.2277,
+   "median": 0.7006,
+   "ceiling": 1.4572
+  },
+  {
+   "player": "Christian Drejer",
+   "tier": 6,
+   "consensus_slot": 33.75,
+   "floor": 0.212,
+   "median": 0.6522,
+   "ceiling": 1.3566
+  },
+  {
+   "player": "Jackie Butler",
+   "tier": 6,
+   "consensus_slot": 33.88,
+   "floor": 0.0676,
+   "median": 0.6762,
+   "ceiling": 1.65
+  },
+  {
+   "player": "Pape Sow",
+   "tier": 6,
+   "consensus_slot": 34.12,
+   "floor": 0.2737,
+   "median": 0.6256,
+   "ceiling": 1.1886
+  },
+  {
+   "player": "Desmon Farmer",
+   "tier": 6,
+   "consensus_slot": 34.38,
+   "floor": 0.2834,
+   "median": 0.6478,
+   "ceiling": 1.2309
+  },
+  {
+   "player": "Sergei Lishouk",
+   "tier": 6,
+   "consensus_slot": 34.62,
+   "floor": 0.2851,
+   "median": 0.6517,
+   "ceiling": 1.2381
+  },
+  {
+   "player": "Albert Miralles",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.2833,
+   "median": 0.6474,
+   "ceiling": 1.2301
+  },
+  {
+   "player": "Vassilis Spanoulis",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.2104,
+   "median": 0.6474,
+   "ceiling": 1.3467
+  },
+  {
+   "player": "Rickey Paulding",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.2108,
+   "median": 0.6487,
+   "ceiling": 1.3494
+  },
+  {
+   "player": "Luis Flores",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.3873,
+   "median": 0.7042,
+   "ceiling": 1.2111
+  },
+  {
+   "player": "Marcus Douthit",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.4937,
+   "median": 0.7452,
+   "ceiling": 1.1476
+  },
+  {
+   "player": "Sergei Karaulov",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.2833,
+   "median": 0.6474,
+   "ceiling": 1.2301
+  },
+  {
+   "player": "Blake Stepp",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.2882,
+   "median": 0.6588,
+   "ceiling": 1.2517
+  },
+  {
+   "player": "Rashad Wright",
+   "tier": 6,
+   "consensus_slot": 34.75,
+   "floor": 0.2921,
+   "median": 0.6676,
+   "ceiling": 1.2684
+  },
+  {
+   "player": "Jackson Vroman",
+   "tier": 7,
+   "consensus_slot": 31.62,
+   "floor": 0.3405,
+   "median": 0.619,
+   "ceiling": 1.0647
+  },
+  {
+   "player": "Lionel Chalmers",
+   "tier": 7,
+   "consensus_slot": 34,
+   "floor": 0.3542,
+   "median": 0.6441,
+   "ceiling": 1.1078
+  },
+  {
+   "player": "Arthur Johnson",
+   "tier": 7,
+   "consensus_slot": 34.25,
+   "floor": 0.1896,
+   "median": 0.5833,
+   "ceiling": 1.2132
+  },
+  {
+   "player": "Royal Ivey",
+   "tier": 7,
+   "consensus_slot": 34.75,
+   "floor": 0.2497,
+   "median": 0.5707,
+   "ceiling": 1.0844
+  },
+  {
+   "player": "Justin Reed",
+   "tier": 7,
+   "consensus_slot": 34.75,
+   "floor": 0.2555,
+   "median": 0.5839,
+   "ceiling": 1.1094
+  },
+  {
+   "player": "David Young",
+   "tier": 7,
+   "consensus_slot": 34.75,
+   "floor": 0.2432,
+   "median": 0.556,
+   "ceiling": 1.0563
+  },
+  {
+   "player": "Nigel Dixon",
+   "tier": 8,
+   "consensus_slot": 34.5,
+   "floor": 0.138,
+   "median": 0.4247,
+   "ceiling": 0.8833
+  }
+ ],
+ "clubs": {
+  "Los Angeles Lakers": {
+   "stance": "middle",
+   "record": "47-35",
+   "need": {
+    "G": 0.511,
+    "F": 0.868,
+    "C": 0.418
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": true
+   }
+  },
+  "Dallas Mavericks": {
+   "stance": "contending",
+   "record": "52-30",
+   "need": {
+    "G": 0.82,
+    "F": 0.0,
+    "C": 1.0
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Philadelphia 76ers": {
+   "stance": "middle",
+   "record": "39-43",
+   "need": {
+    "G": 0.289,
+    "F": 0.309,
+    "C": 0.201
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Miami Heat": {
+   "stance": "middle",
+   "record": "48-34",
+   "need": {
+    "G": 0.147,
+    "F": 0.712,
+    "C": 0.394
+   },
+   "cornerstone": {
+    "G": true,
+    "F": false,
+    "C": false
+   }
+  },
+  "San Antonio Spurs": {
+   "stance": "contending",
+   "record": "56-26",
+   "need": {
+    "G": 0.814,
+    "F": 0.451,
+    "C": 0.415
+   },
+   "cornerstone": {
+    "G": false,
+    "F": true,
+    "C": false
+   }
+  },
+  "Phoenix Suns": {
+   "stance": "middle",
+   "record": "31-51",
+   "need": {
+    "G": 0.41,
+    "F": 0.119,
+    "C": 0.567
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "New Orleans Hornets": {
+   "stance": "middle",
+   "record": "39-43",
+   "need": {
+    "G": 0.225,
+    "F": 0.248,
+    "C": 1.0
+   },
+   "cornerstone": {
+    "G": true,
+    "F": false,
+    "C": false
+   }
+  },
+  "Atlanta Hawks": {
+   "stance": "middle",
+   "record": "40-42",
+   "need": {
+    "G": 0.63,
+    "F": 0.603,
+    "C": 0.367
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Sacramento Kings": {
+   "stance": "contending",
+   "record": "54-28",
+   "need": {
+    "G": 0.124,
+    "F": 0.2,
+    "C": 0.323
+   },
+   "cornerstone": {
+    "G": false,
+    "F": true,
+    "C": false
+   }
+  },
+  "Cleveland Cavaliers": {
+   "stance": "middle",
+   "record": "31-51",
+   "need": {
+    "G": 0.383,
+    "F": 0.744,
+    "C": 0.663
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Golden State Warriors": {
+   "stance": "middle",
+   "record": "47-35",
+   "need": {
+    "G": 0.568,
+    "F": 0.21,
+    "C": 1.0
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Detroit Pistons": {
+   "stance": "contending",
+   "record": "50-32",
+   "need": {
+    "G": 0.05,
+    "F": 0.785,
+    "C": 0.258
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Indiana Pacers": {
+   "stance": "contending",
+   "record": "59-23",
+   "need": {
+    "G": 0.454,
+    "F": 0.041,
+    "C": 0.357
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Boston Celtics": {
+   "stance": "rebuilding",
+   "record": "30-52",
+   "need": {
+    "G": 0.571,
+    "F": 0.255,
+    "C": 0.607
+   },
+   "cornerstone": {
+    "G": true,
+    "F": false,
+    "C": false
+   }
+  },
+  "Minnesota Timberwolves": {
+   "stance": "contending",
+   "record": "62-20",
+   "need": {
+    "G": 1.0,
+    "F": 0.561,
+    "C": 0.876
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Milwaukee Bucks": {
+   "stance": "middle",
+   "record": "44-38",
+   "need": {
+    "G": 0.637,
+    "F": 0.14,
+    "C": 1.0
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Toronto Raptors": {
+   "stance": "middle",
+   "record": "42-40",
+   "need": {
+    "G": 0.596,
+    "F": 0.67,
+    "C": 1.0
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "New Jersey Nets": {
+   "stance": "contending",
+   "record": "53-29",
+   "need": {
+    "G": 0.452,
+    "F": 0.806,
+    "C": 0.692
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "New York Knicks": {
+   "stance": "rebuilding",
+   "record": "29-53",
+   "need": {
+    "G": 0.495,
+    "F": 0.492,
+    "C": 0.52
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Orlando Magic": {
+   "stance": "rebuilding",
+   "record": "21-61",
+   "need": {
+    "G": 0.417,
+    "F": 0.392,
+    "C": 0.716
+   },
+   "cornerstone": {
+    "G": true,
+    "F": false,
+    "C": false
+   }
+  },
+  "Utah Jazz": {
+   "stance": "rebuilding",
+   "record": "26-56",
+   "need": {
+    "G": 0.895,
+    "F": 1.0,
+    "C": 0.935
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Portland Trail Blazers": {
+   "stance": "middle",
+   "record": "31-51",
+   "need": {
+    "G": 0.606,
+    "F": 0.522,
+    "C": 0.731
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Denver Nuggets": {
+   "stance": "middle",
+   "record": "48-34",
+   "need": {
+    "G": 0.147,
+    "F": 0.952,
+    "C": 0.44
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Chicago Bulls": {
+   "stance": "middle",
+   "record": "36-46",
+   "need": {
+    "G": 1.0,
+    "F": 0.549,
+    "C": 0.539
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Washington Wizards": {
+   "stance": "rebuilding",
+   "record": "24-58",
+   "need": {
+    "G": 0.235,
+    "F": 0.691,
+    "C": 0.5
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Houston Rockets": {
+   "stance": "middle",
+   "record": "38-44",
+   "need": {
+    "G": 0.121,
+    "F": 0.643,
+    "C": 0.2
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Seattle SuperSonics": {
+   "stance": "middle",
+   "record": "39-43",
+   "need": {
+    "G": 0.614,
+    "F": 0.748,
+    "C": 0.344
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Los Angeles Clippers": {
+   "stance": "rebuilding",
+   "record": "27-55",
+   "need": {
+    "G": 0.62,
+    "F": 0.279,
+    "C": 0.892
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Memphis Grizzlies": {
+   "stance": "middle",
+   "record": "46-36",
+   "need": {
+    "G": 0.338,
+    "F": 0.367,
+    "C": 0.572
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  },
+  "Charlotte Bobcats": {
+   "stance": "rebuilding",
+   "record": "expansion",
+   "need": {
+    "G": 1.0,
+    "F": 1.0,
+    "C": 1.0
+   },
+   "cornerstone": {
+    "G": false,
+    "F": false,
+    "C": false
+   }
+  }
+ }
+}

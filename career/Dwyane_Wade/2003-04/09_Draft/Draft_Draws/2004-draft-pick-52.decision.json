@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-52",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 52: whom does Memphis Grizzlies select (Marcus Douthit, Romain Sato, Mo Ke)?",
+ "decider": "Memphis Grizzlies front office (engine draw)",
+ "options": {
+  "Marcus Douthit": 0.400854,
+  "Romain Sato": 0.303092,
+  "Mo Ke": 0.296054
+ },
+ "basis": "Tier 6 of the draft-night board; middle club; utilities Marcus Douthit 0.81, Romain Sato 0.78, Mo Ke 0.77 (runtime/draft.py)."
+}

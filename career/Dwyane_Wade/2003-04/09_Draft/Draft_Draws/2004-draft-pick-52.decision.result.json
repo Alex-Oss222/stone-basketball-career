@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Memphis Grizzlies front office (engine draw)",
+ "event_id": "2004-draft-pick-52",
+ "kind": "decision",
+ "options": {
+  "Marcus Douthit": 0.400854,
+  "Mo Ke": 0.296054,
+  "Romain Sato": 0.303092
+ },
+ "outcome": "Romain Sato",
+ "question": "2004 draft, No. 52: whom does Memphis Grizzlies select (Marcus Douthit, Romain Sato, Mo Ke)?"
+}

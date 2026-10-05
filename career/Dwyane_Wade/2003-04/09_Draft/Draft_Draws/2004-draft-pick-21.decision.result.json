@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Denver Nuggets front office (engine draw)",
+ "event_id": "2004-draft-pick-21",
+ "kind": "decision",
+ "options": {
+  "Dorell Wright": 0.024786,
+  "Peter John Ramos": 0.046925,
+  "Rafael Ara\u00fajo": 0.928289
+ },
+ "outcome": "Rafael Ara\u00fajo",
+ "question": "2004 draft, No. 21: whom does Denver Nuggets select (Rafael Ara\u00fajo, Peter John Ramos, Dorell Wright)?"
+}

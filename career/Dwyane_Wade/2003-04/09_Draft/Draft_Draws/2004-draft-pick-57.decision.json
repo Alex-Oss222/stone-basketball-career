@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-57",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 57: whom does San Antonio Spurs select (Sergei Karaulov, Rickey Paulding, Vassilis Spanoulis)?",
+ "decider": "San Antonio Spurs front office (engine draw)",
+ "options": {
+  "Sergei Karaulov": 0.373662,
+  "Rickey Paulding": 0.31476,
+  "Vassilis Spanoulis": 0.311578
+ },
+ "basis": "Tier 6 of the draft-night board; contending club; utilities Sergei Karaulov 0.64, Rickey Paulding 0.62, Vassilis Spanoulis 0.61 (runtime/draft.py)."
+}

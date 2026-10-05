@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-12",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 12: whom does Utah Jazz select (Josh Smith, Pavel Podkolzin, Al Jefferson)?",
+ "decider": "Utah Jazz front office (engine draw)",
+ "options": {
+  "Josh Smith": 0.924523,
+  "Pavel Podkolzin": 0.044465,
+  "Al Jefferson": 0.031012
+ },
+ "basis": "Tier 3 of the draft-night board; rebuilding club; utilities Josh Smith 3.72, Pavel Podkolzin 3.35, Al Jefferson 3.31 (runtime/draft.py)."
+}

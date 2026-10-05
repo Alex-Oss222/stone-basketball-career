@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-pick-29-trade-down",
+ "date": "2004-06-24",
+ "question": "2004 draft: does Indiana Pacers trade No. 29 to Sacramento Kings for No. 32 and its 2005 second-round pick?",
+ "decider": "Indiana Pacers front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "6 players left in tier 5; Sacramento Kings values its target 1.17x its expected pick; chart value No. 29 0.85 vs No. 32 0.72 + a 2005 second-rounder (runtime/draft.py)."
+}

@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-24",
+ "decider": "Seattle SuperSonics front office (engine draw)",
+ "event_id": "2004-draft-pick-13-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "decline",
+ "question": "2004 draft: does Seattle SuperSonics trade No. 13 to New Orleans Hornets for No. 15 and its 2005 second-round pick?"
+}

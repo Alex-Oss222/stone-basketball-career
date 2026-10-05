@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-36",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 36: whom does Boston Celtics select (Bryant Matthews, David Hawkins, Michel Morandais)?",
+ "decider": "Boston Celtics front office (engine draw)",
+ "options": {
+  "Bryant Matthews": 0.364556,
+  "David Hawkins": 0.353368,
+  "Michel Morandais": 0.282076
+ },
+ "basis": "Tier 6 of the draft-night board; rebuilding club; utilities Bryant Matthews 1.24, David Hawkins 1.24, Michel Morandais 1.21 (runtime/draft.py)."
+}

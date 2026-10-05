@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Toronto Raptors front office (engine draw)",
+ "event_id": "2004-draft-pick-39",
+ "kind": "decision",
+ "options": {
+  "Bryant Matthews": 0.329931,
+  "Matt Freije": 0.231595,
+  "Tim Pickett": 0.438474
+ },
+ "outcome": "Matt Freije",
+ "question": "2004 draft, No. 39: whom does Toronto Raptors select (Tim Pickett, Bryant Matthews, Matt Freije)?"
+}

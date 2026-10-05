@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-24",
+ "decider": "Sacramento Kings front office (engine draw)",
+ "event_id": "2004-draft-pick-27-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "decline",
+ "question": "2004 draft: does Sacramento Kings trade No. 27 to Washington Wizards for No. 31 and its 2005 second-round pick?"
+}

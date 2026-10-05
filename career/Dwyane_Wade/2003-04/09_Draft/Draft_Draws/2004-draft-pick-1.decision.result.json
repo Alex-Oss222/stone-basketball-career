@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Orlando Magic front office (engine draw)",
+ "event_id": "2004-draft-pick-1",
+ "kind": "decision",
+ "options": {
+  "Dwight Howard": 0.999987,
+  "Emeka Okafor": 1.2e-05,
+  "Luol Deng": 1e-06
+ },
+ "outcome": "Dwight Howard",
+ "question": "2004 draft, No. 1: whom does Orlando Magic select (Dwight Howard, Emeka Okafor, Luol Deng)?"
+}

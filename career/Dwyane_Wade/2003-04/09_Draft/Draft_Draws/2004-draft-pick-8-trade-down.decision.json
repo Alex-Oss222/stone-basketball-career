@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-pick-8-trade-down",
+ "date": "2004-06-24",
+ "question": "2004 draft: does Cleveland Cavaliers trade No. 8 to Phoenix Suns for No. 9 and its 2005 second-round pick?",
+ "decider": "Cleveland Cavaliers front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "3 players left in tier 2; Phoenix Suns values its target 1.16x its expected pick; chart value No. 8 2.71 vs No. 9 2.57 + a 2005 second-rounder (runtime/draft.py)."
+}

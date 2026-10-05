@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-pick-1-trade-down",
+ "date": "2004-06-24",
+ "question": "2004 draft: does Orlando Magic trade No. 1 to Boston Celtics for No. 3 and its 2005 second-round pick?",
+ "decider": "Orlando Magic front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "5 players left in tier 1; Boston Celtics values its target 1.41x its expected pick; chart value No. 1 4.00 vs No. 3 3.58 + a 2005 second-rounder (runtime/draft.py)."
+}

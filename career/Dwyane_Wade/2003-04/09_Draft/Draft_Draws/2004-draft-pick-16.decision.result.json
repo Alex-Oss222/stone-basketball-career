@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Atlanta Hawks front office (engine draw)",
+ "event_id": "2004-draft-pick-16",
+ "kind": "decision",
+ "options": {
+  "Al Jefferson": 0.114684,
+  "J.R. Smith": 0.212932,
+  "Sergei Monia": 0.672384
+ },
+ "outcome": "Sergei Monia",
+ "question": "2004 draft, No. 16: whom does Atlanta Hawks select (Sergei Monia, J.R. Smith, Al Jefferson)?"
+}

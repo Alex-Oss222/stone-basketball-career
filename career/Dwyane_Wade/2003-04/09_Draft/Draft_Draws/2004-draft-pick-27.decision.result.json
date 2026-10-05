@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Sacramento Kings front office (engine draw)",
+ "event_id": "2004-draft-pick-27",
+ "kind": "decision",
+ "options": {
+  "Beno Udrih": 0.371648,
+  "Kevin Martin": 0.296457,
+  "Sasha Vuja\u010di\u0107": 0.331895
+ },
+ "outcome": "Sasha Vuja\u010di\u0107",
+ "question": "2004 draft, No. 27: whom does Sacramento Kings select (Beno Udrih, Sasha Vuja\u010di\u0107, Kevin Martin)?"
+}

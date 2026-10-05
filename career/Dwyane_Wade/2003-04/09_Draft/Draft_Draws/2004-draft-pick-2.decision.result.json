@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Washington Wizards front office (engine draw)",
+ "event_id": "2004-draft-pick-2",
+ "kind": "decision",
+ "options": {
+  "Emeka Okafor": 0.99148,
+  "Luol Deng": 0.008392,
+  "Shaun Livingston": 0.000128
+ },
+ "outcome": "Emeka Okafor",
+ "question": "2004 draft, No. 2: whom does Washington Wizards select (Emeka Okafor, Luol Deng, Shaun Livingston)?"
+}

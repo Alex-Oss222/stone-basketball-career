@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-30",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 30: whom does New Jersey Nets select (Kevin Martin, Delonte West, Ricky Minard)?",
+ "decider": "New Jersey Nets front office (engine draw)",
+ "options": {
+  "Kevin Martin": 0.543252,
+  "Delonte West": 0.246996,
+  "Ricky Minard": 0.209752
+ },
+ "basis": "Tier 5 of the draft-night board; contending club; utilities Kevin Martin 0.83, Delonte West 0.73, Ricky Minard 0.71 (runtime/draft.py)."
+}

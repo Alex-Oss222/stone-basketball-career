@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-pick-13-trade-down",
+ "date": "2004-06-24",
+ "question": "2004 draft: does Seattle SuperSonics trade No. 13 to New Orleans Hornets for No. 15 and its 2005 second-round pick?",
+ "decider": "Seattle SuperSonics front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "7 players left in tier 3; New Orleans Hornets values its target 1.15x its expected pick; chart value No. 13 2.06 vs No. 15 1.84 + a 2005 second-rounder (runtime/draft.py)."
+}

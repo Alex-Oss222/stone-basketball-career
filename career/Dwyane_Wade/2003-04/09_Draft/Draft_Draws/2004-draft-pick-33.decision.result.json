@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-24",
+ "decider": "Charlotte Bobcats front office (engine draw)",
+ "event_id": "2004-draft-pick-33",
+ "kind": "decision",
+ "options": {
+  "Delonte West": 0.633532,
+  "Ha Seung-Jin": 0.366468
+ },
+ "outcome": "Delonte West",
+ "question": "2004 draft, No. 33: whom does Charlotte Bobcats select (Delonte West, Ha Seung-Jin)?"
+}

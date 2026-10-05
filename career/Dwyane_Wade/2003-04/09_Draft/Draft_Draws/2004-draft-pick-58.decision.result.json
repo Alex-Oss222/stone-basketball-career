@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Indiana Pacers front office (engine draw)",
+ "event_id": "2004-draft-pick-58",
+ "kind": "decision",
+ "options": {
+  "Desmon Farmer": 0.21307,
+  "Rickey Paulding": 0.362714,
+  "Sergei Karaulov": 0.424216
+ },
+ "outcome": "Desmon Farmer",
+ "question": "2004 draft, No. 58: whom does Indiana Pacers select (Sergei Karaulov, Rickey Paulding, Desmon Farmer)?"
+}

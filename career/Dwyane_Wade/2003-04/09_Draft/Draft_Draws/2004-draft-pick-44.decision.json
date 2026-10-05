@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-44",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 44: whom does Seattle SuperSonics select (Marcus Douthit, Andre Emmett, Jaber Rouzbahani)?",
+ "decider": "Seattle SuperSonics front office (engine draw)",
+ "options": {
+  "Marcus Douthit": 0.357403,
+  "Andre Emmett": 0.33606,
+  "Jaber Rouzbahani": 0.306537
+ },
+ "basis": "Tier 6 of the draft-night board; middle club; utilities Marcus Douthit 0.89, Andre Emmett 0.88, Jaber Rouzbahani 0.87 (runtime/draft.py)."
+}

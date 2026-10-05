@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-45",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 45: whom does Atlanta Hawks select (Romain Sato, Luis Flores, Marcus Douthit)?",
+ "decider": "Atlanta Hawks front office (engine draw)",
+ "options": {
+  "Romain Sato": 0.371651,
+  "Luis Flores": 0.362697,
+  "Marcus Douthit": 0.265652
+ },
+ "basis": "Tier 6 of the draft-night board; middle club; utilities Romain Sato 0.85, Luis Flores 0.85, Marcus Douthit 0.81 (runtime/draft.py)."
+}

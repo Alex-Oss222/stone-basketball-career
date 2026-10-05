@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-pick-21-trade-down",
+ "date": "2004-06-24",
+ "question": "2004 draft: does Golden State Warriors trade No. 21 to Denver Nuggets for No. 22 and its 2005 second-round pick?",
+ "decider": "Golden State Warriors front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "4 players left in tier 4; Denver Nuggets values its target 1.25x its expected pick; chart value No. 21 1.32 vs No. 22 1.25 + a 2005 second-rounder (runtime/draft.py)."
+}

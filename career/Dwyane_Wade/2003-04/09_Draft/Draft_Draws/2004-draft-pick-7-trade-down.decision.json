@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-pick-7-trade-down",
+ "date": "2004-06-24",
+ "question": "2004 draft: does New York Knicks trade No. 7 to Phoenix Suns for No. 9 and its 2005 second-round pick?",
+ "decider": "New York Knicks front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "4 players left in tier 2; Phoenix Suns values its target 1.16x its expected pick; chart value No. 7 2.87 vs No. 9 2.57 + a 2005 second-rounder (runtime/draft.py)."
+}

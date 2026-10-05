@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-40",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 40: whom does Chicago Bulls select (Tim Pickett, Antonio Burks, Bryant Matthews)?",
+ "decider": "Chicago Bulls front office (engine draw)",
+ "options": {
+  "Tim Pickett": 0.555559,
+  "Antonio Burks": 0.242097,
+  "Bryant Matthews": 0.202344
+ },
+ "basis": "Tier 6 of the draft-night board; middle club; utilities Tim Pickett 1.00, Antonio Burks 0.90, Bryant Matthews 0.88 (runtime/draft.py)."
+}

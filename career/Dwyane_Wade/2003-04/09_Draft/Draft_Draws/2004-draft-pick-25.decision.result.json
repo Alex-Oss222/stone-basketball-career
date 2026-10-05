@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Golden State Warriors front office (engine draw)",
+ "event_id": "2004-draft-pick-25",
+ "kind": "decision",
+ "options": {
+  "Anderson Varej\u00e3o": 0.44915,
+  "Beno Udrih": 0.237145,
+  "Sasha Vuja\u010di\u0107": 0.313705
+ },
+ "outcome": "Anderson Varej\u00e3o",
+ "question": "2004 draft, No. 25: whom does Golden State Warriors select (Anderson Varej\u00e3o, Sasha Vuja\u010di\u0107, Beno Udrih)?"
+}

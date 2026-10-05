@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "New Jersey Nets front office (engine draw)",
+ "event_id": "2004-draft-pick-30",
+ "kind": "decision",
+ "options": {
+  "Delonte West": 0.246996,
+  "Kevin Martin": 0.543252,
+  "Ricky Minard": 0.209752
+ },
+ "outcome": "Ricky Minard",
+ "question": "2004 draft, No. 30: whom does New Jersey Nets select (Kevin Martin, Delonte West, Ricky Minard)?"
+}

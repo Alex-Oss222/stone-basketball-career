@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Miami Heat front office (engine draw)",
+ "event_id": "2004-draft-pick-54",
+ "kind": "decision",
+ "options": {
+  "Christian Drejer": 0.292147,
+  "Mo Ke": 0.426477,
+  "Trevor Ariza": 0.281376
+ },
+ "outcome": "Christian Drejer",
+ "question": "2004 draft, No. 54: whom does Miami Heat select (Mo Ke, Christian Drejer, Trevor Ariza)?"
+}

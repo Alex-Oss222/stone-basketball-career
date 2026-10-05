@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-16",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 16: whom does Atlanta Hawks select (Sergei Monia, J.R. Smith, Al Jefferson)?",
+ "decider": "Atlanta Hawks front office (engine draw)",
+ "options": {
+  "Sergei Monia": 0.672384,
+  "J.R. Smith": 0.212932,
+  "Al Jefferson": 0.114684
+ },
+ "basis": "Tier 3 of the draft-night board; middle club; utilities Sergei Monia 2.07, J.R. Smith 1.93, Al Jefferson 1.86 (runtime/draft.py)."
+}

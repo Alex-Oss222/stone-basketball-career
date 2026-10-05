@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Chicago Bulls front office (engine draw)",
+ "event_id": "2004-draft-pick-40",
+ "kind": "decision",
+ "options": {
+  "Antonio Burks": 0.242097,
+  "Bryant Matthews": 0.202344,
+  "Tim Pickett": 0.555559
+ },
+ "outcome": "Tim Pickett",
+ "question": "2004 draft, No. 40: whom does Chicago Bulls select (Tim Pickett, Antonio Burks, Bryant Matthews)?"
+}

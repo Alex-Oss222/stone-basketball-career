@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Houston Rockets front office (engine draw)",
+ "event_id": "2004-draft-pick-56",
+ "kind": "decision",
+ "options": {
+  "Desmon Farmer": 0.320505,
+  "Sergei Lishouk": 0.333237,
+  "Trevor Ariza": 0.346258
+ },
+ "outcome": "Sergei Lishouk",
+ "question": "2004 draft, No. 56: whom does Houston Rockets select (Trevor Ariza, Sergei Lishouk, Desmon Farmer)?"
+}

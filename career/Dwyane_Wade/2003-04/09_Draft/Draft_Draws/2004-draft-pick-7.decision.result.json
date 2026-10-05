@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "New York Knicks front office (engine draw)",
+ "event_id": "2004-draft-pick-7",
+ "kind": "decision",
+ "options": {
+  "Andre Iguodala": 0.896441,
+  "Devin Harris": 0.10309,
+  "Luke Jackson": 0.000469
+ },
+ "outcome": "Andre Iguodala",
+ "question": "2004 draft, No. 7: whom does New York Knicks select (Andre Iguodala, Devin Harris, Luke Jackson)?"
+}

@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-6",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 6: whom does Los Angeles Clippers select (Andris Biedriņš, Andre Iguodala, Devin Harris)?",
+ "decider": "Los Angeles Clippers front office (engine draw)",
+ "options": {
+  "Andris Biedriņš": 0.977401,
+  "Andre Iguodala": 0.012561,
+  "Devin Harris": 0.010038
+ },
+ "basis": "Tier 2 of the draft-night board; rebuilding club; utilities Andris Biedriņš 5.18, Andre Iguodala 4.65, Devin Harris 4.63 (runtime/draft.py)."
+}

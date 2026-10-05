@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Portland Trail Blazers front office (engine draw)",
+ "event_id": "2004-draft-pick-37",
+ "kind": "decision",
+ "options": {
+  "Bryant Matthews": 0.316189,
+  "Michel Morandais": 0.263599,
+  "Tim Pickett": 0.420212
+ },
+ "outcome": "Michel Morandais",
+ "question": "2004 draft, No. 37: whom does Portland Trail Blazers select (Tim Pickett, Bryant Matthews, Michel Morandais)?"
+}

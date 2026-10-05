@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-pick-23",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 23: whom does Miami Heat select (Dorell Wright, Sebastian Telfair)?",
+ "decider": "Miami Heat front office (engine draw)",
+ "options": {
+  "Dorell Wright": 0.954561,
+  "Sebastian Telfair": 0.045439
+ },
+ "basis": "Tier 4 of the draft-night board; middle club; utilities Dorell Wright 1.36, Sebastian Telfair 1.00 (runtime/draft.py)."
+}

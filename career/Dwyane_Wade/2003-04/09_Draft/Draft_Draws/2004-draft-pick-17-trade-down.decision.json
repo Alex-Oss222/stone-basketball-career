@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-pick-17-trade-down",
+ "date": "2004-06-24",
+ "question": "2004 draft: does Toronto Raptors trade No. 17 to Los Angeles Lakers for No. 20 and its 2005 second-round pick?",
+ "decider": "Toronto Raptors front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "3 players left in tier 3; Los Angeles Lakers values its target 1.42x its expected pick; chart value No. 17 1.65 vs No. 20 1.39 + a 2005 second-rounder (runtime/draft.py)."
+}

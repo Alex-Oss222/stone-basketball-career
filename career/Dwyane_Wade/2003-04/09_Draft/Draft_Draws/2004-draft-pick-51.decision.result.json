@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Miami Heat front office (engine draw)",
+ "event_id": "2004-draft-pick-51",
+ "kind": "decision",
+ "options": {
+  "Bernard Robinson": 0.253024,
+  "Marcus Douthit": 0.434909,
+  "Mo Ke": 0.312067
+ },
+ "outcome": "Bernard Robinson",
+ "question": "2004 draft, No. 51: whom does Miami Heat select (Marcus Douthit, Mo Ke, Bernard Robinson)?"
+}

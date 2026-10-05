@@ -1,0 +1,12 @@
+{
+ "date": "2004-06-24",
+ "decider": "San Antonio Spurs front office (engine draw)",
+ "event_id": "2004-draft-pick-28-trade-down",
+ "kind": "decision",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "outcome": "accept",
+ "question": "2004 draft: does San Antonio Spurs trade No. 28 to Washington Wizards for No. 31 and its 2005 second-round pick?"
+}

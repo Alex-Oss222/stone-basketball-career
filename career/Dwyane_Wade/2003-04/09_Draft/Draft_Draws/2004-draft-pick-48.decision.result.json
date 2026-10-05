@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "San Antonio Spurs front office (engine draw)",
+ "event_id": "2004-draft-pick-48",
+ "kind": "decision",
+ "options": {
+  "Blake Stepp": 0.269251,
+  "Romain Sato": 0.485352,
+  "Sergei Karaulov": 0.245397
+ },
+ "outcome": "Blake Stepp",
+ "question": "2004 draft, No. 48: whom does San Antonio Spurs select (Romain Sato, Blake Stepp, Sergei Karaulov)?"
+}

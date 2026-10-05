@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Boston Celtics front office (engine draw)",
+ "event_id": "2004-draft-pick-3",
+ "kind": "decision",
+ "options": {
+  "Ben Gordon": 1e-06,
+  "Luol Deng": 0.999881,
+  "Shaun Livingston": 0.000118
+ },
+ "outcome": "Luol Deng",
+ "question": "2004 draft, No. 3: whom does Boston Celtics select (Luol Deng, Shaun Livingston, Ben Gordon)?"
+}

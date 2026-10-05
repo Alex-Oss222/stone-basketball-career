@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Toronto Raptors front office (engine draw)",
+ "event_id": "2004-draft-pick-17",
+ "kind": "decision",
+ "options": {
+  "Al Jefferson": 0.62813,
+  "J.R. Smith": 0.287833,
+  "Kris Humphries": 0.084037
+ },
+ "outcome": "Al Jefferson",
+ "question": "2004 draft, No. 17: whom does Toronto Raptors select (Al Jefferson, J.R. Smith, Kris Humphries)?"
+}

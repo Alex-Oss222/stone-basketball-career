@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-55",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 55: whom does New Jersey Nets select (Mo Ke, Sergei Lishouk, Desmon Farmer)?",
+ "decider": "New Jersey Nets front office (engine draw)",
+ "options": {
+  "Mo Ke": 0.362719,
+  "Sergei Lishouk": 0.323671,
+  "Desmon Farmer": 0.31361
+ },
+ "basis": "Tier 6 of the draft-night board; contending club; utilities Mo Ke 0.65, Sergei Lishouk 0.64, Desmon Farmer 0.64 (runtime/draft.py)."
+}

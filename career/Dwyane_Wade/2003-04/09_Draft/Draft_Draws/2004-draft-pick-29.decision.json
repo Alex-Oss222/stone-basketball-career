@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-29",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 29: whom does Sacramento Kings select (Beno Udrih, Kevin Martin, Delonte West)?",
+ "decider": "Sacramento Kings front office (engine draw)",
+ "options": {
+  "Beno Udrih": 0.459932,
+  "Kevin Martin": 0.366881,
+  "Delonte West": 0.173187
+ },
+ "basis": "Tier 5 of the draft-night board; contending club; utilities Beno Udrih 0.82, Kevin Martin 0.79, Delonte West 0.70 (runtime/draft.py)."
+}

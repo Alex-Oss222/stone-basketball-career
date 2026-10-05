@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-14",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 14: whom does Philadelphia 76ers select (Pavel Podkolzin, Al Jefferson, Sergei Monia)?",
+ "decider": "Philadelphia 76ers front office (engine draw)",
+ "options": {
+  "Pavel Podkolzin": 0.597684,
+  "Al Jefferson": 0.248537,
+  "Sergei Monia": 0.153779
+ },
+ "basis": "Tier 3 of the draft-night board; middle club; utilities Pavel Podkolzin 1.96, Al Jefferson 1.86, Sergei Monia 1.80 (runtime/draft.py)."
+}

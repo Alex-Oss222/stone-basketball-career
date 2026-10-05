@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-42",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 42: whom does New Orleans Hornets select (Bryant Matthews, Marcus Douthit, Andre Emmett)?",
+ "decider": "New Orleans Hornets front office (engine draw)",
+ "options": {
+  "Bryant Matthews": 0.474692,
+  "Marcus Douthit": 0.269684,
+  "Andre Emmett": 0.255624
+ },
+ "basis": "Tier 6 of the draft-night board; middle club; utilities Bryant Matthews 0.84, Marcus Douthit 0.77, Andre Emmett 0.76 (runtime/draft.py)."
+}

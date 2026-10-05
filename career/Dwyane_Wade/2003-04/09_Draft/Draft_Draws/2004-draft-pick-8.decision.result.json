@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Cleveland Cavaliers front office (engine draw)",
+ "event_id": "2004-draft-pick-8",
+ "kind": "decision",
+ "options": {
+  "Devin Harris": 0.53941,
+  "Josh Childress": 0.012535,
+  "Luke Jackson": 0.448055
+ },
+ "outcome": "Devin Harris",
+ "question": "2004 draft, No. 8: whom does Cleveland Cavaliers select (Devin Harris, Luke Jackson, Josh Childress)?"
+}

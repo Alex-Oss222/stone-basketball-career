@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-8",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 8: whom does Cleveland Cavaliers select (Devin Harris, Luke Jackson, Josh Childress)?",
+ "decider": "Cleveland Cavaliers front office (engine draw)",
+ "options": {
+  "Devin Harris": 0.53941,
+  "Luke Jackson": 0.448055,
+  "Josh Childress": 0.012535
+ },
+ "basis": "Tier 2 of the draft-night board; middle club; utilities Devin Harris 3.12, Luke Jackson 3.10, Josh Childress 2.67 (runtime/draft.py)."
+}

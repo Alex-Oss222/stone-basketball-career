@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-7",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 7: whom does New York Knicks select (Andre Iguodala, Devin Harris, Luke Jackson)?",
+ "decider": "New York Knicks front office (engine draw)",
+ "options": {
+  "Andre Iguodala": 0.896441,
+  "Devin Harris": 0.10309,
+  "Luke Jackson": 0.000469
+ },
+ "basis": "Tier 2 of the draft-night board; rebuilding club; utilities Andre Iguodala 4.89, Devin Harris 4.63, Luke Jackson 3.98 (runtime/draft.py)."
+}

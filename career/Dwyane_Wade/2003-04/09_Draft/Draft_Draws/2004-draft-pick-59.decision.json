@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-59",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 59: whom does Minnesota Timberwolves select (Sergei Karaulov, Rickey Paulding, Albert Miralles)?",
+ "decider": "Minnesota Timberwolves front office (engine draw)",
+ "options": {
+  "Sergei Karaulov": 0.404326,
+  "Rickey Paulding": 0.34059,
+  "Albert Miralles": 0.255084
+ },
+ "basis": "Tier 6 of the draft-night board; contending club; utilities Sergei Karaulov 0.64, Rickey Paulding 0.62, Albert Miralles 0.58 (runtime/draft.py)."
+}

@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-draft-pick-31",
+ "date": "2004-06-24",
+ "question": "2004 draft, No. 31: whom does New York Knicks select (Ha Seung-Jin, Kevin Martin, Delonte West)?",
+ "decider": "New York Knicks front office (engine draw)",
+ "options": {
+  "Ha Seung-Jin": 0.451437,
+  "Kevin Martin": 0.319967,
+  "Delonte West": 0.228596
+ },
+ "basis": "Tier 5 of the draft-night board; rebuilding club; utilities Ha Seung-Jin 1.63, Kevin Martin 1.59, Delonte West 1.55 (runtime/draft.py)."
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-draft-pick-27-trade-down",
+ "date": "2004-06-24",
+ "question": "2004 draft: does Sacramento Kings trade No. 27 to Washington Wizards for No. 31 and its 2005 second-round pick?",
+ "decider": "Sacramento Kings front office (engine draw)",
+ "options": {
+  "accept": 0.5,
+  "decline": 0.5
+ },
+ "basis": "8 players left in tier 5; Washington Wizards values its target 1.16x its expected pick; chart value No. 27 0.94 vs No. 31 0.76 + a 2005 second-rounder (runtime/draft.py)."
+}

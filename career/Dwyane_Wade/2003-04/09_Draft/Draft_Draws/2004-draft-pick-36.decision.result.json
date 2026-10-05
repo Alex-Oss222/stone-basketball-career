@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Boston Celtics front office (engine draw)",
+ "event_id": "2004-draft-pick-36",
+ "kind": "decision",
+ "options": {
+  "Bryant Matthews": 0.364556,
+  "David Hawkins": 0.353368,
+  "Michel Morandais": 0.282076
+ },
+ "outcome": "David Hawkins",
+ "question": "2004 draft, No. 36: whom does Boston Celtics select (Bryant Matthews, David Hawkins, Michel Morandais)?"
+}

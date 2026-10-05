@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Chicago Bulls front office (engine draw)",
+ "event_id": "2004-draft-pick-11",
+ "kind": "decision",
+ "options": {
+  "Jameer Nelson": 0.430784,
+  "Kirk Snyder": 0.550932,
+  "Sergei Monia": 0.018284
+ },
+ "outcome": "Kirk Snyder",
+ "question": "2004 draft, No. 11: whom does Chicago Bulls select (Kirk Snyder, Jameer Nelson, Sergei Monia)?"
+}

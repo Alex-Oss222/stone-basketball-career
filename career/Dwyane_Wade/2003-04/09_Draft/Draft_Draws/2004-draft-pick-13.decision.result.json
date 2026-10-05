@@ -1,0 +1,13 @@
+{
+ "date": "2004-06-24",
+ "decider": "Seattle SuperSonics front office (engine draw)",
+ "event_id": "2004-draft-pick-13",
+ "kind": "decision",
+ "options": {
+  "Al Jefferson": 0.131268,
+  "Jameer Nelson": 0.704926,
+  "Pavel Podkolzin": 0.163806
+ },
+ "outcome": "Jameer Nelson",
+ "question": "2004 draft, No. 13: whom does Seattle SuperSonics select (Jameer Nelson, Pavel Podkolzin, Al Jefferson)?"
+}
