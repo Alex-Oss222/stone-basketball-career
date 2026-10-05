@@ -1,0 +1,1525 @@
+{
+ "schema_version": 1,
+ "kind": "all_star_history",
+ "through": "2003-02-09",
+ "years": [
+  1985,
+  1986,
+  1987,
+  1988,
+  1989,
+  1990,
+  1991,
+  1992,
+  1993,
+  1994,
+  1995,
+  1996,
+  1997,
+  1998,
+  2000,
+  2001,
+  2002,
+  2003
+ ],
+ "rule": "Fans voted All-Star starters largely on reputation, and a player's past selections were public knowledge on the career date, so they are evidence the simulated fan ballot may read (`runtime/all_star.py`). Only games played before June 26, 2003 are imported; nothing after it is read. A selection is a player on a conference roster (Basketball-Reference's East/West tables) or a selected player who did not play through injury (its notes: \"Did not play due to injury\"). Starters are the five listed first. There was no game in 1999 (lockout). Selections before 1985 are not imported: they reach only players who had left the league by 2003-04 or whose later selections already mark them.",
+ "source": "https://www.basketball-reference.com/allstar/NBA_<year>.html",
+ "players": [
+  {
+   "bbr_id": "abdulka01",
+   "selections": 5,
+   "starts": 2,
+   "years": [
+    1985,
+    1986,
+    1987,
+    1988,
+    1989
+   ]
+  },
+  {
+   "bbr_id": "abdursh01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    2002
+   ]
+  },
+  {
+   "bbr_id": "adamsmi01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1992
+   ]
+  },
+  {
+   "bbr_id": "aguirma01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    1987,
+    1988
+   ]
+  },
+  {
+   "bbr_id": "aingeda01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1988
+   ]
+  },
+  {
+   "bbr_id": "allenra02",
+   "selections": 3,
+   "starts": 0,
+   "years": [
+    2000,
+    2001,
+    2002
+   ]
+  },
+  {
+   "bbr_id": "anderke01",
+   "selections": 1,
+   "starts": 1,
+   "years": [
+    1994
+   ]
+  },
+  {
+   "bbr_id": "armstbj01",
+   "selections": 1,
+   "starts": 1,
+   "years": [
+    1994
+   ]
+  },
+  {
+   "bbr_id": "bakervi01",
+   "selections": 4,
+   "starts": 0,
+   "years": [
+    1995,
+    1996,
+    1997,
+    1998
+   ]
+  },
+  {
+   "bbr_id": "barklch01",
+   "selections": 11,
+   "starts": 7,
+   "years": [
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997
+   ]
+  },
+  {
+   "bbr_id": "barroda01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1995
+   ]
+  },
+  {
+   "bbr_id": "birdla01",
+   "selections": 7,
+   "starts": 5,
+   "years": [
+    1985,
+    1986,
+    1987,
+    1988,
+    1990,
+    1991,
+    1992
+   ]
+  },
+  {
+   "bbr_id": "blackro01",
+   "selections": 4,
+   "starts": 0,
+   "years": [
+    1985,
+    1986,
+    1987,
+    1990
+   ]
+  },
+  {
+   "bbr_id": "blaylmo01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1994
+   ]
+  },
+  {
+   "bbr_id": "brandel01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    2002
+   ]
+  },
+  {
+   "bbr_id": "brandte01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    1996,
+    1997
+   ]
+  },
+  {
+   "bbr_id": "bryanko01",
+   "selections": 5,
+   "starts": 5,
+   "years": [
+    1998,
+    2000,
+    2001,
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "carrojo01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1987
+   ]
+  },
+  {
+   "bbr_id": "cartevi01",
+   "selections": 4,
+   "starts": 2,
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "cebalce01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1995
+   ]
+  },
+  {
+   "bbr_id": "chambto01",
+   "selections": 4,
+   "starts": 1,
+   "years": [
+    1987,
+    1989,
+    1990,
+    1991
+   ]
+  },
+  {
+   "bbr_id": "cheekma01",
+   "selections": 3,
+   "starts": 0,
+   "years": [
+    1986,
+    1987,
+    1988
+   ]
+  },
+  {
+   "bbr_id": "colemde01",
+   "selections": 1,
+   "starts": 1,
+   "years": [
+    1994
+   ]
+  },
+  {
+   "bbr_id": "cummite01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    1985,
+    1989
+   ]
+  },
+  {
+   "bbr_id": "dantlad01",
+   "selections": 2,
+   "starts": 1,
+   "years": [
+    1985,
+    1986
+   ]
+  },
+  {
+   "bbr_id": "daughbr01",
+   "selections": 5,
+   "starts": 0,
+   "years": [
+    1988,
+    1989,
+    1991,
+    1992,
+    1993
+   ]
+  },
+  {
+   "bbr_id": "davisan01",
+   "selections": 1,
+   "starts": 1,
+   "years": [
+    2001
+   ]
+  },
+  {
+   "bbr_id": "davisba01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    2002
+   ]
+  },
+  {
+   "bbr_id": "davisda01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    2000
+   ]
+  },
+  {
+   "bbr_id": "daviswa03",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1987
+   ]
+  },
+  {
+   "bbr_id": "divacvl01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    2001
+   ]
+  },
+  {
+   "bbr_id": "donalja01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1988
+   ]
+  },
+  {
+   "bbr_id": "drexlcl01",
+   "selections": 10,
+   "starts": 4,
+   "years": [
+    1986,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1996,
+    1997
+   ]
+  },
+  {
+   "bbr_id": "duckwke01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    1989,
+    1991
+   ]
+  },
+  {
+   "bbr_id": "dumarjo01",
+   "selections": 6,
+   "starts": 1,
+   "years": [
+    1990,
+    1991,
+    1992,
+    1993,
+    1995,
+    1997
+   ]
+  },
+  {
+   "bbr_id": "duncati01",
+   "selections": 5,
+   "starts": 4,
+   "years": [
+    1998,
+    2000,
+    2001,
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "eatonma01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1989
+   ]
+  },
+  {
+   "bbr_id": "elliose01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    1993,
+    1996
+   ]
+  },
+  {
+   "bbr_id": "ellisda01",
+   "selections": 1,
+   "starts": 1,
+   "years": [
+    1989
+   ]
+  },
+  {
+   "bbr_id": "englial01",
+   "selections": 5,
+   "starts": 2,
+   "years": [
+    1985,
+    1986,
+    1987,
+    1988,
+    1989
+   ]
+  },
+  {
+   "bbr_id": "ervinju01",
+   "selections": 3,
+   "starts": 3,
+   "years": [
+    1985,
+    1986,
+    1987
+   ]
+  },
+  {
+   "bbr_id": "ewingpa01",
+   "selections": 11,
+   "starts": 3,
+   "years": [
+    1986,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997
+   ]
+  },
+  {
+   "bbr_id": "finlemi01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    2000,
+    2001
+   ]
+  },
+  {
+   "bbr_id": "floydsl01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1987
+   ]
+  },
+  {
+   "bbr_id": "francst01",
+   "selections": 2,
+   "starts": 2,
+   "years": [
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "garneke01",
+   "selections": 6,
+   "starts": 5,
+   "years": [
+    1997,
+    1998,
+    2000,
+    2001,
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "gatlich01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1997
+   ]
+  },
+  {
+   "bbr_id": "gervige01",
+   "selections": 1,
+   "starts": 1,
+   "years": [
+    1985
+   ]
+  },
+  {
+   "bbr_id": "gilmoar01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1986
+   ]
+  },
+  {
+   "bbr_id": "grantho01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1994
+   ]
+  },
+  {
+   "bbr_id": "greenac01",
+   "selections": 1,
+   "starts": 1,
+   "years": [
+    1990
+   ]
+  },
+  {
+   "bbr_id": "guglito01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1997
+   ]
+  },
+  {
+   "bbr_id": "hardaan01",
+   "selections": 4,
+   "starts": 4,
+   "years": [
+    1995,
+    1996,
+    1997,
+    1998
+   ]
+  },
+  {
+   "bbr_id": "hardati01",
+   "selections": 5,
+   "starts": 0,
+   "years": [
+    1991,
+    1992,
+    1993,
+    1997,
+    1998
+   ]
+  },
+  {
+   "bbr_id": "hawkihe01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1991
+   ]
+  },
+  {
+   "bbr_id": "hillgr01",
+   "selections": 6,
+   "starts": 5,
+   "years": [
+    1995,
+    1996,
+    1997,
+    1998,
+    2000,
+    2001
+   ]
+  },
+  {
+   "bbr_id": "hillty01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1995
+   ]
+  },
+  {
+   "bbr_id": "hornaje01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1992
+   ]
+  },
+  {
+   "bbr_id": "houstal01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    2000,
+    2001
+   ]
+  },
+  {
+   "bbr_id": "howarju01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1996
+   ]
+  },
+  {
+   "bbr_id": "ilgauzy01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    2003
+   ]
+  },
+  {
+   "bbr_id": "iversal01",
+   "selections": 4,
+   "starts": 4,
+   "years": [
+    2000,
+    2001,
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "jacksma01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1989
+   ]
+  },
+  {
+   "bbr_id": "johnsde01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1985
+   ]
+  },
+  {
+   "bbr_id": "johnske02",
+   "selections": 3,
+   "starts": 1,
+   "years": [
+    1990,
+    1991,
+    1994
+   ]
+  },
+  {
+   "bbr_id": "johnsla02",
+   "selections": 2,
+   "starts": 1,
+   "years": [
+    1993,
+    1995
+   ]
+  },
+  {
+   "bbr_id": "johnsma01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1986
+   ]
+  },
+  {
+   "bbr_id": "johnsma02",
+   "selections": 8,
+   "starts": 7,
+   "years": [
+    1985,
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992
+   ]
+  },
+  {
+   "bbr_id": "johnsst03",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1988
+   ]
+  },
+  {
+   "bbr_id": "jonesed02",
+   "selections": 3,
+   "starts": 1,
+   "years": [
+    1997,
+    1998,
+    2000
+   ]
+  },
+  {
+   "bbr_id": "jordami01",
+   "selections": 14,
+   "starts": 13,
+   "years": [
+    1985,
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1996,
+    1997,
+    1998,
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "kempsh01",
+   "selections": 6,
+   "starts": 5,
+   "years": [
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    1998
+   ]
+  },
+  {
+   "bbr_id": "kiddja01",
+   "selections": 6,
+   "starts": 4,
+   "years": [
+    1996,
+    1998,
+    2000,
+    2001,
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "kingbe01",
+   "selections": 2,
+   "starts": 1,
+   "years": [
+    1985,
+    1991
+   ]
+  },
+  {
+   "bbr_id": "laettch01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1997
+   ]
+  },
+  {
+   "bbr_id": "laimbbi01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    1985,
+    1987
+   ]
+  },
+  {
+   "bbr_id": "leverfa01",
+   "selections": 2,
+   "starts": 1,
+   "years": [
+    1988,
+    1990
+   ]
+  },
+  {
+   "bbr_id": "lewisre01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1992
+   ]
+  },
+  {
+   "bbr_id": "majerda01",
+   "selections": 3,
+   "starts": 1,
+   "years": [
+    1992,
+    1993,
+    1995
+   ]
+  },
+  {
+   "bbr_id": "malonje01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    1986,
+    1987
+   ]
+  },
+  {
+   "bbr_id": "malonka01",
+   "selections": 14,
+   "starts": 8,
+   "years": [
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    2000,
+    2001,
+    2002
+   ]
+  },
+  {
+   "bbr_id": "malonmo01",
+   "selections": 5,
+   "starts": 5,
+   "years": [
+    1985,
+    1986,
+    1987,
+    1988,
+    1989
+   ]
+  },
+  {
+   "bbr_id": "mannida01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    1993,
+    1994
+   ]
+  },
+  {
+   "bbr_id": "marbust01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    2001,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "mariosh01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    2003
+   ]
+  },
+  {
+   "bbr_id": "mashbja01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    2003
+   ]
+  },
+  {
+   "bbr_id": "masonan01",
+   "selections": 1,
+   "starts": 1,
+   "years": [
+    2001
+   ]
+  },
+  {
+   "bbr_id": "mcdanxa01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1988
+   ]
+  },
+  {
+   "bbr_id": "mcdyean01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    2001
+   ]
+  },
+  {
+   "bbr_id": "mcgratr01",
+   "selections": 3,
+   "starts": 2,
+   "years": [
+    2001,
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "mchalke01",
+   "selections": 6,
+   "starts": 0,
+   "years": [
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991
+   ]
+  },
+  {
+   "bbr_id": "millebr01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    2003
+   ]
+  },
+  {
+   "bbr_id": "millere01",
+   "selections": 5,
+   "starts": 1,
+   "years": [
+    1990,
+    1995,
+    1996,
+    1998,
+    2000
+   ]
+  },
+  {
+   "bbr_id": "mingya01",
+   "selections": 1,
+   "starts": 1,
+   "years": [
+    2003
+   ]
+  },
+  {
+   "bbr_id": "moncrsi01",
+   "selections": 2,
+   "starts": 1,
+   "years": [
+    1985,
+    1986
+   ]
+  },
+  {
+   "bbr_id": "mournal01",
+   "selections": 7,
+   "starts": 1,
+   "years": [
+    1994,
+    1995,
+    1996,
+    1997,
+    2000,
+    2001,
+    2002
+   ]
+  },
+  {
+   "bbr_id": "mullich01",
+   "selections": 5,
+   "starts": 2,
+   "years": [
+    1989,
+    1990,
+    1991,
+    1992,
+    1993
+   ]
+  },
+  {
+   "bbr_id": "mutomdi01",
+   "selections": 8,
+   "starts": 3,
+   "years": [
+    1992,
+    1995,
+    1996,
+    1997,
+    1998,
+    2000,
+    2001,
+    2002
+   ]
+  },
+  {
+   "bbr_id": "nancela01",
+   "selections": 3,
+   "starts": 0,
+   "years": [
+    1985,
+    1989,
+    1993
+   ]
+  },
+  {
+   "bbr_id": "nashst01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "nattca01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1985
+   ]
+  },
+  {
+   "bbr_id": "nixonno01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1985
+   ]
+  },
+  {
+   "bbr_id": "nowitdi01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "oaklech01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1994
+   ]
+  },
+  {
+   "bbr_id": "olajuha01",
+   "selections": 12,
+   "starts": 8,
+   "years": [
+    1985,
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997
+   ]
+  },
+  {
+   "bbr_id": "onealje01",
+   "selections": 2,
+   "starts": 1,
+   "years": [
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "onealsh01",
+   "selections": 10,
+   "starts": 6,
+   "years": [
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    2000,
+    2001,
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "parisro01",
+   "selections": 5,
+   "starts": 0,
+   "years": [
+    1985,
+    1986,
+    1987,
+    1990,
+    1991
+   ]
+  },
+  {
+   "bbr_id": "paytoga01",
+   "selections": 9,
+   "starts": 2,
+   "years": [
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    2000,
+    2001,
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "piercpa01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "piercri01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1991
+   ]
+  },
+  {
+   "bbr_id": "pippesc01",
+   "selections": 7,
+   "starts": 6,
+   "years": [
+    1990,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997
+   ]
+  },
+  {
+   "bbr_id": "portete01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    1991,
+    1993
+   ]
+  },
+  {
+   "bbr_id": "pricema01",
+   "selections": 4,
+   "starts": 0,
+   "years": [
+    1989,
+    1992,
+    1993,
+    1994
+   ]
+  },
+  {
+   "bbr_id": "ratlith01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    2001
+   ]
+  },
+  {
+   "bbr_id": "ricegl01",
+   "selections": 3,
+   "starts": 0,
+   "years": [
+    1996,
+    1997,
+    1998
+   ]
+  },
+  {
+   "bbr_id": "richami01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1985
+   ]
+  },
+  {
+   "bbr_id": "richmmi01",
+   "selections": 6,
+   "starts": 1,
+   "years": [
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    1998
+   ]
+  },
+  {
+   "bbr_id": "riverdo01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1988
+   ]
+  },
+  {
+   "bbr_id": "roberal01",
+   "selections": 4,
+   "starts": 2,
+   "years": [
+    1986,
+    1987,
+    1988,
+    1991
+   ]
+  },
+  {
+   "bbr_id": "robincl02",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1994
+   ]
+  },
+  {
+   "bbr_id": "robinda01",
+   "selections": 10,
+   "starts": 3,
+   "years": [
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1998,
+    2000,
+    2001
+   ]
+  },
+  {
+   "bbr_id": "robingl01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    2000,
+    2001
+   ]
+  },
+  {
+   "bbr_id": "rodmade01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    1990,
+    1992
+   ]
+  },
+  {
+   "bbr_id": "rulanje01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1985
+   ]
+  },
+  {
+   "bbr_id": "sampsra01",
+   "selections": 3,
+   "starts": 2,
+   "years": [
+    1985,
+    1986,
+    1987
+   ]
+  },
+  {
+   "bbr_id": "schrede01",
+   "selections": 3,
+   "starts": 0,
+   "years": [
+    1993,
+    1995,
+    1997
+   ]
+  },
+  {
+   "bbr_id": "sikmaja01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1985
+   ]
+  },
+  {
+   "bbr_id": "smithst01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1998
+   ]
+  },
+  {
+   "bbr_id": "smitsri01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1998
+   ]
+  },
+  {
+   "bbr_id": "sprewla01",
+   "selections": 4,
+   "starts": 1,
+   "years": [
+    1994,
+    1995,
+    1997,
+    2001
+   ]
+  },
+  {
+   "bbr_id": "stackje01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    2000,
+    2001
+   ]
+  },
+  {
+   "bbr_id": "starkjo01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1994
+   ]
+  },
+  {
+   "bbr_id": "stockjo01",
+   "selections": 10,
+   "starts": 4,
+   "years": [
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    2000
+   ]
+  },
+  {
+   "bbr_id": "stojape01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "szczewa02",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    2002
+   ]
+  },
+  {
+   "bbr_id": "thomais01",
+   "selections": 9,
+   "starts": 7,
+   "years": [
+    1985,
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993
+   ]
+  },
+  {
+   "bbr_id": "thorpot01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1992
+   ]
+  },
+  {
+   "bbr_id": "vanexni01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1998
+   ]
+  },
+  {
+   "bbr_id": "walkean02",
+   "selections": 3,
+   "starts": 1,
+   "years": [
+    1998,
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "wallabe01",
+   "selections": 1,
+   "starts": 1,
+   "years": [
+    2003
+   ]
+  },
+  {
+   "bbr_id": "wallara01",
+   "selections": 2,
+   "starts": 0,
+   "years": [
+    2000,
+    2001
+   ]
+  },
+  {
+   "bbr_id": "webbech01",
+   "selections": 5,
+   "starts": 2,
+   "years": [
+    1997,
+    2000,
+    2001,
+    2002,
+    2003
+   ]
+  },
+  {
+   "bbr_id": "wilkido01",
+   "selections": 9,
+   "starts": 3,
+   "years": [
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994
+   ]
+  },
+  {
+   "bbr_id": "willibu01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1986
+   ]
+  },
+  {
+   "bbr_id": "willija01",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1998
+   ]
+  },
+  {
+   "bbr_id": "willike02",
+   "selections": 1,
+   "starts": 0,
+   "years": [
+    1992
+   ]
+  },
+  {
+   "bbr_id": "worthja01",
+   "selections": 7,
+   "starts": 3,
+   "years": [
+    1986,
+    1987,
+    1988,
+    1989,
+    1990,
+    1991,
+    1992
+   ]
+  }
+ ]
+}

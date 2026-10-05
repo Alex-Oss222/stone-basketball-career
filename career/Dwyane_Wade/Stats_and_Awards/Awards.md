@@ -10,9 +10,12 @@ Only earned annual awards announced on or before 2004-06-24 appear. Weekly, mont
 
 | Earned award | Season | Announced | Decision record |
 | --- | --- | --- | --- |
+| All-Star | 2003-04 | 2004-02-03 | [Source](League/2003-04/All_Star.md#all-stars) |
 | Rookie of the Year | 2003-04 | 2004-04-20 | [Source](League/2003-04/Season_Awards.md#rookie-of-the-year) |
 | All-NBA First Team | 2003-04 | 2004-04-25 | [Source](League/2003-04/Season_Awards.md#all-nba-teams) |
 | All-Rookie First Team | 2003-04 | 2004-04-27 | [Source](League/2003-04/Season_Awards.md#all-rookie-teams) |
+
+![All-Star](assets/annual_d1d9cae8cb68521d.svg)
 
 ![Rookie of the Year](assets/annual_b45c18f95ac84154.svg)
 

@@ -14,9 +14,11 @@
 <text x="796.25" y="103.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">3× Eastern Conference Player of</text>
 <text x="796.25" y="123.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">the Month</text>
 <rect x="957.5" y="76" width="302.5" height="62" rx="9" fill="#efbf58"/>
-<text x="1108.75" y="113.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">Rookie of the Year</text>
+<text x="1108.75" y="113.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">All-Star</text>
 <rect x="20.0" y="148" width="302.5" height="62" rx="9" fill="#efbf58"/>
-<text x="171.25" y="185.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">All-NBA First Team</text>
+<text x="171.25" y="185.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">Rookie of the Year</text>
 <rect x="332.5" y="148" width="302.5" height="62" rx="9" fill="#efbf58"/>
-<text x="483.75" y="185.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">All-Rookie First Team</text>
+<text x="483.75" y="185.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">All-NBA First Team</text>
+<rect x="645.0" y="148" width="302.5" height="62" rx="9" fill="#efbf58"/>
+<text x="796.25" y="185.0" font-family="sans-serif" font-size="18" fill="#221709" font-weight="700" text-anchor="middle">All-Rookie First Team</text>
 </svg>

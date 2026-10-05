@@ -1,0 +1,277 @@
+{
+ "schema_version": 1,
+ "kind": "all_star_calendar",
+ "season": "2003-04",
+ "researched": "2026-10-05",
+ "dates": {
+  "fan_ballot_close": {
+   "value": "2004-01-18",
+   "status": "sourced",
+   "sources": [
+    "http://insidehoops.com/all-star-reserves-2004.shtml"
+   ]
+  },
+  "starters_announced": {
+   "value": "2004-01-29",
+   "status": "unverified",
+   "sources": [
+    "https://www.nba.com/pistons/news/wallace_allstarstarter.html"
+   ],
+   "note": "from search summaries; the release itself was not loaded"
+  },
+  "coach_record_through": {
+   "value": "2004-02-01",
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2004_NBA_All-Star_Game",
+    "https://en.wikipedia.org/wiki/List_of_NBA_All-Star_Game_head_coaches",
+    "https://www.foxnews.com/sports/why-arent-the-coaches-with-the-nbas-best-records-coaching-the-all-star-game"
+   ],
+   "note": "best winning percentage in each conference through games of February 1 names the game's coaches"
+  },
+  "reserves_announced": {
+   "value": "2004-02-03",
+   "status": "sourced",
+   "sources": [
+    "http://insidehoops.com/all-star-reserves-2004.shtml"
+   ]
+  },
+  "rookie_challenge_announced": {
+   "value": "2004-02-05",
+   "status": "unverified",
+   "note": "the announcement date was not found; the rosters were public in the NBA's February 5 release, so that date bounds it"
+  },
+  "replacements_named": {
+   "value": "2004-02-13",
+   "status": "judgement",
+   "note": "the commissioner names injury replacements before the weekend; the simulation names them on the Friday the weekend opens, from closed results through the day before"
+  },
+  "rookie_challenge": {
+   "value": "2004-02-13",
+   "status": "sourced"
+  },
+  "saturday_contests": {
+   "value": "2004-02-14",
+   "status": "sourced"
+  },
+  "all_star_game": {
+   "value": "2004-02-15",
+   "status": "sourced",
+   "venue": "Staples Center, Los Angeles"
+  }
+ },
+ "shape": {
+  "starters": {
+   "G": 2,
+   "F": 2,
+   "C": 1
+  },
+  "reserves": {
+   "G": 2,
+   "F": 2,
+   "C": 1,
+   "any": 2
+  },
+  "roster": 12,
+  "rookie_challenge_roster": 9
+ },
+ "electorates": {
+  "starters": "fans (ballot plurality)",
+  "reserves": "the conference's head coaches, never their own players",
+  "replacements": "the Commissioner",
+  "rookie_challenge": "a panel of 11 broadcasters (former players and coaches)"
+ },
+ "previous_game_coaches": {
+  "value": {
+   "West": "Rick Adelman",
+   "East": "Isiah Thomas"
+  },
+  "status": "sourced",
+  "sources": [
+   "https://www.basketball-reference.com/allstar/NBA_2003.html"
+  ],
+  "note": "the Riley Rule: no coach coaches two All-Star Games in a row"
+ },
+ "research": {
+  "fan_ballot_open": {
+   "value": "2003-11-13",
+   "status": "sourced",
+   "sources": [
+    "http://insidehoops.com/all-star-reserves-2004.shtml"
+   ],
+   "note": "NBA release: balloting 'began on November 13, 2003 through January 18, 2004'; paper ballots in all arenas plus NBA.com/wireless/retail partners."
+  },
+  "fan_ballot_close": {
+   "value": "2004-01-18",
+   "status": "sourced",
+   "sources": [
+    "http://insidehoops.com/all-star-reserves-2004.shtml"
+   ],
+   "note": "Same release."
+  },
+  "starters_announced": {
+   "value": "2004-01-29",
+   "status": "unverified",
+   "sources": [
+    "https://www.nba.com/pistons/news/wallace_allstarstarter.html"
+   ],
+   "note": "Search-engine summaries of the NBA starters release give Jan 29, 2004 (Thursday); article body not retrievable to confirm."
+  },
+  "starter_shape_per_conference": {
+   "value": {
+    "guards": 2,
+    "forwards": 2,
+    "center": 1
+   },
+   "status": "sourced",
+   "sources": [
+    "http://insidehoops.com/all-star-reserves-2004.shtml",
+    "https://en.wikipedia.org/wiki/2004_NBA_All-Star_Game"
+   ],
+   "note": "Fan ballot elected 2 G, 2 F, 1 C per conference ('Balloting Program')."
+  },
+  "reserves": {
+   "value": {
+    "voters": "the 29 NBA head coaches, each voting within own conference",
+    "announced": "2004-02-03",
+    "shape_per_conference": {
+     "guards": 2,
+     "forwards": 2,
+     "center": 1,
+     "wild_cards_any_position": 2,
+     "reserves_total": 7
+    },
+    "roster_size_per_conference": 12,
+    "may_vote_own_players": false
+   },
+   "status": "sourced",
+   "sources": [
+    "http://insidehoops.com/all-star-reserves-2004.shtml"
+   ],
+   "note": "Verbatim: 'chosen by a vote of the 29 NBA head coaches ... seven players in their respective conferences - two guards, two forwards, one center and two players regardless of position. They were not permitted to vote for players from their own team.' Release dated Feb. 3, 2004."
+  },
+  "injury_replacement": {
+   "value": {
+    "replacement_named_by": "NBA Commissioner (David Stern)",
+    "replacement_starter_chosen_by": "conference All-Star head coach"
+   },
+   "status": "sourced",
+   "sources": [
+    "http://insidehoops.com/all-star-reserves-2004.shtml",
+    "https://en.wikipedia.org/wiki/2004_NBA_All-Star_Game"
+   ],
+   "note": "Commissioner rule is sourced verbatim. That the All-Star coach picks a replacement STARTER from his roster is long-standing practice but not confirmed in a 2004 source: treat that half as unverified."
+  },
+  "all_star_game": {
+   "value": {
+    "date": "2004-02-15",
+    "day": "Sunday",
+    "tipoff": "8 p.m. ET (TNT)",
+    "venue": "Staples Center, Los Angeles",
+    "edition": "53rd"
+   },
+   "status": "sourced",
+   "sources": [
+    "http://insidehoops.com/all-star-reserves-2004.shtml",
+    "https://en.wikipedia.org/wiki/2004_NBA_All-Star_Game"
+   ],
+   "note": ""
+  },
+  "coaches_rule": {
+   "value": {
+    "rule": "head coach of the team with the best winning percentage in each conference through games of 2004-02-01 (Sunday two weeks before the game)",
+    "repeat_restriction": "'Riley Rule' (from 1991 game): a coach may not coach consecutive All-Star Games; if the previous year's coach still has the best record, the coach with the next-best record coaches"
+   },
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2004_NBA_All-Star_Game",
+    "https://en.wikipedia.org/wiki/List_of_NBA_All-Star_Game_head_coaches",
+    "https://www.foxnews.com/sports/why-arent-the-coaches-with-the-nbas-best-records-coaching-the-all-star-game"
+   ],
+   "note": "Feb 1 cutoff from the 2004 game article (Wikipedia). Riley Rule in force in this era; tie-break procedure between equal records unverified. Coaches were named in Feb 3 release."
+  },
+  "rookie_challenge": {
+   "value": {
+    "name": "got milk? Rookie Challenge",
+    "date": "2004-02-13",
+    "day": "Friday",
+    "tipoff": "9 p.m. ET (TNT)",
+    "venue": "Staples Center",
+    "format": "Rookies vs Sophomores (5th year of this format)",
+    "roster_size_per_team": 9,
+    "selected_by": "panel of 11 former NBA players/coaches working as broadcasters (e.g. Walton, Greg Anthony, Doug Collins, Doc Rivers, Jack Ramsay)",
+    "game_rules": "two 20-minute halves; one full and one 20-second timeout per team per half; fouls counted but no foul-outs; team penalty after 10 team fouls or 2nd foul in last 2 minutes of each half; 2-minute overtime",
+    "coaches": "Rookies: Doug Collins (asst Byron Scott); Sophomores: Michael Cooper (asst Kareem Abdul-Jabbar)",
+    "mvp": "fans could vote via NBA.com/Verizon text toward MVP"
+   },
+   "status": "sourced",
+   "sources": [
+    "https://www.oursportscentral.com/services/releases/los-angeles-sparks-michael-cooper-to-coach-2004-got-milk-rookie-challenge/n-2999985",
+    "https://basketball.realgm.com/nba/allstar/rising_stars_challenge/rosters/2004"
+   ],
+   "note": "Selectors are a broadcaster panel per the NBA release of Feb 5, 2004 (NOT league assistant coaches, which is the later-era method). Roster announcement date not found: unverified (rosters were public before the Feb 5 release, likely late January)."
+  },
+  "rookie_challenge_rosters_announced": {
+   "value": null,
+   "status": "unverified",
+   "sources": [],
+   "note": "Could not locate the dated roster announcement; must be on/before 2004-02-05."
+  },
+  "all_star_mvp_voting": {
+   "value": "panel of media members votes immediately after the game; NBA.com fan vote also counted in 2004 (weight later stated as 25%)",
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/NBA_All-Star_Game_Most_Valuable_Player",
+    "http://insidehoops.com/all-star-reserves-2004.shtml"
+   ],
+   "note": "2004 release: 'NBA.com will provide basketball fans with the opportunity to have their vote count towards selecting the MVP'. Panel size and the exact 2004 fan weight unverified."
+  },
+  "saturday_contests": {
+   "value": {
+    "date": "2004-02-14",
+    "day": "Saturday",
+    "tipoff": "8 p.m. ET (TNT)",
+    "order": [
+     "Shooting Stars",
+     "Skills Challenge",
+     "Three-Point Shootout",
+     "Slam Dunk"
+    ],
+    "three_point_shootout": {
+     "field": 6,
+     "format": "25 balls, 5 racks of 5; 4 balls x1 point, money ball x2 (max 30); top 3 advance to final round",
+     "edition": "18th"
+    },
+    "slam_dunk": {
+     "field": 4,
+     "format": "two rounds, judges score each dunk out of 50 (two dunks in round one, top two to final)"
+    },
+    "skills_challenge": {
+     "field": 4,
+     "format": "timed obstacle course (dribble, passes, layups, jumpers); two rounds, top two times to final",
+     "first_year": "2003 (2004 was second edition)"
+    },
+    "shooting_stars": {
+     "field": "4 teams of 3 (current NBA player, WNBA player, retired NBA player), each team tied to an NBA city",
+     "format": "make one shot from each of 5 spots of increasing difficulty then a half-court shot; fastest time wins; one round",
+     "first_year": "2004 (debut, replaced 2Ball)"
+    },
+    "participant_selection": "invited by the league; participant announcement dates not found"
+   },
+   "status": "sourced",
+   "sources": [
+    "http://insidehoops.com/all-star-saturday-2004.shtml",
+    "https://www.oursportscentral.com/services/releases/los-angeles-sparks-michael-cooper-to-coach-2004-got-milk-rookie-challenge/n-2999985",
+    "https://en.wikipedia.org/wiki/NBA_All-Star_Weekend_Skills_Challenge",
+    "https://en.wikipedia.org/wiki/Three-Point_Contest"
+   ],
+   "note": "Field sizes and formats sourced from live event notes. How contestants were chosen (league invitation) and their announcement dates are unverified; an injury withdrawal in Skills Challenge was filled by a substitute named by the league."
+  },
+  "all_star_game_rules": {
+   "value": "Standard NBA rules: four 12-minute quarters, 5-minute overtime; no minimum-minutes or special scoring rules in 2004",
+   "status": "unverified",
+   "sources": [],
+   "note": "No 2004 source found stating deviations; special formats (target score, quarter-by-quarter) came much later (2020+). 12-player rosters per conference (sourced above)."
+  }
+ }
+}

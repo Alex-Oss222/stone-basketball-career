@@ -43,7 +43,8 @@ MIN_FIT_MINUTES = 500               # comparables: players with at least this ma
 HONOR_PREMIUM = {"Most Valuable Player": 0.30, "Finals MVP": 0.15, "All-NBA First Team": 0.25, "All-NBA Second Team": 0.15,
                  "All-NBA Third Team": 0.10, "Defensive Player of the Year": 0.10, "All-Defensive First Team": 0.05,
                  "All-Defensive Second Team": 0.03, "Rookie of the Year": 0.05, "Sixth Man of the Year": 0.05,
-                 "Most Improved Player": 0.05, "All-Rookie First Team": 0.02, "All-Rookie Second Team": 0.01}
+                 "Most Improved Player": 0.05, "All-Rookie First Team": 0.02, "All-Rookie Second Team": 0.01,
+                 "All-Star": 0.08}
 HONOR_CAP = 0.35
 SEASON_AWARDS_PATH = Path("career/Dwyane_Wade/Stats_and_Awards/League/2003-04/season_awards.json")
 
@@ -141,6 +142,12 @@ class Valuation:
             for player, name, _ in honors(d):
                 if by_name.get(player):
                     out.setdefault(by_name[player], []).append(name)
+        stars = path.with_name("all_star.json")                         # All-Star selections (runtime/all_star.py)
+        if stars.is_file():
+            for a in read(stars.relative_to(self.root), self.root).get("all_stars", []):
+                bbr = a.get("bbr_id") or by_name.get(a["player"])
+                if bbr and a["selected_on"] <= self.on:
+                    out.setdefault(bbr, []).append("All-Star")
         return out
 
     def honor_factor(self, bbr_id):

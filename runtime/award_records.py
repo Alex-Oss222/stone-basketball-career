@@ -43,8 +43,9 @@ def load_awards(player: Path, as_of: str) -> list[dict]:
 
 
 def honors_in_scope(awards, *, known_on, competition=None, season=None, start=None, end=None):
-    """File an honor by period end, but never show it before its announcement."""
-    return [a for a in awards if a["awarded_on"] <= known_on
+    """File an honor by period end, but never show it before its announcement, nor before the career recorded it
+    (`recorded_on`, set only when an honor was decided after its date: the 2004 All-Star selections)."""
+    return [a for a in awards if max(a["awarded_on"], a.get("recorded_on") or "") <= known_on
             and (competition is None or a["competition"] == competition)
             and (season is None or a["season"] == season)
             and (start is None or a["period_end"] >= start)

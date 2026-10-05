@@ -86,6 +86,20 @@
       "source": "Stats_and_Awards/League/2003-04/01_January/League_Awards.md#rookie-of-the-month"
     },
     {
+      "id": "2003-04-all-star",
+      "name": "All-Star",
+      "short_name": "All-Star",
+      "status": "earned",
+      "competition": "regular",
+      "season": "2003-04",
+      "period_start": "2003-10-28",
+      "period_end": "2004-02-03",
+      "awarded_on": "2004-02-03",
+      "role": "reserve",
+      "source": "Stats_and_Awards/League/2003-04/All_Star.md#all-stars",
+      "recorded_on": "2004-06-24"
+    },
+    {
       "id": "2003-04-rookie_of_month-2004-02-01-east",
       "name": "Eastern Conference Rookie of the Month",
       "short_name": "East ROM",

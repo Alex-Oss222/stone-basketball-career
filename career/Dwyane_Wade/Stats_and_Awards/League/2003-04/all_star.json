@@ -1,0 +1,1381 @@
+{
+ "schema_version": 1,
+ "season": "2003-04",
+ "kind": "all_star",
+ "rule": "The calendar, roster shape and electorates are researched per season (`library/<year>/league/nba_<season>_all_star.json`,\nread through `runtime/seasons.py`); no real selection, vote count or roster is read. Every step uses only results closed\nby its date and applies the same rule to every player; Wade gets no bonus.\n\nStarters (fan ballot, closes on the ballot date, announced on the starters date). Fans vote two guards, two forwards\nand one center in each conference. The fan electorate is a deterministic panel, like the season-award voters\n(`runtime/season_awards.py`): fans differ only in how much they weigh two criteria, spread evenly over a fixed range,\nso no vote is chance. Criteria, each a z-score among the conference's eligible players:\n  production = mean z of Game Score per game and points per game, each times availability (games / club games);\n  reputation = mean z of past All-Star selections (each counted at 0.8 to the power of its age in seasons, from\n               `nba_all_star_history_1985_2003.json`, then simulated seasons' selections) and the prior season's Game\n               Score per game (real before the career began, simulated after; none counts as zero).\n  fan lens t (weight on reputation): 0.30 to 0.70. Fans reward names, so reputation carries as much as form; a rookie\n  has none (judgement, documented in docs/player_statistics.md).\nEligible: on a club in the conference on the ballot date, with games in at least a third of his club's games.\nThe most ballots win at each position; summed fan score breaks a ballot tie.\n\nReserves (the conference's head coaches, announced on the reserves date, results through the day before). Seven per\nconference: two guards, two forwards, one center and two at any position, never the elected starters. A coach never\nvotes for his own players. Criteria as the MVP vote: production (above) and club win share; coach lens 0.20 to 0.50.\nA coach's ballot is his seven best by his lens in the shape; the most ballots win, summed coach score breaking ties,\npositions filled first, then the two wild cards.\n\nInjury replacements (the Commissioner, on the replacements date, results through the day before). A selected player\nwho played in none of his club's last two games is unavailable; the Commissioner names the coaches' next player in\nhis conference at his position (any position when none is left there). A replaced starter's place in the opening five\ngoes to the selected reserve with the most coach ballots at his position (the coach's choice; the 2004 practice is\nunverified).\n\nGame coaches: the head coach of each conference's best winning percentage through the coach-record date, unless he\ncoached the previous All-Star Game (the Riley Rule), then the next. An exact tie in percentage goes to more wins, then\nto an engine draw.\n\nRookie Challenge (announced on its date, results through the day before): nine first-season players against nine\nsecond-season players, picked by a broadcaster panel. The panel is modelled as the ROY score (production and club\nwin share, lens 0.0 to 0.25, eleven panelists) in the reserves' shape: two guards, two forwards, one center, then the\nbest four at any position. Eligible: games in at least a third of his club's games.\n\nThe record is written once to `Stats_and_Awards/League/<season>/all_star.json` and never recomputed. An All-Star\nselection for Wade is added to `awards.json` as \"All-Star\", the exact name `runtime/standing.py` reads.",
+ "calendar": "library/2003/league/nba_2003_04_all_star.json",
+ "steps": [
+  {
+   "step": "starters",
+   "announced_on": "2004-01-29",
+   "evidence_through": "2004-01-18",
+   "electorate": "fans (ballot plurality)",
+   "panel": 101,
+   "lens": [
+    0.3,
+    0.7
+   ],
+   "conferences": {
+    "East": {
+     "starters": [
+      {
+       "player": "Tracy McGrady",
+       "bbr_id": "mcgratr01",
+       "team": "Orlando Magic",
+       "position": "G",
+       "games": 35,
+       "club_games": 41,
+       "pts": 24.4,
+       "reb": 6.2,
+       "ast": 5.3,
+       "game_score": 18.74,
+       "club_pct": 0.268,
+       "ballots": 101,
+       "past_all_star_weight": 2.44,
+       "prior_game_score": 24.0
+      },
+      {
+       "player": "Jermaine O'Neal",
+       "bbr_id": "onealje01",
+       "team": "Indiana Pacers",
+       "position": "F",
+       "games": 39,
+       "club_games": 42,
+       "pts": 18.5,
+       "reb": 9.2,
+       "ast": 1.7,
+       "game_score": 12.97,
+       "club_pct": 0.619,
+       "ballots": 101,
+       "past_all_star_weight": 1.8,
+       "prior_game_score": 16.04
+      },
+      {
+       "player": "Shareef Abdur-Rahim",
+       "bbr_id": "abdursh01",
+       "team": "Atlanta Hawks",
+       "position": "F",
+       "games": 41,
+       "club_games": 41,
+       "pts": 18.1,
+       "reb": 8.8,
+       "ast": 2.4,
+       "game_score": 13.12,
+       "club_pct": 0.366,
+       "ballots": 101,
+       "past_all_star_weight": 0.8,
+       "prior_game_score": 15.06
+      },
+      {
+       "player": "Jason Kidd",
+       "bbr_id": "kiddja01",
+       "team": "New Jersey Nets",
+       "position": "G",
+       "games": 32,
+       "club_games": 38,
+       "pts": 16.8,
+       "reb": 7.9,
+       "ast": 9.0,
+       "game_score": 14.95,
+       "club_pct": 0.711,
+       "ballots": 76,
+       "past_all_star_weight": 3.49,
+       "prior_game_score": 16.84
+      },
+      {
+       "player": "Ben Wallace",
+       "bbr_id": "wallabe01",
+       "team": "Detroit Pistons",
+       "position": "C",
+       "games": 40,
+       "club_games": 41,
+       "pts": 11.5,
+       "reb": 11.8,
+       "ast": 2.3,
+       "game_score": 13.0,
+       "club_pct": 0.683,
+       "ballots": 60,
+       "past_all_star_weight": 1.0,
+       "prior_game_score": 12.15
+      }
+     ],
+     "leading_vote_getters": [
+      {
+       "player": "Tracy McGrady",
+       "position": "G",
+       "team": "Orlando Magic",
+       "ballots": 101
+      },
+      {
+       "player": "Jermaine O'Neal",
+       "position": "F",
+       "team": "Indiana Pacers",
+       "ballots": 101
+      },
+      {
+       "player": "Shareef Abdur-Rahim",
+       "position": "F",
+       "team": "Atlanta Hawks",
+       "ballots": 101
+      },
+      {
+       "player": "Jason Kidd",
+       "position": "G",
+       "team": "New Jersey Nets",
+       "ballots": 76
+      },
+      {
+       "player": "Ben Wallace",
+       "position": "C",
+       "team": "Detroit Pistons",
+       "ballots": 60
+      },
+      {
+       "player": "Dikembe Mutombo",
+       "position": "C",
+       "team": "New York Knicks",
+       "ballots": 41
+      },
+      {
+       "player": "Paul Pierce",
+       "position": "G",
+       "team": "Boston Celtics",
+       "ballots": 25
+      }
+     ]
+    },
+    "West": {
+     "starters": [
+      {
+       "player": "Kevin Garnett",
+       "bbr_id": "garneke01",
+       "team": "Minnesota Timberwolves",
+       "position": "F",
+       "games": 38,
+       "club_games": 38,
+       "pts": 23.1,
+       "reb": 13.2,
+       "ast": 5.3,
+       "game_score": 22.66,
+       "club_pct": 0.763,
+       "ballots": 101,
+       "past_all_star_weight": 3.54,
+       "prior_game_score": 21.5
+      },
+      {
+       "player": "Shaquille O'Neal",
+       "bbr_id": "onealsh01",
+       "team": "Los Angeles Lakers",
+       "position": "C",
+       "games": 32,
+       "club_games": 37,
+       "pts": 20.1,
+       "reb": 10.1,
+       "ast": 2.7,
+       "game_score": 16.63,
+       "club_pct": 0.676,
+       "ballots": 101,
+       "past_all_star_weight": 4.16,
+       "prior_game_score": 22.3
+      },
+      {
+       "player": "Tim Duncan",
+       "bbr_id": "duncati01",
+       "team": "San Antonio Spurs",
+       "position": "F",
+       "games": 35,
+       "club_games": 41,
+       "pts": 22.2,
+       "reb": 11.0,
+       "ast": 2.9,
+       "game_score": 18.21,
+       "club_pct": 0.732,
+       "ballots": 101,
+       "past_all_star_weight": 3.28,
+       "prior_game_score": 20.24
+      },
+      {
+       "player": "Gary Payton",
+       "bbr_id": "paytoga01",
+       "team": "Los Angeles Lakers",
+       "position": "G",
+       "games": 37,
+       "club_games": 37,
+       "pts": 16.1,
+       "reb": 4.2,
+       "ast": 6.0,
+       "game_score": 12.49,
+       "club_pct": 0.676,
+       "ballots": 101,
+       "past_all_star_weight": 4.05,
+       "prior_game_score": 16.46
+      },
+      {
+       "player": "Kobe Bryant",
+       "bbr_id": "bryanko01",
+       "team": "Los Angeles Lakers",
+       "position": "G",
+       "games": 19,
+       "club_games": 37,
+       "pts": 24.3,
+       "reb": 6.1,
+       "ast": 4.4,
+       "game_score": 19.16,
+       "club_pct": 0.676,
+       "ballots": 91,
+       "past_all_star_weight": 3.28,
+       "prior_game_score": 22.17
+      }
+     ],
+     "leading_vote_getters": [
+      {
+       "player": "Kevin Garnett",
+       "position": "F",
+       "team": "Minnesota Timberwolves",
+       "ballots": 101
+      },
+      {
+       "player": "Shaquille O'Neal",
+       "position": "C",
+       "team": "Los Angeles Lakers",
+       "ballots": 101
+      },
+      {
+       "player": "Tim Duncan",
+       "position": "F",
+       "team": "San Antonio Spurs",
+       "ballots": 101
+      },
+      {
+       "player": "Gary Payton",
+       "position": "G",
+       "team": "Los Angeles Lakers",
+       "ballots": 101
+      },
+      {
+       "player": "Kobe Bryant",
+       "position": "G",
+       "team": "Los Angeles Lakers",
+       "ballots": 91
+      },
+      {
+       "player": "Steve Nash",
+       "position": "G",
+       "team": "Dallas Mavericks",
+       "ballots": 10
+      }
+     ]
+    }
+   }
+  },
+  {
+   "step": "coaches",
+   "announced_on": "2004-02-02",
+   "evidence_through": "2004-02-01",
+   "riley_rule_barred": [
+    "Isiah Thomas",
+    "Rick Adelman"
+   ],
+   "conferences": {
+    "East": {
+     "coach": "Lawrence Frank",
+     "team": "New Jersey Nets",
+     "record": "31-14",
+     "standings": [
+      {
+       "team": "New Jersey Nets",
+       "coach": "Lawrence Frank",
+       "wins": 31,
+       "losses": 14,
+       "pct": 0.689,
+       "barred": false
+      },
+      {
+       "team": "Detroit Pistons",
+       "coach": "Larry Brown",
+       "wins": 32,
+       "losses": 16,
+       "pct": 0.667,
+       "barred": false
+      },
+      {
+       "team": "Indiana Pacers",
+       "coach": "Rick Carlisle",
+       "wins": 31,
+       "losses": 17,
+       "pct": 0.646,
+       "barred": false
+      },
+      {
+       "team": "Milwaukee Bucks",
+       "coach": "Terry Porter",
+       "wins": 27,
+       "losses": 20,
+       "pct": 0.574,
+       "barred": false
+      },
+      {
+       "team": "Miami Heat",
+       "coach": "Erik Spoelstra",
+       "wins": 27,
+       "losses": 21,
+       "pct": 0.562,
+       "barred": false
+      }
+     ]
+    },
+    "West": {
+     "coach": "Flip Saunders",
+     "team": "Minnesota Timberwolves",
+     "record": "35-11",
+     "standings": [
+      {
+       "team": "Minnesota Timberwolves",
+       "coach": "Flip Saunders",
+       "wins": 35,
+       "losses": 11,
+       "pct": 0.761,
+       "barred": false
+      },
+      {
+       "team": "San Antonio Spurs",
+       "coach": "Gregg Popovich",
+       "wins": 36,
+       "losses": 13,
+       "pct": 0.735,
+       "barred": false
+      },
+      {
+       "team": "Sacramento Kings",
+       "coach": "Rick Adelman",
+       "wins": 31,
+       "losses": 14,
+       "pct": 0.689,
+       "barred": true
+      },
+      {
+       "team": "Dallas Mavericks",
+       "coach": "Don Nelson",
+       "wins": 32,
+       "losses": 15,
+       "pct": 0.681,
+       "barred": false
+      },
+      {
+       "team": "Los Angeles Lakers",
+       "coach": "Phil Jackson",
+       "wins": 29,
+       "losses": 15,
+       "pct": 0.659,
+       "barred": false
+      }
+     ]
+    }
+   }
+  },
+  {
+   "step": "reserves",
+   "announced_on": "2004-02-03",
+   "evidence_through": "2004-02-02",
+   "electorate": "the conference's head coaches, never their own players",
+   "lens": [
+    0.2,
+    0.5
+   ],
+   "conferences": {
+    "East": {
+     "reserves": [
+      {
+       "player": "Richard Jefferson",
+       "bbr_id": "jefferi01",
+       "team": "New Jersey Nets",
+       "position": "F",
+       "games": 46,
+       "club_games": 46,
+       "pts": 18.9,
+       "reb": 5.6,
+       "ast": 3.9,
+       "game_score": 14.47,
+       "club_pct": 0.696,
+       "ballots": 14
+      },
+      {
+       "player": "Michael Redd",
+       "bbr_id": "reddmi01",
+       "team": "Milwaukee Bucks",
+       "position": "G",
+       "games": 47,
+       "club_games": 47,
+       "pts": 20.7,
+       "reb": 5.8,
+       "ast": 2.5,
+       "game_score": 14.37,
+       "club_pct": 0.574,
+       "ballots": 14
+      },
+      {
+       "player": "Dwyane Wade",
+       "bbr_id": "wadedw01",
+       "team": "Miami Heat",
+       "position": "G",
+       "games": 49,
+       "club_games": 49,
+       "pts": 17.5,
+       "reb": 4.8,
+       "ast": 4.7,
+       "game_score": 16.76,
+       "club_pct": 0.571,
+       "ballots": 14
+      },
+      {
+       "player": "Jamaal Magloire",
+       "bbr_id": "magloja01",
+       "team": "New Orleans Hornets",
+       "position": "C",
+       "games": 48,
+       "club_games": 48,
+       "pts": 13.2,
+       "reb": 9.3,
+       "ast": 1.1,
+       "game_score": 10.03,
+       "club_pct": 0.521,
+       "ballots": 11
+      },
+      {
+       "player": "Ron Artest",
+       "bbr_id": "artesro01",
+       "team": "Indiana Pacers",
+       "position": "F",
+       "games": 40,
+       "club_games": 49,
+       "pts": 17.8,
+       "reb": 5.5,
+       "ast": 3.9,
+       "game_score": 14.32,
+       "club_pct": 0.653,
+       "ballots": 10
+      },
+      {
+       "player": "Kerry Kittles",
+       "bbr_id": "kittlke01",
+       "team": "New Jersey Nets",
+       "position": "G",
+       "games": 46,
+       "club_games": 46,
+       "pts": 15.2,
+       "reb": 4.2,
+       "ast": 2.9,
+       "game_score": 12.19,
+       "club_pct": 0.696,
+       "ballots": 13
+      },
+      {
+       "player": "Chauncey Billups",
+       "bbr_id": "billuch01",
+       "team": "Detroit Pistons",
+       "position": "G",
+       "games": 46,
+       "club_games": 49,
+       "pts": 17.5,
+       "reb": 4.5,
+       "ast": 4.8,
+       "game_score": 12.84,
+       "club_pct": 0.653,
+       "ballots": 11
+      }
+     ],
+     "coach_order": [
+      {
+       "player": "Richard Jefferson",
+       "position": "F",
+       "team": "New Jersey Nets",
+       "ballots": 14
+      },
+      {
+       "player": "Michael Redd",
+       "position": "G",
+       "team": "Milwaukee Bucks",
+       "ballots": 14
+      },
+      {
+       "player": "Dwyane Wade",
+       "position": "G",
+       "team": "Miami Heat",
+       "ballots": 14
+      },
+      {
+       "player": "Kerry Kittles",
+       "position": "G",
+       "team": "New Jersey Nets",
+       "ballots": 13
+      },
+      {
+       "player": "Chauncey Billups",
+       "position": "G",
+       "team": "Detroit Pistons",
+       "ballots": 11
+      },
+      {
+       "player": "Jamaal Magloire",
+       "position": "C",
+       "team": "New Orleans Hornets",
+       "ballots": 11
+      },
+      {
+       "player": "Ron Artest",
+       "position": "F",
+       "team": "Indiana Pacers",
+       "ballots": 10
+      },
+      {
+       "player": "Paul Pierce",
+       "position": "G",
+       "team": "Boston Celtics",
+       "ballots": 6
+      },
+      {
+       "player": "Kenyon Martin",
+       "position": "F",
+       "team": "New Jersey Nets",
+       "ballots": 4
+      },
+      {
+       "player": "Jeff Foster",
+       "position": "C",
+       "team": "Indiana Pacers",
+       "ballots": 4
+      },
+      {
+       "player": "LeBron James",
+       "position": "F",
+       "team": "Cleveland Cavaliers",
+       "ballots": 2
+      },
+      {
+       "player": "Jamal Crawford",
+       "position": "G",
+       "team": "Chicago Bulls",
+       "ballots": 1
+      },
+      {
+       "player": "Desmond Mason",
+       "position": "F",
+       "team": "Milwaukee Bucks",
+       "ballots": 1
+      }
+     ],
+     "voters": [
+      {
+       "coach": "Eddie Jordan",
+       "team": "Washington Wizards"
+      },
+      {
+       "coach": "Erik Spoelstra",
+       "team": "Miami Heat"
+      },
+      {
+       "coach": "John Carroll",
+       "team": "Boston Celtics"
+      },
+      {
+       "coach": "Johnny Davis",
+       "team": "Orlando Magic"
+      },
+      {
+       "coach": "Kevin O'Neill",
+       "team": "Toronto Raptors"
+      },
+      {
+       "coach": "Larry Brown",
+       "team": "Detroit Pistons"
+      },
+      {
+       "coach": "Lawrence Frank",
+       "team": "New Jersey Nets"
+      },
+      {
+       "coach": "Lenny Wilkens",
+       "team": "New York Knicks"
+      },
+      {
+       "coach": "Paul Silas",
+       "team": "Cleveland Cavaliers"
+      },
+      {
+       "coach": "Randy Ayers",
+       "team": "Philadelphia 76ers"
+      },
+      {
+       "coach": "Rick Carlisle",
+       "team": "Indiana Pacers"
+      },
+      {
+       "coach": "Scott Skiles",
+       "team": "Chicago Bulls"
+      },
+      {
+       "coach": "Terry Porter",
+       "team": "Milwaukee Bucks"
+      },
+      {
+       "coach": "Terry Stotts",
+       "team": "Atlanta Hawks"
+      },
+      {
+       "coach": "Tim Floyd",
+       "team": "New Orleans Hornets"
+      }
+     ]
+    },
+    "West": {
+     "reserves": [
+      {
+       "player": "Peja Stojakovic",
+       "bbr_id": "stojape01",
+       "team": "Sacramento Kings",
+       "position": "F",
+       "games": 44,
+       "club_games": 45,
+       "pts": 23.6,
+       "reb": 6.8,
+       "ast": 2.2,
+       "game_score": 17.96,
+       "club_pct": 0.689,
+       "ballots": 13
+      },
+      {
+       "player": "Sam Cassell",
+       "bbr_id": "cassesa01",
+       "team": "Minnesota Timberwolves",
+       "position": "G",
+       "games": 45,
+       "club_games": 46,
+       "pts": 21.7,
+       "reb": 3.5,
+       "ast": 6.9,
+       "game_score": 16.93,
+       "club_pct": 0.761,
+       "ballots": 13
+      },
+      {
+       "player": "Latrell Sprewell",
+       "bbr_id": "sprewla01",
+       "team": "Minnesota Timberwolves",
+       "position": "F",
+       "games": 46,
+       "club_games": 46,
+       "pts": 18.2,
+       "reb": 4.4,
+       "ast": 4.3,
+       "game_score": 12.35,
+       "club_pct": 0.761,
+       "ballots": 13
+      },
+      {
+       "player": "Mike Bibby",
+       "bbr_id": "bibbymi01",
+       "team": "Sacramento Kings",
+       "position": "G",
+       "games": 45,
+       "club_games": 45,
+       "pts": 16.9,
+       "reb": 4.2,
+       "ast": 6.0,
+       "game_score": 13.22,
+       "club_pct": 0.689,
+       "ballots": 13
+      },
+      {
+       "player": "Vlade Divac",
+       "bbr_id": "divacvl01",
+       "team": "Sacramento Kings",
+       "position": "C",
+       "games": 45,
+       "club_games": 45,
+       "pts": 12.3,
+       "reb": 5.7,
+       "ast": 5.4,
+       "game_score": 11.22,
+       "club_pct": 0.689,
+       "ballots": 13
+      },
+      {
+       "player": "Dirk Nowitzki",
+       "bbr_id": "nowitdi01",
+       "team": "Dallas Mavericks",
+       "position": "F",
+       "games": 46,
+       "club_games": 47,
+       "pts": 18.2,
+       "reb": 7.2,
+       "ast": 2.8,
+       "game_score": 12.76,
+       "club_pct": 0.681,
+       "ballots": 13
+      },
+      {
+       "player": "Steve Nash",
+       "bbr_id": "nashst01",
+       "team": "Dallas Mavericks",
+       "position": "G",
+       "games": 44,
+       "club_games": 47,
+       "pts": 16.7,
+       "reb": 3.1,
+       "ast": 7.5,
+       "game_score": 14.72,
+       "club_pct": 0.681,
+       "ballots": 11
+      }
+     ],
+     "coach_order": [
+      {
+       "player": "Peja Stojakovic",
+       "position": "F",
+       "team": "Sacramento Kings",
+       "ballots": 13
+      },
+      {
+       "player": "Sam Cassell",
+       "position": "G",
+       "team": "Minnesota Timberwolves",
+       "ballots": 13
+      },
+      {
+       "player": "Latrell Sprewell",
+       "position": "F",
+       "team": "Minnesota Timberwolves",
+       "ballots": 13
+      },
+      {
+       "player": "Mike Bibby",
+       "position": "G",
+       "team": "Sacramento Kings",
+       "ballots": 13
+      },
+      {
+       "player": "Dirk Nowitzki",
+       "position": "F",
+       "team": "Dallas Mavericks",
+       "ballots": 13
+      },
+      {
+       "player": "Vlade Divac",
+       "position": "C",
+       "team": "Sacramento Kings",
+       "ballots": 13
+      },
+      {
+       "player": "Steve Nash",
+       "position": "G",
+       "team": "Dallas Mavericks",
+       "ballots": 11
+      },
+      {
+       "player": "Zach Randolph",
+       "position": "F",
+       "team": "Portland Trail Blazers",
+       "ballots": 3
+      },
+      {
+       "player": "Tony Parker",
+       "position": "G",
+       "team": "San Antonio Spurs",
+       "ballots": 2
+      },
+      {
+       "player": "Andre Miller",
+       "position": "G",
+       "team": "Denver Nuggets",
+       "ballots": 2
+      },
+      {
+       "player": "Manu Ginobili",
+       "position": "G",
+       "team": "San Antonio Spurs",
+       "ballots": 1
+      },
+      {
+       "player": "Rasho Nesterovic",
+       "position": "C",
+       "team": "San Antonio Spurs",
+       "ballots": 1
+      }
+     ],
+     "voters": [
+      {
+       "coach": "Don Nelson",
+       "team": "Dallas Mavericks"
+      },
+      {
+       "coach": "Eric Musselman",
+       "team": "Golden State Warriors"
+      },
+      {
+       "coach": "Flip Saunders",
+       "team": "Minnesota Timberwolves"
+      },
+      {
+       "coach": "Gregg Popovich",
+       "team": "San Antonio Spurs"
+      },
+      {
+       "coach": "Hubie Brown",
+       "team": "Memphis Grizzlies"
+      },
+      {
+       "coach": "Jeff Bzdelik",
+       "team": "Denver Nuggets"
+      },
+      {
+       "coach": "Jeff Van Gundy",
+       "team": "Houston Rockets"
+      },
+      {
+       "coach": "Jerry Sloan",
+       "team": "Utah Jazz"
+      },
+      {
+       "coach": "Maurice Cheeks",
+       "team": "Portland Trail Blazers"
+      },
+      {
+       "coach": "Mike D'Antoni",
+       "team": "Phoenix Suns"
+      },
+      {
+       "coach": "Mike Dunleavy",
+       "team": "Los Angeles Clippers"
+      },
+      {
+       "coach": "Nate McMillan",
+       "team": "Seattle SuperSonics"
+      },
+      {
+       "coach": "Phil Jackson",
+       "team": "Los Angeles Lakers"
+      },
+      {
+       "coach": "Rick Adelman",
+       "team": "Sacramento Kings"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "step": "rookie_challenge",
+   "announced_on": "2004-02-05",
+   "evidence_through": "2004-02-04",
+   "electorate": "a panel of 11 broadcasters (former players and coaches)",
+   "panel": 11,
+   "lens": [
+    0.0,
+    0.25
+   ],
+   "game_date": "2004-02-13",
+   "teams": {
+    "Rookies": [
+     {
+      "player": "Dwyane Wade",
+      "bbr_id": "wadedw01",
+      "team": "Miami Heat",
+      "position": "G",
+      "games": 50,
+      "club_games": 50,
+      "pts": 17.6,
+      "reb": 4.7,
+      "ast": 4.7,
+      "game_score": 16.79,
+      "club_pct": 0.58,
+      "ballots": 11
+     },
+     {
+      "player": "LeBron James",
+      "bbr_id": "jamesle01",
+      "team": "Cleveland Cavaliers",
+      "position": "F",
+      "games": 46,
+      "club_games": 49,
+      "pts": 20.9,
+      "reb": 5.0,
+      "ast": 5.5,
+      "game_score": 12.81,
+      "club_pct": 0.408,
+      "ballots": 11
+     },
+     {
+      "player": "Carmelo Anthony",
+      "bbr_id": "anthoca01",
+      "team": "Denver Nuggets",
+      "position": "F",
+      "games": 50,
+      "club_games": 50,
+      "pts": 18.1,
+      "reb": 6.8,
+      "ast": 3.0,
+      "game_score": 11.55,
+      "club_pct": 0.58,
+      "ballots": 11
+     },
+     {
+      "player": "Kirk Hinrich",
+      "bbr_id": "hinriki01",
+      "team": "Chicago Bulls",
+      "position": "G",
+      "games": 48,
+      "club_games": 50,
+      "pts": 12.8,
+      "reb": 4.2,
+      "ast": 6.7,
+      "game_score": 10.88,
+      "club_pct": 0.44,
+      "ballots": 11
+     },
+     {
+      "player": "Chris Kaman",
+      "bbr_id": "kamanch01",
+      "team": "Los Angeles Clippers",
+      "position": "C",
+      "games": 47,
+      "club_games": 47,
+      "pts": 7.0,
+      "reb": 4.7,
+      "ast": 0.9,
+      "game_score": 4.22,
+      "club_pct": 0.255,
+      "ballots": 9
+     },
+     {
+      "player": "Chris Bosh",
+      "bbr_id": "boshch01",
+      "team": "Toronto Raptors",
+      "position": "F",
+      "games": 42,
+      "club_games": 47,
+      "pts": 13.7,
+      "reb": 7.8,
+      "ast": 1.6,
+      "game_score": 11.04,
+      "club_pct": 0.468,
+      "ballots": 11
+     },
+     {
+      "player": "Josh Howard",
+      "bbr_id": "howarjo01",
+      "team": "Dallas Mavericks",
+      "position": "F",
+      "games": 46,
+      "club_games": 49,
+      "pts": 10.3,
+      "reb": 5.7,
+      "ast": 1.3,
+      "game_score": 8.6,
+      "club_pct": 0.653,
+      "ballots": 11
+     },
+     {
+      "player": "Marquis Daniels",
+      "bbr_id": "daniema01",
+      "team": "Dallas Mavericks",
+      "position": "G",
+      "games": 35,
+      "club_games": 49,
+      "pts": 7.5,
+      "reb": 3.4,
+      "ast": 2.3,
+      "game_score": 6.77,
+      "club_pct": 0.653,
+      "ballots": 7
+     },
+     {
+      "player": "T.J. Ford",
+      "bbr_id": "fordtj01",
+      "team": "Milwaukee Bucks",
+      "position": "G",
+      "games": 32,
+      "club_games": 48,
+      "pts": 8.3,
+      "reb": 3.8,
+      "ast": 5.9,
+      "game_score": 7.47,
+      "club_pct": 0.583,
+      "ballots": 6
+     }
+    ],
+    "Sophomores": [
+     {
+      "player": "Manu Ginobili",
+      "bbr_id": "ginobma01",
+      "team": "San Antonio Spurs",
+      "position": "G",
+      "games": 50,
+      "club_games": 50,
+      "pts": 13.8,
+      "reb": 5.1,
+      "ast": 3.7,
+      "game_score": 11.3,
+      "club_pct": 0.74,
+      "ballots": 11
+     },
+     {
+      "player": "Yao Ming",
+      "bbr_id": "mingya01",
+      "team": "Houston Rockets",
+      "position": "C",
+      "games": 48,
+      "club_games": 48,
+      "pts": 14.3,
+      "reb": 8.9,
+      "ast": 1.9,
+      "game_score": 10.95,
+      "club_pct": 0.5,
+      "ballots": 11
+     },
+     {
+      "player": "Carlos Boozer",
+      "bbr_id": "boozeca01",
+      "team": "Cleveland Cavaliers",
+      "position": "F",
+      "games": 43,
+      "club_games": 49,
+      "pts": 14.5,
+      "reb": 10.1,
+      "ast": 2.2,
+      "game_score": 13.04,
+      "club_pct": 0.408,
+      "ballots": 11
+     },
+     {
+      "player": "Amar'e Stoudemire",
+      "bbr_id": "stoudam01",
+      "team": "Phoenix Suns",
+      "position": "F",
+      "games": 44,
+      "club_games": 51,
+      "pts": 16.2,
+      "reb": 8.5,
+      "ast": 1.8,
+      "game_score": 12.17,
+      "club_pct": 0.353,
+      "ballots": 11
+     },
+     {
+      "player": "Ronald Murray",
+      "bbr_id": "murraro01",
+      "team": "Seattle SuperSonics",
+      "position": "G",
+      "games": 47,
+      "club_games": 47,
+      "pts": 12.3,
+      "reb": 2.7,
+      "ast": 2.5,
+      "game_score": 7.51,
+      "club_pct": 0.532,
+      "ballots": 11
+     },
+     {
+      "player": "Tayshaun Prince",
+      "bbr_id": "princta01",
+      "team": "Detroit Pistons",
+      "position": "F",
+      "games": 50,
+      "club_games": 50,
+      "pts": 12.0,
+      "reb": 5.2,
+      "ast": 1.8,
+      "game_score": 9.01,
+      "club_pct": 0.66,
+      "ballots": 11
+     },
+     {
+      "player": "Nene",
+      "bbr_id": "hilarne01",
+      "team": "Denver Nuggets",
+      "position": "C",
+      "games": 50,
+      "club_games": 50,
+      "pts": 11.8,
+      "reb": 6.7,
+      "ast": 2.4,
+      "game_score": 9.7,
+      "club_pct": 0.58,
+      "ballots": 11
+     },
+     {
+      "player": "Mike Dunleavy",
+      "bbr_id": "dunlemi02",
+      "team": "Golden State Warriors",
+      "position": "F",
+      "games": 43,
+      "club_games": 47,
+      "pts": 12.7,
+      "reb": 6.4,
+      "ast": 3.0,
+      "game_score": 9.23,
+      "club_pct": 0.553,
+      "ballots": 11
+     },
+     {
+      "player": "Jiri Welsch",
+      "bbr_id": "welscji01",
+      "team": "Boston Celtics",
+      "position": "F",
+      "games": 50,
+      "club_games": 50,
+      "pts": 10.8,
+      "reb": 4.9,
+      "ast": 2.8,
+      "game_score": 7.65,
+      "club_pct": 0.38,
+      "ballots": 5
+     }
+    ]
+   }
+  },
+  {
+   "step": "replacements",
+   "announced_on": "2004-02-13",
+   "evidence_through": "2004-02-12",
+   "electorate": "the Commissioner",
+   "conferences": {
+    "East": [],
+    "West": []
+   }
+  }
+ ],
+ "all_stars": [
+  {
+   "player": "Tracy McGrady",
+   "bbr_id": "mcgratr01",
+   "team": "Orlando Magic",
+   "conference": "East",
+   "role": "starter",
+   "selected_on": "2004-01-29"
+  },
+  {
+   "player": "Jermaine O'Neal",
+   "bbr_id": "onealje01",
+   "team": "Indiana Pacers",
+   "conference": "East",
+   "role": "starter",
+   "selected_on": "2004-01-29"
+  },
+  {
+   "player": "Shareef Abdur-Rahim",
+   "bbr_id": "abdursh01",
+   "team": "Atlanta Hawks",
+   "conference": "East",
+   "role": "starter",
+   "selected_on": "2004-01-29"
+  },
+  {
+   "player": "Jason Kidd",
+   "bbr_id": "kiddja01",
+   "team": "New Jersey Nets",
+   "conference": "East",
+   "role": "starter",
+   "selected_on": "2004-01-29"
+  },
+  {
+   "player": "Ben Wallace",
+   "bbr_id": "wallabe01",
+   "team": "Detroit Pistons",
+   "conference": "East",
+   "role": "starter",
+   "selected_on": "2004-01-29"
+  },
+  {
+   "player": "Richard Jefferson",
+   "bbr_id": "jefferi01",
+   "team": "New Jersey Nets",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Michael Redd",
+   "bbr_id": "reddmi01",
+   "team": "Milwaukee Bucks",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Dwyane Wade",
+   "bbr_id": "wadedw01",
+   "team": "Miami Heat",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Jamaal Magloire",
+   "bbr_id": "magloja01",
+   "team": "New Orleans Hornets",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Ron Artest",
+   "bbr_id": "artesro01",
+   "team": "Indiana Pacers",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Kerry Kittles",
+   "bbr_id": "kittlke01",
+   "team": "New Jersey Nets",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Chauncey Billups",
+   "bbr_id": "billuch01",
+   "team": "Detroit Pistons",
+   "conference": "East",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Kevin Garnett",
+   "bbr_id": "garneke01",
+   "team": "Minnesota Timberwolves",
+   "conference": "West",
+   "role": "starter",
+   "selected_on": "2004-01-29"
+  },
+  {
+   "player": "Shaquille O'Neal",
+   "bbr_id": "onealsh01",
+   "team": "Los Angeles Lakers",
+   "conference": "West",
+   "role": "starter",
+   "selected_on": "2004-01-29"
+  },
+  {
+   "player": "Tim Duncan",
+   "bbr_id": "duncati01",
+   "team": "San Antonio Spurs",
+   "conference": "West",
+   "role": "starter",
+   "selected_on": "2004-01-29"
+  },
+  {
+   "player": "Gary Payton",
+   "bbr_id": "paytoga01",
+   "team": "Los Angeles Lakers",
+   "conference": "West",
+   "role": "starter",
+   "selected_on": "2004-01-29"
+  },
+  {
+   "player": "Kobe Bryant",
+   "bbr_id": "bryanko01",
+   "team": "Los Angeles Lakers",
+   "conference": "West",
+   "role": "starter",
+   "selected_on": "2004-01-29"
+  },
+  {
+   "player": "Peja Stojakovic",
+   "bbr_id": "stojape01",
+   "team": "Sacramento Kings",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Sam Cassell",
+   "bbr_id": "cassesa01",
+   "team": "Minnesota Timberwolves",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Latrell Sprewell",
+   "bbr_id": "sprewla01",
+   "team": "Minnesota Timberwolves",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Mike Bibby",
+   "bbr_id": "bibbymi01",
+   "team": "Sacramento Kings",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Vlade Divac",
+   "bbr_id": "divacvl01",
+   "team": "Sacramento Kings",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Dirk Nowitzki",
+   "bbr_id": "nowitdi01",
+   "team": "Dallas Mavericks",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  },
+  {
+   "player": "Steve Nash",
+   "bbr_id": "nashst01",
+   "team": "Dallas Mavericks",
+   "conference": "West",
+   "role": "reserve",
+   "selected_on": "2004-02-03"
+  }
+ ],
+ "game_rosters": {
+  "East": {
+   "starters": [
+    "Tracy McGrady",
+    "Jermaine O'Neal",
+    "Shareef Abdur-Rahim",
+    "Jason Kidd",
+    "Ben Wallace"
+   ],
+   "reserves": [
+    "Richard Jefferson",
+    "Michael Redd",
+    "Dwyane Wade",
+    "Jamaal Magloire",
+    "Ron Artest",
+    "Kerry Kittles",
+    "Chauncey Billups"
+   ],
+   "out": []
+  },
+  "West": {
+   "starters": [
+    "Kevin Garnett",
+    "Shaquille O'Neal",
+    "Tim Duncan",
+    "Gary Payton",
+    "Kobe Bryant"
+   ],
+   "reserves": [
+    "Peja Stojakovic",
+    "Sam Cassell",
+    "Latrell Sprewell",
+    "Mike Bibby",
+    "Vlade Divac",
+    "Dirk Nowitzki",
+    "Steve Nash"
+   ],
+   "out": []
+  }
+ }
+}

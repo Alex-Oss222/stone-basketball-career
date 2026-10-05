@@ -59,7 +59,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| This scope | 20 | Miami Heat | NBA | SG / PG | 9 | 9 | 36.0 | 5.8 | 11.2 | .515 | 1.6 | 3.7 | .424 | 4.2 | 7.6 | .559 | .584 | 3.7 | 4.2 | .868 | 0.8 | 3.3 | 4.1 | 3.9 | 1.9 | 1.4 | 0.7 | 3.0 | 16.8 | .641 | [East ROM](../../League/2003-04/02_February/League_Awards.md#rookie-of-the-month) |
+| This scope | 20 | Miami Heat | NBA | SG / PG | 9 | 9 | 36.0 | 5.8 | 11.2 | .515 | 1.6 | 3.7 | .424 | 4.2 | 7.6 | .559 | .584 | 3.7 | 4.2 | .868 | 0.8 | 3.3 | 4.1 | 3.9 | 1.9 | 1.4 | 0.7 | 3.0 | 16.8 | .641 | [All-Star](../../League/2003-04/All_Star.md#all-stars), [East ROM](../../League/2003-04/02_February/League_Awards.md#rookie-of-the-month) |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 

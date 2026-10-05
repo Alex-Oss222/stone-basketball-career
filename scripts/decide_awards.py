@@ -15,7 +15,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from runtime import award_decisions, season_awards                    # noqa: E402
+from runtime import all_star, award_decisions, season_awards          # noqa: E402
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
     group.add_argument("--check", action="store_true")
     args = parser.parse_args()
     if args.check:
-        errors = award_decisions.award_errors(ROOT) + season_awards.season_award_errors(ROOT)
+        errors = award_decisions.award_errors(ROOT) + season_awards.season_award_errors(ROOT) + all_star.all_star_errors(ROOT)
         print("\n".join(errors) or "Every award due is decided.")
         return 1 if errors else 0
     new = award_decisions.decide(ROOT)
@@ -35,7 +35,10 @@ def main():
     for d in season:
         named = d.get("winners") or [p["player"] for t in d["teams"] for p in t["players"]]
         print(f"{d['announced_on']}  {d['name']}: {', '.join(named)}")
-    new = new + season
+    stars = all_star.decide(ROOT)
+    for s in stars:
+        print(f"{s['announced_on']}  All-Star {s['step']}")
+    new = new + season + stars
     print(f"{len(new)} decision(s) closed")
     if new:
         from scripts.refresh_career_views import refresh_career_views

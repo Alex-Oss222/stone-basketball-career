@@ -131,6 +131,65 @@
     }
    },
    "source": "2003-04/season_close.json"
+  },
+  {
+   "as_of": "2004-06-24",
+   "standing": "franchise",
+   "trigger": "honor_recorded",
+   "basis": {
+    "closed_seasons": [
+     "2003-04"
+    ],
+    "window": [
+     "2003-04"
+    ],
+    "starter_lines": {
+     "2003-04": {
+      "season": "2003-04",
+      "gp": 75,
+      "gs": 70,
+      "scheduled": 82,
+      "minutes_per_game": 35.0,
+      "complete": true,
+      "met": true
+     }
+    },
+    "honors": [
+     "2003-04-all-star",
+     "2003-04-all_nba-first"
+    ],
+    "conflicts": [],
+    "ignored_honors": [
+     "2003-04-rookie_of_month-2003-10-28-east",
+     "2003-04-player_of_week-2003-12-15-east",
+     "2003-04-player_of_month-2003-12-01-east",
+     "2003-04-rookie_of_month-2003-12-01-east",
+     "2003-04-player_of_week-2003-12-29-east",
+     "2003-04-player_of_month-2004-01-01-east",
+     "2003-04-rookie_of_month-2004-01-01-east",
+     "2003-04-rookie_of_month-2004-02-01-east",
+     "2003-04-player_of_week-2004-03-08-east",
+     "2003-04-player_of_month-2004-03-01-east",
+     "2003-04-rookie_of_month-2004-03-01-east",
+     "2003-04-rookie_of_month-2004-04-01-east",
+     "2003-04-roy",
+     "2003-04-all_rookie-first"
+    ],
+    "rule": "All-NBA First or Second Team in the most recent closed season",
+    "signed_date": "2003-07-21",
+    "season_folder": "2003-04",
+    "statistics": {
+     "2003-04": {
+      "season": "2003-04",
+      "gp": 75,
+      "gs": 70,
+      "scheduled": 82,
+      "minutes_per_game": 35.0,
+      "complete": true
+     }
+    }
+   },
+   "source": "Stats_and_Awards/League/2003-04/All_Star.md"
   }
  ]
 }

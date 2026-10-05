@@ -274679,6 +274679,24 @@
         "cutoff": "2004-06-24",
         "records": [
           {
+            "id": "2003-04-all-star",
+            "name": "All-Star",
+            "short_name": "All-Star",
+            "status": "earned",
+            "competition": "regular",
+            "season": "2003-04",
+            "period_start": "2003-10-28",
+            "period_end": "2004-02-03",
+            "awarded_on": "2004-02-03",
+            "role": "reserve",
+            "source": "Stats_and_Awards/League/2003-04/All_Star.md#all-stars",
+            "recorded_on": "2004-06-24",
+            "scope": "annual",
+            "source_href": "League/2003-04/All_Star.md#all-stars",
+            "source_label": "Stats_and_Awards/League/2003-04/All_Star.md#all-stars",
+            "description": "Earned annual recognition from the dated career award record."
+          },
+          {
             "id": "2003-04-roy",
             "name": "Rookie of the Year",
             "short_name": "ROY",

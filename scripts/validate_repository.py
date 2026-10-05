@@ -689,6 +689,8 @@ def validate():
     errors.extend(award_errors(ROOT))
     from runtime.season_awards import season_award_errors
     errors.extend(season_award_errors(ROOT))
+    from runtime.all_star import all_star_errors
+    errors.extend(all_star_errors(ROOT))
 
     from runtime.club_replacements import replacement_errors
     errors.extend(replacement_errors(ROOT))
