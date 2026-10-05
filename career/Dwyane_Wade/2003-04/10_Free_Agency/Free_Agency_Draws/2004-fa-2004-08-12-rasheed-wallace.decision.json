@@ -1,0 +1,20 @@
+{
+ "event_id": "2004-fa-2004-08-12-rasheed-wallace",
+ "date": "2004-08-12",
+ "question": "2004 free agency, 2004-08-12: which offer does Rasheed Wallace accept (Cleveland Cavaliers $4,903,000 x 4, Denver Nuggets $4,903,000 x 4, Golden State Warriors $6,813,802 x 4, Los Angeles Clippers $4,903,000 x 4, Memphis Grizzlies $4,903,000 x 4, Miami Heat $4,903,000 x 4, Milwaukee Bucks $4,903,000 x 4, Portland Trail Blazers $6,813,802 x 4, Toronto Raptors $4,903,000 x 4, Utah Jazz $6,813,802 x 4), or does he wait?",
+ "decider": "Rasheed Wallace (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.00588,
+  "Denver Nuggets": 0.031002,
+  "Golden State Warriors": 0.099389,
+  "Los Angeles Clippers": 0.013021,
+  "Memphis Grizzlies": 0.023489,
+  "Miami Heat": 0.046948,
+  "Milwaukee Bucks": 0.035571,
+  "Portland Trail Blazers": 0.38243,
+  "Toronto Raptors": 0.004302,
+  "Utah Jazz": 0.067968,
+  "wait": 0.29
+ },
+ "basis": "Ask $6,813,802; best offer 1.00 of the ask in total; accept chance 0.710; priority fame; utility Cleveland Cavaliers 54.0, Denver Nuggets 60.7, Golden State Warriors 65.3, Los Angeles Clippers 57.2, Memphis Grizzlies 59.5, Miami Heat 62.3, Milwaukee Bucks 61.2, Portland Trail Blazers 70.7, Toronto Raptors 52.8, Utah Jazz 63.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

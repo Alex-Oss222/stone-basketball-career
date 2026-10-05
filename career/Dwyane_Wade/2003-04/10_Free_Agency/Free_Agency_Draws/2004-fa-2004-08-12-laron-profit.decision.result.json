@@ -1,0 +1,20 @@
+{
+ "date": "2004-08-12",
+ "decider": "Laron Profit (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-12-laron-profit",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.006688,
+  "Denver Nuggets": 0.016083,
+  "Los Angeles Lakers": 0.136015,
+  "New Jersey Nets": 0.016083,
+  "New York Knicks": 0.218168,
+  "Portland Trail Blazers": 0.107261,
+  "Sacramento Kings": 0.078867,
+  "San Antonio Spurs": 0.114751,
+  "Washington Wizards": 0.016083,
+  "wait": 0.290001
+ },
+ "outcome": "Los Angeles Lakers",
+ "question": "2004 free agency, 2004-08-12: which offer does Laron Profit accept (Chicago Bulls $807,546 x 1, Denver Nuggets $807,546 x 1, Los Angeles Lakers $807,546 x 1, New Jersey Nets $807,546 x 1, New York Knicks $807,546 x 1, Portland Trail Blazers $807,546 x 1, Sacramento Kings $807,546 x 1, San Antonio Spurs $807,546 x 1, Washington Wizards $807,546 x 1), or does he wait?"
+}

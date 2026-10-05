@@ -1,0 +1,25 @@
+{
+ "event_id": "2004-fa-2004-08-12-kenny-anderson",
+ "date": "2004-08-12",
+ "question": "2004 free agency, 2004-08-12: which offer does Kenny Anderson accept (Atlanta Hawks $1,100,000 x 1, Cleveland Cavaliers $1,100,000 x 1, Golden State Warriors $1,100,000 x 1, Houston Rockets $1,100,000 x 1, Indiana Pacers $1,100,000 x 1, Los Angeles Clippers $1,100,000 x 1, Memphis Grizzlies $1,100,000 x 1, Miami Heat $1,100,000 x 1, Milwaukee Bucks $1,100,000 x 1, Minnesota Timberwolves $1,100,000 x 1, New Jersey Nets $1,100,000 x 1, New Orleans Hornets $1,100,000 x 1, Sacramento Kings $1,100,000 x 1, Toronto Raptors $1,100,000 x 1, Utah Jazz $1,100,000 x 1), or does he wait?",
+ "decider": "Kenny Anderson (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.063064,
+  "Cleveland Cavaliers": 0.063064,
+  "Golden State Warriors": 0.051375,
+  "Houston Rockets": 0.083025,
+  "Indiana Pacers": 0.090844,
+  "Los Angeles Clippers": 0.082818,
+  "Memphis Grizzlies": 0.006884,
+  "Miami Heat": 0.083025,
+  "Milwaukee Bucks": 0.020169,
+  "Minnesota Timberwolves": 0.063064,
+  "New Jersey Nets": 0.01639,
+  "New Orleans Hornets": 0.001383,
+  "Sacramento Kings": 0.013352,
+  "Toronto Raptors": 0.051375,
+  "Utah Jazz": 0.020169,
+  "wait": 0.289999
+ },
+ "basis": "Ask $1,100,000; best offer 1.00 of the ask in total; accept chance 0.710; priority fame; utility Atlanta Hawks 55.9, Cleveland Cavaliers 55.9, Golden State Warriors 55.0, Houston Rockets 57.0, Indiana Pacers 57.3, Los Angeles Clippers 57.0, Memphis Grizzlies 47.0, Miami Heat 57.0, Milwaukee Bucks 51.3, Minnesota Timberwolves 55.9, New Jersey Nets 50.5, New Orleans Hornets 40.6, Sacramento Kings 49.6, Toronto Raptors 55.0, Utah Jazz 51.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

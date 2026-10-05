@@ -1,0 +1,26 @@
+{
+ "date": "2004-08-12",
+ "decider": "Kenny Anderson (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-12-kenny-anderson",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.063064,
+  "Cleveland Cavaliers": 0.063064,
+  "Golden State Warriors": 0.051375,
+  "Houston Rockets": 0.083025,
+  "Indiana Pacers": 0.090844,
+  "Los Angeles Clippers": 0.082818,
+  "Memphis Grizzlies": 0.006884,
+  "Miami Heat": 0.083025,
+  "Milwaukee Bucks": 0.020169,
+  "Minnesota Timberwolves": 0.063064,
+  "New Jersey Nets": 0.01639,
+  "New Orleans Hornets": 0.001383,
+  "Sacramento Kings": 0.013352,
+  "Toronto Raptors": 0.051375,
+  "Utah Jazz": 0.020169,
+  "wait": 0.289999
+ },
+ "outcome": "Toronto Raptors",
+ "question": "2004 free agency, 2004-08-12: which offer does Kenny Anderson accept (Atlanta Hawks $1,100,000 x 1, Cleveland Cavaliers $1,100,000 x 1, Golden State Warriors $1,100,000 x 1, Houston Rockets $1,100,000 x 1, Indiana Pacers $1,100,000 x 1, Los Angeles Clippers $1,100,000 x 1, Memphis Grizzlies $1,100,000 x 1, Miami Heat $1,100,000 x 1, Milwaukee Bucks $1,100,000 x 1, Minnesota Timberwolves $1,100,000 x 1, New Jersey Nets $1,100,000 x 1, New Orleans Hornets $1,100,000 x 1, Sacramento Kings $1,100,000 x 1, Toronto Raptors $1,100,000 x 1, Utah Jazz $1,100,000 x 1), or does he wait?"
+}

@@ -1,0 +1,17 @@
+{
+ "date": "2004-08-12",
+ "decider": "Kendall Gill (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-12-kendall-gill",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.126184,
+  "Miami Heat": 0.198391,
+  "Minnesota Timberwolves": 0.152969,
+  "New Orleans Hornets": 0.016907,
+  "Toronto Raptors": 0.126184,
+  "Utah Jazz": 0.089366,
+  "wait": 0.289999
+ },
+ "outcome": "Miami Heat",
+ "question": "2004 free agency, 2004-08-12: which offer does Kendall Gill accept (Golden State Warriors $1,100,000 x 1, Miami Heat $1,100,000 x 1, Minnesota Timberwolves $1,100,000 x 1, New Orleans Hornets $1,100,000 x 1, Toronto Raptors $1,100,000 x 1, Utah Jazz $1,100,000 x 1), or does he wait?"
+}
