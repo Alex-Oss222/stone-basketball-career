@@ -2588,6 +2588,24 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.38 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-03-11-expire-harriad01",
+   "date": "2004-03-11",
+   "kind": "expire",
+   "player": "Adam Harrington",
+   "bbr_id": "harriad01",
+   "from": "New Jersey Nets",
+   "to": null,
+   "role": {
+    "player_id": "Adam Harrington",
+    "bbr_id": "harriad01",
+    "position": "SG",
+    "games": 19,
+    "minutes": 111
+   },
+   "contract": null,
+   "note": "10-day contract ended (2.3 minutes a game)"
   }
  ],
  "market_days": [
@@ -2636,6 +2654,7 @@
   "2004-03-07",
   "2004-03-08",
   "2004-03-09",
-  "2004-03-10"
+  "2004-03-10",
+  "2004-03-11"
  ]
 }
