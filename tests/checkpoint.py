@@ -35,6 +35,10 @@ AFTER_CHECKPOINT = (                       # records the clock writes after June
     f"{SEASON}/League/club_replacements.json",
     "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/award_decisions.json",
     "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Award_Draws",
+    "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Playoffs",
+    "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/season_awards.json",
+    "career/Dwyane_Wade/Stats_and_Awards/League/2003-04/Season_Awards.md",
+    f"{SEASON}/00_Team/Team/Roster/Wade_Jersey",
 )
 
 
@@ -51,7 +55,8 @@ def pin(root):
             shutil.rmtree(target)
         elif target.is_file():
             target.unlink()
-    for pattern in ("05_Preseason/Game_*", "06_Regular_Season/**/Game_*"):   # game notes and requests come after camp
+    for pattern in ("05_Preseason/Game_*", "06_Regular_Season/**/Game_*",   # game notes and requests come after camp
+                    "08_Playoffs/*/Game_*", "08_Playoffs/*/note.md"):       # playoff games and their round logs
         for path in (root / SEASON).glob(pattern):
             if path.is_file():
                 path.unlink()

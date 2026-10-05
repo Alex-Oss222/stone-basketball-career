@@ -194,8 +194,11 @@ class InitializedCareerTests(unittest.TestCase):
 
     def test_no_empty_postseason_placeholders(self):
         self.assertFalse(any((SEASON/"07_Play_In_Tournament").glob("Game_*.md")))
+        # A playoff game note exists only once its game is built: never a blank placeholder (AGENTS.md, Game records).
         for folder in ("First_Round","Conference_Semifinals","Conference_Finals","Finals"):
-            self.assertFalse(any((SEASON/"08_Playoffs"/folder).glob("Game_*.md")))
+            for note in (SEASON/"08_Playoffs"/folder).glob("Game_*.md"):
+                self.assertTrue(note.with_name(note.stem+".request.json").is_file(),note)
+                self.assertRegex(note.read_text(encoding="utf-8"),r"(?m)^status: (scheduled|played|not_played)$")
 
 
 class FinanceProjectionTests(unittest.TestCase):
