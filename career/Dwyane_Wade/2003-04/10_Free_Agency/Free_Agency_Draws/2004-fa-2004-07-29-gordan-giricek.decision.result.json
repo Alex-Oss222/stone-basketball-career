@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-29",
+ "decider": "Gordan Giricek (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-29-gordan-giricek",
+ "kind": "decision",
+ "options": {
+  "Houston Rockets": 0.59,
+  "wait": 0.41
+ },
+ "outcome": "Houston Rockets",
+ "question": "2004 free agency, 2004-07-29: which offer does Gordan Giricek accept (Houston Rockets $4,317,050 x 4), or does he wait?"
+}

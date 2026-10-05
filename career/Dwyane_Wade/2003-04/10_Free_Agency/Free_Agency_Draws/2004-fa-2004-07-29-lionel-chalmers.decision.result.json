@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-29",
+ "decider": "Lionel Chalmers (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-29-lionel-chalmers",
+ "kind": "decision",
+ "options": {
+  "Golden State Warriors": 0.104211,
+  "Miami Heat": 0.317798,
+  "Minnesota Timberwolves": 0.167992,
+  "wait": 0.409999
+ },
+ "outcome": "Golden State Warriors",
+ "question": "2004 free agency, 2004-07-29: which offer does Lionel Chalmers accept (Golden State Warriors $385,277 x 1, Miami Heat $385,277 x 1, Minnesota Timberwolves $385,277 x 1), or does he wait?"
+}

@@ -1,0 +1,46 @@
+{
+ "schema_version": 1,
+ "date": "2004-07-29",
+ "rule": "runtime/free_agency_2004.py Market.trade_proposals",
+ "deals": [
+  {
+   "date": "2004-07-29",
+   "clubs": [
+    "Boston Celtics",
+    "Utah Jazz"
+   ],
+   "a": {
+    "club": "Boston Celtics",
+    "sends": [
+     "Raef LaFrentz"
+    ],
+    "bbr_ids": [
+     "lafrera01"
+    ],
+    "salary": 9714538
+   },
+   "b": {
+    "club": "Utah Jazz",
+    "sends": [
+     "Sasha Pavlovic",
+     "Curtis Borchardt"
+    ],
+    "bbr_ids": [
+     "pavloal01",
+     "borchcu01"
+    ],
+    "salary": 2471880
+   },
+   "gain": {
+    "Boston Celtics": 0.114,
+    "Utah Jazz": 0.141
+   },
+   "accept": {
+    "Boston Celtics": 0.796,
+    "Utah Jazz": 0.883
+   },
+   "both": 0.702868,
+   "id": "2004-summer-trade-2004-07-29-borchcu01-lafrera01-pavloal01"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "event_id": "2004-fa-2004-07-29-laron-profit",
+ "date": "2004-07-29",
+ "question": "2004 free agency, 2004-07-29: which offer does Laron Profit accept (Denver Nuggets $807,546 x 1, Los Angeles Lakers $807,546 x 1, Portland Trail Blazers $807,546 x 1, San Antonio Spurs $807,546 x 1), or does he wait?",
+ "decider": "Laron Profit (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.025364,
+  "Los Angeles Lakers": 0.214506,
+  "Portland Trail Blazers": 0.169159,
+  "San Antonio Spurs": 0.180971,
+  "wait": 0.41
+ },
+ "basis": "Ask $807,546; best offer 1.00 of the ask in total; accept chance 0.590; priority winning; utility Denver Nuggets 43.5, Los Angeles Lakers 52.1, Portland Trail Blazers 51.1, San Antonio Spurs 51.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

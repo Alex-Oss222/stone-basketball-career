@@ -1,0 +1,17 @@
+{
+ "event_id": "2004-fa-2004-07-29-mark-pope",
+ "date": "2004-07-29",
+ "question": "2004 free agency, 2004-07-29: which offer does Mark Pope accept (Denver Nuggets $807,546 x 1, Houston Rockets $807,546 x 1, Los Angeles Lakers $807,546 x 1, New Jersey Nets $807,546 x 1, Portland Trail Blazers $807,546 x 1, San Antonio Spurs $807,546 x 1, Washington Wizards $807,546 x 1), or does he wait?",
+ "decider": "Mark Pope (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.021532,
+  "Houston Rockets": 0.032608,
+  "Los Angeles Lakers": 0.187644,
+  "New Jersey Nets": 0.021532,
+  "Portland Trail Blazers": 0.147238,
+  "San Antonio Spurs": 0.157914,
+  "Washington Wizards": 0.021532,
+  "wait": 0.41
+ },
+ "basis": "Ask $807,546; best offer 1.00 of the ask in total; accept chance 0.590; priority loyalty; utility Denver Nuggets 43.1, Houston Rockets 44.8, Los Angeles Lakers 51.8, New Jersey Nets 43.1, Portland Trail Blazers 50.8, San Antonio Spurs 51.1, Washington Wizards 43.1;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

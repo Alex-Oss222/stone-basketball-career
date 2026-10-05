@@ -1,0 +1,19 @@
+{
+ "event_id": "2004-fa-2004-07-29-anthony-miller",
+ "date": "2004-07-29",
+ "question": "2004 free agency, 2004-07-29: which offer does Anthony Miller accept (Chicago Bulls $1,100,000 x 1, Denver Nuggets $1,100,000 x 1, Houston Rockets $1,100,000 x 1, Los Angeles Lakers $1,100,000 x 1, New Jersey Nets $1,100,000 x 1, New York Knicks $1,100,000 x 1, Portland Trail Blazers $1,100,000 x 1, San Antonio Spurs $1,100,000 x 1, Washington Wizards $1,100,000 x 1), or does he wait?",
+ "decider": "Anthony Miller (simulated player, engine draw)",
+ "options": {
+  "Chicago Bulls": 0.006021,
+  "Denver Nuggets": 0.01448,
+  "Houston Rockets": 0.021765,
+  "Los Angeles Lakers": 0.12246,
+  "New Jersey Nets": 0.01448,
+  "New York Knicks": 0.196426,
+  "Portland Trail Blazers": 0.096572,
+  "San Antonio Spurs": 0.103315,
+  "Washington Wizards": 0.01448,
+  "wait": 0.410001
+ },
+ "basis": "Ask $1,100,000; best offer 1.00 of the ask in total; accept chance 0.590; priority winning; utility Chicago Bulls 40.0, Denver Nuggets 43.5, Houston Rockets 45.1, Los Angeles Lakers 52.1, New Jersey Nets 43.5, New York Knicks 54.0, Portland Trail Blazers 51.1, San Antonio Spurs 51.4, Washington Wizards 43.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

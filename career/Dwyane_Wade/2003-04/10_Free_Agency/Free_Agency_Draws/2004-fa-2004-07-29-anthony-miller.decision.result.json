@@ -1,0 +1,20 @@
+{
+ "date": "2004-07-29",
+ "decider": "Anthony Miller (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-29-anthony-miller",
+ "kind": "decision",
+ "options": {
+  "Chicago Bulls": 0.006021,
+  "Denver Nuggets": 0.01448,
+  "Houston Rockets": 0.021765,
+  "Los Angeles Lakers": 0.12246,
+  "New Jersey Nets": 0.01448,
+  "New York Knicks": 0.196426,
+  "Portland Trail Blazers": 0.096572,
+  "San Antonio Spurs": 0.103315,
+  "Washington Wizards": 0.01448,
+  "wait": 0.410001
+ },
+ "outcome": "San Antonio Spurs",
+ "question": "2004 free agency, 2004-07-29: which offer does Anthony Miller accept (Chicago Bulls $1,100,000 x 1, Denver Nuggets $1,100,000 x 1, Houston Rockets $1,100,000 x 1, Los Angeles Lakers $1,100,000 x 1, New Jersey Nets $1,100,000 x 1, New York Knicks $1,100,000 x 1, Portland Trail Blazers $1,100,000 x 1, San Antonio Spurs $1,100,000 x 1, Washington Wizards $1,100,000 x 1), or does he wait?"
+}

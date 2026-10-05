@@ -1,0 +1,13 @@
+{
+ "event_id": "2004-fa-2004-07-29-lionel-chalmers",
+ "date": "2004-07-29",
+ "question": "2004 free agency, 2004-07-29: which offer does Lionel Chalmers accept (Golden State Warriors $385,277 x 1, Miami Heat $385,277 x 1, Minnesota Timberwolves $385,277 x 1), or does he wait?",
+ "decider": "Lionel Chalmers (simulated player, engine draw)",
+ "options": {
+  "Golden State Warriors": 0.104211,
+  "Miami Heat": 0.317798,
+  "Minnesota Timberwolves": 0.167992,
+  "wait": 0.409999
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.590; priority money; utility Golden State Warriors 43.1, Miami Heat 47.6, Minnesota Timberwolves 45.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

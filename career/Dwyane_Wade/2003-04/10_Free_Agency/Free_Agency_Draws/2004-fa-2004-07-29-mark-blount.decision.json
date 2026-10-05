@@ -1,0 +1,13 @@
+{
+ "event_id": "2004-fa-2004-07-29-mark-blount",
+ "date": "2004-07-29",
+ "question": "2004 free agency, 2004-07-29: which offer does Mark Blount accept (Boston Celtics $8,834,507 x 4, Golden State Warriors $8,494,471 x 4, Utah Jazz $8,834,507 x 4), or does he wait?",
+ "decider": "Mark Blount (simulated player, engine draw)",
+ "options": {
+  "Boston Celtics": 0.536817,
+  "Golden State Warriors": 0.024733,
+  "Utah Jazz": 0.02845,
+  "wait": 0.41
+ },
+ "basis": "Ask $8,834,507; best offer 1.00 of the ask in total; accept chance 0.590; priority loyalty; utility Boston Celtics 77.3, Golden State Warriors 65.0, Utah Jazz 65.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-29-chris-duhon",
+ "date": "2004-07-29",
+ "question": "2004 free agency, 2004-07-29: which offer does Chris Duhon accept (Minnesota Timberwolves $385,277 x 1), or does he wait?",
+ "decider": "Chris Duhon (simulated player, engine draw)",
+ "options": {
+  "Minnesota Timberwolves": 0.59,
+  "wait": 0.41
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.590; priority money; utility Minnesota Timberwolves 45.0;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

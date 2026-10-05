@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-29",
+ "decider": "Chris Duhon (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-29-chris-duhon",
+ "kind": "decision",
+ "options": {
+  "Minnesota Timberwolves": 0.59,
+  "wait": 0.41
+ },
+ "outcome": "Minnesota Timberwolves",
+ "question": "2004 free agency, 2004-07-29: which offer does Chris Duhon accept (Minnesota Timberwolves $385,277 x 1), or does he wait?"
+}

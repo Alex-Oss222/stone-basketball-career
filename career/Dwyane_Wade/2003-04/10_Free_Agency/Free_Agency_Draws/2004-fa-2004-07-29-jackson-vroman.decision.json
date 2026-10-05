@@ -1,0 +1,11 @@
+{
+ "event_id": "2004-fa-2004-07-29-jackson-vroman",
+ "date": "2004-07-29",
+ "question": "2004 free agency, 2004-07-29: which offer does Jackson Vroman accept (Utah Jazz $385,277 x 1), or does he wait?",
+ "decider": "Jackson Vroman (simulated player, engine draw)",
+ "options": {
+  "Utah Jazz": 0.59,
+  "wait": 0.41
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.590; priority money; utility Utah Jazz 34.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

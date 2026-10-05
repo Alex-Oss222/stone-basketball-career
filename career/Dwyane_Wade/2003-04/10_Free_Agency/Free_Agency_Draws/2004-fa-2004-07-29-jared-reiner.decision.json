@@ -1,0 +1,18 @@
+{
+ "event_id": "2004-fa-2004-07-29-jared-reiner",
+ "date": "2004-07-29",
+ "question": "2004 free agency, 2004-07-29: which offer does Jared Reiner accept (Cleveland Cavaliers $385,277 x 1, Indiana Pacers $385,277 x 1, Los Angeles Clippers $385,277 x 1, Memphis Grizzlies $385,277 x 1, Milwaukee Bucks $385,277 x 1, New Orleans Hornets $385,277 x 1, Sacramento Kings $385,277 x 1, Utah Jazz $385,277 x 1), or does he wait?",
+ "decider": "Jared Reiner (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.102684,
+  "Indiana Pacers": 0.015092,
+  "Los Angeles Clippers": 0.130863,
+  "Memphis Grizzlies": 0.110129,
+  "Milwaukee Bucks": 0.072723,
+  "New Orleans Hornets": 0.072723,
+  "Sacramento Kings": 0.075125,
+  "Utah Jazz": 0.010662,
+  "wait": 0.409999
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.590; priority loyalty; utility Cleveland Cavaliers 48.9, Indiana Pacers 41.2, Los Angeles Clippers 49.8, Memphis Grizzlies 49.1, Milwaukee Bucks 47.5, New Orleans Hornets 47.5, Sacramento Kings 47.6, Utah Jazz 39.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

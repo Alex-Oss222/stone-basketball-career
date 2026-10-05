@@ -1,0 +1,12 @@
+{
+ "date": "2004-07-29",
+ "decider": "Manu Ginobili (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-29-manu-ginobili",
+ "kind": "decision",
+ "options": {
+  "San Antonio Spurs": 0.59,
+  "wait": 0.41
+ },
+ "outcome": "San Antonio Spurs",
+ "question": "2004 free agency, 2004-07-29: which offer does Manu Ginobili accept (San Antonio Spurs $8,692,822 x 5), or does he wait?"
+}

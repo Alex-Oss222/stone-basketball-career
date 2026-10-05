@@ -1,0 +1,14 @@
+{
+ "date": "2004-07-29",
+ "decider": "John Thomas (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-07-29-john-thomas",
+ "kind": "decision",
+ "options": {
+  "Milwaukee Bucks": 0.27018,
+  "Sacramento Kings": 0.279105,
+  "Utah Jazz": 0.040715,
+  "wait": 0.41
+ },
+ "outcome": "wait",
+ "question": "2004 free agency, 2004-07-29: which offer does John Thomas accept (Milwaukee Bucks $932,546 x 1, Sacramento Kings $932,546 x 1, Utah Jazz $932,546 x 1), or does he wait?"
+}
