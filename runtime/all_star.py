@@ -480,6 +480,9 @@ def decide(root=ROOT, clock=None):
                                                 "role": "injury replacement", "selected_on": steps["replacements"]["announced_on"],
                                                 "replacing": ch["out"]})
             record["game_rosters"] = rosters(record)
+    for a in record.get("all_stars", []):
+        if clock > a["selected_on"]:                     # decided after its date: known to the career from the clock
+            a.setdefault("recorded_on", clock)
     path = root / c.record
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")

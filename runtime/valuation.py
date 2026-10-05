@@ -146,7 +146,7 @@ class Valuation:
         if stars.is_file():
             for a in read(stars.relative_to(self.root), self.root).get("all_stars", []):
                 bbr = a.get("bbr_id") or by_name.get(a["player"])
-                if bbr and a["selected_on"] <= self.on:
+                if bbr and max(a["selected_on"], a.get("recorded_on") or "") <= self.on:
                     out.setdefault(bbr, []).append("All-Star")
         return out
 

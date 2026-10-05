@@ -1151,7 +1151,8 @@
    "team": "Orlando Magic",
    "conference": "East",
    "role": "starter",
-   "selected_on": "2004-01-29"
+   "selected_on": "2004-01-29",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Jermaine O'Neal",
@@ -1159,7 +1160,8 @@
    "team": "Indiana Pacers",
    "conference": "East",
    "role": "starter",
-   "selected_on": "2004-01-29"
+   "selected_on": "2004-01-29",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Shareef Abdur-Rahim",
@@ -1167,7 +1169,8 @@
    "team": "Atlanta Hawks",
    "conference": "East",
    "role": "starter",
-   "selected_on": "2004-01-29"
+   "selected_on": "2004-01-29",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Jason Kidd",
@@ -1175,7 +1178,8 @@
    "team": "New Jersey Nets",
    "conference": "East",
    "role": "starter",
-   "selected_on": "2004-01-29"
+   "selected_on": "2004-01-29",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Ben Wallace",
@@ -1183,7 +1187,8 @@
    "team": "Detroit Pistons",
    "conference": "East",
    "role": "starter",
-   "selected_on": "2004-01-29"
+   "selected_on": "2004-01-29",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Richard Jefferson",
@@ -1191,7 +1196,8 @@
    "team": "New Jersey Nets",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Michael Redd",
@@ -1199,7 +1205,8 @@
    "team": "Milwaukee Bucks",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Dwyane Wade",
@@ -1207,7 +1214,8 @@
    "team": "Miami Heat",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Jamaal Magloire",
@@ -1215,7 +1223,8 @@
    "team": "New Orleans Hornets",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Ron Artest",
@@ -1223,7 +1232,8 @@
    "team": "Indiana Pacers",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Kerry Kittles",
@@ -1231,7 +1241,8 @@
    "team": "New Jersey Nets",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Chauncey Billups",
@@ -1239,7 +1250,8 @@
    "team": "Detroit Pistons",
    "conference": "East",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Kevin Garnett",
@@ -1247,7 +1259,8 @@
    "team": "Minnesota Timberwolves",
    "conference": "West",
    "role": "starter",
-   "selected_on": "2004-01-29"
+   "selected_on": "2004-01-29",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Shaquille O'Neal",
@@ -1255,7 +1268,8 @@
    "team": "Los Angeles Lakers",
    "conference": "West",
    "role": "starter",
-   "selected_on": "2004-01-29"
+   "selected_on": "2004-01-29",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Tim Duncan",
@@ -1263,7 +1277,8 @@
    "team": "San Antonio Spurs",
    "conference": "West",
    "role": "starter",
-   "selected_on": "2004-01-29"
+   "selected_on": "2004-01-29",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Gary Payton",
@@ -1271,7 +1286,8 @@
    "team": "Los Angeles Lakers",
    "conference": "West",
    "role": "starter",
-   "selected_on": "2004-01-29"
+   "selected_on": "2004-01-29",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Kobe Bryant",
@@ -1279,7 +1295,8 @@
    "team": "Los Angeles Lakers",
    "conference": "West",
    "role": "starter",
-   "selected_on": "2004-01-29"
+   "selected_on": "2004-01-29",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Peja Stojakovic",
@@ -1287,7 +1304,8 @@
    "team": "Sacramento Kings",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Sam Cassell",
@@ -1295,7 +1313,8 @@
    "team": "Minnesota Timberwolves",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Latrell Sprewell",
@@ -1303,7 +1322,8 @@
    "team": "Minnesota Timberwolves",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Mike Bibby",
@@ -1311,7 +1331,8 @@
    "team": "Sacramento Kings",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Vlade Divac",
@@ -1319,7 +1340,8 @@
    "team": "Sacramento Kings",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Dirk Nowitzki",
@@ -1327,7 +1349,8 @@
    "team": "Dallas Mavericks",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   },
   {
    "player": "Steve Nash",
@@ -1335,7 +1358,8 @@
    "team": "Dallas Mavericks",
    "conference": "West",
    "role": "reserve",
-   "selected_on": "2004-02-03"
+   "selected_on": "2004-02-03",
+   "recorded_on": "2004-06-24"
   }
  ],
  "game_rosters": {
