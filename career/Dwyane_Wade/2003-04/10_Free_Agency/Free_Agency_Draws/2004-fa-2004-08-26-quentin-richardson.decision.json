@@ -1,0 +1,19 @@
+{
+ "event_id": "2004-fa-2004-08-26-quentin-richardson",
+ "date": "2004-08-26",
+ "question": "2004 free agency, 2004-08-26: which offer does Quentin Richardson accept (Cleveland Cavaliers $4,451,744 x 4, Denver Nuggets $4,451,744 x 4, Golden State Warriors $4,451,744 x 4, Los Angeles Clippers $4,451,744 x 4, Memphis Grizzlies $4,451,744 x 4, Miami Heat $4,451,744 x 4, Milwaukee Bucks $4,451,744 x 4, Toronto Raptors $4,451,744 x 4, Utah Jazz $4,451,744 x 4), or does he wait?",
+ "decider": "Quentin Richardson (simulated player, engine draw)",
+ "options": {
+  "Cleveland Cavaliers": 0.077039,
+  "Denver Nuggets": 0.077039,
+  "Golden State Warriors": 0.04779,
+  "Los Angeles Clippers": 0.219597,
+  "Memphis Grizzlies": 0.104513,
+  "Miami Heat": 0.145738,
+  "Milwaukee Bucks": 0.055247,
+  "Toronto Raptors": 0.04779,
+  "Utah Jazz": 0.055247,
+  "wait": 0.17
+ },
+ "basis": "Ask $4,451,744; best offer 1.00 of the ask in total; accept chance 0.830; priority money; utility Cleveland Cavaliers 65.7, Denver Nuggets 65.7, Golden State Warriors 63.8, Los Angeles Clippers 69.9, Memphis Grizzlies 67.0, Miami Heat 68.3, Milwaukee Bucks 64.4, Toronto Raptors 63.8, Utah Jazz 64.4;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

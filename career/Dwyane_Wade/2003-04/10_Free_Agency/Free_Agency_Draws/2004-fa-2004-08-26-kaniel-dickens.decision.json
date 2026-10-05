@@ -1,0 +1,13 @@
+{
+ "event_id": "2004-fa-2004-08-26-kaniel-dickens",
+ "date": "2004-08-26",
+ "question": "2004 free agency, 2004-08-26: which offer does Kaniel Dickens accept (Denver Nuggets $620,046 x 1, New Jersey Nets $620,046 x 1, Sacramento Kings $620,046 x 1), or does he wait?",
+ "decider": "Kaniel Dickens (simulated player, engine draw)",
+ "options": {
+  "Denver Nuggets": 0.118736,
+  "New Jersey Nets": 0.118736,
+  "Sacramento Kings": 0.592528,
+  "wait": 0.17
+ },
+ "basis": "Ask $620,046; best offer 1.00 of the ask in total; accept chance 0.830; priority loyalty; utility Denver Nuggets 45.0, New Jersey Nets 45.0, Sacramento Kings 51.5;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

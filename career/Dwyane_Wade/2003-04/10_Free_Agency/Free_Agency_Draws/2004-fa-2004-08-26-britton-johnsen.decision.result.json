@@ -1,0 +1,12 @@
+{
+ "date": "2004-08-26",
+ "decider": "Britton Johnsen (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-26-britton-johnsen",
+ "kind": "decision",
+ "options": {
+  "Milwaukee Bucks": 0.83,
+  "wait": 0.17
+ },
+ "outcome": "Milwaukee Bucks",
+ "question": "2004 free agency, 2004-08-26: which offer does Britton Johnsen accept (Milwaukee Bucks $620,046 x 1), or does he wait?"
+}

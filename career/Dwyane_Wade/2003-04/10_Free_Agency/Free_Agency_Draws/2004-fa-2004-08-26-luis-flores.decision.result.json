@@ -1,0 +1,22 @@
+{
+ "date": "2004-08-26",
+ "decider": "Luis Flores (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-26-luis-flores",
+ "kind": "decision",
+ "options": {
+  "Atlanta Hawks": 0.475496,
+  "Cleveland Cavaliers": 0.015988,
+  "Golden State Warriors": 0.078403,
+  "Houston Rockets": 0.16027,
+  "Indiana Pacers": 0.015988,
+  "Los Angeles Clippers": 0.020274,
+  "Memphis Grizzlies": 0.017105,
+  "Minnesota Timberwolves": 0.015988,
+  "New Orleans Hornets": 0.002744,
+  "Portland Trail Blazers": 0.015988,
+  "Toronto Raptors": 0.011756,
+  "wait": 0.17
+ },
+ "outcome": "Atlanta Hawks",
+ "question": "2004 free agency, 2004-08-26: which offer does Luis Flores accept (Atlanta Hawks $385,277 x 1, Cleveland Cavaliers $385,277 x 1, Golden State Warriors $385,277 x 1, Houston Rockets $385,277 x 1, Indiana Pacers $385,277 x 1, Los Angeles Clippers $385,277 x 1, Memphis Grizzlies $385,277 x 1, Minnesota Timberwolves $385,277 x 1, New Orleans Hornets $385,277 x 1, Portland Trail Blazers $385,277 x 1, Toronto Raptors $385,277 x 1), or does he wait?"
+}

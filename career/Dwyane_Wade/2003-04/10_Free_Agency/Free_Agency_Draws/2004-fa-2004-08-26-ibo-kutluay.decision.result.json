@@ -1,0 +1,12 @@
+{
+ "date": "2004-08-26",
+ "decider": "Ibo Kutluay (simulated player, engine draw)",
+ "event_id": "2004-fa-2004-08-26-ibo-kutluay",
+ "kind": "decision",
+ "options": {
+  "Minnesota Timberwolves": 0.83,
+  "wait": 0.17
+ },
+ "outcome": "Minnesota Timberwolves",
+ "question": "2004 free agency, 2004-08-26: which offer does Ibo Kutluay accept (Minnesota Timberwolves $385,277 x 1), or does he wait?"
+}

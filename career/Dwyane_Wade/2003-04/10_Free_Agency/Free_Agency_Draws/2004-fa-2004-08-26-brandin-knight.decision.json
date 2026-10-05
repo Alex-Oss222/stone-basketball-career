@@ -1,0 +1,12 @@
+{
+ "event_id": "2004-fa-2004-08-26-brandin-knight",
+ "date": "2004-08-26",
+ "question": "2004 free agency, 2004-08-26: which offer does Brandin Knight accept (Minnesota Timberwolves $385,277 x 1, New Orleans Hornets $385,277 x 1), or does he wait?",
+ "decider": "Brandin Knight (simulated player, engine draw)",
+ "options": {
+  "Minnesota Timberwolves": 0.703411,
+  "New Orleans Hornets": 0.126589,
+  "wait": 0.17
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.830; priority money; utility Minnesota Timberwolves 37.6, New Orleans Hornets 30.8;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}

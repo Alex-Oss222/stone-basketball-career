@@ -1,0 +1,21 @@
+{
+ "event_id": "2004-fa-2004-08-26-luis-flores",
+ "date": "2004-08-26",
+ "question": "2004 free agency, 2004-08-26: which offer does Luis Flores accept (Atlanta Hawks $385,277 x 1, Cleveland Cavaliers $385,277 x 1, Golden State Warriors $385,277 x 1, Houston Rockets $385,277 x 1, Indiana Pacers $385,277 x 1, Los Angeles Clippers $385,277 x 1, Memphis Grizzlies $385,277 x 1, Minnesota Timberwolves $385,277 x 1, New Orleans Hornets $385,277 x 1, Portland Trail Blazers $385,277 x 1, Toronto Raptors $385,277 x 1), or does he wait?",
+ "decider": "Luis Flores (simulated player, engine draw)",
+ "options": {
+  "Atlanta Hawks": 0.475496,
+  "Cleveland Cavaliers": 0.015988,
+  "Golden State Warriors": 0.078403,
+  "Houston Rockets": 0.16027,
+  "Indiana Pacers": 0.015988,
+  "Los Angeles Clippers": 0.020274,
+  "Memphis Grizzlies": 0.017105,
+  "Minnesota Timberwolves": 0.015988,
+  "New Orleans Hornets": 0.002744,
+  "Portland Trail Blazers": 0.015988,
+  "Toronto Raptors": 0.011756,
+  "wait": 0.17
+ },
+ "basis": "Ask $385,277; best offer 1.00 of the ask in total; accept chance 0.830; priority winning; utility Atlanta Hawks 57.1, Cleveland Cavaliers 43.5, Golden State Warriors 49.9, Houston Rockets 52.7, Indiana Pacers 43.5, Los Angeles Clippers 44.5, Memphis Grizzlies 43.8, Minnesota Timberwolves 43.5, New Orleans Hornets 36.5, Portland Trail Blazers 43.5, Toronto Raptors 42.3;  (runtime/player_utility.py, runtime/free_agency_2004.py)."
+}
