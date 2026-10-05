@@ -2,9 +2,9 @@
 
 # Contract | Kenyon Martin
 
-Known through: 2004-09-19. [Open interactive contract](martike01.html#contract) · [Contract history](martike01.html#contract-history)
+Known through: 2004-09-26. [Open interactive contract](martike01.html#contract) · [Contract history](martike01.html#contract-history)
 
-Kenyon Martin: under contract. Evidence cutoff: 2004-09-19.
+Kenyon Martin: under contract. Evidence cutoff: 2004-09-26.
 
 ## Current contract
 

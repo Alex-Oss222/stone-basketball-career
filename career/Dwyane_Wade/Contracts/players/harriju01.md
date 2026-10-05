@@ -2,9 +2,9 @@
 
 # Contract | Junior Harrington
 
-Known through: 2004-09-19. [Open interactive contract](harriju01.html#contract) · [Contract history](harriju01.html#contract-history)
+Known through: 2004-09-26. [Open interactive contract](harriju01.html#contract) · [Contract history](harriju01.html#contract-history)
 
-Junior Harrington: expired or unresolved. Evidence cutoff: 2004-09-19.
+Junior Harrington: expired or unresolved. Evidence cutoff: 2004-09-26.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Shane Battier
 
-Known through: 2004-09-19. [Open interactive contract](battish01.html#contract) · [Contract history](battish01.html#contract-history)
+Known through: 2004-09-26. [Open interactive contract](battish01.html#contract) · [Contract history](battish01.html#contract-history)
 
-Shane Battier: under rookie contract. Evidence cutoff: 2004-09-19.
+Shane Battier: under rookie contract. Evidence cutoff: 2004-09-26.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Jermaine Jackson
 
-Known through: 2004-09-19. [Open interactive contract](jacksje01.html#contract) · [Contract history](jacksje01.html#contract-history)
+Known through: 2004-09-26. [Open interactive contract](jacksje01.html#contract) · [Contract history](jacksje01.html#contract-history)
 
-Jermaine Jackson: unsigned free agent. Evidence cutoff: 2004-09-19.
+Jermaine Jackson: unsigned free agent. Evidence cutoff: 2004-09-26.
 
 ## Current contract
 

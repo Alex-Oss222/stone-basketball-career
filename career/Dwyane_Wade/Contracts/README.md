@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-09-19. [Search the contract directory](index.html)
+Known through 2004-09-26. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -226,7 +226,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jeff Foster](players/fosteje01.md) | Indiana Pacers | under contract unverified | No verified current agreement | 0 |
 | [Jeff McInnis](players/mcinnje01.md) | Portland Trail Blazers | under contract | Jeff McInnis · existing contract; signing date not recorded | 1 |
 | [Jeff Trepagnier](players/trepaje01.md) | Denver Nuggets | No verified contract record | No verified current agreement | 0 |
-| [Jelani McCoy](players/mccoyje01.md) | Toronto Raptors | expired or unresolved | No verified current agreement | 0 |
+| [Jelani McCoy](players/mccoyje01.md) | Toronto Raptors | under contract | Jelani McCoy · 2004-09-23 | 1 |
 | [Jermaine Jackson](players/jacksje01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
 | [Jermaine O'Neal](players/onealje01.md) | Indiana Pacers | under contract | Jermaine O'Neal · 2003-07-16 | 2 |
 | [Jerome Beasley](players/beaslje01.md) | Miami Heat | renounced | No verified current agreement | 1 |
@@ -247,7 +247,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Jon Barry](players/barryjo01.md) | Denver Nuggets | under contract | Jon Barry · 2004-09-16 | 3 |
 | [Jonathan Bender](players/bendejo01.md) | Indiana Pacers | under contract | Jonathan Bender · 2002-10-31 | 1 |
 | [Joseph Forte](players/fortejo01.md) | Seattle SuperSonics | under rookie contract | Joseph Forte · existing contract; signing date not recorded | 1 |
-| [Josh Davis](players/davisjo02.md) | Atlanta Hawks | No verified contract record | No verified current agreement | 0 |
+| [Josh Davis](players/davisjo02.md) | Atlanta Hawks | under contract | Josh Davis · 2004-09-20 | 1 |
 | [Josh Howard](players/howarjo01.md) | Dallas Mavericks | No verified contract record | No verified current agreement | 0 |
 | [Juan Dixon](players/dixonju01.md) | Washington Wizards | under rookie contract | Juan Dixon · 2002-07-11 | 1 |
 | [Juaquin Hawkins](players/hawkiju01.md) | Free agent | unsigned free agent | No verified current agreement | 1 |
@@ -272,7 +272,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Kerry Kittles](players/kittlke01.md) | New Jersey Nets | under contract | Kerry Kittles · 1999-03-13 | 1 |
 | [Kevin Garnett](players/garneke01.md) | Minnesota Timberwolves | under contract | Kevin Garnett · 1997-10-01 | 1 |
 | [Kevin Ollie](players/ollieke01.md) | Cleveland Cavaliers | under contract | Kevin Ollie · 2003-07-17 | 2 |
-| [Kevin Willis](players/willike02.md) | San Antonio Spurs | under contract | Kevin Willis · 2003-07-16 | 2 |
+| [Kevin Willis](players/willike02.md) | San Antonio Spurs | under contract | Kevin Willis · 2004-09-22 | 3 |
 | [Keyon Dooling](players/doolike01.md) | Los Angeles Clippers | under rookie contract | Keyon Dooling · 2000-08-08 | 1 |
 | [Kirk Hinrich](players/hinriki01.md) | Chicago Bulls | No verified contract record | No verified current agreement | 0 |
 | [Kobe Bryant](players/bryanko01.md) | Los Angeles Lakers | under contract | Kobe Bryant · 2004-07-15 | 2 |

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-09-19",
+  "as_of": "2004-09-26",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1968,9 +1968,9 @@
       "player_id": "mccoyje01",
       "name": "Jelani McCoy",
       "team": "Toronto Raptors",
-      "status": "expired or unresolved",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "mccoyje01-2004-09-23",
+      "recorded_agreements": 1,
       "href": "players/mccoyje01.html#contract"
     },
     {
@@ -2157,9 +2157,9 @@
       "player_id": "davisjo02",
       "name": "Josh Davis",
       "team": "Atlanta Hawks",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "davisjo02-2004-09-20",
+      "recorded_agreements": 1,
       "href": "players/davisjo02.html#contract"
     },
     {
@@ -2383,8 +2383,8 @@
       "name": "Kevin Willis",
       "team": "San Antonio Spurs",
       "status": "under contract",
-      "current_contract_id": "willike02-2003-07-16",
-      "recorded_agreements": 2,
+      "current_contract_id": "willike02-2004-09-22",
+      "recorded_agreements": 3,
       "href": "players/willike02.html#contract"
     },
     {
