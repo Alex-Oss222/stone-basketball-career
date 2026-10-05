@@ -8,7 +8,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SG / PG  
 **Age at assessment:** 19 · **Height:** 6-6 in shoes · **Weight:** 220 lb  
-**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-07-05 
+**Opening assessment:** June 26, 2003 · **Statistics through:** 2004-07-06 
 
 **Contract/control:** Rookie-scale contract signed July 21, 2003: $2,197,000 counted in 2003-04, three seasons plus a 2006-07 team option; 120% of scale at the maximum, 80% protected. (register, 2004-01-10) [Finance record](../../Finances/cap_sheet.md).
 
