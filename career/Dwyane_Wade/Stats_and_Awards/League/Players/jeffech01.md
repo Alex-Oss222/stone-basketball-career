@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `jeffech01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Toronto Raptors · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #1 · **Born:** 1980-02-13 · **Age on card date:** 24  
+**Position:** SF (Small forward) · **Jersey:** #32 · **Born:** 1980-02-13 · **Age on card date:** 24  
 **Registry ID:** `jeffech01` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jeffech01.html) · ESPN ID 1716
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $840,360) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).

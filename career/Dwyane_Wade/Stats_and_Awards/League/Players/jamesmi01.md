@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `jamesmi01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Miami Heat · **Basis:** held by Miami (signed 2003-07-17 (early_bird); negotiation record Negotiations/mike_james.json) · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** #7 · **Born:** 1975-06-23 · **Age on card date:** 28  
+**Position:** PG (Point guard) · **Jersey:** #13 · **Born:** 1975-06-23 · **Age on card date:** 28  
 **Registry ID:** `jamesmi01` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jamesmi01.html) · ESPN ID 1051
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

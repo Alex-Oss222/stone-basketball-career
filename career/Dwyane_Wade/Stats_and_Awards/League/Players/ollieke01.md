@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `ollieke01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Cleveland Cavaliers · **Basis:** signing to Cleveland Cavaliers on 2003-07-17 (world data) · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** #8 · **Born:** 1972-12-27 · **Age on card date:** 31  
+**Position:** PG (Point guard) · **Jersey:** #12 · **Born:** 1972-12-27 · **Age on card date:** 31  
 **Registry ID:** `ollieke01` · [Basketball-Reference page](https://www.basketball-reference.com/players/o/ollieke01.html) · ESPN ID 620
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

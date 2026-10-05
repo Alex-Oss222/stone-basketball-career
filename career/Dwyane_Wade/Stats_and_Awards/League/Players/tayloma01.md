@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `tayloma01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Houston Rockets · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** Unassigned · **Born:** None · **Age on card date:** None  
+**Position:** PF (Power forward) · **Jersey:** #2 · **Born:** None · **Age on card date:** None  
 **Registry ID:** `tayloma01`
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $7,800,000) (league contract inventory status `under_contract`, as of June 26, 2003).

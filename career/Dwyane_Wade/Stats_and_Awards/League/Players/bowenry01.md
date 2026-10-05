@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `bowenry01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Denver Nuggets · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** Unassigned · **Born:** None · **Age on card date:** None  
+**Position:** PF (Power forward) · **Jersey:** #32 · **Born:** None · **Age on card date:** None  
 **Registry ID:** `bowenry01`
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $1,250,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).

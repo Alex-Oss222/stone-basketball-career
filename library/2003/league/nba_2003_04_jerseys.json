@@ -1,0 +1,4000 @@
+{
+ "schema_version": 1,
+ "season": "2003-04",
+ "kind": "jersey_numbers",
+ "researched": "2026-10-05",
+ "source_pattern": "https://www.basketball-reference.com/teams/{ABBR}/2004.html",
+ "players": {
+  "abdursh01": [
+   {
+    "player": "Shareef Abdur-Rahim",
+    "club": "Atlanta Hawks",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Shareef Abdur-Rahim",
+    "club": "Portland Trail Blazers",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "allenma01": [
+   {
+    "player": "Malik Allen",
+    "club": "Miami Heat",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "allenra02": [
+   {
+    "player": "Ray Allen",
+    "club": "Seattle SuperSonics",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "alstora01": [
+   {
+    "player": "Rafer Alston",
+    "club": "Miami Heat",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "anderch01": [
+   {
+    "player": "Chris Andersen",
+    "club": "Denver Nuggets",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "anderde01": [
+   {
+    "player": "Derek Anderson",
+    "club": "Portland Trail Blazers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "anderke01": [
+   {
+    "player": "Kenny Anderson",
+    "club": "Indiana Pacers",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "andersh01": [
+   {
+    "player": "Shandon Anderson",
+    "club": "New York Knicks",
+    "number": "49",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "anthoca01": [
+   {
+    "player": "Carmelo Anthony",
+    "club": "Denver Nuggets",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "archiro01": [
+   {
+    "player": "Robert Archibald",
+    "club": "Orlando Magic",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   },
+   {
+    "player": "Robert Archibald",
+    "club": "Phoenix Suns",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   },
+   {
+    "player": "Robert Archibald",
+    "club": "Toronto Raptors",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "arenagi01": [
+   {
+    "player": "Gilbert Arenas",
+    "club": "Washington Wizards",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "armstbr01": [
+   {
+    "player": "Brandon Armstrong",
+    "club": "New Jersey Nets",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "armstda01": [
+   {
+    "player": "Darrell Armstrong",
+    "club": "New Orleans Hornets",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "arroyca01": [
+   {
+    "player": "Carlos Arroyo",
+    "club": "Utah Jazz",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "artesro01": [
+   {
+    "player": "Metta World Peace",
+    "club": "Indiana Pacers",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "atkinch01": [
+   {
+    "player": "Chucky Atkins",
+    "club": "Boston Celtics",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   },
+   {
+    "player": "Chucky Atkins",
+    "club": "Detroit Pistons",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "augmost01": [
+   {
+    "player": "Stacey Augmon",
+    "club": "New Orleans Hornets",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "bakervi01": [
+   {
+    "player": "Vin Baker",
+    "club": "Boston Celtics",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   },
+   {
+    "player": "Vin Baker",
+    "club": "New York Knicks",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "banksma01": [
+   {
+    "player": "Marcus Banks",
+    "club": "Boston Celtics",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   }
+  ],
+  "barbole01": [
+   {
+    "player": "Leandro Barbosa",
+    "club": "Phoenix Suns",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "barnema02": [
+   {
+    "player": "Matt Barnes",
+    "club": "Los Angeles Clippers",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "barroda01": [
+   {
+    "player": "Dana Barros",
+    "club": "Boston Celtics",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   }
+  ],
+  "barrybr01": [
+   {
+    "player": "Brent Barry",
+    "club": "Seattle SuperSonics",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "barryjo01": [
+   {
+    "player": "Jon Barry",
+    "club": "Denver Nuggets",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "bateeme01": [
+   {
+    "player": "Mengke Bateer",
+    "club": "Toronto Raptors",
+    "number": "14, 42",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html",
+    "note": "Two numbers listed on the team page: changed number during the season."
+   }
+  ],
+  "battish01": [
+   {
+    "player": "Shane Battier",
+    "club": "Memphis Grizzlies",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "battito01": [
+   {
+    "player": "Tony Battie",
+    "club": "Boston Celtics",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   },
+   {
+    "player": "Tony Battie",
+    "club": "Cleveland Cavaliers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "baxtelo01": [
+   {
+    "player": "Lonny Baxter",
+    "club": "Chicago Bulls",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   },
+   {
+    "player": "Lonny Baxter",
+    "club": "Toronto Raptors",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   },
+   {
+    "player": "Lonny Baxter",
+    "club": "Washington Wizards",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "beaslje01": [
+   {
+    "player": "Jerome Beasley",
+    "club": "Miami Heat",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "bellra01": [
+   {
+    "player": "Raja Bell",
+    "club": "Utah Jazz",
+    "number": "19",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "belltr01": [
+   {
+    "player": "Troy Bell",
+    "club": "Memphis Grizzlies",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "bendejo01": [
+   {
+    "player": "Jonathan Bender",
+    "club": "Indiana Pacers",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "besttr01": [
+   {
+    "player": "Travis Best",
+    "club": "Dallas Mavericks",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "bibbymi01": [
+   {
+    "player": "Mike Bibby",
+    "club": "Sacramento Kings",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "billuch01": [
+   {
+    "player": "Chauncey Billups",
+    "club": "Detroit Pistons",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "blakest01": [
+   {
+    "player": "Steve Blake",
+    "club": "Washington Wizards",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "blounco01": [
+   {
+    "player": "Corie Blount",
+    "club": "Chicago Bulls",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   },
+   {
+    "player": "Corie Blount",
+    "club": "Toronto Raptors",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "blounma01": [
+   {
+    "player": "Mark Blount",
+    "club": "Boston Celtics",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   }
+  ],
+  "boganke01": [
+   {
+    "player": "Keith Bogans",
+    "club": "Orlando Magic",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "boothca01": [
+   {
+    "player": "Calvin Booth",
+    "club": "Seattle SuperSonics",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "boozeca01": [
+   {
+    "player": "Carlos Boozer",
+    "club": "Cleveland Cavaliers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "borchcu01": [
+   {
+    "player": "Curtis Borchardt",
+    "club": "Utah Jazz",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "boshch01": [
+   {
+    "player": "Chris Bosh",
+    "club": "Toronto Raptors",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "boumtru01": [
+   {
+    "player": "Ruben Boumtje-Boumtje",
+    "club": "Portland Trail Blazers",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "bowenbr01": [
+   {
+    "player": "Bruce Bowen",
+    "club": "San Antonio Spurs",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "bowenry01": [
+   {
+    "player": "Ryan Bowen",
+    "club": "Denver Nuggets",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "boykiea01": [
+   {
+    "player": "Earl Boykins",
+    "club": "Denver Nuggets",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "bradlmi01": [
+   {
+    "player": "Michael Bradley",
+    "club": "Atlanta Hawks",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Michael Bradley",
+    "club": "Toronto Raptors",
+    "number": "5, 33",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html",
+    "note": "Two numbers listed on the team page: changed number during the season."
+   }
+  ],
+  "bradlsh01": [
+   {
+    "player": "Shawn Bradley",
+    "club": "Dallas Mavericks",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "braggto01": [
+   {
+    "player": "Torraye Braggs",
+    "club": "Houston Rockets",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   },
+   {
+    "player": "Torraye Braggs",
+    "club": "Washington Wizards",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "brandel01": [
+   {
+    "player": "Elton Brand",
+    "club": "Los Angeles Clippers",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "bremejr01": [
+   {
+    "player": "J.R. Bremer",
+    "club": "Cleveland Cavaliers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   },
+   {
+    "player": "J.R. Bremer",
+    "club": "Golden State Warriors",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "breweja01": [
+   {
+    "player": "Jamison Brewer",
+    "club": "Indiana Pacers",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "brezepr01": [
+   {
+    "player": "Primož Brezec",
+    "club": "Indiana Pacers",
+    "number": "27",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "brownda02": [
+   {
+    "player": "Damone Brown",
+    "club": "New Jersey Nets",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "brownde02": [
+   {
+    "player": "Devin Brown",
+    "club": "San Antonio Spurs",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "brownke01": [
+   {
+    "player": "Kedrick Brown",
+    "club": "Boston Celtics",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   },
+   {
+    "player": "Kedrick Brown",
+    "club": "Cleveland Cavaliers",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "brownkw01": [
+   {
+    "player": "Kwame Brown",
+    "club": "Washington Wizards",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "brownpj01": [
+   {
+    "player": "P.J. Brown",
+    "club": "New Orleans Hornets",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "brownti01": [
+   {
+    "player": "Tierre Brown",
+    "club": "New Orleans Hornets",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "brunsri01": [
+   {
+    "player": "Rick Brunson",
+    "club": "Chicago Bulls",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   },
+   {
+    "player": "Rick Brunson",
+    "club": "Toronto Raptors",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "bryanko01": [
+   {
+    "player": "Kobe Bryant",
+    "club": "Los Angeles Lakers",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "buckngr01": [
+   {
+    "player": "Greg Buckner",
+    "club": "Philadelphia 76ers",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "buforro01": [
+   {
+    "player": "Rodney Buford",
+    "club": "Sacramento Kings",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "butleca01": [
+   {
+    "player": "Caron Butler",
+    "club": "Miami Heat",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "butlemi02": [
+   {
+    "player": "Mitchell Butler",
+    "club": "Washington Wizards",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "butlera01": [
+   {
+    "player": "Rasual Butler",
+    "club": "Miami Heat",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "cabarza01": [
+   {
+    "player": "Žarko Čabarkapa",
+    "club": "Phoenix Suns",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "cambyma01": [
+   {
+    "player": "Marcus Camby",
+    "club": "Denver Nuggets",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "campbel01": [
+   {
+    "player": "Elden Campbell",
+    "club": "Detroit Pistons",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "cardibr01": [
+   {
+    "player": "Brian Cardinal",
+    "club": "Golden State Warriors",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "carroma01": [
+   {
+    "player": "Matt Carroll",
+    "club": "Portland Trail Blazers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   },
+   {
+    "player": "Matt Carroll",
+    "club": "San Antonio Spurs",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "cartean01": [
+   {
+    "player": "Anthony Carter",
+    "club": "San Antonio Spurs",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "cartema01": [
+   {
+    "player": "Maurice Carter",
+    "club": "Los Angeles Lakers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   },
+   {
+    "player": "Maurice Carter",
+    "club": "New Orleans Hornets",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "cartevi01": [
+   {
+    "player": "Vince Carter",
+    "club": "Toronto Raptors",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "cassesa01": [
+   {
+    "player": "Sam Cassell",
+    "club": "Minnesota Timberwolves",
+    "number": "19",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "catoke01": [
+   {
+    "player": "Kelvin Cato",
+    "club": "Houston Rockets",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "chandty01": [
+   {
+    "player": "Tyson Chandler",
+    "club": "Chicago Bulls",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   }
+  ],
+  "cheanca01": [
+   {
+    "player": "Calbert Cheaney",
+    "club": "Golden State Warriors",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "chrisdo01": [
+   {
+    "player": "Doug Christie",
+    "club": "Sacramento Kings",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "clarkke01": [
+   {
+    "player": "Keon Clark",
+    "club": "Utah Jazz",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "claxtsp01": [
+   {
+    "player": "Speedy Claxton",
+    "club": "Golden State Warriors",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "cleavma01": [
+   {
+    "player": "Mateen Cleaves",
+    "club": "Cleveland Cavaliers",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "colemde01": [
+   {
+    "player": "Derrick Coleman",
+    "club": "Philadelphia 76ers",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "colesbi01": [
+   {
+    "player": "Bimbo Coles",
+    "club": "Miami Heat",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "collija02": [
+   {
+    "player": "Jason Collier",
+    "club": "Atlanta Hawks",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   }
+  ],
+  "collija03": [
+   {
+    "player": "Jarron Collins",
+    "club": "Utah Jazz",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "collija04": [
+   {
+    "player": "Jason Collins",
+    "club": "New Jersey Nets",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "cookbr01": [
+   {
+    "player": "Brian Cook",
+    "club": "Los Angeles Lakers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "cookom01": [
+   {
+    "player": "Omar Cook",
+    "club": "Portland Trail Blazers",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "crawfch01": [
+   {
+    "player": "Chris Crawford",
+    "club": "Atlanta Hawks",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   }
+  ],
+  "crawfja01": [
+   {
+    "player": "Jamal Crawford",
+    "club": "Chicago Bulls",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   }
+  ],
+  "croshau01": [
+   {
+    "player": "Austin Croshere",
+    "club": "Indiana Pacers",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "curryed01": [
+   {
+    "player": "Eddy Curry",
+    "club": "Chicago Bulls",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   }
+  ],
+  "currymi01": [
+   {
+    "player": "Michael Curry",
+    "club": "Toronto Raptors",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "dalemsa01": [
+   {
+    "player": "Samuel Dalembert",
+    "club": "Philadelphia 76ers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "dampier01": [
+   {
+    "player": "Erick Dampier",
+    "club": "Golden State Warriors",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "daniean01": [
+   {
+    "player": "Antonio Daniels",
+    "club": "Seattle SuperSonics",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "daniema01": [
+   {
+    "player": "Marquis Daniels",
+    "club": "Dallas Mavericks",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "davisan01": [
+   {
+    "player": "Antonio Davis",
+    "club": "Chicago Bulls",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   },
+   {
+    "player": "Antonio Davis",
+    "club": "Toronto Raptors",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "davisba01": [
+   {
+    "player": "Baron Davis",
+    "club": "New Orleans Hornets",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "davisda01": [
+   {
+    "player": "Dale Davis",
+    "club": "Portland Trail Blazers",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "davishu01": [
+   {
+    "player": "Hubert Davis",
+    "club": "Detroit Pistons",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   },
+   {
+    "player": "Hubert Davis",
+    "club": "New Jersey Nets",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "davisjo02": [
+   {
+    "player": "Josh Davis",
+    "club": "Atlanta Hawks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   }
+  ],
+  "davisri01": [
+   {
+    "player": "Ricky Davis",
+    "club": "Boston Celtics",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   },
+   {
+    "player": "Ricky Davis",
+    "club": "Cleveland Cavaliers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "declean01": [
+   {
+    "player": "Andrew DeClercq",
+    "club": "Orlando Magic",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "delkto01": [
+   {
+    "player": "Tony Delk",
+    "club": "Dallas Mavericks",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "dialde01": [
+   {
+    "player": "Derrick Dial",
+    "club": "Orlando Magic",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "diawbo01": [
+   {
+    "player": "Boris Diaw",
+    "club": "Atlanta Hawks",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   }
+  ],
+  "dickada01": [
+   {
+    "player": "Dan Dickau",
+    "club": "Atlanta Hawks",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Dan Dickau",
+    "club": "Portland Trail Blazers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "dickeka01": [
+   {
+    "player": "Kaniel Dickens",
+    "club": "Portland Trail Blazers",
+    "number": "28",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "diopde01": [
+   {
+    "player": "DeSagana Diop",
+    "club": "Cleveland Cavaliers",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "divacvl01": [
+   {
+    "player": "Vlade Divac",
+    "club": "Sacramento Kings",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "dixonju01": [
+   {
+    "player": "Juan Dixon",
+    "club": "Washington Wizards",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "doleami01": [
+   {
+    "player": "Michael Doleac",
+    "club": "Denver Nuggets",
+    "number": "51",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   },
+   {
+    "player": "Michael Doleac",
+    "club": "New York Knicks",
+    "number": "51",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "doolike01": [
+   {
+    "player": "Keyon Dooling",
+    "club": "Los Angeles Clippers",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "drewbr01": [
+   {
+    "player": "Bryce Drew",
+    "club": "New Orleans Hornets",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "drobnpr01": [
+   {
+    "player": "Predrag Drobnjak",
+    "club": "Los Angeles Clippers",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "duncati01": [
+   {
+    "player": "Tim Duncan",
+    "club": "San Antonio Spurs",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "dunlemi02": [
+   {
+    "player": "Mike Dunleavy",
+    "club": "Golden State Warriors",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "duprero01": [
+   {
+    "player": "Ronald Dupree",
+    "club": "Chicago Bulls",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   }
+  ],
+  "ebind01": [
+   {
+    "player": "Ndudi Ebi",
+    "club": "Minnesota Timberwolves",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "eisleho01": [
+   {
+    "player": "Howard Eisley",
+    "club": "New York Knicks",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   },
+   {
+    "player": "Howard Eisley",
+    "club": "Phoenix Suns",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "elsonfr01": [
+   {
+    "player": "Francisco Elson",
+    "club": "Denver Nuggets",
+    "number": "56",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "elyme01": [
+   {
+    "player": "Melvin Ely",
+    "club": "Los Angeles Clippers",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "evansre01": [
+   {
+    "player": "Reggie Evans",
+    "club": "Seattle SuperSonics",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "fergude01": [
+   {
+    "player": "Desmond Ferguson",
+    "club": "Portland Trail Blazers",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "finlemi01": [
+   {
+    "player": "Michael Finley",
+    "club": "Dallas Mavericks",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "fishede01": [
+   {
+    "player": "Derek Fisher",
+    "club": "Los Angeles Lakers",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "fizerma01": [
+   {
+    "player": "Marcus Fizer",
+    "club": "Chicago Bulls",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   }
+  ],
+  "fordal02": [
+   {
+    "player": "Alton Ford",
+    "club": "Houston Rockets",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "fordtj01": [
+   {
+    "player": "T.J. Ford",
+    "club": "Milwaukee Bucks",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "fortsda01": [
+   {
+    "player": "Danny Fortson",
+    "club": "Dallas Mavericks",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "fosteje01": [
+   {
+    "player": "Jeff Foster",
+    "club": "Indiana Pacers",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "fowlktr01": [
+   {
+    "player": "Tremaine Fowlkes",
+    "club": "Detroit Pistons",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "foxri01": [
+   {
+    "player": "Rick Fox",
+    "club": "Los Angeles Lakers",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "foylead01": [
+   {
+    "player": "Adonal Foyle",
+    "club": "Golden State Warriors",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "frahmri01": [
+   {
+    "player": "Richie Frahm",
+    "club": "Seattle SuperSonics",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "francst01": [
+   {
+    "player": "Steve Francis",
+    "club": "Houston Rockets",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "fullehi01": [
+   {
+    "player": "Hiram Fuller",
+    "club": "Atlanta Hawks",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   }
+  ],
+  "gadzuda01": [
+   {
+    "player": "Dan Gadzuric",
+    "club": "Milwaukee Bucks",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "gainere01": [
+   {
+    "player": "Reece Gaines",
+    "club": "Orlando Magic",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "garcial01": [
+   {
+    "player": "Alex Garcia",
+    "club": "San Antonio Spurs",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "garneke01": [
+   {
+    "player": "Kevin Garnett",
+    "club": "Minnesota Timberwolves",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "garripa01": [
+   {
+    "player": "Pat Garrity",
+    "club": "Orlando Magic",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "gasolpa01": [
+   {
+    "player": "Pau Gasol",
+    "club": "Memphis Grizzlies",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "georgde01": [
+   {
+    "player": "Devean George",
+    "club": "Los Angeles Lakers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "gilled01": [
+   {
+    "player": "Eddie Gill",
+    "club": "Portland Trail Blazers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "gillke01": [
+   {
+    "player": "Kendall Gill",
+    "club": "Chicago Bulls",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   }
+  ],
+  "ginobma01": [
+   {
+    "player": "Manu Ginóbili",
+    "club": "San Antonio Spurs",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "giricgo01": [
+   {
+    "player": "Gordan Giriček",
+    "club": "Orlando Magic",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   },
+   {
+    "player": "Gordan Giriček",
+    "club": "Utah Jazz",
+    "number": "5, 10",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html",
+    "note": "Two numbers listed on the team page: changed number during the season."
+   }
+  ],
+  "glovedi01": [
+   {
+    "player": "Dion Glover",
+    "club": "Atlanta Hawks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Dion Glover",
+    "club": "Toronto Raptors",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "goldwan01": [
+   {
+    "player": "Anthony Goldwire",
+    "club": "Minnesota Timberwolves",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   },
+   {
+    "player": "Anthony Goldwire",
+    "club": "New Jersey Nets",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "goodedr01": [
+   {
+    "player": "Drew Gooden",
+    "club": "Orlando Magic",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "grantbr01": [
+   {
+    "player": "Brian Grant",
+    "club": "Miami Heat",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "grantho01": [
+   {
+    "player": "Horace Grant",
+    "club": "Los Angeles Lakers",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "grantpa01": [
+   {
+    "player": "Paul Grant",
+    "club": "Utah Jazz",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "greenwi01": [
+   {
+    "player": "Willie Green",
+    "club": "Philadelphia 76ers",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "griffad01": [
+   {
+    "player": "Adrian Griffin",
+    "club": "Houston Rockets",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "guglito01": [
+   {
+    "player": "Tom Gugliotta",
+    "club": "Phoenix Suns",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   },
+   {
+    "player": "Tom Gugliotta",
+    "club": "Utah Jazz",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "haislma01": [
+   {
+    "player": "Marcus Haislip",
+    "club": "Milwaukee Bucks",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "hamda01": [
+   {
+    "player": "Darvin Ham",
+    "club": "Detroit Pistons",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "hamilri01": [
+   {
+    "player": "Richard Hamilton",
+    "club": "Detroit Pistons",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "hamilze01": [
+   {
+    "player": "Zendon Hamilton",
+    "club": "Philadelphia 76ers",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "handlbe01": [
+   {
+    "player": "Ben Handlogten",
+    "club": "Utah Jazz",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "hansetr01": [
+   {
+    "player": "Travis Hansen",
+    "club": "Atlanta Hawks",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   }
+  ],
+  "hardaan01": [
+   {
+    "player": "Anfernee Hardaway",
+    "club": "New York Knicks",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   },
+   {
+    "player": "Anfernee Hardaway",
+    "club": "Phoenix Suns",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "harprma01": [
+   {
+    "player": "Matt Harpring",
+    "club": "Utah Jazz",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "harrial01": [
+   {
+    "player": "Al Harrington",
+    "club": "Indiana Pacers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "harrilu01": [
+   {
+    "player": "Lucious Harris",
+    "club": "New Jersey Nets",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "harriot01": [
+   {
+    "player": "Othella Harrington",
+    "club": "New York Knicks",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "hartja01": [
+   {
+    "player": "Jason Hart",
+    "club": "San Antonio Spurs",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "harvedo01": [
+   {
+    "player": "Donnell Harvey",
+    "club": "Orlando Magic",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   },
+   {
+    "player": "Donnell Harvey",
+    "club": "Phoenix Suns",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "hasleud01": [
+   {
+    "player": "Udonis Haslem",
+    "club": "Miami Heat",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "hassetr01": [
+   {
+    "player": "Trenton Hassell",
+    "club": "Minnesota Timberwolves",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "hayesja01": [
+   {
+    "player": "Jarvis Hayes",
+    "club": "Washington Wizards",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "haywobr01": [
+   {
+    "player": "Brendan Haywood",
+    "club": "Washington Wizards",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "healsh01": [
+   {
+    "player": "Shane Heal",
+    "club": "San Antonio Spurs",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "hendeal01": [
+   {
+    "player": "Alan Henderson",
+    "club": "Atlanta Hawks",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   }
+  ],
+  "hilarne01": [
+   {
+    "player": "Nenê",
+    "club": "Denver Nuggets",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "hillty01": [
+   {
+    "player": "Tyrone Hill",
+    "club": "Miami Heat",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "hinriki01": [
+   {
+    "player": "Kirk Hinrich",
+    "club": "Chicago Bulls",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   }
+  ],
+  "hoibefr01": [
+   {
+    "player": "Fred Hoiberg",
+    "club": "Minnesota Timberwolves",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "horryro01": [
+   {
+    "player": "Robert Horry",
+    "club": "San Antonio Spurs",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "houseed01": [
+   {
+    "player": "Eddie House",
+    "club": "Los Angeles Clippers",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "houstal01": [
+   {
+    "player": "Allan Houston",
+    "club": "New York Knicks",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "howarjo01": [
+   {
+    "player": "Josh Howard",
+    "club": "Dallas Mavericks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "howarju01": [
+   {
+    "player": "Juwan Howard",
+    "club": "Orlando Magic",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "hudsotr01": [
+   {
+    "player": "Troy Hudson",
+    "club": "Minnesota Timberwolves",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "hughela01": [
+   {
+    "player": "Larry Hughes",
+    "club": "Washington Wizards",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "humphry01": [
+   {
+    "player": "Ryan Humphrey",
+    "club": "Memphis Grizzlies",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "huntebr01": [
+   {
+    "player": "Brandon Hunter",
+    "club": "Boston Celtics",
+    "number": "56",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   }
+  ],
+  "hunteli01": [
+   {
+    "player": "Lindsey Hunter",
+    "club": "Detroit Pistons",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "huntest01": [
+   {
+    "player": "Steven Hunter",
+    "club": "Orlando Magic",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "ilgauzy01": [
+   {
+    "player": "Zydrunas Ilgauskas",
+    "club": "Cleveland Cavaliers",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "iversal01": [
+   {
+    "player": "Allen Iverson",
+    "club": "Philadelphia 76ers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "jacksbo01": [
+   {
+    "player": "Bobby Jackson",
+    "club": "Sacramento Kings",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "jacksji01": [
+   {
+    "player": "Jim Jackson",
+    "club": "Houston Rockets",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "jacksma01": [
+   {
+    "player": "Mark Jackson",
+    "club": "Houston Rockets",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "jacksma02": [
+   {
+    "player": "Marc Jackson",
+    "club": "Philadelphia 76ers",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "jacksst02": [
+   {
+    "player": "Stephen Jackson",
+    "club": "Atlanta Hawks",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   }
+  ],
+  "jacobca01": [
+   {
+    "player": "Casey Jacobsen",
+    "club": "Phoenix Suns",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "jamesje01": [
+   {
+    "player": "Jerome James",
+    "club": "Seattle SuperSonics",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "jamesle01": [
+   {
+    "player": "LeBron James",
+    "club": "Cleveland Cavaliers",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "jamesmi01": [
+   {
+    "player": "Mike James",
+    "club": "Boston Celtics",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   },
+   {
+    "player": "Mike James",
+    "club": "Detroit Pistons",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "jamisan01": [
+   {
+    "player": "Antawn Jamison",
+    "club": "Dallas Mavericks",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "jaricma01": [
+   {
+    "player": "Marko Jarić",
+    "club": "Los Angeles Clippers",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "jeffech01": [
+   {
+    "player": "Chris Jefferies",
+    "club": "Chicago Bulls",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   },
+   {
+    "player": "Chris Jefferies",
+    "club": "Toronto Raptors",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "jefferi01": [
+   {
+    "player": "Richard Jefferson",
+    "club": "New Jersey Nets",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "jeffrja01": [
+   {
+    "player": "Jared Jeffries",
+    "club": "Washington Wizards",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "johnsan02": [
+   {
+    "player": "Anthony Johnson",
+    "club": "Indiana Pacers",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "johnsav01": [
+   {
+    "player": "Avery Johnson",
+    "club": "Golden State Warriors",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "johnsbr01": [
+   {
+    "player": "Britton Johnsen",
+    "club": "Orlando Magic",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "johnsde03": [
+   {
+    "player": "DerMarr Johnson",
+    "club": "New York Knicks",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "johnser02": [
+   {
+    "player": "Ervin Johnson",
+    "club": "Minnesota Timberwolves",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "johnsjo02": [
+   {
+    "player": "Joe Johnson",
+    "club": "Phoenix Suns",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "johnsli01": [
+   {
+    "player": "Linton Johnson",
+    "club": "Chicago Bulls",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   }
+  ],
+  "jonesda01": [
+   {
+    "player": "Damon Jones",
+    "club": "Milwaukee Bucks",
+    "number": "19",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "jonesda02": [
+   {
+    "player": "Dahntay Jones",
+    "club": "Memphis Grizzlies",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "jonesed02": [
+   {
+    "player": "Eddie Jones",
+    "club": "Miami Heat",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "jonesfr01": [
+   {
+    "player": "Fred Jones",
+    "club": "Indiana Pacers",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "jonesja02": [
+   {
+    "player": "James Jones",
+    "club": "Indiana Pacers",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "jonesju01": [
+   {
+    "player": "Jumaine Jones",
+    "club": "Boston Celtics",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   }
+  ],
+  "jonespo01": [
+   {
+    "player": "Popeye Jones",
+    "club": "Golden State Warriors",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "kamanch01": [
+   {
+    "player": "Chris Kaman",
+    "club": "Los Angeles Clippers",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "kaponja01": [
+   {
+    "player": "Jason Kapono",
+    "club": "Cleveland Cavaliers",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "kiddja01": [
+   {
+    "player": "Jason Kidd",
+    "club": "New Jersey Nets",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "kirilan01": [
+   {
+    "player": "Andrei Kirilenko",
+    "club": "Utah Jazz",
+    "number": "47",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "kittlke01": [
+   {
+    "player": "Kerry Kittles",
+    "club": "New Jersey Nets",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "knighbr01": [
+   {
+    "player": "Brevin Knight",
+    "club": "Milwaukee Bucks",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   },
+   {
+    "player": "Brevin Knight",
+    "club": "Phoenix Suns",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   },
+   {
+    "player": "Brevin Knight",
+    "club": "Washington Wizards",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "korveky01": [
+   {
+    "player": "Kyle Korver",
+    "club": "Philadelphia 76ers",
+    "number": "26",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "kukocto01": [
+   {
+    "player": "Toni Kukoč",
+    "club": "Milwaukee Bucks",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "laettch01": [
+   {
+    "player": "Christian Laettner",
+    "club": "Washington Wizards",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "lafrera01": [
+   {
+    "player": "Raef LaFrentz",
+    "club": "Boston Celtics",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   }
+  ],
+  "lampema01": [
+   {
+    "player": "Maciej Lampe",
+    "club": "Phoenix Suns",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "lamplse01": [
+   {
+    "player": "Sean Lampley",
+    "club": "Golden State Warriors",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "langhda01": [
+   {
+    "player": "Dan Langhi",
+    "club": "Golden State Warriors",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   },
+   {
+    "player": "Dan Langhi",
+    "club": "Milwaukee Bucks",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "larueru01": [
+   {
+    "player": "Rusty LaRue",
+    "club": "Golden State Warriors",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "lenarvo01": [
+   {
+    "player": "Voshon Lenard",
+    "club": "Denver Nuggets",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "lewisqu01": [
+   {
+    "player": "Quincy Lewis",
+    "club": "Minnesota Timberwolves",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "lewisra02": [
+   {
+    "player": "Rashard Lewis",
+    "club": "Seattle SuperSonics",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "livinra01": [
+   {
+    "player": "Randy Livingston",
+    "club": "Los Angeles Clippers",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "lopezra01": [
+   {
+    "player": "Raül López",
+    "club": "Utah Jazz",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "luety01": [
+   {
+    "player": "Tyronn Lue",
+    "club": "Orlando Magic",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "lynchge01": [
+   {
+    "player": "George Lynch",
+    "club": "New Orleans Hornets",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "madsema01": [
+   {
+    "player": "Mark Madsen",
+    "club": "Minnesota Timberwolves",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "maggeco01": [
+   {
+    "player": "Corey Maggette",
+    "club": "Los Angeles Clippers",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "magloja01": [
+   {
+    "player": "Jamaal Magloire",
+    "club": "New Orleans Hornets",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "malonka01": [
+   {
+    "player": "Karl Malone",
+    "club": "Los Angeles Lakers",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "marbust01": [
+   {
+    "player": "Stephon Marbury",
+    "club": "New York Knicks",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   },
+   {
+    "player": "Stephon Marbury",
+    "club": "Phoenix Suns",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "mariosh01": [
+   {
+    "player": "Shawn Marion",
+    "club": "Phoenix Suns",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "marshdo01": [
+   {
+    "player": "Donyell Marshall",
+    "club": "Chicago Bulls",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   },
+   {
+    "player": "Donyell Marshall",
+    "club": "Toronto Raptors",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "martida01": [
+   {
+    "player": "Darrick Martin",
+    "club": "Minnesota Timberwolves",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "martike01": [
+   {
+    "player": "Kenyon Martin",
+    "club": "New Jersey Nets",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "mashbja01": [
+   {
+    "player": "Jamal Mashburn",
+    "club": "New Orleans Hornets",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "masonde01": [
+   {
+    "player": "Desmond Mason",
+    "club": "Milwaukee Bucks",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "masonro01": [
+   {
+    "player": "Roger Mason",
+    "club": "Chicago Bulls",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   },
+   {
+    "player": "Roger Mason",
+    "club": "Toronto Raptors",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "masseto01": [
+   {
+    "player": "Tony Massenburg",
+    "club": "Sacramento Kings",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "mccarwa01": [
+   {
+    "player": "Walter McCarty",
+    "club": "Boston Celtics",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   }
+  ],
+  "mccasam01": [
+   {
+    "player": "Amal McCaskill",
+    "club": "Philadelphia 76ers",
+    "number": "00",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "mccoyje01": [
+   {
+    "player": "Jelani McCoy",
+    "club": "Cleveland Cavaliers",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "mcdyean01": [
+   {
+    "player": "Antonio McDyess",
+    "club": "New York Knicks",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   },
+   {
+    "player": "Antonio McDyess",
+    "club": "Phoenix Suns",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "mcgratr01": [
+   {
+    "player": "Tracy McGrady",
+    "club": "Orlando Magic",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "mcinnje01": [
+   {
+    "player": "Jeff McInnis",
+    "club": "Cleveland Cavaliers",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   },
+   {
+    "player": "Jeff McInnis",
+    "club": "Portland Trail Blazers",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "mckieaa01": [
+   {
+    "player": "Aaron McKie",
+    "club": "Philadelphia 76ers",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "mcleoke01": [
+   {
+    "player": "Keith McLeod",
+    "club": "Minnesota Timberwolves",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "medvest01": [
+   {
+    "player": "Stanislav Medvedenko",
+    "club": "Los Angeles Lakers",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "mercero01": [
+   {
+    "player": "Ron Mercer",
+    "club": "San Antonio Spurs",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "mihmch01": [
+   {
+    "player": "Chris Mihm",
+    "club": "Boston Celtics",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   },
+   {
+    "player": "Chris Mihm",
+    "club": "Cleveland Cavaliers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "milesda01": [
+   {
+    "player": "Darius Miles",
+    "club": "Cleveland Cavaliers",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   },
+   {
+    "player": "Darius Miles",
+    "club": "Portland Trail Blazers",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "milicda01": [
+   {
+    "player": "Darko Miličić",
+    "club": "Detroit Pistons",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "millean02": [
+   {
+    "player": "Andre Miller",
+    "club": "Denver Nuggets",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "millebr01": [
+   {
+    "player": "Brad Miller",
+    "club": "Sacramento Kings",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "millemi01": [
+   {
+    "player": "Mike Miller",
+    "club": "Memphis Grizzlies",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "milleol01": [
+   {
+    "player": "Oliver Miller",
+    "club": "Minnesota Timberwolves",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "millere01": [
+   {
+    "player": "Reggie Miller",
+    "club": "Indiana Pacers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "mingya01": [
+   {
+    "player": "Yao Ming",
+    "club": "Houston Rockets",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "moblecu01": [
+   {
+    "player": "Cuttino Mobley",
+    "club": "Houston Rockets",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "mohamna01": [
+   {
+    "player": "Nazr Mohammed",
+    "club": "Atlanta Hawks",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Nazr Mohammed",
+    "club": "New York Knicks",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "moisoje01": [
+   {
+    "player": "Jérôme Moïso",
+    "club": "Toronto Raptors",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "mooremi01": [
+   {
+    "player": "Mikki Moore",
+    "club": "New Jersey Nets",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   },
+   {
+    "player": "Mikki Moore",
+    "club": "Utah Jazz",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "mournal01": [
+   {
+    "player": "Alonzo Mourning",
+    "club": "New Jersey Nets",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "murphtr01": [
+   {
+    "player": "Troy Murphy",
+    "club": "Golden State Warriors",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "murrala01": [
+   {
+    "player": "Lamond Murray",
+    "club": "Toronto Raptors",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "murraro01": [
+   {
+    "player": "Ronald Murray",
+    "club": "Seattle SuperSonics",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "murratr01": [
+   {
+    "player": "Tracy Murray",
+    "club": "Portland Trail Blazers",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "mutomdi01": [
+   {
+    "player": "Dikembe Mutombo",
+    "club": "New York Knicks",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "nachbbo01": [
+   {
+    "player": "Boštjan Nachbar",
+    "club": "Houston Rockets",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "nailole01": [
+   {
+    "player": "Lee Nailon",
+    "club": "Atlanta Hawks",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Lee Nailon",
+    "club": "Cleveland Cavaliers",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   },
+   {
+    "player": "Lee Nailon",
+    "club": "Orlando Magic",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "najered01": [
+   {
+    "player": "Eduardo Nájera",
+    "club": "Dallas Mavericks",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "nashst01": [
+   {
+    "player": "Steve Nash",
+    "club": "Dallas Mavericks",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "ndiayma02": [
+   {
+    "player": "Mamadou N'Diaye",
+    "club": "Atlanta Hawks",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Mamadou N'Diaye",
+    "club": "Dallas Mavericks",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "nestera01": [
+   {
+    "player": "Rasho Nesterović",
+    "club": "San Antonio Spurs",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "newblir01": [
+   {
+    "player": "Ira Newble",
+    "club": "Cleveland Cavaliers",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "norrimo01": [
+   {
+    "player": "Moochie Norris",
+    "club": "Houston Rockets",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   },
+   {
+    "player": "Moochie Norris",
+    "club": "New York Knicks",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "nowitdi01": [
+   {
+    "player": "Dirk Nowitzki",
+    "club": "Dallas Mavericks",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "oaklech01": [
+   {
+    "player": "Charles Oakley",
+    "club": "Houston Rockets",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "odomla01": [
+   {
+    "player": "Lamar Odom",
+    "club": "Miami Heat",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "okurme01": [
+   {
+    "player": "Mehmet Okur",
+    "club": "Detroit Pistons",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "ollieke01": [
+   {
+    "player": "Kevin Ollie",
+    "club": "Cleveland Cavaliers",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "olowomi01": [
+   {
+    "player": "Michael Olowokandi",
+    "club": "Minnesota Timberwolves",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "onealje01": [
+   {
+    "player": "Jermaine O'Neal",
+    "club": "Indiana Pacers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "onealsh01": [
+   {
+    "player": "Shaquille O'Neal",
+    "club": "Los Angeles Lakers",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "ostergr01": [
+   {
+    "player": "Greg Ostertag",
+    "club": "Utah Jazz",
+    "number": "00",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "outlabo01": [
+   {
+    "player": "Bo Outlaw",
+    "club": "Memphis Grizzlies",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "outlatr01": [
+   {
+    "player": "Travis Outlaw",
+    "club": "Portland Trail Blazers",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "overtdo01": [
+   {
+    "player": "Doug Overton",
+    "club": "Los Angeles Clippers",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   },
+   {
+    "player": "Doug Overton",
+    "club": "New Jersey Nets",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "pachuza01": [
+   {
+    "player": "Zaza Pachulia",
+    "club": "Orlando Magic",
+    "number": "27",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "packro01": [
+   {
+    "player": "Robert Pack",
+    "club": "New Jersey Nets",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "padgesc01": [
+   {
+    "player": "Scott Padgett",
+    "club": "Houston Rockets",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "palacmi01": [
+   {
+    "player": "Milt Palacio",
+    "club": "Toronto Raptors",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "pargoja01": [
+   {
+    "player": "Jannero Pargo",
+    "club": "Chicago Bulls",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   },
+   {
+    "player": "Jannero Pargo",
+    "club": "Los Angeles Lakers",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   },
+   {
+    "player": "Jannero Pargo",
+    "club": "Toronto Raptors",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "parketo01": [
+   {
+    "player": "Tony Parker",
+    "club": "San Antonio Spurs",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "parksch02": [
+   {
+    "player": "Cherokee Parks",
+    "club": "Golden State Warriors",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "patteru01": [
+   {
+    "player": "Ruben Patterson",
+    "club": "Portland Trail Blazers",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "pavloal01": [
+   {
+    "player": "Sasha Pavlović",
+    "club": "Utah Jazz",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "paytoga01": [
+   {
+    "player": "Gary Payton",
+    "club": "Los Angeles Lakers",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "peelean01": [
+   {
+    "player": "Anthony Peeler",
+    "club": "Sacramento Kings",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "penigde01": [
+   {
+    "player": "Desmond Penigar",
+    "club": "Orlando Magic",
+    "number": "26",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "penneki01": [
+   {
+    "player": "Kirk Penney",
+    "club": "Miami Heat",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "perkike01": [
+   {
+    "player": "Kendrick Perkins",
+    "club": "Boston Celtics",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   }
+  ],
+  "persowe01": [
+   {
+    "player": "Wesley Person",
+    "club": "Atlanta Hawks",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Wesley Person",
+    "club": "Memphis Grizzlies",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   },
+   {
+    "player": "Wesley Person",
+    "club": "Portland Trail Blazers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "petermo01": [
+   {
+    "player": "Morris Peterson",
+    "club": "Toronto Raptors",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "piatker01": [
+   {
+    "player": "Eric Piatkowski",
+    "club": "Houston Rockets",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "piercpa01": [
+   {
+    "player": "Paul Pierce",
+    "club": "Boston Celtics",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   }
+  ],
+  "pietrmi01": [
+   {
+    "player": "Mickaël Piétrus",
+    "club": "Golden State Warriors",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "pippesc01": [
+   {
+    "player": "Scottie Pippen",
+    "club": "Chicago Bulls",
+    "number": "33",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   }
+  ],
+  "planizo01": [
+   {
+    "player": "Zoran Planinić",
+    "club": "New Jersey Nets",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "pollasc01": [
+   {
+    "player": "Scot Pollard",
+    "club": "Indiana Pacers",
+    "number": "62",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "polynol01": [
+   {
+    "player": "Olden Polynice",
+    "club": "Los Angeles Clippers",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "popema01": [
+   {
+    "player": "Mark Pope",
+    "club": "Denver Nuggets",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "poseyja01": [
+   {
+    "player": "James Posey",
+    "club": "Memphis Grizzlies",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "potapvi01": [
+   {
+    "player": "Vitaly Potapenko",
+    "club": "Seattle SuperSonics",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "princta01": [
+   {
+    "player": "Tayshaun Prince",
+    "club": "Detroit Pistons",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "przybjo01": [
+   {
+    "player": "Joel Przybilla",
+    "club": "Atlanta Hawks",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Joel Przybilla",
+    "club": "Milwaukee Bucks",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "radmavl01": [
+   {
+    "player": "Vladimir Radmanović",
+    "club": "Seattle SuperSonics",
+    "number": "77",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "randoza01": [
+   {
+    "player": "Zach Randolph",
+    "club": "Portland Trail Blazers",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "ratlith01": [
+   {
+    "player": "Theo Ratliff",
+    "club": "Atlanta Hawks",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Theo Ratliff",
+    "club": "Portland Trail Blazers",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "rebraze01": [
+   {
+    "player": "Željko Rebrača",
+    "club": "Atlanta Hawks",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Željko Rebrača",
+    "club": "Detroit Pistons",
+    "number": "39",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "reddmi01": [
+   {
+    "player": "Michael Redd",
+    "club": "Milwaukee Bucks",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "ricegl01": [
+   {
+    "player": "Glen Rice",
+    "club": "Los Angeles Clippers",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "richaja01": [
+   {
+    "player": "Jason Richardson",
+    "club": "Golden State Warriors",
+    "number": "23",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "richaqu01": [
+   {
+    "player": "Quentin Richardson",
+    "club": "Los Angeles Clippers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "ridnolu01": [
+   {
+    "player": "Luke Ridnour",
+    "club": "Seattle SuperSonics",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "robincl02": [
+   {
+    "player": "Clifford Robinson",
+    "club": "Golden State Warriors",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "robined01": [
+   {
+    "player": "Eddie Robinson",
+    "club": "Chicago Bulls",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   }
+  ],
+  "robingl01": [
+   {
+    "player": "Glenn Robinson",
+    "club": "Philadelphia 76ers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "rogerro01": [
+   {
+    "player": "Rodney Rogers",
+    "club": "New Jersey Nets",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "rooksse01": [
+   {
+    "player": "Sean Rooks",
+    "club": "New Orleans Hornets",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   },
+   {
+    "player": "Sean Rooks",
+    "club": "Orlando Magic",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "roseja01": [
+   {
+    "player": "Jalen Rose",
+    "club": "Chicago Bulls",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   },
+   {
+    "player": "Jalen Rose",
+    "club": "Toronto Raptors",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "rosema01": [
+   {
+    "player": "Malik Rose",
+    "club": "San Antonio Spurs",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "ruffimi01": [
+   {
+    "player": "Michael Ruffin",
+    "club": "Utah Jazz",
+    "number": "51",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "rushka01": [
+   {
+    "player": "Kareem Rush",
+    "club": "Los Angeles Lakers",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "russebr01": [
+   {
+    "player": "Bryon Russell",
+    "club": "Los Angeles Lakers",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "salmojo01": [
+   {
+    "player": "John Salmons",
+    "club": "Philadelphia 76ers",
+    "number": "7",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "sampsja01": [
+   {
+    "player": "Jamal Sampson",
+    "club": "Los Angeles Lakers",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "santida01": [
+   {
+    "player": "Daniel Santiago",
+    "club": "Milwaukee Bucks",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "scalabr01": [
+   {
+    "player": "Brian Scalabrine",
+    "club": "New Jersey Nets",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "sesayan01": [
+   {
+    "player": "Ansu Sesay",
+    "club": "Seattle SuperSonics",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "shirlpa01": [
+   {
+    "player": "Paul Shirley",
+    "club": "Chicago Bulls",
+    "number": "45",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   }
+  ],
+  "simmobo01": [
+   {
+    "player": "Bobby Simmons",
+    "club": "Los Angeles Clippers",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "skinnbr01": [
+   {
+    "player": "Brian Skinner",
+    "club": "Milwaukee Bucks",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "slayta01": [
+   {
+    "player": "Tamar Slay",
+    "club": "New Jersey Nets",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "smithja01": [
+   {
+    "player": "Jabari Smith",
+    "club": "Sacramento Kings",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "smithjo02": [
+   {
+    "player": "Joe Smith",
+    "club": "Milwaukee Bucks",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "smithle01": [
+   {
+    "player": "Leon Smith",
+    "club": "Seattle SuperSonics",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/SEA/2004.html"
+   }
+  ],
+  "smithst01": [
+   {
+    "player": "Steve Smith",
+    "club": "New Orleans Hornets",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "smithth01": [
+   {
+    "player": "Theron Smith",
+    "club": "Memphis Grizzlies",
+    "number": "0",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "snower01": [
+   {
+    "player": "Eric Snow",
+    "club": "Philadelphia 76ers",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "songada01": [
+   {
+    "player": "Darius Songaila",
+    "club": "Sacramento Kings",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "sprewla01": [
+   {
+    "player": "Latrell Sprewell",
+    "club": "Minnesota Timberwolves",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "stackje01": [
+   {
+    "player": "Jerry Stackhouse",
+    "club": "Washington Wizards",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "stepavl01": [
+   {
+    "player": "Vladimir Stepania",
+    "club": "Portland Trail Blazers",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "stevede01": [
+   {
+    "player": "DeShawn Stevenson",
+    "club": "Orlando Magic",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   },
+   {
+    "player": "DeShawn Stevenson",
+    "club": "Utah Jazz",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "stewami01": [
+   {
+    "player": "Michael Stewart",
+    "club": "Boston Celtics",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   },
+   {
+    "player": "Michael Stewart",
+    "club": "Cleveland Cavaliers",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "stojape01": [
+   {
+    "player": "Peja Stojaković",
+    "club": "Sacramento Kings",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "stoudam01": [
+   {
+    "player": "Amar'e Stoudemire",
+    "club": "Phoenix Suns",
+    "number": "32",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "stoudda01": [
+   {
+    "player": "Damon Stoudamire",
+    "club": "Portland Trail Blazers",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "stricer01": [
+   {
+    "player": "Erick Strickland",
+    "club": "Milwaukee Bucks",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   }
+  ],
+  "stricro02": [
+   {
+    "player": "Rod Strickland",
+    "club": "Orlando Magic",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   },
+   {
+    "player": "Rod Strickland",
+    "club": "Toronto Raptors",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "sundobr01": [
+   {
+    "player": "Bruno Šundov",
+    "club": "Cleveland Cavaliers",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   },
+   {
+    "player": "Bruno Šundov",
+    "club": "New York Knicks",
+    "number": "41",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "surabo01": [
+   {
+    "player": "Bob Sura",
+    "club": "Atlanta Hawks",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Bob Sura",
+    "club": "Detroit Pistons",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "sweetmi01": [
+   {
+    "player": "Mike Sweetney",
+    "club": "New York Knicks",
+    "number": "50",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "swiftst01": [
+   {
+    "player": "Stromile Swift",
+    "club": "Memphis Grizzlies",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "szczewa02": [
+   {
+    "player": "Wally Szczerbiak",
+    "club": "Minnesota Timberwolves",
+    "number": "10",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "tayloma01": [
+   {
+    "player": "Maurice Taylor",
+    "club": "Houston Rockets",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "terryja01": [
+   {
+    "player": "Jason Terry",
+    "club": "Atlanta Hawks",
+    "number": "31",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   }
+  ],
+  "thomaet01": [
+   {
+    "player": "Etan Thomas",
+    "club": "Washington Wizards",
+    "number": "36",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "thomake01": [
+   {
+    "player": "Kenny Thomas",
+    "club": "Philadelphia 76ers",
+    "number": "9",
+    "source": "https://www.basketball-reference.com/teams/PHI/2004.html"
+   }
+  ],
+  "thomaku01": [
+   {
+    "player": "Kurt Thomas",
+    "club": "New York Knicks",
+    "number": "40",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "thomati01": [
+   {
+    "player": "Tim Thomas",
+    "club": "Milwaukee Bucks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   },
+   {
+    "player": "Tim Thomas",
+    "club": "New York Knicks",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "tinslja01": [
+   {
+    "player": "Jamaal Tinsley",
+    "club": "Indiana Pacers",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/IND/2004.html"
+   }
+  ],
+  "traylro01": [
+   {
+    "player": "Robert Traylor",
+    "club": "New Orleans Hornets",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "trentga01": [
+   {
+    "player": "Gary Trent",
+    "club": "Minnesota Timberwolves",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/MIN/2004.html"
+   }
+  ],
+  "trepaje01": [
+   {
+    "player": "Jeff Trepagnier",
+    "club": "Denver Nuggets",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "trybace01": [
+   {
+    "player": "Cezary Trybański",
+    "club": "New York Knicks",
+    "number": "5, 14",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html",
+    "note": "Two numbers listed on the team page: changed number during the season."
+   },
+   {
+    "player": "Cezary Trybański",
+    "club": "Phoenix Suns",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "tsakaja01": [
+   {
+    "player": "Jake Tsakalidis",
+    "club": "Memphis Grizzlies",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "tskitni01": [
+   {
+    "player": "Nikoloz Tskitishvili",
+    "club": "Denver Nuggets",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "turkohe01": [
+   {
+    "player": "Hedo Türkoğlu",
+    "club": "San Antonio Spurs",
+    "number": "14",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "udokaim01": [
+   {
+    "player": "Ime Udoka",
+    "club": "Los Angeles Lakers",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "vanexni01": [
+   {
+    "player": "Nick Van Exel",
+    "club": "Golden State Warriors",
+    "number": "37",
+    "source": "https://www.basketball-reference.com/teams/GSW/2004.html"
+   }
+  ],
+  "vanhoke01": [
+   {
+    "player": "Keith Van Horn",
+    "club": "Milwaukee Bucks",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/MIL/2004.html"
+   },
+   {
+    "player": "Keith Van Horn",
+    "club": "New York Knicks",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "vaughja01": [
+   {
+    "player": "Jacque Vaughn",
+    "club": "Atlanta Hawks",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   }
+  ],
+  "voskuja01": [
+   {
+    "player": "Jake Voskuhl",
+    "club": "Phoenix Suns",
+    "number": "43",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "vranesl01": [
+   {
+    "player": "Slavko Vraneš",
+    "club": "Portland Trail Blazers",
+    "number": "29",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "wagneda02": [
+   {
+    "player": "Dajuan Wagner",
+    "club": "Cleveland Cavaliers",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "walkean02": [
+   {
+    "player": "Antoine Walker",
+    "club": "Dallas Mavericks",
+    "number": "8",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   }
+  ],
+  "walkesa01": [
+   {
+    "player": "Samaki Walker",
+    "club": "Miami Heat",
+    "number": "52",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "wallabe01": [
+   {
+    "player": "Ben Wallace",
+    "club": "Detroit Pistons",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "wallage01": [
+   {
+    "player": "Gerald Wallace",
+    "club": "Sacramento Kings",
+    "number": "3",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "wallajo01": [
+   {
+    "player": "John Wallace",
+    "club": "Miami Heat",
+    "number": "22",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "wallara01": [
+   {
+    "player": "Rasheed Wallace",
+    "club": "Atlanta Hawks",
+    "number": "36",
+    "source": "https://www.basketball-reference.com/teams/ATL/2004.html"
+   },
+   {
+    "player": "Rasheed Wallace",
+    "club": "Detroit Pistons",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   },
+   {
+    "player": "Rasheed Wallace",
+    "club": "Portland Trail Blazers",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "waltolu01": [
+   {
+    "player": "Luke Walton",
+    "club": "Los Angeles Lakers",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/LAL/2004.html"
+   }
+  ],
+  "wardch01": [
+   {
+    "player": "Charlie Ward",
+    "club": "New York Knicks",
+    "number": "21",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   },
+   {
+    "player": "Charlie Ward",
+    "club": "San Antonio Spurs",
+    "number": "17",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "watsoea01": [
+   {
+    "player": "Earl Watson",
+    "club": "Memphis Grizzlies",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "weathcl01": [
+   {
+    "player": "Clarence Weatherspoon",
+    "club": "Houston Rockets",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   },
+   {
+    "player": "Clarence Weatherspoon",
+    "club": "New York Knicks",
+    "number": "35",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "webbech01": [
+   {
+    "player": "Chris Webber",
+    "club": "Sacramento Kings",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/SAC/2004.html"
+   }
+  ],
+  "wellsbo01": [
+   {
+    "player": "Bonzi Wells",
+    "club": "Memphis Grizzlies",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   },
+   {
+    "player": "Bonzi Wells",
+    "club": "Portland Trail Blazers",
+    "number": "6",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "welscji01": [
+   {
+    "player": "Jiří Welsch",
+    "club": "Boston Celtics",
+    "number": "44",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   }
+  ],
+  "wesleda01": [
+   {
+    "player": "David Wesley",
+    "club": "New Orleans Hornets",
+    "number": "4",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "westda01": [
+   {
+    "player": "David West",
+    "club": "New Orleans Hornets",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   }
+  ],
+  "whiteja01": [
+   {
+    "player": "Jahidi White",
+    "club": "Phoenix Suns",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   },
+   {
+    "player": "Jahidi White",
+    "club": "Washington Wizards",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "whitero02": [
+   {
+    "player": "Rodney White",
+    "club": "Denver Nuggets",
+    "number": "5",
+    "source": "https://www.basketball-reference.com/teams/DEN/2004.html"
+   }
+  ],
+  "whitnch01": [
+   {
+    "player": "Chris Whitney",
+    "club": "Washington Wizards",
+    "number": "12",
+    "source": "https://www.basketball-reference.com/teams/WAS/2004.html"
+   }
+  ],
+  "wilcoch01": [
+   {
+    "player": "Chris Wilcox",
+    "club": "Los Angeles Clippers",
+    "number": "54",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   }
+  ],
+  "wilksmi01": [
+   {
+    "player": "Mike Wilks",
+    "club": "Houston Rockets",
+    "number": "29",
+    "source": "https://www.basketball-reference.com/teams/HOU/2004.html"
+   }
+  ],
+  "williaa01": [
+   {
+    "player": "Aaron Williams",
+    "club": "New Jersey Nets",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/NJN/2004.html"
+   }
+  ],
+  "willial02": [
+   {
+    "player": "Alvin Williams",
+    "club": "Toronto Raptors",
+    "number": "20",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "willico02": [
+   {
+    "player": "Corliss Williamson",
+    "club": "Detroit Pistons",
+    "number": "34",
+    "source": "https://www.basketball-reference.com/teams/DET/2004.html"
+   }
+  ],
+  "willier01": [
+   {
+    "player": "Eric Williams",
+    "club": "Boston Celtics",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/BOS/2004.html"
+   },
+   {
+    "player": "Eric Williams",
+    "club": "Cleveland Cavaliers",
+    "number": "55",
+    "source": "https://www.basketball-reference.com/teams/CLE/2004.html"
+   }
+  ],
+  "willifr02": [
+   {
+    "player": "Frank Williams",
+    "club": "New York Knicks",
+    "number": "30",
+    "source": "https://www.basketball-reference.com/teams/NYK/2004.html"
+   }
+  ],
+  "willija02": [
+   {
+    "player": "Jason Williams",
+    "club": "Memphis Grizzlies",
+    "number": "2",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "willije01": [
+   {
+    "player": "Jerome Williams",
+    "club": "Chicago Bulls",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/CHI/2004.html"
+   },
+   {
+    "player": "Jerome Williams",
+    "club": "Toronto Raptors",
+    "number": "13",
+    "source": "https://www.basketball-reference.com/teams/TOR/2004.html"
+   }
+  ],
+  "willike02": [
+   {
+    "player": "Kevin Willis",
+    "club": "San Antonio Spurs",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/SAS/2004.html"
+   }
+  ],
+  "willima01": [
+   {
+    "player": "Mo Williams",
+    "club": "Utah Jazz",
+    "number": "25",
+    "source": "https://www.basketball-reference.com/teams/UTA/2004.html"
+   }
+  ],
+  "willisc01": [
+   {
+    "player": "Scott Williams",
+    "club": "Dallas Mavericks",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/DAL/2004.html"
+   },
+   {
+    "player": "Scott Williams",
+    "club": "Phoenix Suns",
+    "number": "47",
+    "source": "https://www.basketball-reference.com/teams/PHO/2004.html"
+   }
+  ],
+  "willish01": [
+   {
+    "player": "Shammond Williams",
+    "club": "New Orleans Hornets",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/NOH/2004.html"
+   },
+   {
+    "player": "Shammond Williams",
+    "club": "Orlando Magic",
+    "number": "11",
+    "source": "https://www.basketball-reference.com/teams/ORL/2004.html"
+   }
+  ],
+  "woodslo01": [
+   {
+    "player": "Loren Woods",
+    "club": "Miami Heat",
+    "number": "1",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ],
+  "woodsqy01": [
+   {
+    "player": "Qyntel Woods",
+    "club": "Portland Trail Blazers",
+    "number": "24",
+    "source": "https://www.basketball-reference.com/teams/POR/2004.html"
+   }
+  ],
+  "wrighlo02": [
+   {
+    "player": "Lorenzen Wright",
+    "club": "Memphis Grizzlies",
+    "number": "42",
+    "source": "https://www.basketball-reference.com/teams/MEM/2004.html"
+   }
+  ],
+  "zhizhwa01": [
+   {
+    "player": "Wang Zhizhi",
+    "club": "Los Angeles Clippers",
+    "number": "16",
+    "source": "https://www.basketball-reference.com/teams/LAC/2004.html"
+   },
+   {
+    "player": "Wang Zhizhi",
+    "club": "Miami Heat",
+    "number": "15",
+    "source": "https://www.basketball-reference.com/teams/MIA/2004.html"
+   }
+  ]
+ },
+ "unresolved": [
+  {
+   "bbr_id": "wadedw01",
+   "player": "Dwyane Wade",
+   "club": "Miami Heat",
+   "source": "https://www.basketball-reference.com/teams/MIA/2004.html",
+   "note": "The real Dwyane Wade is not recorded here: the simulated Wade's uniform number is set by a simulated decision (runtime/jerseys.py)."
+  }
+ ]
+}

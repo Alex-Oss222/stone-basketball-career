@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `clarkke01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Utah Jazz · **Basis:** traded to Utah Jazz on 2003-08-05 (world data) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #7 · **Born:** 1975-04-16 · **Age on card date:** 28  
+**Position:** C (Center) · **Jersey:** #13 · **Born:** 1975-04-16 · **Age on card date:** 28  
 **Registry ID:** `clarkke01` · [Basketball-Reference page](https://www.basketball-reference.com/players/c/clarkke01.html) · ESPN ID 149
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

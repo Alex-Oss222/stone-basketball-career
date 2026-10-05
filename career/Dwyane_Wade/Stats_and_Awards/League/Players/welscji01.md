@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `welscji01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Boston Celtics · **Basis:** traded to Boston Celtics on 2003-10-20 (world data) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #4 · **Born:** 1980-01-27 · **Age on card date:** 24  
+**Position:** SF (Small forward) · **Jersey:** #44 · **Born:** 1980-01-27 · **Age on card date:** 24  
 **Registry ID:** `welscji01` · [Basketball-Reference page](https://www.basketball-reference.com/players/w/welscji01.html) · ESPN ID 1730
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,326,600) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).

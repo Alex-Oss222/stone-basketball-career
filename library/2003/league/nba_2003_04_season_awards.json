@@ -1,0 +1,42 @@
+{
+ "schema_version": 1,
+ "season": "2003-04",
+ "kind": "season_award_calendar",
+ "purpose": "When each 2003-04 end-of-season award was announced, who voted and how ballots were scored, researched October 2026. Dates and rules only: no real 2004 winner or vote is recorded or used.",
+ "regular_season_last_day": "2004-04-14",
+ "ballot_due": {"value": "2004-04-15", "status": "derived", "note": "After the last regular-season games (2004-04-14) and before the first media award (2004-04-19); no source states the deadline."},
+ "awards": [
+  {"id": "dpoy", "name": "Defensive Player of the Year", "announced": "2004-04-19", "electorate": 121, "voters": "media",
+   "ballot": [5, 3, 1], "status": "sourced",
+   "sources": ["https://www2.ljworld.com/news/2004/apr/20/pacers_artest_tapped/", "https://www.basketball-reference.com/awards/awards_2004.html"]},
+  {"id": "roy", "name": "Rookie of the Year", "announced": "2004-04-20", "electorate": 118, "voters": "media",
+   "ballot": [5, 3, 1], "status": "sourced",
+   "sources": ["https://www.nba.com/cavaliers/news/lbj_roy_040420.html", "https://www.basketball-reference.com/awards/awards_2004.html"]},
+  {"id": "coy", "name": "Coach of the Year", "announced": "2004-04-21", "electorate": 122, "voters": "media",
+   "ballot": [5, 3, 1], "status": "sourced",
+   "sources": ["https://www.upi.com/Hubie-Brown-named-NBA-Coach-of-the-Year/35521082575201/", "https://www.basketball-reference.com/awards/awards_2004.html"]},
+  {"id": "mip", "name": "Most Improved Player", "announced": "2004-04-22", "electorate": 121, "voters": "media",
+   "ballot": [5, 3, 1], "status": "sourced",
+   "sources": ["https://www.semissourian.com/sports/sports-briefs-4-23-04-136066", "https://www.basketball-reference.com/awards/awards_2004.html"]},
+  {"id": "smoy", "name": "Sixth Man of the Year", "announced": "2004-04-23", "electorate": 120, "voters": "media",
+   "ballot": [5, 3, 1], "status": "sourced",
+   "sources": ["https://www.semissourian.com/sports/sports-briefs-4-24-04-136145", "https://www.eskimo.com/~pbender/misc/awards04.html"]},
+  {"id": "all_nba", "name": "All-NBA Teams", "announced": "2004-04-25", "electorate": 123, "voters": "media",
+   "ballot": [5, 3, 1], "teams": 3, "by_position": {"G": 2, "F": 2, "C": 1}, "status": "sourced",
+   "sources": ["https://www.nba.com/timberwolves/news/garnett_cassell_allnba_0304.html", "https://www.basketball-reference.com/awards/awards_2004.html"]},
+  {"id": "all_defensive", "name": "All-Defensive Teams", "announced": "2004-04-26", "electorate": 29, "voters": "head coaches, not for their own players",
+   "ballot": [2, 1], "teams": 2, "by_position": {"G": 2, "F": 2, "C": 1}, "status": "sourced",
+   "sources": ["https://www.cbc.ca/sports/basketball/artest-highlights-nba-all-defensive-teams-1.502494"]},
+  {"id": "all_rookie", "name": "All-Rookie Teams", "announced": "2004-04-27", "electorate": 29, "voters": "head coaches, not for their own players",
+   "ballot": [2, 1], "teams": 2, "picks_per_team": 5, "status": "sourced",
+   "sources": ["https://www.nba.com/cavaliers/news/lbj_allrookie_040427.html", "https://www.basketball-reference.com/awards/awards_2004.html"]},
+  {"id": "mvp", "name": "Most Valuable Player", "announced": "2004-05-03", "electorate": 123, "voters": "media",
+   "ballot": [10, 7, 5, 3, 1], "status": "sourced",
+   "sources": ["https://www.nba.com/timberwolves/news/garnett_mvp_0304.html", "https://www.basketball-reference.com/awards/awards_2004.html"]}
+ ],
+ "not_decided": [
+  {"name": "Sportsmanship Award", "announced": "2004-04-24", "reason": "a player-ballot character award with no evidence basis in simulated results"},
+  {"name": "Executive of the Year", "announced": "unverified", "reason": "no sourced 2004 date"},
+  {"name": "J. Walter Kennedy Citizenship Award", "announced": "unverified", "reason": "no sourced 2004 date; a community-service award with no evidence basis in simulated results"}
+ ]
+}

@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `jonesju01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Boston Celtics · **Basis:** traded to Boston Celtics on 2003-07-29 (world data) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #33 · **Born:** 1979-02-10 · **Age on card date:** 25  
+**Position:** SF (Small forward) · **Jersey:** #20 · **Born:** 1979-02-10 · **Age on card date:** 25  
 **Registry ID:** `jonesju01` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jonesju01.html) · ESPN ID 407
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

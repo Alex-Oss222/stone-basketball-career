@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `trepaje01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Denver Nuggets · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #20 · **Born:** 1979-07-11 · **Age on card date:** 24  
+**Position:** SG (Shooting guard) · **Jersey:** #4 · **Born:** 1979-07-11 · **Age on card date:** 24  
 **Registry ID:** `trepaje01` · [Basketball-Reference page](https://www.basketball-reference.com/players/t/trepaje01.html) · ESPN ID 1025
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.

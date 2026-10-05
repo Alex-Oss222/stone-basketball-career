@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `langhda01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** San Antonio Spurs · **Basis:** signing to San Antonio Spurs on 2003-09-29 (world data) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** Unassigned · **Born:** None · **Age on card date:** None  
+**Position:** SF (Small forward) · **Jersey:** #7 · **Born:** None · **Age on card date:** None  
 **Registry ID:** `langhda01`
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

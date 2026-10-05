@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `smithjo02.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Milwaukee Bucks · **Basis:** traded to Milwaukee Bucks on 2003-06-27 (world data) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #32 · **Born:** 1975-07-26 · **Age on card date:** 28  
+**Position:** SF (Small forward) · **Jersey:** #8 · **Born:** 1975-07-26 · **Age on card date:** 28  
 **Registry ID:** `smithjo02` · [Basketball-Reference page](https://www.basketball-reference.com/players/s/smithjo02.html) · ESPN ID 788
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $5,445,600) (league contract inventory status `under_contract`, as of June 26, 2003).

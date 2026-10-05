@@ -147,49 +147,56 @@
      "date": "2004-04-17",
      "home": "Indiana Pacers",
      "away": "New Orleans Hornets",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-17-new-orleans-hornets-at-indiana-pacers"
     },
     {
      "game": 2,
      "date": "2004-04-20",
      "home": "Indiana Pacers",
      "away": "New Orleans Hornets",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-20-new-orleans-hornets-at-indiana-pacers"
     },
     {
      "game": 3,
      "date": "2004-04-23",
      "home": "New Orleans Hornets",
      "away": "Indiana Pacers",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-23-indiana-pacers-at-new-orleans-hornets"
     },
     {
      "game": 4,
      "date": "2004-04-25",
      "home": "New Orleans Hornets",
      "away": "Indiana Pacers",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-25-indiana-pacers-at-new-orleans-hornets"
     },
     {
      "game": 5,
      "date": "2004-04-27",
      "home": "Indiana Pacers",
      "away": "New Orleans Hornets",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-27-new-orleans-hornets-at-indiana-pacers"
     },
     {
      "game": 6,
      "date": "2004-04-29",
      "home": "New Orleans Hornets",
      "away": "Indiana Pacers",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-29-indiana-pacers-at-new-orleans-hornets"
     },
     {
      "game": 7,
      "date": "2004-05-01",
      "home": "Indiana Pacers",
      "away": "New Orleans Hornets",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-05-01-new-orleans-hornets-at-indiana-pacers"
     }
    ]
   },
@@ -217,49 +224,56 @@
      "date": "2004-04-18",
      "home": "Miami Heat",
      "away": "Milwaukee Bucks",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-18-milwaukee-bucks-at-miami-heat"
     },
     {
      "game": 2,
      "date": "2004-04-21",
      "home": "Miami Heat",
      "away": "Milwaukee Bucks",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-21-milwaukee-bucks-at-miami-heat"
     },
     {
      "game": 3,
      "date": "2004-04-24",
      "home": "Milwaukee Bucks",
      "away": "Miami Heat",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-24-miami-heat-at-milwaukee-bucks"
     },
     {
      "game": 4,
      "date": "2004-04-26",
      "home": "Milwaukee Bucks",
      "away": "Miami Heat",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-26-miami-heat-at-milwaukee-bucks"
     },
     {
      "game": 5,
      "date": "2004-04-28",
      "home": "Miami Heat",
      "away": "Milwaukee Bucks",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-28-milwaukee-bucks-at-miami-heat"
     },
     {
      "game": 6,
      "date": "2004-04-30",
      "home": "Milwaukee Bucks",
      "away": "Miami Heat",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-30-miami-heat-at-milwaukee-bucks"
     },
     {
      "game": 7,
      "date": "2004-05-02",
      "home": "Miami Heat",
      "away": "Milwaukee Bucks",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-05-02-milwaukee-bucks-at-miami-heat"
     }
    ]
   },
@@ -287,49 +301,56 @@
      "date": "2004-04-18",
      "home": "Detroit Pistons",
      "away": "Toronto Raptors",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-18-toronto-raptors-at-detroit-pistons"
     },
     {
      "game": 2,
      "date": "2004-04-21",
      "home": "Detroit Pistons",
      "away": "Toronto Raptors",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-21-toronto-raptors-at-detroit-pistons"
     },
     {
      "game": 3,
      "date": "2004-04-24",
      "home": "Toronto Raptors",
      "away": "Detroit Pistons",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-24-detroit-pistons-at-toronto-raptors"
     },
     {
      "game": 4,
      "date": "2004-04-26",
      "home": "Toronto Raptors",
      "away": "Detroit Pistons",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-26-detroit-pistons-at-toronto-raptors"
     },
     {
      "game": 5,
      "date": "2004-04-28",
      "home": "Detroit Pistons",
      "away": "Toronto Raptors",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-28-toronto-raptors-at-detroit-pistons"
     },
     {
      "game": 6,
      "date": "2004-04-30",
      "home": "Toronto Raptors",
      "away": "Detroit Pistons",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-30-detroit-pistons-at-toronto-raptors"
     },
     {
      "game": 7,
      "date": "2004-05-02",
      "home": "Detroit Pistons",
      "away": "Toronto Raptors",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-05-02-toronto-raptors-at-detroit-pistons"
     }
    ]
   },
@@ -357,49 +378,56 @@
      "date": "2004-04-17",
      "home": "New Jersey Nets",
      "away": "Atlanta Hawks",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-17-atlanta-hawks-at-new-jersey-nets"
     },
     {
      "game": 2,
      "date": "2004-04-20",
      "home": "New Jersey Nets",
      "away": "Atlanta Hawks",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-20-atlanta-hawks-at-new-jersey-nets"
     },
     {
      "game": 3,
      "date": "2004-04-23",
      "home": "Atlanta Hawks",
      "away": "New Jersey Nets",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-23-new-jersey-nets-at-atlanta-hawks"
     },
     {
      "game": 4,
      "date": "2004-04-25",
      "home": "Atlanta Hawks",
      "away": "New Jersey Nets",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-25-new-jersey-nets-at-atlanta-hawks"
     },
     {
      "game": 5,
      "date": "2004-04-27",
      "home": "New Jersey Nets",
      "away": "Atlanta Hawks",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-27-atlanta-hawks-at-new-jersey-nets"
     },
     {
      "game": 6,
      "date": "2004-04-29",
      "home": "Atlanta Hawks",
      "away": "New Jersey Nets",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-29-new-jersey-nets-at-atlanta-hawks"
     },
     {
      "game": 7,
      "date": "2004-05-01",
      "home": "New Jersey Nets",
      "away": "Atlanta Hawks",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-05-01-atlanta-hawks-at-new-jersey-nets"
     }
    ]
   },
@@ -427,49 +455,56 @@
      "date": "2004-04-18",
      "home": "Minnesota Timberwolves",
      "away": "Memphis Grizzlies",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-18-memphis-grizzlies-at-minnesota-timberwolves"
     },
     {
      "game": 2,
      "date": "2004-04-21",
      "home": "Minnesota Timberwolves",
      "away": "Memphis Grizzlies",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-21-memphis-grizzlies-at-minnesota-timberwolves"
     },
     {
      "game": 3,
      "date": "2004-04-24",
      "home": "Memphis Grizzlies",
      "away": "Minnesota Timberwolves",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-24-minnesota-timberwolves-at-memphis-grizzlies"
     },
     {
      "game": 4,
      "date": "2004-04-26",
      "home": "Memphis Grizzlies",
      "away": "Minnesota Timberwolves",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-26-minnesota-timberwolves-at-memphis-grizzlies"
     },
     {
      "game": 5,
      "date": "2004-04-28",
      "home": "Minnesota Timberwolves",
      "away": "Memphis Grizzlies",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-28-memphis-grizzlies-at-minnesota-timberwolves"
     },
     {
      "game": 6,
      "date": "2004-04-30",
      "home": "Memphis Grizzlies",
      "away": "Minnesota Timberwolves",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-30-minnesota-timberwolves-at-memphis-grizzlies"
     },
     {
      "game": 7,
      "date": "2004-05-02",
      "home": "Minnesota Timberwolves",
      "away": "Memphis Grizzlies",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-05-02-memphis-grizzlies-at-minnesota-timberwolves"
     }
    ]
   },
@@ -497,49 +532,56 @@
      "date": "2004-04-17",
      "home": "Dallas Mavericks",
      "away": "Denver Nuggets",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-17-denver-nuggets-at-dallas-mavericks"
     },
     {
      "game": 2,
      "date": "2004-04-20",
      "home": "Dallas Mavericks",
      "away": "Denver Nuggets",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-20-denver-nuggets-at-dallas-mavericks"
     },
     {
      "game": 3,
      "date": "2004-04-23",
      "home": "Denver Nuggets",
      "away": "Dallas Mavericks",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-23-dallas-mavericks-at-denver-nuggets"
     },
     {
      "game": 4,
      "date": "2004-04-25",
      "home": "Denver Nuggets",
      "away": "Dallas Mavericks",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-25-dallas-mavericks-at-denver-nuggets"
     },
     {
      "game": 5,
      "date": "2004-04-27",
      "home": "Dallas Mavericks",
      "away": "Denver Nuggets",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-27-denver-nuggets-at-dallas-mavericks"
     },
     {
      "game": 6,
      "date": "2004-04-29",
      "home": "Denver Nuggets",
      "away": "Dallas Mavericks",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-29-dallas-mavericks-at-denver-nuggets"
     },
     {
      "game": 7,
      "date": "2004-05-01",
      "home": "Dallas Mavericks",
      "away": "Denver Nuggets",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-05-01-denver-nuggets-at-dallas-mavericks"
     }
    ]
   },
@@ -567,49 +609,56 @@
      "date": "2004-04-17",
      "home": "San Antonio Spurs",
      "away": "Golden State Warriors",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-17-golden-state-warriors-at-san-antonio-spurs"
     },
     {
      "game": 2,
      "date": "2004-04-20",
      "home": "San Antonio Spurs",
      "away": "Golden State Warriors",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-20-golden-state-warriors-at-san-antonio-spurs"
     },
     {
      "game": 3,
      "date": "2004-04-23",
      "home": "Golden State Warriors",
      "away": "San Antonio Spurs",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-23-san-antonio-spurs-at-golden-state-warriors"
     },
     {
      "game": 4,
      "date": "2004-04-25",
      "home": "Golden State Warriors",
      "away": "San Antonio Spurs",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-25-san-antonio-spurs-at-golden-state-warriors"
     },
     {
      "game": 5,
      "date": "2004-04-27",
      "home": "San Antonio Spurs",
      "away": "Golden State Warriors",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-27-golden-state-warriors-at-san-antonio-spurs"
     },
     {
      "game": 6,
      "date": "2004-04-29",
      "home": "Golden State Warriors",
      "away": "San Antonio Spurs",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-29-san-antonio-spurs-at-golden-state-warriors"
     },
     {
      "game": 7,
      "date": "2004-05-01",
      "home": "San Antonio Spurs",
      "away": "Golden State Warriors",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-05-01-golden-state-warriors-at-san-antonio-spurs"
     }
    ]
   },
@@ -637,49 +686,56 @@
      "date": "2004-04-18",
      "home": "Sacramento Kings",
      "away": "Los Angeles Lakers",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-18-los-angeles-lakers-at-sacramento-kings"
     },
     {
      "game": 2,
      "date": "2004-04-21",
      "home": "Sacramento Kings",
      "away": "Los Angeles Lakers",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-21-los-angeles-lakers-at-sacramento-kings"
     },
     {
      "game": 3,
      "date": "2004-04-24",
      "home": "Los Angeles Lakers",
      "away": "Sacramento Kings",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-24-sacramento-kings-at-los-angeles-lakers"
     },
     {
      "game": 4,
      "date": "2004-04-26",
      "home": "Los Angeles Lakers",
      "away": "Sacramento Kings",
-     "conditional": false
+     "conditional": false,
+     "event_id": "2004-04-26-sacramento-kings-at-los-angeles-lakers"
     },
     {
      "game": 5,
      "date": "2004-04-28",
      "home": "Sacramento Kings",
      "away": "Los Angeles Lakers",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-28-los-angeles-lakers-at-sacramento-kings"
     },
     {
      "game": 6,
      "date": "2004-04-30",
      "home": "Los Angeles Lakers",
      "away": "Sacramento Kings",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-04-30-sacramento-kings-at-los-angeles-lakers"
     },
     {
      "game": 7,
      "date": "2004-05-02",
      "home": "Sacramento Kings",
      "away": "Los Angeles Lakers",
-     "conditional": true
+     "conditional": true,
+     "event_id": "2004-05-02-los-angeles-lakers-at-sacramento-kings"
     }
    ]
   }

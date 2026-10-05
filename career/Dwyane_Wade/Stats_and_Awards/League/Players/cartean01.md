@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `cartean01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Miami Heat · **Basis:** held by Miami (held until his June 30 player-option decision; closed then if he declines) · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** #25 · **Born:** 1975-06-16 · **Age on card date:** 28  
+**Position:** PG (Point guard) · **Jersey:** #7 · **Born:** 1975-06-16 · **Age on card date:** 28  
 **Registry ID:** `cartean01` · [Basketball-Reference page](https://www.basketball-reference.com/players/c/cartean01.html) · ESPN ID 137
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).

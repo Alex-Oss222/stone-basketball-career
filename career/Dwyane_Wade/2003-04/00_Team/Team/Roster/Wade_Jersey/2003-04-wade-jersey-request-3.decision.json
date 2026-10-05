@@ -1,0 +1,11 @@
+{
+ "event_id": "2003-04-wade-jersey-request-3",
+ "date": "2004-04-14",
+ "question": "Does LaPhonso Ellis give jersey #3 to Dwyane Wade?",
+ "decider": "LaPhonso Ellis (simulated player)",
+ "options": {
+  "accept": 0.6,
+  "decline": 0.4
+ },
+ "basis": "Wade's request for #3 (the user's decision for Wade); LaPhonso Ellis wears it. Judgement: a veteran reserve usually obliges a starting teammate who asks, often for a gift (0.6); Wade's standing on the date: rookie. runtime/jerseys.py"
+}

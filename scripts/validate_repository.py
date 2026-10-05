@@ -678,6 +678,8 @@ def validate():
 
     from runtime.award_decisions import award_errors
     errors.extend(award_errors(ROOT))
+    from runtime.season_awards import season_award_errors
+    errors.extend(season_award_errors(ROOT))
 
     from runtime.club_replacements import replacement_errors
     errors.extend(replacement_errors(ROOT))
@@ -687,10 +689,10 @@ def validate():
     from runtime.rotation_reviews import review_errors
     errors.extend(review_errors(ROOT))
     errors.extend(miami_roster_errors(ROOT))
-    from runtime.season_games import is_league_slate
+    from runtime.season_games import is_league_record
     for request in find_requests(ROOT):
-        if is_league_slate(request):
-            continue                      # the league slate has no game notes: its results are league records
+        if is_league_record(request):
+            continue                      # league slate and playoff games have no game notes: their results are league records
         note=request.with_name(request.name.replace(".request.json",".md"))
         require(errors,note.is_file(),f"{request.relative_to(ROOT)}: no matching game note {note.name}")
 

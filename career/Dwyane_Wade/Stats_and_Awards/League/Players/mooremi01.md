@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `mooremi01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** New Jersey Nets · **Basis:** signing to New Jersey Nets on 2003-12-22 (world data) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #38 · **Born:** 1975-11-04 · **Age on card date:** 28  
+**Position:** C (Center) · **Jersey:** #45 · **Born:** 1975-11-04 · **Age on card date:** 28  
 **Registry ID:** `mooremi01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/mooremi01.html) · ESPN ID 575
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

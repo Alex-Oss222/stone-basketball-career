@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `malonka01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Los Angeles Lakers · **Basis:** signing to Los Angeles Lakers on 2003-07-16 (world data) · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** #32 · **Born:** 1963-07-24 · **Age on card date:** 40  
+**Position:** PF (Power forward) · **Jersey:** #11 · **Born:** 1963-07-24 · **Age on card date:** 40  
 **Registry ID:** `malonka01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/malonka01.html) · ESPN ID 501
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

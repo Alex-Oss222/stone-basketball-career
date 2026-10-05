@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `anderch01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Denver Nuggets · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #15 · **Born:** 1978-07-07 · **Age on card date:** 25  
+**Position:** C (Center) · **Jersey:** #12 · **Born:** 1978-07-07 · **Age on card date:** 25  
 **Registry ID:** `anderch01` · [Basketball-Reference page](https://www.basketball-reference.com/players/a/anderch01.html) · ESPN ID 1135
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

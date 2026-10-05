@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `hassetr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Minnesota Timberwolves · **Basis:** signing to Minnesota Timberwolves on 2003-10-28 (world data) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #44 · **Born:** 1979-03-04 · **Age on card date:** 25  
+**Position:** SG (Shooting guard) · **Jersey:** #23 · **Born:** 1979-03-04 · **Age on card date:** 25  
 **Registry ID:** `hassetr01` · [Basketball-Reference page](https://www.basketball-reference.com/players/h/hassetr01.html) · ESPN ID 998
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $638,679) (league contract inventory status `under_contract`, as of June 26, 2003).

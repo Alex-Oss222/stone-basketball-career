@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `turkohe01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** San Antonio Spurs · **Basis:** traded to San Antonio Spurs on 2003-07-24 (world data) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #5 · **Born:** 1979-03-19 · **Age on card date:** 25  
+**Position:** SF (Small forward) · **Jersey:** #14 · **Born:** 1979-03-19 · **Age on card date:** 25  
 **Registry ID:** `turkohe01` · [Basketball-Reference page](https://www.basketball-reference.com/players/t/turkohe01.html) · ESPN ID 862
 
 **Contract/control:** Under rookie scale contract; through 2003-04 (2003-04 scheduled $1,995,611) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).

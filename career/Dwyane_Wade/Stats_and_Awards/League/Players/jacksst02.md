@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `jacksst02.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Miami Heat · **Basis:** held by Miami (camp contract 2003-09-30 (camp_roster.json)) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #3 · **Born:** 1978-04-05 · **Age on card date:** 26  
+**Position:** SG (Shooting guard) · **Jersey:** #1 · **Born:** 1978-04-05 · **Age on card date:** 26  
 **Registry ID:** `jacksst02` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jacksst02.html) · ESPN ID 378
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

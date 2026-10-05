@@ -527,7 +527,9 @@ def card_data(ctx, player, records=(), shots=()):
         entry = snap.get("entry")
         measurements = f'{ctx.identity["height_in_shoes"]} (in shoes) · {ctx.identity["weight_lb"]} lb · shoots {ctx.identity["shooting_hand"]}'
     else:
-        jersey = base.get("jersey") or None
+        from .jerseys import number_for
+        jersey = number_for(pid, held["club"], ctx.root) if held["club"] else None
+        jersey = jersey or base.get("jersey") or None              # real 2003-04 number, else the 2002-03 one
         prior_program = None
         entry = None
         measurements = None

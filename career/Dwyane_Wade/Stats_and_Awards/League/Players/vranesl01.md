@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `vranesl01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** New York Knicks · **Basis:** under contract: on the Portland Trail Blazers roster in a closed game on 2003-10-29; signing date not recorded · **League:** NBA  
-**Position:** C (Center) · **Jersey:** Unassigned · **Born:** 1983-01-30 · **Age on card date:** 21  
+**Position:** C (Center) · **Jersey:** #29 · **Born:** 1983-01-30 · **Age on card date:** 21  
 **Registry ID:** `vranesl01` · [Basketball-Reference page](https://www.basketball-reference.com/players/v/vranesl01.html) · ESPN ID 2176
 
 **Contract/control:** Under contract with New York Knicks: on the Portland Trail Blazers roster in a closed game on 2003-10-29; signing date not recorded. The world data does not record this rookie contract's terms.

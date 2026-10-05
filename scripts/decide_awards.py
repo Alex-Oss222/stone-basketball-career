@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Close the weekly and monthly NBA awards announced on or before the career clock (`runtime/award_decisions.py`).
+"""Close the weekly, monthly and season NBA awards announced on or before the career clock (`runtime/award_decisions.py`,
+`runtime/season_awards.py`).
 
     python scripts/decide_awards.py --write     decide every award now due; record it and update the pages
     python scripts/decide_awards.py --check     list awards due but not decided; write nothing
@@ -14,7 +15,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from runtime import award_decisions                                   # noqa: E402
+from runtime import award_decisions, season_awards                    # noqa: E402
 
 
 def main():
@@ -24,12 +25,17 @@ def main():
     group.add_argument("--check", action="store_true")
     args = parser.parse_args()
     if args.check:
-        errors = award_decisions.award_errors(ROOT)
+        errors = award_decisions.award_errors(ROOT) + season_awards.season_award_errors(ROOT)
         print("\n".join(errors) or "Every award due is decided.")
         return 1 if errors else 0
     new = award_decisions.decide(ROOT)
     for d in new:
         print(f"{d['announced_on']}  {d['conference']} {d['name']} ({d['period_start']} to {d['period_end']}): {d['winner'] or 'no award'}")
+    season = season_awards.decide(ROOT)
+    for d in season:
+        named = d.get("winners") or [p["player"] for t in d["teams"] for p in t["players"]]
+        print(f"{d['announced_on']}  {d['name']}: {', '.join(named)}")
+    new = new + season
     print(f"{len(new)} decision(s) closed")
     if new:
         from scripts.refresh_career_views import refresh_career_views

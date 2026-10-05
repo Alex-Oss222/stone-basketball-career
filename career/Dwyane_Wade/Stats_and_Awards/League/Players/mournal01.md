@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `mournal01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** New Jersey Nets · **Basis:** signing to New Jersey Nets on 2003-07-16 (world data) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** Unassigned · **Born:** None · **Age on card date:** None  
+**Position:** C (Center) · **Jersey:** #33 · **Born:** None · **Age on card date:** None  
 **Registry ID:** `mournal01`
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

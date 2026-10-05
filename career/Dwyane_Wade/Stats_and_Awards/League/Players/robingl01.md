@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `robingl01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Philadelphia 76ers · **Basis:** traded to Philadelphia 76ers on 2003-07-23 (world data) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #13 · **Born:** 1973-01-10 · **Age on card date:** 31  
+**Position:** SF (Small forward) · **Jersey:** #31 · **Born:** 1973-01-10 · **Age on card date:** 31  
 **Registry ID:** `robingl01` · [Basketball-Reference page](https://www.basketball-reference.com/players/r/robingl01.html) · ESPN ID 717
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $10,730,000) (league contract inventory status `under_contract`, as of June 26, 2003).

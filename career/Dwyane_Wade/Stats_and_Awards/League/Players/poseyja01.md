@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `poseyja01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Memphis Grizzlies · **Basis:** signing to Memphis Grizzlies on 2003-08-09 (world data) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #55 · **Born:** 1977-01-13 · **Age on card date:** 27  
+**Position:** SF (Small forward) · **Jersey:** #41 · **Born:** 1977-01-13 · **Age on card date:** 27  
 **Registry ID:** `poseyja01` · [Basketball-Reference page](https://www.basketball-reference.com/players/p/poseyja01.html) · ESPN ID 671
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

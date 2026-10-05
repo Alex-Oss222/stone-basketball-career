@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `stepavl01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Portland Trail Blazers · **Basis:** signing to Portland Trail Blazers on 2003-10-23 (world data) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #50 · **Born:** 1976-05-08 · **Age on card date:** 27  
+**Position:** C (Center) · **Jersey:** #11 · **Born:** 1976-05-08 · **Age on card date:** 27  
 **Registry ID:** `stepavl01` · [Basketball-Reference page](https://www.basketball-reference.com/players/s/stepavl01.html) · ESPN ID 805
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

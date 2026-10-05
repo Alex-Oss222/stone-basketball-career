@@ -61,13 +61,13 @@ WEST
 
 ```
 
-## First-round schedule
+## First round
 
-### East (1) Indiana Pacers vs (8) New Orleans Hornets
+### East: (1) Indiana Pacers vs (8) New Orleans Hornets
 
-Home court: Indiana Pacers. Series 0-0.
+Home court: Indiana Pacers. Series Indiana Pacers 0, New Orleans Hornets 0.
 
-| Game | Date | Home | Away | |
+| Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 17 | Indiana Pacers | New Orleans Hornets |  |
 | 2 | Tue Apr 20 | Indiana Pacers | New Orleans Hornets |  |
@@ -77,11 +77,11 @@ Home court: Indiana Pacers. Series 0-0.
 | 6 | Thu Apr 29 | New Orleans Hornets | Indiana Pacers | if needed |
 | 7 | Sat May 1 | Indiana Pacers | New Orleans Hornets | if needed |
 
-### East (4) Miami Heat vs (5) Milwaukee Bucks
+### East: (4) Miami Heat vs (5) Milwaukee Bucks
 
-Home court: Miami Heat. Series 0-0.
+Home court: Miami Heat. Series Miami Heat 0, Milwaukee Bucks 0.
 
-| Game | Date | Home | Away | |
+| Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 18 | Miami Heat | Milwaukee Bucks |  |
 | 2 | Wed Apr 21 | Miami Heat | Milwaukee Bucks |  |
@@ -91,11 +91,11 @@ Home court: Miami Heat. Series 0-0.
 | 6 | Fri Apr 30 | Milwaukee Bucks | Miami Heat | if needed |
 | 7 | Sun May 2 | Miami Heat | Milwaukee Bucks | if needed |
 
-### East (3) Detroit Pistons vs (6) Toronto Raptors
+### East: (3) Detroit Pistons vs (6) Toronto Raptors
 
-Home court: Detroit Pistons. Series 0-0.
+Home court: Detroit Pistons. Series Detroit Pistons 0, Toronto Raptors 0.
 
-| Game | Date | Home | Away | |
+| Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 18 | Detroit Pistons | Toronto Raptors |  |
 | 2 | Wed Apr 21 | Detroit Pistons | Toronto Raptors |  |
@@ -105,11 +105,11 @@ Home court: Detroit Pistons. Series 0-0.
 | 6 | Fri Apr 30 | Toronto Raptors | Detroit Pistons | if needed |
 | 7 | Sun May 2 | Detroit Pistons | Toronto Raptors | if needed |
 
-### East (2) New Jersey Nets vs (7) Atlanta Hawks
+### East: (2) New Jersey Nets vs (7) Atlanta Hawks
 
-Home court: New Jersey Nets. Series 0-0.
+Home court: New Jersey Nets. Series New Jersey Nets 0, Atlanta Hawks 0.
 
-| Game | Date | Home | Away | |
+| Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 17 | New Jersey Nets | Atlanta Hawks |  |
 | 2 | Tue Apr 20 | New Jersey Nets | Atlanta Hawks |  |
@@ -119,11 +119,11 @@ Home court: New Jersey Nets. Series 0-0.
 | 6 | Thu Apr 29 | Atlanta Hawks | New Jersey Nets | if needed |
 | 7 | Sat May 1 | New Jersey Nets | Atlanta Hawks | if needed |
 
-### West (1) Minnesota Timberwolves vs (8) Memphis Grizzlies
+### West: (1) Minnesota Timberwolves vs (8) Memphis Grizzlies
 
-Home court: Minnesota Timberwolves. Series 0-0.
+Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 0, Memphis Grizzlies 0.
 
-| Game | Date | Home | Away | |
+| Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 18 | Minnesota Timberwolves | Memphis Grizzlies |  |
 | 2 | Wed Apr 21 | Minnesota Timberwolves | Memphis Grizzlies |  |
@@ -133,11 +133,11 @@ Home court: Minnesota Timberwolves. Series 0-0.
 | 6 | Fri Apr 30 | Memphis Grizzlies | Minnesota Timberwolves | if needed |
 | 7 | Sun May 2 | Minnesota Timberwolves | Memphis Grizzlies | if needed |
 
-### West (4) Dallas Mavericks vs (5) Denver Nuggets
+### West: (4) Dallas Mavericks vs (5) Denver Nuggets
 
-Home court: Dallas Mavericks. Series 0-0.
+Home court: Dallas Mavericks. Series Dallas Mavericks 0, Denver Nuggets 0.
 
-| Game | Date | Home | Away | |
+| Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 17 | Dallas Mavericks | Denver Nuggets |  |
 | 2 | Tue Apr 20 | Dallas Mavericks | Denver Nuggets |  |
@@ -147,11 +147,11 @@ Home court: Dallas Mavericks. Series 0-0.
 | 6 | Thu Apr 29 | Denver Nuggets | Dallas Mavericks | if needed |
 | 7 | Sat May 1 | Dallas Mavericks | Denver Nuggets | if needed |
 
-### West (3) San Antonio Spurs vs (6) Golden State Warriors
+### West: (3) San Antonio Spurs vs (6) Golden State Warriors
 
-Home court: San Antonio Spurs. Series 0-0.
+Home court: San Antonio Spurs. Series San Antonio Spurs 0, Golden State Warriors 0.
 
-| Game | Date | Home | Away | |
+| Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sat Apr 17 | San Antonio Spurs | Golden State Warriors |  |
 | 2 | Tue Apr 20 | San Antonio Spurs | Golden State Warriors |  |
@@ -161,11 +161,11 @@ Home court: San Antonio Spurs. Series 0-0.
 | 6 | Thu Apr 29 | Golden State Warriors | San Antonio Spurs | if needed |
 | 7 | Sat May 1 | San Antonio Spurs | Golden State Warriors | if needed |
 
-### West (2) Sacramento Kings vs (7) Los Angeles Lakers
+### West: (2) Sacramento Kings vs (7) Los Angeles Lakers
 
-Home court: Sacramento Kings. Series 0-0.
+Home court: Sacramento Kings. Series Sacramento Kings 0, Los Angeles Lakers 0.
 
-| Game | Date | Home | Away | |
+| Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 18 | Sacramento Kings | Los Angeles Lakers |  |
 | 2 | Wed Apr 21 | Sacramento Kings | Los Angeles Lakers |  |

@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `johnsav01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Golden State Warriors · **Basis:** traded to Golden State Warriors on 2003-08-18 (world data) · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** Unassigned · **Born:** None · **Age on card date:** None  
+**Position:** PG (Point guard) · **Jersey:** #6 · **Born:** None · **Age on card date:** None  
 **Registry ID:** `johnsav01`
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $5,445,600) (league contract inventory status `under_contract`, as of June 26, 2003).

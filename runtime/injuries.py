@@ -34,6 +34,8 @@ def rest_days(season, team, game_date, root=ROOT):
     day = date.fromisoformat(game_date)
     before = [date.fromisoformat(g["date"]) for g in json.loads(path.read_text(encoding="utf-8"))["games"]
               if team in (g["home"], g["away"]) and g["date"] < game_date]
+    from . import playoffs
+    before += [date.fromisoformat(d) for d in playoffs.club_dates(playoffs.read(root), team) if d < game_date]
     return MAX_REST if not before else max(0, min(MAX_REST, (day - max(before)).days - 1))
 
 

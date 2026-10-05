@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `mccoyje01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Toronto Raptors · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #4 · **Born:** 1977-12-06 · **Age on card date:** 26  
+**Position:** C (Center) · **Jersey:** #32 · **Born:** 1977-12-06 · **Age on card date:** 26  
 **Registry ID:** `mccoyje01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/mccoyje01.html) · ESPN ID 525
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).

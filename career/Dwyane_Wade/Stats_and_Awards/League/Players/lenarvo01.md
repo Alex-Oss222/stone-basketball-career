@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `lenarvo01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Denver Nuggets · **Basis:** signing to Denver Nuggets on 2003-09-12 (world data) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #2 · **Born:** 1973-05-14 · **Age on card date:** 30  
+**Position:** SG (Shooting guard) · **Jersey:** #1 · **Born:** 1973-05-14 · **Age on card date:** 30  
 **Registry ID:** `lenarvo01` · [Basketball-Reference page](https://www.basketball-reference.com/players/l/lenarvo01.html) · ESPN ID 465
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `bellra01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Utah Jazz · **Basis:** signing to Utah Jazz on 2003-09-26 (world data) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #11 · **Born:** 1976-09-19 · **Age on card date:** 27  
+**Position:** SG (Shooting guard) · **Jersey:** #19 · **Born:** 1976-09-19 · **Age on card date:** 27  
 **Registry ID:** `bellra01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/bellra01.html) · ESPN ID 49
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

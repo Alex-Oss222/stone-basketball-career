@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `dunlemi02.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Golden State Warriors · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #10 · **Born:** 1980-09-15 · **Age on card date:** 23  
+**Position:** SF (Small forward) · **Jersey:** #34 · **Born:** 1980-09-15 · **Age on card date:** 23  
 **Registry ID:** `dunlemi02` · [Basketball-Reference page](https://www.basketball-reference.com/players/d/dunlemi02.html) · ESPN ID 1708
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $3,332,520) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).

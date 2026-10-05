@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `fordal02.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Orlando Magic · **Basis:** signing to Orlando Magic on 2003-09-29 (world data) · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** Unassigned · **Born:** None · **Age on card date:** None  
+**Position:** PF (Power forward) · **Jersey:** #1 · **Born:** None · **Age on card date:** None  
 **Registry ID:** `fordal02`
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

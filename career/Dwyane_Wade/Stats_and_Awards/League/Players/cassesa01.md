@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `cassesa01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Minnesota Timberwolves · **Basis:** traded to Minnesota Timberwolves on 2003-06-27 (world data) · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** #10 · **Born:** 1969-11-18 · **Age on card date:** 34  
+**Position:** PG (Point guard) · **Jersey:** #19 · **Born:** 1969-11-18 · **Age on card date:** 34  
 **Registry ID:** `cassesa01` · [Basketball-Reference page](https://www.basketball-reference.com/players/c/cassesa01.html) · ESPN ID 138
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $5,062,500) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).

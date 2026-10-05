@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `mercero01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** San Antonio Spurs · **Basis:** traded to San Antonio Spurs on 2003-07-24 (world data) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #5 · **Born:** 1976-05-18 · **Age on card date:** 27  
+**Position:** SG (Shooting guard) · **Jersey:** #33 · **Born:** 1976-05-18 · **Age on card date:** 27  
 **Registry ID:** `mercero01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/mercero01.html) · ESPN ID 546
 
 **Contract/control:** Under contract; through 2003-04 (2003-04 scheduled $6,750,000) (league contract inventory status `under_contract`, as of June 26, 2003).

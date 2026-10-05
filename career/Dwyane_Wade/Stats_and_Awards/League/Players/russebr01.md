@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `russebr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Los Angeles Lakers · **Basis:** signing to Los Angeles Lakers on 2003-10-01 (world data) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #2 · **Born:** 1970-12-31 · **Age on card date:** 33  
+**Position:** SF (Small forward) · **Jersey:** #9 · **Born:** 1970-12-31 · **Age on card date:** 33  
 **Registry ID:** `russebr01` · [Basketball-Reference page](https://www.basketball-reference.com/players/r/russebr01.html) · ESPN ID 742
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

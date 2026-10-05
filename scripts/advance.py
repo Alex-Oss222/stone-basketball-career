@@ -13,6 +13,9 @@ Each day runs the dated systems in order, each idempotent, so a stopped day can 
      inputs frozen (`game_requests.freeze`) and checked against the dated records;
   5. awards announced that morning are decided (an exact tie is an engine draw);
   6. the day's games are played through the engine's direct route and written back into the career record.
+After the regular season (April 14) a day is: season awards announced that morning, the day's playoff games built
+(`scripts/playoff_day.py`, Miami's one at a time) and played, then the bracket brought up to date; the market,
+trade scan and staff reviews are closed.
 
 Every chance answer is an engine draw; nothing here chooses an outcome. Each day writes results back lightly (notes,
 injuries, registry, team records). Every Sunday the full write-back, page rebuild and repository validation run;
@@ -37,7 +40,13 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 os.environ.setdefault("ADVANCE_LIGHT", "1")         # builders skip the report rebuild; the checkpoint does it
 STATE = ROOT / "career/Dwyane_Wade/2003-04/current_state.json"
-MIAMI_RESULTS = "career/Dwyane_Wade/2003-04/06_Regular_Season/*/*/Game_*.result.json"
+MIAMI_RESULTS = ("career/Dwyane_Wade/2003-04/06_Regular_Season/*/*/Game_*.result.json",
+                 "career/Dwyane_Wade/2003-04/08_Playoffs/*/Game_*.result.json")
+SEASON_END = "2004-04-14"
+
+
+def miami_results():
+    return [p for pattern in MIAMI_RESULTS for p in ROOT.glob(pattern)]
 
 
 class Stop(Exception):
@@ -156,7 +165,7 @@ def play(day):
 
 
 def summary(day):
-    for path in sorted(ROOT.glob(MIAMI_RESULTS)):
+    for path in sorted(miami_results()):
         r = json.loads(path.read_text(encoding="utf-8"))
         if r["game_date"] != day:
             continue
@@ -164,11 +173,29 @@ def summary(day):
         other = "away" if side == "home" else "home"
         won = r["final_score"][side] > r["final_score"][other]
         say(f"    Miami {'W' if won else 'L'} {r['final_score'][side]}-{r['final_score'][other]} "
-            f"{'vs' if side == 'home' else 'at'} {r[other]}")
+            f"{'vs' if side == 'home' else 'at'} {r[other]}" + (" (playoffs)" if r.get("game_type") == "playoff" else ""))
         for p in r["player_stats"][side]:
             if p["player_id"] == "Dwyane Wade":
                 say(f"    Wade {p['minutes']:.1f} min, {p['pts']} pts, {p['orb'] + p['drb']} reb, {p['ast']} ast, "
                     f"FG {p['fgm']}-{p['fga']}, 3P {p['tpm']}-{p['tpa']}, FT {p['ftm']}-{p['fta']}")
+
+
+def playoff_day(day):
+    """After the regular season: awards, the day's playoff games, then the bracket. The market, trade scan and staff
+    reviews are closed (the rotation in force carries into the playoffs)."""
+    data = state()
+    data["current_area"] = "08_Playoffs"
+    write_state(data)
+    run("scripts/decide_awards.py", "--write", ok=(0, 1))
+    draw()
+    run("scripts/decide_awards.py", "--write", show=False)
+    run("scripts/playoff_day.py", "--refresh", show=False)
+    run("scripts/playoff_day.py", "--build", day, show=False)
+    problems = run("-c", "from runtime.game_requests import frozen_errors; print('\\n'.join(frozen_errors()))", show=False)
+    if problems:
+        raise Stop("frozen inputs differ from the records: " + "; ".join(problems.splitlines()[:3]))
+    wade_waits()
+    play(day)
 
 
 def advance_day(day):
@@ -178,6 +205,9 @@ def advance_day(day):
     data = state()
     data["current_date"] = day
     write_state(data)
+    if day > SEASON_END:
+        playoff_day(day)
+        return close_day(day, playoffs=True)
     if day in (roster_moves.WAIVE_BY, roster_moves.GUARANTEE_DATE):
         run("scripts/guarantee_review.py", "--write", day)
     if run("scripts/review_rotation.py", "--check", day, ok=(0, 1), show=False).startswith("staff review due"):
@@ -199,12 +229,18 @@ def advance_day(day):
     run("scripts/decide_awards.py", "--write", show=False)
     wade_waits()
     play(day)
-    results = sorted(ROOT.glob(MIAMI_RESULTS), key=lambda p: json.loads(p.read_text(encoding="utf-8"))["game_date"])
+    close_day(day)
+
+
+def close_day(day, playoffs=False):
+    results = sorted(miami_results(), key=lambda p: json.loads(p.read_text(encoding="utf-8"))["game_date"])
     if results:
         data = state()
         data["last_closed_event"] = json.loads(results[-1].read_text(encoding="utf-8"))["event_id"]
         write_state(data)
     run("scripts/write_back_results.py", "--write", "--light", show=False)
+    if playoffs:
+        say("    " + run("scripts/playoff_day.py", "--refresh", show=False).splitlines()[-1])
     summary(day)
     commit(f"Advance {day}")
     wade_waits()

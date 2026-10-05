@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `gillke01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Chicago Bulls · **Basis:** signing to Chicago Bulls on 2003-08-20 (world data) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #9 · **Born:** 1968-05-25 · **Age on card date:** 35  
+**Position:** SG (Shooting guard) · **Jersey:** #13 · **Born:** 1968-05-25 · **Age on card date:** 35  
 **Registry ID:** `gillke01` · [Basketball-Reference page](https://www.basketball-reference.com/players/g/gillke01.html) · ESPN ID 269
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

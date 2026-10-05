@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `jonesfr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Indiana Pacers · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** Unassigned · **Born:** None · **Age on card date:** None  
+**Position:** SG (Shooting guard) · **Jersey:** #20 · **Born:** None · **Age on card date:** None  
 **Registry ID:** `jonesfr01`
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $1,506,000) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).

@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `murraro01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Seattle SuperSonics · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #15 · **Born:** 1979-07-29 · **Age on card date:** 24  
+**Position:** SG (Shooting guard) · **Jersey:** #22 · **Born:** 1979-07-29 · **Age on card date:** 24  
 **Registry ID:** `murraro01` · [Basketball-Reference page](https://www.basketball-reference.com/players/m/murraro01.html) · ESPN ID 1777
 
 **Contract/control:** Minimum-salary contract (2003-04 status unverified); through 2003-04 (2003-04 scheduled $563,679) (league contract inventory status `minimum_contract_unverified`, as of June 26, 2003).

@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `songada01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Sacramento Kings · **Basis:** under contract: on the Sacramento Kings roster in a closed game on 2003-10-29; signing date not recorded · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** Unassigned · **Born:** None · **Age on card date:** None  
+**Position:** PF (Power forward) · **Jersey:** #25 · **Born:** None · **Age on card date:** None  
 **Registry ID:** `songada01`
 
 **Contract/control:** No 2003-04 contract term established in the league contract inventory as of June 26, 2003.

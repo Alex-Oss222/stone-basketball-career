@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `jonesed02.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Miami Heat · **Basis:** held by Miami (under contract) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** Unassigned · **Born:** 1971-10-20 · **Age on card date:** 32  
+**Position:** SG (Shooting guard) · **Jersey:** #6 · **Born:** 1971-10-20 · **Age on card date:** 32  
 **Registry ID:** `jonesed02`
 
 **Contract/control:** Under contract; through 2006-07 (2003-04 scheduled $12,333,750) (league contract inventory status `under_contract`, as of June 26, 2003).

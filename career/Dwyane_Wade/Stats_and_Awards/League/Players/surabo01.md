@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `surabo01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Detroit Pistons · **Basis:** traded to Detroit Pistons on 2003-08-21 (world data) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #3 · **Born:** 1973-03-25 · **Age on card date:** 31  
+**Position:** SG (Shooting guard) · **Jersey:** #5 · **Born:** 1973-03-25 · **Age on card date:** 31  
 **Registry ID:** `surabo01` · [Basketball-Reference page](https://www.basketball-reference.com/players/s/surabo01.html) · ESPN ID 825
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $6,266,666) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).

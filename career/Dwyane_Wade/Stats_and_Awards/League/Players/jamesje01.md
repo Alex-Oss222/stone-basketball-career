@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `jamesje01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Seattle SuperSonics · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #33 · **Born:** 1975-11-17 · **Age on card date:** 28  
+**Position:** C (Center) · **Jersey:** #13 · **Born:** 1975-11-17 · **Age on card date:** 28  
 **Registry ID:** `jamesje01` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jamesje01.html) · ESPN ID 383
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $5,000,600) (league contract inventory status `under_contract`, as of June 26, 2003).

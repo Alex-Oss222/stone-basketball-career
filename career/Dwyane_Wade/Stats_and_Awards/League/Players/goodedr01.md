@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `goodedr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Orlando Magic · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** #9 · **Born:** 1981-09-24 · **Age on card date:** 22  
+**Position:** PF (Power forward) · **Jersey:** #0 · **Born:** 1981-09-24 · **Age on card date:** 22  
 **Registry ID:** `goodedr01` · [Basketball-Reference page](https://www.basketball-reference.com/players/g/goodedr01.html) · ESPN ID 1711
 
 **Contract/control:** Under rookie scale contract; through 2005-06 (2003-04 scheduled $3,004,560) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).

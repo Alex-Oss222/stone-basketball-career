@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `jacksma01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Houston Rockets · **Basis:** signing to Houston Rockets on 2004-01-15 (world data) · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** #13 · **Born:** 1965-04-01 · **Age on card date:** 39  
+**Position:** PG (Point guard) · **Jersey:** #31 · **Born:** 1965-04-01 · **Age on card date:** 39  
 **Registry ID:** `jacksma01` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jacksma01.html) · ESPN ID 370
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

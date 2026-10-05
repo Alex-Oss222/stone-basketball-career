@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `daniean01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Seattle SuperSonics · **Basis:** signing to Seattle SuperSonics on 2003-07-19 (world data) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #10 · **Born:** 1975-03-19 · **Age on card date:** 29  
+**Position:** SG (Shooting guard) · **Jersey:** #33 · **Born:** 1975-03-19 · **Age on card date:** 29  
 **Registry ID:** `daniean01` · [Basketball-Reference page](https://www.basketball-reference.com/players/d/daniean01.html) · ESPN ID 183
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

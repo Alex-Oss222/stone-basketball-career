@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `vanhoke01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** New York Knicks · **Basis:** traded to New York Knicks on 2003-07-23 (world data) · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** #4 · **Born:** 1975-10-23 · **Age on card date:** 28  
+**Position:** PF (Power forward) · **Jersey:** #2 · **Born:** 1975-10-23 · **Age on card date:** 28  
 **Registry ID:** `vanhoke01` · [Basketball-Reference page](https://www.basketball-reference.com/players/v/vanhoke01.html) · ESPN ID 869
 
 **Contract/control:** Under contract; through 2007-08 (2003-04 scheduled $13,279,750) (league contract inventory status `under_contract`, as of June 26, 2003).

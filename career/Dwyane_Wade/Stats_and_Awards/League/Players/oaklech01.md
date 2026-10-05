@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `oaklech01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Houston Rockets · **Basis:** signing to Houston Rockets on 2004-03-18 (world data) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #34 · **Born:** 1963-12-18 · **Age on card date:** 40  
+**Position:** C (Center) · **Jersey:** #33 · **Born:** 1963-12-18 · **Age on card date:** 40  
 **Registry ID:** `oaklech01` · [Basketball-Reference page](https://www.basketball-reference.com/players/o/oaklech01.html) · ESPN ID 616
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

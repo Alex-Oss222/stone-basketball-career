@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `hoibefr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Minnesota Timberwolves · **Basis:** signing to Minnesota Timberwolves on 2003-07-28 (world data) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #20 · **Born:** 1972-10-15 · **Age on card date:** 31  
+**Position:** SG (Shooting guard) · **Jersey:** #32 · **Born:** 1972-10-15 · **Age on card date:** 31  
 **Registry ID:** `hoibefr01` · [Basketball-Reference page](https://www.basketball-reference.com/players/h/hoibefr01.html) · ESPN ID 339
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

@@ -64,6 +64,13 @@ def slate_dir(season=SEASON):
 def is_league_slate(path):
     """A request under the league slate folder (no game note of its own)."""
     parts = Path(path).parts
+    return ("Stats_and_Awards" in parts and "Games" in parts and "Playoffs" not in parts
+            and Path(path).name.endswith(".request.json"))           # playoff games are checked as full requests
+
+
+def is_league_record(path):
+    """A league request (regular slate or playoff game) that has no game note of its own: its result is a league record."""
+    parts = Path(path).parts
     return "Stats_and_Awards" in parts and "Games" in parts and Path(path).name.endswith(".request.json")
 
 
@@ -182,6 +189,8 @@ def miami_game_dates(root=ROOT, season=SEASON):
     """Every Miami game date on the season's calendars (preseason and regular season)."""
     from .camp import PRESEASON_SCHEDULE
     dates = [g["date"] for g in season_games(season, root) if MIAMI in (g["home"], g["away"])]
+    from . import playoffs
+    dates += playoffs.club_dates(playoffs.read(root), MIAMI)           # Miami's playoff games still to be played or played
     preseason = Path(root) / PRESEASON_SCHEDULE
     if preseason.exists():
         dates += [g["date"] for g in read_json(preseason)["games"] if MIAMI in (g["home"], g["away"])]

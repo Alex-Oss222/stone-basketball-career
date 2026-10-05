@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `parksch02.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Miami Heat · **Basis:** held by Miami (refill signing 2003-10-27 (signing_corrections.json)) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** Unassigned · **Born:** 1972-10-11 · **Age on card date:** 31  
+**Position:** C (Center) · **Jersey:** #0 · **Born:** 1972-10-11 · **Age on card date:** 31  
 **Registry ID:** `parksch02`
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

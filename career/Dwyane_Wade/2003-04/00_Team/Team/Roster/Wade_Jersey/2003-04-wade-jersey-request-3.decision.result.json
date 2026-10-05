@@ -1,0 +1,12 @@
+{
+ "date": "2004-04-14",
+ "decider": "LaPhonso Ellis (simulated player)",
+ "event_id": "2003-04-wade-jersey-request-3",
+ "kind": "decision",
+ "options": {
+  "accept": 0.6,
+  "decline": 0.4
+ },
+ "outcome": "decline",
+ "question": "Does LaPhonso Ellis give jersey #3 to Dwyane Wade?"
+}

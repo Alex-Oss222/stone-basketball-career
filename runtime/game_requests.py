@@ -68,8 +68,15 @@ def computed_inputs(data, root=ROOT):
     season = season_for_date(data["game_date"])
     actives = rules_for(season)["game_day_actives"]
     index = load_rating_index(data["game_date"], season, root)
-    return (_club(data["home"], actives, root, index, season, data["game_date"]),
-            _club(data["away"], actives, root, index, season, data["game_date"]))
+    home = _club(data["home"], actives, root, index, season, data["game_date"])
+    away = _club(data["away"], actives, root, index, season, data["game_date"])
+    if data.get("game_type") == "playoff":
+        # A real club's season share of missed games describes the regular season; in the playoffs every real player is
+        # available (design choice, docs/front_office.md). Miami's players carry their own engine-drawn injuries.
+        home, away = (replace(t, players=tuple(replace(p, availability=1.0) for p in t.players), season_roster=True)
+                      if "rotation" in spec else t          # the engine dresses twelve and allocates the minutes
+                      for t, spec in ((home, data["home"]), (away, data["away"])))
+    return home, away
 
 
 def freeze(data, root=ROOT):

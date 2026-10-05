@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `robincl02.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Golden State Warriors · **Basis:** traded to Golden State Warriors on 2003-08-21 (world data) · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** #30 · **Born:** 1966-12-16 · **Age on card date:** 37  
+**Position:** PF (Power forward) · **Jersey:** #3 · **Born:** 1966-12-16 · **Age on card date:** 37  
 **Registry ID:** `robincl02` · [Basketball-Reference page](https://www.basketball-reference.com/players/r/robincl02.html) · ESPN ID 714
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $4,700,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).

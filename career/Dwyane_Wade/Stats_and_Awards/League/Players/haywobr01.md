@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `haywobr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Washington Wizards · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #00 · **Born:** 1979-11-27 · **Age on card date:** 24  
+**Position:** C (Center) · **Jersey:** #33 · **Born:** 1979-11-27 · **Age on card date:** 24  
 **Registry ID:** `haywobr01` · [Basketball-Reference page](https://www.basketball-reference.com/players/h/haywobr01.html) · ESPN ID 1000
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,125,360) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).

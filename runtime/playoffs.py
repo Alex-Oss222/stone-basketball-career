@@ -193,6 +193,26 @@ def home_court(a, b, table, ranker):
     return ranker.order([a, b])[0]
 
 
+def series_games(home, road, dates, home_games):
+    """Seven possible games; games 5 to 7 are conditional (played only if the series is undecided)."""
+    from .schedule import game_id
+    games = []
+    for n, day in enumerate(dates, 1):
+        host = home if n in home_games else road
+        guest = road if host == home else home
+        games.append({"game": n, "date": day, "home": host, "away": guest, "conditional": n >= 5,
+                      "event_id": game_id(day, guest, host)})
+    return games
+
+
+def dates_from(first, gaps):
+    out, day = [first], date.fromisoformat(first)
+    for g in gaps:
+        day += timedelta(days=g)
+        out.append(day.isoformat())
+    return out
+
+
 def first_round(root=ROOT, season=SEASON):
     """The bracket's first round with each series' home-court team and its calendar of possible games."""
     seeded, pending, table, ranker = seeds(root, season)
@@ -212,14 +232,7 @@ def first_round(root=ROOT, season=SEASON):
             a, b = by_seed[high], by_seed[low]
             home = home_court(a, b, table, ranker)
             road = b if home == a else a
-            day = date.fromisoformat(openers[(conf, (high, low))])
-            games = []
-            for n in range(1, 8):
-                host = home if n in home_games else road
-                games.append({"game": n, "date": day.isoformat(), "home": host, "away": road if host == home else home,
-                              "conditional": n >= 5})
-                if n < 7:
-                    day += timedelta(days=gaps[n - 1])
+            games = series_games(home, road, dates_from(openers[(conf, (high, low))], gaps), home_games)
             series.append({"id": f"{conf.lower()}-{high}-{low}", "round": "first_round", "conference": conf,
                            "seeds": [high, low], "clubs": [a, b], "home_court": home, "wins": {a: 0, b: 0},
                            "winner": None, "games": games})
@@ -281,13 +294,254 @@ def page(record, root=ROOT):
             lines.append("        conference semifinal: winners meet")
         lines.append("    conference final, then the NBA Finals")
         lines.append("")
-    lines += ["```", "", "## First-round schedule", ""]
-    for s in (x for x in record["series"] if x["round"] == "first_round"):
-        a, b = s["clubs"]
-        lines += [f"### {s['conference']} ({s['seeds'][0]}) {a} vs ({s['seeds'][1]}) {b}", "",
-                  f"Home court: {s['home_court']}. Series {s['wins'][a]}-{s['wins'][b]}.", "",
-                  "| Game | Date | Home | Away | |", "| ---: | --- | --- | --- | --- |"]
-        for g in s["games"]:
-            lines.append(f"| {g['game']} | {_d(g['date'])} | {g['home']} | {g['away']} | {'if needed' if g['conditional'] else ''} |")
-        lines.append("")
+    lines += ["```", ""]
+    if record.get("champion"):
+        lines += [f"**2004 NBA champion: {record['champion']}**", ""]
+    for key, label, _ in ROUNDS:
+        series = [x for x in record["series"] if x["round"] == key]
+        if not series:
+            continue
+        lines += [f"## {label}", ""]
+        for s in series:
+            a, b = s["clubs"]
+            status = f"{s['winner']} wins {max(s['wins'].values())}-{min(s['wins'].values())}" if s["winner"] else f"Series {a} {s['wins'][a]}, {b} {s['wins'][b]}"
+            lines += [f"### {s['conference']}: ({s['seeds'][0]}) {a} vs ({s['seeds'][1]}) {b}", "",
+                      f"Home court: {s['home_court']}. {status}.", "",
+                      "| Game | Date | Home | Away | Result |", "| ---: | --- | --- | --- | --- |"]
+            for g in s["games"]:
+                result = g.get("result") or ("not needed" if g.get("not_needed") else "if needed" if g["conditional"] else "")
+                lines.append(f"| {g['game']} | {_d(g['date'])} | {g['home']} | {g['away']} | {result} |")
+            lines.append("")
     return "\n".join(lines).rstrip() + "\n"
+
+
+# -- the running playoffs -------------------------------------------------------------------------
+GAMES = LEAGUE / "Playoffs/Games"
+MIAMI = "Miami Heat"
+FOLDERS = {key: folder for key, _, folder in ROUNDS}
+LABELS = {key: label for key, label, _ in ROUNDS}
+
+
+def read(root=ROOT):
+    path = Path(root) / RECORD
+    return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else None
+
+
+def write(record, root=ROOT):
+    root = Path(root)
+    (root / RECORD).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    (root / PAGE).write_text(page(record, root), encoding="utf-8")
+
+
+def miami_paths(series, game, root=ROOT, season=SEASON):
+    base = Path(root) / f"career/Dwyane_Wade/{season}/08_Playoffs" / FOLDERS[series["round"]]
+    return base / f"Game_{game['game']}.md", base / f"Game_{game['game']}.request.json", base / f"Game_{game['game']}.result.json"
+
+
+def game_paths(series, game, root=ROOT, season=SEASON):
+    """(note or None, request, result) for one playoff game."""
+    if MIAMI in (game["home"], game["away"]):
+        return miami_paths(series, game, root, season)
+    folder = Path(root) / GAMES
+    return None, folder / f"{game['event_id']}.request.json", folder / f"{game['event_id']}.result.json"
+
+
+def apply_results(record, root=ROOT, season=SEASON):
+    """Series scores from the closed results; a decided series drops its unplayed games."""
+    for s in record["series"]:
+        a, b = s["clubs"]
+        wins = {a: 0, b: 0}
+        winner = None
+        for g in s["games"]:
+            if winner:
+                g["not_needed"] = True
+                continue
+            g.pop("not_needed", None)
+            _, _, result = game_paths(s, g, root, season)
+            if not result.is_file():
+                continue
+            r = json.loads(result.read_text(encoding="utf-8"))
+            if not r.get("terminated"):
+                continue
+            won = r["home"] if r["final_score"]["home"] > r["final_score"]["away"] else r["away"]
+            wins[won] += 1
+            g["result"] = f"{r['away']} {r['final_score']['away']}, {r['home']} {r['final_score']['home']}" + (
+                f" ({r['overtimes']}OT)" if r.get("overtimes") else "")
+            g["winner"] = won
+            if wins[won] == 4:
+                winner = won
+                s["clinched_on"] = g["date"]
+        s["wins"], s["winner"] = wins, winner
+    return record
+
+
+def advance_bracket(record, root=ROOT, season=SEASON):
+    """Create each later-round series once both of its feeders are decided."""
+    cfg = rules(root)
+    table = Table(root, season, cfg["calendar"]["regular_season_last_day"])
+    ranker = Ranker(table, root, [r["club"] for rows in record["seeds"].values() for r in rows if r["division_winner"]])
+    by_id = {s["id"]: s for s in record["series"]}
+    conf_home = cfg["home_court"]["conference_rounds"]["home_team_games"]
+    plan = []
+    for conf in ("East", "West"):
+        c = conf.lower()
+        plan.append((f"{c}-semi-a", "conference_semifinals", conf, [f"{c}-1-8", f"{c}-4-5"]))
+        plan.append((f"{c}-semi-b", "conference_semifinals", conf, [f"{c}-3-6", f"{c}-2-7"]))
+        plan.append((f"{c}-final", "conference_finals", conf, [f"{c}-semi-a", f"{c}-semi-b"]))
+    plan.append(("finals", "finals", None, ["east-final", "west-final"]))
+    for sid, rnd, conf, feeders in plan:
+        if sid in by_id or not all(f in by_id and by_id[f]["winner"] for f in feeders):
+            continue
+        a, b = (by_id[f]["winner"] for f in feeders)
+        home = home_court(a, b, table, ranker)
+        road = b if home == a else a
+        last = max(by_id[f]["clinched_on"] for f in feeders)
+        rest = (date.fromisoformat(last) + timedelta(days=2)).isoformat()
+        cal = cfg["calendar"][rnd]
+        if rnd == "conference_semifinals":
+            first = max(cal["earliest_game_1"][conf], (date.fromisoformat(last) + timedelta(days=cal["rest_after_feeders_days"])).isoformat())
+            dates = dates_from(first, cal["gaps_days"])
+            home_games = conf_home
+        elif rnd == "conference_finals":
+            dates = dates_from(max(cal["game_1"][conf], rest), cal["gaps_days"])
+            home_games = conf_home
+        else:
+            fixed = cal["dates"]
+            shift = max(0, (date.fromisoformat(rest) - date.fromisoformat(fixed[0])).days)
+            dates = [(date.fromisoformat(d) + timedelta(days=shift)).isoformat() for d in fixed]
+            home_games = cfg["home_court"]["finals"]["home_team_games"]
+        seeds_of = {r["club"]: r["seed"] for rows in record["seeds"].values() for r in rows}
+        s = {"id": sid, "round": rnd, "conference": conf or "Finals", "seeds": [seeds_of[a], seeds_of[b]], "clubs": [a, b],
+             "home_court": home, "wins": {a: 0, b: 0}, "winner": None, "games": series_games(home, road, dates, home_games)}
+        record["series"].append(s)
+        by_id[sid] = s
+    finals = by_id.get("finals")
+    record["champion"] = finals["winner"] if finals else None
+    return record
+
+
+def refresh(root=ROOT, season=SEASON, write_record=True):
+    """Apply closed results and open later rounds; write the record and page. Returns the record."""
+    record = read(root)
+    if record is None:
+        return None
+    record = advance_bracket(apply_results(record, root, season), root, season)
+    record = apply_results(record, root, season)
+    if write_record:
+        write(record, root)
+    return record
+
+
+def due(record, day, root=ROOT, season=SEASON):
+    """[(series, game)] scheduled on `day` in undecided series, not yet built."""
+    out = []
+    for s in record["series"]:
+        if s["winner"]:
+            continue
+        for g in s["games"]:
+            if g["date"] == day and not g.get("not_needed"):
+                _, request, _ = game_paths(s, g, root, season)
+                if not request.is_file():
+                    out.append((s, g))
+    return out
+
+
+def club_dates(record, club):
+    """Dates of the club's playoff games that are played or scheduled to be played (not dropped)."""
+    if not record:
+        return []
+    return sorted(g["date"] for s in record["series"] if club in s["clubs"] for g in s["games"] if not g.get("not_needed"))
+
+
+def playoff_note(series, game, season=SEASON):
+    venue = "home" if game["home"] == MIAMI else "away"
+    opponent = game["away"] if venue == "home" else game["home"]
+    a, b = series["clubs"]
+    return f"""---
+type: game
+status: scheduled
+date: {game['date']}
+opponent: {opponent}
+venue: {venue}
+competition: playoff
+cup_stage:
+player_team: {MIAMI}
+result:
+reason:
+simulation_source: Railway engine (runtime/private_service.py)
+event_id: {game['event_id']}
+result_file: Game_{game['game']}.result.json
+---
+
+# {LABELS[series['round']]} Game {game['game']}: {a} vs {b}
+
+Series {series['wins'][a]}-{series['wins'][b]} before this game ({series['conference']}; home court {series['home_court']}).
+Player identity and statistics are generated here by `python scripts/update_player_reports.py`.
+"""
+
+
+def phase_note(series, season=SEASON):
+    return f"""---
+type: playoff_round
+round: {series['round']}
+---
+
+# {LABELS[series['round']]}
+
+[Bracket and schedule](../../../Stats_and_Awards/League/{season}/Playoffs.md)
+
+## Player decisions
+
+## Games and events
+
+## Consequences
+"""
+
+
+def build_games(day, root=ROOT, season=SEASON):
+    """Write the requests (and Miami's notes) for the day's due playoff games. Returns the written paths."""
+    from .game_requests import freeze, load_request
+    from .season_games import miami_side, miami_request
+    from . import roster_moves
+    root = Path(root)
+    record = refresh(root, season)
+    if record is None:
+        return []
+    written = []
+    for s, g in due(record, day, root, season):
+        note, request, _ = game_paths(s, g, root, season)
+        game = {"game_id": g["event_id"], "date": g["date"], "home": g["home"], "away": g["away"]}
+        if note is None:
+            from .season_games import slate_request
+            data = dict(slate_request(game), game_type="playoff")
+        else:
+            earlier = [x for t in record["series"] for x in t["games"] if MIAMI in (x["home"], x["away"])
+                       and x["date"] < day and not x.get("not_needed") and not game_paths(t, x, root, season)[2].is_file()]
+            if earlier:
+                raise ValueError(f"Miami's playoff game on {earlier[0]['date']} has no closed result; play it before {day}")
+            players, injured, lists = miami_side(day, root, season, with_lists=True)
+            if lists is not None:
+                ledger = roster_moves.record_lists(roster_moves.ledger(root), day, lists["injured_list"], lists["placements"],
+                                                   lists["activations"], injured, g["event_id"])
+                (root / roster_moves.LEDGER).write_text(json.dumps(ledger, indent=1) + "\n", encoding="utf-8")
+            data = dict(miami_request(game, players), game_type="playoff")
+            note.parent.mkdir(parents=True, exist_ok=True)
+            if not (note.parent / "note.md").is_file():
+                (note.parent / "note.md").write_text(phase_note(s, season), encoding="utf-8")
+            text = playoff_note(s, g, season)
+            if lists is not None:
+                text = text.rstrip("\n") + (f"\n\nMiami's injured list for this game: {', '.join(lists['injured_list']) or 'none'} "
+                                            "(`00_Team/Transactions/injured_list.json`; twelve dress).\n")
+            note.write_text(text, encoding="utf-8")
+        data = freeze(data, root)
+        request.parent.mkdir(parents=True, exist_ok=True)
+        request.write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
+        try:
+            load_request(request, root)
+        except Exception:
+            request.unlink()
+            if note is not None:
+                note.unlink()
+            raise
+        written.append(request)
+    return written

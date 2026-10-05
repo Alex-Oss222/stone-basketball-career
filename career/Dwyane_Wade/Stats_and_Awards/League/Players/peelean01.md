@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `peelean01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Sacramento Kings · **Basis:** signing to Sacramento Kings on 2003-08-15 (world data) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #44 · **Born:** 1969-11-25 · **Age on card date:** 34  
+**Position:** SG (Shooting guard) · **Jersey:** #8 · **Born:** 1969-11-25 · **Age on card date:** 34  
 **Registry ID:** `peelean01` · [Basketball-Reference page](https://www.basketball-reference.com/players/p/peelean01.html) · ESPN ID 642
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).

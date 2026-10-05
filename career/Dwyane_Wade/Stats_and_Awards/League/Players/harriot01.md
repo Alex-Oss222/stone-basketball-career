@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `harriot01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** New York Knicks · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** Unassigned · **Born:** None · **Age on card date:** None  
+**Position:** PF (Power forward) · **Jersey:** #32 · **Born:** None · **Age on card date:** None  
 **Registry ID:** `harriot01`
 
 **Contract/control:** Under contract; through 2004-05 (2003-04 scheduled $2,925,000) (league contract inventory status `under_contract`, as of June 26, 2003).

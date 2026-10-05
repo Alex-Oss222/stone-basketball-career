@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `fowlktr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Los Angeles Clippers · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #32 · **Born:** 1976-04-11 · **Age on card date:** 28  
+**Position:** SF (Small forward) · **Jersey:** #24 · **Born:** 1976-04-11 · **Age on card date:** 28  
 **Registry ID:** `fowlktr01` · [Basketball-Reference page](https://www.basketball-reference.com/players/f/fowlktr01.html) · ESPN ID 251
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $638,679) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).

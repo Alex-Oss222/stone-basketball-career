@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `evansre01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Seattle SuperSonics · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** #34 · **Born:** 1980-05-18 · **Age on card date:** 23  
+**Position:** PF (Power forward) · **Jersey:** #30 · **Born:** 1980-05-18 · **Age on card date:** 23  
 **Registry ID:** `evansre01` · [Basketball-Reference page](https://www.basketball-reference.com/players/e/evansre01.html) · ESPN ID 1828
 
 **Contract/control:** Contract expires June 30, 2003; restricted free agency eligible (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

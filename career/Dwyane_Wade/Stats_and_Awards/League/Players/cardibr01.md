@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `cardibr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Golden State Warriors · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** Unassigned · **Born:** None · **Age on card date:** None  
+**Position:** PF (Power forward) · **Jersey:** #35 · **Born:** None · **Age on card date:** None  
 **Registry ID:** `cardibr01`
 
 **Contract/control:** No 2003-04 commitment established (league contract inventory status `expired_or_unresolved`, as of June 26, 2003).

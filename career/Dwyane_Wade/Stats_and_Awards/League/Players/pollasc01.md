@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `pollasc01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Indiana Pacers · **Basis:** traded to Indiana Pacers on 2003-07-24 (world data) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** #31 · **Born:** 1975-02-12 · **Age on card date:** 29  
+**Position:** C (Center) · **Jersey:** #62 · **Born:** 1975-02-12 · **Age on card date:** 29  
 **Registry ID:** `pollasc01` · [Basketball-Reference page](https://www.basketball-reference.com/players/p/pollasc01.html) · ESPN ID 664
 
 **Contract/control:** Under contract; through 2005-06 (2003-04 scheduled $5,309,563) (league contract inventory status `under_contract`, as of June 26, 2003).

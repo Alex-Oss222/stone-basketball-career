@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `jacksji01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Houston Rockets · **Basis:** signing to Houston Rockets on 2003-09-30 (world data) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #22 · **Born:** 1970-10-14 · **Age on card date:** 33  
+**Position:** SF (Small forward) · **Jersey:** #21 · **Born:** 1970-10-14 · **Age on card date:** 33  
 **Registry ID:** `jacksji01` · [Basketball-Reference page](https://www.basketball-reference.com/players/j/jacksji01.html) · ESPN ID 372
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

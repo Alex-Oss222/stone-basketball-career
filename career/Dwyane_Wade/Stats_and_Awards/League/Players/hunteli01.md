@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `hunteli01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Detroit Pistons · **Basis:** traded to Detroit Pistons on 2003-08-28 (world data) · **League:** NBA  
-**Position:** PG (Point guard) · **Jersey:** #11 · **Born:** 1970-12-03 · **Age on card date:** 33  
+**Position:** PG (Point guard) · **Jersey:** #10 · **Born:** 1970-12-03 · **Age on card date:** 33  
 **Registry ID:** `hunteli01` · [Basketball-Reference page](https://www.basketball-reference.com/players/h/hunteli01.html) · ESPN ID 359
 
 **Contract/control:** Listed under contract (continuity unverified); through 2003-04 (2003-04 scheduled $3,000,000) (league contract inventory status `under_contract_unverified`, as of June 26, 2003).

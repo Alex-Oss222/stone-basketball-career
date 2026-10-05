@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `lampema01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** New York Knicks · **Basis:** under contract: on the Phoenix Suns roster in a closed game on 2003-10-28; signing date not recorded · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** Unassigned · **Born:** 1985-02-05 · **Age on card date:** 19  
+**Position:** PF (Power forward) · **Jersey:** #30 · **Born:** 1985-02-05 · **Age on card date:** 19  
 **Registry ID:** `lampema01` · [Basketball-Reference page](https://www.basketball-reference.com/players/l/lampema01.html) · ESPN ID 2169
 
 **Contract/control:** Under contract with New York Knicks: on the Phoenix Suns roster in a closed game on 2003-10-28; signing date not recorded. The world data does not record this rookie contract's terms.

@@ -45,7 +45,8 @@ from .stat_layout import PER_GAME_COLUMNS, scope_for
 
 ROOT = Path(__file__).resolve().parents[1]
 MIAMI = SIMULATED_CLUB
-PHASES = {"05_Preseason": ("preseason", "## Events"), "06_Regular_Season": ("regular", "## Games and events")}
+PHASES = {"05_Preseason": ("preseason", "## Events"), "06_Regular_Season": ("regular", "## Games and events"),
+          "08_Playoffs": ("playoff", "## Games and events")}
 RESULT_START, RESULT_END = "<!-- game-result:start -->", "<!-- game-result:end -->"
 REPORT_START = "<!-- player-report:start -->"
 CHANGES_HEADING = "## Changes and coaching notes"

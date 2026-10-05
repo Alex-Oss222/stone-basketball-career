@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `hillty01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Philadelphia 76ers · **Basis:** Miami's holding ended on 2003-10-27; back on his real 2003-04 path · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** #40 · **Born:** 1968-03-19 · **Age on card date:** 36  
+**Position:** PF (Power forward) · **Jersey:** #32 · **Born:** 1968-03-19 · **Age on card date:** 36  
 **Registry ID:** `hillty01` · [Basketball-Reference page](https://www.basketball-reference.com/players/h/hillty01.html) · ESPN ID 334
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).

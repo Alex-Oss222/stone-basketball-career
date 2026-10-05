@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `sundobr01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Cleveland Cavaliers · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** C (Center) · **Jersey:** Unassigned · **Born:** None · **Age on card date:** None  
+**Position:** C (Center) · **Jersey:** #41 · **Born:** None · **Age on card date:** None  
 **Registry ID:** `sundobr01`
 
 **Contract/control:** Minimum-salary contract (2003-04 status unverified); through 2003-04 (2003-04 scheduled $751,159) (league contract inventory status `minimum_contract_unverified`, as of June 26, 2003).

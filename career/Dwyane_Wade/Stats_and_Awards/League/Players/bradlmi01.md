@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `bradlmi01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Toronto Raptors · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** PF (Power forward) · **Jersey:** #5 · **Born:** 1979-04-18 · **Age on card date:** 24  
+**Position:** PF (Power forward) · **Jersey:** #33 · **Born:** 1979-04-18 · **Age on card date:** 24  
 **Registry ID:** `bradlmi01` · [Basketball-Reference page](https://www.basketball-reference.com/players/b/bradlmi01.html) · ESPN ID 979
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,292,040) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).

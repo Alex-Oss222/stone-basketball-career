@@ -13,7 +13,7 @@
 The interactive card is an HTML file: GitHub shows it as source, so open `whitero02.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
 **Card date:** 2004-04-14 · **Club on this date:** Denver Nuggets · **Basis:** end-of-2002-03 club (registry source) · **League:** NBA  
-**Position:** SG (Shooting guard) · **Jersey:** #7 · **Born:** 1980-06-28 · **Age on card date:** 23  
+**Position:** SG (Shooting guard) · **Jersey:** #5 · **Born:** 1980-06-28 · **Age on card date:** 23  
 **Registry ID:** `whitero02` · [Basketball-Reference page](https://www.basketball-reference.com/players/w/whitero02.html) · ESPN ID 1028
 
 **Contract/control:** Under rookie scale contract; through 2004-05 (2003-04 scheduled $1,947,600) (league contract inventory status `under_rookie_contract`, as of June 26, 2003).
