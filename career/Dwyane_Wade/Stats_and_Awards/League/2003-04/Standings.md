@@ -1,6 +1,6 @@
 # 2003-04 standings
 
-Through 2004-03-24, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
+Through 2004-03-25, from closed simulated results only (`runtime/standings.py`). Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.
 
 ## Eastern Conference
 
@@ -8,18 +8,18 @@ Through 2004-03-24, from closed simulated results only (`runtime/standings.py`).
 | --- | --- | --- | --- | --- | --- |
 | 1 | Indiana Pacers | 49 | 22 | .690 | — |
 | 2 | New Jersey Nets | 46 | 24 | .657 | 2.5 |
-| 3 | Detroit Pistons | 46 | 26 | .639 | 3.5 |
+| 3 | Detroit Pistons | 46 | 27 | .630 | 4 |
 | 4 | **Miami Heat** | 41 | 30 | .577 | 8 |
 | 5 | Milwaukee Bucks | 39 | 32 | .549 | 10 |
 | 6 | Toronto Raptors | 36 | 35 | .507 | 13 |
 | 7 | Philadelphia 76ers | 36 | 36 | .500 | 13.5 |
-| 8 | Atlanta Hawks | 33 | 38 | .465 | 16 |
-| 9 | New Orleans Hornets | 33 | 38 | .465 | 16 |
+| 8 | Atlanta Hawks | 34 | 38 | .472 | 15.5 |
+| 9 | New Orleans Hornets | 33 | 39 | .458 | 16.5 |
 | 10 | Cleveland Cavaliers | 31 | 39 | .443 | 17.5 |
 | 11 | Chicago Bulls | 31 | 40 | .437 | 18 |
 | 12 | Boston Celtics | 25 | 46 | .352 | 24 |
 | 13 | New York Knicks | 24 | 48 | .333 | 25.5 |
-| 14 | Washington Wizards | 23 | 47 | .329 | 25.5 |
+| 14 | Washington Wizards | 23 | 48 | .324 | 26 |
 | 15 | Orlando Magic | 19 | 54 | .260 | 31 |
 
 ## Western Conference
@@ -27,7 +27,7 @@ Through 2004-03-24, from closed simulated results only (`runtime/standings.py`).
 | # | Club | W | L | Pct | GB |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Minnesota Timberwolves | 55 | 17 | .764 | — |
-| 2 | San Antonio Spurs | 48 | 23 | .676 | 6.5 |
+| 2 | San Antonio Spurs | 49 | 23 | .681 | 6 |
 | 3 | Sacramento Kings | 47 | 25 | .653 | 8 |
 | 4 | Dallas Mavericks | 45 | 26 | .634 | 9.5 |
 | 5 | Los Angeles Lakers | 42 | 29 | .592 | 12.5 |
@@ -39,5 +39,5 @@ Through 2004-03-24, from closed simulated results only (`runtime/standings.py`).
 | 11 | Phoenix Suns | 27 | 45 | .375 | 28 |
 | 12 | Portland Trail Blazers | 24 | 47 | .338 | 30.5 |
 | 13 | Utah Jazz | 23 | 49 | .319 | 32 |
-| 14 | Los Angeles Clippers | 20 | 52 | .278 | 35 |
+| 14 | Los Angeles Clippers | 21 | 52 | .288 | 34.5 |
 
