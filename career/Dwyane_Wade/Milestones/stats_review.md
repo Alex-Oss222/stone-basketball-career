@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-04-23 · Miami Heat · active
+Career date: 2004-04-25 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-91 closed game records in 2003-04 through 2004-04-23. Competitions remain separate.
+92 closed game records in 2003-04 through 2004-04-25. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -123,6 +123,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-04-14 | regular | New Jersey Nets | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md) |
 | 2004-04-18 | playoff | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/08_Playoffs/First_Round/Game_1.md) |
 | 2004-04-21 | playoff | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/08_Playoffs/First_Round/Game_2.md) |
+| 2004-04-24 | playoff | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Closed game](../2003-04/08_Playoffs/First_Round/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -261,4 +262,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md)
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_1.md)
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_2.md)
+- [Closed game](../2003-04/08_Playoffs/First_Round/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

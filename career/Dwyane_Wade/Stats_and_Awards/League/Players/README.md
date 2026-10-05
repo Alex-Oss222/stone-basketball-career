@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-04-23**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-04-25**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -39,7 +39,7 @@ Card date: **2004-04-23**. 504 registry players, one Markdown card and one inter
 | [Earl Boykins](boykiea01.md) | Denver Nuggets | 27 | sourced | [open](boykiea01.html) |
 | [Earl Watson](watsoea01.md) | Memphis Grizzlies | 24 | sourced | [open](watsoea01.html) |
 | [Eddie Gill](gilled01.md) | Portland Trail Blazers | None | silhouette | [open](gilled01.html) |
-| [Eric Snow](snower01.md) | Philadelphia 76ers | 30 | sourced | [open](snower01.html) |
+| [Eric Snow](snower01.md) | Philadelphia 76ers | 31 | sourced | [open](snower01.html) |
 | [Frank Williams](willifr02.md) | New York Knicks | 24 | silhouette | [open](willifr02.html) |
 | [Gary Payton](paytoga01.md) | Los Angeles Lakers | 35 | sourced | [open](paytoga01.html) |
 | [Gilbert Arenas](arenagi01.md) | Washington Wizards | 22 | sourced | [open](arenagi01.html) |
@@ -383,14 +383,14 @@ Card date: **2004-04-23**. 504 registry players, one Markdown card and one inter
 | [Malik Rose](rosema01.md) | San Antonio Spurs | 29 | sourced | [open](rosema01.html) |
 | [Marcus Haislip](haislma01.md) | Milwaukee Bucks | 23 | sourced | [open](haislma01.html) |
 | [Mario Austin](austima01.md) | Chicago Bulls (draft rights) | 22 | silhouette | [open](austima01.html) |
-| [Mark Bryant](bryanma01.md) | Boston Celtics | 38 | silhouette | [open](bryanma01.html) |
+| [Mark Bryant](bryanma01.md) | Boston Celtics | 39 | silhouette | [open](bryanma01.html) |
 | [Mark Madsen](madsema01.md) | Minnesota Timberwolves | 28 | sourced | [open](madsema01.html) |
 | [Mark Pope](popema01.md) | Denver Nuggets | None | silhouette | [open](popema01.html) |
 | [Maurice Taylor](tayloma01.md) | Houston Rockets | None | silhouette | [open](tayloma01.html) |
 | [Mehmet Okur](okurme01.md) | Detroit Pistons | 24 | sourced | [open](okurme01.html) |
 | [Michael Bradley](bradlmi01.md) | Toronto Raptors | 25 | silhouette | [open](bradlmi01.html) |
 | [Michael Ruffin](ruffimi01.md) | Utah Jazz | None | silhouette | [open](ruffimi01.html) |
-| [Michael Stewart](stewami01.md) | Cleveland Cavaliers | 28 | silhouette | [open](stewami01.html) |
+| [Michael Stewart](stewami01.md) | Cleveland Cavaliers | 29 | silhouette | [open](stewami01.html) |
 | [Michael Sweetney](sweetmi01.md) | New York Knicks | 21 | silhouette | [open](sweetmi01.html) |
 | [Mike Batiste](batismi01.md) | Memphis Grizzlies | 26 | sourced | [open](batismi01.html) |
 | [Nick Collison](collini01.md) | Seattle SuperSonics (draft rights) | 23 | sourced | [open](collini01.html) |
@@ -414,7 +414,7 @@ Card date: **2004-04-23**. 504 registry players, one Markdown card and one inter
 | [Slava Medvedenko](medvest01.md) | Los Angeles Lakers | 25 | sourced | [open](medvest01.html) |
 | [Stromile Swift](swiftst01.md) | Memphis Grizzlies | 24 | sourced | [open](swiftst01.html) |
 | [Szymon Szewczyk](szewcsz01.md) | Milwaukee Bucks (draft rights) | 21 | sourced | [open](szewcsz01.html) |
-| [Tim Duncan](duncati01.md) | San Antonio Spurs | 27 | sourced | [open](duncati01.html) |
+| [Tim Duncan](duncati01.md) | San Antonio Spurs | 28 | sourced | [open](duncati01.html) |
 | [Tom Gugliotta](guglito01.md) | Phoenix Suns | 34 | sourced | [open](guglito01.html) |
 | [Tommy Smith](smithto03.md) | Chicago Bulls (draft rights) | 23 | silhouette | [open](smithto03.html) |
 | [Toni Kukoc](kukocto01.md) | Milwaukee Bucks | 35 | sourced | [open](kukocto01.html) |

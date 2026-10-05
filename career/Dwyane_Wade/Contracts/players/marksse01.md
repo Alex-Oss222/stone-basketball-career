@@ -2,9 +2,9 @@
 
 # Contract | Sean Marks
 
-Known through: 2004-04-23. [Open interactive contract](marksse01.html#contract) · [Contract history](marksse01.html#contract-history)
+Known through: 2004-04-25. [Open interactive contract](marksse01.html#contract) · [Contract history](marksse01.html#contract-history)
 
-Sean Marks: injured, unavailable (researched, 2003-11-17). Evidence cutoff: 2004-04-23.
+Sean Marks: injured, unavailable (researched, 2003-11-17). Evidence cutoff: 2004-04-25.
 
 ## Current contract
 

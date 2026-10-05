@@ -447,6 +447,298 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2003-04-all_nba",
+   "award": "all_nba",
+   "name": "All-NBA Teams",
+   "announced_on": "2004-04-25",
+   "electorate": 123,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.2,
+    0.5
+   ],
+   "evidence_through": "2004-04-14",
+   "teams": [
+    {
+     "team": "First Team",
+     "players": [
+      {
+       "player": "Kevin Garnett",
+       "team": "Minnesota Timberwolves",
+       "games": 82,
+       "mpg": 38.2,
+       "pts": 23.2,
+       "reb": 12.6,
+       "ast": 5.2,
+       "stl": 1.8,
+       "blk": 1.6,
+       "game_score": 21.4,
+       "position": "F",
+       "points": 615,
+       "first_team_votes": 123
+      },
+      {
+       "player": "Sam Cassell",
+       "team": "Minnesota Timberwolves",
+       "games": 81,
+       "mpg": 36.4,
+       "pts": 21.8,
+       "reb": 3.5,
+       "ast": 7.5,
+       "stl": 1.6,
+       "blk": 0.2,
+       "game_score": 17.3,
+       "position": "G",
+       "points": 615,
+       "first_team_votes": 123
+      },
+      {
+       "player": "Shaquille O'Neal",
+       "team": "Los Angeles Lakers",
+       "games": 67,
+       "mpg": 34.9,
+       "pts": 20.2,
+       "reb": 9.9,
+       "ast": 2.7,
+       "stl": 0.6,
+       "blk": 1.9,
+       "game_score": 16.06,
+       "position": "C",
+       "points": 615,
+       "first_team_votes": 123
+      },
+      {
+       "player": "Peja Stojakovic",
+       "team": "Sacramento Kings",
+       "games": 81,
+       "mpg": 40.2,
+       "pts": 23.9,
+       "reb": 6.5,
+       "ast": 2.1,
+       "stl": 1.2,
+       "blk": 0.3,
+       "game_score": 18.01,
+       "position": "F",
+       "points": 577,
+       "first_team_votes": 104
+      },
+      {
+       "player": "Dwyane Wade",
+       "team": "Miami Heat",
+       "games": 75,
+       "mpg": 35.0,
+       "pts": 17.9,
+       "reb": 4.8,
+       "ast": 4.5,
+       "stl": 1.6,
+       "blk": 1.0,
+       "game_score": 17.14,
+       "position": "G",
+       "points": 439,
+       "first_team_votes": 35
+      }
+     ]
+    },
+    {
+     "team": "Second Team",
+     "players": [
+      {
+       "player": "Tim Duncan",
+       "team": "San Antonio Spurs",
+       "games": 76,
+       "mpg": 37.5,
+       "pts": 21.9,
+       "reb": 11.5,
+       "ast": 2.9,
+       "stl": 1.2,
+       "blk": 2.8,
+       "game_score": 18.2,
+       "position": "F",
+       "points": 407,
+       "first_team_votes": 19
+      },
+      {
+       "player": "Ron Artest",
+       "team": "Indiana Pacers",
+       "games": 73,
+       "mpg": 36.7,
+       "pts": 18.8,
+       "reb": 5.5,
+       "ast": 4.1,
+       "stl": 2.3,
+       "blk": 0.7,
+       "game_score": 15.19,
+       "position": "F",
+       "points": 369,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Vince Carter",
+       "team": "Toronto Raptors",
+       "games": 71,
+       "mpg": 38.8,
+       "pts": 22.8,
+       "reb": 5.6,
+       "ast": 5.6,
+       "stl": 1.7,
+       "blk": 1.1,
+       "game_score": 15.84,
+       "position": "G",
+       "points": 354,
+       "first_team_votes": 56
+      },
+      {
+       "player": "Brad Miller",
+       "team": "Sacramento Kings",
+       "games": 71,
+       "mpg": 32.5,
+       "pts": 13.1,
+       "reb": 9.6,
+       "ast": 4.1,
+       "stl": 0.7,
+       "blk": 0.8,
+       "game_score": 12.58,
+       "position": "C",
+       "points": 347,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Jason Kidd",
+       "team": "New Jersey Nets",
+       "games": 71,
+       "mpg": 37.6,
+       "pts": 16.8,
+       "reb": 7.7,
+       "ast": 9.0,
+       "stl": 1.6,
+       "blk": 0.2,
+       "game_score": 15.06,
+       "position": "G",
+       "points": 278,
+       "first_team_votes": 32
+      }
+     ]
+    },
+    {
+     "team": "Third Team",
+     "players": [
+      {
+       "player": "Kobe Bryant",
+       "team": "Los Angeles Lakers",
+       "games": 63,
+       "mpg": 36.5,
+       "pts": 22.3,
+       "reb": 6.2,
+       "ast": 4.8,
+       "stl": 1.7,
+       "blk": 0.4,
+       "game_score": 17.1,
+       "position": "G",
+       "points": 274,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Mike Bibby",
+       "team": "Sacramento Kings",
+       "games": 82,
+       "mpg": 37.1,
+       "pts": 17.5,
+       "reb": 3.8,
+       "ast": 5.7,
+       "stl": 1.2,
+       "blk": 0.3,
+       "game_score": 13.32,
+       "position": "G",
+       "points": 127,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Jermaine O'Neal",
+       "team": "Indiana Pacers",
+       "games": 78,
+       "mpg": 35.3,
+       "pts": 19.6,
+       "reb": 9.8,
+       "ast": 1.6,
+       "stl": 1.1,
+       "blk": 2.3,
+       "game_score": 14.24,
+       "position": "F",
+       "points": 123,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Marcus Camby",
+       "team": "Minnesota Timberwolves",
+       "games": 76,
+       "mpg": 30.5,
+       "pts": 8.5,
+       "reb": 9.8,
+       "ast": 2.4,
+       "stl": 1.1,
+       "blk": 2.5,
+       "game_score": 10.34,
+       "position": "C",
+       "points": 97,
+       "first_team_votes": 0
+      },
+      {
+       "player": "Richard Jefferson",
+       "team": "New Jersey Nets",
+       "games": 82,
+       "mpg": 37.3,
+       "pts": 18.5,
+       "reb": 5.6,
+       "ast": 4.0,
+       "stl": 1.1,
+       "blk": 0.3,
+       "game_score": 14.26,
+       "position": "F",
+       "points": 63,
+       "first_team_votes": 0
+      }
+     ]
+    }
+   ],
+   "others": [
+    {
+     "player": "Chauncey Billups",
+     "team": "Detroit Pistons",
+     "points": 65
+    },
+    {
+     "player": "Latrell Sprewell",
+     "team": "Minnesota Timberwolves",
+     "points": 60
+    },
+    {
+     "player": "Erick Dampier",
+     "team": "Detroit Pistons",
+     "points": 48
+    },
+    {
+     "player": "Paul Pierce",
+     "team": "Boston Celtics",
+     "points": 44
+    },
+    {
+     "player": "Michael Redd",
+     "team": "Milwaukee Bucks",
+     "points": 13
+    },
+    {
+     "player": "Steve Nash",
+     "team": "Dallas Mavericks",
+     "points": 5
+    }
+   ]
   }
  ]
 }

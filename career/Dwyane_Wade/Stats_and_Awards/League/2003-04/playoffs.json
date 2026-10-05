@@ -137,7 +137,7 @@
    ],
    "home_court": "Indiana Pacers",
    "wins": {
-    "Indiana Pacers": 2,
+    "Indiana Pacers": 3,
     "New Orleans Hornets": 1
    },
    "winner": null,
@@ -178,7 +178,9 @@
      "home": "New Orleans Hornets",
      "away": "Indiana Pacers",
      "conditional": false,
-     "event_id": "2004-04-25-indiana-pacers-at-new-orleans-hornets"
+     "event_id": "2004-04-25-indiana-pacers-at-new-orleans-hornets",
+     "result": "Indiana Pacers 96, New Orleans Hornets 90",
+     "winner": "Indiana Pacers"
     },
     {
      "game": 5,
@@ -386,7 +388,7 @@
    ],
    "home_court": "New Jersey Nets",
    "wins": {
-    "New Jersey Nets": 2,
+    "New Jersey Nets": 3,
     "Atlanta Hawks": 1
    },
    "winner": null,
@@ -427,7 +429,9 @@
      "home": "Atlanta Hawks",
      "away": "New Jersey Nets",
      "conditional": false,
-     "event_id": "2004-04-25-new-jersey-nets-at-atlanta-hawks"
+     "event_id": "2004-04-25-new-jersey-nets-at-atlanta-hawks",
+     "result": "New Jersey Nets 89, Atlanta Hawks 86",
+     "winner": "New Jersey Nets"
     },
     {
      "game": 5,
@@ -553,7 +557,7 @@
    "home_court": "Dallas Mavericks",
    "wins": {
     "Dallas Mavericks": 3,
-    "Denver Nuggets": 0
+    "Denver Nuggets": 1
    },
    "winner": null,
    "games": [
@@ -593,7 +597,9 @@
      "home": "Denver Nuggets",
      "away": "Dallas Mavericks",
      "conditional": false,
-     "event_id": "2004-04-25-dallas-mavericks-at-denver-nuggets"
+     "event_id": "2004-04-25-dallas-mavericks-at-denver-nuggets",
+     "result": "Dallas Mavericks 97, Denver Nuggets 109",
+     "winner": "Denver Nuggets"
     },
     {
      "game": 5,
@@ -636,7 +642,7 @@
    "home_court": "San Antonio Spurs",
    "wins": {
     "San Antonio Spurs": 3,
-    "Golden State Warriors": 0
+    "Golden State Warriors": 1
    },
    "winner": null,
    "games": [
@@ -676,7 +682,9 @@
      "home": "Golden State Warriors",
      "away": "San Antonio Spurs",
      "conditional": false,
-     "event_id": "2004-04-25-san-antonio-spurs-at-golden-state-warriors"
+     "event_id": "2004-04-25-san-antonio-spurs-at-golden-state-warriors",
+     "result": "San Antonio Spurs 93, Golden State Warriors 103",
+     "winner": "Golden State Warriors"
     },
     {
      "game": 5,

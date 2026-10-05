@@ -2,9 +2,9 @@
 
 # Contract | Danny Fortson
 
-Known through: 2004-04-23. [Open interactive contract](fortsda01.html#contract) · [Contract history](fortsda01.html#contract-history)
+Known through: 2004-04-25. [Open interactive contract](fortsda01.html#contract) · [Contract history](fortsda01.html#contract-history)
 
-Danny Fortson: under contract. Evidence cutoff: 2004-04-23.
+Danny Fortson: under contract. Evidence cutoff: 2004-04-25.
 
 ## Current contract
 
