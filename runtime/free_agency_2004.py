@@ -14,11 +14,13 @@ draws on (career continuity). Players without a real 2004-05 role leave the leag
 Club decisions are judgement rules with no chance element; a player's answers are engine draws:
 - Value: NBA efficiency per game in the simulated 2003-04 season, shrunk toward replacement by minutes, times the age
   factor (`runtime/valuation.py`). Price: the salary at the same rank among existing 2004-05 contracts (veterans
-  with 500 or more simulated minutes) as his value, times the honor factor, inside the minimum and maximum.
+  with 500 or more simulated minutes) as his value, times the honor factor, inside the minimum and maximum; a player
+  with fewer than 250 simulated minutes is priced at his minimum.
 - June 30: a club exercises a team option when the market price is at least TEAM_OPTION_SHARE of the option salary.
   A player or early-termination option is the player's draw: P(opt out) rises with his price over the option salary.
   A club tenders a qualifying offer (the larger of 125% of the prior salary and the minimum plus $175,000) when his
-  price is at least the offer and 1.5 times his minimum; the player is then restricted. An offer sheet is matched
+  price is at least the offer and 1.5 times his minimum; the player is then restricted. When Wade has asked Miami to
+  keep a player the rule would let go, the tender is an engine draw at his standing weight x (1 - the rule's margin). An offer sheet is matched
   when the holder values him at the offer (price x need) and can pay it.
 - First-round picks sign on July 1 at 120% of the 2004 rookie scale (era practice). Second-round and undrafted
   prospects enter the pool at the minimum; their drafting club holds their rights like a restricted player.
@@ -73,6 +75,7 @@ TEAM_OPTION_SHARE = 0.85
 QO_SHARE = 1.0
 QO_MIN_PRICE = 1.5                      # and only a player priced at 1.5x his minimum or more
 COMPARABLE_MINUTES = 500
+MIN_EVIDENCE_MINUTES = 250              # below this many simulated 2003-04 minutes a player is priced at his minimum
 QO_MINIMUM_PLUS = 175_000
 OPT_OUT_SLOPE, OPT_OUT_LIMITS = 5.0, (0.03, 0.97)
 ROOKIE_SCALE_SHARE = 1.20
@@ -230,7 +233,7 @@ class Pricing:
         values, salaries = [], []
         for b, t in terms.items():
             e = self.evidence.get(b)
-            if (t["kind"] == "contract" and e and e["minutes"] >= COMPARABLE_MINUTES and t["salary"] > 1_100_000
+            if (t["kind"] == "contract" and e and e["minutes"] >= COMPARABLE_MINUTES
                     and "rookie" not in t["source"]):
                 values.append(self.value(b))
                 salaries.append(t["salary"])
@@ -268,8 +271,8 @@ class Pricing:
         service = (self.ident.get(b) or {}).get("service", 0)
         top = max(maximum(service, cal["cap"]), int(round((prior or 0) * 1.05)))
         raw = self.comparables_price(self.value(b)) * self.honors.honor_factor(b)
-        if b not in self.evidence:
-            raw = minimum(service, cal)
+        if (self.evidence.get(b) or {}).get("minutes", 0) < MIN_EVIDENCE_MINUTES:
+            raw = minimum(service, cal)                 # too little simulated evidence to price above the minimum
         return int(round(min(top, max(minimum(service, cal), raw))))
 
 
@@ -544,10 +547,19 @@ class Market:
             club = self.rights.get(b)
             if club and rfa_eligible(b, self.ident, self.rookie_scale) and b not in drafted:
                 qo = qualifying_amount(self.prior.get(b), self.service(b), self.cal)
-                if self.price[b] >= QO_SHARE * qo and self.price[b] >= QO_MIN_PRICE * minimum(self.service(b), self.cal):
+                bar = max(QO_SHARE * qo, QO_MIN_PRICE * minimum(self.service(b), self.cal))
+                tender = self.price[b] >= bar
+                kept = self.requested(OPTIONS_DATE, ("re_sign",)) if club == MIAMI else {}
+                if not tender and b in kept:
+                    tender = self.request_draw(b, bar, kept[b])
+                    if tender is None:
+                        continue
+                if tender:
                     self.qualifying[b] = {"club": club, "amount": qo}
                     self.events.append({"date": OPTIONS_DATE, "kind": "qualifying_offer", "player": self.name(b), "bbr_id": b,
                                         "club": club, "amount": qo, "price": self.price[b]})
+        if self.pending:
+            return None
         for b in self.pool:
             if b in drafted and b not in self.contracts:
                 self.qualifying[b] = {"club": drafted[b], "amount": minimum(0, self.cal), "draft_rights": True}
@@ -607,15 +619,37 @@ class Market:
             return self.cal["mle"], "mid_level"
         return 0, None
 
-    def requested(self, day):
-        """{bbr_id: standing weight} for Wade's free-agent requests dated on or before the day (Miami only)."""
+    def requested(self, day, subjects=("free_agent_target", "re_sign")):
+        """{bbr_id: standing weight} for Wade's requests to pursue a free agent or keep Miami's own, dated on or before
+        the day (Miami only)."""
         path = self.root / REQUESTS
         if not path.is_file():
             return {}
         from .standing import STANDING_WEIGHT, standing_on
         weight = STANDING_WEIGHT.get(standing_on(self.root, day).get("standing"), 0.0)
         return {r["bbr_id"]: weight for r in _read(path)["requests"]
-                if r.get("subject") == "free_agent_target" and r.get("requested") == "pursue" and r["date"] <= day and r.get("bbr_id")}
+                if r.get("subject") in subjects and r.get("requested") in ("pursue", "keep") and r["date"] <= day and r.get("bbr_id")}
+
+    def request_draw(self, b, bar, weight):
+        """Wade asks Miami to keep a player its June 30 rule would let go (no qualifying offer): an engine draw with
+        P(tender) = standing weight x (1 - margin), the margin being how clear-cut the rule's call was
+        (`runtime/front_office.request_override`)."""
+        from .front_office import request_override
+        from .standing import standing_on
+        margin = min(1.0, abs(bar - self.price[b]) / bar)
+        p = request_override("let_go", "tender", margin, standing_on(self.root, OPTIONS_DATE)["standing"])
+        if p <= 0:
+            return False
+        answer = self.draw({"event_id": f"2004-06-30-{_slug(self.name(b))}-qualifying-offer-request", "date": OPTIONS_DATE,
+                            "question": f"Does Miami tender {self.name(b)} a qualifying offer at Wade's request?",
+                            "decider": "Miami front office (engine draw on Wade's request)",
+                            "options": {"tender": p, "let_go": round(1 - p, 6)},
+                            "basis": f"Rule: no tender (price ${self.price[b]:,} under the bar ${int(bar):,}; margin {margin:.3f}). Wade asked "
+                                     f"to keep him (10_Free_Agency/wade_requests.json); standing weight {weight} x (1 - margin) "
+                                     "(docs/front_office.md, Wade's requests)."})
+        if answer is None:
+            return None
+        return answer == "tender"
 
     def offers_for(self, club, week, day, open_players):
         out, short = [], ROSTER_TARGET - self.roster(club)

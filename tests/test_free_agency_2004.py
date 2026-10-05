@@ -109,6 +109,22 @@ class MarketTests(unittest.TestCase):
         self.assertTrue(wanted and all(w == weight for w in wanted.values()))
         self.assertEqual(self.market.requested("2004-06-23"), {})                 # nothing before it was asked
 
+    def test_a_keep_request_against_the_rule_is_a_weighted_draw(self):
+        seen = []
+        saved = F._draw
+        F._draw = lambda root, packet: seen.append(packet) or "tender"
+        try:
+            self.market.price["test-player"] = 600_000
+            self.market.ident["test-player"] = {"name": "Test Player", "service": 1}
+            self.assertTrue(self.market.request_draw("test-player", 900_000, 0.8))
+        finally:
+            F._draw = saved
+            self.market.price.pop("test-player")
+            self.market.ident.pop("test-player")
+        from runtime.standing import STANDING_WEIGHT, standing_on
+        weight = STANDING_WEIGHT[standing_on(ROOT, F.OPTIONS_DATE)["standing"]]
+        self.assertAlmostEqual(seen[0]["options"]["tender"], round(weight * (1 - 300_000 / 900_000), 3), places=3)
+
     def test_real_2004_moves_are_never_read(self):
         source = (ROOT / "runtime/free_agency_2004.py").read_text(encoding="utf-8")
         self.assertNotIn("nba_2004_offseason_transactions", source)
