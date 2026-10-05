@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-04-27",
+  "as_of": "2004-04-28",
   "season": "2003-04",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-04-26-miami-heat-at-milwaukee-bucks",
+  "current_event": "2004-04-28-milwaukee-bucks-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-04-27"
+              "2004-04-28"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-04-26-miami-heat-at-milwaukee-bucks"
+              "2004-04-28-milwaukee-bucks-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2004-04-27",
+              "2004-04-28",
               "Current checkpoint",
-              "2004-04-26-miami-heat-at-milwaukee-bucks",
+              "2004-04-28-milwaukee-bucks-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -656,6 +656,10 @@
           "href": "../2003-04/08_Playoffs/First_Round/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -664,7 +668,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-27"
+          "value": "2004-04-28"
         },
         {
           "label": "Team",
@@ -1278,6 +1282,10 @@
           "href": "../2003-04/08_Playoffs/First_Round/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1286,7 +1294,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-27"
+          "value": "2004-04-28"
         },
         {
           "label": "Team",
@@ -1953,6 +1961,10 @@
           "href": "../2003-04/08_Playoffs/First_Round/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1961,7 +1973,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-27"
+          "value": "2004-04-28"
         },
         {
           "label": "Team",
@@ -2736,6 +2748,10 @@
           "href": "../2003-04/08_Playoffs/First_Round/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2744,7 +2760,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-27"
+          "value": "2004-04-28"
         },
         {
           "label": "Team",
@@ -3328,6 +3344,10 @@
           "href": "../2003-04/08_Playoffs/First_Round/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3336,7 +3356,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-27"
+          "value": "2004-04-28"
         },
         {
           "label": "Team",
@@ -3916,6 +3936,10 @@
           "href": "../2003-04/08_Playoffs/First_Round/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3924,7 +3948,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-27"
+          "value": "2004-04-28"
         },
         {
           "label": "Team",
@@ -4513,6 +4537,10 @@
           "href": "../2003-04/08_Playoffs/First_Round/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4521,7 +4549,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-27"
+          "value": "2004-04-28"
         },
         {
           "label": "Team",
@@ -5158,6 +5186,10 @@
           "href": "../2003-04/08_Playoffs/First_Round/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -5166,7 +5198,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-27"
+          "value": "2004-04-28"
         },
         {
           "label": "Team",
@@ -5183,7 +5215,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "93 closed game records in 2003-04 through 2004-04-27. Competitions remain separate.",
+      "summary": "94 closed game records in 2003-04 through 2004-04-28. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -5200,11 +5232,11 @@
           "rows": [
             [
               "playoff",
-              1,
-              24.840733333,
-              9.0,
-              2.0,
-              5.0,
+              2,
+              26.013275,
+              10.5,
+              4.0,
+              4.0,
               1.0,
               "Complete"
             ],
@@ -5244,12 +5276,12 @@
           "rows": [
             [
               "playoff",
+              7,
+              13,
+              0.538461538,
               3,
-              6,
-              0.5,
-              1,
-              1,
-              1.0
+              4,
+              0.75
             ],
             [
               "preseason",
@@ -6211,6 +6243,16 @@
                 "label": "Closed game",
                 "href": "../2003-04/08_Playoffs/First_Round/Game_4.md"
               }
+            ],
+            [
+              "2004-04-28",
+              "playoff",
+              "Milwaukee Bucks",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2003-04/08_Playoffs/First_Round/Game_5.md"
+              }
             ]
           ]
         },
@@ -6720,6 +6762,10 @@
           "href": "../2003-04/08_Playoffs/First_Round/Game_4.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2003-04/08_Playoffs/First_Round/Game_5.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -6728,7 +6774,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-04-27"
+          "value": "2004-04-28"
         },
         {
           "label": "Team",

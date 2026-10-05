@@ -2,7 +2,7 @@
 
 # Contract negotiation | Dwyane Wade
 
-Career date: 2004-04-27 · Miami Heat · recorded
+Career date: 2004-04-28 · Miami Heat · recorded
 
 [Live milestone desk](index.html#contract_negotiation) · [All milestones](README.md)
 
@@ -196,4 +196,5 @@ Verify registration and the authoritative contract record; no second player acce
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_2.md)
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_3.md)
 - [Closed game](../2003-04/08_Playoffs/First_Round/Game_4.md)
+- [Closed game](../2003-04/08_Playoffs/First_Round/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)

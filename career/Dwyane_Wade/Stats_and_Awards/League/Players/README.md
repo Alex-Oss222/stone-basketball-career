@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-04-27**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-04-28**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -256,7 +256,7 @@ Card date: **2004-04-27**. 504 registry players, one Markdown card and one inter
 | [Jiri Welsch](welscji01.md) | Boston Celtics | 24 | sourced | [open](welscji01.html) |
 | [Joe Smith](smithjo02.md) | Milwaukee Bucks | 28 | sourced | [open](smithjo02.html) |
 | [Jonathan Bender](bendejo01.md) | Indiana Pacers | 23 | silhouette | [open](bendejo01.html) |
-| [Josh Howard](howarjo01.md) | Dallas Mavericks | 23 | sourced | [open](howarjo01.html) |
+| [Josh Howard](howarjo01.md) | Dallas Mavericks | 24 | sourced | [open](howarjo01.html) |
 | [Jumaine Jones](jonesju01.md) | Boston Celtics | 25 | sourced | [open](jonesju01.html) |
 | [Kedrick Brown](brownke01.md) | Boston Celtics | 23 | sourced | [open](brownke01.html) |
 | [Lamar Odom](odomla01.md) | Los Angeles Clippers | 24 | sourced | [open](odomla01.html) |
@@ -458,7 +458,7 @@ Card date: **2004-04-27**. 504 registry players, one Markdown card and one inter
 | [Charles Oakley](oaklech01.md) | Houston Rockets | 40 | sourced | [open](oaklech01.html) |
 | [Cherokee Parks](parksch02.md) | Miami Heat | 31 | silhouette | [open](parksch02.html) |
 | [Chris Andersen](anderch01.md) | Denver Nuggets | 25 | sourced | [open](anderch01.html) |
-| [Chris Kaman](kamanch01.md) | Los Angeles Clippers | 21 | sourced | [open](kamanch01.html) |
+| [Chris Kaman](kamanch01.md) | Los Angeles Clippers | 22 | sourced | [open](kamanch01.html) |
 | [Chris Mihm](mihmch01.md) | Cleveland Cavaliers | 24 | sourced | [open](mihmch01.html) |
 | [Corie Blount](blounco01.md) | Chicago Bulls | 35 | silhouette | [open](blounco01.html) |
 | [Curtis Borchardt](borchcu01.md) | Utah Jazz | None | silhouette | [open](borchcu01.html) |

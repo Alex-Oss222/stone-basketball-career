@@ -2,11 +2,11 @@
 
 # Shooting | Dwyane Wade
 
-Career cutoff: **2004-04-27**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
+Career cutoff: **2004-04-28**. [Open interactive Shooting](player_cards.html#shooting) · [Full statistics](README.md) · [Contract](Contract.md) · [Awards](Awards.md)
 
 The detailed court and tables open by default. Missing locations remain unavailable even when a complete box score exists. Field-goal points exclude free throws; rates use every recorded appearance in the selected period. Competitions and seasons stay separate.
 
-## 2003-04 · NBA regular season · through 2004-04-27
+## 2003-04 · NBA regular season · through 2004-04-28
 
 [Open this period](player_cards.html?period=regular-2003-04-season#shooting)
 
@@ -2707,23 +2707,23 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-04-14 | New Jersey Nets | DNP: injured list since 2004-04-12 | [Game](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.md) | [Result](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) | [Simulated engine shot locations](../2003-04/06_Regular_Season/04_April/Week_2/Game_4.result.json) |
 
-## 2003-04 · NBA playoffs · through 2004-04-27
+## 2003-04 · NBA playoffs · through 2004-04-28
 
 [Open this period](player_cards.html?period=playoff-2003-04-season#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 3 | 4 | 3 / 6 | 50.0% | 1 / 1 | 9 | complete |
+| 2 | 3 | 5 | 7 / 13 | 53.8% | 3 / 4 | 21 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 2 | 4 | 50.0% | 4.00 | 4.00 | 4 |
+| Paint | 3 | 6 | 50.0% | 3.00 | 3.00 | 6 |
 | Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
-| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
-| 18 ft to the three-point line | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
-| Three-point range | 1 | 1 | 100.0% | 3.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 0 | 1 | 0.0% | 0.00 | 0.50 | 1 |
+| 18 ft to the three-point line | 1 | 2 | 50.0% | 1.00 | 1.00 | 2 |
+| Three-point range | 3 | 4 | 75.0% | 4.50 | 2.00 | 4 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -2731,6 +2731,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-04-21 | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Game](../2003-04/08_Playoffs/First_Round/Game_2.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_2.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_2.result.json) |
 | 2004-04-24 | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Game](../2003-04/08_Playoffs/First_Round/Game_3.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_3.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_3.result.json) |
 | 2004-04-26 | Milwaukee Bucks | Played | [Game](../2003-04/08_Playoffs/First_Round/Game_4.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_4.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_4.result.json) |
+| 2004-04-28 | Milwaukee Bucks | Played | [Game](../2003-04/08_Playoffs/First_Round/Game_5.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_5.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_5.result.json) |
 
 ## 2004-04 · NBA playoffs
 
@@ -2738,17 +2739,17 @@ Simulated engine shot locations come from the original closed game results. Part
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 3 | 4 | 3 / 6 | 50.0% | 1 / 1 | 9 | complete |
+| 2 | 3 | 5 | 7 / 13 | 53.8% | 3 / 4 | 21 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 2 | 4 | 50.0% | 4.00 | 4.00 | 4 |
+| Paint | 3 | 6 | 50.0% | 3.00 | 3.00 | 6 |
 | Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
-| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
-| 18 ft to the three-point line | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
-| Three-point range | 1 | 1 | 100.0% | 3.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 0 | 1 | 0.0% | 0.00 | 0.50 | 1 |
+| 18 ft to the three-point line | 1 | 2 | 50.0% | 1.00 | 1.00 | 2 |
+| Three-point range | 3 | 4 | 75.0% | 4.50 | 2.00 | 4 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
@@ -2756,6 +2757,7 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-04-21 | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Game](../2003-04/08_Playoffs/First_Round/Game_2.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_2.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_2.result.json) |
 | 2004-04-24 | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Game](../2003-04/08_Playoffs/First_Round/Game_3.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_3.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_3.result.json) |
 | 2004-04-26 | Milwaukee Bucks | Played | [Game](../2003-04/08_Playoffs/First_Round/Game_4.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_4.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_4.result.json) |
+| 2004-04-28 | Milwaukee Bucks | Played | [Game](../2003-04/08_Playoffs/First_Round/Game_5.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_5.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_5.result.json) |
 
 ## 2004-04-15 to 2004-04-21 · NBA playoffs
 
@@ -2780,28 +2782,29 @@ Simulated engine shot locations come from the original closed game results. Part
 | 2004-04-18 | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Game](../2003-04/08_Playoffs/First_Round/Game_1.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_1.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_1.result.json) |
 | 2004-04-21 | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Game](../2003-04/08_Playoffs/First_Round/Game_2.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_2.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_2.result.json) |
 
-## 2004-04-22 to 2004-04-27 · NBA playoffs
+## 2004-04-22 to 2004-04-28 · NBA playoffs
 
 [Open this period](player_cards.html?period=playoff-2003-04-week-2004-04-22#shooting)
 
 | Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | 2 | 3 / 6 | 50.0% | 1 / 1 | 9 | complete |
+| 2 | 1 | 3 | 7 / 13 | 53.8% | 3 / 4 | 21 | complete |
 
 Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
 | --- | --- | --- | --- | --- | --- | --- |
-| Paint | 2 | 4 | 50.0% | 4.00 | 4.00 | 4 |
+| Paint | 3 | 6 | 50.0% | 3.00 | 3.00 | 6 |
 | Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
-| Outside paint, 12 to under 18 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
-| 18 ft to the three-point line | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
-| Three-point range | 1 | 1 | 100.0% | 3.00 | 1.00 | 1 |
+| Outside paint, 12 to under 18 ft | 0 | 1 | 0.0% | 0.00 | 0.50 | 1 |
+| 18 ft to the three-point line | 1 | 2 | 50.0% | 1.00 | 1.00 | 2 |
+| Three-point range | 3 | 4 | 75.0% | 4.50 | 2.00 | 4 |
 
 | Date | Opponent | Participation | Closed game | Player box | Shot source |
 | --- | --- | --- | --- | --- | --- |
 | 2004-04-24 | Milwaukee Bucks | DNP: injured list since 2004-04-12 | [Game](../2003-04/08_Playoffs/First_Round/Game_3.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_3.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_3.result.json) |
 | 2004-04-26 | Milwaukee Bucks | Played | [Game](../2003-04/08_Playoffs/First_Round/Game_4.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_4.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_4.result.json) |
+| 2004-04-28 | Milwaukee Bucks | Played | [Game](../2003-04/08_Playoffs/First_Round/Game_5.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_5.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_5.result.json) |
 
 ## 2004-04-18 vs Milwaukee Bucks · DNP: injured list since 2004-04-12 · NBA playoffs
 
@@ -2891,7 +2894,29 @@ Simulated engine shot locations come from the original closed game results. Part
 | --- | --- | --- | --- | --- | --- |
 | 2004-04-26 | Milwaukee Bucks | Played | [Game](../2003-04/08_Playoffs/First_Round/Game_4.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_4.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_4.result.json) |
 
-## 2003-04 · NBA preseason · through 2004-04-27
+## 2004-04-28 vs Milwaukee Bucks · Played · NBA playoffs
+
+[Open this period](player_cards.html?period=playoff-2003-04-game-b40eeadf46b4ef32#shooting)
+
+| Appearances | DNP | Closed games | FGM / FGA | FG% | 3PM / 3PA | PTS | Location coverage |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 4 / 7 | 57.1% | 2 / 3 | 12 | complete |
+
+Simulated engine shot locations come from the original closed game results. Partial feeds keep complete-period location rates unavailable.
+
+| Zone | FGM | FGA | FG% | FG points / game | FGA / game | Observed located attempts |
+| --- | --- | --- | --- | --- | --- | --- |
+| Paint | 1 | 2 | 50.0% | 2.00 | 2.00 | 2 |
+| Outside paint, under 12 ft | 0 | 0 | N/A | 0.00 | 0.00 | 0 |
+| Outside paint, 12 to under 18 ft | 0 | 1 | 0.0% | 0.00 | 1.00 | 1 |
+| 18 ft to the three-point line | 1 | 1 | 100.0% | 2.00 | 1.00 | 1 |
+| Three-point range | 2 | 3 | 66.7% | 6.00 | 3.00 | 3 |
+
+| Date | Opponent | Participation | Closed game | Player box | Shot source |
+| --- | --- | --- | --- | --- | --- |
+| 2004-04-28 | Milwaukee Bucks | Played | [Game](../2003-04/08_Playoffs/First_Round/Game_5.md) | [Result](../2003-04/08_Playoffs/First_Round/Game_5.result.json) | [Simulated engine shot locations](../2003-04/08_Playoffs/First_Round/Game_5.result.json) |
+
+## 2003-04 · NBA preseason · through 2004-04-28
 
 [Open this period](player_cards.html?period=preseason-2003-04-season#shooting)
 
