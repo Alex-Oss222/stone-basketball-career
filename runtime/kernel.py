@@ -40,7 +40,8 @@ import random
 
 from .packets import canonical
 from .player_stats import MODEL_VERSION, RATE_KEYS
-from .prospects import ARCHIVED_ROOKIE_MODEL_VERSION, LEGACY_ROOKIE_MODEL_VERSION, ROOKIE_MODEL_VERSION, SCOUTED_MODEL_VERSIONS
+from .prospects import (ARCHIVED_ROOKIE_MODEL_VERSION, LEGACY_ROOKIE_MODEL_VERSION, PROTAGONIST_MODEL_VERSION, ROOKIE_MODEL_VERSION,
+                        SCOUTED_MODEL_VERSIONS)
 from .prospect_scouting import style_errors
 from .shot_events import spatial_result_errors
 from .spatial_shots import (draw_spatial_shot, load_spatial_environment,
@@ -203,6 +204,7 @@ def team_errors(team, rules):
             profile = p.stat_profile
             base_keys = {"bbr_id", "model_version", "as_of", "season_end_year", "source_sha256", "rates"}
             trajectory = profile.get("model_version") == TRAJECTORY_MODEL_VERSION
+            seasonal = trajectory or profile.get("model_version") == PROTAGONIST_MODEL_VERSION   # dated to its own season
             defense = profile.get("defense", 0.0)
             if (isinstance(defense, bool) or not isinstance(defense, (int, float)) or not math.isfinite(defense)
                     or abs(defense) > DEFENSE_LIMIT):
@@ -219,9 +221,9 @@ def team_errors(team, rules):
                     or ("development" in profile and not needs_development(profile))
                     or profile.get("model_version") not in (MODEL_VERSION, LEGACY_ROOKIE_MODEL_VERSION,
                                                              ARCHIVED_ROOKIE_MODEL_VERSION, ROOKIE_MODEL_VERSION,
-                                                             TRAJECTORY_MODEL_VERSION)
-                    or (not trajectory and profile.get("season_end_year") != 2003)
-                    or (trajectory and profile.get("season_end_year") != int(rules["season"][:4]) + 1)):
+                                                             TRAJECTORY_MODEL_VERSION, PROTAGONIST_MODEL_VERSION)
+                    or (not seasonal and profile.get("season_end_year") != 2003)
+                    or (seasonal and profile.get("season_end_year") != int(rules["season"][:4]) + 1)):
                 errors.append(f"{p.player_id}: invalid statistical profile metadata")
             rates = profile.get("rates", {})
             if not isinstance(rates, dict) or set(rates) != set(RATE_KEYS):

@@ -36,7 +36,7 @@ class ContractNavigationTests(unittest.TestCase):
 
     def test_personnel_links_leave_assessment_and_final_sections_unchanged(self):
         outputs = build_contract_navigation(ROOT, PLAYER)
-        cards = [page for page in outputs if page.parent.name == "Player_Cards" and page.name != "README.md"]
+        cards = [page for page in outputs if page.parent.name == "Player_Cards" and page.name != "README.md" and "2003-04" in page.parts]
         register = json.loads((PLAYER / "2003-04/00_Team/Team/Roster/roster.json").read_text(encoding="utf-8"))["players"]
         self.assertEqual(len(cards), len(register))          # one personnel card per register entry on the live date
         for page in cards:

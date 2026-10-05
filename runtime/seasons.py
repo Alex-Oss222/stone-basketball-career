@@ -178,7 +178,14 @@ def live_seasons(root=ROOT):
 
 def active(root=ROOT):
     """The career's live season: the latest folder with a current state. A scratch copy without any state (a test
-    scaffold) follows the repository's own live season."""
+    scaffold) follows the repository's own live season.
+
+    The regression suite pins the season it was written for (`CAREER_TEST_SEASON`, set only by `tests/__init__.py`):
+    its scenarios replay the first season from its checkpoint whatever season the career has reached since."""
+    import os
+    pinned = os.environ.get("CAREER_TEST_SEASON")
+    if pinned:
+        return pinned
     live = live_seasons(root) if (Path(root) / PLAYER).is_dir() else []
     if live:
         return live[-1]
@@ -232,3 +239,18 @@ def month_weeks(season, root=ROOT):
         out.append((MONTH_NAMES[m], m, y, MONTH_FOLDERS[m], weeks))
         y, m = (y + (m == 12), m % 12 + 1)
     return out
+
+
+FIRST = "2003-04"
+
+
+def structure(season, root=ROOT):
+    """The season's folder structure: the foundation file, with the regular-season months and weeks of this season's
+    own calendar (`month_weeks`) for every season after the first (whose folders were laid out from the file)."""
+    cfg = json.loads((ROOT / "foundation/season_structure.json").read_text(encoding="utf-8"))
+    if season == FIRST or not exists(season, "schedule", root):
+        return cfg                       # the first season, or a season without a researched schedule yet
+    base = cfg["regular_season"]
+    cfg["regular_season"] = {name: dict(base.get(name, {}), folder=folder, weeks=weeks)
+                             for name, m, y, folder, weeks in month_weeks(season, root)}
+    return cfg

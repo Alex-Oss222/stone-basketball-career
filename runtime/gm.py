@@ -16,7 +16,8 @@ from .trades import SIGN_AND_TRADE_RIGHTS
 from .valuation import read
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
+from .seasons import active as _live_season
+SEASON = _live_season(ROOT)          # the live season (runtime/seasons.py): Miami's records are its folder's
 MIAMI = "Miami Heat"
 TEAM = Path(f"career/Dwyane_Wade/{SEASON}/00_Team")
 POSITIONS = ("PG", "SG", "SF", "PF", "C")
@@ -61,7 +62,7 @@ class FrontOffice:
                 continue
             if status in ("team_option_declined", "player_option_declined", "renounced", "released", "traded", "signed_elsewhere", "voided"):
                 continue
-            if status in ("team_option_pending", "player_option_pending") and self.on >= "2003-07-01":
+            if status in ("team_option_pending", "player_option_pending") and self.on >= f"{SEASON[:4]}-07-01":
                 continue   # June 30 decisions must have resolved these; a pending one past June 30 is not counted
             total += amount
             rows.append((p["player"], amount, kind, status))
@@ -131,7 +132,7 @@ class FrontOffice:
             status = p["status"]
             if any(w in status for w in ("expiring", "free_agent", "renounced", "released", "traded", "signed_elsewhere", "declined", "voided", "waived")):
                 continue                     # a free agent is not under Miami's control until he re-signs
-            if "option_pending" in status and self.on >= "2003-07-01":
+            if "option_pending" in status and self.on >= f"{SEASON[:4]}-07-01":
                 continue   # resolved on June 30; the register must say which way
             bbr = p.get("bbr_id")
             value = self.valuation.value(bbr) if bbr else None

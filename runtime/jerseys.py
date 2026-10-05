@@ -39,7 +39,8 @@ def register_path(root=ROOT):
 def request_dirs(root=ROOT):
     """Wade's jersey folders, the live season first, then earlier seasons."""
     from .seasons import live_seasons
-    seasons = list(reversed(live_seasons(root) if (Path(root) / "career/Dwyane_Wade").is_dir() else [])) or [_season(root)]
+    live = _season(root)
+    seasons = [s for s in reversed(live_seasons(root) if (Path(root) / "career/Dwyane_Wade").is_dir() else []) if s <= live] or [live]
     return [Path(f"career/Dwyane_Wade/{s}/00_Team/Team/Roster/Wade_Jersey") for s in seasons]
 
 

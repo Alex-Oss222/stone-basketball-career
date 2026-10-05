@@ -23,10 +23,10 @@ from runtime import roster_moves, signing                             # noqa: E4
 from runtime.camp import GUARANTEE_DATE                               # noqa: E402
 from runtime.contract_archive import archive_contract                 # noqa: E402
 from runtime.gm import FrontOffice                                    # noqa: E402
-from runtime.market import Market                                     # noqa: E402
+from runtime.season_market import for_date as Market                  # noqa: E402
 from scripts.refresh_career_views import refresh_career_views         # noqa: E402
 
-STATE = Path("career/Dwyane_Wade/2003-04/current_state.json")
+STATE = Path(f"career/Dwyane_Wade/{signing.SEASON}/current_state.json")      # the live season
 
 
 def review(root, day):
@@ -34,9 +34,9 @@ def review(root, day):
     clock = json.loads((root / STATE).read_text(encoding="utf-8"))["current_date"]
     if day > clock:
         raise SystemExit(f"{day} is after the career clock ({clock}); the review is written on its date, not before")
-    note = f"career/Dwyane_Wade/2003-04/{json.loads((root / STATE).read_text(encoding='utf-8'))['current_note']}"
+    note = f"career/Dwyane_Wade/{signing.SEASON}/{json.loads((root / STATE).read_text(encoding='utf-8'))['current_note']}"
     record = roster_moves.read(roster_moves.GUARANTEES, root) or {
-        "schema_version": 1, "owner": "ai_gm", "kind": "guarantee_review", "season": "2003-04",
+        "schema_version": 1, "owner": "ai_gm", "kind": "guarantee_review", "season": signing.SEASON,
         "guarantee_date": GUARANTEE_DATE, "waive_by": roster_moves.WAIVE_BY, "rule": roster_moves.__doc__.split("The guarantee review")[1].strip()}
     (root / roster_moves.GUARANTEES).parent.mkdir(parents=True, exist_ok=True)
     done = []
@@ -72,7 +72,7 @@ def review(root, day):
             made.append({"player": entry["player"], "guaranteed": salary})
         roster["as_of"] = GUARANTEE_DATE
         signing.note_event(writer, note, GUARANTEE_DATE, "Guarantee date: " + (", ".join(m["player"] for m in made) or "no contract") +
-                           " guaranteed for 2003-04.")
+                           f" guaranteed for {signing.SEASON}.")
         record.update(guaranteed_on=GUARANTEE_DATE, guaranteed=made)
         signing.dump(root / roster_moves.GUARANTEES, record)
         writer.commit()

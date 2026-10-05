@@ -13,9 +13,11 @@ Each day runs the dated systems in order, each idempotent, so a stopped day can 
      inputs frozen (`game_requests.freeze`) and checked against the dated records;
   5. awards announced that morning are decided (an exact tie is an engine draw);
   6. the day's games are played through the engine's direct route and written back into the career record.
-After the regular season (April 14) a day is: season awards announced that morning, the day's playoff games built
+Before opening night a day is training camp and the preseason (`scripts/run_camp.py`, every stage due by the day,
+its draws by the engine, its games played). After the regular season a day is: season awards announced that morning, the day's playoff games built
 (`scripts/playoff_day.py`, Miami's one at a time) and played, then the bracket brought up to date; the market,
-trade scan and staff reviews are closed.
+trade scan and staff reviews are closed. The day the summer market's record exists and the rollover is dated, the
+next season becomes live (`scripts/rollover.py`), and its own calendar (`runtime/seasons.py`) routes every later day.
 
 Every chance answer is an engine draw; nothing here chooses an outcome. Each day writes results back lightly (notes,
 injuries, registry, team records). Every Sunday the full write-back, page rebuild and repository validation run;
@@ -39,14 +41,24 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 os.environ.setdefault("ADVANCE_LIGHT", "1")         # builders skip the report rebuild; the checkpoint does it
-STATE = ROOT / "career/Dwyane_Wade/2003-04/current_state.json"
-MIAMI_RESULTS = ("career/Dwyane_Wade/2003-04/06_Regular_Season/*/*/Game_*.result.json",
-                 "career/Dwyane_Wade/2003-04/08_Playoffs/*/Game_*.result.json")
-SEASON_END = "2004-04-14"
+MIAMI_RESULTS = ("career/Dwyane_Wade/{season}/05_Preseason/Game_*.result.json",
+                 "career/Dwyane_Wade/{season}/06_Regular_Season/*/*/Game_*.result.json",
+                 "career/Dwyane_Wade/{season}/08_Playoffs/*/Game_*.result.json")
+
+
+def live():
+    """The live season (runtime/seasons.py): it changes when the rollover runs, so it is read every time."""
+    from runtime.seasons import active
+    return active(ROOT)
+
+
+def season_dates():
+    from runtime.seasons import dates
+    return dates(live(), ROOT)
 
 
 def miami_results():
-    return [p for pattern in MIAMI_RESULTS for p in ROOT.glob(pattern)]
+    return [p for pattern in MIAMI_RESULTS for p in ROOT.glob(pattern.format(season=live()))]
 
 
 class Stop(Exception):
@@ -72,12 +84,16 @@ def git(*args):
     return p.returncode, (p.stdout + p.stderr).strip()
 
 
+def state_file():
+    return ROOT / f"career/Dwyane_Wade/{live()}/current_state.json"
+
+
 def state():
-    return json.loads(STATE.read_text(encoding="utf-8"))
+    return json.loads(state_file().read_text(encoding="utf-8"))
 
 
 def write_state(data):
-    STATE.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    state_file().write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
 def wade_waits():
@@ -207,17 +223,51 @@ def playoff_day(day):
     play(day)
 
 
+def rollover_day(day):
+    """The day the summer market's record exists and the rollover is dated: the next season becomes live."""
+    from runtime.rollover import Rollover
+    if Rollover(ROOT).blockers(day):
+        return False
+    say("    " + run("scripts/rollover.py", "--write", show=False).splitlines()[-1][:200])
+    return True
+
+
+def camp_day(day):
+    """Training camp and preseason (scripts/run_camp.py, every stage due by the day), then the day's preseason games."""
+    data = state()
+    data["current_area"] = data.get("current_area") if data.get("current_area") in ("04_Training_Camp", "05_Preseason") else "04_Training_Camp"
+    write_state(data)
+    out = run("scripts/run_camp.py", "--write", day, show=False)
+    if draws_pending():
+        draw()
+        out = run("scripts/run_camp.py", "--write", day, show=False)
+    say("    " + out.splitlines()[0][:200])
+    problems = run("-c", "from runtime.game_requests import frozen_errors; print('\\n'.join(frozen_errors()))", show=False)
+    if problems:
+        raise Stop("frozen inputs differ from the records: " + "; ".join(problems.splitlines()[:3]))
+    wade_waits()
+    play(day)
+
+
 def advance_day(day):
     from runtime import roster_moves
     say(f"== {day}")
     wade_waits()
     data = state()
-    data["current_date"] = day
+    data["current_date"] = max(day, data["current_date"])
     write_state(data)
-    if day > SEASON_END:
+    gates = season_dates()
+    if day > gates["regular_season_end"]:
+        if rollover_day(day):                                # the summer is over: the next season is live from today
+            return close_day(day)
         playoff_day(day)
         return close_day(day, playoffs=True)
-    if day in (roster_moves.WAIVE_BY, roster_moves.GUARANTEE_DATE):
+    if day < gates["opening_night"]:
+        if day >= (gates["training_camp_opens"] or day):
+            camp_day(day)
+        return close_day(day)
+    moves = roster_moves.ctx(ROOT, day)
+    if day in (moves.waive_by, moves.guarantee):
         run("scripts/guarantee_review.py", "--write", day)
     if run("scripts/review_rotation.py", "--check", day, ok=(0, 1), show=False).startswith("staff review due"):
         run("scripts/review_rotation.py", "--write", day, ok=(0, 1))

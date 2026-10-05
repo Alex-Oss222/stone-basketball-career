@@ -28,7 +28,9 @@ from .prospect_scouting import (PAINT_FTR_FACTOR, POSITION_PATH, SCOUTING_PATH,
 ROOKIE_MODEL_VERSION = "rookie-2003.3"
 ARCHIVED_ROOKIE_MODEL_VERSION = "rookie-2003.2"
 LEGACY_ROOKIE_MODEL_VERSION = "rookie-2003.1"
-SCOUTED_MODEL_VERSIONS = (ARCHIVED_ROOKIE_MODEL_VERSION, ROOKIE_MODEL_VERSION)
+# Wade's own expectation from his second season (`runtime/protagonist.py`): his scouting and style travel with it.
+PROTAGONIST_MODEL_VERSION = "protagonist-2004.1"
+SCOUTED_MODEL_VERSIONS = (ARCHIVED_ROOKIE_MODEL_VERSION, ROOKIE_MODEL_VERSION, PROTAGONIST_MODEL_VERSION)
 # Model adoption, not a change in the player's talent or a new scouting date.
 # Games before SCOUTING_EFFECTIVE_FROM keep rookie-2003.1; games from it until STYLE_EFFECTIVE_FROM keep the
 # archived rookie-2003.2 (first scouting); games from STYLE_EFFECTIVE_FROM use rookie-2003.3 (shot-making

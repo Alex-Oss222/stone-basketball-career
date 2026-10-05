@@ -196,6 +196,59 @@ def _normal_contract(player_id, entry, cutoff, caps):
         "sources": deepcopy(entry.get("_sources", [])), "record_as_of": entry.get("_as_of")}
 
 
+from .league_book import SYMMETRIC_FROM                                       # noqa: E402  (real moves stop applying)
+MARKET_SIGNINGS = ("signing", "re_sign", "offer_sheet_matched", "qualifying_offer_accepted", "camp_signing", "rookie_scale_signing")
+
+
+def _market_contracts(root, player, cutoff, add, profiles, match, protagonist):
+    from .free_agency_2004 import NEW, RECORD
+    from .league_contracts import read as read_ledger, schedule_for
+    from .seasons import dates
+    path = Path(root) / RECORD
+    if not path.is_file():
+        return
+    record = _read(path)
+    ledger = read_ledger(NEW, root) or {}
+    guarantee = dates(NEW, root)["guarantee"]
+    source = _source(path, root, "Simulated summer market (every club)")
+    for e in sorted(record["events"], key=lambda e: e["date"]):
+        if not _known(e["date"], cutoff) or e.get("player") == protagonist:
+            continue
+        if e["kind"] in MARKET_SIGNINGS:
+            salary = e.get("salary") or e.get("amount")
+            years = e.get("years") or 1
+            route = e.get("route") or ("rookie_scale" if e["kind"] == "rookie_scale_signing" else
+                                       "qualifying_offer" if e["kind"] == "qualifying_offer_accepted" else "signing")
+            lg = ledger.get(e["bbr_id"]) or {}
+            schedule = dict(lg["schedule"]) if lg.get("schedule") and lg.get("club") else schedule_for(salary, years, NEW, route)
+            seasons = sorted(schedule)
+            camp = e["kind"] == "camp_signing"
+            entry = {"player": e["player"], "bbr_id": e["bbr_id"], "status": "under_contract", "signed_date": e["date"],
+                     "signing_team": e["club"], "route": route.replace("_", " "), "original_term_seasons": len(seasons),
+                     "start_season": seasons[0], "end_season": seasons[-1], "schedule": schedule,
+                     "amount_kind": {k: ("team_option" if lg.get("team_option") == k else "contract_salary") for k in seasons},
+                     "guaranteed": {k: (0 if camp and k == NEW else v) for k, v in schedule.items()},
+                     "notes": (f"Simulated {NEW[:4]} summer market: {e['kind'].replace('_', ' ')} on {e['date']}"
+                               + (f", from {e['from']}" if e.get("from") and e["from"] != e["club"] else "")
+                               + (f"; non-guaranteed until {guarantee}" if camp else "")
+                               + ". Later years follow the agreement's raise rule for the route (runtime/league_contracts.py).")}
+            add(entry, e["club"], source, e["date"], path.parent, False)
+        elif e["kind"] == "trade":
+            key = match({"player": e["player"], "bbr_id": e["bbr_id"]})
+            if not key:
+                continue
+            profile = profiles[key]
+            eligible = [x for x in profile["_entries"] if not x.get("signed_date") or x["signed_date"] <= e["date"]]
+            if eligible:
+                entry = max(eligible, key=lambda x: (x.get("signed_date") or "", x.get("_as_of") or ""))
+                entry.setdefault("_assignments", []).append({"date": e["date"], "from": e.get("from"), "to": e["club"],
+                                                             "kind": "trade", "transaction_id": e.get("deal"), "source": source})
+                entry["_team"] = e["club"]
+                entry["_sources"].append(source)
+            if e["date"] >= profile["_team_date"]:
+                profile["team"], profile["_team_date"] = e["club"], e["date"]
+
+
 def build_contract_catalog(root, player, clock=None):
     """Build every tracked profile once. clock is an ISO date or state mapping."""
     root = Path(root).resolve()
@@ -282,8 +335,9 @@ def build_contract_catalog(root, player, clock=None):
         data = _read(path)
         for row in data.get("signings", []):
             if (row.get("kind") not in ("signing", "re_sign", "sign_and_trade", "match", "match_declined", "rookie_signing")
-                    or row.get("involves_miami") or row.get("to") in (None, "Miami Heat") or not _known(row.get("date"), cutoff)):
-                continue
+                    or row.get("involves_miami") or row.get("to") in (None, "Miami Heat") or not _known(row.get("date"), cutoff)
+                    or (row.get("date") or "") >= SYMMETRIC_FROM):
+                continue     # from the symmetric league's activation every club signs for itself: real moves never apply
             years = row.get("years") if isinstance(row.get("years"), int) else None
             first = int(str(data.get("season", "2003-04"))[:4]) if str(data.get("season", "")).strip()[:4].isdigit() else 2003
             seasons = [f"{first + i}-{str(first + i + 1)[-2:]}" for i in range(years or 1)]
@@ -393,6 +447,10 @@ def build_contract_catalog(root, player, clock=None):
         row.setdefault("status", "signed")
         add(row, row.get("current_team") or row.get("signing_team") or (existing or {}).get("_team"),
             _source(supplemental, root, "Dated signed-contract archive"), record["recorded_on"], player, True)
+    # The simulated summer market's contracts for every club (`runtime/free_agency_2004.py`), each on its signing date,
+    # with the schedule the league contract ledger gives it (raises by route, rookie scale); a summer trade assigns the
+    # contract to its new club. These are simulated contracts, labelled so; Miami's own sheet stays authoritative.
+    _market_contracts(root, player, cutoff, add, profiles, match, protagonist)
     trades = [(path, _read(path)) for path in player.glob("????-??/00_Team/Transactions/Trades/*.json")]
     for path, rec in sorted(trades, key=lambda pair: (str(pair[1].get("applied") or ""), pair[0].name)):
         applied = rec.get("applied")

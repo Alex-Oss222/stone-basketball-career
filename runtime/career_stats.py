@@ -102,6 +102,10 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
     """Return canonical game records, including explicit missing-box coverage."""
     aliases = set(identity["aliases"]) | {identity["player_id"]}
     cutoff = date.fromisoformat(as_of)
+    # The career clock is the latest season's date; a query dated earlier (a past season's report or an incentive
+    # judged on its date) leaves out the games played after it, which are not errors.
+    clocks = [json.loads(p.read_text(encoding="utf-8"))["current_date"] for p in player.glob("*/current_state.json")]
+    clock = max([date.fromisoformat(c) for c in clocks] + [cutoff])
     records, seen_ids = [], set()
     for note in sorted(player.rglob("Game_*.md")):
         if not re.fullmatch(r"Game_\d+\.md", note.name):
@@ -151,8 +155,10 @@ def collect_games(player: Path, identity: dict, as_of: str) -> list[dict]:
             year = season_start(season)
             if not date(year, 6, 1) <= date.fromisoformat(day) <= date(year + 1, 6, 30):
                 raise ValueError(f"{note}: game date is outside its NBA season cycle")
-        if status == "played" and (date.fromisoformat(day) > cutoff or not meta.get("result")):
+        if status == "played" and (date.fromisoformat(day) > clock or not meta.get("result")):
             raise ValueError(f"{note}: played game needs a result on/before the career cutoff")
+        if status == "played" and date.fromisoformat(day) > cutoff:
+            continue                                   # played after the query's date: outside it
         if kind == "regular" and day:
             d = date.fromisoformat(day)
             expected_year = season_start(season) + (d.month < 7)

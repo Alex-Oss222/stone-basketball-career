@@ -167,7 +167,14 @@ def opening_book(root=ROOT, on=SEASON_END):
         if len(players) > ROSTER_MAX:
             pool += [dict(p, rule=p["rule"] + "+pool_over_fifteen") for p in players[ROSTER_MAX:]]
             clubs[club] = players[:ROSTER_MAX]
-    out = [r for r in rows if r["club"] is None or r["club"] == MIAMI]
+    # A real player the summer market left unsigned starts the season in the free-agent pool, where every club's
+    # market can sign him (career continuity: never out of the league while history gave him minutes).
+    for r in rows:
+        if r["club"] is None:
+            role = (new.get(r["bbr_id"]) or (None, None, {}))[2]
+            pool.append(dict(r, games=role.get("games", 0), minutes=role.get("minutes", 0), position=role.get("position"),
+                             rule=r["rule"] + "+pool_unsigned"))
+    out = [r for r in rows if r["club"] == MIAMI]
     return {"schema_version": 1, "season": NEW, "kind": "opening_rosters", "as_of": on,
             "rule": __doc__.split("\n\n", 1)[1].strip(),
             "clubs": {c: clubs[c] for c in sorted(clubs)}, "pool": sorted(pool, key=lambda p: -p["minutes"]),

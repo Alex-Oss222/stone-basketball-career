@@ -856,6 +856,10 @@ def run(root=ROOT, season=None, write=False, pages=True):
         report["pages"] = write_statistics_pages(root, season)
         from .playoff_stats import write_pages as write_playoff_pages
         report["pages"] += write_playoff_pages(root, season)
+        from .seasons import live_seasons
+        for closed in live_seasons(root):             # closed seasons' playoff pages follow the registry's names
+            if closed != season and (root / PLAYER_DIR / closed / "season_close.json").is_file():
+                report["pages"] += write_playoff_pages(root, closed)
         from .league_cards import write_cards
         report["cards"] = sum(1 for p in write_cards(root) if p.suffix == ".md" and p.name != "README.md")
     return report
