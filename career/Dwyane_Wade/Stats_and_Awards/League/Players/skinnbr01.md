@@ -115,11 +115,11 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2003-04 playoffs are recorded game by game in the league playoff records ([bracket](../2003-04/Playoffs.md)); this card does not total them yet. Prior playoff history is not imported into this card.
+**Coverage:** 2003-04 playoffs from closed playoff results through 2004-04-28 ([bracket](../2003-04/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | MIL | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2003-04 | Milwaukee Bucks | 5 | 5 | 29.5 | 13.2 | 7.4 | 0.8 | 0.6 | 0.2 | 1.2 | 52.9% | 100.0% | 55.0% |
 
 ## Awards and honors
 

@@ -255,7 +255,7 @@ class Assets:
             basis = (f"production value {value:.1f} (2002-03 blended with closed 2003-04 games)" if self.on >= FORM_FROM
                      else f"2002-03 production value {value:.1f}")
         salary, years = self.salary(player), min(CONTRACT_YEARS_COUNTED, max(1, self.years_left(player)))
-        worth = self.valuation.comparables_price(value) if value is not None else self.valuation.minimum(0)
+        worth = self.valuation.market_price(value, bbr) if value is not None else self.valuation.minimum(0)
         term = (worth - salary) * years / self.valuation.mid_level * 0.5 if salary else 0.0
         term = max(CONTRACT_TERM_LIMITS[0], min(CONTRACT_TERM_LIMITS[1], term))
         total = production + term

@@ -115,11 +115,11 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2003-04 playoffs are recorded game by game in the league playoff records ([bracket](../2003-04/Playoffs.md)); this card does not total them yet. Prior playoff history is not imported into this card.
+**Coverage:** 2003-04 playoffs from closed playoff results through 2004-04-28 ([bracket](../2003-04/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | MEM | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2003-04 | Memphis Grizzlies | 4 | 0 | 25.2 | 12.2 | 3.0 | 1.5 | 0.8 | 0.8 | 1.2 | 46.2% | 0.0% | 33.3% |
 
 ## Awards and honors
 

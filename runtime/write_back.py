@@ -829,6 +829,8 @@ def run(root=ROOT, season=SEASON, write=False, pages=True):
         from .season_games import refresh_reports
         report["reports"] = refresh_reports(root)
         report["pages"] = write_statistics_pages(root, season)
+        from .playoff_stats import write_pages as write_playoff_pages
+        report["pages"] += write_playoff_pages(root, season)
         from .league_cards import write_cards
         report["cards"] = sum(1 for p in write_cards(root) if p.suffix == ".md" and p.name != "README.md")
     return report

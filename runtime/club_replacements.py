@@ -141,7 +141,7 @@ def choose(club, departing, day, season=SEASON, root=ROOT):
     payroll = assets.payroll(club) or 0
     cap = assets.cap_rules.get("salary_cap", 43840000)
     value = market.valuation.value(bbr)
-    price = market.valuation.comparables_price(value) if value is not None else minimum
+    price = market.valuation.market_price(value, bbr) if value is not None else minimum
     if payroll < cap and cap - payroll > minimum:
         route, salary = "cap room", int(max(minimum, min(price, cap - payroll)))
     else:

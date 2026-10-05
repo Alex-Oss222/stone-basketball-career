@@ -50,12 +50,13 @@ PRIOR_STATS = Path("library/2003/league/nba_2002_03_player_stats.json")
 PRIOR_STANDINGS = Path("library/2003/league/nba_2002_03_standings.json")
 LEAGUE = Path(f"career/Dwyane_Wade/Stats_and_Awards/League/{SEASON}")
 RECORD = LEAGUE / "season_awards.json"
+DRAWS = LEAGUE / "Award_Draws"
 PAGE = LEAGUE / "Season_Awards.md"
 PLAYER = Path("career/Dwyane_Wade")
 WADE = "Dwyane Wade"
 GROUP = {"PG": "G", "SG": "G", "G": "G", "SF": "F", "PF": "F", "F": "F", "C": "C"}
 LENS = {"mvp": (0.20, 0.50), "roy": (0.0, 0.25), "dpoy": (0.30, 0.60), "smoy": (0.10, 0.30), "mip": (0.10, 0.40),
-        "coy": (0.20, 0.50), "all_nba": (0.20, 0.50), "all_defensive": (0.30, 0.60), "all_rookie": (0.0, 0.25)}
+        "coy": (0.20, 0.50), "finals_mvp": (0.30, 0.60), "all_nba": (0.20, 0.50), "all_defensive": (0.30, 0.60), "all_rookie": (0.0, 0.25)}
 MIN_GAMES, MIN_ROOKIE_GAMES, MIN_ALL_ROOKIE_GAMES, MIN_PRIOR_GAMES = 55, 41, 30, 25
 DEF_MINUTES, FULL_MINUTES, FULL_GAMES = 24.0, 32.0, 70
 TEAM_NAMES = {1: "First Team", 2: "Second Team", 3: "Third Team"}
@@ -407,8 +408,71 @@ def read_record(root=ROOT):
             "rule": __doc__.split("\n\n", 1)[1].strip(), "calendar": CALENDAR.as_posix(), "decisions": []}
 
 
+def announced_on(award, root=ROOT):
+    """The award's announcement date; the Finals MVP's is the night the Finals are clinched (None until then)."""
+    if award["announced"] != "finals_clinch":
+        return award["announced"]
+    from .playoffs import read
+    record = read(root) or {}
+    finals = next((s for s in record.get("series", []) if s["round"] == "finals"), None)
+    return finals.get("clinched_on") if finals and finals.get("winner") else None
+
+
 def due(root, clock):
-    return [a for a in calendar(root)["awards"] if a["announced"] <= clock]
+    out = []
+    for a in calendar(root)["awards"]:
+        day = announced_on(a, root)
+        if day and day <= clock:
+            out.append(dict(a, announced=day))
+    return out
+
+
+def finals_mvp(award, root):
+    """The Finals MVP from the Finals games only: (decision or None while a tie waits for its engine draw)."""
+    from .playoffs import read
+    from .playoff_stats import closed_playoff_results, player_lines
+    from .career_stats import aggregate
+    root = Path(root)
+    finals = next(s for s in read(root)["series"] if s["round"] == "finals")
+    ids = {g["event_id"] for g in finals["games"] if g.get("event_id")}
+    rows = [r for r in closed_playoff_results(root, SEASON, award["announced"]) if r["result"]["event_id"] in ids]
+    n_games = len(rows)
+    pool = {}
+    for (name, club), recs in player_lines(rows, root, SEASON).items():
+        s = aggregate(recs)
+        if s["gp"] * 2 < n_games:                           # at least half the Finals games
+            continue
+        pool[name] = {"player": name, "team": club, "games": s["gp"], "mpg": round(s["pg"]["minutes"], 1),
+                      "pts": round(s["pg"]["pts"], 1), "reb": round(s["pg"]["reb"], 1), "ast": round(s["pg"]["ast"], 1),
+                      "stl": round(s["pg"]["stl"], 1), "blk": round(s["pg"]["blk"], 1),
+                      "game_score": round(sum(game_score(r["line"]) for r in recs if r.get("line") and r["line"]["appeared"]) / s["gp"], 2),
+                      "champion": club == finals["winner"]}
+    names = sorted(pool)
+    parts = [_z([pool[k]["game_score"] for k in names]), _z([pool[k]["pts"] for k in names])]
+    scored = list(zip(names, [mean(v) for v in zip(*parts)], _z([1.0 if pool[k]["champion"] else 0.0 for k in names])))
+    votes = tally_single("finals_mvp", scored, award["electorate"], award["ballot"])
+    top = winners(votes)
+    base = {"id": f"{SEASON}-finals_mvp", "award": "finals_mvp", "name": award["name"], "announced_on": award["announced"],
+            "electorate": award["electorate"], "voters": award["voters"], "ballot": award["ballot"],
+            "lens": list(LENS["finals_mvp"]), "evidence_through": award["announced"], "competition": "playoff",
+            "finals_games": n_games, "period_start": min(r["result"]["game_date"] for r in rows)}
+    if len(top) > 1:
+        packet = root / DRAWS / f"{base['id']}.decision.json"
+        result = packet.with_name(packet.name.replace(".decision.json", ".decision.result.json"))
+        if not packet.is_file():
+            packet.parent.mkdir(parents=True, exist_ok=True)
+            packet.write_text(json.dumps({"event_id": base["id"], "date": award["announced"],
+                                          "question": "Who is the Finals MVP: " + " or ".join(top) + "?",
+                                          "decider": "Finals MVP media panel (engine draw between equal ballots)",
+                                          "options": {t: round(1 / len(top), 6) for t in top},
+                                          "basis": "Equal votes under runtime/season_awards.py; the award has never been shared."},
+                                         indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        if not result.is_file():
+            return None
+        top = [_read(result)["outcome"]]
+        base["tie_draw"] = (DRAWS / result.name).as_posix()
+    return dict(base, winners=top, tally=[dict(pool[v["player"]], points=v["points"], first_place=v["first_place"],
+                                               votes_by_place=v["votes_by_place"]) for v in votes])
 
 
 def decide(root=ROOT, clock=None):
@@ -422,7 +486,10 @@ def decide(root=ROOT, clock=None):
     if not pending:
         return []
     rows = closed_results(root, SEASON, SEASON_END)
-    new = [decide_one(a, rows, root) for a in pending]
+    new = [finals_mvp(a, root) if a["id"] == "finals_mvp" else decide_one(a, rows, root) for a in pending]
+    new = [d for d in new if d]                             # a Finals MVP tie waits for its engine draw
+    if not new:
+        return []
     record["decisions"] += new
     record["decisions"].sort(key=lambda d: d["announced_on"])
     (root / RECORD).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -442,7 +509,7 @@ def honors(decision):
     return [(w, decision["name"], "") for w in decision["winners"]]
 
 
-SHORT = {"Most Valuable Player": "MVP", "Rookie of the Year": "ROY", "Defensive Player of the Year": "DPOY",
+SHORT = {"Finals MVP": "Finals MVP", "Most Valuable Player": "MVP", "Rookie of the Year": "ROY", "Defensive Player of the Year": "DPOY",
          "Sixth Man of the Year": "6MOY", "Most Improved Player": "MIP", "Coach of the Year": "COY"}
 
 
@@ -464,8 +531,9 @@ def _record_wade(root, record):
             if player != WADE or award_id in have:
                 continue
             data["awards"].append({"id": award_id, "name": name, "short_name": short_name(name), "status": "earned",
-                                   "competition": "regular", "season": SEASON, "period_start": "2003-10-28",
-                                   "period_end": SEASON_END, "awarded_on": d["announced_on"],
+                                   "competition": d.get("competition", "regular"), "season": SEASON,
+                                   "period_start": d.get("period_start", "2003-10-28"),
+                                   "period_end": d["evidence_through"], "awarded_on": d["announced_on"],
                                    "source": PAGE.relative_to(PLAYER).as_posix() + "#" + d["name"].lower().replace(" ", "-")})
             added += 1
     data["awards"].sort(key=lambda a: (a["awarded_on"], a["id"]))
@@ -487,7 +555,7 @@ def page(record, clock, root=ROOT):
              f"voters differ only in how they weigh the award's two criteria. Through {clock}.", ""]
     decided = {d["award"]: d for d in record["decisions"]}
     lines += ["## Calendar", ""] + _table(["Announced", "Award", "Voters", "Ballot", "Status"], [
-        [a["announced"], a["name"], f"{a['electorate']} {a['voters']}", "-".join(map(str, a["ballot"])),
+        [a["announced"] if a["announced"] != "finals_clinch" else "the night the Finals are clinched", a["name"], f"{a['electorate']} {a['voters']}", "-".join(map(str, a["ballot"])),
          "decided" if a["id"] in decided else "pending"] for a in cal.values()]) + [""]
     for d in record["decisions"]:
         lines += [f"## {d['name']}", "", f"Announced {d['announced_on']}; {d['electorate']} {d['voters']}, "

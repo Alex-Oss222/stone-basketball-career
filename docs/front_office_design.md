@@ -48,6 +48,7 @@ A player's **asking price** is what his agent argues from comparables, so it is 
 - a **market-pressure multiplier** from how many clubs had room on the date against how many players of his tier are available (room is counted from the June 26 ledger and the published cap; *judgement*: between 0.8 and 1.3);
 - a **mood multiplier** of 1.0 to 1.5 when the player is unhappy with his situation (Basketball GM's rule; *judgement*);
 - **years** he wants: younger players ask for more years, older ones trade years for money (OOTP's rule).
+- an **honor premium** (roadmap 15a, `valuation.honor_factor`; *judgement*): each season honor announced on or before the date adds to the comparables price (MVP 30%, All-NBA First Team 25%, Second 15%, Third 10%, Finals MVP 15%, Defensive Player of the Year 10%, Rookie of the Year, Sixth Man and Most Improved 5%, All-Defensive 5%/3%, All-Rookie 2%/1%); the largest counts in full, the others at a quarter, capped at 35%, and the maximum salary still bounds the price. The same factor prices a player in trades. Weekly and monthly awards carry none.
 
 The ask decays while he stays unsigned (Basketball GM lowers it daily; here it drops about 5% a week from July 16, floored at the minimum; *judgement*) and rises after an insulting offer (an offer under 70% of the ask ends talks for a week; *judgement*).
 

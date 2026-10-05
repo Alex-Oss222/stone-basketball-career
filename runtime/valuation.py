@@ -36,6 +36,16 @@ REPLACEMENT_EFF_PER_GAME = 5.0      # a minimum-salary player's production
 PRIOR_MINUTES = 500                 # minutes at which half the shrinkage toward replacement is gone
 AGE_FACTOR = ((24, 1.08), (26, 1.04), (28, 1.00), (30, 0.96), (32, 0.90), (34, 0.82), (36, 0.72), (99, 0.60))
 MIN_FIT_MINUTES = 500               # comparables: players with at least this many 2002-03 minutes
+# Honors move a player's market (roadmap 15a; judgement, documented in docs/front_office_design.md): a premium on the
+# comparables price for each honor announced on or before the date in the most recent season. The largest premium
+# counts in full, every other at a quarter, capped; the 1999 maximum still bounds the price. Weekly and monthly awards
+# carry none. Every player alike, from the simulated award records only.
+HONOR_PREMIUM = {"Most Valuable Player": 0.30, "Finals MVP": 0.15, "All-NBA First Team": 0.25, "All-NBA Second Team": 0.15,
+                 "All-NBA Third Team": 0.10, "Defensive Player of the Year": 0.10, "All-Defensive First Team": 0.05,
+                 "All-Defensive Second Team": 0.03, "Rookie of the Year": 0.05, "Sixth Man of the Year": 0.05,
+                 "Most Improved Player": 0.05, "All-Rookie First Team": 0.02, "All-Rookie Second Team": 0.01}
+HONOR_CAP = 0.35
+SEASON_AWARDS_PATH = Path("career/Dwyane_Wade/Stats_and_Awards/League/2003-04/season_awards.json")
 
 
 def read(path, root=ROOT):
@@ -101,6 +111,34 @@ class Valuation:
             for p in club["free_agents"]:
                 self.service[p["bbr_id"]] = p.get("nba_seasons_before_2003_04")
         self.fit = self._fit_comparables()
+        self.honors = self._honors()
+
+    def _honors(self):
+        """{bbr_id: [honor names]} from the season awards announced on or before the date."""
+        path = self.root / SEASON_AWARDS_PATH
+        if not path.is_file():
+            return {}
+        from .season_awards import honors
+        by_name = {p["name"]: p["bbr_id"] for p in read(REGISTRY_PATH, self.root)["players"] if p.get("bbr_id")}
+        out = {}
+        for d in read(SEASON_AWARDS_PATH, self.root)["decisions"]:
+            if d["announced_on"] > self.on:
+                continue
+            for player, name, _ in honors(d):
+                if by_name.get(player):
+                    out.setdefault(by_name[player], []).append(name)
+        return out
+
+    def honor_factor(self, bbr_id):
+        """1 + the honor premium (HONOR_PREMIUM): the largest in full, the others at a quarter, at most HONOR_CAP."""
+        premiums = sorted((HONOR_PREMIUM.get(h, 0.0) for h in self.honors.get(bbr_id, [])), reverse=True)
+        if not premiums:
+            return 1.0
+        return 1.0 + min(HONOR_CAP, premiums[0] + 0.25 * sum(premiums[1:]))
+
+    def market_price(self, value, bbr_id=None):
+        """The comparables price for a production value, times the player's honor factor."""
+        return self.comparables_price(value) * (self.honor_factor(bbr_id) if bbr_id else 1.0)
 
     def age(self, bbr_id):
         birth = self.birth.get(bbr_id)
@@ -155,7 +193,7 @@ class Valuation:
         if value is None:
             return None
         service = years_of_service if years_of_service is not None else self.service.get(bbr_id)
-        raw = self.comparables_price(value)
+        raw = self.market_price(value, bbr_id)
         return int(round(min(self.maximum(service, prior_salary), max(self.minimum(service), raw))))
 
     def tier(self, salary):

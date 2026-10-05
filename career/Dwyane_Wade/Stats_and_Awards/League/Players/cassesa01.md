@@ -115,11 +115,11 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2003-04 playoffs are recorded game by game in the league playoff records ([bracket](../2003-04/Playoffs.md)); this card does not total them yet. Prior playoff history is not imported into this card.
+**Coverage:** 2003-04 playoffs from closed playoff results through 2004-04-28 ([bracket](../2003-04/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | MIN | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2003-04 | Minnesota Timberwolves | 4 | 4 | 32.7 | 17.0 | 3.8 | 8.8 | 2.0 | 0.2 | 2.8 | 47.5% | 50.0% | 100.0% |
 
 ## Awards and honors
 

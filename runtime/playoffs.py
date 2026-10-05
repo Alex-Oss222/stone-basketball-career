@@ -274,7 +274,9 @@ def page(record, root=ROOT):
              "Real 2004 seeds, matchups and results are never used.", "",
              "Division winners take seeds 1 and 2; seeds 3 to 8 are the next six records. Ties: the 2003-04 tiebreak "
              "procedure, an engine drawing if it cannot separate them. Best of seven; home court to the better record; "
-             "2-2-1-1-1 in the conference rounds, 2-3-2 in the Finals. Games 5 to 7 are played only if needed.", ""]
+             "2-2-1-1-1 in the conference rounds, 2-3-2 in the Finals. Games 5 to 7 are played only if needed.", "",
+             "Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · "
+             "[Miami's playoff statistics](../../Team/2003-04/Playoffs/Team_Playoff_Stats.md).", ""]
     for conf in ("East", "West"):
         lines += [f"## {conf}ern Conference seeds", "", "| Seed | Club | W | L | Note |", "| ---: | --- | ---: | ---: | --- |"]
         for row in record["seeds"][conf]:

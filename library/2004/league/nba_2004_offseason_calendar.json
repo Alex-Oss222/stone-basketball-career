@@ -1,0 +1,523 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "offseason_calendar",
+ "season": "2004",
+ "purpose": "Dated 2004 offseason facts: draft, moratorium, cap publication, exceptions, minimum and rookie scales, 2004-05 opening day and the 30-team alignment. A cap figure is live only from its publication date.",
+ "finals_2004": {
+  "value": "Detroit beat the Los Angeles Lakers 4-1; series June 6-15, 2004; last game (Game 5) June 15, 2004",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2004_NBA_Finals"
+  ]
+ },
+ "expansion_draft": {
+  "value": "2004-06-22",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap99.htm",
+   "https://www.espn.com/nba/story/_/id/1826536"
+  ]
+ },
+ "draft": {
+  "value": "2004-06-24",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2004_NBA_draft"
+  ]
+ },
+ "free_agency_negotiation_opens": {
+  "value": "2004-07-01",
+  "note": "Free agents become free July 1; teams may negotiate and agree to terms but not sign (except required tenders, qualifying offers, first-round scale signings and second-round minimum signings) during the moratorium.",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap99.htm"
+  ]
+ },
+ "july_moratorium": {
+  "value": "2004-07-01 through 2004-07-13",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap99.htm",
+   "https://espn.com/espn/wire?id=1839377&section=nba"
+  ]
+ },
+ "first_signing_and_trade_date": {
+  "value": "2004-07-14",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap99.htm",
+   "https://espn.com/espn/wire?id=1839377&section=nba"
+  ]
+ },
+ "salary_cap_2004_05": {
+  "value": 43870000,
+  "announced": "2004-07-13 (Tuesday night, NBA announcement on the eve of moratorium end)",
+  "effective": "2004-07-14 (cap adjusts on the first day after the moratorium)",
+  "status": "sourced",
+  "sources": [
+   "https://espn.com/espn/wire?id=1839377&section=nba",
+   "http://www.cbafaq.com/salarycap99.htm"
+  ]
+ },
+ "luxury_tax_threshold_2004_05": {
+  "value": 54630000,
+  "note": "ESPN/SportsTicker gives '$54.6 million'; the exact $54,630,000 figure is widely cited (Spotrac) but not confirmed in a contemporaneous source retrieved here. The tax ultimately was not triggered for 2004-05 (salaries+benefits 60.4% vs 63.333% trigger) -- that outcome is hindsight and must not be used before the 2004-05 season ends.",
+  "status": "sourced (rounded $54.6M); exact figure unverified",
+  "sources": [
+   "https://espn.com/espn/wire?id=1839377&section=nba",
+   "https://www.spotrac.com/nba/cba/tax",
+   "http://www.cbafaq.com/salarycap99.htm"
+  ]
+ },
+ "salary_floor_2004_05": {
+  "value": 32900000,
+  "note": "75% of cap; reported as $32.9 million",
+  "status": "sourced",
+  "sources": [
+   "https://espn.com/espn/wire?id=1839377&section=nba"
+  ]
+ },
+ "charlotte_cap_and_floor_2004_05": {
+  "value": {
+   "cap": 29250000,
+   "floor": 21940000
+  },
+  "status": "sourced",
+  "sources": [
+   "https://espn.com/espn/wire?id=1839377&section=nba",
+   "http://www.cbafaq.com/salarycap99.htm"
+  ]
+ },
+ "mid_level_exception_2004_05": {
+  "value": 4903000,
+  "note": "ESPN reports 'remained at $4.9 million'",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap99.htm",
+   "https://espn.com/espn/wire?id=1839377&section=nba"
+  ]
+ },
+ "one_million_exception_2004_05": {
+  "value": 1600000,
+  "note": "cannot be used two seasons in a row",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap99.htm",
+   "https://espn.com/espn/wire?id=1839377&section=nba"
+  ]
+ },
+ "minimum_salary_scale_2004_05": {
+  "value": {
+   "0": 385277,
+   "1": 620046,
+   "2": 695046,
+   "3": 720046,
+   "4": 745046,
+   "5": 807546,
+   "6": 870046,
+   "7": 932546,
+   "8": 995046,
+   "9": 1000000,
+   "10+": 1100000
+  },
+  "key": "years of NBA service",
+  "note": "Expansion club (Charlotte) minimums are 3/4 of these for its first two seasons.",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap99.htm",
+   "https://espn.com/espn/wire?id=1839377&section=nba"
+  ]
+ },
+ "rookie_scale_2004_first_round": {
+  "value": [
+   {
+    "pick": 1,
+    "year1": 3483100,
+    "year2": 3744300,
+    "year3": 4005600,
+    "year4_option_raise_pct": 26.1,
+    "qualifying_offer_raise_pct": 30.0
+   },
+   {
+    "pick": 2,
+    "year1": 3116400,
+    "year2": 3350100,
+    "year3": 3583800,
+    "year4_option_raise_pct": 26.2,
+    "qualifying_offer_raise_pct": 30.5
+   },
+   {
+    "pick": 3,
+    "year1": 2798600,
+    "year2": 3008500,
+    "year3": 3218400,
+    "year4_option_raise_pct": 26.4,
+    "qualifying_offer_raise_pct": 31.2
+   },
+   {
+    "pick": 4,
+    "year1": 2523200,
+    "year2": 2712400,
+    "year3": 2901600,
+    "year4_option_raise_pct": 26.5,
+    "qualifying_offer_raise_pct": 31.9
+   },
+   {
+    "pick": 5,
+    "year1": 2284900,
+    "year2": 2456200,
+    "year3": 2627600,
+    "year4_option_raise_pct": 26.7,
+    "qualifying_offer_raise_pct": 32.6
+   },
+   {
+    "pick": 6,
+    "year1": 2075300,
+    "year2": 2231000,
+    "year3": 2386600,
+    "year4_option_raise_pct": 26.8,
+    "qualifying_offer_raise_pct": 33.4,
+    "note": "source prints year-1 as '$2.075,300' (typo); read as $2,075,300"
+   },
+   {
+    "pick": 7,
+    "year1": 1894500,
+    "year2": 2036600,
+    "year3": 2178700,
+    "year4_option_raise_pct": 27.0,
+    "qualifying_offer_raise_pct": 34.1
+   },
+   {
+    "pick": 8,
+    "year1": 1735600,
+    "year2": 1865800,
+    "year3": 1996000,
+    "year4_option_raise_pct": 27.2,
+    "qualifying_offer_raise_pct": 34.8
+   },
+   {
+    "pick": 9,
+    "year1": 1595400,
+    "year2": 1715000,
+    "year3": 1834700,
+    "year4_option_raise_pct": 27.4,
+    "qualifying_offer_raise_pct": 35.5
+   },
+   {
+    "pick": 10,
+    "year1": 1515600,
+    "year2": 1629300,
+    "year3": 1742900,
+    "year4_option_raise_pct": 27.5,
+    "qualifying_offer_raise_pct": 36.2
+   },
+   {
+    "pick": 11,
+    "year1": 1439800,
+    "year2": 1547800,
+    "year3": 1655800,
+    "year4_option_raise_pct": 32.7,
+    "qualifying_offer_raise_pct": 36.9
+   },
+   {
+    "pick": 12,
+    "year1": 1367800,
+    "year2": 1470400,
+    "year3": 1573000,
+    "year4_option_raise_pct": 37.8,
+    "qualifying_offer_raise_pct": 37.6
+   },
+   {
+    "pick": 13,
+    "year1": 1299400,
+    "year2": 1396900,
+    "year3": 1494300,
+    "year4_option_raise_pct": 42.9,
+    "qualifying_offer_raise_pct": 38.3
+   },
+   {
+    "pick": 14,
+    "year1": 1234500,
+    "year2": 1327000,
+    "year3": 1419600,
+    "year4_option_raise_pct": 48.1,
+    "qualifying_offer_raise_pct": 39.1
+   },
+   {
+    "pick": 15,
+    "year1": 1172700,
+    "year2": 1260700,
+    "year3": 1348600,
+    "year4_option_raise_pct": 53.3,
+    "qualifying_offer_raise_pct": 39.8
+   },
+   {
+    "pick": 16,
+    "year1": 1114100,
+    "year2": 1197700,
+    "year3": 1281200,
+    "year4_option_raise_pct": 53.4,
+    "qualifying_offer_raise_pct": 40.5
+   },
+   {
+    "pick": 17,
+    "year1": 1058400,
+    "year2": 1137800,
+    "year3": 1217200,
+    "year4_option_raise_pct": 53.6,
+    "qualifying_offer_raise_pct": 41.2
+   },
+   {
+    "pick": 18,
+    "year1": 1005500,
+    "year2": 1080900,
+    "year3": 1156300,
+    "year4_option_raise_pct": 53.8,
+    "qualifying_offer_raise_pct": 41.9
+   },
+   {
+    "pick": 19,
+    "year1": 960200,
+    "year2": 1032200,
+    "year3": 1104300,
+    "year4_option_raise_pct": 54.0,
+    "qualifying_offer_raise_pct": 42.6
+   },
+   {
+    "pick": 20,
+    "year1": 921800,
+    "year2": 991000,
+    "year3": 1060100,
+    "year4_option_raise_pct": 54.2,
+    "qualifying_offer_raise_pct": 43.3
+   },
+   {
+    "pick": 21,
+    "year1": 884900,
+    "year2": 951300,
+    "year3": 1017700,
+    "year4_option_raise_pct": 59.3,
+    "qualifying_offer_raise_pct": 44.1
+   },
+   {
+    "pick": 22,
+    "year1": 849500,
+    "year2": 913300,
+    "year3": 977000,
+    "year4_option_raise_pct": 64.5,
+    "qualifying_offer_raise_pct": 44.8
+   },
+   {
+    "pick": 23,
+    "year1": 815600,
+    "year2": 876700,
+    "year3": 937900,
+    "year4_option_raise_pct": 69.7,
+    "qualifying_offer_raise_pct": 45.5
+   },
+   {
+    "pick": 24,
+    "year1": 782900,
+    "year2": 841700,
+    "year3": 900400,
+    "year4_option_raise_pct": 74.9,
+    "qualifying_offer_raise_pct": 46.2
+   },
+   {
+    "pick": 25,
+    "year1": 751600,
+    "year2": 808000,
+    "year3": 864400,
+    "year4_option_raise_pct": 80.1,
+    "qualifying_offer_raise_pct": 46.9
+   },
+   {
+    "pick": 26,
+    "year1": 726700,
+    "year2": 781200,
+    "year3": 835700,
+    "year4_option_raise_pct": 80.3,
+    "qualifying_offer_raise_pct": 47.6
+   },
+   {
+    "pick": 27,
+    "year1": 705700,
+    "year2": 758700,
+    "year3": 811600,
+    "year4_option_raise_pct": 80.4,
+    "qualifying_offer_raise_pct": 48.3
+   },
+   {
+    "pick": 28,
+    "year1": 701400,
+    "year2": 754000,
+    "year3": 806600,
+    "year4_option_raise_pct": 80.5,
+    "qualifying_offer_raise_pct": 49.0
+   },
+   {
+    "pick": 29,
+    "year1": 696300,
+    "year2": 748500,
+    "year3": 800700,
+    "year4_option_raise_pct": 80.5,
+    "qualifying_offer_raise_pct": 50.0
+   }
+  ],
+  "note": "Scale amounts for players drafted in 2004 (1999 CBA, 98-99 figure +5% simple per year). Actual contracts may be 80%-120% of scale; most sign at 120%. Year-4 is a team option to be exercised by October 31 after the second season; the percentage columns are required raises.",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/scale99.htm",
+   "http://www.cbafaq.com/salarycap99.htm"
+  ]
+ },
+ "regular_season_2004_05_opens": {
+  "value": "2004-11-02",
+  "status": "sourced",
+  "sources": [
+   "https://www.basketball-reference.com/leagues/NBA_2005_games.html"
+  ]
+ },
+ "cba_term_note": {
+  "value": "The 1999 CBA ran through the 2004-05 season (league declined/extension issues aside); 2004-05 figures above are under the 1999 CBA.",
+  "status": "sourced",
+  "sources": [
+   "http://www.cbafaq.com/salarycap99.htm"
+  ]
+ },
+ "alignment_2004_05": {
+  "teams": {
+   "value": 30,
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft",
+    "https://www.basketball-reference.com/leagues/NBA_2005_standings.html"
+   ]
+  },
+  "conferences": 2,
+  "divisions_count": 6,
+  "divisions": {
+   "Eastern": {
+    "Atlantic": [
+     "BOS",
+     "NJN",
+     "NYK",
+     "PHI",
+     "TOR"
+    ],
+    "Central": [
+     "CHI",
+     "CLE",
+     "DET",
+     "IND",
+     "MIL"
+    ],
+    "Southeast": [
+     "ATL",
+     "CHA",
+     "MIA",
+     "ORL",
+     "WAS"
+    ]
+   },
+   "Western": {
+    "Northwest": [
+     "DEN",
+     "MIN",
+     "POR",
+     "SEA",
+     "UTA"
+    ],
+    "Pacific": [
+     "GSW",
+     "LAC",
+     "LAL",
+     "PHO",
+     "SAC"
+    ],
+    "Southwest": [
+     "DAL",
+     "HOU",
+     "MEM",
+     "NOH",
+     "SAS"
+    ]
+   }
+  },
+  "status": "sourced",
+  "sources": [
+   "https://www.basketball-reference.com/leagues/NBA_2005_standings.html"
+  ],
+  "note": "Listed alphabetically; the source page orders by final 2004-05 standings (hindsight), which was deliberately not carried over. Date the realignment was announced: unverified.",
+  "playoff_format_change": {
+   "value": null,
+   "status": "unverified",
+   "note": "Division-winner top-3 seeding from 2004-05 not researched here."
+  }
+ },
+ "researched_on": "2026-10-05",
+ "sources": [
+  {
+   "url": "https://www.basketball-reference.com/draft/NBA_2004.html",
+   "use": "2004 draft pick order, drafting club, bbr_id, college (retrieved 2026-10-05)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2004_NBA_draft",
+   "use": "draft date/location, lottery date and top-3 result, positions, schools, pick provenance and draft-day trades (with its cited NBA.com/ESPN/AP/USA Today references)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft",
+   "use": "expansion draft date, 19 selections, previous clubs, RFA markers, linked deals"
+  },
+  {
+   "url": "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+   "use": "expansion selections and bbr_ids"
+  },
+  {
+   "url": "https://www.espn.com/nba/story/_/id/1826536",
+   "use": "AP, June 22, 2004: expansion draft report (19 picks, 9 RFAs, Jahidi White deal, Pavlovic to Cleveland)"
+  },
+  {
+   "url": "http://www.cbafaq.com/salarycap99.htm",
+   "use": "Larry Coon's NBA Salary Cap FAQ, final 1999-CBA version (11/16/05): moratorium dates, cap table, minimum salaries, exceptions, expansion rules"
+  },
+  {
+   "url": "http://www.cbafaq.com/scale99.htm",
+   "use": "Larry Coon, 1999-CBA rookie scale tables incl. 2004-05"
+  },
+  {
+   "url": "https://espn.com/espn/wire?id=1839377&section=nba",
+   "use": "SportsTicker via ESPN, July 13, 2004: 2004-05 cap, tax, floor, Charlotte cap, MLE, $1M exception, rookie minimum; moratorium ends July 14"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2004_NBA_Finals",
+   "use": "Finals dates June 6-15, 2004"
+  },
+  {
+   "url": "https://www.basketball-reference.com/leagues/NBA_2005_games.html",
+   "use": "2004-05 opening night Nov 2, 2004"
+  },
+  {
+   "url": "https://www.basketball-reference.com/leagues/NBA_2005_standings.html",
+   "use": "2004-05 division membership"
+  },
+  {
+   "url": "https://www.spotrac.com/nba/cba/tax",
+   "use": "secondary: exact tax threshold figure"
+  }
+ ],
+ "notes": [
+  "HINDSIGHT WARNING: the ESPN cap story (July 13, 2004) mentions a reported Shaquille O'Neal trade to Miami. That is a real Miami transaction and, per AGENTS.md, must not be applied or leaked into the simulation. Only the cap figures from that article were taken.",
+  "HINDSIGHT WARNING: tax-not-triggered for 2004-05 and BRI/escrow outcomes in the cbafaq FAQ are season results; do not use before they would be known.",
+  "Several Wikipedia source rows include later-career honors (All-Star, ROY, etc.); these were deliberately omitted.",
+  "Draft-night rights moves: 5 WAS->DAL, 7 PHO->CHI, 20 DEN->ORL, 21 UTA->DAL, 22 NJN->POR, 31 CHI->PHO, 35 SEA->MEM, 36 ORL->MEM, 39 TOR->MIA, 42 ATL->SAS, 47 MIA->TOR, 50 DAL->HOU, 55 HOU->DAL. For 35 and 36 the only cited source is an AP item dated July 7, 2004 stating the deals were on draft day.",
+  "Pre-draft trades of the No. 2 (June 21) and No. 45 (June 23) picks mean Charlotte itself made both selections; BBR and Wikipedia agree.",
+  "Pick 42 provenance: Wikipedia footnote says Orlando sent it to Atlanta for Anthony Johnson on Feb 24, 2000, which precedes Orlando's Dec 2003 acquisition; the chain is internally inconsistent and the ORL->ATL date is unverified.",
+  "Pick 17 provenance: the DET->ATL leg is from the Feb 2004 Rasheed Wallace three-team deal; Wikipedia's footnote dates its announcement Feb 19, 2004.",
+  "Picks 1-29 positions and schools are from Wikipedia; BBR does not list positions on its draft page.",
+  "Rookie scale pick 6 year-1 printed as '$2.075,300' at the source; recorded as 2,075,300.",
+  "All bbr_ids are as linked from basketball-reference.com's 2004 draft and 2004 expansion draft pages; none were guessed. BBR's draft page also links ids for picks who never played in the NBA.",
+  "web.archive.org was unreachable from this environment, so archived NBA.com press releases (expansion selection order, lottery release) could not be read directly."
+ ]
+}

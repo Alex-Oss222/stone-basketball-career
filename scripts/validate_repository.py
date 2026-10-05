@@ -672,6 +672,8 @@ def validate():
         record = json.loads((ROOT / playoffs.RECORD).read_text(encoding="utf-8"))
         if not (ROOT / playoffs.PAGE).is_file() or (ROOT / playoffs.PAGE).read_text(encoding="utf-8") != playoffs.page(record, ROOT):
             errors.append(f"{playoffs.PAGE}: the playoff page differs from playoffs.json (python scripts/seed_playoffs.py --write)")
+        from runtime.playoff_stats import page_errors as playoff_page_errors
+        errors.extend(playoff_page_errors(ROOT))
 
     from runtime.game_requests import frozen_errors
     errors.extend(frozen_errors(ROOT))

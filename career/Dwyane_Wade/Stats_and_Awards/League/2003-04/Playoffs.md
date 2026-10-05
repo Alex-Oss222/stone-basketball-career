@@ -4,6 +4,8 @@ Seeded 2004-04-14 from closed simulated regular-season results only ([standings]
 
 Division winners take seeds 1 and 2; seeds 3 to 8 are the next six records. Ties: the 2003-04 tiebreak procedure, an engine drawing if it cannot separate them. Best of seven; home court to the better record; 2-2-1-1-1 in the conference rounds, 2-3-2 in the Finals. Games 5 to 7 are played only if needed.
 
+Statistics: [playoff statistics](Playoffs/Playoff_Stats.md) (all clubs) · [Miami's playoff statistics](../../Team/2003-04/Playoffs/Team_Playoff_Stats.md).
+
 ## Eastern Conference seeds
 
 | Seed | Club | W | L | Note |

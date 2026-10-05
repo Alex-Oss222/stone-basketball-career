@@ -517,6 +517,14 @@ class CardContext:
                     who = v.get("player")
                     if who and who not in d["winners"]:
                         self.honors.setdefault(_key(who), []).append(dict(base, name=d["name"], rank=i + 1))
+        # Closed playoff results (runtime/playoff_stats.py): each player's playoff records, by dated record name.
+        self.playoff_lines = {}
+        try:
+            from .playoff_stats import closed_playoff_results, player_lines
+            for (name, _club), recs in player_lines(closed_playoff_results(self.root, SEASON, self.on), self.root, SEASON).items():
+                self.playoff_lines.setdefault(_key(name), []).extend(recs)
+        except (OSError, KeyError):
+            pass
         self.template = (ROOT / TEMPLATE).read_text(encoding="utf-8")
 
     def club(self, player, signed=None):
@@ -683,11 +691,23 @@ def markdown_card(ctx, data):
     lines.append(f"**Coverage:** {coverage}\n")
     lines.append(markdown_table(hist, rows).rstrip() + "\n")
     lines.append("## Playoff statistics by year\n")
-    started = ctx.on >= "2004-04-17"                        # first-round opening day (nba_2003_04_playoff_rules.json)
-    lines.append(f"**Coverage:** {SEASON} playoffs " + ("are recorded game by game in the league playoff records "
-                 f"([bracket]({_rel(ctx.root / CARDS_DIR, ctx.root / LEAGUE_DIR / SEASON / 'Playoffs.md')})); this card does not "
-                 "total them yet." if started else "have not started.") + " Prior playoff history is not imported into this card.\n")
-    lines.append(markdown_table(hist, [[SEASON, team, "0", *["N/A"] * (len(hist) - 3)]]).rstrip() + "\n")
+    playoff = getattr(ctx, "playoff_lines", {}).get(_key(p["name"]), [])
+    ps = aggregate(playoff) if playoff else None
+    bracket = _rel(ctx.root / CARDS_DIR, ctx.root / LEAGUE_DIR / SEASON / "Playoffs.md")
+    if ps and ps["gp"]:
+        clubs = "/".join(sorted({r["team"] for r in playoff}))
+        lines.append(f"**Coverage:** {SEASON} playoffs from closed playoff results through {ctx.on} "
+                     f"([bracket]({bracket}); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.\n")
+        pg = ps["pg"]
+        prow = [SEASON, clubs, str(ps["gp"]), _n(ps["gs"], 0), _n(pg["minutes"]), _n(pg["pts"]), _n(pg["reb"]), _n(pg["ast"]),
+                _n(pg["stl"]), _n(pg["blk"]), _n(pg["tov"]), pct(ps["rates"]["fg_pct"]), pct(ps["rates"]["three_pct"]),
+                pct(ps["rates"]["ft_pct"])]
+    else:
+        started = ctx.on >= "2004-04-17"                    # first-round opening day (nba_2003_04_playoff_rules.json)
+        lines.append(f"**Coverage:** {SEASON} playoffs " + (f"([bracket]({bracket})): no playoff appearance through {ctx.on}."
+                     if started else "have not started.") + " Prior playoff history is not imported into this card.\n")
+        prow = [SEASON, team, "0", *["N/A"] * (len(hist) - 3)]
+    lines.append(markdown_table(hist, [prow]).rstrip() + "\n")
     lines.append("## Awards and honors\n")
     honors = ctx.honors.get(_key(p["name"]), [])
     if not honors:

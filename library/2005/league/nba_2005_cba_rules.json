@@ -1,0 +1,776 @@
+{
+ "schema_version": 1,
+ "kind": "cba_rules",
+ "purpose": "Structural rules of the 2005 collective bargaining agreement (effective 2005-06): contract lengths, raises, maximums, minimums, rookie scale, extensions, tax, escrow, exceptions, age limit. Live only from the agreement's ratification date; never applied to an earlier contract.",
+ "hindsight_warning": "Everything here is real-world history. The 2005 CBA terms were not public until June 21, 2005 (agreement in principle) and not final until ratification on July 30, 2005; 2003-04 league averages are public only after the 2003-04 regular season closed (2004-04-14). Season-specific figures for 2006-07 onward printed in the source FAQ were deliberately NOT copied, to avoid future-season leakage; only structural rules and 2005-06 values are recorded.",
+ "status_legend": {
+  "sourced": "Read directly from the cited source.",
+  "derived": "Computed or inferred from sourced facts; reasoning given.",
+  "unverified": "Could not be confirmed from a primary or reliable source; value null or text marked as unconfirmed."
+ },
+ "sources": [
+  {
+   "id": "cbafaq05",
+   "url": "http://www.cbafaq.com/salarycap05.htm",
+   "title": "Larry Coon, NBA Salary Cap FAQ (2005 CBA, final update), retrieved 2026-10-05",
+   "note": "Final update of the 2005-CBA FAQ (written up to 2011). Includes later-season figures and real 2005-11 transactions (hindsight)."
+  },
+  {
+   "id": "upi_20050730",
+   "url": "https://www.upi.com/Sports_News/2005/08/01/Collective-bargaining-agreement-for-NBA/58131122894853/",
+   "title": "UPI, 'Collective bargaining agreement for NBA', dateline New York, July 30, 2005"
+  },
+  {
+   "id": "ap_20050621",
+   "url": "https://catherwood.library.cornell.edu/wit/nba-reaches-new-six-year-labor-agreement/",
+   "title": "Associated Press / New York Times, 'NBA Reaches New Six-Year Labor Agreement', June 21, 2005 (Cornell Catherwood Library digest)"
+  },
+  {
+   "id": "draftreview",
+   "url": "https://www.thedraftreview.com/nba-draft-regulations/nba-draft-rules/2005-nba-age-limit-nba-draft-rules",
+   "title": "The Draft Review, 2005 NBA age limit (quotes the June 21, 2005 announcement)"
+  },
+  {
+   "id": "wiki_cba",
+   "url": "https://en.wikipedia.org/wiki/NBA_collective_bargaining_agreement",
+   "title": "Wikipedia, NBA collective bargaining agreement (cites NBA.com 'CBA Principal Deal Points', Aug 4, 2005, http://www.nba.com/news/cba_summary_050804.html, and NBA.com 'Inactive vs. Active List Rules', Nov 1, 2005, http://www.nba.com/news/inactive_rules_0506.html; the NBA.com originals could not be fetched: web.archive.org unreachable through the session proxy)"
+  },
+  {
+   "id": "wiki_0405",
+   "url": "https://en.wikipedia.org/wiki/2004%E2%80%9305_NBA_season",
+   "title": "Wikipedia, 2004-05 NBA season (cites NBA.com 'NBA Approves Realignment for 2004-05 Season', Nov 17, 2003, http://www.nba.com/news/realign_031117.html)"
+  },
+  {
+   "id": "wiki_0506",
+   "url": "https://en.wikipedia.org/wiki/2005%E2%80%9306_NBA_season",
+   "title": "Wikipedia, 2005-06 NBA season"
+  },
+  {
+   "id": "wiki_d3s",
+   "url": "https://en.wikipedia.org/wiki/Defensive_three-second_violation",
+   "title": "Wikipedia, Defensive three-second violation (cites Sun-Sentinel, Apr 13, 2001)"
+  },
+  {
+   "id": "si_2022",
+   "url": "https://www.si.com/nba/2022/01/27/nba-defense-foul-rules-joe-ingles-mikal-bridges-aaron-gordon",
+   "title": "Rohan Nadkarni, 'The Defense Strikes Back', Sports Illustrated, Jan 27, 2022 (secondary, retrospective)"
+  },
+  {
+   "id": "sr_rules",
+   "url": "https://faq.sports-reference.com/portal/en/kb/articles/a-history-of-major-nba-rule-changes",
+   "title": "Sports Reference FAQ, A History of Major NBA Rule Changes"
+  },
+  {
+   "id": "bbr2004",
+   "url": "https://www.basketball-reference.com/leagues/NBA_2004.html",
+   "title": "Basketball-Reference, 2003-04 NBA Season Summary (League Average rows of Per Game, Totals and Advanced team tables)",
+   "retrieved_on": "2026-10-05",
+   "sha256_of_retrieved_html": "cfb7f6d17e78f085302cd05193b364dc6cedae1f53bff2927862eb7ef721d682"
+  }
+ ],
+ "prepared_on": "2026-10-05",
+ "agreement": "2005 NBA collective bargaining agreement",
+ "dates": {
+  "agreement_in_principle": {
+   "value": "2005-06-21",
+   "status": "sourced",
+   "source": "ap_20050621",
+   "note": "Announced by David Stern and Billy Hunter before Game 6 of the 2005 Finals; previous accord expired June 30, 2005. Also cbafaq05 Q6 ('late June 2005') and Q18 (amnesty eligibility keyed to players acquired before June 21, 2005)."
+  },
+  "ratified_and_signed": {
+   "value": "2005-07-30",
+   "status": "sourced",
+   "source": "upi_20050730",
+   "note": "UPI dateline New York, July 30, 2005: the NBA and NBPA ratified and signed a new six-year agreement. cbafaq05 Q5: 'ratified ... in July 2005'."
+  },
+  "nba_deal_points_release": {
+   "value": "2005-08-04",
+   "status": "sourced",
+   "source": "wiki_cba",
+   "note": "Date of NBA.com 'CBA Principal Deal Points' as cited by Wikipedia; original page not fetched."
+  },
+  "july_moratorium_2005": {
+   "value": {
+    "from": "2005-07-01",
+    "to": "2005-08-01",
+    "first_signing_day": "2005-08-02"
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q93",
+   "note": "Extended in 2005 for the CBA to be finalized, ratified and distributed (Q6, Q93). UPI also gives Aug 2 as the day the new cap took effect."
+  },
+  "term": {
+   "value": {
+    "first_season": "2005-06",
+    "last_season": "2010-11",
+    "seasons": 6,
+    "league_option": "2011-12 (one-year extension at the league's option; not exercised)"
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q5",
+   "note": "UPI and AP both describe a six-year agreement. Whether the 2011-12 option was exercised is hindsight relative to 2005."
+  },
+  "early_termination": {
+   "value": [
+    "Players Association: certain types of collusion",
+    "League: significant drop in national TV revenue in the next TV agreement",
+    "League: force majeure events",
+    "Either side: certain CBA provisions struck down in court"
+   ],
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q5"
+  }
+ },
+ "revenue_and_cap": {
+  "players_guaranteed_share_of_BRI_pct": {
+   "value": 57,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q8"
+  },
+  "salary_cap_percent_of_BRI": {
+   "value": {
+    "2005-06": 49.5,
+    "2006-07_onward": 51.0,
+    "1999_cba": 48.04
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q10, Appendix"
+  },
+  "salary_cap_2005_06": {
+   "value": 49500000,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q10",
+   "note": "Agreed fixed figure; formula would have given about $50.9 million. Charlotte (expansion) $37.125 million. UPI also reports $49.5 million."
+  },
+  "minimum_team_salary_pct_of_cap": {
+   "value": 75,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q10"
+  },
+  "projected_benefits_subtracted_2005_06": {
+   "value": 112000000,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q10"
+  }
+ },
+ "contract_length": {
+  "bird_rights_re_signing_max_years": {
+   "value": 6,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19, Q47, Appendix",
+   "note": "1999 CBA: 7."
+  },
+  "other_free_agents_max_years": {
+   "value": 5,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q47, Appendix",
+   "note": "Includes Early Bird, Non-Bird, Mid-Level and cap-room signings. 1999 CBA: 6."
+  },
+  "early_bird": {
+   "value": {
+    "min_years": 2,
+    "max_years": 5
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19"
+  },
+  "bi_annual_max_years": {
+   "value": 2,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19"
+  },
+  "minimum_exception_max_years": {
+   "value": 2,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19"
+  },
+  "sign_and_trade_min_years": {
+   "value": 3,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q79",
+   "note": "Only the first season must be guaranteed."
+  }
+ },
+ "annual_raises": {
+  "rule": {
+   "value": "Raises are a percentage of the first-year salary (not compounded); decreases limited by the same amount. Raises take effect July 1.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q47, Q48"
+  },
+  "larry_bird_pct": {
+   "value": 10.5,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19, Q47",
+   "note": "1999 CBA: 12.5."
+  },
+  "early_bird_pct": {
+   "value": 10.5,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19, Q47",
+   "note": "1999 CBA: 12.5."
+  },
+  "non_bird_pct": {
+   "value": 8,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19",
+   "note": "1999 CBA: 10."
+  },
+  "mid_level_bi_annual_cap_room_and_other_pct": {
+   "value": 8,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19, Q47",
+   "note": "1999 CBA: 10."
+  },
+  "rookie_scale_pct": {
+   "value": 8,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q42",
+   "note": "Annual raises limited to 8% and may not exceed 120% of that season's scale amount."
+  }
+ },
+ "maximum_salary": {
+  "definition": {
+   "value": {
+    "0_to_6_years": "greater of $9,000,000 or 25% of cap",
+    "7_to_9_years": "greater of $11,000,000 or 30% of cap",
+    "10_plus_years": "greater of $14,000,000 or 35% of cap"
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q11",
+   "note": "The cap used for maximums is computed at 48.04% of projected BRI, not the 49.5%/51% salary-cap percentage."
+  },
+  "2005_06": {
+   "value": {
+    "0_to_6_years": 12000000,
+    "7_to_9_years": 14400000,
+    "10_plus_years": 16800000
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q11",
+   "note": "Hard figures agreed for 2005-06 rather than the formula. Later seasons are in the FAQ but deliberately not copied."
+  },
+  "105_pct_rule": {
+   "value": "A free agent's first-year maximum is never less than 105% of his salary in the last year of his previous contract, with any team.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q11"
+  },
+  "applies_to": {
+   "value": "First season only; later seasons limited by raise rules.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q12"
+  },
+  "deferred_compensation_limit_pct": {
+   "value": 30,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q11"
+  },
+  "years_of_service_credit": {
+   "value": "A season counts if the player is on an active or inactive list for at least one day of the regular season.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q11, Appendix"
+  }
+ },
+ "minimum_salary_2005_06": {
+  "value": {
+   "0": 398762,
+   "1": 641748,
+   "2": 719373,
+   "3": 745248,
+   "4": 771123,
+   "5": 835810,
+   "6": 900498,
+   "7": 965185,
+   "8": 1029873,
+   "9": 1035000,
+   "10_plus": 1138500
+  },
+  "status": "sourced",
+  "source": "cbafaq05",
+  "source_ref": "Q11",
+  "note": "Keyed by years of service. The league reimburses salary above the 2-year minimum for 3+-year veterans on one-year minimum deals; only the 2-year minimum counts on team salary."
+ },
+ "rookie_scale": {
+  "structure": {
+   "value": "Two guaranteed seasons plus team options for the third and fourth seasons.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q42, Q47",
+   "note": "1999 CBA (repo file): three seasons plus a team option for a fourth."
+  },
+  "option_deadlines": {
+   "value": {
+    "third_season_option": "October 31 preceding the player's second season",
+    "fourth_season_option": "October 31 preceding the player's third season",
+    "weekend_rule": "next business day if October 31 is a weekend or holiday"
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q42"
+  },
+  "signing_range_pct_of_scale": {
+   "value": [
+    80,
+    120
+   ],
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q42"
+  },
+  "option_year_raises": {
+   "value": {
+    "fourth_year_option_pct_over_third": "26.1% (No. 1 pick) scaling to 80.5% (No. 30)",
+    "qualifying_offer_pct_over_fourth": "30.0% (No. 1) scaling to 50.0% (No. 30)",
+    "third_year_option": "fixed scale amount (No. 1 in 2005-06: $4,159,600)"
+   },
+   "status": "derived",
+   "source": "cbafaq05",
+   "source_ref": "Q42",
+   "note": "The FAQ's No. 1-pick table labels 26.1% as the 4th-year option raise over the 3rd-year salary and 30.0% as the qualifying-offer raise over the 4th; its prose calls them the 'third year' and 'fourth year' increases. The table labels are used; the No. 30 endpoints (80.5%, 50.0%) come from the prose."
+  },
+  "no1_pick_2005_06": {
+   "value": {
+    "year1": 3617100,
+    "year2": 3888300,
+    "year3_option": 4159600
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q42"
+  },
+  "no30_pick_2005_06_year1": {
+   "value": 717800,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q42"
+  },
+  "full_scale_table": {
+   "value": null,
+   "status": "unverified",
+   "source": "cbafaq05",
+   "source_ref": "Q42",
+   "note": "Full by-pick scale is in CBA Exhibit B (http://www.nbpa.org/sites/default/files/EXHIBIT B.pdf), not fetched."
+  },
+  "unsigned_after_jan_10": {
+   "value": "Scale amount reduces daily from January 10 until signed.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q42"
+  },
+  "rfa_after": {
+   "value": "Restricted free agent after the fourth season if both options exercised; unrestricted if either option declined.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q37, Q42"
+  },
+  "rookie_trade_wait": {
+   "value": "A drafted rookie may be traded 30 days after signing (1999 CBA: three months after signing or December 15, whichever later).",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q83, Appendix"
+  }
+ },
+ "extensions": {
+  "rookie_scale_window": {
+   "value": "From the day after the July moratorium to October 31 preceding the player's last option season (provided the team picked up that option).",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q52"
+  },
+  "rookie_scale_length": {
+   "value": "Up to five seasons beyond the last option season (six total).",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q52"
+  },
+  "rookie_scale_first_year_salary": {
+   "value": "Any amount up to the player's maximum; raises up to 10.5% of the extension's first-year salary.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q52"
+  },
+  "veteran_extension_eligibility": {
+   "value": {
+    "4_or_5_year_contracts": "three years after signing",
+    "6_year_contracts_signed_on_or_after_2005_07_01": "three years after signing",
+    "6_or_7_year_contracts_signed_before_2005_07_01": "four years after signing",
+    "extended_contracts": "three years after the extension",
+    "renegotiated_contracts_raise_over_10pct": "three years after renegotiation",
+    "contracts_under_4_years": "may not be extended"
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q52"
+  },
+  "veteran_extension_deadline": {
+   "value": "Up to June 30, the day before the player would become a free agent.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q52"
+  },
+  "veteran_extension_length": {
+   "value": 5,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q52",
+   "note": "Five seasons total including seasons remaining on the current contract. FAQ Q47's summary table says 6 including remaining seasons; Q52 (detailed) and the NBA deal points as reported (wiki_cba search summary) say five total. Treat 5 as the rule; conflict flagged."
+  },
+  "veteran_extension_salary": {
+   "value": "First extension year up to 110.5% of the last existing-contract salary (not above the player's free-agent maximum); raises up to 10.5% of the last existing-contract salary.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q52"
+  }
+ },
+ "luxury_tax": {
+  "rate": {
+   "value": "$1 per $1 of team salary above the tax level",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q16"
+  },
+  "level_basis": {
+   "value": "61% of projected BRI, minus projected benefits, adjusted for prior-season BRI, divided by the number of non-expansion teams; set before the season.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q16, Appendix",
+   "note": "1999 CBA: 61.1% of actual BRI, set after the season, triggered only when escrow fell short; cliff smoothing removed."
+  },
+  "levied_every_season": {
+   "value": true,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q16",
+   "note": "Disconnected from escrow; 1999 tax applied only in seasons when escrow failed."
+  },
+  "level_2005_06": {
+   "value": 61700000,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q16",
+   "note": "Fixed figure; formula would have given about $63.7 million."
+  },
+  "measured_on": {
+   "value": "Team salary on the date of the team's last regular-season game, with bonus/trade-bonus/grievance adjustments; non-draft free agents below the 2-year minimum are taxed at the 2-year minimum.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q16"
+  },
+  "distribution": {
+   "value": "Escrow and tax money shared equally among teams (no cliff provision).",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Appendix, Q17"
+  }
+ },
+ "escrow": {
+  "designated_pct_of_BRI": {
+   "value": {
+    "base": 57,
+    "if_BRI_exceeds_2004_05_by_30pct": 57.5,
+    "if_BRI_exceeds_2004_05_by_60pct": 58
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q15"
+  },
+  "withholding_2005_06_pct": {
+   "value": 10,
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q15",
+   "note": "FAQ table: 10% in 2005-06, then 9%, falling to 8% later. A web-search summary of a later ESPN piece mentioned 8%; the FAQ season table is used."
+  },
+  "shortfall": {
+   "value": "If escrow is insufficient, the remainder is deducted from players the following season.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q15"
+  }
+ },
+ "exceptions": {
+  "mid_level": {
+   "value": {
+    "value_2005_06": 5000000,
+    "basis": "average salary (defined as $5 million for 2005-06)",
+    "max_years": 5,
+    "raise_pct": 8,
+    "splittable": true,
+    "every_season": true
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19",
+   "note": "UPI also reports $5 million. 2004-05 under the 1999 CBA was $4.903 million (repo cap file)."
+  },
+  "bi_annual": {
+   "value": {
+    "value_2005_06": 1670000,
+    "max_years": 2,
+    "raise_pct": 8,
+    "splittable": true,
+    "frequency": "not in consecutive seasons; if the $1 Million exception was used in 2004-05 the Bi-Annual is unavailable in 2005-06"
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19"
+  },
+  "larry_bird": {
+   "value": {
+    "seasons_required": 3,
+    "max_salary": "player maximum",
+    "max_years": 6,
+    "raise_pct": 10.5
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19"
+  },
+  "early_bird": {
+   "value": {
+    "seasons_required": 2,
+    "max_salary": "greater of 175% of previous salary or average salary ($5 million defined for 2005-06)",
+    "min_years": 2,
+    "max_years": 5,
+    "raise_pct": 10.5
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19"
+  },
+  "non_bird": {
+   "value": {
+    "max_salary": "greatest of 120% of previous salary, 120% of minimum, or the qualifying-offer amount",
+    "max_years": 5,
+    "raise_pct": 8
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19"
+  },
+  "minimum": {
+   "value": {
+    "max_years": 2,
+    "no_signing_bonus": true,
+    "proration": "reduces daily from first day of season"
+   },
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19"
+  },
+  "disabled_player": {
+   "value": "Lesser of 50% of injured player's salary or average salary; league approval; up to 5 years; trade use limited to 100% + $100,000.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q19"
+  },
+  "january_10_proration": {
+   "value": "From January 10, unused Mid-Level, Bi-Annual, Larry Bird, Early Bird and Non-Bird exceptions reduce daily (new in 2005).",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q20, Appendix"
+  },
+  "traded_player_salary_matching": {
+   "value": "Over-cap team may take back 125% + $100,000 of outgoing salary (1999 CBA: 115% + $100,000).",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Appendix, Q71"
+  }
+ },
+ "restricted_free_agency": {
+  "qualifying_offer": {
+   "value": "125% of previous salary or minimum salary + $175,000, whichever is greater (rookie-scale QOs by draft position); one season; due June 30; must be accepted by March 1; withdrawable without consent until July 23.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q37",
+   "note": "1999 repo file: minimum + $150,000."
+  },
+  "arenas_provision": {
+   "value": "Offer sheets to RFAs with one or two years of service are limited to the average salary in year 1, 8% raise in year 2, then year 3 may jump to what the unrestricted amount would have been; later raises limited to 6.9% of year 3.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q38"
+  }
+ },
+ "age_limit": {
+  "rule": {
+   "value": "U.S. players: at least 19 during the calendar year of the draft and one year removed from high-school graduation (class). International players: at least 19 during the calendar year of the draft.",
+   "status": "sourced",
+   "source": "cbafaq05",
+   "source_ref": "Q49, Appendix",
+   "note": "1999 CBA: 18 and high-school class graduated. Also AP June 21, 2005 and The Draft Review ('increase from 18 to 19, plus one year removed from high school')."
+  },
+  "first_draft_affected": {
+   "value": "2006 NBA Draft",
+   "status": "derived",
+   "source": "cbafaq05",
+   "source_ref": "Q49",
+   "note": "The rule did not affect players drafted before the CBA took effect (FAQ: Andrew Bynum, 17 when drafted in 2005, was eligible). The 2005 draft (June 28, 2005) preceded ratification (July 30, 2005), so the 2006 draft was the first held under it. No primary source with the explicit sentence '2006 draft' was fetched."
+  }
+ },
+ "sign_and_trade": {
+  "value": {
+   "who": "Only the player's own free agent (Bird, Early Bird or Non-Bird, even if renounced); not via Mid-Level, Bi-Annual or Disabled Player exceptions",
+   "min_years": 3,
+   "guarantee": "only first season must be guaranteed",
+   "atomic": "contract void unless traded to the named team within 48 hours",
+   "byc": "signed player may become a Base Year Compensation player",
+   "trade_bonus": "not earned on the sign-and-trade itself",
+   "signing_bonus": "either team may pay; signing team's share counts toward the $3 million trade cash limit"
+  },
+  "status": "sourced",
+  "source": "cbafaq05",
+  "source_ref": "Q79-Q83"
+ },
+ "amnesty_2005": {
+  "value": {
+   "window": "2005-08-02 to 2005-08-15",
+   "eligible": "players signed or acquired before 2005-06-21, or already waived when the CBA took effect",
+   "per_team": 1,
+   "effect": "player's salary excluded from luxury-tax computation only; still paid and still counts on the cap; team may not re-sign or reacquire him for the length of the terminated contract"
+  },
+  "status": "sourced",
+  "source": "cbafaq05",
+  "source_ref": "Q18",
+  "note": "Real usage list (incl. Miami waiving Wesley Person) is in the FAQ; it is hindsight about real clubs and not copied here."
+ },
+ "trades_and_consent": {
+  "value": "A player on a one-year contract who will have Bird or Early Bird rights cannot be traded without his consent; if he consents he becomes a Non-Bird free agent (1999: could not be traded). Base Year Compensation expires after six months or June 30, whichever later.",
+  "status": "sourced",
+  "source": "cbafaq05",
+  "source_ref": "Appendix, Q83"
+ },
+ "over_36_rule": {
+  "value": "Contracts for players reaching age 36 may be classified Over-36: late seasons become 'zero years' whose salary is treated as deferred and charged against earlier cap years. Applies to contracts signed on or after November 1, 2005; contracts signed before that used the 1999 CBA rule.",
+  "status": "sourced",
+  "source": "cbafaq05",
+  "source_ref": "Q50",
+  "note": "Full age/length tables not transcribed."
+ },
+ "roster": {
+  "value": {
+   "min_players": 13,
+   "league_average_guarantee": 14,
+   "inactive_list": "players beyond 12 active; at least one inactive; set game by game; no minimum stay (replaces Injured Reserve with its 5-game minimum)",
+   "max_inactive": 3,
+   "d_league": "up to two players with fewer than two years of service may be assigned",
+   "offseason_roster_charge_below": 12,
+   "ten_day_limit": "no more 10-day contracts than players on the inactive list"
+  },
+  "status": "sourced",
+  "source": "cbafaq05",
+  "source_ref": "Appendix, Q67-Q69",
+  "note": "Max-three inactive also cited by Wikipedia from NBA.com Aug 4, 2005 deal points."
+ },
+ "waivers": {
+  "value": {
+   "offseason_waiver_period_days": 7,
+   "1999": 10
+  },
+  "status": "sourced",
+  "source": "cbafaq05",
+  "source_ref": "Appendix"
+ },
+ "drug_penalties_ped": {
+  "value": "10 games, 25 games, one year, disqualification (1999: 5, 10, 25).",
+  "status": "sourced",
+  "source": "cbafaq05",
+  "source_ref": "Appendix"
+ },
+ "game_rules": {
+  "2004_05": {
+   "hand_checking": {
+    "summary": {
+     "value": "Enforcement against hand-checking was tightened for 2004-05: defenders could no longer use hands or forearms on the perimeter to impede a ball handler, removing most perimeter contact and hand fighting.",
+     "status": "sourced",
+     "source": "si_2022",
+     "note": "SI (Nadkarni, 2022): \"In '04, the league did away with hand checking, removing most contact and hand fighting on the perimeter, giving offensive players much more breathing room to operate.\""
+    },
+    "season_effective": {
+     "value": "2004-05",
+     "status": "sourced",
+     "source": "si_2022"
+    },
+    "exact_rule_text_and_approval_date": {
+     "value": null,
+     "status": "unverified",
+     "source": null,
+     "note": "Could not retrieve the 2004-05 Official Rules (Rule 12B) text or a dated NBA.com/Board of Governors/Competition Committee release. Secondary web summaries say the crackdown applied above the free-throw line extended and came with clarified block/charge calls and stricter defensive three-seconds enforcement; these are unconfirmed and not dated."
+    },
+    "related_emphasis": {
+     "value": "Clarified blocking fouls and stricter calling of defensive three seconds as part of the same package.",
+     "status": "unverified",
+     "source": null,
+     "note": "Only in non-authoritative web summaries."
+    }
+   },
+   "defensive_three_seconds": {
+    "value": "Not new in 2004-05: introduced for 2001-02 together with legalized zone defense (Board of Governors vote April 12, 2001); backcourt count also cut from 10 to 8 seconds in 2001-02. A violation is a team technical: one free throw and the offense keeps the ball.",
+    "status": "sourced",
+    "source": "wiki_d3s",
+    "note": "Corroborated by sr_rules for the 2001-02 entry. Any 2004-05 change was enforcement emphasis only (unverified)."
+   },
+   "league_expansion_30_teams": {
+    "value": "Charlotte Bobcats began play in 2004-05, making 30 teams.",
+    "status": "sourced",
+    "source": "wiki_0405"
+   },
+   "realignment": {
+    "value": "Six divisions of five teams (three per conference); New Orleans Hornets moved from East to West; approved by the NBA (NBA.com release Nov 17, 2003). Schedule: 16 division games (4 x 4), 36 other in-conference games (4 vs six teams, 3 vs four, rotating), 30 vs the other conference (2 each).",
+    "status": "sourced",
+    "source": "wiki_0405",
+    "note": "Inter-conference count derived: 82 - 16 - 24 - 12 = 30, i.e. 2 vs each of 15 teams."
+   },
+   "playoff_seeding": {
+    "value": null,
+    "status": "unverified",
+    "source": null,
+    "note": "2004-05 seeding (three division winners seeded 1-3) not confirmed here."
+   }
+  },
+  "2005_06": {
+   "inactive_list_replaces_injured_list": {
+    "value": "From 2005-06 the active and inactive lists are set game by game, one hour before tip-off, with no minimum stay; replaces the Injured List (5-game minimum).",
+    "status": "sourced",
+    "source": "wiki_cba",
+    "note": "Wikipedia quotes NBA.com 'Inactive vs. Active List Rules', Nov 1, 2005; also cbafaq05 Appendix."
+   },
+   "dress_code": {
+    "value": "League dress code announced October 17, 2005, effective from the start of 2005-06 (off-court conduct rule, not a playing rule).",
+    "status": "sourced",
+    "source": "wiki_0506"
+   },
+   "playing_rule_changes": {
+    "value": null,
+    "status": "unverified",
+    "source": null,
+    "note": "No 2005-06 on-court playing-rule change could be confirmed from a reliable source."
+   }
+  }
+ }
+}

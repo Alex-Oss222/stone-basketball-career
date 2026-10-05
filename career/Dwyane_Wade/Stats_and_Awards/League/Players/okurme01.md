@@ -115,11 +115,11 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2003-04 playoffs are recorded game by game in the league playoff records ([bracket](../2003-04/Playoffs.md)); this card does not total them yet. Prior playoff history is not imported into this card.
+**Coverage:** 2003-04 playoffs from closed playoff results through 2004-04-28 ([bracket](../2003-04/Playoffs.md); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | DET | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2003-04 | Detroit Pistons | 5 | 0 | 22.4 | 8.6 | 6.4 | 1.0 | 1.0 | 0.6 | 2.2 | 45.5% | 33.3% | 75.0% |
 
 ## Awards and honors
 

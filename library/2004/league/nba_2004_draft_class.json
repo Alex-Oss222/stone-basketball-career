@@ -1,0 +1,1429 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "draft_class",
+ "season": "2004",
+ "purpose": "The real 2004 NBA Draft (June 24, 2004) as world data: picks, original owners and draft-night rights moves. Usable only from the draft date; a real Miami pick or trade is skipped (AGENTS.md rule 1) and simulated Miami picks on its own.",
+ "available_from": "2004-06-24",
+ "date": {
+  "value": "2004-06-24",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2004_NBA_draft"
+  ]
+ },
+ "location": {
+  "value": "The Theater at Madison Square Garden, New York City",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2004_NBA_draft"
+  ]
+ },
+ "total_picks": {
+  "value": 59,
+  "note": "29 first-round picks (Minnesota forfeited its first-round pick for salary-cap violations) and 30 second-round picks",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2004_NBA_draft",
+   "https://www.basketball-reference.com/draft/NBA_2004.html"
+  ]
+ },
+ "lottery": {
+  "date": {
+   "value": "2004-05-26",
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "note": "Single source (Wikipedia); no contemporaneous article retrieved (web.archive.org unreachable from this environment)."
+  },
+  "lottery_teams": 13,
+  "winner": {
+   "value": "ORL",
+   "note": "Orlando had a 25% chance at No. 1",
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  "charlotte": {
+   "value": "Charlotte was assigned the No. 4 pick as an expansion team and did not take part in the lottery; by expansion terms it held No. 4 in both rounds (i.e. Nos. 4 and 33).",
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2004_NBA_draft",
+    "http://www.cbafaq.com/salarycap99.htm"
+   ]
+  },
+  "draft_order_result_picks_1_to_14": [
+   {
+    "pick": 1,
+    "club": "ORL"
+   },
+   {
+    "pick": 2,
+    "club": "LAC"
+   },
+   {
+    "pick": 3,
+    "club": "CHI"
+   },
+   {
+    "pick": 4,
+    "club": "CHA",
+    "note": "fixed expansion slot, not drawn"
+   },
+   {
+    "pick": 5,
+    "club": "WAS"
+   },
+   {
+    "pick": 6,
+    "club": "ATL"
+   },
+   {
+    "pick": 7,
+    "club": "PHO"
+   },
+   {
+    "pick": 8,
+    "club": "TOR"
+   },
+   {
+    "pick": 9,
+    "club": "PHI"
+   },
+   {
+    "pick": 10,
+    "club": "CLE"
+   },
+   {
+    "pick": 11,
+    "club": "GSW"
+   },
+   {
+    "pick": 12,
+    "club": "SEA"
+   },
+   {
+    "pick": 13,
+    "club": "POR"
+   },
+   {
+    "pick": 14,
+    "club": "UTA"
+   }
+  ],
+  "draft_order_status": "Picks 1-3 sourced (Wikipedia: ORL won, LAC second, CHI third). Picks 5-14 derived: original owners of those slots per the Wikipedia/BBR draft table, none of which carries a pre-draft pick trade.",
+  "pre_lottery_odds_by_team": {
+   "value": null,
+   "status": "unverified",
+   "note": "Only Orlando's 25% is sourced."
+  }
+ },
+ "picks": [
+  {
+   "overall": 1,
+   "round": 1,
+   "selecting_club": "ORL",
+   "original_owner": "ORL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Dwight Howard",
+   "bbr_id": "howardw01",
+   "position": "C/PF",
+   "college_or_club": "Southwest Atlanta Christian Academy (HS, Atlanta)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "ORL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 2,
+   "round": 1,
+   "selecting_club": "CHA",
+   "original_owner": "LAC",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "Pre-draft trade June 21, 2004: Clippers sent No. 2 to Charlotte for Nos. 4 and 33; Charlotte agreed to take Predrag Drobnjak from the Clippers in the expansion draft.",
+   "player": "Emeka Okafor",
+   "bbr_id": "okafoem01",
+   "position": "PF/C",
+   "college_or_club": "Connecticut (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "CHA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 3,
+   "round": 1,
+   "selecting_club": "CHI",
+   "original_owner": "CHI",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Ben Gordon",
+   "bbr_id": "gordobe01",
+   "position": "SG",
+   "college_or_club": "Connecticut (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "CHI",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 4,
+   "round": 1,
+   "selecting_club": "LAC",
+   "original_owner": "CHA",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "Charlotte expansion pick, sent to LAC in the June 21, 2004 trade for No. 2.",
+   "player": "Shaun Livingston",
+   "bbr_id": "livinsh01",
+   "position": "PG",
+   "college_or_club": "Peoria HS (Peoria, Illinois)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "LAC",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 5,
+   "round": 1,
+   "selecting_club": "WAS",
+   "original_owner": "WAS",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Devin Harris",
+   "bbr_id": "harride01",
+   "position": "PG",
+   "college_or_club": "Wisconsin (Jr.)",
+   "draft_night_rights_move": {
+    "to_club": "DAL",
+    "note": "Draft day: Wizards traded Harris's rights with Christian Laettner and Jerry Stackhouse to Dallas for Antawn Jamison and cash.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "DAL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 6,
+   "round": 1,
+   "selecting_club": "ATL",
+   "original_owner": "ATL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Josh Childress",
+   "bbr_id": "childjo01",
+   "position": "G/F",
+   "college_or_club": "Stanford (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "ATL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 7,
+   "round": 1,
+   "selecting_club": "PHO",
+   "original_owner": "PHO",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Luol Deng",
+   "bbr_id": "denglu01",
+   "position": "SF",
+   "college_or_club": "Duke (Fr.)",
+   "draft_night_rights_move": {
+    "to_club": "CHI",
+    "note": "Draft day: Suns traded No. 7 to Chicago for No. 31 and $3 million cash (AP, June 24, 2004).",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "CHI",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 8,
+   "round": 1,
+   "selecting_club": "TOR",
+   "original_owner": "TOR",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Rafael Araujo",
+   "bbr_id": "araujra01",
+   "position": "C",
+   "college_or_club": "BYU (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "TOR",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 9,
+   "round": 1,
+   "selecting_club": "PHI",
+   "original_owner": "PHI",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Andre Iguodala",
+   "bbr_id": "iguodan01",
+   "position": "SF",
+   "college_or_club": "Arizona (So.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "PHI",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 10,
+   "round": 1,
+   "selecting_club": "CLE",
+   "original_owner": "CLE",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Luke Jackson",
+   "bbr_id": "jackslu02",
+   "position": "SF",
+   "college_or_club": "Oregon (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "CLE",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 11,
+   "round": 1,
+   "selecting_club": "GSW",
+   "original_owner": "GSW",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Andris Biedrins",
+   "bbr_id": "biedran01",
+   "position": "C",
+   "college_or_club": "Skonto (Latvia)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "GSW",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 12,
+   "round": 1,
+   "selecting_club": "SEA",
+   "original_owner": "SEA",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Robert Swift",
+   "bbr_id": "swiftro01",
+   "position": "C",
+   "college_or_club": "Bakersfield HS (California)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "SEA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 13,
+   "round": 1,
+   "selecting_club": "POR",
+   "original_owner": "POR",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Sebastian Telfair",
+   "bbr_id": "telfase01",
+   "position": "PG",
+   "college_or_club": "Lincoln HS (Brooklyn, New York)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "POR",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 14,
+   "round": 1,
+   "selecting_club": "UTA",
+   "original_owner": "UTA",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Kris Humphries",
+   "bbr_id": "humphkr01",
+   "position": "PF",
+   "college_or_club": "Minnesota (Fr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "UTA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 15,
+   "round": 1,
+   "selecting_club": "BOS",
+   "original_owner": "BOS",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Al Jefferson",
+   "bbr_id": "jeffeal01",
+   "position": "PF/C",
+   "college_or_club": "Prentiss HS (Mississippi)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "BOS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 16,
+   "round": 1,
+   "selecting_club": "UTA",
+   "original_owner": "NYK",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "NYK -> PHO in the Stephon Marbury trade (Jan 5, 2004); PHO -> UTA in the Keon Clark/Tom Gugliotta trade (Feb 19, 2004).",
+   "player": "Kirk Snyder",
+   "bbr_id": "snydeki01",
+   "position": "SG",
+   "college_or_club": "Nevada (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "UTA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 17,
+   "round": 1,
+   "selecting_club": "ATL",
+   "original_owner": "MIL",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "MIL -> DEN (Oct 22, 2001, Scott Williams trade); DEN -> DET (Oct 1, 2002, Rodney White trade); DET -> ATL (Feb 2004 Rasheed Wallace three-team trade).",
+   "player": "Josh Smith",
+   "bbr_id": "smithjo03",
+   "position": "SF",
+   "college_or_club": "Oak Hill Academy (Virginia)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "ATL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 18,
+   "round": 1,
+   "selecting_club": "NOH",
+   "original_owner": "NOH",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "J.R. Smith",
+   "bbr_id": "smithjr01",
+   "position": "SG",
+   "college_or_club": "St. Benedict's Prep (Newark, New Jersey)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "NOH",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 19,
+   "round": 1,
+   "selecting_club": "MIA",
+   "original_owner": "MIA",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Dorell Wright",
+   "bbr_id": "wrighdo01",
+   "position": "SF",
+   "college_or_club": "South Kent School (Connecticut)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "MIA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 20,
+   "round": 1,
+   "selecting_club": "DEN",
+   "original_owner": "DEN",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Jameer Nelson",
+   "bbr_id": "nelsoja01",
+   "position": "PG",
+   "college_or_club": "Saint Joseph's (Sr.)",
+   "draft_night_rights_move": {
+    "to_club": "ORL",
+    "note": "Draft day: Nuggets traded Nelson's rights to Orlando for a future first-round pick.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "ORL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 21,
+   "round": 1,
+   "selecting_club": "UTA",
+   "original_owner": "HOU",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "HOU -> UTA with Glen Rice for John Amaechi (Sept 30, 2003).",
+   "player": "Pavel Podkolzin",
+   "bbr_id": "podkopa01",
+   "position": "C",
+   "college_or_club": "Metis Varese (Italy)",
+   "draft_night_rights_move": {
+    "to_club": "DAL",
+    "note": "Draft day: Jazz traded Podkolzin's rights to Dallas for a future first-round pick.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "DAL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 22,
+   "round": 1,
+   "selecting_club": "NJN",
+   "original_owner": "NJN",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Viktor Khryapa",
+   "bbr_id": "khryavi01",
+   "position": "SF",
+   "college_or_club": "CSKA Moscow (Russia)",
+   "draft_night_rights_move": {
+    "to_club": "POR",
+    "note": "Draft day: Nets traded Khryapa's rights to Portland for Eddie Gill and cash.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "POR",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 23,
+   "round": 1,
+   "selecting_club": "POR",
+   "original_owner": "MEM",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "MEM -> POR with Wesley Person for Bonzi Wells (Dec 3, 2003).",
+   "player": "Sergei Monia",
+   "bbr_id": "moniase01",
+   "position": "SG",
+   "college_or_club": "CSKA Moscow (Russia)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "POR",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 24,
+   "round": 1,
+   "selecting_club": "BOS",
+   "original_owner": "DAL",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "DAL -> BOS in the Antoine Walker trade (Oct 20, 2003).",
+   "player": "Delonte West",
+   "bbr_id": "westde01",
+   "position": "PG",
+   "college_or_club": "Saint Joseph's (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "BOS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 25,
+   "round": 1,
+   "selecting_club": "BOS",
+   "original_owner": "DET",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "DET -> BOS in the Feb 2004 Rasheed Wallace three-team trade (Chucky Atkins, Lindsey Hunter).",
+   "player": "Tony Allen",
+   "bbr_id": "allento01",
+   "position": "SG",
+   "college_or_club": "Oklahoma State (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "BOS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 26,
+   "round": 1,
+   "selecting_club": "SAC",
+   "original_owner": "SAC",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Kevin Martin",
+   "bbr_id": "martike02",
+   "position": "SG",
+   "college_or_club": "Western Carolina (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "SAC",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 27,
+   "round": 1,
+   "selecting_club": "LAL",
+   "original_owner": "LAL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Sasha Vujacic",
+   "bbr_id": "vujacsa01",
+   "position": "SG",
+   "college_or_club": "Snaidero Udine (Italy)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "LAL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 28,
+   "round": 1,
+   "selecting_club": "SAS",
+   "original_owner": "SAS",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Beno Udrih",
+   "bbr_id": "udrihbe01",
+   "position": "PG",
+   "college_or_club": "Breil Milano (Italy)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "SAS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 29,
+   "round": 1,
+   "selecting_club": "IND",
+   "original_owner": "IND",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "David Harrison",
+   "bbr_id": "harrida01",
+   "position": "C",
+   "college_or_club": "Colorado (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "IND",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 30,
+   "round": 2,
+   "selecting_club": "ORL",
+   "original_owner": "ORL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Anderson Varejao",
+   "bbr_id": "varejan01",
+   "position": "C",
+   "college_or_club": "FC Barcelona (Spain)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "ORL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 31,
+   "round": 2,
+   "selecting_club": "CHI",
+   "original_owner": "CHI",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Jackson Vroman",
+   "bbr_id": "vromaja01",
+   "position": "C",
+   "college_or_club": "Iowa State (Sr.)",
+   "draft_night_rights_move": {
+    "to_club": "PHO",
+    "note": "Draft day: part of the No. 7 / No. 31 Suns-Bulls trade.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "PHO",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 32,
+   "round": 2,
+   "selecting_club": "WAS",
+   "original_owner": "WAS",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Peter John Ramos",
+   "bbr_id": "ramospe01",
+   "position": "C",
+   "college_or_club": "Caguas (Puerto Rico)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "WAS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 33,
+   "round": 2,
+   "selecting_club": "LAC",
+   "original_owner": "CHA",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "Charlotte expansion second-round pick, sent to LAC in the June 21, 2004 trade for No. 2.",
+   "player": "Lionel Chalmers",
+   "bbr_id": "chalmli01",
+   "position": "PG",
+   "college_or_club": "Xavier (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "LAC",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 34,
+   "round": 2,
+   "selecting_club": "ATL",
+   "original_owner": "ATL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Donta Smith",
+   "bbr_id": "smithdo04",
+   "position": "SF",
+   "college_or_club": "Southeastern Illinois College (So.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "ATL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 35,
+   "round": 2,
+   "selecting_club": "SEA",
+   "original_owner": "LAC",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "LAC -> SEA for Predrag Drobnjak (Sept 29, 2003).",
+   "player": "Andre Emmett",
+   "bbr_id": "emmetan01",
+   "position": "F/G",
+   "college_or_club": "Texas Tech (Sr.)",
+   "draft_night_rights_move": {
+    "to_club": "MEM",
+    "note": "Draft day: Sonics traded the pick to Memphis for a 2005 second-round pick and cash (per AP, July 7, 2004).",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "MEM",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 36,
+   "round": 2,
+   "selecting_club": "ORL",
+   "original_owner": "PHO",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "PHO -> ORL for Donnell Harvey (Dec 23, 2003).",
+   "player": "Antonio Burks",
+   "bbr_id": "burksan01",
+   "position": "PG",
+   "college_or_club": "Memphis (Sr.)",
+   "draft_night_rights_move": {
+    "to_club": "MEM",
+    "note": "Draft day: Magic traded the pick to Memphis for cash (per AP, July 7, 2004).",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "MEM",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 37,
+   "round": 2,
+   "selecting_club": "ATL",
+   "original_owner": "PHI",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "PHI -> ATL for Efthimios Rentzias rights (June 26, 2002).",
+   "player": "Royal Ivey",
+   "bbr_id": "iveyro01",
+   "position": "PG",
+   "college_or_club": "Texas (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "ATL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 38,
+   "round": 2,
+   "selecting_club": "CHI",
+   "original_owner": "TOR",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "TOR -> CHI for a 2003 second-round pick (June 26, 2003).",
+   "player": "Chris Duhon",
+   "bbr_id": "duhonch01",
+   "position": "PG",
+   "college_or_club": "Duke (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "CHI",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 39,
+   "round": 2,
+   "selecting_club": "TOR",
+   "original_owner": "CLE",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "CLE -> TOR with Lamond Murray (Sept 2002).",
+   "player": "Albert Miralles",
+   "bbr_id": "miralal01",
+   "position": "PF",
+   "college_or_club": "Roseto Basket (Italy)",
+   "draft_night_rights_move": {
+    "to_club": "MIA",
+    "note": "Draft day: Raptors traded Miralles's rights to Miami for the rights to Pape Sow (No. 47) and a 2005 second-round pick.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "MIA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 40,
+   "round": 2,
+   "selecting_club": "BOS",
+   "original_owner": "BOS",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Justin Reed",
+   "bbr_id": "reedju01",
+   "position": "SF",
+   "college_or_club": "Mississippi (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "BOS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 41,
+   "round": 2,
+   "selecting_club": "SEA",
+   "original_owner": "SEA",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "David Young",
+   "bbr_id": "youngda02",
+   "position": "G",
+   "college_or_club": "North Carolina Central (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "SEA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 42,
+   "round": 2,
+   "selecting_club": "ATL",
+   "original_owner": "GSW",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "GSW -> PHI (June 26, 2002); PHI -> ORL (Dec 23, 2003, Monty Williams); ORL -> ATL (date as given by source is inconsistent; see notes).",
+   "player": "Viktor Sanikidze",
+   "bbr_id": "sanikvi01",
+   "position": "SF",
+   "college_or_club": "Dijon (France)",
+   "draft_night_rights_move": {
+    "to_club": "SAS",
+    "note": "Draft day: Hawks traded Sanikidze's rights to San Antonio for a future second-round pick and cash.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "SAS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 43,
+   "round": 2,
+   "selecting_club": "NYK",
+   "original_owner": "NYK",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Trevor Ariza",
+   "bbr_id": "arizatr01",
+   "position": "SF",
+   "college_or_club": "UCLA (Fr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "NYK",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 44,
+   "round": 2,
+   "selecting_club": "NOH",
+   "original_owner": "NOH",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Tim Pickett",
+   "bbr_id": "picketi02",
+   "position": "SG",
+   "college_or_club": "Florida State (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "NOH",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 45,
+   "round": 2,
+   "selecting_club": "CHA",
+   "original_owner": "MIL",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "MIL -> CHA for Zaza Pachulia (June 23, 2004, after the expansion draft).",
+   "player": "Bernard Robinson",
+   "bbr_id": "robinbe01",
+   "position": "SF",
+   "college_or_club": "Michigan (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "CHA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 46,
+   "round": 2,
+   "selecting_club": "POR",
+   "original_owner": "POR",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Ha Seung-Jin",
+   "bbr_id": "seungha01",
+   "position": "C",
+   "college_or_club": "Yonsei University (South Korea)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "POR",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 47,
+   "round": 2,
+   "selecting_club": "MIA",
+   "original_owner": "MIA",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Pape Sow",
+   "bbr_id": "sowpa01",
+   "position": "PF",
+   "college_or_club": "Cal State Fullerton (Sr.)",
+   "draft_night_rights_move": {
+    "to_club": "TOR",
+    "note": "Draft day: Miami traded Sow's rights and a 2005 second-round pick to Toronto for the rights to Albert Miralles (No. 39).",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "TOR",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 48,
+   "round": 2,
+   "selecting_club": "SAC",
+   "original_owner": "UTA",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "UTA -> SAC in the Keon Clark trade (Aug 5, 2003).",
+   "player": "Ricky Minard",
+   "bbr_id": "minarri01",
+   "position": "SG",
+   "college_or_club": "Morehead State (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "SAC",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 49,
+   "round": 2,
+   "selecting_club": "MEM",
+   "original_owner": "DEN",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "DEN -> ORL (Aug 1, 2002, Don Reid); ORL -> MEM (Feb 19, 2003, Mike Miller trade).",
+   "player": "Sergei Lishchuk",
+   "bbr_id": "lishcse01",
+   "position": "PF",
+   "college_or_club": "Khimik Yuzhny (Ukraine)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "MEM",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 50,
+   "round": 2,
+   "selecting_club": "DAL",
+   "original_owner": "HOU",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "HOU -> DEN (Dec 18, 2002 three-team trade); DEN -> DAL (June 26, 2003).",
+   "player": "Vassilis Spanoulis",
+   "bbr_id": "spanova01",
+   "position": "PG",
+   "college_or_club": "Maroussi (Greece)",
+   "draft_night_rights_move": {
+    "to_club": "HOU",
+    "note": "Draft day: Mavericks traded Spanoulis's rights to Houston for the rights to Luis Flores (No. 55) and cash.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "HOU",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 51,
+   "round": 2,
+   "selecting_club": "NJN",
+   "original_owner": "NJN",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Christian Drejer",
+   "bbr_id": "drejech01",
+   "position": "SF",
+   "college_or_club": "FC Barcelona (Spain); previously Florida",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "NJN",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 52,
+   "round": 2,
+   "selecting_club": "SAS",
+   "original_owner": "MEM",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "MEM -> SAS for Gordan Giricek rights (June 28, 2002).",
+   "player": "Romain Sato",
+   "bbr_id": "satoro01",
+   "position": "SG",
+   "college_or_club": "Xavier (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "SAS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 53,
+   "round": 2,
+   "selecting_club": "MIA",
+   "original_owner": "DAL",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "DAL -> MIA in the Tim Hardaway trade (Aug 22, 2001).",
+   "player": "Matt Freije",
+   "bbr_id": "freijma01",
+   "position": "SF",
+   "college_or_club": "Vanderbilt (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "MIA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 54,
+   "round": 2,
+   "selecting_club": "DET",
+   "original_owner": "DET",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Rickey Paulding",
+   "bbr_id": "pauldri01",
+   "position": "SG",
+   "college_or_club": "Missouri (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "DET",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 55,
+   "round": 2,
+   "selecting_club": "HOU",
+   "original_owner": "SAC",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "SAC -> UTA (Aug 5, 2003, Keon Clark trade); UTA -> HOU (Sept 30, 2003, Amaechi/Rice trade).",
+   "player": "Luis Flores",
+   "bbr_id": "florelu01",
+   "position": "PG",
+   "college_or_club": "Manhattan (Sr.)",
+   "draft_night_rights_move": {
+    "to_club": "DAL",
+    "note": "Draft day: Rockets traded Flores's rights and cash to Dallas for the rights to Vassilis Spanoulis (No. 50).",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "DAL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  },
+  {
+   "overall": 56,
+   "round": 2,
+   "selecting_club": "LAL",
+   "original_owner": "LAL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Marcus Douthit",
+   "bbr_id": "douthma01",
+   "position": "PF",
+   "college_or_club": "Providence (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "LAL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 57,
+   "round": 2,
+   "selecting_club": "SAS",
+   "original_owner": "SAS",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Sergei Karaulov",
+   "bbr_id": "karause01",
+   "position": "G",
+   "college_or_club": "Yakutsk (Russia)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "SAS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 58,
+   "round": 2,
+   "selecting_club": "MIN",
+   "original_owner": "MIN",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Blake Stepp",
+   "bbr_id": "steppbl01",
+   "position": "PG",
+   "college_or_club": "Gonzaga (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "MIN",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  },
+  {
+   "overall": 59,
+   "round": 2,
+   "selecting_club": "IND",
+   "original_owner": "IND",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Rashad Wright",
+   "bbr_id": "wrighra01",
+   "position": "G",
+   "college_or_club": "Georgia (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "IND",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table; treated as the club's own pick"
+  }
+ ],
+ "post_draft_rights_moves_not_draft_night": [
+  {
+   "overall": 30,
+   "player": "Anderson Varejao",
+   "date": "2004-07-23",
+   "from": "ORL",
+   "to": "CLE",
+   "note": "Rights traded with Drew Gooden and Steven Hunter to Cleveland for Tony Battie and two future second-round picks. Not a draft-night move; dated after June 24.",
+   "status": "sourced",
+   "source": "https://en.wikipedia.org/wiki/2004_NBA_draft"
+  },
+  {
+   "overall": 55,
+   "player": "Luis Flores",
+   "date": "2004-08-24",
+   "from": "DAL",
+   "to": "GSW",
+   "note": "Rights included in the Dallas-Golden State Erick Dampier trade. Not a draft-night move; dated after June 24.",
+   "status": "sourced",
+   "source": "https://en.wikipedia.org/wiki/2004_NBA_draft"
+  }
+ ],
+ "miami_summary": {
+  "value": "Miami picked No. 19 (Dorell Wright), No. 47 (Pape Sow) and No. 53 (Matt Freije, pick from Dallas); on draft day it sent Sow's rights and a 2005 second-rounder to Toronto for No. 39 Albert Miralles. In this repository's simulation real Miami transactions are not applied (AGENTS.md rule 1), so the caller must decide how simulated Miami's own 2004 picks are used.",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2004_NBA_draft",
+   "https://www.basketball-reference.com/draft/NBA_2004.html"
+  ]
+ },
+ "researched_on": "2026-10-05",
+ "sources": [
+  {
+   "url": "https://www.basketball-reference.com/draft/NBA_2004.html",
+   "use": "2004 draft pick order, drafting club, bbr_id, college (retrieved 2026-10-05)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2004_NBA_draft",
+   "use": "draft date/location, lottery date and top-3 result, positions, schools, pick provenance and draft-day trades (with its cited NBA.com/ESPN/AP/USA Today references)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft",
+   "use": "expansion draft date, 19 selections, previous clubs, RFA markers, linked deals"
+  },
+  {
+   "url": "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+   "use": "expansion selections and bbr_ids"
+  },
+  {
+   "url": "https://www.espn.com/nba/story/_/id/1826536",
+   "use": "AP, June 22, 2004: expansion draft report (19 picks, 9 RFAs, Jahidi White deal, Pavlovic to Cleveland)"
+  },
+  {
+   "url": "http://www.cbafaq.com/salarycap99.htm",
+   "use": "Larry Coon's NBA Salary Cap FAQ, final 1999-CBA version (11/16/05): moratorium dates, cap table, minimum salaries, exceptions, expansion rules"
+  },
+  {
+   "url": "http://www.cbafaq.com/scale99.htm",
+   "use": "Larry Coon, 1999-CBA rookie scale tables incl. 2004-05"
+  },
+  {
+   "url": "https://espn.com/espn/wire?id=1839377&section=nba",
+   "use": "SportsTicker via ESPN, July 13, 2004: 2004-05 cap, tax, floor, Charlotte cap, MLE, $1M exception, rookie minimum; moratorium ends July 14"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2004_NBA_Finals",
+   "use": "Finals dates June 6-15, 2004"
+  },
+  {
+   "url": "https://www.basketball-reference.com/leagues/NBA_2005_games.html",
+   "use": "2004-05 opening night Nov 2, 2004"
+  },
+  {
+   "url": "https://www.basketball-reference.com/leagues/NBA_2005_standings.html",
+   "use": "2004-05 division membership"
+  },
+  {
+   "url": "https://www.spotrac.com/nba/cba/tax",
+   "use": "secondary: exact tax threshold figure"
+  }
+ ],
+ "notes": [
+  "HINDSIGHT WARNING: the ESPN cap story (July 13, 2004) mentions a reported Shaquille O'Neal trade to Miami. That is a real Miami transaction and, per AGENTS.md, must not be applied or leaked into the simulation. Only the cap figures from that article were taken.",
+  "HINDSIGHT WARNING: tax-not-triggered for 2004-05 and BRI/escrow outcomes in the cbafaq FAQ are season results; do not use before they would be known.",
+  "Several Wikipedia source rows include later-career honors (All-Star, ROY, etc.); these were deliberately omitted.",
+  "Draft-night rights moves: 5 WAS->DAL, 7 PHO->CHI, 20 DEN->ORL, 21 UTA->DAL, 22 NJN->POR, 31 CHI->PHO, 35 SEA->MEM, 36 ORL->MEM, 39 TOR->MIA, 42 ATL->SAS, 47 MIA->TOR, 50 DAL->HOU, 55 HOU->DAL. For 35 and 36 the only cited source is an AP item dated July 7, 2004 stating the deals were on draft day.",
+  "Pre-draft trades of the No. 2 (June 21) and No. 45 (June 23) picks mean Charlotte itself made both selections; BBR and Wikipedia agree.",
+  "Pick 42 provenance: Wikipedia footnote says Orlando sent it to Atlanta for Anthony Johnson on Feb 24, 2000, which precedes Orlando's Dec 2003 acquisition; the chain is internally inconsistent and the ORL->ATL date is unverified.",
+  "Pick 17 provenance: the DET->ATL leg is from the Feb 2004 Rasheed Wallace three-team deal; Wikipedia's footnote dates its announcement Feb 19, 2004.",
+  "Picks 1-29 positions and schools are from Wikipedia; BBR does not list positions on its draft page.",
+  "Rookie scale pick 6 year-1 printed as '$2.075,300' at the source; recorded as 2,075,300.",
+  "All bbr_ids are as linked from basketball-reference.com's 2004 draft and 2004 expansion draft pages; none were guessed. BBR's draft page also links ids for picks who never played in the NBA.",
+  "web.archive.org was unreachable from this environment, so archived NBA.com press releases (expansion selection order, lottery release) could not be read directly."
+ ]
+}

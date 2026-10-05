@@ -80,7 +80,7 @@ class LeagueTradeDesk:
         v = self.assets.player_value(entry, for_club=club)
         # The whole contract: salary over his worth in every remaining season, not only the three the shared value
         # counts, weighted by the club's cash weight (a rebuilder guards its flexibility).
-        worth = self.assets.valuation.comparables_price(self.assets.form_value(bbr)) if self.assets.form_value(bbr) is not None \
+        worth = self.assets.valuation.market_price(self.assets.form_value(bbr), bbr) if self.assets.form_value(bbr) is not None \
             else self.assets.valuation.minimum(0)
         seasons = [int(x) for season_, x in entry["schedule"].items() if season_ >= SEASON and x]
         burden = sum(max(0, x - worth) for x in seasons) / self.assets.valuation.mid_level * 0.5

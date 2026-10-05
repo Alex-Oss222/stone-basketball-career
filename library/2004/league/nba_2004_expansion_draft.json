@@ -1,0 +1,402 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "expansion_draft",
+ "season": "2004",
+ "purpose": "The Charlotte Bobcats expansion draft (June 22, 2004): rules, selections and linked deals as world data. Miami's own protected list is a simulated decision; a real selection from Miami applies only if simulated Miami exposes that player.",
+ "available_from": "2004-06-22",
+ "date": {
+  "value": "2004-06-22",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft",
+   "https://www.espn.com/nba/story/_/id/1826536",
+   "http://www.cbafaq.com/salarycap99.htm"
+  ]
+ },
+ "rules": {
+  "protect_per_club": {
+   "value": 8,
+   "note": "Each existing club could protect up to eight players (including restricted free agents) and had to expose at least one player who could not become a free agent through an option/ETO.",
+   "status": "sourced",
+   "sources": [
+    "http://www.cbafaq.com/salarycap99.htm"
+   ]
+  },
+  "selections_min_max": {
+   "value": "Charlotte had to take 14 to 29 players, no more than one from any club; it stopped at 19.",
+   "status": "sourced",
+   "sources": [
+    "http://www.cbafaq.com/salarycap99.htm",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  "unrestricted_free_agents": {
+   "value": "Could be neither protected nor selected.",
+   "status": "sourced",
+   "sources": [
+    "http://www.cbafaq.com/salarycap99.htm"
+   ]
+  },
+  "restricted_free_agents": {
+   "value": "Could be selected; on selection they became unrestricted free agents and could not re-sign with the club that exposed them. Nine of the 19 picks were RFAs.",
+   "status": "sourced",
+   "sources": [
+    "http://www.cbafaq.com/salarycap99.htm",
+    "https://www.espn.com/nba/story/_/id/1826536"
+   ]
+  },
+  "option_status": {
+   "value": "A player's status on expansion-draft day governs; a selected player who later invokes an option/ETO can become a free agent.",
+   "status": "sourced",
+   "sources": [
+    "http://www.cbafaq.com/salarycap99.htm"
+   ]
+  },
+  "losing_club_trade_exception": {
+   "value": "A club losing a player receives a trade exception equal to his salary.",
+   "status": "sourced",
+   "sources": [
+    "http://www.cbafaq.com/salarycap99.htm"
+   ]
+  },
+  "charlotte_cap": {
+   "value": "Expansion cap 2/3 of league cap in year one (2004-05: $29,250,000), 3/4 in year two; expansion minimum salaries 3/4 of league minimums for two seasons; a player taken and waived before opening day does not count against Charlotte's cap.",
+   "status": "sourced",
+   "sources": [
+    "http://www.cbafaq.com/salarycap99.htm",
+    "https://espn.com/espn/wire?id=1839377&section=nba"
+   ]
+  },
+  "charlotte_draft_position": {
+   "value": "No. 4 in both rounds of the 2004 draft; no restriction in later drafts.",
+   "status": "sourced",
+   "sources": [
+    "http://www.cbafaq.com/salarycap99.htm",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  }
+ },
+ "selection_order": {
+  "value": null,
+  "status": "unverified",
+  "note": "Pick-by-pick order not found in accessible sources (BBR lists the 19 without pick numbers; archived NBA.com release unreachable). Listed alphabetically."
+ },
+ "selections": [
+  {
+   "player": "Lonny Baxter",
+   "from_club": "WAS",
+   "bbr_id": "baxtelo01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "J.R. Bremer",
+   "from_club": "GSW",
+   "bbr_id": "bremejr01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Primoz Brezec",
+   "from_club": "IND",
+   "bbr_id": "brezepr01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Maurice Carter",
+   "from_club": "NOH",
+   "bbr_id": "cartema01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Predrag Drobnjak",
+   "from_club": "LAC",
+   "bbr_id": "drobnpr01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Desmond Ferguson",
+   "from_club": "POR",
+   "bbr_id": "fergude01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Marcus Fizer",
+   "from_club": "CHI",
+   "bbr_id": "fizerma01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Richie Frahm",
+   "from_club": "SEA",
+   "bbr_id": "frahmri01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Brandon Hunter",
+   "from_club": "BOS",
+   "bbr_id": "huntebr01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Jason Kapono",
+   "from_club": "CLE",
+   "bbr_id": "kaponja01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Zaza Pachulia",
+   "from_club": "ORL",
+   "bbr_id": "pachuza01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Sasha (Aleksandar) Pavlovic",
+   "from_club": "UTA",
+   "bbr_id": "pavloal01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Jamal Sampson",
+   "from_club": "LAL",
+   "bbr_id": "sampsja01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Tamar Slay",
+   "from_club": "NJN",
+   "bbr_id": "slayta01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Theron Smith",
+   "from_club": "MEM",
+   "bbr_id": "smithth01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Jeff Trepagnier",
+   "from_club": "DEN",
+   "bbr_id": "trepaje01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Gerald Wallace",
+   "from_club": "SAC",
+   "bbr_id": "wallage01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Jahidi White",
+   "from_club": "PHO",
+   "bbr_id": "whiteja01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "player": "Loren Woods",
+   "from_club": "MIA",
+   "bbr_id": "woodslo01",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  }
+ ],
+ "restricted_free_agents_selected": {
+  "value": [
+   "Lonny Baxter",
+   "J.R. Bremer",
+   "Maurice Carter",
+   "Desmond Ferguson",
+   "Marcus Fizer",
+   "Richie Frahm",
+   "Tamar Slay",
+   "Jeff Trepagnier",
+   "Loren Woods"
+  ],
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft",
+   "https://www.espn.com/nba/story/_/id/1826536"
+  ],
+  "note": "Wikipedia footnote marks these nine; ESPN/AP confirms nine RFAs. They became unrestricted free agents on July 1, 2004 and could not re-sign with the exposing club."
+ },
+ "linked_deals": [
+  {
+   "date": "2004-06-21",
+   "value": "LAC sent No. 2 to CHA for Nos. 4 and 33; CHA agreed to select Predrag Drobnjak from LAC.",
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2004_NBA_draft",
+    "https://web.archive.org/web/20110523062408/http://www.usatoday.com/sports/basketball/draft/2004-06-21-draft-roundup_x.htm"
+   ]
+  },
+  {
+   "date": "2004-06-22",
+   "value": "PHO gave CHA $3 million and a future first-round pick to select Jahidi White.",
+   "status": "sourced",
+   "sources": [
+    "https://www.espn.com/nba/story/_/id/1826536",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "date": "2004-06-22",
+   "value": "CHA selected Aleksandar Pavlovic (UTA) to be dealt to CLE for a future (lottery-protected) first-round pick; trade announced June 23.",
+   "status": "sourced",
+   "sources": [
+    "https://www.espn.com/nba/story/_/id/1826536",
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft"
+   ]
+  },
+  {
+   "date": "2004-06-23",
+   "value": "CHA traded Zaza Pachulia to MIL for No. 45 (Bernard Robinson).",
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft",
+    "https://en.wikipedia.org/wiki/2004_NBA_draft"
+   ]
+  }
+ ],
+ "miami_exposure": {
+  "value": "Charlotte selected Loren Woods (a restricted free agent) from Miami; real Miami's protected list is not established here. In the simulation Miami's roster is simulated, so whether Woods was even on simulated Miami's register on June 22, 2004 must be checked against the career records.",
+  "status": "derived"
+ },
+ "researched_on": "2026-10-05",
+ "sources": [
+  {
+   "url": "https://www.basketball-reference.com/draft/NBA_2004.html",
+   "use": "2004 draft pick order, drafting club, bbr_id, college (retrieved 2026-10-05)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2004_NBA_draft",
+   "use": "draft date/location, lottery date and top-3 result, positions, schools, pick provenance and draft-day trades (with its cited NBA.com/ESPN/AP/USA Today references)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2004_NBA_expansion_draft",
+   "use": "expansion draft date, 19 selections, previous clubs, RFA markers, linked deals"
+  },
+  {
+   "url": "https://www.basketball-reference.com/draft/NBA_2004_expansion.html",
+   "use": "expansion selections and bbr_ids"
+  },
+  {
+   "url": "https://www.espn.com/nba/story/_/id/1826536",
+   "use": "AP, June 22, 2004: expansion draft report (19 picks, 9 RFAs, Jahidi White deal, Pavlovic to Cleveland)"
+  },
+  {
+   "url": "http://www.cbafaq.com/salarycap99.htm",
+   "use": "Larry Coon's NBA Salary Cap FAQ, final 1999-CBA version (11/16/05): moratorium dates, cap table, minimum salaries, exceptions, expansion rules"
+  },
+  {
+   "url": "http://www.cbafaq.com/scale99.htm",
+   "use": "Larry Coon, 1999-CBA rookie scale tables incl. 2004-05"
+  },
+  {
+   "url": "https://espn.com/espn/wire?id=1839377&section=nba",
+   "use": "SportsTicker via ESPN, July 13, 2004: 2004-05 cap, tax, floor, Charlotte cap, MLE, $1M exception, rookie minimum; moratorium ends July 14"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2004_NBA_Finals",
+   "use": "Finals dates June 6-15, 2004"
+  },
+  {
+   "url": "https://www.basketball-reference.com/leagues/NBA_2005_games.html",
+   "use": "2004-05 opening night Nov 2, 2004"
+  },
+  {
+   "url": "https://www.basketball-reference.com/leagues/NBA_2005_standings.html",
+   "use": "2004-05 division membership"
+  },
+  {
+   "url": "https://www.spotrac.com/nba/cba/tax",
+   "use": "secondary: exact tax threshold figure"
+  }
+ ],
+ "notes": [
+  "HINDSIGHT WARNING: the ESPN cap story (July 13, 2004) mentions a reported Shaquille O'Neal trade to Miami. That is a real Miami transaction and, per AGENTS.md, must not be applied or leaked into the simulation. Only the cap figures from that article were taken.",
+  "HINDSIGHT WARNING: tax-not-triggered for 2004-05 and BRI/escrow outcomes in the cbafaq FAQ are season results; do not use before they would be known.",
+  "Several Wikipedia source rows include later-career honors (All-Star, ROY, etc.); these were deliberately omitted.",
+  "Draft-night rights moves: 5 WAS->DAL, 7 PHO->CHI, 20 DEN->ORL, 21 UTA->DAL, 22 NJN->POR, 31 CHI->PHO, 35 SEA->MEM, 36 ORL->MEM, 39 TOR->MIA, 42 ATL->SAS, 47 MIA->TOR, 50 DAL->HOU, 55 HOU->DAL. For 35 and 36 the only cited source is an AP item dated July 7, 2004 stating the deals were on draft day.",
+  "Pre-draft trades of the No. 2 (June 21) and No. 45 (June 23) picks mean Charlotte itself made both selections; BBR and Wikipedia agree.",
+  "Pick 42 provenance: Wikipedia footnote says Orlando sent it to Atlanta for Anthony Johnson on Feb 24, 2000, which precedes Orlando's Dec 2003 acquisition; the chain is internally inconsistent and the ORL->ATL date is unverified.",
+  "Pick 17 provenance: the DET->ATL leg is from the Feb 2004 Rasheed Wallace three-team deal; Wikipedia's footnote dates its announcement Feb 19, 2004.",
+  "Picks 1-29 positions and schools are from Wikipedia; BBR does not list positions on its draft page.",
+  "Rookie scale pick 6 year-1 printed as '$2.075,300' at the source; recorded as 2,075,300.",
+  "All bbr_ids are as linked from basketball-reference.com's 2004 draft and 2004 expansion draft pages; none were guessed. BBR's draft page also links ids for picks who never played in the NBA.",
+  "web.archive.org was unreachable from this environment, so archived NBA.com press releases (expansion selection order, lottery release) could not be read directly."
+ ]
+}
