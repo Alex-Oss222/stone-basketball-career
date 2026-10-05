@@ -37,24 +37,24 @@ EAST
   (1) Indiana Pacers           2
   (8) New Orleans Hornets      0
   (4) Miami Heat               0
-  (5) Milwaukee Bucks          1
+  (5) Milwaukee Bucks          2
         conference semifinal: winners meet
   (3) Detroit Pistons          1
-  (6) Toronto Raptors          0
+  (6) Toronto Raptors          1
   (2) New Jersey Nets          2
   (7) Atlanta Hawks            0
         conference semifinal: winners meet
     conference final, then the NBA Finals
 
 WEST
-  (1) Minnesota Timberwolves   1
+  (1) Minnesota Timberwolves   2
   (8) Memphis Grizzlies        0
   (4) Dallas Mavericks         2
   (5) Denver Nuggets           0
         conference semifinal: winners meet
   (3) San Antonio Spurs        2
   (6) Golden State Warriors    0
-  (2) Sacramento Kings         0
+  (2) Sacramento Kings         1
   (7) Los Angeles Lakers       1
         conference semifinal: winners meet
     conference final, then the NBA Finals
@@ -79,12 +79,12 @@ Home court: Indiana Pacers. Series Indiana Pacers 2, New Orleans Hornets 0.
 
 ### East: (4) Miami Heat vs (5) Milwaukee Bucks
 
-Home court: Miami Heat. Series Miami Heat 0, Milwaukee Bucks 1.
+Home court: Miami Heat. Series Miami Heat 0, Milwaukee Bucks 2.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 18 | Miami Heat | Milwaukee Bucks | Milwaukee Bucks 109, Miami Heat 91 |
-| 2 | Wed Apr 21 | Miami Heat | Milwaukee Bucks |  |
+| 2 | Wed Apr 21 | Miami Heat | Milwaukee Bucks | Milwaukee Bucks 105, Miami Heat 95 |
 | 3 | Sat Apr 24 | Milwaukee Bucks | Miami Heat |  |
 | 4 | Mon Apr 26 | Milwaukee Bucks | Miami Heat |  |
 | 5 | Wed Apr 28 | Miami Heat | Milwaukee Bucks | if needed |
@@ -93,12 +93,12 @@ Home court: Miami Heat. Series Miami Heat 0, Milwaukee Bucks 1.
 
 ### East: (3) Detroit Pistons vs (6) Toronto Raptors
 
-Home court: Detroit Pistons. Series Detroit Pistons 1, Toronto Raptors 0.
+Home court: Detroit Pistons. Series Detroit Pistons 1, Toronto Raptors 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 18 | Detroit Pistons | Toronto Raptors | Toronto Raptors 73, Detroit Pistons 96 |
-| 2 | Wed Apr 21 | Detroit Pistons | Toronto Raptors |  |
+| 2 | Wed Apr 21 | Detroit Pistons | Toronto Raptors | Toronto Raptors 94, Detroit Pistons 87 |
 | 3 | Sat Apr 24 | Toronto Raptors | Detroit Pistons |  |
 | 4 | Mon Apr 26 | Toronto Raptors | Detroit Pistons |  |
 | 5 | Wed Apr 28 | Detroit Pistons | Toronto Raptors | if needed |
@@ -121,12 +121,12 @@ Home court: New Jersey Nets. Series New Jersey Nets 2, Atlanta Hawks 0.
 
 ### West: (1) Minnesota Timberwolves vs (8) Memphis Grizzlies
 
-Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 1, Memphis Grizzlies 0.
+Home court: Minnesota Timberwolves. Series Minnesota Timberwolves 2, Memphis Grizzlies 0.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 18 | Minnesota Timberwolves | Memphis Grizzlies | Memphis Grizzlies 79, Minnesota Timberwolves 91 |
-| 2 | Wed Apr 21 | Minnesota Timberwolves | Memphis Grizzlies |  |
+| 2 | Wed Apr 21 | Minnesota Timberwolves | Memphis Grizzlies | Memphis Grizzlies 88, Minnesota Timberwolves 103 |
 | 3 | Sat Apr 24 | Memphis Grizzlies | Minnesota Timberwolves |  |
 | 4 | Mon Apr 26 | Memphis Grizzlies | Minnesota Timberwolves |  |
 | 5 | Wed Apr 28 | Minnesota Timberwolves | Memphis Grizzlies | if needed |
@@ -163,12 +163,12 @@ Home court: San Antonio Spurs. Series San Antonio Spurs 2, Golden State Warriors
 
 ### West: (2) Sacramento Kings vs (7) Los Angeles Lakers
 
-Home court: Sacramento Kings. Series Sacramento Kings 0, Los Angeles Lakers 1.
+Home court: Sacramento Kings. Series Sacramento Kings 1, Los Angeles Lakers 1.
 
 | Game | Date | Home | Away | Result |
 | ---: | --- | --- | --- | --- |
 | 1 | Sun Apr 18 | Sacramento Kings | Los Angeles Lakers | Los Angeles Lakers 131, Sacramento Kings 124 (1OT) |
-| 2 | Wed Apr 21 | Sacramento Kings | Los Angeles Lakers |  |
+| 2 | Wed Apr 21 | Sacramento Kings | Los Angeles Lakers | Los Angeles Lakers 79, Sacramento Kings 88 |
 | 3 | Sat Apr 24 | Los Angeles Lakers | Sacramento Kings |  |
 | 4 | Mon Apr 26 | Los Angeles Lakers | Sacramento Kings |  |
 | 5 | Wed Apr 28 | Sacramento Kings | Los Angeles Lakers | if needed |

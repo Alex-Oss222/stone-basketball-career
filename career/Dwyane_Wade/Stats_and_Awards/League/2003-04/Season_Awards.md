@@ -1,6 +1,6 @@
 # 2003-04 season awards
 
-Decided on each award's real announcement date from closed simulated results through 2004-04-14 (`runtime/season_awards.py`); no real 2004 vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2004-04-20.
+Decided on each award's real announcement date from closed simulated results through 2004-04-14 (`runtime/season_awards.py`); no real 2004 vote is used. Every voter in the real electorate files a ballot; voters differ only in how they weigh the award's two criteria. Through 2004-04-21.
 
 ## Calendar
 
@@ -8,7 +8,7 @@ Decided on each award's real announcement date from closed simulated results thr
 | --- | --- | --- | --- | --- |
 | 2004-04-19 | Defensive Player of the Year | 121 media | 5-3-1 | decided |
 | 2004-04-20 | Rookie of the Year | 118 media | 5-3-1 | decided |
-| 2004-04-21 | Coach of the Year | 122 media | 5-3-1 | pending |
+| 2004-04-21 | Coach of the Year | 122 media | 5-3-1 | decided |
 | 2004-04-22 | Most Improved Player | 121 media | 5-3-1 | pending |
 | 2004-04-23 | Sixth Man of the Year | 120 media | 5-3-1 | pending |
 | 2004-04-25 | All-NBA Teams | 123 media | 5-3-1 | pending |
@@ -39,3 +39,15 @@ Announced 2004-04-20; 118 media, ballot 5-3-1.
 | 3 | LeBron James | Cleveland Cavaliers | 79 | 39.5 | 20.6 | 5.0 | 5.4 | 1.2 | 0.6 | 12.49 | 222 | 0 |
 
 Complete tally: `season_awards.json` (3 receiving votes).
+
+## Coach of the Year
+
+Announced 2004-04-21; 122 media, ballot 5-3-1.
+
+| # | Coach | Club | Record | 2002-03 | Expected pct | Points | 1st |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| WINNER | Flip Saunders | Minnesota Timberwolves | 62-20 | 51-31 | 0.573 | 516 | 75 |
+| 2 | Jeff Bzdelik | Denver Nuggets | 48-34 | 17-65 | 0.324 | 388 | 47 |
+| 3 | Rick Carlisle | Indiana Pacers | 59-23 | 48-34 | 0.551 | 193 | 0 |
+
+Complete tally: `season_awards.json` (4 receiving votes).

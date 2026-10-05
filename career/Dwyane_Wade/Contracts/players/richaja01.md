@@ -2,9 +2,9 @@
 
 # Contract | Jason Richardson
 
-Known through: 2004-04-20. [Open interactive contract](richaja01.html#contract) · [Contract history](richaja01.html#contract-history)
+Known through: 2004-04-21. [Open interactive contract](richaja01.html#contract) · [Contract history](richaja01.html#contract-history)
 
-Jason Richardson: under rookie contract. Evidence cutoff: 2004-04-20.
+Jason Richardson: under rookie contract. Evidence cutoff: 2004-04-21.
 
 ## Current contract
 

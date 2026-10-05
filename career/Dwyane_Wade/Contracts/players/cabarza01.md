@@ -2,9 +2,9 @@
 
 # Contract | Zarko Cabarkapa
 
-Known through: 2004-04-20. [Open interactive contract](cabarza01.html#contract) · [Contract history](cabarza01.html#contract-history)
+Known through: 2004-04-21. [Open interactive contract](cabarza01.html#contract) · [Contract history](cabarza01.html#contract-history)
 
-Zarko Cabarkapa: No verified contract record. Evidence cutoff: 2004-04-20.
+Zarko Cabarkapa: No verified contract record. Evidence cutoff: 2004-04-21.
 
 ## Current contract
 

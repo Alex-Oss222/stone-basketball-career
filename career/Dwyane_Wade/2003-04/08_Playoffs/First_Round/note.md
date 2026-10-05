@@ -12,5 +12,6 @@ round: first_round
 ## Games and events
 
 - 2004-04-18: Milwaukee Bucks 109 at Miami Heat 91 — Miami Heat L 91-109 ([Game 1](Game_1.md), event `2004-04-18-milwaukee-bucks-at-miami-heat`)
+- 2004-04-21: Milwaukee Bucks 105 at Miami Heat 95 — Miami Heat L 95-105 ([Game 2](Game_2.md), event `2004-04-21-milwaukee-bucks-at-miami-heat`)
 
 ## Consequences

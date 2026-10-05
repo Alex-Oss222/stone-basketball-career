@@ -170,6 +170,97 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2003-04-coy",
+   "award": "coy",
+   "name": "Coach of the Year",
+   "announced_on": "2004-04-21",
+   "electorate": 122,
+   "voters": "media",
+   "ballot": [
+    5,
+    3,
+    1
+   ],
+   "lens": [
+    0.2,
+    0.5
+   ],
+   "evidence_through": "2004-04-14",
+   "winners": [
+    "Flip Saunders"
+   ],
+   "tally": [
+    {
+     "coach": "Flip Saunders",
+     "team": "Minnesota Timberwolves",
+     "wins": 62,
+     "losses": 20,
+     "pct": 0.756,
+     "prior": "51-31",
+     "expected_pct": 0.573,
+     "above_expected": 0.183,
+     "points": 516,
+     "first_place": 75,
+     "votes_by_place": [
+      75,
+      47,
+      0
+     ]
+    },
+    {
+     "coach": "Jeff Bzdelik",
+     "team": "Denver Nuggets",
+     "wins": 48,
+     "losses": 34,
+     "pct": 0.585,
+     "prior": "17-65",
+     "expected_pct": 0.324,
+     "above_expected": 0.261,
+     "points": 388,
+     "first_place": 47,
+     "votes_by_place": [
+      47,
+      39,
+      36
+     ]
+    },
+    {
+     "coach": "Rick Carlisle",
+     "team": "Indiana Pacers",
+     "wins": 59,
+     "losses": 23,
+     "pct": 0.72,
+     "prior": "48-34",
+     "expected_pct": 0.551,
+     "above_expected": 0.168,
+     "points": 193,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      36,
+      85
+     ]
+    },
+    {
+     "coach": "Erik Spoelstra",
+     "team": "Miami Heat",
+     "wins": 48,
+     "losses": 34,
+     "pct": 0.585,
+     "prior": "25-57",
+     "expected_pct": 0.383,
+     "above_expected": 0.202,
+     "points": 1,
+     "first_place": 0,
+     "votes_by_place": [
+      0,
+      0,
+      1
+     ]
+    }
+   ]
   }
  ]
 }
