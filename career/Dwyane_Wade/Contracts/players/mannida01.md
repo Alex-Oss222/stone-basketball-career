@@ -2,9 +2,9 @@
 
 # Contract | Danny Manning
 
-Known through: 2004-04-05. [Open interactive contract](mannida01.html#contract) · [Contract history](mannida01.html#contract-history)
+Known through: 2004-04-11. [Open interactive contract](mannida01.html#contract) · [Contract history](mannida01.html#contract-history)
 
-Danny Manning: retired (researched, 2003-09-12). Evidence cutoff: 2004-04-05.
+Danny Manning: retired (researched, 2003-09-12). Evidence cutoff: 2004-04-11.
 
 ## Current contract
 

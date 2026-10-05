@@ -2,9 +2,9 @@
 
 # Contract | Gary Payton
 
-Known through: 2004-04-05. [Open interactive contract](paytoga01.html#contract) · [Contract history](paytoga01.html#contract-history)
+Known through: 2004-04-11. [Open interactive contract](paytoga01.html#contract) · [Contract history](paytoga01.html#contract-history)
 
-Gary Payton: under contract. Evidence cutoff: 2004-04-05.
+Gary Payton: under contract. Evidence cutoff: 2004-04-11.
 
 ## Current contract
 

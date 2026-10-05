@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `pavloal01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-04-05 · **Club on this date:** Utah Jazz · **Basis:** under contract: on the Utah Jazz roster in a closed game on 2003-10-29; signing date not recorded · **League:** NBA  
+**Card date:** 2004-04-11 · **Club on this date:** Utah Jazz · **Basis:** under contract: on the Utah Jazz roster in a closed game on 2003-10-29; signing date not recorded · **League:** NBA  
 **Position:** SF (Small forward) · **Jersey:** #11 · **Born:** 1983-11-15 · **Age on card date:** 20  
 **Registry ID:** `pavloal01` · [Basketball-Reference page](https://www.basketball-reference.com/players/p/pavloal01.html) · ESPN ID 2172
 
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `pavloa
 
 ## Simulated statistics
 
-As of **2004-04-05**: 77 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-04-11**: 80 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04 regular season](../2003-04/League_Stats.md) | 20 | UTAH | NBA | SF | 72 | 0 | 13.4 | 1.8 | 4.1 | .448 | 0.3 | 0.7 | .396 | 1.6 | 3.4 | .459 | .483 | 1.0 | 1.2 | .822 | 0.7 | 1.4 | 2.1 | 0.9 | 0.4 | 0.2 | 0.9 | 1.7 | 5.0 | .536 | — |
+| [2003-04 regular season](../2003-04/League_Stats.md) | 20 | UTAH | NBA | SF | 75 | 0 | 13.5 | 1.8 | 4.1 | .444 | 0.3 | 0.7 | .389 | 1.5 | 3.4 | .456 | .479 | 1.0 | 1.2 | .815 | 0.7 | 1.4 | 2.1 | 0.9 | 0.5 | 0.2 | 0.9 | 1.7 | 4.9 | .531 | — |
 
 ### Month
 
@@ -47,7 +47,7 @@ As of **2004-04-05**: 77 closed games feed this card. Per-game columns use the r
 | [January 2004](../2003-04/01_January/League_Stats.md) | 20 | UTAH | NBA | SF | 16 | 0 | 12.7 | 1.4 | 3.4 | .426 | 0.2 | 0.8 | .231 | 1.2 | 2.6 | .488 | .454 | 0.9 | 1.1 | .833 | 0.8 | 0.9 | 1.7 | 0.8 | 0.6 | 0.1 | 0.6 | 1.8 | 4.0 | .517 | — |
 | [February 2004](../2003-04/02_February/League_Stats.md) | 20 | UTAH | NBA | SF | 13 | 0 | 13.0 | 2.1 | 4.4 | .474 | 0.2 | 0.5 | .429 | 1.8 | 3.8 | .480 | .500 | 1.1 | 1.1 | 1.000 | 0.3 | 1.7 | 2.0 | 0.8 | 0.3 | 0.2 | 0.3 | 1.7 | 5.5 | .562 | — |
 | [March 2004](../2003-04/03_March/League_Stats.md) | 20 | UTAH | NBA | SF | 13 | 0 | 13.0 | 2.2 | 4.3 | .500 | 0.2 | 0.7 | .333 | 1.9 | 3.6 | .532 | .527 | 0.8 | 1.2 | .688 | 0.8 | 1.6 | 2.5 | 0.8 | 0.2 | 0.2 | 0.6 | 1.5 | 5.4 | .555 | — |
-| [April 2004](../2003-04/04_April/League_Stats.md) | 20 | UTAH | NBA | SF | 2 | 0 | 16.1 | 1.5 | 3.0 | .500 | 0.5 | 1.0 | .500 | 1.0 | 2.0 | .500 | .583 | 1.0 | 1.0 | 1.000 | 2.0 | 1.5 | 3.5 | 0.0 | 1.0 | 0.0 | 0.5 | 2.0 | 4.5 | .654 | — |
+| [April 2004](../2003-04/04_April/League_Stats.md) | 20 | UTAH | NBA | SF | 5 | 0 | 15.4 | 1.2 | 3.0 | .400 | 0.2 | 0.6 | .333 | 1.0 | 2.4 | .417 | .433 | 0.6 | 0.8 | .750 | 1.2 | 2.2 | 3.4 | 0.6 | 1.4 | 0.2 | 0.8 | 1.4 | 3.2 | .477 | — |
 
 </details>
 
@@ -80,37 +80,37 @@ As of **2004-04-05**: 77 closed games feed this card. Per-game columns use the r
 | [March 2004 week 2 (08 to 14)](../2003-04/03_March/Week_2/League_Stats.md) | 20 | UTAH | NBA | SF | 3 | 0 | 9.5 | 3.0 | 3.7 | .818 | 0.0 | 0.0 | N/A | 3.0 | 3.7 | .818 | .818 | 0.7 | 1.3 | .500 | 0.3 | 1.3 | 1.7 | 0.7 | 0.3 | 0.0 | 0.3 | 1.0 | 6.7 | .784 | — |
 | [March 2004 week 3 (15 to 21)](../2003-04/03_March/Week_3/League_Stats.md) | 20 | UTAH | NBA | SF | 2 | 0 | 8.1 | 0.0 | 1.0 | .000 | 0.0 | 0.5 | .000 | 0.0 | 0.5 | .000 | .000 | 0.5 | 1.0 | .500 | 0.5 | 1.0 | 1.5 | 0.0 | 0.0 | 0.0 | 0.0 | 1.0 | 0.5 | .174 | — |
 | [March 2004 week 4 (22 to 31)](../2003-04/03_March/Week_4/League_Stats.md) | 20 | UTAH | NBA | SF | 5 | 0 | 16.3 | 3.0 | 6.4 | .469 | 0.2 | 0.8 | .250 | 2.8 | 5.6 | .500 | .484 | 1.2 | 1.2 | 1.000 | 1.2 | 2.4 | 3.6 | 1.2 | 0.4 | 0.0 | 0.8 | 2.4 | 7.4 | .534 | — |
-| [April 2004 week 1 (01 to 07)](../2003-04/04_April/Week_1/League_Stats.md) | 20 | UTAH | NBA | SF | 2 | 0 | 16.1 | 1.5 | 3.0 | .500 | 0.5 | 1.0 | .500 | 1.0 | 2.0 | .500 | .583 | 1.0 | 1.0 | 1.000 | 2.0 | 1.5 | 3.5 | 0.0 | 1.0 | 0.0 | 0.5 | 2.0 | 4.5 | .654 | — |
-| [April 2004 week 2 (08 to 14)](../2003-04/04_April/Week_2/League_Stats.md) | 20 | UTAH | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [April 2004 week 1 (01 to 07)](../2003-04/04_April/Week_1/League_Stats.md) | 20 | UTAH | NBA | SF | 3 | 0 | 15.7 | 1.0 | 2.7 | .375 | 0.3 | 0.7 | .500 | 0.7 | 2.0 | .333 | .438 | 1.0 | 1.3 | .750 | 1.7 | 2.3 | 4.0 | 0.0 | 1.0 | 0.3 | 0.3 | 1.7 | 3.3 | .512 | — |
+| [April 2004 week 2 (08 to 14)](../2003-04/04_April/Week_2/League_Stats.md) | 20 | UTAH | NBA | SF | 2 | 0 | 15.0 | 1.5 | 3.5 | .429 | 0.0 | 0.5 | .000 | 1.5 | 3.0 | .500 | .429 | 0.0 | 0.0 | N/A | 0.5 | 2.0 | 2.5 | 1.5 | 2.0 | 0.0 | 1.5 | 1.0 | 3.0 | .429 | — |
 
 </details>
 
 ## Shooting zones
 
-Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regular season. Coverage: **partial**; 270 located attempts, 0 unlocated, 0 outside the view, 27 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
+Aggregated with `runtime/shot_chart.py` over closed results of the 2003-04 regular season. Coverage: **partial**; 279 located attempts, 0 unlocated, 0 outside the view, 27 missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.
 
 ### Tracked games only
 
-Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 70 of 77 closed games; 65 tracked appearances form the denominator below (2003-11-12 to 2004-04-04).
+Simulated engine shot locations. Tracked games only: complete location coverage in the listed source games; older untracked games remain excluded. 73 of 80 closed games; 68 tracked appearances form the denominator below (2003-11-12 to 2004-04-10).
 
 | Zone | FGM | FGA | FG% | FG points / game | FGA / game |
 | --- | --- | --- | --- | --- | --- |
-| Paint | 71 | 130 | 54.6% | 2.18 | 2.00 |
-| Outside paint, under 12 ft | 3 | 7 | 42.9% | 0.09 | 0.11 |
-| Outside paint, 12 to under 18 ft | 17 | 42 | 40.5% | 0.52 | 0.65 |
-| 18 ft to the three-point line | 15 | 43 | 34.9% | 0.46 | 0.66 |
-| Three-point range | 19 | 48 | 39.6% | 0.88 | 0.74 |
-| All field goals | 125 | 270 | 46.3% | 4.14 | 4.15 |
+| Paint | 72 | 132 | 54.5% | 2.12 | 1.94 |
+| Outside paint, under 12 ft | 3 | 7 | 42.9% | 0.09 | 0.10 |
+| Outside paint, 12 to under 18 ft | 17 | 43 | 39.5% | 0.50 | 0.63 |
+| 18 ft to the three-point line | 17 | 48 | 35.4% | 0.50 | 0.71 |
+| Three-point range | 19 | 49 | 38.8% | 0.84 | 0.72 |
+| All field goals | 128 | 279 | 45.9% | 4.04 | 4.10 |
 
 ## Regular-season statistics by year
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2003-04 is simulated: 77 closed regular-season games through 2004-04-05.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2003-04 is simulated: 80 closed regular-season games through 2004-04-11.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2003-04 | UTAH | 72 | 0 | 13.4 | 5.0 | 2.1 | 0.9 | 0.4 | 0.2 | 0.9 | 44.8% | 39.6% | 82.2% |
+| 2003-04 | UTAH | 75 | 0 | 13.5 | 4.9 | 2.1 | 0.9 | 0.5 | 0.2 | 0.9 | 44.4% | 38.9% | 81.5% |
 
 ## Playoff statistics by year
 
@@ -122,4 +122,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2004-04-05. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2004-04-11. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

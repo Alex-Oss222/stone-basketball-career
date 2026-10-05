@@ -2,9 +2,9 @@
 
 # Contract | Jim Jackson
 
-Known through: 2004-04-05. [Open interactive contract](jacksji01.html#contract) · [Contract history](jacksji01.html#contract-history)
+Known through: 2004-04-11. [Open interactive contract](jacksji01.html#contract) · [Contract history](jacksji01.html#contract-history)
 
-Jim Jackson: under contract. Evidence cutoff: 2004-04-05.
+Jim Jackson: under contract. Evidence cutoff: 2004-04-11.
 
 ## Current contract
 

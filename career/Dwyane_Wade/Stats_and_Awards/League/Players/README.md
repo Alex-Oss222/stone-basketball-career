@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2003-04 league statistics](../2003-04/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-04-05**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-04-11**. 504 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 99 players</summary>
@@ -302,7 +302,7 @@ Card date: **2004-04-05**. 504 registry players, one Markdown card and one inter
 | [Tim Thomas](thomati01.md) | Milwaukee Bucks | 27 | sourced | [open](thomati01.html) |
 | [Tracy Murray](murratr01.md) | Portland Trail Blazers | None | silhouette | [open](murratr01.html) |
 | [Travis Outlaw](outlatr01.md) | Portland Trail Blazers | 19 | sourced | [open](outlatr01.html) |
-| [Tremaine Fowlkes](fowlktr01.md) | Los Angeles Clippers | 27 | silhouette | [open](fowlktr01.html) |
+| [Tremaine Fowlkes](fowlktr01.md) | Los Angeles Clippers | 28 | silhouette | [open](fowlktr01.html) |
 | [Wally Szczerbiak](szczewa02.md) | Minnesota Timberwolves | 27 | sourced | [open](szczewa02.html) |
 | [Walt Williams](williwa02.md) | Dallas Mavericks | 33 | silhouette | [open](williwa02.html) |
 | [Walter McCarty](mccarwa01.md) | Boston Celtics | 30 | silhouette | [open](mccarwa01.html) |
@@ -550,7 +550,7 @@ Card date: **2004-04-05**. 504 registry players, one Markdown card and one inter
 | [Wang Zhizhi](zhizhwa01.md) | Los Angeles Clippers | 26 | sourced | [open](zhizhwa01.html) |
 | [Xue Yuyang](yuyanxu01.md) | Denver Nuggets (draft rights) | 21 | silhouette | [open](yuyanxu01.html) |
 | [Yao Ming](mingya01.md) | Houston Rockets | 23 | sourced | [open](mingya01.html) |
-| [Zeljko Rebraca](rebraze01.md) | Detroit Pistons | 31 | sourced | [open](rebraze01.html) |
+| [Zeljko Rebraca](rebraze01.md) | Detroit Pistons | 32 | sourced | [open](rebraze01.html) |
 | [Zendon Hamilton](hamilze01.md) | Philadelphia 76ers | None | silhouette | [open](hamilze01.html) |
 | [Zydrunas Ilgauskas](ilgauzy01.md) | Cleveland Cavaliers | 28 | sourced | [open](ilgauzy01.html) |
 

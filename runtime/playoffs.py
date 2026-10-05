@@ -241,6 +241,11 @@ def build(root=ROOT, season=SEASON, write=True):
     if write:
         (root / RECORD).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         (root / PAGE).write_text(page(record, root), encoding="utf-8")
+        readme = root / LEAGUE.parent / "README.md"                    # the league hub links the bracket once it exists
+        text = readme.read_text(encoding="utf-8") if readme.is_file() else ""
+        hub = f"[{season} standings]({season}/Standings.md)"
+        if hub in text and f"({season}/Playoffs.md)" not in text:
+            readme.write_text(text.replace(hub, hub + f" · [2004 playoffs]({season}/Playoffs.md)", 1), encoding="utf-8")
     return record, []
 
 

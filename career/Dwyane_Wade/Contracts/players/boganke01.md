@@ -2,9 +2,9 @@
 
 # Contract | Keith Bogans
 
-Known through: 2004-04-05. [Open interactive contract](boganke01.html#contract) · [Contract history](boganke01.html#contract-history)
+Known through: 2004-04-11. [Open interactive contract](boganke01.html#contract) · [Contract history](boganke01.html#contract-history)
 
-Keith Bogans: No verified contract record. Evidence cutoff: 2004-04-05.
+Keith Bogans: No verified contract record. Evidence cutoff: 2004-04-11.
 
 ## Current contract
 
