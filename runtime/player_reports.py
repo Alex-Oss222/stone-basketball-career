@@ -295,7 +295,8 @@ def build_reports(root: Path, player: Path) -> dict[Path, str]:
         stats_year = stats / year
         regular_dir = season / "06_Regular_Season"
         months, weeks_flat = [], []
-        for month, spec in config["regular_season"].items():
+        from .seasons import structure
+        for month, spec in structure(year, root)["regular_season"].items():
             month_num = int(spec["folder"][:2])
             start, end = month_window(year, month_num)
             scope = select(regular, start=start, end=end)

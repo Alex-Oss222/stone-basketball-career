@@ -206,7 +206,7 @@ def report_errors(root, player, team):
                     require(errors,names==Counter(p["name"] for p in registry if p["position"]==pos),f"{label}: {pos} membership mismatch")
                     columns={column for header,_ in markdown_tables(group[1]) for column in header}
                     require(errors,{"Age","Pos","GS","MP","FG","FGA","3P","3PA","2P","2PA","eFG%","FT","FTA","ORB","DRB","TRB","PF","PTS"}<=columns,f"{label}: incomplete league per-game columns")
-        if page.name=="League_Awards.md" and page.parent.name!="2003-04":
+        if page.name=="League_Awards.md" and not re.fullmatch(r"\d{4}-\d{2}",page.parent.name):
             shortlists=[rows for header,rows in tables if header[:2]==["Conference","Rank slot"]]
             expected_count=1 if page.parent.name.startswith("Week_") else 2
             # One table per award, or one per closed award period when a page files several (runtime/award_decisions.py).
@@ -243,9 +243,10 @@ def discover():
     # (the season close writes its expectations there); it becomes active when the rollover writes its state.
     years = [p for p in players[0].iterdir() if p.is_dir() and re.fullmatch(r"\d{4}-\d{2}", p.name)
              and (p / "current_state.json").is_file()]
-    if len(years) != 1:
-        raise ValueError("player directory must contain exactly one active season directory (one with current_state.json)")
-    return players[0], years[0]
+    if not years:
+        raise ValueError("player directory must contain an active season directory (one with current_state.json)")
+    # Earlier seasons keep their state (standing snapshots replay against them); the latest is the live one.
+    return players[0], sorted(years)[-1]
 
 
 def validate_game(path, errors, play_in_game_1=False):
@@ -334,21 +335,26 @@ def miami_roster_errors(root):
     """Standing roster rules, checked on every validation run (docs/front_office.md):
     after the cut every scheduled Miami game dresses only players Miami holds under a signed contract,
     and the signed roster is at most fifteen."""
-    from runtime.camp import CUT_DAY_FALLBACK, ROSTER_MAX, playable
+    from runtime.camp import ROSTER_MAX, playable
     from runtime.game_requests import find_requests
+    from runtime.seasons import active, dates
     errors = []
-    season = root / "career/Dwyane_Wade/2003-04"
+    live = active(root)
+    season = root / "career/Dwyane_Wade" / live
+    cut_day = dates(live, root)["roster_cut"]
     state = json.loads((season / "current_state.json").read_text(encoding="utf-8"))
     roster = json.loads((season / "00_Team/Team/Roster/roster.json").read_text(encoding="utf-8"))["players"]
     status = {p["name"]: p.get("status") for p in roster}
     signed = [n for n, st in status.items() if playable(st)]
     camp = season / "04_Training_Camp/camp_roster.json"
     cut_done = camp.is_file() and json.loads(camp.read_text(encoding="utf-8")).get("cut_done")
-    if (cut_done or state["current_date"] > CUT_DAY_FALLBACK) and len(signed) > ROSTER_MAX:
+    if (cut_done or state["current_date"] > cut_day) and len(signed) > ROSTER_MAX:
         errors.append(f"Miami carries {len(signed)} signed players after the cut; the limit is {ROSTER_MAX}")
     for path in find_requests(root):
         if "Stats_and_Awards" in path.parts or path.with_name(path.name.replace(".request.json", ".result.json")).exists():
             continue                                  # league slate games and played games keep their inputs
+        if live not in path.parts:
+            continue                                  # an earlier season's requests answer to its own register
         data = json.loads(path.read_text(encoding="utf-8"))
         for side in (data.get("home") or {}, data.get("away") or {}):
             if side.get("team") != "Miami Heat":
@@ -362,13 +368,14 @@ def miami_roster_errors(root):
 def validate():
     errors=repository_rating_errors(ROOT)
     try:
-        config=json.loads((ROOT/"foundation/season_structure.json").read_text(encoding="utf-8"))
         player,season=discover()
+        from runtime.seasons import structure
+        config=structure(season.name, ROOT)
     except (OSError,ValueError,json.JSONDecodeError) as exc:
         return [f"cannot load required structure: {exc}"]
 
     require(errors, player.name == "Dwyane_Wade", "active player directory must be Dwyane_Wade")
-    require(errors, season.name == "2003-04", "active season directory must be 2003-04")
+    require(errors, season.name >= "2003-04", "the career starts in 2003-04")
     require(errors, (player/"Dwyane_Wade_Player_Profile.md").is_file(), "missing Dwyane Wade player profile")
 
     league_dir=ROOT/"library/2003/league"
@@ -402,7 +409,7 @@ def validate():
         try:
             state=json.loads(state_path.read_text(encoding="utf-8"))
             require(errors,state.get("initialized") is True,"career must be initialized")
-            require(errors,state.get("season")=="2003-04","current state season mismatch")
+            require(errors,state.get("season")==season.name,"current state season mismatch")
             require(errors,isinstance(state.get("current_date"),str) and state["current_date"]>="2003-06-26","career clock before the June 26 checkpoint")
             require(errors,state.get("team")=="Miami Heat","current team mismatch")
         except json.JSONDecodeError as exc:
@@ -444,7 +451,7 @@ def validate():
         players=roster.get("players",[])
         ids=[p.get("id") for p in players]
         require(errors,len(ids)==len(set(ids)),"roster player ids must be unique")
-        require(errors,{"dwyane_wade","jerome_beasley"} <= set(ids),"draft picks missing from roster/control register")
+        require(errors,({"dwyane_wade","jerome_beasley"} if season.name=="2003-04" else {"dwyane_wade"}) <= set(ids),"draft picks missing from roster/control register")
         required_card_sections=[
             "## Scouting report",
             "## Player grades",
@@ -487,7 +494,8 @@ def validate():
         cap_sheet=cap_sheet_path.read_text(encoding="utf-8")
         for heading in ("## Current cap position","## Eight-season commitments","## Payroll notes","## Cap reconciliation"):
             require(errors,heading in cap_sheet,f"Finances/cap_sheet.md missing {heading}")
-        require(errors,all(year in cap_sheet for year in CAP_SEASONS),"cap sheet must show the eight-season window")
+        window=[f"{y}-{(y+1)%100:02d}" for y in range(int(season.name[:4]),int(season.name[:4])+8)]
+        require(errors,all(year in cap_sheet for year in window),"cap sheet must show the eight-season window")
 
     schedules_path=team/"Finances/contract_schedules.json"
     if schedules_path.is_file():

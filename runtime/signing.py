@@ -19,11 +19,12 @@ from .contract_archive import archive_contract, archive_previous_contract
 from .contracts import counted_amount
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
+from .seasons import active as _live_season, label as _label
+SEASON = _live_season(ROOT)          # the live season (runtime/seasons.py): Miami's records are its folder's
 TEAM = Path(f"career/Dwyane_Wade/{SEASON}/00_Team")
 PHASE = Path(f"career/Dwyane_Wade/{SEASON}/01_Free_Agency")
 STATE = Path(f"career/Dwyane_Wade/{SEASON}/current_state.json")
-HORIZON = ["2003-04", "2004-05", "2005-06", "2006-07", "2007-08", "2008-09", "2009-10", "2010-11"]
+HORIZON = [_label(int(SEASON[:4]) + i) for i in range(8)]
 ACTIVE_STATUSES = ("under_contract", "under_contract_guarantee_amended", "team_option_exercised", "player_option_exercised",
                    "signed_free_agent", "re_signed")
 CLOSED_STATUSES = ("team_option_declined", "player_option_declined", "renounced", "released", "traded", "signed_elsewhere", "voided")
@@ -414,12 +415,30 @@ def _seasons(years, first=SEASON):
 
 # -- finance summary ---------------------------------------------------------------------------------
 OPTION_KINDS = ("team_option", "player_option", "early_termination_option")
-# Cap-year phases the summary names; the dates are the 2003-04 calendar's (season_structure.json).
+# Cap-year phases the summary names: the 2003-04 calendar's dates (season_structure.json), and each later season's
+# from its registry dates (camp opening and opening night).
 CAP_PHASES = (("2003-10-28", "regular_season"), ("2003-09-30", "training_camp"), ("2003-07-01", "free_agency"))
 
 
+def cap_phases(season=None):
+    season = season or SEASON
+    if season == "2003-04":
+        return CAP_PHASES
+    from .seasons import dates
+    d = dates(season, ROOT)
+    return ((d["opening_night"], "regular_season"), (d["training_camp_opens"] or f"{season[:4]}-10-01", "training_camp"),
+            (f"{season[:4]}-07-01", "free_agency"))
+
+
 def cap_status(day):
-    return next((name for start, name in CAP_PHASES if day >= start), "pre_free_agency")
+    return next((name for start, name in cap_phases() if day >= start), "pre_free_agency")
+
+
+def cap_published(season=None):
+    """The season's cap publication date from the cap history, or None."""
+    season = season or SEASON
+    history = read(TEAM / "Finances/league_cap_history.json", ROOT) if (ROOT / TEAM / "Finances/league_cap_history.json").is_file() else {"seasons": []}
+    return next((r.get("published_date") for r in history["seasons"] if r.get("season") == season), None)
 
 
 def ledger_aggregates(sheet):
@@ -474,7 +493,7 @@ def refresh_aggregates(finance, sheet, room, day):
     sheet["conditional_known_amounts"] = {s: t["options"] for s, t in totals.items()}
     sheet["conditional_unknown_count"] = {s: t["unknown_options"] for s, t in totals.items()}
     sheet["as_of"] = day
-    definition = (f"Counted 2003-04 team salary on {day}: signed contracts (camp contracts included), exercised options and "
+    definition = (f"Counted {SEASON} team salary on {day}: signed contracts (camp contracts included), exercised options and "
                   "unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year "
                   "veteran's one-year minimum counts the four-year minimum. Not a guarantee total.")
     sheet.setdefault("projection_basis", {})["known_baseline_definition"] = definition
@@ -505,7 +524,7 @@ def refresh_finance(writer, front_office, day):
                    live_official_salary_cap=room["cap"] if room["cap_known"] else None, planning_cap=room["cap"],
                    known_counted_salary=room["committed"], free_agent_holds=room["holds"], roster_charge=room["roster_charge"],
                    cap_room=room["room"] if room["cap_known"] else None, projected_cap_room=room["room"],
-                   cap_room_reason=[("Cap published July 15, 2003." if room["cap_known"] else "Cap not yet published; room is projected on the prior cap."),
+                   cap_room_reason=[(f"Cap published {long_date(cap_published() or '2003-07-15')}." if room["cap_known"] else "Cap not yet published; room is projected on the prior cap."),
                                     "Committed salary, unrenounced holds and the roster charge for empty spots are deducted (docs/front_office_design.md 5.1)."])
     sync_cards(writer, day)
     sheet = writer.load(TEAM / "Finances/contract_schedules.json")
@@ -567,7 +586,7 @@ def cap_sheet_text(sheet, rights, room, day):
              if p.get("cap_hold") and not (p.get("renounced") or p.get("re_signed") or p.get("signed_elsewhere"))]
     return f"""# Miami Heat | Cap sheet
 
-{long_date(day)} · 2003-04 through 2010-11 · USD
+{long_date(day)} · {HORIZON[0]} through {HORIZON[-1]} · USD
 
 [Finance guide](README.md) · [Roster and control](../Team/Roster/roster.json) · [Contract detail](contract_schedules.json)
 
@@ -610,7 +629,7 @@ def counted_salary(sheet_players, on, season=SEASON):
         amount, status = counted_amount(p, season), p["status"]
         if amount is None or status in CLOSED_STATUSES:
             continue
-        if status in ("team_option_pending", "player_option_pending") and on >= "2003-07-01":
+        if status in ("team_option_pending", "player_option_pending") and on >= f"{season[:4]}-07-01":
             continue
         total += amount
     return total
