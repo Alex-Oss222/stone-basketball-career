@@ -2526,6 +2526,28 @@
    },
    "contract": null,
    "note": "10-day contract ended (3.8 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-03-06-ten_day-dickeka01",
+   "date": "2004-03-06",
+   "kind": "ten_day",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": null,
+   "to": "Dallas Mavericks",
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-03-16",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.77 x fit"
   }
  ],
  "market_days": [
@@ -2569,6 +2591,7 @@
   "2004-02-29",
   "2004-03-01",
   "2004-03-02",
-  "2004-03-05"
+  "2004-03-05",
+  "2004-03-06"
  ]
 }
