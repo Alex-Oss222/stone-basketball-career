@@ -2818,6 +2818,64 @@
    },
    "contract": null,
    "note": "10-day contract ended (0.0 minutes a game)"
+  },
+  {
+   "id": "2003-04-market-2004-03-27-waive-hansetr01",
+   "date": "2004-03-27",
+   "kind": "waive",
+   "player": "Travis Hansen",
+   "bbr_id": "hansetr01",
+   "from": "Atlanta Hawks",
+   "to": null,
+   "role": {
+    "player_id": "Travis Hansen",
+    "bbr_id": "hansetr01",
+    "position": "SF",
+    "games": 41,
+    "minutes": 507
+   },
+   "contract": null,
+   "note": "48-hour waivers; resolve 2004-03-29"
+  },
+  {
+   "id": "2003-04-market-2004-03-27-ten_day-dickeka01",
+   "date": "2004-03-27",
+   "kind": "ten_day",
+   "player": "Kaniel Dickens",
+   "bbr_id": "dickeka01",
+   "from": null,
+   "to": "Atlanta Hawks",
+   "role": {
+    "player_id": "Kaniel Dickens",
+    "bbr_id": "dickeka01",
+    "position": "PF",
+    "games": 3,
+    "minutes": 12
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2004-04-06",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.74 x fit"
+  },
+  {
+   "id": "2003-04-market-2004-03-27-expire-penigde01",
+   "date": "2004-03-27",
+   "kind": "expire",
+   "player": "Desmond Penigar",
+   "bbr_id": "penigde01",
+   "from": "Milwaukee Bucks",
+   "to": null,
+   "role": {
+    "player_id": "Desmond Penigar",
+    "bbr_id": "penigde01",
+    "position": "PF",
+    "games": 10,
+    "minutes": 89
+   },
+   "contract": null,
+   "note": "10-day contract ended (0.7 minutes a game)"
   }
  ],
  "market_days": [
@@ -2882,6 +2940,7 @@
   "2004-03-23",
   "2004-03-24",
   "2004-03-25",
-  "2004-03-26"
+  "2004-03-26",
+  "2004-03-27"
  ]
 }
