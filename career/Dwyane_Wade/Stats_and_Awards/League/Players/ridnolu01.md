@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `ridnolu01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-08-22 · **Club on this date:** Seattle SuperSonics · **Basis:** under contract: on the Seattle SuperSonics roster in a closed game on 2003-10-30; signing date not recorded · **League:** NBA  
+**Card date:** 2004-08-29 · **Club on this date:** Seattle SuperSonics · **Basis:** under contract: on the Seattle SuperSonics roster in a closed game on 2003-10-30; signing date not recorded · **League:** NBA  
 **Position:** PG (Point guard) · **Jersey:** #8 · **Born:** 1981-02-13 · **Age on card date:** 23  
 **Registry ID:** `ridnolu01` · [Basketball-Reference page](https://www.basketball-reference.com/players/r/ridnolu01.html) · ESPN ID 1985
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `ridnol
 
 ## Simulated statistics
 
-As of **2004-08-22**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-08-29**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -106,7 +106,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2003-04 is simulated: 82 closed regular-season games through 2004-08-22.
+**Coverage:** No NBA season before 2003-04 (2003 draft entry). 2003-04 is simulated: 82 closed regular-season games through 2004-08-29.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -114,7 +114,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2003-04 playoffs ([bracket](../2003-04/Playoffs.md)): no playoff appearance through 2004-08-22. Prior playoff history is not imported into this card.
+**Coverage:** 2003-04 playoffs ([bracket](../2003-04/Playoffs.md)): no playoff appearance through 2004-08-29. Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -122,7 +122,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated honors and shortlist placings through 2004-08-22, from closed award decisions (0 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2004-08-29, from closed award decisions (0 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

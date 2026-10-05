@@ -2,9 +2,9 @@
 
 # Contract | Scott Padgett
 
-Known through: 2004-08-22. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
+Known through: 2004-08-29. [Open interactive contract](padgesc01.html#contract) · [Contract history](padgesc01.html#contract-history)
 
-Scott Padgett: under contract. Evidence cutoff: 2004-08-22.
+Scott Padgett: under contract. Evidence cutoff: 2004-08-29.
 
 ## Current contract
 

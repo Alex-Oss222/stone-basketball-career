@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-08-22",
+  "as_of": "2004-08-29",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1428,9 +1428,9 @@
       "player_id": "dampier01",
       "name": "Erick Dampier",
       "team": "Golden State Warriors",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "dampier01-2004-08-24",
+      "recorded_agreements": 1,
       "href": "players/dampier01.html#contract"
     },
     {
@@ -1806,9 +1806,9 @@
       "player_id": "breweja01",
       "name": "Jamison Brewer",
       "team": "Indiana Pacers",
-      "status": "minimum contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "breweja01-2004-08-27",
+      "recorded_agreements": 1,
       "href": "players/breweja01.html#contract"
     },
     {
@@ -2085,9 +2085,9 @@
       "player_id": "przybjo01",
       "name": "Joel Przybilla",
       "team": "Milwaukee Bucks",
-      "status": "under rookie contract",
-      "current_contract_id": "przybjo01-2000-07-08",
-      "recorded_agreements": 1,
+      "status": "under contract",
+      "current_contract_id": "przybjo01-2004-08-25",
+      "recorded_agreements": 2,
       "href": "players/przybjo01.html#contract"
     },
     {
@@ -2553,9 +2553,9 @@
       "player_id": "johnsli01",
       "name": "Linton Johnson",
       "team": "Chicago Bulls",
-      "status": "No verified contract record",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "johnsli01-2004-08-25",
+      "recorded_agreements": 1,
       "href": "players/johnsli01.html#contract"
     },
     {
@@ -4155,9 +4155,9 @@
       "player_id": "kukocto01",
       "name": "Toni Kukoc",
       "team": "Milwaukee Bucks",
-      "status": "under contract unverified",
-      "current_contract_id": null,
-      "recorded_agreements": 0,
+      "status": "under contract",
+      "current_contract_id": "kukocto01-2004-08-23",
+      "recorded_agreements": 1,
       "href": "players/kukocto01.html#contract"
     },
     {

@@ -12,8 +12,8 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `harvedo01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-08-22 · **Club on this date:** Orlando Magic · **Basis:** signing to Orlando Magic on 2003-09-23 (world data) · **League:** NBA  
-**Position:** SF (Small forward) · **Jersey:** #4 · **Born:** 1980-08-26 · **Age on card date:** 23  
+**Card date:** 2004-08-29 · **Club on this date:** Orlando Magic · **Basis:** signing to Orlando Magic on 2003-09-23 (world data) · **League:** NBA  
+**Position:** SF (Small forward) · **Jersey:** #4 · **Born:** 1980-08-26 · **Age on card date:** 24  
 **Registry ID:** `harvedo01` · [Basketball-Reference page](https://www.basketball-reference.com/players/h/harvedo01.html) · ESPN ID 316
 
 **Contract/control:** Contract expires June 30, 2003; restriction not established (league contract inventory status `free_agent_expiring`, as of June 26, 2003).
@@ -26,13 +26,13 @@ The interactive card is an HTML file: GitHub shows it as source, so open `harved
 
 ## Simulated statistics
 
-As of **2004-08-22**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-08-29**: 82 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [2003-04 regular season](../2003-04/League_Stats.md) | 23 | ORL | NBA | SF | 78 | 0 | 10.4 | 1.3 | 2.7 | .486 | 0.0 | 0.2 | .231 | 1.3 | 2.6 | .503 | .493 | 0.7 | 0.8 | .800 | 0.7 | 1.6 | 2.2 | 0.4 | 0.2 | 0.3 | 0.5 | 1.6 | 3.3 | .542 | — |
+| [2003-04 regular season](../2003-04/League_Stats.md) | 24 | ORL | NBA | SF | 78 | 0 | 10.4 | 1.3 | 2.7 | .486 | 0.0 | 0.2 | .231 | 1.3 | 2.6 | .503 | .493 | 0.7 | 0.8 | .800 | 0.7 | 1.6 | 2.2 | 0.4 | 0.2 | 0.3 | 0.5 | 1.6 | 3.3 | .542 | — |
 
 ### Month
 
@@ -41,13 +41,13 @@ As of **2004-08-22**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [October 2003](../2003-04/10_October/League_Stats.md) | 23 | ORL | NBA | SF | 1 | 0 | 21.7 | 1.0 | 6.0 | .167 | 0.0 | 0.0 | N/A | 1.0 | 6.0 | .167 | .167 | 0.0 | 0.0 | N/A | 0.0 | 4.0 | 4.0 | 1.0 | 0.0 | 0.0 | 1.0 | 1.0 | 2.0 | .167 | — |
-| [November 2003](../2003-04/11_November/League_Stats.md) | 23 | ORL | NBA | SF | 14 | 0 | 12.1 | 1.9 | 3.1 | .605 | 0.1 | 0.1 | 1.000 | 1.7 | 2.9 | .585 | .628 | 0.9 | 1.3 | .722 | 0.9 | 1.8 | 2.7 | 0.3 | 0.3 | 0.1 | 0.3 | 1.9 | 4.8 | .658 | — |
-| [December 2003](../2003-04/12_December/League_Stats.md) | 23 | ORL | NBA | SF | 15 | 0 | 8.3 | 1.1 | 2.1 | .548 | 0.0 | 0.1 | .000 | 1.1 | 1.9 | .586 | .548 | 0.4 | 0.6 | .667 | 0.3 | 1.3 | 1.7 | 0.2 | 0.1 | 0.3 | 0.5 | 1.3 | 2.7 | .572 | — |
-| [January 2004](../2003-04/01_January/League_Stats.md) | 23 | ORL | NBA | SF | 16 | 0 | 10.8 | 1.3 | 2.9 | .457 | 0.0 | 0.1 | .000 | 1.3 | 2.8 | .477 | .457 | 0.7 | 0.8 | .846 | 0.6 | 1.6 | 2.2 | 0.2 | 0.2 | 0.5 | 0.4 | 1.7 | 3.3 | .512 | — |
-| [February 2004](../2003-04/02_February/League_Stats.md) | 23 | ORL | NBA | SF | 12 | 0 | 9.9 | 1.2 | 2.8 | .412 | 0.1 | 0.2 | .500 | 1.1 | 2.7 | .406 | .426 | 0.2 | 0.3 | .750 | 0.6 | 1.3 | 1.9 | 0.4 | 0.2 | 0.1 | 0.8 | 2.0 | 2.7 | .447 | — |
-| [March 2004](../2003-04/03_March/League_Stats.md) | 23 | ORL | NBA | SF | 14 | 0 | 11.2 | 1.6 | 3.3 | .500 | 0.0 | 0.3 | .000 | 1.6 | 3.0 | .548 | .500 | 0.9 | 0.9 | .923 | 0.6 | 2.1 | 2.6 | 0.5 | 0.4 | 0.4 | 0.9 | 1.3 | 4.1 | .561 | — |
-| [April 2004](../2003-04/04_April/League_Stats.md) | 23 | ORL | NBA | SF | 6 | 0 | 8.3 | 0.2 | 1.0 | .167 | 0.0 | 0.2 | .000 | 0.2 | 0.8 | .200 | .167 | 1.2 | 1.3 | .875 | 1.3 | 0.5 | 1.8 | 0.7 | 0.0 | 0.0 | 0.0 | 1.2 | 1.5 | .473 | — |
+| [October 2003](../2003-04/10_October/League_Stats.md) | 24 | ORL | NBA | SF | 1 | 0 | 21.7 | 1.0 | 6.0 | .167 | 0.0 | 0.0 | N/A | 1.0 | 6.0 | .167 | .167 | 0.0 | 0.0 | N/A | 0.0 | 4.0 | 4.0 | 1.0 | 0.0 | 0.0 | 1.0 | 1.0 | 2.0 | .167 | — |
+| [November 2003](../2003-04/11_November/League_Stats.md) | 24 | ORL | NBA | SF | 14 | 0 | 12.1 | 1.9 | 3.1 | .605 | 0.1 | 0.1 | 1.000 | 1.7 | 2.9 | .585 | .628 | 0.9 | 1.3 | .722 | 0.9 | 1.8 | 2.7 | 0.3 | 0.3 | 0.1 | 0.3 | 1.9 | 4.8 | .658 | — |
+| [December 2003](../2003-04/12_December/League_Stats.md) | 24 | ORL | NBA | SF | 15 | 0 | 8.3 | 1.1 | 2.1 | .548 | 0.0 | 0.1 | .000 | 1.1 | 1.9 | .586 | .548 | 0.4 | 0.6 | .667 | 0.3 | 1.3 | 1.7 | 0.2 | 0.1 | 0.3 | 0.5 | 1.3 | 2.7 | .572 | — |
+| [January 2004](../2003-04/01_January/League_Stats.md) | 24 | ORL | NBA | SF | 16 | 0 | 10.8 | 1.3 | 2.9 | .457 | 0.0 | 0.1 | .000 | 1.3 | 2.8 | .477 | .457 | 0.7 | 0.8 | .846 | 0.6 | 1.6 | 2.2 | 0.2 | 0.2 | 0.5 | 0.4 | 1.7 | 3.3 | .512 | — |
+| [February 2004](../2003-04/02_February/League_Stats.md) | 24 | ORL | NBA | SF | 12 | 0 | 9.9 | 1.2 | 2.8 | .412 | 0.1 | 0.2 | .500 | 1.1 | 2.7 | .406 | .426 | 0.2 | 0.3 | .750 | 0.6 | 1.3 | 1.9 | 0.4 | 0.2 | 0.1 | 0.8 | 2.0 | 2.7 | .447 | — |
+| [March 2004](../2003-04/03_March/League_Stats.md) | 24 | ORL | NBA | SF | 14 | 0 | 11.2 | 1.6 | 3.3 | .500 | 0.0 | 0.3 | .000 | 1.6 | 3.0 | .548 | .500 | 0.9 | 0.9 | .923 | 0.6 | 2.1 | 2.6 | 0.5 | 0.4 | 0.4 | 0.9 | 1.3 | 4.1 | .561 | — |
+| [April 2004](../2003-04/04_April/League_Stats.md) | 24 | ORL | NBA | SF | 6 | 0 | 8.3 | 0.2 | 1.0 | .167 | 0.0 | 0.2 | .000 | 0.2 | 0.8 | .200 | .167 | 1.2 | 1.3 | .875 | 1.3 | 0.5 | 1.8 | 0.7 | 0.0 | 0.0 | 0.0 | 1.2 | 1.5 | .473 | — |
 
 </details>
 
@@ -58,30 +58,30 @@ As of **2004-08-22**: 82 closed games feed this card. Per-game columns use the r
 
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [October 2003 week 3 (15 to 21)](../2003-04/10_October/Week_3/League_Stats.md) | 23 | ORL | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [October 2003 week 4 (22 to 31)](../2003-04/10_October/Week_4/League_Stats.md) | 23 | ORL | NBA | SF | 1 | 0 | 21.7 | 1.0 | 6.0 | .167 | 0.0 | 0.0 | N/A | 1.0 | 6.0 | .167 | .167 | 0.0 | 0.0 | N/A | 0.0 | 4.0 | 4.0 | 1.0 | 0.0 | 0.0 | 1.0 | 1.0 | 2.0 | .167 | — |
-| [November 2003 week 1 (01 to 07)](../2003-04/11_November/Week_1/League_Stats.md) | 23 | ORL | NBA | SF | 4 | 0 | 15.4 | 2.5 | 4.0 | .625 | 0.5 | 0.5 | 1.000 | 2.0 | 3.5 | .571 | .688 | 1.8 | 2.8 | .636 | 1.2 | 2.2 | 3.5 | 0.2 | 0.0 | 0.0 | 0.2 | 3.0 | 7.2 | .696 | — |
-| [November 2003 week 2 (08 to 14)](../2003-04/11_November/Week_2/League_Stats.md) | 23 | ORL | NBA | SF | 3 | 0 | 7.8 | 2.0 | 3.3 | .600 | 0.0 | 0.0 | N/A | 2.0 | 3.3 | .600 | .600 | 0.7 | 0.7 | 1.000 | 0.3 | 0.7 | 1.0 | 0.0 | 0.3 | 0.3 | 0.3 | 1.7 | 4.7 | .643 | — |
-| [November 2003 week 3 (15 to 21)](../2003-04/11_November/Week_3/League_Stats.md) | 23 | ORL | NBA | SF | 4 | 0 | 12.2 | 1.5 | 2.8 | .545 | 0.0 | 0.0 | N/A | 1.5 | 2.8 | .545 | .545 | 1.0 | 1.2 | .800 | 0.5 | 1.8 | 2.2 | 0.5 | 0.5 | 0.2 | 0.5 | 1.8 | 4.0 | .606 | — |
-| [November 2003 week 4 (22 to 30)](../2003-04/11_November/Week_4/League_Stats.md) | 23 | ORL | NBA | SF | 3 | 0 | 11.7 | 1.3 | 2.0 | .667 | 0.0 | 0.0 | N/A | 1.3 | 2.0 | .667 | .667 | 0.0 | 0.0 | N/A | 1.7 | 2.3 | 4.0 | 0.3 | 0.3 | 0.0 | 0.0 | 1.0 | 2.7 | .667 | — |
-| [December 2003 week 1 (01 to 07)](../2003-04/12_December/Week_1/League_Stats.md) | 23 | ORL | NBA | SF | 4 | 0 | 7.3 | 1.0 | 2.0 | .500 | 0.0 | 0.0 | N/A | 1.0 | 2.0 | .500 | .500 | 0.0 | 0.0 | N/A | 0.8 | 1.0 | 1.8 | 0.0 | 0.2 | 0.0 | 0.2 | 0.5 | 2.0 | .500 | — |
-| [December 2003 week 2 (08 to 14)](../2003-04/12_December/Week_2/League_Stats.md) | 23 | ORL | NBA | SF | 4 | 0 | 9.8 | 1.8 | 2.5 | .700 | 0.0 | 0.2 | .000 | 1.8 | 2.2 | .778 | .700 | 1.0 | 1.5 | .667 | 0.0 | 1.5 | 1.5 | 0.5 | 0.0 | 0.2 | 0.5 | 1.2 | 4.5 | .712 | — |
-| [December 2003 week 3 (15 to 21)](../2003-04/12_December/Week_3/League_Stats.md) | 23 | ORL | NBA | SF | 3 | 0 | 7.7 | 1.7 | 2.3 | .714 | 0.0 | 0.0 | N/A | 1.7 | 2.3 | .714 | .714 | 0.7 | 1.0 | .667 | 0.0 | 2.0 | 2.0 | 0.0 | 0.0 | 0.3 | 0.3 | 2.3 | 4.0 | .721 | — |
-| [December 2003 week 4 (22 to 31)](../2003-04/12_December/Week_4/League_Stats.md) | 23 | ORL | NBA | SF | 4 | 0 | 8.1 | 0.2 | 1.5 | .167 | 0.0 | 0.2 | .000 | 0.2 | 1.2 | .200 | .167 | 0.0 | 0.0 | N/A | 0.5 | 1.0 | 1.5 | 0.2 | 0.2 | 0.5 | 0.8 | 1.5 | 0.5 | .167 | — |
-| [January 2004 week 1 (01 to 07)](../2003-04/01_January/Week_1/League_Stats.md) | 23 | ORL | NBA | SF | 4 | 0 | 11.2 | 1.0 | 2.8 | .364 | 0.0 | 0.0 | N/A | 1.0 | 2.8 | .364 | .364 | 0.2 | 0.5 | .500 | 1.0 | 1.5 | 2.5 | 0.0 | 0.2 | 0.0 | 0.2 | 1.8 | 2.2 | .379 | — |
-| [January 2004 week 2 (08 to 14)](../2003-04/01_January/Week_2/League_Stats.md) | 23 | ORL | NBA | SF | 3 | 0 | 8.7 | 1.0 | 3.0 | .333 | 0.0 | 0.3 | .000 | 1.0 | 2.7 | .375 | .333 | 0.7 | 0.7 | 1.000 | 0.0 | 1.3 | 1.3 | 0.3 | 0.0 | 0.3 | 0.7 | 1.0 | 2.7 | .405 | — |
-| [January 2004 week 3 (15 to 21)](../2003-04/01_January/Week_3/League_Stats.md) | 23 | ORL | NBA | SF | 4 | 0 | 11.5 | 2.0 | 3.2 | .615 | 0.0 | 0.0 | N/A | 2.0 | 3.2 | .615 | .615 | 0.8 | 1.0 | .750 | 0.2 | 2.0 | 2.2 | 0.5 | 0.5 | 1.0 | 0.2 | 1.2 | 4.8 | .644 | — |
-| [January 2004 week 4 (22 to 31)](../2003-04/01_January/Week_4/League_Stats.md) | 23 | ORL | NBA | SF | 5 | 0 | 11.2 | 1.2 | 2.6 | .462 | 0.0 | 0.2 | .000 | 1.2 | 2.4 | .500 | .462 | 1.0 | 1.0 | 1.000 | 1.0 | 1.4 | 2.4 | 0.2 | 0.0 | 0.6 | 0.6 | 2.4 | 3.4 | .559 | — |
-| [February 2004 week 1 (01 to 07)](../2003-04/02_February/Week_1/League_Stats.md) | 23 | ORL | NBA | SF | 3 | 0 | 12.0 | 1.0 | 3.0 | .333 | 0.0 | 0.0 | N/A | 1.0 | 3.0 | .333 | .333 | 0.3 | 0.3 | 1.000 | 0.3 | 2.3 | 2.7 | 0.7 | 0.3 | 0.0 | 0.3 | 2.3 | 2.3 | .371 | — |
-| [February 2004 week 2 (08 to 14)](../2003-04/02_February/Week_2/League_Stats.md) | 23 | ORL | NBA | SF | 2 | 0 | 9.5 | 0.5 | 2.0 | .250 | 0.0 | 0.5 | .000 | 0.5 | 1.5 | .333 | .250 | 0.0 | 0.0 | N/A | 0.0 | 1.5 | 1.5 | 0.0 | 0.0 | 0.0 | 3.0 | 3.0 | 1.0 | .250 | — |
-| [February 2004 week 3 (15 to 21)](../2003-04/02_February/Week_3/League_Stats.md) | 23 | ORL | NBA | SF | 3 | 0 | 8.9 | 2.0 | 3.7 | .545 | 0.0 | 0.0 | N/A | 2.0 | 3.7 | .545 | .545 | 0.3 | 0.3 | 1.000 | 1.3 | 1.0 | 2.3 | 0.7 | 0.3 | 0.0 | 0.7 | 1.3 | 4.3 | .568 | — |
-| [February 2004 week 4 (22 to 29)](../2003-04/02_February/Week_4/League_Stats.md) | 23 | ORL | NBA | SF | 4 | 0 | 9.3 | 1.0 | 2.5 | .400 | 0.2 | 0.2 | 1.000 | 0.8 | 2.2 | .333 | .450 | 0.2 | 0.5 | .500 | 0.5 | 0.8 | 1.2 | 0.2 | 0.0 | 0.2 | 0.2 | 1.8 | 2.5 | .460 | — |
-| [March 2004 week 1 (01 to 07)](../2003-04/03_March/Week_1/League_Stats.md) | 23 | ORL | NBA | SF | 3 | 0 | 10.5 | 1.3 | 2.3 | .571 | 0.0 | 0.3 | .000 | 1.3 | 2.0 | .667 | .571 | 0.7 | 0.7 | 1.000 | 0.3 | 3.3 | 3.7 | 0.7 | 0.7 | 0.3 | 0.7 | 1.7 | 3.3 | .635 | — |
-| [March 2004 week 2 (08 to 14)](../2003-04/03_March/Week_2/League_Stats.md) | 23 | ORL | NBA | SF | 3 | 0 | 12.4 | 2.3 | 3.7 | .636 | 0.0 | 0.7 | .000 | 2.3 | 3.0 | .778 | .636 | 0.0 | 0.0 | N/A | 0.7 | 1.7 | 2.3 | 0.0 | 0.3 | 0.7 | 1.7 | 1.7 | 4.7 | .636 | — |
-| [March 2004 week 3 (15 to 21)](../2003-04/03_March/Week_3/League_Stats.md) | 23 | ORL | NBA | SF | 4 | 0 | 12.2 | 2.0 | 4.2 | .471 | 0.0 | 0.0 | N/A | 2.0 | 4.2 | .471 | .471 | 2.0 | 2.2 | .889 | 1.2 | 2.2 | 3.5 | 1.0 | 0.2 | 0.5 | 0.5 | 1.2 | 6.0 | .573 | — |
-| [March 2004 week 4 (22 to 31)](../2003-04/03_March/Week_4/League_Stats.md) | 23 | ORL | NBA | SF | 4 | 0 | 10.0 | 1.0 | 2.8 | .364 | 0.0 | 0.2 | .000 | 1.0 | 2.5 | .400 | .364 | 0.5 | 0.5 | 1.000 | 0.0 | 1.2 | 1.2 | 0.2 | 0.5 | 0.2 | 0.8 | 0.8 | 2.5 | .421 | — |
-| [April 2004 week 1 (01 to 07)](../2003-04/04_April/Week_1/League_Stats.md) | 23 | ORL | NBA | SF | 2 | 0 | 8.8 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 1.5 | 2.0 | .750 | 1.5 | 0.5 | 2.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.5 | 1.5 | .852 | — |
-| [April 2004 week 2 (08 to 14)](../2003-04/04_April/Week_2/League_Stats.md) | 23 | ORL | NBA | SF | 4 | 0 | 8.1 | 0.2 | 1.5 | .167 | 0.0 | 0.2 | .000 | 0.2 | 1.2 | .200 | .167 | 1.0 | 1.0 | 1.000 | 1.2 | 0.5 | 1.8 | 0.5 | 0.0 | 0.0 | 0.0 | 1.5 | 1.5 | .387 | — |
+| [October 2003 week 3 (15 to 21)](../2003-04/10_October/Week_3/League_Stats.md) | 24 | ORL | NBA | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
+| [October 2003 week 4 (22 to 31)](../2003-04/10_October/Week_4/League_Stats.md) | 24 | ORL | NBA | SF | 1 | 0 | 21.7 | 1.0 | 6.0 | .167 | 0.0 | 0.0 | N/A | 1.0 | 6.0 | .167 | .167 | 0.0 | 0.0 | N/A | 0.0 | 4.0 | 4.0 | 1.0 | 0.0 | 0.0 | 1.0 | 1.0 | 2.0 | .167 | — |
+| [November 2003 week 1 (01 to 07)](../2003-04/11_November/Week_1/League_Stats.md) | 24 | ORL | NBA | SF | 4 | 0 | 15.4 | 2.5 | 4.0 | .625 | 0.5 | 0.5 | 1.000 | 2.0 | 3.5 | .571 | .688 | 1.8 | 2.8 | .636 | 1.2 | 2.2 | 3.5 | 0.2 | 0.0 | 0.0 | 0.2 | 3.0 | 7.2 | .696 | — |
+| [November 2003 week 2 (08 to 14)](../2003-04/11_November/Week_2/League_Stats.md) | 24 | ORL | NBA | SF | 3 | 0 | 7.8 | 2.0 | 3.3 | .600 | 0.0 | 0.0 | N/A | 2.0 | 3.3 | .600 | .600 | 0.7 | 0.7 | 1.000 | 0.3 | 0.7 | 1.0 | 0.0 | 0.3 | 0.3 | 0.3 | 1.7 | 4.7 | .643 | — |
+| [November 2003 week 3 (15 to 21)](../2003-04/11_November/Week_3/League_Stats.md) | 24 | ORL | NBA | SF | 4 | 0 | 12.2 | 1.5 | 2.8 | .545 | 0.0 | 0.0 | N/A | 1.5 | 2.8 | .545 | .545 | 1.0 | 1.2 | .800 | 0.5 | 1.8 | 2.2 | 0.5 | 0.5 | 0.2 | 0.5 | 1.8 | 4.0 | .606 | — |
+| [November 2003 week 4 (22 to 30)](../2003-04/11_November/Week_4/League_Stats.md) | 24 | ORL | NBA | SF | 3 | 0 | 11.7 | 1.3 | 2.0 | .667 | 0.0 | 0.0 | N/A | 1.3 | 2.0 | .667 | .667 | 0.0 | 0.0 | N/A | 1.7 | 2.3 | 4.0 | 0.3 | 0.3 | 0.0 | 0.0 | 1.0 | 2.7 | .667 | — |
+| [December 2003 week 1 (01 to 07)](../2003-04/12_December/Week_1/League_Stats.md) | 24 | ORL | NBA | SF | 4 | 0 | 7.3 | 1.0 | 2.0 | .500 | 0.0 | 0.0 | N/A | 1.0 | 2.0 | .500 | .500 | 0.0 | 0.0 | N/A | 0.8 | 1.0 | 1.8 | 0.0 | 0.2 | 0.0 | 0.2 | 0.5 | 2.0 | .500 | — |
+| [December 2003 week 2 (08 to 14)](../2003-04/12_December/Week_2/League_Stats.md) | 24 | ORL | NBA | SF | 4 | 0 | 9.8 | 1.8 | 2.5 | .700 | 0.0 | 0.2 | .000 | 1.8 | 2.2 | .778 | .700 | 1.0 | 1.5 | .667 | 0.0 | 1.5 | 1.5 | 0.5 | 0.0 | 0.2 | 0.5 | 1.2 | 4.5 | .712 | — |
+| [December 2003 week 3 (15 to 21)](../2003-04/12_December/Week_3/League_Stats.md) | 24 | ORL | NBA | SF | 3 | 0 | 7.7 | 1.7 | 2.3 | .714 | 0.0 | 0.0 | N/A | 1.7 | 2.3 | .714 | .714 | 0.7 | 1.0 | .667 | 0.0 | 2.0 | 2.0 | 0.0 | 0.0 | 0.3 | 0.3 | 2.3 | 4.0 | .721 | — |
+| [December 2003 week 4 (22 to 31)](../2003-04/12_December/Week_4/League_Stats.md) | 24 | ORL | NBA | SF | 4 | 0 | 8.1 | 0.2 | 1.5 | .167 | 0.0 | 0.2 | .000 | 0.2 | 1.2 | .200 | .167 | 0.0 | 0.0 | N/A | 0.5 | 1.0 | 1.5 | 0.2 | 0.2 | 0.5 | 0.8 | 1.5 | 0.5 | .167 | — |
+| [January 2004 week 1 (01 to 07)](../2003-04/01_January/Week_1/League_Stats.md) | 24 | ORL | NBA | SF | 4 | 0 | 11.2 | 1.0 | 2.8 | .364 | 0.0 | 0.0 | N/A | 1.0 | 2.8 | .364 | .364 | 0.2 | 0.5 | .500 | 1.0 | 1.5 | 2.5 | 0.0 | 0.2 | 0.0 | 0.2 | 1.8 | 2.2 | .379 | — |
+| [January 2004 week 2 (08 to 14)](../2003-04/01_January/Week_2/League_Stats.md) | 24 | ORL | NBA | SF | 3 | 0 | 8.7 | 1.0 | 3.0 | .333 | 0.0 | 0.3 | .000 | 1.0 | 2.7 | .375 | .333 | 0.7 | 0.7 | 1.000 | 0.0 | 1.3 | 1.3 | 0.3 | 0.0 | 0.3 | 0.7 | 1.0 | 2.7 | .405 | — |
+| [January 2004 week 3 (15 to 21)](../2003-04/01_January/Week_3/League_Stats.md) | 24 | ORL | NBA | SF | 4 | 0 | 11.5 | 2.0 | 3.2 | .615 | 0.0 | 0.0 | N/A | 2.0 | 3.2 | .615 | .615 | 0.8 | 1.0 | .750 | 0.2 | 2.0 | 2.2 | 0.5 | 0.5 | 1.0 | 0.2 | 1.2 | 4.8 | .644 | — |
+| [January 2004 week 4 (22 to 31)](../2003-04/01_January/Week_4/League_Stats.md) | 24 | ORL | NBA | SF | 5 | 0 | 11.2 | 1.2 | 2.6 | .462 | 0.0 | 0.2 | .000 | 1.2 | 2.4 | .500 | .462 | 1.0 | 1.0 | 1.000 | 1.0 | 1.4 | 2.4 | 0.2 | 0.0 | 0.6 | 0.6 | 2.4 | 3.4 | .559 | — |
+| [February 2004 week 1 (01 to 07)](../2003-04/02_February/Week_1/League_Stats.md) | 24 | ORL | NBA | SF | 3 | 0 | 12.0 | 1.0 | 3.0 | .333 | 0.0 | 0.0 | N/A | 1.0 | 3.0 | .333 | .333 | 0.3 | 0.3 | 1.000 | 0.3 | 2.3 | 2.7 | 0.7 | 0.3 | 0.0 | 0.3 | 2.3 | 2.3 | .371 | — |
+| [February 2004 week 2 (08 to 14)](../2003-04/02_February/Week_2/League_Stats.md) | 24 | ORL | NBA | SF | 2 | 0 | 9.5 | 0.5 | 2.0 | .250 | 0.0 | 0.5 | .000 | 0.5 | 1.5 | .333 | .250 | 0.0 | 0.0 | N/A | 0.0 | 1.5 | 1.5 | 0.0 | 0.0 | 0.0 | 3.0 | 3.0 | 1.0 | .250 | — |
+| [February 2004 week 3 (15 to 21)](../2003-04/02_February/Week_3/League_Stats.md) | 24 | ORL | NBA | SF | 3 | 0 | 8.9 | 2.0 | 3.7 | .545 | 0.0 | 0.0 | N/A | 2.0 | 3.7 | .545 | .545 | 0.3 | 0.3 | 1.000 | 1.3 | 1.0 | 2.3 | 0.7 | 0.3 | 0.0 | 0.7 | 1.3 | 4.3 | .568 | — |
+| [February 2004 week 4 (22 to 29)](../2003-04/02_February/Week_4/League_Stats.md) | 24 | ORL | NBA | SF | 4 | 0 | 9.3 | 1.0 | 2.5 | .400 | 0.2 | 0.2 | 1.000 | 0.8 | 2.2 | .333 | .450 | 0.2 | 0.5 | .500 | 0.5 | 0.8 | 1.2 | 0.2 | 0.0 | 0.2 | 0.2 | 1.8 | 2.5 | .460 | — |
+| [March 2004 week 1 (01 to 07)](../2003-04/03_March/Week_1/League_Stats.md) | 24 | ORL | NBA | SF | 3 | 0 | 10.5 | 1.3 | 2.3 | .571 | 0.0 | 0.3 | .000 | 1.3 | 2.0 | .667 | .571 | 0.7 | 0.7 | 1.000 | 0.3 | 3.3 | 3.7 | 0.7 | 0.7 | 0.3 | 0.7 | 1.7 | 3.3 | .635 | — |
+| [March 2004 week 2 (08 to 14)](../2003-04/03_March/Week_2/League_Stats.md) | 24 | ORL | NBA | SF | 3 | 0 | 12.4 | 2.3 | 3.7 | .636 | 0.0 | 0.7 | .000 | 2.3 | 3.0 | .778 | .636 | 0.0 | 0.0 | N/A | 0.7 | 1.7 | 2.3 | 0.0 | 0.3 | 0.7 | 1.7 | 1.7 | 4.7 | .636 | — |
+| [March 2004 week 3 (15 to 21)](../2003-04/03_March/Week_3/League_Stats.md) | 24 | ORL | NBA | SF | 4 | 0 | 12.2 | 2.0 | 4.2 | .471 | 0.0 | 0.0 | N/A | 2.0 | 4.2 | .471 | .471 | 2.0 | 2.2 | .889 | 1.2 | 2.2 | 3.5 | 1.0 | 0.2 | 0.5 | 0.5 | 1.2 | 6.0 | .573 | — |
+| [March 2004 week 4 (22 to 31)](../2003-04/03_March/Week_4/League_Stats.md) | 24 | ORL | NBA | SF | 4 | 0 | 10.0 | 1.0 | 2.8 | .364 | 0.0 | 0.2 | .000 | 1.0 | 2.5 | .400 | .364 | 0.5 | 0.5 | 1.000 | 0.0 | 1.2 | 1.2 | 0.2 | 0.5 | 0.2 | 0.8 | 0.8 | 2.5 | .421 | — |
+| [April 2004 week 1 (01 to 07)](../2003-04/04_April/Week_1/League_Stats.md) | 24 | ORL | NBA | SF | 2 | 0 | 8.8 | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | 0.0 | 0.0 | N/A | N/A | 1.5 | 2.0 | .750 | 1.5 | 0.5 | 2.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.5 | 1.5 | .852 | — |
+| [April 2004 week 2 (08 to 14)](../2003-04/04_April/Week_2/League_Stats.md) | 24 | ORL | NBA | SF | 4 | 0 | 8.1 | 0.2 | 1.5 | .167 | 0.0 | 0.2 | .000 | 0.2 | 1.2 | .200 | .167 | 1.0 | 1.0 | 1.000 | 1.2 | 0.5 | 1.8 | 0.5 | 0.0 | 0.0 | 0.0 | 1.5 | 1.5 | .387 | — |
 
 </details>
 
@@ -106,7 +106,7 @@ Simulated engine shot locations. Tracked games only: complete location coverage 
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2003-04 is simulated: 82 closed regular-season games through 2004-08-22.
+**Coverage:** 2002-03 regular season from the supplied statistics file; earlier seasons are not imported. 2003-04 is simulated: 82 closed regular-season games through 2004-08-29.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -115,7 +115,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Playoff statistics by year
 
-**Coverage:** 2003-04 playoffs ([bracket](../2003-04/Playoffs.md)): no playoff appearance through 2004-08-22. Prior playoff history is not imported into this card.
+**Coverage:** 2003-04 playoffs ([bracket](../2003-04/Playoffs.md)): no playoff appearance through 2004-08-29. Prior playoff history is not imported into this card.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -123,4 +123,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2004-08-22. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2004-08-29. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

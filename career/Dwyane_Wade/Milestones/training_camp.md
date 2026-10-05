@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2004-08-22 · Miami Heat · complete
+Career date: 2004-08-29 · Miami Heat · complete
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 

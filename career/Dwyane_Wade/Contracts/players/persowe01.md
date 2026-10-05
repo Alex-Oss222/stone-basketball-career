@@ -2,9 +2,9 @@
 
 # Contract | Wesley Person
 
-Known through: 2004-08-22. [Open interactive contract](persowe01.html#contract) · [Contract history](persowe01.html#contract-history)
+Known through: 2004-08-29. [Open interactive contract](persowe01.html#contract) · [Contract history](persowe01.html#contract-history)
 
-Wesley Person: under contract. Evidence cutoff: 2004-08-22.
+Wesley Person: under contract. Evidence cutoff: 2004-08-29.
 
 ## Current contract
 

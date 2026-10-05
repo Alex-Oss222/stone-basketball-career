@@ -2,9 +2,9 @@
 
 # Contract | Michael Finley
 
-Known through: 2004-08-22. [Open interactive contract](finlemi01.html#contract) · [Contract history](finlemi01.html#contract-history)
+Known through: 2004-08-29. [Open interactive contract](finlemi01.html#contract) · [Contract history](finlemi01.html#contract-history)
 
-Michael Finley: under contract. Evidence cutoff: 2004-08-22.
+Michael Finley: under contract. Evidence cutoff: 2004-08-29.
 
 ## Current contract
 
