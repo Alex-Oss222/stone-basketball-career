@@ -153,11 +153,19 @@
   {
    "player": "LaPhonso Ellis",
    "placed": "2004-04-02",
-   "activated": null,
+   "activated": "2004-04-12",
    "first_game_missed": "2004-04-02-miami-heat-at-detroit-pistons",
    "reason": "injury: 1 more game(s) out on the engine's draw",
    "minimum_games": 5
+  },
+  {
+   "player": "Dwyane Wade",
+   "placed": "2004-04-12",
+   "activated": null,
+   "first_game_missed": "2004-04-12-miami-heat-at-boston-celtics",
+   "reason": "injury: 2 more game(s) out on the engine's draw",
+   "minimum_games": 5
   }
  ],
- "as_of": "2004-04-10"
+ "as_of": "2004-04-12"
 }

@@ -4,7 +4,7 @@
 
 NBA regular season · 2003-04
 
-As of April 11, 2004: 80 closed Miami games in this period. Rows cover Miami's closed games only.
+As of April 12, 2004: 80 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
@@ -98,7 +98,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | [January 2004](01_January/Team_Stats.md) | January 1-31, 2004 | 16 | Complete |
 | [February 2004](02_February/Team_Stats.md) | February 1-29, 2004 | 12 | Complete |
 | [March 2004](03_March/Team_Stats.md) | March 1-31, 2004 | 15 | Complete |
-| [April 2004](04_April/Team_Stats.md) | April 1-30, 2004 | 5 | Through April 11, 2004 |
+| [April 2004](04_April/Team_Stats.md) | April 1-30, 2004 | 5 | Through April 12, 2004 |
 
 ## Playoffs
 
