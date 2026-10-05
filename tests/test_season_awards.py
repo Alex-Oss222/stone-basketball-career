@@ -15,7 +15,7 @@ class SeasonAwardTests(unittest.TestCase):
         self.assertEqual(cal["mvp"]["ballot"], [10, 7, 5, 3, 1])
         self.assertEqual(cal["roy"]["announced"], "2004-04-20")
         self.assertEqual(cal["all_defensive"]["electorate"], 29)
-        self.assertTrue(all(a["announced"] > S.SEASON_END for a in cal.values()))
+        self.assertTrue(all(a["announced"] > S.C(ROOT).end for a in cal.values()))
         self.assertEqual(set(cal), set(S.LENS))
 
     def test_voters_spread_evenly_and_never_draw(self):
@@ -72,7 +72,7 @@ class SeasonAwardTests(unittest.TestCase):
         self.assertEqual(S.short_name("Rookie of the Year"), "ROY")
 
     def test_every_club_coach_votes_on_coaches_ballots(self):
-        confs = json.loads((ROOT / S.CONFERENCES).read_text(encoding="utf-8"))["conferences"]
+        confs = json.loads((ROOT / S.C(ROOT).conferences).read_text(encoding="utf-8"))["conferences"]
         self.assertEqual(sum(len(c) for c in confs.values()), 29)
         self.assertEqual(S.coaches(ROOT)["Miami Heat"], "Erik Spoelstra")
 

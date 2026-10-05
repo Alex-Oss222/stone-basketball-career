@@ -63,7 +63,12 @@ def prior_path(season, kind):
 
 
 def _read(root, rel):
-    return json.loads((Path(root) / rel).read_text(encoding="utf-8"))
+    """A library file from the given repository, or from this one when a scratch copy (a test scaffold) lacks it:
+    world data is read-only and the same for every copy."""
+    target = Path(root) / rel
+    if not target.is_file():
+        target = ROOT / rel
+    return json.loads(target.read_text(encoding="utf-8"))
 
 
 @lru_cache(maxsize=64)
@@ -76,7 +81,7 @@ def read(season, kind, root=ROOT):
 
 
 def exists(season, kind, root=ROOT):
-    return (Path(root) / path(season, kind)).is_file()
+    return (Path(root) / path(season, kind)).is_file() or (ROOT / path(season, kind)).is_file()
 
 
 # ---- dates
@@ -198,3 +203,32 @@ def supported(season, root=ROOT):
                                       "playoff_rules", "season_awards", "team_pace", "staffs")]
     need += [prior_path(season, k) for k in ("player_stats", "league_environment", "shot_environment")]
     return [str(p) for p in need if not (Path(root) / p).is_file()]
+
+
+# ---- the regular-season calendar folders
+
+MONTH_FOLDERS = {10: "10_October", 11: "11_November", 12: "12_December", 1: "01_January", 2: "02_February",
+                 3: "03_March", 4: "04_April"}
+MONTH_NAMES = {10: "October", 11: "November", 12: "December", 1: "January", 2: "February", 3: "March", 4: "April"}
+
+
+def week_of(day_number):
+    return 1 if day_number <= 7 else 2 if day_number <= 14 else 3 if day_number <= 21 else 4
+
+
+def month_weeks(season, root=ROOT):
+    """[(month name, month, year, folder, [weeks])] for the regular season: every month from opening night's to the
+    last day's, each with the weeks that hold its days in the season, plus any week the repository's season structure
+    lists for that month (the 2003-04 folders were laid out from it)."""
+    import calendar as cal
+    gates = dates(season, root)
+    first, last = date.fromisoformat(gates["opening_night"]), date.fromisoformat(gates["regular_season_end"])
+    structure = json.loads((ROOT / "foundation/season_structure.json").read_text(encoding="utf-8"))["regular_season"]
+    out, y, m = [], first.year, first.month
+    while (y, m) <= (last.year, last.month):
+        lo = first.day if (y, m) == (first.year, first.month) else 1
+        hi = last.day if (y, m) == (last.year, last.month) else cal.monthrange(y, m)[1]
+        weeks = sorted({week_of(d) for d in range(lo, hi + 1)} | set(structure.get(MONTH_NAMES[m], {}).get("weeks", [])))
+        out.append((MONTH_NAMES[m], m, y, MONTH_FOLDERS[m], weeks))
+        y, m = (y + (m == 12), m % 12 + 1)
+    return out

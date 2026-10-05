@@ -14,11 +14,23 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
-TEAM = Path(f"career/Dwyane_Wade/{SEASON}/00_Team")
-STANDINGS = Path(f"career/Dwyane_Wade/Stats_and_Awards/League/{SEASON}/Standings.md")
-LEAGUE_DIR = STANDINGS.parent
-CONFERENCES = Path("library/2003/league/nba_2003_04_conferences.json")
+FIRST_SEASON = "2003-04"                     # the season whose June 26, 2003 import text the first refresh migrated
+
+
+def _season(root=None):
+    from .seasons import active
+    return active(root or ROOT)
+
+
+def team_dir(season):
+    return Path(f"career/Dwyane_Wade/{season}/00_Team")
+
+
+def standings_page(season):
+    return Path(f"career/Dwyane_Wade/Stats_and_Awards/League/{season}/Standings.md")
+
+
+TEAM = team_dir(FIRST_SEASON)
 START, END = "<!-- team-status:start -->", "<!-- team-status:end -->"
 GONE = ("released", "traded", "signed_elsewhere", "voided", "waived", "renounced", "declined")
 # Stale import text the first refresh replaces with the generated block (one-time migration).
@@ -63,13 +75,14 @@ def migrate(text, patterns, block):
     return re.sub(r"\n{3,}", "\n\n", text)
 
 
-def register(root, on):
+def register(root, on, season=None):
     """Miami's current register on the date: [(roster entry, availability, role)]."""
     from .miami_cards import injured_on, role_in
     from .rotation_reviews import rotation_in_force
-    roster = _read(Path(root) / TEAM / "Team/Roster/roster.json")
+    season = season or _season(root)
+    roster = _read(Path(root) / team_dir(season) / "Team/Roster/roster.json")
     try:
-        rotation, _depth = rotation_in_force(on, root, SEASON, require_review=False)
+        rotation, _depth = rotation_in_force(on, root, season, require_review=False)
     except (OSError, ValueError, KeyError):
         rotation = {}
     out = []
@@ -89,10 +102,12 @@ def register(root, on):
     return out
 
 
-def standings_rows(root, on):
+def standings_rows(root, on, season=None):
+    from .seasons import conferences
     from .standings import standings_on
-    table = standings_on(on, root, SEASON)
-    confs = _read(Path(root) / CONFERENCES)["conferences"]
+    season = season or _season(root)
+    table = standings_on(on, root, season)
+    confs = conferences(season, root)
     out = {}
     for conf, clubs in confs.items():
         rows = sorted(clubs, key=lambda c: (-table.get(c, {}).get("pct", 0.0), -table.get(c, {}).get("wins", 0), c))
@@ -112,9 +127,14 @@ def _table(headers, rows):
 
 
 def blocks(root, on):
+    from .seasons import dates, start_year
     root = Path(root)
-    reg = register(root, on)
-    conf_rows, table = standings_rows(root, on)
+    season = _season(root)
+    TEAM, STANDINGS = team_dir(season), standings_page(season)
+    LEAGUE_DIR = STANDINGS.parent
+    gates = dates(season, root)
+    reg = register(root, on, season)
+    conf_rows, table = standings_rows(root, on, season)
     mia = table.get("Miami Heat", {"wins": 0, "losses": 0})
     east = [r[1].strip("*") for r in conf_rows.get("East", [])]
     place = east.index("Miami Heat") + 1 if "Miami Heat" in east else None
@@ -127,7 +147,7 @@ def blocks(root, on):
     out = {}
     out[team_readme] = (f"**Status on {on}** (generated from dated records): Miami {record} "
                         f"([standings]({standings_link(team_readme)})). {len(signed)} players under contract, "
-                        f"{len(listed)} on the injured list. Head coach Erik Spoelstra; the staff rotation in force and "
+                        f"{len(listed)} on the injured list. Head coach {_read(root / TEAM / 'team_config.json').get('head_coach', 'N/A')}; the staff rotation in force and "
                         f"the register are in [Team](Team/README.md).")
     out[TEAM / "Team/README.md"] = (
         f"**Status on {on}:** {len(signed)} under contract ({len(signed) - len(listed)} active, {len(listed)} on the "
@@ -142,14 +162,14 @@ def blocks(root, on):
         "\n\nPlayers whose contracts ended, were released or voided remain in roster.json with their labels as history.")
     fin = _read(root / TEAM / "Finances/finance.json")
     out[TEAM / "Finances/README.md"] = (
-        f"{SEASON} through 2010-11 · AI/GM record · live position from [finance.json](finance.json) (as of {fin.get('as_of')}), "
+        f"{season} through {start_year(season) + 7}-{str(start_year(season) + 8)[-2:]} · AI/GM record · live position from [finance.json](finance.json) (as of {fin.get('as_of')}), "
         f"shown on {on}\n\nCounted salary {_money(fin.get('known_counted_salary'))} against the published "
         f"{_money(fin.get('live_official_salary_cap'))} cap: cap room {_money(fin.get('cap_room'))} "
         f"({fin.get('cap_status', 'N/A').replace('_', ' ')}). Tax threshold: "
         f"{_money(fin.get('live_official_tax_threshold')) if fin.get('live_official_tax_threshold') else 'not published at this date'}. "
-        f"Contract guarantee review: 2004-01-07 keep-or-waive, 2004-01-10 kept contracts guaranteed.")
-    page = [f"# {SEASON} standings", "", f"Through {on}, from closed simulated results only (`runtime/standings.py`). "
-            "Real 2003-04 standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.", ""]
+        f"Contract guarantee review: {gates['waive_by']} keep-or-waive, {gates['guarantee']} kept contracts guaranteed.")
+    page = [f"# {season} standings", "", f"Through {on}, from closed simulated results only (`runtime/standings.py`). "
+            f"Real {season} standings are never used. Ties are ordered by wins, then name; tiebreakers are not applied.", ""]
     if (root / LEAGUE_DIR / "playoffs.json").is_file():
         page += ["The playoffs are seeded: [bracket, seeds and schedule](Playoffs.md).", ""]
     for conf, crows in conf_rows.items():
@@ -165,9 +185,10 @@ def refresh(root=ROOT, write=True, on=None):
         from .write_back import clock
         on = clock(root)
     changed = []
+    standings = standings_page(_season(root))
     for rel, block in blocks(root, on).items():
         path = root / rel
-        if rel == STANDINGS:
+        if rel == standings:
             new = block + "\n"
             old = path.read_text(encoding="utf-8") if path.is_file() else None
         else:

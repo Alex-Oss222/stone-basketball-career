@@ -26,21 +26,39 @@ from datetime import date
 import json
 from pathlib import Path
 
-from .camp import GUARANTEE_DATE, playable
+from .camp import playable
 from .contract_archive import archive_contract
 from .contracts import counted_amount
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
-TEAM = Path(f"career/Dwyane_Wade/{SEASON}/00_Team")
-LEDGER = TEAM / "Transactions/injured_list.json"
-GUARANTEES = TEAM / "Transactions/guarantee_review.json"
+
+
+def ctx(root=None, day=None):
+    """The season's files and dated gates (runtime/seasons.py): the season of `day` when given, else the live one."""
+    from types import SimpleNamespace
+    from . import seasons
+    season = seasons.season_of_date(day) if day else seasons.active(root or ROOT)
+    gates = seasons.dates(season, root or ROOT)
+    team = Path(f"career/Dwyane_Wade/{season}/00_Team")
+    return SimpleNamespace(season=season, team=team, ledger=team / "Transactions/injured_list.json",
+                           guarantees=team / "Transactions/guarantee_review.json", waive_by=gates["waive_by"],
+                           guarantee=gates["guarantee"], days=(gates["opening_night"], gates["regular_season_end"]))
+
+
+def __getattr__(name):
+    """The old module constants, now the live season's: SEASON, TEAM, LEDGER, GUARANTEES, WAIVE_BY, GUARANTEE_DATE,
+    SEASON_DAYS."""
+    c = ctx()
+    table = {"SEASON": c.season, "TEAM": c.team, "LEDGER": c.ledger, "GUARANTEES": c.guarantees, "WAIVE_BY": c.waive_by,
+             "GUARANTEE_DATE": c.guarantee, "SEASON_DAYS": c.days}
+    if name in table:
+        return table[name]
+    raise AttributeError(name)
+
 GAME_DAY_ACTIVES = 12
 IL_MAX = 3
 IL_MIN_GAMES = 5
 LISTS_FROM = "2003-11-12"           # first game day built under the lists; earlier games keep their inputs
-WAIVE_BY = "2004-01-07"             # last day a waiver clears before the guarantee date
-SEASON_DAYS = ("2003-10-28", "2004-04-14")   # 2003-04 regular season, for daily proration
 
 
 def read(rel, root=ROOT):
@@ -48,8 +66,8 @@ def read(rel, root=ROOT):
     return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else None
 
 
-def empty_ledger():
-    return {"schema_version": 1, "owner": "ai_gm", "kind": "injured_list", "season": SEASON, "lists_from": LISTS_FROM,
+def empty_ledger(season=None):
+    return {"schema_version": 1, "owner": "ai_gm", "kind": "injured_list", "season": season or ctx().season, "lists_from": LISTS_FROM,
             "rule": (f"{GAME_DAY_ACTIVES} active for each game, up to {IL_MAX} on the injured list, at least {IL_MIN_GAMES} games "
                      "on it once placed. Injured players are placed first; the remaining places go to the lowest healthy "
                      "reserves (runtime/roster_moves.py)."),
@@ -57,7 +75,8 @@ def empty_ledger():
 
 
 def ledger(root=ROOT):
-    return read(LEDGER, root) or empty_ledger()
+    c = ctx(root)
+    return read(c.ledger, root) or empty_ledger(c.season)
 
 
 def list_on(data, game_date):
@@ -107,7 +126,7 @@ def game_day(game_date, kept, depth_entries, injured, data, game_dates):
     extra = [n for n in healthy if n not in il][:max(0, GAME_DAY_ACTIVES - len(rotation))]
     actives = rotation + extra
     if len(actives) > GAME_DAY_ACTIVES:
-        raise ValueError(f"{len(actives)} players would dress on {game_date}; the roster is over the 2003-04 limit")
+        raise ValueError(f"{len(actives)} players would dress on {game_date}; the roster is over the dressed limit")
     placements = [(n, "injury" if n in injured else "reserve") for n in il if n not in current]
     activations = [n for n in current if n not in il]
     return actives, il, placements, activations
@@ -124,7 +143,7 @@ def record_lists(data, game_date, il, placements, activations, injured, event_id
         data["entries"].append({
             "player": name, "placed": game_date, "activated": None, "first_game_missed": event_id,
             "reason": (f"injury: {games} more game(s) out on the engine's draw" if why == "injury" else
-                       "reserve: not among the twelve the staff dresses (2003-04 clubs listed healthy reserves on the injured list)"),
+                       "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)"),
             "minimum_games": IL_MIN_GAMES})
     data["as_of"] = max(data.get("as_of", game_date), game_date)
     return data
@@ -132,7 +151,7 @@ def record_lists(data, game_date, il, placements, activations, injured, event_id
 
 def ledger_errors(root=ROOT):
     """The list never exceeds its places, every stay lasts its minimum, and listed players never play."""
-    data = read(LEDGER, root)
+    data = read(ctx(root).ledger, root)
     if data is None:
         return []
     errors = []
@@ -159,16 +178,17 @@ def ledger_errors(root=ROOT):
 # -- waivers and the guarantee date ------------------------------------------------------------------
 def season_share(day):
     """Share of the regular season's days before `day` (daily proration of a waived salary)."""
-    start, end = (date.fromisoformat(d) for d in SEASON_DAYS)
+    start, end = (date.fromisoformat(d) for d in ctx(day=day).days)
     d = date.fromisoformat(day)
     return min(1.0, max(0.0, (d - start).days / ((end - start).days + 1)))
 
 
 def waived_charge(entry, day):
     """Salary a waived contract leaves on Miami's books for the season."""
-    salary = counted_amount(entry, SEASON) or 0
-    guaranteed = (entry.get("guaranteed") or {}).get(SEASON)
-    if guaranteed is None or guaranteed >= (entry["schedule"].get(SEASON) or 0):
+    season = ctx(day=day).season
+    salary = counted_amount(entry, season) or 0
+    guaranteed = (entry.get("guaranteed") or {}).get(season)
+    if guaranteed is None or guaranteed >= (entry["schedule"].get(season) or 0):
         return salary                                   # guaranteed: the full season's salary stays
     return round(salary * season_share(day))           # non-guaranteed: the days on the roster
 
@@ -176,6 +196,8 @@ def waived_charge(entry, day):
 def waive(writer, name, day, reason, note_rel):
     """Waive a Miami player: dead money booked, contract closed, holding ended, register and depth updated."""
     from .signing import _close_holding, long_date, note_event
+    c = ctx(day=day)
+    TEAM, SEASON, GUARANTEES = c.team, c.season, c.guarantees
     sheet = writer.load(TEAM / "Finances/contract_schedules.json")
     roster = writer.load(TEAM / "Team/Roster/roster.json")
     holdings = writer.load(TEAM / "Team/Roster/holdings.json")
@@ -186,9 +208,9 @@ def waive(writer, name, day, reason, note_rel):
     charge = waived_charge(entry, day)
     entry.update(status="waived", waived_date=day, dead_money={SEASON: charge})
     entry["cap_amount"] = {SEASON: charge}
-    entry["notes"] = entry.get("notes", "") + f" Waived {day}: ${charge:,} stays on the 2003-04 books ({reason})."
+    entry["notes"] = entry.get("notes", "") + f" Waived {day}: ${charge:,} stays on the {SEASON} books ({reason})."
     reg = next(p for p in roster["players"] if p["name"] == name)
-    reg["status"], reg["control"] = "waived", f"{long_date(day)}: waived ({reason}); ${charge:,} remains on the 2003-04 books."
+    reg["status"], reg["control"] = "waived", f"{long_date(day)}: waived ({reason}); ${charge:,} remains on the {SEASON} books."
     _close_holding(holdings, name, day)
     for names in depth["positions"].values():
         if name in names:
@@ -200,20 +222,23 @@ def waive(writer, name, day, reason, note_rel):
     if base:
         archive_contract(writer, {**entry, "contract_id": base["contract_id"], "ended_on": day}, day, event="released",
                          source=str(GUARANTEES), player_id=base["player_id"])
-    note_event(writer, note_rel, day, f"Miami waived {name} ({reason}); ${charge:,} remains on the 2003-04 books.")
+    note_event(writer, note_rel, day, f"Miami waived {name} ({reason}); ${charge:,} remains on the {SEASON} books.")
     return charge
 
 
-def non_guaranteed(sheet):
-    return [p for p in sheet["players"] if playable(p["status"]) and (p.get("guaranteed") or {}).get(SEASON) == 0
-            and p["schedule"].get(SEASON)]
+def non_guaranteed(sheet, season=None):
+    season = season or ctx().season
+    return [p for p in sheet["players"] if playable(p["status"]) and (p.get("guaranteed") or {}).get(season) == 0
+            and p["schedule"].get(season)]
 
 
 def guarantee_plan(sheet, front_office):
     """The front office's keep-or-waive decision for each non-guaranteed contract (rule, no draw)."""
+    c = ctx(getattr(front_office, "root", None))
+    SEASON, WAIVE_BY = c.season, c.waive_by
     committed, _ = front_office.committed()
     ceiling = front_office.payroll_ceiling()
-    rows = sorted(non_guaranteed(sheet), key=lambda p: front_office.valuation.value(p.get("bbr_id")) or 0.0)
+    rows = sorted(non_guaranteed(sheet, SEASON), key=lambda p: front_office.valuation.value(p.get("bbr_id")) or 0.0)
     plan, payroll = [], committed
     over = max(0, payroll - ceiling)
     for p in rows:
@@ -231,19 +256,25 @@ def guarantee_plan(sheet, front_office):
 
 def guarantee_errors(root=ROOT, today=None):
     """After the guarantee date, a contract still on the roster must be recorded as guaranteed."""
+    c = ctx(root)
+    GUARANTEES, GUARANTEE_DATE, TEAM = c.guarantees, c.guarantee, c.team
     data = read(GUARANTEES, root)
-    state = read(f"career/Dwyane_Wade/{SEASON}/current_state.json", root) or {}
+    state = read(f"career/Dwyane_Wade/{c.season}/current_state.json", root) or {}
     today = today or state.get("current_date", "")
     if today < GUARANTEE_DATE:
         return []
     if not data or not data.get("guaranteed_on"):
         return [f"guarantee review: contracts on the roster on {GUARANTEE_DATE} are not recorded as guaranteed (scripts/guarantee_review.py)"]
     sheet = read(TEAM / "Finances/contract_schedules.json", root)
-    return [f"{p['player']}: non-guaranteed contract left on the roster past {GUARANTEE_DATE}" for p in non_guaranteed(sheet)]
+    return [f"{p['player']}: non-guaranteed contract left on the roster past {GUARANTEE_DATE}" for p in non_guaranteed(sheet, c.season)]
 
 
 def required_before(game_date, root=ROOT):
     """The guarantee step a game on `game_date` waits for, or None."""
+    c = ctx(root, game_date)
+    GUARANTEES, WAIVE_BY, GUARANTEE_DATE = c.guarantees, c.waive_by, c.guarantee
+    if not (c.days[0] <= game_date):
+        return None
     data = read(GUARANTEES, root) or {}
     if game_date > WAIVE_BY and not data.get("decided_on"):
         return f"the January 10 guarantee review is due by {WAIVE_BY}; run scripts/guarantee_review.py --write {WAIVE_BY}"
@@ -261,11 +292,13 @@ def depth_views(root=ROOT, today=None):
     from .camp import playable as _playable
     from .rotation_reviews import rotation_in_force
     root = Path(root)
-    state = read(f"career/Dwyane_Wade/{SEASON}/current_state.json", root) or {}
+    c = ctx(root)
+    TEAM, LEDGER = c.team, c.ledger
+    state = read(f"career/Dwyane_Wade/{c.season}/current_state.json", root) or {}
     today = today or state.get("current_date")
     folder = root / TEAM / "Team/Depth_Chart"
     try:
-        rotation, depth = rotation_in_force(today, root, SEASON, require_review=False)
+        rotation, depth = rotation_in_force(today, root, c.season, require_review=False)
     except (OSError, ValueError, KeyError):
         return {}
     roster = read(TEAM / "Team/Roster/roster.json", root)

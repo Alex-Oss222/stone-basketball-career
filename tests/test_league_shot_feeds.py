@@ -6,7 +6,7 @@ from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 
-from runtime.league_cards import (CARDS_DIR, LEAGUE_DIR, SEASON_DIR, TEMPLATE, card_data,
+from runtime.league_cards import (CARDS_DIR, LEAGUE_DIR, PLAYER_DIR, TEMPLATE, card_data,
                                   closed_card_feeds, html_card, html_payload, markdown_card,
                                   period_statistics)
 from runtime.shot_events import engine_result_shots
@@ -55,7 +55,7 @@ def fixture_context(root):
                     team_name="Home Club", team_code="HOM", cohort="end_2002_03_roster")
                for pid, name in (("tracked01", "Tracked Guard"), ("other01", "Other Guard"),
                                  ("opponent01", "Opponent"))]
-    return SimpleNamespace(root=root, on="2003-11-04", honors={}, registry=dict(players=players), periods=[PERIOD],
+    return SimpleNamespace(root=root, on="2003-11-04", season="2003-04", seasons=["2003-04"], history={}, honors={}, registry=dict(players=players), periods=[PERIOD],
                            colors=dict(placeholder=dict(primary="#111111", secondary="#eeeeee"), eras=[]),
                            photos={}, baseline={}, prior={}, rights={}, signed={}, contracts={}, legend={}, miami_cards={},
                            template=(ROOT / TEMPLATE).read_text(),
@@ -81,7 +81,7 @@ class LeagueShotFeedTests(unittest.TestCase):
         return path
 
     def miami_note(self, result, *, status="scheduled", request=None):
-        folder = self.root / SEASON_DIR / "06_Regular_Season/11_November/Week_1"
+        folder = self.root / PLAYER_DIR / "2003-04" / "06_Regular_Season/11_November/Week_1"
         folder.mkdir(parents=True)
         (folder / "Game_1.result.json").write_text(json.dumps(result))
         (folder / "Game_1.md").write_text(

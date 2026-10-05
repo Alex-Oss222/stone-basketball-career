@@ -573,7 +573,7 @@ def build_games(day, root=ROOT, season=None):
             if lists is not None:
                 ledger = roster_moves.record_lists(roster_moves.ledger(root), day, lists["injured_list"], lists["placements"],
                                                    lists["activations"], injured, g["event_id"])
-                (root / roster_moves.LEDGER).write_text(json.dumps(ledger, indent=1) + "\n", encoding="utf-8")
+                (root / roster_moves.ctx(root).ledger).write_text(json.dumps(ledger, indent=1) + "\n", encoding="utf-8")
             data = dict(miami_request(game, players), game_type="playoff")
             note.parent.mkdir(parents=True, exist_ok=True)
             if not (note.parent / "note.md").is_file():

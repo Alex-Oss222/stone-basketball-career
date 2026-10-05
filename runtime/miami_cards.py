@@ -15,9 +15,15 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
-TEAM = Path(f"career/Dwyane_Wade/{SEASON}/00_Team/Team")
-CARDS = TEAM / "Player_Cards"
+
+
+def _season(root=None):
+    from .seasons import active
+    return active(root or ROOT)
+
+
+def team_dir(season):
+    return Path(f"career/Dwyane_Wade/{season}/00_Team/Team")
 GONE = ("released", "traded", "signed_elsewhere", "voided", "waived", "renounced", "declined")
 
 
@@ -25,14 +31,17 @@ def _read(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
-def rotations(root):
+def rotations(root, season=None):
     """[(date, rotation dict, relative source)] oldest first: the camp rotation, then each review's."""
+    from .seasons import dates
     root = Path(root)
+    season = season or _season(root)
+    TEAM = team_dir(season)
     out = []
     camp = root / TEAM / "Depth_Chart/rotation.json"
     if camp.is_file():
         data = _read(camp)
-        out.append((data.get("as_of", "2003-10-27"), data, "../Depth_Chart/rotation.json"))
+        out.append((data.get("as_of", dates(season, root)["roster_cut"]), data, "../Depth_Chart/rotation.json"))
     for path in sorted((root / TEAM / "Depth_Chart/Reviews").glob("*/rotation.json")):
         data = _read(path)
         out.append((data.get("as_of", path.parent.name), data, f"../Depth_Chart/Reviews/{path.parent.name}/rotation.json"))
@@ -49,8 +58,9 @@ def role_in(rotation, name):
     return "reserve outside the planned rotation"
 
 
-def injured_on(root, name, on):
-    ledger = Path(root) / f"career/Dwyane_Wade/{SEASON}/00_Team/Transactions/injured_list.json"
+def injured_on(root, name, on, season=None):
+    season = season or _season(root)
+    ledger = Path(root) / f"career/Dwyane_Wade/{season}/00_Team/Transactions/injured_list.json"
     if not ledger.is_file():
         return None
     for e in _read(ledger)["entries"]:
@@ -63,7 +73,7 @@ def _pct(made, att):
     return f"{100 * made / att:.1f}%" if att else "N/A"
 
 
-def season_row(records):
+def season_row(records, season):
     played = [r for r in records if r.get("line") and r["line"].get("appeared")]
     g = len(played)
     if not g:
@@ -71,7 +81,7 @@ def season_row(records):
     t = lambda k: sum(r["line"].get(k) or 0 for r in played)
     gs = sum(1 for r in played if r["line"].get("started"))
     per = lambda k: f"{t(k) / g:.1f}"
-    return [SEASON, "MIA", str(g), str(gs), f"{t('seconds') / 60 / g:.1f}", per("pts"), per("reb"), per("ast"), per("stl"),
+    return [season, "MIA", str(g), str(gs), f"{t('seconds') / 60 / g:.1f}", per("pts"), per("reb"), per("ast"), per("stl"),
             per("blk"), per("tov"), _pct(t("fgm"), t("fga")), _pct(t("tpm"), t("tpa")), _pct(t("ftm"), t("fta"))]
 
 
@@ -80,9 +90,11 @@ def refresh(root=ROOT, write=True):
     root = Path(root)
     from .write_back import clock, miami_lines
     now = clock(root)
+    season = _season(root)
+    TEAM = team_dir(season)
     roster = _read(root / TEAM / "Roster/roster.json")
-    lines, games = miami_lines(root, SEASON, now)
-    rots = rotations(root)
+    lines, games = miami_lines(root, season, now)
+    rots = rotations(root, season)
     changed = []
     for p in roster["players"]:
         if any(w in (p.get("status") or "") for w in GONE):
@@ -114,15 +126,25 @@ def refresh(root=ROOT, write=True):
                 new = re.sub(r"(## Changes and coaching notes\n\n\| Date \|[^\n]*\n\| ---[^\n]*\n(?:\|[^\n]*\n)*)",
                              lambda m: m.group(1) + note + "\n", new, count=1)
         new = re.sub(r"\*\*Statistics through:\*\* [^\n·]*", f"**Statistics through:** {now} ", new, count=1)
-        row = season_row(lines.get(name, []))
-        cells = row or [SEASON, "Miami Heat", "0"] + ["N/A"] * 11
-        new = re.sub(r"^\| 2003-04 \|[^\n]*$", "| " + " | ".join(cells) + " |", new, count=1, flags=re.M)
-        coverage = (f"2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: {row[2]} closed "
-                    f"Miami game(s) through {now}." if row else
-                    f"2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: no Miami appearance "
-                    f"through {now}.")
-        new = re.sub(r"^\*\*Coverage:\*\* 2002-03 regular season imported\.[^\n]*$", f"**Coverage:** {coverage}", new,
-                     count=1, flags=re.M)
+        row = season_row(lines.get(name, []), season)
+        cells = row or [season, "Miami Heat", "0"] + ["N/A"] * 11
+        line = "| " + " | ".join(cells) + " |"
+        if re.search(rf"^\| {season} \|", new, flags=re.M):
+            new = re.sub(rf"^\| {season} \|[^\n]*$", line, new, count=1, flags=re.M)
+        else:                                                         # a new season's row goes after the last one
+            new = re.sub(r"(## Regular-season statistics by year\n(?:(?!\n## )[\s\S])*?\| Season \|[^\n]*\n\| ---[^\n]*\n(?:\|[^\n]*\n)*)",
+                         lambda m: m.group(1) + line + "\n", new, count=1)
+        tail = (f"{season}: {row[2]} closed Miami game(s) through {now}." if row else
+                f"{season}: no Miami appearance through {now}.")
+        # The generated coverage line only: the 2003 import's wording, or "Closed Miami results" on later cards.
+        cov = re.search(r"^\*\*Coverage:\*\* (?:2002-03 regular season imported\.|Closed Miami results)[^\n]*$", new, flags=re.M)
+        if cov:
+            text_cov = cov.group(0)
+            if f"; {season}:" in text_cov:
+                updated = text_cov[:text_cov.index(f"; {season}:")] + "; " + tail
+            else:
+                updated = text_cov.rstrip(".") + "; " + tail if text_cov.endswith(".") else text_cov + "; " + tail
+            new = new[:cov.start()] + updated + new[cov.end():]
         if new != text:
             changed.append(card)
             if write:

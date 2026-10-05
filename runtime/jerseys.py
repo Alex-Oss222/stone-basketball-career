@@ -1,24 +1,22 @@
 """Uniform numbers on a date, club by club (identity data, never a game input).
 
-- Real players wear their real 2003-04 number with that club (`library/2003/league/nba_2003_04_jerseys.json`,
-  Basketball-Reference team rosters). A player the simulation put on a different club keeps his 2003-04 number from
-  another club, then his 2002-03 number (`nba_2003_end_of_season.json`), when it is free there.
+- Real players wear their real number for the season with that club (`library/<year>/league/nba_<season>_jerseys.json`,
+  Basketball-Reference team rosters). A player the simulation put on a different club keeps his number for the season
+  from another club, then his numbers from earlier seasons, newest first, then his 2002-03 number
+  (`nba_2003_end_of_season.json`), when it is free there.
 - Within a club a number is held once: the player already there keeps it; a later arrival whose numbers are all
   taken takes the lowest number from 0 to 55 not in use (the equipment manager's choice; judgement, documented).
 - The simulated Wade has no real number: his is set by his own request and, when another player holds it, that
   player's answer, an engine decision draw (`Wade_Jersey/`). After a decline Wade may choose to wait for the number
   (`Wade_Jersey/wade_choice.json`): he takes it the first date no other Miami player holds it. Until a number is
-  settled he is "not assigned".
+  settled he is "not assigned". A settled number stays his in later seasons; his requests and choice are searched
+  from the live season back.
 """
 import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
-REAL = Path("library/2003/league/nba_2003_04_jerseys.json")
 BASELINE = Path("library/2003/league/nba_2003_end_of_season.json")
-REGISTER = Path(f"career/Dwyane_Wade/{SEASON}/00_Team/Team/Roster/roster.json")
-WADE_REQUESTS = Path(f"career/Dwyane_Wade/{SEASON}/00_Team/Team/Roster/Wade_Jersey")
 MIAMI = "Miami Heat"
 WADE = "Dwyane Wade"
 GONE = ("released", "traded", "signed_elsewhere", "voided", "waived", "renounced", "declined")
@@ -29,11 +27,40 @@ def _read(path, root):
     return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {}
 
 
+def _season(root=None):
+    from .seasons import active
+    return active(root or ROOT)
+
+
+def register_path(root=ROOT):
+    return Path(f"career/Dwyane_Wade/{_season(root)}/00_Team/Team/Roster/roster.json")
+
+
+def request_dirs(root=ROOT):
+    """Wade's jersey folders, the live season first, then earlier seasons."""
+    from .seasons import live_seasons
+    seasons = list(reversed(live_seasons(root) if (Path(root) / "career/Dwyane_Wade").is_dir() else [])) or [_season(root)]
+    return [Path(f"career/Dwyane_Wade/{s}/00_Team/Team/Roster/Wade_Jersey") for s in seasons]
+
+
+def _jersey_files(root):
+    """The live season's jersey file, then earlier seasons', newest first."""
+    from .seasons import path, previous_season
+    season, out = _season(root), []
+    while int(season[:4]) >= 2003:
+        out.append(path(season, "jerseys"))
+        season = previous_season(season)
+    return out
+
+
 def candidates(bbr, club, root=ROOT):
     """His numbers in order of preference for this club."""
-    real = _read(REAL, root).get("players", {}).get(bbr, [])
+    files = [_read(f, root).get("players", {}).get(bbr, []) for f in _jersey_files(root)]
+    real = files[0] if files else []
     out = [r["number"].split(",")[-1].strip() for r in real if r["club"] == club]
     out += [r["number"].split(",")[-1].strip() for r in real if r["club"] != club]
+    for older in files[1:]:
+        out += [r["number"].split(",")[-1].strip() for r in older]
     for c in _read(BASELINE, root).get("clubs", {}).values():
         for p in c["players"]:
             if p.get("bbr_id") == bbr and p.get("jersey"):
@@ -45,7 +72,7 @@ def candidates(bbr, club, root=ROOT):
     return seen
 
 
-CHOICE = WADE_REQUESTS / "wade_choice.json"
+CHOICE_NAME = "wade_choice.json"
 
 
 def wade_number(root=ROOT):
@@ -54,18 +81,27 @@ def wade_number(root=ROOT):
     number, source = _requested_number(root)
     if number:
         return number, source
-    choice = _read(CHOICE, root)
-    if choice.get("number"):
-        register = _read(REGISTER, root).get("players", [])
-        holders = [p for p in register if p["name"] != WADE and not any(w in (p.get("status") or "") for w in GONE)
-                   and choice["number"] in candidates(p.get("bbr_id"), MIAMI, root)[:1]]
-        if not holders:
-            return choice["number"], CHOICE.name
+    for folder in request_dirs(root):
+        choice = _read(folder / CHOICE_NAME, root)
+        if choice.get("number"):
+            register = _read(register_path(root), root).get("players", [])
+            holders = [p for p in register if p["name"] != WADE and not any(w in (p.get("status") or "") for w in GONE)
+                       and choice["number"] in candidates(p.get("bbr_id"), MIAMI, root)[:1]]
+            if not holders:
+                return choice["number"], CHOICE_NAME
+            return None, None
     return None, None
 
 
 def _requested_number(root=ROOT):
-    folder = Path(root) / WADE_REQUESTS
+    for rel in request_dirs(root):
+        number, source = _requested_in(Path(root) / rel)
+        if number:
+            return number, source
+    return None, None
+
+
+def _requested_in(folder):
     for packet in sorted(folder.glob("*.decision.json")) if folder.is_dir() else []:
         result = packet.with_name(packet.name.replace(".decision.json", ".decision.result.json"))
         if not result.is_file():
@@ -94,7 +130,7 @@ def assign(players, root=ROOT, fixed=None):
 
 def miami_numbers(root=ROOT):
     """Miami's register on the career date: {name: number or None}; Wade only from his settled request."""
-    register = _read(REGISTER, root).get("players", [])
+    register = _read(register_path(root), root).get("players", [])
     active = [p for p in register if not any(w in (p.get("status") or "") for w in GONE)]
     wade, _ = wade_number(root)
     fixed = {WADE: wade}
@@ -119,16 +155,17 @@ def miami_numbers(root=ROOT):
 def number_for(bbr, club, root=ROOT):
     """A league card's number: Miami's from its register, others' first preference (their real club's number)."""
     if club == MIAMI:
-        register = {p.get("bbr_id"): p["name"] for p in _read(REGISTER, root).get("players", [])}
+        register = {p.get("bbr_id"): p["name"] for p in _read(register_path(root), root).get("players", [])}
         return miami_numbers(root).get(register.get(bbr))
     pref = candidates(bbr, club, root)
     return pref[0] if pref else None
 
 
-def request_packet(number, holder, date, standing):
+def request_packet(number, holder, date, standing, season=None):
     """Wade's request for a number another player holds: the holder's answer is an engine draw."""
     accept = 0.6
-    return {"event_id": f"{SEASON}-wade-jersey-request-{number}", "date": date,
+    season = season or _season()
+    return {"event_id": f"{season}-wade-jersey-request-{number}", "date": date,
             "question": f"Does {holder} give jersey #{number} to Dwyane Wade?",
             "decider": f"{holder} (simulated player)",
             "options": {"accept": accept, "decline": round(1 - accept, 6)},

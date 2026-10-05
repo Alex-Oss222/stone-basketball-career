@@ -1,7 +1,7 @@
-"""End-of-season NBA awards for 2003-04, decided on their real announcement dates from closed simulated results.
+"""End-of-season NBA awards for the live season, decided on their real announcement dates from closed simulated results.
 
-The calendar, electorates and ballot scoring are researched (`library/2003/league/nba_2003_04_season_awards.json`);
-no real 2004 winner, vote or ballot is read. Each award closes on its announcement date. Its ballots use only closed
+The calendar, electorates and ballot scoring are researched per season (`library/<year>/league/nba_<season>_season_awards.json`,
+read through `runtime/seasons.py`); no real winner, vote or ballot is read. Each award closes on its announcement date. Its ballots use only closed
 regular-season results (`write_back.closed_results`, through April 14), standings from those results, the 2002-03
 season as the prior-year baseline (Most Improved, Coach of the Year), and the season's head coaches.
 
@@ -41,17 +41,6 @@ from pathlib import Path
 from statistics import mean, pstdev
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
-SEASON_END = "2004-04-14"
-CALENDAR = Path("library/2003/league/nba_2003_04_season_awards.json")
-CONFERENCES = Path("library/2003/league/nba_2003_04_conferences.json")
-STAFFS = Path("library/2003/league/nba_2003_04_staffs.json")
-PRIOR_STATS = Path("library/2003/league/nba_2002_03_player_stats.json")
-PRIOR_STANDINGS = Path("library/2003/league/nba_2002_03_standings.json")
-LEAGUE = Path(f"career/Dwyane_Wade/Stats_and_Awards/League/{SEASON}")
-RECORD = LEAGUE / "season_awards.json"
-DRAWS = LEAGUE / "Award_Draws"
-PAGE = LEAGUE / "Season_Awards.md"
 PLAYER = Path("career/Dwyane_Wade")
 WADE = "Dwyane Wade"
 GROUP = {"PG": "G", "SG": "G", "G": "G", "SF": "F", "PF": "F", "F": "F", "C": "C"}
@@ -62,12 +51,28 @@ DEF_MINUTES, FULL_MINUTES, FULL_GAMES = 24.0, 32.0, 70
 TEAM_NAMES = {1: "First Team", 2: "Second Team", 3: "Third Team"}
 
 
+def C(root=ROOT, season=None):
+    """The live season's award context (runtime/seasons.py): files, dates and pages."""
+    from types import SimpleNamespace
+    from . import seasons
+    root = Path(root)
+    season = season or seasons.active(root)
+    gates = seasons.dates(season, root)
+    league = Path(f"career/Dwyane_Wade/Stats_and_Awards/League/{season}")
+    prev = seasons.previous_season(season)
+    return SimpleNamespace(season=season, end=gates["regular_season_end"], opening=gates["opening_night"],
+                           calendar=seasons.path(season, "season_awards"), conferences=seasons.path(season, "conferences"),
+                           staffs=seasons.path(season, "staffs"), league=league, record=league / "season_awards.json",
+                           draws=league / "Award_Draws", page=league / "Season_Awards.md", previous=prev,
+                           simulated_previous=(root / PLAYER / prev / "season_close.json").is_file())
+
+
 def _read(path):
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
 def calendar(root=ROOT):
-    return _read(Path(root) / CALENDAR)
+    return _read(Path(root) / C(root).calendar)
 
 
 def game_score(p):
@@ -76,7 +81,7 @@ def game_score(p):
 
 
 # -- evidence ------------------------------------------------------------------------------------------------
-def identities(root):
+def identities(root, season=None):
     """{name as results key him: (dated record name, bbr_id, position group)}."""
     from .award_decisions import registry_names
     from .rotations import load_rosters
@@ -85,11 +90,13 @@ def identities(root):
     registry = registry["players"] if isinstance(registry, dict) else registry
     by_bbr = {p["bbr_id"]: p for p in registry if p.get("bbr_id")}
     by_name = {p["name"]: p for p in registry}
-    names = registry_names(root)
+    season = season or C(root).season
+    names = registry_names(root, season)
     out = {}
-    pairs = [(p["player_id"], p.get("bbr_id")) for club in load_rosters(SEASON, root).values() for p in club["players"]]
-    roster = _read(root / f"career/Dwyane_Wade/{SEASON}/00_Team/Team/Roster/roster.json")
-    pairs += [(p["name"], p.get("bbr_id")) for p in roster["players"]]
+    pairs = [(p["player_id"], p.get("bbr_id")) for club in load_rosters(season, root).values() for p in club["players"]]
+    roster_path = root / f"career/Dwyane_Wade/{season}/00_Team/Team/Roster/roster.json"
+    if roster_path.is_file():
+        pairs += [(p["name"], p.get("bbr_id")) for p in _read(roster_path)["players"]]
     for name, bbr in pairs:
         entry = by_bbr.get(bbr) or by_name.get(names.get(name, name)) or {}
         out[name] = (names.get(name, name), bbr or entry.get("bbr_id"), GROUP.get(entry.get("position") or "", None))
@@ -98,13 +105,13 @@ def identities(root):
     return out
 
 
-def season_lines(rows):
-    """Per player and per club, totals over the closed regular season."""
+def season_lines(rows, end=None):
+    """Per player and per club, totals over the closed regular season (rows after `end` are left out)."""
     players = defaultdict(lambda: defaultdict(float))       # "_club" holds a name
     clubs = defaultdict(lambda: defaultdict(float))
     for row in rows:
         r = row["result"]
-        if r["game_date"] > SEASON_END:
+        if end and r["game_date"] > end:
             continue
         for side, other in (("home", "away"), ("away", "home")):
             team = r[side]
@@ -129,9 +136,24 @@ def season_lines(rows):
 
 
 def prior_rates(root):
-    """{bbr_id: (games, Game Score per game)} for 2002-03, from the library's real totals."""
+    """{bbr_id: (games, Game Score per game)} for the season before: its closed simulated results when the career
+    played it, else the library's real totals (the season before the career began)."""
+    ctx = C(root)
+    if ctx.simulated_previous:
+        from .seasons import dates
+        from .write_back import closed_results
+        end = dates(ctx.previous, root)["regular_season_end"]
+        players, _ = season_lines(closed_results(root, ctx.previous, end), end)
+        ids = identities(root, ctx.previous)
+        out = {}
+        for name, t in players.items():
+            bbr = ids.get(name, (name, None, None))[1]
+            if bbr and t["games"]:
+                out[bbr] = (int(t["games"]), t["gmsc"] / t["games"])
+        return out
+    from .seasons import prior_path
     out = {}
-    for rec in _read(Path(root) / PRIOR_STATS)["records"]:
+    for rec in _read(Path(root) / prior_path(ctx.season, "player_stats"))["records"]:
         t = rec["totals"]
         if not t.get("games"):
             continue
@@ -147,7 +169,7 @@ def prior_rates(root):
 def candidates(root, rows):
     """Every player's season evidence, keyed by the dated record name."""
     from .award_decisions import rookies
-    players, clubs = season_lines(rows)
+    players, clubs = season_lines(rows, C(root).end)
     ids, first, prior = identities(root), rookies(root), prior_rates(root)
     out = {}
     for name, t in players.items():
@@ -227,17 +249,30 @@ def coaches(root):
     """{club: coach at the season's end who coached at least half of it}; Miami's from its simulated team config."""
     root = Path(root)
     out = {}
-    for club, info in _read(root / STAFFS)["clubs"].items():
+    for club, info in _read(root / C(root).staffs)["clubs"].items():
         last = info["head_coaches"][-1]
         if last["window"][1] >= 1.0 and last["window"][1] - last["window"][0] >= 0.5:
             out[club] = last["name"]
-    team = _read(root / f"career/Dwyane_Wade/{SEASON}/00_Team/team_config.json")
+    team = _read(root / f"career/Dwyane_Wade/{C(root).season}/00_Team/team_config.json")
     out["Miami Heat"] = team["head_coach"]
     return out
 
 
+def prior_records(root):
+    """{club: {"wins", "losses"}} for the season before: simulated when the career played it, else real."""
+    ctx = C(root)
+    if ctx.simulated_previous:
+        from .seasons import dates
+        from .standings import standings_on
+        table = standings_on(dates(ctx.previous, root)["regular_season_end"], root, ctx.previous)
+        rows = table if isinstance(table, list) else [r for conf in table.values() for r in conf]
+        return {r["club"]: {"wins": r["wins"], "losses": r["losses"]} for r in rows}
+    from .seasons import library, tag, previous_season
+    return _read(Path(root) / library(ctx.season) / f"nba_{tag(previous_season(ctx.season))}_standings.json")["clubs"]
+
+
 def coach_pool(root, clubs):
-    prior = _read(Path(root) / PRIOR_STANDINGS)["clubs"]
+    prior = prior_records(root)
     out = {}
     for club, coach in coaches(root).items():
         c = clubs.get(club)
@@ -361,9 +396,9 @@ def _player_row(c, extra=None):
 def decide_one(award, rows, root):
     pool_all, clubs = candidates(root, rows)
     a_id, n, ballot = award["id"], award["electorate"], award["ballot"]
-    base = {"id": f"{SEASON}-{a_id}", "award": a_id, "name": award["name"], "announced_on": award["announced"],
+    base = {"id": f"{C(root).season}-{a_id}", "award": a_id, "name": award["name"], "announced_on": award["announced"],
             "electorate": n, "voters": award["voters"], "ballot": ballot, "lens": list(LENS[a_id]),
-            "evidence_through": SEASON_END}
+            "evidence_through": C(root).end}
     if a_id == "coy":
         pool = coach_pool(root, clubs)
         scored = list(zip(sorted(pool), _z([pool[c]["above_expected"] for c in sorted(pool)]),
@@ -387,7 +422,7 @@ def decide_one(award, rows, root):
     groups = {"position": {k: c["position"] for k, c in pool.items()}, "team": {k: c["team"] for k, c in pool.items()}}
     exclude = None
     if "own players" in award["voters"]:
-        clubs_sorted = sorted(c for cs in _read(Path(root) / CONFERENCES)["conferences"].values() for c in cs)[:n]
+        clubs_sorted = sorted(c for cs in _read(Path(root) / C(root).conferences)["conferences"].values() for c in cs)[:n]
         exclude = lambda i: clubs_sorted[i]
     if not isinstance(per_team, int):
         scored = [s for s in scored if groups["position"].get(s[0])]
@@ -401,11 +436,11 @@ def decide_one(award, rows, root):
 
 
 def read_record(root=ROOT):
-    path = Path(root) / RECORD
+    path = Path(root) / C(root).record
     if path.is_file():
         return _read(path)
-    return {"schema_version": 1, "season": SEASON, "kind": "season_awards",
-            "rule": __doc__.split("\n\n", 1)[1].strip(), "calendar": CALENDAR.as_posix(), "decisions": []}
+    return {"schema_version": 1, "season": C(root).season, "kind": "season_awards",
+            "rule": __doc__.split("\n\n", 1)[1].strip(), "calendar": C(root).calendar.as_posix(), "decisions": []}
 
 
 def announced_on(award, root=ROOT):
@@ -435,10 +470,10 @@ def finals_mvp(award, root):
     root = Path(root)
     finals = next(s for s in read(root)["series"] if s["round"] == "finals")
     ids = {g["event_id"] for g in finals["games"] if g.get("event_id")}
-    rows = [r for r in closed_playoff_results(root, SEASON, award["announced"]) if r["result"]["event_id"] in ids]
+    rows = [r for r in closed_playoff_results(root, C(root).season, award["announced"]) if r["result"]["event_id"] in ids]
     n_games = len(rows)
     pool = {}
-    for (name, club), recs in player_lines(rows, root, SEASON).items():
+    for (name, club), recs in player_lines(rows, root, C(root).season).items():
         s = aggregate(recs)
         if s["gp"] * 2 < n_games:                           # at least half the Finals games
             continue
@@ -452,12 +487,12 @@ def finals_mvp(award, root):
     scored = list(zip(names, [mean(v) for v in zip(*parts)], _z([1.0 if pool[k]["champion"] else 0.0 for k in names])))
     votes = tally_single("finals_mvp", scored, award["electorate"], award["ballot"])
     top = winners(votes)
-    base = {"id": f"{SEASON}-finals_mvp", "award": "finals_mvp", "name": award["name"], "announced_on": award["announced"],
+    base = {"id": f"{C(root).season}-finals_mvp", "award": "finals_mvp", "name": award["name"], "announced_on": award["announced"],
             "electorate": award["electorate"], "voters": award["voters"], "ballot": award["ballot"],
             "lens": list(LENS["finals_mvp"]), "evidence_through": award["announced"], "competition": "playoff",
             "finals_games": n_games, "period_start": min(r["result"]["game_date"] for r in rows)}
     if len(top) > 1:
-        packet = root / DRAWS / f"{base['id']}.decision.json"
+        packet = root / C(root).draws / f"{base['id']}.decision.json"
         result = packet.with_name(packet.name.replace(".decision.json", ".decision.result.json"))
         if not packet.is_file():
             packet.parent.mkdir(parents=True, exist_ok=True)
@@ -470,7 +505,7 @@ def finals_mvp(award, root):
         if not result.is_file():
             return None
         top = [_read(result)["outcome"]]
-        base["tie_draw"] = (DRAWS / result.name).as_posix()
+        base["tie_draw"] = (C(root).draws / result.name).as_posix()
     return dict(base, winners=top, tally=[dict(pool[v["player"]], points=v["points"], first_place=v["first_place"],
                                                votes_by_place=v["votes_by_place"]) for v in votes])
 
@@ -485,18 +520,18 @@ def decide(root=ROOT, clock=None):
     pending = [a for a in due(root, clock) if a["id"] not in done]
     if not pending:
         return []
-    rows = closed_results(root, SEASON, SEASON_END)
+    rows = closed_results(root, C(root).season, C(root).end)
     new = [finals_mvp(a, root) if a["id"] == "finals_mvp" else decide_one(a, rows, root) for a in pending]
     new = [d for d in new if d]                             # a Finals MVP tie waits for its engine draw
     if not new:
         return []
     record["decisions"] += new
     record["decisions"].sort(key=lambda d: d["announced_on"])
-    (root / RECORD).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    (root / C(root).record).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     if _record_wade(root, record):
         from . import standing
-        standing.record(root, clock, "honor_recorded", PAGE.relative_to(PLAYER).as_posix())
-    (root / PAGE).write_text(page(record, clock, root), encoding="utf-8")
+        standing.record(root, clock, "honor_recorded", C(root).page.relative_to(PLAYER).as_posix())
+    (root / C(root).page).write_text(page(record, clock, root), encoding="utf-8")
     return new
 
 
@@ -531,10 +566,10 @@ def _record_wade(root, record):
             if player != WADE or award_id in have:
                 continue
             data["awards"].append({"id": award_id, "name": name, "short_name": short_name(name), "status": "earned",
-                                   "competition": d.get("competition", "regular"), "season": SEASON,
-                                   "period_start": d.get("period_start", "2003-10-28"),
+                                   "competition": d.get("competition", "regular"), "season": C(root).season,
+                                   "period_start": d.get("period_start", C(root).opening),
                                    "period_end": d["evidence_through"], "awarded_on": d["announced_on"],
-                                   "source": PAGE.relative_to(PLAYER).as_posix() + "#" + d["name"].lower().replace(" ", "-")})
+                                   "source": C(root).page.relative_to(PLAYER).as_posix() + "#" + d["name"].lower().replace(" ", "-")})
             added += 1
     data["awards"].sort(key=lambda a: (a["awarded_on"], a["id"]))
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -549,9 +584,9 @@ def _table(headers, rows):
 
 def page(record, clock, root=ROOT):
     cal = {a["id"]: a for a in calendar(root)["awards"]}
-    lines = [f"# {SEASON} season awards", "",
-             f"Decided on each award's real announcement date from closed simulated results through {SEASON_END} "
-             "(`runtime/season_awards.py`); no real 2004 vote is used. Every voter in the real electorate files a ballot; "
+    lines = [f"# {C(root).season} season awards", "",
+             f"Decided on each award's real announcement date from closed simulated results through {C(root).end} "
+             "(`runtime/season_awards.py`); no real vote is used. Every voter in the real electorate files a ballot; "
              f"voters differ only in how they weigh the award's two criteria. Through {clock}.", ""]
     decided = {d["award"]: d for d in record["decisions"]}
     lines += ["## Calendar", ""] + _table(["Announced", "Award", "Voters", "Ballot", "Status"], [
@@ -586,7 +621,7 @@ def page(record, clock, root=ROOT):
 def season_award_errors(root=ROOT):
     from .write_back import clock as career_clock
     root = Path(root)
-    if not (root / CALENDAR).is_file():
+    if not (root / C(root).calendar).is_file():
         return []
     clock = career_clock(root)
     done = {d["award"] for d in read_record(root)["decisions"]}

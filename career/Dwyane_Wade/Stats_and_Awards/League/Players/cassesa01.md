@@ -123,7 +123,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-Simulated 2003-04 honors and shortlist placings through 2004-06-24, from closed award decisions (6 won). Historical awards are not imported.
+Simulated honors and shortlist placings through 2004-06-24, from closed award decisions (6 won). Historical awards are not imported.
 
 | Award | Period | Announced | Result | Record |
 | --- | --- | --- | --- | --- |

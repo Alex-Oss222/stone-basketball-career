@@ -22,7 +22,7 @@ class JerseyTests(unittest.TestCase):
 
     def test_wade_has_no_number_until_a_request_is_accepted(self):
         number, source = J.wade_number(ROOT)
-        decided = sorted((ROOT / J.WADE_REQUESTS).glob("*.decision.result.json"))
+        decided = sorted((ROOT / J.request_dirs(ROOT)[0]).glob("*.decision.result.json"))
         if not any('"accept"' in p.read_text(encoding="utf-8") for p in decided):
             self.assertIsNone(number)
         numbers = J.miami_numbers(ROOT)
@@ -33,16 +33,18 @@ class JerseyTests(unittest.TestCase):
         import json, shutil, tempfile
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
-            for rel in (J.REGISTER, J.REAL, J.BASELINE):
+            from runtime.seasons import path as season_path
+            register, requests = J.register_path(ROOT), J.request_dirs(ROOT)[0]
+            for rel in (register, season_path("2003-04", "jerseys"), J.BASELINE):
                 (tmp / rel).parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy(ROOT / rel, tmp / rel)
-            shutil.copytree(ROOT / J.WADE_REQUESTS, tmp / J.WADE_REQUESTS)
+            shutil.copytree(ROOT / requests, tmp / requests)
             self.assertEqual(J.wade_number(tmp), (None, None))          # LaPhonso Ellis still wears #3
-            register = json.loads((tmp / J.REGISTER).read_text(encoding="utf-8"))
-            for p in register["players"]:
+            data = json.loads((tmp / register).read_text(encoding="utf-8"))
+            for p in data["players"]:
                 if p["name"] == "LaPhonso Ellis":
                     p["status"] = "contract_expired_released"
-            (tmp / J.REGISTER).write_text(json.dumps(register), encoding="utf-8")
+            (tmp / register).write_text(json.dumps(data), encoding="utf-8")
             self.assertEqual(J.wade_number(tmp)[0], "3")
 
     def test_request_packet_is_a_two_way_draw(self):

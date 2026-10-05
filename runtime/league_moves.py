@@ -4,7 +4,7 @@ Only while `league_book.active(date)`. From the activation date each real club s
 that date; real moves after it are not applied (the clubs now decide for themselves). Simulated moves between
 real clubs (`league_moves.json`, written by `league_trades.py` and later the league market) move a player
 from one club to another from their date. Miami's rules 2 and 3 and the disturbed-club replacements apply on
-top, as under option D. A moved player keeps his real 2003-04 role: his minutes per game and games share of
+top, as under option D. A moved player keeps his real role for the season: his minutes per game and games share of
 his season (summed over his real stints), which `rotations.real_rotation` turns into the game input.
 
 Off (the default), nothing here is read and every input is exactly option D's.
@@ -23,7 +23,16 @@ def _active_season(root=None):
     """The career's live season (runtime/seasons.py), read from the repository a call works on."""
     from .seasons import active
     return active(root or ROOT)
-SEASON = "2003-04"
+
+
+def book_path(season):
+    """The season's opening rosters, written by the rollover from the summer market (runtime/offseason.py)."""
+    return Path(f"career/Dwyane_Wade/{season}/League/opening_rosters.json")
+
+
+def opening_book(season, root=ROOT):
+    path = Path(root) / book_path(season)
+    return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else None
 
 
 def ledger_path(season):
@@ -53,6 +62,26 @@ def season_roles(season=None, root=ROOT):
                                                "games": 0, "minutes": 0})
             r["games"] += p["games"]
             r["minutes"] += p["minutes"]
+    # Real Miami's players are not in the club rosters (Miami is simulated); a season that opens from a book can put
+    # one on a real club, so his real season comes from the careers table (minutes; games from the season's minutes
+    # per game where the table has no games). Identity only: never a result.
+    if opening_book(season, root) is not None:
+        careers = json.loads((Path(root) / "library/careers/nba_player_careers.json").read_text(encoding="utf-8"))["players"]
+        positions = {}
+        book = opening_book(season, root)
+        for rows in book["clubs"].values():
+            for p in rows:
+                positions[p["bbr_id"]] = (p.get("player_id"), p.get("position"))
+        for p in book.get("pool", []):
+            positions.setdefault(p["bbr_id"], (p.get("player_id"), p.get("position")))
+        for bbr, (name, pos) in positions.items():
+            if bbr in roles:
+                continue
+            row = (careers.get(bbr) or {}).get("seasons", {}).get(season)
+            if row and row.get("minutes"):
+                games = row.get("games") or max(1, round(row["minutes"] / 20))
+                roles[bbr] = {"player_id": name or (careers.get(bbr) or {}).get("player_name", bbr), "bbr_id": bbr,
+                              "position": pos or "SF", "games": games, "minutes": row["minutes"]}
     return roles
 
 
@@ -66,7 +95,16 @@ def _activation(season, root, start):
     A player is with the club whose real stint covers the date; if his next real stint begins within STRADDLE
     after it, the trade that moved him is completed (stints are placed by order and games, not dates, so a trade
     near the switch would otherwise be frozen half-done). Each club then keeps its ROSTER_MAX largest real roles
-    for the season; the others start as unsigned free agents whom the league market signs as clubs need players."""
+    for the season; the others start as unsigned free agents whom the league market signs as clubs need players.
+
+    A season with an opening book (every season after the first) starts from it instead: the clubs the summer market
+    and the rollover gave each player, its pool unsigned."""
+    book = opening_book(season, root)
+    if book is not None:
+        holder = {p["bbr_id"]: club for club, rows in book["clubs"].items() for p in rows if p.get("bbr_id")}
+        roles = season_roles(season, root)
+        extras = [dict(roles.get(p["bbr_id"], p), released_by=None) for p in book.get("pool", []) if p.get("bbr_id")]
+        return holder, sorted(extras, key=lambda e: e["bbr_id"])
     start = start or league_book.SYMMETRIC_FROM
     fraction = season_fraction(season, start, root)
     stints = {}
@@ -84,7 +122,7 @@ def _activation(season, root, start):
             pick = later[0] if later else rows[-1]
         holder[bbr] = pick[0]
     roles = season_roles(season, root)
-    protected = _protected_contracts(root)
+    protected = _protected_contracts(root, season)
     extras = []
     for club in {c for c in holder.values()}:
         # Over fifteen, a club lets go of minimum and unsigned players first (smallest real role first); a first-round
@@ -97,15 +135,16 @@ def _activation(season, root, start):
     return holder, sorted(extras, key=lambda e: e["bbr_id"])
 
 
-def _protected_contracts(root):
-    """bbr_ids under a rookie-scale contract, a 2003 first-round pick, or a 2003-04 salary above the highest minimum."""
+def _protected_contracts(root, season="2003-04"):
+    """bbr_ids under a rookie-scale contract, a 2003 first-round pick, or a 2003-04 salary above the highest minimum
+    (the first season's activation; later seasons open from their book)."""
     path = Path(root) / "library/2003/league/nba_2003_contracts.json"
     # Above the highest minimum on the scale (10+ years of service): a veteran on his own minimum is not protected.
-    minimum = json.loads((Path(root) / "library/2003/league/nba_1999_cba_minimum_salary_scale.json").read_text(encoding="utf-8"))["seasons"][SEASON]["10_plus"] / 1.5 * 1.05
+    minimum = json.loads((Path(root) / "library/2003/league/nba_1999_cba_minimum_salary_scale.json").read_text(encoding="utf-8"))["seasons"][season]["10_plus"] / 1.5 * 1.05
     out = set()
     for club in json.loads(path.read_text(encoding="utf-8"))["clubs"].values():
         for p in club["players"]:
-            salary = (p.get("schedule") or {}).get(SEASON) or 0
+            salary = (p.get("schedule") or {}).get(season) or 0
             if p.get("bbr_id") and (p.get("status") == "under_rookie_contract" or salary > 1.5 * minimum):
                 out.add(p["bbr_id"])
     # The summer's rookie-scale and above-minimum signings (after the June inventory was compiled).

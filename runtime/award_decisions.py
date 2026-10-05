@@ -31,12 +31,6 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SEASON = "2003-04"
-SEASON_START, SEASON_END = "2003-10-28", "2004-04-14"
-LEAGUE = Path(f"career/Dwyane_Wade/Stats_and_Awards/League/{SEASON}")
-DECISIONS = LEAGUE / "award_decisions.json"
-DRAWS = LEAGUE / "Award_Draws"
-CONFERENCES = Path("library/2003/league/nba_2003_04_conferences.json")
 PLAYER = Path("career/Dwyane_Wade")
 WADE = "Dwyane Wade"
 MONTH_DIRS = {10: "10_October", 11: "11_November", 12: "12_December", 1: "01_January", 2: "02_February",
@@ -59,45 +53,88 @@ def _d(text):
     return date.fromisoformat(text)
 
 
-def periods():
-    """Every award period of the season: (award, start, end, announced_on)."""
+def _season(root=None):
+    from .seasons import active
+    return active(root or ROOT)
+
+
+def league_dir(season):
+    return Path(f"career/Dwyane_Wade/Stats_and_Awards/League/{season}")
+
+
+def decisions_path(season):
+    return league_dir(season) / "award_decisions.json"
+
+
+def draws_dir(season):
+    return league_dir(season) / "Award_Draws"
+
+
+def conference_names(season, root=ROOT):
+    from .seasons import conferences as alignment
+    return list(alignment(season, root))
+
+
+def _next_month(d):
+    return date(d.year + (d.month == 12), d.month % 12 + 1, 1)
+
+
+def periods(season=None, root=ROOT):
+    """Every award period of the season: (award, start, end, announced_on). Weeks run Monday to Sunday from opening
+    night to the last regular-season day; months are calendar months, an October opening folded into November."""
+    from .seasons import dates
+    season = season or _season(root)
+    gates = dates(season, root)
     out = []
-    start, last = _d(SEASON_START), _d(SEASON_END)
+    start, last = _d(gates["opening_night"]), _d(gates["regular_season_end"])
     while start <= last:
         end = min(start + timedelta(days=6 - start.weekday()), last)
         out.append(("player_of_week", start.isoformat(), end.isoformat(), (end + timedelta(days=1)).isoformat()))
         start = end + timedelta(days=1)
-    for first in ("2003-10-28", "2003-12-01", "2004-01-01", "2004-02-01", "2004-03-01", "2004-04-01"):
-        f = _d(first)
-        nxt = date(f.year + (f.month == 12), f.month % 12 + 1, 1) if f.month != 10 else date(2003, 12, 1)
+    first = _d(gates["opening_night"])
+    while first <= last:
+        nxt = _next_month(first)
+        if first.month == 10:                                          # October folds into November
+            nxt = _next_month(nxt)
         end = min(nxt - timedelta(days=1), last)
         announced = (end + timedelta(days=MONTH_ANNOUNCE_DAYS)).isoformat()
         for award in ("player_of_month", "rookie_of_month"):
-            out.append((award, first, end.isoformat(), announced))
+            out.append((award, first.isoformat(), end.isoformat(), announced))
+        first = nxt
     return sorted(out, key=lambda p: (p[3], p[0]))
 
 
-def conferences(root=ROOT):
-    data = json.loads((Path(root) / CONFERENCES).read_text(encoding="utf-8"))["conferences"]
-    return {team: conf for conf, teams in data.items() for team in teams}
+def conferences(root=ROOT, season=None):
+    from .seasons import conferences as alignment
+    season = season or _season(root)
+    return {team: conf for conf, teams in alignment(season, root).items() for team in teams}
 
 
-def rookies(root=ROOT):
+def rookies(root=ROOT, season=None):
     """First-season players by name, from sourced identity records only: the registry's 2003 draft-rights
     cohort, unattached identities with no NBA season before 2003-04 (Haslem), and Wade. An undrafted rookie
     on a real club without such a record is not yet recognised (a known gap, not a judgement)."""
+    season = season or _season(root)
     root = Path(root)
+    year = int(season[:4])
     registry = json.loads((root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json").read_text(encoding="utf-8"))
     registry = registry["players"] if isinstance(registry, dict) else registry
-    bbrs = {p["bbr_id"] for p in registry if p.get("cohort") == "2003_draft_rights" and p.get("bbr_id")}
-    unattached = json.loads((root / "library/2003/league/nba_2003_unattached_identities.json").read_text(encoding="utf-8"))
-    bbrs |= {p["bbr_id"] for p in unattached["players"] if p.get("service_basis", "").startswith("No NBA season before")}
-    names = {WADE}
+    bbrs = {p["bbr_id"] for p in registry if p.get("cohort") == f"{year}_draft_rights" and p.get("bbr_id")}
+    unattached = root / f"library/{year}/league/nba_{year}_unattached_identities.json"
+    if unattached.is_file():
+        bbrs |= {p["bbr_id"] for p in json.loads(unattached.read_text(encoding="utf-8"))["players"]
+                 if p.get("service_basis", "").startswith("No NBA season before")}
+    service = root / "library/2004/league/nba_2004_service_years.json"
+    if service.is_file():                                            # a first NBA season in this season (identity data)
+        bbrs |= {b for b, e in json.loads(service.read_text(encoding="utf-8"))["players"].items() if e.get("first_season") == season}
+    names = {WADE} if season == "2003-04" else set()
     from .rotations import load_rosters
-    for club in load_rosters(SEASON, root).values():
+    for club in load_rosters(season, root).values():
         names |= {p["player_id"] for p in club["players"] if p.get("bbr_id") in bbrs}
-    roster = json.loads((root / f"career/Dwyane_Wade/{SEASON}/00_Team/Team/Roster/roster.json").read_text(encoding="utf-8"))
-    names |= {p["name"] for p in roster["players"] if p.get("bbr_id") in bbrs}
+    roster_path = root / f"career/Dwyane_Wade/{season}/00_Team/Team/Roster/roster.json"
+    if roster_path.is_file():
+        roster = json.loads(roster_path.read_text(encoding="utf-8"))
+        names |= {p["name"] for p in roster["players"] if p.get("bbr_id") in bbrs}
     return names
 
 
@@ -119,10 +156,11 @@ def _lines(rows, start, end):
     return out, club_games
 
 
-def registry_names(root=ROOT):
+def registry_names(root=ROOT, season=None):
     """{name in the season's real roster file: the registry's name for the same bbr_id} where they differ. The roster
     file keys a few players by a later name (Metta World Peace for the 2003-04 Ron Artest); records use the dated one."""
     from .rotations import load_rosters
+    season = season or _season(root)
     root = Path(root)
     path = root / "career/Dwyane_Wade/Stats_and_Awards/League/player_registry.json"
     if not path.is_file():
@@ -130,7 +168,7 @@ def registry_names(root=ROOT):
     registry = json.loads(path.read_text(encoding="utf-8"))
     by_bbr = {p["bbr_id"]: p["name"] for p in (registry["players"] if isinstance(registry, dict) else registry) if p.get("bbr_id")}
     out = {}
-    for club in load_rosters(SEASON, root).values():
+    for club in load_rosters(season, root).values():
         for p in club["players"]:
             name = by_bbr.get(p.get("bbr_id"))
             if name and name != p["player_id"]:
@@ -166,26 +204,27 @@ def rank(award, start, end, rows, conf, first_years, names=None):
     return {c: sorted(rows_, key=lambda x: (-round(x["score"], 2), x["player"]))[:3] for c, rows_ in sorted(table.items())}
 
 
-def filed_page(award, end):
+def filed_page(award, end, season):
     """The calendar bucket containing the period's end date: its week page for a weekly award, else its month page."""
     d = _d(end)
     month = MONTH_DIRS[d.month]
     if award != "player_of_week":
-        return LEAGUE / month / "League_Awards.md"
+        return league_dir(season) / month / "League_Awards.md"
     week = 1 if d.day <= 7 else 2 if d.day <= 14 else 3 if d.day <= 21 else 4
-    return LEAGUE / month / f"Week_{week}" / "League_Awards.md"
+    return league_dir(season) / month / f"Week_{week}" / "League_Awards.md"
 
 
-def read_decisions(root=ROOT):
-    path = Path(root) / DECISIONS
+def read_decisions(root=ROOT, season=None):
+    season = season or _season(root)
+    path = Path(root) / decisions_path(season)
     if path.is_file():
         return json.loads(path.read_text(encoding="utf-8"))
-    return {"schema_version": 1, "season": SEASON, "kind": "award_decisions",
+    return {"schema_version": 1, "season": season, "kind": "award_decisions",
             "rule": __doc__.split("\n\n", 1)[1].strip(), "decisions": []}
 
 
-def due(clock):
-    return [p for p in periods() if p[3] <= clock]
+def due(clock, season=None, root=ROOT):
+    return [p for p in periods(season, root) if p[3] <= clock]
 
 
 def tie_packet(award_id, award, conference, start, end, announced, tied):
@@ -203,26 +242,28 @@ def decide(root=ROOT, clock=None):
     (`python scripts/draw_decisions.py`); the other awards close meanwhile."""
     from .write_back import clock as career_clock, closed_results
     root = Path(root)
+    season = _season(root)
     clock = clock or career_clock(root)
-    record = read_decisions(root)
+    record = read_decisions(root, season)
+    confs = conference_names(season, root)
     done = {(d["award"], d["period_start"], d["conference"]) for d in record["decisions"]}
-    pending = [p for p in due(clock) if any((p[0], p[1], c) not in done for c in ("East", "West"))]
+    pending = [p for p in due(clock, season, root) if any((p[0], p[1], c) not in done for c in confs)]
     if not pending:
         return []
-    rows = closed_results(root, SEASON, clock)
-    conf, first, names = conferences(root), rookies(root), registry_names(root)
+    rows = closed_results(root, season, clock)
+    conf, first, names = conferences(root, season), rookies(root, season), registry_names(root, season)
     new = []
     for award, start, end, announced in pending:
         shortlist = rank(award, start, end, rows, conf, first, names)
-        for c in ("East", "West"):
+        for c in confs:
             if (award, start, c) in done:
                 continue
             listed = shortlist.get(c, [])
-            award_id = f"{SEASON}-{award}-{start}-{c.lower()}"
+            award_id = f"{season}-{award}-{start}-{c.lower()}"
             winner, draw = (listed[0]["player"] if listed else None), None
             tied = [x["player"] for x in listed if listed and round(x["score"], 2) == round(listed[0]["score"], 2)]
             if len(tied) > 1:
-                packet_path = root / DRAWS / f"{award_id}.decision.json"
+                packet_path = root / draws_dir(season) / f"{award_id}.decision.json"
                 result_path = packet_path.with_name(f"{award_id}.decision.result.json")
                 if not packet_path.is_file():
                     packet_path.parent.mkdir(parents=True, exist_ok=True)
@@ -231,11 +272,11 @@ def decide(root=ROOT, clock=None):
                 if not result_path.is_file():
                     continue                                   # waits for the engine's draw
                 winner = json.loads(result_path.read_text(encoding="utf-8"))["outcome"]
-                draw = (DRAWS / result_path.name).as_posix()
+                draw = (draws_dir(season) / result_path.name).as_posix()
                 listed = sorted(listed, key=lambda x: x["player"] != winner)        # the drawn winner first, order kept
             entry = {"id": award_id, "award": award, "name": AWARDS[award],
                      "conference": c, "period_start": start, "period_end": end, "announced_on": announced,
-                     "filed_on": filed_page(award, end).as_posix(),
+                     "filed_on": filed_page(award, end, season).as_posix(),
                      "shortlist": [dict(x, rank=i + 1) for i, x in enumerate(listed)], "winner": winner}
             if draw:
                 entry["tie_draw"] = draw
@@ -244,7 +285,7 @@ def decide(root=ROOT, clock=None):
         return []
     record["decisions"] += new
     record["decisions"].sort(key=lambda d: (d["announced_on"], d["award"], d["conference"]))
-    (root / DECISIONS).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    (root / decisions_path(season)).write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     _record_wade(root, record)
     render_pages(root, record, clock)
     return new
@@ -260,7 +301,7 @@ def _record_wade(root, record):
         source = Path(d["filed_on"]).relative_to(PLAYER).as_posix() + "#" + d["name"].lower().replace(" ", "-")
         data["awards"].append({"id": d["id"], "name": f"{d['conference']}ern Conference {d['name']}",
                                "short_name": f"{d['conference']} {SHORT[d['award']]}", "status": "earned",
-                               "competition": "regular", "season": SEASON, "period_start": d["period_start"],
+                               "competition": "regular", "season": record["season"], "period_start": d["period_start"],
                                "period_end": d["period_end"], "awarded_on": d["announced_on"], "source": source})
     data["awards"].sort(key=lambda a: (a["awarded_on"], a["id"]))
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -272,18 +313,18 @@ def _long(d):
     return f"{x.strftime('%B')} {x.day}, {x.year}"
 
 
-def _section(name, decisions, clock):
+def _section(name, decisions, clock, confs=("East", "West")):
     """One shortlist table per award period, three slots per conference (padded when fewer were eligible)."""
     header = ["| Conference | Rank slot | Player | Team | Evidence | Result |", "| --- | ---: | --- | --- | --- | --- |"]
     if not decisions:
         return [f"## {name}", ""] + header + [f"| {c} | {i} | Not shortlisted | N/A | No closed period | Pending |"
-                                             for c in ("East", "West") for i in (1, 2, 3)] + [""]
+                                             for c in confs for i in (1, 2, 3)] + [""]
     out = [f"## {name}", ""]
     for start in sorted({d["period_start"] for d in decisions}):
         period = [d for d in decisions if d["period_start"] == start]
         label = f"{_long(period[0]['period_start'])} to {_long(period[0]['period_end'])}"
         out += [f"### {label} (announced {_long(period[0]['announced_on'])})", ""] + header
-        for c in ("East", "West"):
+        for c in confs:
             d = next((d for d in period if d["conference"] == c), None)
             listed = d["shortlist"] if d else []
             for x in listed:
@@ -322,7 +363,8 @@ def render_pages(root, record, clock):
             continue
         decisions = pages[rel]
         names = ["player_of_week"] if "Week_" in rel else ["player_of_month", "rookie_of_month"]
-        sections = [_section(AWARDS[a], [d for d in decisions if d["award"] == a], clock) for a in names]
+        confs = conference_names(record["season"], root)
+        sections = [_section(AWARDS[a], [d for d in decisions if d["award"] == a], clock, confs) for a in names]
         record_lines = ["## Decision record", ""]
         for d in decisions:
             record_lines.append(f"- {d['conference']} {d['name']}, {_long(d['period_start'])} to {_long(d['period_end'])}, "
@@ -365,7 +407,8 @@ def award_errors(root=ROOT):
     """An award announced on or before the clock that has no closed decision."""
     from .write_back import clock as career_clock
     clock = career_clock(root)
-    done = {(d["award"], d["period_start"], d["conference"]) for d in read_decisions(root)["decisions"]}
+    season = _season(root)
+    done = {(d["award"], d["period_start"], d["conference"]) for d in read_decisions(root, season)["decisions"]}
     return [f"{c} {AWARDS[a]} for {s} to {e} was announced {n} and is not decided (python scripts/decide_awards.py --write; "
             f"a tie waits for python scripts/draw_decisions.py)"
-            for a, s, e, n in due(clock) for c in ("East", "West") if (a, s, c) not in done]
+            for a, s, e, n in due(clock, season, root) for c in conference_names(season, root) if (a, s, c) not in done]

@@ -510,7 +510,7 @@ def build_miami(until, root=ROOT, season=None, write=False):
             lists = side[2]
             data = roster_moves.record_lists(roster_moves.ledger(root), game["date"], lists["injured_list"],
                                              lists["placements"], lists["activations"], injured, game["game_id"])
-            path = Path(root) / roster_moves.LEDGER
+            path = Path(root) / roster_moves.ctx(root).ledger
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
             row["injured_list"] = lists["injured_list"]

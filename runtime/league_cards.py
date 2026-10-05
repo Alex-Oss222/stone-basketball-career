@@ -34,24 +34,46 @@ PLAYER_STATS = LIBRARY / "nba_2002_03_player_stats.json"
 CONTRACTS = LIBRARY / "nba_2003_contracts.json"
 TRANSACTIONS = LIBRARY / "nba_2003_offseason_transactions.json"
 PLAYER_DIR = Path("career/Dwyane_Wade")
-SEASON_DIR = PLAYER_DIR / "2003-04"
 LEAGUE_DIR = PLAYER_DIR / "Stats_and_Awards/League"
 CARDS_DIR = LEAGUE_DIR / "Players"
-HOLDINGS = SEASON_DIR / "00_Team/Team/Roster/holdings.json"
-DEPARTURES = SEASON_DIR / "00_Team/Team/Roster/departures.json"
-MIAMI_ROSTER = SEASON_DIR / "00_Team/Team/Roster/roster.json"
-MIAMI_CARDS = SEASON_DIR / "00_Team/Team/Player_Cards"
+FIRST_SEASON = "2003-04"                     # the season the registry was imported for (its club and rights labels)
+
+
+def _season(root=None):
+    from .seasons import active
+    return active(root or ROOT)
+
+
+def _roster_dir(season):
+    return PLAYER_DIR / season / "00_Team/Team/Roster"
+
+
+def holdings_path(season):
+    return _roster_dir(season) / "holdings.json"
+
+
+def departures_path(season):
+    return _roster_dir(season) / "departures.json"
+
+
+def miami_roster_path(season):
+    return _roster_dir(season) / "roster.json"
+
+
+def miami_cards_dir(season):
+    return PLAYER_DIR / season / "00_Team/Team/Player_Cards"
+
+
+def card_lines_path(season):
+    """Every registry player's closed regular-season and playoff rows for a season, written when it closes."""
+    return LEAGUE_DIR / season / "card_lines.json"
 CONTRACT_RECORDS = PLAYER_DIR / "Contracts/contract_records.json"
 TEMPLATE = Path("runtime/assets/player_cards.html")
 SILHOUETTE = "assets/silhouette.svg"
 MIAMI = "Miami Heat"
-SEASON = "2003-04"
 MOVING_KINDS = {"signing", "sign_and_trade", "match_declined"}
 POSITION_NAMES = {"PG": "Point guard", "SG": "Shooting guard", "SF": "Small forward",
                   "F": "Forward", "PF": "Power forward", "C": "Center"}
-MONTHS = [("October", 10, 2003, "10_October"), ("November", 11, 2003, "11_November"),
-          ("December", 12, 2003, "12_December"), ("January", 1, 2004, "01_January"),
-          ("February", 2, 2004, "02_February"), ("March", 3, 2004, "03_March"), ("April", 4, 2004, "04_April")]
 FINAL_SECTIONS = ["## Regular-season statistics by year", "## Playoff statistics by year", "## Awards and honors"]
 FINAL_SEASON_LABEL = "## Awards and honors"
 
@@ -164,10 +186,15 @@ def club_on(player, on, *, holdings=None, departures=None, transactions=None, ro
     Returns {"club", "code", "basis", "rights"}; `club` is None for a free agent. `signed` is the
     pick's `signed_evidence`: once it is dated on or before `on`, he holds a contract, not rights.
     """
+    from .seasons import season_of_date
+    season = season_of_date(on) if on >= "2003-07-01" else FIRST_SEASON
+    from .league_moves import opening_book
+    if season != FIRST_SEASON and opening_book(season, root) is not None:
+        return _club_in_book(player, on, season, root, transactions)
     if holdings is None:
-        holdings = _read(root, HOLDINGS) if (Path(root) / HOLDINGS).is_file() else {"entries": []}
+        holdings = _read(root, holdings_path(season)) if (Path(root) / holdings_path(season)).is_file() else {"entries": []}
     if departures is None:
-        departures = _read(root, DEPARTURES) if (Path(root) / DEPARTURES).is_file() else {"entries": []}
+        departures = _read(root, departures_path(season)) if (Path(root) / departures_path(season)).is_file() else {"entries": []}
     if transactions is None:
         transactions = _read(root, TRANSACTIONS) if (Path(root) / TRANSACTIONS).is_file() else {}
     rights = player.get("cohort") == "2003_draft_rights"
@@ -183,7 +210,7 @@ def club_on(player, on, *, holdings=None, departures=None, transactions=None, ro
         # His real career resumes: the club the season's real roster has him with on the date, as the games
         # place him (`rotations.real_rotation`); a later dated move below overrides it.
         club = _real_stint_club(player, on, root)
-        basis = (f"Miami's holding ended on {released}; back on his real {SEASON} path" if club else
+        basis = (f"Miami's holding ended on {released}; back on his real {season} path" if club else
                  f"Miami's holding ended on {released}; no later club recorded")
         rights = False
     for when, target, why, carries_rights in world_moves(player, transactions):
@@ -196,7 +223,7 @@ def club_on(player, on, *, holdings=None, departures=None, transactions=None, ro
         if _matches(player, bbr_id=entry.get("bbr_id"), name=entry.get("player")) and _within(entry, on):
             club, basis, rights = entry["club"], f'sent by Miami to {entry["club"]} on {entry["from"]}', False
     from .club_replacements import read as read_replacements
-    for entry in read_replacements(SEASON, root)["entries"]:
+    for entry in read_replacements(season, root)["entries"]:
         if _matches(player, bbr_id=entry.get("bbr_id"), name=entry.get("player")) and _within(entry, on):
             club, basis, rights = entry["club"], f'signed by {entry["club"]} on {entry["from"]} to replace {entry["replaces"]}', False
     entry = _any_holding(player, holdings, on)
@@ -208,11 +235,31 @@ def club_on(player, on, *, holdings=None, departures=None, transactions=None, ro
     return {"club": club, "code": _code(club, transactions, player), "basis": basis, "rights": rights}
 
 
+def _club_in_book(player, on, season, root, transactions=None):
+    """A season after the first: the club Miami's register or the simulated league (its opening book, then its dated
+    moves) gives him on the date; None while he is an unsigned free agent."""
+    from .league_moves import club_of
+    bbr = player.get("bbr_id")
+    roster = Path(root) / miami_roster_path(season)
+    if roster.is_file():
+        for p in _read(root, miami_roster_path(season))["players"]:
+            if _matches(player, bbr_id=p.get("bbr_id"), name=p.get("name")) and not any(
+                    w in (p.get("status") or "") for w in ("released", "traded", "signed_elsewhere", "voided", "waived",
+                                                          "renounced", "declined", "expired")):
+                return {"club": MIAMI, "code": "MIA", "basis": f"on Miami's {season} register", "rights": False}
+    club = club_of(bbr, on, season, root) if bbr else None
+    basis = (f"{club}: the {season} opening rosters and the league's dated moves (runtime/league_moves.py)" if club else
+             f"unsigned on {on} in the {season} league")
+    return {"club": club, "code": _code(club, transactions or {}, player) if club else None, "basis": basis, "rights": False}
+
+
 def _real_stint_club(player, on, root=ROOT):
     """The club whose real-season stint covers `on` for the player (the games' roster rule), or None."""
     from .rotations import load_rosters, season_fraction
+    from .seasons import season_of_date
+    season = season_of_date(on)
     try:
-        rosters, fraction = load_rosters(SEASON, root), season_fraction(SEASON, on, root)
+        rosters, fraction = load_rosters(season, root), season_fraction(season, on, root)
     except (OSError, KeyError, ValueError):
         return None
     for club, entry in sorted(rosters.items()):
@@ -352,20 +399,25 @@ def week_bounds(year, month, week):
     return f"{year}-{month:02d}-{start:02d}", f"{year}-{month:02d}-{end:02d}"
 
 
-def periods(config):
-    """Season, month and week periods of the regular season, from the repository calendar."""
-    out = [dict(id="season", label=f"{SEASON} regular season", kind="season", start="2003-10-01", end="2004-04-30",
-                folder=f"{SEASON}")]
-    for name, month, year, folder in MONTHS:
-        weeks = config["regular_season"][name]["weeks"]
-        import calendar
+def periods(config, season=None, root=ROOT):
+    """Season, month and week periods of the regular season, from the season's calendar (runtime/seasons.py)."""
+    from .seasons import month_weeks, start_year
+    season = season or _season(root)
+    import calendar
+    months = month_weeks(season, root)
+    first_month, last_month = months[0], months[-1]
+    out = [dict(id="season", label=f"{season} regular season", kind="season",
+                start=f"{first_month[2]}-{first_month[1]:02d}-01",
+                end=f"{last_month[2]}-{last_month[1]:02d}-{calendar.monthrange(last_month[2], last_month[1])[1]:02d}",
+                folder=f"{season}")]
+    for name, month, year, folder, weeks in months:
         last = calendar.monthrange(year, month)[1]
         out.append(dict(id=f"month-{folder[:2]}", label=f"{name} {year}", kind="month",
-                        start=f"{year}-{month:02d}-01", end=f"{year}-{month:02d}-{last:02d}", folder=f"{SEASON}/{folder}"))
+                        start=f"{year}-{month:02d}-01", end=f"{year}-{month:02d}-{last:02d}", folder=f"{season}/{folder}"))
         for week in weeks:
             start, end = week_bounds(year, month, week)
             out.append(dict(id=f"week-{folder[:2]}-{week}", label=f"{name} {year} week {week} ({start[-2:]} to {end[-2:]})",
-                            kind="week", start=start, end=end, folder=f"{SEASON}/{folder}/Week_{week}"))
+                            kind="week", start=start, end=end, folder=f"{season}/{folder}/Week_{week}"))
     return out
 
 
@@ -487,29 +539,41 @@ class CardContext:
         self.signed = signings(root)
         self.contracts, self.legend = contract_rows(root)
         self.identity = _read(root, PLAYER_DIR / "professional_identity.json")
+        from .seasons import live_seasons
+        self.season = _season(root)
+        self.seasons = [x for x in live_seasons(root)] if (self.root / PLAYER_DIR).is_dir() else [self.season]
+        if self.season not in self.seasons:
+            self.seasons.append(self.season)
+        HOLDINGS, DEPARTURES = holdings_path(self.season), departures_path(self.season)
+        MIAMI_ROSTER, MIAMI_CARDS = miami_roster_path(self.season), miami_cards_dir(self.season)
+        self.miami_cards_dir = MIAMI_CARDS
         self.holdings = _read(root, HOLDINGS) if (self.root / HOLDINGS).is_file() else {"entries": []}
         self.departures = _read(root, DEPARTURES) if (self.root / DEPARTURES).is_file() else {"entries": []}
         self.transactions = _read(root, TRANSACTIONS)
         roster = _read(root, MIAMI_ROSTER)["players"]
         self.miami_cards = {_key(p["name"]): p["id"] for p in roster if (self.root / MIAMI_CARDS / f'{p["id"]}.md').is_file()}
-        self.periods = periods(self.config)
-        # Closed weekly and monthly award decisions (runtime/award_decisions.py): winners and shortlist placings.
-        decisions = self.root / LEAGUE_DIR / SEASON / "award_decisions.json"
+        self.periods = periods(self.config, self.season, root)
         self.honors = {}
-        if decisions.is_file():
-            for d in json.loads(decisions.read_text(encoding="utf-8"))["decisions"]:
+        from .season_awards import honors as season_honors
+        from .seasons import dates
+        for season in self.seasons:
+            # Closed weekly and monthly award decisions (runtime/award_decisions.py): winners and shortlist placings.
+            decisions = self.root / LEAGUE_DIR / season / "award_decisions.json"
+            if decisions.is_file():
+                for d in json.loads(decisions.read_text(encoding="utf-8"))["decisions"]:
+                    if d["announced_on"] > self.on:
+                        continue
+                    for x in d["shortlist"]:
+                        self.honors.setdefault(_key(x["player"]), []).append(dict(d, rank=x["rank"], line=x))
+            # Closed season awards (runtime/season_awards.py): winners, team selections and the next vote-getters.
+            record = self.root / LEAGUE_DIR / season / "season_awards.json"
+            if not record.is_file():
+                continue
+            for d in json.loads(record.read_text(encoding="utf-8"))["decisions"]:
                 if d["announced_on"] > self.on:
                     continue
-                for x in d["shortlist"]:
-                    self.honors.setdefault(_key(x["player"]), []).append(dict(d, rank=x["rank"], line=x))
-        # Closed season awards (runtime/season_awards.py): winners, team selections and the next vote-getters.
-        from .season_awards import RECORD as SEASON_RECORD, honors as season_honors
-        if (self.root / SEASON_RECORD).is_file():
-            for d in json.loads((self.root / SEASON_RECORD).read_text(encoding="utf-8"))["decisions"]:
-                if d["announced_on"] > self.on:
-                    continue
-                base = dict(conference="", period_start="2003-10-28", period_end=d["evidence_through"],
-                            announced_on=d["announced_on"], award=d["award"], filed_on=(LEAGUE_DIR / SEASON / "Season_Awards.md").as_posix(),
+                base = dict(conference="", period_start=dates(season, root)["opening_night"], period_end=d["evidence_through"],
+                            announced_on=d["announced_on"], award=d["award"], filed_on=(LEAGUE_DIR / season / "Season_Awards.md").as_posix(),
                             annual=True)
                 for player, name, _ in season_honors(d):
                     self.honors.setdefault(_key(player), []).append(dict(base, name=name, rank=1))
@@ -521,10 +585,16 @@ class CardContext:
         self.playoff_lines = {}
         try:
             from .playoff_stats import closed_playoff_results, player_lines
-            for (name, _club), recs in player_lines(closed_playoff_results(self.root, SEASON, self.on), self.root, SEASON).items():
+            for (name, _club), recs in player_lines(closed_playoff_results(self.root, self.season, self.on), self.root, self.season).items():
                 self.playoff_lines.setdefault(_key(name), []).extend(recs)
         except (OSError, KeyError):
             pass
+        # Earlier simulated seasons: each card's closed rows, written when the season closed (`card_lines_path`).
+        self.history = {}
+        for season in self.seasons:
+            path = self.root / card_lines_path(season)
+            if season < self.season and path.is_file():
+                self.history[season] = json.loads(path.read_text(encoding="utf-8"))["players"]
         self.template = (ROOT / TEMPLATE).read_text(encoding="utf-8")
 
     def club(self, player, signed=None):
@@ -537,8 +607,8 @@ def card_data(ctx, player, records=(), shots=()):
     pid = player["registry_id"]
     signed = signed_evidence(player["name"], ctx.on, records, ctx.signed)
     held = ctx.club(player, signed)
-    # The 2003-04 season starts in 2003; the card date belongs to that season's colours.
-    season_year = int(SEASON[:4])
+    # A season starts in its first year; the card date belongs to that season's colours.
+    season_year = int(ctx.season[:4])
     colors = club_colors(held["club"], season_year, ctx.colors)
     rights = ctx.rights.get(_key(player["name"])) if player.get("cohort") == "2003_draft_rights" else None
     photo = ctx.photos.get(pid)
@@ -553,7 +623,7 @@ def card_data(ctx, player, records=(), shots=()):
     else:
         from .jerseys import number_for
         jersey = number_for(pid, held["club"], ctx.root) if held["club"] else None
-        jersey = jersey or base.get("jersey") or None              # real 2003-04 number, else the 2002-03 one
+        jersey = jersey or base.get("jersey") or None              # real number for the season, else the 2002-03 one
         prior_program = None
         entry = None
         measurements = None
@@ -580,6 +650,31 @@ def _rel(from_dir, target):
     return Path(os.path.relpath(target, from_dir)).as_posix()
 
 
+def _pct_cell(v):
+    return "N/A" if v is None else f"{v:.1%}"
+
+
+def _regular_row(ctx, data, team):
+    """The card's regular-season row for the live season."""
+    s = data["stats"]["season"]["summary"]
+    pg, pct = s["pg"], _pct_cell
+    return [ctx.season, team, str(s["gp"]), _n(s["gs"], 0), _n(pg["minutes"]), _n(pg["pts"]), _n(pg["reb"]), _n(pg["ast"]),
+            _n(pg["stl"]), _n(pg["blk"]), _n(pg["tov"]), pct(s["rates"]["fg_pct"]), pct(s["rates"]["three_pct"]), pct(s["rates"]["ft_pct"])]
+
+
+def _playoff_row(ctx, p):
+    """The card's playoff row for the live season, or None without a playoff appearance."""
+    playoff = getattr(ctx, "playoff_lines", {}).get(_key(p["name"]), [])
+    ps = aggregate(playoff) if playoff else None
+    if not (ps and ps["gp"]):
+        return None
+    clubs = "/".join(sorted({r["team"] for r in playoff}))
+    pg, pct = ps["pg"], _pct_cell
+    return [ctx.season, clubs, str(ps["gp"]), _n(ps["gs"], 0), _n(pg["minutes"]), _n(pg["pts"]), _n(pg["reb"]), _n(pg["ast"]),
+            _n(pg["stl"]), _n(pg["blk"]), _n(pg["tov"]), pct(ps["rates"]["fg_pct"]), pct(ps["rates"]["three_pct"]),
+            pct(ps["rates"]["ft_pct"])]
+
+
 def markdown_card(ctx, data):
     p, pid = data["player"], data["id"]
     card_dir = ctx.root / CARDS_DIR
@@ -598,12 +693,12 @@ def markdown_card(ctx, data):
         lines.append("*No sourced photo in the league baseline; a neutral silhouette is shown. Photos are never invented.*")
     lines.append("<!-- /photo -->\n")
     lines.append(f'# {p["name"]} | NBA player card\n')
-    season_page = ctx.root / LEAGUE_DIR / SEASON / "League_Stats.md"
-    nav = [f'[Interactive card]({pid}.html)', f'[2003-04 league statistics]({_rel(card_dir, season_page)})',
+    season_page = ctx.root / LEAGUE_DIR / ctx.season / "League_Stats.md"
+    nav = [f'[Interactive card]({pid}.html)', f'[{ctx.season} league statistics]({_rel(card_dir, season_page)})',
            f'[Player registry]({_rel(card_dir, ctx.root / LEAGUE_DIR / "player_registry.json")})',
            f'[Card guide]({_rel(card_dir, ctx.root / "docs/player_cards.md")})']
     if data["miami_card"]:
-        target = ctx.root / PLAYER_DIR / "README.md" if data["wade"] else ctx.root / MIAMI_CARDS / f'{data["miami_card"]}.md'
+        target = ctx.root / PLAYER_DIR / "README.md" if data["wade"] else ctx.root / ctx.miami_cards_dir / f'{data["miami_card"]}.md'
         nav.insert(1, f'[{"Career page" if data["wade"] else "Miami card"}]({_rel(card_dir, target)})')
     lines.append(" · ".join(nav) + "\n")
     lines.append(f"The interactive card is an HTML file: GitHub shows it as source, so open `{pid}.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.\n")
@@ -631,7 +726,7 @@ def markdown_card(ctx, data):
         lines.append(f'**2002-03 (recorded, {"/".join(pr["team_codes"])}):** {_prior_summary(pr)}.\n')
     else:
         lines.append("**2002-03:** no record in the supplied 2002-03 statistics file.\n")
-    lines.append(f'**Colours:** header uses {data["club"]["club"] or "the free-agent placeholder"} colours ({data["colors"]["primary"]} / {data["colors"]["secondary"]}) for the season starting {SEASON[:4]}; presentation only.\n')
+    lines.append(f'**Colours:** header uses {data["club"]["club"] or "the free-agent placeholder"} colours ({data["colors"]["primary"]} / {data["colors"]["secondary"]}) for the season starting {ctx.season[:4]}; presentation only.\n')
     lines.append("## Simulated statistics\n")
     lines.append(f'As of **{ctx.on}**: {data["closed"]} closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.\n')
     team = data["club_label"]
@@ -654,7 +749,7 @@ def markdown_card(ctx, data):
     season_stats = data["stats"]["season"]
     season = season_stats["shooting"]
     cov = season["coverage"]
-    lines.append(f'Aggregated with `runtime/shot_chart.py` over closed results of the {SEASON} regular season. Coverage: **{cov["status"]}**; {cov["located_attempts"]} located attempts, {cov["unlocated_attempts"]} unlocated, {cov["outside_view_attempts"]} outside the view, {_n(cov["missing_attempts"], 0)} missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.\n')
+    lines.append(f'Aggregated with `runtime/shot_chart.py` over closed results of the {ctx.season} regular season. Coverage: **{cov["status"]}**; {cov["located_attempts"]} located attempts, {cov["unlocated_attempts"]} unlocated, {cov["outside_view_attempts"]} outside the view, {_n(cov["missing_attempts"], 0)} missing. Incomplete coverage leaves full-period zone rates unavailable; old box scores are never assigned locations.\n')
     tracked = season_stats["tracked"]
     if tracked is not None:
         cohort = season_stats["tracking_cohort"]
@@ -672,8 +767,8 @@ def markdown_card(ctx, data):
     lines.append("G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.\n")
     hist = ["Season", "Team(s)", "G", "GS", "MIN", "PTS", "REB", "AST", "STL", "BLK", "TOV", "FG%", "3P%", "FT%"]
     rows = []
-    started = (f"2003-04 is simulated: {data['closed']} closed regular-season games through {ctx.on}."
-               if data["closed"] else "2003-04 is simulated and has not started.")
+    started = (f"{ctx.season} is simulated: {data['closed']} closed regular-season games through {ctx.on}."
+               if data["closed"] else f"{ctx.season} is simulated and has not started.")
     if data["prior"]:
         rows.append(_prior_row(data["prior"], "/".join(data["prior"]["team_codes"])))
         coverage = f"2002-03 regular season from the supplied statistics file; earlier seasons are not imported. {started}"
@@ -683,38 +778,38 @@ def markdown_card(ctx, data):
         coverage = f"No NBA season before 2003-04 (2003 draft entry). {started}" if data["closed"] else "No NBA season before 2003-04 (2003 draft entry)."
     else:
         coverage = f"No 2002-03 record in the supplied statistics file. {started}"
-    s = data["stats"]["season"]["summary"]
-    pg = s["pg"]
-    pct = lambda v: "N/A" if v is None else f"{v:.1%}"
-    rows.append([SEASON, team, str(s["gp"]), _n(s["gs"], 0), _n(pg["minutes"]), _n(pg["pts"]), _n(pg["reb"]), _n(pg["ast"]),
-                 _n(pg["stl"]), _n(pg["blk"]), _n(pg["tov"]), pct(s["rates"]["fg_pct"]), pct(s["rates"]["three_pct"]), pct(s["rates"]["ft_pct"])])
+    for season in sorted(ctx.history):                                   # earlier simulated seasons, as they closed
+        row = ctx.history[season].get(data["id"], {}).get("regular")
+        if row:
+            rows.append(row)
+    if ctx.history:
+        coverage += " Earlier simulated seasons from their closed results."
+    pct = _pct_cell
+    rows.append(_regular_row(ctx, data, team))
     lines.append(f"**Coverage:** {coverage}\n")
     lines.append(markdown_table(hist, rows).rstrip() + "\n")
     lines.append("## Playoff statistics by year\n")
-    playoff = getattr(ctx, "playoff_lines", {}).get(_key(p["name"]), [])
-    ps = aggregate(playoff) if playoff else None
-    bracket = _rel(ctx.root / CARDS_DIR, ctx.root / LEAGUE_DIR / SEASON / "Playoffs.md")
-    if ps and ps["gp"]:
-        clubs = "/".join(sorted({r["team"] for r in playoff}))
-        lines.append(f"**Coverage:** {SEASON} playoffs from closed playoff results through {ctx.on} "
+    bracket = _rel(ctx.root / CARDS_DIR, ctx.root / LEAGUE_DIR / ctx.season / "Playoffs.md")
+    prow = _playoff_row(ctx, p)
+    if prow:
+        lines.append(f"**Coverage:** {ctx.season} playoffs from closed playoff results through {ctx.on} "
                      f"([bracket]({bracket}); `runtime/playoff_stats.py`). Prior playoff history is not imported into this card.\n")
-        pg = ps["pg"]
-        prow = [SEASON, clubs, str(ps["gp"]), _n(ps["gs"], 0), _n(pg["minutes"]), _n(pg["pts"]), _n(pg["reb"]), _n(pg["ast"]),
-                _n(pg["stl"]), _n(pg["blk"]), _n(pg["tov"]), pct(ps["rates"]["fg_pct"]), pct(ps["rates"]["three_pct"]),
-                pct(ps["rates"]["ft_pct"])]
     else:
-        started = ctx.on >= "2004-04-17"                    # first-round opening day (nba_2003_04_playoff_rules.json)
-        lines.append(f"**Coverage:** {SEASON} playoffs " + (f"([bracket]({bracket})): no playoff appearance through {ctx.on}."
+        from .seasons import read as season_file
+        openers = season_file(ctx.season, "playoff_rules", ctx.root)["calendar"]["first_round"]["openers"]
+        started = ctx.on >= min(openers)                    # the season's first-round opening day
+        lines.append(f"**Coverage:** {ctx.season} playoffs " + (f"([bracket]({bracket})): no playoff appearance through {ctx.on}."
                      if started else "have not started.") + " Prior playoff history is not imported into this card.\n")
-        prow = [SEASON, team, "0", *["N/A"] * (len(hist) - 3)]
-    lines.append(markdown_table(hist, [prow]).rstrip() + "\n")
+        prow = [ctx.season, team, "0", *["N/A"] * (len(hist) - 3)]
+    earlier = [ctx.history[x].get(data["id"], {}).get("playoff") for x in sorted(ctx.history)]
+    lines.append(markdown_table(hist, [r for r in earlier if r] + [prow]).rstrip() + "\n")
     lines.append("## Awards and honors\n")
     honors = ctx.honors.get(_key(p["name"]), [])
     if not honors:
         lines.append(f"No simulated honor has been recorded for this player through {ctx.on}. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.\n")
     else:
         won = sum(1 for h in honors if h["rank"] == 1)
-        lines.append(f"Simulated {SEASON} honors and shortlist placings through {ctx.on}, from closed award decisions "
+        lines.append(f"Simulated honors and shortlist placings through {ctx.on}, from closed award decisions "
                      f"({won} won). Historical awards are not imported.\n")
         rows = []
         for h in sorted(honors, key=lambda h: (h["announced_on"], h["award"])):
@@ -729,7 +824,7 @@ def markdown_card(ctx, data):
 
 def _empty_period(period, stat):
     summary, shooting = stat["summary"], stat["shooting"]
-    out = dict(id=period["id"], label=period["label"], kind=period["kind"], season=SEASON, start=period["start"],
+    out = dict(id=period["id"], label=period["label"], kind=period["kind"], season=period["folder"].split("/")[0], start=period["start"],
                end=period["end"], cutoff=period["end"], games=summary["closed"], appearances=summary["gp"], dnp=summary["dnp"],
                source_games=_source_games(stat["selected"]), shot_source_type=stat["shot_source_type"],
                tracked=stat["tracked"], tracking_cohort=stat["tracking_cohort"])
@@ -759,10 +854,10 @@ def html_payload(ctx, data):
                     colors=dict(primary=data["colors"]["primary"], secondary=data["colors"]["secondary"]))
     if data["photo"]:
         identity["photo_credit"] = f'{data["photo"].get("headshot_credit")} · {data["photo"].get("headshot_license")}'
-    notice = (f"LEAGUE PLAYER CARD · Evidence dated on or before {ctx.on}. Simulated 2003-04 statistics only; "
-              "no real 2003-04 results, no later-career facts. Shot locations appear only from recorded closed results.")
+    notice = (f"LEAGUE PLAYER CARD · Evidence dated on or before {ctx.on}. Simulated statistics only; "
+              "no real results from a simulated season, no later-career facts. Shot locations appear only from recorded closed results.")
     card_dir = ctx.root / CARDS_DIR
-    links = dict(stats=_rel(card_dir, ctx.root / LEAGUE_DIR / SEASON / "League_Stats.md"),
+    links = dict(stats=_rel(card_dir, ctx.root / LEAGUE_DIR / ctx.season / "League_Stats.md"),
                  shooting=f'{data["id"]}.md#shooting-zones', awards=f'{data["id"]}.md#awards-and-honors',
                  definitions=_rel(card_dir, ctx.root / "docs/player_cards.md"),
                  contract=_rel(card_dir, ctx.root / PLAYER_DIR / "Contracts/players" / f'{data["id"]}.html') + "#contract")
@@ -772,7 +867,7 @@ def html_payload(ctx, data):
                 periods=[dict(_empty_period(period, data["stats"][period["id"]]), cutoff=min(ctx.on, period["end"]))
                          for period in ctx.periods],
                 awards=dict(default_scenario="current", scenarios=[dict(
-                    id="current", label=f"{SEASON} season", season=SEASON, cutoff=ctx.on,
+                    id="current", label=f"{ctx.season} season", season=ctx.season, cutoff=ctx.on,
                     notice=award_notice(ctx, p),
                     records=[])]))
 
@@ -813,8 +908,8 @@ def html_card(ctx, data, template=None):
 
 
 def index_page(ctx, cards):
-    lines = [f"# NBA player cards | {SEASON}\n",
-             f'[League record guide](../README.md) · [2003-04 league statistics](../{SEASON}/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide]({_rel(ctx.root / CARDS_DIR, ctx.root / "docs/player_cards.md")})\n',
+    lines = [f"# NBA player cards | {ctx.season}\n",
+             f'[League record guide](../README.md) · [{ctx.season} league statistics](../{ctx.season}/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide]({_rel(ctx.root / CARDS_DIR, ctx.root / "docs/player_cards.md")})\n',
              f"Card date: **{ctx.on}**. {len(cards)} registry players, one Markdown card and one interactive HTML card each; {sum(1 for c in cards if c['photo'])} cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).\n"]
     for pos in ctx.registry["positions"]:
         group = sorted((c for c in cards if c["player"]["position"] == pos), key=lambda c: c["player"]["name"])
@@ -839,23 +934,23 @@ def closed_card_feeds(ctx):
     by_name = {}
     for player in ctx.registry["players"]:
         by_name.setdefault(_key(player["name"]), []).append(player)
-    lookup = bbr_lookup(ctx.root, SEASON)
+    lookup = bbr_lookup(ctx.root, ctx.season)
     lines, shots = {}, {}
     card_dir = ctx.root / CARDS_DIR
-    for row in closed_results(ctx.root, SEASON, ctx.on):
+    for row in closed_results(ctx.root, ctx.season, ctx.on):
         result = row["result"]
         if row["note"] is not None:
             note = row["note"]
             source = note.parent / note_meta(note)["result_file"]
         else:
-            source = ctx.root / LEAGUE_DIR / SEASON / "Games" / f'{result["event_id"]}.result.json'
+            source = ctx.root / LEAGUE_DIR / ctx.season / "Games" / f'{result["event_id"]}.result.json'
         events = engine_result_shots(result, source_ref=_rel(card_dir, source))
         tracked = bool(result.get("shot_tracking"))
         owners = set()
         events_by_player = {}
         for event in events:
             events_by_player.setdefault((event["side"], event["player_id"]), []).append(event)
-        for side, player_id, bbr, record in game_records(row, ctx.root, SEASON):
+        for side, player_id, bbr, record in game_records(row, ctx.root, ctx.season):
             known_bbr = lookup.get((result[side], _key(player_id)))
             if tracked and bbr and known_bbr and bbr != known_bbr:
                 raise ValueError(f"{result['event_id']}: shot player identity disagrees with the club's recorded BBR ID")
@@ -909,6 +1004,30 @@ def build_cards(root=ROOT, ctx=None):
         outputs[folder / "assets" / f'{data["id"]}_header.svg'] = header_svg(player, data["club"], data["colors"], data["jersey"], data["label"])
     outputs[folder / "README.md"] = index_page(ctx, cards)
     return outputs
+
+
+def write_card_lines(root=ROOT):
+    """At a season's close: every registry player's closed rows for the live season, kept for later seasons' cards
+    (`card_lines_path`). Players without a regular-season appearance keep no row."""
+    ctx = CardContext(root)
+    records, shots = closed_card_feeds(ctx)
+    out = {}
+    for player in ctx.registry["players"]:
+        data = card_data(ctx, player, records.get(player["registry_id"], ()), shots.get(player["registry_id"], ()))
+        entry = {}
+        if data["stats"]["season"]["summary"]["gp"]:
+            entry["regular"] = _regular_row(ctx, data, data["club_label"])
+        prow = _playoff_row(ctx, player)
+        if prow:
+            entry["playoff"] = prow
+        if entry:
+            out[data["id"]] = entry
+    path = ctx.root / card_lines_path(ctx.season)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"schema_version": 1, "season": ctx.season, "as_of": ctx.on,
+                                "rule": "runtime/league_cards.write_card_lines at the season close", "players": out},
+                               indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    return path
 
 
 def write_cards(root=ROOT):

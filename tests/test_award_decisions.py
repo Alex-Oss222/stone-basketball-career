@@ -25,15 +25,15 @@ CONF = {"Miami Heat": "East", "Boston Celtics": "East", "Utah Jazz": "West", "Da
 
 class PeriodTests(unittest.TestCase):
     def test_weeks_run_monday_to_sunday_from_opening_night_and_months_fold_october_into_november(self):
-        periods = A.periods()
+        periods = A.periods("2003-04")
         weeks = [p for p in periods if p[0] == "player_of_week"]
         self.assertEqual(weeks[0][1:], ("2003-10-28", "2003-11-02", "2003-11-03"))
-        self.assertEqual(weeks[-1][2], A.SEASON_END)
+        self.assertEqual(weeks[-1][2], "2004-04-14")
         first_month = [p for p in periods if p[0] == "rookie_of_month"][0]
         self.assertEqual(first_month[1:], ("2003-10-28", "2003-11-30", "2003-12-02"))
-        self.assertEqual(A.filed_page("player_of_week", "2003-11-30").as_posix().split("/")[-3:],
+        self.assertEqual(A.filed_page("player_of_week", "2003-11-30", "2003-04").as_posix().split("/")[-3:],
                          ["11_November", "Week_4", "League_Awards.md"])
-        self.assertEqual(A.filed_page("player_of_week", "2003-11-02").parent.name, "Week_1")
+        self.assertEqual(A.filed_page("player_of_week", "2003-11-02", "2003-04").parent.name, "Week_1")
 
     def test_game_score_is_hollingers(self):
         p = dict(pts=20, fgm=8, fga=15, ftm=4, fta=5, orb=2, drb=6, stl=1, ast=5, blk=1, pf=3, tov=2)
@@ -64,16 +64,16 @@ class DecideTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             (root / A.PLAYER).mkdir(parents=True)
-            (root / A.LEAGUE).mkdir(parents=True)
+            (root / A.league_dir("2003-04")).mkdir(parents=True)
             (root / A.PLAYER / "awards.json").write_text(json.dumps({"schema_version": 1, "awards": []}))
             due = [("player_of_week", "2003-11-03", "2003-11-09", "2003-11-10")]
-            with mock.patch.object(A, "due", lambda clock: due), \
+            with mock.patch.object(A, "due", lambda clock, *a, **k: due), \
                     mock.patch("runtime.write_back.closed_results", lambda *a, **k: rows), \
-                    mock.patch.object(A, "conferences", lambda root=None: CONF), \
-                    mock.patch.object(A, "rookies", lambda root=None: set()):
+                    mock.patch.object(A, "conferences", lambda root=None, season=None: CONF), \
+                    mock.patch.object(A, "rookies", lambda root=None, season=None: set()):
                 new = A.decide(root, "2003-11-10")
                 self.assertEqual([(d["conference"], d["winner"]) for d in new], [("West", None)])   # East tied: waits
-                packet = root / A.DRAWS / "2003-04-player_of_week-2003-11-03-east.decision.json"
+                packet = root / A.draws_dir("2003-04") / "2003-04-player_of_week-2003-11-03-east.decision.json"
                 self.assertEqual(json.loads(packet.read_text())["options"], {"Dwyane Wade": 0.5, "Paul Pierce": 0.5})
                 packet.with_name("2003-04-player_of_week-2003-11-03-east.decision.result.json").write_text(
                     json.dumps({"outcome": "Dwyane Wade"}))
