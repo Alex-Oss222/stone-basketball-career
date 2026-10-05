@@ -161,3 +161,12 @@ Paired checks used three seasons each (3,321 pairs): +5 defensive value on the f
 Commands: `python scripts/engine_diagnostics.py 4 --check`; `python scripts/engine_diagnostics.py 3 --defense-test`; `python scripts/engine_diagnostics.py 3 --home-test`; `python -m unittest tests.test_shot_creation -q`. Diagnostic files stay outside the career, and no real 2003-04 results were used as calibration targets.
 
 Known gaps: from 2004-05, players real Miami traded away between seasons still follow history, because the season tables cannot tell a trade from a free-agent move (roadmap item 8).
+
+## 2004-05 changes (roadmap 18a; from the 2004-05 season only)
+
+The 2003-04 season keeps its procedure exactly; these apply to games whose season is 2004-05 or later (`kernel._new_era`).
+
+- **Star usage.** The handler is chosen in proportion to his usage weight raised to `USAGE_EXPONENT = 1.15`. Plain proportional shares are normalised over each five-man lineup, so lineups with several high-usage players pulled them down. Synthetic check (`scratchpad` probe, 24 frozen March 2004 matchups x 15 games each, local entropy, never committed), realized usage over input usage: exponent 1.0 gave top-25 median 0.942, league median 0.997, bottom-25 1.028; exponent 1.15 gave 0.994, 0.992 and 0.984. Checked against the engine's own inputs only, never this season's results.
+- **Separate random streams.** Availability, injuries and possessions each draw from their own stream derived from the game entropy (shot locations already had theirs), so a new draw in one model does not shift the others.
+- **Credited playing time.** A player credited with any box-score event shows at least one second, taken from the teammate with the most time so the floor total holds; `validate_result` refuses a 2004-05 result where a credited player shows under one second.
+- **Hand-checking (2004-05 rules).** Recorded as an era rule flag only (the user's decision): no engine effect is added, because sizing it from 2004-05 results would be hindsight.

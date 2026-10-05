@@ -106,6 +106,18 @@ INJURY_LENGTHS = ((0.55, 1, 2, "day-to-day"), (0.25, 3, 7, "short"), (0.13, 8, 2
 CAREFUL = 0.25                  # foul weight of a player one foul from disqualification
 # Shot creation: structural assumptions, not fits to any player's career.
 USAGE_MAKE_SLOPE, USAGE_MAKE_LIMIT = 0.30, 0.06
+# Roadmap 18a, from the 2004-05 season only (`_new_era`); 2003-04 games keep the 2003 procedure exactly.
+# (1) Star usage: the ball goes to a handler in proportion to his usage weight raised to USAGE_EXPONENT. Plain
+# proportional shares are normalised over each five-man lineup, which pulled high-usage players about 4% below their
+# inputs and low-usage players about 3% above (synthetic check on frozen inputs, `docs/engine_model.md`); the exponent
+# is set so the top group returns near its input with the league median unchanged.
+USAGE_EXPONENT = 1.15
+# (2) Separate random streams: availability, injuries and possessions each draw from their own stream (shot locations
+# already did), so a new draw in one model never shifts the others.
+# (3) Playing time: a player credited with any box-score event shows at least MIN_CREDITED_SECONDS, taken from the
+# teammate with the most time so the floor total is unchanged; `validate_result` refuses the inconsistency.
+MIN_CREDITED_SECONDS = 1.0
+NEW_ERA_FROM = "2004-05"
 PASSING_MAKE_SLOPE, PASSING_MAKE_LIMIT = 0.018, 0.035
 TRANSITION_AFTER_STEAL, TRANSITION_AFTER_REBOUND = 0.70, 0.22
 TRANSITION_SECONDS = 7.0
@@ -623,6 +635,10 @@ def _choose_lineup(club, elapsed, game_seconds, mode="normal", sitting=frozenset
     return lineup
 
 
+def _new_era(season):
+    return isinstance(season, str) and season >= NEW_ERA_FROM
+
+
 def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type="regular", venue="home",
                  spatial_environment=None):
     if not isinstance(entropy, bytes) or len(entropy) < 32:
@@ -650,8 +666,17 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
     spatial_rng = random.Random(int.from_bytes(hashlib.sha256(
         seed_material + b"\0spatial-shots/v1\0" + canonical(spatial_environment)).digest(), "big"))
     shots = []
+    new_era = _new_era(rules.get("season"))
+    if new_era:
+        stream = lambda label: random.Random(int.from_bytes(hashlib.sha256(
+            seed_material + b"\0" + label.encode() + b"/v1\0").digest(), "big"))
+        avail_rng, injury_rng = stream("availability"), stream("injuries")
+        rng = stream("possessions")
+    else:
+        avail_rng = injury_rng = rng
+    usage_power = USAGE_EXPONENT if new_era else 1.0
 
-    clubs = {"home": _Club(home, "home", rng, rules), "away": _Club(away, "away", rng, rules)}
+    clubs = {"home": _Club(home, "home", avail_rng, rules), "away": _Club(away, "away", avail_rng, rules)}
     edge = {"home": cal["home_edge"], "away": -cal["home_edge"]} if venue == "home" else {"home": 0.0, "away": 0.0}
     quarter_seconds = rules["quarter_minutes"] * 60
     ot_seconds = rules["overtime_minutes"] * 60
@@ -754,7 +779,8 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
     def intentional_foul(offense):
         """Late-game foul by the trailing defense: two free throws to the player with the ball."""
         o = clubs[offense]
-        shooter = _weighted(rng, o.on_floor, weights_for(o, "usage_pct", 0, "usage"))
+        handlers = weights_for(o, "usage_pct", 0, "usage")
+        shooter = _weighted(rng, o.on_floor, handlers if usage_power == 1.0 else [w ** usage_power for w in handlers])
         foul(other(offense), "intentional")
         free_throws(offense, shooter, 2)
 
@@ -768,7 +794,7 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
             o.team_turnovers += 1
             return False
         handlers = weights_for(o, "usage_pct", 0, "usage")
-        shooter = _weighted(rng, o.on_floor, handlers)
+        shooter = _weighted(rng, o.on_floor, handlers if usage_power == 1.0 else [w ** usage_power for w in handlers])
         player = o.players[shooter]
         # The five defenders' combined defensive value, in points per 100 possessions (E1).
         team_defense = sum(_defense(d.players[pid]) for pid in d.on_floor)
@@ -1007,10 +1033,10 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
                     risk *= BACK_TO_BACK_INJURY
                 if 0 < player.returning <= REINJURY_GAMES:
                     risk *= REINJURY_FACTOR
-                if rng.random() < risk:
-                    share, low, high, kind = _weighted(rng, INJURY_LENGTHS, [length[0] for length in INJURY_LENGTHS])
+                if injury_rng.random() < risk:
+                    share, low, high, kind = _weighted(injury_rng, INJURY_LENGTHS, [length[0] for length in INJURY_LENGTHS])
                     club.injured.add(pid)
-                    injuries.append({"side": side, "player_id": pid, "kind": kind, "games_out": rng.randint(low, high),
+                    injuries.append({"side": side, "player_id": pid, "kind": kind, "games_out": injury_rng.randint(low, high),
                                      "period": number})
 
     def snapshot():
@@ -1045,6 +1071,15 @@ def resolve_game(home, away, *, entropy, event_id, rules, environment, game_type
         return totals
 
     def box(club):
+        if new_era:
+            # A credited event shows at least MIN_CREDITED_SECONDS; the teammate with the most time gives it up.
+            for pid in club.order:
+                line = club.lines[pid]
+                short = MIN_CREDITED_SECONDS - line["seconds"]
+                if short > 0 and any(line[k] for k in CREDITED):
+                    donor = max(club.order, key=lambda q: club.lines[q]["seconds"])
+                    club.lines[donor]["seconds"] -= short
+                    line["seconds"] += short
         rows = []
         for pid in club.order:
             line = dict(club.lines[pid])
@@ -1098,8 +1133,20 @@ def _replacement(club, out_pid, sitting=frozenset(), stay_if_none=False):
     return (same or bench)[0]
 
 
+CREDITED = ("pts", "fga", "fta", "orb", "drb", "ast", "stl", "blk", "tov", "pf")
+
+
+def credited_time_errors(result):
+    """From 2004-05: a player credited with any box-score event must show at least MIN_CREDITED_SECONDS."""
+    if not _new_era(result.get("season")):
+        return []
+    return [f"{side}: {r['player_id']} is credited with an event but shows under one second"
+            for side in ("home", "away") for r in result["player_stats"][side]
+            if r["seconds"] < MIN_CREDITED_SECONDS - 1e-6 and any(r.get(k) for k in CREDITED)]
+
+
 def validate_result(result):
-    errors = spatial_result_errors(result)
+    errors = spatial_result_errors(result) + credited_time_errors(result)
     if result["final_score"]["home"] == result["final_score"]["away"]:
         errors.append("game ended tied")
     for side in ("home", "away"):
