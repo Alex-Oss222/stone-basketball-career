@@ -24,6 +24,17 @@ from .rosters import SIMULATED_CLUB
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_REST = 3
+# The user's premise (December 31, 2004 on the career clock): every injured player is healed and the engine draws no
+# injuries or one-game absences for Miami from INJURY_PAUSE[0] until the injury pipeline is finished and switched back on
+# (INJURY_PAUSE[1], None = still paused). Games before the pause keep their recorded inputs and results; nothing is
+# re-rolled. A player on the injured list still serves the list's minimum games (a league rule, not an injury).
+INJURY_PAUSE = ("2005-01-01", None)
+
+
+def paused(game_date):
+    """Whether the injury model is switched off for a game on `game_date`."""
+    start, end = INJURY_PAUSE
+    return bool(game_date) and start <= game_date and (end is None or game_date < end)
 
 
 def rest_days(season, team, game_date, root=ROOT):

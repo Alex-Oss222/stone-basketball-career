@@ -1,0 +1,13 @@
+{
+ "event_id": "2004-05-injury-type-2004-12-19-orlando-magic-at-miami-heat-dorell-wright",
+ "date": "2004-12-19",
+ "question": "What was Dorell Wright's absence in 2004-12-19-orlando-magic-at-miami-heat (illness or personal, 1 game(s) out on the engine's draw)?",
+ "decider": "engine (injury type)",
+ "options": {
+  "flu_or_flu_like_symptoms": 0.473585,
+  "illness_cold_virus_infection_pneumonia_other": 0.328302,
+  "migraine_dizziness_dehydration_or_fatigue": 0.037736,
+  "stomach_virus_gastroenteritis_or_food_poisoning": 0.160377
+ },
+ "basis": "Types of kind 'illness' from library/injuries/nba_injury_types_2003_2014.json, each weighted by its real frequency (cases) times how well its recorded length fits 1 game(s): middle half 1, 10th-90th percentile 0.4, recorded extremes 0.1 (runtime/injury_types.py). Most likely: Flu or flu-like symptoms 47%, Illness: cold, virus, infection, pneumonia, other 33%, Stomach virus, gastroenteritis or food poisoning 16%, Migraine, dizziness, dehydration or fatigue 4%."
+}

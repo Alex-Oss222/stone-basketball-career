@@ -74,3 +74,5 @@ Found in the engine review on real 2003-04 rosters. Model and numbers: `docs/eng
 ## Deliberately not on this list
 
 Summer-league games, coaching carousels, media and narrative systems, and anything else that does not change a game result, a roster or a contract. Add one only when the career actually needs it.
+
+| I1 | Injury pipeline (the user's request, December 2004; injuries paused until it is done) | Before re-enabling `runtime/injuries.INJURY_PAUSE` | in progress: engine-drawn types from the researched sheet and the injured-list label are built (`runtime/injury_types.py`). Remaining: draw the type with the injury so its length follows the type's real distribution, every club's players (not Miami alone), type-specific recurrence and return ramp, injury pages on cards and Wade's milestones, and a calibration check of games lost per club-season against the sheet (14.7 injuries, about 103 games lost) |

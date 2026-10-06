@@ -147,7 +147,10 @@ def _club(spec, actives, root, rating_index, season=None, game_date=None):
     starters = tuple(p["player_id"] for p in spec["players"] if p.get("starter") is True)
     if explicit_starters and len(starters) != 5:
         raise ValueError(f"{spec['team']}: exactly five players must be marked starter")
-    return TeamInput(spec["team"], tuple(players), rest_days=rest, injuries=simulated, starters=starters)
+    from .injuries import paused
+    # The injury model is off while paused (the user's premise, runtime/injuries.INJURY_PAUSE); earlier games unchanged.
+    return TeamInput(spec["team"], tuple(players), rest_days=rest, injuries=simulated and not paused(game_date),
+                     starters=starters)
 
 
 def load_request(path, root=ROOT):

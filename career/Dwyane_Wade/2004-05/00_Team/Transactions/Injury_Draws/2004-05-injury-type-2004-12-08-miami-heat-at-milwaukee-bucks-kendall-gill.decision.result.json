@@ -1,0 +1,14 @@
+{
+ "date": "2004-12-08",
+ "decider": "engine (injury type)",
+ "event_id": "2004-05-injury-type-2004-12-08-miami-heat-at-milwaukee-bucks-kendall-gill",
+ "kind": "decision",
+ "options": {
+  "flu_or_flu_like_symptoms": 0.473585,
+  "illness_cold_virus_infection_pneumonia_other": 0.328302,
+  "migraine_dizziness_dehydration_or_fatigue": 0.037736,
+  "stomach_virus_gastroenteritis_or_food_poisoning": 0.160377
+ },
+ "outcome": "illness_cold_virus_infection_pneumonia_other",
+ "question": "What was Kendall Gill's absence in 2004-12-08-miami-heat-at-milwaukee-bucks (illness or personal, 1 game(s) out on the engine's draw)?"
+}

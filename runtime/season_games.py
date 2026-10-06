@@ -349,8 +349,8 @@ def miami_side(game_date, root=ROOT, season=None, with_lists=False):
     team = Path(root) / season_base(season) / "00_Team/Team"
     rotation, depth = rotation_in_force(game_date, root, season)
     results = [r for r in miami_results(root, season) if r.get("game_date", "") < game_date]
-    from .injuries import carried_in
-    injured = injured_out(results, start=carried_in(season, root))
+    from .injuries import carried_in, paused
+    injured = {} if paused(game_date) else injured_out(results, start=carried_in(season, root))   # healed by premise
     if injured:
         # `injured_out` counts closed results only; the Miami games already on the calendar between the last
         # closed result and this game (requests written in the same run, not yet played) are games missed too.
@@ -394,7 +394,7 @@ def miami_side(game_date, root=ROOT, season=None, with_lists=False):
     # staff's slot assignments decide starts and minutes only.
     listed_position = {p["name"]: p["positions"][0] for p in active if p.get("positions")}
     players = [dict(p, position=listed_position.get(p["player_id"], p["position"])) for p in players]
-    players = return_restrictions(players, results, season, root)
+    players = return_restrictions(players, results, season, root, game_date)
     if not with_lists:
         return players, injured
     return players, injured, {"injured_list": il, "placements": placements, "activations": activations}
@@ -411,13 +411,13 @@ def miami_requests_without_results(root=ROOT, season=None):
     return sorted(out)
 
 
-def return_restrictions(players, results, season=None, root=ROOT):
+def return_restrictions(players, results, season=None, root=ROOT, game_date=None):
     """A player back from an injury of eight or more games: the request marks which game back it is (the
     engine's re-injury risk) and the staff restricts his minutes in his first three games back, giving the
     rest to the others in proportion (RETURN_MINUTES, judgement)."""
     season = season or _active_season(root)
-    from .injuries import RETURN_MINUTES, carried_in, returning_from
-    back = returning_from(results, start=carried_in(season, root))
+    from .injuries import RETURN_MINUTES, carried_in, paused, returning_from
+    back = {} if paused(game_date) else returning_from(results, start=carried_in(season, root))   # healed: no ramp-up
     players = [dict(p) for p in players]
     freed = 0.0
     for p in players:

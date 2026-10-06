@@ -30,3 +30,27 @@ class InjuryTypeTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class InjuryPauseTests(unittest.TestCase):
+    """The user's premise: everyone healed and no injuries from INJURY_PAUSE[0] until the pipeline is switched back on."""
+
+    def test_pause_window(self):
+        from runtime import injuries
+        start, end = injuries.INJURY_PAUSE
+        self.assertFalse(injuries.paused("2004-12-31"))
+        self.assertTrue(injuries.paused(start))
+        if end is None:
+            self.assertTrue(injuries.paused("2006-03-01"))
+        else:
+            self.assertFalse(injuries.paused(end))
+
+    def test_engine_input_has_no_injuries_while_paused(self):
+        from pathlib import Path
+        from runtime.game_requests import _club
+        root = Path(__file__).resolve().parents[1]
+        spec = {"team": "Miami Heat", "players": [{"player_id": f"P{i}", "position": "SF", "minutes": 48.0} for i in range(5)]}
+        before = _club(spec, None, root, None, season="2004-05", game_date="2004-12-30")
+        during = _club(spec, None, root, None, season="2004-05", game_date="2005-01-03")
+        self.assertTrue(before.injuries)
+        self.assertFalse(during.injuries)

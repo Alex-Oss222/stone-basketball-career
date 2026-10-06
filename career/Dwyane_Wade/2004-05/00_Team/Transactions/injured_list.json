@@ -36,7 +36,10 @@
    "activated": "2004-12-12",
    "first_game_missed": "2004-12-03-miami-heat-at-chicago-bulls",
    "reason": "injury: 1 more game(s) out on the engine's draw",
-   "minimum_games": 5
+   "minimum_games": 5,
+   "injury": "Sore or inflamed knee, knee tendinitis, unspecified knee",
+   "body_area": "Knee",
+   "injury_type_source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Injury_Draws/2004-05-injury-type-2004-11-04-cleveland-cavaliers-at-miami-heat-caron-butler.decision.json"
   },
   {
    "player": "Maurice Evans",
@@ -52,7 +55,10 @@
    "activated": "2004-12-25",
    "first_game_missed": "2004-12-15-miami-heat-at-washington-wizards",
    "reason": "injury: 2 more game(s) out on the engine's draw",
-   "minimum_games": 5
+   "minimum_games": 5,
+   "injury": "Achilles tendinitis, strain or soreness",
+   "body_area": "Achilles",
+   "injury_type_source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Injury_Draws/2004-05-injury-type-2004-12-13-washington-wizards-at-miami-heat-eddie-jones.decision.json"
   },
   {
    "player": "Lamond Murray",
@@ -68,7 +74,10 @@
    "activated": null,
    "first_game_missed": "2004-12-23-miami-heat-at-sacramento-kings",
    "reason": "injury: 36 more game(s) out on the engine's draw",
-   "minimum_games": 5
+   "minimum_games": 5,
+   "injury": "Fractured tibia, fibula or leg (incl. stress fracture)",
+   "body_area": "Lower leg",
+   "injury_type_source": "career/Dwyane_Wade/2004-05/00_Team/Transactions/Injury_Draws/2004-05-injury-type-2004-12-21-boston-celtics-at-miami-heat-dwyane-wade.decision.json"
   },
   {
    "player": "John Edwards",
