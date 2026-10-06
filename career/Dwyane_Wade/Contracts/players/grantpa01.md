@@ -2,9 +2,9 @@
 
 # Contract | Paul Grant
 
-Known through: 2004-11-08. [Open interactive contract](grantpa01.html#contract) · [Contract history](grantpa01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](grantpa01.html#contract) · [Contract history](grantpa01.html#contract-history)
 
-Paul Grant: No verified contract record. Evidence cutoff: 2004-11-08.
+Paul Grant: No verified contract record. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Paul Grant |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Portland Trail Blazers |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

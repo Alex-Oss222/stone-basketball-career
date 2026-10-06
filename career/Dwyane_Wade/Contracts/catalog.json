@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-11-08",
+  "as_of": "2004-11-14",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -32,7 +32,7 @@
     {
       "player_id": "foylead01",
       "name": "Adonal Foyle",
-      "team": "Free agent",
+      "team": "Sacramento Kings",
       "status": "under contract",
       "current_contract_id": "foylead01-existing-eda9abc430a3",
       "recorded_agreements": 1,
@@ -1220,7 +1220,7 @@
     {
       "player_id": "martida01",
       "name": "Darrick Martin",
-      "team": "Free agent",
+      "team": "Portland Trail Blazers",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -1778,7 +1778,7 @@
     {
       "player_id": "carlige01",
       "name": "Geno Carlisle",
-      "team": "Portland Trail Blazers",
+      "team": "Free agent",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2876,7 +2876,7 @@
     {
       "player_id": "korveky01",
       "name": "Kyle Korver",
-      "team": "Free agent",
+      "team": "Sacramento Kings",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -2984,7 +2984,7 @@
     {
       "player_id": "smithle01",
       "name": "Leon Smith",
-      "team": "Free agent",
+      "team": "Los Angeles Lakers",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3803,7 +3803,7 @@
     {
       "player_id": "grantpa01",
       "name": "Paul Grant",
-      "team": "Free agent",
+      "team": "Portland Trail Blazers",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3902,7 +3902,7 @@
     {
       "player_id": "woodsqy01",
       "name": "Qyntel Woods",
-      "team": "Charlotte Bobcats",
+      "team": "Los Angeles Lakers",
       "status": "under rookie contract",
       "current_contract_id": "woodsqy01-2002-07-12",
       "recorded_agreements": 1,
@@ -4721,7 +4721,7 @@
     {
       "player_id": "smithth01",
       "name": "Theron Smith",
-      "team": "Free agent",
+      "team": "Portland Trail Blazers",
       "status": "under contract",
       "current_contract_id": "smithth01-2003-07-16",
       "recorded_agreements": 1,
@@ -4964,7 +4964,7 @@
     {
       "player_id": "hudsotr01",
       "name": "Troy Hudson",
-      "team": "Free agent",
+      "team": "Charlotte Bobcats",
       "status": "under contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -5180,7 +5180,7 @@
     {
       "player_id": "cabarza01",
       "name": "Zarko Cabarkapa",
-      "team": "Free agent",
+      "team": "Portland Trail Blazers",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,

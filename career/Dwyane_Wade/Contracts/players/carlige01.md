@@ -2,9 +2,9 @@
 
 # Contract | Geno Carlisle
 
-Known through: 2004-11-08. [Open interactive contract](carlige01.html#contract) · [Contract history](carlige01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](carlige01.html#contract) · [Contract history](carlige01.html#contract-history)
 
-Geno Carlisle: No verified contract record. Evidence cutoff: 2004-11-08.
+Geno Carlisle: No verified contract record. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Geno Carlisle |
-| Club / rights baseline | Portland Trail Blazers |
+| Club / rights baseline | Free agent |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

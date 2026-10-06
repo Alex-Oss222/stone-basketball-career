@@ -2,9 +2,9 @@
 
 # Contract | Reggie Evans
 
-Known through: 2004-11-08. [Open interactive contract](evansre01.html#contract) · [Contract history](evansre01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](evansre01.html#contract) · [Contract history](evansre01.html#contract-history)
 
-Reggie Evans: voided. Evidence cutoff: 2004-11-08.
+Reggie Evans: voided. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 

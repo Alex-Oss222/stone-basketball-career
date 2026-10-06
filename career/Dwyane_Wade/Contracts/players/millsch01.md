@@ -2,9 +2,9 @@
 
 # Contract | Chris Mills
 
-Known through: 2004-11-08. [Open interactive contract](millsch01.html#contract) · [Contract history](millsch01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](millsch01.html#contract) · [Contract history](millsch01.html#contract-history)
 
-Chris Mills: under contract. Evidence cutoff: 2004-11-08.
+Chris Mills: under contract. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Leon Smith
 
-Known through: 2004-11-08. [Open interactive contract](smithle01.html#contract) · [Contract history](smithle01.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](smithle01.html#contract) · [Contract history](smithle01.html#contract-history)
 
-Leon Smith: No verified contract record. Evidence cutoff: 2004-11-08.
+Leon Smith: No verified contract record. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Leon Smith |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Los Angeles Lakers |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

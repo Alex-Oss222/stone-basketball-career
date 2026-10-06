@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-11-08",
+  "as_of": "2004-11-14",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-11-06-miami-heat-at-washington-wizards",
+  "current_event": "2004-11-14-milwaukee-bucks-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-11-08"
+              "2004-11-14"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-11-06-miami-heat-at-washington-wizards"
+              "2004-11-14-milwaukee-bucks-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2004-11-08",
+              "2004-11-14",
               "Current checkpoint",
-              "2004-11-06-miami-heat-at-washington-wizards",
+              "2004-11-14-milwaukee-bucks-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",
@@ -94,8 +94,18 @@
               }
             ],
             [
-              "2004-11-09",
-              "Next Miami game, vs Washington Wizards",
+              "2004-11-15",
+              "League awards announced: Player of the Week",
+              "League (closed results only)",
+              "Scheduled",
+              {
+                "label": "Awards",
+                "href": "#calendar"
+              }
+            ],
+            [
+              "2004-11-16",
+              "Next Miami game, at Minnesota Timberwolves",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
@@ -104,23 +114,13 @@
               }
             ],
             [
-              "2004-11-11",
+              "2004-11-25",
               "Staff rotation review",
               "Coaching staff (same rule for every player)",
               "Scheduled; a role request may be logged before it",
               {
                 "label": "Rule",
                 "href": "../../../docs/front_office.md"
-              }
-            ],
-            [
-              "2004-11-15",
-              "League awards announced: Player of the Week",
-              "League (closed results only)",
-              "Scheduled",
-              {
-                "label": "Awards",
-                "href": "#calendar"
               }
             ],
             [
@@ -374,8 +374,12 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -387,7 +391,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json"
         },
         {
           "label": "Rule",
@@ -434,6 +438,22 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -442,7 +462,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-08"
+          "value": "2004-11-14"
         },
         {
           "label": "Team",
@@ -632,8 +652,12 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -645,7 +669,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json"
         },
         {
           "label": "Rule",
@@ -692,6 +716,22 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -700,7 +740,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-08"
+          "value": "2004-11-14"
         },
         {
           "label": "Team",
@@ -863,8 +903,12 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -876,7 +920,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json"
         },
         {
           "label": "Rule",
@@ -923,6 +967,22 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -931,7 +991,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-08"
+          "value": "2004-11-14"
         },
         {
           "label": "Team",
@@ -1117,8 +1177,12 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1130,7 +1194,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json"
         },
         {
           "label": "Rule",
@@ -1177,6 +1241,22 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1185,7 +1265,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-08"
+          "value": "2004-11-14"
         },
         {
           "label": "Team",
@@ -1350,8 +1430,12 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1363,7 +1447,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json"
         },
         {
           "label": "Rule",
@@ -1410,6 +1494,22 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1418,7 +1518,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-08"
+          "value": "2004-11-14"
         },
         {
           "label": "Team",
@@ -1574,8 +1674,12 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1587,7 +1691,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json"
         },
         {
           "label": "Rule",
@@ -1634,6 +1738,22 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1642,7 +1762,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-08"
+          "value": "2004-11-14"
         },
         {
           "label": "Team",
@@ -1807,8 +1927,12 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -1820,7 +1944,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json"
         },
         {
           "label": "Rule",
@@ -1867,6 +1991,22 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1875,7 +2015,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-08"
+          "value": "2004-11-14"
         },
         {
           "label": "Team",
@@ -1957,11 +2097,11 @@
             ],
             [
               "C",
-              "Brian Grant, John Thomas, John Edwards",
+              "Brian Grant, John Edwards, John Thomas",
               "Staff ordering; not a future minutes promise"
             ]
           ],
-          "notice": "Snapshot: 2004-11-01. Draft rights and unassigned arrivals are not assigned minutes."
+          "notice": "Snapshot: 2004-11-11. Draft rights and unassigned arrivals are not assigned minutes."
         },
         {
           "title": "Role and promise review",
@@ -2144,8 +2284,12 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2157,7 +2301,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json"
         },
         {
           "label": "Rule",
@@ -2204,6 +2348,22 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2212,7 +2372,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-08"
+          "value": "2004-11-14"
         },
         {
           "label": "Team",
@@ -2229,7 +2389,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "10 closed game records in 2004-05 through 2004-11-08. Competitions remain separate.",
+      "summary": "14 closed game records in 2004-05 through 2004-11-14. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -2256,12 +2416,12 @@
             ],
             [
               "regular",
-              3,
-              31.115888889,
-              15.0,
-              3.333333333,
-              3.333333333,
-              1.333333333,
+              7,
+              31.694714286,
+              16.142857143,
+              3.857142857,
+              2.857142857,
+              1.0,
               "Complete"
             ]
           ]
@@ -2289,12 +2449,12 @@
             ],
             [
               "regular",
-              14,
-              27,
-              0.518518519,
-              3,
-              6,
-              0.5
+              40,
+              76,
+              0.526315789,
+              8,
+              18,
+              0.444444444
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -2408,6 +2568,46 @@
                 "label": "Closed game",
                 "href": "../2004-05/06_Regular_Season/11_November/Week_1/Game_3.md"
               }
+            ],
+            [
+              "2004-11-09",
+              "regular",
+              "Washington Wizards",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_1.md"
+              }
+            ],
+            [
+              "2004-11-11",
+              "regular",
+              "Dallas Mavericks",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md"
+              }
+            ],
+            [
+              "2004-11-12",
+              "regular",
+              "San Antonio Spurs",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md"
+              }
+            ],
+            [
+              "2004-11-14",
+              "regular",
+              "Milwaukee Bucks",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md"
+              }
             ]
           ]
         },
@@ -2493,8 +2693,12 @@
           "href": "../2004-05/04_Training_Camp/wade_requests.json"
         },
         {
+          "label": "Dated staff rotation review",
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/review.json"
+        },
+        {
           "label": "Current dated staff depth chart",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/depth_chart.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/depth_chart.json"
         },
         {
           "label": "Offseason player decisions and events",
@@ -2506,7 +2710,7 @@
         },
         {
           "label": "Dated staff rotation",
-          "href": "../2004-05/00_Team/Team/Depth_Chart/rotation.json"
+          "href": "../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-11-11/rotation.json"
         },
         {
           "label": "Rule",
@@ -2553,6 +2757,22 @@
           "href": "../2004-05/06_Regular_Season/11_November/Week_1/Game_3.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_1.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_2.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_3.md"
+        },
+        {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/11_November/Week_2/Game_4.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2561,7 +2781,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-11-08"
+          "value": "2004-11-14"
         },
         {
           "label": "Team",

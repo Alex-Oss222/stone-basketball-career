@@ -2,9 +2,9 @@
 
 # Contract | Stanislav Medvedenko
 
-Known through: 2004-11-08. [Open interactive contract](stanislavmedvedenko.html#contract) · [Contract history](stanislavmedvedenko.html#contract-history)
+Known through: 2004-11-14. [Open interactive contract](stanislavmedvedenko.html#contract) · [Contract history](stanislavmedvedenko.html#contract-history)
 
-Stanislav Medvedenko: No verified contract record. Evidence cutoff: 2004-11-08.
+Stanislav Medvedenko: No verified contract record. Evidence cutoff: 2004-11-14.
 
 ## Current contract
 
