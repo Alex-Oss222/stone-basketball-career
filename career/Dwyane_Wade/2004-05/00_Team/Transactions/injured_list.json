@@ -63,7 +63,7 @@
   {
    "player": "Lamond Murray",
    "placed": "2004-12-21",
-   "activated": null,
+   "activated": "2005-01-01",
    "first_game_missed": "2004-12-21-boston-celtics-at-miami-heat",
    "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
    "minimum_games": 5
@@ -86,7 +86,15 @@
    "first_game_missed": "2004-12-25-miami-heat-at-los-angeles-lakers",
    "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
    "minimum_games": 5
+  },
+  {
+   "player": "John Thomas",
+   "placed": "2005-01-01",
+   "activated": null,
+   "first_game_missed": "2005-01-01-charlotte-bobcats-at-miami-heat",
+   "reason": "reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)",
+   "minimum_games": 5
   }
  ],
- "as_of": "2004-12-30"
+ "as_of": "2005-01-01"
 }

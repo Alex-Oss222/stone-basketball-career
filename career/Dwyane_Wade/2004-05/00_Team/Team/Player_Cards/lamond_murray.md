@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** SF  
 **Age at assessment:** 31 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** December 20, 2004 · **Statistics through:** 2004-12-31 
+**Opening assessment:** December 20, 2004 · **Statistics through:** 2005-01-01 
 
 **Contract/control:** Acquired by trade from Toronto Raptors on December 20, 2004: $4,875,000 in 2004-05; contract through 2005-06. (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at SF, staff plan 10 minutes (staff rotation dated 2004-12-23, [record](../Depth_Chart/Reviews/2004-12-23/rotation.json)). On the injured list since 2004-12-21 (reserve: not among the twelve the staff dresses (clubs of the era listed healthy reserves on the injured list)).
+**Role:** Rotation at SF, staff plan 10 minutes (staff rotation dated 2004-12-23, [record](../Depth_Chart/Reviews/2004-12-23/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -51,7 +51,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | Toronto Raptors | 33 | N/A | 15.7 | 6.0 | 2.7 | 0.8 | 0.5 | 0.2 | 1.2 | 0.353 | 0.350 | 0.686 |
-| 2004-05 | Miami Heat | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| 2004-05 | MIA | 1 | 0 | 12.5 | 0.0 | 0.0 | 0.0 | 1.0 | 0.0 | 2.0 | 0.0% | N/A | N/A |
 
 Source: [2002-03 league record](../../../../../../library/2003/league/nba_2002_03_player_stats.json); 2003-04 from closed Miami game results.
 
