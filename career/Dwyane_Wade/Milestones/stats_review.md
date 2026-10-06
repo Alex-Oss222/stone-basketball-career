@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-11-29 · Miami Heat · active
+Career date: 2004-12-02 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-22 closed game records in 2004-05 through 2004-11-29. Competitions remain separate.
+23 closed game records in 2004-05 through 2004-12-02. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
-| regular | 14 | 34.4 | 16.2 | 4.9 | 4.3 | 1.1 | Complete |
+| regular | 15 | 35.1 | 16.7 | 5.1 | 4.1 | 1.3 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
-| regular | 77 | 155 | 0.497 | 12 | 26 | 0.462 |
+| regular | 84 | 172 | 0.488 | 14 | 31 | 0.452 |
 
 ## Closed source games
 
@@ -52,6 +52,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-11-24 | regular | Atlanta Hawks | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.md) |
 | 2004-11-26 | regular | Detroit Pistons | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.md) |
 | 2004-11-28 | regular | Boston Celtics | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.md) |
+| 2004-11-30 | regular | Toronto Raptors | Played | [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_5.md) |
 
 ## Evidence available for decisions
 
@@ -114,4 +115,5 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_4.md)
+- [Closed game](../2004-05/06_Regular_Season/11_November/Week_4/Game_5.md)
 - [Dated milestone working records and player replies](../milestones.json)

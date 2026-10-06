@@ -2,9 +2,9 @@
 
 # Contract | Amar'e Stoudemire
 
-Known through: 2004-11-29. [Open interactive contract](stoudam01.html#contract) · [Contract history](stoudam01.html#contract-history)
+Known through: 2004-12-02. [Open interactive contract](stoudam01.html#contract) · [Contract history](stoudam01.html#contract-history)
 
-Amar'e Stoudemire: under rookie contract. Evidence cutoff: 2004-11-29.
+Amar'e Stoudemire: under rookie contract. Evidence cutoff: 2004-12-02.
 
 ## Current contract
 

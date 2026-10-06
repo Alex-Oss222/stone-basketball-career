@@ -2,7 +2,7 @@
 
 [League record guide](../README.md) · [2004-05 league statistics](../2004-05/League_Stats.md) · [Player registry](../player_registry.json) · [Card guide](../../../../../docs/player_cards.md)
 
-Card date: **2004-11-29**. 570 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
+Card date: **2004-12-02**. 570 registry players, one Markdown card and one interactive HTML card each; 331 cards carry a sourced photo, the rest a neutral silhouette. Regenerate with `python scripts/build_league_cards.py --write`; the interactive card opens in a browser from a checkout (GitHub shows HTML as source).
 
 <details>
 <summary>PG · Point guards · 100 players</summary>
@@ -34,7 +34,7 @@ Card date: **2004-11-29**. 570 registry players, one Markdown card and one inter
 | [Darrick Martin](martida01.md) | Portland Trail Blazers | 33 | silhouette | [open](martida01.html) |
 | [Derek Anderson](anderde01.md) | Portland Trail Blazers | 30 | sourced | [open](anderde01.html) |
 | [Derek Fisher](fishede01.md) | Utah Jazz | 30 | sourced | [open](fishede01.html) |
-| [Derrick Zimmerman](zimmede01.md) | Free agent | 22 | sourced | [open](zimmede01.html) |
+| [Derrick Zimmerman](zimmede01.md) | Free agent | 23 | sourced | [open](zimmede01.html) |
 | [Doug Overton](overtdo01.md) | Free agent | 35 | silhouette | [open](overtdo01.html) |
 | [Earl Boykins](boykiea01.md) | Denver Nuggets | 28 | sourced | [open](boykiea01.html) |
 | [Earl Watson](watsoea01.md) | Memphis Grizzlies | 25 | sourced | [open](watsoea01.html) |
@@ -225,7 +225,7 @@ Card date: **2004-11-29**. 570 registry players, one Markdown card and one inter
 | [Andre Iguodala](andreiguodala.md) | New York Knicks | 20 | silhouette | [open](andreiguodala.html) |
 | [Andrei Kirilenko](kirilan01.md) | Utah Jazz | 23 | sourced | [open](kirilan01.html) |
 | [Andris Biedriņš](andrisbiedri.md) | Los Angeles Clippers | 18 | silhouette | [open](andrisbiedri.html) |
-| [Andrés Nocioni](andrsnocioni.md) | San Antonio Spurs | 24 | silhouette | [open](andrsnocioni.html) |
+| [Andrés Nocioni](andrsnocioni.md) | San Antonio Spurs | 25 | silhouette | [open](andrsnocioni.html) |
 | [Ansu Sesay](sesayan01.md) | Free agent | 28 | silhouette | [open](sesayan01.html) |
 | [Antawn Jamison](jamisan01.md) | Dallas Mavericks | 28 | sourced | [open](jamisan01.html) |
 | [Anthony Miller](anthonymiller.md) | San Antonio Spurs | 33 | silhouette | [open](anthonymiller.html) |
@@ -258,7 +258,7 @@ Card date: **2004-11-29**. 570 registry players, one Markdown card and one inter
 | [Devin Harris](devinharris.md) | Cleveland Cavaliers | 21 | silhouette | [open](devinharris.html) |
 | [Donnell Harvey](harvedo01.md) | San Antonio Spurs | 24 | silhouette | [open](harvedo01.html) |
 | [Donta Smith](dontasmith.md) | Washington Wizards | 21 | silhouette | [open](dontasmith.html) |
-| [Dorell Wright](wrighdo01.md) | Miami Heat | 18 | silhouette | [open](wrighdo01.html) |
+| [Dorell Wright](wrighdo01.md) | Miami Heat | 19 | silhouette | [open](wrighdo01.html) |
 | [Eddie Robinson](robined01.md) | Free agent | 28 | sourced | [open](robined01.html) |
 | [Eduardo Najera](najered01.md) | Dallas Mavericks | 28 | sourced | [open](najered01.html) |
 | [Emeka Okafor](emekaokafor.md) | Washington Wizards | 22 | silhouette | [open](emekaokafor.html) |
@@ -502,7 +502,7 @@ Card date: **2004-11-29**. 570 registry players, one Markdown card and one inter
 | --- | --- | --- | --- | --- |
 | [Aaron Williams](williaa01.md) | New Jersey Nets | 33 | silhouette | [open](williaa01.html) |
 | [Adonal Foyle](foylead01.md) | Sacramento Kings | 29 | sourced | [open](foylead01.html) |
-| [Alan Henderson](hendeal01.md) | Atlanta Hawks | 31 | silhouette | [open](hendeal01.html) |
+| [Alan Henderson](hendeal01.md) | Atlanta Hawks | 32 | silhouette | [open](hendeal01.html) |
 | [Alonzo Mourning](mournal01.md) | Seattle SuperSonics | 34 | silhouette | [open](mournal01.html) |
 | [Amal McCaskill](mccasam01.md) | Free agent | 31 | silhouette | [open](mccasam01.html) |
 | [Andreas Glyniadakis](glynian01.md) | Free agent | 23 | sourced | [open](glynian01.html) |
@@ -551,9 +551,9 @@ Card date: **2004-11-29**. 570 registry players, one Markdown card and one inter
 | [Jamaal Magloire](magloja01.md) | New Orleans Hornets | 26 | sourced | [open](magloja01.html) |
 | [Jamal Sampson](sampsja01.md) | Houston Rockets | 21 | silhouette | [open](sampsja01.html) |
 | [James Lang](langja01.md) | Free agent | 21 | sourced | [open](langja01.html) |
-| [Jarron Collins](collija03.md) | Utah Jazz | 25 | silhouette | [open](collija03.html) |
+| [Jarron Collins](collija03.md) | Utah Jazz | 26 | silhouette | [open](collija03.html) |
 | [Jason Collier](collija02.md) | Utah Jazz | 27 | silhouette | [open](collija02.html) |
-| [Jason Collins](collija04.md) | New Jersey Nets | 25 | sourced | [open](collija04.html) |
+| [Jason Collins](collija04.md) | New Jersey Nets | 26 | sourced | [open](collija04.html) |
 | [Jeff Foster](fosteje01.md) | Indiana Pacers | 27 | sourced | [open](fosteje01.html) |
 | [Jelani McCoy](mccoyje01.md) | Indiana Pacers | 26 | sourced | [open](mccoyje01.html) |
 | [Jerome James](jamesje01.md) | Seattle SuperSonics | 29 | sourced | [open](jamesje01.html) |
@@ -575,7 +575,7 @@ Card date: **2004-11-29**. 570 registry players, one Markdown card and one inter
 | [Marc Jackson](jacksma02.md) | Philadelphia 76ers | 29 | sourced | [open](jacksma02.html) |
 | [Marcus Camby](cambyma01.md) | Minnesota Timberwolves | 30 | sourced | [open](cambyma01.html) |
 | [Mario Kasun](kasunma01.md) | Orlando Magic | 24 | silhouette | [open](kasunma01.html) |
-| [Mark Blount](blounma01.md) | Boston Celtics | 28 | sourced | [open](blounma01.html) |
+| [Mark Blount](blounma01.md) | Boston Celtics | 29 | sourced | [open](blounma01.html) |
 | [Melvin Ely](elyme01.md) | Los Angeles Clippers | 26 | silhouette | [open](elyme01.html) |
 | [Mengke Bateer](bateeme01.md) | Free agent | 29 | silhouette | [open](bateeme01.html) |
 | [Michael Doleac](doleami01.md) | New York Knicks | 27 | sourced | [open](doleami01.html) |

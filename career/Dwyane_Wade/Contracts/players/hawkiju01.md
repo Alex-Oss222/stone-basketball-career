@@ -2,9 +2,9 @@
 
 # Contract | Juaquin Hawkins
 
-Known through: 2004-11-29. [Open interactive contract](hawkiju01.html#contract) · [Contract history](hawkiju01.html#contract-history)
+Known through: 2004-12-02. [Open interactive contract](hawkiju01.html#contract) · [Contract history](hawkiju01.html#contract-history)
 
-Juaquin Hawkins: unsigned free agent. Evidence cutoff: 2004-11-29.
+Juaquin Hawkins: unsigned free agent. Evidence cutoff: 2004-12-02.
 
 ## Current contract
 

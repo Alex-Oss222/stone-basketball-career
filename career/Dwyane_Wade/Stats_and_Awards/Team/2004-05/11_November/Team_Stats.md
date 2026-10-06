@@ -4,13 +4,13 @@
 
 NBA regular season · November 1-30, 2004
 
-As of November 29, 2004: 15 closed Miami games in this period. Rows cover Miami's closed games only.
+As of December 2, 2004: 16 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
 | G | W | L | WIN% | PPG | OPP PPG | DIFF |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 15 | 10 | 5 | .667 | 97.8 | 95.9 | +1.9 |
+| 16 | 10 | 6 | .625 | 97.8 | 96.6 | +1.2 |
 
 ## Player production
 
@@ -18,14 +18,14 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 
 | Player | Pos | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Eddie Jones | SG/SF | 15 | 11.1 | 3.5 | 1.3 | 0.7 | 0.6 | 0.1 | 0.3 |
-| Brian Grant | C/PF | 15 | 28.4 | 8.3 | 5.1 | 1.1 | 0.6 | 0.3 | 0.9 |
-| Scott Padgett | PF | 14 | 22.1 | 5.8 | 4.2 | 1.6 | 1.0 | 0.2 | 0.6 |
-| Mike James | PG | 14 | 34.8 | 16.4 | 3.7 | 4.5 | 1.1 | 0.1 | 2.4 |
-| Mehmet Okur | PF | 15 | 34.2 | 14.7 | 8.8 | 3.3 | 0.4 | 1.2 | 2.1 |
-| Dwyane Wade | SG/PG | 14 | 34.4 | 16.2 | 4.9 | 4.3 | 1.7 | 1.2 | 1.1 |
-| Caron Butler | SF | 13 | 35.3 | 17.0 | 4.3 | 1.6 | 0.9 | 0.2 | 2.3 |
-| Kendall Gill | SG | 15 | 9.9 | 3.3 | 1.3 | 0.6 | 0.5 | 0.3 | 0.7 |
+| Eddie Jones | SG/SF | 16 | 10.6 | 3.4 | 1.2 | 0.7 | 0.6 | 0.2 | 0.4 |
+| Brian Grant | C/PF | 16 | 29.0 | 7.9 | 5.2 | 1.2 | 0.6 | 0.3 | 0.9 |
+| Scott Padgett | PF | 15 | 22.3 | 5.8 | 4.3 | 1.5 | 1.1 | 0.2 | 0.5 |
+| Mike James | PG | 15 | 35.1 | 16.2 | 3.9 | 4.5 | 1.1 | 0.1 | 2.4 |
+| Mehmet Okur | PF | 16 | 34.4 | 15.1 | 8.9 | 3.1 | 0.4 | 1.1 | 2.1 |
+| Dwyane Wade | SG/PG | 15 | 35.1 | 16.7 | 5.1 | 4.1 | 1.7 | 1.4 | 1.3 |
+| Caron Butler | SF | 14 | 34.7 | 17.1 | 4.4 | 1.8 | 0.9 | 0.1 | 2.3 |
+| Kendall Gill | SG | 16 | 9.9 | 3.8 | 1.2 | 0.6 | 0.5 | 0.3 | 0.6 |
 | Dorell Wright | SF | 14 | 6.9 | 3.6 | 1.0 | 0.6 | 0.3 | 0.2 | 0.6 |
 | John Thomas | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Maurice Evans | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
@@ -34,7 +34,7 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 | John Edwards | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Bernard Robinson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Christian Drejer | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Rafer Alston | PG | 15 | 14.0 | 6.5 | 1.1 | 2.2 | 0.3 | 0.1 | 1.1 |
+| Rafer Alston | PG | 16 | 13.9 | 6.1 | 1.1 | 2.2 | 0.4 | 0.1 | 1.0 |
 
 <details>
 <summary>Shooting and rebounding detail</summary>
@@ -43,14 +43,14 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Player | GS | FG | FG% | 3P | 3P% | FT | FT% | OREB | DREB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Eddie Jones | 2 | 18/51 | .353 | 3/18 | .167 | 13/19 | .684 | 4 | 15 |
-| Brian Grant | 15 | 48/109 | .440 | 1/3 | .333 | 27/41 | .659 | 33 | 44 |
-| Scott Padgett | 0 | 29/81 | .358 | 8/28 | .286 | 15/20 | .750 | 10 | 49 |
-| Mike James | 14 | 86/188 | .457 | 25/57 | .439 | 33/42 | .786 | 10 | 42 |
-| Mehmet Okur | 15 | 78/152 | .513 | 3/13 | .231 | 62/74 | .838 | 38 | 94 |
-| Dwyane Wade | 14 | 77/155 | .497 | 12/26 | .462 | 61/66 | .924 | 23 | 46 |
-| Caron Butler | 13 | 85/177 | .480 | 13/32 | .406 | 38/50 | .760 | 19 | 37 |
-| Kendall Gill | 0 | 19/51 | .373 | 4/6 | .667 | 8/10 | .800 | 3 | 17 |
+| Eddie Jones | 2 | 18/51 | .353 | 3/18 | .167 | 15/21 | .714 | 4 | 16 |
+| Brian Grant | 16 | 49/117 | .419 | 1/3 | .333 | 28/43 | .651 | 35 | 49 |
+| Scott Padgett | 0 | 30/92 | .326 | 8/32 | .250 | 19/24 | .792 | 13 | 51 |
+| Mike James | 15 | 91/198 | .460 | 28/62 | .452 | 33/42 | .786 | 12 | 46 |
+| Mehmet Okur | 16 | 84/163 | .515 | 3/14 | .214 | 71/83 | .855 | 42 | 100 |
+| Dwyane Wade | 15 | 84/172 | .488 | 14/31 | .452 | 68/73 | .932 | 25 | 52 |
+| Caron Butler | 14 | 93/190 | .489 | 13/35 | .371 | 41/56 | .732 | 20 | 41 |
+| Kendall Gill | 0 | 23/57 | .404 | 5/7 | .714 | 9/11 | .818 | 3 | 17 |
 | Dorell Wright | 1 | 19/42 | .452 | 4/9 | .444 | 8/9 | .889 | 4 | 10 |
 | John Thomas | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Maurice Evans | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
@@ -59,7 +59,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | John Edwards | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Bernard Robinson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Christian Drejer | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Rafer Alston | 1 | 33/74 | .446 | 12/36 | .333 | 19/25 | .760 | 4 | 13 |
+| Rafer Alston | 1 | 33/76 | .434 | 12/37 | .324 | 19/25 | .760 | 4 | 14 |
 
 </details>
 
@@ -70,7 +70,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | [Week 1](Week_1/Team_Stats.md) | November 1-7, 2004 | 3 | Complete |
 | [Week 2](Week_2/Team_Stats.md) | November 8-14, 2004 | 4 | Complete |
 | [Week 3](Week_3/Team_Stats.md) | November 15-21, 2004 | 4 | Complete |
-| [Week 4](Week_4/Team_Stats.md) | November 22-30, 2004 | 4 | Through November 29, 2004 |
+| [Week 4](Week_4/Team_Stats.md) | November 22-30, 2004 | 5 | Complete |
 
 Departures retain their completed Miami appearances. Arrivals enter from their first applicable period. Team wins and losses count games once, not once per player.
 
