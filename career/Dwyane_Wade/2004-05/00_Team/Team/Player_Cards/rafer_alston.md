@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 28 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 5, 2004 · **Statistics through:** 2005-01-08 
+**Opening assessment:** October 5, 2004 · **Statistics through:** 2005-01-09 
 
 **Contract/control:** Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10. (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
@@ -52,7 +52,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2003-04 | Toronto Raptors | 47 | 10 | 23.5 | 8.5 | 3.1 | 2.9 | 1.2 | 0.1 | 1.5 | 0.379 | 0.354 | 0.776 |
-| 2004-05 | MIA | 34 | 1 | 14.7 | 6.8 | 1.2 | 2.4 | 0.8 | 0.1 | 1.0 | 41.7% | 31.2% | 77.0% |
+| 2004-05 | MIA | 35 | 1 | 14.8 | 6.9 | 1.2 | 2.5 | 0.7 | 0.1 | 1.0 | 41.3% | 31.4% | 77.0% |
 
 Source: 2003-04 from closed simulated results (`Stats_and_Awards/League/2003-04/season_totals.json`); 2004-05 from closed Miami game results.
 
