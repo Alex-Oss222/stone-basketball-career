@@ -1,0 +1,12 @@
+{
+ "date": "2004-10-05",
+ "decider": "engine (camp injury draw)",
+ "event_id": "2004-camp-gillke01-injury",
+ "kind": "decision",
+ "options": {
+  "healthy": 0.94,
+  "injured": 0.06
+ },
+ "outcome": "healthy",
+ "question": "Is Kendall Gill hurt in training camp?"
+}

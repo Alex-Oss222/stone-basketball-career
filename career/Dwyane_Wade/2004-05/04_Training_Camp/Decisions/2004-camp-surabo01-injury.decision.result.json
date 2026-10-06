@@ -1,0 +1,12 @@
+{
+ "date": "2004-10-05",
+ "decider": "engine (camp injury draw)",
+ "event_id": "2004-camp-surabo01-injury",
+ "kind": "decision",
+ "options": {
+  "healthy": 0.965,
+  "injured": 0.035
+ },
+ "outcome": "healthy",
+ "question": "Is Bob Sura hurt in training camp?"
+}

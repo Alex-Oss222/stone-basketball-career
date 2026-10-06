@@ -1,0 +1,257 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "season": "2004-05",
+ "opened": "2004-10-05",
+ "status": "open",
+ "purpose": "Miami's training-camp roster: the register plus invitees on non-guaranteed minimum contracts, camp injuries, and the cut.",
+ "players": [
+  {
+   "player": "Eddie Jones",
+   "bbr_id": "jonesed02",
+   "positions": [
+    "SG",
+    "SF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Brian Grant",
+   "bbr_id": "grantbr01",
+   "positions": [
+    "C",
+    "PF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Scott Padgett",
+   "bbr_id": "padgesc01",
+   "positions": [
+    "PF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Mike James",
+   "bbr_id": "jamesmi01",
+   "positions": [
+    "PG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Mehmet Okur",
+   "bbr_id": "okurme01",
+   "positions": [
+    "PF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Dwyane Wade",
+   "bbr_id": null,
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Caron Butler",
+   "bbr_id": "butleca01",
+   "positions": [
+    "SF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Kendall Gill",
+   "bbr_id": "gillke01",
+   "positions": [
+    "SG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Dorell Wright",
+   "bbr_id": "wrighdo01",
+   "positions": [
+    "SF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "John Thomas",
+   "bbr_id": "thomajo02",
+   "positions": [
+    "C"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Maurice Evans",
+   "bbr_id": "evansma01",
+   "positions": [
+    "SG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Udonis Haslem",
+   "bbr_id": "hasleud01",
+   "positions": [
+    "PF"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Maurice Baker",
+   "bbr_id": "bakerma01",
+   "positions": [
+    "PG"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "John Edwards",
+   "bbr_id": "edwarjo01",
+   "positions": [
+    "C"
+   ],
+   "status": "under_contract",
+   "kind": "roster",
+   "injured_through": null
+  },
+  {
+   "player": "Stephen Jackson",
+   "bbr_id": "jacksst02",
+   "positions": [
+    "SG"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 688679,
+    "guaranteed": 0,
+    "guarantee_date": "2005-01-10"
+   },
+   "value": 7.84,
+   "fit": 0.65,
+   "injured_through": null
+  },
+  {
+   "player": "Bob Sura",
+   "bbr_id": "surabo01",
+   "positions": [
+    "SG"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 938679,
+    "guaranteed": 0,
+    "guarantee_date": "2005-01-10"
+   },
+   "value": 6.74,
+   "fit": 0.65,
+   "injured_through": null
+  },
+  {
+   "player": "Calbert Cheaney",
+   "bbr_id": "cheanca01",
+   "positions": [
+    "SG"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 1000000,
+    "guaranteed": 0,
+    "guarantee_date": "2005-01-10"
+   },
+   "value": 6.65,
+   "fit": 0.65,
+   "injured_through": null
+  },
+  {
+   "player": "Rafer Alston",
+   "bbr_id": "alstora01",
+   "positions": [
+    "PG"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 751179,
+    "guaranteed": 0,
+    "guarantee_date": "2005-01-10"
+   },
+   "value": 8.05,
+   "fit": 0.5,
+   "injured_through": null
+  },
+  {
+   "player": "Chris Mihm",
+   "bbr_id": "mihmch01",
+   "positions": [
+    "C"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 688679,
+    "guaranteed": 0,
+    "guarantee_date": "2005-01-10"
+   },
+   "value": 7.64,
+   "fit": 0.5,
+   "injured_through": null
+  },
+  {
+   "player": "Derek Fisher",
+   "bbr_id": "fishede01",
+   "positions": [
+    "PG"
+   ],
+   "status": "camp_contract",
+   "kind": "invite",
+   "contract": {
+    "salary": 813679,
+    "guaranteed": 0,
+    "guarantee_date": "2005-01-10"
+   },
+   "value": 7.44,
+   "fit": 0.5,
+   "injured_through": null
+  }
+ ],
+ "cuts": [],
+ "injuries_applied": "2004-10-05"
+}

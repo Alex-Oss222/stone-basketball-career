@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2004-10-03",
+  "as_of": "2004-10-05",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-04-28-milwaukee-bucks-at-miami-heat",
+  "current_event": "2004-10-05-camp-opens",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2004-10-03"
+              "2004-10-05"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-04-28-milwaukee-bucks-at-miami-heat"
+              "2004-10-05-camp-opens"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2004-10-03",
+              "2004-10-05",
               "Current checkpoint",
-              "2004-04-28-milwaukee-bucks-at-miami-heat",
+              "2004-10-05-camp-opens",
               "Recorded",
               {
                 "label": "Owning event",
@@ -84,10 +84,10 @@
               }
             ],
             [
-              "Not yet verified",
+              "2004-10-05",
               "Camp reporting",
               "Club records the date",
-              "inactive",
+              "active",
               {
                 "label": "Training camp",
                 "href": "#training_camp"
@@ -119,7 +119,7 @@
               "2004-10-05",
               "Training camp opens",
               "League calendar",
-              "upcoming",
+              "today",
               {
                 "label": "Season",
                 "href": "#calendar"
@@ -342,6 +342,10 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
+          "label": "Recorded camp roster",
+          "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -350,7 +354,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-03"
+          "value": "2004-10-05"
         },
         {
           "label": "Team",
@@ -402,7 +406,7 @@
             ],
             [
               "Source snapshot",
-              "2004-10-01"
+              "2004-10-05"
             ]
           ]
         },
@@ -548,6 +552,10 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
+          "label": "Recorded camp roster",
+          "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -556,7 +564,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-03"
+          "value": "2004-10-05"
         },
         {
           "label": "Team",
@@ -727,6 +735,10 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
+          "label": "Recorded camp roster",
+          "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -735,7 +747,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-03"
+          "value": "2004-10-05"
         },
         {
           "label": "Team",
@@ -909,6 +921,10 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
+          "label": "Recorded camp roster",
+          "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -917,7 +933,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-03"
+          "value": "2004-10-05"
         },
         {
           "label": "Team",
@@ -1090,6 +1106,10 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
+          "label": "Recorded camp roster",
+          "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1098,7 +1118,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-03"
+          "value": "2004-10-05"
         },
         {
           "label": "Team",
@@ -1262,6 +1282,10 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
+          "label": "Recorded camp roster",
+          "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1270,7 +1294,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-03"
+          "value": "2004-10-05"
         },
         {
           "label": "Team",
@@ -1443,6 +1467,10 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
+          "label": "Recorded camp roster",
+          "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1451,7 +1479,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-03"
+          "value": "2004-10-05"
         },
         {
           "label": "Team",
@@ -1479,11 +1507,11 @@
           "rows": [
             [
               "Camp opened",
-              "Not recorded"
+              "2004-10-05"
             ],
             [
               "Participation",
-              "No camp participation record"
+              "under_contract"
             ],
             [
               "Current role",
@@ -1499,7 +1527,7 @@
             ],
             [
               "Camp availability",
-              "No camp assessment recorded"
+              "No camp injury restriction recorded"
             ]
           ]
         },
@@ -1588,6 +1616,14 @@
             [
               "2004-10-01",
               "Wade asked the front office to trade Brian Grant to Charlotte Bobcats for Luke Ridnour, Cezary Trybanski. The front office declines to propose it: Charlotte Bobcats (middle) loses -15.7% on its own objective, below its floor -3%."
+            ],
+            [
+              "2004-10-05",
+              "Camp opens with 20 players: 6 invitees on non-guaranteed minimums (Stephen Jackson, Bob Sura, Calbert Cheaney, Rafer Alston, Chris Mihm, Derek Fisher). Record: `camp_roster.json`."
+            ],
+            [
+              "2004-10-05",
+              "Camp injury draws: nobody is hurt."
             ]
           ]
         },
@@ -1707,6 +1743,10 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
+          "label": "Recorded camp roster",
+          "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1715,7 +1755,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-03"
+          "value": "2004-10-05"
         },
         {
           "label": "Team",
@@ -1732,7 +1772,7 @@
       "title": "Stats review",
       "status": "inactive",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "0 closed game records in 2004-05 through 2004-10-03. Competitions remain separate.",
+      "summary": "0 closed game records in 2004-05 through 2004-10-05. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -1884,6 +1924,10 @@
           "href": "../2004-05/03_Offseason/note.md"
         },
         {
+          "label": "Recorded camp roster",
+          "href": "../2004-05/04_Training_Camp/camp_roster.json"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1892,7 +1936,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2004-10-03"
+          "value": "2004-10-05"
         },
         {
           "label": "Team",

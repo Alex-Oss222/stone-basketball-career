@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "owner": "ai_gm",
- "as_of": "2004-10-01",
+ "as_of": "2004-10-05",
  "season": "2004-05",
  "team": "Miami Heat",
  "roster_kind": "team_control_register",
@@ -224,6 +224,84 @@
    "bbr_id": "drejech01",
    "status": "unsigned_draft_rights",
    "control": "Unsigned draft rights: No. 54 pick of the 2004 draft."
+  },
+  {
+   "id": "stephen_jackson",
+   "name": "Stephen Jackson",
+   "positions": [
+    "SG"
+   ],
+   "date_of_birth": "1978-04-05",
+   "status": "camp_contract",
+   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2005-01-10.",
+   "working_role": "Camp invitee",
+   "player_card": "../Player_Cards/stephen_jackson.md",
+   "bbr_id": "jacksst02"
+  },
+  {
+   "id": "bob_sura",
+   "name": "Bob Sura",
+   "positions": [
+    "SG"
+   ],
+   "date_of_birth": "1973-03-25",
+   "status": "camp_contract",
+   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $938,679, guaranteed if still on the roster on 2005-01-10.",
+   "working_role": "Camp invitee",
+   "player_card": "../Player_Cards/bob_sura.md",
+   "bbr_id": "surabo01"
+  },
+  {
+   "id": "calbert_cheaney",
+   "name": "Calbert Cheaney",
+   "positions": [
+    "SG"
+   ],
+   "date_of_birth": "1971-07-17",
+   "status": "camp_contract",
+   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $1,000,000, guaranteed if still on the roster on 2005-01-10.",
+   "working_role": "Camp invitee",
+   "player_card": "../Player_Cards/calbert_cheaney.md",
+   "bbr_id": "cheanca01"
+  },
+  {
+   "id": "rafer_alston",
+   "name": "Rafer Alston",
+   "positions": [
+    "PG"
+   ],
+   "date_of_birth": "1976-07-24",
+   "status": "camp_contract",
+   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10.",
+   "working_role": "Camp invitee",
+   "player_card": "../Player_Cards/rafer_alston.md",
+   "bbr_id": "alstora01"
+  },
+  {
+   "id": "chris_mihm",
+   "name": "Chris Mihm",
+   "positions": [
+    "C"
+   ],
+   "date_of_birth": "1979-07-16",
+   "status": "camp_contract",
+   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $688,679, guaranteed if still on the roster on 2005-01-10.",
+   "working_role": "Camp invitee",
+   "player_card": "../Player_Cards/chris_mihm.md",
+   "bbr_id": "mihmch01"
+  },
+  {
+   "id": "derek_fisher",
+   "name": "Derek Fisher",
+   "positions": [
+    "PG"
+   ],
+   "date_of_birth": "1974-08-09",
+   "status": "camp_contract",
+   "control": "Camp contract from October 5, 2004: non-guaranteed minimum $813,679, guaranteed if still on the roster on 2005-01-10.",
+   "working_role": "Camp invitee",
+   "player_card": "../Player_Cards/derek_fisher.md",
+   "bbr_id": "fishede01"
   }
  ],
  "sources": [

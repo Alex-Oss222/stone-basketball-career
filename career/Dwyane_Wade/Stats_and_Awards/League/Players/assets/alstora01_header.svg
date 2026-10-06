@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="180" viewBox="0 0 1280 180" role="img" aria-labelledby="t d">
-<title id="t">Rafer Alston</title><desc id="d">Rafer Alston, Free agent, Point guard, #12.</desc>
-<rect width="1280" height="180" rx="24" fill="#1d1d1f"/>
-<rect x="0" y="150" width="1280" height="30" fill="#c5c7cb" fill-opacity=".92"/>
-<rect x="0" y="150" width="1280" height="6" fill="#c5c7cb"/>
+<title id="t">Rafer Alston</title><desc id="d">Rafer Alston, Miami Heat, Point guard, #11.</desc>
+<rect width="1280" height="180" rx="24" fill="#a6192e"/>
+<rect x="0" y="150" width="1280" height="30" fill="#ffa400" fill-opacity=".92"/>
+<rect x="0" y="150" width="1280" height="6" fill="#ffa400"/>
 <text x="48" y="78" font-family="sans-serif" font-size="54" font-weight="700" fill="#ffffff">Rafer Alston</text>
-<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Point guard · Free agent</text>
-<text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#12</text>
+<text x="48" y="124" font-family="sans-serif" font-size="26" fill="#ffffff" fill-opacity=".92">Point guard · Miami Heat</text>
+<text x="1232" y="112" font-family="sans-serif" font-size="96" font-weight="800" fill="#ffffff" fill-opacity=".95" text-anchor="end">#11</text>
 </svg>

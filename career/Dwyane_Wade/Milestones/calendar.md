@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2004-10-03 · Miami Heat · active
+Career date: 2004-10-05 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,27 +14,27 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2004-10-03 |
+| Career date | 2004-10-05 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2004-04-28-milwaukee-bucks-at-miami-heat |
+| Last closed event | 2004-10-05-camp-opens |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2004-10-03 | Current checkpoint | 2004-04-28-milwaukee-bucks-at-miami-heat | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
+| 2004-10-05 | Current checkpoint | 2004-10-05-camp-opens | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
-| Not yet verified | Camp reporting | Club records the date | inactive | [Training camp](index.html#training_camp) |
+| 2004-10-05 | Camp reporting | Club records the date | active | [Training camp](index.html#training_camp) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
 ## 2004-05 season tracker
 
 | Date | Milestone | Who acts | Status | Record |
 | --- | --- | --- | --- | --- |
-| 2004-10-05 | Training camp opens | League calendar | upcoming | [Season](index.html#calendar) |
+| 2004-10-05 | Training camp opens | League calendar | today | [Season](index.html#calendar) |
 | 2004-10-05 to 2004-11-01 | Wade's 2004 camp teamwork focus | player | planned | [Record](../2004-05/04_Training_Camp/note.md) |
 | 2004-10-10 | Preseason opens | League calendar | upcoming | [Season](index.html#calendar) |
 | 2004-11-01 | Roster cut to 15 | League calendar | upcoming | [Season](index.html#calendar) |
@@ -91,4 +91,5 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
 - [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
+- [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated milestone working records and player replies](../milestones.json)

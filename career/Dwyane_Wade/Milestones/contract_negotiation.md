@@ -2,7 +2,7 @@
 
 # Contract negotiation | Dwyane Wade
 
-Career date: 2004-10-03 · Miami Heat · inactive
+Career date: 2004-10-05 · Miami Heat · inactive
 
 [Live milestone desk](index.html#contract_negotiation) · [All milestones](README.md)
 
@@ -78,4 +78,5 @@ Miami records its actual first offer; the player then chooses a response.
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
 - [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
+- [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
 - [Dated milestone working records and player replies](../milestones.json)
