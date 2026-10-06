@@ -1,0 +1,329 @@
+{
+ "schema_version": 1,
+ "season": "2005-06",
+ "kind": "playoff_rules",
+ "purpose": "Structural rules and calendar of the 2006 NBA playoffs, researched October 2026. Rules and dates only: no real 2006 seeds, matchups or results are recorded here or used by the simulation.",
+ "status_values": {
+  "sourced": "a cited source states it",
+  "derived": "inferred from cited sources, reasoning given",
+  "design_choice": "not verifiable for 2005-06; the simulation's documented choice"
+ },
+ "sources": [
+  "https://en.wikipedia.org/wiki/NBA_playoffs",
+  "https://en.wikipedia.org/wiki/2006_NBA_playoffs",
+  "https://www.basketball-reference.com/leagues/NBA_2006_standings.html",
+  "https://www.basketball-reference.com/leagues/NBA_2006_games-april.html",
+  "https://www.basketball-reference.com/leagues/NBA_2006_games-may.html",
+  "https://www.basketball-reference.com/leagues/NBA_2006_games-june.html",
+  "library/2005/league/nba_2005_06_conferences.json",
+  "library/2004/league/nba_2004_05_playoff_rules.json"
+ ],
+ "divisions": {
+  "status": "sourced",
+  "sources": [
+   "https://www.basketball-reference.com/leagues/NBA_2006_standings.html",
+   "library/2005/league/nba_2005_06_conferences.json"
+  ],
+  "East": {
+   "Atlantic": [
+    "Boston Celtics",
+    "New Jersey Nets",
+    "New York Knicks",
+    "Philadelphia 76ers",
+    "Toronto Raptors"
+   ],
+   "Central": [
+    "Chicago Bulls",
+    "Cleveland Cavaliers",
+    "Detroit Pistons",
+    "Indiana Pacers",
+    "Milwaukee Bucks"
+   ],
+   "Southeast": [
+    "Atlanta Hawks",
+    "Charlotte Bobcats",
+    "Miami Heat",
+    "Orlando Magic",
+    "Washington Wizards"
+   ]
+  },
+  "West": {
+   "Northwest": [
+    "Denver Nuggets",
+    "Minnesota Timberwolves",
+    "Portland Trail Blazers",
+    "Seattle SuperSonics",
+    "Utah Jazz"
+   ],
+   "Pacific": [
+    "Golden State Warriors",
+    "Los Angeles Clippers",
+    "Los Angeles Lakers",
+    "Phoenix Suns",
+    "Sacramento Kings"
+   ],
+   "Southwest": [
+    "Dallas Mavericks",
+    "Houston Rockets",
+    "Memphis Grizzlies",
+    "New Orleans/Oklahoma City Hornets",
+    "San Antonio Spurs"
+   ]
+  },
+  "note": "Second season with three five-club divisions per conference; same alignment as 2004-05. The Hornets played 2005-06 mostly in Oklahoma City after Hurricane Katrina and are listed as the New Orleans/Oklahoma City Hornets, as in nba_2005_06_schedule.json."
+ },
+ "qualification": {
+  "teams_per_conference": 8,
+  "seeding": "The three division winners take seeds 1, 2 and 3, ordered by record among themselves, whether or not they have one of the conference's eight best records; seeds 4 to 8 are the next five records in the conference.",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/NBA_playoffs",
+   "https://en.wikipedia.org/wiki/2006_NBA_playoffs"
+  ],
+  "quote": "each conference had three divisions of five teams each, and at this point in time, the winner of each division was guaranteed a top-three playoff seed regardless of whether the team had one of the top-eight records in its conference. However, the division champion was not guaranteed home-court advantage",
+  "ordering_status": "derived: the sources guarantee the division winners the top three seeds; ordering them by record among themselves and the other five by record follows the NBA's seeding by record (the 2006-07 change, which seeded the top four by record among the division winners and the best other club, was made because the best non-winner could otherwise sit fourth behind weaker division winners).",
+  "note": "Used 2004-05 and 2005-06 (2006 was the last year). From 2006-07 the top four seeds went by record among division winners and the best non-winner; from 2015-16 division titles no longer guaranteed a berth or seed. Neither later change applies here.",
+  "quote_2006": "The last time division winners were automatically granted a top three seed in the NBA Playoffs."
+ },
+ "bracket": {
+  "first_round": [
+   [
+    1,
+    8
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    3,
+    6
+   ],
+   [
+    2,
+    7
+   ]
+  ],
+  "semifinals": [
+   [
+    [
+     1,
+     8
+    ],
+    [
+     4,
+     5
+    ]
+   ],
+   [
+    [
+     3,
+     6
+    ],
+    [
+     2,
+     7
+    ]
+   ]
+  ],
+  "reseeding": false,
+  "status": "derived",
+  "note": "The fixed bracket used 1984-2006: winners of 1-8 and 4-5 meet; winners of 3-6 and 2-7 meet; no reseeding. Unchanged by the division-winner seeding rule."
+ },
+ "series": {
+  "best_of": 7,
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/NBA_playoffs"
+  ],
+  "note": "The first round became best-of-seven in 2003; every round is best-of-seven."
+ },
+ "home_court": {
+  "conference_rounds": {
+   "format": "2-2-1-1-1",
+   "home_team_games": [
+    1,
+    2,
+    5,
+    7
+   ],
+   "status": "sourced"
+  },
+  "finals": {
+   "format": "2-3-2",
+   "home_team_games": [
+    1,
+    2,
+    6,
+    7
+   ],
+   "status": "sourced",
+   "sources": [
+    "https://en.wikipedia.org/wiki/NBA_playoffs"
+   ]
+  },
+  "who": "the better regular-season record, not the higher seed; equal records by the tiebreak procedure",
+  "who_status": "sourced: the 2006 playoffs article states that 'the division champion was not guaranteed home-court advantage; a division-leading team could be seeded second or third but face a lower seed (that did not win its division) with a better record, and the lower seed would have home-court advantage'",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2006_NBA_playoffs"
+  ]
+ },
+ "tiebreakers": {
+  "status": "design_choice",
+  "basis": "The long-standing NBA order as NBA.com publishes it, with the pre-2016 rule that division winner applies in a two-team tie only after head-to-head; the exact 2005-06 wording could not be read from an archive. A tie for a division title is broken by the same procedure before seeding (division record applies because both clubs are in the division).",
+  "two_team": [
+   "head_to_head",
+   "division_winner",
+   "division_record_if_same_division",
+   "conference_record",
+   "playoff_teams_own_conference",
+   "playoff_teams_other_conference",
+   "point_differential",
+   "drawing"
+  ],
+  "multi_team": [
+   "division_winner",
+   "record_among_tied",
+   "division_record_if_all_same_division",
+   "conference_record",
+   "playoff_teams_own_conference",
+   "point_differential",
+   "drawing"
+  ],
+  "restart": "Once a team is separated, the remaining tied teams start the procedure again (two-team or multi-team).",
+  "drawing": "an engine decision draw, journaled like any other, so it cannot be chosen or re-rolled",
+  "sources": [
+   "https://www.nba.com/standings?Season=2005-06",
+   "https://en.wikipedia.org/wiki/NBA_playoffs",
+   "library/2004/league/nba_2004_05_playoff_rules.json"
+  ]
+ },
+ "calendar": {
+  "status": "sourced for the opening days, the second-round and conference-finals Game 1 dates and Finals Games 1-6; derived for the gap templates and Finals Game 7 (matchups and television set the real days)",
+  "sources": [
+   "https://www.basketball-reference.com/leagues/NBA_2006_games-april.html",
+   "https://www.basketball-reference.com/leagues/NBA_2006_games-may.html",
+   "https://www.basketball-reference.com/leagues/NBA_2006_games-june.html",
+   "https://en.wikipedia.org/wiki/2006_NBA_playoffs",
+   "library/2005/league/nba_2005_06_schedule.json"
+  ],
+  "regular_season_last_day": "2006-04-19",
+  "first_round": {
+   "openers": {
+    "2006-04-22": [
+     [
+      "East",
+      [
+       2,
+       7
+      ]
+     ],
+     [
+      "East",
+      [
+       4,
+       5
+      ]
+     ],
+     [
+      "West",
+      [
+       1,
+       8
+      ]
+     ],
+     [
+      "West",
+      [
+       3,
+       6
+      ]
+     ]
+    ],
+    "2006-04-23": [
+     [
+      "East",
+      [
+       1,
+       8
+      ]
+     ],
+     [
+      "East",
+      [
+       3,
+       6
+      ]
+     ],
+     [
+      "West",
+      [
+       2,
+       7
+      ]
+     ],
+     [
+      "West",
+      [
+       4,
+       5
+      ]
+     ]
+    ]
+   },
+   "gaps_days": [
+    3,
+    3,
+    2,
+    2,
+    2,
+    2
+   ],
+   "note": "Four series opened each day (Saturday April 22 and Sunday April 23), each conference two and two, with the seed pairs shown (sourced from the dated game lists and the seeded bracket; only pairings and dates are kept). Three days G1-G2 (five of eight series) and G2-G3 (six of eight), then mostly every other day, is the most common 2006 pattern (derived; some series ran on other spacings)."
+  },
+  "conference_semifinals": {
+   "earliest_game_1": {
+    "West": "2006-05-07",
+    "East": "2006-05-07"
+   },
+   "rest_after_feeders_days": 2,
+   "gaps_days": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "note": "The first second-round games were on Sunday May 7 in both conferences (sourced). Game 1 on that day or two days after both feeding series end, whichever is later (derived). Every-other-day spacing was the common 2006 pattern (derived; two series had a four-day gap between Games 2 and 3)."
+  },
+  "conference_finals": {
+   "game_1": {
+    "East": "2006-05-23",
+    "West": "2006-05-24"
+   },
+   "gaps_days": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "note": "Game 1 dates sourced. Both 2006 conference finals were played every other day (sourced for the games played, derived beyond)."
+  },
+  "finals": {
+   "game_1": "2006-06-08",
+   "dates": [
+    "2006-06-08",
+    "2006-06-11",
+    "2006-06-13",
+    "2006-06-15",
+    "2006-06-18",
+    "2006-06-20",
+    "2006-06-22"
+   ],
+   "note": "2-3-2 on a Thursday/Sunday/Tuesday/Thursday/Sunday/Tuesday/Thursday pattern; Games 1-6 dates sourced from the 2006 schedule, Game 7 (June 22) derived from the pattern. Games 5-7 are conditional in the simulation."
+  }
+ }
+}
