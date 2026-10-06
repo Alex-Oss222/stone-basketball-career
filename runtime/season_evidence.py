@@ -47,7 +47,7 @@ def compute_totals(season, root=ROOT):
             for p in r["player_stats"][side]:
                 if not p.get("minutes", 0) > 0:
                     continue
-                bbr = ids.get(p["player_id"], (None, None, None))[1] or ("dwyane_wade" if p["player_id"] == "Dwyane Wade" else None)
+                bbr = ids.get(p["player_id"], (None, None, None))[1] or ("wadedw01" if p["player_id"] == "Dwyane Wade" else None)
                 if not bbr:
                     continue
                 t = sums[bbr]

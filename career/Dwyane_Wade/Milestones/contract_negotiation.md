@@ -73,7 +73,7 @@ Miami records its actual first offer; the player then chooses a response.
 - [Authoritative career checkpoint](../2004-05/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2004-05/04_Training_Camp/note.md)
+- [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)

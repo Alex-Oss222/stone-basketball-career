@@ -64,3 +64,14 @@ class SummerReportTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CampPriorTests(unittest.TestCase):
+    def test_wade_is_valued_on_his_own_record_not_a_rookie_prior(self):
+        from runtime import camp
+
+        class V:
+            def value(self, key):
+                return 21.4 if key == "wadedw01" else None
+        values = camp.prior_values({"players": [{"player": "Dwyane Wade", "bbr_id": None, "status": "under_contract"}]}, V())
+        self.assertEqual(values["Dwyane Wade"], 21.4)

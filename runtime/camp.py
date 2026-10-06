@@ -264,7 +264,7 @@ def prior_values(camp, valuation, root=ROOT):
     out = {}
     for p in camp["players"]:
         # Wade's record key is his career id (alternate history: no real Basketball-Reference id).
-        key = p.get("bbr_id") or ("dwyane_wade" if p["player"] == "Dwyane Wade" else None)
+        key = p.get("bbr_id") or ("wadedw01" if p["player"] == "Dwyane Wade" else None)   # his records' key (season_evidence)
         v = valuation.value(key) if key else None
         if v is None:
             v = rookie_prior(p["player"], root) if ("draft" in p["status"] or not p.get("bbr_id")) else REPLACEMENT_EFF_PER_GAME

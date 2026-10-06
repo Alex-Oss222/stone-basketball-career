@@ -2,7 +2,7 @@
 
 # Training camp | Dwyane Wade
 
-Career date: 2004-10-01 · Miami Heat · inactive
+Career date: 2004-10-01 · Miami Heat · planned
 
 [Live milestone desk](index.html#training_camp) · [All milestones](README.md)
 
@@ -47,7 +47,7 @@ Snapshot: 2004-10-01. Draft rights and unassigned arrivals are not assigned minu
 
 | Date | Event / decision |
 | --- | --- |
-| No dated record | N/A |
+| 2004-10-01 | Wade sets his camp focus for October 5 through November 1: work within the team structure and build on-court chemistry through extra shared reps with Udonis Haslem, Dorell Wright, and Caron Butler. The focus is team concepts, timing, communication, and learning how the group fits together; staff retains depth-chart and rotation decisions. |
 
 ## Your response to the staff
 
@@ -56,6 +56,23 @@ Snapshot: 2004-10-01. Draft rights and unassigned arrivals are not assigned minu
 - Report availability to qualified staff.
 - The coach owns depth-chart position and rotation minutes; a request is not an assignment.
 
+## Wade's 2004 camp teamwork focus
+
+| Working record | Dated information |
+| --- | --- |
+| Event ID | 2004-10-01-wade-camp-teamwork-focus |
+| Recorded | 2004-10-01 |
+| Status | Planned |
+| Owner | player |
+| Evidence | [Owning dated record](../2004-05/04_Training_Camp/note.md) |
+| Reply registry version | 799f5531b3127d06 |
+| Player focus | Work within the team structure and improve group chemistry rather than chase an individual camp role. |
+| Priority teammates | Udonis Haslem, Dorell Wright, Caron Butler |
+| Shared work | Team concepts, timing, communication, and learning how the group fits together. |
+| Role authority | This is Wade's player focus; the coaching staff still owns depth-chart and rotation decisions. |
+| Your response | Wade's camp priority is team integration, with extra shared work alongside Udonis Haslem, Dorell Wright, and Caron Butler. |
+| Next checkpoint | 2004-10-05: Training camp opens and the focus moves from planned to actual camp work |
+
 ## Available response paths
 
 - [Open camp events and discussion](../2004-05/04_Training_Camp/note.md): Inspect the dated camp record.
@@ -63,14 +80,14 @@ Snapshot: 2004-10-01. Draft rights and unassigned arrivals are not assigned minu
 
 ## Next checkpoint
 
-A verified camp-opening record, then actual preseason evidence and the coach's role review.
+2004-10-05: Training camp opens and the focus moves from planned to actual camp work
 
 ## Evidence
 
 - [Authoritative career checkpoint](../2004-05/current_state.json)
 - [Dated professional identity](../professional_identity.json)
 - [Established player profile](../Dwyane_Wade_Player_Profile.md)
-- [Owning event](../2004-05/04_Training_Camp/note.md)
+- [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
