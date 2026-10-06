@@ -1079,8 +1079,9 @@ def identity_errors(root=ROOT, on=None):
         seen_name.setdefault(k, (p.get("registry_id"), p.get("bbr_id")))
     on = on or clock(root)
     season = _active_season(root)
-    if on < f"{season[:4]}-10-01":
-        return errors
+    from .league_book import active
+    if season == "2003-04" or on < f"{season[:4]}-10-01" or not active(on):
+        return errors                                    # the club check reads the symmetric league from 2004-05
     from .availability import status
     from .league_moves import club_of
     from .player_stats import alias

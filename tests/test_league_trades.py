@@ -84,7 +84,9 @@ class LeagueTradeTests(unittest.TestCase):
         names = {p["player_id"] for p in league_moves.effective_roster(b["club"], WEEK, root=self.root)}
         self.assertTrue(set(a["sends"]) <= names)
         self.assertFalse(set(b["sends"]) & names)
-        self.assertLessEqual(len(a["sends"]) + len(b["sends"]), 3)
+        from runtime.league_trades import MAX_PLAYERS
+        self.assertLessEqual(len(a["sends"]) + len(b["sends"]), MAX_PLAYERS)       # up to three for two
+        self.assertLessEqual(max(len(a["sends"]), len(b["sends"])), 3)
 
     def test_no_player_miami_holds_is_ever_traded_between_real_clubs(self):
         from runtime.rotations import miami_holds
