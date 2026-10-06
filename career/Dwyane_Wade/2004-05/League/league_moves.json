@@ -1358,6 +1358,25 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.91 x fit"
+  },
+  {
+   "id": "2004-05-market-2004-11-18-clear-borchcu01",
+   "date": "2004-11-18",
+   "kind": "clear",
+   "player": "Curtis Borchardt",
+   "bbr_id": "borchcu01",
+   "from": null,
+   "to": null,
+   "role": {
+    "player_id": "Curtis Borchardt",
+    "bbr_id": "borchcu01",
+    "position": "C",
+    "games": 67,
+    "minutes": 859
+   },
+   "contract": null,
+   "note": "cleared waivers from Boston Celtics: a free agent",
+   "waiver": "2004-05-market-2004-11-16-waive-borchcu01"
   }
  ],
  "market_days": [
@@ -1376,6 +1395,7 @@
   "2004-11-14",
   "2004-11-15",
   "2004-11-16",
-  "2004-11-17"
+  "2004-11-17",
+  "2004-11-18"
  ]
 }
