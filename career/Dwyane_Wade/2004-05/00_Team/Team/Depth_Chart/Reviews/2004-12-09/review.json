@@ -1,0 +1,434 @@
+{
+ "schema_version": 1,
+ "owner": "ai_gm",
+ "season": "2004-05",
+ "as_of": "2004-12-09",
+ "assessment_date": "2004-10-28",
+ "prior_minutes": 300.0,
+ "score_minutes": 30.0,
+ "prior_scores": {
+  "Eddie Jones": 7.515,
+  "Brian Grant": 11.426,
+  "Scott Padgett": 12.799,
+  "Mike James": 14.311,
+  "Mehmet Okur": 13.666,
+  "Dwyane Wade": 20.561,
+  "Caron Butler": 10.73,
+  "Kendall Gill": 7.239,
+  "Dorell Wright": 6.527,
+  "John Thomas": 5.0,
+  "Maurice Evans": 5.0,
+  "Udonis Haslem": 10.914,
+  "Maurice Baker": 5.0,
+  "John Edwards": 5.0,
+  "Stephen Jackson": 6.253,
+  "Bob Sura": 6.739,
+  "Calbert Cheaney": 6.655,
+  "Rafer Alston": 9.749,
+  "Chris Mihm": 7.643,
+  "Derek Fisher": 7.445
+ },
+ "evidence_cutoff": "game_date strictly before review date",
+ "sources": [
+  {
+   "event_id": "2004-11-03-miami-heat-at-new-jersey-nets",
+   "date": "2004-11-03",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_1/Game_1.result.json",
+   "sha256": "c58b4137bfe4ebba2976f24d1f12ed460e1befdb7b7f7b83f98e40a58f61fe14"
+  },
+  {
+   "event_id": "2004-11-04-cleveland-cavaliers-at-miami-heat",
+   "date": "2004-11-04",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_1/Game_2.result.json",
+   "sha256": "276909cbd963b1e4badf6b5ee806d3d29660de9cfe84b16c63399baf1c9d2338"
+  },
+  {
+   "event_id": "2004-11-06-miami-heat-at-washington-wizards",
+   "date": "2004-11-06",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_1/Game_3.result.json",
+   "sha256": "5b9bd9fe76ed0bfab0df31a98aeb67d3f862449c28a37adc7ad7e2c4571c2d8d"
+  },
+  {
+   "event_id": "2004-11-09-washington-wizards-at-miami-heat",
+   "date": "2004-11-09",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_2/Game_1.result.json",
+   "sha256": "494f443af403e19499863086ed47a86216a2d706566722f2523077d3224c6101"
+  },
+  {
+   "event_id": "2004-11-11-dallas-mavericks-at-miami-heat",
+   "date": "2004-11-11",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_2/Game_2.result.json",
+   "sha256": "b88eaa68ab7471df738cb0d5b88787c7356e47dd0b4a41648ea3796996d102ff"
+  },
+  {
+   "event_id": "2004-11-12-miami-heat-at-san-antonio-spurs",
+   "date": "2004-11-12",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_2/Game_3.result.json",
+   "sha256": "d4c51f820f4df2d268c803a6d1e917927d020d6bc3a8253b15da54c9c3339547"
+  },
+  {
+   "event_id": "2004-11-14-milwaukee-bucks-at-miami-heat",
+   "date": "2004-11-14",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_2/Game_4.result.json",
+   "sha256": "f94e9ae99432f27883a0ed9345980c7c52f352af334f86c43122a9d5d16128d8"
+  },
+  {
+   "event_id": "2004-11-16-miami-heat-at-minnesota-timberwolves",
+   "date": "2004-11-16",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_3/Game_1.result.json",
+   "sha256": "bd2a1d1d91bd5dbb69fcaefe76e447c1c91185339711a31c05d51ae87da75adb"
+  },
+  {
+   "event_id": "2004-11-17-miami-heat-at-milwaukee-bucks",
+   "date": "2004-11-17",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_3/Game_2.result.json",
+   "sha256": "86d1baf2373147167fbac3a0ace124d2272f324084422fcf60c8e4f9e6e9eb29"
+  },
+  {
+   "event_id": "2004-11-19-utah-jazz-at-miami-heat",
+   "date": "2004-11-19",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_3/Game_3.result.json",
+   "sha256": "fddcfb0c7ff2ed8d6b7bbf6d4030614c056736cad77503c02d413ae7ed948897"
+  },
+  {
+   "event_id": "2004-11-21-philadelphia-76ers-at-miami-heat",
+   "date": "2004-11-21",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_3/Game_4.result.json",
+   "sha256": "f6f5efc75622c87b559296f5b5f36c356e33fd78d729f928e622083b63d0acd0"
+  },
+  {
+   "event_id": "2004-11-23-portland-trail-blazers-at-miami-heat",
+   "date": "2004-11-23",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_4/Game_1.result.json",
+   "sha256": "c98a37990f4c3540b1bdf5b98bed13457c94e70ef8662fe41fab60fcfe09f91b"
+  },
+  {
+   "event_id": "2004-11-24-miami-heat-at-atlanta-hawks",
+   "date": "2004-11-24",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_4/Game_2.result.json",
+   "sha256": "13443722b0bf6e7deda5f34fb638158be8615242186ca41e99ea5b2874e7bb8f"
+  },
+  {
+   "event_id": "2004-11-26-miami-heat-at-detroit-pistons",
+   "date": "2004-11-26",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_4/Game_3.result.json",
+   "sha256": "38f118393428952d6a628c62b2c49f91a65df94ff9e5e29f14a70998d35b5d64"
+  },
+  {
+   "event_id": "2004-11-28-boston-celtics-at-miami-heat",
+   "date": "2004-11-28",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_4/Game_4.result.json",
+   "sha256": "53daa4c74a815374189c579c4c75ba0e55a55fab889e54bbbfd57c51656c220d"
+  },
+  {
+   "event_id": "2004-11-30-toronto-raptors-at-miami-heat",
+   "date": "2004-11-30",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/11_November/Week_4/Game_5.result.json",
+   "sha256": "60d6985a94b08a8aad2f8f84dfe4100e4c336c52f738287285c87fc02410da8b"
+  },
+  {
+   "event_id": "2004-12-03-miami-heat-at-chicago-bulls",
+   "date": "2004-12-03",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/12_December/Week_1/Game_1.result.json",
+   "sha256": "ff876198970d37be20accfe3045355d646dfdc706f0600407cf3fb27c0c818a6"
+  },
+  {
+   "event_id": "2004-12-04-miami-heat-at-denver-nuggets",
+   "date": "2004-12-04",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/12_December/Week_1/Game_2.result.json",
+   "sha256": "6ba8fc1bc720cd2cf33cd6279b1c075170259446869793bab863c4ba512f82d7"
+  },
+  {
+   "event_id": "2004-12-06-miami-heat-at-utah-jazz",
+   "date": "2004-12-06",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/12_December/Week_1/Game_3.result.json",
+   "sha256": "c5c3a7399bd959bafe61267f97b60ea8af2f574f0905799c7400621046edbdcf"
+  },
+  {
+   "event_id": "2004-12-08-miami-heat-at-milwaukee-bucks",
+   "date": "2004-12-08",
+   "result_file": "career/Dwyane_Wade/2004-05/06_Regular_Season/12_December/Week_2/Game_1.result.json",
+   "sha256": "9c0c2411dde14171e4eae60e49b4315630a174b463b0f2bc7459fdbbcb7c6620"
+  }
+ ],
+ "players": [
+  {
+   "player": "Brian Grant",
+   "positions": [
+    "C",
+    "PF"
+   ],
+   "bbr_id": "grantbr01",
+   "status": "roster"
+  },
+  {
+   "player": "Caron Butler",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "butleca01",
+   "status": "roster"
+  },
+  {
+   "player": "Dorell Wright",
+   "positions": [
+    "SF"
+   ],
+   "bbr_id": "wrighdo01",
+   "status": "roster"
+  },
+  {
+   "player": "Dwyane Wade",
+   "positions": [
+    "SG",
+    "PG"
+   ],
+   "bbr_id": null,
+   "status": "roster"
+  },
+  {
+   "player": "Eddie Jones",
+   "positions": [
+    "SG",
+    "SF"
+   ],
+   "bbr_id": "jonesed02",
+   "status": "roster"
+  },
+  {
+   "player": "John Edwards",
+   "positions": [
+    "C"
+   ],
+   "bbr_id": "edwarjo01",
+   "status": "roster"
+  },
+  {
+   "player": "John Thomas",
+   "positions": [
+    "C"
+   ],
+   "bbr_id": "thomajo02",
+   "status": "roster"
+  },
+  {
+   "player": "Kendall Gill",
+   "positions": [
+    "SG"
+   ],
+   "bbr_id": "gillke01",
+   "status": "roster"
+  },
+  {
+   "player": "Maurice Baker",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "bakerma01",
+   "status": "roster"
+  },
+  {
+   "player": "Maurice Evans",
+   "positions": [
+    "SG"
+   ],
+   "bbr_id": "evansma01",
+   "status": "roster"
+  },
+  {
+   "player": "Mehmet Okur",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "okurme01",
+   "status": "roster"
+  },
+  {
+   "player": "Mike James",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "jamesmi01",
+   "status": "roster"
+  },
+  {
+   "player": "Rafer Alston",
+   "positions": [
+    "PG"
+   ],
+   "bbr_id": "alstora01",
+   "status": "roster"
+  },
+  {
+   "player": "Scott Padgett",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "padgesc01",
+   "status": "roster"
+  },
+  {
+   "player": "Udonis Haslem",
+   "positions": [
+    "PF"
+   ],
+   "bbr_id": "hasleud01",
+   "status": "roster"
+  }
+ ],
+ "scores": {
+  "Brian Grant": 10.519433,
+  "Caron Butler": 11.618299,
+  "Dorell Wright": 8.256929,
+  "Dwyane Wade": 19.882232,
+  "Eddie Jones": 8.109078,
+  "John Edwards": 5.0,
+  "John Thomas": 5.0,
+  "Kendall Gill": 9.047095,
+  "Maurice Baker": 5.430938,
+  "Maurice Evans": 5.776347,
+  "Mehmet Okur": 16.16777,
+  "Mike James": 13.343084,
+  "Rafer Alston": 10.71839,
+  "Scott Padgett": 11.849382,
+  "Udonis Haslem": 12.793804
+ },
+ "evidence": {
+  "Brian Grant": {
+   "games": 20,
+   "minutes": 610.4862999999999,
+   "efficiency": 205.0,
+   "preseason_estimate": 11.426,
+   "observed_per_30": 10.073936,
+   "observed_weight": 0.670506,
+   "score": 10.519433
+  },
+  "Caron Butler": {
+   "games": 14,
+   "minutes": 485.74325,
+   "efficiency": 197.0,
+   "preseason_estimate": 10.73,
+   "observed_per_30": 12.166922,
+   "observed_weight": 0.618196,
+   "score": 11.618299
+  },
+  "Dorell Wright": {
+   "games": 18,
+   "minutes": 144.24505,
+   "efficiency": 57.0,
+   "preseason_estimate": 6.527,
+   "observed_per_30": 11.854826,
+   "observed_weight": 0.324697,
+   "score": 8.256929
+  },
+  "Dwyane Wade": {
+   "games": 19,
+   "minutes": 672.6422833333332,
+   "efficiency": 439.0,
+   "preseason_estimate": 20.561,
+   "observed_per_30": 19.579501,
+   "observed_weight": 0.691562,
+   "score": 19.882232
+  },
+  "Eddie Jones": {
+   "games": 20,
+   "minutes": 199.9952,
+   "efficiency": 60.0,
+   "preseason_estimate": 7.515,
+   "observed_per_30": 9.000216,
+   "observed_weight": 0.399994,
+   "score": 8.109078
+  },
+  "John Edwards": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 5.0,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 5.0
+  },
+  "John Thomas": {
+   "games": 0,
+   "minutes": 0.0,
+   "efficiency": 0.0,
+   "preseason_estimate": 5.0,
+   "observed_per_30": null,
+   "observed_weight": 0.0,
+   "score": 5.0
+  },
+  "Kendall Gill": {
+   "games": 19,
+   "minutes": 188.7425333333333,
+   "efficiency": 75.0,
+   "preseason_estimate": 7.239,
+   "observed_per_30": 11.921001,
+   "observed_weight": 0.38618,
+   "score": 9.047095
+  },
+  "Maurice Baker": {
+   "games": 12,
+   "minutes": 59.05401666666666,
+   "efficiency": 15.0,
+   "preseason_estimate": 5.0,
+   "observed_per_30": 7.620142,
+   "observed_weight": 0.164471,
+   "score": 5.430938
+  },
+  "Maurice Evans": {
+   "games": 2,
+   "minutes": 6.4220500000000005,
+   "efficiency": 9.0,
+   "preseason_estimate": 5.0,
+   "observed_per_30": 42.04265,
+   "observed_weight": 0.020958,
+   "score": 5.776347
+  },
+  "Mehmet Okur": {
+   "games": 20,
+   "minutes": 723.6290833333334,
+   "efficiency": 415.0,
+   "preseason_estimate": 13.666,
+   "observed_per_30": 17.204947,
+   "observed_weight": 0.706925,
+   "score": 16.16777
+  },
+  "Mike James": {
+   "games": 19,
+   "minutes": 658.0468500000001,
+   "efficiency": 283.0,
+   "preseason_estimate": 14.311,
+   "observed_per_30": 12.901817,
+   "observed_weight": 0.686863,
+   "score": 13.343084
+  },
+  "Rafer Alston": {
+   "games": 19,
+   "minutes": 266.75488333333334,
+   "efficiency": 105.0,
+   "preseason_estimate": 9.749,
+   "observed_per_30": 11.808594,
+   "observed_weight": 0.470671,
+   "score": 10.71839
+  },
+  "Scott Padgett": {
+   "games": 19,
+   "minutes": 436.72195000000005,
+   "efficiency": 163.0,
+   "preseason_estimate": 12.799,
+   "observed_per_30": 11.197056,
+   "observed_weight": 0.592791,
+   "score": 11.849382
+  },
+  "Udonis Haslem": {
+   "games": 19,
+   "minutes": 347.51658333333336,
+   "efficiency": 167.0,
+   "preseason_estimate": 10.914,
+   "observed_per_30": 14.416578,
+   "observed_weight": 0.536691,
+   "score": 12.793804
+  }
+ },
+ "battles": []
+}

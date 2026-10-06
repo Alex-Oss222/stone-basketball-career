@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PG  
 **Age at assessment:** 28 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 5, 2004 · **Statistics through:** 2004-12-08 
+**Opening assessment:** October 5, 2004 · **Statistics through:** 2004-12-09 
 
 **Contract/control:** Camp contract from October 5, 2004: non-guaranteed minimum $751,179, guaranteed if still on the roster on 2005-01-10. (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at PG, staff plan 11 minutes (staff rotation dated 2004-11-25, [record](../Depth_Chart/Reviews/2004-11-25/rotation.json)).
+**Role:** Rotation at PG, staff plan 11 minutes (staff rotation dated 2004-12-09, [record](../Depth_Chart/Reviews/2004-12-09/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -32,11 +32,12 @@ Unassessed.
 | 2004-10-28 | Staff rotation of 2004-10-28: rotation at PG, staff plan 12 minutes. | [Rotation](../Depth_Chart/rotation.json) |
 | 2004-11-11 | Staff rotation of 2004-11-11: rotation at PG, staff plan 12 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-11/rotation.json) |
 | 2004-11-25 | Staff rotation of 2004-11-25: rotation at PG, staff plan 11 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-25/rotation.json) |
+| 2004-12-09 | Staff rotation of 2004-12-09: rotation at PG, staff plan 11 minutes. | [Rotation](../Depth_Chart/Reviews/2004-12-09/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../04_Training_Camp/camp_roster.json), 2003-04 simulated season totals.
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-11-25.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-12-09.
 
 <!-- yearly-statistics:start -->
 

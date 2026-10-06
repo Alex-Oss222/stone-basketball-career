@@ -2,7 +2,7 @@
 
 **Team:** Miami Heat · **League:** NBA · **Position:** PF  
 **Age at assessment:** 25 · **Height:** N/A · **Weight:** N/A  
-**Opening assessment:** October 1, 2004 · **Statistics through:** 2004-12-08 
+**Opening assessment:** October 1, 2004 · **Statistics through:** 2004-12-09 
 
 **Contract/control:** Signed September 23, 2004 (mid_level): 5 season(s) from 2004-05, $16,965,715 scheduled ($2,827,619 in 2004-05). (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
 
@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at PF, staff plan 34 minutes (staff rotation dated 2004-11-25, [record](../Depth_Chart/Reviews/2004-11-25/rotation.json)).
+**Role:** Starter at PF, staff plan 34 minutes (staff rotation dated 2004-12-09, [record](../Depth_Chart/Reviews/2004-12-09/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -32,11 +32,12 @@ Unassessed.
 | 2004-10-28 | Staff rotation of 2004-10-28: rotation at PF, staff plan 34 minutes. | [Rotation](../Depth_Chart/rotation.json) |
 | 2004-11-11 | Staff rotation of 2004-11-11: starter at PF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-11/rotation.json) |
 | 2004-11-25 | Staff rotation of 2004-11-25: starter at PF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-25/rotation.json) |
+| 2004-12-09 | Staff rotation of 2004-12-09: starter at PF, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-12-09/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../../../../career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json), 2003-04 simulated season totals.
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-11-25.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-12-09.
 
 <!-- yearly-statistics:start -->
 
