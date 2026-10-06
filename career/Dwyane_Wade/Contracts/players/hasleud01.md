@@ -2,9 +2,9 @@
 
 # Contract | Udonis Haslem
 
-Known through: 2005-01-03. [Open interactive contract](hasleud01.html#contract) · [Contract history](hasleud01.html#contract-history)
+Known through: 2005-01-07. [Open interactive contract](hasleud01.html#contract) · [Contract history](hasleud01.html#contract-history)
 
-Udonis Haslem: under contract. Evidence cutoff: 2005-01-03.
+Udonis Haslem: traded. Evidence cutoff: 2005-01-07.
 
 ## Current contract
 
@@ -33,7 +33,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2004-05 |
 | Verified final season | 2004-05 |
 | Verified expiry date | 2005-06-30 |
-| Status | under_contract |
+| Status | traded |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -105,11 +105,11 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
-- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Signing / contract source](../../2004-05/League/contracts.json)
 - [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 
 ### Current control and contract coverage
@@ -120,7 +120,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | --- | --- |
 | Player | Udonis Haslem |
 | Club / rights baseline | Toronto Raptors |
-| Control status | under_contract |
+| Control status | traded |
 | Executed current contract | Recorded |
 | Recorded cap hold | Not recorded |
 | Coverage | Only dated recorded contracts are shown. Earlier contracts, missing amounts, riders and unrecorded league transactions are not reconstructed. |
@@ -192,7 +192,7 @@ Recorded terms only. Unreported amounts and clauses remain unknown; conditional 
 | Verified first season | 2004-05 |
 | Verified final season | 2004-05 |
 | Verified expiry date | 2005-06-30 |
-| Status | under_contract |
+| Status | traded |
 | Contract wording | Not recorded |
 
 ### Salary by season
@@ -264,11 +264,11 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 #### Agreement evidence
 
 - [Simulated summer market (every club)](../../2003-04/10_Free_Agency/free_agency_2004.json)
-- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2003-04/10_Free_Agency/free_agency_2004.json)
 - [Signing / contract source](../../2004-05/League/contracts.json)
 - [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
+- [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 
 ### Udonis Haslem · 2003-10-27

@@ -2066,6 +2066,28 @@
     "salary": "pro-rated minimum"
    },
    "note": "value 4.43 x fit"
+  },
+  {
+   "id": "2004-05-market-2005-01-07-ten_day-knighbr01",
+   "date": "2005-01-07",
+   "kind": "ten_day",
+   "player": "Brevin Knight",
+   "bbr_id": "knighbr01",
+   "from": null,
+   "to": "Washington Wizards",
+   "role": {
+    "player_id": "Brevin Knight",
+    "bbr_id": "knighbr01",
+    "position": "PG",
+    "games": 66,
+    "minutes": 1944
+   },
+   "contract": {
+    "type": "ten_day",
+    "until": "2005-01-17",
+    "salary": "pro-rated minimum"
+   },
+   "note": "value 4.37 x fit"
   }
  ],
  "market_days": [
@@ -2134,6 +2156,7 @@
   "2005-01-03",
   "2005-01-04",
   "2005-01-05",
-  "2005-01-06"
+  "2005-01-06",
+  "2005-01-07"
  ]
 }

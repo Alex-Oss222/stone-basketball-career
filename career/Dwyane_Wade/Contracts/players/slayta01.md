@@ -2,9 +2,9 @@
 
 # Contract | Tamar Slay
 
-Known through: 2005-01-03. [Open interactive contract](slayta01.html#contract) · [Contract history](slayta01.html#contract-history)
+Known through: 2005-01-07. [Open interactive contract](slayta01.html#contract) · [Contract history](slayta01.html#contract-history)
 
-Tamar Slay: minimum contract unverified. Evidence cutoff: 2005-01-03.
+Tamar Slay: minimum contract unverified. Evidence cutoff: 2005-01-07.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Tamar Slay |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | Atlanta Hawks |
 | Control status | minimum_contract_unverified |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

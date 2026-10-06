@@ -2,9 +2,9 @@
 
 # Contract | Mark Bryant
 
-Known through: 2005-01-03. [Open interactive contract](bryanma01.html#contract) · [Contract history](bryanma01.html#contract-history)
+Known through: 2005-01-07. [Open interactive contract](bryanma01.html#contract) · [Contract history](bryanma01.html#contract-history)
 
-Mark Bryant: unsigned free agent. Evidence cutoff: 2005-01-03.
+Mark Bryant: unsigned free agent. Evidence cutoff: 2005-01-07.
 
 ## Current contract
 

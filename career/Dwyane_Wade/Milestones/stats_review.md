@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2005-01-03 · Miami Heat · active
+Career date: 2005-01-07 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-39 closed game records in 2004-05 through 2005-01-03. Competitions remain separate.
+41 closed game records in 2004-05 through 2005-01-07. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
-| regular | 26 | 35.8 | 19.4 | 5.4 | 3.9 | 1.5 | Complete |
+| regular | 28 | 35.7 | 19.6 | 5.3 | 3.8 | 1.6 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
-| regular | 168 | 324 | 0.519 | 30 | 65 | 0.462 |
+| regular | 184 | 351 | 0.524 | 34 | 71 | 0.479 |
 
 ## Closed source games
 
@@ -69,6 +69,8 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-12-27 | regular | Atlanta Hawks | DNP: injured list since 2004-12-23 | [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_3.md) |
 | 2004-12-30 | regular | Detroit Pistons | DNP: injured list since 2004-12-23 | [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md) |
 | 2005-01-01 | regular | Charlotte Bobcats | DNP: injured list since 2004-12-23 | [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md) |
+| 2005-01-03 | regular | Seattle SuperSonics | Played | [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_2.md) |
+| 2005-01-05 | regular | New York Knicks | Played | [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -103,11 +105,11 @@ The next declared, closed game result or a chosen completed-period review.
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
-- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/review.json)
-- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/depth_chart.json)
+- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-06/review.json)
+- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-06/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/rotation.json)
+- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-06/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
@@ -149,4 +151,6 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md)
 - [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

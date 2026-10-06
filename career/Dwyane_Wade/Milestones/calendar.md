@@ -2,7 +2,7 @@
 
 # Your career calendar | Dwyane Wade
 
-Career date: 2005-01-03 · Miami Heat · active
+Career date: 2005-01-07 · Miami Heat · active
 
 [Live milestone desk](index.html#calendar) · [All milestones](README.md)
 
@@ -14,25 +14,24 @@ Activation: The authoritative current date and recorded event determine what is 
 
 | Item | Current record |
 | --- | --- |
-| Career date | 2005-01-03 |
+| Career date | 2005-01-07 |
 | Team | Miami Heat |
 | Contract status | rookie_scale_contract |
 | Roster status | under_contract |
-| Last closed event | 2005-01-01-charlotte-bobcats-at-miami-heat |
+| Last closed event | 2005-01-05-new-york-knicks-at-miami-heat |
 | Pending player decisions | None recorded |
 
 ## Milestone calendar
 
 | Date / gate | Milestone | Who acts | Current meaning | Open record |
 | --- | --- | --- | --- | --- |
-| 2005-01-03 | Current checkpoint | 2005-01-01-charlotte-bobcats-at-miami-heat | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
+| 2005-01-07 | Current checkpoint | 2005-01-05-new-york-knicks-at-miami-heat | Recorded | [Owning event](../2004-05/04_Training_Camp/note.md) |
 | Not yet recorded | Next contract review | Player responds to an actual eligible proposal | inactive | [Contract desk](index.html#contract_negotiation) |
 | 2004-10-05 | Camp reporting | Club records the date | complete | [Training camp](index.html#training_camp) |
-| 2005-01-05 | Next Miami game, vs New York Knicks | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
-| 2005-01-06 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
-| 2005-01-07 | Keep-or-waive review of non-guaranteed contracts | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
+| 2005-01-09 | Next Miami game, at Seattle SuperSonics | Coach sets the rotation; the engine plays it | Scheduled | [Season](index.html#calendar) |
 | 2005-01-10 | League awards announced: Player of the Week | League (closed results only) | Scheduled | [Awards](index.html#calendar) |
 | 2005-01-10 | Kept contracts become guaranteed | Miami front office | Scheduled; does not involve Wade's guaranteed contract | [Rule](../../../docs/front_office.md) |
+| 2005-01-20 | Staff rotation review | Coaching staff (same rule for every player) | Scheduled; a role request may be logged before it | [Rule](../../../docs/front_office.md) |
 | By 2005-10-31 | Fourth-year (2006-07) team option on the rookie contract | Miami decides | Scheduled gate; no outcome implied | [Contract](index.html#contract_negotiation) |
 | After the actual final game | Season exit meeting | Player and staff review the closed season | inactive | [Exit meeting](index.html#exit_meeting) |
 
@@ -45,7 +44,7 @@ Activation: The authoritative current date and recorded event determine what is 
 | 2004-10-10 | Preseason opens | League calendar | done | [Season](index.html#calendar) |
 | 2004-11-01 | Roster cut to 15 | League calendar | done | [Season](index.html#calendar) |
 | 2004-11-02 | Opening night | League calendar | done | [Season](index.html#calendar) |
-| 2005-01-07 | Last day to waive before guarantees | League calendar | upcoming | [Season](index.html#calendar) |
+| 2005-01-07 | Last day to waive before guarantees | League calendar | today | [Season](index.html#calendar) |
 | 2005-01-10 | Contracts guaranteed | League calendar | upcoming | [Season](index.html#calendar) |
 | 2005-02-18 | All-Star Weekend | League calendar | upcoming | [Season](index.html#calendar) |
 | 2005-02-24 | Trade deadline | League calendar | upcoming | [Season](index.html#calendar) |
@@ -95,11 +94,11 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
-- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/review.json)
-- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/depth_chart.json)
+- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-06/review.json)
+- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-06/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/rotation.json)
+- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-06/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
@@ -141,4 +140,6 @@ The next actual dated career event; viewing these pages does not advance time.
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md)
 - [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

@@ -2,9 +2,9 @@
 
 # Contract | Brian Grant
 
-Known through: 2005-01-03. [Open interactive contract](grantbr01.html#contract) · [Contract history](grantbr01.html#contract-history)
+Known through: 2005-01-07. [Open interactive contract](grantbr01.html#contract) · [Contract history](grantbr01.html#contract-history)
 
-Brian Grant: under contract. Evidence cutoff: 2005-01-03.
+Brian Grant: under contract. Evidence cutoff: 2005-01-07.
 
 ## Current contract
 

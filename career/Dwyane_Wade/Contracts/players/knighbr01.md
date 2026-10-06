@@ -2,9 +2,9 @@
 
 # Contract | Brevin Knight
 
-Known through: 2005-01-03. [Open interactive contract](knighbr01.html#contract) · [Contract history](knighbr01.html#contract-history)
+Known through: 2005-01-07. [Open interactive contract](knighbr01.html#contract) · [Contract history](knighbr01.html#contract-history)
 
-Brevin Knight: under contract. Evidence cutoff: 2005-01-03.
+Brevin Knight: under contract. Evidence cutoff: 2005-01-07.
 
 ## Current contract
 

@@ -2,9 +2,9 @@
 
 # Contract | Mo Williams
 
-Known through: 2005-01-03. [Open interactive contract](willima01.html#contract) · [Contract history](willima01.html#contract-history)
+Known through: 2005-01-07. [Open interactive contract](willima01.html#contract) · [Contract history](willima01.html#contract-history)
 
-Mo Williams: No verified contract record. Evidence cutoff: 2005-01-03.
+Mo Williams: No verified contract record. Evidence cutoff: 2005-01-07.
 
 ## Current contract
 
@@ -17,7 +17,7 @@ Draft rights and cap holds are not salaries or executed contracts. A roster base
 | Field | Dated record |
 | --- | --- |
 | Player | Mo Williams |
-| Club / rights baseline | Free agent |
+| Club / rights baseline | San Antonio Spurs |
 | Control status | Not recorded |
 | Executed current contract | No verified current signed contract |
 | Recorded cap hold | Not recorded |

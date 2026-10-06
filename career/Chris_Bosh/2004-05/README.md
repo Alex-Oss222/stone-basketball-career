@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2005-01-03** · Toronto Raptors · #4 · PF · age 20
+Career date: **2005-01-07** · Toronto Raptors · #4 · PF · age 20
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,24 +14,24 @@ Career date: **2005-01-03** · Toronto Raptors · #4 · PF · age 20
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 30/30 | 39.5 | 17.9 | 8.6 | 2.9 | 1.0 | 1.2 | 51.5 | 46.2 | 81.5 | 57.5 | 22-9 |
+| 2004-05 | 20 | Toronto Raptors | 32/32 | 39.5 | 18.2 | 8.7 | 2.9 | 1.0 | 1.2 | 52.5 | 48.1 | 81.9 | 58.8 | 24-9 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 30 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 32 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
 | Minutes | 36.5 | 39.5 |
-| Points | 20.2 | 17.9 |
-| Rebounds | 11.1 | 8.6 |
+| Points | 20.2 | 18.2 |
+| Rebounds | 11.1 | 8.7 |
 | Assists | 3.5 | 2.9 |
 | Steals | 0.9 | 1.0 |
 | Blocks | 1.5 | 1.2 |
-| FG% | 51.4 | 51.5 |
-| 3P% | 41.2 | 46.2 |
-| FT% | 90.8 | 81.5 |
-| TS% (est.) | 64.0 | 57.5 |
+| FG% | 51.4 | 52.5 |
+| 3P% | 41.2 | 48.1 |
+| FT% | 90.8 | 81.9 |
+| TS% (est.) | 64.0 | 58.8 |
 
 ## Playoffs
 
@@ -45,7 +45,7 @@ No playoff games closed.
 | Rebounds | 16 | 2004-11-19 vs Seattle SuperSonics (+1) |
 | Assists | 6 | 2004-11-13 at Portland Trail Blazers (+2) |
 | Steals | 3 | 2004-11-03 vs Houston Rockets (+3) |
-| Blocks | 3 | 2004-11-09 at Sacramento Kings (+3) |
+| Blocks | 3 | 2004-11-09 at Sacramento Kings (+4) |
 | Threes | 2 | 2004-11-12 at Seattle SuperSonics |
 | Free throws | 10 | 2004-12-20 at Houston Rockets |
 

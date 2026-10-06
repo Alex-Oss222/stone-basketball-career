@@ -2,7 +2,7 @@
 
 # Contract checkpoint | Dwyane Wade
 
-Career date: 2005-01-03 · Miami Heat · active
+Career date: 2005-01-07 · Miami Heat · active
 
 [Live milestone desk](index.html#contract_checkpoint) · [All milestones](README.md)
 
@@ -20,7 +20,7 @@ Activation: A dated contract, option, expiry or draft-rights change.
 | Cap hold meaning | Team accounting charge; not player earnings or an accepted offer |
 | Free-agent classification | Requires dated expiry, option and rights review |
 | Actual signing date | 2003-07-21 |
-| Source snapshot | 2004-12-20 |
+| Source snapshot | 2005-01-07 |
 
 ## Existing amounts on the club's record
 
@@ -70,11 +70,11 @@ A real club offer, contract event or verified option/expiry deadline.
 - [Owning dated record](../2004-05/04_Training_Camp/note.md)
 - [Current contract and cap-control record](../2004-05/00_Team/Finances/contract_schedules.json)
 - [Recorded request](../2004-05/04_Training_Camp/wade_requests.json)
-- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/review.json)
-- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/depth_chart.json)
+- [Dated staff rotation review](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-06/review.json)
+- [Current dated staff depth chart](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-06/depth_chart.json)
 - [Offseason player decisions and events](../2004-05/03_Offseason/note.md)
 - [Recorded camp roster](../2004-05/04_Training_Camp/camp_roster.json)
-- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2004-12-23/rotation.json)
+- [Dated staff rotation](../2004-05/00_Team/Team/Depth_Chart/Reviews/2005-01-06/rotation.json)
 - [Rule](../../../docs/front_office.md)
 - [Transaction record](../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Closed game](../2004-05/05_Preseason/Game_1.md)
@@ -116,4 +116,6 @@ A real club offer, contract event or verified option/expiry deadline.
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_3.md)
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_4/Game_4.md)
 - [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/01_January/Week_1/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

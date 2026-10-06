@@ -1,6 +1,6 @@
 # Working depth chart
 
-The staff's chart in force on 2005-01-03 comes from its 2004-12-23 decision. The staff reviews the roster every fourteen days (`scripts/review_rotation.py`); each review is kept under `Reviews/<date>/`.
+The staff's chart in force on 2005-01-07 comes from its 2005-01-06 decision. The staff reviews the roster every fourteen days (`scripts/review_rotation.py`); each review is kept under `Reviews/<date>/`.
 
 - [Readable depth chart](depth_chart.md)
 - [Camp decision (machine-readable)](depth_chart.json) and [camp rotation](rotation.json)

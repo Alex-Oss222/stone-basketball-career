@@ -2,9 +2,9 @@
 
 # Contract | Ira Newble
 
-Known through: 2005-01-03. [Open interactive contract](newblir01.html#contract) · [Contract history](newblir01.html#contract-history)
+Known through: 2005-01-07. [Open interactive contract](newblir01.html#contract) · [Contract history](newblir01.html#contract-history)
 
-Ira Newble: under contract. Evidence cutoff: 2005-01-03.
+Ira Newble: under contract. Evidence cutoff: 2005-01-07.
 
 ## Current contract
 

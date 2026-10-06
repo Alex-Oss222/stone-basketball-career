@@ -2,9 +2,9 @@
 
 # Contract | Lamond Murray
 
-Known through: 2005-01-03. [Open interactive contract](murrala01.html#contract) · [Contract history](murrala01.html#contract-history)
+Known through: 2005-01-07. [Open interactive contract](murrala01.html#contract) · [Contract history](murrala01.html#contract-history)
 
-Lamond Murray: under contract. Evidence cutoff: 2005-01-03.
+Lamond Murray: under contract. Evidence cutoff: 2005-01-07.
 
 ## Current contract
 
@@ -110,14 +110,14 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
-- [Dated signed-contract archive](../contract_records.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 
 ### Current control and contract coverage
@@ -277,14 +277,14 @@ Only dated recorded contracts are shown. Earlier contracts, missing amounts, rid
 
 #### Agreement evidence
 
+- [Dated signed-contract archive](../contract_records.json)
+- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 - [Dated league contract inventory](../../../../library/2003/league/nba_2003_contracts.json)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries03.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries04.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries05.txt)
 - [Contract source document](https://www.eskimo.com/~pbender/misc/salaries06.txt)
 - [Authoritative club contract schedule](../../2004-05/00_Team/Finances/contract_schedules.json)
-- [Signing / contract source](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
-- [Dated signed-contract archive](../contract_records.json)
 - [Completed contract assignment](../../2004-05/00_Team/Transactions/Trades/2004-12-20-be4b6043a0.json)
 
 ## Source records

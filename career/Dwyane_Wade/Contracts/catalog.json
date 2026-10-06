@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2005-01-03",
+  "as_of": "2005-01-07",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -2354,7 +2354,7 @@
     {
       "player_id": "moisoje01",
       "name": "Jerome Moiso",
-      "team": "Free agent",
+      "team": "Charlotte Bobcats",
       "status": "under contract",
       "current_contract_id": "moisoje01-2003-07-16",
       "recorded_agreements": 2,
@@ -2975,7 +2975,7 @@
     {
       "player_id": "johnsli01",
       "name": "Linton Johnson",
-      "team": "Free agent",
+      "team": "Philadelphia 76ers",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -3164,7 +3164,7 @@
     {
       "player_id": "fizerma01",
       "name": "Marcus Fizer",
-      "team": "Free agent",
+      "team": "New Jersey Nets",
       "status": "under rookie contract",
       "current_contract_id": "fizerma01-existing-68f8a3e26f2b",
       "recorded_agreements": 1,
@@ -3569,7 +3569,7 @@
     {
       "player_id": "willima01",
       "name": "Mo Williams",
-      "team": "Free agent",
+      "team": "San Antonio Spurs",
       "status": "No verified contract record",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4326,7 +4326,7 @@
       "player_id": "padgesc01",
       "name": "Scott Padgett",
       "team": "Toronto Raptors",
-      "status": "under contract",
+      "status": "traded",
       "current_contract_id": "padgesc01-2004-07-14",
       "recorded_agreements": 4,
       "href": "players/padgesc01.html#contract"
@@ -4523,7 +4523,7 @@
     {
       "player_id": "augmost01",
       "name": "Stacey Augmon",
-      "team": "Free agent",
+      "team": "Chicago Bulls",
       "status": "under contract",
       "current_contract_id": "augmost01-existing-38245c5a6a8a",
       "recorded_agreements": 1,
@@ -4631,7 +4631,7 @@
     {
       "player_id": "slayta01",
       "name": "Tamar Slay",
-      "team": "Free agent",
+      "team": "Atlanta Hawks",
       "status": "minimum contract unverified",
       "current_contract_id": null,
       "recorded_agreements": 0,
@@ -4956,7 +4956,7 @@
       "player_id": "hasleud01",
       "name": "Udonis Haslem",
       "team": "Toronto Raptors",
-      "status": "under contract",
+      "status": "traded",
       "current_contract_id": "hasleud01-2004-07-14",
       "recorded_agreements": 2,
       "href": "players/hasleud01.html#contract"
