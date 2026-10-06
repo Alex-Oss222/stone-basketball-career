@@ -242,11 +242,27 @@ def preseason_priors(on, root=ROOT, season=None):
         for row in read_json(estimates).get("players", []):
             if row["as_of"] <= on:
                 priors.setdefault(row["player"], row["score"])
-    # Any other arrival (an in-season trade, claim or signing): the arrival rule, from evidence dated before he joined.
+    # Any other arrival after camp (an in-season trade, claim or signing), from 2004-05: the arrival rule, from evidence
+    # dated before he joined. A player with a dated estimate anywhere keeps that one (it may start later).
     roster = base / "00_Team/Team/Roster/roster.json"
-    if roster.exists():
+    if season != "2003-04" and roster.exists():
+        from .player_stats import alias
+        from .rotations import holdings_path
+        dated = set()
+        if estimates.exists():
+            dated |= {row["player"] for row in read_json(estimates).get("players", [])}
+        if correction_path.exists():
+            dated |= {row["player"] for row in read_json(correction_path).get("refill", {}).get("picks", [])}
+        camp_day = assessed.get("evaluated") or assessment_date(root, season)
+        hold = Path(root) / holdings_path(season)
+        joined = {}
+        if hold.exists():
+            for e in read_json(hold)["entries"]:
+                if camp_day < e["from"] <= on:
+                    joined[e.get("bbr_id") or alias(e["player"])] = e["from"]
         for p in read_json(roster)["players"]:
-            if camp.playable(p.get("status")) and p["name"] not in priors:
+            key = p.get("bbr_id") or alias(p["name"])
+            if camp.playable(p.get("status")) and p["name"] not in priors and p["name"] not in dated and key in joined:
                 value = arrival_estimate(p["name"], p.get("bbr_id"), on, root, season)
                 if value is not None:
                     priors[p["name"]] = value
@@ -277,7 +293,7 @@ def arrival_estimate(name, bbr_id, on, root=ROOT, season=None):
             joined = max(s for s in starts if s <= on) if any(s <= on for s in starts) else on
     minutes = eff = 0.0
     for row in closed_results(root, season, on):
-        if row["result"]["game_date"] >= joined:
+        if row["result"].get("game_date", "9999") >= joined or "final_score" not in row["result"]:
             continue
         for side, pid, b, record in game_records(row, root, season):
             if row["result"][side] != MIAMI and record.get("line") and ((bbr_id and b == bbr_id) or alias(pid) == alias(name)):
