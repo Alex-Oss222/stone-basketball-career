@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "mode": "live",
-  "as_of": "2005-01-31",
+  "as_of": "2005-02-02",
   "season": "2004-05",
   "identity": {
     "name": "Dwyane Wade",
@@ -10,7 +10,7 @@
     "age": 21,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2005-01-30-houston-rockets-at-miami-heat",
+  "current_event": "2005-02-01-miami-heat-at-dallas-mavericks",
   "current_screen": "calendar",
   "screens": [
     {
@@ -29,7 +29,7 @@
           "rows": [
             [
               "Career date",
-              "2005-01-31"
+              "2005-02-02"
             ],
             [
               "Team",
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2005-01-30-houston-rockets-at-miami-heat"
+              "2005-02-01-miami-heat-at-dallas-mavericks"
             ],
             [
               "Pending player decisions",
@@ -64,9 +64,9 @@
           ],
           "rows": [
             [
-              "2005-01-31",
+              "2005-02-02",
               "Current checkpoint",
-              "2005-01-30-houston-rockets-at-miami-heat",
+              "2005-02-01-miami-heat-at-dallas-mavericks",
               "Recorded",
               {
                 "label": "Owning event",
@@ -94,22 +94,12 @@
               }
             ],
             [
-              "2005-02-01",
-              "Next Miami game, at Dallas Mavericks",
+              "2005-02-03",
+              "Next Miami game, vs Cleveland Cavaliers",
               "Coach sets the rotation; the engine plays it",
               "Scheduled",
               {
                 "label": "Season",
-                "href": "#calendar"
-              }
-            ],
-            [
-              "2005-02-02",
-              "League awards announced: Player of the Month, Rookie of the Month",
-              "League (closed results only)",
-              "Scheduled",
-              {
-                "label": "Awards",
                 "href": "#calendar"
               }
             ],
@@ -121,6 +111,16 @@
               {
                 "label": "Rule",
                 "href": "../../../docs/front_office.md"
+              }
+            ],
+            [
+              "2005-02-07",
+              "League awards announced: Player of the Week",
+              "League (closed results only)",
+              "Scheduled",
+              {
+                "label": "Awards",
+                "href": "#calendar"
               }
             ],
             [
@@ -626,6 +626,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -634,7 +638,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-31"
+          "value": "2005-02-02"
         },
         {
           "label": "Team",
@@ -1076,6 +1080,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1084,7 +1092,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-31"
+          "value": "2005-02-02"
         },
         {
           "label": "Team",
@@ -1499,6 +1507,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1507,7 +1519,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-31"
+          "value": "2005-02-02"
         },
         {
           "label": "Team",
@@ -1961,6 +1973,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -1969,7 +1985,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-31"
+          "value": "2005-02-02"
         },
         {
           "label": "Team",
@@ -2386,6 +2402,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2394,7 +2414,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-31"
+          "value": "2005-02-02"
         },
         {
           "label": "Team",
@@ -2855,6 +2875,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -2863,7 +2887,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-31"
+          "value": "2005-02-02"
         },
         {
           "label": "Team",
@@ -3280,6 +3304,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3288,7 +3316,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-31"
+          "value": "2005-02-02"
         },
         {
           "label": "Team",
@@ -3845,6 +3873,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -3853,7 +3885,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-31"
+          "value": "2005-02-02"
         },
         {
           "label": "Team",
@@ -3870,7 +3902,7 @@
       "title": "Stats review",
       "status": "active",
       "trigger": "A declared, closed game result supplies observed participation and the player box.",
-      "summary": "53 closed game records in 2004-05 through 2005-01-31. Competitions remain separate.",
+      "summary": "54 closed game records in 2004-05 through 2005-02-02. Competitions remain separate.",
       "sections": [
         {
           "title": "Production by competition",
@@ -3897,12 +3929,12 @@
             ],
             [
               "regular",
-              40,
-              36.05996375,
-              20.55,
-              5.35,
-              4.0,
-              1.275,
+              41,
+              36.144611382,
+              20.634146341,
+              5.317073171,
+              3.951219512,
+              1.292682927,
               "Complete"
             ]
           ]
@@ -3930,12 +3962,12 @@
             ],
             [
               "regular",
-              279,
-              524,
-              0.532442748,
-              45,
-              97,
-              0.463917526
+              288,
+              537,
+              0.536312849,
+              46,
+              100,
+              0.46
             ]
           ],
           "notice": "Ratios are pooled makes divided by attempts; missing and zero-attempt percentages are N/A."
@@ -4479,6 +4511,16 @@
                 "label": "Closed game",
                 "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_5.md"
               }
+            ],
+            [
+              "2005-02-01",
+              "regular",
+              "Dallas Mavericks",
+              "Played",
+              {
+                "label": "Closed game",
+                "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_1.md"
+              }
             ]
           ]
         },
@@ -4816,6 +4858,10 @@
           "href": "../2004-05/06_Regular_Season/01_January/Week_4/Game_5.md"
         },
         {
+          "label": "Closed game",
+          "href": "../2004-05/06_Regular_Season/02_February/Week_1/Game_1.md"
+        },
+        {
           "label": "Dated milestone working records and player replies",
           "href": "../milestones.json"
         }
@@ -4824,7 +4870,7 @@
       "metrics": [
         {
           "label": "Career date",
-          "value": "2005-01-31"
+          "value": "2005-02-02"
         },
         {
           "label": "Team",

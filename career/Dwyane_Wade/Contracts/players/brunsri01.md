@@ -2,9 +2,9 @@
 
 # Contract | Rick Brunson
 
-Known through: 2005-01-31. [Open interactive contract](brunsri01.html#contract) · [Contract history](brunsri01.html#contract-history)
+Known through: 2005-02-02. [Open interactive contract](brunsri01.html#contract) · [Contract history](brunsri01.html#contract-history)
 
-Rick Brunson: under contract. Evidence cutoff: 2005-01-31.
+Rick Brunson: under contract. Evidence cutoff: 2005-02-02.
 
 ## Current contract
 

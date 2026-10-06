@@ -2,9 +2,9 @@
 
 # Contract | Michael Stewart
 
-Known through: 2005-01-31. [Open interactive contract](stewami01.html#contract) · [Contract history](stewami01.html#contract-history)
+Known through: 2005-02-02. [Open interactive contract](stewami01.html#contract) · [Contract history](stewami01.html#contract-history)
 
-Michael Stewart: under contract. Evidence cutoff: 2005-01-31.
+Michael Stewart: under contract. Evidence cutoff: 2005-02-02.
 
 ## Current contract
 

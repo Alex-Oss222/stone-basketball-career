@@ -2,9 +2,9 @@
 
 # Contract | Adonal Foyle
 
-Known through: 2005-01-31. [Open interactive contract](foylead01.html#contract) · [Contract history](foylead01.html#contract-history)
+Known through: 2005-02-02. [Open interactive contract](foylead01.html#contract) · [Contract history](foylead01.html#contract-history)
 
-Adonal Foyle: under contract. Evidence cutoff: 2005-01-31.
+Adonal Foyle: under contract. Evidence cutoff: 2005-02-02.
 
 ## Current contract
 

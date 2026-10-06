@@ -2,9 +2,9 @@
 
 # Contract | Bimbo Coles
 
-Known through: 2005-01-31. [Open interactive contract](colesbi01.html#contract) · [Contract history](colesbi01.html#contract-history)
+Known through: 2005-02-02. [Open interactive contract](colesbi01.html#contract) · [Contract history](colesbi01.html#contract-history)
 
-Bimbo Coles: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2005-01-31.
+Bimbo Coles: on the 2003-04 roster; contract terms not in the dated records. Evidence cutoff: 2005-02-02.
 
 ## Current contract
 
