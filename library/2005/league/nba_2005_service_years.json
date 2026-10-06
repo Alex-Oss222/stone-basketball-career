@@ -1,0 +1,2308 @@
+{
+ "schema_version": 1,
+ "kind": "service_years",
+ "source": "https://www.basketball-reference.com/players/<letter>/ (year_min)",
+ "use": "Writes `library/<year>/league/nba_<year>_service_years.json`: for every tracked player, his first season (`year_min`\non the index) and the seasons from it to 2004-05, which\nthat offseason's market uses as years of service where the free-agent rights files have no sourced count. The index's\nlast-season column is never stored (it would be hindsight). Seasons since debut overstate service for a player who\nmissed whole seasons; a sourced count always wins (`runtime/free_agency_2004.identity`).\n\n2004 tracks the registry and the 2003-04 and 2004-05 real rosters. 2005 tracks every player in\n`library/careers/nba_player_careers.json`, the registry and the 2004-05 and 2005-06 real rosters, and keeps only\nplayers who debuted by 2004-05 (anyone who could be a 2005 free agent with NBA service; a later debut would be\nhindsight and is counted, not listed).",
+ "players": {
+  "abdulta01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "abdursh01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "alexaco01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "alexaco02": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "allenma01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "allenra02": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "allento01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "alstora01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "amaecjo01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "anderch01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "anderde01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "anderke01": {
+   "first_season": "1991-92",
+   "seasons_through_2004_05": 14
+  },
+  "andersh01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "anthoca01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "araujra01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "archiro01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "arenagi01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "arizatr01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "armstbr01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "armstda01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "arroyca01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "artesro01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "atkinch01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "augmost01": {
+   "first_season": "1991-92",
+   "seasons_through_2004_05": 14
+  },
+  "bagarda01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "bakerma01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "bakervi01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "banksma01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "barbole01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "barnema02": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "barrean01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "barroda01": {
+   "first_season": "1989-90",
+   "seasons_through_2004_05": 16
+  },
+  "barrybr01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "barryjo01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "bastoma01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "bateeme01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "batismi01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "battish01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "battito01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "baxtelo01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "beaslje01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "bellch01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "bellra01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "belltr01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "bendejo01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "besttr01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "bibbymi01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "biedran01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "billuch01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "blakest01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "blounco01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "blounma01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "bobbito01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "boganke01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "bonnema01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "boothca01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "boozeca01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "borchcu01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "boshch01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "boumtru01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "bowenbr01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "bowenry01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "boykiea01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "bradlmi01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "bradlsh01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "braggto01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "brandel01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "bremejr01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "breweja01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "brezepr01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "brownda02": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "brownde02": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "brownke01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "brownkw01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "brownpj01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "brownra02": {
+   "first_season": "1991-92",
+   "seasons_through_2004_05": 14
+  },
+  "brownti01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "brunsri01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "bryanko01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "bryanma01": {
+   "first_season": "1988-89",
+   "seasons_through_2004_05": 17
+  },
+  "buckngr01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "buforro01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "burkepa01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "burksan01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "butleca01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "butleja01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "butlemi02": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "butlera01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "cabarza01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "caffeja01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "cambyma01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "campbel01": {
+   "first_season": "1990-91",
+   "seasons_through_2004_05": 15
+  },
+  "cardibr01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "carlige01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "carroma01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "cartean01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "cartema01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "cartevi01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "cassesa01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "catoke01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "chalmli01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "chandty01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "cheanca01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "childjo01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "chrisdo01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "clarkke01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "claxtsp01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "cleavma01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "colemde01": {
+   "first_season": "1990-91",
+   "seasons_through_2004_05": 15
+  },
+  "colesbi01": {
+   "first_season": "1990-91",
+   "seasons_through_2004_05": 15
+  },
+  "collija02": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "collija03": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "collija04": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "collini01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "cookbr01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "cookom01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "crawfch01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "crawfja01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "croshau01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "curryed01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "currymi01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "dalemsa01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "dampier01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "daniean01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "danieer01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "daniema01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "davisan01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "davisba01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "davisda01": {
+   "first_season": "1991-92",
+   "seasons_through_2004_05": 14
+  },
+  "davishu01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "davisjo02": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "davisri01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "declean01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "delfica01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "delkto01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "denglu01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "dialde01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "diawbo01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "dickada01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "dickeka01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "diopde01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "divacvl01": {
+   "first_season": "1989-90",
+   "seasons_through_2004_05": 16
+  },
+  "dixonju01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "doleami01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "doolike01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "drewbr01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "drobnpr01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "duhonch01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "duncati01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "dunlemi02": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "duprero01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "ebind01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "edwarco01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "edwarjo01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "eisleho01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "ekeziob01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "ellisla01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "elsonfr01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "elyme01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "emmetan01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "eschmev01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "evansma01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "evansre01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "fergude01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "ferryda01": {
+   "first_season": "1990-91",
+   "seasons_through_2004_05": 15
+  },
+  "finlemi01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "fishede01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "fizerma01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "florelu01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "fordal02": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "fordtj01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "fortejo01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "fortsda01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "fosteje01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "fowlktr01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "foxri01": {
+   "first_season": "1991-92",
+   "seasons_through_2004_05": 14
+  },
+  "foylead01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "frahmri01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "francst01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "freijma01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "fullehi01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "fundela01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "gadzuda01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "gainere01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "garcial01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "garneke01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "garripa01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "gasolpa01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "georgde01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "gilled01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "gillke01": {
+   "first_season": "1990-91",
+   "seasons_through_2004_05": 15
+  },
+  "ginobma01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "giricgo01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "glovedi01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "goldwan01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "goodedr01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "gordobe01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "grantbr01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "grantho01": {
+   "first_season": "1987-88",
+   "seasons_through_2004_05": 18
+  },
+  "grantpa01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "greenwi01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "griffad01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "griffed01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "guglito01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "haislma01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "hamda01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "hamilri01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "hamilze01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "handlbe01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "hansetr01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "hardaan01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "hardati01": {
+   "first_season": "1989-90",
+   "seasons_through_2004_05": 16
+  },
+  "harprma01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "harriad01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "harrial01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "harrida01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "harride01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "harriju01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "harrilu01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "harriot01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "hartja01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "harvedo01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "hasleud01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "hassetr01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "hawkiju01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "hayesja01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "haywobr01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "healsh01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "hendeal01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "hilarne01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "hillgr01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "hillty01": {
+   "first_season": "1990-91",
+   "seasons_through_2004_05": 15
+  },
+  "hinriki01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "hoibefr01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "horryro01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "houseed01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "houstal01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "howardw01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "howarjo01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "howarju01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "hudsotr01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "hughela01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "humphkr01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "humphry01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "huntebr01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "hunteli01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "huntest01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "iguodan01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "ilgauzy01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "iversal01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "iveyro01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "jacksbo01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "jacksje01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "jacksji01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "jackslu02": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "jacksma01": {
+   "first_season": "1987-88",
+   "seasons_through_2004_05": 18
+  },
+  "jacksma02": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "jacksst02": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "jacobca01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "jamesje01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "jamesle01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "jamesmi01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "jamisan01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "jaricma01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "jeffeal01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "jeffech01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "jefferi01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "jeffrja01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "jenkiho01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "johnsan02": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "johnsav01": {
+   "first_season": "1988-89",
+   "seasons_through_2004_05": 17
+  },
+  "johnsbr01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "johnsde03": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "johnser02": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "johnsjo02": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "johnske03": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "johnsli01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "jonesda01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "jonesda02": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "jonesed02": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "jonesfr01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "jonesja02": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "jonesju01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "jonesma03": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "jonespo01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "jordami01": {
+   "first_season": "1984-85",
+   "seasons_through_2004_05": 21
+  },
+  "kamanch01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "kaponja01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "kasunma01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "kempsh01": {
+   "first_season": "1989-90",
+   "seasons_through_2004_05": 16
+  },
+  "kerrst01": {
+   "first_season": "1988-89",
+   "seasons_through_2004_05": 17
+  },
+  "khryavi01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "kiddja01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "kirilan01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "kittlke01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "knighbr01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "knighbr02": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "knightr01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "korveky01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "krstine01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "kukocto01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "kutluib01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "laettch01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "lafrera01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "lampema01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "lamplse01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "langhda01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "larueru01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "lenarvo01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "lewisqu01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "lewisra02": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "livinra01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "livinsh01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "longgr01": {
+   "first_season": "1988-89",
+   "seasons_through_2004_05": 17
+  },
+  "lopezra01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "luety01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "lynchge01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "maddoti01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "madsema01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "maggeco01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "magloja01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "malonka01": {
+   "first_season": "1985-86",
+   "seasons_through_2004_05": 20
+  },
+  "mannida01": {
+   "first_season": "1988-89",
+   "seasons_through_2004_05": 17
+  },
+  "marbust01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "mariosh01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "marksse01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "marshdo01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "martida01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "martike01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "martike02": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "mashbja01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "masonan01": {
+   "first_season": "1989-90",
+   "seasons_through_2004_05": 16
+  },
+  "masonde01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "masonro01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "masseto01": {
+   "first_season": "1990-91",
+   "seasons_through_2004_05": 15
+  },
+  "mbengdj01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "mccarwa01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "mccasam01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "mccoyje01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "mcdyean01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "mcgratr01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "mcinnje01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "mckieaa01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "mcleoke01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "medvest01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "mercero01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "mihmch01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "milesda01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "milicda01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "millean01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "millean02": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "millebr01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "millemi01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "milleol01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "millere01": {
+   "first_season": "1987-88",
+   "seasons_through_2004_05": 18
+  },
+  "millsch01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "mingya01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "moblecu01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "mohamna01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "moisoje01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "mooremi01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "morrite01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "mournal01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "murphtr01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "murrala01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "murraro01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "murratr01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "mutomdi01": {
+   "first_season": "1991-92",
+   "seasons_through_2004_05": 14
+  },
+  "nachbbo01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "nailole01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "najered01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "nashst01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "ndiayma02": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "nelsoja01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "nestera01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "newblir01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "nocioan01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "norrimo01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "nowitdi01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "oaklech01": {
+   "first_season": "1985-86",
+   "seasons_through_2004_05": 20
+  },
+  "odomla01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "okafoem01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "okurme01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "ollieke01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "olowomi01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "onealje01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "onealsh01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "ostergr01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "outlabo01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "outlatr01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "overtdo01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "owensch01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "pachuza01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "packro01": {
+   "first_season": "1991-92",
+   "seasons_through_2004_05": 14
+  },
+  "padgesc01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "palacmi01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "pargoja01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "parkean01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "parkesm01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "parketo01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "parksch02": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "patteru01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "pavloal01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "paytoga01": {
+   "first_season": "1990-91",
+   "seasons_through_2004_05": 15
+  },
+  "peelean01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "penigde01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "penneki01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "perkike01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "persowe01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "petermo01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "piatker01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "piercpa01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "pietrmi01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "pippesc01": {
+   "first_season": "1987-88",
+   "seasons_through_2004_05": 18
+  },
+  "planizo01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "podkopa01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "pollasc01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "polynol01": {
+   "first_season": "1987-88",
+   "seasons_through_2004_05": 18
+  },
+  "popema01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "poseyja01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "postela01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "potapvi01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "princta01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "profila01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "przybjo01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "radmavl01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "radojal01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "ramospe01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "randoza01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "ratlith01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "rebraze01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "reddmi01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "reedju01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "reiddo01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "reineja01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "rentzef01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "ricegl01": {
+   "first_season": "1989-90",
+   "seasons_through_2004_05": 16
+  },
+  "richaja01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "richaqu01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "ridnolu01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "robinbe01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "robincl02": {
+   "first_season": "1989-90",
+   "seasons_through_2004_05": 16
+  },
+  "robinda01": {
+   "first_season": "1989-90",
+   "seasons_through_2004_05": 16
+  },
+  "robined01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "robingl01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "rogerro01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "rooksse01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "roseja01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "rosema01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "rossqu01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "ruffimi01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "rushka01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "russebr01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "sabonar01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "salmojo01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "sampsja01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "santida01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "sasseje01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "scalabr01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "sesayan01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "seungha01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "shawbr01": {
+   "first_season": "1988-89",
+   "seasons_through_2004_05": 17
+  },
+  "shirlpa01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "simmobo01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "skinnbr01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "slayta01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "smithch04": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "smithdo04": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "smithja01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "smithjo02": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "smithjo03": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "smithjr01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "smithle01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "smithst01": {
+   "first_season": "1991-92",
+   "seasons_through_2004_05": 14
+  },
+  "smithth01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "snower01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "snydeki01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "solomwi01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "songada01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "sowpa01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "sprewla01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "stackje01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "stepavl01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "stevede01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "stewami01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "stockjo01": {
+   "first_season": "1984-85",
+   "seasons_through_2004_05": 21
+  },
+  "stojape01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "storeaw01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "stoudam01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "stoudda01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "stricer01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "stricro02": {
+   "first_season": "1988-89",
+   "seasons_through_2004_05": 17
+  },
+  "sundobr01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "surabo01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "sweetmi01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "swiftro01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "swiftst01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "szczewa02": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "tabusyu01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "tayloma01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "telfase01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "terryja01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "thomabi01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "thomaet01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "thomaja02": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "thomajo02": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "thomake01": {
+   "first_season": "1999-00",
+   "seasons_through_2004_05": 6
+  },
+  "thomaku01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "thomati01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "tinslja01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "traylro01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "trentga01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "trepaje01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "trybace01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "tsakaja01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "tskitni01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "turkohe01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "udokaim01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "udrihbe01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "vanexni01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "vanhoke01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "varejan01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "vaughja01": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "voskuja01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  },
+  "vranesl01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "vromaja01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "vujacsa01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "wadedw01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "wagneda02": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "walkean02": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "walkesa01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "wallabe01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "wallage01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "wallajo01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "wallara01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "waltolu01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "wardch01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "watsoea01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "weathcl01": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "webbech01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "wellsbo01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "welscji01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "wesleda01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "westda01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "westde01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "whiteja01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "whitero02": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "whitnch01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "wilcoch01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "wilkida02": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "wilksmi01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "williaa01": {
+   "first_season": "1993-94",
+   "seasons_through_2004_05": 12
+  },
+  "willial02": {
+   "first_season": "1997-98",
+   "seasons_through_2004_05": 8
+  },
+  "willico02": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "willier01": {
+   "first_season": "1995-96",
+   "seasons_through_2004_05": 10
+  },
+  "willifr02": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "willija02": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "willija03": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "willije01": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "willike02": {
+   "first_season": "1984-85",
+   "seasons_through_2004_05": 21
+  },
+  "willima01": {
+   "first_season": "2003-04",
+   "seasons_through_2004_05": 2
+  },
+  "willimo01": {
+   "first_season": "1994-95",
+   "seasons_through_2004_05": 11
+  },
+  "willisc01": {
+   "first_season": "1990-91",
+   "seasons_through_2004_05": 15
+  },
+  "willish01": {
+   "first_season": "1998-99",
+   "seasons_through_2004_05": 7
+  },
+  "williwa02": {
+   "first_season": "1992-93",
+   "seasons_through_2004_05": 13
+  },
+  "woodslo01": {
+   "first_season": "2001-02",
+   "seasons_through_2004_05": 4
+  },
+  "woodsqy01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "wrighdo01": {
+   "first_season": "2004-05",
+   "seasons_through_2004_05": 1
+  },
+  "wrighlo02": {
+   "first_season": "1996-97",
+   "seasons_through_2004_05": 9
+  },
+  "yarbrvi01": {
+   "first_season": "2002-03",
+   "seasons_through_2004_05": 3
+  },
+  "zhizhwa01": {
+   "first_season": "2000-01",
+   "seasons_through_2004_05": 5
+  }
+ },
+ "missing": [
+  "austima01",
+  "badiama01",
+  "becirsa01",
+  "morlepa01",
+  "rickeri01",
+  "schorso01",
+  "sinanne01",
+  "smithto03",
+  "szewcsz01",
+  "vandera01",
+  "yuyanxu01"
+ ],
+ "as_of": "2005-06-30",
+ "tracked": "library/careers/nba_player_careers.json, the player registry and the 2004-05 and 2005-06 real rosters",
+ "debuted_later_not_listed": 653
+}

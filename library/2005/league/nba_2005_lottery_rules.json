@@ -1,0 +1,241 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "lottery_rules",
+ "draft": "2005",
+ "lottery_date": "2005-05-24",
+ "purpose": "Rules of the 2005 draft lottery (rules only; the real result is never used). The 2004 runtime (runtime/lottery.py) applies the same keys to the simulated league; a 2005 run must take Charlotte into the lottery (no fixed slot) and use 14 lottery clubs.",
+ "lottery_clubs": 14,
+ "picks_drawn": 3,
+ "combinations_by_seed": [
+  250,
+  199,
+  156,
+  119,
+  88,
+  63,
+  43,
+  28,
+  17,
+  11,
+  8,
+  7,
+  6,
+  5
+ ],
+ "combinations_status": "seeds 4 = 119, 5 = 88 and 6 = 63 and the 17.7% average of seeds 2-3 sourced from contemporaneous 2005 reports (fourth seed 11.9%, fifth seed 8.8%, sixth seed 6.3%, two clubs tied for seeds 2-3 at 17.7% each); seed 1 = 250 and the full 14-club sequence (sum 1,000) derived from Wikipedia's lottery-winner table for 2005-2018 (2005 seed 6 = 63, 2006 seed 5 = 88, 2008 seed 9 = 17, 2011 seed 2 = 199 and seed 8 = 28, 2013 seed 3 = 156) and the 1,000-combination total",
+ "ties": "Tied clubs split the combinations of the seeds they occupy evenly; an uneven remainder and the order of tied clubs that do not win a top-3 pick are settled by a drawing (sourced for the lottery generally). In the second round tied clubs pick in the opposite order (derived from the 2003 draft).",
+ "after_the_lottery": "Clubs that do not win a top-3 pick choose in reverse order of record, so no club falls more than three places (derived; no expansion slot in 2005). Charlotte takes part in the lottery like any other non-playoff club (sourced). Playoff clubs follow in reverse order of record (non-lottery ties by drawing); the second round is in reverse order of record of all 30 clubs, unaffected by the lottery (sourced for 2004, same rule).",
+ "research": {
+  "topic": "NBA draft lottery rules in force for the 2005 draft lottery (May 24, 2005)",
+  "scope_note": "Rules only. Real 2005 lottery results, real 2004-05 records, real seedings, real tie-break outcomes and real draft order are deliberately omitted (hindsight). Several cited pages also contain those results; the caller must not import them.",
+  "event": {
+   "date": "2005-05-24",
+   "place": "Secaucus, New Jersey",
+   "edition": "21st annual NBA Draft Lottery (derived: the 2004 lottery was the 20th)",
+   "draft_date": "2005-06-28",
+   "status": "sourced (date and place); derived (edition number)",
+   "sources": [
+    "https://www.nysun.com/article/sports-sports-desk-2005-05-25 (New York Sun, May 25, 2005: the lottery was held 'Tuesday night in Secaucus, N.J.'; May 24, 2005 was a Tuesday. Page read through a search-engine extract; the site itself returned a bot check)",
+    "https://www.ptt.cc/bbs/Bucks/M.1116988481.A.99E.html (message id encodes Unix time 1116988481 = 2005-05-25 02:34 UTC, i.e. the evening of May 24 US Eastern; corroboration only)",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft (draft date June 28, 2005)"
+   ]
+  },
+  "participants": {
+   "rule": "All clubs that missed the 2005 playoffs. The league had 30 clubs in 2004-05 (Charlotte's first season) and 16 made the playoffs, so 14 clubs took part.",
+   "lottery_club_count": 14,
+   "status": "derived (30 clubs minus 16 playoff clubs); 14 combination shares sourced indirectly by the 2005-2018 table",
+   "sources": [
+    "https://en.wikipedia.org/wiki/2004%E2%80%9305_NBA_season",
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery"
+   ]
+  },
+  "charlotte_expansion": {
+   "rule": "The Charlotte Bobcats' expansion terms fixed their 2004 position only (No. 4). For the 2005 and 2006 drafts Charlotte enters the lottery as an ordinary non-playoff club and is eligible for the No. 1 pick; there is no fixed first- or second-round slot and no cap on how high Charlotte may draw.",
+   "quote": "The new team will be eligible for the No. 1 pick in the 2005 and 2006 drafts.",
+   "status": "sourced",
+   "sources": [
+    "https://www.deseret.com/2002/12/21/19695058/draft-rules-favorable-for-charlotte-franchise/ (Deseret News, Dec 21, 2002: fourth pick in 2004; eligible for No. 1 in 2005 and 2006; contrast with Toronto/Vancouver, kept out of the lottery for their first three seasons)",
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery (1995 Toronto/Vancouver restriction, the precedent that did not apply to Charlotte)"
+   ],
+   "corroboration": "Contemporaneous 2005 lottery coverage (search-engine extract) shows Charlotte entering the lottery with a regular seed share, consistent with no special restriction. (Its seed and the other clubs' are real 2004-05 results and are not recorded.)",
+   "second_round": {
+    "rule": "No fixed second-round slot in 2005: Charlotte picks in round 2 by its record like every other club.",
+    "status": "derived",
+    "note": "The 2004 No. 33 slot came from the expansion terms for 2004 only; the Deseret News summary gives no 2005 second-round term, and the 2005 draft table places Charlotte's own second-round pick by record (No. 32). The exact expansion-agreement text is unverified."
+   }
+  },
+  "mechanics": {
+   "rule": "14 ping-pong balls numbered 1-14; four drawn; 1,001 combinations regardless of order; 1,000 assigned to the 14 lottery clubs by computer, the one unassigned combination (11-12-13-14) is redrawn. Draw for No. 1, balls returned, repeat for No. 2 and No. 3; a combination belonging to a club that already won a pick is ignored and redrawn.",
+   "status": "sourced (general NBA description); 2005-specific NBA.com How It Works page not retrieved (nba.com feature pages return 'Content Unavailable' and web.archive.org is unreachable from this environment)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery",
+    "https://www.nba.com/features/lottery2004_details.html (2004 rules text, same mechanics)"
+   ]
+  },
+  "combination_table_14_clubs": {
+   "seeds_worst_first": [
+    {
+     "seed": 1,
+     "combinations": 250,
+     "chance_no1": 0.25,
+     "lowest_possible_pick": 4,
+     "status": "derived",
+     "note": "250 for the worst record is the 1994-2018 constant (Wikipedia winner table: 2004, 2015-2018 worst seeds 250); 2005 reports name the worst club's chance 'the best' without a figure. Lowest pick = seed + 3."
+    },
+    {
+     "seed": 2,
+     "combinations": 199,
+     "chance_no1": 0.199,
+     "lowest_possible_pick": 5,
+     "status": "derived",
+     "note": "Wikipedia: 2011 Cleveland, second-worst record, 199 combinations; 2005 report: two clubs tied for seeds 2-3 at 17.7% each = (199 + 156) / 2 rounded."
+    },
+    {
+     "seed": 3,
+     "combinations": 156,
+     "chance_no1": 0.156,
+     "lowest_possible_pick": 6,
+     "status": "derived",
+     "note": "Wikipedia: 2013 Cleveland, third-worst record, 156 combinations."
+    },
+    {
+     "seed": 4,
+     "combinations": 119,
+     "chance_no1": 0.119,
+     "lowest_possible_pick": 7,
+     "status": "sourced",
+     "note": "2005 report: fourth seed 11.9%."
+    },
+    {
+     "seed": 5,
+     "combinations": 88,
+     "chance_no1": 0.088,
+     "lowest_possible_pick": 8,
+     "status": "sourced",
+     "note": "2005 report: fifth seed 8.8%; Wikipedia: 2006 Toronto, fifth-worst, 88."
+    },
+    {
+     "seed": 6,
+     "combinations": 63,
+     "chance_no1": 0.063,
+     "lowest_possible_pick": 9,
+     "status": "sourced",
+     "note": "2005 report: sixth seed 6.3%; Wikipedia winner table: 2005, sixth-worst, 63 (out of 1,000)."
+    },
+    {
+     "seed": 7,
+     "combinations": 43,
+     "chance_no1": 0.043,
+     "lowest_possible_pick": 10,
+     "status": "derived",
+     "note": "14-club 2005-2018 sequence; Wikipedia 2007 Portland (tied sixth/seventh) 53 = (63 + 43) / 2."
+    },
+    {
+     "seed": 8,
+     "combinations": 28,
+     "chance_no1": 0.028,
+     "lowest_possible_pick": 11,
+     "status": "derived",
+     "note": "Wikipedia: 2011 Clippers pick (eighth seed) 28 combinations."
+    },
+    {
+     "seed": 9,
+     "combinations": 17,
+     "chance_no1": 0.017,
+     "lowest_possible_pick": 12,
+     "status": "derived",
+     "note": "Wikipedia: 2008 Chicago, ninth-worst, 17; 2014 Cleveland, ninth-worst, 17."
+    },
+    {
+     "seed": 10,
+     "combinations": 11,
+     "chance_no1": 0.011,
+     "lowest_possible_pick": 13,
+     "status": "derived",
+     "note": "14-club 2005-2018 sequence (remainder of the 1,000 after the sourced and Wikipedia-confirmed seeds is 11 + 8 + 7 + 6 + 5 = 37)."
+    },
+    {
+     "seed": 11,
+     "combinations": 8,
+     "chance_no1": 0.008,
+     "lowest_possible_pick": 14,
+     "status": "derived",
+     "note": "14-club 2005-2018 sequence."
+    },
+    {
+     "seed": 12,
+     "combinations": 7,
+     "chance_no1": 0.007,
+     "lowest_possible_pick": 14,
+     "status": "derived",
+     "note": "14-club 2005-2018 sequence."
+    },
+    {
+     "seed": 13,
+     "combinations": 6,
+     "chance_no1": 0.006,
+     "lowest_possible_pick": 14,
+     "status": "derived",
+     "note": "14-club 2005-2018 sequence."
+    },
+    {
+     "seed": 14,
+     "combinations": 5,
+     "chance_no1": 0.005,
+     "lowest_possible_pick": 14,
+     "status": "derived",
+     "note": "Best lottery club keeps the 5 combinations it had in the 13-club table (nba_2004_lottery_rules.json)."
+    }
+   ],
+   "total": 1000,
+   "status": "derived",
+   "derivation": "The 13-club 1995-2004 table (250-200-157-120-89-64-44-29-18-11-7-6-5) became the 14-club table 250-199-156-119-88-63-43-28-17-11-8-7-6-5 when the league reached 30 clubs; the 2005 brief in nba_2004_lottery_rules.json (correction_to_brief) already names this as the table used from 2005 to 2018. The values for seeds 4-6 match the 2005 reports exactly, the 2-3 tie average matches 17.7%, and the sum is 1,000.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery (lottery winners table with combinations, 2005-2018)",
+    "https://www.nysun.com/article/sports-sports-desk-2005-05-25 (via search-engine extract: sixth seed 6.3%)",
+    "https://hoopsrumors.com/2016/08/poll-2005-nba-draft-take-two-pick-no-14.html and contemporaneous 2005 coverage surfaced by search (17.7% tied seeds 2-3, 11.9%, 8.8%, 6.3% for seeds 4-6); the 2005 NBA.com odds page itself could not be retrieved"
+   ],
+   "chances_no2_no3": "NBA.com also publishes No. 2/No. 3 chances per club; these follow from the drawing procedure (sequential draw without the previous winners) and can be computed from the combination counts."
+  },
+  "ties": {
+   "rule": "Clubs with identical records split the combinations of the seeds they occupy equally (average). If the average is not an integer, a random drawing decides which club gets the extra combination. That same drawing decides which tied club picks earlier if neither wins a top-3 pick, and the order of the tied clubs is reversed in the second round.",
+   "status": "sourced (averaging and drawing, general rule); derived (second-round reversal)",
+   "timing": "Ties were broken by random drawing shortly after the regular season, before the lottery (2004: April 15; the 2005 drawing date is unverified).",
+   "timing_status": "unverified for 2005",
+   "sources": [
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery",
+    "https://www.nbcsports.com/nba/news/draft-ties-broken-let-lotto-fever-begin"
+   ],
+   "second_round_reversal_evidence": "Same evidence as nba_2004_lottery_rules.json: in the 2003 draft two clubs tied at 37-45 picked 9th and 10th in round 1 and in the opposite order in round 2 (https://en.wikipedia.org/wiki/2003_NBA_draft). No 2005-specific rule text found: status derived. (The 2005 draft table shows the same reversal for a tied pair; that real outcome is deliberately not recorded.)"
+  },
+  "no_drop_more_than": {
+   "rule": "Clubs not winning a top-3 pick select in inverse order of regular-season record after the three winners, so no club falls more than three places: seed k picks no lower than min(k + 3, 14).",
+   "status": "derived (three drawn picks, no fixed expansion slot in 2005)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery"
+   ]
+  },
+  "non_lottery_and_second_round": {
+   "first_round_15_on": "Playoff clubs pick after the lottery in inverse order of regular-season record (playoff results do not matter), ties by random drawing. In 2005 these were picks 15-30: the first round had 30 selections (no forfeited pick).",
+   "first_round_status": "sourced (30 first-round picks, Wikipedia/BBR 2005 draft tables); derived (no forfeit: Minnesota made its own 2005 first-round selection, so its 2000 salary-cap sanction did not reach 2005)",
+   "second_round": "All 30 clubs pick in inverse order of regular-season record; the lottery does not affect round 2. Tied clubs reverse their round-1 order.",
+   "second_round_status": "sourced (inverse record, lottery not applied: NBC Sports/NBA explainer); derived (tie reversal)",
+   "sources": [
+    "https://www.nbcsports.com/nba/news/draft-ties-broken-let-lotto-fever-begin",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/draft/NBA_2005.html"
+   ]
+  },
+  "traded_picks": {
+   "rule": "A traded lottery pick keeps the original club's seed and combinations; a non-playoff club holding another lottery club's pick gets both seeds' combinations. Protected picks stay with the original club when the drawn or record slot falls inside the protection (nba_2005_pick_ownership.json).",
+   "status": "sourced",
+   "source": "https://en.wikipedia.org/wiki/NBA_draft_lottery"
+  },
+  "larry_coon_cbafaq": {
+   "status": "unverified",
+   "note": "Coon's 2005-CBA Salary Cap FAQ (www.cbafaq.com/salarycap05.htm) covers draft-pick trading but not lottery odds, tie-breaks or draft order; the lottery is governed by the NBA (Board of Governors), not the CBA. Nothing taken from it."
+  },
+  "hindsight_warning": "The New York Sun report, Wikipedia's 2005 NBA draft and lottery pages, the Hoops Rumors poll and the search extracts contain the real 2004-05 records, seedings and lottery winners. None of those results is recorded here; the club percentages were used only to confirm seed combination counts."
+ }
+}
