@@ -662,6 +662,9 @@ def validate():
     from runtime.contracts import contract_errors
     errors.extend(contract_errors(ROOT))
 
+    from runtime.continuity import errors as continuity_errors          # contracts, clubs, players, numbers across seasons
+    errors.extend(continuity_errors(ROOT))
+
     from runtime.trajectories import trajectory_errors
     errors.extend(trajectory_errors(ROOT))
 

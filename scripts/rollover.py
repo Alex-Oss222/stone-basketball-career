@@ -34,6 +34,10 @@ def finish():
     if number and latest.get("jersey") != number:
         signing.player_status_snapshot(writer, day, f"jersey ({source})", jersey=number)
         writer.commit()
+    from runtime.continuity import errors as continuity_errors
+    problems = continuity_errors(ROOT)                   # contracts, clubs, players and numbers carried intact
+    if problems:
+        raise SystemExit("continuity check failed after the rollover:\n" + "\n".join(problems))
     pages = season_pages.write(signing.SEASON, day, ROOT)
     print(f"{len(pages)} statistics and award pages written for {signing.SEASON}")
     from runtime import write_back

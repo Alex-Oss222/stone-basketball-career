@@ -42,6 +42,8 @@ Organization files record basketball decision makers only. Business-side staff a
 
 Roster means the current team-control register at the stated date. Expiring contracts, pending options, draft rights and unavailable players must be labeled rather than silently treated as guaranteed active players.
 
+Contracts, clubs, players and uniform numbers carry across seasons intact (`runtime/continuity.py`, `python scripts/audit_continuity.py`): a carried contract keeps its signed schedule and is never re-dated, no player under contract disappears without a record, no player is on two clubs, identities stay fixed, and every active Miami player has a unique number with Wade's matching his dated identity. Validation and the rollover refuse any break.
+
 Depth chart is a working basketball view, not a user choice and not a promise of minutes. At the June 26 checkpoint it carries the just-completed 2002-03 positional order and leaves the two new draft picks unassigned until the coaching staff makes a new decision.
 
 During the regular season, the staff reviews the roster every fourteen days after its dated camp decision. Run `scripts/review_rotation.py` before building games past a due review. Rank closed production per minute blended with fixed preseason estimates; use the engine's journaled starting-battle decisions when the leaders are close. Apply the same rule to Eddie Jones, Wade and every other player, without a seniority or draft-slot bonus. Save each new rotation under its review date and preserve earlier requests/results. Actual injury replacement starts count toward GS and the established season-close standing rule. See `docs/front_office.md`, Fortnightly staff rotation reviews.
