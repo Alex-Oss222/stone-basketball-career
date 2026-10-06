@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at SF, staff plan 7 minutes (staff rotation dated 2004-12-09, [record](../Depth_Chart/Reviews/2004-12-09/rotation.json)).
+**Role:** Rotation at SF, staff plan 8 minutes (staff rotation dated 2004-12-23, [record](../Depth_Chart/Reviews/2004-12-23/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -33,11 +33,12 @@ Unassessed.
 | 2004-11-11 | Staff rotation of 2004-11-11: rotation at SF, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-11/rotation.json) |
 | 2004-11-25 | Staff rotation of 2004-11-25: rotation at SF, staff plan 9 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-25/rotation.json) |
 | 2004-12-09 | Staff rotation of 2004-12-09: rotation at SF, staff plan 7 minutes. | [Rotation](../Depth_Chart/Reviews/2004-12-09/rotation.json) |
+| 2004-12-23 | Staff rotation of 2004-12-23: rotation at SF, staff plan 8 minutes. | [Rotation](../Depth_Chart/Reviews/2004-12-23/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../../../../career/Dwyane_Wade/2003-04/10_Free_Agency/free_agency_2004.json).
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-12-09.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-12-23.
 
 <!-- yearly-statistics:start -->
 
@@ -49,7 +50,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2004-05 | MIA | 24 | 1 | 8.2 | 3.3 | 1.4 | 0.8 | 0.3 | 0.2 | 0.8 | 39.0% | 28.6% | 80.0% |
+| 2004-05 | MIA | 25 | 1 | 8.3 | 3.3 | 1.4 | 0.8 | 0.3 | 0.2 | 0.7 | 38.8% | 26.7% | 80.0% |
 
 Source: 2003-04 from closed simulated results (`Stats_and_Awards/League/2003-04/season_totals.json`); 2004-05 from closed Miami game results.
 

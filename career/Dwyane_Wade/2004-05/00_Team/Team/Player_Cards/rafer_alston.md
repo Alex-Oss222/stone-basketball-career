@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at PG, staff plan 11 minutes (staff rotation dated 2004-12-09, [record](../Depth_Chart/Reviews/2004-12-09/rotation.json)).
+**Role:** Rotation at PG, staff plan 15 minutes (staff rotation dated 2004-12-23, [record](../Depth_Chart/Reviews/2004-12-23/rotation.json)).
 
 **Offense:** Unassessed by Miami's staff; prior production is in the statistics below.
 
@@ -33,11 +33,12 @@ Unassessed.
 | 2004-11-11 | Staff rotation of 2004-11-11: rotation at PG, staff plan 12 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-11/rotation.json) |
 | 2004-11-25 | Staff rotation of 2004-11-25: rotation at PG, staff plan 11 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-25/rotation.json) |
 | 2004-12-09 | Staff rotation of 2004-12-09: rotation at PG, staff plan 11 minutes. | [Rotation](../Depth_Chart/Reviews/2004-12-09/rotation.json) |
+| 2004-12-23 | Staff rotation of 2004-12-23: rotation at PG, staff plan 15 minutes. | [Rotation](../Depth_Chart/Reviews/2004-12-23/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:** [signing record](../../../04_Training_Camp/camp_roster.json), 2003-04 simulated season totals.
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-12-09.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-12-23.
 
 <!-- yearly-statistics:start -->
 
@@ -50,7 +51,7 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2003-04 | Toronto Raptors | 47 | 10 | 23.5 | 8.5 | 3.1 | 2.9 | 1.2 | 0.1 | 1.5 | 0.379 | 0.354 | 0.776 |
-| 2004-05 | MIA | 26 | 1 | 13.6 | 6.0 | 1.1 | 2.2 | 0.7 | 0.1 | 1.0 | 38.8% | 26.3% | 80.9% |
+| 2004-05 | MIA | 27 | 1 | 13.9 | 6.2 | 1.2 | 2.3 | 0.7 | 0.1 | 1.0 | 40.0% | 30.0% | 79.2% |
 
 Source: 2003-04 from closed simulated results (`Stats_and_Awards/League/2003-04/season_totals.json`); 2004-05 from closed Miami game results.
 

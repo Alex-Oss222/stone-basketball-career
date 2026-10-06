@@ -20,7 +20,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Starter at PG, staff plan 34 minutes (staff rotation dated 2004-12-09, [record](../Depth_Chart/Reviews/2004-12-09/rotation.json)).
+**Role:** Starter at PG, staff plan 34 minutes (staff rotation dated 2004-12-23, [record](../Depth_Chart/Reviews/2004-12-23/rotation.json)).
 
 **Offense:** In 2002-03: 7.8 points and 3.2 assists per game; 46.9% true shooting at 20.6% usage.
 
@@ -78,6 +78,7 @@ Contract pages follow the current career date; this personnel assessment retains
 | 2004-11-11 | Staff rotation of 2004-11-11: starter at PG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-11/rotation.json) |
 | 2004-11-25 | Staff rotation of 2004-11-25: starter at PG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-25/rotation.json) |
 | 2004-12-09 | Staff rotation of 2004-12-09: starter at PG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-12-09/rotation.json) |
+| 2004-12-23 | Staff rotation of 2004-12-23: starter at PG, staff plan 34 minutes. | [Rotation](../Depth_Chart/Reviews/2004-12-23/rotation.json) |
 
 ## Sources and uncertainty
 
@@ -85,7 +86,7 @@ Contract pages follow the current career date; this personnel assessment retains
   - [Miami roster/control register](../Roster/roster.json)
   - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
   - https://www.basketball-reference.com/players/j/jamesmi01.html
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-12-09.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-12-23.
 
 <!-- yearly-statistics:start -->
 
@@ -93,13 +94,13 @@ Contract pages follow the current career date; this personnel assessment retains
 
 G and GS are counts. MIN and all other counting statistics are per game. Percentages use total makes divided by total attempts.
 
-**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 79 closed Miami game(s) through 2004-09-30; 2004-05: 26 closed Miami game(s) through 2004-12-23.
+**Coverage:** 2002-03 regular season imported. Earlier seasons are not yet imported; 2003-04: 79 closed Miami game(s) through 2004-09-30; 2004-05: 27 closed Miami game(s) through 2004-12-23.
 
 | Season | Team(s) | G | GS | MIN | PTS | REB | AST | STL | BLK | TOV | FG% | 3P% | FT% |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 2002-03 | MIA | 78 | 8 | 22.1 | 7.8 | 1.9 | 3.2 | 0.8 | 0.1 | 1.4 | 37.3% | 29.4% | 73.2% |
 | 2003-04 | MIA | 79 | 79 | 36.9 | 12.1 | 4.1 | 5.5 | 1.9 | 0.2 | 2.0 | 41.3% | 34.1% | 76.9% |
-| 2004-05 | MIA | 26 | 26 | 34.3 | 16.0 | 3.9 | 4.2 | 1.2 | 0.2 | 2.5 | 45.3% | 35.8% | 76.3% |
+| 2004-05 | MIA | 27 | 27 | 34.5 | 15.9 | 3.9 | 4.3 | 1.1 | 0.2 | 2.5 | 44.6% | 34.5% | 76.2% |
 
 <!-- veteran-details:start -->
 ### Additional statistics

@@ -652,7 +652,8 @@ Open a position to see every tracked player. G and GS are counts; MP and countin
 | [Samuel Dalembert](../../Players/dalemsa01.md) | 23 | PHI | NBA | C | 13 | 13 | 32.0 | 4.7 | 9.3 | .504 | 0.1 | 0.2 | .333 | 4.6 | 9.1 | .508 | .508 | 1.2 | 2.0 | .577 | 2.4 | 5.6 | 8.0 | 1.2 | 0.7 | 2.1 | 2.5 | 3.3 | 10.6 | .521 |
 | [Zendon Hamilton](../../Players/hamilze01.md) | 29 | PHI | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | [Mario Kasun](../../Players/kasunma01.md) | 24 | ORL | NBA | C | 7 | 0 | 4.2 | 0.6 | 1.1 | .500 | 0.1 | 0.1 | 1.000 | 0.4 | 1.0 | .429 | .562 | 0.4 | 0.9 | .500 | 0.3 | 1.0 | 1.3 | 0.0 | 0.0 | 0.1 | 0.1 | 0.4 | 1.7 | .564 |
-| [John Edwards](../../Players/edwarjo01.md) | N/A | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [John Edwards](../../Players/edwarjo01.md) | 23 | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| [John Thomas](../../Players/thomajo02.md) | N/A | MIA | NBA | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 </details>
 

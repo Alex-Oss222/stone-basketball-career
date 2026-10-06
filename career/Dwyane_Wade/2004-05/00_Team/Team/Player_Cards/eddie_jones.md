@@ -14,7 +14,7 @@ Contract pages follow the current career date; this personnel assessment retains
 
 ## Scouting report
 
-**Role:** Rotation at SG, staff plan 4 minutes (staff rotation dated 2004-12-09, [record](../Depth_Chart/Reviews/2004-12-09/rotation.json)). On the injured list since 2004-12-15 (injury: 2 more game(s) out on the engine's draw).
+**Role:** Rotation at SG, staff plan 4 minutes (staff rotation dated 2004-12-23, [record](../Depth_Chart/Reviews/2004-12-23/rotation.json)). On the injured list since 2004-12-15 (injury: 2 more game(s) out on the engine's draw).
 
 **Offense:** In 2002-03: 18.5 points and 3.7 assists per game; 55.1% true shooting at 23.0% usage.
 
@@ -73,13 +73,14 @@ Contract pages follow the current career date; this personnel assessment retains
 | 2004-11-25 | Staff rotation of 2004-11-25: rotation at SG, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2004-11-25/rotation.json) |
 | 2004-12-09 | Staff rotation of 2004-12-09: rotation at SG, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2004-12-09/rotation.json) |
 | December 13, 2004 | Injured (day-to-day) in event `2004-12-13-washington-wizards-at-miami-heat`: out 2 games; the game builder leaves him out of Miami's next 2 games. No grade change. | [Game 4 result](../../../06_Regular_Season/12_December/Week_2/Game_4.md) |
+| 2004-12-23 | Staff rotation of 2004-12-23: rotation at SG, staff plan 4 minutes. | [Rotation](../Depth_Chart/Reviews/2004-12-23/rotation.json) |
 
 ## Sources and uncertainty
 
 - **Assessment evidence:**  
   - [Miami roster/control register](../Roster/roster.json)
   - [2003 end-of-season league source](../../../../../../library/2003/league/nba_2003_end_of_season.json)
-- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-12-09.
+- **Not yet established:** closing role and Miami staff grades beyond the camp review. Rotation role and minute target: staff rotation dated 2004-12-23.
 
 <!-- yearly-statistics:start -->
 

@@ -10,19 +10,19 @@
 | [Brian Grant](../Player_Cards/brian_grant.md) | C/PF | under contract | Available | starter at C, staff plan 34 minutes |
 | [Mike James](../Player_Cards/mike_james.md) | PG | under contract | Available | starter at PG, staff plan 34 minutes |
 | [Mehmet Okur](../Player_Cards/mehmet_okur.md) | PF | under contract | Available | starter at PF, staff plan 34 minutes |
-| [Dwyane Wade](../Player_Cards/dwyane_wade.md) | SG/PG | under contract | Available | starter at SG, staff plan 38 minutes |
+| [Dwyane Wade](../Player_Cards/dwyane_wade.md) | SG/PG | under contract | Injured list since 2004-12-23, injured | starter at SG, staff plan 37 minutes |
 | [Caron Butler](../Player_Cards/caron_butler.md) | SF | under contract | Available | starter at SF, staff plan 34 minutes |
-| [Kendall Gill](../Player_Cards/kendall_gill.md) | SG | under contract | Available | rotation at SG, staff plan 9 minutes |
-| [Dorell Wright](../Player_Cards/dorell_wright.md) | SF | under contract | Available | rotation at SF, staff plan 7 minutes |
-| [John Thomas](../Player_Cards/john_thomas.md) | C | under contract | Injured list since 2004-11-03, inactive reserve | reserve outside the planned rotation |
+| [Kendall Gill](../Player_Cards/kendall_gill.md) | SG | under contract | Available | rotation at SG, staff plan 11 minutes |
+| [Dorell Wright](../Player_Cards/dorell_wright.md) | SF | under contract | Available | rotation at SF, staff plan 8 minutes |
+| [John Thomas](../Player_Cards/john_thomas.md) | C | under contract | Available | reserve outside the planned rotation |
 | [Maurice Evans](../Player_Cards/maurice_evans.md) | SG | under contract | Available | reserve outside the planned rotation |
 | [Maurice Baker](../Player_Cards/maurice_baker.md) | PG | under contract | Available | reserve outside the planned rotation |
 | [John Edwards](../Player_Cards/john_edwards.md) | C | under contract | Available | reserve outside the planned rotation |
 | [Bernard Robinson](../Player_Cards/bernard_robinson.md) | SG | unsigned draft rights | Available | reserve outside the planned rotation |
 | [Christian Drejer](../Player_Cards/christian_drejer.md) | SF | unsigned draft rights | Available | reserve outside the planned rotation |
-| [Rafer Alston](../Player_Cards/rafer_alston.md) | PG | camp contract | Available | rotation at PG, staff plan 11 minutes |
-| [Donyell Marshall](../Player_Cards/donyell_marshall.md) | PF | under contract | Available | reserve outside the planned rotation |
-| [Lamond Murray](../Player_Cards/lamond_murray.md) | SF | under contract | Injured list since 2004-12-21, inactive reserve | reserve outside the planned rotation |
+| [Rafer Alston](../Player_Cards/rafer_alston.md) | PG | camp contract | Available | rotation at PG, staff plan 15 minutes |
+| [Donyell Marshall](../Player_Cards/donyell_marshall.md) | PF | under contract | Available | rotation at PF, staff plan 19 minutes |
+| [Lamond Murray](../Player_Cards/lamond_murray.md) | SF | under contract | Injured list since 2004-12-21, inactive reserve | rotation at SF, staff plan 10 minutes |
 
 Players whose contracts ended, were released or voided remain in roster.json with their labels as history.
 
