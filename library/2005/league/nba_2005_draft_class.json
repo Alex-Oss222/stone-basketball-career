@@ -1,0 +1,1393 @@
+{
+ "schema_version": 1,
+ "league": "NBA",
+ "kind": "draft_class",
+ "season": "2005",
+ "purpose": "The real 2005 NBA Draft (June 28, 2005) as world data: picks, original owners and draft-night rights moves. Usable only from the draft date; a real Miami pick or trade is skipped (AGENTS.md rule 1) and simulated Miami picks on its own.",
+ "available_from": "2005-06-28",
+ "date": {
+  "value": "2005-06-28",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2005_NBA_draft"
+  ]
+ },
+ "location": {
+  "value": "The Theater at Madison Square Garden, New York City",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2005_NBA_draft"
+  ]
+ },
+ "total_picks": {
+  "value": 60,
+  "note": "30 first-round and 30 second-round picks (no forfeited pick)",
+  "status": "sourced",
+  "sources": [
+   "https://www.basketball-reference.com/draft/NBA_2005.html",
+   "https://en.wikipedia.org/wiki/2005_NBA_draft"
+  ]
+ },
+ "lottery": {
+  "date": {
+   "value": "2005-05-24",
+   "status": "sourced",
+   "sources": [
+    "library/2005/league/nba_2005_lottery_rules.json (research.event)"
+   ]
+  },
+  "lottery_teams": 14,
+  "winner": {
+   "value": "MIL",
+   "note": "Milwaukee won from the sixth seed (6.3% chance)",
+   "status": "sourced",
+   "sources": [
+    "https://www.nysun.com/article/sports-sports-desk-2005-05-25 (search-engine extract)",
+    "https://en.wikipedia.org/wiki/NBA_draft_lottery"
+   ]
+  },
+  "charlotte": {
+   "value": "Charlotte took part in the 2005 lottery as an ordinary club (no fixed slot); expansion terms had fixed only its 2004 position.",
+   "status": "sourced",
+   "sources": [
+    "https://www.deseret.com/2002/12/21/19695058/draft-rules-favorable-for-charlotte-franchise/"
+   ]
+  },
+  "draft_order_result_picks_1_to_14": [
+   {
+    "pick": 1,
+    "club": "MIL"
+   },
+   {
+    "pick": 2,
+    "club": "ATL"
+   },
+   {
+    "pick": 3,
+    "club": "POR"
+   },
+   {
+    "pick": 4,
+    "club": "NOH"
+   },
+   {
+    "pick": 5,
+    "club": "CHA"
+   },
+   {
+    "pick": 6,
+    "club": "UTA"
+   },
+   {
+    "pick": 7,
+    "club": "TOR"
+   },
+   {
+    "pick": 8,
+    "club": "NYK"
+   },
+   {
+    "pick": 9,
+    "club": "GSW"
+   },
+   {
+    "pick": 10,
+    "club": "LAL"
+   },
+   {
+    "pick": 11,
+    "club": "ORL"
+   },
+   {
+    "pick": 12,
+    "club": "LAC"
+   },
+   {
+    "pick": 13,
+    "club": "CLE"
+   },
+   {
+    "pick": 14,
+    "club": "MIN"
+   }
+  ],
+  "draft_order_status": "Picks 1-14 by original owner: Milwaukee's win sourced; the rest derived from the Wikipedia/BBR draft table (Nos. 3 and 6 were swapped between Portland and Utah on draft day, so their original owners are listed). Pick 13 is Cleveland's slot (owned by Charlotte via Phoenix).",
+  "pre_lottery_odds_by_team": {
+   "value": null,
+   "status": "unverified",
+   "note": "Only seed-level odds were confirmed (nba_2005_lottery_rules.json); club-by-club odds are real-season hindsight and not recorded."
+  }
+ },
+ "picks": [
+  {
+   "overall": 1,
+   "round": 1,
+   "selecting_club": "MIL",
+   "original_owner": "MIL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Andrew Bogut",
+   "bbr_id": "bogutan01",
+   "position": "C",
+   "college_or_club": "Utah (So.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "MIL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 2,
+   "round": 1,
+   "selecting_club": "ATL",
+   "original_owner": "ATL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Marvin Williams",
+   "bbr_id": "willima02",
+   "position": "F",
+   "college_or_club": "North Carolina (Fr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "ATL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 3,
+   "round": 1,
+   "selecting_club": "UTA",
+   "original_owner": "POR",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "POR -> UTA (June 28, 2005, hours before the draft: Utah sent Nos. 6 and 27 and a 2006 first-round pick).",
+   "player": "Deron Williams",
+   "bbr_id": "willide01",
+   "position": "PG",
+   "college_or_club": "Illinois (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "UTA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 4,
+   "round": 1,
+   "selecting_club": "NOH",
+   "original_owner": "NOH",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Chris Paul",
+   "bbr_id": "paulch01",
+   "position": "PG",
+   "college_or_club": "Wake Forest (So.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "NOH",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 5,
+   "round": 1,
+   "selecting_club": "CHA",
+   "original_owner": "CHA",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Raymond Felton",
+   "bbr_id": "feltora01",
+   "position": "PG",
+   "college_or_club": "North Carolina (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "CHA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 6,
+   "round": 1,
+   "selecting_club": "POR",
+   "original_owner": "UTA",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "UTA -> POR (June 28, 2005, the same pre-draft swap for No. 3).",
+   "player": "Martell Webster",
+   "bbr_id": "webstma02",
+   "position": "G/F",
+   "college_or_club": "Seattle Prep. School (Seattle)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "POR",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 7,
+   "round": 1,
+   "selecting_club": "TOR",
+   "original_owner": "TOR",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Charlie Villanueva",
+   "bbr_id": "villach01",
+   "position": "F",
+   "college_or_club": "Connecticut (So.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "TOR",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 8,
+   "round": 1,
+   "selecting_club": "NYK",
+   "original_owner": "NYK",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Channing Frye",
+   "bbr_id": "fryech01",
+   "position": "C",
+   "college_or_club": "Arizona (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "NYK",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 9,
+   "round": 1,
+   "selecting_club": "GSW",
+   "original_owner": "GSW",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Ike Diogu",
+   "bbr_id": "dioguik01",
+   "position": "F",
+   "college_or_club": "Arizona State (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "GSW",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 10,
+   "round": 1,
+   "selecting_club": "LAL",
+   "original_owner": "LAL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Andrew Bynum",
+   "bbr_id": "bynuman01",
+   "position": "C",
+   "college_or_club": "St. Joseph HS (Metuchen, New Jersey)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "LAL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 11,
+   "round": 1,
+   "selecting_club": "ORL",
+   "original_owner": "ORL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Fran Vázquez",
+   "bbr_id": "vazqufr01",
+   "position": "F/C",
+   "college_or_club": "Unicaja Málaga (Spain)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "ORL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 12,
+   "round": 1,
+   "selecting_club": "LAC",
+   "original_owner": "LAC",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Yaroslav Korolev",
+   "bbr_id": "korolya01",
+   "position": "F",
+   "college_or_club": "CSKA Moscow (Russia)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "LAC",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 13,
+   "round": 1,
+   "selecting_club": "CHA",
+   "original_owner": "CLE",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "CLE -> PHO (Oct 1, 1997, Antonio McDyess three-team trade; lottery-protected); PHO -> CHA (June 22, 2004, for selecting Jahidi White in the expansion draft); protection removed in Cleveland's Feb 24, 2005 Jiri Welsch trade.",
+   "player": "Sean May",
+   "bbr_id": "mayse01",
+   "position": "F",
+   "college_or_club": "North Carolina (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "CHA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 14,
+   "round": 1,
+   "selecting_club": "MIN",
+   "original_owner": "MIN",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Rashad McCants",
+   "bbr_id": "mccanra01",
+   "position": "G",
+   "college_or_club": "North Carolina (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "MIN",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 15,
+   "round": 1,
+   "selecting_club": "NJN",
+   "original_owner": "NJN",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Antoine Wright",
+   "bbr_id": "wrighan01",
+   "position": "G/F",
+   "college_or_club": "Texas A&M (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "NJN",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 16,
+   "round": 1,
+   "selecting_club": "TOR",
+   "original_owner": "PHI",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "PHI -> GSW (Oct 25, 2001); GSW -> PHI (June 26, 2002, Jiri Welsch); PHI -> DEN (Dec 18, 2002, Kenny Thomas three-team trade; protected 1-8 in 2005); DEN -> NJN (July 15, 2004, Kenyon Martin); NJN -> TOR (Dec 17, 2004, Vince Carter).",
+   "player": "Joey Graham",
+   "bbr_id": "grahajo01",
+   "position": "F",
+   "college_or_club": "Oklahoma State (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "TOR",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 17,
+   "round": 1,
+   "selecting_club": "IND",
+   "original_owner": "IND",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Danny Granger",
+   "bbr_id": "grangda01",
+   "position": "SF",
+   "college_or_club": "New Mexico (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "IND",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 18,
+   "round": 1,
+   "selecting_club": "BOS",
+   "original_owner": "BOS",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Gerald Green",
+   "bbr_id": "greenge01",
+   "position": "G/F",
+   "college_or_club": "Gulf Shores Academy (Houston, Texas)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "BOS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 19,
+   "round": 1,
+   "selecting_club": "MEM",
+   "original_owner": "MEM",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Hakim Warrick",
+   "bbr_id": "warriha01",
+   "position": "F",
+   "college_or_club": "Syracuse (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "MEM",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 20,
+   "round": 1,
+   "selecting_club": "DEN",
+   "original_owner": "WAS",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "WAS -> ORL (Aug 1, 2001, Brendan Haywood; protected 1-13 in 2005); ORL -> DEN (June 24, 2004, Jameer Nelson's draft rights).",
+   "player": "Julius Hodge",
+   "bbr_id": "hodgeju01",
+   "position": "G",
+   "college_or_club": "NC State (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "DEN",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 21,
+   "round": 1,
+   "selecting_club": "PHO",
+   "original_owner": "CHI",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "CHI -> PHO (June 24, 2004, Luol Deng's draft rights; protected 1-3 in 2005).",
+   "player": "Nate Robinson",
+   "bbr_id": "robinna01",
+   "position": "G",
+   "college_or_club": "Washington (Jr.)",
+   "draft_night_rights_move": {
+    "to_club": "NYK",
+    "note": "Draft day: Phoenix traded Robinson's rights with Quentin Richardson to New York for Kurt Thomas and the rights to No. 54 Dijon Thompson.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "NYK",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 22,
+   "round": 1,
+   "selecting_club": "DEN",
+   "original_owner": "DEN",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Jarrett Jack",
+   "bbr_id": "jackja01",
+   "position": "G",
+   "college_or_club": "Georgia Tech (Jr.)",
+   "draft_night_rights_move": {
+    "to_club": "POR",
+    "note": "Draft day: Denver traded Jack's rights to Portland for the rights to No. 27 Linas Kleiza and No. 35 Ricky Sanchez.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "POR",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 23,
+   "round": 1,
+   "selecting_club": "SAC",
+   "original_owner": "SAC",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Francisco García",
+   "bbr_id": "garcifr01",
+   "position": "G/F",
+   "college_or_club": "Louisville (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "SAC",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 24,
+   "round": 1,
+   "selecting_club": "HOU",
+   "original_owner": "HOU",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Luther Head",
+   "bbr_id": "headlu01",
+   "position": "G",
+   "college_or_club": "Illinois (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "HOU",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 25,
+   "round": 1,
+   "selecting_club": "SEA",
+   "original_owner": "SEA",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Johan Petro",
+   "bbr_id": "petrojo01",
+   "position": "C",
+   "college_or_club": "Pau-Orthez (France)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "SEA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 26,
+   "round": 1,
+   "selecting_club": "DET",
+   "original_owner": "DET",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Jason Maxiell",
+   "bbr_id": "maxieja01",
+   "position": "F",
+   "college_or_club": "Cincinnati (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "DET",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 27,
+   "round": 1,
+   "selecting_club": "POR",
+   "original_owner": "DAL",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "DAL -> UTA (June 24, 2004, Pavel Podkolzin's draft rights); UTA -> POR (June 28, 2005, part of the No. 3 / No. 6 swap).",
+   "player": "Linas Kleiza",
+   "bbr_id": "kleizli01",
+   "position": "F",
+   "college_or_club": "Missouri (So.)",
+   "draft_night_rights_move": {
+    "to_club": "DEN",
+    "note": "Draft day: Portland traded Kleiza's rights (with No. 35) to Denver for No. 22 Jarrett Jack.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "DEN",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 28,
+   "round": 1,
+   "selecting_club": "SAS",
+   "original_owner": "SAS",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Ian Mahinmi",
+   "bbr_id": "mahinia01",
+   "position": "F/C",
+   "college_or_club": "Le Havre (France)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "SAS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 29,
+   "round": 1,
+   "selecting_club": "MIA",
+   "original_owner": "MIA",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Wayne Simien",
+   "bbr_id": "simiewa01",
+   "position": "F",
+   "college_or_club": "Kansas (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "MIA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 30,
+   "round": 1,
+   "selecting_club": "NYK",
+   "original_owner": "PHO",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "PHO -> SAS (June 26, 2003, Leandro Barbosa's draft rights; protected 1-20 through 2008); SAS -> NYK (Feb 24, 2005, Nazr Mohammed / Malik Rose trade; Wikipedia dates it Feb 25).",
+   "player": "David Lee",
+   "bbr_id": "leeda02",
+   "position": "PF",
+   "college_or_club": "Florida (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "NYK",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 31,
+   "round": 2,
+   "selecting_club": "ATL",
+   "original_owner": "ATL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Salim Stoudamire",
+   "bbr_id": "stoudsa01",
+   "position": "G",
+   "college_or_club": "Arizona (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "ATL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 32,
+   "round": 2,
+   "selecting_club": "LAC",
+   "original_owner": "CHA",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "CHA -> LAC (July 14, 2004, Melvin Ely / Eddie House trade; BBR dates it 2004, Wikipedia's footnote prints July 14, 2005).",
+   "player": "Daniel Ewing",
+   "bbr_id": "ewingda01",
+   "position": "G",
+   "college_or_club": "Duke (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "LAC",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 33,
+   "round": 2,
+   "selecting_club": "NOH",
+   "original_owner": "NOH",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Brandon Bass",
+   "bbr_id": "bassbr01",
+   "position": "F",
+   "college_or_club": "LSU (So.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "NOH",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 34,
+   "round": 2,
+   "selecting_club": "UTA",
+   "original_owner": "UTA",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "C.J. Miles",
+   "bbr_id": "milescj01",
+   "position": "G",
+   "college_or_club": "Skyline HS (Dallas)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "UTA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 35,
+   "round": 2,
+   "selecting_club": "POR",
+   "original_owner": "POR",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Ricky Sánchez",
+   "bbr_id": "sanchri01",
+   "position": "F",
+   "college_or_club": "IMG Academy (Bradenton, Florida)",
+   "draft_night_rights_move": {
+    "to_club": "DEN",
+    "note": "Draft day: Portland traded Sanchez's rights (with No. 27) to Denver for No. 22 Jarrett Jack.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "DEN",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 36,
+   "round": 2,
+   "selecting_club": "MIL",
+   "original_owner": "MIL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Ersan İlyasova",
+   "bbr_id": "ilyaser01",
+   "position": "F",
+   "college_or_club": "Ülkerspor (Turkey)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "MIL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 37,
+   "round": 2,
+   "selecting_club": "LAL",
+   "original_owner": "NYK",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "NYK -> ATL (Feb 15, 2004, three-team trade with Milwaukee); ATL -> CHA (Aug 16, 2004, Predrag Drobnjak); CHA -> LAL (Dec 6, 2004, Kareem Rush).",
+   "player": "Ronny Turiaf",
+   "bbr_id": "turiaro01",
+   "position": "F",
+   "college_or_club": "Gonzaga (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "LAL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 38,
+   "round": 2,
+   "selecting_club": "ORL",
+   "original_owner": "TOR",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "TOR <-> ORL 2005 second-round exchange (Jan 2, 2004, Robert Archibald trade; Wikipedia describes an option to exchange, exercised).",
+   "player": "Travis Diener",
+   "bbr_id": "dienetr01",
+   "position": "G",
+   "college_or_club": "Marquette (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "ORL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 39,
+   "round": 2,
+   "selecting_club": "LAL",
+   "original_owner": "LAL",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Von Wafer",
+   "bbr_id": "wafervo01",
+   "position": "G",
+   "college_or_club": "Florida State (So.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "LAL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 40,
+   "round": 2,
+   "selecting_club": "GSW",
+   "original_owner": "GSW",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Monta Ellis",
+   "bbr_id": "ellismo01",
+   "position": "SG",
+   "college_or_club": "Lanier HS (Jackson, Mississippi)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "GSW",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 41,
+   "round": 2,
+   "selecting_club": "TOR",
+   "original_owner": "ORL",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "ORL <-> TOR 2005 second-round exchange (Jan 2, 2004).",
+   "player": "Roko Ukić",
+   "bbr_id": "ukicro01",
+   "position": "G",
+   "college_or_club": "KK Split (Croatia)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "TOR",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 42,
+   "round": 2,
+   "selecting_club": "GSW",
+   "original_owner": "LAC",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "LAC -> NJN (July 29, 2004, Kerry Kittles); NJN -> GSW (Feb 14, 2005, Clifford Robinson).",
+   "player": "Chris Taft",
+   "bbr_id": "taftch01",
+   "position": "F",
+   "college_or_club": "Pittsburgh (So.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "GSW",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 43,
+   "round": 2,
+   "selecting_club": "NJN",
+   "original_owner": "NJN",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Mile Ilić",
+   "bbr_id": "ilicmi01",
+   "position": "C",
+   "college_or_club": "KK Reflex (Serbia and Montenegro)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "NJN",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 44,
+   "round": 2,
+   "selecting_club": "ORL",
+   "original_owner": "CLE",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "CLE -> ORL (July 23, 2004, Drew Gooden / Anderson Varejao trade).",
+   "player": "Martynas Andriuškevičius",
+   "bbr_id": "andrima01",
+   "position": "C",
+   "college_or_club": "Žalgiris Kaunas (Lithuania)",
+   "draft_night_rights_move": {
+    "to_club": "CLE",
+    "note": "Draft day: Orlando traded Andriuskevicius's rights to Cleveland for a 2006 second-round pick.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "CLE",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 45,
+   "round": 2,
+   "selecting_club": "PHI",
+   "original_owner": "PHI",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Lou Williams",
+   "bbr_id": "willilo02",
+   "position": "SG",
+   "college_or_club": "South Gwinnett HS (Snellville, Georgia)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "PHI",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 46,
+   "round": 2,
+   "selecting_club": "IND",
+   "original_owner": "IND",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Erazem Lorbek",
+   "bbr_id": "lorbeer01",
+   "position": "F",
+   "college_or_club": "Climamio Bologna (Italy)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "IND",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 47,
+   "round": 2,
+   "selecting_club": "MIN",
+   "original_owner": "MIN",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Bracey Wright",
+   "bbr_id": "wrighbr02",
+   "position": "G",
+   "college_or_club": "Indiana (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "MIN",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 48,
+   "round": 2,
+   "selecting_club": "SEA",
+   "original_owner": "MEM",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "MEM -> SEA (June 24, 2004, Andre Emmett's draft rights).",
+   "player": "Mickaël Gelabale",
+   "bbr_id": "gelabmi01",
+   "position": "F",
+   "college_or_club": "Real Madrid (Spain)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "SEA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 49,
+   "round": 2,
+   "selecting_club": "WAS",
+   "original_owner": "WAS",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Andray Blatche",
+   "bbr_id": "blatcan01",
+   "position": "F",
+   "college_or_club": "South Kent School (South Kent, Connecticut)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "WAS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 50,
+   "round": 2,
+   "selecting_club": "BOS",
+   "original_owner": "BOS",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "BOS -> CLE (July 29, 2003, Jumaine Jones); CLE -> BOS (Dec 15, 2003, Ricky Davis / Tony Battie trade). Boston's own pick, back with Boston.",
+   "player": "Ryan Gomes",
+   "bbr_id": "gomesry01",
+   "position": "F",
+   "college_or_club": "Providence (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "BOS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 51,
+   "round": 2,
+   "selecting_club": "UTA",
+   "original_owner": "CHI",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "CHI -> HOU (Sept 28, 2000, Bryce Drew); HOU -> UTA (Sept 30, 2003, John Amaechi / Glen Rice trade).",
+   "player": "Robert Whaley",
+   "bbr_id": "whalero01",
+   "position": "C",
+   "college_or_club": "Walsh (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "UTA",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 52,
+   "round": 2,
+   "selecting_club": "DEN",
+   "original_owner": "DEN",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Axel Hervelle",
+   "bbr_id": "herveax01",
+   "position": "F",
+   "college_or_club": "Real Madrid (Spain)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "DEN",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 53,
+   "round": 2,
+   "selecting_club": "BOS",
+   "original_owner": "SAC",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "SAC -> BOS (June 2003, Darius Songaila's draft rights; BBR June 25, Wikipedia June 23).",
+   "player": "Orien Greene",
+   "bbr_id": "greenor01",
+   "position": "G",
+   "college_or_club": "Louisiana-Lafayette (Sr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "BOS",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 54,
+   "round": 2,
+   "selecting_club": "NYK",
+   "original_owner": "HOU",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "HOU -> NYK (June 11, 2003, compensation for coach Jeff Van Gundy).",
+   "player": "Dijon Thompson",
+   "bbr_id": "thompdi01",
+   "position": "G/F",
+   "college_or_club": "UCLA (Sr.)",
+   "draft_night_rights_move": {
+    "to_club": "PHO",
+    "note": "Draft day: New York traded Thompson's rights (with Kurt Thomas) to Phoenix in the Nate Robinson / Quentin Richardson trade.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "PHO",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 55,
+   "round": 2,
+   "selecting_club": "SEA",
+   "original_owner": "SEA",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Lawrence Roberts",
+   "bbr_id": "roberla01",
+   "position": "F",
+   "college_or_club": "Mississippi State (Sr.)",
+   "draft_night_rights_move": {
+    "to_club": "MEM",
+    "note": "Draft day: Seattle traded Roberts's rights to Memphis for 2006 and 2007 second-round picks and cash.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "MEM",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 56,
+   "round": 2,
+   "selecting_club": "DET",
+   "original_owner": "DET",
+   "pick_traded_before_draft": false,
+   "pick_acquisition": null,
+   "player": "Amir Johnson",
+   "bbr_id": "johnsam01",
+   "position": "F",
+   "college_or_club": "Westchester HS (Los Angeles)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "DET",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft"
+   ],
+   "original_owner_status": "derived: no pick-trade note in the Wikipedia table or the BBR transaction pages; treated as the club's own pick"
+  },
+  {
+   "overall": 57,
+   "round": 2,
+   "selecting_club": "PHO",
+   "original_owner": "DAL",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "DAL -> NOH (Dec 3, 2004, Darrell Armstrong); NOH -> PHO (Jan 21, 2005, Jim Jackson).",
+   "player": "Marcin Gortat",
+   "bbr_id": "gortama01",
+   "position": "F/C",
+   "college_or_club": "RheinEnergie Köln (Germany)",
+   "draft_night_rights_move": {
+    "to_club": "ORL",
+    "note": "Draft day: Phoenix traded Gortat's rights to Orlando for cash.",
+    "status": "sourced"
+   },
+   "rights_holder_end_of_draft_night": "ORL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 58,
+   "round": 2,
+   "selecting_club": "TOR",
+   "original_owner": "MIA",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "MIA -> TOR (June 24, 2004, Pape Sow / Albert Miralles draft-rights trade). A real Miami move: never applied in the simulation.",
+   "player": "Uroš Slokar",
+   "bbr_id": "slokaur01",
+   "position": "F",
+   "college_or_club": "Snaidero Udine (Italy)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "TOR",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 59,
+   "round": 2,
+   "selecting_club": "ATL",
+   "original_owner": "SAS",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "SAS -> ATL (June 24, 2004, Viktor Sanikidze's draft rights).",
+   "player": "Cenk Akyol",
+   "bbr_id": "akyolce01",
+   "position": "G",
+   "college_or_club": "Efes Pilsen (Turkey)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "ATL",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  },
+  {
+   "overall": 60,
+   "round": 2,
+   "selecting_club": "DET",
+   "original_owner": "PHO",
+   "pick_traded_before_draft": true,
+   "pick_acquisition": "PHO -> UTA (Feb 19, 2004, Keon Clark / Tom Gugliotta); UTA -> PHI (June 7, 2005, for a 2008 second); PHI -> DET (settling Philadelphia's Dec 18, 1997 obligation to send Detroit one 2003-2005 second-round pick of its choice).",
+   "player": "Alex Acker",
+   "bbr_id": "ackeral01",
+   "position": "G",
+   "college_or_club": "Pepperdine (Jr.)",
+   "draft_night_rights_move": null,
+   "rights_holder_end_of_draft_night": "DET",
+   "status": "sourced",
+   "sources": [
+    "https://www.basketball-reference.com/draft/NBA_2005.html",
+    "https://en.wikipedia.org/wiki/2005_NBA_draft",
+    "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html"
+   ]
+  }
+ ],
+ "post_draft_rights_moves_not_draft_night": [],
+ "post_draft_rights_moves_status": "none recorded: no post-draft (after June 28) rights trade of a 2005 pick was found in the sources read; unverified as complete",
+ "miami_summary": {
+  "value": "Miami picked No. 29 (Wayne Simien). Its own 2005 second-round pick (No. 58) had gone to Toronto in the June 24, 2004 Pape Sow / Albert Miralles deal, so Toronto selected Uros Slokar there. In this repository's simulation real Miami transactions are not applied (AGENTS.md rule 1), so simulated Miami keeps both of its own 2005 picks (nba_2005_pick_ownership.json).",
+  "status": "sourced",
+  "sources": [
+   "https://en.wikipedia.org/wiki/2005_NBA_draft",
+   "https://www.basketball-reference.com/draft/NBA_2005.html"
+  ]
+ },
+ "researched_on": "2026-10-06",
+ "sources": [
+  {
+   "url": "https://www.basketball-reference.com/draft/NBA_2005.html",
+   "use": "2005 draft pick order, drafting club, bbr_id, college (retrieved 2026-10-06)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/2005_NBA_draft",
+   "use": "draft date/location, positions, schools, pick provenance and draft-day trades (with its cited NBA.com team releases)"
+  },
+  {
+   "url": "https://www.basketball-reference.com/teams/<TEAM>/<YEAR>_transactions.html",
+   "use": "dates of every trade naming a 2005 pick, 1997-98 to 2004-05"
+  },
+  {
+   "url": "https://www.nbadraft.net/2005-traded-picks/",
+   "use": "pick protections"
+  }
+ ],
+ "notes": [
+  "Several Wikipedia source rows include later-career honors (All-Star, ROY, etc.); these were deliberately omitted.",
+  "Draft-night rights moves: 21 PHO->NYK, 22 DEN->POR, 27 POR->DEN, 35 POR->DEN, 44 ORL->CLE, 54 NYK->PHO, 55 SEA->MEM, 57 PHO->ORL.",
+  "Pre-draft pick trades made on draft day before the selections: Utah and Portland swapped Nos. 3 and 6 (Utah also sent No. 27 and a 2006 first-round pick).",
+  "Pick 32: BBR dates the Charlotte-Clippers trade July 14, 2004; Wikipedia's footnote prints July 14, 2005, which would postdate the draft. BBR (and the Melvin Ely / Eddie House move to Charlotte in the 2004 offseason) is followed.",
+  "Pick 60: Philadelphia owed Detroit one second-round pick of its choice from 2003-2005 (Dec 18, 1997); it settled with Phoenix's pick acquired from Utah on June 7, 2005 (BBR note).",
+  "Positions and schools are from Wikipedia; BBR does not list positions on its draft page.",
+  "All bbr_ids are as linked from basketball-reference.com's 2005 draft page; none were guessed."
+ ]
+}
