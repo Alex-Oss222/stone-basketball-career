@@ -1,0 +1,3510 @@
+{
+  "schema_version": 1,
+  "kind": "fiba_edition",
+  "slug": "olympics_2008",
+  "family": {
+    "value": "Olympics",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+  },
+  "stage_kind": {
+    "value": "Final_Tournament",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+  },
+  "edition": {
+    "value": 2008,
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+  },
+  "official_name": {
+    "value": "Basketball at the 2008 Summer Olympics – Men's tournament (Games of the XXIX Olympiad, Beijing)",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+  },
+  "hindsight_policy": "World data for the FIBA pipeline. Holds format, calendar and (where listed) real entry lists and squads only. No score, result, standing, award or statistic of this event is recorded. Real qualification routes and real group draws describe the real world; a simulated career must derive the field of any edition whose qualifiers it simulates from simulated results, and must not read this file before the dates given in known_from.",
+  "known_from": {
+    "field_complete": {
+      "value": "2008-07-20",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament (last qualification date in the qualification table)"
+    },
+    "group_draw": {
+      "value": null,
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "note": "draw date not stated in the source"
+    },
+    "note": "Group composition, including the three OQT qualifiers' placement, is real-world reference."
+  },
+  "host": {
+    "city": {
+      "value": "Beijing",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "country": {
+      "value": "China",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    }
+  },
+  "usa_participation": {
+    "took_part": {
+      "value": true,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "group": {
+      "value": "B",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "entry_route": {
+      "value": "2007 FIBA Americas Championship champion (qualified 1 September 2007)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "roster_kind": {
+      "value": "NBA players, head coach Mike Krzyzewski",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+    }
+  },
+  "dates": {
+    "start": {
+      "value": "2008-08-10",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "end": {
+      "value": "2008-08-24",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "time_zone": {
+      "value": "UTC+8 (China Standard Time)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "stages": [
+      {
+        "stage": "preliminary_round",
+        "name": "Preliminary round (two groups of six)",
+        "start": "2008-08-10",
+        "end": "2008-08-18",
+        "venues": [
+          "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "stage": "quarterfinal",
+        "name": "Quarterfinals",
+        "start": "2008-08-20",
+        "end": "2008-08-20",
+        "venues": [
+          "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "stage": "semifinal",
+        "name": "Semifinals",
+        "start": "2008-08-22",
+        "end": "2008-08-22",
+        "venues": [
+          "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "stage": "bronze_medal",
+        "name": "Bronze medal game",
+        "start": "2008-08-24",
+        "end": "2008-08-24",
+        "venues": [
+          "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "stage": "gold_medal",
+        "name": "Gold medal game",
+        "start": "2008-08-24",
+        "end": "2008-08-24",
+        "venues": [
+          "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      }
+    ],
+    "venues": [
+      {
+        "name": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+        "city": "Beijing",
+        "country": "China",
+        "stages": "all games",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      }
+    ]
+  },
+  "format": {
+    "teams": {
+      "value": 12,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "berth_allocation": {
+      "value": {
+        "host": 1,
+        "2006 World champion": 1,
+        "Africa": 1,
+        "Americas": 2,
+        "Asia": 1,
+        "Europe": 2,
+        "Oceania": 1,
+        "World Olympic Qualifying Tournament": 3
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    "groups": [
+      {
+        "group": "A",
+        "teams": 6,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "group": "B",
+        "teams": 6,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      }
+    ],
+    "rounds": [
+      {
+        "round": "preliminary_round",
+        "kind": "group_round_robin",
+        "games_per_team": 5,
+        "advance": "top 4 of each group to the quarterfinals",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "round": "quarterfinal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "round": "semifinal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "round": "bronze_medal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "round": "gold_medal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      }
+    ],
+    "bracket": [
+      {
+        "slot": "QF1",
+        "a": "A1",
+        "b": "B4",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "QF2",
+        "a": "B2",
+        "b": "A3",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "QF3",
+        "a": "B1",
+        "b": "A4",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "QF4",
+        "a": "A2",
+        "b": "B3",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "SF1",
+        "a": "W-QF1",
+        "b": "W-QF2",
+        "note": "A1/B4 v A3/B2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "SF2",
+        "a": "W-QF3",
+        "b": "W-QF4",
+        "note": "A4/B1 v A2/B3",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "3RD",
+        "a": "L-SF1",
+        "b": "L-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      {
+        "slot": "F",
+        "a": "W-SF1",
+        "b": "W-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      }
+    ],
+    "classification": {
+      "value": {
+        "1-4": "gold and bronze medal games",
+        "5-8": "quarterfinal losers ranked by preliminary-round record, then group standing (A3 above B4), then goal average in the group",
+        "9-10": "5th-placed group teams by record",
+        "11-12": "6th-placed group teams by record"
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "points": {
+      "win": {
+        "value": 2,
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament (not stated for 2008; FIBA points as stated for 2012)"
+      },
+      "loss": {
+        "value": 1,
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+      },
+      "loss_by_forfeit": {
+        "value": 0,
+        "status": "unverified",
+        "source": "FIBA rules as stated for the 2012 Olympics"
+      }
+    },
+    "tiebreak": {
+      "value": [
+        "head-to-head results",
+        "goal average (not difference) between the tied teams",
+        "goal average of the tied teams over all group games"
+      ],
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    "game_length": {
+      "periods": {
+        "value": 4,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "period_minutes": {
+        "value": 10,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "overtime_minutes": {
+        "value": 5,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "note": "The comparison page describes FIBA rules as of 2016; the per-edition rule books of this event were not opened. FIBA used 4 x 10 minutes throughout 2005-2014 (adopted 2000); that adoption date is not verified from a fetched source."
+    },
+    "court": {
+      "three_point_distance_m": {
+        "value": 6.25,
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html (FIBA press release, April 2008: new 6.75 m line and rectangular restricted area apply to high-level competitions as of 1 October 2010, i.e. after the 2010 FIBA World Championship)"
+      },
+      "restricted_area": {
+        "value": "trapezoid",
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      }
+    }
+  },
+  "teams": [
+    {
+      "team": "LTU",
+      "name": "Lithuania",
+      "group": "A",
+      "qualification_route": "EuroBasket 2007 3rd (runner-up Spain qualified separately); qualified 2007-09-16",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "team": "ARG",
+      "name": "Argentina",
+      "group": "A",
+      "qualification_route": "2007 FIBA Americas runner-up; 2007-09-01",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "team": "CRO",
+      "name": "Croatia",
+      "group": "A",
+      "qualification_route": "2008 FIBA World Olympic Qualifying Tournament; 2008-07-19",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "team": "AUS",
+      "name": "Australia",
+      "group": "A",
+      "qualification_route": "2007 FIBA Oceania champion; 2007-08-22",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "team": "RUS",
+      "name": "Russia",
+      "group": "A",
+      "qualification_route": "EuroBasket 2007 champion; 2007-09-15",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "team": "IRI",
+      "name": "Iran",
+      "group": "A",
+      "qualification_route": "2007 FIBA Asia champion; 2007-08-05",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "team": "USA",
+      "name": "United States",
+      "group": "B",
+      "qualification_route": "2007 FIBA Americas champion; 2007-09-01",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "team": "ESP",
+      "name": "Spain",
+      "group": "B",
+      "qualification_route": "2006 FIBA World champion; 2006-09-03",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "team": "GRE",
+      "name": "Greece",
+      "group": "B",
+      "qualification_route": "2008 FIBA World Olympic Qualifying Tournament; 2008-07-19",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "team": "CHN",
+      "name": "China",
+      "group": "B",
+      "qualification_route": "Olympic host; 2001-07-13",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "team": "GER",
+      "name": "Germany",
+      "group": "B",
+      "qualification_route": "2008 FIBA World Olympic Qualifying Tournament; 2008-07-20",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "team": "ANG",
+      "name": "Angola",
+      "group": "B",
+      "qualification_route": "2007 FIBA Africa champion; 2007-08-25",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    }
+  ],
+  "schedule": [
+    {
+      "game_id": "OLY08-01",
+      "date": "2008-08-10",
+      "time_local": "09:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "RUS",
+      "team_b": "IRI",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-02",
+      "date": "2008-08-10",
+      "time_local": "16:45",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "LTU",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-03",
+      "date": "2008-08-10",
+      "time_local": "20:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "AUS",
+      "team_b": "CRO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-04",
+      "date": "2008-08-12",
+      "time_local": "09:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "IRI",
+      "team_b": "LTU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-05",
+      "date": "2008-08-12",
+      "time_local": "11:15",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "CRO",
+      "team_b": "RUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-06",
+      "date": "2008-08-12",
+      "time_local": "22:15",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ARG",
+      "team_b": "AUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-07",
+      "date": "2008-08-14",
+      "time_local": "11:15",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "AUS",
+      "team_b": "IRI",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-08",
+      "date": "2008-08-14",
+      "time_local": "16:45",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "LTU",
+      "team_b": "RUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-09",
+      "date": "2008-08-14",
+      "time_local": "22:15",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ARG",
+      "team_b": "CRO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-10",
+      "date": "2008-08-16",
+      "time_local": "11:15",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "RUS",
+      "team_b": "AUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-11",
+      "date": "2008-08-16",
+      "time_local": "14:30",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "CRO",
+      "team_b": "LTU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-12",
+      "date": "2008-08-16",
+      "time_local": "16:45",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "IRI",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-13",
+      "date": "2008-08-18",
+      "time_local": "09:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "IRI",
+      "team_b": "CRO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-14",
+      "date": "2008-08-18",
+      "time_local": "11:15",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "AUS",
+      "team_b": "LTU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-15",
+      "date": "2008-08-18",
+      "time_local": "22:15",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ARG",
+      "team_b": "RUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-16",
+      "date": "2008-08-10",
+      "time_local": "11:15",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "GER",
+      "team_b": "ANG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-17",
+      "date": "2008-08-10",
+      "time_local": "14:30",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ESP",
+      "team_b": "GRE",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-18",
+      "date": "2008-08-10",
+      "time_local": "22:15",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "USA",
+      "team_b": "CHN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-19",
+      "date": "2008-08-12",
+      "time_local": "14:30",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "GRE",
+      "team_b": "GER",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-20",
+      "date": "2008-08-12",
+      "time_local": "16:45",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "CHN",
+      "team_b": "ESP",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-21",
+      "date": "2008-08-12",
+      "time_local": "20:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ANG",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-22",
+      "date": "2008-08-14",
+      "time_local": "09:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "GER",
+      "team_b": "ESP",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-23",
+      "date": "2008-08-14",
+      "time_local": "14:30",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ANG",
+      "team_b": "CHN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-24",
+      "date": "2008-08-14",
+      "time_local": "20:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "USA",
+      "team_b": "GRE",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-25",
+      "date": "2008-08-16",
+      "time_local": "09:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "GRE",
+      "team_b": "ANG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-26",
+      "date": "2008-08-16",
+      "time_local": "20:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "CHN",
+      "team_b": "GER",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-27",
+      "date": "2008-08-16",
+      "time_local": "22:15",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ESP",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-28",
+      "date": "2008-08-18",
+      "time_local": "14:30",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "GRE",
+      "team_b": "CHN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-29",
+      "date": "2008-08-18",
+      "time_local": "16:45",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "ANG",
+      "team_b": "ESP",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-30",
+      "date": "2008-08-18",
+      "time_local": "20:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "USA",
+      "team_b": "GER",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-31",
+      "date": "2008-08-20",
+      "time_local": "14:30",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF2",
+      "slot_a": "B2",
+      "slot_b": "A3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OLY08-32",
+      "date": "2008-08-20",
+      "time_local": "16:45",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF1",
+      "slot_a": "A1",
+      "slot_b": "B4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OLY08-33",
+      "date": "2008-08-20",
+      "time_local": "20:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF3",
+      "slot_a": "B1",
+      "slot_b": "A4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OLY08-34",
+      "date": "2008-08-20",
+      "time_local": "22:15",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF4",
+      "slot_a": "A2",
+      "slot_b": "B3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OLY08-35",
+      "date": "2008-08-22",
+      "time_local": "20:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "semifinal",
+      "bracket_slot": "SF1",
+      "slot_a": "W-QF1",
+      "slot_b": "W-QF2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OLY08-36",
+      "date": "2008-08-22",
+      "time_local": "22:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "semifinal",
+      "bracket_slot": "SF2",
+      "slot_a": "W-QF3",
+      "slot_b": "W-QF4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OLY08-37",
+      "date": "2008-08-24",
+      "time_local": "12:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "bronze_medal",
+      "bracket_slot": "3RD",
+      "slot_a": "L-SF1",
+      "slot_b": "L-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    },
+    {
+      "game_id": "OLY08-38",
+      "date": "2008-08-24",
+      "time_local": "14:00",
+      "venue": "Wukesong Indoor Stadium (Beijing Olympic Basketball Gymnasium)",
+      "stage": "gold_medal",
+      "bracket_slot": "F",
+      "slot_a": "W-SF1",
+      "slot_b": "W-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament"
+    }
+  ],
+  "rosters": {
+    "ARG": {
+      "team": "ARG",
+      "head_coach": {
+        "value": "Sergio Hernández",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Luis Scola",
+          "position": "F-C",
+          "birth_date": "1980-04-30",
+          "club": "Houston Rockets",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "scolalu01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page scolalu01 gives name \"Luis Scola\", birth 1980-04-30"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Houston Rockets"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Manu Ginóbili",
+          "position": "SG",
+          "birth_date": "1977-07-28",
+          "club": "San Antonio Spurs",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "ginobma01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page ginobma01 gives name \"Manu Ginóbili\", birth 1977-07-28"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "San Antonio Spurs"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Román González",
+          "position": "C",
+          "birth_date": "1978-01-28",
+          "club": "Peñarol",
+          "club_country": "Argentina",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Fabricio Oberto",
+          "position": "C",
+          "birth_date": "1975-03-21",
+          "club": "San Antonio Spurs",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "obertfa01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page obertfa01 gives name \"Fabricio Oberto\", birth 1975-03-21"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "San Antonio Spurs"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Pablo Prigioni",
+          "position": "PG",
+          "birth_date": "1977-05-17",
+          "club": "TAU Cerámica",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "prigipa01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page prigipa01 gives name \"Pablo Prigioni\", birth 1977-05-17"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Antonio Porta",
+          "position": "PG",
+          "birth_date": "1983-10-28",
+          "club": "Spartak Saint Petersburg",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Carlos Delfino",
+          "position": "SG",
+          "birth_date": "1982-08-29",
+          "club": "Khimki",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "delfica01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page delfica01 gives name \"Carlos Delfino\", birth 1982-08-29"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Toronto Raptors"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Paolo Quinteros",
+          "position": "PG",
+          "birth_date": "1979-01-15",
+          "club": "Basket Zaragoza",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Leonardo Gutiérrez",
+          "position": "PF",
+          "birth_date": "1978-05-16",
+          "club": "Atenas",
+          "club_country": "Argentina",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Andrés Nocioni",
+          "position": "SF",
+          "birth_date": "1979-11-30",
+          "club": "Chicago Bulls",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "nocioan01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page nocioan01 gives name \"Andrés Nocioni\", birth 1979-11-30"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Chicago Bulls"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Juan Pedro Gutiérrez",
+          "position": "C",
+          "birth_date": "1983-10-10",
+          "club": "Granada",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Federico Kammerichs",
+          "position": "SF",
+          "birth_date": "1980-06-21",
+          "club": "Regatas",
+          "club_country": "Argentina",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "AUS": {
+      "team": "AUS",
+      "head_coach": {
+        "value": "Brian Goorjian",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Chris Anstey",
+          "position": "C",
+          "birth_date": "1975-01-01",
+          "club": "Melbourne Tigers",
+          "club_country": "Australia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Patrick Mills",
+          "position": "PG",
+          "birth_date": "1988-08-11",
+          "club": "Saint Mary's Gaels",
+          "club_country": "USA",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "millspa02",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page millspa02 gives name \"Patty Mills\", birth 1988-08-11"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Andrew Bogut",
+          "position": "C",
+          "birth_date": "1984-11-28",
+          "club": "Milwaukee Bucks",
+          "club_country": "USA",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "bogutan01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page bogutan01 gives name \"Andrew Bogut\", birth 1984-11-28"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Milwaukee Bucks"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Joe Ingles",
+          "position": "G/F",
+          "birth_date": "1987-10-02",
+          "club": "South Dragons",
+          "club_country": "Australia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Brad Newley",
+          "position": "G/F",
+          "birth_date": "1985-02-18",
+          "club": "Panellinios",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "C. J. Bruton",
+          "position": "G",
+          "birth_date": "1975-12-13",
+          "club": "New Zealand Breakers",
+          "club_country": "NZL",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "David Barlow",
+          "position": "F",
+          "birth_date": "1983-10-22",
+          "club": "Melbourne Tigers",
+          "club_country": "Australia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Mark Worthington",
+          "position": "SF",
+          "birth_date": "1983-06-08",
+          "club": "South Dragons",
+          "club_country": "Australia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Glen Saville",
+          "position": "G/F",
+          "birth_date": "1976-01-17",
+          "club": "Wollongong Hawks",
+          "club_country": "Australia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "David Andersen",
+          "position": "F/C",
+          "birth_date": "1980-06-23",
+          "club": "FC Barcelona",
+          "club_country": "ESP",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "anderda03",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page anderda03 gives name \"David Andersen\", birth 1980-06-23"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Matthew Nielsen",
+          "position": "F/C",
+          "birth_date": "1978-02-03",
+          "club": "BC Lietuvos rytas",
+          "club_country": "LTU",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Shawn Redhage",
+          "position": "F",
+          "birth_date": "1981-01-21",
+          "club": "Perth Wildcats",
+          "club_country": "Australia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "CRO": {
+      "team": "CRO",
+      "head_coach": {
+        "value": "Jasmin Repeša",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Roko Ukić",
+          "position": "PG",
+          "birth_date": {
+            "value": "1984-12-05",
+            "status": "unverified",
+            "source": "squad page and Wikipedia player article; basketball-reference gives 1984-05-12"
+          },
+          "club": "Toronto Raptors",
+          "club_country": "Canada",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "ukicro01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page ukicro01 gives name \"Roko Ukić\", birth 1984-05-12"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Davor Kus",
+          "position": "G",
+          "birth_date": "1978-07-21",
+          "club": "Unicaja Málaga",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Marko Popović",
+          "position": "PG",
+          "birth_date": "1982-06-12",
+          "club": "BC Žalgiris",
+          "club_country": "Lithuania",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Marin Rozić",
+          "position": "SF",
+          "birth_date": "1983-02-14",
+          "club": "KK Cibona",
+          "club_country": "Croatia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Nikola Prkačin",
+          "position": "F/C",
+          "birth_date": "1975-11-15",
+          "club": "KK Cibona",
+          "club_country": "Croatia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Marko Tomas",
+          "position": "G/F",
+          "birth_date": "1985-01-03",
+          "club": "Real Madrid",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Zoran Planinić",
+          "position": "G",
+          "birth_date": "1982-09-12",
+          "club": "CSKA Moscow",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "planizo01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page planizo01 gives name \"Zoran Planinić\", birth 1982-09-12"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Sandro Nicević",
+          "position": "C",
+          "birth_date": "1976-06-16",
+          "club": "Beşiktaş",
+          "club_country": "Turkey",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Damjan Rudež",
+          "position": "F",
+          "birth_date": "1986-06-17",
+          "club": "KK Union Olimpija",
+          "club_country": "Slovenia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Marko Banić",
+          "position": "PF",
+          "birth_date": "1984-08-31",
+          "club": "iurbentia Bilbao",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Krešimir Lončar",
+          "position": "PF",
+          "birth_date": "1983-02-12",
+          "club": "Lokomotiv Rostov",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Stanko Barać",
+          "position": "C",
+          "birth_date": "1986-08-13",
+          "club": "TAU Ceramica",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "IRI": {
+      "team": "IRI",
+      "head_coach": {
+        "value": "Rajko Toroman",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Ali Doraghi",
+          "position": "F/C",
+          "birth_date": "1984-09-20",
+          "club": "Petrochimi",
+          "club_country": "Iran",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Amir Amini",
+          "position": "PG",
+          "birth_date": "1984-06-10",
+          "club": "Kaveh",
+          "club_country": "Iran",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Javad Davari",
+          "position": "PG",
+          "birth_date": "1983-04-25",
+          "club": "Petrochimi",
+          "club_country": "Iran",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Mehdi Kamrani",
+          "position": "PG",
+          "birth_date": "1982-06-01",
+          "club": "Mahram",
+          "club_country": "Iran",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Saeid Davarpanah",
+          "position": "SG",
+          "birth_date": "1987-09-07",
+          "club": "Kaveh",
+          "club_country": "Iran",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Iman Zandi",
+          "position": "SG",
+          "birth_date": "1981-09-19",
+          "club": "BEEM",
+          "club_country": "Iran",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Hamed Afagh",
+          "position": "SG",
+          "birth_date": "1983-02-01",
+          "club": "Saba Battery",
+          "club_country": "Iran",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Hamed Sohrabnejad",
+          "position": "F/C",
+          "birth_date": "1983-05-07",
+          "club": "Mahram",
+          "club_country": "Iran",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Oshin Sahakian",
+          "position": "PF",
+          "birth_date": "1986-03-21",
+          "club": "Zob Ahan",
+          "club_country": "Iran",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Mousa Nabipour",
+          "position": "C",
+          "birth_date": "1983-08-14",
+          "club": "Kaveh",
+          "club_country": "Iran",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Samad Nikkhah Bahrami",
+          "position": "SF",
+          "birth_date": "1983-05-11",
+          "club": "Mahram",
+          "club_country": "Iran",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Hamed Haddadi",
+          "position": "C",
+          "birth_date": "1985-05-19",
+          "club": "Saba Battery",
+          "club_country": "Iran",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "haddaha01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page haddaha01 gives name \"Hamed Haddadi\", birth 1985-05-19"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "LTU": {
+      "team": "LTU",
+      "head_coach": {
+        "value": "Ramūnas Butautas",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Rimantas Kaukėnas",
+          "position": "PG",
+          "birth_date": "1977-04-11",
+          "club": "Montepaschi Siena",
+          "club_country": "Italy",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Mindaugas Lukauskis",
+          "position": "SG",
+          "birth_date": "1979-05-19",
+          "club": "Lietuvos Rytas",
+          "club_country": "Lithuania",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Jonas Mačiulis",
+          "position": "SF",
+          "birth_date": "1985-02-10",
+          "club": "BC Žalgiris",
+          "club_country": "Lithuania",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Darjuš Lavrinovič",
+          "position": "C",
+          "birth_date": "1979-11-01",
+          "club": "UNICS Kazan",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Ramūnas Šiškauskas",
+          "position": "G/F",
+          "birth_date": "1978-09-10",
+          "club": "CSKA Moscow",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Marius Prekevičius",
+          "position": "G",
+          "birth_date": "1984-05-22",
+          "club": "BC Šiauliai",
+          "club_country": "Lithuania",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Simas Jasaitis",
+          "position": "G/F",
+          "birth_date": "1982-03-26",
+          "club": "Joventut Badalona",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Linas Kleiza",
+          "position": "F",
+          "birth_date": "1985-01-03",
+          "club": "Denver Nuggets",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "kleizli01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page kleizli01 gives name \"Linas Kleiza\", birth 1985-01-03"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Denver Nuggets"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Kšyštof Lavrinovič",
+          "position": "F/C",
+          "birth_date": "1979-11-01",
+          "club": "Montepaschi Siena",
+          "club_country": "Italy",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Šarūnas Jasikevičius",
+          "position": "PG",
+          "birth_date": "1976-03-05",
+          "club": "Panathinaikos BC",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "jasiksa01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page jasiksa01 gives name \"Šarūnas Jasikevičius\", birth 1976-03-05"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2005-06",
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Marijonas Petravičius",
+          "position": "F/C",
+          "birth_date": "1979-10-24",
+          "club": "Lietuvos Rytas",
+          "club_country": "Lithuania",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Robertas Javtokas",
+          "position": "C",
+          "birth_date": "1980-03-20",
+          "club": "Dynamo Moscow",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "RUS": {
+      "team": "RUS",
+      "head_coach": {
+        "value": "David Blatt",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Andrey Vorontsevich",
+          "position": "F",
+          "birth_date": "1987-07-17",
+          "club": "CSKA Moscow",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Jon Robert Holden",
+          "position": "PG",
+          "birth_date": "1976-08-10",
+          "club": "CSKA Moscow",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Sergei Bykov",
+          "position": "G",
+          "birth_date": "1983-02-26",
+          "club": "Dynamo Moscow",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Andrei Kirilenko",
+          "position": "F",
+          "birth_date": "1981-02-18",
+          "club": "Utah Jazz",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "kirilan01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page kirilan01 gives name \"Andrei Kirilenko\", birth 1981-02-18"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Utah Jazz"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Nikita Morgunov",
+          "position": "C",
+          "birth_date": "1975-06-29",
+          "club": "Lokomotiv Rostov",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Petr Samoylenko",
+          "position": "PG",
+          "birth_date": "1977-02-07",
+          "club": "Dynamo Moscow",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Victor Khryapa",
+          "position": "F",
+          "birth_date": "1982-08-03",
+          "club": "CSKA Moscow",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "khryavi01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page khryavi01 gives name \"Viktor Khryapa\", birth 1982-08-03"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Chicago Bulls"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Zakhar Pashutin",
+          "position": "SG",
+          "birth_date": "1974-05-03",
+          "club": "Spartak Saint Petersburg",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Sergei Monia",
+          "position": "SF",
+          "birth_date": "1983-04-15",
+          "club": "Dynamo Moscow",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "moniase01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page moniase01 gives name \"Sergei Monia\", birth 1983-04-15"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2005-06"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Vitaly Fridzon",
+          "position": "SG",
+          "birth_date": "1985-10-14",
+          "club": "BC Khimki",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Aleksey Savrasenko",
+          "position": "C",
+          "birth_date": "1979-02-28",
+          "club": "CSKA Moscow",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Viktor Keirou",
+          "position": "SF",
+          "birth_date": "1984-01-31",
+          "club": "CSKA Moscow",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "ANG": {
+      "team": "ANG",
+      "head_coach": {
+        "value": "Alberto de Carvalho",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Olimpio Cipriano",
+          "position": "SF",
+          "birth_date": "1982-04-09",
+          "club": "Primeiro de Agosto",
+          "club_country": "Angola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Armando Costa",
+          "position": "G",
+          "birth_date": "1983-06-03",
+          "club": "Petro Atlético",
+          "club_country": "Angola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Carlos Morais",
+          "position": "SG",
+          "birth_date": "1985-10-16",
+          "club": "Petro Atlético",
+          "club_country": "Angola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Milton Barros",
+          "position": "PG",
+          "birth_date": "1984-06-21",
+          "club": "Petro Atlético",
+          "club_country": "Angola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Luis Costa",
+          "position": "G",
+          "birth_date": "1978-06-07",
+          "club": "Petro Atlético",
+          "club_country": "Angola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Vladimir Geronimo",
+          "position": "G",
+          "birth_date": "1977-12-12",
+          "club": "Primeiro de Agosto",
+          "club_country": "Angola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Joaquim Gomes",
+          "position": "F/C",
+          "birth_date": "1980-12-23",
+          "club": "Primeiro de Agosto",
+          "club_country": "Angola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Felizardo Ambrosio",
+          "position": "F",
+          "birth_date": "1987-12-25",
+          "club": "Primeiro de Agosto",
+          "club_country": "Angola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Abdel Aziz Moussa",
+          "position": "C",
+          "birth_date": "1980-04-08",
+          "club": "Primeiro de Agosto",
+          "club_country": "Angola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Carlos Almeida",
+          "position": "SG",
+          "birth_date": "1976-09-24",
+          "club": "Primeiro de Agosto",
+          "club_country": "Angola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Leonel Paulo",
+          "position": "F",
+          "birth_date": "1986-04-30",
+          "club": "Petro Atlético",
+          "club_country": "Angola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Eduardo Mingas",
+          "position": "F",
+          "birth_date": "1979-01-29",
+          "club": "Petro Atlético",
+          "club_country": "Angola",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "CHN": {
+      "team": "CHN",
+      "head_coach": {
+        "value": "Jonas Kazlauskas",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Chen Jianghua",
+          "position": "PG",
+          "birth_date": "1989-03-12",
+          "club": "Guangdong Southern Tigers",
+          "club_country": "China",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Liu Wei",
+          "position": "G",
+          "birth_date": "1980-01-15",
+          "club": "Shanghai Sharks",
+          "club_country": "China",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Zhang Qingpeng",
+          "position": "PG",
+          "birth_date": "1985-01-23",
+          "club": "Liaoning Hunters",
+          "club_country": "China",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Wang Shipeng",
+          "position": "G-F",
+          "birth_date": "1983-04-06",
+          "club": "Guangdong Southern Tigers",
+          "club_country": "China",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Zhu Fangyu",
+          "position": "SF",
+          "birth_date": "1983-01-05",
+          "club": "Guangdong Southern Tigers",
+          "club_country": "China",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Sun Yue",
+          "position": "G",
+          "birth_date": "1985-11-06",
+          "club": "Los Angeles Lakers",
+          "club_country": "USA",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "yuesu01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page yuesu01 gives name \"Sun Yue\", birth 1985-11-06"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "10",
+          "name": "Li Nan",
+          "position": "SF",
+          "birth_date": "1976-09-25",
+          "club": "Bayi Rockets",
+          "club_country": "China",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Yi Jianlian",
+          "position": "F-C",
+          "birth_date": "1987-10-27",
+          "club": "New Jersey Nets",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "jianlyi01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page jianlyi01 gives name \"Yi Jianlian\", birth 1987-10-27"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Milwaukee Bucks"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Wang Lei",
+          "position": "SF",
+          "birth_date": "1986-08-12",
+          "club": "Bayi Rockets",
+          "club_country": "China",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Yao Ming",
+          "position": "C",
+          "birth_date": "1980-09-12",
+          "club": "Houston Rockets",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "mingya01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page mingya01 gives name \"Yao Ming\", birth 1980-09-12"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Houston Rockets"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Wang Zhizhi",
+          "position": "C",
+          "birth_date": {
+            "value": "1977-07-08",
+            "status": "sourced",
+            "source": "basketball-reference and Wikipedia player article"
+          },
+          "club": "Bayi Rockets",
+          "club_country": "China",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "zhizhwa01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page zhizhwa01 gives name \"Wang Zhizhi\", birth 1977-07-08"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Du Feng",
+          "position": "F",
+          "birth_date": "1981-07-30",
+          "club": "Guangdong Southern Tigers",
+          "club_country": "China",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "GER": {
+      "team": "GER",
+      "head_coach": {
+        "value": "Dirk Bauermann",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Tim Ohlbrecht",
+          "position": "F/C",
+          "birth_date": "1988-08-30",
+          "club": "Brose Baskets",
+          "club_country": "Germany",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "ohlbrti01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page ohlbrti01 gives name \"Tim Ohlbrecht\", birth 1988-08-30"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Philip Zwiener",
+          "position": "SF",
+          "birth_date": "1985-07-23",
+          "club": "ALBA Berlin",
+          "club_country": "Germany",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Sven Schultze",
+          "position": "PF",
+          "birth_date": "1978-07-11",
+          "club": "Olympia Larissa BC",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Robert Garrett",
+          "position": "SG",
+          "birth_date": "1977-03-18",
+          "club": "Brose Baskets",
+          "club_country": "Germany",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Konrad Wysocki",
+          "position": "SF",
+          "birth_date": "1982-03-28",
+          "club": "Deutsche Bank Skyliners",
+          "club_country": "Germany",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Steffen Hamann",
+          "position": "G",
+          "birth_date": "1981-06-14",
+          "club": "Brose Baskets",
+          "club_country": "Germany",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Demond Greene",
+          "position": "G",
+          "birth_date": "1979-06-15",
+          "club": "Brose Baskets",
+          "club_country": "Germany",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Pascal Roller",
+          "position": "PG",
+          "birth_date": "1976-11-20",
+          "club": "Deutsche Bank Skyliners",
+          "club_country": "Germany",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Chris Kaman",
+          "position": "C",
+          "birth_date": "1982-04-28",
+          "club": "Los Angeles Clippers",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "kamanch01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page kamanch01 gives name \"Chris Kaman\", birth 1982-04-28"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Los Angeles Clippers"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Patrick Femerling",
+          "position": "C",
+          "birth_date": "1975-03-04",
+          "club": "ALBA Berlin",
+          "club_country": "Germany",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Dirk Nowitzki",
+          "position": "PF",
+          "birth_date": "1978-06-19",
+          "club": "Dallas Mavericks",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "nowitdi01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page nowitdi01 gives name \"Dirk Nowitzki\", birth 1978-06-19"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Dallas Mavericks"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Jan Jagla",
+          "position": "F/C",
+          "birth_date": "1981-06-25",
+          "club": "Joventut Badalona",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "GRE": {
+      "team": "GRE",
+      "head_coach": {
+        "value": "Panagiotis Giannakis",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Theo Papaloukas",
+          "position": "PG",
+          "birth_date": "1977-05-08",
+          "club": "Olympiacos B.C.",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Ioannis Bourousis",
+          "position": "F/C",
+          "birth_date": "1983-11-17",
+          "club": "Olympiacos B.C.",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Nikos Zisis",
+          "position": "PG",
+          "birth_date": "1983-08-16",
+          "club": "PBC CSKA Moscow",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Vassilis Spanoulis",
+          "position": "PG",
+          "birth_date": "1982-08-07",
+          "club": "Panathinaikos BC",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "spanova01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page spanova01 gives name \"Vassilis Spanoulis\", birth 1982-08-07"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Panagiotis Vasilopoulos",
+          "position": "F",
+          "birth_date": "1984-02-08",
+          "club": "Olympiacos B.C.",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Antonis Fotsis",
+          "position": "PF",
+          "birth_date": "1981-04-01",
+          "club": "Panathinaikos BC",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Giorgos Printezis",
+          "position": "F",
+          "birth_date": "1985-02-22",
+          "club": "Olympiacos B.C.",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Andreas Glyniadakis",
+          "position": "C",
+          "birth_date": {
+            "value": "1981-08-26",
+            "status": "unverified",
+            "source": "squad page and Wikipedia player article; basketball-reference gives 1981-08-21"
+          },
+          "club": "Maroussi BC",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "glynian01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page glynian01 gives name \"Andreas Glyniadakis\", birth 1981-08-21"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Kostas Tsartsaris",
+          "position": "F/C",
+          "birth_date": "1979-10-17",
+          "club": "Panathinaikos BC",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Dimitris Diamantidis",
+          "position": "G",
+          "birth_date": "1980-05-06",
+          "club": "Panathinaikos BC",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Sofoklis Schortsanitis",
+          "position": "C",
+          "birth_date": "1985-06-22",
+          "club": "Olympiacos B.C.",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Michalis Pelekanos",
+          "position": "F/G",
+          "birth_date": "1981-05-25",
+          "club": "Olympiacos B.C.",
+          "club_country": "Greece",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "ESP": {
+      "team": "ESP",
+      "head_coach": {
+        "value": "Aíto García Reneses",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Pau Gasol",
+          "position": "F/C",
+          "birth_date": "1980-07-06",
+          "club": "Los Angeles Lakers",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "gasolpa01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page gasolpa01 gives name \"Pau Gasol\", birth 1980-07-06"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Los Angeles Lakers",
+              "Memphis Grizzlies"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Rudy Fernandez",
+          "position": "G/F",
+          "birth_date": "1985-04-04",
+          "club": "Portland Trail Blazers",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "fernaru01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page fernaru01 gives name \"Rudy Fernández\", birth 1985-04-04"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Ricky Rubio",
+          "position": "PG",
+          "birth_date": "1990-10-21",
+          "club": "Joventut Badalona",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "rubiori01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page rubiori01 gives name \"Ricky Rubio\", birth 1990-10-21"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Juan Carlos Navarro",
+          "position": "G",
+          "birth_date": "1980-06-13",
+          "club": "FC Barcelona",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "navarju01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page navarju01 gives name \"Juan Carlos Navarro\", birth 1980-06-13"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Memphis Grizzlies"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "José Calderón",
+          "position": "PG",
+          "birth_date": "1981-09-28",
+          "club": "Toronto Raptors",
+          "club_country": "Canada",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "caldejo01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page caldejo01 gives name \"José Calderón\", birth 1981-09-28"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Toronto Raptors"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Felipe Reyes",
+          "position": "F/C",
+          "birth_date": "1980-03-16",
+          "club": "Real Madrid",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Carlos Jiménez",
+          "position": "SF",
+          "birth_date": "1976-02-10",
+          "club": "CB Málaga",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Raül López",
+          "position": "PG",
+          "birth_date": "1980-04-15",
+          "club": "Real Madrid",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "lopezra01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page lopezra01 gives name \"Raül López\", birth 1980-04-15"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Berni Rodríguez",
+          "position": "SG",
+          "birth_date": "1980-06-07",
+          "club": "CB Málaga",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Marc Gasol",
+          "position": "C",
+          "birth_date": "1985-01-29",
+          "club": "Memphis Grizzlies",
+          "club_country": "United States",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "gasolma01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page gasolma01 gives name \"Marc Gasol\", birth 1985-01-29"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "14",
+          "name": "Álex Mumbrú",
+          "position": "SF",
+          "birth_date": "1979-06-12",
+          "club": "Real Madrid",
+          "club_country": "Spain",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Jorge Garbajosa",
+          "position": "PF",
+          "birth_date": "1977-12-19",
+          "club": "Khimki BC",
+          "club_country": "Russia",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+          "bbr_id": {
+            "value": "garbajo01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page garbajo01 gives name \"Jorge Garbajosa\", birth 1977-12-19"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Toronto Raptors"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        }
+      ],
+      "player_count": 12
+    }
+  },
+  "real_usa_roster_reference": {
+    "team": "USA",
+    "head_coach": {
+      "value": "Mike Krzyzewski",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters"
+    },
+    "players": [
+      {
+        "number": "4",
+        "name": "Carlos Boozer",
+        "position": "F",
+        "birth_date": "1981-11-20",
+        "club": "Utah Jazz",
+        "club_country": "USA",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+        "bbr_id": {
+          "value": "boozeca01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page boozeca01 gives name \"Carlos Boozer\", birth 1981-11-20"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07",
+            "2007-08"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Utah Jazz"
+          ],
+          "status": "derived",
+          "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "5",
+        "name": "Jason Kidd",
+        "position": "G",
+        "birth_date": "1973-03-23",
+        "club": "Dallas Mavericks",
+        "club_country": "USA",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+        "bbr_id": {
+          "value": "kiddja01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page kiddja01 gives name \"Jason Kidd\", birth 1973-03-23"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07",
+            "2007-08"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Dallas Mavericks",
+            "New Jersey Nets"
+          ],
+          "status": "derived",
+          "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "6",
+        "name": "LeBron James",
+        "position": "F",
+        "birth_date": "1984-12-30",
+        "club": "Cleveland Cavaliers",
+        "club_country": "USA",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+        "bbr_id": {
+          "value": "jamesle01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page jamesle01 gives name \"LeBron James\", birth 1984-12-30"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07",
+            "2007-08"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Cleveland Cavaliers"
+          ],
+          "status": "derived",
+          "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "7",
+        "name": "Deron Williams",
+        "position": "G",
+        "birth_date": "1984-06-26",
+        "club": "Utah Jazz",
+        "club_country": "USA",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+        "bbr_id": {
+          "value": "willide01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page willide01 gives name \"Deron Williams\", birth 1984-06-26"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2005-06",
+            "2006-07",
+            "2007-08"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Utah Jazz"
+          ],
+          "status": "derived",
+          "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "8",
+        "name": "Michael Redd",
+        "position": "G",
+        "birth_date": "1979-08-24",
+        "club": "Milwaukee Bucks",
+        "club_country": "USA",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+        "bbr_id": {
+          "value": "reddmi01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page reddmi01 gives name \"Michael Redd\", birth 1979-08-24"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07",
+            "2007-08"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Milwaukee Bucks"
+          ],
+          "status": "derived",
+          "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "9",
+        "name": "Dwyane Wade",
+        "position": "G",
+        "birth_date": "1982-01-17",
+        "club": "Miami Heat",
+        "club_country": "USA",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+        "bbr_id": {
+          "value": "wadedw01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys (not a key there: the file excludes the historical Dwyane Wade by design); id confirmed at https://www.basketball-reference.com/players/w/wadedw01.html",
+          "checked": "basketball-reference page wadedw01 gives name \"Dwyane Wade\", birth 1982-01-17"
+        },
+        "nba_clubs_prior_season": {
+          "value": [],
+          "status": "derived",
+          "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "10",
+        "name": "Kobe Bryant",
+        "position": "G",
+        "birth_date": "1978-08-23",
+        "club": "Los Angeles Lakers",
+        "club_country": "USA",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+        "bbr_id": {
+          "value": "bryanko01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page bryanko01 gives name \"Kobe Bryant\", birth 1978-08-23"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07",
+            "2007-08"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Los Angeles Lakers"
+          ],
+          "status": "derived",
+          "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "11",
+        "name": "Dwight Howard",
+        "position": "C",
+        "birth_date": "1985-12-08",
+        "club": "Orlando Magic",
+        "club_country": "USA",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+        "bbr_id": {
+          "value": "howardw01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page howardw01 gives name \"Dwight Howard\", birth 1985-12-08"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2004-05",
+            "2005-06",
+            "2006-07",
+            "2007-08"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Orlando Magic"
+          ],
+          "status": "derived",
+          "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "12",
+        "name": "Chris Bosh",
+        "position": "FC",
+        "birth_date": "1984-03-24",
+        "club": "Toronto Raptors",
+        "club_country": "Canada",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+        "bbr_id": {
+          "value": "boshch01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page boshch01 gives name \"Chris Bosh\", birth 1984-03-24"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07",
+            "2007-08"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Toronto Raptors"
+          ],
+          "status": "derived",
+          "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "13",
+        "name": "Chris Paul",
+        "position": "G",
+        "birth_date": "1985-05-06",
+        "club": "New Orleans Hornets",
+        "club_country": "USA",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+        "bbr_id": {
+          "value": "paulch01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page paulch01 gives name \"Chris Paul\", birth 1985-05-06"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2005-06",
+            "2006-07",
+            "2007-08"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "New Orleans Hornets"
+          ],
+          "status": "derived",
+          "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "14",
+        "name": "Tayshaun Prince",
+        "position": "F",
+        "birth_date": "1980-02-28",
+        "club": "Detroit Pistons",
+        "club_country": "USA",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+        "bbr_id": {
+          "value": "princta01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page princta01 gives name \"Tayshaun Prince\", birth 1980-02-28"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07",
+            "2007-08"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Detroit Pistons"
+          ],
+          "status": "derived",
+          "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      },
+      {
+        "number": "15",
+        "name": "Carmelo Anthony",
+        "position": "F",
+        "birth_date": "1984-05-29",
+        "club": "Denver Nuggets",
+        "club_country": "USA",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+        "bbr_id": {
+          "value": "anthoca01",
+          "status": "derived",
+          "source": "name match against library/careers/nba_player_careers.json keys",
+          "checked": "basketball-reference page anthoca01 gives name \"Carmelo Anthony\", birth 1984-05-29"
+        },
+        "nba_seasons_on_file_through_prior_season": {
+          "value": [
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "2006-07",
+            "2007-08"
+          ],
+          "status": "derived",
+          "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+        },
+        "nba_clubs_prior_season": {
+          "value": [
+            "Denver Nuggets"
+          ],
+          "status": "derived",
+          "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+        }
+      }
+    ],
+    "player_count": 12,
+    "note": "Real-world reference only; the simulated USA roster is chosen by the FIBA pipeline."
+  },
+  "research": {
+    "sources": [
+      "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament",
+      "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters",
+      "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification",
+      "https://www.basketball-reference.com/players/ (birth dates of NBA-matched players)"
+    ],
+    "conflicts": [
+      {
+        "item": "2008 Olympics: Roko Ukić birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters": "1984-12-05",
+          "https://www.basketball-reference.com/players/u/ukicro01.html": "1984-05-12",
+          "https://en.wikipedia.org/wiki/Roko_Uki%C4%87 (player article)": "1984-12-05"
+        },
+        "resolution": "unresolved: squad page and player article agree with each other but not with basketball-reference; squad value kept and marked unverified"
+      },
+      {
+        "item": "2008 Olympics: Wang Zhizhi birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters": "1979-07-08",
+          "https://www.basketball-reference.com/players/z/zhizhwa01.html": "1977-07-08",
+          "https://en.wikipedia.org/wiki/Wang_Zhizhi (player article)": "1977-07-08"
+        },
+        "resolution": "recorded 1977-07-08 (player article agrees with basketball-reference)"
+      },
+      {
+        "item": "2008 Olympics: Andreas Glyniadakis birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters": "1981-08-26",
+          "https://www.basketball-reference.com/players/g/glynian01.html": "1981-08-21",
+          "https://en.wikipedia.org/wiki/Andreas_Glyniadakis (player article)": "1981-08-26"
+        },
+        "resolution": "unresolved: squad page and player article agree with each other but not with basketball-reference; squad value kept and marked unverified"
+      }
+    ],
+    "unresolved": [
+      "Date of the Olympic group draw and how the three OQT qualifiers were placed.",
+      "Points system not stated on the 2008 page (2/1 derived from FIBA rules)."
+    ],
+    "notes": [
+      "Group placement is the real draw. The groups order in the source standings tables is a result and is not recorded; bracket slots of real knockout games were derived from them."
+    ]
+  },
+  "counts": {
+    "teams": 12,
+    "games": 38,
+    "group_games_with_teams": 30,
+    "slot_games": 8
+  }
+}

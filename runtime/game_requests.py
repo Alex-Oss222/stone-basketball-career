@@ -65,6 +65,10 @@ def team_from_packet(data):
 
 def computed_inputs(data, root=ROOT):
     """Both clubs' engine inputs computed from the request's club specs and the dated records."""
+    from .national_engine import is_national
+    if is_national(data.get("game_type")):
+        from .national import team_inputs                  # national teams: their dated selections (FIBA rules)
+        return team_inputs(data, root)
     season = season_for_date(data["game_date"])
     actives = rules_for(season)["game_day_actives"]
     index = load_rating_index(data["game_date"], season, root)
@@ -188,11 +192,16 @@ def input_fingerprint(path, root=ROOT):
     from .packets import canonical
     from .spatial_shots import load_spatial_environment
     home, away, kwargs = load_request(path, root)
-    season = season_for_date(kwargs["game_date"])
+    from .national_engine import is_national, national_environment, national_spatial
+    if is_national(kwargs["game_type"]):
+        environment, spatial = national_environment(kwargs["game_date"], root), national_spatial(kwargs["game_date"], root)
+    else:
+        season = season_for_date(kwargs["game_date"])
+        environment = environment_for(season, kwargs["game_date"], root)
+        spatial = load_spatial_environment(season, kwargs["game_date"], root)
     material = {"home": team_packet(home), "away": team_packet(away),
                 "fields": {k: kwargs[k] for k in ("event_id", "game_date", "game_type", "venue")},
-                "environment": environment_for(season, kwargs["game_date"], root),
-                "spatial": load_spatial_environment(season, kwargs["game_date"], root)}
+                "environment": environment, "spatial": spatial}
     return hashlib.sha256(canonical(material)).hexdigest()
 
 
@@ -201,8 +210,9 @@ def frozen_errors(root=ROOT, recent_days=3, every=25):
     played, every one dated within `recent_days` of the career clock, and every `every`th of the rest."""
     from datetime import date, timedelta
     from .kernel import team_packet
-    state = json.loads((Path(root) / "career/Dwyane_Wade/2003-04/current_state.json").read_text(encoding="utf-8"))
-    since = (date.fromisoformat(state["current_date"]) - timedelta(days=recent_days)).isoformat()
+    from .seasons import state as live_state
+    clock = live_state(None, root)["current_date"]       # the live season's clock (the 2003-04 file stopped in 2004)
+    since = (date.fromisoformat(clock) - timedelta(days=recent_days)).isoformat()
     errors, k = [], 0
     for path in find_requests(root):
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -265,8 +275,8 @@ def schedule_id_errors(root=ROOT):
         if not isinstance(day, str):
             continue
         season = season_for_date(day)
-        if season < HARDEN_SEASON:
-            continue
+        if season < HARDEN_SEASON or data.get("game_type") not in ("preseason", "regular", "play_in", "playoff"):
+            continue                                         # national games are checked by runtime/national.py
         if season not in known:
             ids = set()
             start = int(season[:4])

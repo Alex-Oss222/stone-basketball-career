@@ -80,6 +80,34 @@ SEASON_RULES = {
 
 GAME_TYPES = ("preseason", "regular", "play_in", "playoff")
 
+# National-team competitions (FIBA rules; `runtime/national_engine.py`), the same buckets as the statistics contract
+# (`runtime/career_stats.NATIONAL_TYPES`).
+NATIONAL_GAME_TYPES = ("world_cup_qualifier", "world_cup_finals", "olympic_qualifier", "olympic_finals",
+                       "continental_qualifier", "continental_finals", "national_friendly")
+
+# FIBA playing rules by period (library/fiba/fiba_rules.json, FIBA Official Basketball Rules). Four ten-minute
+# quarters, five-minute overtimes, a 24-second clock, five fouls, twelve dressed. The three-point line moved from
+# 6.25 m to 6.75 m on October 1, 2010, with the no-charge semicircle and the rectangular lane.
+FIBA_RULE_PERIODS = (
+    ("2004-09-01", "2010-09-30", {"coordinate_system": "fiba_2006_feet_from_basket", "three_point_m": 6.25,
+                                  "lane": "trapezoid", "no_charge_semicircle": False}),
+    ("2010-10-01", "2017-12-31", {"coordinate_system": "fiba_2010_feet_from_basket", "three_point_m": 6.75,
+                                  "lane": "rectangle", "no_charge_semicircle": True}),
+)
+FIBA_BASE_RULES = {
+    "quarters": 4,
+    "quarter_minutes": 10,
+    "overtime_minutes": 5,
+    "shot_clock_seconds": 24,
+    "foul_out_limit": 5,
+    "players_on_floor": 5,
+    "game_day_actives": 12,
+    "roster_maximum": 12,
+    "zone_defense_legal": True,
+    "defensive_three_seconds": False,
+    "competition": "FIBA",
+}
+
 
 def season_of(year_start):
     return f"{year_start}-{str(year_start + 1)[-2:]}"
@@ -126,3 +154,19 @@ def season_for_date(date):
     """NBA seasons run across the calendar year; July 1 starts the new league year."""
     year, month = int(date[:4]), int(date[5:7])
     return season_of(year if month >= 7 else year - 1)
+
+
+def ability_season(game_date):
+    """The NBA season whose ability a national game reads: a summer game (June to September) the season just closed,
+    otherwise the season under way (a qualifying window in November or February)."""
+    month = int(game_date[5:7])
+    season = season_for_date(game_date)
+    return previous_season(season) if 6 <= month <= 9 else season
+
+
+def national_rules(game_date):
+    """FIBA's rules on the game's date, labelled with the ability season (the kernel checks profiles against it)."""
+    for first, last, row in FIBA_RULE_PERIODS:
+        if first <= game_date <= last:
+            return {**FIBA_BASE_RULES, **row, "season": ability_season(game_date)}
+    raise ValueError(f"no FIBA rules encoded for {game_date}; add a FIBA_RULE_PERIODS row before simulating it")

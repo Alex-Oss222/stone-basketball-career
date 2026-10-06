@@ -1,0 +1,4261 @@
+{
+ "edition": "2005",
+ "edition_id": "continental_qualifier_2005",
+ "environment": {
+  "averages": {
+   "ast": 11.25,
+   "blk": 2.357,
+   "drb": 22.464,
+   "fg_pct": 0.45331,
+   "fga": 61.452,
+   "ft_pct": 0.69428,
+   "fta": 22.274,
+   "orb": 9.44,
+   "pace": 75.753,
+   "pf": 22.81,
+   "points": 79.488,
+   "stl": 6.952,
+   "three_pa": 22.881,
+   "three_pct": 0.36316,
+   "tov": 13.94
+  },
+  "baseline": "olympics_2004",
+  "engine_assumptions": {
+   "and_one_share_of_fta": 0.12,
+   "home_edge_points_per_game": 3.0,
+   "status": "provisional structural assumptions, as the NBA environments"
+  },
+  "kind": "league_environment",
+  "league": "FIBA",
+  "player_rate_baselines": {
+   "assist_pct": 0.100246,
+   "block_pct": 0.012153,
+   "defensive_rebound_pct": 0.141069,
+   "fouls_per_minute": 0.113942,
+   "free_throw_attempt_rate": 0.376131,
+   "free_throw_pct": 0.694264,
+   "offensive_rebound_pct": 0.058818,
+   "steal_pct": 0.017992,
+   "three_point_attempt_rate": 0.3695,
+   "three_point_pct": 0.363731,
+   "turnovers_per_fga": 0.240875,
+   "two_point_pct": 0.508469,
+   "usage_pct": 0.1998
+  },
+  "player_rating_model": "fiba-2006.1",
+  "player_turnovers_per_game": 13.94,
+  "published_after": "2004-08-29",
+  "purpose": "Calibration for national games: the real averages of 2004 Olympic Games men's basketball tournament (Athens, Greece), the last senior FIBA tournament completed before the edition (the repository's environment policy).",
+  "schema_version": 1,
+  "season": "olympics_2004",
+  "source": "library/fiba/player_tournament_stats/olympics_2004.json",
+  "team_turnover_note": "FIBA's records keep no separate team turnovers; every turnover is a player's.",
+  "team_turnovers_per_game": 0.0,
+  "unit": "per team per 40-minute game",
+  "verification": {
+   "method": "per team-game means of the tournament's team totals (FIBA statistics service)",
+   "status": "derived_from_sourced_totals"
+  }
+ },
+ "family": "Continental_Cups",
+ "fiba_profiles": {
+  "fiba:arg:antonio-porta:1983-10-28": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:arg:antonio-porta:1983-10-28",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:arg:daniel-farabello:1973-10-18": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:arg:daniel-farabello:1973-10-18",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:arg:diego-lo-grippo:1978-01-22": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:arg:diego-lo-grippo:1978-01-22",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:arg:federico-kammerichs:1980-06-21": {
+   "as_of": "2005-08-24",
+   "defense": -0.3257,
+   "fiba_key": "fiba:arg:federico-kammerichs:1980-06-21",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.113366,
+    "block_pct": 0.017127,
+    "defensive_rebound_pct": 0.149757,
+    "fouls_per_minute": 0.104862,
+    "free_throw_attempt_rate": 0.289139,
+    "free_throw_pct": 0.703876,
+    "offensive_rebound_pct": 0.07811,
+    "steal_pct": 0.016088,
+    "three_point_attempt_rate": 0.30887,
+    "three_point_pct": 0.341906,
+    "turnovers_per_fga": 0.299184,
+    "two_point_pct": 0.509897,
+    "usage_pct": 0.182889
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:arg:gabriel-fernandez:1976-10-23": {
+   "as_of": "2005-08-24",
+   "defense": 0.249,
+   "fiba_key": "fiba:arg:gabriel-fernandez:1976-10-23",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.068957,
+    "block_pct": 0.008254,
+    "defensive_rebound_pct": 0.11934,
+    "fouls_per_minute": 0.141987,
+    "free_throw_attempt_rate": 0.491887,
+    "free_throw_pct": 0.632539,
+    "offensive_rebound_pct": 0.079744,
+    "steal_pct": 0.011372,
+    "three_point_attempt_rate": 0.504726,
+    "three_point_pct": 0.332239,
+    "turnovers_per_fga": 0.283502,
+    "two_point_pct": 0.540231,
+    "usage_pct": 0.171069
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:arg:hernan-jasen:1978-02-04": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:arg:hernan-jasen:1978-02-04",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:arg:juan-pedro-gutierrez:1983-10-10": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:arg:juan-pedro-gutierrez:1983-10-10",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:arg:julio-mazzaro:1979-01-31": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:arg:julio-mazzaro:1979-01-31",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:arg:leonardo-gutierrez:1978-05-16": {
+   "as_of": "2005-08-24",
+   "defense": 0.1969,
+   "fiba_key": "fiba:arg:leonardo-gutierrez:1978-05-16",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.111161,
+    "block_pct": 0.016244,
+    "defensive_rebound_pct": 0.133435,
+    "fouls_per_minute": 0.138439,
+    "free_throw_attempt_rate": 0.223082,
+    "free_throw_pct": 0.666012,
+    "offensive_rebound_pct": 0.046638,
+    "steal_pct": 0.014959,
+    "three_point_attempt_rate": 0.562586,
+    "three_point_pct": 0.331998,
+    "turnovers_per_fga": 0.171708,
+    "two_point_pct": 0.509897,
+    "usage_pct": 0.188017
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:arg:martin-leiva:1980-04-23": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:arg:martin-leiva:1980-04-23",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:arg:paolo-quinteros:1979-01-15": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:arg:paolo-quinteros:1979-01-15",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:arg:roman-gonzalez:1978-01-28": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:arg:roman-gonzalez:1978-01-28",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:bra:alex-garcia:1980-03-04": {
+   "as_of": "2005-08-24",
+   "defense": -0.0454,
+   "fiba_key": "fiba:bra:alex-garcia:1980-03-04",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.124465,
+    "block_pct": 0.01737,
+    "defensive_rebound_pct": 0.110428,
+    "fouls_per_minute": 0.143283,
+    "free_throw_attempt_rate": 0.491917,
+    "free_throw_pct": 0.721146,
+    "offensive_rebound_pct": 0.050601,
+    "steal_pct": 0.02026,
+    "three_point_attempt_rate": 0.31225,
+    "three_point_pct": 0.335906,
+    "turnovers_per_fga": 0.31003,
+    "two_point_pct": 0.52495,
+    "usage_pct": 0.205465
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:bra:anderson-varejao:1982-09-28": {
+   "as_of": "2005-08-24",
+   "defense": -0.1556,
+   "fiba_key": "fiba:bra:anderson-varejao:1982-09-28",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.136837,
+    "block_pct": 0.05266,
+    "defensive_rebound_pct": 0.155278,
+    "fouls_per_minute": 0.119276,
+    "free_throw_attempt_rate": 0.43213,
+    "free_throw_pct": 0.656574,
+    "offensive_rebound_pct": 0.074896,
+    "steal_pct": 0.023081,
+    "three_point_attempt_rate": 0.25668,
+    "three_point_pct": 0.335595,
+    "turnovers_per_fga": 0.224909,
+    "two_point_pct": 0.494941,
+    "usage_pct": 0.203585
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:bra:caio-torres:1987-06-03": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:bra:caio-torres:1987-06-03",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:bra:guilherme-giovannoni:1980-06-02": {
+   "as_of": "2005-08-24",
+   "defense": -0.1224,
+   "fiba_key": "fiba:bra:guilherme-giovannoni:1980-06-02",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.122201,
+    "block_pct": 0.00642,
+    "defensive_rebound_pct": 0.129899,
+    "fouls_per_minute": 0.107679,
+    "free_throw_attempt_rate": 0.266904,
+    "free_throw_pct": 0.713865,
+    "offensive_rebound_pct": 0.047505,
+    "steal_pct": 0.019314,
+    "three_point_attempt_rate": 0.269569,
+    "three_point_pct": 0.367998,
+    "turnovers_per_fga": 0.178145,
+    "two_point_pct": 0.492095,
+    "usage_pct": 0.197645
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:bra:jefferson-da-silva:1983-03-29": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:bra:jefferson-da-silva:1983-03-29",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:bra:leandro-barbosa:1982-11-28": {
+   "as_of": "2005-08-24",
+   "defense": 0.1302,
+   "fiba_key": "fiba:bra:leandro-barbosa:1982-11-28",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.112268,
+    "block_pct": 0.006927,
+    "defensive_rebound_pct": 0.11305,
+    "fouls_per_minute": 0.128365,
+    "free_throw_attempt_rate": 0.36245,
+    "free_throw_pct": 0.734861,
+    "offensive_rebound_pct": 0.059721,
+    "steal_pct": 0.01785,
+    "three_point_attempt_rate": 0.336713,
+    "three_point_pct": 0.363068,
+    "turnovers_per_fga": 0.213581,
+    "two_point_pct": 0.493197,
+    "usage_pct": 0.228589
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:bra:marcelinho-huertas:1983-05-25": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:bra:marcelinho-huertas:1983-05-25",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:bra:marcelinho-machado:1975-04-12": {
+   "as_of": "2005-08-24",
+   "defense": -0.1147,
+   "fiba_key": "fiba:bra:marcelinho-machado:1975-04-12",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.133841,
+    "block_pct": 0.004276,
+    "defensive_rebound_pct": 0.113577,
+    "fouls_per_minute": 0.091583,
+    "free_throw_attempt_rate": 0.31019,
+    "free_throw_pct": 0.771986,
+    "offensive_rebound_pct": 0.044562,
+    "steal_pct": 0.023513,
+    "three_point_attempt_rate": 0.625182,
+    "three_point_pct": 0.350124,
+    "turnovers_per_fga": 0.142296,
+    "two_point_pct": 0.470242,
+    "usage_pct": 0.240448
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:bra:murilo-becker:1983-07-14": {
+   "as_of": "2005-08-24",
+   "defense": 0.2157,
+   "fiba_key": "fiba:bra:murilo-becker:1983-07-14",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.094439,
+    "block_pct": 0.010782,
+    "defensive_rebound_pct": 0.138636,
+    "fouls_per_minute": 0.114187,
+    "free_throw_attempt_rate": 0.293089,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.065288,
+    "steal_pct": 0.015962,
+    "three_point_attempt_rate": 0.309006,
+    "three_point_pct": 0.347932,
+    "turnovers_per_fga": 0.252348,
+    "two_point_pct": 0.48653,
+    "usage_pct": 0.190229
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:bra:nezinho-dos-santos:1981-01-21": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:bra:nezinho-dos-santos:1981-01-21",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:bra:rafael-hettsheimeir:1986-06-18": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:bra:rafael-hettsheimeir:1986-06-18",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:bra:tiago-splitter:1985-01-01": {
+   "as_of": "2005-08-24",
+   "defense": -0.0249,
+   "fiba_key": "fiba:bra:tiago-splitter:1985-01-01",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.122622,
+    "block_pct": 0.024351,
+    "defensive_rebound_pct": 0.149662,
+    "fouls_per_minute": 0.109092,
+    "free_throw_attempt_rate": 0.765676,
+    "free_throw_pct": 0.698608,
+    "offensive_rebound_pct": 0.089663,
+    "steal_pct": 0.017708,
+    "three_point_attempt_rate": 0.121662,
+    "three_point_pct": 0.326521,
+    "turnovers_per_fga": 0.239497,
+    "two_point_pct": 0.51294,
+    "usage_pct": 0.183363
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:can:carl-english:1981-02-02": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:can:carl-english:1981-02-02",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:can:denham-brown:1983-01-06": {
+   "as_of": "2005-08-24",
+   "defense": -0.1794,
+   "fiba_key": "fiba:can:denham-brown:1983-01-06",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.100655,
+    "block_pct": 0.006312,
+    "defensive_rebound_pct": 0.131514,
+    "fouls_per_minute": 0.094182,
+    "free_throw_attempt_rate": 0.212068,
+    "free_throw_pct": 0.666176,
+    "offensive_rebound_pct": 0.086171,
+    "steal_pct": 0.016272,
+    "three_point_attempt_rate": 0.29877,
+    "three_point_pct": 0.381304,
+    "turnovers_per_fga": 0.166687,
+    "two_point_pct": 0.446232,
+    "usage_pct": 0.249076
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:can:james-gillingham:1981-08-20": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:can:james-gillingham:1981-08-20",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:can:jermaine-anderson:1983-02-08": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:can:jermaine-anderson:1983-02-08",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:can:jermaine-bucknor:1983-11-01": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:can:jermaine-bucknor:1983-11-01",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:can:juan-mendez:1981-09-23": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:can:juan-mendez:1981-09-23",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:can:kevin-jobity:1974-11-21": {
+   "as_of": "2005-08-24",
+   "defense": 0.1583,
+   "fiba_key": "fiba:can:kevin-jobity:1974-11-21",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.07259,
+    "block_pct": 0.016356,
+    "defensive_rebound_pct": 0.14943,
+    "fouls_per_minute": 0.129289,
+    "free_throw_attempt_rate": 0.475467,
+    "free_throw_pct": 0.678046,
+    "offensive_rebound_pct": 0.068868,
+    "steal_pct": 0.01196,
+    "three_point_attempt_rate": 0.127366,
+    "three_point_pct": 0.347932,
+    "turnovers_per_fga": 0.314372,
+    "two_point_pct": 0.508834,
+    "usage_pct": 0.193964
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:can:levon-kendall:1984-07-04": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:can:levon-kendall:1984-07-04",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:can:nathan-doornekamp:1982-10-09": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:can:nathan-doornekamp:1982-10-09",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:can:randall-nohr:1977-06-26": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:can:randall-nohr:1977-06-26",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:can:richard-anderson:1977-11-30": {
+   "as_of": "2005-08-24",
+   "defense": 0.1583,
+   "fiba_key": "fiba:can:richard-anderson:1977-11-30",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.097897,
+    "block_pct": 0.023015,
+    "defensive_rebound_pct": 0.150333,
+    "fouls_per_minute": 0.136031,
+    "free_throw_attempt_rate": 0.529419,
+    "free_throw_pct": 0.666121,
+    "offensive_rebound_pct": 0.065499,
+    "steal_pct": 0.020331,
+    "three_point_attempt_rate": 0.117302,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.311101,
+    "two_point_pct": 0.477579,
+    "usage_pct": 0.188492
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:can:vidal-massiah:1979-02-01": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:can:vidal-massiah:1979-02-01",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:dom:amaury-filion:1981-08-01": {
+   "as_of": "2005-08-24",
+   "defense": -1.1458,
+   "fiba_key": "fiba:dom:amaury-filion:1981-08-01",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.14165,
+    "block_pct": 0.009111,
+    "defensive_rebound_pct": 0.13735,
+    "fouls_per_minute": 0.105339,
+    "free_throw_attempt_rate": 0.423875,
+    "free_throw_pct": 0.702305,
+    "offensive_rebound_pct": 0.076621,
+    "steal_pct": 0.015248,
+    "three_point_attempt_rate": 0.302306,
+    "three_point_pct": 0.331998,
+    "turnovers_per_fga": 0.236791,
+    "two_point_pct": 0.496093,
+    "usage_pct": 0.236373
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:dom:andy-turner:1980-12-26": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:dom:andy-turner:1980-12-26",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:dom:cristian-arias:1981-11-15": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:dom:cristian-arias:1981-11-15",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:dom:felipe-lopez:1974-12-19": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:dom:felipe-lopez:1974-12-19",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:dom:francisco-garcia:1980-12-31": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:dom:francisco-garcia:1980-12-31",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:dom:jack-martinez:1981-10-12": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:dom:jack-martinez:1981-10-12",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:dom:jaime-peterson:1971-09-29": {
+   "as_of": "2005-08-24",
+   "defense": -1.1458,
+   "fiba_key": "fiba:dom:jaime-peterson:1971-09-29",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.114496,
+    "block_pct": 0.026661,
+    "defensive_rebound_pct": 0.159768,
+    "fouls_per_minute": 0.121842,
+    "free_throw_attempt_rate": 0.304005,
+    "free_throw_pct": 0.659411,
+    "offensive_rebound_pct": 0.078917,
+    "steal_pct": 0.015135,
+    "three_point_attempt_rate": 0.072098,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.26224,
+    "two_point_pct": 0.479592,
+    "usage_pct": 0.168464
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:dom:jose-vargas:1963-06-23": {
+   "as_of": "2005-08-24",
+   "defense": -1.1458,
+   "fiba_key": "fiba:dom:jose-vargas:1963-06-23",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.096864,
+    "block_pct": 0.017215,
+    "defensive_rebound_pct": 0.157291,
+    "fouls_per_minute": 0.100824,
+    "free_throw_attempt_rate": 0.289685,
+    "free_throw_pct": 0.654665,
+    "offensive_rebound_pct": 0.078859,
+    "steal_pct": 0.014595,
+    "three_point_attempt_rate": 0.07904,
+    "three_point_pct": 0.364326,
+    "turnovers_per_fga": 0.174611,
+    "two_point_pct": 0.445831,
+    "usage_pct": 0.200493
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:dom:josh-asselin:1978-12-24": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:dom:josh-asselin:1978-12-24",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:dom:luis-flores:1981-04-11": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:dom:luis-flores:1981-04-11",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:dom:marlon-martinez:1979-01-17": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:dom:marlon-martinez:1979-01-17",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:dom:otto-ramirez:1974-11-14": {
+   "as_of": "2005-08-24",
+   "defense": -1.1458,
+   "fiba_key": "fiba:dom:otto-ramirez:1974-11-14",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.147577,
+    "block_pct": 0.009089,
+    "defensive_rebound_pct": 0.113457,
+    "fouls_per_minute": 0.117484,
+    "free_throw_attempt_rate": 0.192569,
+    "free_throw_pct": 0.703876,
+    "offensive_rebound_pct": 0.044785,
+    "steal_pct": 0.0215,
+    "three_point_attempt_rate": 0.273547,
+    "three_point_pct": 0.341527,
+    "turnovers_per_fga": 0.210133,
+    "two_point_pct": 0.450113,
+    "usage_pct": 0.157422
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:mex:adam-parada:1981-10-21": {
+   "as_of": "2005-08-24",
+   "defense": -0.839,
+   "fiba_key": "fiba:mex:adam-parada:1981-10-21",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.075834,
+    "block_pct": 0.014147,
+    "defensive_rebound_pct": 0.161902,
+    "fouls_per_minute": 0.138561,
+    "free_throw_attempt_rate": 0.436541,
+    "free_throw_pct": 0.620182,
+    "offensive_rebound_pct": 0.074412,
+    "steal_pct": 0.010655,
+    "three_point_attempt_rate": 0.079892,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.221315,
+    "two_point_pct": 0.470543,
+    "usage_pct": 0.181016
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:mex:alonso-izaguirre:1976-12-14": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:mex:alonso-izaguirre:1976-12-14",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:mex:anthony-pedroza:1979-03-07": {
+   "as_of": "2005-08-24",
+   "defense": -0.839,
+   "fiba_key": "fiba:mex:anthony-pedroza:1979-03-07",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.100118,
+    "block_pct": 0.013175,
+    "defensive_rebound_pct": 0.127324,
+    "fouls_per_minute": 0.105561,
+    "free_throw_attempt_rate": 0.307835,
+    "free_throw_pct": 0.673734,
+    "offensive_rebound_pct": 0.060888,
+    "steal_pct": 0.016579,
+    "three_point_attempt_rate": 0.286923,
+    "three_point_pct": 0.35276,
+    "turnovers_per_fga": 0.215011,
+    "two_point_pct": 0.483457,
+    "usage_pct": 0.192827
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:mex:david-crouse:1974-08-10": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:mex:david-crouse:1974-08-10",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:mex:enrique-gonzalez:1968-09-10": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:mex:enrique-gonzalez:1968-09-10",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:mex:enrique-zuniga:1976-07-07": {
+   "as_of": "2005-08-24",
+   "defense": -0.839,
+   "fiba_key": "fiba:mex:enrique-zuniga:1976-07-07",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.108864,
+    "block_pct": 0.009722,
+    "defensive_rebound_pct": 0.124197,
+    "fouls_per_minute": 0.117004,
+    "free_throw_attempt_rate": 0.286361,
+    "free_throw_pct": 0.689775,
+    "offensive_rebound_pct": 0.047054,
+    "steal_pct": 0.019729,
+    "three_point_attempt_rate": 0.306235,
+    "three_point_pct": 0.336887,
+    "turnovers_per_fga": 0.266091,
+    "two_point_pct": 0.463692,
+    "usage_pct": 0.18587
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:mex:eric-hare:1979-01-11": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:mex:eric-hare:1979-01-11",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:mex:horacio-llamas:1973-07-17": {
+   "as_of": "2005-08-24",
+   "defense": -0.839,
+   "fiba_key": "fiba:mex:horacio-llamas:1973-07-17",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.141038,
+    "block_pct": 0.011738,
+    "defensive_rebound_pct": 0.148269,
+    "fouls_per_minute": 0.121436,
+    "free_throw_attempt_rate": 0.521154,
+    "free_throw_pct": 0.682568,
+    "offensive_rebound_pct": 0.054164,
+    "steal_pct": 0.015396,
+    "three_point_attempt_rate": 0.214369,
+    "three_point_pct": 0.36789,
+    "turnovers_per_fga": 0.240305,
+    "two_point_pct": 0.479648,
+    "usage_pct": 0.203768
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:mex:omar-quintero:1981-09-26": {
+   "as_of": "2005-08-24",
+   "defense": -0.839,
+   "fiba_key": "fiba:mex:omar-quintero:1981-09-26",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.133204,
+    "block_pct": 0.005476,
+    "defensive_rebound_pct": 0.106151,
+    "fouls_per_minute": 0.099498,
+    "free_throw_attempt_rate": 0.357623,
+    "free_throw_pct": 0.765069,
+    "offensive_rebound_pct": 0.056618,
+    "steal_pct": 0.023134,
+    "three_point_attempt_rate": 0.348053,
+    "three_point_pct": 0.392239,
+    "turnovers_per_fga": 0.175875,
+    "two_point_pct": 0.509267,
+    "usage_pct": 0.221215
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:mex:ramses-benitez:1979-09-10": {
+   "as_of": "2005-08-24",
+   "defense": -0.839,
+   "fiba_key": "fiba:mex:ramses-benitez:1979-09-10",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.111414,
+    "block_pct": 0.013061,
+    "defensive_rebound_pct": 0.188234,
+    "fouls_per_minute": 0.108744,
+    "free_throw_attempt_rate": 0.468641,
+    "free_throw_pct": 0.697945,
+    "offensive_rebound_pct": 0.088378,
+    "steal_pct": 0.013484,
+    "three_point_attempt_rate": 0.174502,
+    "three_point_pct": 0.321574,
+    "turnovers_per_fga": 0.162101,
+    "two_point_pct": 0.530102,
+    "usage_pct": 0.173659
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:mex:romel-beck:1982-05-29": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:mex:romel-beck:1982-05-29",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:mex:victor-avila:1977-03-23": {
+   "as_of": "2005-08-24",
+   "defense": -0.839,
+   "fiba_key": "fiba:mex:victor-avila:1977-03-23",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.084818,
+    "block_pct": 0.009555,
+    "defensive_rebound_pct": 0.125771,
+    "fouls_per_minute": 0.111538,
+    "free_throw_attempt_rate": 0.62724,
+    "free_throw_pct": 0.67869,
+    "offensive_rebound_pct": 0.058369,
+    "steal_pct": 0.017641,
+    "three_point_attempt_rate": 0.164222,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.275071,
+    "two_point_pct": 0.506092,
+    "usage_pct": 0.194547
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pan:antonio-garcia:1976-05-11": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pan:antonio-garcia:1976-05-11",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pan:chris-warren:1981-01-19": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pan:chris-warren:1981-01-19",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pan:danilo-pinnock:1983-12-11": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pan:danilo-pinnock:1983-12-11",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pan:dionisio-gomez:1980-04-07": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pan:dionisio-gomez:1980-04-07",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pan:eduardo-isaac:1980-02-11": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pan:eduardo-isaac:1980-02-11",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pan:eric-cardenas:1973-11-29": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pan:eric-cardenas:1973-11-29",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pan:jaime-lloreda:1980-10-11": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pan:jaime-lloreda:1980-10-11",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pan:jair-peralta:1976-01-05": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pan:jair-peralta:1976-01-05",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pan:joel-munoz:1980-06-24": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pan:joel-munoz:1980-06-24",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pan:maximiliano-gomez:1975-12-18": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pan:maximiliano-gomez:1975-12-18",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pan:michael-hicks:1989-06-30": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pan:michael-hicks:1989-06-30",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pan:reyjavick-de-gracia:1981-11-05": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pan:reyjavick-de-gracia:1981-11-05",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pur:angel-figueroa:1981-10-13": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pur:angel-figueroa:1981-10-13",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pur:antonio-latimer:1978-11-26": {
+   "as_of": "2005-08-24",
+   "defense": 0.7833,
+   "fiba_key": "fiba:pur:antonio-latimer:1978-11-26",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.092626,
+    "block_pct": 0.023153,
+    "defensive_rebound_pct": 0.166924,
+    "fouls_per_minute": 0.108567,
+    "free_throw_attempt_rate": 0.369759,
+    "free_throw_pct": 0.620766,
+    "offensive_rebound_pct": 0.081422,
+    "steal_pct": 0.014737,
+    "three_point_attempt_rate": 0.18815,
+    "three_point_pct": 0.336443,
+    "turnovers_per_fga": 0.265835,
+    "two_point_pct": 0.496223,
+    "usage_pct": 0.180503
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pur:bobby-joe-hatton:1976-10-11": {
+   "as_of": "2005-08-24",
+   "defense": 0.4806,
+   "fiba_key": "fiba:pur:bobby-joe-hatton:1976-10-11",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.153803,
+    "block_pct": 0.00988,
+    "defensive_rebound_pct": 0.131212,
+    "fouls_per_minute": 0.107041,
+    "free_throw_attempt_rate": 0.774216,
+    "free_throw_pct": 0.637985,
+    "offensive_rebound_pct": 0.06493,
+    "steal_pct": 0.015679,
+    "three_point_attempt_rate": 0.21227,
+    "three_point_pct": 0.322554,
+    "turnovers_per_fga": 0.335768,
+    "two_point_pct": 0.484487,
+    "usage_pct": 0.213886
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pur:christian-dalmau:1975-08-29": {
+   "as_of": "2005-08-24",
+   "defense": 0.3111,
+   "fiba_key": "fiba:pur:christian-dalmau:1975-08-29",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.094669,
+    "block_pct": 0.010471,
+    "defensive_rebound_pct": 0.12729,
+    "fouls_per_minute": 0.130552,
+    "free_throw_attempt_rate": 0.48944,
+    "free_throw_pct": 0.672192,
+    "offensive_rebound_pct": 0.055099,
+    "steal_pct": 0.018928,
+    "three_point_attempt_rate": 0.485915,
+    "three_point_pct": 0.322985,
+    "turnovers_per_fga": 0.228039,
+    "two_point_pct": 0.476241,
+    "usage_pct": 0.183326
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pur:david-cortez:1981-12-23": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pur:david-cortez:1981-12-23",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pur:elias-larry-ayuso:1977-03-27": {
+   "as_of": "2005-08-24",
+   "defense": 0.441,
+   "fiba_key": "fiba:pur:elias-larry-ayuso:1977-03-27",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.077915,
+    "block_pct": 0.005308,
+    "defensive_rebound_pct": 0.105963,
+    "fouls_per_minute": 0.091711,
+    "free_throw_attempt_rate": 0.353237,
+    "free_throw_pct": 0.834117,
+    "offensive_rebound_pct": 0.025404,
+    "steal_pct": 0.021852,
+    "three_point_attempt_rate": 0.66121,
+    "three_point_pct": 0.384352,
+    "turnovers_per_fga": 0.128455,
+    "two_point_pct": 0.47272,
+    "usage_pct": 0.220997
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pur:filiberto-rivera:1982-09-28": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pur:filiberto-rivera:1982-09-28",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pur:gabriel-colon:1984-12-20": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pur:gabriel-colon:1984-12-20",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pur:manuel-narvaez:1981-12-18": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:pur:manuel-narvaez:1981-12-18",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pur:peter-john-ramos:1985-05-23": {
+   "as_of": "2005-08-24",
+   "defense": -0.2653,
+   "fiba_key": "fiba:pur:peter-john-ramos:1985-05-23",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.074693,
+    "block_pct": 0.009055,
+    "defensive_rebound_pct": 0.157879,
+    "fouls_per_minute": 0.122046,
+    "free_throw_attempt_rate": 0.615618,
+    "free_throw_pct": 0.659411,
+    "offensive_rebound_pct": 0.052134,
+    "steal_pct": 0.016857,
+    "three_point_attempt_rate": 0.139434,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.155403,
+    "two_point_pct": 0.483457,
+    "usage_pct": 0.173871
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pur:rick-apodaca:1980-07-01": {
+   "as_of": "2005-08-24",
+   "defense": 0.6915,
+   "fiba_key": "fiba:pur:rick-apodaca:1980-07-01",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.099143,
+    "block_pct": 0.017325,
+    "defensive_rebound_pct": 0.120778,
+    "fouls_per_minute": 0.125599,
+    "free_throw_attempt_rate": 0.209286,
+    "free_throw_pct": 0.629795,
+    "offensive_rebound_pct": 0.073657,
+    "steal_pct": 0.022212,
+    "three_point_attempt_rate": 0.367876,
+    "three_point_pct": 0.345051,
+    "turnovers_per_fga": 0.250545,
+    "two_point_pct": 0.474941,
+    "usage_pct": 0.194475
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:pur:sharif-fajardo:1976-06-09": {
+   "as_of": "2005-08-24",
+   "defense": 0.2993,
+   "fiba_key": "fiba:pur:sharif-fajardo:1976-06-09",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.053864,
+    "block_pct": 0.007946,
+    "defensive_rebound_pct": 0.168081,
+    "fouls_per_minute": 0.120978,
+    "free_throw_attempt_rate": 0.410402,
+    "free_throw_pct": 0.639706,
+    "offensive_rebound_pct": 0.096028,
+    "steal_pct": 0.01516,
+    "three_point_attempt_rate": 0.161386,
+    "three_point_pct": 0.311406,
+    "turnovers_per_fga": 0.252926,
+    "two_point_pct": 0.47272,
+    "usage_pct": 0.198989
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:uru:claudio-charquero:1977-07-22": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:uru:claudio-charquero:1977-07-22",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:uru:diego-castrillon:1975-01-08": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:uru:diego-castrillon:1975-01-08",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:uru:esteban-batista:1983-09-02": {
+   "as_of": "2005-08-24",
+   "defense": -0.7805,
+   "fiba_key": "fiba:uru:esteban-batista:1983-09-02",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.112466,
+    "block_pct": 0.010076,
+    "defensive_rebound_pct": 0.128041,
+    "fouls_per_minute": 0.132168,
+    "free_throw_attempt_rate": 0.421767,
+    "free_throw_pct": 0.642156,
+    "offensive_rebound_pct": 0.061889,
+    "steal_pct": 0.014917,
+    "three_point_attempt_rate": 0.197067,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.41229,
+    "two_point_pct": 0.506583,
+    "usage_pct": 0.180889
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:uru:gaston-paez:1979-09-22": {
+   "as_of": "2005-08-24",
+   "defense": -0.7805,
+   "fiba_key": "fiba:uru:gaston-paez:1979-09-22",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.092911,
+    "block_pct": 0.011264,
+    "defensive_rebound_pct": 0.130747,
+    "fouls_per_minute": 0.123358,
+    "free_throw_attempt_rate": 0.341937,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.054514,
+    "steal_pct": 0.018736,
+    "three_point_attempt_rate": 0.321304,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.277024,
+    "two_point_pct": 0.490297,
+    "usage_pct": 0.192853
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:uru:leandro-garcia-morales:1980-06-27": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:uru:leandro-garcia-morales:1980-06-27",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:uru:luis-silveira:1971-01-16": {
+   "as_of": "2005-08-24",
+   "defense": -0.7805,
+   "fiba_key": "fiba:uru:luis-silveira:1971-01-16",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.099394,
+    "block_pct": 0.011167,
+    "defensive_rebound_pct": 0.121289,
+    "fouls_per_minute": 0.135201,
+    "free_throw_attempt_rate": 0.502247,
+    "free_throw_pct": 0.699411,
+    "offensive_rebound_pct": 0.070227,
+    "steal_pct": 0.020234,
+    "three_point_attempt_rate": 0.519881,
+    "three_point_pct": 0.346055,
+    "turnovers_per_fga": 0.213627,
+    "two_point_pct": 0.494616,
+    "usage_pct": 0.173988
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:uru:martin-osimani:1981-05-22": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:uru:martin-osimani:1981-05-22",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:uru:mauricio-aguiar:1983-02-03": {
+   "as_of": "2005-08-24",
+   "defense": -0.7805,
+   "fiba_key": "fiba:uru:mauricio-aguiar:1983-02-03",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.084711,
+    "block_pct": 0.008686,
+    "defensive_rebound_pct": 0.134265,
+    "fouls_per_minute": 0.101398,
+    "free_throw_attempt_rate": 0.394864,
+    "free_throw_pct": 0.672869,
+    "offensive_rebound_pct": 0.049582,
+    "steal_pct": 0.016038,
+    "three_point_attempt_rate": 0.335432,
+    "three_point_pct": 0.36155,
+    "turnovers_per_fga": 0.181341,
+    "two_point_pct": 0.480121,
+    "usage_pct": 0.184162
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:uru:nicolas-borsellino:1986-05-08": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:uru:nicolas-borsellino:1986-05-08",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:uru:nicolas-mazzarino:1975-10-21": {
+   "as_of": "2005-08-24",
+   "defense": -0.7805,
+   "fiba_key": "fiba:uru:nicolas-mazzarino:1975-10-21",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.14145,
+    "block_pct": 0.010347,
+    "defensive_rebound_pct": 0.108076,
+    "fouls_per_minute": 0.108322,
+    "free_throw_attempt_rate": 0.313149,
+    "free_throw_pct": 0.68464,
+    "offensive_rebound_pct": 0.054874,
+    "steal_pct": 0.017316,
+    "three_point_attempt_rate": 0.584545,
+    "three_point_pct": 0.346493,
+    "turnovers_per_fga": 0.250192,
+    "two_point_pct": 0.473112,
+    "usage_pct": 0.220872
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:uru:pablo-morales:1978-05-31": {
+   "as_of": "2005-08-24",
+   "defense": -0.7805,
+   "fiba_key": "fiba:uru:pablo-morales:1978-05-31",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.089087,
+    "block_pct": 0.009861,
+    "defensive_rebound_pct": 0.119884,
+    "fouls_per_minute": 0.122228,
+    "free_throw_attempt_rate": 0.223444,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.060568,
+    "steal_pct": 0.02001,
+    "three_point_attempt_rate": 0.60428,
+    "three_point_pct": 0.346055,
+    "turnovers_per_fga": 0.221977,
+    "two_point_pct": 0.506691,
+    "usage_pct": 0.185625
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:uru:sebastian-izaguirre:1985-12-04": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:uru:sebastian-izaguirre:1985-12-04",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:usa:aaron-mcghee:1979-06-28": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:usa:aaron-mcghee:1979-06-28",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:usa:adam-chubb:1981-07-05": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:usa:adam-chubb:1981-07-05",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:usa:alex-scales:1978-07-03": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:usa:alex-scales:1978-07-03",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:usa:charlie-bell:1979-03-12": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:usa:charlie-bell:1979-03-12",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:usa:jerome-beasley:1980-05-17": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:usa:jerome-beasley:1980-05-17",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:usa:kris-lang:1979-12-12": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:usa:kris-lang:1979-12-12",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:usa:lynn-greer:1979-10-23": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:usa:lynn-greer:1979-10-23",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:usa:marque-perry:1981-01-28": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:usa:marque-perry:1981-01-28",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:usa:noel-felix:1981-10-04": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:usa:noel-felix:1981-10-04",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:usa:ron-slay:1981-06-29": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:usa:ron-slay:1981-06-29",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:usa:tang-hamilton:1978-05-26": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:usa:tang-hamilton:1978-05-26",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:usa:tyus-edney:1973-02-14": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:usa:tyus-edney:1973-02-14",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:ven:askia-jones:1971-12-19": {
+   "as_of": "2005-08-24",
+   "defense": 0.0,
+   "fiba_key": "fiba:ven:askia-jones:1971-12-19",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.095234,
+    "block_pct": 0.011545,
+    "defensive_rebound_pct": 0.134016,
+    "fouls_per_minute": 0.113942,
+    "free_throw_attempt_rate": 0.376131,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.055877,
+    "steal_pct": 0.017092,
+    "three_point_attempt_rate": 0.3695,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.240875,
+    "two_point_pct": 0.498469,
+    "usage_pct": 0.18981
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:ven:carlos-morris:1975-11-10": {
+   "as_of": "2005-08-24",
+   "defense": -0.2481,
+   "fiba_key": "fiba:ven:carlos-morris:1975-11-10",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.107909,
+    "block_pct": 0.007051,
+    "defensive_rebound_pct": 0.12049,
+    "fouls_per_minute": 0.123018,
+    "free_throw_attempt_rate": 0.305741,
+    "free_throw_pct": 0.703159,
+    "offensive_rebound_pct": 0.049843,
+    "steal_pct": 0.020752,
+    "three_point_attempt_rate": 0.498079,
+    "three_point_pct": 0.386324,
+    "turnovers_per_fga": 0.212457,
+    "two_point_pct": 0.481233,
+    "usage_pct": 0.186485
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:ven:diego-guevara:1978-04-26": {
+   "as_of": "2005-08-24",
+   "defense": -0.3097,
+   "fiba_key": "fiba:ven:diego-guevara:1978-04-26",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.087237,
+    "block_pct": 0.010576,
+    "defensive_rebound_pct": 0.132573,
+    "fouls_per_minute": 0.131092,
+    "free_throw_attempt_rate": 0.275218,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.051185,
+    "steal_pct": 0.015657,
+    "three_point_attempt_rate": 0.238387,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.358486,
+    "two_point_pct": 0.494349,
+    "usage_pct": 0.177238
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:ven:ernesto-mijares:1976-09-30": {
+   "as_of": "2005-08-24",
+   "defense": -0.1975,
+   "fiba_key": "fiba:ven:ernesto-mijares:1976-09-30",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.164654,
+    "block_pct": 0.01146,
+    "defensive_rebound_pct": 0.122276,
+    "fouls_per_minute": 0.094471,
+    "free_throw_attempt_rate": 0.245806,
+    "free_throw_pct": 0.679411,
+    "offensive_rebound_pct": 0.032989,
+    "steal_pct": 0.021197,
+    "three_point_attempt_rate": 0.618023,
+    "three_point_pct": 0.299163,
+    "turnovers_per_fga": 0.349721,
+    "two_point_pct": 0.491296,
+    "usage_pct": 0.156714
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:ven:heberth-bayona:1978-04-26": {
+   "as_of": "2005-08-24",
+   "defense": -0.3097,
+   "fiba_key": "fiba:ven:heberth-bayona:1978-04-26",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.087237,
+    "block_pct": 0.010576,
+    "defensive_rebound_pct": 0.132573,
+    "fouls_per_minute": 0.131092,
+    "free_throw_attempt_rate": 0.275218,
+    "free_throw_pct": 0.674264,
+    "offensive_rebound_pct": 0.051185,
+    "steal_pct": 0.015657,
+    "three_point_attempt_rate": 0.238387,
+    "three_point_pct": 0.353731,
+    "turnovers_per_fga": 0.358486,
+    "two_point_pct": 0.494349,
+    "usage_pct": 0.177238
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:ven:hector-romero:1980-01-03": {
+   "as_of": "2005-08-24",
+   "defense": -0.0907,
+   "fiba_key": "fiba:ven:hector-romero:1980-01-03",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.098185,
+    "block_pct": 0.013371,
+    "defensive_rebound_pct": 0.142188,
+    "fouls_per_minute": 0.123547,
+    "free_throw_attempt_rate": 0.767176,
+    "free_throw_pct": 0.671906,
+    "offensive_rebound_pct": 0.073891,
+    "steal_pct": 0.020207,
+    "three_point_attempt_rate": 0.264438,
+    "three_point_pct": 0.374578,
+    "turnovers_per_fga": 0.293946,
+    "two_point_pct": 0.525315,
+    "usage_pct": 0.202911
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:ven:luis-julio:1980-06-12": {
+   "as_of": "2005-08-24",
+   "defense": -0.3097,
+   "fiba_key": "fiba:ven:luis-julio:1980-06-12",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.107736,
+    "block_pct": 0.007997,
+    "defensive_rebound_pct": 0.131958,
+    "fouls_per_minute": 0.094642,
+    "free_throw_attempt_rate": 0.473266,
+    "free_throw_pct": 0.671202,
+    "offensive_rebound_pct": 0.069745,
+    "steal_pct": 0.014491,
+    "three_point_attempt_rate": 0.088582,
+    "three_point_pct": 0.34232,
+    "turnovers_per_fga": 0.27662,
+    "two_point_pct": 0.493118,
+    "usage_pct": 0.178311
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:ven:miguel-angel-marriaga:1984-06-06": {
+   "as_of": "2005-08-24",
+   "defense": -0.3097,
+   "fiba_key": "fiba:ven:miguel-angel-marriaga:1984-06-06",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.105491,
+    "block_pct": 0.015182,
+    "defensive_rebound_pct": 0.145767,
+    "fouls_per_minute": 0.131154,
+    "free_throw_attempt_rate": 0.319644,
+    "free_throw_pct": 0.666012,
+    "offensive_rebound_pct": 0.085886,
+    "steal_pct": 0.017053,
+    "three_point_attempt_rate": 0.242537,
+    "three_point_pct": 0.35276,
+    "turnovers_per_fga": 0.230759,
+    "two_point_pct": 0.498649,
+    "usage_pct": 0.188895
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:ven:oscar-torres:1976-12-18": {
+   "as_of": "2005-08-24",
+   "defense": -0.2141,
+   "fiba_key": "fiba:ven:oscar-torres:1976-12-18",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.132741,
+    "block_pct": 0.006014,
+    "defensive_rebound_pct": 0.156818,
+    "fouls_per_minute": 0.09909,
+    "free_throw_attempt_rate": 0.570356,
+    "free_throw_pct": 0.683088,
+    "offensive_rebound_pct": 0.068451,
+    "steal_pct": 0.025854,
+    "three_point_attempt_rate": 0.332632,
+    "three_point_pct": 0.329076,
+    "turnovers_per_fga": 0.271297,
+    "two_point_pct": 0.503887,
+    "usage_pct": 0.219686
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:ven:richard-lugo:1976-09-30": {
+   "as_of": "2005-08-24",
+   "defense": -0.1975,
+   "fiba_key": "fiba:ven:richard-lugo:1976-09-30",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.164654,
+    "block_pct": 0.01146,
+    "defensive_rebound_pct": 0.122276,
+    "fouls_per_minute": 0.094471,
+    "free_throw_attempt_rate": 0.245806,
+    "free_throw_pct": 0.679411,
+    "offensive_rebound_pct": 0.032989,
+    "steal_pct": 0.021197,
+    "three_point_attempt_rate": 0.618023,
+    "three_point_pct": 0.299163,
+    "turnovers_per_fga": 0.349721,
+    "two_point_pct": 0.491296,
+    "usage_pct": 0.156714
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:ven:tomas-aguilera:1977-09-25": {
+   "as_of": "2005-08-24",
+   "defense": -0.2972,
+   "fiba_key": "fiba:ven:tomas-aguilera:1977-09-25",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.080857,
+    "block_pct": 0.008459,
+    "defensive_rebound_pct": 0.162783,
+    "fouls_per_minute": 0.13013,
+    "free_throw_attempt_rate": 0.286584,
+    "free_throw_pct": 0.66615,
+    "offensive_rebound_pct": 0.082115,
+    "steal_pct": 0.023518,
+    "three_point_attempt_rate": 0.328219,
+    "three_point_pct": 0.340298,
+    "turnovers_per_fga": 0.206615,
+    "two_point_pct": 0.514038,
+    "usage_pct": 0.190567
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  },
+  "fiba:ven:victor-diaz:1968-04-02": {
+   "as_of": "2005-08-24",
+   "defense": -0.2179,
+   "fiba_key": "fiba:ven:victor-diaz:1968-04-02",
+   "model_version": "fiba-2006.1",
+   "rates": {
+    "assist_pct": 0.118257,
+    "block_pct": 0.008335,
+    "defensive_rebound_pct": 0.083258,
+    "fouls_per_minute": 0.094464,
+    "free_throw_attempt_rate": 0.313854,
+    "free_throw_pct": 0.786764,
+    "offensive_rebound_pct": 0.033209,
+    "steal_pct": 0.01389,
+    "three_point_attempt_rate": 0.464173,
+    "three_point_pct": 0.338698,
+    "turnovers_per_fga": 0.165006,
+    "two_point_pct": 0.461413,
+    "usage_pct": 0.253235
+   },
+   "season_end_year": 2005,
+   "source_sha256": "1c369625b10b59322eca3b3ecaabd26555f7cbdadcd5fba69587c116fa5120ec"
+  }
+ },
+ "first_game": "2005-08-24",
+ "game_type": "continental_qualifier",
+ "games": [
+  {
+   "away": "Panama",
+   "away_slot": null,
+   "date": "2005-08-24",
+   "home": "United States",
+   "home_slot": null,
+   "number": 1,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Brazil",
+   "away_slot": null,
+   "date": "2005-08-24",
+   "home": "Venezuela",
+   "home_slot": null,
+   "number": 2,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "United States",
+   "away_slot": null,
+   "date": "2005-08-25",
+   "home": "Brazil",
+   "home_slot": null,
+   "number": 3,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Venezuela",
+   "away_slot": null,
+   "date": "2005-08-25",
+   "home": "Canada",
+   "home_slot": null,
+   "number": 4,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Brazil",
+   "away_slot": null,
+   "date": "2005-08-26",
+   "home": "Panama",
+   "home_slot": null,
+   "number": 5,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Canada",
+   "away_slot": null,
+   "date": "2005-08-26",
+   "home": "United States",
+   "home_slot": null,
+   "number": 6,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "United States",
+   "away_slot": null,
+   "date": "2005-08-27",
+   "home": "Venezuela",
+   "home_slot": null,
+   "number": 7,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Canada",
+   "away_slot": null,
+   "date": "2005-08-27",
+   "home": "Panama",
+   "home_slot": null,
+   "number": 8,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Canada",
+   "away_slot": null,
+   "date": "2005-08-28",
+   "home": "Brazil",
+   "home_slot": null,
+   "number": 9,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Venezuela",
+   "away_slot": null,
+   "date": "2005-08-28",
+   "home": "Panama",
+   "home_slot": null,
+   "number": 10,
+   "stage": "group_A",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Mexico",
+   "away_slot": null,
+   "date": "2005-08-24",
+   "home": "Argentina",
+   "home_slot": null,
+   "number": 11,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Dominican Republic",
+   "away_slot": null,
+   "date": "2005-08-24",
+   "home": "Uruguay",
+   "home_slot": null,
+   "number": 12,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Uruguay",
+   "away_slot": null,
+   "date": "2005-08-25",
+   "home": "Mexico",
+   "home_slot": null,
+   "number": 13,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Argentina",
+   "away_slot": null,
+   "date": "2005-08-25",
+   "home": "Puerto Rico",
+   "home_slot": null,
+   "number": 14,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Puerto Rico",
+   "away_slot": null,
+   "date": "2005-08-26",
+   "home": "Uruguay",
+   "home_slot": null,
+   "number": 15,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Mexico",
+   "away_slot": null,
+   "date": "2005-08-26",
+   "home": "Dominican Republic",
+   "home_slot": null,
+   "number": 16,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Uruguay",
+   "away_slot": null,
+   "date": "2005-08-27",
+   "home": "Argentina",
+   "home_slot": null,
+   "number": 17,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Dominican Republic",
+   "away_slot": null,
+   "date": "2005-08-27",
+   "home": "Puerto Rico",
+   "home_slot": null,
+   "number": 18,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Puerto Rico",
+   "away_slot": null,
+   "date": "2005-08-28",
+   "home": "Mexico",
+   "home_slot": null,
+   "number": 19,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": "Argentina",
+   "away_slot": null,
+   "date": "2005-08-28",
+   "home": "Dominican Republic",
+   "home_slot": null,
+   "number": 20,
+   "stage": "group_B",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "A4",
+   "date": "2005-08-30",
+   "home": null,
+   "home_slot": "B1",
+   "number": 21,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "B4",
+   "date": "2005-08-30",
+   "home": null,
+   "home_slot": "A1",
+   "number": 22,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "B3",
+   "date": "2005-08-30",
+   "home": null,
+   "home_slot": "A2",
+   "number": 23,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "A3",
+   "date": "2005-08-30",
+   "home": null,
+   "home_slot": "B2",
+   "number": 24,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "A2",
+   "date": "2005-08-31",
+   "home": null,
+   "home_slot": "B4",
+   "number": 25,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "A1",
+   "date": "2005-08-31",
+   "home": null,
+   "home_slot": "B3",
+   "number": 26,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "B1",
+   "date": "2005-08-31",
+   "home": null,
+   "home_slot": "A3",
+   "number": 27,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "B2",
+   "date": "2005-08-31",
+   "home": null,
+   "home_slot": "A4",
+   "number": 28,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "A2",
+   "date": "2005-09-01",
+   "home": null,
+   "home_slot": "B1",
+   "number": 29,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "A3",
+   "date": "2005-09-01",
+   "home": null,
+   "home_slot": "B4",
+   "number": 30,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "A4",
+   "date": "2005-09-01",
+   "home": null,
+   "home_slot": "B3",
+   "number": 31,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "A1",
+   "date": "2005-09-01",
+   "home": null,
+   "home_slot": "B2",
+   "number": 32,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "B4",
+   "date": "2005-09-02",
+   "home": null,
+   "home_slot": "A4",
+   "number": 33,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "B1",
+   "date": "2005-09-02",
+   "home": null,
+   "home_slot": "A1",
+   "number": 34,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "B3",
+   "date": "2005-09-02",
+   "home": null,
+   "home_slot": "A3",
+   "number": 35,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "B2",
+   "date": "2005-09-02",
+   "home": null,
+   "home_slot": "A2",
+   "number": 36,
+   "stage": "group_R",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "R3",
+   "date": "2005-09-03",
+   "home": null,
+   "home_slot": "R2",
+   "number": 37,
+   "stage": "semifinal",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "R4",
+   "date": "2005-09-03",
+   "home": null,
+   "home_slot": "R1",
+   "number": 38,
+   "stage": "semifinal",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "L:37",
+   "date": "2005-09-04",
+   "home": null,
+   "home_slot": "L:38",
+   "number": 39,
+   "stage": "third_place",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  },
+  {
+   "away": null,
+   "away_slot": "W:37",
+   "date": "2005-09-04",
+   "home": null,
+   "home_slot": "W:38",
+   "number": 40,
+   "stage": "final",
+   "venue": "Palacio de los Deportes Virgilio Travieso Soto"
+  }
+ ],
+ "groups": {
+  "A": {
+   "carry_from": [],
+   "stage": "group_A",
+   "teams": [
+    "United States",
+    "Panama",
+    "Venezuela",
+    "Brazil",
+    "Canada"
+   ]
+  },
+  "B": {
+   "carry_from": [],
+   "stage": "group_B",
+   "teams": [
+    "Argentina",
+    "Mexico",
+    "Uruguay",
+    "Dominican Republic",
+    "Puerto Rico"
+   ]
+  },
+  "R": {
+   "carry_from": [
+    "A",
+    "B"
+   ],
+   "stage": "group_R",
+   "teams": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+   ]
+  }
+ },
+ "host": "Dominican Republic",
+ "last_game": "2005-09-04",
+ "minutes": {
+  "fiba:arg:federico-kammerichs:1980-06-21": 13.0,
+  "fiba:arg:gabriel-fernandez:1976-10-23": 10.44,
+  "fiba:arg:leonardo-gutierrez:1978-05-16": 9.0,
+  "fiba:bra:alex-garcia:1980-03-04": 13.94,
+  "fiba:bra:anderson-varejao:1982-09-28": 26.0,
+  "fiba:bra:guilherme-giovannoni:1980-06-02": 19.94,
+  "fiba:bra:leandro-barbosa:1982-11-28": 13.33,
+  "fiba:bra:marcelinho-machado:1975-04-12": 27.2,
+  "fiba:bra:murilo-becker:1983-07-14": 5.67,
+  "fiba:bra:tiago-splitter:1985-01-01": 15.56,
+  "fiba:can:denham-brown:1983-01-06": 19.9,
+  "fiba:can:kevin-jobity:1974-11-21": 20.6,
+  "fiba:can:richard-anderson:1977-11-30": 17.2,
+  "fiba:dom:amaury-filion:1981-08-01": 20.25,
+  "fiba:dom:jaime-peterson:1971-09-29": 23.57,
+  "fiba:dom:jose-vargas:1963-06-23": 25.71,
+  "fiba:dom:otto-ramirez:1974-11-14": 20.38,
+  "fiba:mex:adam-parada:1981-10-21": 18.12,
+  "fiba:mex:anthony-pedroza:1979-03-07": 6.33,
+  "fiba:mex:enrique-zuniga:1976-07-07": 7.5,
+  "fiba:mex:horacio-llamas:1973-07-17": 28.0,
+  "fiba:mex:omar-quintero:1981-09-26": 33.25,
+  "fiba:mex:ramses-benitez:1979-09-10": 22.12,
+  "fiba:mex:victor-avila:1977-03-23": 6.25,
+  "fiba:pur:antonio-latimer:1978-11-26": 14.68,
+  "fiba:pur:bobby-joe-hatton:1976-10-11": 10.53,
+  "fiba:pur:christian-dalmau:1975-08-29": 9.1,
+  "fiba:pur:elias-larry-ayuso:1977-03-27": 29.31,
+  "fiba:pur:peter-john-ramos:1985-05-23": 8.25,
+  "fiba:pur:rick-apodaca:1980-07-01": 9.0,
+  "fiba:pur:sharif-fajardo:1976-06-09": 18.35,
+  "fiba:uru:esteban-batista:1983-09-02": 8.75,
+  "fiba:uru:gaston-paez:1979-09-22": 3.0,
+  "fiba:uru:luis-silveira:1971-01-16": 22.0,
+  "fiba:uru:mauricio-aguiar:1983-02-03": 19.75,
+  "fiba:uru:nicolas-mazzarino:1975-10-21": 28.5,
+  "fiba:uru:pablo-morales:1978-05-31": 10.25,
+  "fiba:ven:carlos-morris:1975-11-10": 11.77,
+  "fiba:ven:diego-guevara:1978-04-26": 4.4,
+  "fiba:ven:ernesto-mijares:1976-09-30": 18.46,
+  "fiba:ven:heberth-bayona:1978-04-26": 4.4,
+  "fiba:ven:hector-romero:1980-01-03": 7.6,
+  "fiba:ven:luis-julio:1980-06-12": 27.25,
+  "fiba:ven:miguel-angel-marriaga:1984-06-06": 8.57,
+  "fiba:ven:oscar-torres:1976-12-18": 28.38,
+  "fiba:ven:richard-lugo:1976-09-30": 18.46,
+  "fiba:ven:tomas-aguilera:1977-09-25": 17.55,
+  "fiba:ven:victor-diaz:1968-04-02": 32.31
+ },
+ "name": "2005 FIBA Americas Championship for Men",
+ "qualification": [],
+ "rosters": {
+  "Argentina": {
+   "coach": "Sergio Hernández",
+   "players": [
+    {
+     "bbr_id": null,
+     "birth_date": "1983-10-28",
+     "fiba_key": "fiba:arg:antonio-porta:1983-10-28",
+     "name": "Antonio Porta",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1979-01-31",
+     "fiba_key": "fiba:arg:julio-mazzaro:1979-01-31",
+     "name": "Julio Mázzaro",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1978-01-28",
+     "fiba_key": "fiba:arg:roman-gonzalez:1978-01-28",
+     "name": "Román González",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1978-01-22",
+     "fiba_key": "fiba:arg:diego-lo-grippo:1978-01-22",
+     "name": "Diego Lo Grippo",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1973-10-18",
+     "fiba_key": "fiba:arg:daniel-farabello:1973-10-18",
+     "name": "Daniel Farabello",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1976-10-23",
+     "fiba_key": "fiba:arg:gabriel-fernandez:1976-10-23",
+     "name": "Gabriel Fernández",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1978-05-16",
+     "fiba_key": "fiba:arg:leonardo-gutierrez:1978-05-16",
+     "name": "Leonardo Gutiérrez",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1980-04-23",
+     "fiba_key": "fiba:arg:martin-leiva:1980-04-23",
+     "name": "Martín Leiva",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1983-10-10",
+     "fiba_key": "fiba:arg:juan-pedro-gutierrez:1983-10-10",
+     "name": "Juan Pedro Gutiérrez",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1979-01-15",
+     "fiba_key": "fiba:arg:paolo-quinteros:1979-01-15",
+     "name": "Paolo Quinteros",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1978-02-04",
+     "fiba_key": "fiba:arg:hernan-jasen:1978-02-04",
+     "name": "Hernán Jasen",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1980-06-21",
+     "fiba_key": "fiba:arg:federico-kammerichs:1980-06-21",
+     "name": "Federico Kammerichs",
+     "position": "F"
+    }
+   ]
+  },
+  "Brazil": {
+   "coach": "Lula Ferreira",
+   "players": [
+    {
+     "bbr_id": null,
+     "birth_date": "1975-04-12",
+     "fiba_key": "fiba:bra:marcelinho-machado:1975-04-12",
+     "name": "Marcelinho Machado",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-01-21",
+     "fiba_key": "fiba:bra:nezinho-dos-santos:1981-01-21",
+     "name": "Nezinho dos Santos",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1983-07-14",
+     "fiba_key": "fiba:bra:murilo-becker:1983-07-14",
+     "name": "Murilo Becker",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1983-05-25",
+     "fiba_key": "fiba:bra:marcelinho-huertas:1983-05-25",
+     "name": "Marcelinho Huertas",
+     "position": "G"
+    },
+    {
+     "bbr_id": "barbole01",
+     "birth_date": "1982-11-28",
+     "fiba_key": "fiba:bra:leandro-barbosa:1982-11-28",
+     "name": "Leandro Barbosa",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1983-03-29",
+     "fiba_key": "fiba:bra:jefferson-da-silva:1983-03-29",
+     "name": "Jefferson Da Silva",
+     "position": "F"
+    },
+    {
+     "bbr_id": "garcial01",
+     "birth_date": "1980-03-04",
+     "fiba_key": "fiba:bra:alex-garcia:1980-03-04",
+     "name": "Alex Garcia",
+     "position": "G/F"
+    },
+    {
+     "bbr_id": "varejan01",
+     "birth_date": "1982-09-28",
+     "fiba_key": "fiba:bra:anderson-varejao:1982-09-28",
+     "name": "Anderson Varejão",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1980-06-02",
+     "fiba_key": "fiba:bra:guilherme-giovannoni:1980-06-02",
+     "name": "Guilherme Giovannoni",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1986-06-18",
+     "fiba_key": "fiba:bra:rafael-hettsheimeir:1986-06-18",
+     "name": "Rafael Hettsheimeir",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1987-06-03",
+     "fiba_key": "fiba:bra:caio-torres:1987-06-03",
+     "name": "Caio Torres",
+     "position": "C"
+    },
+    {
+     "bbr_id": "splitti01",
+     "birth_date": "1985-01-01",
+     "fiba_key": "fiba:bra:tiago-splitter:1985-01-01",
+     "name": "Tiago Splitter",
+     "position": "F"
+    }
+   ]
+  },
+  "Canada": {
+   "coach": "Leo Rautins",
+   "players": [
+    {
+     "bbr_id": null,
+     "birth_date": "1983-02-08",
+     "fiba_key": "fiba:can:jermaine-anderson:1983-02-08",
+     "name": "Jermaine Anderson",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1983-01-06",
+     "fiba_key": "fiba:can:denham-brown:1983-01-06",
+     "name": "Denham Brown",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-08-20",
+     "fiba_key": "fiba:can:james-gillingham:1981-08-20",
+     "name": "James Gillingham",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1977-06-26",
+     "fiba_key": "fiba:can:randall-nohr:1977-06-26",
+     "name": "Randall Nohr",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-02-02",
+     "fiba_key": "fiba:can:carl-english:1981-02-02",
+     "name": "Carl English",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1984-07-04",
+     "fiba_key": "fiba:can:levon-kendall:1984-07-04",
+     "name": "Levon Kendall",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1982-10-09",
+     "fiba_key": "fiba:can:nathan-doornekamp:1982-10-09",
+     "name": "Nathan Doornekamp",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1979-02-01",
+     "fiba_key": "fiba:can:vidal-massiah:1979-02-01",
+     "name": "Vidal Massiah",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1977-11-30",
+     "fiba_key": "fiba:can:richard-anderson:1977-11-30",
+     "name": "Richard Anderson",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-09-23",
+     "fiba_key": "fiba:can:juan-mendez:1981-09-23",
+     "name": "Juan Mendez",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1983-11-01",
+     "fiba_key": "fiba:can:jermaine-bucknor:1983-11-01",
+     "name": "Jermaine Bucknor",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1974-11-21",
+     "fiba_key": "fiba:can:kevin-jobity:1974-11-21",
+     "name": "Kevin Jobity",
+     "position": "C"
+    }
+   ]
+  },
+  "Dominican Republic": {
+   "coach": "Keith Smart",
+   "players": [
+    {
+     "bbr_id": null,
+     "birth_date": "1974-11-14",
+     "fiba_key": "fiba:dom:otto-ramirez:1974-11-14",
+     "name": "Otto Ramírez",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1979-01-17",
+     "fiba_key": "fiba:dom:marlon-martinez:1979-01-17",
+     "name": "Marlon Martínez",
+     "position": "C"
+    },
+    {
+     "bbr_id": "florelu01",
+     "birth_date": "1981-04-11",
+     "fiba_key": "fiba:dom:luis-flores:1981-04-11",
+     "name": "Luis Flores",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1980-12-26",
+     "fiba_key": "fiba:dom:andy-turner:1980-12-26",
+     "name": "Andy Turner",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1978-12-24",
+     "fiba_key": "fiba:dom:josh-asselin:1978-12-24",
+     "name": "Josh Asselin",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-08-01",
+     "fiba_key": "fiba:dom:amaury-filion:1981-08-01",
+     "name": "Amaury Filion",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-11-15",
+     "fiba_key": "fiba:dom:cristian-arias:1981-11-15",
+     "name": "Cristian Arias",
+     "position": "G"
+    },
+    {
+     "bbr_id": "garcifr01",
+     "birth_date": "1980-12-31",
+     "fiba_key": "fiba:dom:francisco-garcia:1980-12-31",
+     "name": "Francisco García",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1963-06-23",
+     "fiba_key": "fiba:dom:jose-vargas:1963-06-23",
+     "name": "José Vargas",
+     "position": "C"
+    },
+    {
+     "bbr_id": "lopezfe01",
+     "birth_date": "1974-12-19",
+     "fiba_key": "fiba:dom:felipe-lopez:1974-12-19",
+     "name": "Felipe López",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1971-09-29",
+     "fiba_key": "fiba:dom:jaime-peterson:1971-09-29",
+     "name": "Jaime Peterson",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-10-12",
+     "fiba_key": "fiba:dom:jack-martinez:1981-10-12",
+     "name": "Jack Martinez",
+     "position": "F"
+    }
+   ]
+  },
+  "Mexico": {
+   "coach": "Jorge Ramírez",
+   "players": [
+    {
+     "bbr_id": null,
+     "birth_date": "1982-05-29",
+     "fiba_key": "fiba:mex:romel-beck:1982-05-29",
+     "name": "Romel Beck",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1977-03-23",
+     "fiba_key": "fiba:mex:victor-avila:1977-03-23",
+     "name": "Víctor Ávila",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1979-03-07",
+     "fiba_key": "fiba:mex:anthony-pedroza:1979-03-07",
+     "name": "Anthony Pedroza",
+     "position": "G"
+    },
+    {
+     "bbr_id": "llamaho01",
+     "birth_date": "1973-07-17",
+     "fiba_key": "fiba:mex:horacio-llamas:1973-07-17",
+     "name": "Horacio Llamas",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1968-09-10",
+     "fiba_key": "fiba:mex:enrique-gonzalez:1968-09-10",
+     "name": "Enrique González",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1979-01-11",
+     "fiba_key": "fiba:mex:eric-hare:1979-01-11",
+     "name": "Eric Hare",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1979-09-10",
+     "fiba_key": "fiba:mex:ramses-benitez:1979-09-10",
+     "name": "Ramsés Benítez",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-09-26",
+     "fiba_key": "fiba:mex:omar-quintero:1981-09-26",
+     "name": "Omar Quintero",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1976-12-14",
+     "fiba_key": "fiba:mex:alonso-izaguirre:1976-12-14",
+     "name": "Alonso Izaguirre",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1976-07-07",
+     "fiba_key": "fiba:mex:enrique-zuniga:1976-07-07",
+     "name": "Enrique Zúñiga",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1974-08-10",
+     "fiba_key": "fiba:mex:david-crouse:1974-08-10",
+     "name": "David Crouse",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-10-21",
+     "fiba_key": "fiba:mex:adam-parada:1981-10-21",
+     "name": "Adam Parada",
+     "position": "C"
+    }
+   ]
+  },
+  "Panama": {
+   "coach": "Nolan Richardson",
+   "players": [
+    {
+     "bbr_id": null,
+     "birth_date": "1980-06-24",
+     "fiba_key": "fiba:pan:joel-munoz:1980-06-24",
+     "name": "Joel Muñoz",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1976-01-05",
+     "fiba_key": "fiba:pan:jair-peralta:1976-01-05",
+     "name": "Jair Peralta",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1983-12-11",
+     "fiba_key": "fiba:pan:danilo-pinnock:1983-12-11",
+     "name": "Danilo Pinnock",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1975-12-18",
+     "fiba_key": "fiba:pan:maximiliano-gomez:1975-12-18",
+     "name": "Maximiliano Gómez",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1980-02-11",
+     "fiba_key": "fiba:pan:eduardo-isaac:1980-02-11",
+     "name": "Eduardo Isaac",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-01-19",
+     "fiba_key": "fiba:pan:chris-warren:1981-01-19",
+     "name": "Chris Warren",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-11-05",
+     "fiba_key": "fiba:pan:reyjavick-de-gracia:1981-11-05",
+     "name": "Reyjavick De Gracia",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1989-06-30",
+     "fiba_key": "fiba:pan:michael-hicks:1989-06-30",
+     "name": "Michael Hicks",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1980-04-07",
+     "fiba_key": "fiba:pan:dionisio-gomez:1980-04-07",
+     "name": "Dionisio Gómez",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1976-05-11",
+     "fiba_key": "fiba:pan:antonio-garcia:1976-05-11",
+     "name": "Antonio García",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1980-10-11",
+     "fiba_key": "fiba:pan:jaime-lloreda:1980-10-11",
+     "name": "Jaime Lloreda",
+     "position": "F/C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1973-11-29",
+     "fiba_key": "fiba:pan:eric-cardenas:1973-11-29",
+     "name": "Eric Cardenas",
+     "position": "F"
+    }
+   ]
+  },
+  "Puerto Rico": {
+   "coach": "Julio Toro",
+   "players": [
+    {
+     "bbr_id": "ramospe01",
+     "birth_date": "1985-05-23",
+     "fiba_key": "fiba:pur:peter-john-ramos:1985-05-23",
+     "name": "Peter John Ramos",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-12-23",
+     "fiba_key": "fiba:pur:david-cortez:1981-12-23",
+     "name": "David Cortez",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1976-10-11",
+     "fiba_key": "fiba:pur:bobby-joe-hatton:1976-10-11",
+     "name": "Bobby Joe Hatton",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1982-09-28",
+     "fiba_key": "fiba:pur:filiberto-rivera:1982-09-28",
+     "name": "Filiberto Rivera",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1980-07-01",
+     "fiba_key": "fiba:pur:rick-apodaca:1980-07-01",
+     "name": "Rick Apodaca",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1975-08-29",
+     "fiba_key": "fiba:pur:christian-dalmau:1975-08-29",
+     "name": "Christian Dalmau",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1977-03-27",
+     "fiba_key": "fiba:pur:elias-larry-ayuso:1977-03-27",
+     "name": "Elías Larry Ayuso",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1978-11-26",
+     "fiba_key": "fiba:pur:antonio-latimer:1978-11-26",
+     "name": "Antonio Latimer",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1984-12-20",
+     "fiba_key": "fiba:pur:gabriel-colon:1984-12-20",
+     "name": "Gabriel Colón",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1976-06-09",
+     "fiba_key": "fiba:pur:sharif-fajardo:1976-06-09",
+     "name": "Sharif Fajardo",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-10-13",
+     "fiba_key": "fiba:pur:angel-figueroa:1981-10-13",
+     "name": "Ángel Figueroa",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-12-18",
+     "fiba_key": "fiba:pur:manuel-narvaez:1981-12-18",
+     "name": "Manuel Narvaez",
+     "position": "C"
+    }
+   ]
+  },
+  "United States": {
+   "coach": "Morris McHone",
+   "players": [
+    {
+     "bbr_id": "edneyty01",
+     "birth_date": "1973-02-14",
+     "fiba_key": "fiba:usa:tyus-edney:1973-02-14",
+     "name": "Tyus Edney",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-01-28",
+     "fiba_key": "fiba:usa:marque-perry:1981-01-28",
+     "name": "Marque Perry",
+     "position": "G"
+    },
+    {
+     "bbr_id": "greerly01",
+     "birth_date": "1979-10-23",
+     "fiba_key": "fiba:usa:lynn-greer:1979-10-23",
+     "name": "Lynn Greer",
+     "position": "G"
+    },
+    {
+     "bbr_id": "bellch01",
+     "birth_date": "1979-03-12",
+     "fiba_key": "fiba:usa:charlie-bell:1979-03-12",
+     "name": "Charlie Bell",
+     "position": "G"
+    },
+    {
+     "bbr_id": "scaleal01",
+     "birth_date": "1978-07-03",
+     "fiba_key": "fiba:usa:alex-scales:1978-07-03",
+     "name": "Alex Scales",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1978-05-26",
+     "fiba_key": "fiba:usa:tang-hamilton:1978-05-26",
+     "name": "Tang Hamilton",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-06-29",
+     "fiba_key": "fiba:usa:ron-slay:1981-06-29",
+     "name": "Ron Slay",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-07-05",
+     "fiba_key": "fiba:usa:adam-chubb:1981-07-05",
+     "name": "Adam Chubb",
+     "position": "C"
+    },
+    {
+     "bbr_id": "felixno01",
+     "birth_date": "1981-10-04",
+     "fiba_key": "fiba:usa:noel-felix:1981-10-04",
+     "name": "Noel Felix",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1979-06-28",
+     "fiba_key": "fiba:usa:aaron-mcghee:1979-06-28",
+     "name": "Aaron McGhee",
+     "position": "F"
+    },
+    {
+     "bbr_id": "beaslje01",
+     "birth_date": "1980-05-17",
+     "fiba_key": "fiba:usa:jerome-beasley:1980-05-17",
+     "name": "Jerome Beasley",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1979-12-12",
+     "fiba_key": "fiba:usa:kris-lang:1979-12-12",
+     "name": "Kris Lang",
+     "position": "C"
+    }
+   ]
+  },
+  "Uruguay": {
+   "coach": "Alberto Espasandin",
+   "players": [
+    {
+     "bbr_id": null,
+     "birth_date": "1975-01-08",
+     "fiba_key": "fiba:uru:diego-castrillon:1975-01-08",
+     "name": "Diego Castrillón",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1985-12-04",
+     "fiba_key": "fiba:uru:sebastian-izaguirre:1985-12-04",
+     "name": "Sebastián Izaguirre",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1983-02-03",
+     "fiba_key": "fiba:uru:mauricio-aguiar:1983-02-03",
+     "name": "Mauricio Aguiar",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1978-05-31",
+     "fiba_key": "fiba:uru:pablo-morales:1978-05-31",
+     "name": "Pablo Morales",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1975-10-21",
+     "fiba_key": "fiba:uru:nicolas-mazzarino:1975-10-21",
+     "name": "Nicolás Mazzarino",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1977-07-22",
+     "fiba_key": "fiba:uru:claudio-charquero:1977-07-22",
+     "name": "Claudio Charquero",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1980-06-27",
+     "fiba_key": "fiba:uru:leandro-garcia-morales:1980-06-27",
+     "name": "Leandro García Morales",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1981-05-22",
+     "fiba_key": "fiba:uru:martin-osimani:1981-05-22",
+     "name": "Martín Osimani",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1979-09-22",
+     "fiba_key": "fiba:uru:gaston-paez:1979-09-22",
+     "name": "Gastón Paez",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1971-01-16",
+     "fiba_key": "fiba:uru:luis-silveira:1971-01-16",
+     "name": "Luis Silveira",
+     "position": "G/F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1986-05-08",
+     "fiba_key": "fiba:uru:nicolas-borsellino:1986-05-08",
+     "name": "Nicolás Borsellino",
+     "position": "F"
+    },
+    {
+     "bbr_id": "batises01",
+     "birth_date": "1983-09-02",
+     "fiba_key": "fiba:uru:esteban-batista:1983-09-02",
+     "name": "Esteban Batista",
+     "position": "F/C"
+    }
+   ]
+  },
+  "Venezuela": {
+   "coach": "Néstor Salazar",
+   "players": [
+    {
+     "bbr_id": null,
+     "birth_date": "1968-04-02",
+     "fiba_key": "fiba:ven:victor-diaz:1968-04-02",
+     "name": "Víctor Díaz",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1980-06-12",
+     "fiba_key": "fiba:ven:luis-julio:1980-06-12",
+     "name": "Luis Julio",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1976-09-30",
+     "fiba_key": "fiba:ven:ernesto-mijares:1976-09-30",
+     "name": "Ernesto Mijares",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1976-09-30",
+     "fiba_key": "fiba:ven:richard-lugo:1976-09-30",
+     "name": "Richard Lugo",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1977-09-25",
+     "fiba_key": "fiba:ven:tomas-aguilera:1977-09-25",
+     "name": "Tomás Aguilera",
+     "position": "F/C"
+    },
+    {
+     "bbr_id": "torreos01",
+     "birth_date": "1976-12-18",
+     "fiba_key": "fiba:ven:oscar-torres:1976-12-18",
+     "name": "Óscar Torres",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1971-12-19",
+     "fiba_key": "fiba:ven:askia-jones:1971-12-19",
+     "name": "Askia Jones",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1984-06-06",
+     "fiba_key": "fiba:ven:miguel-angel-marriaga:1984-06-06",
+     "name": "Miguel Ángel Marriaga",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1980-01-03",
+     "fiba_key": "fiba:ven:hector-romero:1980-01-03",
+     "name": "Héctor Romero",
+     "position": "F"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1978-04-26",
+     "fiba_key": "fiba:ven:diego-guevara:1978-04-26",
+     "name": "Diego Guevara",
+     "position": "G"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1978-04-26",
+     "fiba_key": "fiba:ven:heberth-bayona:1978-04-26",
+     "name": "Heberth Bayona",
+     "position": "C"
+    },
+    {
+     "bbr_id": null,
+     "birth_date": "1975-11-10",
+     "fiba_key": "fiba:ven:carlos-morris:1975-11-10",
+     "name": "Carlos Morris",
+     "position": "F/G"
+    }
+   ]
+  }
+ },
+ "slug": "amc05",
+ "source_file": "library/2005/fiba/fiba_2005_americas_championship.json",
+ "source_sha256": "b7d14f88c5db592fe1e5b81328b4d5447b8a32aef9642c91639326e64783d426",
+ "stage": "Qualifiers",
+ "tiebreak": "fiba_2004",
+ "translation": {
+  "anchor_tournaments": [
+   "olympics_2004"
+  ],
+  "anchors": 19,
+  "method": "scripts/build_fiba_engine.translation",
+  "model_version": "fiba-2006.1",
+  "ratio": {
+   "assist_pct": 0.69337,
+   "block_pct": 1.16713,
+   "defensive_rebound_pct": 0.99279,
+   "fouls_per_minute": 1.37667,
+   "free_throw_attempt_rate": 1.29066,
+   "offensive_rebound_pct": 1.18465,
+   "steal_pct": 1.13599,
+   "three_point_attempt_rate": 1.68945,
+   "turnovers_per_fga": 1.19623,
+   "usage_pct": 0.9265
+  },
+  "sample": {
+   "assist_pct": 2959,
+   "block_pct": 2959,
+   "defensive_rebound_pct": 2959,
+   "fouls_per_minute": 2959,
+   "free_throw_attempt_rate": 2959,
+   "offensive_rebound_pct": 2959,
+   "steal_pct": 2959,
+   "three_point_attempt_rate": 2649,
+   "three_point_pct": 250,
+   "turnovers_per_fga": 2959,
+   "two_point_pct": 784,
+   "usage_pct": 2959
+  },
+  "shift": {
+   "three_point_pct": 0.06525,
+   "two_point_pct": 0.22604
+  }
+ },
+ "usa": {
+  "basis": "USA Basketball sent professionals from leagues other than the NBA in 2005 (library/2005/fiba/fiba_2005_americas_championship.json usa_participation); no NBA player was invited",
+  "selection": "real"
+ }
+}

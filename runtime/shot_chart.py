@@ -26,6 +26,33 @@ NBA_GEOMETRY = {
     "under_12_radius": 12.0, "midrange_radius": 18.0,
     "line_policy": "A coordinate on the three-point line is inside the two-point region.",
 }
+FOOT = 0.3048
+
+
+def _fiba_geometry(radius_m, corner_m, paint_half_width_m, label):
+    """A FIBA court in the same feet-from-basket frame: 28 x 15 m, basket centre 1.575 m from the end line, the
+    free-throw line 5.8 m from it (FIBA Official Basketball Rules; `library/fiba/fiba_rules.json`). The chart's paint is a
+    rectangle: the pre-2010 trapezoid is drawn at its mean half-width (a display approximation, not a rule)."""
+    radius, corner = radius_m / FOOT, corner_m / FOOT
+    return {
+        "units": "feet", "origin": "basket_center", "x_min": -7.5 / FOOT, "x_max": 7.5 / FOOT,
+        "baseline_y": -1.575 / FOOT, "half_court_y": (14 - 1.575) / FOOT,
+        "paint_half_width": paint_half_width_m / FOOT, "paint_top_y": (5.8 - 1.575) / FOOT,
+        "three_point_radius": radius, "corner_three_x": corner,
+        "three_point_join_y": math.sqrt(max(0.0, radius ** 2 - corner ** 2)),
+        "under_12_radius": 12.0, "midrange_radius": 18.0,
+        "line_policy": "A coordinate on the three-point line is inside the two-point region.", "court": label,
+    }
+
+
+# Court geometry by coordinate system: the NBA's, and FIBA's before and after the October 2010 rule change (6.25 m arc
+# with its straight lines 6.25 m from the basket; then a 6.75 m arc with lines 6.60 m from it).
+GEOMETRIES = {
+    "nba_feet_from_basket": NBA_GEOMETRY,
+    "fiba_2006_feet_from_basket": _fiba_geometry(6.25, 6.25, 2.4, "FIBA 2006-2010 (6.25 m)"),
+    "fiba_2010_feet_from_basket": _fiba_geometry(6.75, 6.60, 2.45, "FIBA from October 2010 (6.75 m)"),
+}
+
 ZONES = (
     {"id": "paint", "label": "Paint"},
     {"id": "under_12", "label": "Outside paint, under 12 ft"},
@@ -49,7 +76,7 @@ def _on_line(value, boundary):
     return math.isclose(value, boundary, rel_tol=0, abs_tol=GEOMETRY_EPSILON)
 
 
-def classify_zone(x, y):
+def classify_zone(x, y, geometry=None):
     """Return one non-overlapping zone, or None for missing/out-of-view points.
 
     Use modern NBA geometry, also applicable to the repository's 2003 NBA
@@ -63,7 +90,7 @@ def classify_zone(x, y):
         return None
     if not _number(x) or not _number(y):
         raise ValueError("coordinates must be finite numeric feet or null")
-    g = NBA_GEOMETRY
+    g = geometry or NBA_GEOMETRY
     if not g["x_min"] <= x <= g["x_max"] or not g["baseline_y"] <= y <= g["half_court_y"]:
         return None
     distance = math.hypot(x, y)

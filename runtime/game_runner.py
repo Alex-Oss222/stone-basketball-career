@@ -18,6 +18,10 @@ def build_game_packet(home, away, *, event_id, game_date, game_type="regular", v
     """Validate every input and freeze the canonical packet. Fails before anything is journaled."""
     if not isinstance(event_id, str) or not event_id.strip():
         raise ValueError("event_id required")
+    from .national_engine import is_national
+    if is_national(game_type):
+        return _national_packet(home, away, event_id=event_id, game_date=game_date, game_type=game_type, venue=venue,
+                                root=root, kernel_version=kernel_version, validation_only=validation_only)
     season = season_for_date(game_date)
     rules = rules_for(season)
     if game_type not in allowed_game_types(season):
@@ -64,6 +68,55 @@ def build_game_packet(home, away, *, event_id, game_date, game_type="regular", v
     if spatial_kernel(procedure):
         from .spatial_shots import load_spatial_environment
         packet["spatial_environment"] = load_spatial_environment(season, game_date, root)
+    return packet, rules, environment
+
+
+def _national_packet(home, away, *, event_id, game_date, game_type, venue, root, kernel_version, validation_only):
+    """A national game under FIBA rules (`runtime/national_engine.py`): FIBA rules and environment for the date, and
+    every statistical profile checked against the player's dated national profile (an NBA player's translated
+    expectation for the ability season with its journaled swing, or a FIBA player's tournament profile)."""
+    from .era import ability_season, national_rules
+    from .national_engine import expected_profile, national_environment, national_spatial
+    from .trajectories import develop_profile, development_seasons
+    season = ability_season(game_date)
+    rules = national_rules(game_date)
+    if venue not in VENUES:
+        raise ValueError("venue must be home or neutral")
+    if home.team_id == away.team_id:
+        raise ValueError("teams must differ")
+    for team in (home, away):
+        errors = team_errors(team, rules)
+        if errors:
+            raise ValueError(f"{team.team_id}: " + "; ".join(errors))
+    environment = national_environment(game_date, root)
+    keys = [p.stat_profile.get("bbr_id") or p.stat_profile.get("fiba_key") for t in (home, away) for p in t.players
+            if p.stat_profile]
+    if len(keys) != len(set(keys)):
+        raise ValueError("duplicate player identities in game inputs")
+    for team in (home, away):
+        for p in team.players:
+            if not p.stat_profile:
+                raise ValueError(f"{p.player_id}: a national game needs every player's profile")
+            profile = dict(p.stat_profile)
+            expected = expected_profile(p.player_id, profile, game_date, root)
+            if "development" in profile:
+                refs = profile["development"]
+                if sorted(refs) != development_seasons(profile["bbr_id"], season):
+                    raise ValueError("profile lacks its journaled development draws")
+                expected = develop_profile(expected, refs)
+            if profile != expected:
+                raise ValueError(f"{p.player_id}: national profile differs from the dated, generated source")
+    if validation_only:
+        return None, rules, environment
+    procedure = kernel_version or KERNEL_VERSION
+    packet = {
+        "procedure": procedure, "event_id": event_id, "competition": "FIBA",
+        "season": season, "game_date": game_date, "game_type": game_type, "venue": venue,
+        "baseline_season": environment["baseline"],
+        "environment": environment,
+        "home": team_packet(home), "away": team_packet(away),
+        "spatial_environment": national_spatial(game_date, root),
+    }
     return packet, rules, environment
 
 
@@ -120,12 +173,17 @@ def freeze_inputs(home, away, journal, **kwargs):
     Shared by run_game and the service's replay check, so a redeploy recomputes
     the same packet digest for a game that is already played.
     """
-    season = season_for_date(kwargs["game_date"])
+    from .era import ability_season
+    from .national_engine import is_national
+    national = is_national(kwargs.get("game_type", "regular"))
+    # A national game reads the ability season (the one just closed for a summer tournament).
+    season = ability_season(kwargs["game_date"]) if national else season_for_date(kwargs["game_date"])
     # Real-career players (option C) and Wade get this season's journaled swing before inputs freeze.
     home, away = (_developed(team, season, journal) for team in (home, away))
     # Real clubs' absences as journaled spells from November 12, 2003 (`absence_spells`); earlier games unchanged.
     from .absence_spells import apply_spells
-    home, away = (apply_spells(team, season, kwargs["game_date"], journal, kwargs.get("root", ROOT)) for team in (home, away))
+    if not national:                                     # national teams have no club absence spells
+        home, away = (apply_spells(team, season, kwargs["game_date"], journal, kwargs.get("root", ROOT)) for team in (home, away))
     packet, rules, environment = build_game_packet(home, away, **kwargs)
     return home, away, packet, rules, environment
 

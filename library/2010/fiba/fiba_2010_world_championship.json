@@ -1,0 +1,1814 @@
+{
+  "schema_version": 1,
+  "kind": "fiba_edition",
+  "slug": "fiba_2010_world_championship",
+  "family": {
+    "value": "World_Cup",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+  },
+  "stage_kind": {
+    "value": "Final_Tournament",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+  },
+  "edition": {
+    "value": 2010,
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+  },
+  "official_name": {
+    "value": "2010 FIBA World Championship",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+  },
+  "hindsight_policy": "World data for the FIBA pipeline. Holds format, calendar and (where listed) real entry lists and squads only. No score, result, standing, award or statistic of this event is recorded. Real qualification routes and real group draws describe the real world; a simulated career must derive the field of any edition whose qualifiers it simulates from simulated results, and must not read this file before the dates given in known_from.",
+  "known_from": {
+    "wild_cards": {
+      "value": "2009-12-12",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    },
+    "draw": {
+      "value": "2009-12-15",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    },
+    "note": "The field depends on 2008-2009 results (Olympic champion, continental championships, wild cards)."
+  },
+  "host": {
+    "country": {
+      "value": "Turkey",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    },
+    "cities": {
+      "value": [
+        "Kayseri",
+        "Istanbul",
+        "Ankara",
+        "İzmir"
+      ],
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    }
+  },
+  "usa_participation": {
+    "took_part": {
+      "value": true,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    },
+    "group": {
+      "value": "B",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    },
+    "entry_route": {
+      "value": "automatic berth as 2008 Olympic champion",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship; https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_final"
+    },
+    "roster_kind": {
+      "value": "NBA players",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (USA squad entirely domestic league players)"
+    },
+    "note": "In a simulated career the USA enters as Olympic champion only if it wins a simulated 2008 Olympics; otherwise through the 2009 FIBA Americas Championship (4 berths) or a wild card."
+  },
+  "dates": {
+    "start": {
+      "value": "2010-08-28",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    },
+    "end": {
+      "value": "2010-09-12",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    },
+    "time_zone": {
+      "value": "UTC+3",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A; https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+    },
+    "stages": [
+      {
+        "stage": "preliminary_round",
+        "name": "Preliminary round (four groups of six, one city each)",
+        "start": "2010-08-28",
+        "end": "2010-09-02",
+        "venues": [
+          "Abdi İpekçi Arena",
+          "Ankara Arena",
+          "Halkapınar Sport Hall",
+          "Kadir Has Arena"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship; https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "stage": "round_of_16",
+        "name": "Eighth-finals",
+        "start": "2010-09-04",
+        "end": "2010-09-07",
+        "venues": [
+          "Sinan Erdem Dome"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship; https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "stage": "quarterfinal",
+        "name": "Quarterfinals",
+        "start": "2010-09-08",
+        "end": "2010-09-09",
+        "venues": [
+          "Sinan Erdem Dome"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship; https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "stage": "classification_5_8",
+        "name": "Classification 5-8",
+        "start": "2010-09-10",
+        "end": "2010-09-10",
+        "venues": [
+          "Sinan Erdem Dome"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship; https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "stage": "semifinal",
+        "name": "Semifinals",
+        "start": "2010-09-11",
+        "end": "2010-09-11",
+        "venues": [
+          "Sinan Erdem Dome"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship; https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "stage": "seventh_place",
+        "name": "Seventh-place game",
+        "start": "2010-09-11",
+        "end": "2010-09-11",
+        "venues": [
+          "Sinan Erdem Dome"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship; https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "stage": "fifth_place",
+        "name": "Fifth-place game",
+        "start": "2010-09-12",
+        "end": "2010-09-12",
+        "venues": [
+          "Sinan Erdem Dome"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship; https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "stage": "third_place",
+        "name": "Third-place game",
+        "start": "2010-09-12",
+        "end": "2010-09-12",
+        "venues": [
+          "Sinan Erdem Dome"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship; https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "stage": "final",
+        "name": "Final",
+        "start": "2010-09-12",
+        "end": "2010-09-12",
+        "venues": [
+          "Sinan Erdem Dome"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship; https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      }
+    ],
+    "venues": [
+      {
+        "name": "Kadir Has Arena",
+        "city": "Kayseri",
+        "country": "Turkey",
+        "capacity": 7500,
+        "stages": "Group A",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+      },
+      {
+        "name": "Abdi İpekçi Arena",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "capacity": 12500,
+        "stages": "Group B",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+      },
+      {
+        "name": "Ankara Arena",
+        "city": "Ankara",
+        "country": "Turkey",
+        "capacity": 11000,
+        "stages": "Group C",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+      },
+      {
+        "name": "Halkapınar Sport Hall",
+        "city": "İzmir",
+        "country": "Turkey",
+        "capacity": 10000,
+        "stages": "Group D",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+      },
+      {
+        "name": "Sinan Erdem Dome",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "capacity": 16500,
+        "stages": "final round",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+      }
+    ]
+  },
+  "format": {
+    "teams": {
+      "value": 24,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    },
+    "berth_allocation": {
+      "value": {
+        "host": 1,
+        "2008 Olympic champion": 1,
+        "Africa": 3,
+        "Asia": 3,
+        "Oceania": 2,
+        "Americas": 4,
+        "Europe": 6,
+        "wild cards": 4
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    },
+    "groups": [
+      {
+        "group": "A",
+        "teams": 6,
+        "city": "Kayseri",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+      },
+      {
+        "group": "B",
+        "teams": 6,
+        "city": "Istanbul",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+      },
+      {
+        "group": "C",
+        "teams": 6,
+        "city": "Ankara",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+      },
+      {
+        "group": "D",
+        "teams": 6,
+        "city": "İzmir",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+      }
+    ],
+    "rounds": [
+      {
+        "round": "preliminary_round",
+        "kind": "group_round_robin",
+        "games_per_team": 5,
+        "advance": "top 4 of each group to the eighth-finals; Group A meets Group B and Group C meets Group D",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+      },
+      {
+        "round": "round_of_16",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "round": "quarterfinal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "round": "classification_5_8",
+        "kind": "knockout",
+        "note": "quarterfinal losers; losers play for 7th, winners for 5th",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "round": "semifinal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "round": "third_place",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "round": "final",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      }
+    ],
+    "bracket": [
+      {
+        "slot": "R16-1",
+        "a": "A1",
+        "b": "B4",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage (bracket of the real knockout games mapped to group positions; Group A/B v Group C/D meeting no earlier than the quarterfinals is sourced at https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup)"
+      },
+      {
+        "slot": "R16-2",
+        "a": "D2",
+        "b": "C3",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage (bracket of the real knockout games mapped to group positions; Group A/B v Group C/D meeting no earlier than the quarterfinals is sourced at https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup)"
+      },
+      {
+        "slot": "R16-3",
+        "a": "B2",
+        "b": "A3",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage (bracket of the real knockout games mapped to group positions; Group A/B v Group C/D meeting no earlier than the quarterfinals is sourced at https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup)"
+      },
+      {
+        "slot": "R16-4",
+        "a": "C1",
+        "b": "D4",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage (bracket of the real knockout games mapped to group positions; Group A/B v Group C/D meeting no earlier than the quarterfinals is sourced at https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup)"
+      },
+      {
+        "slot": "R16-5",
+        "a": "B1",
+        "b": "A4",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage (bracket of the real knockout games mapped to group positions; Group A/B v Group C/D meeting no earlier than the quarterfinals is sourced at https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup)"
+      },
+      {
+        "slot": "R16-6",
+        "a": "C2",
+        "b": "D3",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage (bracket of the real knockout games mapped to group positions; Group A/B v Group C/D meeting no earlier than the quarterfinals is sourced at https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup)"
+      },
+      {
+        "slot": "R16-7",
+        "a": "D1",
+        "b": "C4",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage (bracket of the real knockout games mapped to group positions; Group A/B v Group C/D meeting no earlier than the quarterfinals is sourced at https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup)"
+      },
+      {
+        "slot": "R16-8",
+        "a": "A2",
+        "b": "B3",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage (bracket of the real knockout games mapped to group positions; Group A/B v Group C/D meeting no earlier than the quarterfinals is sourced at https://en.wikipedia.org/wiki/2014_FIBA_Basketball_World_Cup)"
+      },
+      {
+        "slot": "QF1",
+        "a": "W-R16-1",
+        "b": "W-R16-2",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "slot": "QF2",
+        "a": "W-R16-4",
+        "b": "W-R16-3",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "slot": "QF3",
+        "a": "W-R16-5",
+        "b": "W-R16-6",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "slot": "QF4",
+        "a": "W-R16-7",
+        "b": "W-R16-8",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "slot": "SF1",
+        "a": "W-QF1",
+        "b": "W-QF2",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "slot": "SF2",
+        "a": "W-QF3",
+        "b": "W-QF4",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "slot": "C5-8-1",
+        "a": "L-QF1",
+        "b": "L-QF2",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "slot": "C5-8-2",
+        "a": "L-QF3",
+        "b": "L-QF4",
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "slot": "7TH",
+        "a": "L-C5-8-1",
+        "b": "L-C5-8-2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "slot": "5TH",
+        "a": "W-C5-8-1",
+        "b": "W-C5-8-2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "slot": "3RD",
+        "a": "L-SF1",
+        "b": "L-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      },
+      {
+        "slot": "F",
+        "a": "W-SF1",
+        "b": "W-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+      }
+    ],
+    "classification": {
+      "value": {
+        "method": [
+          "result of classification game",
+          "place in preliminary round group",
+          "winning percentage",
+          "overall points average"
+        ],
+        "note": "places 9-16 are round-of-16 losers, 17-24 the 5th and 6th placed group teams"
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (Final standings: method of breaking ties)"
+    },
+    "points": {
+      "win": {
+        "value": 2,
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A (group tables; FIBA points as stated for 2012/2014)"
+      },
+      "loss": {
+        "value": 1,
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+      },
+      "loss_by_forfeit": {
+        "value": 0,
+        "status": "unverified",
+        "source": "FIBA rules as stated for the 2012 Olympics"
+      }
+    },
+    "tiebreak": {
+      "value": [
+        "game results between tied teams",
+        "goal average between games of the tied teams",
+        "goal average for all games of the tied teams",
+        "drawing of lots"
+      ],
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    },
+    "game_length": {
+      "periods": {
+        "value": 4,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "period_minutes": {
+        "value": 10,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "overtime_minutes": {
+        "value": 5,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "note": "The comparison page describes FIBA rules as of 2016; the per-edition rule books of this event were not opened. FIBA used 4 x 10 minutes throughout 2005-2014 (adopted 2000); that adoption date is not verified from a fetched source."
+    },
+    "court": {
+      "three_point_distance_m": {
+        "value": 6.25,
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html (FIBA press release, April 2008: new 6.75 m line and rectangular restricted area apply to high-level competitions as of 1 October 2010, i.e. after the 2010 FIBA World Championship)"
+      },
+      "restricted_area": {
+        "value": "trapezoid",
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      }
+    },
+    "squads": {
+      "value": "12 players per team; final squads due 26 August 2010",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    }
+  },
+  "draw": {
+    "date": {
+      "value": "2009-12-15",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    },
+    "place": {
+      "value": "Ciragan Palace Kempinski Hotel, Istanbul",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    },
+    "lines": {
+      "value": {
+        "1": [
+          "USA",
+          "ARG",
+          "ESP",
+          "GRE"
+        ],
+        "2": [
+          "SRB",
+          "SLO",
+          "FRA",
+          "TUR"
+        ],
+        "3": [
+          "BRA",
+          "PUR",
+          "CAN",
+          "AUS"
+        ],
+        "4": [
+          "CRO",
+          "RUS",
+          "LTU",
+          "GER"
+        ],
+        "5": [
+          "CHN",
+          "IRI",
+          "LIB",
+          "ANG"
+        ],
+        "6": [
+          "JOR",
+          "TUN",
+          "NZL",
+          "CIV"
+        ]
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship"
+    }
+  },
+  "teams": [
+    {
+      "team": "ARG",
+      "name": "Argentina",
+      "group": "A",
+      "qualification_route": "2009 FIBA Americas Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "AUS",
+      "name": "Australia",
+      "group": "A",
+      "qualification_route": "FIBA Oceania Championship 2009",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "ANG",
+      "name": "Angola",
+      "group": "A",
+      "qualification_route": "AfroBasket 2009",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "GER",
+      "name": "Germany",
+      "group": "A",
+      "qualification_route": "FIBA wild card (2009-12-12)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "JOR",
+      "name": "Jordan",
+      "group": "A",
+      "qualification_route": "2009 FIBA Asia Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "SRB",
+      "name": "Serbia",
+      "group": "A",
+      "qualification_route": "EuroBasket 2009",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "USA",
+      "name": "United States",
+      "group": "B",
+      "qualification_route": "2008 Olympic champion",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "SLO",
+      "name": "Slovenia",
+      "group": "B",
+      "qualification_route": "EuroBasket 2009",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "BRA",
+      "name": "Brazil",
+      "group": "B",
+      "qualification_route": "2009 FIBA Americas Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "CRO",
+      "name": "Croatia",
+      "group": "B",
+      "qualification_route": "EuroBasket 2009",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "IRI",
+      "name": "Iran",
+      "group": "B",
+      "qualification_route": "2009 FIBA Asia Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "TUN",
+      "name": "Tunisia",
+      "group": "B",
+      "qualification_route": "AfroBasket 2009",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "TUR",
+      "name": "Turkey",
+      "group": "C",
+      "qualification_route": "host (awarded 2004-12-05)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "RUS",
+      "name": "Russia",
+      "group": "C",
+      "qualification_route": "FIBA wild card (2009-12-12)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "GRE",
+      "name": "Greece",
+      "group": "C",
+      "qualification_route": "EuroBasket 2009",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "CHN",
+      "name": "China",
+      "group": "C",
+      "qualification_route": "2009 FIBA Asia Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "PUR",
+      "name": "Puerto Rico",
+      "group": "C",
+      "qualification_route": "2009 FIBA Americas Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "CIV",
+      "name": "Cote d'Ivoire",
+      "group": "C",
+      "qualification_route": "AfroBasket 2009",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "LTU",
+      "name": "Lithuania",
+      "group": "D",
+      "qualification_route": "FIBA wild card (2009-12-12)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "ESP",
+      "name": "Spain",
+      "group": "D",
+      "qualification_route": "EuroBasket 2009",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "NZL",
+      "name": "New Zealand",
+      "group": "D",
+      "qualification_route": "FIBA Oceania Championship 2009",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "FRA",
+      "name": "France",
+      "group": "D",
+      "qualification_route": "EuroBasket 2009",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "LIB",
+      "name": "Lebanon",
+      "group": "D",
+      "qualification_route": "FIBA wild card (2009-12-12)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    },
+    {
+      "team": "CAN",
+      "name": "Canada",
+      "group": "D",
+      "qualification_route": "2009 FIBA Americas Championship",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship (List of qualified teams)"
+    }
+  ],
+  "schedule": [
+    {
+      "game_id": "WC10-01",
+      "date": "2010-08-28",
+      "time_local": "16:30",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "AUS",
+      "team_b": "JOR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-02",
+      "date": "2010-08-28",
+      "time_local": "19:00",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ANG",
+      "team_b": "SRB",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-03",
+      "date": "2010-08-28",
+      "time_local": "21:30",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "GER",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-04",
+      "date": "2010-08-29",
+      "time_local": "16:30",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "JOR",
+      "team_b": "ANG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-05",
+      "date": "2010-08-29",
+      "time_local": "19:00",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "SRB",
+      "team_b": "GER",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-06",
+      "date": "2010-08-29",
+      "time_local": "21:30",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ARG",
+      "team_b": "AUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-07",
+      "date": "2010-08-30",
+      "time_local": "16:30",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "JOR",
+      "team_b": "SRB",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-08",
+      "date": "2010-08-30",
+      "time_local": "19:00",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "AUS",
+      "team_b": "GER",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-09",
+      "date": "2010-08-30",
+      "time_local": "21:30",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ANG",
+      "team_b": "ARG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-10",
+      "date": "2010-09-01",
+      "time_local": "16:30",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "SRB",
+      "team_b": "AUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-11",
+      "date": "2010-09-01",
+      "time_local": "19:00",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "GER",
+      "team_b": "ANG",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-12",
+      "date": "2010-09-01",
+      "time_local": "21:30",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ARG",
+      "team_b": "JOR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-13",
+      "date": "2010-09-02",
+      "time_local": "16:30",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ANG",
+      "team_b": "AUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-14",
+      "date": "2010-09-02",
+      "time_local": "19:00",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "ARG",
+      "team_b": "SRB",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-15",
+      "date": "2010-09-02",
+      "time_local": "21:30",
+      "venue": "Kadir Has Arena",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "JOR",
+      "team_b": "GER",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A"
+    },
+    {
+      "game_id": "WC10-16",
+      "date": "2010-08-28",
+      "time_local": "16:30",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "TUN",
+      "team_b": "SLO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-17",
+      "date": "2010-08-28",
+      "time_local": "19:00",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "USA",
+      "team_b": "CRO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-18",
+      "date": "2010-08-28",
+      "time_local": "21:30",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "IRI",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-19",
+      "date": "2010-08-29",
+      "time_local": "16:30",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "SLO",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-20",
+      "date": "2010-08-29",
+      "time_local": "19:00",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "CRO",
+      "team_b": "IRI",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-21",
+      "date": "2010-08-29",
+      "time_local": "21:30",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "BRA",
+      "team_b": "TUN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-22",
+      "date": "2010-08-30",
+      "time_local": "16:30",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "SLO",
+      "team_b": "CRO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-23",
+      "date": "2010-08-30",
+      "time_local": "19:00",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "TUN",
+      "team_b": "IRI",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-24",
+      "date": "2010-08-30",
+      "time_local": "21:30",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "USA",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-25",
+      "date": "2010-09-01",
+      "time_local": "16:30",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "CRO",
+      "team_b": "TUN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-26",
+      "date": "2010-09-01",
+      "time_local": "19:00",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "IRI",
+      "team_b": "USA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-27",
+      "date": "2010-09-01",
+      "time_local": "21:30",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "BRA",
+      "team_b": "SLO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-28",
+      "date": "2010-09-02",
+      "time_local": "16:30",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "USA",
+      "team_b": "TUN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-29",
+      "date": "2010-09-02",
+      "time_local": "19:00",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "SLO",
+      "team_b": "IRI",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-30",
+      "date": "2010-09-02",
+      "time_local": "21:30",
+      "venue": "Abdi İpekçi Arena",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "BRA",
+      "team_b": "CRO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B"
+    },
+    {
+      "game_id": "WC10-31",
+      "date": "2010-08-28",
+      "time_local": "16:00",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "GRE",
+      "team_b": "CHN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-32",
+      "date": "2010-08-28",
+      "time_local": "18:30",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "RUS",
+      "team_b": "PUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-33",
+      "date": "2010-08-28",
+      "time_local": "21:00",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "CIV",
+      "team_b": "TUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-34",
+      "date": "2010-08-29",
+      "time_local": "16:00",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "CHN",
+      "team_b": "CIV",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-35",
+      "date": "2010-08-29",
+      "time_local": "18:30",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "PUR",
+      "team_b": "GRE",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-36",
+      "date": "2010-08-29",
+      "time_local": "21:00",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "TUR",
+      "team_b": "RUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-37",
+      "date": "2010-08-31",
+      "time_local": "16:00",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "RUS",
+      "team_b": "CIV",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-38",
+      "date": "2010-08-31",
+      "time_local": "18:30",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "PUR",
+      "team_b": "CHN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-39",
+      "date": "2010-08-31",
+      "time_local": "21:00",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "GRE",
+      "team_b": "TUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-40",
+      "date": "2010-09-01",
+      "time_local": "16:00",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "CHN",
+      "team_b": "RUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-41",
+      "date": "2010-09-01",
+      "time_local": "18:30",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "CIV",
+      "team_b": "GRE",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-42",
+      "date": "2010-09-01",
+      "time_local": "21:00",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "TUR",
+      "team_b": "PUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-43",
+      "date": "2010-09-02",
+      "time_local": "16:00",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "PUR",
+      "team_b": "CIV",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-44",
+      "date": "2010-09-02",
+      "time_local": "18:30",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "GRE",
+      "team_b": "RUS",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-45",
+      "date": "2010-09-02",
+      "time_local": "21:00",
+      "venue": "Ankara Arena",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "TUR",
+      "team_b": "CHN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C"
+    },
+    {
+      "game_id": "WC10-46",
+      "date": "2010-08-28",
+      "time_local": "16:00",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "NZL",
+      "team_b": "LTU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-47",
+      "date": "2010-08-28",
+      "time_local": "18:30",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "CAN",
+      "team_b": "LIB",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-48",
+      "date": "2010-08-28",
+      "time_local": "21:00",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "FRA",
+      "team_b": "ESP",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-49",
+      "date": "2010-08-29",
+      "time_local": "16:00",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "LTU",
+      "team_b": "CAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-50",
+      "date": "2010-08-29",
+      "time_local": "18:30",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "LIB",
+      "team_b": "FRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-51",
+      "date": "2010-08-29",
+      "time_local": "21:00",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "ESP",
+      "team_b": "NZL",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-52",
+      "date": "2010-08-31",
+      "time_local": "16:00",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "NZL",
+      "team_b": "LIB",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-53",
+      "date": "2010-08-31",
+      "time_local": "18:30",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "FRA",
+      "team_b": "CAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-54",
+      "date": "2010-08-31",
+      "time_local": "21:00",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "ESP",
+      "team_b": "LTU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-55",
+      "date": "2010-09-01",
+      "time_local": "16:00",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "CAN",
+      "team_b": "NZL",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-56",
+      "date": "2010-09-01",
+      "time_local": "18:30",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "LIB",
+      "team_b": "ESP",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-57",
+      "date": "2010-09-01",
+      "time_local": "21:00",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "LTU",
+      "team_b": "FRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-58",
+      "date": "2010-09-02",
+      "time_local": "16:00",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "ESP",
+      "team_b": "CAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-59",
+      "date": "2010-09-02",
+      "time_local": "18:30",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "LIB",
+      "team_b": "LTU",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-60",
+      "date": "2010-09-02",
+      "time_local": "21:00",
+      "venue": "Halkapınar Sport Hall",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "NZL",
+      "team_b": "FRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D"
+    },
+    {
+      "game_id": "WC10-61",
+      "date": "2010-09-04",
+      "time_local": "18:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-1",
+      "slot_a": "A1",
+      "slot_b": "B4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-62",
+      "date": "2010-09-04",
+      "time_local": "21:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-2",
+      "slot_a": "D2",
+      "slot_b": "C3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-63",
+      "date": "2010-09-05",
+      "time_local": "18:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-3",
+      "slot_a": "B2",
+      "slot_b": "A3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-64",
+      "date": "2010-09-05",
+      "time_local": "21:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-4",
+      "slot_a": "C1",
+      "slot_b": "D4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-65",
+      "date": "2010-09-06",
+      "time_local": "18:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-5",
+      "slot_a": "B1",
+      "slot_b": "A4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-66",
+      "date": "2010-09-06",
+      "time_local": "21:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-6",
+      "slot_a": "C2",
+      "slot_b": "D3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-67",
+      "date": "2010-09-07",
+      "time_local": "18:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-7",
+      "slot_a": "D1",
+      "slot_b": "C4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-68",
+      "date": "2010-09-07",
+      "time_local": "21:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "round_of_16",
+      "bracket_slot": "R16-8",
+      "slot_a": "A2",
+      "slot_b": "B3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-69",
+      "date": "2010-09-08",
+      "time_local": "18:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF1",
+      "slot_a": "W-R16-1",
+      "slot_b": "W-R16-2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-70",
+      "date": "2010-09-08",
+      "time_local": "21:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF2",
+      "slot_a": "W-R16-4",
+      "slot_b": "W-R16-3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-71",
+      "date": "2010-09-09",
+      "time_local": "18:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF3",
+      "slot_a": "W-R16-5",
+      "slot_b": "W-R16-6",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-72",
+      "date": "2010-09-09",
+      "time_local": "21:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF4",
+      "slot_a": "W-R16-7",
+      "slot_b": "W-R16-8",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-73",
+      "date": "2010-09-10",
+      "time_local": "18:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "classification_5_8",
+      "bracket_slot": "C5-8-1",
+      "slot_a": "L-QF1",
+      "slot_b": "L-QF2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-74",
+      "date": "2010-09-10",
+      "time_local": "21:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "classification_5_8",
+      "bracket_slot": "C5-8-2",
+      "slot_a": "L-QF3",
+      "slot_b": "L-QF4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-75",
+      "date": "2010-09-11",
+      "time_local": "15:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "seventh_place",
+      "bracket_slot": "7TH",
+      "slot_a": "L-C5-8-1",
+      "slot_b": "L-C5-8-2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+    },
+    {
+      "game_id": "WC10-76",
+      "date": "2010-09-12",
+      "time_local": "15:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "fifth_place",
+      "bracket_slot": "5TH",
+      "slot_a": "W-C5-8-1",
+      "slot_b": "W-C5-8-2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+    },
+    {
+      "game_id": "WC10-77",
+      "date": "2010-09-11",
+      "time_local": "19:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "semifinal",
+      "bracket_slot": "SF2",
+      "slot_a": "W-QF3",
+      "slot_b": "W-QF4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-78",
+      "date": "2010-09-11",
+      "time_local": "21:30",
+      "venue": "Sinan Erdem Dome",
+      "stage": "semifinal",
+      "bracket_slot": "SF1",
+      "slot_a": "W-QF1",
+      "slot_b": "W-QF2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "WC10-79",
+      "date": "2010-09-12",
+      "time_local": "19:00",
+      "venue": "Sinan Erdem Dome",
+      "stage": "third_place",
+      "bracket_slot": "3RD",
+      "slot_a": "L-SF1",
+      "slot_b": "L-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage"
+    },
+    {
+      "game_id": "WC10-80",
+      "date": "2010-09-12",
+      "time_local": "21:30",
+      "venue": "Sinan Erdem Dome",
+      "stage": "final",
+      "bracket_slot": "F",
+      "slot_a": "W-SF1",
+      "slot_b": "W-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_final"
+    }
+  ],
+  "research": {
+    "sources": [
+      "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship",
+      "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_knockout_stage",
+      "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_final",
+      "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_A",
+      "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_B",
+      "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_C",
+      "https://en.wikipedia.org/wiki/2010_FIBA_World_Championship_Group_D",
+      "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+    ],
+    "conflicts": [],
+    "unresolved": [
+      "Whether FIBA fixed the eighth-final schedule order by slot before the tournament (the bracket is derived from the real games)."
+    ],
+    "notes": [
+      "Group-stage tip-off times come from the per-group pages; knockout times from the knockout-stage page and the final page.",
+      "The 2010 event used the pre-October-2010 court (6.25 m line, trapezoid lane)."
+    ]
+  },
+  "counts": {
+    "teams": 24,
+    "games": 80,
+    "group_games_with_teams": 60,
+    "slot_games": 20
+  }
+}

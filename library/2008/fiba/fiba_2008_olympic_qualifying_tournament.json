@@ -1,0 +1,2883 @@
+{
+  "schema_version": 1,
+  "kind": "fiba_edition",
+  "slug": "fiba_2008_olympic_qualifying_tournament",
+  "family": {
+    "value": "Olympics",
+    "status": "derived",
+    "source": "task classification: the FIBA World Olympic Qualifying Tournament is the final qualifier of the Olympic tournament"
+  },
+  "stage_kind": {
+    "value": "Qualifiers",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+  },
+  "edition": {
+    "value": 2008,
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+  },
+  "official_name": {
+    "value": "FIBA World Olympic Qualifying Tournament for Men 2008",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men; https://archive.fiba.com/pages/eng/fa/event/p/sid/4508/_//index.html (FIBA archive event page cited by Wikipedia; not fetched)"
+  },
+  "hindsight_policy": "World data for the FIBA pipeline. Holds format, calendar and (where listed) real entry lists and squads only. No score, result, standing, award or statistic of this event is recorded. Real qualification routes and real group draws describe the real world; a simulated career must derive the field of any edition whose qualifiers it simulates from simulated results, and must not read this file before the dates given in known_from.",
+  "known_from": {
+    "draw": {
+      "value": "2008-01-31",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    "note": "The entry list depends on results of the 2007 continental championships; the knockout pairings depend on results of this event."
+  },
+  "host": {
+    "city": {
+      "value": "Athens",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    "country": {
+      "value": "Greece",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    }
+  },
+  "qualifies_for": {
+    "event": {
+      "value": "2008 Olympic Games men's basketball tournament (Beijing)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    "berths": {
+      "value": 3,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    "rule": {
+      "value": "The two semifinal winners qualify (no final is played); the semifinal losers play for the third berth.",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    }
+  },
+  "usa_participation": {
+    "took_part": {
+      "value": false,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    "reason": {
+      "value": "The United States had qualified for the 2008 Olympics outright as 2007 FIBA Americas champion.",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    "note": "In a simulated career the USA would enter only by finishing 3rd-5th at a simulated 2007 FIBA Americas Championship (the Americas allocation is 3 teams)."
+  },
+  "dates": {
+    "start": {
+      "value": "2008-07-14",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    "end": {
+      "value": "2008-07-20",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    "time_zone": {
+      "value": "UTC+3 (Eastern European Summer Time)",
+      "status": "derived",
+      "source": "Greece observes EEST in July; the source gives local times without naming the zone"
+    },
+    "stages": [
+      {
+        "stage": "preliminary_round",
+        "name": "Preliminary round (four groups of three)",
+        "start": "2008-07-14",
+        "end": "2008-07-16",
+        "venues": [
+          "Olympic Indoor Hall (OAKA)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "stage": "quarterfinal",
+        "name": "Quarterfinals",
+        "start": "2008-07-18",
+        "end": "2008-07-18",
+        "venues": [
+          "Olympic Indoor Hall (OAKA)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "stage": "semifinal",
+        "name": "Semifinals",
+        "start": "2008-07-19",
+        "end": "2008-07-19",
+        "venues": [
+          "Olympic Indoor Hall (OAKA)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "stage": "third_place",
+        "name": "Third-place game",
+        "start": "2008-07-20",
+        "end": "2008-07-20",
+        "venues": [
+          "Olympic Indoor Hall (OAKA)"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      }
+    ],
+    "venues": [
+      {
+        "name": "Olympic Indoor Hall (OAKA)",
+        "city": "Athens",
+        "country": "Greece",
+        "stages": "all games",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      }
+    ]
+  },
+  "format": {
+    "teams": {
+      "value": 12,
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    "berth_allocation": {
+      "value": {
+        "Africa": 2,
+        "Americas": 3,
+        "Asia": 2,
+        "Europe": 4,
+        "Oceania": 1
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    "groups": [
+      {
+        "group": "A",
+        "teams": 3,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "group": "B",
+        "teams": 3,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "group": "C",
+        "teams": 3,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "group": "D",
+        "teams": 3,
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      }
+    ],
+    "rounds": [
+      {
+        "round": "preliminary_round",
+        "kind": "group_round_robin",
+        "games_per_team": 2,
+        "advance": "top 2 of each group to the quarterfinals; the 3rd-placed team is eliminated",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "round": "quarterfinal",
+        "kind": "knockout",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "round": "semifinal",
+        "kind": "knockout",
+        "note": "semifinal winners qualify for the Olympics",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "round": "third_place",
+        "kind": "knockout",
+        "note": "winner takes the third Olympic berth; no final is played",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      }
+    ],
+    "bracket": [
+      {
+        "slot": "QF1",
+        "a": "A1",
+        "b": "B2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "slot": "QF2",
+        "a": "B1",
+        "b": "A2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "slot": "QF3",
+        "a": "C1",
+        "b": "D2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "slot": "QF4",
+        "a": "D1",
+        "b": "C2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "slot": "SF1",
+        "a": "W-QF1",
+        "b": "W-QF3",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "slot": "SF2",
+        "a": "W-QF2",
+        "b": "W-QF4",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      {
+        "slot": "3RD",
+        "a": "L-SF1",
+        "b": "L-SF2",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      }
+    ],
+    "classification": {
+      "value": "Places 1-2: semifinal winners (no final); 3-4 from the third-place game; 5-8 quarterfinal losers and 9-12 group 3rd placers, ranked by record (exact ranking criteria not stated).",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men (final standings table layout)"
+    },
+    "qualification_places": {
+      "value": [
+        "W-SF1",
+        "W-SF2",
+        "W-3RD"
+      ],
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    "points": {
+      "win": {
+        "value": 2,
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men (group tables: Pts 4 for 2-0, 3 for 1-1, 2 for 0-2)"
+      },
+      "loss": {
+        "value": 1,
+        "status": "derived",
+        "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+      },
+      "loss_by_forfeit": {
+        "value": 0,
+        "status": "unverified",
+        "source": "FIBA rules as stated for the 2012 Olympics; not stated for this event"
+      }
+    },
+    "tiebreak": {
+      "value": [
+        "head-to-head results",
+        "goal average of the games among the tied teams",
+        "goal average of all group games",
+        "drawing of lots"
+      ],
+      "status": "unverified",
+      "source": "Not stated on the event page; FIBA procedure as stated for the 2008 Olympics and 2010 World Championship pages is assumed"
+    },
+    "game_length": {
+      "periods": {
+        "value": 4,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "period_minutes": {
+        "value": 10,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "overtime_minutes": {
+        "value": 5,
+        "status": "sourced",
+        "source": "https://www.jazzace.ca/hoop/rulediff.html (FIBA vs NBA rules comparison: \"4 - 10 minute quarters; OT periods are 5 min each\")"
+      },
+      "note": "The comparison page describes FIBA rules as of 2016; the per-edition rule books of this event were not opened. FIBA used 4 x 10 minutes throughout 2005-2014 (adopted 2000); that adoption date is not verified from a fetched source."
+    },
+    "court": {
+      "three_point_distance_m": {
+        "value": 6.25,
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html (FIBA press release, April 2008: new 6.75 m line and rectangular restricted area apply to high-level competitions as of 1 October 2010, i.e. after the 2010 FIBA World Championship)"
+      },
+      "restricted_area": {
+        "value": "trapezoid",
+        "status": "sourced",
+        "source": "https://www.basketballmanitoba.ca/2008/04/fiba-approves-historic-rule-changes.html"
+      }
+    }
+  },
+  "draw": {
+    "date": {
+      "value": "2008-01-31",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    "place": {
+      "value": "Divani Caravel hotel, Athens",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    "pots": {
+      "value": {
+        "1": [
+          "CMR",
+          "LIB",
+          "KOR",
+          "CPV"
+        ],
+        "2": [
+          "BRA",
+          "PUR",
+          "CAN",
+          "NZL"
+        ],
+        "3": [
+          "GRE",
+          "GER",
+          "CRO",
+          "SLO"
+        ]
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    "rule": {
+      "value": "In case a team fails to attend, the next best team from its zone plays as its replacement.",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    }
+  },
+  "teams": [
+    {
+      "team": "GRE",
+      "name": "Greece",
+      "group": "A",
+      "qualification_route": "Europe: EuroBasket 2007 4th (also host)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    {
+      "team": "BRA",
+      "name": "Brazil",
+      "group": "A",
+      "qualification_route": "Americas: 2007 FIBA Americas Championship 4th",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    {
+      "team": "LIB",
+      "name": "Lebanon",
+      "group": "A",
+      "qualification_route": "Asia: 2007 FIBA Asia Championship 2nd",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    {
+      "team": "GER",
+      "name": "Germany",
+      "group": "B",
+      "qualification_route": "Europe: EuroBasket 2007 5th",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    {
+      "team": "NZL",
+      "name": "New Zealand",
+      "group": "B",
+      "qualification_route": "Oceania: 2007 FIBA Oceania Championship 2nd",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    {
+      "team": "CPV",
+      "name": "Cape Verde",
+      "group": "B",
+      "qualification_route": "Africa: 2007 FIBA Africa Championship 3rd",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    {
+      "team": "SLO",
+      "name": "Slovenia",
+      "group": "C",
+      "qualification_route": "Europe: EuroBasket 2007 7th",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    {
+      "team": "CAN",
+      "name": "Canada",
+      "group": "C",
+      "qualification_route": "Americas: 2007 FIBA Americas Championship 5th",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    {
+      "team": "KOR",
+      "name": "South Korea",
+      "group": "C",
+      "qualification_route": "Asia: 2007 FIBA Asia Championship 3rd",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    {
+      "team": "CRO",
+      "name": "Croatia",
+      "group": "D",
+      "qualification_route": "Europe: EuroBasket 2007 6th",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    {
+      "team": "PUR",
+      "name": "Puerto Rico",
+      "group": "D",
+      "qualification_route": "Americas: 2007 FIBA Americas Championship 3rd",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    },
+    {
+      "team": "CMR",
+      "name": "Cameroon",
+      "group": "D",
+      "qualification_route": "Africa: 2007 FIBA Africa Championship 2nd",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification"
+    }
+  ],
+  "schedule": [
+    {
+      "game_id": "OQT08-01",
+      "date": "2008-07-14",
+      "time_local": "22:00",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "GRE",
+      "team_b": "LIB",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    {
+      "game_id": "OQT08-02",
+      "date": "2008-07-15",
+      "time_local": "22:00",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "LIB",
+      "team_b": "BRA",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    {
+      "game_id": "OQT08-03",
+      "date": "2008-07-16",
+      "time_local": "22:00",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "preliminary_round",
+      "group": "A",
+      "team_a": "BRA",
+      "team_b": "GRE",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    {
+      "game_id": "OQT08-04",
+      "date": "2008-07-14",
+      "time_local": "13:00",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "NZL",
+      "team_b": "CPV",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    {
+      "game_id": "OQT08-05",
+      "date": "2008-07-15",
+      "time_local": "15:30",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "CPV",
+      "team_b": "GER",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    {
+      "game_id": "OQT08-06",
+      "date": "2008-07-16",
+      "time_local": "19:30",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "preliminary_round",
+      "group": "B",
+      "team_a": "GER",
+      "team_b": "NZL",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    {
+      "game_id": "OQT08-07",
+      "date": "2008-07-14",
+      "time_local": "15:30",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "KOR",
+      "team_b": "SLO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    {
+      "game_id": "OQT08-08",
+      "date": "2008-07-15",
+      "time_local": "13:00",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "SLO",
+      "team_b": "CAN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    {
+      "game_id": "OQT08-09",
+      "date": "2008-07-16",
+      "time_local": "13:00",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "preliminary_round",
+      "group": "C",
+      "team_a": "CAN",
+      "team_b": "KOR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    {
+      "game_id": "OQT08-10",
+      "date": "2008-07-14",
+      "time_local": "19:30",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "CRO",
+      "team_b": "CMR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    {
+      "game_id": "OQT08-11",
+      "date": "2008-07-15",
+      "time_local": "19:30",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "CMR",
+      "team_b": "PUR",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    {
+      "game_id": "OQT08-12",
+      "date": "2008-07-16",
+      "time_local": "15:30",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "preliminary_round",
+      "group": "D",
+      "team_a": "PUR",
+      "team_b": "CRO",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    },
+    {
+      "game_id": "OQT08-13",
+      "date": "2008-07-18",
+      "time_local": "13:00",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF4",
+      "slot_a": "D1",
+      "slot_b": "C2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OQT08-14",
+      "date": "2008-07-18",
+      "time_local": "15:30",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF3",
+      "slot_a": "C1",
+      "slot_b": "D2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OQT08-15",
+      "date": "2008-07-18",
+      "time_local": "19:30",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF2",
+      "slot_a": "B1",
+      "slot_b": "A2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OQT08-16",
+      "date": "2008-07-18",
+      "time_local": "22:00",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "quarterfinal",
+      "bracket_slot": "QF1",
+      "slot_a": "A1",
+      "slot_b": "B2",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OQT08-17",
+      "date": "2008-07-19",
+      "time_local": "19:00",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "semifinal",
+      "bracket_slot": "SF2",
+      "slot_a": "W-QF2",
+      "slot_b": "W-QF4",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OQT08-18",
+      "date": "2008-07-19",
+      "time_local": "21:30",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "semifinal",
+      "bracket_slot": "SF1",
+      "slot_a": "W-QF1",
+      "slot_b": "W-QF3",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men",
+      "derivation": "date, time and venue sourced; the bracket slot is derived by mapping the real game to the teams' real group positions"
+    },
+    {
+      "game_id": "OQT08-19",
+      "date": "2008-07-20",
+      "time_local": "19:30",
+      "venue": "Olympic Indoor Hall (OAKA)",
+      "stage": "third_place",
+      "bracket_slot": "3RD",
+      "slot_a": "L-SF1",
+      "slot_b": "L-SF2",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men"
+    }
+  ],
+  "rosters": {
+    "BRA": {
+      "team": "BRA",
+      "head_coach": {
+        "value": "Moncho Monsalve",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Marcelo Magalhães Machado",
+          "position": "SF",
+          "birth_date": "1975-04-12",
+          "club": "Flamengo",
+          "height_m": "2.00",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Eduardo Magalhães Machado",
+          "position": "SF",
+          "birth_date": "1982-09-10",
+          "club": "Flamengo",
+          "height_m": "1.91",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Murilo Becker",
+          "position": "F/C",
+          "birth_date": "1983-07-14",
+          "club": "Maccabi Tel Aviv",
+          "height_m": "2.11",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Ricardo Probst",
+          "position": "SF",
+          "birth_date": "1976-04-13",
+          "club": "Conti/Assis",
+          "height_m": "2.00",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Fulvio Chiantia de Assis",
+          "position": "G",
+          "birth_date": "1981-08-15",
+          "club": "Pallacanestro Roseto",
+          "height_m": "1.87",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Marcelinho Huertas",
+          "position": "PG",
+          "birth_date": "1983-05-25",
+          "club": "Fortitudo Bologna",
+          "height_m": "1.91",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Alex Garcia",
+          "position": "SG",
+          "birth_date": "1980-03-04",
+          "club": "Brasilia",
+          "height_m": "1.91",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "garcial01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page garcial01 gives name \"Alex Garcia\", birth 1980-03-04"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Marcus Vinicius Urban Toledo dos Reis",
+          "position": "F",
+          "birth_date": "1986-07-10",
+          "club": "Plus Pujol Lleida",
+          "height_m": "2.03",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Rafael Araújo",
+          "position": "C",
+          "birth_date": "1980-08-12",
+          "club": "Free agent",
+          "height_m": "2.11",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "araujra01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page araujra01 gives name \"Rafael Araújo\", birth 1980-08-12"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2004-05",
+              "2005-06",
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "13",
+          "name": "João Paulo Batista",
+          "position": "C",
+          "birth_date": "1981-10-29",
+          "club": "Barons LMT",
+          "height_m": "2.08",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Jonathan Tavernari",
+          "position": "F",
+          "birth_date": "1987-06-18",
+          "club": "Brigham Young University",
+          "height_m": "1.96",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Tiago Splitter",
+          "position": "PF/C",
+          "birth_date": "1985-01-01",
+          "club": "TAU Cerámica",
+          "height_m": "2.11",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "splitti01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page splitti01 gives name \"Tiago Splitter\", birth 1985-01-01"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "CMR": {
+      "team": "CMR",
+      "head_coach": {
+        "value": "Lazare Adingono",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Christian Bayang",
+          "position": "SG",
+          "birth_date": "1987-05-07",
+          "club": "BEAC",
+          "height_m": "1.92",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Cyrille Makanda",
+          "position": "SG",
+          "birth_date": "1980-05-05",
+          "club": "APOEL B.C.",
+          "height_m": "1.89",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Parfait Bitee",
+          "position": "SG",
+          "birth_date": "1985-07-23",
+          "club": "Leuven Bears",
+          "height_m": "1.88",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Franck Ndongo",
+          "position": "F",
+          "birth_date": "1988-12-07",
+          "club": "SONARA",
+          "height_m": "2.01",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Harding Nana",
+          "position": "PF",
+          "birth_date": "1981-01-17",
+          "club": "Beirasar Rosalía",
+          "height_m": "2.03",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Joachim Ekanga-Ehawa",
+          "position": "SG/SF",
+          "birth_date": "1977-10-07",
+          "club": "Chalon-sur-Saône",
+          "height_m": "1.87",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Patrick Bouli",
+          "position": "G",
+          "birth_date": "1986-01-11",
+          "club": "Manhattan College",
+          "height_m": "1.88",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Jean Pierre Leolain Elong Ebongue",
+          "position": "SG",
+          "birth_date": "1985-10-07",
+          "club": "BEAC",
+          "height_m": "1.85",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Brice Vounang",
+          "position": "F/PF",
+          "birth_date": "1982-12-03",
+          "club": "SPO Rouen",
+          "height_m": "2.03",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Alfred Aboya",
+          "position": "PF/C",
+          "birth_date": "1985-01-02",
+          "club": "UCLA",
+          "height_m": "2.03",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Ruben Boumtje-Boumtje",
+          "position": "C",
+          "birth_date": "1978-05-20",
+          "club": "Oldenburg",
+          "height_m": "2.12",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "boumtru01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page boumtru01 gives name \"Ruben Boumtje-Boumtje\", birth 1978-05-20"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Alexis Wangmene",
+          "position": "F/PF",
+          "birth_date": "1989-03-01",
+          "club": "University of Texas",
+          "height_m": "2.03",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "CAN": {
+      "team": "CAN",
+      "head_coach": {
+        "value": "Leo Rautins",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Jermaine Anderson",
+          "position": "PG",
+          "birth_date": "1983-02-08",
+          "club": "Walter Tigers Tübingen",
+          "height_m": "1.86",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Tyler Kepkay",
+          "position": "PG",
+          "birth_date": "1987-06-19",
+          "club": "Winling",
+          "height_m": "1.83",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Samuel Dalembert",
+          "position": "C",
+          "birth_date": {
+            "value": "1981-05-10",
+            "status": "sourced",
+            "source": "basketball-reference and Wikipedia player article"
+          },
+          "club": "Philadelphia 76ers",
+          "height_m": "2.11",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "dalemsa01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page dalemsa01 gives name \"Samuel Dalembert\", birth 1981-05-10"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Philadelphia 76ers"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Olu Famutimi",
+          "position": "SG/SF",
+          "birth_date": "1984-02-21",
+          "club": "Khimik Yuzhny",
+          "height_m": "1.96",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Carl English",
+          "position": "SG/SF",
+          "birth_date": "1981-02-02",
+          "club": "Gran Canaria",
+          "height_m": "1.95",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Rowan Barrett",
+          "position": "F",
+          "birth_date": "1972-11-24",
+          "club": "Chalon-sur-Saône",
+          "height_m": "1.97",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Andy Rautins",
+          "position": "SG",
+          "birth_date": "1986-11-02",
+          "club": "Syracuse University",
+          "height_m": "1.98",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "rautian01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page rautian01 gives name \"Andy Rautins\", birth 1986-11-02"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Dave Thomas",
+          "position": "SF",
+          "birth_date": "1976-12-04",
+          "club": "Cairns Taipans",
+          "height_m": "2.04",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Aaron Doornekamp",
+          "position": "F",
+          "birth_date": "1985-12-05",
+          "club": "Carleton University",
+          "height_m": "1.98",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Rans Brempong",
+          "position": "PF",
+          "birth_date": "1981-07-22",
+          "club": "Bayer Giants Leverkusen",
+          "height_m": "2.04",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Levon Kendall",
+          "position": "PF",
+          "birth_date": "1984-07-04",
+          "club": "Panionios Forthnet",
+          "height_m": "2.10",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Joel Anthony",
+          "position": "C",
+          "birth_date": "1982-08-09",
+          "club": "Miami Heat",
+          "height_m": "2.06",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "anthojo01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page anthojo01 gives name \"Joel Anthony\", birth 1982-08-09"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "CPV": {
+      "team": "CPV",
+      "head_coach": {
+        "value": "Eric Silva",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Jeff Xavier",
+          "position": "PG",
+          "birth_date": "1985-09-07",
+          "club": "Providence College",
+          "height_m": "1.85",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Josh Gomes",
+          "position": "PG/SG",
+          "birth_date": "1983-12-10",
+          "club": "Baitar Benyamina",
+          "height_m": "1.90",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Abdulay Faty",
+          "position": "C",
+          "birth_date": "1985-01-14",
+          "club": "Desportivo da Huíla",
+          "height_m": "2.05",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Fidel Mendonca",
+          "position": "F",
+          "birth_date": "1984-07-07",
+          "club": "Olivais Coimbra",
+          "height_m": "1.91",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Mário Correia",
+          "position": "SG",
+          "birth_date": "1978-03-17",
+          "club": "Promade Cabinda",
+          "height_m": "1.89",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Antonio Monteiro",
+          "position": "F",
+          "birth_date": "1975-07-19",
+          "club": null,
+          "height_m": "1.92",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "club_note": "club cell empty in source; unresolved",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Marques Houtman",
+          "position": "PG",
+          "birth_date": "1979-08-18",
+          "club": "Clube Desportivo Primeiro de Agosto",
+          "height_m": "1.90",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Aldevino Lima",
+          "position": "C",
+          "birth_date": "1986-08-25",
+          "club": "Northeastern University",
+          "height_m": "2.03",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Peter Cipriano",
+          "position": "PF/C",
+          "birth_date": "1983-02-07",
+          "club": "Kouvot Kouvola",
+          "height_m": "2.06",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Avery Oliver",
+          "position": "SG/F",
+          "birth_date": "1983-10-12",
+          "club": "TV Hohenlimburg",
+          "height_m": "1.93",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Tony Barros",
+          "position": "SG/SF",
+          "birth_date": "1984-05-03",
+          "club": "University of Massachusetts Boston",
+          "height_m": "1.90",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Rodrigo Mascarenhas",
+          "position": "F",
+          "birth_date": "1980-03-24",
+          "club": "Clube Desportivo Primeiro de Agosto",
+          "height_m": "1.97",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "CRO": {
+      "team": "CRO",
+      "head_coach": {
+        "value": "Jasmin Repeša",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Roko Leni Ukić",
+          "position": "PG",
+          "birth_date": {
+            "value": "1984-12-05",
+            "status": "unverified",
+            "source": "squad page and Wikipedia player article; basketball-reference gives 1984-05-12"
+          },
+          "club": "Toronto Raptors",
+          "height_m": "1.95",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "ukicro01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page ukicro01 gives name \"Roko Ukić\", birth 1984-05-12"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Davor Kus",
+          "position": "PG/SG",
+          "birth_date": "1978-07-21",
+          "club": "Unicaja Málaga",
+          "height_m": "1.91",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Marko Popović",
+          "position": "PG",
+          "birth_date": "1982-06-12",
+          "club": "Zalgiris Kaunas",
+          "height_m": "1.85",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Marin Rozić",
+          "position": "SF",
+          "birth_date": "1983-02-14",
+          "club": "Cibona Zagreb",
+          "height_m": "2.03",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Nikola Prkačin",
+          "position": "PF",
+          "birth_date": "1975-11-15",
+          "club": "Cibona Zagreb",
+          "height_m": "2.08",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Marko Tomas",
+          "position": "SG/SF",
+          "birth_date": "1985-01-03",
+          "club": "Real Madrid",
+          "height_m": "2.01",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Zoran Planinić",
+          "position": "PG",
+          "birth_date": "1982-09-12",
+          "club": "CSKA Moscow",
+          "height_m": "1.99",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "planizo01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page planizo01 gives name \"Zoran Planinić\", birth 1982-09-12"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Sandro Nicević",
+          "position": "C",
+          "birth_date": "1976-06-16",
+          "club": "Benetton Treviso",
+          "height_m": "2.11",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Damir Markota",
+          "position": "SF/PF",
+          "birth_date": "1985-12-26",
+          "club": "Zalgiris Kaunas",
+          "height_m": "2.09",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "markoda01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page markoda01 gives name \"Damir Markota\", birth 1985-12-26"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Marko Banić",
+          "position": "PF",
+          "birth_date": "1984-08-31",
+          "club": "Iurbentia Bilbao",
+          "height_m": "2.04",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Krešimir Lončar",
+          "position": "C",
+          "birth_date": "1983-02-12",
+          "club": "Lokomotiv Rostov",
+          "height_m": "2.10",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Stanko Barać",
+          "position": "C",
+          "birth_date": "1986-08-13",
+          "club": "Pamesa Valencia",
+          "height_m": "2.17",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "GER": {
+      "team": "GER",
+      "head_coach": {
+        "value": "Dirk Bauermann",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Tim Ohlbrecht",
+          "position": "PF",
+          "birth_date": "1988-08-30",
+          "club": "Brose Baskets",
+          "height_m": "2.10",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "ohlbrti01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page ohlbrti01 gives name \"Tim Ohlbrecht\", birth 1988-08-30"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Philip Zwiener",
+          "position": "F",
+          "birth_date": "1985-07-23",
+          "club": "ALBA Berlin",
+          "height_m": "2.01",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Sven Schultze",
+          "position": "PF",
+          "birth_date": "1978-07-11",
+          "club": "Snaidero Cucine Udine",
+          "height_m": "2.08",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Robert Garrett",
+          "position": "SG",
+          "birth_date": "1977-03-18",
+          "club": "Brose Baskets",
+          "height_m": "1.93",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Konrad Wysocki",
+          "position": "SF",
+          "birth_date": {
+            "value": "1982-03-28",
+            "status": "sourced",
+            "source": "Olympic roster page and Wikipedia player article; OQT squad page gives 1983-03-28"
+          },
+          "club": "Deutsche Bank Skyliners",
+          "height_m": "2.04",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Steffen Hamann",
+          "position": "PG",
+          "birth_date": "1981-06-14",
+          "club": "ALBA Berlin",
+          "height_m": "1.96",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Demond Greene",
+          "position": "SG",
+          "birth_date": "1979-06-15",
+          "club": "Brose Baskets",
+          "height_m": "1.86",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Pascal Roller",
+          "position": "PG",
+          "birth_date": "1976-11-20",
+          "club": "Deutsche Bank Skyliners",
+          "height_m": "1.80",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Chris Kaman",
+          "position": "C",
+          "birth_date": "1982-04-28",
+          "club": "Los Angeles Clippers",
+          "height_m": "2.13",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "kamanch01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page kamanch01 gives name \"Chris Kaman\", birth 1982-04-28"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Los Angeles Clippers"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "13",
+          "name": "Patrick Femerling",
+          "position": "C",
+          "birth_date": "1975-03-04",
+          "club": "ALBA Berlin",
+          "height_m": "2.15",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Dirk Nowitzki",
+          "position": "PF",
+          "birth_date": "1978-06-19",
+          "club": "Dallas Mavericks",
+          "height_m": "2.13",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "nowitdi01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page nowitdi01 gives name \"Dirk Nowitzki\", birth 1978-06-19"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Dallas Mavericks"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "15",
+          "name": "Jan-Hendrik Jagla",
+          "position": "PF/C",
+          "birth_date": "1981-06-25",
+          "club": "Joventut Badalona",
+          "height_m": "2.13",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "GRE": {
+      "team": "GRE",
+      "head_coach": {
+        "value": "Panagiotis Giannakis",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Theodoros Papaloukas",
+          "position": "PG",
+          "birth_date": "1977-05-08",
+          "club": "Olympiacos",
+          "height_m": "2.00",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Ioannis Bourousis",
+          "position": "C",
+          "birth_date": "1983-11-17",
+          "club": "Olympiacos",
+          "height_m": "2.15",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Nikos Zisis",
+          "position": "G",
+          "birth_date": "1983-08-16",
+          "club": "CSKA Moscow",
+          "height_m": "1.97",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Vassilis Spanoulis",
+          "position": "G",
+          "birth_date": "1982-08-07",
+          "club": "Panathinaikos",
+          "height_m": "1.93",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "spanova01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page spanova01 gives name \"Vassilis Spanoulis\", birth 1982-08-07"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Panagiotis Vasilopoulos",
+          "position": "F",
+          "birth_date": "1984-02-08",
+          "club": "Olympiacos",
+          "height_m": "2.05",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Antonis Fotsis",
+          "position": "PF",
+          "birth_date": "1981-04-01",
+          "club": "Panathinaikos",
+          "height_m": "2.09",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Giorgos Printezis",
+          "position": "PF",
+          "birth_date": "1985-02-22",
+          "club": "Olympiacos",
+          "height_m": "2.06",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Andreas Glyniadakis",
+          "position": "C",
+          "birth_date": {
+            "value": "1981-08-26",
+            "status": "unverified",
+            "source": "squad page and Wikipedia player article; basketball-reference gives 1981-08-21"
+          },
+          "club": "Maroussi",
+          "height_m": "2.16",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "glynian01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page glynian01 gives name \"Andreas Glyniadakis\", birth 1981-08-21"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "12",
+          "name": "Kostas Tsartsaris",
+          "position": "PF/C",
+          "birth_date": "1979-10-17",
+          "club": "Panathinaikos",
+          "height_m": "2.10",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Dimitris Diamantidis",
+          "position": "G",
+          "birth_date": "1980-05-06",
+          "club": "Panathinaikos",
+          "height_m": "1.96",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Sofoklis Schortsanitis",
+          "position": "C",
+          "birth_date": "1985-06-22",
+          "club": "Olympiacos",
+          "height_m": "2.08",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Michalis Pelekanos",
+          "position": "G/F",
+          "birth_date": "1981-05-25",
+          "club": "Olympiacos",
+          "height_m": "1.99",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "KOR": {
+      "team": "KOR",
+      "head_coach": {
+        "value": "Kim Nam-Gi",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Ha Seung-Jin",
+          "position": "C",
+          "birth_date": "1985-08-04",
+          "club": null,
+          "height_m": "2.21",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "club_note": "club cell empty in source; unresolved",
+          "bbr_id": {
+            "value": "seungha01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page seungha01 gives name \"Ha Seung-Jin\", birth 1985-08-04"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2004-05",
+              "2005-06"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "5",
+          "name": "Jung Young-Sam",
+          "position": "SG/SF",
+          "birth_date": "1984-04-21",
+          "club": "Incheon ET Land Black Slamer",
+          "height_m": "1.87",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Lee Kwang-Jae",
+          "position": "SG/SF",
+          "birth_date": "1984-04-21",
+          "club": "Dongbu Promy",
+          "height_m": "1.88",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Kim Tae-Sool",
+          "position": "PG",
+          "birth_date": "1984-08-13",
+          "club": "Seoul SK Knights",
+          "height_m": "1.80",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Jeon Jung-Gyu",
+          "position": "SG",
+          "birth_date": "1983-10-14",
+          "club": "Incheon ET Land Black Slamer",
+          "height_m": "1.88",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Joo Hee-Jung",
+          "position": "PG",
+          "birth_date": "1977-02-04",
+          "club": "Anyang KT&G Kites",
+          "height_m": "1.82",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Kang Byung-Hyun",
+          "position": "PG/SG",
+          "birth_date": "1985-05-05",
+          "club": "Chung-Ang University",
+          "height_m": "1.92",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Yang Hee-Jong",
+          "position": "SF",
+          "birth_date": "1984-05-11",
+          "club": "Anyang KT&G Kites",
+          "height_m": "1.94",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Oh Sekeun",
+          "position": "C",
+          "birth_date": "1987-05-20",
+          "club": "Chung-Ang University",
+          "height_m": "2.01",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Yoon Ho-Young",
+          "position": "SF",
+          "birth_date": "1984-06-01",
+          "club": "Chung-Ang University",
+          "height_m": "1.96",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Kim Joo-Sung",
+          "position": "C",
+          "birth_date": "1979-11-09",
+          "club": "Dongbu Promy",
+          "height_m": "2.05",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Kim Min-Soo",
+          "position": "PF",
+          "birth_date": "1982-01-16",
+          "club": "Seoul SK Knights",
+          "height_m": "2.00",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "LIB": {
+      "team": "LIB",
+      "head_coach": {
+        "value": "Fuad Abou Chakra",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Jean Abdel-Nour",
+          "position": "SF",
+          "birth_date": "1983-11-29",
+          "club": "Bluestars",
+          "height_m": "1.98",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Mazen Mneimneh",
+          "position": "SG",
+          "birth_date": "1986-02-01",
+          "club": "Sporting Al Riyadi Beirut",
+          "height_m": "1.92",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Ali Mahmoud",
+          "position": "PG",
+          "birth_date": "1983-05-28",
+          "club": "Sporting Al Riyadi Beirut",
+          "height_m": "1.82",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Rony Fahed",
+          "position": "PG",
+          "birth_date": "1981-11-06",
+          "club": "Sagesse Beirut",
+          "height_m": "1.84",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Omar El Turk",
+          "position": "PG",
+          "birth_date": "1981-09-30",
+          "club": "Sporting Al Riyadi Beirut",
+          "height_m": "1.84",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Brian Anthony Beshara Feghali",
+          "position": "SF/PF",
+          "birth_date": "1977-12-30",
+          "club": "Al Mouttahed Tripoli",
+          "height_m": "2.04",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Roy Samaha",
+          "position": "C",
+          "birth_date": "1984-09-12",
+          "club": "Bluestars",
+          "height_m": "2.05",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Bassem Balaa",
+          "position": "F",
+          "birth_date": "1981-07-10",
+          "club": "Bluestars",
+          "height_m": "1.98",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Ali Fakhreddine",
+          "position": "PF/C",
+          "birth_date": "1983-04-03",
+          "club": "Sporting Al Riyadi Beirut",
+          "height_m": "2.02",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Sabah Khoury",
+          "position": "SG",
+          "birth_date": "1982-11-10",
+          "club": "Sagesse Beirut",
+          "height_m": "1.96",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Hussein Tawbe",
+          "position": "PF",
+          "birth_date": "1982-07-16",
+          "club": "Sporting Al Riyadi Beirut",
+          "height_m": "1.95",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Fadi El Khatib",
+          "position": "SG/SF",
+          "birth_date": "1979-01-01",
+          "club": "Sporting Al Riyadi Beirut",
+          "height_m": "1.98",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "NZL": {
+      "team": "NZL",
+      "head_coach": {
+        "value": "Nenad Vucinic",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Lindsay Tait",
+          "position": "G",
+          "birth_date": "1982-01-08",
+          "club": "Wellington Saints",
+          "height_m": "1.90",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Michael Fitchett",
+          "position": "PG",
+          "birth_date": "1982-09-20",
+          "club": "Nelson Giants",
+          "height_m": "1.83",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Kirk Penney",
+          "position": "G",
+          "birth_date": "1980-11-23",
+          "club": "New Zealand Breakers",
+          "height_m": "1.95",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "penneki01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page penneki01 gives name \"Kirk Penney\", birth 1980-11-23"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "7",
+          "name": "Mika Vukona",
+          "position": "F",
+          "birth_date": "1982-05-13",
+          "club": "South Dragons",
+          "height_m": "1.93",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Jeremy Kench",
+          "position": "PG",
+          "birth_date": "1984-04-27",
+          "club": "Canterbury Rams",
+          "height_m": "1.86",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Paora Winitana",
+          "position": "G",
+          "birth_date": "1976-12-06",
+          "club": "Hawke's Bay Hawks",
+          "height_m": "1.95",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Alex Pledger",
+          "position": "C",
+          "birth_date": "1987-03-27",
+          "club": "University of Missouri–Kansas City",
+          "height_m": "2.16",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Pero Cameron",
+          "position": "F",
+          "birth_date": "1974-06-05",
+          "club": "Gold Coast Blaze",
+          "height_m": "1.98",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Corey Webster",
+          "position": "G",
+          "birth_date": "1988-11-29",
+          "club": "Lambuth University",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Nick Horvath",
+          "position": "C",
+          "birth_date": "1981-02-18",
+          "club": "Wellington Saints",
+          "height_m": "2.08",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Craig Bradshaw",
+          "position": "C",
+          "birth_date": "1983-07-28",
+          "club": "Brisbane Bullets",
+          "height_m": "2.05",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Ben Hill",
+          "position": "F",
+          "birth_date": "1979-06-18",
+          "club": "Waikato Pistons",
+          "height_m": "1.96",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    },
+    "PUR": {
+      "team": "PUR",
+      "head_coach": {
+        "value": "Manolo Cintron",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Peter John Ramos",
+          "position": "C",
+          "birth_date": {
+            "value": "1985-05-23",
+            "status": "unverified",
+            "source": "squad page and Wikipedia player article; basketball-reference gives 1985-05-13"
+          },
+          "club": "Criollos de Caguas",
+          "height_m": "2.22",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "ramospe01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page ramospe01 gives name \"Peter John Ramos\", birth 1985-05-13"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "5",
+          "name": "José Juan Barea",
+          "position": "PG",
+          "birth_date": "1984-06-26",
+          "club": "Dallas Mavericks",
+          "height_m": "1.83",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "bareajo01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page bareajo01 gives name \"J.J. Barea\", birth 1984-06-26"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Dallas Mavericks"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "6",
+          "name": "Filiberto Rivera",
+          "position": "PG",
+          "birth_date": "1982-09-28",
+          "club": "AEK Athens",
+          "height_m": "1.87",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Carlos Arroyo",
+          "position": "PG",
+          "birth_date": "1979-07-30",
+          "club": "Orlando Magic",
+          "height_m": "1.88",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "arroyca01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page arroyca01 gives name \"Carlos Arroyo\", birth 1979-07-30"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Orlando Magic"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "8",
+          "name": "Joel Jones",
+          "position": "G",
+          "birth_date": "1981-07-17",
+          "club": "Ponce Lions",
+          "height_m": "1.98",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "9",
+          "name": "Alex Falcón",
+          "position": "SF/PF",
+          "birth_date": "1973-11-20",
+          "club": "Santurce Crabbers",
+          "height_m": "2.00",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "10",
+          "name": "Larry Ayuso",
+          "position": "SG",
+          "birth_date": "1977-03-27",
+          "club": "Cibona Zagreb",
+          "height_m": "1.90",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "11",
+          "name": "Ricardo Sanchez",
+          "position": "C",
+          "birth_date": "1987-07-06",
+          "club": "Idaho Stampede",
+          "height_m": "2.12",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Javier Mojica",
+          "position": "G",
+          "birth_date": "1984-08-31",
+          "club": "Fajardo Cariduros",
+          "height_m": "1.86",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Luis Villalfañe",
+          "position": "C",
+          "birth_date": "1981-06-21",
+          "club": "Gigantes de Carolina",
+          "height_m": "2.08",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Carmelo Antrone Lee",
+          "position": "SF",
+          "birth_date": "1977-06-07",
+          "club": "Guaynabo Conquistadores",
+          "height_m": "2.00",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Daniel Santiago",
+          "position": "C",
+          "birth_date": "1976-06-24",
+          "club": "Unicaja Malaga",
+          "height_m": "2.16",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "santida01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page santida01 gives name \"Daniel Santiago\", birth 1976-06-24"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        }
+      ],
+      "player_count": 12
+    },
+    "SLO": {
+      "team": "SLO",
+      "head_coach": {
+        "value": "Aleš Pipan",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads"
+      },
+      "players": [
+        {
+          "number": "4",
+          "name": "Željko Zagorac",
+          "position": "F/C",
+          "birth_date": "1981-03-09",
+          "club": "Helios Domžale",
+          "height_m": "2.04",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "5",
+          "name": "Jaka Lakovič",
+          "position": "PG",
+          "birth_date": "1978-07-09",
+          "club": "FC Barcelona",
+          "height_m": "1.86",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "6",
+          "name": "Jaka Klobučar",
+          "position": "PG/SG",
+          "birth_date": "1987-08-19",
+          "club": "Union Olimpija",
+          "height_m": "1.99",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "7",
+          "name": "Sani Bečirovič",
+          "position": "SG",
+          "birth_date": "1981-05-19",
+          "club": "Lottomatica Roma",
+          "height_m": "1.95",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "8",
+          "name": "Rasho Nesterovič",
+          "position": "C",
+          "birth_date": "1976-05-30",
+          "club": "Indiana Pacers",
+          "height_m": "2.13",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "nestera01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page nestera01 gives name \"Rasho Nesterović\", birth 1976-05-30"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2003-04",
+              "2004-05",
+              "2005-06",
+              "2006-07",
+              "2007-08"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          },
+          "nba_clubs_prior_season": {
+            "value": [
+              "Toronto Raptors"
+            ],
+            "status": "derived",
+            "source": "library/2007/league/nba_2007_08_team_rosters.json (Miami is simulated and absent from that file)"
+          }
+        },
+        {
+          "number": "9",
+          "name": "Goran Dragić",
+          "position": "PG",
+          "birth_date": "1986-05-06",
+          "club": "Union Olimpija",
+          "height_m": "1.90",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "dragigo01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page dragigo01 gives name \"Goran Dragić\", birth 1986-05-06"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "10",
+          "name": "Uroš Slokar",
+          "position": "PF/C",
+          "birth_date": "1983-05-14",
+          "club": "Triumph Lyubertsy",
+          "height_m": "2.06",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": {
+            "value": "slokaur01",
+            "status": "derived",
+            "source": "name match against library/careers/nba_player_careers.json keys",
+            "checked": "basketball-reference page slokaur01 gives name \"Uroš Slokar\", birth 1983-05-14"
+          },
+          "nba_seasons_on_file_through_prior_season": {
+            "value": [
+              "2006-07"
+            ],
+            "status": "derived",
+            "source": "library/careers/nba_player_careers.json seasons up to 2007-08"
+          }
+        },
+        {
+          "number": "11",
+          "name": "Nebojša Joksimović",
+          "position": "SG",
+          "birth_date": "1981-11-17",
+          "club": "Hemofarm",
+          "height_m": "1.93",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "12",
+          "name": "Emir Preldžič",
+          "position": "SF/PF",
+          "birth_date": "1987-09-06",
+          "club": "Fenerbahçe",
+          "height_m": "2.06",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "13",
+          "name": "Domen Lorbek",
+          "position": "SG",
+          "birth_date": "1985-03-06",
+          "club": "MMT Estudiantes",
+          "height_m": "1.98",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "14",
+          "name": "Dragisa Drobnjak",
+          "position": "F",
+          "birth_date": "1977-11-05",
+          "club": "Turów Zgorzelec",
+          "height_m": "2.00",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        },
+        {
+          "number": "15",
+          "name": "Miha Zupan",
+          "position": "PF/C",
+          "birth_date": "1982-09-13",
+          "club": "Union Olimpija",
+          "height_m": "2.06",
+          "status": "sourced",
+          "source": "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+          "bbr_id": null
+        }
+      ],
+      "player_count": 12
+    }
+  },
+  "research": {
+    "sources": [
+      "https://en.wikipedia.org/wiki/2008_FIBA_World_Olympic_Qualifying_Tournament_for_Men",
+      "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads",
+      "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_qualification",
+      "https://archive.fiba.com/pages/eng/fa/event/p/sid/4508/_//index.html (FIBA archive event page cited by Wikipedia; not fetched)",
+      "https://www.basketball-reference.com/players/ (birth dates of NBA-matched players)"
+    ],
+    "conflicts": [
+      {
+        "item": "2008 FIBA OQT: Samuel Dalembert birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads": "1980-05-10",
+          "https://www.basketball-reference.com/players/d/dalemsa01.html": "1981-05-10",
+          "https://en.wikipedia.org/wiki/Samuel_Dalembert (player article)": "1981-05-10"
+        },
+        "resolution": "recorded 1981-05-10 (player article agrees with basketball-reference)"
+      },
+      {
+        "item": "2008 FIBA OQT: Roko Leni Ukić birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads": "1984-12-05",
+          "https://www.basketball-reference.com/players/u/ukicro01.html": "1984-05-12",
+          "https://en.wikipedia.org/wiki/Roko_Uki%C4%87 (player article)": "1984-12-05"
+        },
+        "resolution": "unresolved: squad page and player article agree with each other but not with basketball-reference; squad value kept and marked unverified"
+      },
+      {
+        "item": "2008 FIBA OQT: Andreas Glyniadakis birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads": "1981-08-26",
+          "https://www.basketball-reference.com/players/g/glynian01.html": "1981-08-21",
+          "https://en.wikipedia.org/wiki/Andreas_Glyniadakis (player article)": "1981-08-26"
+        },
+        "resolution": "unresolved: squad page and player article agree with each other but not with basketball-reference; squad value kept and marked unverified"
+      },
+      {
+        "item": "2008 FIBA OQT: Peter John Ramos birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads": "1985-05-23",
+          "https://www.basketball-reference.com/players/r/ramospe01.html": "1985-05-13",
+          "https://en.wikipedia.org/wiki/Peter_John_Ramos (player article)": "1985-05-23"
+        },
+        "resolution": "unresolved: squad page and player article agree with each other but not with basketball-reference; squad value kept and marked unverified"
+      },
+      {
+        "item": "2008 FIBA OQT: Konrad Wysocki birth date",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/FIBA_World_Olympic_Qualifying_Tournament_for_Men_2008_squads": "1983-03-28",
+          "https://en.wikipedia.org/wiki/Basketball_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_team_rosters": "1982-03-28",
+          "https://en.wikipedia.org/wiki/Konrad_Wysocki (player article)": "1982-03-28"
+        },
+        "resolution": "recorded 1982-03-28 (Olympic roster page and player article agree)"
+      }
+    ],
+    "unresolved": [
+      "Time zone of listed tip-off times is not named by the source (UTC+3 derived).",
+      "Tiebreak procedure and ranking criteria for places 5-12 are not stated.",
+      "Clubs of Antonio Monteiro (CPV) and Ha Seung-Jin (KOR) are blank in the source."
+    ],
+    "notes": [
+      "Qualification routes are real-world results of the 2007 continental championships and are recorded as real-world reference."
+    ]
+  },
+  "counts": {
+    "teams": 12,
+    "games": 19,
+    "group_games_with_teams": 12,
+    "slot_games": 7
+  }
+}

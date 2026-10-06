@@ -13,7 +13,7 @@ import math
 import re
 
 from .career_stats import aggregate
-from .shot_chart import aggregate_shots, classify_zone
+from .shot_chart import GEOMETRIES, aggregate_shots, classify_zone
 
 
 ENGINE_SHOT_LABEL = "Simulated engine shot locations"
@@ -48,7 +48,7 @@ additionally requires that envelope in ``engine_result_shots``.
     if (not isinstance(tracking, dict) or set(tracking) != TRACKING_KEYS
             or type(tracking.get("schema_version")) is not int or tracking["schema_version"] != 1
             or tracking.get("model_version") != "spatial-2003.1"
-            or tracking.get("coordinate_system") != "nba_feet_from_basket"
+            or tracking.get("coordinate_system") not in GEOMETRIES
             or tracking.get("source_type") != "engine_generated"
             or tracking.get("coverage") != "complete"
             or not isinstance(tracking.get("prior_sha256"), str)
@@ -126,8 +126,9 @@ additionally requires that envelope in ``engine_result_shots``.
         if not _number(x) or not _number(y):
             errors.append(f"{prefix}: coordinates must be finite numeric feet")
         else:
-            chart_zone = classify_zone(x, y)
-            native_zone = classify_spatial_zone(x, y)
+            court = GEOMETRIES.get((tracking or {}).get("coordinate_system") if isinstance(tracking, dict) else None)
+            chart_zone = classify_zone(x, y, court)
+            native_zone = classify_spatial_zone(x, y, court)
             if chart_zone is None or native_zone is None or shot["zone"] != native_zone:
                 errors.append(f"{prefix}: location disagrees with its spatial zone")
             if valid_outcome and ((chart_zone == "three") != (value == 3)):

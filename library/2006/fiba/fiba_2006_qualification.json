@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "kind": "fiba_qualification_rules",
+  "slug": "fiba_2006_qualification",
+  "target": {
+    "value": "2006 FIBA World Championship (Japan)",
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship"
+  },
+  "hindsight_policy": "Rules for earning the 24 places, not results. Team names under real_world_reference describe the real world only; a simulated career fills each place from its own simulated qualifying results.",
+  "total_places": {
+    "value": 24,
+    "status": "sourced",
+    "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship"
+  },
+  "places": [
+    {
+      "route": "host",
+      "places": 1,
+      "rule": "host nation qualifies automatically",
+      "team": "JPN",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship"
+    },
+    {
+      "route": "olympic_champion",
+      "places": 1,
+      "rule": "the 2004 Olympic men's champion qualifies; its place is removed from its FIBA zone's allocation",
+      "event": "Basketball at the 2004 Summer Olympics – Men's tournament (Athens, 15-28 August 2004)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship",
+      "zone_effect": {
+        "value": "The 2004 champion was Argentina (Americas; real-world reference, decided before the career began); the 2005 FIBA Americas Championship kept 4 berths, with the 5th-best second-round team qualifying if Argentina finished in the top four.",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      }
+    },
+    {
+      "zone": "Africa",
+      "event": "2005 FIBA Africa Championship",
+      "event_slug": null,
+      "places": [
+        1,
+        2,
+        3
+      ],
+      "berths": 3,
+      "dates": {
+        "start": "2005-08-15",
+        "end": "2005-08-24"
+      },
+      "host": "Algiers, Algeria",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship; https://en.wikipedia.org/wiki/2005_FIBA_Africa_Championship",
+      "note": "berth count sourced; that the berths go to final places 1-3 is derived from the source's final-standings legend"
+    },
+    {
+      "zone": "Oceania",
+      "event": "2005 FIBA Oceania Championship",
+      "event_slug": null,
+      "places": [
+        1,
+        2
+      ],
+      "berths": 2,
+      "dates": {
+        "start": "2005-08-17",
+        "end": "2005-08-21"
+      },
+      "host": "New Zealand",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship; https://en.wikipedia.org/wiki/2005_FIBA_Oceania_Championship",
+      "note": "two teams competed for two berths (Australia and New Zealand)"
+    },
+    {
+      "zone": "Americas",
+      "event": "2005 FIBA Americas Championship",
+      "event_slug": "fiba_2005_americas_championship",
+      "places": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "berths": 4,
+      "dates": {
+        "start": "2005-08-24",
+        "end": "2005-09-04"
+      },
+      "host": "Santo Domingo, Dominican Republic",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "conditional_place": {
+        "place": 5,
+        "condition": "Argentina (qualified as 2004 Olympic champion) finishes in places 1-4",
+        "rule": "the 5th-best team of the second round qualifies",
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship"
+      }
+    },
+    {
+      "zone": "Asia",
+      "event": "2005 FIBA Asia Championship",
+      "event_slug": null,
+      "places": [
+        1,
+        2,
+        3
+      ],
+      "berths": 3,
+      "dates": {
+        "start": "2005-09-08",
+        "end": "2005-09-16"
+      },
+      "host": "Doha, Qatar",
+      "status": "derived",
+      "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship; https://en.wikipedia.org/wiki/2005_FIBA_Asia_Championship",
+      "note": "berth count sourced; final places 1-3 derived from the source's final-standings legend. No rule found for host Japan's place if Japan had finished in the top three."
+    },
+    {
+      "zone": "Europe",
+      "event": "EuroBasket 2005",
+      "event_slug": null,
+      "places": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "berths": 6,
+      "dates": {
+        "value": {
+          "start": "2005-09-16",
+          "end": "2005-09-25"
+        },
+        "status": "unverified",
+        "source": "https://en.wikipedia.org/wiki/EuroBasket_2005 (infobox: 16-25 September); https://en.wikipedia.org/wiki/2006_FIBA_World_Championship gives 4-22 September 2005"
+      },
+      "host": "Serbia and Montenegro (Belgrade, Podgorica, Novi Sad, Vršac)",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/EuroBasket_2005 (\"awarding berths to the top six teams in the final standings\")"
+    },
+    {
+      "route": "wild_card",
+      "places": 4,
+      "awarded": {
+        "value": "2005-11-26",
+        "status": "sourced",
+        "source": "https://www.srbija.gov.rs/vest/en/18357/serbia-montenegro-receive-invitation-for-2006-world-basketball-cup.php (FIBA Central Board, Rome, on the proposal of Secretary General Baumann)"
+      },
+      "decision_body": {
+        "value": "FIBA Central Board",
+        "status": "sourced",
+        "source": "https://www.srbija.gov.rs/vest/en/18357/serbia-montenegro-receive-invitation-for-2006-world-basketball-cup.php"
+      },
+      "criteria": {
+        "stated_by_fiba": {
+          "value": "No formal criteria published; FIBA reserved the right to choose, inviting countries that \"care for basketball\" and \"can contribute to the marketability of the World Championships\".",
+          "status": "sourced",
+          "source": "https://www.philstar.com/sports/2005/09/08/295603/not-too-late (The Philippine Star, 8 September 2005, reporting FIBA's position)"
+        },
+        "eligibility": {
+          "value": "Wild cards go to countries that failed to qualify from their zonal tournaments, i.e. a team already qualified on court is not eligible.",
+          "status": "sourced",
+          "source": "https://www.philstar.com/sports/2005/09/08/295603/not-too-late"
+        },
+        "later_general_rules": {
+          "value": "Applicants must have played in their zone's qualifying and applied; no more than three teams from one continent.",
+          "status": "unverified",
+          "source": "https://en.wikipedia.org/wiki/Wild_card_%28sports%29 (states these as the wild-card setup that \"began in 2006\"; not confirmed from a 2005 FIBA document)"
+        },
+        "fee": {
+          "value": null,
+          "status": "unverified",
+          "source": null,
+          "note": "an application fee is documented for 2010 (EUR 500,000) but none found for 2006"
+        }
+      },
+      "real_world_reference": {
+        "teams": [
+          "ITA",
+          "PUR",
+          "SCG",
+          "TUR"
+        ],
+        "names": [
+          "Italy",
+          "Puerto Rico",
+          "Serbia and Montenegro",
+          "Turkey"
+        ],
+        "status": "sourced",
+        "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship; https://www.srbija.gov.rs/vest/en/18357/serbia-montenegro-receive-invitation-for-2006-world-basketball-cup.php",
+        "note": "real-world reference only"
+      },
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship"
+    }
+  ],
+  "already_qualified_wildcard_rule": {
+    "value": "Not applicable by eligibility: only teams that failed to qualify on court could receive a wild card (wild cards were awarded after every zone event had finished). No rule was found for a qualified team that withdraws.",
+    "status": "derived",
+    "source": "https://www.philstar.com/sports/2005/09/08/295603/not-too-late; https://www.srbija.gov.rs/vest/en/18357/serbia-montenegro-receive-invitation-for-2006-world-basketball-cup.php"
+  },
+  "calendar": [
+    {
+      "item": "2004 Olympic tournament",
+      "start": "2004-08-15",
+      "end": "2004-08-28",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship"
+    },
+    {
+      "item": "AfroBasket 2005",
+      "start": "2005-08-15",
+      "end": "2005-08-24",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship"
+    },
+    {
+      "item": "FIBA Oceania 2005",
+      "start": "2005-08-17",
+      "end": "2005-08-21",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship"
+    },
+    {
+      "item": "FIBA Americas 2005",
+      "start": "2005-08-24",
+      "end": "2005-09-04",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship"
+    },
+    {
+      "item": "FIBA Asia 2005",
+      "start": "2005-09-08",
+      "end": "2005-09-16",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship"
+    },
+    {
+      "item": "EuroBasket 2005",
+      "start": "2005-09-16",
+      "end": "2005-09-25",
+      "status": "unverified",
+      "source": "https://en.wikipedia.org/wiki/EuroBasket_2005 (2006 page gives 4-22 September)"
+    },
+    {
+      "item": "wild cards awarded",
+      "date": "2005-11-26",
+      "status": "sourced",
+      "source": "https://www.srbija.gov.rs/vest/en/18357/serbia-montenegro-receive-invitation-for-2006-world-basketball-cup.php"
+    },
+    {
+      "item": "World Championship draw (Tokyo)",
+      "date": "2006-01-15",
+      "status": "sourced",
+      "source": "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship; https://www.srbija.gov.rs/vest/en/18357/serbia-montenegro-receive-invitation-for-2006-world-basketball-cup.php"
+    }
+  ],
+  "research": {
+    "sources": [
+      "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship",
+      "https://en.wikipedia.org/wiki/2005_FIBA_Americas_Championship",
+      "https://en.wikipedia.org/wiki/2005_FIBA_Africa_Championship",
+      "https://en.wikipedia.org/wiki/2005_FIBA_Oceania_Championship",
+      "https://en.wikipedia.org/wiki/2005_FIBA_Asia_Championship",
+      "https://en.wikipedia.org/wiki/EuroBasket_2005",
+      "https://www.srbija.gov.rs/vest/en/18357/serbia-montenegro-receive-invitation-for-2006-world-basketball-cup.php",
+      "https://www.philstar.com/sports/2005/09/08/295603/not-too-late",
+      "https://en.wikipedia.org/wiki/Wild_card_%28sports%29"
+    ],
+    "conflicts": [
+      {
+        "item": "EuroBasket 2005 dates",
+        "source_values": {
+          "https://en.wikipedia.org/wiki/EuroBasket_2005": "16-25 September 2005",
+          "https://en.wikipedia.org/wiki/2006_FIBA_World_Championship": "4-22 September 2005"
+        },
+        "resolution": "unresolved; EuroBasket page value recorded as unverified"
+      }
+    ],
+    "unresolved": [
+      "EuroBasket 2005 dates (conflict).",
+      "Whether FIBA published formal wild-card criteria or a fee for 2006.",
+      "Host-place rule if Japan had qualified through the 2005 FIBA Asia Championship.",
+      "Replacement rule if a qualified team withdrew."
+    ]
+  },
+  "counts": {
+    "places": 24
+  }
+}

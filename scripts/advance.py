@@ -273,6 +273,7 @@ def playoff_day(day):
         draw()
     say("    " + run("scripts/offseason_day.py", "--write", day, show=False).splitlines()[0])
     run("scripts/playoff_day.py", "--build", day, show=False)
+    national_day(day)                                    # FIBA tournaments in the summer (runtime/national.py)
     problems = run("-c", "from runtime.game_requests import frozen_errors; print('\\n'.join(frozen_errors()))", show=False)
     if problems:
         raise Stop("frozen inputs differ from the records: " + "; ".join(problems.splitlines()[:3]))
@@ -301,6 +302,7 @@ def camp_day(day):
         draw()
         out = run("scripts/run_camp.py", "--write", day, show=False)
     say("    " + out.splitlines()[0][:200])
+    national_day(day)                                    # a tournament running into training camp
     problems = run("-c", "from runtime.game_requests import frozen_errors; print('\\n'.join(frozen_errors()))", show=False)
     if problems:
         raise Stop("frozen inputs differ from the records: " + "; ".join(problems.splitlines()[:3]))
@@ -312,6 +314,30 @@ TRADES_TODAY = []
 WADE_NEWS = []                                   # Wade injuries and absences this run, repeated at the end
 WADE_LONG = []                                   # a long Wade injury stops the run like a Miami trade
 LONG_INJURY_GAMES = 10
+
+
+def national_day(day):
+    """National-team tournaments (scripts/national_day.py): selection, roster lock, ties, the day's game requests.
+    Each invitation answer is one engine draw, so the step repeats until nothing is pending."""
+    for _ in range(60):
+        out = run("scripts/national_day.py", "--write", day, show=False)
+        for line in out.splitlines():
+            if line and not line.startswith("national:"):
+                say("    " + line)
+                if line.startswith("WADE"):
+                    WADE_NEWS.append(f"{day}  {line}")
+        if not draws_pending():
+            return
+        draw()
+    raise Stop("national-team draws still pending after 60 rounds")
+
+
+def national_after(day):
+    for line in run("scripts/national_day.py", "--after", day, show=False).splitlines():
+        if line:
+            say("    " + line)
+            if "Wade" in line or line.startswith("USA"):
+                WADE_NEWS.append(f"{day}  {line}")
 
 
 def option_day(day):
@@ -371,6 +397,7 @@ def advance_day(day):
     run("scripts/club_replacements.py", "--write", ok=(0, 1), show=False)
     run("scripts/build_season_games.py", "--write", day)
     run("scripts/build_league_slate.py", "--write", day, show=False)
+    national_day(day)                                    # a qualifying window in the season (none before 2017)
     problems = run("-c", "from runtime.game_requests import frozen_errors; print('\\n'.join(frozen_errors()))", show=False)
     if problems:
         raise Stop("frozen inputs differ from the records: " + "; ".join(problems.splitlines()[:3]))
@@ -389,6 +416,7 @@ def close_day(day, playoffs=False):
         data["last_closed_event"] = json.loads(results[-1].read_text(encoding="utf-8"))["event_id"]
         write_state(data)
     run("scripts/write_back_results.py", "--write", "--light", show=False)
+    national_after(day)                                  # national results: Wade's notes, bracket, tournament close
     # Name each new Miami injury or absence (runtime/injury_types.py): one engine draw each, then record it.
     run("scripts/injury_types.py", "--write", show=False)
     if draws_pending():
