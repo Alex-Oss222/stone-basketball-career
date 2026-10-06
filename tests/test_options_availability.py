@@ -59,3 +59,15 @@ class LeagueTradeTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DatedHolderTests(unittest.TestCase):
+    def test_option_follows_a_traded_contract(self):
+        from unittest import mock
+        key = (str(ROOT.resolve()), "2005-06-29")
+        with mock.patch.dict(options._HOLDERS, {key: {"x01": "Utah Jazz"}}), \
+             mock.patch("runtime.rotations.miami_holds", return_value=[]):
+            row = ("Boston Celtics", "x01", "Player X", "2005-06", "team_option", 1_000_000, False)
+            self.assertEqual(options._dated_holder(row, "2005-06-29", ROOT)[0], "Utah Jazz")
+            waived = ("Boston Celtics", "y01", "Player Y", "2005-06", "team_option", 1_000_000, False)
+            self.assertEqual(options._dated_holder(waived, "2005-06-29", ROOT)[0], "Boston Celtics")

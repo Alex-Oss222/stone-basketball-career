@@ -123,6 +123,39 @@ def _season_of(day):
     return season_of_date(day)
 
 
+def holders_on(day, root=ROOT):
+    """{bbr_id: club} for every club's players on the date in the simulated league (`league_moves.effective_roster`):
+    a contract travels with a traded player, so the club deciding his option is the one holding him on the deadline."""
+    from .league_moves import effective_roster
+    from .seasons import clubs as season_clubs
+    season = _season_of(day)
+    out = {}
+    for club in season_clubs(season, root):
+        if club != "Miami Heat":
+            for p in effective_roster(club, day, season, root):
+                if p.get("bbr_id"):
+                    out[p["bbr_id"]] = club
+    return out
+
+
+_HOLDERS = {}
+
+
+def _dated_holder(row, due, root):
+    """The option row with the club holding the player on the deadline; None once simulated Miami holds him (its own
+    sheet decides) . A player no club holds (waived) keeps the ledger's club, which still owes the contract."""
+    if row[0] == "Miami Heat" or not row[1]:
+        return row
+    key = (str(Path(root).resolve()), due)
+    if key not in _HOLDERS:
+        _HOLDERS[key] = holders_on(due, root)
+    holders = _HOLDERS[key]
+    from .rotations import miami_holds
+    if row[1] in set(miami_holds(_season_of(due), due, root)):
+        return None
+    return (holders.get(row[1]) or row[0],) + tuple(row[1:])
+
+
 def run(day, root=ROOT, evidence_day=None):
     """Decide every option whose deadline is on or before `day` and not yet decided; apply drawn answers.
     Returns (decided now, packets written, applied)."""
@@ -133,6 +166,7 @@ def run(day, root=ROOT, evidence_day=None):
     done = {d["id"] for d in record["decisions"]}
     decided, written = [], []
     rows = [r for r in open_options(season, root) if deadline(r[4], r[3], r[6]) <= day]
+    rows = [r for r in (_dated_holder(r, deadline(r[4], r[3], r[6]), root) for r in rows) if r]
     folder = root / draws_dir(season)
     valuations = {}
     for row in rows:
