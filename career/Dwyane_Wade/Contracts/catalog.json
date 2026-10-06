@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2004-12-06",
+  "as_of": "2004-12-12",
   "players": [
     {
       "player_id": "mckieaa01",
@@ -1292,7 +1292,7 @@
     {
       "player_id": "johnsde03",
       "name": "DerMarr Johnson",
-      "team": "Free agent",
+      "team": "San Antonio Spurs",
       "status": "under contract",
       "current_contract_id": "johnsde03-2003-10-01",
       "recorded_agreements": 2,

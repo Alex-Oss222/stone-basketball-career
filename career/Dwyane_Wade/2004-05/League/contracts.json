@@ -64,13 +64,14 @@
   {
    "player": "Tony Allen",
    "bbr_id": "allento01",
-   "club": "San Antonio Spurs",
+   "club": "New York Knicks",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2004-05": 385277
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "signed_club": "San Antonio Spurs"
   },
   {
    "player": "Chris Andersen",
@@ -2273,7 +2274,7 @@
   {
    "player": "Kris Humphries",
    "bbr_id": "humphkr01",
-   "club": "Detroit Pistons",
+   "club": "Utah Jazz",
    "route": "rookie_scale",
    "kind": "rookie_scale",
    "schedule": {
@@ -2283,7 +2284,8 @@
    },
    "source": "2004 rookie scale No. 18 at 120%",
    "team_option": "2007-08",
-   "rookie_scale": true
+   "rookie_scale": true,
+   "signed_club": "Detroit Pistons"
   },
   {
    "player": "Ryan Humphrey",
@@ -4225,14 +4227,15 @@
   {
    "player": "Malik Rose",
    "bbr_id": "rosema01",
-   "club": "San Antonio Spurs",
+   "club": "New York Knicks",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 5462500,
     "2005-06": 6008750
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "San Antonio Spurs"
   },
   {
    "player": "Michael Ruffin",
@@ -4687,7 +4690,7 @@
   {
    "player": "Sebastian Telfair",
    "bbr_id": "telfase01",
-   "club": "Detroit Pistons",
+   "club": "Utah Jazz",
    "route": "rookie_scale",
    "kind": "rookie_scale",
    "schedule": {
@@ -4697,7 +4700,8 @@
    },
    "source": "2004 rookie scale No. 24 at 120%",
    "team_option": "2007-08",
-   "rookie_scale": true
+   "rookie_scale": true,
+   "signed_club": "Detroit Pistons"
   },
   {
    "player": "Jason Terry",
@@ -4778,13 +4782,14 @@
   {
    "player": "Kurt Thomas",
    "bbr_id": "thomaku01",
-   "club": "New York Knicks",
+   "club": "San Antonio Spurs",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 5884500
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "New York Knicks"
   },
   {
    "player": "Tim Thomas",

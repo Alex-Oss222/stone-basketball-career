@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2004-12-06** · Toronto Raptors · #4 · PF · age 20
+Career date: **2004-12-12** · Toronto Raptors · #4 · PF · age 20
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,24 +14,24 @@ Career date: **2004-12-06** · Toronto Raptors · #4 · PF · age 20
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 19/19 | 38.9 | 16.7 | 7.9 | 2.7 | 0.9 | 1.1 | 51.4 | 38.9 | 79.1 | 56.7 | 14-5 |
+| 2004-05 | 20 | Toronto Raptors | 22/22 | 39.4 | 17.2 | 8.1 | 2.6 | 0.9 | 1.0 | 51.2 | 36.8 | 80.0 | 56.4 | 17-6 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 19 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 22 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | 38.9 |
-| Points | 20.2 | 16.7 |
-| Rebounds | 11.1 | 7.9 |
-| Assists | 3.5 | 2.7 |
+| Minutes | 36.5 | 39.4 |
+| Points | 20.2 | 17.2 |
+| Rebounds | 11.1 | 8.1 |
+| Assists | 3.5 | 2.6 |
 | Steals | 0.9 | 0.9 |
-| Blocks | 1.5 | 1.1 |
-| FG% | 51.4 | 51.4 |
-| 3P% | 41.2 | 38.9 |
-| FT% | 90.8 | 79.1 |
-| TS% (est.) | 64.0 | 56.7 |
+| Blocks | 1.5 | 1.0 |
+| FG% | 51.4 | 51.2 |
+| 3P% | 41.2 | 36.8 |
+| FT% | 90.8 | 80.0 |
+| TS% (est.) | 64.0 | 56.4 |
 
 ## Playoffs
 

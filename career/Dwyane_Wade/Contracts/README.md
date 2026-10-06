@@ -2,7 +2,7 @@
 
 # Player contracts
 
-Known through 2004-12-06. [Search the contract directory](index.html)
+Known through 2004-12-12. [Search the contract directory](index.html)
 
 Every tracked player has a current-contract view and complete available agreement history. Unknown terms stay explicit. Signed value, salary, guarantees and cap charges remain separate.
 
@@ -151,7 +151,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [David West](players/westda01.md) | New Orleans Hornets | No verified contract record | No verified current agreement | 0 |
 | [Derek Anderson](players/anderde01.md) | Portland Trail Blazers | under contract | Derek Anderson · existing contract; signing date not recorded | 1 |
 | [Derek Fisher](players/fishede01.md) | Detroit Pistons | released | No verified current agreement | 2 |
-| [DerMarr Johnson](players/johnsde03.md) | Free agent | under contract | DerMarr Johnson · 2003-10-01 | 2 |
+| [DerMarr Johnson](players/johnsde03.md) | San Antonio Spurs | under contract | DerMarr Johnson · 2003-10-01 | 2 |
 | [Derrick Coleman](players/colemde01.md) | Philadelphia 76ers | under contract | Derrick Coleman · 2003-07-16 | 2 |
 | [Derrick Dial](players/dialde01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
 | [Derrick Zimmerman](players/zimmede01.md) | Free agent | No verified contract record | No verified current agreement | 0 |
