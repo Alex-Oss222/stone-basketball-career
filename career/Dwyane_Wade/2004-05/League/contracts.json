@@ -2106,13 +2106,14 @@
   {
    "player": "Alan Henderson",
    "bbr_id": "hendeal01",
-   "club": "Atlanta Hawks",
+   "club": "Utah Jazz",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 8273125
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "Atlanta Hawks"
   },
   {
    "player": "Nene",
@@ -2883,13 +2884,14 @@
   {
    "player": "Raef LaFrentz",
    "bbr_id": "lafrera01",
-   "club": "Utah Jazz",
+   "club": "Atlanta Hawks",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 9714538
    },
-   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); traded 2004-07-29"
+   "source": "library/2004/league/nba_2004_05_salaries.json (reconstructed: no 2004 offseason move); traded 2004-07-29",
+   "signed_club": "Utah Jazz"
   },
   {
    "player": "Maciej Lampe",

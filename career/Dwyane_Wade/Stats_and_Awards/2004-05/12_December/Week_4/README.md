@@ -6,7 +6,7 @@
 
 ## Professional identity
 
-![Player personal information and earned 2004-05 awards through 2004-12-13](../../../../assets/stat_reports/personal_2004-05_2004-12-13.svg)
+![Player personal information and earned 2004-05 awards through 2004-12-19](../../../../assets/stat_reports/personal_2004-05_2004-12-19.svg)
 
 | Player | Age on report date | Team / league | Position | Number | Status |
 | --- | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@
 | Physical measurements recorded | 2003-06-25 |
 | Professional status effective | 2004-10-28 |
 
-Identity as of 2004-12-13; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
+Identity as of 2004-12-19; status snapshot dated 2004-10-28. User-established alternate-history player; historical Wade's biography and results are not this record.
 
 ### Earned 2004-05 awards
 
@@ -39,7 +39,7 @@ No 2004-05 awards yet.
 
 ## Statistics
 
-As of **2004-12-13**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
+As of **2004-12-19**: 0 closed games; 0/0 have player participation and box coverage; recorded DNPs: 0.
 
 No closed games in this scope. Totals are empty (0); rates are N/A. Future dates are calendar containers, not played results.
 
@@ -57,7 +57,7 @@ G counts appearances; GS counts recorded starts. DNPs, scheduled games and cance
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-12-13, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-12-19, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 [Full statistical detail: totals, per 36, shooting, efficiency, splits and source games](Stat_Detail.md)
 
@@ -70,13 +70,13 @@ Awards are confirmed through 2004-12-13, filed by the honor's period-end date; t
 | Scope | Age | Team | Lg | Pos | G | GS | MP | FG | FGA | FG% | 3P | 3PA | 3P% | 2P | 2PA | 2P% | eFG% | FT | FTA | FT% | ORB | DRB | TRB | AST | STL | BLK | TOV | PF | PTS | TS% (est.) | Awards |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | This week | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| [Previous week](../Week_3/README.md) | 20 | Miami Heat | NBA | SG / PG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | — |
-| Month through this week | 20 | Miami Heat | NBA | SG / PG | 6 | 6 | 37.7 | 7.8 | 13.8 | .566 | 1.5 | 3.2 | .474 | 6.3 | 10.7 | .594 | .620 | 8.0 | 8.2 | .980 | 1.8 | 5.5 | 7.3 | 3.2 | 1.0 | 1.0 | 1.7 | 3.0 | 25.2 | .722 | — |
-| Season through this week | 20 | Miami Heat | NBA | SG / PG | 21 | 21 | 35.8 | 6.2 | 12.1 | .514 | 1.1 | 2.4 | .460 | 5.1 | 9.8 | .527 | .559 | 5.5 | 5.8 | .951 | 1.7 | 4.0 | 5.8 | 3.8 | 1.5 | 1.3 | 1.4 | 2.5 | 19.1 | .650 | — |
+| [Previous week](../Week_3/README.md) | 20 | Miami Heat | NBA | SG / PG | 3 | 3 | 39.3 | 7.7 | 13.7 | .561 | 1.7 | 3.0 | .556 | 6.0 | 10.7 | .562 | .622 | 4.3 | 4.3 | 1.000 | 0.7 | 4.0 | 4.7 | 5.3 | 2.0 | 1.7 | 1.7 | 3.7 | 21.3 | .685 | — |
+| Month through this week | 20 | Miami Heat | NBA | SG / PG | 10 | 10 | 37.7 | 7.8 | 13.9 | .561 | 1.6 | 3.2 | .500 | 6.2 | 10.7 | .579 | .619 | 6.7 | 6.8 | .985 | 1.3 | 4.6 | 5.9 | 4.0 | 1.4 | 1.2 | 2.0 | 3.3 | 23.9 | .707 | — |
+| Season through this week | 20 | Miami Heat | NBA | SG / PG | 25 | 25 | 36.1 | 6.5 | 12.4 | .521 | 1.2 | 2.5 | .476 | 5.3 | 9.9 | .532 | .569 | 5.4 | 5.6 | .957 | 1.5 | 3.9 | 5.4 | 4.0 | 1.6 | 1.3 | 1.6 | 2.7 | 19.6 | .655 | — |
 
 G and GS are counts; MP and counting statistics are **per appearance**. Shooting uses **.500 = 50.0%**. Age is at the row's cutoff. Scroll horizontally for every column.
 
-Awards are confirmed through 2004-12-13, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
+Awards are confirmed through 2004-12-19, filed by the honor's period-end date; the banner shows career awards known at the page's identity cutoff.
 
 ### Production
 

@@ -2,11 +2,11 @@
 
 # Stats review | Dwyane Wade
 
-Career date: 2004-12-13 · Miami Heat · active
+Career date: 2004-12-19 · Miami Heat · active
 
 [Live milestone desk](index.html#stats_review) · [All milestones](README.md)
 
-29 closed game records in 2004-05 through 2004-12-13. Competitions remain separate.
+33 closed game records in 2004-05 through 2004-12-19. Competitions remain separate.
 
 Activation: A declared, closed game result supplies observed participation and the player box.
 
@@ -15,7 +15,7 @@ Activation: A declared, closed game result supplies observed participation and t
 | Competition | G | MPG | PPG | RPG | APG | TOV/G | Coverage |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 7 | 30.2 | 14.7 | 4.1 | 4.0 | 0.857 | Complete |
-| regular | 21 | 35.8 | 19.1 | 5.8 | 3.8 | 1.4 | Complete |
+| regular | 25 | 36.1 | 19.6 | 5.4 | 4.0 | 1.6 | Complete |
 
 ## Pooled shooting
 
@@ -24,7 +24,7 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | Competition | FGM | FGA | FG ratio | 3PM | 3PA | 3P ratio |
 | --- | --- | --- | --- | --- | --- | --- |
 | preseason | 31 | 67 | 0.463 | 4 | 14 | 0.286 |
-| regular | 131 | 255 | 0.514 | 23 | 50 | 0.460 |
+| regular | 162 | 311 | 0.521 | 30 | 63 | 0.476 |
 
 ## Closed source games
 
@@ -59,6 +59,10 @@ Ratios are pooled makes divided by attempts; missing and zero-attempt percentage
 | 2004-12-08 | regular | Milwaukee Bucks | Played | [Closed game](../2004-05/06_Regular_Season/12_December/Week_2/Game_1.md) |
 | 2004-12-10 | regular | Memphis Grizzlies | Played | [Closed game](../2004-05/06_Regular_Season/12_December/Week_2/Game_2.md) |
 | 2004-12-12 | regular | Toronto Raptors | Played | [Closed game](../2004-05/06_Regular_Season/12_December/Week_2/Game_3.md) |
+| 2004-12-13 | regular | Washington Wizards | Played | [Closed game](../2004-05/06_Regular_Season/12_December/Week_2/Game_4.md) |
+| 2004-12-15 | regular | Washington Wizards | Played | [Closed game](../2004-05/06_Regular_Season/12_December/Week_3/Game_1.md) |
+| 2004-12-17 | regular | Denver Nuggets | Played | [Closed game](../2004-05/06_Regular_Season/12_December/Week_3/Game_2.md) |
+| 2004-12-19 | regular | Orlando Magic | Played | [Closed game](../2004-05/06_Regular_Season/12_December/Week_3/Game_3.md) |
 
 ## Evidence available for decisions
 
@@ -128,4 +132,8 @@ The next declared, closed game result or a chosen completed-period review.
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_2/Game_1.md)
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_2/Game_2.md)
 - [Closed game](../2004-05/06_Regular_Season/12_December/Week_2/Game_3.md)
+- [Closed game](../2004-05/06_Regular_Season/12_December/Week_2/Game_4.md)
+- [Closed game](../2004-05/06_Regular_Season/12_December/Week_3/Game_1.md)
+- [Closed game](../2004-05/06_Regular_Season/12_December/Week_3/Game_2.md)
+- [Closed game](../2004-05/06_Regular_Season/12_December/Week_3/Game_3.md)
 - [Dated milestone working records and player replies](../milestones.json)

@@ -12,7 +12,7 @@
 
 The interactive card is an HTML file: GitHub shows it as source, so open `eschmev01.html` in a browser from a checkout to use the period selectors, the shot chart and the awards view. This page carries the same facts as text.
 
-**Card date:** 2004-12-13 · **Club on this date:** Free agent · **Basis:** unsigned on 2004-12-13 in the 2004-05 league · **League:** NBA  
+**Card date:** 2004-12-19 · **Club on this date:** Free agent · **Basis:** unsigned on 2004-12-19 in the 2004-05 league · **League:** NBA  
 **Position:** C (Center) · **Jersey:** #42 · **Born:** 1975-05-30 · **Age on card date:** 29  
 **Registry ID:** `eschmev01` · [Basketball-Reference page](https://www.basketball-reference.com/players/e/eschmev01.html) · ESPN ID 236
 
@@ -26,7 +26,7 @@ The interactive card is an HTML file: GitHub shows it as source, so open `eschme
 
 ## Simulated statistics
 
-As of **2004-12-13**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
+As of **2004-12-19**: 0 closed games feed this card. Per-game columns use the repository order; an unavailable value stays N/A, never zero. G and GS are counts; MP and counting statistics are per appearance; shooting uses .500 = 50.0%.
 
 ### Season
 
@@ -117,4 +117,4 @@ G and GS are counts. MIN and all other counting statistics are per game. Percent
 
 ## Awards and honors
 
-No simulated honor has been recorded for this player through 2004-12-13. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.
+No simulated honor has been recorded for this player through 2004-12-19. Historical awards are not imported. Honors appear here only from a closed award decision in the league award records.

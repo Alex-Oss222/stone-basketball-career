@@ -2,9 +2,9 @@
 
 # Contract | Maurice Baker
 
-Known through: 2004-12-13. [Open interactive contract](bakerma01.html#contract) · [Contract history](bakerma01.html#contract-history)
+Known through: 2004-12-19. [Open interactive contract](bakerma01.html#contract) · [Contract history](bakerma01.html#contract-history)
 
-Maurice Baker: under contract. Evidence cutoff: 2004-12-13.
+Maurice Baker: under contract. Evidence cutoff: 2004-12-19.
 
 ## Current contract
 

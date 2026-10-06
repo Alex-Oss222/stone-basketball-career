@@ -4,7 +4,7 @@
 
 ![Chris Bosh career overview](assets/career_overview.svg)
 
-Career date: **2004-12-13** · Toronto Raptors · #4 · PF · age 20
+Career date: **2004-12-19** · Toronto Raptors · #4 · PF · age 20
 
 A real player the user follows, not one the user controls: his club decides his moves and the engine plays his games. Every number below comes from closed simulated games and the league's recorded award decisions.
 
@@ -28,7 +28,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [2003-04](2003-04/README.md) | 19 | Toronto Raptors | 75/75 | 35.7 | 13.9 | 7.9 | 1.4 | 1.0 | 1.4 | 47.7 | 42.2 | 71.2 | 53.0 | 42-40 · lost conference semifinals |
-| [2004-05](2004-05/README.md) | 20 | Toronto Raptors | 22/22 | 39.4 | 17.2 | 8.1 | 2.6 | 0.9 | 1.0 | 51.2 | 36.8 | 80.0 | 56.4 | 17-6 |
+| [2004-05](2004-05/README.md) | 20 | Toronto Raptors | 25/25 | 39.7 | 17.2 | 8.6 | 2.6 | 0.8 | 1.2 | 51.2 | 38.1 | 80.7 | 56.3 | 20-6 |
 
 ## Playoffs
 
@@ -61,17 +61,18 @@ A real player the user follows, not one the user controls: his club decides his 
 | 500 career rebounds | 2004-03-23 | 19 years, 365 days | 2003-04 | 64 | Memphis Grizzlies |
 | 100 career blocks | 2004-03-28 | 20 years, 4 days | 2003-04 | 67 | Memphis Grizzlies |
 | 1,000 career points | 2004-04-09 | 20 years, 16 days | 2003-04 | 72 | Detroit Pistons |
+| 100 career games played | 2004-12-19 | 20 years, 270 days | 2004-05 | 100 | New Jersey Nets |
 | 100 career playoff points | 2004-05-05 | 20 years, 42 days | 2003-04 | 7 | New Jersey Nets |
 
 ## Next milestones
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 2,000 career points | 1,424 | 576 |
-| 1,000 career rebounds | 774 | 226 |
-| 250 career assists | 162 | 88 |
-| 100 career steals | 91 | 9 |
-| 250 career blocks | 130 | 120 |
-| 100 career three-pointers made | 26 | 74 |
-| 500 career free throws made | 272 | 228 |
-| 100 career games played | 97 | 3 |
+| 2,000 career points | 1,474 | 526 |
+| 1,000 career rebounds | 811 | 189 |
+| 250 career assists | 171 | 79 |
+| 100 career steals | 93 | 7 |
+| 250 career blocks | 136 | 114 |
+| 100 career three-pointers made | 27 | 73 |
+| 500 career free throws made | 279 | 221 |
+| 200 career games played | 100 | 100 |

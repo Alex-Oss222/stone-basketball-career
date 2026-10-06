@@ -4,13 +4,13 @@
 
 NBA regular season · 2004-05
 
-As of December 13, 2004: 22 closed Miami games in this period. Rows cover Miami's closed games only.
+As of December 19, 2004: 26 closed Miami games in this period. Rows cover Miami's closed games only.
 
 ## Team record
 
 | G | W | L | WIN% | PPG | OPP PPG | DIFF |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 22 | 15 | 7 | .682 | 99.3 | 95.7 | +3.5 |
+| 26 | 18 | 8 | .692 | 99.5 | 95.3 | +4.2 |
 
 ## Player production
 
@@ -18,23 +18,23 @@ G is appearances; MPG through TOV/G are per appearance. The rows cover Miami gam
 
 | Player | Pos | G | MPG | PPG | RPG | APG | SPG | BPG | TOV/G |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Eddie Jones | SG/SF | 22 | 9.5 | 3.3 | 1.0 | 0.5 | 0.5 | 0.1 | 0.4 |
-| Brian Grant | C/PF | 22 | 31.1 | 8.5 | 5.7 | 1.5 | 0.7 | 0.4 | 0.9 |
-| Scott Padgett | PF | 21 | 22.4 | 6.7 | 4.2 | 1.6 | 1.0 | 0.2 | 0.9 |
-| Mike James | PG | 21 | 35.0 | 16.9 | 3.8 | 4.4 | 1.1 | 0.1 | 2.6 |
-| Mehmet Okur | PF | 22 | 35.5 | 14.5 | 9.2 | 3.0 | 0.4 | 1.2 | 2.1 |
-| Dwyane Wade | SG/PG | 21 | 35.8 | 19.1 | 5.8 | 3.8 | 1.5 | 1.3 | 1.4 |
-| Caron Butler | SF | 15 | 34.6 | 16.6 | 4.3 | 1.7 | 0.9 | 0.2 | 2.3 |
-| Kendall Gill | SG | 21 | 10.1 | 4.4 | 1.6 | 0.7 | 0.4 | 0.2 | 0.6 |
-| Dorell Wright | SF | 20 | 8.2 | 3.3 | 1.2 | 0.9 | 0.3 | 0.1 | 0.8 |
+| Eddie Jones | SG/SF | 23 | 9.2 | 3.1 | 1.0 | 0.5 | 0.5 | 0.1 | 0.4 |
+| Brian Grant | C/PF | 26 | 31.6 | 8.6 | 5.6 | 1.8 | 0.8 | 0.4 | 1.0 |
+| Scott Padgett | PF | 25 | 21.3 | 6.4 | 4.0 | 1.6 | 1.1 | 0.2 | 0.9 |
+| Mike James | PG | 25 | 34.4 | 16.3 | 3.9 | 4.3 | 1.2 | 0.2 | 2.6 |
+| Mehmet Okur | PF | 26 | 35.2 | 14.4 | 9.5 | 3.0 | 0.4 | 1.2 | 2.0 |
+| Dwyane Wade | SG/PG | 25 | 36.1 | 19.6 | 5.4 | 4.0 | 1.6 | 1.3 | 1.6 |
+| Caron Butler | SF | 19 | 34.6 | 17.1 | 5.1 | 1.5 | 0.9 | 0.2 | 2.2 |
+| Kendall Gill | SG | 25 | 10.1 | 4.3 | 1.7 | 0.7 | 0.4 | 0.2 | 0.6 |
+| Dorell Wright | SF | 23 | 8.0 | 3.2 | 1.2 | 0.8 | 0.3 | 0.2 | 0.7 |
 | John Thomas | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Maurice Evans | SG | 3 | 2.4 | 1.7 | 1.0 | 0.7 | 0.3 | 0.3 | 0.0 |
-| Udonis Haslem | PF | 21 | 18.6 | 6.4 | 4.5 | 0.7 | 0.4 | 0.4 | 0.5 |
-| Maurice Baker | PG | 13 | 5.0 | 1.9 | 0.8 | 0.2 | 0.1 | 0.1 | 0.9 |
-| John Edwards | C | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Udonis Haslem | PF | 25 | 18.5 | 6.3 | 4.4 | 0.7 | 0.4 | 0.4 | 0.6 |
+| Maurice Baker | PG | 17 | 5.4 | 2.1 | 0.7 | 0.2 | 0.1 | 0.2 | 0.8 |
+| John Edwards | C | 1 | 5.7 | 3.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 |
 | Bernard Robinson | SG | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | Christian Drejer | SF | 0 | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| Rafer Alston | PG | 21 | 13.9 | 6.7 | 1.1 | 2.0 | 0.6 | 0.1 | 1.1 |
+| Rafer Alston | PG | 25 | 13.4 | 6.2 | 1.0 | 2.0 | 0.7 | 0.1 | 1.0 |
 
 <details>
 <summary>Shooting and rebounding detail</summary>
@@ -43,23 +43,23 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 
 | Player | GS | FG | FG% | 3P | 3P% | FT | FT% | OREB | DREB |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Eddie Jones | 7 | 24/66 | .364 | 7/28 | .250 | 17/25 | .680 | 4 | 19 |
-| Brian Grant | 22 | 73/169 | .432 | 3/5 | .600 | 38/59 | .644 | 54 | 72 |
-| Scott Padgett | 0 | 48/125 | .384 | 17/48 | .354 | 27/34 | .794 | 16 | 72 |
-| Mike James | 21 | 134/289 | .464 | 37/88 | .420 | 49/61 | .803 | 15 | 64 |
-| Mehmet Okur | 22 | 109/220 | .495 | 4/18 | .222 | 96/110 | .873 | 60 | 142 |
-| Dwyane Wade | 21 | 131/255 | .514 | 23/50 | .460 | 116/122 | .951 | 36 | 85 |
-| Caron Butler | 15 | 97/204 | .475 | 13/36 | .361 | 42/57 | .737 | 22 | 43 |
-| Kendall Gill | 0 | 36/76 | .474 | 7/11 | .636 | 13/15 | .867 | 6 | 27 |
-| Dorell Wright | 1 | 24/64 | .375 | 4/14 | .286 | 14/16 | .875 | 10 | 15 |
+| Eddie Jones | 7 | 24/66 | .364 | 7/28 | .250 | 17/27 | .630 | 4 | 20 |
+| Brian Grant | 26 | 87/202 | .431 | 4/6 | .667 | 45/71 | .634 | 65 | 81 |
+| Scott Padgett | 0 | 55/144 | .382 | 20/59 | .339 | 29/37 | .784 | 24 | 76 |
+| Mike James | 25 | 156/341 | .457 | 39/105 | .371 | 57/74 | .770 | 16 | 82 |
+| Mehmet Okur | 26 | 130/262 | .496 | 5/19 | .263 | 109/124 | .879 | 77 | 169 |
+| Dwyane Wade | 25 | 162/311 | .521 | 30/63 | .476 | 135/141 | .957 | 38 | 98 |
+| Caron Butler | 19 | 129/269 | .480 | 14/42 | .333 | 52/70 | .743 | 34 | 63 |
+| Kendall Gill | 0 | 42/92 | .457 | 7/12 | .583 | 17/19 | .895 | 7 | 36 |
+| Dorell Wright | 1 | 28/73 | .384 | 4/14 | .286 | 14/16 | .875 | 10 | 18 |
 | John Thomas | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Maurice Evans | 0 | 2/3 | .667 | 1/1 | 1.000 | 0/0 | N/A | 2 | 1 |
-| Udonis Haslem | 0 | 55/116 | .474 | 0/4 | .000 | 25/34 | .735 | 32 | 63 |
-| Maurice Baker | 0 | 11/20 | .550 | 0/2 | .000 | 3/4 | .750 | 5 | 6 |
-| John Edwards | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
+| Udonis Haslem | 0 | 64/129 | .496 | 0/4 | .000 | 29/39 | .744 | 36 | 73 |
+| Maurice Baker | 0 | 14/30 | .467 | 2/7 | .286 | 6/8 | .750 | 5 | 7 |
+| John Edwards | 0 | 1/2 | .500 | 0/0 | N/A | 1/2 | .500 | 0 | 1 |
 | Bernard Robinson | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
 | Christian Drejer | N/A | 0/0 | N/A | 0/0 | N/A | 0/0 | N/A | 0 | 0 |
-| Rafer Alston | 1 | 47/110 | .427 | 13/46 | .283 | 33/41 | .805 | 5 | 19 |
+| Rafer Alston | 1 | 52/128 | .406 | 15/55 | .273 | 36/45 | .800 | 6 | 20 |
 
 </details>
 
@@ -68,7 +68,7 @@ GS, makes/attempts, OREB and DREB are totals. Percentages use summed makes and a
 | Period | Calendar dates | Closed games | Status |
 | --- | --- | ---: | --- |
 | [November 2004](11_November/Team_Stats.md) | November 1-30, 2004 | 16 | Complete |
-| [December 2004](12_December/Team_Stats.md) | December 1-31, 2004 | 6 | Through December 13, 2004 |
+| [December 2004](12_December/Team_Stats.md) | December 1-31, 2004 | 10 | Through December 19, 2004 |
 | [January 2005](01_January/Team_Stats.md) | January 1-31, 2005 | 0 | Not started |
 | [February 2005](02_February/Team_Stats.md) | February 1-28, 2005 | 0 | Not started |
 | [March 2005](03_March/Team_Stats.md) | March 1-31, 2005 | 0 | Not started |

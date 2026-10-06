@@ -4,7 +4,7 @@
 
 ![Chris Bosh 2004-05 season overview](../assets/season_overview_2004-05.svg)
 
-Career date: **2004-12-13** · Toronto Raptors · #4 · PF · age 20
+Career date: **2004-12-19** · Toronto Raptors · #4 · PF · age 20
 
 [Career](../README.md) · [Development profile (user-supplied)](../Development_Profile_2004-10-01.md) · [League card](../../Dwyane_Wade/Stats_and_Awards/League/Players/boshch01.md)
 
@@ -14,24 +14,24 @@ Career date: **2004-12-13** · Toronto Raptors · #4 · PF · age 20
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 22/22 | 39.4 | 17.2 | 8.1 | 2.6 | 0.9 | 1.0 | 51.2 | 36.8 | 80.0 | 56.4 | 17-6 |
+| 2004-05 | 20 | Toronto Raptors | 25/25 | 39.7 | 17.2 | 8.6 | 2.6 | 0.8 | 1.2 | 51.2 | 38.1 | 80.7 | 56.3 | 20-6 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 22 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 25 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | 39.4 |
+| Minutes | 36.5 | 39.7 |
 | Points | 20.2 | 17.2 |
-| Rebounds | 11.1 | 8.1 |
+| Rebounds | 11.1 | 8.6 |
 | Assists | 3.5 | 2.6 |
-| Steals | 0.9 | 0.9 |
-| Blocks | 1.5 | 1.0 |
+| Steals | 0.9 | 0.8 |
+| Blocks | 1.5 | 1.2 |
 | FG% | 51.4 | 51.2 |
-| 3P% | 41.2 | 36.8 |
-| FT% | 90.8 | 80.0 |
-| TS% (est.) | 64.0 | 56.4 |
+| 3P% | 41.2 | 38.1 |
+| FT% | 90.8 | 80.7 |
+| TS% (est.) | 64.0 | 56.3 |
 
 ## Playoffs
 
@@ -42,10 +42,10 @@ No playoff games closed.
 | Stat | High | Game |
 | --- | --- | --- |
 | Points | 34 | 2004-11-23 at Washington Wizards |
-| Rebounds | 16 | 2004-11-19 vs Seattle SuperSonics |
+| Rebounds | 16 | 2004-11-19 vs Seattle SuperSonics (+1) |
 | Assists | 6 | 2004-11-13 at Portland Trail Blazers (+1) |
 | Steals | 3 | 2004-11-03 vs Houston Rockets |
-| Blocks | 3 | 2004-11-09 at Sacramento Kings (+2) |
+| Blocks | 3 | 2004-11-09 at Sacramento Kings (+3) |
 | Threes | 2 | 2004-11-12 at Seattle SuperSonics |
 | Free throws | 8 | 2004-11-24 vs New York Knicks (+1) |
 
@@ -55,4 +55,6 @@ No recorded awards this season.
 
 ## Milestones this season
 
-None this season.
+| Milestone | Date | Age | Opponent |
+| --- | --- | --- | --- |
+| 100 career games played | 2004-12-19 | 20 years, 270 days | New Jersey Nets |

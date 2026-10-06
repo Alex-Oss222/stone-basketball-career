@@ -2,9 +2,9 @@
 
 # Contract | Ruben Patterson
 
-Known through: 2004-12-13. [Open interactive contract](patteru01.html#contract) · [Contract history](patteru01.html#contract-history)
+Known through: 2004-12-19. [Open interactive contract](patteru01.html#contract) · [Contract history](patteru01.html#contract-history)
 
-Ruben Patterson: under contract. Evidence cutoff: 2004-12-13.
+Ruben Patterson: under contract. Evidence cutoff: 2004-12-19.
 
 ## Current contract
 
