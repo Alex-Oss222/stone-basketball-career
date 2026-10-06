@@ -4,7 +4,7 @@
 **Age at assessment:** 31 · **Height:** 6-6 · **Weight:** 190 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** 2004-12-20 
 
-**Contract/control:** Existing contract: 3 season(s) from 2004-05, $44,401,500 scheduled ($13,455,000 in 2004-05). (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Existing contract: 3 season(s) from 2004-05, $44,401,500 scheduled ($13,455,000 in 2004-05). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/jonesed02.html#contract) · [Contract history](../../../../Contracts/players/jonesed02.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

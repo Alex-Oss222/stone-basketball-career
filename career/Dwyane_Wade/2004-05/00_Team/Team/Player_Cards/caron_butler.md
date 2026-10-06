@@ -10,7 +10,7 @@
 **Age at assessment:** 23 · **Height:** 6-7 · **Weight:** 228 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** 2004-12-20 
 
-**Contract/control:** Existing contract: 1 season(s) from 2004-05, $1,930,680 scheduled ($1,930,680 in 2004-05). (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Existing contract: 1 season(s) from 2004-05, $1,930,680 scheduled ($1,930,680 in 2004-05). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/butleca01.html#contract) · [Contract history](../../../../Contracts/players/butleca01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

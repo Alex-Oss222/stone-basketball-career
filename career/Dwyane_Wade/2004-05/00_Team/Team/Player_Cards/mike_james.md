@@ -10,7 +10,7 @@
 **Age at assessment:** 28 · **Height:** 6-2 · **Weight:** 188 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** 2004-12-20 
 
-**Contract/control:** Existing contract: 2 season(s) from 2004-05, $7,244,223 scheduled ($3,431,474 in 2004-05). (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Existing contract: 2 season(s) from 2004-05, $7,244,223 scheduled ($3,431,474 in 2004-05). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/jamesmi01.html#contract) · [Contract history](../../../../Contracts/players/jamesmi01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

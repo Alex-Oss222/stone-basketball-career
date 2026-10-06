@@ -10,7 +10,7 @@
     "age": 20,
     "contract_status": "rookie_scale_contract"
   },
-  "current_event": "2004-12-20-trade-2004-12-20-be4b6043a0",
+  "current_event": "2004-12-19-orlando-magic-at-miami-heat",
   "current_screen": "calendar",
   "screens": [
     {
@@ -45,7 +45,7 @@
             ],
             [
               "Last closed event",
-              "2004-12-20-trade-2004-12-20-be4b6043a0"
+              "2004-12-19-orlando-magic-at-miami-heat"
             ],
             [
               "Pending player decisions",
@@ -66,7 +66,7 @@
             [
               "2004-12-20",
               "Current checkpoint",
-              "2004-12-20-trade-2004-12-20-be4b6043a0",
+              "2004-12-19-orlando-magic-at-miami-heat",
               "Recorded",
               {
                 "label": "Owning event",

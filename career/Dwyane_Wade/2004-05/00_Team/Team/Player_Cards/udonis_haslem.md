@@ -4,7 +4,7 @@
 **Age at assessment:** 23 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** October 27, 2003 · **Statistics through:** 2004-12-19 
 
-**Contract/control:** Signed July 14, 2004 (minimum): 1 season(s) from 2004-05, $620,046 scheduled ($620,046 in 2004-05). (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** December 20, 2004: traded to Toronto Raptors (2004-12-20-be4b6043a0). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/hasleud01.html#contract) · [Contract history](../../../../Contracts/players/hasleud01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

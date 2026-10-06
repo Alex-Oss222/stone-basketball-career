@@ -4,7 +4,7 @@
 **Age at assessment:** 31 · **Height:** 6-9 · **Weight:** 254 lb  
 **Opening assessment:** June 26, 2003 · **Statistics through:** 2004-12-20 
 
-**Contract/control:** Existing contract: 1 season(s) from 2004-05, $13,233,434 scheduled ($13,233,434 in 2004-05). (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Existing contract: 1 season(s) from 2004-05, $13,233,434 scheduled ($13,233,434 in 2004-05). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/grantbr01.html#contract) · [Contract history](../../../../Contracts/players/grantbr01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

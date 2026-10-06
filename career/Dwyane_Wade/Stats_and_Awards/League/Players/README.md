@@ -475,7 +475,7 @@ Card date: **2004-12-20**. 572 registry players, one Markdown card and one inter
 | [Rodney Rogers](rogerro01.md) | Detroit Pistons | 33 | silhouette | [open](rogerro01.html) |
 | [Ryan Bowen](bowenry01.md) | Free agent | 29 | silhouette | [open](bowenry01.html) |
 | [Ryan Humphrey](humphry01.md) | Memphis Grizzlies | 25 | sourced | [open](humphry01.html) |
-| [Scott Padgett](padgesc01.md) | Free agent | 28 | silhouette | [open](padgesc01.html) |
+| [Scott Padgett](padgesc01.md) | Toronto Raptors | 28 | silhouette | [open](padgesc01.html) |
 | [Shareef Abdur-Rahim](abdursh01.md) | Atlanta Hawks | 28 | sourced | [open](abdursh01.html) |
 | [Slava Medvedenko](medvest01.md) | Detroit Pistons | 25 | sourced | [open](medvest01.html) |
 | [Stromile Swift](swiftst01.md) | Memphis Grizzlies | 25 | sourced | [open](swiftst01.html) |
@@ -488,7 +488,7 @@ Card date: **2004-12-20**. 572 registry players, one Markdown card and one inter
 | [Troy Murphy](murphtr01.md) | Golden State Warriors | 24 | sourced | [open](murphtr01.html) |
 | [Tyrone Hill](hillty01.md) | Free agent | 36 | silhouette | [open](hillty01.html) |
 | [Tyson Chandler](chandty01.md) | Chicago Bulls | 22 | silhouette | [open](chandty01.html) |
-| [Udonis Haslem](hasleud01.md) | Free agent | 24 | silhouette | [open](hasleud01.html) |
+| [Udonis Haslem](hasleud01.md) | Toronto Raptors | 24 | silhouette | [open](hasleud01.html) |
 | [Vin Baker](bakervi01.md) | Denver Nuggets | 33 | silhouette | [open](bakervi01.html) |
 | [Vladimir Radmanovic](radmavl01.md) | Seattle SuperSonics | 24 | sourced | [open](radmavl01.html) |
 | [Zach Randolph](randoza01.md) | Portland Trail Blazers | 23 | sourced | [open](randoza01.html) |
@@ -561,7 +561,7 @@ Card date: **2004-12-20**. 572 registry players, one Markdown card and one inter
 | [Jerome Moiso](moisoje01.md) | Free agent | 26 | sourced | [open](moisoje01.html) |
 | [Joel Przybilla](przybjo01.md) | Portland Trail Blazers | 25 | sourced | [open](przybjo01.html) |
 | [John Amaechi](amaecjo01.md) | Free agent | 34 | sourced | [open](amaecjo01.html) |
-| [John Edwards](edwarjo01.md) | Miami Heat | N/A | silhouette | [open](edwarjo01.html) |
+| [John Edwards](edwarjo01.md) | Miami Heat | 23 | silhouette | [open](edwarjo01.html) |
 | [Kelvin Cato](catoke01.md) | Houston Rockets | 30 | sourced | [open](catoke01.html) |
 | [Ken Johnson](johnske03.md) | Free agent | 26 | sourced | [open](johnske03.html) |
 | [Kendrick Perkins](perkike01.md) | Boston Celtics | 20 | sourced | [open](perkike01.html) |

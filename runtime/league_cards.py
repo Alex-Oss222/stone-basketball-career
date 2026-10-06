@@ -249,6 +249,11 @@ def _club_in_book(player, on, season, root, transactions=None):
                                                           "renounced", "declined", "expired")):
                 return {"club": MIAMI, "code": "MIA", "basis": f"on Miami's {season} register", "rights": False}
     club = club_of(bbr, on, season, root) if bbr else None
+    dep_path = Path(root) / departures_path(season)
+    if bbr and dep_path.is_file():                     # a player simulated Miami sent away (rule 3): his new club
+        for e in _read(root, departures_path(season))["entries"]:
+            if e.get("bbr_id") == bbr and e["from"] <= on and (e.get("until") is None or on < e["until"]):
+                club = e["club"]
     if club and bbr:
         from .availability import status
         from .league_moves import effective_roster

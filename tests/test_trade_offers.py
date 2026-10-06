@@ -44,3 +44,26 @@ class OfferTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class OfferRecordTests(unittest.TestCase):
+    """An accepted offer is a completed trade without a draw: valid only with the day's offer log naming it."""
+
+    def test_record_needs_its_offer_log(self):
+        import json
+        import tempfile
+        from runtime import signing
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            trades = root / signing.TRADES
+            trades.mkdir(parents=True)
+            record = {"trade_id": "2004-12-20-abc", "date": "2004-12-20", "status": "completed", "kind": "trade",
+                      "origin": "offer_from_club", "trade": {"partner": "Toronto Raptors"}, "decision_event": None,
+                      "applied": "2004-12-20", "consultation": None}
+            (trades / "2004-12-20-abc.json").write_text(json.dumps(record))
+            errors = signing.trade_record_errors(root)
+            self.assertTrue(any("Trade_Offers" in e for e in errors))
+            log = trades.parent / "Trade_Offers"
+            log.mkdir()
+            (log / "2004-12-20.json").write_text(json.dumps({"completed": "2004-12-20-abc", "offers": []}))
+            self.assertEqual(signing.trade_record_errors(root), [])

@@ -4,7 +4,7 @@
 **Age at assessment:** 31 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** December 20, 2004 · **Statistics through:** 2004-12-20 
 
-**Contract/control:** Acquired by trade from Toronto Raptors on December 20, 2004: $5,023,850 in 2004-05; contract through 2004-05. [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Acquired by trade from Toronto Raptors on December 20, 2004: $5,023,850 in 2004-05; contract through 2004-05. (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/marshdo01.html#contract) · [Contract history](../../../../Contracts/players/marshdo01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

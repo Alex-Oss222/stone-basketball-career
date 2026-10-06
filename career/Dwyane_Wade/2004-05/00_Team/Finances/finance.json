@@ -1,19 +1,19 @@
 {
  "schema_version": 5,
  "owner": "ai_gm",
- "as_of": "2004-11-01",
+ "as_of": "2004-12-20",
  "season": "2004-05",
  "team": "Miami Heat",
- "cap_status": "training_camp",
- "live_official_salary_cap": 43870000,
+ "cap_status": "regular_season",
+ "live_official_salary_cap": 43840000,
  "historical_actual_salary_cap": 43840000,
  "historical_actual_salary_cap_publication_date": "2003-07-15",
  "league_cap_history_file": "league_cap_history.json",
  "contract_schedules_file": "contract_schedules.json",
- "known_counted_salary_before_free_agent_holds": 52819984,
- "reference_difference_to_historical_actual_cap_before_free_agent_holds": -8979984,
+ "known_counted_salary_before_free_agent_holds": 52391902,
+ "reference_difference_to_historical_actual_cap_before_free_agent_holds": -8551902,
  "cap_space": null,
- "cap_room": -8949984,
+ "cap_room": -8551902,
  "cap_room_reason": [
   "Cap published July 13, 2004.",
   "Committed salary, unrenounced holds and the roster charge for empty spots are deducted (docs/front_office_design.md 5.1)."
@@ -30,13 +30,6 @@
    "player": "Brian Grant",
    "kind": "contract_salary",
    "amount": 13233434,
-   "precision": "whole_dollars",
-   "status": "under_contract"
-  },
-  {
-   "player": "Scott Padgett",
-   "kind": "contract_salary",
-   "amount": 9706886,
    "precision": "whole_dollars",
    "status": "under_contract"
   },
@@ -97,13 +90,6 @@
    "status": "under_contract"
   },
   {
-   "player": "Udonis Haslem",
-   "kind": "contract_salary",
-   "amount": 620046,
-   "precision": "whole_dollars",
-   "status": "under_contract"
-  },
-  {
    "player": "Maurice Baker",
    "kind": "contract_salary",
    "amount": 385277,
@@ -123,6 +109,20 @@
    "amount": 751179,
    "precision": "whole_dollars",
    "status": "camp_contract"
+  },
+  {
+   "player": "Donyell Marshall",
+   "kind": "contract_salary",
+   "amount": 5023850,
+   "precision": "whole_dollars",
+   "status": "under_contract"
+  },
+  {
+   "player": "Lamond Murray",
+   "kind": "contract_salary",
+   "amount": 4875000,
+   "precision": "whole_dollars",
+   "status": "under_contract"
   }
  ],
  "pending_control_items": [],
@@ -153,10 +153,10 @@
   "2010-11"
  ],
  "currency": "USD",
- "known_counted_salary_definition": "Counted 2004-05 team salary on 2004-11-01: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
- "scheduled_contract_salary_subtotal": 52819984,
+ "known_counted_salary_definition": "Counted 2004-05 team salary on 2004-12-20: signed contracts (camp contracts included), exercised options and unsigned first-round holds; released, voided, traded and declined entries count nothing; a 5+ year veteran's one-year minimum counts the four-year minimum. Not a guarantee total.",
+ "scheduled_contract_salary_subtotal": 52391902,
  "known_pending_option_salary": 0,
- "known_base_plus_priced_options": 52819984,
+ "known_base_plus_priced_options": 52391902,
  "live_official_tax_threshold": null,
  "tax_payroll": null,
  "luxury_tax_bill": null,
@@ -201,7 +201,7 @@
  "known_free_agent_holds_subtotal": 0,
  "unpriced_free_agent_hold_count": 0,
  "free_agent_hold_total": null,
- "free_agent_hold_timing": "Holds on 2004-11-01 are the unrenounced free agents' cap holds in free_agent_rights.json.",
+ "free_agent_hold_timing": "Holds on 2004-12-20 are the unrenounced free agents' cap holds in free_agent_rights.json.",
  "research_date": "2026-10-02",
  "guarantee_review": [
   {
@@ -239,8 +239,8 @@
  },
  "subtotal_precision": "whole_dollars",
  "reported_rounded_salary_count": 0,
- "planning_cap": 43870000,
- "known_counted_salary": 52819984,
+ "planning_cap": 43840000,
+ "known_counted_salary": 52391902,
  "roster_charge": 0,
- "projected_cap_room": -8949984
+ "projected_cap_room": -8551902
 }

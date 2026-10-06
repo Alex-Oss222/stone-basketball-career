@@ -4,7 +4,7 @@
 **Age at assessment:** 25 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** October 1, 2004 · **Statistics through:** 2004-12-20 
 
-**Contract/control:** Signed September 23, 2004 (mid_level): 5 season(s) from 2004-05, $16,965,715 scheduled ($2,827,619 in 2004-05). (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed September 23, 2004 (mid_level): 5 season(s) from 2004-05, $16,965,715 scheduled ($2,827,619 in 2004-05). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/okurme01.html#contract) · [Contract history](../../../../Contracts/players/okurme01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

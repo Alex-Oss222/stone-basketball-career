@@ -365,6 +365,7 @@ def incoming(day, root=ROOT):
                            f"Miami's front office accepts. Record: `00_Team/Transactions/Trades/{trade_id}.json`.")
         writer.commit()
         signing.refresh_finance(writer, FrontOffice(day, Market(day, root), root), day)
+        writer.commit()
     log = {"schema_version": 1, "owner": "ai_gm", "kind": "trade_offers_to_miami", "date": day,
            "rule": incoming.__doc__.split("\n\n")[0].replace("\n", " "),
            "offers": [{k: o[k] for k in ("trade", "partner_gain", "miami_gain", "accepted", "reason")} for o in offers],

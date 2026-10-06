@@ -488,7 +488,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Sasha Pavlovic](players/pavloal01.md) | Boston Celtics | No verified contract record | No verified current agreement | 0 |
 | [Sasha Vujačić](players/sashavujai.md) | Sacramento Kings | under contract | Sasha Vujačić · 2004-07-01 | 1 |
 | [Scot Pollard](players/pollasc01.md) | Indiana Pacers | under contract | Scot Pollard · existing contract; signing date not recorded | 1 |
-| [Scott Padgett](players/padgesc01.md) | Free agent | under contract | Scott Padgett · 2004-07-14 | 4 |
+| [Scott Padgett](players/padgesc01.md) | Toronto Raptors | under contract | Scott Padgett · 2004-07-14 | 4 |
 | [Scott Williams](players/willisc01.md) | Free agent | under contract | No verified current agreement | 2 |
 | [Scottie Pippen](players/pippesc01.md) | Free agent | under contract | Scottie Pippen · 2003-07-20 | 2 |
 | [Sean Lampley](players/lamplse01.md) | Free agent | team option exercised | Sean Lampley · 2002-09-29 | 1 |
@@ -558,7 +558,7 @@ Every tracked player has a current-contract view and complete available agreemen
 | [Tyrone Hill](players/hillty01.md) | Free agent | released | No verified current agreement | 2 |
 | [Tyronn Lue](players/luety01.md) | Minnesota Timberwolves | under contract | Tyronn Lue · 2003-07-16 | 1 |
 | [Tyson Chandler](players/chandty01.md) | Chicago Bulls | under rookie contract | Tyson Chandler · 2001-10-01 | 1 |
-| [Udonis Haslem](players/hasleud01.md) | Free agent | under contract | Udonis Haslem · 2004-07-14 | 2 |
+| [Udonis Haslem](players/hasleud01.md) | Toronto Raptors | under contract | Udonis Haslem · 2004-07-14 | 2 |
 | [Viktor Khryapa](players/viktorkhryapa.md) | Los Angeles Lakers | under contract | Viktor Khryapa · 2004-07-01 | 1 |
 | [Vin Baker](players/bakervi01.md) | Denver Nuggets | under contract | Vin Baker · 2004-09-02 | 2 |
 | [Vince Carter](players/cartevi01.md) | Toronto Raptors | under contract | Vince Carter · existing contract; signing date not recorded | 1 |

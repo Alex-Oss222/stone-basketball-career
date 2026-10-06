@@ -28,7 +28,7 @@ A real player the user follows, not one the user controls: his club decides his 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | [2003-04](2003-04/README.md) | 19 | Toronto Raptors | 75/75 | 35.7 | 13.9 | 7.9 | 1.4 | 1.0 | 1.4 | 47.7 | 42.2 | 71.2 | 53.0 | 42-40 · lost conference semifinals |
-| [2004-05](2004-05/README.md) | 20 | Toronto Raptors | 25/25 | 39.7 | 17.2 | 8.6 | 2.6 | 0.8 | 1.2 | 51.2 | 38.1 | 80.7 | 56.3 | 20-6 |
+| [2004-05](2004-05/README.md) | 20 | Toronto Raptors | 26/26 | 39.8 | 17.8 | 8.5 | 2.7 | 0.9 | 1.2 | 51.7 | 40.9 | 81.0 | 57.2 | 21-6 |
 
 ## Playoffs
 
@@ -68,11 +68,11 @@ A real player the user follows, not one the user controls: his club decides his 
 
 | Milestone | Current | Still needed |
 | --- | --- | --- |
-| 2,000 career points | 1,474 | 526 |
-| 1,000 career rebounds | 811 | 189 |
-| 250 career assists | 171 | 79 |
-| 100 career steals | 93 | 7 |
-| 250 career blocks | 136 | 114 |
-| 100 career three-pointers made | 27 | 73 |
-| 500 career free throws made | 279 | 221 |
-| 200 career games played | 100 | 100 |
+| 2,000 career points | 1,507 | 493 |
+| 1,000 career rebounds | 817 | 183 |
+| 250 career assists | 175 | 75 |
+| 100 career steals | 96 | 4 |
+| 250 career blocks | 138 | 112 |
+| 100 career three-pointers made | 28 | 72 |
+| 500 career free throws made | 289 | 211 |
+| 200 career games played | 101 | 99 |

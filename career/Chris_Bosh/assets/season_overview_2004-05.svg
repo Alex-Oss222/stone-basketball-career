@@ -53,29 +53,29 @@
 <text x="674" y="460" font-family="sans-serif" fill="#d0d1d4" font-size="16" font-weight="400" text-anchor="start">No appearances recorded</text>
 <rect x="20" y="500" width="610" height="270" rx="24" fill="#753bbd"/>
 <text x="44" y="538" font-family="sans-serif" fill="#ffffff" font-size="24" font-weight="700" text-anchor="start">2004-05 regular season</text>
-<text x="604" y="538" font-family="sans-serif" fill="#d0d1d4" font-size="19" font-weight="700" text-anchor="end">25 G</text>
+<text x="604" y="538" font-family="sans-serif" fill="#d0d1d4" font-size="19" font-weight="700" text-anchor="end">26 G</text>
 <line x1="44" y1="557" x2="606" y2="557" stroke="#ffffff" stroke-opacity="0.18"/>
-<text x="90.0" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">17.2</text>
+<text x="90.0" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">17.8</text>
 <text x="90.0" y="630" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">PPG</text>
-<text x="207.5" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">8.6</text>
+<text x="207.5" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">8.5</text>
 <text x="207.5" y="630" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">RPG</text>
-<text x="325.0" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">2.6</text>
+<text x="325.0" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">2.7</text>
 <text x="325.0" y="630" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">APG</text>
-<text x="442.5" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">0.8</text>
+<text x="442.5" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">0.9</text>
 <text x="442.5" y="630" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">SPG</text>
 <text x="560.0" y="603" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">1.2</text>
 <text x="560.0" y="630" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">BPG</text>
-<text x="90.0" y="691" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">39.7</text>
+<text x="90.0" y="691" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">39.8</text>
 <text x="90.0" y="718" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">MPG</text>
-<text x="207.5" y="691" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">51.2</text>
+<text x="207.5" y="691" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">51.7</text>
 <text x="207.5" y="718" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">FG%</text>
-<text x="325.0" y="691" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">38.1</text>
+<text x="325.0" y="691" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">40.9</text>
 <text x="325.0" y="718" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">3P%</text>
-<text x="442.5" y="691" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">80.7</text>
+<text x="442.5" y="691" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">81.0</text>
 <text x="442.5" y="718" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">FT%</text>
-<text x="560.0" y="691" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">56.3</text>
+<text x="560.0" y="691" font-family="sans-serif" fill="#ffffff" font-size="28" font-weight="600" text-anchor="middle">57.2</text>
 <text x="560.0" y="718" font-family="sans-serif" fill="#d0d1d4" font-size="17" font-weight="400" text-anchor="middle">TS% (est.)</text>
-<text x="44" y="750" font-family="sans-serif" fill="#d0d1d4" font-size="16" font-weight="400" text-anchor="start">Player box coverage: 25/25 closed games</text>
+<text x="44" y="750" font-family="sans-serif" fill="#d0d1d4" font-size="16" font-weight="400" text-anchor="start">Player box coverage: 26/26 closed games</text>
 <rect x="650" y="500" width="610" height="270" rx="24" fill="#222326"/>
 <text x="674" y="538" font-family="sans-serif" fill="#ffffff" font-size="24" font-weight="700" text-anchor="start">Professional status</text>
 <line x1="674" y1="557" x2="1236" y2="557" stroke="#ffffff" stroke-opacity="0.18"/>
@@ -99,7 +99,7 @@
 <text x="910" y="907" font-family="sans-serif" fill="#ffffff" font-size="16" font-weight="400" text-anchor="start">Nov 13 at Portland Trail Blazers (+1)</text>
 <text x="96" y="966" font-family="sans-serif" fill="#ffffff" font-size="32" font-weight="700" text-anchor="end">3</text>
 <text x="110" y="953" font-family="sans-serif" fill="#d0d1d4" font-size="14" font-weight="700" text-anchor="start">STEALS</text>
-<text x="110" y="975" font-family="sans-serif" fill="#ffffff" font-size="16" font-weight="400" text-anchor="start">Nov 03 vs Houston Rockets</text>
+<text x="110" y="975" font-family="sans-serif" fill="#ffffff" font-size="16" font-weight="400" text-anchor="start">Nov 03 vs Houston Rockets (+1)</text>
 <text x="496" y="966" font-family="sans-serif" fill="#ffffff" font-size="32" font-weight="700" text-anchor="end">3</text>
 <text x="510" y="953" font-family="sans-serif" fill="#d0d1d4" font-size="14" font-weight="700" text-anchor="start">BLOCKS</text>
 <text x="510" y="975" font-family="sans-serif" fill="#ffffff" font-size="16" font-weight="400" text-anchor="start">Nov 09 at Sacramento Kings (+3)</text>
@@ -109,9 +109,9 @@
 <text x="96" y="1034" font-family="sans-serif" fill="#ffffff" font-size="32" font-weight="700" text-anchor="end">2</text>
 <text x="110" y="1021" font-family="sans-serif" fill="#d0d1d4" font-size="14" font-weight="700" text-anchor="start">THREES</text>
 <text x="110" y="1043" font-family="sans-serif" fill="#ffffff" font-size="16" font-weight="400" text-anchor="start">Nov 12 at Seattle SuperSonics</text>
-<text x="496" y="1034" font-family="sans-serif" fill="#ffffff" font-size="32" font-weight="700" text-anchor="end">8</text>
+<text x="496" y="1034" font-family="sans-serif" fill="#ffffff" font-size="32" font-weight="700" text-anchor="end">10</text>
 <text x="510" y="1021" font-family="sans-serif" fill="#d0d1d4" font-size="14" font-weight="700" text-anchor="start">FREE THROWS</text>
-<text x="510" y="1043" font-family="sans-serif" fill="#ffffff" font-size="16" font-weight="400" text-anchor="start">Nov 24 vs New York Knicks (+1)</text>
+<text x="510" y="1043" font-family="sans-serif" fill="#ffffff" font-size="16" font-weight="400" text-anchor="start">Dec 20 at Houston Rockets</text>
 <text x="896" y="1034" font-family="sans-serif" fill="#ffffff" font-size="32" font-weight="700" text-anchor="end">48</text>
 <text x="910" y="1021" font-family="sans-serif" fill="#d0d1d4" font-size="14" font-weight="700" text-anchor="start">MINUTES</text>
 <text x="910" y="1043" font-family="sans-serif" fill="#ffffff" font-size="16" font-weight="400" text-anchor="start">Dec 12 vs Miami Heat</text>

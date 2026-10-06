@@ -14,24 +14,24 @@ Career date: **2004-12-20** · Toronto Raptors · #4 · PF · age 20
 
 | Season | Age | Team | GP/GS | MPG | PPG | RPG | APG | SPG | BPG | FG% | 3P% | FT% | TS% (est.) | Team result |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2004-05 | 20 | Toronto Raptors | 25/25 | 39.7 | 17.2 | 8.6 | 2.6 | 0.8 | 1.2 | 51.2 | 38.1 | 80.7 | 56.3 | 20-6 |
+| 2004-05 | 20 | Toronto Raptors | 26/26 | 39.8 | 17.8 | 8.5 | 2.7 | 0.9 | 1.2 | 51.7 | 40.9 | 81.0 | 57.2 | 21-6 |
 
 ## The user's target line against the closed games
 
-Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 25 closed regular-season games.
+Targets from Development_Profile_2004-10-01.md, Year 2 statistical target profile (ideal line); actual from 26 closed regular-season games.
 
 | Per game | Target | Actual |
 | --- | --- | --- |
-| Minutes | 36.5 | 39.7 |
-| Points | 20.2 | 17.2 |
-| Rebounds | 11.1 | 8.6 |
-| Assists | 3.5 | 2.6 |
-| Steals | 0.9 | 0.8 |
+| Minutes | 36.5 | 39.8 |
+| Points | 20.2 | 17.8 |
+| Rebounds | 11.1 | 8.5 |
+| Assists | 3.5 | 2.7 |
+| Steals | 0.9 | 0.9 |
 | Blocks | 1.5 | 1.2 |
-| FG% | 51.4 | 51.2 |
-| 3P% | 41.2 | 38.1 |
-| FT% | 90.8 | 80.7 |
-| TS% (est.) | 64.0 | 56.3 |
+| FG% | 51.4 | 51.7 |
+| 3P% | 41.2 | 40.9 |
+| FT% | 90.8 | 81.0 |
+| TS% (est.) | 64.0 | 57.2 |
 
 ## Playoffs
 
@@ -44,10 +44,10 @@ No playoff games closed.
 | Points | 34 | 2004-11-23 at Washington Wizards |
 | Rebounds | 16 | 2004-11-19 vs Seattle SuperSonics (+1) |
 | Assists | 6 | 2004-11-13 at Portland Trail Blazers (+1) |
-| Steals | 3 | 2004-11-03 vs Houston Rockets |
+| Steals | 3 | 2004-11-03 vs Houston Rockets (+1) |
 | Blocks | 3 | 2004-11-09 at Sacramento Kings (+3) |
 | Threes | 2 | 2004-11-12 at Seattle SuperSonics |
-| Free throws | 8 | 2004-11-24 vs New York Knicks (+1) |
+| Free throws | 10 | 2004-12-20 at Houston Rockets |
 
 ## Awards
 

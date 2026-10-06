@@ -4,7 +4,7 @@
 **Age at assessment:** 26 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** October 5, 2004 · **Statistics through:** 2004-10-31 
 
-**Contract/control:** November 1, 2004: released at the cut to 15 (non-guaranteed camp contract; no dead money). (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** November 1, 2004: released at the cut to 15 (non-guaranteed camp contract; no dead money). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/jacksst02.html#contract) · [Contract history](../../../../Contracts/players/jacksst02.html#contract-history) · [All tracked players](../../../../Contracts/index.html)

@@ -1016,7 +1016,12 @@ def trade_record_errors(root=ROOT):
             errors.append(f"{rel}: trade_id must be the file stem")
         if r.get("status") not in TRADE_STATUSES:
             errors.append(f"{rel}: unknown status {r.get('status')!r}")
-        if not r.get("decision_event") or not (folder / f"{r['decision_event']}.decision.json").exists():
+        if r.get("origin") == "offer_from_club":
+            # The other club proposed it and Miami answered by rule (no draw): the day's offer log must name it.
+            log = folder.parent / "Trade_Offers" / f"{r.get('date')}.json"
+            if not log.is_file() or json.loads(log.read_text(encoding="utf-8")).get("completed") != r.get("trade_id"):
+                errors.append(f"{rel}: an accepted offer needs its Trade_Offers/{r.get('date')}.json log naming it")
+        elif not r.get("decision_event") or not (folder / f"{r['decision_event']}.decision.json").exists():
             errors.append(f"{rel}: missing decision packet {r.get('decision_event')}.decision.json")
         if r.get("status") == "completed" and not r.get("applied"):
             errors.append(f"{rel}: completed without an applied date")

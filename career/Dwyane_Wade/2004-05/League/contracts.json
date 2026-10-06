@@ -198,7 +198,7 @@
   {
    "player": "Carlos Arroyo",
    "bbr_id": "arroyca01",
-   "club": "Utah Jazz",
+   "club": "Milwaukee Bucks",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -208,7 +208,8 @@
     "2007-08": 6564558,
     "2008-09": 7161336
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "signed_club": "Utah Jazz"
   },
   {
    "player": "Ron Artest",
@@ -658,7 +659,7 @@
   {
    "player": "P.J. Brown",
    "bbr_id": "brownpj01",
-   "club": "New Orleans Hornets",
+   "club": "Sacramento Kings",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -666,7 +667,8 @@
     "2005-06": 8500000,
     "2006-07": 8500000
    },
-   "source": "library/2003/league/nba_2003_offseason_transactions.json (reported total, spread flat)"
+   "source": "library/2003/league/nba_2003_offseason_transactions.json (reported total, spread flat)",
+   "signed_club": "New Orleans Hornets"
   },
   {
    "player": "Tierre Brown",
@@ -902,14 +904,15 @@
   {
    "player": "Doug Christie",
    "bbr_id": "chrisdo01",
-   "club": "Sacramento Kings",
+   "club": "New Orleans Hornets",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 7550000,
     "2005-06": 8200000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "Sacramento Kings"
   },
   {
    "player": "Speedy Claxton",
@@ -2054,13 +2057,14 @@
   {
    "player": "Udonis Haslem",
    "bbr_id": "hasleud01",
-   "club": "Miami Heat",
+   "club": "Toronto Raptors",
    "route": "minimum",
    "kind": "new",
    "schedule": {
     "2004-05": 620046
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "signed_club": "Miami Heat"
   },
   {
    "player": "Trenton Hassell",
@@ -2828,7 +2832,7 @@
   {
    "player": "Kyle Korver",
    "bbr_id": "korveky01",
-   "club": "Sacramento Kings",
+   "club": "New Orleans Hornets",
    "route": "existing",
    "kind": "existing",
    "schedule": {
@@ -3068,13 +3072,14 @@
   {
    "player": "Donyell Marshall",
    "bbr_id": "marshdo01",
-   "club": "Toronto Raptors",
+   "club": "Miami Heat",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 5023850
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "Toronto Raptors"
   },
   {
    "player": "Kenyon Martin",
@@ -3413,14 +3418,15 @@
   {
    "player": "Lamond Murray",
    "bbr_id": "murrala01",
-   "club": "Toronto Raptors",
+   "club": "Miami Heat",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 4875000,
     "2005-06": 5250000
    },
-   "source": "library/2003/league/nba_2003_contracts.json"
+   "source": "library/2003/league/nba_2003_contracts.json",
+   "signed_club": "Toronto Raptors"
   },
   {
    "player": "Ronald Murray",
@@ -3725,7 +3731,7 @@
   {
    "player": "Scott Padgett",
    "bbr_id": "padgesc01",
-   "club": "Miami Heat",
+   "club": "Toronto Raptors",
    "route": "bird",
    "kind": "new",
    "schedule": {
@@ -3734,7 +3740,8 @@
     "2006-07": 12133608,
     "2007-08": 13346968
    },
-   "source": "2004 simulated free agency"
+   "source": "2004 simulated free agency",
+   "signed_club": "Miami Heat"
   },
   {
    "player": "Milt Palacio",
@@ -4589,13 +4596,14 @@
   {
    "player": "Erick Strickland",
    "bbr_id": "stricer01",
-   "club": "Milwaukee Bucks",
+   "club": "Utah Jazz",
    "route": "existing",
    "kind": "existing",
    "schedule": {
     "2004-05": 1550000
    },
-   "source": "library/2003/league/nba_2003_offseason_transactions.json (reported total, spread flat)"
+   "source": "library/2003/league/nba_2003_offseason_transactions.json (reported total, spread flat)",
+   "signed_club": "Milwaukee Bucks"
   },
   {
    "player": "Bruno Šundov",

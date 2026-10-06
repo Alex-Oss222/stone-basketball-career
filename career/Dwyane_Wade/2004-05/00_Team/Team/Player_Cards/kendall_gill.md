@@ -4,7 +4,7 @@
 **Age at assessment:** 36 · **Height:** N/A · **Weight:** N/A  
 **Opening assessment:** October 1, 2004 · **Statistics through:** 2004-12-20 
 
-**Contract/control:** Signed August 12, 2004 (minimum): 1 season(s) from 2004-05, $1,100,000 scheduled ($1,100,000 in 2004-05). (register, 2004-11-01) [Finance record](../../Finances/cap_sheet.md).
+**Contract/control:** Signed August 12, 2004 (minimum): 1 season(s) from 2004-05, $1,100,000 scheduled ($1,100,000 in 2004-05). (register, 2004-12-20) [Finance record](../../Finances/cap_sheet.md).
 
 <!-- contract-navigation:start -->
 [Current contract](../../../../Contracts/players/gillke01.html#contract) · [Contract history](../../../../Contracts/players/gillke01.html#contract-history) · [All tracked players](../../../../Contracts/index.html)
